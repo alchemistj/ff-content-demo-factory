@@ -29,6 +29,7 @@ Selection or QA control:
   "wakeId": "unique-architect-id",
   "mode": "selection",
   "restoreFromRunId": "123456789",
+  "restoreFromSourceSha": "0123456789abcdef0123456789abcdef01234567",
   "decisionFile": ".factory-wake/decision.json",
   "requestedBy": "architect"
 }

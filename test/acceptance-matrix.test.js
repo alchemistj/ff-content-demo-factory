@@ -62,6 +62,7 @@ test('AC03 trusted Actions wrapper is Architect-operated and bounded', () => {
   assert.match(workflow, /paths:\s*\n\s*- \.factory-wake\/control\.json/);
   assert.match(workflow, /github\.actor == github\.repository_owner/);
   assert.match(workflow, /permissions:\s*\n\s*actions: read\s*\n\s*contents: read/);
+  assert.match(workflow, /Checkpoint source identity mismatch/);
   assert.doesNotMatch(workflow, /pull_request_target|schedule:|workflow_dispatch:/);
   assert.doesNotMatch(workflow, /vercel|lemlist|outreach|client build|copy generation/i);
   assert.match(fs.readFileSync('docs/CONTROL-PLANE.md', 'utf8'), /Josh never[\s\S]*operates Actions/i);
