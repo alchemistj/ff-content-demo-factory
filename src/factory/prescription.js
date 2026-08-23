@@ -10,9 +10,10 @@ function chooseRecommendation(page, classified) {
   return { reviewId: review.id, reviewer: review.reviewer, rating: review.rating, date: review.date, exactText: review.text, why: `Direct evidence for ${page.service}.` };
 }
 
-// Lane 2's canonical Recipe-v2 classification is accepted directly. This
-// translation keeps the page prescriber independent from a second classifier.
-function canonicalClassification(classification) {
+// The page prescriber consumes only this small authoritative classification
+// contract; the model/evidence adapter that produces it is intentionally out
+// of scope here.
+function normalizeClassification(classification) {
   if (!classification || !Array.isArray(classification.reviews)) throw new Error('authoritative review classification is required');
   if (classification.reviews.some((entry) => entry.authoritative !== true)) throw new Error('Prescription requires authoritative judgment for every written review');
   const classified = classification.reviews.map((entry) => {
@@ -48,7 +49,7 @@ function compareServices(services, classified) {
 
 function prescribe({ finalist, inventory, classification, services, architectReview }) {
   if (!inventory && !classification) throw new Error('Cannot prescribe from discovery-sample-only reviews');
-  if (classification) inventory = canonicalClassification(classification);
+  if (classification) inventory = normalizeClassification(classification);
   if (inventory.discoverySampleOnly || !inventory.classified) throw new Error('Cannot prescribe from discovery-sample-only reviews');
   if (!inventory.authoritativeJudgmentCount) throw new Error('Cannot prescribe before authoritative review judgment');
   const compared = compareServices(services, inventory.classified);
@@ -63,11 +64,11 @@ function prescribe({ finalist, inventory, classification, services, architectRev
   if (!collision.valid) throw new Error(`Prescription collision validation failed: ${collision.errors.join('; ')}`);
   const prescribedPages = pages.map((page) => ({ ...page, recommendedFirstReview: page.type === 'Contact' ? null : chooseRecommendation(page, inventory.classified), whyIncluded: page.type === 'Service' ? `Won service comparison with ${compared.find((s) => s.name === page.service)?.directCompletedEvidenceCount || 0} direct completed-service anchor(s).` : 'Required core site page.' }));
   return {
-    version: 'recipe-v2', prospect: { placeId: finalist.placeId, name: finalist.name, location: finalist.location, website: finalist.website },
+    version: 'page-prescription-v1', prospect: { placeId: finalist.placeId, name: finalist.name, location: finalist.location, website: finalist.website },
     pages: prescribedPages, valueHierarchy: compared.sort((a, b) => b.directCompletedEvidenceCount - a.directCompletedEvidenceCount),
     architectReview: architectReview || null, collisionValidation: collision,
     status: 'prescribed', generatedAt: new Date().toISOString()
   };
 }
 
-module.exports = { slugify, chooseRecommendation, validateCollisions, compareServices, canonicalClassification, prescribe };
+module.exports = { slugify, chooseRecommendation, validateCollisions, compareServices, normalizeClassification, prescribe };
