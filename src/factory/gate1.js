@@ -1,16 +1,21 @@
 function sentenceCount(text) { return String(text || '').split(/[.!?]+/).map((s) => s.trim()).filter(Boolean).length; }
 
 function validateWhyBuilt(whyBuilt, finalist, prescription) {
-  if (sentenceCount(whyBuilt) < 2 || sentenceCount(whyBuilt) > 4) return false;
-  const haystack = `${finalist.name || ''} ${finalist.websiteAudit?.opportunity || ''} ${finalist.websiteAudit?.siteCopyEvidence || ''} ${finalist.websiteAudit?.ownedGraphicEvidence || ''} ${prescription.valueHierarchy.map((s) => s.id || s.name).join(' ')}`.toLowerCase();
-  const supplied = String(whyBuilt).toLowerCase();
-  const evidenceTerms = haystack.split(/[^a-z0-9]+/).filter((term) => term.length >= 5);
-  return evidenceTerms.some((term) => supplied.includes(term));
+  if (!whyBuilt || typeof whyBuilt !== 'object' || sentenceCount(whyBuilt.text) < 2 || sentenceCount(whyBuilt.text) > 4 || !Array.isArray(whyBuilt.refs) || whyBuilt.refs.length < 2) return false;
+  const opportunityRefs = new Set([finalist.websiteAudit?.opportunity, ...(finalist.websiteAudit?.siteCopyEvidence || [])].filter(Boolean).map(String));
+  const graphicRefs = new Set((finalist.websiteAudit?.ownedGraphicEvidence || []).flatMap((item) => [item.id, item.url, item.text]).filter(Boolean).map(String));
+  const reviewRefs = new Set(prescription.pages.flatMap((page) => [page.strongestEvidence, page.recommendedFirstReview?.reviewId]).filter(Boolean).map(String));
+  const serviceRefs = new Set(prescription.valueHierarchy.map((service) => String(service.id || service.name)).filter(Boolean));
+  const resolved = whyBuilt.refs.filter((ref) => {
+    const value = String(ref.id || ref.ref || '');
+    return (ref.type === 'opportunity' && opportunityRefs.has(value)) || (ref.type === 'graphic' && graphicRefs.has(value)) || (ref.type === 'review' && reviewRefs.has(value)) || (ref.type === 'service' && serviceRefs.has(value));
+  });
+  return resolved.some((ref) => ref.type === 'opportunity') && resolved.some((ref) => ['graphic', 'review', 'service'].includes(ref.type));
 }
 
 function renderGate1({ finalist, prescription, whyBuilt }) {
-  if (!validateWhyBuilt(whyBuilt, finalist, prescription)) throw new Error('Why We Built must be 2–4 evidence-specific Architect-approved sentences');
-  const lines = [`# ${finalist.name}`, '', '## Why We Built This Site', '', whyBuilt.trim(), '', '## Page Prescription', '', '| Page | Proposed URL | Primary Keyword | Proposed Title / H1 Direction | Recommended First Review |', '| --- | --- | --- | --- | --- |'];
+  if (!validateWhyBuilt(whyBuilt, finalist, prescription)) throw new Error('Why We Built must be 2–4 sentences with resolvable opportunity and evidence refs');
+  const lines = [`# ${finalist.name}`, '', '## Why We Built This Site', '', whyBuilt.text.trim(), '', '## Page Prescription', '', '| Page | Proposed URL | Primary Keyword | Proposed Title / H1 Direction | Recommended First Review |', '| --- | --- | --- | --- | --- |'];
   for (const page of prescription.pages) {
     const recommendation = page.recommendedFirstReview ? `${page.recommendedFirstReview.reviewer} — ${page.recommendedFirstReview.why}` : '—';
     lines.push(`| ${page.type || page.service} | ${page.url} | ${page.primaryKeyword} | ${page.titleDirection} / ${page.h1Direction} | ${recommendation} |`);
@@ -28,18 +33,26 @@ function architectQa({ finalist, inventory, prescription, whyBuilt, laterStageAr
   const judgmentCount = inventory?.authoritativeJudgmentCount ?? 0;
   const anchorCount = inventory?.authoritativeAnchorCount ?? inventory?.anchorCount ?? 0;
   const pages = prescription?.pages || [];
+  const listingCount = inventory?.listingReviewCount ?? inventory?.gbpReviewCount ?? 0;
+  const retrievedCount = inventory?.retrievedReviewCount ?? ((inventory?.writtenReviewCount || 0) + (inventory?.emptyTextReviewCount || inventory?.emptyReviewCount || 0));
+  const enrichmentSufficient = Boolean(inventory && inventory.exactPlace === true && inventory.discoverySampleOnly !== true && inventory.dateWindow === null && inventory.requestedLimit === 50 && inventory.enrichmentStatus === 'sufficient' && (listingCount < 25 ? retrievedCount >= listingCount : (inventory.writtenReviewCount >= 25 || retrievedCount >= Math.min(50, listingCount))));
   const checks = {
     qualified: Boolean(finalist?.architectQualified && finalist?.disposition?.status === 'selected-finalist'),
     exactGbpIdentity: Boolean(finalist?.gbp?.placeId || finalist?.placeId) && Boolean(finalist?.gbp?.name || finalist?.name) && Boolean(finalist?.gbp?.location || finalist?.location),
-    truthfulFullEnrichment: Boolean(inventory && inventory.discoverySampleOnly !== true && inventory.dateWindow === null && inventory.requestedLimit <= 50 && inventory.retrievalCompleteness),
+    truthfulFullEnrichment: enrichmentSufficient,
     allWrittenReviewsJudged: written > 0 && judgmentCount === written,
-    graphicsInspected: finalist?.websiteAudit?.inspected === true,
+    graphicsInspected: finalist?.websiteAudit?.graphicsInspection?.status === 'inspected' && Array.isArray(finalist?.websiteAudit?.graphicsInspection?.findings),
     directServiceEvidence: anchorCount > 0,
     comparisonComplete: Array.isArray(prescription?.valueHierarchy) && prescription.valueHierarchy.length > 0 && prescription.valueHierarchy.every((service) => Object.prototype.hasOwnProperty.call(service, 'includedPage') && Object.prototype.hasOwnProperty.call(service, 'passedOverReason')),
     collisionFree: Boolean(prescription?.collisionValidation?.valid),
     differentiatedPages: new Set(pages.map((p) => `${p.url}|${p.primaryKeyword}|${p.titleDirection}|${p.h1Direction}`)).size === pages.length,
     recommendationsFit: pages.filter((p) => p.type !== 'Contact').every((p) => Boolean(p.recommendedFirstReview) || !p.strongestEvidence),
-    unsupportedClaimsAbsent: pages.every((p) => !/(one[- ]hour|same[- ]day|guaranteed|24\/7|emergency service)/i.test(JSON.stringify({ claims: p.claims || [], traps: p.traps || [] }))),
+    unsupportedClaimsAbsent: pages.every((p) => {
+      const claims = JSON.stringify(p.claims || []);
+      if (/(one[- ]hour|same[- ]day|guaranteed|response[- ]time\s*sla)/i.test(claims)) return false;
+      if (/(24\/7|emergency service)/i.test(claims) && !inventory?.availabilityPattern) return false;
+      return true;
+    }),
     whyBuiltEvidenceSpecific: validateWhyBuilt(whyBuilt, finalist, prescription),
     noMoldOrDuplicate: !finalist.exclusion && finalist.duplicate?.status !== 'duplicate',
     noLaterStageArtifacts: laterStageArtifacts.length === 0
