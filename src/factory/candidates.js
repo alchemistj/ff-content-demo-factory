@@ -34,6 +34,7 @@ function auditShape(audit = {}) {
     siteCopyEvidence: audit.siteCopyEvidence || audit.copyEvidence || [],
     ownedGraphicEvidence: audit.ownedGraphicEvidence || audit.graphicEvidence || [],
     publicImageUrls: audit.publicImageUrls || audit.imageUrls || [],
+    graphicsInspection: audit.graphicsInspection || { status: 'not-inspected', findings: [] },
     inspected: audit.inspected === true
   };
 }
