@@ -4,7 +4,7 @@ function normalizeClassification(classification) {
   const classified = classification.reviews.map((entry) => {
     const evidence = entry.authoritativeJudgment?.serviceEvidence || [];
     const services = evidence.map((item) => String(item.service || '')).filter(Boolean);
-    return { id: entry.id, reviewer: entry.sourceReview?.author, rating: entry.sourceReview?.rating, date: entry.sourceReview?.date, text: entry.sourceReview?.text || '', judgment: { directCompletedService: entry.authoritativeJudgment?.directCompletedService === true, operatingPattern: Boolean(entry.authoritativeJudgment?.availabilityEvidence?.length), services, service: services[0] } };
+    return { id: entry.id, authoritative: true, reviewer: entry.sourceReview?.author, rating: entry.sourceReview?.rating, date: entry.sourceReview?.date, text: entry.sourceReview?.text || '', judgment: { directCompletedService: entry.authoritativeJudgment?.directCompletedService === true, operatingPattern: Boolean(entry.authoritativeJudgment?.availabilityEvidence?.length), services, service: services[0] } };
   });
   return { classified, authoritativeJudgmentCount: classification.authoritativeJudgmentCount || classified.length, authoritativeAnchorCount: classification.anchorCount ?? classified.filter((entry) => entry.judgment.directCompletedService).length };
 }
@@ -15,6 +15,18 @@ function chooseRecommendation(page, classified) {
   const review = matches.find((r) => r.judgment.directCompletedService) || matches.find((r) => r.judgment.operatingPattern);
   if (!review) return null;
   return { reviewId: review.id, reviewer: review.reviewer, rating: review.rating, date: review.date, exactText: review.text, why: `Direct evidence for ${page.service || 'the business'}.` };
+}
+
+function recommendationFor(page, supplied, classified) {
+  const recommendation = supplied == null ? chooseRecommendation(page, classified) : supplied;
+  if (recommendation == null) return null;
+  const review = classified.find((entry) => String(entry.id) === String(recommendation.reviewId));
+  if (!review || review.authoritative !== true) throw new Error(`${page.type || page.service}: recommendedFirstReview is not authoritative`);
+  if (!recommendation.reviewer || recommendation.rating == null || !recommendation.date || !(recommendation.excerpt || recommendation.exactText || recommendation.exactTextRef) || !recommendation.why) throw new Error(`${page.type || page.service}: recommendedFirstReview lacks reviewer/rating/date/excerpt/why`);
+  const service = String(page.service || '').toLowerCase();
+  const fits = page.type === 'Home' || review.judgment?.directCompletedService && (review.judgment.services || []).some((item) => String(item).toLowerCase() === service) || review.judgment?.operatingPattern && (review.judgment.services || []).some((item) => String(item).toLowerCase() === service);
+  if (!fits) throw new Error(`${page.type || page.service}: recommendedFirstReview does not fit page service`);
+  return { ...recommendation, reviewId: review.id };
 }
 
 function validateCollisions(pages) {
@@ -52,7 +64,7 @@ function validateProposedPages(pages, classified) {
   for (const page of pages) {
     for (const field of REQUIRED_PAGE_FIELDS) if (page[field] == null || (typeof page[field] === 'string' && !page[field].trim())) errors.push(`${page.type || 'page'}: missing ${field}`);
     if (!Object.prototype.hasOwnProperty.call(page, 'strongestEvidence')) errors.push(`${page.type || 'page'}: missing strongestEvidence (use null when not appropriate)`);
-    const recommendation = page.recommendedFirstReview ?? chooseRecommendation(page, classified);
+    const recommendation = recommendationFor(page, page.recommendedFirstReview, classified);
     const hasEvidence = classified.some((review) => review.judgment?.services?.some((s) => String(s).toLowerCase() === String(page.service || '').toLowerCase()) && (review.judgment.directCompletedService || review.judgment.operatingPattern));
     if (hasEvidence && !recommendation) errors.push(`${page.type || page.service}: missing recommendedFirstReview despite evidence`);
     if (recommendation && !recommendation.reviewId) errors.push(`${page.type || page.service}: invalid recommendedFirstReview`);
