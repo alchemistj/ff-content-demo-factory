@@ -122,6 +122,37 @@ test('Apify persists in-flight paid receipts and resumes the run without a dupli
   assert.equal(receiptStore.get('apify:run:finalist:ChIJresume').status, 'completed');
 });
 
+test('Apify polling is bounded and retains a resumable receipt', async () => {
+  const calls = [];
+  const receiptStore = new Map();
+  const fetchImpl = async (url, options) => {
+    calls.push({ url, method: options.method });
+    if (options.method === 'POST') return response({ data: { id: 'run-slow', defaultDatasetId: 'dataset-slow', status: 'RUNNING' } });
+    return response({ data: { id: 'run-slow', defaultDatasetId: 'dataset-slow', status: 'RUNNING' } });
+  };
+  const adapter = createApifyAdapter({ token: 'secret', fetchImpl, receiptStore, maxPollAttempts: 2 });
+  await assert.rejects(() => adapter.enrichFinalist({ placeId: 'ChIJslow', mapsUrl: 'https://www.google.com/maps/place/Slow' }), /did not reach a terminal status/);
+  assert.equal(calls.filter((call) => call.method === 'POST').length, 1);
+  assert.equal(calls.filter((call) => call.url.includes('/actor-runs/')).length, 2);
+  assert.equal(receiptStore.get('apify:run:finalist:ChIJslow').status, 'running');
+});
+
+test('Apify terminal failure is durable and cannot silently start a second paid run', async () => {
+  const calls = [];
+  const receiptStore = new Map();
+  const fetchImpl = async (url, options) => {
+    calls.push({ url, method: options.method });
+    return response({ data: { id: 'run-failed', defaultDatasetId: 'dataset-failed', status: 'FAILED' } });
+  };
+  const adapter = createApifyAdapter({ token: 'secret', fetchImpl, receiptStore });
+  const request = { placeId: 'ChIJfailed', mapsUrl: 'https://www.google.com/maps/place/Failed' };
+  await assert.rejects(() => adapter.enrichFinalist(request), /Apify run FAILED/);
+  assert.equal(receiptStore.get('apify:run:finalist:ChIJfailed').status, 'failed');
+  await assert.rejects(() => adapter.enrichFinalist(request), /explicit Architect retry decision/);
+  assert.equal(calls.filter((call) => call.method === 'POST').length, 1);
+  assert.equal(calls.some((call) => call.url.includes('/datasets/')), false);
+});
+
 function catalog() {
   return [{
     id: ACTUAL_MODEL_ID,
