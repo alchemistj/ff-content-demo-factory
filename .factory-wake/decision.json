@@ -1,1 +1,10 @@
-{}
+{
+  "selection": {
+    "qualifiedPlaceIds": [
+      "ChIJHa32AOi84YMR38BV93YKiS8"
+    ],
+    "selectedPlaceId": "ChIJHa32AOi84YMR38BV93YKiS8",
+    "reason": "Fresh Stage 1 evidence confirms a stable non-duplicate garage-door business with a live owned website and a material content opportunity: the site has only three intended marketing pages, no dedicated repair, opener, or new-door pages, extremely thin service copy, and public default WordPress content.",
+    "backlogReason": "No qualified overflow candidates are present in this one-record canary bench."
+  }
+}
