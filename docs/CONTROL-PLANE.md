@@ -17,8 +17,8 @@ the persisted lease identifies which Architect worker owns the next action.
 
 The production path has no GitHub Actions dependency, and it intentionally has
 no copy generation, client build, hosting, deploy, outreach, or later human
-gates. Those downstream concerns remain non-migrations from `ff-2-demos` and
-must not be introduced into this MVP's control plane.
+gates. These are explicit scope boundaries for this first release and must not
+be introduced into the control plane.
 
 Integration contract for later lanes:
 
