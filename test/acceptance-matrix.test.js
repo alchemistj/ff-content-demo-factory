@@ -51,16 +51,20 @@ test('AC01 production capacity is exactly one', () => {
   assert.equal(JSON.parse(fs.readFileSync('config/factory.config.json')).productionCapacity, 1);
 });
 
-test('AC02 Architect can initiate run-one without Actions', async () => {
+test('AC02 Architect automation can initiate run-one', async () => {
   const h = harness(); const result = await runFactoryCycle({ root: h.root, config: h.config, adapters: h.adapters, discoveryRequest: { searchStrings: ['electrician'], location: 'Dallas, TX' } });
   assert.equal(result.nextAction.owner, 'architect'); assert.equal(result.nextAction.code, 'architect-candidate-review-required');
 });
 
-test('AC03 production path has no GitHub Actions trigger', () => {
-  const workflowRoot = path.join(process.cwd(), '.github');
-  const workflowFiles = fs.existsSync(workflowRoot) ? fs.readdirSync(workflowRoot, { recursive: true }).filter((file) => /\.(ya?ml|js|action)$/i.test(file)) : [];
-  assert.deepEqual(workflowFiles, [], 'production must not ship workflow/action control files');
-  assert.match(fs.readFileSync('docs/CONTROL-PLANE.md', 'utf8'), /no GitHub Actions dependency/i);
+test('AC03 trusted Actions wrapper is Architect-operated and bounded', () => {
+  const workflow = fs.readFileSync('.github/workflows/architect-factory-wake.yml', 'utf8');
+  assert.match(workflow, /branches:\s*\n\s*- main/);
+  assert.match(workflow, /paths:\s*\n\s*- \.factory-wake\/control\.json/);
+  assert.match(workflow, /github\.actor == github\.repository_owner/);
+  assert.match(workflow, /permissions:\s*\n\s*actions: read\s*\n\s*contents: read/);
+  assert.doesNotMatch(workflow, /pull_request_target|schedule:|workflow_dispatch:/);
+  assert.doesNotMatch(workflow, /vercel|lemlist|outreach|client build|copy generation/i);
+  assert.match(fs.readFileSync('docs/CONTROL-PLANE.md', 'utf8'), /Josh never[\s\S]*operates Actions/i);
 });
 
 test('AC04 cheap candidate bench is audited and requires one explicit finalist', async () => {

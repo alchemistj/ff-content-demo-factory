@@ -1,0 +1,222 @@
+name: Architect-operated factory wake
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - .factory-wake/control.json
+
+permissions:
+  actions: read
+  contents: read
+
+concurrency:
+  group: architect-factory-capacity-one
+  cancel-in-progress: false
+
+jobs:
+  run-one:
+    if: github.actor == github.repository_owner
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          fetch-depth: 2
+          persist-credentials: false
+
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '24'
+
+      - name: Validate trusted Architect wake
+        id: control
+        shell: bash
+        run: |
+          node <<'NODE'
+          const fs = require('node:fs');
+          const path = require('node:path');
+          const control = JSON.parse(fs.readFileSync('.factory-wake/control.json', 'utf8'));
+          const allowedModes = new Set(['stage1', 'selection', 'qa']);
+          if (control.requestedBy !== 'architect') throw new Error('Wake must be requested by Architect');
+          if (!allowedModes.has(control.mode)) throw new Error('Unsupported wake mode');
+          if (!/^[a-zA-Z0-9][a-zA-Z0-9._-]{0,127}$/.test(control.wakeId || '')) throw new Error('Invalid wakeId');
+          if (control.restoreFromRunId != null && !/^\d+$/.test(String(control.restoreFromRunId))) throw new Error('Invalid restoreFromRunId');
+          const safeRepoPath = (value, label) => {
+            if (!value || path.isAbsolute(value) || value.includes('..') || !/^[-a-zA-Z0-9_/.]+\.json$/.test(value)) throw new Error(`Invalid ${label}`);
+            if (!fs.existsSync(value)) throw new Error(`${label} does not exist`);
+            return value;
+          };
+          let inputFile = '';
+          if (control.mode === 'stage1') {
+            inputFile = control.seedDiscovery
+              ? safeRepoPath(control.seedDiscovery, 'seedDiscovery')
+              : safeRepoPath(control.requestFile || '.factory-wake/request.json', 'requestFile');
+          } else {
+            if (!control.restoreFromRunId) throw new Error(`${control.mode} requires restoreFromRunId`);
+            inputFile = safeRepoPath(control.decisionFile || '.factory-wake/decision.json', 'decisionFile');
+          }
+          const lines = [
+            `mode=${control.mode}`,
+            `wake_id=${control.wakeId}`,
+            `restore_run_id=${control.restoreFromRunId || ''}`,
+            `input_file=${inputFile}`,
+            `seeded=${Boolean(control.seedDiscovery)}`,
+          ];
+          fs.appendFileSync(process.env.GITHUB_OUTPUT, `${lines.join('\n')}\n`);
+          NODE
+
+          changed="$(git diff --name-only "${GITHUB_SHA}^" "$GITHUB_SHA")"
+          while IFS= read -r file; do
+            case "$file" in
+              .factory-wake/control.json|.factory-wake/decision.json|.factory-wake/request.json) ;;
+              *) echo "Wake commit changed disallowed path: $file" >&2; exit 1 ;;
+            esac
+          done <<< "$changed"
+
+      - name: Validate secret-backed runtime
+        shell: bash
+        env:
+          APIFY_API_TOKEN: ${{ secrets.APIFY_API_TOKEN }}
+          CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
+          CURSOR_MODEL: ${{ secrets.CURSOR_MODEL }}
+        run: |
+          test -n "$APIFY_API_TOKEN"
+          test -n "$CURSOR_API_KEY"
+          test "$CURSOR_MODEL" = "cursor-grok-4.6-high"
+
+      - name: Install locked factory dependencies
+        run: npm ci --ignore-scripts --no-audit --no-fund
+
+      - name: Restore explicit capacity-one checkpoint
+        id: restore
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RESTORE_RUN_ID: ${{ steps.control.outputs.restore_run_id }}
+        run: |
+          if [ -z "$RESTORE_RUN_ID" ]; then
+            echo "restored=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          mkdir -p .factory-checkpoint
+          gh run download "$RESTORE_RUN_ID" \
+            --name "factory-checkpoint-$RESTORE_RUN_ID" \
+            --dir .factory-checkpoint
+          test -d .factory-checkpoint/state
+          test -f .factory-checkpoint/canary/outputs/checkpoint.json
+          test -f .factory-checkpoint/canary/outputs/manifest.sha256
+
+          RESTORE_RUN_ID="$RESTORE_RUN_ID" node <<'NODE'
+          const fs = require('node:fs');
+          const checkpoint = JSON.parse(fs.readFileSync('.factory-checkpoint/canary/outputs/checkpoint.json', 'utf8'));
+          if (checkpoint.schemaVersion !== 'factory-checkpoint-v1') throw new Error('Unsupported checkpoint schema');
+          if (String(checkpoint.runId) !== String(process.env.RESTORE_RUN_ID)) throw new Error('Checkpoint run identity mismatch');
+          NODE
+          (cd .factory-checkpoint && sha256sum -c canary/outputs/manifest.sha256)
+          cp -R .factory-checkpoint/state ./state
+          echo "restored=true" >> "$GITHUB_OUTPUT"
+
+      - name: Run exactly one Architect-directed cycle
+        id: factory
+        continue-on-error: true
+        shell: bash
+        env:
+          APIFY_API_TOKEN: ${{ secrets.APIFY_API_TOKEN }}
+          CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
+          CURSOR_MODEL: ${{ secrets.CURSOR_MODEL }}
+          MODE: ${{ steps.control.outputs.mode }}
+          INPUT_FILE: ${{ steps.control.outputs.input_file }}
+          SEEDED: ${{ steps.control.outputs.seeded }}
+        run: |
+          mkdir -p canary/outputs
+          set +e
+          case "$MODE" in
+            stage1)
+              if [ "$SEEDED" = "true" ]; then
+                node src/run-one.js --production --seed-discovery "$INPUT_FILE" --json \
+                  > canary/outputs/latest.json 2> canary/outputs/latest.error.log
+              else
+                node src/run-one.js --production --request "$INPUT_FILE" --json \
+                  > canary/outputs/latest.json 2> canary/outputs/latest.error.log
+              fi
+              ;;
+            selection|qa)
+              node src/run-one.js --production --decision "$INPUT_FILE" --json \
+                > canary/outputs/latest.json 2> canary/outputs/latest.error.log
+              ;;
+          esac
+          exit_code=$?
+          set -e
+          if [ "$exit_code" = "0" ]; then
+            node -e "JSON.parse(require('node:fs').readFileSync('canary/outputs/latest.json', 'utf8'))"
+          fi
+          printf '%s\n' "$exit_code" > canary/outputs/exit-code.txt
+          echo "exit_code=$exit_code" >> "$GITHUB_OUTPUT"
+
+      - name: Scan checkpoint and write integrity manifest
+        id: scan
+        if: always()
+        shell: bash
+        env:
+          APIFY_API_TOKEN: ${{ secrets.APIFY_API_TOKEN }}
+          CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
+          MODE: ${{ steps.control.outputs.mode }}
+          WAKE_ID: ${{ steps.control.outputs.wake_id }}
+          RESTORE_RUN_ID: ${{ steps.control.outputs.restore_run_id }}
+        run: |
+          mkdir -p canary/outputs
+          node <<'NODE'
+          const fs = require('node:fs');
+          const path = require('node:path');
+          fs.writeFileSync('canary/outputs/checkpoint.json', `${JSON.stringify({
+            schemaVersion: 'factory-checkpoint-v1',
+            runId: process.env.GITHUB_RUN_ID,
+            sourceSha: process.env.GITHUB_SHA,
+            mode: process.env.MODE,
+            wakeId: process.env.WAKE_ID,
+            restoredFromRunId: process.env.RESTORE_RUN_ID || null,
+          }, null, 2)}\n`);
+          const roots = ['state', 'canary/outputs'];
+          const files = [];
+          const visit = (entry) => {
+            if (!fs.existsSync(entry)) return;
+            const stat = fs.statSync(entry);
+            if (stat.isDirectory()) for (const name of fs.readdirSync(entry)) visit(path.join(entry, name));
+            else files.push(entry);
+          };
+          roots.forEach(visit);
+          const secrets = [process.env.APIFY_API_TOKEN, process.env.CURSOR_API_KEY].filter(Boolean);
+          for (const file of files) {
+            const contents = fs.readFileSync(file);
+            for (const secret of secrets) {
+              if (contents.includes(Buffer.from(secret))) throw new Error(`Secret material detected in checkpoint file: ${file}`);
+            }
+          }
+          NODE
+          find state canary/outputs -type f ! -name manifest.sha256 -print0 2>/dev/null \
+            | sort -z \
+            | xargs -0 -r sha256sum > canary/outputs/manifest.sha256
+
+      - name: Upload resumable checkpoint and Architect review surface
+        id: upload
+        if: always() && steps.scan.outcome == 'success'
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: factory-checkpoint-${{ github.run_id }}
+          path: |
+            state
+            canary/outputs/latest.json
+            canary/outputs/latest.error.log
+            canary/outputs/exit-code.txt
+            canary/outputs/checkpoint.json
+            canary/outputs/manifest.sha256
+          if-no-files-found: error
+          retention-days: 30
+
+      - name: Preserve fail-closed status
+        if: always() && (steps.factory.outputs.exit_code != '0' || steps.scan.outcome != 'success' || steps.upload.outcome != 'success')
+        run: exit 1

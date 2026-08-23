@@ -2,9 +2,11 @@
 
 ## Operating contract
 
-The production entry point is an Architect-invoked `run-one`. GitHub is the
-durable source/artifact system, not the scheduler. The first release has one
-production slot and stops at `awaiting-human-gate-1`.
+The production entry point is an Architect-invoked `run-one`. GitHub stores the
+source, receipts, and resumable artifacts. Architect automation may operate the
+trusted Actions wrapper; Josh never opens, clicks, reruns, or otherwise operates
+Actions. The first release has one production slot and stops at
+`awaiting-human-gate-1`.
 
 ```sh
 # wake the factory (safe to repeat)
@@ -38,7 +40,7 @@ Architect before use:
   and review recommendations.
 - `qa.json`: Architect corrections/pass decision. A pass is not Josh approval.
 
-Install dependencies with `npm install`, export the three variables shown in
+Install dependencies with `npm ci`, export the three variables shown in
 `.env.example`, and use `--production` to compose the shipped Apify and Cursor
 adapters. This is the only built-in paid/vendor path. It cannot be combined
 with `--adapters`; that flag is an explicit controlled-run override for offline

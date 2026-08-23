@@ -4,8 +4,10 @@
 
 1. Treat a bare `run-one --json` response of `IDLE` as a no-op: it does not
    choose a trade, location, or discovery query. Provide an explicit candidate
-   or controlled adapter composition before expecting vendor work. Do not use
-   Actions, cron, or `workflow_dispatch`.
+   or controlled adapter composition before expecting vendor work. Josh never
+   opens, clicks, reruns, or otherwise operates Actions. Architect automation
+   may update the trusted control files to invoke the bounded Actions wrapper.
+   Do not use cron or a human-operated manual dispatch.
 2. For a fresh vendor-backed cycle, pass `--production --request
    <discovery.json>`. The request must contain non-empty `searchStrings` and
    `location`; there is no trade/location default. Use `--adapters` only for a
@@ -63,10 +65,13 @@ and an interrupted run retains its stage and receipts for resumption. The
 process lock prevents two `run-one` invocations from mutating state together;
 the persisted lease identifies which Architect worker owns the next action.
 
-The production path has no GitHub Actions dependency, and it intentionally has
-no copy generation, client build, hosting, deploy, outreach, or later human
-gates. These are explicit scope boundaries for this first release and must not
-be introduced into the control plane.
+The factory has no scheduler dependency; a trusted, Architect-owned Actions
+wrapper may execute exactly one explicit wake and persist its checkpoint. The
+wrapper is triggered only by an owner-authored control-file update on `main`,
+keeps capacity at one, and never chains the next wake. The production path
+intentionally has no copy generation, client build, hosting, deploy, outreach,
+or later human gates. These are explicit scope boundaries for this first
+release and must not be introduced into the control plane.
 
 Integration contract for later lanes:
 

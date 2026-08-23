@@ -177,7 +177,11 @@ function createApifyAdapter({ token, fetchImpl = globalThis.fetch, clock = () =>
       run = await request('GET', `/actor-runs/${encodeURIComponent(runId)}`);
       run = run.data || run;
     }
-    if (run.status !== 'SUCCEEDED') throw new Error(`Apify run ${run.status || 'unknown'}`);
+    if (run.status !== 'SUCCEEDED') {
+      const error = new Error(`Apify run ${run.status || 'unknown'}`);
+      error.apifyStatus = run.status || 'unknown';
+      throw error;
+    }
     return run;
   }
 
@@ -186,6 +190,7 @@ function createApifyAdapter({ token, fetchImpl = globalThis.fetch, clock = () =>
     const prior = await receiptGet(receiptKey);
     if (prior?.status === 'completed' && Array.isArray(prior.items)) return { items: prior.items, receipt: prior };
     if (prior?.status === 'running') return resumeActor(prior, input, jobKey);
+    if (prior?.status === 'failed') throw new Error(`Apify run ${prior.apifyStatus || 'failed'} requires an explicit Architect retry decision`);
     const started = await request('POST', `/acts/${ACTOR_ID}/runs`, input);
     const run = started.data || started;
     const runId = run.id || run.runId;
@@ -195,7 +200,16 @@ function createApifyAdapter({ token, fetchImpl = globalThis.fetch, clock = () =>
       provider: 'apify', actor: ACTOR_ID, jobKey, runId, datasetId,
       status: 'running', startedAt: clock(), input,
     });
-    const terminal = ['SUCCEEDED', 'FAILED', 'ABORTED', 'TIMED-OUT'].includes(run.status) ? run : await waitForRun(runId, run);
+    let terminal;
+    try {
+      terminal = await waitForRun(runId, run);
+    } catch (error) {
+      if (error.apifyStatus) await receiptPut(receiptKey, {
+        provider: 'apify', actor: ACTOR_ID, jobKey, runId, datasetId,
+        status: 'failed', apifyStatus: error.apifyStatus, failedAt: clock(), input,
+      });
+      throw error;
+    }
     const items = await request('GET', `/datasets/${encodeURIComponent(datasetId)}/items?format=json`);
     const receipt = {
       provider: 'apify', actor: ACTOR_ID, jobKey, runId, datasetId,
@@ -208,7 +222,15 @@ function createApifyAdapter({ token, fetchImpl = globalThis.fetch, clock = () =>
   }
 
   async function resumeActor(receipt, input, jobKey) {
-    const terminal = await waitForRun(receipt.runId, { id: receipt.runId, defaultDatasetId: receipt.datasetId, status: receipt.status });
+    let terminal;
+    try {
+      terminal = await waitForRun(receipt.runId, { id: receipt.runId, defaultDatasetId: receipt.datasetId, status: receipt.status });
+    } catch (error) {
+      if (error.apifyStatus) await receiptPut(`apify:run:${jobKey}`, {
+        ...receipt, jobKey, input, status: 'failed', apifyStatus: error.apifyStatus, failedAt: clock(),
+      });
+      throw error;
+    }
     const items = await request('GET', `/datasets/${encodeURIComponent(receipt.datasetId)}/items?format=json`);
     const completed = {
       ...receipt, jobKey, input, status: 'completed', apifyStatus: terminal.status, completedAt: clock(),

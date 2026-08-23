@@ -8,8 +8,8 @@ contracts rather than reimplementing production logic.
 | ID | Condition | Executable test |
 | --- | --- | --- |
 | AC01 | Capacity exactly 1 | `AC01 production capacity is exactly one` |
-| AC02 | Architect can initiate run | `AC02 Architect can initiate run-one without Actions` |
-| AC03 | No Actions trigger | `AC03 production path has no GitHub Actions trigger` |
+| AC02 | Architect automation can initiate run | `AC02 Architect automation can initiate run-one` |
+| AC03 | Trusted Actions wrapper is Architect-operated and bounded | `AC03 trusted Actions wrapper is Architect-operated and bounded` |
 | AC04 | Small bench, one finalist | `AC04 cheap candidate bench is audited and requires one explicit finalist` |
 | AC05 | Only finalist gets paid enrichment | `AC05 only selected finalist receives paid deep enrichment` |
 | AC06 | Up to 50, no date window | `AC06 finalist enrichment asks for at most 50 reviews with no date window` |
@@ -29,10 +29,11 @@ contracts rather than reimplementing production logic.
 | AC19 | No historical provider defaults | `AC19 checked-in environment excludes historical provider defaults` |
 | AC20 | Exact Cursor alias/Fast off | `AC20 Cursor alias is exact and Fast is off` |
 
-Negative boundaries are intentional: Actions/workflow presence, sample-only
-input, duplicate finalist enrichment, collisions, Gate 1 re-entry, mold
-advance, unsupported guarantees, wrong env defaults, and wrong model settings
-must fail or stop closed.
+Negative boundaries are intentional: Josh-operated Actions/manual dispatch,
+sample-only input, duplicate finalist enrichment, collisions, Gate 1 re-entry,
+mold advance, unsupported guarantees, wrong env defaults, and wrong model
+settings must fail or stop closed. Architect automation may operate the trusted
+capacity-one wrapper.
 
 The matrix is offline contract QA. It does not prove a paid vendor call. Only a
 controlled live canary with configured Apify/Cursor credentials, real finalist

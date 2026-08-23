@@ -30,7 +30,7 @@ test('capacity one and queue-first claim leave overflow queued', () => {
   assert.equal(second.state.queue.length, 2);
 });
 
-test('Architect wake does not need Actions and repeats at Gate 1 without claiming another run', () => {
+test('Architect wake is idempotent and Gate 1 repeat preserves the capacity-one queue', () => {
   const root = sandbox();
   const first = cp.runOne({ root, config: config(), candidate: candidate('Gate Prospect'), now: new Date('2026-08-23T12:00:00Z') });
   const state = first.state;
@@ -41,7 +41,6 @@ test('Architect wake does not need Actions and repeats at Gate 1 without claimin
   assert.equal(repeat.code, 'AWAITING_HUMAN_GATE_1');
   assert.equal(repeat.state.runs.length, 1);
   assert.equal(repeat.state.queue.length, 1);
-  assert.equal(fs.existsSync(path.join(root, '.github', 'workflows')), false);
 });
 
 test('interruption preserves stage and paid receipt for resume', () => {
@@ -99,9 +98,8 @@ test('stale process lock is reclaimed conservatively, while a live owner stays l
   fs.unlinkSync(lock);
 });
 
-test('clean checkout has no Actions workflow and its committed run-one entrypoint executes', () => {
+test('clean checkout has an executable Architect entrypoint and Gate 1 terminal contract', () => {
   const root = path.join(__dirname, '..');
-  assert.equal(fs.existsSync(path.join(root, '.github', 'workflows')), false);
   const packageJson = JSON.parse(fs.readFileSync(path.join(root, 'package.json'), 'utf8'));
   assert.equal(packageJson.scripts['run-one'], 'node src/run-one.js');
   const result = childProcess.spawnSync(process.execPath, [path.join(root, 'src', 'run-one.js'), '--json'], { cwd: root, encoding: 'utf8' });
