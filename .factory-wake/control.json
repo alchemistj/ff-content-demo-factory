@@ -1,6 +1,7 @@
 {
-  "wakeId": "360-stage1-2026-08-23-01",
-  "mode": "stage1",
-  "seedDiscovery": "canary/inputs/360-garage-door-and-more.discovery.json",
+  "wakeId": "360-checkpoint-upgrade-2026-08-23-01",
+  "mode": "checkpoint",
+  "restoreFromRunId": "32674057030",
+  "allowLegacyRestore": true,
   "requestedBy": "architect"
 }
