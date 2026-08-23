@@ -3,6 +3,7 @@ const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const os = require('node:os');
 const path = require('node:path');
+const childProcess = require('node:child_process');
 const cp = require('../src/factory/control-plane');
 
 function sandbox() {
@@ -73,4 +74,26 @@ test('mold offerings are blocked before paid work', () => {
   const result = cp.runOne({ root, config: config(), candidate: { ...candidate('Mold Co'), services: ['mold remediation'] } });
   assert.equal(result.code, 'MOLD_EXCLUDED');
   assert.equal(result.state.queue[0].status, 'excluded');
+});
+
+test('stale process lock is reclaimed conservatively, while a live owner stays locked', () => {
+  const root = sandbox();
+  const lock = cp.paths(root).lock;
+  fs.mkdirSync(path.dirname(lock), { recursive: true });
+  fs.writeFileSync(lock, JSON.stringify({ owner: 'dead-worker', pid: 99999999, acquiredAt: '2026-08-23T12:00:00.000Z' }));
+  assert.equal(cp.runOne({ root, config: config() }).code, 'IDLE');
+  fs.writeFileSync(lock, JSON.stringify({ owner: 'live-worker', pid: process.pid, acquiredAt: new Date().toISOString() }));
+  assert.throws(() => cp.runOne({ root, config: config() }), /owns the lock/);
+  fs.unlinkSync(lock);
+});
+
+test('clean checkout has no Actions workflow and its committed run-one entrypoint executes', () => {
+  const root = path.join(__dirname, '..');
+  assert.equal(fs.existsSync(path.join(root, '.github', 'workflows')), false);
+  const packageJson = JSON.parse(fs.readFileSync(path.join(root, 'package.json'), 'utf8'));
+  assert.equal(packageJson.scripts['run-one'], 'node src/run-one.js');
+  const result = childProcess.spawnSync(process.execPath, [path.join(root, 'src', 'run-one.js'), '--json'], { cwd: root, encoding: 'utf8' });
+  assert.equal(result.status, 0, result.stderr);
+  assert.match(result.stdout, /"code":\s*"IDLE"/);
+  fs.rmSync(path.join(root, 'state'), { recursive: true, force: true });
 });
