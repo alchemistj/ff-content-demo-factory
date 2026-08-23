@@ -1,5 +1,5 @@
 {
-  "wakeId": "360-checkpoint-upgrade-2026-08-23-01",
+  "wakeId": "360-checkpoint-upgrade-2026-08-23-02",
   "mode": "checkpoint",
   "restoreFromRunId": "32674057030",
   "allowLegacyRestore": true,

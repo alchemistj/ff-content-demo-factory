@@ -33,10 +33,17 @@ jobs:
         id: control
         shell: bash
         run: |
-          echo "mode=$(node -p \"require('./.factory-wake/control.json').mode\")" >> "$GITHUB_OUTPUT"
-          echo "wake_id=$(node -p \"require('./.factory-wake/control.json').wakeId\")" >> "$GITHUB_OUTPUT"
-          echo "restore_run_id=$(node -p \"require('./.factory-wake/control.json').restoreFromRunId || ''\")" >> "$GITHUB_OUTPUT"
-          echo "allow_legacy_restore=$(node -p \"Boolean(require('./.factory-wake/control.json').allowLegacyRestore)\")" >> "$GITHUB_OUTPUT"
+          node <<'NODE'
+          const fs = require('node:fs');
+          const control = require('./.factory-wake/control.json');
+          const lines = [
+            `mode=${control.mode}`,
+            `wake_id=${control.wakeId}`,
+            `restore_run_id=${control.restoreFromRunId || ''}`,
+            `allow_legacy_restore=${Boolean(control.allowLegacyRestore)}`,
+          ];
+          fs.appendFileSync(process.env.GITHUB_OUTPUT, `${lines.join('\n')}\n`);
+          NODE
 
       - name: Validate secret-backed runtime
         shell: bash
@@ -146,6 +153,7 @@ jobs:
           WAKE_ID: ${{ steps.control.outputs.wake_id }}
           RESTORE_RUN_ID: ${{ steps.control.outputs.restore_run_id }}
         run: |
+          mkdir -p canary/outputs
           node <<'NODE'
           const fs = require('node:fs');
           const path = require('node:path');
