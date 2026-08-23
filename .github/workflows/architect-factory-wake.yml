@@ -6,8 +6,6 @@ on:
       - architect/canary-execution
     paths:
       - .factory-wake/control.json
-      - .factory-wake/decision.json
-      - .github/workflows/architect-factory-wake.yml
 
 permissions:
   actions: read
@@ -19,11 +17,15 @@ concurrency:
 
 jobs:
   run-one:
+    if: github.actor == github.repository_owner
     runs-on: ubuntu-latest
-    timeout-minutes: 90
+    timeout-minutes: 360
 
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          fetch-depth: 2
+          persist-credentials: false
 
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
         with:
