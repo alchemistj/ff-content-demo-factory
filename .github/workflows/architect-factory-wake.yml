@@ -1,0 +1,154 @@
+name: Architect-operated factory wake
+
+on:
+  push:
+    branches:
+      - architect/canary-execution
+    paths:
+      - .factory-wake/control.json
+      - .factory-wake/decision.json
+      - .github/workflows/architect-factory-wake.yml
+
+permissions:
+  actions: read
+  contents: read
+
+concurrency:
+  group: architect-factory-capacity-one
+  cancel-in-progress: false
+
+jobs:
+  run-one:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '24'
+
+      - name: Validate secret-backed runtime
+        shell: bash
+        env:
+          APIFY_API_TOKEN: ${{ secrets.APIFY_API_TOKEN }}
+          CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
+          CURSOR_MODEL: ${{ secrets.CURSOR_MODEL }}
+        run: |
+          test -n "$APIFY_API_TOKEN"
+          test -n "$CURSOR_API_KEY"
+          test "$CURSOR_MODEL" = "cursor-grok-4.6-high"
+
+      - name: Install factory dependencies
+        run: npm install --no-audit --no-fund
+
+      - name: Restore previous capacity-one checkpoint
+        id: restore
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          previous_run_id="$(gh api --method GET "repos/${GITHUB_REPOSITORY}/actions/runs" \
+            -f branch="${GITHUB_REF_NAME}" \
+            -f event=push \
+            -f status=completed \
+            -f per_page=30 \
+            --jq '.workflow_runs | map(select(.name == "Architect-operated factory wake")) | .[0].id // empty')"
+          if [ -n "$previous_run_id" ]; then
+            mkdir -p .factory-checkpoint
+            gh run download "$previous_run_id" --dir .factory-checkpoint || true
+            checkpoint_state="$(find .factory-checkpoint -type d -name state -print -quit)"
+            if [ -n "$checkpoint_state" ]; then
+              cp -R "$checkpoint_state" ./state
+              echo "restored=true" >> "$GITHUB_OUTPUT"
+            fi
+          fi
+
+      - name: Run exactly one Architect-directed cycle
+        id: factory
+        continue-on-error: true
+        shell: bash
+        env:
+          APIFY_API_TOKEN: ${{ secrets.APIFY_API_TOKEN }}
+          CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
+          CURSOR_MODEL: ${{ secrets.CURSOR_MODEL }}
+        run: |
+          mkdir -p canary/outputs
+          mode="$(node -p "require('./.factory-wake/control.json').mode")"
+          wake_id="$(node -p "require('./.factory-wake/control.json').wakeId")"
+          seed="$(node -p "require('./.factory-wake/control.json').seedDiscovery || ''")"
+          set +e
+          case "$mode" in
+            stage1)
+              node src/run-one.js --production --seed-discovery "$seed" --json \
+                > canary/outputs/latest.json 2> canary/outputs/latest.error.log
+              ;;
+            selection|qa)
+              node src/run-one.js --production --decision .factory-wake/decision.json --json \
+                > canary/outputs/latest.json 2> canary/outputs/latest.error.log
+              ;;
+            *)
+              echo "Unsupported Architect wake mode: $mode" > canary/outputs/latest.error.log
+              false
+              ;;
+          esac
+          exit_code=$?
+          set -e
+          node -e "JSON.parse(require('node:fs').readFileSync('canary/outputs/latest.json', 'utf8'))" 2>/dev/null || true
+          printf '%s\n' "$mode" > canary/outputs/mode.txt
+          printf '%s\n' "$wake_id" > canary/outputs/wake-id.txt
+          printf '%s\n' "$exit_code" > canary/outputs/exit-code.txt
+          echo "exit_code=$exit_code" >> "$GITHUB_OUTPUT"
+
+      - name: Scan checkpoint and write integrity manifest
+        id: scan
+        if: always()
+        shell: bash
+        env:
+          APIFY_API_TOKEN: ${{ secrets.APIFY_API_TOKEN }}
+          CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
+        run: |
+          node <<'NODE'
+          const fs = require('node:fs');
+          const path = require('node:path');
+          const roots = ['state', 'canary/outputs'];
+          const files = [];
+          const visit = (entry) => {
+            if (!fs.existsSync(entry)) return;
+            const stat = fs.statSync(entry);
+            if (stat.isDirectory()) for (const name of fs.readdirSync(entry)) visit(path.join(entry, name));
+            else files.push(entry);
+          };
+          roots.forEach(visit);
+          const secrets = [process.env.APIFY_API_TOKEN, process.env.CURSOR_API_KEY].filter(Boolean);
+          for (const file of files) {
+            const contents = fs.readFileSync(file);
+            for (const secret of secrets) {
+              if (contents.includes(Buffer.from(secret))) throw new Error(`Secret material detected in checkpoint file: ${file}`);
+            }
+          }
+          NODE
+          find state canary/outputs -type f -print0 2>/dev/null \
+            | sort -z \
+            | xargs -0 -r sha256sum > canary/outputs/manifest.sha256
+
+      - name: Upload resumable checkpoint and Architect review surface
+        if: always() && steps.scan.outcome == 'success'
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: factory-checkpoint-${{ github.run_id }}
+          path: |
+            state
+            canary/outputs/latest.json
+            canary/outputs/latest.error.log
+            canary/outputs/mode.txt
+            canary/outputs/wake-id.txt
+            canary/outputs/exit-code.txt
+            canary/outputs/manifest.sha256
+          if-no-files-found: warn
+          retention-days: 7
+
+      - name: Preserve fail-closed status
+        if: steps.factory.outputs.exit_code != '0'
+        run: exit 1

@@ -1,0 +1,6 @@
+{
+  "wakeId": "360-stage1-2026-08-23-01",
+  "mode": "stage1",
+  "seedDiscovery": "canary/inputs/360-garage-door-and-more.discovery.json",
+  "requestedBy": "architect"
+}
