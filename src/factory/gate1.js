@@ -1,4 +1,4 @@
-function renderGate1({ finalist, prescription, migrationNotes = [] }) {
+function renderGate1({ finalist, prescription }) {
   const lines = [`# ${finalist.name}`, '', '## Why We Built This Site', '', `${finalist.name} is worth demonstrating because its verified evidence supports a focused local-service story. The proposed site emphasizes the strongest customer-proven services while keeping claims bounded by the evidence.`, '', '## Page Prescription', '', '| Page | Proposed URL | Primary Keyword | Proposed Title / H1 Direction | Recommended First Review |', '| --- | --- | --- | --- | --- |'];
   for (const page of prescription.pages) {
     const recommendation = page.recommendedFirstReview ? `${page.recommendedFirstReview.reviewer} — ${page.recommendedFirstReview.why}` : '—';
@@ -9,7 +9,6 @@ function renderGate1({ finalist, prescription, migrationNotes = [] }) {
   lines.push('', '### Services considered', '');
   for (const service of prescription.valueHierarchy) lines.push(`- ${service.name}: ${service.directCompletedEvidenceCount} direct completed-service anchor(s), ${service.evidenceCount} total evidence review(s).`);
   lines.push('', '## Human Gate 1', '', 'Are these the right pages, URLs, keywords, title directions, and first-review recommendations for this prospect?', '', '## State', '', '`awaiting-human-gate-1`');
-  if (migrationNotes.length) lines.push('', '## Migration notes', '', ...migrationNotes.map((note) => `- ${note}`));
   return lines.join('\n') + '\n';
 }
 
