@@ -158,6 +158,7 @@ function markInterrupted(state, runId, options = {}) {
 }
 
 function runOne({ root, config, candidate = null, owner = 'architect', now = new Date() }) {
+  if (config?.productionCapacity !== 1) throw Object.assign(new Error('productionCapacity must be exactly 1 for this MVP'), { code: 'INVALID_CAPACITY' });
   const release = acquireLock(root, owner, now);
   try {
     const state = loadState(root, config, now);

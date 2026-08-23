@@ -157,6 +157,7 @@ async function classifyAll(run, state, adapters, now, persist) {
  * and `qaPass` are never inferred from adapter/Cursor output.
  */
 async function runFactoryCycle({ root, config, adapters, architectDecision = {}, owner = 'architect', now = new Date() }) {
+  if (config?.productionCapacity !== 1) throw Object.assign(new Error('productionCapacity must be exactly 1 for this MVP'), { code: 'INVALID_CAPACITY' });
   assertAdapters(adapters);
   const release = acquireLock(root, owner, now);
   let state;
