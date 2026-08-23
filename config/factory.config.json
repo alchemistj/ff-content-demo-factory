@@ -1,0 +1,8 @@
+{
+  "productionCapacity": 1,
+  "maxDiscoveryCandidates": 7,
+  "finalistMaxReviews": 50,
+  "cursorModel": "cursor-grok-4.6-high",
+  "cursorFastMode": false,
+  "productionTrigger": "architect"
+}

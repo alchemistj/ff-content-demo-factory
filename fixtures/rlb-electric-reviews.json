@@ -1,0 +1,1402 @@
+{
+  "fixtureVersion": "1.0.0",
+  "provenance": {
+    "repository": "alchemistj/ff-2-demos",
+    "ref": "main",
+    "sourcePath": "factory-runs/rlb-electric-remodel-repair/strategy-recipe.json",
+    "source": "apify-finalist",
+    "listingReviewCount": 68,
+    "retrievedWrittenReviewCount": 44,
+    "note": "Exact reviewInventory copied from the finalist strategy recipe; pending model judgment is intentionally preserved."
+  },
+  "business": {
+    "name": "RLB Electric Remodel & Repair",
+    "placeId": "ChIJt4A_O26JxYcRFWiYP7cPk-U",
+    "city": "Springfield",
+    "state": "MO"
+  },
+  "reviews": [
+    {
+      "id": "rlb-electric-remodel-repair:google:a67bdec086d8",
+      "platform": "google",
+      "source": "apify-finalist",
+      "author": "Brandon Whisman",
+      "rating": 5,
+      "date": "2026-08-12T22:09:34.316Z",
+      "text": "I lost power yesterday and most of the house including the air-conditioning, from 7 pm and by  8:15 this morning the technician had already come to fix the issue with Citi Utilities' assistance. whenever it was submitted to the warranty company they were shocked by how and Inexpensive it was. Thank you for your promptness and your willingness to squeeze me in this morning. My dogs appreciate the air conditioning as much as I do!",
+      "wordCount": 75,
+      "preflag": {
+        "meetsWordFloor": true,
+        "wordCount": 75,
+        "floor": 15,
+        "floorStatus": "proposed-15-issue-148-non-mold"
+      },
+      "heuristicReferent": {
+        "hasConcreteReferent": false,
+        "rationale": "Names Citi, Utilities, Inexpensive but does not describe an action, sequence, or outcome.",
+        "method": "heuristic-v1",
+        "authoritative": false,
+        "signals": [
+          "named-team-member"
+        ]
+      },
+      "heuristicGrade": "supporting",
+      "referentJudgment": null,
+      "grade": "supporting",
+      "verificationState": "pending-model-judgment",
+      "authoritative": false,
+      "copyQuoteAllowed": true
+    },
+    {
+      "id": "rlb-electric-remodel-repair:google:58a3e1497ded",
+      "platform": "google",
+      "source": "apify-finalist",
+      "author": "jo e",
+      "rating": 5,
+      "date": "2026-08-10T18:50:20.842Z",
+      "text": "Real friendly worker who finished the job super quick and perfectly! Thank you so much!",
+      "wordCount": 15,
+      "preflag": {
+        "meetsWordFloor": true,
+        "wordCount": 15,
+        "floor": 15,
+        "floorStatus": "proposed-15-issue-148-non-mold"
+      },
+      "heuristicReferent": {
+        "hasConcreteReferent": true,
+        "rationale": "Heuristic signal from described-action, described-outcome, named-team-member (Real, Thank). Not a model judgment.",
+        "method": "heuristic-v1",
+        "authoritative": false,
+        "signals": [
+          "described-action",
+          "described-outcome",
+          "named-team-member"
+        ]
+      },
+      "heuristicGrade": "anchor",
+      "referentJudgment": null,
+      "grade": "supporting",
+      "verificationState": "pending-model-judgment",
+      "authoritative": false,
+      "copyQuoteAllowed": true
+    },
+    {
+      "id": "rlb-electric-remodel-repair:google:5c330bfa0402",
+      "platform": "google",
+      "source": "apify-finalist",
+      "author": "Anthony O'Bryan",
+      "rating": 5,
+      "date": "2026-06-05T17:34:14.214Z",
+      "text": "I had a circuit in my house that would randomly cause multiple outlets to cease providing power. I stumbled upon Rick's listing and gave him a call. He was in the middle of a larger job, and didn't think he would be able to make it out to my house anytime soon, but unforeseen circumstances freed him up enough to tend to my issue.\n\nRick came out to my house, I explained the issue and what I had done to diagnose it (as a non-electrician home-owner), and he knew exactly what to do. He wasted no time, got straight to work, and had the issue fixed in short order. I asked him if he could replace another malfunctioning outlet I had just remembered about, and he replaced it as well in short order.\n\nHis price was very reasonable, and I couldn't be happier with the results. He has become my new go-to Electrician.",
+      "wordCount": 153,
+      "preflag": {
+        "meetsWordFloor": true,
+        "wordCount": 153,
+        "floor": 15,
+        "floorStatus": "proposed-15-issue-148-non-mold"
+      },
+      "heuristicReferent": {
+        "hasConcreteReferent": true,
+        "rationale": "Heuristic signal from described-action, named-team-member (Rick, Rick, Electrician). Not a model judgment.",
+        "method": "heuristic-v1",
+        "authoritative": false,
+        "signals": [
+          "described-action",
+          "named-team-member"
+        ]
+      },
+      "heuristicGrade": "anchor",
+      "referentJudgment": null,
+      "grade": "supporting",
+      "verificationState": "pending-model-judgment",
+      "authoritative": false,
+      "copyQuoteAllowed": true
+    },
+    {
+      "id": "rlb-electric-remodel-repair:google:ec43f7b81247",
+      "platform": "google",
+      "source": "apify-finalist",
+      "author": "steve schiwinger",
+      "rating": 5,
+      "date": "2026-05-16T14:32:42.678Z",
+      "text": "Very professional. Rick does great work and timely. I highly recommend him",
+      "wordCount": 12,
+      "preflag": {
+        "meetsWordFloor": false,
+        "wordCount": 12,
+        "floor": 15,
+        "floorStatus": "proposed-15-issue-148-non-mold"
+      },
+      "heuristicReferent": {
+        "hasConcreteReferent": false,
+        "rationale": "Names Rick but does not describe an action, sequence, or outcome.",
+        "method": "heuristic-v1",
+        "authoritative": false,
+        "signals": [
+          "named-team-member"
+        ]
+      },
+      "heuristicGrade": "supporting",
+      "referentJudgment": null,
+      "grade": "supporting",
+      "verificationState": "pending-model-judgment",
+      "authoritative": false,
+      "copyQuoteAllowed": true
+    },
+    {
+      "id": "rlb-electric-remodel-repair:google:fcac777487fc",
+      "platform": "google",
+      "source": "apify-finalist",
+      "author": "Jennifer Dettmer",
+      "rating": 5,
+      "date": "2026-05-14T19:03:23.506Z",
+      "text": "Rick came out and did an excellent job finding out what was wrong with the electrical system at our house. He far exceeded our expectations!",
+      "wordCount": 25,
+      "preflag": {
+        "meetsWordFloor": true,
+        "wordCount": 25,
+        "floor": 15,
+        "floorStatus": "proposed-15-issue-148-non-mold"
+      },
+      "heuristicReferent": {
+        "hasConcreteReferent": true,
+        "rationale": "Heuristic signal from described-action, named-team-member (Rick). Not a model judgment.",
+        "method": "heuristic-v1",
+        "authoritative": false,
+        "signals": [
+          "described-action",
+          "named-team-member"
+        ]
+      },
+      "heuristicGrade": "anchor",
+      "referentJudgment": null,
+      "grade": "supporting",
+      "verificationState": "pending-model-judgment",
+      "authoritative": false,
+      "copyQuoteAllowed": true
+    },
+    {
+      "id": "rlb-electric-remodel-repair:google:1b893e0f0223",
+      "platform": "google",
+      "source": "apify-finalist",
+      "author": "Elke Maitland Woodruff",
+      "rating": 5,
+      "date": "2026-05-08T12:42:13.116Z",
+      "text": "Look no further, Rick went way beyond my expectations and I was extremely pleased with the outcome of the work he did for me. He was extremely professional, highly recommended.",
+      "wordCount": 30,
+      "preflag": {
+        "meetsWordFloor": true,
+        "wordCount": 30,
+        "floor": 15,
+        "floorStatus": "proposed-15-issue-148-non-mold"
+      },
+      "heuristicReferent": {
+        "hasConcreteReferent": false,
+        "rationale": "Names Look, Rick but does not describe an action, sequence, or outcome.",
+        "method": "heuristic-v1",
+        "authoritative": false,
+        "signals": [
+          "named-team-member"
+        ]
+      },
+      "heuristicGrade": "supporting",
+      "referentJudgment": null,
+      "grade": "supporting",
+      "verificationState": "pending-model-judgment",
+      "authoritative": false,
+      "copyQuoteAllowed": true
+    },
+    {
+      "id": "rlb-electric-remodel-repair:google:331290f50003",
+      "platform": "google",
+      "source": "apify-finalist",
+      "author": "Aaron Elam",
+      "rating": 5,
+      "date": "2026-01-27T01:25:54.128Z",
+      "text": "Rick is the absolute best. Not only did this man spend time on the phone to help me diagnose a problem, he was kind and patient. Im a type 1 diabetic so I know I can be a lot when im frustrated.\n\nI will use RLB Electric for every issue I have from this day forward.\n\nWhen other companies show they are open 24 hours, they told me they dont have any one working so they cant help, I would have had to wait until tomorrow, its 15 degrees outside. So they would have left me in the cold all because they wanted google visibility. These other companies couldn't compare at all to the kindness I was show by Rick.\n\nI will never go to anyone else, I would recommend RLB Elecetric to everyone in springfield and surrounding areas. This man is a true gift to our community and I hope everyone who reads this, gives this company a shot, you wont regret it!",
+      "wordCount": 164,
+      "preflag": {
+        "meetsWordFloor": true,
+        "wordCount": 164,
+        "floor": 15,
+        "floorStatus": "proposed-15-issue-148-non-mold"
+      },
+      "heuristicReferent": {
+        "hasConcreteReferent": true,
+        "rationale": "Heuristic signal from described-sequence, named-team-member (Rick, Electric, These). Not a model judgment.",
+        "method": "heuristic-v1",
+        "authoritative": false,
+        "signals": [
+          "described-sequence",
+          "named-team-member"
+        ]
+      },
+      "heuristicGrade": "anchor",
+      "referentJudgment": null,
+      "grade": "supporting",
+      "verificationState": "pending-model-judgment",
+      "authoritative": false,
+      "copyQuoteAllowed": true
+    },
+    {
+      "id": "rlb-electric-remodel-repair:google:0e1160bba223",
+      "platform": "google",
+      "source": "apify-finalist",
+      "author": "Jake Joplin",
+      "rating": 5,
+      "date": "2025-11-21T15:12:39.290Z",
+      "text": "Rick is super reliable, genuinely trustworthy, and clearly passionate about quality. He explains options in plain language, keeps you informed, and treats customers with respect. When he says he’ll do something, he does it right and on time. I’d gladly call Rick again for any future electrical needs and have already recommended him to others.",
+      "wordCount": 55,
+      "preflag": {
+        "meetsWordFloor": true,
+        "wordCount": 55,
+        "floor": 15,
+        "floorStatus": "proposed-15-issue-148-non-mold"
+      },
+      "heuristicReferent": {
+        "hasConcreteReferent": false,
+        "rationale": "Names Rick, Rick but does not describe an action, sequence, or outcome.",
+        "method": "heuristic-v1",
+        "authoritative": false,
+        "signals": [
+          "named-team-member"
+        ]
+      },
+      "heuristicGrade": "supporting",
+      "referentJudgment": null,
+      "grade": "supporting",
+      "verificationState": "pending-model-judgment",
+      "authoritative": false,
+      "copyQuoteAllowed": true
+    },
+    {
+      "id": "rlb-electric-remodel-repair:google:20125f01afd9",
+      "platform": "google",
+      "source": "apify-finalist",
+      "author": "Steven H",
+      "rating": 5,
+      "date": "2025-10-09T01:23:00.248Z",
+      "text": "Super friendly and great to deal with.  When I had questions, and I had a lot, he was patient with me answering my questions. Very nice and will definitely recommend...",
+      "wordCount": 30,
+      "preflag": {
+        "meetsWordFloor": true,
+        "wordCount": 30,
+        "floor": 15,
+        "floorStatus": "proposed-15-issue-148-non-mold"
+      },
+      "heuristicReferent": {
+        "hasConcreteReferent": false,
+        "rationale": "Names Super but does not describe an action, sequence, or outcome.",
+        "method": "heuristic-v1",
+        "authoritative": false,
+        "signals": [
+          "named-team-member"
+        ]
+      },
+      "heuristicGrade": "supporting",
+      "referentJudgment": null,
+      "grade": "supporting",
+      "verificationState": "pending-model-judgment",
+      "authoritative": false,
+      "copyQuoteAllowed": true
+    },
+    {
+      "id": "rlb-electric-remodel-repair:google:29d6e3b64a73",
+      "platform": "google",
+      "source": "apify-finalist",
+      "author": "M_H3R0",
+      "rating": 5,
+      "date": "2025-01-14T17:44:50.685Z",
+      "text": "Look no further! This is your guy for any electrical projects you have. Great work, punctual, and professional. Highly highly recommend",
+      "wordCount": 21,
+      "preflag": {
+        "meetsWordFloor": true,
+        "wordCount": 21,
+        "floor": 15,
+        "floorStatus": "proposed-15-issue-148-non-mold"
+      },
+      "heuristicReferent": {
+        "hasConcreteReferent": false,
+        "rationale": "Names Look but does not describe an action, sequence, or outcome.",
+        "method": "heuristic-v1",
+        "authoritative": false,
+        "signals": [
+          "named-team-member"
+        ]
+      },
+      "heuristicGrade": "supporting",
+      "referentJudgment": null,
+      "grade": "supporting",
+      "verificationState": "pending-model-judgment",
+      "authoritative": false,
+      "copyQuoteAllowed": true
+    },
+    {
+      "id": "rlb-electric-remodel-repair:google:f5b938079e3c",
+      "platform": "google",
+      "source": "apify-finalist",
+      "author": "Helene Wescott",
+      "rating": 5,
+      "date": "2024-06-26T15:08:26.656Z",
+      "text": "I bought a house, and after being screwed and paying way too much for things. I was given Ricks name and number. He came out and gave me a quote on what the other company did. Lo and behold he was so much cheaper, and did a better job than the other company would have done. I say that because the other company comes out throws stuff on and moves to the next customer. Rick comes out shows and tells you the truth of what needs to be done, makes sure everything is working properly, and while doing what I needed done. He did find a couple other problems and fixed them also. He also put up 5 lights I needed done, and sealed some places that needed sealed. He also cleans up his mess. You don’t find anyone to do that. Oh and some of the work the other company wanted to do DID NOT need done. They were just cushion their pockets.They wanted to charge me 3,000.00. Rick came out did more and didn’t charge me anything near that amount. I will definitely be hiring Rick for anything I need done for now on. He gets the job done, he’s thorough, he doesn’t rip people off, and he does what God wants him to do.",
+      "wordCount": 217,
+      "preflag": {
+        "meetsWordFloor": true,
+        "wordCount": 217,
+        "floor": 15,
+        "floorStatus": "proposed-15-issue-148-non-mold"
+      },
+      "heuristicReferent": {
+        "hasConcreteReferent": true,
+        "rationale": "Heuristic signal from described-action, described-sequence, named-team-member (Ricks, Rick, You). Not a model judgment.",
+        "method": "heuristic-v1",
+        "authoritative": false,
+        "signals": [
+          "described-action",
+          "described-sequence",
+          "named-team-member"
+        ]
+      },
+      "heuristicGrade": "anchor",
+      "referentJudgment": null,
+      "grade": "supporting",
+      "verificationState": "pending-model-judgment",
+      "authoritative": false,
+      "copyQuoteAllowed": true
+    },
+    {
+      "id": "rlb-electric-remodel-repair:google:34f9550b3858",
+      "platform": "google",
+      "source": "apify-finalist",
+      "author": "carol zablocki",
+      "rating": 5,
+      "date": "2024-06-04T00:28:04.395Z",
+      "text": "I had Rick replace my finicky kitchen ceiling light fixture that did not work properly. Rick  was not only proficient and professional, but also personable, AND the job was done in less than 30 minutes. It was truly a pleasure to have RLB Electric Remodel & Repair, and I would not hesitate recommending them. I had to laugh when I told my sister that I finally had the lighting fixture replaced, \"...And it's so bright now that I might just need to wear sunglasses when I brew my morning coffee.\" Yes, I am very pleased with RLB Electric Remodel & Repair.",
+      "wordCount": 101,
+      "preflag": {
+        "meetsWordFloor": true,
+        "wordCount": 101,
+        "floor": 15,
+        "floorStatus": "proposed-15-issue-148-non-mold"
+      },
+      "heuristicReferent": {
+        "hasConcreteReferent": true,
+        "rationale": "Heuristic signal from described-action, named-team-member (Rick, Rick, Electric). Not a model judgment.",
+        "method": "heuristic-v1",
+        "authoritative": false,
+        "signals": [
+          "described-action",
+          "named-team-member"
+        ]
+      },
+      "heuristicGrade": "anchor",
+      "referentJudgment": null,
+      "grade": "supporting",
+      "verificationState": "pending-model-judgment",
+      "authoritative": false,
+      "copyQuoteAllowed": true
+    },
+    {
+      "id": "rlb-electric-remodel-repair:google:965781753174",
+      "platform": "google",
+      "source": "apify-finalist",
+      "author": "Mark Deckard",
+      "rating": 5,
+      "date": "2024-05-25T00:37:33.196Z",
+      "text": "Made time for us on a holiday weekend to get power ran to cool a garage being used as an office. I’ll be using RBL for any and all of my electric needs moving forward!",
+      "wordCount": 35,
+      "preflag": {
+        "meetsWordFloor": true,
+        "wordCount": 35,
+        "floor": 15,
+        "floorStatus": "proposed-15-issue-148-non-mold"
+      },
+      "heuristicReferent": {
+        "hasConcreteReferent": false,
+        "rationale": "Names Made but does not describe an action, sequence, or outcome.",
+        "method": "heuristic-v1",
+        "authoritative": false,
+        "signals": [
+          "named-team-member"
+        ]
+      },
+      "heuristicGrade": "supporting",
+      "referentJudgment": null,
+      "grade": "supporting",
+      "verificationState": "pending-model-judgment",
+      "authoritative": false,
+      "copyQuoteAllowed": true
+    },
+    {
+      "id": "rlb-electric-remodel-repair:google:06418bbf461c",
+      "platform": "google",
+      "source": "apify-finalist",
+      "author": "Anthony Bolin",
+      "rating": 5,
+      "date": "2024-04-16T00:27:25.707Z",
+      "text": "Rick was extremely helpful with getting our power back working as it should! I am extremely glad we called him first, would recommend to a friend!",
+      "wordCount": 26,
+      "preflag": {
+        "meetsWordFloor": true,
+        "wordCount": 26,
+        "floor": 15,
+        "floorStatus": "proposed-15-issue-148-non-mold"
+      },
+      "heuristicReferent": {
+        "hasConcreteReferent": false,
+        "rationale": "Names Rick but does not describe an action, sequence, or outcome.",
+        "method": "heuristic-v1",
+        "authoritative": false,
+        "signals": [
+          "named-team-member"
+        ]
+      },
+      "heuristicGrade": "supporting",
+      "referentJudgment": null,
+      "grade": "supporting",
+      "verificationState": "pending-model-judgment",
+      "authoritative": false,
+      "copyQuoteAllowed": true
+    },
+    {
+      "id": "rlb-electric-remodel-repair:google:87d277c23767",
+      "platform": "google",
+      "source": "apify-finalist",
+      "author": "Kelly S",
+      "rating": 5,
+      "date": "2024-01-15T14:41:33.411Z",
+      "text": "I have to give a shout out to Rick at RLB Electric. He’s been helping me with my house’ electrics and installation of fans/lights. Well, last night my thermostat broke and being sub zero temps that wasn’t fun. He answered my call last night and helped me with everything I could potentially do to fix the issue myself. When it still didn’t work he was here before sunrise this morning to fix it. 10/10 recommend RLB Electric ⭐️⭐️⭐️⭐️⭐️",
+      "wordCount": 78,
+      "preflag": {
+        "meetsWordFloor": true,
+        "wordCount": 78,
+        "floor": 15,
+        "floorStatus": "proposed-15-issue-148-non-mold"
+      },
+      "heuristicReferent": {
+        "hasConcreteReferent": true,
+        "rationale": "Heuristic signal from described-sequence, named-team-member (Rick, Electric, Well). Not a model judgment.",
+        "method": "heuristic-v1",
+        "authoritative": false,
+        "signals": [
+          "described-sequence",
+          "named-team-member"
+        ]
+      },
+      "heuristicGrade": "anchor",
+      "referentJudgment": null,
+      "grade": "supporting",
+      "verificationState": "pending-model-judgment",
+      "authoritative": false,
+      "copyQuoteAllowed": true
+    },
+    {
+      "id": "rlb-electric-remodel-repair:google:1cd2410ff245",
+      "platform": "google",
+      "source": "apify-finalist",
+      "author": "David Vailes",
+      "rating": 5,
+      "date": "2023-09-21T12:03:38.249Z",
+      "text": "RLB came within an hour of calling for what we felt was an emergency situation with our refrigerator not getting any power. He had it fixed within the hour and charged us a reasonable price. He walked us through the problems and how to avoid them in the future. He was professional and quick and we would recommend him to anyone. Thanks, RLB.",
+      "wordCount": 63,
+      "preflag": {
+        "meetsWordFloor": true,
+        "wordCount": 63,
+        "floor": 15,
+        "floorStatus": "proposed-15-issue-148-non-mold"
+      },
+      "heuristicReferent": {
+        "hasConcreteReferent": true,
+        "rationale": "Heuristic signal from described-action, named-team-member (Thanks). Not a model judgment.",
+        "method": "heuristic-v1",
+        "authoritative": false,
+        "signals": [
+          "described-action",
+          "named-team-member"
+        ]
+      },
+      "heuristicGrade": "anchor",
+      "referentJudgment": null,
+      "grade": "supporting",
+      "verificationState": "pending-model-judgment",
+      "authoritative": false,
+      "copyQuoteAllowed": true
+    },
+    {
+      "id": "rlb-electric-remodel-repair:google:37556baefcca",
+      "platform": "google",
+      "source": "apify-finalist",
+      "author": "Allen Schaefer",
+      "rating": 5,
+      "date": "2023-08-26T18:55:22.456Z",
+      "text": "Ricky is very responsive and does quality work at a fair price.  He installed a Nema 15-50 outlet in my garage for EV charging and did a nice job.",
+      "wordCount": 29,
+      "preflag": {
+        "meetsWordFloor": true,
+        "wordCount": 29,
+        "floor": 15,
+        "floorStatus": "proposed-15-issue-148-non-mold"
+      },
+      "heuristicReferent": {
+        "hasConcreteReferent": true,
+        "rationale": "Heuristic signal from described-action, named-team-member (Ricky, Nema). Not a model judgment.",
+        "method": "heuristic-v1",
+        "authoritative": false,
+        "signals": [
+          "described-action",
+          "named-team-member"
+        ]
+      },
+      "heuristicGrade": "anchor",
+      "referentJudgment": null,
+      "grade": "supporting",
+      "verificationState": "pending-model-judgment",
+      "authoritative": false,
+      "copyQuoteAllowed": true
+    },
+    {
+      "id": "rlb-electric-remodel-repair:google:c5185aaddb0a",
+      "platform": "google",
+      "source": "apify-finalist",
+      "author": "Jason Budd",
+      "rating": 5,
+      "date": "2022-11-17T00:53:32.308Z",
+      "text": "RLB electric wired a new construction 30x40 shop house for us. Ricky was more than fair on the pricing, and we paid the bid price, even though the cost of the material increased after the job began. No complaints or excuses. Always on time, and answered any questions we had during the building process. Very professional and courteous. I highly recommend RLB electric.",
+      "wordCount": 63,
+      "preflag": {
+        "meetsWordFloor": true,
+        "wordCount": 63,
+        "floor": 15,
+        "floorStatus": "proposed-15-issue-148-non-mold"
+      },
+      "heuristicReferent": {
+        "hasConcreteReferent": true,
+        "rationale": "Heuristic signal from described-sequence, named-team-member (Ricky, Always). Not a model judgment.",
+        "method": "heuristic-v1",
+        "authoritative": false,
+        "signals": [
+          "described-sequence",
+          "named-team-member"
+        ]
+      },
+      "heuristicGrade": "anchor",
+      "referentJudgment": null,
+      "grade": "supporting",
+      "verificationState": "pending-model-judgment",
+      "authoritative": false,
+      "copyQuoteAllowed": true
+    },
+    {
+      "id": "rlb-electric-remodel-repair:google:617ed86ac093",
+      "platform": "google",
+      "source": "apify-finalist",
+      "author": "Jackie Rogers",
+      "rating": 5,
+      "date": "2022-10-01T22:09:18.889Z",
+      "text": "Rick is the best electrician I've ever hired.  He has great communication,  shows up when promised,  and his pricing is fair. He helped me make my 1932 bungalow and stone shed so much more livable! I give this guy 5 stars! Thank you!",
+      "wordCount": 43,
+      "preflag": {
+        "meetsWordFloor": true,
+        "wordCount": 43,
+        "floor": 15,
+        "floorStatus": "proposed-15-issue-148-non-mold"
+      },
+      "heuristicReferent": {
+        "hasConcreteReferent": false,
+        "rationale": "Names Rick, Thank but does not describe an action, sequence, or outcome.",
+        "method": "heuristic-v1",
+        "authoritative": false,
+        "signals": [
+          "named-team-member"
+        ]
+      },
+      "heuristicGrade": "supporting",
+      "referentJudgment": null,
+      "grade": "supporting",
+      "verificationState": "pending-model-judgment",
+      "authoritative": false,
+      "copyQuoteAllowed": true
+    },
+    {
+      "id": "rlb-electric-remodel-repair:google:2eba646da1e9",
+      "platform": "google",
+      "source": "apify-finalist",
+      "author": "Rick Rodriguez",
+      "rating": 5,
+      "date": "2022-09-29T12:09:28.604Z",
+      "text": "Very professional and great work extremely pleased with his services",
+      "wordCount": 10,
+      "preflag": {
+        "meetsWordFloor": false,
+        "wordCount": 10,
+        "floor": 15,
+        "floorStatus": "proposed-15-issue-148-non-mold"
+      },
+      "heuristicReferent": {
+        "hasConcreteReferent": false,
+        "rationale": "No described action, sequence, outcome, or named team member performing work. A named service category alone is not a referent.",
+        "method": "heuristic-v1",
+        "authoritative": false,
+        "signals": []
+      },
+      "heuristicGrade": "supporting",
+      "referentJudgment": null,
+      "grade": "supporting",
+      "verificationState": "pending-model-judgment",
+      "authoritative": false,
+      "copyQuoteAllowed": true
+    },
+    {
+      "id": "rlb-electric-remodel-repair:google:e7c057b6b429",
+      "platform": "google",
+      "source": "apify-finalist",
+      "author": "Breanna Mareschal",
+      "rating": 5,
+      "date": "2022-05-11T21:12:14.625Z",
+      "text": "Great service.",
+      "wordCount": 2,
+      "preflag": {
+        "meetsWordFloor": false,
+        "wordCount": 2,
+        "floor": 15,
+        "floorStatus": "proposed-15-issue-148-non-mold"
+      },
+      "heuristicReferent": {
+        "hasConcreteReferent": false,
+        "rationale": "No described action, sequence, outcome, or named team member performing work. A named service category alone is not a referent.",
+        "method": "heuristic-v1",
+        "authoritative": false,
+        "signals": []
+      },
+      "heuristicGrade": "supporting",
+      "referentJudgment": null,
+      "grade": "supporting",
+      "verificationState": "pending-model-judgment",
+      "authoritative": false,
+      "copyQuoteAllowed": true
+    },
+    {
+      "id": "rlb-electric-remodel-repair:google:88c373a0f6af",
+      "platform": "google",
+      "source": "apify-finalist",
+      "author": "Tina",
+      "rating": 1,
+      "date": "2022-04-03T22:19:27.636Z",
+      "text": "I requested the services of this gentleman for a noisy ceiling fan, in need of repair (which he lists in his services that he's knowledgeable in) & when he came to our house, he barely got past the entryway & tells us that we should replace it because he wasn't hearing the noise & called the wobbling it had \"normal.\" He told us that we would need a new fan & that when we bought one, to call them to have them install it.\n\nHe also told us that he \"earns all his reviews.\" Well, he ain't kidding because he certainly earned this one.\n\nWe got a second opinion & managed to get it fixed with a relative.\n\nIf I had to describe the service I received, I would call it pretty lazy. Be careful with a business with very few scores, even though it's a high rating.",
+      "wordCount": 148,
+      "preflag": {
+        "meetsWordFloor": true,
+        "wordCount": 148,
+        "floor": 15,
+        "floorStatus": "proposed-15-issue-148-non-mold"
+      },
+      "heuristicReferent": {
+        "hasConcreteReferent": true,
+        "rationale": "Heuristic signal from described-action, named-team-member (Well). Not a model judgment.",
+        "method": "heuristic-v1",
+        "authoritative": false,
+        "signals": [
+          "described-action",
+          "named-team-member"
+        ]
+      },
+      "heuristicGrade": "anchor",
+      "referentJudgment": null,
+      "grade": "supporting",
+      "verificationState": "pending-model-judgment",
+      "authoritative": false,
+      "copyQuoteAllowed": false
+    },
+    {
+      "id": "rlb-electric-remodel-repair:google:b06bc7948d8a",
+      "platform": "google",
+      "source": "apify-finalist",
+      "author": "Lela LeeMasters",
+      "rating": 5,
+      "date": "2022-04-01T23:47:11.688Z",
+      "text": "In less than 24 hours of my situation they were here. Very fair pricing. They were quick, efficient and did not try to take advantage of me. They were knowledgeable and professional. The number is saved in my phone for future use. I really appreciated their time and energy.",
+      "wordCount": 49,
+      "preflag": {
+        "meetsWordFloor": true,
+        "wordCount": 49,
+        "floor": 15,
+        "floorStatus": "proposed-15-issue-148-non-mold"
+      },
+      "heuristicReferent": {
+        "hasConcreteReferent": false,
+        "rationale": "No described action, sequence, outcome, or named team member performing work. A named service category alone is not a referent.",
+        "method": "heuristic-v1",
+        "authoritative": false,
+        "signals": []
+      },
+      "heuristicGrade": "supporting",
+      "referentJudgment": null,
+      "grade": "supporting",
+      "verificationState": "pending-model-judgment",
+      "authoritative": false,
+      "copyQuoteAllowed": true
+    },
+    {
+      "id": "rlb-electric-remodel-repair:google:23569a3c9c85",
+      "platform": "google",
+      "source": "apify-finalist",
+      "author": "Rebecca",
+      "rating": 5,
+      "date": "2022-03-23T18:26:13.529Z",
+      "text": "The bathtub handle shocked my tenant...A dangerous situation to day the least. But he fixed it in a timely, affordable and professional manner.\nI would highly recommend him.",
+      "wordCount": 28,
+      "preflag": {
+        "meetsWordFloor": true,
+        "wordCount": 28,
+        "floor": 15,
+        "floorStatus": "proposed-15-issue-148-non-mold"
+      },
+      "heuristicReferent": {
+        "hasConcreteReferent": true,
+        "rationale": "Heuristic signal from described-action. Not a model judgment.",
+        "method": "heuristic-v1",
+        "authoritative": false,
+        "signals": [
+          "described-action"
+        ]
+      },
+      "heuristicGrade": "anchor",
+      "referentJudgment": null,
+      "grade": "supporting",
+      "verificationState": "pending-model-judgment",
+      "authoritative": false,
+      "copyQuoteAllowed": true
+    },
+    {
+      "id": "rlb-electric-remodel-repair:google:0e26c83e20db",
+      "platform": "google",
+      "source": "apify-finalist",
+      "author": "Heather Blades",
+      "rating": 5,
+      "date": "2022-03-20T19:27:36.794Z",
+      "text": "We were thrilled with the service Ricky provided! We needed to have electrical service set up for a heater/AC unit over our garage. Two other electricians family recommended to use would not even call us back... but Ricky called right away, came out ASAP to give an estimate, and then provide excellent service at a great price. We have found our family's new electrician!",
+      "wordCount": 64,
+      "preflag": {
+        "meetsWordFloor": true,
+        "wordCount": 64,
+        "floor": 15,
+        "floorStatus": "proposed-15-issue-148-non-mold"
+      },
+      "heuristicReferent": {
+        "hasConcreteReferent": true,
+        "rationale": "Heuristic signal from described-action, described-sequence, named-team-member (Ricky, Two, Ricky). Not a model judgment.",
+        "method": "heuristic-v1",
+        "authoritative": false,
+        "signals": [
+          "described-action",
+          "described-sequence",
+          "named-team-member"
+        ]
+      },
+      "heuristicGrade": "anchor",
+      "referentJudgment": null,
+      "grade": "supporting",
+      "verificationState": "pending-model-judgment",
+      "authoritative": false,
+      "copyQuoteAllowed": true
+    },
+    {
+      "id": "rlb-electric-remodel-repair:google:0bad5dec50f9",
+      "platform": "google",
+      "source": "apify-finalist",
+      "author": "David Trask",
+      "rating": 5,
+      "date": "2022-02-16T21:09:23.136Z",
+      "text": "I googled for an electrician near me and when it listed the electricians RLS had good reviews and so I called them they came out this afternoon they fixed my lights under my cabinets and on top of my cabinets that highlight, they did a wonderful job they are my electricians from here on out. They were amazing. If you don’t use them then you’re not using the best and you’re probably paying too much.",
+      "wordCount": 75,
+      "preflag": {
+        "meetsWordFloor": true,
+        "wordCount": 75,
+        "floor": 15,
+        "floorStatus": "proposed-15-issue-148-non-mold"
+      },
+      "heuristicReferent": {
+        "hasConcreteReferent": true,
+        "rationale": "Heuristic signal from described-action, described-sequence. Not a model judgment.",
+        "method": "heuristic-v1",
+        "authoritative": false,
+        "signals": [
+          "described-action",
+          "described-sequence"
+        ]
+      },
+      "heuristicGrade": "anchor",
+      "referentJudgment": null,
+      "grade": "supporting",
+      "verificationState": "pending-model-judgment",
+      "authoritative": false,
+      "copyQuoteAllowed": true
+    },
+    {
+      "id": "rlb-electric-remodel-repair:google:8b2224df97fc",
+      "platform": "google",
+      "source": "apify-finalist",
+      "author": "Charlie Carlson",
+      "rating": 5,
+      "date": "2022-02-14T19:35:37.252Z",
+      "text": "RLB Electric, is from now on MY electrician!!  Ricky and Dan were on time, friendly and very professional.  They had my electrical problem, which by the way, affected half of the house, identified and solved, all the while not charging an arm and a leg for the service!!\n\nIf you want professional, extremely knowledgeable service for a reasonable price, call RLB Electrical!!!",
+      "wordCount": 62,
+      "preflag": {
+        "meetsWordFloor": true,
+        "wordCount": 62,
+        "floor": 15,
+        "floorStatus": "proposed-15-issue-148-non-mold"
+      },
+      "heuristicReferent": {
+        "hasConcreteReferent": false,
+        "rationale": "Names Electric, Ricky, Dan but does not describe an action, sequence, or outcome.",
+        "method": "heuristic-v1",
+        "authoritative": false,
+        "signals": [
+          "named-team-member"
+        ]
+      },
+      "heuristicGrade": "supporting",
+      "referentJudgment": null,
+      "grade": "supporting",
+      "verificationState": "pending-model-judgment",
+      "authoritative": false,
+      "copyQuoteAllowed": true
+    },
+    {
+      "id": "rlb-electric-remodel-repair:google:f1c573a7cfb2",
+      "platform": "google",
+      "source": "apify-finalist",
+      "author": "Rebecca Kauffman",
+      "rating": 5,
+      "date": "2022-01-13T01:54:11.633Z",
+      "text": "Ricky came on the spot to help with an electrical situation with our furnace in the evening to make sure we had heat before bedtime. He was friendly and thorough. Thank you!",
+      "wordCount": 32,
+      "preflag": {
+        "meetsWordFloor": true,
+        "wordCount": 32,
+        "floor": 15,
+        "floorStatus": "proposed-15-issue-148-non-mold"
+      },
+      "heuristicReferent": {
+        "hasConcreteReferent": true,
+        "rationale": "Heuristic signal from described-sequence, named-team-member (Ricky, Thank). Not a model judgment.",
+        "method": "heuristic-v1",
+        "authoritative": false,
+        "signals": [
+          "described-sequence",
+          "named-team-member"
+        ]
+      },
+      "heuristicGrade": "anchor",
+      "referentJudgment": null,
+      "grade": "supporting",
+      "verificationState": "pending-model-judgment",
+      "authoritative": false,
+      "copyQuoteAllowed": true
+    },
+    {
+      "id": "rlb-electric-remodel-repair:google:e3e6f212cada",
+      "platform": "google",
+      "source": "apify-finalist",
+      "author": "Nicole B",
+      "rating": 5,
+      "date": "2021-10-05T14:14:20.608Z",
+      "text": "Fair prices for labor and supplies. Was on time, friendly, knowledgeable. Answered my questions and performed electrical work needed for kitchen remodel. Also diagnosed outlets and switches that did not work. Would highly recommend.",
+      "wordCount": 34,
+      "preflag": {
+        "meetsWordFloor": true,
+        "wordCount": 34,
+        "floor": 15,
+        "floorStatus": "proposed-15-issue-148-non-mold"
+      },
+      "heuristicReferent": {
+        "hasConcreteReferent": true,
+        "rationale": "Heuristic signal from described-action, named-team-member (Fair, Answered). Not a model judgment.",
+        "method": "heuristic-v1",
+        "authoritative": false,
+        "signals": [
+          "described-action",
+          "named-team-member"
+        ]
+      },
+      "heuristicGrade": "anchor",
+      "referentJudgment": null,
+      "grade": "supporting",
+      "verificationState": "pending-model-judgment",
+      "authoritative": false,
+      "copyQuoteAllowed": true
+    },
+    {
+      "id": "rlb-electric-remodel-repair:google:b243f016d77d",
+      "platform": "google",
+      "source": "apify-finalist",
+      "author": "Brian Stokes",
+      "rating": 5,
+      "date": "2021-09-12T04:17:56.120Z",
+      "text": "10/10 would recommend! Very satisfied with the work that was done. I will be a repeat customer for sure!",
+      "wordCount": 19,
+      "preflag": {
+        "meetsWordFloor": true,
+        "wordCount": 19,
+        "floor": 15,
+        "floorStatus": "proposed-15-issue-148-non-mold"
+      },
+      "heuristicReferent": {
+        "hasConcreteReferent": false,
+        "rationale": "No described action, sequence, outcome, or named team member performing work. A named service category alone is not a referent.",
+        "method": "heuristic-v1",
+        "authoritative": false,
+        "signals": []
+      },
+      "heuristicGrade": "supporting",
+      "referentJudgment": null,
+      "grade": "supporting",
+      "verificationState": "pending-model-judgment",
+      "authoritative": false,
+      "copyQuoteAllowed": true
+    },
+    {
+      "id": "rlb-electric-remodel-repair:google:9a0402cfda41",
+      "platform": "google",
+      "source": "apify-finalist",
+      "author": "Debbie Ferrante",
+      "rating": 5,
+      "date": "2021-09-10T14:39:51.553Z",
+      "text": "I would highly recommend RLB!",
+      "wordCount": 5,
+      "preflag": {
+        "meetsWordFloor": false,
+        "wordCount": 5,
+        "floor": 15,
+        "floorStatus": "proposed-15-issue-148-non-mold"
+      },
+      "heuristicReferent": {
+        "hasConcreteReferent": false,
+        "rationale": "No described action, sequence, outcome, or named team member performing work. A named service category alone is not a referent.",
+        "method": "heuristic-v1",
+        "authoritative": false,
+        "signals": []
+      },
+      "heuristicGrade": "supporting",
+      "referentJudgment": null,
+      "grade": "supporting",
+      "verificationState": "pending-model-judgment",
+      "authoritative": false,
+      "copyQuoteAllowed": true
+    },
+    {
+      "id": "rlb-electric-remodel-repair:google:a39a2c8cd8d7",
+      "platform": "google",
+      "source": "apify-finalist",
+      "author": "Marleighna Claunch",
+      "rating": 5,
+      "date": "2021-09-09T18:08:39.225Z",
+      "text": "We were very happy with our experience with RLB Electric. Rick was straightforward, timely, and cleaned up after himself. His services are very affordable as well, which was a pleasant surprise. I will definitely be calling RLB Electric for our future needs!",
+      "wordCount": 42,
+      "preflag": {
+        "meetsWordFloor": true,
+        "wordCount": 42,
+        "floor": 15,
+        "floorStatus": "proposed-15-issue-148-non-mold"
+      },
+      "heuristicReferent": {
+        "hasConcreteReferent": true,
+        "rationale": "Heuristic signal from described-action, described-sequence, described-outcome, named-team-member (Electric, Rick, Electric). Not a model judgment.",
+        "method": "heuristic-v1",
+        "authoritative": false,
+        "signals": [
+          "described-action",
+          "described-sequence",
+          "described-outcome",
+          "named-team-member"
+        ]
+      },
+      "heuristicGrade": "anchor",
+      "referentJudgment": null,
+      "grade": "supporting",
+      "verificationState": "pending-model-judgment",
+      "authoritative": false,
+      "copyQuoteAllowed": true
+    },
+    {
+      "id": "rlb-electric-remodel-repair:google:f0aab0206c87",
+      "platform": "google",
+      "source": "apify-finalist",
+      "author": "Raquel Lambo",
+      "rating": 5,
+      "date": "2021-08-29T01:17:41.631Z",
+      "text": "Rick was amazing and very helpful !!!!",
+      "wordCount": 7,
+      "preflag": {
+        "meetsWordFloor": false,
+        "wordCount": 7,
+        "floor": 15,
+        "floorStatus": "proposed-15-issue-148-non-mold"
+      },
+      "heuristicReferent": {
+        "hasConcreteReferent": false,
+        "rationale": "Names Rick but does not describe an action, sequence, or outcome.",
+        "method": "heuristic-v1",
+        "authoritative": false,
+        "signals": [
+          "named-team-member"
+        ]
+      },
+      "heuristicGrade": "supporting",
+      "referentJudgment": null,
+      "grade": "supporting",
+      "verificationState": "pending-model-judgment",
+      "authoritative": false,
+      "copyQuoteAllowed": true
+    },
+    {
+      "id": "rlb-electric-remodel-repair:google:b354675e339e",
+      "platform": "google",
+      "source": "apify-finalist",
+      "author": "Chris Flesher",
+      "rating": 5,
+      "date": "2021-08-14T13:24:33.025Z",
+      "text": "I apologize for the original 1 star review, upped it to 5 as you deserve for your great work.",
+      "wordCount": 19,
+      "preflag": {
+        "meetsWordFloor": true,
+        "wordCount": 19,
+        "floor": 15,
+        "floorStatus": "proposed-15-issue-148-non-mold"
+      },
+      "heuristicReferent": {
+        "hasConcreteReferent": false,
+        "rationale": "No described action, sequence, outcome, or named team member performing work. A named service category alone is not a referent.",
+        "method": "heuristic-v1",
+        "authoritative": false,
+        "signals": []
+      },
+      "heuristicGrade": "supporting",
+      "referentJudgment": null,
+      "grade": "supporting",
+      "verificationState": "pending-model-judgment",
+      "authoritative": false,
+      "copyQuoteAllowed": true
+    },
+    {
+      "id": "rlb-electric-remodel-repair:google:63b3e2630428",
+      "platform": "google",
+      "source": "apify-finalist",
+      "author": "Kyle John",
+      "rating": 5,
+      "date": "2021-08-12T16:28:42.451Z",
+      "text": "Never fails, 9:00 the night before guests were expected the next day, an entire electrical panel failed. No A/C, refrigerators, etc. Rick diagnosed an electrical short in the A/C repairman's switch (which could have caused a major home fire- we could smell the melting wires) and fixed it quickly. In and out in under an hour, at night, and he didn't try to take advantage by price gouging. Great guy, great service, would call him again!",
+      "wordCount": 76,
+      "preflag": {
+        "meetsWordFloor": true,
+        "wordCount": 76,
+        "floor": 15,
+        "floorStatus": "proposed-15-issue-148-non-mold"
+      },
+      "heuristicReferent": {
+        "hasConcreteReferent": true,
+        "rationale": "Heuristic signal from described-action, described-sequence, named-team-member (Never, Rick). Not a model judgment.",
+        "method": "heuristic-v1",
+        "authoritative": false,
+        "signals": [
+          "described-action",
+          "described-sequence",
+          "named-team-member"
+        ]
+      },
+      "heuristicGrade": "anchor",
+      "referentJudgment": null,
+      "grade": "supporting",
+      "verificationState": "pending-model-judgment",
+      "authoritative": false,
+      "copyQuoteAllowed": true
+    },
+    {
+      "id": "rlb-electric-remodel-repair:google:b2d95594980f",
+      "platform": "google",
+      "source": "apify-finalist",
+      "author": "Seantelle Scobee",
+      "rating": 5,
+      "date": "2021-07-22T04:26:01.976Z",
+      "text": "Rick was great, diagnosed my problem within mins and had my wires and electric back as they should be!\nSo reasonably priced I was so grateful",
+      "wordCount": 26,
+      "preflag": {
+        "meetsWordFloor": true,
+        "wordCount": 26,
+        "floor": 15,
+        "floorStatus": "proposed-15-issue-148-non-mold"
+      },
+      "heuristicReferent": {
+        "hasConcreteReferent": true,
+        "rationale": "Heuristic signal from described-action, named-team-member (Rick). Not a model judgment.",
+        "method": "heuristic-v1",
+        "authoritative": false,
+        "signals": [
+          "described-action",
+          "named-team-member"
+        ]
+      },
+      "heuristicGrade": "anchor",
+      "referentJudgment": null,
+      "grade": "supporting",
+      "verificationState": "pending-model-judgment",
+      "authoritative": false,
+      "copyQuoteAllowed": true
+    },
+    {
+      "id": "rlb-electric-remodel-repair:google:e1bfd7374bc0",
+      "platform": "google",
+      "source": "apify-finalist",
+      "author": "Cheryl",
+      "rating": 5,
+      "date": "2021-07-11T16:53:24.063Z",
+      "text": "This is the third time over the years we have called RLB for electrical services. We HIGLY recommend this company! We found the work excellent each time we hired RLB. Not only were all our issues solved, but the amount charged was very reasonable and affordable. RLB went the extra mile, even modifying a fan to be able to install a different shade than the cheap one that came with the fan we foolishly didn't inspect prior to the time of installation. It saved us from having to exchange that fan for another one and another service call. Because we rate this company so highly, we have broken our personal rule of never giving recommendations to friends and family. We have recommended this company without hesitation to both and have not been let down.",
+      "wordCount": 134,
+      "preflag": {
+        "meetsWordFloor": true,
+        "wordCount": 134,
+        "floor": 15,
+        "floorStatus": "proposed-15-issue-148-non-mold"
+      },
+      "heuristicReferent": {
+        "hasConcreteReferent": true,
+        "rationale": "Heuristic signal from described-sequence, named-team-member (Because). Not a model judgment.",
+        "method": "heuristic-v1",
+        "authoritative": false,
+        "signals": [
+          "described-sequence",
+          "named-team-member"
+        ]
+      },
+      "heuristicGrade": "anchor",
+      "referentJudgment": null,
+      "grade": "supporting",
+      "verificationState": "pending-model-judgment",
+      "authoritative": false,
+      "copyQuoteAllowed": true
+    },
+    {
+      "id": "rlb-electric-remodel-repair:google:0e78ec19be56",
+      "platform": "google",
+      "source": "apify-finalist",
+      "author": "Jonathan O'Mary",
+      "rating": 5,
+      "date": "2021-06-11T02:17:25.849Z",
+      "text": "Rick was great. We called early in the morning and he was there in an hour.  He fixed the problem within minutes and his charge was very reasonable.  We will use RLB Electric in the future.",
+      "wordCount": 36,
+      "preflag": {
+        "meetsWordFloor": true,
+        "wordCount": 36,
+        "floor": 15,
+        "floorStatus": "proposed-15-issue-148-non-mold"
+      },
+      "heuristicReferent": {
+        "hasConcreteReferent": true,
+        "rationale": "Heuristic signal from described-action, named-team-member (Rick, Electric). Not a model judgment.",
+        "method": "heuristic-v1",
+        "authoritative": false,
+        "signals": [
+          "described-action",
+          "named-team-member"
+        ]
+      },
+      "heuristicGrade": "anchor",
+      "referentJudgment": null,
+      "grade": "supporting",
+      "verificationState": "pending-model-judgment",
+      "authoritative": false,
+      "copyQuoteAllowed": true
+    },
+    {
+      "id": "rlb-electric-remodel-repair:google:fe1622b76071",
+      "platform": "google",
+      "source": "apify-finalist",
+      "author": "Kelly Padgett",
+      "rating": 5,
+      "date": "2021-04-19T22:21:24.153Z",
+      "text": "Reliable,  punctuality, very reasonably priced",
+      "wordCount": 5,
+      "preflag": {
+        "meetsWordFloor": false,
+        "wordCount": 5,
+        "floor": 15,
+        "floorStatus": "proposed-15-issue-148-non-mold"
+      },
+      "heuristicReferent": {
+        "hasConcreteReferent": false,
+        "rationale": "Names Reliable but does not describe an action, sequence, or outcome.",
+        "method": "heuristic-v1",
+        "authoritative": false,
+        "signals": [
+          "named-team-member"
+        ]
+      },
+      "heuristicGrade": "supporting",
+      "referentJudgment": null,
+      "grade": "supporting",
+      "verificationState": "pending-model-judgment",
+      "authoritative": false,
+      "copyQuoteAllowed": true
+    },
+    {
+      "id": "rlb-electric-remodel-repair:google:42e344a60c60",
+      "platform": "google",
+      "source": "apify-finalist",
+      "author": "Michael Logiudice",
+      "rating": 5,
+      "date": "2021-04-15T04:07:26.775Z",
+      "text": "Rick did an excellent job, very professional. I would highly recommend him .",
+      "wordCount": 13,
+      "preflag": {
+        "meetsWordFloor": false,
+        "wordCount": 13,
+        "floor": 15,
+        "floorStatus": "proposed-15-issue-148-non-mold"
+      },
+      "heuristicReferent": {
+        "hasConcreteReferent": false,
+        "rationale": "Names Rick but does not describe an action, sequence, or outcome.",
+        "method": "heuristic-v1",
+        "authoritative": false,
+        "signals": [
+          "named-team-member"
+        ]
+      },
+      "heuristicGrade": "supporting",
+      "referentJudgment": null,
+      "grade": "supporting",
+      "verificationState": "pending-model-judgment",
+      "authoritative": false,
+      "copyQuoteAllowed": true
+    },
+    {
+      "id": "rlb-electric-remodel-repair:google:0506f6e166e4",
+      "platform": "google",
+      "source": "apify-finalist",
+      "author": "Laura Vales",
+      "rating": 5,
+      "date": "2021-03-30T15:05:34.573Z",
+      "text": "We have used Rick at RLB several times for a variety of jobs, and he has been awesome every single time.  He is on time, he does quality work, and he makes sure that the customer understands what he is doing and why; he is also very reasonably priced.  He is my go-to electrician and I recommend him to everyone I know.  Thanks so much!",
+      "wordCount": 65,
+      "preflag": {
+        "meetsWordFloor": true,
+        "wordCount": 65,
+        "floor": 15,
+        "floorStatus": "proposed-15-issue-148-non-mold"
+      },
+      "heuristicReferent": {
+        "hasConcreteReferent": false,
+        "rationale": "Names Rick, Thanks but does not describe an action, sequence, or outcome.",
+        "method": "heuristic-v1",
+        "authoritative": false,
+        "signals": [
+          "named-team-member"
+        ]
+      },
+      "heuristicGrade": "supporting",
+      "referentJudgment": null,
+      "grade": "supporting",
+      "verificationState": "pending-model-judgment",
+      "authoritative": false,
+      "copyQuoteAllowed": true
+    },
+    {
+      "id": "rlb-electric-remodel-repair:google:1ab9586e535e",
+      "platform": "google",
+      "source": "apify-finalist",
+      "author": "Chad Palmer",
+      "rating": 5,
+      "date": "2021-03-12T20:09:41.705Z",
+      "text": "Rick came out and went over everything that we wanted to do. He gave me what seemed to be a very fair if not great estimate for the supplies and time needed to do the job. He was on time every time that we set up an appointment, and I have not had that same luck with any other company since moving here yet. No large timeframe window encompassing 4 hours leaving me taking off work to sit there just to get something rescheduled etc. He said a time and was here early both times. As far as the work goes he installed new outlets in my house, and multiple ones in my garage. He installed a couple lights as well. Also he changed the wiring in my house from a hard line into a 1970's stove to a 4 prong plug that I could plug our updated oven that had been sitting in our dinning room for months into. My wife is very happy about it trust me. He even tracked down what some ((random) switch was for in our attic that I had no idea was to for nothing. Courteous, clean and just a completely happy experience. FYI I don't normally give out reviews but this was totally worth taking the time to write. Thanks again and if I ever need anymore work done I know who to call.",
+      "wordCount": 231,
+      "preflag": {
+        "meetsWordFloor": true,
+        "wordCount": 231,
+        "floor": 15,
+        "floorStatus": "proposed-15-issue-148-non-mold"
+      },
+      "heuristicReferent": {
+        "hasConcreteReferent": true,
+        "rationale": "Heuristic signal from described-action, named-team-member (Rick, Courteous, Thanks). Not a model judgment.",
+        "method": "heuristic-v1",
+        "authoritative": false,
+        "signals": [
+          "described-action",
+          "named-team-member"
+        ]
+      },
+      "heuristicGrade": "anchor",
+      "referentJudgment": null,
+      "grade": "supporting",
+      "verificationState": "pending-model-judgment",
+      "authoritative": false,
+      "copyQuoteAllowed": true
+    },
+    {
+      "id": "rlb-electric-remodel-repair:google:c62e866cddb3",
+      "platform": "google",
+      "source": "apify-finalist",
+      "author": "Clare R",
+      "rating": 5,
+      "date": "2021-02-13T11:59:24.778Z",
+      "text": "If you are looking for the perfect electrician, look no more! Each time he has been to our home, Rick of RLB Electric just amazes me.\n\nThis time he replaced lights on our 17-foot cathedral ceilings. He is a perfectionist, making sure each fixture is at the correct elevation, centered, etc. Yet, he works quickly. And, he showed up on a snowy day with bad road conditions.\n\nToday, it is rare to find someone who has the combined qualities of punctuality, high-skill level, ethics, honesty and follow-through.\n\nI recommend RLB Electric 100 percent!",
+      "wordCount": 93,
+      "preflag": {
+        "meetsWordFloor": true,
+        "wordCount": 93,
+        "floor": 15,
+        "floorStatus": "proposed-15-issue-148-non-mold"
+      },
+      "heuristicReferent": {
+        "hasConcreteReferent": true,
+        "rationale": "Heuristic signal from described-action, described-outcome, named-team-member (Each, Rick, Electric). Not a model judgment.",
+        "method": "heuristic-v1",
+        "authoritative": false,
+        "signals": [
+          "described-action",
+          "described-outcome",
+          "named-team-member"
+        ]
+      },
+      "heuristicGrade": "anchor",
+      "referentJudgment": null,
+      "grade": "supporting",
+      "verificationState": "pending-model-judgment",
+      "authoritative": false,
+      "copyQuoteAllowed": true
+    },
+    {
+      "id": "rlb-electric-remodel-repair:google:fde6b7db5066",
+      "platform": "google",
+      "source": "apify-finalist",
+      "author": "Herb Rimel",
+      "rating": 5,
+      "date": "2021-01-20T03:07:03.451Z",
+      "text": "What a wonderful experience! Rick showed up and diagnosed our problem in less than 5 minutes.\nWe were convinced our whole house had to be rewired but Rick solved the problem and fixed it immediately.\nGreat job.\nWe paid him extra and he was worth every penny.\nHe really needs to teach classes he’s that good.",
+      "wordCount": 56,
+      "preflag": {
+        "meetsWordFloor": true,
+        "wordCount": 56,
+        "floor": 15,
+        "floorStatus": "proposed-15-issue-148-non-mold"
+      },
+      "heuristicReferent": {
+        "hasConcreteReferent": true,
+        "rationale": "Heuristic signal from described-action, named-team-member (Rick, Rick). Not a model judgment.",
+        "method": "heuristic-v1",
+        "authoritative": false,
+        "signals": [
+          "described-action",
+          "named-team-member"
+        ]
+      },
+      "heuristicGrade": "anchor",
+      "referentJudgment": null,
+      "grade": "supporting",
+      "verificationState": "pending-model-judgment",
+      "authoritative": false,
+      "copyQuoteAllowed": true
+    }
+  ]
+}

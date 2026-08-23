@@ -1,0 +1,12 @@
+{
+  "name": "ff-content-demo-factory",
+  "version": "0.1.0",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "test": "node --test",
+    "run-one": "node src/run-one.js"
+  },
+  "engines": { "node": ">=22.13.0" },
+  "dependencies": { "@cursor/sdk": "^1.0.24" }
+}
