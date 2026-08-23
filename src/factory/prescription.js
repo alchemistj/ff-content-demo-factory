@@ -22,7 +22,7 @@ function recommendationFor(page, supplied, classified) {
   if (recommendation == null) return null;
   const review = classified.find((entry) => String(entry.id) === String(recommendation.reviewId));
   if (!review || review.authoritative !== true) throw new Error(`${page.type || page.service}: recommendedFirstReview is not authoritative`);
-  if (!recommendation.reviewer || recommendation.rating == null || !recommendation.date || !(recommendation.excerpt || recommendation.exactText || recommendation.exactTextRef) || !recommendation.why) throw new Error(`${page.type || page.service}: recommendedFirstReview lacks reviewer/rating/date/excerpt/why`);
+  if (!recommendation.reviewer || recommendation.rating == null || !recommendation.date || !(recommendation.excerpt || recommendation.exactText || recommendation.exactTextRef || recommendation.exactTextReference || recommendation.reviewText) || !recommendation.why) throw new Error(`${page.type || page.service}: recommendedFirstReview lacks reviewer/rating/date/excerpt/why`);
   const service = String(page.service || '').toLowerCase();
   const fits = page.type === 'Home' || review.judgment?.directCompletedService && (review.judgment.services || []).some((item) => String(item).toLowerCase() === service) || review.judgment?.operatingPattern && (review.judgment.services || []).some((item) => String(item).toLowerCase() === service);
   if (!fits) throw new Error(`${page.type || page.service}: recommendedFirstReview does not fit page service`);
