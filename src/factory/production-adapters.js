@@ -191,7 +191,14 @@ function createProductionAdapters({
 } = {}) {
   required(root, 'root');
   const receipts = receiptStore || createFileReceiptStore(root);
-  const apifyAdapter = apify || createApifyAdapter({ token: env.APIFY_API_TOKEN, fetchImpl, clock, receiptStore: receipts });
+  const apifyAdapter = apify || createApifyAdapter({
+    token: env.APIFY_API_TOKEN,
+    fetchImpl,
+    clock,
+    receiptStore: receipts,
+    pollIntervalMs: config.apifyPollIntervalMs ?? 2000,
+    maxPollAttempts: config.apifyMaxPollAttempts ?? 1800,
+  });
   const cursorAdapter = cursor || createCursorAdapter({ apiKey: env.CURSOR_API_KEY, sdk: cursorSdk, modelAlias: env.CURSOR_MODEL || config.cursorModel, clock, receiptStore: receipts, workspace: root });
   const discovery = {
     requiresRequest: true,

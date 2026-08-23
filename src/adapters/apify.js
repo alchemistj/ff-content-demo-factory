@@ -140,7 +140,7 @@ function normalizeError(error) {
   return error instanceof Error ? error.message.replace(/Bearer\s+\S+/gi, 'Bearer [redacted]') : String(error);
 }
 
-function createApifyAdapter({ token, fetchImpl = globalThis.fetch, clock = () => new Date().toISOString(), pollIntervalMs = 0, receiptStore = new Map() }) {
+function createApifyAdapter({ token, fetchImpl = globalThis.fetch, clock = () => new Date().toISOString(), pollIntervalMs = 0, maxPollAttempts = 100, receiptStore = new Map() }) {
   required(token, 'APIFY_API_TOKEN');
   required(fetchImpl, 'fetchImpl');
   const enrichmentReceipts = new Map();
@@ -172,10 +172,10 @@ function createApifyAdapter({ token, fetchImpl = globalThis.fetch, clock = () =>
   async function waitForRun(runId, initial) {
     let run = initial;
     for (let attempt = 0; !['SUCCEEDED', 'FAILED', 'ABORTED', 'TIMED-OUT'].includes(run.status); attempt += 1) {
+      if (attempt >= maxPollAttempts) throw new Error('Apify run did not reach a terminal status');
       if (attempt > 0 && pollIntervalMs > 0) await new Promise((resolve) => setTimeout(resolve, pollIntervalMs));
       run = await request('GET', `/actor-runs/${encodeURIComponent(runId)}`);
       run = run.data || run;
-      if (attempt > 100) throw new Error('Apify run did not reach a terminal status');
     }
     if (run.status !== 'SUCCEEDED') throw new Error(`Apify run ${run.status || 'unknown'}`);
     return run;
