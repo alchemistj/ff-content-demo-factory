@@ -9,8 +9,10 @@ function normalizeClassification(classification) {
   return { classified, authoritativeJudgmentCount: classification.authoritativeJudgmentCount || classified.length, authoritativeAnchorCount: classification.anchorCount ?? classified.filter((entry) => entry.judgment.directCompletedService).length };
 }
 
+function serviceTerm(value) { return String(value || '').toLowerCase().replace(/[^a-z0-9]+/g, ''); }
+
 function chooseRecommendation(page, classified) {
-  let matches = classified.filter((review) => review.judgment?.services?.some((s) => String(s).toLowerCase() === String(page.service || '').toLowerCase()) || String(review.judgment?.service || '').toLowerCase() === String(page.service || '').toLowerCase());
+  let matches = classified.filter((review) => review.judgment?.services?.some((s) => serviceTerm(s) === serviceTerm(page.service)) || serviceTerm(review.judgment?.service) === serviceTerm(page.service));
   if (!matches.length && page.type === 'Home') matches = classified.filter((review) => review.judgment?.directCompletedService);
   const review = matches.find((r) => r.judgment.directCompletedService) || matches.find((r) => r.judgment.operatingPattern);
   if (!review) return null;
@@ -23,8 +25,8 @@ function recommendationFor(page, supplied, classified) {
   const review = classified.find((entry) => String(entry.id) === String(recommendation.reviewId));
   if (!review || review.authoritative !== true) throw new Error(`${page.type || page.service}: recommendedFirstReview is not authoritative`);
   if (!recommendation.reviewer || recommendation.rating == null || !recommendation.date || !(recommendation.excerpt || recommendation.exactText || recommendation.exactTextRef || recommendation.exactTextReference || recommendation.reviewText) || !recommendation.why) throw new Error(`${page.type || page.service}: recommendedFirstReview lacks reviewer/rating/date/excerpt/why`);
-  const service = String(page.service || '').toLowerCase();
-  const fits = page.type === 'Home' || review.judgment?.directCompletedService && (review.judgment.services || []).some((item) => String(item).toLowerCase() === service) || review.judgment?.operatingPattern && (review.judgment.services || []).some((item) => String(item).toLowerCase() === service);
+  const service = serviceTerm(page.service);
+  const fits = page.type === 'Home' || review.judgment?.directCompletedService && (review.judgment.services || []).some((item) => serviceTerm(item) === service) || review.judgment?.operatingPattern && (review.judgment.services || []).some((item) => serviceTerm(item) === service);
   if (!fits) throw new Error(`${page.type || page.service}: recommendedFirstReview does not fit page service`);
   return { ...recommendation, reviewId: review.id };
 }
@@ -46,10 +48,10 @@ function validateCollisions(pages) {
 
 function compareServices(services, classified, pages = []) {
   const compared = (services || []).map((service) => {
-    const id = String(service.id || service.name || service.slug || '').toLowerCase();
-    const evidence = classified.filter((r) => (r.judgment?.services || []).map((s) => String(s).toLowerCase()).includes(id) || String(r.judgment?.service || '').toLowerCase() === id);
+    const id = serviceTerm(service.id || service.name || service.slug || '');
+    const evidence = classified.filter((r) => (r.judgment?.services || []).some((s) => serviceTerm(s) === id) || serviceTerm(r.judgment?.service) === id);
     const direct = evidence.filter((r) => r.judgment.directCompletedService);
-    const page = pages.find((p) => String(p.service || p.serviceId || '').toLowerCase() === id);
+    const page = pages.find((p) => serviceTerm(p.service || p.serviceId) === id);
     return { ...service, id: service.id || service.name || service.slug, evidenceCount: evidence.length, directCompletedEvidenceCount: direct.length, strongestEvidence: direct[0]?.id || evidence[0]?.id || null, includedPage: Boolean(page), passedOverReason: page ? null : (service.passedOverReason || (evidence.length ? 'Architect passed this service over despite evidence; retained for review.' : 'No authoritative review evidence for this service.')), supported: evidence.length > 0 };
   });
   if (compared.length !== (services || []).length) throw new Error('Every candidate service must be compared');
@@ -65,7 +67,7 @@ function validateProposedPages(pages, classified) {
     for (const field of REQUIRED_PAGE_FIELDS) if (page[field] == null || (typeof page[field] === 'string' && !page[field].trim())) errors.push(`${page.type || 'page'}: missing ${field}`);
     if (!Object.prototype.hasOwnProperty.call(page, 'strongestEvidence')) errors.push(`${page.type || 'page'}: missing strongestEvidence (use null when not appropriate)`);
     const recommendation = recommendationFor(page, page.recommendedFirstReview, classified);
-    const hasEvidence = classified.some((review) => review.judgment?.services?.some((s) => String(s).toLowerCase() === String(page.service || '').toLowerCase()) && (review.judgment.directCompletedService || review.judgment.operatingPattern));
+    const hasEvidence = classified.some((review) => review.judgment?.services?.some((s) => serviceTerm(s) === serviceTerm(page.service)) && (review.judgment.directCompletedService || review.judgment.operatingPattern));
     if (hasEvidence && !recommendation) errors.push(`${page.type || page.service}: missing recommendedFirstReview despite evidence`);
     if (recommendation && !recommendation.reviewId) errors.push(`${page.type || page.service}: invalid recommendedFirstReview`);
     page.recommendedFirstReview = recommendation || null;
@@ -87,4 +89,4 @@ function prescribe({ finalist, inventory, classification, services, proposedPage
   return { version: 'page-prescription-v1', prospect: { placeId: finalist.placeId, name: finalist.name, location: finalist.location, website: finalist.website }, pages, valueHierarchy, architectReview: architectReview || null, collisionValidation: pageCheck.collision, status: 'prescribed', generatedAt: new Date().toISOString() };
 }
 
-module.exports = { normalizeClassification, chooseRecommendation, validateCollisions, compareServices, validateProposedPages, prescribe };
+module.exports = { normalizeClassification, serviceTerm, chooseRecommendation, validateCollisions, compareServices, validateProposedPages, prescribe };
