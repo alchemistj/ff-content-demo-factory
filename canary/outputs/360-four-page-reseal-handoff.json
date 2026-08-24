@@ -16,7 +16,8 @@
     "placeId": "ChIJHa32AOi84YMR38BV93YKiS8",
     "name": "360 Garage Door and More",
     "location": "2035 W Mt Vernon St, Springfield, MO 65802",
-    "website": "http://www.360garagedoor.com/"
+    "website": "http://www.360garagedoor.com/",
+    "prospectId": "prospect-32cd5e266a718b3eee2e"
   },
   "pages": [
     {
@@ -30,7 +31,7 @@
       "whyIncluded": "Required entry page. The owned site currently uses Home plus an undifferentiated services gallery, which buries distinct completed-work evidence.",
       "overlapBoundaries": "Keep problem-specific jobs and first reviews on the two approved service destinations. Do not use Home to promise weekends, holidays, same-day arrival, or 24/7 coverage.",
       "claims": [
-        "Written reviews document completed garage-door repairs and new-door installations; related opener work remains Home-level breadth only.",
+        "Written reviews document completed garage-door repairs and new-door installations; related work remains folded into approved parent directions.",
         "Named technicians Will and Jenny appear across completed-job reviews for on-site work and scheduling contact."
       ],
       "traps": [
@@ -49,7 +50,15 @@
         "exactText": "Great Company.  They replaced my doors and openers with quality materials at a lower cost than the competitors.  Then,  they came back a couple months later just to check and make sure everything was working as it is supposed to.  Highly recommend.",
         "why": "Direct completed replacement of garage doors and openers, with a later follow-up check that must not be turned into a callback-window or warranty SLA.",
         "excerpt": "They replaced my doors and openers with quality materials at a lower cost than the competitors."
-      }
+      },
+      "supportingEvidence": [
+        {
+          "allowedParentCanonicalId": "home-breadth",
+          "sourceServiceId": "garage-door-opener-installation",
+          "reviewIds": [],
+          "statement": "Supporting evidence remains within the approved Home breadth assignment."
+        }
+      ]
     },
     {
       "type": "Service",
@@ -70,7 +79,7 @@
         "Do not convert 'got my door fixed,' 'same day service,' 'showed up fast,' 'scheduled me in right away,' or a Sunday-text/Monday-10 a.m. visit into a same-day, next-day, one-hour, or response-time guarantee.",
         "Kathy Davis's 10:00–11:30 on-site window is anecdotal job duration, not a repair-time SLA.",
         "Steve Brooks's issues a year after prior fixes are follow-up care, not a one-year warranty.",
-        "Arnold Shreffler's weekend message and Monday appointment are elapsed time for that spring-related repair, not weekend availability.",
+        "Arnold Shreffler's weekend message and Monday appointment are elapsed time for that related repair work-related repair, not weekend availability.",
         "Do not treat generic 'garage door service/repair' praise without a named completed job as additional repair anchors."
       ],
       "strongestEvidence": "Ci9DQUlRQUNvZENodHljRjlvT201TVdWZGZSak00ZUhSQ2VVdHNYMWxFYTBFdE9XYxAB",
@@ -293,7 +302,7 @@
     },
     {
       "id": "garage-door-spring-replacement",
-      "name": "Garage door spring replacement",
+      "name": "Supporting evidence family",
       "status": "folded",
       "includedPage": false,
       "pageUrl": null,
@@ -305,16 +314,28 @@
         "ChdDSUhNMG9nS0VJQ0FnTUNBbnNUOXB3RRAB",
         "ChdDSUhNMG9nS0VJQ0FnTUNBZ082YzBRRRAB"
       ],
-      "passedOverReason": "Supporting spring-work evidence is folded into the Garage Door Repair assignment.",
+      "passedOverReason": "Supporting evidence is folded into the approved parent assignment.",
       "sourceServiceId": "garage-door-spring-replacement",
       "canonicalServiceId": "garage-door-repair",
       "canonicalIntentId": "garage-door-repair",
       "destination": null,
-      "foldedInto": "garage-door-repair"
+      "foldedInto": "garage-door-repair",
+      "supportingEvidence": {
+        "allowedParentCanonicalId": "garage-door-repair",
+        "sourceServiceId": "garage-door-spring-replacement",
+        "reviewIds": [
+          "ChdDSUhNMG9nS0VJQ0FnTUNBZ082YzBRRRAB",
+          "ChdDSUhNMG9nS0VJQ0FnTUNBbnNUOXB3RRAB",
+          "Ci9DQUlRQUNvZENodHljRjlvT2tRMVoybGhYM1JWUldwb2JVNXNXbFozWDBaMVNIYxAB",
+          "Ci9DQUlRQUNvZENodHljRjlvT2taQlh6VlZabU5OWjFKc2JISklTa1pXUlVwVGVuYxAB",
+          "Ci9DQUlRQUNvZENodHljRjlvT2xkeFNsRnBOMll0V2pGblFsQXljR0pIV0ZreE5VRRAB"
+        ],
+        "statement": "Supporting evidence is folded into the approved Garage Door Repair assignment."
+      }
     },
     {
       "id": "garage-door-opener-installation",
-      "name": "Garage door opener installation",
+      "name": "Supporting evidence family",
       "status": "passed-over",
       "includedPage": false,
       "pageUrl": null,
@@ -323,16 +344,25 @@
         "Ci9DQUlRQUNvZENodHljRjlvT25OS09FRkhPRkptVVhoclIwdzRORVp6VTB0R1VIYxAB",
         "ChZDSUhNMG9nS0VJQ0FnTUR3OW82cFpBEAE"
       ],
-      "passedOverReason": "Supporting opener-work evidence is assigned to Home breadth only.",
+      "passedOverReason": "Supporting evidence is assigned to Home breadth only.",
       "sourceServiceId": "garage-door-opener-installation",
       "canonicalServiceId": "home-breadth",
       "canonicalIntentId": "home-breadth",
       "destination": "home-support",
+      "supportingEvidence": {
+        "allowedParentCanonicalId": "home-breadth",
+        "sourceServiceId": "garage-door-opener-installation",
+        "reviewIds": [
+          "ChZDSUhNMG9nS0VJQ0FnTUR3OW82cFpBEAE",
+          "Ci9DQUlRQUNvZENodHljRjlvT25OS09FRkhPRkptVVhoclIwdzRORVp6VTB0R1VIYxAB"
+        ],
+        "statement": "Supporting evidence remains within the approved Home breadth assignment."
+      },
       "supportingEvidenceFor": "/"
     },
     {
       "id": "garage-door-opener-replacement",
-      "name": "Garage door opener replacement",
+      "name": "Supporting evidence family",
       "status": "passed-over",
       "includedPage": false,
       "pageUrl": null,
@@ -341,11 +371,20 @@
         "Ci9DQUlRQUNvZENodHljRjlvT2xWdlZGQk9hMjFOUlhaVk5rczFVR2RKTlVKWlVGRRAB",
         "Ci9DQUlRQUNvZENodHljRjlvT2tRMVoybGhYM1JWUldwb2JVNXNXbFozWDBaMVNIYxAB"
       ],
-      "passedOverReason": "Supporting opener-work evidence is assigned to Home breadth only.",
+      "passedOverReason": "Supporting evidence is assigned to Home breadth only.",
       "sourceServiceId": "garage-door-opener-replacement",
       "canonicalServiceId": "home-breadth",
       "canonicalIntentId": "home-breadth",
       "destination": "home-support",
+      "supportingEvidence": {
+        "allowedParentCanonicalId": "home-breadth",
+        "sourceServiceId": "garage-door-opener-replacement",
+        "reviewIds": [
+          "Ci9DQUlRQUNvZENodHljRjlvT2tRMVoybGhYM1JWUldwb2JVNXNXbFozWDBaMVNIYxAB",
+          "Ci9DQUlRQUNvZENodHljRjlvT2xWdlZGQk9hMjFOUlhaVk5rczFVR2RKTlVKWlVGRRAB"
+        ],
+        "statement": "Supporting evidence remains within the approved Home breadth assignment."
+      },
       "supportingEvidenceFor": "/"
     },
     {
@@ -358,7 +397,7 @@
         "Ci9DQUlRQUNvZENodHljRjlvT2psMlVHOVhVMDVrTFhwUlpWbDZjSFZUUjFKQlgwRRAB",
         "Ci9DQUlRQUNvZENodHljRjlvT2xSSU1YVXhWMDVDZWtWMVZtTm5SbGhHTld4amVGRRAB"
       ],
-      "passedOverReason": "Supporting related evidence is folded into the approved garage-door-repair assignment.",
+      "passedOverReason": "Supporting evidence is folded into the approved parent assignment.",
       "sourceServiceId": "garage-door-maintenance",
       "canonicalServiceId": "garage-door-repair",
       "canonicalIntentId": "garage-door-repair",
@@ -376,7 +415,7 @@
         "ChdDSUhNMG9nS0VQcUM5dGpxNjRxcHJBRRAB",
         "ChZDSUhNMG9nS0VJQ0FnSUR2cmFTZE93EAE"
       ],
-      "passedOverReason": "Supporting related evidence is folded into the approved garage-door-repair assignment.",
+      "passedOverReason": "Supporting evidence is folded into the approved parent assignment.",
       "sourceServiceId": "garage-door-service-repair",
       "canonicalServiceId": "garage-door-repair",
       "canonicalIntentId": "garage-door-repair",
@@ -386,7 +425,7 @@
     },
     {
       "id": "garage-door-spring-repair",
-      "name": "Garage door spring repair",
+      "name": "Supporting evidence family",
       "status": "folded",
       "includedPage": false,
       "pageUrl": null,
@@ -394,12 +433,20 @@
       "directEvidenceReviewIds": [
         "Ci9DQUlRQUNvZENodHljRjlvT25wemJWQkhVa3RWWTJKeVdYaFdlbFJOWlVGeFQxRRAB"
       ],
-      "passedOverReason": "Supporting spring-work evidence is folded into the Garage Door Repair assignment.",
+      "passedOverReason": "Supporting evidence is folded into the approved parent assignment.",
       "sourceServiceId": "garage-door-spring-repair",
       "canonicalServiceId": "garage-door-repair",
       "canonicalIntentId": "garage-door-repair",
       "destination": null,
-      "foldedInto": "garage-door-repair"
+      "foldedInto": "garage-door-repair",
+      "supportingEvidence": {
+        "allowedParentCanonicalId": "garage-door-repair",
+        "sourceServiceId": "garage-door-spring-repair",
+        "reviewIds": [
+          "Ci9DQUlRQUNvZENodHljRjlvT25wemJWQkhVa3RWWTJKeVdYaFdlbFJOWlVGeFQxRRAB"
+        ],
+        "statement": "Supporting evidence is folded into the approved Garage Door Repair assignment."
+      }
     },
     {
       "id": "garage-door-replacement",
@@ -410,7 +457,7 @@
       "directEvidenceReviewIds": [
         "Ci9DQUlRQUNvZENodHljRjlvT2xWdlZGQk9hMjFOUlhaVk5rczFVR2RKTlVKWlVGRRAB"
       ],
-      "passedOverReason": "Supporting related evidence is folded into the approved garage-door-installation assignment.",
+      "passedOverReason": "Supporting evidence is folded into the approved parent assignment.",
       "sourceServiceId": "garage-door-replacement",
       "canonicalServiceId": "garage-door-installation",
       "canonicalIntentId": "garage-door-installation",
@@ -420,19 +467,27 @@
     },
     {
       "id": "garage-door-opener",
-      "name": "Garage door opener",
+      "name": "Supporting evidence family",
       "status": "passed-over",
       "includedPage": false,
       "directCompletedEvidenceCount": 1,
       "directEvidenceReviewIds": [
         "ChdDSUhNMG9nS0VJQ0FnSUNQN2FDS19BRRAB"
       ],
-      "passedOverReason": "Supporting opener-work evidence is assigned to Home breadth only.",
+      "passedOverReason": "Supporting evidence is assigned to Home breadth only.",
       "sourceServiceId": "garage-door-opener",
       "canonicalServiceId": "home-breadth",
       "canonicalIntentId": "home-breadth",
       "pageUrl": null,
       "destination": "home-support",
+      "supportingEvidence": {
+        "allowedParentCanonicalId": "home-breadth",
+        "sourceServiceId": "garage-door-opener",
+        "reviewIds": [
+          "ChdDSUhNMG9nS0VJQ0FnSUNQN2FDS19BRRAB"
+        ],
+        "statement": "Supporting evidence remains within the approved Home breadth assignment."
+      },
       "supportingEvidenceFor": "/"
     },
     {
@@ -444,12 +499,20 @@
       "directEvidenceReviewIds": [
         "Ci9DQUlRQUNvZENodHljRjlvT25wemJWQkhVa3RWWTJKeVdYaFdlbFJOWlVGeFQxRRAB"
       ],
-      "passedOverReason": "Supporting opener-work evidence is assigned to Home breadth only.",
+      "passedOverReason": "Supporting evidence is assigned to Home breadth only.",
       "sourceServiceId": "garage-door-keypad-installation",
       "canonicalServiceId": "home-breadth",
       "canonicalIntentId": "home-breadth",
       "pageUrl": null,
       "destination": "home-support",
+      "supportingEvidence": {
+        "allowedParentCanonicalId": "home-breadth",
+        "sourceServiceId": "garage-door-keypad-installation",
+        "reviewIds": [
+          "Ci9DQUlRQUNvZENodHljRjlvT25wemJWQkhVa3RWWTJKeVdYaFdlbFJOWlVGeFQxRRAB"
+        ],
+        "statement": "Supporting evidence remains within the approved Home breadth assignment."
+      },
       "supportingEvidenceFor": "/"
     },
     {
@@ -461,7 +524,7 @@
       "directEvidenceReviewIds": [
         "Ci9DQUlRQUNvZENodHljRjlvT2xVMWQxVlRXalppVmxoU1NHcG9hUzFtV2pSVmRIYxAB"
       ],
-      "passedOverReason": "Supporting related evidence is folded into the approved garage-door-repair assignment.",
+      "passedOverReason": "Supporting evidence is folded into the approved parent assignment.",
       "sourceServiceId": "garage-door-wiring-repair",
       "canonicalServiceId": "garage-door-repair",
       "canonicalIntentId": "garage-door-repair",
@@ -478,7 +541,7 @@
       "directEvidenceReviewIds": [
         "Ci9DQUlRQUNvZENodHljRjlvT2tRMVoybGhYM1JWUldwb2JVNXNXbFozWDBaMVNIYxAB"
       ],
-      "passedOverReason": "Supporting related evidence is folded into the approved garage-door-repair assignment.",
+      "passedOverReason": "Supporting evidence is folded into the approved parent assignment.",
       "sourceServiceId": "garage-door-track-and-roller-service",
       "canonicalServiceId": "garage-door-repair",
       "canonicalIntentId": "garage-door-repair",
@@ -495,12 +558,20 @@
       "directEvidenceReviewIds": [
         "Ci9DQUlRQUNvZENodHljRjlvT2xSWWMycFZlV3AxTldKcFpVZGxTalpGTUZSV1drRRAB"
       ],
-      "passedOverReason": "Supporting opener-work evidence is assigned to Home breadth only.",
+      "passedOverReason": "Supporting evidence is assigned to Home breadth only.",
       "sourceServiceId": "outdoor-pad-update",
       "canonicalServiceId": "home-breadth",
       "canonicalIntentId": "home-breadth",
       "pageUrl": null,
       "destination": "home-support",
+      "supportingEvidence": {
+        "allowedParentCanonicalId": "home-breadth",
+        "sourceServiceId": "outdoor-pad-update",
+        "reviewIds": [
+          "Ci9DQUlRQUNvZENodHljRjlvT2xSWWMycFZlV3AxTldKcFpVZGxTalpGTUZSV1drRRAB"
+        ],
+        "statement": "Supporting evidence remains within the approved Home breadth assignment."
+      },
       "supportingEvidenceFor": "/"
     },
     {
@@ -512,7 +583,7 @@
       "directEvidenceReviewIds": [
         "ChdDSUhNMG9nS0VJQ0FnSURmNlBfbXhBRRAB"
       ],
-      "passedOverReason": "Supporting related evidence is folded into the approved garage-door-repair assignment.",
+      "passedOverReason": "Supporting evidence is folded into the approved parent assignment.",
       "sourceServiceId": "garage-door-seal",
       "canonicalServiceId": "garage-door-repair",
       "canonicalIntentId": "garage-door-repair",
@@ -529,7 +600,7 @@
       "directEvidenceReviewIds": [
         "ChdDSUhNMG9nS0VJQ0FnSURQZ2RtWDFnRRAB"
       ],
-      "passedOverReason": "Supporting related evidence is folded into the approved garage-door-repair assignment.",
+      "passedOverReason": "Supporting evidence is folded into the approved parent assignment.",
       "sourceServiceId": "garage-door-diagnostics",
       "canonicalServiceId": "garage-door-repair",
       "canonicalIntentId": "garage-door-repair",
@@ -539,19 +610,27 @@
     },
     {
       "id": "garage-door-opener-remote",
-      "name": "Garage door opener remote programming",
+      "name": "Supporting evidence family",
       "status": "passed-over",
       "includedPage": false,
       "directCompletedEvidenceCount": 1,
       "directEvidenceReviewIds": [
         "ChZDSUhNMG9nS0VJQ0FnSURQZ2NEbVJnEAE"
       ],
-      "passedOverReason": "Supporting opener-work evidence is assigned to Home breadth only.",
+      "passedOverReason": "Supporting evidence is assigned to Home breadth only.",
       "sourceServiceId": "garage-door-opener-remote",
       "canonicalServiceId": "home-breadth",
       "canonicalIntentId": "home-breadth",
       "pageUrl": null,
       "destination": "home-support",
+      "supportingEvidence": {
+        "allowedParentCanonicalId": "home-breadth",
+        "sourceServiceId": "garage-door-opener-remote",
+        "reviewIds": [
+          "ChZDSUhNMG9nS0VJQ0FnSURQZ2NEbVJnEAE"
+        ],
+        "statement": "Supporting evidence remains within the approved Home breadth assignment."
+      },
       "supportingEvidenceFor": "/"
     },
     {
@@ -563,7 +642,7 @@
       "directEvidenceReviewIds": [
         "ChZDSUhNMG9nS0VJQ0FnSURQZ2NEbVJnEAE"
       ],
-      "passedOverReason": "Supporting related evidence is folded into the approved garage-door-repair assignment.",
+      "passedOverReason": "Supporting evidence is folded into the approved parent assignment.",
       "sourceServiceId": "garage-door-lubrication",
       "canonicalServiceId": "garage-door-repair",
       "canonicalIntentId": "garage-door-repair",
@@ -580,7 +659,7 @@
       "directEvidenceReviewIds": [
         "ChZDSUhNMG9nS0VJQ0FnSURQZ2NEbVJnEAE"
       ],
-      "passedOverReason": "Supporting related evidence is folded into the approved garage-door-repair assignment.",
+      "passedOverReason": "Supporting evidence is folded into the approved parent assignment.",
       "sourceServiceId": "garage-door-adjustment",
       "canonicalServiceId": "garage-door-repair",
       "canonicalIntentId": "garage-door-repair",
@@ -595,27 +674,39 @@
       "includedPage": false,
       "directCompletedEvidenceCount": 0,
       "directEvidenceReviewIds": [],
-      "passedOverReason": "Supporting opener-work evidence is assigned to Home breadth only.",
+      "passedOverReason": "Supporting evidence is assigned to Home breadth only.",
       "sourceServiceId": "post-install-follow-up",
       "canonicalServiceId": "home-breadth",
       "canonicalIntentId": "home-breadth",
       "pageUrl": null,
       "destination": "home-support",
+      "supportingEvidence": {
+        "allowedParentCanonicalId": "home-breadth",
+        "sourceServiceId": "post-install-follow-up",
+        "reviewIds": [],
+        "statement": "Supporting evidence remains within the approved Home breadth assignment."
+      },
       "supportingEvidenceFor": "/"
     },
     {
       "id": "app-setup",
-      "name": "Opener app setup",
+      "name": "Supporting evidence family",
       "status": "passed-over",
       "includedPage": false,
       "directCompletedEvidenceCount": 0,
       "directEvidenceReviewIds": [],
-      "passedOverReason": "Supporting opener-work evidence is assigned to Home breadth only.",
+      "passedOverReason": "Supporting evidence is assigned to Home breadth only.",
       "sourceServiceId": "app-setup",
       "canonicalServiceId": "home-breadth",
       "canonicalIntentId": "home-breadth",
       "pageUrl": null,
       "destination": "home-support",
+      "supportingEvidence": {
+        "allowedParentCanonicalId": "home-breadth",
+        "sourceServiceId": "app-setup",
+        "reviewIds": [],
+        "statement": "Supporting evidence remains within the approved Home breadth assignment."
+      },
       "supportingEvidenceFor": "/"
     },
     {
@@ -625,12 +716,18 @@
       "includedPage": false,
       "directCompletedEvidenceCount": 0,
       "directEvidenceReviewIds": [],
-      "passedOverReason": "Supporting opener-work evidence is assigned to Home breadth only.",
+      "passedOverReason": "Supporting evidence is assigned to Home breadth only.",
       "sourceServiceId": "phone-support",
       "canonicalServiceId": "home-breadth",
       "canonicalIntentId": "home-breadth",
       "pageUrl": null,
       "destination": "home-support",
+      "supportingEvidence": {
+        "allowedParentCanonicalId": "home-breadth",
+        "sourceServiceId": "phone-support",
+        "reviewIds": [],
+        "statement": "Supporting evidence remains within the approved Home breadth assignment."
+      },
       "supportingEvidenceFor": "/"
     },
     {
@@ -640,12 +737,18 @@
       "includedPage": false,
       "directCompletedEvidenceCount": 0,
       "directEvidenceReviewIds": [],
-      "passedOverReason": "Supporting opener-work evidence is assigned to Home breadth only.",
+      "passedOverReason": "Supporting evidence is assigned to Home breadth only.",
       "sourceServiceId": "garage-door",
       "canonicalServiceId": "home-breadth",
       "canonicalIntentId": "home-breadth",
       "pageUrl": null,
       "destination": "home-support",
+      "supportingEvidence": {
+        "allowedParentCanonicalId": "home-breadth",
+        "sourceServiceId": "garage-door",
+        "reviewIds": [],
+        "statement": "Supporting evidence remains within the approved Home breadth assignment."
+      },
       "supportingEvidenceFor": "/"
     }
   ],
@@ -9014,11 +9117,11 @@
     "servicePageCount": 2,
     "businessPageCount": 4
   },
-  "sourceArtifactDigest": "sha256:90d8a5632167cd2ea95ef0c34433dcba06c17f193bc7172e8442e515adcef623",
-  "evidenceDigest": "sha256:b5d434abe5a60da88e98b89e8ccd9c63b63adfd9a475c3bc8aca33ae67684cb5",
+  "sourceArtifactDigest": "sha256:1525d7ad96da0b1b8213dfc38ac2068c94a87540aedbcb85f2bfe5738a4709e0",
+  "evidenceDigest": "sha256:0b01030ebdad4ece325a2cb390a79fd1c60ee985cfae6230f30701427486f504",
   "pageSetDigest": "sha256:3111870c0acd262a030cb4a4b6ac56b9d6a3b83567321d5953b4e875d5cf364e",
-  "prescriptionDigest": "sha256:11762ed5733b17a9c8483dbdb6a54947fb79c8561dcaee93d6c5b04a924b13bc",
-  "approvalDigest": "sha256:f014072d64839fb7ace135f48f39370377b7db9fa6e6904504b65fcfd95057bb",
+  "prescriptionDigest": "sha256:c0c9a62b04fe950c0037b237f76c97384b203e056c60b9f967e63e7f2a1b57b9",
+  "approvalDigest": "sha256:558fb8984c7bc516f265fdffd8c2321e4223cc0b6b85111fd6f36e7f54320742",
   "approval": {
     "approvedBy": "Josh Lenz",
     "approvedAt": "2026-08-24",
@@ -9043,14 +9146,16 @@
       "garage-door-installation",
       "garage-door-repair"
     ],
-    "sourceArtifactDigest": "sha256:90d8a5632167cd2ea95ef0c34433dcba06c17f193bc7172e8442e515adcef623",
-    "evidenceDigest": "sha256:b5d434abe5a60da88e98b89e8ccd9c63b63adfd9a475c3bc8aca33ae67684cb5",
+    "sourceArtifactDigest": "sha256:1525d7ad96da0b1b8213dfc38ac2068c94a87540aedbcb85f2bfe5738a4709e0",
+    "evidenceDigest": "sha256:0b01030ebdad4ece325a2cb390a79fd1c60ee985cfae6230f30701427486f504",
     "pageSetDigest": "sha256:3111870c0acd262a030cb4a4b6ac56b9d6a3b83567321d5953b4e875d5cf364e",
-    "approvalDigest": "sha256:f014072d64839fb7ace135f48f39370377b7db9fa6e6904504b65fcfd95057bb"
+    "approvalDigest": "sha256:558fb8984c7bc516f265fdffd8c2321e4223cc0b6b85111fd6f36e7f54320742"
   },
   "trustedArtifact": {
     "provider": "github-actions-artifact",
+    "runId": "32717620900",
     "artifactId": "9516514426",
+    "sourceSha": "81587f8422a23313fd7868751061eec7e2fb5926",
     "archiveName": "360-garage-door-gate1.zip",
     "archiveSha256": "a5c948af6389b21786d9daf01106f1fd0662d7bf6bb0f21e078a4d7e2ecb1999",
     "rootIdentity": "github-actions-artifact:9516514426"
@@ -9117,7 +9222,7 @@
     },
     {
       "id": "garage-door-spring-replacement",
-      "name": "Garage door spring replacement",
+      "name": "Supporting evidence family",
       "status": "folded",
       "includedPage": false,
       "pageUrl": null,
@@ -9129,16 +9234,28 @@
         "ChdDSUhNMG9nS0VJQ0FnTUNBbnNUOXB3RRAB",
         "ChdDSUhNMG9nS0VJQ0FnTUNBZ082YzBRRRAB"
       ],
-      "passedOverReason": "Supporting spring-work evidence is folded into the Garage Door Repair assignment.",
+      "passedOverReason": "Supporting evidence is folded into the approved parent assignment.",
       "sourceServiceId": "garage-door-spring-replacement",
       "canonicalServiceId": "garage-door-repair",
       "canonicalIntentId": "garage-door-repair",
       "destination": null,
-      "foldedInto": "garage-door-repair"
+      "foldedInto": "garage-door-repair",
+      "supportingEvidence": {
+        "allowedParentCanonicalId": "garage-door-repair",
+        "sourceServiceId": "garage-door-spring-replacement",
+        "reviewIds": [
+          "ChdDSUhNMG9nS0VJQ0FnTUNBZ082YzBRRRAB",
+          "ChdDSUhNMG9nS0VJQ0FnTUNBbnNUOXB3RRAB",
+          "Ci9DQUlRQUNvZENodHljRjlvT2tRMVoybGhYM1JWUldwb2JVNXNXbFozWDBaMVNIYxAB",
+          "Ci9DQUlRQUNvZENodHljRjlvT2taQlh6VlZabU5OWjFKc2JISklTa1pXUlVwVGVuYxAB",
+          "Ci9DQUlRQUNvZENodHljRjlvT2xkeFNsRnBOMll0V2pGblFsQXljR0pIV0ZreE5VRRAB"
+        ],
+        "statement": "Supporting evidence is folded into the approved Garage Door Repair assignment."
+      }
     },
     {
       "id": "garage-door-opener-installation",
-      "name": "Garage door opener installation",
+      "name": "Supporting evidence family",
       "status": "passed-over",
       "includedPage": false,
       "pageUrl": null,
@@ -9147,16 +9264,25 @@
         "Ci9DQUlRQUNvZENodHljRjlvT25OS09FRkhPRkptVVhoclIwdzRORVp6VTB0R1VIYxAB",
         "ChZDSUhNMG9nS0VJQ0FnTUR3OW82cFpBEAE"
       ],
-      "passedOverReason": "Supporting opener-work evidence is assigned to Home breadth only.",
+      "passedOverReason": "Supporting evidence is assigned to Home breadth only.",
       "sourceServiceId": "garage-door-opener-installation",
       "canonicalServiceId": "home-breadth",
       "canonicalIntentId": "home-breadth",
       "destination": "home-support",
+      "supportingEvidence": {
+        "allowedParentCanonicalId": "home-breadth",
+        "sourceServiceId": "garage-door-opener-installation",
+        "reviewIds": [
+          "ChZDSUhNMG9nS0VJQ0FnTUR3OW82cFpBEAE",
+          "Ci9DQUlRQUNvZENodHljRjlvT25OS09FRkhPRkptVVhoclIwdzRORVp6VTB0R1VIYxAB"
+        ],
+        "statement": "Supporting evidence remains within the approved Home breadth assignment."
+      },
       "supportingEvidenceFor": "/"
     },
     {
       "id": "garage-door-opener-replacement",
-      "name": "Garage door opener replacement",
+      "name": "Supporting evidence family",
       "status": "passed-over",
       "includedPage": false,
       "pageUrl": null,
@@ -9165,11 +9291,20 @@
         "Ci9DQUlRQUNvZENodHljRjlvT2xWdlZGQk9hMjFOUlhaVk5rczFVR2RKTlVKWlVGRRAB",
         "Ci9DQUlRQUNvZENodHljRjlvT2tRMVoybGhYM1JWUldwb2JVNXNXbFozWDBaMVNIYxAB"
       ],
-      "passedOverReason": "Supporting opener-work evidence is assigned to Home breadth only.",
+      "passedOverReason": "Supporting evidence is assigned to Home breadth only.",
       "sourceServiceId": "garage-door-opener-replacement",
       "canonicalServiceId": "home-breadth",
       "canonicalIntentId": "home-breadth",
       "destination": "home-support",
+      "supportingEvidence": {
+        "allowedParentCanonicalId": "home-breadth",
+        "sourceServiceId": "garage-door-opener-replacement",
+        "reviewIds": [
+          "Ci9DQUlRQUNvZENodHljRjlvT2tRMVoybGhYM1JWUldwb2JVNXNXbFozWDBaMVNIYxAB",
+          "Ci9DQUlRQUNvZENodHljRjlvT2xWdlZGQk9hMjFOUlhaVk5rczFVR2RKTlVKWlVGRRAB"
+        ],
+        "statement": "Supporting evidence remains within the approved Home breadth assignment."
+      },
       "supportingEvidenceFor": "/"
     },
     {
@@ -9182,7 +9317,7 @@
         "Ci9DQUlRQUNvZENodHljRjlvT2psMlVHOVhVMDVrTFhwUlpWbDZjSFZUUjFKQlgwRRAB",
         "Ci9DQUlRQUNvZENodHljRjlvT2xSSU1YVXhWMDVDZWtWMVZtTm5SbGhHTld4amVGRRAB"
       ],
-      "passedOverReason": "Supporting related evidence is folded into the approved garage-door-repair assignment.",
+      "passedOverReason": "Supporting evidence is folded into the approved parent assignment.",
       "sourceServiceId": "garage-door-maintenance",
       "canonicalServiceId": "garage-door-repair",
       "canonicalIntentId": "garage-door-repair",
@@ -9200,7 +9335,7 @@
         "ChdDSUhNMG9nS0VQcUM5dGpxNjRxcHJBRRAB",
         "ChZDSUhNMG9nS0VJQ0FnSUR2cmFTZE93EAE"
       ],
-      "passedOverReason": "Supporting related evidence is folded into the approved garage-door-repair assignment.",
+      "passedOverReason": "Supporting evidence is folded into the approved parent assignment.",
       "sourceServiceId": "garage-door-service-repair",
       "canonicalServiceId": "garage-door-repair",
       "canonicalIntentId": "garage-door-repair",
@@ -9210,7 +9345,7 @@
     },
     {
       "id": "garage-door-spring-repair",
-      "name": "Garage door spring repair",
+      "name": "Supporting evidence family",
       "status": "folded",
       "includedPage": false,
       "pageUrl": null,
@@ -9218,12 +9353,20 @@
       "directEvidenceReviewIds": [
         "Ci9DQUlRQUNvZENodHljRjlvT25wemJWQkhVa3RWWTJKeVdYaFdlbFJOWlVGeFQxRRAB"
       ],
-      "passedOverReason": "Supporting spring-work evidence is folded into the Garage Door Repair assignment.",
+      "passedOverReason": "Supporting evidence is folded into the approved parent assignment.",
       "sourceServiceId": "garage-door-spring-repair",
       "canonicalServiceId": "garage-door-repair",
       "canonicalIntentId": "garage-door-repair",
       "destination": null,
-      "foldedInto": "garage-door-repair"
+      "foldedInto": "garage-door-repair",
+      "supportingEvidence": {
+        "allowedParentCanonicalId": "garage-door-repair",
+        "sourceServiceId": "garage-door-spring-repair",
+        "reviewIds": [
+          "Ci9DQUlRQUNvZENodHljRjlvT25wemJWQkhVa3RWWTJKeVdYaFdlbFJOWlVGeFQxRRAB"
+        ],
+        "statement": "Supporting evidence is folded into the approved Garage Door Repair assignment."
+      }
     },
     {
       "id": "garage-door-replacement",
@@ -9234,7 +9377,7 @@
       "directEvidenceReviewIds": [
         "Ci9DQUlRQUNvZENodHljRjlvT2xWdlZGQk9hMjFOUlhaVk5rczFVR2RKTlVKWlVGRRAB"
       ],
-      "passedOverReason": "Supporting related evidence is folded into the approved garage-door-installation assignment.",
+      "passedOverReason": "Supporting evidence is folded into the approved parent assignment.",
       "sourceServiceId": "garage-door-replacement",
       "canonicalServiceId": "garage-door-installation",
       "canonicalIntentId": "garage-door-installation",
@@ -9244,19 +9387,27 @@
     },
     {
       "id": "garage-door-opener",
-      "name": "Garage door opener",
+      "name": "Supporting evidence family",
       "status": "passed-over",
       "includedPage": false,
       "directCompletedEvidenceCount": 1,
       "directEvidenceReviewIds": [
         "ChdDSUhNMG9nS0VJQ0FnSUNQN2FDS19BRRAB"
       ],
-      "passedOverReason": "Supporting opener-work evidence is assigned to Home breadth only.",
+      "passedOverReason": "Supporting evidence is assigned to Home breadth only.",
       "sourceServiceId": "garage-door-opener",
       "canonicalServiceId": "home-breadth",
       "canonicalIntentId": "home-breadth",
       "pageUrl": null,
       "destination": "home-support",
+      "supportingEvidence": {
+        "allowedParentCanonicalId": "home-breadth",
+        "sourceServiceId": "garage-door-opener",
+        "reviewIds": [
+          "ChdDSUhNMG9nS0VJQ0FnSUNQN2FDS19BRRAB"
+        ],
+        "statement": "Supporting evidence remains within the approved Home breadth assignment."
+      },
       "supportingEvidenceFor": "/"
     },
     {
@@ -9268,12 +9419,20 @@
       "directEvidenceReviewIds": [
         "Ci9DQUlRQUNvZENodHljRjlvT25wemJWQkhVa3RWWTJKeVdYaFdlbFJOWlVGeFQxRRAB"
       ],
-      "passedOverReason": "Supporting opener-work evidence is assigned to Home breadth only.",
+      "passedOverReason": "Supporting evidence is assigned to Home breadth only.",
       "sourceServiceId": "garage-door-keypad-installation",
       "canonicalServiceId": "home-breadth",
       "canonicalIntentId": "home-breadth",
       "pageUrl": null,
       "destination": "home-support",
+      "supportingEvidence": {
+        "allowedParentCanonicalId": "home-breadth",
+        "sourceServiceId": "garage-door-keypad-installation",
+        "reviewIds": [
+          "Ci9DQUlRQUNvZENodHljRjlvT25wemJWQkhVa3RWWTJKeVdYaFdlbFJOWlVGeFQxRRAB"
+        ],
+        "statement": "Supporting evidence remains within the approved Home breadth assignment."
+      },
       "supportingEvidenceFor": "/"
     },
     {
@@ -9285,7 +9444,7 @@
       "directEvidenceReviewIds": [
         "Ci9DQUlRQUNvZENodHljRjlvT2xVMWQxVlRXalppVmxoU1NHcG9hUzFtV2pSVmRIYxAB"
       ],
-      "passedOverReason": "Supporting related evidence is folded into the approved garage-door-repair assignment.",
+      "passedOverReason": "Supporting evidence is folded into the approved parent assignment.",
       "sourceServiceId": "garage-door-wiring-repair",
       "canonicalServiceId": "garage-door-repair",
       "canonicalIntentId": "garage-door-repair",
@@ -9302,7 +9461,7 @@
       "directEvidenceReviewIds": [
         "Ci9DQUlRQUNvZENodHljRjlvT2tRMVoybGhYM1JWUldwb2JVNXNXbFozWDBaMVNIYxAB"
       ],
-      "passedOverReason": "Supporting related evidence is folded into the approved garage-door-repair assignment.",
+      "passedOverReason": "Supporting evidence is folded into the approved parent assignment.",
       "sourceServiceId": "garage-door-track-and-roller-service",
       "canonicalServiceId": "garage-door-repair",
       "canonicalIntentId": "garage-door-repair",
@@ -9319,12 +9478,20 @@
       "directEvidenceReviewIds": [
         "Ci9DQUlRQUNvZENodHljRjlvT2xSWWMycFZlV3AxTldKcFpVZGxTalpGTUZSV1drRRAB"
       ],
-      "passedOverReason": "Supporting opener-work evidence is assigned to Home breadth only.",
+      "passedOverReason": "Supporting evidence is assigned to Home breadth only.",
       "sourceServiceId": "outdoor-pad-update",
       "canonicalServiceId": "home-breadth",
       "canonicalIntentId": "home-breadth",
       "pageUrl": null,
       "destination": "home-support",
+      "supportingEvidence": {
+        "allowedParentCanonicalId": "home-breadth",
+        "sourceServiceId": "outdoor-pad-update",
+        "reviewIds": [
+          "Ci9DQUlRQUNvZENodHljRjlvT2xSWWMycFZlV3AxTldKcFpVZGxTalpGTUZSV1drRRAB"
+        ],
+        "statement": "Supporting evidence remains within the approved Home breadth assignment."
+      },
       "supportingEvidenceFor": "/"
     },
     {
@@ -9336,7 +9503,7 @@
       "directEvidenceReviewIds": [
         "ChdDSUhNMG9nS0VJQ0FnSURmNlBfbXhBRRAB"
       ],
-      "passedOverReason": "Supporting related evidence is folded into the approved garage-door-repair assignment.",
+      "passedOverReason": "Supporting evidence is folded into the approved parent assignment.",
       "sourceServiceId": "garage-door-seal",
       "canonicalServiceId": "garage-door-repair",
       "canonicalIntentId": "garage-door-repair",
@@ -9353,7 +9520,7 @@
       "directEvidenceReviewIds": [
         "ChdDSUhNMG9nS0VJQ0FnSURQZ2RtWDFnRRAB"
       ],
-      "passedOverReason": "Supporting related evidence is folded into the approved garage-door-repair assignment.",
+      "passedOverReason": "Supporting evidence is folded into the approved parent assignment.",
       "sourceServiceId": "garage-door-diagnostics",
       "canonicalServiceId": "garage-door-repair",
       "canonicalIntentId": "garage-door-repair",
@@ -9363,19 +9530,27 @@
     },
     {
       "id": "garage-door-opener-remote",
-      "name": "Garage door opener remote programming",
+      "name": "Supporting evidence family",
       "status": "passed-over",
       "includedPage": false,
       "directCompletedEvidenceCount": 1,
       "directEvidenceReviewIds": [
         "ChZDSUhNMG9nS0VJQ0FnSURQZ2NEbVJnEAE"
       ],
-      "passedOverReason": "Supporting opener-work evidence is assigned to Home breadth only.",
+      "passedOverReason": "Supporting evidence is assigned to Home breadth only.",
       "sourceServiceId": "garage-door-opener-remote",
       "canonicalServiceId": "home-breadth",
       "canonicalIntentId": "home-breadth",
       "pageUrl": null,
       "destination": "home-support",
+      "supportingEvidence": {
+        "allowedParentCanonicalId": "home-breadth",
+        "sourceServiceId": "garage-door-opener-remote",
+        "reviewIds": [
+          "ChZDSUhNMG9nS0VJQ0FnSURQZ2NEbVJnEAE"
+        ],
+        "statement": "Supporting evidence remains within the approved Home breadth assignment."
+      },
       "supportingEvidenceFor": "/"
     },
     {
@@ -9387,7 +9562,7 @@
       "directEvidenceReviewIds": [
         "ChZDSUhNMG9nS0VJQ0FnSURQZ2NEbVJnEAE"
       ],
-      "passedOverReason": "Supporting related evidence is folded into the approved garage-door-repair assignment.",
+      "passedOverReason": "Supporting evidence is folded into the approved parent assignment.",
       "sourceServiceId": "garage-door-lubrication",
       "canonicalServiceId": "garage-door-repair",
       "canonicalIntentId": "garage-door-repair",
@@ -9404,7 +9579,7 @@
       "directEvidenceReviewIds": [
         "ChZDSUhNMG9nS0VJQ0FnSURQZ2NEbVJnEAE"
       ],
-      "passedOverReason": "Supporting related evidence is folded into the approved garage-door-repair assignment.",
+      "passedOverReason": "Supporting evidence is folded into the approved parent assignment.",
       "sourceServiceId": "garage-door-adjustment",
       "canonicalServiceId": "garage-door-repair",
       "canonicalIntentId": "garage-door-repair",
@@ -9419,27 +9594,39 @@
       "includedPage": false,
       "directCompletedEvidenceCount": 0,
       "directEvidenceReviewIds": [],
-      "passedOverReason": "Supporting opener-work evidence is assigned to Home breadth only.",
+      "passedOverReason": "Supporting evidence is assigned to Home breadth only.",
       "sourceServiceId": "post-install-follow-up",
       "canonicalServiceId": "home-breadth",
       "canonicalIntentId": "home-breadth",
       "pageUrl": null,
       "destination": "home-support",
+      "supportingEvidence": {
+        "allowedParentCanonicalId": "home-breadth",
+        "sourceServiceId": "post-install-follow-up",
+        "reviewIds": [],
+        "statement": "Supporting evidence remains within the approved Home breadth assignment."
+      },
       "supportingEvidenceFor": "/"
     },
     {
       "id": "app-setup",
-      "name": "Opener app setup",
+      "name": "Supporting evidence family",
       "status": "passed-over",
       "includedPage": false,
       "directCompletedEvidenceCount": 0,
       "directEvidenceReviewIds": [],
-      "passedOverReason": "Supporting opener-work evidence is assigned to Home breadth only.",
+      "passedOverReason": "Supporting evidence is assigned to Home breadth only.",
       "sourceServiceId": "app-setup",
       "canonicalServiceId": "home-breadth",
       "canonicalIntentId": "home-breadth",
       "pageUrl": null,
       "destination": "home-support",
+      "supportingEvidence": {
+        "allowedParentCanonicalId": "home-breadth",
+        "sourceServiceId": "app-setup",
+        "reviewIds": [],
+        "statement": "Supporting evidence remains within the approved Home breadth assignment."
+      },
       "supportingEvidenceFor": "/"
     },
     {
@@ -9449,12 +9636,18 @@
       "includedPage": false,
       "directCompletedEvidenceCount": 0,
       "directEvidenceReviewIds": [],
-      "passedOverReason": "Supporting opener-work evidence is assigned to Home breadth only.",
+      "passedOverReason": "Supporting evidence is assigned to Home breadth only.",
       "sourceServiceId": "phone-support",
       "canonicalServiceId": "home-breadth",
       "canonicalIntentId": "home-breadth",
       "pageUrl": null,
       "destination": "home-support",
+      "supportingEvidence": {
+        "allowedParentCanonicalId": "home-breadth",
+        "sourceServiceId": "phone-support",
+        "reviewIds": [],
+        "statement": "Supporting evidence remains within the approved Home breadth assignment."
+      },
       "supportingEvidenceFor": "/"
     },
     {
@@ -9464,12 +9657,18 @@
       "includedPage": false,
       "directCompletedEvidenceCount": 0,
       "directEvidenceReviewIds": [],
-      "passedOverReason": "Supporting opener-work evidence is assigned to Home breadth only.",
+      "passedOverReason": "Supporting evidence is assigned to Home breadth only.",
       "sourceServiceId": "garage-door",
       "canonicalServiceId": "home-breadth",
       "canonicalIntentId": "home-breadth",
       "pageUrl": null,
       "destination": "home-support",
+      "supportingEvidence": {
+        "allowedParentCanonicalId": "home-breadth",
+        "sourceServiceId": "garage-door",
+        "reviewIds": [],
+        "statement": "Supporting evidence remains within the approved Home breadth assignment."
+      },
       "supportingEvidenceFor": "/"
     }
   ],
@@ -9477,6 +9676,16 @@
     "version": "canonical-service-coverage-ledger-v1",
     "prospectId": "prospect-32cd5e266a718b3eee2e",
     "placeId": "ChIJHa32AOi84YMR38BV93YKiS8",
+    "runId": "32717620900",
+    "sourceIdentity": {
+      "provider": "github-actions-artifact",
+      "runId": "32717620900",
+      "artifactId": "9516514426",
+      "sourceSha": "81587f8422a23313fd7868751061eec7e2fb5926",
+      "archiveName": "360-garage-door-gate1.zip",
+      "archiveSha256": "a5c948af6389b21786d9daf01106f1fd0662d7bf6bb0f21e078a4d7e2ecb1999",
+      "rootIdentity": "github-actions-artifact:9516514426"
+    },
     "aliases": {
       "garage-door-spring-replacement": "garage-door-repair",
       "garage-door-spring-repair": "garage-door-repair",
@@ -9540,6 +9749,25 @@
             "/services/",
             "/contact/"
           ]
+        },
+        "siteAuditCoverage": {
+          "inspected": true,
+          "inspectedPageUrls": [
+            "/",
+            "/services/",
+            "/contact/"
+          ],
+          "matchingPageUrls": [],
+          "hasCorrespondingPage": false,
+          "crawlRefs": [
+            "full-service-line"
+          ],
+          "absenceEvidence": {
+            "kind": "no-corresponding-service-page",
+            "crawlRefs": [
+              "full-service-line"
+            ]
+          }
         }
       },
       {
@@ -9561,6 +9789,25 @@
             "/services/",
             "/contact/"
           ]
+        },
+        "siteAuditCoverage": {
+          "inspected": true,
+          "inspectedPageUrls": [
+            "/",
+            "/services/",
+            "/contact/"
+          ],
+          "matchingPageUrls": [],
+          "hasCorrespondingPage": false,
+          "crawlRefs": [
+            "full-service-line"
+          ],
+          "absenceEvidence": {
+            "kind": "no-corresponding-service-page",
+            "crawlRefs": [
+              "full-service-line"
+            ]
+          }
         }
       },
       {
@@ -9577,6 +9824,21 @@
         ],
         "provenance": {
           "source": "explicit Home-level breadth mapping; not a service destination"
+        },
+        "siteAuditCoverage": {
+          "inspected": true,
+          "inspectedPageUrls": [
+            "/",
+            "/services/",
+            "/contact/"
+          ],
+          "matchingPageUrls": [
+            "/"
+          ],
+          "hasCorrespondingPage": true,
+          "crawlRefs": [
+            "full-service-line"
+          ]
         }
       }
     ]
@@ -9584,10 +9846,10 @@
   "expansionOverride": null,
   "runId": "32717620900",
   "vendorBoundaryProof": {
-    "boundary": "production-adapters.apify+cursor",
+    "boundary": "no-vendor-reseal-core",
     "apifyCalls": 0,
     "cursorCalls": 0
   },
   "noVendorReseal": true,
-  "resealDigest": "sha256:b361cfac0576352b5d3864369b7105e0617da80968c44185504315fcc84aa343"
+  "resealDigest": "sha256:715f651a53055444b8381dd8a276a2046d93776c61d88a2193cc2d42a1c83ad6"
 }

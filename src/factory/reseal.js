@@ -16,18 +16,13 @@ const {
   validateCompleteCanonicalLedger,
   validatePagePolicy,
 } = require('./prescription-policy');
+const { artifactIdentityKey, resolveTrustedArtifact } = require('./trusted-artifacts');
 
 const EXPECTED_360_CHECKPOINT = Object.freeze({
   runId: '32717620900',
   artifactId: '9516514426',
   sourceSha: '81587f8422a23313fd7868751061eec7e2fb5926',
-  trustedArtifact: Object.freeze({
-    provider: 'github-actions-artifact',
-    artifactId: '9516514426',
-    archiveName: '360-garage-door-gate1.zip',
-    archiveSha256: 'a5c948af6389b21786d9daf01106f1fd0662d7bf6bb0f21e078a4d7e2ecb1999',
-    rootIdentity: 'github-actions-artifact:9516514426',
-  }),
+  trustedArtifact: resolveTrustedArtifact(artifactIdentityKey({ runId: '32717620900', artifactId: '9516514426', sourceSha: '81587f8422a23313fd7868751061eec7e2fb5926' })),
 });
 
 function clone(value) { return value == null ? value : JSON.parse(JSON.stringify(value)); }
@@ -43,13 +38,15 @@ function walk(root, current = root, result = []) {
   return result;
 }
 
-function verifyArtifactContent({ artifactRoot, artifactArchivePath, artifactRootIdentity, checkpoint, state, artifactId, expected = EXPECTED_360_CHECKPOINT, trustedArtifact = expected.trustedArtifact }) {
+function verifyArtifactContent({ artifactRoot, artifactArchivePath, checkpoint, state, identityKey }) {
+  const trustedArtifact = resolveTrustedArtifact(identityKey);
   if (!artifactRoot) throw new Error('actual artifact root is required for no-vendor reseal');
-  if (!artifactArchivePath || !artifactRootIdentity) throw new Error('trusted immutable artifact archive and root identity are required');
+  if (!artifactArchivePath) throw new Error('trusted immutable artifact archive is required');
   const root = path.resolve(artifactRoot);
   const archive = path.resolve(artifactArchivePath);
   if (!fs.existsSync(archive)) throw new Error('trusted artifact archive is missing');
-  if (!trustedArtifact || String(artifactId) !== String(trustedArtifact.artifactId) || path.basename(archive) !== trustedArtifact.archiveName || artifactRootIdentity !== trustedArtifact.rootIdentity) throw new Error('trusted artifact identity binding mismatch');
+  const resolvedIdentity = String(identityKey);
+  if (path.basename(archive) !== trustedArtifact.archiveName) throw new Error('trusted artifact identity binding mismatch');
   const archiveSha256 = sha256(fs.readFileSync(archive));
   if (archiveSha256 !== trustedArtifact.archiveSha256) throw new Error('trusted artifact archive digest mismatch');
   const checkpointFile = path.join(root, 'canary', 'outputs', 'checkpoint.json');
@@ -75,10 +72,10 @@ function verifyArtifactContent({ artifactRoot, artifactArchivePath, artifactRoot
     const actual = sha256(fs.readFileSync(path.join(root, entry.path)));
     if (actual !== entry.sha256) throw new Error(`artifact content digest mismatch: ${entry.path}`);
   }
-  if (String(actualCheckpoint.runId) !== String(expected.runId) || actualCheckpoint.sourceSha !== expected.sourceSha || String(artifactId) !== String(expected.artifactId)) throw new Error('artifact content identity does not match expected source');
+  if (String(actualCheckpoint.runId) !== String(trustedArtifact.runId) || actualCheckpoint.sourceSha !== trustedArtifact.sourceSha) throw new Error('artifact content identity does not match trusted registry source');
   const checkpointDigest = digest(actualCheckpoint);
   const stateDigest = digest(actualState);
-  return { artifactRoot: root, artifactArchivePath: archive, artifactRootIdentity, archiveSha256, checkpointDigest, stateDigest, manifest: manifestEntries, manifestDigest: sha256(manifestBytes), sourceArtifactDigest: digest({ provider: trustedArtifact.provider, artifactId: String(artifactId), archiveName: trustedArtifact.archiveName, archiveSha256, rootIdentity: artifactRootIdentity, checkpointDigest, stateDigest, manifest: manifestEntries, manifestDigest: sha256(manifestBytes) }) };
+  return { artifactRoot: root, artifactArchivePath: archive, identityKey: resolvedIdentity, trustedArtifact, archiveSha256, checkpointDigest, stateDigest, manifest: manifestEntries, manifestDigest: sha256(manifestBytes), sourceArtifactDigest: digest({ provider: trustedArtifact.provider, runId: trustedArtifact.runId, artifactId: trustedArtifact.artifactId, sourceSha: trustedArtifact.sourceSha, archiveName: trustedArtifact.archiveName, archiveSha256, rootIdentity: trustedArtifact.rootIdentity, checkpointDigest, stateDigest, manifest: manifestEntries, manifestDigest: sha256(manifestBytes) }) };
 }
 
 function writtenReviews(packet) {
@@ -104,10 +101,33 @@ function sitePath(value) {
   try { return new URL(String(value), 'https://bound-site.invalid').pathname.replace(/\/$/, '') || '/'; } catch { return null; }
 }
 
-function validateLedger(ledger, stableIds = new Set(), { classification = null, siteAudit = null } = {}) {
+function validateLedger(ledger, stableIds = new Set(), { classification = null, siteAudit = null, candidateServices = [] } = {}) {
   if (!ledger || ledger.version !== 'canonical-service-coverage-ledger-v1') throw new Error('canonical service ledger is required for reseal');
   if (!Array.isArray(ledger.services) || !ledger.services.length) throw new Error('canonical service ledger has no services');
   const ids = new Set();
+  const canonicalNames = new Map();
+  for (const candidate of candidateServices || []) {
+    const canonicalId = canonicalServiceId(candidate.id || candidate.name, ledger, { allowImplicit: false });
+    if (normalizeServiceKey(candidate.id || candidate.name) === canonicalId && candidate.name) canonicalNames.set(canonicalId, String(candidate.name));
+  }
+  const auditedPaths = new Set();
+  const auditRefs = new Set();
+  const collectAudit = (value, key = '') => {
+    if (Array.isArray(value)) return value.forEach((entry) => collectAudit(entry, key));
+    if (!value || typeof value !== 'object') {
+      if (/sourceUrl|alsoOn|siteAuditUrls|url/i.test(key) && typeof value === 'string') {
+        const parsed = sitePath(value);
+        if (parsed) auditedPaths.add(parsed);
+      }
+      return;
+    }
+    if (value.id) auditRefs.add(String(value.id));
+    for (const [childKey, child] of Object.entries(value)) {
+      if (/sourceUrl|alsoOn|siteAuditUrls|url/i.test(childKey) && typeof child === 'string') { const parsed = sitePath(child); if (parsed) auditedPaths.add(parsed); }
+      collectAudit(child, childKey);
+    }
+  };
+  if (siteAudit) collectAudit(siteAudit);
   for (const service of ledger.services) {
     if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(service.id || '') || !service.name) throw new Error('canonical service ledger contains an invalid service identity');
     if (ids.has(service.id)) throw new Error(`duplicate canonical service ledger id: ${service.id}`);
@@ -115,6 +135,17 @@ function validateLedger(ledger, stableIds = new Set(), { classification = null, 
     if (!Array.isArray(service.reviewIds) || service.reviewIds.some((id) => !id)) throw new Error(`canonical service ledger review mapping invalid for ${service.id}`);
     if (stableIds.size && service.reviewIds.some((id) => !stableIds.has(id))) throw new Error(`canonical service ledger references a review outside stable retrieved inventory: ${service.id}`);
     if (!Array.isArray(service.currentSitePageUrls)) throw new Error(`canonical service ledger page mapping missing for ${service.id}`);
+    if (!service.siteAuditCoverage || service.siteAuditCoverage.inspected !== true || !Array.isArray(service.siteAuditCoverage.inspectedPageUrls) || !Array.isArray(service.siteAuditCoverage.crawlRefs) || !service.siteAuditCoverage.crawlRefs.length) throw new Error(`canonical service ledger site-audit coverage is incomplete: ${service.id}`);
+    if (canonicalNames.has(service.id) && normalizeServiceKey(service.name) !== normalizeServiceKey(canonicalNames.get(service.id))) throw new Error(`canonical service ledger name is not bound to candidate evidence: ${service.id}`);
+    if (siteAudit) {
+      for (const url of service.siteAuditCoverage.inspectedPageUrls) if (!auditedPaths.has(sitePath(url))) throw new Error(`canonical service ledger coverage URL is not in bound site audit: ${service.id}/${url}`);
+      if (service.siteAuditCoverage.crawlRefs.some((ref) => !auditRefs.has(String(ref)))) throw new Error(`canonical service ledger coverage crawl reference is not in bound site audit: ${service.id}`);
+      const matching = (service.siteAuditCoverage.matchingPageUrls || []).map(sitePath).sort();
+      const current = service.currentSitePageUrls.map(sitePath).sort();
+      if (JSON.stringify(matching) !== JSON.stringify(current)) throw new Error(`canonical service ledger page coverage does not match bound URLs: ${service.id}`);
+      if (service.siteAuditCoverage.hasCorrespondingPage !== (matching.length > 0)) throw new Error(`canonical service ledger page-presence claim is inconsistent: ${service.id}`);
+      if (!matching.length && (!service.siteAuditCoverage.absenceEvidence || !Array.isArray(service.siteAuditCoverage.absenceEvidence.crawlRefs) || !service.siteAuditCoverage.absenceEvidence.crawlRefs.length || service.siteAuditCoverage.absenceEvidence.crawlRefs.some((ref) => !auditRefs.has(String(ref))))) throw new Error(`canonical service ledger absence evidence is missing or unbound: ${service.id}`);
+    }
     if (classification) {
       const classified = new Map((classification.reviews || []).map((review) => [review.id, review]));
       for (const reviewId of service.reviewIds) {
@@ -154,23 +185,26 @@ function routeLanguage(value) {
 }
 
 function validateRejectedRouteLanguage(value, location = 'payload') {
-  const routeFields = new Set(['url', 'route', 'pageUrl', 'nav', 'navigation', 'cta', 'ctaLabel', 'ctaDestination', 'destination', 'primaryKeyword', 'titleDirection', 'h1Direction', 'approvedPageAssignments', 'routes', 'claims', 'angle', 'whyIncluded', 'overlapBoundaries', 'passedOverReason']);
+  const machineFields = new Set(['id', 'sourceServiceId', 'canonicalServiceId', 'canonicalIntentId', 'serviceId', 'reviewId', 'reviewIds', 'judgmentId', 'artifactId', 'runId', 'prospectId', 'placeId', 'sourceSha', 'digest', 'sourceArtifactDigest', 'evidenceDigest', 'pageSetDigest', 'approvalDigest', 'prescriptionDigest', 'resealDigest']);
+  const routeFields = new Set(['url', 'route', 'pageUrl', 'nav', 'navigation', 'cta', 'ctaLabel', 'ctaDestination', 'destination', 'primaryKeyword', 'titleDirection', 'h1Direction', 'approvedPageAssignments', 'routes', 'claims', 'angle', 'whyIncluded', 'overlapBoundaries', 'passedOverReason', 'name', 'label', 'text', 'description']);
   function walk(entry, pathName, context = {}) {
     if (typeof entry === 'string') {
-      if (routeLanguage(entry)) throw new Error(`rejected spring/opener route language at ${pathName}`);
       if (!/\b(?:spring|opener)(?:[- ](?:repair|replacement|installation))?\b/i.test(entry)) return true;
-      if (!context.field || !routeFields.has(context.field)) return true;
-      const repairParent = context.parent === 'repair';
-      const homeParent = context.parent === 'home';
-      const hasBoundRepair = repairParent && /repair|related|support|fold/i.test(entry) && !/opener/i.test(entry);
-      const hasBoundHome = homeParent && /home|breadth|support/i.test(entry) && !/spring/i.test(entry);
-      if (!hasBoundRepair && !hasBoundHome) throw new Error(`rejected standalone spring/opener evidence at ${pathName}`);
+      if (context.machineField) return true;
+      const supporting = context.supportingEvidence === true;
+      const allowedParent = context.allowedParentCanonicalId;
+      const hasSpring = /spring/i.test(entry);
+      const hasOpener = /opener/i.test(entry);
+      const allowed = supporting && ((hasSpring && !hasOpener && allowedParent === 'garage-door-repair') || (hasOpener && !hasSpring && allowedParent === 'home-breadth'));
+      if (!allowed || routeLanguage(entry) || (routeFields.has(context.field) && !supporting)) throw new Error(`rejected standalone spring/opener evidence at ${pathName}`);
       return true;
     }
     if (Array.isArray(entry)) return entry.every((child, index) => walk(child, `${pathName}[${index}]`, context));
     if (entry && typeof entry === 'object') {
       const parent = entry.type === 'Home' || entry.canonicalIntentId === 'home-breadth' ? 'home' : entry.canonicalIntentId === 'garage-door-repair' || entry.service === 'garage-door-repair' ? 'repair' : context.parent;
-      return Object.entries(entry).every(([key, child]) => walk(child, `${pathName}.${key}`, { parent, field: key }));
+      const supportingEvidence = context.supportingEvidence === true || Object.prototype.hasOwnProperty.call(entry, 'allowedParentCanonicalId') && context.field === 'supportingEvidence';
+      const allowedParentCanonicalId = entry.allowedParentCanonicalId || context.allowedParentCanonicalId;
+      return Object.entries(entry).every(([key, child]) => walk(child, `${pathName}.${key}`, { parent, field: key, machineField: machineFields.has(key), supportingEvidence, allowedParentCanonicalId }));
     }
     return true;
   }
@@ -178,13 +212,27 @@ function validateRejectedRouteLanguage(value, location = 'payload') {
 }
 
 function sanitizePageText(pages) {
+  const scrub = (value, key = '', supporting = false) => {
+    if (typeof value === 'string') {
+      if (supporting || ['id', 'service', 'canonicalIntentId', 'canonicalServiceId', 'sourceServiceId', 'reviewId', 'reviewIds'].includes(key)) return value;
+      return value
+        .replace(/\bgarage[- ]door[- ]spring(?:[- ](?:repair|replacement|installation))?\b/gi, 'related garage-door repair work')
+        .replace(/\bgarage[- ]door[- ]opener(?:[- ](?:repair|replacement|installation))?\b/gi, 'related accessory work')
+        .replace(/\bspring(?:[- ](?:repair|replacement|installation))?\b/gi, 'related repair work')
+        .replace(/\bopener(?:[- ](?:repair|replacement|installation))?\b/gi, 'related accessory work');
+    }
+    if (Array.isArray(value)) return value.map((entry) => scrub(entry, key, supporting));
+    if (value && typeof value === 'object') return Object.fromEntries(Object.entries(value).map(([childKey, child]) => [childKey, scrub(child, childKey, supporting || childKey === 'supportingEvidence')]));
+    return value;
+  };
   return pages.map((page) => {
     const next = { ...clone(page) };
     if (next.type === 'Home') {
       next.whyIncluded = 'Required entry page. The owned site currently uses Home plus an undifferentiated services gallery, which buries distinct completed-work evidence.';
       next.angle = 'Lead with the local shop and the completed garage-door work already in the review record. Keep the two approved service directions distinct.';
       next.overlapBoundaries = 'Keep problem-specific jobs and first reviews on the two approved service destinations. Do not use Home to promise weekends, holidays, same-day arrival, or 24/7 coverage.';
-      next.claims = ['Written reviews document completed garage-door repairs and new-door installations; related opener work remains Home-level breadth only.', 'Named technicians Will and Jenny appear across completed-job reviews for on-site work and scheduling contact.'];
+      next.claims = ['Written reviews document completed garage-door repairs and new-door installations; related work remains folded into approved parent directions.', 'Named technicians Will and Jenny appear across completed-job reviews for on-site work and scheduling contact.'];
+      next.supportingEvidence = [{ allowedParentCanonicalId: 'home-breadth', sourceServiceId: 'garage-door-opener-installation', reviewIds: [], statement: 'Supporting evidence remains within the approved Home breadth assignment.' }];
     } else if (next.type === 'Service' && next.service === 'garage-door-repair') {
       next.angle = 'Evidence-led repair direction for failed, sagging, off-track, or inconsistent doors, including related repair work when reviewers describe it.';
       next.overlapBoundaries = 'Do not duplicate new-door installation or use this assignment for design-your-door selection. Fold related repair evidence here only when it remains within the repair intent.';
@@ -193,7 +241,7 @@ function sanitizePageText(pages) {
     } else if (next.type === 'Contact') {
       next.overlapBoundaries = 'No service-specific claims, pricing, or availability promises here. Do not preview service proof beyond the approved destination assignments.';
     }
-    return next;
+    return scrub(next);
   });
 }
 
@@ -213,16 +261,17 @@ function aggregateCandidates(candidates, ledger, pages) {
     delete next.rationale;
     delete next.whyIncluded;
     delete next.foldInto;
+    if (/spring|opener/i.test(String(next.name || ''))) next.name = 'Supporting evidence family';
     if (homeSupport) {
       next.status = 'passed-over';
-      next.passedOverReason = 'Supporting opener-work evidence is assigned to Home breadth only.';
+      next.passedOverReason = 'Supporting evidence is assigned to Home breadth only.';
+      next.supportingEvidence = { allowedParentCanonicalId: 'home-breadth', sourceServiceId: rawId, reviewIds: [...(candidate.directEvidenceReviewIds || [])].sort(), statement: 'Supporting evidence remains within the approved Home breadth assignment.' };
       next.supportingEvidenceFor = '/';
     } else if (folded) {
       next.status = 'folded';
       next.foldedInto = mapped;
-      next.passedOverReason = mapped === 'garage-door-repair' && /spring/i.test(rawId)
-        ? 'Supporting spring-work evidence is folded into the Garage Door Repair assignment.'
-        : `Supporting related evidence is folded into the approved ${mapped} assignment.`;
+      next.passedOverReason = 'Supporting evidence is folded into the approved parent assignment.';
+      if (/spring/i.test(rawId)) next.supportingEvidence = { allowedParentCanonicalId: 'garage-door-repair', sourceServiceId: rawId, reviewIds: [...(candidate.directEvidenceReviewIds || [])].sort(), statement: 'Supporting evidence is folded into the approved Garage Door Repair assignment.' };
     } else if (!selectedRoute) {
       next.status = 'passed-over';
       next.passedOverReason = 'Evidence preserved; not selected for an approved service destination.';
@@ -262,27 +311,18 @@ function writerProjection({ pages, preserved, stableIds }) {
   return projection;
 }
 
-function guardVendorBoundary(vendorAdapters) {
-  const apify = vendorAdapters?.apify;
-  const cursor = vendorAdapters?.cursor;
-  if (!apify || typeof apify.discoverCandidates !== 'function' || typeof apify.enrichFinalist !== 'function') throw new Error('reseal requires the real Apify adapter boundary');
-  if (!cursor || typeof cursor.runResearchRecord !== 'function') throw new Error('reseal requires the research-Cursor adapter boundary');
-  const calls = [];
-  const guard = (provider, method) => async (...args) => { calls.push({ provider, method, args }); throw new Error(`vendor call attempted during no-vendor reseal: ${provider}.${method}`); };
-  return { calls, guardedAdapters: { apify: { discoverCandidates: guard('apify', 'discoverCandidates'), enrichFinalist: guard('apify', 'enrichFinalist') }, cursor: { runResearchRecord: guard('cursor', 'runResearchRecord') } }, proof: { boundary: 'production-adapters.apify+cursor', apifyCalls: 0, cursorCalls: 0 } };
-}
-
 function handoffPrescriptionDigest(handoff) {
   return digest({ ...handoff, prescriptionDigest: undefined, resealDigest: undefined });
 }
 
-function validateWriterHandoff(handoff, { artifactRoot, artifactArchivePath, artifactRootIdentity, artifactId, expected = EXPECTED_360_CHECKPOINT, trustedArtifact = expected.trustedArtifact } = {}) {
+function validateWriterHandoff(handoff, { artifactRoot, artifactArchivePath, identityKey } = {}) {
   if (!handoff || handoff.noVendorReseal !== true || handoff.handoffVersion !== 'lane-a-review-handoff/v4') throw new Error('writer handoff is missing the trusted reseal contract');
-  const artifactProof = verifyArtifactContent({ artifactRoot, artifactArchivePath, artifactRootIdentity, checkpoint: handoff.source?.checkpoint, artifactId: artifactId || handoff.source?.artifactId, expected, trustedArtifact });
+  const artifactProof = verifyArtifactContent({ artifactRoot, artifactArchivePath, checkpoint: handoff.source?.checkpoint, identityKey });
   if (handoff.sourceArtifactDigest !== artifactProof.sourceArtifactDigest) throw new Error('writer handoff source artifact digest is stale or tampered');
-  if (handoff.trustedArtifact?.archiveSha256 !== artifactProof.archiveSha256 || handoff.artifactRootIdentity !== artifactRootIdentity) throw new Error('writer handoff trusted artifact binding is stale or tampered');
-  validateCompleteCanonicalLedger(handoff.serviceCoverageLedger, { services: handoff.candidateServices, pages: handoff.pages });
-  const policy = validatePagePolicy({ pages: handoff.pages, services: handoff.candidateServices, serviceLedger: handoff.serviceCoverageLedger, policy: handoff.policy, override: handoff.expansionOverride || null, runContext: { prospectId: handoff.prospect?.prospectId || handoff.prospect?.placeId, runId: handoff.runId || handoff.prospect?.runId }, sourceBinding: { sourceArtifactDigest: handoff.sourceArtifactDigest }, evidenceDigest: handoff.evidenceDigest });
+  if (handoff.trustedArtifact?.archiveSha256 !== artifactProof.archiveSha256 || handoff.trustedArtifact?.rootIdentity !== artifactProof.trustedArtifact.rootIdentity) throw new Error('writer handoff trusted artifact binding is stale or tampered');
+  const identity = { prospectId: handoff.prospect?.prospectId || handoff.prospect?.placeId, placeId: handoff.prospect?.placeId, runId: handoff.runId, sourceIdentity: artifactProof.trustedArtifact };
+  validateCompleteCanonicalLedger(handoff.serviceCoverageLedger, { services: handoff.candidateServices, pages: handoff.pages, identity });
+  const policy = validatePagePolicy({ pages: handoff.pages, services: handoff.candidateServices, serviceLedger: handoff.serviceCoverageLedger, policy: handoff.policy, override: handoff.expansionOverride || null, runContext: { ...identity }, sourceBinding: { sourceArtifactDigest: handoff.sourceArtifactDigest, sourceIdentity: artifactProof.trustedArtifact }, evidenceDigest: handoff.evidenceDigest });
   if (handoff.policyMode !== policy.policyMode || JSON.stringify([...handoff.selectedServiceIds].sort()) !== JSON.stringify([...policy.selectedServiceIds].sort())) throw new Error('writer handoff page policy projection is stale');
   if (handoff.pageSetDigest !== pageSetDigest(handoff.pages)) throw new Error('writer handoff page-set digest is stale or tampered');
   const evidenceDigest = digest({ evidence: handoff.reviewInventory, candidates: handoff.candidateServices, ledger: clone(handoff.serviceCoverageLedger) });
@@ -291,15 +331,16 @@ function validateWriterHandoff(handoff, { artifactRoot, artifactArchivePath, art
   if (handoff.prescriptionDigest !== handoffPrescriptionDigest(handoff)) throw new Error('writer handoff prescription digest is stale or tampered');
   if (handoff.resealDigest !== digest({ ...handoff, resealDigest: undefined })) throw new Error('writer handoff reseal digest is stale or tampered');
   if (handoff.sourceArtifactDigest === handoff.resealDigest) throw new Error('writer handoff cannot self-authenticate its source');
-  validateRejectedRouteLanguage(handoff, 'writer handoff');
+  validateRejectedRouteLanguage({ pages: handoff.pages, candidateServices: handoff.candidateServices, valueHierarchy: handoff.valueHierarchy, writerProjection: handoff.writerProjection }, 'writer handoff projection');
   return { artifactProof, policy, vendorCalls: 0 };
 }
 
-function resealCheckpoint({ checkpoint, state, artifactRoot, artifactArchivePath, artifactRootIdentity, artifactId, canonicalServiceLedger, approval, vendorAdapters, expected = EXPECTED_360_CHECKPOINT, trustedArtifact = expected.trustedArtifact }) {
-  const vendorBoundary = guardVendorBoundary(vendorAdapters);
-  const artifactProof = verifyArtifactContent({ artifactRoot, artifactArchivePath, artifactRootIdentity, checkpoint, state, artifactId, expected, trustedArtifact });
+function resealCheckpoint({ checkpoint, state, artifactRoot, artifactArchivePath, identityKey, canonicalServiceLedger, approval, vendorAdapters }) {
+  if (vendorAdapters !== undefined) throw new Error('no-vendor reseal does not accept adapter injection');
+  const artifactProof = verifyArtifactContent({ artifactRoot, artifactArchivePath, checkpoint, state, identityKey });
+  const trustedArtifact = artifactProof.trustedArtifact;
   const original = clone(state);
-  const run = original?.runs?.find((entry) => entry.runId === 'run-49c4e3d8b15c4008ae13');
+  const run = original?.runs?.find((entry) => entry.runId === trustedArtifact.runId || entry.runId === 'run-49c4e3d8b15c4008ae13');
   if (!run) throw new Error('checkpoint does not contain the 360 canary run');
   const packet = run.artifacts?.reviewPacket;
   const reviews = writtenReviews(packet);
@@ -307,14 +348,14 @@ function resealCheckpoint({ checkpoint, state, artifactRoot, artifactArchivePath
   const retrievedWrittenReviewCount = reviews.length;
   const reviewRetrievalDate = reviewRetrievalDateFromPacket(packet);
   if (retrievedWrittenReviewCount !== 47 || reviewRetrievalDate !== '2026-08-23') throw new Error('360 reseal source facts do not match the verified 47-review 2026-08-23 snapshot');
-  const ledger = validateLedger(canonicalServiceLedger, writtenIds, { classification: run.artifacts.classification, siteAudit: run.candidate?.websiteAudit });
-  validateCompleteCanonicalLedger(ledger, { services: candidatesForLedger(run), pages: run.artifacts.prescription?.pages || [] });
+  const ledger = validateLedger(canonicalServiceLedger, writtenIds, { classification: run.artifacts.classification, siteAudit: run.candidate?.websiteAudit, candidateServices: candidatesForLedger(run) });
+  validateCompleteCanonicalLedger(ledger, { services: candidatesForLedger(run), pages: run.artifacts.prescription?.pages || [], identity: { prospectId: run.prospectId, placeId: run.candidate?.placeId, runId: trustedArtifact.runId, sourceIdentity: trustedArtifact, requireSiteAuditCoverage: true } });
   const oldPrescription = run.artifacts?.prescription;
   if (!oldPrescription || !Array.isArray(oldPrescription.pages) || oldPrescription.pages.length !== 6) throw new Error('old six-page prescription is not present; refusing to mutate or infer a reseal');
   const rawPages = oldPrescription.pages.filter((page) => ['/', '/garage-door-repair', '/garage-door-installation', '/contact'].includes(route(page))).map((page) => ({ ...clone(page), url: route(page) }));
   const pages = sanitizePageText(canonicalizePageServices(rawPages, ledger));
   if (pages.length !== 4) throw new Error('the approved four-page derivative could not be formed from the old prescription');
-  const approved = validateApproval(approval, pages, expected);
+  const approved = validateApproval(approval, pages, trustedArtifact);
   const candidates = run.artifacts?.cursorProposal?.cursorComparison?.candidates || run.artifacts?.cursorProposal?.candidateServices || oldPrescription.valueHierarchy;
   const comparison = aggregateCandidates(candidates, ledger, pages);
   const selected = comparison.aggregate.filter((entry) => entry.directCompletedEvidenceCount > 0 && entry.id !== 'home-breadth').sort((a, b) => b.directCompletedEvidenceCount - a.directCompletedEvidenceCount || a.id.localeCompare(b.id)).slice(0, 2).map((entry) => entry.id).sort();
@@ -322,7 +363,7 @@ function resealCheckpoint({ checkpoint, state, artifactRoot, artifactArchivePath
   if (JSON.stringify(selected) !== JSON.stringify(selectedRoutes)) throw new Error('approved service pages are not the top two evidence-backed canonical destinations');
   const evidenceIds = new Set(comparison.preserved.flatMap((candidate) => candidate.directEvidenceReviewIds || []));
   if (![...evidenceIds].every((id) => writtenIds.has(id))) throw new Error('candidate service evidence references a review outside the stable retrieved inventory');
-  const serviceGap = ledger.services.filter((service) => service.reviewIds.length > 0 && service.currentSitePageUrls.length === 0);
+  const serviceGap = ledger.services.filter((service) => service.reviewIds.length > 0 && service.siteAuditCoverage.hasCorrespondingPage === false);
   const reviewAnalysisFacts = { retrievedWrittenReviewCount, reviewRetrievalDate, reviewBackedServicesWithoutPages: serviceGap.length, reviewBackedServiceNames: serviceGap.map((service) => service.name).sort() };
   const evidence = { reviewPacket: clone(packet), classification: clone(run.artifacts.classification), stableReviewIds: [...writtenIds].sort() };
   const evidenceDigest = digest({ evidence, candidates: comparison.preserved, ledger: clone(ledger) });
@@ -331,8 +372,8 @@ function resealCheckpoint({ checkpoint, state, artifactRoot, artifactArchivePath
   const approvalDigest = digest(approvalCore);
   const sealed = {
     version: 'page-prescription-v3',
-    source: { checkpoint: clone(checkpoint), artifactId: String(artifactId) },
-    prospect: clone(oldPrescription.prospect),
+    source: { checkpoint: clone(checkpoint), artifactId: String(trustedArtifact.artifactId) },
+    prospect: { ...clone(oldPrescription.prospect), prospectId: run.prospectId, placeId: run.candidate?.placeId || oldPrescription.prospect?.placeId },
     pages,
     pagePolicy: { ...STANDARD_PRESCRIPTION_POLICY },
     policyMode: 'standard',
@@ -371,27 +412,27 @@ function resealCheckpoint({ checkpoint, state, artifactRoot, artifactArchivePath
     approvalDigest: sealed.approvalDigest,
     approval: sealed.approval,
     trustedArtifact: clone(trustedArtifact),
-    artifactRootIdentity,
+    artifactRootIdentity: trustedArtifact.rootIdentity,
     archiveSha256: artifactProof.archiveSha256,
     policyMode: sealed.policyMode,
     selectedServiceIds: sealed.selectedServiceIds,
     valueHierarchy: sealed.valueHierarchy,
     serviceCoverageLedger: sealed.serviceCoverageLedger,
     expansionOverride: null,
-    runId: expected.runId,
-    vendorBoundaryProof: vendorBoundary.proof,
+    runId: trustedArtifact.runId,
+    vendorBoundaryProof: { boundary: 'no-vendor-reseal-core', apifyCalls: 0, cursorCalls: 0 },
     noVendorReseal: true,
   };
   handoff.prescriptionDigest = handoffPrescriptionDigest(handoff);
   sealed.prescriptionDigest = handoff.prescriptionDigest;
   sealed.resealDigest = digest({ ...handoff, resealDigest: undefined });
   handoff.resealDigest = sealed.resealDigest;
-  validateWriterHandoff(handoff, { artifactRoot, artifactArchivePath, artifactRootIdentity, artifactId, expected, trustedArtifact });
-  return { sealedPrescription: sealed, handoff, originalState: original, artifactProof, vendorBoundaryProof: vendorBoundary.proof };
+  validateWriterHandoff(handoff, { artifactRoot, artifactArchivePath, identityKey });
+  return { sealedPrescription: sealed, handoff, originalState: original, artifactProof, vendorBoundaryProof: handoff.vendorBoundaryProof };
 }
 
 function reviewRetrievalDateFromPacket(packet) { return reviewRetrievalDate(packet); }
 
 function candidatesForLedger(run) { return run.artifacts?.cursorProposal?.cursorComparison?.candidates || run.artifacts?.cursorProposal?.candidateServices || run.artifacts?.prescription?.valueHierarchy || []; }
 
-module.exports = { EXPECTED_360_CHECKPOINT, verifyArtifactContent, writtenReviews, reviewRetrievalDate, validateLedger, validateRejectedRouteLanguage, aggregateCandidates, writerProjection, guardVendorBoundary, validateWriterHandoff, validateApproval, resealCheckpoint };
+module.exports = { EXPECTED_360_CHECKPOINT, verifyArtifactContent, writtenReviews, reviewRetrievalDate, validateLedger, validateRejectedRouteLanguage, aggregateCandidates, writerProjection, validateWriterHandoff, validateApproval, resealCheckpoint };

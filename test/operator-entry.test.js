@@ -73,7 +73,7 @@ test('Gate 1 is the terminal operator stop and exposes no later-stage transition
     { id: 'operator-installation', name: 'Operator installation', reviewIds: ['review-2'], currentSitePageUrls: [] },
   ] };
   const originalProposal = adapters.prescriber.propose;
-  adapters.prescriber.propose = async (...args) => { const response = await originalProposal(...args); response.proposal.serviceCoverageLedger = serviceCoverageLedger; return response; };
+  adapters.prescriber.propose = async (...args) => { const response = await originalProposal(...args); const bound = args[0] || {}; response.proposal.serviceCoverageLedger = { ...serviceCoverageLedger, prospectId: bound.prospectId, placeId: bound.placeId, runId: bound.runId }; return response; };
   const result = await runFactoryCycle({
     root: tempRoot(),
     config: config(),

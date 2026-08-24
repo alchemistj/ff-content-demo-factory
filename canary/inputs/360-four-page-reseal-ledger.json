@@ -2,6 +2,8 @@
   "version": "canonical-service-coverage-ledger-v1",
   "prospectId": "prospect-32cd5e266a718b3eee2e",
   "placeId": "ChIJHa32AOi84YMR38BV93YKiS8",
+  "runId": "32717620900",
+  "sourceIdentity": { "provider": "github-actions-artifact", "runId": "32717620900", "artifactId": "9516514426", "sourceSha": "81587f8422a23313fd7868751061eec7e2fb5926", "archiveName": "360-garage-door-gate1.zip", "archiveSha256": "a5c948af6389b21786d9daf01106f1fd0662d7bf6bb0f21e078a4d7e2ecb1999", "rootIdentity": "github-actions-artifact:9516514426" },
   "aliases": {
     "garage-door-spring-replacement": "garage-door-repair",
     "garage-door-spring-repair": "garage-door-repair",
@@ -58,7 +60,8 @@
         "ChZDSUhNMG9nS0VJQ0FnSURQZ2NEbVJnEAE"
       ],
       "currentSitePageUrls": [],
-      "provenance": { "source": "360 checkpoint cursorComparison plus explicit site audit", "siteAuditUrls": ["/", "/services/", "/contact/"] }
+      "provenance": { "source": "360 checkpoint cursorComparison plus explicit site audit", "siteAuditUrls": ["/", "/services/", "/contact/"] },
+      "siteAuditCoverage": { "inspected": true, "inspectedPageUrls": ["/", "/services/", "/contact/"], "matchingPageUrls": [], "hasCorrespondingPage": false, "crawlRefs": ["full-service-line"], "absenceEvidence": { "kind": "no-corresponding-service-page", "crawlRefs": ["full-service-line"] } }
     },
     {
       "id": "garage-door-installation",
@@ -72,7 +75,8 @@
         "Ci9DQUlRQUNvZENodHljRjlvT2xWdlZGQk9hMjFOUlhaVk5rczFVR2RKTlVKWlVGRRAB"
       ],
       "currentSitePageUrls": [],
-      "provenance": { "source": "360 checkpoint cursorComparison plus explicit site audit", "siteAuditUrls": ["/", "/services/", "/contact/"] }
+      "provenance": { "source": "360 checkpoint cursorComparison plus explicit site audit", "siteAuditUrls": ["/", "/services/", "/contact/"] },
+      "siteAuditCoverage": { "inspected": true, "inspectedPageUrls": ["/", "/services/", "/contact/"], "matchingPageUrls": [], "hasCorrespondingPage": false, "crawlRefs": ["full-service-line"], "absenceEvidence": { "kind": "no-corresponding-service-page", "crawlRefs": ["full-service-line"] } }
     },
     {
       "id": "home-breadth",
@@ -84,7 +88,8 @@
         "ChZDSUhNMG9nS0VJQ0FnSURQZ2NEbVJnEAE"
       ],
       "currentSitePageUrls": ["/"],
-      "provenance": { "source": "explicit Home-level breadth mapping; not a service destination" }
+      "provenance": { "source": "explicit Home-level breadth mapping; not a service destination" },
+      "siteAuditCoverage": { "inspected": true, "inspectedPageUrls": ["/", "/services/", "/contact/"], "matchingPageUrls": ["/"], "hasCorrespondingPage": true, "crawlRefs": ["full-service-line"] }
     }
   ]
 }

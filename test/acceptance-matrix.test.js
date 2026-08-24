@@ -37,7 +37,7 @@ function harness({ failFirstJudge = false } = {}) {
     { id: 'panel-upgrade', name: 'Panel upgrade', reviewIds: ['r2'], currentSitePageUrls: [] },
   ] };
   const originalProposal = adapters.prescriber.propose;
-  adapters.prescriber.propose = async (...args) => { const result = await originalProposal(...args); result.proposal.serviceCoverageLedger = serviceCoverageLedger; return result; };
+  adapters.prescriber.propose = async (...args) => { const result = await originalProposal(...args); const bound = args[0] || {}; result.proposal.serviceCoverageLedger = { ...serviceCoverageLedger, prospectId: bound.prospectId, placeId: bound.placeId, runId: bound.runId }; return result; };
   return { root, config, calls, candidates, adapters };
 }
 

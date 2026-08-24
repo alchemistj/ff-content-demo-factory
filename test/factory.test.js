@@ -57,11 +57,19 @@ const proposedPages = [
   { type: 'Contact', service: 'contact', url: '/contact', primaryKeyword: 'contact RLB Electric', titleDirection: 'Contact RLB Electric', h1Direction: 'Talk with RLB Electric', angle: 'Give ready prospects a clear next step.', whyIncluded: 'Required conversion page.', strongestEvidence: null, overlapBoundaries: 'No service claims here.', claims: [], traps: [], recommendedFirstReview: null }
 ];
 
+const UNIT_SITE_COVERAGE = { inspected: true, inspectedPageUrls: ['/'], matchingPageUrls: [], hasCorrespondingPage: false, crawlRefs: ['unit-site-audit'], absenceEvidence: { kind: 'unit-fixture-absence', crawlRefs: ['unit-site-audit'] } };
+const UNIT_LEDGER = { version: 'canonical-service-coverage-ledger-v1', prospectId: 'rlb', placeId: 'rlb', runId: 'unit-run', aliases: {}, services: [
+  { id: 'ev-charging', name: 'EV charging', reviewIds: ['allen'], currentSitePageUrls: [], siteAuditCoverage: UNIT_SITE_COVERAGE },
+  { id: 'electrical-repair', name: 'Electrical repair', reviewIds: ['anthony'], currentSitePageUrls: [], siteAuditCoverage: UNIT_SITE_COVERAGE },
+  { id: 'panel-upgrade', name: 'Panel upgrade', reviewIds: [], currentSitePageUrls: [], siteAuditCoverage: UNIT_SITE_COVERAGE },
+] };
+function unitBound() { return { serviceLedger: UNIT_LEDGER, runContext: { prospectId: 'rlb', placeId: 'rlb', runId: 'unit-run' } }; }
+
 test('prescription consumes explicit Architect pages, compares every service including zero-anchor pass-over, and refuses samples', () => {
   assert.throws(() => prescribe({ finalist: candidates[0], inventory: { discoverySampleOnly: true }, services: [], proposedPages: [] }), /discovery-sample/);
   const prescription = prescribe({ finalist: { ...candidates[0], architectQualified: true }, classification, services: [
     { id: 'ev-charging', name: 'EV charging' }, { id: 'electrical-repair', name: 'Electrical repair' }, { id: 'panel-upgrade', name: 'Panel upgrade', passedOverReason: 'No authoritative direct anchor.' }
-  ], proposedPages });
+  ], proposedPages, ...unitBound() });
   assert.equal(prescription.pages.length, 4); assert.equal(prescription.valueHierarchy.length, 3); assert.equal(prescription.valueHierarchy.find((s) => s.id === 'ev-charging').directCompletedEvidenceCount, 1);
   assert.match(prescription.valueHierarchy.find((s) => s.id === 'panel-upgrade').passedOverReason, /No authoritative/);
   assert.equal(prescription.pages.find((p) => p.type === 'Contact').recommendedFirstReview, null);
@@ -70,7 +78,7 @@ test('prescription consumes explicit Architect pages, compares every service inc
 test('collision validation, Gate 1 evidence specificity, and expanded Architect QA enforce the boundary', () => {
   assert.equal(validateCollisions([{ type: 'a', url: '/x', primaryKeyword: 'x', titleDirection: 'a', h1Direction: 'a' }, { type: 'b', url: '/x', primaryKeyword: 'y', titleDirection: 'b', h1Direction: 'b' }]).valid, false);
   const finalist = { ...candidates[0], architectQualified: true, disposition: { status: 'selected-finalist' }, websiteAudit: audits.get('rlb'), duplicate: { status: 'unique' } };
-  const prescription = prescribe({ finalist, classification, services: [{ id: 'ev-charging', name: 'EV charging' }, { id: 'electrical-repair', name: 'Electrical repair' }, { id: 'panel-upgrade', name: 'Panel upgrade', passedOverReason: 'No authoritative direct anchor.' }], proposedPages });
+  const prescription = prescribe({ finalist, classification, services: [{ id: 'ev-charging', name: 'EV charging' }, { id: 'electrical-repair', name: 'Electrical repair' }, { id: 'panel-upgrade', name: 'Panel upgrade', passedOverReason: 'No authoritative direct anchor.' }], proposedPages, ...unitBound() });
   const whyBuilt = { text: 'RLB Electric has direct EV charging installation proof while its dated site buries that opportunity. The NEMA 15-50 customer account and owned EV graphic support a focused considered-purchase page. The demo makes that evidence easier for Dallas prospects to find.', refs: [{ type: 'opportunity', ref: 'service pages bury EV charging evidence' }, { type: 'review', ref: 'allen' }, { type: 'graphic', ref: 'https://rlb.example/flyer.jpg' }] };
   const md = renderGate1({ finalist, prescription, whyBuilt });
   assert.match(md, /NEMA 15-50/); assert.match(md, /awaiting-human-gate-1/);
@@ -78,7 +86,7 @@ test('collision validation, Gate 1 evidence specificity, and expanded Architect 
   assert.equal(qa.passed, true);
   const trapOnly = { ...prescription, pages: [{ ...prescription.pages[0], traps: ['Do not promise same-day service.'] }] };
   assert.equal(architectQa({ finalist, inventory: classification, prescription: trapOnly, whyBuilt }).checks.unsupportedClaimsAbsent, true);
-  assert.throws(() => prescribe({ finalist, classification, services: [{ id: 'ev-charging', name: 'EV charging' }], proposedPages: [{ ...proposedPages[1], recommendedFirstReview: { reviewId: 'holiday', reviewer: 'Holiday customer', rating: 5, date: '2025-05-01', exactText: 'Helped before sunrise on a holiday.', why: 'A review.' } }] }), /does not fit|missing/);
+  assert.throws(() => prescribe({ finalist, classification, services: [{ id: 'ev-charging', name: 'EV charging' }], proposedPages: [{ ...proposedPages[1], recommendedFirstReview: { reviewId: 'holiday', reviewer: 'Holiday customer', rating: 5, date: '2025-05-01', exactText: 'Helped before sunrise on a holiday.', why: 'A review.' } }], ...unitBound() }), /does not fit|missing/);
   assert.equal(architectQa({ finalist, inventory: classification, prescription, whyBuilt: { text: 'This is a generic site story. It has a page.', refs: [{ type: 'opportunity', ref: 'missing' }, { type: 'review', ref: 'missing' }] } }).checks.whyBuiltEvidenceSpecific, false);
   assert.equal(architectQa({ finalist, inventory: { ...classification, enrichmentStatus: 'incomplete', retrievedReviewCount: 5 }, prescription, whyBuilt }).checks.truthfulFullEnrichment, false);
   assert.equal(architectQa({ finalist: { ...finalist, websiteAudit: { ...finalist.websiteAudit, graphicsInspection: { status: 'not-inspected', findings: [] } } }, inventory: classification, prescription, whyBuilt }).checks.graphicsInspected, false);
@@ -100,7 +108,7 @@ test('recommended review metadata is resolved from authoritative evidence and ex
       date: '1999-01-01',
     },
   };
-  const result = prescribe({ finalist, classification, services: [{ id: 'ev-charging', name: 'EV charging' }, { id: 'electrical-repair', name: 'Electrical repair' }], proposedPages: supplied });
+  const result = prescribe({ finalist, classification, services: [{ id: 'ev-charging', name: 'EV charging' }, { id: 'electrical-repair', name: 'Electrical repair' }], proposedPages: supplied, ...unitBound() });
   const recommendation = result.pages.find((page) => page.service === 'ev-charging').recommendedFirstReview;
   assert.equal(recommendation.reviewer, 'Allen Schaefer');
   assert.equal(recommendation.rating, 5);
@@ -108,5 +116,5 @@ test('recommended review metadata is resolved from authoritative evidence and ex
 
   const drifted = proposedPages.map((page) => ({ ...page }));
   drifted[1] = { ...drifted[1], recommendedFirstReview: { ...drifted[1].recommendedFirstReview, exactText: 'A claim that is not in the review.' } };
-  assert.throws(() => prescribe({ finalist, classification, services: [{ id: 'ev-charging', name: 'EV charging' }, { id: 'electrical-repair', name: 'Electrical repair' }], proposedPages: drifted }), /excerpt does not match/);
+  assert.throws(() => prescribe({ finalist, classification, services: [{ id: 'ev-charging', name: 'EV charging' }, { id: 'electrical-repair', name: 'Electrical repair' }], proposedPages: drifted, ...unitBound() }), /excerpt does not match/);
 });

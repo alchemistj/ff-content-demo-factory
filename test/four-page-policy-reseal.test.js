@@ -7,7 +7,6 @@ const os = require('node:os');
 const path = require('node:path');
 const crypto = require('node:crypto');
 const { execFileSync } = require('node:child_process');
-const { createProductionAdapters } = require('../src/factory/production-adapters');
 const { STANDARD_PRESCRIPTION_POLICY, pageId, pageSetDigest, validatePagePolicy, digest } = require('../src/factory/prescription-policy');
 const { resealCheckpoint, EXPECTED_360_CHECKPOINT, validateRejectedRouteLanguage } = require('../src/factory/reseal');
 
@@ -27,10 +26,11 @@ function standardPages(serviceCount = 2) {
   return [page('Home', '/'), ...services().slice(0, serviceCount).map((item) => page('Service', `/${item.id}`, item.id)), page('Contact', '/contact', 'contact')];
 }
 
-const TEST_LEDGER = { version: 'canonical-service-coverage-ledger-v1', aliases: {}, services: [
-  { id: 'repair', name: 'Repair', reviewIds: [], currentSitePageUrls: [] },
-  { id: 'installation', name: 'Installation', reviewIds: [], currentSitePageUrls: [] },
-  { id: 'opener', name: 'Opener', reviewIds: [], currentSitePageUrls: [] },
+const TEST_COVERAGE = { inspected: true, inspectedPageUrls: ['/'], matchingPageUrls: [], hasCorrespondingPage: false, crawlRefs: ['test-crawl'], absenceEvidence: { kind: 'test-absence', crawlRefs: ['test-crawl'] } };
+const TEST_LEDGER = { version: 'canonical-service-coverage-ledger-v1', prospectId: 'unit-prospect', placeId: 'unit-place', runId: 'run-1', aliases: {}, services: [
+  { id: 'repair', name: 'Repair', reviewIds: [], currentSitePageUrls: [], siteAuditCoverage: TEST_COVERAGE },
+  { id: 'installation', name: 'Installation', reviewIds: [], currentSitePageUrls: [], siteAuditCoverage: TEST_COVERAGE },
+  { id: 'opener', name: 'Opener', reviewIds: [], currentSitePageUrls: [], siteAuditCoverage: TEST_COVERAGE },
 ] };
 
 function policyPages(pages) {
@@ -54,16 +54,16 @@ test('valid one-off expansion requires an explicit durable approval bound to the
   const pages = policyPages([...standardPages(), page('Service', '/opener', 'opener')]);
   const sourceBinding = { runId: 'run-1', artifactId: 'artifact-1', sourceSha: 'abc' };
   const evidenceDigest = digest({ test: 'evidence' });
-  const unsigned = { mode: 'expanded-one-off', overrideId: 'override-1', prospectId: 'prospect-1', runId: 'run-1', policyVersion: STANDARD_PRESCRIPTION_POLICY.version, approvedPageIds: pages.map(pageId).sort(), approvedCanonicalIntentIds: ['installation', 'opener', 'repair'], approvedBy: 'Josh Lenz', approvedAt: '2026-08-24', expiresAt: '2026-12-31', reason: 'Documented one-off proposal approved for this prospect.', sourceArtifactDigest: 'sha256:source', evidenceDigest, pageSetDigest: pageSetDigest(pages) };
+  const unsigned = { mode: 'expanded-one-off', overrideId: 'override-1', prospectId: 'unit-prospect', runId: 'run-1', policyVersion: STANDARD_PRESCRIPTION_POLICY.version, approvedPageIds: pages.map(pageId).sort(), approvedCanonicalIntentIds: ['installation', 'opener', 'repair'], approvedBy: 'Josh Lenz', approvedAt: '2026-08-24', expiresAt: '2026-12-31', reason: 'Documented one-off proposal approved for this prospect.', sourceArtifactDigest: 'sha256:source', evidenceDigest, pageSetDigest: pageSetDigest(pages) };
   const override = { ...unsigned, overrideDigest: digest(unsigned) };
-  const result = validatePagePolicy({ pages, services: services(), serviceLedger: TEST_LEDGER, override, runContext: { prospectId: 'prospect-1', runId: 'run-1', now: '2026-08-24' }, sourceBinding: { ...sourceBinding, sourceArtifactDigest: 'sha256:source' }, evidenceDigest });
+  const result = validatePagePolicy({ pages, services: services(), serviceLedger: TEST_LEDGER, override, runContext: { prospectId: 'unit-prospect', placeId: 'unit-place', runId: 'run-1', now: '2026-08-24' }, sourceBinding: { ...sourceBinding, sourceArtifactDigest: 'sha256:source' }, evidenceDigest });
   assert.equal(result.policyMode, 'expanded-one-off');
   assert.equal(result.allowedServicePageCount, 3);
   assert.equal(result.override.overrideDigest, override.overrideDigest);
-  assert.throws(() => validatePagePolicy({ pages, services: services(), serviceLedger: TEST_LEDGER, override: { ...override, pageSetDigest: digest('tampered') }, runContext: { prospectId: 'prospect-1', runId: 'run-1', now: '2026-08-24' }, sourceBinding: { ...sourceBinding, sourceArtifactDigest: 'sha256:source' }, evidenceDigest }), /page-set digest mismatch/);
-  assert.throws(() => validatePagePolicy({ pages, services: services(), serviceLedger: TEST_LEDGER, override: { ...override, expiresAt: '2020-01-01' }, runContext: { prospectId: 'prospect-1', runId: 'run-1', now: '2026-08-24' }, sourceBinding: { ...sourceBinding, sourceArtifactDigest: 'sha256:source' }, evidenceDigest }), /dates are invalid|stale/);
-  assert.throws(() => validatePagePolicy({ pages, services: services(), serviceLedger: TEST_LEDGER, override: { ...override, runId: 'other-run' }, runContext: { prospectId: 'prospect-1', runId: 'run-1', now: '2026-08-24' }, sourceBinding: { ...sourceBinding, sourceArtifactDigest: 'sha256:source' }, evidenceDigest }), /run mismatch|digest is invalid/);
-  assert.throws(() => validatePagePolicy({ pages, services: services(), serviceLedger: TEST_LEDGER, override: { ...override, approvedBy: undefined }, runContext: { prospectId: 'prospect-1', runId: 'run-1', now: '2026-08-24' }, sourceBinding: { ...sourceBinding, sourceArtifactDigest: 'sha256:source' }, evidenceDigest }), /missing approvedBy/);
+  assert.throws(() => validatePagePolicy({ pages, services: services(), serviceLedger: TEST_LEDGER, override: { ...override, pageSetDigest: digest('tampered') }, runContext: { prospectId: 'unit-prospect', placeId: 'unit-place', runId: 'run-1', now: '2026-08-24' }, sourceBinding: { ...sourceBinding, sourceArtifactDigest: 'sha256:source' }, evidenceDigest }), /page-set digest mismatch/);
+  assert.throws(() => validatePagePolicy({ pages, services: services(), serviceLedger: TEST_LEDGER, override: { ...override, expiresAt: '2020-01-01' }, runContext: { prospectId: 'unit-prospect', placeId: 'unit-place', runId: 'run-1', now: '2026-08-24' }, sourceBinding: { ...sourceBinding, sourceArtifactDigest: 'sha256:source' }, evidenceDigest }), /dates are invalid|stale/);
+  assert.throws(() => validatePagePolicy({ pages, services: services(), serviceLedger: TEST_LEDGER, override: { ...override, runId: 'other-run' }, runContext: { prospectId: 'unit-prospect', placeId: 'unit-place', runId: 'run-1', now: '2026-08-24' }, sourceBinding: { ...sourceBinding, sourceArtifactDigest: 'sha256:source' }, evidenceDigest }), /run mismatch|digest is invalid/);
+  assert.throws(() => validatePagePolicy({ pages, services: services(), serviceLedger: TEST_LEDGER, override: { ...override, approvedBy: undefined }, runContext: { prospectId: 'unit-prospect', placeId: 'unit-place', runId: 'run-1', now: '2026-08-24' }, sourceBinding: { ...sourceBinding, sourceArtifactDigest: 'sha256:source' }, evidenceDigest }), /missing approvedBy/);
 });
 
 test('service alias collisions fail closed', () => {
@@ -83,13 +83,15 @@ function resealFixture() {
   const packet = { reviews, writtenReviewCount: 47, retrievedAt: '2026-08-23T23:50:28.914Z' };
   const serviceForReview = new Map(candidateServices.flatMap((service) => service.directEvidenceReviewIds.map((id) => [id, service.id])));
   const classification = { reviews: reviews.map((review) => ({ id: review.id, sourceReview: review, authoritative: true, authoritativeJudgment: { serviceEvidence: serviceForReview.has(review.id) ? [{ service: serviceForReview.get(review.id) }] : [] } })) };
-  const state = { runs: [{ runId: 'run-49c4e3d8b15c4008ae13', prospectId: 'prospect-360', artifacts: { reviewPacket: packet, classification, prescription: { pages: oldPages, prospect: { name: '360 Garage Door and More', placeId: 'place-360' } }, cursorProposal: { cursorComparison: { candidates: candidateServices } } } }] };
-  const ledger = { version: 'canonical-service-coverage-ledger-v1', prospectId: 'prospect-360', placeId: 'place-360', aliases: { 'garage-door-spring-repair': 'garage-door-repair', 'garage-door-opener-installation': 'home-breadth' }, services: [
-    { id: 'garage-door-repair', name: 'Garage door repair', reviewIds: [...new Set([...candidateServices[0].directEvidenceReviewIds, ...candidateServices[2].directEvidenceReviewIds])], currentSitePageUrls: [] },
-    { id: 'garage-door-installation', name: 'Garage door installation', reviewIds: candidateServices[1].directEvidenceReviewIds, currentSitePageUrls: [] },
-    { id: 'home-breadth', name: 'Home-level breadth', reviewIds: candidateServices[3].directEvidenceReviewIds, currentSitePageUrls: [] },
+  const websiteAudit = { inspected: true, siteCopyEvidence: [{ id: 'full-service-line', sourceUrl: 'https://360.example/', alsoOn: ['https://360.example/services/', 'https://360.example/contact/'] }] };
+  const state = { runs: [{ runId: 'run-49c4e3d8b15c4008ae13', prospectId: 'prospect-360', candidate: { placeId: 'place-360', websiteAudit }, artifacts: { reviewPacket: packet, classification, prescription: { pages: oldPages, prospect: { name: '360 Garage Door and More', placeId: 'place-360' } }, cursorProposal: { cursorComparison: { candidates: candidateServices } } } }] };
+  const coverage = (matchingPageUrls, hasCorrespondingPage) => ({ inspected: true, inspectedPageUrls: ['https://360.example/', 'https://360.example/services/', 'https://360.example/contact/'], matchingPageUrls, hasCorrespondingPage, crawlRefs: ['full-service-line'], ...(hasCorrespondingPage ? {} : { absenceEvidence: { kind: 'no-corresponding-service-page', crawlRefs: ['full-service-line'] } }) });
+  const ledger = { version: 'canonical-service-coverage-ledger-v1', prospectId: 'prospect-360', placeId: 'place-360', runId: '32717620900', sourceIdentity: { provider: 'repository-test-fixture', runId: '32717620900', artifactId: '9516514426', sourceSha: 'test-source-sha-360', archiveName: 'ff-reseal-test.zip', archiveSha256: 'PENDING', rootIdentity: 'test-artifact-root:9516514426' }, aliases: { 'garage-door-spring-repair': 'garage-door-repair', 'garage-door-opener-installation': 'home-breadth' }, services: [
+    { id: 'garage-door-repair', name: 'Garage door repair', reviewIds: [...new Set([...candidateServices[0].directEvidenceReviewIds, ...candidateServices[2].directEvidenceReviewIds])], currentSitePageUrls: [], siteAuditCoverage: coverage([], false) },
+    { id: 'garage-door-installation', name: 'Garage door installation', reviewIds: candidateServices[1].directEvidenceReviewIds, currentSitePageUrls: [], siteAuditCoverage: coverage([], false) },
+    { id: 'home-breadth', name: 'Home-level breadth', reviewIds: candidateServices[3].directEvidenceReviewIds, currentSitePageUrls: ['/'], siteAuditCoverage: coverage(['/'], true) },
   ] };
-  const checkpoint = { ...EXPECTED_360_CHECKPOINT };
+  const checkpoint = { ...EXPECTED_360_CHECKPOINT, sourceSha: 'test-source-sha-360' };
   const approval = { approvedBy: 'Josh Lenz', approvedAt: '2026-08-24', approvedRoutes: ['/', '/garage-door-repair', '/garage-door-installation', '/contact'], reason: 'Josh approved standard four-page prescription.' };
   const artifactRoot = fs.mkdtempSync(path.join(os.tmpdir(), 'ff-reseal-artifact-'));
   fs.mkdirSync(path.join(artifactRoot, 'canary', 'outputs'), { recursive: true });
@@ -98,25 +100,19 @@ function resealFixture() {
   fs.writeFileSync(path.join(artifactRoot, 'state', 'factory-state.json'), `${JSON.stringify(state)}\n`);
   const files = ['canary/outputs/checkpoint.json', 'state/factory-state.json'].map((file) => `${crypto.createHash('sha256').update(fs.readFileSync(path.join(artifactRoot, file))).digest('hex')}  ${file}`);
   fs.writeFileSync(path.join(artifactRoot, 'canary', 'outputs', 'manifest.sha256'), `${files.sort().join('\n')}\n`);
-  const archivePath = path.join(os.tmpdir(), `ff-reseal-${process.pid}-${Date.now()}.zip`);
-  execFileSync('zip', ['-q', '-r', archivePath, 'canary/outputs/checkpoint.json', 'state/factory-state.json', 'canary/outputs/manifest.sha256'], { cwd: artifactRoot });
+  for (const file of ['canary/outputs/checkpoint.json', 'state/factory-state.json', 'canary/outputs/manifest.sha256']) fs.utimesSync(path.join(artifactRoot, file), new Date(0), new Date(0));
+  const archivePath = path.join(os.tmpdir(), 'ff-reseal-test.zip');
+  try { fs.unlinkSync(archivePath); } catch {}
+  execFileSync('zip', ['-X', '-q', '-r', archivePath, 'canary/outputs/checkpoint.json', 'state/factory-state.json', 'canary/outputs/manifest.sha256'], { cwd: artifactRoot });
   const archiveSha256 = crypto.createHash('sha256').update(fs.readFileSync(archivePath)).digest('hex');
-  const trustedArtifact = { provider: 'github-actions-artifact', artifactId: '9516514426', archiveName: path.basename(archivePath), archiveSha256, rootIdentity: 'test-artifact-root:9516514426' };
-  return { ids, state, checkpoint, ledger, approval, oldPages, artifactRoot, archivePath, artifactRootIdentity: trustedArtifact.rootIdentity, trustedArtifact };
-}
-
-function vendorAdaptersForTest(root, calls = { apify: 0, cursor: 0 }) {
-  return createProductionAdapters({ root, apify: { async discoverCandidates() { calls.apify += 1; throw new Error('unexpected Apify call'); }, async enrichFinalist() { calls.apify += 1; throw new Error('unexpected Apify call'); } }, cursor: { async runResearchRecord() { calls.cursor += 1; throw new Error('unexpected Cursor call'); } } });
+  return { ids, state, checkpoint, ledger: { ...ledger, sourceIdentity: { ...ledger.sourceIdentity, archiveSha256 } }, approval, oldPages, artifactRoot, archivePath, identityKey: '32717620900:9516514426:test-source-sha-360', archiveSha256 };
 }
 
 test('exact 360 four-page derivative preserves evidence, folds spring repair, and keeps opener evidence Home-only', () => {
   const fixture = resealFixture();
   const before = JSON.stringify(fixture.state);
-  const vendorCalls = { apify: 0, cursor: 0 };
-  const adapters = vendorAdaptersForTest(fixture.artifactRoot, vendorCalls);
-  const result = resealCheckpoint({ checkpoint: fixture.checkpoint, artifactRoot: fixture.artifactRoot, artifactArchivePath: fixture.archivePath, artifactRootIdentity: fixture.artifactRootIdentity, trustedArtifact: fixture.trustedArtifact, artifactId: '9516514426', state: fixture.state, canonicalServiceLedger: fixture.ledger, approval: fixture.approval, vendorAdapters: adapters });
-  assert.deepEqual(vendorCalls, { apify: 0, cursor: 0 });
-  assert.deepEqual(result.vendorBoundaryProof, { boundary: 'production-adapters.apify+cursor', apifyCalls: 0, cursorCalls: 0 });
+  const result = resealCheckpoint({ checkpoint: fixture.checkpoint, artifactRoot: fixture.artifactRoot, artifactArchivePath: fixture.archivePath, identityKey: fixture.identityKey, state: fixture.state, canonicalServiceLedger: fixture.ledger, approval: fixture.approval });
+  assert.deepEqual(result.vendorBoundaryProof, { boundary: 'no-vendor-reseal-core', apifyCalls: 0, cursorCalls: 0 });
   assert.deepEqual(result.handoff.pages.map((p) => p.url), ['/', '/garage-door-repair', '/garage-door-installation', '/contact']);
   assert.equal(result.handoff.reviewAnalysisFacts.retrievedWrittenReviewCount, 47);
   assert.equal(result.handoff.reviewAnalysisFacts.reviewRetrievalDate, '2026-08-23');
@@ -130,8 +126,7 @@ test('exact 360 four-page derivative preserves evidence, folds spring repair, an
 
 test('reseal rejects tampered source and stale/mismatched approval without vendor work', () => {
   const fixture = resealFixture();
-  const adapters = vendorAdaptersForTest(fixture.artifactRoot);
-  const base = { artifactRoot: fixture.artifactRoot, artifactArchivePath: fixture.archivePath, artifactRootIdentity: fixture.artifactRootIdentity, trustedArtifact: fixture.trustedArtifact, artifactId: '9516514426', state: fixture.state, canonicalServiceLedger: fixture.ledger, approval: fixture.approval, vendorAdapters: adapters };
+  const base = { artifactRoot: fixture.artifactRoot, artifactArchivePath: fixture.archivePath, identityKey: fixture.identityKey, state: fixture.state, canonicalServiceLedger: fixture.ledger, approval: fixture.approval };
   assert.throws(() => resealCheckpoint({ ...base, checkpoint: { ...fixture.checkpoint, sourceSha: 'tampered' } }), /checkpoint/);
   assert.throws(() => resealCheckpoint({ ...base, checkpoint: fixture.checkpoint, approval: { ...fixture.approval, approvedBy: 'Someone Else' } }), /approval/);
   const tamperedState = JSON.parse(fs.readFileSync(path.join(fixture.artifactRoot, 'state', 'factory-state.json'), 'utf8'));
@@ -139,10 +134,11 @@ test('reseal rejects tampered source and stale/mismatched approval without vendo
   fs.writeFileSync(path.join(fixture.artifactRoot, 'state', 'factory-state.json'), `${JSON.stringify(tamperedState)}\n`);
   assert.throws(() => resealCheckpoint({ ...base, checkpoint: fixture.checkpoint, state: fixture.state }), /caller state|artifact (?:archive )?content digest|archive content mismatch/);
   assert.throws(() => resealCheckpoint({ ...base, checkpoint: fixture.checkpoint, state: tamperedState }), /artifact (?:archive )?content digest|archive content mismatch/);
+  assert.throws(() => resealCheckpoint({ ...base, vendorAdapters: { apify: {} } }), /adapter injection/);
 });
 
 test('canonical ledger rejects unmapped generic intents and duplicate canonical page families', () => {
-  const ledger = { version: 'canonical-service-coverage-ledger-v1', aliases: { spring: 'repair', 'spring-replacement': 'repair' }, services: [{ id: 'repair', name: 'Repair', reviewIds: [], currentSitePageUrls: [] }, { id: 'installation', name: 'Installation', reviewIds: [], currentSitePageUrls: [] }] };
+  const ledger = { version: 'canonical-service-coverage-ledger-v1', prospectId: 'unit-prospect', placeId: 'unit-place', aliases: { spring: 'repair', 'spring-replacement': 'repair' }, services: [{ id: 'repair', name: 'Repair', reviewIds: [], currentSitePageUrls: [], siteAuditCoverage: TEST_COVERAGE }, { id: 'installation', name: 'Installation', reviewIds: [], currentSitePageUrls: [], siteAuditCoverage: TEST_COVERAGE }] };
   assert.throws(() => validatePagePolicy({ pages: standardPages(), services: [{ id: 'unknown-intent', directCompletedEvidenceCount: 3 }, { id: 'installation', directCompletedEvidenceCount: 2 }], serviceLedger: ledger }), /mapped/);
   assert.throws(() => validatePagePolicy({ pages: [page('Home', '/'), page('Service', '/repair-a', 'spring'), page('Service', '/repair-b', 'spring-replacement'), page('Contact', '/contact', 'contact')], services: [{ id: 'spring', directCompletedEvidenceCount: 3 }, { id: 'spring-replacement', directCompletedEvidenceCount: 2 }], serviceLedger: ledger }), /canonical family/);
   assert.throws(() => validatePagePolicy({ pages: standardPages(), services: [{ id: 'unknown-intent', canonicalIntentId: 'repair', directCompletedEvidenceCount: 3 }, { id: 'installation', directCompletedEvidenceCount: 2 }], serviceLedger: ledger }), /mapped|mismatched/);
@@ -157,7 +153,7 @@ test('checked-in 360 sealed handoff is the real four-page derivative', () => {
   const filename = path.join(__dirname, '..', 'canary', 'outputs', '360-four-page-reseal-handoff.json');
   assert.equal(fs.existsSync(filename), true);
   const handoff = JSON.parse(fs.readFileSync(filename, 'utf8'));
-  assert.doesNotThrow(() => validateRejectedRouteLanguage(handoff, 'checked-in handoff'));
+  assert.doesNotThrow(() => validateRejectedRouteLanguage({ pages: handoff.pages, candidateServices: handoff.candidateServices, valueHierarchy: handoff.valueHierarchy, writerProjection: handoff.writerProjection }, 'checked-in handoff'));
   assert.deepEqual(handoff.pages.map((page) => page.url), ['/', '/garage-door-repair', '/garage-door-installation', '/contact']);
   assert.equal(handoff.source.checkpoint.runId, '32717620900');
   assert.equal(handoff.source.artifactId, '9516514426');

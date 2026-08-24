@@ -118,13 +118,17 @@ function canonicalizeServiceCandidates(services, ledger = null) {
   });
 }
 
-function validateCompleteCanonicalLedger(ledger, { services = [], pages = [] } = {}) {
+function validateCompleteCanonicalLedger(ledger, { services = [], pages = [], identity = {} } = {}) {
   if (!ledger || ledger.version !== 'canonical-service-coverage-ledger-v1') throw new Error('complete canonical service ledger is required in production');
   if (!ledger.prospectId && !ledger.placeId) throw new Error('canonical service ledger is missing prospect identity');
+  if (identity.prospectId != null && String(ledger.prospectId) !== String(identity.prospectId)) throw new Error('canonical service ledger prospect identity mismatch');
+  if (identity.placeId != null && String(ledger.placeId) !== String(identity.placeId)) throw new Error('canonical service ledger place identity mismatch');
+  if (identity.runId != null && String(ledger.runId) !== String(identity.runId)) throw new Error('canonical service ledger run identity mismatch');
+  if (identity.sourceIdentity && JSON.stringify(canonical(ledger.sourceIdentity || {})) !== JSON.stringify(canonical(identity.sourceIdentity))) throw new Error('canonical service ledger source identity mismatch');
   if (!Array.isArray(ledger.services) || !ledger.services.length) throw new Error('canonical service ledger is incomplete');
   const { entries } = ledgerMaps(ledger);
   for (const service of ledger.services) {
-    if (normalizeServiceKey(service.id) !== service.id || !service.name || !Array.isArray(service.reviewIds) || !Array.isArray(service.currentSitePageUrls)) throw new Error(`canonical service ledger entry is incomplete: ${service.id || '<missing>'}`);
+    if (normalizeServiceKey(service.id) !== service.id || !service.name || !Array.isArray(service.reviewIds) || !Array.isArray(service.currentSitePageUrls) || (identity.requireSiteAuditCoverage && !service.siteAuditCoverage)) throw new Error(`canonical service ledger entry is incomplete: ${service.id || '<missing>'}`);
   }
   for (const candidate of services || []) canonicalServiceId(serviceIdentity(candidate), ledger, { allowImplicit: false });
   for (const page of pages || []) if (page.type === 'Service') canonicalServiceId(page.service, ledger, { allowImplicit: false });
@@ -209,8 +213,10 @@ function validateExpansionOverride(override, { pages, policy, runContext = {}, s
 
 function validatePagePolicy({ pages, services, serviceLedger = null, policy = STANDARD_PRESCRIPTION_POLICY, override = null, runContext = {}, sourceBinding = {}, evidenceDigest = null } = {}) {
   if (!Array.isArray(pages)) throw new Error('prescription pages must be an array');
+  if (!serviceLedger) throw new Error('canonical service ledger is required at the page-policy boundary');
   if (!isExactStandardPolicy(policy)) throw new Error('standard prescription policy object was altered');
   if (pages.some((page) => page.type === 'Strategy Overview' || page.type === 'Strategy')) throw new Error('Strategy Overview is not a business page and must not be in prescription.pages');
+  validateCompleteCanonicalLedger(serviceLedger, { services, pages, identity: { prospectId: runContext.prospectId, placeId: runContext.placeId, runId: runContext.runId, sourceIdentity: sourceBinding.sourceIdentity } });
   const normalizedPages = canonicalizePageServices(pages, serviceLedger);
   const home = normalizedPages.filter((page) => page.type === 'Home' && routePath(page.url) === '/');
   const contact = normalizedPages.filter((page) => page.type === 'Contact' && routePath(page.url) === '/contact');
