@@ -78,7 +78,7 @@ for (const fixture of [richFixture, thinFixture, negativeFixture, syntheticGarag
 
 {
   const invalid = clone(richFixture);
-  invalid.prospect.destinations.homepage.url = "https://northline.example/";
+  invalid.prospect.destinations.homepage.url = "https://northline.example/home";
   assert.ok(errorCodes(invalid).includes("ROUTING_BOUNDARY"));
 }
 
