@@ -1,3 +1,5 @@
+const { STANDARD_PRESCRIPTION_POLICY, validatePagePolicy, assertNoServiceAliasCollisions, serviceIdentity, digest } = require('./prescription-policy');
+
 function normalizeClassification(classification) {
   if (!classification || !Array.isArray(classification.reviews)) throw new Error('authoritative review classification is required');
   if (classification.reviews.some((entry) => entry.authoritative !== true)) throw new Error('Prescription requires authoritative judgment for every written review');
@@ -61,6 +63,7 @@ function validateCollisions(pages) {
 }
 
 function compareServices(services, classified, pages = []) {
+  assertNoServiceAliasCollisions(services || []);
   const compared = (services || []).map((service) => {
     const id = serviceTerm(service.id || service.name || service.slug || '');
     const evidence = classified.filter((r) => (r.judgment?.services || []).some((s) => serviceTerm(s) === id) || serviceTerm(r.judgment?.service) === id);
@@ -74,7 +77,7 @@ function compareServices(services, classified, pages = []) {
 
 const REQUIRED_PAGE_FIELDS = ['url', 'primaryKeyword', 'titleDirection', 'h1Direction', 'angle', 'whyIncluded', 'overlapBoundaries', 'claims', 'traps'];
 
-function validateProposedPages(pages, classified) {
+function validateProposedPages(pages, classified, services = [], options = {}) {
   if (!Array.isArray(pages) || !pages.length) throw new Error('Architect must supply explicit proposed pages');
   const errors = [];
   for (const page of pages) {
@@ -88,19 +91,29 @@ function validateProposedPages(pages, classified) {
   }
   const collision = validateCollisions(pages);
   if (!collision.valid) errors.push(...collision.errors);
-  return { errors, collision };
+  let policy = null;
+  try {
+    policy = validatePagePolicy({ pages, services, policy: options.policy || STANDARD_PRESCRIPTION_POLICY, override: options.override || null, runContext: options.runContext || {}, sourceBinding: options.sourceBinding || {} });
+  } catch (error) {
+    errors.push(error.message);
+  }
+  return { errors, collision, policy };
 }
 
-function prescribe({ finalist, inventory, classification, services, proposedPages, architectReview }) {
+function prescribe({ finalist, inventory, classification, services, proposedPages, architectReview, policy, override, runContext, sourceBinding }) {
   if (!inventory && !classification) throw new Error('Cannot prescribe from discovery-sample-only reviews');
   if (classification) inventory = normalizeClassification(classification);
   if (inventory.discoverySampleOnly || !inventory.classified) throw new Error('Cannot prescribe from discovery-sample-only reviews');
   if (!inventory.authoritativeJudgmentCount) throw new Error('Cannot prescribe before authoritative review judgment');
   const pages = (proposedPages || []).map((page) => ({ ...page }));
-  const pageCheck = validateProposedPages(pages, inventory.classified);
-  if (pageCheck.errors.length) throw new Error(`Prescription validation failed: ${pageCheck.errors.join('; ')}`);
   const valueHierarchy = compareServices(services, inventory.classified, pages);
-  return { version: 'page-prescription-v1', prospect: { placeId: finalist.placeId, name: finalist.name, location: finalist.location, website: finalist.website }, pages, valueHierarchy, architectReview: architectReview || null, collisionValidation: pageCheck.collision, status: 'prescribed', generatedAt: new Date().toISOString() };
+  const pageCheck = validateProposedPages(pages, inventory.classified, valueHierarchy, { policy, override, runContext, sourceBinding });
+  if (pageCheck.errors.length) throw new Error(`Prescription validation failed: ${pageCheck.errors.join('; ')}`);
+  const selected = new Set((pageCheck.policy?.selectedServiceIds || []).map((id) => serviceTerm(id)));
+  const normalizedHierarchy = valueHierarchy.map((entry) => ({ ...entry, includedPage: selected.has(serviceTerm(serviceIdentity(entry))), passedOverReason: selected.has(serviceTerm(serviceIdentity(entry))) ? null : (entry.passedOverReason || 'Evidence preserved; not selected for a business-page destination under the active page policy.') }));
+  const prescription = { version: 'page-prescription-v1', prospect: { placeId: finalist.placeId, name: finalist.name, location: finalist.location, website: finalist.website }, pages, valueHierarchy: normalizedHierarchy, architectReview: architectReview || null, collisionValidation: pageCheck.collision, pagePolicy: pageCheck.policy.policy, expansionOverride: pageCheck.policy.override, selectedServiceIds: pageCheck.policy.selectedServiceIds, status: 'prescribed', generatedAt: new Date().toISOString() };
+  prescription.prescriptionDigest = digest({ ...prescription, prescriptionDigest: undefined });
+  return prescription;
 }
 
 module.exports = { normalizeClassification, serviceTerm, chooseRecommendation, validateCollisions, compareServices, validateProposedPages, prescribe };

@@ -1,0 +1,90 @@
+{
+  "version": "canonical-service-coverage-ledger-v1",
+  "prospectId": "prospect-32cd5e266a718b3eee2e",
+  "placeId": "ChIJHa32AOi84YMR38BV93YKiS8",
+  "aliases": {
+    "garage-door-spring-replacement": "garage-door-repair",
+    "garage-door-spring-repair": "garage-door-repair",
+    "garage-door-maintenance": "garage-door-repair",
+    "garage-door-service-repair": "garage-door-repair",
+    "garage-door-wiring-repair": "garage-door-repair",
+    "garage-door-track-and-roller-service": "garage-door-repair",
+    "garage-door-seal": "garage-door-repair",
+    "garage-door-diagnostics": "garage-door-repair",
+    "garage-door-lubrication": "garage-door-repair",
+    "garage-door-adjustment": "garage-door-repair",
+    "garage-door-replacement": "garage-door-installation",
+    "garage-door-opener-installation": "home-breadth",
+    "garage-door-opener-replacement": "home-breadth",
+    "garage-door-opener": "home-breadth",
+    "garage-door-keypad-installation": "home-breadth",
+    "outdoor-pad-update": "home-breadth",
+    "garage-door-opener-remote": "home-breadth",
+    "post-install-follow-up": "home-breadth",
+    "app-setup": "home-breadth",
+    "phone-support": "home-breadth",
+    "garage-door": "home-breadth"
+  },
+  "services": [
+    {
+      "id": "garage-door-repair",
+      "name": "Garage door repair",
+      "reviewIds": [
+        "Ci9DQUlRQUNvZENodHljRjlvT2t4alNtbDBaVVV4VVRselpIQTJhakpOYURSeE1HYxAB",
+        "Ci9DQUlRQUNvZENodHljRjlvT25OS09FRkhPRkptVVhoclIwdzRORVp6VTB0R1VIYxAB",
+        "Ci9DQUlRQUNvZENodHljRjlvT2xVMWQxVlRXalppVmxoU1NHcG9hUzFtV2pSVmRIYxAB",
+        "Ci9DQUlRQUNvZENodHljRjlvT201TVdWZGZSak00ZUhSQ2VVdHNYMWxFYTBFdE9XYxAB",
+        "Ci9DQUlRQUNvZENodHljRjlvT2xSSU1YVXhWMDVDZWtWMVZtTm5SbGhHTld4amVGRRAB",
+        "Ci9DQUlRQUNvZENodHljRjlvT25oaE9HeFNXVUUyUmt0VlowSkJPVWRCWmpSTVZYYxAB",
+        "Ci9DQUlRQUNvZENodHljRjlvT2xoRE1HZ3lUMWRpVWt3d1dsVXhjVE5XZEc1VWVuYxAB",
+        "Ci9DQUlRQUNvZENodHljRjlvT2t0T04xVlBSMU5oUmprMU9TMXNibmx6WjJ0cldHYxAB",
+        "Ci9DQUlRQUNvZENodHljRjlvT2xSWWMycFZlV3AxTldKcFpVZGxTalpGTUZSV1drRRAB",
+        "Ci9DQUlRQUNvZENodHljRjlvT21STGNXUk1jMEZ1TmtsYVoyWlhTbEk1TjFsWWRHYxAB",
+        "ChdDSUhNMG9nS0VQcUM5dGpxNjRxcHJBRRAB",
+        "ChZDSUhNMG9nS0VLeTZocG5jME9qc0t3EAE",
+        "ChZDSUhNMG9nS0VQR2ZxNUc5cjZhckdREAE",
+        "ChdDSUhNMG9nS0VJQ0FnTUNZNkplRm5BRRAB",
+        "ChdDSUhNMG9nS0VJQ0FnSURmNlBfbXhBRRAB",
+        "ChZDSUhNMG9nS0VJQ0FnSUR2cmFTZE93EAE",
+        "ChdDSUhNMG9nS0VJQ0FnSURQZ2RtWDFnRRAB",
+        "Ci9DQUlRQUNvZENodHljRjlvT2tRMVoybGhYM1JWUldwb2JVNXNXbFozWDBaMVNIYxAB",
+        "Ci9DQUlRQUNvZENodHljRjlvT2taQlh6VlZabU5OWjFKc2JISklTa1pXUlVwVGVuYxAB",
+        "Ci9DQUlRQUNvZENodHljRjlvT2xkeFNsRnBOMll0V2pGblFsQXljR0pIV0ZreE5VRRAB",
+        "ChdDSUhNMG9nS0VJQ0FnTUNBbnNUOXB3RRAB",
+        "ChdDSUhNMG9nS0VJQ0FnTUNBZ082YzBRRRAB",
+        "Ci9DQUlRQUNvZENodHljRjlvT2psMlVHOVhVMDVrTFhwUlpWbDZjSFZUUjFKQlgwRRAB",
+        "Ci9DQUlRQUNvZENodHljRjlvT2xSSU1YVXhWMDVDZWtWMVZtTm5SbGhHTld4amVGRRAB",
+        "ChdDSUhNMG9nS0VJQ0FnSURQZ2RtWDFnRRAB",
+        "ChZDSUhNMG9nS0VJQ0FnSURQZ2NEbVJnEAE"
+      ],
+      "currentSitePageUrls": [],
+      "provenance": { "source": "360 checkpoint cursorComparison plus explicit site audit", "siteAuditUrls": ["/", "/services/", "/contact/"] }
+    },
+    {
+      "id": "garage-door-installation",
+      "name": "Garage door installation",
+      "reviewIds": [
+        "Ci9DQUlRQUNvZENodHljRjlvT2pBMU5rSktSMmhHV1RKb2NVdE1TVXBOVFRsS01YYxAB",
+        "Ci9DQUlRQUNvZENodHljRjlvT2xjeVFtOTRMV3BTTUc1Qk5VeFNhVTlJYW1GcFMwRRAB",
+        "Ci9DQUlRQUNvZENodHljRjlvT25jM2NVNTZlVzF0YVhCNVdXSlVZVEpmYW05UExYYxAB",
+        "Ci9DQUlRQUNvZENodHljRjlvT25JelNERXdhRFpIV0hscFUxOUxkakZtYzFaMWFXYxAB",
+        "ChZDSUhNMG9nS0VJNng0b1B1N3NEY0ZBEAE",
+        "Ci9DQUlRQUNvZENodHljRjlvT2xWdlZGQk9hMjFOUlhaVk5rczFVR2RKTlVKWlVGRRAB"
+      ],
+      "currentSitePageUrls": [],
+      "provenance": { "source": "360 checkpoint cursorComparison plus explicit site audit", "siteAuditUrls": ["/", "/services/", "/contact/"] }
+    },
+    {
+      "id": "home-breadth",
+      "name": "Home-level breadth",
+      "reviewIds": [
+        "Ci9DQUlRQUNvZENodHljRjlvT25OS09FRkhPRkptVVhoclIwdzRORVp6VTB0R1VIYxAB",
+        "ChZDSUhNMG9nS0VJQ0FnTUR3OW82cFpBEAE",
+        "ChdDSUhNMG9nS0VJQ0FnSUNQN2FDS19BRRAB",
+        "ChZDSUhNMG9nS0VJQ0FnSURQZ2NEbVJnEAE"
+      ],
+      "currentSitePageUrls": ["/"],
+      "provenance": { "source": "explicit Home-level breadth mapping; not a service destination" }
+    }
+  ]
+}

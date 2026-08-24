@@ -53,6 +53,7 @@ test('only the selected finalist reaches the injected deep-enrichment adapter', 
 const proposedPages = [
   { type: 'Home', service: 'home', url: '/', primaryKeyword: 'electrician dallas', titleDirection: 'RLB Electric | Dallas electrical work', h1Direction: 'Electrical work grounded in real customer jobs', angle: 'Lead with proof-backed local electrical work.', whyIncluded: 'Required entry page and strongest overall opportunity.', strongestEvidence: 'allen', overlapBoundaries: 'Keep service specifics on service pages.', claims: [], traps: [], recommendedFirstReview: { reviewId: 'allen', reviewer: 'Allen Schaefer', rating: 5, date: '2025-01-01', exactText: 'Installed my NEMA 15-50 EV charging outlet.', why: 'Direct EV installation account.' } },
   { type: 'Service', service: 'ev-charging', url: '/ev-charging', primaryKeyword: 'EV charger installation Dallas', titleDirection: 'EV Charger Installation in Dallas', h1Direction: 'EV charging installed for the way you park', angle: 'Turn buried EV proof into a clear considered-purchase page.', whyIncluded: 'Owned flyer and direct NEMA 15-50 installation review.', strongestEvidence: 'allen', overlapBoundaries: 'Do not duplicate general repair troubleshooting.', claims: [], traps: [], recommendedFirstReview: { reviewId: 'allen', reviewer: 'Allen Schaefer', rating: 5, date: '2025-01-01', exactText: 'Installed my NEMA 15-50 EV charging outlet.', why: 'Direct completed EV charging installation.' } },
+  { type: 'Service', service: 'electrical-repair', url: '/electrical-repair', primaryKeyword: 'electrical repair Dallas', titleDirection: 'Electrical Repair in Dallas', h1Direction: 'Electrical repair grounded in completed work', angle: 'Make the second direct service proof easy to find.', whyIncluded: 'Direct circuit and outlet repair review.', strongestEvidence: 'anthony', overlapBoundaries: 'Do not duplicate EV charging.', claims: [], traps: [], recommendedFirstReview: { reviewId: 'anthony', reviewer: "Anthony O'Bryan", rating: 5, date: '2025-02-01', exactText: 'Troubleshot our circuit and outlet repair.', why: 'Direct completed electrical repair.' } },
   { type: 'Contact', service: 'contact', url: '/contact', primaryKeyword: 'contact RLB Electric', titleDirection: 'Contact RLB Electric', h1Direction: 'Talk with RLB Electric', angle: 'Give ready prospects a clear next step.', whyIncluded: 'Required conversion page.', strongestEvidence: null, overlapBoundaries: 'No service claims here.', claims: [], traps: [], recommendedFirstReview: null }
 ];
 
@@ -61,7 +62,7 @@ test('prescription consumes explicit Architect pages, compares every service inc
   const prescription = prescribe({ finalist: { ...candidates[0], architectQualified: true }, classification, services: [
     { id: 'ev-charging', name: 'EV charging' }, { id: 'electrical-repair', name: 'Electrical repair' }, { id: 'panel-upgrade', name: 'Panel upgrade', passedOverReason: 'No authoritative direct anchor.' }
   ], proposedPages });
-  assert.equal(prescription.pages.length, 3); assert.equal(prescription.valueHierarchy.length, 3); assert.equal(prescription.valueHierarchy.find((s) => s.id === 'ev-charging').directCompletedEvidenceCount, 1);
+  assert.equal(prescription.pages.length, 4); assert.equal(prescription.valueHierarchy.length, 3); assert.equal(prescription.valueHierarchy.find((s) => s.id === 'ev-charging').directCompletedEvidenceCount, 1);
   assert.match(prescription.valueHierarchy.find((s) => s.id === 'panel-upgrade').passedOverReason, /No authoritative/);
   assert.equal(prescription.pages.find((p) => p.type === 'Contact').recommendedFirstReview, null);
 });
@@ -99,7 +100,7 @@ test('recommended review metadata is resolved from authoritative evidence and ex
       date: '1999-01-01',
     },
   };
-  const result = prescribe({ finalist, classification, services: [{ id: 'ev-charging', name: 'EV charging' }], proposedPages: supplied });
+  const result = prescribe({ finalist, classification, services: [{ id: 'ev-charging', name: 'EV charging' }, { id: 'electrical-repair', name: 'Electrical repair' }], proposedPages: supplied });
   const recommendation = result.pages.find((page) => page.service === 'ev-charging').recommendedFirstReview;
   assert.equal(recommendation.reviewer, 'Allen Schaefer');
   assert.equal(recommendation.rating, 5);
@@ -107,5 +108,5 @@ test('recommended review metadata is resolved from authoritative evidence and ex
 
   const drifted = proposedPages.map((page) => ({ ...page }));
   drifted[1] = { ...drifted[1], recommendedFirstReview: { ...drifted[1].recommendedFirstReview, exactText: 'A claim that is not in the review.' } };
-  assert.throws(() => prescribe({ finalist, classification, services: [{ id: 'ev-charging', name: 'EV charging' }], proposedPages: drifted }), /excerpt does not match/);
+  assert.throws(() => prescribe({ finalist, classification, services: [{ id: 'ev-charging', name: 'EV charging' }, { id: 'electrical-repair', name: 'Electrical repair' }], proposedPages: drifted }), /excerpt does not match/);
 });

@@ -20,8 +20,8 @@ function cursorDouble() {
     async runResearchRecord({ kind, jobId, input }) {
       calls.push({ kind, jobId, input });
       if (kind === 'website-audit') return { receipt: { provider: 'cursor-sdk', jobId, status: 'completed', resolvedModel: 'grok-4.6' }, result: { kind, website: input.website, opportunity: 'opp-1', evidence: [{ type: 'copy', id: 'copy-1', text: 'Licensed electrical services.' }], images: [{ url: 'https://example.test/service.png', kind: 'service-graphic' }] } };
-      if (kind === 'review-judgment') return { receipt: { provider: 'cursor-sdk', jobId, status: 'completed', resolvedModel: 'grok-4.6', runId: 'run-review-1' }, result: { kind, reviewId: input.review.id, authoritative: true, decision: 'anchor', directCompletedService: true, serviceEvidence: [{ service: 'ev-charging', excerpt: input.review.text }], availabilityEvidence: [], provenance: { source: input.review.source, reviewId: input.review.id } } };
-      return { receipt: { provider: 'cursor-sdk', jobId, status: 'completed', resolvedModel: 'grok-4.6', runId: 'run-page-1' }, result: { kind, pages: [page()], comparison: { candidates: [{ id: 'ev-charging', name: 'EV Charging' }] } } };
+      if (kind === 'review-judgment') { const service = input.review.id === 'r2' ? 'panel-upgrade' : 'ev-charging'; return { receipt: { provider: 'cursor-sdk', jobId, status: 'completed', resolvedModel: 'grok-4.6', runId: 'run-review-1' }, result: { kind, reviewId: input.review.id, authoritative: true, decision: 'anchor', directCompletedService: true, serviceEvidence: [{ service, excerpt: input.review.text }], availabilityEvidence: [], provenance: { source: input.review.source, reviewId: input.review.id } } }; }
+      return { receipt: { provider: 'cursor-sdk', jobId, status: 'completed', resolvedModel: 'grok-4.6', runId: 'run-page-1' }, result: { kind, pages: fullPages(), comparison: { candidates: [{ id: 'ev-charging', name: 'EV Charging' }, { id: 'panel-upgrade', name: 'Panel upgrade' }] } } };
     },
   };
 }
@@ -33,6 +33,15 @@ function page() {
     whyIncluded: 'A written review documents completed EV charging work.', overlapBoundaries: 'Do not overlap with general electrical repair.',
     claims: ['Completed EV charging installation evidence'], traps: [], strongestEvidence: 'r1',
   };
+}
+
+function fullPages() {
+  return [
+    { type: 'Home', service: 'home', url: '/', primaryKeyword: 'electrician', titleDirection: 'One Electric', h1Direction: 'Electrical work grounded in evidence', angle: 'Lead with verified work.', whyIncluded: 'Required home page.', overlapBoundaries: 'Keep service specifics on service pages.', claims: [], traps: [], strongestEvidence: null, recommendedFirstReview: null },
+    page(),
+    { ...page(), service: 'panel-upgrade', url: '/panel-upgrade', primaryKeyword: 'panel upgrade electrician', titleDirection: 'Panel Upgrade', h1Direction: 'Panel upgrades grounded in evidence', strongestEvidence: null },
+    { type: 'Contact', service: 'contact', url: '/contact', primaryKeyword: 'contact electrician', titleDirection: 'Contact One Electric', h1Direction: 'Talk with One Electric', angle: 'Give ready prospects a next step.', whyIncluded: 'Required contact page.', overlapBoundaries: 'No service claims.', claims: [], traps: [], strongestEvidence: null, recommendedFirstReview: null },
+  ];
 }
 
 test('production composition maps Apify GBP basics, audits owned website, and persists normalized receipts', async () => {
@@ -100,13 +109,15 @@ test('review judgment is authoritative, receipt-bound, and feeds validated evide
   const cursor = cursorDouble();
   const adapters = createProductionAdapters({ root, apify: { async discoverCandidates() { return { candidates: [] }; }, async enrichFinalist() { throw new Error('not used'); } }, cursor });
   const review = { id: 'r1', source: 'apify-finalist', author: 'A', rating: 5, date: '2026-01-01', text: 'Installed my EV charger.' };
+  const review2 = { id: 'r2', source: 'apify-finalist', author: 'B', rating: 5, date: '2026-01-02', text: 'Repaired my panel.' };
   const finalist = { placeId: 'p1', mapsUrl: 'https://www.google.com/maps/place/One', name: 'One Electric', location: 'Austin, TX', website: 'https://one.example', websiteAudit: { opportunity: 'opp-1', graphicsInspection: { status: 'inspected', findings: [] } }, architectQualified: true, disposition: { status: 'selected-finalist' } };
   const judgment = await adapters.reviewJudge.judge({ review, finalist });
+  const judgment2 = await adapters.reviewJudge.judge({ review: review2, finalist });
   assert.equal(judgment.authoritative, true);
   assert.equal(judgment.provenance.reviewId, 'r1');
-  const prescription = await adapters.prescriber.prescribe({ finalist, inventory: { exactPlace: true, discoverySampleOnly: false, dateWindow: null, requestedLimit: 50, listingReviewCount: 1, reviews: [review], classifications: { r1: judgment } }, decision: { candidateServices: [{ id: 'ev-charging', name: 'EV Charging' }], pages: [page()], whyBuilt: { text: 'The owned site shows an opportunity. A customer review documents completed EV charging work.', refs: [{ type: 'opportunity', id: 'opp-1' }, { type: 'review', id: 'r1' }] } } });
+  const prescription = await adapters.prescriber.prescribe({ finalist, inventory: { exactPlace: true, discoverySampleOnly: false, dateWindow: null, requestedLimit: 50, listingReviewCount: 2, reviews: [review, review2], classifications: { r1: judgment, r2: judgment2 } }, decision: { candidateServices: [{ id: 'ev-charging', name: 'EV Charging' }, { id: 'panel-upgrade', name: 'Panel Upgrade' }], pages: fullPages(), whyBuilt: { text: 'The owned site shows an opportunity. A customer review documents completed EV charging work.', refs: [{ type: 'opportunity', id: 'opp-1' }, { type: 'review', id: 'r1' }] } } });
   assert.equal(prescription.status, 'prescribed');
-  assert.equal(prescription.evidence.authoritativeAnchorCount, 1);
+  assert.equal(prescription.evidence.authoritativeAnchorCount, 2);
   assert.equal(prescription.valueHierarchy[0].includedPage, true);
 });
 
@@ -128,7 +139,7 @@ test('production Gate 1 preserves an evidence-derived availability pattern', asy
   const finalist = { placeId: 'p1', name: 'One Electric', location: 'Austin, TX', architectQualified: true, disposition: { status: 'selected-finalist' }, duplicate: { status: 'unique' }, websiteAudit: { opportunity: 'opp-1', graphicsInspection: { status: 'inspected', findings: [] } } };
   const review = { id: 'r1', source: 'apify-finalist', author: 'A', rating: 5, date: '2026-01-01', text: 'Installed my EV charger.' };
   const classifications = { r1: { authoritative: true, decision: 'anchor', directCompletedService: true } };
-  const prescription = { pages: [{ ...page(), claims: ['24/7 emergency service'], recommendedFirstReview: { reviewId: 'r1', reviewer: 'A', why: 'Direct completed work.' } }], valueHierarchy: [{ id: 'ev-charging', includedPage: true, passedOverReason: null }], collisionValidation: { valid: true }, evidence: { availabilityPattern: { label: '24/7 emergency pattern', reviewIds: ['r1'] } } };
+  const prescription = { pages: fullPages().map((entry, index) => index === 1 ? { ...entry, claims: ['24/7 emergency service'], recommendedFirstReview: { reviewId: 'r1', reviewer: 'A', why: 'Direct completed work.' } } : entry), valueHierarchy: [{ id: 'ev-charging', includedPage: true, passedOverReason: null }, { id: 'panel-upgrade', includedPage: true, passedOverReason: null }], pagePolicy: { mode: 'standard', allowedServicePageCount: 2 }, collisionValidation: { valid: true }, evidence: { availabilityPattern: { label: '24/7 emergency pattern', reviewIds: ['r1'] } } };
   const inventory = { exactPlace: true, discoverySampleOnly: false, dateWindow: null, requestedLimit: 50, enrichmentStatus: 'sufficient', listingReviewCount: 1, retrievedReviewCount: 1, writtenReviewCount: 1, reviews: [review] };
   const whyBuilt = { text: 'The owned site shows an opportunity. A customer review documents completed EV charging work.', refs: [{ type: 'opportunity', id: 'opp-1' }, { type: 'review', id: 'r1' }] };
   const result = await adapters.gate1.render({ finalist, inventory, classifications, prescription, whyBuilt });
@@ -139,7 +150,7 @@ test('composed adapters drive the orchestrator through explicit Architect decisi
   const root = setup();
   const apify = {
     async discoverCandidates() { return { candidates: [{ placeId: 'p1', mapsUrl: 'https://www.google.com/maps/place/One', name: 'One Electric', address: 'Austin, TX', website: 'https://one.example', listingReviewCount: 1, writtenReviews: [], emptyTextReviews: [] }] }; },
-    async enrichFinalist() { return { listingReviewCount: 1, reviews: [{ id: 'r1', source: 'apify-finalist', author: 'A', rating: 5, date: '2026-01-01', text: 'Installed my EV charger.' }], emptyTextReviews: [], provenance: { run: { runId: 'e1' } } }; },
+    async enrichFinalist() { return { listingReviewCount: 2, reviews: [{ id: 'r1', source: 'apify-finalist', author: 'A', rating: 5, date: '2026-01-01', text: 'Installed my EV charger.' }, { id: 'r2', source: 'apify-finalist', author: 'B', rating: 5, date: '2026-01-02', text: 'Repaired my panel.' }], emptyTextReviews: [], provenance: { run: { runId: 'e1' } } }; },
   };
   const adapters = createProductionAdapters({ root, config: { productionCapacity: 1, maxDiscoveryCandidates: 7 }, apify, cursor: cursorDouble() });
   const config = { productionCapacity: 1, maxDiscoveryCandidates: 7 };

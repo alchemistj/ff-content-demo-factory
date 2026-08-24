@@ -139,7 +139,7 @@ function buildValidatedPrescription({ run, classification, proposal }) {
   if (!Array.isArray(pages) || !pages.length) throw new Error('Cursor proposal must include explicit pages');
   if (!Array.isArray(services)) throw new Error('Cursor proposal must include candidate services');
   const evidence = buildPrescriptionEvidence({ classification, pages, candidateServices: services });
-  const prescription = prescribe({ finalist: run.candidate, classification, services, proposedPages: pages });
+  const prescription = prescribe({ finalist: run.candidate, classification, services, proposedPages: pages, policy: proposal.pagePolicy, override: proposal.expansionOverride || proposal.expansionApproval, runContext: { prospectId: run.prospectId, runId: run.runId }, sourceBinding: proposal.sourceCheckpoint || proposal.sourceBinding });
   prescription.evidence = evidence;
   return prescription;
 }

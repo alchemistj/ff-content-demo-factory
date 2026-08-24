@@ -37,6 +37,9 @@ function architectQa({ finalist, inventory, prescription, whyBuilt, laterStageAr
   const retrievedCount = inventory?.retrievedReviewCount ?? ((inventory?.writtenReviewCount || 0) + (inventory?.emptyTextReviewCount || inventory?.emptyReviewCount || 0));
   const enrichmentSufficient = Boolean(inventory && inventory.exactPlace === true && inventory.discoverySampleOnly !== true && inventory.dateWindow === null && inventory.requestedLimit === 50 && inventory.enrichmentStatus === 'sufficient' && (listingCount < 25 ? retrievedCount >= listingCount : (inventory.writtenReviewCount >= 25 || retrievedCount >= Math.min(50, listingCount))));
   const checks = {
+    pagePolicy: prescription?.pagePolicy?.mode === 'expanded-one-off'
+      ? pages.length === Number(prescription.pagePolicy.allowedServicePageCount) + 2 && pages.filter((page) => page.type === 'Service').length === Number(prescription.pagePolicy.allowedServicePageCount)
+      : pages.length === 4 && pages.filter((page) => page.type === 'Home' && page.url === '/').length === 1 && pages.filter((page) => page.type === 'Contact' && page.url === '/contact').length === 1 && pages.filter((page) => page.type === 'Service').length === 2,
     qualified: Boolean(finalist?.architectQualified && finalist?.disposition?.status === 'selected-finalist'),
     exactGbpIdentity: Boolean(finalist?.gbp?.placeId || finalist?.placeId) && Boolean(finalist?.gbp?.name || finalist?.name) && Boolean(finalist?.gbp?.location || finalist?.location),
     truthfulFullEnrichment: enrichmentSufficient,

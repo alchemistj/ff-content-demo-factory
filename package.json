@@ -5,7 +5,8 @@
   "type": "commonjs",
   "scripts": {
     "test": "node --test",
-    "run-one": "node src/run-one.js"
+    "run-one": "node src/run-one.js",
+    "reseal-checkpoint": "node scripts/reseal-checkpoint.js"
   },
   "engines": { "node": ">=22.13.0" },
   "dependencies": { "@cursor/sdk": "^1.0.24" }

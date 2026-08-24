@@ -281,7 +281,7 @@ function createProductionAdapters({
       const services = decision.candidateServices || candidateServicesFrom(modelResult.comparison);
       if (!Array.isArray(pages) || !pages.length) throw new Error('Page prescription requires explicit validated pages');
       if (!Array.isArray(services) || !services.length) throw new Error('Page prescription requires a complete candidate service comparison');
-      const validated = validatePrescription({ finalist, classification, services, proposedPages: pages, architectReview: decision.architectReview || decision });
+      const validated = validatePrescription({ finalist, classification, services, proposedPages: pages, architectReview: decision.architectReview || decision, policy: decision.pagePolicy || modelResult.pagePolicy, override: decision.expansionOverride || modelResult.expansionOverride, runContext: { prospectId: finalist?.prospectId || finalist?.placeId, runId: decision.runId || null }, sourceBinding: decision.sourceCheckpoint || decision.sourceBinding });
       const evidence = buildPrescriptionEvidence({ classification, pages: validated.pages, candidateServices: services });
       const output = {
         ...validated,
