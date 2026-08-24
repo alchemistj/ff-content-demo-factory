@@ -161,7 +161,7 @@ const syntheticGarageDoorFixtureBase: Omit<ApprovedProspectHandoff, "sourceCheck
 
 function finalizeFixture(base: any, index: number): ApprovedProspectHandoff {
   const servicePages = base.prospect.destinations.servicePages;
-  const serviceComparison = servicePages.map((page, position) => ({
+  const serviceComparison = servicePages.map((page: any, position: number) => ({
     id: page.id, name: page.keyword, status: "prescribed" as const, evidenceCount: page.majorEvidence.length,
     directEvidenceCount: page.majorEvidence.length, evidence: page.majorEvidence, route: page.url,
     aliases: [page.keyword, `service-${position + 1}`],
