@@ -10,12 +10,17 @@ import {
   retrieveCursorWriterOutput,
   validateCursorArtifactRecoveryReceipt,
   validateCursorWriterFollowUpReceipt,
+  type CursorArtifactRecoveryInput,
   type CursorArtifactClient,
   type CursorArtifactRecoveryPrior,
   type CursorTestTransport,
   type CursorFollowUpBindings,
 } from "./cursor-writer.js";
 import { digestOf } from "../contracts/digests.js";
+
+type PublicRecoveryInputHasNoEnv = "env" extends keyof CursorArtifactRecoveryInput ? never : true;
+const publicRecoveryInputHasNoEnv: PublicRecoveryInputHasNoEnv = true;
+void publicRecoveryInputHasNoEnv;
 
 const agentId = "bc-972b63b0-6e43-4c76-805d-b95a0ba13da8";
 const priorJobId = "run-a59d6e17-3ce0-4c0f-8231-597d5b15382b";
@@ -272,6 +277,6 @@ test("configured-secret HMAC rejects forged recovery receipt fields and wrong se
 test("production recovery rejects caller-supplied artifact and transport seams before any vendor access", async () => {
   const counters = { creates: 0, resumes: 0, sends: 0, lists: 0 }; const state = { available: false, lists: 0, downloads: 0 };
   const fakeArtifactClient = { list: async () => { counters.lists += 1; return []; }, download: async () => { throw new Error("must not download"); } };
-  await assert.rejects(() => recoverCursorWriterArtifact({ env, receiptStore: createMemoryCursorReceiptStore(), prior: artifactPrior, prompt: "artifact recovery prompt", validateOutput: () => undefined, artifactClient: fakeArtifactClient, transport: artifactTransport(counters, state) } as any), (error: unknown) => (error as { code?: string }).code === "CURSOR_ARTIFACT_CLIENT_SUBSTITUTION_FORBIDDEN");
+  await assert.rejects(() => recoverCursorWriterArtifact({ env: { CURSOR_MODEL: "caller-selected-model", CURSOR_FAST: "true", CURSOR_API_KEY: "caller-selected-secret" }, receiptStore: createMemoryCursorReceiptStore(), prior: artifactPrior, prompt: "artifact recovery prompt", validateOutput: () => undefined, artifactClient: fakeArtifactClient, transport: artifactTransport(counters, state) } as any), (error: unknown) => (error as { code?: string }).code === "CURSOR_ARTIFACT_ENV_SUBSTITUTION_FORBIDDEN");
   assert.deepEqual(counters, { creates: 0, resumes: 0, sends: 0, lists: 0 });
 });

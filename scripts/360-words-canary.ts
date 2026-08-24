@@ -290,7 +290,7 @@ export async function runArtifactRecovery(root = process.cwd()): Promise<{ statu
   if (prior.inputDigest !== digestOf(payload) || (prior.sealedHandoffDigest && prior.sealedHandoffDigest !== sealed.handoff.resealDigest)) throw new Error("prior Writer1 dispatch is not bound to the current sealed 360 handoff");
   await writeJson(jsonFile(root, "canary/runtime/prior-dispatch-verification.json"), { status: "verified", prior });
   await writeJson(jsonFile(root, "canary/runtime/state.json"), { status: "writer1-artifact-recovery-dispatching", stage: "writer1", runId: sealed.handoff.runId, sealedHandoffDigest: sealed.handoff.resealDigest, priorRunId: prior.runId, priorAgentId: prior.agentId, priorThreadUrl: prior.threadUrl, nextStage: null, writer2Blocked: true });
-  const result = await recoverCursorWriterArtifact({ env: process.env, receiptStore: createJsonCursorReceiptStore(jsonFile(root, "canary/runtime/cursor-receipts.json")), prior, prompt: WRITER1_ARTIFACT_RECOVERY_PROMPT, onFollowUp: (notice) => dispatchReceipt(root, notice), validateOutput: (output) => parseAndValidateWriter1Output(output, payload) });
+  const result = await recoverCursorWriterArtifact({ receiptStore: createJsonCursorReceiptStore(jsonFile(root, "canary/runtime/cursor-receipts.json")), prior, prompt: WRITER1_ARTIFACT_RECOVERY_PROMPT, onFollowUp: (notice) => dispatchReceipt(root, notice), validateOutput: (output) => parseAndValidateWriter1Output(output, payload) });
   const parsed = result.output as Dict;
   validateCursorArtifactRecoveryReceipt(result.receipt, prior, digestOf(WRITER1_ARTIFACT_RECOVERY_PROMPT), process.env.CURSOR_API_KEY);
   await writeJson(jsonFile(root, "canary/runtime/writer1-recovery-receipt.json"), result.receipt);

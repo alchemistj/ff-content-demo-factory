@@ -611,14 +611,15 @@ async function recoverCursorWriterArtifactInternal(input: CursorArtifactRecovery
   validateCursorArtifactRecoveryReceipt(receipt, input.prior, promptDigest, env.CURSOR_API_KEY); await input.receiptStore.put(key, receipt); activeClaim = { ...activeClaim, phase: "completed", heartbeatAt: now().toISOString(), leaseUntil: new Date(now().getTime() + 30_000).toISOString() }; await input.receiptStore.putClaim(key, activeClaim); return { output: receipt.output, receipt, threadUrl: record.url, claim: activeClaim };
 }
 
-export type CursorArtifactRecoveryInput = Omit<CursorArtifactRecoveryInternalInput, "transport" | "artifactClient">;
+export type CursorArtifactRecoveryInput = Omit<CursorArtifactRecoveryInternalInput, "transport" | "artifactClient" | "env">;
 
 /** Production recovery owns both network seams; control input cannot replace them. */
 export async function recoverCursorWriterArtifact(input: CursorArtifactRecoveryInput): Promise<CursorArtifactRecoveryResult> {
   const candidate = input as unknown as Record<string, unknown>;
+  if ("env" in candidate) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_ENV_SUBSTITUTION_FORBIDDEN", "Production artifact recovery reads process.env and does not accept caller-supplied environment");
   if ("transport" in candidate || "artifactClient" in candidate) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_CLIENT_SUBSTITUTION_FORBIDDEN", "Production artifact recovery does not accept caller-supplied Cursor transports or artifact clients");
   const transport = await officialCloudTransport();
-  return recoverCursorWriterArtifactInternal({ ...input, transport, artifactClient: createCursorArtifactClient() });
+  return recoverCursorWriterArtifactInternal({ ...input, env: process.env, transport, artifactClient: createCursorArtifactClient() });
 }
 
 /** Test-only/internal seam. Production scripts cannot select this path by control input or environment. */
