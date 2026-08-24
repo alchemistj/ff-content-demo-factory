@@ -24,10 +24,10 @@ export class PipelineError extends Error {
 function idOf(entry: any, fallback?: string): string | undefined { if (typeof entry === 'string') return entry; if (!entry || typeof entry !== 'object') return fallback; return entry.id || entry.slug || entry.path || entry.url || fallback; }
 function entries(value: any): Dict[] { if (Array.isArray(value)) return value; if (value && typeof value === 'object') return Object.entries(value).map(([key, item]) => ({ key, ...(item && typeof item === 'object' ? item : { value: item }) })); return []; }
 
-export function prescribedServices(prescription: any): Dict[] {
+export function prescribedServices(prescription: any, expansionOverride?: any): Dict[] {
   const raw = prescription?.prescribedServicePages || prescription?.servicePages || prescription?.services || (Array.isArray(prescription?.pages) ? prescription.pages.filter((page: Dict) => page.kind === 'service' || page.type === 'service') : null);
   const values = entries(raw);
-  if (values.length !== 2) throw new PipelineError('SERVICE_PAGE_PRESCRIPTION_REQUIRED', 'Writer 1 requires exactly two prescribed service pages');
+  if (values.length < 2 || (values.length !== 2 && !expansionOverride)) throw new PipelineError('SERVICE_PAGE_PRESCRIPTION_REQUIRED', 'Writer 1 requires exactly two prescribed service pages unless a valid expansion override is present');
   return values.map((item, index) => ({ ...item, pageId: String(idOf(item, item.key || `service-${index + 1}`)) }));
 }
 function mapPages(value: any): Dict { if (Array.isArray(value)) return Object.fromEntries(value.map((page, index) => [String(idOf(page, `page-${index + 1}`)), page])); return value && typeof value === 'object' ? { ...value } : {}; }
@@ -89,7 +89,9 @@ function assertPageIdentity(page: any, prescription: any, pageType: string, labe
   }
 }
 function assertStrategyIdentity(page: any): void {
-  if (!page || typeof page !== 'object' || pageRoute(page, '') !== '/') throw new PipelineError('WRITER_PAGE_IDENTITY_MISMATCH', 'Strategy Overview must explicitly identify the / route');
+  if (!page || typeof page !== 'object') throw new PipelineError('WRITER_PAGE_IDENTITY_MISMATCH', 'Strategy Overview must be an internal deliverable object');
+  if (page.pageType && normalizedPageType(page.pageType) !== 'strategyoverview') throw new PipelineError('WRITER_PAGE_IDENTITY_MISMATCH', 'Strategy Overview must identify itself as an internal strategy-overview deliverable');
+  if (['url', 'path', 'route'].some((key) => page[key] === '/')) throw new PipelineError('WRITER_PAGE_IDENTITY_MISMATCH', 'Strategy Overview cannot claim the public Home route');
   const content = [page.body, page.text, page.content].find((value) => typeof value === 'string' && value.trim());
   if (!content && !(Array.isArray(page.sections) && page.sections.length)) throw new PipelineError('WRITER_PAGE_IDENTITY_MISMATCH', 'Strategy Overview must contain readable content');
 }
@@ -130,14 +132,15 @@ function finalSite(state: PipelineState): Dict {
   const home = destinations.homepage || {};
   const contact = destinations.contact || {};
   const pages = [prescribedPage(state.outputs.homepage, home, 'homepage'), ...services, prescribedPage(state.outputs.contact, contact, 'contact')];
-  return { pages, header: state.outputs.header, footer: state.outputs.footer, strategyOverview: { ...(state.outputs.strategyOverview || {}), url: canonicalRoute(destinations.strategy?.url, '/') }, reviews: state.reviewInventory, businessWebsite: state.prospect?.nap?.website };
+  return { pages, header: state.outputs.header, footer: state.outputs.footer, strategyOverview: { ...(state.outputs.strategyOverview || {}), pageType: 'strategy-overview', internal: true }, reviews: state.reviewInventory, businessWebsite: state.prospect?.nap?.website };
 }
 function reviewFingerprint(inventory: any): string { return createHash('sha256').update(JSON.stringify(inventory ?? null)).digest('hex'); }
+function handoffFingerprint(handoff: any): string { return createHash('sha256').update(JSON.stringify(handoff ?? null)).digest('hex'); }
 function pageSetFromSite(site: any, state: PipelineState): void {
   const pages = Array.isArray(site?.pages) ? site.pages : [];
   const destinations = state.prescription?.destinations || {};
-  const services = prescribedServices(state.prescription);
-  const homeRoute = canonicalRoute(destinations.homepage?.url, '/home'); const contactRoute = canonicalRoute(destinations.contact?.url, '/contact');
+  const services = prescribedServices(state.prescription, state.handoff?.expansionOverride);
+  const homeRoute = canonicalRoute(destinations.homepage?.url, '/'); const contactRoute = canonicalRoute(destinations.contact?.url, '/contact');
   const home = pages.find((page: any) => pageRoute(page, '') === homeRoute); const contact = pages.find((page: any) => pageRoute(page, '') === contactRoute);
   if (!home || !contact || site.header === undefined || site.footer === undefined || site.strategyOverview === undefined) throw new PipelineError('WHOLE_SITE_REPAIR_INCOMPLETE', 'Whole-site repair must return every final page, header, footer, and Strategy Overview');
   assertPageIdentity(home, destinations.homepage, 'homepage', 'Whole-site repaired homepage'); assertPageIdentity(contact, destinations.contact, 'contact', 'Whole-site repaired contact');
@@ -185,14 +188,24 @@ export function contextFor(state: PipelineState, stage: string, guides: LoadedGu
   const reviewList = Array.isArray(reviews) ? reviews : [];
   const contentFingerprint = reviewFingerprint(state.reviewInventory);
   if (contentFingerprint !== state.reviewInventoryFingerprint) throw new PipelineError('REVIEW_INVENTORY_CORRUPTED', 'Complete review inventory no longer matches the approved handoff fingerprint');
-  const reviewIntegrity = { count: reviewList.length, ids: reviewList.map((review: any) => String(review.id)), contentFingerprint };
+  if (handoffFingerprint(state.handoff) !== state.handoffFingerprint) throw new PipelineError('HANDOFF_CORRUPTED', 'Complete approved handoff no longer matches its persisted fingerprint');
+  const reviewIntegrity = { count: reviewList.length, ids: reviewList.map((review: any) => String(review.id)), contentFingerprint, handoffFingerprint: state.handoffFingerprint };
   const assignments: Dict = {
     writer1: { deliverables: ['exactly two prescribed service pages'], constraints: ['write only the prescribed service pages', 'use the complete review inventory'] },
     writer2: { deliverables: ['homepage', 'contact', 'header', 'footer'], constraints: ['summarize and route from the finished service pages', 'write only the listed pages', 'use the complete review inventory'] },
     writer3: { deliverables: ['Strategy Overview only'], constraints: ['describe the actual completed business-facing copy', 'write only Strategy Overview', 'use the complete review inventory'] },
     'whole-site-qa': { deliverables: ['independent assessment of the complete site'], constraints: ['do not write or replace pages'] },
   };
-  return immutablePayload({ stage, assignment: assignments[stage] || assignments.writer3, prospect: state.prospect, evidence: state.evidence, prescription: state.prescription, reviewInventory: state.reviewInventory, completeReviewInventory: state.reviewInventory, reviewIntegrity, guides, finishedServicePages: state.outputs.servicePages || null, finishedBusinessCopy, originalAudit: state.evidence?.audit || state.evidence, runId: state.runId });
+  const destinations = state.prescription?.destinations || {};
+  const stageDestinations = stage === 'writer1'
+    ? { servicePages: prescribedServices(state.prescription, state.handoff?.expansionOverride) }
+    : stage === 'writer2'
+      ? { homepage: destinations.homepage, contact: destinations.contact, header: destinations.header, footer: destinations.footer }
+      : stage === 'writer3'
+        ? { strategy: { visibility: 'internal', internalId: 'strategy-overview' } }
+        : destinations;
+  const stageProspect = { ...state.prospect, destinations: stageDestinations };
+  return immutablePayload({ stage, assignment: assignments[stage] || assignments.writer3, prospect: stageProspect, evidence: state.evidence, prescription: { destinations: stageDestinations }, reviewInventory: state.reviewInventory, completeReviewInventory: state.reviewInventory, reviewIntegrity, guides, finishedServicePages: stage === 'writer1' ? null : state.outputs.servicePages || null, finishedBusinessCopy, sealedReviewAnalysisFacts: stage === 'writer3' ? state.handoff?.reviewAnalysisFacts : undefined, serviceComparison: stage === 'writer3' ? state.handoff?.serviceComparison : undefined, originalAudit: state.evidence?.audit || state.evidence, runId: state.runId });
 }
 function qaAdapter(qa: QaAdapters | undefined, stage: string, kind: string): Adapter | null { const stageObject = qa?.[stage]; return stageObject?.[kind] || qa?.[`${stage}${kind.charAt(0).toUpperCase()}${kind.slice(1)}`] || qa?.[kind] || null; }
 function repairedOutput(result: any): any { return result?.output ?? result?.copy ?? result; }
@@ -240,7 +253,7 @@ export async function runOneProspect(input: PipelineInput = {}): Promise<Pipelin
     if (!input.handoff) throw new PipelineError('HANDOFF_REQUIRED', 'An approved Lane A prospect handoff is required');
     try { assertApprovedProspectHandoff(input.handoff); } catch (error) { throw new PipelineError('HANDOFF_INVALID', 'Approved prospect handoff failed contract validation', error); }
     const prospect = input.handoff.prospect as unknown as JsonObject;
-    state = createInitialState({ prospectId: input.handoff.prospect.id, prospect, prescription: { ...input.handoff.prospect.destinations, destinations: input.handoff.prospect.destinations }, evidence: { confirmedFacts: input.handoff.prospect.confirmedFacts, siteEvidence: input.handoff.prospect.siteEvidence, imageRefs: input.handoff.prospect.imageRefs }, reviewInventory: input.handoff.prospect.reviewInventory, now: clock() });
+    state = createInitialState({ handoff: input.handoff as unknown as JsonObject, prospectId: input.handoff.prospect.id, prospect, prescription: { ...input.handoff.prospect.destinations, destinations: input.handoff.prospect.destinations }, evidence: { confirmedFacts: input.handoff.prospect.confirmedFacts, siteEvidence: input.handoff.prospect.siteEvidence, imageRefs: input.handoff.prospect.imageRefs }, reviewInventory: input.handoff.prospect.reviewInventory, now: clock() });
     await writeState(stateStore, state);
   }
   validateState(state); if (state.stage === STAGES.AWAITING_GATE_2) return { state, complete: false }; if (!input.writers) throw new PipelineError('PIPELINE_ADAPTER_REQUIRED', 'writers adapters are required');
@@ -261,7 +274,8 @@ export async function runOneProspect(input: PipelineInput = {}): Promise<Pipelin
       if (stageAdapters.some((candidate) => candidate === assessor || (adapterId(candidate) && adapterId(candidate) === assessorIdentity))) throw new PipelineError('WHOLE_SITE_ASSESSOR_REQUIRED', 'Whole-site assessor identity must be independent from writers and stage QA');
       const context = contextFor(state, 'whole-site-qa', await loadCanonicalGuides('writer3', provider));
       const assessment = await runWholeSiteAssessment(state, input, context, assessor);
-      state.outputs.humanGate2 = createHumanGate2Artifact({ websiteWords: assessment.site });
+      const rejectedRoutes = Array.isArray(state.handoff?.serviceComparison) ? state.handoff.serviceComparison.filter((entry: any) => entry.status !== 'prescribed').flatMap((entry: any) => [entry.route, entry.pageUrl]).filter(Boolean) : [];
+      state.outputs.humanGate2 = createHumanGate2Artifact({ websiteWords: assessment.site, reviewAnalysisFacts: state.handoff?.reviewAnalysisFacts, rejectedRoutes });
       state.stages[STAGES.WHOLE_SITE_QA] = { status: 'complete', assessment };
       state.stage = STAGES.AWAITING_GATE_2; state.status = 'awaiting-human-gate-2'; markEvent(state, { type: 'whole-site-qa-pass', stage: STAGES.WHOLE_SITE_QA }, clock); await save();
       return { state, complete: false };
