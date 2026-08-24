@@ -23,7 +23,11 @@ function renderGate1({ finalist, prescription, whyBuilt }) {
   lines.push('', '### Why these pages won', '');
   for (const page of prescription.pages) lines.push(`- **${page.type || page.service}:** ${page.whyIncluded}`);
   lines.push('', '### Services considered', '');
-  for (const service of prescription.valueHierarchy) lines.push(`- ${service.name || service.id}: ${service.directCompletedEvidenceCount} direct anchor(s), ${service.evidenceCount} total evidence review(s); ${service.includedPage ? 'included' : `passed over — ${service.passedOverReason}`}.`);
+  for (const service of prescription.valueHierarchy) {
+    const passedOverReason = String(service.passedOverReason || '').trim().replace(/[.]+$/, '');
+    const disposition = service.includedPage ? 'included' : `passed over — ${passedOverReason}`;
+    lines.push(`- ${service.name || service.id}: ${service.directCompletedEvidenceCount} direct anchor(s), ${service.evidenceCount} total evidence review(s); ${disposition}.`);
+  }
   lines.push('', '## Human Gate 1', '', 'Are these the right pages, URLs, keywords, title directions, and first-review recommendations for this prospect?', '', '## State', '', '`awaiting-human-gate-1`');
   return lines.join('\n') + '\n';
 }

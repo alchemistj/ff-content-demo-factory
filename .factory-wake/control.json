@@ -1,7 +1,7 @@
 {
-  "wakeId": "360-prescription-correction-2026-08-24-03",
+  "wakeId": "360-architect-qa-pass-2026-08-24-04",
   "mode": "qa",
-  "restoreFromRunId": "32690810815",
-  "restoreFromSourceSha": "77afa025822856c8adae0b4020e98b6582d0bc3a",
+  "restoreFromRunId": "32717407190",
+  "restoreFromSourceSha": "1162acb7ed54341a8dddfe8574be685221bed7eb",
   "requestedBy": "architect"
 }

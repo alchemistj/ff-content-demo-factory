@@ -73,6 +73,7 @@ test('collision validation, Gate 1 evidence specificity, and expanded Architect 
   const whyBuilt = { text: 'RLB Electric has direct EV charging installation proof while its dated site buries that opportunity. The NEMA 15-50 customer account and owned EV graphic support a focused considered-purchase page. The demo makes that evidence easier for Dallas prospects to find.', refs: [{ type: 'opportunity', ref: 'service pages bury EV charging evidence' }, { type: 'review', ref: 'allen' }, { type: 'graphic', ref: 'https://rlb.example/flyer.jpg' }] };
   const md = renderGate1({ finalist, prescription, whyBuilt });
   assert.match(md, /NEMA 15-50/); assert.match(md, /awaiting-human-gate-1/);
+  assert.doesNotMatch(md, /\.\.$/m, 'Gate 1 service dispositions end with one period');
   const qa = architectQa({ finalist, inventory: classification, prescription, whyBuilt });
   assert.equal(qa.passed, true);
   const trapOnly = { ...prescription, pages: [{ ...prescription.pages[0], traps: ['Do not promise same-day service.'] }] };
