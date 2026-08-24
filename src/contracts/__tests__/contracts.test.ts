@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { negativeFixture, richFixture, syntheticGarageDoorFixture, thinFixture } from "../../../fixtures/representative.js";
-import { ContractValidationError, parseApprovedProspectHandoff, validateApprovedProspectHandoff } from "../index.js";
+import { ContractValidationError, computeHandoffDigests, parseApprovedProspectHandoff, validateApprovedProspectHandoff } from "../index.js";
 
 function clone<T>(value: T): T {
   return structuredClone(value);
@@ -8,6 +8,10 @@ function clone<T>(value: T): T {
 
 function errorCodes(value: unknown): string[] {
   return validateApprovedProspectHandoff(value).map((issue) => issue.code);
+}
+
+function refreshDigests(value: any): void {
+  value.digests = computeHandoffDigests(value);
 }
 
 for (const fixture of [richFixture, thinFixture, negativeFixture, syntheticGarageDoorFixture]) {
@@ -28,13 +32,13 @@ for (const fixture of [richFixture, thinFixture, negativeFixture, syntheticGarag
 
 {
   const invalid = clone(richFixture);
-  invalid.prospect.destinations.servicePages[0].id = "bad ID";
+  invalid.prospect.destinations.servicePages[0]!.id = "bad ID";
   assert.ok(errorCodes(invalid).includes("MALFORMED_ID"));
 }
 
 {
   const invalid = clone(richFixture);
-  invalid.prospect.destinations.servicePages[0].reviewGrade = "D" as never;
+  invalid.prospect.destinations.servicePages[0]!.reviewGrade = "D" as never;
   assert.ok(errorCodes(invalid).includes("UNSUPPORTED_REVIEW_GRADE"));
 }
 
@@ -46,7 +50,7 @@ for (const fixture of [richFixture, thinFixture, negativeFixture, syntheticGarag
 
 {
   const invalid = clone(richFixture);
-  invalid.prospect.destinations.servicePages[0].recommendedFirstReview = "review-does-not-exist";
+  invalid.prospect.destinations.servicePages[0]!.recommendedFirstReview = "review-does-not-exist";
   assert.ok(errorCodes(invalid).includes("RECOMMENDED_REVIEW_NOT_FOUND"));
 }
 
@@ -58,7 +62,7 @@ for (const fixture of [richFixture, thinFixture, negativeFixture, syntheticGarag
 
 {
   const invalid = clone(negativeFixture);
-  invalid.prospect.destinations.servicePages[0].recommendedFirstReview = "review-negative-001";
+  invalid.prospect.destinations.servicePages[0]!.recommendedFirstReview = "review-negative-001";
   const codes = errorCodes(invalid);
   assert.ok(codes.includes("RECOMMENDED_REVIEW_INCONSISTENT"));
   assert.ok(codes.includes("NEGATIVE_AS_POSITIVE"));
@@ -78,7 +82,7 @@ for (const fixture of [richFixture, thinFixture, negativeFixture, syntheticGarag
 
 {
   const invalid = clone(richFixture);
-  invalid.prospect.destinations.homepage.url = "https://northline.example/";
+  invalid.prospect.destinations.homepage.url = "https://northline.example/home";
   assert.ok(errorCodes(invalid).includes("ROUTING_BOUNDARY"));
 }
 
@@ -91,12 +95,14 @@ for (const fixture of [richFixture, thinFixture, negativeFixture, syntheticGarag
 {
   const contactGradeOptional = clone(richFixture);
   delete contactGradeOptional.prospect.destinations.contact.reviewGrade;
+  refreshDigests(contactGradeOptional);
   assert.deepEqual(errorCodes(contactGradeOptional), []);
 }
 
 {
   const reviewDateOptional = clone(richFixture);
   delete (reviewDateOptional.prospect.reviewInventory[0] as { date?: string }).date;
+  refreshDigests(reviewDateOptional);
   assert.deepEqual(errorCodes(reviewDateOptional), []);
 }
 

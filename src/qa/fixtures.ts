@@ -36,19 +36,19 @@ export const crossPageDriftFixture = {
 export const topologyFixture = {
   reviews: [],
   pages: [
-    { url: "/home", pageType: "homepage", seoTitle: "Home", metaDescription: "Home", h1: "Home", eligibleForReviews: false },
+    { url: "/", pageType: "homepage", seoTitle: "Home", metaDescription: "Home", h1: "Home", eligibleForReviews: false },
     { url: "/service-one", pageType: "service", seoTitle: "Service One", metaDescription: "Service one", h1: "Service one", eligibleForReviews: false },
     { url: "/service-two", pageType: "service", seoTitle: "Service Two", metaDescription: "Service two", h1: "Service two", eligibleForReviews: false },
     { url: "/contact", pageType: "contact", seoTitle: "Contact", metaDescription: "Contact", h1: "Contact" },
   ],
-  header: { navigation: [{ label: "Home", href: "/home" }, { label: "Contact", href: "/contact" }] },
+  header: { navigation: [{ label: "Home", href: "/" }, { label: "Contact", href: "/contact" }] },
   footer: { text: "Footer" },
-  strategyOverview: { url: "/", body: "Strategy" },
+  strategyOverview: { body: "Strategy" },
 };
 
 /** Thinking-QA drift: deterministic topology is valid, prose judgment is not. */
 export const crossPageThinkingDriftFixture = {
   ...topologyFixture,
-  pages: topologyFixture.pages.map((page) => page.url === "/home" ? { ...page, body: "Service one body repeated word-for-word." } : page.url === "/service-one" ? { ...page, body: "Service one body repeated word-for-word." } : page),
+  pages: topologyFixture.pages.map((page) => page.url === "/" ? { ...page, body: "Service one body repeated word-for-word." } : page.url === "/service-one" ? { ...page, body: "Service one body repeated word-for-word." } : page),
   strategyOverview: { url: "/", body: "See our nonexistent /future-service route for the next step." },
 };

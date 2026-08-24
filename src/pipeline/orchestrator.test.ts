@@ -44,8 +44,8 @@ function input(overrides: Partial<PipelineInput> = {}): PipelineInput {
     handoff,
     writers: {
       writer1: (context: any) => { contexts.writer1.push(context); return { servicePages: { 'service-rich-repair': page('Repair', { id: 'service-rich-repair', url: '/garage-door-repair', pageType: 'service', keyword: 'garage door repair' }, [{ id: 'review-rich-001', role: 'lead' }, { id: 'review-rich-004', role: 'support' }, { id: 'review-rich-005', role: 'support' }]), 'service-rich-replacement': page('Replacement', { id: 'service-rich-replacement', url: '/garage-door-replacement', pageType: 'service', keyword: 'garage door replacement' }, [{ id: 'review-rich-002', role: 'lead' }, { id: 'review-rich-004', role: 'support' }]) } }; },
-      writer2: (context: any) => { contexts.writer2.push(context); return { pages: { homepage: page('Home', { id: 'page-rich-home', url: '/home', pageType: 'homepage', keyword: 'garage door service' }, [{ id: 'review-rich-001', role: 'lead' }, { id: 'review-rich-002', role: 'support' }, { id: 'review-rich-004', role: 'support' }]), contact: page('Contact', { id: 'page-rich-contact', url: '/contact', pageType: 'contact', keyword: 'garage door service contact' }, [{ id: 'review-rich-001', role: 'lead' }, { id: 'review-rich-004', role: 'support' }]), header: { brand: 'Northline', navigation: [{ label: 'Home', href: '/home' }, { label: 'Repair', href: '/garage-door-repair' }, { label: 'Replacement', href: '/garage-door-replacement' }, { label: 'Contact', href: '/contact' }] }, footer: { body: 'Northline footer.', links: [{ label: 'Home', href: '/home' }, { label: 'Contact', href: '/contact' }] } } }; },
-      writer3: (context: any) => { contexts.writer3.push(context); return { strategyOverview: { url: '/', body: 'S' } }; },
+      writer2: (context: any) => { contexts.writer2.push(context); return { pages: { homepage: page('Home', { id: 'page-rich-home', url: '/', pageType: 'homepage', keyword: 'garage door service' }, [{ id: 'review-rich-001', role: 'lead' }, { id: 'review-rich-002', role: 'support' }, { id: 'review-rich-004', role: 'support' }]), contact: page('Contact', { id: 'page-rich-contact', url: '/contact', pageType: 'contact', keyword: 'garage door service contact' }, [{ id: 'review-rich-001', role: 'lead' }, { id: 'review-rich-004', role: 'support' }]), header: { brand: 'Northline', navigation: [{ label: 'Home', href: '/' }, { label: 'Repair', href: '/garage-door-repair' }, { label: 'Replacement', href: '/garage-door-replacement' }, { label: 'Contact', href: '/contact' }] }, footer: { body: 'Northline footer.', links: [{ label: 'Home', href: '/' }, { label: 'Contact', href: '/contact' }] } } }; },
+      writer3: (context: any) => { contexts.writer3.push(context); return { strategyOverview: { pageType: 'strategy-overview', body: 'S' } }; },
     },
     qa: { deterministic: cleanQa, intelligent: cleanThinking },
     wholeSiteAssessor: { id: 'independent-whole-site-qa', run: () => ({ independent: true, assessor: 'independent-whole-site-qa', dimensionsReviewed: [...INTELLIGENT_DIMENSIONS], findings: [] }) },
@@ -66,7 +66,8 @@ test('writers run strictly in order and every writer receives the complete revie
   assert.equal(contexts.writer1[0].reviewInventory.length, 5);
   assert.equal(contexts.writer2[0].reviewInventory.length, 5);
   assert.equal(contexts.writer3[0].reviewInventory.length, 5);
-  assert.deepEqual(contexts.writer2[0].finishedServicePages, result.state.outputs.servicePages);
+  assert.equal(contexts.writer2[0].finishedServicePages, null);
+  assert.deepEqual(contexts.writer2[0].approvedSupportingPages.map((page: any) => page.pageId), ['homepage', 'contact', 'header', 'footer']);
   assert.equal(contexts.writer3[0].finishedBusinessCopy.homepage.body, 'Home synthetic regression copy.');
 });
 
@@ -74,14 +75,14 @@ test('Writer 3 QA repairs before an independent whole-site assessment', async ()
   const config = input();
   let writer3Checks = 0;
   let assessed: any;
-  config.writers!.writer3 = () => ({ strategyOverview: { url: '/', body: 'bad' } });
+  config.writers!.writer3 = () => ({ strategyOverview: { pageType: 'strategy-overview', body: 'bad' } });
   config.qa = {
     deterministic: cleanQa,
     intelligent: cleanThinking,
     writer3: {
       deterministic: () => ({ pass: ++writer3Checks > 1, findings: writer3Checks > 1 ? [] : [{ code: 'strategy-drift', severity: 'hard-fail', message: 'Repair required.' }] }),
       intelligent: cleanThinking,
-      repair: () => ({ strategyOverview: { url: '/', body: 'fixed' } }),
+      repair: () => ({ strategyOverview: { pageType: 'strategy-overview', body: 'fixed' } }),
     },
   };
   config.wholeSiteAssessor = { id: 'repair-reviewer', run: (packet: any) => { assessed = packet.site.strategyOverview; return { independent: true, assessor: 'repair-reviewer', dimensionsReviewed: [...INTELLIGENT_DIMENSIONS], findings: [] }; } };

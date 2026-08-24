@@ -7,6 +7,8 @@ export interface WholeSiteQaOptions extends QaOptions {
   /** A separately-owned assessor. It receives a frozen snapshot and returns structured findings. */
   assessor?: IntelligentAssessor | undefined;
   assessorName?: string | undefined;
+  /** Rejected/folded service names that may appear only in bounded internal evidence. */
+  rejectedServiceNames?: readonly string[] | undefined;
 }
 
 function objectPresent(value: unknown): boolean {
@@ -28,26 +30,26 @@ function pageKind(page: { pageType?: string | undefined }): string {
 function topologyFindings(site: ReturnType<typeof normalizeSite>): QaFinding[] {
   const findings: QaFinding[] = [];
   const services = site.pages.filter((page) => pageKind(page) === "service" || pageKind(page) === "servicepage");
-  if (services.length !== 2) findings.push({ code: "required-service-page-count", severity: "hard-fail", message: `Final topology requires exactly two service pages; found ${services.length}.` });
-  const home = site.pages.filter((page) => pageKind(page) === "homepage" || pageRoute(page) === "/home");
-  if (home.length !== 1 || pageRoute(home[0]) !== "/home") findings.push({ code: "required-homepage", severity: "hard-fail", message: "Final topology requires exactly one homepage at /home." });
+  const root = site as Record<string, unknown>;
+  const expectedServiceCount = typeof root.approvedServicePageCount === "number" && Number.isInteger(root.approvedServicePageCount) ? root.approvedServicePageCount : 2;
+  if (services.length !== expectedServiceCount) findings.push({ code: "required-service-page-count", severity: "hard-fail", message: `Final topology requires exactly ${expectedServiceCount} service pages; found ${services.length}.` });
+  if (site.pages.length !== expectedServiceCount + 2) findings.push({ code: "required-public-page-count", severity: "hard-fail", message: `Final topology requires exactly ${expectedServiceCount + 2} public business pages; found ${site.pages.length}.` });
+  const home = site.pages.filter((page) => pageKind(page) === "homepage" || pageRoute(page) === "/");
+  if (home.length !== 1 || pageRoute(home[0]) !== "/") findings.push({ code: "required-homepage", severity: "hard-fail", message: "Final topology requires exactly one homepage at /." });
   const contact = site.pages.filter((page) => pageKind(page) === "contact" || pageRoute(page) === "/contact");
   if (contact.length !== 1) findings.push({ code: "required-contact-page", severity: "hard-fail", message: "Final topology requires exactly one Contact page." });
-  const root = site as Record<string, unknown>;
   const strategyCandidates = site.pages.filter((page) => pageKind(page) === "strategy" || pageKind(page) === "strategyoverview");
-  const separateStrategy = objectPresent(root.strategyOverview) || objectPresent(root.strategy);
-  const strategyCount = strategyCandidates.length + (separateStrategy ? 1 : 0);
-  if (strategyCount !== 1) findings.push({ code: "required-strategy-overview", severity: "hard-fail", message: "Final topology requires exactly one Strategy Overview at /." });
-  const strategy = separateStrategy ? (root.strategyOverview ?? root.strategy) : strategyCandidates[0];
+  if (strategyCandidates.length) findings.push({ code: "public-strategy-route", severity: "hard-fail", message: "Strategy Overview is an internal Writer 3 artifact and cannot be a public business page." });
+  const strategy = objectPresent(root.strategyOverview) ? root.strategyOverview : root.strategy;
+  if (!objectPresent(strategy)) findings.push({ code: "required-strategy-overview", severity: "hard-fail", message: "Writer 3 must provide one internal Strategy Overview artifact." });
   if (!strategy || typeof strategy !== "object") {
-    findings.push({ code: "strategy-route-missing", severity: "hard-fail", message: "Strategy Overview is missing its required / route." });
+    // The required-strategy-overview finding above is sufficient when the
+    // internal artifact is absent or malformed.
   } else {
-    const strategyRoute = pageRoute(strategy);
-    if (!strategyRoute) findings.push({ code: "strategy-route-missing", severity: "hard-fail", message: "Strategy Overview is missing its required / route." });
-    else if (strategyRoute !== "/") findings.push({ code: "strategy-route", severity: "hard-fail", message: "Strategy Overview must be at /.", route: strategyRoute });
     const strategyRecord = strategy as Record<string, unknown>;
+    for (const field of ["url", "path", "route"]) if (Object.prototype.hasOwnProperty.call(strategyRecord, field)) findings.push({ code: "public-strategy-route", severity: "hard-fail", message: `Internal Strategy Overview may not carry public ${field} metadata.` });
     const hasReadableContent = [strategyRecord.body, strategyRecord.text, strategyRecord.content].some((value) => typeof value === "string" && value.trim()) || (Array.isArray(strategyRecord.sections) && strategyRecord.sections.length > 0);
-    if (!hasReadableContent) findings.push({ code: "strategy-content-missing", severity: "hard-fail", message: "Strategy Overview must contain readable content." });
+    if (!hasReadableContent) findings.push({ code: "strategy-content-missing", severity: "hard-fail", message: "Internal Strategy Overview must contain readable content." });
   }
   if (!objectPresent(root.header)) findings.push({ code: "missing-header", severity: "hard-fail", message: "Final topology is missing the shared header/navigation." });
   if (!objectPresent(root.footer)) findings.push({ code: "missing-footer", severity: "hard-fail", message: "Final topology is missing the shared footer." });
@@ -79,9 +81,8 @@ function topologyFindings(site: ReturnType<typeof normalizeSite>): QaFinding[] {
       }
       const route = internalRoute(href);
       if (route) {
-        if (route === "/") findings.push({ code: "ordinary-link-exposes-strategy", severity: "hard-fail", message: `${area} must not expose Strategy Overview at /.` });
-        else if (!businessRoutes.has(route)) findings.push({ code: "unresolvable-internal-link", severity: "hard-fail", message: `${area} link ${href} does not resolve to a final business route.`, route });
-        if ((label.includes("home") || label.includes("logo") || label.includes("brand")) && route !== "/home") findings.push({ code: "home-link-not-home", severity: "hard-fail", message: `${area} Home/logo link must resolve to /home.`, route });
+        if (!businessRoutes.has(route)) findings.push({ code: "unresolvable-internal-link", severity: "hard-fail", message: `${area} link ${href} does not resolve to a final business route.`, route });
+        if ((label.includes("home") || label.includes("logo") || label.includes("brand")) && route !== "/") findings.push({ code: "home-link-not-home", severity: "hard-fail", message: `${area} Home/logo link must resolve to /.`, route });
       }
     }
   };
@@ -92,15 +93,32 @@ function topologyFindings(site: ReturnType<typeof normalizeSite>): QaFinding[] {
     const label = typeof link.label === "string" ? link.label.toLowerCase() : typeof link.text === "string" ? link.text.toLowerCase() : typeof item === "string" ? item.toLowerCase() : "";
     const href = typeof link.href === "string" ? link.href : typeof link.url === "string" ? link.url : "";
     const route = internalRoute(href);
-    if ((label.includes("home") || label.includes("logo") || label.includes("brand")) && route !== "/home") findings.push({ code: "home-link-not-home", severity: "hard-fail", message: "Ordinary Home/logo navigation must resolve to /home.", route: route ?? href });
-    if (label.includes("strateg") || route === "/" || route === "/strategy" || route === "/strategy-overview") findings.push({ code: "header-exposes-strategy", severity: "hard-fail", message: "Ordinary header navigation may not expose the Strategy Overview." });
+    if ((label.includes("home") || label.includes("logo") || label.includes("brand")) && route !== "/") findings.push({ code: "home-link-not-home", severity: "hard-fail", message: "Ordinary Home/logo navigation must resolve to /.", route: route ?? href });
+    if (label.includes("strateg") || route === "/strategy" || route === "/strategy-overview") findings.push({ code: "header-exposes-strategy", severity: "hard-fail", message: "Ordinary header navigation may not expose the Strategy Overview." });
   }
   const logo = header.logo && typeof header.logo === "object" ? header.logo as Record<string, unknown> : {};
   const logoHref = typeof logo.href === "string" ? logo.href : typeof logo.url === "string" ? logo.url : "";
-  if (logoHref && internalRoute(logoHref) !== "/home") findings.push({ code: "home-link-not-home", severity: "hard-fail", message: "The header logo must resolve to /home.", route: internalRoute(logoHref) ?? logoHref });
+  if (logoHref && internalRoute(logoHref) !== "/") findings.push({ code: "home-link-not-home", severity: "hard-fail", message: "The header logo must resolve to /.", route: internalRoute(logoHref) ?? logoHref });
   validateLinks(nav, "Header navigation");
   const footer = root.footer && typeof root.footer === "object" ? root.footer as Record<string, unknown> : {};
   validateLinks(Array.isArray(footer.links) ? footer.links : footer.navigation, "Footer");
+  return findings;
+}
+
+function rejectedPublicClaimFindings(site: ReturnType<typeof normalizeSite>, names: readonly string[]): QaFinding[] {
+  const findings: QaFinding[] = [];
+  const phrases = names.map((name) => name.toLowerCase().replace(/[-_]+/gu, " ")).filter((name) => name.split(/\s+/u).length >= 3);
+  const scan = (value: unknown, area: string): void => {
+    if (typeof value === "string") {
+      const normalized = value.toLowerCase().replace(/[-_]+/gu, " ");
+      for (const phrase of phrases) if (normalized.includes(phrase)) findings.push({ code: "rejected-service-public-claim", severity: "hard-fail", message: `Rejected/folded service claim leaked into public ${area}: ${phrase}.` });
+      return;
+    }
+    if (Array.isArray(value)) { value.forEach((child) => scan(child, area)); return; }
+    if (value && typeof value === "object") Object.values(value as Record<string, unknown>).forEach((child) => scan(child, area));
+  };
+  site.pages.forEach((page) => scan(page, `page ${pageRoute(page)}`));
+  scan(site.header, "header/navigation"); scan(site.footer, "footer");
   return findings;
 }
 
@@ -114,6 +132,7 @@ export async function runWholeSiteQa(input: unknown, options: WholeSiteQaOptions
   const site = deepFreeze(structuredClone(normalizeSite(input)));
   const findings: QaFinding[] = [...deterministic.findings];
   findings.push(...topologyFindings(site));
+  if (options.rejectedServiceNames) findings.push(...rejectedPublicClaimFindings(site, options.rejectedServiceNames));
   if (!options.assessor) {
     findings.push({ code: "independent-assessment-required", severity: "hard-fail", message: "Whole-site QA requires an independent structured assessor." });
   } else {
