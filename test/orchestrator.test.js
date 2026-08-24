@@ -36,7 +36,7 @@ function adapters({ failJudge = false } = {}) {
     ],
   };
   return {
-    calls, candidates,
+    calls, candidates, proposal,
     discovery: { discoverCandidates: async ({ searchStrings, location, limit }) => { calls.discover++; assert.deepEqual(searchStrings, ['electrician']); assert.equal(location, 'Dallas, TX'); return { kind: 'discovery-candidates', candidates: candidates.slice(0, limit), request: { searchStrings, location }, provenance: { run: { provider: 'apify', status: 'completed', runId: 'd1' } } }; } },
     websiteAudit: { audit: async ({ candidate }) => { calls.audit++; return { audit: { inspected: true, opportunity: 'buried service evidence', siteCopyEvidence: ['service page'], ownedGraphicEvidence: [{ id: 'graphic-1', text: 'EV charger' }], graphicsInspection: { status: 'inspected', findings: [{ id: 'graphic-1' }] }, publicImageUrls: [] }, receipt: { provider: 'cursor', jobId: `a-${candidate.placeId}`, status: 'completed' } }; } },
     enrichment: { enrichFinalist: async ({ placeId, limit, dateWindow }) => { calls.enrich++; assert.equal(placeId, 'one'); assert.equal(limit, 50); assert.equal(dateWindow, null); return { kind: 'finalist-review-enrichment', placeId, requestedReviewLimit: 50, dateWindow: null, listingReviewCount: 2, retrievalCompleteness: 'complete', reviews, emptyTextReviews: [], receipt: { provider: 'apify', runId: 'f1', status: 'completed' } }; } },
@@ -101,6 +101,48 @@ test('Architect corrections are validated and cannot infer a pass from Cursor', 
   assert.equal(result.nextAction.code, 'architect-qa-required');
   result = await runFactoryCycle({ root, config, adapters: api, architectDecision: { qa: { passed: true, whyBuilt } } });
   assert.equal(result.nextAction.code, 'awaiting-human-gate-1');
+});
+
+test('Architect correction reaches the pre-validation proposal boundary without repeating paid work', async () => {
+  const { root, config } = setup();
+  const api = adapters();
+  const invalidPages = api.proposal.pages.map((page) => ({ ...page }));
+  invalidPages[1] = {
+    ...invalidPages[1],
+    recommendedFirstReview: {
+      reviewId: 'r2', reviewer: 'Anthony', rating: 5, date: '2026-01-02',
+      exactText: 'Repaired a panel.', why: 'Wrong service on purpose.',
+    },
+  };
+  api.prescriber.propose = async ({ classification, decision }) => {
+    api.calls.proposal++;
+    assert.equal(classification.authoritativeJudgmentCount, 2);
+    return {
+      proposal: {
+        ...api.proposal,
+        pages: decision.pages || invalidPages,
+        architectReview: decision.architectReview || null,
+      },
+      receipt: { provider: 'cursor', status: 'completed', jobId: 'p1' },
+    };
+  };
+
+  await runFactoryCycle({ root, config, adapters: api, discoveryRequest: request });
+  const result = await runFactoryCycle({
+    root,
+    config,
+    adapters: api,
+    architectDecision: {
+      selection,
+      qa: { passed: true, whyBuilt, corrections: { pages: api.proposal.pages } },
+    },
+  });
+
+  assert.equal(result.nextAction.code, 'awaiting-human-gate-1');
+  assert.equal(api.calls.enrich, 1);
+  assert.equal(api.calls.proposal, 1);
+  assert.equal(api.calls.gate1, 1);
+  assert.equal(result.run.artifacts.prescription.pages[1].recommendedFirstReview.reviewId, 'r1');
 });
 
 test('enrichment truth checks reject wrong place, sample/limit five, and partial five of 110', () => {
