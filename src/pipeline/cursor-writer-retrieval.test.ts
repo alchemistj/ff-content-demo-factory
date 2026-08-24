@@ -6,6 +6,7 @@ import {
   createMemoryCursorReceiptStore,
   OFFICIAL_CURSOR_MODEL,
   recoverCursorWriterArtifact,
+  recoverCursorWriterArtifactForTest,
   retrieveCursorWriterOutput,
   validateCursorArtifactRecoveryReceipt,
   validateCursorWriterFollowUpReceipt,
@@ -119,14 +120,19 @@ const artifactPrior: CursorArtifactRecoveryPrior = {
   sourceBranch: "architect/360-words-canary", sourceSha: "c89f82dae009d5bef3cc327543e1664985c85b76", sealedHandoffDigest: "sha256:" + "5".repeat(64),
 };
 const artifactBytes = Buffer.from('{"schemaVersion":"words-writer1-output/v1","pages":[]}\n', "utf8");
+function artifactDownloadResult(id: string, artifactPath: string, bytes: Buffer, sourceUrl: string): any {
+  const cursorEndpoint = `https://api.cursor.com/v1/agents/${encodeURIComponent(id)}/artifacts/download?path=${encodeURIComponent(artifactPath)}`;
+  const url = new URL(sourceUrl); const evidence = { scheme: "https" as const, host: url.hostname.toLowerCase(), ...(url.port ? { port: Number(url.port) } : {}), pathname: url.pathname, queryParameterNames: [...url.searchParams.keys()].sort() };
+  const request = { agentId: id, logicalPath: artifactPath as "artifacts/writer1-output.json", cursorEndpoint, method: "GET" as const, apiVersion: "cloud-agent-api-v1" as const };
+  return { bytes, sourceUrl, agentId: id, logicalPath: request.logicalPath, cursorEndpoint, requestShapeDigest: digestOf(request), downloadRequestDigest: digestOf({ downloadRequest: request, presignedUrlEvidence: evidence }), presignedUrlEvidence: evidence, presignedUrlEvidenceDigest: digestOf(evidence) };
+}
 
 function artifactClientFor(state: { available: boolean; bytes?: Buffer; lists: number; downloads: number }): CursorArtifactClient {
   return {
     async list() { state.lists += 1; return state.available ? [{ path: "artifacts/writer1-output.json", size: (state.bytes || artifactBytes).length }] : []; },
     async download(id, artifactPath) {
       state.downloads += 1; const bytes = state.bytes || artifactBytes; const sourceUrl = "https://bucket.s3.us-east-1.amazonaws.com/opaque-key?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Signature=test";
-      const cursorEndpoint = `https://api.cursor.com/v1/agents/${encodeURIComponent(id)}/artifacts/download?path=${encodeURIComponent(artifactPath)}`; const request = { agentId: id, logicalPath: artifactPath as "artifacts/writer1-output.json", cursorEndpoint };
-      return { bytes, sourceUrl, agentId: id, logicalPath: request.logicalPath, cursorEndpoint, requestShapeDigest: digestOf(request), downloadRequestDigest: digestOf({ ...request, presignedUrl: sourceUrl }), presignedUrlDigest: digestOf(sourceUrl) };
+      return artifactDownloadResult(id, artifactPath, bytes, sourceUrl);
     },
   };
 }
@@ -145,24 +151,24 @@ function artifactTransport(counters: { creates: number; resumes: number; sends: 
 
 test("artifact recovery uses an existing materialized file directly and never creates or follows up", async () => {
   const store = createMemoryCursorReceiptStore(); const state = { available: true, lists: 0, downloads: 0 }; const counters = { creates: 0, resumes: 0, sends: 0 };
-  const result = await recoverCursorWriterArtifact({ env, receiptStore: store, prior: artifactPrior, prompt: "artifact recovery prompt", transport: artifactTransport(counters, state), artifactClient: artifactClientFor(state), validateOutput: (raw) => JSON.parse(raw) });
+  const result = await recoverCursorWriterArtifactForTest({ env, receiptStore: store, prior: artifactPrior, prompt: "artifact recovery prompt", transport: artifactTransport(counters, state), artifactClient: artifactClientFor(state), validateOutput: (raw) => JSON.parse(raw) });
   assert.equal(counters.creates, 0); assert.equal(counters.resumes, 0); assert.equal(counters.sends, 0); assert.equal(state.lists, 1); assert.equal(state.downloads, 1); assert.equal(result.receipt.artifact.path, "artifacts/writer1-output.json");
 });
 
 test("artifact recovery sends one same-thread follow-up, ignores summary output, and retries by downloading without a second send", async () => {
   const store = createMemoryCursorReceiptStore(); const state = { available: false, lists: 0, downloads: 0 }; const counters = { creates: 0, resumes: 0, sends: 0 }; const transport = artifactTransport(counters, state); const client = artifactClientFor(state);
-  const first = await recoverCursorWriterArtifact({ env, receiptStore: store, prior: artifactPrior, prompt: "artifact recovery prompt", transport, artifactClient: client, validateOutput: (raw) => JSON.parse(raw) });
+  const first = await recoverCursorWriterArtifactForTest({ env, receiptStore: store, prior: artifactPrior, prompt: "artifact recovery prompt", transport, artifactClient: client, validateOutput: (raw) => JSON.parse(raw) });
   assert.equal(counters.creates, 0); assert.equal(counters.resumes, 1); assert.equal(counters.sends, 1); assert.equal(first.receipt.recoveryRunId, "run-recovery-1");
-  const second = await recoverCursorWriterArtifact({ env, receiptStore: store, prior: artifactPrior, prompt: "artifact recovery prompt", transport, artifactClient: client, validateOutput: (raw) => JSON.parse(raw) });
+  const second = await recoverCursorWriterArtifactForTest({ env, receiptStore: store, prior: artifactPrior, prompt: "artifact recovery prompt", transport, artifactClient: client, validateOutput: (raw) => JSON.parse(raw) });
   assert.equal(counters.resumes, 1); assert.equal(counters.sends, 1); assert.equal(state.downloads, 2); assert.deepEqual(second.receipt.artifact, first.receipt.artifact);
 });
 
 test("artifact recovery rejects a summary artifact without a completed receipt, then reattaches the persisted run", async () => {
   const store = createMemoryCursorReceiptStore(); const state = { available: false, lists: 0, downloads: 0, bytes: Buffer.from("summary only", "utf8") }; const counters = { creates: 0, resumes: 0, sends: 0 }; const transport = artifactTransport(counters, state); const client = artifactClientFor(state);
-  await assert.rejects(() => recoverCursorWriterArtifact({ env, receiptStore: store, prior: artifactPrior, prompt: "artifact recovery prompt", transport, artifactClient: client, validateOutput: () => { throw new Error("summary artifact is not complete Writer1 JSON"); } }), /summary artifact/);
+  await assert.rejects(() => recoverCursorWriterArtifactForTest({ env, receiptStore: store, prior: artifactPrior, prompt: "artifact recovery prompt", transport, artifactClient: client, validateOutput: () => { throw new Error("summary artifact is not complete Writer1 JSON"); } }), /summary artifact/);
   assert.equal(counters.sends, 1); assert.equal([...store.records.values()].some((value: any) => value.mode === "same-thread-artifact-recovery"), false);
   const claim = store.claims.values().next().value as any; claim.leaseUntil = new Date(0).toISOString(); store.claims.set(claim.key, claim); state.bytes = artifactBytes;
-  const recovered = await recoverCursorWriterArtifact({ env, receiptStore: store, prior: artifactPrior, prompt: "artifact recovery prompt", transport, artifactClient: client, validateOutput: (raw) => JSON.parse(raw) });
+  const recovered = await recoverCursorWriterArtifactForTest({ env, receiptStore: store, prior: artifactPrior, prompt: "artifact recovery prompt", transport, artifactClient: client, validateOutput: (raw) => JSON.parse(raw) });
   assert.equal(counters.sends, 1); assert.equal(counters.resumes, 1); assert.equal(recovered.receipt.mode, "same-thread-artifact-recovery");
 });
 
@@ -171,8 +177,8 @@ test("artifact download rejects non-S3 redirects and duplicate artifact paths fa
   const client = createCursorArtifactClient(async () => { calls += 1; if (calls === 1) return new Response(JSON.stringify({ items: [{ path: "artifacts/writer1-output.json", sizeBytes: 7 }] }), { status: 200 }); return new Response(JSON.stringify({ url: "https://evil.example/download?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Signature=x" }), { status: 200 }); });
   assert.deepEqual(await client.list(artifactAgentId, "key"), [{ path: "artifacts/writer1-output.json", size: 7 }]);
   await assert.rejects(() => client.download(artifactAgentId, "artifacts/writer1-output.json", "key"), /invalid|approved S3/u);
-  const store = createMemoryCursorReceiptStore(); const counters = { creates: 0, resumes: 0, sends: 0 }; const duplicateClient: CursorArtifactClient = { list: async () => [{ path: "artifacts/writer1-output.json", size: artifactBytes.length }, { path: "artifacts/writer1-output.json", size: artifactBytes.length }], download: async (id, artifactPath) => { const sourceUrl = "https://bucket.s3.us-east-1.amazonaws.com/a?X-Amz-Algorithm=x&X-Amz-Signature=x"; const cursorEndpoint = `https://api.cursor.com/v1/agents/${encodeURIComponent(id)}/artifacts/download?path=${encodeURIComponent(artifactPath)}`; const request = { agentId: id, logicalPath: artifactPath as "artifacts/writer1-output.json", cursorEndpoint }; return { bytes: artifactBytes, sourceUrl, agentId: id, logicalPath: request.logicalPath, cursorEndpoint, requestShapeDigest: digestOf(request), downloadRequestDigest: digestOf({ ...request, presignedUrl: sourceUrl }), presignedUrlDigest: digestOf(sourceUrl) }; } };
-  await assert.rejects(() => recoverCursorWriterArtifact({ env, receiptStore: store, prior: artifactPrior, prompt: "artifact recovery prompt", transport: artifactTransport(counters, { available: false }), artifactClient: duplicateClient, validateOutput: (raw) => JSON.parse(raw) }), /multiple artifacts|race/u); assert.equal(counters.sends, 0);
+  const store = createMemoryCursorReceiptStore(); const counters = { creates: 0, resumes: 0, sends: 0 }; const duplicateClient: CursorArtifactClient = { list: async () => [{ path: "artifacts/writer1-output.json", size: artifactBytes.length }, { path: "artifacts/writer1-output.json", size: artifactBytes.length }], download: async (id, artifactPath) => artifactDownloadResult(id, artifactPath, artifactBytes, "https://bucket.s3.us-east-1.amazonaws.com/a?X-Amz-Algorithm=x&X-Amz-Signature=x") };
+  await assert.rejects(() => recoverCursorWriterArtifactForTest({ env, receiptStore: store, prior: artifactPrior, prompt: "artifact recovery prompt", transport: artifactTransport(counters, { available: false }), artifactClient: duplicateClient, validateOutput: (raw) => JSON.parse(raw) }), /multiple artifacts|race/u); assert.equal(counters.sends, 0);
 });
 
 test("a present but invalid pre-existing artifact fails closed without a follow-up", async () => {
@@ -183,7 +189,7 @@ test("a present but invalid pre-existing artifact fails closed without a follow-
   ] as const;
   for (const [label, raw] of invalids) {
     const store = createMemoryCursorReceiptStore(); const state = { available: true, lists: 0, downloads: 0, bytes: Buffer.from(raw) }; const counters = { creates: 0, resumes: 0, sends: 0 };
-    await assert.rejects(() => recoverCursorWriterArtifact({ env, receiptStore: store, prior: artifactPrior, prompt: "artifact recovery prompt", transport: artifactTransport(counters, state), artifactClient: artifactClientFor(state), validateOutput: () => { throw new Error(`${label} artifact is invalid`); } }), new RegExp(`${label} artifact is invalid`, "u"));
+    await assert.rejects(() => recoverCursorWriterArtifactForTest({ env, receiptStore: store, prior: artifactPrior, prompt: "artifact recovery prompt", transport: artifactTransport(counters, state), artifactClient: artifactClientFor(state), validateOutput: () => { throw new Error(`${label} artifact is invalid`); } }), new RegExp(`${label} artifact is invalid`, "u"));
     assert.equal(counters.resumes, 0, label); assert.equal(counters.sends, 0, label); assert.equal([...store.records.values()].some((value: any) => value.mode === "same-thread-artifact-recovery"), false, label);
   }
 });
@@ -216,8 +222,8 @@ test("artifact descriptors and downloaded streams are bounded at one MiB", async
 
 test("descriptor/download size mismatch fails before completion", async () => {
   const store = createMemoryCursorReceiptStore(); const counters = { creates: 0, resumes: 0, sends: 0 }; const bytes = Buffer.from('{"ok":true}', "utf8"); const sourceUrl = "https://bucket.s3.us-east-1.amazonaws.com/opaque?X-Amz-Algorithm=x&X-Amz-Signature=x";
-  const client: CursorArtifactClient = { list: async () => [{ path: "artifacts/writer1-output.json", size: bytes.length + 1 }], download: async (id, artifactPath) => { const cursorEndpoint = `https://api.cursor.com/v1/agents/${encodeURIComponent(id)}/artifacts/download?path=${encodeURIComponent(artifactPath)}`; const request = { agentId: id, logicalPath: artifactPath as "artifacts/writer1-output.json", cursorEndpoint }; return { bytes, sourceUrl, agentId: id, logicalPath: request.logicalPath, cursorEndpoint, requestShapeDigest: digestOf(request), downloadRequestDigest: digestOf({ ...request, presignedUrl: sourceUrl }), presignedUrlDigest: digestOf(sourceUrl) }; } };
-  await assert.rejects(() => recoverCursorWriterArtifact({ env, receiptStore: store, prior: artifactPrior, prompt: "artifact recovery prompt", transport: artifactTransport(counters, { available: true, bytes }), artifactClient: client, validateOutput: (raw) => JSON.parse(raw) }), /size changed/u);
+  const client: CursorArtifactClient = { list: async () => [{ path: "artifacts/writer1-output.json", size: bytes.length + 1 }], download: async (id, artifactPath) => artifactDownloadResult(id, artifactPath, bytes, sourceUrl) };
+  await assert.rejects(() => recoverCursorWriterArtifactForTest({ env, receiptStore: store, prior: artifactPrior, prompt: "artifact recovery prompt", transport: artifactTransport(counters, { available: true, bytes }), artifactClient: client, validateOutput: (raw) => JSON.parse(raw) }), /size changed/u);
   assert.equal(counters.sends, 0); assert.equal([...store.records.values()].some((value: any) => value.mode === "same-thread-artifact-recovery"), false);
 });
 
@@ -229,11 +235,43 @@ test("Cursor response is the only presigned URL authority and its binding is rec
 });
 
 test("altered opaque URL or request/path binding cannot validate a completed receipt", async () => {
-  const store = createMemoryCursorReceiptStore(); const counters = { creates: 0, resumes: 0, sends: 0 }; const state = { available: true, lists: 0, downloads: 0 }; let sourceUrl = "https://bucket.s3.us-east-1.amazonaws.com/opaque-a?X-Amz-Algorithm=x&X-Amz-Signature=x"; const client: CursorArtifactClient = { list: async () => [{ path: "artifacts/writer1-output.json", size: artifactBytes.length }], download: async (id, artifactPath) => { const cursorEndpoint = `https://api.cursor.com/v1/agents/${encodeURIComponent(id)}/artifacts/download?path=${encodeURIComponent(artifactPath)}`; const request = { agentId: id, logicalPath: artifactPath as "artifacts/writer1-output.json", cursorEndpoint }; return { bytes: artifactBytes, sourceUrl, agentId: id, logicalPath: request.logicalPath, cursorEndpoint, requestShapeDigest: digestOf(request), downloadRequestDigest: digestOf({ ...request, presignedUrl: sourceUrl }), presignedUrlDigest: digestOf(sourceUrl) }; } };
-  const first = await recoverCursorWriterArtifact({ env, receiptStore: store, prior: artifactPrior, prompt: "artifact recovery prompt", transport: artifactTransport(counters, state), artifactClient: client, validateOutput: (raw) => JSON.parse(raw) });
+  const store = createMemoryCursorReceiptStore(); const counters = { creates: 0, resumes: 0, sends: 0 }; const state = { available: true, lists: 0, downloads: 0 }; let sourceUrl = "https://bucket.s3.us-east-1.amazonaws.com/opaque-a?X-Amz-Algorithm=x&X-Amz-Signature=x"; const client: CursorArtifactClient = { list: async () => [{ path: "artifacts/writer1-output.json", size: artifactBytes.length }], download: async (id, artifactPath) => artifactDownloadResult(id, artifactPath, artifactBytes, sourceUrl) };
+  const first = await recoverCursorWriterArtifactForTest({ env, receiptStore: store, prior: artifactPrior, prompt: "artifact recovery prompt", transport: artifactTransport(counters, state), artifactClient: client, validateOutput: (raw) => JSON.parse(raw) });
   sourceUrl = "https://bucket.s3.us-east-1.amazonaws.com/opaque-b?X-Amz-Algorithm=x&X-Amz-Signature=x";
-  await assert.rejects(() => recoverCursorWriterArtifact({ env, receiptStore: store, prior: artifactPrior, prompt: "artifact recovery prompt", transport: artifactTransport(counters, state), artifactClient: client, validateOutput: (raw) => JSON.parse(raw) }), /changed after/u);
-  assert.equal(first.receipt.artifact.presignedUrlDigest, digestOf("https://bucket.s3.us-east-1.amazonaws.com/opaque-a?X-Amz-Algorithm=x&X-Amz-Signature=x"));
+  await assert.rejects(() => recoverCursorWriterArtifactForTest({ env, receiptStore: store, prior: artifactPrior, prompt: "artifact recovery prompt", transport: artifactTransport(counters, state), artifactClient: client, validateOutput: (raw) => JSON.parse(raw) }), /changed after/u);
+  assert.equal(first.receipt.artifact.presignedUrlEvidenceDigest, digestOf(first.receipt.artifact.presignedUrlEvidence));
   const tampered = structuredClone(first.receipt) as any; tampered.artifact.requestShapeDigest = digestOf({ agentId: artifactAgentId, logicalPath: "artifacts/other.json", cursorEndpoint: "https://api.cursor.com/other" });
   assert.throws(() => validateCursorArtifactRecoveryReceipt(tampered, artifactPrior, digestOf("artifact recovery prompt")), /request binding|invalid/u);
+});
+
+test("recovery receipt stores recomputable non-secret request and URL evidence only", async () => {
+  const store = createMemoryCursorReceiptStore(); const counters = { creates: 0, resumes: 0, sends: 0 }; const state = { available: true, lists: 0, downloads: 0 }; const result = await recoverCursorWriterArtifactForTest({ env, receiptStore: store, prior: artifactPrior, prompt: "artifact recovery prompt", transport: artifactTransport(counters, state), artifactClient: artifactClientFor(state), validateOutput: (raw) => JSON.parse(raw) });
+  const artifact = result.receipt.artifact; assert.deepEqual(artifact.downloadRequest, { agentId: artifactAgentId, logicalPath: "artifacts/writer1-output.json", cursorEndpoint: `https://api.cursor.com/v1/agents/${encodeURIComponent(artifactAgentId)}/artifacts/download?path=artifacts%2Fwriter1-output.json`, method: "GET", apiVersion: "cloud-agent-api-v1" });
+  assert.equal(artifact.downloadRequestDigest, digestOf({ downloadRequest: artifact.downloadRequest, presignedUrlEvidence: artifact.presignedUrlEvidence }));
+  assert.equal(artifact.presignedUrlEvidenceDigest, digestOf(artifact.presignedUrlEvidence));
+  assert.deepEqual(artifact.presignedUrlEvidence.queryParameterNames, ["X-Amz-Algorithm", "X-Amz-Signature"]);
+  assert.doesNotMatch(JSON.stringify(result.receipt), /X-Amz-Signature=x/u);
+});
+
+test("configured-secret HMAC rejects forged recovery receipt fields and wrong secrets", async () => {
+  const store = createMemoryCursorReceiptStore(); const counters = { creates: 0, resumes: 0, sends: 0 }; const state = { available: true, lists: 0, downloads: 0 }; const result = await recoverCursorWriterArtifactForTest({ env, receiptStore: store, prior: artifactPrior, prompt: "artifact recovery prompt", transport: artifactTransport(counters, state), artifactClient: artifactClientFor(state), validateOutput: (raw) => JSON.parse(raw) });
+  const mutations: Array<[string, (receipt: any) => void]> = [
+    ["request digest", (receipt) => { receipt.artifact.downloadRequestDigest = "sha256:" + "a".repeat(64); }],
+    ["URL evidence", (receipt) => { receipt.artifact.presignedUrlEvidence.pathname = "/altered"; }],
+    ["URL evidence digest", (receipt) => { receipt.artifact.presignedUrlEvidenceDigest = "sha256:" + "b".repeat(64); }],
+    ["path", (receipt) => { receipt.artifact.path = "artifacts/other.json"; }], ["size", (receipt) => { receipt.artifact.size += 1; }],
+    ["byte digest", (receipt) => { receipt.artifact.byteDigest = "sha256:" + "c".repeat(64); }], ["output", (receipt) => { receipt.output = { forged: true }; }],
+    ["agent", (receipt) => { receipt.agentId = "bc-forged"; }], ["run", (receipt) => { receipt.jobId = "run-forged"; receipt.recoveryRunId = "run-forged"; }],
+    ["thread", (receipt) => { receipt.threadUrl = "https://cursor.com/agents/bc-forged"; }], ["model", (receipt) => { receipt.resolvedModel = "forged"; }],
+    ["sealed pin", (receipt) => { receipt.recoveryPrior.sealedHandoffDigest = "sha256:" + "d".repeat(64); }],
+  ];
+  for (const [label, mutate] of mutations) { const forged = structuredClone(result.receipt) as any; mutate(forged); assert.throws(() => validateCursorArtifactRecoveryReceipt(forged, artifactPrior, digestOf("artifact recovery prompt"), env.CURSOR_API_KEY), /MAC|binding|invalid|tampered|mismatch|output|thread|model/u, label); }
+  assert.throws(() => validateCursorArtifactRecoveryReceipt(result.receipt, artifactPrior, digestOf("artifact recovery prompt"), "wrong-secret"), /MAC/u);
+});
+
+test("production recovery rejects caller-supplied artifact and transport seams before any vendor access", async () => {
+  const counters = { creates: 0, resumes: 0, sends: 0, lists: 0 }; const state = { available: false, lists: 0, downloads: 0 };
+  const fakeArtifactClient = { list: async () => { counters.lists += 1; return []; }, download: async () => { throw new Error("must not download"); } };
+  await assert.rejects(() => recoverCursorWriterArtifact({ env, receiptStore: createMemoryCursorReceiptStore(), prior: artifactPrior, prompt: "artifact recovery prompt", validateOutput: () => undefined, artifactClient: fakeArtifactClient, transport: artifactTransport(counters, state) } as any), (error: unknown) => (error as { code?: string }).code === "CURSOR_ARTIFACT_CLIENT_SUBSTITUTION_FORBIDDEN");
+  assert.deepEqual(counters, { creates: 0, resumes: 0, sends: 0, lists: 0 });
 });

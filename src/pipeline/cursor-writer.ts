@@ -1,9 +1,9 @@
-import { createHash } from "node:crypto";
+import { createHash, createHmac, timingSafeEqual } from "node:crypto";
 import * as fs from "node:fs/promises";
 import * as path from "node:path";
 import { Agent } from "@cursor/sdk";
 import type { AgentOptions, SDKAgent, Run } from "@cursor/sdk";
-import { digestOf } from "../contracts/digests.js";
+import { canonicalize, digestOf } from "../contracts/digests.js";
 
 export const CURSOR_PROVIDER = "cursor-sdk" as const;
 export const REQUIRED_CURSOR_MODEL = "cursor-grok-4.6-high" as const;
@@ -29,6 +29,7 @@ export interface CursorWriterReceipt {
   recoveryVersion?: "words-writer1-artifact-recovery/v1";
   recoveryRunId?: string;
   recoveryPrior?: CursorArtifactRecoveryPrior;
+  integrityMac?: string;
 }
 export interface CursorWriterPendingReceipt {
   stage: CursorWriterStage; provider: typeof CURSOR_PROVIDER; requestedModel: typeof REQUIRED_CURSOR_MODEL;
@@ -107,12 +108,33 @@ export function validateCursorWriterRuntime(config: CursorWriterRuntimeConfig): 
 function assertDigest(value: unknown, field: string): asserts value is string {
   if (typeof value !== "string" || !DIGEST.test(value)) throw new CursorWriterExecutionError("CURSOR_RECEIPT_INVALID", `Receipt ${field} must be a sha256 digest`);
 }
+const RECEIPT_MAC_DOMAIN = "ff-content-demo-factory/cursor-writer-receipt/hmac-sha256/v1";
+function unsignedReceiptJson(receipt: unknown): string {
+  const value = asRecord(receipt); if (!value) throw new CursorWriterExecutionError("CURSOR_RECEIPT_INVALID", "Receipt must be an object before MAC validation");
+  const { integrityMac: _integrityMac, ...unsigned } = value;
+  return JSON.stringify(canonicalize(unsigned));
+}
+function receiptIntegrityMac(receipt: unknown, cursorApiKey: string): string {
+  const derivedKey = createHmac("sha256", RECEIPT_MAC_DOMAIN).update(cursorApiKey, "utf8").digest();
+  return `hmac-sha256:${createHmac("sha256", derivedKey).update(unsignedReceiptJson(receipt), "utf8").digest("hex")}`;
+}
+function withReceiptIntegrityMac<T extends object>(receipt: T, cursorApiKey: string): T & { integrityMac: string } {
+  return { ...(receipt as Record<string, unknown>), integrityMac: receiptIntegrityMac(receipt, cursorApiKey) } as T & { integrityMac: string };
+}
+function validateReceiptIntegrityMac(receipt: unknown, cursorApiKey?: string): void {
+  const value = asRecord(receipt); if (!value) return;
+  if (value.integrityMac !== undefined && (typeof value.integrityMac !== "string" || !/^hmac-sha256:[0-9a-f]{64}$/u.test(value.integrityMac))) throw new CursorWriterExecutionError("CURSOR_RECEIPT_MAC_INVALID", "Cursor receipt integrity MAC has an invalid format");
+  if (!cursorApiKey) return; // Legacy prior artifacts may predate receipt MACs; all new runtime/resume writes supply the secret.
+  if (typeof value.integrityMac !== "string") throw new CursorWriterExecutionError("CURSOR_RECEIPT_MAC_MISSING", "Cursor receipt is missing its secret-bound integrity MAC");
+  const expected = receiptIntegrityMac(receipt, cursorApiKey); const actualBytes = Buffer.from(value.integrityMac.slice("hmac-sha256:".length), "hex"); const expectedBytes = Buffer.from(expected.slice("hmac-sha256:".length), "hex");
+  if (actualBytes.length !== expectedBytes.length || !timingSafeEqual(actualBytes, expectedBytes)) throw new CursorWriterExecutionError("CURSOR_RECEIPT_MAC_MISMATCH", "Cursor receipt integrity MAC does not match the configured Cursor secret");
+}
 function assertThreadUrl(value: unknown, agentId: string): asserts value is string {
   if (typeof value !== "string" || !value.trim()) throw new CursorWriterExecutionError("CURSOR_THREAD_URL_INVALID", "Cursor Cloud did not return a direct thread URL");
   let url: URL; try { url = new URL(value); } catch { throw new CursorWriterExecutionError("CURSOR_THREAD_URL_INVALID", "Cursor thread URL is not a valid URL"); }
   if (url.protocol !== "https:" || url.hostname !== "cursor.com" || url.search || url.hash || url.pathname !== `/agents/${agentId}`) throw new CursorWriterExecutionError("CURSOR_THREAD_URL_INVALID", "Cursor thread URL is not the authenticated Cloud Agent URL bound to the returned agent ID", { value, agentId });
 }
-export function validateCursorWriterReceipt(receipt: unknown): asserts receipt is CursorWriterReceipt {
+export function validateCursorWriterReceipt(receipt: unknown, cursorApiKey?: string): asserts receipt is CursorWriterReceipt {
   const value = asRecord(receipt); if (!value) throw new CursorWriterExecutionError("CURSOR_RECEIPT_INVALID", "Writer completion requires a Cursor receipt object");
   validateCursorWriterRuntime({ provider: value.provider, requestedModel: value.requestedModel, resolvedModel: value.resolvedModel, fast: value.fast });
   if (!STAGES.has(value.stage as CursorWriterStage)) throw new CursorWriterExecutionError("CURSOR_RECEIPT_INVALID", "Receipt stage is invalid");
@@ -132,6 +154,7 @@ export function validateCursorWriterReceipt(receipt: unknown): asserts receipt i
   assertFastBound(asRecord(value.createRequest) as AgentOptions, []);
   if (typeof value.completedAt !== "string" || Number.isNaN(Date.parse(value.completedAt)) || new Date(value.completedAt).toISOString() !== value.completedAt) throw new CursorWriterExecutionError("CURSOR_RECEIPT_INVALID", "Receipt completedAt must be a canonical ISO timestamp");
   if (digestOf(value.output) !== value.outputDigest) throw new CursorWriterExecutionError("CURSOR_RECEIPT_OUTPUT_TAMPERED", "Cursor receipt output no longer matches its output digest");
+  validateReceiptIntegrityMac(value, cursorApiKey);
 }
 function validatePendingReceipt(receipt: unknown): asserts receipt is CursorWriterPendingReceipt {
   const value = asRecord(receipt); if (!value) throw new CursorWriterExecutionError("CURSOR_RECEIPT_INVALID", "Pending Cursor receipt is invalid");
@@ -180,10 +203,12 @@ export interface CursorFollowUpReceipt extends CursorWriterReceipt {
 }
 /** Conservative upper bound for the complete two-page Writer1 artifact. */
 export const MAX_WRITER1_ARTIFACT_BYTES = 1024 * 1024;
-export interface CursorArtifactDownloadRequest { agentId: string; logicalPath: "artifacts/writer1-output.json"; cursorEndpoint: string; }
+export interface CursorArtifactDownloadRequest { agentId: string; logicalPath: "artifacts/writer1-output.json"; cursorEndpoint: string; method: "GET"; apiVersion: "cloud-agent-api-v1"; }
+export interface CursorPresignedUrlEvidence { scheme: "https"; host: string; port?: number; pathname: string; queryParameterNames: string[]; }
 export interface CursorArtifactBinding {
   path: "artifacts/writer1-output.json"; size: number; sha256: string; contentSize: number; byteDigest: string;
-  downloadRequest: CursorArtifactDownloadRequest; requestShapeDigest: string; downloadRequestDigest: string; presignedUrlDigest: string;
+  downloadRequest: CursorArtifactDownloadRequest; requestShapeDigest: string; downloadRequestDigest: string;
+  presignedUrlEvidence: CursorPresignedUrlEvidence; presignedUrlEvidenceDigest: string;
 }
 export interface CursorArtifactRecoveryPrior {
   actionRunId: string; artifactId: number; runId: string; agentId: string; threadUrl: string;
@@ -203,7 +228,7 @@ export interface CursorArtifactRecoveryReceipt extends CursorWriterReceipt {
 export interface CursorArtifactDescriptor { path: string; size: number; sha256?: string; }
 export interface CursorArtifactClient {
   list(agentId: string, apiKey: string): Promise<CursorArtifactDescriptor[]>;
-  download(agentId: string, artifactPath: string, apiKey: string): Promise<{ bytes: Buffer; sourceUrl: string; agentId: string; logicalPath: "artifacts/writer1-output.json"; cursorEndpoint: string; requestShapeDigest: string; downloadRequestDigest: string; presignedUrlDigest: string }>;
+  download(agentId: string, artifactPath: string, apiKey: string): Promise<{ bytes: Buffer; sourceUrl: string; agentId: string; logicalPath: "artifacts/writer1-output.json"; cursorEndpoint: string; requestShapeDigest: string; downloadRequestDigest: string; presignedUrlEvidence: CursorPresignedUrlEvidence; presignedUrlEvidenceDigest: string }>;
 }
 const API_VERSION = "cloud-agent-api-v1" as const;
 function modelOptions(apiKey: string, selection: CursorModelSelection): AgentOptions { return { apiKey, model: { id: selection.officialId, params: selection.params }, cloud: { env: { type: "cloud" } } }; }
@@ -260,10 +285,14 @@ function artifactDownloadEndpoint(agentId: string, artifactPath: string): string
   return `${CURSOR_CLOUD_API}/v1/agents/${encodeURIComponent(agentId)}/artifacts/download?path=${encodeURIComponent(artifactPath)}`;
 }
 function artifactRequestShape(agentId: string, artifactPath: "artifacts/writer1-output.json", cursorEndpoint: string): CursorArtifactDownloadRequest {
-  return { agentId, logicalPath: artifactPath, cursorEndpoint };
+  return { agentId, logicalPath: artifactPath, cursorEndpoint, method: "GET", apiVersion: "cloud-agent-api-v1" };
 }
-function artifactDownloadDigest(request: CursorArtifactDownloadRequest, sourceUrl: string): string {
-  return digestOf({ ...request, presignedUrl: sourceUrl });
+function presignedUrlEvidence(url: URL): CursorPresignedUrlEvidence {
+  const port = url.port ? Number(url.port) : undefined;
+  return { scheme: "https", host: url.hostname.toLowerCase(), ...(port === undefined ? {} : { port }), pathname: url.pathname, queryParameterNames: [...url.searchParams.keys()].sort() };
+}
+function artifactDownloadDigest(request: CursorArtifactDownloadRequest, evidence: CursorPresignedUrlEvidence): string {
+  return digestOf({ downloadRequest: request, presignedUrlEvidence: evidence });
 }
 async function readBoundedResponse(response: Response): Promise<Buffer> {
   const lengthHeader = response.headers.get("content-length");
@@ -312,13 +341,14 @@ export function createCursorArtifactClient(fetchImpl: typeof fetch = fetch): Cur
       // the opaque S3 key mirrors the logical artifact path, so it never
       // invents that equality. Trust is bound to the authenticated Cursor
       // request, the exact URL Cursor returned, and the downloaded bytes.
-      approvedCursorArtifactUrl(location);
+      const approvedUrl = approvedCursorArtifactUrl(location);
       const sourceUrl = location;
+      const urlEvidence = presignedUrlEvidence(approvedUrl);
       const downloadedResponse = await fetchImpl(sourceUrl, { redirect: "error" });
       if (!downloadedResponse.ok) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_DOWNLOAD_FAILED", `Cursor presigned artifact download failed with ${downloadedResponse.status}`);
       const bytes = await readBoundedResponse(downloadedResponse);
       const request = artifactRequestShape(agentId, artifactPath, endpoint);
-      return { bytes, sourceUrl, agentId, logicalPath: artifactPath, cursorEndpoint: endpoint, requestShapeDigest: digestOf(request), downloadRequestDigest: artifactDownloadDigest(request, sourceUrl), presignedUrlDigest: digestOf(sourceUrl) };
+      return { bytes, sourceUrl, agentId, logicalPath: artifactPath, cursorEndpoint: endpoint, requestShapeDigest: digestOf(request), downloadRequestDigest: artifactDownloadDigest(request, urlEvidence), presignedUrlEvidence: urlEvidence, presignedUrlEvidenceDigest: digestOf(urlEvidence) };
     },
   };
 }
@@ -357,8 +387,8 @@ function deterministicAgentId(key: string): string { const hex = createHash("sha
 function resolvedModelOf(agent: SDKAgent, run: Run, result: unknown): unknown { const resultRecord = asRecord(result); const runModel = asRecord(run.model); const agentModel = asRecord(agent.model); return runModel?.id ?? (resultRecord && asRecord(resultRecord.model)?.id) ?? agentModel?.id; }
 function outputOf(result: unknown): unknown { const value = asRecord(result); return value?.result ?? value?.output ?? result; }
 
-export function validateCursorWriterFollowUpReceipt(receipt: unknown, prior: CursorFollowUpBindings, promptDigest: string): asserts receipt is CursorFollowUpReceipt {
-  validateCursorWriterReceipt(receipt);
+export function validateCursorWriterFollowUpReceipt(receipt: unknown, prior: CursorFollowUpBindings, promptDigest: string, cursorApiKey?: string): asserts receipt is CursorFollowUpReceipt {
+  validateCursorWriterReceipt(receipt, cursorApiKey);
   const value = receipt as CursorWriterReceipt;
   if (value.mode !== "same-thread-retrieval" || value.correctionVersion !== "words-writer1-retrieval/v1") throw new CursorWriterExecutionError("CURSOR_FOLLOW_UP_RECEIPT_INVALID", "Cursor receipt is not the versioned Writer1 same-thread retrieval mode");
   if (!value.prior || JSON.stringify(value.prior) !== JSON.stringify(prior)) throw new CursorWriterExecutionError("CURSOR_FOLLOW_UP_BINDING_INVALID", "Cursor follow-up receipt lost the prior artifact/receipt binding");
@@ -386,7 +416,7 @@ export async function retrieveCursorWriterOutput(input: {
   validateCursorWriterRuntime({ provider: CURSOR_PROVIDER, requestedModel, fast });
   if (!env.CURSOR_API_KEY) throw new CursorWriterExecutionError("CURSOR_API_KEY_REQUIRED", "Cloud Cursor production requires CURSOR_API_KEY");
   if (typeof input.prompt !== "string" || !input.prompt.trim()) throw new CursorWriterExecutionError("CURSOR_PROMPT_REQUIRED", "Writer retrieval requires a non-empty correction prompt");
-  validateCursorWriterReceipt(input.priorReceipt);
+  validateCursorWriterReceipt(input.priorReceipt, env.CURSOR_API_KEY);
   if (input.prior.priorJobId !== input.priorReceipt.jobId || input.prior.priorAgentId !== input.priorReceipt.agentId || input.prior.priorThreadUrl !== input.priorReceipt.threadUrl || input.prior.priorOutputDigest !== input.priorReceipt.outputDigest || input.prior.priorInputDigest !== input.priorReceipt.inputDigest || input.prior.priorPromptDigest !== input.priorReceipt.promptDigest || input.prior.priorRequestDigest !== input.priorReceipt.requestDigest) throw new CursorWriterExecutionError("CURSOR_PRIOR_BINDING_INVALID", "Prior Cursor receipt does not match the supplied artifact bindings");
   const transport = input.transport || await officialCloudTransport();
   const selection = resolveCursorModelSelection(await transport.listModels(env.CURSOR_API_KEY), requestedModel);
@@ -395,7 +425,7 @@ export async function retrieveCursorWriterOutput(input: {
   const key = `${input.runId}:writer1:retrieval:v1:${input.prior.priorJobId}:${inputDigest}:${promptDigest}`;
   const existing = await input.receiptStore.get(key);
   if (existing) {
-    validateCursorWriterFollowUpReceipt(existing, input.prior, promptDigest);
+    validateCursorWriterFollowUpReceipt(existing, input.prior, promptDigest, env.CURSOR_API_KEY);
     const claim = await input.receiptStore.getClaim?.(key);
     if (!claim) throw new CursorWriterExecutionError("CURSOR_FOLLOW_UP_CLAIM_MISSING", "Completed Cursor follow-up has no durable correction claim");
     return { output: existing.output, receipt: existing, threadUrl: existing.threadUrl, claim };
@@ -406,7 +436,7 @@ export async function retrieveCursorWriterOutput(input: {
   let activeClaim = claimed.claim;
   if (!claimed.acquired) {
     const settled = await input.receiptStore.get(key);
-    if (settled) { validateCursorWriterFollowUpReceipt(settled, input.prior, promptDigest); const finishedClaim = await input.receiptStore.getClaim(key); if (!finishedClaim) throw new CursorWriterExecutionError("CURSOR_FOLLOW_UP_CLAIM_MISSING", "Completed Cursor follow-up has no durable correction claim"); return { output: settled.output, receipt: settled, threadUrl: settled.threadUrl, claim: finishedClaim }; }
+    if (settled) { validateCursorWriterFollowUpReceipt(settled, input.prior, promptDigest, env.CURSOR_API_KEY); const finishedClaim = await input.receiptStore.getClaim(key); if (!finishedClaim) throw new CursorWriterExecutionError("CURSOR_FOLLOW_UP_CLAIM_MISSING", "Completed Cursor follow-up has no durable correction claim"); return { output: settled.output, receipt: settled, threadUrl: settled.threadUrl, claim: finishedClaim }; }
     throw new CursorWriterExecutionError("CURSOR_DISPATCH_IN_PROGRESS", "Another worker owns the live Cursor follow-up claim; caller must reconcile before retrying", { key, phase: activeClaim.phase || "claimed" });
   }
   const options = modelOptions(env.CURSOR_API_KEY, selection);
@@ -445,8 +475,8 @@ export async function retrieveCursorWriterOutput(input: {
   if (input.validateOutput) input.validateOutput(output);
   const attestationSource = assertFastBound(options, [agent, run, result]);
   const effortAttestationSource = assertEffortBound(selection, [agent, run, result]);
-  const receipt: CursorFollowUpReceipt = { stage: "writer1", provider: CURSOR_PROVIDER, requestedModel: REQUIRED_CURSOR_MODEL, resolvedModel: OFFICIAL_CURSOR_MODEL, fast: false, jobId, agentId, threadUrl: record.url, inputDigest, promptDigest, outputDigest: digestOf(output), completedAt: now().toISOString(), status: "complete", output, requestDigest, createRequest: followUpRequest, registryItem: selection.registryItem, registryDigest: selection.registryDigest, modelParams: selection.params, effort: "high", ...(selection.effortParameterId ? { effortParameterId: selection.effortParameterId } : {}), effortAttestationSource, attestationSource, apiVersion: API_VERSION, mode: "same-thread-retrieval", correctionVersion: "words-writer1-retrieval/v1", prior: input.prior, followUpPromptDigest: promptDigest };
-  validateCursorWriterFollowUpReceipt(receipt, input.prior, promptDigest);
+  const receipt: CursorFollowUpReceipt = withReceiptIntegrityMac({ stage: "writer1", provider: CURSOR_PROVIDER, requestedModel: REQUIRED_CURSOR_MODEL, resolvedModel: OFFICIAL_CURSOR_MODEL, fast: false, jobId, agentId, threadUrl: record.url, inputDigest, promptDigest, outputDigest: digestOf(output), completedAt: now().toISOString(), status: "complete", output, requestDigest, createRequest: followUpRequest, registryItem: selection.registryItem, registryDigest: selection.registryDigest, modelParams: selection.params, effort: "high", ...(selection.effortParameterId ? { effortParameterId: selection.effortParameterId } : {}), effortAttestationSource, attestationSource, apiVersion: API_VERSION, mode: "same-thread-retrieval", correctionVersion: "words-writer1-retrieval/v1", prior: input.prior, followUpPromptDigest: promptDigest } as CursorFollowUpReceipt, env.CURSOR_API_KEY);
+  validateCursorWriterFollowUpReceipt(receipt, input.prior, promptDigest, env.CURSOR_API_KEY);
   await input.receiptStore.put(key, receipt);
   activeClaim = { ...activeClaim, phase: "completed", heartbeatAt: now().toISOString(), leaseUntil: new Date(now().getTime() + 30_000).toISOString() };
   await input.receiptStore.putClaim(key, activeClaim);
@@ -462,31 +492,36 @@ async function readWriter1Artifact(input: { client: CursorArtifactClient; agentI
   const descriptor = matches[0]; if (!descriptor) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_MISSING", "Cursor agent has no artifacts/writer1-output.json artifact");
   if (descriptor.size > MAX_WRITER1_ARTIFACT_BYTES) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_TOO_LARGE", `Cursor Writer1 artifact exceeds the ${MAX_WRITER1_ARTIFACT_BYTES}-byte cap`);
   const downloaded = await input.client.download(input.agentId, descriptor.path, input.apiKey);
-  approvedCursorArtifactUrl(downloaded.sourceUrl);
+  const downloadedUrl = approvedCursorArtifactUrl(downloaded.sourceUrl);
+  const expectedUrlEvidence = presignedUrlEvidence(downloadedUrl);
   const expectedPath = descriptor.path as "artifacts/writer1-output.json";
   const expectedEndpoint = artifactDownloadEndpoint(input.agentId, expectedPath);
   const expectedRequest = artifactRequestShape(input.agentId, expectedPath, expectedEndpoint);
   if (downloaded.agentId !== input.agentId || downloaded.logicalPath !== descriptor.path || downloaded.cursorEndpoint !== expectedEndpoint) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_REQUEST_BINDING_INVALID", "Cursor artifact download did not bind to the listed agent, logical path, and Cursor endpoint");
-  if (downloaded.requestShapeDigest !== digestOf(expectedRequest) || downloaded.downloadRequestDigest !== artifactDownloadDigest(expectedRequest, downloaded.sourceUrl) || downloaded.presignedUrlDigest !== digestOf(downloaded.sourceUrl)) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_REQUEST_BINDING_INVALID", "Cursor artifact download request or presigned URL digest is invalid");
+  if (downloaded.requestShapeDigest !== digestOf(expectedRequest) || JSON.stringify(downloaded.presignedUrlEvidence) !== JSON.stringify(expectedUrlEvidence) || downloaded.presignedUrlEvidenceDigest !== digestOf(expectedUrlEvidence) || downloaded.downloadRequestDigest !== artifactDownloadDigest(expectedRequest, expectedUrlEvidence)) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_REQUEST_BINDING_INVALID", "Cursor artifact download request or sanitized presigned URL evidence digest is invalid");
   if (downloaded.bytes.length > MAX_WRITER1_ARTIFACT_BYTES) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_TOO_LARGE", `Cursor Writer1 artifact exceeds the ${MAX_WRITER1_ARTIFACT_BYTES}-byte cap`);
   if (downloaded.bytes.length !== descriptor.size) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_SIZE_MISMATCH", "Cursor artifact size changed between listing and download");
   const sha256 = artifactSha256(downloaded.bytes);
   if (descriptor.sha256 && descriptor.sha256 !== sha256) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_DIGEST_MISMATCH", "Cursor artifact listing digest does not match downloaded bytes");
   const output = input.validateOutput(downloaded.bytes.toString("utf8"));
-  return { output, artifact: { path: "artifacts/writer1-output.json", size: downloaded.bytes.length, sha256, contentSize: downloaded.bytes.length, byteDigest: sha256, downloadRequest: expectedRequest, requestShapeDigest: downloaded.requestShapeDigest, downloadRequestDigest: downloaded.downloadRequestDigest, presignedUrlDigest: downloaded.presignedUrlDigest } };
+  return { output, artifact: { path: "artifacts/writer1-output.json", size: downloaded.bytes.length, sha256, contentSize: downloaded.bytes.length, byteDigest: sha256, downloadRequest: expectedRequest, requestShapeDigest: downloaded.requestShapeDigest, downloadRequestDigest: downloaded.downloadRequestDigest, presignedUrlEvidence: downloaded.presignedUrlEvidence, presignedUrlEvidenceDigest: downloaded.presignedUrlEvidenceDigest } };
 }
 
-export function validateCursorArtifactRecoveryReceipt(receipt: unknown, prior: CursorArtifactRecoveryPrior, promptDigest: string): asserts receipt is CursorArtifactRecoveryReceipt {
-  validateCursorWriterReceipt(receipt);
+export function validateCursorArtifactRecoveryReceipt(receipt: unknown, prior: CursorArtifactRecoveryPrior, promptDigest: string, cursorApiKey?: string): asserts receipt is CursorArtifactRecoveryReceipt {
+  validateCursorWriterReceipt(receipt, cursorApiKey);
   const value = receipt as CursorArtifactRecoveryReceipt;
   if (value.mode !== "same-thread-artifact-recovery" || value.recoveryVersion !== "words-writer1-artifact-recovery/v1") throw new CursorWriterExecutionError("CURSOR_ARTIFACT_RECEIPT_INVALID", "Cursor receipt is not the Writer1 artifact-recovery mode");
-  if (!value.artifact || value.artifact.path !== "artifacts/writer1-output.json" || !Number.isSafeInteger(value.artifact.size) || value.artifact.size < 1 || value.artifact.size > MAX_WRITER1_ARTIFACT_BYTES || value.artifact.contentSize !== value.artifact.size || typeof value.artifact.sha256 !== "string" || !DIGEST.test(value.artifact.sha256) || value.artifact.byteDigest !== value.artifact.sha256 || !value.artifact.downloadRequest || value.artifact.downloadRequest.agentId !== prior.agentId || value.artifact.downloadRequest.logicalPath !== value.artifact.path || value.artifact.downloadRequest.cursorEndpoint !== artifactDownloadEndpoint(prior.agentId, value.artifact.path) || value.artifact.requestShapeDigest !== digestOf(value.artifact.downloadRequest) || typeof value.artifact.downloadRequestDigest !== "string" || !DIGEST.test(value.artifact.downloadRequestDigest) || typeof value.artifact.presignedUrlDigest !== "string" || !DIGEST.test(value.artifact.presignedUrlDigest)) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_RECEIPT_INVALID", "Cursor artifact receipt path, size, byte, URL, or request binding is invalid");
+  const evidence = value.artifact?.presignedUrlEvidence;
+  const approvedEvidenceHost = typeof evidence?.host === "string" && (evidence.host === "s3.amazonaws.com" || evidence.host.endsWith(".s3.amazonaws.com") || /^s3[.-][a-z0-9-]+\.amazonaws\.com$/u.test(evidence.host) || /\.s3[.-][a-z0-9-]+\.amazonaws\.com$/u.test(evidence.host));
+  const saneEvidence = !!evidence && evidence.scheme === "https" && approvedEvidenceHost && typeof evidence.pathname === "string" && evidence.pathname.length > 1 && evidence.pathname.length <= 2048 && !evidence.pathname.includes("..") && Array.isArray(evidence.queryParameterNames) && evidence.queryParameterNames.length > 0 && evidence.queryParameterNames.every((name: unknown) => typeof name === "string" && /^[A-Za-z0-9_.-]{1,128}$/u.test(name)) && JSON.stringify(evidence.queryParameterNames) === JSON.stringify([...evidence.queryParameterNames].sort());
+  const expectedRequest = value.artifact?.path === "artifacts/writer1-output.json" ? artifactRequestShape(prior.agentId, "artifacts/writer1-output.json", artifactDownloadEndpoint(prior.agentId, "artifacts/writer1-output.json")) : undefined;
+  if (!value.artifact || value.artifact.path !== "artifacts/writer1-output.json" || !Number.isSafeInteger(value.artifact.size) || value.artifact.size < 1 || value.artifact.size > MAX_WRITER1_ARTIFACT_BYTES || value.artifact.contentSize !== value.artifact.size || typeof value.artifact.sha256 !== "string" || !DIGEST.test(value.artifact.sha256) || value.artifact.byteDigest !== value.artifact.sha256 || !value.artifact.downloadRequest || JSON.stringify(value.artifact.downloadRequest) !== JSON.stringify(expectedRequest) || value.artifact.requestShapeDigest !== digestOf(value.artifact.downloadRequest) || !saneEvidence || value.artifact.presignedUrlEvidenceDigest !== digestOf(evidence) || typeof value.artifact.downloadRequestDigest !== "string" || value.artifact.downloadRequestDigest !== artifactDownloadDigest(value.artifact.downloadRequest, evidence)) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_RECEIPT_INVALID", "Cursor artifact receipt path, size, byte, sanitized URL evidence, or request binding is invalid");
   if (!value.recoveryPrior || JSON.stringify(value.recoveryPrior) !== JSON.stringify(prior)) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_RECEIPT_BINDING_INVALID", "Cursor artifact receipt lost the prior dispatch/source bindings");
   if (value.followUpPromptDigest !== promptDigest || value.promptDigest !== promptDigest || value.inputDigest !== prior.inputDigest || value.agentId !== prior.agentId || value.threadUrl !== prior.threadUrl || value.recoveryRunId !== value.jobId) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_RECEIPT_BINDING_INVALID", "Cursor artifact receipt is not bound to the requested Writer1 recovery");
   if (value.jobId !== prior.runId && !String(value.jobId).startsWith("run-")) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_RECEIPT_BINDING_INVALID", "Cursor artifact receipt recovery run ID is invalid");
 }
 
-export async function recoverCursorWriterArtifact(input: {
+type CursorArtifactRecoveryInternalInput = {
   env?: Record<string, string | undefined>;
   receiptStore: CursorWriterReceiptStore;
   prior: CursorArtifactRecoveryPrior;
@@ -496,7 +531,10 @@ export async function recoverCursorWriterArtifact(input: {
   artifactClient?: CursorArtifactClient;
   onFollowUp?: (notice: CursorDispatchNotice) => void | Promise<void>;
   validateOutput: (raw: string) => unknown;
-}): Promise<{ output: unknown; receipt: CursorArtifactRecoveryReceipt; threadUrl: string; claim: CursorDispatchClaim }> {
+};
+type CursorArtifactRecoveryResult = { output: unknown; receipt: CursorArtifactRecoveryReceipt; threadUrl: string; claim: CursorDispatchClaim };
+
+async function recoverCursorWriterArtifactInternal(input: CursorArtifactRecoveryInternalInput): Promise<CursorArtifactRecoveryResult> {
   const env = input.env || process.env;
   const now = input.now || (() => new Date());
   const requestedModel = env.CURSOR_MODEL;
@@ -518,7 +556,7 @@ export async function recoverCursorWriterArtifact(input: {
   const requestDigest = digestOf(recoveryRequest);
   const existing = await input.receiptStore.get(key);
   if (existing) {
-    validateCursorArtifactRecoveryReceipt(existing, input.prior, promptDigest);
+    validateCursorArtifactRecoveryReceipt(existing, input.prior, promptDigest, env.CURSOR_API_KEY);
     const recovered = await readWriter1Artifact({ client: artifactClient, agentId: input.prior.agentId, apiKey: env.CURSOR_API_KEY, validateOutput: input.validateOutput });
     if (JSON.stringify(recovered.artifact) !== JSON.stringify(existing.artifact)) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_RACE", "Cursor artifact or download binding changed after the completed recovery receipt");
     const claim = await input.receiptStore.getClaim?.(key); if (!claim) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_CLAIM_MISSING", "Completed Cursor artifact recovery has no durable claim");
@@ -538,12 +576,12 @@ export async function recoverCursorWriterArtifact(input: {
   let activeClaim = claimed.claim;
   if (!claimed.acquired) {
     const settled = await input.receiptStore.get(key);
-    if (settled) { validateCursorArtifactRecoveryReceipt(settled, input.prior, promptDigest); const recovered = await readWriter1Artifact({ client: artifactClient, agentId: input.prior.agentId, apiKey: env.CURSOR_API_KEY, validateOutput: input.validateOutput }); const finishedClaim = await input.receiptStore.getClaim(key); if (!finishedClaim) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_CLAIM_MISSING", "Completed Cursor artifact recovery has no durable claim"); return { output: recovered.output, receipt: { ...settled, output: recovered.output } as CursorArtifactRecoveryReceipt, threadUrl: settled.threadUrl, claim: finishedClaim }; }
+    if (settled) { validateCursorArtifactRecoveryReceipt(settled, input.prior, promptDigest, env.CURSOR_API_KEY); const recovered = await readWriter1Artifact({ client: artifactClient, agentId: input.prior.agentId, apiKey: env.CURSOR_API_KEY, validateOutput: input.validateOutput }); const finishedClaim = await input.receiptStore.getClaim(key); if (!finishedClaim) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_CLAIM_MISSING", "Completed Cursor artifact recovery has no durable claim"); return { output: recovered.output, receipt: { ...settled, output: recovered.output } as CursorArtifactRecoveryReceipt, threadUrl: settled.threadUrl, claim: finishedClaim }; }
     throw new CursorWriterExecutionError("CURSOR_DISPATCH_IN_PROGRESS", "Another worker owns the live Cursor artifact recovery claim; caller must reconcile before retrying", { key, phase: activeClaim.phase || "claimed" });
   }
   if (preexisting) {
-    const receipt: CursorArtifactRecoveryReceipt = { stage: "writer1", provider: CURSOR_PROVIDER, requestedModel: REQUIRED_CURSOR_MODEL, resolvedModel: OFFICIAL_CURSOR_MODEL, fast: false, jobId: input.prior.runId, agentId: input.prior.agentId, threadUrl: input.prior.threadUrl, inputDigest, promptDigest, outputDigest: digestOf(preexisting.output), completedAt: now().toISOString(), status: "complete", output: preexisting.output, requestDigest, createRequest: recoveryRequest, registryItem: selection.registryItem, registryDigest: selection.registryDigest, modelParams: selection.params, effort: "high", ...(selection.effortParameterId ? { effortParameterId: selection.effortParameterId } : {}), effortAttestationSource: input.prior.effortAttestationSource, attestationSource: "bound-create-request", apiVersion: API_VERSION, mode: "same-thread-artifact-recovery", recoveryVersion: "words-writer1-artifact-recovery/v1", artifact: preexisting.artifact, recoveryRunId: input.prior.runId, recoveryPrior: input.prior, followUpPromptDigest: promptDigest };
-    validateCursorArtifactRecoveryReceipt(receipt, input.prior, promptDigest); await input.receiptStore.put(key, receipt); activeClaim = { ...activeClaim, agentId: input.prior.agentId, jobId: input.prior.runId, phase: "completed", heartbeatAt: now().toISOString(), leaseUntil: new Date(now().getTime() + 30_000).toISOString() }; await input.receiptStore.putClaim(key, activeClaim); return { output: receipt.output, receipt, threadUrl: receipt.threadUrl, claim: activeClaim };
+    const receipt: CursorArtifactRecoveryReceipt = withReceiptIntegrityMac({ stage: "writer1", provider: CURSOR_PROVIDER, requestedModel: REQUIRED_CURSOR_MODEL, resolvedModel: OFFICIAL_CURSOR_MODEL, fast: false, jobId: input.prior.runId, agentId: input.prior.agentId, threadUrl: input.prior.threadUrl, inputDigest, promptDigest, outputDigest: digestOf(preexisting.output), completedAt: now().toISOString(), status: "complete", output: preexisting.output, requestDigest, createRequest: recoveryRequest, registryItem: selection.registryItem, registryDigest: selection.registryDigest, modelParams: selection.params, effort: "high", ...(selection.effortParameterId ? { effortParameterId: selection.effortParameterId } : {}), effortAttestationSource: input.prior.effortAttestationSource, attestationSource: "bound-create-request", apiVersion: API_VERSION, mode: "same-thread-artifact-recovery", recoveryVersion: "words-writer1-artifact-recovery/v1", artifact: preexisting.artifact, recoveryRunId: input.prior.runId, recoveryPrior: input.prior, followUpPromptDigest: promptDigest } as CursorArtifactRecoveryReceipt, env.CURSOR_API_KEY);
+    validateCursorArtifactRecoveryReceipt(receipt, input.prior, promptDigest, env.CURSOR_API_KEY); await input.receiptStore.put(key, receipt); activeClaim = { ...activeClaim, agentId: input.prior.agentId, jobId: input.prior.runId, phase: "completed", heartbeatAt: now().toISOString(), leaseUntil: new Date(now().getTime() + 30_000).toISOString() }; await input.receiptStore.putClaim(key, activeClaim); return { output: receipt.output, receipt, threadUrl: receipt.threadUrl, claim: activeClaim };
   }
   let agent: SDKAgent; let run: Run; let jobId: string;
   if (activeClaim.phase === "follow-up-sending" || (activeClaim.agentId && !activeClaim.jobId)) throw new CursorWriterExecutionError("CURSOR_FOLLOW_UP_RUN_ID_MISSING", "Cursor artifact recovery will not risk a duplicate follow-up without its persisted run ID");
@@ -569,8 +607,24 @@ export async function recoverCursorWriterArtifact(input: {
   const resolvedModel = resolvedModelOf(agent, run, result); validateCursorWriterRuntime({ provider: CURSOR_PROVIDER, requestedModel, resolvedModel, fast: false }); if (resolvedModel !== OFFICIAL_CURSOR_MODEL) throw new CursorWriterExecutionError("CURSOR_RESOLVED_MODEL_MISSING", "Cursor artifact recovery did not attest the required resolved model");
   const recovered = await readWriter1Artifact({ client: artifactClient, agentId, apiKey: env.CURSOR_API_KEY, validateOutput: input.validateOutput });
   const attestationSource = assertFastBound(options, [agent, run, result]); const effortAttestationSource = assertEffortBound(selection, [agent, run, result]);
-  const receipt: CursorArtifactRecoveryReceipt = { stage: "writer1", provider: CURSOR_PROVIDER, requestedModel: REQUIRED_CURSOR_MODEL, resolvedModel: OFFICIAL_CURSOR_MODEL, fast: false, jobId, agentId, threadUrl: record.url, inputDigest, promptDigest, outputDigest: digestOf(recovered.output), completedAt: now().toISOString(), status: "complete", output: recovered.output, requestDigest, createRequest: recoveryRequest, registryItem: selection.registryItem, registryDigest: selection.registryDigest, modelParams: selection.params, effort: "high", ...(selection.effortParameterId ? { effortParameterId: selection.effortParameterId } : {}), effortAttestationSource, attestationSource, apiVersion: API_VERSION, mode: "same-thread-artifact-recovery", recoveryVersion: "words-writer1-artifact-recovery/v1", artifact: recovered.artifact, recoveryRunId: jobId, recoveryPrior: input.prior, followUpPromptDigest: promptDigest };
-  validateCursorArtifactRecoveryReceipt(receipt, input.prior, promptDigest); await input.receiptStore.put(key, receipt); activeClaim = { ...activeClaim, phase: "completed", heartbeatAt: now().toISOString(), leaseUntil: new Date(now().getTime() + 30_000).toISOString() }; await input.receiptStore.putClaim(key, activeClaim); return { output: receipt.output, receipt, threadUrl: record.url, claim: activeClaim };
+  const receipt: CursorArtifactRecoveryReceipt = withReceiptIntegrityMac({ stage: "writer1", provider: CURSOR_PROVIDER, requestedModel: REQUIRED_CURSOR_MODEL, resolvedModel: OFFICIAL_CURSOR_MODEL, fast: false, jobId, agentId, threadUrl: record.url, inputDigest, promptDigest, outputDigest: digestOf(recovered.output), completedAt: now().toISOString(), status: "complete", output: recovered.output, requestDigest, createRequest: recoveryRequest, registryItem: selection.registryItem, registryDigest: selection.registryDigest, modelParams: selection.params, effort: "high", ...(selection.effortParameterId ? { effortParameterId: selection.effortParameterId } : {}), effortAttestationSource, attestationSource, apiVersion: API_VERSION, mode: "same-thread-artifact-recovery", recoveryVersion: "words-writer1-artifact-recovery/v1", artifact: recovered.artifact, recoveryRunId: jobId, recoveryPrior: input.prior, followUpPromptDigest: promptDigest } as CursorArtifactRecoveryReceipt, env.CURSOR_API_KEY);
+  validateCursorArtifactRecoveryReceipt(receipt, input.prior, promptDigest, env.CURSOR_API_KEY); await input.receiptStore.put(key, receipt); activeClaim = { ...activeClaim, phase: "completed", heartbeatAt: now().toISOString(), leaseUntil: new Date(now().getTime() + 30_000).toISOString() }; await input.receiptStore.putClaim(key, activeClaim); return { output: receipt.output, receipt, threadUrl: record.url, claim: activeClaim };
+}
+
+export type CursorArtifactRecoveryInput = Omit<CursorArtifactRecoveryInternalInput, "transport" | "artifactClient">;
+
+/** Production recovery owns both network seams; control input cannot replace them. */
+export async function recoverCursorWriterArtifact(input: CursorArtifactRecoveryInput): Promise<CursorArtifactRecoveryResult> {
+  const candidate = input as unknown as Record<string, unknown>;
+  if ("transport" in candidate || "artifactClient" in candidate) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_CLIENT_SUBSTITUTION_FORBIDDEN", "Production artifact recovery does not accept caller-supplied Cursor transports or artifact clients");
+  const transport = await officialCloudTransport();
+  return recoverCursorWriterArtifactInternal({ ...input, transport, artifactClient: createCursorArtifactClient() });
+}
+
+/** Test-only/internal seam. Production scripts cannot select this path by control input or environment. */
+export async function recoverCursorWriterArtifactForTest(input: CursorArtifactRecoveryInternalInput): Promise<CursorArtifactRecoveryResult> {
+  if (process.env.NODE_ENV !== "test" && !process.execArgv.some((arg) => arg.includes("--test"))) throw new CursorWriterExecutionError("CURSOR_TEST_SEAM_FORBIDDEN", "Injected artifact recovery transports are available only from the Node test boundary");
+  return recoverCursorWriterArtifactInternal(input);
 }
 
 async function dispatchWithTransport(input: { transport: CloudTransport; env: Record<string, string | undefined>; receiptStore: CursorWriterReceiptStore; now: () => Date; onDispatch?: (notice: CursorDispatchNotice) => void | Promise<void>; validateOutput?: (output: unknown) => void }, stage: CursorWriterStage, payload: unknown, prompt: string, runId: string): Promise<{ output: unknown; receipt: CursorWriterReceipt; threadUrl: string; claim?: CursorDispatchClaim }> {
@@ -580,12 +634,12 @@ async function dispatchWithTransport(input: { transport: CloudTransport; env: Re
   const selection = resolveCursorModelSelection(await input.transport.listModels(input.env.CURSOR_API_KEY), requestedModel);
   const inputDigest = digestOf(payload); const promptDigest = digestOf(prompt); const key = `${runId}:${stage}:${inputDigest}:${promptDigest}`; const requestedAgentId = deterministicAgentId(key);
   const existing = await input.receiptStore.get(key);
-  if (existing) { if (existing.stage !== stage || existing.inputDigest !== inputDigest || existing.promptDigest !== promptDigest) throw new CursorWriterExecutionError("CURSOR_RECEIPT_BINDING_MISMATCH", "Existing Cursor receipt is bound to different writer input"); if (existing.status === "complete") { validateCursorWriterReceipt(existing); if (input.validateOutput) input.validateOutput(existing.output); return { output: existing.output, receipt: existing, threadUrl: existing.threadUrl }; } validatePendingReceipt(existing); }
+  if (existing) { if (existing.stage !== stage || existing.inputDigest !== inputDigest || existing.promptDigest !== promptDigest) throw new CursorWriterExecutionError("CURSOR_RECEIPT_BINDING_MISMATCH", "Existing Cursor receipt is bound to different writer input"); if (existing.status === "complete") { validateCursorWriterReceipt(existing, input.env.CURSOR_API_KEY); if (input.validateOutput) input.validateOutput(existing.output); return { output: existing.output, receipt: existing, threadUrl: existing.threadUrl }; } validatePendingReceipt(existing); }
   if (!input.receiptStore.tryClaim || !input.receiptStore.getClaim || !input.receiptStore.putClaim) throw new CursorWriterExecutionError("CURSOR_DISPATCH_CLAIM_REQUIRED", "Production Cursor dispatch requires an atomic durable claim store");
   const claim: CursorDispatchClaim = { key, stage, runId, inputDigest, promptDigest, ownerToken: `${process.pid}:${input.now().getTime()}:${Math.random()}`, requestedAgentId, claimedAt: input.now().toISOString(), heartbeatAt: input.now().toISOString(), leaseUntil: new Date(input.now().getTime() + 30_000).toISOString(), phase: "claimed" }; const claimed = await input.receiptStore.tryClaim(key, claim); let activeClaim = claimed.claim;
   if (!claimed.acquired) {
     const settled = await input.receiptStore.get(key);
-    if (settled?.status === "complete") { validateCursorWriterReceipt(settled); if (input.validateOutput) input.validateOutput(settled.output); const finishedClaim = await input.receiptStore.getClaim(key); return { output: settled.output, receipt: settled, threadUrl: settled.threadUrl, ...(finishedClaim ? { claim: finishedClaim } : {}) }; }
+    if (settled?.status === "complete") { validateCursorWriterReceipt(settled, input.env.CURSOR_API_KEY); if (input.validateOutput) input.validateOutput(settled.output); const finishedClaim = await input.receiptStore.getClaim(key); return { output: settled.output, receipt: settled, threadUrl: settled.threadUrl, ...(finishedClaim ? { claim: finishedClaim } : {}) }; }
     throw new CursorWriterExecutionError("CURSOR_DISPATCH_IN_PROGRESS", "Another worker owns a live Cursor dispatch lease; caller must poll or reconcile before resuming", { status: "in-progress", stage, key, ownerToken: activeClaim.ownerToken, phase: activeClaim.phase || "claimed" });
   }
   let agent: SDKAgent; let run: Run;
@@ -603,7 +657,7 @@ async function dispatchWithTransport(input: { transport: CloudTransport; env: Re
   if (input.onDispatch) await input.onDispatch({ stage, provider: CURSOR_PROVIDER, requestedModel: REQUIRED_CURSOR_MODEL, officialModel: selection.officialId, modelParams: selection.params, registryDigest: selection.registryDigest, effort: selection.effort, effortAttestationSource: selection.effortAttestationSource, fast: false, agentId, jobId, threadUrl: record.url, inputDigest, promptDigest, requestDigest, dispatchedAt: input.now().toISOString() });
   activeClaim = { ...activeClaim, phase: "waiting", heartbeatAt: input.now().toISOString(), leaseUntil: new Date(input.now().getTime() + 30_000).toISOString() }; await input.receiptStore.putClaim(key, activeClaim);
   const result = await run.wait(); const resolvedModel = resolvedModelOf(agent, run, result); validateCursorWriterRuntime({ provider: CURSOR_PROVIDER, requestedModel, resolvedModel, fast: false }); if (resolvedModel !== OFFICIAL_CURSOR_MODEL) throw new CursorWriterExecutionError("CURSOR_RESOLVED_MODEL_MISSING", "Cursor Cloud did not attest the required resolved model");
-  const output = outputOf(result); if (input.validateOutput) input.validateOutput(output); const attestationSource = assertFastBound(options, [agent, run, result]); const effortAttestationSource = assertEffortBound(selection, [agent, run, result]); const receipt: CursorWriterReceipt = { stage, provider: CURSOR_PROVIDER, requestedModel: REQUIRED_CURSOR_MODEL, resolvedModel: OFFICIAL_CURSOR_MODEL, fast: false, jobId, agentId, threadUrl: record.url, inputDigest, promptDigest, outputDigest: digestOf(output), completedAt: input.now().toISOString(), status: "complete", output, requestDigest, createRequest: request, registryItem: selection.registryItem, registryDigest: selection.registryDigest, modelParams: selection.params, effort: "high", ...(selection.effortParameterId ? { effortParameterId: selection.effortParameterId } : {}), effortAttestationSource, attestationSource, apiVersion: API_VERSION }; validateCursorWriterReceipt(receipt); await input.receiptStore.put(key, receipt); activeClaim = { ...activeClaim, phase: "completed", heartbeatAt: input.now().toISOString(), leaseUntil: new Date(input.now().getTime() + 30_000).toISOString() }; await input.receiptStore.putClaim(key, activeClaim); return { output, receipt, threadUrl: record.url, claim: activeClaim };
+  const output = outputOf(result); if (input.validateOutput) input.validateOutput(output); const attestationSource = assertFastBound(options, [agent, run, result]); const effortAttestationSource = assertEffortBound(selection, [agent, run, result]); const receipt: CursorWriterReceipt = withReceiptIntegrityMac({ stage, provider: CURSOR_PROVIDER, requestedModel: REQUIRED_CURSOR_MODEL, resolvedModel: OFFICIAL_CURSOR_MODEL, fast: false, jobId, agentId, threadUrl: record.url, inputDigest, promptDigest, outputDigest: digestOf(output), completedAt: input.now().toISOString(), status: "complete", output, requestDigest, createRequest: request, registryItem: selection.registryItem, registryDigest: selection.registryDigest, modelParams: selection.params, effort: "high", ...(selection.effortParameterId ? { effortParameterId: selection.effortParameterId } : {}), effortAttestationSource, attestationSource, apiVersion: API_VERSION } as CursorWriterReceipt, input.env.CURSOR_API_KEY || ""); validateCursorWriterReceipt(receipt, input.env.CURSOR_API_KEY); await input.receiptStore.put(key, receipt); activeClaim = { ...activeClaim, phase: "completed", heartbeatAt: input.now().toISOString(), leaseUntil: new Date(input.now().getTime() + 30_000).toISOString() }; await input.receiptStore.putClaim(key, activeClaim); return { output, receipt, threadUrl: record.url, claim: activeClaim };
 }
 export function createCursorWriterExecutor(input: { env?: Record<string, string | undefined>; receiptStore: CursorWriterReceiptStore; now?: () => Date; onDispatch?: (notice: CursorDispatchNotice) => void | Promise<void>; validateOutput?: (output: unknown) => void }): CursorWriterExecutor {
   if (!input || !input.receiptStore) throw new CursorWriterExecutionError("CURSOR_RECEIPT_STORE_REQUIRED", "A durable Cursor receipt/claim store is required"); const env = input.env || process.env; const now = input.now || (() => new Date()); const transportPromise = officialCloudTransport();

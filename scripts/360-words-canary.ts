@@ -292,7 +292,7 @@ export async function runArtifactRecovery(root = process.cwd()): Promise<{ statu
   await writeJson(jsonFile(root, "canary/runtime/state.json"), { status: "writer1-artifact-recovery-dispatching", stage: "writer1", runId: sealed.handoff.runId, sealedHandoffDigest: sealed.handoff.resealDigest, priorRunId: prior.runId, priorAgentId: prior.agentId, priorThreadUrl: prior.threadUrl, nextStage: null, writer2Blocked: true });
   const result = await recoverCursorWriterArtifact({ env: process.env, receiptStore: createJsonCursorReceiptStore(jsonFile(root, "canary/runtime/cursor-receipts.json")), prior, prompt: WRITER1_ARTIFACT_RECOVERY_PROMPT, onFollowUp: (notice) => dispatchReceipt(root, notice), validateOutput: (output) => parseAndValidateWriter1Output(output, payload) });
   const parsed = result.output as Dict;
-  validateCursorArtifactRecoveryReceipt(result.receipt, prior, digestOf(WRITER1_ARTIFACT_RECOVERY_PROMPT));
+  validateCursorArtifactRecoveryReceipt(result.receipt, prior, digestOf(WRITER1_ARTIFACT_RECOVERY_PROMPT), process.env.CURSOR_API_KEY);
   await writeJson(jsonFile(root, "canary/runtime/writer1-recovery-receipt.json"), result.receipt);
   await writeJson(jsonFile(root, "canary/runtime/writer1-validation.json"), { status: "valid", schemaVersion: parsed.schemaVersion, routes: parsed.pages.map((page: Dict) => page.url), outputDigest: result.receipt.outputDigest, artifact: result.receipt.artifact, recoveryRunId: result.receipt.recoveryRunId, agentId: result.receipt.agentId, threadUrl: result.threadUrl, nextStage: null, writer2Blocked: true });
   await writeJson(jsonFile(root, "canary/outputs/writer1-output.json"), parsed);
