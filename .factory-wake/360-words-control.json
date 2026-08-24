@@ -1,6 +1,6 @@
 {
   "schemaVersion": "words-canary-control/v1",
-  "wakeNonce": "DORMANT",
+  "wakeNonce": "W1-360-20260824-M6T9C3J8",
   "requestedBy": "architect",
   "stage": "writer1",
   "runId": "32717620900",
@@ -17,4 +17,3 @@
     "stopAfter": "awaiting-architect-qa"
   }
 }
-
