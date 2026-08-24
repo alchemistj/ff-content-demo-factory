@@ -292,3 +292,136 @@ test('Cursor reattaches an agent with no run id and sends exactly once', async (
   assert.equal(receipt.runId, 'run-send');
   assert.equal(receipt.requestId, 'request-send');
 });
+
+test('Cursor uses one same-agent format correction for malformed JSON and durably records lineage before waiting', async () => {
+  const receiptStore = createMemoryReceiptStore();
+  await receiptStore.put('cursor:format-once', {
+    provider: 'cursor-sdk', jobId: 'format-once', kind: 'website-audit', status: 'running',
+    agentId: 'agent-format', runId: 'run-malformed', resolvedModel: ACTUAL_MODEL_ID,
+  });
+  let creates = 0;
+  let sends = 0;
+  const sdk = {
+    Cursor: { models: { list: async () => { throw new Error('catalog must not be needed for reattachment'); } } },
+    Agent: {
+      create: async () => { creates += 1; throw new Error('must not create on resume'); },
+      resume: async (agentId) => ({
+        agentId,
+        [Symbol.asyncDispose]: async () => {},
+        send: async (prompt) => {
+          sends += 1;
+          assert.match(prompt, /FORMAT-ONLY CORRECTION/);
+          return {
+            id: 'run-format-correction', requestId: 'request-format-correction',
+            wait: async () => {
+              const receipt = await receiptStore.get('cursor:format-once');
+              assert.equal(receipt.runId, 'run-format-correction');
+              assert.equal(receipt.formatCorrection.attempts, 1);
+              assert.equal(receipt.formatCorrection.parentRunId, 'run-malformed');
+              assert.deepEqual(receipt.lineage.map((entry) => entry.runId), ['run-malformed', 'run-format-correction']);
+              return { status: 'finished', text: '```json\n{"kind":"website-audit","website":"https://business.test","evidence":[],"images":[]}\n```' };
+            },
+          };
+        },
+      }),
+      getRun: async (runId) => {
+        assert.equal(runId, 'run-malformed');
+        return { wait: async () => ({ status: 'finished', text: '{"kind":"website-audit"' }) };
+      },
+    },
+  };
+  const adapter = createCursorAdapter({ apiKey: 'secret', sdk, receiptStore });
+  const result = await adapter.runResearch({ kind: 'website-audit', jobId: 'format-once', input: { website: 'https://business.test' } });
+  assert.equal(result.kind, 'website-audit');
+  assert.equal(creates, 0);
+  assert.equal(sends, 1);
+  const receipt = await receiptStore.get('cursor:format-once');
+  assert.equal(receipt.status, 'completed');
+  assert.equal(receipt.formatCorrection.status, 'completed');
+  assert.equal(receipt.formatCorrection.runId, 'run-format-correction');
+});
+
+test('Cursor fails closed after one malformed format correction and never sends or creates again', async () => {
+  const receiptStore = createMemoryReceiptStore();
+  await receiptStore.put('cursor:format-bounded', {
+    provider: 'cursor-sdk', jobId: 'format-bounded', kind: 'review-judgment', status: 'running',
+    agentId: 'agent-format-bounded', runId: 'run-malformed-bounded', resolvedModel: ACTUAL_MODEL_ID,
+  });
+  let creates = 0;
+  let sends = 0;
+  const sdk = {
+    Cursor: { models: { list: async () => { throw new Error('catalog must not be needed for reattachment'); } } },
+    Agent: {
+      create: async () => { creates += 1; throw new Error('must not create after a receipt exists'); },
+      resume: async (agentId) => ({
+        agentId,
+        [Symbol.asyncDispose]: async () => {},
+        send: async () => {
+          sends += 1;
+          return { id: 'run-format-bounded-correction', wait: async () => ({ status: 'finished', text: '{"kind":"review-judgment"' }) };
+        },
+      }),
+      getRun: async () => ({ wait: async () => ({ status: 'finished', text: '{"kind":"review-judgment"' }) }),
+    },
+  };
+  const adapter = createCursorAdapter({ apiKey: 'secret', sdk, receiptStore });
+  await assert.rejects(() => adapter.runResearch({ kind: 'review-judgment', jobId: 'format-bounded', input: { review: { id: 'r1' } } }), /invalid JSON/i);
+  const failed = await receiptStore.get('cursor:format-bounded');
+  assert.equal(failed.status, 'failed');
+  assert.equal(failed.formatCorrection.attempts, 1);
+  assert.equal(failed.runId, 'run-format-bounded-correction');
+  assert.deepEqual(failed.lineage.map((entry) => entry.runId), ['run-malformed-bounded', 'run-format-bounded-correction']);
+  await assert.rejects(() => adapter.runResearch({ kind: 'review-judgment', jobId: 'format-bounded', input: { review: { id: 'r1' } } }), /failed closed/i);
+  assert.equal(creates, 0);
+  assert.equal(sends, 1);
+});
+
+test('Cursor resumes a persisted format-correction run without sending the correction again', async () => {
+  const receiptStore = createMemoryReceiptStore();
+  await receiptStore.put('cursor:format-resume', {
+    provider: 'cursor-sdk', jobId: 'format-resume', kind: 'review-judgment', status: 'running',
+    agentId: 'agent-format-resume', runId: 'run-format-resume', resolvedModel: ACTUAL_MODEL_ID,
+    formatCorrection: {
+      attempts: 1, status: 'running', parentRunId: 'run-malformed-resume',
+      runId: 'run-format-resume', requestId: 'request-format-resume',
+    },
+    lineage: [
+      { kind: 'initial', runId: 'run-malformed-resume' },
+      { kind: 'format-correction', runId: 'run-format-resume', parentRunId: 'run-malformed-resume' },
+    ],
+  });
+  let creates = 0;
+  let sends = 0;
+  let fetchedRun = null;
+  const sdk = {
+    Cursor: { models: { list: async () => { throw new Error('catalog must not be needed for reattachment'); } } },
+    Agent: {
+      create: async () => { creates += 1; throw new Error('must not create on correction resume'); },
+      resume: async (agentId) => ({
+        agentId,
+        [Symbol.asyncDispose]: async () => {},
+        send: async () => { sends += 1; throw new Error('must not resend a persisted correction'); },
+      }),
+      getRun: async (runId) => {
+        fetchedRun = runId;
+        return {
+          id: runId,
+          wait: async () => ({
+            status: 'finished',
+            text: '{"kind":"review-judgment","reviewId":"r1","decision":"supporting","authoritative":true}',
+          }),
+        };
+      },
+    },
+  };
+  const adapter = createCursorAdapter({ apiKey: 'secret', sdk, receiptStore });
+  const result = await adapter.runResearch({ kind: 'review-judgment', jobId: 'format-resume', input: { review: { id: 'r1' } } });
+  assert.equal(result.reviewId, 'r1');
+  assert.equal(fetchedRun, 'run-format-resume');
+  assert.equal(creates, 0);
+  assert.equal(sends, 0);
+  const receipt = await receiptStore.get('cursor:format-resume');
+  assert.equal(receipt.status, 'completed');
+  assert.equal(receipt.formatCorrection.status, 'completed');
+  assert.equal(receipt.formatCorrection.attempts, 1);
+});

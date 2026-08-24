@@ -5,6 +5,7 @@ const crypto = require('node:crypto');
 const FACTORY_MODEL_ALIAS = 'cursor-grok-4.6-high';
 const ACTUAL_MODEL_ID = 'grok-4.6';
 const RESEARCH_KINDS = new Set(['website-audit', 'review-judgment', 'page-prescription']);
+const MAX_FORMAT_CORRECTION_ATTEMPTS = 1;
 
 function required(value, name) {
   if (!value) throw new TypeError(`${name} is required`);
@@ -22,8 +23,44 @@ function parseJsonResult(output) {
   const text = String(output ?? '').trim();
   const fenced = text.match(/^```(?:json)?\s*([\s\S]*?)\s*```$/i);
   const candidate = fenced ? fenced[1].trim() : text;
-  if (!candidate) throw new Error('Cursor returned empty output');
-  try { return JSON.parse(candidate); } catch { throw new Error('Cursor returned invalid JSON'); }
+  if (!candidate) {
+    const error = new Error('Cursor returned empty output');
+    error.code = 'CURSOR_EMPTY_OUTPUT';
+    throw error;
+  }
+  try { return JSON.parse(candidate); } catch {
+    const error = new Error('Cursor returned invalid JSON');
+    error.code = 'CURSOR_INVALID_JSON';
+    throw error;
+  }
+}
+
+function isFormatOutputError(error) {
+  return error?.code === 'CURSOR_INVALID_JSON' || error?.code === 'CURSOR_EMPTY_OUTPUT';
+}
+
+function formatCorrectionPrompt(kind) {
+  return [
+    'FORMAT-ONLY CORRECTION for the immediately previous response.',
+    `Research job: ${kind}`,
+    'Do not perform research, use tools, change conclusions, or add/remove evidence.',
+    'Return the exact same substantive result again as exactly one valid JSON object.',
+    'No commentary is allowed. A JSON fence is optional, but the contents must be valid JSON.',
+  ].join('\n');
+}
+
+function runIdOf(run) {
+  return run?.id || run?.runId || null;
+}
+
+function requestIdOf(run) {
+  return run?.requestId || null;
+}
+
+function appendLineage(receipt, entry) {
+  const lineage = Array.isArray(receipt.lineage) ? receipt.lineage : [];
+  if (lineage.some((item) => item.runId && item.runId === entry.runId)) return lineage;
+  return [...lineage, entry];
 }
 
 function validateResult(kind, result) {
@@ -115,34 +152,143 @@ function createCursorAdapter({ apiKey, sdk, modelAlias = process.env.CURSOR_MODE
     else if (typeof agent.dispose === 'function') await agent.dispose();
   }
 
+  async function decodeRun(kind, run) {
+    const result = await run.wait();
+    if (result?.status && result.status !== 'finished') throw new Error(`Cursor research run ended ${result.status}`);
+    const raw = result?.text ?? result?.output ?? result?.result ?? result;
+    return validateResult(kind, parseJsonResult(raw));
+  }
+
+  async function formatCorrection({ kind, key, receipt, agent }) {
+    const attempts = Number(receipt.formatCorrection?.attempts || 0);
+    if (attempts >= MAX_FORMAT_CORRECTION_ATTEMPTS) {
+      const error = new Error('Cursor format correction attempt exhausted; failing closed');
+      error.code = 'CURSOR_FORMAT_CORRECTION_EXHAUSTED';
+      throw error;
+    }
+    const parentRunId = receipt.runId || null;
+    const reserved = {
+      ...receipt,
+      status: 'running',
+      formatCorrection: {
+        attempts: attempts + 1,
+        status: 'sending',
+        parentRunId,
+        sentAt: clock(),
+      },
+      lineage: appendLineage(receipt, { kind: 'initial', runId: parentRunId }),
+    };
+    // Reserve the one correction attempt before sending. If the process dies
+    // during send, a resume cannot issue an ambiguous second correction.
+    await receiptStore.put?.(key, reserved);
+    let correctionRun;
+    try {
+      if (typeof agent?.send !== 'function') throw new Error('Cursor resumed Agent cannot send format correction');
+      correctionRun = await agent.send(formatCorrectionPrompt(kind));
+    } catch (error) {
+      const terminal = new Error(`Cursor format correction send failed: ${normalizeError(error)}`);
+      terminal.code = 'CURSOR_FORMAT_CORRECTION_SEND_FAILED';
+      terminal.receipt = reserved;
+      await receiptStore.put?.(key, {
+        ...reserved,
+        status: 'failed',
+        failedAt: clock(),
+        error: redact(terminal.message, apiKey),
+      });
+      throw terminal;
+    }
+    const correctionRunId = runIdOf(correctionRun);
+    if (!correctionRunId || typeof correctionRun.wait !== 'function') {
+      const terminal = new Error('Cursor format correction receipt missing runId');
+      terminal.code = 'CURSOR_FORMAT_CORRECTION_RECEIPT_INVALID';
+      terminal.receipt = reserved;
+      await receiptStore.put?.(key, {
+        ...reserved,
+        status: 'failed',
+        failedAt: clock(),
+        error: redact(terminal.message, apiKey),
+      });
+      throw terminal;
+    }
+    const updated = {
+      ...reserved,
+      runId: correctionRunId,
+      requestId: requestIdOf(correctionRun),
+      formatCorrection: {
+        ...reserved.formatCorrection,
+        status: 'running',
+        runId: correctionRunId,
+        requestId: requestIdOf(correctionRun),
+      },
+      lineage: appendLineage(reserved, { kind: 'format-correction', runId: correctionRunId, parentRunId }),
+    };
+    // The correction run and its parent are durable before correction wait.
+    try {
+      await receiptStore.put?.(key, updated);
+    } catch (error) {
+      const terminal = new Error(`Cursor format correction receipt persistence failed: ${normalizeError(error)}`);
+      terminal.code = 'CURSOR_FORMAT_CORRECTION_RECEIPT_PERSIST_FAILED';
+      terminal.receipt = updated;
+      throw terminal;
+    }
+    return { run: correctionRun, receipt: updated };
+  }
+
+  async function decodeWithBoundedCorrection({ kind, key, receipt, agent, run }) {
+    try {
+      return { result: await decodeRun(kind, run), receipt };
+    } catch (error) {
+      if (!isFormatOutputError(error)) throw error;
+      const correction = await formatCorrection({ kind, key, receipt, agent });
+      try {
+        return { result: await decodeRun(kind, correction.run), receipt: correction.receipt };
+      } catch (correctionError) {
+        correctionError.receipt = correction.receipt;
+        throw correctionError;
+      }
+    }
+  }
+
   async function runResearch({ kind, jobId, input }) {
     if (!RESEARCH_KINDS.has(kind)) throw new Error(`Unsupported research kind: ${kind}`);
     required(jobId, 'jobId');
     const key = `cursor:${jobId}`;
     const prior = await receiptStore.get?.(key);
     if (prior?.status === 'completed') return prior.result;
+    if (prior?.status === 'failed') throw new Error(`Cursor research job ${jobId} is failed closed; explicit operator reset required`);
+    if (prior && prior.status !== 'running') throw new Error(`Cursor research job ${jobId} has unsupported receipt state`);
     const prompt = researchPrompt(kind, input);
-    if (prior?.status === 'running' && prior.agentId) {
+    if (prior?.status === 'running') {
+      if (!prior.agentId) throw new Error(`Cursor research job ${jobId} cannot resume without an Agent receipt`);
       let agent;
       let receipt = { ...prior };
       try {
         agent = await resumeAgent(prior);
         const run = prior.runId ? await resumedRun(prior) : await agent.send(prompt);
         if (!prior.runId) {
-          receipt = { ...receipt, runId: run.id || run.runId || null, requestId: run.requestId || null };
+          receipt = { ...receipt, runId: runIdOf(run), requestId: requestIdOf(run) };
           await receiptStore.put?.(key, receipt);
           if (!receipt.runId) throw new Error('Cursor resumed send receipt missing runId');
         }
-        const result = await run.wait();
-        if (result?.status && result.status !== 'finished') throw new Error(`Cursor research run ended ${result.status}`);
-        const raw = result?.text ?? result?.output ?? result?.result ?? result;
-        const parsed = validateResult(kind, parseJsonResult(raw));
-        const safeResult = redact(parsed, apiKey);
-        const completed = { ...receipt, status: 'completed', completedAt: clock(), result: safeResult };
+        const decoded = await decodeWithBoundedCorrection({ kind, key, receipt, agent, run });
+        receipt = decoded.receipt;
+        const safeResult = redact(decoded.result, apiKey);
+        const completed = {
+          ...receipt,
+          status: 'completed',
+          completedAt: clock(),
+          ...(receipt.formatCorrection ? { formatCorrection: { ...receipt.formatCorrection, status: 'completed', completedAt: clock() } } : {}),
+          result: safeResult,
+        };
         await receiptStore.put?.(key, completed);
         return safeResult;
       } catch (error) {
-        await receiptStore.put?.(key, { ...receipt, status: 'running', resumedAt: clock(), lastError: redact(normalizeError(error), apiKey) });
+        receipt = error.receipt || receipt;
+        const terminal = ['CURSOR_FORMAT_CORRECTION_EXHAUSTED', 'CURSOR_FORMAT_CORRECTION_SEND_FAILED', 'CURSOR_FORMAT_CORRECTION_RECEIPT_INVALID', 'CURSOR_FORMAT_CORRECTION_RECEIPT_PERSIST_FAILED'].includes(error?.code)
+          || (receipt.formatCorrection?.attempts >= MAX_FORMAT_CORRECTION_ATTEMPTS && isFormatOutputError(error));
+        await receiptStore.put?.(key, terminal
+          ? { ...receipt, status: 'failed', failedAt: clock(), error: redact(normalizeError(error), apiKey) }
+          : { ...receipt, status: 'running', resumedAt: clock(), lastError: redact(normalizeError(error), apiKey) });
         throw error;
       } finally {
         await disposeAgent(agent);
@@ -164,22 +310,32 @@ function createCursorAdapter({ apiKey, sdk, modelAlias = process.env.CURSOR_MODE
       await receiptStore.put?.(key, receipt);
       if (!receipt.agentId) throw new Error('Cursor Agent.create receipt missing agentId');
       const run = await agent.send(prompt);
-      receipt = { ...receipt, runId: run.id || run.runId || null, requestId: run.requestId || null };
+      receipt = { ...receipt, runId: runIdOf(run), requestId: requestIdOf(run) };
       await receiptStore.put?.(key, receipt);
       if (!receipt.runId) throw new Error('Cursor send receipt missing runId');
-      const result = await run.wait();
-      if (result?.status && result.status !== 'finished') throw new Error(`Cursor research run ended ${result.status}`);
-      const raw = result?.text ?? result?.output ?? result?.result ?? result;
-      const parsed = validateResult(kind, parseJsonResult(raw));
-      const safeResult = redact(parsed, apiKey);
-      const completed = { ...receipt, status: 'completed', agentId: receipt.agentId || result?.agentId || null, runId: receipt.runId || result?.runId || null, requestId: receipt.requestId || result?.requestId || null, completedAt: clock(), result: safeResult };
+      const decoded = await decodeWithBoundedCorrection({ kind, key, receipt, agent, run });
+      receipt = decoded.receipt;
+      const safeResult = redact(decoded.result, apiKey);
+      const completed = {
+        ...receipt,
+        status: 'completed',
+        agentId: receipt.agentId || null,
+        completedAt: clock(),
+        ...(receipt.formatCorrection ? { formatCorrection: { ...receipt.formatCorrection, status: 'completed', completedAt: clock() } } : {}),
+        result: safeResult,
+      };
       await receiptStore.put?.(key, completed);
       return safeResult;
     } catch (error) {
       // Keep a receipt with a run id resumable after a process/network
       // interruption. This is what prevents a retry from sending a second
       // paid prompt. Runs that failed before `send` may be retried normally.
-      const interrupted = receipt.runId ? {
+      receipt = error.receipt || receipt;
+      const terminal = ['CURSOR_FORMAT_CORRECTION_EXHAUSTED', 'CURSOR_FORMAT_CORRECTION_SEND_FAILED', 'CURSOR_FORMAT_CORRECTION_RECEIPT_INVALID', 'CURSOR_FORMAT_CORRECTION_RECEIPT_PERSIST_FAILED'].includes(error?.code)
+        || (receipt.formatCorrection?.attempts >= MAX_FORMAT_CORRECTION_ATTEMPTS && isFormatOutputError(error));
+      const interrupted = terminal ? {
+        ...receipt, status: 'failed', failedAt: clock(), error: redact(normalizeError(error), apiKey),
+      } : receipt.runId ? {
         ...receipt, status: 'running', interruptedAt: clock(), lastError: redact(normalizeError(error), apiKey),
       } : { ...receipt, status: 'failed', failedAt: clock(), error: redact(normalizeError(error), apiKey) };
       await receiptStore.put?.(key, interrupted);
