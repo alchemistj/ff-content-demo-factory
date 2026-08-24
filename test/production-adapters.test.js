@@ -8,6 +8,7 @@ const path = require('node:path');
 const { createProductionAdapters } = require('../src/factory/production-adapters');
 const { createFileReceiptStore } = require('../src/factory/receipt-store');
 const { runFactoryCycle } = require('../src/factory/orchestrator');
+const { STANDARD_PRESCRIPTION_POLICY, pageSetDigest, digest } = require('../src/factory/prescription-policy');
 
 function setup() {
   return fs.mkdtempSync(path.join(os.tmpdir(), 'ff-production-adapters-'));
@@ -139,7 +140,9 @@ test('production Gate 1 preserves an evidence-derived availability pattern', asy
   const finalist = { placeId: 'p1', name: 'One Electric', location: 'Austin, TX', architectQualified: true, disposition: { status: 'selected-finalist' }, duplicate: { status: 'unique' }, websiteAudit: { opportunity: 'opp-1', graphicsInspection: { status: 'inspected', findings: [] } } };
   const review = { id: 'r1', source: 'apify-finalist', author: 'A', rating: 5, date: '2026-01-01', text: 'Installed my EV charger.' };
   const classifications = { r1: { authoritative: true, decision: 'anchor', directCompletedService: true } };
-  const prescription = { pages: fullPages().map((entry, index) => index === 1 ? { ...entry, claims: ['24/7 emergency service'], recommendedFirstReview: { reviewId: 'r1', reviewer: 'A', why: 'Direct completed work.' } } : entry), valueHierarchy: [{ id: 'ev-charging', includedPage: true, passedOverReason: null }, { id: 'panel-upgrade', includedPage: true, passedOverReason: null }], pagePolicy: { mode: 'standard', allowedServicePageCount: 2 }, collisionValidation: { valid: true }, evidence: { availabilityPattern: { label: '24/7 emergency pattern', reviewIds: ['r1'] } } };
+  const validPages = fullPages().map((entry, index) => ({ ...(index === 1 ? { ...entry, claims: ['24/7 emergency service'], recommendedFirstReview: { reviewId: 'r1', reviewer: 'A', why: 'Direct completed work.', exactText: review.text } } : entry), ...(entry.type === 'Service' ? { canonicalIntentId: entry.service } : {}) }));
+  const prescription = { pages: validPages, valueHierarchy: [{ id: 'ev-charging', includedPage: true, passedOverReason: null, directCompletedEvidenceCount: 1 }, { id: 'panel-upgrade', includedPage: true, passedOverReason: null, directCompletedEvidenceCount: 1 }], pagePolicy: { ...STANDARD_PRESCRIPTION_POLICY }, policyMode: 'standard', allowedServicePageCount: 2, collisionValidation: { valid: true }, evidence: { availabilityPattern: { label: '24/7 emergency pattern', reviewIds: ['r1'] } }, evidenceDigest: digest({ test: 'availability' }), pageSetDigest: pageSetDigest(validPages), sourceArtifactDigest: null };
+  prescription.prescriptionDigest = digest({ ...prescription, prescriptionDigest: undefined });
   const inventory = { exactPlace: true, discoverySampleOnly: false, dateWindow: null, requestedLimit: 50, enrichmentStatus: 'sufficient', listingReviewCount: 1, retrievedReviewCount: 1, writtenReviewCount: 1, reviews: [review] };
   const whyBuilt = { text: 'The owned site shows an opportunity. A customer review documents completed EV charging work.', refs: [{ type: 'opportunity', id: 'opp-1' }, { type: 'review', id: 'r1' }] };
   const result = await adapters.gate1.render({ finalist, inventory, classifications, prescription, whyBuilt });

@@ -1,0 +1,35 @@
+name: Lane A policy tests
+
+on:
+  pull_request:
+    branches: [architect/greenfield-gate1]
+    paths:
+      - package.json
+      - package-lock.json
+      - src/**
+      - test/**
+      - canary/**
+      - .github/workflows/lane-a-policy-tests.yml
+
+permissions:
+  contents: read
+
+jobs:
+  lane-a-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout exact PR head
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          fetch-depth: 1
+          persist-credentials: false
+      - name: Set up Node
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '22.13.0'
+          cache: npm
+      - name: Install locked dependencies
+        run: npm ci --ignore-scripts --no-audit --no-fund
+      - name: Run reproducible full suite
+        run: node --test
