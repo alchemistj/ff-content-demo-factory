@@ -21,6 +21,7 @@ export const ARTIFACT_RECOVERY_PRIOR_RUN_ID = "run-b0341a7a-9f03-4dec-b76d-7350b
 export const ARTIFACT_RECOVERY_THREAD_URL = `https://cursor.com/agents/${ARTIFACT_RECOVERY_AGENT_ID}`;
 export const ARTIFACT_RECOVERY_SOURCE_BRANCH = "architect/360-words-canary";
 export const ARTIFACT_RECOVERY_SOURCE_SHA = "c89f82dae009d5bef3cc327543e1664985c85b76";
+export const ARTIFACT_RECOVERY_SEALED_HANDOFF_DIGEST = "sha256:715f651a53055444b8381dd8a276a2046d93776c61d88a2193cc2d42a1c83ad6";
 export const ARTIFACT_RECOVERY_PATH = "artifacts/writer1-output.json";
 type Dict = Record<string, any>;
 
@@ -277,7 +278,7 @@ export async function runArtifactRecovery(root = process.cwd()): Promise<{ statu
   if (control.wakeNonce === DORMANT_NONCE) return { status: "dormant", stage: "writer1" };
   if (control.policy?.mode !== "artifact-recovery") throw new Error("active 360 canary wake must explicitly select artifact-recovery mode");
   const recoveryPins = control.policy?.recovery;
-  if (recoveryPins?.priorActionRunId !== ARTIFACT_RECOVERY_ACTION_RUN_ID || Number(recoveryPins?.priorArtifactId) !== ARTIFACT_RECOVERY_ARTIFACT_ID || recoveryPins?.priorAgentId !== ARTIFACT_RECOVERY_AGENT_ID || recoveryPins?.priorRunId !== ARTIFACT_RECOVERY_PRIOR_RUN_ID || recoveryPins?.priorThreadUrl !== ARTIFACT_RECOVERY_THREAD_URL || recoveryPins?.artifactPath !== ARTIFACT_RECOVERY_PATH || recoveryPins?.sourceBranch !== ARTIFACT_RECOVERY_SOURCE_BRANCH || recoveryPins?.sourceSha !== ARTIFACT_RECOVERY_SOURCE_SHA) throw new Error("active artifact-recovery wake is missing the exact prior/run/source pins");
+  if (recoveryPins?.priorActionRunId !== ARTIFACT_RECOVERY_ACTION_RUN_ID || Number(recoveryPins?.priorArtifactId) !== ARTIFACT_RECOVERY_ARTIFACT_ID || recoveryPins?.priorAgentId !== ARTIFACT_RECOVERY_AGENT_ID || recoveryPins?.priorRunId !== ARTIFACT_RECOVERY_PRIOR_RUN_ID || recoveryPins?.priorThreadUrl !== ARTIFACT_RECOVERY_THREAD_URL || recoveryPins?.artifactPath !== ARTIFACT_RECOVERY_PATH || recoveryPins?.sourceBranch !== ARTIFACT_RECOVERY_SOURCE_BRANCH || recoveryPins?.sourceSha !== ARTIFACT_RECOVERY_SOURCE_SHA || recoveryPins?.sealedHandoffDigest !== ARTIFACT_RECOVERY_SEALED_HANDOFF_DIGEST) throw new Error("active artifact-recovery wake is missing the exact prior/run/source pins");
   if (typeof control.wakeNonce !== "string" || !/^[A-Za-z0-9][A-Za-z0-9._-]{15,127}$/u.test(control.wakeNonce)) throw new Error("active 360 canary wake requires a unique nonce");
   if (control.restore !== null) throw new Error("Writer1 artifact recovery must not restore or mutate the sealed handoff");
   if (process.env.CURSOR_MODEL !== "cursor-grok-4.6-high" || !process.env.CURSOR_API_KEY || process.env.CURSOR_FAST !== "false") throw new Error("Cursor production environment must provide exact model, API key, and fast=false");
