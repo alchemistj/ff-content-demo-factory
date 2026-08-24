@@ -7,6 +7,8 @@ export interface WholeSiteQaOptions extends QaOptions {
   /** A separately-owned assessor. It receives a frozen snapshot and returns structured findings. */
   assessor?: IntelligentAssessor | undefined;
   assessorName?: string | undefined;
+  /** Rejected/folded service names that may appear only in bounded internal evidence. */
+  rejectedServiceNames?: readonly string[] | undefined;
 }
 
 function objectPresent(value: unknown): boolean {
@@ -103,6 +105,23 @@ function topologyFindings(site: ReturnType<typeof normalizeSite>): QaFinding[] {
   return findings;
 }
 
+function rejectedPublicClaimFindings(site: ReturnType<typeof normalizeSite>, names: readonly string[]): QaFinding[] {
+  const findings: QaFinding[] = [];
+  const phrases = names.map((name) => name.toLowerCase().replace(/[-_]+/gu, " ")).filter((name) => name.split(/\s+/u).length >= 3);
+  const scan = (value: unknown, area: string): void => {
+    if (typeof value === "string") {
+      const normalized = value.toLowerCase().replace(/[-_]+/gu, " ");
+      for (const phrase of phrases) if (normalized.includes(phrase)) findings.push({ code: "rejected-service-public-claim", severity: "hard-fail", message: `Rejected/folded service claim leaked into public ${area}: ${phrase}.` });
+      return;
+    }
+    if (Array.isArray(value)) { value.forEach((child) => scan(child, area)); return; }
+    if (value && typeof value === "object") Object.values(value as Record<string, unknown>).forEach((child) => scan(child, area));
+  };
+  site.pages.forEach((page) => scan(page, `page ${pageRoute(page)}`));
+  scan(site.header, "header/navigation"); scan(site.footer, "footer");
+  return findings;
+}
+
 /**
  * Independent final pass: deterministic gates always run, then an optional
  * separate structured assessor covers writing judgment. No writer callback is
@@ -113,6 +132,7 @@ export async function runWholeSiteQa(input: unknown, options: WholeSiteQaOptions
   const site = deepFreeze(structuredClone(normalizeSite(input)));
   const findings: QaFinding[] = [...deterministic.findings];
   findings.push(...topologyFindings(site));
+  if (options.rejectedServiceNames) findings.push(...rejectedPublicClaimFindings(site, options.rejectedServiceNames));
   if (!options.assessor) {
     findings.push({ code: "independent-assessment-required", severity: "hard-fail", message: "Whole-site QA requires an independent structured assessor." });
   } else {

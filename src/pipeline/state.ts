@@ -2,6 +2,7 @@ import * as fs from 'node:fs/promises';
 import * as path from 'node:path';
 import { computeHandoffDigests, digestOf } from '../contracts/digests.js';
 import { assertApprovedProspectHandoff } from '../contracts/validate.js';
+import { validateCursorWriterReceipt } from './cursor-writer.js';
 
 export type JsonObject = Record<string, any>;
 export const PIPELINE_VERSION = 3;
@@ -81,7 +82,7 @@ export function validateState(state: PipelineState): PipelineState {
       const stageState = state.stages?.[stage];
       if (stageState?.status === 'complete') {
         const receipt = state.writerReceipts[stage];
-        if (!receipt || receipt.provider !== 'cursor-sdk' || receipt.fast !== false || typeof receipt.threadUrl !== 'string' || !receipt.outputDigest) throw new Error(`Persisted ${stage} completion has no valid Cursor receipt`);
+        try { validateCursorWriterReceipt(receipt); } catch (error) { throw new Error(`Persisted ${stage} completion has no valid Cursor receipt: ${error instanceof Error ? error.message : String(error)}`); }
       }
     }
   }

@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import { garageDoor360FourPageHandoff } from "../../../fixtures/360-garage-door-four-page.js";
-import { computeHandoffDigests, parseApprovedProspectHandoff, validateApprovedProspectHandoff } from "../index.js";
+import { computeHandoffDigests, expansionOverrideDigest, parseApprovedProspectHandoff, validateApprovedProspectHandoff } from "../index.js";
 import { contextFor } from "../../pipeline/orchestrator.js";
 import { createInitialState, handoffFingerprint, validateState } from "../../pipeline/state.js";
 import { renderHumanGate2 } from "../../render/human-gate-2.js";
@@ -93,6 +93,11 @@ test("approval digest and source manifest identity are independently sealed", ()
   const manifest = clone(garageDoor360FourPageHandoff);
   manifest.sourceCheckpoint.manifest[0]!.digest = "sha256:" + "f".repeat(64);
   assert.ok(codes(manifest).includes("SOURCE_CHECKPOINT_INVALID"));
+  const resealed = clone(garageDoor360FourPageHandoff);
+  resealed.sourceCheckpoint.sourceSha = "different-source";
+  resealed.sourceCheckpoint.archiveDigest = computeHandoffDigests(resealed).sourceCheckpointDigest;
+  resealed.digests = computeHandoffDigests(resealed);
+  assert.ok(codes(resealed).includes("SOURCE_CHECKPOINT_INVALID"));
 });
 
 test("self-resealed handoff state fails the immutable entry seals", () => {
@@ -111,6 +116,28 @@ test("Strategy Overview public metadata and rejected public CTA claims fail clos
   (cta.prospect.destinations.homepage as any).ctas = [{ label: "Garage door spring repair", href: "/garage-door-repair" }];
   cta.digests = computeHandoffDigests(cta);
   assert.ok(codes(cta).includes("REJECTED_PAGE_ROUTE"));
+  const prose = clone(garageDoor360FourPageHandoff);
+  (prose.prospect.destinations.homepage as any).metaDescription = "We also offer standalone garage door spring repair pages.";
+  prose.digests = computeHandoffDigests(prose);
+  assert.ok(codes(prose).includes("REJECTED_PAGE_ROUTE"));
+});
+
+test("forged evidence counts and copied expansion approvals fail closed", () => {
+  const evidence = clone(garageDoor360FourPageHandoff);
+  evidence.serviceComparison[0]!.directEvidenceCount = 999;
+  evidence.digests = computeHandoffDigests(evidence);
+  assert.ok(codes(evidence).includes("REVIEW_ANALYSIS_MISMATCH"));
+  const copied = clone(garageDoor360FourPageHandoff) as any;
+  copied.expansionOverride = {
+    status: "approved", approvedBy: "Josh Lenz", approvedAt: "2026-08-24", reason: "copied approval",
+    prospectId: "another-prospect", placeId: "ChIJHa32AOi84YMR38BV93YKiS8", runId: copied.sourceCheckpoint.runId,
+    sourceCheckpointDigest: copied.digests.sourceCheckpointDigest, evidenceDigest: copied.digests.evidenceDigest,
+    approvedPageIds: copied.prospect.destinations.servicePages.map((page: any) => page.id),
+    canonicalIntents: copied.prospect.destinations.servicePages.map((page: any) => page.id), additionalRoutes: ["/extra"], digest: "",
+  };
+  copied.expansionOverride.digest = expansionOverrideDigest(copied.expansionOverride);
+  copied.digests = computeHandoffDigests(copied);
+  assert.ok(codes(copied).includes("APPROVAL_REQUIRED"));
 });
 
 test("malformed nested handoffs produce ContractValidationError issues, never dereference errors", () => {

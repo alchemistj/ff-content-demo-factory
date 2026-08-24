@@ -7,6 +7,9 @@
   "main": "./dist/src/index.js",
   "types": "./dist/src/index.d.ts",
   "exports": "./dist/src/index.js",
+  "dependencies": {
+    "@cursor/sdk": "^1.0.28"
+  },
   "engines": {
     "node": ">=22"
   },

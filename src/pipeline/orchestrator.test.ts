@@ -66,7 +66,8 @@ test('writers run strictly in order and every writer receives the complete revie
   assert.equal(contexts.writer1[0].reviewInventory.length, 5);
   assert.equal(contexts.writer2[0].reviewInventory.length, 5);
   assert.equal(contexts.writer3[0].reviewInventory.length, 5);
-  assert.deepEqual(contexts.writer2[0].finishedServicePages, result.state.outputs.servicePages);
+  assert.equal(contexts.writer2[0].finishedServicePages, null);
+  assert.deepEqual(contexts.writer2[0].approvedSupportingPages.map((page: any) => page.pageId), ['homepage', 'contact', 'header', 'footer']);
   assert.equal(contexts.writer3[0].finishedBusinessCopy.homepage.body, 'Home synthetic regression copy.');
 });
 

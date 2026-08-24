@@ -51,7 +51,9 @@ export interface HomepagePrescription extends PagePrescription { reviewGrade: Re
 export interface ContactPagePrescription extends PagePrescription {}
 export interface ServicePagePrescription extends Omit<PagePrescription, "label" | "purpose"> { id: string; reviewGrade: ReviewGrade; }
 export interface PageExpansionOverride {
-  status: "approved"; approvedBy: string; approvedAt: string; reason: string;
+  status: "approved"; approvedBy: "Josh Lenz"; approvedAt: string; reason: string;
+  prospectId: string; placeId: string; runId: string; sourceCheckpointDigest: string; evidenceDigest: string;
+  approvedPageIds: readonly string[]; canonicalIntents: readonly string[];
   additionalRoutes: readonly string[]; digest: string;
 }
 export interface DestinationPlan {
