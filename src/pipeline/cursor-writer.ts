@@ -21,6 +21,10 @@ export interface CursorWriterReceipt {
   requestDigest: string; createRequest: unknown; registryItem: unknown; registryDigest: string; modelParams: unknown;
   effort: "high"; effortParameterId?: string; effortAttestationSource: "official-response" | "official-registry-parameter" | "named-model-default";
   attestationSource: "official-response" | "bound-create-request"; apiVersion: "cloud-agent-api-v1";
+  mode?: "initial" | "same-thread-retrieval";
+  correctionVersion?: "words-writer1-retrieval/v1";
+  prior?: CursorFollowUpBindings;
+  followUpPromptDigest?: string;
 }
 export interface CursorWriterPendingReceipt {
   stage: CursorWriterStage; provider: typeof CURSOR_PROVIDER; requestedModel: typeof REQUIRED_CURSOR_MODEL;
@@ -32,7 +36,7 @@ export type StoredCursorWriterReceipt = CursorWriterReceipt | CursorWriterPendin
 export interface CursorDispatchClaim {
   key: string; stage: CursorWriterStage; runId: string; inputDigest: string; promptDigest: string; ownerToken: string;
   requestedAgentId: string; claimedAt: string; leaseUntil?: string; heartbeatAt?: string;
-  phase?: "claimed" | "agent-created" | "prompt-sent" | "waiting" | "completed";
+  phase?: "claimed" | "agent-created" | "prompt-sent" | "follow-up-sent" | "waiting" | "completed";
   agentId?: string; jobId?: string;
 }
 export interface CursorWriterReceiptStore {
@@ -149,6 +153,26 @@ export interface CursorTestTransport {
   getRun?(agentId: string, jobId: string, apiKey: string): Promise<Run>;
 }
 type CloudTransport = CursorTestTransport;
+
+export interface CursorFollowUpBindings {
+  priorActionRunId: string;
+  priorArtifactId: number;
+  priorRunId: string;
+  priorJobId: string;
+  priorAgentId: string;
+  priorThreadUrl: string;
+  priorOutputDigest: string;
+  priorInputDigest: string;
+  priorPromptDigest: string;
+  priorRequestDigest: string;
+}
+
+export interface CursorFollowUpReceipt extends CursorWriterReceipt {
+  mode: "same-thread-retrieval";
+  correctionVersion: "words-writer1-retrieval/v1";
+  prior: CursorFollowUpBindings;
+  followUpPromptDigest: string;
+}
 const API_VERSION = "cloud-agent-api-v1" as const;
 function modelOptions(apiKey: string, selection: CursorModelSelection): AgentOptions { return { apiKey, model: { id: selection.officialId, params: selection.params }, cloud: { env: { type: "cloud" } } }; }
 function createRequest(options: AgentOptions, prompt: string, idempotencyKey: string, agentId: string): RecordValue {
@@ -224,6 +248,102 @@ async function officialCloudTransport(): Promise<CloudTransport> {
 function deterministicAgentId(key: string): string { const hex = createHash("sha256").update(key).digest("hex").slice(0, 32); return `bc-${hex.slice(0, 8)}-${hex.slice(8, 12)}-4${hex.slice(13, 16)}-8${hex.slice(17, 20)}-${hex.slice(20, 32)}`; }
 function resolvedModelOf(agent: SDKAgent, run: Run, result: unknown): unknown { const resultRecord = asRecord(result); const runModel = asRecord(run.model); const agentModel = asRecord(agent.model); return runModel?.id ?? (resultRecord && asRecord(resultRecord.model)?.id) ?? agentModel?.id; }
 function outputOf(result: unknown): unknown { const value = asRecord(result); return value?.result ?? value?.output ?? result; }
+
+export function validateCursorWriterFollowUpReceipt(receipt: unknown, prior: CursorFollowUpBindings, promptDigest: string): asserts receipt is CursorFollowUpReceipt {
+  validateCursorWriterReceipt(receipt);
+  const value = receipt as CursorWriterReceipt;
+  if (value.mode !== "same-thread-retrieval" || value.correctionVersion !== "words-writer1-retrieval/v1") throw new CursorWriterExecutionError("CURSOR_FOLLOW_UP_RECEIPT_INVALID", "Cursor receipt is not the versioned Writer1 same-thread retrieval mode");
+  if (!value.prior || JSON.stringify(value.prior) !== JSON.stringify(prior)) throw new CursorWriterExecutionError("CURSOR_FOLLOW_UP_BINDING_INVALID", "Cursor follow-up receipt lost the prior artifact/receipt binding");
+  if (value.followUpPromptDigest !== promptDigest) throw new CursorWriterExecutionError("CURSOR_FOLLOW_UP_BINDING_INVALID", "Cursor follow-up receipt prompt digest does not match the correction prompt");
+  if (value.agentId !== prior.priorAgentId || value.threadUrl !== prior.priorThreadUrl || value.jobId === prior.priorJobId) throw new CursorWriterExecutionError("CURSOR_FOLLOW_UP_BINDING_INVALID", "Cursor follow-up must use the same agent URL and a new run ID");
+}
+
+export async function retrieveCursorWriterOutput(input: {
+  env?: Record<string, string | undefined>;
+  receiptStore: CursorWriterReceiptStore;
+  priorReceipt: CursorWriterReceipt;
+  prior: CursorFollowUpBindings;
+  prompt: string;
+  runId: string;
+  now?: () => Date;
+  transport?: CloudTransport;
+  onFollowUp?: (notice: CursorDispatchNotice) => void | Promise<void>;
+  validateOutput?: (output: unknown) => void;
+}): Promise<{ output: unknown; receipt: CursorFollowUpReceipt; threadUrl: string; claim: CursorDispatchClaim }> {
+  const env = input.env || process.env;
+  const now = input.now || (() => new Date());
+  const requestedModel = env.CURSOR_MODEL;
+  const fastRaw = env.CURSOR_FAST;
+  const fast = fastRaw === "false" || fastRaw === "off" ? false : fastRaw;
+  validateCursorWriterRuntime({ provider: CURSOR_PROVIDER, requestedModel, fast });
+  if (!env.CURSOR_API_KEY) throw new CursorWriterExecutionError("CURSOR_API_KEY_REQUIRED", "Cloud Cursor production requires CURSOR_API_KEY");
+  if (typeof input.prompt !== "string" || !input.prompt.trim()) throw new CursorWriterExecutionError("CURSOR_PROMPT_REQUIRED", "Writer retrieval requires a non-empty correction prompt");
+  validateCursorWriterReceipt(input.priorReceipt);
+  if (input.prior.priorJobId !== input.priorReceipt.jobId || input.prior.priorAgentId !== input.priorReceipt.agentId || input.prior.priorThreadUrl !== input.priorReceipt.threadUrl || input.prior.priorOutputDigest !== input.priorReceipt.outputDigest || input.prior.priorInputDigest !== input.priorReceipt.inputDigest || input.prior.priorPromptDigest !== input.priorReceipt.promptDigest || input.prior.priorRequestDigest !== input.priorReceipt.requestDigest) throw new CursorWriterExecutionError("CURSOR_PRIOR_BINDING_INVALID", "Prior Cursor receipt does not match the supplied artifact bindings");
+  const transport = input.transport || await officialCloudTransport();
+  const selection = resolveCursorModelSelection(await transport.listModels(env.CURSOR_API_KEY), requestedModel);
+  const inputDigest = input.priorReceipt.inputDigest;
+  const promptDigest = digestOf(input.prompt);
+  const key = `${input.runId}:writer1:retrieval:v1:${input.prior.priorJobId}:${inputDigest}:${promptDigest}`;
+  const existing = await input.receiptStore.get(key);
+  if (existing) {
+    validateCursorWriterFollowUpReceipt(existing, input.prior, promptDigest);
+    const claim = await input.receiptStore.getClaim?.(key);
+    if (!claim) throw new CursorWriterExecutionError("CURSOR_FOLLOW_UP_CLAIM_MISSING", "Completed Cursor follow-up has no durable correction claim");
+    return { output: existing.output, receipt: existing, threadUrl: existing.threadUrl, claim };
+  }
+  if (!input.receiptStore.tryClaim || !input.receiptStore.getClaim || !input.receiptStore.putClaim) throw new CursorWriterExecutionError("CURSOR_DISPATCH_CLAIM_REQUIRED", "Cursor follow-up requires an atomic durable claim store");
+  const initialClaim: CursorDispatchClaim = { key, stage: "writer1", runId: input.runId, inputDigest, promptDigest, ownerToken: `${process.pid}:${now().getTime()}:${Math.random()}`, requestedAgentId: input.prior.priorAgentId, claimedAt: now().toISOString(), heartbeatAt: now().toISOString(), leaseUntil: new Date(now().getTime() + 30_000).toISOString(), phase: "claimed" };
+  const claimed = await input.receiptStore.tryClaim(key, initialClaim);
+  let activeClaim = claimed.claim;
+  if (!claimed.acquired) {
+    const settled = await input.receiptStore.get(key);
+    if (settled) { validateCursorWriterFollowUpReceipt(settled, input.prior, promptDigest); const finishedClaim = await input.receiptStore.getClaim(key); if (!finishedClaim) throw new CursorWriterExecutionError("CURSOR_FOLLOW_UP_CLAIM_MISSING", "Completed Cursor follow-up has no durable correction claim"); return { output: settled.output, receipt: settled, threadUrl: settled.threadUrl, claim: finishedClaim }; }
+    throw new CursorWriterExecutionError("CURSOR_DISPATCH_IN_PROGRESS", "Another worker owns the live Cursor follow-up claim; caller must reconcile before retrying", { key, phase: activeClaim.phase || "claimed" });
+  }
+  const options = modelOptions(env.CURSOR_API_KEY, selection);
+  const followUpRequest = { ...createRequest(options, input.prompt, key, input.prior.priorAgentId), mode: "same-thread-retrieval", correctionVersion: "words-writer1-retrieval/v1", priorJobId: input.prior.priorJobId, priorOutputDigest: input.prior.priorOutputDigest };
+  const requestDigest = digestOf(followUpRequest);
+  let agent: SDKAgent;
+  let run: Run;
+  if (activeClaim.agentId && activeClaim.jobId) {
+    if (activeClaim.agentId !== input.prior.priorAgentId) throw new CursorWriterExecutionError("CURSOR_FOLLOW_UP_AGENT_MISMATCH", "A correction claim is bound to a different Cursor agent");
+    agent = await transport.resume(input.prior.priorAgentId, options);
+    if (!transport.getRun) throw new CursorWriterExecutionError("CURSOR_RUN_REATTACH_REQUIRED", "Interrupted Cursor follow-up cannot resend without the official durable run lookup");
+    run = await transport.getRun(input.prior.priorAgentId, activeClaim.jobId, env.CURSOR_API_KEY);
+  } else {
+    // This is deliberately the only production entry for this mode: reattach
+    // the existing Cloud Agent and send exactly one follow-up. Agent.create is
+    // intentionally unreachable from the retrieval path.
+    agent = await transport.resume(input.prior.priorAgentId, options);
+    if (!options.model) throw new CursorWriterExecutionError("CURSOR_MODEL_REQUIRED", "Cursor follow-up requires the exact verified model selection");
+    run = await agent.send(input.prompt, { model: options.model, idempotencyKey: key });
+    activeClaim = { ...activeClaim, agentId: input.prior.priorAgentId, jobId: String(run.id), phase: "follow-up-sent", heartbeatAt: now().toISOString(), leaseUntil: new Date(now().getTime() + 30_000).toISOString() };
+    await input.receiptStore.putClaim(key, activeClaim);
+    if (input.onFollowUp) await input.onFollowUp({ stage: "writer1", provider: CURSOR_PROVIDER, requestedModel: REQUIRED_CURSOR_MODEL, officialModel: selection.officialId, modelParams: selection.params, registryDigest: selection.registryDigest, effort: selection.effort, effortAttestationSource: selection.effortAttestationSource, fast: false, agentId: input.prior.priorAgentId, jobId: String(run.id), threadUrl: input.prior.priorThreadUrl, inputDigest, promptDigest, requestDigest, dispatchedAt: now().toISOString() });
+  }
+  const agentId = String(agent.agentId); const jobId = String(run.id);
+  if (agentId !== input.prior.priorAgentId || jobId === input.prior.priorJobId) throw new CursorWriterExecutionError("CURSOR_FOLLOW_UP_BINDING_INVALID", "Cursor follow-up returned the wrong agent or reused the prior run ID");
+  const record = await transport.getAgent(agentId, env.CURSOR_API_KEY);
+  if (record.id !== input.prior.priorAgentId || record.url !== input.prior.priorThreadUrl) throw new CursorWriterExecutionError("CURSOR_FOLLOW_UP_THREAD_MISMATCH", "Cursor follow-up changed the existing agent thread");
+  assertThreadUrl(record.url, agentId);
+  activeClaim = { ...activeClaim, agentId, jobId, phase: "waiting", heartbeatAt: now().toISOString(), leaseUntil: new Date(now().getTime() + 30_000).toISOString() };
+  await input.receiptStore.putClaim(key, activeClaim);
+  const result = await run.wait();
+  const resolvedModel = resolvedModelOf(agent, run, result);
+  validateCursorWriterRuntime({ provider: CURSOR_PROVIDER, requestedModel, resolvedModel, fast: false });
+  if (resolvedModel !== OFFICIAL_CURSOR_MODEL) throw new CursorWriterExecutionError("CURSOR_RESOLVED_MODEL_MISSING", "Cursor follow-up did not attest the required resolved model");
+  const output = outputOf(result);
+  if (input.validateOutput) input.validateOutput(output);
+  const attestationSource = assertFastBound(options, [agent, run, result]);
+  const effortAttestationSource = assertEffortBound(selection, [agent, run, result]);
+  const receipt: CursorFollowUpReceipt = { stage: "writer1", provider: CURSOR_PROVIDER, requestedModel: REQUIRED_CURSOR_MODEL, resolvedModel: OFFICIAL_CURSOR_MODEL, fast: false, jobId, agentId, threadUrl: record.url, inputDigest, promptDigest, outputDigest: digestOf(output), completedAt: now().toISOString(), status: "complete", output, requestDigest, createRequest: followUpRequest, registryItem: selection.registryItem, registryDigest: selection.registryDigest, modelParams: selection.params, effort: "high", ...(selection.effortParameterId ? { effortParameterId: selection.effortParameterId } : {}), effortAttestationSource, attestationSource, apiVersion: API_VERSION, mode: "same-thread-retrieval", correctionVersion: "words-writer1-retrieval/v1", prior: input.prior, followUpPromptDigest: promptDigest };
+  validateCursorWriterFollowUpReceipt(receipt, input.prior, promptDigest);
+  await input.receiptStore.put(key, receipt);
+  activeClaim = { ...activeClaim, phase: "completed", heartbeatAt: now().toISOString(), leaseUntil: new Date(now().getTime() + 30_000).toISOString() };
+  await input.receiptStore.putClaim(key, activeClaim);
+  return { output, receipt, threadUrl: record.url, claim: activeClaim };
+}
 
 async function dispatchWithTransport(input: { transport: CloudTransport; env: Record<string, string | undefined>; receiptStore: CursorWriterReceiptStore; now: () => Date; onDispatch?: (notice: CursorDispatchNotice) => void | Promise<void> }, stage: CursorWriterStage, payload: unknown, prompt: string, runId: string): Promise<{ output: unknown; receipt: CursorWriterReceipt; threadUrl: string; claim?: CursorDispatchClaim }> {
   const requestedModel = input.env.CURSOR_MODEL; const fastRaw = input.env.CURSOR_FAST; const fast = fastRaw === "false" || fastRaw === "off" ? false : fastRaw; validateCursorWriterRuntime({ provider: CURSOR_PROVIDER, requestedModel, fast });

@@ -1,5 +1,4 @@
 import assert from "node:assert/strict";
-import { execFileSync } from "node:child_process";
 import { createHash } from "node:crypto";
 import { readFileSync } from "node:fs";
 import * as fs from "node:fs/promises";
@@ -10,9 +9,8 @@ import { validateSealed, dispatchReceipt, run, writer1Projection } from "../../s
 import { validateControl } from "../../scripts/360-words-control.mjs";
 
 const root = path.resolve(process.cwd());
-const pr3 = "4063cb7265d32f4d4739c1dc7724d5a6d3a8d381";
 const routes = ["/", "/garage-door-repair", "/garage-door-installation", "/contact"];
-const rawHandoff = () => execFileSync("git", ["show", `${pr3}:canary/outputs/360-four-page-reseal-handoff.json`], { cwd: root });
+const rawHandoff = () => readFileSync(path.join(root, "canary/sealed/360-four-page-reseal-handoff.json"));
 const blobSha = (raw: Buffer) => createHash("sha1").update(Buffer.concat([Buffer.from(`blob ${raw.length}\0`), raw])).digest("hex");
 
 test("imports the exact PR3 handoff blob and preserves the four public routes", () => {

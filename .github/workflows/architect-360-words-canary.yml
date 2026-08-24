@@ -56,6 +56,26 @@ jobs:
             node --import tsx scripts/360-words-canary.ts --validate-only
           fi
 
+      - name: Download and verify exact prior Writer1 artifact
+        if: steps.control.outputs.dormant != 'true'
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          EXPECTED_ACTION_RUN_ID: '32776170549'
+          EXPECTED_ARTIFACT_ID: '9539302493'
+        run: |
+          set -euo pipefail
+          metadata="$(gh api "repos/${GITHUB_REPOSITORY}/actions/artifacts/${EXPECTED_ARTIFACT_ID}")"
+          test "$(jq -r '.id' <<<"$metadata")" = "$EXPECTED_ARTIFACT_ID"
+          test "$(jq -r 'getpath(["workflow_" + "run", "id"])' <<<"$metadata")" = "$EXPECTED_ACTION_RUN_ID"
+          mkdir -p canary/inputs/prior-artifact
+          gh api "repos/${GITHUB_REPOSITORY}/actions/artifacts/${EXPECTED_ARTIFACT_ID}/zip" > canary/inputs/prior-writer1.zip
+          unzip -q canary/inputs/prior-writer1.zip -d canary/inputs/prior-artifact
+          test -f canary/inputs/prior-artifact/runtime/writer1-receipt.json
+          test -f canary/inputs/prior-artifact/runtime/dispatch-receipt.json
+          test -f canary/inputs/prior-artifact/runtime/manifest.sha256
+          test -f canary/inputs/prior-artifact/outputs/writer1-output.json
+
       - name: Validate secret-backed Cursor runtime
         if: steps.control.outputs.dormant != 'true'
         shell: bash
@@ -68,7 +88,7 @@ jobs:
           test "$CURSOR_MODEL" = "cursor-grok-4.6-high"
           test "$CURSOR_FAST" = "false"
 
-      - name: Dispatch exactly Writer1 and stop at Architect QA
+      - name: Retrieve Writer1 JSON in the same Cursor thread and stop at Architect QA
         id: dispatch
         if: steps.control.outputs.dormant != 'true'
         continue-on-error: true
@@ -77,7 +97,8 @@ jobs:
           CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
           CURSOR_MODEL: ${{ secrets.CURSOR_MODEL }}
           CURSOR_FAST: 'false'
-        run: node --import tsx scripts/360-words-canary.ts
+          WRITER1_PRIOR_ARTIFACT_ROOT: canary/inputs/prior-artifact
+        run: node --import tsx scripts/360-words-canary.ts --correction
 
       - name: Write durable failure/state surface
         if: always()

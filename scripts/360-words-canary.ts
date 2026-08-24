@@ -1,13 +1,19 @@
 import { createHash } from "node:crypto";
-import { readFileSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
 import * as fs from "node:fs/promises";
 import * as path from "node:path";
-import { createCursorWriterExecutor, createJsonCursorReceiptStore, type CursorDispatchNotice } from "../src/pipeline/cursor-writer.js";
+import { createJsonCursorReceiptStore, retrieveCursorWriterOutput, validateCursorWriterReceipt, validateCursorWriterFollowUpReceipt, type CursorDispatchNotice, type CursorFollowUpBindings, type CursorWriterReceipt } from "../src/pipeline/cursor-writer.js";
 import { digestOf } from "../src/contracts/digests.js";
 
 const DORMANT_NONCE = "DORMANT";
 const ROUTES = ["/", "/garage-door-repair", "/garage-door-installation", "/contact"] as const;
 const WRITER1_ROUTES = ["/garage-door-repair", "/garage-door-installation"] as const;
+export const PRIOR_ACTION_RUN_ID = "32776170549";
+export const PRIOR_ARTIFACT_ID = 9539302493;
+export const PRIOR_CURSOR_AGENT_ID = "bc-972b63b0-6e43-4c76-805d-b95a0ba13da8";
+export const PRIOR_CURSOR_RUN_ID = "run-a59d6e17-3ce0-4c0f-8231-597d5b15382b";
+export const PRIOR_OUTPUT_DIGEST = "sha256:d2f2e75fbd2482e87afe18926fc6fcf1de319fe1ff9d1eb3a942ca7cfbee7e29";
+export const PRIOR_CURSOR_THREAD_URL = `https://cursor.com/agents/${PRIOR_CURSOR_AGENT_ID}`;
 type Dict = Record<string, any>;
 
 function jsonFile(root: string, relative: string): string { return path.join(root, relative); }
@@ -16,6 +22,80 @@ function gitBlobSha(raw: Buffer): string { return createHash("sha1").update(Buff
 function sha256(raw: Buffer): string { return `sha256:${createHash("sha256").update(raw).digest("hex")}`; }
 function equalArray(actual: unknown, expected: readonly string[], label: string): void {
   if (!Array.isArray(actual) || actual.length !== expected.length || actual.some((value, index) => value !== expected[index])) throw new Error(`${label} does not match the sealed route set`);
+}
+
+function sha256Hex(raw: Buffer): string { return createHash("sha256").update(raw).digest("hex"); }
+function normalized(value: string): string { return value.replace(/[“”"']/gu, "").replace(/\s+/gu, " ").trim().toLowerCase(); }
+function stringValue(value: unknown): value is string { return typeof value === "string" && value.trim().length > 0; }
+function isRecord(value: unknown): value is Dict { return !!value && typeof value === "object" && !Array.isArray(value); }
+
+export function validatePriorWriter1Artifact(root: string, expected = { actionRunId: PRIOR_ACTION_RUN_ID, artifactId: PRIOR_ARTIFACT_ID, agentId: PRIOR_CURSOR_AGENT_ID, jobId: PRIOR_CURSOR_RUN_ID, outputDigest: PRIOR_OUTPUT_DIGEST, threadUrl: PRIOR_CURSOR_THREAD_URL }): { receipt: CursorWriterReceipt; bindings: CursorFollowUpBindings } {
+  const receipt = JSON.parse(readFileSync(path.join(root, "runtime/writer1-receipt.json"), "utf8")) as CursorWriterReceipt;
+  const dispatch = JSON.parse(readFileSync(path.join(root, "runtime/dispatch-receipt.json"), "utf8")) as Dict;
+  const outputRaw = readFileSync(path.join(root, "outputs/writer1-output.json"));
+  validateCursorWriterReceipt(receipt);
+  if (receipt.agentId !== expected.agentId || receipt.jobId !== expected.jobId || receipt.threadUrl !== expected.threadUrl || receipt.outputDigest !== expected.outputDigest || receipt.provider !== "cursor-sdk" || receipt.requestedModel !== "cursor-grok-4.6-high" || receipt.fast !== false) throw new Error("prior Writer1 receipt identity/model binding mismatch");
+  if (JSON.parse(outputRaw.toString("utf8")) !== receipt.output) throw new Error("prior Writer1 output does not match its receipt");
+  if (dispatch.agentId !== expected.agentId || dispatch.jobId !== expected.jobId || dispatch.threadUrl !== expected.threadUrl || dispatch.outputDigest !== undefined && dispatch.outputDigest !== expected.outputDigest || dispatch.provider !== "cursor-sdk" || dispatch.requestedModel !== "cursor-grok-4.6-high" || dispatch.fast !== false) throw new Error("prior Writer1 dispatch receipt identity/model binding mismatch");
+  if (dispatch.requestDigest !== receipt.requestDigest || dispatch.inputDigest !== receipt.inputDigest || dispatch.promptDigest !== receipt.promptDigest) throw new Error("prior Writer1 dispatch and completion bindings differ");
+  const manifest = readFileSync(path.join(root, "runtime/manifest.sha256"), "utf8").trim().split(/\n/u).filter(Boolean);
+  for (const line of manifest) {
+    const match = /^(?<sha>[0-9a-f]{64})\s{2}(?<file>.+)$/u.exec(line); const groups = match?.groups; if (!groups?.file || !groups.sha) throw new Error("prior artifact manifest is malformed");
+    const relative = groups.file.replace(/^canary\//u, ""); const file = path.join(root, relative); if (!existsSync(file)) throw new Error(`prior artifact manifest file is missing: ${groups.file}`);
+    if (sha256Hex(readFileSync(file)) !== groups.sha) throw new Error(`prior artifact manifest hash mismatch: ${groups.file}`);
+  }
+  if (expected.artifactId !== PRIOR_ARTIFACT_ID || expected.actionRunId !== PRIOR_ACTION_RUN_ID) throw new Error("prior GitHub artifact/action identity is not the approved canary artifact");
+  const bindings: CursorFollowUpBindings = { priorActionRunId: expected.actionRunId, priorArtifactId: expected.artifactId, priorRunId: "32717620900", priorJobId: receipt.jobId, priorAgentId: receipt.agentId, priorThreadUrl: receipt.threadUrl, priorOutputDigest: receipt.outputDigest, priorInputDigest: receipt.inputDigest, priorPromptDigest: receipt.promptDigest, priorRequestDigest: receipt.requestDigest };
+  return { receipt, bindings };
+}
+
+function routeBearingKey(key: string): boolean { return /(?:url|path|route|href|destination|nav|navigation|cta|callstoaction|header|footer|links?)/iu.test(key); }
+function scanForbiddenPublicReferences(value: unknown, keyPath = ""): void {
+  if (Array.isArray(value)) { value.forEach((child, index) => scanForbiddenPublicReferences(child, `${keyPath}[${index}]`)); return; }
+  if (!isRecord(value)) return;
+  for (const [key, child] of Object.entries(value)) {
+    const childPath = `${keyPath}.${key}`;
+    if (routeBearingKey(key) && typeof child === "string") {
+      const lower = child.toLowerCase();
+      if (/(?:spring|opener)/u.test(lower)) throw new Error(`Writer1 output exposes a prohibited spring/opener standalone route, navigation item, or CTA at ${childPath}`);
+      if (/(?:^|\/)(?:strategy(?:-overview)?|home)(?:\/|$)/u.test(lower)) throw new Error(`Writer1 output exposes a Home/Strategy route at ${childPath}`);
+    }
+    scanForbiddenPublicReferences(child, childPath);
+  }
+}
+
+export function parseAndValidateWriter1Output(raw: unknown, projection: Dict): Dict {
+  if (typeof raw !== "string" || !raw.trim()) throw new Error("Writer1 follow-up output must be a non-empty JSON string");
+  let parsed: unknown; try { parsed = JSON.parse(raw); } catch { throw new Error("Writer1 follow-up output is not valid JSON"); }
+  if (!isRecord(parsed) || parsed.schemaVersion !== "words-writer1-output/v1" || !Array.isArray(parsed.pages)) throw new Error("Writer1 output must be words-writer1-output/v1 with a pages array");
+  if (parsed.pages.length !== 2) throw new Error("Writer1 output must contain exactly two service pages");
+  const evidenceByRoute = new Map<string, Dict[]>((projection.services || []).map((service: Dict) => [service.page.url, service.reviewEvidence || []]));
+  const seen = new Set<string>();
+  for (const page of parsed.pages) {
+    if (!isRecord(page) || !stringValue(page.url) || !WRITER1_ROUTES.includes(page.url as typeof WRITER1_ROUTES[number]) || seen.has(page.url)) throw new Error("Writer1 output contains a missing, duplicate, or unapproved page route");
+    seen.add(page.url);
+    if (page.type !== undefined && String(page.type).toLowerCase() !== "service") throw new Error("Writer1 output contains a non-service page");
+    for (const field of ["seoTitle", "metaDescription", "h1"] as const) if (!stringValue(page[field])) throw new Error(`Writer1 output is missing full copy field ${field}`);
+    if (!Array.isArray(page.sections) || page.sections.length === 0 || page.sections.some((section: unknown) => !isRecord(section) || !stringValue(section.heading) || !stringValue(section.body))) throw new Error("Writer1 output is missing complete section copy");
+    const placements = page.reviewPlacements ?? page.reviewEvidence;
+    if (!Array.isArray(placements) || placements.length === 0) throw new Error(`Writer1 output is missing review/quote bindings for ${page.url}`);
+    const allowed = evidenceByRoute.get(page.url) || [];
+    for (const placement of placements) {
+      if (!isRecord(placement)) throw new Error("Writer1 review binding is malformed");
+      const reviewId = placement.reviewId ?? placement.sourceReviewId ?? placement.evidenceId ?? placement.refId;
+      const quote = placement.quote ?? placement.excerpt ?? placement.exactText;
+      if (!stringValue(reviewId) || !stringValue(quote)) throw new Error("Writer1 review binding requires review ID and quote");
+      const source = allowed.find((entry) => String(entry.review?.id ?? entry.review?.reviewId) === String(reviewId));
+      if (!source) throw new Error(`Writer1 review binding references an unapproved review: ${reviewId}`);
+      const sourceText = String(source.review?.text ?? source.review?.exactText ?? source.review?.reviewText ?? "");
+      if (!sourceText || !normalized(sourceText).includes(normalized(String(quote)))) throw new Error(`Writer1 quote is not bound to the source review: ${reviewId}`);
+      if (!stringValue(placement.attribution ?? placement.reviewer ?? placement.author)) throw new Error(`Writer1 review binding is missing attribution: ${reviewId}`);
+    }
+  }
+  if (seen.size !== 2 || JSON.stringify([...seen]) !== JSON.stringify(WRITER1_ROUTES)) throw new Error("Writer1 output route order/topology is not exactly Repair then Installation");
+  for (const key of ["home", "homepage", "contact", "strategy", "strategyOverview", "strategyOverviewPage"]) if (key in parsed) throw new Error(`Writer1 output must not contain ${key}`);
+  scanForbiddenPublicReferences(parsed);
+  return parsed;
 }
 
 export function validateSealed(root = process.cwd(), handoffOverride?: { raw: Buffer; value: Dict }, bridgeOverride?: Dict): { handoff: Dict; manifest: Dict; pin: Dict; ledger: Dict; approval: Dict; bridge: Dict } {
@@ -108,25 +188,46 @@ export async function dispatchReceipt(root: string, notice: CursorDispatchNotice
   if (process.env.GITHUB_STEP_SUMMARY) await fs.appendFile(process.env.GITHUB_STEP_SUMMARY, `\n### Cursor Writer1 dispatch\n- Agent: \`${notice.agentId}\`\n- Run: \`${notice.jobId}\`\n- Direct thread: ${notice.threadUrl}\n`, "utf8");
 }
 
-export async function run(root = process.cwd()): Promise<{ status: string; stage: string; threadUrl?: string }> {
+export const WRITER1_RETRIEVAL_PROMPT = `Versioned Writer1 retrieval correction. Do not write, rewrite, summarize, recompute, or regenerate any website copy. Reattach to this same Cursor agent thread and read the existing words-writer1-output/v1 that you already produced in your current agent context/workspace. Return that complete artifact verbatim as JSON, with no prose wrapper, no Markdown fences, and no commentary.
+
+The returned root object must have schemaVersion exactly "words-writer1-output/v1" and pages exactly in this order: /garage-door-repair, /garage-door-installation. Each service page must include the complete existing copy fields, sections, and evidence/quote bindings. Return no Home, Contact, or Strategy page. Spring-repair and opener-installation evidence may remain folded inside the approved service copy, but there must be no standalone spring/opener route, navigation item, or CTA. This is retrieval of the existing output only; do not change any words. If the complete existing JSON is unavailable, fail instead of inventing or summarizing it.`;
+
+export async function runCorrection(root = process.cwd()): Promise<{ status: string; stage: string; threadUrl?: string; followUpRunId?: string }> {
   const control = readJson(root, ".factory-wake/360-words-control.json");
   if (control.requestedBy !== "architect" || control.stage !== "writer1" || control.policy?.writer1Only !== true || control.policy?.provider !== "cursor-sdk" || control.policy?.model !== "cursor-grok-4.6-high" || control.policy?.fast !== false) throw new Error("360 canary control is not the immutable Writer1 policy");
   if (control.wakeNonce === DORMANT_NONCE) return { status: "dormant", stage: "writer1" };
   if (typeof control.wakeNonce !== "string" || !/^[A-Za-z0-9][A-Za-z0-9._-]{15,127}$/u.test(control.wakeNonce)) throw new Error("active 360 canary wake requires a unique nonce");
-  if (control.restore !== null) throw new Error("Writer1 must start from the sealed handoff and may not restore a prior artifact");
+  if (control.restore !== null) throw new Error("Writer1 retrieval must not restore or mutate the sealed handoff");
   if (process.env.CURSOR_MODEL !== "cursor-grok-4.6-high" || !process.env.CURSOR_API_KEY || process.env.CURSOR_FAST !== "false") throw new Error("Cursor production environment must provide exact model, API key, and fast=false");
+  const priorRoot = process.env.WRITER1_PRIOR_ARTIFACT_ROOT;
+  if (!priorRoot) throw new Error("exact prior Writer1 GitHub artifact must be downloaded before retrieval");
+  const prior = validatePriorWriter1Artifact(priorRoot);
   const sealed = validateSealed(root);
   const payload = writer1Projection(sealed);
-  await writeJson(jsonFile(root, "canary/runtime/state.json"), { status: "writer1-dispatching", stage: "writer1", runId: sealed.handoff.runId, sealedHandoffDigest: sealed.handoff.resealDigest });
-  const executor = createCursorWriterExecutor({ env: process.env, receiptStore: createJsonCursorReceiptStore(jsonFile(root, "canary/runtime/cursor-receipts.json")), onDispatch: (notice) => dispatchReceipt(root, notice) });
-  const result = await executor.dispatch("writer1", payload, "Words Factory writer1 execution for approved 360 handoff", sealed.handoff.runId);
-  await writeJson(jsonFile(root, "canary/runtime/writer1-receipt.json"), result.receipt);
-  await writeJson(jsonFile(root, "canary/outputs/writer1-output.json"), result.output);
-  await writeJson(jsonFile(root, "canary/runtime/state.json"), { status: "awaiting-architect-qa", stage: "writer1", runId: sealed.handoff.runId, sealedHandoffDigest: sealed.handoff.resealDigest, threadUrl: result.threadUrl, receipt: result.receipt });
-  return { status: "awaiting-architect-qa", stage: "writer1", threadUrl: result.threadUrl };
+  await writeJson(jsonFile(root, "canary/runtime/prior-artifact-verification.json"), { status: "verified", actionRunId: PRIOR_ACTION_RUN_ID, artifactId: PRIOR_ARTIFACT_ID, prior: prior.bindings });
+  await writeJson(jsonFile(root, "canary/runtime/state.json"), { status: "writer1-retrieval-dispatching", stage: "writer1", runId: sealed.handoff.runId, sealedHandoffDigest: sealed.handoff.resealDigest, prior: prior.bindings });
+  const result = await retrieveCursorWriterOutput({
+    env: process.env,
+    receiptStore: createJsonCursorReceiptStore(jsonFile(root, "canary/runtime/cursor-receipts.json")),
+    priorReceipt: prior.receipt,
+    prior: prior.bindings,
+    prompt: WRITER1_RETRIEVAL_PROMPT,
+    runId: sealed.handoff.runId,
+    onFollowUp: (notice) => dispatchReceipt(root, notice),
+    validateOutput: (output) => parseAndValidateWriter1Output(output, payload),
+  });
+  const parsed = parseAndValidateWriter1Output(result.output, payload);
+  validateCursorWriterFollowUpReceipt(result.receipt, prior.bindings, digestOf(WRITER1_RETRIEVAL_PROMPT));
+  await writeJson(jsonFile(root, "canary/runtime/writer1-correction-receipt.json"), result.receipt);
+  await writeJson(jsonFile(root, "canary/runtime/writer1-validation.json"), { status: "valid", schemaVersion: parsed.schemaVersion, routes: parsed.pages.map((page: Dict) => page.url), outputDigest: result.receipt.outputDigest, sameThread: result.threadUrl === prior.bindings.priorThreadUrl, prior: prior.bindings, followUpRunId: result.receipt.jobId });
+  await writeJson(jsonFile(root, "canary/outputs/writer1-output.json"), parsed);
+  await writeJson(jsonFile(root, "canary/runtime/state.json"), { status: "awaiting-architect-qa", stage: "writer1", runId: sealed.handoff.runId, sealedHandoffDigest: sealed.handoff.resealDigest, threadUrl: result.threadUrl, followUpRunId: result.receipt.jobId, prior: prior.bindings, receipt: result.receipt, nextStage: null });
+  return { status: "awaiting-architect-qa", stage: "writer1", threadUrl: result.threadUrl, followUpRunId: result.receipt.jobId };
 }
 
+export const run = runCorrection;
+
 if (import.meta.url === `file://${process.argv[1]}`) {
-  const operation = process.argv.includes("--validate-only") ? Promise.resolve(validateSealed()) : run();
+  const operation = process.argv.includes("--validate-only") ? Promise.resolve(validateSealed()) : runCorrection();
   operation.then((result) => { console.log(JSON.stringify(result)); }).catch(async (error) => { await writeJson(path.join(process.cwd(), "canary/runtime/failure.json"), { status: "failed", error: error instanceof Error ? error.message : String(error) }); process.exitCode = 1; });
 }
