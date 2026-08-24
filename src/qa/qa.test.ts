@@ -144,15 +144,17 @@ test("whole-site assessor receives a deeply immutable snapshot", async () => {
   assert.equal(report.pass, true);
 });
 
-test("whole-site QA requires an independent assessor and a routed Strategy Overview", async () => {
+test("whole-site QA requires an independent assessor and an internal Strategy Overview artifact", async () => {
   const missingAssessor = await runWholeSiteQa(topologyFixture);
   assert.ok(missingAssessor.findings.some((finding) => finding.code === "independent-assessment-required"));
   const invalidAssessor = await runWholeSiteQa(topologyFixture, { assessor: () => ({ independent: false, dimensionsReviewed: [], findings: [] } as never) });
   assert.ok(invalidAssessor.findings.some((finding) => finding.code === "invalid-independent-assessment"));
   const incompleteAssessor = await runWholeSiteQa(topologyFixture, { assessor: () => ({ independent: true, dimensionsReviewed: ["specificity"], findings: [] }) });
   assert.ok(incompleteAssessor.findings.some((finding) => finding.code === "incomplete-independent-assessment"));
-  const missingRoute = await runWholeSiteQa({ ...topologyFixture, strategyOverview: {} }, { assessor: cleanAssessment });
-  assert.ok(missingRoute.findings.some((finding) => finding.code === "strategy-route-missing"));
+  const missingArtifact = await runWholeSiteQa({ ...topologyFixture, strategyOverview: undefined }, { assessor: cleanAssessment });
+  assert.ok(missingArtifact.findings.some((finding) => finding.code === "required-strategy-overview"));
+  const publicStrategy = await runWholeSiteQa({ ...topologyFixture, pages: [...topologyFixture.pages, { url: "/strategy", pageType: "strategy-overview", body: "leak" }] }, { assessor: cleanAssessment });
+  assert.ok(publicStrategy.findings.some((finding) => finding.code === "public-strategy-route"));
 });
 
 test("header/footer internal links resolve to final business routes and actions are typed", async () => {
