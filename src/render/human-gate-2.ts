@@ -163,6 +163,22 @@ function renderStrategy(raw: unknown): string[] {
   return out;
 }
 
+function routeOf(value: unknown): string {
+  const raw = typeof value === "string" ? value : "";
+  try { return new URL(raw).pathname || "/"; } catch { return raw.startsWith("/") ? raw : `/${raw}`; }
+}
+function assertPublicRoutesAreSafe(site: Dict, sealedFacts?: Dict, rejectedRoutes: unknown[] = []): void {
+  const pages = list(site.pages ?? site.pageWords);
+  const routes = pages.map((page) => routeOf(dict(page).url ?? dict(page).path ?? dict(page).route));
+  if (routes.includes("/home")) throw new Error("Human Gate 2 cannot render the legacy /home business route");
+  if (routes.filter((route) => route === "/").length > 1) throw new Error("Human Gate 2 cannot render multiple Home/Strategy root routes");
+  const publicPayload = JSON.stringify({ pages, header: site.header, footer: site.footer });
+  for (const route of rejectedRoutes) if (typeof route === "string" && publicPayload.includes(route)) throw new Error("Human Gate 2 public business output leaked a rejected service route");
+  if (sealedFacts) for (const value of [sealedFacts.retrievedWrittenReviewCount, sealedFacts.reviewRetrievalDate, ...(Array.isArray(sealedFacts.reviewBackedServiceNames) ? sealedFacts.reviewBackedServiceNames : [])]) if (value !== undefined && publicPayload.includes(String(value))) throw new Error("Human Gate 2 public business output leaked sealed review-analysis value");
+  for (const key of ["reviewAnalysisFacts", "retrievedWrittenReviewCount", "reviewRetrievalDate", "reviewBackedServicesWithoutPages", "reviewBackedServiceNames"]) {
+    if (publicPayload.includes(key)) throw new Error(`Human Gate 2 public business output leaked sealed ${key}`);
+  }
+}
 function websiteWords(input: unknown): Dict {
   const root = dict(input);
   const outputs = dict(root.outputs);
@@ -172,6 +188,7 @@ function websiteWords(input: unknown): Dict {
 /** Return clean prose in the order a human experiences the website. */
 export function renderHumanGate2(input: unknown): string {
   const site = websiteWords(input);
+  assertPublicRoutesAreSafe(site, dict(input).reviewAnalysisFacts as Dict | undefined, list(dict(input).rejectedRoutes));
   const out: string[] = ["# Website Words — Human Gate 2", "", ...renderHeader(site.header ?? dict(input).header), ""];
   const pages = list(site.pages ?? site.pageWords);
   out.push("## Pages", "");
