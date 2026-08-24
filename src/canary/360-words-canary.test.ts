@@ -104,7 +104,7 @@ test("authenticated dispatch notice emits the direct server URL to a small recei
   process.env.GITHUB_STEP_SUMMARY = summary;
   try {
     const url = "https://cursor.com/agents/bc-360-server-returned";
-    await dispatchReceipt(temp, { stage: "writer1", provider: "cursor-sdk", requestedModel: "cursor-grok-4.6-high", fast: false, agentId: "bc-360-server-returned", jobId: "run-360-server-returned", threadUrl: url, inputDigest: "sha256:" + "1".repeat(64), promptDigest: "sha256:" + "2".repeat(64), requestDigest: "sha256:" + "3".repeat(64), dispatchedAt: "2026-08-24T00:00:00.000Z" });
+    await dispatchReceipt(temp, { stage: "writer1", provider: "cursor-sdk", requestedModel: "cursor-grok-4.6-high", officialModel: "grok-4.6", modelParams: [{ id: "fast", value: "false" }], registryDigest: "sha256:" + "3".repeat(64), effort: "high", effortAttestationSource: "named-model-default", fast: false, agentId: "bc-360-server-returned", jobId: "run-360-server-returned", threadUrl: url, inputDigest: "sha256:" + "1".repeat(64), promptDigest: "sha256:" + "2".repeat(64), requestDigest: "sha256:" + "3".repeat(64), dispatchedAt: "2026-08-24T00:00:00.000Z" });
     const receipt = JSON.parse(await fs.readFile(path.join(temp, "canary/runtime/dispatch-receipt.json"), "utf8")) as Record<string, any>;
     assert.equal(receipt.threadUrl, url);
     assert.equal(receipt.provider, "cursor-sdk");

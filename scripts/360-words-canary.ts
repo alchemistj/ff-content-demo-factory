@@ -103,7 +103,7 @@ export function writer1Projection(sealed: { handoff: Dict; manifest: Dict; ledge
   return { schemaVersion: "words-writer1-input/v2", stage: "writer1", approvedRoutes: WRITER1_ROUTES, services, foldedSupport, sourceEnvelopeDigest: sealed.bridge.source.envelopeDigest, bridgeDigest: sealed.manifest.bridgeDigest };
 }
 export async function dispatchReceipt(root: string, notice: CursorDispatchNotice): Promise<void> {
-  const receipt = { schemaVersion: "words-canary-dispatch/v1", status: "dispatched", stage: notice.stage, provider: "cursor-sdk", requestedModel: notice.requestedModel, fast: false, agentId: notice.agentId, jobId: notice.jobId, threadUrl: notice.threadUrl, inputDigest: notice.inputDigest, promptDigest: notice.promptDigest, requestDigest: notice.requestDigest, dispatchedAt: notice.dispatchedAt };
+  const receipt = { schemaVersion: "words-canary-dispatch/v2", status: "dispatched", stage: notice.stage, provider: "cursor-sdk", requestedModel: notice.requestedModel, officialModel: notice.officialModel, modelParams: notice.modelParams, registryDigest: notice.registryDigest, effort: notice.effort, effortAttestationSource: notice.effortAttestationSource, fast: false, agentId: notice.agentId, jobId: notice.jobId, threadUrl: notice.threadUrl, inputDigest: notice.inputDigest, promptDigest: notice.promptDigest, requestDigest: notice.requestDigest, dispatchedAt: notice.dispatchedAt };
   await writeJson(jsonFile(root, "canary/runtime/dispatch-receipt.json"), receipt);
   if (process.env.GITHUB_STEP_SUMMARY) await fs.appendFile(process.env.GITHUB_STEP_SUMMARY, `\n### Cursor Writer1 dispatch\n- Agent: \`${notice.agentId}\`\n- Run: \`${notice.jobId}\`\n- Direct thread: ${notice.threadUrl}\n`, "utf8");
 }

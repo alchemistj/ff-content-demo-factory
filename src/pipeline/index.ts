@@ -4,6 +4,7 @@ export {
   CURSOR_CLOUD_API,
   CURSOR_PROVIDER,
   REQUIRED_CURSOR_MODEL,
+  OFFICIAL_CURSOR_MODEL,
   CursorWriterExecutionError,
   createCursorWriterExecutor,
   createJsonCursorReceiptStore,
@@ -11,6 +12,7 @@ export {
   isCursorWriterExecutor,
   validateCursorWriterReceipt,
   validateCursorWriterRuntime,
+  resolveCursorModelSelection,
 } from './cursor-writer.js';
 export type {
   CursorDispatchClaim,
@@ -20,4 +22,6 @@ export type {
   CursorWriterRuntimeConfig,
   CursorWriterStage,
   StoredCursorWriterReceipt,
+  CursorModelRegistry,
+  CursorModelRegistryItem,
 } from './cursor-writer.js';
