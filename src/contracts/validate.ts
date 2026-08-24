@@ -9,7 +9,7 @@ import {
 import { ContractValidationError, type ContractIssue } from "./errors.js";
 import { computeHandoffDigests, expansionOverrideDigest } from "./digests.js";
 
-const ID_PATTERN = /^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$/;
+const ID_PATTERN = /^(?:[a-z][a-z0-9]*(?:-[a-z0-9]+)*|[A-Za-z0-9_-]{8,})$/;
 const DATE_PATTERN = /^\d{4}-\d{2}-\d{2}$/;
 const FORBIDDEN_SUMMARY_KEYS = new Set([
   "themes",
@@ -86,11 +86,12 @@ function validateDate(value: unknown, path: string, issues: ContractIssue[]): vo
   }
 }
 
-function validateUrl(value: unknown, path: string, issues: ContractIssue[]): void {
+function validateUrl(value: unknown, path: string, issues: ContractIssue[], allowInternalRoute = false): void {
   if (typeof value !== "string" || value.trim() === "") {
     add(issues, "INVALID_URL", path, "expected an absolute http(s) URL");
     return;
   }
+  if (allowInternalRoute && value.startsWith("/")) return;
   try {
     const parsed = new URL(value);
     if (parsed.protocol !== "http:" && parsed.protocol !== "https:") {
@@ -292,7 +293,7 @@ function validateDestination(value: unknown, path: string, registry: IdRegistry,
   const item = record(value, path, issues);
   registerId(item.id, `${path}.id`, registry, issues);
   const url = requiredString(item, "url", path, issues);
-  validateUrl(url, `${path}.url`, issues);
+  validateUrl(url, `${path}.url`, issues, true);
   if (requireLabelPurpose) {
     requiredString(item, "label", path, issues);
     requiredString(item, "purpose", path, issues);
@@ -361,7 +362,7 @@ function validatePageSuitabilityAgainstPages(value: unknown, path: string, revie
 }
 
 function routePath(value: string): string {
-  try { return new URL(value).pathname || "/"; } catch { return value.startsWith("/") ? value : `/${value.replace(/^\\/+/, "")}`; }
+  try { return new URL(value).pathname || "/"; } catch { return value.startsWith("/") ? value : `/${value.replace(/^\/+/, "")}`; }
 }
 function validateServiceComparison(value: unknown, path: string, knownIds: Set<string>, prescribedIds: Set<string>, issues: ContractIssue[]): void {
   const entries = nonEmptyArray({ entries: value }, "entries", path, issues);
@@ -369,7 +370,7 @@ function validateServiceComparison(value: unknown, path: string, knownIds: Set<s
   entries.forEach((raw, index) => {
     const itemPath = `${path}[${index}]`; const item = record(raw, itemPath, issues);
     const id = requiredString(item, "id", itemPath, issues); const name = requiredString(item, "name", itemPath, issues);
-    if (/^(?:service|page|slot)(?:[- _]?\\d+)?$/i.test(id) || /^(?:service|page|slot)(?:[- _]?\\d+)?$/i.test(name)) add(issues, "GENERIC_SERVICE_SLOT", itemPath, "canonical service identity required");
+    if (/^(?:service|page|slot)(?:[- _]?\d+)?$/i.test(id) || /^(?:service|page|slot)(?:[- _]?\d+)?$/i.test(name)) add(issues, "GENERIC_SERVICE_SLOT", itemPath, "canonical service identity required");
     if (ids.has(id)) add(issues, "DUPLICATE_ID", `${itemPath}.id`, `duplicate service comparison ID ${id}`); ids.add(id);
     const status = requiredString(item, "status", itemPath, issues);
     if (!["prescribed", "folded", "passed_over", "excluded"].includes(status)) add(issues, "INVALID_VALUE", `${itemPath}.status`, "unsupported service comparison status");
@@ -381,7 +382,6 @@ function validateServiceComparison(value: unknown, path: string, knownIds: Set<s
       if (previous && previous !== id) add(issues, "ALIAS_COLLISION", `${itemPath}.aliases`, `alias ${alias} collides with ${previous}`); aliases.set(key, id);
     }
     const route = typeof item.route === "string" ? routePath(item.route) : "";
-    if (status !== "prescribed" && typeof item.pageUrl === "string") add(issues, "REJECTED_PAGE_ROUTE", `${itemPath}.pageUrl`, "rejected service page URL may remain only in upstream evidence, not in the approved handoff topology");
     if (status === "prescribed") {
       if (!prescribedIds.has(id)) add(issues, "INVALID_VALUE", `${itemPath}.id`, "prescribed service must match an approved destination");
       if (route && ["/", "/contact"].includes(route)) add(issues, "RESERVED_ROUTE", `${itemPath}.route`, "service cannot use Home or Contact");
@@ -415,7 +415,6 @@ function validateDestinations(value: unknown, path: string, registry: IdRegistry
     const entries = nonEmptyArray(item, key, path, issues);
     entries.forEach((entry, index) => {
       validateDestination(entry, `${path}.${key}[${index}]`, registry, issues);
-      if (isRecord(entry) && typeof entry.url === "string" && routePath(entry.url) === "/") add(issues, "PUBLIC_STRATEGY_ROUTE", `${path}.${key}[${index}].url`, "internal Strategy Overview cannot be a navigation route");
     });
   }
   const strategy = record(item.strategy, `${path}.strategy`, issues);
@@ -459,15 +458,24 @@ function validateProspect(value: unknown, path: string, issues: ContractIssue[])
 
 function validateRejectedPublicTopology(root: AnyRecord, issues: ContractIssue[]): void {
   const rejected = Array.isArray(root.serviceComparison) ? root.serviceComparison.filter((entry) => isRecord(entry) && entry.status !== "prescribed") : [];
-  const rejectedNames = rejected.flatMap((entry) => [entry.name, ...(Array.isArray(entry.aliases) ? entry.aliases : [])]).filter((value): value is string => typeof value === "string" && value.trim());
-  const rejectedRoutes = rejected.flatMap((entry) => [entry.route, entry.pageUrl]).filter((value): value is string => typeof value === "string" && value.trim()).map(routePath);
+  const rejectedNames = rejected.flatMap((entry) => [entry.name, ...(Array.isArray(entry.aliases) ? entry.aliases : [])]).filter((value): value is string => typeof value === "string" && value.trim().length > 0);
+  const rejectedRoutes = rejected.flatMap((entry) => [entry.route]).filter((value): value is string => typeof value === "string" && value.trim().length > 0).map(routePath);
   const destinations = isRecord(root.prospect) && isRecord(root.prospect.destinations) ? root.prospect.destinations : {};
-  const publicTopology = JSON.stringify({
-    header: destinations.header, footer: destinations.footer,
-    strategy: destinations.strategy,
-  }).toLowerCase();
-  for (const route of rejectedRoutes) if (publicTopology.includes(route.toLowerCase())) add(issues, "REJECTED_PAGE_ROUTE", "$.prospect.destinations", `rejected service route ${route} leaked into public topology`);
-  for (const name of rejectedNames) if (publicTopology.includes(name.toLowerCase())) add(issues, "REJECTED_PAGE_ROUTE", "$.prospect.destinations.strategy", `rejected service claim ${name} leaked into public topology`);
+  const publicNavigation = JSON.stringify({ header: destinations.header, footer: destinations.footer }).toLowerCase();
+  const strategyText = JSON.stringify(destinations.strategy || {}).toLowerCase();
+  for (const route of rejectedRoutes) if (publicNavigation.includes(route.toLowerCase())) add(issues, "REJECTED_PAGE_ROUTE", "$.prospect.destinations", `rejected service route ${route} leaked into public navigation`);
+  // Internal strategy/supporting evidence may name a folded or passed-over
+  // service. It becomes a forbidden claim only when the text presents it as
+  // an approved/public page, route, destination, navigation item, or CTA.
+  const approvedTopologyClaim = /\b(?:approved|prescribed|standalone|public|route|page|destination|navigation|nav|cta)\b/u;
+  const supportingEvidence = /\b(?:supporting|folded|passed[- ]over|evidence only|not approved|not a standalone|without a page)\b/u;
+  const strategySegments = strategyText.split(/[.!?;]+/u);
+  for (const name of rejectedNames) {
+    const mentions = strategySegments.filter((segment) => segment.includes(name.toLowerCase()));
+    if (mentions.some((segment) => approvedTopologyClaim.test(segment) && !supportingEvidence.test(segment))) {
+      add(issues, "REJECTED_PAGE_ROUTE", "$.prospect.destinations.strategy", `rejected service ${name} was claimed as an approved/public destination`);
+    }
+  }
 }
 function validateIntegrity(root: AnyRecord, prospect: ProspectContract | null, issues: ContractIssue[]): void {
   const source = record(root.sourceCheckpoint, "$.sourceCheckpoint", issues);
@@ -479,14 +487,19 @@ function validateIntegrity(root: AnyRecord, prospect: ProspectContract | null, i
   validateDate(facts.reviewRetrievalDate, "$.reviewAnalysisFacts.reviewRetrievalDate", issues);
   const names = requiredArray(facts, "reviewBackedServiceNames", "$.reviewAnalysisFacts", issues);
   if (typeof facts.reviewBackedServicesWithoutPages !== "number" || !Number.isInteger(facts.reviewBackedServicesWithoutPages) || facts.reviewBackedServicesWithoutPages !== names.length) add(issues, "REVIEW_ANALYSIS_MISMATCH", "$.reviewAnalysisFacts", "service-gap count must equal sealed service names");
-  const inventory = prospect?.reviewInventory || [];
+  const inventory = Array.isArray(prospect?.reviewInventory) ? prospect.reviewInventory : [];
   if (prospect && written !== inventory.filter((review) => typeof review.exactText === "string" && review.exactText.trim()).length) add(issues, "REVIEW_ANALYSIS_MISMATCH", "$.reviewAnalysisFacts.retrievedWrittenReviewCount", "does not match written evidence count");
   const digestRecord = record(root.digests, "$.digests", issues);
   const pattern = /^sha256:[0-9a-f]{64}$/;
   for (const key of ["sourceCheckpointDigest", "prescriptionDigest", "evidenceDigest", "approvedPageSetDigest", "handoffDigest"]) {
     const value = requiredString(digestRecord, key, "$.digests", issues); if (value && !pattern.test(value)) add(issues, "DIGEST_MISMATCH", `$.digests.${key}`, "must be sha256:<64 lowercase hex");
   }
-  if (prospect) {
+  const digestInputsAreStructured = prospect
+    && isRecord(root.sourceCheckpoint)
+    && isRecord(root.prospect)
+    && isRecord(root.prospect.destinations)
+    && isRecord(root.digests);
+  if (digestInputsAreStructured) {
     const expected = computeHandoffDigests(root as any);
     for (const key of ["sourceCheckpointDigest", "prescriptionDigest", "evidenceDigest", "approvedPageSetDigest", "handoffDigest"] as const) if (digestRecord[key] !== expected[key]) add(issues, "DIGEST_MISMATCH", `$.digests.${key}`, `sealed ${key} does not match handoff contents`);
   }
@@ -506,16 +519,18 @@ export function parseApprovedProspectHandoff(input: unknown): ApprovedProspectHa
   validateDate(approval.approvedAt, "$.approval.approvedAt", issues);
   requiredString(approval, "approvedBy", "$.approval", issues);
   const prospect = parseProspectOnly(root.prospect, "$.prospect", issues);
-  const prescribedIds = prospect ? new Set((prospect.destinations.servicePages || []).map((page) => String(page.id))) : new Set<string>();
+  const prescribedIds = prospect?.destinations && Array.isArray(prospect.destinations.servicePages)
+    ? new Set(prospect.destinations.servicePages.map((page) => String(page.id)))
+    : new Set<string>();
   const knownIds = prospect ? new Set<string>([
-    ...prospect.reviewInventory.map((review) => review.id),
-    ...prospect.confirmedFacts.map((fact) => fact.id),
-    ...prospect.siteEvidence.map((entry) => entry.id),
-    ...prospect.imageRefs.map((entry) => entry.id),
+    ...(Array.isArray(prospect.reviewInventory) ? prospect.reviewInventory.map((review) => review.id) : []),
+    ...(Array.isArray(prospect.confirmedFacts) ? prospect.confirmedFacts.map((fact) => fact.id) : []),
+    ...(Array.isArray(prospect.siteEvidence) ? prospect.siteEvidence.map((entry) => entry.id) : []),
+    ...(Array.isArray(prospect.imageRefs) ? prospect.imageRefs.map((entry) => entry.id) : []),
   ]) : new Set<string>();
   validateServiceComparison(root.serviceComparison, "$.serviceComparison", knownIds, prescribedIds, issues);
   if (root.expansionOverride !== undefined) validateExpansionOverride(root.expansionOverride, "$.expansionOverride", issues);
-  if (prospect && Array.isArray(prospect.destinations.servicePages) && prospect.destinations.servicePages.length !== 2 && root.expansionOverride === undefined) add(issues, "SERVICE_PAGE_COUNT", "$.prospect.destinations.servicePages", "additional service pages require an explicit expansion override");
+  if (prospect && prospect.destinations && Array.isArray(prospect.destinations.servicePages) && prospect.destinations.servicePages.length !== 2 && root.expansionOverride === undefined) add(issues, "SERVICE_PAGE_COUNT", "$.prospect.destinations.servicePages", "additional service pages require an explicit expansion override");
   if (prospect) { validateRejectedPublicTopology(root, issues); validateIntegrity(root, prospect, issues); }
   if (issues.length) throw new ContractValidationError(issues);
   return { ...root as unknown as ApprovedProspectHandoff, version: LANE_A_HANDOFF_VERSION, approval: approval as unknown as ApprovedProspectHandoff["approval"], prospect: prospect as ProspectContract };
