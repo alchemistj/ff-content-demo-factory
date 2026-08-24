@@ -1,11 +1,10 @@
 import { loadCanonicalGuides, type GuideProvider, type LoadedGuides } from '../guides/loader.js';
 import { assertApprovedProspectHandoff, type ApprovedProspectHandoff } from '../contracts/index.js';
-import { createHash } from 'node:crypto';
 import { createHumanGate2Artifact } from '../render/human-gate-2.js';
 import { runDeterministicQa } from '../qa/deterministic.js';
 import { runWholeSiteQa } from '../qa/whole-site.js';
 import { validateIntelligentAssessment, type IntelligentDimension } from '../qa/intelligent.js';
-import { STAGES, createInitialState, createMemoryStateStore, readState, type JsonObject, type PipelineState, type StateStore, validateState, writeState } from './state.js';
+import { STAGES, createInitialState, createMemoryStateStore, handoffFingerprint, readState, reviewFingerprint, type JsonObject, type PipelineState, type StateStore, validateState, writeState } from './state.js';
 
 type Dict = Record<string, any>;
 export type PipelineAdapter = ((payload: Dict) => unknown | Promise<unknown>) | { id?: string; write?: PipelineAdapter; run?: PipelineAdapter; repair?: PipelineAdapter };
@@ -25,7 +24,8 @@ function idOf(entry: any, fallback?: string): string | undefined { if (typeof en
 function entries(value: any): Dict[] { if (Array.isArray(value)) return value; if (value && typeof value === 'object') return Object.entries(value).map(([key, item]) => ({ key, ...(item && typeof item === 'object' ? item : { value: item }) })); return []; }
 
 export function prescribedServices(prescription: any, expansionOverride?: any): Dict[] {
-  const raw = prescription?.prescribedServicePages || prescription?.servicePages || prescription?.services || (Array.isArray(prescription?.pages) ? prescription.pages.filter((page: Dict) => page.kind === 'service' || page.type === 'service') : null);
+  const destinations = prescription?.destinations;
+  const raw = prescription?.prescribedServicePages || prescription?.servicePages || prescription?.services || destinations?.servicePages || (Array.isArray(prescription?.pages) ? prescription.pages.filter((page: Dict) => page.kind === 'service' || page.type === 'service') : null);
   const values = entries(raw);
   if (values.length < 2 || (values.length !== 2 && !expansionOverride)) throw new PipelineError('SERVICE_PAGE_PRESCRIPTION_REQUIRED', 'Writer 1 requires exactly two prescribed service pages unless a valid expansion override is present');
   return values.map((item, index) => ({ ...item, pageId: String(idOf(item, item.key || `service-${index + 1}`)) }));
@@ -128,14 +128,12 @@ function prescribedPage(page: any, prescription: any, pageType: string): Dict {
 }
 function finalSite(state: PipelineState): Dict {
   const destinations = state.prescription?.destinations || {};
-  const services = prescribedServices(state.prescription).map((service, index) => prescribedPage(state.outputs.servicePages?.[service.pageId], { ...service, url: service.url || `/service-${index + 1}` }, 'service'));
+  const services = prescribedServices(state.prescription, state.handoff?.expansionOverride).map((service, index) => prescribedPage(state.outputs.servicePages?.[service.pageId], { ...service, url: service.url || `/service-${index + 1}` }, 'service'));
   const home = destinations.homepage || {};
   const contact = destinations.contact || {};
   const pages = [prescribedPage(state.outputs.homepage, home, 'homepage'), ...services, prescribedPage(state.outputs.contact, contact, 'contact')];
   return { pages, header: state.outputs.header, footer: state.outputs.footer, strategyOverview: { ...(state.outputs.strategyOverview || {}), pageType: 'strategy-overview', internal: true }, reviews: state.reviewInventory, businessWebsite: state.prospect?.nap?.website };
 }
-function reviewFingerprint(inventory: any): string { return createHash('sha256').update(JSON.stringify(inventory ?? null)).digest('hex'); }
-function handoffFingerprint(handoff: any): string { return createHash('sha256').update(JSON.stringify(handoff ?? null)).digest('hex'); }
 function pageSetFromSite(site: any, state: PipelineState): void {
   const pages = Array.isArray(site?.pages) ? site.pages : [];
   const destinations = state.prescription?.destinations || {};
@@ -153,7 +151,7 @@ function pageSetFromSite(site: any, state: PipelineState): void {
 function builtInQa(state: PipelineState, stage: string, output: any): any {
   const destinations = state.prescription?.destinations || {};
   const pages = stage === 'writer1'
-    ? prescribedServices(state.prescription).map((service) => prescribedPage(output?.[service.pageId], service, 'service'))
+    ? prescribedServices(state.prescription, state.handoff?.expansionOverride).map((service) => prescribedPage(output?.[service.pageId], service, 'service'))
     : stage === 'writer2'
       ? [prescribedPage(output?.homepage, destinations.homepage, 'homepage'), prescribedPage(output?.contact, destinations.contact, 'contact')]
       : finalSite(state).pages;
