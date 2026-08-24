@@ -11,6 +11,7 @@ export function validateControl(control, input = {}) {
   if (control.policy?.writer1Only !== true || control.policy?.provider !== "cursor-sdk" || control.policy?.model !== "cursor-grok-4.6-high" || control.policy?.fast !== false) throw new Error("immutable Writer1 policy mismatch");
   if (control.restore !== null) throw new Error("Writer1 may not restore a previous artifact");
   if (control.wakeNonce === DORMANT_NONCE) return { dormant: true, stage: "writer1" };
+  if (control.policy?.mode !== "artifact-recovery") throw new Error("active Writer1 wake must explicitly select artifact-recovery mode");
   if (typeof control.wakeNonce !== "string" || !/^[A-Za-z0-9][A-Za-z0-9._-]{15,127}$/u.test(control.wakeNonce)) throw new Error("invalid wake nonce");
   const changedPaths = Array.isArray(input.changedPaths) ? input.changedPaths : [];
   if (changedPaths.length !== 1 || changedPaths[0] !== CONTROL_PATH) throw new Error("active wake must change only the control file");

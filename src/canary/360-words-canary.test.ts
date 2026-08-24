@@ -5,7 +5,7 @@ import * as fs from "node:fs/promises";
 import * as os from "node:os";
 import * as path from "node:path";
 import test from "node:test";
-import { validateSealed, dispatchReceipt, run, writer1Projection } from "../../scripts/360-words-canary.js";
+import { ARTIFACT_RECOVERY_ACTION_RUN_ID, ARTIFACT_RECOVERY_AGENT_ID, ARTIFACT_RECOVERY_ARTIFACT_ID, ARTIFACT_RECOVERY_PRIOR_RUN_ID, ARTIFACT_RECOVERY_SOURCE_BRANCH, ARTIFACT_RECOVERY_SOURCE_SHA, ARTIFACT_RECOVERY_THREAD_URL, validatePriorArtifactRecoveryDispatch, validateSealed, dispatchReceipt, run, writer1Projection } from "../../scripts/360-words-canary.js";
 import { validateControl } from "../../scripts/360-words-control.mjs";
 
 const root = path.resolve(process.cwd());
@@ -72,7 +72,8 @@ test("dormant control exits before provider validation or dispatch", async () =>
 test("dormant setup commits ignore extra paths, while active wakes require a single authorized control-file path", () => {
   const control = JSON.parse(readFileSync(path.join(root, ".factory-wake/360-words-control.json"), "utf8")) as Record<string, any>;
   assert.deepEqual(validateControl(control, { changedPaths: ["README.md", "package.json", ".factory-wake/360-words-control.json"], actor: "untrusted", owner: "architect" }), { dormant: true, stage: "writer1" });
-  const active = { ...control, wakeNonce: "W1-360-20260824-8K4M7Q2N" };
+  const active: Record<string, any> = { ...control, wakeNonce: "W1-360-20260824-8K4M7Q2N" };
+  active.policy = { ...active.policy, mode: "artifact-recovery" };
   assert.throws(() => validateControl(active, { changedPaths: [".factory-wake/360-words-control.json", "README.md"], actor: "architect", owner: "architect" }), /only the control file/);
   assert.throws(() => validateControl(active, { changedPaths: [".factory-wake/360-words-control.json"], actor: "other", owner: "architect" }), /repository owner/);
 });
@@ -87,13 +88,17 @@ test("workflow is limited to the Architect control push and one dormant-safe Wri
   assert.match(workflow, /CURSOR_MODEL: \$\{\{ secrets\.CURSOR_MODEL \}\}/);
   assert.match(workflow, /CURSOR_FAST: 'false'/);
   assert.match(workflow, /scripts\/360-words-control\.mjs/);
-  assert.match(workflow, /Create fresh Writer1 agent and stop at Architect QA/);
-  assert.match(workflow, /scripts\/360-words-canary\.ts --fresh/);
-  assert.doesNotMatch(workflow, /prior-artifact|Retrieve Writer1 JSON/u);
+  assert.match(workflow, /Download and verify exact prior Writer1 dispatch artifact/);
+  assert.match(workflow, /Recover Writer1 artifact on the same Cursor thread and stop at Architect QA/);
+  assert.match(workflow, /scripts\/360-words-canary\.ts --artifact-recovery/);
+  assert.match(workflow, /32785189225/);
+  assert.match(workflow, /9541802267/);
+  assert.match(workflow, /WRITER1_PRIOR_DISPATCH_ROOT/);
+  assert.doesNotMatch(workflow, /Create fresh Writer1 agent|--fresh/u);
   assert.match(workflow, /stop at Architect QA/);
   assert.match(workflow, /actions\/upload-artifact@/);
   assert.doesNotMatch(workflow.toLowerCase(), /apify|research|luna/);
-  assert.doesNotMatch(workflow, /workflow_run|repository_dispatch|workflow_dispatch|workflow_call|actions:\s*write/);
+  assert.doesNotMatch(workflow, /^\s*(workflow_run|repository_dispatch|workflow_dispatch|workflow_call):|actions:\s*write/mu);
   assert.doesNotMatch(workflow, /vercel|deploy|outreach|lemlist/iu);
   assert.ok(workflow.indexOf("scripts/360-words-control.mjs") < workflow.indexOf("Install locked dependencies"));
   assert.ok(workflow.indexOf("scripts/360-words-control.mjs") < workflow.indexOf("CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}"));
@@ -115,4 +120,15 @@ test("authenticated dispatch notice emits the direct server URL to a small recei
   } finally {
     if (previous === undefined) delete process.env.GITHUB_STEP_SUMMARY; else process.env.GITHUB_STEP_SUMMARY = previous;
   }
+});
+
+test("artifact recovery verifies the prior dispatch receipt and branch/source pins before Cursor access", async () => {
+  const temp = await fs.mkdtemp(path.join(os.tmpdir(), "ff-360-prior-dispatch-"));
+  await fs.mkdir(path.join(temp, "runtime"));
+  const digest = (value: string) => `sha256:${value.repeat(64)}`;
+  await fs.writeFile(path.join(temp, "runtime/source-verification.json"), JSON.stringify({ actionRunId: ARTIFACT_RECOVERY_ACTION_RUN_ID, artifactId: ARTIFACT_RECOVERY_ARTIFACT_ID, headBranch: ARTIFACT_RECOVERY_SOURCE_BRANCH, headSha: ARTIFACT_RECOVERY_SOURCE_SHA, sealedHandoffDigest: digest("5") }));
+  await fs.writeFile(path.join(temp, "runtime/dispatch-receipt.json"), JSON.stringify({ schemaVersion: "words-canary-dispatch/v2", status: "dispatched", stage: "writer1", provider: "cursor-sdk", requestedModel: "cursor-grok-4.6-high", officialModel: "grok-4.6", modelParams: [{ id: "fast", value: "false" }, { id: "effort", value: "high" }], registryDigest: digest("4"), effort: "high", effortAttestationSource: "official-registry-parameter", fast: false, agentId: ARTIFACT_RECOVERY_AGENT_ID, jobId: ARTIFACT_RECOVERY_PRIOR_RUN_ID, threadUrl: ARTIFACT_RECOVERY_THREAD_URL, inputDigest: digest("1"), promptDigest: digest("2"), requestDigest: digest("3") }));
+  const prior = validatePriorArtifactRecoveryDispatch(temp);
+  assert.equal(prior.agentId, ARTIFACT_RECOVERY_AGENT_ID); assert.equal(prior.runId, ARTIFACT_RECOVERY_PRIOR_RUN_ID); assert.equal(prior.sourceSha, ARTIFACT_RECOVERY_SOURCE_SHA);
+  await assert.rejects(async () => validatePriorArtifactRecoveryDispatch(temp, { actionRunId: ARTIFACT_RECOVERY_ACTION_RUN_ID, artifactId: ARTIFACT_RECOVERY_ARTIFACT_ID, agentId: ARTIFACT_RECOVERY_AGENT_ID, jobId: ARTIFACT_RECOVERY_PRIOR_RUN_ID, threadUrl: ARTIFACT_RECOVERY_THREAD_URL, sourceBranch: ARTIFACT_RECOVERY_SOURCE_BRANCH, sourceSha: "wrong" }), /source\/action pin/u);
 });
