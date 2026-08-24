@@ -28,13 +28,14 @@ function pageKind(page: { pageType?: string | undefined }): string {
 function topologyFindings(site: ReturnType<typeof normalizeSite>): QaFinding[] {
   const findings: QaFinding[] = [];
   const services = site.pages.filter((page) => pageKind(page) === "service" || pageKind(page) === "servicepage");
-  if (services.length !== 2) findings.push({ code: "required-service-page-count", severity: "hard-fail", message: `Final topology requires exactly two service pages; found ${services.length}.` });
-  if (site.pages.length !== 4) findings.push({ code: "required-public-page-count", severity: "hard-fail", message: `Final topology requires exactly four public business pages; found ${site.pages.length}.` });
+  const root = site as Record<string, unknown>;
+  const expectedServiceCount = typeof root.approvedServicePageCount === "number" && Number.isInteger(root.approvedServicePageCount) ? root.approvedServicePageCount : 2;
+  if (services.length !== expectedServiceCount) findings.push({ code: "required-service-page-count", severity: "hard-fail", message: `Final topology requires exactly ${expectedServiceCount} service pages; found ${services.length}.` });
+  if (site.pages.length !== expectedServiceCount + 2) findings.push({ code: "required-public-page-count", severity: "hard-fail", message: `Final topology requires exactly ${expectedServiceCount + 2} public business pages; found ${site.pages.length}.` });
   const home = site.pages.filter((page) => pageKind(page) === "homepage" || pageRoute(page) === "/");
   if (home.length !== 1 || pageRoute(home[0]) !== "/") findings.push({ code: "required-homepage", severity: "hard-fail", message: "Final topology requires exactly one homepage at /." });
   const contact = site.pages.filter((page) => pageKind(page) === "contact" || pageRoute(page) === "/contact");
   if (contact.length !== 1) findings.push({ code: "required-contact-page", severity: "hard-fail", message: "Final topology requires exactly one Contact page." });
-  const root = site as Record<string, unknown>;
   const strategyCandidates = site.pages.filter((page) => pageKind(page) === "strategy" || pageKind(page) === "strategyoverview");
   if (strategyCandidates.length) findings.push({ code: "public-strategy-route", severity: "hard-fail", message: "Strategy Overview is an internal Writer 3 artifact and cannot be a public business page." });
   const strategy = objectPresent(root.strategyOverview) ? root.strategyOverview : root.strategy;
@@ -44,6 +45,7 @@ function topologyFindings(site: ReturnType<typeof normalizeSite>): QaFinding[] {
     // internal artifact is absent or malformed.
   } else {
     const strategyRecord = strategy as Record<string, unknown>;
+    for (const field of ["url", "path", "route"]) if (Object.prototype.hasOwnProperty.call(strategyRecord, field)) findings.push({ code: "public-strategy-route", severity: "hard-fail", message: `Internal Strategy Overview may not carry public ${field} metadata.` });
     const hasReadableContent = [strategyRecord.body, strategyRecord.text, strategyRecord.content].some((value) => typeof value === "string" && value.trim()) || (Array.isArray(strategyRecord.sections) && strategyRecord.sections.length > 0);
     if (!hasReadableContent) findings.push({ code: "strategy-content-missing", severity: "hard-fail", message: "Internal Strategy Overview must contain readable content." });
   }

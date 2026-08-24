@@ -36,7 +36,10 @@ export interface StrategyDestination {
   /** Internal Writer 3 deliverable; never a public business route. */
   visibility: "internal"; label: string; decisionPath: string; rationale: string;
   internalId?: "strategy-overview"; /** Legacy internal metadata only; never rendered as navigation. */
+  /** Legacy fields are accepted by TypeScript only so validation can reject them deterministically. */
   url?: string;
+  path?: string;
+  route?: string;
 }
 export interface PagePrescription extends Destination {
   label: string; purpose: string; keyword: string; titleH1Direction: string; angleCustomerDecision: string;
@@ -67,11 +70,14 @@ export interface SealedReviewAnalysisFacts {
   reviewBackedServicesWithoutPages: number; reviewBackedServiceNames: readonly string[];
 }
 export interface SourceCheckpointIdentity {
-  runId: string; artifactId: string; sourceSha: string; archiveDigest: string; manifestDigest?: string;
+  runId: string; artifactId: string; sourceSha: string; archiveDigest: string; manifestDigest: string;
+  /** Immutable archive manifest bound to the source SHA and archive digest. */
+  manifest: readonly SourceManifestEntry[];
 }
+export interface SourceManifestEntry { path: string; digest: string; }
 export interface HandoffDigests {
   sourceCheckpointDigest: string; prescriptionDigest: string; evidenceDigest: string;
-  approvedPageSetDigest: string; handoffDigest: string;
+  approvedPageSetDigest: string; approvalDigest: string; handoffDigest: string;
 }
 export interface ProspectContract {
   id: string; business: BusinessIdentity; nap: Nap; confirmedFacts: readonly ConfirmedFact[];

@@ -27,6 +27,7 @@ export function computeHandoffDigests(input: ApprovedProspectHandoff | Record<st
     serviceComparison: input.serviceComparison, reviewAnalysisFacts: input.reviewAnalysisFacts,
   });
   const approvedPageSetDigest = digestOf(approvedPageSetPayload(input.prospect.destinations, input.expansionOverride));
-  const unsigned = { ...input, digests: { sourceCheckpointDigest, prescriptionDigest, evidenceDigest, approvedPageSetDigest } };
-  return { sourceCheckpointDigest, prescriptionDigest, evidenceDigest, approvedPageSetDigest, handoffDigest: digestOf(unsigned) };
+  const approvalDigest = digestOf(input.approval);
+  const unsigned = { ...input, digests: { sourceCheckpointDigest, prescriptionDigest, evidenceDigest, approvedPageSetDigest, approvalDigest } };
+  return { sourceCheckpointDigest, prescriptionDigest, evidenceDigest, approvedPageSetDigest, approvalDigest, handoffDigest: digestOf(unsigned) };
 }

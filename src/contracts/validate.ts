@@ -7,7 +7,8 @@ import {
   type ReviewRecord,
 } from "./types.js";
 import { ContractValidationError, type ContractIssue } from "./errors.js";
-import { computeHandoffDigests, expansionOverrideDigest } from "./digests.js";
+import { computeHandoffDigests, digestOf, expansionOverrideDigest } from "./digests.js";
+import { buildIntentLedger } from "./intent-ledger.js";
 
 const ID_PATTERN = /^(?:[a-z][a-z0-9]*(?:-[a-z0-9]+)*|[A-Za-z0-9_-]{8,})$/;
 const DATE_PATTERN = /^\d{4}-\d{2}-\d{2}$/;
@@ -364,7 +365,7 @@ function validatePageSuitabilityAgainstPages(value: unknown, path: string, revie
 function routePath(value: string): string {
   try { return new URL(value).pathname || "/"; } catch { return value.startsWith("/") ? value : `/${value.replace(/^\/+/, "")}`; }
 }
-function validateServiceComparison(value: unknown, path: string, knownIds: Set<string>, prescribedIds: Set<string>, issues: ContractIssue[]): void {
+function validateServiceComparison(value: unknown, path: string, knownIds: Set<string>, prescribedIds: Set<string>, reviewInventory: Map<string, ReviewRecord>, issues: ContractIssue[]): void {
   const entries = nonEmptyArray({ entries: value }, "entries", path, issues);
   const aliases = new Map<string, string>(); const ids = new Set<string>();
   entries.forEach((raw, index) => {
@@ -377,6 +378,11 @@ function validateServiceComparison(value: unknown, path: string, knownIds: Set<s
     for (const key of ["evidenceCount", "directEvidenceCount"]) if (typeof item[key] !== "number" || !Number.isInteger(item[key]) || Number(item[key]) < 0) add(issues, "INVALID_VALUE", `${itemPath}.${key}`, "must be a non-negative integer");
     const refs = validateEvidenceRefs(item.evidence, `${itemPath}.evidence`, issues);
     for (const ref of refs) if (ref.refId && !knownIds.has(ref.refId)) add(issues, "EVIDENCE_REF_NOT_FOUND", `${itemPath}.evidence`, `evidence ID ${ref.refId} is not declared`);
+    if (status === "prescribed") {
+      if (typeof item.directEvidenceCount !== "number" || item.directEvidenceCount <= 0) add(issues, "SERVICE_EVIDENCE_REQUIRED", `${itemPath}.directEvidenceCount`, "every prescribed service requires direct evidence");
+      const authoritativeReview = refs.some((ref) => ref.kind === "review" && reviewInventory.get(ref.refId)?.upstreamAuthorityJudgment === "authoritative");
+      if (!authoritativeReview) add(issues, "SERVICE_EVIDENCE_REQUIRED", `${itemPath}.evidence`, "every prescribed service requires an authoritative review-backed comparison entry");
+    }
     for (const alias of Array.isArray(item.aliases) ? item.aliases : []) {
       const key = String(alias).toLowerCase(); const previous = aliases.get(key);
       if (previous && previous !== id) add(issues, "ALIAS_COLLISION", `${itemPath}.aliases`, `alias ${alias} collides with ${previous}`); aliases.set(key, id);
@@ -419,6 +425,7 @@ function validateDestinations(value: unknown, path: string, registry: IdRegistry
   }
   const strategy = record(item.strategy, `${path}.strategy`, issues);
   if (strategy.visibility !== "internal") add(issues, "PUBLIC_STRATEGY_ROUTE", `${path}.strategy.visibility`, "Strategy Overview must be internal");
+  for (const key of ["url", "path", "route"]) if (Object.prototype.hasOwnProperty.call(strategy, key)) add(issues, "PUBLIC_STRATEGY_ROUTE", `${path}.strategy.${key}`, "Strategy Overview is internal-only and cannot carry public URL/path/route fields");
   for (const field of ["label", "decisionPath", "rationale"]) requiredString(strategy, field, `${path}.strategy`, issues);
   const pages = item.servicePages; const override = expansionOverride && isRecord(expansionOverride) ? expansionOverride : null;
   if (!Array.isArray(pages) || pages.length < 2) add(issues, "SERVICE_PAGE_COUNT", `${path}.servicePages`, "exactly two service pages are required unless an explicit expansion override is valid");
@@ -431,10 +438,15 @@ function validateDestinations(value: unknown, path: string, registry: IdRegistry
       if (override && index >= 2 && !(Array.isArray(override.additionalRoutes) && override.additionalRoutes.map((item: unknown) => routePath(String(item))).includes(route))) add(issues, "ROUTING_BOUNDARY", `${path}.servicePages[${index}].url`, "expanded route is not declared by the override");
     }
   });
+  if (override && Array.isArray(override.additionalRoutes)) {
+    const declared = new Set(override.additionalRoutes.map((item: unknown) => routePath(String(item))));
+    const extraPages = Array.isArray(pages) ? pages.slice(2) : [];
+    if (declared.size !== extraPages.length) add(issues, "ROUTING_BOUNDARY", `${path}.servicePages`, "the expansion override must declare exactly every additional service destination");
+  }
   const prescribedPageIds = [isRecord(item.homepage) && typeof item.homepage.id === "string" ? item.homepage.id : "", isRecord(item.contact) && typeof item.contact.id === "string" ? item.contact.id : "", ...(Array.isArray(pages) ? pages : []).filter(isRecord).map((page) => typeof page.id === "string" ? page.id : "")].filter(Boolean);
   validatePageSuitabilityAgainstPages(Array.from(reviewInventory.values()), `${path}.reviewInventory`, reviewInventory, prescribedPageIds, issues);
 }
-function validateProspect(value: unknown, path: string, issues: ContractIssue[]): ProspectContract | null {
+function validateProspect(value: unknown, path: string, issues: ContractIssue[], expansionOverride?: unknown): ProspectContract | null {
   const item = record(value, path, issues);
   const registry: IdRegistry = new Map();
   registerId(item.id, `${path}.id`, registry, issues);
@@ -452,18 +464,30 @@ function validateProspect(value: unknown, path: string, issues: ContractIssue[])
       if (ref && ref.refId && !knownIds.has(ref.refId)) add(issues, "EVIDENCE_REF_NOT_FOUND", `${path}.confirmedFacts.evidence[${index}]`, `evidence ID ${ref.refId} is not declared in this handoff`);
     });
   }
-  validateDestinations(item.destinations, `${path}.destinations`, registry, reviewInventory, knownIds, issues, (issues as any).__expansionOverride);
+  validateDestinations(item.destinations, `${path}.destinations`, registry, reviewInventory, knownIds, issues, expansionOverride);
   return item as unknown as ProspectContract;
 }
 
 function validateRejectedPublicTopology(root: AnyRecord, issues: ContractIssue[]): void {
-  const rejected = Array.isArray(root.serviceComparison) ? root.serviceComparison.filter((entry) => isRecord(entry) && entry.status !== "prescribed") : [];
-  const rejectedNames = rejected.flatMap((entry) => [entry.name, ...(Array.isArray(entry.aliases) ? entry.aliases : [])]).filter((value): value is string => typeof value === "string" && value.trim().length > 0);
-  const rejectedRoutes = rejected.flatMap((entry) => [entry.route]).filter((value): value is string => typeof value === "string" && value.trim().length > 0).map(routePath);
+  const comparison = Array.isArray(root.serviceComparison) ? root.serviceComparison.filter(isRecord) as any[] : [];
+  const ledger = buildIntentLedger(comparison as any);
+  const rejected = ledger.filter((entry) => !entry.publicRouteAllowed);
+  const rejectedNames = rejected.flatMap((entry) => [entry.name, ...entry.aliases]).filter((value): value is string => typeof value === "string" && value.trim().length > 0);
+  const publicClaimNames = rejectedNames.filter((name) => name.trim().replace(/[-_]+/gu, " ").split(/\s+/u).filter(Boolean).length >= 3);
+  const rejectedRoutes = comparison.filter((entry) => entry.status !== "prescribed").flatMap((entry) => [entry.route, entry.pageUrl]).filter((value): value is string => typeof value === "string" && value.trim().length > 0).map(routePath);
   const destinations = isRecord(root.prospect) && isRecord(root.prospect.destinations) ? root.prospect.destinations : {};
   const publicNavigation = JSON.stringify({ header: destinations.header, footer: destinations.footer }).toLowerCase();
   const strategyText = JSON.stringify(destinations.strategy || {}).toLowerCase();
   for (const route of rejectedRoutes) if (publicNavigation.includes(route.toLowerCase())) add(issues, "REJECTED_PAGE_ROUTE", "$.prospect.destinations", `rejected service route ${route} leaked into public navigation`);
+  for (const name of publicClaimNames) if (publicNavigation.includes(name.toLowerCase())) add(issues, "REJECTED_PAGE_ROUTE", "$.prospect.destinations", `rejected service ${name} leaked into public navigation`);
+  const publicPages = [destinations.homepage, ...(Array.isArray(destinations.servicePages) ? destinations.servicePages : []), destinations.contact].filter(isRecord);
+  for (const page of publicPages) {
+    const publicFields = [page.id, page.url, page.label, page.purpose, page.keyword, page.titleH1Direction, page.angleCustomerDecision];
+    for (const name of publicClaimNames) if (publicFields.some((field) => typeof field === "string" && field.toLowerCase().includes(name.toLowerCase()))) add(issues, "REJECTED_PAGE_ROUTE", "$.prospect.destinations", `rejected service ${name} was assigned to public page topology`);
+    const actionFields = [page.cta, page.ctas, page.callsToAction, page.actions];
+    const actionText = JSON.stringify(actionFields).toLowerCase();
+    for (const name of publicClaimNames) if (actionText.includes(name.toLowerCase())) add(issues, "REJECTED_PAGE_ROUTE", "$.prospect.destinations", `rejected service ${name} leaked into a public CTA/action`);
+  }
   // Internal strategy/supporting evidence may name a folded or passed-over
   // service. It becomes a forbidden claim only when the text presents it as
   // an approved/public page, route, destination, navigation item, or CTA.
@@ -481,6 +505,25 @@ function validateIntegrity(root: AnyRecord, prospect: ProspectContract | null, i
   const source = record(root.sourceCheckpoint, "$.sourceCheckpoint", issues);
   for (const key of ["runId", "artifactId", "sourceSha", "archiveDigest"]) requiredString(source, key, "$.sourceCheckpoint", issues);
   if (source.manifestDigest !== undefined && (typeof source.manifestDigest !== "string" || !source.manifestDigest.trim())) add(issues, "SOURCE_CHECKPOINT_INVALID", "$.sourceCheckpoint.manifestDigest", "manifestDigest must be non-empty");
+  if (!Array.isArray(source.manifest) || source.manifest.length === 0) add(issues, "SOURCE_CHECKPOINT_INVALID", "$.sourceCheckpoint.manifest", "source manifest must be a non-empty array");
+  {
+    const manifest = Array.isArray(source.manifest) ? source.manifest : [];
+    const seen = new Set<string>();
+    manifest.forEach((entry: unknown, index: number) => {
+      const item = record(entry, `$.sourceCheckpoint.manifest[${index}]`, issues);
+      const manifestPath = requiredString(item, "path", `$.sourceCheckpoint.manifest[${index}]`, issues);
+      const digest = requiredString(item, "digest", `$.sourceCheckpoint.manifest[${index}]`, issues);
+      if (manifestPath && seen.has(manifestPath)) add(issues, "SOURCE_CHECKPOINT_INVALID", `$.sourceCheckpoint.manifest[${index}].path`, "source manifest paths must be unique");
+      if (manifestPath) seen.add(manifestPath);
+      if (digest && !/^sha256:[0-9a-f]{64}$/u.test(digest)) add(issues, "SOURCE_CHECKPOINT_INVALID", `$.sourceCheckpoint.manifest[${index}].digest`, "manifest entry digest must be sha256:<64 lowercase hex>");
+    });
+    if (Array.isArray(source.manifest)) {
+      const expectedManifestDigest = digestOf(source.manifest);
+      if (source.manifestDigest !== expectedManifestDigest) add(issues, "SOURCE_CHECKPOINT_INVALID", "$.sourceCheckpoint.manifestDigest", "manifestDigest does not match the actual source manifest");
+      const expectedArchiveDigest = digestOf({ sourceSha: source.sourceSha, manifestDigest: expectedManifestDigest });
+      if (source.archiveDigest !== expectedArchiveDigest) add(issues, "SOURCE_CHECKPOINT_INVALID", "$.sourceCheckpoint.archiveDigest", "archiveDigest does not match the bound source manifest and source SHA");
+    }
+  }
   const facts = record(root.reviewAnalysisFacts, "$.reviewAnalysisFacts", issues);
   const written = facts.retrievedWrittenReviewCount;
   if (typeof written !== "number" || !Number.isInteger(written) || written < 0) add(issues, "REVIEW_ANALYSIS_MISMATCH", "$.reviewAnalysisFacts.retrievedWrittenReviewCount", "must be a non-negative integer");
@@ -491,7 +534,7 @@ function validateIntegrity(root: AnyRecord, prospect: ProspectContract | null, i
   if (prospect && written !== inventory.filter((review) => typeof review.exactText === "string" && review.exactText.trim()).length) add(issues, "REVIEW_ANALYSIS_MISMATCH", "$.reviewAnalysisFacts.retrievedWrittenReviewCount", "does not match written evidence count");
   const digestRecord = record(root.digests, "$.digests", issues);
   const pattern = /^sha256:[0-9a-f]{64}$/;
-  for (const key of ["sourceCheckpointDigest", "prescriptionDigest", "evidenceDigest", "approvedPageSetDigest", "handoffDigest"]) {
+  for (const key of ["sourceCheckpointDigest", "prescriptionDigest", "evidenceDigest", "approvedPageSetDigest", "approvalDigest", "handoffDigest"]) {
     const value = requiredString(digestRecord, key, "$.digests", issues); if (value && !pattern.test(value)) add(issues, "DIGEST_MISMATCH", `$.digests.${key}`, "must be sha256:<64 lowercase hex");
   }
   const digestInputsAreStructured = prospect
@@ -501,7 +544,7 @@ function validateIntegrity(root: AnyRecord, prospect: ProspectContract | null, i
     && isRecord(root.digests);
   if (digestInputsAreStructured) {
     const expected = computeHandoffDigests(root as any);
-    for (const key of ["sourceCheckpointDigest", "prescriptionDigest", "evidenceDigest", "approvedPageSetDigest", "handoffDigest"] as const) if (digestRecord[key] !== expected[key]) add(issues, "DIGEST_MISMATCH", `$.digests.${key}`, `sealed ${key} does not match handoff contents`);
+    for (const key of ["sourceCheckpointDigest", "prescriptionDigest", "evidenceDigest", "approvedPageSetDigest", "approvalDigest", "handoffDigest"] as const) if (digestRecord[key] !== expected[key]) add(issues, "DIGEST_MISMATCH", `$.digests.${key}`, `sealed ${key} does not match handoff contents`);
   }
 }
 /** Validate and return a single approved prospect handoff. Throws on any issue. */
@@ -518,9 +561,11 @@ export function parseApprovedProspectHandoff(input: unknown): ApprovedProspectHa
   if (approval.status !== "approved") add(issues, "INVALID_VALUE", "$.approval.status", "only approved prospects may enter the handoff");
   validateDate(approval.approvedAt, "$.approval.approvedAt", issues);
   requiredString(approval, "approvedBy", "$.approval", issues);
-  const prospect = parseProspectOnly(root.prospect, "$.prospect", issues);
-  const prescribedIds = prospect?.destinations && Array.isArray(prospect.destinations.servicePages)
-    ? new Set(prospect.destinations.servicePages.map((page) => String(page.id)))
+  if (root.approval !== undefined && !isRecord(root.approval)) add(issues, "INVALID_OBJECT", "$.approval", "approval must be an object before nested fields are inspected");
+  const expansionOverride = root.expansionOverride;
+  const prospect = parseProspectOnly(root.prospect, "$.prospect", issues, expansionOverride);
+  const prescribedIds = prospect && isRecord((prospect as any).destinations) && Array.isArray((prospect as any).destinations.servicePages)
+    ? new Set<string>((prospect as any).destinations.servicePages.map((page: any) => String(page?.id)))
     : new Set<string>();
   const knownIds = prospect ? new Set<string>([
     ...(Array.isArray(prospect.reviewInventory) ? prospect.reviewInventory.map((review) => review.id) : []),
@@ -528,7 +573,7 @@ export function parseApprovedProspectHandoff(input: unknown): ApprovedProspectHa
     ...(Array.isArray(prospect.siteEvidence) ? prospect.siteEvidence.map((entry) => entry.id) : []),
     ...(Array.isArray(prospect.imageRefs) ? prospect.imageRefs.map((entry) => entry.id) : []),
   ]) : new Set<string>();
-  validateServiceComparison(root.serviceComparison, "$.serviceComparison", knownIds, prescribedIds, issues);
+  validateServiceComparison(root.serviceComparison, "$.serviceComparison", knownIds, prescribedIds, prospect && Array.isArray(prospect.reviewInventory) ? new Map(prospect.reviewInventory.map((review) => [review.id, review])) : new Map(), issues);
   if (root.expansionOverride !== undefined) validateExpansionOverride(root.expansionOverride, "$.expansionOverride", issues);
   if (prospect && prospect.destinations && Array.isArray(prospect.destinations.servicePages) && prospect.destinations.servicePages.length !== 2 && root.expansionOverride === undefined) add(issues, "SERVICE_PAGE_COUNT", "$.prospect.destinations.servicePages", "additional service pages require an explicit expansion override");
   if (prospect) { validateRejectedPublicTopology(root, issues); validateIntegrity(root, prospect, issues); }
@@ -536,12 +581,12 @@ export function parseApprovedProspectHandoff(input: unknown): ApprovedProspectHa
   return { ...root as unknown as ApprovedProspectHandoff, version: LANE_A_HANDOFF_VERSION, approval: approval as unknown as ApprovedProspectHandoff["approval"], prospect: prospect as ProspectContract };
 }
 
-function parseProspectOnly(value: unknown, path: string, issues: ContractIssue[]): ProspectContract | null {
+function parseProspectOnly(value: unknown, path: string, issues: ContractIssue[], expansionOverride?: unknown): ProspectContract | null {
   if (Array.isArray(value)) {
     add(issues, "ONE_PROSPECT_ONLY", path, "expected exactly one prospect object, not an array");
     return null;
   }
-  return validateProspect(value, path, issues);
+  return validateProspect(value, path, issues, expansionOverride);
 }
 
 export function assertApprovedProspectHandoff(input: unknown): asserts input is ApprovedProspectHandoff {

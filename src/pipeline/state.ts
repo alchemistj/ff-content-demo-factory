@@ -1,9 +1,10 @@
 import * as fs from 'node:fs/promises';
 import * as path from 'node:path';
-import { digestOf } from '../contracts/digests.js';
+import { computeHandoffDigests, digestOf } from '../contracts/digests.js';
+import { assertApprovedProspectHandoff } from '../contracts/validate.js';
 
 export type JsonObject = Record<string, any>;
-export const PIPELINE_VERSION = 2;
+export const PIPELINE_VERSION = 3;
 export const STAGES = Object.freeze({
   WRITER_1: 'writer1', QA_1: 'qa1', WRITER_2: 'writer2', QA_2: 'qa2',
   WRITER_3: 'writer3', QA_3: 'qa3', WHOLE_SITE_QA: 'whole-site-qa',
@@ -17,6 +18,10 @@ export interface PipelineState {
   evidence: JsonObject | null; handoff: JsonObject; handoffFingerprint: string; reviewInventory: any;
   reviewInventoryFingerprint: string; outputs: JsonObject; stages: Record<string, JsonObject>;
   reviewDecisions: JsonObject[]; events: JsonObject[]; runId: string;
+  executionMode: 'test' | 'cursor-production';
+  writerReceipts: Record<string, JsonObject>;
+  /** Immutable seals captured when the handoff entered the Words Factory. */
+  handoffSeals: JsonObject;
 }
 export interface StateStore {
   load?: () => PipelineState | null | Promise<PipelineState | null>;
@@ -31,6 +36,7 @@ export function reviewFingerprint(value: unknown): string { return digestOf(valu
 export function createInitialState(input: {
   prospectId?: string; prospect?: JsonObject; prescription?: JsonObject | null; evidence?: JsonObject | null;
   reviewInventory?: any; handoff?: JsonObject; now?: Date | string | number;
+  executionMode?: 'test' | 'cursor-production';
 } = {}): PipelineState {
   const suppliedProspectId = input.prospectId || input.prospect?.id || input.handoff?.prospect?.id;
   if (!suppliedProspectId) throw new Error('A prospectId (or prospect.id) is required');
@@ -46,7 +52,8 @@ export function createInitialState(input: {
     handoff, handoffFingerprint: handoffFingerprint(handoff), reviewInventory: inventory,
     reviewInventoryFingerprint: reviewFingerprint(inventory), outputs: {},
     stages: { [STAGES.WRITER_1]: { status: 'pending' }, [STAGES.QA_1]: { status: 'pending' }, [STAGES.WRITER_2]: { status: 'pending' }, [STAGES.QA_2]: { status: 'pending' }, [STAGES.WRITER_3]: { status: 'pending' }, [STAGES.QA_3]: { status: 'pending' }, [STAGES.WHOLE_SITE_QA]: { status: 'pending' } },
-    reviewDecisions: [], events: [],
+    reviewDecisions: [], events: [], executionMode: input.executionMode || 'test', writerReceipts: {},
+    handoffSeals: clone((handoff as any).digests || {}),
   };
 }
 export function validateState(state: PipelineState): PipelineState {
@@ -54,12 +61,30 @@ export function validateState(state: PipelineState): PipelineState {
   if (state.version !== PIPELINE_VERSION) throw new Error(`Unsupported pipeline state version: ${state.version}`);
   if (!state.prospectId) throw new Error('Persisted pipeline state has no prospectId');
   if (!Object.values(STAGES).includes(state.stage)) throw new Error(`Unknown persisted pipeline stage: ${state.stage}`);
-  if (!state.handoff || typeof state.handoff !== 'object' || !state.handoffFingerprint || state.handoffFingerprint !== handoffFingerprint(state.handoff)) throw new Error('Persisted state handoff fingerprint does not match its authoritative packet');
   if (!Array.isArray(state.reviewInventory) || state.reviewInventory.length === 0) throw new Error('Persisted state lost the complete review inventory');
   for (const [index, review] of state.reviewInventory.entries()) {
     if (!review || typeof review !== 'object' || typeof review.id !== 'string' || typeof review.reviewer !== 'string' || typeof review.exactText !== 'string' || !Array.isArray(review.pageSuitability)) throw new Error(`Persisted review inventory item ${index} is structurally invalid`);
   }
   if (!state.reviewInventoryFingerprint || state.reviewInventoryFingerprint !== reviewFingerprint(state.reviewInventory)) throw new Error('Persisted state review inventory fingerprint does not match its authoritative packet');
+  if (!state.handoff || typeof state.handoff !== 'object' || !state.handoffFingerprint || state.handoffFingerprint !== handoffFingerprint(state.handoff)) throw new Error('Persisted state handoff fingerprint does not match its authoritative packet');
+  try { assertApprovedProspectHandoff(state.handoff); } catch (error) { throw new Error(`Persisted state handoff failed revalidation: ${error instanceof Error ? error.message : String(error)}`); }
+  const recomputed = computeHandoffDigests(state.handoff as any);
+  const sealKeys = ['sourceCheckpointDigest', 'prescriptionDigest', 'evidenceDigest', 'approvedPageSetDigest', 'approvalDigest', 'handoffDigest'];
+  if (!state.handoffSeals || typeof state.handoffSeals !== 'object') throw new Error('Persisted state has no immutable handoff seals');
+  for (const key of sealKeys as Array<keyof typeof recomputed>) {
+    if (state.handoffSeals[key] !== recomputed[key] || (state.handoff as any).digests?.[key] !== recomputed[key]) throw new Error(`Persisted state ${key} binding does not match the revalidated handoff`);
+  }
+  if (state.executionMode !== 'test' && state.executionMode !== 'cursor-production') throw new Error('Persisted state execution mode is invalid');
+  if (!state.writerReceipts || typeof state.writerReceipts !== 'object') throw new Error('Persisted state has no writer receipt registry');
+  if (state.executionMode === 'cursor-production') {
+    for (const stage of [STAGES.WRITER_1, STAGES.WRITER_2, STAGES.WRITER_3]) {
+      const stageState = state.stages?.[stage];
+      if (stageState?.status === 'complete') {
+        const receipt = state.writerReceipts[stage];
+        if (!receipt || receipt.provider !== 'cursor-sdk' || receipt.fast !== false || typeof receipt.threadUrl !== 'string' || !receipt.outputDigest) throw new Error(`Persisted ${stage} completion has no valid Cursor receipt`);
+      }
+    }
+  }
   return state;
 }
 export function createMemoryStateStore(initialState?: PipelineState): StateStore & { get: () => Promise<PipelineState | null> } {

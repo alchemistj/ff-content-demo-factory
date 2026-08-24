@@ -1,4 +1,4 @@
-import { computeHandoffDigests } from "../src/contracts/index.js";
+import { computeHandoffDigests, digestOf } from "../src/contracts/index.js";
 import type { ApprovedProspectHandoff } from "../src/contracts/index.js";
 export const garageDoor360FourPageHandoff: ApprovedProspectHandoff = (() => {
   // @ts-expect-error The compact raw fixture is completed with its digests immediately below.
@@ -13,6 +13,10 @@ export const garageDoor360FourPageHandoff: ApprovedProspectHandoff = (() => {
       if (suitability.pageId === "page-360-installation") suitability.pageId = "service-360-installation";
     }
   }
+  const source = handoff.sourceCheckpoint as any;
+  source.manifest = [{ path: "checkpoint.json", digest: digestOf({ runId: source.runId, artifactId: source.artifactId, sourceSha: source.sourceSha }) }];
+  source.manifestDigest = digestOf(source.manifest);
+  source.archiveDigest = digestOf({ sourceSha: source.sourceSha, manifestDigest: source.manifestDigest });
   handoff.digests = computeHandoffDigests(handoff);
   return handoff;
 })();

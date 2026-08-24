@@ -3,7 +3,7 @@ import test from "node:test";
 import { garageDoor360FourPageHandoff } from "../../../fixtures/360-garage-door-four-page.js";
 import { computeHandoffDigests, parseApprovedProspectHandoff, validateApprovedProspectHandoff } from "../index.js";
 import { contextFor } from "../../pipeline/orchestrator.js";
-import { createInitialState, validateState } from "../../pipeline/state.js";
+import { createInitialState, handoffFingerprint, validateState } from "../../pipeline/state.js";
 import { renderHumanGate2 } from "../../render/human-gate-2.js";
 
 const clone = <T>(value: T): T => structuredClone(value);
@@ -84,4 +84,36 @@ test("Contact may omit a first-review recommendation", () => {
   delete (contact.prospect.destinations.contact as { recommendedFirstReviewReason?: string }).recommendedFirstReviewReason;
   contact.digests = computeHandoffDigests(contact);
   assert.deepEqual(validateApprovedProspectHandoff(contact), []);
+});
+
+test("approval digest and source manifest identity are independently sealed", () => {
+  const approval = clone(garageDoor360FourPageHandoff);
+  approval.approval.approvedBy = "Different approver";
+  assert.ok(codes(approval).includes("DIGEST_MISMATCH"));
+  const manifest = clone(garageDoor360FourPageHandoff);
+  manifest.sourceCheckpoint.manifest[0]!.digest = "sha256:" + "f".repeat(64);
+  assert.ok(codes(manifest).includes("SOURCE_CHECKPOINT_INVALID"));
+});
+
+test("self-resealed handoff state fails the immutable entry seals", () => {
+  const state = createInitialState({ handoff: garageDoor360FourPageHandoff as any });
+  state.handoff.prospect.destinations.servicePages[0].keyword = "self-resealed";
+  state.handoff.digests = computeHandoffDigests(state.handoff as any) as any;
+  state.handoffFingerprint = handoffFingerprint(state.handoff);
+  assert.throws(() => validateState(state), /binding|revalidated/);
+});
+
+test("Strategy Overview public metadata and rejected public CTA claims fail closed", () => {
+  const strategy = clone(garageDoor360FourPageHandoff);
+  (strategy.prospect.destinations.strategy as any).route = "/strategy-overview";
+  assert.ok(codes(strategy).includes("PUBLIC_STRATEGY_ROUTE"));
+  const cta = clone(garageDoor360FourPageHandoff);
+  (cta.prospect.destinations.homepage as any).ctas = [{ label: "Garage door spring repair", href: "/garage-door-repair" }];
+  cta.digests = computeHandoffDigests(cta);
+  assert.ok(codes(cta).includes("REJECTED_PAGE_ROUTE"));
+});
+
+test("malformed nested handoffs produce ContractValidationError issues, never dereference errors", () => {
+  assert.ok(codes({ version: "lane-a-review-handoff/v1", prospect: null }).includes("INVALID_OBJECT"));
+  assert.ok(codes({ version: "lane-a-review-handoff/v1", approval: "bad", prospect: {} }).includes("INVALID_OBJECT"));
 });
