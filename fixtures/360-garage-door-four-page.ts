@@ -14,6 +14,10 @@ export const garageDoor360FourPageHandoff: ApprovedProspectHandoff = (() => {
     }
   }
   const source = handoff.sourceCheckpoint as any;
+  const gapEntries = (handoff.serviceComparison as any[]).filter((entry) => entry.status !== "prescribed" && entry.directEvidenceCount > 0);
+  (handoff.reviewAnalysisFacts as any).reviewBackedServiceNames = gapEntries.map((entry) => entry.name);
+  (handoff.reviewAnalysisFacts as any).reviewBackedServicesWithoutPages = gapEntries.length;
+  (handoff.prospect.siteEvidence as any[]).push({ id: "site-360-service-audit", url: "https://360garagedoor.com/", pageType: "service-audit", observation: "Bound per-service audit records no standalone public page for each review-backed non-prescribed service intent.", capturedAt: "2026-08-23", source: "artifact-9516514426", serviceIdsWithoutPages: gapEntries.map((entry) => entry.id) });
   source.manifest = [{ path: "checkpoint.json", digest: digestOf({ runId: source.runId, artifactId: source.artifactId, sourceSha: source.sourceSha }) }];
   source.manifestDigest = digestOf(source.manifest);
   source.archiveDigest = digestOf({ sourceSha: source.sourceSha, manifestDigest: source.manifestDigest });

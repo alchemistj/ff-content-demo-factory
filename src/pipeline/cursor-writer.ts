@@ -17,6 +17,7 @@ export interface CursorWriterReceipt {
   stage: CursorWriterStage; provider: typeof CURSOR_PROVIDER; requestedModel: typeof REQUIRED_CURSOR_MODEL;
   resolvedModel: typeof REQUIRED_CURSOR_MODEL; fast: false; jobId: string; agentId: string; threadUrl: string;
   inputDigest: string; promptDigest: string; outputDigest: string; completedAt: string; status: "complete"; output: unknown;
+  requestDigest: string; createRequest: unknown; attestationSource: "official-response" | "bound-create-request"; apiVersion: "cloud-agent-api-v1";
 }
 export interface CursorWriterPendingReceipt {
   stage: CursorWriterStage; provider: typeof CURSOR_PROVIDER; requestedModel: typeof REQUIRED_CURSOR_MODEL;
@@ -27,7 +28,9 @@ export type StoredCursorWriterReceipt = CursorWriterReceipt | CursorWriterPendin
 
 export interface CursorDispatchClaim {
   key: string; stage: CursorWriterStage; runId: string; inputDigest: string; promptDigest: string; ownerToken: string;
-  requestedAgentId: string; claimedAt: string; agentId?: string; jobId?: string;
+  requestedAgentId: string; claimedAt: string; leaseUntil?: string; heartbeatAt?: string;
+  phase?: "claimed" | "agent-created" | "prompt-sent" | "waiting" | "completed";
+  agentId?: string; jobId?: string;
 }
 export interface CursorWriterReceiptStore {
   get(key: string): StoredCursorWriterReceipt | undefined | Promise<StoredCursorWriterReceipt | undefined>;
@@ -67,6 +70,10 @@ export function validateCursorWriterReceipt(receipt: unknown): asserts receipt i
   if (!agentId.startsWith("bc-")) throw new CursorWriterExecutionError("CURSOR_AGENT_ID_INVALID", "Writer receipt must be bound to a Cursor Cloud Agent ID");
   if (!String(value.jobId).startsWith("run-")) throw new CursorWriterExecutionError("CURSOR_JOB_ID_INVALID", "Writer receipt must be bound to a Cursor Cloud run ID");
   assertDigest(value.inputDigest, "inputDigest"); assertDigest(value.promptDigest, "promptDigest"); assertDigest(value.outputDigest, "outputDigest");
+  assertDigest(value.requestDigest, "requestDigest");
+  if (value.apiVersion !== "cloud-agent-api-v1" || (value.attestationSource !== "official-response" && value.attestationSource !== "bound-create-request")) throw new CursorWriterExecutionError("CURSOR_RECEIPT_INVALID", "Receipt fast attestation binding is invalid");
+  if (!asRecord(value.createRequest) || digestOf(value.createRequest) !== value.requestDigest) throw new CursorWriterExecutionError("CURSOR_RECEIPT_REQUEST_TAMPERED", "Cursor receipt create request no longer matches its request digest");
+  assertFastBound(asRecord(value.createRequest) as AgentOptions, []);
   if (typeof value.completedAt !== "string" || Number.isNaN(Date.parse(value.completedAt)) || new Date(value.completedAt).toISOString() !== value.completedAt) throw new CursorWriterExecutionError("CURSOR_RECEIPT_INVALID", "Receipt completedAt must be a canonical ISO timestamp");
   if (digestOf(value.output) !== value.outputDigest) throw new CursorWriterExecutionError("CURSOR_RECEIPT_OUTPUT_TAMPERED", "Cursor receipt output no longer matches its output digest");
 }
@@ -81,7 +88,7 @@ function validatePendingReceipt(receipt: unknown): asserts receipt is CursorWrit
 const EXECUTOR_BRAND = Symbol("ff.cursor.writer.executor");
 export interface CursorWriterExecutor {
   readonly provider: typeof CURSOR_PROVIDER;
-  dispatch(stage: CursorWriterStage, input: unknown, prompt: string, runId?: string): Promise<{ output: unknown; receipt: CursorWriterReceipt; threadUrl: string }>;
+  dispatch(stage: CursorWriterStage, input: unknown, prompt: string, runId?: string): Promise<{ output: unknown; receipt: CursorWriterReceipt; threadUrl: string; claim?: CursorDispatchClaim }>;
   readonly [EXECUTOR_BRAND]: true;
 }
 export interface CloudAgentRecord { id: string; url: string; latestRunId?: string; model?: { id?: string }; }
@@ -89,9 +96,36 @@ export interface CursorTestTransport {
   create(options: AgentOptions, prompt: string, idempotencyKey: string): Promise<{ agent: SDKAgent; run: Run }>;
   resume(agentId: string, options: AgentOptions): Promise<SDKAgent>;
   getAgent(agentId: string, apiKey: string): Promise<CloudAgentRecord>;
+  getRun?(agentId: string, jobId: string, apiKey: string): Promise<Run>;
 }
 type CloudTransport = CursorTestTransport;
+const API_VERSION = "cloud-agent-api-v1" as const;
 function modelOptions(apiKey: string): AgentOptions { return { apiKey, model: { id: REQUIRED_CURSOR_MODEL, params: [{ id: "fast", value: "false" }] }, cloud: { env: { type: "cloud" } } }; }
+function createRequest(options: AgentOptions, prompt: string, idempotencyKey: string, agentId: string): RecordValue {
+  return { apiVersion: API_VERSION, agentId, idempotencyKey, prompt, model: options.model, cloud: options.cloud };
+}
+function fastAttestation(value: unknown): boolean | undefined {
+  const record = asRecord(value); if (!record) return undefined;
+  let found: boolean | undefined;
+  for (const [key, child] of Object.entries(record)) {
+    if (/^fast(?:mode)?$/iu.test(key)) {
+      if (typeof child !== "boolean") throw new CursorWriterExecutionError("CURSOR_FAST_ATTESTATION_INVALID", "Cursor official fast attestation must be boolean false");
+      if (child !== false) throw new CursorWriterExecutionError("CURSOR_FAST_ATTESTATION_MISMATCH", "Cursor official response reported fast=true");
+      found = false;
+    }
+    const nested = fastAttestation(child); if (nested !== undefined) found = nested;
+  }
+  return found;
+}
+function assertFastBound(options: AgentOptions, officialValues: unknown[]): "official-response" | "bound-create-request" {
+  const requestFast = asRecord(options.model)?.params;
+  const params = Array.isArray(requestFast) ? requestFast.filter(asRecord) : [];
+  const fast = params.find((param) => param.id === "fast");
+  if (!fast || fast.value !== "false") throw new CursorWriterExecutionError("CURSOR_FAST_REQUEST_INVALID", "The bound Cursor create request must explicitly set model.params fast=false");
+  let present = false;
+  for (const value of officialValues) if (fastAttestation(value) !== undefined) present = true;
+  return present ? "official-response" : "bound-create-request";
+}
 async function officialCloudTransport(): Promise<CloudTransport> {
   return {
     async create(options, prompt, idempotencyKey) { const agent = await Agent.create({ ...options, idempotencyKey }); if (!options.model) throw new CursorWriterExecutionError("CURSOR_MODEL_REQUIRED", "Cloud send requires the exact model selection"); const run = await agent.send(prompt, { model: options.model, idempotencyKey }); return { agent, run }; },
@@ -106,13 +140,21 @@ async function officialCloudTransport(): Promise<CloudTransport> {
       const model = asRecord(agent.model); if (model && typeof model.id === "string") result.model = { id: model.id };
       return result;
     },
+    async getRun(agentId, jobId, apiKey) {
+      const response = await fetch(`${CURSOR_CLOUD_API}/v1/agents/${encodeURIComponent(agentId)}/runs/${encodeURIComponent(jobId)}`, { headers: { Authorization: `Basic ${Buffer.from(`${apiKey}:`).toString("base64")}`, Accept: "application/json" } });
+      if (!response.ok) throw new CursorWriterExecutionError("CURSOR_RUN_RECORD_FAILED", `Cursor Cloud run request failed with ${response.status}`);
+      const payload = asRecord(await response.json());
+      if (!payload) throw new CursorWriterExecutionError("CURSOR_RUN_RECORD_INVALID", "Cursor Cloud run record is not an object");
+      const result = { ...payload, wait: async () => payload } as unknown as Run;
+      return result;
+    },
   };
 }
 function deterministicAgentId(key: string): string { const hex = createHash("sha256").update(key).digest("hex").slice(0, 32); return `bc-${hex.slice(0, 8)}-${hex.slice(8, 12)}-4${hex.slice(13, 16)}-8${hex.slice(17, 20)}-${hex.slice(20, 32)}`; }
 function resolvedModelOf(agent: SDKAgent, run: Run, result: unknown): unknown { const resultRecord = asRecord(result); const runModel = asRecord(run.model); const agentModel = asRecord(agent.model); return runModel?.id ?? (resultRecord && asRecord(resultRecord.model)?.id) ?? agentModel?.id; }
 function outputOf(result: unknown): unknown { const value = asRecord(result); return value?.result ?? value?.output ?? result; }
 
-async function dispatchWithTransport(input: { transport: CloudTransport; env: Record<string, string | undefined>; receiptStore: CursorWriterReceiptStore; now: () => Date }, stage: CursorWriterStage, payload: unknown, prompt: string, runId: string): Promise<{ output: unknown; receipt: CursorWriterReceipt; threadUrl: string }> {
+async function dispatchWithTransport(input: { transport: CloudTransport; env: Record<string, string | undefined>; receiptStore: CursorWriterReceiptStore; now: () => Date }, stage: CursorWriterStage, payload: unknown, prompt: string, runId: string): Promise<{ output: unknown; receipt: CursorWriterReceipt; threadUrl: string; claim?: CursorDispatchClaim }> {
   const requestedModel = input.env.CURSOR_MODEL; const fastRaw = input.env.CURSOR_FAST; const fast = fastRaw === "false" || fastRaw === "off" ? false : fastRaw; validateCursorWriterRuntime({ provider: CURSOR_PROVIDER, requestedModel, fast });
   if (!input.env.CURSOR_API_KEY) throw new CursorWriterExecutionError("CURSOR_API_KEY_REQUIRED", "Cloud Cursor production requires CURSOR_API_KEY");
   if (typeof prompt !== "string" || !prompt.trim()) throw new CursorWriterExecutionError("CURSOR_PROMPT_REQUIRED", "Writer dispatch requires a non-empty prompt");
@@ -120,25 +162,27 @@ async function dispatchWithTransport(input: { transport: CloudTransport; env: Re
   const existing = await input.receiptStore.get(key);
   if (existing) { if (existing.stage !== stage || existing.inputDigest !== inputDigest || existing.promptDigest !== promptDigest) throw new CursorWriterExecutionError("CURSOR_RECEIPT_BINDING_MISMATCH", "Existing Cursor receipt is bound to different writer input"); if (existing.status === "complete") { validateCursorWriterReceipt(existing); return { output: existing.output, receipt: existing, threadUrl: existing.threadUrl }; } validatePendingReceipt(existing); }
   if (!input.receiptStore.tryClaim || !input.receiptStore.getClaim || !input.receiptStore.putClaim) throw new CursorWriterExecutionError("CURSOR_DISPATCH_CLAIM_REQUIRED", "Production Cursor dispatch requires an atomic durable claim store");
-  const claim: CursorDispatchClaim = { key, stage, runId, inputDigest, promptDigest, ownerToken: `${process.pid}:${input.now().getTime()}:${Math.random()}`, requestedAgentId, claimedAt: input.now().toISOString() }; const claimed = await input.receiptStore.tryClaim(key, claim); let activeClaim = claimed.claim;
+  const claim: CursorDispatchClaim = { key, stage, runId, inputDigest, promptDigest, ownerToken: `${process.pid}:${input.now().getTime()}:${Math.random()}`, requestedAgentId, claimedAt: input.now().toISOString(), heartbeatAt: input.now().toISOString(), leaseUntil: new Date(input.now().getTime() + 30_000).toISOString(), phase: "claimed" }; const claimed = await input.receiptStore.tryClaim(key, claim); let activeClaim = claimed.claim;
   if (!claimed.acquired) {
-    const deadline = Date.now() + 1000;
-    while (Date.now() < deadline) {
-      const settled = await input.receiptStore.get(key);
-      if (settled?.status === "complete") { validateCursorWriterReceipt(settled); return { output: settled.output, receipt: settled, threadUrl: settled.threadUrl }; }
-      activeClaim = await input.receiptStore.getClaim(key) || activeClaim;
-      if (activeClaim.agentId) break;
-      await new Promise((resolve) => setTimeout(resolve, 1));
-    }
-    if (!activeClaim.agentId) throw new CursorWriterExecutionError("CURSOR_DISPATCH_RECONCILIATION_REQUIRED", "Another dispatch owns the paid Cursor claim; no duplicate job will be created until its claim reconciles");
+    const settled = await input.receiptStore.get(key);
+    if (settled?.status === "complete") { validateCursorWriterReceipt(settled); const finishedClaim = await input.receiptStore.getClaim(key); return { output: settled.output, receipt: settled, threadUrl: settled.threadUrl, ...(finishedClaim ? { claim: finishedClaim } : {}) }; }
+    throw new CursorWriterExecutionError("CURSOR_DISPATCH_IN_PROGRESS", "Another worker owns a live Cursor dispatch lease; caller must poll or reconcile before resuming", { status: "in-progress", stage, key, ownerToken: activeClaim.ownerToken, phase: activeClaim.phase || "claimed" });
   }
   let agent: SDKAgent; let run: Run;
-  if (activeClaim.agentId && !claimed.acquired) { agent = await input.transport.resume(activeClaim.agentId, modelOptions(input.env.CURSOR_API_KEY)); const options = modelOptions(input.env.CURSOR_API_KEY); if (!options.model) throw new CursorWriterExecutionError("CURSOR_MODEL_REQUIRED", "Cloud send requires the exact model selection"); run = await agent.send(prompt, { model: options.model, idempotencyKey: key }); }
-  else { const created = await input.transport.create({ ...modelOptions(input.env.CURSOR_API_KEY), agentId: requestedAgentId }, prompt, key); agent = created.agent; run = created.run; const agentId = String(agent.agentId); const jobId = String(run.id); activeClaim = { ...activeClaim, agentId, jobId }; await input.receiptStore.putClaim(key, activeClaim); }
+  const options = modelOptions(input.env.CURSOR_API_KEY); const request = createRequest(options, prompt, key, requestedAgentId); const requestDigest = digestOf(request);
+  if (activeClaim.agentId && activeClaim.jobId) {
+    agent = await input.transport.resume(activeClaim.agentId, options);
+    if (!input.transport.getRun) throw new CursorWriterExecutionError("CURSOR_RUN_REATTACH_REQUIRED", "Interrupted Cursor work cannot resend a prompt without the official durable run lookup");
+    run = await input.transport.getRun(activeClaim.agentId, activeClaim.jobId, input.env.CURSOR_API_KEY);
+  } else {
+    const created = await input.transport.create({ ...options, agentId: requestedAgentId }, prompt, key); agent = created.agent; run = created.run;
+    const agentId = String(agent.agentId); const jobId = String(run.id); activeClaim = { ...activeClaim, agentId, jobId, phase: "prompt-sent", heartbeatAt: input.now().toISOString(), leaseUntil: new Date(input.now().getTime() + 30_000).toISOString() }; await input.receiptStore.putClaim(key, activeClaim);
+  }
   const agentId = String(agent.agentId); const jobId = String(run.id); if (activeClaim.agentId && agentId !== activeClaim.agentId) throw new CursorWriterExecutionError("CURSOR_CLAIM_BINDING_MISMATCH", "Cursor returned an agent ID different from the durable dispatch claim");
   const record = await input.transport.getAgent(agentId, input.env.CURSOR_API_KEY); if (record.id !== agentId) throw new CursorWriterExecutionError("CURSOR_AGENT_RECORD_INVALID", "Cursor Cloud agent record ID does not match SDK agent ID"); assertThreadUrl(record.url, agentId);
+  activeClaim = { ...activeClaim, phase: "waiting", heartbeatAt: input.now().toISOString(), leaseUntil: new Date(input.now().getTime() + 30_000).toISOString() }; await input.receiptStore.putClaim(key, activeClaim);
   const result = await run.wait(); const resolvedModel = resolvedModelOf(agent, run, result); validateCursorWriterRuntime({ provider: CURSOR_PROVIDER, requestedModel, resolvedModel, fast: false }); if (resolvedModel !== REQUIRED_CURSOR_MODEL) throw new CursorWriterExecutionError("CURSOR_RESOLVED_MODEL_MISSING", "Cursor Cloud did not attest the required resolved model");
-  const output = outputOf(result); const receipt: CursorWriterReceipt = { stage, provider: CURSOR_PROVIDER, requestedModel: REQUIRED_CURSOR_MODEL, resolvedModel: REQUIRED_CURSOR_MODEL, fast: false, jobId, agentId, threadUrl: record.url, inputDigest, promptDigest, outputDigest: digestOf(output), completedAt: input.now().toISOString(), status: "complete", output }; validateCursorWriterReceipt(receipt); await input.receiptStore.put(key, receipt); return { output, receipt, threadUrl: record.url };
+  const output = outputOf(result); const attestationSource = assertFastBound(options, [agent, run, result]); const receipt: CursorWriterReceipt = { stage, provider: CURSOR_PROVIDER, requestedModel: REQUIRED_CURSOR_MODEL, resolvedModel: REQUIRED_CURSOR_MODEL, fast: false, jobId, agentId, threadUrl: record.url, inputDigest, promptDigest, outputDigest: digestOf(output), completedAt: input.now().toISOString(), status: "complete", output, requestDigest, createRequest: request, attestationSource, apiVersion: API_VERSION }; validateCursorWriterReceipt(receipt); await input.receiptStore.put(key, receipt); activeClaim = { ...activeClaim, phase: "completed", heartbeatAt: input.now().toISOString(), leaseUntil: new Date(input.now().getTime() + 30_000).toISOString() }; await input.receiptStore.putClaim(key, activeClaim); return { output, receipt, threadUrl: record.url, claim: activeClaim };
 }
 export function createCursorWriterExecutor(input: { env?: Record<string, string | undefined>; receiptStore: CursorWriterReceiptStore; now?: () => Date }): CursorWriterExecutor {
   if (!input || !input.receiptStore) throw new CursorWriterExecutionError("CURSOR_RECEIPT_STORE_REQUIRED", "A durable Cursor receipt/claim store is required"); const env = input.env || process.env; const now = input.now || (() => new Date()); const transportPromise = officialCloudTransport();
@@ -153,7 +197,7 @@ export function createCursorWriterExecutorForTest(input: { transport: CursorTest
 }
 export function isCursorWriterExecutor(value: unknown): value is CursorWriterExecutor { return !!value && typeof value === "object" && (value as Record<symbol, unknown>)[EXECUTOR_BRAND] === true && (value as Record<string, unknown>).provider === CURSOR_PROVIDER && typeof (value as Record<string, unknown>).dispatch === "function"; }
 export function createMemoryCursorReceiptStore(): CursorWriterReceiptStore & { records: Map<string, StoredCursorWriterReceipt>; claims: Map<string, CursorDispatchClaim> } {
-  const records = new Map<string, StoredCursorWriterReceipt>(); const claims = new Map<string, CursorDispatchClaim>(); return { records, claims, get: (key) => records.get(key), put: (key, receipt) => { records.set(key, receipt); }, tryClaim: (key, claim) => { const current = claims.get(key); if (current) return { acquired: false, claim: current }; claims.set(key, claim); return { acquired: true, claim }; }, getClaim: (key) => claims.get(key), putClaim: (key, claim) => { claims.set(key, claim); } };
+  const records = new Map<string, StoredCursorWriterReceipt>(); const claims = new Map<string, CursorDispatchClaim>(); return { records, claims, get: (key) => records.get(key), put: (key, receipt) => { records.set(key, receipt); }, tryClaim: (key, claim) => { const current = claims.get(key); if (current && (!current.leaseUntil || Date.parse(current.leaseUntil) > Date.now()) && current.phase !== "completed") return { acquired: false, claim: current }; const resumed = current && current.agentId && current.jobId ? { ...claim, agentId: current.agentId, jobId: current.jobId, phase: current.phase || "prompt-sent" as const } : claim; claims.set(key, resumed); return { acquired: true, claim: resumed }; }, getClaim: (key) => claims.get(key), putClaim: (key, claim) => { claims.set(key, claim); } };
 }
 
 interface CursorReceiptFile { receipts: Record<string, StoredCursorWriterReceipt>; claims: Record<string, CursorDispatchClaim>; }
@@ -182,7 +226,7 @@ export function createJsonCursorReceiptStore(filePath: string): CursorWriterRece
   return {
     async get(key) { return (await readReceiptFile(target)).receipts[key]; },
     async put(key, receipt) { await withReceiptFileLock(target, async () => { const value = await readReceiptFile(target); value.receipts[key] = receipt; await writeReceiptFile(target, value); }); },
-    async tryClaim(key, claim) { return withReceiptFileLock(target, async () => { const value = await readReceiptFile(target); const existing = value.claims[key]; if (existing) return { acquired: false, claim: existing }; value.claims[key] = claim; await writeReceiptFile(target, value); return { acquired: true, claim }; }); },
+    async tryClaim(key, claim) { return withReceiptFileLock(target, async () => { const value = await readReceiptFile(target); const existing = value.claims[key]; if (existing && (!existing.leaseUntil || Date.parse(existing.leaseUntil) > Date.now()) && existing.phase !== "completed") return { acquired: false, claim: existing }; const resumed = existing?.agentId && existing.jobId ? { ...claim, agentId: existing.agentId, jobId: existing.jobId, phase: existing.phase || "prompt-sent" as const } : claim; value.claims[key] = resumed; await writeReceiptFile(target, value); return { acquired: true, claim: resumed }; }); },
     async getClaim(key) { return (await readReceiptFile(target)).claims[key]; },
     async putClaim(key, claim) { await withReceiptFileLock(target, async () => { const value = await readReceiptFile(target); value.claims[key] = claim; await writeReceiptFile(target, value); }); },
   };

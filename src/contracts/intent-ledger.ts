@@ -8,6 +8,11 @@ export interface IntentLedgerEntry {
   aliases: readonly string[];
   publicRouteAllowed: boolean;
   supportingEvidenceAllowed: boolean;
+  canonicalKey: string;
+}
+
+export function normalizeServiceComparisonKey(value: string): string {
+  return value.toLowerCase().replace(/\([^)]*\)/gu, "").replace(/[^a-z0-9]+/gu, "-").replace(/^-|-$/gu, "");
 }
 
 /** One canonical ledger separates public topology intent from supporting evidence intent. */
@@ -20,5 +25,6 @@ export function buildIntentLedger(comparison: readonly ServiceComparison[]): rea
     aliases: entry.aliases || [],
     publicRouteAllowed: entry.status === "prescribed",
     supportingEvidenceAllowed: entry.status !== "prescribed" && entry.status !== "excluded",
+    canonicalKey: normalizeServiceComparisonKey(entry.name),
   }));
 }

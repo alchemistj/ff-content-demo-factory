@@ -168,6 +168,16 @@ function routeOf(value: unknown): string {
   try { return new URL(raw).pathname || "/"; } catch { return raw.startsWith("/") ? raw : `/${raw}`; }
 }
 function regexLiteral(value: string): string { return value.replace(/[.*+?^${}()|[\]\\]/gu, "\\$&"); }
+function normalizeIntentText(value: string): string { return value.toLowerCase().replace(/[-_]+/gu, " ").replace(/\s+/gu, " ").trim(); }
+function requiredIntentLedger(input: Dict): Dict[] {
+  const ledger = input.rejectedIntentLedger ?? input.intentLedger;
+  if (!Array.isArray(ledger)) throw new Error("Human Gate 2 requires the rejected/folded intent ledger");
+  return ledger.map((raw, index) => {
+    const entry = dict(raw);
+    if (typeof entry.id !== "string" || typeof entry.name !== "string" || typeof entry.status !== "string") throw new Error(`Human Gate 2 intent ledger entry ${index} is invalid`);
+    return entry;
+  });
+}
 function assertPublicRoutesAreSafe(site: Dict, sealedFacts?: Dict, rejectedRoutes: unknown[] = []): void {
   const pages = list(site.pages ?? site.pageWords);
   const routes = pages.map((page) => routeOf(dict(page).url ?? dict(page).path ?? dict(page).route));
@@ -188,6 +198,30 @@ function assertPublicRoutesAreSafe(site: Dict, sealedFacts?: Dict, rejectedRoute
     if (publicPayload.includes(key)) throw new Error(`Human Gate 2 public business output leaked sealed ${key}`);
   }
 }
+function assertLedgerClaimsAreSafe(site: Dict, ledger: readonly Dict[]): void {
+  const rejected = ledger.filter((entry) => entry.status !== "prescribed");
+  const scan = (value: unknown, path: string, boundedSupport = false): void => {
+    if (typeof value === "string") {
+      const normalized = normalizeIntentText(value);
+      for (const entry of rejected) {
+        const names = [entry.name, ...(Array.isArray(entry.aliases) ? entry.aliases : [])].filter((name): name is string => typeof name === "string");
+        if (!names.some((name) => normalized.includes(normalizeIntentText(name)))) continue;
+        const routeField = /(?:^|\.)(?:url|path|route|href|destination)$/iu.test(path) || /(?:nav|navigation|cta|callstoaction|header|footer)/iu.test(path);
+        const supportAllowed = entry.supportingEvidenceAllowed === true && boundedSupport && !routeField;
+        if (!supportAllowed) throw new Error(`Human Gate 2 public output leaked rejected/folded service ${entry.name} in ${path}`);
+      }
+      return;
+    }
+    if (Array.isArray(value)) { value.forEach((child, index) => scan(child, `${path}[${index}]`, boundedSupport)); return; }
+    if (value && typeof value === "object") {
+      const object = value as Dict;
+      const explicitContext = [object.context, object.claimContext, object.evidenceUse, object.role, object.use].some((candidate) => typeof candidate === "string" && /supporting|evidence[- ]only|not (?:approved|a standalone)|without a page/iu.test(candidate));
+      const nextBounded = boundedSupport || object.supportingEvidence === true || object.evidenceOnly === true || object.folded === true || object.status === "folded" || object.status === "passed_over" || explicitContext;
+      Object.entries(object).forEach(([key, child]) => scan(child, `${path}.${key}`, nextBounded));
+    }
+  };
+  scan({ pages: site.pages, header: site.header, footer: site.footer, strategyOverview: site.strategyOverview ?? site.strategy }, "site", false);
+}
 function websiteWords(input: unknown): Dict {
   const root = dict(input);
   const outputs = dict(root.outputs);
@@ -196,8 +230,11 @@ function websiteWords(input: unknown): Dict {
 
 /** Return clean prose in the order a human experiences the website. */
 export function renderHumanGate2(input: unknown): string {
+  const root = dict(input);
+  const ledger = requiredIntentLedger(root);
   const site = websiteWords(input);
-  assertPublicRoutesAreSafe(site, dict(input).reviewAnalysisFacts as Dict | undefined, list(dict(input).rejectedRoutes));
+  assertPublicRoutesAreSafe(site, root.reviewAnalysisFacts as Dict | undefined, list(root.rejectedRoutes));
+  assertLedgerClaimsAreSafe(site, ledger);
   const out: string[] = ["# Website Words — Human Gate 2", "", ...renderHeader(site.header ?? dict(input).header), ""];
   const pages = list(site.pages ?? site.pageWords);
   out.push("## Pages", "");

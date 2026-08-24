@@ -19,7 +19,7 @@ export interface Address { street: string; city: string; region: string; postalC
 export interface BusinessIdentity { name: string; trade: string; serviceArea: string; legalName?: string; }
 export interface Nap { name: string; address: Address; phone: string; website: string; }
 export interface ConfirmedFact { id: string; fact: string; evidence: readonly EvidenceRef[]; confirmedAt: string; }
-export interface SiteEvidence { id: string; url: string; pageType: string; observation: string; capturedAt: string; source: string; }
+export interface SiteEvidence { id: string; url: string; pageType: string; observation: string; capturedAt: string; source: string; serviceId?: string; servicePagePresent?: boolean; serviceIdsWithoutPages?: readonly string[]; }
 export interface ImageRef { id: string; url: string; altText: string; source: string; evidenceUse: string; }
 export type ReviewSourceType = "customer_review" | "company_testimonial" | "business_profile" | "user_brief" | "other";
 export interface ReviewProvenance { sourceType: ReviewSourceType; sourceUrl: string; capturedAt: string; sourceLabel: string; }

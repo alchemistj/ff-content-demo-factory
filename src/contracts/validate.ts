@@ -8,7 +8,7 @@ import {
 } from "./types.js";
 import { ContractValidationError, type ContractIssue } from "./errors.js";
 import { computeHandoffDigests, digestOf, expansionOverrideDigest } from "./digests.js";
-import { buildIntentLedger } from "./intent-ledger.js";
+import { buildIntentLedger, normalizeServiceComparisonKey } from "./intent-ledger.js";
 import { TRUSTED_SOURCE_IDENTITIES } from "./trusted-source.js";
 
 const ID_PATTERN = /^(?:[a-z][a-z0-9]*(?:-[a-z0-9]+)*|[A-Za-z0-9_-]{8,})$/;
@@ -217,6 +217,12 @@ function validateSiteEvidence(value: unknown, path: string, registry: IdRegistry
     requiredString(item, "observation", itemPath, issues);
     validateDate(item.capturedAt, `${itemPath}.capturedAt`, issues);
     requiredString(item, "source", itemPath, issues);
+    if (item.serviceId !== undefined) requiredString(item, "serviceId", itemPath, issues);
+    if (item.servicePagePresent !== undefined && typeof item.servicePagePresent !== "boolean") add(issues, "INVALID_VALUE", `${itemPath}.servicePagePresent`, "servicePagePresent must be boolean");
+    if (item.serviceIdsWithoutPages !== undefined) {
+      const ids = requiredArray(item, "serviceIdsWithoutPages", itemPath, issues);
+      ids.forEach((id, idIndex) => { if (typeof id !== "string" || !id.trim()) add(issues, "INVALID_VALUE", `${itemPath}.serviceIdsWithoutPages[${idIndex}]`, "service gap IDs must be non-empty strings"); });
+    }
   });
 }
 
@@ -374,6 +380,18 @@ function validateServiceComparison(value: unknown, path: string, knownIds: Set<s
     const id = requiredString(item, "id", itemPath, issues); const name = requiredString(item, "name", itemPath, issues);
     if (/^(?:service|page|slot)(?:[- _]?\d+)?$/i.test(id) || /^(?:service|page|slot)(?:[- _]?\d+)?$/i.test(name)) add(issues, "GENERIC_SERVICE_SLOT", itemPath, "canonical service identity required");
     if (ids.has(id)) add(issues, "DUPLICATE_ID", `${itemPath}.id`, `duplicate service comparison ID ${id}`); ids.add(id);
+    // A family owns its canonical ID, name, and aliases.  Variants such as
+    // "service and repair" versus "service-repair" are allowed only when
+    // they occur inside that same entry; the exact normalized key remains the
+    // collision boundary between different families.
+    const identityKeys = [id, name, ...(Array.isArray(item.aliases) ? item.aliases : [])]
+      .filter((candidate): candidate is string => typeof candidate === "string" && candidate.trim() !== "")
+      .map(normalizeServiceComparisonKey);
+    for (const key of identityKeys) {
+      const previous = aliases.get(key);
+      if (previous && previous !== id) add(issues, "ALIAS_COLLISION", `${itemPath}.id`, `service identity ${key} collides with ${previous}`);
+      aliases.set(key, id);
+    }
     const status = requiredString(item, "status", itemPath, issues);
     if (!["prescribed", "folded", "passed_over", "excluded"].includes(status)) add(issues, "INVALID_VALUE", `${itemPath}.status`, "unsupported service comparison status");
     for (const key of ["evidenceCount", "directEvidenceCount"]) if (typeof item[key] !== "number" || !Number.isInteger(item[key]) || Number(item[key]) < 0) add(issues, "INVALID_VALUE", `${itemPath}.${key}`, "must be a non-negative integer");
@@ -383,10 +401,6 @@ function validateServiceComparison(value: unknown, path: string, knownIds: Set<s
       if (typeof item.directEvidenceCount !== "number" || item.directEvidenceCount <= 0) add(issues, "SERVICE_EVIDENCE_REQUIRED", `${itemPath}.directEvidenceCount`, "every prescribed service requires direct evidence");
       const authoritativeReview = refs.some((ref) => ref.kind === "review" && reviewInventory.get(ref.refId)?.upstreamAuthorityJudgment === "authoritative");
       if (!authoritativeReview) add(issues, "SERVICE_EVIDENCE_REQUIRED", `${itemPath}.evidence`, "every prescribed service requires an authoritative review-backed comparison entry");
-    }
-    for (const alias of Array.isArray(item.aliases) ? item.aliases : []) {
-      const key = String(alias).toLowerCase(); const previous = aliases.get(key);
-      if (previous && previous !== id) add(issues, "ALIAS_COLLISION", `${itemPath}.aliases`, `alias ${alias} collides with ${previous}`); aliases.set(key, id);
     }
     const route = typeof item.route === "string" ? routePath(item.route) : "";
     if (status === "prescribed") {
@@ -531,7 +545,7 @@ function validateRejectedPublicTopology(root: AnyRecord, issues: ContractIssue[]
     }
   }
 }
-function validateIntegrity(root: AnyRecord, prospect: ProspectContract | null, issues: ContractIssue[]): void {
+function validateIntegrity(root: AnyRecord, prospect: ProspectContract | null, issues: ContractIssue[], requireTrustedSource = false): void {
   const source = record(root.sourceCheckpoint, "$.sourceCheckpoint", issues);
   for (const key of ["runId", "artifactId", "sourceSha", "archiveDigest"]) requiredString(source, key, "$.sourceCheckpoint", issues);
   if (source.manifestDigest !== undefined && (typeof source.manifestDigest !== "string" || !source.manifestDigest.trim())) add(issues, "SOURCE_CHECKPOINT_INVALID", "$.sourceCheckpoint.manifestDigest", "manifestDigest must be non-empty");
@@ -555,6 +569,7 @@ function validateIntegrity(root: AnyRecord, prospect: ProspectContract | null, i
     }
   }
   const trusted = typeof source.artifactId === "string" ? TRUSTED_SOURCE_IDENTITIES[source.artifactId] : undefined;
+  if (requireTrustedSource && typeof source.artifactId === "string" && !trusted) add(issues, "SOURCE_CHECKPOINT_INVALID", "$.sourceCheckpoint.artifactId", "production handoff source identity is not in the external trusted pin registry");
   if (trusted) {
     for (const key of ["runId", "artifactId", "sourceSha", "manifestDigest", "archiveDigest"] as const) if (source[key] !== trusted[key]) add(issues, "SOURCE_CHECKPOINT_INVALID", `$.sourceCheckpoint.${key}`, "source identity does not match the authoritative pinned archive identity");
   }
@@ -569,18 +584,19 @@ function validateIntegrity(root: AnyRecord, prospect: ProspectContract | null, i
   if (trusted && prospect && Array.isArray(root.serviceComparison)) {
     const comparison = root.serviceComparison.filter(isRecord) as AnyRecord[];
     const reviewMap = new Map(inventory.map((review) => [review.id, review]));
-    const normalize = (value: string) => value.toLowerCase().replace(/[^a-z0-9]+/gu, "-").replace(/^-|-$/gu, "");
+    const normalize = (value: string) => value.toLowerCase().replace(/\([^)]*\)/gu, "").replace(/[^a-z0-9]+/gu, "-").replace(/^-|-$/gu, "");
     for (const [index, entry] of comparison.entries()) {
       const terms = [entry.id, entry.name, ...(Array.isArray(entry.aliases) ? entry.aliases : [])].filter((value): value is string => typeof value === "string").map(normalize);
-      const derived = inventory.filter((review) => review.upstreamAuthorityJudgment === "authoritative" && review.serviceTopicSignals.some((signal: string) => terms.includes(normalize(signal)))).length;
+      const derived = inventory.filter((review) => review.upstreamAuthorityJudgment === "authoritative" && review.classification === "positive" && review.serviceTopicSignals.some((signal: string) => terms.includes(normalize(signal)))).length;
       if (typeof entry.directEvidenceCount === "number" && entry.directEvidenceCount > derived) add(issues, "REVIEW_ANALYSIS_MISMATCH", `$.serviceComparison[${index}].directEvidenceCount`, "direct evidence count exceeds the bound authoritative review classifications");
       const refs = Array.isArray(entry.evidence) ? entry.evidence : [];
       for (const [refIndex, ref] of refs.entries()) {
         if (!isRecord(ref) || ref.kind !== "review" || !reviewMap.has(ref.refId as string)) add(issues, "REVIEW_ANALYSIS_MISMATCH", `$.serviceComparison[${index}].evidence[${refIndex}]`, "service evidence must bind to an actual review record");
       }
     }
-    const serviceRoutes = new Set((prospect.destinations.servicePages || []).map((page) => routePath(page.url)));
-    const derivedGapNames = comparison.filter((entry) => entry.status !== "prescribed" && Array.isArray(entry.evidence) && entry.evidence.length > 0 && !entry.route && !serviceRoutes.has(routePath(String(entry.route || "")))).map((entry) => entry.name).filter((name): name is string => typeof name === "string");
+    const serviceAudit = (prospect.siteEvidence || []).filter((entry: any) => entry.pageType.toLowerCase().replace(/[ _-]+/gu, "") === "serviceaudit" && Array.isArray(entry.serviceIdsWithoutPages));
+    const absentIds = new Set(serviceAudit.flatMap((entry: any) => entry.serviceIdsWithoutPages));
+    const derivedGapNames = comparison.filter((entry) => entry.status !== "prescribed" && entry.status !== "excluded" && typeof entry.id === "string" && absentIds.has(entry.id) && Array.isArray(entry.evidence) && entry.evidence.some((ref: any) => ref?.kind === "review" && reviewMap.get(ref.refId)?.upstreamAuthorityJudgment === "authoritative" && reviewMap.get(ref.refId)?.classification === "positive") && typeof entry.directEvidenceCount === "number" && entry.directEvidenceCount > 0 && !entry.route).map((entry) => entry.name).filter((name): name is string => typeof name === "string");
     if (JSON.stringify(names) !== JSON.stringify(derivedGapNames) || facts.reviewBackedServicesWithoutPages !== derivedGapNames.length) add(issues, "REVIEW_ANALYSIS_MISMATCH", "$.reviewAnalysisFacts", "sealed service-gap facts do not match the bound service-evidence ledger and site audit");
   }
   const digestRecord = record(root.digests, "$.digests", issues);
@@ -599,7 +615,7 @@ function validateIntegrity(root: AnyRecord, prospect: ProspectContract | null, i
   }
 }
 /** Validate and return a single approved prospect handoff. Throws on any issue. */
-export function parseApprovedProspectHandoff(input: unknown): ApprovedProspectHandoff {
+export function parseApprovedProspectHandoff(input: unknown, options: { requireTrustedSource?: boolean } = {}): ApprovedProspectHandoff {
   const issues: ContractIssue[] = [];
   const root = record(input, "$", issues);
   if ("prospects" in root) {
@@ -627,7 +643,7 @@ export function parseApprovedProspectHandoff(input: unknown): ApprovedProspectHa
   validateServiceComparison(root.serviceComparison, "$.serviceComparison", knownIds, prescribedIds, prospect && Array.isArray(prospect.reviewInventory) ? new Map(prospect.reviewInventory.map((review) => [review.id, review])) : new Map(), issues);
   if (root.expansionOverride !== undefined) validateExpansionOverride(root.expansionOverride, "$.expansionOverride", issues, root, prospect);
   if (prospect && prospect.destinations && Array.isArray(prospect.destinations.servicePages) && prospect.destinations.servicePages.length !== 2 && root.expansionOverride === undefined) add(issues, "SERVICE_PAGE_COUNT", "$.prospect.destinations.servicePages", "additional service pages require an explicit expansion override");
-  if (prospect) { validateRejectedPublicTopology(root, issues); validateIntegrity(root, prospect, issues); }
+  if (prospect) { validateRejectedPublicTopology(root, issues); validateIntegrity(root, prospect, issues, options.requireTrustedSource === true); }
   if (issues.length) throw new ContractValidationError(issues);
   return { ...root as unknown as ApprovedProspectHandoff, version: LANE_A_HANDOFF_VERSION, approval: approval as unknown as ApprovedProspectHandoff["approval"], prospect: prospect as ProspectContract };
 }
@@ -640,13 +656,13 @@ function parseProspectOnly(value: unknown, path: string, issues: ContractIssue[]
   return validateProspect(value, path, issues, expansionOverride);
 }
 
-export function assertApprovedProspectHandoff(input: unknown): asserts input is ApprovedProspectHandoff {
-  parseApprovedProspectHandoff(input);
+export function assertApprovedProspectHandoff(input: unknown, options: { requireTrustedSource?: boolean } = {}): asserts input is ApprovedProspectHandoff {
+  parseApprovedProspectHandoff(input, options);
 }
 
-export function validateApprovedProspectHandoff(input: unknown): readonly ContractIssue[] {
+export function validateApprovedProspectHandoff(input: unknown, options: { requireTrustedSource?: boolean } = {}): readonly ContractIssue[] {
   try {
-    parseApprovedProspectHandoff(input);
+    parseApprovedProspectHandoff(input, options);
     return [];
   } catch (error: unknown) {
     if (error instanceof ContractValidationError) return error.issues;

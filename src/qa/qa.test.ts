@@ -104,6 +104,7 @@ test("Human Gate 2 renderer reads as website words and ends in exact approval qu
     header: { brand: "Example", navigation: [{ label: "Home", href: "/" }] },
     footer: { text: "Call us." },
     strategyOverview: { body: "The architecture routes broad intent into focused pages." },
+    rejectedIntentLedger: [],
   });
   assert.equal(artifact.state, "awaiting-human-gate-2");
   assert.match(artifact.markdown, /SEO title: Home/);
@@ -115,6 +116,7 @@ test("Human Gate 2 renderer reads as website words and ends in exact approval qu
 test("Human Gate 2 places sidecar reviews at their authored section instead of a review dump", () => {
   const artifact = createHumanGate2Artifact({
     pages: [{ url: "/service", seoTitle: "Service", metaDescription: "Service", h1: "Service", sections: [{ id: "argument", heading: "The argument", body: "Claim before proof." }], reviewPlacements: [{ sectionId: "argument", quote: "The work was excellent.", attribution: "— Alex" }] }],
+    rejectedIntentLedger: [],
   });
   assert.ok(artifact.markdown.indexOf("Claim before proof.") < artifact.markdown.indexOf("The work was excellent."));
   assert.doesNotMatch(artifact.markdown, /Placed customer proof/);
@@ -125,7 +127,7 @@ test("orphaned review placements fail QA and remain visible in the review artifa
   const orphaned = { ...base, reviewPlacements: base.reviewPlacements.map((placement, index) => index === 0 ? { ...placement, sectionId: "missing-section" } : placement) };
   const report = runDeterministicQa({ ...richSiteFixture, pages: [orphaned] });
   assert.ok(report.findings.some((finding) => finding.code === "orphan-review-placement"));
-  const artifact = createHumanGate2Artifact({ pages: [orphaned] });
+  const artifact = createHumanGate2Artifact({ pages: [orphaned], rejectedIntentLedger: [] });
   assert.match(artifact.markdown, /The team repaired our roof quickly/);
 });
 

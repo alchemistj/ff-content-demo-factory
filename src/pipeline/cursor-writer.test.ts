@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import { garageDoor360FourPageHandoff } from "../../fixtures/360-garage-door-four-page.js";
-import { createInitialState, STAGES, validateState } from "./state.js";
+import { createInitialState, stageInputProjection, stagePrompt, STAGES, validateState } from "./state.js";
 import {
   createCursorWriterExecutorForTest,
   type CursorTestTransport,
@@ -16,17 +16,20 @@ import {
   type CursorWriterReceipt,
   type CursorDispatchClaim,
 } from "./cursor-writer.js";
+import { digestOf } from "../contracts/digests.js";
 
 const env = { CURSOR_API_KEY: "test-key", CURSOR_MODEL: "cursor-grok-4.6-high", CURSOR_FAST: "false" };
 const agentId = "bc-00000000-0000-4000-8000-000000000001";
 const runId = "run-00000000-0000-4000-8000-000000000001";
-function transport(options: { resolvedModel?: string; url?: string | undefined; wait?: () => unknown | Promise<unknown>; delay?: number } = { url: `https://cursor.com/agents/${agentId}` }): CursorTestTransport & { creates: number; resumes: number; gets: number; lastCreate?: any } {
-  const value = { creates: 0, resumes: 0, gets: 0 } as CursorTestTransport & { creates: number; resumes: number; gets: number; lastCreate?: any };
+function transport(options: { resolvedModel?: string; url?: string | undefined; wait?: () => unknown | Promise<unknown>; delay?: number; fast?: unknown } = { url: `https://cursor.com/agents/${agentId}` }): CursorTestTransport & { creates: number; resumes: number; gets: number; sends: number; lastCreate?: any } {
+  const value = { creates: 0, resumes: 0, gets: 0, sends: 0 } as CursorTestTransport & { creates: number; resumes: number; gets: number; sends: number; lastCreate?: any };
   const agentUrl = Object.prototype.hasOwnProperty.call(options, "url") ? options.url : `https://cursor.com/agents/${agentId}`;
-  const makeAgent = () => ({ agentId, model: { id: options.resolvedModel || "cursor-grok-4.6-high" }, send: async () => ({ id: runId, agentId, model: { id: options.resolvedModel || "cursor-grok-4.6-high" }, wait: async () => options.wait ? await options.wait() : { status: "finished", result: { stage: "fixture" }, model: { id: options.resolvedModel || "cursor-grok-4.6-high" } } }) } as any);
-  value.create = async (createOptions) => { value.creates += 1; value.lastCreate = createOptions; if (options.delay) await new Promise((resolve) => setTimeout(resolve, options.delay)); return { agent: makeAgent() as any, run: await (makeAgent() as any).send("fixture") }; };
+  const makeRun = () => ({ id: runId, agentId, model: { id: options.resolvedModel || "cursor-grok-4.6-high" }, wait: async () => options.wait ? await options.wait() : { status: "finished", result: { stage: "fixture", ...(options.fast === undefined ? {} : { fast: options.fast }) }, model: { id: options.resolvedModel || "cursor-grok-4.6-high" } } } as any);
+  const makeAgent = () => ({ agentId, model: { id: options.resolvedModel || "cursor-grok-4.6-high" }, send: async () => { value.sends += 1; return makeRun(); } } as any);
+  value.create = async (createOptions) => { value.creates += 1; value.lastCreate = createOptions; if (options.delay) await new Promise((resolve) => setTimeout(resolve, options.delay)); const agent = makeAgent(); return { agent: agent as any, run: await agent.send("fixture") }; };
   value.resume = async () => { value.resumes += 1; return makeAgent() as any; };
   value.getAgent = async (id) => { value.gets += 1; return agentUrl === undefined ? { id } as any : { id, url: agentUrl }; };
+  value.getRun = async () => makeRun();
   return value;
 }
 
@@ -68,6 +71,14 @@ test("resolved model must be official run attestation, not requested-model fallb
   await assert.rejects(() => executor.dispatch("writer1", { fixture: true }, "prompt", "run-model"), /resolved model/);
 });
 
+test("official fast=true fails; absent fast is accepted only through the bound request", async () => {
+  const bad = createCursorWriterExecutorForTest({ transport: transport({ fast: true }), receiptStore: createMemoryCursorReceiptStore(), env });
+  await assert.rejects(() => bad.dispatch("writer1", { fast: true }, "prompt", "run-fast-true"), /fast/);
+  const good = createCursorWriterExecutorForTest({ transport: transport(), receiptStore: createMemoryCursorReceiptStore(), env });
+  const result = await good.dispatch("writer1", { fast: false }, "prompt", "run-fast-absent");
+  assert.equal(result.receipt.attestationSource, "bound-create-request"); assert.equal(result.receipt.apiVersion, "cloud-agent-api-v1");
+});
+
 test("all three writer receipts carry every required field and output binding", async () => {
   const store = createMemoryCursorReceiptStore(); const executor = createCursorWriterExecutorForTest({ transport: transport(), receiptStore: store, env });
   for (const stage of ["writer1", "writer2", "writer3"] as const) {
@@ -75,7 +86,7 @@ test("all three writer receipts carry every required field and output binding", 
     assert.equal(result.receipt.provider, "cursor-sdk"); assert.equal(result.receipt.fast, false); assert.equal(result.receipt.jobId, runId); assert.equal(result.receipt.agentId, agentId);
   }
   const base = [...store.records.values()][0] as CursorWriterReceipt;
-  for (const field of ["stage", "provider", "requestedModel", "resolvedModel", "fast", "jobId", "agentId", "threadUrl", "inputDigest", "promptDigest", "outputDigest", "completedAt", "status", "output"] as const) {
+  for (const field of ["stage", "provider", "requestedModel", "resolvedModel", "fast", "jobId", "agentId", "threadUrl", "inputDigest", "promptDigest", "outputDigest", "completedAt", "status", "output", "requestDigest", "createRequest", "attestationSource", "apiVersion"] as const) {
     const mutated = { ...base, [field]: field === "fast" ? true : field === "output" ? { forged: true } : field === "completedAt" ? "not-a-date" : "mutated" };
     assert.throws(() => validateCursorWriterReceipt(mutated), /Cursor|Receipt|receipt/);
   }
@@ -83,8 +94,11 @@ test("all three writer receipts carry every required field and output binding", 
 
 test("concurrent identical dispatches create at most one cloud job", async () => {
   const store = createMemoryCursorReceiptStore(); const sdk = transport({ delay: 20 }); const executor = createCursorWriterExecutorForTest({ transport: sdk, receiptStore: store, env });
-  const results = await Promise.all([executor.dispatch("writer2", { same: true }, "same prompt", "run-concurrent"), executor.dispatch("writer2", { same: true }, "same prompt", "run-concurrent")]);
-  assert.equal(sdk.creates, 1); assert.equal(results[0].receipt.outputDigest, results[1].receipt.outputDigest);
+  const first = executor.dispatch("writer2", { same: true }, "same prompt", "run-concurrent");
+  const second = assert.rejects(() => executor.dispatch("writer2", { same: true }, "same prompt", "run-concurrent"), (error: unknown) => error instanceof CursorWriterExecutionError && error.code === "CURSOR_DISPATCH_IN_PROGRESS");
+  const result = await first; await second;
+  assert.equal(sdk.creates, 1); assert.equal(sdk.sends, 1); // create owns the single prompt send at the official transport seam.
+  assert.equal(result.receipt.outputDigest, result.receipt.outputDigest);
 });
 
 test("durable JSON receipt store persists the atomic claim before dispatch", async () => {
@@ -98,12 +112,28 @@ test("durable JSON receipt store persists the atomic claim before dispatch", asy
 test("interrupted work reattaches by persisted claim/agent identity without duplicate create", async () => {
   const store = createMemoryCursorReceiptStore(); const firstTransport = transport({ wait: async () => { throw new Error("interrupted"); } });
   const first = createCursorWriterExecutorForTest({ transport: firstTransport, receiptStore: store, env }); await assert.rejects(() => first.dispatch("writer2", { stable: true }, "stable prompt", "run-resume")); assert.equal(firstTransport.creates, 1);
+  const interruptedClaim = store.claims.values().next().value as CursorDispatchClaim; interruptedClaim.leaseUntil = new Date(0).toISOString(); store.claims.set(interruptedClaim.key, interruptedClaim);
   const secondTransport = transport(); const second = createCursorWriterExecutorForTest({ transport: secondTransport, receiptStore: store, env });
-  const result = await second.dispatch("writer2", { stable: true }, "stable prompt", "run-resume"); assert.equal(secondTransport.creates, 0); assert.equal(secondTransport.resumes, 1); assert.equal(result.receipt.status, "complete");
+  const result = await second.dispatch("writer2", { stable: true }, "stable prompt", "run-resume"); assert.equal(secondTransport.creates, 0); assert.equal(secondTransport.resumes, 1); assert.equal(secondTransport.sends, 0); assert.equal(result.receipt.status, "complete");
 });
 
 test("missing or minimal forged production receipts fail state validation", () => {
   const state = createInitialState({ handoff: garageDoor360FourPageHandoff as any }); state.executionMode = "cursor-production"; state.stages[STAGES.WRITER_1] = { status: "complete" }; assert.throws(() => validateState(state), /Cursor receipt/);
+});
+
+test("production state recomputes stage projection and binds receipt to the completed claim", async () => {
+  const state = createInitialState({ handoff: garageDoor360FourPageHandoff as any }); state.executionMode = "cursor-production";
+  const executor = createCursorWriterExecutorForTest({ transport: transport(), receiptStore: createMemoryCursorReceiptStore(), env });
+  const dispatched = await executor.dispatch("writer1", { bound: true }, stagePrompt("writer1"), state.runId);
+  const receipt = dispatched.receipt; const claim = dispatched.claim!;
+  state.writerReceipts.writer1 = receipt as any; state.writerClaims.writer1 = claim as any;
+  state.writerBindings.writer1 = { stage: "writer1", stageProjectionDigest: digestOf(stageInputProjection(state, "writer1")), receiptDigest: digestOf(receipt), inputDigest: receipt.inputDigest, promptDigest: receipt.promptDigest, outputDigest: receipt.outputDigest, agentId: receipt.agentId, jobId: receipt.jobId, threadUrl: receipt.threadUrl, claimKey: claim.key, ownerToken: claim.ownerToken };
+  state.stages[STAGES.WRITER_1] = { status: "complete" };
+  assert.doesNotThrow(() => validateState(state));
+  const forged = structuredClone(state); forged.writerBindings.writer1!.stageProjectionDigest = digestOf({ forged: true });
+  assert.throws(() => validateState(forged), /projection binding/);
+  const outputTampered = structuredClone(state); outputTampered.writerReceipts.writer1!.output = { forged: true };
+  assert.throws(() => validateState(outputTampered), /output|tampered/iu);
 });
 
 test("the real 360 fixture is accepted by the production adapter seam without live dispatch", async () => {

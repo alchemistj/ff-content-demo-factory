@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import { garageDoor360FourPageHandoff } from "../../../fixtures/360-garage-door-four-page.js";
-import { computeHandoffDigests, expansionOverrideDigest, parseApprovedProspectHandoff, validateApprovedProspectHandoff } from "../index.js";
+import { buildIntentLedger, computeHandoffDigests, expansionOverrideDigest, parseApprovedProspectHandoff, validateApprovedProspectHandoff } from "../index.js";
 import { contextFor } from "../../pipeline/orchestrator.js";
 import { createInitialState, handoffFingerprint, validateState } from "../../pipeline/state.js";
 import { renderHumanGate2 } from "../../render/human-gate-2.js";
@@ -42,6 +42,9 @@ test("generic service slots and alias collisions are rejected", () => {
   const collision = clone(garageDoor360FourPageHandoff);
   collision.serviceComparison[1]!.aliases = [collision.serviceComparison[0]!.aliases?.[0] || "repair"];
   assert.ok(codes(collision).includes("ALIAS_COLLISION"));
+  const crossFamily = clone(garageDoor360FourPageHandoff);
+  crossFamily.serviceComparison[1]!.aliases = [crossFamily.serviceComparison[0]!.name];
+  assert.ok(codes(crossFamily).includes("ALIAS_COLLISION"));
 });
 
 test("reserved routes and rejected page routes cannot enter navigation or service comparison", () => {
@@ -74,7 +77,11 @@ test("persisted state fingerprints the complete handoff", () => {
 
 test("Human Gate 2 rejects review-analysis leakage into public routes", () => {
   const site = { pages: [{ url: "/", pageType: "homepage", h1: "Home", reviewAnalysisFacts: { retrievedWrittenReviewCount: 47 } }], header: {}, footer: {}, strategyOverview: { pageType: "strategy-overview", body: "internal" } };
-  assert.throws(() => renderHumanGate2({ websiteWords: site, reviewAnalysisFacts: garageDoor360FourPageHandoff.reviewAnalysisFacts }), /leaked/);
+  assert.throws(() => renderHumanGate2({ websiteWords: site, reviewAnalysisFacts: garageDoor360FourPageHandoff.reviewAnalysisFacts, rejectedIntentLedger: buildIntentLedger(garageDoor360FourPageHandoff.serviceComparison) }), /leaked/);
+});
+
+test("Human Gate 2 cannot be called without the rejected/folded intent ledger", () => {
+  assert.throws(() => renderHumanGate2({ websiteWords: { pages: [{ url: "/" }] } }), /intent ledger/);
 });
 
 
@@ -98,6 +105,13 @@ test("approval digest and source manifest identity are independently sealed", ()
   resealed.sourceCheckpoint.archiveDigest = computeHandoffDigests(resealed).sourceCheckpointDigest;
   resealed.digests = computeHandoffDigests(resealed);
   assert.ok(codes(resealed).includes("SOURCE_CHECKPOINT_INVALID"));
+  const unknown = clone(garageDoor360FourPageHandoff);
+  unknown.sourceCheckpoint.artifactId = "copied-artifact";
+  unknown.sourceCheckpoint.manifest = [{ path: "checkpoint.json", digest: "sha256:" + "1".repeat(64) }];
+  unknown.sourceCheckpoint.manifestDigest = computeHandoffDigests(unknown).sourceCheckpointDigest;
+  unknown.sourceCheckpoint.archiveDigest = computeHandoffDigests(unknown).sourceCheckpointDigest;
+  unknown.digests = computeHandoffDigests(unknown);
+  assert.ok(validateApprovedProspectHandoff(unknown, { requireTrustedSource: true }).some((issue) => issue.code === "SOURCE_CHECKPOINT_INVALID"));
 });
 
 test("self-resealed handoff state fails the immutable entry seals", () => {
@@ -138,6 +152,26 @@ test("forged evidence counts and copied expansion approvals fail closed", () => 
   copied.expansionOverride.digest = expansionOverrideDigest(copied.expansionOverride);
   copied.digests = computeHandoffDigests(copied);
   assert.ok(codes(copied).includes("APPROVAL_REQUIRED"));
+});
+
+test("excluded or zero-direct comparison entries cannot manufacture service gaps", () => {
+  const excluded = clone(garageDoor360FourPageHandoff);
+  (excluded.serviceComparison as any[]).push({ id: "garage-door-annual-inspection", name: "Garage door annual inspection", status: "excluded", evidenceCount: 99, directEvidenceCount: 0, evidence: [] });
+  excluded.digests = computeHandoffDigests(excluded);
+  assert.deepEqual(validateApprovedProspectHandoff(excluded), []);
+  const zero = clone(garageDoor360FourPageHandoff);
+  (zero.serviceComparison as any[]).push({ id: "garage-door-seasonal-check", name: "Garage door seasonal check", status: "passed_over", foldInto: "service-360-repair", evidenceCount: 2, directEvidenceCount: 0, evidence: [] });
+  zero.digests = computeHandoffDigests(zero);
+  assert.deepEqual(validateApprovedProspectHandoff(zero), []);
+});
+
+test("Gate 2 scans rejected service prose, metadata, navigation, and CTAs recursively", () => {
+  const ledger = buildIntentLedger(garageDoor360FourPageHandoff.serviceComparison);
+  for (const site of [
+    { pages: [{ url: "/", metaDescription: "Garage door spring repair is a standalone page." }] },
+    { pages: [{ url: "/", ctas: [{ label: "Garage door opener installation", href: "/contact" }] }] },
+    { pages: [{ url: "/" }], header: { navigation: [{ label: "Garage door spring repair", href: "/" }] } },
+  ]) assert.throws(() => renderHumanGate2({ websiteWords: site, rejectedIntentLedger: ledger }), /rejected|folded|leaked/iu);
 });
 
 test("malformed nested handoffs produce ContractValidationError issues, never dereference errors", () => {

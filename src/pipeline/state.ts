@@ -21,6 +21,8 @@ export interface PipelineState {
   reviewDecisions: JsonObject[]; events: JsonObject[]; runId: string;
   executionMode: 'test' | 'cursor-production';
   writerReceipts: Record<string, JsonObject>;
+  writerClaims: Record<string, JsonObject>;
+  writerBindings: Record<string, JsonObject>;
   /** Immutable seals captured when the handoff entered the Words Factory. */
   handoffSeals: JsonObject;
 }
@@ -54,8 +56,19 @@ export function createInitialState(input: {
     reviewInventoryFingerprint: reviewFingerprint(inventory), outputs: {},
     stages: { [STAGES.WRITER_1]: { status: 'pending' }, [STAGES.QA_1]: { status: 'pending' }, [STAGES.WRITER_2]: { status: 'pending' }, [STAGES.QA_2]: { status: 'pending' }, [STAGES.WRITER_3]: { status: 'pending' }, [STAGES.QA_3]: { status: 'pending' }, [STAGES.WHOLE_SITE_QA]: { status: 'pending' } },
     reviewDecisions: [], events: [], executionMode: input.executionMode || 'test', writerReceipts: {},
-    handoffSeals: clone((handoff as any).digests || {}),
+    handoffSeals: clone((handoff as any).digests || {}), writerClaims: {}, writerBindings: {},
   };
+}
+export function stagePrompt(stage: string): string { return `Words Factory ${stage} execution for approved handoff`; }
+export function stageInputProjection(state: PipelineState, stage: string): JsonObject {
+  const destinations = (state.handoff?.prospect?.destinations || {}) as JsonObject;
+  const comparison = Array.isArray(state.handoff?.serviceComparison) ? state.handoff.serviceComparison : [];
+  const approved = comparison.filter((entry: any) => entry?.status === 'prescribed');
+  const base = { stage, runId: state.runId, handoffFingerprint: state.handoffFingerprint, reviewInventoryFingerprint: state.reviewInventoryFingerprint };
+  if (stage === STAGES.WRITER_1) return { ...base, destinations: { servicePages: destinations.servicePages }, approvedServiceComparison: approved.map((entry: any) => ({ id: entry.id, name: entry.name, evidence: entry.evidence, directEvidenceCount: entry.directEvidenceCount })) };
+  if (stage === STAGES.WRITER_2) return { ...base, destinations: { homepage: destinations.homepage, contact: destinations.contact, header: destinations.header, footer: destinations.footer } };
+  if (stage === STAGES.WRITER_3) return { ...base, destinations: { strategy: destinations.strategy }, approvedServiceComparison: approved, sealedReviewAnalysisFacts: state.handoff?.reviewAnalysisFacts, finishedServicePageIds: Object.keys(state.outputs?.servicePages || {}) };
+  return base;
 }
 export function validateState(state: PipelineState): PipelineState {
   if (!state || typeof state !== 'object') throw new TypeError('Persisted pipeline state must be an object');
@@ -77,12 +90,21 @@ export function validateState(state: PipelineState): PipelineState {
   }
   if (state.executionMode !== 'test' && state.executionMode !== 'cursor-production') throw new Error('Persisted state execution mode is invalid');
   if (!state.writerReceipts || typeof state.writerReceipts !== 'object') throw new Error('Persisted state has no writer receipt registry');
+  if (!state.writerClaims || typeof state.writerClaims !== 'object' || !state.writerBindings || typeof state.writerBindings !== 'object') throw new Error('Persisted state has no writer claim/binding registry');
   if (state.executionMode === 'cursor-production') {
     for (const stage of [STAGES.WRITER_1, STAGES.WRITER_2, STAGES.WRITER_3]) {
       const stageState = state.stages?.[stage];
       if (stageState?.status === 'complete') {
         const receipt = state.writerReceipts[stage];
         try { validateCursorWriterReceipt(receipt); } catch (error) { throw new Error(`Persisted ${stage} completion has no valid Cursor receipt: ${error instanceof Error ? error.message : String(error)}`); }
+        const binding = state.writerBindings[stage]; const claim = state.writerClaims[stage];
+        if (!binding || !claim) throw new Error(`Persisted ${stage} completion has no bound Cursor claim/receipt record`);
+        const expectedProjectionDigest = digestOf(stageInputProjection(state, stage));
+        if (binding.stageProjectionDigest !== expectedProjectionDigest) throw new Error(`Persisted ${stage} stage input projection binding does not match current state`);
+        if (binding.receiptDigest !== digestOf(receipt) || binding.inputDigest !== receipt.inputDigest || binding.promptDigest !== receipt.promptDigest || binding.outputDigest !== receipt.outputDigest) throw new Error(`Persisted ${stage} receipt binding does not match its persisted output/input digests`);
+        if (binding.promptDigest !== digestOf(stagePrompt(stage))) throw new Error(`Persisted ${stage} prompt binding does not match the canonical stage prompt`);
+        if (claim.key !== `${state.runId}:${stage}:${receipt.inputDigest}:${receipt.promptDigest}` || claim.stage !== stage || claim.runId !== state.runId || claim.inputDigest !== receipt.inputDigest || claim.promptDigest !== receipt.promptDigest || claim.agentId !== receipt.agentId || claim.jobId !== receipt.jobId || claim.phase !== 'completed') throw new Error(`Persisted ${stage} claim is not bound to its Cursor receipt`);
+        if (binding.agentId !== receipt.agentId || binding.jobId !== receipt.jobId || binding.threadUrl !== receipt.threadUrl || binding.claimKey !== claim.key || binding.ownerToken !== claim.ownerToken) throw new Error(`Persisted ${stage} agent/run/thread binding does not match its claim and receipt`);
       }
     }
   }
