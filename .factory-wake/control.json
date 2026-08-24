@@ -1,7 +1,7 @@
 {
-  "wakeId": "360-review-json-repair-resume-2026-08-24-02",
-  "mode": "selection",
-  "restoreFromRunId": "32680010246",
-  "restoreFromSourceSha": "b9250b26ef4373b4f4139c64de8fbb463214f7ff",
+  "wakeId": "360-prescription-correction-2026-08-24-03",
+  "mode": "qa",
+  "restoreFromRunId": "32690810815",
+  "restoreFromSourceSha": "77afa025822856c8adae0b4020e98b6582d0bc3a",
   "requestedBy": "architect"
 }

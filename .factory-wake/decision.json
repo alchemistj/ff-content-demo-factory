@@ -1,10 +1,236 @@
 {
-  "selection": {
-    "qualifiedPlaceIds": [
-      "ChIJHa32AOi84YMR38BV93YKiS8"
-    ],
-    "selectedPlaceId": "ChIJHa32AOi84YMR38BV93YKiS8",
-    "reason": "Fresh Stage 1 evidence confirms a stable non-duplicate garage-door business with a live owned website and a material content opportunity: the site has only three intended marketing pages, no dedicated repair, opener, or new-door pages, extremely thin service copy, and public default WordPress content.",
-    "backlogReason": "No qualified overflow candidates are present in this one-record canary bench."
+  "schemaVersion": "architect-decision-v1",
+  "sourceCheckpoint": {
+    "runId": "32690810815",
+    "artifactId": "9513106051",
+    "archiveSha256": "792cb18a93492657c519671be6990e9d45e9d3b5f5f979aa45fd40e1b729f6d3",
+    "sourceSha": "77afa025822856c8adae0b4020e98b6582d0bc3a"
+  },
+  "architectReview": {
+    "decision": "correct-before-qa",
+    "reason": "The proposed taxonomy and evidence clusters are supported, but two first-review recommendations used folded sibling service IDs that fail the exact page-service contract. Replace only those recommendations, align strongestEvidence to the exact-service review, and remove the Markdown table delimiter from the Home title direction. No paid evidence work may repeat.",
+    "evidenceBindings": [
+      {
+        "page": "/garage-door-spring-repair",
+        "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25wemJWQkhVa3RWWTJKeVdYaFdlbFJOWlVGeFQxRRAB",
+        "service": "garage-door-spring-repair"
+      },
+      {
+        "page": "/garage-door-opener-installation",
+        "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUR3OW82cFpBEAE",
+        "service": "garage-door-opener-installation"
+      }
+    ]
+  },
+  "qa": {
+    "passed": false,
+    "whyBuilt": {
+      "text": "360 Garage Door and More’s owned site compresses repairs, new doors, springs, and openers into one repeated service line and a photo gallery, with no differentiated service URLs. Exact-listing enrichment returned 47 written reviews, including direct completed work for Chris Keaton’s sagging-door repair, Marcie Spitzer’s new-door installation, Gen Taylor’s spring repair, and John Oliver’s opener installation. These pages separate the four evidenced search intents while keeping anecdotal speed, holiday contact, and service-overlap claims bounded.",
+      "refs": [
+        {
+          "type": "opportunity",
+          "ref": "Owned WordPress site has a real brand logo, a Springfield service-area map graphic, job photos, and a contact form, but almost no service-page copy. Garage door repair is mentioned only as part of one combined line (Service, Repairs, Openers & New Doors) on Home/Services/Contact. No street address, email, or hours are published. Default WordPress sample content is still live. Strongest owned visual assets are the 360 logo, a homepage service-radius map screenshot, branded-uniform photography, and a large installation-photo gallery."
+        },
+        {
+          "type": "graphic",
+          "ref": "owned-job-gallery"
+        },
+        {
+          "type": "review",
+          "ref": "Ci9DQUlRQUNvZENodHljRjlvT201TVdWZGZSak00ZUhSQ2VVdHNYMWxFYTBFdE9XYxAB"
+        },
+        {
+          "type": "review",
+          "ref": "Ci9DQUlRQUNvZENodHljRjlvT25jM2NVNTZlVzF0YVhCNVdXSlVZVEpmYW05UExYYxAB"
+        },
+        {
+          "type": "review",
+          "ref": "Ci9DQUlRQUNvZENodHljRjlvT25wemJWQkhVa3RWWTJKeVdYaFdlbFJOWlVGeFQxRRAB"
+        },
+        {
+          "type": "review",
+          "ref": "ChZDSUhNMG9nS0VJQ0FnTUR3OW82cFpBEAE"
+        }
+      ]
+    },
+    "corrections": {
+      "pages": [
+        {
+          "type": "Home",
+          "service": "home",
+          "url": "/",
+          "primaryKeyword": "garage door company Springfield MO",
+          "titleDirection": "360 Garage Door and More — Springfield, MO Garage Door Work",
+          "h1Direction": "Springfield garage door work backed by completed jobs",
+          "angle": "Lead with the husband-and-wife local shop and the completed door, spring, opener, and repair jobs already in writing. Point to distinct service pages instead of repeating a gallery.",
+          "whyIncluded": "Required entry page. The owned site currently uses Home plus an undifferentiated /services gallery, which buries distinct repair, installation, spring, and opener proof.",
+          "overlapBoundaries": "Do not turn Home into a repair, installation, spring, or opener page. Keep problem-specific jobs, parts, and first reviews on those URLs. Do not use Home to promise weekends, holidays, same-day arrival, or 24/7 coverage.",
+          "claims": [
+            "Written reviews document completed Springfield-area garage door repairs, new-door installations, spring work, and opener replacements.",
+            "Named technicians Will and Jenny appear across completed-job reviews for on-site work and scheduling contact."
+          ],
+          "traps": [
+            "Do not convert anecdotal same-day, next-day, within-an-hour, 30-minute, or Monday-morning arrival stories into a same-day, one-hour, or response-time SLA.",
+            "Listing hours in discovery are Monday–Friday 8 AM to 5 PM, Saturday and Sunday Closed. Do not claim 24/7, weekend on-site, or holiday dispatch.",
+            "Easter messenger reply and one holiday-visit mention are contact or anecdotal availability only, not on-site holiday work and not a holiday SLA.",
+            "Do not treat a 5-star sample or 'perfect review' praise as a guaranteed rating.",
+            "Do not treat 'lighting quick' as lighting or electrical work."
+          ],
+          "strongestEvidence": "Ci9DQUlRQUNvZENodHljRjlvT2xWdlZGQk9hMjFOUlhaVk5rczFVR2RKTlVKWlVGRRAB",
+          "recommendedFirstReview": {
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xWdlZGQk9hMjFOUlhaVk5rczFVR2RKTlVKWlVGRRAB",
+            "reviewer": "Cameron Spitzer",
+            "rating": 5,
+            "date": "2026-08-18",
+            "exactText": "They replaced my doors and openers with quality materials at a lower cost than the competitors.",
+            "why": "Direct completed replacement of garage doors and openers, with a later follow-up check that must not be turned into a callback-window or warranty SLA."
+          }
+        },
+        {
+          "type": "Service",
+          "service": "garage-door-repair",
+          "url": "/garage-door-repair",
+          "proposedSlug": "garage-door-repair",
+          "primaryKeyword": "garage door repair Springfield MO",
+          "titleDirection": "Garage Door Repair in Springfield, MO",
+          "h1Direction": "Garage door repair for doors that sag, stick, or will not open",
+          "angle": "Evidence-led repair page for failed, sagging, off-track, or inconsistent doors, including diagnostics and on-truck parts when reviewers describe them. Springs, new doors, and openers belong on their own URLs.",
+          "whyIncluded": "Largest authoritative cluster: 17 written reviews with direct completed garage-door-repair work, including named on-site jobs by Will.",
+          "overlapBoundaries": "Do not duplicate new-door installation, opener installation/replacement, or dedicated spring-replacement stories as the primary repair narrative. Fold wiring, weather seal, lubrication, adjustment, outdoor-pad, diagnostics, and routine maintenance into this page as related repair work. Do not use this URL for 'Design Your Door' or new-door selection.",
+          "claims": [
+            "Authoritative reviews document completed garage door repairs, including sagging doors, doors that would not open, and repairs that restored consistent open-and-close.",
+            "Reviewers describe on-site diagnosis, options without pressure, and repairs completed during the visit when parts were on hand."
+          ],
+          "traps": [
+            "Do not convert 'got my door fixed,' 'same day service,' 'showed up fast,' 'scheduled me in right away,' or a Sunday-text/Monday-10 a.m. visit into a same-day, next-day, one-hour, or response-time guarantee.",
+            "Kathy Davis's 10:00–11:30 on-site window is anecdotal job duration, not a repair-time SLA.",
+            "Steve Brooks's issues a year after prior fixes are follow-up care, not a one-year warranty.",
+            "Arnold Shreffler's weekend message and Monday appointment are elapsed time for that spring-related repair, not weekend availability.",
+            "Do not treat generic 'garage door service/repair' praise without a named completed job as additional repair anchors."
+          ],
+          "strongestEvidence": "Ci9DQUlRQUNvZENodHljRjlvT201TVdWZGZSak00ZUhSQ2VVdHNYMWxFYTBFdE9XYxAB",
+          "recommendedFirstReview": {
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT201TVdWZGZSak00ZUhSQ2VVdHNYMWxFYTBFdE9XYxAB",
+            "reviewer": "Chris Keaton",
+            "rating": 5,
+            "date": "2025-12-31",
+            "exactText": "Will did a fantastic job on our old huge garage door that was sagging from age",
+            "why": "Direct completed sagging-door repair by named technician Will, with estimate and completed work; the review's 'repair or replacement' recommendation must not be treated as a replacement on this job."
+          }
+        },
+        {
+          "type": "Service",
+          "service": "garage-door-installation",
+          "url": "/garage-door-installation",
+          "proposedSlug": "garage-door-installation",
+          "primaryKeyword": "garage door installation Springfield MO",
+          "titleDirection": "Garage Door Installation in Springfield, MO",
+          "h1Direction": "New garage doors installed for the opening you have",
+          "angle": "Considered-purchase page for new and replacement doors: selection help, custom heights, paint-ready trim, and completed installs. Not a repair-troubleshooting page.",
+          "whyIncluded": "Five authoritative installation anchors plus one door-replacement review. Current /services gallery does not isolate new-door jobs.",
+          "overlapBoundaries": "Do not use this page for broken-spring, opener-only, keypad, remote, or general repair jobs. Door replacement (Cameron Spitzer) belongs here, not on the repair URL. Scott Heffern's 7 ft to 9 ft 6 in swap is installation of a taller door, not framing/carpentry by this company. Leave opener motors to the opener page even when installed in the same project.",
+          "claims": [
+            "Written reviews document completed new garage door installations, including multi-door installs and a taller door fitted to a reframed opening.",
+            "Reviewers describe help choosing a door, paint-ready trim left loose, and on-site cleanup after installation."
+          ],
+          "traps": [
+            "Do not convert 'lighting quick installation' or 'installed in a few hours' into a lightning-fast, same-day, or hours-to-complete SLA. 'Lighting quick' is speed slang, not lighting service.",
+            "Gregory Ritchie's Easter messenger reply is holiday contact, not Easter on-site installation; next-day arrival and Thursday finish are one job's timeline, not a next-day or same-week SLA.",
+            "A relative 'on the schedule' for a future door is not completed work.",
+            "Do not treat unspecified 'happy with my door' praise as an installation anchor."
+          ],
+          "strongestEvidence": "Ci9DQUlRQUNvZENodHljRjlvT25jM2NVNTZlVzF0YVhCNVdXSlVZVEpmYW05UExYYxAB",
+          "recommendedFirstReview": {
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25jM2NVNTZlVzF0YVhCNVdXSlVZVEpmYW05UExYYxAB",
+            "reviewer": "Marcie Spitzer",
+            "rating": 5,
+            "date": "2026-05-29",
+            "exactText": "We got our new garage doors installed yesterday and they look amazing!",
+            "why": "Direct completed new garage door installation with on-site workmanship notes."
+          }
+        },
+        {
+          "type": "Service",
+          "service": "garage-door-spring-repair",
+          "url": "/garage-door-spring-repair",
+          "proposedSlug": "garage-door-spring-repair",
+          "primaryKeyword": "garage door spring repair Springfield MO",
+          "titleDirection": "Garage Door Spring Repair in Springfield, MO",
+          "h1Direction": "Broken and worn garage door springs replaced to fit the door",
+          "angle": "High-intent broken-spring page: torsion/extension/return springs, sizing after weighing the door, and restored lift. Keep general door repair and opener motors elsewhere.",
+          "whyIncluded": "Six direct spring jobs (one spring-repair plus five spring-replacement anchors), distinct from generic repair. This is the buried high-intent problem the current site does not isolate.",
+          "overlapBoundaries": "Primary evidence is named spring repair/replacement. Do not pull every 'door would not open' repair onto this URL. Jon Wersinger's two-spring job was judged as garage-door-repair; cite it only as related, not as a spring-slug anchor. Arnold Shreffler's 'return spring' job was judged as garage-door-repair; same rule. Do not present opener installation as spring work. Prior springs installed by another company are not 360 installation proof.",
+          "claims": [
+            "Authoritative reviews document completed garage door spring repair and replacement, including broken springs and springs resized after the door was weighed.",
+            "Reviewers name Will on completed spring jobs and describe the door working better after replacement."
+          ],
+          "traps": [
+            "Do not convert 'repaired within a day,' 'within an hour of my call,' 'Speedy Same Day Service,' or 'done within 30 Minutes' into a same-day, one-hour, 30-minute, or response-time SLA.",
+            "Shanna McMaster's 'opener springs' wording is spring replacement, not an opener-installation claim.",
+            "Ryan Rommel's prior five-year install was by a different company; do not credit 360 for that installation.",
+            "Homeowner-maintenance discussion (Jon Wersinger) is education, not completed maintenance service."
+          ],
+          "strongestEvidence": "Ci9DQUlRQUNvZENodHljRjlvT25wemJWQkhVa3RWWTJKeVdYaFdlbFJOWlVGeFQxRRAB",
+          "recommendedFirstReview": {
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25wemJWQkhVa3RWWTJKeVdYaFdlbFJOWlVGeFQxRRAB",
+            "reviewer": "Gen Taylor",
+            "rating": 5,
+            "date": "2026-08-19T22:07:53.063Z",
+            "exactText": "We had such a great experience with 360 Garage Door and More. Jenny answered the phone and was incredibly friendly, kind, and helpful. They were able to get us scheduled very quickly, which we really appreciated.\n\nWill came out to repair our garage door spring and install a new keypad. He was quick, friendly, professional, and did a great job. The whole process was easy, fast, and very affordable.\n\nWe are extremely happy with the service we received and would absolutely recommend 360 Garage Door and More to anyone needing garage door repair or service.",
+            "why": "Direct completed garage door spring repair and keypad installation; anecdotal scheduling speed remains excluded from claims."
+          }
+        },
+        {
+          "type": "Service",
+          "service": "garage-door-opener-installation",
+          "url": "/garage-door-opener-installation",
+          "proposedSlug": "garage-door-opener-installation",
+          "primaryKeyword": "garage door opener installation Springfield MO",
+          "titleDirection": "Garage Door Opener Installation in Springfield, MO",
+          "h1Direction": "Quiet garage door openers installed and replaced",
+          "angle": "Opener-only page for new motors, chain-to-belt or chain-to-quiet upgrades, remotes, keypads, and app setup. Door panels and springs stay on their pages.",
+          "whyIncluded": "Five unique direct opener jobs across installation, replacement, and 'two openers put in,' plus keypad and remote/app supporting work that is too thin for standalone URLs.",
+          "overlapBoundaries": "Do not recast full door installation or spring replacement as opener work. Cameron Spitzer's combined doors-and-openers job may be cited here for the opener half only; the door half belongs on installation. Dave Puckett's coil/spring and track-and-roller work belongs on spring and repair pages. App setup and keypad programming fold here, not onto Home.",
+          "claims": [
+            "Written reviews document completed garage door opener installations and replacements, including quiet/belt-driven units and phone-app or in-car operation after the swap.",
+            "Reviewers also document keypad installation and remote programming completed on site."
+          ],
+          "traps": [
+            "Do not convert 'installed quickly,' 'showed up the same day,' or 'put in today' into a same-day opener SLA.",
+            "A couple-months-later follow-up check is not a warranty window or callback SLA.",
+            "Matthew Baker's app setup is supporting customer-service help, not a standalone completed opener install.",
+            "Do not treat 'garage door opener springs' reviews as opener-motor proof; those are spring jobs."
+          ],
+          "strongestEvidence": "ChZDSUhNMG9nS0VJQ0FnTUR3OW82cFpBEAE",
+          "recommendedFirstReview": {
+            "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUR3OW82cFpBEAE",
+            "reviewer": "John Oliver",
+            "rating": 5,
+            "date": "2025-03-25T20:55:35.196Z",
+            "exactText": "Cant say enough good things about these folks. Communication is top notch, garage door opener was installed quickly and perfectly. If you have any garage door needs, the buck stops here!",
+            "why": "Direct completed garage door opener installation; anecdotal installation speed remains excluded from claims."
+          }
+        },
+        {
+          "type": "Contact",
+          "service": "contact",
+          "url": "/contact",
+          "primaryKeyword": "contact 360 Garage Door Springfield",
+          "titleDirection": "Contact 360 Garage Door and More",
+          "h1Direction": "Talk with 360 Garage Door and More",
+          "angle": "Give ready prospects a phone and message path. Jenny is repeatedly named as the person who answers; do not turn that into after-hours coverage.",
+          "whyIncluded": "Required conversion page. Owned site already has /contact/; keep it claim-light.",
+          "overlapBoundaries": "No service-specific claims, pricing, or availability promises here. Do not preview repair, installation, spring, or opener proof beyond a link to those pages.",
+          "claims": [],
+          "traps": [
+            "Do not state weekend, holiday, same-day, or one-hour response on Contact. Discovery hours are Monday–Friday 8 AM–5 PM, closed Saturday and Sunday.",
+            "Holiday or Easter replies are anecdotal contact events, not an on-call SLA.",
+            "Do not use Contact to implied-guarantee 'we come when you need help at holiday.'"
+          ],
+          "strongestEvidence": null,
+          "recommendedFirstReview": null
+        }
+      ]
+    }
   }
 }
