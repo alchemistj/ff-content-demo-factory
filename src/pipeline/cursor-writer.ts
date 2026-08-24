@@ -178,7 +178,13 @@ export interface CursorFollowUpReceipt extends CursorWriterReceipt {
   prior: CursorFollowUpBindings;
   followUpPromptDigest: string;
 }
-export interface CursorArtifactBinding { path: "artifacts/writer1-output.json"; size: number; sha256: string; }
+/** Conservative upper bound for the complete two-page Writer1 artifact. */
+export const MAX_WRITER1_ARTIFACT_BYTES = 1024 * 1024;
+export interface CursorArtifactDownloadRequest { agentId: string; logicalPath: "artifacts/writer1-output.json"; cursorEndpoint: string; }
+export interface CursorArtifactBinding {
+  path: "artifacts/writer1-output.json"; size: number; sha256: string; contentSize: number; byteDigest: string;
+  downloadRequest: CursorArtifactDownloadRequest; requestShapeDigest: string; downloadRequestDigest: string; presignedUrlDigest: string;
+}
 export interface CursorArtifactRecoveryPrior {
   actionRunId: string; artifactId: number; runId: string; agentId: string; threadUrl: string;
   inputDigest: string; promptDigest: string; requestDigest: string;
@@ -197,7 +203,7 @@ export interface CursorArtifactRecoveryReceipt extends CursorWriterReceipt {
 export interface CursorArtifactDescriptor { path: string; size: number; sha256?: string; }
 export interface CursorArtifactClient {
   list(agentId: string, apiKey: string): Promise<CursorArtifactDescriptor[]>;
-  download(agentId: string, artifactPath: string, apiKey: string): Promise<{ bytes: Buffer; sourceUrl: string }>;
+  download(agentId: string, artifactPath: string, apiKey: string): Promise<{ bytes: Buffer; sourceUrl: string; agentId: string; logicalPath: "artifacts/writer1-output.json"; cursorEndpoint: string; requestShapeDigest: string; downloadRequestDigest: string; presignedUrlDigest: string }>;
 }
 const API_VERSION = "cloud-agent-api-v1" as const;
 function modelOptions(apiKey: string, selection: CursorModelSelection): AgentOptions { return { apiKey, model: { id: selection.officialId, params: selection.params }, cloud: { env: { type: "cloud" } } }; }
@@ -246,8 +252,35 @@ function approvedCursorArtifactUrl(value: string): URL {
   let url: URL; try { url = new URL(value); } catch { throw new CursorWriterExecutionError("CURSOR_ARTIFACT_REDIRECT_INVALID", "Cursor artifact download did not return a valid URL"); }
   const host = url.hostname.toLowerCase();
   const approvedHost = host === "s3.amazonaws.com" || host.endsWith(".s3.amazonaws.com") || /^s3[.-][a-z0-9-]+\.amazonaws\.com$/u.test(host) || /\.s3[.-][a-z0-9-]+\.amazonaws\.com$/u.test(host);
-  if (url.protocol !== "https:" || !approvedHost || !url.searchParams.has("X-Amz-Signature") || !url.searchParams.has("X-Amz-Algorithm")) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_REDIRECT_INVALID", "Cursor artifact download redirected outside the approved S3 presigned URL boundary");
+  const privateHost = host === "localhost" || host === "127.0.0.1" || host === "::1" || /^10\./u.test(host) || /^192\.168\./u.test(host) || /^172\.(?:1[6-9]|2\d|3[0-1])\./u.test(host);
+  if (url.protocol !== "https:" || url.username || url.password || privateHost || !approvedHost || !url.pathname || url.pathname === "/" || url.pathname.includes("..") || url.pathname.length > 2048 || !url.search || !url.searchParams.has("X-Amz-Signature") || !url.searchParams.has("X-Amz-Algorithm")) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_REDIRECT_INVALID", "Cursor artifact download returned an invalid or unsigned S3 presigned URL");
   return url;
+}
+function artifactDownloadEndpoint(agentId: string, artifactPath: string): string {
+  return `${CURSOR_CLOUD_API}/v1/agents/${encodeURIComponent(agentId)}/artifacts/download?path=${encodeURIComponent(artifactPath)}`;
+}
+function artifactRequestShape(agentId: string, artifactPath: "artifacts/writer1-output.json", cursorEndpoint: string): CursorArtifactDownloadRequest {
+  return { agentId, logicalPath: artifactPath, cursorEndpoint };
+}
+function artifactDownloadDigest(request: CursorArtifactDownloadRequest, sourceUrl: string): string {
+  return digestOf({ ...request, presignedUrl: sourceUrl });
+}
+async function readBoundedResponse(response: Response): Promise<Buffer> {
+  const lengthHeader = response.headers.get("content-length");
+  if (lengthHeader !== null) {
+    if (!/^(?:0|[1-9]\d*)$/u.test(lengthHeader.trim()) || Number(lengthHeader) > MAX_WRITER1_ARTIFACT_BYTES) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_TOO_LARGE", `Cursor Writer1 artifact exceeds the ${MAX_WRITER1_ARTIFACT_BYTES}-byte cap`);
+  }
+  if (!response.body) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_DOWNLOAD_FAILED", "Cursor artifact download returned no response body");
+  const reader = response.body.getReader(); const chunks: Buffer[] = []; let total = 0;
+  try {
+    while (true) {
+      const next = await reader.read(); if (next.done) break;
+      const chunk = Buffer.from(next.value); total += chunk.length;
+      if (total > MAX_WRITER1_ARTIFACT_BYTES) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_TOO_LARGE", `Cursor Writer1 artifact exceeds the ${MAX_WRITER1_ARTIFACT_BYTES}-byte cap`);
+      chunks.push(chunk);
+    }
+  } finally { reader.releaseLock(); }
+  return Buffer.concat(chunks, total);
 }
 function normalizeArtifactDescriptors(payload: unknown): CursorArtifactDescriptor[] {
   const record = asRecord(payload); const raw = Array.isArray(payload) ? payload : record && Array.isArray(record.items) ? record.items : record && Array.isArray(record.artifacts) ? record.artifacts : undefined;
@@ -255,6 +288,7 @@ function normalizeArtifactDescriptors(payload: unknown): CursorArtifactDescripto
   return raw.map((entry) => {
     const value = asRecord(entry); const size = value && typeof value.size === "number" ? value.size : value && typeof value.sizeBytes === "number" ? value.sizeBytes : undefined;
     if (!value || typeof value.path !== "string" || !value.path.trim() || typeof size !== "number" || !Number.isSafeInteger(size) || size < 1) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_LIST_INVALID", "Cursor artifact listing contains an invalid path or size");
+    if (size > MAX_WRITER1_ARTIFACT_BYTES) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_TOO_LARGE", `Cursor Writer1 artifact exceeds the ${MAX_WRITER1_ARTIFACT_BYTES}-byte cap`);
     const descriptor: CursorArtifactDescriptor = { path: value.path, size };
     if (typeof value.sha256 === "string") descriptor.sha256 = value.sha256;
     return descriptor;
@@ -269,17 +303,22 @@ export function createCursorArtifactClient(fetchImpl: typeof fetch = fetch): Cur
     },
     async download(agentId, artifactPath, apiKey) {
       if (artifactPath !== "artifacts/writer1-output.json") throw new CursorWriterExecutionError("CURSOR_ARTIFACT_PATH_INVALID", "Only artifacts/writer1-output.json may be recovered for Writer1");
-      const endpoint = `${CURSOR_CLOUD_API}/v1/agents/${encodeURIComponent(agentId)}/artifacts/download?path=${encodeURIComponent(artifactPath)}`;
-      const descriptorResponse = await fetchImpl(endpoint, { headers: cursorAuthHeaders(apiKey), redirect: "manual" });
-      let location: string | null = null;
-      if (descriptorResponse.status >= 200 && descriptorResponse.status < 300) {
-        const payload = asRecord(await descriptorResponse.json()); location = payload && typeof payload.url === "string" ? payload.url : null;
-      } else if (descriptorResponse.status >= 300 && descriptorResponse.status < 400) location = descriptorResponse.headers.get("location");
-      if (!location) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_REDIRECT_INVALID", "Cursor artifact download did not return a presigned URL");
-      const sourceUrl = approvedCursorArtifactUrl(location).toString();
+      const endpoint = artifactDownloadEndpoint(agentId, artifactPath);
+      const descriptorResponse = await fetchImpl(endpoint, { headers: cursorAuthHeaders(apiKey), redirect: "error" });
+      if (!descriptorResponse.ok) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_REDIRECT_INVALID", `Cursor artifact URL request failed with ${descriptorResponse.status}`);
+      const payload = asRecord(await descriptorResponse.json()); const location = payload && typeof payload.url === "string" ? payload.url : null;
+      if (!location) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_REDIRECT_INVALID", "Cursor artifact URL request did not return a presigned URL");
+      // Cursor returns an opaque S3 object URL. The client cannot prove that
+      // the opaque S3 key mirrors the logical artifact path, so it never
+      // invents that equality. Trust is bound to the authenticated Cursor
+      // request, the exact URL Cursor returned, and the downloaded bytes.
+      approvedCursorArtifactUrl(location);
+      const sourceUrl = location;
       const downloadedResponse = await fetchImpl(sourceUrl, { redirect: "error" });
       if (!downloadedResponse.ok) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_DOWNLOAD_FAILED", `Cursor presigned artifact download failed with ${downloadedResponse.status}`);
-      return { bytes: Buffer.from(await downloadedResponse.arrayBuffer()), sourceUrl };
+      const bytes = await readBoundedResponse(downloadedResponse);
+      const request = artifactRequestShape(agentId, artifactPath, endpoint);
+      return { bytes, sourceUrl, agentId, logicalPath: artifactPath, cursorEndpoint: endpoint, requestShapeDigest: digestOf(request), downloadRequestDigest: artifactDownloadDigest(request, sourceUrl), presignedUrlDigest: digestOf(sourceUrl) };
     },
   };
 }
@@ -421,19 +460,26 @@ async function readWriter1Artifact(input: { client: CursorArtifactClient; agentI
   if (matches.length > 1) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_RACE", "Cursor returned multiple artifacts at artifacts/writer1-output.json");
   if (matches.length === 0) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_MISSING", "Cursor agent has no artifacts/writer1-output.json artifact");
   const descriptor = matches[0]; if (!descriptor) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_MISSING", "Cursor agent has no artifacts/writer1-output.json artifact");
+  if (descriptor.size > MAX_WRITER1_ARTIFACT_BYTES) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_TOO_LARGE", `Cursor Writer1 artifact exceeds the ${MAX_WRITER1_ARTIFACT_BYTES}-byte cap`);
   const downloaded = await input.client.download(input.agentId, descriptor.path, input.apiKey);
+  const expectedPath = descriptor.path as "artifacts/writer1-output.json";
+  const expectedEndpoint = artifactDownloadEndpoint(input.agentId, expectedPath);
+  const expectedRequest = artifactRequestShape(input.agentId, expectedPath, expectedEndpoint);
+  if (downloaded.agentId !== input.agentId || downloaded.logicalPath !== descriptor.path || downloaded.cursorEndpoint !== expectedEndpoint) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_REQUEST_BINDING_INVALID", "Cursor artifact download did not bind to the listed agent, logical path, and Cursor endpoint");
+  if (downloaded.requestShapeDigest !== digestOf(expectedRequest) || downloaded.downloadRequestDigest !== artifactDownloadDigest(expectedRequest, downloaded.sourceUrl) || downloaded.presignedUrlDigest !== digestOf(downloaded.sourceUrl)) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_REQUEST_BINDING_INVALID", "Cursor artifact download request or presigned URL digest is invalid");
+  if (downloaded.bytes.length > MAX_WRITER1_ARTIFACT_BYTES) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_TOO_LARGE", `Cursor Writer1 artifact exceeds the ${MAX_WRITER1_ARTIFACT_BYTES}-byte cap`);
   if (downloaded.bytes.length !== descriptor.size) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_SIZE_MISMATCH", "Cursor artifact size changed between listing and download");
   const sha256 = artifactSha256(downloaded.bytes);
   if (descriptor.sha256 && descriptor.sha256 !== sha256) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_DIGEST_MISMATCH", "Cursor artifact listing digest does not match downloaded bytes");
   const output = input.validateOutput(downloaded.bytes.toString("utf8"));
-  return { output, artifact: { path: "artifacts/writer1-output.json", size: downloaded.bytes.length, sha256 } };
+  return { output, artifact: { path: "artifacts/writer1-output.json", size: downloaded.bytes.length, sha256, contentSize: downloaded.bytes.length, byteDigest: sha256, downloadRequest: expectedRequest, requestShapeDigest: downloaded.requestShapeDigest, downloadRequestDigest: downloaded.downloadRequestDigest, presignedUrlDigest: downloaded.presignedUrlDigest } };
 }
 
 export function validateCursorArtifactRecoveryReceipt(receipt: unknown, prior: CursorArtifactRecoveryPrior, promptDigest: string): asserts receipt is CursorArtifactRecoveryReceipt {
   validateCursorWriterReceipt(receipt);
   const value = receipt as CursorArtifactRecoveryReceipt;
   if (value.mode !== "same-thread-artifact-recovery" || value.recoveryVersion !== "words-writer1-artifact-recovery/v1") throw new CursorWriterExecutionError("CURSOR_ARTIFACT_RECEIPT_INVALID", "Cursor receipt is not the Writer1 artifact-recovery mode");
-  if (!value.artifact || value.artifact.path !== "artifacts/writer1-output.json" || !Number.isSafeInteger(value.artifact.size) || value.artifact.size < 1 || typeof value.artifact.sha256 !== "string" || !DIGEST.test(value.artifact.sha256)) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_RECEIPT_INVALID", "Cursor artifact receipt path, size, or digest is invalid");
+  if (!value.artifact || value.artifact.path !== "artifacts/writer1-output.json" || !Number.isSafeInteger(value.artifact.size) || value.artifact.size < 1 || value.artifact.size > MAX_WRITER1_ARTIFACT_BYTES || value.artifact.contentSize !== value.artifact.size || typeof value.artifact.sha256 !== "string" || !DIGEST.test(value.artifact.sha256) || value.artifact.byteDigest !== value.artifact.sha256 || !value.artifact.downloadRequest || value.artifact.downloadRequest.agentId !== prior.agentId || value.artifact.downloadRequest.logicalPath !== value.artifact.path || value.artifact.downloadRequest.cursorEndpoint !== artifactDownloadEndpoint(prior.agentId, value.artifact.path) || value.artifact.requestShapeDigest !== digestOf(value.artifact.downloadRequest) || typeof value.artifact.downloadRequestDigest !== "string" || !DIGEST.test(value.artifact.downloadRequestDigest) || typeof value.artifact.presignedUrlDigest !== "string" || !DIGEST.test(value.artifact.presignedUrlDigest)) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_RECEIPT_INVALID", "Cursor artifact receipt path, size, byte, URL, or request binding is invalid");
   if (!value.recoveryPrior || JSON.stringify(value.recoveryPrior) !== JSON.stringify(prior)) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_RECEIPT_BINDING_INVALID", "Cursor artifact receipt lost the prior dispatch/source bindings");
   if (value.followUpPromptDigest !== promptDigest || value.promptDigest !== promptDigest || value.inputDigest !== prior.inputDigest || value.agentId !== prior.agentId || value.threadUrl !== prior.threadUrl || value.recoveryRunId !== value.jobId) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_RECEIPT_BINDING_INVALID", "Cursor artifact receipt is not bound to the requested Writer1 recovery");
   if (value.jobId !== prior.runId && !String(value.jobId).startsWith("run-")) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_RECEIPT_BINDING_INVALID", "Cursor artifact receipt recovery run ID is invalid");
@@ -473,7 +519,7 @@ export async function recoverCursorWriterArtifact(input: {
   if (existing) {
     validateCursorArtifactRecoveryReceipt(existing, input.prior, promptDigest);
     const recovered = await readWriter1Artifact({ client: artifactClient, agentId: input.prior.agentId, apiKey: env.CURSOR_API_KEY, validateOutput: input.validateOutput });
-    if (recovered.artifact.sha256 !== existing.artifact.sha256 || recovered.artifact.size !== existing.artifact.size) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_RACE", "Cursor artifact changed after the completed recovery receipt");
+    if (JSON.stringify(recovered.artifact) !== JSON.stringify(existing.artifact)) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_RACE", "Cursor artifact or download binding changed after the completed recovery receipt");
     const claim = await input.receiptStore.getClaim?.(key); if (!claim) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_CLAIM_MISSING", "Completed Cursor artifact recovery has no durable claim");
     return { output: recovered.output, receipt: { ...existing, output: recovered.output } as CursorArtifactRecoveryReceipt, threadUrl: existing.threadUrl, claim };
   }
@@ -481,9 +527,10 @@ export async function recoverCursorWriterArtifact(input: {
 
   let preexisting: { output: unknown; artifact: CursorArtifactBinding } | undefined;
   try { preexisting = await readWriter1Artifact({ client: artifactClient, agentId: input.prior.agentId, apiKey: env.CURSOR_API_KEY, validateOutput: input.validateOutput }); } catch (error) {
-    const code = error instanceof CursorWriterExecutionError ? error.code : "";
-    if (code.startsWith("CURSOR_ARTIFACT_") && code !== "CURSOR_ARTIFACT_MISSING") throw error;
-    if (code !== "CURSOR_ARTIFACT_MISSING" && !String((error as Error)?.message || "").match(/WRITER1_OUTPUT|OUTPUT_NOT_RECOVERABLE|JSON|provenance|page|copy/iu)) throw error;
+    // Only a genuinely absent descriptor permits the single same-thread
+    // follow-up. A present but invalid artifact is evidence of a broken or
+    // stale delivery and must fail closed before claiming or sending.
+    if (!(error instanceof CursorWriterExecutionError) || error.code !== "CURSOR_ARTIFACT_MISSING") throw error;
   }
   const initialClaim: CursorDispatchClaim = { key, stage: "writer1", runId: input.prior.runId, inputDigest, promptDigest, ownerToken: `${process.pid}:${now().getTime()}:${Math.random()}`, requestedAgentId: input.prior.agentId, claimedAt: now().toISOString(), heartbeatAt: now().toISOString(), leaseUntil: new Date(now().getTime() + 30_000).toISOString(), phase: "claimed" };
   let claimed = await input.receiptStore.tryClaim(key, initialClaim);
