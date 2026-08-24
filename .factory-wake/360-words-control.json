@@ -10,7 +10,12 @@
   "restore": null,
   "policy": {
     "writer1Only": true,
-    "approvedRoutes": ["/", "/garage-door-repair", "/garage-door-installation", "/contact"],
+    "approvedRoutes": [
+      "/",
+      "/garage-door-repair",
+      "/garage-door-installation",
+      "/contact"
+    ],
     "fast": false,
     "provider": "cursor-sdk",
     "model": "cursor-grok-4.6-high",

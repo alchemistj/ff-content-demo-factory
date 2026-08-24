@@ -37,7 +37,7 @@ jobs:
 
       - name: Set up Node for active wake
         if: steps.control.outputs.dormant != 'true'
-        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d682002d
+        uses: actions/setup-node@ae0d4ed08881f17d1511386f5be3e62356acd4a6
         with:
           node-version: '24'
 
