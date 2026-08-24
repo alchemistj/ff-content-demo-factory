@@ -11,6 +11,9 @@
   "ledgerPath": "canary/sealed/360-service-coverage-ledger.json",
   "projectionPath": "canary/sealed/360-service-coverage-projection.json",
   "projectionDigest": "sha256:9da412699be2306d52a87286bc7d387ec2f57c3e0a31180f5e282aa75804de47",
+  "bridgePath": "canary/sealed/360-words-sealed-envelope-bridge.json",
+  "bridgeDigest": "sha256:e726375dcf2b1512a235db3e5d89652133870a65d7910d9995ae1fdadaf8c896",
+  "envelopeDigest": "sha256:ae06d6e141d2bc7dc9c2b194c54e317b389e9986100eecb4639ef80f29b6f3b6",
   "approvalPath": "canary/sealed/360-four-page-approval.json",
   "approvalDigest": "sha256:2ef42360dbb296f1c7600de0a8fa9d1b17d83b88b91333acd3a977813a97f269",
   "sourceArtifacts": [

@@ -18,11 +18,12 @@ function equalArray(actual: unknown, expected: readonly string[], label: string)
   if (!Array.isArray(actual) || actual.length !== expected.length || actual.some((value, index) => value !== expected[index])) throw new Error(`${label} does not match the sealed route set`);
 }
 
-export function validateSealed(root = process.cwd(), handoffOverride?: { raw: Buffer; value: Dict }): { handoff: Dict; manifest: Dict; pin: Dict; ledger: Dict; approval: Dict } {
+export function validateSealed(root = process.cwd(), handoffOverride?: { raw: Buffer; value: Dict }, bridgeOverride?: Dict): { handoff: Dict; manifest: Dict; pin: Dict; ledger: Dict; approval: Dict; bridge: Dict } {
   const manifest = readJson(root, "canary/sealed/360-handoff-manifest.json");
   const pin = readJson(root, "canary/sealed/360-trusted-pin.json");
   const ledger = readJson(root, "canary/sealed/360-service-coverage-ledger.json");
   const projection = readJson(root, manifest.projectionPath);
+  const bridge = bridgeOverride || readJson(root, manifest.bridgePath);
   const approval = readJson(root, "canary/sealed/360-four-page-approval.json");
   const handoffPath = manifest.importedFrom.path === "canary/outputs/360-four-page-reseal-handoff.json"
     ? "canary/sealed/360-four-page-reseal-handoff.json"
@@ -34,6 +35,21 @@ export function validateSealed(root = process.cwd(), handoffOverride?: { raw: Bu
   if (handoff.resealDigest !== manifest.importedFrom.resealDigest) throw new Error("sealed handoff reseal digest mismatch");
   if (handoff.noVendorReseal !== true || handoff.vendorBoundaryProof?.apifyCalls !== 0 || handoff.vendorBoundaryProof?.cursorCalls !== 0) throw new Error("sealed handoff is not a no-vendor reseal");
   if (handoff.runId !== manifest.runId || handoff.source?.checkpoint?.runId !== manifest.runId || handoff.source?.artifactId !== manifest.artifactId || handoff.source?.checkpoint?.sourceSha !== manifest.sourceSha) throw new Error("sealed handoff run/source identity mismatch");
+  const requiredBridgeKeys = ["schemaVersion", "source", "routes", "pageAssignments", "selectedServiceIds", "policy", "approval", "approvalBindings", "reviewAnalysisFacts", "reviewInventory", "candidateServices", "foldedEvidence", "serviceCoverageLedger", "trustedArtifact", "sourcePin", "reseal"];
+  if (bridge.schemaVersion !== "words-sealed-envelope-bridge/v1" || requiredBridgeKeys.some((key) => !(key in bridge))) throw new Error("sealed envelope bridge is incomplete or unsupported");
+  if (bridge.source?.commit !== manifest.importedFrom.commit || bridge.source?.blobSha !== manifest.importedFrom.blobSha || bridge.source?.byteLength !== manifest.importedFrom.byteLength || bridge.source?.resealDigest !== manifest.importedFrom.resealDigest || bridge.source?.envelopeDigest !== digestOf(handoff) || JSON.stringify(bridge.source?.topLevelKeys) !== JSON.stringify(Object.keys(handoff).sort()) || digestOf(bridge) !== manifest.bridgeDigest) throw new Error("sealed envelope bridge source identity or complete-envelope digest mismatch");
+  const assertSection = (label: string, source: unknown, section: Dict): void => { if (!section || section.digest !== digestOf(source) || digestOf(section.value) !== section.digest) throw new Error(`sealed envelope bridge ${label} was omitted or mutated`); };
+  assertSection("page assignments", handoff.writerProjection?.approvedPageAssignments, bridge.pageAssignments);
+  assertSection("selected services", handoff.selectedServiceIds, bridge.selectedServiceIds);
+  assertSection("policy", handoff.policy, bridge.policy);
+  assertSection("approval", handoff.approval, bridge.approval);
+  assertSection("review-analysis facts", handoff.reviewAnalysisFacts, bridge.reviewAnalysisFacts);
+  assertSection("candidate services", handoff.candidateServices, bridge.candidateServices);
+  assertSection("folded evidence", handoff.foldedEvidence, bridge.foldedEvidence);
+  assertSection("canonical service coverage ledger", handoff.serviceCoverageLedger, bridge.serviceCoverageLedger);
+  assertSection("trusted artifact", handoff.trustedArtifact, bridge.trustedArtifact);
+  if (JSON.stringify(bridge.routes) !== JSON.stringify(handoff.writerProjection?.routes) || JSON.stringify(bridge.approvalBindings) !== JSON.stringify({ sourceArtifactDigest: handoff.sourceArtifactDigest, evidenceDigest: handoff.evidenceDigest, pageSetDigest: handoff.pageSetDigest, prescriptionDigest: handoff.prescriptionDigest, approvalDigest: handoff.approvalDigest }) || JSON.stringify(bridge.sourcePin) !== JSON.stringify({ artifactRootIdentity: handoff.artifactRootIdentity, archiveSha256: handoff.archiveSha256 }) || JSON.stringify(bridge.reseal) !== JSON.stringify({ sourceArtifactDigest: handoff.sourceArtifactDigest, evidenceDigest: handoff.evidenceDigest, pageSetDigest: handoff.pageSetDigest, prescriptionDigest: handoff.prescriptionDigest, approvalDigest: handoff.approvalDigest, resealDigest: handoff.resealDigest })) throw new Error("sealed approval, route, source-pin, or reseal binding was dropped");
+  if (JSON.stringify(bridge.reviewInventory?.stableReviewIds) !== JSON.stringify(handoff.stableReviewIds) || JSON.stringify(bridge.reviewInventory?.inventoryStableReviewIds) !== JSON.stringify(handoff.reviewInventory?.stableReviewIds) || bridge.reviewInventory?.digest !== digestOf(handoff.reviewInventory)) throw new Error("complete review inventory or stable review IDs were dropped");
   equalArray(handoff.writerProjection?.routes, ROUTES, "sealed handoff public routes");
   equalArray(manifest.approvedRoutes, ROUTES, "manifest public routes");
   equalArray(manifest.writer1Routes, WRITER1_ROUTES, "manifest Writer1 routes");
@@ -57,12 +73,34 @@ export function validateSealed(root = process.cwd(), handoffOverride?: { raw: Bu
   equalArray(approval.approvedRoutes, ROUTES, "Josh approval routes");
   if (approval.approvedBy !== "Josh Lenz") throw new Error("sealed approval is not Josh Lenz approval");
   if (approval.approvedAt !== "2026-08-24" || approval.decision !== "standard-four-page-prescription" || typeof approval.reason !== "string" || !approval.reason.trim()) throw new Error("sealed Josh approval facts are incomplete");
-  return { handoff, manifest, pin, ledger, approval };
+  return { handoff, manifest, pin, ledger, approval, bridge };
 }
 
 async function writeJson(file: string, value: unknown): Promise<void> {
   await fs.mkdir(path.dirname(file), { recursive: true });
   await fs.writeFile(file, `${JSON.stringify(value, null, 2)}\n`, "utf8");
+}
+function reviewEvidence(handoff: Dict, ids: unknown): Dict[] {
+  const packet = new Map<string, Dict>((handoff.reviewInventory?.reviewPacket?.reviews || []).map((review: Dict) => [review.id, review]));
+  const judgments = new Map<string, Dict>((handoff.reviewInventory?.classification?.reviews || []).map((review: Dict) => [review.id, review]));
+  return (Array.isArray(ids) ? ids : []).map((id) => String(id)).map((id) => {
+    const review = packet.get(id); const judgment = judgments.get(id);
+    if (!review || !judgment) throw new Error(`sealed Writer1 evidence references unknown review ${id}`);
+    return { review, judgment: { id, decision: judgment.authoritativeJudgment?.decision, authoritative: judgment.authoritativeJudgment?.authoritative, grade: judgment.grade } };
+  });
+}
+export function writer1Projection(sealed: { handoff: Dict; manifest: Dict; ledger: Dict; bridge: Dict }): Dict {
+  const handoff = sealed.handoff;
+  const pages = new Map<string, Dict>((handoff.pages || []).filter((page: Dict) => page.type === "Service").map((page: Dict) => [page.canonicalIntentId, page]));
+  const selected = new Map<string, Dict>((handoff.candidateServices || []).filter((entry: Dict) => entry.status === "selected" && WRITER1_ROUTES.includes(`/${entry.id}` as typeof WRITER1_ROUTES[number])).map((entry: Dict) => [entry.canonicalIntentId, entry]));
+  const ledgerServices = new Map<string, Dict>((sealed.ledger.services || []).map((service: Dict) => [service.id, service]));
+  const services = WRITER1_ROUTES.map((route) => {
+    const intent = route.slice(1); const page = pages.get(intent); const comparison = selected.get(intent); const ledger = ledgerServices.get(intent);
+    if (!page || !comparison || !ledger) throw new Error(`sealed Writer1 projection is missing approved service ${intent}`);
+    return { page, comparison: { id: comparison.id, name: comparison.name, directCompletedEvidenceCount: comparison.directCompletedEvidenceCount, directEvidenceReviewIds: comparison.directEvidenceReviewIds, canonicalServiceId: comparison.canonicalServiceId, canonicalIntentId: comparison.canonicalIntentId, destination: comparison.destination }, ledger: { id: ledger.id, name: ledger.name, reviewIds: ledger.reviewIds, currentSitePageUrls: ledger.currentSitePageUrls, provenance: ledger.provenance, siteAuditCoverage: ledger.siteAuditCoverage }, reviewEvidence: reviewEvidence(handoff, comparison.directEvidenceReviewIds) };
+  });
+  const foldedSupport = (handoff.candidateServices || []).filter((entry: Dict) => entry.status === "folded" && WRITER1_ROUTES.some((route) => route.slice(1) === entry.canonicalServiceId)).map((entry: Dict) => ({ id: entry.id, canonicalServiceId: entry.canonicalServiceId, foldedInto: entry.foldedInto, directCompletedEvidenceCount: entry.directCompletedEvidenceCount, directEvidenceReviewIds: entry.directEvidenceReviewIds, supportingEvidence: entry.supportingEvidence, reviewEvidence: reviewEvidence(handoff, entry.directEvidenceReviewIds) }));
+  return { schemaVersion: "words-writer1-input/v2", stage: "writer1", approvedRoutes: WRITER1_ROUTES, services, foldedSupport, sourceEnvelopeDigest: sealed.bridge.source.envelopeDigest, bridgeDigest: sealed.manifest.bridgeDigest };
 }
 export async function dispatchReceipt(root: string, notice: CursorDispatchNotice): Promise<void> {
   const receipt = { schemaVersion: "words-canary-dispatch/v1", status: "dispatched", stage: notice.stage, provider: "cursor-sdk", requestedModel: notice.requestedModel, fast: false, agentId: notice.agentId, jobId: notice.jobId, threadUrl: notice.threadUrl, inputDigest: notice.inputDigest, promptDigest: notice.promptDigest, requestDigest: notice.requestDigest, dispatchedAt: notice.dispatchedAt };
@@ -78,7 +116,7 @@ export async function run(root = process.cwd()): Promise<{ status: string; stage
   if (control.restore !== null) throw new Error("Writer1 must start from the sealed handoff and may not restore a prior artifact");
   if (process.env.CURSOR_MODEL !== "cursor-grok-4.6-high" || !process.env.CURSOR_API_KEY || process.env.CURSOR_FAST !== "false") throw new Error("Cursor production environment must provide exact model, API key, and fast=false");
   const sealed = validateSealed(root);
-  const payload = { schemaVersion: "words-writer-input/v1", stage: "writer1", source: sealed.handoff.source, prospect: sealed.handoff.prospect, approvedServices: sealed.handoff.pages.filter((page: Dict) => page.type === "Service"), sealedHandoffDigest: sealed.handoff.resealDigest, approvedRoutes: ROUTES };
+  const payload = writer1Projection(sealed);
   await writeJson(jsonFile(root, "canary/runtime/state.json"), { status: "writer1-dispatching", stage: "writer1", runId: sealed.handoff.runId, sealedHandoffDigest: sealed.handoff.resealDigest });
   const executor = createCursorWriterExecutor({ env: process.env, receiptStore: createJsonCursorReceiptStore(jsonFile(root, "canary/runtime/cursor-receipts.json")), onDispatch: (notice) => dispatchReceipt(root, notice) });
   const result = await executor.dispatch("writer1", payload, "Words Factory writer1 execution for approved 360 handoff", sealed.handoff.runId);

@@ -6,7 +6,8 @@ import * as fs from "node:fs/promises";
 import * as os from "node:os";
 import * as path from "node:path";
 import test from "node:test";
-import { validateSealed, dispatchReceipt, run } from "../../scripts/360-words-canary.js";
+import { validateSealed, dispatchReceipt, run, writer1Projection } from "../../scripts/360-words-canary.js";
+import { validateControl } from "../../scripts/360-words-control.mjs";
 
 const root = path.resolve(process.cwd());
 const pr3 = "4063cb7265d32f4d4739c1dc7724d5a6d3a8d381";
@@ -28,6 +29,34 @@ test("imports the exact PR3 handoff blob and preserves the four public routes", 
   assert.equal(sealed.approval.approvedBy, "Josh Lenz");
 });
 
+test("lossless sealed bridge rejects omitted or mutated envelope bindings", () => {
+  const raw = rawHandoff();
+  const handoff = JSON.parse(raw.toString("utf8")) as Record<string, any>;
+  const sealed = validateSealed(root, { raw, value: handoff });
+  const mutatedFacts = structuredClone(sealed.bridge);
+  mutatedFacts.reviewAnalysisFacts.value.retrievedWrittenReviewCount = 999;
+  assert.throws(() => validateSealed(root, { raw, value: handoff }, mutatedFacts), /sealed envelope bridge/);
+  const mutatedIds = structuredClone(sealed.bridge);
+  mutatedIds.reviewInventory.stableReviewIds.pop();
+  assert.throws(() => validateSealed(root, { raw, value: handoff }, mutatedIds), /sealed envelope bridge/);
+});
+
+test("Writer1 receives only two service projections, service evidence, and bounded folded support", () => {
+  const raw = rawHandoff();
+  const sealed = validateSealed(root, { raw, value: JSON.parse(raw.toString("utf8")) });
+  const input = writer1Projection(sealed);
+  assert.deepEqual(Object.keys(input).sort(), ["approvedRoutes", "bridgeDigest", "foldedSupport", "schemaVersion", "services", "sourceEnvelopeDigest", "stage"].sort());
+  assert.equal(input.services.length, 2);
+  assert.deepEqual(input.services.map((service: Record<string, any>) => service.page.url), ["/garage-door-repair", "/garage-door-installation"]);
+  assert.ok(input.services.every((service: Record<string, any>) => service.reviewEvidence.length > 0));
+  assert.ok(input.foldedSupport.every((entry: Record<string, any>) => ["garage-door-repair", "garage-door-installation"].includes(entry.canonicalServiceId)));
+  assert.equal(JSON.stringify(input).includes("reviewAnalysisFacts"), false);
+  assert.equal(JSON.stringify(input).includes("reviewInventory"), false);
+  assert.equal(JSON.stringify(input).includes("listingReviewCount"), false);
+  assert.equal("source" in input, false);
+  assert.equal("prospect" in input, false);
+});
+
 test("dormant control exits before provider validation or dispatch", async () => {
   const control = JSON.parse(readFileSync(path.join(root, ".factory-wake/360-words-control.json"), "utf8")) as Record<string, any>;
   assert.equal(control.wakeNonce, "DORMANT");
@@ -41,20 +70,31 @@ test("dormant control exits before provider validation or dispatch", async () =>
   try { assert.deepEqual(await run(root), { status: "dormant", stage: "writer1" }); } finally { process.env = previous; }
 });
 
+test("dormant setup commits ignore extra paths, while active wakes require a single authorized control-file path", () => {
+  const control = JSON.parse(readFileSync(path.join(root, ".factory-wake/360-words-control.json"), "utf8")) as Record<string, any>;
+  assert.deepEqual(validateControl(control, { changedPaths: ["README.md", "package.json", ".factory-wake/360-words-control.json"], actor: "untrusted", owner: "architect" }), { dormant: true, stage: "writer1" });
+  const active = { ...control, wakeNonce: "W1-360-20260824-8K4M7Q2N" };
+  assert.throws(() => validateControl(active, { changedPaths: [".factory-wake/360-words-control.json", "README.md"], actor: "architect", owner: "architect" }), /only the control file/);
+  assert.throws(() => validateControl(active, { changedPaths: [".factory-wake/360-words-control.json"], actor: "other", owner: "architect" }), /repository owner/);
+});
+
 test("workflow is limited to the Architect control push and one dormant-safe Writer1 wake", () => {
   const workflow = readFileSync(path.join(root, ".github/workflows/architect-360-words-canary.yml"), "utf8");
+  const controlScript = readFileSync(path.join(root, "scripts/360-words-control.mjs"), "utf8");
   assert.match(workflow, /branches:\s*\n\s*- architect\/360-words-canary/);
   assert.match(workflow, /paths:\s*\n\s*- \.factory-wake\/360-words-control\.json/);
-  assert.match(workflow, /github\.actor == github\.repository_owner/);
+  assert.match(controlScript, /repository owner Architect actor/);
   assert.match(workflow, /CURSOR_API_KEY: \$\{\{ secrets\.CURSOR_API_KEY \}\}/);
   assert.match(workflow, /CURSOR_MODEL: \$\{\{ secrets\.CURSOR_MODEL \}\}/);
   assert.match(workflow, /CURSOR_FAST: 'false'/);
-  assert.match(workflow, /control\.stage !== 'writer1'/);
+  assert.match(workflow, /scripts\/360-words-control\.mjs/);
   assert.match(workflow, /stop at Architect QA/);
   assert.match(workflow, /actions\/upload-artifact@/);
   assert.doesNotMatch(workflow.toLowerCase(), /apify|research|luna/);
   assert.doesNotMatch(workflow, /workflow_run|repository_dispatch|workflow_dispatch|workflow_call|actions:\s*write/);
   assert.doesNotMatch(workflow, /vercel|deploy|outreach|lemlist/iu);
+  assert.ok(workflow.indexOf("scripts/360-words-control.mjs") < workflow.indexOf("Install locked dependencies"));
+  assert.ok(workflow.indexOf("scripts/360-words-control.mjs") < workflow.indexOf("CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}"));
 });
 
 test("authenticated dispatch notice emits the direct server URL to a small receipt and summary", async () => {
