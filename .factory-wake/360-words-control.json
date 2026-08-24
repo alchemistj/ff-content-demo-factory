@@ -1,6 +1,6 @@
 {
   "schemaVersion": "words-canary-control/v1",
-  "wakeNonce": "DORMANT",
+  "wakeNonce": "W1-360-20260824-ARTIFACT-RECOVERY-EB5B7B6F",
   "requestedBy": "architect",
   "stage": "writer1",
   "runId": "32717620900",
@@ -10,10 +10,27 @@
   "restore": null,
   "policy": {
     "writer1Only": true,
-    "approvedRoutes": ["/", "/garage-door-repair", "/garage-door-installation", "/contact"],
+    "approvedRoutes": [
+      "/",
+      "/garage-door-repair",
+      "/garage-door-installation",
+      "/contact"
+    ],
     "fast": false,
     "provider": "cursor-sdk",
     "model": "cursor-grok-4.6-high",
-    "stopAfter": "awaiting-architect-qa"
+    "mode": "artifact-recovery",
+    "stopAfter": "awaiting-architect-qa",
+    "recovery": {
+      "priorActionRunId": "32785189225",
+      "priorArtifactId": 9541802267,
+      "priorAgentId": "bc-30fc8ffa-2005-44b9-8fc7-48ddd9c3bcc8",
+      "priorRunId": "run-b0341a7a-9f03-4dec-b76d-7350ba1e82f2",
+      "priorThreadUrl": "https://cursor.com/agents/bc-30fc8ffa-2005-44b9-8fc7-48ddd9c3bcc8",
+      "artifactPath": "artifacts/writer1-output.json",
+      "sourceBranch": "architect/360-words-canary",
+      "sourceSha": "c89f82dae009d5bef3cc327543e1664985c85b76",
+      "sealedHandoffDigest": "sha256:715f651a53055444b8381dd8a276a2046d93776c61d88a2193cc2d42a1c83ad6"
+    }
   }
 }
