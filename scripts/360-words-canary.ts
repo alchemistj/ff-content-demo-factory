@@ -2,7 +2,7 @@ import { createHash } from "node:crypto";
 import { existsSync, readFileSync } from "node:fs";
 import * as fs from "node:fs/promises";
 import * as path from "node:path";
-import { createJsonCursorReceiptStore, retrieveCursorWriterOutput, validateCursorWriterReceipt, validateCursorWriterFollowUpReceipt, type CursorDispatchNotice, type CursorFollowUpBindings, type CursorWriterReceipt } from "../src/pipeline/cursor-writer.js";
+import { createCursorWriterExecutor, createJsonCursorReceiptStore, validateCursorWriterReceipt, type CursorDispatchNotice, type CursorFollowUpBindings, type CursorWriterReceipt } from "../src/pipeline/cursor-writer.js";
 import { digestOf } from "../src/contracts/digests.js";
 
 const DORMANT_NONCE = "DORMANT";
@@ -125,6 +125,12 @@ export function parseAndValidateWriter1Output(raw: unknown, projection: Dict): D
   return parsed;
 }
 
+export function parseAndValidateFreshWriter1Output(raw: unknown, projection: Dict): Dict {
+  if (raw === "OUTPUT_NOT_RECOVERABLE") throw new Writer1OutputRecoveryError("OUTPUT_NOT_RECOVERABLE", "Fresh Writer1 output is not recoverable");
+  if (!isRecord(raw)) invalidWriter1Output("Fresh Writer1 output must be a JSON object, not a summary or string");
+  return parseAndValidateWriter1Output(JSON.stringify(raw), projection);
+}
+
 export function validateSealed(root = process.cwd(), handoffOverride?: { raw: Buffer; value: Dict }, bridgeOverride?: Dict): { handoff: Dict; manifest: Dict; pin: Dict; ledger: Dict; approval: Dict; bridge: Dict } {
   const manifest = readJson(root, "canary/sealed/360-handoff-manifest.json");
   const pin = readJson(root, "canary/sealed/360-trusted-pin.json");
@@ -226,43 +232,40 @@ Your entire response must be exactly one of these two choices and nothing else: 
 
 For the JSON choice, schemaVersion must be exactly "words-writer1-output/v1" and pages must be exactly these two service pages in this order: /garage-door-repair, /garage-door-installation. Each page must preserve the existing complete copy and include prescriptionId bound exactly to the sealed Writer1 page prescription, primaryKeyword, title, seoTitle, metaDescription, h1, body, and non-empty sections with heading/body. Every review, quote, and claim placement must carry typed provenance {type: "review"|"evidence"|"claim", ref: <stable sealed Writer1 review/evidence ref>, placement: <placement>, section: <section>} and every ref must resolve to the sealed Writer1 input. Return no Home, Contact, or Strategy page. Spring-repair and opener-installation evidence may remain folded inside approved service copy, but there must be no standalone spring/opener route, navigation item, or CTA. This is retrieval of the existing output only; do not change any words.`;
 
-export async function runCorrection(root = process.cwd()): Promise<{ status: string; stage: string; threadUrl?: string; followUpRunId?: string }> {
+export const WRITER1_FRESH_PROMPT = `Fresh Writer1 execution for the sealed 360 prescription. Write only the two prescribed service pages and return the complete result as a JSON object, never a summary string, prose wrapper, Markdown fence, or JSON-encoded string. Do not create Home, Contact, Strategy, spring-repair, or opener-installation pages or routes. Do not run Writer2.
+
+The root object must have schemaVersion exactly "words-writer1-output/v1" and pages exactly in this order: /garage-door-repair and /garage-door-installation. Each page must have type exactly "service", the exact sealed prescriptionId for its route, primaryKeyword, title, seoTitle, metaDescription, h1, body, and non-empty sections with heading/body. Every review, quote, and claim placement must include typed provenance {type: "review"|"evidence"|"claim", ref: <stable sealed Writer1 evidence/review ref>, placement: <placement>, section: <section>}; every provenance ref must resolve to the sealed Writer1 input. Use only the sealed prescription and evidence supplied below. If a complete valid object cannot be returned, return no partial result.
+
+SEALED WRITER1 INPUT:
+`;
+
+export async function runFreshWriter1(root = process.cwd()): Promise<{ status: string; stage: string; threadUrl?: string; followUpRunId?: string }> {
   const control = readJson(root, ".factory-wake/360-words-control.json");
   if (control.requestedBy !== "architect" || control.stage !== "writer1" || control.policy?.writer1Only !== true || control.policy?.provider !== "cursor-sdk" || control.policy?.model !== "cursor-grok-4.6-high" || control.policy?.fast !== false) throw new Error("360 canary control is not the immutable Writer1 policy");
   if (control.wakeNonce === DORMANT_NONCE) return { status: "dormant", stage: "writer1" };
   if (typeof control.wakeNonce !== "string" || !/^[A-Za-z0-9][A-Za-z0-9._-]{15,127}$/u.test(control.wakeNonce)) throw new Error("active 360 canary wake requires a unique nonce");
-  if (control.restore !== null) throw new Error("Writer1 retrieval must not restore or mutate the sealed handoff");
+  if (control.restore !== null) throw new Error("Fresh Writer1 must not restore or mutate the sealed handoff");
   if (process.env.CURSOR_MODEL !== "cursor-grok-4.6-high" || !process.env.CURSOR_API_KEY || process.env.CURSOR_FAST !== "false") throw new Error("Cursor production environment must provide exact model, API key, and fast=false");
-  const priorRoot = process.env.WRITER1_PRIOR_ARTIFACT_ROOT;
-  if (!priorRoot) throw new Error("exact prior Writer1 GitHub artifact must be downloaded before retrieval");
-  const prior = validatePriorWriter1Artifact(priorRoot);
   const sealed = validateSealed(root);
   const payload = writer1Projection(sealed);
-  let followUpNotice: CursorDispatchNotice | undefined;
-  await writeJson(jsonFile(root, "canary/runtime/prior-artifact-verification.json"), { status: "verified", actionRunId: PRIOR_ACTION_RUN_ID, artifactId: PRIOR_ARTIFACT_ID, prior: prior.bindings });
-  await writeJson(jsonFile(root, "canary/runtime/state.json"), { status: "writer1-retrieval-dispatching", stage: "writer1", runId: sealed.handoff.runId, sealedHandoffDigest: sealed.handoff.resealDigest, prior: prior.bindings });
-  const result = await retrieveCursorWriterOutput({
+  const prompt = `${WRITER1_FRESH_PROMPT}${JSON.stringify(payload)}`;
+  await writeJson(jsonFile(root, "canary/runtime/state.json"), { status: "writer1-dispatching", stage: "writer1", runId: sealed.handoff.runId, sealedHandoffDigest: sealed.handoff.resealDigest, nextStage: null, writer2Blocked: true });
+  const result = await createCursorWriterExecutor({
     env: process.env,
     receiptStore: createJsonCursorReceiptStore(jsonFile(root, "canary/runtime/cursor-receipts.json")),
-    priorReceipt: prior.receipt,
-    prior: prior.bindings,
-    prompt: WRITER1_RETRIEVAL_PROMPT,
-    runId: sealed.handoff.runId,
-    onFollowUp: (notice) => { followUpNotice = notice; },
-    validateOutput: (output) => parseAndValidateWriter1Output(output, payload),
-  });
-  const parsed = parseAndValidateWriter1Output(result.output, payload);
-  validateCursorWriterFollowUpReceipt(result.receipt, prior.bindings, digestOf(WRITER1_RETRIEVAL_PROMPT));
-  if (!followUpNotice) throw new Error("Writer1 follow-up completed without a dispatch notice");
-  await dispatchReceipt(root, followUpNotice);
-  await writeJson(jsonFile(root, "canary/runtime/writer1-correction-receipt.json"), result.receipt);
-  await writeJson(jsonFile(root, "canary/runtime/writer1-validation.json"), { status: "valid", schemaVersion: parsed.schemaVersion, routes: parsed.pages.map((page: Dict) => page.url), outputDigest: result.receipt.outputDigest, sameThread: result.threadUrl === prior.bindings.priorThreadUrl, prior: prior.bindings, followUpRunId: result.receipt.jobId });
+    onDispatch: (notice) => dispatchReceipt(root, notice),
+    validateOutput: (output) => parseAndValidateFreshWriter1Output(output, payload),
+  }).dispatch("writer1", payload, prompt, sealed.handoff.runId);
+  const parsed = parseAndValidateFreshWriter1Output(result.output, payload);
+  await writeJson(jsonFile(root, "canary/runtime/writer1-receipt.json"), result.receipt);
+  await writeJson(jsonFile(root, "canary/runtime/writer1-validation.json"), { status: "valid", schemaVersion: parsed.schemaVersion, routes: parsed.pages.map((page: Dict) => page.url), outputDigest: result.receipt.outputDigest, agentId: result.receipt.agentId, threadUrl: result.threadUrl, runId: result.receipt.jobId, nextStage: null, writer2Blocked: true });
   await writeJson(jsonFile(root, "canary/outputs/writer1-output.json"), parsed);
-  await writeJson(jsonFile(root, "canary/runtime/state.json"), { status: "awaiting-architect-qa", stage: "writer1", runId: sealed.handoff.runId, sealedHandoffDigest: sealed.handoff.resealDigest, threadUrl: result.threadUrl, followUpRunId: result.receipt.jobId, prior: prior.bindings, receipt: result.receipt, nextStage: null });
+  await writeJson(jsonFile(root, "canary/runtime/state.json"), { status: "awaiting-architect-qa", stage: "writer1", runId: sealed.handoff.runId, sealedHandoffDigest: sealed.handoff.resealDigest, threadUrl: result.threadUrl, agentId: result.receipt.agentId, followUpRunId: result.receipt.jobId, receipt: result.receipt, nextStage: null, writer2Blocked: true });
   return { status: "awaiting-architect-qa", stage: "writer1", threadUrl: result.threadUrl, followUpRunId: result.receipt.jobId };
 }
 
-export const run = runCorrection;
+export const runCorrection = runFreshWriter1;
+export const run = runFreshWriter1;
 
 if (import.meta.url === `file://${process.argv[1]}`) {
   const operation = process.argv.includes("--validate-only") ? Promise.resolve(validateSealed()) : runCorrection();
@@ -270,8 +273,8 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     const code = isRecord(error) && typeof error.code === "string" ? error.code : "WRITER1_CORRECTION_FAILED";
     const message = error instanceof Error ? error.message : String(error);
     const recovery = code === "OUTPUT_NOT_RECOVERABLE";
-    await writeJson(path.join(process.cwd(), "canary/runtime/failure.json"), { status: "failed", stage: "writer1", errorCode: code, error: message, ...(recovery ? { recovery: "manual-architect-recovery-required" } : {}) });
-    if (recovery) await writeJson(path.join(process.cwd(), "canary/runtime/state.json"), { status: "writer1-output-not-recoverable", stage: "writer1", errorCode: code, recoveryRequired: true, nextStage: null });
+    await writeJson(path.join(process.cwd(), "canary/runtime/failure.json"), { status: "failed", stage: "writer1", errorCode: code, error: message, writer2Blocked: true, ...(recovery ? { recovery: "manual-architect-recovery-required" } : {}) });
+    await writeJson(path.join(process.cwd(), "canary/runtime/state.json"), { status: recovery ? "writer1-output-not-recoverable" : "writer1-failed", stage: "writer1", errorCode: code, recoveryRequired: true, writer2Blocked: true, nextStage: null });
     process.exitCode = 1;
   });
 }

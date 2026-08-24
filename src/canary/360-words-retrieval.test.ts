@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { parseAndValidateWriter1Output, Writer1OutputRecoveryError } from "../../scripts/360-words-canary.js";
+import { parseAndValidateFreshWriter1Output, parseAndValidateWriter1Output, Writer1OutputRecoveryError } from "../../scripts/360-words-canary.js";
 
 const projection = {
   services: [
@@ -48,4 +48,15 @@ test("Writer1 retrieval sentinel is explicit and never accepted as completed JSO
 test("Writer1 output rejects a service page with missing type", () => {
   const missingType = JSON.stringify({ ...JSON.parse(valid), pages: JSON.parse(valid).pages.map((page: Record<string, unknown>, index: number) => index === 0 ? Object.fromEntries(Object.entries(page).filter(([key]) => key !== "type")) : page) });
   assert.throws(() => parseAndValidateWriter1Output(missingType, projection), /page\.type.*exactly service/u);
+});
+
+test("fresh Writer1 rejects summaries, absent copy, route leakage, and missing provenance before completion", () => {
+  assert.throws(() => parseAndValidateFreshWriter1Output("Writer1 is done", projection), /JSON object.*summary|string/u);
+  const absentCopy = structuredClone(JSON.parse(valid)); delete absentCopy.pages[0].body;
+  assert.throws(() => parseAndValidateFreshWriter1Output(absentCopy, projection), /full copy field body/u);
+  const leakedRoute = structuredClone(JSON.parse(valid)); leakedRoute.pages[0].cta = { href: "/strategy-overview" };
+  assert.throws(() => parseAndValidateFreshWriter1Output(leakedRoute, projection), /Home|Contact|route|topology/u);
+  const missingProvenance = structuredClone(JSON.parse(valid)); delete missingProvenance.pages[0].reviewPlacements[0].provenance;
+  assert.throws(() => parseAndValidateFreshWriter1Output(missingProvenance, projection), /provenance/u);
+  assert.doesNotThrow(() => parseAndValidateFreshWriter1Output(JSON.parse(valid), projection));
 });

@@ -143,6 +143,28 @@ test("interrupted work reattaches by persisted claim/agent identity without dupl
   const result = await second.dispatch("writer2", { stable: true }, "stable prompt", "run-resume"); assert.equal(secondTransport.creates, 0); assert.equal(secondTransport.resumes, 1); assert.equal(secondTransport.sends, 0); assert.equal(result.receipt.status, "complete");
 });
 
+test("fresh Writer1 validation failure leaves no completed receipt and retry reattaches without duplicate create", async () => {
+  const store = createMemoryCursorReceiptStore();
+  let rejectOutput = true;
+  const validateOutput = () => { if (rejectOutput) throw new Error("Writer1 output is a summary, not the required object"); };
+  const firstTransport = transport();
+  const first = createCursorWriterExecutorForTest({ transport: firstTransport, receiptStore: store, env, validateOutput });
+  await assert.rejects(() => first.dispatch("writer1", { fresh: true }, "fresh Writer1", "run-fresh-retry"), /summary/);
+  assert.equal(firstTransport.creates, 1);
+  assert.equal(store.records.size, 0);
+  const claim = store.claims.values().next().value as CursorDispatchClaim;
+  claim.leaseUntil = new Date(0).toISOString();
+  store.claims.set(claim.key, claim);
+  rejectOutput = false;
+  const secondTransport = transport();
+  const second = createCursorWriterExecutorForTest({ transport: secondTransport, receiptStore: store, env, validateOutput });
+  const result = await second.dispatch("writer1", { fresh: true }, "fresh Writer1", "run-fresh-retry");
+  assert.equal(result.receipt.status, "complete");
+  assert.equal(secondTransport.creates, 0);
+  assert.equal(secondTransport.resumes, 1);
+  assert.equal(secondTransport.sends, 0);
+});
+
 test("missing or minimal forged production receipts fail state validation", () => {
   const state = createInitialState({ handoff: garageDoor360FourPageHandoff as any }); state.executionMode = "cursor-production"; state.stages[STAGES.WRITER_1] = { status: "complete" }; assert.throws(() => validateState(state), /Cursor receipt/);
 });

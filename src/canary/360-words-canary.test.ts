@@ -87,6 +87,9 @@ test("workflow is limited to the Architect control push and one dormant-safe Wri
   assert.match(workflow, /CURSOR_MODEL: \$\{\{ secrets\.CURSOR_MODEL \}\}/);
   assert.match(workflow, /CURSOR_FAST: 'false'/);
   assert.match(workflow, /scripts\/360-words-control\.mjs/);
+  assert.match(workflow, /Create fresh Writer1 agent and stop at Architect QA/);
+  assert.match(workflow, /scripts\/360-words-canary\.ts --fresh/);
+  assert.doesNotMatch(workflow, /prior-artifact|Retrieve Writer1 JSON/u);
   assert.match(workflow, /stop at Architect QA/);
   assert.match(workflow, /actions\/upload-artifact@/);
   assert.doesNotMatch(workflow.toLowerCase(), /apify|research|luna/);
