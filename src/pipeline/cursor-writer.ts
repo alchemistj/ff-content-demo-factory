@@ -462,6 +462,7 @@ async function readWriter1Artifact(input: { client: CursorArtifactClient; agentI
   const descriptor = matches[0]; if (!descriptor) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_MISSING", "Cursor agent has no artifacts/writer1-output.json artifact");
   if (descriptor.size > MAX_WRITER1_ARTIFACT_BYTES) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_TOO_LARGE", `Cursor Writer1 artifact exceeds the ${MAX_WRITER1_ARTIFACT_BYTES}-byte cap`);
   const downloaded = await input.client.download(input.agentId, descriptor.path, input.apiKey);
+  approvedCursorArtifactUrl(downloaded.sourceUrl);
   const expectedPath = descriptor.path as "artifacts/writer1-output.json";
   const expectedEndpoint = artifactDownloadEndpoint(input.agentId, expectedPath);
   const expectedRequest = artifactRequestShape(input.agentId, expectedPath, expectedEndpoint);
