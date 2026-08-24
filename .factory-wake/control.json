@@ -1,6 +1,7 @@
 {
-  "wakeId": "360-selection-resume-2026-08-23-02",
+  "wakeId": "360-review-intelligence-resume-2026-08-24-01",
   "mode": "selection",
-  "restoreFromRunId": "32674688437",
+  "restoreFromRunId": "32674792401",
+  "restoreFromSourceSha": "a33942dbe86f6bc0e34bd0c8522c835427d59804",
   "requestedBy": "architect"
 }
