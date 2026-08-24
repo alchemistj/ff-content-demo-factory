@@ -1,6 +1,6 @@
 {
   "schemaVersion": "words-canary-control/v1",
-  "wakeNonce": "DORMANT",
+  "wakeNonce": "W1-360-20260824-5D14BAA9",
   "requestedBy": "architect",
   "stage": "writer1",
   "runId": "32717620900",
@@ -8,9 +8,41 @@
   "sealedHandoffPath": "canary/sealed/360-four-page-reseal-handoff.json",
   "sealedManifestPath": "canary/sealed/360-handoff-manifest.json",
   "restore": null,
+  "recoveryPins": {
+    "sourceHead": "5d14baa9d34ba152b3decd7b110dcae610f45cb4",
+    "mode": "same-thread-retrieval",
+    "correctionVersion": "words-writer1-retrieval/v1",
+    "priorActionRunId": "32776170549",
+    "priorArtifactId": 9539302493,
+    "priorArtifactRoot": "canary/inputs/prior-artifact",
+    "priorCursorAgentId": "bc-972b63b0-6e43-4c76-805d-b95a0ba13da8",
+    "priorCursorRunId": "run-a59d6e17-3ce0-4c0f-8231-597d5b15382b",
+    "priorCursorThreadUrl": "https://cursor.com/agents/bc-972b63b0-6e43-4c76-805d-b95a0ba13da8",
+    "priorOutputDigest": "sha256:d2f2e75fbd2482e87afe18926fc6fcf1de319fe1ff9d1eb3a942ca7cfbee7e29",
+    "sealedRunId": "32717620900",
+    "sealedArtifactId": "9516514426",
+    "sealedSourceSha": "81587f8422a23313fd7868751061eec7e2fb5926",
+    "sealedArchiveSha256": "a5c948af6389b21786d9daf01106f1fd0662d7bf6bb0f21e078a4d7e2ecb1999",
+    "sealedHandoffCommit": "4063cb7265d32f4d4739c1dc7724d5a6d3a8d381",
+    "sealedResealDigest": "sha256:715f651a53055444b8381dd8a276a2046d93776c61d88a2193cc2d42a1c83ad6",
+    "restoredFromRunId": "32717407190",
+    "restoredFromSourceSha": "1162acb7ed54341a8dddfe8574be685221bed7eb",
+    "expectedOutputSchema": "words-writer1-output/v1",
+    "failureSentinel": "OUTPUT_NOT_RECOVERABLE",
+    "writer1Routes": [
+      "/garage-door-repair",
+      "/garage-door-installation"
+    ],
+    "stopAfter": "awaiting-architect-qa"
+  },
   "policy": {
     "writer1Only": true,
-    "approvedRoutes": ["/", "/garage-door-repair", "/garage-door-installation", "/contact"],
+    "approvedRoutes": [
+      "/",
+      "/garage-door-repair",
+      "/garage-door-installation",
+      "/contact"
+    ],
     "fast": false,
     "provider": "cursor-sdk",
     "model": "cursor-grok-4.6-high",
