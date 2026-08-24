@@ -1,0 +1,126 @@
+name: Architect 360 Words canary
+
+on:
+  push:
+    branches:
+      - architect/360-words-canary
+    paths:
+      - .factory-wake/360-words-control.json
+
+permissions:
+  contents: read
+  actions: read
+
+concurrency:
+  group: 360-words-canary-32717620900-writer1
+  cancel-in-progress: false
+
+jobs:
+  writer1:
+    # Repository-owner authorship plus the control-file requestedBy check is
+    # the only wake authority. The dormant file exits before any secret/vendor
+    # step and never creates a Cursor job.
+    if: github.actor == github.repository_owner
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - name: Checkout exact canary branch
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          fetch-depth: 2
+          persist-credentials: false
+
+      - name: Set up Node
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d682002d
+        with:
+          node-version: '24'
+
+      - name: Validate Architect control file and changed-path boundary
+        id: control
+        shell: bash
+        run: |
+          changed="$(git diff-tree --no-commit-id --name-only -r "${GITHUB_SHA}^" "${GITHUB_SHA}")"
+          test "$changed" = ".factory-wake/360-words-control.json"
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          const control = JSON.parse(fs.readFileSync('.factory-wake/360-words-control.json', 'utf8'));
+          if (control.schemaVersion !== 'words-canary-control/v1') throw new Error('unsupported canary control schema');
+          if (control.requestedBy !== 'architect' || control.stage !== 'writer1') throw new Error('only Architect Writer1 control is permitted');
+          if (control.policy?.writer1Only !== true || control.policy?.provider !== 'cursor-sdk' || control.policy?.model !== 'cursor-grok-4.6-high' || control.policy?.fast !== false) throw new Error('immutable Writer1 policy mismatch');
+          if (control.restore !== null) throw new Error('Writer1 may not restore a previous artifact');
+          if (control.wakeNonce !== 'DORMANT' && (!/^[A-Za-z0-9][A-Za-z0-9._-]{15,127}$/.test(control.wakeNonce || ''))) throw new Error('invalid wake nonce');
+          fs.appendFileSync(process.env.GITHUB_OUTPUT, `dormant=${control.wakeNonce === 'DORMANT'}\nstage=${control.stage}\n`);
+          NODE
+
+      - name: Install locked dependencies
+        if: steps.control.outputs.dormant != 'true'
+        run: npm ci --ignore-scripts --no-audit --no-fund
+
+      - name: Validate sealed 360 handoff, pin, and four-route topology
+        id: sealed
+        shell: bash
+        run: |
+          mkdir -p canary/runtime canary/outputs
+          if [ "${{ steps.control.outputs.dormant }}" = "true" ]; then
+            node --input-type=module -e "import fs from 'node:fs'; fs.writeFileSync('canary/runtime/dormant.json', JSON.stringify({status:'dormant',stage:'writer1'}, null, 2)+'\\n')"
+          else
+            node --import tsx scripts/360-words-canary.ts --validate-only
+          fi
+
+      - name: Validate secret-backed Cursor runtime
+        if: steps.control.outputs.dormant != 'true'
+        shell: bash
+        env:
+          CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
+          CURSOR_MODEL: ${{ secrets.CURSOR_MODEL }}
+          CURSOR_FAST: 'false'
+        run: |
+          test -n "$CURSOR_API_KEY"
+          test "$CURSOR_MODEL" = "cursor-grok-4.6-high"
+          test "$CURSOR_FAST" = "false"
+
+      - name: Dispatch exactly Writer1 and stop at Architect QA
+        id: dispatch
+        if: steps.control.outputs.dormant != 'true'
+        continue-on-error: true
+        shell: bash
+        env:
+          CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
+          CURSOR_MODEL: ${{ secrets.CURSOR_MODEL }}
+          CURSOR_FAST: 'false'
+        run: node --import tsx scripts/360-words-canary.ts
+
+      - name: Write durable failure/state surface
+        if: always()
+        shell: bash
+        run: |
+          mkdir -p canary/runtime canary/outputs
+          test -f canary/runtime/state.json || node --input-type=module -e "import fs from 'node:fs'; fs.writeFileSync('canary/runtime/state.json', JSON.stringify({status:'workflow-failed-before-writer1',stage:'writer1',runId:'32717620900'}, null, 2)+'\\n')"
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          import crypto from 'node:crypto';
+          const files = [];
+          const visit = (root) => { if (!fs.existsSync(root)) return; const stat = fs.statSync(root); if (stat.isDirectory()) for (const name of fs.readdirSync(root)) visit(`${root}/${name}`); else files.push(root); };
+          visit('canary/runtime'); visit('canary/outputs');
+          const secrets = [process.env.CURSOR_API_KEY].filter(Boolean);
+          for (const file of files) { const data = fs.readFileSync(file); for (const secret of secrets) if (data.includes(Buffer.from(secret))) throw new Error(`secret material detected in ${file}`); }
+          const manifest = files.sort().map((file) => `${crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex')}  ${file}`).join('\n') + '\n';
+          fs.writeFileSync('canary/runtime/manifest.sha256', manifest);
+          NODE
+        env:
+          CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
+
+      - name: Upload durable canary state, dispatch receipt, and output
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: 360-words-writer1-${{ github.run_id }}
+          path: |
+            canary/runtime
+            canary/outputs
+          if-no-files-found: error
+          retention-days: 30
+
+      - name: Preserve fail-closed result
+        if: always() && steps.control.outputs.dormant != 'true' && steps.dispatch.outcome != 'success'
+        run: exit 1

@@ -1,0 +1,9 @@
+{
+  "provider": "github-actions-artifact",
+  "runId": "32717620900",
+  "artifactId": "9516514426",
+  "sourceSha": "81587f8422a23313fd7868751061eec7e2fb5926",
+  "archiveName": "360-garage-door-gate1.zip",
+  "archiveSha256": "a5c948af6389b21786d9daf01106f1fd0662d7bf6bb0f21e078a4d7e2ecb1999",
+  "rootIdentity": "github-actions-artifact:9516514426"
+}

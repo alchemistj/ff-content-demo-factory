@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "words-canary-control/v1",
+  "wakeNonce": "DORMANT",
+  "requestedBy": "architect",
+  "stage": "writer1",
+  "runId": "32717620900",
+  "prospectId": "prospect-32cd5e266a718b3eee2e",
+  "sealedHandoffPath": "canary/sealed/360-four-page-reseal-handoff.json",
+  "sealedManifestPath": "canary/sealed/360-handoff-manifest.json",
+  "restore": null,
+  "policy": {
+    "writer1Only": true,
+    "approvedRoutes": ["/", "/garage-door-repair", "/garage-door-installation", "/contact"],
+    "fast": false,
+    "provider": "cursor-sdk",
+    "model": "cursor-grok-4.6-high",
+    "stopAfter": "awaiting-architect-qa"
+  }
+}
