@@ -1,6 +1,6 @@
 {
   "schemaVersion": "words-canary-control/v1",
-  "wakeNonce": "W1-360-20260824-FRESH-9A13AFCB",
+  "wakeNonce": "DORMANT",
   "requestedBy": "architect",
   "stage": "writer1",
   "runId": "32717620900",
@@ -10,12 +10,7 @@
   "restore": null,
   "policy": {
     "writer1Only": true,
-    "approvedRoutes": [
-      "/",
-      "/garage-door-repair",
-      "/garage-door-installation",
-      "/contact"
-    ],
+    "approvedRoutes": ["/", "/garage-door-repair", "/garage-door-installation", "/contact"],
     "fast": false,
     "provider": "cursor-sdk",
     "model": "cursor-grok-4.6-high",
