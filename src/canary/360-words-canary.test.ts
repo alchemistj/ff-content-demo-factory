@@ -43,10 +43,11 @@ test("Writer1 receives only two service projections, service evidence, and bound
   const raw = rawHandoff();
   const sealed = validateSealed(root, { raw, value: JSON.parse(raw.toString("utf8")) });
   const input = writer1Projection(sealed);
-  assert.deepEqual(Object.keys(input).sort(), ["approvedRoutes", "bridgeDigest", "foldedSupport", "schemaVersion", "services", "sourceEnvelopeDigest", "stage"].sort());
+  assert.deepEqual(Object.keys(input).sort(), ["approvedRoutes", "bridgeDigest", "foldedSupport", "schemaVersion", "sealedRefs", "services", "sourceEnvelopeDigest", "stage"].sort());
   assert.equal(input.services.length, 2);
   assert.deepEqual(input.services.map((service: Record<string, any>) => service.page.url), ["/garage-door-repair", "/garage-door-installation"]);
   assert.ok(input.services.every((service: Record<string, any>) => service.reviewEvidence.length > 0));
+  assert.ok(input.services.every((service: Record<string, any>) => typeof service.prescriptionId === "string" && input.sealedRefs.includes(service.prescriptionId)));
   assert.ok(input.foldedSupport.every((entry: Record<string, any>) => ["garage-door-repair", "garage-door-installation"].includes(entry.canonicalServiceId)));
   assert.equal(JSON.stringify(input).includes("reviewAnalysisFacts"), false);
   assert.equal(JSON.stringify(input).includes("reviewInventory"), false);

@@ -29,6 +29,17 @@ function normalized(value: string): string { return value.replace(/[“”"']/gu
 function stringValue(value: unknown): value is string { return typeof value === "string" && value.trim().length > 0; }
 function isRecord(value: unknown): value is Dict { return !!value && typeof value === "object" && !Array.isArray(value); }
 
+export class Writer1OutputRecoveryError extends Error {
+  readonly code: "OUTPUT_NOT_RECOVERABLE" | "WRITER1_OUTPUT_INVALID";
+  constructor(code: "OUTPUT_NOT_RECOVERABLE" | "WRITER1_OUTPUT_INVALID", message: string) {
+    super(message);
+    this.name = "Writer1OutputRecoveryError";
+    this.code = code;
+  }
+}
+
+function invalidWriter1Output(message: string): never { throw new Writer1OutputRecoveryError("WRITER1_OUTPUT_INVALID", message); }
+
 export function validatePriorWriter1Artifact(root: string, expected = { actionRunId: PRIOR_ACTION_RUN_ID, artifactId: PRIOR_ARTIFACT_ID, agentId: PRIOR_CURSOR_AGENT_ID, jobId: PRIOR_CURSOR_RUN_ID, outputDigest: PRIOR_OUTPUT_DIGEST, threadUrl: PRIOR_CURSOR_THREAD_URL }): { receipt: CursorWriterReceipt; bindings: CursorFollowUpBindings } {
   const receipt = JSON.parse(readFileSync(path.join(root, "runtime/writer1-receipt.json"), "utf8")) as CursorWriterReceipt;
   const dispatch = JSON.parse(readFileSync(path.join(root, "runtime/dispatch-receipt.json"), "utf8")) as Dict;
@@ -65,35 +76,51 @@ function scanForbiddenPublicReferences(value: unknown, keyPath = ""): void {
 }
 
 export function parseAndValidateWriter1Output(raw: unknown, projection: Dict): Dict {
-  if (typeof raw !== "string" || !raw.trim()) throw new Error("Writer1 follow-up output must be a non-empty JSON string");
-  let parsed: unknown; try { parsed = JSON.parse(raw); } catch { throw new Error("Writer1 follow-up output is not valid JSON"); }
-  if (!isRecord(parsed) || parsed.schemaVersion !== "words-writer1-output/v1" || !Array.isArray(parsed.pages)) throw new Error("Writer1 output must be words-writer1-output/v1 with a pages array");
-  if (parsed.pages.length !== 2) throw new Error("Writer1 output must contain exactly two service pages");
+  if (typeof raw !== "string" || !raw.trim()) invalidWriter1Output("Writer1 follow-up output must be a non-empty JSON string");
+  if (raw.trim() === "OUTPUT_NOT_RECOVERABLE") throw new Writer1OutputRecoveryError("OUTPUT_NOT_RECOVERABLE", "Writer1 could not recover the existing words-writer1-output/v1 artifact");
+  let parsed: unknown; try { parsed = JSON.parse(raw); } catch { invalidWriter1Output("Writer1 follow-up output is not valid JSON"); }
+  if (!isRecord(parsed) || parsed.schemaVersion !== "words-writer1-output/v1" || !Array.isArray(parsed.pages)) invalidWriter1Output("Writer1 output must be words-writer1-output/v1 with a pages array");
+  if (parsed.pages.length !== 2) invalidWriter1Output("Writer1 output must contain exactly two service pages");
   const evidenceByRoute = new Map<string, Dict[]>((projection.services || []).map((service: Dict) => [service.page.url, service.reviewEvidence || []]));
+  const serviceByRoute = new Map<string, Dict>((projection.services || []).map((service: Dict) => [service.page.url, service]));
+  const sealedRefs = new Set<string>((projection.sealedRefs || []).filter((ref: unknown): ref is string => stringValue(ref)));
   const seen = new Set<string>();
   for (const page of parsed.pages) {
-    if (!isRecord(page) || !stringValue(page.url) || !WRITER1_ROUTES.includes(page.url as typeof WRITER1_ROUTES[number]) || seen.has(page.url)) throw new Error("Writer1 output contains a missing, duplicate, or unapproved page route");
+    if (!isRecord(page) || !stringValue(page.url) || !WRITER1_ROUTES.includes(page.url as typeof WRITER1_ROUTES[number]) || seen.has(page.url)) invalidWriter1Output("Writer1 output contains a missing, duplicate, or unapproved page route");
     seen.add(page.url);
-    if (page.type !== undefined && String(page.type).toLowerCase() !== "service") throw new Error("Writer1 output contains a non-service page");
-    for (const field of ["seoTitle", "metaDescription", "h1"] as const) if (!stringValue(page[field])) throw new Error(`Writer1 output is missing full copy field ${field}`);
-    if (!Array.isArray(page.sections) || page.sections.length === 0 || page.sections.some((section: unknown) => !isRecord(section) || !stringValue(section.heading) || !stringValue(section.body))) throw new Error("Writer1 output is missing complete section copy");
-    const placements = page.reviewPlacements ?? page.reviewEvidence;
-    if (!Array.isArray(placements) || placements.length === 0) throw new Error(`Writer1 output is missing review/quote bindings for ${page.url}`);
+    if (page.type !== undefined && String(page.type).toLowerCase() !== "service") invalidWriter1Output("Writer1 output contains a non-service page");
+    for (const field of ["prescriptionId", "primaryKeyword", "title", "seoTitle", "metaDescription", "h1", "body"] as const) if (!stringValue(page[field])) invalidWriter1Output(`Writer1 output is missing full copy field ${field}`);
+    const service = serviceByRoute.get(page.url);
+    if (!service || page.prescriptionId !== service.prescriptionId || !sealedRefs.has(page.prescriptionId)) invalidWriter1Output(`Writer1 page prescriptionId is not bound to the sealed prescription for ${page.url}`);
+    if (!Array.isArray(page.sections) || page.sections.length === 0 || page.sections.some((section: unknown) => !isRecord(section) || !stringValue(section.heading) || !stringValue(section.body))) invalidWriter1Output("Writer1 output is missing complete section copy");
+    const sections = new Set(page.sections.map((section: Dict) => String(section.id ?? section.heading)));
+    const placementGroups = [page.reviewPlacements, page.reviewEvidence, page.quotePlacements, page.claims].filter((value): value is unknown[] => Array.isArray(value));
+    const placements = placementGroups.flat();
+    if (placements.length === 0) invalidWriter1Output(`Writer1 output is missing review/quote/claim bindings for ${page.url}`);
     const allowed = evidenceByRoute.get(page.url) || [];
     for (const placement of placements) {
-      if (!isRecord(placement)) throw new Error("Writer1 review binding is malformed");
+      if (!isRecord(placement)) invalidWriter1Output("Writer1 placement binding is malformed");
+      if (!isRecord(placement.provenance)) invalidWriter1Output("Writer1 placement is missing typed provenance");
+      const provenance = placement.provenance;
+      if (!["review", "evidence", "claim"].includes(provenance.type)) invalidWriter1Output("Writer1 placement provenance type is invalid");
+      const stableRef = provenance.ref ?? provenance.stableRef;
+      if (!stringValue(stableRef) || !sealedRefs.has(stableRef)) invalidWriter1Output("Writer1 placement provenance does not resolve to sealed Writer1 input");
+      if (!stringValue(provenance.placement) || !stringValue(provenance.section) || !sections.has(provenance.section)) invalidWriter1Output("Writer1 placement provenance requires a valid placement and section");
       const reviewId = placement.reviewId ?? placement.sourceReviewId ?? placement.evidenceId ?? placement.refId;
       const quote = placement.quote ?? placement.excerpt ?? placement.exactText;
-      if (!stringValue(reviewId) || !stringValue(quote)) throw new Error("Writer1 review binding requires review ID and quote");
-      const source = allowed.find((entry) => String(entry.review?.id ?? entry.review?.reviewId) === String(reviewId));
-      if (!source) throw new Error(`Writer1 review binding references an unapproved review: ${reviewId}`);
-      const sourceText = String(source.review?.text ?? source.review?.exactText ?? source.review?.reviewText ?? "");
-      if (!sourceText || !normalized(sourceText).includes(normalized(String(quote)))) throw new Error(`Writer1 quote is not bound to the source review: ${reviewId}`);
-      if (!stringValue(placement.attribution ?? placement.reviewer ?? placement.author)) throw new Error(`Writer1 review binding is missing attribution: ${reviewId}`);
+      if (provenance.type === "review") {
+        if (!stringValue(reviewId) || !stringValue(quote)) invalidWriter1Output("Writer1 review binding requires review ID and quote");
+        if (String(stableRef) !== String(reviewId)) invalidWriter1Output("Writer1 review provenance ref must equal its stable review reference");
+        const source = allowed.find((entry) => String(entry.review?.id ?? entry.review?.reviewId) === String(reviewId));
+        if (!source) invalidWriter1Output(`Writer1 review binding references an unapproved review: ${reviewId}`);
+        const sourceText = String(source.review?.text ?? source.review?.exactText ?? source.review?.reviewText ?? "");
+        if (!sourceText || !normalized(sourceText).includes(normalized(String(quote)))) invalidWriter1Output(`Writer1 quote is not bound to the source review: ${reviewId}`);
+        if (!stringValue(placement.attribution ?? placement.reviewer ?? placement.author)) invalidWriter1Output(`Writer1 review binding is missing attribution: ${reviewId}`);
+      } else if (!stringValue(placement.claim ?? placement.statement ?? placement.text ?? placement.body)) invalidWriter1Output("Writer1 evidence/claim placement is missing its claim text");
     }
   }
-  if (seen.size !== 2 || JSON.stringify([...seen]) !== JSON.stringify(WRITER1_ROUTES)) throw new Error("Writer1 output route order/topology is not exactly Repair then Installation");
-  for (const key of ["home", "homepage", "contact", "strategy", "strategyOverview", "strategyOverviewPage"]) if (key in parsed) throw new Error(`Writer1 output must not contain ${key}`);
+  if (seen.size !== 2 || JSON.stringify([...seen]) !== JSON.stringify(WRITER1_ROUTES)) invalidWriter1Output("Writer1 output route order/topology is not exactly Repair then Installation");
+  for (const key of ["home", "homepage", "contact", "strategy", "strategyOverview", "strategyOverviewPage"]) if (key in parsed) invalidWriter1Output(`Writer1 output must not contain ${key}`);
   scanForbiddenPublicReferences(parsed);
   return parsed;
 }
@@ -177,10 +204,15 @@ export function writer1Projection(sealed: { handoff: Dict; manifest: Dict; ledge
   const services = WRITER1_ROUTES.map((route) => {
     const intent = route.slice(1); const page = pages.get(intent); const comparison = selected.get(intent); const ledger = ledgerServices.get(intent);
     if (!page || !comparison || !ledger) throw new Error(`sealed Writer1 projection is missing approved service ${intent}`);
-    return { page, comparison: { id: comparison.id, name: comparison.name, directCompletedEvidenceCount: comparison.directCompletedEvidenceCount, directEvidenceReviewIds: comparison.directEvidenceReviewIds, canonicalServiceId: comparison.canonicalServiceId, canonicalIntentId: comparison.canonicalIntentId, destination: comparison.destination }, ledger: { id: ledger.id, name: ledger.name, reviewIds: ledger.reviewIds, currentSitePageUrls: ledger.currentSitePageUrls, provenance: ledger.provenance, siteAuditCoverage: ledger.siteAuditCoverage }, reviewEvidence: reviewEvidence(handoff, comparison.directEvidenceReviewIds) };
+    const prescriptionId = String(page.id ?? page.canonicalIntentId);
+    return { page, prescriptionId, comparison: { id: comparison.id, name: comparison.name, directCompletedEvidenceCount: comparison.directCompletedEvidenceCount, directEvidenceReviewIds: comparison.directEvidenceReviewIds, canonicalServiceId: comparison.canonicalServiceId, canonicalIntentId: comparison.canonicalIntentId, destination: comparison.destination }, ledger: { id: ledger.id, name: ledger.name, reviewIds: ledger.reviewIds, currentSitePageUrls: ledger.currentSitePageUrls, provenance: ledger.provenance, siteAuditCoverage: ledger.siteAuditCoverage }, reviewEvidence: reviewEvidence(handoff, comparison.directEvidenceReviewIds) };
   });
   const foldedSupport = (handoff.candidateServices || []).filter((entry: Dict) => entry.status === "folded" && WRITER1_ROUTES.some((route) => route.slice(1) === entry.canonicalServiceId)).map((entry: Dict) => ({ id: entry.id, canonicalServiceId: entry.canonicalServiceId, foldedInto: entry.foldedInto, directCompletedEvidenceCount: entry.directCompletedEvidenceCount, directEvidenceReviewIds: entry.directEvidenceReviewIds, supportingEvidence: entry.supportingEvidence, reviewEvidence: reviewEvidence(handoff, entry.directEvidenceReviewIds) }));
-  return { schemaVersion: "words-writer1-input/v2", stage: "writer1", approvedRoutes: WRITER1_ROUTES, services, foldedSupport, sourceEnvelopeDigest: sealed.bridge.source.envelopeDigest, bridgeDigest: sealed.manifest.bridgeDigest };
+  const sealedRefs = [...new Set([
+    ...services.flatMap((service: Dict) => [service.prescriptionId, service.page.id, service.page.canonicalIntentId, service.comparison.id, service.comparison.canonicalServiceId, service.comparison.canonicalIntentId, ...(service.comparison.directEvidenceReviewIds || []), ...(service.ledger.reviewIds || []), ...(service.ledger.siteAuditCoverage?.crawlRefs || []), ...(service.ledger.provenance?.siteAuditUrls || []), ...service.reviewEvidence.map((entry: Dict) => entry.review.id), ...service.reviewEvidence.map((entry: Dict) => entry.judgment.id)]),
+    ...foldedSupport.flatMap((entry: Dict) => [entry.id, entry.canonicalServiceId, ...(entry.directEvidenceReviewIds || []), ...(entry.supportingEvidence?.reviewIds || []), ...entry.reviewEvidence.map((review: Dict) => review.review.id)]),
+  ].filter((ref): ref is string => stringValue(ref)))];
+  return { schemaVersion: "words-writer1-input/v2", stage: "writer1", approvedRoutes: WRITER1_ROUTES, services, foldedSupport, sealedRefs, sourceEnvelopeDigest: sealed.bridge.source.envelopeDigest, bridgeDigest: sealed.manifest.bridgeDigest };
 }
 export async function dispatchReceipt(root: string, notice: CursorDispatchNotice): Promise<void> {
   const receipt = { schemaVersion: "words-canary-dispatch/v2", status: "dispatched", stage: notice.stage, provider: "cursor-sdk", requestedModel: notice.requestedModel, officialModel: notice.officialModel, modelParams: notice.modelParams, registryDigest: notice.registryDigest, effort: notice.effort, effortAttestationSource: notice.effortAttestationSource, fast: false, agentId: notice.agentId, jobId: notice.jobId, threadUrl: notice.threadUrl, inputDigest: notice.inputDigest, promptDigest: notice.promptDigest, requestDigest: notice.requestDigest, dispatchedAt: notice.dispatchedAt };
@@ -188,9 +220,11 @@ export async function dispatchReceipt(root: string, notice: CursorDispatchNotice
   if (process.env.GITHUB_STEP_SUMMARY) await fs.appendFile(process.env.GITHUB_STEP_SUMMARY, `\n### Cursor Writer1 dispatch\n- Agent: \`${notice.agentId}\`\n- Run: \`${notice.jobId}\`\n- Direct thread: ${notice.threadUrl}\n`, "utf8");
 }
 
-export const WRITER1_RETRIEVAL_PROMPT = `Versioned Writer1 retrieval correction. Do not write, rewrite, summarize, recompute, or regenerate any website copy. Reattach to this same Cursor agent thread and read the existing words-writer1-output/v1 that you already produced in your current agent context/workspace. Return that complete artifact verbatim as JSON, with no prose wrapper, no Markdown fences, and no commentary.
+export const WRITER1_RETRIEVAL_PROMPT = `Versioned Writer1 retrieval correction. Do not write, rewrite, summarize, recompute, or regenerate any website copy. Reattach to this same Cursor agent thread and read the existing words-writer1-output/v1 that you already produced in your current agent context/workspace.
 
-The returned root object must have schemaVersion exactly "words-writer1-output/v1" and pages exactly in this order: /garage-door-repair, /garage-door-installation. Each service page must include the complete existing copy fields, sections, and evidence/quote bindings. Return no Home, Contact, or Strategy page. Spring-repair and opener-installation evidence may remain folded inside the approved service copy, but there must be no standalone spring/opener route, navigation item, or CTA. This is retrieval of the existing output only; do not change any words. If the complete existing JSON is unavailable, fail instead of inventing or summarizing it.`;
+Your entire response must be exactly one of these two choices and nothing else: (1) the complete existing words-writer1-output/v1 JSON artifact verbatim, with no prose wrapper, Markdown fences, or commentary; or (2) the exact literal sentinel OUTPUT_NOT_RECOVERABLE. Never return a summary, explanation, partial JSON, regenerated copy, or any other text. If the complete existing JSON is unavailable, return the sentinel.
+
+For the JSON choice, schemaVersion must be exactly "words-writer1-output/v1" and pages must be exactly these two service pages in this order: /garage-door-repair, /garage-door-installation. Each page must preserve the existing complete copy and include prescriptionId bound exactly to the sealed Writer1 page prescription, primaryKeyword, title, seoTitle, metaDescription, h1, body, and non-empty sections with heading/body. Every review, quote, and claim placement must carry typed provenance {type: "review"|"evidence"|"claim", ref: <stable sealed Writer1 review/evidence ref>, placement: <placement>, section: <section>} and every ref must resolve to the sealed Writer1 input. Return no Home, Contact, or Strategy page. Spring-repair and opener-installation evidence may remain folded inside approved service copy, but there must be no standalone spring/opener route, navigation item, or CTA. This is retrieval of the existing output only; do not change any words.`;
 
 export async function runCorrection(root = process.cwd()): Promise<{ status: string; stage: string; threadUrl?: string; followUpRunId?: string }> {
   const control = readJson(root, ".factory-wake/360-words-control.json");
@@ -204,6 +238,7 @@ export async function runCorrection(root = process.cwd()): Promise<{ status: str
   const prior = validatePriorWriter1Artifact(priorRoot);
   const sealed = validateSealed(root);
   const payload = writer1Projection(sealed);
+  let followUpNotice: CursorDispatchNotice | undefined;
   await writeJson(jsonFile(root, "canary/runtime/prior-artifact-verification.json"), { status: "verified", actionRunId: PRIOR_ACTION_RUN_ID, artifactId: PRIOR_ARTIFACT_ID, prior: prior.bindings });
   await writeJson(jsonFile(root, "canary/runtime/state.json"), { status: "writer1-retrieval-dispatching", stage: "writer1", runId: sealed.handoff.runId, sealedHandoffDigest: sealed.handoff.resealDigest, prior: prior.bindings });
   const result = await retrieveCursorWriterOutput({
@@ -213,11 +248,13 @@ export async function runCorrection(root = process.cwd()): Promise<{ status: str
     prior: prior.bindings,
     prompt: WRITER1_RETRIEVAL_PROMPT,
     runId: sealed.handoff.runId,
-    onFollowUp: (notice) => dispatchReceipt(root, notice),
+    onFollowUp: (notice) => { followUpNotice = notice; },
     validateOutput: (output) => parseAndValidateWriter1Output(output, payload),
   });
   const parsed = parseAndValidateWriter1Output(result.output, payload);
   validateCursorWriterFollowUpReceipt(result.receipt, prior.bindings, digestOf(WRITER1_RETRIEVAL_PROMPT));
+  if (!followUpNotice) throw new Error("Writer1 follow-up completed without a dispatch notice");
+  await dispatchReceipt(root, followUpNotice);
   await writeJson(jsonFile(root, "canary/runtime/writer1-correction-receipt.json"), result.receipt);
   await writeJson(jsonFile(root, "canary/runtime/writer1-validation.json"), { status: "valid", schemaVersion: parsed.schemaVersion, routes: parsed.pages.map((page: Dict) => page.url), outputDigest: result.receipt.outputDigest, sameThread: result.threadUrl === prior.bindings.priorThreadUrl, prior: prior.bindings, followUpRunId: result.receipt.jobId });
   await writeJson(jsonFile(root, "canary/outputs/writer1-output.json"), parsed);
@@ -229,5 +266,12 @@ export const run = runCorrection;
 
 if (import.meta.url === `file://${process.argv[1]}`) {
   const operation = process.argv.includes("--validate-only") ? Promise.resolve(validateSealed()) : runCorrection();
-  operation.then((result) => { console.log(JSON.stringify(result)); }).catch(async (error) => { await writeJson(path.join(process.cwd(), "canary/runtime/failure.json"), { status: "failed", error: error instanceof Error ? error.message : String(error) }); process.exitCode = 1; });
+  operation.then((result) => { console.log(JSON.stringify(result)); }).catch(async (error) => {
+    const code = isRecord(error) && typeof error.code === "string" ? error.code : "WRITER1_CORRECTION_FAILED";
+    const message = error instanceof Error ? error.message : String(error);
+    const recovery = code === "OUTPUT_NOT_RECOVERABLE";
+    await writeJson(path.join(process.cwd(), "canary/runtime/failure.json"), { status: "failed", stage: "writer1", errorCode: code, error: message, ...(recovery ? { recovery: "manual-architect-recovery-required" } : {}) });
+    if (recovery) await writeJson(path.join(process.cwd(), "canary/runtime/state.json"), { status: "writer1-output-not-recoverable", stage: "writer1", errorCode: code, recoveryRequired: true, nextStage: null });
+    process.exitCode = 1;
+  });
 }

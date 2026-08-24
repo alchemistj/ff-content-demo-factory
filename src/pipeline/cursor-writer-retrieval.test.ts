@@ -28,34 +28,36 @@ function makeRun(id: string, output: unknown) {
   return { id, agentId, model: { id: OFFICIAL_CURSOR_MODEL }, wait: async () => ({ status: "finished", result: output, model: { id: OFFICIAL_CURSOR_MODEL } }) } as any;
 }
 
-function initialTransport(): CursorTestTransport {
+function initialTransport(counters: { creates: number } = { creates: 0 }): CursorTestTransport {
   const agent = { agentId, model: { id: OFFICIAL_CURSOR_MODEL }, send: async () => makeRun(priorJobId, { result: "prior summary" }) } as any;
   return {
     listModels: async () => registry,
-    create: async () => ({ agent, run: makeRun(priorJobId, { result: "prior summary" }) }),
+    create: async () => { counters.creates += 1; return { agent, run: makeRun(priorJobId, { result: "prior summary" }) }; },
     resume: async () => agent,
     getAgent: async () => ({ id: agentId, url: threadUrl }),
     getRun: async () => makeRun(priorJobId, { result: "prior summary" }),
   };
 }
 
-function followUpTransport(counters: { creates: number; resumes: number; sends: number }): CursorTestTransport {
+function followUpTransport(counters: { creates: number; resumes: number; sends: number }, output: unknown = fullOutput): CursorTestTransport {
   return {
     listModels: async () => registry,
     create: async () => { counters.creates += 1; throw new Error("Agent.create must never be used by Writer1 retrieval"); },
     resume: async (id) => {
       counters.resumes += 1;
       assert.equal(id, agentId);
-      return { agentId, model: { id: OFFICIAL_CURSOR_MODEL }, send: async (prompt: string, options: any) => { counters.sends += 1; assert.match(prompt, /return that complete artifact verbatim/u); assert.deepEqual(options.model, { id: OFFICIAL_CURSOR_MODEL, params: [{ id: "fast", value: "false" }, { id: "effort", value: "high" }] }); return makeRun(followUpJobId, fullOutput); } } as any;
+      return { agentId, model: { id: OFFICIAL_CURSOR_MODEL }, send: async (prompt: string, options: any) => { counters.sends += 1; assert.match(prompt, /return that complete artifact verbatim/u); assert.deepEqual(options.model, { id: OFFICIAL_CURSOR_MODEL, params: [{ id: "fast", value: "false" }, { id: "effort", value: "high" }] }); return makeRun(followUpJobId, output); } } as any;
     },
     getAgent: async (id) => ({ id, url: threadUrl }),
-    getRun: async () => makeRun(followUpJobId, fullOutput),
+    getRun: async () => makeRun(followUpJobId, output),
   };
 }
 
 async function priorReceipt() {
   const store = createMemoryCursorReceiptStore();
-  const initial = await createCursorWriterExecutorForTest({ transport: initialTransport(), receiptStore: store, env }).dispatch("writer1", { approved: ["/garage-door-repair", "/garage-door-installation"] }, "initial Writer1", "32717620900");
+  const initialCounters = { creates: 0 };
+  const initial = await createCursorWriterExecutorForTest({ transport: initialTransport(initialCounters), receiptStore: store, env }).dispatch("writer1", { approved: ["/garage-door-repair", "/garage-door-installation"] }, "initial Writer1", "32717620900");
+  assert.equal(initialCounters.creates, 1, "the separate initial dispatch path must retain Agent.create");
   const prior: CursorFollowUpBindings = { priorActionRunId: "32776170549", priorArtifactId: 9539302493, priorRunId: "32717620900", priorJobId, priorAgentId: agentId, priorThreadUrl: threadUrl, priorOutputDigest: initial.receipt.outputDigest, priorInputDigest: initial.receipt.inputDigest, priorPromptDigest: initial.receipt.promptDigest, priorRequestDigest: initial.receipt.requestDigest };
   return { store, receipt: initial.receipt, prior };
 }
@@ -85,5 +87,17 @@ test("malformed or incomplete follow-up output fails before a completed correcti
   const transport = followUpTransport({ creates: 0, resumes: 0, sends: 0 });
   await assert.rejects(() => retrieveCursorWriterOutput({ env, receiptStore: store, priorReceipt: receipt, prior, prompt: "Versioned retrieval: return that complete artifact verbatim.", runId: prior.priorRunId, transport, validateOutput: () => { throw new Error("missing full copy JSON"); } }), /missing full copy JSON/u);
   assert.equal(store.records.size, 1); // the old receipt remains; no completed follow-up receipt was added.
+  assert.equal([...store.records.values()].some((value: any) => value.mode === "same-thread-retrieval"), false);
+});
+
+test("sentinel fails with explicit recovery code and never persists a completed correction receipt", async () => {
+  const { store, receipt, prior } = await priorReceipt();
+  const counters = { creates: 0, resumes: 0, sends: 0 };
+  const transport = followUpTransport(counters, "OUTPUT_NOT_RECOVERABLE");
+  await assert.rejects(() => retrieveCursorWriterOutput({ env, receiptStore: store, priorReceipt: receipt, prior, prompt: "Versioned retrieval: return that complete artifact verbatim or OUTPUT_NOT_RECOVERABLE.", runId: prior.priorRunId, transport, validateOutput: (output) => {
+    if (output === "OUTPUT_NOT_RECOVERABLE") { const error = Object.assign(new Error("Writer1 output is not recoverable"), { code: "OUTPUT_NOT_RECOVERABLE" }); throw error; }
+  } }), (error: unknown) => (error as { code?: string }).code === "OUTPUT_NOT_RECOVERABLE");
+  assert.equal(counters.creates, 0);
+  assert.equal(counters.sends, 1);
   assert.equal([...store.records.values()].some((value: any) => value.mode === "same-thread-retrieval"), false);
 });
