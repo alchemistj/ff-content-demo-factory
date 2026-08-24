@@ -28,6 +28,10 @@ function adapters({ failJudge = false } = {}) {
     { id: 'r2', author: 'Anthony', rating: 5, date: '2026-01-02', source: 'apify-finalist', text: 'Repaired a panel.' },
   ];
   const proposal = {
+    serviceCoverageLedger: { version: 'canonical-service-coverage-ledger-v1', prospectId: 'one', placeId: 'one', aliases: {}, services: [
+      { id: 'ev-charging', name: 'EV charging', reviewIds: ['r1'], currentSitePageUrls: [] },
+      { id: 'panel-upgrade', name: 'Panel upgrade', reviewIds: ['r2'], currentSitePageUrls: [] },
+    ] },
     services: [{ id: 'ev-charging', name: 'EV charging' }, { id: 'panel-upgrade', name: 'Panel upgrade', passedOverReason: 'No direct anchor.' }],
     pages: [
       { type: 'Home', service: 'home', url: '/', primaryKeyword: 'electrician dallas', titleDirection: 'One Electric | Dallas electrical work', h1Direction: 'Electrical work grounded in real jobs', angle: 'Lead with verified local work.', whyIncluded: 'Core entry page.', overlapBoundaries: 'Keep service specifics on service pages.', claims: [], traps: [], strongestEvidence: 'r1', recommendedFirstReview: { reviewId: 'r1', reviewer: 'Allen', rating: 5, date: '2026-01-01', exactText: reviews[0].text, why: 'Direct completed work.' } },

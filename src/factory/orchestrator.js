@@ -7,7 +7,7 @@ const { MAX_DISCOVERY_CANDIDATES, stableCandidateIdentity, buildCandidateBench, 
 const { buildClassificationArtifact } = require('../review-evidence/classify');
 const { buildPrescriptionEvidence } = require('../review-evidence/prescription');
 const { prescribe } = require('./prescription');
-const { digest } = require('./prescription-policy');
+const { digest, validateCompleteCanonicalLedger } = require('./prescription-policy');
 const { architectQa, renderGate1 } = require('./gate1');
 
 const REVIEW_LIMIT = 50;
@@ -139,8 +139,10 @@ function buildValidatedPrescription({ run, classification, proposal }) {
   const services = proposal.services || proposal.candidateServices || (Array.isArray(proposal.valueHierarchy) ? proposal.valueHierarchy : proposal.valueHierarchy?.candidates) || [];
   if (!Array.isArray(pages) || !pages.length) throw new Error('Cursor proposal must include explicit pages');
   if (!Array.isArray(services)) throw new Error('Cursor proposal must include candidate services');
+  const serviceLedger = proposal.serviceCoverageLedger || proposal.serviceLedger;
+  validateCompleteCanonicalLedger(serviceLedger, { services, pages });
   const evidence = buildPrescriptionEvidence({ classification, pages, candidateServices: services });
-  const prescription = prescribe({ finalist: run.candidate, classification, services, proposedPages: pages, policy: proposal.pagePolicy, override: proposal.expansionOverride || proposal.expansionApproval, serviceLedger: proposal.serviceCoverageLedger || proposal.serviceLedger, runContext: { prospectId: run.prospectId, runId: run.runId }, sourceBinding: proposal.sourceCheckpoint || proposal.sourceBinding });
+  const prescription = prescribe({ finalist: run.candidate, classification, services, proposedPages: pages, policy: proposal.pagePolicy, override: proposal.expansionOverride || proposal.expansionApproval, serviceLedger, runContext: { prospectId: run.prospectId, runId: run.runId }, sourceBinding: proposal.sourceCheckpoint || proposal.sourceBinding });
   prescription.evidence = evidence;
   prescription.prescriptionDigest = digest({ ...prescription, prescriptionDigest: undefined });
   return prescription;

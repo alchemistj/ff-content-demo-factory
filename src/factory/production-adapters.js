@@ -7,7 +7,7 @@ const { deriveDeterministicSignals } = require('../review-evidence/signals');
 const { buildClassificationArtifact } = require('../review-evidence/classify');
 const { buildPrescriptionEvidence } = require('../review-evidence/prescription');
 const { prescribe: validatePrescription } = require('./prescription');
-const { digest } = require('./prescription-policy');
+const { digest, validateCompleteCanonicalLedger } = require('./prescription-policy');
 const { renderGate1, architectQa } = require('./gate1');
 const { createFileReceiptStore } = require('./receipt-store');
 
@@ -282,7 +282,9 @@ function createProductionAdapters({
       const services = decision.candidateServices || candidateServicesFrom(modelResult.comparison);
       if (!Array.isArray(pages) || !pages.length) throw new Error('Page prescription requires explicit validated pages');
       if (!Array.isArray(services) || !services.length) throw new Error('Page prescription requires a complete candidate service comparison');
-      const validated = validatePrescription({ finalist, classification, services, proposedPages: pages, architectReview: decision.architectReview || decision, policy: decision.pagePolicy || modelResult.pagePolicy, override: decision.expansionOverride || modelResult.expansionOverride, serviceLedger: decision.serviceCoverageLedger || decision.serviceLedger || modelResult.serviceCoverageLedger, runContext: { prospectId: finalist?.prospectId || finalist?.placeId, runId: decision.runId || null }, sourceBinding: decision.sourceCheckpoint || decision.sourceBinding });
+      const serviceLedger = decision.serviceCoverageLedger || decision.serviceLedger || modelResult.serviceCoverageLedger;
+      validateCompleteCanonicalLedger(serviceLedger, { services, pages });
+      const validated = validatePrescription({ finalist, classification, services, proposedPages: pages, architectReview: decision.architectReview || decision, policy: decision.pagePolicy || modelResult.pagePolicy, override: decision.expansionOverride || modelResult.expansionOverride, serviceLedger, runContext: { prospectId: finalist?.prospectId || finalist?.placeId, runId: decision.runId || null }, sourceBinding: decision.sourceCheckpoint || decision.sourceBinding });
       const evidence = buildPrescriptionEvidence({ classification, pages: validated.pages, candidateServices: services });
       const output = {
         ...validated,

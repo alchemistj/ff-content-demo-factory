@@ -27,6 +27,10 @@ function serviceTerm(value) {
   return String(value || '').toLowerCase().replace(/[^a-z0-9]+/g, '');
 }
 
+function normalizeServiceKey(value) {
+  return String(value || '').trim().toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+}
+
 function serviceIdentity(service) {
   return String(service?.id || service?.name || service?.slug || '').trim();
 }
@@ -53,8 +57,22 @@ function pageSetDigest(pages) {
 }
 
 function ledgerMaps(ledger) {
-  const entries = new Map((ledger?.services || []).map((entry) => [String(entry.id), entry]));
-  const aliases = new Map(Object.entries(ledger?.aliases || {}));
+  const entries = new Map();
+  for (const entry of ledger?.services || []) {
+    const key = normalizeServiceKey(entry.id);
+    if (!key || entries.has(key)) throw new Error(`canonical service ledger has a canonical-id collision: ${entry.id}`);
+    entries.set(key, entry);
+  }
+  const aliases = new Map();
+  for (const [raw, target] of Object.entries(ledger?.aliases || {})) {
+    const key = normalizeServiceKey(raw);
+    const canonicalTarget = normalizeServiceKey(target);
+    if (!key || !canonicalTarget) throw new Error('canonical service ledger contains an empty alias');
+    if (aliases.has(key)) throw new Error(`canonical service ledger alias collision: ${raw}`);
+    if (entries.has(key) && key !== canonicalTarget) throw new Error(`canonical service ledger alias conflicts with canonical family: ${raw}`);
+    if (!entries.has(canonicalTarget)) throw new Error(`canonical service ledger alias ${raw} targets an unmapped canonical intent ${target}`);
+    aliases.set(key, canonicalTarget);
+  }
   return { entries, aliases };
 }
 
@@ -62,7 +80,8 @@ function canonicalServiceId(raw, ledger, { allowImplicit = true } = {}) {
   const rawId = String(raw || '').trim();
   if (!rawId) throw new Error('service intent is empty');
   const { entries, aliases } = ledgerMaps(ledger);
-  const mapped = aliases.get(rawId) || (entries.has(rawId) ? rawId : null);
+  const normalized = normalizeServiceKey(rawId);
+  const mapped = aliases.get(normalized) || (entries.has(normalized) ? normalized : null);
   if (mapped) {
     if (!entries.has(mapped)) throw new Error(`service ledger alias ${rawId} targets an unmapped canonical intent ${mapped}`);
     return mapped;
@@ -78,8 +97,10 @@ function assertNoServiceAliasCollisions(services) {
     if (!id) throw new Error('candidate service is missing a stable id');
     const key = serviceTerm(id);
     if (!key) throw new Error(`candidate service ${id} has an empty canonical id`);
-    if (seen.has(key) && seen.get(key) !== id) throw new Error(`service alias collision: ${seen.get(key)} and ${id}`);
-    seen.set(key, id);
+    const normalized = normalizeServiceKey(id);
+    if (!normalized) throw new Error(`candidate service ${id} has an empty normalized id`);
+    if (seen.has(normalized) && seen.get(normalized) !== id) throw new Error(`service alias collision: ${seen.get(normalized)} and ${id}`);
+    seen.set(normalized, id);
   }
   return true;
 }
@@ -95,6 +116,20 @@ function canonicalizeServiceCandidates(services, ledger = null) {
     if (ledger && !ledgerMaps(ledger).entries.has(canonicalIntentId)) throw new Error(`candidate service ${rawId} is not mapped in the prospect service ledger`);
     return { ...service, sourceServiceId: rawId, canonicalServiceId: canonicalIntentId, canonicalIntentId };
   });
+}
+
+function validateCompleteCanonicalLedger(ledger, { services = [], pages = [] } = {}) {
+  if (!ledger || ledger.version !== 'canonical-service-coverage-ledger-v1') throw new Error('complete canonical service ledger is required in production');
+  if (!ledger.prospectId && !ledger.placeId) throw new Error('canonical service ledger is missing prospect identity');
+  if (!Array.isArray(ledger.services) || !ledger.services.length) throw new Error('canonical service ledger is incomplete');
+  const { entries } = ledgerMaps(ledger);
+  for (const service of ledger.services) {
+    if (normalizeServiceKey(service.id) !== service.id || !service.name || !Array.isArray(service.reviewIds) || !Array.isArray(service.currentSitePageUrls)) throw new Error(`canonical service ledger entry is incomplete: ${service.id || '<missing>'}`);
+  }
+  for (const candidate of services || []) canonicalServiceId(serviceIdentity(candidate), ledger, { allowImplicit: false });
+  for (const page of pages || []) if (page.type === 'Service') canonicalServiceId(page.service, ledger, { allowImplicit: false });
+  if (!entries.size) throw new Error('canonical service ledger has no canonical families');
+  return ledger;
 }
 
 function canonicalizePageServices(pages, ledger = null) {
@@ -136,7 +171,10 @@ function rankCandidateServices(services, ledger = null) {
 
 function selectTopServiceDestinations(services, count = STANDARD_PRESCRIPTION_POLICY.servicePageCount, ledger = null) {
   const ranked = rankCandidateServices(services, ledger);
-  const eligible = ranked.filter((entry) => entry.direct > 0);
+  // Home-level breadth is a canonical evidence family, but never a service
+  // destination. It must be preserved in comparison and may support Home;
+  // it cannot displace a genuine service family in the page ranking.
+  const eligible = ranked.filter((entry) => entry.direct > 0 && entry.id !== 'home-breadth');
   if (eligible.length < count) throw new Error(`only ${eligible.length} evidence-backed service candidates available; ${count} required`);
   return eligible.slice(0, count).map((entry) => entry.id);
 }
@@ -149,7 +187,7 @@ function approvalPayload(override) {
 function validateExpansionOverride(override, { pages, policy, runContext = {}, sourceBinding = {}, evidenceDigest = null } = {}) {
   if (!override) return { mode: 'standard', override: null };
   if (!isExactStandardPolicy(policy)) throw new Error('standard prescription policy object was altered');
-  const required = ['overrideId', 'prospectId', 'runId', 'policyVersion', 'approvedPageIds', 'approvedCanonicalIntentIds', 'approvedBy', 'approvedAt', 'sourceArtifactDigest', 'evidenceDigest', 'overrideDigest'];
+  const required = ['overrideId', 'prospectId', 'runId', 'policyVersion', 'approvedPageIds', 'approvedCanonicalIntentIds', 'approvedBy', 'approvedAt', 'reason', 'sourceArtifactDigest', 'evidenceDigest', 'overrideDigest'];
   for (const field of required) if (override[field] == null || override[field] === '' || (Array.isArray(override[field]) && !override[field].length)) throw new Error(`expansion override missing ${field}`);
   if (override.mode !== 'expanded-one-off' || override.policyVersion !== STANDARD_PRESCRIPTION_POLICY.version) throw new Error('expansion override policy version is invalid');
   if (!AUTHORITATIVE_APPROVERS.includes(override.approvedBy)) throw new Error('expansion override approver is not authoritative');
@@ -192,4 +230,4 @@ function validatePagePolicy({ pages, services, serviceLedger = null, policy = ST
   return { policy: { ...STANDARD_PRESCRIPTION_POLICY }, policyMode: overrideResult.mode, allowedServicePageCount: expectedServiceCount, override: overrideResult.override, selectedServiceIds: selected, normalizedPages, normalizedServices, pageSetDigest: pageSetDigest(normalizedPages) };
 }
 
-module.exports = { STANDARD_PRESCRIPTION_POLICY, AUTHORITATIVE_APPROVERS, canonical, digest, validDate, isExactStandardPolicy, serviceTerm, serviceIdentity, pageId, pageSetDigest, ledgerMaps, canonicalServiceId, canonicalizeServiceCandidates, canonicalizePageServices, assertNoServiceAliasCollisions, rankCandidateServices, selectTopServiceDestinations, validateExpansionOverride, validatePagePolicy };
+module.exports = { STANDARD_PRESCRIPTION_POLICY, AUTHORITATIVE_APPROVERS, canonical, digest, validDate, isExactStandardPolicy, serviceTerm, normalizeServiceKey, serviceIdentity, pageId, pageSetDigest, ledgerMaps, canonicalServiceId, canonicalizeServiceCandidates, canonicalizePageServices, assertNoServiceAliasCollisions, validateCompleteCanonicalLedger, rankCandidateServices, selectTopServiceDestinations, validateExpansionOverride, validatePagePolicy };
