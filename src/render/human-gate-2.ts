@@ -167,6 +167,7 @@ function routeOf(value: unknown): string {
   const raw = typeof value === "string" ? value : "";
   try { return new URL(raw).pathname || "/"; } catch { return raw.startsWith("/") ? raw : `/${raw}`; }
 }
+function regexLiteral(value: string): string { return value.replace(/[.*+?^${}()|[\]\\]/gu, "\\$&"); }
 function assertPublicRoutesAreSafe(site: Dict, sealedFacts?: Dict, rejectedRoutes: unknown[] = []): void {
   const pages = list(site.pages ?? site.pageWords);
   const routes = pages.map((page) => routeOf(dict(page).url ?? dict(page).path ?? dict(page).route));
@@ -174,7 +175,15 @@ function assertPublicRoutesAreSafe(site: Dict, sealedFacts?: Dict, rejectedRoute
   if (routes.filter((route) => route === "/").length > 1) throw new Error("Human Gate 2 cannot render multiple Home/Strategy root routes");
   const publicPayload = JSON.stringify({ pages, header: site.header, footer: site.footer });
   for (const route of rejectedRoutes) if (typeof route === "string" && publicPayload.includes(route)) throw new Error("Human Gate 2 public business output leaked a rejected service route");
-  if (sealedFacts) for (const value of [sealedFacts.retrievedWrittenReviewCount, sealedFacts.reviewRetrievalDate, ...(Array.isArray(sealedFacts.reviewBackedServiceNames) ? sealedFacts.reviewBackedServiceNames : [])]) if (value !== undefined && publicPayload.includes(String(value))) throw new Error("Human Gate 2 public business output leaked sealed review-analysis value");
+  if (sealedFacts) {
+    const count = sealedFacts.retrievedWrittenReviewCount;
+    if (typeof count === "number" && new RegExp(`\\b${count}\\s+(?:of\\s+(?:your\\s+)?(?:Google\\s+)?reviews?|written\\s+reviews?)`, "iu").test(publicPayload)) throw new Error("Human Gate 2 public business output leaked sealed review-analysis value");
+    const date = sealedFacts.reviewRetrievalDate;
+    if (typeof date === "string" && new RegExp(`(?:as[- ]of|through|retriev(?:ed|al)|snapshot)[^\\n]{0,40}${regexLiteral(date)}`, "iu").test(publicPayload)) throw new Error("Human Gate 2 public business output leaked sealed review-analysis value");
+    for (const name of Array.isArray(sealedFacts.reviewBackedServiceNames) ? sealedFacts.reviewBackedServiceNames : []) {
+      if (typeof name === "string" && new RegExp(`${regexLiteral(name)}[^\\n]{0,60}(?:without|no|missing|not have)[^\\n]{0,30}page`, "iu").test(publicPayload)) throw new Error("Human Gate 2 public business output leaked sealed review-analysis value");
+    }
+  }
   for (const key of ["reviewAnalysisFacts", "retrievedWrittenReviewCount", "reviewRetrievalDate", "reviewBackedServicesWithoutPages", "reviewBackedServiceNames"]) {
     if (publicPayload.includes(key)) throw new Error(`Human Gate 2 public business output leaked sealed ${key}`);
   }
