@@ -88,7 +88,7 @@ export function parseAndValidateWriter1Output(raw: unknown, projection: Dict): D
   for (const page of parsed.pages) {
     if (!isRecord(page) || !stringValue(page.url) || !WRITER1_ROUTES.includes(page.url as typeof WRITER1_ROUTES[number]) || seen.has(page.url)) invalidWriter1Output("Writer1 output contains a missing, duplicate, or unapproved page route");
     seen.add(page.url);
-    if (page.type !== undefined && String(page.type).toLowerCase() !== "service") invalidWriter1Output("Writer1 output contains a non-service page");
+    if (page.type !== "service") invalidWriter1Output("Writer1 output page.type must be exactly service");
     for (const field of ["prescriptionId", "primaryKeyword", "title", "seoTitle", "metaDescription", "h1", "body"] as const) if (!stringValue(page[field])) invalidWriter1Output(`Writer1 output is missing full copy field ${field}`);
     const service = serviceByRoute.get(page.url);
     if (!service || page.prescriptionId !== service.prescriptionId || !sealedRefs.has(page.prescriptionId)) invalidWriter1Output(`Writer1 page prescriptionId is not bound to the sealed prescription for ${page.url}`);

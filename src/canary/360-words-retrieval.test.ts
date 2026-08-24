@@ -12,8 +12,8 @@ const projection = {
 const valid = JSON.stringify({
   schemaVersion: "words-writer1-output/v1",
   pages: [
-    { url: "/garage-door-repair", prescriptionId: "prescription-repair", primaryKeyword: "garage door repair", title: "Repair", seoTitle: "Repair", metaDescription: "Repair", h1: "Repair", body: "Repair body", sections: [{ id: "repair-section", heading: "Repair", body: "Repair copy" }], reviewPlacements: [{ reviewId: "review-repair", quote: "The repair was excellent.", attribution: "Chris", provenance: { type: "review", ref: "review-repair", placement: "repair testimonial", section: "repair-section" } }] },
-    { url: "/garage-door-installation", prescriptionId: "prescription-install", primaryKeyword: "garage door installation", title: "Installation", seoTitle: "Installation", metaDescription: "Installation", h1: "Installation", body: "Installation body", sections: [{ id: "installation-section", heading: "Installation", body: "Installation copy" }], reviewPlacements: [{ reviewId: "review-install", quote: "The installation was excellent.", attribution: "Marcie", provenance: { type: "review", ref: "review-install", placement: "installation testimonial", section: "installation-section" } }] },
+    { type: "service", url: "/garage-door-repair", prescriptionId: "prescription-repair", primaryKeyword: "garage door repair", title: "Repair", seoTitle: "Repair", metaDescription: "Repair", h1: "Repair", body: "Repair body", sections: [{ id: "repair-section", heading: "Repair", body: "Repair copy" }], reviewPlacements: [{ reviewId: "review-repair", quote: "The repair was excellent.", attribution: "Chris", provenance: { type: "review", ref: "review-repair", placement: "repair testimonial", section: "repair-section" } }] },
+    { type: "service", url: "/garage-door-installation", prescriptionId: "prescription-install", primaryKeyword: "garage door installation", title: "Installation", seoTitle: "Installation", metaDescription: "Installation", h1: "Installation", body: "Installation body", sections: [{ id: "installation-section", heading: "Installation", body: "Installation copy" }], reviewPlacements: [{ reviewId: "review-install", quote: "The installation was excellent.", attribution: "Marcie", provenance: { type: "review", ref: "review-install", placement: "installation testimonial", section: "installation-section" } }] },
   ],
 });
 
@@ -27,6 +27,7 @@ test("Writer1 output validator rejects prose, missing copy, unbound quotes, and 
   for (const raw of [
     "Writer1 is done",
     JSON.stringify({ schemaVersion: "words-writer1-output/v1", pages: [] }),
+    valid.replace('"type":"service",', ""),
     valid.replace('"metaDescription":"Repair"', '"metaDescription":""'),
     valid.replace('"primaryKeyword":"garage door repair"', '"primaryKeyword":""'),
     valid.replace('"provenance":{"type":"review"', '"provenance":{"type":""'),
@@ -42,4 +43,9 @@ test("Writer1 output validator rejects prose, missing copy, unbound quotes, and 
 
 test("Writer1 retrieval sentinel is explicit and never accepted as completed JSON", () => {
   assert.throws(() => parseAndValidateWriter1Output("OUTPUT_NOT_RECOVERABLE", projection), (error: unknown) => error instanceof Writer1OutputRecoveryError && error.code === "OUTPUT_NOT_RECOVERABLE");
+});
+
+test("Writer1 output rejects a service page with missing type", () => {
+  const missingType = JSON.stringify({ ...JSON.parse(valid), pages: JSON.parse(valid).pages.map((page: Record<string, unknown>, index: number) => index === 0 ? Object.fromEntries(Object.entries(page).filter(([key]) => key !== "type")) : page) });
+  assert.throws(() => parseAndValidateWriter1Output(missingType, projection), /page\.type.*exactly service/u);
 });
