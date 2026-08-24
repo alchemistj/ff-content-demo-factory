@@ -22,7 +22,7 @@ test("real 360 compatibility handoff preserves the four approved public routes",
 
 test("stale or tampered digests fail closed", () => {
   const invalid = clone(garageDoor360FourPageHandoff);
-  invalid.prospect.destinations.servicePages[0].keyword = "tampered";
+  invalid.prospect.destinations.servicePages[0]!.keyword = "tampered";
   assert.ok(codes(invalid).includes("DIGEST_MISMATCH"));
   const stale = clone(garageDoor360FourPageHandoff);
   stale.digests = { ...computeHandoffDigests(stale), handoffDigest: "sha256:" + "f".repeat(64) };
@@ -31,22 +31,22 @@ test("stale or tampered digests fail closed", () => {
 
 test("extra pages require an explicit valid expansion override", () => {
   const invalid = clone(garageDoor360FourPageHandoff);
-  invalid.prospect.destinations.servicePages = [...invalid.prospect.destinations.servicePages, { ...invalid.prospect.destinations.servicePages[0], id: "service-360-extra", url: "/extra-service" }];
+  invalid.prospect.destinations.servicePages = [...invalid.prospect.destinations.servicePages, { ...invalid.prospect.destinations.servicePages[0]!, id: "service-360-extra", url: "/extra-service" } as any];
   assert.ok(codes(invalid).includes("SERVICE_PAGE_COUNT"));
 });
 
 test("generic service slots and alias collisions are rejected", () => {
   const generic = clone(garageDoor360FourPageHandoff);
-  generic.serviceComparison[0].id = "service-1";
+  generic.serviceComparison[0]!.id = "service-1";
   assert.ok(codes(generic).includes("GENERIC_SERVICE_SLOT"));
   const collision = clone(garageDoor360FourPageHandoff);
-  collision.serviceComparison[1].aliases = [collision.serviceComparison[0].aliases?.[0] || "repair"];
+  collision.serviceComparison[1]!.aliases = [collision.serviceComparison[0]!.aliases?.[0] || "repair"];
   assert.ok(codes(collision).includes("ALIAS_COLLISION"));
 });
 
 test("reserved routes and rejected page routes cannot enter navigation or service comparison", () => {
   const reserved = clone(garageDoor360FourPageHandoff);
-  reserved.prospect.destinations.servicePages[0].url = "/contact";
+  reserved.prospect.destinations.servicePages[0]!.url = "/contact";
   assert.ok(codes(reserved).includes("RESERVED_ROUTE"));
   const rejected = clone(garageDoor360FourPageHandoff);
   rejected.serviceComparison.find((entry) => entry.id === "garage-door-spring-repair")!.route = "/garage-door-spring-repair";
@@ -80,8 +80,8 @@ test("Human Gate 2 rejects review-analysis leakage into public routes", () => {
 
 test("Contact may omit a first-review recommendation", () => {
   const contact = clone(garageDoor360FourPageHandoff);
-  delete contact.prospect.destinations.contact.recommendedFirstReview;
-  delete contact.prospect.destinations.contact.recommendedFirstReviewReason;
+  delete (contact.prospect.destinations.contact as { recommendedFirstReview?: string }).recommendedFirstReview;
+  delete (contact.prospect.destinations.contact as { recommendedFirstReviewReason?: string }).recommendedFirstReviewReason;
   contact.digests = computeHandoffDigests(contact);
   assert.deepEqual(validateApprovedProspectHandoff(contact), []);
 });
