@@ -106,6 +106,15 @@ test("post-dispatch wake is classified as retrieval-only and cannot reach a foll
   assert.equal(active.recovery.runId, "run-1686013d-dec5-454c-a39e-5817448e6a96");
 });
 
+test("sealed Action ZIP uses its exact root logical listing and extraction paths", () => {
+  const workflow = readFileSync(path.join(root, ".github/workflows/architect-360-words-canary.yml"), "utf8");
+  assert.match(workflow, /expected_seal_listing[\s\S]*runtime\/state\.json[\s\S]*runtime\/writer1-dispatch-manifest\.json[\s\S]*runtime\/writer1-seal-receipt\.json/u);
+  assert.match(workflow, /manifest='canary\/inputs\/post-dispatch-seal-artifact\/runtime\/writer1-dispatch-manifest\.json'/u);
+  assert.match(workflow, /seal_receipt='canary\/inputs\/post-dispatch-seal-artifact\/runtime\/writer1-seal-receipt\.json'/u);
+  assert.match(workflow, /WRITER1_POST_DISPATCH_SEAL_ROOT: canary\/inputs\/post-dispatch-seal-artifact\n/u);
+  assert.doesNotMatch(workflow, /post-dispatch-seal-artifact\/canary\/runtime\/(?:writer1-dispatch-manifest|writer1-seal-receipt)\.json/u);
+});
+
 test("two-step seal-only mode is classified separately and has no Cursor retrieval path", () => {
   const control = JSON.parse(readFileSync(path.join(root, ".factory-wake/360-words-control.json"), "utf8"));
   const sourceSha = "a".repeat(40);

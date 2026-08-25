@@ -209,8 +209,13 @@ jobs:
           mkdir -p canary/inputs/post-dispatch-seal-artifact
           gh api "repos/${GITHUB_REPOSITORY}/actions/artifacts/${SEAL_ARTIFACT_ID}/zip" > canary/inputs/post-dispatch-seal.zip
           unzip -q canary/inputs/post-dispatch-seal.zip -d canary/inputs/post-dispatch-seal-artifact
-          manifest='canary/inputs/post-dispatch-seal-artifact/canary/runtime/writer1-dispatch-manifest.json'
+          expected_seal_listing="$(printf '%s\n' runtime/state.json runtime/writer1-dispatch-manifest.json runtime/writer1-seal-receipt.json | LC_ALL=C sort)"
+          actual_seal_listing="$(unzip -Z1 canary/inputs/post-dispatch-seal.zip | LC_ALL=C sort)"
+          test "$actual_seal_listing" = "$expected_seal_listing"
+          manifest='canary/inputs/post-dispatch-seal-artifact/runtime/writer1-dispatch-manifest.json'
+          seal_receipt='canary/inputs/post-dispatch-seal-artifact/runtime/writer1-seal-receipt.json'
           test -f "$manifest"
+          test -f "$seal_receipt"
           test "$(wc -c < "$manifest" | tr -d ' ')" = "$SEAL_MANIFEST_SIZE"
           test "sha256:$(sha256sum "$manifest" | cut -d ' ' -f 1)" = "$SEAL_MANIFEST_BYTES_DIGEST"
 
@@ -284,7 +289,7 @@ jobs:
           WRITER1_GITHUB_BASELINE_ROOT: canary/inputs/github-writer1-baseline
           WRITER1_POST_DISPATCH_ROOT: canary/inputs/post-dispatch-artifact
           WRITER1_POST_DISPATCH_ZIP: canary/inputs/post-dispatch.zip
-          WRITER1_POST_DISPATCH_SEAL_ROOT: canary/inputs/post-dispatch-seal-artifact/canary
+          WRITER1_POST_DISPATCH_SEAL_ROOT: canary/inputs/post-dispatch-seal-artifact
         run: |
           if [ "${{ steps.dispatch_mode.outputs.mode }}" = 'verified-writer1-seal-only' ]; then
             node --import tsx scripts/360-words-verified.ts --writer1-seal-only
