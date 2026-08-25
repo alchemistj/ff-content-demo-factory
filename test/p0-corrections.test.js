@@ -5,14 +5,24 @@ const assert = require('node:assert/strict');
 const { normalizeWebsiteAudit } = require('../src/factory/production-adapters');
 const { validateClaimReferences } = require('../src/factory/prescription');
 const { renderGate1 } = require('../src/factory/gate1');
+const { sourceCheckpointFor, actionProofFromEnvironment } = require('../src/factory/orchestrator');
+const { semanticDigests, assertSemanticCheckpoint } = require('../src/factory/checkpoint');
+const { runCurrentHeadGate1Canary } = require('../src/run-gate1-canary');
+const fs = require('node:fs');
 
 test('owned-domain provenance rejects missing candidate domains, file URLs, conflicts, and cross-domain evidence', () => {
   assert.throws(() => normalizeWebsiteAudit({ website: 'https://owned.example', evidence: [], images: [] }, {}), /candidate-owned website domain/);
   assert.throws(() => normalizeWebsiteAudit({ website: 'file:///tmp/site', evidence: [], images: [] }, { website: 'https://owned.example' }), /http or https|invalid/);
   assert.throws(() => normalizeWebsiteAudit({ website: 'https://owned.example', provenance: { website: 'https://other.example' }, evidence: [], images: [] }, { website: 'https://owned.example' }), /not bound|conflicts/);
   assert.throws(() => normalizeWebsiteAudit({ website: 'https://owned.example', evidence: [{ sourceUrl: 'https://other.example/proof' }], images: [] }, { website: 'https://owned.example' }), /not bound/);
+  assert.throws(() => normalizeWebsiteAudit({ website: 'https://owned.example', evidence: [{ sourceUrl: 'https://owned.example/a', url: 'https://owned.example/b' }], images: [] }, { website: 'https://owned.example' }), /conflicting provenance/);
   const normalized = normalizeWebsiteAudit({ website: 'https://www.owned.example', evidence: [{ sourceUrl: 'https://owned.example/services', provenance: { sourceUrl: 'https://www.owned.example/services' } }], images: [] }, { website: 'https://owned.example' });
   assert.equal(normalized.website, 'https://www.owned.example');
+});
+
+test('production source checkpoints fail closed on missing real receipts', () => {
+  const run = { runId: 'run-1', candidate: { placeId: 'place-1', name: 'Example', location: 'Town', website: 'https://owned.example' }, paidWork: { finalistEnrichment: {} }, artifacts: { reviewPacket: {}, reviewJudgments: {} } };
+  assert.throws(() => sourceCheckpointFor(run, { discoveryPacket: { provenance: { run: { provider: 'apify' } } }, auditReceipts: {} }), /receipt/);
 });
 
 test('claim evidence requires direct service support and rejects untyped/cross-domain site refs', () => {
@@ -39,4 +49,26 @@ test('Gate 1 appendix exposes QA, receipt, exact-head, and checkpoint lineage wi
   assert.match(markdown, /Exact-head test evidence/);
   assert.match(markdown, /Source manifest digest/);
   assert.match(markdown, /production page copy has not been written/);
+});
+
+test('restore semantic checks and exact-head proof are deterministic', () => {
+  const state = { activeRun: { status: 'awaiting-human-gate-1', artifacts: { sourceCheckpoint: { sourceManifest: { sourceMaterialDigest: 'sha256:source' }, sourceManifestDigest: 'sha256:manifest', sourceMaterial: {} }, prescription: { evidenceDigest: 'sha256:evidence', serviceCoverageLedger: { services: [] }, pages: [], prescriptionDigest: 'sha256:prescription' } } } };
+  const digests = semanticDigests(state);
+  const checkpoint = { sourceSha: 'head-1', semanticDigests: digests };
+  assert.deepEqual(assertSemanticCheckpoint({ checkpoint, state, currentHeadSha: 'head-1' }), digests);
+  assert.throws(() => assertSemanticCheckpoint({ checkpoint: { ...checkpoint, semanticDigests: { ...digests, evidenceDigest: 'sha256:tampered' } }, state, currentHeadSha: 'head-1' }), /semantic digest mismatch/);
+  assert.deepEqual(actionProofFromEnvironment({ FACTORY_CHECKED_OUT_SHA: 'head-1', FACTORY_EXPECTED_HEAD_SHA: 'head-1', FACTORY_HEAD_ASSERTION: 'true', FACTORY_TEST_RUN_URL: 'https://actions.example/run' }), { checkedOutSha: 'head-1', expectedHeadSha: 'head-1', headAssertion: true, testRunUrl: 'https://actions.example/run' });
+  const wake = fs.readFileSync('.github/workflows/architect-factory-wake.yml', 'utf8');
+  assert.match(wake, /consumedNonces\.includes/);
+  assert.doesNotMatch(wake, /consumedWakeIds[^\n]*slice\(/);
+  const canary = fs.readFileSync('.github/workflows/current-head-gate1-canary.yml', 'utf8');
+  assert.match(canary, /FACTORY_ASSERTED_HEAD_SHA/);
+  assert.match(fs.readFileSync('src/run-gate1-canary.js', 'utf8'), /inputManifest|bindingDigest/);
+  assert.doesNotMatch(canary, /CURSOR_API_KEY/);
+  assert.doesNotMatch(fs.readFileSync('src/run-gate1-canary.js', 'utf8'), /createCursorAdapter/);
+});
+
+test('current-head canary rejects API-key dispatch before alternate provider work', async () => {
+  await assert.rejects(() => runCurrentHeadGate1Canary({ root: 'canary', requestFile: 'missing.json', selectionFile: 'missing.json', qaFile: 'missing.json', cursorBundleFile: 'missing.json', env: { CURSOR_API_KEY: 'must-not-be-used' } }), /CURSOR_API_KEY is not a supported canary credential/);
+  await assert.rejects(() => runCurrentHeadGate1Canary({ root: 'canary', requestFile: 'missing.json', selectionFile: 'missing.json', qaFile: 'missing.json', cursorBundleFile: 'missing.json', env: {} }), /ENOENT/);
 });
