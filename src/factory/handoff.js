@@ -10,7 +10,7 @@ function required(value, label) {
   return value;
 }
 
-function envelopeFor({ dispatchPacket, inputManifest, runId, prospectId, sourceCheckpointDigest, operation = 'gate1-cursor-research' }) {
+function envelopeFor({ dispatchPacket, inputManifest, runId, prospectId, sourceCheckpointDigest, approvedLineage = null, operation = 'gate1-cursor-research' }) {
   validateDispatchPacket(dispatchPacket);
   required(inputManifest?.manifestDigest, 'handoff input manifest digest');
   return {
@@ -26,11 +26,22 @@ function envelopeFor({ dispatchPacket, inputManifest, runId, prospectId, sourceC
     sourceIdentityDigest: digest({ runId, prospectId, sourceCheckpointDigest }),
     dispatchDigest: dispatchPacket.dispatchDigest,
     dispatchKey: dispatchPacket.dispatchKey,
+    approvedLineage: approvedLineage ? {
+      packetDigest: required(approvedLineage.packetDigest, 'approved-lineage packet digest'),
+      sourceArtifactDigest: required(approvedLineage.sourceArtifactDigest, 'approved-lineage source artifact digest'),
+      evidenceDigest: required(approvedLineage.evidenceDigest, 'approved-lineage evidence digest'),
+      pageSetDigest: required(approvedLineage.pageSetDigest, 'approved-lineage page-set digest'),
+      prescriptionDigest: required(approvedLineage.prescriptionDigest, 'approved-lineage prescription digest'),
+      approvalDigest: required(approvedLineage.approvalDigest, 'approved-lineage approval digest'),
+      strategyDigest: required(approvedLineage.strategyDigest, 'approved-lineage strategy digest'),
+      selectedServiceIds: [...required(approvedLineage.selectedServiceIds, 'approved-lineage selected services')],
+      routes: [...required(approvedLineage.routes, 'approved-lineage routes')],
+    } : null,
   };
 }
 
-function createPendingHandoff({ dispatchPacket, inputManifest, runId, prospectId, sourceCheckpointDigest, phaseARunId, inputFiles, placeId = null }) {
-  const envelope = envelopeFor({ dispatchPacket, inputManifest, runId, prospectId, sourceCheckpointDigest });
+function createPendingHandoff({ dispatchPacket, inputManifest, runId, prospectId, sourceCheckpointDigest, phaseARunId, inputFiles, placeId = null, approvedLineage = null }) {
+  const envelope = envelopeFor({ dispatchPacket, inputManifest, runId, prospectId, sourceCheckpointDigest, approvedLineage });
   const pending = {
     schemaVersion: 'factory-cursor-handoff-v1',
     phase: 'awaiting-cursor-receipt',
@@ -57,6 +68,10 @@ function validatePendingHandoff(pending, expected = {}) {
   if (pending.inputFiles) for (const field of ['request', 'selection', 'qa']) required(pending.inputFiles[field], `handoff ${field} input`);
   const envelope = pending.envelope;
   for (const field of ['jobId', 'checkedOutSha', 'inputManifestDigest', 'runId', 'prospectId', 'sourceCheckpointDigest', 'sourceArtifactDigest', 'sourceIdentityDigest', 'dispatchDigest', 'dispatchKey']) required(envelope?.[field], `handoff envelope ${field}`);
+  if (envelope.approvedLineage) {
+    for (const field of ['packetDigest', 'sourceArtifactDigest', 'evidenceDigest', 'pageSetDigest', 'prescriptionDigest', 'approvalDigest', 'strategyDigest']) required(envelope.approvedLineage[field], `handoff approved-lineage ${field}`);
+    if (!Array.isArray(envelope.approvedLineage.selectedServiceIds) || !Array.isArray(envelope.approvedLineage.routes)) throw new Error('Durable Cursor handoff approved-lineage services/routes are malformed');
+  }
   if (pending.dispatchPacket.dispatchDigest !== envelope.dispatchDigest || pending.dispatchPacket.dispatchKey !== envelope.dispatchKey) throw new Error('Durable Cursor handoff dispatch binding is mismatched');
   if (!pending.continuation || pending.continuation.once !== true || pending.continuation.state !== 'awaiting-terminal-result') throw new Error('Durable Cursor handoff one-time continuation state is missing or consumed');
   if (!pending.identity || pending.identity.prospectId !== envelope.prospectId || pending.identity.sourceCheckpointDigest !== envelope.sourceCheckpointDigest) throw new Error('Durable Cursor handoff prospect/source identity is mismatched');
@@ -133,6 +148,12 @@ function claimResumeAtomic(file, handoffId, resultId) {
   }
 }
 
+function claimPhaseBAtomic(file, { handoffId, resultId } = {}) {
+  required(handoffId, 'phase-B handoff id');
+  required(resultId, 'phase-B result id');
+  return claimResumeAtomic(file, `phase-b:${handoffId}`, `phase-b:${resultId}`);
+}
+
 function downloadPhaseAArtifact({ phaseARunId, repository, artifactName, dest, env = process.env, spawnSyncImpl }) {
   required(phaseARunId, 'phase-A workflow run id');
   required(repository, 'phase-A repository');
@@ -158,4 +179,4 @@ function retrievePhaseAHandoff({ phaseARunId, repository, destDir, artifactName,
   return { pending, pendingFile };
 }
 
-module.exports = { envelopeFor, createPendingHandoff, validatePendingHandoff, validateTerminalCursorResult, claimResume, claimResumeAtomic, downloadPhaseAArtifact, retrievePhaseAHandoff };
+module.exports = { envelopeFor, createPendingHandoff, validatePendingHandoff, validateTerminalCursorResult, claimResume, claimResumeAtomic, claimPhaseBAtomic, downloadPhaseAArtifact, retrievePhaseAHandoff };
