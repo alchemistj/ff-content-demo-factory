@@ -237,9 +237,9 @@ test('eleventh correction workflow is repository-native, not Josh-operated workf
   assert.match(workflow, /src\/run-gate1-canary\.js|run-exact-head-sealed-360-proof/);
   assert.match(workflow, /node --test/);
   assert.match(workflow, /EXPECTED_HEAD_SHA: ''/);
-  assert.match(workflow, /canary\/outputs\/gate1\.md/);
-  assert.doesNotMatch(workflow, /synthetic-sealed-replay-only/);
-  assert.doesNotMatch(workflow, /never approvable Gate 1/);
+  assert.doesNotMatch(workflow, /^\s+canary\/outputs\/gate1\.md$/m);
+  assert.match(workflow, /synthetic replay|synthetic-only/i);
+  assert.match(workflow, /approvableGate1/);
   assert.match(workflow, /current-head-gate1-proof\.json/);
   assert.match(workflow, /if-no-files-found: error/);
   assert.match(workflow, /test -z "\$\{CURSOR_API_KEY:-\}"/);
@@ -247,14 +247,14 @@ test('eleventh correction workflow is repository-native, not Josh-operated workf
   assert.match(script, /FACTORY_SEALED_EVIDENCE/);
   assert.doesNotMatch(script, /mockCycleDeps/);
   assert.match(script, /refuses injected\/mock cycle dependencies/);
-  assert.match(fs.readFileSync('src/run-gate1-canary.js', 'utf8'), /appendSealedReplayTruth/);
-  assert.doesNotMatch(fs.readFileSync('src/run-gate1-canary.js', 'utf8'), /synthetic-sealed-evidence-only/);
+  assert.match(fs.readFileSync('src/run-gate1-canary.js', 'utf8'), /synthetic-sealed-evidence-only/);
+  assert.doesNotMatch(fs.readFileSync('src/run-gate1-canary.js', 'utf8'), /appendSealedReplayTruth/);
   assert.throws(() => refuseSecrets({ CURSOR_API_KEY: 'nope' }), /CURSOR_API_KEY/);
   assert.throws(() => refuseSecrets({ APIFY_API_TOKEN: 'nope' }), /APIFY_API_TOKEN/);
   assert.doesNotMatch(fs.readFileSync('.github/workflows/cursor-cloud-agent-dispatch.yml', 'utf8'), /Exact-head sealed 360 Gate 1 proof/);
 });
 
-test('eleventh correction real sealed 360 path assembles a fail-closed exact-head package without vendor secrets', async () => {
+test('eleventh correction sealed 360 path is synthetic-only and cannot assemble Gate 1', async () => {
   const head = spawnSync('git', ['rev-parse', 'HEAD'], { encoding: 'utf8' }).stdout.trim();
   assert.match(head, /^[a-f0-9]{40}$/);
   const root = tempRoot();
@@ -274,25 +274,14 @@ test('eleventh correction real sealed 360 path assembles a fail-closed exact-hea
   };
   await assert.rejects(() => runExactHeadSealed360Proof({ root, env, deps: { runFactoryCycle: async () => ({}) } }), /injected\/mock/);
   const { validated, result } = await runExactHeadSealed360Proof({ root, env });
-  assert.equal(result.proof.gate1State, 'awaiting-human-gate-1');
+  assert.equal(result.proof.gate1State, 'synthetic-sealed-evidence-only');
+  assert.equal(result.proof.synthetic, true);
+  assert.equal(result.proof.approvableGate1, false);
   assert.equal(result.proof.sealedEvidence, true);
   assert.equal(result.proof.integratedFactoryReadiness, false);
   assert.equal(result.proof.liveConnectorProven, false);
-  assert.equal(result.proof.proofScope, SEALED_PROOF_SCOPE);
-  assert.equal(validated.package.liveConnectorProven, false);
-  assert.equal(validated.prescription.pages.length, 4);
-  assert.match(validated.markdown, /Garage Door Repair/);
-  assert.match(validated.markdown, /Garage Door Installation/);
-  assert.match(validated.markdown, /Sealed replay truth/);
-  assert.doesNotMatch(validated.markdown, /CURSOR_API_KEY/);
-  const packet = JSON.parse(fs.readFileSync(path.join(root, CURRENT_PACKET_RELATIVE), 'utf8'));
-  assert.equal(packet.reviewedHeadSha, head);
-  assert.equal(packet.preparedOnly, false);
-  assert.equal(packet.executed, false);
-  assert.equal(packet.sealedReplayExecuted, true);
-  assert.equal(packet.liveConnectorExecuted, false);
-  assert.match(validated.package.packageDigest, /^sha256:[a-f0-9]{64}$/);
-  const recorded = { ...validated.package };
-  delete recorded.packageDigest;
-  assert.equal(digest(recorded), validated.package.packageDigest);
+  assert.equal(validated, null);
+  assert.equal(fs.existsSync(path.join(root, 'canary/outputs/current-head-gate1-proof.json')), true);
+  assert.equal(fs.existsSync(path.join(root, 'canary/outputs/gate1.md')), false);
+  assert.equal(fs.existsSync(path.join(root, 'canary/state/factory-state.json')), false);
 });
