@@ -84,22 +84,20 @@ async function runExactHeadSealed360Proof({ root = process.cwd(), env = process.
     cursorBundleFile: '',
     env: boundEnv,
   });
-  const assembled = assembleExactHeadProofPackage({ root, env: boundEnv, proof: result.proof, state: result.state });
-  rebindCurrentPacket({ root, env: boundEnv, expectedHeadSha });
-  const validated = validateExactHeadProofPackage({ root, expectedHeadSha, env: boundEnv });
-  return { result, assembled, validated, expectedHeadSha, checkedOutSha };
+  if (result.proof.approvableGate1 !== false || result.proof.synthetic !== true) throw new Error('sealed replay escaped the synthetic-only boundary');
+  return { result, assembled: null, validated: null, expectedHeadSha, checkedOutSha };
 }
 
 if (require.main === module) {
-  runExactHeadSealed360Proof().then(({ validated }) => {
+  runExactHeadSealed360Proof().then(({ result, checkedOutSha }) => {
     process.stdout.write(`${JSON.stringify({
-      gate1State: validated.proof.gate1State,
-      checkedOutSha: validated.exactHead.checkedOutSha,
-      packageDigest: validated.package.packageDigest,
-      artifactName: validated.package.artifactName,
-      integratedFactoryReadiness: validated.package.integratedFactoryReadiness,
-      liveConnectorProven: validated.package.liveConnectorProven,
-      markdownPath: 'canary/outputs/gate1.md',
+      gate1State: result.proof.gate1State,
+      checkedOutSha,
+      synthetic: result.proof.synthetic,
+      approvableGate1: result.proof.approvableGate1,
+      integratedFactoryReadiness: result.proof.integratedFactoryReadiness,
+      liveConnectorProven: false,
+      markdownPath: null,
     }, null, 2)}\n`);
   }).catch((error) => {
     console.error(error.stack || error.message);
