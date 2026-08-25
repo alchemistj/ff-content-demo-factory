@@ -15,6 +15,12 @@ import {
   POST_DISPATCH_ARTIFACT_ZIP_SIZE,
   POST_DISPATCH_RECEIPT_DIGEST,
   POST_DISPATCH_RECEIPT_SIZE,
+  POST_DISPATCH_ORIGINAL_INPUT_DIGEST,
+  POST_DISPATCH_ORIGINAL_PROMPT_DIGEST,
+  POST_DISPATCH_ORIGINAL_IDEMPOTENCY_KEY,
+  POST_DISPATCH_RECEIPT_MANIFEST_SCHEMA,
+  postDispatchReceiptManifestDigest,
+  postDispatchReceiptManifestMac,
   type CursorWriterCorrectionPrior,
   type CursorGitHubBaselineInput,
   type CursorPostDispatchReceiptManifest,
@@ -49,6 +55,70 @@ export const VERIFIED_WRITER1_POST_DISPATCH = Object.freeze({
   effort: "high",
   fast: false,
 });
+export const VERIFIED_WRITER1_POST_DISPATCH_SEAL_VERSION = "words-writer1-post-dispatch-seal/v1" as const;
+export const VERIFIED_WRITER1_POST_DISPATCH_SEAL_MODE = "writer1-seal-only" as const;
+export const VERIFIED_WRITER1_POST_DISPATCH_SEALED_MANIFEST_SCHEMA = "verified-writer1-sealed-manifest-pin/v1" as const;
+
+function originalDispatchIdempotencyKey(): string { return POST_DISPATCH_ORIGINAL_IDEMPOTENCY_KEY; }
+function postDispatchBinding(value: Dict): string {
+  return digestOf({
+    schemaVersion: POST_DISPATCH_RECEIPT_MANIFEST_SCHEMA,
+    actionRunId: VERIFIED_WRITER1_POST_DISPATCH.actionRunId,
+    artifactId: VERIFIED_WRITER1_POST_DISPATCH.artifactId,
+    agentId: VERIFIED_WRITER1_POST_DISPATCH.agentId,
+    runId: VERIFIED_WRITER1_POST_DISPATCH.runId,
+    threadUrl: VERIFIED_WRITER1_POST_DISPATCH.threadUrl,
+    requestedModel: VERIFIED_WRITER1_POST_DISPATCH.requestedModel,
+    resolvedModel: VERIFIED_WRITER1_POST_DISPATCH.resolvedModel,
+    effort: VERIFIED_WRITER1_POST_DISPATCH.effort,
+    fast: VERIFIED_WRITER1_POST_DISPATCH.fast,
+    inputDigest: POST_DISPATCH_ORIGINAL_INPUT_DIGEST,
+    promptDigest: POST_DISPATCH_ORIGINAL_PROMPT_DIGEST,
+    idempotencyKey: POST_DISPATCH_ORIGINAL_IDEMPOTENCY_KEY,
+    artifactZipDigest: POST_DISPATCH_ARTIFACT_ZIP_DIGEST,
+    artifactZipSize: POST_DISPATCH_ARTIFACT_ZIP_SIZE,
+    receiptPath: value.receiptPath,
+    receiptDigest: POST_DISPATCH_RECEIPT_DIGEST,
+    receiptSize: POST_DISPATCH_RECEIPT_SIZE,
+  });
+}
+
+function assertVerifiedEnvelope(control: Dict): Dict {
+  if (control.schemaVersion !== "words-canary-control/v1" || control.requestedBy !== "architect" || control.stage !== "writer1" || control.restore !== null) throw new Error("verified post-dispatch envelope is invalid");
+  if (control.wakeNonce === DORMANT) throw new Error("verified post-dispatch mode is dormant");
+  if (!/^[A-Za-z0-9][A-Za-z0-9._-]{15,127}$/u.test(String(control.wakeNonce))) throw new Error("verified post-dispatch mode requires an owner wake nonce");
+  return verifiedControlRecovery(control) || (() => { throw new Error("verified post-dispatch mode is missing recovery pins"); })();
+}
+
+function assertOriginalDispatchPins(recovery: Dict): void {
+  if (recovery.actionRunId !== VERIFIED_WRITER1_POST_DISPATCH.actionRunId || Number(recovery.artifactId) !== VERIFIED_WRITER1_POST_DISPATCH.artifactId || recovery.agentId !== VERIFIED_WRITER1_POST_DISPATCH.agentId || recovery.runId !== VERIFIED_WRITER1_POST_DISPATCH.runId || recovery.threadUrl !== VERIFIED_WRITER1_POST_DISPATCH.threadUrl || recovery.requestedModel !== VERIFIED_WRITER1_POST_DISPATCH.requestedModel || recovery.resolvedModel !== VERIFIED_WRITER1_POST_DISPATCH.resolvedModel || recovery.effort !== "high" || recovery.fast !== false || recovery.inputDigest !== POST_DISPATCH_ORIGINAL_INPUT_DIGEST || recovery.promptDigest !== POST_DISPATCH_ORIGINAL_PROMPT_DIGEST || recovery.idempotencyKey !== originalDispatchIdempotencyKey()) throw new Error("verified post-dispatch mode is not bound to the signed original dispatch");
+}
+
+export function validateVerifiedWriter1SealOnlyControl(control: Dict): void {
+  const recovery = assertVerifiedEnvelope(control);
+  if (control.policy?.mode !== VERIFIED_WRITER1_POST_DISPATCH_SEAL_MODE || control.policy.writer1Only !== true || control.policy.provider !== "cursor-sdk" || control.policy.model !== "cursor-grok-4.6-high" || control.policy.fast !== false || control.policy.stopAfter !== "manifest-sealed" || JSON.stringify(control.policy.approvedRoutes) !== JSON.stringify(["/", ...VERIFIED_WRITER1_ROUTES, "/contact"])) throw new Error("seal-only control does not select the bounded zero-message policy");
+  if (recovery.recoveryVersion !== VERIFIED_WRITER1_POST_DISPATCH_SEAL_VERSION || recovery.sourceBranch !== VERIFIED_BRANCH || !/^[0-9a-f]{40}$/u.test(String(recovery.sourceSha)) || recovery.allowCreate !== false || recovery.allowResume !== false || recovery.allowFollowUp !== false || recovery.maxFollowUps !== 0 || recovery.send !== undefined || recovery.resume !== undefined || recovery.create !== undefined) throw new Error("seal-only control is missing the fail-closed source or zero-message pins");
+  assertOriginalDispatchPins(recovery);
+  const pins = recovery.receiptPins;
+  if (!pins || pins.artifactZipDigest !== POST_DISPATCH_ARTIFACT_ZIP_DIGEST || pins.artifactZipSize !== POST_DISPATCH_ARTIFACT_ZIP_SIZE || pins.receiptPath !== "runtime/writer1-dispatch-receipt.json" || pins.receiptDigest !== POST_DISPATCH_RECEIPT_DIGEST || pins.receiptSize !== POST_DISPATCH_RECEIPT_SIZE) throw new Error("seal-only control is missing the exact Action artifact and receipt pins");
+}
+
+function validateSealedManifestPins(recovery: Dict): void {
+  const pin = recovery.sealedManifest;
+  if (!pin || pin.schemaVersion !== VERIFIED_WRITER1_POST_DISPATCH_SEALED_MANIFEST_SCHEMA || pin.sourceActionRunId !== recovery.sealActionRunId || Number(pin.sourceArtifactId) !== Number(recovery.sealArtifactId) || pin.manifestPath !== "runtime/writer1-dispatch-manifest.json" || !isDigest(pin.manifestBytesDigest) || !Number.isSafeInteger(pin.manifestSize) || pin.manifestSize < 1 || !isDigest(pin.manifestDigest) || !/^hmac-sha256:[0-9a-f]{64}$/u.test(String(pin.manifestMac)) || typeof pin.sourceSha !== "string" || !/^[0-9a-f]{40}$/u.test(pin.sourceSha)) throw new Error("retrieval-only control is missing exact sealed manifest bytes, digest, MAC, or source pins");
+}
+
+function readSealedManifest(root: string, recovery: Dict, cursorApiKey: string): CursorPostDispatchReceiptManifest {
+  validateSealedManifestPins(recovery);
+  const pin = recovery.sealedManifest;
+  const file = path.join(process.env.WRITER1_POST_DISPATCH_SEAL_ROOT || root, pin.manifestPath);
+  const bytes = readFileSync(file);
+  if (bytes.byteLength !== pin.manifestSize || digestOf(bytes.toString("utf8")) !== pin.manifestBytesDigest) throw new Error("sealed manifest bytes do not match the Architect-pinned mode-A artifact");
+  let manifest: Dict; try { manifest = JSON.parse(bytes.toString("utf8")) as Dict; } catch { throw new Error("sealed mode-A manifest is not JSON"); }
+  if (manifest.manifestDigest !== pin.manifestDigest || manifest.manifestMac !== pin.manifestMac) throw new Error("sealed manifest digest or MAC pin mismatch");
+  if (postDispatchReceiptManifestDigest(manifest as CursorPostDispatchReceiptManifest) !== manifest.manifestDigest || postDispatchReceiptManifestMac(manifest as CursorPostDispatchReceiptManifest, cursorApiKey) !== manifest.manifestMac || manifest.controlBindingDigest !== postDispatchBinding(manifest)) throw new Error("sealed mode-A manifest authenticity or original-dispatch binding failed");
+  return manifest as CursorPostDispatchReceiptManifest;
+}
 
 type Dict = Record<string, any>;
 function jsonFile(root: string, relative: string): string { return path.join(root, relative); }
@@ -94,15 +164,17 @@ export function validateVerifiedWriter1CorrectionV2Control(control: Dict, inputD
 
 /** A post-dispatch wake is a read-only reconciliation mode, never a follow-up. */
 export function validateVerifiedWriter1PostDispatchControl(control: Dict, inputDigest: string): void {
+  void inputDigest; // The original dispatch digest is immutable and checked below.
   if (control.schemaVersion !== "words-canary-control/v1" || control.requestedBy !== "architect" || control.stage !== "writer1" || control.restore !== null) throw new Error("post-dispatch control envelope is invalid");
   if (control.wakeNonce === DORMANT) return;
   const policy = control.policy; const recovery = verifiedControlRecovery(control);
-  const idempotencyKey = `${VERIFIED_WRITER1_AGENT_ID}:writer1:correction:v2:${inputDigest}:${VERIFIED_WRITER1_PROMPT_V2_DIGEST}`;
+  const idempotencyKey = originalDispatchIdempotencyKey();
   if (policy?.mode !== "writer1-retrieval-only" || policy.writer1Only !== true || policy.provider !== "cursor-sdk" || policy.model !== "cursor-grok-4.6-high" || policy.fast !== false || policy.stopAfter !== "awaiting-architect-qa" || JSON.stringify(policy.approvedRoutes) !== JSON.stringify(["/", ...VERIFIED_WRITER1_ROUTES, "/contact"])) throw new Error("post-dispatch control does not select the bounded read-only Writer1 policy");
   if (!/^[A-Za-z0-9][A-Za-z0-9._-]{15,127}$/u.test(control.wakeNonce)) throw new Error("post-dispatch control requires an owner wake nonce");
   const manifest = recovery?.receiptManifest;
   if (!manifest || manifest.schemaVersion !== "verified-writer1-dispatch-manifest/v1" || manifest.actionRunId !== VERIFIED_WRITER1_POST_DISPATCH.actionRunId || Number(manifest.artifactId) !== VERIFIED_WRITER1_POST_DISPATCH.artifactId || manifest.artifactZipDigest !== POST_DISPATCH_ARTIFACT_ZIP_DIGEST || manifest.artifactZipSize !== POST_DISPATCH_ARTIFACT_ZIP_SIZE || manifest.receiptPath !== "runtime/writer1-dispatch-receipt.json" || manifest.receiptDigest !== POST_DISPATCH_RECEIPT_DIGEST || manifest.receiptSize !== POST_DISPATCH_RECEIPT_SIZE || !isDigest(manifest.controlBindingDigest) || !isDigest(manifest.manifestDigest) || !/^hmac-sha256:[0-9a-f]{64}$/u.test(String(manifest.manifestMac)) || Object.keys(manifest).sort().join(",") !== ["actionRunId", "artifactId", "artifactZipDigest", "artifactZipSize", "controlBindingDigest", "manifestDigest", "manifestMac", "receiptDigest", "receiptPath", "receiptSize", "schemaVersion"].sort().join(",")) throw new Error("post-dispatch control is missing the complete Architect-sealed receipt manifest pins");
-  if (!recovery || recovery.recoveryVersion !== VERIFIED_WRITER1_POST_DISPATCH.recoveryVersion || recovery.sourceBranch !== VERIFIED_BRANCH || recovery.actionRunId !== VERIFIED_WRITER1_POST_DISPATCH.actionRunId || Number(recovery.artifactId) !== VERIFIED_WRITER1_POST_DISPATCH.artifactId || recovery.agentId !== VERIFIED_WRITER1_POST_DISPATCH.agentId || recovery.runId !== VERIFIED_WRITER1_POST_DISPATCH.runId || recovery.threadUrl !== VERIFIED_WRITER1_POST_DISPATCH.threadUrl || recovery.requestedModel !== VERIFIED_WRITER1_POST_DISPATCH.requestedModel || recovery.resolvedModel !== VERIFIED_WRITER1_POST_DISPATCH.resolvedModel || recovery.effort !== "high" || recovery.fast !== false || recovery.inputDigest !== inputDigest || recovery.promptDigest !== VERIFIED_WRITER1_PROMPT_V2_DIGEST || recovery.idempotencyKey !== idempotencyKey || recovery.allowCreate !== false || recovery.allowResume !== false || recovery.allowFollowUp !== false || recovery.maxFollowUps !== 0 || recovery.send !== undefined || recovery.resume !== undefined || recovery.create !== undefined || policy.allowCreate !== undefined || policy.allowResume !== undefined || policy.allowFollowUp !== undefined || policy.send !== undefined) throw new Error("post-dispatch control is missing exact zero-message run and idempotency pins");
+  if (!recovery || recovery.recoveryVersion !== VERIFIED_WRITER1_POST_DISPATCH.recoveryVersion || recovery.sourceBranch !== VERIFIED_BRANCH || recovery.actionRunId !== VERIFIED_WRITER1_POST_DISPATCH.actionRunId || Number(recovery.artifactId) !== VERIFIED_WRITER1_POST_DISPATCH.artifactId || recovery.agentId !== VERIFIED_WRITER1_POST_DISPATCH.agentId || recovery.runId !== VERIFIED_WRITER1_POST_DISPATCH.runId || recovery.threadUrl !== VERIFIED_WRITER1_POST_DISPATCH.threadUrl || recovery.requestedModel !== VERIFIED_WRITER1_POST_DISPATCH.requestedModel || recovery.resolvedModel !== VERIFIED_WRITER1_POST_DISPATCH.resolvedModel || recovery.effort !== "high" || recovery.fast !== false || recovery.inputDigest !== POST_DISPATCH_ORIGINAL_INPUT_DIGEST || recovery.promptDigest !== POST_DISPATCH_ORIGINAL_PROMPT_DIGEST || recovery.idempotencyKey !== idempotencyKey || recovery.allowCreate !== false || recovery.allowResume !== false || recovery.allowFollowUp !== false || recovery.maxFollowUps !== 0 || recovery.send !== undefined || recovery.resume !== undefined || recovery.create !== undefined || policy.allowCreate !== undefined || policy.allowResume !== undefined || policy.allowFollowUp !== undefined || policy.send !== undefined) throw new Error("post-dispatch control is missing exact zero-message run and signed original idempotency pins");
+  validateSealedManifestPins(recovery);
 }
 
 function readPriorDispatch(root: string): { dispatch: Dict; bytes: Buffer; file: string; logicalPath: string } {
@@ -116,12 +188,12 @@ function readPriorDispatch(root: string): { dispatch: Dict; bytes: Buffer; file:
   throw new Error("prior post-dispatch Action artifact did not contain a dispatch receipt");
 }
 
-function postDispatchPrior(root: string, inputDigest: string, recoveryControl: Dict, artifactZipPath: string, cursorApiKey: string): Dict {
+function postDispatchPrior(root: string, recoveryControl: Dict, artifactZipPath: string, cursorApiKey: string): Dict {
   const dispatchFile = readPriorDispatch(root);
   const dispatch = dispatchFile.dispatch;
   const recovery = VERIFIED_WRITER1_POST_DISPATCH;
-  const expectedKey = `${recovery.agentId}:writer1:correction:v2:${inputDigest}:${VERIFIED_WRITER1_PROMPT_V2_DIGEST}`;
-  if ((dispatch.schemaVersion !== "verified-writer-dispatch/v2" && dispatch.schemaVersion !== "words-canary-dispatch/v2") || dispatch.stage !== "writer1" || dispatch.provider !== "cursor-sdk" || dispatch.agentId !== recovery.agentId || dispatch.runId !== recovery.runId || dispatch.threadUrl !== recovery.threadUrl || dispatch.requestedModel !== recovery.requestedModel || dispatch.resolvedModel !== recovery.resolvedModel || dispatch.effort !== "high" || dispatch.fast !== false || dispatch.inputDigest !== inputDigest || dispatch.promptDigest !== VERIFIED_WRITER1_PROMPT_V2_DIGEST || typeof dispatch.requestDigest !== "string" || !isDigest(dispatch.requestDigest)) throw new Error("prior post-dispatch receipt identity or model binding mismatch");
+  const expectedKey = originalDispatchIdempotencyKey();
+  if ((dispatch.schemaVersion !== "verified-writer-dispatch/v2" && dispatch.schemaVersion !== "words-canary-dispatch/v2") || dispatch.stage !== "writer1" || dispatch.provider !== "cursor-sdk" || dispatch.agentId !== recovery.agentId || dispatch.runId !== recovery.runId || dispatch.threadUrl !== recovery.threadUrl || dispatch.requestedModel !== recovery.requestedModel || dispatch.resolvedModel !== recovery.resolvedModel || dispatch.effort !== "high" || dispatch.fast !== false || dispatch.inputDigest !== POST_DISPATCH_ORIGINAL_INPUT_DIGEST || dispatch.promptDigest !== POST_DISPATCH_ORIGINAL_PROMPT_DIGEST || typeof dispatch.requestDigest !== "string" || !isDigest(dispatch.requestDigest)) throw new Error("prior post-dispatch receipt identity or signed original model binding mismatch");
   if (dispatch.idempotencyKey !== undefined && dispatch.idempotencyKey !== expectedKey) throw new Error("prior post-dispatch receipt idempotency binding mismatch");
   const manifest = recoveryControl.receiptManifest as CursorPostDispatchReceiptManifest;
   if (!manifest) throw new Error("post-dispatch wake is missing the Architect-sealed receipt manifest");
@@ -129,18 +201,68 @@ function postDispatchPrior(root: string, inputDigest: string, recoveryControl: D
   try { artifactZip = readFileSync(artifactZipPath); } catch { throw new Error("post-dispatch Action ZIP is required for receipt authenticity verification"); }
   if (manifest.receiptPath !== dispatchFile.logicalPath) throw new Error("post-dispatch receipt manifest path does not bind the exact downloaded receipt file");
   validatePostDispatchReceiptManifest(manifest, recoveryControl.receiptManifest, artifactZip, dispatchFile.bytes, cursorApiKey);
-  return { actionRunId: recovery.actionRunId, artifactId: recovery.artifactId, runId: recovery.runId, agentId: recovery.agentId, threadUrl: recovery.threadUrl, requestedModel: recovery.requestedModel, resolvedModel: recovery.resolvedModel, modelParams: [{ id: "fast", value: "false" }, { id: "effort", value: "high" }], effort: "high", fast: false, inputDigest, promptDigest: VERIFIED_WRITER1_PROMPT_V2_DIGEST, requestDigest: dispatch.requestDigest, idempotencyKey: expectedKey, messagesSent: 1, dispatchManifest: manifest };
+  return { actionRunId: recovery.actionRunId, artifactId: recovery.artifactId, runId: recovery.runId, agentId: recovery.agentId, threadUrl: recovery.threadUrl, requestedModel: recovery.requestedModel, resolvedModel: recovery.resolvedModel, modelParams: [{ id: "fast", value: "false" }, { id: "effort", value: "high" }], effort: "high", fast: false, inputDigest: POST_DISPATCH_ORIGINAL_INPUT_DIGEST, promptDigest: POST_DISPATCH_ORIGINAL_PROMPT_DIGEST, requestDigest: dispatch.requestDigest, idempotencyKey: expectedKey, messagesSent: 1, dispatchManifest: manifest };
+}
+
+/**
+ * Mode A is intentionally a different function from retrieval. It authenticates
+ * the immutable GitHub artifact/receipt and emits a manifest only. There is no
+ * Cursor transport, Agent.getRun, Agent.create, resume, send, or wait reachable
+ * from this function.
+ */
+export async function runVerifiedWriter1PostDispatchSealOnly(root = process.cwd()): Promise<{ status: string; stage: string; manifestPath?: string }> {
+  const control = readJson(root, ".factory-wake/360-words-control.json");
+  if (control.wakeNonce === DORMANT) return { status: "dormant", stage: "writer1" };
+  validateVerifiedWriter1SealOnlyControl(control);
+  const recovery = verifiedControlRecovery(control)!;
+  const artifactZipPath = process.env.WRITER1_POST_DISPATCH_ZIP || path.join(root, "canary/inputs/post-dispatch.zip");
+  const artifactRoot = process.env.WRITER1_POST_DISPATCH_ROOT || root;
+  const cursorApiKey = process.env.CURSOR_API_KEY || "";
+  if (!cursorApiKey) throw new Error("seal-only mode requires CURSOR_API_KEY to MAC the manifest");
+  const dispatchFile = readPriorDispatch(artifactRoot);
+  const dispatch = dispatchFile.dispatch;
+  assertOriginalDispatchPins({ ...recovery, inputDigest: dispatch.inputDigest, promptDigest: dispatch.promptDigest, idempotencyKey: dispatch.idempotencyKey });
+  if (dispatch.idempotencyKey !== originalDispatchIdempotencyKey() || dispatch.inputDigest !== POST_DISPATCH_ORIGINAL_INPUT_DIGEST || dispatch.promptDigest !== POST_DISPATCH_ORIGINAL_PROMPT_DIGEST || typeof dispatch.requestDigest !== "string" || !isDigest(dispatch.requestDigest)) throw new Error("downloaded dispatch receipt is not the signed original receipt");
+  const artifactZip = readFileSync(artifactZipPath);
+  const pins = recovery.receiptPins;
+  const manifest: CursorPostDispatchReceiptManifest = {
+    schemaVersion: POST_DISPATCH_RECEIPT_MANIFEST_SCHEMA,
+    actionRunId: VERIFIED_WRITER1_POST_DISPATCH.actionRunId,
+    artifactId: VERIFIED_WRITER1_POST_DISPATCH.artifactId,
+    artifactZipDigest: pins.artifactZipDigest,
+    artifactZipSize: pins.artifactZipSize,
+    receiptPath: dispatchFile.logicalPath as CursorPostDispatchReceiptManifest["receiptPath"],
+    receiptDigest: pins.receiptDigest,
+    receiptSize: pins.receiptSize,
+    controlBindingDigest: postDispatchBinding({ receiptPath: dispatchFile.logicalPath }),
+    manifestDigest: "",
+    manifestMac: "",
+  };
+  manifest.manifestDigest = postDispatchReceiptManifestDigest(manifest);
+  manifest.manifestMac = postDispatchReceiptManifestMac(manifest, cursorApiKey);
+  validatePostDispatchReceiptManifest(manifest, manifest, artifactZip, dispatchFile.bytes, cursorApiKey);
+  await writeJson(jsonFile(root, "canary/runtime/writer1-dispatch-manifest.json"), manifest);
+  await writeJson(jsonFile(root, "canary/runtime/writer1-seal-receipt.json"), {
+    schemaVersion: "verified-writer1-seal-receipt/v1", status: "manifest-sealed", stage: "writer1", actionRunId: VERIFIED_WRITER1_POST_DISPATCH.actionRunId,
+    artifactId: VERIFIED_WRITER1_POST_DISPATCH.artifactId, agentId: VERIFIED_WRITER1_POST_DISPATCH.agentId, runId: VERIFIED_WRITER1_POST_DISPATCH.runId,
+    threadUrl: VERIFIED_WRITER1_POST_DISPATCH.threadUrl, requestedModel: VERIFIED_WRITER1_POST_DISPATCH.requestedModel, resolvedModel: VERIFIED_WRITER1_POST_DISPATCH.resolvedModel,
+    effort: "high", fast: false, originalInputDigest: POST_DISPATCH_ORIGINAL_INPUT_DIGEST, originalPromptDigest: POST_DISPATCH_ORIGINAL_PROMPT_DIGEST,
+    originalIdempotencyKey: originalDispatchIdempotencyKey(), originalRequestDigest: dispatch.requestDigest, messagesSent: 1, recoveryMessagesSent: 0,
+    manifestPath: "canary/runtime/writer1-dispatch-manifest.json", manifestDigest: manifest.manifestDigest, manifestMac: manifest.manifestMac, writer2Blocked: true, nextStage: null,
+  });
+  return { status: "manifest-sealed", stage: "writer1", manifestPath: "canary/runtime/writer1-dispatch-manifest.json" };
 }
 
 export async function runVerifiedWriter1PostDispatchRecovery(root = process.cwd()): Promise<{ status: string; stage: string; runId: string; threadUrl: string }> {
   const control = readJson(root, ".factory-wake/360-words-control.json");
   if (control.wakeNonce === DORMANT) return { status: "dormant", stage: "writer1", runId: VERIFIED_WRITER1_POST_DISPATCH.runId, threadUrl: VERIFIED_WRITER1_POST_DISPATCH.threadUrl };
   const sealed = validateSealed(root); const projection = writer1Projection(sealed); const baseline = verifiedBaseline(root, sealed, projection);
-  const inputDigest = digestOf({ sealedHandoffDigest: sealed.handoff.resealDigest, writer1Projection: projection, githubBaseline: baselineMetadata(baseline) });
-  validateVerifiedWriter1PostDispatchControl(control, inputDigest);
+  const recoveryContextDigest = digestOf({ sealedHandoffDigest: sealed.handoff.resealDigest, writer1Projection: projection, githubBaseline: baselineMetadata(baseline) });
+  validateVerifiedWriter1PostDispatchControl(control, recoveryContextDigest);
   const recoveryControl = verifiedControlRecovery(control);
   if (!recoveryControl) throw new Error("post-dispatch wake is missing recovery pins");
-  const prior = postDispatchPrior(process.env.WRITER1_POST_DISPATCH_ROOT || root, inputDigest, recoveryControl, process.env.WRITER1_POST_DISPATCH_ZIP || path.join(root, "canary/inputs/post-dispatch.zip"), process.env.CURSOR_API_KEY || "");
+  const sealedManifest = readSealedManifest(root, recoveryControl, process.env.CURSOR_API_KEY || "");
+  const prior = postDispatchPrior(process.env.WRITER1_POST_DISPATCH_ROOT || root, { ...recoveryControl, receiptManifest: sealedManifest }, process.env.WRITER1_POST_DISPATCH_ZIP || path.join(root, "canary/inputs/post-dispatch.zip"), process.env.CURSOR_API_KEY || "");
   await writeJson(jsonFile(root, "canary/runtime/state.json"), { status: "writer1-post-dispatch-retrieval", stage: "writer1", runId: prior.runId, agentId: prior.agentId, threadUrl: prior.threadUrl, requestedModel: prior.requestedModel, resolvedModel: prior.resolvedModel, effort: "high", fast: false, messagesSent: 1, recoveryMessagesSent: 0, writer2Blocked: true, nextStage: null });
   const result = await recoverCursorWriterPostDispatch({
     receiptStore: createJsonCursorReceiptStore(jsonFile(root, "canary/runtime/cursor-receipts.json")),
@@ -245,7 +367,7 @@ export function assertVerifiedReceiptMetadata(receipt: Dict): void {
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) {
-  const operation = process.argv.includes("--writer2") ? runVerifiedWriter2() : process.argv.includes("--writer3") ? runVerifiedWriter3() : process.argv.includes("--writer1-retrieval-only") ? runVerifiedWriter1PostDispatchRecovery() : process.argv.includes("--writer1-correction-v2") ? runVerifiedWriter1CorrectionV2() : runVerifiedWriter1Correction();
+  const operation = process.argv.includes("--writer2") ? runVerifiedWriter2() : process.argv.includes("--writer3") ? runVerifiedWriter3() : process.argv.includes("--writer1-seal-only") ? runVerifiedWriter1PostDispatchSealOnly() : process.argv.includes("--writer1-retrieval-only") ? runVerifiedWriter1PostDispatchRecovery() : process.argv.includes("--writer1-correction-v2") ? runVerifiedWriter1CorrectionV2() : runVerifiedWriter1Correction();
   operation.then((result) => console.log(JSON.stringify(result))).catch(async (error) => {
     const code = error && typeof error === "object" && typeof (error as Dict).code === "string" ? (error as Dict).code : "VERIFIED_WRITER1_CORRECTION_FAILED";
     let dispatch: Dict | undefined;

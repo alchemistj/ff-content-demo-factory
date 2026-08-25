@@ -78,7 +78,7 @@ jobs:
           fi
 
       - name: Download and verify immutable GitHub Writer1 baseline before vendor access
-        if: steps.control.outputs.dormant != 'true' && (steps.control.outputs.recovery_version == 'words-writer1-correction/v2' || steps.control.outputs.recovery_version == 'words-writer1-post-dispatch-retrieval/v1')
+        if: steps.control.outputs.dormant != 'true' && (steps.control.outputs.recovery_version == 'words-writer1-correction/v2' || steps.control.outputs.recovery_version == 'words-writer1-post-dispatch-retrieval/v1' || steps.control.outputs.recovery_version == 'words-writer1-post-dispatch-seal/v1')
         shell: bash
         env:
           GITHUB_TOKEN: ${{ github.token }}
@@ -150,7 +150,7 @@ jobs:
           JSON
 
       - name: Download exact failed post-dispatch Writer1 Action artifact
-        if: steps.control.outputs.dormant != 'true' && steps.control.outputs.recovery_version == 'words-writer1-post-dispatch-retrieval/v1'
+        if: steps.control.outputs.dormant != 'true' && (steps.control.outputs.recovery_version == 'words-writer1-post-dispatch-retrieval/v1' || steps.control.outputs.recovery_version == 'words-writer1-post-dispatch-seal/v1')
         shell: bash
         env:
           GH_TOKEN: ${{ github.token }}
@@ -185,6 +185,34 @@ jobs:
           test -f "$receipt"
           test "$(wc -c < "$receipt" | tr -d ' ')" = "$EXPECTED_RECEIPT_SIZE"
           test "sha256:$(sha256sum "$receipt" | cut -d ' ' -f 1)" = "$EXPECTED_RECEIPT_DIGEST"
+
+      - name: Download exact sealed mode-A manifest for retrieval-only mode
+        if: steps.control.outputs.dormant != 'true' && steps.control.outputs.recovery_version == 'words-writer1-post-dispatch-retrieval/v1'
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SEAL_ACTION_RUN_ID: ${{ steps.control.outputs.seal_action_run_id }}
+          SEAL_ARTIFACT_ID: ${{ steps.control.outputs.seal_artifact_id }}
+          SEAL_SOURCE_SHA: ${{ steps.control.outputs.seal_source_sha }}
+          SEAL_MANIFEST_BYTES_DIGEST: ${{ steps.control.outputs.seal_manifest_bytes_digest }}
+          SEAL_MANIFEST_SIZE: ${{ steps.control.outputs.seal_manifest_size }}
+        run: |
+          set -euo pipefail
+          test -n "$SEAL_ACTION_RUN_ID"; test -n "$SEAL_ARTIFACT_ID"; test -n "$SEAL_SOURCE_SHA"
+          metadata="$(gh api "repos/${GITHUB_REPOSITORY}/actions/artifacts/${SEAL_ARTIFACT_ID}")"
+          test "$(jq -r '.id' <<<"$metadata")" = "$SEAL_ARTIFACT_ID"
+          test "$(jq -r '.workflow_run.id' <<<"$metadata")" = "$SEAL_ACTION_RUN_ID"
+          run="$(gh api "repos/${GITHUB_REPOSITORY}/actions/runs/${SEAL_ACTION_RUN_ID}")"
+          test "$(jq -r '.id' <<<"$run")" = "$SEAL_ACTION_RUN_ID"
+          test "$(jq -r '.head_branch' <<<"$run")" = 'architect/360-words-canary-verified'
+          test "$(jq -r '.head_sha' <<<"$run")" = "$SEAL_SOURCE_SHA"
+          mkdir -p canary/inputs/post-dispatch-seal-artifact
+          gh api "repos/${GITHUB_REPOSITORY}/actions/artifacts/${SEAL_ARTIFACT_ID}/zip" > canary/inputs/post-dispatch-seal.zip
+          unzip -q canary/inputs/post-dispatch-seal.zip -d canary/inputs/post-dispatch-seal-artifact
+          manifest='canary/inputs/post-dispatch-seal-artifact/canary/runtime/writer1-dispatch-manifest.json'
+          test -f "$manifest"
+          test "$(wc -c < "$manifest" | tr -d ' ')" = "$SEAL_MANIFEST_SIZE"
+          test "sha256:$(sha256sum "$manifest" | cut -d ' ' -f 1)" = "$SEAL_MANIFEST_BYTES_DIGEST"
 
       - name: Download and verify exact failed v2 metadata-recovery artifact
         if: steps.control.outputs.dormant != 'true' && steps.control.outputs.recovery_version == 'words-writer1-artifact-recovery/v3'
@@ -256,8 +284,11 @@ jobs:
           WRITER1_GITHUB_BASELINE_ROOT: canary/inputs/github-writer1-baseline
           WRITER1_POST_DISPATCH_ROOT: canary/inputs/post-dispatch-artifact
           WRITER1_POST_DISPATCH_ZIP: canary/inputs/post-dispatch.zip
+          WRITER1_POST_DISPATCH_SEAL_ROOT: canary/inputs/post-dispatch-seal-artifact/canary
         run: |
-          if [ "${{ steps.dispatch_mode.outputs.mode }}" = 'verified-writer1-correction-v2' ]; then
+          if [ "${{ steps.dispatch_mode.outputs.mode }}" = 'verified-writer1-seal-only' ]; then
+            node --import tsx scripts/360-words-verified.ts --writer1-seal-only
+          elif [ "${{ steps.dispatch_mode.outputs.mode }}" = 'verified-writer1-correction-v2' ]; then
             node --import tsx scripts/360-words-verified.ts --writer1-correction-v2
           elif [ "${{ steps.dispatch_mode.outputs.mode }}" = 'verified-writer1-retrieval-only' ]; then
             node --import tsx scripts/360-words-verified.ts --writer1-retrieval-only

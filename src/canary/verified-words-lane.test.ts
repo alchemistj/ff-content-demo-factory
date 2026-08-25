@@ -4,11 +4,14 @@ import * as path from "node:path";
 import test from "node:test";
 import { EXPECTED_VERIFIED_CORRECTION, EXPECTED_VERIFIED_CORRECTION_V2, selectVerifiedWriter1Dispatch, validateControl as rawValidateControl } from "../../scripts/360-words-control.mjs";
 import { validateSealed, writer1Projection } from "../../scripts/360-words-canary.js";
-import { VERIFIED_WRITER1_AGENT_ID, VERIFIED_WRITER1_PROMPT_DIGEST, VERIFIED_WRITER1_PROMPT_V2_DIGEST, validateVerifiedWriter1Control, validateVerifiedWriter1PostDispatchControl, runVerifiedWriter1Correction } from "../../scripts/360-words-verified.js";
+import { VERIFIED_WRITER1_AGENT_ID, VERIFIED_WRITER1_PROMPT_DIGEST, VERIFIED_WRITER1_PROMPT_V2_DIGEST, validateVerifiedWriter1Control, validateVerifiedWriter1PostDispatchControl, validateVerifiedWriter1SealOnlyControl, runVerifiedWriter1Correction } from "../../scripts/360-words-verified.js";
 import { digestOf } from "../../src/contracts/digests.js";
 import { assertNoLocalDownstreamGeneration, assertVerifiedDownstreamState, VERIFIED_PUBLIC_ROUTES, VERIFIED_STAGE_POLICY, VERIFIED_WRITER3_SEALED_FACTS } from "../../src/pipeline/verified-words-policy.js";
 
 const root = path.resolve(process.cwd());
+const EXPECTED_POST_DISPATCH_ORIGINAL_INPUT_DIGEST = "sha256:f4f59e9c645391266172892e4651f0da4ccedaa2bc86e35217a0ab8699fd0c1f";
+const EXPECTED_POST_DISPATCH_ORIGINAL_PROMPT_DIGEST = "sha256:e9c39355c8f0973250ebd97ad1b3b69c9e09c840796f39336abd5664c20303e3";
+const EXPECTED_POST_DISPATCH_ORIGINAL_IDEMPOTENCY_KEY = `${VERIFIED_WRITER1_AGENT_ID}:writer1:correction:v2:${EXPECTED_POST_DISPATCH_ORIGINAL_INPUT_DIGEST}:${EXPECTED_POST_DISPATCH_ORIGINAL_PROMPT_DIGEST}`;
 const validateControl = (control: Record<string, any>, input: Record<string, any> = {}) => rawValidateControl(control, control.wakeNonce === "DORMANT" ? input : { ...input, commitSha: "d".repeat(40), beforeSha: control.policy?.recovery?.sourceSha, parentSha: control.policy?.recovery?.sourceSha });
 
 test("verified branch starts dormant and never treats the committed downstream surface as approval", async () => {
@@ -88,9 +91,10 @@ test("the bounded workflow dispatches the exact verified wake to the verified ru
 
 test("post-dispatch wake is classified as retrieval-only and cannot reach a follow-up or legacy artifact runner", () => {
   const control = JSON.parse(readFileSync(path.join(root, ".factory-wake/360-words-control.json"), "utf8"));
-  const sourceSha = "b".repeat(40); const inputDigest = "sha256:" + "9".repeat(64);
+  const sourceSha = "b".repeat(40); const inputDigest = EXPECTED_POST_DISPATCH_ORIGINAL_INPUT_DIGEST;
   const receiptManifest = { schemaVersion: "verified-writer1-dispatch-manifest/v1", actionRunId: "32825265478", artifactId: 9554789848, artifactZipDigest: "sha256:e4315183eac7c3755a27e9a46622ea63c4d99978e5bc98e02eae9658a7504648", artifactZipSize: 2753, receiptPath: "runtime/writer1-dispatch-receipt.json", receiptDigest: "sha256:b4769f3dded171060119cc9f5b42f33dfe1d882c31d441c08c185806066598d4", receiptSize: 1536, controlBindingDigest: "sha256:" + "3".repeat(64), manifestDigest: "sha256:" + "4".repeat(64), manifestMac: "hmac-sha256:" + "5".repeat(64) };
-  const active: any = { ...control, wakeNonce: "W1-POST-DISPATCH-20260825", policy: { ...control.policy, mode: "writer1-retrieval-only" }, recovery: { recoveryVersion: "words-writer1-post-dispatch-retrieval/v1", actionRunId: "32825265478", artifactId: 9554789848, sourceBranch: "architect/360-words-canary-verified", sourceSha, agentId: VERIFIED_WRITER1_AGENT_ID, runId: "run-1686013d-dec5-454c-a39e-5817448e6a96", threadUrl: `https://cursor.com/agents/${VERIFIED_WRITER1_AGENT_ID}`, requestedModel: "cursor-grok-4.6-high", resolvedModel: "grok-4.6", effort: "high", fast: false, inputDigest, promptDigest: VERIFIED_WRITER1_PROMPT_V2_DIGEST, idempotencyKey: `${VERIFIED_WRITER1_AGENT_ID}:writer1:correction:v2:${inputDigest}:${VERIFIED_WRITER1_PROMPT_V2_DIGEST}`, allowCreate: false, allowResume: false, allowFollowUp: false, maxFollowUps: 0, receiptManifest } };
+  const sealedManifest = { schemaVersion: "verified-writer1-sealed-manifest-pin/v1", sourceActionRunId: "32825000000", sourceArtifactId: 9554000000, sourceSha: "a".repeat(40), manifestPath: "runtime/writer1-dispatch-manifest.json", manifestBytesDigest: "sha256:" + "6".repeat(64), manifestSize: 1234, manifestDigest: "sha256:" + "7".repeat(64), manifestMac: "hmac-sha256:" + "8".repeat(64) };
+  const active: any = { ...control, wakeNonce: "W1-POST-DISPATCH-20260825", policy: { ...control.policy, mode: "writer1-retrieval-only" }, recovery: { recoveryVersion: "words-writer1-post-dispatch-retrieval/v1", actionRunId: "32825265478", artifactId: 9554789848, sourceBranch: "architect/360-words-canary-verified", sourceSha, agentId: VERIFIED_WRITER1_AGENT_ID, runId: "run-1686013d-dec5-454c-a39e-5817448e6a96", threadUrl: `https://cursor.com/agents/${VERIFIED_WRITER1_AGENT_ID}`, requestedModel: "cursor-grok-4.6-high", resolvedModel: "grok-4.6", effort: "high", fast: false, inputDigest, promptDigest: EXPECTED_POST_DISPATCH_ORIGINAL_PROMPT_DIGEST, idempotencyKey: EXPECTED_POST_DISPATCH_ORIGINAL_IDEMPOTENCY_KEY, allowCreate: false, allowResume: false, allowFollowUp: false, maxFollowUps: 0, receiptManifest, sealActionRunId: sealedManifest.sourceActionRunId, sealArtifactId: sealedManifest.sourceArtifactId, sealedManifest } };
   assert.equal(selectVerifiedWriter1Dispatch(active), "verified-writer1-retrieval-only");
   assert.doesNotThrow(() => rawValidateControl(active, { changedPaths: [".factory-wake/360-words-control.json"], actor: "architect", owner: "architect", commitSha: "c".repeat(40), beforeSha: sourceSha, parentSha: sourceSha, verifiedLane: true }));
   assert.doesNotThrow(() => validateVerifiedWriter1PostDispatchControl(active, inputDigest));
@@ -100,6 +104,25 @@ test("post-dispatch wake is classified as retrieval-only and cannot reach a foll
   const workflow = readFileSync(path.join(root, ".github/workflows/architect-360-words-canary.yml"), "utf8");
   assert.match(workflow, /verified-writer1-retrieval-only/u); assert.match(workflow, /--writer1-retrieval-only/u); assert.doesNotMatch(workflow, /--writer1-retrieval-only[\s\S]*--artifact-recovery/u);
   assert.equal(active.recovery.runId, "run-1686013d-dec5-454c-a39e-5817448e6a96");
+});
+
+test("two-step seal-only mode is classified separately and has no Cursor retrieval path", () => {
+  const control = JSON.parse(readFileSync(path.join(root, ".factory-wake/360-words-control.json"), "utf8"));
+  const sourceSha = "a".repeat(40);
+  const active: any = { ...control, wakeNonce: "W1-SEAL-ONLY-20260825", policy: { ...control.policy, mode: "writer1-seal-only", stopAfter: "manifest-sealed" }, recovery: {
+    recoveryVersion: "words-writer1-post-dispatch-seal/v1", sourceBranch: "architect/360-words-canary-verified", sourceSha,
+    actionRunId: "32825265478", artifactId: 9554789848, agentId: VERIFIED_WRITER1_AGENT_ID, runId: "run-1686013d-dec5-454c-a39e-5817448e6a96", threadUrl: `https://cursor.com/agents/${VERIFIED_WRITER1_AGENT_ID}`,
+    requestedModel: "cursor-grok-4.6-high", resolvedModel: "grok-4.6", effort: "high", fast: false,
+    inputDigest: EXPECTED_POST_DISPATCH_ORIGINAL_INPUT_DIGEST, promptDigest: EXPECTED_POST_DISPATCH_ORIGINAL_PROMPT_DIGEST, idempotencyKey: EXPECTED_POST_DISPATCH_ORIGINAL_IDEMPOTENCY_KEY,
+    allowCreate: false, allowResume: false, allowFollowUp: false, maxFollowUps: 0,
+    receiptPins: { artifactZipDigest: "sha256:e4315183eac7c3755a27e9a46622ea63c4d99978e5bc98e02eae9658a7504648", artifactZipSize: 2753, receiptPath: "runtime/writer1-dispatch-receipt.json", receiptDigest: "sha256:b4769f3dded171060119cc9f5b42f33dfe1d882c31d441c08c185806066598d4", receiptSize: 1536 },
+  } };
+  assert.equal(selectVerifiedWriter1Dispatch(active), "verified-writer1-seal-only");
+  validateVerifiedWriter1SealOnlyControl(active);
+  const source = readFileSync(path.join(root, "scripts/360-words-verified.ts"), "utf8");
+  const sealBody = source.slice(source.indexOf("runVerifiedWriter1PostDispatchSealOnly"), source.indexOf("runVerifiedWriter1PostDispatchRecovery"));
+  assert.doesNotMatch(sealBody, /recoverCursorWriterPostDispatch|Agent\.getRun|Agent\.create|\.resume\(|\.send\(|\.wait\(/u);
+  for (const bad of ["writer1-retrieval-only", "artifact-recovery", "validation-only", "words-writer1-post-dispatch-seal/v2"]) assert.equal(selectVerifiedWriter1Dispatch({ ...active, policy: { ...active.policy, mode: bad }, recovery: { ...active.recovery, recoveryVersion: bad } }), "unsupported-verified-lane");
 });
 
 test("verified policy requires new downstream agents and signed direct receipts, with immutable Writer3 facts", () => {

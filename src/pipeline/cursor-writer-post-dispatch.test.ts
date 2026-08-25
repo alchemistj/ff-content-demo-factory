@@ -10,6 +10,9 @@ import {
   postDispatchReceiptManifestMac,
   POST_DISPATCH_ARTIFACT_ZIP_DIGEST,
   POST_DISPATCH_RECEIPT_DIGEST,
+  POST_DISPATCH_ORIGINAL_INPUT_DIGEST,
+  POST_DISPATCH_ORIGINAL_PROMPT_DIGEST,
+  POST_DISPATCH_ORIGINAL_IDEMPOTENCY_KEY,
   type CursorPostDispatchRecoveryPrior,
   type CursorTestTransport,
 } from "./cursor-writer.js";
@@ -22,8 +25,8 @@ const env = { CURSOR_API_KEY: "post-dispatch-test-secret", CURSOR_MODEL: "cursor
 const output = JSON.stringify({ schemaVersion: "words-writer1-output/v1", pages: [{ type: "service", url: "/garage-door-repair" }, { type: "service", url: "/garage-door-installation" }] });
 
 function prior(): CursorPostDispatchRecoveryPrior {
-  const inputDigest = digestOf({ sealed: "sealed-360", baseline: "baseline" });
-  const promptDigest = digestOf("the exact original v2 prompt bytes");
+  const inputDigest = POST_DISPATCH_ORIGINAL_INPUT_DIGEST;
+  const promptDigest = POST_DISPATCH_ORIGINAL_PROMPT_DIGEST;
   const dispatchManifest: any = { schemaVersion: "verified-writer1-dispatch-manifest/v1", actionRunId: "32825265478", artifactId: 9554789848, artifactZipDigest: POST_DISPATCH_ARTIFACT_ZIP_DIGEST, artifactZipSize: 2753, receiptPath: "runtime/writer1-dispatch-receipt.json", receiptDigest: POST_DISPATCH_RECEIPT_DIGEST, receiptSize: 1536, controlBindingDigest: digestOf("architect-control"), manifestDigest: "", manifestMac: "" };
   dispatchManifest.manifestDigest = postDispatchReceiptManifestDigest(dispatchManifest);
   dispatchManifest.manifestMac = postDispatchReceiptManifestMac(dispatchManifest, env.CURSOR_API_KEY);
@@ -32,7 +35,7 @@ function prior(): CursorPostDispatchRecoveryPrior {
     requestedModel: "cursor-grok-4.6-high", resolvedModel: OFFICIAL_CURSOR_MODEL,
     modelParams: [{ id: "fast", value: "false" }, { id: "effort", value: "high" }], effort: "high", fast: false,
     inputDigest, promptDigest, requestDigest: digestOf({ original: true }),
-    idempotencyKey: `${agentId}:writer1:correction:v2:${inputDigest}:${promptDigest}`, messagesSent: 1, dispatchManifest,
+    idempotencyKey: POST_DISPATCH_ORIGINAL_IDEMPOTENCY_KEY, messagesSent: 1, dispatchManifest,
   };
 }
 
