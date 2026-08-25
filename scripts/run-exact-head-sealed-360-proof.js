@@ -5,12 +5,6 @@ const fs = require('node:fs');
 const path = require('node:path');
 const { spawnSync } = require('node:child_process');
 const { runCurrentHeadGate1Canary } = require('../src/run-gate1-canary');
-const {
-  assembleExactHeadProofPackage,
-  validateExactHeadProofPackage,
-  CURRENT_PACKET_RELATIVE,
-} = require('../src/factory/exact-head-proof-package');
-const { main: preparePacket } = require('./prepare-360-gate1-canary-packet');
 
 function gitHead() {
   const result = spawnSync('git', ['rev-parse', 'HEAD'], { encoding: 'utf8' });
@@ -48,27 +42,6 @@ function resolveInput(root, relative) {
   return found;
 }
 
-function rebindCurrentPacket({ root, env, expectedHeadSha }) {
-  const packet = preparePacket({
-    root,
-    lineageRoot: process.cwd(),
-    expectedHeadSha,
-    currentHead: expectedHeadSha,
-    surface: 'current-proof',
-    sealedReplayExecuted: true,
-    liveConnectorExecuted: false,
-    env,
-    target: path.join(root, CURRENT_PACKET_RELATIVE),
-  });
-  const filename = path.join(root, CURRENT_PACKET_RELATIVE);
-  if (!fs.existsSync(filename)) throw new Error('rebound current-head packet was not written');
-  const parsed = JSON.parse(fs.readFileSync(filename, 'utf8'));
-  if (parsed.reviewedHeadSha !== expectedHeadSha && parsed.checkedOutSha !== expectedHeadSha) throw new Error('rebound packet is stale-head-bound');
-  if (parsed.preparedOnly === true) throw new Error('executed sealed packet must not remain preparedOnly');
-  if (parsed.executed === true || parsed.liveConnectorExecuted === true) throw new Error('sealed packet is mislabeled as live connector execution');
-  return packet;
-}
-
 async function runExactHeadSealed360Proof({ root = process.cwd(), env = process.env, deps = null } = {}) {
   if (deps) throw new Error('exact-head sealed 360 proof refuses injected/mock cycle dependencies');
   refuseSecrets(env);
@@ -103,22 +76,25 @@ async function runExactHeadSealed360Proof({ root = process.cwd(), env = process.
     cursorBundleFile: '',
     env: boundEnv,
   });
-  const assembled = assembleExactHeadProofPackage({ root, env: boundEnv, proof: result.proof, state: result.state });
-  rebindCurrentPacket({ root, env: boundEnv, expectedHeadSha });
-  const validated = validateExactHeadProofPackage({ root, expectedHeadSha, env: boundEnv });
-  return { result, assembled, validated, expectedHeadSha, checkedOutSha };
+  if (result.proof.synthetic !== true || result.proof.approvableGate1 !== false || result.proof.gate1State !== 'synthetic-sealed-evidence-only') {
+    throw new Error('sealed replay must remain synthetic-only and non-approvable');
+  }
+  if (fs.existsSync(path.join(root, 'canary/outputs/gate1.md')) || fs.existsSync(path.join(root, 'canary/state/factory-state.json'))) {
+    throw new Error('sealed replay manufactured a Gate 1-shaped artifact');
+  }
+  return { result, assembled: null, validated: null, expectedHeadSha, checkedOutSha };
 }
 
 if (require.main === module) {
-  runExactHeadSealed360Proof().then(({ validated }) => {
+  runExactHeadSealed360Proof().then(({ result, checkedOutSha }) => {
     process.stdout.write(`${JSON.stringify({
-      gate1State: validated.proof.gate1State,
-      checkedOutSha: validated.exactHead.checkedOutSha,
-      packageDigest: validated.package.packageDigest,
-      artifactName: validated.package.artifactName,
-      integratedFactoryReadiness: validated.package.integratedFactoryReadiness,
-      liveConnectorProven: validated.package.liveConnectorProven,
-      markdownPath: 'canary/outputs/gate1.md',
+      gate1State: result.proof.gate1State,
+      checkedOutSha,
+      synthetic: result.proof.synthetic,
+      approvableGate1: result.proof.approvableGate1,
+      integratedFactoryReadiness: result.proof.integratedFactoryReadiness,
+      liveConnectorProven: result.proof.liveConnectorProven,
+      markdownPath: null,
     }, null, 2)}\n`);
   }).catch((error) => {
     console.error(error.stack || error.message);
