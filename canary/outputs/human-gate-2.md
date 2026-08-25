@@ -19,7 +19,7 @@ Directly readable words package for the 360 Garage Door and More canary. Natural
 - Deployment occurred: **no**
 - Branch: `architect/360-words-canary`
 - Quality-correction parent (reviewed head): `267f2598a4535a3f893c33ac8c5d20261c48827a`
-- Head at render: `b1aa929835be79e45ade8fb695285763474cb3c1`
+- Head at render: `d08d73327010f87170968e103fb3b01119e5b0c2`
 - Factory strict-validator pass of normalized JSON: `5675de60b9ade7ecb50fd79f0ec43e9601d3b0cb`
 - Exact reviewEvidence regression restore: `e7c76770551109efd1827828558e88ede00e4b77`
 - Pointer-ledger apply: `56069627ee62dd2f843e2b6a38313b37e7e23a72`

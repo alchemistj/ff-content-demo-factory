@@ -125,13 +125,14 @@ def unique_preserve(values: list[str]) -> list[str]:
     return out
 
 
-existing = load(ROOT / "canary/outputs/writer1-output.json")
 handoff = load(ROOT / "canary/sealed/360-four-page-reseal-handoff.json")
-state = load(ROOT / "canary/runtime/state.json")
-meta = load(ROOT / "canary/runtime/quarantine/writer1-output.metadata.json")
-normalization = load(ROOT / "canary/runtime/writer1-pointer-ledger-normalization.json")
-
-repair_old, install_old = existing["pages"]
+state_path = ROOT / "canary/runtime/state.json"
+state = load(state_path) if state_path.exists() else {}
+normalization = {
+    "sourceByteDigest": "sha256:ec36da69992dd318e913671763a96e4b838ab747b36e512702f91176155e5eac",
+    "normalizedOutputDigest": "sha256:c771016e724a49dd41254bde3639de6c1b1c18fc69c23533ed19bd9773f3ef8e",
+    "removed": [{"key": "reviewer"}] * 31 + [{"key": "excerpt"}] * 31,
+}
 
 repair_sections = [
     {
@@ -247,7 +248,33 @@ repair = {
         quote_obj(JUDI_QUOTE, "Judi Wills", JUDI_ID, "options-without-pressure-quote", "repair-options"),
         quote_obj(KELSIE_QUOTE, "Kelsie Bates", KELSIE_ID, "parts-on-truck-quote", "repair-options"),
     ],
-    "reviewEvidence": remap_pointers(repair_old.get("reviewEvidence") or [], {"repair-follow-up": "repair-springfield"}),
+    "reviewEvidence": [
+        pointer(CHRIS_ID, "lead-completed-sagging-door", "repair-proof-lead"),
+        pointer("Ci9DQUlRQUNvZENodHljRjlvT25OS09FRkhPRkptVVhoclIwdzRORVp6VTB0R1VIYxAB", "door-would-not-open", "repair-what-we-fix"),
+        pointer("Ci9DQUlRQUNvZENodHljRjlvT2xVMWQxVlRXalppVmxoU1NHcG9hUzFtV2pSVmRIYxAB", "animal-incident-wiring-repair", "repair-what-we-fix"),
+        pointer("ChdDSUhNMG9nS0VJQ0FnSURmNlBfbXhBRRAB", "bottom-seal-repair", "repair-what-we-fix"),
+        pointer(DEBBIE_ID, "consistent-open-close", "repair-what-we-fix"),
+        pointer("Ci9DQUlRQUNvZENodHljRjlvT2t0T04xVlBSMU5oUmprMU9TMXNibmx6WjJ0cldHYxAB", "completed-door-fixed", "repair-what-we-fix"),
+        pointer("ChdDSUhNMG9nS0VJQ0FnTUNZNkplRm5BRRAB", "service-call-door-working", "repair-what-we-fix"),
+        pointer("Ci9DQUlRQUNvZENodHljRjlvT25oaE9HeFNXVUUyUmt0VlowSkJPVWRCWmpSTVZYYxAB", "two-springs-two-car-door", "repair-springs-folded"),
+        pointer(JASON_ID, "spring-replacement-completed", "repair-springs-folded"),
+        pointer("Ci9DQUlRQUNvZENodHljRjlvT2xkeFNsRnBOMll0V2pGblFsQXljR0pIV0ZreE5VRRAB", "undersized-spring-corrected", "repair-springs-folded"),
+        pointer("Ci9DQUlRQUNvZENodHljRjlvT25wemJWQkhVa3RWWTJKeVdYaFdlbFJOWlVGeFQxRRAB", "spring-repair-folded", "repair-springs-folded"),
+        pointer("Ci9DQUlRQUNvZENodHljRjlvT2tRMVoybGhYM1JWUldwb2JVNXNXbFozWDBaMVNIYxAB", "coils-tracks-rollers", "repair-springs-folded"),
+        pointer("ChdDSUhNMG9nS0VJQ0FnTUNBZ082YzBRRRAB", "broken-spring-and-brackets", "repair-springs-folded"),
+        pointer("ChdDSUhNMG9nS0VJQ0FnTUNBbnNUOXB3RRAB", "opener-springs-replaced", "repair-springs-folded"),
+        pointer("ChZDSUhNMG9nS0VQR2ZxNUc5cjZhckdREAE", "return-spring-monday-visit", "repair-springs-folded"),
+        pointer("ChZDSUhNMG9nS0VLeTZocG5jME9qc0t3EAE", "sunday-text-monday-repair", "repair-springs-folded"),
+        pointer(JUDI_ID, "options-without-pressure", "repair-options"),
+        pointer("ChdDSUhNMG9nS0VJQ0FnSURQZ2RtWDFnRRAB", "diagnostics-and-repair", "repair-options"),
+        pointer("Ci9DQUlRQUNvZENodHljRjlvT2psMlVHOVhVMDVrTFhwUlpWbDZjSFZUUjFKQlgwRRAB", "maintenance-materials-on-hand", "repair-options"),
+        pointer("ChZDSUhNMG9nS0VJQ0FnSURQZ2NEbVJnEAE", "lubrication-and-adjustment", "repair-options"),
+        pointer(KELSIE_ID, "parts-on-truck-completed-repair", "repair-options"),
+        pointer(STEVE_ID, "follow-up-after-prior-fixes", "repair-springfield"),
+        pointer("ChZDSUhNMG9nS0VJQ0FnSUR2cmFTZE93EAE", "local-springfield-repairs-and-service", "repair-springfield"),
+        pointer("Ci9DQUlRQUNvZENodHljRjlvT2t4alNtbDBaVVV4VVRselpIQTJhakpOYURSeE1HYxAB", "will-service-repair-jenny-phone", "repair-springfield"),
+        pointer("Ci9DQUlRQUNvZENodHljRjlvT2xSSU1YVXhWMDVDZWtWMVZtTm5SbGhHTld4amVGRRAB", "fixed-and-serviced", "repair-springfield"),
+    ],
 }
 
 install = {
@@ -279,7 +306,14 @@ install = {
         quote_obj(MATTHEW_QUOTE, "Matthew Smith", MATTHEW_ID, "paint-ready-trim-quote", "install-trim-cleanup"),
         quote_obj(CAMERON_QUOTE, "Cameron Spitzer", CAMERON_ID, "replacement-doors-quote", "install-replacement"),
     ],
-    "reviewEvidence": remap_pointers(install_old.get("reviewEvidence") or [], {}),
+    "reviewEvidence": [
+        pointer(MARCIE_ID, "lead-new-doors-installed", "install-proof-lead"),
+        pointer(CHRISTINE_ID, "help-choosing-door", "install-selection"),
+        pointer(SCOTT_ID, "taller-door-reframed-opening", "install-custom-height"),
+        pointer(MATTHEW_ID, "paint-ready-trim", "install-trim-cleanup"),
+        pointer(CAMERON_ID, "replacement-doors", "install-replacement"),
+        pointer(GREGORY_ID, "new-door-by-thursday-that-job", "install-replacement"),
+    ],
 }
 
 writer1 = {"schemaVersion": "words-writer1-output/v1", "pages": [repair, install]}
@@ -647,14 +681,8 @@ whole_site = {
     ],
 }
 
-# Raw quarantined bytes stay unapproved. Writer2 release is recorded on state/QA, not by weakening the raw ledger.
-meta["status"] = "superseded-by-approved-normalization"
-meta["consumable"] = False
-meta["approved"] = False
-meta["completionAuthorized"] = False
-meta["writer2Blocked"] = True
-meta["supersededByApprovedOutputPath"] = "canary/outputs/writer1-output.json"
-meta["supersededByNormalizationPath"] = "canary/runtime/writer1-pointer-ledger-normalization.json"
+# Writer2 release is recorded on state/QA. Live quarantine bytes stay out of
+# this tree; pointer-ledger fail-closed behavior is proven by hermetic fixtures.
 
 head = git_head()
 state.update({
@@ -677,7 +705,6 @@ dump(ROOT / "canary/outputs/writer3-output.json", writer3)
 dump(ROOT / "canary/runtime/architect-qa-writer1.json", qa1)
 dump(ROOT / "canary/runtime/architect-qa-writer2.json", qa2)
 dump(ROOT / "canary/runtime/whole-site-qa.json", whole_site)
-dump(ROOT / "canary/runtime/quarantine/writer1-output.metadata.json", meta)
 dump(ROOT / "canary/runtime/state.json", state)
 
 ledger_lines = ["## Review / evidence pointer ledger", ""]
