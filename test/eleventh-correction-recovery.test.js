@@ -5,6 +5,7 @@ const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const os = require('node:os');
 const path = require('node:path');
+const { spawnSync } = require('node:child_process');
 const { createDispatchPacket } = require('../src/factory/cloud-agent');
 const { createPendingHandoff } = require('../src/factory/handoff');
 const { markerFor, markerBody, findTerminalOutcome } = require('../src/factory/github-ledger');
@@ -12,11 +13,11 @@ const { digest } = require('../src/factory/prescription-policy');
 const { decide } = require('../scripts/cursor-handoff-recovery');
 const { apply: applyRecoveryDecision } = require('../scripts/apply-cursor-recovery-decision');
 const { createArtifact, createPaidMarker } = require('../scripts/paid-operation-ledger');
-const { createFileReceiptStore } = require('../src/factory/receipt-store');
 const { selectNewestDispatchComment } = require('../scripts/select-cursor-dispatch-comment');
 const { restore } = require('../scripts/restore-paid-receipts');
 const { createCursorAdapter } = require('../src/adapters/cursor');
 const { createApifyAdapter } = require('../src/adapters/apify');
+const { apifyFinalistRequestProjection } = require('../src/adapters/apify');
 
 function pendingFor(head = 'head-1', suffix = '1') {
   const dispatchPacket = createDispatchPacket({ issueNumber: 8, prNumber: 1, branch: 'architect/greenfield-gate1', reviewedHeadSha: head, scope: 'research-only' });
@@ -157,10 +158,24 @@ test('paid operation ledger advances phase-B owner claim through prepared and ac
   assert.ok(accepted.responseDigest);
 });
 
+test('paid artifact outer schema is the adapter projection and canonical digest is stable', () => {
+  const pending = { ...pendingFor(), apifyOperationProjection: apifyFinalistRequestProjection({ placeId: 'ChIJschema', mapsUrl: 'https://www.google.com/maps/place/Schema' }) };
+  const result = resultFor(pending); const artifact = createArtifact({ pending, result, stage: 'pre-post' }); const again = createArtifact({ pending, result, stage: 'pre-post' });
+  for (const field of ['artifactName', 'artifactId', 'artifactDigest', 'artifactContentDigest', 'operationKey', 'requestDigest', 'idempotencyKey', 'requestProjection']) assert.ok(artifact[field] != null, field);
+  assert.equal(artifact.operationKey, pending.apifyOperationProjection.operationKey);
+  assert.equal(artifact.requestDigest, pending.apifyOperationProjection.requestDigest);
+  assert.deepEqual(artifact.requestProjection, pending.apifyOperationProjection);
+  assert.equal(artifact.artifactContentDigest, again.artifactContentDigest);
+});
+
 test('paid operation crash matrix resumes on a distinct runner filesystem with one POST', async () => {
-  const shared = fs.mkdtempSync(path.join(os.tmpdir(), 'factory-paid-shared-'));
   const runnerA = fs.mkdtempSync(path.join(os.tmpdir(), 'factory-paid-runner-a-'));
   const runnerB = fs.mkdtempSync(path.join(os.tmpdir(), 'factory-paid-runner-b-'));
+  const github = { ledger: new Map(), artifacts: new Map(), comments: [] };
+  const localStore = (root) => {
+    const local = new Map();
+    return { local, async get(key) { return github.ledger.get(key); }, async put(key, value) { local.set(key, value); github.ledger.set(key, value); return value; } };
+  };
   let posts = 0; let interrupted = true;
   const fetchImpl = async (url, options) => {
     if (options.method === 'POST') { posts += 1; return { ok: true, status: 200, text: async () => JSON.stringify({ data: { id: 'run-crash', defaultDatasetId: 'dataset-crash', status: 'RUNNING' } }) }; }
@@ -170,12 +185,21 @@ test('paid operation crash matrix resumes on a distinct runner filesystem with o
     }
     return { ok: true, status: 200, text: async () => JSON.stringify([{ placeId: 'ChIJcrash', url: 'https://www.google.com/maps/place/Crash', reviews: [] }]) };
   };
-  const first = createApifyAdapter({ token: 'secret', fetchImpl, receiptStore: createFileReceiptStore(shared), pollIntervalMs: 0 });
+  const storeA = localStore(runnerA); const storeB = localStore(runnerB);
+  const first = createApifyAdapter({ token: 'secret', fetchImpl, receiptStore: storeA, pollIntervalMs: 0 });
   await assert.rejects(() => first.enrichFinalist({ placeId: 'ChIJcrash', mapsUrl: 'https://www.google.com/maps/place/Crash' }), /runner crashed/);
   assert.equal(posts, 1);
-  assert.ok(fs.existsSync(path.join(shared, 'state', 'vendor-receipts.json')));
+  assert.ok(storeA.local.size > 0 && storeB.local.size === 0, 'runner-local stores must remain distinct');
   assert.ok(fs.existsSync(runnerA) && fs.existsSync(runnerB));
-  const second = createApifyAdapter({ token: 'secret', fetchImpl, receiptStore: createFileReceiptStore(shared), pollIntervalMs: 0 });
+  const second = createApifyAdapter({ token: 'secret', fetchImpl, receiptStore: storeB, pollIntervalMs: 0 });
   await second.enrichFinalist({ placeId: 'ChIJcrash', mapsUrl: 'https://www.google.com/maps/place/Crash' });
   assert.equal(posts, 1, 'fresh runner must resume durable accepted state without a second paid POST');
+  assert.ok(github.ledger.size > 0 && github.artifacts instanceof Map && Array.isArray(github.comments));
+  const pending = pendingFor(); const result = resultFor(pending); const scriptRoot = fs.mkdtempSync(path.join(os.tmpdir(), 'factory-paid-entrypoint-'));
+  fs.writeFileSync(path.join(scriptRoot, 'pending.json'), JSON.stringify(pending)); fs.writeFileSync(path.join(scriptRoot, 'result.json'), JSON.stringify(result)); fs.writeFileSync(path.join(scriptRoot, 'comments.json'), '[]');
+  const recovery = spawnSync(process.execPath, ['scripts/cursor-handoff-recovery.js', path.join(scriptRoot, 'pending.json'), path.join(scriptRoot, 'result.json'), path.join(scriptRoot, 'comments.json')], { cwd: process.cwd(), encoding: 'utf8' });
+  assert.equal(recovery.status, 0, recovery.stderr);
+  const workflow = fs.readFileSync('.github/workflows/cursor-cloud-agent-resume.yml', 'utf8');
+  assert.match(workflow, /Upload accepted-response operation artifact before remaining phase-B work/);
+  assert.match(workflow, /node src\/run-gate1-canary\.js/);
 });

@@ -16,11 +16,11 @@ function receiptArtifactBinding({ handoffId, dispatchKey, outputDigest, phaseARu
   return { outcome: String(outcome), handoffId: String(handoffId), dispatchKey: String(dispatchKey), outputDigest: String(outputDigest), phaseARunId: String(phaseARunId), name: `factory-paid-receipts-${key.slice(0, 32)}` };
 }
 
-function operationArtifactBinding({ operationKey, provider, operation, inputDigest, requestDigest, idempotencyKey, context = {}, responseDigest = null, stage = 'pre-post', artifactIdentity = null } = {}) {
+function operationArtifactBinding({ operationKey, provider, operation, inputDigest, requestDigest, idempotencyKey, requestProjection = null, context = {}, responseDigest = null, stage = 'pre-post', artifactIdentity = null } = {}) {
   for (const [name, value] of Object.entries({ operationKey, provider, operation, inputDigest, requestDigest, idempotencyKey })) {
     if (!value) throw new Error(`operation artifact binding ${name} is required`);
   }
-  const content = { schemaVersion: 'factory-paid-operation-artifact-v1', stage, operationKey: String(operationKey), provider: String(provider), operation: String(operation), inputDigest: String(inputDigest), requestDigest: String(requestDigest), idempotencyKey: String(idempotencyKey), context, ...(responseDigest ? { responseDigest: String(responseDigest) } : {}) };
+  const content = { schemaVersion: 'factory-paid-operation-artifact-v1', stage, operationKey: String(operationKey), provider: String(provider), operation: String(operation), inputDigest: String(inputDigest), requestDigest: String(requestDigest), idempotencyKey: String(idempotencyKey), requestProjection: requestProjection || null, context, ...(responseDigest ? { responseDigest: String(responseDigest) } : {}) };
   const contentDigest = digest(content);
   const suffix = contentDigest.slice(0, 32);
   const identity = artifactIdentity || {};

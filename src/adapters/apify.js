@@ -19,6 +19,22 @@ function stableHash(value) {
   return crypto.createHash('sha256').update(value).digest('hex').slice(0, 24);
 }
 
+// This projection is the single contract shared by the Apify adapter, the
+// durable paid-operation artifact, and the workflow marker. It is deliberately
+// the exact finalist request sent to Compass; a generic phase-B digest is not
+// a substitute for this identity.
+function apifyFinalistRequestProjection({ placeId, mapsUrl, limit = 50 }) {
+  required(placeId, 'placeId');
+  required(mapsUrl, 'mapsUrl');
+  if (limit < 1 || limit > 50) throw new RangeError('finalist review limit must be between 1 and 50');
+  const input = { placeIds: [placeId], startUrls: [{ url: mapsUrl }], maxCrawledPlacesPerSearch: 1, maxReviews: limit, scrapePlaceDetailPage: true, reviewsOrigin: 'google' };
+  const requestDigest = crypto.createHash('sha256').update(JSON.stringify(input)).digest('hex');
+  const jobKey = `finalist:${placeId}`;
+  const operationKey = `apify:run:${jobKey}`;
+  const idempotencyKey = `factory-apify-${stableHash(`${jobKey}:${requestDigest}`)}`;
+  return { schemaVersion: 'factory-apify-request-projection-v1', adapterKey: operationKey, provider: 'apify', operation: 'finalist-enrichment', jobKey, operationKey, input, inputDigest: requestDigest, requestDigest, idempotencyKey };
+}
+
 function canonicalMapsUrl(value) {
   if (!value) return null;
   try {
@@ -141,7 +157,7 @@ function normalizeError(error) {
   return error instanceof Error ? error.message.replace(/Bearer\s+\S+/gi, 'Bearer [redacted]') : String(error);
 }
 
-function createApifyAdapter({ token, fetchImpl = globalThis.fetch, clock = () => new Date().toISOString(), pollIntervalMs = 0, maxPollAttempts = 100, receiptStore = new Map(), reconcileAcceptance = async () => null, operationArtifacts = {}, production = false }) {
+function createApifyAdapter({ token, fetchImpl = globalThis.fetch, clock = () => new Date().toISOString(), pollIntervalMs = 0, maxPollAttempts = 100, receiptStore = new Map(), reconcileAcceptance = async () => null, operationArtifacts = {}, production = false, operationArtifactWriter = null }) {
   required(token, 'APIFY_API_TOKEN');
   required(fetchImpl, 'fetchImpl');
   const enrichmentReceipts = new Map();
@@ -186,7 +202,7 @@ function createApifyAdapter({ token, fetchImpl = globalThis.fetch, clock = () =>
     return run;
   }
 
-  async function runActor(input, { jobKey = `input:${stableHash(JSON.stringify(input))}` } = {}) {
+  async function runActor(input, { jobKey = `input:${stableHash(JSON.stringify(input))}`, operationProjection = null } = {}) {
     const receiptKey = `apify:run:${jobKey}`;
     const operation = String(jobKey).startsWith('discovery:') ? 'discovery' : 'finalist-enrichment';
     const operationKey = receiptKey;
@@ -194,8 +210,11 @@ function createApifyAdapter({ token, fetchImpl = globalThis.fetch, clock = () =>
     if (prior?.status === 'completed' && Array.isArray(prior.items)) return { items: prior.items, receipt: prior };
     if (prior?.status === 'running') return resumeActor(prior, input, jobKey);
     if (prior?.status === 'failed') throw new Error(`Apify run ${prior.apifyStatus || 'failed'} requires an explicit Architect retry decision`);
-    if (prior?.status === 'needs-architect-review' || prior?.status === 'post-attempted' || prior?.status === 'intent') {
-      if (production && prior.artifactOrigin !== 'github-actions') throw new Error('Production paid operation cannot reconcile a local-only or invented vendor receipt');
+    if (prior?.status === 'needs-architect-review' || prior?.status === 'post-attempted' || prior?.status === 'intent' || prior?.status === 'accepted-unuploaded') {
+      if (production && prior.status !== 'accepted-unuploaded' && prior.artifactOrigin !== 'github-actions') throw new Error('Production paid operation cannot reconcile a local-only or invented vendor receipt');
+      const requestProjection = operation === 'finalist-enrichment'
+        ? apifyFinalistRequestProjection({ placeId: input.placeIds?.[0], mapsUrl: input.startUrls?.[0]?.url, limit: input.maxReviews })
+        : null;
       const reconciled = await reconcileAcceptance({ actorId: ACTOR_ID, operation, jobKey, input, idempotencyKey: prior.idempotencyKey, requestDigest: prior.requestDigest, prior });
       const runId = reconciled?.runId || reconciled?.id;
       const datasetId = reconciled?.datasetId || reconciled?.defaultDatasetId;
@@ -203,19 +222,23 @@ function createApifyAdapter({ token, fetchImpl = globalThis.fetch, clock = () =>
         if (prior.status !== 'needs-architect-review') await persistOperationState(receiptStore, operationKey, { ...prior, status: 'needs-architect-review', reviewReason: 'ambiguous Apify acceptance cannot be reconciled', reviewedAt: clock() });
         throw new Error('Apify acceptance is ambiguous; Architect review is required before any retry');
       }
-      const acceptedArtifact = operationArtifactBinding({ operationKey, provider: 'apify', operation, inputDigest: prior.inputDigest || crypto.createHash('sha256').update(JSON.stringify(input)).digest('hex'), requestDigest: prior.requestDigest || crypto.createHash('sha256').update(JSON.stringify(input)).digest('hex'), idempotencyKey: prior.idempotencyKey || `factory-apify-${stableHash(`${jobKey}:${JSON.stringify(input)}`)}`, context: prior.context || { actor: ACTOR_ID, jobKey }, responseDigest: crypto.createHash('sha256').update(JSON.stringify(reconciled)).digest('hex'), stage: 'accepted' });
+      const acceptedArtifact = operationArtifactBinding({ operationKey, provider: 'apify', operation, inputDigest: prior.inputDigest || crypto.createHash('sha256').update(JSON.stringify(input)).digest('hex'), requestDigest: prior.requestDigest || crypto.createHash('sha256').update(JSON.stringify(input)).digest('hex'), idempotencyKey: prior.idempotencyKey || `factory-apify-${stableHash(`${jobKey}:${JSON.stringify(input)}`)}`, requestProjection, context: prior.context || { actor: ACTOR_ID, jobKey }, responseDigest: crypto.createHash('sha256').update(JSON.stringify(reconciled)).digest('hex'), stage: 'accepted' });
       await persistOperationCheckpoint(receiptStore, operationKey, acceptedArtifact);
+      await persistOperationState(receiptStore, operationKey, { ...prior, ...acceptedArtifact, runId, datasetId, status: 'accepted-unuploaded', reconciledAt: clock() });
+      if (typeof operationArtifactWriter === 'function') await operationArtifactWriter(acceptedArtifact, { runId, datasetId, response: reconciled });
       await persistOperationState(receiptStore, operationKey, { ...prior, ...acceptedArtifact, runId, datasetId, status: 'running', reconciledAt: clock() });
       return resumeActor({ ...prior, runId, datasetId, status: 'running' }, input, jobKey);
     }
     const requestDigest = crypto.createHash('sha256').update(JSON.stringify(input)).digest('hex');
-    const idempotencyKey = `factory-apify-${stableHash(`${jobKey}:${requestDigest}`)}`;
+    const projection = operationProjection || { schemaVersion: 'factory-apify-request-projection-v1', adapterKey: receiptKey, provider: 'apify', operation, jobKey, operationKey: receiptKey, input, inputDigest: requestDigest, requestDigest, idempotencyKey: `factory-apify-${stableHash(`${jobKey}:${requestDigest}`)}` };
+    if (JSON.stringify(projection.input) !== JSON.stringify(input) || projection.requestDigest !== requestDigest || projection.operationKey !== receiptKey) throw new Error('Apify request projection does not match the exact adapter request');
+    const idempotencyKey = projection.idempotencyKey;
     const preparedIdentity = operationArtifacts['pre-post'] || operationArtifacts.prePost || null;
-    if (production && (!preparedIdentity || preparedIdentity.artifactOrigin !== 'github-actions' || !preparedIdentity.artifactId || !preparedIdentity.artifactDigest)) {
+    if (production && (!preparedIdentity || preparedIdentity.artifactOrigin !== 'github-actions' || !preparedIdentity.artifactId || !preparedIdentity.artifactDigest || preparedIdentity.operationKey !== receiptKey || preparedIdentity.requestDigest !== requestDigest || preparedIdentity.idempotencyKey !== idempotencyKey || JSON.stringify(preparedIdentity.requestProjection?.input || null) !== JSON.stringify(input))) {
       throw new Error('Production paid operation requires the verified GitHub pre-POST artifact identity before Apify POST');
     }
     await persistOperationIntent(receiptStore, operationKey, { provider: 'apify', operation, input, context: { actor: ACTOR_ID, jobKey }, metadata: { idempotencyKey, requestDigest }, startedAt: clock() });
-    const checkpoint = operationArtifactBinding({ operationKey, provider: 'apify', operation, inputDigest: requestDigest, requestDigest, idempotencyKey, context: { actor: ACTOR_ID, jobKey }, stage: 'pre-post', artifactIdentity: preparedIdentity });
+    const checkpoint = operationArtifactBinding({ operationKey, provider: 'apify', operation, inputDigest: requestDigest, requestDigest, idempotencyKey, requestProjection: projection, context: { actor: ACTOR_ID, jobKey }, stage: 'pre-post', artifactIdentity: preparedIdentity });
     await persistOperationCheckpoint(receiptStore, operationKey, checkpoint);
     // Seal the outbound attempt before POST.  A runner crash after this point
     // must reconcile provider state, never issue a second paid POST.
@@ -235,8 +258,13 @@ function createApifyAdapter({ token, fetchImpl = globalThis.fetch, clock = () =>
       runId = reconciledRunId;
       datasetId = reconciledDatasetId;
     }
-    const acceptedArtifact = operationArtifactBinding({ operationKey, provider: 'apify', operation, inputDigest: requestDigest, requestDigest, idempotencyKey, context: { actor: ACTOR_ID, jobKey }, responseDigest: crypto.createHash('sha256').update(JSON.stringify({ runId, datasetId, run })).digest('hex'), stage: 'accepted' });
+    const acceptedArtifact = operationArtifactBinding({ operationKey, provider: 'apify', operation, inputDigest: requestDigest, requestDigest, idempotencyKey, requestProjection: projection, context: { actor: ACTOR_ID, jobKey }, responseDigest: crypto.createHash('sha256').update(JSON.stringify({ runId, datasetId, run })).digest('hex'), stage: 'accepted' });
     await persistOperationCheckpoint(receiptStore, operationKey, acceptedArtifact);
+    await persistOperationState(receiptStore, operationKey, {
+      schemaVersion: 'factory-paid-operation-v1', operationKey, provider: 'apify', operation, actor: ACTOR_ID, jobKey, runId, datasetId,
+      status: 'accepted-unuploaded', startedAt: clock(), input, inputDigest: requestDigest, idempotencyKey, requestDigest, ...checkpoint, ...acceptedArtifact,
+    });
+    if (typeof operationArtifactWriter === 'function') await operationArtifactWriter(acceptedArtifact, { runId, datasetId, response: run });
     await persistOperationState(receiptStore, operationKey, {
       schemaVersion: 'factory-paid-operation-v1', operationKey, provider: 'apify', operation, actor: ACTOR_ID, jobKey, runId, datasetId,
       status: 'running', startedAt: clock(), input, inputDigest: requestDigest, idempotencyKey, requestDigest, ...checkpoint, ...acceptedArtifact,
@@ -312,22 +340,15 @@ function createApifyAdapter({ token, fetchImpl = globalThis.fetch, clock = () =>
     const cacheKey = `finalist:${placeId}`;
     const cached = enrichmentReceipts.get(cacheKey) || await receiptGet(`apify:${cacheKey}`);
     if (cached) return cached;
-    const input = {
-      placeIds: [placeId],
-      startUrls: [{ url: mapsUrl }],
-      maxCrawledPlacesPerSearch: 1,
-      maxReviews: limit,
-      scrapePlaceDetailPage: true,
-      reviewsOrigin: 'google',
-      // No reviewsStartDate: finalist enrichment retrieves the full available history.
-    };
+    const projection = apifyFinalistRequestProjection({ placeId, mapsUrl, limit });
+    const input = projection.input;
     const runKey = `finalist:${placeId}`;
     let result = await receiptGet(`apify:run:${runKey}`);
     result = result?.status === 'running'
       ? await resumeActor(result, input, runKey)
       : result?.status === 'completed' && Array.isArray(result.items)
         ? { items: result.items, receipt: result }
-        : await runActor(input, { jobKey: runKey });
+        : await runActor(input, { jobKey: runKey, operationProjection: projection });
     const returnedItem = result.items[0];
     if (!returnedItem || !finalistIdentityMatches(returnedItem, { placeId, mapsUrl })) {
       const error = new Error('Apify finalist response place identity mismatch');
@@ -355,4 +376,4 @@ function createApifyAdapter({ token, fetchImpl = globalThis.fetch, clock = () =>
   return { discoverCandidates, enrichFinalist, runActor };
 }
 
-module.exports = { ACTOR_ID, createApifyAdapter, normalizePlace, normalizeReview };
+module.exports = { ACTOR_ID, createApifyAdapter, apifyFinalistRequestProjection, normalizePlace, normalizeReview };

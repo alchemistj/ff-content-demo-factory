@@ -2,7 +2,7 @@
 
 const assert = require('node:assert/strict');
 const test = require('node:test');
-const { createApifyAdapter, ACTOR_ID, normalizePlace, normalizeReview } = require('../src/adapters/apify');
+const { createApifyAdapter, ACTOR_ID, apifyFinalistRequestProjection, normalizePlace, normalizeReview } = require('../src/adapters/apify');
 const {
   ACTUAL_MODEL_ID,
   FACTORY_MODEL_ALIAS,
@@ -183,12 +183,32 @@ test('production Apify refuses paid POST without a real GitHub pre-POST artifact
   const adapter = createApifyAdapter({ token: 'secret', fetchImpl, production: true });
   await assert.rejects(() => adapter.enrichFinalist({ placeId: 'ChIJproduction', mapsUrl: 'https://www.google.com/maps/place/Production' }), /GitHub pre-POST artifact identity/);
   assert.equal(posts, 0);
+  const projection = apifyFinalistRequestProjection({ placeId: 'ChIJproduction-bound', mapsUrl: 'https://www.google.com/maps/place/Production-bound' });
   const bound = createApifyAdapter({
     token: 'secret', fetchImpl, production: true,
-    operationArtifacts: { 'pre-post': { artifactName: 'real-prepared', artifactId: '42', artifactDigest: 'sha256:zip', artifactContentDigest: 'sha256:content', artifactOrigin: 'github-actions' } },
+    operationArtifacts: { 'pre-post': { ...projection, artifactName: 'real-prepared', artifactId: '42', artifactDigest: 'sha256:zip', artifactContentDigest: 'sha256:content', artifactOrigin: 'github-actions', requestProjection: projection } },
   });
   await bound.enrichFinalist({ placeId: 'ChIJproduction-bound', mapsUrl: 'https://www.google.com/maps/place/Production-bound' }).catch(() => {});
   assert.equal(posts, 1, 'a bound production operation may issue exactly one provider POST');
+  const wrong = { ...projection, requestDigest: 'sha256:wrong' };
+  const rejected = createApifyAdapter({ token: 'secret', fetchImpl, production: true, operationArtifacts: { 'pre-post': { ...wrong, artifactName: 'wrong', artifactId: '43', artifactDigest: 'sha256:wrong', artifactContentDigest: 'sha256:wrong', artifactOrigin: 'github-actions', requestProjection: wrong } } });
+  await assert.rejects(() => rejected.enrichFinalist({ placeId: 'ChIJproduction-bound', mapsUrl: 'https://www.google.com/maps/place/Production-bound' }), /pre-POST artifact identity/);
+  assert.equal(posts, 1, 'wrong semantic projection must not issue another POST');
+});
+
+test('accepted-response upload failure is durable and reconciles without a second POST', async () => {
+  const receiptStore = new Map(); let posts = 0; let polls = 0;
+  const fetchImpl = async (url, options) => {
+    if (options.method === 'POST') { posts += 1; return response({ data: { id: 'run-upload', defaultDatasetId: 'dataset-upload', status: 'RUNNING' } }); }
+    if (url.includes('/actor-runs/')) { polls += 1; return response({ data: { id: 'run-upload', defaultDatasetId: 'dataset-upload', status: polls > 1 ? 'SUCCEEDED' : 'RUNNING' } }); }
+    return response([{ placeId: 'ChIJupload', url: 'https://www.google.com/maps/place/Upload', reviews: [] }]);
+  };
+  const first = createApifyAdapter({ token: 'secret', fetchImpl, receiptStore, operationArtifactWriter: async () => { throw new Error('artifact upload interrupted'); } });
+  await assert.rejects(() => first.enrichFinalist({ placeId: 'ChIJupload', mapsUrl: 'https://www.google.com/maps/place/Upload' }), /artifact upload interrupted/);
+  assert.equal(receiptStore.get('apify:run:finalist:ChIJupload').status, 'accepted-unuploaded');
+  const second = createApifyAdapter({ token: 'secret', fetchImpl, receiptStore, reconcileAcceptance: async () => ({ runId: 'run-upload', datasetId: 'dataset-upload', status: 'RUNNING' }) });
+  await second.enrichFinalist({ placeId: 'ChIJupload', mapsUrl: 'https://www.google.com/maps/place/Upload' });
+  assert.equal(posts, 1, 'accepted-but-unuploaded state must reconcile provider state instead of reposting');
 });
 
 function catalog() {

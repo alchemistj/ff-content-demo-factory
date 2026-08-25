@@ -48,7 +48,7 @@ function envelopeFor({ dispatchPacket, inputManifest, runId, prospectId, sourceC
   };
 }
 
-function createPendingHandoff({ dispatchPacket, inputManifest, runId, prospectId, sourceCheckpointDigest, sourceManifestDigest, phaseARunId, inputFiles, placeId = null, approvedLineage = null, historicalLineageSeed = approvedLineage }) {
+function createPendingHandoff({ dispatchPacket, inputManifest, runId, prospectId, sourceCheckpointDigest, sourceManifestDigest, phaseARunId, inputFiles, placeId = null, apifyOperationProjection = null, approvedLineage = null, historicalLineageSeed = approvedLineage }) {
   const envelope = envelopeFor({ dispatchPacket, inputManifest, runId, prospectId, sourceCheckpointDigest, sourceManifestDigest, approvedLineage, historicalLineageSeed });
   const pending = {
     schemaVersion: 'factory-cursor-handoff-v1',
@@ -60,6 +60,7 @@ function createPendingHandoff({ dispatchPacket, inputManifest, runId, prospectId
     identity: { prospectId: required(prospectId, 'handoff prospect id'), placeId: placeId || null, sourceCheckpointDigest: required(sourceCheckpointDigest, 'handoff source checkpoint digest') },
     continuation: { once: true, state: 'awaiting-terminal-result' },
     artifact: { name: `current-head-gate1-canary-${phaseARunId}`, digest: digest({ envelope, dispatchPacket }) },
+    ...(apifyOperationProjection ? { apifyOperationProjection } : {}),
   };
   if (inputFiles) pending.inputFiles = { request: required(inputFiles.request, 'handoff request input'), selection: required(inputFiles.selection, 'handoff selection input'), qa: required(inputFiles.qa, 'handoff QA input') };
   const unsigned = { ...pending, handoffId: undefined, handoffDigest: undefined };
@@ -85,6 +86,10 @@ function validatePendingHandoff(pending, expected = {}) {
   if (pending.dispatchPacket.dispatchDigest !== envelope.dispatchDigest || pending.dispatchPacket.dispatchKey !== envelope.dispatchKey) throw new Error('Durable Cursor handoff dispatch binding is mismatched');
   if (!pending.continuation || pending.continuation.once !== true || pending.continuation.state !== 'awaiting-terminal-result') throw new Error('Durable Cursor handoff one-time continuation state is missing or consumed');
   if (!pending.identity || pending.identity.prospectId !== envelope.prospectId || pending.identity.sourceCheckpointDigest !== envelope.sourceCheckpointDigest) throw new Error('Durable Cursor handoff prospect/source identity is mismatched');
+  if (pending.apifyOperationProjection) {
+    for (const field of ['schemaVersion', 'adapterKey', 'operationKey', 'requestDigest', 'idempotencyKey', 'input']) required(pending.apifyOperationProjection[field], `handoff Apify operation projection ${field}`);
+    if (pending.apifyOperationProjection.schemaVersion !== 'factory-apify-request-projection-v1' || pending.apifyOperationProjection.operationKey !== pending.apifyOperationProjection.adapterKey) throw new Error('Durable Cursor handoff Apify operation projection is malformed');
+  }
   for (const field of ['checkedOutSha', 'inputManifestDigest', 'runId', 'prospectId', 'sourceCheckpointDigest', 'jobId']) if (expected[field] != null && String(envelope[field]) !== String(expected[field])) throw new Error(`Durable Cursor handoff ${field} binding is stale or mismatched`);
   if (expected.repository != null && String(pending.dispatchPacket.repository) !== String(expected.repository)) throw new Error('Durable Cursor handoff repository binding is stale or mismatched');
   if (expected.issueNumber != null && String(pending.dispatchPacket.issueNumber) !== String(expected.issueNumber)) throw new Error('Durable Cursor handoff Issue binding is stale or mismatched');

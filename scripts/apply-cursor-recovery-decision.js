@@ -22,6 +22,10 @@ function apply({ pending, result, comments, decision, directory }) {
   if (['noop', 'recover-phase-b', 'recover-prepared', 'recover-accepted'].includes(decision.action)) {
     if (decision.action === 'noop') fs.writeFileSync(path.join(directory, 'resume-already-claimed'), 'true');
     if (decision.action !== 'noop') fs.writeFileSync(path.join(directory, 'terminal-already-recorded'), 'true');
+    if (decision.action === 'recover-phase-b' && decision.existing) {
+      const localClaim = markerFor({ ...decision.existing, commentId: null, commentUrl: null });
+      fs.writeFileSync(path.join(directory, 'cursor-phase-b-claim.md'), markerBody(localClaim));
+    }
     return state;
   }
   const base = {

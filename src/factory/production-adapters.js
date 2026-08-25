@@ -1,6 +1,7 @@
 'use strict';
 
 const crypto = require('node:crypto');
+const fs = require('node:fs');
 const { createApifyAdapter } = require('../adapters/apify');
 const { createCursorAdapter } = require('../adapters/cursor');
 const { deriveDeterministicSignals } = require('../review-evidence/signals');
@@ -299,6 +300,10 @@ function createProductionAdapters({
   required(root, 'root');
   const productionRuntime = productionCloudAgent || (!cursor && !apify && !receiptStore);
   const receipts = receiptStore || createFileReceiptStore(root);
+  let preparedProjection = null;
+  if (env.FACTORY_PAID_PREPARED_ARTIFACT_FILE && fs.existsSync(env.FACTORY_PAID_PREPARED_ARTIFACT_FILE)) {
+    try { preparedProjection = JSON.parse(fs.readFileSync(env.FACTORY_PAID_PREPARED_ARTIFACT_FILE, 'utf8')).requestProjection || null; } catch { preparedProjection = null; }
+  }
   const apifyAdapter = apify || createApifyAdapter({
     token: env.APIFY_API_TOKEN,
     fetchImpl,
@@ -314,8 +319,14 @@ function createProductionAdapters({
         artifactDigest: env.FACTORY_PAID_PREPARED_ARTIFACT_DIGEST,
         artifactContentDigest: env.FACTORY_PAID_PREPARED_ARTIFACT_CONTENT_DIGEST,
         artifactOrigin: 'github-actions',
+        requestProjection: preparedProjection,
       },
     },
+    operationArtifactWriter: env.FACTORY_ACCEPTED_OPERATION_ARTIFACT_PATH ? async (artifact, response) => {
+      const filename = env.FACTORY_ACCEPTED_OPERATION_ARTIFACT_PATH;
+      fs.mkdirSync(require('node:path').dirname(filename), { recursive: true });
+      fs.writeFileSync(filename, `${JSON.stringify({ ...artifact, response }, null, 2)}\n`);
+    } : null,
   });
   const cursorAdapter = cursor || createCursorAdapter({ apiKey: env.CURSOR_API_KEY, sdk: cursorSdk, modelAlias: env.CURSOR_MODEL || config.cursorModel, clock, receiptStore: receipts, workspace: root });
   const discovery = {

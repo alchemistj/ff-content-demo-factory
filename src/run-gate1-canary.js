@@ -11,6 +11,7 @@ const { validateBundle, validateJobReceipt, canonicalThreadUrl, createDispatchPa
 const { createPendingHandoff, validatePendingHandoff, retrievePhaseAHandoff, claimResumeAtomic } = require('./factory/handoff');
 const { createSealed360Adapters, verifySealed360Lineage, compareApprovedLineage } = require('./factory/sealed-evidence');
 const { actionProofFromEnvironment } = require('./factory/orchestrator');
+const { apifyFinalistRequestProjection } = require('./adapters/apify');
 
 function bundleDigest(bundle) { return digest({ ...bundle, inputManifestDigest: undefined }); }
 
@@ -112,7 +113,13 @@ async function runCurrentHeadGate1Canary({ root, requestFile, selectionFile, qaF
   const sealPending = () => {
     const dispatchPacket = createDispatchPacket({ ...dispatch, scope: env.FACTORY_DISPATCH_SCOPE || 'fresh-current-head-gate1', repository: env.FACTORY_REPOSITORY || 'alchemistj/ff-content-demo-factory' });
     const prospectId = selection.selectedPlaceId || request.prospectId || request.placeId || request.prospect?.prospectId || `canary-${digest(request).slice(7, 23)}`;
-    const pending = createPendingHandoff({ dispatchPacket, inputManifest, runId: env.FACTORY_CANARY_RUN_ID || `canary-${digest(inputManifest).slice(7, 23)}`, prospectId, placeId: selection.selectedPlaceId || request.placeId || null, sourceCheckpointDigest: digest({ request, selection, qa }), sourceManifestDigest: inputManifest.sourceManifestDigest, phaseARunId: env.GITHUB_RUN_ID || env.FACTORY_PHASE_A_RUN_ID || `local-${digest(inputManifest).slice(7, 23)}`, inputFiles: { request: requestFile, selection: selectionFile, qa: qaFile }, historicalLineageSeed: approvedRuntimePacket ? { packetDigest: approvedRuntimePacket.packetDigest, ...approvedRuntimePacket.approvedLineage } : null });
+    let apifyOperationProjection = null;
+    if (env.FACTORY_APIFY_REQUEST_PROJECTION) apifyOperationProjection = JSON.parse(env.FACTORY_APIFY_REQUEST_PROJECTION);
+    else {
+      const finalist = selection.selectedCandidate || selection.finalist || request.prospect || request.candidate || null;
+      if (finalist?.placeId && finalist?.mapsUrl) apifyOperationProjection = apifyFinalistRequestProjection({ placeId: finalist.placeId, mapsUrl: finalist.mapsUrl, limit: 50 });
+    }
+    const pending = createPendingHandoff({ dispatchPacket, inputManifest, runId: env.FACTORY_CANARY_RUN_ID || `canary-${digest(inputManifest).slice(7, 23)}`, prospectId, placeId: selection.selectedPlaceId || request.placeId || null, apifyOperationProjection, sourceCheckpointDigest: digest({ request, selection, qa }), sourceManifestDigest: inputManifest.sourceManifestDigest, phaseARunId: env.GITHUB_RUN_ID || env.FACTORY_PHASE_A_RUN_ID || `local-${digest(inputManifest).slice(7, 23)}`, inputFiles: { request: requestFile, selection: selectionFile, qa: qaFile }, historicalLineageSeed: approvedRuntimePacket ? { packetDigest: approvedRuntimePacket.packetDigest, ...approvedRuntimePacket.approvedLineage } : null });
     fs.writeFileSync(path.join(outputDir, 'current-head-gate1-pending.json'), `${JSON.stringify(pending, null, 2)}\n`);
     return pending;
   };
