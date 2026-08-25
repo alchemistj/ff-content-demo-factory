@@ -1,6 +1,6 @@
 {
   "schemaVersion": "words-canary-control/v1",
-  "wakeNonce": "DORMANT",
+  "wakeNonce": "W1-SEAL-ONLY-20260825",
   "requestedBy": "architect",
   "stage": "writer1",
   "runId": "32717620900",
@@ -10,15 +10,39 @@
   "restore": null,
   "policy": {
     "writer1Only": true,
-    "approvedRoutes": [
-      "/",
-      "/garage-door-repair",
-      "/garage-door-installation",
-      "/contact"
-    ],
+    "approvedRoutes": ["/", "/garage-door-repair", "/garage-door-installation", "/contact"],
     "fast": false,
     "provider": "cursor-sdk",
     "model": "cursor-grok-4.6-high",
-    "stopAfter": "awaiting-architect-qa"
+    "mode": "writer1-seal-only",
+    "stopAfter": "manifest-sealed",
+    "recovery": {
+      "recoveryVersion": "words-writer1-post-dispatch-seal/v1",
+      "sourceBranch": "architect/360-words-canary-verified",
+      "sourceSha": "4f5a7d76311fbe9387e7a9878df2f7765e26a949",
+      "actionRunId": "32825265478",
+      "artifactId": 9554789848,
+      "agentId": "bc-2486f645-c31c-4532-8145-fbe3af1d45a8",
+      "runId": "run-1686013d-dec5-454c-a39e-5817448e6a96",
+      "threadUrl": "https://cursor.com/agents/bc-2486f645-c31c-4532-8145-fbe3af1d45a8",
+      "requestedModel": "cursor-grok-4.6-high",
+      "resolvedModel": "grok-4.6",
+      "effort": "high",
+      "fast": false,
+      "inputDigest": "sha256:f4f59e9c645391266172892e4651f0da4ccedaa2bc86e35217a0ab8699fd0c1f",
+      "promptDigest": "sha256:e9c39355c8f0973250ebd97ad1b3b69c9e09c840796f39336abd5664c20303e3",
+      "idempotencyKey": "bc-2486f645-c31c-4532-8145-fbe3af1d45a8:writer1:correction:v2:sha256:f4f59e9c645391266172892e4651f0da4ccedaa2bc86e35217a0ab8699fd0c1f:sha256:e9c39355c8f0973250ebd97ad1b3b69c9e09c840796f39336abd5664c20303e3",
+      "allowCreate": false,
+      "allowResume": false,
+      "allowFollowUp": false,
+      "maxFollowUps": 0,
+      "receiptPins": {
+        "artifactZipDigest": "sha256:e4315183eac7c3755a27e9a46622ea63c4d99978e5bc98e02eae9658a7504648",
+        "artifactZipSize": 2753,
+        "receiptPath": "runtime/writer1-dispatch-receipt.json",
+        "receiptDigest": "sha256:b4769f3dded171060119cc9f5b42f33dfe1d882c31d441c08c185806066598d4",
+        "receiptSize": 1536
+      }
+    }
   }
 }
