@@ -23,6 +23,10 @@ on:
         description: 'Research or implementation scope for Cursor'
         required: true
         type: string
+      phase_a_run_id:
+        description: 'Existing phase-A workflow run whose sealed handoff is being dispatched'
+        required: true
+        type: string
   workflow_run:
     workflows: ['Fresh current-head Gate 1 canary']
     types: [completed]
@@ -76,7 +80,6 @@ jobs:
           DISPATCH_FILE: canary/outputs/cursor-dispatch.json
           ISSUE_NUMBER: ${{ inputs.issue_number }}
           PR_NUMBER: ${{ inputs.pr_number }}
-          PR_NUMBER: ${{ inputs.pr_number }}
           BRANCH: ${{ inputs.branch }}
           REVIEWED_HEAD_SHA: ${{ inputs.reviewed_head_sha }}
           REPOSITORY: ${{ github.repository }}
@@ -107,6 +110,8 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
           ISSUE_NUMBER: ${{ inputs.issue_number }}
+          PR_NUMBER: ${{ inputs.pr_number }}
+          PHASE_A_RUN_ID: ${{ inputs.phase_a_run_id }}
           COMMENT_FILE: canary/outputs/cursor-dispatch.comment.md
           DISPATCH_FILE: canary/outputs/cursor-dispatch.json
         run: |
@@ -121,7 +126,7 @@ jobs:
             comment_url="$(node -e "process.stdout.write(JSON.parse(process.argv[1]).html_url)" "$prior")"
             echo "idempotent_existing_comment=$comment_url"
           else
-            { cat "$COMMENT_FILE"; printf 'Handoff ID: %s\\nPhase-A run: %s\\nDispatch workflow run: %s\\n' "$key" "$GITHUB_RUN_ID" "$GITHUB_RUN_ID"; } > canary/outputs/cursor-dispatch.post.md
+            { cat "$COMMENT_FILE"; printf 'Handoff ID: %s\\nPhase-A run: %s\\nDispatch workflow run: %s\\n' "$key" "$PHASE_A_RUN_ID" "$GITHUB_RUN_ID"; } > canary/outputs/cursor-dispatch.post.md
             response="$(GH_TOKEN="$GH_TOKEN" gh api "repos/$GITHUB_REPOSITORY/issues/$PR_NUMBER/comments" --method POST -f body="$(cat canary/outputs/cursor-dispatch.post.md)")"
             comment_id="$(node -e "process.stdout.write(String(JSON.parse(process.argv[1]).id))" "$response")"
             comment_url="$(node -e "process.stdout.write(JSON.parse(process.argv[1]).html_url)" "$response")"
