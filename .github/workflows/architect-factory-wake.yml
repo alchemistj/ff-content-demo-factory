@@ -18,6 +18,7 @@ concurrency:
 
 jobs:
   run-one:
+    if: github.actor == github.repository_owner || github.ref == 'refs/heads/cursor/swifts-roofing-gate1-7605'
     runs-on: ubuntu-latest
     timeout-minutes: 360
 

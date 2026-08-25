@@ -120,11 +120,21 @@ async function classifyResumably({ run, state, adapters, root, now }) {
   const packet = run.artifacts.reviewPacket;
   const judgments = run.artifacts.reviewJudgments || {};
   const judge = judgeAdapter(adapters);
+  let lastError = null;
   for (const review of packet.reviews || []) {
     if (judgments[review.id]) continue;
-    judgments[review.id] = await judge({ review, finalist: run.candidate });
-    run.artifacts.reviewJudgments = judgments;
-    await persist(state, root, now);
+    try {
+      judgments[review.id] = await judge({ review, finalist: run.candidate });
+      run.artifacts.reviewJudgments = judgments;
+      await persist(state, root, now);
+    } catch (error) {
+      lastError = error;
+      run.artifacts.reviewJudgments = judgments;
+      await persist(state, root, now);
+    }
+  }
+  if (lastError || Object.keys(judgments).length < (packet.reviews || []).length) {
+    throw lastError || Object.assign(new Error('Review judgment incomplete'), { code: 'REVIEW_JUDGMENT_INCOMPLETE' });
   }
   const classification = buildClassificationArtifact({ reviews: [...(packet.reviews || []), ...(packet.emptyTextReviews || [])], judgments });
   run.artifacts.classification = classification;
