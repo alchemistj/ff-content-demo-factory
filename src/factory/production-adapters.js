@@ -24,7 +24,18 @@ function required(value, name) {
 
 async function putReceipt(store, key, receipt) {
   if (!store || typeof store.put !== 'function') throw new TypeError('receiptStore must implement put');
-  return store.put(key, { schemaVersion: 'factory-receipt-v1', key, ...receipt });
+  const complete = {
+    schemaVersion: 'factory-receipt-v1',
+    key,
+    ...receipt,
+    status: receipt.status || 'completed',
+    terminalStatus: receipt.terminalStatus || (receipt.status === 'completed' || !receipt.status ? 'succeeded' : null),
+    startedAt: receipt.startedAt || receipt.completedAt || null,
+    completedAt: receipt.completedAt || null,
+    inputDigest: receipt.inputDigest || digest(receipt.input || receipt.request || { operation: receipt.operation || null, jobId: receipt.jobId || null }),
+    outputDigest: receipt.outputDigest || digest(receipt.result || null),
+  };
+  return store.put(key, complete).then?.(() => complete) || complete;
 }
 
 async function getReceipt(store, key) {
@@ -287,7 +298,7 @@ function createProductionAdapters({
       const candidates = (result.candidates || []).map(candidateFromPlace);
       const request = { searchStrings, location, limit: Math.min(7, limit), reviewLimit: Math.min(10, reviewLimit) };
       const packet = { ...result, candidates, request };
-      const receipt = await putReceipt(receipts, `factory:discovery:${hash(request)}`, { provider: 'apify', operation: 'discovery', status: 'completed', completedAt: clock(), vendorReceipt: result.provenance?.run || null, result: { count: candidates.length }, request });
+      const receipt = await putReceipt(receipts, `factory:discovery:${hash(request)}`, { provider: 'apify', operation: 'discovery', status: 'completed', completedAt: clock(), vendorReceipt: result.provenance?.run || null, input: request, request, result: { count: candidates.length, candidateDigest: digest(candidates) } });
       return { ...packet, receipt };
     },
   };
@@ -310,8 +321,8 @@ function createProductionAdapters({
         input: { candidate: { placeId: candidate.placeId, name: candidate.name, website: candidate.website, location: candidate.location }, website: candidate.website || null, request },
       });
       const audit = normalizeWebsiteAudit(record.result, candidate);
-      await putReceipt(receipts, `factory:${jobId}`, { provider: 'cursor-sdk', operation: 'website-audit', status: 'completed', completedAt: clock(), vendorReceipt: record.receipt, result: audit });
-      return { audit, receipt: record.receipt };
+      const receipt = await putReceipt(receipts, `factory:${jobId}`, { provider: 'cursor-sdk', operation: 'website-audit', status: 'completed', completedAt: clock(), vendorReceipt: record.receipt, input: { candidate: { placeId: candidate.placeId, name: candidate.name, website: candidate.website, location: candidate.location }, request }, result: audit });
+      return { audit, receipt };
     },
   };
 
@@ -326,7 +337,8 @@ function createProductionAdapters({
       const prior = await getReceipt(receipts, key);
       if (prior?.status === 'completed' && prior.result) return prior.result;
       const packet = normalizeEnrichment(await apifyAdapter.enrichFinalist({ placeId, mapsUrl, limit }), { ...finalist, placeId, mapsUrl }, limit);
-      await putReceipt(receipts, key, { provider: 'apify', operation: 'finalist-enrichment', status: 'completed', completedAt: clock(), vendorReceipt: packet.provenance?.run || null, result: packet });
+      const receipt = await putReceipt(receipts, key, { provider: 'apify', operation: 'finalist-enrichment', status: 'completed', completedAt: clock(), vendorReceipt: packet.provenance?.run || null, input: { placeId, mapsUrl, limit, dateWindow: null }, result: packet });
+      Object.defineProperty(packet, 'receipt', { value: receipt, enumerable: false, configurable: true });
       return packet;
     },
   };
@@ -340,7 +352,10 @@ function createProductionAdapters({
         input: { finalist: { placeId: finalist?.placeId, name: finalist?.name }, review, deterministicSignals: deriveDeterministicSignals(review) },
       });
       const judgment = normalizeJudgment(record.result, record.receipt, review);
-      await putReceipt(receipts, `factory:${jobId}`, { provider: 'cursor-sdk', operation: 'review-judgment', status: 'completed', completedAt: clock(), vendorReceipt: record.receipt, result: judgment });
+      const receiptResult = { ...judgment };
+      delete receiptResult.receipt;
+      const receipt = await putReceipt(receipts, `factory:${jobId}`, { provider: 'cursor-sdk', operation: 'review-judgment', status: 'completed', completedAt: clock(), vendorReceipt: record.receipt, input: { placeId: finalist?.placeId, reviewId: review.id, reviewDigest: digest(review) }, result: receiptResult });
+      judgment.receipt = receipt;
       return judgment;
     },
   };
@@ -378,7 +393,7 @@ function createProductionAdapters({
         cursorReceipt: record.receipt,
       };
       output.prescriptionDigest = digest({ ...output, prescriptionDigest: undefined });
-      const receipt = await putReceipt(receipts, `factory:${jobId}`, { provider: 'cursor-sdk', operation: 'page-prescription', status: 'completed', completedAt: clock(), vendorReceipt: record.receipt, result: output });
+      const receipt = await putReceipt(receipts, `factory:${jobId}`, { provider: 'cursor-sdk', operation: 'page-prescription', status: 'completed', completedAt: clock(), vendorReceipt: record.receipt, input: { placeId: finalist?.placeId, prospectId: finalist?.prospectId, runId: finalist?.runId || decision.runId, classificationDigest: digest(classification), sourceManifestDigest: sourceBinding.sourceManifestDigest || null }, result: output });
       return { proposal: output, receipt };
     },
     async prescribe(input) {
