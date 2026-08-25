@@ -19,7 +19,7 @@ Directly readable words package for the 360 Garage Door and More canary. Natural
 - Deployment occurred: **no**
 - Branch: `architect/360-words-canary`
 - Reviewed head for this correction packet: `cbe66a21f0b99c27fb4eed946267e378b5d11312`
-- Head at render: `44b09066aee3ce2f0f03611ea0e56881cff794ed`
+- Head at render: `e15963cc17d2ab90f899920df4858fe0e5e120de`
 - Fresh Writer 1 rendered-words digest: `sha256:3edce1acff28a00b3f0064664f8b1b4d2beab1a0a9fda5f92108442ce4d1460e`
 - Rejected padded lineage (not restored): `sha256:165d310ae1e30225b6278cc0fbde7d2cab23a60f186157c59734257519c01f89`
 - Hermetic pointer-ledger fixtures: `561e9013f4ca5c5d3055bdbcff34c69b466f7940`
@@ -49,7 +49,7 @@ Directly readable words package for the 360 Garage Door and More canary. Natural
 - Targeted regression: production `reviewer`+`excerpt` fails `REVIEW_EVIDENCE_CLAIM_TEXT_DUPLICATE` at `/pages/0/reviewEvidence/0/reviewer` with expectedRule `reviewEvidence must not contain any accepted word-bearing key; it is a typed pointer ledger`, then normalizes losslessly.
 - Real quarantined bytes: 31 reviewer keys + 31 excerpt keys removed (62), semantic copy / identity / provenance preserved, raw `approved: false`.
 - Fresh Writer 1 quality self-check: distinct section jobs, synthesized reviews, one display form per quote, no audit-memo public copy, unsupported-claim scan pass, six Architect-flagged overclaims removed or narrowed, word counts diagnostic only. This is not Architect acceptance.
-- `NODE_ENV=test npm run test:all`: recorded after this head is committed.
+- `NODE_ENV=test npm run test:all`: 132 passed, 0 failed, 0 skipped.
 
 ## Changed-claim reasons
 

@@ -449,7 +449,7 @@ test("committed live canary state cannot claim Writer2 approval before Architect
     qa.formerHardFloorRevoked
   );
   const statePath = join(process.cwd(), "canary/runtime/state.json");
-  if (waitingForArchitect) {
+  if (waitingForArchitect && qa) {
     assert.equal(qa.decision, "waiting-for-architect");
     assert.notEqual(qa.decision, "accept");
     assert.equal(qa.writer2Released, false);

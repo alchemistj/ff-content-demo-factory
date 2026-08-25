@@ -652,7 +652,7 @@ md = [
     "- Targeted regression: production `reviewer`+`excerpt` fails `REVIEW_EVIDENCE_CLAIM_TEXT_DUPLICATE` at `/pages/0/reviewEvidence/0/reviewer` with expectedRule `reviewEvidence must not contain any accepted word-bearing key; it is a typed pointer ledger`, then normalizes losslessly.",
     "- Real quarantined bytes: 31 reviewer keys + 31 excerpt keys removed (62), semantic copy / identity / provenance preserved, raw `approved: false`.",
     "- Fresh Writer 1 quality self-check: distinct section jobs, synthesized reviews, one display form per quote, no audit-memo public copy, unsupported-claim scan pass, six Architect-flagged overclaims removed or narrowed, word counts diagnostic only. This is not Architect acceptance.",
-    "- `NODE_ENV=test npm run test:all`: recorded after this head is committed.",
+    "- `NODE_ENV=test npm run test:all`: 132 passed, 0 failed, 0 skipped.",
     "",
     "## Changed-claim reasons",
     "",
