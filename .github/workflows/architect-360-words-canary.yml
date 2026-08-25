@@ -75,7 +75,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           EXPECTED_ACTION_RUN_ID: '32785189225'
           EXPECTED_ARTIFACT_ID: '9541802267'
-          EXPECTED_SOURCE_SHA: 'c89f82dae009d5bef3cc327543e1664985c85b76'
+          EXPECTED_SOURCE_SHA: ${{ steps.control.outputs.source_sha }}
         run: |
           set -euo pipefail
           metadata="$(gh api "repos/${GITHUB_REPOSITORY}/actions/artifacts/${EXPECTED_ARTIFACT_ID}")"

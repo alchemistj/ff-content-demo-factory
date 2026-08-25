@@ -5,8 +5,8 @@ import * as fs from "node:fs/promises";
 import * as os from "node:os";
 import * as path from "node:path";
 import test from "node:test";
-import { ARTIFACT_RECOVERY_ACTION_RUN_ID, ARTIFACT_RECOVERY_AGENT_ID, ARTIFACT_RECOVERY_ARTIFACT_ID, ARTIFACT_RECOVERY_PRIOR_RUN_ID, ARTIFACT_RECOVERY_SOURCE_BRANCH, ARTIFACT_RECOVERY_SOURCE_SHA, ARTIFACT_RECOVERY_THREAD_URL, validatePriorArtifactRecoveryDispatch, validateSealed, dispatchReceipt, run, writer1Projection } from "../../scripts/360-words-canary.js";
-import { validateControl } from "../../scripts/360-words-control.mjs";
+import { ARTIFACT_RECOVERY_ACTION_RUN_ID, ARTIFACT_RECOVERY_AGENT_ID, ARTIFACT_RECOVERY_ARTIFACT_ID, ARTIFACT_RECOVERY_PRIOR_RUN_ID, ARTIFACT_RECOVERY_SOURCE_BRANCH, ARTIFACT_RECOVERY_THREAD_URL, validatePriorArtifactRecoveryDispatch, validateSealed, dispatchReceipt, run, writer1Projection } from "../../scripts/360-words-canary.js";
+import { EXPECTED_RECOVERY, validateControl } from "../../scripts/360-words-control.mjs";
 
 const root = path.resolve(process.cwd());
 const routes = ["/", "/garage-door-repair", "/garage-door-installation", "/contact"];
@@ -73,9 +73,20 @@ test("dormant setup commits ignore extra paths, while active wakes require a sin
   const control = JSON.parse(readFileSync(path.join(root, ".factory-wake/360-words-control.json"), "utf8")) as Record<string, any>;
   assert.deepEqual(validateControl(control, { changedPaths: ["README.md", "package.json", ".factory-wake/360-words-control.json"], actor: "untrusted", owner: "architect" }), { dormant: true, stage: "writer1" });
   const active: Record<string, any> = { ...control, wakeNonce: "W1-360-20260824-8K4M7Q2N" };
-  active.policy = { ...active.policy, mode: "artifact-recovery" };
+  active.policy = { ...active.policy, mode: "artifact-recovery", recovery: { ...EXPECTED_RECOVERY, sourceSha: "9c5c6a0c19f52860ad22961090baa1387bb29507" } };
   assert.throws(() => validateControl(active, { changedPaths: [".factory-wake/360-words-control.json", "README.md"], actor: "architect", owner: "architect" }), /only the control file/);
   assert.throws(() => validateControl(active, { changedPaths: [".factory-wake/360-words-control.json"], actor: "other", owner: "architect" }), /repository owner/);
+});
+
+test("validated control sourceSha is the only active workflow source pin", () => {
+  const control = JSON.parse(readFileSync(path.join(root, ".factory-wake/360-words-control.json"), "utf8")) as Record<string, any>;
+  const sourceSha = "9c5c6a0c19f52860ad22961090baa1387bb29507";
+  const active = { ...control, wakeNonce: "W1-360-20260824-SOURCEPIN" } as Record<string, any>;
+  active.policy = { ...active.policy, mode: "artifact-recovery", recovery: { ...EXPECTED_RECOVERY, sourceSha } };
+  const result = validateControl(active, { changedPaths: [".factory-wake/360-words-control.json"], actor: "architect", owner: "architect" });
+  assert.deepEqual(result, { dormant: false, stage: "writer1", sourceSha });
+  assert.throws(() => validateControl({ ...active, policy: { ...active.policy, recovery: { ...active.policy.recovery, sourceSha: "9c5c6a0" } } }, { changedPaths: [".factory-wake/360-words-control.json"], actor: "architect", owner: "architect" }), /40-hex sourceSha/);
+  assert.throws(() => validateControl({ ...active, policy: { ...active.policy, recovery: { ...active.policy.recovery, sourceSha: "z".repeat(40) } } }, { changedPaths: [".factory-wake/360-words-control.json"], actor: "architect", owner: "architect" }), /40-hex sourceSha/);
 });
 
 test("workflow is limited to the Architect control push and one dormant-safe Writer1 wake", () => {
@@ -94,6 +105,10 @@ test("workflow is limited to the Architect control push and one dormant-safe Wri
   assert.match(workflow, /32785189225/);
   assert.match(workflow, /9541802267/);
   assert.match(workflow, /WRITER1_PRIOR_DISPATCH_ROOT/);
+  assert.match(workflow, /EXPECTED_SOURCE_SHA: \$\{\{ steps\.control\.outputs\.source_sha \}\}/);
+  assert.doesNotMatch(workflow, /EXPECTED_SOURCE_SHA:\s*['"]c89f82dae009d5bef3cc327543e1664985c85b76['"]/u);
+  assert.doesNotMatch(workflow, /c89f82dae009d5bef3cc327543e1664985c85b76/u);
+  assert.ok(workflow.indexOf("steps.control.outputs.source_sha") > workflow.indexOf("Validate Architect control file and changed-path boundary"));
   assert.doesNotMatch(workflow, /Create fresh Writer1 agent|--fresh/u);
   assert.match(workflow, /stop at Architect QA/);
   assert.match(workflow, /actions\/upload-artifact@/);
@@ -126,9 +141,11 @@ test("artifact recovery verifies the prior dispatch receipt and branch/source pi
   const temp = await fs.mkdtemp(path.join(os.tmpdir(), "ff-360-prior-dispatch-"));
   await fs.mkdir(path.join(temp, "runtime"));
   const digest = (value: string) => `sha256:${value.repeat(64)}`;
-  await fs.writeFile(path.join(temp, "runtime/source-verification.json"), JSON.stringify({ actionRunId: ARTIFACT_RECOVERY_ACTION_RUN_ID, artifactId: ARTIFACT_RECOVERY_ARTIFACT_ID, headBranch: ARTIFACT_RECOVERY_SOURCE_BRANCH, headSha: ARTIFACT_RECOVERY_SOURCE_SHA, sealedHandoffDigest: digest("5") }));
+  const sourceSha = "9c5c6a0c19f52860ad22961090baa1387bb29507";
+  const expected = { actionRunId: ARTIFACT_RECOVERY_ACTION_RUN_ID, artifactId: ARTIFACT_RECOVERY_ARTIFACT_ID, agentId: ARTIFACT_RECOVERY_AGENT_ID, jobId: ARTIFACT_RECOVERY_PRIOR_RUN_ID, threadUrl: ARTIFACT_RECOVERY_THREAD_URL, sourceBranch: ARTIFACT_RECOVERY_SOURCE_BRANCH, sourceSha };
+  await fs.writeFile(path.join(temp, "runtime/source-verification.json"), JSON.stringify({ actionRunId: expected.actionRunId, artifactId: expected.artifactId, headBranch: expected.sourceBranch, headSha: expected.sourceSha, sealedHandoffDigest: digest("5") }));
   await fs.writeFile(path.join(temp, "runtime/dispatch-receipt.json"), JSON.stringify({ schemaVersion: "words-canary-dispatch/v2", status: "dispatched", stage: "writer1", provider: "cursor-sdk", requestedModel: "cursor-grok-4.6-high", officialModel: "grok-4.6", modelParams: [{ id: "fast", value: "false" }, { id: "effort", value: "high" }], registryDigest: digest("4"), effort: "high", effortAttestationSource: "official-registry-parameter", fast: false, agentId: ARTIFACT_RECOVERY_AGENT_ID, jobId: ARTIFACT_RECOVERY_PRIOR_RUN_ID, threadUrl: ARTIFACT_RECOVERY_THREAD_URL, inputDigest: digest("1"), promptDigest: digest("2"), requestDigest: digest("3") }));
-  const prior = validatePriorArtifactRecoveryDispatch(temp);
-  assert.equal(prior.agentId, ARTIFACT_RECOVERY_AGENT_ID); assert.equal(prior.runId, ARTIFACT_RECOVERY_PRIOR_RUN_ID); assert.equal(prior.sourceSha, ARTIFACT_RECOVERY_SOURCE_SHA);
-  await assert.rejects(async () => validatePriorArtifactRecoveryDispatch(temp, { actionRunId: ARTIFACT_RECOVERY_ACTION_RUN_ID, artifactId: ARTIFACT_RECOVERY_ARTIFACT_ID, agentId: ARTIFACT_RECOVERY_AGENT_ID, jobId: ARTIFACT_RECOVERY_PRIOR_RUN_ID, threadUrl: ARTIFACT_RECOVERY_THREAD_URL, sourceBranch: ARTIFACT_RECOVERY_SOURCE_BRANCH, sourceSha: "wrong" }), /source\/action pin/u);
+  const prior = validatePriorArtifactRecoveryDispatch(temp, expected);
+  assert.equal(prior.agentId, ARTIFACT_RECOVERY_AGENT_ID); assert.equal(prior.runId, ARTIFACT_RECOVERY_PRIOR_RUN_ID); assert.equal(prior.sourceSha, sourceSha);
+  await assert.rejects(async () => validatePriorArtifactRecoveryDispatch(temp, { ...expected, sourceSha: "wrong" }), /source\/action pin/u);
 });

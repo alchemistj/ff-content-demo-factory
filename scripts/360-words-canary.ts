@@ -20,7 +20,6 @@ export const ARTIFACT_RECOVERY_AGENT_ID = "bc-30fc8ffa-2005-44b9-8fc7-48ddd9c3bc
 export const ARTIFACT_RECOVERY_PRIOR_RUN_ID = "run-b0341a7a-9f03-4dec-b76d-7350ba1e82f2";
 export const ARTIFACT_RECOVERY_THREAD_URL = `https://cursor.com/agents/${ARTIFACT_RECOVERY_AGENT_ID}`;
 export const ARTIFACT_RECOVERY_SOURCE_BRANCH = "architect/360-words-canary";
-export const ARTIFACT_RECOVERY_SOURCE_SHA = "c89f82dae009d5bef3cc327543e1664985c85b76";
 export const ARTIFACT_RECOVERY_SEALED_HANDOFF_DIGEST = "sha256:715f651a53055444b8381dd8a276a2046d93776c61d88a2193cc2d42a1c83ad6";
 export const ARTIFACT_RECOVERY_PATH = "artifacts/writer1-output.json";
 type Dict = Record<string, any>;
@@ -69,7 +68,7 @@ export function validatePriorWriter1Artifact(root: string, expected = { actionRu
   return { receipt, bindings };
 }
 
-export function validatePriorArtifactRecoveryDispatch(root: string, expected = { actionRunId: ARTIFACT_RECOVERY_ACTION_RUN_ID, artifactId: ARTIFACT_RECOVERY_ARTIFACT_ID, agentId: ARTIFACT_RECOVERY_AGENT_ID, jobId: ARTIFACT_RECOVERY_PRIOR_RUN_ID, threadUrl: ARTIFACT_RECOVERY_THREAD_URL, sourceBranch: ARTIFACT_RECOVERY_SOURCE_BRANCH, sourceSha: ARTIFACT_RECOVERY_SOURCE_SHA }): CursorArtifactRecoveryPrior {
+export function validatePriorArtifactRecoveryDispatch(root: string, expected: { actionRunId: string; artifactId: number; agentId: string; jobId: string; threadUrl: string; sourceBranch: string; sourceSha: string }): CursorArtifactRecoveryPrior {
   const dispatch = readJson(root, "runtime/dispatch-receipt.json");
   const source = readJson(root, "runtime/source-verification.json");
   const manifestPath = path.join(root, "runtime/manifest.sha256");
@@ -278,7 +277,7 @@ export async function runArtifactRecovery(root = process.cwd()): Promise<{ statu
   if (control.wakeNonce === DORMANT_NONCE) return { status: "dormant", stage: "writer1" };
   if (control.policy?.mode !== "artifact-recovery") throw new Error("active 360 canary wake must explicitly select artifact-recovery mode");
   const recoveryPins = control.policy?.recovery;
-  if (recoveryPins?.priorActionRunId !== ARTIFACT_RECOVERY_ACTION_RUN_ID || Number(recoveryPins?.priorArtifactId) !== ARTIFACT_RECOVERY_ARTIFACT_ID || recoveryPins?.priorAgentId !== ARTIFACT_RECOVERY_AGENT_ID || recoveryPins?.priorRunId !== ARTIFACT_RECOVERY_PRIOR_RUN_ID || recoveryPins?.priorThreadUrl !== ARTIFACT_RECOVERY_THREAD_URL || recoveryPins?.artifactPath !== ARTIFACT_RECOVERY_PATH || recoveryPins?.sourceBranch !== ARTIFACT_RECOVERY_SOURCE_BRANCH || recoveryPins?.sourceSha !== ARTIFACT_RECOVERY_SOURCE_SHA || recoveryPins?.sealedHandoffDigest !== ARTIFACT_RECOVERY_SEALED_HANDOFF_DIGEST) throw new Error("active artifact-recovery wake is missing the exact prior/run/source pins");
+  if (recoveryPins?.priorActionRunId !== ARTIFACT_RECOVERY_ACTION_RUN_ID || Number(recoveryPins?.priorArtifactId) !== ARTIFACT_RECOVERY_ARTIFACT_ID || recoveryPins?.priorAgentId !== ARTIFACT_RECOVERY_AGENT_ID || recoveryPins?.priorRunId !== ARTIFACT_RECOVERY_PRIOR_RUN_ID || recoveryPins?.priorThreadUrl !== ARTIFACT_RECOVERY_THREAD_URL || recoveryPins?.artifactPath !== ARTIFACT_RECOVERY_PATH || recoveryPins?.sourceBranch !== ARTIFACT_RECOVERY_SOURCE_BRANCH || recoveryPins?.sealedHandoffDigest !== ARTIFACT_RECOVERY_SEALED_HANDOFF_DIGEST || typeof recoveryPins?.sourceSha !== "string" || !/^[0-9a-f]{40}$/u.test(recoveryPins.sourceSha)) throw new Error("active artifact-recovery wake is missing the exact prior/run/source pins");
   if (typeof control.wakeNonce !== "string" || !/^[A-Za-z0-9][A-Za-z0-9._-]{15,127}$/u.test(control.wakeNonce)) throw new Error("active 360 canary wake requires a unique nonce");
   if (control.restore !== null) throw new Error("Writer1 artifact recovery must not restore or mutate the sealed handoff");
   if (process.env.CURSOR_MODEL !== "cursor-grok-4.6-high" || !process.env.CURSOR_API_KEY || process.env.CURSOR_FAST !== "false") throw new Error("Cursor production environment must provide exact model, API key, and fast=false");
@@ -286,7 +285,7 @@ export async function runArtifactRecovery(root = process.cwd()): Promise<{ statu
   if (!priorRoot) throw new Error("exact prior Writer1 dispatch artifact must be downloaded before artifact recovery");
   const sealed = validateSealed(root);
   const payload = writer1Projection(sealed);
-  const prior = validatePriorArtifactRecoveryDispatch(priorRoot);
+  const prior = validatePriorArtifactRecoveryDispatch(priorRoot, { actionRunId: ARTIFACT_RECOVERY_ACTION_RUN_ID, artifactId: ARTIFACT_RECOVERY_ARTIFACT_ID, agentId: ARTIFACT_RECOVERY_AGENT_ID, jobId: ARTIFACT_RECOVERY_PRIOR_RUN_ID, threadUrl: ARTIFACT_RECOVERY_THREAD_URL, sourceBranch: ARTIFACT_RECOVERY_SOURCE_BRANCH, sourceSha: recoveryPins.sourceSha });
   if (prior.inputDigest !== digestOf(payload) || (prior.sealedHandoffDigest && prior.sealedHandoffDigest !== sealed.handoff.resealDigest)) throw new Error("prior Writer1 dispatch is not bound to the current sealed 360 handoff");
   await writeJson(jsonFile(root, "canary/runtime/prior-dispatch-verification.json"), { status: "verified", prior });
   await writeJson(jsonFile(root, "canary/runtime/state.json"), { status: "writer1-artifact-recovery-dispatching", stage: "writer1", runId: sealed.handoff.runId, sealedHandoffDigest: sealed.handoff.resealDigest, priorRunId: prior.runId, priorAgentId: prior.agentId, priorThreadUrl: prior.threadUrl, nextStage: null, writer2Blocked: true });
