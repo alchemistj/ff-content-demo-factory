@@ -18,10 +18,10 @@ function collect({ pendingFile, commentFile, outputFile, authorLogin, commentId,
   const raw = extractJson(fs.readFileSync(path.resolve(commentFile), 'utf8'));
   const result = {
     schemaVersion: 'factory-cursor-terminal-result-v1', authorLogin, commentId: String(commentId), commentUrl,
-    pending, handoffId: raw.handoffId, dispatchKey: raw.dispatchKey, dispatchDigest: raw.dispatchDigest, receipt: raw.receipt, bundle: raw.bundle,
+    pending, handoffId: raw.handoffId, dispatchKey: raw.dispatchKey, dispatchDigest: raw.dispatchDigest, phaseARunId: raw.phaseARunId, receipt: raw.receipt, bundle: raw.bundle,
   };
   validateTerminalCursorResult(result, { checkedOutSha: pending.envelope.checkedOutSha, inputManifestDigest: pending.envelope.inputManifestDigest, runId: pending.envelope.runId, prospectId: pending.envelope.prospectId, sourceCheckpointDigest: pending.envelope.sourceCheckpointDigest, jobId: pending.envelope.jobId, strictDispatchBinding: process.env.FACTORY_STRICT_TERMINAL_BINDING === 'true' });
-  validateBundle(result.bundle, { expectedHeadSha: pending.envelope.checkedOutSha, inputManifestDigest: pending.envelope.inputManifestDigest, dispatch: pending.dispatchPacket, repository: pending.dispatchPacket.repository });
+  validateBundle(result.bundle, { expectedHeadSha: pending.envelope.checkedOutSha, inputManifestDigest: pending.envelope.inputManifestDigest, dispatch: pending.dispatchPacket, expectedEnvelope: process.env.FACTORY_STRICT_TERMINAL_BINDING === 'true' ? { ...pending.envelope, handoffId: pending.handoffId } : null, repository: pending.dispatchPacket.repository });
   fs.mkdirSync(path.dirname(path.resolve(outputFile)), { recursive: true });
   fs.writeFileSync(path.resolve(outputFile), `${JSON.stringify(result, null, 2)}\n`);
   return result;
