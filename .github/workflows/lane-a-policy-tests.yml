@@ -2,7 +2,7 @@ name: Lane A policy tests
 
 on:
   pull_request:
-    branches: [architect/greenfield-gate1]
+    branches: [main, architect/greenfield-gate1]
     paths:
       - package.json
       - package-lock.json
