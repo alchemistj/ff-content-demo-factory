@@ -34,6 +34,10 @@ jobs:
           actual="$(git rev-parse HEAD)"
           test "$actual" = "$GITHUB_SHA"
           echo "checked_out_sha=$actual" >> "$GITHUB_ENV"
+          echo "FACTORY_CHECKED_OUT_SHA=$actual" >> "$GITHUB_ENV"
+          echo "FACTORY_EXPECTED_HEAD_SHA=$GITHUB_SHA" >> "$GITHUB_ENV"
+          echo "FACTORY_HEAD_ASSERTION=true" >> "$GITHUB_ENV"
+          echo "FACTORY_TEST_RUN_URL=${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}" >> "$GITHUB_ENV"
 
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
         with:
@@ -135,10 +139,14 @@ jobs:
           if (checkpoint.sourceSha !== process.env.RESTORE_SOURCE_SHA) throw new Error('Checkpoint source identity mismatch');
           if (checkpoint.sourceSha !== process.env.CURRENT_HEAD_SHA) throw new Error('Checkpoint is not bound to the current checked-out source head');
           if (!checkpoint.sourceManifest || checkpoint.sourceManifest.schemaVersion !== 'factory-source-manifest-v1' || !checkpoint.sourceManifest.sourceMaterialDigest) throw new Error('Checkpoint source manifest is missing or incomplete');
+          const { assertSemanticCheckpoint } = require('./src/factory/checkpoint');
+          const restoredState = JSON.parse(fs.readFileSync('.factory-checkpoint/state/factory-state.json', 'utf8'));
+          assertSemanticCheckpoint({ checkpoint, state: restoredState, currentHeadSha: process.env.CURRENT_HEAD_SHA });
           const ledgerPath = '.factory-checkpoint/state/factory-wake-ledger.json';
           if (fs.existsSync(ledgerPath)) {
             const ledger = JSON.parse(fs.readFileSync(ledgerPath, 'utf8'));
             if (Array.isArray(ledger.consumedWakeIds) && ledger.consumedWakeIds.includes(process.env.WAKE_ID)) throw new Error('Wake replay detected');
+            if (Array.isArray(ledger.consumedNonces) && ledger.consumedNonces.includes(checkpoint.nonce)) throw new Error('Wake nonce replay detected');
           }
           NODE
           (cd .factory-checkpoint && sha256sum -c canary/outputs/manifest.sha256)
@@ -199,14 +207,17 @@ jobs:
           const fs = require('node:fs');
           const path = require('node:path');
           const ledgerPath = 'state/factory-wake-ledger.json';
-          let priorLedger = { schemaVersion: 'factory-wake-ledger-v1', consumedWakeIds: [] };
+          let priorLedger = { schemaVersion: 'factory-wake-ledger-v1', consumedWakeIds: [], consumedNonces: [] };
           if (fs.existsSync(ledgerPath)) priorLedger = JSON.parse(fs.readFileSync(ledgerPath, 'utf8'));
-          if (!Array.isArray(priorLedger.consumedWakeIds) || priorLedger.consumedWakeIds.includes(process.env.WAKE_ID)) throw new Error('Wake replay or malformed replay ledger');
-          priorLedger.consumedWakeIds = [...priorLedger.consumedWakeIds, process.env.WAKE_ID].slice(-100);
+          if (!Array.isArray(priorLedger.consumedWakeIds) || !Array.isArray(priorLedger.consumedNonces) || priorLedger.consumedWakeIds.includes(process.env.WAKE_ID)) throw new Error('Wake replay or malformed replay ledger');
+          if (priorLedger.consumedNonces.includes(process.env.NONCE)) throw new Error('Wake nonce replay');
+          priorLedger.consumedWakeIds.push(process.env.WAKE_ID);
+          priorLedger.consumedNonces.push(process.env.NONCE);
           priorLedger.lastNonce = process.env.NONCE;
           fs.mkdirSync('state', { recursive: true });
           fs.writeFileSync(ledgerPath, `${JSON.stringify(priorLedger, null, 2)}\n`);
           const currentSourceManifest = fs.existsSync('state/factory-state.json') ? (() => { const state = JSON.parse(fs.readFileSync('state/factory-state.json', 'utf8')); const run = state.activeRun || state.runs?.find((entry) => entry.status === 'awaiting-human-gate-1'); return run?.artifacts?.sourceCheckpoint?.sourceManifest || null; })() : null;
+          const semanticDigests = fs.existsSync('state/factory-state.json') ? require('./src/factory/checkpoint').semanticDigests(JSON.parse(fs.readFileSync('state/factory-state.json', 'utf8'))) : null;
           fs.writeFileSync('canary/outputs/checkpoint.json', `${JSON.stringify({
             schemaVersion: 'factory-checkpoint-v1',
             runId: process.env.GITHUB_RUN_ID,
@@ -217,6 +228,7 @@ jobs:
             restoredFromRunId: process.env.RESTORE_RUN_ID || null,
             sourceManifest: currentSourceManifest,
             sourceManifestDigest: fs.existsSync('state/factory-state.json') ? (() => { const state = JSON.parse(fs.readFileSync('state/factory-state.json', 'utf8')); const run = state.activeRun || state.runs?.find((entry) => entry.status === 'awaiting-human-gate-1'); return run?.artifacts?.sourceCheckpoint?.sourceManifestDigest || null; })() : null,
+            semanticDigests,
           }, null, 2)}\n`);
           const roots = ['state', 'canary/outputs'];
           const files = [];
