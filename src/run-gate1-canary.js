@@ -9,9 +9,8 @@ const { loadConfig } = require('./run-one');
 const { digest } = require('./factory/prescription-policy');
 const { validateBundle, validateJobReceipt, canonicalThreadUrl, createDispatchPacket } = require('./factory/cloud-agent');
 const { createPendingHandoff, validatePendingHandoff, retrievePhaseAHandoff, claimResumeAtomic } = require('./factory/handoff');
-const { createSealed360Adapters } = require('./factory/sealed-evidence');
+const { createSealed360Adapters, verifySealed360Lineage } = require('./factory/sealed-evidence');
 const { actionProofFromEnvironment } = require('./factory/orchestrator');
-const { SEALED_PROOF_SCOPE, appendSealedReplayTruth, sealedProofLimitations } = require('./factory/exact-head-proof-package');
 
 function bundleDigest(bundle) { return digest({ ...bundle, inputManifestDigest: undefined }); }
 
@@ -32,6 +31,26 @@ function createCloudAgentBundleAdapter(bundle, expectedEnvelope) {
 function readJson(filename) { return JSON.parse(fs.readFileSync(path.resolve(filename), 'utf8')); }
 function required(value, name) { if (!value) throw new Error(`${name} is required`); return value; }
 
+function verifyApprovedLineageRuntimePacket({ root, filename, assertedHeadSha, dispatch }) {
+  if (!filename) throw new Error('Needs Josh: production phase A requires a verified approved-lineage runtime packet');
+  const packet = readJson(filename);
+  const recordedDigest = packet.packetDigest;
+  const unsigned = { ...packet };
+  delete unsigned.packetDigest;
+  if (!recordedDigest || recordedDigest !== digest(unsigned)) throw new Error('Needs Josh: approved-lineage runtime packet digest is stale or invented');
+  if (packet.runtimeGenerated !== true || packet.preparedOnly !== true || packet.syntheticReplayEligible !== false || packet.liveConnectorExecuted !== false) throw new Error('Needs Josh: approved-lineage runtime packet is not a prepared production input');
+  if (packet.repository !== (dispatch.repository || 'alchemistj/ff-content-demo-factory') || Number(packet.issueNumber) !== 8 || Number(packet.prNumber) !== 1 || packet.branch !== dispatch.branch || packet.checkedOutSha !== assertedHeadSha || packet.reviewedHeadSha !== assertedHeadSha) throw new Error('Needs Josh: approved-lineage runtime packet target/head is mismatched');
+  const envelope = packet.envelope || {};
+  for (const [field, expected] of [['repository', packet.repository], ['issueNumber', 8], ['prNumber', 1], ['branch', packet.branch], ['checkedOutSha', assertedHeadSha], ['dispatchKey', packet.dispatchPacket?.dispatchKey], ['dispatchDigest', packet.dispatchPacket?.dispatchDigest]]) {
+    if (String(envelope[field]) !== String(expected)) throw new Error(`Needs Josh: approved-lineage runtime envelope ${field} is mismatched`);
+  }
+  const historical = verifySealed360Lineage({ root });
+  const approved = packet.approvedLineage || {};
+  for (const field of ['sourceArtifactDigest', 'evidenceDigest', 'pageSetDigest', 'prescriptionDigest', 'approvalDigest', 'strategyDigest']) if (approved[field] !== historical[field]) throw new Error(`Needs Josh: approved historical ${field} changed`);
+  if (JSON.stringify(approved.selectedServiceIds) !== JSON.stringify(historical.selectedServiceIds) || JSON.stringify(approved.routes) !== JSON.stringify(historical.routes)) throw new Error('Needs Josh: approved historical service/page selection changed');
+  return packet;
+}
+
 async function runCurrentHeadGate1Canary({ root, requestFile, selectionFile, qaFile, cursorBundleFile, env = process.env, deps = {} }) {
   required(root, 'root'); required(requestFile, 'requestFile'); required(selectionFile, 'selectionFile'); required(qaFile, 'qaFile');
   if (env.CURSOR_API_KEY) throw new Error('CURSOR_API_KEY is not a supported canary credential; use the GitHub-to-Cursor Cloud Agent bundle');
@@ -48,10 +67,41 @@ async function runCurrentHeadGate1Canary({ root, requestFile, selectionFile, qaF
   const cursorBundle = cursorBundleFile && fs.existsSync(path.resolve(cursorBundleFile)) ? readJson(cursorBundleFile) : null;
   const dispatch = { issueNumber: Number(env.FACTORY_ISSUE_NUMBER), prNumber: Number(env.FACTORY_PR_NUMBER), branch: env.FACTORY_BRANCH || env.GITHUB_REF_NAME, reviewedHeadSha: assertedHeadSha };
   if (!Number.isInteger(dispatch.issueNumber) || !Number.isInteger(dispatch.prNumber) || !dispatch.branch) throw new Error('Canary requires immutable Issue/PR/branch dispatch binding');
+  if (env.FACTORY_PHASE_A_PRODUCTION === 'true') verifyApprovedLineageRuntimePacket({ root: process.cwd(), filename: env.FACTORY_APPROVED_LINEAGE_PACKET, assertedHeadSha, dispatch: { ...dispatch, repository: env.FACTORY_REPOSITORY || 'alchemistj/ff-content-demo-factory' } });
   const inputManifest = { schemaVersion: 'factory-canary-input-manifest-v1', expectedHeadSha: assertedHeadSha, dispatch, files: { request: digest(request), selection: digest(selection), qa: digest(qa) } };
   inputManifest.manifestDigest = digest(inputManifest);
   const outputDir = path.join(root, 'canary', 'outputs');
   fs.mkdirSync(outputDir, { recursive: true });
+  // The sealed replay is a repository fixture used to exercise lineage and
+  // exact-head controls.  It is deliberately not a Gate 1 run: no state,
+  // prescription, markdown, vendor receipt, or approvable artifact may be
+  // manufactured from synthetic evidence.
+  if (sealedEvidence) {
+    const proof = {
+      schemaVersion: 'factory-current-head-gate1-canary-v1',
+      proofScope: 'synthetic-sealed-evidence-test-only',
+      phase,
+      synthetic: true,
+      sealedEvidence: true,
+      approvableGate1: false,
+      integratedFactoryReadiness: false,
+      liveConnectorProven: false,
+      expectedHeadSha: assertedHeadSha,
+      checkedOutSha: assertedHeadSha,
+      headAssertion: true,
+      dispatch,
+      inputManifest,
+      historicalLineage: sealedAdapters?.sealed?.lineage || null,
+      gate1State: 'synthetic-sealed-evidence-only',
+      limitations: [
+        'Synthetic repository replay only; this is not a Human Gate 1 approval artifact.',
+        'No Apify token, Cursor credential, Cursor thread, terminal receipt, or production vendor call was used.',
+        'Real phase A must pause for an authentic cursor[bot] terminal receipt before any Gate 1 path.',
+      ],
+    };
+    fs.writeFileSync(path.join(outputDir, 'current-head-gate1-proof.json'), `${JSON.stringify(proof, null, 2)}\n`);
+    return { proof, state: null };
+  }
   const sealPending = () => {
     const dispatchPacket = createDispatchPacket({ ...dispatch, scope: env.FACTORY_DISPATCH_SCOPE || 'fresh-current-head-gate1', repository: env.FACTORY_REPOSITORY || 'alchemistj/ff-content-demo-factory' });
     const prospectId = selection.selectedPlaceId || request.prospectId || request.placeId || request.prospect?.prospectId || `canary-${digest(request).slice(7, 23)}`;
@@ -128,7 +178,7 @@ async function runCurrentHeadGate1Canary({ root, requestFile, selectionFile, qaF
   });
   const proof = {
     schemaVersion: 'factory-current-head-gate1-canary-v1',
-    proofScope: sealedEvidence ? SEALED_PROOF_SCOPE : 'fresh-current-head-gate1-canary-only',
+    proofScope: 'fresh-current-head-gate1-canary-only',
     integratedFactoryReadiness: false,
     liveConnectorProven: false,
     expectedHeadSha: assertedHeadSha,
@@ -152,10 +202,10 @@ async function runCurrentHeadGate1Canary({ root, requestFile, selectionFile, qaF
     cursorReceiptBindings: boundReceipts,
     gate1State: run.status,
     laterStageArtifacts: Object.keys(run.artifacts).filter((key) => ['copy', 'website', 'build', 'deploy'].some((word) => key.toLowerCase().includes(word))),
-    limitations: sealedEvidence ? sealedProofLimitations() : ['This proves a fresh current-head path through Human Gate 1 only.', 'It does not prove post-Gate-1 writer lanes, final copy QA, or website build readiness.', 'The live GitHub cursor[bot] terminal-bundle to automatic phase-B connector path remains unproven unless a trusted terminal receipt is bound.'],
+    limitations: ['This proves a fresh current-head path through Human Gate 1 only.', 'It does not prove post-Gate-1 writer lanes, final copy QA, or website build readiness.', 'The live GitHub cursor[bot] terminal-bundle to automatic phase-B connector path remains unproven unless a trusted terminal receipt is bound.'],
   };
   fs.mkdirSync(path.join(root, 'canary', 'outputs'), { recursive: true });
-  const markdown = sealedEvidence ? appendSealedReplayTruth(run.artifacts.gate1.markdown) : run.artifacts.gate1.markdown;
+  const markdown = run.artifacts.gate1.markdown;
   run.artifacts.gate1.markdown = markdown;
   fs.writeFileSync(path.join(root, 'canary', 'outputs', 'current-head-gate1-proof.json'), `${JSON.stringify(proof, null, 2)}\n`);
   fs.writeFileSync(path.join(root, 'canary', 'outputs', 'gate1.md'), markdown);
