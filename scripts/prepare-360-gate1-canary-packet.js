@@ -35,7 +35,7 @@ function gitHead() {
 function main(options = {}) {
   const env = options.env || process.env;
   const root = options.root || process.cwd();
-  const lineageRoot = options.lineageRoot || root;
+  const lineageRoot = options.lineageRoot || env.FACTORY_TRUSTED_CHECKPOINT_ROOT || root;
   const currentHead = options.currentHead || gitHead();
   const expectedHeadSha = options.expectedHeadSha || env.EXPECTED_HEAD_SHA || env.FACTORY_EXPECTED_HEAD_SHA;
   const sealedReplayExecuted = options.sealedReplayExecuted === true || env.FACTORY_SEALED_REPLAY_EXECUTED === 'true';

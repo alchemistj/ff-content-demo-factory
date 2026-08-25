@@ -6,6 +6,8 @@ const crypto = require('node:crypto');
 const { validateSeededDiscoveryPacket } = require('./seeded-discovery');
 const { verifySealed360Lineage } = require('../factory/sealed-evidence');
 const { digest } = require('../factory/prescription-policy');
+const { resolveTrustedArtifact } = require('../factory/trusted-artifacts');
+const { REGISTRY_KEY } = require('../../scripts/restore-trusted-checkpoint');
 
 function byteDigest(file) { return `sha256:${crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex')}`; }
 function read(root, file) { return JSON.parse(fs.readFileSync(path.join(root, file), 'utf8')); }
@@ -31,14 +33,31 @@ function bindClaims(pages) {
  * separate from the sealed replay adapter so the live entrypoint can attest
  * source provenance and force a new Josh decision at the current head.
  */
-function createTrustedGithubCheckpointAdapter({ root = process.cwd(), assertedHeadSha, artifactId = null, workflowRunId = null } = {}) {
+function createTrustedGithubCheckpointAdapter(options = {}) {
+  if (Object.prototype.hasOwnProperty.call(options, 'artifactId') || Object.prototype.hasOwnProperty.call(options, 'workflowRunId')) throw new Error('trusted checkpoint identity is registry-controlled; caller artifact/run ids are forbidden');
+  const { root = process.cwd(), trustedRoot = root, assertedHeadSha, currentArtifactId = null, currentWorkflowRunId = null, requireManifest = false } = options;
   if (!assertedHeadSha) throw new Error('trusted GitHub checkpoint requires asserted checked-out SHA');
+  const trusted = resolveTrustedArtifact(REGISTRY_KEY);
+  const manifestFile = path.join(trustedRoot, 'trusted-checkpoint-manifest.json');
+  if (requireManifest && !fs.existsSync(manifestFile)) throw new Error('trusted GitHub checkpoint requires the verified extracted manifest');
+  if (fs.existsSync(manifestFile)) {
+    const manifest = read(trustedRoot, 'trusted-checkpoint-manifest.json');
+    const unsigned = { ...manifest }; delete unsigned.manifestDigest;
+    if (manifest.registryKey !== REGISTRY_KEY || manifest.manifestDigest !== digest(unsigned) || manifest.repository !== 'alchemistj/ff-content-demo-factory') throw new Error('trusted checkpoint manifest identity/digest is invalid');
+    if (manifest.original?.runId !== trusted.runId || manifest.original?.artifactId !== trusted.artifactId || manifest.original?.sourceSha !== trusted.sourceSha || manifest.original?.archiveDigest !== trusted.archiveDigest) throw new Error('trusted checkpoint manifest original identity is invalid');
+    for (const field of ['sourceArtifactDigest', 'sourceManifestDigest', 'evidenceDigest', 'pageSetDigest', 'prescriptionDigest', 'approvalDigest', 'strategyDigest']) if (manifest.internal?.[field] !== trusted[field]) throw new Error(`trusted checkpoint manifest internal digest is invalid: ${field}`);
+    if (currentArtifactId && String(manifest.current?.workflowArtifactId) !== String(currentArtifactId)) throw new Error('trusted checkpoint manifest current artifact identity is invalid');
+    if (currentWorkflowRunId && String(manifest.current?.workflowRunId) !== String(currentWorkflowRunId)) throw new Error('trusted checkpoint manifest current workflow identity is invalid');
+    if (manifest.current?.checkedOutSha && String(manifest.current.checkedOutSha) !== String(assertedHeadSha)) throw new Error('trusted checkpoint manifest current head is invalid');
+  }
   const discoveryFile = 'canary/inputs/360-garage-door-and-more.discovery.json';
   const handoffFile = 'canary/outputs/360-four-page-reseal-handoff.json';
-  const discovery = validateSeededDiscoveryPacket(read(root, discoveryFile));
-  const handoff = read(root, handoffFile);
-  const lineage = verifySealed360Lineage({ root, handoff });
-  const source = { provider: 'github-trusted-checkpoint', provenanceType: 'github-actions-artifact', artifactId: String(artifactId || lineage.artifactId), workflowRunId: String(workflowRunId || lineage.runId), checkedOutSha: assertedHeadSha, sourceSha: lineage.sourceSha, sourceArtifactDigest: lineage.sourceArtifactDigest, discoveryFileDigest: byteDigest(path.join(root, discoveryFile)), handoffFileDigest: byteDigest(path.join(root, handoffFile)), packetDigest: digest({ discoveryFileDigest: byteDigest(path.join(root, discoveryFile)), handoffFileDigest: byteDigest(path.join(root, handoffFile)), sourceArtifactDigest: lineage.sourceArtifactDigest, assertedHeadSha }) };
+  const discovery = validateSeededDiscoveryPacket(read(trustedRoot, discoveryFile));
+  const handoff = read(trustedRoot, handoffFile);
+  const lineage = verifySealed360Lineage({ root: trustedRoot, handoff });
+  if (byteDigest(path.join(trustedRoot, 'canary/inputs/360-four-page-reseal-approval.json')) !== trusted.approvalFileDigest || byteDigest(path.join(trustedRoot, 'canary/inputs/360-four-page-reseal-ledger.json')) !== trusted.ledgerFileDigest || byteDigest(path.join(trustedRoot, discoveryFile)) !== trusted.discoveryFileDigest || byteDigest(path.join(trustedRoot, handoffFile)) !== trusted.handoffFileDigest) throw new Error('trusted checkpoint registry source-file digest mismatch');
+  for (const field of ['sourceArtifactDigest', 'sourceManifestDigest', 'evidenceDigest', 'pageSetDigest', 'prescriptionDigest', 'approvalDigest', 'strategyDigest']) if (lineage[field] !== trusted[field]) throw new Error(`trusted checkpoint registry lineage mismatch: ${field}`);
+  const source = { provider: 'github-trusted-checkpoint', provenanceType: 'github-actions-artifact', repository: 'alchemistj/ff-content-demo-factory', originalRunId: trusted.runId, originalArtifactId: trusted.artifactId, originalSourceSha: trusted.sourceSha, archiveName: trusted.archiveName, archiveDigest: trusted.archiveDigest, currentWorkflowRunId: currentWorkflowRunId ? String(currentWorkflowRunId) : null, currentArtifactId: currentArtifactId ? String(currentArtifactId) : null, checkedOutSha: assertedHeadSha, sourceSha: lineage.sourceSha, sourceArtifactDigest: lineage.sourceArtifactDigest, sourceManifestDigest: lineage.sourceManifestDigest, evidenceDigest: lineage.evidenceDigest, pageSetDigest: lineage.pageSetDigest, prescriptionDigest: lineage.prescriptionDigest, approvalDigest: lineage.approvalDigest, strategyDigest: lineage.strategyDigest, discoveryFileDigest: byteDigest(path.join(trustedRoot, discoveryFile)), handoffFileDigest: byteDigest(path.join(trustedRoot, handoffFile)), packetDigest: digest({ originalRunId: trusted.runId, originalArtifactId: trusted.artifactId, originalSourceSha: trusted.sourceSha, discoveryFileDigest: byteDigest(path.join(trustedRoot, discoveryFile)), handoffFileDigest: byteDigest(path.join(trustedRoot, handoffFile)), sourceArtifactDigest: lineage.sourceArtifactDigest, assertedHeadSha, currentWorkflowRunId: currentWorkflowRunId || null, currentArtifactId: currentArtifactId || null }) };
   const judgments = Object.fromEntries((handoff.reviewInventory?.classification?.reviews || []).map((entry) => [entry.id, entry.authoritativeJudgment]));
   const receipt = (operation, input, result, extra = {}) => ({ provider: 'github-trusted-checkpoint', operation, status: 'completed', terminalStatus: 'succeeded', startedAt: new Date(0).toISOString(), completedAt: new Date(0).toISOString(), input, result, inputDigest: digest(input), outputDigest: digest(result), source, ...extra });
   async function discoverCandidates() { return { ...discovery, provenance: { provider: 'github-trusted-checkpoint', mode: 'trusted-checkpoint-restore', run: receipt('discovery', discovery.request || discovery.discoveryRequest, discovery.candidates, { artifactId: source.artifactId }) } }; }

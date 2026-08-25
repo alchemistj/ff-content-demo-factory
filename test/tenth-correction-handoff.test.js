@@ -23,6 +23,9 @@ const { markerFor, markerBody, assertTransition, findClaim, recoverClaim } = req
 const { claimPhaseBAtomic } = require('../src/factory/handoff');
 const { collect } = require('../src/collect-cursor-terminal-result');
 const { createTrustedGithubCheckpointAdapter } = require('../src/adapters/trusted-github-checkpoint');
+const { validateMaterial, validateMetadata, safeArchiveEntries, REGISTRY_KEY } = require('../scripts/restore-trusted-checkpoint');
+const { resolveTrustedArtifact } = require('../src/factory/trusted-artifacts');
+const { annotate } = require('../scripts/annotate-trusted-checkpoint');
 
 function completeBinding(extra = {}) {
   return {
@@ -189,18 +192,42 @@ test('trusted GitHub checkpoint is a production receipt type with authentic sour
     const target = path.join(root, file); fs.mkdirSync(path.dirname(target), { recursive: true }); fs.copyFileSync(file, target);
   }
   const head = 'a'.repeat(40);
-  const adapter = createTrustedGithubCheckpointAdapter({ root, assertedHeadSha: head, artifactId: 'github-artifact-123', workflowRunId: 'github-run-456' });
+  const adapter = createTrustedGithubCheckpointAdapter({ root, assertedHeadSha: head, currentArtifactId: 'github-artifact-123', currentWorkflowRunId: 'github-run-456' });
   assert.equal(adapter.source.provider, 'github-trusted-checkpoint');
-  assert.equal(adapter.source.artifactId, 'github-artifact-123');
+  assert.equal(adapter.source.originalArtifactId, '9516514426');
+  assert.equal(adapter.source.currentArtifactId, 'github-artifact-123');
   assert.equal(adapter.source.checkedOutSha, head);
   const discovered = await adapter.discoverCandidates();
   assert.equal(discovered.provenance.run.provider, 'github-trusted-checkpoint');
   assert.equal(discovered.provenance.run.vendorReceipt, undefined);
-  assert.equal(discovered.provenance.run.source.artifactId, 'github-artifact-123');
+  assert.equal(discovered.provenance.run.source.originalArtifactId, '9516514426');
   const enriched = await adapter.enrichFinalist({ placeId: PLACE_ID });
   assert.equal(enriched.receipt.provider, 'github-trusted-checkpoint');
   assert.equal(enriched.receipt.source.sourceSha, HISTORICAL_360.sourceSha);
   await assert.rejects(() => adapter.enrichFinalist({ placeId: 'foreign-place' }), /cross-prospect/);
+});
+
+test('trusted checkpoint registry rejects caller identities and verifies source files/metadata/archive paths', () => {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), 'factory-trusted-material-'));
+  for (const file of ['canary/inputs/360-four-page-reseal-approval.json', 'canary/inputs/360-four-page-reseal-ledger.json', 'canary/inputs/360-garage-door-and-more.discovery.json', 'canary/outputs/360-four-page-reseal-handoff.json']) {
+    const target = path.join(root, file); fs.mkdirSync(path.dirname(target), { recursive: true }); fs.copyFileSync(file, target);
+  }
+  const trusted = resolveTrustedArtifact(REGISTRY_KEY);
+  assert.doesNotThrow(() => validateMaterial(root, trusted));
+  assert.doesNotThrow(() => validateMetadata({ id: trusted.artifactId, name: trusted.archiveName, expired: false, workflow_run: { id: trusted.runId, head_sha: trusted.sourceSha, repository: { full_name: 'alchemistj/ff-content-demo-factory' } } }, trusted));
+  assert.throws(() => validateMetadata({ id: 'forged', name: trusted.archiveName, expired: false, workflow_run: { id: trusted.runId, head_sha: trusted.sourceSha } }, trusted), /id\/name/);
+  fs.appendFileSync(path.join(root, 'canary/inputs/360-four-page-reseal-ledger.json'), 'tamper');
+  assert.throws(() => validateMaterial(root, trusted), /source file digest mismatch/);
+  assert.throws(() => createTrustedGithubCheckpointAdapter({ root, assertedHeadSha: 'a'.repeat(40), artifactId: 'forged' }), /caller artifact\/run ids are forbidden/);
+  const traversal = path.join(root, 'traversal.zip');
+  const py = spawnSync('python', ['-c', "import zipfile,sys; z=zipfile.ZipFile(sys.argv[1],'w'); z.writestr('../escape.txt','bad'); z.close()", traversal], { encoding: 'utf8' });
+  assert.equal(py.status, 0, py.stderr);
+  assert.throws(() => safeArchiveEntries(traversal), /unsafe archive path/);
+  const manifestFile = path.join(root, 'trusted-checkpoint-manifest.json');
+  const manifest = { schemaVersion: 'factory-trusted-github-checkpoint-manifest-v1', registryKey: REGISTRY_KEY, repository: 'alchemistj/ff-content-demo-factory', original: { runId: trusted.runId, artifactId: trusted.artifactId, sourceSha: trusted.sourceSha, archiveName: trusted.archiveName, archiveDigest: trusted.archiveDigest }, current: { workflowRunId: null, workflowArtifactId: null, checkedOutSha: null } };
+  manifest.manifestDigest = digest(manifest); fs.writeFileSync(manifestFile, JSON.stringify(manifest));
+  const annotated = annotate(manifestFile, { workflowArtifactId: 'current-artifact', workflowRunId: 'current-run', checkedOutSha: 'b'.repeat(40) });
+  assert.equal(annotated.original.artifactId, trusted.artifactId); assert.equal(annotated.current.workflowArtifactId, 'current-artifact'); assert.equal(annotated.current.checkedOutSha, 'b'.repeat(40));
 });
 
 test('twelfth correction verifies the runtime approved handoff and canonical prescription projection before and after paid work', async () => {

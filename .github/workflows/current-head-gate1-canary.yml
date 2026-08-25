@@ -51,14 +51,6 @@ on:
         required: false
         type: boolean
         default: false
-      trusted_checkpoint_artifact_id:
-        description: Optional immutable GitHub artifact id for the trusted checkpoint source
-        required: false
-        type: string
-      trusted_checkpoint_run_id:
-        description: Optional source workflow run id for the trusted checkpoint
-        required: false
-        type: string
       phase_a_run_id:
         description: Exact phase-A workflow run id whose pending artifact must be downloaded and verified
         required: false
@@ -109,6 +101,10 @@ jobs:
             case "$file" in *..*) echo "path traversal is not allowed" >&2; exit 1 ;; esac
             test -f "$file"
           done
+          if [ "${{ inputs.trusted_checkpoint_restore }}" = "true" ] && [ -n "$CURSOR_BUNDLE_FILE" ]; then
+            echo "trusted checkpoint mode cannot receive a Cursor bundle" >&2
+            exit 1
+          fi
           if [ "${{ inputs.phase }}" = "resume" ] || [ "${{ inputs.phase }}" = "integrated" ]; then
             if [ "${{ inputs.sealed_evidence }}" != "true" ] && [ "${{ inputs.trusted_checkpoint_restore }}" != "true" ]; then
               test -n "$CURSOR_BUNDLE_FILE"
@@ -140,6 +136,20 @@ jobs:
           printf '%s' "$pr_json" | jq -r .body | grep -Fq "issues/$ISSUE_NUMBER"
           gh issue view "$ISSUE_NUMBER" --repo "$GITHUB_REPOSITORY" --json number --jq .number | grep -Fxq "$ISSUE_NUMBER"
           echo "FACTORY_REPOSITORY=$GITHUB_REPOSITORY" >> "$GITHUB_ENV"
+      - name: Download and verify registered historical GitHub checkpoint
+        if: inputs.trusted_checkpoint_restore == true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          zip_file="$RUNNER_TEMP/360-garage-door-gate1.zip"
+          metadata_file="$RUNNER_TEMP/360-garage-door-gate1.metadata.json"
+          trusted_root="$RUNNER_TEMP/trusted-360-checkpoint"
+          gh api "repos/alchemistj/ff-content-demo-factory/actions/artifacts/9516514426/zip" > "$zip_file"
+          gh api "repos/alchemistj/ff-content-demo-factory/actions/artifacts/9516514426" > "$metadata_file"
+          test -s "$zip_file" && test -s "$metadata_file"
+          node scripts/restore-trusted-checkpoint.js "$zip_file" "$trusted_root" "$metadata_file"
+          echo "FACTORY_TRUSTED_CHECKPOINT_ROOT=$trusted_root" >> "$GITHUB_ENV"
+          echo "FACTORY_TRUSTED_CURRENT_RUN_ID=$GITHUB_RUN_ID" >> "$GITHUB_ENV"
       - name: Validate trusted production runtime
         if: (inputs.phase == 'resume' || inputs.phase == 'integrated') && inputs.sealed_evidence != true && inputs.trusted_checkpoint_restore != true
         env:
@@ -175,8 +185,21 @@ jobs:
           artifact_digest="$(printf '%s' "$artifact_json" | jq -r '.workflow_run.head_sha')"
           test -n "$artifact_id" && test "$artifact_id" != "null"
           echo "FACTORY_TRUSTED_CHECKPOINT_ARTIFACT_ID=$artifact_id" >> "$GITHUB_ENV"
-          echo "FACTORY_TRUSTED_CHECKPOINT_RUN_ID=${{ inputs.trusted_checkpoint_run_id || github.run_id }}" >> "$GITHUB_ENV"
+          echo "FACTORY_TRUSTED_CURRENT_ARTIFACT_ID=$artifact_id" >> "$GITHUB_ENV"
           echo "FACTORY_TRUSTED_CHECKPOINT_ARTIFACT_SHA=$artifact_digest" >> "$GITHUB_ENV"
+      - name: Seal current trusted checkpoint bridge manifest
+        if: inputs.trusted_checkpoint_restore == true
+        run: |
+          node scripts/annotate-trusted-checkpoint.js "$FACTORY_TRUSTED_CHECKPOINT_ROOT/trusted-checkpoint-manifest.json" "$FACTORY_TRUSTED_CHECKPOINT_ARTIFACT_ID" "$FACTORY_TRUSTED_CURRENT_RUN_ID" "$FACTORY_CHECKED_OUT_SHA"
+          cp "$FACTORY_TRUSTED_CHECKPOINT_ROOT/trusted-checkpoint-manifest.json" canary/outputs/trusted-checkpoint-bridge.json
+      - name: Upload verified trusted checkpoint bridge (required)
+        if: inputs.trusted_checkpoint_restore == true
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: trusted-github-checkpoint-bridge-${{ github.run_id }}
+          path: canary/outputs/trusted-checkpoint-bridge.json
+          if-no-files-found: error
+          retention-days: 30
       - name: Install locked dependencies
         run: npm ci --ignore-scripts --no-audit --no-fund
       - name: Run fresh current-head Gate 1 canary (trusted GitHub checkpoint; no vendor credentials)
@@ -270,6 +293,7 @@ jobs:
             canary/outputs/current-head-gate1-proof.json
             canary/outputs/gate1.md
             canary/outputs/runtime/360-current-head-gate1-dispatch-packet.json
+            canary/outputs/trusted-checkpoint-bridge.json
             state/factory-state.json
           if-no-files-found: error
           retention-days: 30

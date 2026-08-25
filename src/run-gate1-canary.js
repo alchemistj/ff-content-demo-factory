@@ -33,7 +33,7 @@ function createCloudAgentBundleAdapter(bundle, expectedEnvelope) {
 function readJson(filename) { return JSON.parse(fs.readFileSync(path.resolve(filename), 'utf8')); }
 function required(value, name) { if (!value) throw new Error(`${name} is required`); return value; }
 
-function verifyApprovedLineageRuntimePacket({ root, filename, assertedHeadSha, dispatch }) {
+function verifyApprovedLineageRuntimePacket({ root, lineageRoot = root, filename, assertedHeadSha, dispatch }) {
   if (!filename) throw new Error('Needs Josh: production phase A requires a verified approved-lineage runtime packet');
   const packet = readJson(path.isAbsolute(filename) ? filename : path.join(root, filename));
   const recordedDigest = packet.packetDigest;
@@ -49,7 +49,7 @@ function verifyApprovedLineageRuntimePacket({ root, filename, assertedHeadSha, d
   const historicalHandoff = packet.approvedLineage?.handoff;
   if (!historicalHandoff || typeof historicalHandoff !== 'object') throw new Error('Needs Josh: approved-lineage runtime packet must carry the authoritative historical handoff');
   if (packet.approvedLineage.seedOnly !== true) throw new Error('Needs Josh: historical approval may seed evidence only; it is not current-head approval');
-  const historical = verifySealed360Lineage({ root, handoff: historicalHandoff });
+  const historical = verifySealed360Lineage({ root: lineageRoot, handoff: historicalHandoff });
   const approved = packet.approvedLineage || {};
   for (const field of ['sourceArtifactDigest', 'sourceManifestDigest', 'evidenceDigest', 'pageSetDigest', 'prescriptionDigest', 'approvalDigest', 'strategyDigest']) if (approved[field] !== historical[field]) throw new Error(`Needs Josh: approved historical ${field} changed`);
   if (JSON.stringify(approved.selectedServiceIds) !== JSON.stringify(historical.selectedServiceIds) || JSON.stringify(approved.routes) !== JSON.stringify(historical.routes)) throw new Error('Needs Josh: approved historical service/page selection changed');
@@ -70,15 +70,17 @@ async function runCurrentHeadGate1Canary({ root, requestFile, selectionFile, qaF
   if (!['dispatch', 'resume', 'integrated'].includes(phase)) throw new Error(`Unsupported canary phase: ${phase}`);
   const sealedEvidence = env.FACTORY_SEALED_EVIDENCE === 'true' || env.FACTORY_SEALED_EVIDENCE === true;
   const trustedCheckpointRestore = env.FACTORY_TRUSTED_CHECKPOINT_RESTORE === 'true';
+  if (trustedCheckpointRestore && env.APIFY_API_TOKEN) throw new Error('Trusted checkpoint mode is exclusive and cannot receive APIFY_API_TOKEN');
   // Sealed replay is a test-only adapter.  The production trusted-checkpoint
   // path must remain a distinct provider with GitHub artifact provenance.
   const sealedAdapters = sealedEvidence ? createSealed360Adapters({ root: process.cwd() }) : null;
-  const trustedAdapters = trustedCheckpointRestore ? createTrustedGithubCheckpointAdapter({ root, assertedHeadSha, artifactId: env.FACTORY_TRUSTED_CHECKPOINT_ARTIFACT_ID, workflowRunId: env.FACTORY_TRUSTED_CHECKPOINT_RUN_ID }) : null;
+  const trustedAdapters = trustedCheckpointRestore ? createTrustedGithubCheckpointAdapter({ root, trustedRoot: env.FACTORY_TRUSTED_CHECKPOINT_ROOT || root, assertedHeadSha, currentArtifactId: env.FACTORY_TRUSTED_CURRENT_ARTIFACT_ID || null, currentWorkflowRunId: env.FACTORY_TRUSTED_CURRENT_RUN_ID || env.GITHUB_RUN_ID || null, requireManifest: Boolean(env.FACTORY_TRUSTED_CHECKPOINT_ROOT) }) : null;
   const cursorBundle = cursorBundleFile && fs.existsSync(path.resolve(cursorBundleFile)) ? readJson(cursorBundleFile) : null;
+  if (trustedCheckpointRestore && cursorBundle) throw new Error('Trusted checkpoint mode is exclusive and cannot receive a Cursor bundle');
   const dispatch = { issueNumber: Number(env.FACTORY_ISSUE_NUMBER), prNumber: Number(env.FACTORY_PR_NUMBER), branch: env.FACTORY_BRANCH || env.GITHUB_REF_NAME, reviewedHeadSha: assertedHeadSha };
   if (!Number.isInteger(dispatch.issueNumber) || !Number.isInteger(dispatch.prNumber) || !dispatch.branch) throw new Error('Canary requires immutable Issue/PR/branch dispatch binding');
   const approvedRuntimePacket = (env.FACTORY_PHASE_A_PRODUCTION === 'true' || trustedCheckpointRestore)
-    ? verifyApprovedLineageRuntimePacket({ root, filename: env.FACTORY_APPROVED_LINEAGE_PACKET, assertedHeadSha, dispatch: { ...dispatch, repository: env.FACTORY_REPOSITORY || 'alchemistj/ff-content-demo-factory' } })
+    ? verifyApprovedLineageRuntimePacket({ root, lineageRoot: trustedCheckpointRestore ? (env.FACTORY_TRUSTED_CHECKPOINT_ROOT || root) : root, filename: env.FACTORY_APPROVED_LINEAGE_PACKET, assertedHeadSha, dispatch: { ...dispatch, repository: env.FACTORY_REPOSITORY || 'alchemistj/ff-content-demo-factory' } })
     : null;
   const sourceManifestDigest = approvedRuntimePacket?.approvedLineage?.sourceManifestDigest || env.FACTORY_SOURCE_MANIFEST_DIGEST || digest({ request, selection, qa });
   const inputManifest = { schemaVersion: 'factory-canary-input-manifest-v1', expectedHeadSha: assertedHeadSha, dispatch, files: { request: digest(request), selection: digest(selection), qa: digest(qa) }, sourceManifestDigest };
@@ -235,6 +237,11 @@ async function runCurrentHeadGate1Canary({ root, requestFile, selectionFile, qaF
     run.artifacts.gate1.markdown = `${String(run.artifacts.gate1.markdown || '').trimEnd()}\n\n## Human Gate 1 — Needs Josh\n\nThe complete current-head Gate 1 record is preserved above. The trusted historical checkpoint was restored from a verified GitHub artifact without a new paid call, but its historical approval is not current-head approval. Josh must review and approve this new prospect strategy, exact two services, four-page prescription, and limitations before production writing.\n\nReason: ${needsJosh.message}\n`;
     if (stage3.state?.activeRun) { stage3.state.activeRun.status = 'awaiting-human-gate-1'; stage3.state.activeRun.artifacts.gate1.markdown = run.artifacts.gate1.markdown; }
   }
+  if (trustedCheckpointRestore && trustedAdapters?.source) {
+    const bridge = JSON.stringify(trustedAdapters.source, null, 2);
+    run.artifacts.gate1.markdown = `${String(run.artifacts.gate1.markdown || '').trimEnd()}\n\n## Trusted checkpoint bridge\n\nThe source below is registry-authenticated historical evidence. Current workflow/run/artifact/head identity is recorded separately; historical approval is not carried forward.\n\n\`\`\`json\n${bridge}\n\`\`\`\n`;
+    if (stage3.state?.activeRun) stage3.state.activeRun.artifacts.gate1.markdown = run.artifacts.gate1.markdown;
+  }
   const finalEnvelope = { ...expectedEnvelope, factoryRunId: run.runId, factorySourceCheckpointDigest: run.artifacts.sourceCheckpoint ? digest(run.artifacts.sourceCheckpoint) : null };
   const boundReceipts = Object.entries(cursorBundle?.jobs || {}).map(([jobId, entry]) => {
     const kind = entry.receipt?.operation || entry.result?.kind || 'unknown';
@@ -256,6 +263,7 @@ async function runCurrentHeadGate1Canary({ root, requestFile, selectionFile, qaF
     handoffDigest: pending.handoffDigest,
     sealedEvidence,
     historicalLineage: sealedAdapters?.sealed?.lineage || null,
+    trustedCheckpoint: trustedAdapters?.source || null,
     runId: run.runId,
     prospectId: run.prospectId || null,
     candidate: { placeId: run.candidate?.placeId || null, name: run.candidate?.name || null, location: run.candidate?.location || null },
