@@ -26,23 +26,28 @@ export const VERIFIED_WRITER2_RECEIPT_STORE = VERIFIED_RECEIPT_STORE;
 function record(value: unknown): Dict | null { return value && typeof value === "object" && !Array.isArray(value) ? value as Dict : null; }
 function nonEmpty(value: unknown): boolean { return typeof value === "string" && value.trim().length > 0; }
 function routeOf(value: unknown): string { const item = record(value); return String(item?.url || item?.route || item?.path || ""); }
-function scanForbiddenKeys(value: unknown, pathValue = ""): string[] {
+function scanRecursive(value: unknown, pathValue: string, forbiddenKey: (key: string) => boolean, allowedKeys: ReadonlySet<string>, rejectNonPublicRoute = false): string[] {
   const errors: string[] = [];
-  if (Array.isArray(value)) value.forEach((child, index) => errors.push(...scanForbiddenKeys(child, `${pathValue}/${index}`)));
+  if (Array.isArray(value)) value.forEach((child, index) => errors.push(...scanRecursive(child, `${pathValue}/${index}`, forbiddenKey, allowedKeys, rejectNonPublicRoute)));
   else if (record(value)) for (const [key, child] of Object.entries(value as Dict)) {
-    if (["strategyOverview", "strategy", "servicePages", "pages", "writer3", "humanGate2", "qa", "approval", "receipt"].includes(key)) errors.push(`${pathValue}/${key}`);
-    if (["url", "route", "path", "href"].includes(key) && typeof child === "string" && !VERIFIED_PUBLIC_ROUTES.includes(child as any)) errors.push(`${pathValue}/${key}`);
-    errors.push(...scanForbiddenKeys(child, `${pathValue}/${key}`));
+    if (forbiddenKey(key)) errors.push(`${pathValue}/${key}`);
+    else if (!allowedKeys.has(key)) errors.push(`${pathValue}/${key}`);
+    if (rejectNonPublicRoute && ["url", "route", "path", "href"].includes(key) && typeof child === "string" && !VERIFIED_PUBLIC_ROUTES.includes(child as any)) errors.push(`${pathValue}/${key}`);
+    errors.push(...scanRecursive(child, `${pathValue}/${key}`, forbiddenKey, allowedKeys, rejectNonPublicRoute));
   }
   return errors;
 }
+const WRITER2_ALLOWED_KEYS = new Set(["schemaVersion", "homepage", "contact", "header", "footer", "url", "route", "path", "href", "body", "content", "sections", "heading", "id", "label", "text", "title", "seoTitle", "metaDescription", "h1", "navigation", "links", "items", "actions", "buttons", "cta", "brand", "logo", "phone", "email", "address", "name", "value", "target", "external", "ariaLabel", "type", "contentBlocks", "blocks", "children", "icon", "className"]);
+const WRITER2_REVIEW_ANALYSIS_KEY = /^(?:reviewanalysisfacts?|reviewanalysisdata|reviewfacts?|reviewinventory|reviewevidence|reviewplacements?|quoteplacements?|evidenceledger|reviewintelligence|sealedreviewfacts?|strategy(?:overview|data)?|prescription|analysis|servicepages?|pages?|writer3|humangate2|qa|approval|receipt)$/iu;
+const WRITER3_ALLOWED_KEYS = new Set(["internal", "body", "content", "text", "sections", "heading", "id", "label", "value", "notes", "references", "audience", "tone", "angle", "objective", "priorities", "constraints", "outline", "bullets", "items", "name", "type", "title", "summary", "context", "sources", "schemaVersion"]);
+const WRITER3_PUBLIC_SCOPE_KEY = /^(?:url|route|path|href|publicroutes?|publicpages?|page(?:s|metadata|type|id|route)?|prescriptionid|primarykeyword|seotitle|metadescription|h1|header|footer|navigation|nav|contact|homepage|home|service(?:page|pages)?|cta)$/iu;
 
 export function validateVerifiedWriter2Output(value: unknown): asserts value is Dict {
   const root = record(value); if (!root || root.schemaVersion !== "words-writer2-output/v1") throw new Error("Verified Writer2 output schema is invalid");
   const keys = Object.keys(root).sort(); if (JSON.stringify(keys) !== JSON.stringify(["contact", "footer", "header", "homepage", "schemaVersion"])) throw new Error("Verified Writer2 output must contain only Home, Contact, header, and footer");
   if (!record(root.homepage) || routeOf(root.homepage) !== "/" || !record(root.contact) || routeOf(root.contact) !== "/contact" || !record(root.header) || !record(root.footer)) throw new Error("Verified Writer2 output has an invalid Home, Contact, header, or footer scope");
   if (![root.homepage, root.contact].every((page) => nonEmpty(page.body || page.content) || (Array.isArray(page.sections) && page.sections.length > 0))) throw new Error("Verified Writer2 Home and Contact must contain copy");
-  const forbidden = scanForbiddenKeys(root); if (forbidden.length) throw new Error(`Verified Writer2 output leaks forbidden scope at ${forbidden[0]}`);
+  const forbidden = scanRecursive(root, "", (key) => WRITER2_REVIEW_ANALYSIS_KEY.test(key), WRITER2_ALLOWED_KEYS); if (forbidden.length) throw new Error(`Verified Writer2 output leaks review-analysis scope or an unallowlisted key at ${forbidden[0]}`);
 }
 
 export function validateVerifiedWriter3Output(value: unknown): asserts value is Dict {
@@ -50,8 +55,7 @@ export function validateVerifiedWriter3Output(value: unknown): asserts value is 
   const keys = Object.keys(root).sort(); if (JSON.stringify(keys) !== JSON.stringify(["reviewAnalysisFacts", "schemaVersion", "strategyOverview"])) throw new Error("Verified Writer3 output must contain only Strategy Overview and sealed facts");
   const strategy = record(root.strategyOverview); if (!strategy || strategy.internal !== true || !nonEmpty(strategy.body || strategy.content || strategy.text)) throw new Error("Verified Writer3 Strategy Overview must be internal and contain copy");
   if (JSON.stringify(root.reviewAnalysisFacts) !== JSON.stringify(VERIFIED_WRITER3_SEALED_FACTS)) throw new Error("Verified Writer3 review facts are not the exact sealed immutable values");
-  const publicLeak = scanForbiddenKeys(strategy); if (publicLeak.length) throw new Error(`Verified Writer3 output leaks public scope at ${publicLeak[0]}`);
-  for (const key of ["url", "route", "path", "href"]) if (key in strategy) throw new Error("Verified Writer3 Strategy Overview cannot expose a public route");
+  const publicLeak = scanRecursive(strategy, "/strategyOverview", (key) => WRITER3_PUBLIC_SCOPE_KEY.test(key), WRITER3_ALLOWED_KEYS, true); if (publicLeak.length) throw new Error(`Verified Writer3 output leaks public scope or an unallowlisted key at ${publicLeak[0]}`);
 }
 
 function assertProductionEnvironment(): void {

@@ -61,3 +61,43 @@ test("verified downstream validators reject local scope expansion and public Str
   assert.throws(() => validateVerifiedWriter2Output({ ...writer2Output, homepage: { url: "/garage-door-spring-repair", body: "forged" } }), /scope|forbidden/u);
   assert.throws(() => validateVerifiedWriter3Output({ ...writer3Output, strategyOverview: { ...writer3Output.strategyOverview, route: "/contact" } }), /public route|scope/u);
 });
+
+test("verified Writer2 recursively rejects nested review-analysis and strategy data while allowing ordinary nested public chrome", () => {
+  const nestedReviewAnalysis = structuredClone(writer2Output) as any;
+  nestedReviewAnalysis.homepage.sections = [{ blocks: [{ reviewAnalysisFacts: { retrievedWrittenReviewCount: 47 } }] }];
+  assert.throws(() => validateVerifiedWriter2Output(nestedReviewAnalysis), /review-analysis/u);
+  const nestedStrategy = structuredClone(writer2Output) as any;
+  nestedStrategy.contact.contentBlocks = [{ metadata: { strategy: { body: "forged" } } }];
+  assert.throws(() => validateVerifiedWriter2Output(nestedStrategy), /review-analysis/u);
+  const nestedLedger = structuredClone(writer2Output) as any;
+  nestedLedger.header.navigation = [{ href: "/garage-door-repair", data: [{ evidenceLedger: { ref: "sealed" } }] }];
+  assert.throws(() => validateVerifiedWriter2Output(nestedLedger), /review-analysis/u);
+  const nestedArray = structuredClone(writer2Output) as any;
+  nestedArray.footer.links = [{ href: "/contact", metadata: [{ reviewAnalysisData: true }] }];
+  assert.throws(() => validateVerifiedWriter2Output(nestedArray), /review-analysis/u);
+  const clean = structuredClone(writer2Output) as any;
+  clean.homepage.sections = [{ heading: "Welcome", body: "Clear service information.", blocks: [{ label: "Areas", body: "Local service." }] }];
+  clean.contact.contentBlocks = [{ label: "Call", body: "Contact information." }];
+  clean.header.navigation = [{ href: "/garage-door-repair", label: "Repair" }, { href: "/contact", label: "Contact" }];
+  clean.footer.links = [{ href: "/", label: "Home" }];
+  assert.doesNotThrow(() => validateVerifiedWriter2Output(clean));
+});
+
+test("verified Writer3 recursively rejects nested public page metadata while allowing clean internal strategy structures", () => {
+  for (const mutation of [
+    (value: any) => { value.strategyOverview.sections = [{ metadata: { homepage: { route: "/" } } }]; },
+    (value: any) => { value.strategyOverview.references = [{ navigation: [{ href: "/contact" }] }]; },
+    (value: any) => { value.strategyOverview.context = [{ footer: { links: [] } }]; },
+    (value: any) => { value.strategyOverview.sources = [{ servicePage: { url: "/garage-door-repair" } }]; },
+    (value: any) => { value.strategyOverview.details = [{ contact: { body: "public" } }]; },
+    (value: any) => { value.strategyOverview.details = [{ pageType: "homepage" }]; },
+  ]) {
+    const value = structuredClone(writer3Output) as any;
+    mutation(value);
+    assert.throws(() => validateVerifiedWriter3Output(value), /public scope/u);
+  }
+  const clean = structuredClone(writer3Output) as any;
+  clean.strategyOverview.sections = [{ heading: "Plan", body: "Internal planning notes." }];
+  clean.strategyOverview.notes = [{ label: "Audience", value: "Owners" }, { label: "Tone", value: "Clear" }];
+  assert.doesNotThrow(() => validateVerifiedWriter3Output(clean));
+});
