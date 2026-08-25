@@ -156,6 +156,11 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           EXPECTED_ACTION_RUN_ID: '32825265478'
           EXPECTED_ARTIFACT_ID: '9554789848'
+          EXPECTED_ARTIFACT_ZIP_DIGEST: ${{ steps.control.outputs.receipt_manifest_artifact_zip_digest }}
+          EXPECTED_ARTIFACT_ZIP_SIZE: ${{ steps.control.outputs.receipt_manifest_artifact_zip_size }}
+          EXPECTED_RECEIPT_DIGEST: ${{ steps.control.outputs.receipt_manifest_receipt_digest }}
+          EXPECTED_RECEIPT_SIZE: ${{ steps.control.outputs.receipt_manifest_receipt_size }}
+          EXPECTED_RECEIPT_PATH: ${{ steps.control.outputs.receipt_manifest_receipt_path }}
         run: |
           set -euo pipefail
           metadata="$(gh api "repos/${GITHUB_REPOSITORY}/actions/artifacts/${EXPECTED_ARTIFACT_ID}")"
@@ -167,6 +172,19 @@ jobs:
           mkdir -p canary/inputs/post-dispatch-artifact
           gh api "repos/${GITHUB_REPOSITORY}/actions/artifacts/${EXPECTED_ARTIFACT_ID}/zip" > canary/inputs/post-dispatch.zip
           unzip -q canary/inputs/post-dispatch.zip -d canary/inputs/post-dispatch-artifact
+          test "sha256:$(sha256sum canary/inputs/post-dispatch.zip | cut -d ' ' -f 1)" = "$EXPECTED_ARTIFACT_ZIP_DIGEST"
+          test "$(wc -c < canary/inputs/post-dispatch.zip | tr -d ' ')" = "$EXPECTED_ARTIFACT_ZIP_SIZE"
+          if [ "$EXPECTED_RECEIPT_PATH" = 'runtime/writer1-dispatch-receipt.json' ]; then
+            receipt='canary/inputs/post-dispatch-artifact/runtime/writer1-dispatch-receipt.json'
+          elif [ "$EXPECTED_RECEIPT_PATH" = 'runtime/dispatch-receipt.json' ]; then
+            receipt='canary/inputs/post-dispatch-artifact/runtime/dispatch-receipt.json'
+          else
+            echo 'sealed receipt path is not one of the approved exact logical paths' >&2
+            exit 1
+          fi
+          test -f "$receipt"
+          test "$(wc -c < "$receipt" | tr -d ' ')" = "$EXPECTED_RECEIPT_SIZE"
+          test "sha256:$(sha256sum "$receipt" | cut -d ' ' -f 1)" = "$EXPECTED_RECEIPT_DIGEST"
 
       - name: Download and verify exact failed v2 metadata-recovery artifact
         if: steps.control.outputs.dormant != 'true' && steps.control.outputs.recovery_version == 'words-writer1-artifact-recovery/v3'
@@ -237,6 +255,7 @@ jobs:
           WRITER1_LATEST_V3_FINALIZE_ROOT: canary/inputs/latest-v3-finalize-artifact
           WRITER1_GITHUB_BASELINE_ROOT: canary/inputs/github-writer1-baseline
           WRITER1_POST_DISPATCH_ROOT: canary/inputs/post-dispatch-artifact
+          WRITER1_POST_DISPATCH_ZIP: canary/inputs/post-dispatch.zip
         run: |
           if [ "${{ steps.dispatch_mode.outputs.mode }}" = 'verified-writer1-correction-v2' ]; then
             node --import tsx scripts/360-words-verified.ts --writer1-correction-v2

@@ -6,6 +6,10 @@ import {
   OFFICIAL_CURSOR_MODEL,
   recoverCursorWriterPostDispatchForTest,
   validateCursorWriterReceipt,
+  postDispatchReceiptManifestDigest,
+  postDispatchReceiptManifestMac,
+  POST_DISPATCH_ARTIFACT_ZIP_DIGEST,
+  POST_DISPATCH_RECEIPT_DIGEST,
   type CursorPostDispatchRecoveryPrior,
   type CursorTestTransport,
 } from "./cursor-writer.js";
@@ -20,12 +24,15 @@ const output = JSON.stringify({ schemaVersion: "words-writer1-output/v1", pages:
 function prior(): CursorPostDispatchRecoveryPrior {
   const inputDigest = digestOf({ sealed: "sealed-360", baseline: "baseline" });
   const promptDigest = digestOf("the exact original v2 prompt bytes");
+  const dispatchManifest: any = { schemaVersion: "verified-writer1-dispatch-manifest/v1", actionRunId: "32825265478", artifactId: 9554789848, artifactZipDigest: POST_DISPATCH_ARTIFACT_ZIP_DIGEST, artifactZipSize: 2753, receiptPath: "runtime/writer1-dispatch-receipt.json", receiptDigest: POST_DISPATCH_RECEIPT_DIGEST, receiptSize: 1536, controlBindingDigest: digestOf("architect-control"), manifestDigest: "", manifestMac: "" };
+  dispatchManifest.manifestDigest = postDispatchReceiptManifestDigest(dispatchManifest);
+  dispatchManifest.manifestMac = postDispatchReceiptManifestMac(dispatchManifest, env.CURSOR_API_KEY);
   return {
     actionRunId: "32825265478", artifactId: 9554789848, runId, agentId, threadUrl,
     requestedModel: "cursor-grok-4.6-high", resolvedModel: OFFICIAL_CURSOR_MODEL,
     modelParams: [{ id: "fast", value: "false" }, { id: "effort", value: "high" }], effort: "high", fast: false,
     inputDigest, promptDigest, requestDigest: digestOf({ original: true }),
-    idempotencyKey: `${agentId}:writer1:correction:v2:${inputDigest}:${promptDigest}`, messagesSent: 1,
+    idempotencyKey: `${agentId}:writer1:correction:v2:${inputDigest}:${promptDigest}`, messagesSent: 1, dispatchManifest,
   };
 }
 
