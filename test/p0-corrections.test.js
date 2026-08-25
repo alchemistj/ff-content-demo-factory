@@ -11,7 +11,7 @@ const { createDispatchPacket, canonicalThreadUrl, validateJobReceipt, validateDi
 const { createPendingHandoff, validatePendingHandoff, validateTerminalCursorResult, claimResume, claimResumeAtomic } = require('../src/factory/handoff');
 const { main: dispatchCursor } = require('../src/dispatch-cursor-cloud-agent');
 const { collect: collectCursorTerminal } = require('../src/collect-cursor-terminal-result');
-const { markerFor, markerBody, parseMarker, findClaim } = require('../src/factory/github-ledger');
+const { markerFor, markerBody, parseMarker, findClaim, assertTransition, reconcileDispatchComment, requireGitHubToken } = require('../src/factory/github-ledger');
 const { runCurrentHeadGate1Canary } = require('../src/run-gate1-canary');
 const fs = require('node:fs');
 const os = require('node:os');
@@ -213,6 +213,37 @@ test('eighth correction durable ledger rejects foreign or malformed markers with
   assert.equal(findClaim(comments, { repository: 'alchemistj/ff-content-demo-factory', issueNumber: 8, kind: 'resume', handoffId: 'handoff-1', dispatchKey: 'dispatch-1', resultId: '55' }).commentId, '55');
   assert.equal(findClaim(comments, { repository: 'alchemistj/ff-content-demo-factory', issueNumber: 8, kind: 'resume', handoffId: 'handoff-1', dispatchKey: 'dispatch-1', resultId: '56' }), null);
   assert.throws(() => parseMarker('FACTORY_CURSOR_LEDGER_V1\n{"schemaVersion":"factory-cursor-github-ledger-v1"}'), /digest|stale/);
+});
+
+test('ninth correction uses recoverable ledger states and exact immutable context', () => {
+  const context = { kind: 'dispatch', repository: 'alchemistj/ff-content-demo-factory', issueNumber: 8, prNumber: 1, branch: 'architect/greenfield-gate1', checkedOutSha: 'head-1', handoffId: 'handoff-1', dispatchKey: 'dispatch-1', dispatchDigest: 'sha256:dispatch', runId: 'run-1', prospectId: 'prospect-1', sourceCheckpointDigest: 'sha256:source', sourceManifestDigest: 'sha256:manifest', inputManifestDigest: 'sha256:input', jobId: 'dispatch-1' };
+  const preparing = markerFor({ ...context, status: 'preparing' });
+  assert.doesNotThrow(() => assertTransition(null, preparing));
+  assert.throws(() => assertTransition(preparing, markerFor({ ...context, status: 'terminal' })), /Invalid ledger transition/);
+  assert.throws(() => assertTransition(preparing, markerFor({ ...context, status: 'posted' })), /authoritative @cursor/);
+  const posted = markerFor({ ...context, status: 'posted', commentId: '77', commentUrl: 'https://github.com/alchemistj/ff-content-demo-factory/issues/8#issuecomment-77' });
+  assert.doesNotThrow(() => assertTransition(preparing, posted));
+  const inMotion = markerFor({ ...context, status: 'in_motion', commentId: '77', commentUrl: posted.commentUrl });
+  const terminal = markerFor({ ...context, status: 'terminal', commentId: '88', commentUrl: 'https://github.com/alchemistj/ff-content-demo-factory/issues/8#issuecomment-88', resultId: '88' });
+  const resumed = markerFor({ ...context, status: 'resumed', commentId: '88', commentUrl: terminal.commentUrl, resultId: '88' });
+  assert.doesNotThrow(() => assertTransition(posted, inMotion));
+  assert.doesNotThrow(() => assertTransition(inMotion, terminal));
+  assert.doesNotThrow(() => assertTransition(terminal, resumed));
+  const comments = [
+    { id: 1, html_url: 'https://github.com/alchemistj/ff-content-demo-factory/issues/8#issuecomment-1', user: { login: 'github-actions[bot]' }, body: markerBody(preparing) },
+    { id: 2, html_url: 'https://github.com/alchemistj/ff-content-demo-factory/issues/8#issuecomment-2', user: { login: 'cursor[bot]' }, body: '@cursor\nPR: #1\nDispatch key: dispatch-1\nDispatch packet digest: sha256:dispatch' },
+  ];
+  assert.equal(findClaim(comments, { ...context, status: 'posted' }), null, 'preparing state must not be treated as posted');
+  assert.equal(reconcileDispatchComment(comments, context).id, 2, 'ambiguous POST is reconciled from authoritative marker');
+  assert.equal(findClaim([{ id: 3, html_url: 'https://github.com/alchemistj/ff-content-demo-factory/issues/8#issuecomment-3', user: { login: 'github-actions[bot]' }, body: markerBody(markerFor({ ...context, prNumber: 99, status: 'posted', commentId: '9', commentUrl: 'https://github.com/alchemistj/ff-content-demo-factory/issues/8#issuecomment-9' })) }], context), null, 'foreign PR marker cannot satisfy claim');
+  assert.throws(() => requireGitHubToken({}), /GH_TOKEN|GITHUB_TOKEN/);
+  assert.equal(requireGitHubToken({ GH_TOKEN: 'token' }), 'token');
+  for (const workflow of ['.github/workflows/cursor-cloud-agent-dispatch.yml', '.github/workflows/cursor-cloud-agent-resume.yml']) {
+    const text = fs.readFileSync(workflow, 'utf8');
+    assert.match(text, /test -n "\$GH_TOKEN"/);
+    if (workflow.endsWith('dispatch.yml')) assert.match(text, /status:'posted'/);
+    else { assert.match(text, /status: 'terminal'/); assert.match(text, /status:'resumed'/); }
+  }
 });
 
 test('fifth correction independently verifies authoritative PR metadata before paid canary work', () => {
