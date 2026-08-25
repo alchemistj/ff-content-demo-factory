@@ -209,7 +209,7 @@ test('Cursor resolves the real Grok 4.6 High catalog proof, runs read-only JSON 
 test('Cursor runs all allowed JSON research kinds and fails closed on malformed output/catalog proof', async () => {
   const sdk = {
     Cursor: { models: { list: async () => catalog() } },
-    Agent: { create: async () => ({ agentId: 'agent-test', send: async (prompt) => ({ runId: 'run-test', wait: async () => ({ output: prompt.includes('review-judgment') ? '{"kind":"review-judgment","reviewId":"r1","decision":"supporting","authoritative":true}' : '{"kind":"page-prescription","pages":[],"comparison":{}}' }) }), dispose: async () => {} }) },
+    Agent: { create: async () => ({ agentId: 'agent-test', send: async (prompt) => ({ runId: 'run-test', wait: async () => ({ output: prompt.includes('review-judgment') ? '{"kind":"review-judgment","reviewId":"r1","decision":"supporting","authoritative":true}' : '{"kind":"page-prescription","pages":[],"comparison":{},"sourceCheckpoint":{"sourceIdentity":{"provider":"test","runId":"r","artifactId":"a","sourceSha":"s","rootIdentity":"root"},"sourceArtifactDigest":"sha256:aaaaaaaa"}}' }) }), dispose: async () => {} }) },
   };
   const adapter = createCursorAdapter({ apiKey: 'secret', sdk });
   await adapter.runResearch({ kind: 'review-judgment', jobId: 'review-1', input: { reviewId: 'r1' } });
