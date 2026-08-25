@@ -85,8 +85,9 @@ function canonicalOwnedUrl(parsed) {
 
 function assertNoConflictingProvenance(item, sourceUrl, host, label) {
   const provenance = item?.provenance;
-  if (!provenance || typeof provenance !== 'object' || Array.isArray(provenance)) return;
-  for (const candidate of [provenance.sourceUrl, provenance.url, provenance.website]) {
+  const aliases = [item?.sourceUrl, item?.url, item?.src];
+  if (provenance && typeof provenance === 'object' && !Array.isArray(provenance)) aliases.push(provenance.sourceUrl, provenance.url, provenance.website);
+  for (const candidate of aliases) {
     if (candidate == null) continue;
     const parsed = normalizeOwnedUrl(String(candidate), host, `${label} provenance`);
     if (canonicalOwnedUrl(parsed) !== canonicalOwnedUrl(sourceUrl)) throw new Error(`${label} has conflicting provenance URL`);
@@ -137,7 +138,7 @@ function normalizeWebsiteAudit(result, candidate) {
   }
   if (result.provenance?.website != null) {
     const provenanceUrl = normalizeOwnedUrl(String(result.provenance.website), resultHost, 'Website audit provenance website');
-    if (provenanceUrl.hostname.replace(/^www\./, '').toLowerCase() !== resultHost) throw new Error('Website audit provenance conflicts with inspected website');
+    if (canonicalOwnedUrl(provenanceUrl) !== canonicalOwnedUrl(parsedWebsite)) throw new Error('Website audit provenance conflicts with inspected website');
   }
   const evidence = Array.isArray(result.evidence) ? result.evidence : [];
   const images = Array.isArray(result.images) ? result.images : [];
@@ -262,8 +263,10 @@ function createProductionAdapters({
   receiptStore,
   apify,
   cursor,
+  productionCloudAgent = false,
 } = {}) {
   required(root, 'root');
+  const productionRuntime = productionCloudAgent || (!cursor && !apify && !receiptStore);
   const receipts = receiptStore || createFileReceiptStore(root);
   const apifyAdapter = apify || createApifyAdapter({
     token: env.APIFY_API_TOKEN,
@@ -358,7 +361,7 @@ function createProductionAdapters({
       const serviceLedger = decision.serviceCoverageLedger || decision.serviceLedger || modelResult.serviceCoverageLedger;
       const sourceBinding = decision.sourceCheckpoint || decision.sourceBinding || modelResult.sourceCheckpoint || modelResult.sourceBinding;
       if (!sourceBinding) throw new Error('Page prescription requires a trusted source checkpoint binding');
-      const boundServiceLedger = serviceLedger && serviceLedger.sourceIdentity ? serviceLedger : { ...serviceLedger, sourceIdentity: sourceBinding.sourceIdentity };
+      const boundServiceLedger = { ...(serviceLedger && serviceLedger.sourceIdentity ? serviceLedger : { ...serviceLedger, sourceIdentity: sourceBinding.sourceIdentity }), strictEvidenceBinding: productionRuntime };
       const boundIdentity = { prospectId: finalist?.prospectId || finalist?.placeId, placeId: finalist?.placeId, runId: finalist?.runId || decision.runId };
       validateCompleteCanonicalLedger(boundServiceLedger, { services, pages, identity: { ...boundIdentity, sourceIdentity: sourceBinding.sourceIdentity } });
       const validated = validatePrescription({ finalist, classification, services, proposedPages: pages, architectReview: decision.architectReview || decision, policy: decision.pagePolicy || modelResult.pagePolicy, override: decision.expansionOverride || modelResult.expansionOverride, serviceLedger: boundServiceLedger, runContext: { ...boundIdentity }, sourceBinding });
@@ -406,7 +409,7 @@ function createProductionAdapters({
     },
   };
 
-  return { discovery, websiteAudit, enrichment, reviewJudge, prescriber, gate1, receiptStore: receipts, apify: apifyAdapter, cursor: cursorAdapter };
+  return { production: productionRuntime, testOnly: !productionRuntime, discovery, websiteAudit, enrichment, reviewJudge, prescriber, gate1, receiptStore: receipts, apify: apifyAdapter, cursor: cursorAdapter };
 }
 
 module.exports = {
