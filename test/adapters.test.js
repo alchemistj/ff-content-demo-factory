@@ -269,6 +269,38 @@ test('Cursor resumes an in-flight agent/run receipt without create or send', asy
   assert.equal((await receiptStore.get('cursor:resume-1')).status, 'completed');
 });
 
+test('Cursor does not resume a run that already ended in error; it starts a replacement research job', async () => {
+  const receiptStore = createMemoryReceiptStore();
+  await receiptStore.put('cursor:dead-run', {
+    provider: 'cursor-sdk', jobId: 'dead-run', kind: 'review-judgment', status: 'running',
+    agentId: 'agent-dead', runId: 'run-dead', lastError: 'Cursor research run ended error',
+    requestedAlias: FACTORY_MODEL_ALIAS, resolvedModel: ACTUAL_MODEL_ID,
+  });
+  let creates = 0;
+  let resumes = 0;
+  const sdk = {
+    Cursor: { models: { list: async () => catalog() } },
+    Agent: {
+      resume: async () => { resumes += 1; throw new Error('must not resume a terminal error run'); },
+      getRun: async () => { throw new Error('must not reattach a terminal error run'); },
+      create: async () => {
+        creates += 1;
+        return {
+          agentId: 'agent-replacement',
+          send: async () => ({ id: 'run-replacement', wait: async () => ({ status: 'finished', text: '{"kind":"review-judgment","reviewId":"r1","decision":"supporting","authoritative":true}' }) }),
+          dispose: async () => {},
+        };
+      },
+    },
+  };
+  const adapter = createCursorAdapter({ apiKey: 'secret', sdk, receiptStore });
+  const result = await adapter.runResearch({ kind: 'review-judgment', jobId: 'dead-run', input: { reviewId: 'r1' } });
+  assert.equal(result.kind, 'review-judgment');
+  assert.equal(resumes, 0);
+  assert.equal(creates, 1);
+  assert.equal((await receiptStore.get('cursor:dead-run')).status, 'completed');
+});
+
 test('Cursor reattaches an agent with no run id and sends exactly once', async () => {
   const receiptStore = createMemoryReceiptStore();
   await receiptStore.put('cursor:send-once', { provider: 'cursor-sdk', jobId: 'send-once', kind: 'website-audit', status: 'running', agentId: 'agent-send', requestedAlias: FACTORY_MODEL_ALIAS, resolvedModel: ACTUAL_MODEL_ID });

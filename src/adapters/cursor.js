@@ -18,6 +18,10 @@ function redact(value, secret) {
   return value;
 }
 
+function isTerminalCursorRunError(error) {
+  return /Cursor research run ended (error|failed|aborted|timed[- ]?out)/i.test(String(error?.message || error || ''));
+}
+
 function parseJsonResult(output) {
   const text = String(output ?? '').trim();
   const fenced = text.match(/^```(?:json)?\s*([\s\S]*?)\s*```$/i);
@@ -122,7 +126,8 @@ function createCursorAdapter({ apiKey, sdk, modelAlias = process.env.CURSOR_MODE
     const prior = await receiptStore.get?.(key);
     if (prior?.status === 'completed') return prior.result;
     const prompt = researchPrompt(kind, input);
-    if (prior?.status === 'running' && prior.agentId) {
+    const canResume = prior?.status === 'running' && prior.agentId && !isTerminalCursorRunError(prior.lastError);
+    if (canResume) {
       let agent;
       let receipt = { ...prior };
       try {
@@ -142,7 +147,10 @@ function createCursorAdapter({ apiKey, sdk, modelAlias = process.env.CURSOR_MODE
         await receiptStore.put?.(key, completed);
         return safeResult;
       } catch (error) {
-        await receiptStore.put?.(key, { ...receipt, status: 'running', resumedAt: clock(), lastError: redact(normalizeError(error), apiKey) });
+        const message = redact(normalizeError(error), apiKey);
+        await receiptStore.put?.(key, isTerminalCursorRunError(error)
+          ? { ...receipt, status: 'failed', failedAt: clock(), error: message }
+          : { ...receipt, status: 'running', resumedAt: clock(), lastError: message });
         throw error;
       } finally {
         await disposeAgent(agent);
@@ -179,9 +187,10 @@ function createCursorAdapter({ apiKey, sdk, modelAlias = process.env.CURSOR_MODE
       // Keep a receipt with a run id resumable after a process/network
       // interruption. This is what prevents a retry from sending a second
       // paid prompt. Runs that failed before `send` may be retried normally.
-      const interrupted = receipt.runId ? {
-        ...receipt, status: 'running', interruptedAt: clock(), lastError: redact(normalizeError(error), apiKey),
-      } : { ...receipt, status: 'failed', failedAt: clock(), error: redact(normalizeError(error), apiKey) };
+      const message = redact(normalizeError(error), apiKey);
+      const interrupted = receipt.runId && !isTerminalCursorRunError(error) ? {
+        ...receipt, status: 'running', interruptedAt: clock(), lastError: message,
+      } : { ...receipt, status: 'failed', failedAt: clock(), error: message };
       await receiptStore.put?.(key, interrupted);
       throw error;
     } finally {
