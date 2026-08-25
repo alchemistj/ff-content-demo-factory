@@ -79,7 +79,12 @@ jobs:
           FACTORY_SEALED_EVIDENCE: ''
           FACTORY_SEALED_REPLAY_EXECUTED: ''
           RUNTIME_PACKET_PATH: ''
-        run: node --test
+        run: |
+          set +e
+          node --test > canary/outputs/full-suite-test-output.txt 2>&1
+          code=$?
+          tail -200 canary/outputs/full-suite-test-output.txt
+          exit "$code"
       - name: Execute sealed synthetic replay (never Gate 1)
         env:
           FACTORY_CANARY_PHASE: integrated
@@ -103,5 +108,6 @@ jobs:
           name: exact-head-sealed-360-synthetic-proof-${{ github.run_id }}
           path: |
             canary/outputs/current-head-synthetic-replay-proof.json
+            canary/outputs/full-suite-test-output.txt
           if-no-files-found: error
           retention-days: 30

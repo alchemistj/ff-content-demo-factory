@@ -44,12 +44,17 @@ jobs:
       - name: Install locked dependencies
         run: npm ci --ignore-scripts --no-audit --no-fund
       - name: Run reproducible full suite
-        run: node --test
+        run: |
+          set +e
+          node --test > canary/outputs/full-suite-test-output.txt 2>&1
+          code=$?
+          tail -200 canary/outputs/full-suite-test-output.txt
+          exit "$code"
       - name: Upload exact-head test proof
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         with:
           name: lane-a-exact-head-proof-${{ github.run_id }}
-          path: canary/outputs/exact-head-proof.json
+          path: canary/outputs
           if-no-files-found: error
           retention-days: 30
