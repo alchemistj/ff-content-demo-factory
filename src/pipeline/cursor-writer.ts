@@ -579,6 +579,72 @@ async function readWriter1Artifact(input: { client: CursorArtifactClient; agentI
   return { output, artifact: { path: "artifacts/writer1-output.json", size: downloaded.bytes.length, sha256, contentSize: downloaded.bytes.length, byteDigest: sha256, ...(descriptor.updatedAt ? { updatedAt: descriptor.updatedAt } : {}), downloadRequest: expectedRequest, requestShapeDigest: downloaded.requestShapeDigest, downloadRequestDigest: downloaded.downloadRequestDigest, presignedUrlEvidence: downloaded.presignedUrlEvidence, presignedUrlEvidenceDigest: downloaded.presignedUrlEvidenceDigest } };
 }
 
+export interface CursorArtifactValidationReportInspection {
+  raw: string;
+  artifact: CursorArtifactBinding;
+  parsed?: unknown;
+  parseError?: string;
+  copyProjectionDigest?: string;
+  copyProjectionMatches: boolean;
+  stale: boolean;
+}
+
+export type CursorArtifactValidationReportInput = {
+  prior: CursorArtifactRecoveryPrior;
+  previousRecoveryV3: CursorArtifactRecoveryV3FailureBinding;
+  promptDigest: string;
+};
+
+type CursorArtifactValidationReportInternalInput = CursorArtifactValidationReportInput & {
+  env?: Record<string, string | undefined>;
+  artifactClient?: CursorArtifactClient;
+  sleep?: (milliseconds: number) => Promise<void>;
+  artifactBackoffMs?: readonly number[];
+};
+
+async function inspectCursorWriterArtifactV3Internal(input: CursorArtifactValidationReportInternalInput): Promise<CursorArtifactValidationReportInspection> {
+  const env = input.env || process.env;
+  if (!env.CURSOR_API_KEY) throw new CursorWriterExecutionError("CURSOR_API_KEY_REQUIRED", "Validation report requires CURSOR_API_KEY");
+  if (input.promptDigest !== input.previousRecoveryV3.promptDigest) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_REPORT_PROMPT_MISMATCH", "Validation report prompt digest is not bound to the exact v3-finalize history");
+  const artifactClient = input.artifactClient || createCursorArtifactClient();
+  const recovered = await readWriter1ArtifactWithBackoff({
+    client: artifactClient,
+    agentId: input.prior.agentId,
+    apiKey: env.CURSOR_API_KEY,
+    validateOutput: (raw) => raw,
+    ...(input.sleep ? { sleep: input.sleep } : {}),
+    ...(input.artifactBackoffMs ? { backoffMs: input.artifactBackoffMs } : {}),
+  });
+  const raw = typeof recovered.output === "string" ? recovered.output : String(recovered.output);
+  let parsed: unknown;
+  let parseError: string | undefined;
+  try { parsed = JSON.parse(raw); } catch { parseError = "OUTPUT_INVALID_JSON"; }
+  const copyProjectionDigest = parsed === undefined ? undefined : writer1CopyProjectionDigest(parsed);
+  const before = input.previousRecoveryV3.beforeArtifact;
+  return {
+    raw,
+    artifact: recovered.artifact,
+    ...(parsed === undefined ? {} : { parsed }),
+    ...(parseError ? { parseError } : {}),
+    ...(copyProjectionDigest ? { copyProjectionDigest } : {}),
+    copyProjectionMatches: copyProjectionDigest === input.previousRecoveryV3.copyProjectionDigest,
+    stale: recovered.artifact.sha256 === before.sha256 && recovered.artifact.updatedAt === before.updatedAt,
+  };
+}
+
+/** Production validation reports are read-only: process.env and the fixed Cursor artifact client are sealed here. */
+export async function inspectCursorWriterArtifactV3(input: CursorArtifactValidationReportInput): Promise<CursorArtifactValidationReportInspection> {
+  const candidate = input as unknown as Record<string, unknown>;
+  if ("env" in candidate || "artifactClient" in candidate || "transport" in candidate) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_CLIENT_SUBSTITUTION_FORBIDDEN", "Production validation reports do not accept caller-selected environment, transport, or artifact client");
+  return inspectCursorWriterArtifactV3Internal({ ...input, env: process.env, artifactClient: createCursorArtifactClient() });
+}
+
+/** Test-only/internal seam. No production control input can select this injected client. */
+export async function inspectCursorWriterArtifactV3ForTest(input: CursorArtifactValidationReportInternalInput): Promise<CursorArtifactValidationReportInspection> {
+  if (process.env.NODE_ENV !== "test" && !process.execArgv.some((arg) => arg.includes("--test"))) throw new CursorWriterExecutionError("CURSOR_TEST_SEAM_FORBIDDEN", "Injected validation-report clients are available only from the Node test boundary");
+  return inspectCursorWriterArtifactV3Internal(input);
+}
+
 const ARTIFACT_RECOVERY_EVENTUAL_CONSISTENCY_BACKOFF_MS = [1_000, 5_000, 15_000, 30_000, 60_000, 120_000] as const;
 async function readWriter1ArtifactWithBackoff(input: { client: CursorArtifactClient; agentId: string; apiKey: string; validateOutput: (raw: string) => unknown; sleep?: (milliseconds: number) => Promise<void>; backoffMs?: readonly number[] }): Promise<{ output: unknown; artifact: CursorArtifactBinding }> {
   const sleep = input.sleep || ((milliseconds: number) => new Promise<void>((resolve) => setTimeout(resolve, milliseconds)));

@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { parseAndValidateFreshWriter1Output, parseAndValidateWriter1Output, validateSealed, writer1Projection, Writer1OutputRecoveryError } from "../../scripts/360-words-canary.js";
+import { buildWriter1ValidationReport, collectWriter1ValidationDiagnostics, parseAndValidateFreshWriter1Output, parseAndValidateWriter1Output, validateSealed, writer1Projection, Writer1OutputRecoveryError } from "../../scripts/360-words-canary.js";
 
 const projection = {
   services: [
@@ -68,6 +68,42 @@ test("Writer1 retrieval sentinel is explicit and never accepted as completed JSO
 test("Writer1 output rejects a service page with missing type", () => {
   const missingType = JSON.stringify({ ...JSON.parse(valid), pages: JSON.parse(valid).pages.map((page: Record<string, unknown>, index: number) => index === 0 ? Object.fromEntries(Object.entries(page).filter(([key]) => key !== "type")) : page) });
   assert.throws(() => parseAndValidateWriter1Output(missingType, projection), /page\.type.*exactly service/u);
+});
+
+test("collect-all Writer1 diagnostics shares strict parity, reports every seeded violation, and cannot authorize completion", () => {
+  const strictPasses = (() => { try { parseAndValidateWriter1Output(valid, projection); return true; } catch { return false; } })();
+  assert.equal(collectWriter1ValidationDiagnostics(valid, projection).length === 0, strictPasses);
+  const seeded = JSON.parse(valid) as Record<string, any>;
+  delete seeded.pages[0].body;
+  seeded.pages[0].claims = [
+    { provenance: { type: "claim", ref: "review-repair", placement: "claim one", section: "repair-section" } },
+    { provenance: { type: "evidence", ref: "review-repair", placement: "claim two", section: "repair-section" } },
+  ];
+  delete seeded.pages[1].reviewPlacements[0].provenance;
+  seeded.pages[1].type = "landing";
+  const errors = collectWriter1ValidationDiagnostics(JSON.stringify(seeded), projection);
+  assert.ok(errors.length >= 5);
+  assert.ok(errors.filter((error) => error.code === "CLAIM_TEXT_MISSING").length >= 2);
+  assert.ok(errors.some((error) => error.code === "COPY_FIELD_MISSING"));
+  assert.ok(errors.some((error) => error.code === "PROVENANCE_MISSING"));
+  assert.ok(errors.some((error) => error.code === "PAGE_TYPE_INVALID"));
+  const report = buildWriter1ValidationReport({
+    artifactPath: "artifacts/writer1-output.json",
+    artifactByteDigest: "sha256:" + "a".repeat(64),
+    artifactSize: 123,
+    artifactUpdatedAt: "2026-08-24T00:00:00.000Z",
+    copyProjectionDigest: "sha256:" + "b".repeat(64),
+    frozenCopyProjectionDigest: "sha256:" + "c".repeat(64),
+    projectionDigest: "sha256:" + "d".repeat(64),
+    errors,
+  });
+  const serialized = JSON.stringify(report);
+  assert.doesNotMatch(serialized, /Repair body|Installation body|The repair was excellent|The installation was excellent|Chris|Marcie/u);
+  assert.equal(report.status, "diagnostic-failure");
+  assert.equal(report.completionAuthorized, false);
+  assert.equal(report.writer2Blocked, true);
+  assert.equal("output" in report, false);
+  assert.equal("receipt" in report, false);
 });
 
 test("fresh Writer1 rejects summaries, absent copy, route leakage, and missing provenance before completion", () => {

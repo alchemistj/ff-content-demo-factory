@@ -2,7 +2,7 @@ import { createHash } from "node:crypto";
 import { existsSync, readFileSync } from "node:fs";
 import * as fs from "node:fs/promises";
 import * as path from "node:path";
-import { createCursorWriterExecutor, createJsonCursorReceiptStore, finalizeCursorWriterArtifactV3, recoverCursorWriterArtifactV2, recoverCursorWriterArtifactV3, validateCursorArtifactRecoveryV2Receipt, validateCursorArtifactRecoveryV3FinalizeReceipt, validateCursorArtifactRecoveryV3Receipt, validateCursorWriterReceipt, type CursorArtifactRecoveryFailureBinding, type CursorArtifactRecoveryPrior, type CursorArtifactRecoveryV2FailureBinding, type CursorArtifactRecoveryV3FailureBinding, type CursorDispatchNotice, type CursorFollowUpBindings, type CursorWriterReceipt } from "../src/pipeline/cursor-writer.js";
+import { createCursorWriterExecutor, createJsonCursorReceiptStore, finalizeCursorWriterArtifactV3, inspectCursorWriterArtifactV3, recoverCursorWriterArtifactV2, recoverCursorWriterArtifactV3, validateCursorArtifactRecoveryV2Receipt, validateCursorArtifactRecoveryV3FinalizeReceipt, validateCursorArtifactRecoveryV3Receipt, validateCursorWriterReceipt, type CursorArtifactRecoveryFailureBinding, type CursorArtifactRecoveryPrior, type CursorArtifactRecoveryV2FailureBinding, type CursorArtifactRecoveryV3FailureBinding, type CursorDispatchNotice, type CursorFollowUpBindings, type CursorWriterReceipt } from "../src/pipeline/cursor-writer.js";
 import { digestOf } from "../src/contracts/digests.js";
 import { buildWriter1ArtifactRecoveryPrompt, digestWriter1ArtifactRecoveryPrompt } from "./360-words-recovery-prompt.mjs";
 
@@ -154,27 +154,59 @@ export function validatePriorArtifactRecoveryDispatch(root: string, expected: { 
   return { actionRunId: expected.actionRunId, artifactId: expected.artifactId, runId: expected.jobId, agentId: expected.agentId, threadUrl: expected.threadUrl, inputDigest, promptDigest, requestDigest, requestedModel: "cursor-grok-4.6-high", resolvedModel: "grok-4.6", modelParams: dispatch.modelParams, registryDigest, effort: "high", effortAttestationSource: effortSource, fast: false, sourceBranch: expected.sourceBranch, sourceSha: expected.sourceSha, sealedHandoffDigest: String(source.sealedHandoffDigest || "") };
 }
 
+export interface Writer1ValidationDiagnostic {
+  code: string;
+  path: string;
+  route?: string | undefined;
+  objectKind?: string | undefined;
+  ref?: string | undefined;
+  reviewId?: string | undefined;
+  section?: string | undefined;
+  placement?: string | undefined;
+  presentKeys?: string[] | undefined;
+  presentTypes?: Record<string, string> | undefined;
+  expectedRule: string;
+}
+
+const REPORT_SAFE_KEYS = new Set(["schemaVersion", "pages", "url", "type", "prescriptionId", "primaryKeyword", "title", "seoTitle", "metaDescription", "h1", "body", "sections", "id", "heading", "reviewPlacements", "reviewEvidence", "quotePlacements", "claims", "reviewId", "sourceReviewId", "evidenceId", "refId", "quote", "excerpt", "exactText", "attribution", "reviewer", "author", "provenance", "placement", "section", "ref", "stableRef", "claim", "statement", "text"]);
+function reportType(value: unknown): string { if (value === null) return "null"; if (Array.isArray(value)) return "array"; return typeof value; }
+function reportKeys(value: Dict): string[] { return Object.keys(value).map((key) => REPORT_SAFE_KEYS.has(key) ? key : "<redacted-key>"); }
+function reportTypes(value: Dict): Record<string, string> { return Object.fromEntries(Object.entries(value).map(([key, child]) => [REPORT_SAFE_KEYS.has(key) ? key : "<redacted-key>", reportType(child)])); }
+function reportRoute(value: unknown): string | undefined { return typeof value === "string" && WRITER1_ROUTES.includes(value as typeof WRITER1_ROUTES[number]) ? value : typeof value === "string" && value.startsWith("/") ? "<redacted-route>" : undefined; }
+function reportRef(value: unknown, sealedRefs: Set<string>): string | undefined { return typeof value === "string" && sealedRefs.has(value) ? value : typeof value === "string" ? "<redacted-ref>" : undefined; }
+function reportValue(value: unknown): string | undefined { return typeof value === "string" && value.length > 0 ? `<redacted-string:${Math.min(value.length, 128)}>` : undefined; }
 function routeBearingKey(key: string): boolean { return /(?:url|path|route|href|destination|nav|navigation|cta|callstoaction|header|footer|links?)/iu.test(key); }
-function scanForbiddenPublicReferences(value: unknown, keyPath = ""): void {
-  if (Array.isArray(value)) { value.forEach((child, index) => scanForbiddenPublicReferences(child, `${keyPath}[${index}]`)); return; }
+
+function collectForbiddenReferenceDiagnostics(value: unknown, errors: Writer1ValidationDiagnostic[], path = ""): void {
+  if (Array.isArray(value)) { value.forEach((child, index) => { collectForbiddenReferenceDiagnostics(child, errors, `${path}/${index}`); }); return; }
   if (!isRecord(value)) return;
   for (const [key, child] of Object.entries(value)) {
-    const childPath = `${keyPath}.${key}`;
+    const childPath = `${path}/${REPORT_SAFE_KEYS.has(key) ? key : "<redacted-key>"}`;
     if (routeBearingKey(key) && typeof child === "string") {
       const lower = child.toLowerCase();
-      if (/(?:spring|opener)/u.test(lower)) throw new Error(`Writer1 output exposes a prohibited spring/opener standalone route, navigation item, or CTA at ${childPath}`);
-      if (/(?:^|\/)(?:strategy(?:-overview)?|home)(?:\/|$)/u.test(lower)) throw new Error(`Writer1 output exposes a Home/Strategy route at ${childPath}`);
+      if (/(?:spring|opener)/u.test(lower)) errors.push({ code: "PUBLIC_PROHIBITED_ROUTE_REFERENCE", path: childPath, route: reportRoute(child), objectKind: "route-bearing-field", expectedRule: "no spring or opener standalone route, navigation item, or CTA" });
+      if (/(?:^|\/)(?:strategy(?:-overview)?|home)(?:\/|$)/u.test(lower)) errors.push({ code: "PUBLIC_FORBIDDEN_ROUTE_REFERENCE", path: childPath, route: reportRoute(child), objectKind: "route-bearing-field", expectedRule: "no Home or Strategy route reference in Writer1 output" });
     }
-    scanForbiddenPublicReferences(child, childPath);
+    collectForbiddenReferenceDiagnostics(child, errors, childPath);
   }
 }
 
-export function parseAndValidateWriter1Output(raw: unknown, projection: Dict): Dict {
-  if (typeof raw !== "string" || !raw.trim()) invalidWriter1Output("Writer1 follow-up output must be a non-empty JSON string");
-  if (raw.trim() === "OUTPUT_NOT_RECOVERABLE") throw new Writer1OutputRecoveryError("OUTPUT_NOT_RECOVERABLE", "Writer1 could not recover the existing words-writer1-output/v1 artifact");
-  let parsed: unknown; try { parsed = JSON.parse(raw); } catch { invalidWriter1Output("Writer1 follow-up output is not valid JSON"); }
-  if (!isRecord(parsed) || parsed.schemaVersion !== "words-writer1-output/v1" || !Array.isArray(parsed.pages)) invalidWriter1Output("Writer1 output must be words-writer1-output/v1 with a pages array");
-  if (parsed.pages.length !== 2) invalidWriter1Output("Writer1 output must contain exactly two service pages");
+function collectWriter1Validation(raw: unknown, projection: Dict): { parsed?: Dict; errors: Writer1ValidationDiagnostic[] } {
+  const errors: Writer1ValidationDiagnostic[] = [];
+  const add = (code: string, path: string, expectedRule: string, extra: Partial<Writer1ValidationDiagnostic> = {}): void => { errors.push({ code, path, expectedRule, ...extra }); };
+  if (typeof raw !== "string" || !raw.trim()) { add("OUTPUT_NOT_STRING", "/", "Writer1 follow-up output must be a non-empty JSON string", { objectKind: "output" }); return { errors }; }
+  if (raw.trim() === "OUTPUT_NOT_RECOVERABLE") { add("OUTPUT_NOT_RECOVERABLE", "/", "complete Writer1 artifact must be recoverable", { objectKind: "output" }); return { errors }; }
+  let parsed: unknown;
+  try { parsed = JSON.parse(raw); } catch { add("OUTPUT_INVALID_JSON", "/", "output must be valid JSON", { objectKind: "output" }); return { errors }; }
+  if (!isRecord(parsed)) { add("OUTPUT_ROOT_INVALID", "/", "output root must be an object", { objectKind: "output", presentTypes: { root: reportType(parsed) } }); return { errors }; }
+  if (parsed.schemaVersion !== "words-writer1-output/v1") add("SCHEMA_VERSION_INVALID", "/schemaVersion", "schemaVersion must equal words-writer1-output/v1", { objectKind: "output", presentKeys: reportKeys(parsed), presentTypes: reportTypes(parsed) });
+  if (!Array.isArray(parsed.pages)) {
+    add("PAGES_ARRAY_MISSING", "/pages", "pages must be an array", { objectKind: "output", presentKeys: reportKeys(parsed), presentTypes: reportTypes(parsed) });
+    for (const key of ["home", "homepage", "contact", "strategy", "strategyOverview", "strategyOverviewPage"]) if (key in parsed) add("FORBIDDEN_TOP_LEVEL_FIELD", `/${key}`, `Writer1 output must not contain ${key}`, { objectKind: "output" });
+    collectForbiddenReferenceDiagnostics(parsed, errors);
+    return { parsed, errors };
+  }
+  if (parsed.pages.length !== 2) add("PAGE_COUNT_INVALID", "/pages", "exactly two service pages are required", { objectKind: "output" });
   const evidenceByRoute = new Map<string, Dict[]>((projection.services || []).map((service: Dict) => [service.page.url, service.reviewEvidence || []]));
   const serviceByRoute = new Map<string, Dict>((projection.services || []).map((service: Dict) => [service.page.url, service]));
   // Folded review evidence is a separate authorization path. It is not enough
@@ -196,45 +228,75 @@ export function parseAndValidateWriter1Output(raw: unknown, projection: Dict): D
   }
   const sealedRefs = new Set<string>((projection.sealedRefs || []).filter((ref: unknown): ref is string => stringValue(ref)));
   const seen = new Set<string>();
-  for (const page of parsed.pages) {
-    if (!isRecord(page) || !stringValue(page.url) || !WRITER1_ROUTES.includes(page.url as typeof WRITER1_ROUTES[number]) || seen.has(page.url)) invalidWriter1Output("Writer1 output contains a missing, duplicate, or unapproved page route");
-    seen.add(page.url);
-    if (page.type !== "service") invalidWriter1Output("Writer1 output page.type must be exactly service");
-    for (const field of ["prescriptionId", "primaryKeyword", "title", "seoTitle", "metaDescription", "h1", "body"] as const) if (!stringValue(page[field])) invalidWriter1Output(`Writer1 output is missing full copy field ${field}`);
+  for (const [pageIndex, pageValue] of parsed.pages.entries()) {
+    const pagePath = `/pages/${pageIndex}`;
+    if (!isRecord(pageValue)) { add("PAGE_OBJECT_INVALID", pagePath, "each page must be an object", { objectKind: "page", presentTypes: { page: reportType(pageValue) } }); continue; }
+    const page = pageValue;
+    const route = reportRoute(page.url);
+    if (!stringValue(page.url) || !WRITER1_ROUTES.includes(page.url as typeof WRITER1_ROUTES[number]) || seen.has(page.url)) add(seen.has(page.url) ? "PAGE_ROUTE_DUPLICATE" : "PAGE_ROUTE_INVALID", `${pagePath}/url`, "page routes must be exactly the two approved service routes with no duplicates", { route, objectKind: "page", presentKeys: reportKeys(page), presentTypes: reportTypes(page) });
+    if (stringValue(page.url)) seen.add(page.url);
+    if (page.type !== "service") add("PAGE_TYPE_INVALID", `${pagePath}/type`, "page.type must be exactly service", { route, objectKind: "page", presentTypes: { type: reportType(page.type) } });
+    for (const field of ["prescriptionId", "primaryKeyword", "title", "seoTitle", "metaDescription", "h1", "body"] as const) if (!stringValue(page[field])) add("COPY_FIELD_MISSING", `${pagePath}/${field}`, `full copy field ${field} must be present and non-empty`, { route, objectKind: "page", presentKeys: reportKeys(page), presentTypes: reportTypes(page) });
     const service = serviceByRoute.get(page.url);
-    if (!service || page.prescriptionId !== service.prescriptionId || !sealedRefs.has(page.prescriptionId)) invalidWriter1Output(`Writer1 page prescriptionId is not bound to the sealed prescription for ${page.url}`);
-    if (!Array.isArray(page.sections) || page.sections.length === 0 || page.sections.some((section: unknown) => !isRecord(section) || !stringValue(section.heading) || !stringValue(section.body))) invalidWriter1Output("Writer1 output is missing complete section copy");
-    const sections = new Set(page.sections.map((section: Dict) => String(section.id ?? section.heading)));
-    const placementGroups = [page.reviewPlacements, page.reviewEvidence, page.quotePlacements, page.claims].filter((value): value is unknown[] => Array.isArray(value));
-    const placements = placementGroups.flat();
-    if (placements.length === 0) invalidWriter1Output(`Writer1 output is missing review/quote/claim bindings for ${page.url}`);
+    if (!service || page.prescriptionId !== service.prescriptionId || !sealedRefs.has(page.prescriptionId)) add("PRESCRIPTION_BINDING_INVALID", `${pagePath}/prescriptionId`, "prescriptionId must resolve to the sealed page prescription", { route, objectKind: "page", ref: reportRef(page.prescriptionId, sealedRefs) });
+    if (!Array.isArray(page.sections) || page.sections.length === 0) add("SECTIONS_INVALID", `${pagePath}/sections`, "sections must be a non-empty array", { route, objectKind: "page", presentTypes: { sections: reportType(page.sections) } });
+    const sections = new Set<string>();
+    if (Array.isArray(page.sections)) for (const [sectionIndex, sectionValue] of page.sections.entries()) {
+      const sectionPath = `${pagePath}/sections/${sectionIndex}`;
+      if (!isRecord(sectionValue)) { add("SECTION_OBJECT_INVALID", sectionPath, "each section must be an object with heading and body", { route, objectKind: "section", presentTypes: { section: reportType(sectionValue) } }); continue; }
+      const section = sectionValue;
+      if (!stringValue(section.heading)) add("SECTION_HEADING_MISSING", `${sectionPath}/heading`, "section heading must be present and non-empty", { route, objectKind: "section", section: reportValue(section.heading) });
+      if (!stringValue(section.body)) add("SECTION_BODY_MISSING", `${sectionPath}/body`, "section body must be present and non-empty", { route, objectKind: "section" });
+      if (stringValue(section.id) || stringValue(section.heading)) sections.add(String(section.id ?? section.heading));
+    }
+    const placementKinds = ["reviewPlacements", "reviewEvidence", "quotePlacements", "claims"] as const;
+    for (const kind of placementKinds) if (kind in page && !Array.isArray(page[kind])) add("PLACEMENT_GROUP_INVALID", `${pagePath}/${kind}`, `${kind} must be an array when present`, { route, objectKind: kind, presentTypes: { [kind]: reportType(page[kind]) } });
+    const placementGroups = placementKinds.flatMap((kind) => Array.isArray(page[kind]) ? page[kind].map((value: unknown, index: number) => ({ kind, value, index })) : []);
+    if (placementGroups.length === 0) add("PLACEMENTS_MISSING", pagePath, "at least one review, quote, evidence, or claim binding is required", { route, objectKind: "page" });
     const allowed = evidenceByRoute.get(page.url) || [];
-    for (const placement of placements) {
-      if (!isRecord(placement)) invalidWriter1Output("Writer1 placement binding is malformed");
-      if (!isRecord(placement.provenance)) invalidWriter1Output("Writer1 placement is missing typed provenance");
+    for (const { kind, value, index } of placementGroups) {
+      const placementPath = `${pagePath}/${kind}/${index}`;
+      if (!isRecord(value)) { add("PLACEMENT_OBJECT_INVALID", placementPath, "placement binding must be an object", { route, objectKind: kind, presentTypes: { placement: reportType(value) } }); continue; }
+      const placement = value;
+      if (!isRecord(placement.provenance)) { add("PROVENANCE_MISSING", `${placementPath}/provenance`, "placement must have typed provenance", { route, objectKind: kind, presentKeys: reportKeys(placement), presentTypes: reportTypes(placement) }); continue; }
       const provenance = placement.provenance;
-      if (!["review", "evidence", "claim"].includes(provenance.type)) invalidWriter1Output("Writer1 placement provenance type is invalid");
+      if (!["review", "evidence", "claim"].includes(provenance.type)) add("PROVENANCE_TYPE_INVALID", `${placementPath}/provenance/type`, "provenance.type must be review, evidence, or claim", { route, objectKind: kind, placement: reportValue(provenance.placement), section: reportValue(provenance.section), presentTypes: { type: reportType(provenance.type) } });
       const stableRef = provenance.ref ?? provenance.stableRef;
-      if (!stringValue(stableRef) || !sealedRefs.has(stableRef)) invalidWriter1Output("Writer1 placement provenance does not resolve to sealed Writer1 input");
-      if (!stringValue(provenance.placement) || !stringValue(provenance.section) || !sections.has(provenance.section)) invalidWriter1Output("Writer1 placement provenance requires a valid placement and section");
+      if (!stringValue(stableRef) || !sealedRefs.has(stableRef)) add("PROVENANCE_REF_UNRESOLVED", `${placementPath}/provenance/ref`, "provenance.ref must resolve to sealed Writer1 input", { route, objectKind: kind, ref: reportRef(stableRef, sealedRefs), placement: reportValue(provenance.placement), section: reportValue(provenance.section) });
+      if (!stringValue(provenance.placement) || !stringValue(provenance.section) || !sections.has(provenance.section)) add("PROVENANCE_PLACEMENT_INVALID", `${placementPath}/provenance`, "provenance placement must be non-empty and section must resolve to a page section", { route, objectKind: kind, ref: reportRef(stableRef, sealedRefs), placement: reportValue(provenance.placement), section: reportValue(provenance.section) });
       const reviewId = placement.reviewId ?? placement.sourceReviewId ?? placement.evidenceId ?? placement.refId;
       const quote = placement.quote ?? placement.excerpt ?? placement.exactText;
       if (provenance.type === "review") {
-        if (!stringValue(reviewId) || !stringValue(quote)) invalidWriter1Output("Writer1 review binding requires review ID and quote");
-        if (String(stableRef) !== String(reviewId)) invalidWriter1Output("Writer1 review provenance ref must equal its stable review reference");
+        if (!stringValue(reviewId) || !stringValue(quote)) add("REVIEW_BINDING_FIELDS_MISSING", placementPath, "review binding requires review ID and quote", { route, objectKind: kind, ref: reportRef(stableRef, sealedRefs), reviewId: reportRef(reviewId, sealedRefs) });
+        if (stringValue(reviewId) && String(stableRef) !== String(reviewId)) add("REVIEW_REF_MISMATCH", `${placementPath}/provenance/ref`, "review provenance.ref must equal reviewId", { route, objectKind: kind, ref: reportRef(stableRef, sealedRefs), reviewId: reportRef(reviewId, sealedRefs) });
         const source = allowed.find((entry) => String(entry.review?.id ?? entry.review?.reviewId) === String(reviewId));
-        if (reviewId === SPRING_REPLACEMENT_REVIEW_ID && page.url !== "/garage-door-repair") invalidWriter1Output(`Spring-replacement review is authorized only on /garage-door-repair: ${reviewId}`);
-        if (!source || source.judgment?.authoritative !== true || source.judgment?.decision !== "anchor" || source.judgment?.grade !== "anchor" || source.judgment?.directCompletedService !== true) invalidWriter1Output(`Writer1 review binding references an unapproved, non-authoritative, or non-direct-completed review: ${reviewId}`);
-        const sourceText = String(source.review?.text ?? source.review?.exactText ?? source.review?.reviewText ?? "");
-        if (!sourceText || !normalized(sourceText).includes(normalized(String(quote)))) invalidWriter1Output(`Writer1 quote is not bound to the source review: ${reviewId}`);
-        if (!stringValue(placement.attribution ?? placement.reviewer ?? placement.author)) invalidWriter1Output(`Writer1 review binding is missing attribution: ${reviewId}`);
-      } else if (!stringValue(placement.claim ?? placement.statement ?? placement.text ?? placement.body)) invalidWriter1Output("Writer1 evidence/claim placement is missing its claim text");
+        if (reviewId === SPRING_REPLACEMENT_REVIEW_ID && page.url !== "/garage-door-repair") add("SPRING_REVIEW_WRONG_ROUTE", placementPath, "Spring-replacement review may only be quoted on /garage-door-repair", { route, objectKind: kind, reviewId: SPRING_REPLACEMENT_REVIEW_ID });
+        if (!source) add("REVIEW_REF_UNAUTHORIZED", placementPath, "reviewId is unapproved and must resolve to an allowed direct or folded review for this page", { route, objectKind: kind, reviewId: reportRef(reviewId, sealedRefs) });
+        else {
+          for (const [field, expected] of [["authoritative", true], ["decision", "anchor"], ["grade", "anchor"], ["directCompletedService", true]] as const) if (source.judgment?.[field] !== expected) add("REVIEW_AUTHORITY_INVALID", `${placementPath}/provenance`, `non-authoritative or non-anchor review is rejected; quoted review requires judgment.${field}=${String(expected)}`, { route, objectKind: kind, reviewId: reportRef(reviewId, sealedRefs), presentTypes: { [field]: reportType(source.judgment?.[field]) } });
+          const sourceText = String(source.review?.text ?? source.review?.exactText ?? source.review?.reviewText ?? "");
+          if (stringValue(quote) && (!sourceText || !normalized(sourceText).includes(normalized(String(quote))))) add("REVIEW_QUOTE_UNBOUND", placementPath, "review quote must be contained in the sealed source review", { route, objectKind: kind, reviewId: reportRef(reviewId, sealedRefs) });
+        }
+        if (!stringValue(placement.attribution ?? placement.reviewer ?? placement.author)) add("REVIEW_ATTRIBUTION_MISSING", placementPath, "review binding requires attribution", { route, objectKind: kind, reviewId: reportRef(reviewId, sealedRefs) });
+      } else if (!stringValue(placement.claim ?? placement.statement ?? placement.text ?? placement.body)) add("CLAIM_TEXT_MISSING", placementPath, "evidence and claim placements require claim text", { route, objectKind: kind, ref: reportRef(stableRef, sealedRefs), placement: reportValue(provenance.placement), section: reportValue(provenance.section) });
     }
   }
-  if (seen.size !== 2 || JSON.stringify([...seen]) !== JSON.stringify(WRITER1_ROUTES)) invalidWriter1Output("Writer1 output route order/topology is not exactly Repair then Installation");
-  for (const key of ["home", "homepage", "contact", "strategy", "strategyOverview", "strategyOverviewPage"]) if (key in parsed) invalidWriter1Output(`Writer1 output must not contain ${key}`);
-  scanForbiddenPublicReferences(parsed);
-  return parsed;
+  if (seen.size !== 2 || JSON.stringify([...seen]) !== JSON.stringify(WRITER1_ROUTES)) add("PAGE_TOPOLOGY_INVALID", "/pages", "page route order and topology must be exactly Repair then Installation", { objectKind: "output" });
+  for (const key of ["home", "homepage", "contact", "strategy", "strategyOverview", "strategyOverviewPage"]) if (key in parsed) add("FORBIDDEN_TOP_LEVEL_FIELD", `/${key}`, `Writer1 output must not contain ${key}`, { objectKind: "output" });
+  collectForbiddenReferenceDiagnostics(parsed, errors);
+  return { parsed, errors };
+}
+
+export function collectWriter1ValidationDiagnostics(raw: unknown, projection: Dict): Writer1ValidationDiagnostic[] { return collectWriter1Validation(raw, projection).errors; }
+
+export function parseAndValidateWriter1Output(raw: unknown, projection: Dict): Dict {
+  const result = collectWriter1Validation(raw, projection);
+  if (result.errors.length > 0) {
+    const first = result.errors[0]!;
+    if (first.code === "OUTPUT_NOT_RECOVERABLE") throw new Writer1OutputRecoveryError("OUTPUT_NOT_RECOVERABLE", first.expectedRule);
+    invalidWriter1Output(first.expectedRule);
+  }
+  return result.parsed as Dict;
 }
 
 export function parseAndValidateFreshWriter1Output(raw: unknown, projection: Dict): Dict {
@@ -434,11 +496,98 @@ async function runArtifactRecoveryV3(root: string, control: Dict): Promise<{ sta
   return { status: "awaiting-architect-qa", stage: "writer1", threadUrl: result.threadUrl, recoveryRunId: result.receipt.recoveryRunId };
 }
 
-async function runArtifactRecoveryV3Finalize(root: string, control: Dict): Promise<{ status: string; stage: string; threadUrl?: string; recoveryRunId?: string }> {
+function validateV3FinalizeWakePins(control: Dict, mode: "validation-only" | "validation-report-only"): string {
   const recoveryPins = control.policy?.recovery;
   const promptDigest = digestWriter1ArtifactRecoveryPrompt("v3");
-  if (control.policy?.mode !== "validation-only" || recoveryPins?.recoveryVersion !== ARTIFACT_RECOVERY_V3_FINALIZE_RECOVERY_VERSION || recoveryPins?.priorRecoveryV3ActionRunId !== ARTIFACT_RECOVERY_V3_FINALIZE_ACTION_RUN_ID || Number(recoveryPins?.priorRecoveryV3ArtifactId) !== ARTIFACT_RECOVERY_V3_FINALIZE_ARTIFACT_ID || recoveryPins?.priorRecoveryV3ArtifactDigest !== ARTIFACT_RECOVERY_V3_FINALIZE_ARTIFACT_DIGEST || recoveryPins?.priorRecoveryV3SourceSha !== ARTIFACT_RECOVERY_V3_FINALIZE_SOURCE_SHA || recoveryPins?.priorRecoveryV3AgentId !== ARTIFACT_RECOVERY_AGENT_ID || recoveryPins?.priorRecoveryV3RunId !== ARTIFACT_RECOVERY_V3_FINALIZE_RUN_ID || recoveryPins?.priorRecoveryV3ThreadUrl !== ARTIFACT_RECOVERY_THREAD_URL || recoveryPins?.priorRecoveryV3PromptDigest !== promptDigest || recoveryPins?.priorRecoveryV3FailureCode !== ARTIFACT_RECOVERY_V3_FINALIZE_FAILURE_CODE || recoveryPins?.priorRecoveryV3InputDigest !== ARTIFACT_RECOVERY_V3_INPUT_DIGEST || recoveryPins?.priorBeforeArtifactByteDigest !== ARTIFACT_RECOVERY_V3_FINALIZE_BEFORE_ARTIFACT_DIGEST || recoveryPins?.frozenCopyProjectionDigest !== ARTIFACT_RECOVERY_V3_FINALIZE_COPY_PROJECTION_DIGEST || recoveryPins?.absoluteArtifactPath !== ARTIFACT_RECOVERY_V2_ABSOLUTE_ARTIFACT_PATH || recoveryPins?.apiArtifactPath !== ARTIFACT_RECOVERY_PATH || recoveryPins?.promptDigest !== promptDigest || typeof recoveryPins?.idempotencyKey !== "string" || recoveryPins.idempotencyKey !== `${ARTIFACT_RECOVERY_V3_FINALIZE_RUN_ID}:writer1:artifact-recovery:v3-finalize:${ARTIFACT_RECOVERY_V3_INPUT_DIGEST}:${promptDigest}` || recoveryPins.allowFollowUp !== undefined || recoveryPins.allowResume !== undefined || recoveryPins.allowCreate !== undefined || recoveryPins.send !== undefined || control.policy.allowFollowUp !== undefined || control.policy.allowResume !== undefined || control.policy.allowCreate !== undefined || control.policy.send !== undefined) throw new Error("active validation-only v3-finalize wake is missing exact failure, frozen-copy, no-message, or idempotency pins");
-  if (control.restore !== null || typeof control.wakeNonce !== "string" || !/^[A-Za-z0-9][A-Za-z0-9._-]{15,127}$/u.test(control.wakeNonce)) throw new Error("active validation-only v3-finalize wake requires a unique nonce and no restore");
+  if (control.policy?.mode !== mode || recoveryPins?.recoveryVersion !== ARTIFACT_RECOVERY_V3_FINALIZE_RECOVERY_VERSION || recoveryPins?.priorRecoveryV3ActionRunId !== ARTIFACT_RECOVERY_V3_FINALIZE_ACTION_RUN_ID || Number(recoveryPins?.priorRecoveryV3ArtifactId) !== ARTIFACT_RECOVERY_V3_FINALIZE_ARTIFACT_ID || recoveryPins?.priorRecoveryV3ArtifactDigest !== ARTIFACT_RECOVERY_V3_FINALIZE_ARTIFACT_DIGEST || recoveryPins?.priorRecoveryV3SourceSha !== ARTIFACT_RECOVERY_V3_FINALIZE_SOURCE_SHA || recoveryPins?.priorRecoveryV3AgentId !== ARTIFACT_RECOVERY_AGENT_ID || recoveryPins?.priorRecoveryV3RunId !== ARTIFACT_RECOVERY_V3_FINALIZE_RUN_ID || recoveryPins?.priorRecoveryV3ThreadUrl !== ARTIFACT_RECOVERY_THREAD_URL || recoveryPins?.priorRecoveryV3PromptDigest !== promptDigest || recoveryPins?.priorRecoveryV3FailureCode !== ARTIFACT_RECOVERY_V3_FINALIZE_FAILURE_CODE || recoveryPins?.priorRecoveryV3InputDigest !== ARTIFACT_RECOVERY_V3_INPUT_DIGEST || recoveryPins?.priorBeforeArtifactByteDigest !== ARTIFACT_RECOVERY_V3_FINALIZE_BEFORE_ARTIFACT_DIGEST || recoveryPins?.frozenCopyProjectionDigest !== ARTIFACT_RECOVERY_V3_FINALIZE_COPY_PROJECTION_DIGEST || recoveryPins?.absoluteArtifactPath !== ARTIFACT_RECOVERY_V2_ABSOLUTE_ARTIFACT_PATH || recoveryPins?.apiArtifactPath !== ARTIFACT_RECOVERY_PATH || recoveryPins?.promptDigest !== promptDigest || typeof recoveryPins?.idempotencyKey !== "string" || recoveryPins.idempotencyKey !== `${ARTIFACT_RECOVERY_V3_FINALIZE_RUN_ID}:writer1:artifact-recovery:v3-finalize:${ARTIFACT_RECOVERY_V3_INPUT_DIGEST}:${promptDigest}` || recoveryPins.allowFollowUp !== undefined || recoveryPins.allowResume !== undefined || recoveryPins.allowCreate !== undefined || recoveryPins.send !== undefined || control.policy.allowFollowUp !== undefined || control.policy.allowResume !== undefined || control.policy.allowCreate !== undefined || control.policy.send !== undefined) throw new Error("active v3-finalize wake is missing exact failure, frozen-copy, no-message, or idempotency pins");
+  if (control.restore !== null || typeof control.wakeNonce !== "string" || !/^[A-Za-z0-9][A-Za-z0-9._-]{15,127}$/u.test(control.wakeNonce)) throw new Error("active v3-finalize wake requires a unique nonce and no restore");
+  return promptDigest;
+}
+
+export interface Writer1ValidationReport {
+  schemaVersion: "words-writer1-validation-report/v1";
+  status: "diagnostic-failure";
+  mode: "validation-report-only";
+  completionAuthorized: false;
+  writer2Blocked: true;
+  messagesSent: 0;
+  artifactPath: string | null;
+  artifactByteDigest: string | null;
+  artifactSize: number | null;
+  artifactUpdatedAt: string | null;
+  copyProjectionDigest: string | null;
+  frozenCopyProjectionDigest: string;
+  projectionDigest: string;
+  errors: Writer1ValidationDiagnostic[];
+}
+
+export function buildWriter1ValidationReport(input: {
+  artifactPath?: string | null;
+  artifactByteDigest?: string | null;
+  artifactSize?: number | null;
+  artifactUpdatedAt?: string | null;
+  copyProjectionDigest?: string | null;
+  frozenCopyProjectionDigest: string;
+  projectionDigest: string;
+  errors: Writer1ValidationDiagnostic[];
+}): Writer1ValidationReport {
+  return {
+    schemaVersion: "words-writer1-validation-report/v1",
+    status: "diagnostic-failure",
+    mode: "validation-report-only",
+    completionAuthorized: false,
+    writer2Blocked: true,
+    messagesSent: 0,
+    artifactPath: input.artifactPath ?? null,
+    artifactByteDigest: input.artifactByteDigest ?? null,
+    artifactSize: input.artifactSize ?? null,
+    artifactUpdatedAt: input.artifactUpdatedAt ?? null,
+    copyProjectionDigest: input.copyProjectionDigest ?? null,
+    frozenCopyProjectionDigest: input.frozenCopyProjectionDigest,
+    projectionDigest: input.projectionDigest,
+    errors: input.errors.map((error) => ({ ...error })),
+  };
+}
+
+async function runArtifactValidationReport(root: string, control: Dict): Promise<{ status: string; stage: string }> {
+  const promptDigest = validateV3FinalizeWakePins(control, "validation-report-only");
+  if (process.env.CURSOR_MODEL !== "cursor-grok-4.6-high" || !process.env.CURSOR_API_KEY || process.env.CURSOR_FAST !== "false") throw new Error("Cursor production environment must provide exact model, API key, and fast=false");
+  const latestRoot = process.env.WRITER1_LATEST_V3_FINALIZE_ROOT;
+  if (!latestRoot) throw new Error("latest v3 failure artifact must be restored before validation reporting");
+  const sealed = validateSealed(root);
+  const payload = writer1Projection(sealed);
+  const verified = validatePriorArtifactRecoveryV3Failure(latestRoot);
+  if (!writer1InputDigestMatches(verified.prior.inputDigest, payload) || (verified.prior.sealedHandoffDigest && verified.prior.sealedHandoffDigest !== sealed.handoff.resealDigest)) throw new Error("latest v3 failure is not bound to the current sealed 360 handoff");
+  verified.prior.sealedHandoffDigest = sealed.handoff.resealDigest;
+  const previousRecoveryV3: CursorArtifactRecoveryV3FailureBinding = { recoveryVersion: ARTIFACT_RECOVERY_V3_RECOVERY_VERSION, actionRunId: verified.actionRunId, artifactId: verified.artifactId, artifactDigest: verified.artifactDigest, sourceBranch: verified.sourceBranch, sourceSha: verified.sourceSha, agentId: verified.agentId, runId: verified.runId, threadUrl: verified.threadUrl, promptDigest: verified.promptDigest, failureCode: verified.failureCode, inputDigest: verified.inputDigest, beforeArtifact: verified.beforeArtifact, copyProjectionDigest: verified.copyProjectionDigest };
+  const errors: Writer1ValidationDiagnostic[] = [];
+  let inspection: Awaited<ReturnType<typeof inspectCursorWriterArtifactV3>> | undefined;
+  try {
+    inspection = await inspectCursorWriterArtifactV3({ prior: verified.prior, previousRecoveryV3, promptDigest });
+  } catch {
+    errors.push({ code: "ARTIFACT_INSPECTION_FAILED", path: "/artifact", objectKind: "artifact", expectedRule: "the exact existing Cursor artifact must be listable, downloadable, size-bounded, source-bound, and digest-verified" });
+  }
+  if (inspection) {
+    if (inspection.stale) errors.push({ code: "ARTIFACT_STALE", path: "/artifact", objectKind: "artifact", expectedRule: "current Cursor artifact must differ from the pinned pre-repair artifact by digest or update time" });
+    if (!inspection.copyProjectionMatches) errors.push({ code: "COPY_PROJECTION_MISMATCH", path: "/copyProjectionDigest", objectKind: "artifact", expectedRule: "non-provenance copy projection must equal the sealed v3 frozen copy projection digest" });
+    errors.push(...collectWriter1ValidationDiagnostics(inspection.raw, payload));
+  }
+  const report = buildWriter1ValidationReport({
+    artifactPath: inspection?.artifact.path ?? null,
+    artifactByteDigest: inspection?.artifact.byteDigest ?? null,
+    artifactSize: inspection?.artifact.size ?? null,
+    artifactUpdatedAt: inspection?.artifact.updatedAt ?? null,
+    copyProjectionDigest: inspection?.copyProjectionDigest ?? null,
+    frozenCopyProjectionDigest: previousRecoveryV3.copyProjectionDigest,
+    projectionDigest: digestOf(payload),
+    errors,
+  });
+  await writeJson(jsonFile(root, "canary/runtime/writer1-validation-report.json"), report);
+  return { status: "diagnostic-failure", stage: "writer1" };
+}
+
+async function runArtifactRecoveryV3Finalize(root: string, control: Dict): Promise<{ status: string; stage: string; threadUrl?: string; recoveryRunId?: string }> {
+  const promptDigest = validateV3FinalizeWakePins(control, "validation-only");
   if (process.env.CURSOR_MODEL !== "cursor-grok-4.6-high" || !process.env.CURSOR_API_KEY || process.env.CURSOR_FAST !== "false") throw new Error("Cursor production environment must provide exact model, API key, and fast=false");
   const latestRoot = process.env.WRITER1_LATEST_V3_FINALIZE_ROOT;
   if (!latestRoot) throw new Error("latest v3 failure artifact must be restored before validation-only finalization");
@@ -464,8 +613,8 @@ export async function runArtifactRecovery(root = process.cwd()): Promise<{ statu
   const control = readJson(root, ".factory-wake/360-words-control.json");
   if (control.requestedBy !== "architect" || control.stage !== "writer1" || control.policy?.writer1Only !== true || control.policy?.provider !== "cursor-sdk" || control.policy?.model !== "cursor-grok-4.6-high" || control.policy?.fast !== false) throw new Error("360 canary control is not the immutable Writer1 policy");
   if (control.wakeNonce === DORMANT_NONCE) return { status: "dormant", stage: "writer1" };
-  if (control.policy?.mode !== "artifact-recovery" && control.policy?.mode !== "validation-only") throw new Error("active 360 canary wake must explicitly select artifact-recovery or validation-only mode");
-  if (control.policy?.recovery?.recoveryVersion === ARTIFACT_RECOVERY_V3_FINALIZE_RECOVERY_VERSION) return runArtifactRecoveryV3Finalize(root, control);
+  if (control.policy?.mode !== "artifact-recovery" && control.policy?.mode !== "validation-only" && control.policy?.mode !== "validation-report-only") throw new Error("active 360 canary wake must explicitly select artifact-recovery, validation-only, or validation-report-only mode");
+  if (control.policy?.recovery?.recoveryVersion === ARTIFACT_RECOVERY_V3_FINALIZE_RECOVERY_VERSION) return control.policy?.mode === "validation-report-only" ? runArtifactValidationReport(root, control) : runArtifactRecoveryV3Finalize(root, control);
   if (control.policy?.recovery?.recoveryVersion === ARTIFACT_RECOVERY_V3_RECOVERY_VERSION) return runArtifactRecoveryV3(root, control);
   const recoveryPins = control.policy?.recovery;
   const v1PromptDigest = digestOf(buildWriter1ArtifactRecoveryPrompt("v1"));
