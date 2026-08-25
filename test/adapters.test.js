@@ -153,6 +153,23 @@ test('Apify terminal failure is durable and cannot silently start a second paid 
   assert.equal(calls.some((call) => call.url.includes('/datasets/')), false);
 });
 
+test('Apify ambiguous acceptance is reconciled without a second POST, otherwise fails closed', async () => {
+  const calls = []; const receiptStore = new Map();
+  const fetchImpl = async (url, options) => { calls.push({ url, method: options.method }); if (options.method === 'POST') return response({ data: { status: 'RUNNING' } }); return response({ data: { status: 'SUCCEEDED', id: 'unused' } }); };
+  const request = { placeId: 'ChIJambiguous', mapsUrl: 'https://www.google.com/maps/place/Ambiguous' };
+  const first = createApifyAdapter({ token: 'secret', fetchImpl, receiptStore });
+  await assert.rejects(() => first.enrichFinalist(request), /ambiguous.*Architect review/);
+  const second = createApifyAdapter({ token: 'secret', fetchImpl, receiptStore });
+  await assert.rejects(() => second.enrichFinalist(request), /ambiguous.*Architect review/);
+  assert.equal(calls.filter((call) => call.method === 'POST').length, 1);
+  const reconciledStore = new Map([['apify:run:finalist:ChIJreconciled', { schemaVersion: 'factory-paid-operation-v1', operationKey: 'apify:run:finalist:ChIJreconciled', provider: 'apify', operation: 'finalist-enrichment', status: 'post-attempted', input: { placeIds: ['ChIJreconciled'] }, idempotencyKey: 'idempotency-reconciled', requestDigest: 'request-reconciled' }]]); let reconciledCalls = 0;
+  const reconciledFetch = async (url, options) => { reconciledCalls += 1; if (options.method === 'GET' && url.includes('/actor-runs/')) return response({ data: { id: 'run-reconciled', defaultDatasetId: 'dataset-reconciled', status: 'SUCCEEDED' } }); return response([{ placeId: 'ChIJreconciled', url: 'https://www.google.com/maps/place/Reconciled', reviews: [] }]); };
+  const reconciled = createApifyAdapter({ token: 'secret', fetchImpl: reconciledFetch, receiptStore: reconciledStore, reconcileAcceptance: async () => ({ runId: 'run-reconciled', datasetId: 'dataset-reconciled' }) });
+  const recovered = await reconciled.enrichFinalist({ placeId: 'ChIJreconciled', mapsUrl: 'https://www.google.com/maps/place/Reconciled' });
+  assert.equal(recovered.provenance.exactPlaceId, 'ChIJreconciled');
+  assert.equal(reconciledCalls, 2, 'reconciliation performs only provider GETs and never a second POST');
+});
+
 function catalog() {
   return [{
     id: ACTUAL_MODEL_ID,

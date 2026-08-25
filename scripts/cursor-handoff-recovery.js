@@ -3,7 +3,7 @@
 
 const fs = require('node:fs');
 const path = require('node:path');
-const { findClaim, findTerminalOutcome, terminalOutcomeKey } = require('../src/factory/github-ledger');
+const { findClaim, findTerminalOutcome, findTerminalConflict, terminalOutcomeKey } = require('../src/factory/github-ledger');
 
 function readJson(file) { return JSON.parse(fs.readFileSync(path.resolve(file), 'utf8')); }
 
@@ -30,6 +30,8 @@ function decide({ pending, result, comments }) {
   };
   const ownerToken = terminalOutcomeKey(outcome);
   const immutable = { ...outcome, ownerToken, resultId: ownerToken };
+  const conflict = findTerminalConflict(comments, outcome);
+  if (conflict) return { action: 'quarantine-conflict', status: 'conflict', ownerToken, outcomeKey: ownerToken, conflict, expected: immutable };
   const existing = findTerminalOutcome(comments, outcome);
   if (existing?.status === 'resumed') return { action: 'noop', status: 'resumed', ownerToken, outcomeKey: ownerToken, existing };
   if (existing?.status === 'phase_b_claimed') return { action: 'recover-phase-b', status: 'phase_b_claimed', ownerToken, outcomeKey: ownerToken, existing };

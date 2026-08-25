@@ -10,6 +10,7 @@ const { createPendingHandoff } = require('../src/factory/handoff');
 const { markerFor, markerBody, findTerminalOutcome } = require('../src/factory/github-ledger');
 const { digest } = require('../src/factory/prescription-policy');
 const { decide } = require('../scripts/cursor-handoff-recovery');
+const { apply: applyRecoveryDecision } = require('../scripts/apply-cursor-recovery-decision');
 const { selectNewestDispatchComment } = require('../scripts/select-cursor-dispatch-comment');
 const { restore } = require('../scripts/restore-paid-receipts');
 const { createCursorAdapter } = require('../src/adapters/cursor');
@@ -44,6 +45,16 @@ test('duplicate terminal comments dedupe by immutable outcome and never restart 
   assert.equal(decide({ pending, result, comments: [...comments, comment(phaseB, 12, '2026-01-01T00:00:02Z')] }).action, 'recover-phase-b');
   const resumed = markerFor({ ...outcome, kind: 'resume', ownerToken: digest(outcome), resultId: 'fourth-comment', inputDigest: outcome.inputDigest, outputDigest: outcome.outputDigest, commentId: 'fourth-comment', commentUrl: 'https://github.com/alchemistj/ff-content-demo-factory/issues/8#issuecomment-13', status: 'resumed' });
   assert.equal(decide({ pending, result, comments: [...comments, comment(resumed, 13, '2026-01-01T00:00:03Z')] }).action, 'noop');
+});
+
+test('conflicting terminal output for one immutable handoff is quarantined and cannot start phase B', () => {
+  const pending = pendingFor();
+  const first = resultFor(pending, { ok: 'first' });
+  const second = resultFor(pending, { ok: 'different' });
+  const base = { repository: pending.dispatchPacket.repository, issueNumber: 8, prNumber: 1, branch: pending.dispatchPacket.branch, checkedOutSha: pending.envelope.checkedOutSha, handoffId: pending.handoffId, dispatchKey: pending.envelope.dispatchKey, dispatchDigest: pending.envelope.dispatchDigest, runId: pending.envelope.runId, prospectId: pending.envelope.prospectId, sourceCheckpointDigest: pending.envelope.sourceCheckpointDigest, sourceManifestDigest: pending.envelope.sourceManifestDigest, inputManifestDigest: pending.envelope.inputManifestDigest, jobId: pending.phaseARunId, inputDigest: first.receipt.inputDigest };
+  const marker = (result, id) => markerFor({ kind: 'resume', ...base, ownerToken: 'immutable-owner', resultId: id, outputDigest: result.receipt.outputDigest, commentId: id, commentUrl: `https://github.com/alchemistj/ff-content-demo-factory/issues/8#issuecomment-${id}`, status: 'terminal' });
+  const comments = [comment(marker(first, 'first'), 31), comment(marker(second, 'second'), 32, '2026-01-01T00:00:01Z')];
+  assert.equal(decide({ pending, result: second, comments }).action, 'quarantine-conflict');
 });
 
 test('dispatch selector rejects an old same-head handoff and selects the exact new handoff/source/job context', () => {
@@ -92,6 +103,14 @@ test('phase-B recovery restores the durable vendor receipt snapshot', () => {
   assert.throws(() => restore({ snapshotFile: `${snapshot}.missing`, targetFile: path.join(root, 'state', 'bad.json') }), /snapshot is missing/);
 });
 
+test('phase-B exact artifact selector rejects newest/wrong artifacts', () => {
+  const { selectExactArtifact } = require('../scripts/restore-paid-receipts');
+  const expected = { name: 'factory-paid-receipts-exact', id: '42', digest: 'sha256:zip', contentDigest: 'sha256:content' };
+  assert.equal(selectExactArtifact([{ id: 42, name: expected.name, digest: expected.digest, expired: false }], expected).id, 42);
+  assert.throws(() => selectExactArtifact([{ id: 41, name: expected.name, digest: expected.digest, expired: false }], expected), /missing or ambiguous/);
+  assert.throws(() => selectExactArtifact([{ id: 42, name: 'factory-paid-receipts-other', digest: expected.digest, expired: false }], expected), /missing or ambiguous/);
+});
+
 test('recovery guard is executable from the actual workflow script and workflow invokes it', () => {
   const root = fs.mkdtempSync(path.join(os.tmpdir(), 'factory-recovery-script-'));
   const pending = pendingFor(); const result = resultFor(pending);
@@ -101,5 +120,16 @@ test('recovery guard is executable from the actual workflow script and workflow 
   assert.equal(output.status, 0); assert.equal(JSON.parse(output.stdout).action, 'record-terminal');
   const workflow = fs.readFileSync('.github/workflows/cursor-cloud-agent-resume.yml', 'utf8');
   assert.match(workflow, /node scripts\/cursor-handoff-recovery\.js/);
+  assert.match(workflow, /node scripts\/apply-cursor-recovery-decision\.js/);
   assert.match(workflow, /vendor-receipts\.json/);
+});
+
+test('recovery decision conflict is persisted as quarantine and never advances phase B', () => {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), 'factory-recovery-conflict-'));
+  const pending = pendingFor(); const result = resultFor(pending);
+  const directory = path.join(root, 'phase-a');
+  assert.throws(() => applyRecoveryDecision({ pending, result, comments: [], decision: { action: 'quarantine-conflict', status: 'conflict', ownerToken: 'owner', conflict: { outputDigest: 'other' } }, directory }), /quarantined/);
+  assert.equal(JSON.parse(fs.readFileSync(path.join(directory, 'recovery-state.json'))).action, 'quarantine-conflict');
+  assert.equal(fs.existsSync(path.join(directory, 'conflict-quarantined.json')), true);
+  assert.equal(fs.existsSync(path.join(directory, 'cursor-phase-b-claim.md')), false);
 });

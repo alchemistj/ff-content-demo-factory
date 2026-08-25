@@ -141,7 +141,7 @@ function normalizeError(error) {
   return error instanceof Error ? error.message.replace(/Bearer\s+\S+/gi, 'Bearer [redacted]') : String(error);
 }
 
-function createApifyAdapter({ token, fetchImpl = globalThis.fetch, clock = () => new Date().toISOString(), pollIntervalMs = 0, maxPollAttempts = 100, receiptStore = new Map() }) {
+function createApifyAdapter({ token, fetchImpl = globalThis.fetch, clock = () => new Date().toISOString(), pollIntervalMs = 0, maxPollAttempts = 100, receiptStore = new Map(), reconcileAcceptance = async () => null }) {
   required(token, 'APIFY_API_TOKEN');
   required(fetchImpl, 'fetchImpl');
   const enrichmentReceipts = new Map();
@@ -157,10 +157,10 @@ function createApifyAdapter({ token, fetchImpl = globalThis.fetch, clock = () =>
     throw new TypeError('receiptStore must implement get/put or Map get/set');
   }
 
-  async function request(method, pathname, body) {
+  async function request(method, pathname, body, headers = {}) {
     const response = await fetchImpl(safeUrl(pathname), {
       method,
-      headers: { Authorization: `Bearer ${token}`, 'content-type': 'application/json' },
+      headers: { Authorization: `Bearer ${token}`, 'content-type': 'application/json', ...headers },
       ...(body === undefined ? {} : { body: JSON.stringify(body) }),
     });
     const text = await response.text();
@@ -194,15 +194,41 @@ function createApifyAdapter({ token, fetchImpl = globalThis.fetch, clock = () =>
     if (prior?.status === 'completed' && Array.isArray(prior.items)) return { items: prior.items, receipt: prior };
     if (prior?.status === 'running') return resumeActor(prior, input, jobKey);
     if (prior?.status === 'failed') throw new Error(`Apify run ${prior.apifyStatus || 'failed'} requires an explicit Architect retry decision`);
-    await persistOperationIntent(receiptStore, operationKey, { provider: 'apify', operation, input, context: { actor: ACTOR_ID, jobKey }, startedAt: clock() });
-    const started = await request('POST', `/acts/${ACTOR_ID}/runs`, input);
+    if (prior?.status === 'needs-architect-review' || prior?.status === 'post-attempted' || prior?.status === 'intent') {
+      const reconciled = await reconcileAcceptance({ actorId: ACTOR_ID, operation, jobKey, input, idempotencyKey: prior.idempotencyKey, requestDigest: prior.requestDigest, prior });
+      const runId = reconciled?.runId || reconciled?.id;
+      const datasetId = reconciled?.datasetId || reconciled?.defaultDatasetId;
+      if (!runId || !datasetId) {
+        if (prior.status !== 'needs-architect-review') await persistOperationState(receiptStore, operationKey, { ...prior, status: 'needs-architect-review', reviewReason: 'ambiguous Apify acceptance cannot be reconciled', reviewedAt: clock() });
+        throw new Error('Apify acceptance is ambiguous; Architect review is required before any retry');
+      }
+      await persistOperationState(receiptStore, operationKey, { ...prior, runId, datasetId, status: 'running', reconciledAt: clock() });
+      return resumeActor({ ...prior, runId, datasetId, status: 'running' }, input, jobKey);
+    }
+    const requestDigest = crypto.createHash('sha256').update(JSON.stringify(input)).digest('hex');
+    const idempotencyKey = `factory-apify-${stableHash(`${jobKey}:${requestDigest}`)}`;
+    await persistOperationIntent(receiptStore, operationKey, { provider: 'apify', operation, input, context: { actor: ACTOR_ID, jobKey }, metadata: { idempotencyKey, requestDigest }, startedAt: clock() });
+    // Seal the outbound attempt before POST.  A runner crash after this point
+    // must reconcile provider state, never issue a second paid POST.
+    await persistOperationState(receiptStore, operationKey, { schemaVersion: 'factory-paid-operation-v1', operationKey, provider: 'apify', operation, actor: ACTOR_ID, jobKey, input, inputDigest: requestDigest, idempotencyKey, requestDigest, status: 'post-attempted', postAttemptedAt: clock() });
+    const started = await request('POST', `/acts/${ACTOR_ID}/runs`, input, { 'Idempotency-Key': idempotencyKey });
     const run = started.data || started;
-    const runId = run.id || run.runId;
-    const datasetId = run.defaultDatasetId || run.datasetId;
-    if (!runId || !datasetId) throw new Error('Apify run receipt missing id or dataset');
+    let runId = run.id || run.runId;
+    let datasetId = run.defaultDatasetId || run.datasetId;
+    if (!runId || !datasetId) {
+      const reconciled = await reconcileAcceptance({ actorId: ACTOR_ID, operation, jobKey, input, idempotencyKey, requestDigest, started });
+      const reconciledRunId = reconciled?.runId || reconciled?.id;
+      const reconciledDatasetId = reconciled?.datasetId || reconciled?.defaultDatasetId;
+      if (!reconciledRunId || !reconciledDatasetId) {
+        await persistOperationState(receiptStore, operationKey, { schemaVersion: 'factory-paid-operation-v1', operationKey, provider: 'apify', operation, actor: ACTOR_ID, jobKey, input, inputDigest: requestDigest, idempotencyKey, requestDigest, status: 'needs-architect-review', reviewReason: 'ambiguous Apify acceptance cannot be reconciled', reviewedAt: clock() });
+        throw new Error('Apify acceptance is ambiguous; Architect review is required before any retry');
+      }
+      runId = reconciledRunId;
+      datasetId = reconciledDatasetId;
+    }
     await persistOperationState(receiptStore, operationKey, {
       schemaVersion: 'factory-paid-operation-v1', operationKey, provider: 'apify', operation, actor: ACTOR_ID, jobKey, runId, datasetId,
-      status: 'running', startedAt: clock(), input, inputDigest: crypto.createHash('sha256').update(JSON.stringify(input)).digest('hex'),
+      status: 'running', startedAt: clock(), input, inputDigest: requestDigest, idempotencyKey, requestDigest,
     });
     let terminal;
     try {

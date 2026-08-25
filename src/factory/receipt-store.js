@@ -8,7 +8,15 @@ function operationKey(provider, operation, input) {
   return `${provider}:${operation}:${digest(input)}`;
 }
 
-async function persistOperationIntent(store, key, { provider, operation, input, context = {}, startedAt = new Date().toISOString() } = {}) {
+function receiptArtifactBinding({ handoffId, dispatchKey, outputDigest, phaseARunId, outcome = 'phase-b' } = {}) {
+  for (const [name, value] of Object.entries({ handoffId, dispatchKey, outputDigest, phaseARunId })) {
+    if (!value) throw new Error(`receipt artifact binding ${name} is required`);
+  }
+  const key = digest({ handoffId: String(handoffId), dispatchKey: String(dispatchKey), outputDigest: String(outputDigest), phaseARunId: String(phaseARunId) });
+  return { outcome: String(outcome), handoffId: String(handoffId), dispatchKey: String(dispatchKey), outputDigest: String(outputDigest), phaseARunId: String(phaseARunId), name: `factory-paid-receipts-${key.slice(0, 32)}` };
+}
+
+async function persistOperationIntent(store, key, { provider, operation, input, context = {}, metadata = {}, startedAt = new Date().toISOString() } = {}) {
   const put = typeof store?.put === 'function' ? store.put.bind(store) : typeof store?.set === 'function' ? async (name, value) => store.set(name, value) : null;
   if (!put) throw new TypeError('receiptStore must implement put');
   if (!provider || !operation || input == null) throw new Error('paid operation intent requires provider, operation, and input');
@@ -16,7 +24,7 @@ async function persistOperationIntent(store, key, { provider, operation, input, 
     schemaVersion: 'factory-paid-operation-v1',
     operationKey: key || operationKey(provider, operation, input),
     provider, operation, status: 'intent', startedAt,
-    input, inputDigest: digest(input), context,
+    input, inputDigest: digest(input), context, ...metadata,
   };
   await put(`intent:${intent.operationKey}`, intent);
   await put(intent.operationKey, intent);
@@ -71,4 +79,4 @@ function createFileReceiptStore(root) {
   };
 }
 
-module.exports = { createFileReceiptStore, readJson, writeJson, operationKey, persistOperationIntent, persistOperationState };
+module.exports = { createFileReceiptStore, readJson, writeJson, operationKey, receiptArtifactBinding, persistOperationIntent, persistOperationState };

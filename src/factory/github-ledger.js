@@ -27,16 +27,20 @@ function contextFields(marker) {
     sourceManifestDigest: marker.sourceManifestDigest || null,
     inputManifestDigest: marker.inputManifestDigest || null,
     jobId: marker.jobId || null,
+    artifactName: marker.artifactName || null,
+    artifactId: marker.artifactId || null,
+    artifactDigest: marker.artifactDigest || null,
+    artifactContentDigest: marker.artifactContentDigest || null,
     ownerToken: marker.ownerToken || marker.dispatchKey || null,
   };
 }
 
-function markerFor({ kind, repository, issueNumber, prNumber, branch, checkedOutSha, handoffId, dispatchKey, dispatchDigest, runId, prospectId, sourceCheckpointDigest, sourceManifestDigest, inputManifestDigest, jobId, ownerToken, resultId, inputDigest, outputDigest, threadUrl, model, commentId, commentUrl, status = 'preparing' }) {
+function markerFor({ kind, repository, issueNumber, prNumber, branch, checkedOutSha, handoffId, dispatchKey, dispatchDigest, runId, prospectId, sourceCheckpointDigest, sourceManifestDigest, inputManifestDigest, jobId, ownerToken, resultId, inputDigest, outputDigest, threadUrl, model, commentId, commentUrl, artifactName, artifactId, artifactDigest, artifactContentDigest, status = 'preparing' }) {
   if (!STATES.includes(status)) throw new Error(`Unknown ledger marker state: ${status}`);
   const marker = {
     schemaVersion: SCHEMA_VERSION,
     kind: required(kind, 'ledger marker kind'),
-    ...contextFields({ repository: required(repository, 'ledger marker repository'), issueNumber: required(issueNumber, 'ledger marker issue number'), prNumber: required(prNumber, 'ledger marker PR number'), branch: required(branch, 'ledger marker branch'), checkedOutSha: required(checkedOutSha, 'ledger marker checked-out head'), handoffId: required(handoffId, 'ledger marker handoff id'), dispatchKey: required(dispatchKey, 'ledger marker dispatch key'), dispatchDigest, runId, prospectId, sourceCheckpointDigest, sourceManifestDigest, inputManifestDigest, jobId, ownerToken }),
+    ...contextFields({ repository: required(repository, 'ledger marker repository'), issueNumber: required(issueNumber, 'ledger marker issue number'), prNumber: required(prNumber, 'ledger marker PR number'), branch: required(branch, 'ledger marker branch'), checkedOutSha: required(checkedOutSha, 'ledger marker checked-out head'), handoffId: required(handoffId, 'ledger marker handoff id'), dispatchKey: required(dispatchKey, 'ledger marker dispatch key'), dispatchDigest, runId, prospectId, sourceCheckpointDigest, sourceManifestDigest, inputManifestDigest, jobId, artifactName, artifactId, artifactDigest, artifactContentDigest, ownerToken }),
     resultId: resultId == null ? null : String(resultId),
     inputDigest: inputDigest || null,
     outputDigest: outputDigest || null,
@@ -44,6 +48,10 @@ function markerFor({ kind, repository, issueNumber, prNumber, branch, checkedOut
     model: model || null,
     commentId: commentId == null ? null : String(commentId),
     commentUrl: commentUrl || null,
+    artifactName: artifactName || null,
+    artifactId: artifactId == null ? null : String(artifactId),
+    artifactDigest: artifactDigest || null,
+    artifactContentDigest: artifactContentDigest || null,
     status,
   };
   marker.markerDigest = digest({ ...marker, markerDigest: undefined });
@@ -66,7 +74,7 @@ function parseMarker(body) {
 }
 
 function assertContext(value, expected) {
-  for (const field of ['repository', 'issueNumber', 'prNumber', 'branch', 'checkedOutSha', 'handoffId', 'dispatchKey', 'dispatchDigest', 'runId', 'prospectId', 'sourceCheckpointDigest', 'sourceManifestDigest', 'inputManifestDigest', 'jobId', 'ownerToken']) {
+  for (const field of ['repository', 'issueNumber', 'prNumber', 'branch', 'checkedOutSha', 'handoffId', 'dispatchKey', 'dispatchDigest', 'runId', 'prospectId', 'sourceCheckpointDigest', 'sourceManifestDigest', 'inputManifestDigest', 'jobId', 'artifactName', 'artifactId', 'artifactDigest', 'artifactContentDigest', 'ownerToken']) {
     if (expected[field] != null && String(value?.[field] ?? '') !== String(expected[field])) throw new Error(`Ledger ${field} binding mismatch`);
   }
   return true;
@@ -143,13 +151,29 @@ function terminalOutcomeKey(value) {
   return digest({ handoffId: String(value.handoffId), dispatchKey: String(value.dispatchKey), inputDigest: String(inputDigest), outputDigest: String(outputDigest) });
 }
 
+function terminalIdentityMatches(marker, expected) {
+  for (const field of ['repository', 'issueNumber', 'prNumber', 'branch', 'checkedOutSha', 'handoffId', 'dispatchKey', 'dispatchDigest', 'runId', 'prospectId', 'sourceCheckpointDigest', 'sourceManifestDigest', 'inputManifestDigest', 'jobId']) {
+    if (expected[field] != null && String(marker?.[field] ?? '') !== String(expected[field])) return false;
+  }
+  return marker?.kind === 'resume' && ['terminal', 'phase_b_claimed', 'resumed'].includes(marker.status);
+}
+
 function findTerminalOutcome(comments, expected) {
   const expectedKey = expected.terminalOutcomeKey || terminalOutcomeKey(expected);
   if (!expectedKey) return null;
   return authoritativeMarkers(comments, expected).find((marker) => {
-    if (marker.kind !== 'resume' || !['terminal', 'phase_b_claimed', 'resumed'].includes(marker.status)) return false;
+    if (!terminalIdentityMatches(marker, expected)) return false;
     return terminalOutcomeKey(marker) === expectedKey;
   }) || null;
+}
+
+// A second terminal result with the same immutable handoff but a different
+// output is a conflict, not a retry.  It must never be allowed to consume the
+// phase-B claim or overwrite the first durable outcome.
+function findTerminalConflict(comments, expected) {
+  const expectedKey = expected.terminalOutcomeKey || terminalOutcomeKey(expected);
+  if (!expectedKey) return null;
+  return authoritativeMarkers(comments, expected).find((marker) => terminalIdentityMatches(marker, expected) && terminalOutcomeKey(marker) !== expectedKey) || null;
 }
 
 function reconcileDispatchComment(comments, expected) {
@@ -168,4 +192,4 @@ function requireGitHubToken(env = process.env) {
   return token;
 }
 
-module.exports = { SCHEMA_VERSION, STATES, markerFor, markerBody, parseMarker, assertTransition, assertContext, authoritativeMarkers, findClaim, terminalOutcomeKey, findTerminalOutcome, reconcileDispatchComment, claimOwnerMatches, recoverClaim, requireGitHubToken };
+module.exports = { SCHEMA_VERSION, STATES, markerFor, markerBody, parseMarker, assertTransition, assertContext, authoritativeMarkers, findClaim, terminalOutcomeKey, findTerminalOutcome, findTerminalConflict, reconcileDispatchComment, claimOwnerMatches, recoverClaim, requireGitHubToken };
