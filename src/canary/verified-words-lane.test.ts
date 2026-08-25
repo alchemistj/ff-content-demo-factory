@@ -1,10 +1,12 @@
 import assert from "node:assert/strict";
 import { existsSync, readFileSync } from "node:fs";
+import { mkdtemp, readFile, rm } from "node:fs/promises";
 import * as path from "node:path";
+import { tmpdir } from "node:os";
 import test from "node:test";
 import { EXPECTED_VERIFIED_CORRECTION, EXPECTED_VERIFIED_CORRECTION_V2, selectVerifiedWriter1Dispatch, validateControl as rawValidateControl } from "../../scripts/360-words-control.mjs";
 import { validateSealed, writer1Projection } from "../../scripts/360-words-canary.js";
-import { VERIFIED_WRITER1_AGENT_ID, VERIFIED_WRITER1_PROMPT_DIGEST, VERIFIED_WRITER1_PROMPT_V2_DIGEST, validateVerifiedWriter1Control, validateVerifiedWriter1PostDispatchControl, validateVerifiedWriter1SealOnlyControl, verifyOriginalDispatchEvidence, runVerifiedWriter1Correction, verifyPinnedSealedManifestBytes } from "../../scripts/360-words-verified.js";
+import { VERIFIED_WRITER1_AGENT_ID, VERIFIED_WRITER1_PROMPT_DIGEST, VERIFIED_WRITER1_PROMPT_V2_DIGEST, validateVerifiedWriter1Control, validateVerifiedWriter1PostDispatchControl, validateVerifiedWriter1SealOnlyControl, verifyOriginalDispatchEvidence, runVerifiedWriter1Correction, verifyPinnedSealedManifestBytes, quarantineWriter1PostDispatchOutput, persistVerifiedWriterFailureSurface, VERIFIED_WRITER1_REJECTED_OUTPUT_PATH, VERIFIED_WRITER1_REJECTION_RECEIPT_PATH } from "../../scripts/360-words-verified.js";
 import { digestOf } from "../../src/contracts/digests.js";
 import { createHash } from "node:crypto";
 import { assertNoLocalDownstreamGeneration, assertVerifiedDownstreamState, VERIFIED_PUBLIC_ROUTES, VERIFIED_STAGE_POLICY, VERIFIED_WRITER3_SEALED_FACTS } from "../../src/pipeline/verified-words-policy.js";
@@ -119,6 +121,8 @@ test("sealed Action ZIP uses its exact root logical listing and extraction paths
   assert.match(verifiedSource, /manifestPath:\s*VERIFIED_WRITER1_POST_DISPATCH_MANIFEST_PATH/u);
   assert.match(verifiedSource, /pin\.manifestPath\s*!==\s*VERIFIED_WRITER1_POST_DISPATCH_MANIFEST_PATH/u);
   assert.doesNotMatch(verifiedSource, /manifestPath:\s*"canary\/runtime\/writer1-dispatch-manifest\.json"/u);
+  assert.match(workflow, /id: secret_scan[\s\S]*if: always\(\) && steps\.control\.outputs\.dormant != 'true'/u);
+  assert.match(workflow, /Upload durable canary state[\s\S]*if: always\(\) && \(steps\.control\.outputs\.dormant == 'true' \|\| steps\.secret_scan\.outcome == 'success'\)/u);
 });
 
 test("sealed manifest pin verifies exact bytes, not a semantically equivalent JSON reserialization", () => {
@@ -129,6 +133,63 @@ test("sealed manifest pin verifies exact bytes, not a semantically equivalent JS
   assert.deepEqual(JSON.parse(equivalent.toString("utf8")), JSON.parse(exact.toString("utf8")));
   assert.notDeepEqual(equivalent, exact);
   assert.throws(() => verifyPinnedSealedManifestBytes(equivalent, pin), /sealed manifest bytes do not match/u);
+});
+
+test("rejected retrieval output is quarantined verbatim, unapproved, blocked, and secret-scanned", async () => {
+  const root = await mkdtemp(path.join(tmpdir(), "ff-writer1-quarantine-"));
+  const secret = "should-not-enter-receipt";
+  const json = JSON.stringify({ schemaVersion: "words-writer1-output/v1", pages: [{ type: "service", url: "/garage-door-repair", body: "Rejected mutable output" }, { type: "service", url: "/garage-door-installation" }] });
+  const fence = String.fromCharCode(96).repeat(3);
+  const raw = ` \n${fence}json\n${json}\n${fence}\n  `;
+  try {
+    const result = await quarantineWriter1PostDispatchOutput(root, { rawResult: raw, parsedJson: json, format: "fenced-json", reason: "banned mutable language at /pages/0/sections/3/body", validationCode: "WRITER1_OUTPUT_INVALID" });
+    assert.equal(result.outputPath, VERIFIED_WRITER1_REJECTED_OUTPUT_PATH);
+    assert.equal(result.receiptPath, VERIFIED_WRITER1_REJECTION_RECEIPT_PATH);
+    assert.equal(await readFile(path.join(root, result.outputPath), "utf8"), raw);
+    const receipt = JSON.parse(await readFile(path.join(root, result.receiptPath), "utf8"));
+    assert.equal(receipt.status, "rejected-unapproved");
+    assert.equal(receipt.approved, false);
+    assert.equal(receipt.recoveryMessagesSent, 0);
+    assert.equal(receipt.writer2Blocked, true);
+    assert.equal(receipt.nextStage, null);
+    assert.equal(receipt.rawOutputPath, "canary/quarantine/writer1-rejected-output.txt");
+    assert.equal(receipt.rawOutputSize, Buffer.byteLength(raw, "utf8"));
+    assert.match(receipt.rawOutputDigest, /^sha256:[0-9a-f]{64}$/u);
+    assert.equal(receipt.approvedOutputPath, "canary/outputs/writer1-output.json");
+    assert.equal(existsSync(path.join(root, "canary/outputs/writer1-output.json")), false);
+    assert.doesNotMatch(JSON.stringify(receipt), new RegExp(secret, "u"));
+    const workflow = readFileSync(path.join(path.resolve(process.cwd()), ".github/workflows/architect-360-words-canary.yml"), "utf8");
+    assert.match(workflow, /visit\('canary\/quarantine'\)/u);
+    assert.match(workflow, /canary\/quarantine\/writer1-rejected-output\.txt/u);
+    assert.match(workflow, /canary\/quarantine\/writer1-rejection\.json/u);
+    const verifiedSource = readFileSync(path.join(path.resolve(process.cwd()), "scripts/360-words-verified.ts"), "utf8");
+    assert.match(verifiedSource, /status:\s*"writer1-validation-failed-quarantined"/u);
+    assert.match(verifiedSource, /status: input\.quarantined \? "writer1-validation-failed-quarantined" : "failed"/u);
+  } finally {
+    await rm(root, { recursive: true, force: true });
+  }
+});
+
+test("the complete quarantined failure path preserves its final state and raw digest", async () => {
+  const root = await mkdtemp(path.join(tmpdir(), "ff-writer1-quarantine-final-state-"));
+  const json = JSON.stringify({ schemaVersion: "words-writer1-output/v1", pages: [{ type: "service", url: "/garage-door-repair" }, { type: "service", url: "/garage-door-installation" }] });
+  const fence = String.fromCharCode(96).repeat(3);
+  const raw = `\n${fence}json\n${json}\n${fence}\n`;
+  try {
+    const quarantine = await quarantineWriter1PostDispatchOutput(root, { rawResult: raw, parsedJson: json, format: "fenced-json", reason: "banned mutable language", validationCode: "WRITER1_OUTPUT_INVALID" });
+    await persistVerifiedWriterFailureSurface(root, { errorCode: "WRITER1_OUTPUT_INVALID", retrievalOnly: true, quarantined: true, messagesSent: 1, quarantine });
+    const state = JSON.parse(await readFile(path.join(root, "canary/runtime/state.json"), "utf8"));
+    assert.equal(state.status, "writer1-validation-failed-quarantined");
+    assert.equal(state.quarantinePath, quarantine.outputPath);
+    assert.equal(state.rejectionReceiptPath, quarantine.receiptPath);
+    assert.equal(state.rawOutputDigest, quarantine.rawDigest);
+    assert.equal(state.writer2Blocked, true);
+    assert.equal(state.nextStage, null);
+    assert.equal(state.recoveryMessagesSent, 0);
+    assert.equal(JSON.parse(await readFile(path.join(root, "canary/runtime/failure.json"), "utf8")).status, "writer1-validation-failed-quarantined");
+  } finally {
+    await rm(root, { recursive: true, force: true });
+  }
 });
 
 test("two-step seal-only mode is classified separately and has no Cursor retrieval path", () => {

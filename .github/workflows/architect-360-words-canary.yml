@@ -321,6 +321,7 @@ jobs:
           NODE
 
       - name: Verify active artifacts contain no secret material
+        id: secret_scan
         if: always() && steps.control.outputs.dormant != 'true'
         shell: bash
         env:
@@ -330,12 +331,12 @@ jobs:
           import fs from 'node:fs';
           const files = [];
           const visit = (root) => { if (!fs.existsSync(root)) return; const stat = fs.statSync(root); if (stat.isDirectory()) for (const name of fs.readdirSync(root)) visit(`${root}/${name}`); else files.push(root); };
-          visit('canary/runtime'); visit('canary/outputs');
+          visit('canary/runtime'); visit('canary/outputs'); visit('canary/quarantine');
           if (process.env.CURSOR_API_KEY && files.some((file) => fs.readFileSync(file).includes(Buffer.from(process.env.CURSOR_API_KEY)))) throw new Error('secret material detected in canary artifacts');
           NODE
 
       - name: Upload durable canary state, dispatch receipt, and output
-        if: always()
+        if: always() && (steps.control.outputs.dormant == 'true' || steps.secret_scan.outcome == 'success')
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         with:
           name: 360-words-verified-writer1-${{ github.run_id }}
@@ -348,6 +349,8 @@ jobs:
             canary/runtime/verified-*.json
             canary/runtime/failure.json
             canary/runtime/state.json
+            canary/quarantine/writer1-rejected-output.txt
+            canary/quarantine/writer1-rejection.json
             canary/outputs/writer1-output.json
             canary/outputs/verified-writer2.json
             canary/outputs/verified-writer3.json

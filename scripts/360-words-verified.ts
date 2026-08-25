@@ -4,6 +4,7 @@ import * as fs from "node:fs/promises";
 import * as path from "node:path";
 import {
   createJsonCursorReceiptStore,
+  CursorPostDispatchOutputValidationError,
   recoverCursorWriterPostDispatch,
   recoverCursorWriterCorrection,
   recoverCursorWriterCorrectionV2,
@@ -60,6 +61,8 @@ export const VERIFIED_WRITER1_POST_DISPATCH_SEAL_VERSION = "words-writer1-post-d
 export const VERIFIED_WRITER1_POST_DISPATCH_SEAL_MODE = "writer1-seal-only" as const;
 export const VERIFIED_WRITER1_POST_DISPATCH_SEALED_MANIFEST_SCHEMA = "verified-writer1-sealed-manifest-pin/v1" as const;
 export const VERIFIED_WRITER1_POST_DISPATCH_MANIFEST_PATH = "runtime/writer1-dispatch-manifest.json" as const;
+export const VERIFIED_WRITER1_REJECTED_OUTPUT_PATH = "canary/quarantine/writer1-rejected-output.txt" as const;
+export const VERIFIED_WRITER1_REJECTION_RECEIPT_PATH = "canary/quarantine/writer1-rejection.json" as const;
 
 function originalDispatchIdempotencyKey(): string { return POST_DISPATCH_ORIGINAL_IDEMPOTENCY_KEY; }
 function postDispatchBinding(value: Dict): string {
@@ -133,6 +136,7 @@ function jsonFile(root: string, relative: string): string { return path.join(roo
 function readJson(root: string, relative: string): Dict { return JSON.parse(readFileSync(jsonFile(root, relative), "utf8")) as Dict; }
 function writeJson(file: string, value: unknown): Promise<void> { return fs.mkdir(path.dirname(file), { recursive: true }).then(() => fs.writeFile(file, `${JSON.stringify(value, null, 2)}\n`, "utf8")); }
 function isDigest(value: unknown): value is string { return typeof value === "string" && /^sha256:[0-9a-f]{64}$/u.test(value); }
+function sha256Text(value: string): string { return `sha256:${createHash("sha256").update(value, "utf8").digest("hex")}`; }
 function verifiedControlRecovery(control: Dict): Dict | undefined {
   if (control.policy?.recovery !== undefined && control.recovery !== undefined) throw new Error("verified control may not provide ambiguous policy and top-level recovery objects");
   return control.policy?.recovery ?? control.recovery;
@@ -150,6 +154,52 @@ export function validateVerifiedWriter1Control(control: Dict, inputDigest: strin
 
 function baselineMetadata(value: CursorGitHubBaselineInput): Dict {
   return { kind: value.kind, repository: value.repository, sourceCommit: value.sourceCommit, path: value.path, blobSha: value.blobSha, rawSha256: value.rawSha256, size: value.size, contentSize: value.contentSize, byteDigest: value.byteDigest, sealedHandoffDigest: value.sealedHandoffDigest, authorship: value.authorship };
+}
+
+export async function quarantineWriter1PostDispatchOutput(root: string, input: { rawResult: string; parsedJson: string; format: "plain-json" | "fenced-json"; reason: string; validationCode: string }): Promise<{ outputPath: string; receiptPath: string; rawDigest: string }> {
+  const outputPath = VERIFIED_WRITER1_REJECTED_OUTPUT_PATH;
+  const receiptPath = VERIFIED_WRITER1_REJECTION_RECEIPT_PATH;
+  const outputFile = jsonFile(root, outputPath);
+  const receiptFile = jsonFile(root, receiptPath);
+  JSON.parse(input.parsedJson);
+  const rawDigest = sha256Text(input.rawResult);
+  await fs.mkdir(path.dirname(outputFile), { recursive: true });
+  await fs.writeFile(outputFile, input.rawResult, "utf8");
+  await writeJson(receiptFile, {
+    schemaVersion: "verified-writer1-rejection/v1",
+    status: "rejected-unapproved",
+    stage: "writer1",
+    rawOutputPath: outputPath,
+    rawOutputDigest: rawDigest,
+    rawOutputSize: Buffer.byteLength(input.rawResult, "utf8"),
+    extractedFormat: input.format,
+    validationCode: input.validationCode,
+    reason: input.reason,
+    actionRunId: VERIFIED_WRITER1_POST_DISPATCH.actionRunId,
+    artifactId: VERIFIED_WRITER1_POST_DISPATCH.artifactId,
+    agentId: VERIFIED_WRITER1_POST_DISPATCH.agentId,
+    runId: VERIFIED_WRITER1_POST_DISPATCH.runId,
+    threadUrl: VERIFIED_WRITER1_POST_DISPATCH.threadUrl,
+    requestedModel: VERIFIED_WRITER1_POST_DISPATCH.requestedModel,
+    resolvedModel: VERIFIED_WRITER1_POST_DISPATCH.resolvedModel,
+    effort: VERIFIED_WRITER1_POST_DISPATCH.effort,
+    fast: VERIFIED_WRITER1_POST_DISPATCH.fast,
+    recoveryMessagesSent: 0,
+    approved: false,
+    approvedOutputPath: "canary/outputs/writer1-output.json",
+    writer2Blocked: true,
+    nextStage: null,
+  });
+  return { outputPath, receiptPath, rawDigest };
+}
+
+export async function persistVerifiedWriterFailureSurface(root: string, input: { errorCode: string; retrievalOnly: boolean; quarantined: boolean; messagesSent: number; dispatch?: Dict | undefined; quarantine?: { outputPath: string; receiptPath: string; rawDigest: string } | undefined }): Promise<void> {
+  if (input.quarantined) {
+    if (!input.quarantine) throw new Error("quarantine details are required for a quarantined failure");
+    await writeJson(path.join(root, "canary/runtime/state.json"), { schemaVersion: "verified-writer-state/v2", status: "writer1-validation-failed-quarantined", stage: "writer1", actionRunId: VERIFIED_WRITER1_POST_DISPATCH.actionRunId, artifactId: VERIFIED_WRITER1_POST_DISPATCH.artifactId, agentId: VERIFIED_WRITER1_POST_DISPATCH.agentId, runId: VERIFIED_WRITER1_POST_DISPATCH.runId, threadUrl: VERIFIED_WRITER1_POST_DISPATCH.threadUrl, requestedModel: VERIFIED_WRITER1_POST_DISPATCH.requestedModel, resolvedModel: VERIFIED_WRITER1_POST_DISPATCH.resolvedModel, effort: "high", fast: false, quarantinePath: input.quarantine.outputPath, rejectionReceiptPath: input.quarantine.receiptPath, rawOutputDigest: input.quarantine.rawDigest, recoveryMessagesSent: 0, messagesSent: input.messagesSent, writer2Blocked: true, nextStage: null });
+  }
+  await writeJson(path.join(root, "canary/runtime/failure.json"), { schemaVersion: "verified-writer-failure/v2", status: input.quarantined ? "writer1-validation-failed-quarantined" : "failed", stage: "writer1", errorCode: input.errorCode, writer2Blocked: true, nextStage: null, messagesSent: input.messagesSent, ...(input.retrievalOnly ? { recoveryMessagesSent: 0 } : {}), ...(input.quarantined ? { quarantinePath: VERIFIED_WRITER1_REJECTED_OUTPUT_PATH, rejectionReceiptPath: VERIFIED_WRITER1_REJECTION_RECEIPT_PATH } : {}), ...(input.dispatch ? { agentId: input.dispatch.agentId, threadUrl: input.dispatch.threadUrl, runId: input.dispatch.runId, promptDigest: input.dispatch.promptDigest } : {}) });
+  if (!input.quarantined) await writeJson(path.join(root, "canary/runtime/state.json"), { status: "writer1-failed", stage: "writer1", errorCode: input.errorCode, writer2Blocked: true, nextStage: null, messagesSent: input.messagesSent, ...(input.retrievalOnly ? { recoveryMessagesSent: 0 } : {}), ...(input.dispatch ? { agentId: input.dispatch.agentId, threadUrl: input.dispatch.threadUrl, runId: input.dispatch.runId } : {}) });
 }
 function baselineControlMetadata(value: CursorGitHubBaselineInput): Dict {
   return { kind: value.kind, repository: value.repository, sourceCommit: value.sourceCommit, path: value.path, blobSha: value.blobSha, rawSha256: value.rawSha256, size: value.size, authorship: value.authorship };
@@ -405,10 +455,14 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     try { dispatch = readJson(process.cwd(), "canary/runtime/writer1-dispatch-receipt.json"); } catch { dispatch = undefined; }
     const retrievalOnly = process.argv.includes("--writer1-retrieval-only");
     const priorRoot = process.env.WRITER1_POST_DISPATCH_ROOT;
-    if (!dispatch && retrievalOnly && priorRoot) { try { dispatch = readPriorDispatch(priorRoot); } catch { dispatch = undefined; } }
+    if (!dispatch && retrievalOnly && priorRoot) { try { dispatch = readPriorDispatch(priorRoot).dispatch; } catch { dispatch = undefined; } }
     const messagesSent = dispatch?.runId ? 1 : 0;
-    await writeJson(path.join(process.cwd(), "canary/runtime/failure.json"), { schemaVersion: "verified-writer-failure/v2", status: "failed", stage: "writer1", errorCode: code, writer2Blocked: true, nextStage: null, messagesSent, ...(retrievalOnly ? { recoveryMessagesSent: 0 } : {}), ...(dispatch ? { agentId: dispatch.agentId, threadUrl: dispatch.threadUrl, runId: dispatch.runId, promptDigest: dispatch.promptDigest } : {}) });
-    await writeJson(path.join(process.cwd(), "canary/runtime/state.json"), { status: "writer1-failed", stage: "writer1", errorCode: code, writer2Blocked: true, nextStage: null, messagesSent, ...(retrievalOnly ? { recoveryMessagesSent: 0 } : {}), ...(dispatch ? { agentId: dispatch.agentId, threadUrl: dispatch.threadUrl, runId: dispatch.runId } : {}) });
+    const quarantined = retrievalOnly && error instanceof CursorPostDispatchOutputValidationError;
+    let quarantine: { outputPath: string; receiptPath: string; rawDigest: string } | undefined;
+    if (quarantined && error instanceof CursorPostDispatchOutputValidationError) {
+      quarantine = await quarantineWriter1PostDispatchOutput(process.cwd(), { rawResult: error.rawResult, parsedJson: error.outputJson, format: error.format, reason: error.validationReason, validationCode: error.validationCode });
+    }
+    await persistVerifiedWriterFailureSurface(process.cwd(), { errorCode: code, retrievalOnly, quarantined, messagesSent, dispatch, quarantine });
     console.error(error instanceof Error ? error.message : String(error)); process.exitCode = 1;
   });
 }

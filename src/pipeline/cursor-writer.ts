@@ -65,6 +65,24 @@ export class CursorWriterExecutionError extends Error {
   readonly code: string; readonly details?: unknown;
   constructor(code: string, message: string, details?: unknown) { super(message); this.name = "CursorWriterExecutionError"; this.code = code; this.details = details; }
 }
+export class CursorPostDispatchOutputValidationError extends CursorWriterExecutionError {
+  readonly rawResult: string;
+  readonly outputJson: string;
+  readonly format: "plain-json" | "fenced-json";
+  readonly validationCode: string;
+  readonly validationReason: string;
+  constructor(rawResult: string, outputJson: string, format: "plain-json" | "fenced-json", validationError: unknown) {
+    const validationCode = validationError && typeof validationError === "object" && typeof (validationError as { code?: unknown }).code === "string" ? String((validationError as { code: string }).code) : "WRITER1_OUTPUT_INVALID";
+    const validationReason = validationError instanceof Error ? validationError.message : String(validationError);
+    super("CURSOR_POST_DISPATCH_OUTPUT_INVALID", "Post-dispatch Writer1 output failed validation", { validationCode, validationReason });
+    this.name = "CursorPostDispatchOutputValidationError";
+    this.rawResult = rawResult;
+    this.outputJson = outputJson;
+    this.format = format;
+    this.validationCode = validationCode;
+    this.validationReason = validationReason;
+  }
+}
 function asRecord(value: unknown): RecordValue | null { return value && typeof value === "object" && !Array.isArray(value) ? value as RecordValue : null; }
 const MODEL_ALIAS_MAP: Readonly<Record<string, typeof OFFICIAL_CURSOR_MODEL>> = { [REQUIRED_CURSOR_MODEL]: OFFICIAL_CURSOR_MODEL };
 function modelParameter(item: CursorModelRegistryItem, predicate: (id: string) => boolean): CursorModelParameter | undefined {
@@ -707,7 +725,9 @@ async function recoverCursorWriterPostDispatchInternal(input: CursorPostDispatch
   if (run.id !== input.prior.runId || run.agentId !== input.prior.agentId || run.status !== "finished") throw new CursorWriterExecutionError("CURSOR_POST_DISPATCH_RUN_INVALID", "The exact prior Cursor run is not a completed run for the bound agent");
   const raw = run.result;
   const extracted = extractSingleWriter1Json(raw);
-  const output = input.validateOutput(extracted.json);
+  const rawResult = raw as string;
+  let output: unknown;
+  try { output = input.validateOutput(extracted.json); } catch (error) { throw new CursorPostDispatchOutputValidationError(rawResult, extracted.json, extracted.format, error); }
   const now = input.now || (() => new Date());
   const registryItem = { id: OFFICIAL_CURSOR_MODEL, parameters: [{ id: "fast", values: [{ value: "false" }] }, { id: "effort", values: [{ value: "high" }] }] };
   const request = { apiVersion: API_VERSION, mode: "original-dispatch-attestation", agentId: input.prior.agentId, runId: input.prior.runId, idempotencyKey: input.prior.idempotencyKey, inputDigest: input.prior.inputDigest, promptDigest: input.prior.promptDigest };

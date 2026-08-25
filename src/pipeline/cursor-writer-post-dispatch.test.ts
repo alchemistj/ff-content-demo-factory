@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import {
   createMemoryCursorReceiptStore,
+  CursorPostDispatchOutputValidationError,
   extractSingleWriter1Json,
   OFFICIAL_CURSOR_MODEL,
   recoverCursorWriterPostDispatchForTest,
@@ -62,6 +63,23 @@ test("post-dispatch recovery retrieves exactly one completed result with zero Cu
   assert.deepEqual(counters, { getRun: 1, creates: 0, resumes: 0, sends: 0, waits: 0 });
   const second = await recoverCursorWriterPostDispatchForTest({ env, receiptStore: store, prior: prior(), transport: transport(output, counters), validateOutput: (json) => JSON.parse(json) });
   assert.deepEqual(second.receipt, first.receipt); assert.equal(counters.getRun, 1);
+});
+
+test("parseable rejected output remains available verbatim without a completion receipt", async () => {
+  const counters = { getRun: 0, creates: 0, resumes: 0, sends: 0, waits: 0 };
+  const json = JSON.stringify({ schemaVersion: "words-writer1-output/v1", pages: [{ type: "service", url: "/garage-door-repair", body: "The team can usually finish the job that day." }, { type: "service", url: "/garage-door-installation" }] });
+  const fence = String.fromCharCode(96).repeat(3);
+  const raw = ` \n${fence}json\n${json}\n${fence}\n  `;
+  let caught: unknown;
+  try {
+    await recoverCursorWriterPostDispatchForTest({ env, receiptStore: createMemoryCursorReceiptStore(), prior: prior(), transport: transport(raw, counters), validateOutput: () => { throw new Error("banned mutable language at /pages/0/body"); } });
+  } catch (error) { caught = error; }
+  assert.ok(caught instanceof CursorPostDispatchOutputValidationError);
+  assert.equal((caught as CursorPostDispatchOutputValidationError).rawResult, raw);
+  assert.equal((caught as CursorPostDispatchOutputValidationError).outputJson, json);
+  assert.equal((caught as CursorPostDispatchOutputValidationError).format, "fenced-json");
+  assert.equal((caught as CursorPostDispatchOutputValidationError).validationReason, "banned mutable language at /pages/0/body");
+  assert.deepEqual(counters, { getRun: 1, creates: 0, resumes: 0, sends: 0, waits: 0 });
 });
 
 test("one complete fenced JSON object is accepted, but prose and multiple candidates fail closed", async () => {
