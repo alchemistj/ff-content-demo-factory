@@ -48,7 +48,7 @@ jobs:
           execution_issue='1'
           echo "FACTORY_DISPATCH_ISSUE_NUMBER=$dispatch_issue" >> "$GITHUB_ENV"
           GH_TOKEN="$GH_TOKEN" gh api --paginate "repos/$REPOSITORY/issues/$execution_issue/comments?per_page=100" > canary/phase-a/dispatch-comments.json
-          dispatch_json="$(node scripts/select-cursor-dispatch-comment.js canary/phase-a/dispatch-comments.json "$(REPOSITORY="$REPOSITORY" node -e "process.stdout.write(JSON.stringify({repository:process.env.REPOSITORY,prNumber:'1'}))")")"
+          dispatch_json="$(node scripts/select-cursor-dispatch-comment.js canary/phase-a/dispatch-comments.json "$(REPOSITORY="$REPOSITORY" BRANCH="${{ steps.target.outputs.branch }}" HEAD="${{ steps.target.outputs.head }}" node -e "process.stdout.write(JSON.stringify({repository:process.env.REPOSITORY,prNumber:'1',branch:process.env.BRANCH,reviewedHead:process.env.HEAD}))")")"
           printf '%s\n' "$dispatch_json" > canary/phase-a/dispatch.json
           phase_run="$(DISPATCH_JSON="$dispatch_json" node -e "const {markerValue}=require('./scripts/select-cursor-dispatch-comment');process.stdout.write(markerValue(JSON.parse(process.env.DISPATCH_JSON).body,'Phase-A run')||'')")"
           test -n "$phase_run"
@@ -72,6 +72,7 @@ jobs:
           COMMENT_URL: ${{ github.event.comment.html_url }}
           AUTHOR_LOGIN: ${{ github.event.comment.user.login }}
           COMMENT_BODY: ${{ github.event.comment.body }}
+          FACTORY_STRICT_TERMINAL_BINDING: 'true'
         run: |
           test -n "$GH_TOKEN"
           printf '%s' "$COMMENT_BODY" > canary/phase-a/cursor-terminal-comment.md
@@ -85,16 +86,22 @@ jobs:
           REPOSITORY: ${{ github.repository }}
         run: |
           test -n "$GH_TOKEN"
-          node - <<'NODE'
-          const fs=require('node:fs'); const { markerFor, markerBody }=require('./src/factory/github-ledger');
-          const p=JSON.parse(fs.readFileSync('canary/phase-a/current-head-gate1-pending.json','utf8')); const result=JSON.parse(fs.readFileSync('canary/phase-a/cursor-terminal-result.json','utf8')); const ledgerComments=JSON.parse(fs.readFileSync('canary/phase-a/ledger-comments.json','utf8'));
-          const { assertTransition, findClaim } = require('./src/factory/github-ledger');
-          const posted=findClaim(ledgerComments,{repository:process.env.REPOSITORY,issueNumber:'8',prNumber:'1',branch:p.dispatchPacket.branch,checkedOutSha:p.envelope.checkedOutSha,kind:'dispatch',handoffId:p.handoffId,dispatchKey:p.envelope.dispatchKey,dispatchDigest:p.envelope.dispatchDigest,status:'posted'});
+          GH_TOKEN="$GH_TOKEN" gh api --paginate "repos/$REPOSITORY/issues/$ISSUE_NUMBER/comments?per_page=100" > canary/phase-a/ledger-comments-current.json
+          LEDGER_FILE=canary/phase-a/ledger-comments-current.json REPOSITORY="$REPOSITORY" ISSUE_NUMBER="$ISSUE_NUMBER" node - <<'NODE'
+          const fs=require('node:fs'); const { markerFor, markerBody, assertTransition, findClaim }=require('./src/factory/github-ledger');
+          const p=JSON.parse(fs.readFileSync('canary/phase-a/current-head-gate1-pending.json','utf8')); const result=JSON.parse(fs.readFileSync('canary/phase-a/cursor-terminal-result.json','utf8')); const comments=JSON.parse(fs.readFileSync(process.env.LEDGER_FILE));
+          const context={repository:process.env.REPOSITORY,issueNumber:'8',prNumber:'1',branch:p.dispatchPacket.branch,checkedOutSha:p.envelope.checkedOutSha,kind:'resume',handoffId:p.handoffId,dispatchKey:p.envelope.dispatchKey,dispatchDigest:p.envelope.dispatchDigest,resultId:result.commentId};
+          const prior=findClaim(comments,context);
+          if (prior && prior.status === 'resumed') { fs.appendFileSync(process.env.GITHUB_ENV,'FACTORY_RESUME_ALREADY_CLAIMED=true\n'); process.exit(0); }
+          if (prior && ['in_motion','phase_b_claimed'].includes(prior.status)) { fs.appendFileSync(process.env.GITHUB_ENV,'FACTORY_RESUME_ALREADY_CLAIMED=true\n'); process.exit(0); }
+          if (prior && prior.status === 'terminal') { fs.appendFileSync(process.env.GITHUB_ENV,'FACTORY_TERMINAL_ALREADY_RECORDED=true\n'); process.exit(0); }
+          const posted=findClaim(comments,{...context,kind:'dispatch',handoffId:p.handoffId,dispatchKey:p.envelope.dispatchKey,dispatchDigest:p.envelope.dispatchDigest,resultId:p.envelope.dispatchDigest,status:'posted'});
           if (!posted || !posted.commentId || !posted.commentUrl) throw new Error('Authoritative dispatch marker was not reconciled before in_motion');
-          const marker=markerFor({kind:'resume',repository:process.env.REPOSITORY,issueNumber:process.env.ISSUE_NUMBER,prNumber:p.dispatchPacket.prNumber,branch:p.dispatchPacket.branch,checkedOutSha:p.envelope.checkedOutSha,handoffId:p.handoffId,dispatchKey:p.envelope.dispatchKey,dispatchDigest:p.envelope.dispatchDigest,resultId:process.env.COMMENT_ID,inputDigest:result.receipt.inputDigest,outputDigest:result.receipt.outputDigest,threadUrl:result.receipt.threadUrl,model:result.bundle.model,commentId:process.env.COMMENT_ID,commentUrl:process.env.COMMENT_URL,status:'in_motion'});
-          assertTransition({ ...marker, status: 'posted' }, marker);
-          fs.writeFileSync('canary/phase-a/cursor-in-motion-ledger-marker.md',markerBody(marker));
+          const marker=markerFor({kind:'resume',...context,inputDigest:result.receipt.inputDigest,outputDigest:result.receipt.outputDigest,threadUrl:result.receipt.threadUrl,model:result.bundle.model,commentId:result.commentId,commentUrl:result.commentUrl,status:'in_motion'});
+          assertTransition({ ...marker, status:'posted' }, marker); fs.writeFileSync('canary/phase-a/cursor-in-motion-ledger-marker.md',markerBody(marker));
           NODE
+          if [ "${FACTORY_RESUME_ALREADY_CLAIMED:-false}" = 'true' ]; then exit 0; fi
+          if [ "${FACTORY_TERMINAL_ALREADY_RECORDED:-false}" = 'true' ]; then exit 0; fi
           GH_TOKEN="$GH_TOKEN" gh api "repos/$REPOSITORY/issues/$ISSUE_NUMBER/comments" --method POST -f body="$(cat canary/phase-a/cursor-in-motion-ledger-marker.md)"
       - name: Consume durable resume ledger claim after validation
         env:
@@ -112,14 +119,38 @@ jobs:
           const result = JSON.parse(fs.readFileSync('canary/phase-a/cursor-terminal-result.json','utf8'));
           const expected = { repository: process.env.REPOSITORY, issueNumber: '8', prNumber: '1', branch: result.pending.dispatchPacket.branch, checkedOutSha: result.pending.envelope.checkedOutSha, kind: 'resume', handoffId: process.env.HANDOFF_ID, dispatchKey: process.env.DISPATCH_KEY, dispatchDigest: result.pending.envelope.dispatchDigest, resultId: process.env.RESULT_ID };
           const prior = findClaim(comments, expected);
-          if (prior && prior.status === 'resumed') { fs.writeFileSync('canary/phase-a/resume-already-claimed', 'true'); fs.appendFileSync(process.env.GITHUB_ENV, 'FACTORY_RESUME_ALREADY_CLAIMED=true\n'); process.exit(0); }
+          if (prior && ['in_motion','phase_b_claimed','resumed'].includes(prior.status)) { fs.writeFileSync('canary/phase-a/resume-already-claimed', 'true'); fs.appendFileSync(process.env.GITHUB_ENV, 'FACTORY_RESUME_ALREADY_CLAIMED=true\n'); process.exit(0); }
+          if (prior && prior.status === 'terminal') { fs.writeFileSync('canary/phase-a/terminal-already-recorded', 'true'); process.exit(0); }
           const { assertTransition } = require('./src/factory/github-ledger');
           const marker = markerFor({ kind: 'resume', repository: process.env.REPOSITORY, issueNumber: process.env.ISSUE_NUMBER, prNumber: result.pending.dispatchPacket.prNumber, branch: result.pending.dispatchPacket.branch, checkedOutSha: result.pending.envelope.checkedOutSha, handoffId: process.env.HANDOFF_ID, dispatchKey: process.env.DISPATCH_KEY, dispatchDigest: result.pending.envelope.dispatchDigest, resultId: process.env.RESULT_ID, inputDigest: result.receipt.inputDigest, outputDigest: result.receipt.outputDigest, threadUrl: result.receipt.threadUrl, model: result.bundle.model, status: 'terminal' });
           assertTransition({ ...marker, status: 'in_motion' }, marker);
           fs.writeFileSync('canary/phase-a/cursor-resume-ledger-marker.md', markerBody(marker));
           NODE
-          if [ -f canary/phase-a/resume-already-claimed ]; then exit 0; fi
+          if [ -f canary/phase-a/resume-already-claimed ] || [ -f canary/phase-a/terminal-already-recorded ]; then exit 0; fi
           GH_TOKEN="$GH_TOKEN" gh api "repos/$REPOSITORY/issues/$ISSUE_NUMBER/comments" --method POST -f body="$(cat canary/phase-a/cursor-resume-ledger-marker.md)"
+      - name: Claim durable GitHub phase-B CAS before phase-B work
+        if: env.FACTORY_RESUME_ALREADY_CLAIMED != 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE_NUMBER: ${{ env.FACTORY_DISPATCH_ISSUE_NUMBER }}
+          COMMENT_ID: ${{ github.event.comment.id }}
+          COMMENT_URL: ${{ github.event.comment.html_url }}
+          REPOSITORY: ${{ github.repository }}
+        run: |
+          test -n "$GH_TOKEN"
+          comments="$(GH_TOKEN="$GH_TOKEN" gh api --paginate "repos/$REPOSITORY/issues/$ISSUE_NUMBER/comments?per_page=100")"
+          LEDGER_COMMENTS="$comments" REPOSITORY="$REPOSITORY" ISSUE_NUMBER="$ISSUE_NUMBER" COMMENT_ID="$COMMENT_ID" COMMENT_URL="$COMMENT_URL" node - <<'NODE'
+          const fs=require('node:fs'); const { markerFor, markerBody, assertTransition, findClaim }=require('./src/factory/github-ledger');
+          const p=JSON.parse(fs.readFileSync('canary/phase-a/current-head-gate1-pending.json','utf8')); const result=JSON.parse(fs.readFileSync('canary/phase-a/cursor-terminal-result.json','utf8')); const comments=JSON.parse(process.env.LEDGER_COMMENTS);
+          const context={repository:process.env.REPOSITORY,issueNumber:'8',prNumber:'1',branch:p.dispatchPacket.branch,checkedOutSha:p.envelope.checkedOutSha,kind:'resume',handoffId:p.handoffId,dispatchKey:p.envelope.dispatchKey,dispatchDigest:p.envelope.dispatchDigest,resultId:result.commentId};
+          const prior=findClaim(comments,context);
+          if (prior && ['phase_b_claimed','resumed'].includes(prior.status)) { fs.appendFileSync(process.env.GITHUB_ENV,'FACTORY_RESUME_ALREADY_CLAIMED=true\n'); process.exit(0); }
+          if (!prior || prior.status !== 'terminal') throw new Error('Durable terminal ledger state is required before claiming phase B');
+          const marker=markerFor({kind:'resume',...context,inputDigest:result.receipt.inputDigest,outputDigest:result.receipt.outputDigest,threadUrl:result.receipt.threadUrl,model:result.bundle.model,commentId:process.env.COMMENT_ID,commentUrl:process.env.COMMENT_URL,status:'phase_b_claimed'});
+          assertTransition(prior,marker); fs.writeFileSync('canary/phase-a/cursor-phase-b-claim.md',markerBody(marker));
+          NODE
+          if [ "${FACTORY_RESUME_ALREADY_CLAIMED:-false}" = 'true' ]; then exit 0; fi
+          GH_TOKEN="$GH_TOKEN" gh api "repos/$REPOSITORY/issues/$ISSUE_NUMBER/comments" --method POST -f body="$(cat canary/phase-a/cursor-phase-b-claim.md)"
       - name: Resume phase B automatically from the verified result
         if: env.FACTORY_RESUME_ALREADY_CLAIMED != 'true'
         env:
@@ -134,7 +165,6 @@ jobs:
           FACTORY_BRANCH: ${{ steps.target.outputs.branch }}
           FACTORY_REPOSITORY: ${{ github.repository }}
           FACTORY_HANDOFF_FILE: canary/phase-a/current-head-gate1-pending.json
-          FACTORY_PHASE_B_CAS_FILE: canary/phase-a/phase-b-cas.json
           FACTORY_RESUME_RESULT_ID: ${{ github.event.comment.id }}
         run: |
           node -e "const fs=require('node:fs');const p=JSON.parse(fs.readFileSync('canary/phase-a/current-head-gate1-pending.json','utf8'));const r=JSON.parse(fs.readFileSync('canary/phase-a/cursor-terminal-result.json','utf8'));fs.mkdirSync('canary/phase-b',{recursive:true});fs.writeFileSync('canary/phase-b/cursor-bundle.json',JSON.stringify(r.bundle,null,2)+'\\n');process.env.REQUEST_FILE=p.inputFiles.request;process.env.SELECTION_FILE=p.inputFiles.selection;process.env.QA_FILE=p.inputFiles.qa;"
@@ -142,7 +172,6 @@ jobs:
           request_file="$(node -e "process.stdout.write(JSON.parse(require('fs').readFileSync('$pending','utf8')).inputFiles.request)")"
           selection_file="$(node -e "process.stdout.write(JSON.parse(require('fs').readFileSync('$pending','utf8')).inputFiles.selection)")"
           qa_file="$(node -e "process.stdout.write(JSON.parse(require('fs').readFileSync('$pending','utf8')).inputFiles.qa)")"
-          node -e "const fs=require('node:fs');const p=JSON.parse(fs.readFileSync('$pending','utf8'));const r=JSON.parse(fs.readFileSync('canary/phase-a/cursor-terminal-result.json','utf8'));const {claimPhaseBAtomic}=require('./src/factory/handoff');claimPhaseBAtomic(process.env.FACTORY_PHASE_B_CAS_FILE,{handoffId:p.handoffId,resultId:process.env.FACTORY_RESUME_RESULT_ID||r.commentId});"
           node src/run-gate1-canary.js . "$request_file" "$selection_file" "$qa_file" canary/phase-b/cursor-bundle.json
       - name: Record automatic phase-B completion
         if: success() && env.FACTORY_RESUME_ALREADY_CLAIMED != 'true'
@@ -157,7 +186,7 @@ jobs:
           const p=JSON.parse(fs.readFileSync('canary/phase-a/current-head-gate1-pending.json','utf8')); const result=JSON.parse(fs.readFileSync('canary/phase-a/cursor-terminal-result.json','utf8'));
           const { assertTransition } = require('./src/factory/github-ledger');
           const marker=markerFor({kind:'resume',repository:process.env.GITHUB_REPOSITORY,issueNumber:process.env.ISSUE_NUMBER,prNumber:p.dispatchPacket.prNumber,branch:p.dispatchPacket.branch,checkedOutSha:p.envelope.checkedOutSha,handoffId:p.handoffId,dispatchKey:p.envelope.dispatchKey,dispatchDigest:p.envelope.dispatchDigest,resultId:result.commentId,inputDigest:result.receipt.inputDigest,outputDigest:result.receipt.outputDigest,threadUrl:result.receipt.threadUrl,model:result.bundle.model,status:'resumed'});
-          assertTransition({ ...marker, status: 'terminal' }, marker);
+          assertTransition({ ...marker, status: 'phase_b_claimed' }, marker);
           fs.writeFileSync('canary/phase-a/cursor-resumed-ledger-marker.md',markerBody(marker));
           NODE
           GH_TOKEN="$GH_TOKEN" gh api "repos/$GITHUB_REPOSITORY/issues/$ISSUE_NUMBER/comments" --method POST -f body="$(cat canary/phase-a/cursor-resumed-ledger-marker.md)"
@@ -185,6 +214,6 @@ jobs:
             canary/outputs/current-head-gate1-proof.json
             canary/outputs/gate1.md
             canary/state/factory-state.json
-            canary/phase-a/phase-b-cas.json
+            canary/phase-a/cursor-phase-b-claim.md
           if-no-files-found: error
           retention-days: 30
