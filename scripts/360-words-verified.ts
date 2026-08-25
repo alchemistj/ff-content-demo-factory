@@ -1,4 +1,5 @@
 import { readFileSync } from "node:fs";
+import { createHash } from "node:crypto";
 import * as fs from "node:fs/promises";
 import * as path from "node:path";
 import {
@@ -109,12 +110,18 @@ function validateSealedManifestPins(recovery: Dict): void {
   if (!pin || pin.schemaVersion !== VERIFIED_WRITER1_POST_DISPATCH_SEALED_MANIFEST_SCHEMA || pin.sourceActionRunId !== recovery.sealActionRunId || Number(pin.sourceArtifactId) !== Number(recovery.sealArtifactId) || pin.manifestPath !== VERIFIED_WRITER1_POST_DISPATCH_MANIFEST_PATH || !isDigest(pin.manifestBytesDigest) || !Number.isSafeInteger(pin.manifestSize) || pin.manifestSize < 1 || !isDigest(pin.manifestDigest) || !/^hmac-sha256:[0-9a-f]{64}$/u.test(String(pin.manifestMac)) || typeof pin.sourceSha !== "string" || !/^[0-9a-f]{40}$/u.test(pin.sourceSha)) throw new Error("retrieval-only control is missing exact sealed manifest bytes, digest, MAC, or source pins");
 }
 
+/** The mode-A pin is over the exact downloaded file bytes, never a JSON reserialization. */
+export function verifyPinnedSealedManifestBytes(bytes: Uint8Array, pin: Dict): void {
+  const byteDigest = `sha256:${createHash("sha256").update(bytes).digest("hex")}`;
+  if (bytes.byteLength !== pin.manifestSize || byteDigest !== pin.manifestBytesDigest) throw new Error("sealed manifest bytes do not match the Architect-pinned mode-A artifact");
+}
+
 function readSealedManifest(root: string, recovery: Dict, cursorApiKey: string): CursorPostDispatchReceiptManifest {
   validateSealedManifestPins(recovery);
   const pin = recovery.sealedManifest;
   const file = path.join(process.env.WRITER1_POST_DISPATCH_SEAL_ROOT || root, pin.manifestPath);
   const bytes = readFileSync(file);
-  if (bytes.byteLength !== pin.manifestSize || digestOf(bytes.toString("utf8")) !== pin.manifestBytesDigest) throw new Error("sealed manifest bytes do not match the Architect-pinned mode-A artifact");
+  verifyPinnedSealedManifestBytes(bytes, pin);
   let manifest: Dict; try { manifest = JSON.parse(bytes.toString("utf8")) as Dict; } catch { throw new Error("sealed mode-A manifest is not JSON"); }
   if (manifest.manifestDigest !== pin.manifestDigest || manifest.manifestMac !== pin.manifestMac) throw new Error("sealed manifest digest or MAC pin mismatch");
   if (postDispatchReceiptManifestDigest(manifest as CursorPostDispatchReceiptManifest) !== manifest.manifestDigest || postDispatchReceiptManifestMac(manifest as CursorPostDispatchReceiptManifest, cursorApiKey) !== manifest.manifestMac || manifest.controlBindingDigest !== postDispatchBinding(manifest)) throw new Error("sealed mode-A manifest authenticity or original-dispatch binding failed");

@@ -4,8 +4,9 @@ import * as path from "node:path";
 import test from "node:test";
 import { EXPECTED_VERIFIED_CORRECTION, EXPECTED_VERIFIED_CORRECTION_V2, selectVerifiedWriter1Dispatch, validateControl as rawValidateControl } from "../../scripts/360-words-control.mjs";
 import { validateSealed, writer1Projection } from "../../scripts/360-words-canary.js";
-import { VERIFIED_WRITER1_AGENT_ID, VERIFIED_WRITER1_PROMPT_DIGEST, VERIFIED_WRITER1_PROMPT_V2_DIGEST, validateVerifiedWriter1Control, validateVerifiedWriter1PostDispatchControl, validateVerifiedWriter1SealOnlyControl, verifyOriginalDispatchEvidence, runVerifiedWriter1Correction } from "../../scripts/360-words-verified.js";
+import { VERIFIED_WRITER1_AGENT_ID, VERIFIED_WRITER1_PROMPT_DIGEST, VERIFIED_WRITER1_PROMPT_V2_DIGEST, validateVerifiedWriter1Control, validateVerifiedWriter1PostDispatchControl, validateVerifiedWriter1SealOnlyControl, verifyOriginalDispatchEvidence, runVerifiedWriter1Correction, verifyPinnedSealedManifestBytes } from "../../scripts/360-words-verified.js";
 import { digestOf } from "../../src/contracts/digests.js";
+import { createHash } from "node:crypto";
 import { assertNoLocalDownstreamGeneration, assertVerifiedDownstreamState, VERIFIED_PUBLIC_ROUTES, VERIFIED_STAGE_POLICY, VERIFIED_WRITER3_SEALED_FACTS } from "../../src/pipeline/verified-words-policy.js";
 
 const root = path.resolve(process.cwd());
@@ -118,6 +119,16 @@ test("sealed Action ZIP uses its exact root logical listing and extraction paths
   assert.match(verifiedSource, /manifestPath:\s*VERIFIED_WRITER1_POST_DISPATCH_MANIFEST_PATH/u);
   assert.match(verifiedSource, /pin\.manifestPath\s*!==\s*VERIFIED_WRITER1_POST_DISPATCH_MANIFEST_PATH/u);
   assert.doesNotMatch(verifiedSource, /manifestPath:\s*"canary\/runtime\/writer1-dispatch-manifest\.json"/u);
+});
+
+test("sealed manifest pin verifies exact bytes, not a semantically equivalent JSON reserialization", () => {
+  const exact = Buffer.from('{"schemaVersion":"verified-writer1-dispatch-manifest/v1","value":1}\n', "utf8");
+  const pin = { manifestSize: exact.byteLength, manifestBytesDigest: `sha256:${createHash("sha256").update(exact).digest("hex")}` };
+  assert.doesNotThrow(() => verifyPinnedSealedManifestBytes(exact, pin));
+  const equivalent = Buffer.from(JSON.stringify(JSON.parse(exact.toString("utf8"))), "utf8");
+  assert.deepEqual(JSON.parse(equivalent.toString("utf8")), JSON.parse(exact.toString("utf8")));
+  assert.notDeepEqual(equivalent, exact);
+  assert.throws(() => verifyPinnedSealedManifestBytes(equivalent, pin), /sealed manifest bytes do not match/u);
 });
 
 test("two-step seal-only mode is classified separately and has no Cursor retrieval path", () => {
