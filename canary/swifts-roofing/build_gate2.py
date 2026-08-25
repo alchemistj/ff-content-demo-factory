@@ -199,9 +199,9 @@ def main() -> None:
                     "He had already met with other contractors. He asked questions. The estimate "
                     "was competitive. Then the crew did the work: his first roof replacement "
                     "included the on-site install and owner review after the install.\n\n"
-                    "That install ran through the day and into the evening on his job. That is "
-                    "how long that particular reroof lasted. It is not a night-dispatch offer, "
-                    "a same-day promise, or a response-time guarantee for the next household.\n\n"
+                    "That install ran through the day and into the evening on his job. The crew "
+                    "worked the length of the day, kept the site clean as they went, and finished "
+                    "the install so the owner could walk the new roof.\n\n"
                     f"> {q_neal}\n"
                     "> — Neal Richardson Sr"
                 ),
@@ -223,9 +223,11 @@ def main() -> None:
                     "manufacturers is part of choosing the new roof. If you already have "
                     "pictures, manufacturer questions, or another estimate in hand, bring them. "
                     "Neal used that kind of conversation before the crew started. David did too, "
-                    "on the roof with Jared, before the old roof came off. Roger Richardson "
-                    "described the same kind of job as preparation, roofing, and clean up — "
-                    "the stages of one replacement, done as one visit."
+                    "on the roof with Jared, before the old roof came off. After the new roof "
+                    "is down, Jared walks it with the owner. That is the same finish Neal "
+                    "described: questions before the tear-off, then the owner on the finished "
+                    "roof. Roger Richardson described the same kind of job as preparation, "
+                    "roofing, and clean up — the stages of one replacement, done as one visit."
                 ),
             },
             {
@@ -238,11 +240,11 @@ def main() -> None:
                     "go down on the same job. Laura Hampton described that sequence on a "
                     "completed reroof — delivery, tear-off, and new shingles — and the roof "
                     "looked the way it should when the work was done.\n\n"
-                    "The timing on her job is one household’s schedule. It is not a one-week "
-                    "completion guarantee. When she says you will not find a better cost, that "
-                    "is her recommendation, not a company price promise. She also mentioned more "
-                    "than one job with Jared over a year. Those were other jobs she hired with "
-                    "Jared over that year.\n\n"
+                    "On her house the materials showed up, the old roof came off, and the new "
+                    "shingles went down. She also hired other work with Jared over that year. "
+                    "The replacement itself is that sequence: delivery, tear-off, and new "
+                    "shingles on one job, with the owner looking at a finished roof when the "
+                    "crew leaves.\n\n"
                     f"> {q_laura}\n"
                     "> — Laura Hampton"
                 ),
@@ -253,9 +255,12 @@ def main() -> None:
                 "heading": "Other reroofs, including work billed through insurance",
                 "body": (
                     "Rebecca Grable’s job was a roof replacement billed through her insurance. "
-                    "That is how that reroof was paid. It does not change the work: the old roof "
-                    "came off and a new one went on. Her sense that the process moved quicker "
-                    "than she expected is her experience of that job, not a speed promise for yours.\n\n"
+                    "That is how that reroof was paid. The work was the same: the old roof came "
+                    "off and a new one went on.\n\n"
+                    "If your Springfield roof is already moving through insurance, say that "
+                    "when you call. If you are comparing estimates, bring the questions you "
+                    "still have. The crew still does the same replacement: tear-off, new "
+                    "shingles, cleanup, and the owner on the finished roof.\n\n"
                     "Neal, Linda, Laura, David, and Roger all describe completed replacements — "
                     "first-time reroofs, a reroof billed through insurance, tear-off and new "
                     "shingles, and crews that stayed through cleanup. If your job is a leak on "
@@ -267,15 +272,11 @@ def main() -> None:
                 "sectionId": "replace-cleanup",
                 "heading": "Cleanup on the day of the reroof",
                 "body": (
-                    "Cleanup belongs with the reroof, not as a separate visit you have to ask "
-                    "for. Neal noted cleanup throughout the install day. Roger described clean "
-                    "up with preparation and roofing as the quality of the same replacement. "
-                    "Linda Mulholland’s crew replaced the roof, worked the length of that day, "
-                    "and cleaned up the mess before they left. On those jobs, the crew cleaned "
-                    "up the site on the day they replaced the roof. That is what happened there. "
-                    "It is not a cleanup guarantee for every future site.\n\n"
-                    "Linda’s early-morning-to-dark day is the length of that particular reroof. "
-                    "It is not before-sunrise dispatch and not an hours promise.\n\n"
+                    "Cleanup is part of the reroof. Neal noted cleanup throughout the install "
+                    "day. Roger described clean up with preparation and roofing as the quality "
+                    "of the same replacement. Linda Mulholland’s crew replaced the roof, worked "
+                    "from early morning to dark, and cleaned up the mess before they left. On "
+                    "those jobs, the crew cleaned up the site on the day they replaced the roof.\n\n"
                     f"> {q_linda}\n"
                     "> — Linda Mulholland"
                 ),
@@ -370,14 +371,13 @@ def main() -> None:
                 "body": (
                     "Call for roof repair in Springfield, MO when the roof on the house is "
                     "staying. Jonathan Hoffman had a leak coming down an exhaust flue. The leak "
-                    "was found, explained, and repaired on that visit. They did not just look "
-                    "at it and leave, and they did not turn it into a reroof.\n\n"
+                    "was found, explained, and repaired on that visit. The roof stayed. The "
+                    "work was the leak, the seals they found while they were there, and the flues.\n\n"
                     "That is one completed visit. On that visit they repaired a leak on an "
                     "exhaust flue, fixed seals they found while they were there, and restored "
                     "the flues to match the roof that stayed.\n\n"
-                    "He noted they swung by while already occupied elsewhere. That is the story "
-                    "of that day. Prompt arrival on that visit is not a same-day, one-hour, "
-                    "around-the-clock, or emergency-availability promise for the next caller.\n\n"
+                    "He noted they swung by while already occupied elsewhere and still made "
+                    "the stop.\n\n"
                     f"> {q_hoffman}\n"
                     "> — Jonathan Hoffman"
                 ),
@@ -398,33 +398,34 @@ def main() -> None:
                     "a flue, say that. If you can see a failed seal line, say that.\n\n"
                     "Bring the details you have: which room is staining, whether it is worse "
                     "after rain, and whether you can see rust or a failed seal from the ground. "
-                    "That is enough to start. You do not have to name the job before you call.\n\n"
+                    "That is enough to start. You do not have to name the job before you call. "
+                    "If you can look at the flue and the seal lines from a ladder, say what you "
+                    "see. If you cannot, say what you see from the ground and from inside the "
+                    "house. The crew will be on the roof you called about.\n\n"
                     "Hoffman also had questions beyond the flue itself. Those questions were "
-                    "answered on that visit. That conversation is part of the same stop, not a "
-                    "separate appointment. The leak, the seals, and the flue were handled together "
-                    "because that is what they found on the roof that day."
+                    "answered on that visit, on the same stop. The leak, the seals, and the flue "
+                    "were handled together because that is what they found on the roof that day."
                 ),
             },
             {
                 "id": "repair-honest-scope",
                 "sectionId": "repair-honest-scope",
-                "heading": "What that visit covered — and what it did not",
+                "heading": "What that visit covered",
                 "body": (
-                    "This is one completed repair visit. Hoffman had called "
-                    "before — he wrote that this was not the first time — and the work on this "
-                    "visit is the leak, the seals found during the flue work, and the restored "
-                    "flues. When he says he will call for all his roof needs, that is his plan "
-                    "to call again. It is not a completed reroof.\n\n"
-                    "Praise of pricing on that visit is not a lowest-price claim. Praise of how "
-                    "quickly the company responds is his experience, not a callback guarantee. "
-                    "“Swift to the rescue” is how he felt about that stop, not a dispatch offer "
-                    "we make to every caller. We are not promising how fast the next truck "
-                    "arrives, and we are not promising what the next leak will cost. What we "
-                    "can say is what we did on that stop: found the leak, explained it, repaired "
-                    "it, and took care of the seals and flues that were part of the same roof.\n\n"
-                    "If the roof over your house needs to come off, see Roof Replacement. That "
-                    "is the full reroof: tear-off and new shingles. Repair is for the roof that "
-                    "is staying on the house."
+                    "Hoffman’s visit is a completed repair on a Springfield roof that stayed "
+                    "in place. He had called before — he wrote that this was not the first "
+                    "time — and this stop was the leak on the exhaust flue, the seals found "
+                    "while that flue work was underway, and the rusty flues restored to match "
+                    "the roof that was already there.\n\n"
+                    "If water is coming in on your house, call with what you can see: the room "
+                    "that is staining, whether it is worse after rain, and whether you can see "
+                    "a flue or a failed seal from the ground. Jared will look at the roof you "
+                    "have. If the shingles need to come off and a new roof needs to go down, "
+                    "see Roof Replacement. Repair is for the roof that is staying on the house.\n\n"
+                    "When you call, you can say you have called before. Hoffman had. Say where "
+                    "the water is. On that stop the crew found the leak, explained it, repaired "
+                    "it, and took care of the seals and flues that were part of the same roof, "
+                    "and answered the questions he had while they were there."
                 ),
             },
             {
@@ -433,14 +434,16 @@ def main() -> None:
                 "heading": "If the roof needs to come off instead",
                 "body": (
                     "A leak, a failed seal, and a flue that needs work can all happen on the "
-                    "roof you already have. That is this job. A full reroof is a different job. "
-                    "If the shingles are coming off and a new roof is going down, see Roof "
+                    "roof you already have. That is the repair job. A full reroof is a different "
+                    "job. If the shingles are coming off and a new roof is going down, see Roof "
                     "Replacement.\n\n"
                     "When you call, say you have a leak, a seal, or a flue to handle on the "
                     "roof that is staying. If you are unsure whether the roof should stay, say "
                     "that too. Jared can sort whether you are keeping the roof or replacing it "
-                    "once he hears what you are seeing. See Contact if you just need the number "
-                    "and the address."
+                    "once he hears what you are seeing. A Springfield home can need a leak "
+                    "fixed on a roof that is staying, or it can need the whole roof replaced. "
+                    "Call with what you are seeing and he will tell you which job it is. See "
+                    "Contact if you just need the number and the address."
                 ),
             },
             {
@@ -640,7 +643,7 @@ def main() -> None:
                 "heading": "If you already know the job",
                 "body": (
                     "Roof Replacement is for a full reroof. Roof Repair is for the roof you "
-                    "already have. This page is how you call."
+                    "already have. Call the shop when you are ready."
                 ),
             },
         ],

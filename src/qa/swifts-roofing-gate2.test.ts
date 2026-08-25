@@ -87,6 +87,23 @@ test("Swifts Roofing Gate 2 words package meets the four-page contract", async (
     "this demo does not",
     "extra destinations to look busier",
     "this page is allowed",
+    "night-dispatch",
+    "same-day promise",
+    "response-time guarantee",
+    "cleanup guarantee",
+    "before-sunrise",
+    "hours promise",
+    "completion guarantee",
+    "company price promise",
+    "speed promise",
+    "lowest-price",
+    "callback guarantee",
+    "dispatch offer",
+    "we are not promising",
+    "emergency-availability",
+    "not a night-dispatch",
+    "not a cleanup guarantee",
+    "swift to the rescue",
   ]) {
     assert.ok(!publicPages.toLowerCase().includes(phrase.toLowerCase()), `public pages must not contain factory phrasing: ${phrase}`);
   }

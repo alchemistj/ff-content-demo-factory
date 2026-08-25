@@ -93,8 +93,8 @@ const assessor = (): IntelligentAssessment => ({
     {
       dimension: "unsupported-claims",
       severity: "note",
-      summary: "Timing, price, cleanup, and availability are not converted into promises.",
-      rationale: "Evening, early-morning-to-dark, within-a-week, promptly, and SWIFT responses stay anecdotal. No 24/7, no hail/commercial/storm product, no star rating or review count.",
+      summary: "Named-job timing and price stay in the reviews, not as company offers.",
+      rationale: "Replacement and repair tell the named jobs in past tense. Public copy does not convert evening, early-morning-to-dark, within-a-week, promptly, or SWIFT language into company offers. No 24/7, no hail/commercial/storm product, no star rating or review count.",
     },
     {
       dimension: "generic-ai-filler",
@@ -159,7 +159,7 @@ Directly readable words package for Swifts Roofing. Natural reading order is Hom
 - Both service pages meet the required ≥800-word floor for this Swifts Gate 2 package.
 - Architect QA Writer 1: **awaiting Josh's look** (not accepted; this writer did not self-approve)
 - Architect QA Writer 2: **awaiting Josh's look** (not accepted; this writer did not self-approve)
-- Owner-facing pages rewritten as company copy (no factory-rule sentences on Home, Replacement, or Repair)
+- Owner-facing pages tell the job as Swifts copy (no factory-rule sentences and no not-a-promise litigation on Home, Replacement, Repair, or Contact)
 - Writer 3 Strategy Overview: internal only
 - Whole-site QA: **${wholeSite.pass ? "pass" : "fail"}** (writer-run continuity / evidence / topology check; Architect slots remain open)
 - reviewEvidence: pointer ledger only (no word-bearing keys)
@@ -201,18 +201,18 @@ This slot is recorded after Writer 1 (Roof Replacement and Roof Repair). Owner-f
 
 ### Roof Replacement section jobs
 
-- \`replace-when\` (direct-answer): Full reroof vs keeping the roof; Neal Richardson Sr is the first replacement with install, cleanup, and owner review. Evening duration is that job only.
-- \`replace-estimate\` (process): Questions and estimate before tear-off; owner review after install; David Carson manufacturer talk stays consultation on the reroof; Roger’s prep/roofing/cleanup are stages of one replacement.
-- \`replace-shingles\` (method): Tear-off and new shingles are how a reroof is finished; Laura Hampton is the quoted proof. No price guarantee. Extra jobs she hired are not extra offerings.
+- \`replace-when\` (direct-answer): Full reroof vs keeping the roof; Neal Richardson Sr is the first replacement with install, cleanup, and owner review. The evening length is told as that job.
+- \`replace-estimate\` (process): Questions and estimate before tear-off; owner review after install; David Carson manufacturer talk stays on the reroof; Roger’s prep/roofing/cleanup are stages of one replacement.
+- \`replace-shingles\` (method): Tear-off and new shingles are how a reroof is finished; Laura Hampton is the quoted proof.
 - \`replace-named-jobs\` (scope): Grable’s reroof billed through insurance is how that job was paid. Remaining named reroofs stay here. Leaks on a roof you keep go to repair.
-- \`replace-cleanup\` (finish-expectation): Linda Mulholland quoted for cleanup on the replacement day. Not a cleanup guarantee. Early-morning-to-dark is not dispatch.
+- \`replace-cleanup\` (finish-expectation): Linda Mulholland quoted for cleanup on the replacement day, early morning to dark on that job.
 - \`replace-next\` (next-step): Call, or see Roof Repair / Contact.
 
 ### Roof Repair section jobs
 
-- \`repair-when\` (direct-answer): Keep the roof you have. Hoffman leak on an exhaust flue, found, explained, and repaired. One completed visit. Prompt/occupied-elsewhere timing is not an SLA.
+- \`repair-when\` (direct-answer): Keep the roof you have. Hoffman leak on an exhaust flue, found, explained, and repaired. One completed visit. Occupied-elsewhere timing is told as that day.
 - \`repair-same-visit\` (confirmed-scope): Leak, seals found during flue work, restored flues color-matched to the roof that stayed. Questions answered on that stop.
-- \`repair-honest-scope\` (evidence-limit): One suitable review; he had called before; pricing and speed praise are not company promises.
+- \`repair-honest-scope\` (confirmed-scope): He had called before; the work on that stop was the leak, the seals, and the flues. If the roof needs to come off, see Roof Replacement.
 - \`repair-not-other-jobs\` (boundary): If the roof needs to come off, see Roof Replacement.
 - \`repair-next\` (next-step): Call with where the water is.
 

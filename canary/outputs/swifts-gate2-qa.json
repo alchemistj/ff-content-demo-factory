@@ -3,10 +3,10 @@
   "wholeSitePass": true,
   "pointerLedgerWordBearingKeys": [],
   "wordCounts": {
-    "/roof-replacement": 908,
-    "/roof-repair": 876,
+    "/roof-replacement": 912,
+    "/roof-repair": 918,
     "/": 485,
-    "/contact": 79
+    "/contact": 80
   },
   "deterministicFindings": [
     {
@@ -22,20 +22,20 @@
     {
       "code": "review-density-reported",
       "severity": "info",
-      "message": "Page contains 996 words across 3 review placement(s); density is informational only.",
+      "message": "Page contains 1000 words across 3 review placement(s); density is informational only.",
       "route": "/roof-replacement",
       "details": {
-        "words": 996,
+        "words": 1000,
         "reviews": 3
       }
     },
     {
       "code": "review-density-reported",
       "severity": "info",
-      "message": "Page contains 931 words across 1 review placement(s); density is informational only.",
+      "message": "Page contains 973 words across 1 review placement(s); density is informational only.",
       "route": "/roof-repair",
       "details": {
-        "words": 931,
+        "words": 973,
         "reviews": 1
       }
     }
@@ -54,20 +54,20 @@
     {
       "code": "review-density-reported",
       "severity": "info",
-      "message": "Page contains 996 words across 3 review placement(s); density is informational only.",
+      "message": "Page contains 1000 words across 3 review placement(s); density is informational only.",
       "route": "/roof-replacement",
       "details": {
-        "words": 996,
+        "words": 1000,
         "reviews": 3
       }
     },
     {
       "code": "review-density-reported",
       "severity": "info",
-      "message": "Page contains 931 words across 1 review placement(s); density is informational only.",
+      "message": "Page contains 973 words across 1 review placement(s); density is informational only.",
       "route": "/roof-repair",
       "details": {
-        "words": 931,
+        "words": 973,
         "reviews": 1
       }
     },
@@ -146,7 +146,7 @@
     {
       "code": "intelligent-unsupported-claims",
       "severity": "info",
-      "message": "Timing, price, cleanup, and availability are not converted into promises. Evening, early-morning-to-dark, within-a-week, promptly, and SWIFT responses stay anecdotal. No 24/7, no hail/commercial/storm product, no star rating or review count.",
+      "message": "Named-job timing and price stay in the reviews, not as company offers. Replacement and repair tell the named jobs in past tense. Public copy does not convert evening, early-morning-to-dark, within-a-week, promptly, or SWIFT language into company offers. No 24/7, no hail/commercial/storm product, no star rating or review count.",
       "details": {
         "dimension": "unsupported-claims",
         "evidence": []

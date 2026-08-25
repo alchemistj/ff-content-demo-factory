@@ -4,12 +4,12 @@ Directly readable words package for Swifts Roofing. Natural reading order is Hom
 
 ## Completion contract
 
-- Roof Replacement useful-body word count: **908**
-- Roof Repair useful-body word count: **876**
+- Roof Replacement useful-body word count: **912**
+- Roof Repair useful-body word count: **918**
 - Both service pages meet the required ≥800-word floor for this Swifts Gate 2 package.
 - Architect QA Writer 1: **awaiting Josh's look** (not accepted; this writer did not self-approve)
 - Architect QA Writer 2: **awaiting Josh's look** (not accepted; this writer did not self-approve)
-- Owner-facing pages rewritten as company copy (no factory-rule sentences on Home, Replacement, or Repair)
+- Owner-facing pages tell the job as Swifts copy (no factory-rule sentences and no not-a-promise litigation on Home, Replacement, Repair, or Contact)
 - Writer 3 Strategy Overview: internal only
 - Whole-site QA: **pass** (writer-run continuity / evidence / topology check; Architect slots remain open)
 - reviewEvidence: pointer ledger only (no word-bearing keys)
@@ -37,7 +37,7 @@ Directly readable words package for Swifts Roofing. Natural reading order is Hom
 - Deterministic QA: **pass**
 - Whole-site QA: **pass**
 - Pointer-ledger word-bearing keys: **none**
-- Service-page word floor: replacement 908, repair 876
+- Service-page word floor: replacement 912, repair 918
 - Four public business pages only: `/`, `/roof-replacement`, `/roof-repair`, `/contact`
 - Strategy Overview has no public URL/path/route
 - Header/footer resolve only those four routes plus the typed phone action
@@ -51,18 +51,18 @@ This slot is recorded after Writer 1 (Roof Replacement and Roof Repair). Owner-f
 
 ### Roof Replacement section jobs
 
-- `replace-when` (direct-answer): Full reroof vs keeping the roof; Neal Richardson Sr is the first replacement with install, cleanup, and owner review. Evening duration is that job only.
-- `replace-estimate` (process): Questions and estimate before tear-off; owner review after install; David Carson manufacturer talk stays consultation on the reroof; Roger’s prep/roofing/cleanup are stages of one replacement.
-- `replace-shingles` (method): Tear-off and new shingles are how a reroof is finished; Laura Hampton is the quoted proof. No price guarantee. Extra jobs she hired are not extra offerings.
+- `replace-when` (direct-answer): Full reroof vs keeping the roof; Neal Richardson Sr is the first replacement with install, cleanup, and owner review. The evening length is told as that job.
+- `replace-estimate` (process): Questions and estimate before tear-off; owner review after install; David Carson manufacturer talk stays on the reroof; Roger’s prep/roofing/cleanup are stages of one replacement.
+- `replace-shingles` (method): Tear-off and new shingles are how a reroof is finished; Laura Hampton is the quoted proof.
 - `replace-named-jobs` (scope): Grable’s reroof billed through insurance is how that job was paid. Remaining named reroofs stay here. Leaks on a roof you keep go to repair.
-- `replace-cleanup` (finish-expectation): Linda Mulholland quoted for cleanup on the replacement day. Not a cleanup guarantee. Early-morning-to-dark is not dispatch.
+- `replace-cleanup` (finish-expectation): Linda Mulholland quoted for cleanup on the replacement day, early morning to dark on that job.
 - `replace-next` (next-step): Call, or see Roof Repair / Contact.
 
 ### Roof Repair section jobs
 
-- `repair-when` (direct-answer): Keep the roof you have. Hoffman leak on an exhaust flue, found, explained, and repaired. One completed visit. Prompt/occupied-elsewhere timing is not an SLA.
+- `repair-when` (direct-answer): Keep the roof you have. Hoffman leak on an exhaust flue, found, explained, and repaired. One completed visit. Occupied-elsewhere timing is told as that day.
 - `repair-same-visit` (confirmed-scope): Leak, seals found during flue work, restored flues color-matched to the roof that stayed. Questions answered on that stop.
-- `repair-honest-scope` (evidence-limit): One suitable review; he had called before; pricing and speed praise are not company promises.
+- `repair-honest-scope` (confirmed-scope): He had called before; the work on that stop was the leak, the seals, and the flues. If the roof needs to come off, see Roof Replacement.
 - `repair-not-other-jobs` (boundary): If the roof needs to come off, see Roof Replacement.
 - `repair-next` (next-step): Call with where the water is.
 
@@ -201,7 +201,7 @@ Call for roof replacement in Springfield, MO when the roof on the house is comin
 
 Neal Richardson Sr. came to Swifts Roofing for his first roof replacement. He had already met with other contractors. He asked questions. The estimate was competitive. Then the crew did the work: his first roof replacement included the on-site install and owner review after the install.
 
-That install ran through the day and into the evening on his job. That is how long that particular reroof lasted. It is not a night-dispatch offer, a same-day promise, or a response-time guarantee for the next household.
+That install ran through the day and into the evening on his job. The crew worked the length of the day, kept the site clean as they went, and finished the install so the owner could walk the new roof.
 
 > During the install, the workers were respectful and professional, worked hard throughout the day into the evening, and did a clean and quality install. They also were good about cleanup throughout the day.
 > — Neal Richardson Sr
@@ -210,28 +210,28 @@ That install ran through the day and into the evening on his job. That is how lo
 
 A replacement starts before anyone pulls shingles. Neal compared Swifts Roofing with other contractors and used that conversation to get his questions answered. After the install, the owner walked the finished roof and answered what was still open. If you are choosing among contractors, bring the questions you still have. If you already know you need a full reroof, say that when you call.
 
-David Carson also spent time on the roof with Jared before the crew put the new one down: pictures, how water moves, and the differences between manufacturers. Jared replaced that roof. Talking through shingles and manufacturers is part of choosing the new roof. If you already have pictures, manufacturer questions, or another estimate in hand, bring them. Neal used that kind of conversation before the crew started. David did too, on the roof with Jared, before the old roof came off. Roger Richardson described the same kind of job as preparation, roofing, and clean up — the stages of one replacement, done as one visit.
+David Carson also spent time on the roof with Jared before the crew put the new one down: pictures, how water moves, and the differences between manufacturers. Jared replaced that roof. Talking through shingles and manufacturers is part of choosing the new roof. If you already have pictures, manufacturer questions, or another estimate in hand, bring them. Neal used that kind of conversation before the crew started. David did too, on the roof with Jared, before the old roof came off. After the new roof is down, Jared walks it with the owner. That is the same finish Neal described: questions before the tear-off, then the owner on the finished roof. Roger Richardson described the same kind of job as preparation, roofing, and clean up — the stages of one replacement, done as one visit.
 
 ### Tear-off and new shingles
 
 A full reroof is tear-off and putting new shingles down. That is how Swifts finishes a replacement: the old roof comes off, and the new shingles go down on the same job. Laura Hampton described that sequence on a completed reroof — delivery, tear-off, and new shingles — and the roof looked the way it should when the work was done.
 
-The timing on her job is one household’s schedule. It is not a one-week completion guarantee. When she says you will not find a better cost, that is her recommendation, not a company price promise. She also mentioned more than one job with Jared over a year. Those were other jobs she hired with Jared over that year.
+On her house the materials showed up, the old roof came off, and the new shingles went down. She also hired other work with Jared over that year. The replacement itself is that sequence: delivery, tear-off, and new shingles on one job, with the owner looking at a finished roof when the crew leaves.
 
 > from delivery to tear off to putting new shingles down within a week the job is done and the roof looks so good!
 > — Laura Hampton
 
 ### Other reroofs, including work billed through insurance
 
-Rebecca Grable’s job was a roof replacement billed through her insurance. That is how that reroof was paid. It does not change the work: the old roof came off and a new one went on. Her sense that the process moved quicker than she expected is her experience of that job, not a speed promise for yours.
+Rebecca Grable’s job was a roof replacement billed through her insurance. That is how that reroof was paid. The work was the same: the old roof came off and a new one went on.
+
+If your Springfield roof is already moving through insurance, say that when you call. If you are comparing estimates, bring the questions you still have. The crew still does the same replacement: tear-off, new shingles, cleanup, and the owner on the finished roof.
 
 Neal, Linda, Laura, David, and Roger all describe completed replacements — first-time reroofs, a reroof billed through insurance, tear-off and new shingles, and crews that stayed through cleanup. If your job is a leak on a roof you intend to keep, see Roof Repair instead.
 
 ### Cleanup on the day of the reroof
 
-Cleanup belongs with the reroof, not as a separate visit you have to ask for. Neal noted cleanup throughout the install day. Roger described clean up with preparation and roofing as the quality of the same replacement. Linda Mulholland’s crew replaced the roof, worked the length of that day, and cleaned up the mess before they left. On those jobs, the crew cleaned up the site on the day they replaced the roof. That is what happened there. It is not a cleanup guarantee for every future site.
-
-Linda’s early-morning-to-dark day is the length of that particular reroof. It is not before-sunrise dispatch and not an hours promise.
+Cleanup is part of the reroof. Neal noted cleanup throughout the install day. Roger described clean up with preparation and roofing as the quality of the same replacement. Linda Mulholland’s crew replaced the roof, worked from early morning to dark, and cleaned up the mess before they left. On those jobs, the crew cleaned up the site on the day they replaced the roof.
 
 > The crew who replaced our roof were amazing. They worked from early morning to dark and completely cleaned up all of the mess, even though I know they had to be exhausted.
 > — Linda Mulholland
@@ -258,11 +258,11 @@ If water is coming in, a seal has failed, or a flue on the roof needs work, star
 
 ### When you want to keep the roof you have
 
-Call for roof repair in Springfield, MO when the roof on the house is staying. Jonathan Hoffman had a leak coming down an exhaust flue. The leak was found, explained, and repaired on that visit. They did not just look at it and leave, and they did not turn it into a reroof.
+Call for roof repair in Springfield, MO when the roof on the house is staying. Jonathan Hoffman had a leak coming down an exhaust flue. The leak was found, explained, and repaired on that visit. The roof stayed. The work was the leak, the seals they found while they were there, and the flues.
 
 That is one completed visit. On that visit they repaired a leak on an exhaust flue, fixed seals they found while they were there, and restored the flues to match the roof that stayed.
 
-He noted they swung by while already occupied elsewhere. That is the story of that day. Prompt arrival on that visit is not a same-day, one-hour, around-the-clock, or emergency-availability promise for the next caller.
+He noted they swung by while already occupied elsewhere and still made the stop.
 
 > Had a leak coming down an exhaust flume. Even while on an emergency call, Swift made the time to swing by promptly to check out the issue, find a fix and repair it. Not only were my concerns addressed and explained, he also repaired a few seal issues he found while working on the flue.
 > — Jonathan Hoffman
@@ -273,23 +273,23 @@ Hoffman’s leak showed up at an exhaust flue. While that flue work was underway
 
 That is how the stop went: find where the water is coming in, explain it, fix the leak, and handle what they find next to it while they are already on the roof. If you call about a leak, say where the water is showing up inside the house and what you can see on the roof. If the stain tracks to a flue, say that. If you can see a failed seal line, say that.
 
-Bring the details you have: which room is staining, whether it is worse after rain, and whether you can see rust or a failed seal from the ground. That is enough to start. You do not have to name the job before you call.
+Bring the details you have: which room is staining, whether it is worse after rain, and whether you can see rust or a failed seal from the ground. That is enough to start. You do not have to name the job before you call. If you can look at the flue and the seal lines from a ladder, say what you see. If you cannot, say what you see from the ground and from inside the house. The crew will be on the roof you called about.
 
-Hoffman also had questions beyond the flue itself. Those questions were answered on that visit. That conversation is part of the same stop, not a separate appointment. The leak, the seals, and the flue were handled together because that is what they found on the roof that day.
+Hoffman also had questions beyond the flue itself. Those questions were answered on that visit, on the same stop. The leak, the seals, and the flue were handled together because that is what they found on the roof that day.
 
-### What that visit covered — and what it did not
+### What that visit covered
 
-This is one completed repair visit. Hoffman had called before — he wrote that this was not the first time — and the work on this visit is the leak, the seals found during the flue work, and the restored flues. When he says he will call for all his roof needs, that is his plan to call again. It is not a completed reroof.
+Hoffman’s visit is a completed repair on a Springfield roof that stayed in place. He had called before — he wrote that this was not the first time — and this stop was the leak on the exhaust flue, the seals found while that flue work was underway, and the rusty flues restored to match the roof that was already there.
 
-Praise of pricing on that visit is not a lowest-price claim. Praise of how quickly the company responds is his experience, not a callback guarantee. “Swift to the rescue” is how he felt about that stop, not a dispatch offer we make to every caller. We are not promising how fast the next truck arrives, and we are not promising what the next leak will cost. What we can say is what we did on that stop: found the leak, explained it, repaired it, and took care of the seals and flues that were part of the same roof.
+If water is coming in on your house, call with what you can see: the room that is staining, whether it is worse after rain, and whether you can see a flue or a failed seal from the ground. Jared will look at the roof you have. If the shingles need to come off and a new roof needs to go down, see Roof Replacement. Repair is for the roof that is staying on the house.
 
-If the roof over your house needs to come off, see Roof Replacement. That is the full reroof: tear-off and new shingles. Repair is for the roof that is staying on the house.
+When you call, you can say you have called before. Hoffman had. Say where the water is. On that stop the crew found the leak, explained it, repaired it, and took care of the seals and flues that were part of the same roof, and answered the questions he had while they were there.
 
 ### If the roof needs to come off instead
 
-A leak, a failed seal, and a flue that needs work can all happen on the roof you already have. That is this job. A full reroof is a different job. If the shingles are coming off and a new roof is going down, see Roof Replacement.
+A leak, a failed seal, and a flue that needs work can all happen on the roof you already have. That is the repair job. A full reroof is a different job. If the shingles are coming off and a new roof is going down, see Roof Replacement.
 
-When you call, say you have a leak, a seal, or a flue to handle on the roof that is staying. If you are unsure whether the roof should stay, say that too. Jared can sort whether you are keeping the roof or replacing it once he hears what you are seeing. See Contact if you just need the number and the address.
+When you call, say you have a leak, a seal, or a flue to handle on the roof that is staying. If you are unsure whether the roof should stay, say that too. Jared can sort whether you are keeping the roof or replacing it once he hears what you are seeing. A Springfield home can need a leak fixed on a roof that is staying, or it can need the whole roof replaced. Call with what you are seeing and he will tell you which job it is. See Contact if you just need the number and the address.
 
 ### Call about the roof you have
 
@@ -317,7 +317,7 @@ Phone: (417) 771-0477. Address: 4268 S Hillcrest Ave Ste 110, Springfield, MO 65
 
 ### If you already know the job
 
-Roof Replacement is for a full reroof. Roof Repair is for the roof you already have. This page is how you call.
+Roof Replacement is for a full reroof. Roof Repair is for the roof you already have. Call the shop when you are ready.
 
 [CTA] Call (417) 771-0477 → tel:+14177710477
 
