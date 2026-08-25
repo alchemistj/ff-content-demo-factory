@@ -22,18 +22,38 @@ function required(value, name) {
   return value;
 }
 
-async function putReceipt(store, key, receipt) {
+function receiptContextFromEnv(env = process.env, extra = {}) {
+  const issueNumber = Number(env.FACTORY_ISSUE_NUMBER);
+  const prNumber = Number(env.FACTORY_PR_NUMBER);
+  return {
+    repository: env.FACTORY_REPOSITORY || env.GITHUB_REPOSITORY || null,
+    issueNumber: Number.isInteger(issueNumber) ? issueNumber : null,
+    prNumber: Number.isInteger(prNumber) ? prNumber : null,
+    branch: env.FACTORY_BRANCH || env.GITHUB_REF_NAME || null,
+    headSha: env.FACTORY_CHECKED_OUT_SHA || env.FACTORY_ASSERTED_HEAD_SHA || env.EXPECTED_HEAD_SHA || null,
+    source: env.FACTORY_CHECKED_OUT_SHA || env.FACTORY_ASSERTED_HEAD_SHA || env.EXPECTED_HEAD_SHA || null,
+    ...extra,
+  };
+}
+
+async function putReceipt(store, key, receipt, env = process.env) {
   if (!store || typeof store.put !== 'function') throw new TypeError('receiptStore must implement put');
+  const payload = receipt.input != null ? receipt.input : receipt.request;
+  if (payload == null) throw new Error(`${receipt.operation || key} receipt is missing input payload`);
+  const binding = receiptContextFromEnv(env, { operation: receipt.operation || null, ...(receipt.binding || receipt.context || {}) });
   const complete = {
     schemaVersion: 'factory-receipt-v1',
     key,
     ...receipt,
+    binding,
     status: receipt.status || 'completed',
     terminalStatus: receipt.terminalStatus || (receipt.status === 'completed' || !receipt.status ? 'succeeded' : null),
     startedAt: receipt.startedAt || receipt.completedAt || null,
     completedAt: receipt.completedAt || null,
-    inputDigest: receipt.inputDigest || digest(receipt.input || receipt.request || { operation: receipt.operation || null, jobId: receipt.jobId || null }),
-    outputDigest: receipt.outputDigest || digest(receipt.result || null),
+    runId: receipt.runId || receipt.vendorReceipt?.runId || receipt.vendorReceipt?.jobId || null,
+    threadUrl: receipt.threadUrl || receipt.vendorReceipt?.threadUrl || null,
+    inputDigest: digest(payload),
+    outputDigest: digest(receipt.result || null),
   };
   return store.put(key, complete).then?.(() => complete) || complete;
 }
@@ -298,7 +318,7 @@ function createProductionAdapters({
       const candidates = (result.candidates || []).map(candidateFromPlace);
       const request = { searchStrings, location, limit: Math.min(7, limit), reviewLimit: Math.min(10, reviewLimit) };
       const packet = { ...result, candidates, request };
-      const receipt = await putReceipt(receipts, `factory:discovery:${hash(request)}`, { provider: 'apify', operation: 'discovery', status: 'completed', completedAt: clock(), vendorReceipt: result.provenance?.run || null, input: request, request, result: { count: candidates.length, candidateDigest: digest(candidates) } });
+      const receipt = await putReceipt(receipts, `factory:discovery:${hash(request)}`, { provider: 'apify', operation: 'discovery', status: 'completed', completedAt: clock(), vendorReceipt: result.provenance?.run || null, input: request, request, result: { count: candidates.length, candidateDigest: digest(candidates) }, binding: { operation: 'discovery' } }, env);
       return { ...packet, receipt };
     },
   };
@@ -321,13 +341,13 @@ function createProductionAdapters({
         input: { candidate: { placeId: candidate.placeId, name: candidate.name, website: candidate.website, location: candidate.location }, website: candidate.website || null, request },
       });
       const audit = normalizeWebsiteAudit(record.result, candidate);
-      const receipt = await putReceipt(receipts, `factory:${jobId}`, { provider: 'cursor-sdk', operation: 'website-audit', status: 'completed', completedAt: clock(), vendorReceipt: record.receipt, input: { candidate: { placeId: candidate.placeId, name: candidate.name, website: candidate.website, location: candidate.location }, request }, result: audit });
+      const receipt = await putReceipt(receipts, `factory:${jobId}`, { provider: 'cursor-sdk', operation: 'website-audit', status: 'completed', completedAt: clock(), vendorReceipt: record.receipt, input: { candidate: { placeId: candidate.placeId, name: candidate.name, website: candidate.website, location: candidate.location }, request }, binding: { placeId: candidate.placeId }, result: audit }, env);
       return { audit, receipt };
     },
   };
 
   const enrichment = {
-    async enrichExactPlace({ finalist, limit = 50, dateWindow = null, exactPlace = true }) {
+    async enrichExactPlace({ finalist, limit = 50, dateWindow = null, exactPlace = true, runId = null, prospectId = null }) {
       if (!exactPlace || dateWindow !== null || limit !== 50) throw new Error('Finalist enrichment requires exact place, 50 reviews, and no date window');
       const placeId = finalist?.placeId || finalist?.gbp?.placeId;
       const mapsUrl = finalist?.mapsUrl || finalist?.gbp?.mapsUrl;
@@ -337,14 +357,15 @@ function createProductionAdapters({
       const prior = await getReceipt(receipts, key);
       if (prior?.status === 'completed' && prior.result) return prior.result;
       const packet = normalizeEnrichment(await apifyAdapter.enrichFinalist({ placeId, mapsUrl, limit }), { ...finalist, placeId, mapsUrl }, limit);
-      const receipt = await putReceipt(receipts, key, { provider: 'apify', operation: 'finalist-enrichment', status: 'completed', completedAt: clock(), vendorReceipt: packet.provenance?.run || null, input: { placeId, mapsUrl, limit, dateWindow: null }, result: packet });
+      const input = { placeId, mapsUrl, limit, dateWindow: null };
+      const receipt = await putReceipt(receipts, key, { provider: 'apify', operation: 'finalist-enrichment', status: 'completed', completedAt: clock(), vendorReceipt: packet.provenance?.run || null, input, request: input, binding: { placeId, prospectId: prospectId || finalist?.prospectId || placeId, runId: runId || finalist?.runId || null }, result: packet }, env);
       Object.defineProperty(packet, 'receipt', { value: receipt, enumerable: false, configurable: true });
       return packet;
     },
   };
 
   const reviewJudge = {
-    async judge({ review, finalist }) {
+    async judge({ review, finalist, runId = null, prospectId = null }) {
       required(review?.id, 'review.id');
       const jobId = `review-judgment:${finalist?.placeId || 'place'}:${review.id}`;
       const record = await cursorAdapter.runResearchRecord({
@@ -354,7 +375,8 @@ function createProductionAdapters({
       const judgment = normalizeJudgment(record.result, record.receipt, review);
       const receiptResult = { ...judgment };
       delete receiptResult.receipt;
-      const receipt = await putReceipt(receipts, `factory:${jobId}`, { provider: 'cursor-sdk', operation: 'review-judgment', status: 'completed', completedAt: clock(), vendorReceipt: record.receipt, input: { placeId: finalist?.placeId, reviewId: review.id, reviewDigest: digest(review) }, result: receiptResult });
+      const input = { placeId: finalist?.placeId, reviewId: review.id, reviewDigest: digest(review) };
+      const receipt = await putReceipt(receipts, `factory:${jobId}`, { provider: 'cursor-sdk', operation: 'review-judgment', status: 'completed', completedAt: clock(), vendorReceipt: record.receipt, input, binding: { placeId: finalist?.placeId, prospectId: prospectId || finalist?.prospectId || finalist?.placeId, runId: runId || finalist?.runId || null, reviewId: review.id }, result: receiptResult }, env);
       judgment.receipt = receipt;
       return judgment;
     },
@@ -393,7 +415,7 @@ function createProductionAdapters({
         cursorReceipt: record.receipt,
       };
       output.prescriptionDigest = digest({ ...output, prescriptionDigest: undefined });
-      const receipt = await putReceipt(receipts, `factory:${jobId}`, { provider: 'cursor-sdk', operation: 'page-prescription', status: 'completed', completedAt: clock(), vendorReceipt: record.receipt, input: { placeId: finalist?.placeId, prospectId: finalist?.prospectId, runId: finalist?.runId || decision.runId, classificationDigest: digest(classification), sourceManifestDigest: sourceBinding.sourceManifestDigest || null }, result: output });
+      const receipt = await putReceipt(receipts, `factory:${jobId}`, { provider: 'cursor-sdk', operation: 'page-prescription', status: 'completed', completedAt: clock(), vendorReceipt: record.receipt, input: { placeId: finalist?.placeId, prospectId: finalist?.prospectId, runId: finalist?.runId || decision.runId, classificationDigest: digest(classification), sourceManifestDigest: sourceBinding.sourceManifestDigest || null }, result: output }, env);
       return { proposal: output, receipt };
     },
     async prescribe(input) {
@@ -419,7 +441,7 @@ function createProductionAdapters({
       if (!qa.passed) throw new Error(`Gate 1 QA failed: ${Object.entries(qa.checks).filter(([, passed]) => !passed).map(([name]) => name).join(', ')}`);
       const markdown = renderGate1({ finalist, prescription, whyBuilt: resolvedWhyBuilt, qa, sourceCheckpoint: sourceCheckpoint || prescription.sourceCheckpoint || null, receipts: receiptBundle, actionProof, lineage: lineage || { prospectId: prescription.prospect?.prospectId, placeId: prescription.prospect?.placeId, runId: prescription.runId } });
       const result = { markdown, qa, state: 'awaiting-human-gate-1', receiptKeys: [`factory:page-prescription:${finalist.placeId}`] };
-      await putReceipt(receipts, `factory:gate-1:${finalist.placeId}`, { provider: 'factory', operation: 'gate-1', status: 'completed', completedAt: clock(), result });
+      await putReceipt(receipts, `factory:gate-1:${finalist.placeId}`, { provider: 'factory', operation: 'gate-1', status: 'completed', completedAt: clock(), input: { placeId: finalist.placeId, prospectId: prescription?.prospect?.prospectId || finalist.placeId }, result }, env);
       return result;
     },
   };
@@ -434,4 +456,5 @@ module.exports = {
   normalizeWebsiteAudit,
   normalizeJudgment,
   classificationForInventory,
+  receiptContextFromEnv,
 };

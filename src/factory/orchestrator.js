@@ -117,35 +117,68 @@ function requiredReceipt(value, label, fallback = null, binding = null) {
   const vendor = value.vendorReceipt || value;
   const hasIdentity = vendor.agentId || vendor.runId || vendor.jobId || vendor.artifactId || vendor.datasetId || value.receiptKey;
   if (!hasIdentity) throw Object.assign(new Error(`Trusted source checkpoint requires vendor/agent identity for ${label}`), { code: 'SOURCE_RECEIPT_INVALID' });
-  if ((value.provider === 'cursor-sdk' || value.provider === 'cursor-cloud-agent') && (!vendor.runId || !vendor.threadUrl)) throw Object.assign(new Error(`Trusted source checkpoint requires Cursor run/thread identity for ${label}`), { code: 'SOURCE_RECEIPT_INVALID' });
+  if ((value.provider === 'cursor-sdk' || value.provider === 'cursor-cloud-agent') && !(vendor.sealedEvidence === true && vendor.runId && vendor.artifactId && vendor.sourceSha) && (!vendor.runId || !vendor.threadUrl)) throw Object.assign(new Error(`Trusted source checkpoint requires Cursor run/thread identity for ${label}`), { code: 'SOURCE_RECEIPT_INVALID' });
   if (value.provider === 'apify' && (!vendor.runId || !vendor.datasetId)) throw Object.assign(new Error(`Trusted source checkpoint requires Apify run/dataset identity for ${label}`), { code: 'SOURCE_RECEIPT_INVALID' });
-  if (binding) {
-    const received = value.binding || value.context || {};
-    for (const field of ['runId', 'prospectId', 'placeId', 'headSha', 'sourceArtifactDigest', 'sourceManifestDigest']) {
-      if (binding[field] != null && received[field] != null && String(received[field]) !== String(binding[field])) throw Object.assign(new Error(`Trusted source checkpoint ${label} receipt ${field} binding is mismatched`), { code: 'SOURCE_RECEIPT_INVALID' });
-    }
-    const input = value.input || value.request || {};
-    const inputPlaceId = input.placeId || input.candidate?.placeId;
-    if (binding.placeId != null && expectedOperation !== 'discovery' && inputPlaceId == null) throw Object.assign(new Error(`Trusted source checkpoint ${label} receipt is missing candidate binding`), { code: 'SOURCE_RECEIPT_INVALID' });
-    if (binding.placeId != null && inputPlaceId != null && String(inputPlaceId) !== String(binding.placeId)) throw Object.assign(new Error(`Trusted source checkpoint ${label} receipt candidate binding is mismatched`), { code: 'SOURCE_RECEIPT_INVALID' });
-    if (binding.vendorRunId != null && String(vendor.runId) !== String(binding.vendorRunId)) throw Object.assign(new Error(`Trusted source checkpoint ${label} receipt vendor run binding is mismatched`), { code: 'SOURCE_RECEIPT_INVALID' });
-    if (binding.reviewId != null && input.reviewId != null && String(input.reviewId) !== String(binding.reviewId)) throw Object.assign(new Error(`Trusted source checkpoint ${label} receipt review binding is mismatched`), { code: 'SOURCE_RECEIPT_INVALID' });
+  const payload = value.input != null ? value.input : value.request;
+  if (payload == null) throw Object.assign(new Error(`Trusted source checkpoint ${label} receipt is missing input payload`), { code: 'SOURCE_RECEIPT_INVALID' });
+  const recomputedInputDigest = digest(payload);
+  if (value.inputDigest !== recomputedInputDigest) throw Object.assign(new Error(`Trusted source checkpoint ${label} input digest does not match persisted payload`), { code: 'SOURCE_RECEIPT_INVALID' });
+  if (!binding || typeof binding !== 'object') throw Object.assign(new Error(`Trusted source checkpoint ${label} receipt context is missing`), { code: 'SOURCE_RECEIPT_INVALID' });
+  const received = value.binding || value.context || {};
+  const requiredFields = ['repository', 'issueNumber', 'prNumber', 'branch', 'headSha', 'operation'];
+  if (expectedOperation !== 'discovery') requiredFields.push('placeId');
+  if (!['discovery', 'website-audit'].includes(expectedOperation)) requiredFields.push('prospectId');
+  for (const field of requiredFields) {
+    if (binding[field] == null || String(binding[field]).trim() === '') throw Object.assign(new Error(`Trusted source checkpoint ${label} expected ${field} binding is omitted`), { code: 'SOURCE_RECEIPT_INVALID' });
+    const actual = received[field];
+    if (actual == null || String(actual).trim() === '') throw Object.assign(new Error(`Trusted source checkpoint ${label} receipt ${field} binding is omitted`), { code: 'SOURCE_RECEIPT_INVALID' });
+    if (String(actual) !== String(binding[field]) && !(field === 'operation' && String(actual) === expectedOperation)) throw Object.assign(new Error(`Trusted source checkpoint ${label} receipt ${field} binding is mismatched`), { code: 'SOURCE_RECEIPT_INVALID' });
   }
+  if (binding.source == null || String(binding.source).trim() === '') throw Object.assign(new Error(`Trusted source checkpoint ${label} expected source binding is omitted`), { code: 'SOURCE_RECEIPT_INVALID' });
+  const receivedSource = received.source != null ? received.source : value.source;
+  if (receivedSource == null || String(receivedSource).trim() === '') throw Object.assign(new Error(`Trusted source checkpoint ${label} receipt source binding is omitted`), { code: 'SOURCE_RECEIPT_INVALID' });
+  if (String(receivedSource) !== String(binding.source)) throw Object.assign(new Error(`Trusted source checkpoint ${label} receipt source binding is mismatched`), { code: 'SOURCE_RECEIPT_INVALID' });
+  if (['finalist-enrichment', 'review-judgment', 'page-prescription'].includes(expectedOperation)) {
+    if (binding.runId == null || String(binding.runId).trim() === '') throw Object.assign(new Error(`Trusted source checkpoint ${label} expected runId binding is omitted`), { code: 'SOURCE_RECEIPT_INVALID' });
+    const receivedRunId = received.runId != null ? received.runId : value.runId;
+    if (receivedRunId == null || String(receivedRunId).trim() === '') throw Object.assign(new Error(`Trusted source checkpoint ${label} receipt runId binding is omitted`), { code: 'SOURCE_RECEIPT_INVALID' });
+    if (String(receivedRunId) !== String(binding.runId)) throw Object.assign(new Error(`Trusted source checkpoint ${label} receipt runId binding is mismatched`), { code: 'SOURCE_RECEIPT_INVALID' });
+  }
+  if (binding.expectedInput != null && digest(binding.expectedInput) !== recomputedInputDigest) throw Object.assign(new Error(`Trusted source checkpoint ${label} receipt input payload is mismatched`), { code: 'SOURCE_RECEIPT_INVALID' });
+  const inputPlaceId = payload.placeId || payload.candidate?.placeId;
+  if (binding.placeId != null && expectedOperation !== 'discovery' && inputPlaceId == null) throw Object.assign(new Error(`Trusted source checkpoint ${label} receipt is missing candidate binding`), { code: 'SOURCE_RECEIPT_INVALID' });
+  if (binding.placeId != null && inputPlaceId != null && String(inputPlaceId) !== String(binding.placeId)) throw Object.assign(new Error(`Trusted source checkpoint ${label} receipt candidate binding is mismatched`), { code: 'SOURCE_RECEIPT_INVALID' });
+  if (binding.vendorRunId != null && String(vendor.runId) !== String(binding.vendorRunId)) throw Object.assign(new Error(`Trusted source checkpoint ${label} receipt vendor run binding is mismatched`), { code: 'SOURCE_RECEIPT_INVALID' });
+  if (binding.reviewId != null && payload.reviewId != null && String(payload.reviewId) !== String(binding.reviewId)) throw Object.assign(new Error(`Trusted source checkpoint ${label} receipt review binding is mismatched`), { code: 'SOURCE_RECEIPT_INVALID' });
   return value;
 }
-function sourceCheckpointFor(run, state, { allowTestFixtures = false } = {}) {
+function sourceCheckpointFor(run, state, { allowTestFixtures = false, env = process.env } = {}) {
   const candidateIdentity = stableCandidateIdentity(run.candidate || {});
   const auditReceiptForCandidate = state.auditReceipts?.[candidateIdentity] || state.auditReceipts?.[run.candidate?.placeId];
   const fixtureFallback = allowTestFixtures ? { fixture: true } : null;
-  const actionProof = actionProofFromEnvironment();
-  const receiptBinding = { runId: run.runId, prospectId: run.prospectId || run.candidate?.placeId || null, placeId: run.candidate?.placeId || null, headSha: actionProof?.checkedOutSha || null };
-  const discoveryReceipt = requiredReceipt(state.discoveryPacket?.receipt || state.discoveryPacket?.provenance?.run, 'discovery', fixtureFallback, receiptBinding);
-  const auditReceipt = requiredReceipt(auditReceiptForCandidate, 'website-audit', fixtureFallback, receiptBinding);
-  const enrichmentReceipt = requiredReceipt(run.paidWork?.finalistEnrichment?.receipt, 'finalist-enrichment', fixtureFallback, receiptBinding);
+  const actionProof = actionProofFromEnvironment(env);
+  const issueNumber = Number(env.FACTORY_ISSUE_NUMBER);
+  const prNumber = Number(env.FACTORY_PR_NUMBER);
+  const receiptBinding = {
+    repository: env.FACTORY_REPOSITORY || 'alchemistj/ff-content-demo-factory',
+    issueNumber: Number.isInteger(issueNumber) ? issueNumber : null,
+    prNumber: Number.isInteger(prNumber) ? prNumber : null,
+    branch: env.FACTORY_BRANCH || env.GITHUB_REF_NAME || null,
+    headSha: actionProof?.checkedOutSha || null,
+    source: actionProof?.checkedOutSha || null,
+    runId: run.runId,
+    prospectId: run.prospectId || run.candidate?.placeId || null,
+    placeId: run.candidate?.placeId || null,
+    operation: null,
+  };
+  const withOperation = (operation) => ({ ...receiptBinding, operation });
+  const discoveryReceipt = requiredReceipt(state.discoveryPacket?.receipt || state.discoveryPacket?.provenance?.run, 'discovery', fixtureFallback, withOperation('discovery'));
+  const auditReceipt = requiredReceipt(auditReceiptForCandidate, 'website-audit', fixtureFallback, withOperation('website-audit'));
+  const enrichmentReceipt = requiredReceipt(run.paidWork?.finalistEnrichment?.receipt, 'finalist-enrichment', fixtureFallback, withOperation('finalist-enrichment'));
   const judgments = run.artifacts.reviewJudgments || {};
   const reviewReceipts = Object.entries(judgments).map(([reviewId, judgment]) => ({
     reviewId,
-    receipt: requiredReceipt(judgment?.receipt || judgment?.cursorReceipt || judgment?.provenance, `review-judgment:${reviewId}`, fixtureFallback, { ...receiptBinding, reviewId }),
+    receipt: requiredReceipt(judgment?.receipt || judgment?.cursorReceipt || judgment?.provenance, `review-judgment:${reviewId}`, fixtureFallback, { ...withOperation('review-judgment'), reviewId }),
   }));
   if (!allowTestFixtures && (!actionProof?.checkedOutSha || actionProof.headAssertion !== true)) throw Object.assign(new Error('Trusted source checkpoint requires exact checked-out head binding'), { code: 'SOURCE_HEAD_BINDING_MISSING' });
   const sourceMaterial = {
@@ -196,7 +229,7 @@ function actionProofFromEnvironment(env = process.env) {
   if (!env.FACTORY_CHECKED_OUT_SHA && !env.FACTORY_ASSERTED_HEAD_SHA && !env.FACTORY_EXPECTED_HEAD_SHA) return null;
   return {
     checkedOutSha: env.FACTORY_CHECKED_OUT_SHA || env.FACTORY_ASSERTED_HEAD_SHA || null,
-    expectedHeadSha: env.FACTORY_EXPECTED_HEAD_SHA || null,
+    expectedHeadSha: env.FACTORY_EXPECTED_HEAD_SHA || env.EXPECTED_HEAD_SHA || null,
     headAssertion: env.FACTORY_HEAD_ASSERTION === 'true',
     testRunUrl: env.FACTORY_TEST_RUN_URL || env.FACTORY_ACTION_RUN_URL || null,
     testResult: env.FACTORY_TEST_RESULT || null,
@@ -209,7 +242,7 @@ async function classifyResumably({ run, state, adapters, root, now }) {
   const judge = judgeAdapter(adapters);
   for (const review of packet.reviews || []) {
     if (judgments[review.id]) continue;
-    judgments[review.id] = await judge({ review, finalist: run.candidate });
+    judgments[review.id] = await judge({ review, finalist: run.candidate, runId: run.runId, prospectId: run.prospectId });
     run.artifacts.reviewJudgments = judgments;
     await persist(state, root, now);
   }
@@ -239,7 +272,7 @@ function buildValidatedPrescription({ run, classification, proposal }) {
   return prescription;
 }
 
-async function runFactoryCycle({ root, config, adapters, discoveryRequest = null, architectDecision = {}, owner = 'architect', now = new Date() }) {
+async function runFactoryCycle({ root, config, adapters, discoveryRequest = null, architectDecision = {}, owner = 'architect', now = new Date(), env = process.env }) {
   if (config?.productionCapacity !== 1) throw Object.assign(new Error('productionCapacity must be exactly 1'), { code: 'INVALID_CAPACITY' });
   const release = acquireLock(root, owner, now);
   let state;
@@ -263,7 +296,7 @@ async function runFactoryCycle({ root, config, adapters, discoveryRequest = null
     }
     if (run.stage === STAGES[0]) { transition(state, run.runId, 'finalist-enrichment', { owner, now }); await persist(state, root, now); }
     if (!run.paidWork.finalistEnrichment) {
-      const packet = unwrapPacket(await enrichmentAdapter(adapters)({ finalist: run.candidate, placeId: run.candidate.placeId, mapsUrl: run.candidate.mapsUrl || run.candidate.googleMapsUrl || run.candidate.url, limit: REVIEW_LIMIT, dateWindow: null, exactPlace: true }));
+      const packet = unwrapPacket(await enrichmentAdapter(adapters)({ finalist: run.candidate, placeId: run.candidate.placeId, mapsUrl: run.candidate.mapsUrl || run.candidate.googleMapsUrl || run.candidate.url, limit: REVIEW_LIMIT, dateWindow: null, exactPlace: true, runId: run.runId, prospectId: run.prospectId }));
       const hasPacketDateWindow = Object.prototype.hasOwnProperty.call(packet, 'dateWindow');
       const hasProvenanceDateWindow = Object.prototype.hasOwnProperty.call(packet.provenance || {}, 'dateWindow');
       const packetDateWindow = hasPacketDateWindow
@@ -285,7 +318,7 @@ async function runFactoryCycle({ root, config, adapters, discoveryRequest = null
     }
     if (!run.artifacts.classification || Object.keys(run.artifacts.reviewJudgments || {}).length < run.artifacts.reviewPacket.reviews.length) await classifyResumably({ run, state, adapters, root, now });
     if (!run.artifacts.prescription) {
-      const sourceCheckpoint = sourceCheckpointFor(run, state, { allowTestFixtures: adapters?.production !== true });
+      const sourceCheckpoint = sourceCheckpointFor(run, state, { allowTestFixtures: adapters?.production !== true, env });
       run.artifacts.sourceCheckpoint = sourceCheckpoint;
       await persist(state, root, now);
       const proposalResult = await proposalAdapter(adapters)({ finalist: { ...run.candidate, prospectId: run.prospectId, runId: run.runId }, runId: run.runId, prospectId: run.prospectId, placeId: run.candidate?.placeId, classification: run.artifacts.classification, inventory: run.artifacts.inventory, discoveryPacket: state.discoveryPacket, decision: { sourceCheckpoint } });
@@ -311,7 +344,7 @@ async function runFactoryCycle({ root, config, adapters, discoveryRequest = null
     run.artifacts.qa = { decision: qa, checks: qaResult.checks, passed: qaResult.passed };
     if (qa.passed !== true || !qaResult.passed) { await persist(state, root, now); return { ok: true, state, run, nextAction: nextAction('architect-qa-required', 'Architect QA is not complete; correct the reported checks before Gate 1.', { checks: qaResult.checks }) }; }
     run.artifacts.prescription = correctedPrescription;
-    const gateResult = await gateAdapter(adapters)({ finalist: run.candidate, prescription: correctedPrescription, inventory: run.artifacts.inventory, classifications: run.artifacts.reviewJudgments, whyBuilt, qa: qaResult, run, sourceCheckpoint: run.artifacts.sourceCheckpoint || null, actionProof: adapters?.actionProof || actionProofFromEnvironment(), receipts: { discovery: state.discoveryPacket?.receipt || state.discoveryPacket?.provenance?.run || null, websiteAudit: state.auditReceipts?.[stableCandidateIdentity(run.candidate)] || null, finalistEnrichment: run.paidWork?.finalistEnrichment?.receipt || null, pagePrescription: run.artifacts.cursorProposalReceipt || null } });
+    const gateResult = await gateAdapter(adapters)({ finalist: run.candidate, prescription: correctedPrescription, inventory: run.artifacts.inventory, classifications: run.artifacts.reviewJudgments, whyBuilt, qa: qaResult, run, sourceCheckpoint: run.artifacts.sourceCheckpoint || null, actionProof: adapters?.actionProof || actionProofFromEnvironment(env), receipts: { discovery: state.discoveryPacket?.receipt || state.discoveryPacket?.provenance?.run || null, websiteAudit: state.auditReceipts?.[stableCandidateIdentity(run.candidate)] || null, finalistEnrichment: run.paidWork?.finalistEnrichment?.receipt || null, pagePrescription: run.artifacts.cursorProposalReceipt || null } });
     const markdown = typeof gateResult === 'string' ? gateResult : gateResult?.markdown;
     if (typeof markdown !== 'string' || !markdown.trim()) throw Object.assign(new Error('Gate 1 renderer must return markdown text'), { code: 'INVALID_GATE1_ARTIFACT' });
     const relativeArtifactPath = path.join('state', 'gate1', `${run.runId}.md`);

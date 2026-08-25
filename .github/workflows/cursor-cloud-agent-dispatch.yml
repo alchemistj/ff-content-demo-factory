@@ -176,18 +176,25 @@ jobs:
         run: |
           mkdir -p canary/phase-a
           gh run download "$PHASE_A_RUN_ID" --repo "$GITHUB_REPOSITORY" --name "current-head-gate1-canary-$PHASE_A_RUN_ID" --dir canary/phase-a
-          test -f canary/phase-a/current-head-gate1-pending.json
-          PHASE_A_PENDING=canary/phase-a/current-head-gate1-pending.json node -e "const fs=require('node:fs');const {validatePendingHandoff}=require('./src/factory/handoff');const p=JSON.parse(fs.readFileSync(process.env.PHASE_A_PENDING,'utf8'));validatePendingHandoff(p,{checkedOutSha:p.envelope.checkedOutSha,inputManifestDigest:p.envelope.inputManifestDigest});fs.writeFileSync('canary/phase-a/pending.checked.json',JSON.stringify(p,null,2)+'\\n')"
+          if [ ! -f canary/phase-a/current-head-gate1-pending.json ]; then
+            echo "Phase-A pending handoff is absent; this workflow_run is not a dispatch-phase artifact"
+            echo "FACTORY_SKIP_AUTOMATIC_DISPATCH=true" >> "$GITHUB_ENV"
+            exit 0
+          fi
+          PHASE_A_PENDING=canary/phase-a/current-head-gate1-pending.json node -e "const fs=require('node:fs');const {validatePendingHandoff}=require('./src/factory/handoff');const p=JSON.parse(fs.readFileSync(process.env.PHASE_A_PENDING,'utf8'));if(p.phase!=='awaiting-cursor-receipt') throw new Error('Phase-A pending is not awaiting a Cursor receipt');validatePendingHandoff(p,{checkedOutSha:p.envelope.checkedOutSha,inputManifestDigest:p.envelope.inputManifestDigest,phaseARunId:process.env.PHASE_A_RUN_ID,repository:process.env.GITHUB_REPOSITORY});fs.writeFileSync('canary/phase-a/pending.checked.json',JSON.stringify(p,null,2)+'\\n')"
       - name: Generate the verified connector-native packet
+        if: env.FACTORY_SKIP_AUTOMATIC_DISPATCH != 'true'
         env:
           FACTORY_PENDING_FILE: canary/phase-a/pending.checked.json
           FACTORY_DISPATCH_OUTPUT: canary/phase-a/cursor-dispatch.json
           FACTORY_REPOSITORY: ${{ github.repository }}
         run: node src/dispatch-cursor-cloud-agent.js
       - name: Bind dispatch comment to durable handoff identity
+        if: env.FACTORY_SKIP_AUTOMATIC_DISPATCH != 'true'
         run: |
           node -e "const fs=require('node:fs');const pending=JSON.parse(fs.readFileSync('canary/phase-a/pending.checked.json','utf8'));fs.appendFileSync('canary/phase-a/cursor-dispatch.comment.md','Handoff ID: '+pending.handoffId+'\\nPhase-A run: '+pending.phaseARunId+'\\nDispatch workflow run: '+process.env.GITHUB_RUN_ID+'\\n');"
       - name: Claim durable GitHub ledger before connector dispatch
+        if: env.FACTORY_SKIP_AUTOMATIC_DISPATCH != 'true'
         env:
           DISPATCH_FILE: canary/phase-a/cursor-dispatch.json
           GH_TOKEN: ${{ github.token }}
@@ -209,7 +216,7 @@ jobs:
           const marker = markerFor({ kind: 'dispatch', repository: process.env.REPOSITORY, issueNumber: process.env.ISSUE_NUMBER, prNumber: process.env.PR_NUMBER, branch: process.env.BRANCH, checkedOutSha: process.env.HEAD_SHA, handoffId: process.env.HANDOFF_ID, dispatchKey: process.env.HANDOFF_KEY, resultId: process.env.DISPATCH_DIGEST }); fs.writeFileSync('canary/phase-a/cursor-ledger-marker.md', markerBody(marker));
           NODE
       - name: Publish durable dispatch ledger marker
-        if: env.FACTORY_LEDGER_ALREADY_CLAIMED != 'true'
+        if: env.FACTORY_SKIP_AUTOMATIC_DISPATCH != 'true' && env.FACTORY_LEDGER_ALREADY_CLAIMED != 'true'
         env:
           GH_TOKEN: ${{ github.token }}
           DISPATCH_FILE: canary/phase-a/cursor-dispatch.json
@@ -218,7 +225,7 @@ jobs:
           ISSUE_NUMBER="$(node -e "const fs=require('node:fs');process.stdout.write(String(JSON.parse(fs.readFileSync(process.env.DISPATCH_FILE,'utf8')).issueNumber))")"
           GH_TOKEN="$GH_TOKEN" gh api "repos/$GITHUB_REPOSITORY/issues/$ISSUE_NUMBER/comments" --method POST -f body="$(cat canary/phase-a/cursor-ledger-marker.md)"
       - name: Post exactly once using durable dispatch CAS
-        if: env.FACTORY_LEDGER_ALREADY_CLAIMED != 'true'
+        if: env.FACTORY_SKIP_AUTOMATIC_DISPATCH != 'true' && env.FACTORY_LEDGER_ALREADY_CLAIMED != 'true'
         env:
           GH_TOKEN: ${{ github.token }}
           DISPATCH_FILE: canary/phase-a/cursor-dispatch.json
@@ -253,7 +260,7 @@ jobs:
           NODE
           GH_TOKEN="$GH_TOKEN" gh api "repos/$REPOSITORY/issues/$ISSUE_NUMBER/comments" --method POST -f body="$(cat canary/phase-a/cursor-ledger-posted.md)"
       - name: Upload automatic dispatch receipt
-        if: always()
+        if: always() && env.FACTORY_SKIP_AUTOMATIC_DISPATCH != 'true'
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         with:
           name: cursor-cloud-agent-dispatch-${{ github.run_id }}

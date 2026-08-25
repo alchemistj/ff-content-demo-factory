@@ -36,11 +36,20 @@ on:
         required: false
         type: string
       phase:
-        description: 'Two-phase continuation: dispatch seals inputs; resume ingests the verified receipt bundle'
+        description: 'Two-phase continuation: dispatch seals inputs; resume ingests the verified receipt bundle; integrated is sealed-evidence or already-bound local continuation'
         required: true
         default: resume
         type: choice
-        options: [dispatch, resume]
+        options: [dispatch, resume, integrated]
+      sealed_evidence:
+        description: Replay sealed repository 360 evidence without paid Apify or Cursor workers
+        required: false
+        type: boolean
+        default: false
+      phase_a_run_id:
+        description: Exact phase-A workflow run id whose pending artifact must be downloaded and verified
+        required: false
+        type: string
 
 permissions:
   contents: read
@@ -68,6 +77,7 @@ jobs:
           QA_FILE: ${{ inputs.qa_file }}
           CURSOR_BUNDLE_FILE: ${{ inputs.cursor_bundle_file }}
           FACTORY_CANARY_PHASE: ${{ inputs.phase }}
+          FACTORY_SEALED_EVIDENCE: ${{ inputs.sealed_evidence }}
           FACTORY_REPOSITORY: ${{ github.repository }}
         run: |
           test "$EXPECTED_HEAD_SHA" = "$(git rev-parse HEAD)"
@@ -85,11 +95,13 @@ jobs:
             case "$file" in *..*) echo "path traversal is not allowed" >&2; exit 1 ;; esac
             test -f "$file"
           done
-          if [ "${{ inputs.phase }}" = "resume" ]; then
-            test -n "$CURSOR_BUNDLE_FILE"
-            printf '%s\n' "$CURSOR_BUNDLE_FILE" | grep -Eq '^[-a-zA-Z0-9_/.]+\.json$'
-            case "$CURSOR_BUNDLE_FILE" in *..*) echo "path traversal is not allowed" >&2; exit 1 ;; esac
-            test -f "$CURSOR_BUNDLE_FILE"
+          if [ "${{ inputs.phase }}" = "resume" ] || [ "${{ inputs.phase }}" = "integrated" ]; then
+            if [ "${{ inputs.sealed_evidence }}" != "true" ]; then
+              test -n "$CURSOR_BUNDLE_FILE"
+              printf '%s\n' "$CURSOR_BUNDLE_FILE" | grep -Eq '^[-a-zA-Z0-9_/.]+\.json$'
+              case "$CURSOR_BUNDLE_FILE" in *..*) echo "path traversal is not allowed" >&2; exit 1 ;; esac
+              test -f "$CURSOR_BUNDLE_FILE"
+            fi
           fi
           mkdir -p canary/outputs
           printf '{"schemaVersion":"factory-exact-head-proof-v1","expectedHeadSha":"%s","checkedOutSha":"%s","headAssertion":true,"workflowRunUrl":"%s/%s/actions/runs/%s"}\n' \
@@ -115,7 +127,7 @@ jobs:
           gh issue view "$ISSUE_NUMBER" --repo "$GITHUB_REPOSITORY" --json number --jq .number | grep -Fxq "$ISSUE_NUMBER"
           echo "FACTORY_REPOSITORY=$GITHUB_REPOSITORY" >> "$GITHUB_ENV"
       - name: Validate trusted production runtime
-        if: inputs.phase == 'resume'
+        if: (inputs.phase == 'resume' || inputs.phase == 'integrated') && inputs.sealed_evidence != true
         env:
           APIFY_API_TOKEN: ${{ secrets.APIFY_API_TOKEN }}
         run: |
@@ -124,7 +136,7 @@ jobs:
         run: npm ci --ignore-scripts --no-audit --no-fund
       - name: Run fresh current-head Gate 1 canary
         env:
-          APIFY_API_TOKEN: ${{ secrets.APIFY_API_TOKEN }}
+          APIFY_API_TOKEN: ${{ inputs.sealed_evidence == true && '' || secrets.APIFY_API_TOKEN }}
           REQUEST_FILE: ${{ inputs.request_file }}
           SELECTION_FILE: ${{ inputs.selection_file }}
           QA_FILE: ${{ inputs.qa_file }}
@@ -134,8 +146,10 @@ jobs:
           FACTORY_BRANCH: ${{ inputs.branch }}
           EXPECTED_HEAD_SHA: ${{ inputs.expected_head_sha }}
           FACTORY_CANARY_PHASE: ${{ inputs.phase }}
+          FACTORY_SEALED_EVIDENCE: ${{ inputs.sealed_evidence }}
+          FACTORY_PHASE_A_RUN_ID: ${{ inputs.phase_a_run_id }}
           FACTORY_REPOSITORY: ${{ github.repository }}
-        run: node src/run-gate1-canary.js canary "$REQUEST_FILE" "$SELECTION_FILE" "$QA_FILE" "$CURSOR_BUNDLE_FILE"
+        run: node src/run-gate1-canary.js . "$REQUEST_FILE" "$SELECTION_FILE" "$QA_FILE" "$CURSOR_BUNDLE_FILE"
       - name: Upload exact-head proof (required)
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
@@ -145,15 +159,20 @@ jobs:
           if-no-files-found: error
           retention-days: 30
       - name: Upload phase-A handoff (required for dispatch)
-        if: always() && inputs.phase == 'dispatch'
+        if: always() && inputs.phase == 'dispatch' && inputs.sealed_evidence != true
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         with:
           name: current-head-gate1-canary-${{ github.run_id }}
           path: canary/outputs/current-head-gate1-pending.json
           if-no-files-found: error
           retention-days: 30
-      - name: Upload phase-B Gate 1 proof (required for resume)
-        if: always() && inputs.phase == 'resume'
+      - name: Prove Gate 1 artifacts exist
+        if: inputs.phase == 'resume' || inputs.phase == 'integrated'
+        run: |
+          test -s canary/outputs/current-head-gate1-proof.json
+          test -s canary/outputs/gate1.md
+      - name: Upload phase-B Gate 1 proof (required for resume or integrated)
+        if: always() && (inputs.phase == 'resume' || inputs.phase == 'integrated')
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         with:
           name: current-head-gate1-canary-${{ github.run_id }}

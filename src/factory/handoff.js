@@ -29,7 +29,7 @@ function envelopeFor({ dispatchPacket, inputManifest, runId, prospectId, sourceC
   };
 }
 
-function createPendingHandoff({ dispatchPacket, inputManifest, runId, prospectId, sourceCheckpointDigest, phaseARunId, inputFiles }) {
+function createPendingHandoff({ dispatchPacket, inputManifest, runId, prospectId, sourceCheckpointDigest, phaseARunId, inputFiles, placeId = null }) {
   const envelope = envelopeFor({ dispatchPacket, inputManifest, runId, prospectId, sourceCheckpointDigest });
   const pending = {
     schemaVersion: 'factory-cursor-handoff-v1',
@@ -38,6 +38,8 @@ function createPendingHandoff({ dispatchPacket, inputManifest, runId, prospectId
     phaseARunId: required(phaseARunId, 'phase-A workflow run id'),
     envelope,
     dispatchPacket,
+    identity: { prospectId: required(prospectId, 'handoff prospect id'), placeId: placeId || null, sourceCheckpointDigest: required(sourceCheckpointDigest, 'handoff source checkpoint digest') },
+    continuation: { once: true, state: 'awaiting-terminal-result' },
     artifact: { name: `current-head-gate1-canary-${phaseARunId}`, digest: digest({ envelope, dispatchPacket }) },
   };
   if (inputFiles) pending.inputFiles = { request: required(inputFiles.request, 'handoff request input'), selection: required(inputFiles.selection, 'handoff selection input'), qa: required(inputFiles.qa, 'handoff QA input') };
@@ -56,7 +58,18 @@ function validatePendingHandoff(pending, expected = {}) {
   const envelope = pending.envelope;
   for (const field of ['jobId', 'checkedOutSha', 'inputManifestDigest', 'runId', 'prospectId', 'sourceCheckpointDigest', 'sourceArtifactDigest', 'sourceIdentityDigest', 'dispatchDigest', 'dispatchKey']) required(envelope?.[field], `handoff envelope ${field}`);
   if (pending.dispatchPacket.dispatchDigest !== envelope.dispatchDigest || pending.dispatchPacket.dispatchKey !== envelope.dispatchKey) throw new Error('Durable Cursor handoff dispatch binding is mismatched');
+  if (!pending.continuation || pending.continuation.once !== true || pending.continuation.state !== 'awaiting-terminal-result') throw new Error('Durable Cursor handoff one-time continuation state is missing or consumed');
+  if (!pending.identity || pending.identity.prospectId !== envelope.prospectId || pending.identity.sourceCheckpointDigest !== envelope.sourceCheckpointDigest) throw new Error('Durable Cursor handoff prospect/source identity is mismatched');
   for (const field of ['checkedOutSha', 'inputManifestDigest', 'runId', 'prospectId', 'sourceCheckpointDigest', 'jobId']) if (expected[field] != null && String(envelope[field]) !== String(expected[field])) throw new Error(`Durable Cursor handoff ${field} binding is stale or mismatched`);
+  if (expected.repository != null && String(pending.dispatchPacket.repository) !== String(expected.repository)) throw new Error('Durable Cursor handoff repository binding is stale or mismatched');
+  if (expected.issueNumber != null && String(pending.dispatchPacket.issueNumber) !== String(expected.issueNumber)) throw new Error('Durable Cursor handoff Issue binding is stale or mismatched');
+  if (expected.prNumber != null && String(pending.dispatchPacket.prNumber) !== String(expected.prNumber)) throw new Error('Durable Cursor handoff PR binding is stale or mismatched');
+  if (expected.branch != null && String(pending.dispatchPacket.branch) !== String(expected.branch)) throw new Error('Durable Cursor handoff branch binding is stale or mismatched');
+  if (expected.phaseARunId != null && String(pending.phaseARunId) !== String(expected.phaseARunId)) throw new Error('Durable Cursor handoff phase-A run binding is stale or mismatched');
+  if (expected.handoffDigest != null && pending.handoffDigest !== expected.handoffDigest) throw new Error('Durable Cursor handoff digest is stale or mismatched');
+  if (expected.artifactDigest != null && pending.artifact.digest !== expected.artifactDigest) throw new Error('Durable Cursor handoff artifact digest is stale or mismatched');
+  if (expected.placeId != null && pending.identity.placeId != null && String(pending.identity.placeId) !== String(expected.placeId)) throw new Error('Durable Cursor handoff place/source identity is stale or mismatched');
+  if (Array.isArray(expected.consumedHandoffs) && expected.consumedHandoffs.includes(pending.handoffId)) throw new Error('Durable Cursor handoff has already been consumed');
   return pending;
 }
 
@@ -118,4 +131,29 @@ function claimResumeAtomic(file, handoffId, resultId) {
   }
 }
 
-module.exports = { envelopeFor, createPendingHandoff, validatePendingHandoff, validateTerminalCursorResult, claimResume, claimResumeAtomic };
+function downloadPhaseAArtifact({ phaseARunId, repository, artifactName, dest, env = process.env, spawnSyncImpl }) {
+  required(phaseARunId, 'phase-A workflow run id');
+  required(repository, 'phase-A repository');
+  required(artifactName, 'phase-A artifact name');
+  required(dest, 'phase-A download directory');
+  fs.mkdirSync(dest, { recursive: true });
+  const spawnSync = spawnSyncImpl || require('node:child_process').spawnSync;
+  const downloaded = spawnSync('gh', ['run', 'download', String(phaseARunId), '--name', artifactName, '--dir', dest, '--repo', repository], { encoding: 'utf8', env });
+  if (downloaded.status !== 0) throw new Error(`Phase-A artifact download failed: ${(downloaded.stderr || downloaded.stdout || 'unknown error').trim()}`);
+  return dest;
+}
+
+function retrievePhaseAHandoff({ phaseARunId, repository, destDir, artifactName, expected = {}, downloader, env = process.env }) {
+  const name = artifactName || `current-head-gate1-canary-${required(phaseARunId, 'phase-A workflow run id')}`;
+  const dest = required(destDir, 'phase-A download directory');
+  const download = downloader || ((args) => downloadPhaseAArtifact({ ...args, env }));
+  download({ phaseARunId: required(phaseARunId, 'phase-A workflow run id'), repository: required(repository, 'phase-A repository'), artifactName: name, dest });
+  const pendingFile = path.join(dest, 'current-head-gate1-pending.json');
+  if (!fs.existsSync(pendingFile)) throw new Error('Phase-A pending handoff artifact is missing');
+  const pending = JSON.parse(fs.readFileSync(pendingFile, 'utf8'));
+  validatePendingHandoff(pending, { ...expected, phaseARunId });
+  if (pending.artifact.name !== name) throw new Error('Phase-A artifact name is mismatched');
+  return { pending, pendingFile };
+}
+
+module.exports = { envelopeFor, createPendingHandoff, validatePendingHandoff, validateTerminalCursorResult, claimResume, claimResumeAtomic, downloadPhaseAArtifact, retrievePhaseAHandoff };

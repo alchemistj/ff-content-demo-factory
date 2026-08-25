@@ -151,7 +151,7 @@ test('fifth correction seals source identity and rejects unrelated production re
   assert.throws(() => assertSemanticCheckpoint({ checkpoint: { ...checkpoint, sourceIdentity: { ...checkpoint.sourceIdentity, provider: 'foreign' } }, state, currentHeadSha: 'head-1' }), /source identity|artifact|mismatch|stale/i);
   const valid = { provider: 'apify', operation: 'discovery', status: 'completed', terminalStatus: 'succeeded', inputDigest: 'sha256:11111111', outputDigest: 'sha256:22222222', startedAt: '2026-01-01T00:00:00Z', completedAt: '2026-01-01T00:00:01Z', input: { placeId: 'other-place' }, vendorReceipt: { runId: 'other-run', datasetId: 'other-dataset' } };
   assert.throws(() => requiredReceipt({ ...valid, operation: 'unrelated-operation' }, 'discovery', null, { placeId: 'place-1' }), /operation/);
-  assert.throws(() => requiredReceipt(valid, 'discovery', null, { placeId: 'place-1' }), /candidate binding/);
+  assert.throws(() => requiredReceipt(valid, 'discovery', null, { placeId: 'place-1' }), /input digest|persisted payload|receipt context is missing|omitted/);
 });
 
 test('fifth correction verifies dispatch digest, authoritative target, and foreign comment rejection', () => {

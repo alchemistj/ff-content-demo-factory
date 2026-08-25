@@ -8,7 +8,9 @@ const { createProductionAdapters } = require('./factory/production-adapters');
 const { loadConfig } = require('./run-one');
 const { digest } = require('./factory/prescription-policy');
 const { validateBundle, validateJobReceipt, canonicalThreadUrl, createDispatchPacket } = require('./factory/cloud-agent');
-const { createPendingHandoff, validatePendingHandoff } = require('./factory/handoff');
+const { createPendingHandoff, validatePendingHandoff, retrievePhaseAHandoff, claimResumeAtomic } = require('./factory/handoff');
+const { createSealed360Adapters } = require('./factory/sealed-evidence');
+const { actionProofFromEnvironment } = require('./factory/orchestrator');
 
 function bundleDigest(bundle) { return digest({ ...bundle, inputManifestDigest: undefined }); }
 
@@ -39,7 +41,9 @@ async function runCurrentHeadGate1Canary({ root, requestFile, selectionFile, qaF
   const selection = readJson(selectionFile);
   const qa = readJson(qaFile);
   const phase = env.FACTORY_CANARY_PHASE || 'resume';
-  if (!['dispatch', 'resume'].includes(phase)) throw new Error(`Unsupported canary phase: ${phase}`);
+  if (!['dispatch', 'resume', 'integrated'].includes(phase)) throw new Error(`Unsupported canary phase: ${phase}`);
+  const sealedEvidence = env.FACTORY_SEALED_EVIDENCE === 'true' || env.FACTORY_SEALED_EVIDENCE === true;
+  const sealedAdapters = sealedEvidence ? createSealed360Adapters({ root: process.cwd() }) : null;
   const cursorBundle = cursorBundleFile && fs.existsSync(path.resolve(cursorBundleFile)) ? readJson(cursorBundleFile) : null;
   const dispatch = { issueNumber: Number(env.FACTORY_ISSUE_NUMBER), prNumber: Number(env.FACTORY_PR_NUMBER), branch: env.FACTORY_BRANCH || env.GITHUB_REF_NAME, reviewedHeadSha: assertedHeadSha };
   if (!Number.isInteger(dispatch.issueNumber) || !Number.isInteger(dispatch.prNumber) || !dispatch.branch) throw new Error('Canary requires immutable Issue/PR/branch dispatch binding');
@@ -47,37 +51,75 @@ async function runCurrentHeadGate1Canary({ root, requestFile, selectionFile, qaF
   inputManifest.manifestDigest = digest(inputManifest);
   const outputDir = path.join(root, 'canary', 'outputs');
   fs.mkdirSync(outputDir, { recursive: true });
-  if (phase === 'dispatch') {
+  const sealPending = () => {
     const dispatchPacket = createDispatchPacket({ ...dispatch, scope: env.FACTORY_DISPATCH_SCOPE || 'fresh-current-head-gate1', repository: env.FACTORY_REPOSITORY || 'alchemistj/ff-content-demo-factory' });
-    const prospectId = request.prospectId || request.placeId || request.prospect?.prospectId || `canary-${digest(request).slice(7, 23)}`;
-    const pending = createPendingHandoff({ dispatchPacket, inputManifest, runId: env.FACTORY_CANARY_RUN_ID || `canary-${digest(inputManifest).slice(7, 23)}`, prospectId, sourceCheckpointDigest: digest({ request, selection, qa }), phaseARunId: env.GITHUB_RUN_ID || `local-${digest(inputManifest).slice(7, 23)}`, inputFiles: { request: requestFile, selection: selectionFile, qa: qaFile } });
+    const prospectId = selection.selectedPlaceId || request.prospectId || request.placeId || request.prospect?.prospectId || `canary-${digest(request).slice(7, 23)}`;
+    const pending = createPendingHandoff({ dispatchPacket, inputManifest, runId: env.FACTORY_CANARY_RUN_ID || `canary-${digest(inputManifest).slice(7, 23)}`, prospectId, placeId: selection.selectedPlaceId || request.placeId || null, sourceCheckpointDigest: digest({ request, selection, qa }), phaseARunId: env.GITHUB_RUN_ID || env.FACTORY_PHASE_A_RUN_ID || `local-${digest(inputManifest).slice(7, 23)}`, inputFiles: { request: requestFile, selection: selectionFile, qa: qaFile } });
     fs.writeFileSync(path.join(outputDir, 'current-head-gate1-pending.json'), `${JSON.stringify(pending, null, 2)}\n`);
+    return pending;
+  };
+  if (phase === 'dispatch') {
+    sealPending();
     return { proof: { schemaVersion: 'factory-current-head-gate1-canary-v1', proofScope: 'fresh-current-head-dispatch-phase-only', phase, expectedHeadSha: assertedHeadSha, checkedOutSha: assertedHeadSha, headAssertion: true, dispatch, inputManifest, awaitingCursorReceipt: true, integratedFactoryReadiness: false, limitations: ['Phase A seals the exact head and inputs and awaits the connector-native Cursor receipt.', 'No paid vendor or production writing is performed in phase A.'] }, state: null };
   }
-  required(cursorBundle, 'cursorBundle');
-  validateBundle(cursorBundle, { expectedHeadSha: assertedHeadSha, inputManifestDigest: inputManifest.manifestDigest, dispatch, repository: env.FACTORY_REPOSITORY || 'alchemistj/ff-content-demo-factory' });
-  const pendingFile = env.FACTORY_HANDOFF_FILE || path.join(outputDir, 'current-head-gate1-pending.json');
+  let pendingFile = env.FACTORY_HANDOFF_FILE || path.join(outputDir, 'current-head-gate1-pending.json');
+  if (phase === 'integrated' || (sealedEvidence && !fs.existsSync(pendingFile))) sealPending();
+  if (!sealedEvidence) required(cursorBundle, 'cursorBundle');
+  if (cursorBundle) validateBundle(cursorBundle, { expectedHeadSha: assertedHeadSha, inputManifestDigest: inputManifest.manifestDigest, dispatch, repository: env.FACTORY_REPOSITORY || 'alchemistj/ff-content-demo-factory' });
+  const expectedHandoff = {
+    checkedOutSha: assertedHeadSha,
+    inputManifestDigest: inputManifest.manifestDigest,
+    repository: env.FACTORY_REPOSITORY || 'alchemistj/ff-content-demo-factory',
+    issueNumber: dispatch.issueNumber,
+    prNumber: dispatch.prNumber,
+    branch: dispatch.branch,
+    placeId: selection.selectedPlaceId || request.placeId || undefined,
+  };
+  if (env.FACTORY_PHASE_A_RUN_ID) expectedHandoff.phaseARunId = env.FACTORY_PHASE_A_RUN_ID;
+  if (!fs.existsSync(pendingFile) && env.FACTORY_PHASE_A_RUN_ID) {
+    const dest = path.join(root, 'canary', 'handoff', String(env.FACTORY_PHASE_A_RUN_ID));
+    const retrieved = (deps.retrievePhaseAHandoff || retrievePhaseAHandoff)({
+      phaseARunId: env.FACTORY_PHASE_A_RUN_ID,
+      repository: env.FACTORY_REPOSITORY || env.GITHUB_REPOSITORY || 'alchemistj/ff-content-demo-factory',
+      destDir: dest,
+      expected: expectedHandoff,
+      downloader: deps.downloadPhaseAArtifact,
+      env,
+    });
+    pendingFile = retrieved.pendingFile;
+    fs.mkdirSync(outputDir, { recursive: true });
+    fs.copyFileSync(pendingFile, path.join(outputDir, 'current-head-gate1-pending.json'));
+  }
   if (!fs.existsSync(pendingFile)) throw new Error('Canary resume requires the durable phase-A pending handoff');
   const pending = readJson(pendingFile);
-  validatePendingHandoff(pending, { checkedOutSha: assertedHeadSha, inputManifestDigest: inputManifest.manifestDigest });
+  validatePendingHandoff(pending, expectedHandoff);
   if (pending.envelope.checkedOutSha !== assertedHeadSha || pending.envelope.inputManifestDigest !== inputManifest.manifestDigest) throw new Error('Canary pending handoff does not bind the current head/input manifest');
+  if (env.FACTORY_HANDOFF_CAS_FILE) claimResumeAtomic(env.FACTORY_HANDOFF_CAS_FILE, pending.handoffId, env.FACTORY_RESUME_RESULT_ID || pending.handoffDigest);
   const expectedEnvelope = { ...pending.envelope, checkedOutSha: assertedHeadSha, inputManifestDigest: inputManifest.manifestDigest };
   const config = (deps.loadConfig || loadConfig)(process.cwd());
-  const adapters = (deps.createProductionAdapters || createProductionAdapters)({ root, config, env, cursor: createCloudAgentBundleAdapter(cursorBundle, expectedEnvelope), productionCloudAgent: true });
+  const adapters = (deps.createProductionAdapters || createProductionAdapters)({
+    root,
+    config,
+    env,
+    cursor: sealedAdapters?.cursor || createCloudAgentBundleAdapter(required(cursorBundle, 'cursorBundle'), expectedEnvelope),
+    apify: sealedAdapters?.apify,
+    productionCloudAgent: true,
+  });
+  adapters.actionProof = actionProofFromEnvironment(env);
   const cycle = deps.runFactoryCycle || runFactoryCycle;
-  const stage1 = await cycle({ root, config, adapters, discoveryRequest: request });
+  const stage1 = await cycle({ root, config, adapters, discoveryRequest: request, env });
   if (stage1.nextAction?.code !== 'architect-candidate-review-required') throw new Error(`Fresh canary did not stop at candidate review: ${stage1.nextAction?.code || 'unknown'}`);
-  const stage2 = await cycle({ root, config, adapters, architectDecision: { selection } });
+  const stage2 = await cycle({ root, config, adapters, architectDecision: { selection }, env });
   if (stage2.nextAction?.code !== 'architect-qa-required') throw new Error(`Fresh canary did not stop at Architect QA: ${stage2.nextAction?.code || 'unknown'}`);
   const selectedRun = stage2.state?.activeRun || stage2.run;
   const factoryRunId = selectedRun?.runId || null;
   const factorySourceCheckpointDigest = selectedRun?.artifacts?.sourceCheckpoint ? digest(selectedRun.artifacts.sourceCheckpoint) : null;
-  const stage3 = await cycle({ root, config, adapters, architectDecision: { qa } });
+  const stage3 = await cycle({ root, config, adapters, architectDecision: { qa }, env });
   if (stage3.nextAction?.code !== 'awaiting-human-gate-1') throw new Error(`Fresh canary did not reach Human Gate 1: ${stage3.nextAction?.code || 'unknown'}`);
   const run = stage3.state?.activeRun || stage3.run;
   if (!run || run.status !== 'awaiting-human-gate-1' || !run.artifacts?.gate1?.markdown) throw new Error('Fresh canary Gate 1 artifact is missing');
   const finalEnvelope = { ...expectedEnvelope, factoryRunId: run.runId, factorySourceCheckpointDigest: run.artifacts.sourceCheckpoint ? digest(run.artifacts.sourceCheckpoint) : null };
-  const boundReceipts = Object.entries(cursorBundle.jobs || {}).map(([jobId, entry]) => {
+  const boundReceipts = Object.entries(cursorBundle?.jobs || {}).map(([jobId, entry]) => {
     const kind = entry.receipt?.operation || entry.result?.kind || 'unknown';
     const receipt = validateJobReceipt({ ...(entry.receipt || {}), provider: 'cursor-cloud-agent', jobId }, { kind, expectedEnvelope });
     for (const field of ['runId', 'prospectId', 'sourceCheckpointDigest', 'sourceManifestDigest']) if (receipt.envelope?.[field] != null && String(receipt.envelope[field]) !== String(finalEnvelope[field])) throw new Error(`Cloud Agent ${kind} final ${field} binding mismatch`);
@@ -92,6 +134,9 @@ async function runCurrentHeadGate1Canary({ root, requestFile, selectionFile, qaF
     headAssertion: true,
     inputManifest,
     dispatch,
+    handoffId: pending.handoffId,
+    handoffDigest: pending.handoffDigest,
+    sealedEvidence,
     runId: run.runId,
     prospectId: run.prospectId || null,
     candidate: { placeId: run.candidate?.placeId || null, name: run.candidate?.name || null, location: run.candidate?.location || null },

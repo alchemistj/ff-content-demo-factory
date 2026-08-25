@@ -127,7 +127,7 @@ jobs:
           request_file="$(node -e "process.stdout.write(JSON.parse(require('fs').readFileSync('$pending','utf8')).inputFiles.request)")"
           selection_file="$(node -e "process.stdout.write(JSON.parse(require('fs').readFileSync('$pending','utf8')).inputFiles.selection)")"
           qa_file="$(node -e "process.stdout.write(JSON.parse(require('fs').readFileSync('$pending','utf8')).inputFiles.qa)")"
-          node src/run-gate1-canary.js canary "$request_file" "$selection_file" "$qa_file" canary/phase-b/cursor-bundle.json
+          node src/run-gate1-canary.js . "$request_file" "$selection_file" "$qa_file" canary/phase-b/cursor-bundle.json
       - name: Record automatic phase-B completion
         if: success() && env.FACTORY_RESUME_ALREADY_CLAIMED != 'true'
         env:
