@@ -68,14 +68,34 @@ function evidenceSourceUrl(item) {
   return item.sourceUrl || item.url || item.src || item.provenance?.sourceUrl || item.provenance?.url || null;
 }
 
+function normalizeOwnedUrl(value, host, label) {
+  if (typeof value !== 'string' || !value.trim()) throw new Error(`${label} is missing a URL`);
+  let parsed;
+  try { parsed = new URL(value); } catch { throw new Error(`${label} URL is invalid`); }
+  if (parsed.protocol !== 'http:' && parsed.protocol !== 'https:') throw new Error(`${label} URL must use http or https`);
+  const normalizedHost = parsed.hostname.replace(/^www\./, '').toLowerCase();
+  if (!normalizedHost) throw new Error(`${label} URL is missing a host`);
+  if (normalizedHost !== host) throw new Error(`${label} URL is not bound to the inspected business-owned domain`);
+  return parsed;
+}
+
+function assertNoConflictingProvenance(item, sourceUrl, host, label) {
+  const provenance = item?.provenance;
+  if (!provenance || typeof provenance !== 'object' || Array.isArray(provenance)) return;
+  for (const candidate of [provenance.sourceUrl, provenance.url, provenance.website]) {
+    if (candidate == null) continue;
+    const parsed = normalizeOwnedUrl(String(candidate), host, `${label} provenance`);
+    if (parsed.href !== sourceUrl.href) throw new Error(`${label} has conflicting provenance URL`);
+  }
+}
+
 function validateOwnedEvidence(items, host, label) {
   if (!Array.isArray(items)) throw new Error(`${label} must be an array`);
   for (const item of items) {
     const sourceUrl = evidenceSourceUrl(item);
     if (!sourceUrl) throw new Error(`${label} item is missing source URL/provenance`);
-    let sourceHost;
-    try { sourceHost = new URL(sourceUrl).hostname.replace(/^www\./, '').toLowerCase(); } catch { throw new Error(`${label} item source URL is invalid`); }
-    if (sourceHost !== host) throw new Error(`${label} item source URL is not bound to the inspected business-owned domain`);
+    const parsed = normalizeOwnedUrl(String(sourceUrl), host, `${label} item source`);
+    assertNoConflictingProvenance(item, parsed, host, label);
     if (!item.provenance && !item.source && !item.sourceRef && !item.sourceUrl && !item.url && !item.src) throw new Error(`${label} item is missing provenance`);
   }
 }
@@ -83,21 +103,37 @@ function validateOwnedEvidence(items, host, label) {
 function validateOwnedUrlList(items, host, label) {
   if (!Array.isArray(items)) throw new Error(`${label} must be an array`);
   for (const sourceUrl of items) {
-    let sourceHost;
-    try { sourceHost = new URL(sourceUrl).hostname.replace(/^www\./, '').toLowerCase(); } catch { throw new Error(`${label} contains an invalid URL`); }
-    if (sourceHost !== host) throw new Error(`${label} URL is not bound to the inspected business-owned domain`);
+    normalizeOwnedUrl(sourceUrl, host, `${label}`);
   }
 }
 
 function normalizeWebsiteAudit(result, candidate) {
   if (!result || typeof result.website !== 'string' || !result.website.trim()) throw new Error('Website audit must identify the inspected business-owned website');
+  if (!candidate || typeof candidate.website !== 'string' || !candidate.website.trim()) throw new Error('Website audit requires a candidate-owned website domain');
   let resultHost;
-  try { resultHost = new URL(result.website).hostname.replace(/^www\./, '').toLowerCase(); } catch { throw new Error('Website audit website URL is invalid'); }
+  let parsedWebsite;
+  try { parsedWebsite = normalizeOwnedUrl(result.website, '', 'Website audit website'); } catch (error) {
+    // Normalize the inspected website before applying the host binding. The
+    // empty host is intentional here: normalizeOwnedUrl still enforces the
+    // scheme/host contract, while the business host is established below.
+    try { parsedWebsite = new URL(result.website); } catch { throw error; }
+    if (parsedWebsite.protocol !== 'http:' && parsedWebsite.protocol !== 'https:') throw error;
+  }
+  resultHost = parsedWebsite.hostname.replace(/^www\./, '').toLowerCase();
+  if (!resultHost) throw new Error('Website audit website URL is missing a host');
   if (/google\./i.test(resultHost) || resultHost === 'google.com') throw new Error('Website audit cannot use Google as business-owned evidence');
   if (candidate.website) {
     let candidateHost;
-    try { candidateHost = new URL(candidate.website).hostname.replace(/^www\./, '').toLowerCase(); } catch { candidateHost = null; }
+    try {
+      const candidateUrl = new URL(candidate.website);
+      if (candidateUrl.protocol !== 'http:' && candidateUrl.protocol !== 'https:') throw new Error('scheme');
+      candidateHost = candidateUrl.hostname.replace(/^www\./, '').toLowerCase();
+    } catch { throw new Error('Website audit candidate website URL is invalid'); }
     if (candidateHost && candidateHost !== resultHost) throw new Error('Website audit result does not bind to the candidate-owned website');
+  }
+  if (result.provenance?.website != null) {
+    const provenanceUrl = normalizeOwnedUrl(String(result.provenance.website), resultHost, 'Website audit provenance website');
+    if (provenanceUrl.hostname.replace(/^www\./, '').toLowerCase() !== resultHost) throw new Error('Website audit provenance conflicts with inspected website');
   }
   const evidence = Array.isArray(result.evidence) ? result.evidence : [];
   const images = Array.isArray(result.images) ? result.images : [];
@@ -179,6 +215,7 @@ function normalizeJudgment(result, receipt, review) {
     judgmentId: result.judgmentId || receipt?.runId || receipt?.jobId || `cursor:${review.id}`,
     model: result.model || receipt?.resolvedModel || 'grok-4.6',
     modelReceipt: { requestedAlias: receipt?.requestedAlias || null, resolvedModel: receipt?.resolvedModel || null },
+    receipt: receipt || null,
     judgedAt: result.judgedAt || receipt?.completedAt || receipt?.startedAt || null,
     provenance,
     directCompletedService: result.directCompletedService === true,
@@ -324,6 +361,7 @@ function createProductionAdapters({
       const evidence = buildPrescriptionEvidence({ classification, pages: validated.pages, candidateServices: services });
       const output = {
         ...validated,
+        sourceCheckpoint: sourceBinding,
         candidateServices: services,
         whyBuilt: decision.whyBuilt || modelResult.whyBuilt || null,
         evidence,
@@ -343,20 +381,21 @@ function createProductionAdapters({
   };
 
   const gate1 = {
-    async render({ finalist, inventory, classifications, prescription, whyBuilt }) {
+    async render({ finalist, inventory, classifications, prescription, whyBuilt, qa: suppliedQa = null, sourceCheckpoint = null, receipts: receiptBundle = {}, actionProof = null, lineage = null }) {
       const classified = classifications || {};
       const enrichedInventory = {
         ...inventory,
         classifications: classified,
+        classified: inventory.classified || (inventory.reviews ? inventory.reviews.map((review) => ({ id: review.id, authoritative: true, sourceReview: review, judgment: classified[review.id] || {} })) : []),
         writtenReviewCount: inventory.writtenReviewCount ?? inventory.reviews?.length ?? 0,
         authoritativeJudgmentCount: Object.keys(classified).length,
         authoritativeAnchorCount: Object.values(classified).filter((item) => item?.decision === 'anchor' && item?.directCompletedService === true).length,
         availabilityPattern: prescription.availabilityPattern || prescription.evidence?.availabilityPattern || inventory.availabilityPattern || null,
       };
       const resolvedWhyBuilt = whyBuilt || prescription.whyBuilt;
-      const qa = architectQa({ finalist, inventory: enrichedInventory, prescription, whyBuilt: resolvedWhyBuilt });
+      const qa = suppliedQa || architectQa({ finalist, inventory: enrichedInventory, prescription, whyBuilt: resolvedWhyBuilt });
       if (!qa.passed) throw new Error(`Gate 1 QA failed: ${Object.entries(qa.checks).filter(([, passed]) => !passed).map(([name]) => name).join(', ')}`);
-      const markdown = renderGate1({ finalist, prescription, whyBuilt: resolvedWhyBuilt });
+      const markdown = renderGate1({ finalist, prescription, whyBuilt: resolvedWhyBuilt, qa, sourceCheckpoint: sourceCheckpoint || prescription.sourceCheckpoint || null, receipts: receiptBundle, actionProof, lineage: lineage || { prospectId: prescription.prospect?.prospectId, placeId: prescription.prospect?.placeId, runId: prescription.runId } });
       const result = { markdown, qa, state: 'awaiting-human-gate-1', receiptKeys: [`factory:page-prescription:${finalist.placeId}`] };
       await putReceipt(receipts, `factory:gate-1:${finalist.placeId}`, { provider: 'factory', operation: 'gate-1', status: 'completed', completedAt: clock(), result });
       return result;
