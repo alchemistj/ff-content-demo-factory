@@ -132,6 +132,26 @@ function findClaim(comments, expected) {
   }) || null;
 }
 
+// A terminal Cursor reply is a result, not a comment identity.  Retries can
+// produce a new comment id for the same immutable handoff/result, so resume
+// recovery must key on the bound outcome digests and never on resultId alone.
+function terminalOutcomeKey(value) {
+  if (!value) return null;
+  const inputDigest = value.inputDigest || value.receipt?.inputDigest;
+  const outputDigest = value.outputDigest || value.receipt?.outputDigest;
+  if (!value.handoffId || !value.dispatchKey || !inputDigest || !outputDigest) return null;
+  return digest({ handoffId: String(value.handoffId), dispatchKey: String(value.dispatchKey), inputDigest: String(inputDigest), outputDigest: String(outputDigest) });
+}
+
+function findTerminalOutcome(comments, expected) {
+  const expectedKey = expected.terminalOutcomeKey || terminalOutcomeKey(expected);
+  if (!expectedKey) return null;
+  return authoritativeMarkers(comments, expected).find((marker) => {
+    if (marker.kind !== 'resume' || !['terminal', 'phase_b_claimed', 'resumed'].includes(marker.status)) return false;
+    return terminalOutcomeKey(marker) === expectedKey;
+  }) || null;
+}
+
 function reconcileDispatchComment(comments, expected) {
   const repository = required(expected.repository, 'dispatch repository');
   const issueNumber = String(required(expected.issueNumber, 'dispatch issue'));
@@ -148,4 +168,4 @@ function requireGitHubToken(env = process.env) {
   return token;
 }
 
-module.exports = { SCHEMA_VERSION, STATES, markerFor, markerBody, parseMarker, assertTransition, assertContext, authoritativeMarkers, findClaim, reconcileDispatchComment, claimOwnerMatches, recoverClaim, requireGitHubToken };
+module.exports = { SCHEMA_VERSION, STATES, markerFor, markerBody, parseMarker, assertTransition, assertContext, authoritativeMarkers, findClaim, terminalOutcomeKey, findTerminalOutcome, reconcileDispatchComment, claimOwnerMatches, recoverClaim, requireGitHubToken };
