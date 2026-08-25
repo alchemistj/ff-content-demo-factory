@@ -58,12 +58,14 @@ const proposedPages = [
 ];
 
 const UNIT_SITE_COVERAGE = { inspected: true, inspectedPageUrls: ['/'], matchingPageUrls: [], hasCorrespondingPage: false, crawlRefs: ['unit-site-audit'], absenceEvidence: { kind: 'unit-fixture-absence', crawlRefs: ['unit-site-audit'] } };
-const UNIT_LEDGER = { version: 'canonical-service-coverage-ledger-v1', prospectId: 'rlb', placeId: 'rlb', runId: 'unit-run', aliases: {}, services: [
+const UNIT_SOURCE_IDENTITY = { provider: 'repository-test-fixture', runId: 'unit-run', artifactId: 'unit-artifact', sourceSha: 'unit-source-sha', rootIdentity: 'test-artifact-root:unit-artifact' };
+const UNIT_SOURCE_ARTIFACT_DIGEST = 'sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa';
+const UNIT_LEDGER = { version: 'canonical-service-coverage-ledger-v1', prospectId: 'rlb', placeId: 'rlb', runId: 'unit-run', sourceIdentity: UNIT_SOURCE_IDENTITY, aliases: {}, services: [
   { id: 'ev-charging', name: 'EV charging', reviewIds: ['allen'], currentSitePageUrls: [], siteAuditCoverage: UNIT_SITE_COVERAGE },
   { id: 'electrical-repair', name: 'Electrical repair', reviewIds: ['anthony'], currentSitePageUrls: [], siteAuditCoverage: UNIT_SITE_COVERAGE },
   { id: 'panel-upgrade', name: 'Panel upgrade', reviewIds: [], currentSitePageUrls: [], siteAuditCoverage: UNIT_SITE_COVERAGE },
 ] };
-function unitBound() { return { serviceLedger: UNIT_LEDGER, runContext: { prospectId: 'rlb', placeId: 'rlb', runId: 'unit-run' } }; }
+function unitBound() { return { serviceLedger: UNIT_LEDGER, runContext: { prospectId: 'rlb', placeId: 'rlb', runId: 'unit-run' }, sourceBinding: { sourceIdentity: UNIT_SOURCE_IDENTITY, sourceArtifactDigest: UNIT_SOURCE_ARTIFACT_DIGEST } }; }
 
 test('prescription consumes explicit Architect pages, compares every service including zero-anchor pass-over, and refuses samples', () => {
   assert.throws(() => prescribe({ finalist: candidates[0], inventory: { discoverySampleOnly: true }, services: [], proposedPages: [] }), /discovery-sample/);
@@ -94,6 +96,17 @@ test('collision validation, Gate 1 evidence specificity, and expanded Architect 
   assert.equal(architectQa({ finalist, inventory: classification, prescription: unsupported, whyBuilt }).checks.unsupportedClaimsAbsent, false);
   assert.equal(architectQa({ finalist: { ...finalist, duplicate: { status: 'duplicate' } }, inventory: classification, prescription, whyBuilt }).checks.noMoldOrDuplicate, false);
   assert.equal(architectQa({ finalist, inventory: classification, prescription, whyBuilt, laterStageArtifacts: ['copy'] }).checks.noLaterStageArtifacts, false);
+});
+
+test('prescription claims require resolvable evidence references and source identity binding', () => {
+  const finalist = { ...candidates[0], architectQualified: true };
+  const base = { finalist, classification, services: [{ id: 'ev-charging', name: 'EV charging' }, { id: 'electrical-repair', name: 'Electrical repair' }, { id: 'panel-upgrade', name: 'Panel upgrade', passedOverReason: 'No authoritative direct anchor.' }], ...unitBound() };
+  const unsupportedClaimPages = proposedPages.map((page, index) => index === 1 ? { ...page, claims: [{ text: 'Invented capability', evidenceRefs: ['not-an-authoritative-review'] }] } : { ...page });
+  assert.throws(() => prescribe({ ...base, proposedPages: unsupportedClaimPages }), /resolvable evidenceRefs/);
+  const malformedClaimPages = proposedPages.map((page, index) => index === 1 ? { ...page, claims: ['Unbound claim'] } : { ...page });
+  assert.throws(() => prescribe({ ...base, proposedPages: malformedClaimPages }), /resolvable evidenceRefs/);
+  const tamperedBinding = { ...base.sourceBinding, sourceIdentity: { ...UNIT_SOURCE_IDENTITY, rootIdentity: 'tampered-root' } };
+  assert.throws(() => prescribe({ ...base, proposedPages, sourceBinding: tamperedBinding }), /source identity mismatch/);
 });
 
 test('recommended review metadata is resolved from authoritative evidence and excerpts cannot drift', () => {
