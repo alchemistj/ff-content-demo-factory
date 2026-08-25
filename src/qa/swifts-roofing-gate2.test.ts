@@ -64,8 +64,32 @@ test("Swifts Roofing Gate 2 words package meets the four-page contract", async (
   assert.match(markdown, /State: awaiting-human-gate-2/);
   assert.match(markdown, /Do you approve these website words for the coded demo\?/);
   assert.match(markdown, /Merge occurred: \*\*no\*\*/);
-  assert.match(markdown, /awaiting independent Architect QA/);
+  assert.match(markdown, /awaiting Josh's look/);
+  assert.match(markdown, /Architect QA Writer 1: \*\*awaiting Josh's look\*\*/);
+  assert.match(markdown, /Architect QA Writer 2: \*\*awaiting Josh's look\*\*/);
+  assert.doesNotMatch(markdown, /Architect QA Writer 1: \*\*(pass|accepted)/i);
+  assert.doesNotMatch(markdown, /Architect QA Writer 2: \*\*(pass|accepted)/i);
   assert.doesNotMatch(markdown, /\/roof-inspection|\/emergency-tarping/);
+  const publicStart = markdown.indexOf("## /");
+  const strategyStart = markdown.indexOf("## Strategy Overview");
+  assert.ok(publicStart >= 0 && strategyStart > publicStart, "public pages and Strategy Overview must be present");
+  const publicPages = markdown.slice(publicStart, strategyStart);
+  for (const phrase of [
+    "mint extra",
+    "named repair record",
+    "allowed to use",
+    "earned its own URL",
+    "second URL",
+    "extra public service",
+    "upgraded into replacement",
+    "left off the public map",
+    "the copy stays that way on purpose",
+    "this demo does not",
+    "extra destinations to look busier",
+    "this page is allowed",
+  ]) {
+    assert.ok(!publicPages.toLowerCase().includes(phrase.toLowerCase()), `public pages must not contain factory phrasing: ${phrase}`);
+  }
   const homeAt = markdown.indexOf("## /");
   const replacementAt = markdown.indexOf("## /roof-replacement");
   const repairAt = markdown.indexOf("## /roof-repair");

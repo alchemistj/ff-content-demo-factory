@@ -88,7 +88,7 @@ const assessor = (): IntelligentAssessment => ({
       dimension: "strategy-truthfulness",
       severity: "note",
       summary: "Strategy Overview is internal, four-page, and does not self-approve Architect QA.",
-      rationale: "No public URL/path/route fields. Better-future language. Architect slots remain awaiting independent Architect QA. No merge/build/deploy statement is present.",
+      rationale: "No public URL/path/route fields. Better-future language. Architect slots remain awaiting Josh's look and are not accepted. No merge/build/deploy statement is present.",
     },
     {
       dimension: "unsupported-claims",
@@ -157,8 +157,9 @@ Directly readable words package for Swifts Roofing. Natural reading order is Hom
 - Roof Replacement useful-body word count: **${wordCounts["/roof-replacement"]}**
 - Roof Repair useful-body word count: **${wordCounts["/roof-repair"]}**
 - Both service pages meet the required ≥800-word floor for this Swifts Gate 2 package.
-- Architect QA Writer 1: **awaiting independent Architect QA** (decision slot only; this writer did not self-approve)
-- Architect QA Writer 2: **awaiting independent Architect QA** (decision slot only; this writer did not self-approve)
+- Architect QA Writer 1: **awaiting Josh's look** (not accepted; this writer did not self-approve)
+- Architect QA Writer 2: **awaiting Josh's look** (not accepted; this writer did not self-approve)
+- Owner-facing pages rewritten as company copy (no factory-rule sentences on Home, Replacement, or Repair)
 - Writer 3 Strategy Overview: internal only
 - Whole-site QA: **${wholeSite.pass ? "pass" : "fail"}** (writer-run continuity / evidence / topology check; Architect slots remain open)
 - reviewEvidence: pointer ledger only (no word-bearing keys)
@@ -194,39 +195,39 @@ Directly readable words package for Swifts Roofing. Natural reading order is Hom
 
 ## Architect QA — Writer 1
 
-Decision: **awaiting independent Architect QA**.
+Decision: **awaiting Josh's look**.
 
-This slot is recorded after Writer 1 (Roof Replacement and Roof Repair) and before treating Writer 1 as Architect-accepted. The reviewEvidence ledger for the service pages is pointers only. This writer did not self-approve the slot.
+This slot is recorded after Writer 1 (Roof Replacement and Roof Repair). Owner-facing service copy is company voice. The reviewEvidence ledger remains pointers only. This writer did not self-approve the slot. Architect QA Writer 1 is not accepted.
 
 ### Roof Replacement section jobs
 
-- \`replace-when\` (direct-answer): Full reroof vs keeping the roof; Neal Richardson Sr is the prescribed first replacement with install, cleanup, and owner review. Evening duration is observed job timing only.
-- \`replace-estimate\` (process): Questions and estimate before tear-off; owner review after install; David Carson manufacturer talk stays consultation on this reroof; Roger’s prep/roofing/cleanup are stages of replacement.
-- \`replace-shingles\` (method): Tear-off and new shingles fold onto this URL; Laura Hampton is the quoted method proof. No second shingle URL. No price guarantee. No extra service lines from “4 separate jobs.”
-- \`replace-named-jobs\` (scope): Grable insurance-backed replacement is payment context, not a storm product. Remaining named reroofs stay on this URL.
+- \`replace-when\` (direct-answer): Full reroof vs keeping the roof; Neal Richardson Sr is the first replacement with install, cleanup, and owner review. Evening duration is that job only.
+- \`replace-estimate\` (process): Questions and estimate before tear-off; owner review after install; David Carson manufacturer talk stays consultation on the reroof; Roger’s prep/roofing/cleanup are stages of one replacement.
+- \`replace-shingles\` (method): Tear-off and new shingles are how a reroof is finished; Laura Hampton is the quoted proof. No price guarantee. Extra jobs she hired are not extra offerings.
+- \`replace-named-jobs\` (scope): Grable’s reroof billed through insurance is how that job was paid. Remaining named reroofs stay here. Leaks on a roof you keep go to repair.
 - \`replace-cleanup\` (finish-expectation): Linda Mulholland quoted for cleanup on the replacement day. Not a cleanup guarantee. Early-morning-to-dark is not dispatch.
-- \`replace-next\` (next-step): Call, or go to repair / contact.
+- \`replace-next\` (next-step): Call, or see Roof Repair / Contact.
 
 ### Roof Repair section jobs
 
-- \`repair-when\` (direct-answer): Keep the roof you have. Hoffman leak on an exhaust flue, diagnosed and repaired. Thin evidence is honest. Prompt/occupied-elsewhere timing is not an SLA.
-- \`repair-same-visit\` (confirmed-scope): Leak, seals found during flue work, restored flues color-matched to the roof that stayed. Q&A on that visit is not a look-only destination.
-- \`repair-honest-scope\` (evidence-limit): Grade C; one suitable review; future-need and pricing praise are not extra services or a lowest-price claim.
-- \`repair-not-other-jobs\` (boundary): No extra repair URLs; reroof goes to replacement.
+- \`repair-when\` (direct-answer): Keep the roof you have. Hoffman leak on an exhaust flue, found, explained, and repaired. One completed visit. Prompt/occupied-elsewhere timing is not an SLA.
+- \`repair-same-visit\` (confirmed-scope): Leak, seals found during flue work, restored flues color-matched to the roof that stayed. Questions answered on that stop.
+- \`repair-honest-scope\` (evidence-limit): One suitable review; he had called before; pricing and speed praise are not company promises.
+- \`repair-not-other-jobs\` (boundary): If the roof needs to come off, see Roof Replacement.
 - \`repair-next\` (next-step): Call with where the water is.
 
-Role: Writer 1 complete. Independent Architect QA has not signed this slot.
+Role: Writer 1 complete. Architect QA Writer 1 remains awaiting Josh's look.
 
 ## Architect QA — Writer 2
 
-Decision: **awaiting independent Architect QA**.
+Decision: **awaiting Josh's look**.
 
-This slot is recorded after Writer 2 (Home, Contact, header, footer). Public chrome resolves the approved four routes. Home uses C Jackson / Hunter Gaston / Josh Baird and does not steal replacement or repair leads. Contact is lean. This writer did not self-approve the slot.
+This slot is recorded after Writer 2 (Home, Contact, header, footer). Home, Contact, header, and footer are company voice with the service pages. Public chrome resolves the approved four routes. Home uses C Jackson / Hunter Gaston / Josh Baird and does not steal replacement or repair leads. Contact is lean. This writer did not self-approve the slot. Architect QA Writer 2 is not accepted.
 
 - Home H1 is title case and carries \`roofing company Springfield MO\`.
 - Contact H1 is title case and carries \`contact Swifts Roofing Springfield\`.
 - Header and footer do not expose Strategy Overview.
-- No hours claim (listing vs owned-site hours disagree in the audit packet and stay off owner-facing copy).
+- No hours claim.
 - No second address.
 
 ## Review / evidence pointer ledger
@@ -264,7 +265,7 @@ No review pointers. Contact is ineligible.
 
 ## Whole-site QA
 
-Decision: **${wholeSite.pass ? "pass" : "fail"}**. Assessor \`writer-whole-site-swifts-gate2\`. Architect Writer 1 / Writer 2 slots remain awaiting independent Architect QA. Human status: **Needs Josh — Human Gate 2**.
+Decision: **${wholeSite.pass ? "pass" : "fail"}**. Assessor \`writer-whole-site-swifts-gate2\`. Architect Writer 1 / Writer 2 slots remain awaiting Josh's look and are not accepted. Human status: **Needs Josh — Human Gate 2**.
 
 Deterministic hard-fail count: ${deterministic.findings.filter((item) => item.severity === "hard-fail").length}. Whole-site hard-fail count: ${wholeSite.findings.filter((item) => item.severity === "hard-fail").length}.
 

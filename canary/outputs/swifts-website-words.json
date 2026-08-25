@@ -59,7 +59,7 @@
         "kind": "phone"
       }
     ],
-    "legal": "Words package only. No website deployment is authorized from this package."
+    "legal": "Swifts Roofing · Springfield, MO"
   },
   "pages": [
     {
@@ -83,55 +83,55 @@
         {
           "id": "c-home-completed",
           "text": "Jared and his crew complete roofs on Springfield homes",
-          "wordOffset": 51
+          "wordOffset": 45
         },
         {
           "id": "c-home-crew",
-          "text": "the crew works the roof you can see when they leave",
-          "wordOffset": 272
+          "text": "The crew works the roof you can see when they leave",
+          "wordOffset": 225
         },
         {
           "id": "c-home-finished",
-          "text": "homeowners describe a finished roof they are happy to look at",
-          "wordOffset": 418
+          "text": "Josh Baird is happy with his roof from Swifts",
+          "wordOffset": 333
         }
       ],
       "sections": [
         {
           "id": "home-lead",
           "sectionId": "home-lead",
-          "heading": "Completed roofs, named people",
-          "body": "This page is the company, not a reroof-only pitch. Jared and his crew complete roofs on Springfield homes, and C Jackson’s completed job is the lead because it names Jared, the crew, and Swifts Roofing on the reviewer’s roof. It does not name a repair, a replacement, a look-only stop, or a product. The story here is a finished roof, start to finish, with communication from Jared.\n\n> Jared and his crew did an amazing job on our roof! From start to finish I was very impressed! Jared was very knowledgeable and communication was top notch. I couldn't recommend a better roofing company, thank you so much Jared and Swifts Roofing!\n> — C Jackson"
+          "heading": "Jared and the crew on your roof",
+          "body": "Jared and his crew complete roofs on Springfield homes. C Jackson’s job names Jared, the crew, and Swifts Roofing on the roof they finished. It is a completed roof, start to finish, with communication from Jared while the work was underway.\n\n> Jared and his crew did an amazing job on our roof! From start to finish I was very impressed! Jared was very knowledgeable and communication was top notch. I couldn't recommend a better roofing company, thank you so much Jared and Swifts Roofing!\n> — C Jackson"
         },
         {
           "id": "home-routes",
           "sectionId": "home-routes",
-          "heading": "Two jobs, two pages",
-          "body": "If the roof over the house needs to come off, go to roof replacement. That page is for a full reroof, including tear-off and new shingles as the method. If you intend to keep the roof you already have — a leak, a seal, a flue — go to roof repair. Home does not try to close either job in this space. It sends you to the page that matches. Contact is how you reach the shop when you are ready to talk."
+          "heading": "Need a new roof, or work on the one you have?",
+          "body": "If the roof over the house needs to come off, see Roof Replacement. That is a full reroof, including tear-off and new shingles. If you want to keep the roof you already have — a leak, a seal, a flue — see Roof Repair. See Contact when you are ready to talk."
         },
         {
           "id": "home-crew",
           "sectionId": "home-crew",
           "heading": "The crew on the roof",
-          "body": "Hunter Gaston described Jared explaining the work in language he could follow, a polite crew, and hard work on the roof they had. The crew works the roof you can see when they leave. The finished note is the roof looking the way it should. That is still a completed roof, not a named method, and it stays on Home rather than being upgraded into replacement or repair.\n\n> His team was extremely polite and worked very hard on our roof! Looks AMAZING! So thankful for Jared and his team! Roof looks PERFECT!\n> — Hunter Gaston"
+          "body": "Hunter Gaston described Jared explaining the work in language he could follow, a polite crew, and hard work on the roof they had. The crew works the roof you can see when they leave. When they were done, the roof looked the way it should.\n\n> His team was extremely polite and worked very hard on our roof! Looks AMAZING! So thankful for Jared and his team! Roof looks PERFECT!\n> — Hunter Gaston"
         },
         {
           "id": "home-nap",
           "sectionId": "home-nap",
           "heading": "The Springfield shop",
-          "body": "Swifts Roofing is at 4268 S Hillcrest Ave Ste 110, Springfield, MO 65810. Call (417) 771-0477. Homeowners name Jared in the written record. Use the replacement page or the repair page if you already know the job. Use contact if you want the number and the address without the service argument."
+          "body": "Swifts Roofing is at 4268 S Hillcrest Ave Ste 110, Springfield, MO 65810. Call (417) 771-0477. Homeowners name Jared when they talk about the work. See Roof Replacement or Roof Repair if you already know the job. See Contact if you want the number and the address."
         },
         {
           "id": "home-finished",
           "sectionId": "home-finished",
           "heading": "A finished roof you can look at",
-          "body": "Josh Baird’s completed job is the roof he has from Swifts. Homeowners describe a finished roof they are happy to look at. He names Jared as the person who stays with the work until the customer is satisfied. That is still a generic completed roof. It is not a reroof proof and not a repair proof.\n\n> I am very happy with my roof from Swifts. It's clear from working with Jared that he cares about customer satisfaction, and will do what it takes to make sure the customer is happy. He's professional, responsive, and passionate about doing the job right. The roof looks great, and the price was very reasonable.\n> — Josh Baird"
+          "body": "Josh Baird is happy with his roof from Swifts. He names Jared as the person who stays with the work until the customer is satisfied. The roof looks great. That is a finished roof on a Springfield home — the same kind of completed work C Jackson and Hunter Gaston describe.\n\n> I am very happy with my roof from Swifts. It's clear from working with Jared that he cares about customer satisfaction, and will do what it takes to make sure the customer is happy. He's professional, responsive, and passionate about doing the job right. The roof looks great, and the price was very reasonable.\n> — Josh Baird"
         },
         {
           "id": "home-next",
           "sectionId": "home-next",
           "heading": "Call the company",
-          "body": "Call (417) 771-0477 when you want Swifts Roofing on the job. Choose roof replacement if the roof is coming off. Choose roof repair if the roof is staying. Choose contact if you only need the path to call or write."
+          "body": "Call (417) 771-0477 when you want Swifts Roofing on the job. See Roof Replacement if the roof is coming off. See Roof Repair if the roof is staying. See Contact if you only need the number and the address."
         }
       ],
       "reviewPlacements": [
@@ -143,7 +143,7 @@
           "proofRole": "lead",
           "sectionId": "home-lead",
           "order": 1,
-          "wordOffset": 110
+          "wordOffset": 87
         },
         {
           "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUNnc3RfSmdRRRAB",
@@ -153,7 +153,7 @@
           "proofRole": "support",
           "sectionId": "home-crew",
           "order": 3,
-          "wordOffset": 318
+          "wordOffset": 248
         },
         {
           "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURibGMyV2JnEAE",
@@ -163,7 +163,7 @@
           "proofRole": "support",
           "sectionId": "home-finished",
           "order": 5,
-          "wordOffset": 464
+          "wordOffset": 385
         }
       ],
       "reviewEvidence": [
@@ -226,7 +226,7 @@
       "seoTitle": "Roof Replacement in Springfield, MO | Swifts Roofing",
       "metaDescription": "Roof replacement in Springfield, MO from Swifts Roofing. Tear-off and new shingles for homes that need a full reroof. Call (417) 771-0477.",
       "h1": "Roof Replacement in Springfield, MO",
-      "heroSubhead": "When the roof over the house needs to come off, this is the page. Swifts Roofing replaces roofs on Springfield homes. Homeowners name Jared as the owner on the job. The shop is at 4268 S Hillcrest Ave Ste 110. If you intend to keep the roof you already have and need a leak, a seal, or a flue handled, use the roof repair page instead.",
+      "heroSubhead": "When the roof over the house needs to come off, start here. Swifts Roofing replaces roofs on Springfield homes. Homeowners name Jared as the owner on the job. The shop is at 4268 S Hillcrest Ave Ste 110. If you want to keep the roof you already have — a leak, a seal, or a flue — see Roof Repair.",
       "suitableReviewIds": [
         "Ci9DQUlRQUNvZENodHljRjlvT2sxM1kybGhiVFEzTlVJeFMzZE1WSE5XZURJMFkyYxAB",
         "ChZDSUhNMG9nS0VMeW41N2ZMNU1HUUZ3EAE",
@@ -238,18 +238,18 @@
       "claims": [
         {
           "id": "c-replace-first",
-          "text": "named first roof replacement with on-site install and owner review after the install",
-          "wordOffset": 154
+          "text": "his first roof replacement included the on-site install and owner review after the install",
+          "wordOffset": 146
         },
         {
           "id": "c-replace-shingles",
-          "text": "tear-off and putting new shingles down is the reroof method on this page",
-          "wordOffset": 432
+          "text": "A full reroof is tear-off and putting new shingles down",
+          "wordOffset": 420
         },
         {
           "id": "c-replace-cleanup",
-          "text": "named replacement crews cleaned the site on the day of the reroof",
-          "wordOffset": 753
+          "text": "the crew cleaned up the site on the day they replaced the roof",
+          "wordOffset": 743
         }
       ],
       "sections": [
@@ -257,37 +257,37 @@
           "id": "replace-when",
           "sectionId": "replace-when",
           "heading": "When the job is a full roof replacement",
-          "body": "Call for roof replacement in Springfield, MO when the roof on the house is coming off and a new roof is going down — not when you want the roof you already have repaired. Neal Richardson Sr. came to Swifts Roofing for his first roof replacement. He had already met with other contractors. He asked questions. The estimate was competitive. What he documented after that is the completed job this page is built on: a named first roof replacement with on-site install and owner review after the install.\n\nThat install ran through the day and into the evening on his job. That is how long that particular reroof lasted. It is not a night-dispatch offer, a same-day promise, or a response-time guarantee for the next household.\n\n> During the install, the workers were respectful and professional, worked hard throughout the day into the evening, and did a clean and quality install. They also were good about cleanup throughout the day.\n> — Neal Richardson Sr"
+          "body": "Call for roof replacement in Springfield, MO when the roof on the house is coming off and a new roof is going down. If you want the roof you already have repaired, that is a different job — see Roof Repair.\n\nNeal Richardson Sr. came to Swifts Roofing for his first roof replacement. He had already met with other contractors. He asked questions. The estimate was competitive. Then the crew did the work: his first roof replacement included the on-site install and owner review after the install.\n\nThat install ran through the day and into the evening on his job. That is how long that particular reroof lasted. It is not a night-dispatch offer, a same-day promise, or a response-time guarantee for the next household.\n\n> During the install, the workers were respectful and professional, worked hard throughout the day into the evening, and did a clean and quality install. They also were good about cleanup throughout the day.\n> — Neal Richardson Sr"
         },
         {
           "id": "replace-estimate",
           "sectionId": "replace-estimate",
           "heading": "Questions, the estimate, then the owner on the finished roof",
-          "body": "A replacement starts before anyone pulls shingles. Neal compared Swifts Roofing with other contractors and used that conversation to get his questions answered. After the install, the owner walked the finished roof and answered what was still open. If you are choosing among contractors, bring the questions you still have. If you already know you need a full reroof, say that when you call.\n\nDavid Carson also described time on the roof before the crew produced the new one: pictures, how water moves, and the differences between manufacturers. Jared replaced that roof. The conversation about shingles and manufacturers is part of choosing a reroof on this page. It is not a product catalog, a materials URL, or a second public service. Roger Richardson named the stages that show up on a replacement — preparation, roofing, and clean up — as one job, not as three destinations."
+          "body": "A replacement starts before anyone pulls shingles. Neal compared Swifts Roofing with other contractors and used that conversation to get his questions answered. After the install, the owner walked the finished roof and answered what was still open. If you are choosing among contractors, bring the questions you still have. If you already know you need a full reroof, say that when you call.\n\nDavid Carson also spent time on the roof with Jared before the crew put the new one down: pictures, how water moves, and the differences between manufacturers. Jared replaced that roof. Talking through shingles and manufacturers is part of choosing the new roof. If you already have pictures, manufacturer questions, or another estimate in hand, bring them. Neal used that kind of conversation before the crew started. David did too, on the roof with Jared, before the old roof came off. Roger Richardson described the same kind of job as preparation, roofing, and clean up — the stages of one replacement, done as one visit."
         },
         {
           "id": "replace-shingles",
           "sectionId": "replace-shingles",
-          "heading": "Tear-off and new shingles stay on this reroof",
-          "body": "Putting new shingles down after a tear-off is how a reroof is finished. That method stays here. There is no second URL for it. Tear-off and putting new shingles down is the reroof method on this page, and Laura Hampton’s completed job is the written record of that sequence: delivery, tear-off, and new shingles, with the roof looking the way it should when the work was done.\n\nThe week-scale timing on her job is one household’s schedule. It is not a one-week completion guarantee. Her note that you will not find a better cost is her recommendation, not a company price promise. She also mentioned more than one job with Jared over a year. That is supporting color on a reroof relationship. It does not become extra public service lines.\n\n> from delivery to tear off to putting new shingles down within a week the job is done and the roof looks so good!\n> — Laura Hampton"
+          "heading": "Tear-off and new shingles",
+          "body": "A full reroof is tear-off and putting new shingles down. That is how Swifts finishes a replacement: the old roof comes off, and the new shingles go down on the same job. Laura Hampton described that sequence on a completed reroof — delivery, tear-off, and new shingles — and the roof looked the way it should when the work was done.\n\nThe timing on her job is one household’s schedule. It is not a one-week completion guarantee. When she says you will not find a better cost, that is her recommendation, not a company price promise. She also mentioned more than one job with Jared over a year. Those were other jobs she hired with Jared over that year.\n\n> from delivery to tear off to putting new shingles down within a week the job is done and the roof looks so good!\n> — Laura Hampton"
         },
         {
           "id": "replace-named-jobs",
           "sectionId": "replace-named-jobs",
-          "heading": "Named replacements, including work billed through insurance",
-          "body": "Rebecca Grable’s completed job was a roof replacement billed through her insurance. That is how that reroof was paid. It is payment context on this page, not a reason to invent a storm page or a separate claims desk. Her sense that the process moved quicker than she expected is her experience of that job, not a speed promise for yours.\n\nTaken together with Neal, Linda, Laura, David, and Roger, the written record on this URL is named roof replacements — first-time reroofs, insurance-backed reroofs, tear-off and new shingles, and crews that stayed through cleanup. None of those reviews is a leak on a roof you intend to keep. If that is your job, use roof repair."
+          "heading": "Other reroofs, including work billed through insurance",
+          "body": "Rebecca Grable’s job was a roof replacement billed through her insurance. That is how that reroof was paid. It does not change the work: the old roof came off and a new one went on. Her sense that the process moved quicker than she expected is her experience of that job, not a speed promise for yours.\n\nNeal, Linda, Laura, David, and Roger all describe completed replacements — first-time reroofs, a reroof billed through insurance, tear-off and new shingles, and crews that stayed through cleanup. If your job is a leak on a roof you intend to keep, see Roof Repair instead."
         },
         {
           "id": "replace-cleanup",
           "sectionId": "replace-cleanup",
           "heading": "Cleanup on the day of the reroof",
-          "body": "Cleanup is part of the replacement visits homeowners describe, not a separate add-on page. Neal noted cleanup throughout the install day. Roger named clean up with preparation and roofing as the quality of the same replacement. Linda Mulholland’s crew replaced the roof, worked the length of that day, and cleaned up the mess before they left. Named replacement crews cleaned the site on the day of the reroof. That is what happened on those jobs. It is not a cleanup guarantee for every future site.\n\nLinda’s early-morning-to-dark day is the length of that particular reroof. It is not before-sunrise dispatch and not an hours promise.\n\n> The crew who replaced our roof were amazing. They worked from early morning to dark and completely cleaned up all of the mess, even though I know they had to be exhausted.\n> — Linda Mulholland"
+          "body": "Cleanup belongs with the reroof, not as a separate visit you have to ask for. Neal noted cleanup throughout the install day. Roger described clean up with preparation and roofing as the quality of the same replacement. Linda Mulholland’s crew replaced the roof, worked the length of that day, and cleaned up the mess before they left. On those jobs, the crew cleaned up the site on the day they replaced the roof. That is what happened there. It is not a cleanup guarantee for every future site.\n\nLinda’s early-morning-to-dark day is the length of that particular reroof. It is not before-sunrise dispatch and not an hours promise.\n\n> The crew who replaced our roof were amazing. They worked from early morning to dark and completely cleaned up all of the mess, even though I know they had to be exhausted.\n> — Linda Mulholland"
         },
         {
           "id": "replace-next",
           "sectionId": "replace-next",
           "heading": "Call about a full reroof",
-          "body": "If the roof you have is the one coming off, call Swifts Roofing at (417) 771-0477. The shop is at 4268 S Hillcrest Ave Ste 110, Springfield, MO 65810. Tell Jared whether you are comparing estimates, whether the roof is already moving through insurance, and whether you need tear-off and new shingles. If you want the roof you already have repaired instead, use the roof repair page. To reach the company without a service question, use contact."
+          "body": "If the roof you have is the one coming off, call Swifts Roofing at (417) 771-0477. The shop is at 4268 S Hillcrest Ave Ste 110, Springfield, MO 65810. Tell Jared whether you are comparing estimates, whether the roof is already moving through insurance, and whether you need tear-off and new shingles. If you want the roof you already have repaired instead, see Roof Repair. To reach the shop without a service question, see Contact."
         }
       ],
       "reviewPlacements": [
@@ -299,7 +299,7 @@
           "proofRole": "lead",
           "sectionId": "replace-when",
           "order": 1,
-          "wordOffset": 206
+          "wordOffset": 199
         },
         {
           "reviewId": "ChZDSUhNMG9nS0VJQ0FnTURJbjZTNkNnEAE",
@@ -309,7 +309,7 @@
           "proofRole": "support",
           "sectionId": "replace-shingles",
           "order": 3,
-          "wordOffset": 539
+          "wordOffset": 540
         },
         {
           "reviewId": "ChZDSUhNMG9nS0VJQ0FnTURvck5uOEl3EAE",
@@ -319,7 +319,7 @@
           "proofRole": "support",
           "sectionId": "replace-cleanup",
           "order": 5,
-          "wordOffset": 803
+          "wordOffset": 792
         }
       ],
       "reviewEvidence": [
@@ -405,47 +405,47 @@
       "seoTitle": "Roof Repair in Springfield, MO | Swifts Roofing",
       "metaDescription": "Roof repair in Springfield, MO from Swifts Roofing. Leak, seal, and flue work on the roof you already have. Call (417) 771-0477.",
       "h1": "Roof Repair in Springfield, MO",
-      "heroSubhead": "This page is for the roof you already have. If water is coming in, a seal has failed, or a flue on that roof needs work, start here. Swifts Roofing handles roof repair in Springfield, MO. Call (417) 771-0477. Jared is the person homeowners name. A full reroof — tear-off and a new roof — belongs on the replacement page.",
+      "heroSubhead": "If water is coming in, a seal has failed, or a flue on the roof needs work, start here. Swifts Roofing handles roof repair in Springfield, MO. Call (417) 771-0477. Homeowners name Jared. If the whole roof needs to come off, see Roof Replacement.",
       "suitableReviewIds": [
         "ChdDSUhNMG9nS0VJQ0FnSUNKbzR6V2tBRRAB"
       ],
       "claims": [
         {
           "id": "c-repair-visit",
-          "text": "one completed visit repaired a leak on an exhaust flue, seals found during that work, and restored flues matched to the roof that stayed",
-          "wordOffset": 172
+          "text": "On that visit they repaired a leak on an exhaust flue, fixed seals they found while they were there, and restored the flues to match the roof that stayed",
+          "wordOffset": 116
         }
       ],
       "sections": [
         {
           "id": "repair-when",
           "sectionId": "repair-when",
-          "heading": "When the roof you have is the one to keep",
-          "body": "Call for roof repair in Springfield, MO when you intend to keep the roof that is already on the house. The completed example on this page is one visit. Jonathan Hoffman had a leak coming down an exhaust flue. The leak was found, explained, and repaired. It was not left as a look-only stop, and it was not turned into a reroof.\n\nThat same visit is the whole named repair record this page is allowed to use. There is not a second repair URL behind it, and this demo does not mint extra destinations to look busier. One completed visit repaired a leak on an exhaust flue, seals found during that work, and restored flues matched to the roof that stayed.\n\nHoffman’s note that the company swung by while already occupied elsewhere is the story of that day. Prompt arrival on that visit is not a same-day, one-hour, around-the-clock, or emergency-availability promise for the next caller.\n\n> Had a leak coming down an exhaust flume. Even while on an emergency call, Swift made the time to swing by promptly to check out the issue, find a fix and repair it. Not only were my concerns addressed and explained, he also repaired a few seal issues he found while working on the flue.\n> — Jonathan Hoffman"
+          "heading": "When you want to keep the roof you have",
+          "body": "Call for roof repair in Springfield, MO when the roof on the house is staying. Jonathan Hoffman had a leak coming down an exhaust flue. The leak was found, explained, and repaired on that visit. They did not just look at it and leave, and they did not turn it into a reroof.\n\nThat is one completed visit. On that visit they repaired a leak on an exhaust flue, fixed seals they found while they were there, and restored the flues to match the roof that stayed.\n\nHe noted they swung by while already occupied elsewhere. That is the story of that day. Prompt arrival on that visit is not a same-day, one-hour, around-the-clock, or emergency-availability promise for the next caller.\n\n> Had a leak coming down an exhaust flume. Even while on an emergency call, Swift made the time to swing by promptly to check out the issue, find a fix and repair it. Not only were my concerns addressed and explained, he also repaired a few seal issues he found while working on the flue.\n> — Jonathan Hoffman"
         },
         {
           "id": "repair-same-visit",
           "sectionId": "repair-same-visit",
           "heading": "The leak, the seals, and the flue on the same stop",
-          "body": "Hoffman’s leak showed up at an exhaust flue — he wrote flume and flue for the same stack. While that flue work was underway, seal issues on the same roof were repaired too. The rusty flues were restored and color-matched to the roof that was already there. Matching restored flues to the existing roof color is not proof the roof was painted, coated, or replaced.\n\nIf you call about a leak, say where the water is showing up inside the house and what you can see on the roof. If the stain tracks to a flue, say that. If you can see a failed seal line, say that. The job on this page is to repair the roof you have, not to shop a new one.\n\nHoffman also had questions beyond the flue itself. Those questions were answered on that visit. That conversation is part of the same repair stop. It is not a reason to open a separate look-only destination, and this site does not add one. Leak work, seal work, and flue work fold here because they happened together on one completed visit, not because each one earned its own URL."
+          "body": "Hoffman’s leak showed up at an exhaust flue. While that flue work was underway, seal issues on the same roof were repaired too. The rusty flues were restored and color-matched to the roof that was already there. The roof itself stayed in place. The work was on the flue and the seals.\n\nThat is how the stop went: find where the water is coming in, explain it, fix the leak, and handle what they find next to it while they are already on the roof. If you call about a leak, say where the water is showing up inside the house and what you can see on the roof. If the stain tracks to a flue, say that. If you can see a failed seal line, say that.\n\nBring the details you have: which room is staining, whether it is worse after rain, and whether you can see rust or a failed seal from the ground. That is enough to start. You do not have to name the job before you call.\n\nHoffman also had questions beyond the flue itself. Those questions were answered on that visit. That conversation is part of the same stop, not a separate appointment. The leak, the seals, and the flue were handled together because that is what they found on the roof that day."
         },
         {
           "id": "repair-honest-scope",
           "sectionId": "repair-honest-scope",
-          "heading": "What this page can honestly say",
-          "body": "The written record for roof repair is thin, and the copy stays that way on purpose. Hoffman is a repeat caller — he wrote that this was not the first time — and the completed work on this visit is the leak, the seals found during the flue work, and the restored flues. Future “all my roof needs” language in that review is his intent to call again. It is not a completed reroof, not a product, and not a membership.\n\nPraise of pricing on that visit is not a lowest-price claim. Praise of how quickly the company responds is his experience, not a callback guarantee. “Swift to the rescue” is how he felt about that stop, not a dispatch product.\n\nIf the roof over your house needs to come off, go to roof replacement. That page is where named tear-offs and new shingles live. This page stays with the roof that is staying on the house."
+          "heading": "What that visit covered — and what it did not",
+          "body": "This is one completed repair visit. Hoffman had called before — he wrote that this was not the first time — and the work on this visit is the leak, the seals found during the flue work, and the restored flues. When he says he will call for all his roof needs, that is his plan to call again. It is not a completed reroof.\n\nPraise of pricing on that visit is not a lowest-price claim. Praise of how quickly the company responds is his experience, not a callback guarantee. “Swift to the rescue” is how he felt about that stop, not a dispatch offer we make to every caller. We are not promising how fast the next truck arrives, and we are not promising what the next leak will cost. What we can say is what we did on that stop: found the leak, explained it, repaired it, and took care of the seals and flues that were part of the same roof.\n\nIf the roof over your house needs to come off, see Roof Replacement. That is the full reroof: tear-off and new shingles. Repair is for the roof that is staying on the house."
         },
         {
           "id": "repair-not-other-jobs",
           "sectionId": "repair-not-other-jobs",
-          "heading": "What does not belong on this URL",
-          "body": "This is not the reroof page. It is not a second leak destination, a seal destination, or a flue destination. Those jobs share this URL because they shared one visit. It is not a place to park other kinds of work that were considered and left off the public map — including look-only stops, tarp stops, and anything that would read as a commercial or storm product.\n\nWhen you call, you do not need a special menu. Say you have a leak, a seal, or a flue to handle on the roof that is staying. If you are unsure whether the roof should stay, say that too. The replacement page and this page exist so that choice has somewhere to land. Contact is for reaching the shop when you already know you need to talk."
+          "heading": "If the roof needs to come off instead",
+          "body": "A leak, a failed seal, and a flue that needs work can all happen on the roof you already have. That is this job. A full reroof is a different job. If the shingles are coming off and a new roof is going down, see Roof Replacement.\n\nWhen you call, say you have a leak, a seal, or a flue to handle on the roof that is staying. If you are unsure whether the roof should stay, say that too. Jared can sort whether you are keeping the roof or replacing it once he hears what you are seeing. See Contact if you just need the number and the address."
         },
         {
           "id": "repair-next",
           "sectionId": "repair-next",
           "heading": "Call about the roof you have",
-          "body": "Call Swifts Roofing at (417) 771-0477. The shop is at 4268 S Hillcrest Ave Ste 110, Springfield, MO 65810. Tell them where the water is, whether you can see the flue or the seal line, and that you want the roof you already have repaired. Repeat work is in the record for this household. That is one caller, not a warranty term. If the roof needs to come off, use roof replacement. If you only need the number and the address, use contact."
+          "body": "Call Swifts Roofing at (417) 771-0477. The shop is at 4268 S Hillcrest Ave Ste 110, Springfield, MO 65810. Tell them where the water is, whether you can see the flue or the seal line, and that you want the roof you already have repaired. If you have called before, say so. Hoffman had. If the roof needs to come off, see Roof Replacement. If you only need the number and the address, see Contact."
         }
       ],
       "reviewPlacements": [
@@ -457,7 +457,7 @@
           "proofRole": "lead",
           "sectionId": "repair-when",
           "order": 1,
-          "wordOffset": 232
+          "wordOffset": 180
         }
       ],
       "reviewEvidence": [
@@ -509,7 +509,7 @@
           "id": "contact-routes",
           "sectionId": "contact-routes",
           "heading": "If you already know the job",
-          "body": "Roof replacement is the page for a full reroof. Roof repair is the page for the roof you already have. This page stays the place to call."
+          "body": "Roof Replacement is for a full reroof. Roof Repair is for the roof you already have. This page is how you call."
         }
       ],
       "reviewPlacements": [],
@@ -533,7 +533,7 @@
   ],
   "strategyOverview": {
     "pageType": "strategy-overview",
-    "body": "This is an internal Writer 3 artifact. It is not a public page and must not be linked from header, footer, or business CTAs.\n\nThe better future for Swifts Roofing is a four-page Springfield site that lets a homeowner choose the job before they call. Home is the company: a roofing company in Springfield, MO, with Jared and the crew on completed roofs. Roof replacement is the dedicated reroof destination, with shingle work folded in as the method for putting the new roof down. Roof repair is the dedicated keep-the-roof destination, with leak, seal, and flue work folded onto the one completed visit the record actually has. Contact is how a Springfield household reaches the shop at 4268 S Hillcrest Ave Ste 110, Springfield, MO 65810, (417) 771-0477.\n\nThat shape is the point. A homeowner who needs a new roof can read a reroof page. A homeowner who needs the roof they already have can read a repair page. The company page does not have to close both jobs, and the call path does not have to carry service proof.\n\nArchitect QA decision slots for Writer 1 and Writer 2 remain awaiting independent Architect QA. This Writer 3 pass does not self-approve those slots. Whole-site QA in this package is the writer-run continuity check required to stop at awaiting-human-gate-2. Josh alone approves Human Gate 2. No merge, no clients/ build, and no deployment occurred.",
+    "body": "This is an internal Writer 3 artifact. It is not a public page and must not be linked from header, footer, or business CTAs.\n\nThe better future for Swifts Roofing is a four-page Springfield site that lets a homeowner choose the job before they call. Home is the company: a roofing company in Springfield, MO, with Jared and the crew on completed roofs. Roof replacement is the dedicated reroof destination, with shingle work folded in as the method for putting the new roof down. Roof repair is the dedicated keep-the-roof destination, with leak, seal, and flue work folded onto the one completed visit the record actually has. Contact is how a Springfield household reaches the shop at 4268 S Hillcrest Ave Ste 110, Springfield, MO 65810, (417) 771-0477.\n\nThat shape is the point. A homeowner who needs a new roof can read a reroof page. A homeowner who needs the roof they already have can read a repair page. The company page does not have to close both jobs, and the call path does not have to carry service proof.\n\nArchitect QA decision slots for Writer 1 and Writer 2 remain awaiting Josh's look. They are not accepted. This Writer 3 pass does not self-approve those slots. Whole-site QA in this package is the writer-run continuity check required to stop at awaiting-human-gate-2. Josh alone approves Human Gate 2. No merge, no clients/ build, and no deployment occurred.",
     "sections": [
       {
         "heading": "Why these four pages",
@@ -1054,9 +1054,9 @@
     "actionsCheckpoint": "https://github.com/alchemistj/ff-content-demo-factory/actions/runs/32839684505"
   },
   "wordCounts": {
-    "/roof-replacement": 921,
-    "/roof-repair": 889,
-    "/": 565,
-    "/contact": 84
+    "/roof-replacement": 908,
+    "/roof-repair": 876,
+    "/": 485,
+    "/contact": 79
   }
 }

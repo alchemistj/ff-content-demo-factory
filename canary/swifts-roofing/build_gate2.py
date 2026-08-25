@@ -158,11 +158,11 @@ def main() -> None:
         "metaDescription": "Roof replacement in Springfield, MO from Swifts Roofing. Tear-off and new shingles for homes that need a full reroof. Call (417) 771-0477.",
         "h1": "Roof Replacement in Springfield, MO",
         "heroSubhead": (
-            "When the roof over the house needs to come off, this is the page. "
+            "When the roof over the house needs to come off, start here. "
             "Swifts Roofing replaces roofs on Springfield homes. Homeowners name Jared "
             "as the owner on the job. The shop is at 4268 S Hillcrest Ave Ste 110. "
-            "If you intend to keep the roof you already have and need a leak, a seal, "
-            "or a flue handled, use the roof repair page instead."
+            "If you want to keep the roof you already have — a leak, a seal, or a flue — "
+            "see Roof Repair."
         ),
         "suitableReviewIds": [
             IDS["neal"],
@@ -175,15 +175,15 @@ def main() -> None:
         "claims": [
             {
                 "id": "c-replace-first",
-                "text": "named first roof replacement with on-site install and owner review after the install",
+                "text": "his first roof replacement included the on-site install and owner review after the install",
             },
             {
                 "id": "c-replace-shingles",
-                "text": "tear-off and putting new shingles down is the reroof method on this page",
+                "text": "A full reroof is tear-off and putting new shingles down",
             },
             {
                 "id": "c-replace-cleanup",
-                "text": "named replacement crews cleaned the site on the day of the reroof",
+                "text": "the crew cleaned up the site on the day they replaced the roof",
             },
         ],
         "sections": [
@@ -193,12 +193,12 @@ def main() -> None:
                 "heading": "When the job is a full roof replacement",
                 "body": (
                     "Call for roof replacement in Springfield, MO when the roof on the house "
-                    "is coming off and a new roof is going down — not when you want the roof "
-                    "you already have repaired. Neal Richardson Sr. came to Swifts Roofing "
-                    "for his first roof replacement. He had already met with other contractors. "
-                    "He asked questions. The estimate was competitive. What he documented after "
-                    "that is the completed job this page is built on: a named first roof replacement "
-                    "with on-site install and owner review after the install.\n\n"
+                    "is coming off and a new roof is going down. If you want the roof you already "
+                    "have repaired, that is a different job — see Roof Repair.\n\n"
+                    "Neal Richardson Sr. came to Swifts Roofing for his first roof replacement. "
+                    "He had already met with other contractors. He asked questions. The estimate "
+                    "was competitive. Then the crew did the work: his first roof replacement "
+                    "included the on-site install and owner review after the install.\n\n"
                     "That install ran through the day and into the evening on his job. That is "
                     "how long that particular reroof lasted. It is not a night-dispatch offer, "
                     "a same-day promise, or a response-time guarantee for the next household.\n\n"
@@ -217,31 +217,32 @@ def main() -> None:
                     "and answered what was still open. If you are choosing among contractors, "
                     "bring the questions you still have. If you already know you need a full "
                     "reroof, say that when you call.\n\n"
-                    "David Carson also described time on the roof before the crew produced the "
-                    "new one: pictures, how water moves, and the differences between manufacturers. "
-                    "Jared replaced that roof. The conversation about shingles and manufacturers "
-                    "is part of choosing a reroof on this page. It is not a product catalog, a "
-                    "materials URL, or a second public service. Roger Richardson named the stages "
-                    "that show up on a replacement — preparation, roofing, and clean up — as one "
-                    "job, not as three destinations."
+                    "David Carson also spent time on the roof with Jared before the crew put "
+                    "the new one down: pictures, how water moves, and the differences between "
+                    "manufacturers. Jared replaced that roof. Talking through shingles and "
+                    "manufacturers is part of choosing the new roof. If you already have "
+                    "pictures, manufacturer questions, or another estimate in hand, bring them. "
+                    "Neal used that kind of conversation before the crew started. David did too, "
+                    "on the roof with Jared, before the old roof came off. Roger Richardson "
+                    "described the same kind of job as preparation, roofing, and clean up — "
+                    "the stages of one replacement, done as one visit."
                 ),
             },
             {
                 "id": "replace-shingles",
                 "sectionId": "replace-shingles",
-                "heading": "Tear-off and new shingles stay on this reroof",
+                "heading": "Tear-off and new shingles",
                 "body": (
-                    "Putting new shingles down after a tear-off is how a reroof is finished. "
-                    "That method stays here. There is no second URL for it. Tear-off and putting "
-                    "new shingles down is the reroof method on this page, and Laura Hampton’s "
-                    "completed job is the written record of that sequence: delivery, tear-off, "
-                    "and new shingles, with the roof looking the way it should when the work "
-                    "was done.\n\n"
-                    "The week-scale timing on her job is one household’s schedule. It is not a "
-                    "one-week completion guarantee. Her note that you will not find a better cost "
+                    "A full reroof is tear-off and putting new shingles down. That is how "
+                    "Swifts finishes a replacement: the old roof comes off, and the new shingles "
+                    "go down on the same job. Laura Hampton described that sequence on a "
+                    "completed reroof — delivery, tear-off, and new shingles — and the roof "
+                    "looked the way it should when the work was done.\n\n"
+                    "The timing on her job is one household’s schedule. It is not a one-week "
+                    "completion guarantee. When she says you will not find a better cost, that "
                     "is her recommendation, not a company price promise. She also mentioned more "
-                    "than one job with Jared over a year. That is supporting color on a reroof "
-                    "relationship. It does not become extra public service lines.\n\n"
+                    "than one job with Jared over a year. Those were other jobs she hired with "
+                    "Jared over that year.\n\n"
                     f"> {q_laura}\n"
                     "> — Laura Hampton"
                 ),
@@ -249,18 +250,16 @@ def main() -> None:
             {
                 "id": "replace-named-jobs",
                 "sectionId": "replace-named-jobs",
-                "heading": "Named replacements, including work billed through insurance",
+                "heading": "Other reroofs, including work billed through insurance",
                 "body": (
-                    "Rebecca Grable’s completed job was a roof replacement billed through her "
-                    "insurance. That is how that reroof was paid. It is payment context on this "
-                    "page, not a reason to invent a storm page or a separate claims desk. Her "
-                    "sense that the process moved quicker than she expected is her experience of "
-                    "that job, not a speed promise for yours.\n\n"
-                    "Taken together with Neal, Linda, Laura, David, and Roger, the written record "
-                    "on this URL is named roof replacements — first-time reroofs, insurance-backed "
-                    "reroofs, tear-off and new shingles, and crews that stayed through cleanup. "
-                    "None of those reviews is a leak on a roof you intend to keep. If that is "
-                    "your job, use roof repair."
+                    "Rebecca Grable’s job was a roof replacement billed through her insurance. "
+                    "That is how that reroof was paid. It does not change the work: the old roof "
+                    "came off and a new one went on. Her sense that the process moved quicker "
+                    "than she expected is her experience of that job, not a speed promise for yours.\n\n"
+                    "Neal, Linda, Laura, David, and Roger all describe completed replacements — "
+                    "first-time reroofs, a reroof billed through insurance, tear-off and new "
+                    "shingles, and crews that stayed through cleanup. If your job is a leak on "
+                    "a roof you intend to keep, see Roof Repair instead."
                 ),
             },
             {
@@ -268,13 +267,13 @@ def main() -> None:
                 "sectionId": "replace-cleanup",
                 "heading": "Cleanup on the day of the reroof",
                 "body": (
-                    "Cleanup is part of the replacement visits homeowners describe, not a separate "
-                    "add-on page. Neal noted cleanup throughout the install day. Roger named clean "
+                    "Cleanup belongs with the reroof, not as a separate visit you have to ask "
+                    "for. Neal noted cleanup throughout the install day. Roger described clean "
                     "up with preparation and roofing as the quality of the same replacement. "
                     "Linda Mulholland’s crew replaced the roof, worked the length of that day, "
-                    "and cleaned up the mess before they left. Named replacement crews cleaned "
-                    "the site on the day of the reroof. That is what happened on those jobs. It "
-                    "is not a cleanup guarantee for every future site.\n\n"
+                    "and cleaned up the mess before they left. On those jobs, the crew cleaned "
+                    "up the site on the day they replaced the roof. That is what happened there. "
+                    "It is not a cleanup guarantee for every future site.\n\n"
                     "Linda’s early-morning-to-dark day is the length of that particular reroof. "
                     "It is not before-sunrise dispatch and not an hours promise.\n\n"
                     f"> {q_linda}\n"
@@ -290,8 +289,8 @@ def main() -> None:
                     f"{PHONE}. The shop is at {ADDRESS}. Tell Jared whether you are comparing "
                     "estimates, whether the roof is already moving through insurance, and whether "
                     "you need tear-off and new shingles. If you want the roof you already have "
-                    "repaired instead, use the roof repair page. To reach the company without a "
-                    "service question, use contact."
+                    "repaired instead, see Roof Repair. To reach the shop without a service "
+                    "question, see Contact."
                 ),
             },
         ],
@@ -351,38 +350,34 @@ def main() -> None:
         "metaDescription": "Roof repair in Springfield, MO from Swifts Roofing. Leak, seal, and flue work on the roof you already have. Call (417) 771-0477.",
         "h1": "Roof Repair in Springfield, MO",
         "heroSubhead": (
-            "This page is for the roof you already have. If water is coming in, a seal has "
-            "failed, or a flue on that roof needs work, start here. Swifts Roofing handles "
-            f"roof repair in Springfield, MO. Call {PHONE}. Jared is the person homeowners "
-            "name. A full reroof — tear-off and a new roof — belongs on the replacement page."
+            "If water is coming in, a seal has failed, or a flue on the roof needs work, "
+            "start here. Swifts Roofing handles roof repair in Springfield, MO. Call "
+            f"{PHONE}. Homeowners name Jared. If the whole roof needs to come off, "
+            "see Roof Replacement."
         ),
         "suitableReviewIds": [IDS["hoffman"]],
         "claims": [
             {
                 "id": "c-repair-visit",
-                "text": "one completed visit repaired a leak on an exhaust flue, seals found during that work, and restored flues matched to the roof that stayed",
+                "text": "On that visit they repaired a leak on an exhaust flue, fixed seals they found while they were there, and restored the flues to match the roof that stayed",
             }
         ],
         "sections": [
             {
                 "id": "repair-when",
                 "sectionId": "repair-when",
-                "heading": "When the roof you have is the one to keep",
+                "heading": "When you want to keep the roof you have",
                 "body": (
-                    "Call for roof repair in Springfield, MO when you intend to keep the roof "
-                    "that is already on the house. The completed example on this page is one "
-                    "visit. Jonathan Hoffman had a leak coming down an exhaust flue. The leak "
-                    "was found, explained, and repaired. It was not left as a look-only stop, "
-                    "and it was not turned into a reroof.\n\n"
-                    "That same visit is the whole named repair record this page is allowed to "
-                    "use. There is not a second repair URL behind it, and this demo does not "
-                    "mint extra destinations to look busier. One completed visit repaired a leak "
-                    "on an exhaust flue, seals found during that work, and restored flues matched "
-                    "to the roof that stayed.\n\n"
-                    "Hoffman’s note that the company swung by while already occupied elsewhere "
-                    "is the story of that day. Prompt arrival on that visit is not a same-day, "
-                    "one-hour, around-the-clock, or emergency-availability promise for the next "
-                    "caller.\n\n"
+                    "Call for roof repair in Springfield, MO when the roof on the house is "
+                    "staying. Jonathan Hoffman had a leak coming down an exhaust flue. The leak "
+                    "was found, explained, and repaired on that visit. They did not just look "
+                    "at it and leave, and they did not turn it into a reroof.\n\n"
+                    "That is one completed visit. On that visit they repaired a leak on an "
+                    "exhaust flue, fixed seals they found while they were there, and restored "
+                    "the flues to match the roof that stayed.\n\n"
+                    "He noted they swung by while already occupied elsewhere. That is the story "
+                    "of that day. Prompt arrival on that visit is not a same-day, one-hour, "
+                    "around-the-clock, or emergency-availability promise for the next caller.\n\n"
                     f"> {q_hoffman}\n"
                     "> — Jonathan Hoffman"
                 ),
@@ -392,57 +387,60 @@ def main() -> None:
                 "sectionId": "repair-same-visit",
                 "heading": "The leak, the seals, and the flue on the same stop",
                 "body": (
-                    "Hoffman’s leak showed up at an exhaust flue — he wrote flume and flue for "
-                    "the same stack. While that flue work was underway, seal issues on the same "
-                    "roof were repaired too. The rusty flues were restored and color-matched to "
-                    "the roof that was already there. Matching restored flues to the existing "
-                    "roof color is not proof the roof was painted, coated, or replaced.\n\n"
-                    "If you call about a leak, say where the water is showing up inside the house "
-                    "and what you can see on the roof. If the stain tracks to a flue, say that. "
-                    "If you can see a failed seal line, say that. The job on this page is to "
-                    "repair the roof you have, not to shop a new one.\n\n"
+                    "Hoffman’s leak showed up at an exhaust flue. While that flue work was "
+                    "underway, seal issues on the same roof were repaired too. The rusty flues "
+                    "were restored and color-matched to the roof that was already there. The "
+                    "roof itself stayed in place. The work was on the flue and the seals.\n\n"
+                    "That is how the stop went: find where the water is coming in, explain it, "
+                    "fix the leak, and handle what they find next to it while they are already "
+                    "on the roof. If you call about a leak, say where the water is showing up "
+                    "inside the house and what you can see on the roof. If the stain tracks to "
+                    "a flue, say that. If you can see a failed seal line, say that.\n\n"
+                    "Bring the details you have: which room is staining, whether it is worse "
+                    "after rain, and whether you can see rust or a failed seal from the ground. "
+                    "That is enough to start. You do not have to name the job before you call.\n\n"
                     "Hoffman also had questions beyond the flue itself. Those questions were "
-                    "answered on that visit. That conversation is part of the same repair stop. "
-                    "It is not a reason to open a separate look-only destination, and this site "
-                    "does not add one. Leak work, seal work, and flue work fold here because they "
-                    "happened together on one completed visit, not because each one earned its "
-                    "own URL."
+                    "answered on that visit. That conversation is part of the same stop, not a "
+                    "separate appointment. The leak, the seals, and the flue were handled together "
+                    "because that is what they found on the roof that day."
                 ),
             },
             {
                 "id": "repair-honest-scope",
                 "sectionId": "repair-honest-scope",
-                "heading": "What this page can honestly say",
+                "heading": "What that visit covered — and what it did not",
                 "body": (
-                    "The written record for roof repair is thin, and the copy stays that way on "
-                    "purpose. Hoffman is a repeat caller — he wrote that this was not the first "
-                    "time — and the completed work on this visit is the leak, the seals found "
-                    "during the flue work, and the restored flues. Future “all my roof needs” "
-                    "language in that review is his intent to call again. It is not a completed "
-                    "reroof, not a product, and not a membership.\n\n"
+                    "This is one completed repair visit. Hoffman had called "
+                    "before — he wrote that this was not the first time — and the work on this "
+                    "visit is the leak, the seals found during the flue work, and the restored "
+                    "flues. When he says he will call for all his roof needs, that is his plan "
+                    "to call again. It is not a completed reroof.\n\n"
                     "Praise of pricing on that visit is not a lowest-price claim. Praise of how "
                     "quickly the company responds is his experience, not a callback guarantee. "
-                    "“Swift to the rescue” is how he felt about that stop, not a dispatch product.\n\n"
-                    "If the roof over your house needs to come off, go to roof replacement. That "
-                    "page is where named tear-offs and new shingles live. This page stays with "
-                    "the roof that is staying on the house."
+                    "“Swift to the rescue” is how he felt about that stop, not a dispatch offer "
+                    "we make to every caller. We are not promising how fast the next truck "
+                    "arrives, and we are not promising what the next leak will cost. What we "
+                    "can say is what we did on that stop: found the leak, explained it, repaired "
+                    "it, and took care of the seals and flues that were part of the same roof.\n\n"
+                    "If the roof over your house needs to come off, see Roof Replacement. That "
+                    "is the full reroof: tear-off and new shingles. Repair is for the roof that "
+                    "is staying on the house."
                 ),
             },
             {
                 "id": "repair-not-other-jobs",
                 "sectionId": "repair-not-other-jobs",
-                "heading": "What does not belong on this URL",
+                "heading": "If the roof needs to come off instead",
                 "body": (
-                    "This is not the reroof page. It is not a second leak destination, a seal "
-                    "destination, or a flue destination. Those jobs share this URL because they "
-                    "shared one visit. It is not a place to park other kinds of work that were "
-                    "considered and left off the public map — including look-only stops, tarp "
-                    "stops, and anything that would read as a commercial or storm product.\n\n"
-                    "When you call, you do not need a special menu. Say you have a leak, a seal, "
-                    "or a flue to handle on the roof that is staying. If you are unsure whether "
-                    "the roof should stay, say that too. The replacement page and this page exist "
-                    "so that choice has somewhere to land. Contact is for reaching the shop when "
-                    "you already know you need to talk."
+                    "A leak, a failed seal, and a flue that needs work can all happen on the "
+                    "roof you already have. That is this job. A full reroof is a different job. "
+                    "If the shingles are coming off and a new roof is going down, see Roof "
+                    "Replacement.\n\n"
+                    "When you call, say you have a leak, a seal, or a flue to handle on the "
+                    "roof that is staying. If you are unsure whether the roof should stay, say "
+                    "that too. Jared can sort whether you are keeping the roof or replacing it "
+                    "once he hears what you are seeing. See Contact if you just need the number "
+                    "and the address."
                 ),
             },
             {
@@ -452,10 +450,9 @@ def main() -> None:
                 "body": (
                     f"Call Swifts Roofing at {PHONE}. The shop is at {ADDRESS}. Tell them where "
                     "the water is, whether you can see the flue or the seal line, and that you "
-                    "want the roof you already have repaired. Repeat work is in the record for "
-                    "this household. That is one caller, not a warranty term. If the roof needs "
-                    "to come off, use roof replacement. If you only need the number and the "
-                    "address, use contact."
+                    "want the roof you already have repaired. If you have called before, say so. "
+                    "Hoffman had. If the roof needs to come off, see Roof Replacement. If you "
+                    "only need the number and the address, see Contact."
                 ),
             },
         ],
@@ -499,20 +496,19 @@ def main() -> None:
         "suitableReviewIds": [IDS["c_jackson"], IDS["hunter"], IDS["josh"]],
         "claims": [
             {"id": "c-home-completed", "text": "Jared and his crew complete roofs on Springfield homes"},
-            {"id": "c-home-crew", "text": "the crew works the roof you can see when they leave"},
-            {"id": "c-home-finished", "text": "homeowners describe a finished roof they are happy to look at"},
+            {"id": "c-home-crew", "text": "The crew works the roof you can see when they leave"},
+            {"id": "c-home-finished", "text": "Josh Baird is happy with his roof from Swifts"},
         ],
         "sections": [
             {
                 "id": "home-lead",
                 "sectionId": "home-lead",
-                "heading": "Completed roofs, named people",
+                "heading": "Jared and the crew on your roof",
                 "body": (
-                    "This page is the company, not a reroof-only pitch. Jared and his crew complete "
-                    "roofs on Springfield homes, and C Jackson’s completed job is the lead because "
-                    "it names Jared, the crew, and Swifts Roofing on the reviewer’s roof. It does "
-                    "not name a repair, a replacement, a look-only stop, or a product. The story "
-                    "here is a finished roof, start to finish, with communication from Jared.\n\n"
+                    "Jared and his crew complete roofs on Springfield homes. C Jackson’s job "
+                    "names Jared, the crew, and Swifts Roofing on the roof they finished. It "
+                    "is a completed roof, start to finish, with communication from Jared while "
+                    "the work was underway.\n\n"
                     f"> {q_cjackson}\n"
                     "> — C Jackson"
                 ),
@@ -520,14 +516,12 @@ def main() -> None:
             {
                 "id": "home-routes",
                 "sectionId": "home-routes",
-                "heading": "Two jobs, two pages",
+                "heading": "Need a new roof, or work on the one you have?",
                 "body": (
-                    "If the roof over the house needs to come off, go to roof replacement. That "
-                    "page is for a full reroof, including tear-off and new shingles as the method. "
-                    "If you intend to keep the roof you already have — a leak, a seal, a flue — "
-                    "go to roof repair. Home does not try to close either job in this space. It "
-                    "sends you to the page that matches. Contact is how you reach the shop when "
-                    "you are ready to talk."
+                    "If the roof over the house needs to come off, see Roof Replacement. That "
+                    "is a full reroof, including tear-off and new shingles. If you want to keep "
+                    "the roof you already have — a leak, a seal, a flue — see Roof Repair. "
+                    "See Contact when you are ready to talk."
                 ),
             },
             {
@@ -537,9 +531,8 @@ def main() -> None:
                 "body": (
                     "Hunter Gaston described Jared explaining the work in language he could follow, "
                     "a polite crew, and hard work on the roof they had. The crew works the roof "
-                    "you can see when they leave. The finished note is the roof looking the way "
-                    "it should. That is still a completed roof, not a named method, and it stays "
-                    "on Home rather than being upgraded into replacement or repair.\n\n"
+                    "you can see when they leave. When they were done, the roof looked the way "
+                    "it should.\n\n"
                     f"> {q_hunter}\n"
                     "> — Hunter Gaston"
                 ),
@@ -550,9 +543,8 @@ def main() -> None:
                 "heading": "The Springfield shop",
                 "body": (
                     f"Swifts Roofing is at {ADDRESS}. Call {PHONE}. Homeowners name Jared "
-                    "in the written record. Use the replacement page or the repair page if "
-                    "you already know the job. Use contact if you want the number and the address "
-                    "without the service argument."
+                    "when they talk about the work. See Roof Replacement or Roof Repair if "
+                    "you already know the job. See Contact if you want the number and the address."
                 ),
             },
             {
@@ -560,10 +552,10 @@ def main() -> None:
                 "sectionId": "home-finished",
                 "heading": "A finished roof you can look at",
                 "body": (
-                    "Josh Baird’s completed job is the roof he has from Swifts. Homeowners describe "
-                    "a finished roof they are happy to look at. He names Jared as the person who "
-                    "stays with the work until the customer is satisfied. That is still a generic "
-                    "completed roof. It is not a reroof proof and not a repair proof.\n\n"
+                    "Josh Baird is happy with his roof from Swifts. He names Jared as the person "
+                    "who stays with the work until the customer is satisfied. The roof looks "
+                    "great. That is a finished roof on a Springfield home — the same kind of "
+                    "completed work C Jackson and Hunter Gaston describe.\n\n"
                     f"> {q_josh}\n"
                     "> — Josh Baird"
                 ),
@@ -573,9 +565,9 @@ def main() -> None:
                 "sectionId": "home-next",
                 "heading": "Call the company",
                 "body": (
-                    f"Call {PHONE} when you want Swifts Roofing on the job. Choose roof replacement "
-                    "if the roof is coming off. Choose roof repair if the roof is staying. Choose "
-                    "contact if you only need the path to call or write."
+                    f"Call {PHONE} when you want Swifts Roofing on the job. See Roof Replacement "
+                    "if the roof is coming off. See Roof Repair if the roof is staying. See "
+                    "Contact if you only need the number and the address."
                 ),
             },
         ],
@@ -647,8 +639,8 @@ def main() -> None:
                 "sectionId": "contact-routes",
                 "heading": "If you already know the job",
                 "body": (
-                    "Roof replacement is the page for a full reroof. Roof repair is the page for "
-                    "the roof you already have. This page stays the place to call."
+                    "Roof Replacement is for a full reroof. Roof Repair is for the roof you "
+                    "already have. This page is how you call."
                 ),
             },
         ],
@@ -683,7 +675,7 @@ def main() -> None:
             {"label": "Contact", "href": "/contact"},
             {"label": f"Call {PHONE}", "href": TEL, "kind": "phone"},
         ],
-        "legal": "Words package only. No website deployment is authorized from this package.",
+        "legal": "Swifts Roofing · Springfield, MO",
     }
 
     strategy = {
@@ -703,10 +695,10 @@ def main() -> None:
             "A homeowner who needs the roof they already have can read a repair page. The "
             "company page does not have to close both jobs, and the call path does not have to "
             "carry service proof.\n\n"
-            "Architect QA decision slots for Writer 1 and Writer 2 remain awaiting independent "
-            "Architect QA. This Writer 3 pass does not self-approve those slots. Whole-site QA "
-            "in this package is the writer-run continuity check required to stop at "
-            "awaiting-human-gate-2. Josh alone approves Human Gate 2. No merge, no clients/ "
+            "Architect QA decision slots for Writer 1 and Writer 2 remain awaiting Josh's look. "
+            "They are not accepted. This Writer 3 pass does not self-approve those slots. "
+            "Whole-site QA in this package is the writer-run continuity check required to stop "
+            "at awaiting-human-gate-2. Josh alone approves Human Gate 2. No merge, no clients/ "
             "build, and no deployment occurred."
         ),
         "sections": [

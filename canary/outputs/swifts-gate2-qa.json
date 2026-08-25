@@ -3,39 +3,39 @@
   "wholeSitePass": true,
   "pointerLedgerWordBearingKeys": [],
   "wordCounts": {
-    "/roof-replacement": 921,
-    "/roof-repair": 889,
-    "/": 565,
-    "/contact": 84
+    "/roof-replacement": 908,
+    "/roof-repair": 876,
+    "/": 485,
+    "/contact": 79
   },
   "deterministicFindings": [
     {
       "code": "review-density-reported",
       "severity": "info",
-      "message": "Page contains 686 words across 3 review placement(s); density is informational only.",
+      "message": "Page contains 606 words across 3 review placement(s); density is informational only.",
       "route": "/",
       "details": {
-        "words": 686,
+        "words": 606,
         "reviews": 3
       }
     },
     {
       "code": "review-density-reported",
       "severity": "info",
-      "message": "Page contains 1009 words across 3 review placement(s); density is informational only.",
+      "message": "Page contains 996 words across 3 review placement(s); density is informational only.",
       "route": "/roof-replacement",
       "details": {
-        "words": 1009,
+        "words": 996,
         "reviews": 3
       }
     },
     {
       "code": "review-density-reported",
       "severity": "info",
-      "message": "Page contains 944 words across 1 review placement(s); density is informational only.",
+      "message": "Page contains 931 words across 1 review placement(s); density is informational only.",
       "route": "/roof-repair",
       "details": {
-        "words": 944,
+        "words": 931,
         "reviews": 1
       }
     }
@@ -44,30 +44,30 @@
     {
       "code": "review-density-reported",
       "severity": "info",
-      "message": "Page contains 686 words across 3 review placement(s); density is informational only.",
+      "message": "Page contains 606 words across 3 review placement(s); density is informational only.",
       "route": "/",
       "details": {
-        "words": 686,
+        "words": 606,
         "reviews": 3
       }
     },
     {
       "code": "review-density-reported",
       "severity": "info",
-      "message": "Page contains 1009 words across 3 review placement(s); density is informational only.",
+      "message": "Page contains 996 words across 3 review placement(s); density is informational only.",
       "route": "/roof-replacement",
       "details": {
-        "words": 1009,
+        "words": 996,
         "reviews": 3
       }
     },
     {
       "code": "review-density-reported",
       "severity": "info",
-      "message": "Page contains 944 words across 1 review placement(s); density is informational only.",
+      "message": "Page contains 931 words across 1 review placement(s); density is informational only.",
       "route": "/roof-repair",
       "details": {
-        "words": 944,
+        "words": 931,
         "reviews": 1
       }
     },
@@ -137,7 +137,7 @@
     {
       "code": "intelligent-strategy-truthfulness",
       "severity": "info",
-      "message": "Strategy Overview is internal, four-page, and does not self-approve Architect QA. No public URL/path/route fields. Better-future language. Architect slots remain awaiting independent Architect QA. No merge/build/deploy statement is present.",
+      "message": "Strategy Overview is internal, four-page, and does not self-approve Architect QA. No public URL/path/route fields. Better-future language. Architect slots remain awaiting Josh's look and are not accepted. No merge/build/deploy statement is present.",
       "details": {
         "dimension": "strategy-truthfulness",
         "evidence": []
