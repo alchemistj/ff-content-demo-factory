@@ -1,10 +1,13 @@
 import assert from "node:assert/strict";
 import { createHash } from "node:crypto";
+import { mkdtemp, readFile, rm } from "node:fs/promises";
 import test from "node:test";
+import { tmpdir } from "node:os";
+import { join } from "node:path";
 import { digestOf } from "../../src/contracts/digests.js";
 import { createMemoryCursorReceiptStore, recoverCursorWriterCorrectionV2ForTest, validateCursorWriterCorrectionReceipt, OFFICIAL_CURSOR_MODEL, REQUIRED_CURSOR_MODEL, type CursorArtifactClient, type CursorTestTransport, type CursorGitHubBaselineInput } from "../../src/pipeline/cursor-writer.js";
 import { buildWriter1GithubBaselineCorrectionPrompt } from "../../scripts/360-words-recovery-prompt.mjs";
-import { verifyGithubWriter1Baseline, VERIFIED_WRITER1_GITHUB_BASELINE } from "../../scripts/360-words-github-baseline.mjs";
+import { materializeGithubWriter1Baseline, verifyGithubWriter1Baseline, VERIFIED_WRITER1_GITHUB_BASELINE } from "../../scripts/360-words-github-baseline.mjs";
 
 const agentId = "bc-2486f645-c31c-4532-8145-fbe3af1d45a8";
 const threadUrl = `https://cursor.com/agents/${agentId}`;
@@ -49,6 +52,22 @@ test("GitHub baseline verifier binds exact repository, commit, path, blob, raw b
     { bytes: Buffer.concat([raw, Buffer.from("x")]) },
     { expected: { ...expected, rawSha256: `sha256:${"0".repeat(64)}` } },
   ]) assert.throws(() => verifyGithubWriter1Baseline({ metadata: { repository: expected.repository, commit: sourceCommit, path: expected.path, blobSha: expected.blobSha, size: expected.size, ...mutation.metadata }, bytes: mutation.bytes || raw, sealed, expected: mutation.expected || expected }), /GITHUB_WRITER1_BASELINE_INVALID/u);
+});
+
+test("downloader-equivalent GitHub fixture emits the metadata schema consumed by the verified baseline reader", async () => {
+  const raw = bytes(output()); const expected = expectedFor(raw); const sealed = { resealDigest: sealedHandoffDigest, pages: [{ type: "Service", url: "/garage-door-repair", id: "Service:/garage-door-repair" }, { type: "Service", url: "/garage-door-installation", id: "Service:/garage-door-installation" }] };
+  const outputRoot = await mkdtemp(join(tmpdir(), "ff-github-baseline-"));
+  try {
+    const apiResponse = { type: "file", path: expected.path, sha: expected.blobSha, size: expected.size, encoding: "base64", content: raw.toString("base64") };
+    materializeGithubWriter1Baseline({ apiResponse, sealed, expected, outputRoot });
+    const metadata = JSON.parse(await readFile(join(outputRoot, "metadata.json"), "utf8"));
+    const persistedBytes = await readFile(join(outputRoot, "writer1-output.json"));
+    assert.equal(metadata.commit, sourceCommit);
+    assert.equal("sourceCommit" in metadata, false);
+    assert.doesNotThrow(() => verifyGithubWriter1Baseline({ metadata, bytes: persistedBytes, sealed, expected }));
+  } finally {
+    await rm(outputRoot, { recursive: true, force: true });
+  }
 });
 
 test("v2 correction uses GitHub baseline when Cursor has no prior artifact, sends once, binds untrusted before-copy separately from new model receipt, and retries without a second send", async () => {

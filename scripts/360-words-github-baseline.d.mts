@@ -9,3 +9,4 @@ export declare const VERIFIED_WRITER1_GITHUB_BASELINE: Readonly<{
   authorship: "unverified-github-before-copy";
 }>;
 export declare function verifyGithubWriter1Baseline(input: { metadata: Record<string, unknown>; bytes: Buffer; sealed: Record<string, unknown>; expected?: typeof VERIFIED_WRITER1_GITHUB_BASELINE }): Record<string, unknown>;
+export declare function materializeGithubWriter1Baseline(input: { apiResponse: Record<string, unknown>; sealed: Record<string, unknown>; expected?: typeof VERIFIED_WRITER1_GITHUB_BASELINE; outputRoot: string }): Record<string, unknown>;

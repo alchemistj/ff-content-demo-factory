@@ -47,6 +47,26 @@ export function verifyGithubWriter1Baseline({ metadata, bytes, sealed, expected 
   return { kind: "github-file", repository: expected.repository, sourceCommit: expected.sourceCommit, path: expected.path, blobSha: expected.blobSha, rawSha256: expected.rawSha256, size: expected.size, contentSize: expected.size, byteDigest: expected.rawSha256, output: parsed, raw: bytes.toString("utf8"), bytes, sealedHandoffDigest, authorship: "unverified-github-before-copy" };
 }
 
+/**
+ * Materialize the same files consumed by the verified runner from a GitHub
+ * Contents API response. The persisted metadata uses `commit`, matching the
+ * verifier's external file contract; `sourceCommit` remains the internal
+ * normalized receipt field.
+ */
+export function materializeGithubWriter1Baseline({ apiResponse, sealed, expected = VERIFIED_WRITER1_GITHUB_BASELINE, outputRoot }) {
+  const repository = expected.repository;
+  const commit = expected.sourceCommit;
+  const filePath = expected.path;
+  if (!apiResponse || apiResponse.type !== "file" || apiResponse.path !== filePath || apiResponse.sha !== expected.blobSha || apiResponse.size !== expected.size || apiResponse.encoding !== "base64" || typeof apiResponse.content !== "string") fail("GitHub API metadata is not bound to the exact baseline file");
+  const bytes = Buffer.from(apiResponse.content.replace(/\\s+/gu, ""), "base64");
+  const verified = verifyGithubWriter1Baseline({ metadata: { repository, commit, path: filePath, blobSha: apiResponse.sha, size: apiResponse.size }, bytes, sealed, expected });
+  if (typeof outputRoot !== "string" || !outputRoot) fail("baseline output root is required");
+  fs.mkdirSync(outputRoot, { recursive: true });
+  fs.writeFileSync(path.join(outputRoot, "writer1-output.json"), bytes);
+  fs.writeFileSync(path.join(outputRoot, "metadata.json"), `${JSON.stringify({ kind: verified.kind, repository: verified.repository, commit, path: verified.path, blobSha: verified.blobSha, rawSha256: verified.rawSha256, size: verified.size, contentSize: verified.contentSize, byteDigest: verified.byteDigest, sealedHandoffDigest: verified.sealedHandoffDigest, authorship: verified.authorship }, null, 2)}\n`);
+  return verified;
+}
+
 async function downloadBaseline() {
   const env = process.env;
   const expected = { ...VERIFIED_WRITER1_GITHUB_BASELINE, ...(env.BASELINE_BLOB_SHA ? { blobSha: env.BASELINE_BLOB_SHA } : {}), ...(env.BASELINE_RAW_SHA256 ? { rawSha256: env.BASELINE_RAW_SHA256.startsWith("sha256:") ? env.BASELINE_RAW_SHA256 : `sha256:${env.BASELINE_RAW_SHA256}` } : {}), ...(env.BASELINE_SIZE ? { size: Number(env.BASELINE_SIZE) } : {}) };
@@ -59,11 +79,8 @@ async function downloadBaseline() {
   const bytes = Buffer.from(json.content.replace(/\s+/gu, ""), "base64");
   const sealedPath = env.SEALED_HANDOFF_PATH || "canary/sealed/360-four-page-reseal-handoff.json";
   const sealed = JSON.parse(fs.readFileSync(sealedPath, "utf8"));
-  const verified = verifyGithubWriter1Baseline({ metadata: { repository, commit, path: filePath, blobSha: json.sha, size: json.size }, bytes, sealed, expected });
   const outputRoot = env.BASELINE_OUTPUT_ROOT || "canary/inputs/github-writer1-baseline";
-  fs.mkdirSync(outputRoot, { recursive: true });
-  fs.writeFileSync(path.join(outputRoot, "writer1-output.json"), bytes);
-  fs.writeFileSync(path.join(outputRoot, "metadata.json"), `${JSON.stringify({ kind: verified.kind, repository: verified.repository, sourceCommit: verified.sourceCommit, path: verified.path, blobSha: verified.blobSha, rawSha256: verified.rawSha256, size: verified.size, contentSize: verified.contentSize, byteDigest: verified.byteDigest, sealedHandoffDigest: verified.sealedHandoffDigest, authorship: verified.authorship }, null, 2)}\n`);
+  materializeGithubWriter1Baseline({ apiResponse: json, sealed, expected, outputRoot });
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) downloadBaseline().catch((error) => { console.error(error instanceof Error ? error.message : String(error)); process.exitCode = 1; });
