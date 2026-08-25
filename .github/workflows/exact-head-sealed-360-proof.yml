@@ -87,10 +87,10 @@ jobs:
         run: node scripts/run-exact-head-sealed-360-proof.js
       - name: Fail closed unless the synthetic proof exists and is non-approvable
         run: |
-          test -s canary/outputs/current-head-gate1-proof.json
+          test -s canary/outputs/current-head-synthetic-replay-proof.json
           node -e "
             const fs = require('node:fs');
-            const proof = JSON.parse(fs.readFileSync('canary/outputs/current-head-gate1-proof.json', 'utf8'));
+            const proof = JSON.parse(fs.readFileSync('canary/outputs/current-head-synthetic-replay-proof.json', 'utf8'));
             if (proof.synthetic !== true || proof.approvableGate1 !== false || proof.gate1State !== 'synthetic-sealed-evidence-only') throw new Error('sealed proof is not synthetic-only');
             if (proof.integratedFactoryReadiness !== false || proof.liveConnectorProven !== false) throw new Error('sealed proof mislabeled as live connector readiness');
             if (fs.existsSync('canary/outputs/gate1.md') || fs.existsSync('canary/state/factory-state.json')) throw new Error('sealed replay emitted Gate 1-shaped output');
@@ -102,6 +102,6 @@ jobs:
         with:
           name: exact-head-sealed-360-synthetic-proof-${{ github.run_id }}
           path: |
-            canary/outputs/current-head-gate1-proof.json
+            canary/outputs/current-head-synthetic-replay-proof.json
           if-no-files-found: error
           retention-days: 30
