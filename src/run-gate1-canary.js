@@ -67,7 +67,9 @@ async function runCurrentHeadGate1Canary({ root, requestFile, selectionFile, qaF
   const cursorBundle = cursorBundleFile && fs.existsSync(path.resolve(cursorBundleFile)) ? readJson(cursorBundleFile) : null;
   const dispatch = { issueNumber: Number(env.FACTORY_ISSUE_NUMBER), prNumber: Number(env.FACTORY_PR_NUMBER), branch: env.FACTORY_BRANCH || env.GITHUB_REF_NAME, reviewedHeadSha: assertedHeadSha };
   if (!Number.isInteger(dispatch.issueNumber) || !Number.isInteger(dispatch.prNumber) || !dispatch.branch) throw new Error('Canary requires immutable Issue/PR/branch dispatch binding');
-  if (env.FACTORY_PHASE_A_PRODUCTION === 'true') verifyApprovedLineageRuntimePacket({ root: process.cwd(), filename: env.FACTORY_APPROVED_LINEAGE_PACKET, assertedHeadSha, dispatch: { ...dispatch, repository: env.FACTORY_REPOSITORY || 'alchemistj/ff-content-demo-factory' } });
+  const approvedRuntimePacket = env.FACTORY_PHASE_A_PRODUCTION === 'true'
+    ? verifyApprovedLineageRuntimePacket({ root, filename: env.FACTORY_APPROVED_LINEAGE_PACKET, assertedHeadSha, dispatch: { ...dispatch, repository: env.FACTORY_REPOSITORY || 'alchemistj/ff-content-demo-factory' } })
+    : null;
   const inputManifest = { schemaVersion: 'factory-canary-input-manifest-v1', expectedHeadSha: assertedHeadSha, dispatch, files: { request: digest(request), selection: digest(selection), qa: digest(qa) } };
   inputManifest.manifestDigest = digest(inputManifest);
   const outputDir = path.join(root, 'canary', 'outputs');
@@ -78,7 +80,7 @@ async function runCurrentHeadGate1Canary({ root, requestFile, selectionFile, qaF
   // manufactured from synthetic evidence.
   if (sealedEvidence) {
     const proof = {
-      schemaVersion: 'factory-current-head-gate1-canary-v1',
+      schemaVersion: 'factory-current-head-synthetic-replay-proof-v1',
       proofScope: 'synthetic-sealed-evidence-test-only',
       phase,
       synthetic: true,
@@ -99,13 +101,13 @@ async function runCurrentHeadGate1Canary({ root, requestFile, selectionFile, qaF
         'Real phase A must pause for an authentic cursor[bot] terminal receipt before any Gate 1 path.',
       ],
     };
-    fs.writeFileSync(path.join(outputDir, 'current-head-gate1-proof.json'), `${JSON.stringify(proof, null, 2)}\n`);
+    fs.writeFileSync(path.join(outputDir, 'current-head-synthetic-replay-proof.json'), `${JSON.stringify(proof, null, 2)}\n`);
     return { proof, state: null };
   }
   const sealPending = () => {
     const dispatchPacket = createDispatchPacket({ ...dispatch, scope: env.FACTORY_DISPATCH_SCOPE || 'fresh-current-head-gate1', repository: env.FACTORY_REPOSITORY || 'alchemistj/ff-content-demo-factory' });
     const prospectId = selection.selectedPlaceId || request.prospectId || request.placeId || request.prospect?.prospectId || `canary-${digest(request).slice(7, 23)}`;
-    const pending = createPendingHandoff({ dispatchPacket, inputManifest, runId: env.FACTORY_CANARY_RUN_ID || `canary-${digest(inputManifest).slice(7, 23)}`, prospectId, placeId: selection.selectedPlaceId || request.placeId || null, sourceCheckpointDigest: digest({ request, selection, qa }), phaseARunId: env.GITHUB_RUN_ID || env.FACTORY_PHASE_A_RUN_ID || `local-${digest(inputManifest).slice(7, 23)}`, inputFiles: { request: requestFile, selection: selectionFile, qa: qaFile } });
+    const pending = createPendingHandoff({ dispatchPacket, inputManifest, runId: env.FACTORY_CANARY_RUN_ID || `canary-${digest(inputManifest).slice(7, 23)}`, prospectId, placeId: selection.selectedPlaceId || request.placeId || null, sourceCheckpointDigest: digest({ request, selection, qa }), phaseARunId: env.GITHUB_RUN_ID || env.FACTORY_PHASE_A_RUN_ID || `local-${digest(inputManifest).slice(7, 23)}`, inputFiles: { request: requestFile, selection: selectionFile, qa: qaFile }, approvedLineage: approvedRuntimePacket ? { packetDigest: approvedRuntimePacket.packetDigest, ...approvedRuntimePacket.approvedLineage } : null });
     fs.writeFileSync(path.join(outputDir, 'current-head-gate1-pending.json'), `${JSON.stringify(pending, null, 2)}\n`);
     return pending;
   };
@@ -169,6 +171,13 @@ async function runCurrentHeadGate1Canary({ root, requestFile, selectionFile, qaF
   if (stage3.nextAction?.code !== 'awaiting-human-gate-1') throw new Error(`Fresh canary did not reach Human Gate 1: ${stage3.nextAction?.code || 'unknown'}`);
   const run = stage3.state?.activeRun || stage3.run;
   if (!run || run.status !== 'awaiting-human-gate-1' || !run.artifacts?.gate1?.markdown) throw new Error('Fresh canary Gate 1 artifact is missing');
+  const approved = pending.envelope.approvedLineage;
+  if (approved) {
+    const prescription = run.artifacts.prescription || {};
+    const actual = { sourceArtifactDigest: prescription.sourceArtifactDigest, evidenceDigest: prescription.evidenceDigest, pageSetDigest: prescription.pageSetDigest, prescriptionDigest: prescription.prescriptionDigest, approvalDigest: prescription.approvalDigest, strategyDigest: prescription.strategyDigest };
+    for (const field of Object.keys(actual)) if (actual[field] !== approved[field]) throw new Error(`Gate 1 output ${field} does not exactly match approved historical lineage`);
+    if (JSON.stringify(prescription.selectedServiceIds || []) !== JSON.stringify(approved.selectedServiceIds) || JSON.stringify((prescription.pages || []).map((page) => page.url)) !== JSON.stringify(approved.routes)) throw new Error('Gate 1 output services/routes do not exactly match approved historical lineage');
+  }
   const finalEnvelope = { ...expectedEnvelope, factoryRunId: run.runId, factorySourceCheckpointDigest: run.artifacts.sourceCheckpoint ? digest(run.artifacts.sourceCheckpoint) : null };
   const boundReceipts = Object.entries(cursorBundle?.jobs || {}).map(([jobId, entry]) => {
     const kind = entry.receipt?.operation || entry.result?.kind || 'unknown';
