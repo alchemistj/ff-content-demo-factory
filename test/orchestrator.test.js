@@ -40,6 +40,8 @@ function adapters({ failJudge = false } = {}) {
       { type: 'Contact', service: 'contact', url: '/contact', primaryKeyword: 'contact One Electric', titleDirection: 'Contact One Electric', h1Direction: 'Talk with One Electric', angle: 'Give ready prospects a clear next step.', whyIncluded: 'Conversion page.', overlapBoundaries: 'No service claims.', claims: [], traps: [], strongestEvidence: null, recommendedFirstReview: null },
     ],
   };
+  proposal.sourceCheckpoint = { sourceIdentity: { provider: 'repository-test-fixture', runId: 'orchestrator-run', artifactId: 'orchestrator-artifact', sourceSha: 'orchestrator-source-sha', rootIdentity: 'test-artifact-root:orchestrator-artifact' }, sourceArtifactDigest: 'sha256:dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd' };
+  proposal.serviceCoverageLedger.sourceIdentity = proposal.sourceCheckpoint.sourceIdentity;
   return {
     calls, candidates,
     discovery: { discoverCandidates: async ({ searchStrings, location, limit }) => { calls.discover++; assert.deepEqual(searchStrings, ['electrician']); assert.equal(location, 'Dallas, TX'); return { kind: 'discovery-candidates', candidates: candidates.slice(0, limit), request: { searchStrings, location }, provenance: { run: { provider: 'apify', status: 'completed', runId: 'd1' } } }; } },
