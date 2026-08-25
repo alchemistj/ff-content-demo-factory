@@ -76,6 +76,7 @@ jobs:
           DISPATCH_FILE: canary/outputs/cursor-dispatch.json
           ISSUE_NUMBER: ${{ inputs.issue_number }}
           PR_NUMBER: ${{ inputs.pr_number }}
+          PR_NUMBER: ${{ inputs.pr_number }}
           BRANCH: ${{ inputs.branch }}
           REVIEWED_HEAD_SHA: ${{ inputs.reviewed_head_sha }}
           REPOSITORY: ${{ github.repository }}
@@ -112,17 +113,18 @@ jobs:
           digest="$(node -e "const fs=require('node:fs');process.stdout.write(JSON.parse(fs.readFileSync(process.env.DISPATCH_FILE,'utf8')).dispatchDigest)")"
           key="$(node -e "const fs=require('node:fs');process.stdout.write(JSON.parse(fs.readFileSync(process.env.DISPATCH_FILE,'utf8')).dispatchKey)")"
           test -n "$GH_TOKEN"
-          comments="$(GH_TOKEN="$GH_TOKEN" gh api --paginate "repos/$GITHUB_REPOSITORY/issues/$ISSUE_NUMBER/comments?per_page=100")"
-          prior="$(printf '%s' "$comments" | jq -r --arg digest "$digest" --arg key "$key" '.[] | select(.body | startswith("@cursor")) | select((.body | contains($digest)) and (.body | contains($key))) | [.id, .html_url] | @tsv' | tail -1)"
+          GH_TOKEN="$GH_TOKEN" gh api --paginate "repos/$GITHUB_REPOSITORY/issues/$PR_NUMBER/comments?per_page=100" > canary/outputs/execution-comments.json
+          expected="$(DIGEST="$digest" KEY="$key" node -e "process.stdout.write(JSON.stringify({repository:process.env.GITHUB_REPOSITORY,prNumber:process.env.PR_NUMBER,dispatchDigest:process.env.DIGEST,dispatchKey:process.env.KEY}))")"
+          prior="$(node scripts/select-cursor-dispatch-comment.js canary/outputs/execution-comments.json "$expected" 2>/dev/null || true)"
           if [ -n "$prior" ]; then
-            comment_id="$(printf '%s' "$prior" | cut -f1)"
-            comment_url="$(printf '%s' "$prior" | cut -f2)"
+            comment_id="$(node -e "process.stdout.write(String(JSON.parse(process.argv[1]).id))" "$prior")"
+            comment_url="$(node -e "process.stdout.write(JSON.parse(process.argv[1]).html_url)" "$prior")"
             echo "idempotent_existing_comment=$comment_url"
           else
             { cat "$COMMENT_FILE"; printf 'Dispatch workflow run: %s\\n' "$GITHUB_RUN_ID"; } > canary/outputs/cursor-dispatch.post.md
-            response="$(GH_TOKEN="$GH_TOKEN" gh api "repos/$GITHUB_REPOSITORY/issues/$ISSUE_NUMBER/comments" --method POST -f body="$(cat canary/outputs/cursor-dispatch.post.md)")"
-            comment_id="$(printf '%s' "$response" | jq -r .id)"
-            comment_url="$(printf '%s' "$response" | jq -r .html_url)"
+            response="$(GH_TOKEN="$GH_TOKEN" gh api "repos/$GITHUB_REPOSITORY/issues/$PR_NUMBER/comments" --method POST -f body="$(cat canary/outputs/cursor-dispatch.post.md)")"
+            comment_id="$(node -e "process.stdout.write(String(JSON.parse(process.argv[1]).id))" "$response")"
+            comment_url="$(node -e "process.stdout.write(JSON.parse(process.argv[1]).html_url)" "$response")"
           fi
           test -n "$comment_id"; test -n "$comment_url"
           echo "FACTORY_DISPATCH_COMMENT_ID=$comment_id" >> "$GITHUB_ENV"
@@ -239,9 +241,11 @@ jobs:
           ISSUE_NUMBER="$(node -e "const fs=require('node:fs');process.stdout.write(String(JSON.parse(fs.readFileSync(process.env.DISPATCH_FILE,'utf8')).issueNumber))")"
           digest="$(node -e "const fs=require('node:fs');process.stdout.write(JSON.parse(fs.readFileSync(process.env.DISPATCH_FILE,'utf8')).dispatchDigest)")"
           key="$(node -e "const fs=require('node:fs');process.stdout.write(JSON.parse(fs.readFileSync(process.env.DISPATCH_FILE,'utf8')).dispatchKey)")"
-          comments="$(GH_TOKEN="$GH_TOKEN" gh api --paginate "repos/$GITHUB_REPOSITORY/issues/$ISSUE_NUMBER/comments?per_page=100")"
-          prior="$(printf '%s' "$comments" | jq -r --arg digest "$digest" --arg key "$key" '.[] | select(.body | startswith("@cursor")) | select((.body | contains($digest)) and (.body | contains($key))) | [.id, .html_url] | @tsv' | tail -1)"
-          if [ -n "$prior" ]; then comment_id="$(printf '%s' "$prior" | cut -f1)"; comment_url="$(printf '%s' "$prior" | cut -f2)"; else response="$(GH_TOKEN="$GH_TOKEN" gh api "repos/$GITHUB_REPOSITORY/issues/$ISSUE_NUMBER/comments" --method POST -f body="$(cat canary/phase-a/cursor-dispatch.comment.md)")"; comment_id="$(printf '%s' "$response" | jq -r .id)"; comment_url="$(printf '%s' "$response" | jq -r .html_url)"; fi
+          PR_NUMBER="$(node -e "process.stdout.write(String(JSON.parse(require('fs').readFileSync(process.env.DISPATCH_FILE,'utf8')).prNumber))")"
+          GH_TOKEN="$GH_TOKEN" gh api --paginate "repos/$GITHUB_REPOSITORY/issues/$PR_NUMBER/comments?per_page=100" > canary/phase-a/execution-comments.json
+          expected="$(DIGEST="$digest" KEY="$key" node -e "process.stdout.write(JSON.stringify({repository:process.env.GITHUB_REPOSITORY,prNumber:process.env.PR_NUMBER,dispatchDigest:process.env.DIGEST,dispatchKey:process.env.KEY}))")"
+          prior="$(node scripts/select-cursor-dispatch-comment.js canary/phase-a/execution-comments.json "$expected" 2>/dev/null || true)"
+          if [ -n "$prior" ]; then comment_id="$(node -e "process.stdout.write(String(JSON.parse(process.argv[1]).id))" "$prior")"; comment_url="$(node -e "process.stdout.write(JSON.parse(process.argv[1]).html_url)" "$prior")"; else response="$(GH_TOKEN="$GH_TOKEN" gh api "repos/$GITHUB_REPOSITORY/issues/$PR_NUMBER/comments" --method POST -f body="$(cat canary/phase-a/cursor-dispatch.comment.md)")"; comment_id="$(node -e "process.stdout.write(String(JSON.parse(process.argv[1]).id))" "$response")"; comment_url="$(node -e "process.stdout.write(JSON.parse(process.argv[1]).html_url)" "$response")"; fi
           test -n "$comment_id"; test -n "$comment_url"
           echo "FACTORY_DISPATCH_COMMENT_ID=$comment_id" >> "$GITHUB_ENV"
           echo "FACTORY_DISPATCH_COMMENT_URL=$comment_url" >> "$GITHUB_ENV"
