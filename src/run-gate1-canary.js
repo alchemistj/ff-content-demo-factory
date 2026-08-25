@@ -29,7 +29,7 @@ function readJson(filename) { return JSON.parse(fs.readFileSync(path.resolve(fil
 function required(value, name) { if (!value) throw new Error(`${name} is required`); return value; }
 
 async function runCurrentHeadGate1Canary({ root, requestFile, selectionFile, qaFile, cursorBundleFile, env = process.env }) {
-  required(root, 'root'); required(requestFile, 'requestFile'); required(selectionFile, 'selectionFile'); required(qaFile, 'qaFile'); required(cursorBundleFile, 'cursorBundleFile');
+  required(root, 'root'); required(requestFile, 'requestFile'); required(selectionFile, 'selectionFile'); required(qaFile, 'qaFile');
   if (env.CURSOR_API_KEY) throw new Error('CURSOR_API_KEY is not a supported canary credential; use the GitHub-to-Cursor Cloud Agent bundle');
   if (env.CURSOR_MODEL && env.CURSOR_MODEL !== 'cursor-grok-4.6-high') throw new Error(`Unsupported Cursor model override: ${env.CURSOR_MODEL}`);
   const assertedHeadSha = env.FACTORY_CHECKED_OUT_SHA || env.FACTORY_ASSERTED_HEAD_SHA || env.EXPECTED_HEAD_SHA || null;
@@ -37,12 +37,27 @@ async function runCurrentHeadGate1Canary({ root, requestFile, selectionFile, qaF
   const request = readJson(requestFile);
   const selection = readJson(selectionFile);
   const qa = readJson(qaFile);
-  const cursorBundle = readJson(cursorBundleFile);
+  const phase = env.FACTORY_CANARY_PHASE || 'resume';
+  if (!['dispatch', 'resume'].includes(phase)) throw new Error(`Unsupported canary phase: ${phase}`);
+  const cursorBundle = cursorBundleFile && fs.existsSync(path.resolve(cursorBundleFile)) ? readJson(cursorBundleFile) : null;
   const dispatch = { issueNumber: Number(env.FACTORY_ISSUE_NUMBER), prNumber: Number(env.FACTORY_PR_NUMBER), branch: env.FACTORY_BRANCH || env.GITHUB_REF_NAME, reviewedHeadSha: assertedHeadSha };
   if (!Number.isInteger(dispatch.issueNumber) || !Number.isInteger(dispatch.prNumber) || !dispatch.branch) throw new Error('Canary requires immutable Issue/PR/branch dispatch binding');
-  const inputManifest = { schemaVersion: 'factory-canary-input-manifest-v1', expectedHeadSha: assertedHeadSha, dispatch, files: { request: digest(request), selection: digest(selection), qa: digest(qa), cursorBundle: bundleDigest(cursorBundle) } };
+  const inputManifest = { schemaVersion: 'factory-canary-input-manifest-v1', expectedHeadSha: assertedHeadSha, dispatch, files: { request: digest(request), selection: digest(selection), qa: digest(qa) } };
   inputManifest.manifestDigest = digest(inputManifest);
-  validateBundle(cursorBundle, { expectedHeadSha: assertedHeadSha, inputManifestDigest: inputManifest.manifestDigest, dispatch });
+  const outputDir = path.join(root, 'canary', 'outputs');
+  fs.mkdirSync(outputDir, { recursive: true });
+  if (phase === 'dispatch') {
+    const pending = { schemaVersion: 'factory-canary-pending-v1', phase: 'awaiting-cursor-receipt', immutable: true, expectedHeadSha: assertedHeadSha, dispatch, inputManifest, inputManifestDigest: inputManifest.manifestDigest, sealedDigest: digest({ expectedHeadSha: assertedHeadSha, dispatch, inputManifest }) };
+    fs.writeFileSync(path.join(outputDir, 'current-head-gate1-pending.json'), `${JSON.stringify(pending, null, 2)}\n`);
+    return { proof: { schemaVersion: 'factory-current-head-gate1-canary-v1', proofScope: 'fresh-current-head-dispatch-phase-only', phase, expectedHeadSha: assertedHeadSha, checkedOutSha: assertedHeadSha, headAssertion: true, dispatch, inputManifest, awaitingCursorReceipt: true, integratedFactoryReadiness: false, limitations: ['Phase A seals the exact head and inputs and awaits the connector-native Cursor receipt.', 'No paid vendor or production writing is performed in phase A.'] }, state: null };
+  }
+  required(cursorBundle, 'cursorBundle');
+  validateBundle(cursorBundle, { expectedHeadSha: assertedHeadSha, inputManifestDigest: inputManifest.manifestDigest, dispatch, repository: env.FACTORY_REPOSITORY || 'alchemistj/ff-content-demo-factory' });
+  const pendingFile = env.FACTORY_HANDOFF_FILE || path.join(outputDir, 'current-head-gate1-pending.json');
+  if (!fs.existsSync(pendingFile)) throw new Error('Canary resume requires the durable phase-A pending handoff');
+  const pending = readJson(pendingFile);
+  if (pending.schemaVersion !== 'factory-canary-pending-v1' || pending.phase !== 'awaiting-cursor-receipt' || pending.sealedDigest !== digest({ expectedHeadSha: pending.expectedHeadSha, dispatch: pending.dispatch, inputManifest: pending.inputManifest })) throw new Error('Canary pending handoff is stale or tampered');
+  if (pending.expectedHeadSha !== assertedHeadSha || pending.inputManifestDigest !== inputManifest.manifestDigest) throw new Error('Canary pending handoff does not bind the current head/input manifest');
   const expectedEnvelope = { checkedOutSha: assertedHeadSha, inputManifestDigest: inputManifest.manifestDigest, runId: null, prospectId: null, sourceCheckpointDigest: null, sourceManifestDigest: null };
   const config = loadConfig(process.cwd());
   const adapters = createProductionAdapters({ root, config, env, cursor: createCloudAgentBundleAdapter(cursorBundle, expectedEnvelope), productionCloudAgent: true });
@@ -60,8 +75,12 @@ async function runCurrentHeadGate1Canary({ root, requestFile, selectionFile, qaF
   const run = stage3.state?.activeRun || stage3.run;
   if (!run || run.status !== 'awaiting-human-gate-1' || !run.artifacts?.gate1?.markdown) throw new Error('Fresh canary Gate 1 artifact is missing');
   const finalEnvelope = { ...expectedEnvelope, runId: run.runId, prospectId: run.prospectId || run.candidate?.placeId || null, sourceCheckpointDigest: run.artifacts.sourceCheckpoint ? digest(run.artifacts.sourceCheckpoint) : null, sourceManifestDigest: run.artifacts.sourceCheckpoint?.sourceManifestDigest || null };
-  for (const [jobId, entry] of Object.entries(cursorBundle.jobs || {})) validateJobReceipt({ ...(entry.receipt || {}), provider: 'cursor-cloud-agent', jobId }, { kind: entry.receipt?.operation || entry.result?.kind || 'unknown', expectedEnvelope: finalEnvelope });
-  if (cursorBundle.envelope.runId !== finalEnvelope.runId || cursorBundle.envelope.prospectId !== finalEnvelope.prospectId || cursorBundle.envelope.sourceCheckpointDigest !== finalEnvelope.sourceCheckpointDigest || cursorBundle.envelope.sourceManifestDigest !== finalEnvelope.sourceManifestDigest) throw new Error('Cloud Agent bundle final run/source binding mismatch');
+  const boundReceipts = Object.entries(cursorBundle.jobs || {}).map(([jobId, entry]) => {
+    const kind = entry.receipt?.operation || entry.result?.kind || 'unknown';
+    const receipt = validateJobReceipt({ ...(entry.receipt || {}), provider: 'cursor-cloud-agent', jobId }, { kind, expectedEnvelope });
+    for (const field of ['runId', 'prospectId', 'sourceCheckpointDigest', 'sourceManifestDigest']) if (receipt.envelope?.[field] != null && String(receipt.envelope[field]) !== String(finalEnvelope[field])) throw new Error(`Cloud Agent ${kind} final ${field} binding mismatch`);
+    return { jobId, receipt, finalBinding: { runId: finalEnvelope.runId, prospectId: finalEnvelope.prospectId, sourceCheckpointDigest: finalEnvelope.sourceCheckpointDigest, sourceManifestDigest: finalEnvelope.sourceManifestDigest }, boundDigest: digest({ jobId, receipt, finalBinding: { runId: finalEnvelope.runId, prospectId: finalEnvelope.prospectId, sourceCheckpointDigest: finalEnvelope.sourceCheckpointDigest, sourceManifestDigest: finalEnvelope.sourceManifestDigest } }) };
+  });
   const proof = {
     schemaVersion: 'factory-current-head-gate1-canary-v1',
     proofScope: 'fresh-current-head-gate1-canary-only',
@@ -80,6 +99,7 @@ async function runCurrentHeadGate1Canary({ root, requestFile, selectionFile, qaF
     pageSetDigest: run.artifacts.prescription?.pageSetDigest || null,
     prescriptionDigest: run.artifacts.prescription?.prescriptionDigest || null,
     bindingDigest: digest({ headSha: assertedHeadSha, runId: run.runId, prospectId: run.prospectId || null, sourceIdentity: run.artifacts.prescription?.sourceIdentity || null, sourceManifestDigest: run.artifacts.prescription?.sourceManifestDigest || null }),
+    cursorReceiptBindings: boundReceipts,
     gate1State: run.status,
     laterStageArtifacts: Object.keys(run.artifacts).filter((key) => ['copy', 'website', 'build', 'deploy'].some((word) => key.toLowerCase().includes(word))),
     limitations: ['This proves a fresh current-head path through Human Gate 1 only.', 'It does not prove post-Gate-1 writer lanes, final copy QA, or website build readiness.'],
