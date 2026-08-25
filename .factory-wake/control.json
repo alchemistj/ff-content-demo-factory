@@ -1,8 +1,8 @@
 {
-  "wakeId": "swifts-roofing-selection-2026-08-25-04",
+  "wakeId": "swifts-roofing-selection-2026-08-25-05",
   "mode": "selection",
-  "restoreFromRunId": "32814421140",
-  "restoreFromSourceSha": "9cc5ba175137e6da0fb47868c82a73d7c5a49d17",
+  "restoreFromRunId": "32817743164",
+  "restoreFromSourceSha": "fd1f88b8ce93271674a113bbe9257a8a82556eea",
   "decisionFile": ".factory-wake/decision.json",
   "requestedBy": "architect"
 }
