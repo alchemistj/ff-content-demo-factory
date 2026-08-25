@@ -58,6 +58,8 @@ export const EXPECTED_RECOVERY_V3_FINALIZE = Object.freeze({
   priorRecoveryV3FailureCode: "WRITER1_OUTPUT_INVALID",
   priorRecoveryV3InputDigest: "sha256:3ce24295a62cc863e6023b57ada26b0b88019b86e397e9c8e0ee98d1a612eda6",
   priorBeforeArtifactByteDigest: "sha256:58338da9ffc6d8bd8b5ebc0fa9a1af71b4eceee0b86cd126d9c9243842c80178",
+  currentArtifactByteDigest: "sha256:ec36da69992dd318e913671763a96e4b838ab747b36e512702f91176155e5eac",
+  currentArtifactUpdatedAt: "2026-08-25T01:33:20.000Z",
   frozenCopyProjectionDigest: "sha256:c1e33b69b4021623b917060efce36d8b91973deaf7db724c2183635741973d1b",
   absoluteArtifactPath: "/opt/cursor/artifacts/writer1-output.json",
   apiArtifactPath: "artifacts/writer1-output.json",

@@ -281,8 +281,10 @@ export interface CursorArtifactRecoveryV3FinalizeReceipt extends CursorArtifactR
   previousRecoveryV3: CursorArtifactRecoveryV3FailureBinding;
   beforeArtifact: CursorArtifactBinding;
   afterArtifact: CursorArtifactBinding;
-  copyProjectionDigest: string;
-  metadataChangeDigest: string;
+  renderedWordsDigest: string;
+  stableIdentityDigest: string;
+  provenanceMetadataDigest: string;
+  crossV3CopyPreservation: "not-asserted";
 }
 export interface CursorArtifactDescriptor { path: string; size: number; sha256?: string; updatedAt?: string; }
 export interface CursorArtifactClient {
@@ -553,6 +555,45 @@ export function writer1CopyProjection(value: unknown): unknown {
   return Object.fromEntries(Object.entries(record).filter(([key]) => key !== "provenance").map(([key, child]) => [key, writer1CopyProjection(child)]));
 }
 export function writer1CopyProjectionDigest(value: unknown): string { return digestOf(writer1CopyProjection(value)); }
+
+type Writer1DigestDomain = "renderedWords" | "stableIdentity" | "provenanceMetadata";
+const WRITER1_WORD_KEYS = new Set(["primaryKeyword", "title", "seoTitle", "metaDescription", "h1", "body", "heading", "quote", "excerpt", "exactText", "attribution", "reviewer", "author", "claim", "statement", "text"]);
+const WRITER1_IDENTITY_KEYS = new Set(["url", "route", "type", "prescriptionId", "pageId", "serviceId", "canonicalServiceId", "canonicalIntentId", "sourceServiceId", "reviewId", "sourceReviewId", "evidenceId", "refId", "claimId", "stableId", "stableRef", "id"]);
+const WRITER1_PROVENANCE_KEYS = new Set(["type", "ref", "stableRef", "placement", "section", "pointer", "pointerLedger", "placementMetadata", "ledger", "status", "foldedInto", "allowedParentCanonicalId", "directEvidenceReviewIds", "reviewIds", "supportingReviewIds"]);
+const WRITER1_PROVENANCE_OBJECT_KEYS = new Set(["provenance", "pointer", "pointerLedger", "placementMetadata", "ledger"]);
+
+function writer1DigestProjection(value: unknown, domain: Writer1DigestDomain, inProvenance = false): unknown {
+  if (Array.isArray(value)) return value.map((child) => writer1DigestProjection(child, domain, inProvenance));
+  const record = asRecord(value);
+  if (!record) return undefined;
+  const projected: Record<string, unknown> = {};
+  for (const [key, child] of Object.entries(record)) {
+    const childInProvenance = inProvenance || WRITER1_PROVENANCE_OBJECT_KEYS.has(key);
+    const selected = domain === "renderedWords"
+      ? WRITER1_WORD_KEYS.has(key)
+      : domain === "stableIdentity"
+        ? WRITER1_IDENTITY_KEYS.has(key) && !(inProvenance && (key === "ref" || key === "stableRef" || key === "type"))
+        : WRITER1_PROVENANCE_KEYS.has(key) && (inProvenance || WRITER1_PROVENANCE_OBJECT_KEYS.has(key));
+    if (selected) {
+      const childProjection = writer1DigestProjection(child, domain, childInProvenance);
+      projected[key] = childProjection === undefined && (typeof child === "string" || typeof child === "number" || typeof child === "boolean" || child === null) ? child : childProjection;
+      continue;
+    }
+    const nested = writer1DigestProjection(child, domain, childInProvenance);
+    if (nested !== undefined && (typeof nested === "object" || Array.isArray(nested))) projected[key] = nested;
+  }
+  return Object.keys(projected).length > 0 ? projected : undefined;
+}
+
+export function writer1RenderedWordsProjection(value: unknown): unknown { return writer1DigestProjection(value, "renderedWords") ?? null; }
+export function writer1StableIdentityProjection(value: unknown): unknown { return writer1DigestProjection(value, "stableIdentity") ?? null; }
+export function writer1ProvenanceMetadataProjection(value: unknown): unknown { return writer1DigestProjection(value, "provenanceMetadata") ?? null; }
+export function writer1RenderedWordsDigest(value: unknown): string { return digestOf(writer1RenderedWordsProjection(value)); }
+export function writer1StableIdentityDigest(value: unknown): string { return digestOf(writer1StableIdentityProjection(value)); }
+export function writer1ProvenanceMetadataDigest(value: unknown): string { return digestOf(writer1ProvenanceMetadataProjection(value)); }
+export function writer1OutputDigests(value: unknown): { renderedWordsDigest: string; stableIdentityDigest: string; provenanceMetadataDigest: string } {
+  return { renderedWordsDigest: writer1RenderedWordsDigest(value), stableIdentityDigest: writer1StableIdentityDigest(value), provenanceMetadataDigest: writer1ProvenanceMetadataDigest(value) };
+}
 export function writer1MetadataChangeDigest(beforeArtifactDigest: string, afterArtifactDigest: string, copyProjectionDigest: string): string {
   return digestOf({ beforeArtifactDigest, afterArtifactDigest, copyProjectionDigest });
 }
@@ -585,6 +626,9 @@ export interface CursorArtifactValidationReportInspection {
   parsed?: unknown;
   parseError?: string;
   copyProjectionDigest?: string;
+  renderedWordsDigest?: string;
+  stableIdentityDigest?: string;
+  provenanceMetadataDigest?: string;
   copyProjectionMatches: boolean;
   stale: boolean;
 }
@@ -620,6 +664,7 @@ async function inspectCursorWriterArtifactV3Internal(input: CursorArtifactValida
   let parseError: string | undefined;
   try { parsed = JSON.parse(raw); } catch { parseError = "OUTPUT_INVALID_JSON"; }
   const copyProjectionDigest = parsed === undefined ? undefined : writer1CopyProjectionDigest(parsed);
+  const outputDigests = parsed === undefined ? undefined : writer1OutputDigests(parsed);
   const before = input.previousRecoveryV3.beforeArtifact;
   return {
     raw,
@@ -627,6 +672,7 @@ async function inspectCursorWriterArtifactV3Internal(input: CursorArtifactValida
     ...(parsed === undefined ? {} : { parsed }),
     ...(parseError ? { parseError } : {}),
     ...(copyProjectionDigest ? { copyProjectionDigest } : {}),
+    ...(outputDigests ? outputDigests : {}),
     copyProjectionMatches: copyProjectionDigest === input.previousRecoveryV3.copyProjectionDigest,
     stale: recovered.artifact.sha256 === before.sha256 && recovered.artifact.updatedAt === before.updatedAt,
   };
@@ -657,7 +703,16 @@ async function readWriter1ArtifactWithBackoff(input: { client: CursorArtifactCli
   }
 }
 
-function validateCursorArtifactRecoveryReceiptVersion(receipt: unknown, prior: CursorArtifactRecoveryPrior, promptDigest: string, cursorApiKey: string | undefined, expectedVersion: "words-writer1-artifact-recovery/v1" | "words-writer1-artifact-recovery/v2" | "words-writer1-artifact-recovery/v3" | "words-writer1-artifact-recovery/v3-finalize", previousRecovery?: CursorArtifactRecoveryFailureBinding, previousRecoveryV2?: CursorArtifactRecoveryV2FailureBinding, previousRecoveryV3?: CursorArtifactRecoveryV3FailureBinding): asserts receipt is CursorArtifactRecoveryReceipt {
+function artifactBindingIsValid(binding: CursorArtifactBinding | undefined, agentId: string): boolean {
+  if (!binding || binding.path !== "artifacts/writer1-output.json" || !Number.isSafeInteger(binding.size) || binding.size < 1 || binding.size > MAX_WRITER1_ARTIFACT_BYTES || binding.contentSize !== binding.size || !DIGEST.test(binding.sha256) || binding.byteDigest !== binding.sha256) return false;
+  const evidence = binding.presignedUrlEvidence;
+  const host = typeof evidence?.host === "string" && (evidence.host === "s3.amazonaws.com" || evidence.host.endsWith(".s3.amazonaws.com") || /^s3[.-][a-z0-9-]+\.amazonaws\.com$/u.test(evidence.host) || /\.s3[.-][a-z0-9-]+\.amazonaws\.com$/u.test(evidence.host));
+  const saneUrl = !!evidence && evidence.scheme === "https" && host && typeof evidence.pathname === "string" && evidence.pathname.length > 1 && evidence.pathname.length <= 2048 && !evidence.pathname.includes("..") && Array.isArray(evidence.queryParameterNames) && evidence.queryParameterNames.length > 0 && evidence.queryParameterNames.every((name: unknown) => typeof name === "string" && /^[A-Za-z0-9_.-]{1,128}$/u.test(name)) && JSON.stringify(evidence.queryParameterNames) === JSON.stringify([...evidence.queryParameterNames].sort());
+  const expected = artifactRequestShape(agentId, binding.path, artifactDownloadEndpoint(agentId, binding.path));
+  return !!saneUrl && JSON.stringify(binding.downloadRequest) === JSON.stringify(expected) && binding.requestShapeDigest === digestOf(binding.downloadRequest) && binding.downloadRequestDigest === artifactDownloadDigest(binding.downloadRequest, evidence) && binding.presignedUrlEvidenceDigest === digestOf(evidence);
+}
+
+function validateCursorArtifactRecoveryReceiptVersion(receipt: unknown, prior: CursorArtifactRecoveryPrior, promptDigest: string, cursorApiKey: string | undefined, expectedVersion: "words-writer1-artifact-recovery/v1" | "words-writer1-artifact-recovery/v2" | "words-writer1-artifact-recovery/v3" | "words-writer1-artifact-recovery/v3-finalize", previousRecovery?: CursorArtifactRecoveryFailureBinding, previousRecoveryV2?: CursorArtifactRecoveryV2FailureBinding, previousRecoveryV3?: CursorArtifactRecoveryV3FailureBinding, expectedCurrentArtifactByteDigest?: string, expectedCurrentArtifactUpdatedAt?: string): asserts receipt is CursorArtifactRecoveryReceipt {
   if (expectedVersion === "words-writer1-artifact-recovery/v3-finalize") validateValidationOnlyCursorReceipt(receipt, prior, cursorApiKey); else validateCursorWriterReceipt(receipt, cursorApiKey);
   const value = receipt as CursorArtifactRecoveryReceipt;
   const expectedMode = expectedVersion === "words-writer1-artifact-recovery/v3-finalize" ? "validation-only-artifact-recovery" : "same-thread-artifact-recovery";
@@ -676,13 +731,15 @@ function validateCursorArtifactRecoveryReceiptVersion(receipt: unknown, prior: C
     const before = v3.beforeArtifact;
     if (expectedVersion === "words-writer1-artifact-recovery/v3" && (!previousRecoveryV2 || JSON.stringify(v3.previousRecoveryV2) !== JSON.stringify(previousRecoveryV2))) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_RECEIPT_BINDING_INVALID", "Cursor v3 artifact receipt lost the exact failed-v2 binding");
     if (!before || !v3.afterArtifact || JSON.stringify(v3.afterArtifact) !== JSON.stringify(v3.artifact)) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_RECEIPT_BINDING_INVALID", "Cursor v3 artifact receipt lost the before/after artifact binding");
-    if (before.path !== "artifacts/writer1-output.json" || !DIGEST.test(before.sha256) || before.byteDigest !== before.sha256 || before.contentSize !== before.size || before.size < 1 || before.size > MAX_WRITER1_ARTIFACT_BYTES || before.downloadRequestDigest !== artifactDownloadDigest(before.downloadRequest, before.presignedUrlEvidence) || before.presignedUrlEvidenceDigest !== digestOf(before.presignedUrlEvidence) || before.requestShapeDigest !== digestOf(before.downloadRequest)) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_RECEIPT_INVALID", "Cursor v3 before-artifact binding is invalid");
+    if (!artifactBindingIsValid(before, prior.agentId) || !artifactBindingIsValid(v3.afterArtifact, prior.agentId)) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_RECEIPT_INVALID", "Cursor v3 before/after artifact binding is invalid");
     if (v3.afterArtifact.sha256 === before.sha256 && v3.afterArtifact.updatedAt === before.updatedAt) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_RECEIPT_STALE", "Cursor v3 accepted the unchanged invalid artifact");
-    if (typeof v3.copyProjectionDigest !== "string" || v3.copyProjectionDigest !== writer1CopyProjectionDigest(v3.output)) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_COPY_PROJECTION_MISMATCH", "Cursor v3 completed receipt copy projection digest is not recomputable");
-    if (v3.metadataChangeDigest !== writer1MetadataChangeDigest(before.sha256, v3.afterArtifact.sha256, v3.copyProjectionDigest)) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_METADATA_CHANGE_INVALID", "Cursor v3 metadata-change digest is not recomputable");
+    if (expectedVersion === "words-writer1-artifact-recovery/v3") {
+      if (typeof v3.copyProjectionDigest !== "string" || v3.copyProjectionDigest !== writer1CopyProjectionDigest(v3.output)) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_COPY_PROJECTION_MISMATCH", "Cursor v3 completed receipt copy projection digest is not recomputable");
+      if (v3.metadataChangeDigest !== writer1MetadataChangeDigest(before.sha256, v3.afterArtifact.sha256, v3.copyProjectionDigest)) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_METADATA_CHANGE_INVALID", "Cursor v3 metadata-change digest is not recomputable");
+    }
     if (expectedVersion === "words-writer1-artifact-recovery/v3-finalize") {
       const finalize = value as CursorArtifactRecoveryV3FinalizeReceipt;
-      if (!previousRecoveryV3 || JSON.stringify(finalize.previousRecoveryV3) !== JSON.stringify(previousRecoveryV3) || JSON.stringify(before) !== JSON.stringify(previousRecoveryV3.beforeArtifact) || finalize.jobId !== prior.runId || finalize.recoveryRunId !== prior.runId || finalize.copyProjectionDigest !== previousRecoveryV3.copyProjectionDigest) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_RECEIPT_BINDING_INVALID", "Cursor v3-finalize receipt lost the exact failed-v3, existing run, or frozen copy binding");
+      if (!previousRecoveryV3 || JSON.stringify(finalize.previousRecoveryV3) !== JSON.stringify(previousRecoveryV3) || JSON.stringify(before) !== JSON.stringify(previousRecoveryV3.beforeArtifact) || finalize.jobId !== prior.runId || finalize.recoveryRunId !== prior.runId || finalize.crossV3CopyPreservation !== "not-asserted" || typeof finalize.renderedWordsDigest !== "string" || finalize.renderedWordsDigest !== writer1RenderedWordsDigest(finalize.output) || typeof finalize.stableIdentityDigest !== "string" || finalize.stableIdentityDigest !== writer1StableIdentityDigest(finalize.output) || typeof finalize.provenanceMetadataDigest !== "string" || finalize.provenanceMetadataDigest !== writer1ProvenanceMetadataDigest(finalize.output) || !expectedCurrentArtifactByteDigest || finalize.afterArtifact.byteDigest !== expectedCurrentArtifactByteDigest || !expectedCurrentArtifactUpdatedAt || finalize.afterArtifact.updatedAt !== expectedCurrentArtifactUpdatedAt || finalize.afterArtifact.byteDigest === before.byteDigest) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_RECEIPT_BINDING_INVALID", "Cursor v3-finalize receipt lost the current artifact, three digest, or explicit cross-v3 preservation binding");
     }
   }
 }
@@ -696,8 +753,8 @@ export function validateCursorArtifactRecoveryV2Receipt(receipt: unknown, prior:
 export function validateCursorArtifactRecoveryV3Receipt(receipt: unknown, prior: CursorArtifactRecoveryPrior, previousRecoveryV2: CursorArtifactRecoveryV2FailureBinding, promptDigest: string, cursorApiKey?: string): asserts receipt is CursorArtifactRecoveryV3Receipt {
   validateCursorArtifactRecoveryReceiptVersion(receipt, prior, promptDigest, cursorApiKey, "words-writer1-artifact-recovery/v3", undefined, previousRecoveryV2);
 }
-export function validateCursorArtifactRecoveryV3FinalizeReceipt(receipt: unknown, prior: CursorArtifactRecoveryPrior, previousRecoveryV3: CursorArtifactRecoveryV3FailureBinding, promptDigest: string, cursorApiKey?: string): asserts receipt is CursorArtifactRecoveryV3FinalizeReceipt {
-  validateCursorArtifactRecoveryReceiptVersion(receipt, prior, promptDigest, cursorApiKey, "words-writer1-artifact-recovery/v3-finalize", undefined, undefined, previousRecoveryV3);
+export function validateCursorArtifactRecoveryV3FinalizeReceipt(receipt: unknown, prior: CursorArtifactRecoveryPrior, previousRecoveryV3: CursorArtifactRecoveryV3FailureBinding, promptDigest: string, cursorApiKey: string | undefined, expectedCurrentArtifactByteDigest: string, expectedCurrentArtifactUpdatedAt: string): asserts receipt is CursorArtifactRecoveryV3FinalizeReceipt {
+  validateCursorArtifactRecoveryReceiptVersion(receipt, prior, promptDigest, cursorApiKey, "words-writer1-artifact-recovery/v3-finalize", undefined, undefined, previousRecoveryV3, expectedCurrentArtifactByteDigest, expectedCurrentArtifactUpdatedAt);
 }
 
 type CursorArtifactRecoveryInternalInput = {
@@ -883,6 +940,8 @@ export type CursorArtifactRecoveryV3FinalizeInput = Omit<CursorArtifactRecoveryI
   recoveryVersion: "words-writer1-artifact-recovery/v3-finalize";
   previousRecoveryV3: CursorArtifactRecoveryV3FailureBinding;
   promptDigest: string;
+  expectedCurrentArtifactByteDigest: string;
+  expectedCurrentArtifactUpdatedAt: string;
   validateOutput?: (output: unknown) => void;
 };
 
@@ -903,10 +962,11 @@ async function finalizeCursorWriterArtifactV3Internal(input: CursorArtifactRecov
   if (!validateOutput) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_VALIDATOR_REQUIRED", "Validation-only Cursor artifact finalization requires the strict Writer1 validator");
   const existing = await input.receiptStore.get(key);
   if (existing) {
-    validateCursorArtifactRecoveryV3FinalizeReceipt(existing, input.prior, input.previousRecoveryV3, promptDigest, env.CURSOR_API_KEY);
+    validateCursorArtifactRecoveryV3FinalizeReceipt(existing, input.prior, input.previousRecoveryV3, promptDigest, env.CURSOR_API_KEY, input.expectedCurrentArtifactByteDigest, input.expectedCurrentArtifactUpdatedAt);
     const recovered = await readWriter1Artifact({ client: artifactClient, agentId: input.prior.agentId, apiKey: env.CURSOR_API_KEY, validateOutput });
     const completed = existing as CursorArtifactRecoveryV3FinalizeReceipt;
-    if (JSON.stringify(recovered.artifact) !== JSON.stringify(completed.afterArtifact) || writer1CopyProjectionDigest(recovered.output) !== completed.copyProjectionDigest) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_RACE", "Cursor v3-finalize artifact changed after the completed receipt");
+    const recoveredDigests = writer1OutputDigests(recovered.output);
+    if (JSON.stringify(recovered.artifact) !== JSON.stringify(completed.afterArtifact) || recoveredDigests.renderedWordsDigest !== completed.renderedWordsDigest || recoveredDigests.stableIdentityDigest !== completed.stableIdentityDigest || recoveredDigests.provenanceMetadataDigest !== completed.provenanceMetadataDigest) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_RACE", "Cursor v3-finalize artifact or digest projection changed after the completed receipt");
     const claim = await input.receiptStore.getClaim?.(key); if (!claim) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_CLAIM_MISSING", "Completed Cursor v3-finalize has no durable claim");
     return { output: recovered.output, receipt: { ...completed, output: recovered.output }, threadUrl: completed.threadUrl, claim };
   }
@@ -920,11 +980,12 @@ async function finalizeCursorWriterArtifactV3Internal(input: CursorArtifactRecov
   // send, and run.wait are structurally unreachable.
   const recovered = await readWriter1Artifact({ client: artifactClient, agentId: input.prior.agentId, apiKey: env.CURSOR_API_KEY, validateOutput });
   const before = input.previousRecoveryV3.beforeArtifact;
-  const copyProjectionDigest = writer1CopyProjectionDigest(recovered.output);
   if (recovered.artifact.sha256 === before.sha256 && recovered.artifact.updatedAt === before.updatedAt) throw new CursorWriterExecutionError("CURSOR_V3_ARTIFACT_STALE", "Cursor v3-finalize found the stale unchanged pre-repair artifact");
-  if (copyProjectionDigest !== input.previousRecoveryV3.copyProjectionDigest) throw new CursorWriterExecutionError("CURSOR_V3_COPY_PROJECTION_CHANGED", "Cursor v3-finalize found copy projection changed: words, routes, reviews, quotes, or claims");
-  const receipt = withReceiptIntegrityMac({ stage: "writer1", provider: CURSOR_PROVIDER, requestedModel: REQUIRED_CURSOR_MODEL, resolvedModel: OFFICIAL_CURSOR_MODEL, fast: false, jobId: input.prior.runId, agentId: input.prior.agentId, threadUrl: input.prior.threadUrl, inputDigest: input.prior.inputDigest, promptDigest, outputDigest: digestOf(recovered.output), completedAt: now().toISOString(), status: "complete", output: recovered.output, requestDigest: input.prior.requestDigest, createRequest: { apiVersion: API_VERSION, mode: "validation-only-artifact-recovery", agentId: input.prior.agentId, runId: input.prior.runId }, registryItem: { id: OFFICIAL_CURSOR_MODEL, validationOnly: true }, registryDigest: input.prior.registryDigest, modelParams: input.prior.modelParams, effort: "high", effortAttestationSource: input.prior.effortAttestationSource, attestationSource: "official-response", apiVersion: API_VERSION, mode: "validation-only-artifact-recovery", recoveryVersion: "words-writer1-artifact-recovery/v3-finalize", artifact: recovered.artifact, recoveryRunId: input.prior.runId, recoveryPrior: input.prior, previousRecoveryV3: input.previousRecoveryV3, beforeArtifact: before, afterArtifact: recovered.artifact, copyProjectionDigest, metadataChangeDigest: writer1MetadataChangeDigest(before.sha256, recovered.artifact.sha256, copyProjectionDigest) } as unknown as CursorArtifactRecoveryV3FinalizeReceipt, env.CURSOR_API_KEY);
-  validateCursorArtifactRecoveryV3FinalizeReceipt(receipt, input.prior, input.previousRecoveryV3, promptDigest, env.CURSOR_API_KEY);
+  if (recovered.artifact.byteDigest !== input.expectedCurrentArtifactByteDigest || recovered.artifact.updatedAt !== input.expectedCurrentArtifactUpdatedAt) throw new CursorWriterExecutionError("CURSOR_V3_CURRENT_ARTIFACT_BINDING_INVALID", "Cursor v3-finalize did not receive the exact diagnostic current artifact binding");
+  if (recovered.artifact.byteDigest === before.byteDigest || (before.updatedAt && recovered.artifact.updatedAt && Date.parse(recovered.artifact.updatedAt) <= Date.parse(before.updatedAt))) throw new CursorWriterExecutionError("CURSOR_V3_ARTIFACT_STALE", "Cursor v3-finalize current artifact is not newer than the pinned v3-before artifact");
+  const outputDigests = writer1OutputDigests(recovered.output);
+  const receipt = withReceiptIntegrityMac({ stage: "writer1", provider: CURSOR_PROVIDER, requestedModel: REQUIRED_CURSOR_MODEL, resolvedModel: OFFICIAL_CURSOR_MODEL, fast: false, jobId: input.prior.runId, agentId: input.prior.agentId, threadUrl: input.prior.threadUrl, inputDigest: input.prior.inputDigest, promptDigest, outputDigest: digestOf(recovered.output), completedAt: now().toISOString(), status: "complete", output: recovered.output, requestDigest: input.prior.requestDigest, createRequest: { apiVersion: API_VERSION, mode: "validation-only-artifact-recovery", agentId: input.prior.agentId, runId: input.prior.runId }, registryItem: { id: OFFICIAL_CURSOR_MODEL, validationOnly: true }, registryDigest: input.prior.registryDigest, modelParams: input.prior.modelParams, effort: "high", effortAttestationSource: input.prior.effortAttestationSource, attestationSource: "official-response", apiVersion: API_VERSION, mode: "validation-only-artifact-recovery", recoveryVersion: "words-writer1-artifact-recovery/v3-finalize", artifact: recovered.artifact, recoveryRunId: input.prior.runId, recoveryPrior: input.prior, previousRecoveryV3: input.previousRecoveryV3, beforeArtifact: before, afterArtifact: recovered.artifact, ...outputDigests, crossV3CopyPreservation: "not-asserted" } as unknown as CursorArtifactRecoveryV3FinalizeReceipt, env.CURSOR_API_KEY);
+  validateCursorArtifactRecoveryV3FinalizeReceipt(receipt, input.prior, input.previousRecoveryV3, promptDigest, env.CURSOR_API_KEY, input.expectedCurrentArtifactByteDigest, input.expectedCurrentArtifactUpdatedAt);
   const completedClaim = { ...claimed.claim, agentId: input.prior.agentId, jobId: input.prior.runId, phase: "completed" as const, heartbeatAt: now().toISOString(), leaseUntil: new Date(now().getTime() + 30_000).toISOString() };
   await input.receiptStore.put(key, receipt);
   await input.receiptStore.putClaim(key, completedClaim);

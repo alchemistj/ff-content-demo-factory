@@ -51,6 +51,8 @@ export const ARTIFACT_RECOVERY_V3_FINALIZE_SOURCE_SHA = "6d5f9e0f65af98185b6827b
 export const ARTIFACT_RECOVERY_V3_FINALIZE_RUN_ID = "run-47a109e2-4fd4-48df-a727-8a92a76cc472";
 export const ARTIFACT_RECOVERY_V3_FINALIZE_FAILURE_CODE = "WRITER1_OUTPUT_INVALID" as const;
 export const ARTIFACT_RECOVERY_V3_FINALIZE_BEFORE_ARTIFACT_DIGEST = "sha256:58338da9ffc6d8bd8b5ebc0fa9a1af71b4eceee0b86cd126d9c9243842c80178";
+export const ARTIFACT_RECOVERY_V3_FINALIZE_CURRENT_ARTIFACT_DIGEST = "sha256:ec36da69992dd318e913671763a96e4b838ab747b36e512702f91176155e5eac";
+export const ARTIFACT_RECOVERY_V3_FINALIZE_CURRENT_ARTIFACT_UPDATED_AT = "2026-08-25T01:33:20.000Z";
 export const ARTIFACT_RECOVERY_V3_FINALIZE_COPY_PROJECTION_DIGEST = "sha256:c1e33b69b4021623b917060efce36d8b91973deaf7db724c2183635741973d1b";
 type Dict = Record<string, any>;
 
@@ -215,13 +217,14 @@ function collectWriter1Validation(raw: unknown, projection: Dict): { parsed?: Di
   // and list the review ID in both its direct and supporting ledgers.
   for (const service of projection.services || []) {
     const targetCanonicalServiceId = String(service.comparison?.canonicalServiceId || service.page.url.slice(1));
-    const folded = (projection.foldedSupport || []).filter((entry: Dict) => entry.status === "folded" && entry.canonicalServiceId === targetCanonicalServiceId && entry.foldedInto === targetCanonicalServiceId && entry.supportingEvidence?.allowedParentCanonicalId === targetCanonicalServiceId);
+    const folded = (projection.foldedSupport || []).filter((entry: Dict) => entry.status === "folded" && entry.canonicalServiceId === targetCanonicalServiceId && entry.foldedInto === targetCanonicalServiceId);
     const foldedEvidence = folded.flatMap((entry: Dict) => {
       const directIds = new Set((Array.isArray(entry.directEvidenceReviewIds) ? entry.directEvidenceReviewIds : []).filter((id: unknown): id is string => stringValue(id)));
       const supportingIds = new Set((Array.isArray(entry.supportingEvidence?.reviewIds) ? entry.supportingEvidence.reviewIds : []).filter((id: unknown): id is string => stringValue(id)));
       return (Array.isArray(entry.reviewEvidence) ? entry.reviewEvidence : []).filter((evidence: Dict) => {
         const id = evidence.review?.id ?? evidence.review?.reviewId;
-        return stringValue(id) && directIds.has(id) && supportingIds.has(id);
+        const supportingValid = !entry.supportingEvidence || (entry.supportingEvidence.allowedParentCanonicalId === targetCanonicalServiceId && supportingIds.has(id));
+        return stringValue(id) && directIds.has(id) && supportingValid;
       });
     });
     evidenceByRoute.set(service.page.url, [...(evidenceByRoute.get(service.page.url) || []), ...foldedEvidence]);
@@ -260,25 +263,39 @@ function collectWriter1Validation(raw: unknown, projection: Dict): { parsed?: Di
       const placement = value;
       if (!isRecord(placement.provenance)) { add("PROVENANCE_MISSING", `${placementPath}/provenance`, "placement must have typed provenance", { route, objectKind: kind, presentKeys: reportKeys(placement), presentTypes: reportTypes(placement) }); continue; }
       const provenance = placement.provenance;
-      if (!["review", "evidence", "claim"].includes(provenance.type)) add("PROVENANCE_TYPE_INVALID", `${placementPath}/provenance/type`, "provenance.type must be review, evidence, or claim", { route, objectKind: kind, placement: reportValue(provenance.placement), section: reportValue(provenance.section), presentTypes: { type: reportType(provenance.type) } });
       const stableRef = provenance.ref ?? provenance.stableRef;
+      const validSection = stringValue(provenance.section) && sections.has(provenance.section);
+      if (!["review", "evidence", "claim"].includes(provenance.type)) add("PROVENANCE_TYPE_INVALID", `${placementPath}/provenance/type`, "provenance.type must be review, evidence, or claim", { route, objectKind: kind, placement: reportValue(provenance.placement), section: reportValue(provenance.section), presentTypes: { type: reportType(provenance.type) } });
       if (!stringValue(stableRef) || !sealedRefs.has(stableRef)) add("PROVENANCE_REF_UNRESOLVED", `${placementPath}/provenance/ref`, "provenance.ref must resolve to sealed Writer1 input", { route, objectKind: kind, ref: reportRef(stableRef, sealedRefs), placement: reportValue(provenance.placement), section: reportValue(provenance.section) });
-      if (!stringValue(provenance.placement) || !stringValue(provenance.section) || !sections.has(provenance.section)) add("PROVENANCE_PLACEMENT_INVALID", `${placementPath}/provenance`, "provenance placement must be non-empty and section must resolve to a page section", { route, objectKind: kind, ref: reportRef(stableRef, sealedRefs), placement: reportValue(provenance.placement), section: reportValue(provenance.section) });
+      if (!stringValue(provenance.placement) || !validSection) add("PROVENANCE_PLACEMENT_INVALID", `${placementPath}/provenance`, "provenance placement must be non-empty and section must resolve to a page section", { route, objectKind: kind, ref: reportRef(stableRef, sealedRefs), placement: reportValue(provenance.placement), section: reportValue(provenance.section) });
       const reviewId = placement.reviewId ?? placement.sourceReviewId ?? placement.evidenceId ?? placement.refId;
       const quote = placement.quote ?? placement.excerpt ?? placement.exactText;
-      if (provenance.type === "review") {
-        if (!stringValue(reviewId) || !stringValue(quote)) add("REVIEW_BINDING_FIELDS_MISSING", placementPath, "review binding requires review ID and quote", { route, objectKind: kind, ref: reportRef(stableRef, sealedRefs), reviewId: reportRef(reviewId, sealedRefs) });
+      const source = allowed.find((entry) => String(entry.review?.id ?? entry.review?.reviewId) === String(reviewId));
+      const sourceText = source ? String(source.review?.text ?? source.review?.exactText ?? source.review?.reviewText ?? "") : "";
+      const requireReviewProof = (requireAttribution: boolean): void => {
+        if (!stringValue(reviewId) || !stringValue(quote)) add("REVIEW_BINDING_FIELDS_MISSING", placementPath, "review binding requires review ID and quote/excerpt/exactText", { route, objectKind: kind, ref: reportRef(stableRef, sealedRefs), reviewId: reportRef(reviewId, sealedRefs) });
         if (stringValue(reviewId) && String(stableRef) !== String(reviewId)) add("REVIEW_REF_MISMATCH", `${placementPath}/provenance/ref`, "review provenance.ref must equal reviewId", { route, objectKind: kind, ref: reportRef(stableRef, sealedRefs), reviewId: reportRef(reviewId, sealedRefs) });
-        const source = allowed.find((entry) => String(entry.review?.id ?? entry.review?.reviewId) === String(reviewId));
         if (reviewId === SPRING_REPLACEMENT_REVIEW_ID && page.url !== "/garage-door-repair") add("SPRING_REVIEW_WRONG_ROUTE", placementPath, "Spring-replacement review may only be quoted on /garage-door-repair", { route, objectKind: kind, reviewId: SPRING_REPLACEMENT_REVIEW_ID });
         if (!source) add("REVIEW_REF_UNAUTHORIZED", placementPath, "reviewId is unapproved and must resolve to an allowed direct or folded review for this page", { route, objectKind: kind, reviewId: reportRef(reviewId, sealedRefs) });
         else {
-          for (const [field, expected] of [["authoritative", true], ["decision", "anchor"], ["grade", "anchor"], ["directCompletedService", true]] as const) if (source.judgment?.[field] !== expected) add("REVIEW_AUTHORITY_INVALID", `${placementPath}/provenance`, `non-authoritative or non-anchor review is rejected; quoted review requires judgment.${field}=${String(expected)}`, { route, objectKind: kind, reviewId: reportRef(reviewId, sealedRefs), presentTypes: { [field]: reportType(source.judgment?.[field]) } });
-          const sourceText = String(source.review?.text ?? source.review?.exactText ?? source.review?.reviewText ?? "");
+          for (const [field, expected] of [["authoritative", true], ["decision", "anchor"], ["grade", "anchor"], ["directCompletedService", true]] as const) if (source.judgment?.[field] !== expected) add("REVIEW_AUTHORITY_INVALID", `${placementPath}/provenance`, `non-authoritative or non-direct review is rejected; quoted review requires judgment.${field}=${String(expected)}`, { route, objectKind: kind, reviewId: reportRef(reviewId, sealedRefs), presentTypes: { [field]: reportType(source.judgment?.[field]) } });
           if (stringValue(quote) && (!sourceText || !normalized(sourceText).includes(normalized(String(quote))))) add("REVIEW_QUOTE_UNBOUND", placementPath, "review quote must be contained in the sealed source review", { route, objectKind: kind, reviewId: reportRef(reviewId, sealedRefs) });
         }
-        if (!stringValue(placement.attribution ?? placement.reviewer ?? placement.author)) add("REVIEW_ATTRIBUTION_MISSING", placementPath, "review binding requires attribution", { route, objectKind: kind, reviewId: reportRef(reviewId, sealedRefs) });
-      } else if (!stringValue(placement.claim ?? placement.statement ?? placement.text ?? placement.body)) add("CLAIM_TEXT_MISSING", placementPath, "evidence and claim placements require claim text", { route, objectKind: kind, ref: reportRef(stableRef, sealedRefs), placement: reportValue(provenance.placement), section: reportValue(provenance.section) });
+        if (requireAttribution && !stringValue(placement.attribution ?? placement.reviewer ?? placement.author)) add("REVIEW_ATTRIBUTION_MISSING", placementPath, "review binding requires attribution", { route, objectKind: kind, reviewId: reportRef(reviewId, sealedRefs) });
+      };
+      if (kind === "reviewEvidence") {
+        if (provenance.type !== "evidence") add("REVIEW_EVIDENCE_PROVENANCE_TYPE_INVALID", `${placementPath}/provenance/type`, "reviewEvidence is a pointer ledger and requires provenance.type=evidence", { route, objectKind: kind, ref: reportRef(stableRef, sealedRefs) });
+        if ("claim" in placement || "statement" in placement || "body" in placement) add("REVIEW_EVIDENCE_CLAIM_TEXT_DUPLICATE", placementPath, "reviewEvidence must not duplicate claim text; it is a typed evidence pointer", { route, objectKind: kind, ref: reportRef(stableRef, sealedRefs) });
+      } else if (kind === "reviewPlacements") {
+        if (provenance.type !== "review") add("REVIEW_PLACEMENT_PROVENANCE_TYPE_INVALID", `${placementPath}/provenance/type`, "reviewPlacements requires provenance.type=review", { route, objectKind: kind, ref: reportRef(stableRef, sealedRefs) });
+        requireReviewProof(true);
+      } else if (kind === "quotePlacements") {
+        if (provenance.type !== "review") add("QUOTE_PLACEMENT_PROVENANCE_TYPE_INVALID", `${placementPath}/provenance/type`, "quotePlacements requires provenance.type=review", { route, objectKind: kind, ref: reportRef(stableRef, sealedRefs) });
+        requireReviewProof(false);
+      } else {
+        if (provenance.type !== "claim") add("CLAIM_PROVENANCE_TYPE_INVALID", `${placementPath}/provenance/type`, "claims requires provenance.type=claim", { route, objectKind: kind, ref: reportRef(stableRef, sealedRefs) });
+        if (!stringValue(placement.claim ?? placement.statement ?? placement.text ?? placement.body)) add("CLAIM_TEXT_MISSING", placementPath, "claim placement requires non-empty claim, statement, text, or body", { route, objectKind: kind, ref: reportRef(stableRef, sealedRefs), placement: reportValue(provenance.placement), section: reportValue(provenance.section) });
+      }
     }
   }
   if (seen.size !== 2 || JSON.stringify([...seen]) !== JSON.stringify(WRITER1_ROUTES)) add("PAGE_TOPOLOGY_INVALID", "/pages", "page route order and topology must be exactly Repair then Installation", { objectKind: "output" });
@@ -499,7 +516,7 @@ async function runArtifactRecoveryV3(root: string, control: Dict): Promise<{ sta
 function validateV3FinalizeWakePins(control: Dict, mode: "validation-only" | "validation-report-only"): string {
   const recoveryPins = control.policy?.recovery;
   const promptDigest = digestWriter1ArtifactRecoveryPrompt("v3");
-  if (control.policy?.mode !== mode || recoveryPins?.recoveryVersion !== ARTIFACT_RECOVERY_V3_FINALIZE_RECOVERY_VERSION || recoveryPins?.priorRecoveryV3ActionRunId !== ARTIFACT_RECOVERY_V3_FINALIZE_ACTION_RUN_ID || Number(recoveryPins?.priorRecoveryV3ArtifactId) !== ARTIFACT_RECOVERY_V3_FINALIZE_ARTIFACT_ID || recoveryPins?.priorRecoveryV3ArtifactDigest !== ARTIFACT_RECOVERY_V3_FINALIZE_ARTIFACT_DIGEST || recoveryPins?.priorRecoveryV3SourceSha !== ARTIFACT_RECOVERY_V3_FINALIZE_SOURCE_SHA || recoveryPins?.priorRecoveryV3AgentId !== ARTIFACT_RECOVERY_AGENT_ID || recoveryPins?.priorRecoveryV3RunId !== ARTIFACT_RECOVERY_V3_FINALIZE_RUN_ID || recoveryPins?.priorRecoveryV3ThreadUrl !== ARTIFACT_RECOVERY_THREAD_URL || recoveryPins?.priorRecoveryV3PromptDigest !== promptDigest || recoveryPins?.priorRecoveryV3FailureCode !== ARTIFACT_RECOVERY_V3_FINALIZE_FAILURE_CODE || recoveryPins?.priorRecoveryV3InputDigest !== ARTIFACT_RECOVERY_V3_INPUT_DIGEST || recoveryPins?.priorBeforeArtifactByteDigest !== ARTIFACT_RECOVERY_V3_FINALIZE_BEFORE_ARTIFACT_DIGEST || recoveryPins?.frozenCopyProjectionDigest !== ARTIFACT_RECOVERY_V3_FINALIZE_COPY_PROJECTION_DIGEST || recoveryPins?.absoluteArtifactPath !== ARTIFACT_RECOVERY_V2_ABSOLUTE_ARTIFACT_PATH || recoveryPins?.apiArtifactPath !== ARTIFACT_RECOVERY_PATH || recoveryPins?.promptDigest !== promptDigest || typeof recoveryPins?.idempotencyKey !== "string" || recoveryPins.idempotencyKey !== `${ARTIFACT_RECOVERY_V3_FINALIZE_RUN_ID}:writer1:artifact-recovery:v3-finalize:${ARTIFACT_RECOVERY_V3_INPUT_DIGEST}:${promptDigest}` || recoveryPins.allowFollowUp !== undefined || recoveryPins.allowResume !== undefined || recoveryPins.allowCreate !== undefined || recoveryPins.send !== undefined || control.policy.allowFollowUp !== undefined || control.policy.allowResume !== undefined || control.policy.allowCreate !== undefined || control.policy.send !== undefined) throw new Error("active v3-finalize wake is missing exact failure, frozen-copy, no-message, or idempotency pins");
+  if (control.policy?.mode !== mode || recoveryPins?.recoveryVersion !== ARTIFACT_RECOVERY_V3_FINALIZE_RECOVERY_VERSION || recoveryPins?.priorRecoveryV3ActionRunId !== ARTIFACT_RECOVERY_V3_FINALIZE_ACTION_RUN_ID || Number(recoveryPins?.priorRecoveryV3ArtifactId) !== ARTIFACT_RECOVERY_V3_FINALIZE_ARTIFACT_ID || recoveryPins?.priorRecoveryV3ArtifactDigest !== ARTIFACT_RECOVERY_V3_FINALIZE_ARTIFACT_DIGEST || recoveryPins?.priorRecoveryV3SourceSha !== ARTIFACT_RECOVERY_V3_FINALIZE_SOURCE_SHA || recoveryPins?.priorRecoveryV3AgentId !== ARTIFACT_RECOVERY_AGENT_ID || recoveryPins?.priorRecoveryV3RunId !== ARTIFACT_RECOVERY_V3_FINALIZE_RUN_ID || recoveryPins?.priorRecoveryV3ThreadUrl !== ARTIFACT_RECOVERY_THREAD_URL || recoveryPins?.priorRecoveryV3PromptDigest !== promptDigest || recoveryPins?.priorRecoveryV3FailureCode !== ARTIFACT_RECOVERY_V3_FINALIZE_FAILURE_CODE || recoveryPins?.priorRecoveryV3InputDigest !== ARTIFACT_RECOVERY_V3_INPUT_DIGEST || recoveryPins?.priorBeforeArtifactByteDigest !== ARTIFACT_RECOVERY_V3_FINALIZE_BEFORE_ARTIFACT_DIGEST || recoveryPins?.currentArtifactByteDigest !== ARTIFACT_RECOVERY_V3_FINALIZE_CURRENT_ARTIFACT_DIGEST || recoveryPins?.currentArtifactUpdatedAt !== ARTIFACT_RECOVERY_V3_FINALIZE_CURRENT_ARTIFACT_UPDATED_AT || recoveryPins?.frozenCopyProjectionDigest !== ARTIFACT_RECOVERY_V3_FINALIZE_COPY_PROJECTION_DIGEST || recoveryPins?.absoluteArtifactPath !== ARTIFACT_RECOVERY_V2_ABSOLUTE_ARTIFACT_PATH || recoveryPins?.apiArtifactPath !== ARTIFACT_RECOVERY_PATH || recoveryPins?.promptDigest !== promptDigest || typeof recoveryPins?.idempotencyKey !== "string" || recoveryPins.idempotencyKey !== `${ARTIFACT_RECOVERY_V3_FINALIZE_RUN_ID}:writer1:artifact-recovery:v3-finalize:${ARTIFACT_RECOVERY_V3_INPUT_DIGEST}:${promptDigest}` || recoveryPins.allowFollowUp !== undefined || recoveryPins.allowResume !== undefined || recoveryPins.allowCreate !== undefined || recoveryPins.send !== undefined || control.policy.allowFollowUp !== undefined || control.policy.allowResume !== undefined || control.policy.allowCreate !== undefined || control.policy.send !== undefined) throw new Error("active v3-finalize wake is missing exact failure, current artifact, frozen-copy, no-message, or idempotency pins");
   if (control.restore !== null || typeof control.wakeNonce !== "string" || !/^[A-Za-z0-9][A-Za-z0-9._-]{15,127}$/u.test(control.wakeNonce)) throw new Error("active v3-finalize wake requires a unique nonce and no restore");
   return promptDigest;
 }
@@ -516,6 +533,9 @@ export interface Writer1ValidationReport {
   artifactSize: number | null;
   artifactUpdatedAt: string | null;
   copyProjectionDigest: string | null;
+  renderedWordsDigest: string | null;
+  stableIdentityDigest: string | null;
+  provenanceMetadataDigest: string | null;
   frozenCopyProjectionDigest: string;
   projectionDigest: string;
   errors: Writer1ValidationDiagnostic[];
@@ -527,6 +547,9 @@ export function buildWriter1ValidationReport(input: {
   artifactSize?: number | null;
   artifactUpdatedAt?: string | null;
   copyProjectionDigest?: string | null;
+  renderedWordsDigest?: string | null;
+  stableIdentityDigest?: string | null;
+  provenanceMetadataDigest?: string | null;
   frozenCopyProjectionDigest: string;
   projectionDigest: string;
   errors: Writer1ValidationDiagnostic[];
@@ -543,6 +566,9 @@ export function buildWriter1ValidationReport(input: {
     artifactSize: input.artifactSize ?? null,
     artifactUpdatedAt: input.artifactUpdatedAt ?? null,
     copyProjectionDigest: input.copyProjectionDigest ?? null,
+    renderedWordsDigest: input.renderedWordsDigest ?? null,
+    stableIdentityDigest: input.stableIdentityDigest ?? null,
+    provenanceMetadataDigest: input.provenanceMetadataDigest ?? null,
     frozenCopyProjectionDigest: input.frozenCopyProjectionDigest,
     projectionDigest: input.projectionDigest,
     errors: input.errors.map((error) => ({ ...error })),
@@ -569,7 +595,7 @@ async function runArtifactValidationReport(root: string, control: Dict): Promise
   }
   if (inspection) {
     if (inspection.stale) errors.push({ code: "ARTIFACT_STALE", path: "/artifact", objectKind: "artifact", expectedRule: "current Cursor artifact must differ from the pinned pre-repair artifact by digest or update time" });
-    if (!inspection.copyProjectionMatches) errors.push({ code: "COPY_PROJECTION_MISMATCH", path: "/copyProjectionDigest", objectKind: "artifact", expectedRule: "non-provenance copy projection must equal the sealed v3 frozen copy projection digest" });
+    if (!inspection.copyProjectionMatches) errors.push({ code: "COPY_PROJECTION_MISMATCH", path: "/copyProjectionDigest", objectKind: "artifact", expectedRule: "historical v3 copy projection is archival only; current cross-v3 preservation is not asserted" });
     errors.push(...collectWriter1ValidationDiagnostics(inspection.raw, payload));
   }
   const report = buildWriter1ValidationReport({
@@ -578,6 +604,9 @@ async function runArtifactValidationReport(root: string, control: Dict): Promise
     artifactSize: inspection?.artifact.size ?? null,
     artifactUpdatedAt: inspection?.artifact.updatedAt ?? null,
     copyProjectionDigest: inspection?.copyProjectionDigest ?? null,
+    renderedWordsDigest: inspection?.renderedWordsDigest ?? null,
+    stableIdentityDigest: inspection?.stableIdentityDigest ?? null,
+    provenanceMetadataDigest: inspection?.provenanceMetadataDigest ?? null,
     frozenCopyProjectionDigest: previousRecoveryV3.copyProjectionDigest,
     projectionDigest: digestOf(payload),
     errors,
@@ -599,13 +628,13 @@ async function runArtifactRecoveryV3Finalize(root: string, control: Dict): Promi
   const previousRecoveryV3: CursorArtifactRecoveryV3FailureBinding = { recoveryVersion: ARTIFACT_RECOVERY_V3_RECOVERY_VERSION, actionRunId: verified.actionRunId, artifactId: verified.artifactId, artifactDigest: verified.artifactDigest, sourceBranch: verified.sourceBranch, sourceSha: verified.sourceSha, agentId: verified.agentId, runId: verified.runId, threadUrl: verified.threadUrl, promptDigest: verified.promptDigest, failureCode: verified.failureCode, inputDigest: verified.inputDigest, beforeArtifact: verified.beforeArtifact, copyProjectionDigest: verified.copyProjectionDigest };
   await writeJson(jsonFile(root, "canary/runtime/prior-recovery-v3-verification.json"), { status: "verified", previousRecoveryV3 });
   await writeJson(jsonFile(root, "canary/runtime/state.json"), { status: "writer1-artifact-v3-finalize-validating", stage: "writer1", recoveryVersion: ARTIFACT_RECOVERY_V3_FINALIZE_RECOVERY_VERSION, runId: sealed.handoff.runId, sealedHandoffDigest: sealed.handoff.resealDigest, priorRunId: verified.prior.runId, priorAgentId: verified.prior.agentId, priorThreadUrl: verified.prior.threadUrl, nextStage: null, writer2Blocked: true, messagesSent: 0 });
-  const result = await finalizeCursorWriterArtifactV3({ receiptStore: createJsonCursorReceiptStore(jsonFile(root, "canary/runtime/cursor-receipts.json")), prior: verified.prior, previousRecoveryV3, recoveryVersion: ARTIFACT_RECOVERY_V3_FINALIZE_RECOVERY_VERSION, promptDigest, validateOutput: (output) => parseAndValidateWriter1Output(output, payload) });
+  const result = await finalizeCursorWriterArtifactV3({ receiptStore: createJsonCursorReceiptStore(jsonFile(root, "canary/runtime/cursor-receipts.json")), prior: verified.prior, previousRecoveryV3, recoveryVersion: ARTIFACT_RECOVERY_V3_FINALIZE_RECOVERY_VERSION, promptDigest, expectedCurrentArtifactByteDigest: ARTIFACT_RECOVERY_V3_FINALIZE_CURRENT_ARTIFACT_DIGEST, expectedCurrentArtifactUpdatedAt: ARTIFACT_RECOVERY_V3_FINALIZE_CURRENT_ARTIFACT_UPDATED_AT, validateOutput: (output) => parseAndValidateWriter1Output(output, payload) });
   const parsed = result.output as Dict;
-  validateCursorArtifactRecoveryV3FinalizeReceipt(result.receipt, verified.prior, previousRecoveryV3, promptDigest, process.env.CURSOR_API_KEY);
+  validateCursorArtifactRecoveryV3FinalizeReceipt(result.receipt, verified.prior, previousRecoveryV3, promptDigest, process.env.CURSOR_API_KEY, ARTIFACT_RECOVERY_V3_FINALIZE_CURRENT_ARTIFACT_DIGEST, ARTIFACT_RECOVERY_V3_FINALIZE_CURRENT_ARTIFACT_UPDATED_AT);
   await writeJson(jsonFile(root, "canary/runtime/writer1-recovery-receipt.json"), result.receipt);
-  await writeJson(jsonFile(root, "canary/runtime/writer1-validation.json"), { status: "valid", mode: "validation-only", schemaVersion: parsed.schemaVersion, routes: parsed.pages.map((page: Dict) => page.url), outputDigest: result.receipt.outputDigest, beforeArtifactDigest: result.receipt.beforeArtifact.sha256, afterArtifactDigest: result.receipt.afterArtifact.sha256, copyProjectionDigest: result.receipt.copyProjectionDigest, metadataChangeDigest: result.receipt.metadataChangeDigest, recoveryRunId: result.receipt.recoveryRunId, agentId: result.receipt.agentId, threadUrl: result.threadUrl, nextStage: null, writer2Blocked: true, messagesSent: 0 });
+  await writeJson(jsonFile(root, "canary/runtime/writer1-validation.json"), { status: "valid", mode: "validation-only", schemaVersion: parsed.schemaVersion, routes: parsed.pages.map((page: Dict) => page.url), outputDigest: result.receipt.outputDigest, beforeArtifactDigest: result.receipt.beforeArtifact.sha256, afterArtifactDigest: result.receipt.afterArtifact.sha256, renderedWordsDigest: result.receipt.renderedWordsDigest, stableIdentityDigest: result.receipt.stableIdentityDigest, provenanceMetadataDigest: result.receipt.provenanceMetadataDigest, crossV3CopyPreservation: result.receipt.crossV3CopyPreservation, recoveryRunId: result.receipt.recoveryRunId, agentId: result.receipt.agentId, threadUrl: result.threadUrl, nextStage: null, writer2Blocked: true, messagesSent: 0 });
   await writeJson(jsonFile(root, "canary/outputs/writer1-output.json"), parsed);
-  await writeJson(jsonFile(root, "canary/runtime/state.json"), { status: "awaiting-architect-qa", stage: "writer1", recoveryVersion: ARTIFACT_RECOVERY_V3_FINALIZE_RECOVERY_VERSION, runId: sealed.handoff.runId, sealedHandoffDigest: sealed.handoff.resealDigest, threadUrl: result.threadUrl, agentId: result.receipt.agentId, recoveryRunId: result.receipt.recoveryRunId, receipt: result.receipt, beforeArtifactDigest: result.receipt.beforeArtifact.sha256, afterArtifactDigest: result.receipt.afterArtifact.sha256, copyProjectionDigest: result.receipt.copyProjectionDigest, nextStage: null, writer2Blocked: true, messagesSent: 0 });
+  await writeJson(jsonFile(root, "canary/runtime/state.json"), { status: "awaiting-architect-qa", stage: "writer1", recoveryVersion: ARTIFACT_RECOVERY_V3_FINALIZE_RECOVERY_VERSION, runId: sealed.handoff.runId, sealedHandoffDigest: sealed.handoff.resealDigest, threadUrl: result.threadUrl, agentId: result.receipt.agentId, recoveryRunId: result.receipt.recoveryRunId, receipt: result.receipt, beforeArtifactDigest: result.receipt.beforeArtifact.sha256, afterArtifactDigest: result.receipt.afterArtifact.sha256, renderedWordsDigest: result.receipt.renderedWordsDigest, stableIdentityDigest: result.receipt.stableIdentityDigest, provenanceMetadataDigest: result.receipt.provenanceMetadataDigest, crossV3CopyPreservation: result.receipt.crossV3CopyPreservation, nextStage: null, writer2Blocked: true, messagesSent: 0 });
   return { status: "awaiting-architect-qa", stage: "writer1", threadUrl: result.threadUrl, recoveryRunId: result.receipt.recoveryRunId };
 }
 

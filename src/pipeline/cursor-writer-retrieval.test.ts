@@ -19,6 +19,10 @@ import {
   validateCursorArtifactRecoveryV3Receipt,
   validateCursorArtifactRecoveryV3FinalizeReceipt,
   writer1CopyProjectionDigest,
+  writer1OutputDigests,
+  writer1RenderedWordsDigest,
+  writer1StableIdentityDigest,
+  writer1ProvenanceMetadataDigest,
   validateCursorWriterFollowUpReceipt,
   type CursorArtifactRecoveryInput,
   type CursorArtifactClient,
@@ -241,6 +245,64 @@ function validateV3Output(raw: string): Record<string, any> {
   return value;
 }
 
+test("final receipt digests separate rendered words, stable identity, and provenance metadata", () => {
+  const base = v3Output(true);
+  const baseline = writer1OutputDigests(base);
+  const wordMutations: Array<(value: any) => void> = [
+    (value) => { value.pages[0].primaryKeyword = "changed"; },
+    (value) => { value.pages[0].title = "changed"; },
+    (value) => { value.pages[0].seoTitle = "changed"; },
+    (value) => { value.pages[0].metaDescription = "changed"; },
+    (value) => { value.pages[0].h1 = "changed"; },
+    (value) => { value.pages[0].body = "changed"; },
+    (value) => { value.pages[0].sections[0].heading = "changed"; },
+    (value) => { value.pages[0].sections[0].body = "changed"; },
+    (value) => { value.pages[0].reviewPlacements[0].quote = "changed"; },
+    (value) => { value.pages[0].reviewPlacements[0].attribution = "changed"; },
+    (value) => { value.pages[0].reviewEvidence[0].text = "changed"; },
+    (value) => { value.pages[0].quotePlacements[0].exactText = "changed"; },
+    (value) => { value.pages[0].claims[0].claim = "changed"; },
+  ];
+  for (const mutate of wordMutations) {
+    const value = structuredClone(base); mutate(value);
+    const next = writer1OutputDigests(value);
+    assert.notEqual(next.renderedWordsDigest, baseline.renderedWordsDigest);
+    assert.equal(next.stableIdentityDigest, baseline.stableIdentityDigest);
+    assert.equal(next.provenanceMetadataDigest, baseline.provenanceMetadataDigest);
+  }
+  const identityMutations: Array<(value: any) => void> = [
+    (value) => { value.pages[0].url = "/changed"; },
+    (value) => { value.pages[0].type = "other"; },
+    (value) => { value.pages[0].prescriptionId = "changed"; },
+    (value) => { value.pages[0].sections[0].id = "changed"; },
+    (value) => { value.pages[0].reviewPlacements[0].reviewId = "changed"; },
+    (value) => { value.pages[0].reviewEvidence[0].evidenceId = "changed"; },
+    (value) => { value.pages[0].claims[0].claimId = "changed"; },
+  ];
+  for (const mutate of identityMutations) {
+    const value = structuredClone(base); mutate(value);
+    const next = writer1OutputDigests(value);
+    assert.equal(next.renderedWordsDigest, baseline.renderedWordsDigest);
+    assert.notEqual(next.stableIdentityDigest, baseline.stableIdentityDigest);
+    assert.equal(next.provenanceMetadataDigest, baseline.provenanceMetadataDigest);
+  }
+  for (const mutate of [
+    (value: any) => { value.pages[0].reviewPlacements[0].provenance.type = "evidence"; },
+    (value: any) => { value.pages[0].reviewPlacements[0].provenance.ref = "changed"; },
+    (value: any) => { value.pages[0].reviewPlacements[0].provenance.placement = "changed"; },
+    (value: any) => { value.pages[0].reviewPlacements[0].provenance.section = "changed"; },
+  ]) {
+    const value = structuredClone(base); mutate(value);
+    const next = writer1OutputDigests(value);
+    assert.equal(next.renderedWordsDigest, baseline.renderedWordsDigest);
+    assert.equal(next.stableIdentityDigest, baseline.stableIdentityDigest);
+    assert.notEqual(next.provenanceMetadataDigest, baseline.provenanceMetadataDigest);
+  }
+  assert.equal(writer1RenderedWordsDigest(base), baseline.renderedWordsDigest);
+  assert.equal(writer1StableIdentityDigest(base), baseline.stableIdentityDigest);
+  assert.equal(writer1ProvenanceMetadataDigest(base), baseline.provenanceMetadataDigest);
+});
+
 function artifactBindingFor(bytes: Buffer, updatedAt: string): any {
   const sourceUrl = "https://bucket.s3.us-east-1.amazonaws.com/opaque-key?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Signature=test";
   const download = artifactDownloadResult(artifactAgentId, "artifacts/writer1-output.json", bytes, sourceUrl);
@@ -306,23 +368,25 @@ test("v3-finalize validates the existing artifact with zero Cursor messages", as
     async download(id, artifactPath) { state.downloads += 1; return artifactDownloadResult(id, artifactPath, after, "https://bucket.s3.us-east-1.amazonaws.com/opaque-key?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Signature=test"); },
   };
   const prior = { ...artifactPrior, actionRunId: "32797811881", artifactId: 9545486318, runId: "run-47a109e2-4fd4-48df-a727-8a92a76cc472", sourceSha: "6d5f9e0f65af98185b6827b445cbfeff74e88ce7", promptDigest: digestWriter1ArtifactRecoveryPrompt("v3") };
-  const result = await finalizeCursorWriterArtifactV3ForTest({ env, receiptStore: createMemoryCursorReceiptStore(), prior, previousRecoveryV3, recoveryVersion: "words-writer1-artifact-recovery/v3-finalize", promptDigest: digestWriter1ArtifactRecoveryPrompt("v3"), artifactClient: client, validateOutput: (output) => validateV3Output(String(output)) });
+  const expectedCurrentArtifact = artifactBindingFor(after, "2026-08-25T01:30:42.000Z");
+  const result = await finalizeCursorWriterArtifactV3ForTest({ env, receiptStore: createMemoryCursorReceiptStore(), prior, previousRecoveryV3, recoveryVersion: "words-writer1-artifact-recovery/v3-finalize", promptDigest: digestWriter1ArtifactRecoveryPrompt("v3"), expectedCurrentArtifactByteDigest: expectedCurrentArtifact.byteDigest, expectedCurrentArtifactUpdatedAt: expectedCurrentArtifact.updatedAt, artifactClient: client, validateOutput: (output) => validateV3Output(String(output)) });
   assert.deepEqual(state, { lists: 1, downloads: 1 });
   assert.equal(result.receipt.jobId, prior.runId);
   assert.equal(result.receipt.recoveryRunId, prior.runId);
   assert.equal(result.receipt.mode, "validation-only-artifact-recovery");
-  assert.equal((result.receipt as any).copyProjectionDigest, previousRecoveryV3.copyProjectionDigest);
-  validateCursorArtifactRecoveryV3FinalizeReceipt(result.receipt, prior, previousRecoveryV3, digestWriter1ArtifactRecoveryPrompt("v3"), env.CURSOR_API_KEY);
+  assert.equal((result.receipt as any).crossV3CopyPreservation, "not-asserted");
+  validateCursorArtifactRecoveryV3FinalizeReceipt(result.receipt, prior, previousRecoveryV3, digestWriter1ArtifactRecoveryPrompt("v3"), env.CURSOR_API_KEY, expectedCurrentArtifact.byteDigest, expectedCurrentArtifact.updatedAt);
 });
 
 test("v3-finalize fails closed on stale or changed copy and cannot message", async () => {
   const before = Buffer.from(JSON.stringify(v3Output(true)), "utf8");
   const changed = Buffer.from(JSON.stringify(v3Output(true, "word")), "utf8");
+  const expectedCurrentArtifact = artifactBindingFor(before, "2026-08-25T01:30:42.000Z");
   const makePrevious = (bytes: Buffer): CursorArtifactRecoveryV3FailureBinding => ({ recoveryVersion: "words-writer1-artifact-recovery/v3", actionRunId: "32797811881", artifactId: 9545486318, artifactDigest: "sha256:23eac7a38caf588f383e424bd7bf39e5246f5634c7c06866d8e94250e6fe710e", sourceBranch: "architect/360-words-canary", sourceSha: "6d5f9e0f65af98185b6827b445cbfeff74e88ce7", agentId: artifactAgentId, runId: "run-47a109e2-4fd4-48df-a727-8a92a76cc472", threadUrl: artifactThreadUrl, promptDigest: digestWriter1ArtifactRecoveryPrompt("v3"), failureCode: "WRITER1_OUTPUT_INVALID", inputDigest: artifactPrior.inputDigest, beforeArtifact: artifactBindingFor(bytes, "2026-08-25T00:56:02.000Z"), copyProjectionDigest: writer1CopyProjectionDigest(JSON.parse(bytes.toString("utf8"))) });
   for (const [label, current, expected] of [["stale", before, before], ["copy changed", changed, before]] as const) {
     const state = { lists: 0, downloads: 0 }; const client: CursorArtifactClient = { async list() { state.lists += 1; return [{ path: "artifacts/writer1-output.json", size: current.length, updatedAt: "2026-08-25T00:56:02.000Z" }]; }, async download(id, artifactPath) { state.downloads += 1; return artifactDownloadResult(id, artifactPath, current, "https://bucket.s3.us-east-1.amazonaws.com/opaque-key?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Signature=test"); } };
     const store = createMemoryCursorReceiptStore(); const prior = { ...artifactPrior, actionRunId: "32797811881", artifactId: 9545486318, runId: "run-47a109e2-4fd4-48df-a727-8a92a76cc472", sourceSha: "6d5f9e0f65af98185b6827b445cbfeff74e88ce7", promptDigest: digestWriter1ArtifactRecoveryPrompt("v3") };
-    await assert.rejects(() => finalizeCursorWriterArtifactV3ForTest({ env, receiptStore: store, prior, previousRecoveryV3: makePrevious(expected), recoveryVersion: "words-writer1-artifact-recovery/v3-finalize", promptDigest: digestWriter1ArtifactRecoveryPrompt("v3"), artifactClient: client, validateOutput: (output) => validateV3Output(String(output)) }), label === "stale" ? /stale/u : /copy projection changed/u);
+    await assert.rejects(() => finalizeCursorWriterArtifactV3ForTest({ env, receiptStore: store, prior, previousRecoveryV3: makePrevious(expected), recoveryVersion: "words-writer1-artifact-recovery/v3-finalize", promptDigest: digestWriter1ArtifactRecoveryPrompt("v3"), expectedCurrentArtifactByteDigest: expectedCurrentArtifact.byteDigest, expectedCurrentArtifactUpdatedAt: expectedCurrentArtifact.updatedAt, artifactClient: client, validateOutput: (output) => validateV3Output(String(output)) }), label === "stale" ? /stale|current artifact binding/u : /current artifact binding/u);
     assert.deepEqual(state, { lists: 1, downloads: 1 }, label);
     assert.equal([...store.records.values()].some((value: any) => value.recoveryVersion === "words-writer1-artifact-recovery/v3-finalize"), false, label);
   }
