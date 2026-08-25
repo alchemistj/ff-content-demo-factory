@@ -1,6 +1,6 @@
 {
   "schemaVersion": "words-canary-control/v1",
-  "wakeNonce": "W1-APPROVAL-SEAL-31934495-20260825-R2",
+  "wakeNonce": "DORMANT",
   "requestedBy": "architect",
   "stage": "writer1",
   "runId": "32717620900",
@@ -19,41 +19,6 @@
     "fast": false,
     "provider": "cursor-sdk",
     "model": "cursor-grok-4.6-high",
-    "stopAfter": "writer1-approval-sealed",
-    "mode": "writer1-approval-seal",
-    "recovery": {
-      "recoveryVersion": "verified-writer1-approval-seal/v1",
-      "sourceBranch": "architect/360-words-canary-verified",
-      "sourceSha": "3193449563cb764b077c89d5e8ea9f175a8edac1",
-      "actionRunId": "32845845871",
-      "artifactId": 9562364448,
-      "artifactZipDigest": "sha256:147dad95aa6985a3991d7e12212921b18cbbd71a65d2a614f413444aaababade",
-      "artifactZipSize": 33290,
-      "allowCreate": false,
-      "allowResume": false,
-      "allowFollowUp": false,
-      "maxFollowUps": 0,
-      "independentQaArtifacts": [
-        {
-          "role": "content",
-          "path": "qa/architect/writer1-content.json",
-          "size": 1628,
-          "digest": "sha256:9d4fc214be95e3474f589aa5d448dcd13d416e9747de6fb47ff1c47788fa1cf9",
-          "decision": "PASS"
-        },
-        {
-          "role": "evidence",
-          "path": "qa/architect/writer1-evidence.json",
-          "size": 1629,
-          "digest": "sha256:809760e2750b7c5260e80fd5b00badfd2ce9fdb492ef86d19f7e6ffd16c6a8df",
-          "decision": "PASS"
-        }
-      ],
-      "approval": {
-        "path": "qa/architect/writer1-approval.json",
-        "size": 2973,
-        "digest": "sha256:c6ccd5d0ac657872cdcbb117099d878a4d4b9f121c682d56e8d52dc1258b87c2"
-      }
-    }
+    "stopAfter": "awaiting-architect-qa"
   }
 }
