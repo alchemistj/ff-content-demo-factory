@@ -70,6 +70,22 @@ jobs:
           test -n "$GH_TOKEN"
           printf '%s' "$COMMENT_BODY" > canary/phase-a/cursor-terminal-comment.md
           node src/collect-cursor-terminal-result.js canary/phase-a/current-head-gate1-pending.json canary/phase-a/cursor-terminal-comment.md canary/phase-a/cursor-terminal-result.json "$AUTHOR_LOGIN" "$COMMENT_ID" "$COMMENT_URL"
+      - name: Record in-motion ledger state after validated Cursor receipt
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          COMMENT_ID: ${{ github.event.comment.id }}
+          COMMENT_URL: ${{ github.event.comment.html_url }}
+          REPOSITORY: ${{ github.repository }}
+        run: |
+          test -n "$GH_TOKEN"
+          node - <<'NODE'
+          const fs=require('node:fs'); const { markerFor, markerBody }=require('./src/factory/github-ledger');
+          const p=JSON.parse(fs.readFileSync('canary/phase-a/current-head-gate1-pending.json','utf8')); const result=JSON.parse(fs.readFileSync('canary/phase-a/cursor-terminal-result.json','utf8'));
+          const marker=markerFor({kind:'resume',repository:process.env.REPOSITORY,issueNumber:process.env.ISSUE_NUMBER,prNumber:p.dispatchPacket.prNumber,branch:p.dispatchPacket.branch,checkedOutSha:p.envelope.checkedOutSha,handoffId:p.handoffId,dispatchKey:p.envelope.dispatchKey,dispatchDigest:p.envelope.dispatchDigest,resultId:process.env.COMMENT_ID,inputDigest:result.receipt.inputDigest,outputDigest:result.receipt.outputDigest,threadUrl:result.receipt.threadUrl,model:result.bundle.model,commentId:process.env.COMMENT_ID,commentUrl:process.env.COMMENT_URL,status:'in_motion'});
+          fs.writeFileSync('canary/phase-a/cursor-in-motion-ledger-marker.md',markerBody(marker));
+          NODE
+          GH_TOKEN="$GH_TOKEN" gh api "repos/$REPOSITORY/issues/$ISSUE_NUMBER/comments" --method POST -f body="$(cat canary/phase-a/cursor-in-motion-ledger-marker.md)"
       - name: Consume durable resume ledger claim after validation
         env:
           GH_TOKEN: ${{ github.token }}
