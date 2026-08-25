@@ -7,7 +7,7 @@ import { join } from "node:path";
 import { digestOf } from "../../src/contracts/digests.js";
 import { createMemoryCursorReceiptStore, recoverCursorWriterCorrectionV2ForTest, validateCursorWriterCorrectionReceipt, OFFICIAL_CURSOR_MODEL, REQUIRED_CURSOR_MODEL, type CursorArtifactClient, type CursorTestTransport, type CursorGitHubBaselineInput } from "../../src/pipeline/cursor-writer.js";
 import { buildWriter1GithubBaselineCorrectionPrompt } from "../../scripts/360-words-recovery-prompt.mjs";
-import { materializeGithubWriter1Baseline, verifyGithubWriter1Baseline, VERIFIED_WRITER1_GITHUB_BASELINE } from "../../scripts/360-words-github-baseline.mjs";
+import { materializeGithubWriter1Baseline, projectVerifiedWriter1Handoff, verifyGithubWriter1Baseline, VERIFIED_WRITER1_GITHUB_BASELINE } from "../../scripts/360-words-github-baseline.mjs";
 
 const agentId = "bc-2486f645-c31c-4532-8145-fbe3af1d45a8";
 const threadUrl = `https://cursor.com/agents/${agentId}`;
@@ -68,6 +68,18 @@ test("downloader-equivalent GitHub fixture emits the metadata schema consumed by
   } finally {
     await rm(outputRoot, { recursive: true, force: true });
   }
+});
+
+test("verified baseline reader projects only the sealed handoff and preserves approved routes and non-body identity", () => {
+  const raw = bytes(output()); const expected = expectedFor(raw); const handoff = { resealDigest: sealedHandoffDigest, pages: [{ type: "Home", url: "/" }, { type: "Service", url: "/garage-door-repair", id: "Service:/garage-door-repair", canonicalIntentId: "garage-door-repair" }, { type: "Service", url: "/garage-door-installation", id: "Service:/garage-door-installation", canonicalIntentId: "garage-door-installation" }, { type: "Contact", url: "/contact" }] };
+  const envelope = { handoff, manifest: { pageSetDigest: "sha256:manifest" }, bridge: { envelopeDigest: "sha256:bridge" } };
+  const before = structuredClone(envelope);
+  const projected = projectVerifiedWriter1Handoff(envelope);
+  assert.strictEqual(projected, envelope.handoff);
+  assert.deepEqual(envelope, before);
+  const checked = verifyGithubWriter1Baseline({ metadata: { repository: expected.repository, commit: sourceCommit, path: expected.path, blobSha: expected.blobSha, size: expected.size }, bytes: raw, sealed: projected, expected });
+  assert.deepEqual((checked.output as any).pages.map((page: any) => page.url), ["/garage-door-repair", "/garage-door-installation"]);
+  assert.deepEqual((checked.output as any).pages.map((page: any) => page.prescriptionId), ["Service:/garage-door-repair", "Service:/garage-door-installation"]);
 });
 
 test("v2 correction uses GitHub baseline when Cursor has no prior artifact, sends once, binds untrusted before-copy separately from new model receipt, and retries without a second send", async () => {

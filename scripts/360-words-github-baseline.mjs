@@ -19,6 +19,18 @@ const sha256 = (bytes) => `sha256:${createHash("sha256").update(bytes).digest("h
 const gitBlobSha = (bytes) => createHash("sha1").update(Buffer.concat([Buffer.from(`blob ${bytes.length}\0`), bytes])).digest("hex");
 const fail = (message) => { throw new Error(`GITHUB_WRITER1_BASELINE_INVALID: ${message}`); };
 
+/**
+ * The verified runner passes the complete validated sealed envelope. The
+ * baseline schema is bound to its immutable handoff member, not to the
+ * envelope wrapper. Require that exact shape explicitly; never synthesize or
+ * rebind a prescription ID here.
+ */
+export function projectVerifiedWriter1Handoff(sealedEnvelope) {
+  const handoff = sealedEnvelope?.handoff;
+  if (!handoff || !Array.isArray(handoff.pages)) fail("validated sealed envelope is missing its handoff pages");
+  return handoff;
+}
+
 function exactShape(parsed, sealed) {
   if (!parsed || parsed.schemaVersion !== "words-writer1-output/v1" || !Array.isArray(parsed.pages) || parsed.pages.length !== 2) fail("schema must be words-writer1-output/v1 with exactly two pages");
   for (const [index, route] of ROUTES.entries()) {

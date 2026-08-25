@@ -12,7 +12,7 @@ import {
 } from "../src/pipeline/cursor-writer.js";
 import { digestOf } from "../src/contracts/digests.js";
 import { buildWriter1ArtifactRecoveryPrompt, digestWriter1ArtifactRecoveryPrompt, buildWriter1GithubBaselineCorrectionPrompt, digestWriter1GithubBaselineCorrectionPrompt } from "./360-words-recovery-prompt.mjs";
-import { verifyGithubWriter1Baseline, VERIFIED_WRITER1_GITHUB_BASELINE } from "./360-words-github-baseline.mjs";
+import { projectVerifiedWriter1Handoff, verifyGithubWriter1Baseline, VERIFIED_WRITER1_GITHUB_BASELINE } from "./360-words-github-baseline.mjs";
 import { parseAndValidateWriter1Output, validateSealed, writer1Projection } from "./360-words-canary.js";
 import { runVerifiedWriter2Production, runVerifiedWriter3Production } from "../src/pipeline/verified-words-stages.js";
 
@@ -58,7 +58,7 @@ function baselineControlMetadata(value: CursorGitHubBaselineInput): Dict {
 function verifiedBaseline(root: string, sealed: Dict, projection: Dict): CursorGitHubBaselineInput {
   const metadata = readJson(root, "canary/inputs/github-writer1-baseline/metadata.json");
   const bytes = readFileSync(jsonFile(root, "canary/inputs/github-writer1-baseline/writer1-output.json"));
-  const verified = verifyGithubWriter1Baseline({ metadata, bytes, sealed, expected: VERIFIED_WRITER1_BASELINE });
+  const verified = verifyGithubWriter1Baseline({ metadata, bytes, sealed: projectVerifiedWriter1Handoff(sealed), expected: VERIFIED_WRITER1_BASELINE });
   const output = parseAndValidateWriter1Output(verified.raw, projection);
   return { ...verified, output, outputDigest: digestOf(output) } as CursorGitHubBaselineInput;
 }
