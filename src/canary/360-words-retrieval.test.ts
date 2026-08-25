@@ -6,7 +6,7 @@ import { createHash } from "node:crypto";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { buildWriter1QuarantineMetadata, buildWriter1ValidationReport, collectWriter1ValidationDiagnostics, parseAndValidateFreshWriter1Output, parseAndValidateWriter1Output, normalizeAndValidateWriter1Output, readApprovedWriter1OutputForWriter2, quarantineWriter1Artifact, validateSealed, writer1Projection, Writer1OutputRecoveryError } from "../../scripts/360-words-canary.js";
-import { buildWriter1PointerLedgerNormalization, normalizeWriter1PointerLedger, writer1OutputDigests, writer1ProvenanceMetadataDigest, writer1SemanticRenderedCopyDigest, writer1StableIdentityDigest, WRITER1_WORD_KEYS, type CursorArtifactBinding } from "../../src/pipeline/cursor-writer.js";
+import { buildWriter1PointerLedgerNormalization, normalizeWriter1PointerLedger, writer1OutputDigests, writer1ProvenanceMetadataDigest, writer1RenderedWordsDigest, writer1SemanticRenderedCopyDigest, writer1StableIdentityDigest, WRITER1_WORD_KEYS, type CursorArtifactBinding } from "../../src/pipeline/cursor-writer.js";
 import { buildWriter1PointerLedgerFixture } from "../../fixtures/writer1-pointer-ledger.js";
 
 const projection = {
@@ -409,6 +409,27 @@ test("normalize-quarantine refuses bytes whose errors are not limited to reviewE
   }
 });
 
+const REJECTED_RENDERED_WORDS_DIGEST = "sha256:165d310ae1e30225b6278cc0fbde7d2cab23a60f186157c59734257519c01f89";
+
+test("fresh committed Writer1 copy validates, is not the rejected lineage, and keeps Writer2 blocked", () => {
+  const outputPath = join(process.cwd(), "canary/outputs/writer1-output.json");
+  const markdownPath = join(process.cwd(), "canary/outputs/writer1-service-pages.md");
+  assert.equal(existsSync(outputPath), true);
+  assert.equal(existsSync(markdownPath), true);
+  const raw = readFileSync(outputPath, "utf8");
+  const parsed = parseAndValidateFreshWriter1Output(JSON.parse(raw), realProjection);
+  const digest = writer1RenderedWordsDigest(parsed);
+  assert.notEqual(digest, REJECTED_RENDERED_WORDS_DIGEST);
+  assert.equal(parsed.pages.length, 2);
+  assert.deepEqual(parsed.pages.map((page: Record<string, any>) => page.url), ["/garage-door-repair", "/garage-door-installation"]);
+  const markdown = readFileSync(markdownPath, "utf8");
+  assert.match(markdown, /Garage Door Repair/);
+  assert.match(markdown, /Garage Door Installation/);
+  assert.doesNotMatch(markdown, /(?:>= 800|\bat least 800\b|exceed(?:s|ing)? 800)/u);
+  const quotes = [...markdown.matchAll(/^> (?!—).+$/gmu)].map((match) => match[0]);
+  assert.equal(new Set(quotes).size, quotes.length, "each quoted review must appear once");
+});
+
 test("committed live canary state cannot claim Writer2 approval before Architect QA", () => {
   const qaPath = join(process.cwd(), "canary/runtime/architect-qa-writer1.json");
   const hasQualityQa = existsSync(qaPath) && (() => {
@@ -437,15 +458,16 @@ test("committed live canary state cannot claim Writer2 approval before Architect
     }
     return;
   }
-  for (const output of ["writer1-output.json", "writer2-output.json", "writer3-output.json", "human-gate-2.md"]) {
-    assert.equal(existsSync(join(process.cwd(), "canary/outputs", output)), false, `live output ${output} must not be committed before Architect QA`);
+  for (const output of ["writer2-output.json", "writer3-output.json", "human-gate-2.md"]) {
+    assert.equal(existsSync(join(process.cwd(), "canary/outputs", output)), false, `live output ${output} must not be committed before Writer 1 Architect QA`);
   }
-  for (const runtime of ["writer1-validation.json", "writer1-recovery-receipt.json", "writer1-pointer-ledger-normalization.json"]) {
+  for (const runtime of ["writer1-validation.json", "writer1-recovery-receipt.json", "writer1-pointer-ledger-normalization.json", "architect-qa-writer1.json"]) {
     const runtimePath = join(process.cwd(), "canary/runtime", runtime);
     if (!existsSync(runtimePath)) continue;
     const value = JSON.parse(readFileSync(runtimePath, "utf8")) as Record<string, any>;
     assert.notEqual(value.adaptedOutputApproved, true);
     assert.notEqual(value.writer2Blocked, false);
     assert.notEqual(value.status, "awaiting-human-gate-2");
+    if (runtime === "architect-qa-writer1.json") assert.notEqual(value.decision, "accept");
   }
 });

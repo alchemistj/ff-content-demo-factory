@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "words-writer1-fresh-copy/v1",
+  "status": "writer1-copy-authored",
+  "writer2Blocked": true,
+  "rawRejectedLineageRestored": false,
+  "renderedWordsDigest": "sha256:07a6effe379b303040126e02863ccb0a5879d53e3450938726a28e76b03c645b",
+  "rejectedRenderedWordsDigest": "sha256:165d310ae1e30225b6278cc0fbde7d2cab23a60f186157c59734257519c01f89",
+  "repairUsefulBodyWords": 840,
+  "installationUsefulBodyWords": 689,
+  "quotedReviewIds": {
+    "repair": [
+      "Ci9DQUlRQUNvZENodHljRjlvT201TVdWZGZSak00ZUhSQ2VVdHNYMWxFYTBFdE9XYxAB",
+      "Ci9DQUlRQUNvZENodHljRjlvT2xoRE1HZ3lUMWRpVWt3d1dsVXhjVE5XZEc1VWVuYxAB",
+      "ChdDSUhNMG9nS0VQcUM5dGpxNjRxcHJBRRAB",
+      "Ci9DQUlRQUNvZENodHljRjlvT2taQlh6VlZabU5OWjFKc2JISklTa1pXUlVwVGVuYxAB"
+    ],
+    "installation": [
+      "Ci9DQUlRQUNvZENodHljRjlvT25jM2NVNTZlVzF0YVhCNVdXSlVZVEpmYW05UExYYxAB",
+      "Ci9DQUlRQUNvZENodHljRjlvT2pBMU5rSktSMmhHV1RKb2NVdE1TVXBOVFRsS01YYxAB",
+      "Ci9DQUlRQUNvZENodHljRjlvT2xjeVFtOTRMV3BTTUc1Qk5VeFNhVTlJYW1GcFMwRRAB",
+      "ChZDSUhNMG9nS0VJNng0b1B1N3NEY0ZBEAE"
+    ]
+  },
+  "threadUrl": "https://cursor.com/agents/bc-2486f645-c31c-4532-8145-fbe3af1d45a8",
+  "model": "cursor-grok-4.6-high",
+  "fast": false,
+  "effort": "high",
+  "mergeOccurred": false,
+  "deploymentOccurred": false
+}
