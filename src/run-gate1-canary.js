@@ -11,6 +11,7 @@ const { validateBundle, validateJobReceipt, canonicalThreadUrl, createDispatchPa
 const { createPendingHandoff, validatePendingHandoff, retrievePhaseAHandoff, claimResumeAtomic } = require('./factory/handoff');
 const { createSealed360Adapters } = require('./factory/sealed-evidence');
 const { actionProofFromEnvironment } = require('./factory/orchestrator');
+const { SEALED_PROOF_SCOPE, appendSealedReplayTruth, sealedProofLimitations } = require('./factory/exact-head-proof-package');
 
 function bundleDigest(bundle) { return digest({ ...bundle, inputManifestDigest: undefined }); }
 
@@ -127,8 +128,9 @@ async function runCurrentHeadGate1Canary({ root, requestFile, selectionFile, qaF
   });
   const proof = {
     schemaVersion: 'factory-current-head-gate1-canary-v1',
-    proofScope: 'fresh-current-head-gate1-canary-only',
+    proofScope: sealedEvidence ? SEALED_PROOF_SCOPE : 'fresh-current-head-gate1-canary-only',
     integratedFactoryReadiness: false,
+    liveConnectorProven: false,
     expectedHeadSha: assertedHeadSha,
     checkedOutSha: assertedHeadSha,
     headAssertion: true,
@@ -149,11 +151,13 @@ async function runCurrentHeadGate1Canary({ root, requestFile, selectionFile, qaF
     cursorReceiptBindings: boundReceipts,
     gate1State: run.status,
     laterStageArtifacts: Object.keys(run.artifacts).filter((key) => ['copy', 'website', 'build', 'deploy'].some((word) => key.toLowerCase().includes(word))),
-    limitations: ['This proves a fresh current-head path through Human Gate 1 only.', 'It does not prove post-Gate-1 writer lanes, final copy QA, or website build readiness.'],
+    limitations: sealedEvidence ? sealedProofLimitations() : ['This proves a fresh current-head path through Human Gate 1 only.', 'It does not prove post-Gate-1 writer lanes, final copy QA, or website build readiness.', 'The live GitHub cursor[bot] terminal-bundle to automatic phase-B connector path remains unproven unless a trusted terminal receipt is bound.'],
   };
   fs.mkdirSync(path.join(root, 'canary', 'outputs'), { recursive: true });
+  const markdown = sealedEvidence ? appendSealedReplayTruth(run.artifacts.gate1.markdown) : run.artifacts.gate1.markdown;
+  run.artifacts.gate1.markdown = markdown;
   fs.writeFileSync(path.join(root, 'canary', 'outputs', 'current-head-gate1-proof.json'), `${JSON.stringify(proof, null, 2)}\n`);
-  fs.writeFileSync(path.join(root, 'canary', 'outputs', 'gate1.md'), run.artifacts.gate1.markdown);
+  fs.writeFileSync(path.join(root, 'canary', 'outputs', 'gate1.md'), markdown);
   return { proof, state: stage3.state };
 }
 

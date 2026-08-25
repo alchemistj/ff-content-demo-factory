@@ -395,4 +395,5 @@ test('tenth correction workflow contracts automatic retrieval, sealed integrated
   assert.match(runner, /retrievePhaseAHandoff/);
   assert.match(runner, /FACTORY_HANDOFF_CAS_FILE/);
   assert.match(runner, /createSealed360Adapters/);
+  assert.equal(fs.existsSync('.github/workflows/exact-head-sealed-360-proof.yml'), true);
 });

@@ -6,7 +6,8 @@
   "scripts": {
     "test": "node --test",
     "run-one": "node src/run-one.js",
-    "reseal-checkpoint": "node scripts/reseal-checkpoint.js"
+    "reseal-checkpoint": "node scripts/reseal-checkpoint.js",
+    "exact-head-sealed-360-proof": "node scripts/run-exact-head-sealed-360-proof.js"
   },
   "engines": { "node": ">=22.13.0" },
   "dependencies": { "@cursor/sdk": "^1.0.24" }

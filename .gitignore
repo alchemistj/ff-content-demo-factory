@@ -4,3 +4,12 @@ node_modules/
 !.env.example
 state/
 *.tmp
+canary/state/
+canary/outputs/gate1.md
+canary/outputs/current-head-gate1-proof.json
+canary/outputs/exact-head-proof.json
+canary/outputs/source-evidence-receipt-ledger.json
+canary/outputs/four-page-prescription.json
+canary/outputs/exact-head-sealed-360-proof-package.json
+canary/outputs/360-current-head-gate1-dispatch-packet.json
+canary/outputs/current-head-gate1-pending.json

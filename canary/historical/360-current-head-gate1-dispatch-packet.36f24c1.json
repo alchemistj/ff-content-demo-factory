@@ -2,6 +2,10 @@
   "schemaVersion": "factory-360-current-head-gate1-dispatch-packet-v1",
   "preparedOnly": true,
   "executed": false,
+  "sealedReplayExecuted": false,
+  "liveConnectorExecuted": false,
+  "notCurrentProof": true,
+  "historicalReviewedHeadSha": "36f24c1ed15b871d52f1ec0b6fd797ae5e2461e6",
   "repository": "alchemistj/ff-content-demo-factory",
   "issueNumber": 8,
   "prNumber": 1,
@@ -75,6 +79,7 @@
     "dispatchDigest": "sha256:c2628643708df96b4e4980f4791f631d8432ada98a3f759f0675032eeb8c55e1"
   },
   "limitations": [
+    "Historical prepared packet bound to reviewed head 36f24c1ed15b871d52f1ec0b6fd797ae5e2461e6; not current-head proof.",
     "Prepared from byte-identical approved Human Gate 1 lineage only; no workflow was dispatched.",
     "No Cursor agent, vendor, production writing, or live canary execution occurred.",
     "This packet is not proof of integrated factory readiness or post-Gate-1 writer quality."
