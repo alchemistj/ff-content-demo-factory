@@ -80,6 +80,15 @@ function validateOwnedEvidence(items, host, label) {
   }
 }
 
+function validateOwnedUrlList(items, host, label) {
+  if (!Array.isArray(items)) throw new Error(`${label} must be an array`);
+  for (const sourceUrl of items) {
+    let sourceHost;
+    try { sourceHost = new URL(sourceUrl).hostname.replace(/^www\./, '').toLowerCase(); } catch { throw new Error(`${label} contains an invalid URL`); }
+    if (sourceHost !== host) throw new Error(`${label} URL is not bound to the inspected business-owned domain`);
+  }
+}
+
 function normalizeWebsiteAudit(result, candidate) {
   if (!result || typeof result.website !== 'string' || !result.website.trim()) throw new Error('Website audit must identify the inspected business-owned website');
   let resultHost;
@@ -97,6 +106,7 @@ function normalizeWebsiteAudit(result, candidate) {
   if (result.siteCopyEvidence != null) validateOwnedEvidence(result.siteCopyEvidence, resultHost, 'Website site-copy evidence');
   if (result.ownedGraphicEvidence != null) validateOwnedEvidence(result.ownedGraphicEvidence, resultHost, 'Website graphic evidence');
   if (result.graphicsInspection?.findings != null) validateOwnedEvidence(result.graphicsInspection.findings, resultHost, 'Website graphics inspection');
+  if (result.publicImageUrls != null) validateOwnedUrlList(result.publicImageUrls, resultHost, 'Website public image URLs');
   const siteCopyEvidence = result.siteCopyEvidence || evidence.filter((item) => /copy|service|nap|contact|website/i.test(String(item.type || item.kind || '')));
   const ownedGraphicEvidence = result.ownedGraphicEvidence || evidence.filter((item) => /graphic|flyer|image|gallery|marketing/i.test(String(item.type || item.kind || '')));
   const findings = result.graphicsInspection?.findings || result.graphicsFindings || images.map((image) => ({ url: image.url || image.src || null, kind: image.kind || 'website-image', provenance: image.provenance || null }));
