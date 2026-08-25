@@ -29,7 +29,7 @@ Directly readable words package for Swifts Roofing. Natural reading order is Hom
 - Gate 1 prescription Actions: https://github.com/alchemistj/ff-content-demo-factory/actions/runs/32839482403
 - Words-factory stack: https://github.com/alchemistj/ff-content-demo-factory/pull/4
 - This Cursor run: https://cursor.com/agents/bc-33582479-099c-48a1-9f7a-28e6c61131c2
-- Head SHA: `f8bcd6fb9c46b7438bb3d9bd98582cb0f377daff`
+- Head SHA: `8e230143979cb07bc8d4cf5e1591e8f63fe157e5`
 - No merge or deployment occurred.
 
 ## Test and validation results
