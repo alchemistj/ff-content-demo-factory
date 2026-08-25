@@ -11,7 +11,7 @@ test('owned-domain provenance rejects missing candidate domains, file URLs, conf
   assert.throws(() => normalizeWebsiteAudit({ website: 'file:///tmp/site', evidence: [], images: [] }, { website: 'https://owned.example' }), /http or https|invalid/);
   assert.throws(() => normalizeWebsiteAudit({ website: 'https://owned.example', provenance: { website: 'https://other.example' }, evidence: [], images: [] }, { website: 'https://owned.example' }), /not bound|conflicts/);
   assert.throws(() => normalizeWebsiteAudit({ website: 'https://owned.example', evidence: [{ sourceUrl: 'https://other.example/proof' }], images: [] }, { website: 'https://owned.example' }), /not bound/);
-  const normalized = normalizeWebsiteAudit({ website: 'https://www.owned.example', evidence: [{ sourceUrl: 'https://owned.example/services', provenance: { sourceUrl: 'https://owned.example/services' } }], images: [] }, { website: 'https://owned.example' });
+  const normalized = normalizeWebsiteAudit({ website: 'https://www.owned.example', evidence: [{ sourceUrl: 'https://owned.example/services', provenance: { sourceUrl: 'https://www.owned.example/services' } }], images: [] }, { website: 'https://owned.example' });
   assert.equal(normalized.website, 'https://www.owned.example');
 });
 
