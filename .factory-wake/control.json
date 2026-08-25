@@ -1,0 +1,6 @@
+{
+  "wakeId": "swifts-roofing-stage1-2026-08-25-01",
+  "mode": "stage1",
+  "seedDiscovery": "requests/swifts-roofing.seeded-discovery.json",
+  "requestedBy": "architect"
+}
