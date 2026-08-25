@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import { execFileSync } from "node:child_process";
+import { digestWriter1ArtifactRecoveryPrompt } from "./360-words-recovery-prompt.mjs";
 
 export const CONTROL_PATH = ".factory-wake/360-words-control.json";
 export const DORMANT_NONCE = "DORMANT";
@@ -27,10 +28,8 @@ export const EXPECTED_RECOVERY_V2 = Object.freeze({
   priorRecoverySourceSha: "6cf9b42e43e5728614a9b7302a8791e527197e3d",
   priorRecoveryArtifactDigest: "sha256:2d1d1c0d281917025be80898ab03c94171d59d1e2920ecf540b241f666464502",
   priorRecoveryFailureCode: "CURSOR_ARTIFACT_MISSING",
-  priorRecoveryPromptDigest: "sha256:1b9726fb288041c08ff2a58f2857ac209b0d4ff4fa7dc1ae8c52bd0a4ab6ded6",
   absoluteArtifactPath: "/opt/cursor/artifacts/writer1-output.json",
   apiArtifactPath: "artifacts/writer1-output.json",
-  promptDigest: "sha256:76a6571a8b6bfaf233bf48534aaf3b161ffeea4e77010023a3e127de29b69ace",
 });
 
 export function validateControl(control, input = {}) {
@@ -48,7 +47,9 @@ export function validateControl(control, input = {}) {
   const recovery = control.policy?.recovery;
   if (!recovery || Object.entries(EXPECTED_RECOVERY).some(([key, value]) => recovery[key] !== value)) throw new Error("active artifact-recovery wake is missing the exact prior/run/source tuple");
   if (typeof recovery.sourceSha !== "string" || !/^[0-9a-f]{40}$/u.test(recovery.sourceSha)) throw new Error("active artifact-recovery wake requires an exact 40-hex sourceSha");
-  if (Object.entries(EXPECTED_RECOVERY_V2).some(([key, value]) => recovery[key] !== value) || typeof recovery.idempotencyKey !== "string" || !/^[^:\s]+:writer1:artifact-recovery:v2:sha256:[0-9a-f]{64}:sha256:[0-9a-f]{64}$/u.test(recovery.idempotencyKey)) throw new Error("active artifact-recovery v2 wake is missing the exact failed-v1, absolute-path, prompt, or idempotency pins");
+  const v1PromptDigest = digestWriter1ArtifactRecoveryPrompt("v1");
+  const v2PromptDigest = digestWriter1ArtifactRecoveryPrompt("v2");
+  if (Object.entries(EXPECTED_RECOVERY_V2).some(([key, value]) => recovery[key] !== value) || recovery.priorRecoveryPromptDigest !== v1PromptDigest || recovery.promptDigest !== v2PromptDigest || typeof recovery.idempotencyKey !== "string" || !/^[^:\s]+:writer1:artifact-recovery:v2:sha256:[0-9a-f]{64}:sha256:[0-9a-f]{64}$/u.test(recovery.idempotencyKey) || !recovery.idempotencyKey.endsWith(`:${v2PromptDigest}`)) throw new Error("active artifact-recovery v2 wake is missing the exact failed-v1, absolute-path, canonical-prompt, or idempotency pins");
   return { dormant: false, stage: "writer1", sourceSha: recovery.sourceSha };
 }
 

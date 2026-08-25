@@ -20,6 +20,7 @@ import {
   type CursorFollowUpBindings,
 } from "./cursor-writer.js";
 import { digestOf } from "../contracts/digests.js";
+import { digestWriter1ArtifactRecoveryPrompt } from "../../scripts/360-words-recovery-prompt.mjs";
 
 type PublicRecoveryInputHasNoEnv = "env" extends keyof CursorArtifactRecoveryInput ? never : true;
 const publicRecoveryInputHasNoEnv: PublicRecoveryInputHasNoEnv = true;
@@ -128,7 +129,7 @@ const artifactPrior: CursorArtifactRecoveryPrior = {
   sourceBranch: "architect/360-words-canary", sourceSha: "c89f82dae009d5bef3cc327543e1664985c85b76", sealedHandoffDigest: "sha256:" + "5".repeat(64),
 };
 const previousRecovery: CursorArtifactRecoveryFailureBinding = {
-  recoveryVersion: "words-writer1-artifact-recovery/v1", actionRunId: "32793130502", artifactId: 9543869555, sourceBranch: "architect/360-words-canary", sourceSha: "6cf9b42e43e5728614a9b7302a8791e527197e3d", artifactDigest: "sha256:2d1d1c0d281917025be80898ab03c94171d59d1e2920ecf540b241f666464502", runId: "run-1b862d23-a748-4574-909a-66aac905eb97", agentId: artifactAgentId, threadUrl: artifactThreadUrl, promptDigest: "sha256:1b9726fb288041c08ff2a58f2857ac209b0d4ff4fa7dc1ae8c52bd0a4ab6ded6", failureCode: "CURSOR_ARTIFACT_MISSING",
+  recoveryVersion: "words-writer1-artifact-recovery/v1", actionRunId: "32793130502", artifactId: 9543869555, sourceBranch: "architect/360-words-canary", sourceSha: "6cf9b42e43e5728614a9b7302a8791e527197e3d", artifactDigest: "sha256:2d1d1c0d281917025be80898ab03c94171d59d1e2920ecf540b241f666464502", runId: "run-1b862d23-a748-4574-909a-66aac905eb97", agentId: artifactAgentId, threadUrl: artifactThreadUrl, promptDigest: digestWriter1ArtifactRecoveryPrompt("v1"), failureCode: "CURSOR_ARTIFACT_MISSING",
 };
 const artifactBytes = Buffer.from('{"schemaVersion":"words-writer1-output/v1","pages":[]}\n', "utf8");
 function artifactDownloadResult(id: string, artifactPath: string, bytes: Buffer, sourceUrl: string): any {
