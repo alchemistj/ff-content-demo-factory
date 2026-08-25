@@ -174,7 +174,7 @@ function normalizeError(error) {
   return error instanceof Error ? error.message.replace(/Bearer\s+\S+/gi, 'Bearer [redacted]') : String(error);
 }
 
-function createApifyAdapter({ token, fetchImpl = globalThis.fetch, clock = () => new Date().toISOString(), pollIntervalMs = 0, maxPollAttempts = 100, receiptStore = new Map(), reconcileAcceptance = null, operationArtifacts = {}, production = false, operationArtifactWriter = null }) {
+function createApifyAdapter({ token, fetchImpl = globalThis.fetch, clock = () => new Date().toISOString(), pollIntervalMs = 0, maxPollAttempts = 100, receiptStore = new Map(), reconcileAcceptance = null, operationArtifacts = {}, production = false, operationArtifactWriter = null, expectedOperationContext = null }) {
   required(token, 'APIFY_API_TOKEN');
   required(fetchImpl, 'fetchImpl');
   const enrichmentReceipts = new Map();
@@ -205,15 +205,21 @@ function createApifyAdapter({ token, fetchImpl = globalThis.fetch, clock = () =>
 
   async function reconcileProviderReadOnly({ operationKey, requestDigest, input }) {
     const listed = await request('GET', `/acts/${ACTOR_ID}/runs?limit=20&desc=true`);
-    const candidates = Array.isArray(listed?.data) ? listed.data : Array.isArray(listed?.runs) ? listed.runs : Array.isArray(listed) ? listed : [];
+    const candidates = Array.isArray(listed?.data?.items) ? listed.data.items : Array.isArray(listed?.items) ? listed.items : Array.isArray(listed?.data) ? listed.data : Array.isArray(listed) ? listed : [];
     const matches = [];
     for (const candidate of candidates.slice(0, 20)) {
       const runId = candidate?.id || candidate?.runId;
       if (!runId) continue;
+      const storeId = candidate.defaultKeyValueStoreId;
+      if (!storeId) continue;
       let candidateInput;
-      try { const fetched = await request('GET', `/actor-runs/${encodeURIComponent(runId)}/input`); candidateInput = fetched?.data || fetched; } catch { continue; }
-      const candidateOperationId = candidate.operationId || candidate.meta?.operationId || candidateInput?.factoryOperationId;
-      const candidateRequestDigest = candidate.requestDigest || candidateInput?.factoryRequestDigest || (candidateInput ? requestDigestForInput(candidateInput) : null);
+      try {
+        const fetched = await request('GET', `/key-value-stores/${encodeURIComponent(storeId)}/records/INPUT?disableRedirect=true`);
+        candidateInput = fetched?.data?.value || fetched?.value || fetched?.data || fetched;
+      } catch { continue; }
+      if (candidateInput && typeof candidateInput === 'string') { try { candidateInput = JSON.parse(candidateInput); } catch { continue; } }
+      const candidateOperationId = candidateInput?.factoryOperationId;
+      const candidateRequestDigest = candidateInput?.factoryRequestDigest || (candidateInput ? requestDigestForInput(candidateInput) : null);
       if (candidateOperationId === operationKey && candidateRequestDigest === requestDigest && JSON.stringify(candidateInput) === JSON.stringify(input)) matches.push({ ...candidate, runId, datasetId: candidate.defaultDatasetId || candidate.datasetId });
     }
     return matches.length === 1 ? matches[0] : null;
@@ -268,7 +274,7 @@ function createApifyAdapter({ token, fetchImpl = globalThis.fetch, clock = () =>
     if (JSON.stringify(projection.input) !== JSON.stringify(input) || projection.requestDigest !== requestDigest || projection.operationKey !== receiptKey || projection.operationId !== receiptKey || projection.actorId !== ACTOR_ID) throw new Error('Apify request projection does not match the exact adapter request');
     const idempotencyKey = projection.idempotencyKey;
     const preparedIdentity = operationArtifacts['pre-post'] || operationArtifacts.prePost || null;
-    if (production && (!preparedIdentity || preparedIdentity.artifactOrigin !== 'github-actions' || !preparedIdentity.artifactId || !preparedIdentity.artifactDigest || preparedIdentity.operationKey !== receiptKey || preparedIdentity.requestDigest !== requestDigest || preparedIdentity.idempotencyKey !== idempotencyKey || JSON.stringify(preparedIdentity.requestProjection?.input || null) !== JSON.stringify(input))) {
+    if (production && (!preparedIdentity || preparedIdentity.artifactOrigin !== 'github-actions' || !preparedIdentity.artifactId || !preparedIdentity.artifactDigest || !preparedIdentity.artifactContentDigest || preparedIdentity.operationKey !== receiptKey || preparedIdentity.requestDigest !== requestDigest || preparedIdentity.idempotencyKey !== idempotencyKey || JSON.stringify(preparedIdentity.requestProjection?.input || null) !== JSON.stringify(input) || (expectedOperationContext && JSON.stringify(preparedIdentity.context || null) !== JSON.stringify(expectedOperationContext)))) {
       throw new Error('Production paid operation requires the verified GitHub pre-POST artifact identity before Apify POST');
     }
     await persistOperationIntent(receiptStore, operationKey, { provider: 'apify', operation, input, context: { actor: ACTOR_ID, jobKey }, metadata: { idempotencyKey, requestDigest }, startedAt: clock() });

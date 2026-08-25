@@ -300,9 +300,10 @@ function createProductionAdapters({
   required(root, 'root');
   const productionRuntime = productionCloudAgent || (!cursor && !apify && !receiptStore);
   const receipts = receiptStore || createFileReceiptStore(root);
+  let preparedArtifact = null;
   let preparedProjection = null;
   if (env.FACTORY_PAID_PREPARED_ARTIFACT_FILE && fs.existsSync(env.FACTORY_PAID_PREPARED_ARTIFACT_FILE)) {
-    try { preparedProjection = JSON.parse(fs.readFileSync(env.FACTORY_PAID_PREPARED_ARTIFACT_FILE, 'utf8')).requestProjection || null; } catch { preparedProjection = null; }
+    try { preparedArtifact = JSON.parse(fs.readFileSync(env.FACTORY_PAID_PREPARED_ARTIFACT_FILE, 'utf8')); preparedProjection = preparedArtifact.requestProjection || null; } catch { preparedArtifact = null; preparedProjection = null; }
   }
   const apifyAdapter = apify || createApifyAdapter({
     token: env.APIFY_API_TOKEN,
@@ -319,9 +320,14 @@ function createProductionAdapters({
         artifactDigest: env.FACTORY_PAID_PREPARED_ARTIFACT_DIGEST,
         artifactContentDigest: env.FACTORY_PAID_PREPARED_ARTIFACT_CONTENT_DIGEST,
         artifactOrigin: 'github-actions',
+        operationKey: env.FACTORY_PAID_PREPARED_OPERATION_KEY || preparedArtifact?.operationKey,
+        requestDigest: env.FACTORY_PAID_PREPARED_REQUEST_DIGEST || preparedArtifact?.requestDigest,
+        idempotencyKey: env.FACTORY_PAID_PREPARED_IDEMPOTENCY_KEY || preparedArtifact?.idempotencyKey,
+        context: preparedArtifact?.context || null,
         requestProjection: preparedProjection,
       },
     },
+    expectedOperationContext: env.FACTORY_OPERATION_CONTEXT_JSON ? JSON.parse(env.FACTORY_OPERATION_CONTEXT_JSON) : null,
     operationArtifactWriter: env.FACTORY_ACCEPTED_OPERATION_ARTIFACT_PATH ? async (artifact, response) => {
       const filename = env.FACTORY_ACCEPTED_OPERATION_ARTIFACT_PATH;
       fs.mkdirSync(require('node:path').dirname(filename), { recursive: true });

@@ -182,9 +182,9 @@ test('Apify read-only reconciliation accepts exactly one stage-bound input match
     const body = options.body ? JSON.parse(options.body) : undefined;
     calls.push({ url, method: options.method, body });
     if (options.method === 'POST') { projectionInput = body; return response({ data: { status: 'RUNNING' } }); }
-    if (url.includes('/runs?')) return response({ data: [{ id: 'foreign-run', operationId: 'other-operation' }, { id: 'exact-run', operationId: projectionInput.factoryOperationId, requestDigest: projectionInput.factoryRequestDigest, defaultDatasetId: 'exact-dataset' }] });
-    if (url.includes('/actor-runs/exact-run/input')) return response({ data: projectionInput });
-    if (url.includes('/actor-runs/foreign-run/input')) return response({ data: { factoryOperationId: 'other-operation', factoryRequestDigest: 'wrong' } });
+    if (url.includes('/runs?')) return response({ data: { items: [{ id: 'foreign-run', defaultKeyValueStoreId: 'foreign-store' }, { id: 'exact-run', defaultKeyValueStoreId: 'exact-store', defaultDatasetId: 'exact-dataset' }] } });
+    if (url.includes('/key-value-stores/foreign-store/records/INPUT')) return response({ value: { factoryOperationId: 'other-operation', factoryRequestDigest: 'wrong' } });
+    if (url.includes('/key-value-stores/exact-store/records/INPUT')) return response({ value: projectionInput });
     if (url.includes('/actor-runs/exact-run')) return response({ data: { id: 'exact-run', defaultDatasetId: 'exact-dataset', status: 'SUCCEEDED' } });
     if (url.includes('/datasets/exact-dataset/items')) return response([{ placeId: 'ChIJreconcile-one', url: 'https://www.google.com/maps/place/Reconcile-one', reviews: [{ reviewId: 'r1', name: 'A', publishedAtDate: '2026-01-01', text: 'Completed', stars: 5 }] }]);
     throw new Error(`unexpected Apify request ${options.method} ${url}`);
@@ -229,6 +229,19 @@ test('production Apify refuses paid POST without a real GitHub pre-POST artifact
   const rejected = createApifyAdapter({ token: 'secret', fetchImpl, production: true, operationArtifacts: { 'pre-post': { ...wrong, artifactName: 'wrong', artifactId: '43', artifactDigest: 'sha256:wrong', artifactContentDigest: 'sha256:wrong', artifactOrigin: 'github-actions', requestProjection: wrong } } });
   await assert.rejects(() => rejected.enrichFinalist({ placeId: 'ChIJproduction-bound', mapsUrl: 'https://www.google.com/maps/place/Production-bound' }), /pre-POST artifact identity/);
   assert.equal(posts, 1, 'wrong semantic projection must not issue another POST');
+});
+
+test('production Apify rejects a prepared artifact with mismatched full operation context', async () => {
+  let posts = 0;
+  const projection = apifyFinalistRequestProjection({ placeId: 'ChIJcontext', mapsUrl: 'https://www.google.com/maps/place/Context' });
+  const fetchImpl = async (url, options) => { if (options.method === 'POST') posts += 1; return response({ data: { id: 'run-context', defaultDatasetId: 'dataset-context', status: 'SUCCEEDED' } }); };
+  const adapter = createApifyAdapter({
+    token: 'secret', fetchImpl, production: true,
+    expectedOperationContext: { repository: 'alchemistj/ff-content-demo-factory', issueNumber: 8, prNumber: 1, handoffId: 'expected-handoff' },
+    operationArtifacts: { 'pre-post': { ...projection, artifactName: 'prepared', artifactId: '42', artifactDigest: 'sha256:zip', artifactContentDigest: 'sha256:content', artifactOrigin: 'github-actions', requestProjection: projection, operationKey: projection.operationKey, requestDigest: projection.requestDigest, idempotencyKey: projection.idempotencyKey, context: { repository: 'foreign/repo', issueNumber: 8, prNumber: 1, handoffId: 'expected-handoff' } } },
+  });
+  await assert.rejects(() => adapter.enrichFinalist({ placeId: 'ChIJcontext', mapsUrl: 'https://www.google.com/maps/place/Context' }), /pre-POST artifact identity/);
+  assert.equal(posts, 0);
 });
 
 test('accepted-response upload failure is durable and reconciles without a second POST', async () => {

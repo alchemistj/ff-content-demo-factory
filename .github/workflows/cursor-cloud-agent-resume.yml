@@ -234,7 +234,7 @@ jobs:
           test -n "$GH_TOKEN"
           mkdir -p canary/phase-b/receipt-archive
           artifacts="$(GH_TOKEN="$GH_TOKEN" gh api --paginate "repos/$REPOSITORY/actions/artifacts?per_page=100")"
-          expected="$(node -e "const d=JSON.parse(require('fs').readFileSync('canary/phase-a/recovery-decision.json','utf8'));const x=d.existing||{};process.stdout.write(JSON.stringify({name:x.artifactName,id:x.artifactId,digest:x.artifactDigest,contentDigest:x.artifactContentDigest,handoffId:x.handoffId,dispatchKey:x.dispatchKey,outputDigest:x.outputDigest,phaseARunId:x.jobId}))")"
+          expected="$(node -e "const d=JSON.parse(require('fs').readFileSync('canary/phase-a/recovery-decision.json','utf8'));const x=d.existing||{};process.stdout.write(JSON.stringify({name:x.artifactName,id:x.artifactId,digest:x.artifactDigest,contentDigest:x.artifactContentDigest,handoffId:x.handoffId,dispatchKey:x.dispatchKey,outputDigest:x.outputDigest,phaseARunId:x.jobId,providerRunId:x.providerRunId,datasetId:x.datasetId}))")"
           artifact_id="$(ARTIFACTS="$artifacts" EXPECTED="$expected" node -e "const {selectExactArtifact}=require('./scripts/restore-paid-receipts');const e=JSON.parse(process.env.EXPECTED);const x=selectExactArtifact(JSON.parse(process.env.ARTIFACTS).artifacts||[],e);process.stdout.write(String(x.id))")"
           GH_TOKEN="$GH_TOKEN" gh api "repos/$REPOSITORY/actions/artifacts/$artifact_id/zip" > canary/phase-b/receipt-archive/phase-b.zip
           unzip -q canary/phase-b/receipt-archive/phase-b.zip -d canary/phase-b/receipt-archive/extracted
@@ -243,7 +243,7 @@ jobs:
             OPERATION_SNAPSHOT="$snapshot" node - <<'NODE'
             const fs=require('node:fs'); const d=JSON.parse(fs.readFileSync('canary/phase-a/recovery-decision.json','utf8')); const x=d.existing||{}; const a=JSON.parse(fs.readFileSync(process.env.OPERATION_SNAPSHOT,'utf8')); if(x.operationKey&&a.operationKey!==x.operationKey) throw new Error('accepted operation key mismatch'); if(x.requestDigest&&a.requestDigest!==x.requestDigest) throw new Error('accepted request digest mismatch');
             NODE
-            SNAPSHOT="$snapshot" node -e "require('./scripts/restore-paid-operation').restoreAcceptedOperation({snapshotFile:process.env.SNAPSHOT,targetFile:'state/vendor-receipts.json',expected:{operationKey:(JSON.parse(require('fs').readFileSync('canary/phase-a/recovery-decision.json','utf8')).existing||{}).operationKey,requestDigest:(JSON.parse(require('fs').readFileSync('canary/phase-a/recovery-decision.json','utf8')).existing||{}).requestDigest}})"
+            SNAPSHOT="$snapshot" node -e "const x=(JSON.parse(require('fs').readFileSync('canary/phase-a/recovery-decision.json','utf8')).existing||{});require('./scripts/restore-paid-operation').restoreAcceptedOperation({snapshotFile:process.env.SNAPSHOT,targetFile:'state/vendor-receipts.json',expected:{operationKey:x.operationKey,requestDigest:x.requestDigest,providerRunId:x.providerRunId,datasetId:x.datasetId}})"
           else
             snapshot="$(find canary/phase-b/receipt-archive/extracted -name paid-receipt-artifact.json -type f -print -quit)"
             if [ -z "$snapshot" ]; then snapshot="$(find canary/phase-b/receipt-archive/extracted -name vendor-receipts.json -type f -print -quit)"; fi
@@ -297,6 +297,10 @@ jobs:
           echo "FACTORY_PAID_PREPARED_ARTIFACT_DIGEST=${{ steps.paid-prepared-identity.outputs.digest }}" >> "$GITHUB_ENV"
           echo "FACTORY_PAID_PREPARED_ARTIFACT_CONTENT_DIGEST=${{ steps.paid-prepared-artifact.outputs.contentDigest }}" >> "$GITHUB_ENV"
           echo "FACTORY_PAID_PREPARED_ARTIFACT_FILE=canary/phase-b/paid-prepared-artifact.json" >> "$GITHUB_ENV"
+          echo "FACTORY_PAID_PREPARED_OPERATION_KEY=$(node -e "process.stdout.write(JSON.parse(require('fs').readFileSync('canary/phase-b/paid-prepared-artifact.json','utf8')).operationKey)")" >> "$GITHUB_ENV"
+          echo "FACTORY_PAID_PREPARED_REQUEST_DIGEST=$(node -e "process.stdout.write(JSON.parse(require('fs').readFileSync('canary/phase-b/paid-prepared-artifact.json','utf8')).requestDigest)")" >> "$GITHUB_ENV"
+          echo "FACTORY_PAID_PREPARED_IDEMPOTENCY_KEY=$(node -e "process.stdout.write(JSON.parse(require('fs').readFileSync('canary/phase-b/paid-prepared-artifact.json','utf8')).idempotencyKey)")" >> "$GITHUB_ENV"
+          echo "FACTORY_OPERATION_CONTEXT_JSON=$(node -e "process.stdout.write(JSON.stringify(JSON.parse(require('fs').readFileSync('canary/phase-b/paid-prepared-artifact.json','utf8')).context))")" >> "$GITHUB_ENV"
           PAID_ARTIFACT_ID="${{ steps.paid-prepared-identity.outputs.id }}" PAID_ARTIFACT_DIGEST="${{ steps.paid-prepared-identity.outputs.digest }}" node - <<'NODE'
           const fs=require('node:fs'); const {parseMarker,markerFor,markerBody,assertTransition}=require('./src/factory/github-ledger'); const {createArtifact,createPaidMarker}=require('./scripts/paid-operation-ledger');
           const p=JSON.parse(fs.readFileSync('canary/phase-a/current-head-gate1-pending.json','utf8')); const r=JSON.parse(fs.readFileSync('canary/phase-a/cursor-terminal-result.json','utf8')); const previous=parseMarker(fs.readFileSync('canary/phase-a/cursor-phase-b-claim.md','utf8')); const artifact=JSON.parse(fs.readFileSync('canary/phase-b/paid-prepared-artifact.json','utf8')); artifact.artifactId=process.env.PAID_ARTIFACT_ID; artifact.artifactDigest=process.env.PAID_ARTIFACT_DIGEST; const marker=createPaidMarker({pending:p,result:r,previous,artifact,status:'paid_prepared'}); fs.writeFileSync('canary/phase-a/cursor-paid-prepared-ledger-marker.md',markerBody(marker));
@@ -357,6 +361,19 @@ jobs:
           test -n "$GH_TOKEN"
           artifacts="$(GH_TOKEN="$GH_TOKEN" gh api --paginate "repos/$REPOSITORY/actions/artifacts?per_page=100")"
           ARTIFACTS="$artifacts" NAME="${{ steps.accepted-operation-artifact.outputs.name }}" RUN_ID="${{ github.run_id }}" node -e "const a=JSON.parse(process.env.ARTIFACTS).artifacts||[];const x=a.filter(v=>!v.expired&&v.name===process.env.NAME&&String(v.workflow_run?.id||'')===process.env.RUN_ID);if(x.length!==1||!x[0].digest)throw new Error('accepted operation artifact identity is missing');process.stdout.write('id='+x[0].id+'\ndigest='+x[0].digest+'\n')" >> "$GITHUB_OUTPUT"
+      - name: Record paid_accepted ledger state before continuation
+        if: success() && env.FACTORY_RESUME_ALREADY_CLAIMED != 'true' && env.FACTORY_PHASE_B_RECOVERY != 'true' && env.FACTORY_ACCEPTED_RECOVERY != 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE_NUMBER: ${{ env.FACTORY_DISPATCH_ISSUE_NUMBER }}
+          REPOSITORY: ${{ github.repository }}
+        run: |
+          test -n "$GH_TOKEN"
+          PAID_ARTIFACT_ID="${{ steps.accepted-operation-identity.outputs.id }}" PAID_ARTIFACT_DIGEST="${{ steps.accepted-operation-identity.outputs.digest }}" node - <<'NODE'
+          const fs=require('node:fs'); const {parseMarker,markerBody}=require('./src/factory/github-ledger'); const {createPaidMarker}=require('./scripts/paid-operation-ledger');
+          const p=JSON.parse(fs.readFileSync('canary/phase-a/current-head-gate1-pending.json','utf8')); const r=JSON.parse(fs.readFileSync('canary/phase-a/cursor-terminal-result.json','utf8')); const previous=parseMarker(fs.readFileSync('canary/phase-a/cursor-paid-prepared-ledger-marker.md','utf8')); const artifact=JSON.parse(fs.readFileSync('canary/phase-b/paid-accepted-operation-artifact.json','utf8')); artifact.artifactId=process.env.PAID_ARTIFACT_ID; artifact.artifactDigest=process.env.PAID_ARTIFACT_DIGEST; const marker=createPaidMarker({pending:p,result:r,previous,artifact,status:'paid_accepted'}); fs.writeFileSync('canary/phase-a/cursor-paid-accepted-ledger-marker.md',markerBody(marker));
+          NODE
+          GH_TOKEN="$GH_TOKEN" gh api "repos/$REPOSITORY/issues/$ISSUE_NUMBER/comments" --method POST -f body="$(cat canary/phase-a/cursor-paid-accepted-ledger-marker.md)"
       - name: Continue phase B after accepted-response artifact is durable
         if: success() && env.FACTORY_RESUME_ALREADY_CLAIMED != 'true' && env.FACTORY_PHASE_B_RECOVERY != 'true' && env.FACTORY_ACCEPTED_RECOVERY != 'true'
         env:
@@ -411,19 +428,10 @@ jobs:
           test -n "$GH_TOKEN"
           artifacts="$(GH_TOKEN="$GH_TOKEN" gh api --paginate "repos/$REPOSITORY/actions/artifacts?per_page=100")"
           ARTIFACTS="$artifacts" NAME="${{ steps.receipt-artifact.outputs.name }}" RUN_ID="${{ github.run_id }}" node -e "const a=JSON.parse(process.env.ARTIFACTS).artifacts||[];const x=a.filter(v=>!v.expired&&v.name===process.env.NAME&&String(v.workflow_run?.id||'')===process.env.RUN_ID);if(x.length!==1||!x[0].digest)throw new Error('exact uploaded receipt artifact identity is missing');process.stdout.write('id='+x[0].id+'\ndigest='+x[0].digest+'\n')" >> "$GITHUB_OUTPUT"
-      - name: Record paid_accepted ledger state before further work
-        if: success() && env.FACTORY_RESUME_ALREADY_CLAIMED != 'true' && env.FACTORY_PHASE_B_RECOVERY != 'true'
-        env:
-          GH_TOKEN: ${{ github.token }}
-          ISSUE_NUMBER: ${{ env.FACTORY_DISPATCH_ISSUE_NUMBER }}
-          REPOSITORY: ${{ github.repository }}
+      - name: Verify paid_accepted ledger state remains durable
+        if: success() && env.FACTORY_RESUME_ALREADY_CLAIMED != 'true' && env.FACTORY_PHASE_B_RECOVERY != 'true' && env.FACTORY_ACCEPTED_RECOVERY != 'true'
         run: |
-          test -n "$GH_TOKEN"
-          PAID_ARTIFACT_ID="${{ steps.accepted-operation-identity.outputs.id }}" PAID_ARTIFACT_DIGEST="${{ steps.accepted-operation-identity.outputs.digest }}" node - <<'NODE'
-          const fs=require('node:fs'); const {parseMarker,markerBody}=require('./src/factory/github-ledger'); const {createPaidMarker}=require('./scripts/paid-operation-ledger');
-          const p=JSON.parse(fs.readFileSync('canary/phase-a/current-head-gate1-pending.json','utf8')); const r=JSON.parse(fs.readFileSync('canary/phase-a/cursor-terminal-result.json','utf8')); const previous=parseMarker(fs.readFileSync('canary/phase-a/cursor-paid-prepared-ledger-marker.md','utf8')); const artifact=JSON.parse(fs.readFileSync('canary/phase-b/paid-accepted-operation-artifact.json','utf8')); artifact.artifactId=process.env.PAID_ARTIFACT_ID; artifact.artifactDigest=process.env.PAID_ARTIFACT_DIGEST; const marker=createPaidMarker({pending:p,result:r,previous,artifact,status:'paid_accepted'}); fs.writeFileSync('canary/phase-a/cursor-paid-accepted-ledger-marker.md',markerBody(marker));
-          NODE
-          GH_TOKEN="$GH_TOKEN" gh api "repos/$REPOSITORY/issues/$ISSUE_NUMBER/comments" --method POST -f body="$(cat canary/phase-a/cursor-paid-accepted-ledger-marker.md)"
+          test -s canary/phase-a/cursor-paid-accepted-ledger-marker.md
       - name: Record automatic phase-B completion
         if: success() && env.FACTORY_RESUME_ALREADY_CLAIMED != 'true'
         env:

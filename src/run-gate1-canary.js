@@ -11,7 +11,7 @@ const { validateBundle, validateJobReceipt, canonicalThreadUrl, createDispatchPa
 const { createPendingHandoff, validatePendingHandoff, retrievePhaseAHandoff, claimResumeAtomic } = require('./factory/handoff');
 const { createSealed360Adapters, verifySealed360Lineage, compareApprovedLineage } = require('./factory/sealed-evidence');
 const { actionProofFromEnvironment } = require('./factory/orchestrator');
-const { apifyFinalistRequestProjection } = require('./adapters/apify');
+const { apifyFinalistRequestProjection, apifyDiscoveryRequestProjection } = require('./adapters/apify');
 
 function bundleDigest(bundle) { return digest({ ...bundle, inputManifestDigest: undefined }); }
 
@@ -68,11 +68,12 @@ async function runCurrentHeadGate1Canary({ root, requestFile, selectionFile, qaF
   const phase = env.FACTORY_CANARY_PHASE || 'resume';
   if (!['dispatch', 'resume', 'integrated'].includes(phase)) throw new Error(`Unsupported canary phase: ${phase}`);
   const sealedEvidence = env.FACTORY_SEALED_EVIDENCE === 'true' || env.FACTORY_SEALED_EVIDENCE === true;
-  const sealedAdapters = sealedEvidence ? createSealed360Adapters({ root: process.cwd() }) : null;
+  const trustedCheckpointRestore = env.FACTORY_TRUSTED_CHECKPOINT_RESTORE === 'true';
+  const sealedAdapters = (sealedEvidence || trustedCheckpointRestore) ? createSealed360Adapters({ root: process.cwd() }) : null;
   const cursorBundle = cursorBundleFile && fs.existsSync(path.resolve(cursorBundleFile)) ? readJson(cursorBundleFile) : null;
   const dispatch = { issueNumber: Number(env.FACTORY_ISSUE_NUMBER), prNumber: Number(env.FACTORY_PR_NUMBER), branch: env.FACTORY_BRANCH || env.GITHUB_REF_NAME, reviewedHeadSha: assertedHeadSha };
   if (!Number.isInteger(dispatch.issueNumber) || !Number.isInteger(dispatch.prNumber) || !dispatch.branch) throw new Error('Canary requires immutable Issue/PR/branch dispatch binding');
-  const approvedRuntimePacket = env.FACTORY_PHASE_A_PRODUCTION === 'true'
+  const approvedRuntimePacket = (env.FACTORY_PHASE_A_PRODUCTION === 'true' || trustedCheckpointRestore)
     ? verifyApprovedLineageRuntimePacket({ root, filename: env.FACTORY_APPROVED_LINEAGE_PACKET, assertedHeadSha, dispatch: { ...dispatch, repository: env.FACTORY_REPOSITORY || 'alchemistj/ff-content-demo-factory' } })
     : null;
   const sourceManifestDigest = approvedRuntimePacket?.approvedLineage?.sourceManifestDigest || env.FACTORY_SOURCE_MANIFEST_DIGEST || digest({ request, selection, qa });
@@ -118,7 +119,12 @@ async function runCurrentHeadGate1Canary({ root, requestFile, selectionFile, qaF
     else {
       const finalist = selection.selectedCandidate || selection.finalist || request.prospect || request.candidate || null;
       if (finalist?.placeId && finalist?.mapsUrl) apifyOperationProjection = apifyFinalistRequestProjection({ placeId: finalist.placeId, mapsUrl: finalist.mapsUrl, limit: 50 });
+      else {
+        const discoveryRequest = request.discoveryRequest || request;
+        if (Array.isArray(discoveryRequest.searchStrings) && discoveryRequest.searchStrings.length && discoveryRequest.location) apifyOperationProjection = apifyDiscoveryRequestProjection({ searchStrings: discoveryRequest.searchStrings, location: discoveryRequest.location, limit: discoveryRequest.limit || 7, reviewLimit: discoveryRequest.reviewLimit || 5 });
+      }
     }
+    if (!apifyOperationProjection && env.FACTORY_PHASE_B_PRODUCTION === 'true' && env.FACTORY_TRUSTED_CHECKPOINT_RESTORE !== 'true') throw new Error('Production phase A cannot proceed without a stage-correct Apify projection or trusted checkpoint restore');
     const pending = createPendingHandoff({ dispatchPacket, inputManifest, runId: env.FACTORY_CANARY_RUN_ID || `canary-${digest(inputManifest).slice(7, 23)}`, prospectId, placeId: selection.selectedPlaceId || request.placeId || null, apifyOperationProjection, sourceCheckpointDigest: digest({ request, selection, qa }), sourceManifestDigest: inputManifest.sourceManifestDigest, phaseARunId: env.GITHUB_RUN_ID || env.FACTORY_PHASE_A_RUN_ID || `local-${digest(inputManifest).slice(7, 23)}`, inputFiles: { request: requestFile, selection: selectionFile, qa: qaFile }, historicalLineageSeed: approvedRuntimePacket ? { packetDigest: approvedRuntimePacket.packetDigest, ...approvedRuntimePacket.approvedLineage } : null });
     fs.writeFileSync(path.join(outputDir, 'current-head-gate1-pending.json'), `${JSON.stringify(pending, null, 2)}\n`);
     return pending;
@@ -129,7 +135,7 @@ async function runCurrentHeadGate1Canary({ root, requestFile, selectionFile, qaF
   }
   let pendingFile = env.FACTORY_HANDOFF_FILE || path.join(outputDir, 'current-head-gate1-pending.json');
   if (phase === 'integrated' || (sealedEvidence && !fs.existsSync(pendingFile))) sealPending();
-  if (!sealedEvidence) required(cursorBundle, 'cursorBundle');
+  if (!sealedEvidence && !trustedCheckpointRestore) required(cursorBundle, 'cursorBundle');
   // Preserve fail-closed connector attestation even when a caller supplied an
   // obviously malformed bundle without a resumable handoff. Production
   // execution still performs the full-bound validation below after retrieval.
@@ -189,6 +195,7 @@ async function runCurrentHeadGate1Canary({ root, requestFile, selectionFile, qaF
   if (!run || run.status !== 'awaiting-human-gate-1' || !run.artifacts?.gate1?.markdown) throw new Error('Fresh canary Gate 1 artifact is missing');
   const historicalSeed = pending.envelope.historicalLineageSeed;
   let needsJosh = null;
+  if (trustedCheckpointRestore) needsJosh = { code: 'TRUSTED_CHECKPOINT_RESTORED_NEW_HEAD_REQUIRES_JOSH', message: 'Trusted historical source evidence was restored from the verified GitHub artifact. This is a new current-head Gate 1 artifact; historical Josh approval was not carried forward.', historicalSeed, current: { sourceManifestDigest: run.artifacts.prescription?.sourceManifestDigest || null, pageSetDigest: run.artifacts.prescription?.pageSetDigest || null, prescriptionDigest: run.artifacts.prescription?.prescriptionDigest || null, selectedServiceIds: run.artifacts.prescription?.selectedServiceIds || [], routes: (run.artifacts.prescription?.pages || []).map((page) => page.url) } };
   if (historicalSeed) {
     try {
       compareApprovedLineage(historicalSeed, run.artifacts.prescription || {}, 'Current-head Gate 1 output');
@@ -218,6 +225,11 @@ async function runCurrentHeadGate1Canary({ root, requestFile, selectionFile, qaF
       run.artifacts.gate1.markdown = readable;
       if (stage3.state?.activeRun) { stage3.state.activeRun.status = 'awaiting-human-gate-1'; stage3.state.activeRun.artifacts.gate1.markdown = readable; }
     }
+  }
+  if (trustedCheckpointRestore && needsJosh && !String(run.artifacts.gate1.markdown || '').includes('Human Gate 1 — Needs Josh')) {
+    run.status = 'awaiting-human-gate-1';
+    run.artifacts.gate1.markdown = `${String(run.artifacts.gate1.markdown || '').trimEnd()}\n\n## Human Gate 1 — Needs Josh\n\nThe complete current-head Gate 1 record is preserved above. The trusted historical checkpoint was restored from a verified GitHub artifact without a new paid call, but its historical approval is not current-head approval. Josh must review and approve this new prospect strategy, exact two services, four-page prescription, and limitations before production writing.\n\nReason: ${needsJosh.message}\n`;
+    if (stage3.state?.activeRun) { stage3.state.activeRun.status = 'awaiting-human-gate-1'; stage3.state.activeRun.artifacts.gate1.markdown = run.artifacts.gate1.markdown; }
   }
   const finalEnvelope = { ...expectedEnvelope, factoryRunId: run.runId, factorySourceCheckpointDigest: run.artifacts.sourceCheckpoint ? digest(run.artifacts.sourceCheckpoint) : null };
   const boundReceipts = Object.entries(cursorBundle?.jobs || {}).map(([jobId, entry]) => {

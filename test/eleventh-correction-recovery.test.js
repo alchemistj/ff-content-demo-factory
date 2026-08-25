@@ -134,6 +134,30 @@ test('accepted operation artifact restores exact provider run state on a fresh r
   assert.throws(() => restoreAcceptedOperation({ snapshotFile: path.join(root, 'mutated.json'), targetFile: path.join(root, 'state', 'bad.json'), expected: { operationKey: projection.operationKey } }), /response digest mismatch/);
 });
 
+test('accepted operation restore continues from the exact run without relisting actor runs', async () => {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), 'factory-accepted-no-relist-'));
+  const projection = apifyFinalistRequestProjection({ placeId: 'ChIJnorelist', mapsUrl: 'https://www.google.com/maps/place/No-relist' });
+  const acceptedResponse = { runId: 'run-norelist', datasetId: 'dataset-norelist', run: { id: 'run-norelist', defaultDatasetId: 'dataset-norelist', status: 'RUNNING' } };
+  const crypto = require('node:crypto');
+  const artifact = operationArtifactBinding({ operationKey: projection.operationKey, provider: 'apify', operation: projection.operation, inputDigest: projection.inputDigest, requestDigest: projection.requestDigest, idempotencyKey: projection.idempotencyKey, requestProjection: projection, responseDigest: crypto.createHash('sha256').update(JSON.stringify(acceptedResponse)).digest('hex'), stage: 'accepted', artifactIdentity: { artifactOrigin: 'github-actions', artifactId: 'artifact-norelist', artifactDigest: 'sha256:zip-norelist' } });
+  const snapshot = path.join(root, 'accepted.json'); fs.writeFileSync(snapshot, JSON.stringify({ ...artifact, response: acceptedResponse }));
+  const receipts = path.join(root, 'state', 'vendor-receipts.json'); require('../scripts/restore-paid-operation').restoreAcceptedOperation({ snapshotFile: snapshot, targetFile: receipts, expected: { operationKey: projection.operationKey, requestDigest: projection.requestDigest, providerRunId: 'run-norelist', datasetId: 'dataset-norelist' } });
+  const calls = [];
+  const fetchImpl = async (url, options) => { calls.push({ url, method: options.method }); if (url.includes('/actor-runs/run-norelist')) return { ok: true, status: 200, text: async () => JSON.stringify({ data: { id: 'run-norelist', defaultDatasetId: 'dataset-norelist', status: 'SUCCEEDED' } }) }; if (url.includes('/datasets/dataset-norelist/items')) return { ok: true, status: 200, text: async () => JSON.stringify([{ placeId: 'ChIJnorelist', url: 'https://www.google.com/maps/place/No-relist', reviews: [{ reviewId: 'r', name: 'A', publishedAtDate: '2026-01-01', text: 'Completed', stars: 5 }] }]) }; throw new Error(`unexpected restore request ${options.method} ${url}`); };
+  const adapter = createApifyAdapter({ token: 'secret', fetchImpl, receiptStore: require('../src/factory/receipt-store').createFileReceiptStore(root) });
+  const result = await adapter.enrichFinalist({ placeId: 'ChIJnorelist', mapsUrl: 'https://www.google.com/maps/place/No-relist' });
+  assert.equal(result.provenance.exactPlaceId, 'ChIJnorelist');
+  assert.equal(calls.some((call) => call.url.includes('/acts/')), false, 'restored accepted state must not relist actor runs');
+});
+
+test('workflow uses official Apify input records and records paid_accepted before continuation', () => {
+  const workflow = fs.readFileSync('.github/workflows/cursor-cloud-agent-resume.yml', 'utf8');
+  assert.match(fs.readFileSync('src/adapters/apify.js', 'utf8'), /key-value-stores\/\$\{encodeURIComponent\(storeId\)\}\/records\/INPUT/);
+  assert.match(workflow, /Record paid_accepted ledger state before continuation/);
+  assert.ok(workflow.indexOf('Record paid_accepted ledger state before continuation') < workflow.indexOf('Continue phase B after accepted-response artifact is durable'));
+  assert.match(workflow, /FACTORY_OPERATION_CONTEXT_JSON/);
+});
+
 test('recovery guard is executable from the actual workflow script and workflow invokes it', () => {
   const root = fs.mkdtempSync(path.join(os.tmpdir(), 'factory-recovery-script-'));
   const pending = pendingFor(); const result = resultFor(pending);

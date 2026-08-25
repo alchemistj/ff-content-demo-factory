@@ -29,6 +29,8 @@ function restoreAcceptedOperation({ snapshotFile, targetFile, expected = {} } = 
   const runId = artifact.response.runId;
   const datasetId = artifact.response.datasetId;
   if (!runId || !datasetId) throw new Error('accepted operation provider run identity is missing');
+  if (expected.providerRunId && String(expected.providerRunId) !== String(runId)) throw new Error('accepted operation provider run binding mismatch');
+  if (expected.datasetId && String(expected.datasetId) !== String(datasetId)) throw new Error('accepted operation dataset binding mismatch');
   const projection = artifact.requestProjection;
   const state = {
     schemaVersion: 1,
