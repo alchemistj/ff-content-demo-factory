@@ -117,7 +117,7 @@ function requiredReceipt(value, label, fallback = null, binding = null) {
   const vendor = value.vendorReceipt || value;
   const hasIdentity = vendor.agentId || vendor.runId || vendor.jobId || vendor.artifactId || vendor.datasetId || value.receiptKey;
   if (!hasIdentity) throw Object.assign(new Error(`Trusted source checkpoint requires vendor/agent identity for ${label}`), { code: 'SOURCE_RECEIPT_INVALID' });
-  if ((value.provider === 'cursor-sdk' || value.provider === 'cursor-cloud-agent') && !(vendor.sealedEvidence === true && vendor.runId && vendor.artifactId && vendor.sourceSha) && (!vendor.runId || !vendor.threadUrl)) throw Object.assign(new Error(`Trusted source checkpoint requires Cursor run/thread identity for ${label}`), { code: 'SOURCE_RECEIPT_INVALID' });
+  if ((value.provider === 'cursor-sdk' || value.provider === 'cursor-cloud-agent') && (!vendor.runId || !vendor.threadUrl || !/^https:\/\/cursor\.com\/agents\/[^/?#]+$/.test(String(vendor.threadUrl)))) throw Object.assign(new Error(`Trusted source checkpoint requires canonical Cursor run/thread identity for ${label}`), { code: 'SOURCE_RECEIPT_INVALID' });
   if (value.provider === 'apify' && (!vendor.runId || !vendor.datasetId)) throw Object.assign(new Error(`Trusted source checkpoint requires Apify run/dataset identity for ${label}`), { code: 'SOURCE_RECEIPT_INVALID' });
   const payload = value.input != null ? value.input : value.request;
   if (payload == null) throw Object.assign(new Error(`Trusted source checkpoint ${label} receipt is missing input payload`), { code: 'SOURCE_RECEIPT_INVALID' });
