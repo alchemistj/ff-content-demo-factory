@@ -78,7 +78,7 @@ jobs:
           fi
 
       - name: Download and verify immutable GitHub Writer1 baseline before vendor access
-        if: steps.control.outputs.dormant != 'true' && steps.control.outputs.recovery_version == 'words-writer1-correction/v2'
+        if: steps.control.outputs.dormant != 'true' && (steps.control.outputs.recovery_version == 'words-writer1-correction/v2' || steps.control.outputs.recovery_version == 'words-writer1-post-dispatch-retrieval/v1')
         shell: bash
         env:
           GITHUB_TOKEN: ${{ github.token }}
@@ -149,6 +149,25 @@ jobs:
           {"actionRunId":"$EXPECTED_V1_RECOVERY_ACTION_RUN_ID","artifactId":$EXPECTED_V1_RECOVERY_ARTIFACT_ID,"headBranch":"architect/360-words-canary","headSha":"$EXPECTED_V1_RECOVERY_SOURCE_SHA","artifactDigest":"$EXPECTED_V1_RECOVERY_ARTIFACT_DIGEST"}
           JSON
 
+      - name: Download exact failed post-dispatch Writer1 Action artifact
+        if: steps.control.outputs.dormant != 'true' && steps.control.outputs.recovery_version == 'words-writer1-post-dispatch-retrieval/v1'
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          EXPECTED_ACTION_RUN_ID: '32825265478'
+          EXPECTED_ARTIFACT_ID: '9554789848'
+        run: |
+          set -euo pipefail
+          metadata="$(gh api "repos/${GITHUB_REPOSITORY}/actions/artifacts/${EXPECTED_ARTIFACT_ID}")"
+          test "$(jq -r '.id' <<<"$metadata")" = "$EXPECTED_ARTIFACT_ID"
+          test "$(jq -r '.workflow_run.id' <<<"$metadata")" = "$EXPECTED_ACTION_RUN_ID"
+          run="$(gh api "repos/${GITHUB_REPOSITORY}/actions/runs/${EXPECTED_ACTION_RUN_ID}")"
+          test "$(jq -r '.id' <<<"$run")" = "$EXPECTED_ACTION_RUN_ID"
+          test "$(jq -r '.head_branch' <<<"$run")" = 'architect/360-words-canary-verified'
+          mkdir -p canary/inputs/post-dispatch-artifact
+          gh api "repos/${GITHUB_REPOSITORY}/actions/artifacts/${EXPECTED_ARTIFACT_ID}/zip" > canary/inputs/post-dispatch.zip
+          unzip -q canary/inputs/post-dispatch.zip -d canary/inputs/post-dispatch-artifact
+
       - name: Download and verify exact failed v2 metadata-recovery artifact
         if: steps.control.outputs.dormant != 'true' && steps.control.outputs.recovery_version == 'words-writer1-artifact-recovery/v3'
         shell: bash
@@ -217,9 +236,12 @@ jobs:
           WRITER1_PRIOR_RECOVERY_V2_ROOT: canary/inputs/prior-v2-recovery-artifact
           WRITER1_LATEST_V3_FINALIZE_ROOT: canary/inputs/latest-v3-finalize-artifact
           WRITER1_GITHUB_BASELINE_ROOT: canary/inputs/github-writer1-baseline
+          WRITER1_POST_DISPATCH_ROOT: canary/inputs/post-dispatch-artifact
         run: |
           if [ "${{ steps.dispatch_mode.outputs.mode }}" = 'verified-writer1-correction-v2' ]; then
             node --import tsx scripts/360-words-verified.ts --writer1-correction-v2
+          elif [ "${{ steps.dispatch_mode.outputs.mode }}" = 'verified-writer1-retrieval-only' ]; then
+            node --import tsx scripts/360-words-verified.ts --writer1-retrieval-only
           elif [ "${{ steps.dispatch_mode.outputs.mode }}" = 'verified-writer1-correction-v1' ]; then
             node --import tsx scripts/360-words-verified.ts --writer1-correction
           else

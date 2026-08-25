@@ -3,8 +3,11 @@ import * as fs from "node:fs/promises";
 import * as path from "node:path";
 import {
   createJsonCursorReceiptStore,
+  recoverCursorWriterPostDispatch,
   recoverCursorWriterCorrection,
   recoverCursorWriterCorrectionV2,
+  validateWriter1CorrectionDiff,
+  validateWriter1CorrectionBannedLanguage,
   validateCursorWriterCorrectionReceipt,
   writer1RenderedWordsDigest,
   type CursorWriterCorrectionPrior,
@@ -28,6 +31,18 @@ export const VERIFIED_WRITER1_BASELINE = VERIFIED_WRITER1_GITHUB_BASELINE;
 export const VERIFIED_WRITER1_PROMPT_V2 = buildWriter1GithubBaselineCorrectionPrompt(VERIFIED_WRITER1_BASELINE);
 export const VERIFIED_WRITER1_PROMPT_V2_DIGEST = digestWriter1GithubBaselineCorrectionPrompt(VERIFIED_WRITER1_BASELINE);
 export const VERIFIED_WRITER1_ROUTES = ["/garage-door-repair", "/garage-door-installation"] as const;
+export const VERIFIED_WRITER1_POST_DISPATCH = Object.freeze({
+  recoveryVersion: "words-writer1-post-dispatch-retrieval/v1",
+  actionRunId: "32825265478",
+  artifactId: 9554789848,
+  agentId: VERIFIED_WRITER1_AGENT_ID,
+  runId: "run-1686013d-dec5-454c-a39e-5817448e6a96",
+  threadUrl: VERIFIED_WRITER1_THREAD_URL,
+  requestedModel: "cursor-grok-4.6-high",
+  resolvedModel: "grok-4.6",
+  effort: "high",
+  fast: false,
+});
 
 type Dict = Record<string, any>;
 function jsonFile(root: string, relative: string): string { return path.join(root, relative); }
@@ -69,6 +84,64 @@ export function validateVerifiedWriter1CorrectionV2Control(control: Dict, inputD
   const expectedBaseline = baselineControlMetadata(baseline);
   if (policy?.mode !== "writer1-correction" || policy.writer1Only !== true || policy.provider !== "cursor-sdk" || policy.model !== "cursor-grok-4.6-high" || policy.fast !== false || policy.stopAfter !== "awaiting-architect-qa") throw new Error("verified v2 control does not select the bounded Writer1 correction policy");
   if (recovery?.correctionVersion !== VERIFIED_WRITER1_CORRECTION_V2 || recovery?.sourceBranch !== VERIFIED_BRANCH || recovery?.agentId !== VERIFIED_WRITER1_AGENT_ID || recovery?.threadUrl !== VERIFIED_WRITER1_THREAD_URL || recovery?.inputDigest !== inputDigest || recovery?.promptDigest !== VERIFIED_WRITER1_PROMPT_V2_DIGEST || JSON.stringify(recovery?.baseline) !== JSON.stringify(expectedBaseline) || recovery?.allowCreate !== false || recovery?.allowResume !== true || recovery?.allowFollowUp !== true || recovery?.maxFollowUps !== 1 || recovery?.idempotencyKey !== `${VERIFIED_WRITER1_AGENT_ID}:writer1:correction:v2:${inputDigest}:${VERIFIED_WRITER1_PROMPT_V2_DIGEST}`) throw new Error("verified Writer1 correction v2 pins are invalid");
+}
+
+/** A post-dispatch wake is a read-only reconciliation mode, never a follow-up. */
+export function validateVerifiedWriter1PostDispatchControl(control: Dict, inputDigest: string): void {
+  if (control.schemaVersion !== "words-canary-control/v1" || control.requestedBy !== "architect" || control.stage !== "writer1" || control.restore !== null) throw new Error("post-dispatch control envelope is invalid");
+  if (control.wakeNonce === DORMANT) return;
+  const policy = control.policy; const recovery = verifiedControlRecovery(control);
+  const idempotencyKey = `${VERIFIED_WRITER1_AGENT_ID}:writer1:correction:v2:${inputDigest}:${VERIFIED_WRITER1_PROMPT_V2_DIGEST}`;
+  if (policy?.mode !== "writer1-retrieval-only" || policy.writer1Only !== true || policy.provider !== "cursor-sdk" || policy.model !== "cursor-grok-4.6-high" || policy.fast !== false || policy.stopAfter !== "awaiting-architect-qa" || JSON.stringify(policy.approvedRoutes) !== JSON.stringify(["/", ...VERIFIED_WRITER1_ROUTES, "/contact"])) throw new Error("post-dispatch control does not select the bounded read-only Writer1 policy");
+  if (!/^[A-Za-z0-9][A-Za-z0-9._-]{15,127}$/u.test(control.wakeNonce)) throw new Error("post-dispatch control requires an owner wake nonce");
+  if (!recovery || recovery.recoveryVersion !== VERIFIED_WRITER1_POST_DISPATCH.recoveryVersion || recovery.sourceBranch !== VERIFIED_BRANCH || recovery.actionRunId !== VERIFIED_WRITER1_POST_DISPATCH.actionRunId || Number(recovery.artifactId) !== VERIFIED_WRITER1_POST_DISPATCH.artifactId || recovery.agentId !== VERIFIED_WRITER1_POST_DISPATCH.agentId || recovery.runId !== VERIFIED_WRITER1_POST_DISPATCH.runId || recovery.threadUrl !== VERIFIED_WRITER1_POST_DISPATCH.threadUrl || recovery.requestedModel !== VERIFIED_WRITER1_POST_DISPATCH.requestedModel || recovery.resolvedModel !== VERIFIED_WRITER1_POST_DISPATCH.resolvedModel || recovery.effort !== "high" || recovery.fast !== false || recovery.inputDigest !== inputDigest || recovery.promptDigest !== VERIFIED_WRITER1_PROMPT_V2_DIGEST || recovery.idempotencyKey !== idempotencyKey || recovery.allowCreate !== false || recovery.allowResume !== false || recovery.allowFollowUp !== false || recovery.maxFollowUps !== 0 || recovery.send !== undefined || recovery.resume !== undefined || recovery.create !== undefined || policy.allowCreate !== undefined || policy.allowResume !== undefined || policy.allowFollowUp !== undefined || policy.send !== undefined) throw new Error("post-dispatch control is missing exact zero-message run and idempotency pins");
+}
+
+function readPriorDispatch(root: string): Dict {
+  const base = root;
+  const candidates = [
+    path.join(base, "runtime/writer1-dispatch-receipt.json"),
+    path.join(base, "canary/runtime/writer1-dispatch-receipt.json"),
+    path.join(base, "runtime/dispatch-receipt.json"),
+  ].filter(Boolean);
+  for (const file of candidates) { try { return JSON.parse(readFileSync(file, "utf8")) as Dict; } catch { /* try the uploader's next stable layout */ } }
+  throw new Error("prior post-dispatch Action artifact did not contain a dispatch receipt");
+}
+
+function postDispatchPrior(root: string, inputDigest: string): Dict {
+  const dispatch = readPriorDispatch(root);
+  const recovery = VERIFIED_WRITER1_POST_DISPATCH;
+  const expectedKey = `${recovery.agentId}:writer1:correction:v2:${inputDigest}:${VERIFIED_WRITER1_PROMPT_V2_DIGEST}`;
+  if ((dispatch.schemaVersion !== "verified-writer-dispatch/v2" && dispatch.schemaVersion !== "words-canary-dispatch/v2") || dispatch.stage !== "writer1" || dispatch.provider !== "cursor-sdk" || dispatch.agentId !== recovery.agentId || dispatch.runId !== recovery.runId || dispatch.threadUrl !== recovery.threadUrl || dispatch.requestedModel !== recovery.requestedModel || dispatch.resolvedModel !== recovery.resolvedModel || dispatch.effort !== "high" || dispatch.fast !== false || dispatch.inputDigest !== inputDigest || dispatch.promptDigest !== VERIFIED_WRITER1_PROMPT_V2_DIGEST || typeof dispatch.requestDigest !== "string" || !isDigest(dispatch.requestDigest)) throw new Error("prior post-dispatch receipt identity or model binding mismatch");
+  if (dispatch.idempotencyKey !== undefined && dispatch.idempotencyKey !== expectedKey) throw new Error("prior post-dispatch receipt idempotency binding mismatch");
+  return { actionRunId: recovery.actionRunId, artifactId: recovery.artifactId, runId: recovery.runId, agentId: recovery.agentId, threadUrl: recovery.threadUrl, requestedModel: recovery.requestedModel, resolvedModel: recovery.resolvedModel, modelParams: [{ id: "fast", value: "false" }, { id: "effort", value: "high" }], effort: "high", fast: false, inputDigest, promptDigest: VERIFIED_WRITER1_PROMPT_V2_DIGEST, requestDigest: dispatch.requestDigest, idempotencyKey: expectedKey, messagesSent: 1 };
+}
+
+export async function runVerifiedWriter1PostDispatchRecovery(root = process.cwd()): Promise<{ status: string; stage: string; runId: string; threadUrl: string }> {
+  const control = readJson(root, ".factory-wake/360-words-control.json");
+  if (control.wakeNonce === DORMANT) return { status: "dormant", stage: "writer1", runId: VERIFIED_WRITER1_POST_DISPATCH.runId, threadUrl: VERIFIED_WRITER1_POST_DISPATCH.threadUrl };
+  const sealed = validateSealed(root); const projection = writer1Projection(sealed); const baseline = verifiedBaseline(root, sealed, projection);
+  const inputDigest = digestOf({ sealedHandoffDigest: sealed.handoff.resealDigest, writer1Projection: projection, githubBaseline: baselineMetadata(baseline) });
+  validateVerifiedWriter1PostDispatchControl(control, inputDigest);
+  const prior = postDispatchPrior(process.env.WRITER1_POST_DISPATCH_ROOT || root, inputDigest);
+  await writeJson(jsonFile(root, "canary/runtime/state.json"), { status: "writer1-post-dispatch-retrieval", stage: "writer1", runId: prior.runId, agentId: prior.agentId, threadUrl: prior.threadUrl, requestedModel: prior.requestedModel, resolvedModel: prior.resolvedModel, effort: "high", fast: false, messagesSent: 1, recoveryMessagesSent: 0, writer2Blocked: true, nextStage: null });
+  const result = await recoverCursorWriterPostDispatch({
+    receiptStore: createJsonCursorReceiptStore(jsonFile(root, "canary/runtime/cursor-receipts.json")),
+    prior: prior as any,
+    validateOutput: (json) => {
+      const output = parseAndValidateWriter1Output(json, projection);
+      const diff = validateWriter1CorrectionDiff(baseline.output, output);
+      if (diff.length) throw new Error(`post-dispatch Writer1 output changed frozen fields: ${diff.join(", ")}`);
+      const banned = validateWriter1CorrectionBannedLanguage(output);
+      if (banned.length) throw new Error(`post-dispatch Writer1 output contains banned mutable language at ${banned[0]?.path || "/"}`);
+      return output;
+    },
+  });
+  await writeJson(jsonFile(root, "canary/runtime/writer1-recovery-receipt.json"), result.receipt);
+  await writeJson(jsonFile(root, "canary/runtime/writer1-validation.json"), { schemaVersion: "verified-writer1-validation/post-dispatch-retrieval/v1", status: "valid-awaiting-architect-qa", stage: "writer1", outputDigest: result.receipt.outputDigest, sourceBranch: VERIFIED_BRANCH, actionRunId: prior.actionRunId, artifactId: prior.artifactId, agentId: prior.agentId, runId: prior.runId, threadUrl: prior.threadUrl, requestedModel: prior.requestedModel, resolvedModel: prior.resolvedModel, effort: prior.effort, fast: false, originalMessagesSent: 1, recoveryMessagesSent: 0, nextStage: null, writer2Blocked: true });
+  await writeJson(jsonFile(root, "canary/outputs/writer1-output.json"), result.output);
+  await writeJson(jsonFile(root, "canary/runtime/state.json"), { status: "awaiting-architect-qa", stage: "writer1", runId: prior.runId, agentId: prior.agentId, threadUrl: prior.threadUrl, recoveryReceiptPath: "canary/runtime/writer1-recovery-receipt.json", originalMessagesSent: 1, recoveryMessagesSent: 0, messagesSent: 1, nextStage: null, writer2Blocked: true });
+  return { status: "awaiting-architect-qa", stage: "writer1", runId: result.receipt.jobId, threadUrl: result.threadUrl };
 }
 
 export async function runVerifiedWriter1CorrectionV2(root = process.cwd()): Promise<{ status: string; stage: string; threadUrl?: string; correctionRunId?: string }> {
@@ -155,14 +228,17 @@ export function assertVerifiedReceiptMetadata(receipt: Dict): void {
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) {
-  const operation = process.argv.includes("--writer2") ? runVerifiedWriter2() : process.argv.includes("--writer3") ? runVerifiedWriter3() : process.argv.includes("--writer1-correction-v2") ? runVerifiedWriter1CorrectionV2() : runVerifiedWriter1Correction();
+  const operation = process.argv.includes("--writer2") ? runVerifiedWriter2() : process.argv.includes("--writer3") ? runVerifiedWriter3() : process.argv.includes("--writer1-retrieval-only") ? runVerifiedWriter1PostDispatchRecovery() : process.argv.includes("--writer1-correction-v2") ? runVerifiedWriter1CorrectionV2() : runVerifiedWriter1Correction();
   operation.then((result) => console.log(JSON.stringify(result))).catch(async (error) => {
     const code = error && typeof error === "object" && typeof (error as Dict).code === "string" ? (error as Dict).code : "VERIFIED_WRITER1_CORRECTION_FAILED";
     let dispatch: Dict | undefined;
     try { dispatch = readJson(process.cwd(), "canary/runtime/writer1-dispatch-receipt.json"); } catch { dispatch = undefined; }
+    const retrievalOnly = process.argv.includes("--writer1-retrieval-only");
+    const priorRoot = process.env.WRITER1_POST_DISPATCH_ROOT;
+    if (!dispatch && retrievalOnly && priorRoot) { try { dispatch = readPriorDispatch(priorRoot); } catch { dispatch = undefined; } }
     const messagesSent = dispatch?.runId ? 1 : 0;
-    await writeJson(path.join(process.cwd(), "canary/runtime/failure.json"), { schemaVersion: "verified-writer-failure/v2", status: "failed", stage: "writer1", errorCode: code, writer2Blocked: true, nextStage: null, messagesSent, ...(dispatch ? { agentId: dispatch.agentId, threadUrl: dispatch.threadUrl, runId: dispatch.runId, promptDigest: dispatch.promptDigest } : {}) });
-    await writeJson(path.join(process.cwd(), "canary/runtime/state.json"), { status: "writer1-failed", stage: "writer1", errorCode: code, writer2Blocked: true, nextStage: null, messagesSent, ...(dispatch ? { agentId: dispatch.agentId, threadUrl: dispatch.threadUrl, runId: dispatch.runId } : {}) });
+    await writeJson(path.join(process.cwd(), "canary/runtime/failure.json"), { schemaVersion: "verified-writer-failure/v2", status: "failed", stage: "writer1", errorCode: code, writer2Blocked: true, nextStage: null, messagesSent, ...(retrievalOnly ? { recoveryMessagesSent: 0 } : {}), ...(dispatch ? { agentId: dispatch.agentId, threadUrl: dispatch.threadUrl, runId: dispatch.runId, promptDigest: dispatch.promptDigest } : {}) });
+    await writeJson(path.join(process.cwd(), "canary/runtime/state.json"), { status: "writer1-failed", stage: "writer1", errorCode: code, writer2Blocked: true, nextStage: null, messagesSent, ...(retrievalOnly ? { recoveryMessagesSent: 0 } : {}), ...(dispatch ? { agentId: dispatch.agentId, threadUrl: dispatch.threadUrl, runId: dispatch.runId } : {}) });
     console.error(error instanceof Error ? error.message : String(error)); process.exitCode = 1;
   });
 }

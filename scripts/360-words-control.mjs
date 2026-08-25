@@ -65,6 +65,18 @@ export const EXPECTED_RECOVERY_V3_FINALIZE = Object.freeze({
   absoluteArtifactPath: "/opt/cursor/artifacts/writer1-output.json",
   apiArtifactPath: "artifacts/writer1-output.json",
 });
+export const EXPECTED_POST_DISPATCH_RETRIEVAL = Object.freeze({
+  recoveryVersion: "words-writer1-post-dispatch-retrieval/v1",
+  actionRunId: "32825265478",
+  artifactId: 9554789848,
+  agentId: "bc-2486f645-c31c-4532-8145-fbe3af1d45a8",
+  runId: "run-1686013d-dec5-454c-a39e-5817448e6a96",
+  threadUrl: "https://cursor.com/agents/bc-2486f645-c31c-4532-8145-fbe3af1d45a8",
+  requestedModel: "cursor-grok-4.6-high",
+  resolvedModel: "grok-4.6",
+  effort: "high",
+  fast: false,
+});
 export const EXPECTED_VERIFIED_CORRECTION = Object.freeze({
   correctionVersion: "words-writer1-correction/v1",
   sourceBranch: "architect/360-words-canary-verified",
@@ -87,6 +99,7 @@ export function selectVerifiedWriter1Dispatch(control) {
   const recovery = control?.policy?.recovery ?? control?.recovery;
   if (control?.policy?.mode === "writer1-correction" && recovery?.correctionVersion === "words-writer1-correction/v2") return "verified-writer1-correction-v2";
   if (control?.policy?.mode === "writer1-correction" && recovery?.correctionVersion === "words-writer1-correction/v1") return "verified-writer1-correction-v1";
+  if (control?.policy?.mode === "writer1-retrieval-only" && recovery?.recoveryVersion === EXPECTED_POST_DISPATCH_RETRIEVAL.recoveryVersion) return "verified-writer1-retrieval-only";
   return "unsupported-verified-lane";
 }
 
@@ -97,7 +110,7 @@ export function validateControl(control, input = {}) {
   if (control.policy?.writer1Only !== true || control.policy?.provider !== "cursor-sdk" || control.policy?.model !== "cursor-grok-4.6-high" || control.policy?.fast !== false) throw new Error("immutable Writer1 policy mismatch");
   if (control.restore !== null) throw new Error("Writer1 may not restore a previous artifact");
   if (control.wakeNonce === DORMANT_NONCE) return { dormant: true, stage: "writer1" };
-  if (control.policy?.mode !== "artifact-recovery" && control.policy?.mode !== "validation-only" && control.policy?.mode !== "validation-report-only" && control.policy?.mode !== "writer1-correction") throw new Error("active Writer1 wake must explicitly select artifact-recovery, validation-only, validation-report-only, or writer1-correction mode");
+  if (control.policy?.mode !== "artifact-recovery" && control.policy?.mode !== "validation-only" && control.policy?.mode !== "validation-report-only" && control.policy?.mode !== "writer1-correction" && control.policy?.mode !== "writer1-retrieval-only") throw new Error("active Writer1 wake must explicitly select artifact-recovery, validation-only, validation-report-only, writer1-correction, or writer1-retrieval-only mode");
   if (typeof control.wakeNonce !== "string" || !/^[A-Za-z0-9][A-Za-z0-9._-]{15,127}$/u.test(control.wakeNonce)) throw new Error("invalid wake nonce");
   const changedPaths = Array.isArray(input.changedPaths) ? input.changedPaths : [];
   if (changedPaths.length !== 1 || changedPaths[0] !== CONTROL_PATH) throw new Error("active wake must change only the control file");
@@ -105,8 +118,10 @@ export function validateControl(control, input = {}) {
   if (control.policy?.recovery !== undefined && control.recovery !== undefined) throw new Error("active wake may not provide ambiguous policy and top-level recovery objects");
   const recovery = control.policy?.recovery ?? control.recovery;
   const isVerifiedCorrection = control.policy?.mode === "writer1-correction" && (recovery?.correctionVersion === "words-writer1-correction/v1" || recovery?.correctionVersion === "words-writer1-correction/v2");
-  if (input.verifiedLane === true && !isVerifiedCorrection) throw new Error("isolated verified lane permits only its bounded Writer1 correction path");
-  if (!recovery || (!isVerifiedCorrection && Object.entries(EXPECTED_RECOVERY).some(([key, value]) => recovery[key] !== value))) throw new Error("active artifact-recovery wake is missing the exact prior/run/source tuple");
+  const isVerifiedRetrieval = control.policy?.mode === "writer1-retrieval-only" && recovery?.recoveryVersion === EXPECTED_POST_DISPATCH_RETRIEVAL.recoveryVersion;
+  const isVerifiedLane = isVerifiedCorrection || isVerifiedRetrieval;
+  if (input.verifiedLane === true && !isVerifiedLane) throw new Error("isolated verified lane permits only its bounded Writer1 correction or post-dispatch retrieval path");
+  if (!recovery || (!isVerifiedLane && Object.entries(EXPECTED_RECOVERY).some(([key, value]) => recovery[key] !== value))) throw new Error("active artifact-recovery wake is missing the exact prior/run/source tuple");
   if (typeof recovery.sourceSha !== "string" || !/^[0-9a-f]{40}$/u.test(recovery.sourceSha)) throw new Error("active artifact-recovery wake requires an exact 40-hex sourceSha");
   const commitSha = input.commitSha;
   const beforeSha = input.beforeSha;
@@ -118,7 +133,9 @@ export function validateControl(control, input = {}) {
   const v3PromptDigest = digestWriter1ArtifactRecoveryPrompt("v3");
   const v5PromptDigest = digestWriter1ArtifactRecoveryPrompt("v5");
   const v6PromptDigest = digestWriter1GithubBaselineCorrectionPrompt(VERIFIED_WRITER1_GITHUB_BASELINE);
-  if (recovery.correctionVersion === "words-writer1-correction/v1") {
+  if (recovery.recoveryVersion === EXPECTED_POST_DISPATCH_RETRIEVAL.recoveryVersion) {
+    if (control.policy?.mode !== "writer1-retrieval-only" || Object.entries(EXPECTED_POST_DISPATCH_RETRIEVAL).some(([key, value]) => recovery[key] !== value) || typeof recovery.inputDigest !== "string" || !/^sha256:[0-9a-f]{64}$/u.test(recovery.inputDigest) || recovery.promptDigest !== v6PromptDigest || typeof recovery.idempotencyKey !== "string" || recovery.idempotencyKey !== `${EXPECTED_POST_DISPATCH_RETRIEVAL.agentId}:writer1:correction:v2:${recovery.inputDigest}:${v6PromptDigest}` || recovery.allowCreate !== false || recovery.allowResume !== false || recovery.allowFollowUp !== false || recovery.maxFollowUps !== 0 || recovery.send !== undefined || recovery.resume !== undefined || recovery.create !== undefined || control.policy.allowCreate !== undefined || control.policy.allowResume !== undefined || control.policy.allowFollowUp !== undefined || control.policy.send !== undefined) throw new Error("active post-dispatch wake is missing the exact original receipt, zero-message, or idempotency pins");
+  } else if (recovery.correctionVersion === "words-writer1-correction/v1") {
     if (control.policy?.mode !== "writer1-correction" || Object.entries(EXPECTED_VERIFIED_CORRECTION).some(([key, value]) => recovery[key] !== value) || recovery.promptDigest !== v5PromptDigest || typeof recovery.sourceSha !== "string" || !/^[0-9a-f]{40}$/u.test(recovery.sourceSha) || recovery.allowCreate !== false || recovery.allowResume !== true || recovery.allowFollowUp !== true || recovery.maxFollowUps !== 1 || recovery.idempotencyKey !== `${EXPECTED_VERIFIED_CORRECTION.agentId}:writer1:correction:v1:${EXPECTED_VERIFIED_CORRECTION.inputDigest}:${v5PromptDigest}` || recovery.send !== undefined || control.policy.allowCreate !== undefined || control.policy.allowResume !== undefined || control.policy.allowFollowUp !== undefined || control.policy.send !== undefined) throw new Error("active Writer1 correction wake is missing exact source, same-thread, canonical-prompt, or idempotency pins");
   } else if (recovery.correctionVersion === "words-writer1-correction/v2") {
     if (control.policy?.mode !== "writer1-correction" || Object.entries(EXPECTED_VERIFIED_CORRECTION_V2).some(([key, value]) => JSON.stringify(recovery[key]) !== JSON.stringify(value)) || typeof recovery.inputDigest !== "string" || !/^sha256:[0-9a-f]{64}$/u.test(recovery.inputDigest) || recovery.promptDigest !== v6PromptDigest || typeof recovery.idempotencyKey !== "string" || !/^bc-2486f645-c31c-4532-8145-fbe3af1d45a8:writer1:correction:v2:sha256:[0-9a-f]{64}:sha256:[0-9a-f]{64}$/u.test(recovery.idempotencyKey) || !recovery.idempotencyKey.endsWith(`:${v6PromptDigest}`) || recovery.allowCreate !== false || recovery.allowResume !== true || recovery.allowFollowUp !== true || recovery.maxFollowUps !== 1 || recovery.send !== undefined || control.policy.allowCreate !== undefined || control.policy.allowResume !== undefined || control.policy.allowFollowUp !== undefined || control.policy.send !== undefined) throw new Error("active Writer1 correction v2 wake is missing exact GitHub baseline, canonical-prompt, source, or idempotency pins");

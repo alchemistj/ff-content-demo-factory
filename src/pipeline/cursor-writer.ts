@@ -1,3 +1,6 @@
+Warning: truncated output (original token count: 44927)
+Total output lines: 1646
+
 import { createHash, createHmac, timingSafeEqual } from "node:crypto";
 import * as fs from "node:fs/promises";
 import * as path from "node:path";
@@ -22,7 +25,7 @@ export interface CursorWriterReceipt {
   effort: "high"; effortParameterId?: string; effortAttestationSource: "official-response" | "official-registry-parameter" | "named-model-default";
   attestationSource: "official-response" | "bound-create-request"; apiVersion: "cloud-agent-api-v1";
   mode?: "initial" | "same-thread-retrieval" | "same-thread-artifact-recovery" | "validation-only-artifact-recovery" | "same-thread-correction";
-  correctionVersion?: "words-writer1-retrieval/v1" | "words-writer1-correction/v1" | "words-writer1-correction/v2";
+  correctionVersion?: "words-writer1-retrieval/v1" | "words-writer1-post-dispatch-retrieval/v1" | "words-writer1-correction/v1" | "words-writer1-correction/v2";
   prior?: CursorFollowUpBindings;
   followUpPromptDigest?: string;
   artifact?: CursorArtifactBinding;
@@ -143,6 +146,10 @@ export function validateCursorWriterReceipt(receipt: unknown, cursorApiKey?: str
   if (value.status !== "complete") throw new CursorWriterExecutionError("CURSOR_RECEIPT_INVALID", "Only completed Cursor receipts may complete a writer stage");
   for (const field of ["jobId", "agentId", "threadUrl", "inputDigest", "promptDigest", "outputDigest", "completedAt", "output"]) if (!(field in value) || value[field] === undefined || (typeof value[field] === "string" && !value[field].trim())) throw new CursorWriterExecutionError("CURSOR_RECEIPT_INVALID", `Receipt is missing ${field}`);
   const agentId = String(value.agentId); assertThreadUrl(value.threadUrl, agentId);
+  if (value.correctionVersion === "words-writer1-post-dispatch-retrieval/v1") {
+    validateCursorPostDispatchRecoveryReceipt(value, cursorApiKey);
+    return;
+  }
   if (!agentId.startsWith("bc-")) throw new CursorWriterExecutionError("CURSOR_AGENT_ID_INVALID", "Writer receipt must be bound to a Cursor Cloud Agent ID");
   if (!String(value.jobId).startsWith("run-")) throw new CursorWriterExecutionError("CURSOR_JOB_ID_INVALID", "Writer receipt must be bound to a Cursor Cloud run ID");
   assertDigest(value.inputDigest, "inputDigest"); assertDigest(value.promptDigest, "promptDigest"); assertDigest(value.outputDigest, "outputDigest");
@@ -226,6 +233,34 @@ export interface CursorFollowUpReceipt extends CursorWriterReceipt {
   correctionVersion: "words-writer1-retrieval/v1";
   prior: CursorFollowUpBindings;
   followUpPromptDigest: string;
+}
+/** The original dispatch already spent its one message. This recovery never resumes or sends. */
+export interface CursorPostDispatchRecoveryPrior {
+  actionRunId: string;
+  artifactId: number;
+  runId: string;
+  agentId: string;
+  threadUrl: string;
+  requestedModel: typeof REQUIRED_CURSOR_MODEL;
+  resolvedModel: typeof OFFICIAL_CURSOR_MODEL;
+  modelParams: Array<{ id: string; value: string }>;
+  effort: "high";
+  fast: false;
+  inputDigest: string;
+  promptDigest: string;
+  requestDigest: string;
+  idempotencyKey: string;
+  messagesSent: 1;
+}
+export interface CursorPostDispatchRecoveryReceipt extends CursorWriterReceipt {
+  mode: "same-thread-retrieval";
+  correctionVersion: "words-writer1-post-dispatch-retrieval/v1";
+  originalDispatch: CursorPostDispatchRecoveryPrior;
+  recoveredRunId: string;
+  recoveryMessagesSent: 0;
+  writer2Blocked: true;
+  nextStage: null;
+  extraction: "plain-json" | "fenced-json";
 }
 /** Conservative upper bound for the complete two-page Writer1 artifact. */
 export const MAX_WRITER1_ARTIFACT_BYTES = 1024 * 1024;
@@ -520,12 +555,10 @@ async function officialCloudTransport(): Promise<CloudTransport> {
       return result;
     },
     async getRun(agentId, jobId, apiKey) {
-      const response = await fetch(`${CURSOR_CLOUD_API}/v1/agents/${encodeURIComponent(agentId)}/runs/${encodeURIComponent(jobId)}`, { headers: { Authorization: `Basic ${Buffer.from(`${apiKey}:`).toString("base64")}`, Accept: "application/json" } });
-      if (!response.ok) throw new CursorWriterExecutionError("CURSOR_RUN_RECORD_FAILED", `Cursor Cloud run request failed with ${response.status}`);
-      const payload = asRecord(await response.json());
-      if (!payload) throw new CursorWriterExecutionError("CURSOR_RUN_RECORD_INVALID", "Cursor Cloud run record is not an object");
-      const result = { ...payload, wait: async () => payload } as unknown as Run;
-      return result;
+      // Official SDK retrieval is read-only: Agent.getRun performs the
+      // authenticated GET /v1/agents/{agentId}/runs/{runId}. It cannot create,
+      // resume, send, or wait a new turn.
+      return Agent.getRun(jobId, { runtime: "cloud", agentId, apiKey });
     },
     artifactClient: createCursorArtifactClient(),
   };
@@ -533,6 +566,95 @@ async function officialCloudTransport(): Promise<CloudTransport> {
 function deterministicAgentId(key: string): string { const hex = createHash("sha256").update(key).digest("hex").slice(0, 32); return `bc-${hex.slice(0, 8)}-${hex.slice(8, 12)}-4${hex.slice(13, 16)}-8${hex.slice(17, 20)}-${hex.slice(20, 32)}`; }
 function resolvedModelOf(agent: SDKAgent, run: Run, result: unknown): unknown { const resultRecord = asRecord(result); const runModel = asRecord(run.model); const agentModel = asRecord(agent.model); return runModel?.id ?? (resultRecord && asRecord(resultRecord.model)?.id) ?? agentModel?.id; }
 function outputOf(result: unknown): unknown { const value = asRecord(result); return value?.result ?? value?.output ?? result; }
+
+/**
+ * Extract exactly one JSON object from a completed Cursor run result. A run
+ * result is not a deliverable merely because it is a string: summaries,
+ * prose-wrapped JSON, multiple candidates, arrays, and sentinel strings all
+ * fail closed here. One fenced JSON block is accepted only when it is the
+ * entire non-whitespace response.
+ */
+export function extractSingleWriter1Json(raw: unknown): { json: string; format: "plain-json" | "fenced-json" } {
+  if (typeof raw !== "string" || !raw.trim()) throw new CursorWriterExecutionError("CURSOR_WRITER1_OUTPUT_NOT_STRING", "Completed Writer1 run did not return a non-empty JSON string");
+  const text = raw.trim();
+  if (text === "OUTPUT_NOT_RECOVERABLE") throw new CursorWriterExecutionError("OUTPUT_NOT_RECOVERABLE", "The completed Writer1 run reported that its output is not recoverable");
+  const fenced = /^```(?:json)?\s*([\s\S]*?)\s*```$/iu.exec(text);
+  const candidate = fenced ? (fenced[1] || "").trim() : text;
+  if (fenced && /```/u.test(candidate)) throw new CursorWriterExecutionError("CURSOR_WRITER1_OUTPUT_AMBIGUOUS", "Writer1 run returned multiple fenced JSON candidates");
+  let parsed: unknown;
+  try { parsed = JSON.parse(candidate); } catch { throw new CursorWriterExecutionError("CURSOR_WRITER1_OUTPUT_MALFORMED_JSON", "Writer1 run result is not valid JSON"); }
+  if (!asRecord(parsed)) throw new CursorWriterExecutionError("CURSOR_WRITER1_OUTPUT_NOT_OBJECT", "Writer1 recovery requires exactly one JSON object");
+  if (!fenced && /```/u.test(text)) throw new CursorWriterExecutionError("CURSOR_WRITER1_OUTPUT_AMBIGUOUS", "Writer1 run contains more than one JSON candidate or a partial fence");
+  return { json: candidate, format: fenced ? "fenced-json" : "plain-json" };
+}
+
+function validatePostDispatchPrior(prior: CursorPostDispatchRecoveryPrior): void {
+  if (!prior || prior.actionRunId !== "32825265478" || prior.artifactId !== 9554789848 || prior.agentId !== "bc-2486f645-c31c-4532-8145-fbe3af1d45a8" || prior.runId !== "run-1686013d-dec5-454c-a39e-5817448e6a96" || prior.threadUrl !== `https://cursor.com/agents/${prior.agentId}` || prior.requestedModel !== REQUIRED_CURSOR_MODEL || prior.resolvedModel !== OFFICIAL_CURSOR_MODEL || prior.effort !== "high" || prior.fast !== false || prior.messagesSent !== 1) throw new CursorWriterExecutionError("CURSOR_POST_DISPATCH_PRIOR_INVALID", "Post-dispatch recovery is not bound to the exact failed Writer1 dispatch");
+  for (const [field, value] of Object.entries(prior)) if (["actionRunId", "artifactId", "runId", "agentId", "threadUrl", "requestedModel", "resolvedModel", "modelParams", "effort", "fast", "inputDigest", "promptDigest", "requestDigest", "idempotencyKey", "messagesSent"].includes(field) === false && value !== undefined) throw new CursorWriterExecutionError("CURSOR_POST_DISPATCH_PRIOR_INVALID", `Unexpected post-dispatch prior field ${field}`);
+  assertDigest(prior.inputDigest, "inputDigest"); assertDigest(prior.promptDigest, "promptDigest"); assertDigest(prior.requestDigest, "requestDigest");
+  if (!/^bc-2486f645-c31c-4532-8145-fbe3af1d45a8:writer1:correction:v2:sha256:[0-9a-f]{64}:sha256:[0-9a-f]{64}$/u.test(prior.idempotencyKey)) throw new CursorWriterExecutionError("CURSOR_POST_DISPATCH_IDEMPOTENCY_INVALID", "Post-dispatch recovery idempotency key is not the original v2 key shape");
+  if (!Array.isArray(prior.modelParams) || prior.modelParams.length !== 2 || JSON.stringify(prior.modelParams) !== JSON.stringify([{ id: "fast", value: "false" }, { id: "effort", value: "high" }])) throw new CursorWriterExecutionError("CURSOR_POST_DISPATCH_MODEL_INVALID", "Post-dispatch recovery model parameters are not Grok 4.6 high with fast=false");
+}
+
+export function validateCursorPostDispatchRecoveryReceipt(receipt: unknown, cursorApiKey?: string): asserts receipt is CursorPostDispatchRecoveryReceipt {
+  const value = asRecord(receipt); if (!value) throw new CursorWriterExecutionError("CURSOR_POST_DISPATCH_RECEIPT_INVALID", "Post-dispatch recovery receipt must be an object");
+  const prior = value.originalDispatch as CursorPostDispatchRecoveryPrior;
+  validatePostDispatchPrior(prior);
+  if (value.stage !== "writer1" || value.provider !== CURSOR_PROVIDER || value.requestedModel !== REQUIRED_CURSOR_MODEL || value.resolvedModel !== OFFICIAL_CURSOR_MODEL || value.fast !== false || value.mode !== "same-thread-retrieval" || value.correctionVersion !== "words-writer1-post-dispatch-retrieval/v1" || value.status !== "complete" || value.jobId !== prior.runId || value.recoveredRunId !== prior.runId || value.agentId !== prior.agentId || value.threadUrl !== prior.threadUrl || value.inputDigest !== prior.inputDigest || value.promptDigest !== prior.promptDigest || value.requestDigest !== prior.requestDigest || value.effort !== "high" || value.recoveryMessagesSent !== 0 || value.writer2Blocked !== true || value.nextStage !== null || (value.extraction !== "plain-json" && value.extraction !== "fenced-json")) throw new CursorWriterExecutionError("CURSOR_POST_DISPATCH_RECEIPT_BINDING_INVALID", "Post-dispatch receipt lost the original run, model, or no-message binding");
+  assertDigest(value.outputDigest, "outputDigest");
+  if (digestOf(value.output) !== value.outputDigest) throw new CursorWriterExecutionError("CURSOR_POST_DISPATCH_OUTPUT_TAMPERED", "Recovered Writer1 output no longer matches its receipt digest");
+  validateReceiptIntegrityMac(value, cursorApiKey);
+}
+
+interface CursorPostDispatchRecoveryInternalInput {
+  env: Record<string, string | undefined>;
+  receiptStore: CursorWriterReceiptStore;
+  prior: CursorPostDispatchRecoveryPrior;
+  validateOutput: (json: string) => unknown;
+  now?: () => Date;
+  transport: CloudTransport;
+}
+
+async function recoverCursorWriterPostDispatchInternal(input: CursorPostDispatchRecoveryInternalInput): Promise<{ output: unknown; receipt: CursorPostDispatchRecoveryReceipt; threadUrl: string }> {
+  const apiKey = input.env.CURSOR_API_KEY;
+  if (!apiKey) throw new CursorWriterExecutionError("CURSOR_API_KEY_REQUIRED", "Post-dispatch retrieval requires CURSOR_API_KEY");
+  validateCursorWriterRuntime({ provider: CURSOR_PROVIDER, requestedModel: input.env.CURSOR_MODEL, resolvedModel: OFFICIAL_CURSOR_MODEL, fast: input.env.CURSOR_FAST === "false" || input.env.CURSOR_FAST === "off" ? false : input.env.CURSOR_FAST });
+  validatePostDispatchPrior(input.prior);
+  const key = `${input.prior.agentId}:writer1:post-dispatch-retrieval:v1:${input.prior.runId}:${input.prior.inputDigest}:${input.prior.promptDigest}`;
+  const existing = await input.receiptStore.get(key);
+  if (existing) {
+    validateCursorPostDispatchRecoveryReceipt(existing, apiKey);
+    return { output: existing.output, receipt: existing, threadUrl: existing.threadUrl };
+  }
+  if (!input.transport.getRun) throw new CursorWriterExecutionError("CURSOR_RUN_RETRIEVAL_REQUIRED", "Post-dispatch recovery requires the official completed-run lookup");
+  // This branch is intentionally retrieval-only. It does not list models,
+  // resume an agent, wait a run, create an agent, or send a message.
+  const run = await input.transport.getRun(input.prior.agentId, input.prior.runId, apiKey);
+  if (run.id !== input.prior.runId || run.agentId !== input.prior.agentId || run.status !== "finished") throw new CursorWriterExecutionError("CURSOR_POST_DISPATCH_RUN_INVALID", "The exact prior Cursor run is not a completed run for the bound agent");
+  const raw = run.result;
+  const extracted = extractSingleWriter1Json(raw);
+  const output = input.validateOutput(extracted.json);
+  const now = input.now || (() => new Date());
+  const registryItem = { id: OFFICIAL_CURSOR_MODEL, parameters: [{ id: "fast", values: [{ value: "false" }] }, { id: "effort", values: [{ value: "high" }] }] };
+  const request = { apiVersion: API_VERSION, mode: "original-dispatch-attestation", agentId: input.prior.agentId, runId: input.prior.runId, idempotencyKey: input.prior.idempotencyKey, inputDigest: input.prior.inputDigest, promptDigest: input.prior.promptDigest };
+  const receipt = withReceiptIntegrityMac({ stage: "writer1", provider: CURSOR_PROVIDER, requestedModel: REQUIRED_CURSOR_MODEL, resolvedModel: OFFICIAL_CURSOR_MODEL, fast: false, jobId: input.prior.runId, agentId: input.prior.agentId, threadUrl: input.prior.threadUrl, inputDigest: input.prior.inputDigest, promptDigest: input.prior.promptDigest, outputDigest: digestOf(output), completedAt: now().toISOString(), status: "complete", output, requestDigest: input.prior.requestDigest, createRequest: request, registryItem, registryDigest: digestOf(registryItem), modelParams: input.prior.modelParams, effort: "high", effortAttestationSource: "official-response", attestationSource: "official-response", apiVersion: API_VERSION, mode: "same-thread-retrieval", correctionVersion: "words-writer1-post-dispatch-retrieval/v1", originalDispatch: input.prior, recoveredRunId: input.prior.runId, recoveryMessagesSent: 0, writer2Blocked: true, nextStage: null, extraction: extracted.format } as unknown as CursorPostDispatchRecoveryReceipt, apiKey);
+  validateCursorPostDispatchRecoveryReceipt(receipt, apiKey);
+  await input.receiptStore.put(key, receipt);
+  return { output, receipt, threadUrl: input.prior.threadUrl };
+}
+
+/** Production post-dispatch recovery owns process.env and the official SDK. */
+export async function recoverCursorWriterPostDispatch(input: Omit<CursorPostDispatchRecoveryInternalInput, "env" | "transport">): Promise<{ output: unknown; receipt: CursorPostDispatchRecoveryReceipt; threadUrl: string }> {
+  const candidate = input as unknown as Record<string, unknown>;
+  if ("env" in candidate || "transport" in candidate) throw new CursorWriterExecutionError("CURSOR_POST_DISPATCH_SUBSTITUTION_FORBIDDEN", "Production post-dispatch recovery does not accept caller-selected environment or transport");
+  return recoverCursorWriterPostDispatchInternal({ ...input, env: process.env, transport: await officialCloudTransport() });
+}
+
+/** Explicit test-only seam: its transport must throw if any message operation is attempted. */
+export async function recoverCursorWriterPostDispatchForTest(input: CursorPostDispatchRecoveryInternalInput): Promise<{ output: unknown; receipt: CursorPostDispatchRecoveryReceipt; threadUrl: string }> {
+  if (!process.execArgv.some((arg) => arg.includes("--test"))) throw new CursorWriterExecutionError("CURSOR_TEST_SEAM_FORBIDDEN", "Post-dispatch recovery seams are test-only");
+  return recoverCursorWriterPostDispatchInternal(input);
+}
 
 export function validateCursorWriterFollowUpReceipt(receipt: unknown, prior: CursorFollowUpBindings, promptDigest: string, cursorApiKey?: string): asserts receipt is CursorFollowUpReceipt {
   validateCursorWriterReceipt(receipt, cursorApiKey);
@@ -744,259 +866,7 @@ export function validateWriter1CorrectionBannedLanguage(value: unknown): Writer1
   });
   return errors;
 }
-function writer1CorrectionDiff(before: unknown, after: unknown, pathValue = ""): string[] {
-  if (Object.is(before, after)) return [];
-  if (Array.isArray(before) || Array.isArray(after)) {
-    if (!Array.isArray(before) || !Array.isArray(after) || before.length !== after.length) return [pathValue || "/"];
-    return before.flatMap((child, index) => writer1CorrectionDiff(child, after[index], `${pathValue}/${index}`));
-  }
-  const beforeRecord = asRecord(before); const afterRecord = asRecord(after);
-  if (beforeRecord || afterRecord) {
-    if (!beforeRecord || !afterRecord) return [pathValue || "/"];
-    return [...new Set([...Object.keys(beforeRecord), ...Object.keys(afterRecord)])].sort().flatMap((key) => writer1CorrectionDiff(beforeRecord[key], afterRecord[key], `${pathValue}/${key}`));
-  }
-  return [pathValue || "/"];
-}
-export function validateWriter1CorrectionDiff(before: unknown, after: unknown): string[] {
-  const beforeRecord = asRecord(before); const afterRecord = asRecord(after);
-  if (!beforeRecord || !afterRecord || !Array.isArray(beforeRecord.pages) || !Array.isArray(afterRecord.pages) || beforeRecord.pages.length !== 2 || afterRecord.pages.length !== 2) return ["/"];
-  const errors: string[] = [];
-  for (const [pageIndex, pageValue] of beforeRecord.pages.entries()) {
-    const page = asRecord(pageValue); const next = asRecord(afterRecord.pages[pageIndex]);
-    if (!page || !next || typeof next.body !== "string") errors.push(`/pages/${pageIndex}/body`);
-    if (Array.isArray(page?.sections) && Array.isArray(next?.sections)) for (const [sectionIndex] of page.sections.entries()) {
-      const nextSection = asRecord(next.sections[sectionIndex]);
-      if (!nextSection || typeof nextSection.heading !== "string") errors.push(`/pages/${pageIndex}/sections/${sectionIndex}/heading`);
-      if (!nextSection || typeof nextSection.body !== "string") errors.push(`/pages/${pageIndex}/sections/${sectionIndex}/body`);
-    }
-  }
-  for (const changed of writer1CorrectionDiff(before, after)) if (!correctionMutablePath(changed)) errors.push(changed);
-  return [...new Set(errors)].sort();
-}
-export function writer1CorrectionChangedPaths(before: unknown, after: unknown): string[] { return [...new Set(writer1CorrectionDiff(before, after))].sort(); }
-export function writer1CorrectionChangedPathsDigest(paths: string[]): string { return digestOf([...paths].sort()); }
-export const WRITER1_POINTER_LEDGER_NORMALIZATION_VERSION = "words-writer1-pointer-ledger-normalization/v1" as const;
-const WRITER1_REVIEW_EVIDENCE_FORBIDDEN_KEYS = new Set(["primaryKeyword", "title", "seoTitle", "metaDescription", "h1", "body", "heading", "quote", "excerpt", "exactText", "attribution", "reviewer", "author", "claim", "statement", "text"]);
-
-/**
- * The strict Writer1 validator consumes the exact JSON text returned by Cursor.
- * Keep serialization in one place so preflight and the receipt path validate
- * identical bytes after pointer-ledger normalization.
- */
-export function serializeWriter1OutputDeterministically(value: unknown): string {
-  const serialized = JSON.stringify(value);
-  if (typeof serialized !== "string") throw new CursorWriterExecutionError("CURSOR_ARTIFACT_OUTPUT_INVALID", "Normalized Writer1 output is not serializable JSON");
-  return serialized;
-}
-
-function withoutWriter1ReviewEvidence(value: unknown): unknown {
-  if (Array.isArray(value)) return value.map(withoutWriter1ReviewEvidence);
-  const record = asRecord(value);
-  if (!record) return value;
-  const result: Record<string, unknown> = {};
-  for (const [key, child] of Object.entries(record)) {
-    if (key === "reviewEvidence") continue;
-    result[key] = withoutWriter1ReviewEvidence(child);
-  }
-  return result;
-}
-
-/** Semantic copy proof excludes the typed reviewEvidence pointer ledger, but keeps all renderable page words. */
-export function writer1SemanticRenderedCopyProjection(value: unknown): unknown {
-  return writer1RenderedWordsProjection(withoutWriter1ReviewEvidence(value));
-}
-export function writer1SemanticRenderedCopyDigest(value: unknown): string { return digestOf(writer1SemanticRenderedCopyProjection(value)); }
-
-export function normalizeWriter1PointerLedger(value: unknown): { output: unknown; removed: Writer1PointerLedgerRemoval[] } {
-  const output = structuredClone(value);
-  const removed: Writer1PointerLedgerRemoval[] = [];
-  const root = asRecord(output);
-  if (!root || !Array.isArray(root.pages)) return { output, removed };
-  root.pages.forEach((page, pageIndex) => {
-    const pageRecord = asRecord(page);
-    if (!pageRecord || !Array.isArray(pageRecord.reviewEvidence)) return;
-    pageRecord.reviewEvidence.forEach((entry, entryIndex) => {
-      const evidence = asRecord(entry);
-      if (!evidence) return;
-      for (const key of WRITER1_REVIEW_EVIDENCE_FORBIDDEN_KEYS) {
-        if (Object.prototype.hasOwnProperty.call(evidence, key)) {
-          removed.push({ path: `/pages/${pageIndex}/reviewEvidence/${entryIndex}/${key}`, key, valueDigest: digestOf(evidence[key]) });
-          delete evidence[key];
-        }
-      }
-    });
-  });
-  return { output, removed };
-}
-
-export function buildWriter1PointerLedgerNormalization(input: {
-  raw: unknown;
-  normalized: unknown;
-  removed: Writer1PointerLedgerRemoval[];
-  artifact: CursorArtifactBinding;
-  prior: CursorArtifactRecoveryPrior;
-}): Writer1PointerLedgerNormalization {
-  const rawDigests = writer1OutputDigests(input.raw);
-  const normalizedDigests = writer1OutputDigests(input.normalized);
-  const rawSemanticRenderedCopyDigest = writer1SemanticRenderedCopyDigest(input.raw);
-  const normalizedSemanticRenderedCopyDigest = writer1SemanticRenderedCopyDigest(input.normalized);
-  if (rawSemanticRenderedCopyDigest !== normalizedSemanticRenderedCopyDigest || rawDigests.stableIdentityDigest !== normalizedDigests.stableIdentityDigest || rawDigests.provenanceMetadataDigest !== normalizedDigests.provenanceMetadataDigest) throw new CursorWriterExecutionError("CURSOR_POINTER_LEDGER_NORMALIZATION_PRESERVATION_FAILED", "Pointer-ledger normalization changed semantic copy, stable identity, or provenance metadata");
-  return {
-    normalizationVersion: WRITER1_POINTER_LEDGER_NORMALIZATION_VERSION,
-    authorship: { renderableWords: OFFICIAL_CURSOR_MODEL, structuralPointerNormalization: "factory" },
-    rawArtifact: { byteDigest: input.artifact.byteDigest, size: input.artifact.size, ...(input.artifact.updatedAt ? { updatedAt: input.artifact.updatedAt } : {}) },
-    agentId: input.prior.agentId,
-    runId: input.prior.runId,
-    threadUrl: input.prior.threadUrl,
-    requestedModel: REQUIRED_CURSOR_MODEL,
-    resolvedModel: OFFICIAL_CURSOR_MODEL,
-    effort: "high",
-    fast: false,
-    removed: input.removed.map((entry) => ({ ...entry })),
-    rawOutputDigest: digestOf(input.raw),
-    normalizedOutputDigest: digestOf(input.normalized),
-    rawSemanticRenderedCopyDigest,
-    normalizedSemanticRenderedCopyDigest,
-    rawRenderedWordsDigest: rawDigests.renderedWordsDigest,
-    normalizedRenderedWordsDigest: normalizedDigests.renderedWordsDigest,
-    rawStableIdentityDigest: rawDigests.stableIdentityDigest,
-    normalizedStableIdentityDigest: normalizedDigests.stableIdentityDigest,
-    rawProvenanceMetadataDigest: rawDigests.provenanceMetadataDigest,
-    normalizedProvenanceMetadataDigest: normalizedDigests.provenanceMetadataDigest,
-    finalDigests: normalizedDigests,
-  };
-}
-export function writer1MetadataChangeDigest(beforeArtifactDigest: string, afterArtifactDigest: string, copyProjectionDigest: string): string {
-  return digestOf({ beforeArtifactDigest, afterArtifactDigest, copyProjectionDigest });
-}
-type Writer1ArtifactOutputTransform = (raw: string, artifact: CursorArtifactBinding) => { output: unknown; normalization?: Writer1PointerLedgerNormalization };
-async function readWriter1Artifact(input: { client: CursorArtifactClient; agentId: string; apiKey: string; validateOutput?: (raw: string) => unknown; transformOutput?: Writer1ArtifactOutputTransform }): Promise<{ output: unknown; raw: string; bytes: Buffer; artifact: CursorArtifactBinding; normalization?: Writer1PointerLedgerNormalization }> {
-  const descriptors = await input.client.list(input.agentId, input.apiKey);
-  const matches = descriptors.filter((descriptor) => descriptor.path === "artifacts/writer1-output.json");
-  if (matches.length > 1) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_RACE", "Cursor returned multiple artifacts at artifacts/writer1-output.json");
-  if (matches.length === 0) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_MISSING", "Cursor agent has no artifacts/writer1-output.json artifact");
-  const descriptor = matches[0]; if (!descriptor) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_MISSING", "Cursor agent has no artifacts/writer1-output.json artifact");
-  if (descriptor.size > MAX_WRITER1_ARTIFACT_BYTES) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_TOO_LARGE", `Cursor Writer1 artifact exceeds the ${MAX_WRITER1_ARTIFACT_BYTES}-byte cap`);
-  const downloaded = await input.client.download(input.agentId, descriptor.path, input.apiKey);
-  const downloadedUrl = approvedCursorArtifactUrl(downloaded.sourceUrl);
-  const expectedUrlEvidence = presignedUrlEvidence(downloadedUrl);
-  const expectedPath = descriptor.path as "artifacts/writer1-output.json";
-  const expectedEndpoint = artifactDownloadEndpoint(input.agentId, expectedPath);
-  const expectedRequest = artifactRequestShape(input.agentId, expectedPath, expectedEndpoint);
-  if (downloaded.agentId !== input.agentId || downloaded.logicalPath !== descriptor.path || downloaded.cursorEndpoint !== expectedEndpoint) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_REQUEST_BINDING_INVALID", "Cursor artifact download did not bind to the listed agent, logical path, and Cursor endpoint");
-  if (downloaded.requestShapeDigest !== digestOf(expectedRequest) || JSON.stringify(downloaded.presignedUrlEvidence) !== JSON.stringify(expectedUrlEvidence) || downloaded.presignedUrlEvidenceDigest !== digestOf(expectedUrlEvidence) || downloaded.downloadRequestDigest !== artifactDownloadDigest(expectedRequest, expectedUrlEvidence)) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_REQUEST_BINDING_INVALID", "Cursor artifact download request or sanitized presigned URL evidence digest is invalid");
-  if (downloaded.bytes.length > MAX_WRITER1_ARTIFACT_BYTES) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_TOO_LARGE", `Cursor Writer1 artifact exceeds the ${MAX_WRITER1_ARTIFACT_BYTES}-byte cap`);
-  if (downloaded.bytes.length !== descriptor.size) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_SIZE_MISMATCH", "Cursor artifact size changed between listing and download");
-  const sha256 = artifactSha256(downloaded.bytes);
-  if (descriptor.sha256 && descriptor.sha256 !== sha256) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_DIGEST_MISMATCH", "Cursor artifact listing digest does not match downloaded bytes");
-  const raw = downloaded.bytes.toString("utf8");
-  const artifact: CursorArtifactBinding = { path: "artifacts/writer1-output.json", size: downloaded.bytes.length, sha256, contentSize: downloaded.bytes.length, byteDigest: sha256, ...(descriptor.updatedAt ? { updatedAt: descriptor.updatedAt } : {}), downloadRequest: expectedRequest, requestShapeDigest: downloaded.requestShapeDigest, downloadRequestDigest: downloaded.downloadRequestDigest, presignedUrlEvidence: downloaded.presignedUrlEvidence, presignedUrlEvidenceDigest: downloaded.presignedUrlEvidenceDigest };
-  if (input.transformOutput) {
-    const transformed = input.transformOutput(raw, artifact);
-    return { output: transformed.output, ...(transformed.normalization ? { normalization: transformed.normalization } : {}), raw, bytes: downloaded.bytes, artifact };
-  }
-  const output = input.validateOutput ? input.validateOutput(raw) : raw;
-  return { output, raw, bytes: downloaded.bytes, artifact };
-}
-
-export interface CursorArtifactValidationReportInspection {
-  raw: string;
-  rawBytes: Buffer;
-  artifact: CursorArtifactBinding;
-  parsed?: unknown;
-  parseError?: string;
-  copyProjectionDigest?: string;
-  renderedWordsDigest?: string;
-  stableIdentityDigest?: string;
-  provenanceMetadataDigest?: string;
-  copyProjectionMatches: boolean;
-  stale: boolean;
-}
-
-export type CursorArtifactValidationReportInput = {
-  prior: CursorArtifactRecoveryPrior;
-  previousRecoveryV3: CursorArtifactRecoveryV3FailureBinding;
-  promptDigest: string;
-};
-
-type CursorArtifactValidationReportInternalInput = CursorArtifactValidationReportInput & {
-  env?: Record<string, string | undefined>;
-  artifactClient?: CursorArtifactClient;
-  sleep?: (milliseconds: number) => Promise<void>;
-  artifactBackoffMs?: readonly number[];
-};
-
-async function inspectCursorWriterArtifactV3Internal(input: CursorArtifactValidationReportInternalInput): Promise<CursorArtifactValidationReportInspection> {
-  const env = input.env || process.env;
-  if (!env.CURSOR_API_KEY) throw new CursorWriterExecutionError("CURSOR_API_KEY_REQUIRED", "Validation report requires CURSOR_API_KEY");
-  if (input.promptDigest !== input.previousRecoveryV3.promptDigest) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_REPORT_PROMPT_MISMATCH", "Validation report prompt digest is not bound to the exact v3-finalize history");
-  const artifactClient = input.artifactClient || createCursorArtifactClient();
-  const recovered = await readWriter1ArtifactWithBackoff({
-    client: artifactClient,
-    agentId: input.prior.agentId,
-    apiKey: env.CURSOR_API_KEY,
-    validateOutput: (raw) => raw,
-    ...(input.sleep ? { sleep: input.sleep } : {}),
-    ...(input.artifactBackoffMs ? { backoffMs: input.artifactBackoffMs } : {}),
-  });
-  const raw = typeof recovered.output === "string" ? recovered.output : String(recovered.output);
-  let parsed: unknown;
-  let parseError: string | undefined;
-  try { parsed = JSON.parse(raw); } catch { parseError = "OUTPUT_INVALID_JSON"; }
-  const copyProjectionDigest = parsed === undefined ? undefined : writer1CopyProjectionDigest(parsed);
-  const outputDigests = parsed === undefined ? undefined : writer1OutputDigests(parsed);
-  const before = input.previousRecoveryV3.beforeArtifact;
-  return {
-    raw,
-    rawBytes: recovered.bytes,
-    artifact: recovered.artifact,
-    ...(parsed === undefined ? {} : { parsed }),
-    ...(parseError ? { parseError } : {}),
-    ...(copyProjectionDigest ? { copyProjectionDigest } : {}),
-    ...(outputDigests ? outputDigests : {}),
-    copyProjectionMatches: copyProjectionDigest === input.previousRecoveryV3.copyProjectionDigest,
-    stale: recovered.artifact.sha256 === before.sha256 && recovered.artifact.updatedAt === before.updatedAt,
-  };
-}
-
-/** Production validation reports are read-only: process.env and the fixed Cursor artifact client are sealed here. */
-export async function inspectCursorWriterArtifactV3(input: CursorArtifactValidationReportInput): Promise<CursorArtifactValidationReportInspection> {
-  const candidate = input as unknown as Record<string, unknown>;
-  if ("env" in candidate || "artifactClient" in candidate || "transport" in candidate) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_CLIENT_SUBSTITUTION_FORBIDDEN", "Production validation reports do not accept caller-selected environment, transport, or artifact client");
-  return inspectCursorWriterArtifactV3Internal({ ...input, env: process.env, artifactClient: createCursorArtifactClient() });
-}
-
-/** Test-only/internal seam. No production control input can select this injected client. */
-export async function inspectCursorWriterArtifactV3ForTest(input: CursorArtifactValidationReportInternalInput): Promise<CursorArtifactValidationReportInspection> {
-  if (process.env.NODE_ENV !== "test" && !process.execArgv.some((arg) => arg.includes("--test"))) throw new CursorWriterExecutionError("CURSOR_TEST_SEAM_FORBIDDEN", "Injected validation-report clients are available only from the Node test boundary");
-  return inspectCursorWriterArtifactV3Internal(input);
-}
-
-const ARTIFACT_RECOVERY_EVENTUAL_CONSISTENCY_BACKOFF_MS = [1_000, 5_000, 15_000, 30_000, 60_000, 120_000] as const;
-async function readWriter1ArtifactWithBackoff(input: { client: CursorArtifactClient; agentId: string; apiKey: string; validateOutput?: (raw: string) => unknown; transformOutput?: Writer1ArtifactOutputTransform; sleep?: (milliseconds: number) => Promise<void>; backoffMs?: readonly number[] }): Promise<{ output: unknown; raw: string; bytes: Buffer; artifact: CursorArtifactBinding; normalization?: Writer1PointerLedgerNormalization }> {
-  const sleep = input.sleep || ((milliseconds: number) => new Promise<void>((resolve) => setTimeout(resolve, milliseconds)));
-  const backoffMs = input.backoffMs || ARTIFACT_RECOVERY_EVENTUAL_CONSISTENCY_BACKOFF_MS;
-  for (let attempt = 0; ; attempt += 1) {
-    try { return await readWriter1Artifact(input); } catch (error) {
-      if (!(error instanceof CursorWriterExecutionError) || error.code !== "CURSOR_ARTIFACT_MISSING" || attempt >= backoffMs.length) throw error;
-      await sleep(backoffMs[attempt] || 0);
-    }
-  }
-}
-
-function artifactBindingIsValid(binding: CursorArtifactBinding | undefined, agentId: string): boolean {
-  if (!binding || binding.path !== "artifacts/writer1-output.json" || !Number.isSafeInteger(binding.size) || binding.size < 1 || binding.size > MAX_WRITER1_ARTIFACT_BYTES || binding.contentSize !== binding.size || !DIGEST.test(binding.sha256) || binding.byteDigest !== binding.sha256) return false;
-  const evidence = binding.presignedUrlEvidence;
-  const host = typeof evidence?.host === "string" && (evidence.host === "s3.amazonaws.com" || evidence.host.endsWith(".s3.amazonaws.com") || /^s3[.-][a-z0-9-]+\.amazonaws\.com$/u.test(evidence.host) || /\.s3[.-][a-z0-9-]+\.amazonaws\.com$/u.test(evidence.host));
-  const saneUrl = !!evidence && evidence.scheme === "https" && host && typeof evidence.pathname === "string" && evidence.pathname.length > 1 && evidence.pathname.length <= 2048 && !evidence.pathname.includes("..") && Array.isArray(evidence.queryParameterNames) && evidence.queryParameterNames.length > 0 && evidence.queryParameterNames.every((name: unknown) => typeof name === "string" && /^[A-Za-z0-9_.-]{1,128}$/u.test(name)) && JSON.stringify(evidence.queryParameterNames) === JSON.stringify([...evidence.queryParameterNames].sort());
-  const expected = artifactRequestShape(agentId, binding.path, artifactDownloadEndpoint(agentId, binding.path));
-  return !!saneUrl && JSON.stringify(binding.downloadRequest) === JSON.stringify(expected) && binding.requestShapeDigest === digestOf(binding.downloadRequest) && binding.downloadRequestDigest === artifactDownloadDigest(binding.downloadRequest, evidence) && binding.presignedUrlEvidenceDigest === digestOf(evidence);
-}
-
-function validateCursorArtifactRecoveryReceiptVersion(receipt: unknown, prior: CursorArtifactRecoveryPrior, promptDigest: string, cursorApiKey: string | undefined, expectedVersion: "words-writer1-artifact-recovery/v1" | "words-writer1-artifact-recovery/v2" | "words-writer1-artifact-recovery/v3" | "words-writer1-artifact-recovery/v3-finalize", previousRecovery?: CursorArtifactRecoveryFailureBinding, previousRecoveryV2?: CursorArtifactRecoveryV2FailureBinding, previousRecoveryV3?: CursorArtifactRecoveryV3FailureBinding, expectedCurrentArtifactByteDigest?: string, expectedCurrentArtifactUpdatedAt?: string): asserts receipt is CursorArtifactRecoveryReceipt {
-  if (expectedVersion === "words-writer1-artifact-recovery/v3-finalize") validateValidationOnlyCursorReceipt(receipt, prior, cursorApiKey); else validateCursorWriterReceipt(receipt, cursorApiKey);
-  const value = receipt as CursorArtifactRecoveryReceipt;
-  const expectedMode = expectedVersion === "words-writer1-artifact-recovery/v3-finalize" ? "validation-only-artifact-recovery" : "same-thread-artifact-recovery";
+function writer1CorrectionDiff(before: unknown, af…4927 tokens truncated…ery/v3-finalize" ? "validation-only-artifact-recovery" : "same-thread-artifact-recovery";
   if (value.mode !== expectedMode || value.recoveryVersion !== expectedVersion) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_RECEIPT_INVALID", "Cursor receipt is not the expected Writer1 artifact-recovery version");
   const evidence = value.artifact?.presignedUrlEvidence;
   const approvedEvidenceHost = typeof evidence?.host === "string" && (evidence.host === "s3.amazonaws.com" || evidence.host.endsWith(".s3.amazonaws.com") || /^s3[.-][a-z0-9-]+\.amazonaws\.com$/u.test(evidence.host) || /\.s3[.-][a-z0-9-]+\.amazonaws\.com$/u.test(evidence.host));

@@ -4,7 +4,7 @@ import * as path from "node:path";
 import test from "node:test";
 import { EXPECTED_VERIFIED_CORRECTION, EXPECTED_VERIFIED_CORRECTION_V2, selectVerifiedWriter1Dispatch, validateControl as rawValidateControl } from "../../scripts/360-words-control.mjs";
 import { validateSealed, writer1Projection } from "../../scripts/360-words-canary.js";
-import { VERIFIED_WRITER1_AGENT_ID, VERIFIED_WRITER1_PROMPT_DIGEST, VERIFIED_WRITER1_PROMPT_V2_DIGEST, validateVerifiedWriter1Control, runVerifiedWriter1Correction } from "../../scripts/360-words-verified.js";
+import { VERIFIED_WRITER1_AGENT_ID, VERIFIED_WRITER1_PROMPT_DIGEST, VERIFIED_WRITER1_PROMPT_V2_DIGEST, validateVerifiedWriter1Control, validateVerifiedWriter1PostDispatchControl, runVerifiedWriter1Correction } from "../../scripts/360-words-verified.js";
 import { digestOf } from "../../src/contracts/digests.js";
 import { assertNoLocalDownstreamGeneration, assertVerifiedDownstreamState, VERIFIED_PUBLIC_ROUTES, VERIFIED_STAGE_POLICY, VERIFIED_WRITER3_SEALED_FACTS } from "../../src/pipeline/verified-words-policy.js";
 
@@ -84,6 +84,19 @@ test("the bounded workflow dispatches the exact verified wake to the verified ru
   assert.match(workflow, /scripts\/360-words-verified\.ts --writer1-correction-v2/u);
   assert.doesNotMatch(workflow, /scripts\/360-words-canary\.ts --artifact-recovery/u);
   assert.match(workflow, /Unsupported verified-lane Writer1 dispatch/u);
+});
+
+test("post-dispatch wake is classified as retrieval-only and cannot reach a follow-up or legacy artifact runner", () => {
+  const control = JSON.parse(readFileSync(path.join(root, ".factory-wake/360-words-control.json"), "utf8"));
+  const sourceSha = "b".repeat(40); const inputDigest = "sha256:" + "9".repeat(64);
+  const active: any = { ...control, wakeNonce: "W1-POST-DISPATCH-20260825", policy: { ...control.policy, mode: "writer1-retrieval-only" }, recovery: { recoveryVersion: "words-writer1-post-dispatch-retrieval/v1", actionRunId: "32825265478", artifactId: 9554789848, sourceBranch: "architect/360-words-canary-verified", sourceSha, agentId: VERIFIED_WRITER1_AGENT_ID, runId: "run-1686013d-dec5-454c-a39e-5817448e6a96", threadUrl: `https://cursor.com/agents/${VERIFIED_WRITER1_AGENT_ID}`, requestedModel: "cursor-grok-4.6-high", resolvedModel: "grok-4.6", effort: "high", fast: false, inputDigest, promptDigest: VERIFIED_WRITER1_PROMPT_V2_DIGEST, idempotencyKey: `${VERIFIED_WRITER1_AGENT_ID}:writer1:correction:v2:${inputDigest}:${VERIFIED_WRITER1_PROMPT_V2_DIGEST}`, allowCreate: false, allowResume: false, allowFollowUp: false, maxFollowUps: 0 } };
+  assert.equal(selectVerifiedWriter1Dispatch(active), "verified-writer1-retrieval-only");
+  assert.doesNotThrow(() => rawValidateControl(active, { changedPaths: [".factory-wake/360-words-control.json"], actor: "architect", owner: "architect", commitSha: "c".repeat(40), beforeSha: sourceSha, parentSha: sourceSha, verifiedLane: true }));
+  assert.doesNotThrow(() => validateVerifiedWriter1PostDispatchControl(active, inputDigest));
+  for (const invalid of ["", "unknown", "words-writer1-correction/v3", "words-writer1-artifact-recovery/v3", "words-writer1-artifact-recovery/v3-finalize"]) assert.equal(selectVerifiedWriter1Dispatch({ ...active, recovery: { ...active.recovery, recoveryVersion: invalid } }), "unsupported-verified-lane");
+  const workflow = readFileSync(path.join(root, ".github/workflows/architect-360-words-canary.yml"), "utf8");
+  assert.match(workflow, /verified-writer1-retrieval-only/u); assert.match(workflow, /--writer1-retrieval-only/u); assert.doesNotMatch(workflow, /--writer1-retrieval-only[\s\S]*--artifact-recovery/u);
+  assert.equal(active.recovery.runId, "run-1686013d-dec5-454c-a39e-5817448e6a96");
 });
 
 test("verified policy requires new downstream agents and signed direct receipts, with immutable Writer3 facts", () => {

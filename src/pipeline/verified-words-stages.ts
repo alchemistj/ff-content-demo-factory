@@ -69,7 +69,7 @@ function assertPriorReceipt(receipt: unknown, stage: "writer1" | "writer2"): ass
   validateCursorWriterReceipt(receipt, process.env.CURSOR_API_KEY);
   const value = receipt as CursorWriterReceipt;
   if (value.stage !== stage || !value.threadUrl || !value.agentId || !value.outputDigest) throw new Error(`Verified ${stage} receipt is incomplete`);
-  if (stage === "writer1" && (value.mode !== "same-thread-correction" || (value as any).writer2Blocked !== true)) throw new Error("Verified Writer2 requires the stopped same-thread Writer1 correction receipt");
+  if (stage === "writer1" && ((value.mode !== "same-thread-correction" && !(value.mode === "same-thread-retrieval" && (value as any).correctionVersion === "words-writer1-post-dispatch-retrieval/v1")) || (value as any).writer2Blocked !== true)) throw new Error("Verified Writer2 requires a stopped, independently reviewable Writer1 receipt");
 }
 function assertSealedDigest(value: unknown): asserts value is string { if (typeof value !== "string" || !/^sha256:[0-9a-f]{64}$/u.test(value)) throw new Error("Verified downstream stage requires an exact sealed handoff digest"); }
 function assertNewAgent(receipt: CursorWriterReceipt, prior: CursorWriterReceipt): void {
