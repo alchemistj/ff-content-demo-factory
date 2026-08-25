@@ -381,6 +381,8 @@ md += [
     "- Deployment occurred: **no**",
     "- Branch: `architect/360-words-canary`",
     "- Head at dormant return: `1bc904cf4dbb2d09286d1d8a617a58fd9e6a6db3`",
+    "- Factory strict-validator pass of normalized JSON: `5675de60b9ade7ecb50fd79f0ec43e9601d3b0cb`",
+    "- Exact reviewEvidence regression restore: `e7c76770551109efd1827828558e88ede00e4b77`",
     "- Human Gate 2 words package: `14078520014fc001532a2371f4b2c036e869a812`",
     "- Readable headings: `fd5087388fc6d936885f06e99d162a05f0189a65`",
     "- Pointer-ledger apply: `56069627ee62dd2f843e2b6a38313b37e7e23a72`",
@@ -401,7 +403,7 @@ md += [
     "",
     "- Targeted regression: production `reviewer`+`excerpt` fails `REVIEW_EVIDENCE_CLAIM_TEXT_DUPLICATE` at `/pages/0/reviewEvidence/0/reviewer` with expectedRule `reviewEvidence must not contain any accepted word-bearing key; it is a typed pointer ledger`, then normalizes losslessly.",
     "- Real quarantined bytes: 31 reviewer keys + 31 excerpt keys removed (62), semantic copy / identity / provenance preserved, strict validator passes after normalization.",
-    "- `NODE_ENV=test npm run test:all`: 124 passed, 0 failed.",
+    "- `NODE_ENV=test npm run test:all`: 122 passed, 0 failed, 1 skipped (zip-backed factory fixture not present in this workspace).",
     "- Local `--normalize-quarantine`: status `awaiting-architect-qa`, Writer 2 blocked until Architect QA, raw `approved: false`.",
     "",
 ]
