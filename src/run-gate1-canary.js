@@ -187,20 +187,25 @@ async function runCurrentHeadGate1Canary({ root, requestFile, selectionFile, qaF
       compareApprovedLineage(historicalSeed, run.artifacts.prescription || {}, 'Current-head Gate 1 output');
     } catch (error) {
       needsJosh = { code: 'CURRENT_LINEAGE_DIFFERS_FROM_HISTORICAL_SEED', message: error.message, historicalSeed, current: { sourceArtifactDigest: run.artifacts.prescription?.sourceArtifactDigest || null, sourceManifestDigest: run.artifacts.prescription?.sourceManifestDigest || run.artifacts.sourceCheckpoint?.sourceManifestDigest || null, evidenceDigest: run.artifacts.prescription?.evidenceDigest || null, pageSetDigest: run.artifacts.prescription?.pageSetDigest || null, prescriptionDigest: run.artifacts.prescription?.prescriptionDigest || null, approvalDigest: run.artifacts.prescription?.approvalDigest || null, strategyDigest: run.artifacts.prescription?.strategyDigest || null, selectedServiceIds: run.artifacts.prescription?.selectedServiceIds || [], routes: (run.artifacts.prescription?.pages || []).map((page) => page.url) } };
+      const existingMarkdown = String(run.artifacts.gate1.markdown || '').trimEnd();
       const readable = [
-        '# Human Gate 1 — Needs Josh',
+        existingMarkdown,
         '',
-        'The current-head canonical evidence, strategy, service selection, or page prescription differs from the historical seed. Historical approval was not carried forward.',
+        '## Human Gate 1 — Needs Josh',
+        '',
+        'The complete Gate 1 record above is preserved for review. The current-head canonical evidence, evidence-backed strategy, service selection, or four-page prescription differs from the historical seed, so historical approval was not carried forward.',
         '',
         `Reason: ${needsJosh.message}`,
         '',
-        '## Historical seed',
+        '### Approval-change warning',
+        '',
+        'Josh must review the prospect, evidence-backed strategy, exactly two selected service pages, rejected or folded services, the Home/service/service/Contact prescription, limitations, and the lineage digests above before this run can become an approvable Gate 1 artifact.',
+        '',
+        '### Historical seed projection',
         '```json', JSON.stringify(needsJosh.historicalSeed, null, 2), '```',
         '',
-        '## Current-head projection',
+        '### Current-head projection',
         '```json', JSON.stringify(needsJosh.current, null, 2), '```',
-        '',
-        'Josh must review and approve the current prospect, evidence-backed strategy, selected services, and four-page prescription before this run can become an approvable Gate 1 artifact.',
       ].join('\n');
       run.status = 'awaiting-human-gate-1';
       run.artifacts.gate1.markdown = readable;
