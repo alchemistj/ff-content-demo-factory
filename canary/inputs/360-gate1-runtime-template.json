@@ -1,0 +1,12 @@
+{
+  "schemaVersion": "factory-360-current-head-gate1-runtime-template-v1",
+  "templateOnly": true,
+  "runtimeRequired": ["EXPECTED_HEAD_SHA", "verified checkout SHA", "GitHub PR/Issue identity"],
+  "approvedLineageFiles": [
+    "canary/inputs/360-four-page-reseal-approval.json",
+    "canary/inputs/360-four-page-reseal-ledger.json",
+    "canary/inputs/360-garage-door-and-more.discovery.json",
+    "canary/outputs/360-four-page-reseal-handoff.json"
+  ],
+  "warning": "This template contains no current head, dispatch receipt, vendor receipt, or approvable Gate 1 state. Generate a runtime packet only after exact checkout and historical identity verification."
+}
