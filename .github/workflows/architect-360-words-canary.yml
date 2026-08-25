@@ -139,9 +139,7 @@ jobs:
           test -f canary/inputs/writer1-approval-artifact/outputs/writer1-output.json
           test -f canary/inputs/writer1-approval-artifact/runtime/writer1-correction-v3-receipt.json
           test -f canary/inputs/writer1-approval-artifact/runtime/state.json
-          test -f canary/inputs/writer1-approval-artifact/qa/architect/writer1-content.json
-          test -f canary/inputs/writer1-approval-artifact/qa/architect/writer1-evidence.json
-          test -f canary/inputs/writer1-approval-artifact/qa/architect/writer1-approval.json
+          APPROVAL_SOURCE_ROOT='.' APPROVAL_ARTIFACT_ROOT='canary/inputs/writer1-approval-artifact' CONTROL_PATH='.factory-wake/360-words-control.json' node --import tsx scripts/verify-architect-approval-inputs.ts
 
       - name: Download exact sealed Writer1 approval for separate Writer2 wake
         if: steps.control.outputs.dormant != 'true' && steps.dispatch_mode.outputs.mode == 'verified-writer2-write'

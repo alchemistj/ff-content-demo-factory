@@ -12,6 +12,7 @@ import { digestOf } from "../../src/contracts/digests.js";
 import { createHash, generateKeyPairSync } from "node:crypto";
 import { assertNoLocalDownstreamGeneration, assertVerifiedDownstreamState, VERIFIED_PUBLIC_ROUTES, VERIFIED_STAGE_POLICY, VERIFIED_WRITER3_SEALED_FACTS } from "../../src/pipeline/verified-words-policy.js";
 import { ARCHITECT_APPROVAL_PUBLIC_KEY_PATH, ARCHITECT_APPROVAL_PUBLIC_KEY_SHA256, loadPinnedArchitectPublicKey, validatePinnedArchitectPublicKeyBytes } from "../../scripts/architect-approval-key.mjs";
+import { copyVerifiedArchitectApprovalInputs } from "../../scripts/verify-architect-approval-inputs.js";
 
 const root = path.resolve(process.cwd());
 const EXPECTED_POST_DISPATCH_ORIGINAL_INPUT_DIGEST = "sha256:f4f59e9c645391266172892e4651f0da4ccedaa2bc86e35217a0ab8699fd0c1f";
@@ -399,4 +400,31 @@ test("Actions loads the exact committed public key and rejects missing, altered,
   assert.doesNotMatch(workflow, /vars\.ARCHITECT_APPROVAL_PUBLIC_KEY_PEM/u);
   assert.match(workflow, /ARCHITECT_APPROVAL_PUBLIC_KEY_PEM=.*cat.*public_key_path/u);
   assert.match(workflow, /! grep -q 'PRIVATE KEY'/u);
+});
+
+test("approval seal assembles old artifact output with checked-in signed QA bytes without a fallback path", async () => {
+  const sourceRoot = await mkdtemp(path.join(tmpdir(), "ff-approval-source-root-"));
+  const artifactRoot = await mkdtemp(path.join(tmpdir(), "ff-approval-old-artifact-root-"));
+  try {
+    const qa = { content: Buffer.from("signed-content-qa\n"), evidence: Buffer.from("signed-evidence-qa\n"), approval: Buffer.from("signed-writer1-approval\n") };
+    const pin = (role: keyof typeof qa, filePath: string, decision?: string) => ({ role, path: filePath, size: qa[role].length, digest: `sha256:${createHash("sha256").update(qa[role]).digest("hex")}`, ...(decision ? { decision } : {}) });
+    const control: any = { policy: { recovery: { independentQaArtifacts: [pin("content", "qa/architect/writer1-content.json", "PASS"), pin("evidence", "qa/architect/writer1-evidence.json", "PASS")], approval: pin("approval", "qa/architect/writer1-approval.json") } } };
+    await mkdir(path.join(sourceRoot, "qa/architect"), { recursive: true });
+    await mkdir(path.join(artifactRoot, "outputs"), { recursive: true });
+    await writeFile(path.join(artifactRoot, "outputs/writer1-output.json"), "immutable old artifact output");
+    await writeFile(path.join(sourceRoot, "qa/architect/writer1-content.json"), qa.content);
+    await writeFile(path.join(sourceRoot, "qa/architect/writer1-evidence.json"), qa.evidence);
+    await writeFile(path.join(sourceRoot, "qa/architect/writer1-approval.json"), qa.approval);
+    assert.equal(existsSync(path.join(artifactRoot, "qa/architect/writer1-content.json")), false);
+    copyVerifiedArchitectApprovalInputs(sourceRoot, artifactRoot, control);
+    for (const [name, bytes] of Object.entries(qa)) assert.deepEqual(readFileSync(path.join(artifactRoot, name === "approval" ? "qa/architect/writer1-approval.json" : `qa/architect/writer1-${name}.json`)), bytes);
+    assert.deepEqual(readFileSync(path.join(artifactRoot, "outputs/writer1-output.json")), Buffer.from("immutable old artifact output"));
+    const tampered = structuredClone(control); tampered.policy.recovery.independentQaArtifacts[0].digest = `sha256:${"0".repeat(64)}`;
+    assert.throws(() => copyVerifiedArchitectApprovalInputs(sourceRoot, artifactRoot, tampered), /pin/u);
+    const workflow = readFileSync(path.join(root, ".github/workflows/architect-360-words-canary.yml"), "utf8");
+    assert.match(workflow, /verify-architect-approval-inputs\.ts/u);
+    assert.doesNotMatch(workflow, /writer1-(?:content|evidence|approval)\.json'\s*$/mu);
+  } finally {
+    await Promise.all([rm(sourceRoot, { recursive: true, force: true }), rm(artifactRoot, { recursive: true, force: true })]);
+  }
 });
