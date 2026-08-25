@@ -240,7 +240,7 @@ test('eleventh correction workflow is repository-native, not Josh-operated workf
   assert.doesNotMatch(workflow, /^\s+canary\/outputs\/gate1\.md$/m);
   assert.match(workflow, /synthetic replay|synthetic-only/i);
   assert.match(workflow, /approvableGate1/);
-  assert.match(workflow, /current-head-gate1-proof\.json/);
+  assert.match(workflow, /current-head-synthetic-replay-proof\.json/);
   assert.match(workflow, /if-no-files-found: error/);
   assert.match(workflow, /test -z "\$\{CURSOR_API_KEY:-\}"/);
   assert.match(script, /runCurrentHeadGate1Canary/);
@@ -281,7 +281,7 @@ test('eleventh correction sealed 360 path is synthetic-only and cannot assemble 
   assert.equal(result.proof.integratedFactoryReadiness, false);
   assert.equal(result.proof.liveConnectorProven, false);
   assert.equal(validated, null);
-  assert.equal(fs.existsSync(path.join(root, 'canary/outputs/current-head-gate1-proof.json')), true);
+  assert.equal(fs.existsSync(path.join(root, 'canary/outputs/current-head-synthetic-replay-proof.json')), true);
   assert.equal(fs.existsSync(path.join(root, 'canary/outputs/gate1.md')), false);
   assert.equal(fs.existsSync(path.join(root, 'canary/state/factory-state.json')), false);
 });
