@@ -123,6 +123,9 @@ function requiredReceipt(value, label, fallback = null, binding = null) {
   if (payload == null) throw Object.assign(new Error(`Trusted source checkpoint ${label} receipt is missing input payload`), { code: 'SOURCE_RECEIPT_INVALID' });
   const recomputedInputDigest = digest(payload);
   if (value.inputDigest !== recomputedInputDigest) throw Object.assign(new Error(`Trusted source checkpoint ${label} input digest does not match persisted payload`), { code: 'SOURCE_RECEIPT_INVALID' });
+  if (!Object.prototype.hasOwnProperty.call(value, 'result')) throw Object.assign(new Error(`Trusted source checkpoint ${label} receipt is missing persisted result`), { code: 'SOURCE_RECEIPT_INVALID' });
+  const recomputedOutputDigest = digest(value.result);
+  if (value.outputDigest !== recomputedOutputDigest) throw Object.assign(new Error(`Trusted source checkpoint ${label} output digest does not match persisted result`), { code: 'SOURCE_RECEIPT_INVALID' });
   if (!binding || typeof binding !== 'object') throw Object.assign(new Error(`Trusted source checkpoint ${label} receipt context is missing`), { code: 'SOURCE_RECEIPT_INVALID' });
   const received = value.binding || value.context || {};
   const requiredFields = ['repository', 'issueNumber', 'prNumber', 'branch', 'headSha', 'operation'];
