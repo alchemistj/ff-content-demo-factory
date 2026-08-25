@@ -1,0 +1,52 @@
+{
+  "kind": "seeded-apify-discovery-result",
+  "sourceBoundary": "Identity-only GBP fields for a known eligible finalist. No prior qualification, audit, evidence judgment, or page conclusions are included. Discovery reviews are sample-only; exact-place enrichment is the authoritative review source.",
+  "discoveryRequest": {
+    "searchStrings": ["roofing company"],
+    "location": "Springfield, Missouri",
+    "limit": 7,
+    "reviewLimit": 5
+  },
+  "candidates": [
+    {
+      "placeId": "ChIJZWfAc5d9z4cR2TLlkLdpqMk",
+      "name": "Swifts Roofing",
+      "category": "Roofing contractor",
+      "categories": ["Roofing contractor", "Waterproofing service"],
+      "location": "4268 S Hillcrest Ave Ste 110, Springfield, MO 65810",
+      "address": "4268 S Hillcrest Ave Ste 110, Springfield, MO 65810",
+      "city": "Springfield",
+      "state": "Missouri",
+      "postalCode": "65810",
+      "phone": "(417) 771-0477",
+      "website": "https://swiftsroofing.com/",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Swifts%20Roofing&query_place_id=ChIJZWfAc5d9z4cR2TLlkLdpqMk",
+      "openingHours": [
+        { "day": "Monday", "hours": "Open 24 hours" },
+        { "day": "Tuesday", "hours": "Open 24 hours" },
+        { "day": "Wednesday", "hours": "Open 24 hours" },
+        { "day": "Thursday", "hours": "Open 24 hours" },
+        { "day": "Friday", "hours": "Open 24 hours" },
+        { "day": "Saturday", "hours": "Open 24 hours" },
+        { "day": "Sunday", "hours": "Closed" }
+      ],
+      "permanentlyClosed": false,
+      "temporarilyClosed": false,
+      "discoveryReviewSource": "scout-identity-seed",
+      "discoveryReviews": [
+        {
+          "author": "R. Fondren",
+          "rating": 5,
+          "date": "2026-05-11T20:29:15.727Z",
+          "text": "Helpful, efficient, and scheduling ease for an inspection after the major hail storm. I will definitely keep them in mind for future work on my roof. Thank you!"
+        },
+        {
+          "author": "Kirby Cattle Co.",
+          "rating": 5,
+          "date": "2026-01-31T14:03:37.085Z",
+          "text": "Very pleased with the service this company provided! They were very professional and the owner was very helpful and a pleasure to talk to. Would certainly recommend them for all of your roofing needs!"
+        }
+      ]
+    }
+  ]
+}
