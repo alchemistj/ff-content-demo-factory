@@ -842,11 +842,18 @@ def main() -> None:
         "/contact": section_words(contact),
     }
     site["wordCounts"] = counts
+    site["wordCountPolicy"] = {
+        "role": "advisory",
+        "typicalRangeWhereEvidenceSupports": "650-900+",
+        "hardFloor": None,
+        "lengthAloneNeverPasses": True,
+        "paddingForbidden": True,
+    }
     WORDS_PATH.write_text(json.dumps(site, indent=2, ensure_ascii=False) + "\n")
     print("Wrote", WORDS_PATH)
+    print("Advisory useful-body counts (not a pass/fail floor; 650-900+ typical only where evidence supports that depth):")
     for route, count in counts.items():
-        flag = "OK" if (route not in ("/roof-replacement", "/roof-repair") or count >= 800) else "SHORT"
-        print(f"  {route}: {count} words [{flag}]")
+        print(f"  {route}: {count} words")
 
 
 if __name__ == "__main__":

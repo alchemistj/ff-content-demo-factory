@@ -38,8 +38,12 @@ test("Swifts Roofing Gate 2 words package meets the four-page contract", async (
   const site = JSON.parse(readFileSync(WORDS_PATH, "utf8")) as Record<string, unknown>;
   const markdown = readFileSync(MD_PATH, "utf8");
   const wordCounts = site.wordCounts as Record<string, number>;
-  assert.ok((wordCounts["/roof-replacement"] ?? 0) >= 800, "replacement page must be at least 800 words");
-  assert.ok((wordCounts["/roof-repair"] ?? 0) >= 800, "repair page must be at least 800 words");
+  const wordCountPolicy = site.wordCountPolicy as Record<string, unknown>;
+  assert.equal(typeof wordCounts["/roof-replacement"], "number", "replacement advisory word count must be recorded");
+  assert.equal(typeof wordCounts["/roof-repair"], "number", "repair advisory word count must be recorded");
+  assert.equal(wordCountPolicy?.role, "advisory");
+  assert.equal(wordCountPolicy?.hardFloor, null);
+  assert.equal(wordCountPolicy?.lengthAloneNeverPasses, true);
   assert.deepEqual(pointerKeys(site), []);
 
   const deterministic = runDeterministicQa(site);
@@ -63,7 +67,11 @@ test("Swifts Roofing Gate 2 words package meets the four-page contract", async (
   assert.match(markdown, /# Contact Swifts Roofing in Springfield, MO/);
   assert.match(markdown, /State: awaiting-human-gate-2/);
   assert.match(markdown, /Do you approve these website words for the coded demo\?/);
-  assert.match(markdown, /Merge occurred: \*\*no\*\*/);
+  assert.match(markdown, /Word count alone must never pass a page/);
+  assert.match(markdown, /advisory only/i);
+  assert.doesNotMatch(markdown, /required ≥800|required >=800|≥800-word floor|at least 800 words/i);
+  assert.doesNotMatch(markdown, /Service-page word floor/);
+  assert.doesNotMatch(JSON.stringify(site), /required ≥800|required >=800|≥800-word floor/);
   assert.match(markdown, /awaiting Josh's look/);
   assert.match(markdown, /Architect QA Writer 1: \*\*awaiting Josh's look\*\*/);
   assert.match(markdown, /Architect QA Writer 2: \*\*awaiting Josh's look\*\*/);

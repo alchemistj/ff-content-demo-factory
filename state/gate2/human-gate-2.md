@@ -4,9 +4,9 @@ Directly readable words package for Swifts Roofing. Natural reading order is Hom
 
 ## Completion contract
 
-- Roof Replacement useful-body word count: **912**
-- Roof Repair useful-body word count: **918**
-- Both service pages meet the required ≥800-word floor for this Swifts Gate 2 package.
+- Roof Replacement useful-body word count (advisory): **912**
+- Roof Repair useful-body word count (advisory): **918**
+- Word counts are advisory only. Service pages generally land in the 650–900+ range only where the evidence supports that depth. No padding. Word count alone must never pass a page.
 - Architect QA Writer 1: **awaiting Josh's look** (not accepted; this writer did not self-approve)
 - Architect QA Writer 2: **awaiting Josh's look** (not accepted; this writer did not self-approve)
 - Owner-facing pages tell the job as Swifts copy (no factory-rule sentences and no not-a-promise litigation on Home, Replacement, Repair, or Contact)
@@ -37,7 +37,7 @@ Directly readable words package for Swifts Roofing. Natural reading order is Hom
 - Deterministic QA: **pass**
 - Whole-site QA: **pass**
 - Pointer-ledger word-bearing keys: **none**
-- Service-page word floor: replacement 912, repair 918
+- Advisory service-page word counts: replacement 912, repair 918 (not a pass/fail floor)
 - Four public business pages only: `/`, `/roof-replacement`, `/roof-repair`, `/contact`
 - Strategy Overview has no public URL/path/route
 - Header/footer resolve only those four routes plus the typed phone action

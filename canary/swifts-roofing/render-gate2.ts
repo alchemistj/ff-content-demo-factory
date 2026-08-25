@@ -129,12 +129,16 @@ const wholeSite = await runWholeSiteQa(site, {
 });
 const artifact = createHumanGate2Artifact(site);
 const wordCounts = (site.wordCounts ?? {}) as Record<string, number>;
+const wordCountPolicy = (site.wordCountPolicy ?? {}) as Record<string, unknown>;
 
 const qa = {
   deterministicPass: deterministic.pass,
   wholeSitePass: wholeSite.pass,
   pointerLedgerWordBearingKeys: pointer,
   wordCounts,
+  wordCountPolicy,
+  wordCountsRole: "advisory",
+  passFailOnLength: false,
   deterministicFindings: deterministic.findings,
   wholeSiteFindings: wholeSite.findings,
 };
@@ -154,9 +158,9 @@ Directly readable words package for Swifts Roofing. Natural reading order is Hom
 
 ## Completion contract
 
-- Roof Replacement useful-body word count: **${wordCounts["/roof-replacement"]}**
-- Roof Repair useful-body word count: **${wordCounts["/roof-repair"]}**
-- Both service pages meet the required ≥800-word floor for this Swifts Gate 2 package.
+- Roof Replacement useful-body word count (advisory): **${wordCounts["/roof-replacement"]}**
+- Roof Repair useful-body word count (advisory): **${wordCounts["/roof-repair"]}**
+- Word counts are advisory only. Service pages generally land in the 650–900+ range only where the evidence supports that depth. No padding. Word count alone must never pass a page.
 - Architect QA Writer 1: **awaiting Josh's look** (not accepted; this writer did not self-approve)
 - Architect QA Writer 2: **awaiting Josh's look** (not accepted; this writer did not self-approve)
 - Owner-facing pages tell the job as Swifts copy (no factory-rule sentences and no not-a-promise litigation on Home, Replacement, Repair, or Contact)
@@ -187,7 +191,7 @@ Directly readable words package for Swifts Roofing. Natural reading order is Hom
 - Deterministic QA: **${deterministic.pass ? "pass" : "fail"}**
 - Whole-site QA: **${wholeSite.pass ? "pass" : "fail"}**
 - Pointer-ledger word-bearing keys: **${pointer.length === 0 ? "none" : pointer.join(", ")}**
-- Service-page word floor: replacement ${wordCounts["/roof-replacement"]}, repair ${wordCounts["/roof-repair"]}
+- Advisory service-page word counts: replacement ${wordCounts["/roof-replacement"]}, repair ${wordCounts["/roof-repair"]} (not a pass/fail floor)
 - Four public business pages only: \`/\`, \`/roof-replacement\`, \`/roof-repair\`, \`/contact\`
 - Strategy Overview has no public URL/path/route
 - Header/footer resolve only those four routes plus the typed phone action

@@ -8,6 +8,15 @@
     "/": 485,
     "/contact": 80
   },
+  "wordCountPolicy": {
+    "role": "advisory",
+    "typicalRangeWhereEvidenceSupports": "650-900+",
+    "hardFloor": null,
+    "lengthAloneNeverPasses": true,
+    "paddingForbidden": true
+  },
+  "wordCountsRole": "advisory",
+  "passFailOnLength": false,
   "deterministicFindings": [
     {
       "code": "review-density-reported",
