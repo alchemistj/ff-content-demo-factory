@@ -18,11 +18,15 @@ function selectNewestDispatchComment(comments, expected = {}) {
   const key = expected.dispatchKey ? String(expected.dispatchKey) : null;
   const repository = expected.repository ? String(expected.repository) : null;
   const prNumber = expected.prNumber == null ? null : String(expected.prNumber);
+  const branch = expected.branch ? String(expected.branch) : null;
+  const reviewedHead = expected.reviewedHead || expected.reviewedHeadSha ? String(expected.reviewedHead || expected.reviewedHeadSha) : null;
   return (comments || []).filter((comment) => {
     const body = String(comment?.body || '');
     const url = String(comment?.html_url || '');
     if (!body.startsWith('@cursor')) return false;
     if (repository && !new RegExp(`^https://github\\.com/${repository.replace(/[.*+?^${}()|[\\]\\]/g, '\\$&')}/pull/${prNumber}#issuecomment-[0-9]+$`).test(url)) return false;
+    if (branch && markerValue(body, 'Branch') !== branch) return false;
+    if (reviewedHead && markerValue(body, 'Reviewed head') !== reviewedHead) return false;
     return (!digest || markerValue(body, 'Dispatch packet digest') === digest)
       && (!key || markerValue(body, 'Dispatch key') === key)
       && markerValue(body, 'Handoff ID') != null
