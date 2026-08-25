@@ -30,8 +30,14 @@ function validateResult(kind, result) {
   if (!result || typeof result !== 'object' || Array.isArray(result)) throw new Error(`Cursor ${kind} result must be an object`);
   if (result.kind !== kind) throw new Error(`Cursor result kind mismatch for ${kind}`);
   if (kind === 'website-audit' && (typeof result.website !== 'string' || !result.website.trim() || !Array.isArray(result.evidence) || !Array.isArray(result.images))) throw new Error('Website audit result contract invalid');
+  if (kind === 'website-audit') {
+    for (const [label, items] of [['evidence', result.evidence], ['images', result.images], ['siteCopyEvidence', result.siteCopyEvidence], ['ownedGraphicEvidence', result.ownedGraphicEvidence]]) {
+      if (items == null) continue;
+      if (!Array.isArray(items) || items.some((item) => !item || typeof item !== 'object' || !(item.sourceUrl || item.url || item.src || item.provenance?.sourceUrl || item.provenance?.url))) throw new Error(`Website audit ${label} provenance contract invalid`);
+    }
+  }
   if (kind === 'review-judgment' && (!result.reviewId || !result.decision || result.authoritative !== true)) throw new Error('Review judgment result contract invalid');
-  if (kind === 'page-prescription' && (!Array.isArray(result.pages) || !result.comparison || typeof result.comparison !== 'object' || Array.isArray(result.comparison))) throw new Error('Page prescription result contract invalid');
+  if (kind === 'page-prescription' && (!Array.isArray(result.pages) || !result.comparison || typeof result.comparison !== 'object' || Array.isArray(result.comparison) || !result.sourceCheckpoint && !result.sourceBinding)) throw new Error('Page prescription result contract invalid');
   return result;
 }
 
@@ -74,9 +80,9 @@ function researchPrompt(kind, input) {
     'Return exactly one JSON object and no surrounding commentary or markdown outside an optional JSON fence.',
   ].join('\n');
   const instructions = {
-    'website-audit': 'Inspect only the business-owned website. Return website, evidence, service-page/copy evidence, NAP/contact facts, graphicsInspection with findings, owned service/marketing graphics/flyers evidence, and public image URLs; every item needs source URL/provenance. Do not treat Google listing data as website evidence.',
+    'website-audit': 'Inspect only the business-owned website. Return website, evidence, service-page/copy evidence, NAP/contact facts, graphicsInspection with findings, owned service/marketing graphics/flyers evidence, and public image URLs; every evidence, image, graphic, and finding item must include a sourceUrl on the inspected business-owned domain plus provenance. Do not treat Google listing data as website evidence.',
     'review-judgment': 'Judge each supplied written review authoritatively. Return reviewId, decision, authoritative, directCompletedService, serviceEvidence with exact source-text excerpts, availabilityEvidence, negative/trap evidence, and provenance/model receipt fields. Distinguish direct completed work from supporting/negative evidence, and never turn anecdotal timing into a response guarantee.',
-    'page-prescription': 'Compare every candidate service in a value hierarchy, including passed-over services and reasons. Return differentiated pages with URLs, keywords, title/H1 directions, evidence/recommended first reviews, claims, overlap boundaries, and traps. Return comparison and preserve negative reviews. Do not write page copy or a client build.',
+    'page-prescription': 'Compare every candidate service in a value hierarchy, including passed-over services and reasons. Return differentiated pages with URLs, keywords, title/H1 directions, evidence/recommended first reviews, and claims as objects with text plus resolvable evidenceRefs to authoritative review or site-audit evidence IDs. Return comparison and preserve negative reviews. Do not write page copy or a client build.',
   }[kind];
   return `${boundary}\nResearch job: ${kind}\nJob boundary: ${instructions}\nInput:\n${JSON.stringify(input)}\nContract kind: ${kind}`;
 }
