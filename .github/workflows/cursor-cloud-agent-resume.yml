@@ -1,0 +1,102 @@
+name: Resume Gate 1 from Cursor terminal receipt
+
+on:
+  issue_comment:
+    types: [created]
+
+permissions:
+  contents: read
+  actions: read
+  issues: write
+  pull-requests: read
+
+concurrency:
+  group: factory-cursor-resume-${{ github.event.issue.number }}
+  cancel-in-progress: false
+
+jobs:
+  resume:
+    if: github.event.issue.pull_request && github.event.comment.user.login == 'cursor[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - name: Resolve the authoritative PR head
+        id: target
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_NUMBER: ${{ github.event.issue.number }}
+        run: |
+          pr_json="$(gh pr view "$PR_NUMBER" --repo "$GITHUB_REPOSITORY" --json headRefName,headRefOid)"
+          echo "branch=$(printf '%s' "$pr_json" | jq -r .headRefName)" >> "$GITHUB_OUTPUT"
+          echo "head=$(printf '%s' "$pr_json" | jq -r .headRefOid)" >> "$GITHUB_OUTPUT"
+      - name: Checkout the immutable PR head
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: ${{ steps.target.outputs.head }}
+          fetch-depth: 1
+          persist-credentials: false
+      - name: Retrieve the phase-A dispatch and pending artifact automatically
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: |
+          mkdir -p canary/phase-a
+          gh api --paginate "repos/$GITHUB_REPOSITORY/issues/$ISSUE_NUMBER/comments?per_page=100" --jq '.[] | select((.body | contains("Dispatch packet digest:")) and (.body | contains("Handoff ID:"))) | [.id, .html_url, .body] | @tsv' | tail -1 > canary/phase-a/dispatch.tsv
+          test -s canary/phase-a/dispatch.tsv
+          phase_run="$(cut -f3 canary/phase-a/dispatch.tsv | sed -n 's/^Phase-A run: //p' | tail -1)"
+          test -n "$phase_run"
+          gh run download "$phase_run" --repo "$GITHUB_REPOSITORY" --name "current-head-gate1-canary-$phase_run" --dir canary/phase-a
+          test -f canary/phase-a/current-head-gate1-pending.json
+      - name: Claim this terminal result once and collect its trusted receipt
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          COMMENT_ID: ${{ github.event.comment.id }}
+          COMMENT_URL: ${{ github.event.comment.html_url }}
+          AUTHOR_LOGIN: ${{ github.event.comment.user.login }}
+        run: |
+          handoff_id="$(sed -n 's/^Handoff ID: //p' canary/phase-a/dispatch.tsv | tail -1)"
+          comments="$(gh api --paginate "repos/$GITHUB_REPOSITORY/issues/$ISSUE_NUMBER/comments?per_page=100" --jq '.[] | .body')"
+          if printf '%s\n' "$comments" | grep -Fq "Factory resume claimed: $handoff_id"; then
+            echo "resume already claimed for $handoff_id"
+            exit 0
+          fi
+          printf '%s' '${{ github.event.comment.body }}' > canary/phase-a/cursor-terminal-comment.md
+          node src/collect-cursor-terminal-result.js canary/phase-a/current-head-gate1-pending.json canary/phase-a/cursor-terminal-comment.md canary/phase-a/cursor-terminal-result.json "$AUTHOR_LOGIN" "$COMMENT_ID" "$COMMENT_URL"
+          gh api "repos/$GITHUB_REPOSITORY/issues/$ISSUE_NUMBER/comments" --method POST -f body="Factory resume claimed: $handoff_id / result $COMMENT_ID"
+      - name: Resume phase B automatically from the verified result
+        env:
+          APIFY_API_TOKEN: ${{ secrets.APIFY_API_TOKEN }}
+          FACTORY_CANARY_PHASE: resume
+          FACTORY_CANARY_RUN_ID: ${{ github.run_id }}
+          FACTORY_CHECKED_OUT_SHA: ${{ steps.target.outputs.head }}
+          EXPECTED_HEAD_SHA: ${{ steps.target.outputs.head }}
+          FACTORY_HEAD_ASSERTION: 'true'
+          FACTORY_ISSUE_NUMBER: ${{ github.event.issue.number }}
+          FACTORY_PR_NUMBER: ${{ github.event.issue.number }}
+          FACTORY_BRANCH: ${{ steps.target.outputs.branch }}
+          FACTORY_REPOSITORY: ${{ github.repository }}
+          FACTORY_HANDOFF_FILE: canary/phase-a/current-head-gate1-pending.json
+        run: |
+          node -e "const fs=require('node:fs');const p=JSON.parse(fs.readFileSync('canary/phase-a/current-head-gate1-pending.json','utf8'));const r=JSON.parse(fs.readFileSync('canary/phase-a/cursor-terminal-result.json','utf8'));fs.mkdirSync('canary/phase-b',{recursive:true});fs.writeFileSync('canary/phase-b/cursor-bundle.json',JSON.stringify(r.bundle,null,2)+'\\n');process.env.REQUEST_FILE=p.inputFiles.request;process.env.SELECTION_FILE=p.inputFiles.selection;process.env.QA_FILE=p.inputFiles.qa;"
+          pending="canary/phase-a/current-head-gate1-pending.json"
+          request_file="$(node -e "process.stdout.write(JSON.parse(require('fs').readFileSync('$pending','utf8')).inputFiles.request)")"
+          selection_file="$(node -e "process.stdout.write(JSON.parse(require('fs').readFileSync('$pending','utf8')).inputFiles.selection)")"
+          qa_file="$(node -e "process.stdout.write(JSON.parse(require('fs').readFileSync('$pending','utf8')).inputFiles.qa)")"
+          node src/run-gate1-canary.js canary "$request_file" "$selection_file" "$qa_file" canary/phase-b/cursor-bundle.json
+      - name: Record automatic phase-B completion
+        if: success()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: |
+          handoff_id="$(node -e "process.stdout.write(JSON.parse(require('fs').readFileSync('canary/phase-a/current-head-gate1-pending.json','utf8')).handoffId)")"
+          gh api "repos/$GITHUB_REPOSITORY/issues/$ISSUE_NUMBER/comments" --method POST -f body="Factory resume completed: $handoff_id; phase-B Gate 1 proof is in Actions artifact $GITHUB_RUN_ID."
+      - name: Upload automatic handoff and Gate 1 proof
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: cursor-cloud-agent-resume-${{ github.run_id }}
+          path: canary/phase-a
+          if-no-files-found: error
+          retention-days: 30
