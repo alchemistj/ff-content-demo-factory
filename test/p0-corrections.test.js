@@ -8,6 +8,7 @@ const { renderGate1 } = require('../src/factory/gate1');
 const { sourceCheckpointFor, requiredReceipt, actionProofFromEnvironment } = require('../src/factory/orchestrator');
 const { semanticDigests, assertSemanticCheckpoint, recomputeSource, recomputeEvidence, recomputePrescription } = require('../src/factory/checkpoint');
 const { createDispatchPacket, canonicalThreadUrl, validateJobReceipt, validateDispatchPacket, validateBundle } = require('../src/factory/cloud-agent');
+const { createPendingHandoff, validatePendingHandoff, validateTerminalCursorResult, claimResume } = require('../src/factory/handoff');
 const { runCurrentHeadGate1Canary } = require('../src/run-gate1-canary');
 const fs = require('node:fs');
 const os = require('node:os');
@@ -176,4 +177,24 @@ test('fifth correction independently verifies authoritative PR metadata before p
   assert.match(workflow, /gh pr view/); assert.match(workflow, /headRefOid/); assert.match(workflow, /headRefName/); assert.match(workflow, /gh issue view/); assert.match(workflow, /phase:/);
   const wake = fs.readFileSync('.github/workflows/architect-factory-wake.yml', 'utf8');
   assert.match(wake, /sourceIdentity:/); assert.match(wake, /sourceArtifactDigest:/); assert.doesNotMatch(wake, /test -n "\$CURSOR_API_KEY"/);
+});
+
+test('sixth correction binds automatic handoff retrieval, terminal receipt, foreign thread, and replay CAS', () => {
+  const packet = createDispatchPacket({ issueNumber: 8, prNumber: 1, branch: 'architect/greenfield-gate1', reviewedHeadSha: 'head-1', scope: 'research-only' });
+  const pending = createPendingHandoff({ dispatchPacket: packet, inputManifest: { expectedHeadSha: 'head-1', manifestDigest: 'sha256:manifest' }, runId: 'canary-run-1', prospectId: 'prospect-1', sourceCheckpointDigest: 'sha256:source', phaseARunId: 'phase-a-1' });
+  assert.doesNotThrow(() => validatePendingHandoff(pending));
+  assert.throws(() => validatePendingHandoff({ ...pending, artifact: { ...pending.artifact, digest: 'sha256:wrong' } }), /digest|stale|invented/);
+  const envelope = { ...pending.envelope, operation: 'website-audit', stage: 'website-audit' };
+  const receipt = { operation: 'website-audit', stage: 'website-audit', status: 'completed', terminalStatus: 'succeeded', agentId: 'agent-1', runId: 'run-1', threadUrl: 'https://cursor.com/agents/agent-1', inputDigest: 'sha256:11111111', outputDigest: 'sha256:22222222', startedAt: '2026-01-01T00:00:00Z', completedAt: '2026-01-01T00:00:01Z', envelope };
+  const result = { schemaVersion: 'factory-cursor-terminal-result-v1', authorLogin: 'cursor[bot]', commentId: '55', commentUrl: 'https://github.com/alchemistj/ff-content-demo-factory/issues/8#issuecomment-55', pending, handoffId: pending.handoffId, dispatchKey: pending.envelope.dispatchKey, receipt, bundle: { schemaVersion: 'cursor-cloud-agent-bundle-v1' } };
+  assert.throws(() => validateTerminalCursorResult({ ...result, receipt: { ...receipt, threadUrl: 'https://foreign.example/agent' } }, {}), /canonical|thread/);
+  assert.throws(() => validateTerminalCursorResult({ ...result, handoffId: 'stale-handoff' }, {}), /binding|mismatch/);
+  assert.doesNotThrow(() => validateTerminalCursorResult(result, {}));
+  const claimed = claimResume(undefined, pending.handoffId, result.commentId);
+  assert.deepEqual(claimed.consumedHandoffs, [pending.handoffId]);
+  assert.throws(() => claimResume(claimed, pending.handoffId, result.commentId), /replay/);
+  const resume = fs.readFileSync('.github/workflows/cursor-cloud-agent-resume.yml', 'utf8');
+  assert.match(resume, /issue_comment/); assert.match(resume, /gh run download/); assert.match(resume, /cursor\[bot\]/); assert.match(resume, /Factory resume claimed/); assert.match(resume, /FACTORY_HANDOFF_FILE/);
+  const dispatch = fs.readFileSync('.github/workflows/cursor-cloud-agent-dispatch.yml', 'utf8');
+  assert.match(dispatch, /workflow_run/); assert.match(dispatch, /current-head-gate1-canary-\$PHASE_A_RUN_ID/); assert.match(dispatch, /pending.checked.json/);
 });
