@@ -1,0 +1,174 @@
+{
+  "deterministicPass": true,
+  "wholeSitePass": true,
+  "pointerLedgerWordBearingKeys": [],
+  "wordCounts": {
+    "/roof-replacement": 912,
+    "/roof-repair": 918,
+    "/": 485,
+    "/contact": 80
+  },
+  "wordCountPolicy": {
+    "role": "advisory",
+    "typicalRangeWhereEvidenceSupports": "650-900+",
+    "hardFloor": null,
+    "lengthAloneNeverPasses": true,
+    "paddingForbidden": true
+  },
+  "wordCountsRole": "advisory",
+  "passFailOnLength": false,
+  "deterministicFindings": [
+    {
+      "code": "review-density-reported",
+      "severity": "info",
+      "message": "Page contains 606 words across 3 review placement(s); density is informational only.",
+      "route": "/",
+      "details": {
+        "words": 606,
+        "reviews": 3
+      }
+    },
+    {
+      "code": "review-density-reported",
+      "severity": "info",
+      "message": "Page contains 1000 words across 3 review placement(s); density is informational only.",
+      "route": "/roof-replacement",
+      "details": {
+        "words": 1000,
+        "reviews": 3
+      }
+    },
+    {
+      "code": "review-density-reported",
+      "severity": "info",
+      "message": "Page contains 973 words across 1 review placement(s); density is informational only.",
+      "route": "/roof-repair",
+      "details": {
+        "words": 973,
+        "reviews": 1
+      }
+    }
+  ],
+  "wholeSiteFindings": [
+    {
+      "code": "review-density-reported",
+      "severity": "info",
+      "message": "Page contains 606 words across 3 review placement(s); density is informational only.",
+      "route": "/",
+      "details": {
+        "words": 606,
+        "reviews": 3
+      }
+    },
+    {
+      "code": "review-density-reported",
+      "severity": "info",
+      "message": "Page contains 1000 words across 3 review placement(s); density is informational only.",
+      "route": "/roof-replacement",
+      "details": {
+        "words": 1000,
+        "reviews": 3
+      }
+    },
+    {
+      "code": "review-density-reported",
+      "severity": "info",
+      "message": "Page contains 973 words across 1 review placement(s); density is informational only.",
+      "route": "/roof-repair",
+      "details": {
+        "words": 973,
+        "reviews": 1
+      }
+    },
+    {
+      "code": "intelligent-specificity",
+      "severity": "info",
+      "message": "Public copy uses the Hillcrest NAP, named Jared, and job-specific review proof. Home, replacement, and repair keep Springfield address and phone. Replacement names first-reroof, tear-off/new shingles, and cleanup from bound reviews. Repair stays on the Hoffman leak/seal/flue visit. Contested hours are omitted.",
+      "details": {
+        "dimension": "specificity",
+        "evidence": []
+      }
+    },
+    {
+      "code": "intelligent-strongest-review-choice",
+      "severity": "info",
+      "message": "Prescribed leads are used: C Jackson, Neal Richardson Sr, Jonathan Hoffman. Home quotes C Jackson, Hunter Gaston, and Josh Baird. Replacement quotes Neal, Laura, and Linda and keeps Grable, David, and Roger as unquoted authorized inventory. Repair quotes Hoffman only.",
+      "details": {
+        "dimension": "strongest-review-choice",
+        "evidence": []
+      }
+    },
+    {
+      "code": "intelligent-persuasive-flow",
+      "severity": "info",
+      "message": "Each public page has a distinct decision job and a next step. Replacement moves keep-vs-reroof, estimate/owner review, shingle method, named jobs, cleanup, then call. Repair moves keep-the-roof, same-visit scope, honest thin evidence, boundaries, then call. Home routes. Contact is reachability.",
+      "details": {
+        "dimension": "persuasive-flow",
+        "evidence": []
+      }
+    },
+    {
+      "code": "intelligent-voice-drift",
+      "severity": "info",
+      "message": "Public copy reads as local Springfield roofing, not an audit memo. Owner-facing pages do not shame the live site, do not recite retrieval counts, and do not use contrast or design instructions. Internal strategy stays internal.",
+      "details": {
+        "dimension": "voice-drift",
+        "evidence": []
+      }
+    },
+    {
+      "code": "intelligent-cross-page-distinctness",
+      "severity": "info",
+      "message": "Replacement, repair, home, and contact do different jobs. Replacement is the roof coming off. Repair is the roof that stays. Home is the company hub with generic completed-roof proof. Contact has no reviews.",
+      "details": {
+        "dimension": "cross-page-distinctness",
+        "evidence": []
+      }
+    },
+    {
+      "code": "intelligent-homepage-complementarity",
+      "severity": "info",
+      "message": "Home routes into the two service pages instead of restating them. Home does not use Neal, Hoffman, or replacement-method proof. It sends reroof and keep-the-roof jobs to their URLs.",
+      "details": {
+        "dimension": "homepage-complementarity",
+        "evidence": []
+      }
+    },
+    {
+      "code": "intelligent-contact-leanness",
+      "severity": "info",
+      "message": "Contact is phone, address, and route-outs only. No review placements, no hours claim, no second address, no service SLA.",
+      "details": {
+        "dimension": "contact-leanness",
+        "evidence": []
+      }
+    },
+    {
+      "code": "intelligent-strategy-truthfulness",
+      "severity": "info",
+      "message": "Strategy Overview is internal, four-page, and does not self-approve Architect QA. No public URL/path/route fields. Better-future language. Architect slots remain awaiting Josh's look and are not accepted. No merge/build/deploy statement is present.",
+      "details": {
+        "dimension": "strategy-truthfulness",
+        "evidence": []
+      }
+    },
+    {
+      "code": "intelligent-unsupported-claims",
+      "severity": "info",
+      "message": "Named-job timing and price stay in the reviews, not as company offers. Replacement and repair tell the named jobs in past tense. Public copy does not convert evening, early-morning-to-dark, within-a-week, promptly, or SWIFT language into company offers. No 24/7, no hail/commercial/storm product, no star rating or review count.",
+      "details": {
+        "dimension": "unsupported-claims",
+        "evidence": []
+      }
+    },
+    {
+      "code": "intelligent-generic-ai-filler",
+      "severity": "info",
+      "message": "Service pages stay tied to named jobs; repair is long because the visit is unpacked, not because extra jobs were invented. Repair remains Grade C with one suitable review. Replacement uses six named reroofs without minting extra URLs. No padding toward a third service.",
+      "details": {
+        "dimension": "generic-ai-filler",
+        "evidence": []
+      }
+    }
+  ]
+}

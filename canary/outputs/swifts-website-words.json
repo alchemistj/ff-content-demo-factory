@@ -1,0 +1,1069 @@
+{
+  "businessName": "Swifts Roofing",
+  "businessWebsite": "https://swiftsroofing.com/",
+  "placeId": "ChIJZWfAc5d9z4cR2TLlkLdpqMk",
+  "approvedServicePageCount": 2,
+  "header": {
+    "brand": "Swifts Roofing",
+    "logo": {
+      "href": "/",
+      "label": "Swifts Roofing"
+    },
+    "navigation": [
+      {
+        "label": "Home",
+        "href": "/"
+      },
+      {
+        "label": "Roof Replacement",
+        "href": "/roof-replacement"
+      },
+      {
+        "label": "Roof Repair",
+        "href": "/roof-repair"
+      },
+      {
+        "label": "Contact",
+        "href": "/contact"
+      }
+    ],
+    "cta": "Call (417) 771-0477",
+    "callToAction": {
+      "label": "Call (417) 771-0477",
+      "href": "tel:+14177710477",
+      "kind": "phone"
+    }
+  },
+  "footer": {
+    "body": "Swifts Roofing · 4268 S Hillcrest Ave Ste 110, Springfield, MO 65810 · (417) 771-0477",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/"
+      },
+      {
+        "label": "Roof Replacement",
+        "href": "/roof-replacement"
+      },
+      {
+        "label": "Roof Repair",
+        "href": "/roof-repair"
+      },
+      {
+        "label": "Contact",
+        "href": "/contact"
+      },
+      {
+        "label": "Call (417) 771-0477",
+        "href": "tel:+14177710477",
+        "kind": "phone"
+      }
+    ],
+    "legal": "Swifts Roofing · Springfield, MO"
+  },
+  "pages": [
+    {
+      "url": "/",
+      "pageId": "Home:/",
+      "prescriptionId": "Home:/",
+      "pageType": "homepage",
+      "primaryKeyword": "roofing company Springfield MO",
+      "reviewGrade": "A",
+      "eligibleForReviews": true,
+      "seoTitle": "Roofing Company in Springfield, MO | Swifts Roofing",
+      "metaDescription": "Swifts Roofing is a roofing company in Springfield, MO. Call (417) 771-0477 for a reroof or for repair on the roof you already have.",
+      "h1": "Roofing Company in Springfield, MO",
+      "heroSubhead": "Swifts Roofing is a roofing company in Springfield, MO. Jared and his crew complete roofs on homes in this area. The shop is at 4268 S Hillcrest Ave Ste 110. Call (417) 771-0477.",
+      "suitableReviewIds": [
+        "Ci9DQUlRQUNvZENodHljRjlvT2tJMWVIbE9iVkV0VW05cWFuSnBVR0ZNWlhsYWVHYxAB",
+        "ChdDSUhNMG9nS0VJQ0FnTUNnc3RfSmdRRRAB",
+        "ChZDSUhNMG9nS0VJQ0FnSURibGMyV2JnEAE"
+      ],
+      "claims": [
+        {
+          "id": "c-home-completed",
+          "text": "Jared and his crew complete roofs on Springfield homes",
+          "wordOffset": 45
+        },
+        {
+          "id": "c-home-crew",
+          "text": "The crew works the roof you can see when they leave",
+          "wordOffset": 225
+        },
+        {
+          "id": "c-home-finished",
+          "text": "Josh Baird is happy with his roof from Swifts",
+          "wordOffset": 333
+        }
+      ],
+      "sections": [
+        {
+          "id": "home-lead",
+          "sectionId": "home-lead",
+          "heading": "Jared and the crew on your roof",
+          "body": "Jared and his crew complete roofs on Springfield homes. C Jackson’s job names Jared, the crew, and Swifts Roofing on the roof they finished. It is a completed roof, start to finish, with communication from Jared while the work was underway.\n\n> Jared and his crew did an amazing job on our roof! From start to finish I was very impressed! Jared was very knowledgeable and communication was top notch. I couldn't recommend a better roofing company, thank you so much Jared and Swifts Roofing!\n> — C Jackson"
+        },
+        {
+          "id": "home-routes",
+          "sectionId": "home-routes",
+          "heading": "Need a new roof, or work on the one you have?",
+          "body": "If the roof over the house needs to come off, see Roof Replacement. That is a full reroof, including tear-off and new shingles. If you want to keep the roof you already have — a leak, a seal, a flue — see Roof Repair. See Contact when you are ready to talk."
+        },
+        {
+          "id": "home-crew",
+          "sectionId": "home-crew",
+          "heading": "The crew on the roof",
+          "body": "Hunter Gaston described Jared explaining the work in language he could follow, a polite crew, and hard work on the roof they had. The crew works the roof you can see when they leave. When they were done, the roof looked the way it should.\n\n> His team was extremely polite and worked very hard on our roof! Looks AMAZING! So thankful for Jared and his team! Roof looks PERFECT!\n> — Hunter Gaston"
+        },
+        {
+          "id": "home-nap",
+          "sectionId": "home-nap",
+          "heading": "The Springfield shop",
+          "body": "Swifts Roofing is at 4268 S Hillcrest Ave Ste 110, Springfield, MO 65810. Call (417) 771-0477. Homeowners name Jared when they talk about the work. See Roof Replacement or Roof Repair if you already know the job. See Contact if you want the number and the address."
+        },
+        {
+          "id": "home-finished",
+          "sectionId": "home-finished",
+          "heading": "A finished roof you can look at",
+          "body": "Josh Baird is happy with his roof from Swifts. He names Jared as the person who stays with the work until the customer is satisfied. The roof looks great. That is a finished roof on a Springfield home — the same kind of completed work C Jackson and Hunter Gaston describe.\n\n> I am very happy with my roof from Swifts. It's clear from working with Jared that he cares about customer satisfaction, and will do what it takes to make sure the customer is happy. He's professional, responsive, and passionate about doing the job right. The roof looks great, and the price was very reasonable.\n> — Josh Baird"
+        },
+        {
+          "id": "home-next",
+          "sectionId": "home-next",
+          "heading": "Call the company",
+          "body": "Call (417) 771-0477 when you want Swifts Roofing on the job. See Roof Replacement if the roof is coming off. See Roof Repair if the roof is staying. See Contact if you only need the number and the address."
+        }
+      ],
+      "reviewPlacements": [
+        {
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tJMWVIbE9iVkV0VW05cWFuSnBVR0ZNWlhsYWVHYxAB",
+          "quote": "Jared and his crew did an amazing job on our roof! From start to finish I was very impressed! Jared was very knowledgeable and communication was top notch. I couldn't recommend a better roofing company, thank you so much Jared and Swifts Roofing!",
+          "attribution": "C Jackson",
+          "claimId": "c-home-completed",
+          "proofRole": "lead",
+          "sectionId": "home-lead",
+          "order": 1,
+          "wordOffset": 87
+        },
+        {
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUNnc3RfSmdRRRAB",
+          "quote": "His team was extremely polite and worked very hard on our roof! Looks AMAZING! So thankful for Jared and his team! Roof looks PERFECT!",
+          "attribution": "Hunter Gaston",
+          "claimId": "c-home-crew",
+          "proofRole": "support",
+          "sectionId": "home-crew",
+          "order": 3,
+          "wordOffset": 248
+        },
+        {
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURibGMyV2JnEAE",
+          "quote": "I am very happy with my roof from Swifts. It's clear from working with Jared that he cares about customer satisfaction, and will do what it takes to make sure the customer is happy. He's professional, responsive, and passionate about doing the job right. The roof looks great, and the price was very reasonable.",
+          "attribution": "Josh Baird",
+          "claimId": "c-home-finished",
+          "proofRole": "support",
+          "sectionId": "home-finished",
+          "order": 5,
+          "wordOffset": 385
+        }
+      ],
+      "reviewEvidence": [
+        {
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tJMWVIbE9iVkV0VW05cWFuSnBVR0ZNWlhsYWVHYxAB",
+          "provenance": {
+            "type": "evidence",
+            "ref": "Ci9DQUlRQUNvZENodHljRjlvT2tJMWVIbE9iVkV0VW05cWFuSnBVR0ZNWlhsYWVHYxAB"
+          },
+          "placement": "lead-completed-roof",
+          "section": "home-lead"
+        },
+        {
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUNnc3RfSmdRRRAB",
+          "provenance": {
+            "type": "evidence",
+            "ref": "ChdDSUhNMG9nS0VJQ0FnTUNnc3RfSmdRRRAB"
+          },
+          "placement": "support-crew-on-roof",
+          "section": "home-crew"
+        },
+        {
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURibGMyV2JnEAE",
+          "provenance": {
+            "type": "evidence",
+            "ref": "ChZDSUhNMG9nS0VJQ0FnSURibGMyV2JnEAE"
+          },
+          "placement": "support-finished-roof",
+          "section": "home-finished"
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Roof replacement",
+          "href": "/roof-replacement"
+        },
+        {
+          "label": "Roof repair",
+          "href": "/roof-repair"
+        },
+        {
+          "label": "Call (417) 771-0477",
+          "href": "tel:+14177710477",
+          "kind": "phone"
+        },
+        {
+          "label": "Contact",
+          "href": "/contact"
+        }
+      ]
+    },
+    {
+      "url": "/roof-replacement",
+      "pageId": "Service:/roof-replacement",
+      "prescriptionId": "Service:/roof-replacement",
+      "pageType": "service",
+      "primaryKeyword": "roof replacement Springfield MO",
+      "reviewGrade": "A",
+      "eligibleForReviews": true,
+      "seoTitle": "Roof Replacement in Springfield, MO | Swifts Roofing",
+      "metaDescription": "Roof replacement in Springfield, MO from Swifts Roofing. Tear-off and new shingles for homes that need a full reroof. Call (417) 771-0477.",
+      "h1": "Roof Replacement in Springfield, MO",
+      "heroSubhead": "When the roof over the house needs to come off, start here. Swifts Roofing replaces roofs on Springfield homes. Homeowners name Jared as the owner on the job. The shop is at 4268 S Hillcrest Ave Ste 110. If you want to keep the roof you already have — a leak, a seal, or a flue — see Roof Repair.",
+      "suitableReviewIds": [
+        "Ci9DQUlRQUNvZENodHljRjlvT2sxM1kybGhiVFEzTlVJeFMzZE1WSE5XZURJMFkyYxAB",
+        "ChZDSUhNMG9nS0VMeW41N2ZMNU1HUUZ3EAE",
+        "ChZDSUhNMG9nS0VJQ0FnTURvck5uOEl3EAE",
+        "ChZDSUhNMG9nS0VJQ0FnTURJbjZTNkNnEAE",
+        "ChZDSUhNMG9nS0VJQ0FnSUNHM3JleVd3EAE",
+        "ChZDSUhNMG9nS0VJQ0FnSUNIMDlEc01nEAE"
+      ],
+      "claims": [
+        {
+          "id": "c-replace-first",
+          "text": "his first roof replacement included the on-site install and owner review after the install",
+          "wordOffset": 146
+        },
+        {
+          "id": "c-replace-shingles",
+          "text": "A full reroof is tear-off and putting new shingles down",
+          "wordOffset": 452
+        },
+        {
+          "id": "c-replace-cleanup",
+          "text": "the crew cleaned up the site on the day they replaced the roof",
+          "wordOffset": 782
+        }
+      ],
+      "sections": [
+        {
+          "id": "replace-when",
+          "sectionId": "replace-when",
+          "heading": "When the job is a full roof replacement",
+          "body": "Call for roof replacement in Springfield, MO when the roof on the house is coming off and a new roof is going down. If you want the roof you already have repaired, that is a different job — see Roof Repair.\n\nNeal Richardson Sr. came to Swifts Roofing for his first roof replacement. He had already met with other contractors. He asked questions. The estimate was competitive. Then the crew did the work: his first roof replacement included the on-site install and owner review after the install.\n\nThat install ran through the day and into the evening on his job. The crew worked the length of the day, kept the site clean as they went, and finished the install so the owner could walk the new roof.\n\n> During the install, the workers were respectful and professional, worked hard throughout the day into the evening, and did a clean and quality install. They also were good about cleanup throughout the day.\n> — Neal Richardson Sr"
+        },
+        {
+          "id": "replace-estimate",
+          "sectionId": "replace-estimate",
+          "heading": "Questions, the estimate, then the owner on the finished roof",
+          "body": "A replacement starts before anyone pulls shingles. Neal compared Swifts Roofing with other contractors and used that conversation to get his questions answered. After the install, the owner walked the finished roof and answered what was still open. If you are choosing among contractors, bring the questions you still have. If you already know you need a full reroof, say that when you call.\n\nDavid Carson also spent time on the roof with Jared before the crew put the new one down: pictures, how water moves, and the differences between manufacturers. Jared replaced that roof. Talking through shingles and manufacturers is part of choosing the new roof. If you already have pictures, manufacturer questions, or another estimate in hand, bring them. Neal used that kind of conversation before the crew started. David did too, on the roof with Jared, before the old roof came off. After the new roof is down, Jared walks it with the owner. That is the same finish Neal described: questions before the tear-off, then the owner on the finished roof. Roger Richardson described the same kind of job as preparation, roofing, and clean up — the stages of one replacement, done as one visit."
+        },
+        {
+          "id": "replace-shingles",
+          "sectionId": "replace-shingles",
+          "heading": "Tear-off and new shingles",
+          "body": "A full reroof is tear-off and putting new shingles down. That is how Swifts finishes a replacement: the old roof comes off, and the new shingles go down on the same job. Laura Hampton described that sequence on a completed reroof — delivery, tear-off, and new shingles — and the roof looked the way it should when the work was done.\n\nOn her house the materials showed up, the old roof came off, and the new shingles went down. She also hired other work with Jared over that year. The replacement itself is that sequence: delivery, tear-off, and new shingles on one job, with the owner looking at a finished roof when the crew leaves.\n\n> from delivery to tear off to putting new shingles down within a week the job is done and the roof looks so good!\n> — Laura Hampton"
+        },
+        {
+          "id": "replace-named-jobs",
+          "sectionId": "replace-named-jobs",
+          "heading": "Other reroofs, including work billed through insurance",
+          "body": "Rebecca Grable’s job was a roof replacement billed through her insurance. That is how that reroof was paid. The work was the same: the old roof came off and a new one went on.\n\nIf your Springfield roof is already moving through insurance, say that when you call. If you are comparing estimates, bring the questions you still have. The crew still does the same replacement: tear-off, new shingles, cleanup, and the owner on the finished roof.\n\nNeal, Linda, Laura, David, and Roger all describe completed replacements — first-time reroofs, a reroof billed through insurance, tear-off and new shingles, and crews that stayed through cleanup. If your job is a leak on a roof you intend to keep, see Roof Repair instead."
+        },
+        {
+          "id": "replace-cleanup",
+          "sectionId": "replace-cleanup",
+          "heading": "Cleanup on the day of the reroof",
+          "body": "Cleanup is part of the reroof. Neal noted cleanup throughout the install day. Roger described clean up with preparation and roofing as the quality of the same replacement. Linda Mulholland’s crew replaced the roof, worked from early morning to dark, and cleaned up the mess before they left. On those jobs, the crew cleaned up the site on the day they replaced the roof.\n\n> The crew who replaced our roof were amazing. They worked from early morning to dark and completely cleaned up all of the mess, even though I know they had to be exhausted.\n> — Linda Mulholland"
+        },
+        {
+          "id": "replace-next",
+          "sectionId": "replace-next",
+          "heading": "Call about a full reroof",
+          "body": "If the roof you have is the one coming off, call Swifts Roofing at (417) 771-0477. The shop is at 4268 S Hillcrest Ave Ste 110, Springfield, MO 65810. Tell Jared whether you are comparing estimates, whether the roof is already moving through insurance, and whether you need tear-off and new shingles. If you want the roof you already have repaired instead, see Roof Repair. To reach the shop without a service question, see Contact."
+        }
+      ],
+      "reviewPlacements": [
+        {
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2sxM1kybGhiVFEzTlVJeFMzZE1WSE5XZURJMFkyYxAB",
+          "quote": "During the install, the workers were respectful and professional, worked hard throughout the day into the evening, and did a clean and quality install. They also were good about cleanup throughout the day.",
+          "attribution": "Neal Richardson Sr",
+          "claimId": "c-replace-first",
+          "proofRole": "lead",
+          "sectionId": "replace-when",
+          "order": 1,
+          "wordOffset": 201
+        },
+        {
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTURJbjZTNkNnEAE",
+          "quote": "from delivery to tear off to putting new shingles down within a week the job is done and the roof looks so good!",
+          "attribution": "Laura Hampton",
+          "claimId": "c-replace-shingles",
+          "proofRole": "support",
+          "sectionId": "replace-shingles",
+          "order": 3,
+          "wordOffset": 568
+        },
+        {
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTURvck5uOEl3EAE",
+          "quote": "The crew who replaced our roof were amazing. They worked from early morning to dark and completely cleaned up all of the mess, even though I know they had to be exhausted.",
+          "attribution": "Linda Mulholland",
+          "claimId": "c-replace-cleanup",
+          "proofRole": "support",
+          "sectionId": "replace-cleanup",
+          "order": 5,
+          "wordOffset": 796
+        }
+      ],
+      "reviewEvidence": [
+        {
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2sxM1kybGhiVFEzTlVJeFMzZE1WSE5XZURJMFkyYxAB",
+          "provenance": {
+            "type": "evidence",
+            "ref": "Ci9DQUlRQUNvZENodHljRjlvT2sxM1kybGhiVFEzTlVJeFMzZE1WSE5XZURJMFkyYxAB"
+          },
+          "placement": "lead-first-replacement",
+          "section": "replace-when"
+        },
+        {
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTURJbjZTNkNnEAE",
+          "provenance": {
+            "type": "evidence",
+            "ref": "ChZDSUhNMG9nS0VJQ0FnTURJbjZTNkNnEAE"
+          },
+          "placement": "support-tearoff-shingles",
+          "section": "replace-shingles"
+        },
+        {
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTURvck5uOEl3EAE",
+          "provenance": {
+            "type": "evidence",
+            "ref": "ChZDSUhNMG9nS0VJQ0FnTURvck5uOEl3EAE"
+          },
+          "placement": "support-replaced-roof-cleanup",
+          "section": "replace-cleanup"
+        },
+        {
+          "reviewId": "ChZDSUhNMG9nS0VMeW41N2ZMNU1HUUZ3EAE",
+          "provenance": {
+            "type": "evidence",
+            "ref": "ChZDSUhNMG9nS0VMeW41N2ZMNU1HUUZ3EAE"
+          },
+          "placement": "authorized-replacement-inventory",
+          "section": "replace-named-jobs"
+        },
+        {
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNHM3JleVd3EAE",
+          "provenance": {
+            "type": "evidence",
+            "ref": "ChZDSUhNMG9nS0VJQ0FnSUNHM3JleVd3EAE"
+          },
+          "placement": "authorized-replacement-inventory",
+          "section": "replace-estimate"
+        },
+        {
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNIMDlEc01nEAE",
+          "provenance": {
+            "type": "evidence",
+            "ref": "ChZDSUhNMG9nS0VJQ0FnSUNIMDlEc01nEAE"
+          },
+          "placement": "authorized-replacement-inventory",
+          "section": "replace-named-jobs"
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Call (417) 771-0477",
+          "href": "tel:+14177710477",
+          "kind": "phone"
+        },
+        {
+          "label": "Roof repair",
+          "href": "/roof-repair"
+        },
+        {
+          "label": "Contact",
+          "href": "/contact"
+        }
+      ]
+    },
+    {
+      "url": "/roof-repair",
+      "pageId": "Service:/roof-repair",
+      "prescriptionId": "Service:/roof-repair",
+      "pageType": "service",
+      "primaryKeyword": "roof repair Springfield MO",
+      "reviewGrade": "C",
+      "eligibleForReviews": true,
+      "seoTitle": "Roof Repair in Springfield, MO | Swifts Roofing",
+      "metaDescription": "Roof repair in Springfield, MO from Swifts Roofing. Leak, seal, and flue work on the roof you already have. Call (417) 771-0477.",
+      "h1": "Roof Repair in Springfield, MO",
+      "heroSubhead": "If water is coming in, a seal has failed, or a flue on the roof needs work, start here. Swifts Roofing handles roof repair in Springfield, MO. Call (417) 771-0477. Homeowners name Jared. If the whole roof needs to come off, see Roof Replacement.",
+      "suitableReviewIds": [
+        "ChdDSUhNMG9nS0VJQ0FnSUNKbzR6V2tBRRAB"
+      ],
+      "claims": [
+        {
+          "id": "c-repair-visit",
+          "text": "On that visit they repaired a leak on an exhaust flue, fixed seals they found while they were there, and restored the flues to match the roof that stayed",
+          "wordOffset": 117
+        }
+      ],
+      "sections": [
+        {
+          "id": "repair-when",
+          "sectionId": "repair-when",
+          "heading": "When you want to keep the roof you have",
+          "body": "Call for roof repair in Springfield, MO when the roof on the house is staying. Jonathan Hoffman had a leak coming down an exhaust flue. The leak was found, explained, and repaired on that visit. The roof stayed. The work was the leak, the seals they found while they were there, and the flues.\n\nThat is one completed visit. On that visit they repaired a leak on an exhaust flue, fixed seals they found while they were there, and restored the flues to match the roof that stayed.\n\nHe noted they swung by while already occupied elsewhere and still made the stop.\n\n> Had a leak coming down an exhaust flume. Even while on an emergency call, Swift made the time to swing by promptly to check out the issue, find a fix and repair it. Not only were my concerns addressed and explained, he also repaired a few seal issues he found while working on the flue.\n> — Jonathan Hoffman"
+        },
+        {
+          "id": "repair-same-visit",
+          "sectionId": "repair-same-visit",
+          "heading": "The leak, the seals, and the flue on the same stop",
+          "body": "Hoffman’s leak showed up at an exhaust flue. While that flue work was underway, seal issues on the same roof were repaired too. The rusty flues were restored and color-matched to the roof that was already there. The roof itself stayed in place. The work was on the flue and the seals.\n\nThat is how the stop went: find where the water is coming in, explain it, fix the leak, and handle what they find next to it while they are already on the roof. If you call about a leak, say where the water is showing up inside the house and what you can see on the roof. If the stain tracks to a flue, say that. If you can see a failed seal line, say that.\n\nBring the details you have: which room is staining, whether it is worse after rain, and whether you can see rust or a failed seal from the ground. That is enough to start. You do not have to name the job before you call. If you can look at the flue and the seal lines from a ladder, say what you see. If you cannot, say what you see from the ground and from inside the house. The crew will be on the roof you called about.\n\nHoffman also had questions beyond the flue itself. Those questions were answered on that visit, on the same stop. The leak, the seals, and the flue were handled together because that is what they found on the roof that day."
+        },
+        {
+          "id": "repair-honest-scope",
+          "sectionId": "repair-honest-scope",
+          "heading": "What that visit covered",
+          "body": "Hoffman’s visit is a completed repair on a Springfield roof that stayed in place. He had called before — he wrote that this was not the first time — and this stop was the leak on the exhaust flue, the seals found while that flue work was underway, and the rusty flues restored to match the roof that was already there.\n\nIf water is coming in on your house, call with what you can see: the room that is staining, whether it is worse after rain, and whether you can see a flue or a failed seal from the ground. Jared will look at the roof you have. If the shingles need to come off and a new roof needs to go down, see Roof Replacement. Repair is for the roof that is staying on the house.\n\nWhen you call, you can say you have called before. Hoffman had. Say where the water is. On that stop the crew found the leak, explained it, repaired it, and took care of the seals and flues that were part of the same roof, and answered the questions he had while they were there."
+        },
+        {
+          "id": "repair-not-other-jobs",
+          "sectionId": "repair-not-other-jobs",
+          "heading": "If the roof needs to come off instead",
+          "body": "A leak, a failed seal, and a flue that needs work can all happen on the roof you already have. That is the repair job. A full reroof is a different job. If the shingles are coming off and a new roof is going down, see Roof Replacement.\n\nWhen you call, say you have a leak, a seal, or a flue to handle on the roof that is staying. If you are unsure whether the roof should stay, say that too. Jared can sort whether you are keeping the roof or replacing it once he hears what you are seeing. A Springfield home can need a leak fixed on a roof that is staying, or it can need the whole roof replaced. Call with what you are seeing and he will tell you which job it is. See Contact if you just need the number and the address."
+        },
+        {
+          "id": "repair-next",
+          "sectionId": "repair-next",
+          "heading": "Call about the roof you have",
+          "body": "Call Swifts Roofing at (417) 771-0477. The shop is at 4268 S Hillcrest Ave Ste 110, Springfield, MO 65810. Tell them where the water is, whether you can see the flue or the seal line, and that you want the roof you already have repaired. If you have called before, say so. Hoffman had. If the roof needs to come off, see Roof Replacement. If you only need the number and the address, see Contact."
+        }
+      ],
+      "reviewPlacements": [
+        {
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNKbzR6V2tBRRAB",
+          "quote": "Had a leak coming down an exhaust flume. Even while on an emergency call, Swift made the time to swing by promptly to check out the issue, find a fix and repair it. Not only were my concerns addressed and explained, he also repaired a few seal issues he found while working on the flue.",
+          "attribution": "Jonathan Hoffman",
+          "claimId": "c-repair-visit",
+          "proofRole": "lead",
+          "sectionId": "repair-when",
+          "order": 1,
+          "wordOffset": 161
+        }
+      ],
+      "reviewEvidence": [
+        {
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNKbzR6V2tBRRAB",
+          "provenance": {
+            "type": "evidence",
+            "ref": "ChdDSUhNMG9nS0VJQ0FnSUNKbzR6V2tBRRAB"
+          },
+          "placement": "lead-leak-seal-flue-same-visit",
+          "section": "repair-when"
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Call (417) 771-0477",
+          "href": "tel:+14177710477",
+          "kind": "phone"
+        },
+        {
+          "label": "Roof replacement",
+          "href": "/roof-replacement"
+        },
+        {
+          "label": "Contact",
+          "href": "/contact"
+        }
+      ]
+    },
+    {
+      "url": "/contact",
+      "pageId": "Contact:/contact",
+      "prescriptionId": "Contact:/contact",
+      "pageType": "contact",
+      "primaryKeyword": "contact Swifts Roofing Springfield",
+      "eligibleForReviews": false,
+      "seoTitle": "Contact Swifts Roofing in Springfield, MO",
+      "metaDescription": "Contact Swifts Roofing in Springfield, MO. Call (417) 771-0477. 4268 S Hillcrest Ave Ste 110, Springfield, MO 65810.",
+      "h1": "Contact Swifts Roofing in Springfield, MO",
+      "heroSubhead": "Call or write Swifts Roofing in Springfield when you are ready to talk about the roof.",
+      "sections": [
+        {
+          "id": "contact-reach",
+          "sectionId": "contact-reach",
+          "heading": "Phone and address",
+          "body": "Phone: (417) 771-0477. Address: 4268 S Hillcrest Ave Ste 110, Springfield, MO 65810. Ask for Jared if you already know the name from a completed job."
+        },
+        {
+          "id": "contact-routes",
+          "sectionId": "contact-routes",
+          "heading": "If you already know the job",
+          "body": "Roof Replacement is for a full reroof. Roof Repair is for the roof you already have. Call the shop when you are ready."
+        }
+      ],
+      "reviewPlacements": [],
+      "reviewEvidence": [],
+      "ctas": [
+        {
+          "label": "Call (417) 771-0477",
+          "href": "tel:+14177710477",
+          "kind": "phone"
+        },
+        {
+          "label": "Roof replacement",
+          "href": "/roof-replacement"
+        },
+        {
+          "label": "Roof repair",
+          "href": "/roof-repair"
+        }
+      ]
+    }
+  ],
+  "strategyOverview": {
+    "pageType": "strategy-overview",
+    "body": "This is an internal Writer 3 artifact. It is not a public page and must not be linked from header, footer, or business CTAs.\n\nThe better future for Swifts Roofing is a four-page Springfield site that lets a homeowner choose the job before they call. Home is the company: a roofing company in Springfield, MO, with Jared and the crew on completed roofs. Roof replacement is the dedicated reroof destination, with shingle work folded in as the method for putting the new roof down. Roof repair is the dedicated keep-the-roof destination, with leak, seal, and flue work folded onto the one completed visit the record actually has. Contact is how a Springfield household reaches the shop at 4268 S Hillcrest Ave Ste 110, Springfield, MO 65810, (417) 771-0477.\n\nThat shape is the point. A homeowner who needs a new roof can read a reroof page. A homeowner who needs the roof they already have can read a repair page. The company page does not have to close both jobs, and the call path does not have to carry service proof.\n\nArchitect QA decision slots for Writer 1 and Writer 2 remain awaiting Josh's look. They are not accepted. This Writer 3 pass does not self-approve those slots. Whole-site QA in this package is the writer-run continuity check required to stop at awaiting-human-gate-2. Josh alone approves Human Gate 2. No merge, no clients/ build, and no deployment occurred.",
+    "sections": [
+      {
+        "heading": "Why these four pages",
+        "body": "The approved Gate 1 page set is Home `/`, Roof Replacement `/roof-replacement`, Roof Repair `/roof-repair`, and Contact `/contact`. Replacement carries the six named completed reroofs. Repair carries the one Hoffman visit and stays honest about thin evidence. Home carries generic completed-roof proof from C Jackson, Hunter Gaston, and Josh Baird. Contact stays lean: phone, address, and routes back to the two jobs."
+      },
+      {
+        "heading": "What stays off the public map",
+        "body": "Intents that were folded stay supporting evidence on the parent page: putting new shingles down on replacement; leak, seal, and flue work on repair. Intents that were passed over stay off navigation and off owner-facing service lists. This overview does not publish a star rating or a review count."
+      },
+      {
+        "heading": "Evidence binding",
+        "body": "Lead reviews stay as prescribed: C Jackson on Home, Neal Richardson Sr on replacement, Jonathan Hoffman on repair. Contact has no first review. Public quotations are contiguous source text from the exact-place packet bound at Gate 1. reviewEvidence in the machine package is a pointer ledger only."
+      }
+    ]
+  },
+  "reviews": [
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tJMWVIbE9iVkV0VW05cWFuSnBVR0ZNWlhsYWVHYxAB",
+      "reviewer": "C Jackson",
+      "exactText": "Jared and his crew did an amazing job on our roof! From start to finish I was very impressed! Jared was very knowledgeable and communication was top notch. I couldn't recommend a better roofing company, thank you so much Jared and Swifts Roofing!",
+      "text": "Jared and his crew did an amazing job on our roof! From start to finish I was very impressed! Jared was very knowledgeable and communication was top notch. I couldn't recommend a better roofing company, thank you so much Jared and Swifts Roofing!",
+      "rating": 5,
+      "date": "2025-12-27T23:47:28.240Z",
+      "classification": "positive",
+      "suitability": "high",
+      "suitableFor": [
+        "Home:/",
+        "/"
+      ]
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnTUNnc3RfSmdRRRAB",
+      "reviewer": "Hunter Gaston",
+      "exactText": "Jared was very professional! He explained everything to where I could understand better on what needed to be done. His team was extremely polite and worked very hard on our roof! Looks AMAZING! So thankful for Jared and his team! Roof looks PERFECT!",
+      "text": "Jared was very professional! He explained everything to where I could understand better on what needed to be done. His team was extremely polite and worked very hard on our roof! Looks AMAZING! So thankful for Jared and his team! Roof looks PERFECT!",
+      "rating": 5,
+      "date": "2025-02-15T18:36:39.323Z",
+      "classification": "positive",
+      "suitability": "high",
+      "suitableFor": [
+        "Home:/",
+        "/"
+      ]
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURibGMyV2JnEAE",
+      "reviewer": "Josh Baird",
+      "exactText": "I am very happy with my roof from Swifts. It's clear from working with Jared that he cares about customer satisfaction, and will do what it takes to make sure the customer is happy. He's professional, responsive, and passionate about doing the job right. The roof looks great, and the price was very reasonable. I would highly recommend Swifts.",
+      "text": "I am very happy with my roof from Swifts. It's clear from working with Jared that he cares about customer satisfaction, and will do what it takes to make sure the customer is happy. He's professional, responsive, and passionate about doing the job right. The roof looks great, and the price was very reasonable. I would highly recommend Swifts.",
+      "rating": 5,
+      "date": "2024-08-07T18:16:42.618Z",
+      "classification": "positive",
+      "suitability": "high",
+      "suitableFor": [
+        "Home:/",
+        "/"
+      ]
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2sxM1kybGhiVFEzTlVJeFMzZE1WSE5XZURJMFkyYxAB",
+      "reviewer": "Neal Richardson Sr",
+      "exactText": "I’m very impressed with Swift’s Roofing. Prior to going with them I met with probably seven contractors and not only was Swift’s competitive with their estimate but they were professional and courteous with all the questions I had for my first roof replacement.\n\nDuring the install, the workers were respectful and professional, worked hard throughout the day into the evening, and did a clean and quality install. They also were good about cleanup throughout the day.\n\nAfter the install, the owner reviewed the installation and answered all the questions I had.\n\nI don’t plan to need a new roof for a while but if anyone asks me for a recommendation I can easily recommend Swift’s.",
+      "text": "I’m very impressed with Swift’s Roofing. Prior to going with them I met with probably seven contractors and not only was Swift’s competitive with their estimate but they were professional and courteous with all the questions I had for my first roof replacement.\n\nDuring the install, the workers were respectful and professional, worked hard throughout the day into the evening, and did a clean and quality install. They also were good about cleanup throughout the day.\n\nAfter the install, the owner reviewed the installation and answered all the questions I had.\n\nI don’t plan to need a new roof for a while but if anyone asks me for a recommendation I can easily recommend Swift’s.",
+      "rating": 5,
+      "date": "2025-10-09T14:57:33.609Z",
+      "classification": "positive",
+      "suitability": "high",
+      "suitableFor": [
+        "Service:/roof-replacement",
+        "/roof-replacement"
+      ]
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VMeW41N2ZMNU1HUUZ3EAE",
+      "reviewer": "Rebecca Grable",
+      "exactText": "Swift’s Roofing was great through the whole process with a roof replacement through my insurance. Everything went much quicker than I expected and the team was friendly and explained everything well.",
+      "text": "Swift’s Roofing was great through the whole process with a roof replacement through my insurance. Everything went much quicker than I expected and the team was friendly and explained everything well.",
+      "rating": 5,
+      "date": "2025-05-16T19:14:26.745Z",
+      "classification": "positive",
+      "suitability": "high",
+      "suitableFor": [
+        "Service:/roof-replacement",
+        "/roof-replacement"
+      ]
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnTURvck5uOEl3EAE",
+      "reviewer": "Linda Mulholland",
+      "exactText": "The crew who replaced our roof were amazing. They worked from early morning to dark and completely cleaned up all of the mess, even though I know they had to be exhausted. Our roof looks great and we’re so thankful for getting these men to do this job for us. Bless you guy!",
+      "text": "The crew who replaced our roof were amazing. They worked from early morning to dark and completely cleaned up all of the mess, even though I know they had to be exhausted. Our roof looks great and we’re so thankful for getting these men to do this job for us. Bless you guy!",
+      "rating": 5,
+      "date": "2025-04-22T15:21:49.155Z",
+      "classification": "positive",
+      "suitability": "high",
+      "suitableFor": [
+        "Service:/roof-replacement",
+        "/roof-replacement"
+      ]
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnTURJbjZTNkNnEAE",
+      "reviewer": "Laura Hampton",
+      "exactText": "Swifts Roofing is absolutely the best! Jared has went above and beyond, and been a pleasure to work with. We have had 4 separate jobs done in the last year, and he has always stayed within the budget and done quality work in quick time, from delivery to tear off to putting new shingles down within a week the job is done and the roof looks so good! He is kind and professional throughout the project. I would recommend him over anyone else and I will guarantee you won’t get anyone better or a better cost!",
+      "text": "Swifts Roofing is absolutely the best! Jared has went above and beyond, and been a pleasure to work with. We have had 4 separate jobs done in the last year, and he has always stayed within the budget and done quality work in quick time, from delivery to tear off to putting new shingles down within a week the job is done and the roof looks so good! He is kind and professional throughout the project. I would recommend him over anyone else and I will guarantee you won’t get anyone better or a better cost!",
+      "rating": 5,
+      "date": "2025-04-14T00:35:48.001Z",
+      "classification": "positive",
+      "suitability": "high",
+      "suitableFor": [
+        "Service:/roof-replacement",
+        "/roof-replacement"
+      ]
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNHM3JleVd3EAE",
+      "reviewer": "David Carson",
+      "exactText": "Jared replaced my roof recently. I interviewed many roofing companies but Swifts Roofing spent a considerable amount of time evaluating my roof, taking many pictures and discussing facts with me about shingles, water movement in ice and liquid form. He spent considerable time discussing different manufacturers of roofing materials and their product differences. The bottom line with me was Jared’s time taken to evaluate my home roof. His crew really produced a beautifully done job. I was truly gratified for his clarity throughout the job. I would rate Jared 6 stars if that were an option. Thank you Jared Swift.",
+      "text": "Jared replaced my roof recently. I interviewed many roofing companies but Swifts Roofing spent a considerable amount of time evaluating my roof, taking many pictures and discussing facts with me about shingles, water movement in ice and liquid form. He spent considerable time discussing different manufacturers of roofing materials and their product differences. The bottom line with me was Jared’s time taken to evaluate my home roof. His crew really produced a beautifully done job. I was truly gratified for his clarity throughout the job. I would rate Jared 6 stars if that were an option. Thank you Jared Swift.",
+      "rating": 5,
+      "date": "2025-03-18T18:07:43.853Z",
+      "classification": "positive",
+      "suitability": "high",
+      "suitableFor": [
+        "Service:/roof-replacement",
+        "/roof-replacement"
+      ]
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNIMDlEc01nEAE",
+      "reviewer": "Roger Richardson",
+      "exactText": "Jared and his crew did a quality job replacing our roof. Attention to detail in preparation, roofing, and clean up were absolutely top notch.",
+      "text": "Jared and his crew did a quality job replacing our roof. Attention to detail in preparation, roofing, and clean up were absolutely top notch.",
+      "rating": 5,
+      "date": "2024-09-08T13:27:24.465Z",
+      "classification": "positive",
+      "suitability": "high",
+      "suitableFor": [
+        "Service:/roof-replacement",
+        "/roof-replacement"
+      ]
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNKbzR6V2tBRRAB",
+      "reviewer": "Jonathan Hoffman",
+      "exactText": "Update 6.5.25: Swift to the rescue, again!! Had a leak coming down an exhaust flume. Even while on an emergency call, Swift made the time to swing by promptly to check out the issue, find a fix and repair it. Not only were my concerns addressed and explained, he also repaired a few seal issues he found while working on the flue. I can't express enough how great this company is, their pricing and SWIFT responses to any roofing issues. Bravo again! Thank you so much for taking care of my roofing needs!\nThank you for everything. My ugly rusty flumes have been restored and made to match the roof color. It was also pretty awesome that you just wanted to check out and answered all the questions I had outside of the flume repair.\nThank you for the awesome work and attention to great detail. Will be calling you for all my roof needs!",
+      "text": "Update 6.5.25: Swift to the rescue, again!! Had a leak coming down an exhaust flume. Even while on an emergency call, Swift made the time to swing by promptly to check out the issue, find a fix and repair it. Not only were my concerns addressed and explained, he also repaired a few seal issues he found while working on the flue. I can't express enough how great this company is, their pricing and SWIFT responses to any roofing issues. Bravo again! Thank you so much for taking care of my roofing needs!\nThank you for everything. My ugly rusty flumes have been restored and made to match the roof color. It was also pretty awesome that you just wanted to check out and answered all the questions I had outside of the flume repair.\nThank you for the awesome work and attention to great detail. Will be calling you for all my roof needs!",
+      "rating": 5,
+      "date": "2025-06-05T21:42:19.043Z",
+      "classification": "positive",
+      "suitability": "high",
+      "suitableFor": [
+        "Service:/roof-repair",
+        "/roof-repair"
+      ]
+    }
+  ],
+  "rejectedIntentLedger": [
+    {
+      "id": "roof-replacement",
+      "name": "Roof replacement",
+      "status": "prescribed",
+      "aliases": [
+        "roof replacement"
+      ],
+      "publicRouteAllowed": true,
+      "supportingEvidenceAllowed": false
+    },
+    {
+      "id": "roof-repair",
+      "name": "Roof repair",
+      "status": "prescribed",
+      "aliases": [
+        "roof repair"
+      ],
+      "publicRouteAllowed": true,
+      "supportingEvidenceAllowed": false
+    },
+    {
+      "id": "leak-repair",
+      "name": "Leak repair",
+      "status": "folded",
+      "foldInto": "roof-repair",
+      "aliases": [
+        "leak repair"
+      ],
+      "publicRouteAllowed": false,
+      "supportingEvidenceAllowed": true
+    },
+    {
+      "id": "seal-repair",
+      "name": "Seal repair",
+      "status": "folded",
+      "foldInto": "roof-repair",
+      "aliases": [
+        "seal repair"
+      ],
+      "publicRouteAllowed": false,
+      "supportingEvidenceAllowed": true
+    },
+    {
+      "id": "flue-repair",
+      "name": "Flue repair",
+      "status": "folded",
+      "foldInto": "roof-repair",
+      "aliases": [
+        "flue repair"
+      ],
+      "publicRouteAllowed": false,
+      "supportingEvidenceAllowed": true
+    },
+    {
+      "id": "shingle-installation",
+      "name": "Shingle installation",
+      "status": "folded",
+      "foldInto": "roof-replacement",
+      "aliases": [
+        "shingle installation"
+      ],
+      "publicRouteAllowed": false,
+      "supportingEvidenceAllowed": true
+    },
+    {
+      "id": "roof-inspection",
+      "name": "Roof inspection",
+      "status": "passed_over",
+      "aliases": [
+        "roof inspection"
+      ],
+      "publicRouteAllowed": false,
+      "supportingEvidenceAllowed": false
+    },
+    {
+      "id": "emergency-tarping",
+      "name": "Emergency tarping",
+      "status": "passed_over",
+      "aliases": [
+        "emergency tarping"
+      ],
+      "publicRouteAllowed": false,
+      "supportingEvidenceAllowed": false
+    },
+    {
+      "id": "storm-restoration",
+      "name": "Storm restoration",
+      "status": "passed_over",
+      "aliases": [
+        "storm restoration"
+      ],
+      "publicRouteAllowed": false,
+      "supportingEvidenceAllowed": false
+    },
+    {
+      "id": "hail-damage-repair",
+      "name": "Hail damage repair",
+      "status": "passed_over",
+      "aliases": [
+        "hail damage repair"
+      ],
+      "publicRouteAllowed": false,
+      "supportingEvidenceAllowed": false
+    },
+    {
+      "id": "waterproofing",
+      "name": "Waterproofing",
+      "status": "passed_over",
+      "aliases": [
+        "waterproofing"
+      ],
+      "publicRouteAllowed": false,
+      "supportingEvidenceAllowed": false
+    },
+    {
+      "id": "insurance-claim-service",
+      "name": "Insurance claim service",
+      "status": "passed_over",
+      "aliases": [
+        "insurance claim service"
+      ],
+      "publicRouteAllowed": false,
+      "supportingEvidenceAllowed": false
+    },
+    {
+      "id": "commercial-roofing",
+      "name": "Commercial roofing",
+      "status": "passed_over",
+      "aliases": [
+        "commercial roofing"
+      ],
+      "publicRouteAllowed": false,
+      "supportingEvidenceAllowed": false
+    },
+    {
+      "id": "roof-maintenance",
+      "name": "Roof maintenance",
+      "status": "passed_over",
+      "aliases": [
+        "roof maintenance"
+      ],
+      "publicRouteAllowed": false,
+      "supportingEvidenceAllowed": false
+    },
+    {
+      "id": "emergency-roof-repair",
+      "name": "Emergency roof repair",
+      "status": "passed_over",
+      "aliases": [
+        "emergency roof repair"
+      ],
+      "publicRouteAllowed": false,
+      "supportingEvidenceAllowed": false
+    }
+  ],
+  "reviewEvidence": [
+    {
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tJMWVIbE9iVkV0VW05cWFuSnBVR0ZNWlhsYWVHYxAB",
+      "provenance": {
+        "type": "evidence",
+        "ref": "Ci9DQUlRQUNvZENodHljRjlvT2tJMWVIbE9iVkV0VW05cWFuSnBVR0ZNWlhsYWVHYxAB"
+      },
+      "placement": "lead-completed-roof",
+      "section": "home-lead"
+    },
+    {
+      "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUNnc3RfSmdRRRAB",
+      "provenance": {
+        "type": "evidence",
+        "ref": "ChdDSUhNMG9nS0VJQ0FnTUNnc3RfSmdRRRAB"
+      },
+      "placement": "support-crew-on-roof",
+      "section": "home-crew"
+    },
+    {
+      "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURibGMyV2JnEAE",
+      "provenance": {
+        "type": "evidence",
+        "ref": "ChZDSUhNMG9nS0VJQ0FnSURibGMyV2JnEAE"
+      },
+      "placement": "support-finished-roof",
+      "section": "home-finished"
+    },
+    {
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2sxM1kybGhiVFEzTlVJeFMzZE1WSE5XZURJMFkyYxAB",
+      "provenance": {
+        "type": "evidence",
+        "ref": "Ci9DQUlRQUNvZENodHljRjlvT2sxM1kybGhiVFEzTlVJeFMzZE1WSE5XZURJMFkyYxAB"
+      },
+      "placement": "lead-first-replacement",
+      "section": "replace-when"
+    },
+    {
+      "reviewId": "ChZDSUhNMG9nS0VJQ0FnTURJbjZTNkNnEAE",
+      "provenance": {
+        "type": "evidence",
+        "ref": "ChZDSUhNMG9nS0VJQ0FnTURJbjZTNkNnEAE"
+      },
+      "placement": "support-tearoff-shingles",
+      "section": "replace-shingles"
+    },
+    {
+      "reviewId": "ChZDSUhNMG9nS0VJQ0FnTURvck5uOEl3EAE",
+      "provenance": {
+        "type": "evidence",
+        "ref": "ChZDSUhNMG9nS0VJQ0FnTURvck5uOEl3EAE"
+      },
+      "placement": "support-replaced-roof-cleanup",
+      "section": "replace-cleanup"
+    },
+    {
+      "reviewId": "ChZDSUhNMG9nS0VMeW41N2ZMNU1HUUZ3EAE",
+      "provenance": {
+        "type": "evidence",
+        "ref": "ChZDSUhNMG9nS0VMeW41N2ZMNU1HUUZ3EAE"
+      },
+      "placement": "authorized-replacement-inventory",
+      "section": "replace-named-jobs"
+    },
+    {
+      "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNHM3JleVd3EAE",
+      "provenance": {
+        "type": "evidence",
+        "ref": "ChZDSUhNMG9nS0VJQ0FnSUNHM3JleVd3EAE"
+      },
+      "placement": "authorized-replacement-inventory",
+      "section": "replace-estimate"
+    },
+    {
+      "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNIMDlEc01nEAE",
+      "provenance": {
+        "type": "evidence",
+        "ref": "ChZDSUhNMG9nS0VJQ0FnSUNIMDlEc01nEAE"
+      },
+      "placement": "authorized-replacement-inventory",
+      "section": "replace-named-jobs"
+    },
+    {
+      "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNKbzR6V2tBRRAB",
+      "provenance": {
+        "type": "evidence",
+        "ref": "ChdDSUhNMG9nS0VJQ0FnSUNKbzR6V2tBRRAB"
+      },
+      "placement": "lead-leak-seal-flue-same-visit",
+      "section": "repair-when"
+    }
+  ],
+  "pointerLedgerByRoute": {
+    "/": [
+      {
+        "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tJMWVIbE9iVkV0VW05cWFuSnBVR0ZNWlhsYWVHYxAB",
+        "provenance": {
+          "type": "evidence",
+          "ref": "Ci9DQUlRQUNvZENodHljRjlvT2tJMWVIbE9iVkV0VW05cWFuSnBVR0ZNWlhsYWVHYxAB"
+        },
+        "placement": "lead-completed-roof",
+        "section": "home-lead"
+      },
+      {
+        "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUNnc3RfSmdRRRAB",
+        "provenance": {
+          "type": "evidence",
+          "ref": "ChdDSUhNMG9nS0VJQ0FnTUNnc3RfSmdRRRAB"
+        },
+        "placement": "support-crew-on-roof",
+        "section": "home-crew"
+      },
+      {
+        "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURibGMyV2JnEAE",
+        "provenance": {
+          "type": "evidence",
+          "ref": "ChZDSUhNMG9nS0VJQ0FnSURibGMyV2JnEAE"
+        },
+        "placement": "support-finished-roof",
+        "section": "home-finished"
+      }
+    ],
+    "/roof-replacement": [
+      {
+        "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2sxM1kybGhiVFEzTlVJeFMzZE1WSE5XZURJMFkyYxAB",
+        "provenance": {
+          "type": "evidence",
+          "ref": "Ci9DQUlRQUNvZENodHljRjlvT2sxM1kybGhiVFEzTlVJeFMzZE1WSE5XZURJMFkyYxAB"
+        },
+        "placement": "lead-first-replacement",
+        "section": "replace-when"
+      },
+      {
+        "reviewId": "ChZDSUhNMG9nS0VJQ0FnTURJbjZTNkNnEAE",
+        "provenance": {
+          "type": "evidence",
+          "ref": "ChZDSUhNMG9nS0VJQ0FnTURJbjZTNkNnEAE"
+        },
+        "placement": "support-tearoff-shingles",
+        "section": "replace-shingles"
+      },
+      {
+        "reviewId": "ChZDSUhNMG9nS0VJQ0FnTURvck5uOEl3EAE",
+        "provenance": {
+          "type": "evidence",
+          "ref": "ChZDSUhNMG9nS0VJQ0FnTURvck5uOEl3EAE"
+        },
+        "placement": "support-replaced-roof-cleanup",
+        "section": "replace-cleanup"
+      },
+      {
+        "reviewId": "ChZDSUhNMG9nS0VMeW41N2ZMNU1HUUZ3EAE",
+        "provenance": {
+          "type": "evidence",
+          "ref": "ChZDSUhNMG9nS0VMeW41N2ZMNU1HUUZ3EAE"
+        },
+        "placement": "authorized-replacement-inventory",
+        "section": "replace-named-jobs"
+      },
+      {
+        "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNHM3JleVd3EAE",
+        "provenance": {
+          "type": "evidence",
+          "ref": "ChZDSUhNMG9nS0VJQ0FnSUNHM3JleVd3EAE"
+        },
+        "placement": "authorized-replacement-inventory",
+        "section": "replace-estimate"
+      },
+      {
+        "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNIMDlEc01nEAE",
+        "provenance": {
+          "type": "evidence",
+          "ref": "ChZDSUhNMG9nS0VJQ0FnSUNIMDlEc01nEAE"
+        },
+        "placement": "authorized-replacement-inventory",
+        "section": "replace-named-jobs"
+      }
+    ],
+    "/roof-repair": [
+      {
+        "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNKbzR6V2tBRRAB",
+        "provenance": {
+          "type": "evidence",
+          "ref": "ChdDSUhNMG9nS0VJQ0FnSUNKbzR6V2tBRRAB"
+        },
+        "placement": "lead-leak-seal-flue-same-visit",
+        "section": "repair-when"
+      }
+    ],
+    "/contact": []
+  },
+  "identity": {
+    "name": "Swifts Roofing",
+    "placeId": "ChIJZWfAc5d9z4cR2TLlkLdpqMk",
+    "website": "https://swiftsroofing.com/",
+    "address": "4268 S Hillcrest Ave Ste 110, Springfield, MO 65810",
+    "phone": "(417) 771-0477"
+  },
+  "gate1": {
+    "runId": "run-9dcafb5c9c632ee7dd22",
+    "prospectId": "prospect-1c40e8f2f3661d4593fa",
+    "approvedBy": "Josh Lenz",
+    "approvedPullRequest": "https://github.com/alchemistj/ff-content-demo-factory/pull/7",
+    "compactArtifact": "state/gate1/run-9dcafb5c9c632ee7dd22.md",
+    "actionsCheckpoint": "https://github.com/alchemistj/ff-content-demo-factory/actions/runs/32839684505"
+  },
+  "wordCounts": {
+    "/roof-replacement": 912,
+    "/roof-repair": 918,
+    "/": 485,
+    "/contact": 80
+  },
+  "wordCountPolicy": {
+    "role": "advisory",
+    "typicalRangeWhereEvidenceSupports": "650-900+",
+    "hardFloor": null,
+    "lengthAloneNeverPasses": true,
+    "paddingForbidden": true
+  }
+}
