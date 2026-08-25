@@ -326,6 +326,13 @@ function createProductionAdapters({
       const filename = env.FACTORY_ACCEPTED_OPERATION_ARTIFACT_PATH;
       fs.mkdirSync(require('node:path').dirname(filename), { recursive: true });
       fs.writeFileSync(filename, `${JSON.stringify({ ...artifact, response }, null, 2)}\n`);
+      if (env.FACTORY_STOP_AFTER_ACCEPTANCE === 'true') {
+        const boundaryFile = env.FACTORY_ACCEPTANCE_BOUNDARY_FILE || 'canary/phase-b/accepted-boundary';
+        fs.writeFileSync(boundaryFile, `${artifact.operationKey}\n`);
+        const boundary = new Error('PAID_OPERATION_ACCEPTANCE_BOUNDARY');
+        boundary.code = 'PAID_OPERATION_ACCEPTANCE_BOUNDARY';
+        throw boundary;
+      }
     } : null,
   });
   const cursorAdapter = cursor || createCursorAdapter({ apiKey: env.CURSOR_API_KEY, sdk: cursorSdk, modelAlias: env.CURSOR_MODEL || config.cursorModel, clock, receiptStore: receipts, workspace: root });

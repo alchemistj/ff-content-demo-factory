@@ -174,6 +174,41 @@ test('Apify ambiguous acceptance is reconciled without a second POST, otherwise 
   assert.equal(reconciledCalls, 2, 'reconciliation performs only provider GETs and never a second POST');
 });
 
+test('Apify read-only reconciliation accepts exactly one stage-bound input match and never reposts', async () => {
+  const calls = [];
+  const receiptStore = new Map();
+  let projectionInput;
+  const fetchImpl = async (url, options) => {
+    const body = options.body ? JSON.parse(options.body) : undefined;
+    calls.push({ url, method: options.method, body });
+    if (options.method === 'POST') { projectionInput = body; return response({ data: { status: 'RUNNING' } }); }
+    if (url.includes('/runs?')) return response({ data: [{ id: 'foreign-run', operationId: 'other-operation' }, { id: 'exact-run', operationId: projectionInput.factoryOperationId, requestDigest: projectionInput.factoryRequestDigest, defaultDatasetId: 'exact-dataset' }] });
+    if (url.includes('/actor-runs/exact-run/input')) return response({ data: projectionInput });
+    if (url.includes('/actor-runs/foreign-run/input')) return response({ data: { factoryOperationId: 'other-operation', factoryRequestDigest: 'wrong' } });
+    if (url.includes('/actor-runs/exact-run')) return response({ data: { id: 'exact-run', defaultDatasetId: 'exact-dataset', status: 'SUCCEEDED' } });
+    if (url.includes('/datasets/exact-dataset/items')) return response([{ placeId: 'ChIJreconcile-one', url: 'https://www.google.com/maps/place/Reconcile-one', reviews: [{ reviewId: 'r1', name: 'A', publishedAtDate: '2026-01-01', text: 'Completed', stars: 5 }] }]);
+    throw new Error(`unexpected Apify request ${options.method} ${url}`);
+  };
+  const adapter = createApifyAdapter({ token: 'secret', fetchImpl, receiptStore });
+  const result = await adapter.enrichFinalist({ placeId: 'ChIJreconcile-one', mapsUrl: 'https://www.google.com/maps/place/Reconcile-one' });
+  assert.equal(result.provenance.exactPlaceId, 'ChIJreconcile-one');
+  assert.equal(calls.filter((call) => call.method === 'POST').length, 1);
+  assert.equal(calls.some((call) => call.url.includes('/acts/compass~crawler-google-places/runs?')), true);
+  assert.equal(calls[0].body.factoryOperationId, 'apify:run:finalist:ChIJreconcile-one');
+});
+
+test('Apify projections explicitly disable client retries and separate discovery from finalist operations', () => {
+  const discovery = require('../src/adapters/apify').apifyDiscoveryRequestProjection({ searchStrings: ['electrician'], location: 'Springfield, MO' });
+  const finalist = apifyFinalistRequestProjection({ placeId: 'ChIJstage', mapsUrl: 'https://www.google.com/maps/place/Stage' });
+  assert.equal(discovery.operation, 'discovery');
+  assert.equal(finalist.operation, 'finalist-enrichment');
+  assert.equal(discovery.options.maxRetries, 0);
+  assert.equal(finalist.options.maxRetries, 0);
+  assert.notEqual(discovery.operationKey, finalist.operationKey);
+  assert.equal(discovery.input.factoryOperationId, discovery.operationKey);
+  assert.equal(finalist.input.factoryOperationId, finalist.operationKey);
+});
+
 test('production Apify refuses paid POST without a real GitHub pre-POST artifact identity', async () => {
   let posts = 0;
   const fetchImpl = async (url, options) => {

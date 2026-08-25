@@ -88,7 +88,7 @@ function validatePendingHandoff(pending, expected = {}) {
   if (!pending.identity || pending.identity.prospectId !== envelope.prospectId || pending.identity.sourceCheckpointDigest !== envelope.sourceCheckpointDigest) throw new Error('Durable Cursor handoff prospect/source identity is mismatched');
   if (pending.apifyOperationProjection) {
     for (const field of ['schemaVersion', 'adapterKey', 'operationKey', 'requestDigest', 'idempotencyKey', 'input']) required(pending.apifyOperationProjection[field], `handoff Apify operation projection ${field}`);
-    if (pending.apifyOperationProjection.schemaVersion !== 'factory-apify-request-projection-v1' || pending.apifyOperationProjection.operationKey !== pending.apifyOperationProjection.adapterKey) throw new Error('Durable Cursor handoff Apify operation projection is malformed');
+    if (pending.apifyOperationProjection.schemaVersion !== 'factory-apify-request-projection-v2' || pending.apifyOperationProjection.operationKey !== pending.apifyOperationProjection.adapterKey || !pending.apifyOperationProjection.actorId || !pending.apifyOperationProjection.operationId || !pending.apifyOperationProjection.expectedOutput) throw new Error('Durable Cursor handoff Apify operation projection is malformed');
   }
   for (const field of ['checkedOutSha', 'inputManifestDigest', 'runId', 'prospectId', 'sourceCheckpointDigest', 'jobId']) if (expected[field] != null && String(envelope[field]) !== String(expected[field])) throw new Error(`Durable Cursor handoff ${field} binding is stale or mismatched`);
   if (expected.repository != null && String(pending.dispatchPacket.repository) !== String(expected.repository)) throw new Error('Durable Cursor handoff repository binding is stale or mismatched');

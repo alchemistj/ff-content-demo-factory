@@ -18,6 +18,7 @@ const { restore } = require('../scripts/restore-paid-receipts');
 const { createCursorAdapter } = require('../src/adapters/cursor');
 const { createApifyAdapter } = require('../src/adapters/apify');
 const { apifyFinalistRequestProjection } = require('../src/adapters/apify');
+const { operationArtifactBinding } = require('../src/factory/receipt-store');
 
 function pendingFor(head = 'head-1', suffix = '1') {
   const dispatchPacket = createDispatchPacket({ issueNumber: 8, prNumber: 1, branch: 'architect/greenfield-gate1', reviewedHeadSha: head, scope: 'research-only' });
@@ -113,6 +114,24 @@ test('phase-B exact artifact selector rejects newest/wrong artifacts', () => {
   assert.equal(selectExactArtifact([{ id: 42, name: expected.name, digest: expected.digest, expired: false }], expected).id, 42);
   assert.throws(() => selectExactArtifact([{ id: 41, name: expected.name, digest: expected.digest, expired: false }], expected), /missing or ambiguous/);
   assert.throws(() => selectExactArtifact([{ id: 42, name: 'factory-paid-receipts-other', digest: expected.digest, expired: false }], expected), /missing or ambiguous/);
+});
+
+test('accepted operation artifact restores exact provider run state on a fresh runner', () => {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), 'factory-accepted-operation-restore-'));
+  const projection = apifyFinalistRequestProjection({ placeId: 'ChIJrestore', mapsUrl: 'https://www.google.com/maps/place/Restore' });
+  const acceptedResponse = { runId: 'run-restore', datasetId: 'dataset-restore', run: { id: 'run-restore', defaultDatasetId: 'dataset-restore', status: 'RUNNING' } };
+  const crypto = require('node:crypto');
+  const artifact = operationArtifactBinding({ operationKey: projection.operationKey, provider: 'apify', operation: projection.operation, inputDigest: projection.inputDigest, requestDigest: projection.requestDigest, idempotencyKey: projection.idempotencyKey, requestProjection: projection, responseDigest: crypto.createHash('sha256').update(JSON.stringify(acceptedResponse)).digest('hex'), stage: 'accepted', artifactIdentity: { artifactOrigin: 'github-actions', artifactId: 'artifact-restore', artifactDigest: 'sha256:zip-restore' } });
+  fs.writeFileSync(path.join(root, 'accepted.json'), JSON.stringify({ ...artifact, response: acceptedResponse }));
+  const target = path.join(root, 'state', 'vendor-receipts.json');
+  const { restoreAcceptedOperation } = require('../scripts/restore-paid-operation');
+  restoreAcceptedOperation({ snapshotFile: path.join(root, 'accepted.json'), targetFile: target, expected: { operationKey: projection.operationKey, requestDigest: projection.requestDigest } });
+  const restored = JSON.parse(fs.readFileSync(target, 'utf8'));
+  assert.equal(restored.receipts[projection.operationKey].runId, 'run-restore');
+  assert.equal(restored.receipts[projection.operationKey].datasetId, 'dataset-restore');
+  assert.equal(restored.receipts[projection.operationKey].artifactOrigin, 'github-actions');
+  const mutated = JSON.parse(fs.readFileSync(path.join(root, 'accepted.json'), 'utf8')); mutated.response.runId = 'foreign-run'; fs.writeFileSync(path.join(root, 'mutated.json'), JSON.stringify(mutated));
+  assert.throws(() => restoreAcceptedOperation({ snapshotFile: path.join(root, 'mutated.json'), targetFile: path.join(root, 'state', 'bad.json'), expected: { operationKey: projection.operationKey } }), /response digest mismatch/);
 });
 
 test('recovery guard is executable from the actual workflow script and workflow invokes it', () => {

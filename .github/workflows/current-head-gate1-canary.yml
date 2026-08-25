@@ -209,6 +209,6 @@ jobs:
           path: |
             canary/outputs/current-head-gate1-proof.json
             canary/outputs/gate1.md
-            canary/state/factory-state.json
+            state/factory-state.json
           if-no-files-found: error
           retention-days: 30
