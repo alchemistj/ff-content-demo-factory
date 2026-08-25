@@ -71,8 +71,8 @@ test("downloader-equivalent GitHub fixture emits the metadata schema consumed by
 });
 
 test("verified baseline reader projects only the sealed handoff and preserves approved routes and non-body identity", () => {
-  const raw = bytes(output()); const expected = expectedFor(raw); const handoff = { resealDigest: sealedHandoffDigest, pages: [{ type: "Home", url: "/" }, { type: "Service", url: "/garage-door-repair", id: "Service:/garage-door-repair", canonicalIntentId: "garage-door-repair" }, { type: "Service", url: "/garage-door-installation", id: "Service:/garage-door-installation", canonicalIntentId: "garage-door-installation" }, { type: "Contact", url: "/contact" }] };
-  const envelope = { handoff, manifest: { pageSetDigest: "sha256:manifest" }, bridge: { envelopeDigest: "sha256:bridge" } };
+  const raw = bytes(output()); const expected = expectedFor(raw); const handoff = { handoffVersion: "lane-a-review-handoff/v4", resealDigest: sealedHandoffDigest, approval: {}, pages: [{ type: "Home", url: "/" }, { type: "Service", url: "/garage-door-repair", id: "Service:/garage-door-repair", canonicalIntentId: "garage-door-repair" }, { type: "Service", url: "/garage-door-installation", id: "Service:/garage-door-installation", canonicalIntentId: "garage-door-installation" }, { type: "Contact", url: "/contact" }] };
+  const envelope = { handoff, manifest: { pageSetDigest: "sha256:manifest" }, pin: {}, ledger: {}, approval: {}, bridge: { envelopeDigest: "sha256:bridge" } };
   const before = structuredClone(envelope);
   const projected = projectVerifiedWriter1Handoff(envelope);
   assert.strictEqual(projected, envelope.handoff);
@@ -80,6 +80,23 @@ test("verified baseline reader projects only the sealed handoff and preserves ap
   const checked = verifyGithubWriter1Baseline({ metadata: { repository: expected.repository, commit: sourceCommit, path: expected.path, blobSha: expected.blobSha, size: expected.size }, bytes: raw, sealed: projected, expected });
   assert.deepEqual((checked.output as any).pages.map((page: any) => page.url), ["/garage-door-repair", "/garage-door-installation"]);
   assert.deepEqual((checked.output as any).pages.map((page: any) => page.prescriptionId), ["Service:/garage-door-repair", "Service:/garage-door-installation"]);
+});
+
+test("sealed handoff projector accepts one bare handoff or one exact envelope and rejects ambiguous candidates", () => {
+  const handoff = { handoffVersion: "lane-a-review-handoff/v4", resealDigest: sealedHandoffDigest, approval: {}, pages: [{ type: "Service", url: "/garage-door-repair", id: "Service:/garage-door-repair" }, { type: "Service", url: "/garage-door-installation", id: "Service:/garage-door-installation" }], writerProjection: { approvedPageAssignments: [] } };
+  const envelope = { handoff, manifest: {}, pin: {}, ledger: {}, approval: {}, bridge: { pageAssignments: [] } };
+  assert.strictEqual(projectVerifiedWriter1Handoff(handoff), handoff);
+  assert.strictEqual(projectVerifiedWriter1Handoff(envelope), handoff);
+  for (const mutation of [
+    { ...envelope, pages: handoff.pages },
+    { ...envelope, pageAssignments: [] },
+    { ...envelope, secondHandoff: structuredClone(handoff) },
+    { ...envelope, manifest: { candidate: { handoffVersion: handoff.handoffVersion, pages: structuredClone(handoff.pages) } } },
+    { ...envelope, manifest: { candidate: { pages: structuredClone(handoff.pages) } } },
+    { ...envelope, handoff: { ...handoff, duplicate: { handoffVersion: handoff.handoffVersion, pages: [] } } },
+  ]) assert.throws(() => projectVerifiedWriter1Handoff(mutation), /GITHUB_WRITER1_BASELINE_INVALID: /u);
+  assert.throws(() => projectVerifiedWriter1Handoff({ ...handoff, handoff: structuredClone(handoff) }), /GITHUB_WRITER1_BASELINE_INVALID: /u);
+  assert.throws(() => projectVerifiedWriter1Handoff({ ...envelope, bridge: { pageAssignments: [], candidate: { pages: structuredClone(handoff.pages) } } }), /GITHUB_WRITER1_BASELINE_INVALID: /u);
 });
 
 test("v2 correction uses GitHub baseline when Cursor has no prior artifact, sends once, binds untrusted before-copy separately from new model receipt, and retries without a second send", async () => {

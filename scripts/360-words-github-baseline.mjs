@@ -18,6 +18,32 @@ const COPY_FIELDS = ["prescriptionId", "primaryKeyword", "title", "seoTitle", "m
 const sha256 = (bytes) => `sha256:${createHash("sha256").update(bytes).digest("hex")}`;
 const gitBlobSha = (bytes) => createHash("sha1").update(Buffer.concat([Buffer.from(`blob ${bytes.length}\0`), bytes])).digest("hex");
 const fail = (message) => { throw new Error(`GITHUB_WRITER1_BASELINE_INVALID: ${message}`); };
+const ENVELOPE_KEYS = ["approval", "bridge", "handoff", "ledger", "manifest", "pin"];
+const ENVELOPE_ONLY_KEYS = ["bridge", "ledger", "manifest", "pin"];
+const HANDOFF_BEARING_KEYS = new Set(["handoff", "handoffVersion", "pages", "pageAssignments", "writerProjection"]);
+const hasOwn = (value, key) => Object.prototype.hasOwnProperty.call(value, key);
+const isObject = (value) => value !== null && typeof value === "object" && !Array.isArray(value);
+
+function sortedKeys(value) { return Object.keys(value).sort(); }
+
+function scanForAmbiguousHandoffCandidates(value, pathName, mode) {
+  if (Array.isArray(value)) {
+    value.forEach((child, index) => scanForAmbiguousHandoffCandidates(child, `${pathName}/${index}`, mode));
+    return;
+  }
+  if (!isObject(value)) return;
+  for (const [key, child] of Object.entries(value)) {
+    const childPath = `${pathName}/${key}`;
+    const root = pathName === "";
+    const selectedHandoff = pathName === "/handoff";
+    const allowedBridgeAssignments = pathName === "/bridge" && key === "pageAssignments";
+    const allowedBareRoot = mode === "bare" && root && (key === "handoffVersion" || key === "pages" || key === "writerProjection");
+    const allowedEnvelopeRoot = mode === "envelope" && root && key === "handoff";
+    const allowedSelectedHandoff = mode === "envelope" && selectedHandoff && (key === "handoffVersion" || key === "pages" || key === "writerProjection");
+    if (!allowedBareRoot && !allowedEnvelopeRoot && !allowedSelectedHandoff && !allowedBridgeAssignments && HANDOFF_BEARING_KEYS.has(key)) fail(`ambiguous handoff-bearing candidate at ${childPath}`);
+    scanForAmbiguousHandoffCandidates(child, childPath, mode);
+  }
+}
 
 /**
  * The verified runner passes the complete validated sealed envelope. The
@@ -26,9 +52,18 @@ const fail = (message) => { throw new Error(`GITHUB_WRITER1_BASELINE_INVALID: ${
  * rebind a prescription ID here.
  */
 export function projectVerifiedWriter1Handoff(sealedEnvelope) {
-  const handoff = sealedEnvelope?.handoff;
-  if (!handoff || !Array.isArray(handoff.pages)) fail("validated sealed envelope is missing its handoff pages");
-  return handoff;
+  if (!isObject(sealedEnvelope)) fail("sealed handoff shape is not an object");
+  const hasEnvelopeMember = hasOwn(sealedEnvelope, "handoff");
+  const isBareHandoff = !hasEnvelopeMember && typeof sealedEnvelope.handoffVersion === "string" && Array.isArray(sealedEnvelope.pages);
+  if (isBareHandoff) {
+    if (ENVELOPE_ONLY_KEYS.some((key) => hasOwn(sealedEnvelope, key))) fail("bare handoff is mixed with sealed envelope members");
+    scanForAmbiguousHandoffCandidates(sealedEnvelope, "", "bare");
+    return sealedEnvelope;
+  }
+  if (!hasEnvelopeMember || !isObject(sealedEnvelope.handoff) || typeof sealedEnvelope.handoff.handoffVersion !== "string" || !Array.isArray(sealedEnvelope.handoff.pages)) fail("sealed handoff must be either a bare handoff or one envelope handoff member");
+  if (JSON.stringify(sortedKeys(sealedEnvelope)) !== JSON.stringify(ENVELOPE_KEYS)) fail("sealed envelope has unknown or duplicate handoff-bearing members");
+  scanForAmbiguousHandoffCandidates(sealedEnvelope, "", "envelope");
+  return sealedEnvelope.handoff;
 }
 
 function exactShape(parsed, sealed) {
