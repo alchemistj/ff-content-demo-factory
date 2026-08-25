@@ -10,7 +10,7 @@ const { buildPrescriptionEvidence } = require('../review-evidence/prescription')
 const { prescribe: validatePrescription } = require('./prescription');
 const { digest, validateCompleteCanonicalLedger } = require('./prescription-policy');
 const { renderGate1, architectQa } = require('./gate1');
-const { createFileReceiptStore } = require('./receipt-store');
+const { createFileReceiptStore, verifyOperationArtifact } = require('./receipt-store');
 
 const VALID_DECISIONS = new Set(['anchor', 'supporting', 'negative', 'not-applicable']);
 
@@ -42,16 +42,24 @@ async function putReceipt(store, key, receipt, env = process.env) {
   const payload = receipt.input != null ? receipt.input : receipt.request;
   if (payload == null) throw new Error(`${receipt.operation || key} receipt is missing input payload`);
   const binding = receiptContextFromEnv(env, { operation: receipt.operation || null, ...(receipt.binding || receipt.context || {}) });
+  const checkpoint = receipt.vendorReceipt?.provider === 'github-trusted-checkpoint' ? receipt.vendorReceipt : null;
   const complete = {
     schemaVersion: 'factory-receipt-v1',
     key,
     ...receipt,
+    ...(checkpoint ? { provider: 'github-trusted-checkpoint', source: checkpoint.source } : {}),
     binding,
     status: receipt.status || 'completed',
     terminalStatus: receipt.terminalStatus || (receipt.status === 'completed' || !receipt.status ? 'succeeded' : null),
     startedAt: receipt.startedAt || receipt.completedAt || null,
     completedAt: receipt.completedAt || null,
-    runId: receipt.runId || receipt.vendorReceipt?.runId || receipt.vendorReceipt?.jobId || null,
+    // A trusted GitHub checkpoint has a workflow-run identity in `source`,
+    // while the factory receipt itself must bind to the current factory run.
+    // Keep those identities distinct instead of mistaking the historical
+    // artifact's run for this run's source checkpoint.
+    runId: receipt.provider === 'github-trusted-checkpoint'
+      ? (binding.runId || receipt.runId || null)
+      : (receipt.runId || receipt.vendorReceipt?.runId || receipt.vendorReceipt?.jobId || null),
     threadUrl: receipt.threadUrl || receipt.vendorReceipt?.threadUrl || null,
     inputDigest: digest(payload),
     outputDigest: digest(receipt.result || null),
@@ -303,7 +311,15 @@ function createProductionAdapters({
   let preparedArtifact = null;
   let preparedProjection = null;
   if (env.FACTORY_PAID_PREPARED_ARTIFACT_FILE && fs.existsSync(env.FACTORY_PAID_PREPARED_ARTIFACT_FILE)) {
-    try { preparedArtifact = JSON.parse(fs.readFileSync(env.FACTORY_PAID_PREPARED_ARTIFACT_FILE, 'utf8')); preparedProjection = preparedArtifact.requestProjection || null; } catch { preparedArtifact = null; preparedProjection = null; }
+    try {
+      preparedArtifact = JSON.parse(fs.readFileSync(env.FACTORY_PAID_PREPARED_ARTIFACT_FILE, 'utf8'));
+      if (productionRuntime) verifyOperationArtifact(preparedArtifact, { stage: 'pre-post', provider: 'apify', context: env.FACTORY_OPERATION_CONTEXT_JSON ? JSON.parse(env.FACTORY_OPERATION_CONTEXT_JSON) : null });
+      preparedProjection = preparedArtifact.requestProjection || null;
+    } catch (error) {
+      if (productionRuntime) throw error;
+      preparedArtifact = null;
+      preparedProjection = null;
+    }
   }
   const apifyAdapter = apify || createApifyAdapter({
     token: env.APIFY_API_TOKEN,
@@ -391,8 +407,13 @@ function createProductionAdapters({
       const prior = await getReceipt(receipts, key);
       if (prior?.status === 'completed' && prior.result) return prior.result;
       const packet = normalizeEnrichment(await apifyAdapter.enrichFinalist({ placeId, mapsUrl, limit }), { ...finalist, placeId, mapsUrl }, limit);
+      // The adapter receipt is metadata, not part of the canonical result
+      // payload.  Keeping it enumerable here would make the digest depend on
+      // the later receipt wrapper and fail deterministic restore validation.
+      const sourceReceipt = packet.receipt || packet.provenance?.run || null;
+      delete packet.receipt;
       const input = { placeId, mapsUrl, limit, dateWindow: null };
-      const receipt = await putReceipt(receipts, key, { provider: 'apify', operation: 'finalist-enrichment', status: 'completed', completedAt: clock(), vendorReceipt: packet.provenance?.run || null, input, request: input, binding: { placeId, prospectId: prospectId || finalist?.prospectId || placeId, runId: runId || finalist?.runId || null }, result: packet }, env);
+      const receipt = await putReceipt(receipts, key, { provider: sourceReceipt?.provider || 'apify', operation: 'finalist-enrichment', status: 'completed', completedAt: clock(), vendorReceipt: sourceReceipt, input, request: input, binding: { placeId, prospectId: prospectId || finalist?.prospectId || placeId, runId: runId || finalist?.runId || null }, result: packet }, env);
       Object.defineProperty(packet, 'receipt', { value: receipt, enumerable: false, configurable: true });
       return packet;
     },
@@ -426,13 +447,16 @@ function createProductionAdapters({
       });
       const modelResult = record.result;
       const pages = decision.pages || decision.proposedPages || modelResult.pages;
-      const services = decision.candidateServices || candidateServicesFrom(modelResult.comparison);
+      const services = decision.candidateServices || modelResult.candidateServices || candidateServicesFrom(modelResult.comparison);
       if (!Array.isArray(pages) || !pages.length) throw new Error('Page prescription requires explicit validated pages');
       if (!Array.isArray(services) || !services.length) throw new Error('Page prescription requires a complete candidate service comparison');
       const serviceLedger = decision.serviceCoverageLedger || decision.serviceLedger || modelResult.serviceCoverageLedger;
       const sourceBinding = decision.sourceCheckpoint || decision.sourceBinding || modelResult.sourceCheckpoint || modelResult.sourceBinding;
       if (!sourceBinding) throw new Error('Page prescription requires a trusted source checkpoint binding');
-      const boundServiceLedger = { ...(serviceLedger && serviceLedger.sourceIdentity ? serviceLedger : { ...serviceLedger, sourceIdentity: sourceBinding.sourceIdentity }), strictEvidenceBinding: productionRuntime };
+      // The restored historical ledger is evidence, not the current run's
+      // identity.  Rebind its service rows to the newly computed source
+      // checkpoint while preserving the exact service/review decisions.
+      const boundServiceLedger = { ...serviceLedger, sourceIdentity: sourceBinding.sourceIdentity, strictEvidenceBinding: productionRuntime };
       const boundIdentity = { prospectId: finalist?.prospectId || finalist?.placeId, placeId: finalist?.placeId, runId: finalist?.runId || decision.runId };
       validateCompleteCanonicalLedger(boundServiceLedger, { services, pages, identity: { ...boundIdentity, sourceIdentity: sourceBinding.sourceIdentity } });
       const validated = validatePrescription({ finalist, classification, services, proposedPages: pages, architectReview: decision.architectReview || decision, policy: decision.pagePolicy || modelResult.pagePolicy, override: decision.expansionOverride || modelResult.expansionOverride, serviceLedger: boundServiceLedger, runContext: { ...boundIdentity }, sourceBinding });

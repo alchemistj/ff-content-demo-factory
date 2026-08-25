@@ -46,6 +46,19 @@ on:
         required: false
         type: boolean
         default: false
+      trusted_checkpoint_restore:
+        description: Restore verified GitHub checkpoint evidence and produce a new current-head Gate 1 artifact for Josh
+        required: false
+        type: boolean
+        default: false
+      trusted_checkpoint_artifact_id:
+        description: Optional immutable GitHub artifact id for the trusted checkpoint source
+        required: false
+        type: string
+      trusted_checkpoint_run_id:
+        description: Optional source workflow run id for the trusted checkpoint
+        required: false
+        type: string
       phase_a_run_id:
         description: Exact phase-A workflow run id whose pending artifact must be downloaded and verified
         required: false
@@ -78,6 +91,7 @@ jobs:
           CURSOR_BUNDLE_FILE: ${{ inputs.cursor_bundle_file }}
           FACTORY_CANARY_PHASE: ${{ inputs.phase }}
           FACTORY_SEALED_EVIDENCE: ${{ inputs.sealed_evidence }}
+          FACTORY_TRUSTED_CHECKPOINT_RESTORE: ${{ inputs.trusted_checkpoint_restore }}
           FACTORY_REPOSITORY: ${{ github.repository }}
         run: |
           test "$EXPECTED_HEAD_SHA" = "$(git rev-parse HEAD)"
@@ -96,7 +110,7 @@ jobs:
             test -f "$file"
           done
           if [ "${{ inputs.phase }}" = "resume" ] || [ "${{ inputs.phase }}" = "integrated" ]; then
-            if [ "${{ inputs.sealed_evidence }}" != "true" ]; then
+            if [ "${{ inputs.sealed_evidence }}" != "true" ] && [ "${{ inputs.trusted_checkpoint_restore }}" != "true" ]; then
               test -n "$CURSOR_BUNDLE_FILE"
               printf '%s\n' "$CURSOR_BUNDLE_FILE" | grep -Eq '^[-a-zA-Z0-9_/.]+\.json$'
               case "$CURSOR_BUNDLE_FILE" in *..*) echo "path traversal is not allowed" >&2; exit 1 ;; esac
@@ -127,7 +141,7 @@ jobs:
           gh issue view "$ISSUE_NUMBER" --repo "$GITHUB_REPOSITORY" --json number --jq .number | grep -Fxq "$ISSUE_NUMBER"
           echo "FACTORY_REPOSITORY=$GITHUB_REPOSITORY" >> "$GITHUB_ENV"
       - name: Validate trusted production runtime
-        if: (inputs.phase == 'resume' || inputs.phase == 'integrated') && inputs.sealed_evidence != true
+        if: (inputs.phase == 'resume' || inputs.phase == 'integrated') && inputs.sealed_evidence != true && inputs.trusted_checkpoint_restore != true
         env:
           APIFY_API_TOKEN: ${{ secrets.APIFY_API_TOKEN }}
         run: |
@@ -139,10 +153,56 @@ jobs:
           FACTORY_EXPECTED_HEAD_SHA: ${{ inputs.expected_head_sha }}
           RUNTIME_PACKET_PATH: canary/outputs/runtime/360-current-head-gate1-dispatch-packet.json
         run: node scripts/prepare-360-gate1-canary-packet.js
+      - name: Publish durable trusted checkpoint packet and source manifest
+        if: inputs.trusted_checkpoint_restore == true
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: trusted-github-checkpoint-${{ github.run_id }}
+          path: |
+            canary/outputs/runtime/360-current-head-gate1-dispatch-packet.json
+            canary/inputs/360-garage-door-and-more.discovery.json
+            canary/outputs/360-four-page-reseal-handoff.json
+          if-no-files-found: error
+          retention-days: 30
+      - name: Resolve trusted checkpoint artifact identity
+        if: inputs.trusted_checkpoint_restore == true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          artifact_json="$(gh api "repos/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}/artifacts" --paginate --jq '.artifacts[] | select(.name == "trusted-github-checkpoint-'"${GITHUB_RUN_ID}"'")' | head -n 1)"
+          test -n "$artifact_json"
+          artifact_id="$(printf '%s' "$artifact_json" | jq -r '.id')"
+          artifact_digest="$(printf '%s' "$artifact_json" | jq -r '.workflow_run.head_sha')"
+          test -n "$artifact_id" && test "$artifact_id" != "null"
+          echo "FACTORY_TRUSTED_CHECKPOINT_ARTIFACT_ID=$artifact_id" >> "$GITHUB_ENV"
+          echo "FACTORY_TRUSTED_CHECKPOINT_RUN_ID=${{ inputs.trusted_checkpoint_run_id || github.run_id }}" >> "$GITHUB_ENV"
+          echo "FACTORY_TRUSTED_CHECKPOINT_ARTIFACT_SHA=$artifact_digest" >> "$GITHUB_ENV"
       - name: Install locked dependencies
         run: npm ci --ignore-scripts --no-audit --no-fund
-      - name: Run fresh current-head Gate 1 canary (trusted receipt path)
-        if: inputs.sealed_evidence != true
+      - name: Run fresh current-head Gate 1 canary (trusted GitHub checkpoint; no vendor credentials)
+        if: inputs.sealed_evidence != true && inputs.trusted_checkpoint_restore == true
+        env:
+          REQUEST_FILE: ${{ inputs.request_file }}
+          SELECTION_FILE: ${{ inputs.selection_file }}
+          QA_FILE: ${{ inputs.qa_file }}
+          CURSOR_BUNDLE_FILE: ${{ inputs.cursor_bundle_file }}
+          FACTORY_ISSUE_NUMBER: ${{ inputs.issue_number }}
+          FACTORY_PR_NUMBER: ${{ inputs.pr_number }}
+          FACTORY_BRANCH: ${{ inputs.branch }}
+          EXPECTED_HEAD_SHA: ${{ inputs.expected_head_sha }}
+          FACTORY_CANARY_PHASE: ${{ inputs.phase }}
+          FACTORY_SEALED_EVIDENCE: ${{ inputs.sealed_evidence }}
+          FACTORY_TRUSTED_CHECKPOINT_RESTORE: ${{ inputs.trusted_checkpoint_restore }}
+          FACTORY_PHASE_A_RUN_ID: ${{ inputs.phase_a_run_id }}
+          FACTORY_REPOSITORY: ${{ github.repository }}
+          FACTORY_CHECKED_OUT_SHA: ${{ inputs.expected_head_sha }}
+          FACTORY_ASSERTED_HEAD_SHA: ${{ inputs.expected_head_sha }}
+          FACTORY_HEAD_ASSERTION: 'true'
+          FACTORY_PHASE_A_PRODUCTION: 'true'
+          FACTORY_APPROVED_LINEAGE_PACKET: canary/outputs/runtime/360-current-head-gate1-dispatch-packet.json
+        run: node src/run-gate1-canary.js . "$REQUEST_FILE" "$SELECTION_FILE" "$QA_FILE" "$CURSOR_BUNDLE_FILE"
+      - name: Run fresh current-head Gate 1 canary (paid connector path)
+        if: inputs.sealed_evidence != true && inputs.trusted_checkpoint_restore != true
         env:
           APIFY_API_TOKEN: ${{ secrets.APIFY_API_TOKEN }}
           REQUEST_FILE: ${{ inputs.request_file }}
@@ -154,7 +214,7 @@ jobs:
           FACTORY_BRANCH: ${{ inputs.branch }}
           EXPECTED_HEAD_SHA: ${{ inputs.expected_head_sha }}
           FACTORY_CANARY_PHASE: ${{ inputs.phase }}
-          FACTORY_SEALED_EVIDENCE: ${{ inputs.sealed_evidence }}
+          FACTORY_SEALED_EVIDENCE: 'false'
           FACTORY_PHASE_A_RUN_ID: ${{ inputs.phase_a_run_id }}
           FACTORY_REPOSITORY: ${{ github.repository }}
           FACTORY_CHECKED_OUT_SHA: ${{ inputs.expected_head_sha }}
@@ -209,6 +269,7 @@ jobs:
           path: |
             canary/outputs/current-head-gate1-proof.json
             canary/outputs/gate1.md
+            canary/outputs/runtime/360-current-head-gate1-dispatch-packet.json
             state/factory-state.json
           if-no-files-found: error
           retention-days: 30

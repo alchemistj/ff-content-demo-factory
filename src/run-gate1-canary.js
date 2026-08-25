@@ -12,6 +12,7 @@ const { createPendingHandoff, validatePendingHandoff, retrievePhaseAHandoff, cla
 const { createSealed360Adapters, verifySealed360Lineage, compareApprovedLineage } = require('./factory/sealed-evidence');
 const { actionProofFromEnvironment } = require('./factory/orchestrator');
 const { apifyFinalistRequestProjection, apifyDiscoveryRequestProjection } = require('./adapters/apify');
+const { createTrustedGithubCheckpointAdapter } = require('./adapters/trusted-github-checkpoint');
 
 function bundleDigest(bundle) { return digest({ ...bundle, inputManifestDigest: undefined }); }
 
@@ -69,7 +70,10 @@ async function runCurrentHeadGate1Canary({ root, requestFile, selectionFile, qaF
   if (!['dispatch', 'resume', 'integrated'].includes(phase)) throw new Error(`Unsupported canary phase: ${phase}`);
   const sealedEvidence = env.FACTORY_SEALED_EVIDENCE === 'true' || env.FACTORY_SEALED_EVIDENCE === true;
   const trustedCheckpointRestore = env.FACTORY_TRUSTED_CHECKPOINT_RESTORE === 'true';
-  const sealedAdapters = (sealedEvidence || trustedCheckpointRestore) ? createSealed360Adapters({ root: process.cwd() }) : null;
+  // Sealed replay is a test-only adapter.  The production trusted-checkpoint
+  // path must remain a distinct provider with GitHub artifact provenance.
+  const sealedAdapters = sealedEvidence ? createSealed360Adapters({ root: process.cwd() }) : null;
+  const trustedAdapters = trustedCheckpointRestore ? createTrustedGithubCheckpointAdapter({ root, assertedHeadSha, artifactId: env.FACTORY_TRUSTED_CHECKPOINT_ARTIFACT_ID, workflowRunId: env.FACTORY_TRUSTED_CHECKPOINT_RUN_ID }) : null;
   const cursorBundle = cursorBundleFile && fs.existsSync(path.resolve(cursorBundleFile)) ? readJson(cursorBundleFile) : null;
   const dispatch = { issueNumber: Number(env.FACTORY_ISSUE_NUMBER), prNumber: Number(env.FACTORY_PR_NUMBER), branch: env.FACTORY_BRANCH || env.GITHUB_REF_NAME, reviewedHeadSha: assertedHeadSha };
   if (!Number.isInteger(dispatch.issueNumber) || !Number.isInteger(dispatch.prNumber) || !dispatch.branch) throw new Error('Canary requires immutable Issue/PR/branch dispatch binding');
@@ -176,8 +180,8 @@ async function runCurrentHeadGate1Canary({ root, requestFile, selectionFile, qaF
     root,
     config,
     env,
-    cursor: sealedAdapters?.cursor || createCloudAgentBundleAdapter(required(cursorBundle, 'cursorBundle'), expectedEnvelope),
-    apify: sealedAdapters?.apify,
+    cursor: trustedAdapters?.cursor || sealedAdapters?.cursor || createCloudAgentBundleAdapter(required(cursorBundle, 'cursorBundle'), expectedEnvelope),
+    apify: trustedAdapters?.apify || sealedAdapters?.apify,
     productionCloudAgent: true,
   });
   adapters.actionProof = actionProofFromEnvironment(env);

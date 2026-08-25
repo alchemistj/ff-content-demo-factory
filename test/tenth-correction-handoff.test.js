@@ -22,6 +22,7 @@ const { selectNewestDispatchComment } = require('../scripts/select-cursor-dispat
 const { markerFor, markerBody, assertTransition, findClaim, recoverClaim } = require('../src/factory/github-ledger');
 const { claimPhaseBAtomic } = require('../src/factory/handoff');
 const { collect } = require('../src/collect-cursor-terminal-result');
+const { createTrustedGithubCheckpointAdapter } = require('../src/adapters/trusted-github-checkpoint');
 
 function completeBinding(extra = {}) {
   return {
@@ -180,6 +181,26 @@ test('forward correction binds approved historical lineage into phase-A handoff 
     cursorBundleFile: '',
     env: canaryEnv({ FACTORY_PHASE_A_PRODUCTION: 'true' }),
   }), /Needs Josh: production phase A requires a verified approved-lineage runtime packet/);
+});
+
+test('trusted GitHub checkpoint is a production receipt type with authentic source identity and no vendor identity', async () => {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), 'factory-trusted-checkpoint-'));
+  for (const file of ['canary/inputs/360-four-page-reseal-approval.json', 'canary/inputs/360-four-page-reseal-ledger.json', 'canary/inputs/360-garage-door-and-more.discovery.json', 'canary/outputs/360-four-page-reseal-handoff.json']) {
+    const target = path.join(root, file); fs.mkdirSync(path.dirname(target), { recursive: true }); fs.copyFileSync(file, target);
+  }
+  const head = 'a'.repeat(40);
+  const adapter = createTrustedGithubCheckpointAdapter({ root, assertedHeadSha: head, artifactId: 'github-artifact-123', workflowRunId: 'github-run-456' });
+  assert.equal(adapter.source.provider, 'github-trusted-checkpoint');
+  assert.equal(adapter.source.artifactId, 'github-artifact-123');
+  assert.equal(adapter.source.checkedOutSha, head);
+  const discovered = await adapter.discoverCandidates();
+  assert.equal(discovered.provenance.run.provider, 'github-trusted-checkpoint');
+  assert.equal(discovered.provenance.run.vendorReceipt, undefined);
+  assert.equal(discovered.provenance.run.source.artifactId, 'github-artifact-123');
+  const enriched = await adapter.enrichFinalist({ placeId: PLACE_ID });
+  assert.equal(enriched.receipt.provider, 'github-trusted-checkpoint');
+  assert.equal(enriched.receipt.source.sourceSha, HISTORICAL_360.sourceSha);
+  await assert.rejects(() => adapter.enrichFinalist({ placeId: 'foreign-place' }), /cross-prospect/);
 });
 
 test('twelfth correction verifies the runtime approved handoff and canonical prescription projection before and after paid work', async () => {

@@ -34,6 +34,41 @@ function operationArtifactBinding({ operationKey, provider, operation, inputDige
   };
 }
 
+// Verify the bytes of a prepared/accepted operation artifact, rather than
+// trusting the identity fields that an untrusted caller can rewrite.  The
+// workflow artifact and the adapter use this same projection, so a mutation
+// of the request, operation, context, or digest is fail-closed before POST.
+function verifyOperationArtifact(artifact, { stage = null, provider = null, operation = null, operationKey = null, requestDigest = null, idempotencyKey = null, context = null } = {}) {
+  if (!artifact || typeof artifact !== 'object') throw new Error('paid operation artifact is missing');
+  const requiredFields = ['schemaVersion', 'stage', 'operationKey', 'provider', 'operation', 'inputDigest', 'requestDigest', 'idempotencyKey', 'requestProjection', 'context', 'artifactName', 'artifactId', 'artifactDigest', 'artifactContentDigest', 'artifactOrigin'];
+  for (const field of requiredFields) if (artifact[field] == null || artifact[field] === '') throw new Error(`paid operation artifact ${field} is missing`);
+  if (artifact.schemaVersion !== 'factory-paid-operation-artifact-v1') throw new Error('paid operation artifact schema is unsupported');
+  if (stage && artifact.stage !== stage) throw new Error('paid operation artifact stage is mismatched');
+  if (provider && artifact.provider !== provider) throw new Error('paid operation artifact provider is mismatched');
+  if (operation && artifact.operation !== operation) throw new Error('paid operation artifact operation is mismatched');
+  if (operationKey && artifact.operationKey !== operationKey) throw new Error('paid operation artifact operation key is mismatched');
+  if (requestDigest && artifact.requestDigest !== requestDigest) throw new Error('paid operation artifact request digest is mismatched');
+  if (idempotencyKey && artifact.idempotencyKey !== idempotencyKey) throw new Error('paid operation artifact idempotency key is mismatched');
+  if (context && JSON.stringify(artifact.context) !== JSON.stringify(context)) throw new Error('paid operation artifact context is mismatched');
+  const content = {
+    schemaVersion: artifact.schemaVersion,
+    stage: artifact.stage,
+    operationKey: artifact.operationKey,
+    provider: artifact.provider,
+    operation: artifact.operation,
+    inputDigest: artifact.inputDigest,
+    requestDigest: artifact.requestDigest,
+    idempotencyKey: artifact.idempotencyKey,
+    requestProjection: artifact.requestProjection,
+    ...(Object.prototype.hasOwnProperty.call(artifact, 'responseDigest') ? { responseDigest: artifact.responseDigest } : {}),
+    context: artifact.context,
+    ...(Object.prototype.hasOwnProperty.call(artifact, 'response') ? { response: artifact.response } : {}),
+  };
+  const contentDigest = digest(content);
+  if (artifact.artifactContentDigest !== contentDigest || artifact.artifactDigest !== contentDigest) throw new Error('paid operation artifact content digest is invalid');
+  return artifact;
+}
+
 async function persistOperationCheckpoint(store, key, binding) {
   const put = typeof store?.put === 'function' ? store.put.bind(store) : typeof store?.set === 'function' ? async (name, value) => store.set(name, value) : null;
   if (!put) throw new TypeError('receiptStore must implement put');
@@ -107,4 +142,4 @@ function createFileReceiptStore(root) {
   };
 }
 
-module.exports = { createFileReceiptStore, readJson, writeJson, operationKey, receiptArtifactBinding, operationArtifactBinding, persistOperationCheckpoint, persistOperationIntent, persistOperationState };
+module.exports = { createFileReceiptStore, readJson, writeJson, operationKey, receiptArtifactBinding, operationArtifactBinding, verifyOperationArtifact, persistOperationCheckpoint, persistOperationIntent, persistOperationState };

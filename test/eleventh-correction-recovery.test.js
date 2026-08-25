@@ -18,7 +18,7 @@ const { restore } = require('../scripts/restore-paid-receipts');
 const { createCursorAdapter } = require('../src/adapters/cursor');
 const { createApifyAdapter } = require('../src/adapters/apify');
 const { apifyFinalistRequestProjection } = require('../src/adapters/apify');
-const { operationArtifactBinding } = require('../src/factory/receipt-store');
+const { operationArtifactBinding, verifyOperationArtifact } = require('../src/factory/receipt-store');
 
 function pendingFor(head = 'head-1', suffix = '1') {
   const dispatchPacket = createDispatchPacket({ issueNumber: 8, prNumber: 1, branch: 'architect/greenfield-gate1', reviewedHeadSha: head, scope: 'research-only' });
@@ -209,6 +209,9 @@ test('paid artifact outer schema is the adapter projection and canonical digest 
   assert.equal(artifact.requestDigest, pending.apifyOperationProjection.requestDigest);
   assert.deepEqual(artifact.requestProjection, pending.apifyOperationProjection);
   assert.equal(artifact.artifactContentDigest, again.artifactContentDigest);
+  assert.doesNotThrow(() => verifyOperationArtifact(artifact, { stage: 'pre-post', provider: 'apify', operationKey: artifact.operationKey, requestDigest: artifact.requestDigest, idempotencyKey: artifact.idempotencyKey }));
+  const forged = { ...artifact, requestDigest: 'sha256:forged' };
+  assert.throws(() => verifyOperationArtifact(forged, { stage: 'pre-post', provider: 'apify' }), /content digest is invalid/);
 });
 
 test('paid operation crash matrix resumes on a distinct runner filesystem with one POST', async () => {
