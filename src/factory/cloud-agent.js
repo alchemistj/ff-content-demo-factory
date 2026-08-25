@@ -64,7 +64,7 @@ function validateBundle(bundle, { expectedHeadSha, inputManifestDigest, dispatch
 }
 
 function createDispatchPacket({ issueNumber, prNumber, branch, reviewedHeadSha, scope }) {
-  const model = { alias: CURSOR_ALIAS, requestedModel: CURSOR_MODEL, fastOff: true, fast: false };
+  const model = { alias: CURSOR_ALIAS, requestedModel: CURSOR_MODEL, resolvedModel: CURSOR_MODEL, fastOff: true, fast: false };
   const commentBody = `@cursor\nIssue: #${issueNumber}\nPR: #${prNumber}\nBranch: ${branch}\nReviewed head: ${reviewedHeadSha}\nScope: ${scope}\nModel: Grok 4.6 High (cursor-grok-4.6-high), Fast off (fast: false).\nReturn a bound terminal receipt with the canonical https://cursor.com/agents/<id> thread URL, separate agentId/runId, input/output digests, and exact branch/head evidence. Do not write prospect copy.`;
   return { schemaVersion: 'factory-cursor-dispatch-v1', issueNumber, prNumber, branch, reviewedHeadSha, scope, model, commentBody, dispatchDigest: digest({ issueNumber, prNumber, branch, reviewedHeadSha, scope, model, commentBody }) };
 }
