@@ -3,7 +3,7 @@
 const fs = require('node:fs');
 const path = require('node:path');
 const { createSeededDiscoveryAdapter, validateSeededDiscoveryPacket } = require('../adapters/seeded-discovery');
-const { digest } = require('./prescription-policy');
+const { digest, pageSetDigest } = require('./prescription-policy');
 const { TRUSTED_ARTIFACTS } = require('./trusted-artifacts');
 
 const PLACE_ID = 'ChIJHa32AOi84YMR38BV93YKiS8';
@@ -47,6 +47,58 @@ function historicalStrategy(handoff) {
     policy: handoff.policy,
     policyMode: handoff.policyMode,
   };
+}
+
+// Keep the comparison shape in one place.  The production prescription and
+// the historical handoff use different surrounding schemas, but the fields
+// below are the immutable Gate 1 decision that must survive the handoff.
+function canonicalApprovedLineageProjection(value = {}) {
+  const pages = Array.isArray(value.pages) ? value.pages : [];
+  const routes = Array.isArray(value.routes) && value.routes.length
+    ? value.routes.map(String)
+    : pages.map((page) => String(page.url || page.route || ''));
+  const selectedServiceIds = Array.isArray(value.selectedServiceIds) && value.selectedServiceIds.length
+    ? value.selectedServiceIds.map(String)
+    : pages.filter((page) => page.type === 'Service').map((page) => String(page.canonicalIntentId || page.service || page.id || page.url || ''));
+  const pageDigest = value.pageSetDigest || (pages.length ? pageSetDigest(pages) : null);
+  const approvalProjection = value.approvalProjection || value.approval || {
+    sourceArtifactDigest: value.sourceArtifactDigest || null,
+    evidenceDigest: value.evidenceDigest || null,
+    pageSetDigest: pageDigest,
+    selectedServiceIds,
+    routes,
+  };
+  const strategyProjection = value.strategyProjection || {
+    pages,
+    writerProjection: value.writerProjection || null,
+    foldedEvidence: value.foldedEvidence || null,
+    candidateServices: value.candidateServices || value.valueHierarchy || null,
+    valueHierarchy: value.valueHierarchy || null,
+    serviceCoverageLedger: value.serviceCoverageLedger || null,
+    reviewAnalysisFacts: value.reviewAnalysisFacts || null,
+    policy: value.policy || value.pagePolicy || null,
+    policyMode: value.policyMode || null,
+  };
+  return {
+    sourceArtifactDigest: value.sourceArtifactDigest || null,
+    evidenceDigest: value.evidenceDigest || null,
+    pageSetDigest: pageDigest,
+    prescriptionDigest: value.prescriptionDigest || null,
+    approvalDigest: value.approvalDigest || digest(approvalProjection),
+    strategyDigest: value.strategyDigest || digest(strategyProjection),
+    selectedServiceIds,
+    routes,
+  };
+}
+
+function compareApprovedLineage(approved, actual, label = 'Gate 1 output') {
+  const expected = canonicalApprovedLineageProjection(approved);
+  const received = canonicalApprovedLineageProjection(actual);
+  for (const field of ['sourceArtifactDigest', 'evidenceDigest', 'pageSetDigest', 'prescriptionDigest', 'approvalDigest', 'strategyDigest']) {
+    if (!expected[field] || received[field] !== expected[field]) throw new Error(`${label} ${field} does not exactly match approved historical lineage`);
+  }
+  if (JSON.stringify(received.selectedServiceIds) !== JSON.stringify(expected.selectedServiceIds) || JSON.stringify(received.routes) !== JSON.stringify(expected.routes)) throw new Error(`${label} services/routes do not exactly match approved historical lineage`);
+  return true;
 }
 
 function verifySealed360Lineage({ root = process.cwd(), discovery, handoff } = {}) {
@@ -239,4 +291,4 @@ function createSealed360Adapters({ root = process.cwd() } = {}) {
   };
 }
 
-module.exports = { PLACE_ID, WEBSITE, OPPORTUNITY, HISTORICAL_360, loadSealed360, verifySealed360Lineage, createSealed360Adapters, bindClaims, reboundLedger };
+module.exports = { PLACE_ID, WEBSITE, OPPORTUNITY, HISTORICAL_360, loadSealed360, verifySealed360Lineage, canonicalApprovedLineageProjection, compareApprovedLineage, createSealed360Adapters, bindClaims, reboundLedger };
