@@ -502,6 +502,7 @@ export interface CursorWriterCorrectionReceipt extends CursorWriterReceipt {
   nextStage: null;
   githubBaseline?: CursorGitHubBaselineBinding;
   correctionV3Source?: CursorWriterCorrectionV3SourceBinding;
+  expectedBodyDigest?: string;
 }
 export interface CursorArtifactDescriptor { path: string; size: number; sha256?: string; updatedAt?: string; }
 export interface CursorGitHubBaselineBinding {
@@ -957,6 +958,27 @@ export const WRITER1_CORRECTION_BANNED_PATTERNS: ReadonlyArray<RegExp> = Object.
   /not\s+a\s+response[- ]time\s+guarantee/iu,
 ]);
 function correctionMutablePath(pathValue: string): boolean { return /^\/pages\/\d+\/(?:body|sections\/\d+\/(?:heading|body))$/u.test(pathValue); }
+export const WRITER1_CORRECTION_V3_DELETION_SPANS = Object.freeze([
+  "On a routine maintenance stop, he has also spotted a couple of areas that would help the door run, explained the recommendation with pricing, and had the materials on hand.",
+  "If a part is not on the truck, Jenny schedules the follow-up so the work can finish when the part arrives.",
+] as const);
+/** Derive the only permitted v3 body from the quarantined source. No replacement text is authored. */
+export function writer1CorrectionV3ExpectedBody(source: unknown): string {
+  const root = asRecord(source); const pages = root?.pages; const page = Array.isArray(pages) ? asRecord(pages[0]) : null; const sections = page?.sections; const section = Array.isArray(sections) ? asRecord(sections[3]) : null;
+  if (!section || typeof section.body !== "string") throw new CursorWriterExecutionError("CURSOR_WRITER1_CORRECTION_V3_SOURCE_INVALID", "Writer1 v3 source is missing /pages/0/sections/3/body");
+  let expected = section.body;
+  for (const span of WRITER1_CORRECTION_V3_DELETION_SPANS) {
+    const index = expected.indexOf(span);
+    if (index < 0) throw new CursorWriterExecutionError("CURSOR_WRITER1_CORRECTION_V3_SOURCE_INVALID", "Writer1 v3 source does not contain every exact allowlisted deletion span");
+    let prefix = expected.slice(0, index); let suffix = expected.slice(index + span.length);
+    if (/^\n/u.test(suffix) && prefix.endsWith(" ")) prefix = prefix.slice(0, -1);
+    if (/^[ \t\r\n]*$/u.test(suffix)) suffix = "";
+    expected = prefix + suffix;
+  }
+  // Only trailing newlines exposed by the final deletion may be cleaned.
+  return expected.replace(/\n+$/u, "");
+}
+export function writer1CorrectionV3ExpectedBodyDigest(source: unknown): string { return digestOf(writer1CorrectionV3ExpectedBody(source)); }
 export function writer1CorrectionFrozenProjection(value: unknown): unknown {
   const output = structuredClone(value) as RecordValue;
   if (!Array.isArray(output.pages)) return output;
@@ -1529,7 +1551,7 @@ export function validateCursorWriterCorrectionReceipt(receipt: unknown, prior: C
     validateWriter1CorrectionV3SourceBinding(value.correctionV3Source, expectedSource, sourceIsProductionPinned);
     if (before.kind !== "quarantine-file" || JSON.stringify(before) !== JSON.stringify(value.correctionV3Source)) throw new CursorWriterExecutionError("CURSOR_WRITER1_CORRECTION_V3_SOURCE_INVALID", "Writer1 v3 receipt lost its exact quarantined before-copy binding");
     const required = expectedChangedPaths || ["/pages/0/sections/3/body"];
-    if (JSON.stringify(value.changedPaths) !== JSON.stringify(required)) throw new CursorWriterExecutionError("CURSOR_WRITER1_CORRECTION_V3_DIFF_INVALID", "Writer1 v3 correction changed more or fewer than the one allowed body pointer");
+    if (JSON.stringify(value.changedPaths) !== JSON.stringify(required) || value.expectedBodyDigest !== writer1CorrectionV3ExpectedBodyDigest(value.beforeOutput)) throw new CursorWriterExecutionError("CURSOR_WRITER1_CORRECTION_V3_DIFF_INVALID", "Writer1 v3 receipt does not bind the exact deletion-derived body digest");
   }
 }
 
@@ -1552,6 +1574,7 @@ async function recoverCursorWriterCorrectionInternal(input: CursorWriterCorrecti
     const binding = quarantineSourceBinding(source);
     validateWriter1CorrectionV3SourceBinding(binding, binding, !input.sourceArtifactFixture);
     if (source.agentId !== prior.agentId || source.bytes.length !== source.size || artifactSha256(source.bytes) !== source.rawDigest || Buffer.from(source.raw, "utf8").compare(source.bytes) !== 0 || digestOf(source.output) !== source.outputDigest) throw new CursorWriterExecutionError("CURSOR_WRITER1_CORRECTION_V3_SOURCE_INVALID", "Writer1 v3 source bytes, parsed output, or digest binding changed before dispatch");
+    writer1CorrectionV3ExpectedBody(source.output);
     if (!input.sourceArtifactFixture && (source.runId !== "run-1686013d-dec5-454c-a39e-5817448e6a96" || source.agentId !== prior.agentId)) throw new CursorWriterExecutionError("CURSOR_WRITER1_CORRECTION_V3_SOURCE_INVALID", "Writer1 v3 source is not bound to the original Cursor dispatch");
   }
   const transport = input.transport || await officialCloudTransport();
@@ -1612,9 +1635,14 @@ async function recoverCursorWriterCorrectionInternal(input: CursorWriterCorrecti
   const diffErrors = validateWriter1CorrectionDiff(before.output, after.output); if (diffErrors.length > 0) throw new CursorWriterExecutionError("CURSOR_WRITER1_CORRECTION_DIFF_INVALID", `Writer1 correction changed frozen paths: ${diffErrors.join(", ")}`);
   const changedPaths = writer1CorrectionChangedPaths(before.output, after.output);
   if (input.expectedChangedPaths && JSON.stringify(changedPaths) !== JSON.stringify([...input.expectedChangedPaths])) throw new CursorWriterExecutionError("CURSOR_WRITER1_CORRECTION_DIFF_INVALID", "Writer1 correction did not change exactly the expected paths");
+  if (correctionVersion === "words-writer1-correction/v3") {
+    const afterPages = asRecord(after.output)?.pages; const afterPage = Array.isArray(afterPages) ? asRecord(afterPages[0]) : null; const afterSections = afterPage?.sections; const afterSection = Array.isArray(afterSections) ? asRecord(afterSections[3]) : null;
+    const expectedBody = writer1CorrectionV3ExpectedBody(before.output);
+    if (!afterSection || afterSection.body !== expectedBody) throw new CursorWriterExecutionError("CURSOR_WRITER1_CORRECTION_V3_BODY_INVALID", "Writer1 v3 body is not the exact source body with only the two allowlisted spans deleted");
+  }
   const banned = validateWriter1CorrectionBannedLanguage(after.output); if (banned.length > 0) throw new CursorWriterExecutionError("CURSOR_WRITER1_CORRECTION_BANNED_LANGUAGE", "Writer1 correction left unsupported or internal language in mutable prose", banned);
   const attestationSource = assertFastBound(options, [agent, run, result]); const effortAttestationSource = assertEffortBound(selection, [agent, run, result]);
-  const receipt = withReceiptIntegrityMac({ stage: "writer1", provider: CURSOR_PROVIDER, requestedModel: REQUIRED_CURSOR_MODEL, resolvedModel: OFFICIAL_CURSOR_MODEL, fast: false, jobId, agentId: prior.agentId, threadUrl: record.url, inputDigest: prior.inputDigest, promptDigest, outputDigest: digestOf(after.output), completedAt: now().toISOString(), status: "complete", output: after.output, requestDigest, createRequest: request, registryItem: selection.registryItem, registryDigest: selection.registryDigest, modelParams: selection.params, effort: "high", ...(selection.effortParameterId ? { effortParameterId: selection.effortParameterId } : {}), effortAttestationSource, attestationSource, apiVersion: API_VERSION, mode: "same-thread-correction", correctionVersion, correctionPrior: prior, correctionPromptDigest: promptDigest, artifact: after.artifact, recoveryRunId: jobId, beforeArtifact: before.artifact, afterArtifact: after.artifact, beforeOutput: before.output, beforeOutputDigest: digestOf(before.output), afterOutputDigest: digestOf(after.output), frozenDigest: writer1CorrectionFrozenDigest(before.output), changedPaths, changedPathsDigest: writer1CorrectionChangedPathsDigest(changedPaths), writer2Blocked: true, nextStage: null, ...(expectedBaseline ? { githubBaseline: expectedBaseline } : {}), ...(expectedSource ? { correctionV3Source: expectedSource } : {}) } as unknown as CursorWriterCorrectionReceipt, env.CURSOR_API_KEY);
+  const receipt = withReceiptIntegrityMac({ stage: "writer1", provider: CURSOR_PROVIDER, requestedModel: REQUIRED_CURSOR_MODEL, resolvedModel: OFFICIAL_CURSOR_MODEL, fast: false, jobId, agentId: prior.agentId, threadUrl: record.url, inputDigest: prior.inputDigest, promptDigest, outputDigest: digestOf(after.output), completedAt: now().toISOString(), status: "complete", output: after.output, requestDigest, createRequest: request, registryItem: selection.registryItem, registryDigest: selection.registryDigest, modelParams: selection.params, effort: "high", ...(selection.effortParameterId ? { effortParameterId: selection.effortParameterId } : {}), effortAttestationSource, attestationSource, apiVersion: API_VERSION, mode: "same-thread-correction", correctionVersion, correctionPrior: prior, correctionPromptDigest: promptDigest, artifact: after.artifact, recoveryRunId: jobId, beforeArtifact: before.artifact, afterArtifact: after.artifact, beforeOutput: before.output, beforeOutputDigest: digestOf(before.output), afterOutputDigest: digestOf(after.output), frozenDigest: writer1CorrectionFrozenDigest(before.output), changedPaths, changedPathsDigest: writer1CorrectionChangedPathsDigest(changedPaths), writer2Blocked: true, nextStage: null, ...(expectedBaseline ? { githubBaseline: expectedBaseline } : {}), ...(expectedSource ? { correctionV3Source: expectedSource } : {}), ...(correctionVersion === "words-writer1-correction/v3" ? { expectedBodyDigest: writer1CorrectionV3ExpectedBodyDigest(before.output) } : {}) } as unknown as CursorWriterCorrectionReceipt, env.CURSOR_API_KEY);
   validateCursorWriterCorrectionReceipt(receipt, prior, promptDigest, env.CURSOR_API_KEY, expectedBaseline, expectedSource, input.expectedChangedPaths);
   await input.receiptStore.put(key, receipt); await input.receiptStore.putClaim(key, { ...activeClaim, agentId: prior.agentId, jobId, phase: "completed", heartbeatAt: now().toISOString() });
   return { output: after.output, receipt, threadUrl: record.url, claim: { ...activeClaim, agentId: prior.agentId, jobId, phase: "completed", heartbeatAt: now().toISOString() } };

@@ -10,6 +10,8 @@ import {
   recoverCursorWriterCorrectionV2,
   recoverCursorWriterCorrectionV3,
   validateWriter1CorrectionDiff,
+  writer1CorrectionV3ExpectedBody,
+  writer1CorrectionV3ExpectedBodyDigest,
   validateWriter1CorrectionBannedLanguage,
   validateCursorWriterCorrectionReceipt,
   writer1RenderedWordsDigest,
@@ -435,14 +437,15 @@ export async function runVerifiedWriter1CorrectionV3(root = process.cwd()): Prom
     validateOutput: (output) => {
       const parsed = parseAndValidateWriter1Output(JSON.stringify(output), projection);
       if (validateWriter1CorrectionDiff(source.output, parsed).some((item) => item !== "/pages/0/sections/3/body")) throw new Error("verified v3 correction changed a frozen path");
-      if (/routine\s+maintenance|\bConnie\b/iu.test(String((parsed as Dict).pages?.[0]?.sections?.[3]?.body || ""))) throw new Error("verified v3 correction left unbound routine-maintenance/Connie language");
+      const expectedBody = writer1CorrectionV3ExpectedBody(source.output); const pages = (parsed as Dict).pages; const page = Array.isArray(pages) ? pages[0] as Dict : undefined; const sections = page && Array.isArray(page.sections) ? page.sections : undefined; const body = sections && sections[3] && typeof sections[3].body === "string" ? sections[3].body : undefined;
+      if (body !== expectedBody) throw new Error("verified v3 correction is not the exact deletion-derived body");
       return parsed;
     },
   });
   validateCursorWriterCorrectionReceipt(result.receipt, prior, VERIFIED_WRITER1_PROMPT_V3_DIGEST, process.env.CURSOR_API_KEY, undefined, result.receipt.correctionV3Source, ["/pages/0/sections/3/body"]);
   const output = parseAndValidateWriter1Output(JSON.stringify(result.output), projection);
   await writeJson(jsonFile(root, "canary/runtime/writer1-correction-v3-receipt.json"), result.receipt);
-  await writeJson(jsonFile(root, "canary/runtime/writer1-validation.json"), { schemaVersion: "verified-writer1-validation/v3", status: "valid-awaiting-architect-qa", stage: "writer1", correctionVersion: VERIFIED_WRITER1_CORRECTION_V3, outputDigest: result.receipt.outputDigest, sourceBranch: VERIFIED_BRANCH, sourceSha: prior.sourceSha, sealedHandoffDigest: prior.sealedHandoffDigest, sourceArtifact: result.receipt.correctionV3Source, beforeOutputDigest: result.receipt.beforeOutputDigest, afterOutputDigest: result.receipt.afterOutputDigest, frozenDigest: result.receipt.frozenDigest, changedPaths: result.receipt.changedPaths, agentId: result.receipt.agentId, runId: result.receipt.jobId, threadUrl: result.threadUrl, requestedModel: result.receipt.requestedModel, resolvedModel: result.receipt.resolvedModel, effort: result.receipt.effort, fast: result.receipt.fast, nextStage: null, writer2Blocked: true, messagesSent: 1 });
+  await writeJson(jsonFile(root, "canary/runtime/writer1-validation.json"), { schemaVersion: "verified-writer1-validation/v3", status: "valid-awaiting-architect-qa", stage: "writer1", correctionVersion: VERIFIED_WRITER1_CORRECTION_V3, outputDigest: result.receipt.outputDigest, expectedBodyDigest: writer1CorrectionV3ExpectedBodyDigest(result.receipt.beforeOutput), sourceBranch: VERIFIED_BRANCH, sourceSha: prior.sourceSha, sealedHandoffDigest: prior.sealedHandoffDigest, sourceArtifact: result.receipt.correctionV3Source, beforeOutputDigest: result.receipt.beforeOutputDigest, afterOutputDigest: result.receipt.afterOutputDigest, frozenDigest: result.receipt.frozenDigest, changedPaths: result.receipt.changedPaths, agentId: result.receipt.agentId, runId: result.receipt.jobId, threadUrl: result.threadUrl, requestedModel: result.receipt.requestedModel, resolvedModel: result.receipt.resolvedModel, effort: result.receipt.effort, fast: result.receipt.fast, nextStage: null, writer2Blocked: true, messagesSent: 1 });
   await writeJson(jsonFile(root, "canary/outputs/writer1-output.json"), output);
   await writeJson(jsonFile(root, "canary/runtime/state.json"), { status: "awaiting-architect-qa", stage: "writer1", correctionVersion: VERIFIED_WRITER1_CORRECTION_V3, runId: sealed.handoff.runId, sourceBranch: VERIFIED_BRANCH, sourceSha: prior.sourceSha, sealedHandoffDigest: prior.sealedHandoffDigest, sourceArtifact: result.receipt.correctionV3Source, agentId: result.receipt.agentId, threadUrl: result.threadUrl, correctionRunId: result.receipt.jobId, receiptPath: "canary/runtime/writer1-correction-v3-receipt.json", targetPath: "/pages/0/sections/3/body", changedPaths: result.receipt.changedPaths, nextStage: null, writer2Blocked: true, messagesSent: 1 });
   return { status: "awaiting-architect-qa", stage: "writer1", threadUrl: result.threadUrl, correctionRunId: result.receipt.jobId };
