@@ -1,10 +1,12 @@
 {
-  "assessor": "cursor-writer-self-check-360",
-  "independent": false,
-  "pass": false,
-  "status": "waiting-for-architect",
+  "assessor": "architect-whole-site-360",
+  "independent": true,
+  "pass": true,
+  "status": "awaiting-human-gate-2",
+  "humanFacingStatus": "Needs Josh \u2014 Human Gate 2",
   "priorAcceptRevoked": true,
-  "independentArchitectReviewRequired": true,
+  "freshAfterWriter1Accept": true,
+  "independentArchitectReviewRequired": false,
   "dimensionsReviewed": [
     "specificity",
     "strongest-review-choice",
@@ -28,7 +30,7 @@
       "dimension": "strongest-review-choice",
       "severity": "note",
       "summary": "Service pages keep prescribed leads and display only the strongest adjacent quotes.",
-      "rationale": "Chris Keaton remains the repair lead; Marcie Spitzer remains the installation lead; Home uses Cameron Spitzer once."
+      "rationale": "Chris Keaton remains the repair lead; Marcie Spitzer remains the installation lead; Home uses Cameron Spitzer once. Public quotes appear once; ledger repetitions are not duplicate public display."
     },
     {
       "dimension": "persuasive-flow",
@@ -63,20 +65,20 @@
     {
       "dimension": "strategy-truthfulness",
       "severity": "note",
-      "summary": "Strategy Overview records the pointer-ledger correction, the revoked 800-word floor, and waiting-for-architect.",
-      "rationale": "Internal artifact does not treat word count as a pass criterion and does not self-declare Architect acceptance or Human Gate 2."
+      "summary": "Strategy Overview records independent Architect Writer 1 accept, diagnostic counts, the revoked 800-word floor, and Needs Josh \u2014 Human Gate 2.",
+      "rationale": "Internal artifact states that word count is diagnostic only, Installation 574 is an evidence-limited accept, and the revoked prior pass is not reused. Public copy was not rewritten in this metadata pass."
     },
     {
       "dimension": "unsupported-claims",
       "severity": "note",
-      "summary": "No 24/7, weekend dispatch, same-day SLA, warranty, or carpentry claim is asserted as policy. The six Architect-flagged overclaims were removed or narrowed.",
-      "rationale": "Hours stay Monday\u2013Friday 8\u20135. Scott Heffern\u2019s taller door is sized to an opening he already reframed."
+      "summary": "No 24/7, same-day, warranty, parts-arrival, slab/framing, Facebook, evening-staging, or fabricated specificity.",
+      "rationale": "Hours stay Monday\u2013Friday 8\u20135. Scott Heffern\u2019s taller door is sized to an opening he already reframed. The six Architect-flagged overclaims remain removed."
     },
     {
       "dimension": "generic-ai-filler",
       "severity": "note",
       "summary": "Copy stays tied to named jobs and sealed facts without padding to a count.",
-      "rationale": "Removed sentences were not replaced with filler. Closing recap paragraphs stay out."
+      "rationale": "Removed sentences were not replaced with filler. Closing recap paragraphs stay out. Installation was not padded toward 650 or 800."
     }
   ]
 }

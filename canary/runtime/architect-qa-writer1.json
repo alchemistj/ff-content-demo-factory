@@ -1,12 +1,16 @@
 {
   "stage": "writer1",
-  "decision": "waiting-for-architect",
-  "writer2Released": false,
+  "decision": "accept",
+  "writer2Released": true,
   "rawArtifactApproved": false,
-  "normalizedOutputApprovedForWriter2": false,
+  "normalizedOutputApprovedForWriter2": true,
   "wordCountIsDiagnosticOnly": true,
   "formerHardFloorRevoked": "at least 800 words each",
-  "independentArchitectReviewRequired": true,
+  "independentArchitectReviewRequired": false,
+  "independentArchitectAccepted": true,
+  "acceptedRenderedWordsDigest": "sha256:3edce1acff28a00b3f0064664f8b1b4d2beab1a0a9fda5f92108442ce4d1460e",
+  "independentArchitectReviewedHead": "1b6ab7c9f174bfafdcd25487982933be06a42191",
+  "priorWaitingForArchitectRevoked": true,
   "changedClaimReasons": [
     "Repair: removed Jenny parts-arrival scheduling. Sealed evidence supports Jenny customer service/follow-up generally, not a parts-on-the-next-visit process.",
     "Repair: replaced causal return-because-local/not-a-chain and always-same-person-diagnoses-and-repairs language with named completed-job facts only.",
@@ -16,16 +20,20 @@
     "Home: replaced the awkward H1 with the sealed completed-jobs promise, without availability, speed, warranty, or pricing claims."
   ],
   "findings": [
-    "Strict validator still rejects the quarantined bytes: only REVIEW_EVIDENCE_CLAIM_TEXT_DUPLICATE, first path /pages/0/reviewEvidence/0/reviewer.",
-    "normalizeWriter1PointerLedger removed 62 duplicated reviewer/excerpt keys and preserved semantic copy, identity, and provenance. Raw artifact remains unapproved.",
-    "Repair useful-body word count 817 (diagnostic only; not an accept reason). Installation useful-body word count 574 (diagnostic only; not an accept reason). Installation sits below the 650 guidance because the sealed install set is six completed-new-door reviews and the Architect required removal of Facebook discovery recital plus generic evening/staging advice. That gap was not filled with generic copy.",
+    "Independent Architect QA accepted Writer 1 copy quality at rendered digest sha256:3edce1acff28a00b3f0064664f8b1b4d2beab1a0a9fda5f92108442ce4d1460e from reviewed head 1b6ab7c9f174bfafdcd25487982933be06a42191. Acceptance is based on observable quality, not length.",
+    "Home, Repair, Installation, Contact, then internal Strategy are complete and directly readable.",
+    "Repair useful-body word count 817 (diagnostic only; not an accept reason). Installation useful-body word count 574 (diagnostic only; not an accept reason). Installation's 574-word count is accepted as an evidence-limited outcome: the sealed record supports only six completed new-door reviews after unsupported/generic material was removed. Do not pad it toward 650 or 800.",
+    "Repair and Installation serve distinct homeowner decisions without review-by-review recital, repeated closing summaries, internal audit language, or duplicated public quote display.",
+    "Public quotes were checked against the sealed 47-review evidence and appear once in public copy; corresponding repetitions in the internal evidence ledger are not duplicate public display.",
+    "Unsupported-claim scan found no 24/7, same-day, warranty, parts-arrival, slab/framing, Facebook, evening-staging, or fabricated specificity.",
+    "The strongest adjacent proof is retained in natural customer-facing language.",
     "Duplicate-quote scan: each displayed quotation appears once; none are rendered as both inline copy and an adjacent blockquote.",
     "Repetition scan: shop hours and weekend/weekday timing are handled once on the next-step section rather than restated through the page.",
-    "Unsupported-claim scan: no 24/7, weekend dispatch, same-day SLA, warranty term, framing/carpentry, or pricing guarantee is asserted as policy. Jenny parts-arrival process, causal local/not-a-chain returns, always-same-person diagnosis/repair, slab jargon, Facebook-group discovery recital, and evening-usability/staging advice were removed or narrowed.",
     "Quote fidelity: displayed quotations are contiguous sealed-review text with the original reviewer attribution.",
-    "Public copy reads as local-service writing. Internal evidence-defense phrasing was removed from customer-facing pages.",
     "Word count alone did not pass either page. The former hard 800-word floor is revoked.",
-    "This worker does not accept Writer 1. The package is returned waiting-for-architect for independent review."
+    "Strict validator still rejects the quarantined bytes: only REVIEW_EVIDENCE_CLAIM_TEXT_DUPLICATE, first path /pages/0/reviewEvidence/0/reviewer.",
+    "normalizeWriter1PointerLedger removed 62 duplicated reviewer/excerpt keys and preserved semantic copy, identity, and provenance. Raw artifact remains unapproved.",
+    "Pointer-ledger normalization, strict dirty-ledger failure, quarantined raw digest/provenance, sealed evidence bindings, four-route topology, and no-merge/no-build/no-deploy boundary remain required."
   ],
   "sectionJobs": {
     "/garage-door-repair": [
@@ -95,13 +103,13 @@
     },
     "auditLanguage": [],
     "forbiddenPublicPhrases": [],
-    "unsupportedClaims": "writer-self-check-pass",
-    "evidenceFidelity": "writer-self-check-pass",
+    "unsupportedClaims": "architect-accept",
+    "evidenceFidelity": "architect-accept",
     "usefulBodyWordCounts": {
       "repair": 817,
       "installation": 574,
       "role": "diagnostic-only"
     },
-    "role": "diagnostic-self-check-not-architect-accept"
+    "role": "independent-architect-accept-quality-not-length"
   }
 }

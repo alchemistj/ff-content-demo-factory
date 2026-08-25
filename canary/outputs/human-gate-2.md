@@ -7,20 +7,22 @@ Directly readable words package for the 360 Garage Door and More canary. Natural
 - Repair page useful-body word count (diagnostic only): **817**
 - Installation page useful-body word count (diagnostic only): **574**
 - Word count is not the acceptance reason. The former hard 800-word floor is revoked.
-- Architect QA Writer 1: **waiting-for-architect** (independent review required; this worker does not accept; Writer 2 is not released; raw quarantined artifact remains unapproved)
-- Architect QA Writer 2: **waiting-for-architect** (Home/Contact/header/footer reconciled to claim-corrected Writer 1 pages; not accepted)
+- Architect QA Writer 1: **accept** (independent Architect QA at `sha256:3edce1acff28a00b3f0064664f8b1b4d2beab1a0a9fda5f92108442ce4d1460e`; word counts diagnostic only; Installation 574 accepted as evidence-limited, not padded; raw quarantined artifact remains unapproved)
+- Architect QA Writer 2: **accept** (fresh after Writer 1 accept; public Home/Contact/header/footer unchanged; revoked prior pass not reused)
 - Writer 3 Strategy Overview: internal only
-- Whole-site QA: **waiting-for-architect** (writer self-check only; prior accept/pass remain revoked; independent Architect review required)
-- Duplicate-quote scan: **writer-self-check-pass** (each quotation displayed once)
-- Repetition scan: **writer-self-check-pass** (hours/timing handled once per service page)
-- Unsupported-claim scan: **writer-self-check-pass** (six Architect-flagged overclaims removed or narrowed)
-- Evidence-fidelity scan: **writer-self-check-pass**
+- Whole-site QA: **pass** (fresh after independent Writer 1 accept; prior accept/pass remain revoked)
+- Duplicate-quote scan: **architect-accept** (each public quotation displayed once; ledger repetitions are not duplicate public display)
+- Repetition scan: **architect-accept** (hours/timing handled once per service page)
+- Unsupported-claim scan: **architect-accept** (no 24/7, same-day, warranty, parts-arrival, slab/framing, Facebook, evening-staging, or fabricated specificity)
+- Evidence-fidelity scan: **architect-accept**
 - Merge occurred: **no**
+- Build occurred: **no**
 - Deployment occurred: **no**
+- Human status: **Needs Josh — Human Gate 2**
 - Branch: `architect/360-words-canary`
-- Reviewed head for this correction packet: `cbe66a21f0b99c27fb4eed946267e378b5d11312`
-- Head at render: `c6fb58dc9700dffefeb6dc642b6e2f73d4eb58fa`
-- Fresh Writer 1 rendered-words digest: `sha256:3edce1acff28a00b3f0064664f8b1b4d2beab1a0a9fda5f92108442ce4d1460e`
+- Reviewed head for this acceptance packet: `1b6ab7c9f174bfafdcd25487982933be06a42191`
+- Head at render: `1b6ab7c9f174bfafdcd25487982933be06a42191`
+- Accepted Writer 1 rendered-words digest: `sha256:3edce1acff28a00b3f0064664f8b1b4d2beab1a0a9fda5f92108442ce4d1460e`
 - Rejected padded lineage (not restored): `sha256:165d310ae1e30225b6278cc0fbde7d2cab23a60f186157c59734257519c01f89`
 - Hermetic pointer-ledger fixtures: `561e9013f4ca5c5d3055bdbcff34c69b466f7940`
 - Sealed Writer 1 recovery/finalization: `0d6284a9aa037dc642669357c86fb02b3b859e3a`
@@ -39,6 +41,7 @@ Directly readable words package for the 360 Garage Door and More canary. Natural
 - Prior correction Cursor thread: https://cursor.com/agents/bc-57cc62dc-de8f-4be0-840b-640662ae56a4
 - Fresh Writer 1 copy Cursor thread: https://cursor.com/agents/bc-2486f645-c31c-4532-8145-fbe3af1d45a8
 - Claim-correction Cursor thread: https://cursor.com/agents/bc-85fdb5d1-0b22-4892-8943-c9e597607491
+- Architect-acceptance metadata Cursor thread: https://cursor.com/agents/bc-f89d03d4-e4d0-4b43-98ea-36b3cec658f7
 - GitHub issue: https://github.com/alchemistj/ff-content-demo-factory/issues/5
 - Quarantined source digest: `sha256:ec36da69992dd318e913671763a96e4b838ab747b36e512702f91176155e5eac`
 - Prior normalized output digest (pre-quality rewrite): `sha256:c771016e724a49dd41254bde3639de6c1b1c18fc69c23533ed19bd9773f3ef8e`
@@ -48,7 +51,7 @@ Directly readable words package for the 360 Garage Door and More canary. Natural
 
 - Targeted regression: production `reviewer`+`excerpt` fails `REVIEW_EVIDENCE_CLAIM_TEXT_DUPLICATE` at `/pages/0/reviewEvidence/0/reviewer` with expectedRule `reviewEvidence must not contain any accepted word-bearing key; it is a typed pointer ledger`, then normalizes losslessly.
 - Real quarantined bytes: 31 reviewer keys + 31 excerpt keys removed (62), semantic copy / identity / provenance preserved, raw `approved: false`.
-- Fresh Writer 1 quality self-check: distinct section jobs, synthesized reviews, one display form per quote, no audit-memo public copy, unsupported-claim scan pass, six Architect-flagged overclaims removed or narrowed, word counts diagnostic only. This is not Architect acceptance.
+- Independent Architect Writer 1 accept: distinct section jobs, synthesized reviews, one display form per quote, no audit-memo public copy, unsupported-claim scan pass, Installation 574 accepted as evidence-limited, word counts diagnostic only.
 - `NODE_ENV=test npm run test:all`: 132 passed, 0 failed, 0 skipped.
 
 ## Changed-claim reasons
@@ -67,7 +70,7 @@ Directly readable words package for the 360 Garage Door and More canary. Natural
 
 ## Architect QA — Writer 1
 
-Decision: **waiting-for-architect**. Independent Architect review is required. Word count did not pass the pages. This worker does not accept Writer 1 and does not open Human Gate 2.
+Decision: **accept**. Independent Architect QA accepted copy quality at `sha256:3edce1acff28a00b3f0064664f8b1b4d2beab1a0a9fda5f92108442ce4d1460e` from reviewed head `1b6ab7c9f174bfafdcd25487982933be06a42191`. Word count did not pass the pages. Raw quarantined artifact remains unapproved. Public copy was not rewritten in this metadata-only reconciliation.
 
 ### Garage Door Repair section jobs
 
@@ -102,7 +105,53 @@ Decision: **waiting-for-architect**. Independent Architect review is required. W
 - Unsupported claims: no 24/7, weekend dispatch, same-day SLA, warranty term, framing/carpentry, or pricing guarantee. Forbidden overclaim phrases: none.
 - Evidence fidelity: displayed quotations are contiguous sealed-review text.
 - Useful-body word counts: Repair **817**, Installation **574** (diagnostic only).
-- Role: writer self-check only. Independent Architect QA owns accept/reject.
+- Role: independent Architect accept. Word counts remain diagnostic only.
+
+## Architect QA — Writer 2
+
+Decision: **accept**. Fresh after independent Writer 1 accept. Public Home, Contact, header, and footer were not rewritten or expanded. The revoked prior Writer 2 pass is not reused.
+
+- Fresh Writer 2 decision after independent Writer 1 accept. This is not a reuse of the revoked prior Writer 2 pass.
+
+- Public Home, Contact, header, and footer copy was not rewritten or expanded. It remains the claim-corrected reconciliation against the accepted Writer 1 pages.
+
+- Home `/` routes to the two accepted service pages and Contact without adding extra public services.
+
+- Home H1 uses the sealed completed-jobs promise and does not imply unsupported availability, speed, warranty, or pricing.
+
+- Contact is lean: phone, address, Monday–Friday 8–5, closed Saturday and Sunday; no service SLAs.
+
+- Header and footer resolve Home, Repair, Installation, and Contact. Strategy is not in navigation.
+
+- Cameron Spitzer lead quote is contiguous source text and is displayed once.
+
+- No new vendor calls and no new review inventory.
+
+- Writer 2 was withheld until independent Architect QA accepted Writer 1.
+
+## Whole-site QA
+
+Decision: **pass**. Assessor `architect-whole-site-360`. Fresh after independent Writer 1 accept. Prior accept/pass remain revoked. Human status: **Needs Josh — Human Gate 2**.
+
+- `specificity`: NAP, hours, named technicians, and job-specific review proof are present. Public copy uses the sealed Springfield address, listed hours, and named people from the written reviews.
+
+- `strongest-review-choice`: Service pages keep prescribed leads and display only the strongest adjacent quotes. Chris Keaton remains the repair lead; Marcie Spitzer remains the installation lead; Home uses Cameron Spitzer once. Public quotes appear once; ledger repetitions are not duplicate public display.
+
+- `persuasive-flow`: Each service-page section has a distinct decision-stage job. Direct answer, confirmed scope, process/selection, differentiator, strongest proof, and next step do not restate one another.
+
+- `voice-drift`: Public copy reads as local-service writing rather than an evidence-audit memo. Internal validation commentary and duplicate quote display were removed from customer-facing pages.
+
+- `cross-page-distinctness`: Repair, installation, home, and contact do different jobs. Repair keeps the existing door; installation is new doors; contact is reachability only.
+
+- `homepage-complementarity`: Home routes into finished service pages instead of restating them. Home uses the sealed completed-jobs H1 and points to the two service destinations without duplicating the full service bodies.
+
+- `contact-leanness`: Contact has no review placements and no service promises. Phone, address, hours, and route-outs only.
+
+- `strategy-truthfulness`: Strategy Overview records independent Architect Writer 1 accept, diagnostic counts, the revoked 800-word floor, and Needs Josh — Human Gate 2. Internal artifact states that word count is diagnostic only, Installation 574 is an evidence-limited accept, and the revoked prior pass is not reused. Public copy was not rewritten in this metadata pass.
+
+- `unsupported-claims`: No 24/7, same-day, warranty, parts-arrival, slab/framing, Facebook, evening-staging, or fabricated specificity. Hours stay Monday–Friday 8–5. Scott Heffern’s taller door is sized to an opening he already reframed. The six Architect-flagged overclaims remain removed.
+
+- `generic-ai-filler`: Copy stays tied to named jobs and sealed facts without padding to a count. Removed sentences were not replaced with filler. Closing recap paragraphs stay out. Installation was not padded toward 650 or 800.
 
 ## Review / evidence pointer ledger
 
@@ -353,7 +402,9 @@ This is an internal Writer 3 artifact. It is not a public page and must not be l
 
 Public topology is exactly four routes in reading order: Home `/`, Garage Door Repair `/garage-door-repair`, Garage Door Installation `/garage-door-installation`, and Contact `/contact`. Writer 1 authored a new pair of service pages from the sealed 360 prescription and the existing 47 written reviews, then applied a copy-only claim correction on the same lineage. The rejected padded copy lineage (`sha256:165d310ae1e30225b6278cc0fbde7d2cab23a60f186157c59734257519c01f89`) was not restored. Production validation still rejects the quarantined remote artifact because `reviewEvidence` carried word-bearing `reviewer` and `excerpt` keys. Factory pointer-ledger normalization removed those 62 duplicated keys, preserved dedicated copy, and left the quarantined source bytes unapproved.
 
-The former hard 800-word floor is revoked. Word counts are diagnostic only. This head is returned as waiting-for-architect: Writer 1 is not Architect-accepted, Writer 2 is not released, and Human Gate 2 is not opened. The claim-correction pass removed Jenny parts-arrival process language, causal local/not-a-chain and always-same-person generalizations, installation slab jargon, Facebook-group discovery recital, and evidence-free evening-usability/staging advice, and revised the Home H1 to the sealed completed-jobs promise. Writer 2 Home, Contact, header, and footer were reconciled to that corrected Writer 1 copy using the same NAP, hours, and named people (Jenny / Will) without new vendor calls. Writer 3 records the fold: spring replacement, maintenance, seals, tracks, diagnostics, and related repair-family work stay on `/garage-door-repair`; opener and keypad work stay supporting evidence and do not receive public routes. Independent Architect QA owns accept/reject. Josh alone approves Human Gate 2 and any later merge. No deployment occurred.
+The former hard 800-word floor is revoked. Word counts are diagnostic only. Independent Architect QA accepted Writer 1 copy quality at rendered digest `sha256:3edce1acff28a00b3f0064664f8b1b4d2beab1a0a9fda5f92108442ce4d1460e` from reviewed head `1b6ab7c9f174bfafdcd25487982933be06a42191`. Acceptance is based on observable quality, not length. Repair (817 useful-body words) and Installation (574) serve distinct homeowner decisions without review-by-review recital, repeated closing summaries, internal audit language, or duplicated public quote display. Installation's 574-word count is accepted as an evidence-limited outcome: the sealed record supports only six completed new-door reviews after unsupported/generic material was removed. Do not pad it toward 650 or 800.
+
+The claim-correction pass removed Jenny parts-arrival process language, causal local/not-a-chain and always-same-person generalizations, installation slab jargon, Facebook-group discovery recital, and evidence-free evening-usability/staging advice, and revised the Home H1 to the sealed completed-jobs promise. After that independent Writer 1 accept, Writer 2 Home, Contact, header, and footer stay reconciled to the accepted Writer 1 copy using the same NAP, hours, and named people (Jenny / Will) without new vendor calls or public-copy expansion. Writer 3 records the fold: spring replacement, maintenance, seals, tracks, diagnostics, and related repair-family work stay on `/garage-door-repair`; opener and keypad work stay supporting evidence and do not receive public routes. Fresh Writer 2 and whole-site decisions were recorded after the independent Writer 1 accept; the revoked prior pass is not reused. State is awaiting-human-gate-2 / Needs Josh — Human Gate 2. Josh alone approves Human Gate 2 and any later merge. No build, merge, or deployment occurred.
 
 ### Why these four pages
 
@@ -371,6 +422,6 @@ Each service-page section must add a distinct homeowner decision, scope fact, pr
 
 No 24/7, weekend on-site, holiday dispatch, same-day SLA, one-hour arrival, or guaranteed rating. Hours remain Monday–Friday 8 AM–5 PM. Retrieval count 47 and retrieval date 2026-08-23 stay in this internal artifact only.
 
-State: waiting-for-architect
+State: awaiting-human-gate-2
 
-Independent Architect review is required. This package is not awaiting Human Gate 2 and is not a merge or deployment authorization.
+Human status: Needs Josh — Human Gate 2. Josh alone approves Human Gate 2. This package is not a merge, build, or deployment authorization.

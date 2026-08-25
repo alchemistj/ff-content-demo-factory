@@ -1,15 +1,20 @@
 {
   "stage": "writer2",
-  "decision": "waiting-for-architect",
-  "writer3Released": false,
-  "independentArchitectReviewRequired": true,
+  "decision": "accept",
+  "writer3Released": true,
+  "independentArchitectReviewRequired": false,
+  "freshAfterWriter1Accept": true,
+  "priorPassRevoked": true,
+  "publicCopyUnchangedFromClaimCorrection": true,
   "findings": [
-    "Home `/` routes to the two claim-corrected service pages and Contact without adding extra public services.",
-    "Home H1 now uses the sealed completed-jobs promise instead of the awkward named-people phrasing.",
+    "Fresh Writer 2 decision after independent Writer 1 accept. This is not a reuse of the revoked prior Writer 2 pass.",
+    "Public Home, Contact, header, and footer copy was not rewritten or expanded. It remains the claim-corrected reconciliation against the accepted Writer 1 pages.",
+    "Home `/` routes to the two accepted service pages and Contact without adding extra public services.",
+    "Home H1 uses the sealed completed-jobs promise and does not imply unsupported availability, speed, warranty, or pricing.",
     "Contact is lean: phone, address, Monday\u2013Friday 8\u20135, closed Saturday and Sunday; no service SLAs.",
     "Header and footer resolve Home, Repair, Installation, and Contact. Strategy is not in navigation.",
     "Cameron Spitzer lead quote is contiguous source text and is displayed once.",
     "No new vendor calls and no new review inventory.",
-    "Writer 2 copy is reconciled for independent Architect review. Writer 2 is not released and this is not an Architect accept."
+    "Writer 2 was withheld until independent Architect QA accepted Writer 1."
   ]
 }

@@ -80,7 +80,7 @@ test("rewritten service pages display each quote once and omit audit-memo public
   assert.match(home, /# Springfield garage door work backed by completed jobs/u);
 });
 
-test("claim-correction package is waiting-for-architect and does not self-accept", () => {
+test("independent Architect acceptance package records Writer 1 accept and Needs Josh Human Gate 2", () => {
   if (!existsSync(join(root, "canary/outputs/human-gate-2.md"))) return;
   const md = read("canary/outputs/human-gate-2.md");
   const qa1 = readJson("canary/runtime/architect-qa-writer1.json");
@@ -88,17 +88,32 @@ test("claim-correction package is waiting-for-architect and does not self-accept
   const whole = readJson("canary/runtime/whole-site-qa.json");
   const state = readJson("canary/runtime/state.json");
   const strategy = readJson("canary/outputs/writer3-output.json");
-  assert.equal(qa1.decision, "waiting-for-architect");
-  assert.equal(qa1.writer2Released, false);
-  assert.equal(qa2.decision, "waiting-for-architect");
-  assert.equal(whole.pass, false);
-  assert.equal(state.status, "waiting-for-architect");
-  assert.notEqual(state.writer2Blocked, false);
-  assert.match(md, /Architect QA Writer 1: \*\*waiting-for-architect\*\*/u);
-  assert.doesNotMatch(md, /Architect QA Writer 1: \*\*accept\*\*/u);
-  assert.doesNotMatch(md, /^State: awaiting-human-gate-2$/mu);
-  assert.match(String(strategy.strategyOverview.body), /waiting-for-architect/u);
-  assert.doesNotMatch(String(strategy.strategyOverview.body), /Architect QA accepted/u);
+  assert.equal(qa1.decision, "accept");
+  assert.equal(qa1.writer2Released, true);
+  assert.equal(qa1.rawArtifactApproved, false);
+  assert.equal(qa1.wordCountIsDiagnosticOnly, true);
+  assert.equal(qa1.independentArchitectAccepted, true);
+  assert.equal(qa1.acceptedRenderedWordsDigest, "sha256:3edce1acff28a00b3f0064664f8b1b4d2beab1a0a9fda5f92108442ce4d1460e");
+  assert.equal(qa2.decision, "accept");
+  assert.equal(qa2.freshAfterWriter1Accept, true);
+  assert.equal(qa2.priorPassRevoked, true);
+  assert.equal(whole.pass, true);
+  assert.equal(whole.freshAfterWriter1Accept, true);
+  assert.equal(state.status, "awaiting-human-gate-2");
+  assert.equal(state.humanFacingStatus, "Needs Josh — Human Gate 2");
+  assert.equal(state.writer2Blocked, false);
+  assert.equal(state.mergeOccurred, false);
+  assert.equal(state.deploymentOccurred, false);
+  assert.equal(state.rawApproved, false);
+  assert.match(md, /Architect QA Writer 1: \*\*accept\*\*/u);
+  assert.match(md, /^State: awaiting-human-gate-2$/mu);
+  assert.match(md, /Needs Josh — Human Gate 2/u);
+  assert.match(md, /Installation \*\*574\*\*/u);
+  assert.match(md, /evidence-limited/u);
+  assert.doesNotMatch(md, /Architect QA Writer 1: \*\*waiting-for-architect\*\*/u);
+  assert.match(String(strategy.strategyOverview.body), /Independent Architect QA accepted Writer 1/u);
+  assert.match(String(strategy.strategyOverview.body), /Needs Josh — Human Gate 2/u);
+  assert.doesNotMatch(String(strategy.strategyOverview.body), /This head is returned as waiting-for-architect/u);
 });
 
 test("corrected Writer1 JSON still validates against the sealed 360 projection", () => {
