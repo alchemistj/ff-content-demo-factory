@@ -605,7 +605,7 @@ export function writer1OutputDigests(value: unknown): { renderedWordsDigest: str
 export function writer1MetadataChangeDigest(beforeArtifactDigest: string, afterArtifactDigest: string, copyProjectionDigest: string): string {
   return digestOf({ beforeArtifactDigest, afterArtifactDigest, copyProjectionDigest });
 }
-async function readWriter1Artifact(input: { client: CursorArtifactClient; agentId: string; apiKey: string; validateOutput: (raw: string) => unknown }): Promise<{ output: unknown; artifact: CursorArtifactBinding }> {
+async function readWriter1Artifact(input: { client: CursorArtifactClient; agentId: string; apiKey: string; validateOutput?: (raw: string) => unknown }): Promise<{ output: unknown; raw: string; bytes: Buffer; artifact: CursorArtifactBinding }> {
   const descriptors = await input.client.list(input.agentId, input.apiKey);
   const matches = descriptors.filter((descriptor) => descriptor.path === "artifacts/writer1-output.json");
   if (matches.length > 1) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_RACE", "Cursor returned multiple artifacts at artifacts/writer1-output.json");
@@ -624,12 +624,14 @@ async function readWriter1Artifact(input: { client: CursorArtifactClient; agentI
   if (downloaded.bytes.length !== descriptor.size) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_SIZE_MISMATCH", "Cursor artifact size changed between listing and download");
   const sha256 = artifactSha256(downloaded.bytes);
   if (descriptor.sha256 && descriptor.sha256 !== sha256) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_DIGEST_MISMATCH", "Cursor artifact listing digest does not match downloaded bytes");
-  const output = input.validateOutput(downloaded.bytes.toString("utf8"));
-  return { output, artifact: { path: "artifacts/writer1-output.json", size: downloaded.bytes.length, sha256, contentSize: downloaded.bytes.length, byteDigest: sha256, ...(descriptor.updatedAt ? { updatedAt: descriptor.updatedAt } : {}), downloadRequest: expectedRequest, requestShapeDigest: downloaded.requestShapeDigest, downloadRequestDigest: downloaded.downloadRequestDigest, presignedUrlEvidence: downloaded.presignedUrlEvidence, presignedUrlEvidenceDigest: downloaded.presignedUrlEvidenceDigest } };
+  const raw = downloaded.bytes.toString("utf8");
+  const output = input.validateOutput ? input.validateOutput(raw) : raw;
+  return { output, raw, bytes: downloaded.bytes, artifact: { path: "artifacts/writer1-output.json", size: downloaded.bytes.length, sha256, contentSize: downloaded.bytes.length, byteDigest: sha256, ...(descriptor.updatedAt ? { updatedAt: descriptor.updatedAt } : {}), downloadRequest: expectedRequest, requestShapeDigest: downloaded.requestShapeDigest, downloadRequestDigest: downloaded.downloadRequestDigest, presignedUrlEvidence: downloaded.presignedUrlEvidence, presignedUrlEvidenceDigest: downloaded.presignedUrlEvidenceDigest } };
 }
 
 export interface CursorArtifactValidationReportInspection {
   raw: string;
+  rawBytes: Buffer;
   artifact: CursorArtifactBinding;
   parsed?: unknown;
   parseError?: string;
@@ -676,6 +678,7 @@ async function inspectCursorWriterArtifactV3Internal(input: CursorArtifactValida
   const before = input.previousRecoveryV3.beforeArtifact;
   return {
     raw,
+    rawBytes: recovered.bytes,
     artifact: recovered.artifact,
     ...(parsed === undefined ? {} : { parsed }),
     ...(parseError ? { parseError } : {}),
@@ -700,7 +703,7 @@ export async function inspectCursorWriterArtifactV3ForTest(input: CursorArtifact
 }
 
 const ARTIFACT_RECOVERY_EVENTUAL_CONSISTENCY_BACKOFF_MS = [1_000, 5_000, 15_000, 30_000, 60_000, 120_000] as const;
-async function readWriter1ArtifactWithBackoff(input: { client: CursorArtifactClient; agentId: string; apiKey: string; validateOutput: (raw: string) => unknown; sleep?: (milliseconds: number) => Promise<void>; backoffMs?: readonly number[] }): Promise<{ output: unknown; artifact: CursorArtifactBinding }> {
+async function readWriter1ArtifactWithBackoff(input: { client: CursorArtifactClient; agentId: string; apiKey: string; validateOutput?: (raw: string) => unknown; sleep?: (milliseconds: number) => Promise<void>; backoffMs?: readonly number[] }): Promise<{ output: unknown; raw: string; bytes: Buffer; artifact: CursorArtifactBinding }> {
   const sleep = input.sleep || ((milliseconds: number) => new Promise<void>((resolve) => setTimeout(resolve, milliseconds)));
   const backoffMs = input.backoffMs || ARTIFACT_RECOVERY_EVENTUAL_CONSISTENCY_BACKOFF_MS;
   for (let attempt = 0; ; attempt += 1) {

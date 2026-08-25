@@ -2,7 +2,7 @@ import { createHash } from "node:crypto";
 import { existsSync, readFileSync } from "node:fs";
 import * as fs from "node:fs/promises";
 import * as path from "node:path";
-import { createCursorWriterExecutor, createJsonCursorReceiptStore, finalizeCursorWriterArtifactV3, inspectCursorWriterArtifactV3, recoverCursorWriterArtifactV2, recoverCursorWriterArtifactV3, validateCursorArtifactRecoveryV2Receipt, validateCursorArtifactRecoveryV3FinalizeReceipt, validateCursorArtifactRecoveryV3Receipt, validateCursorWriterReceipt, WRITER1_WORD_KEYS, type CursorArtifactRecoveryFailureBinding, type CursorArtifactRecoveryPrior, type CursorArtifactRecoveryV2FailureBinding, type CursorArtifactRecoveryV3FailureBinding, type CursorDispatchNotice, type CursorFollowUpBindings, type CursorWriterReceipt } from "../src/pipeline/cursor-writer.js";
+import { createCursorWriterExecutor, createJsonCursorReceiptStore, finalizeCursorWriterArtifactV3, inspectCursorWriterArtifactV3, recoverCursorWriterArtifactV2, recoverCursorWriterArtifactV3, validateCursorArtifactRecoveryV2Receipt, validateCursorArtifactRecoveryV3FinalizeReceipt, validateCursorArtifactRecoveryV3Receipt, validateCursorWriterReceipt, WRITER1_WORD_KEYS, type CursorArtifactBinding, type CursorArtifactRecoveryFailureBinding, type CursorArtifactRecoveryPrior, type CursorArtifactRecoveryV2FailureBinding, type CursorArtifactRecoveryV3FailureBinding, type CursorDispatchNotice, type CursorFollowUpBindings, type CursorWriterReceipt } from "../src/pipeline/cursor-writer.js";
 import { digestOf } from "../src/contracts/digests.js";
 import { buildWriter1ArtifactRecoveryPrompt, digestWriter1ArtifactRecoveryPrompt } from "./360-words-recovery-prompt.mjs";
 
@@ -618,6 +618,88 @@ export function buildWriter1ValidationReport(input: {
   };
 }
 
+export interface Writer1QuarantineMetadata {
+  schemaVersion: "words-writer1-quarantine/v1";
+  status: "quarantined-invalid";
+  consumable: false;
+  approved: false;
+  completionAuthorized: false;
+  writer2Blocked: true;
+  authorship: "cursor-cloud-agent-artifact";
+  provider: "cursor-sdk";
+  requestedModel: "cursor-grok-4.6-high";
+  resolvedModel: "grok-4.6";
+  fast: false;
+  agentId: string;
+  runId: string;
+  threadUrl: string;
+  artifactPath: string;
+  quarantinedOutputPath: string;
+  metadataPath: string;
+  artifactByteDigest: string;
+  artifactSize: number;
+  artifactUpdatedAt: string | null;
+  artifactBinding: unknown;
+  validationReportPath: string;
+  errors: Writer1ValidationDiagnostic[];
+}
+
+export function buildWriter1QuarantineMetadata(input: {
+  prior: CursorArtifactRecoveryPrior;
+  artifact: CursorArtifactBinding;
+  errors: Writer1ValidationDiagnostic[];
+  quarantinedOutputPath?: string;
+  metadataPath?: string;
+  validationReportPath?: string;
+}): Writer1QuarantineMetadata {
+  const quarantinedOutputPath = input.quarantinedOutputPath || "canary/runtime/quarantine/writer1-output.json";
+  const metadataPath = input.metadataPath || "canary/runtime/quarantine/writer1-output.metadata.json";
+  return {
+    schemaVersion: "words-writer1-quarantine/v1",
+    status: "quarantined-invalid",
+    consumable: false,
+    approved: false,
+    completionAuthorized: false,
+    writer2Blocked: true,
+    authorship: "cursor-cloud-agent-artifact",
+    provider: "cursor-sdk",
+    requestedModel: "cursor-grok-4.6-high",
+    resolvedModel: "grok-4.6",
+    fast: false,
+    agentId: input.prior.agentId,
+    runId: input.prior.runId,
+    threadUrl: input.prior.threadUrl,
+    artifactPath: input.artifact.path,
+    quarantinedOutputPath,
+    metadataPath,
+    artifactByteDigest: input.artifact.byteDigest,
+    artifactSize: input.artifact.size,
+    artifactUpdatedAt: input.artifact.updatedAt || null,
+    artifactBinding: input.artifact,
+    validationReportPath: input.validationReportPath || "canary/runtime/writer1-validation-report.json",
+    errors: input.errors.map((error) => ({ ...error })),
+  };
+}
+
+export async function quarantineWriter1Artifact(root: string, rawBytes: Buffer, metadata: Writer1QuarantineMetadata): Promise<void> {
+  const outputFile = jsonFile(root, metadata.quarantinedOutputPath);
+  const metadataFile = jsonFile(root, metadata.metadataPath);
+  await fs.mkdir(path.dirname(outputFile), { recursive: true });
+  await fs.writeFile(outputFile, rawBytes);
+  await writeJson(metadataFile, metadata);
+}
+
+/** Writer2 may consume only an explicitly approved output; quarantined artifacts are never an implicit fallback. */
+export function readApprovedWriter1OutputForWriter2(root = process.cwd()): Dict {
+  const state = readJson(root, "canary/runtime/state.json");
+  if (state.status !== "writer1-approved-for-writer2" || state.writer2Blocked !== false) throw new Error("Writer2 cannot consume Writer1 output before independent approval");
+  const quarantineMetadata = jsonFile(root, "canary/runtime/quarantine/writer1-output.metadata.json");
+  if (existsSync(quarantineMetadata)) throw new Error("Writer2 cannot consume a quarantined Writer1 artifact");
+  const outputPath = jsonFile(root, "canary/outputs/writer1-output.json");
+  if (!existsSync(outputPath)) throw new Error("approved Writer1 output is missing");
+  return JSON.parse(readFileSync(outputPath, "utf8")) as Dict;
+}
+
 async function runArtifactValidationReport(root: string, control: Dict): Promise<{ status: string; stage: string }> {
   const promptDigest = validateV3FinalizeWakePins(control, "validation-report-only");
   if (process.env.CURSOR_MODEL !== "cursor-grok-4.6-high" || !process.env.CURSOR_API_KEY || process.env.CURSOR_FAST !== "false") throw new Error("Cursor production environment must provide exact model, API key, and fast=false");
@@ -671,6 +753,41 @@ async function runArtifactRecoveryV3Finalize(root: string, control: Dict): Promi
   const previousRecoveryV3: CursorArtifactRecoveryV3FailureBinding = { recoveryVersion: ARTIFACT_RECOVERY_V3_RECOVERY_VERSION, actionRunId: verified.actionRunId, artifactId: verified.artifactId, artifactDigest: verified.artifactDigest, sourceBranch: verified.sourceBranch, sourceSha: verified.sourceSha, agentId: verified.agentId, runId: verified.runId, threadUrl: verified.threadUrl, promptDigest: verified.promptDigest, failureCode: verified.failureCode, inputDigest: verified.inputDigest, beforeArtifact: verified.beforeArtifact, copyProjectionDigest: verified.copyProjectionDigest };
   await writeJson(jsonFile(root, "canary/runtime/prior-recovery-v3-verification.json"), { status: "verified", previousRecoveryV3 });
   await writeJson(jsonFile(root, "canary/runtime/state.json"), { status: "writer1-artifact-v3-finalize-validating", stage: "writer1", recoveryVersion: ARTIFACT_RECOVERY_V3_FINALIZE_RECOVERY_VERSION, runId: sealed.handoff.runId, sealedHandoffDigest: sealed.handoff.resealDigest, priorRunId: verified.prior.runId, priorAgentId: verified.prior.agentId, priorThreadUrl: verified.prior.threadUrl, nextStage: null, writer2Blocked: true, messagesSent: 0 });
+  // Validation-only finalization inspects the opaque Cursor artifact before the receipt path. This
+  // is deliberately list/download-only: invalid bytes are quarantined and never enter outputs.
+  let inspection: Awaited<ReturnType<typeof inspectCursorWriterArtifactV3>>;
+  try {
+    inspection = await inspectCursorWriterArtifactV3({ prior: verified.prior, previousRecoveryV3, promptDigest });
+  } catch (error) {
+    throw error;
+  }
+  const errors: Writer1ValidationDiagnostic[] = [];
+  if (inspection.stale) errors.push({ code: "ARTIFACT_STALE", path: "/artifact", objectKind: "artifact", expectedRule: "current Cursor artifact must differ from the pinned pre-repair artifact by digest or update time" });
+  if (inspection.artifact.byteDigest !== ARTIFACT_RECOVERY_V3_FINALIZE_CURRENT_ARTIFACT_DIGEST) errors.push({ code: "ARTIFACT_DIGEST_UNEXPECTED", path: "/artifact/byteDigest", objectKind: "artifact", expectedRule: "artifact byte digest must equal the pinned current Cursor artifact digest" });
+  if (inspection.artifact.updatedAt !== ARTIFACT_RECOVERY_V3_FINALIZE_CURRENT_ARTIFACT_UPDATED_AT) errors.push({ code: "ARTIFACT_UPDATED_AT_UNEXPECTED", path: "/artifact/updatedAt", objectKind: "artifact", expectedRule: "artifact updatedAt must equal the pinned current Cursor artifact update time" });
+  errors.push(...collectWriter1ValidationDiagnostics(inspection.raw, payload));
+  if (errors.length > 0) {
+    const report = buildWriter1ValidationReport({
+      artifactPath: inspection.artifact.path,
+      artifactByteDigest: inspection.artifact.byteDigest,
+      artifactSize: inspection.artifact.size,
+      artifactUpdatedAt: inspection.artifact.updatedAt || null,
+      copyProjectionDigest: inspection.copyProjectionDigest || null,
+      renderedWordsDigest: inspection.renderedWordsDigest || null,
+      stableIdentityDigest: inspection.stableIdentityDigest || null,
+      provenanceMetadataDigest: inspection.provenanceMetadataDigest || null,
+      frozenCopyProjectionDigest: previousRecoveryV3.copyProjectionDigest,
+      projectionDigest: digestOf(payload),
+      errors,
+    });
+    await writeJson(jsonFile(root, "canary/runtime/writer1-validation-report.json"), report);
+    const quarantineMetadata = buildWriter1QuarantineMetadata({ prior: verified.prior, artifact: inspection.artifact, errors });
+    await quarantineWriter1Artifact(root, inspection.rawBytes, quarantineMetadata);
+    await writeJson(jsonFile(root, "canary/runtime/state.json"), { status: "writer1-validation-failed-quarantined", stage: "writer1", recoveryVersion: ARTIFACT_RECOVERY_V3_FINALIZE_RECOVERY_VERSION, runId: sealed.handoff.runId, priorRunId: verified.prior.runId, priorAgentId: verified.prior.agentId, priorThreadUrl: verified.prior.threadUrl, artifactByteDigest: inspection.artifact.byteDigest, quarantinePath: quarantineMetadata.quarantinedOutputPath, quarantineMetadataPath: quarantineMetadata.metadataPath, validationReportPath: quarantineMetadata.validationReportPath, errorCode: "WRITER1_OUTPUT_INVALID", nextStage: null, writer2Blocked: true, messagesSent: 0 });
+    const failure = new Error("validation-only Writer1 artifact failed; complete bytes quarantined and no receipt/output was persisted");
+    (failure as Error & { code?: string }).code = "WRITER1_OUTPUT_INVALID";
+    throw failure;
+  }
   const result = await finalizeCursorWriterArtifactV3({ receiptStore: createJsonCursorReceiptStore(jsonFile(root, "canary/runtime/cursor-receipts.json")), prior: verified.prior, previousRecoveryV3, recoveryVersion: ARTIFACT_RECOVERY_V3_FINALIZE_RECOVERY_VERSION, promptDigest, expectedCurrentArtifactByteDigest: ARTIFACT_RECOVERY_V3_FINALIZE_CURRENT_ARTIFACT_DIGEST, expectedCurrentArtifactUpdatedAt: ARTIFACT_RECOVERY_V3_FINALIZE_CURRENT_ARTIFACT_UPDATED_AT, validateOutput: (output) => parseAndValidateWriter1Output(output, payload) });
   const parsed = result.output as Dict;
   validateCursorArtifactRecoveryV3FinalizeReceipt(result.receipt, verified.prior, previousRecoveryV3, promptDigest, process.env.CURSOR_API_KEY, ARTIFACT_RECOVERY_V3_FINALIZE_CURRENT_ARTIFACT_DIGEST, ARTIFACT_RECOVERY_V3_FINALIZE_CURRENT_ARTIFACT_UPDATED_AT);
@@ -754,8 +871,11 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     const code = isRecord(error) && typeof error.code === "string" ? error.code : "WRITER1_CORRECTION_FAILED";
     const message = error instanceof Error ? error.message : String(error);
     const recovery = code === "OUTPUT_NOT_RECOVERABLE";
-    await writeJson(path.join(process.cwd(), "canary/runtime/failure.json"), { status: "failed", stage: "writer1", errorCode: code, error: message, writer2Blocked: true, ...(recovery ? { recovery: "manual-architect-recovery-required" } : {}) });
-    await writeJson(path.join(process.cwd(), "canary/runtime/state.json"), { status: recovery ? "writer1-output-not-recoverable" : "writer1-failed", stage: "writer1", errorCode: code, recoveryRequired: true, writer2Blocked: true, nextStage: null });
+    const quarantineMetadataPath = path.join(process.cwd(), "canary/runtime/quarantine/writer1-output.metadata.json");
+    const quarantined = existsSync(quarantineMetadataPath);
+    const quarantine = quarantined ? JSON.parse(readFileSync(quarantineMetadataPath, "utf8")) as Dict : undefined;
+    await writeJson(path.join(process.cwd(), "canary/runtime/failure.json"), { status: "failed", stage: "writer1", errorCode: code, error: message, writer2Blocked: true, ...(quarantined ? { statusDetail: "writer1-validation-failed-quarantined", quarantine } : {}), ...(recovery ? { recovery: "manual-architect-recovery-required" } : {}) });
+    await writeJson(path.join(process.cwd(), "canary/runtime/state.json"), quarantined ? { status: "writer1-validation-failed-quarantined", stage: "writer1", errorCode: code, recoveryRequired: true, writer2Blocked: true, nextStage: null, quarantinePath: quarantine?.quarantinedOutputPath, quarantineMetadataPath: quarantine?.metadataPath, validationReportPath: quarantine?.validationReportPath, artifactByteDigest: quarantine?.artifactByteDigest, messagesSent: 0 } : { status: recovery ? "writer1-output-not-recoverable" : "writer1-failed", stage: "writer1", errorCode: code, recoveryRequired: true, writer2Blocked: true, nextStage: null });
     process.exitCode = 1;
   });
 }

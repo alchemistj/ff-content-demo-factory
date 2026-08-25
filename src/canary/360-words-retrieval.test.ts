@@ -1,7 +1,10 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { buildWriter1ValidationReport, collectWriter1ValidationDiagnostics, parseAndValidateFreshWriter1Output, parseAndValidateWriter1Output, validateSealed, writer1Projection, Writer1OutputRecoveryError } from "../../scripts/360-words-canary.js";
-import { WRITER1_WORD_KEYS } from "../../src/pipeline/cursor-writer.js";
+import { mkdtemp, mkdir, rm, writeFile } from "node:fs/promises";
+import { tmpdir } from "node:os";
+import { join } from "node:path";
+import { buildWriter1QuarantineMetadata, buildWriter1ValidationReport, collectWriter1ValidationDiagnostics, parseAndValidateFreshWriter1Output, parseAndValidateWriter1Output, readApprovedWriter1OutputForWriter2, quarantineWriter1Artifact, validateSealed, writer1Projection, Writer1OutputRecoveryError } from "../../scripts/360-words-canary.js";
+import { WRITER1_WORD_KEYS, type CursorArtifactBinding } from "../../src/pipeline/cursor-writer.js";
 
 const projection = {
   services: [
@@ -105,6 +108,45 @@ test("collect-all Writer1 diagnostics shares strict parity, reports every seeded
   assert.equal(report.writer2Blocked, true);
   assert.equal("output" in report, false);
   assert.equal("receipt" in report, false);
+});
+
+test("invalid Writer1 bytes are quarantined with safe current-artifact authorship and never become an approved receipt", async () => {
+  const root = await mkdtemp(join(tmpdir(), "ff-writer1-quarantine-"));
+  try {
+    const rawBytes = Buffer.from(JSON.stringify({ summary: "invalid" }), "utf8");
+    const artifact = {
+      path: "artifacts/writer1-output.json" as const,
+      size: rawBytes.length,
+      sha256: "sha256:" + "a".repeat(64),
+      contentSize: rawBytes.length,
+      byteDigest: "sha256:" + "a".repeat(64),
+      updatedAt: "2026-08-25T01:33:20.000Z",
+      downloadRequest: { agentId: "bc-30fc8ffa-2005-44b9-8fc7-48ddd9c3bcc8", logicalPath: "artifacts/writer1-output.json" as const, cursorEndpoint: "https://api.cursor.com/v1/agents/bc-30fc8ffa-2005-44b9-8fc7-48ddd9c3bcc8/artifacts/download?path=artifacts%2Fwriter1-output.json", method: "GET" as const, apiVersion: "cloud-agent-api-v1" as const },
+      requestShapeDigest: "sha256:" + "b".repeat(64), downloadRequestDigest: "sha256:" + "c".repeat(64),
+      presignedUrlEvidence: { scheme: "https" as const, host: "s3.us-east-1.amazonaws.com", pathname: "/opaque/object", queryParameterNames: ["X-Amz-Algorithm", "X-Amz-Signature"] },
+      presignedUrlEvidenceDigest: "sha256:" + "d".repeat(64),
+    } as CursorArtifactBinding;
+    const errors = [{ code: "REVIEW_EVIDENCE_CLAIM_TEXT_DUPLICATE", path: "/pages/0/reviewEvidence/0/text", objectKind: "reviewEvidence", expectedRule: "typed pointer ledger" }, { code: "CLAIM_TEXT_MISSING", path: "/pages/0/claims/0", objectKind: "claims", expectedRule: "claim text required" }];
+    const prior = { agentId: artifact.downloadRequest.agentId, runId: "run-47a109e2-4fd4-48df-a727-8a92a76cc472", threadUrl: `https://cursor.com/agents/${artifact.downloadRequest.agentId}` } as any;
+    const metadata = buildWriter1QuarantineMetadata({ prior, artifact, errors });
+    await quarantineWriter1Artifact(root, rawBytes, metadata);
+    await mkdir(join(root, "canary/runtime"), { recursive: true });
+    await writeFile(join(root, "canary/runtime/state.json"), JSON.stringify({ status: metadata.status, writer2Blocked: true }));
+    const quarantined = await import("node:fs/promises").then((fs) => fs.readFile(join(root, metadata.quarantinedOutputPath)));
+    assert.deepEqual(quarantined, rawBytes);
+    assert.equal(metadata.consumable, false);
+    assert.equal(metadata.approved, false);
+    assert.equal(metadata.writer2Blocked, true);
+    assert.deepEqual(metadata.errors, errors);
+    assert.doesNotMatch(JSON.stringify(metadata), /CURSOR_API_KEY|X-Amz-Signature=|X-Amz-Credential=|signature=[^"&]/u);
+    assert.throws(() => readApprovedWriter1OutputForWriter2(root), /cannot consume|approval/u);
+    assert.equal(metadata.quarantinedOutputPath, "canary/runtime/quarantine/writer1-output.json");
+    const binding = metadata.artifactBinding as CursorArtifactBinding;
+    assert.equal(binding.downloadRequest.logicalPath, "artifacts/writer1-output.json");
+    assert.equal(binding.downloadRequest.cursorEndpoint.startsWith("https://api.cursor.com/"), true);
+  } finally {
+    await rm(root, { recursive: true, force: true });
+  }
 });
 
 test("fresh Writer1 rejects summaries, absent copy, route leakage, and missing provenance before completion", () => {
