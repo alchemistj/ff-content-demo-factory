@@ -121,7 +121,7 @@ jobs:
             comment_url="$(node -e "process.stdout.write(JSON.parse(process.argv[1]).html_url)" "$prior")"
             echo "idempotent_existing_comment=$comment_url"
           else
-            { cat "$COMMENT_FILE"; printf 'Dispatch workflow run: %s\\n' "$GITHUB_RUN_ID"; } > canary/outputs/cursor-dispatch.post.md
+            { cat "$COMMENT_FILE"; printf 'Handoff ID: %s\\nPhase-A run: %s\\nDispatch workflow run: %s\\n' "$key" "$GITHUB_RUN_ID" "$GITHUB_RUN_ID"; } > canary/outputs/cursor-dispatch.post.md
             response="$(GH_TOKEN="$GH_TOKEN" gh api "repos/$GITHUB_REPOSITORY/issues/$PR_NUMBER/comments" --method POST -f body="$(cat canary/outputs/cursor-dispatch.post.md)")"
             comment_id="$(node -e "process.stdout.write(String(JSON.parse(process.argv[1]).id))" "$response")"
             comment_url="$(node -e "process.stdout.write(JSON.parse(process.argv[1]).html_url)" "$response")"
