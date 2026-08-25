@@ -70,6 +70,7 @@ jobs:
         run: node src/dispatch-cursor-cloud-agent.js
       - name: Claim durable GitHub ledger before connector dispatch
         env:
+          GH_TOKEN: ${{ github.token }}
           DISPATCH_FILE: canary/outputs/cursor-dispatch.json
           ISSUE_NUMBER: ${{ inputs.issue_number }}
           PR_NUMBER: ${{ inputs.pr_number }}
@@ -79,13 +80,15 @@ jobs:
         run: |
           handoff_key="$(node -e "const fs=require('node:fs');process.stdout.write(JSON.parse(fs.readFileSync(process.env.DISPATCH_FILE,'utf8')).dispatchKey)")"
           dispatch_digest="$(node -e "const fs=require('node:fs');process.stdout.write(JSON.parse(fs.readFileSync(process.env.DISPATCH_FILE,'utf8')).dispatchDigest)")"
-          comments="$(gh api --paginate "repos/$REPOSITORY/issues/$ISSUE_NUMBER/comments?per_page=100")"
+          test -n "$GH_TOKEN"
+          comments="$(GH_TOKEN="$GH_TOKEN" gh api --paginate "repos/$REPOSITORY/issues/$ISSUE_NUMBER/comments?per_page=100")"
           LEDGER_COMMENTS="$comments" HANDOFF_KEY="$handoff_key" DISPATCH_DIGEST="$dispatch_digest" REPOSITORY="$REPOSITORY" ISSUE_NUMBER="$ISSUE_NUMBER" PR_NUMBER="$PR_NUMBER" BRANCH="$BRANCH" HEAD_SHA="$REVIEWED_HEAD_SHA" node - <<'NODE'
           const fs = require('node:fs'); const { markerFor, markerBody, findClaim } = require('./src/factory/github-ledger');
           const comments = JSON.parse(process.env.LEDGER_COMMENTS);
-          const expected = { repository: process.env.REPOSITORY, issueNumber: process.env.ISSUE_NUMBER, kind: 'dispatch', handoffId: process.env.HANDOFF_KEY, dispatchKey: process.env.HANDOFF_KEY, resultId: process.env.DISPATCH_DIGEST };
-          if (findClaim(comments, expected)) { fs.appendFileSync(process.env.GITHUB_ENV, 'FACTORY_LEDGER_ALREADY_CLAIMED=true\n'); process.exit(0); }
-          const marker = markerFor({ kind: 'dispatch', repository: process.env.REPOSITORY, issueNumber: process.env.ISSUE_NUMBER, prNumber: process.env.PR_NUMBER, branch: process.env.BRANCH, checkedOutSha: process.env.HEAD_SHA, handoffId: process.env.HANDOFF_KEY, dispatchKey: process.env.HANDOFF_KEY, resultId: process.env.DISPATCH_DIGEST });
+          const expected = { repository: process.env.REPOSITORY, issueNumber: process.env.ISSUE_NUMBER, prNumber: process.env.PR_NUMBER, branch: process.env.BRANCH, checkedOutSha: process.env.HEAD_SHA, kind: 'dispatch', handoffId: process.env.HANDOFF_KEY, dispatchKey: process.env.HANDOFF_KEY, dispatchDigest: process.env.DISPATCH_DIGEST, resultId: process.env.DISPATCH_DIGEST };
+          const claim = findClaim(comments, expected);
+          if (claim && ['posted', 'in_motion', 'terminal', 'resumed'].includes(claim.status)) { fs.appendFileSync(process.env.GITHUB_ENV, 'FACTORY_LEDGER_ALREADY_CLAIMED=true\n'); process.exit(0); }
+          const marker = markerFor({ kind: 'dispatch', repository: process.env.REPOSITORY, issueNumber: process.env.ISSUE_NUMBER, prNumber: process.env.PR_NUMBER, branch: process.env.BRANCH, checkedOutSha: process.env.HEAD_SHA, handoffId: process.env.HANDOFF_KEY, dispatchKey: process.env.HANDOFF_KEY, dispatchDigest: process.env.DISPATCH_DIGEST, resultId: process.env.DISPATCH_DIGEST, status: 'preparing' });
           fs.writeFileSync('canary/outputs/cursor-ledger-marker.md', markerBody(marker));
           NODE
       - name: Publish durable dispatch ledger marker
@@ -93,7 +96,9 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
           ISSUE_NUMBER: ${{ inputs.issue_number }}
-        run: gh api "repos/$GITHUB_REPOSITORY/issues/$ISSUE_NUMBER/comments" --method POST -f body="$(cat canary/outputs/cursor-ledger-marker.md)"
+        run: |
+          test -n "$GH_TOKEN"
+          GH_TOKEN="$GH_TOKEN" gh api "repos/$GITHUB_REPOSITORY/issues/$ISSUE_NUMBER/comments" --method POST -f body="$(cat canary/outputs/cursor-ledger-marker.md)"
       - name: Post and record immutable connector-native @cursor dispatch
         if: env.FACTORY_LEDGER_ALREADY_CLAIMED != 'true'
         env:
@@ -104,15 +109,44 @@ jobs:
         run: |
           digest="$(node -e "const fs=require('node:fs');process.stdout.write(JSON.parse(fs.readFileSync(process.env.DISPATCH_FILE,'utf8')).dispatchDigest)")"
           key="$(node -e "const fs=require('node:fs');process.stdout.write(JSON.parse(fs.readFileSync(process.env.DISPATCH_FILE,'utf8')).dispatchKey)")"
-          prior="$(gh api --paginate "repos/$GITHUB_REPOSITORY/issues/$ISSUE_NUMBER/comments?per_page=100" --jq '.[] | [.html_url, .body] | @tsv' | awk -v digest="$digest" -v key="$key" 'index($0, digest) || index($0, key) {print $1; exit}')"
+          test -n "$GH_TOKEN"
+          comments="$(GH_TOKEN="$GH_TOKEN" gh api --paginate "repos/$GITHUB_REPOSITORY/issues/$ISSUE_NUMBER/comments?per_page=100")"
+          prior="$(printf '%s' "$comments" | jq -r --arg digest "$digest" --arg key "$key" '.[] | select(.body | startswith("@cursor")) | select((.body | contains($digest)) and (.body | contains($key))) | [.id, .html_url] | @tsv' | tail -1)"
           if [ -n "$prior" ]; then
-            comment_url="$prior"
+            comment_id="$(printf '%s' "$prior" | cut -f1)"
+            comment_url="$(printf '%s' "$prior" | cut -f2)"
             echo "idempotent_existing_comment=$comment_url"
           else
             { cat "$COMMENT_FILE"; printf 'Dispatch workflow run: %s\\n' "$GITHUB_RUN_ID"; } > canary/outputs/cursor-dispatch.post.md
-            comment_url="$(gh api "repos/$GITHUB_REPOSITORY/issues/$ISSUE_NUMBER/comments" --method POST -f body="$(cat canary/outputs/cursor-dispatch.post.md)" --jq .html_url)"
+            response="$(GH_TOKEN="$GH_TOKEN" gh api "repos/$GITHUB_REPOSITORY/issues/$ISSUE_NUMBER/comments" --method POST -f body="$(cat canary/outputs/cursor-dispatch.post.md)")"
+            comment_id="$(printf '%s' "$response" | jq -r .id)"
+            comment_url="$(printf '%s' "$response" | jq -r .html_url)"
           fi
-          COMMENT_URL="$comment_url" DISPATCH_FILE="$DISPATCH_FILE" node -e "const fs=require('node:fs');const p=JSON.parse(fs.readFileSync(process.env.DISPATCH_FILE,'utf8'));p.commentUrl=process.env.COMMENT_URL;fs.writeFileSync(process.env.DISPATCH_FILE,JSON.stringify(p,null,2)+'\\n')"
+          test -n "$comment_id"; test -n "$comment_url"
+          echo "FACTORY_DISPATCH_COMMENT_ID=$comment_id" >> "$GITHUB_ENV"
+          echo "FACTORY_DISPATCH_COMMENT_URL=$comment_url" >> "$GITHUB_ENV"
+          COMMENT_URL="$comment_url" COMMENT_ID="$comment_id" DISPATCH_FILE="$DISPATCH_FILE" node -e "const fs=require('node:fs');const p=JSON.parse(fs.readFileSync(process.env.DISPATCH_FILE,'utf8'));p.commentId=process.env.COMMENT_ID;p.commentUrl=process.env.COMMENT_URL;fs.writeFileSync(process.env.DISPATCH_FILE,JSON.stringify(p,null,2)+'\\n')"
+      - name: Record posted ledger state after authoritative @cursor identity
+        if: env.FACTORY_LEDGER_ALREADY_CLAIMED != 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE_NUMBER: ${{ inputs.issue_number }}
+          DISPATCH_FILE: canary/outputs/cursor-dispatch.json
+          COMMENT_ID: ${{ env.FACTORY_DISPATCH_COMMENT_ID }}
+          COMMENT_URL: ${{ env.FACTORY_DISPATCH_COMMENT_URL }}
+          REPOSITORY: ${{ github.repository }}
+          PR_NUMBER: ${{ inputs.pr_number }}
+          BRANCH: ${{ inputs.branch }}
+          HEAD_SHA: ${{ inputs.reviewed_head_sha }}
+        run: |
+          test -n "$GH_TOKEN"
+          node - <<'NODE'
+          const fs=require('node:fs'); const { markerFor, markerBody }=require('./src/factory/github-ledger');
+          const p=JSON.parse(fs.readFileSync(process.env.DISPATCH_FILE,'utf8'));
+          const marker=markerFor({kind:'dispatch',repository:process.env.REPOSITORY,issueNumber:process.env.ISSUE_NUMBER,prNumber:process.env.PR_NUMBER,branch:process.env.BRANCH,checkedOutSha:process.env.HEAD_SHA,handoffId:p.dispatchKey,dispatchKey:p.dispatchKey,dispatchDigest:p.dispatchDigest,resultId:p.dispatchDigest,commentId:process.env.COMMENT_ID,commentUrl:process.env.COMMENT_URL,status:'posted'});
+          fs.writeFileSync('canary/outputs/cursor-ledger-posted.md',markerBody(marker));
+          NODE
+          GH_TOKEN="$GH_TOKEN" gh api "repos/$REPOSITORY/issues/$ISSUE_NUMBER/comments" --method POST -f body="$(cat canary/outputs/cursor-ledger-posted.md)"
       - name: Upload dispatch packet receipt
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
@@ -166,7 +200,8 @@ jobs:
           pr_number="$(node -e "const fs=require('node:fs');process.stdout.write(String(JSON.parse(fs.readFileSync(process.env.DISPATCH_FILE,'utf8')).prNumber))")"
           branch="$(node -e "const fs=require('node:fs');process.stdout.write(JSON.parse(fs.readFileSync(process.env.DISPATCH_FILE,'utf8')).branch)")"
           head_sha="$(node -e "const fs=require('node:fs');process.stdout.write(JSON.parse(fs.readFileSync('canary/phase-a/pending.checked.json','utf8')).envelope.checkedOutSha)")"
-          comments="$(gh api --paginate "repos/$REPOSITORY/issues/$issue_number/comments?per_page=100")"
+          test -n "$GH_TOKEN"
+          comments="$(GH_TOKEN="$GH_TOKEN" gh api --paginate "repos/$REPOSITORY/issues/$issue_number/comments?per_page=100")"
           LEDGER_COMMENTS="$comments" HANDOFF_KEY="$handoff_key" HANDOFF_ID="$handoff_id" DISPATCH_DIGEST="$dispatch_digest" REPOSITORY="$REPOSITORY" ISSUE_NUMBER="$issue_number" PR_NUMBER="$pr_number" BRANCH="$branch" HEAD_SHA="$head_sha" node - <<'NODE'
           const fs = require('node:fs'); const { markerFor, markerBody, findClaim } = require('./src/factory/github-ledger');
           const comments = JSON.parse(process.env.LEDGER_COMMENTS); const expected = { repository: process.env.REPOSITORY, issueNumber: process.env.ISSUE_NUMBER, kind: 'dispatch', handoffId: process.env.HANDOFF_ID, dispatchKey: process.env.HANDOFF_KEY, resultId: process.env.DISPATCH_DIGEST };
@@ -179,20 +214,44 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           DISPATCH_FILE: canary/phase-a/cursor-dispatch.json
         run: |
+          test -n "$GH_TOKEN"
           ISSUE_NUMBER="$(node -e "const fs=require('node:fs');process.stdout.write(String(JSON.parse(fs.readFileSync(process.env.DISPATCH_FILE,'utf8')).issueNumber))")"
-          gh api "repos/$GITHUB_REPOSITORY/issues/$ISSUE_NUMBER/comments" --method POST -f body="$(cat canary/phase-a/cursor-ledger-marker.md)"
+          GH_TOKEN="$GH_TOKEN" gh api "repos/$GITHUB_REPOSITORY/issues/$ISSUE_NUMBER/comments" --method POST -f body="$(cat canary/phase-a/cursor-ledger-marker.md)"
       - name: Post exactly once using durable dispatch CAS
         if: env.FACTORY_LEDGER_ALREADY_CLAIMED != 'true'
         env:
           GH_TOKEN: ${{ github.token }}
           DISPATCH_FILE: canary/phase-a/cursor-dispatch.json
         run: |
+          test -n "$GH_TOKEN"
           ISSUE_NUMBER="$(node -e "const fs=require('node:fs');process.stdout.write(String(JSON.parse(fs.readFileSync(process.env.DISPATCH_FILE,'utf8')).issueNumber))")"
           digest="$(node -e "const fs=require('node:fs');process.stdout.write(JSON.parse(fs.readFileSync(process.env.DISPATCH_FILE,'utf8')).dispatchDigest)")"
           key="$(node -e "const fs=require('node:fs');process.stdout.write(JSON.parse(fs.readFileSync(process.env.DISPATCH_FILE,'utf8')).dispatchKey)")"
-          prior="$(gh api --paginate "repos/$GITHUB_REPOSITORY/issues/$ISSUE_NUMBER/comments?per_page=100" --jq '.[] | [.html_url, .body] | @tsv' | awk -v digest="$digest" -v key="$key" 'index($0, digest) || index($0, key) {print $1; exit}')"
-          if [ -n "$prior" ]; then comment_url="$prior"; else comment_url="$(gh api "repos/$GITHUB_REPOSITORY/issues/$ISSUE_NUMBER/comments" --method POST -f body="$(cat canary/phase-a/cursor-dispatch.comment.md)" --jq .html_url)"; fi
+          comments="$(GH_TOKEN="$GH_TOKEN" gh api --paginate "repos/$GITHUB_REPOSITORY/issues/$ISSUE_NUMBER/comments?per_page=100")"
+          prior="$(printf '%s' "$comments" | jq -r --arg digest "$digest" --arg key "$key" '.[] | select(.body | startswith("@cursor")) | select((.body | contains($digest)) and (.body | contains($key))) | [.id, .html_url] | @tsv' | tail -1)"
+          if [ -n "$prior" ]; then comment_id="$(printf '%s' "$prior" | cut -f1)"; comment_url="$(printf '%s' "$prior" | cut -f2)"; else response="$(GH_TOKEN="$GH_TOKEN" gh api "repos/$GITHUB_REPOSITORY/issues/$ISSUE_NUMBER/comments" --method POST -f body="$(cat canary/phase-a/cursor-dispatch.comment.md)")"; comment_id="$(printf '%s' "$response" | jq -r .id)"; comment_url="$(printf '%s' "$response" | jq -r .html_url)"; fi
+          test -n "$comment_id"; test -n "$comment_url"
+          echo "FACTORY_DISPATCH_COMMENT_ID=$comment_id" >> "$GITHUB_ENV"
+          echo "FACTORY_DISPATCH_COMMENT_URL=$comment_url" >> "$GITHUB_ENV"
           COMMENT_URL="$comment_url" DISPATCH_FILE="$DISPATCH_FILE" node -e "const fs=require('node:fs');const p=JSON.parse(fs.readFileSync(process.env.DISPATCH_FILE,'utf8'));p.commentUrl=process.env.COMMENT_URL;fs.writeFileSync(process.env.DISPATCH_FILE,JSON.stringify(p,null,2)+'\\n')"
+      - name: Record automatic posted ledger state
+        if: env.FACTORY_LEDGER_ALREADY_CLAIMED != 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          DISPATCH_FILE: canary/phase-a/cursor-dispatch.json
+          COMMENT_ID: ${{ env.FACTORY_DISPATCH_COMMENT_ID }}
+          COMMENT_URL: ${{ env.FACTORY_DISPATCH_COMMENT_URL }}
+          REPOSITORY: ${{ github.repository }}
+        run: |
+          test -n "$GH_TOKEN"
+          ISSUE_NUMBER="$(node -e "process.stdout.write(String(JSON.parse(require('fs').readFileSync(process.env.DISPATCH_FILE,'utf8')).issueNumber))")"
+          node - <<'NODE'
+          const fs=require('node:fs'); const { markerFor, markerBody }=require('./src/factory/github-ledger');
+          const p=JSON.parse(fs.readFileSync(process.env.DISPATCH_FILE,'utf8')); const pending=JSON.parse(fs.readFileSync('canary/phase-a/pending.checked.json','utf8'));
+          const marker=markerFor({kind:'dispatch',repository:process.env.REPOSITORY,issueNumber:p.issueNumber,prNumber:p.prNumber,branch:p.branch,checkedOutSha:pending.envelope.checkedOutSha,handoffId:pending.handoffId,dispatchKey:p.dispatchKey,dispatchDigest:p.dispatchDigest,resultId:p.dispatchDigest,commentId:process.env.COMMENT_ID,commentUrl:process.env.COMMENT_URL,status:'posted'});
+          fs.writeFileSync('canary/phase-a/cursor-ledger-posted.md',markerBody(marker));
+          NODE
+          GH_TOKEN="$GH_TOKEN" gh api "repos/$REPOSITORY/issues/$ISSUE_NUMBER/comments" --method POST -f body="$(cat canary/phase-a/cursor-ledger-posted.md)"
       - name: Upload automatic dispatch receipt
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
