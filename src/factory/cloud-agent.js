@@ -29,8 +29,14 @@ function validateDispatchPacket(packet) {
   required(packet.prNumber, 'dispatch PR number');
   required(packet.branch, 'dispatch branch');
   required(packet.reviewedHeadSha, 'dispatch reviewed head');
+  required(packet.repository, 'dispatch repository');
   if (!String(packet.commentBody || '').startsWith('@cursor')) throw new Error('Cloud Agent dispatch must be an @cursor GitHub comment');
   validateModelAttestation(packet.model);
+  const lines = String(packet.commentBody).split(/\r?\n/);
+  const lineValue = (name) => lines.find((line) => line.startsWith(`${name}:`))?.slice(name.length + 1).trim();
+  if (lineValue('Issue') !== `#${packet.issueNumber}` || lineValue('PR') !== `#${packet.prNumber}` || lineValue('Branch') !== String(packet.branch) || lineValue('Reviewed head') !== String(packet.reviewedHeadSha)) throw new Error('Cloud Agent dispatch comment target is mismatched');
+  const expected = digest({ issueNumber: packet.issueNumber, prNumber: packet.prNumber, branch: packet.branch, reviewedHeadSha: packet.reviewedHeadSha, scope: packet.scope, model: packet.model, commentBody: packet.commentBody, repository: packet.repository });
+  if (packet.dispatchDigest !== expected) throw new Error('Cloud Agent dispatch digest is invented or stale');
   return packet;
 }
 
@@ -54,21 +60,24 @@ function validateJobReceipt(receipt, { kind, expectedEnvelope }) {
   return { ...receipt, threadUrl: canonicalThreadUrl(receipt.threadUrl) };
 }
 
-function validateBundle(bundle, { expectedHeadSha, inputManifestDigest, dispatch }) {
+function validateBundle(bundle, { expectedHeadSha, inputManifestDigest, dispatch, repository = 'alchemistj/ff-content-demo-factory' }) {
   if (!bundle || bundle.schemaVersion !== 'cursor-cloud-agent-bundle-v1') throw new Error('Canary requires a trusted Cursor Cloud Agent bundle');
   validateModelAttestation(bundle.model);
   validateDispatchPacket(bundle.dispatch);
-  if (!/^https:\/\/github\.com\/[^/]+\/[^/]+\/issues\/\d+#issuecomment-\d+$/.test(String(bundle.dispatch.commentUrl || ''))) throw new Error('Cloud Agent bundle is missing the GitHub @cursor dispatch comment receipt');
+  if (bundle.dispatch.repository !== repository) throw new Error('Cloud Agent dispatch repository is foreign');
+  if (!new RegExp(`^https://github\\.com/${repository.split('/').map((part) => part.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('\\/')}/issues/${dispatch.issueNumber}#issuecomment-\\d+$`).test(String(bundle.dispatch.commentUrl || ''))) throw new Error('Cloud Agent bundle comment URL is foreign or missing');
   if (bundle.dispatch.issueNumber !== dispatch.issueNumber || bundle.dispatch.prNumber !== dispatch.prNumber || bundle.dispatch.branch !== dispatch.branch || bundle.dispatch.reviewedHeadSha !== expectedHeadSha) throw new Error('Cloud Agent dispatch target is stale or mismatched');
   if (bundle.inputManifestDigest !== inputManifestDigest) throw new Error('Cloud Agent bundle input manifest digest mismatch');
   if (!bundle.envelope || bundle.envelope.checkedOutSha !== expectedHeadSha || bundle.envelope.inputManifestDigest !== inputManifestDigest) throw new Error('Cloud Agent bundle immutable envelope is missing or mismatched');
   return bundle;
 }
 
-function createDispatchPacket({ issueNumber, prNumber, branch, reviewedHeadSha, scope }) {
+function createDispatchPacket({ issueNumber, prNumber, branch, reviewedHeadSha, scope, repository = 'alchemistj/ff-content-demo-factory' }) {
   const model = { alias: CURSOR_ALIAS, requestedModel: CURSOR_MODEL, resolvedModel: CURSOR_MODEL, fastOff: true, fast: false };
   const commentBody = `@cursor\nIssue: #${issueNumber}\nPR: #${prNumber}\nBranch: ${branch}\nReviewed head: ${reviewedHeadSha}\nScope: ${scope}\nModel: Grok 4.6 High (cursor-grok-4.6-high), Fast off (fast: false).\nReturn a bound terminal receipt with the canonical https://cursor.com/agents/<id> thread URL, separate agentId/runId, input/output digests, and exact branch/head evidence. Do not write prospect copy.`;
-  return { schemaVersion: 'factory-cursor-dispatch-v1', issueNumber, prNumber, branch, reviewedHeadSha, scope, model, commentBody, dispatchDigest: digest({ issueNumber, prNumber, branch, reviewedHeadSha, scope, model, commentBody }) };
+  const dispatchKey = digest({ repository, issueNumber, prNumber, branch, reviewedHeadSha, scope });
+  const fullCommentBody = `${commentBody}\nDispatch key: ${dispatchKey}`;
+  return { schemaVersion: 'factory-cursor-dispatch-v1', repository, issueNumber, prNumber, branch, reviewedHeadSha, scope, dispatchKey, model, commentBody: fullCommentBody, dispatchDigest: digest({ issueNumber, prNumber, branch, reviewedHeadSha, scope, model, commentBody: fullCommentBody, repository }) };
 }
 
 module.exports = { CURSOR_ALIAS, CURSOR_MODEL, canonicalThreadUrl, validateModelAttestation, validateDispatchPacket, validateJobReceipt, validateBundle, createDispatchPacket };
