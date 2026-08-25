@@ -27,6 +27,41 @@ function validateWhyBuilt(whyBuilt, finalist, prescription) {
   return resolved.some((ref) => ref.type === 'opportunity') && resolved.some((ref) => ['graphic', 'review', 'service'].includes(ref.type));
 }
 
+function compactServicesConsidered(prescription) {
+  const pages = prescription?.pages || [];
+  const hierarchy = prescription?.valueHierarchy || [];
+  const servicePages = pages.filter((page) => page.type === 'Service');
+  const groups = new Map();
+  for (const service of hierarchy) {
+    const canonical = service.canonicalIntentId || service.id;
+    const group = groups.get(canonical) || { canonical, members: [] };
+    group.members.push(service);
+    groups.set(canonical, group);
+  }
+  const lines = [];
+  for (const page of servicePages) {
+    const intent = page.canonicalIntentId || page.service;
+    const members = groups.get(intent)?.members || [];
+    const primary = members.find((item) => item.id === intent) || members[0];
+    const folded = members.filter((item) => item.id && item.id !== intent).map((item) => item.name || item.id);
+    const foldedNote = folded.length ? ` Folded onto this page: ${folded.join(', ')}.` : '';
+    lines.push(`- ${primary?.name || page.service}: included at ${page.url}.${foldedNote}`);
+    groups.delete(intent);
+  }
+  for (const { canonical, members } of groups.values()) {
+    if (canonical === 'home-breadth') {
+      const names = members.map((item) => item.name || item.id).filter((name) => name && name !== 'home-breadth' && !/^home-level/i.test(String(name)));
+      const detail = names.length ? ` (${names.join(', ')})` : '';
+      lines.push(`- Home-level completed work: included at /. Generic completed-work language stays on Home${detail}.`);
+      continue;
+    }
+    const primary = members[0];
+    const reason = members.map((item) => item.passedOverReason).find(Boolean) || 'Evidence preserved; not selected for a business-page destination.';
+    lines.push(`- ${primary.name || primary.id}: passed over — ${reason}`);
+  }
+  return lines;
+}
+
 function renderGate1({ finalist, prescription, whyBuilt }) {
   if (!validateWhyBuilt(whyBuilt, finalist, prescription)) throw new Error('Why We Built must be 2–4 sentences with resolvable opportunity and evidence refs');
   validateRejectedRouteLanguage(prescription.pages, 'Gate 1 pages');
@@ -36,9 +71,12 @@ function renderGate1({ finalist, prescription, whyBuilt }) {
     lines.push(`| ${page.type || page.service} | ${page.url} | ${page.primaryKeyword} | ${page.titleDirection} / ${page.h1Direction} | ${recommendation} |`);
   }
   lines.push('', '### Why these pages won', '');
-  for (const page of prescription.pages) lines.push(`- **${page.type || page.service}:** ${page.whyIncluded}`);
+  for (const page of prescription.pages) {
+    const label = page.url ? `${page.type || page.service} \`${page.url}\`` : (page.type || page.service);
+    lines.push(`- **${label}:** ${page.whyIncluded}`);
+  }
   lines.push('', '### Services considered', '');
-  for (const service of prescription.valueHierarchy) lines.push(`- ${service.name || service.id}: ${service.directCompletedEvidenceCount} direct anchor(s), ${service.evidenceCount} total evidence review(s); ${service.includedPage ? 'included' : `passed over — ${service.passedOverReason}`}.`);
+  lines.push(...compactServicesConsidered(prescription));
   lines.push('', '## Human Gate 1', '', 'Are these the right pages, URLs, keywords, title directions, and first-review recommendations for this prospect?', '', '## State', '', '`awaiting-human-gate-1`');
   return lines.join('\n') + '\n';
 }
@@ -76,4 +114,4 @@ function architectQa({ finalist, inventory, prescription, whyBuilt, laterStageAr
   return { passed: Object.values(checks).every(Boolean), checks };
 }
 
-module.exports = { sentenceCount, validateWhyBuilt, renderGate1, architectQa };
+module.exports = { sentenceCount, validateWhyBuilt, renderGate1, architectQa, compactServicesConsidered };

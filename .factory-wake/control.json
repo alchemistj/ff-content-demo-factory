@@ -1,0 +1,8 @@
+{
+  "wakeId": "swifts-roofing-qa-2026-08-25-01",
+  "mode": "qa",
+  "restoreFromRunId": "32839482403",
+  "restoreFromSourceSha": "a267e9651fbee3d71d904f2ed3c85ad4ffaf5eaa",
+  "decisionFile": ".factory-wake/decision.json",
+  "requestedBy": "architect"
+}

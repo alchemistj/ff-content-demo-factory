@@ -183,6 +183,63 @@ function selectTopServiceDestinations(services, count = STANDARD_PRESCRIPTION_PO
   return eligible.slice(0, count).map((entry) => entry.id);
 }
 
+function buildCanonicalLedgerFromComparison({ candidates = [], pages = [], identity = {} } = {}) {
+  if (!Array.isArray(candidates) || !candidates.length) throw new Error('candidate service comparison is required');
+  const families = new Map();
+  const aliases = {};
+  const addFamily = (id, name, reviewIds = []) => {
+    const key = normalizeServiceKey(id);
+    if (!key) throw new Error('canonical service ledger entry is incomplete: <missing>');
+    const existing = families.get(key);
+    const merged = [...new Set([...(existing?.reviewIds || []), ...((reviewIds || []).filter(Boolean))])];
+    if (!existing) families.set(key, { id: key, name: name || key, reviewIds: merged, currentSitePageUrls: [] });
+    else existing.reviewIds = merged;
+    return key;
+  };
+  addFamily('home-breadth', 'Home-level supporting evidence');
+  const pageByUrl = new Map((pages || []).filter((page) => page?.url).map((page) => [routePath(page.url), page]));
+  for (const candidate of candidates) {
+    const id = normalizeServiceKey(serviceIdentity(candidate));
+    if (!id) throw new Error('candidate service is missing a stable id');
+    if (candidate.includedPage === true) {
+      addFamily(id, candidate.name, candidate.directEvidenceReviewIds || candidate.reviewIds || []);
+      continue;
+    }
+    if (candidate.status === 'folded' && candidate.pageUrl) {
+      const targetPage = pageByUrl.get(routePath(candidate.pageUrl));
+      const targetId = normalizeServiceKey(targetPage?.canonicalIntentId || targetPage?.service);
+      if (!targetId) throw new Error(`folded candidate ${id} has no canonical target page`);
+      addFamily(targetId, targetPage.name || targetPage.service || targetId, candidate.directEvidenceReviewIds || candidate.reviewIds || []);
+      if (id !== targetId) aliases[id] = targetId;
+      continue;
+    }
+    aliases[id] = 'home-breadth';
+  }
+  return {
+    version: 'canonical-service-coverage-ledger-v1',
+    prospectId: identity.prospectId || identity.placeId,
+    placeId: identity.placeId,
+    runId: identity.runId,
+    aliases,
+    services: [...families.values()],
+  };
+}
+
+function selectStandardBusinessPages(pages, services, ledger) {
+  if (!Array.isArray(pages) || !pages.length) throw new Error('Architect must supply explicit proposed pages');
+  const selected = selectTopServiceDestinations(services, STANDARD_PRESCRIPTION_POLICY.servicePageCount, ledger);
+  const home = pages.filter((page) => page.type === 'Home' && routePath(page.url) === '/');
+  const contact = pages.filter((page) => page.type === 'Contact' && routePath(page.url) === '/contact');
+  if (home.length !== 1) throw new Error('prescription requires exactly one Home at /');
+  if (contact.length !== 1) throw new Error('prescription requires exactly one Contact at /contact');
+  const servicePages = selected.map((id) => {
+    const page = pages.find((entry) => entry.type === 'Service' && canonicalServiceId(entry.canonicalIntentId || entry.service, ledger) === id);
+    if (!page) throw new Error(`missing Service page for selected destination ${id}`);
+    return page;
+  });
+  return [home[0], ...servicePages, contact[0]];
+}
+
 function approvalPayload(override) {
   const { overrideDigest, ...unsigned } = override || {};
   return unsigned;
@@ -236,4 +293,4 @@ function validatePagePolicy({ pages, services, serviceLedger = null, policy = ST
   return { policy: { ...STANDARD_PRESCRIPTION_POLICY }, policyMode: overrideResult.mode, allowedServicePageCount: expectedServiceCount, override: overrideResult.override, selectedServiceIds: selected, normalizedPages, normalizedServices, pageSetDigest: pageSetDigest(normalizedPages) };
 }
 
-module.exports = { STANDARD_PRESCRIPTION_POLICY, AUTHORITATIVE_APPROVERS, canonical, digest, validDate, isExactStandardPolicy, serviceTerm, normalizeServiceKey, serviceIdentity, pageId, pageSetDigest, ledgerMaps, canonicalServiceId, canonicalizeServiceCandidates, canonicalizePageServices, assertNoServiceAliasCollisions, validateCompleteCanonicalLedger, rankCandidateServices, selectTopServiceDestinations, validateExpansionOverride, validatePagePolicy };
+module.exports = { STANDARD_PRESCRIPTION_POLICY, AUTHORITATIVE_APPROVERS, canonical, digest, validDate, isExactStandardPolicy, serviceTerm, normalizeServiceKey, serviceIdentity, pageId, pageSetDigest, ledgerMaps, canonicalServiceId, canonicalizeServiceCandidates, canonicalizePageServices, assertNoServiceAliasCollisions, validateCompleteCanonicalLedger, rankCandidateServices, selectTopServiceDestinations, buildCanonicalLedgerFromComparison, selectStandardBusinessPages, validateExpansionOverride, validatePagePolicy };

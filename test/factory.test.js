@@ -96,6 +96,38 @@ test('collision validation, Gate 1 evidence specificity, and expanded Architect 
   assert.equal(architectQa({ finalist, inventory: classification, prescription, whyBuilt, laterStageArtifacts: ['copy'] }).checks.noLaterStageArtifacts, false);
 });
 
+test('Gate 1 services considered folds aliased families onto the four business pages', () => {
+  const markdown = renderGate1({
+    finalist: { name: 'Example Roofing', websiteAudit: { opportunity: 'clear local opportunity' } },
+    whyBuilt: { text: 'Example Roofing can lead with completed replacement and repair. Named reviews support those two destinations.', refs: [{ type: 'opportunity', ref: 'clear local opportunity' }, { type: 'review', ref: 'r-replace' }] },
+    prescription: {
+      pages: [
+        { type: 'Home', url: '/', primaryKeyword: 'roofing', titleDirection: 'Home', h1Direction: 'Home', whyIncluded: 'Company story.', strongestEvidence: 'r-home', recommendedFirstReview: { reviewId: 'r-home', reviewer: 'C Jackson', why: 'Completed roof.' } },
+        { type: 'Service', service: 'roof-replacement', canonicalIntentId: 'roof-replacement', url: '/roof-replacement', primaryKeyword: 'roof replacement', titleDirection: 'Replacement', h1Direction: 'Replacement', whyIncluded: 'Named reroofs.', strongestEvidence: 'r-replace', recommendedFirstReview: { reviewId: 'r-replace', reviewer: 'Neal', why: 'First replacement.' } },
+        { type: 'Service', service: 'roof-repair', canonicalIntentId: 'roof-repair', url: '/roof-repair', primaryKeyword: 'roof repair', titleDirection: 'Repair', h1Direction: 'Repair', whyIncluded: 'Completed repair.', strongestEvidence: 'r-repair', recommendedFirstReview: { reviewId: 'r-repair', reviewer: 'Hoffman', why: 'Leak repair.' } },
+        { type: 'Contact', url: '/contact', primaryKeyword: 'contact', titleDirection: 'Contact', h1Direction: 'Contact', whyIncluded: 'Next step.', strongestEvidence: null, recommendedFirstReview: null },
+      ],
+      valueHierarchy: [
+        { id: 'roof-replacement', name: 'Roof replacement', canonicalIntentId: 'roof-replacement', includedPage: true, passedOverReason: null, directCompletedEvidenceCount: 6, evidenceCount: 6 },
+        { id: 'shingle-installation', name: 'Shingle installation', canonicalIntentId: 'roof-replacement', includedPage: true, passedOverReason: null, directCompletedEvidenceCount: 6, evidenceCount: 6 },
+        { id: 'roof-repair', name: 'Roof repair', canonicalIntentId: 'roof-repair', includedPage: true, passedOverReason: null, directCompletedEvidenceCount: 1, evidenceCount: 1 },
+        { id: 'leak-repair', name: 'Leak repair', canonicalIntentId: 'roof-repair', includedPage: true, passedOverReason: null, directCompletedEvidenceCount: 1, evidenceCount: 1 },
+        { id: 'seal-repair', name: 'Seal repair', canonicalIntentId: 'roof-repair', includedPage: true, passedOverReason: null, directCompletedEvidenceCount: 1, evidenceCount: 1 },
+        { id: 'flue-repair', name: 'Flue repair', canonicalIntentId: 'roof-repair', includedPage: true, passedOverReason: null, directCompletedEvidenceCount: 1, evidenceCount: 1 },
+        { id: 'commercial-roofing', name: 'Commercial roofing', canonicalIntentId: 'home-breadth', includedPage: false, passedOverReason: 'No named completed commercial job.', directCompletedEvidenceCount: 0, evidenceCount: 0 },
+      ],
+    },
+  });
+  assert.match(markdown, /\*\*Home `\/`:\*\*/);
+  assert.match(markdown, /Roof replacement: included at \/roof-replacement\. Folded onto this page: Shingle installation\./);
+  assert.match(markdown, /Roof repair: included at \/roof-repair\. Folded onto this page: Leak repair, Seal repair, Flue repair\./);
+  assert.match(markdown, /Commercial roofing/);
+  assert.doesNotMatch(markdown, /^- Leak repair: included/m);
+  assert.doesNotMatch(markdown, /^- Shingle installation: included/m);
+  assert.doesNotMatch(markdown, /^- Seal repair: included/m);
+  assert.doesNotMatch(markdown, /^- Flue repair: included/m);
+});
+
 test('recommended review metadata is resolved from authoritative evidence and excerpts cannot drift', () => {
   const finalist = { ...candidates[0], architectQualified: true };
   const supplied = proposedPages.map((page) => ({ ...page }));

@@ -120,11 +120,21 @@ async function classifyResumably({ run, state, adapters, root, now }) {
   const packet = run.artifacts.reviewPacket;
   const judgments = run.artifacts.reviewJudgments || {};
   const judge = judgeAdapter(adapters);
+  let lastError = null;
   for (const review of packet.reviews || []) {
     if (judgments[review.id]) continue;
-    judgments[review.id] = await judge({ review, finalist: run.candidate });
-    run.artifacts.reviewJudgments = judgments;
-    await persist(state, root, now);
+    try {
+      judgments[review.id] = await judge({ review, finalist: run.candidate });
+      run.artifacts.reviewJudgments = judgments;
+      await persist(state, root, now);
+    } catch (error) {
+      lastError = error;
+      run.artifacts.reviewJudgments = judgments;
+      await persist(state, root, now);
+    }
+  }
+  if (lastError || Object.keys(judgments).length < (packet.reviews || []).length) {
+    throw lastError || Object.assign(new Error('Review judgment incomplete'), { code: 'REVIEW_JUDGMENT_INCOMPLETE' });
   }
   const classification = buildClassificationArtifact({ reviews: [...(packet.reviews || []), ...(packet.emptyTextReviews || [])], judgments });
   run.artifacts.classification = classification;
@@ -194,7 +204,7 @@ async function runFactoryCycle({ root, config, adapters, discoveryRequest = null
     }
     if (!run.artifacts.classification || Object.keys(run.artifacts.reviewJudgments || {}).length < run.artifacts.reviewPacket.reviews.length) await classifyResumably({ run, state, adapters, root, now });
     if (!run.artifacts.prescription) {
-      const proposalResult = await proposalAdapter(adapters)({ finalist: { ...run.candidate, prospectId: run.prospectId, runId: run.runId }, runId: run.runId, prospectId: run.prospectId, placeId: run.candidate?.placeId, classification: run.artifacts.classification, inventory: run.artifacts.inventory, discoveryPacket: state.discoveryPacket });
+      const proposalResult = await proposalAdapter(adapters)({ finalist: { ...run.candidate, prospectId: run.prospectId, runId: run.runId }, runId: run.runId, prospectId: run.prospectId, placeId: run.candidate?.placeId, classification: run.artifacts.classification, inventory: run.artifacts.inventory, discoveryPacket: state.discoveryPacket, decision: architectDecision });
       const proposal = proposalPayload(proposalResult); run.artifacts.cursorProposal = proposal.proposal; run.artifacts.cursorProposalReceipt = proposal.receipt; run.artifacts.prescription = buildValidatedPrescription({ run, classification: run.artifacts.classification, proposal: proposal.proposal });
       run.artifacts.inventory.availabilityPattern = run.artifacts.prescription.evidence?.availabilityPattern || null;
       transition(state, run.runId, 'architect-qa', { owner, now, artifact: run.artifacts.prescription }); await persist(state, root, now);

@@ -18,6 +18,14 @@ function redact(value, secret) {
   return value;
 }
 
+function isTerminalCursorRunError(error) {
+  const message = String(error?.message || error || '');
+  return /Cursor research run ended (error|failed|aborted|timed[- ]?out)/i.test(message)
+    || /Cursor returned (invalid JSON|empty output)/i.test(message)
+    || /Cursor result kind mismatch/i.test(message)
+    || /result (must be an object|contract invalid)/i.test(message);
+}
+
 function parseJsonResult(output) {
   const text = String(output ?? '').trim();
   const fenced = text.match(/^```(?:json)?\s*([\s\S]*?)\s*```$/i);
@@ -76,7 +84,7 @@ function researchPrompt(kind, input) {
   const instructions = {
     'website-audit': 'Inspect only the business-owned website. Return website, evidence, service-page/copy evidence, NAP/contact facts, graphicsInspection with findings, owned service/marketing graphics/flyers evidence, and public image URLs; every item needs source URL/provenance. Do not treat Google listing data as website evidence.',
     'review-judgment': 'Judge each supplied written review authoritatively. Return reviewId, decision, authoritative, directCompletedService, serviceEvidence with exact source-text excerpts, availabilityEvidence, negative/trap evidence, and provenance/model receipt fields. Distinguish direct completed work from supporting/negative evidence, and never turn anecdotal timing into a response guarantee.',
-    'page-prescription': 'Compare every candidate service in a value hierarchy, including passed-over services and reasons. Return differentiated pages with URLs, keywords, title/H1 directions, evidence/recommended first reviews, claims, overlap boundaries, and traps. Return comparison and preserve negative reviews. Do not write page copy or a client build.',
+    'page-prescription': 'Compare every candidate service in a value hierarchy, including passed-over services and reasons. Fold generic Home-level completed-work language to home-breadth. Return exactly four business pages: Home at /, two evidence-backed Service routes, and Contact at /contact. Strategy Overview is internal and must not appear in pages. Return comparison, preserve negative reviews, and return serviceCoverageLedger version canonical-service-coverage-ledger-v1 bound to the supplied prospectId, placeId, and runId, with kebab-case ids, names, reviewIds, currentSitePageUrls, and aliases for folded or passed-over candidates. Do not write page copy or a client build.',
   }[kind];
   return `${boundary}\nResearch job: ${kind}\nJob boundary: ${instructions}\nInput:\n${JSON.stringify(input)}\nContract kind: ${kind}`;
 }
@@ -122,7 +130,8 @@ function createCursorAdapter({ apiKey, sdk, modelAlias = process.env.CURSOR_MODE
     const prior = await receiptStore.get?.(key);
     if (prior?.status === 'completed') return prior.result;
     const prompt = researchPrompt(kind, input);
-    if (prior?.status === 'running' && prior.agentId) {
+    const canResume = prior?.status === 'running' && prior.agentId && !isTerminalCursorRunError(prior.lastError);
+    if (canResume) {
       let agent;
       let receipt = { ...prior };
       try {
@@ -142,7 +151,10 @@ function createCursorAdapter({ apiKey, sdk, modelAlias = process.env.CURSOR_MODE
         await receiptStore.put?.(key, completed);
         return safeResult;
       } catch (error) {
-        await receiptStore.put?.(key, { ...receipt, status: 'running', resumedAt: clock(), lastError: redact(normalizeError(error), apiKey) });
+        const message = redact(normalizeError(error), apiKey);
+        await receiptStore.put?.(key, isTerminalCursorRunError(error)
+          ? { ...receipt, status: 'failed', failedAt: clock(), error: message }
+          : { ...receipt, status: 'running', resumedAt: clock(), lastError: message });
         throw error;
       } finally {
         await disposeAgent(agent);
@@ -179,9 +191,10 @@ function createCursorAdapter({ apiKey, sdk, modelAlias = process.env.CURSOR_MODE
       // Keep a receipt with a run id resumable after a process/network
       // interruption. This is what prevents a retry from sending a second
       // paid prompt. Runs that failed before `send` may be retried normally.
-      const interrupted = receipt.runId ? {
-        ...receipt, status: 'running', interruptedAt: clock(), lastError: redact(normalizeError(error), apiKey),
-      } : { ...receipt, status: 'failed', failedAt: clock(), error: redact(normalizeError(error), apiKey) };
+      const message = redact(normalizeError(error), apiKey);
+      const interrupted = receipt.runId && !isTerminalCursorRunError(error) ? {
+        ...receipt, status: 'running', interruptedAt: clock(), lastError: message,
+      } : { ...receipt, status: 'failed', failedAt: clock(), error: message };
       await receiptStore.put?.(key, interrupted);
       throw error;
     } finally {
@@ -208,4 +221,5 @@ function normalizeError(error) {
 module.exports = {
   FACTORY_MODEL_ALIAS, ACTUAL_MODEL_ID, createCursorAdapter, createMemoryReceiptStore,
   modelSelectionFromCatalog, parseJsonResult, validateResult, researchPrompt,
+  isTerminalCursorRunError,
 };

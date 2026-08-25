@@ -96,6 +96,7 @@ test('interrupted classification resumes without repeating finalist enrichment',
   assert.equal(result.nextAction.code, 'architect-qa-required');
   assert.equal(recovered.calls.enrich, 0);
   assert.equal(recovered.calls.proposal, 1);
+  assert.equal(failing.calls.judge, 2, 'a failed judgment must not skip later reviews in the same wake');
 });
 
 test('Architect corrections are validated and cannot infer a pass from Cursor', async () => {

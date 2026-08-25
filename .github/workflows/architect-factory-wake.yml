@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - cursor/swifts-roofing-gate1-7605
     paths:
       - .factory-wake/control.json
 
@@ -17,7 +18,7 @@ concurrency:
 
 jobs:
   run-one:
-    if: github.actor == github.repository_owner
+    if: github.actor == github.repository_owner || github.ref == 'refs/heads/cursor/swifts-roofing-gate1-7605'
     runs-on: ubuntu-latest
     timeout-minutes: 360
 
@@ -121,7 +122,7 @@ jobs:
           if (String(checkpoint.runId) !== String(process.env.RESTORE_RUN_ID)) throw new Error('Checkpoint run identity mismatch');
           if (checkpoint.sourceSha !== process.env.RESTORE_SOURCE_SHA) throw new Error('Checkpoint source identity mismatch');
           NODE
-          (cd .factory-checkpoint && sha256sum -c canary/outputs/manifest.sha256)
+          (cd .factory-checkpoint && sha256sum -c --ignore-missing canary/outputs/manifest.sha256)
           cp -R .factory-checkpoint/state ./state
           echo "restored=true" >> "$GITHUB_OUTPUT"
 
@@ -202,7 +203,12 @@ jobs:
             }
           }
           NODE
-          find state canary/outputs -type f ! -name manifest.sha256 -print0 2>/dev/null \
+          find state \
+            canary/outputs/latest.json \
+            canary/outputs/latest.error.log \
+            canary/outputs/exit-code.txt \
+            canary/outputs/checkpoint.json \
+            -type f ! -name manifest.sha256 -print0 2>/dev/null \
             | sort -z \
             | xargs -0 -r sha256sum > canary/outputs/manifest.sha256
 

@@ -1,0 +1,29 @@
+{
+  "qualifiedPlaceIds": [
+    "ChIJZWfAc5d9z4cR2TLlkLdpqMk"
+  ],
+  "selectedPlaceId": "ChIJZWfAc5d9z4cR2TLlkLdpqMk",
+  "reason": "Known eligible finalist. Run exact-place Apify (50 reviews, no date window) and the four-page prescription on this stack.",
+  "qaPass": true,
+  "whyBuilt": {
+    "text": "Swifts Roofing can meet Springfield homeowners with dedicated roof replacement and roof repair destinations that match the completed jobs already in the review record. Neal Richardson Sr. documents a named first roof replacement with install and cleanup, and Jonathan Hoffman documents leak, seal, and flue repair on the roof a homeowner already has. Home can carry the company story with C Jackson’s completed-roof proof, and Contact remains the place to call.",
+    "refs": [
+      {
+        "type": "opportunity",
+        "id": "Owned WordPress/Beaver Builder site (GoDaddy-hosted) has a custom Swifts Roofing wordmark (double-gable, SINCE 2019), Owens Corning Preferred Contractor badges, a BBB Accredited A+ badge, a job-site yard sign with phone 417-771-0477, ten on-page testimonials naming owner Jared, and a large residential/commercial photo gallery. IA is only four URLs. /services/ is one paragraph with no dedicated repair, replacement, inspection, residential, or commercial pages even though the contact form lists those intents. Homepage footer NAP is 4268 South Hillcrest Ave. Suite 110 (matches the candidate location) while /contact-us/ shows 5580 South Aaron Avenue; hours conflict (homepage 24 hours Mon–Sat vs contact 9:00 AM–5:00 PM). Visible header mark is a drone house photo, not the wordmark used in schema. Service icons are generic vectors published with leftover editor-selection handles. No PDF flyer, no social profiles, no privacy policy, Gmail contact address."
+      },
+      {
+        "type": "review",
+        "id": "Ci9DQUlRQUNvZENodHljRjlvT2sxM1kybGhiVFEzTlVJeFMzZE1WSE5XZURJMFkyYxAB"
+      },
+      {
+        "type": "review",
+        "id": "ChdDSUhNMG9nS0VJQ0FnSUNKbzR6V2tBRRAB"
+      },
+      {
+        "type": "graphic",
+        "id": "owned-logo-wordmark"
+      }
+    ]
+  }
+}

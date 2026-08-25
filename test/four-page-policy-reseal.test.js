@@ -7,7 +7,7 @@ const os = require('node:os');
 const path = require('node:path');
 const crypto = require('node:crypto');
 const { execFileSync } = require('node:child_process');
-const { STANDARD_PRESCRIPTION_POLICY, pageId, pageSetDigest, validatePagePolicy, digest } = require('../src/factory/prescription-policy');
+const { STANDARD_PRESCRIPTION_POLICY, pageId, pageSetDigest, validatePagePolicy, digest, buildCanonicalLedgerFromComparison, selectStandardBusinessPages } = require('../src/factory/prescription-policy');
 const { resealCheckpoint, EXPECTED_360_CHECKPOINT, validateRejectedRouteLanguage } = require('../src/factory/reseal');
 
 function page(type, url, service = null) {
@@ -48,6 +48,39 @@ test('standard policy selects only the top two evidence-backed service destinati
   assert.deepEqual(result.selectedServiceIds, ['repair', 'installation']);
   assert.equal(result.policy.businessPageCount, 4);
   assert.equal(result.policy.servicePageCount, 2);
+});
+
+test('comparison ledger builder folds extras onto canonical families and standard page selection keeps four business pages', () => {
+  const pages = [
+    page('Home', '/'),
+    page('Service', '/roof-replacement', 'roof-replacement'),
+    page('Service', '/roof-repair', 'roof-repair'),
+    page('Service', '/roof-inspection', 'roof-inspection'),
+    page('Service', '/emergency-tarping', 'emergency-tarping'),
+    page('Contact', '/contact', 'contact'),
+  ];
+  const candidates = [
+    { id: 'roof-replacement', name: 'Roof replacement', includedPage: true, pageUrl: '/roof-replacement', directCompletedEvidenceCount: 6, status: 'prescribed' },
+    { id: 'roofing', name: 'Roofing', includedPage: false, directCompletedEvidenceCount: 2, status: 'passed-over' },
+    { id: 'roof-repair', name: 'Roof repair', includedPage: true, pageUrl: '/roof-repair', directCompletedEvidenceCount: 1, status: 'prescribed' },
+    { id: 'flue-repair', name: 'Flue repair', includedPage: false, pageUrl: '/roof-repair', directCompletedEvidenceCount: 1, status: 'folded' },
+    { id: 'roof-inspection', name: 'Roof inspection', includedPage: true, pageUrl: '/roof-inspection', directCompletedEvidenceCount: 1, status: 'prescribed' },
+    { id: 'emergency-tarping', name: 'Emergency tarping', includedPage: true, pageUrl: '/emergency-tarping', directCompletedEvidenceCount: 1, status: 'prescribed' },
+  ];
+  const ledger = buildCanonicalLedgerFromComparison({
+    candidates,
+    pages,
+    identity: { prospectId: 'unit-prospect', placeId: 'unit-place', runId: 'run-1' },
+  });
+  assert.equal(ledger.version, 'canonical-service-coverage-ledger-v1');
+  assert.equal(ledger.aliases.roofing, 'home-breadth');
+  assert.equal(ledger.aliases['flue-repair'], 'roof-repair');
+  assert.ok(ledger.services.some((service) => service.id === 'home-breadth'));
+  const selected = selectStandardBusinessPages(pages, candidates, ledger);
+  assert.equal(selected.length, 4);
+  assert.equal(selected[0].type, 'Home');
+  assert.equal(selected[3].type, 'Contact');
+  assert.deepEqual(selected.filter((entry) => entry.type === 'Service').map((entry) => entry.service), ['roof-replacement', 'emergency-tarping']);
 });
 
 test('valid one-off expansion requires an explicit durable approval bound to the run and page set', () => {
