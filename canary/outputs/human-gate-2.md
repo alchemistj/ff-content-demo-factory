@@ -21,7 +21,7 @@ Directly readable words package for the 360 Garage Door and More canary. Natural
 - Human status: **Needs Josh — Human Gate 2**
 - Branch: `architect/360-words-canary`
 - Reviewed head for this acceptance packet: `1b6ab7c9f174bfafdcd25487982933be06a42191`
-- Head at render: `1b6ab7c9f174bfafdcd25487982933be06a42191`
+- Head at render: `cec16c8c63f831a0ce130de5112ef06bdf2e2b9e`
 - Accepted Writer 1 rendered-words digest: `sha256:3edce1acff28a00b3f0064664f8b1b4d2beab1a0a9fda5f92108442ce4d1460e`
 - Rejected padded lineage (not restored): `sha256:165d310ae1e30225b6278cc0fbde7d2cab23a60f186157c59734257519c01f89`
 - Hermetic pointer-ledger fixtures: `561e9013f4ca5c5d3055bdbcff34c69b466f7940`

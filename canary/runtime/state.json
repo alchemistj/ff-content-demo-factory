@@ -17,7 +17,7 @@
   "mergeOccurred": false,
   "deploymentOccurred": false,
   "qualityCorrectionParent": "1b6ab7c9f174bfafdcd25487982933be06a42191",
-  "qualityCorrectionHeadAtRender": "1b6ab7c9f174bfafdcd25487982933be06a42191",
+  "qualityCorrectionHeadAtRender": "cec16c8c63f831a0ce130de5112ef06bdf2e2b9e",
   "renderedWordsDigest": "sha256:3edce1acff28a00b3f0064664f8b1b4d2beab1a0a9fda5f92108442ce4d1460e",
   "rejectedRenderedWordsDigest": "sha256:165d310ae1e30225b6278cc0fbde7d2cab23a60f186157c59734257519c01f89",
   "rawRejectedLineageRestored": false,
