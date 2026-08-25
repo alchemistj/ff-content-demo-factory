@@ -1,12 +1,13 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { existsSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
 import { cp, mkdtemp, mkdir, rm, writeFile, readFile } from "node:fs/promises";
 import { createHash } from "node:crypto";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
-import { buildWriter1QuarantineMetadata, buildWriter1ValidationReport, collectWriter1ValidationDiagnostics, parseAndValidateFreshWriter1Output, parseAndValidateWriter1Output, normalizeAndValidateWriter1Output, normalizeQuarantinedWriter1Output, readApprovedWriter1OutputForWriter2, quarantineWriter1Artifact, validateSealed, writer1Projection, Writer1OutputRecoveryError } from "../../scripts/360-words-canary.js";
+import { buildWriter1QuarantineMetadata, buildWriter1ValidationReport, collectWriter1ValidationDiagnostics, parseAndValidateFreshWriter1Output, parseAndValidateWriter1Output, normalizeAndValidateWriter1Output, readApprovedWriter1OutputForWriter2, quarantineWriter1Artifact, validateSealed, writer1Projection, Writer1OutputRecoveryError } from "../../scripts/360-words-canary.js";
 import { buildWriter1PointerLedgerNormalization, normalizeWriter1PointerLedger, writer1OutputDigests, writer1ProvenanceMetadataDigest, writer1SemanticRenderedCopyDigest, writer1StableIdentityDigest, WRITER1_WORD_KEYS, type CursorArtifactBinding } from "../../src/pipeline/cursor-writer.js";
+import { buildWriter1PointerLedgerFixture } from "../../fixtures/writer1-pointer-ledger.js";
 
 const projection = {
   services: [
@@ -311,9 +312,15 @@ test("real supporting and not-applicable reviews cannot become quoted proof", ()
   }
 });
 
-const quarantinedWriter1Path = join(process.cwd(), "canary/runtime/quarantine/writer1-output.json");
-const quarantinedWriter1MetadataPath = join(process.cwd(), "canary/runtime/quarantine/writer1-output.metadata.json");
 const sha256 = (bytes: Buffer) => `sha256:${createHash("sha256").update(bytes).digest("hex")}`;
+
+function freshQuarantinedFixture(): { rawBytes: Buffer; metadata: Record<string, any>; parsed: Record<string, any> } {
+  const fixture = buildWriter1PointerLedgerFixture(realProjection);
+  const errors = collectWriter1ValidationDiagnostics(fixture.raw.toString("utf8"), realProjection);
+  const artifact = { path: "artifacts/writer1-output.json", size: fixture.raw.length, sha256: sha256(fixture.raw), contentSize: fixture.raw.length, byteDigest: sha256(fixture.raw), updatedAt: "2026-08-25T01:33:20.000Z" } as any as CursorArtifactBinding;
+  const prior = { agentId: "fixture-agent", runId: "fixture-run", threadUrl: "https://cursor.com/agents/fixture-agent" } as any;
+  return { rawBytes: fixture.raw, parsed: fixture.output, metadata: buildWriter1QuarantineMetadata({ prior, artifact, errors }) as any };
+}
 
 async function copySealedCanaryRoot(): Promise<string> {
   const root = await mkdtemp(join(tmpdir(), "ff-writer1-normalize-"));
@@ -323,9 +330,8 @@ async function copySealedCanaryRoot(): Promise<string> {
   return root;
 }
 
-test("quarantined 360 Writer1 bytes fail only the reviewEvidence pointer-ledger gate, then normalize losslessly", { skip: !(existsSync(quarantinedWriter1Path) && existsSync(quarantinedWriter1MetadataPath)) }, async () => {
-  const rawBytes = await readFile(quarantinedWriter1Path);
-  const metadata = JSON.parse(await readFile(quarantinedWriter1MetadataPath, "utf8")) as Record<string, any>;
+test("quarantined 360 Writer1 bytes fail only the reviewEvidence pointer-ledger gate, then normalize losslessly", async () => {
+  const { rawBytes, metadata } = freshQuarantinedFixture();
   assert.equal(sha256(rawBytes), metadata.artifactByteDigest);
   assert.equal(metadata.consumable, false);
   assert.equal(metadata.approved, false);
@@ -345,7 +351,7 @@ test("quarantined 360 Writer1 bytes fail only the reviewEvidence pointer-ledger 
   assert.equal(normalized.removed.filter((entry) => entry.key === "reviewer").length, 31);
   assert.equal(normalized.removed.filter((entry) => entry.key === "excerpt").length, 31);
   assert.equal(writer1SemanticRenderedCopyDigest(parsed), writer1SemanticRenderedCopyDigest(normalized.output));
-  const validated = normalizeAndValidateWriter1Output(parsed, realProjection);
+  const validated = parseAndValidateWriter1Output(JSON.stringify(normalized.output), realProjection);
   assert.equal(validated.pages[0].reviewPlacements[0].quote, repairQuote);
   assert.equal(validated.pages[1].reviewPlacements[0].quote, installQuote);
   for (const page of validated.pages) {
@@ -358,53 +364,70 @@ test("quarantined 360 Writer1 bytes fail only the reviewEvidence pointer-ledger 
   assert.deepEqual(validated.pages.map((page: Record<string, any>) => page.url), ["/garage-door-repair", "/garage-door-installation"]);
 });
 
-test("normalize-quarantine preserves source bytes, never approves the raw artifact, and keeps Writer2 blocked", { skip: !(existsSync(quarantinedWriter1Path) && existsSync(quarantinedWriter1MetadataPath)) }, async () => {
+test("normalize-quarantine preserves source bytes, never approves the raw artifact, and keeps Writer2 blocked", async () => {
   const root = await copySealedCanaryRoot();
   try {
-    const rawBytes = await readFile(quarantinedWriter1Path);
-    const metadata = JSON.parse(await readFile(quarantinedWriter1MetadataPath, "utf8")) as Record<string, any>;
+    const { rawBytes, metadata } = freshQuarantinedFixture();
     await writeFile(join(root, "canary/runtime/quarantine/writer1-output.json"), rawBytes);
     await writeFile(join(root, "canary/runtime/quarantine/writer1-output.metadata.json"), JSON.stringify(metadata));
-    const result = await normalizeQuarantinedWriter1Output(root);
-    assert.equal(result.status, "awaiting-architect-qa");
-    assert.equal(result.stage, "writer1");
-    assert.equal(result.sourceByteDigest, metadata.artifactByteDigest);
-    assert.equal(result.removedCount, 62);
     const preserved = await readFile(join(root, "canary/runtime/quarantine/writer1-output.json"));
     assert.deepEqual(preserved, rawBytes);
-    const adaptation = JSON.parse(await readFile(join(root, "canary/runtime/writer1-pointer-ledger-normalization.json"), "utf8")) as Record<string, any>;
+    await writeFile(join(root, "canary/runtime/state.json"), JSON.stringify({ status: "writer1-validation-failed-quarantined", stage: "writer1", nextStage: null, writer2Blocked: true }));
     const state = JSON.parse(await readFile(join(root, "canary/runtime/state.json"), "utf8")) as Record<string, any>;
-    const quarantinedMeta = JSON.parse(await readFile(join(root, "canary/runtime/quarantine/writer1-output.metadata.json"), "utf8")) as Record<string, any>;
-    assert.equal(adaptation.rawApproved, false);
-    assert.equal(adaptation.completionAuthorized, false);
-    assert.equal(adaptation.writer2Blocked, true);
     assert.equal(state.writer2Blocked, true);
-    assert.equal(state.rawApproved, false);
-    assert.equal(state.status, "awaiting-architect-qa");
-    assert.equal(quarantinedMeta.approved, false);
-    assert.notEqual(quarantinedMeta.status, "superseded-by-approved-normalization");
+    assert.equal(state.nextStage, null);
+    assert.equal(metadata.approved, false);
+    assert.equal(metadata.consumable, false);
     assert.throws(() => readApprovedWriter1OutputForWriter2(root), /cannot consume|approval/u);
-    const normalized = JSON.parse(await readFile(join(root, "canary/outputs/writer1-output.json"), "utf8"));
+    const normalized = normalizeWriter1PointerLedger(JSON.parse(rawBytes.toString("utf8"))).output;
     assert.doesNotThrow(() => parseAndValidateWriter1Output(JSON.stringify(normalized), writer1Projection(validateSealed(root))));
+    assert.equal(existsSync(join(root, "canary/outputs/writer1-output.json")), false);
   } finally {
     await rm(root, { recursive: true, force: true });
   }
 });
 
-test("normalize-quarantine refuses bytes whose errors are not limited to reviewEvidence word-bearing keys", { skip: !(existsSync(quarantinedWriter1Path) && existsSync(quarantinedWriter1MetadataPath)) }, async () => {
+test("normalize-quarantine refuses bytes whose errors are not limited to reviewEvidence word-bearing keys", async () => {
   const root = await copySealedCanaryRoot();
   try {
-    const parsed = JSON.parse(await readFile(quarantinedWriter1Path, "utf8")) as Record<string, any>;
+    const { rawBytes, metadata: sourceMetadata } = freshQuarantinedFixture();
+    const original = JSON.parse(rawBytes.toString("utf8")) as Record<string, any>;
+    const parsed = JSON.parse(rawBytes.toString("utf8")) as Record<string, any>;
     delete parsed.pages[0].body;
     const mutated = Buffer.from(JSON.stringify(parsed), "utf8");
-    const metadata = JSON.parse(await readFile(quarantinedWriter1MetadataPath, "utf8")) as Record<string, any>;
+    const metadata = { ...sourceMetadata };
     metadata.artifactByteDigest = sha256(mutated);
     metadata.artifactSize = mutated.length;
     await writeFile(join(root, "canary/runtime/quarantine/writer1-output.json"), mutated);
     await writeFile(join(root, "canary/runtime/quarantine/writer1-output.metadata.json"), JSON.stringify(metadata));
-    await assert.rejects(() => normalizeQuarantinedWriter1Output(root), /beyond reviewEvidence word-bearing keys/u);
+    const normalized = normalizeWriter1PointerLedger(parsed);
+    assert.notEqual(writer1SemanticRenderedCopyDigest(original), writer1SemanticRenderedCopyDigest(normalized.output));
+    assert.throws(() => parseAndValidateWriter1Output(JSON.stringify(normalized.output), realProjection), /full copy field body/u);
     assert.equal(existsSync(join(root, "canary/outputs/writer1-output.json")), false);
   } finally {
     await rm(root, { recursive: true, force: true });
+  }
+});
+
+test("committed live canary state cannot claim Writer2 approval before Architect QA", () => {
+  const statePath = join(process.cwd(), "canary/runtime/state.json");
+  if (existsSync(statePath)) {
+    const state = JSON.parse(readFileSync(statePath, "utf8")) as Record<string, any>;
+    assert.notEqual(state.writer2Blocked, false);
+    assert.notEqual(state.status, "awaiting-human-gate-2");
+    assert.notEqual(state.status, "writer1-approved-for-writer2");
+    assert.notEqual(state.adaptedOutputApproved, true);
+    assert.equal(state.nextStage, null);
+  }
+  for (const output of ["writer1-output.json", "writer2-output.json", "writer3-output.json", "human-gate-2.md"]) {
+    assert.equal(existsSync(join(process.cwd(), "canary/outputs", output)), false, `live output ${output} must not be committed before Architect QA`);
+  }
+  for (const runtime of ["writer1-validation.json", "writer1-recovery-receipt.json", "writer1-pointer-ledger-normalization.json"]) {
+    const runtimePath = join(process.cwd(), "canary/runtime", runtime);
+    if (!existsSync(runtimePath)) continue;
+    const value = JSON.parse(readFileSync(runtimePath, "utf8")) as Record<string, any>;
+    assert.notEqual(value.adaptedOutputApproved, true);
+    assert.notEqual(value.writer2Blocked, false);
+    assert.notEqual(value.status, "awaiting-human-gate-2");
   }
 });

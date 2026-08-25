@@ -1,7 +1,5 @@
 import assert from "node:assert/strict";
-import { execFileSync } from "node:child_process";
 import { createHash } from "node:crypto";
-import { existsSync } from "node:fs";
 import test from "node:test";
 import {
   createCursorArtifactClient,
@@ -43,6 +41,7 @@ import {
 import { digestOf } from "../contracts/digests.js";
 import { digestWriter1ArtifactRecoveryPrompt } from "../../scripts/360-words-recovery-prompt.mjs";
 import { parseAndValidateWriter1Output, validateSealed, writer1Projection } from "../../scripts/360-words-canary.js";
+import { buildWriter1PointerLedgerFixture } from "../../fixtures/writer1-pointer-ledger.js";
 
 type PublicRecoveryInputHasNoEnv = "env" extends keyof CursorArtifactRecoveryInput ? never : true;
 const publicRecoveryInputHasNoEnv: PublicRecoveryInputHasNoEnv = true;
@@ -426,8 +425,8 @@ test("v3-finalize validates the existing artifact with zero Cursor messages", as
   assert.throws(() => validateCursorArtifactRecoveryV3FinalizeReceipt(forged, prior, previousRecoveryV3, digestWriter1ArtifactRecoveryPrompt("v3"), env.CURSOR_API_KEY, expectedCurrentArtifact.byteDigest, expectedCurrentArtifact.updatedAt), /MAC|integrity|mismatch/u);
 });
 
-test("production v3-finalize normalizes the real quarantined artifact through the string validator", { skip: !existsSync("/workspace/scratch/ef9cabb1e3d7/360-writer1-normalization-failure.zip") }, async () => {
-  const bytes = execFileSync("unzip", ["-p", "/workspace/scratch/ef9cabb1e3d7/360-writer1-normalization-failure.zip", "runtime/quarantine/writer1-output.json"]);
+test("production v3-finalize normalizes the deterministic quarantined artifact through the string validator", async () => {
+  const bytes = buildWriter1PointerLedgerFixture(writer1Projection(validateSealed())).raw;
   const updatedAt = "2026-08-25T01:33:20.000Z";
   const expected = artifactBindingFor(bytes, updatedAt);
   const before = Buffer.from("{}", "utf8");
