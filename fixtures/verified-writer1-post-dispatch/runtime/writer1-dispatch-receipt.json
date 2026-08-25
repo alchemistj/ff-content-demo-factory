@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "verified-writer-dispatch/v2",
+  "stage": "writer1",
+  "provider": "cursor-sdk",
+  "agentId": "bc-2486f645-c31c-4532-8145-fbe3af1d45a8",
+  "runId": "run-1686013d-dec5-454c-a39e-5817448e6a96",
+  "threadUrl": "https://cursor.com/agents/bc-2486f645-c31c-4532-8145-fbe3af1d45a8",
+  "requestedModel": "cursor-grok-4.6-high",
+  "resolvedModel": "grok-4.6",
+  "modelParams": [
+    {
+      "id": "fast",
+      "value": "false"
+    },
+    {
+      "id": "effort",
+      "value": "high"
+    }
+  ],
+  "effort": "high",
+  "fast": false,
+  "inputDigest": "sha256:f4f59e9c645391266172892e4651f0da4ccedaa2bc86e35217a0ab8699fd0c1f",
+  "promptDigest": "sha256:e9c39355c8f0973250ebd97ad1b3b69c9e09c840796f39336abd5664c20303e3",
+  "requestDigest": "sha256:778a0100b387f04a4119fdd0c078fd8dc5474e37fb0deae30fb91b5ba6a61a87",
+  "dispatchedAt": "2026-08-25T08:10:45.374Z",
+  "githubBaseline": {
+    "kind": "github-file",
+    "repository": "alchemistj/ff-content-demo-factory",
+    "sourceCommit": "efe429d4464d765b5b657cb0058f00fffb35d3d7",
+    "path": "canary/outputs/writer1-output.json",
+    "blobSha": "cc8612bc9085f63141de6ae0f1dd2b9c3e1f3e08",
+    "rawSha256": "sha256:f693aeb968e703efbe7f9c0a7a2d1a9d4185007e32a695386e1f5eec356964a2",
+    "size": 23509,
+    "contentSize": 23509,
+    "byteDigest": "sha256:f693aeb968e703efbe7f9c0a7a2d1a9d4185007e32a695386e1f5eec356964a2",
+    "sealedHandoffDigest": "sha256:715f651a53055444b8381dd8a276a2046d93776c61d88a2193cc2d42a1c83ad6",
+    "authorship": "unverified-github-before-copy"
+  }
+}

@@ -4,7 +4,7 @@ import * as path from "node:path";
 import test from "node:test";
 import { EXPECTED_VERIFIED_CORRECTION, EXPECTED_VERIFIED_CORRECTION_V2, selectVerifiedWriter1Dispatch, validateControl as rawValidateControl } from "../../scripts/360-words-control.mjs";
 import { validateSealed, writer1Projection } from "../../scripts/360-words-canary.js";
-import { VERIFIED_WRITER1_AGENT_ID, VERIFIED_WRITER1_PROMPT_DIGEST, VERIFIED_WRITER1_PROMPT_V2_DIGEST, validateVerifiedWriter1Control, validateVerifiedWriter1PostDispatchControl, validateVerifiedWriter1SealOnlyControl, runVerifiedWriter1Correction } from "../../scripts/360-words-verified.js";
+import { VERIFIED_WRITER1_AGENT_ID, VERIFIED_WRITER1_PROMPT_DIGEST, VERIFIED_WRITER1_PROMPT_V2_DIGEST, validateVerifiedWriter1Control, validateVerifiedWriter1PostDispatchControl, validateVerifiedWriter1SealOnlyControl, verifyOriginalDispatchEvidence, runVerifiedWriter1Correction } from "../../scripts/360-words-verified.js";
 import { digestOf } from "../../src/contracts/digests.js";
 import { assertNoLocalDownstreamGeneration, assertVerifiedDownstreamState, VERIFIED_PUBLIC_ROUTES, VERIFIED_STAGE_POLICY, VERIFIED_WRITER3_SEALED_FACTS } from "../../src/pipeline/verified-words-policy.js";
 
@@ -123,6 +123,20 @@ test("two-step seal-only mode is classified separately and has no Cursor retriev
   const sealBody = source.slice(source.indexOf("runVerifiedWriter1PostDispatchSealOnly"), source.indexOf("runVerifiedWriter1PostDispatchRecovery"));
   assert.doesNotMatch(sealBody, /recoverCursorWriterPostDispatch|Agent\.getRun|Agent\.create|\.resume\(|\.send\(|\.wait\(/u);
   for (const bad of ["writer1-retrieval-only", "artifact-recovery", "validation-only", "words-writer1-post-dispatch-seal/v2"]) assert.equal(selectVerifiedWriter1Dispatch({ ...active, policy: { ...active.policy, mode: bad }, recovery: { ...active.recovery, recoveryVersion: bad } }), "unsupported-verified-lane");
+});
+
+test("the real 1536-byte dispatch receipt binds through its durable sidecars without inventing missing fields", () => {
+  const fixtureRoot = path.join(root, "fixtures/verified-writer1-post-dispatch");
+  const evidence = verifyOriginalDispatchEvidence(fixtureRoot);
+  assert.equal(evidence.dispatchFile.bytes.byteLength, 1536);
+  assert.equal(evidence.dispatchFile.logicalPath, "runtime/writer1-dispatch-receipt.json");
+  assert.equal(evidence.dispatchFile.dispatch.inputDigest, EXPECTED_POST_DISPATCH_ORIGINAL_INPUT_DIGEST);
+  assert.equal(evidence.dispatchFile.dispatch.promptDigest, EXPECTED_POST_DISPATCH_ORIGINAL_PROMPT_DIGEST);
+  assert.equal(Object.hasOwn(evidence.dispatchFile.dispatch, "idempotencyKey"), false);
+  assert.equal(Object.hasOwn(evidence.dispatchFile.dispatch, "messagesSent"), false);
+  assert.equal(evidence.idempotencySource, "runtime/cursor-receipts.json:claims[originalIdempotencyKey]");
+  assert.equal(evidence.messagesSentSource, "runtime/state.json:messagesSent");
+  assert.equal(evidence.messagesSent, 1);
 });
 
 test("verified policy requires new downstream agents and signed direct receipts, with immutable Writer3 facts", () => {

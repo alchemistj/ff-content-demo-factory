@@ -188,8 +188,31 @@ function readPriorDispatch(root: string): { dispatch: Dict; bytes: Buffer; file:
   throw new Error("prior post-dispatch Action artifact did not contain a dispatch receipt");
 }
 
+/**
+ * The original dispatch receipt predates the durable idempotency/message fields.
+ * Preserve that fact: input/prompt/model identity comes from the receipt; the
+ * exact idempotency claim and sent-count are verified from the two sidecars the
+ * Action uploaded, never synthesized into the receipt.
+ */
+export function verifyOriginalDispatchEvidence(root: string): Dict {
+  const dispatchFile = readPriorDispatch(root);
+  const dispatch = dispatchFile.dispatch;
+  if ((dispatch.schemaVersion !== "verified-writer-dispatch/v2" && dispatch.schemaVersion !== "words-canary-dispatch/v2") || dispatch.stage !== "writer1" || dispatch.provider !== "cursor-sdk" || dispatch.agentId !== VERIFIED_WRITER1_AGENT_ID || dispatch.runId !== VERIFIED_WRITER1_POST_DISPATCH.runId || dispatch.threadUrl !== VERIFIED_WRITER1_THREAD_URL || dispatch.requestedModel !== VERIFIED_WRITER1_POST_DISPATCH.requestedModel || dispatch.resolvedModel !== VERIFIED_WRITER1_POST_DISPATCH.resolvedModel || dispatch.effort !== "high" || dispatch.fast !== false || dispatch.inputDigest !== POST_DISPATCH_ORIGINAL_INPUT_DIGEST || dispatch.promptDigest !== POST_DISPATCH_ORIGINAL_PROMPT_DIGEST || typeof dispatch.requestDigest !== "string" || !isDigest(dispatch.requestDigest)) throw new Error("downloaded dispatch receipt is not bound to the exact signed original dispatch");
+  if (dispatch.idempotencyKey !== undefined && dispatch.idempotencyKey !== originalDispatchIdempotencyKey()) throw new Error("dispatch receipt contains a conflicting idempotency key");
+  if (dispatch.messagesSent !== undefined && dispatch.messagesSent !== 1) throw new Error("dispatch receipt contains a conflicting sent count");
+  const claimsPath = path.join(root, "runtime/cursor-receipts.json");
+  const statePath = path.join(root, "runtime/state.json");
+  let claimsFile: Dict; let state: Dict;
+  try { claimsFile = JSON.parse(readFileSync(claimsPath, "utf8")) as Dict; state = JSON.parse(readFileSync(statePath, "utf8")) as Dict; } catch { throw new Error("original dispatch idempotency and sent-count sidecars are required"); }
+  const claim = claimsFile.claims?.[originalDispatchIdempotencyKey()];
+  if (!claim || claim.key !== originalDispatchIdempotencyKey() || claim.stage !== "writer1" || claim.inputDigest !== POST_DISPATCH_ORIGINAL_INPUT_DIGEST || claim.promptDigest !== POST_DISPATCH_ORIGINAL_PROMPT_DIGEST || claim.requestedAgentId !== VERIFIED_WRITER1_AGENT_ID || claim.agentId !== VERIFIED_WRITER1_AGENT_ID || claim.jobId !== VERIFIED_WRITER1_POST_DISPATCH.runId || claim.phase !== "waiting") throw new Error("cursor-receipts claim is not the exact original dispatch idempotency evidence");
+  if (state.status !== "writer1-failed" || state.stage !== "writer1" || state.messagesSent !== 1 || state.writer2Blocked !== true || state.nextStage !== null || state.agentId !== VERIFIED_WRITER1_AGENT_ID || state.threadUrl !== VERIFIED_WRITER1_THREAD_URL || state.runId !== VERIFIED_WRITER1_POST_DISPATCH.runId) throw new Error("state sidecar is not the exact original sent-count evidence");
+  return { dispatchFile, claim, state, idempotencyKey: originalDispatchIdempotencyKey(), messagesSent: 1, idempotencySource: "runtime/cursor-receipts.json:claims[originalIdempotencyKey]", messagesSentSource: "runtime/state.json:messagesSent" };
+}
+
 function postDispatchPrior(root: string, recoveryControl: Dict, artifactZipPath: string, cursorApiKey: string): Dict {
   const dispatchFile = readPriorDispatch(root);
+  verifyOriginalDispatchEvidence(root);
   const dispatch = dispatchFile.dispatch;
   const recovery = VERIFIED_WRITER1_POST_DISPATCH;
   const expectedKey = originalDispatchIdempotencyKey();
@@ -221,8 +244,8 @@ export async function runVerifiedWriter1PostDispatchSealOnly(root = process.cwd(
   if (!cursorApiKey) throw new Error("seal-only mode requires CURSOR_API_KEY to MAC the manifest");
   const dispatchFile = readPriorDispatch(artifactRoot);
   const dispatch = dispatchFile.dispatch;
-  assertOriginalDispatchPins({ ...recovery, inputDigest: dispatch.inputDigest, promptDigest: dispatch.promptDigest, idempotencyKey: dispatch.idempotencyKey });
-  if (dispatch.idempotencyKey !== originalDispatchIdempotencyKey() || dispatch.inputDigest !== POST_DISPATCH_ORIGINAL_INPUT_DIGEST || dispatch.promptDigest !== POST_DISPATCH_ORIGINAL_PROMPT_DIGEST || typeof dispatch.requestDigest !== "string" || !isDigest(dispatch.requestDigest)) throw new Error("downloaded dispatch receipt is not the signed original receipt");
+  assertOriginalDispatchPins(recovery);
+  const originalEvidence = verifyOriginalDispatchEvidence(artifactRoot);
   const artifactZip = readFileSync(artifactZipPath);
   const pins = recovery.receiptPins;
   const manifest: CursorPostDispatchReceiptManifest = {
@@ -248,7 +271,7 @@ export async function runVerifiedWriter1PostDispatchSealOnly(root = process.cwd(
     threadUrl: VERIFIED_WRITER1_POST_DISPATCH.threadUrl, requestedModel: VERIFIED_WRITER1_POST_DISPATCH.requestedModel, resolvedModel: VERIFIED_WRITER1_POST_DISPATCH.resolvedModel,
     effort: "high", fast: false, originalInputDigest: POST_DISPATCH_ORIGINAL_INPUT_DIGEST, originalPromptDigest: POST_DISPATCH_ORIGINAL_PROMPT_DIGEST,
     originalIdempotencyKey: originalDispatchIdempotencyKey(), originalRequestDigest: dispatch.requestDigest, messagesSent: 1, recoveryMessagesSent: 0,
-    manifestPath: "canary/runtime/writer1-dispatch-manifest.json", manifestDigest: manifest.manifestDigest, manifestMac: manifest.manifestMac, writer2Blocked: true, nextStage: null,
+    manifestPath: "canary/runtime/writer1-dispatch-manifest.json", manifestDigest: manifest.manifestDigest, manifestMac: manifest.manifestMac, originalIdempotencySource: originalEvidence.idempotencySource, originalMessagesSentSource: originalEvidence.messagesSentSource, writer2Blocked: true, nextStage: null,
   });
   return { status: "manifest-sealed", stage: "writer1", manifestPath: "canary/runtime/writer1-dispatch-manifest.json" };
 }

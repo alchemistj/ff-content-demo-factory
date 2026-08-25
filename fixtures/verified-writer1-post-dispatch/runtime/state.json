@@ -1,0 +1,11 @@
+{
+  "status": "writer1-failed",
+  "stage": "writer1",
+  "errorCode": "WRITER1_OUTPUT_INVALID",
+  "writer2Blocked": true,
+  "nextStage": null,
+  "messagesSent": 1,
+  "agentId": "bc-2486f645-c31c-4532-8145-fbe3af1d45a8",
+  "threadUrl": "https://cursor.com/agents/bc-2486f645-c31c-4532-8145-fbe3af1d45a8",
+  "runId": "run-1686013d-dec5-454c-a39e-5817448e6a96"
+}

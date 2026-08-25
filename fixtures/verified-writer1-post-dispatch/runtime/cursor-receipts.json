@@ -1,0 +1,20 @@
+{
+  "receipts": {},
+  "claims": {
+    "bc-2486f645-c31c-4532-8145-fbe3af1d45a8:writer1:correction:v2:sha256:f4f59e9c645391266172892e4651f0da4ccedaa2bc86e35217a0ab8699fd0c1f:sha256:e9c39355c8f0973250ebd97ad1b3b69c9e09c840796f39336abd5664c20303e3": {
+      "key": "bc-2486f645-c31c-4532-8145-fbe3af1d45a8:writer1:correction:v2:sha256:f4f59e9c645391266172892e4651f0da4ccedaa2bc86e35217a0ab8699fd0c1f:sha256:e9c39355c8f0973250ebd97ad1b3b69c9e09c840796f39336abd5664c20303e3",
+      "stage": "writer1",
+      "runId": "sha256:f4f59e9c645391266172892e4651f0da4ccedaa2bc86e35217a0ab8699fd0c1f",
+      "inputDigest": "sha256:f4f59e9c645391266172892e4651f0da4ccedaa2bc86e35217a0ab8699fd0c1f",
+      "promptDigest": "sha256:e9c39355c8f0973250ebd97ad1b3b69c9e09c840796f39336abd5664c20303e3",
+      "ownerToken": "2339:1787645443719:0.8306688183974302",
+      "requestedAgentId": "bc-2486f645-c31c-4532-8145-fbe3af1d45a8",
+      "claimedAt": "2026-08-25T08:10:43.719Z",
+      "heartbeatAt": "2026-08-25T08:10:45.884Z",
+      "leaseUntil": "2026-08-25T08:11:13.719Z",
+      "phase": "waiting",
+      "agentId": "bc-2486f645-c31c-4532-8145-fbe3af1d45a8",
+      "jobId": "run-1686013d-dec5-454c-a39e-5817448e6a96"
+    }
+  }
+}
