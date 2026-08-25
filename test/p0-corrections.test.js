@@ -157,7 +157,7 @@ test('fifth correction verifies dispatch digest, authoritative target, and forei
   const bundle = { schemaVersion: 'cursor-cloud-agent-bundle-v1', model: packet.model, dispatch: { ...packet, commentUrl: 'https://github.com/foreign/repo/issues/8#issuecomment-1' }, inputManifestDigest: 'sha256:manifest', envelope: { checkedOutSha: 'head-1', inputManifestDigest: 'sha256:manifest' } };
   assert.throws(() => validateBundle(bundle, { expectedHeadSha: 'head-1', inputManifestDigest: 'sha256:manifest', dispatch: { issueNumber: 8, prNumber: 1, branch: packet.branch }, repository: 'alchemistj/ff-content-demo-factory' }), /foreign|missing/);
   const dispatchWorkflow = fs.readFileSync('.github/workflows/cursor-cloud-agent-dispatch.yml', 'utf8');
-  assert.match(dispatchWorkflow, /concurrency:/); assert.match(dispatchWorkflow, /Dispatch packet digest/); assert.match(dispatchWorkflow, /--paginate/);
+  assert.match(dispatchWorkflow, /concurrency:/); assert.match(dispatchWorkflow, /dispatchDigest/); assert.match(dispatchWorkflow, /--paginate/);
 });
 
 test('fifth correction exposes executable phase-A durable handoff without Cursor API credentials', async () => {
