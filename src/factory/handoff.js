@@ -79,8 +79,10 @@ function validateTerminalCursorResult(result, expected) {
   required(result.commentId, 'Cursor terminal result comment id');
   const repository = result.pending.dispatchPacket.repository;
   const issueNumber = String(result.pending.dispatchPacket.issueNumber);
+  const prNumber = String(result.pending.dispatchPacket.prNumber);
   const escapedRepository = String(repository).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-  const commentPattern = new RegExp(`^https://github\\.com/${escapedRepository}/issues/${issueNumber}#issuecomment-([0-9]+)$`);
+  if (issueNumber !== '8' || prNumber !== '1') throw new Error('Cursor terminal result Issue/PR target is not the authoritative Issue 8 / PR 1 pair');
+  const commentPattern = new RegExp(`^https://github\\.com/${escapedRepository}/(?:issues/${issueNumber}|pull/${prNumber})#issuecomment-([0-9]+)$`);
   const commentMatch = commentPattern.exec(String(result.commentUrl || ''));
   if (!commentMatch || String(result.commentId) !== commentMatch[1]) throw new Error('Cursor terminal result comment URL is not bound to the authoritative repository, issue, and comment id');
   if (result.authorType != null && result.authorType !== 'Bot') throw new Error('Cursor terminal result bot identity is not authenticated');
