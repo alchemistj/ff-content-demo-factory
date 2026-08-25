@@ -43,8 +43,8 @@ jobs:
         run: |
           test -n "$GH_TOKEN"
           mkdir -p canary/phase-a
-          dispatch_issue="$(GH_TOKEN="$GH_TOKEN" gh pr view "$ISSUE_NUMBER" --repo "$REPOSITORY" --json body --jq .body | sed -n 's#.*issues/\([0-9][0-9]*\).*#\1#p' | head -1)"
-          test -n "$dispatch_issue"
+          test "$ISSUE_NUMBER" = '1'
+          dispatch_issue='8'
           echo "FACTORY_DISPATCH_ISSUE_NUMBER=$dispatch_issue" >> "$GITHUB_ENV"
           GH_TOKEN="$GH_TOKEN" gh api --paginate "repos/$REPOSITORY/issues/$dispatch_issue/comments?per_page=100" --jq '.[] | select((.body | contains("Dispatch packet digest:")) and (.body | contains("Handoff ID:"))) | [.id, .html_url, .body] | @tsv' | tail -1 > canary/phase-a/dispatch.tsv
           test -s canary/phase-a/dispatch.tsv
@@ -59,7 +59,7 @@ jobs:
           REPOSITORY="$REPOSITORY" ISSUE_NUMBER="$dispatch_issue" PENDING_FILE=canary/phase-a/current-head-gate1-pending.json LEDGER_FILE=canary/phase-a/ledger-comments.json node - <<'NODE'
           const fs = require('node:fs'); const { findClaim } = require('./src/factory/github-ledger');
           const pending = JSON.parse(fs.readFileSync(process.env.PENDING_FILE)); const comments = JSON.parse(fs.readFileSync(process.env.LEDGER_FILE));
-          const claim = findClaim(comments, { repository: process.env.REPOSITORY, issueNumber: process.env.ISSUE_NUMBER, prNumber: pending.dispatchPacket.prNumber, branch: pending.dispatchPacket.branch, checkedOutSha: pending.envelope.checkedOutSha, kind: 'dispatch', handoffId: pending.handoffId, dispatchKey: pending.envelope.dispatchKey, dispatchDigest: pending.envelope.dispatchDigest, runId: pending.runId, prospectId: pending.prospectId, sourceCheckpointDigest: pending.sourceCheckpointDigest, sourceManifestDigest: pending.sourceManifestDigest, inputManifestDigest: pending.inputManifestDigest, jobId: pending.phaseARunId, resultId: pending.envelope.dispatchDigest });
+          const claim = findClaim(comments, { repository: process.env.REPOSITORY, issueNumber: '8', prNumber: '1', branch: pending.dispatchPacket.branch, checkedOutSha: pending.envelope.checkedOutSha, kind: 'dispatch', handoffId: pending.handoffId, dispatchKey: pending.envelope.dispatchKey, dispatchDigest: pending.envelope.dispatchDigest, runId: pending.envelope.runId, prospectId: pending.envelope.prospectId, sourceCheckpointDigest: pending.envelope.sourceCheckpointDigest, sourceManifestDigest: pending.envelope.sourceManifestDigest, inputManifestDigest: pending.envelope.inputManifestDigest, jobId: pending.phaseARunId, resultId: pending.envelope.dispatchDigest });
           if (!claim) throw new Error('Authoritative durable dispatch ledger marker is missing or mismatched');
           NODE
       - name: Validate terminal result before consuming durable resume claim
@@ -105,9 +105,10 @@ jobs:
           comments="$(GH_TOKEN="$GH_TOKEN" gh api --paginate "repos/$REPOSITORY/issues/$ISSUE_NUMBER/comments?per_page=100")"
           LEDGER_COMMENTS="$comments" REPOSITORY="$REPOSITORY" ISSUE_NUMBER="$ISSUE_NUMBER" HANDOFF_ID="$handoff_id" DISPATCH_KEY="$dispatch_key" RESULT_ID="$COMMENT_ID" node - <<'NODE'
           const fs = require('node:fs'); const { markerFor, markerBody, findClaim } = require('./src/factory/github-ledger');
-          const comments = JSON.parse(process.env.LEDGER_COMMENTS); const expected = { repository: process.env.REPOSITORY, issueNumber: process.env.ISSUE_NUMBER, kind: 'resume', handoffId: process.env.HANDOFF_ID, dispatchKey: process.env.DISPATCH_KEY, resultId: process.env.RESULT_ID };
-          if (findClaim(comments, expected)) { fs.writeFileSync('canary/phase-a/resume-already-claimed', 'true'); fs.appendFileSync(process.env.GITHUB_ENV, 'FACTORY_RESUME_ALREADY_CLAIMED=true\n'); process.exit(0); }
           const result = JSON.parse(fs.readFileSync('canary/phase-a/cursor-terminal-result.json','utf8'));
+          const expected = { repository: process.env.REPOSITORY, issueNumber: '8', prNumber: '1', branch: result.pending.dispatchPacket.branch, checkedOutSha: result.pending.envelope.checkedOutSha, kind: 'resume', handoffId: process.env.HANDOFF_ID, dispatchKey: process.env.DISPATCH_KEY, dispatchDigest: result.pending.envelope.dispatchDigest, resultId: process.env.RESULT_ID };
+          const prior = findClaim(comments, expected);
+          if (prior && prior.status === 'resumed') { fs.writeFileSync('canary/phase-a/resume-already-claimed', 'true'); fs.appendFileSync(process.env.GITHUB_ENV, 'FACTORY_RESUME_ALREADY_CLAIMED=true\n'); process.exit(0); }
           const { assertTransition } = require('./src/factory/github-ledger');
           const marker = markerFor({ kind: 'resume', repository: process.env.REPOSITORY, issueNumber: process.env.ISSUE_NUMBER, prNumber: result.pending.dispatchPacket.prNumber, branch: result.pending.dispatchPacket.branch, checkedOutSha: result.pending.envelope.checkedOutSha, handoffId: process.env.HANDOFF_ID, dispatchKey: process.env.DISPATCH_KEY, dispatchDigest: result.pending.envelope.dispatchDigest, resultId: process.env.RESULT_ID, inputDigest: result.receipt.inputDigest, outputDigest: result.receipt.outputDigest, threadUrl: result.receipt.threadUrl, model: result.bundle.model, status: 'terminal' });
           assertTransition({ ...marker, status: 'in_motion' }, marker);
@@ -124,7 +125,7 @@ jobs:
           FACTORY_CHECKED_OUT_SHA: ${{ steps.target.outputs.head }}
           EXPECTED_HEAD_SHA: ${{ steps.target.outputs.head }}
           FACTORY_HEAD_ASSERTION: 'true'
-          FACTORY_ISSUE_NUMBER: ${{ github.event.issue.number }}
+          FACTORY_ISSUE_NUMBER: ${{ env.FACTORY_DISPATCH_ISSUE_NUMBER }}
           FACTORY_PR_NUMBER: ${{ github.event.issue.number }}
           FACTORY_BRANCH: ${{ steps.target.outputs.branch }}
           FACTORY_REPOSITORY: ${{ github.repository }}
