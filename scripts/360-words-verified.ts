@@ -1,4 +1,4 @@
-import { readFileSync } from "node:fs";
+import { lstatSync, readFileSync, readdirSync } from "node:fs";
 import { createHash } from "node:crypto";
 import * as fs from "node:fs/promises";
 import * as path from "node:path";
@@ -54,7 +54,73 @@ export const VERIFIED_WRITER1_PROMPT_V3_DIGEST = digestWriter1QuarantineCorrecti
 export const VERIFIED_WRITER1_CORRECTION_V3_SOURCE = WRITER1_QUARANTINE_CORRECTION_V3_SOURCE;
 export const VERIFIED_WRITER1_CORRECTION_V3_ARTIFACT_PATHS = Object.freeze(["runtime/failure.json", "runtime/state.json", "quarantine/writer1-rejected-output.txt", "quarantine/writer1-rejection.json"] as const);
 export function validateVerifiedWriter1CorrectionV3ArtifactListing(paths: readonly string[]): void {
+  for (const item of paths) {
+    if (item.startsWith("/") || item.includes("\\") || item.split("/").some((part) => part === "" || part === "." || part === "..")) throw new Error("verified v3 artifact contains an unsafe or traversing path");
+  }
   if (JSON.stringify([...paths].sort()) !== JSON.stringify([...VERIFIED_WRITER1_CORRECTION_V3_ARTIFACT_PATHS].sort())) throw new Error("verified Writer1 correction-v3 source artifact listing is not the exact four-file manifest");
+}
+
+function exactKeys(value: Dict, expected: readonly string[], label: string): void {
+  if (JSON.stringify(Object.keys(value).sort()) !== JSON.stringify(expected)) throw new Error(`${label} has an unexpected JSON key set`);
+}
+
+function walkArtifactFiles(root: string, current: string, output: string[]): void {
+  for (const entry of readdirSync(current, { withFileTypes: true })) {
+    if (entry.isSymbolicLink()) throw new Error("verified v3 source artifact contains a symlink");
+    const full = path.join(current, entry.name);
+    const relative = path.relative(root, full).split(path.sep).join("/");
+    if (relative.startsWith("/") || relative.includes("\\") || relative.split("/").some((part) => part === "" || part === "." || part === "..")) throw new Error("verified v3 artifact contains an unsafe or traversing path");
+    if (entry.isDirectory()) walkArtifactFiles(root, full, output);
+    else if (entry.isFile()) output.push(relative);
+    else throw new Error("verified v3 source artifact contains a non-regular filesystem entry");
+  }
+}
+
+export function validateVerifiedWriter1CorrectionV3ArtifactLayout(root: string): void {
+  const rootStat = lstatSync(root);
+  if (!rootStat.isDirectory() || rootStat.isSymbolicLink()) throw new Error("verified v3 source artifact root must be a real directory");
+  const files: string[] = [];
+  walkArtifactFiles(root, root, files);
+  validateVerifiedWriter1CorrectionV3ArtifactListing(files);
+  for (const logicalPath of VERIFIED_WRITER1_CORRECTION_V3_ARTIFACT_PATHS) {
+    const stat = lstatSync(path.join(root, logicalPath));
+    if (!stat.isFile() || stat.isSymbolicLink()) throw new Error(`verified v3 source artifact path is not a regular file: ${logicalPath}`);
+  }
+}
+
+export function verifyVerifiedWriter1CorrectionV3PinnedBytes(bytes: Buffer, pin: { size: number; digest: string }): void {
+  const digest = `sha256:${createHash("sha256").update(bytes).digest("hex")}`;
+  if (bytes.length !== pin.size || digest !== pin.digest) throw new Error("verified v3 pinned bytes do not match size or digest");
+}
+
+export function validateVerifiedWriter1CorrectionV3SidecarMetadata(input: { rejection: Dict; failure: Dict; state: Dict; rawDigest: string; rawSize: number }): void {
+  exactKeys(input.rejection, VERIFIED_WRITER1_CORRECTION_V3_REJECTION_KEYS, "verified v3 rejection receipt");
+  exactKeys(input.failure, VERIFIED_WRITER1_CORRECTION_V3_FAILURE_KEYS, "verified v3 failure state");
+  exactKeys(input.state, VERIFIED_WRITER1_CORRECTION_V3_STATE_KEYS, "verified v3 runtime state");
+  const post = VERIFIED_WRITER1_POST_DISPATCH;
+  if (input.rawDigest !== VERIFIED_WRITER1_CORRECTION_V3_SOURCE.rawDigest || input.rawSize !== VERIFIED_WRITER1_CORRECTION_V3_SOURCE.size) throw new Error("verified v3 raw source pins are invalid");
+  const rejection = input.rejection;
+  if (rejection.schemaVersion !== "verified-writer1-rejection/v1" || rejection.status !== "rejected-unapproved" || rejection.stage !== "writer1" || rejection.actionRunId !== post.actionRunId || Number(rejection.artifactId) !== post.artifactId || rejection.agentId !== post.agentId || rejection.runId !== post.runId || rejection.threadUrl !== post.threadUrl || rejection.requestedModel !== post.requestedModel || rejection.resolvedModel !== post.resolvedModel || rejection.effort !== "high" || rejection.fast !== false || rejection.rawOutputPath !== VERIFIED_WRITER1_REJECTED_OUTPUT_PATH || rejection.rawOutputDigest !== input.rawDigest || rejection.rawOutputSize !== input.rawSize || rejection.extractedFormat !== "plain-json" || rejection.validationCode !== "WRITER1_OUTPUT_INVALID" || rejection.reason !== "post-dispatch Writer1 output contains banned mutable language at /pages/0/sections/3/body" || rejection.approvedOutputPath !== "canary/outputs/writer1-output.json" || rejection.recoveryMessagesSent !== 0 || rejection.approved !== false || rejection.writer2Blocked !== true || rejection.nextStage !== null) throw new Error("verified v3 rejection receipt identity or raw binding is invalid");
+  const failure = input.failure;
+  if (failure.schemaVersion !== "verified-writer-failure/v2" || failure.status !== "writer1-validation-failed-quarantined" || failure.stage !== "writer1" || failure.agentId !== post.agentId || failure.runId !== post.runId || failure.threadUrl !== post.threadUrl || failure.errorCode !== "CURSOR_POST_DISPATCH_OUTPUT_INVALID" || failure.promptDigest !== POST_DISPATCH_ORIGINAL_PROMPT_DIGEST || failure.messagesSent !== 1 || failure.recoveryMessagesSent !== 0 || failure.quarantinePath !== VERIFIED_WRITER1_REJECTED_OUTPUT_PATH || failure.rejectionReceiptPath !== VERIFIED_WRITER1_REJECTION_RECEIPT_PATH || failure.writer2Blocked !== true || failure.nextStage !== null) throw new Error("verified v3 failure state identity is invalid");
+  const state = input.state;
+  if (state.schemaVersion !== "verified-writer-state/v2" || state.status !== "writer1-validation-failed-quarantined" || state.stage !== "writer1" || state.actionRunId !== post.actionRunId || Number(state.artifactId) !== post.artifactId || state.agentId !== post.agentId || state.runId !== post.runId || state.threadUrl !== post.threadUrl || state.requestedModel !== post.requestedModel || state.resolvedModel !== post.resolvedModel || state.effort !== "high" || state.fast !== false || state.messagesSent !== 1 || state.quarantinePath !== VERIFIED_WRITER1_REJECTED_OUTPUT_PATH || state.rejectionReceiptPath !== VERIFIED_WRITER1_REJECTION_RECEIPT_PATH || state.rawOutputDigest !== input.rawDigest || state.recoveryMessagesSent !== 0 || state.writer2Blocked !== true || state.nextStage !== null) throw new Error("verified v3 runtime state identity or raw binding is invalid");
+}
+
+export function validateVerifiedWriter1CorrectionV3ArtifactFiles(root: string): void {
+  validateVerifiedWriter1CorrectionV3ArtifactLayout(root);
+  const rawBytes = readFileSync(path.join(root, VERIFIED_WRITER1_CORRECTION_V3_SOURCE.path));
+  const rawDigest = `sha256:${createHash("sha256").update(rawBytes).digest("hex")}`;
+  verifyVerifiedWriter1CorrectionV3PinnedBytes(rawBytes, { size: VERIFIED_WRITER1_CORRECTION_V3_SOURCE.size, digest: VERIFIED_WRITER1_CORRECTION_V3_SOURCE.rawDigest });
+  const readPinnedJson = (pin: { path: string; size: number; digest: string }): Dict => {
+    const bytes = readFileSync(path.join(root, pin.path));
+    verifyVerifiedWriter1CorrectionV3PinnedBytes(bytes, pin);
+    try { return JSON.parse(bytes.toString("utf8")) as Dict; } catch { throw new Error(`verified v3 sidecar is not JSON: ${pin.path}`); }
+  };
+  const rejection = readPinnedJson(VERIFIED_WRITER1_CORRECTION_V3_SIDECAR_PINS.rejection);
+  const failure = readPinnedJson(VERIFIED_WRITER1_CORRECTION_V3_SIDECAR_PINS.failure);
+  const state = readPinnedJson(VERIFIED_WRITER1_CORRECTION_V3_SIDECAR_PINS.state);
+  validateVerifiedWriter1CorrectionV3SidecarMetadata({ rejection, failure, state, rawDigest, rawSize: rawBytes.length });
 }
 export const VERIFIED_WRITER1_ROUTES = ["/garage-door-repair", "/garage-door-installation"] as const;
 export const VERIFIED_WRITER1_POST_DISPATCH = Object.freeze({
@@ -75,6 +141,15 @@ export const VERIFIED_WRITER1_POST_DISPATCH_SEALED_MANIFEST_SCHEMA = "verified-w
 export const VERIFIED_WRITER1_POST_DISPATCH_MANIFEST_PATH = "runtime/writer1-dispatch-manifest.json" as const;
 export const VERIFIED_WRITER1_REJECTED_OUTPUT_PATH = "canary/quarantine/writer1-rejected-output.txt" as const;
 export const VERIFIED_WRITER1_REJECTION_RECEIPT_PATH = "canary/quarantine/writer1-rejection.json" as const;
+export const VERIFIED_WRITER1_CORRECTION_V3_ARTIFACT_ZIP_SIZE = 6778;
+export const VERIFIED_WRITER1_CORRECTION_V3_SIDECAR_PINS = Object.freeze({
+  rejection: Object.freeze({ path: "quarantine/writer1-rejection.json", size: 1014, digest: "sha256:2e83fcd65d4b863edef6309939f473dfcf1f605fe6daf82676afddd01d17cfd6" }),
+  failure: Object.freeze({ path: "runtime/failure.json", size: 705, digest: "sha256:1e72c616b0d31ab55907cd1a6e6dfeb080be611716c318dc72f44b2e5842c0ee" }),
+  state: Object.freeze({ path: "runtime/state.json", size: 824, digest: "sha256:bd00f8b779ed21d6e381a78c0a05d80f76c0b9485a7a65f97c407fee3599e945" }),
+});
+const VERIFIED_WRITER1_CORRECTION_V3_REJECTION_KEYS = Object.freeze(["actionRunId", "agentId", "approved", "approvedOutputPath", "artifactId", "effort", "extractedFormat", "fast", "nextStage", "rawOutputDigest", "rawOutputPath", "rawOutputSize", "reason", "recoveryMessagesSent", "requestedModel", "resolvedModel", "runId", "schemaVersion", "stage", "status", "threadUrl", "validationCode", "writer2Blocked"].sort());
+const VERIFIED_WRITER1_CORRECTION_V3_FAILURE_KEYS = Object.freeze(["agentId", "errorCode", "messagesSent", "nextStage", "promptDigest", "quarantinePath", "recoveryMessagesSent", "rejectionReceiptPath", "runId", "schemaVersion", "stage", "status", "threadUrl", "writer2Blocked"].sort());
+const VERIFIED_WRITER1_CORRECTION_V3_STATE_KEYS = Object.freeze(["actionRunId", "agentId", "artifactId", "effort", "fast", "messagesSent", "nextStage", "quarantinePath", "rawOutputDigest", "recoveryMessagesSent", "rejectionReceiptPath", "requestedModel", "resolvedModel", "runId", "schemaVersion", "stage", "status", "threadUrl", "writer2Blocked"].sort());
 
 function originalDispatchIdempotencyKey(): string { return POST_DISPATCH_ORIGINAL_IDEMPOTENCY_KEY; }
 function postDispatchBinding(value: Dict): string {

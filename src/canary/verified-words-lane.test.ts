@@ -1,13 +1,13 @@
 import assert from "node:assert/strict";
 import { existsSync, readFileSync } from "node:fs";
-import { mkdtemp, readFile, rm } from "node:fs/promises";
+import { mkdir, mkdtemp, readFile, rm, symlink, writeFile } from "node:fs/promises";
 import * as path from "node:path";
 import { tmpdir } from "node:os";
 import test from "node:test";
 import { EXPECTED_VERIFIED_CORRECTION, EXPECTED_VERIFIED_CORRECTION_V2, EXPECTED_VERIFIED_CORRECTION_V3, selectVerifiedWriter1Dispatch, validateControl as rawValidateControl } from "../../scripts/360-words-control.mjs";
 import { digestWriter1QuarantineCorrectionV3Input, digestWriter1QuarantineCorrectionV3Prompt } from "../../scripts/360-words-recovery-prompt.mjs";
 import { validateSealed, writer1Projection } from "../../scripts/360-words-canary.js";
-import { VERIFIED_WRITER1_AGENT_ID, VERIFIED_WRITER1_PROMPT_DIGEST, VERIFIED_WRITER1_PROMPT_V2_DIGEST, validateVerifiedWriter1Control, validateVerifiedWriter1PostDispatchControl, validateVerifiedWriter1SealOnlyControl, verifyOriginalDispatchEvidence, runVerifiedWriter1Correction, verifyPinnedSealedManifestBytes, quarantineWriter1PostDispatchOutput, persistVerifiedWriterFailureSurface, VERIFIED_WRITER1_REJECTED_OUTPUT_PATH, VERIFIED_WRITER1_REJECTION_RECEIPT_PATH, VERIFIED_WRITER1_CORRECTION_V3_ARTIFACT_PATHS, validateVerifiedWriter1CorrectionV3ArtifactListing } from "../../scripts/360-words-verified.js";
+import { VERIFIED_WRITER1_AGENT_ID, VERIFIED_WRITER1_PROMPT_DIGEST, VERIFIED_WRITER1_PROMPT_V2_DIGEST, validateVerifiedWriter1Control, validateVerifiedWriter1PostDispatchControl, validateVerifiedWriter1SealOnlyControl, verifyOriginalDispatchEvidence, runVerifiedWriter1Correction, verifyPinnedSealedManifestBytes, quarantineWriter1PostDispatchOutput, persistVerifiedWriterFailureSurface, VERIFIED_WRITER1_REJECTED_OUTPUT_PATH, VERIFIED_WRITER1_REJECTION_RECEIPT_PATH, VERIFIED_WRITER1_CORRECTION_V3_ARTIFACT_PATHS, VERIFIED_WRITER1_CORRECTION_V3_ARTIFACT_ZIP_SIZE, VERIFIED_WRITER1_CORRECTION_V3_SIDECAR_PINS, VERIFIED_WRITER1_CORRECTION_V3_SOURCE, validateVerifiedWriter1CorrectionV3ArtifactListing, validateVerifiedWriter1CorrectionV3ArtifactLayout, validateVerifiedWriter1CorrectionV3SidecarMetadata, verifyVerifiedWriter1CorrectionV3PinnedBytes } from "../../scripts/360-words-verified.js";
 import { digestOf } from "../../src/contracts/digests.js";
 import { createHash } from "node:crypto";
 import { assertNoLocalDownstreamGeneration, assertVerifiedDownstreamState, VERIFIED_PUBLIC_ROUTES, VERIFIED_STAGE_POLICY, VERIFIED_WRITER3_SEALED_FACTS } from "../../src/pipeline/verified-words-policy.js";
@@ -117,11 +117,57 @@ test("correction-v3 source artifact requires exactly the four artifact-relative 
     exact.filter((item) => item !== "runtime/state.json"),
     [...exact, "quarantine/decoy.txt"],
     [...exact.filter((item) => item !== "quarantine/writer1-rejected-output.txt"), "quarantine/writer1-rejected-output.json"],
-  ]) assert.throws(() => validateVerifiedWriter1CorrectionV3ArtifactListing(variant), /exact four-file manifest/u);
+    ["../runtime/failure.json", ...exact.slice(1)],
+  ]) assert.throws(() => validateVerifiedWriter1CorrectionV3ArtifactListing(variant), /exact four-file manifest|unsafe or traversing path/u);
   const workflow = readFileSync(path.join(root, ".github/workflows/architect-360-words-canary.yml"), "utf8");
   assert.match(workflow, /runtime\/failure\.json[\s\S]*runtime\/state\.json[\s\S]*quarantine\/writer1-rejected-output\.txt[\s\S]*quarantine\/writer1-rejection\.json/u);
-  assert.match(workflow, /recoveryMessagesSent == 0[\s\S]*writer2Blocked == true/u);
-  assert.match(workflow, /approved == false/u);
+  assert.match(workflow, /validateVerifiedWriter1CorrectionV3ArtifactFiles/u);
+});
+
+test("correction-v3 source artifact pins are exact and reject byte, size, field, symlink, and traversal tampering", async () => {
+  const exactBytes = Buffer.from("exact-sidecar-bytes", "utf8");
+  const exactPin = { size: exactBytes.length, digest: `sha256:${createHash("sha256").update(exactBytes).digest("hex")}` };
+  assert.doesNotThrow(() => verifyVerifiedWriter1CorrectionV3PinnedBytes(exactBytes, exactPin));
+  assert.throws(() => verifyVerifiedWriter1CorrectionV3PinnedBytes(Buffer.from("tampered-sidecar-bytes", "utf8"), exactPin), /size or digest/u);
+  assert.throws(() => verifyVerifiedWriter1CorrectionV3PinnedBytes(exactBytes, { ...exactPin, size: exactPin.size + 1 }), /size or digest/u);
+  assert.equal(VERIFIED_WRITER1_CORRECTION_V3_ARTIFACT_ZIP_SIZE, 6778);
+  assert.equal(VERIFIED_WRITER1_CORRECTION_V3_SIDECAR_PINS.rejection.size, 1014);
+  assert.equal(VERIFIED_WRITER1_CORRECTION_V3_SIDECAR_PINS.failure.size, 705);
+  assert.equal(VERIFIED_WRITER1_CORRECTION_V3_SIDECAR_PINS.state.size, 824);
+  const post = { actionRunId: "32825265478", artifactId: 9554789848, agentId: VERIFIED_WRITER1_AGENT_ID, runId: "run-1686013d-dec5-454c-a39e-5817448e6a96", threadUrl: `https://cursor.com/agents/${VERIFIED_WRITER1_AGENT_ID}`, requestedModel: "cursor-grok-4.6-high", resolvedModel: "grok-4.6", effort: "high", fast: false };
+  const rawDigest = VERIFIED_WRITER1_CORRECTION_V3_SOURCE.rawDigest; const rawSize = VERIFIED_WRITER1_CORRECTION_V3_SOURCE.size;
+  const rejection: any = { actionRunId: post.actionRunId, agentId: post.agentId, approved: false, approvedOutputPath: "canary/outputs/writer1-output.json", artifactId: post.artifactId, effort: post.effort, extractedFormat: "plain-json", fast: post.fast, nextStage: null, rawOutputDigest: rawDigest, rawOutputPath: "canary/quarantine/writer1-rejected-output.txt", rawOutputSize: rawSize, reason: "post-dispatch Writer1 output contains banned mutable language at /pages/0/sections/3/body", recoveryMessagesSent: 0, requestedModel: post.requestedModel, resolvedModel: post.resolvedModel, runId: post.runId, schemaVersion: "verified-writer1-rejection/v1", stage: "writer1", status: "rejected-unapproved", threadUrl: post.threadUrl, validationCode: "WRITER1_OUTPUT_INVALID", writer2Blocked: true };
+  const failure: any = { agentId: post.agentId, errorCode: "CURSOR_POST_DISPATCH_OUTPUT_INVALID", messagesSent: 1, nextStage: null, promptDigest: EXPECTED_POST_DISPATCH_ORIGINAL_PROMPT_DIGEST, quarantinePath: "canary/quarantine/writer1-rejected-output.txt", recoveryMessagesSent: 0, rejectionReceiptPath: "canary/quarantine/writer1-rejection.json", runId: post.runId, schemaVersion: "verified-writer-failure/v2", stage: "writer1", status: "writer1-validation-failed-quarantined", threadUrl: post.threadUrl, writer2Blocked: true };
+  const state: any = { actionRunId: post.actionRunId, agentId: post.agentId, artifactId: post.artifactId, effort: post.effort, fast: post.fast, messagesSent: 1, nextStage: null, quarantinePath: "canary/quarantine/writer1-rejected-output.txt", rawOutputDigest: rawDigest, recoveryMessagesSent: 0, rejectionReceiptPath: "canary/quarantine/writer1-rejection.json", requestedModel: post.requestedModel, resolvedModel: post.resolvedModel, runId: post.runId, schemaVersion: "verified-writer-state/v2", stage: "writer1", status: "writer1-validation-failed-quarantined", threadUrl: post.threadUrl, writer2Blocked: true };
+  assert.doesNotThrow(() => validateVerifiedWriter1CorrectionV3SidecarMetadata({ rejection, failure, state, rawDigest, rawSize }));
+  for (const mutation of [
+    () => { rejection.requestedModel = "wrong-model"; },
+    () => { failure.promptDigest = "sha256:" + "0".repeat(64); },
+    () => { state.messagesSent = 0; },
+    () => { state.extra = true; },
+    () => { rejection.rawOutputSize = rawSize + 1; },
+  ]) {
+    const saved = { rejection: { ...rejection }, failure: { ...failure }, state: { ...state } };
+    mutation();
+    assert.throws(() => validateVerifiedWriter1CorrectionV3SidecarMetadata({ rejection, failure, state, rawDigest, rawSize }), /invalid|unexpected|binding|identity/u);
+    for (const key of Object.keys(rejection)) delete rejection[key]; for (const key of Object.keys(failure)) delete failure[key]; for (const key of Object.keys(state)) delete state[key];
+    Object.assign(rejection, saved.rejection); Object.assign(failure, saved.failure); Object.assign(state, saved.state);
+  }
+  const root = await mkdtemp(path.join(tmpdir(), "ff-writer1-v3-layout-"));
+  try {
+    for (const logicalPath of VERIFIED_WRITER1_CORRECTION_V3_ARTIFACT_PATHS) {
+      const file = path.join(root, logicalPath); await mkdir(path.dirname(file), { recursive: true }); await writeFile(file, "fixture");
+    }
+    assert.doesNotThrow(() => validateVerifiedWriter1CorrectionV3ArtifactLayout(root));
+    await rm(path.join(root, "runtime/failure.json")); await symlink("state.json", path.join(root, "runtime/failure.json"));
+    assert.throws(() => validateVerifiedWriter1CorrectionV3ArtifactLayout(root), /symlink/u);
+  } finally { await rm(root, { recursive: true, force: true }); }
+  const workflow = readFileSync(path.join(process.cwd(), ".github/workflows/architect-360-words-canary.yml"), "utf8");
+  const verifiedSource = readFileSync(path.join(process.cwd(), "scripts/360-words-verified.ts"), "utf8");
+  assert.match(workflow, /EXPECTED_ARTIFACT_ZIP_SIZE: '6778'/u);
+  assert.match(verifiedSource, /2e83fcd65d4b863edef6309939f473dfcf1f605fe6daf82676afddd01d17cfd6/u);
+  assert.match(verifiedSource, /1e72c616b0d31ab55907cd1a6e6dfeb080be611716c318dc72f44b2e5842c0ee/u);
+  assert.match(verifiedSource, /bd00f8b779ed21d6e381a78c0a05d80f76c0b9485a7a65f97c407fee3599e945/u);
 });
 
 test("post-dispatch wake is classified as retrieval-only and cannot reach a follow-up or legacy artifact runner", () => {

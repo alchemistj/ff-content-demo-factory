@@ -112,6 +112,7 @@ jobs:
           EXPECTED_ACTION_RUN_ID: '32838242891'
           EXPECTED_ARTIFACT_ID: '9559472540'
           EXPECTED_ARTIFACT_ZIP_DIGEST: 'sha256:455c10d5928ee64d0d27d5f86eb80f63bd21dd811f601f6666f2c5b878eae824'
+          EXPECTED_ARTIFACT_ZIP_SIZE: '6778'
           EXPECTED_CURSOR_ACTION_RUN_ID: '32825265478'
           EXPECTED_CURSOR_ARTIFACT_ID: '9554789848'
           EXPECTED_AGENT_ID: 'bc-2486f645-c31c-4532-8145-fbe3af1d45a8'
@@ -132,7 +133,7 @@ jobs:
           mkdir -p canary/inputs/writer1-correction-v3-artifact
           gh api "repos/${GITHUB_REPOSITORY}/actions/artifacts/${EXPECTED_ARTIFACT_ID}/zip" > canary/inputs/writer1-correction-v3.zip
           test "sha256:$(sha256sum canary/inputs/writer1-correction-v3.zip | cut -d ' ' -f 1)" = "$EXPECTED_ARTIFACT_ZIP_DIGEST"
-          unzip -q canary/inputs/writer1-correction-v3.zip -d canary/inputs/writer1-correction-v3-artifact
+          test "$(wc -c < canary/inputs/writer1-correction-v3.zip | tr -d ' ')" = "$EXPECTED_ARTIFACT_ZIP_SIZE"
           expected_listing="$(printf '%s\n' runtime/failure.json runtime/state.json quarantine/writer1-rejected-output.txt quarantine/writer1-rejection.json | LC_ALL=C sort)"
           actual_listing="$(unzip -Z1 canary/inputs/writer1-correction-v3.zip | LC_ALL=C sort)"
           test "$actual_listing" = "$expected_listing"
@@ -140,33 +141,12 @@ jobs:
           import { validateVerifiedWriter1CorrectionV3ArtifactListing } from './scripts/360-words-verified.ts';
           validateVerifiedWriter1CorrectionV3ArtifactListing(String(process.env.ACTUAL_LISTING).split('\n').filter(Boolean));
           NODE
-          source_file="canary/inputs/writer1-correction-v3-artifact/$EXPECTED_RAW_PATH"
-          receipt_file='canary/inputs/writer1-correction-v3-artifact/quarantine/writer1-rejection.json'
-          state_file='canary/inputs/writer1-correction-v3-artifact/runtime/state.json'
-          failure_file='canary/inputs/writer1-correction-v3-artifact/runtime/failure.json'
-          test -f "$source_file"
-          test -f "$receipt_file"; test -f "$state_file"; test -f "$failure_file"
-          test "$(wc -c < "$source_file" | tr -d ' ')" = "$EXPECTED_RAW_SIZE"
-          test "sha256:$(sha256sum "$source_file" | cut -d ' ' -f 1)" = "$EXPECTED_RAW_DIGEST"
-          jq -e --arg agent "$EXPECTED_AGENT_ID" --arg run_id "$EXPECTED_CURSOR_RUN_ID" --arg thread "$EXPECTED_THREAD_URL" --arg raw_digest "$EXPECTED_RAW_DIGEST" --argjson raw_size "$EXPECTED_RAW_SIZE" --arg action "$EXPECTED_CURSOR_ACTION_RUN_ID" --argjson artifact "$EXPECTED_CURSOR_ARTIFACT_ID" '
-            .schemaVersion == "verified-writer1-rejection/v1" and .status == "rejected-unapproved" and .stage == "writer1" and
-            .rawOutputPath == "canary/quarantine/writer1-rejected-output.txt" and .rawOutputDigest == $raw_digest and .rawOutputSize == $raw_size and
-            .actionRunId == $action and .artifactId == $artifact and .agentId == $agent and .runId == $run_id and .threadUrl == $thread and
-            .recoveryMessagesSent == 0 and .approved == false and .writer2Blocked == true and .nextStage == null
-          ' "$receipt_file"
-          jq -e --arg agent "$EXPECTED_AGENT_ID" --arg run_id "$EXPECTED_CURSOR_RUN_ID" --arg thread "$EXPECTED_THREAD_URL" --arg raw_digest "$EXPECTED_RAW_DIGEST" --argjson raw_size "$EXPECTED_RAW_SIZE" --arg action "$EXPECTED_CURSOR_ACTION_RUN_ID" --argjson artifact "$EXPECTED_CURSOR_ARTIFACT_ID" '
-            .schemaVersion == "verified-writer-state/v2" and .status == "writer1-validation-failed-quarantined" and .stage == "writer1" and
-            .actionRunId == $action and .artifactId == $artifact and .agentId == $agent and .runId == $run_id and .threadUrl == $thread and
-            .requestedModel == "cursor-grok-4.6-high" and .resolvedModel == "grok-4.6" and .effort == "high" and .fast == false and
-            .quarantinePath == "canary/quarantine/writer1-rejected-output.txt" and .rejectionReceiptPath == "canary/quarantine/writer1-rejection.json" and
-            .rawOutputDigest == $raw_digest and .recoveryMessagesSent == 0 and .writer2Blocked == true and .nextStage == null
-          ' "$state_file"
-          jq -e --arg agent "$EXPECTED_AGENT_ID" --arg run_id "$EXPECTED_CURSOR_RUN_ID" --arg thread "$EXPECTED_THREAD_URL" '
-            .schemaVersion == "verified-writer-failure/v2" and .status == "writer1-validation-failed-quarantined" and .stage == "writer1" and
-            .agentId == $agent and .runId == $run_id and .threadUrl == $thread and .messagesSent == 1 and .recoveryMessagesSent == 0 and
-            .writer2Blocked == true and .nextStage == null and .quarantinePath == "canary/quarantine/writer1-rejected-output.txt" and
-            .rejectionReceiptPath == "canary/quarantine/writer1-rejection.json"
-          ' "$failure_file"
+          mkdir -p canary/inputs/writer1-correction-v3-artifact
+          unzip -q canary/inputs/writer1-correction-v3.zip -d canary/inputs/writer1-correction-v3-artifact
+          SOURCE_ROOT='canary/inputs/writer1-correction-v3-artifact' node --import tsx --input-type=module <<'NODE'
+          import { validateVerifiedWriter1CorrectionV3ArtifactFiles } from './scripts/360-words-verified.ts';
+          validateVerifiedWriter1CorrectionV3ArtifactFiles(String(process.env.SOURCE_ROOT));
+          NODE
 
       - name: Download and verify exact prior Writer1 dispatch artifact
         if: steps.control.outputs.dormant != 'true' && (steps.control.outputs.recovery_version == 'words-writer1-artifact-recovery/v2' || steps.control.outputs.recovery_version == 'words-writer1-artifact-recovery/v3')
