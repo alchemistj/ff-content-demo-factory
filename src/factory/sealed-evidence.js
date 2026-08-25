@@ -12,6 +12,7 @@ const OPPORTUNITY = 'The owned site currently uses Home plus an undifferentiated
 const TRUSTED = TRUSTED_ARTIFACTS['32717620900:9516514426:81587f8422a23313fd7868751061eec7e2fb5926'];
 const HISTORICAL_360 = Object.freeze({
   sourceArtifactDigest: 'sha256:1525d7ad96da0b1b8213dfc38ac2068c94a87540aedbcb85f2bfe5738a4709e0',
+  sourceManifestDigest: 'sha256:490c4d4844a895d97014c8a0d00a50dde2516e81af11f5a5fa31a51837b93573',
   evidenceDigest: 'sha256:0b01030ebdad4ece325a2cb390a79fd1c60ee985cfae6230f30701427486f504',
   pageSetDigest: 'sha256:3111870c0acd262a030cb4a4b6ac56b9d6a3b83567321d5953b4e875d5cf364e',
   prescriptionDigest: 'sha256:c0c9a62b04fe950c0037b237f76c97384b203e056c60b9f967e63e7f2a1b57b9',
@@ -63,6 +64,7 @@ function canonicalApprovedLineageProjection(value = {}) {
   const pageDigest = value.pageSetDigest || (pages.length ? pageSetDigest(pages) : null);
   const approvalProjection = value.approvalProjection || value.approval || {
     sourceArtifactDigest: value.sourceArtifactDigest || null,
+    sourceManifestDigest: value.sourceManifestDigest || null,
     evidenceDigest: value.evidenceDigest || null,
     pageSetDigest: pageDigest,
     selectedServiceIds,
@@ -81,6 +83,7 @@ function canonicalApprovedLineageProjection(value = {}) {
   };
   return {
     sourceArtifactDigest: value.sourceArtifactDigest || null,
+    sourceManifestDigest: value.sourceManifestDigest || null,
     evidenceDigest: value.evidenceDigest || null,
     pageSetDigest: pageDigest,
     prescriptionDigest: value.prescriptionDigest || null,
@@ -94,7 +97,7 @@ function canonicalApprovedLineageProjection(value = {}) {
 function compareApprovedLineage(approved, actual, label = 'Gate 1 output') {
   const expected = canonicalApprovedLineageProjection(approved);
   const received = canonicalApprovedLineageProjection(actual);
-  for (const field of ['sourceArtifactDigest', 'evidenceDigest', 'pageSetDigest', 'prescriptionDigest', 'approvalDigest', 'strategyDigest']) {
+  for (const field of ['sourceArtifactDigest', 'sourceManifestDigest', 'evidenceDigest', 'pageSetDigest', 'prescriptionDigest', 'approvalDigest', 'strategyDigest']) {
     if (!expected[field] || received[field] !== expected[field]) throw new Error(`${label} ${field} does not exactly match approved historical lineage`);
   }
   if (JSON.stringify(received.selectedServiceIds) !== JSON.stringify(expected.selectedServiceIds) || JSON.stringify(received.routes) !== JSON.stringify(expected.routes)) throw new Error(`${label} services/routes do not exactly match approved historical lineage`);
@@ -114,6 +117,7 @@ function verifySealed360Lineage({ root = process.cwd(), discovery, handoff } = {
     ['discovery file', fileDigest(discoveryFile), HISTORICAL_360.discoveryFileDigest],
     ['handoff file', fileDigest(handoffFile), HISTORICAL_360.handoffFileDigest],
     ['sourceArtifactDigest', handoff.sourceArtifactDigest, HISTORICAL_360.sourceArtifactDigest],
+    ['sourceManifestDigest', digest(ledger), HISTORICAL_360.sourceManifestDigest],
     ['evidenceDigest', handoff.evidenceDigest, HISTORICAL_360.evidenceDigest],
     ['pageSetDigest', handoff.pageSetDigest, HISTORICAL_360.pageSetDigest],
     ['prescriptionDigest', handoff.prescriptionDigest, HISTORICAL_360.prescriptionDigest],
