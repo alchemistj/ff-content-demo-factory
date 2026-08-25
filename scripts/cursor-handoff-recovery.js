@@ -35,10 +35,14 @@ function decide({ pending, result, comments }) {
   const existing = findTerminalOutcome(comments, outcome);
   if (existing?.status === 'resumed') return { action: 'noop', status: 'resumed', ownerToken, outcomeKey: ownerToken, existing };
   if (existing?.status === 'phase_b_claimed') return { action: 'recover-phase-b', status: 'phase_b_claimed', ownerToken, outcomeKey: ownerToken, existing };
+  if (existing?.status === 'paid_prepared') return { action: 'recover-prepared', status: 'paid_prepared', ownerToken, outcomeKey: ownerToken, existing };
+  if (existing?.status === 'paid_accepted') return { action: 'recover-accepted', status: 'paid_accepted', ownerToken, outcomeKey: ownerToken, existing };
   if (existing?.status === 'terminal') return { action: 'resume-phase-b', status: 'terminal', ownerToken, outcomeKey: ownerToken, existing };
   const current = findClaim(comments, immutable);
   if (current?.status === 'resumed') return { action: 'noop', status: 'resumed', ownerToken, outcomeKey: ownerToken, existing: current };
   if (current?.status === 'phase_b_claimed') return { action: 'recover-phase-b', status: 'phase_b_claimed', ownerToken, outcomeKey: ownerToken, existing: current };
+  if (current?.status === 'paid_prepared') return { action: 'recover-prepared', status: 'paid_prepared', ownerToken, outcomeKey: ownerToken, existing: current };
+  if (current?.status === 'paid_accepted') return { action: 'recover-accepted', status: 'paid_accepted', ownerToken, outcomeKey: ownerToken, existing: current };
   if (current?.status === 'terminal') return { action: 'resume-phase-b', status: 'terminal', ownerToken, outcomeKey: ownerToken, existing: current };
   if (current?.status === 'in_motion') return { action: 'recover-terminal', status: 'in_motion', ownerToken, outcomeKey: ownerToken, existing: current };
   return { action: 'record-terminal', status: null, ownerToken, outcomeKey: ownerToken, expected: immutable };

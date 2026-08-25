@@ -306,6 +306,16 @@ function createProductionAdapters({
     receiptStore: receipts,
     pollIntervalMs: config.apifyPollIntervalMs ?? 2000,
     maxPollAttempts: config.apifyMaxPollAttempts ?? 1800,
+    production: productionRuntime && env.FACTORY_PHASE_B_PRODUCTION === 'true',
+    operationArtifacts: {
+      'pre-post': {
+        artifactName: env.FACTORY_PAID_PREPARED_ARTIFACT_NAME,
+        artifactId: env.FACTORY_PAID_PREPARED_ARTIFACT_ID,
+        artifactDigest: env.FACTORY_PAID_PREPARED_ARTIFACT_DIGEST,
+        artifactContentDigest: env.FACTORY_PAID_PREPARED_ARTIFACT_CONTENT_DIGEST,
+        artifactOrigin: 'github-actions',
+      },
+    },
   });
   const cursorAdapter = cursor || createCursorAdapter({ apiKey: env.CURSOR_API_KEY, sdk: cursorSdk, modelAlias: env.CURSOR_MODEL || config.cursorModel, clock, receiptStore: receipts, workspace: root });
   const discovery = {

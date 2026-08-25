@@ -4,19 +4,9 @@
 const fs = require('node:fs');
 const path = require('node:path');
 const { markerFor, markerBody, assertTransition, findClaim } = require('../src/factory/github-ledger');
-const { digest } = require('../src/factory/prescription-policy');
 
 function read(file) { return JSON.parse(fs.readFileSync(path.resolve(file), 'utf8')); }
 function write(file, value) { fs.mkdirSync(path.dirname(file), { recursive: true }); fs.writeFileSync(file, `${JSON.stringify(value, null, 2)}\n`); }
-
-function requiredRecoveryArtifact(pending, result) {
-  const artifact = result.receipt?.paidReceiptArtifact || result.receipt?.operationArtifact || pending.receiptArtifact || null;
-  if (!artifact) throw new Error('phase_b_claimed requires a persisted paid-receipt recovery artifact before phase-B work');
-  const fields = { artifactName: artifact.artifactName || artifact.name, artifactId: artifact.artifactId || artifact.id, artifactDigest: artifact.artifactDigest || artifact.digest, artifactContentDigest: artifact.artifactContentDigest || artifact.contentDigest };
-  for (const [name, value] of Object.entries(fields)) if (!value) throw new Error(`phase_b_claimed recovery artifact ${name} is missing`);
-  if (fields.artifactContentDigest !== digest(artifact.content || artifact)) throw new Error('phase_b_claimed recovery artifact content digest is not recomputable');
-  return fields;
-}
 
 // The JSON emitted by cursor-handoff-recovery.js is the sole authority for
 // recovery action.  Workflows may post the files this function emits, but may
@@ -29,7 +19,7 @@ function apply({ pending, result, comments, decision, directory }) {
     write(path.join(directory, 'conflict-quarantined.json'), { ...state, conflict: decision.conflict });
     throw new Error('conflicting terminal result quarantined; phase B is forbidden');
   }
-  if (['noop', 'recover-phase-b'].includes(decision.action)) {
+  if (['noop', 'recover-phase-b', 'recover-prepared', 'recover-accepted'].includes(decision.action)) {
     if (decision.action === 'noop') fs.writeFileSync(path.join(directory, 'resume-already-claimed'), 'true');
     if (decision.action !== 'noop') fs.writeFileSync(path.join(directory, 'terminal-already-recorded'), 'true');
     return state;
@@ -43,7 +33,7 @@ function apply({ pending, result, comments, decision, directory }) {
     jobId: pending.phaseARunId, kind: 'resume', ownerToken: decision.ownerToken, resultId: decision.ownerToken,
     inputDigest: result.receipt.inputDigest, outputDigest: result.receipt.outputDigest,
     threadUrl: result.receipt.threadUrl, model: result.bundle?.model, commentId: result.commentId, commentUrl: result.commentUrl,
-    ...requiredRecoveryArtifact(pending, result),
+    operationState: 'not-started',
   };
   if (decision.action === 'record-terminal') {
     const posted = findClaim(comments, { ...base, kind: 'dispatch', ownerToken: pending.envelope.dispatchKey, resultId: pending.envelope.dispatchDigest, status: 'posted' });

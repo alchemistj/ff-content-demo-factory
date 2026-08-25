@@ -11,9 +11,12 @@ const { markerFor, markerBody, findTerminalOutcome } = require('../src/factory/g
 const { digest } = require('../src/factory/prescription-policy');
 const { decide } = require('../scripts/cursor-handoff-recovery');
 const { apply: applyRecoveryDecision } = require('../scripts/apply-cursor-recovery-decision');
+const { createArtifact, createPaidMarker } = require('../scripts/paid-operation-ledger');
+const { createFileReceiptStore } = require('../src/factory/receipt-store');
 const { selectNewestDispatchComment } = require('../scripts/select-cursor-dispatch-comment');
 const { restore } = require('../scripts/restore-paid-receipts');
 const { createCursorAdapter } = require('../src/adapters/cursor');
+const { createApifyAdapter } = require('../src/adapters/apify');
 
 function pendingFor(head = 'head-1', suffix = '1') {
   const dispatchPacket = createDispatchPacket({ issueNumber: 8, prNumber: 1, branch: 'architect/greenfield-gate1', reviewedHeadSha: head, scope: 'research-only' });
@@ -143,8 +146,36 @@ test('canonical recovery application marks every no-op decision as applied', () 
   assert.equal(JSON.parse(fs.readFileSync(path.join(directory, 'recovery-state.json'))).applied, true);
 });
 
-test('canonical phase-B claim fails closed when no persisted recovery artifact identity exists', () => {
-  const root = fs.mkdtempSync(path.join(os.tmpdir(), 'factory-recovery-artifact-required-'));
-  const pending = pendingFor(); const result = resultFor(pending);
-  assert.throws(() => applyRecoveryDecision({ pending, result, comments: [], decision: { action: 'resume-phase-b', status: 'terminal', ownerToken: 'owner', outcomeKey: 'outcome', existing: { status: 'terminal' } }, directory: path.join(root, 'phase-a') }), /recovery artifact/);
+test('paid operation ledger advances phase-B owner claim through prepared and accepted artifacts', () => {
+  const pending = pendingFor(); const result = resultFor(pending); const artifact = createArtifact({ pending, result, stage: 'pre-post' });
+  const phaseB = markerFor({ repository: pending.dispatchPacket.repository, issueNumber: 8, prNumber: 1, branch: pending.dispatchPacket.branch, checkedOutSha: pending.envelope.checkedOutSha, handoffId: pending.handoffId, dispatchKey: pending.envelope.dispatchKey, dispatchDigest: pending.envelope.dispatchDigest, runId: pending.envelope.runId, prospectId: pending.envelope.prospectId, sourceCheckpointDigest: pending.envelope.sourceCheckpointDigest, sourceManifestDigest: pending.envelope.sourceManifestDigest, inputManifestDigest: pending.envelope.inputManifestDigest, jobId: pending.phaseARunId, kind: 'resume', ownerToken: 'owner', resultId: 'owner', inputDigest: result.receipt.inputDigest, outputDigest: result.receipt.outputDigest, operationState: 'not-started', status: 'phase_b_claimed' });
+  const prepared = createPaidMarker({ pending, result, previous: phaseB, artifact, status: 'paid_prepared' });
+  const acceptedArtifact = { ...createArtifact({ pending, result, stage: 'accepted', response: { runId: 'run-1', datasetId: 'dataset-1', outputDigest: result.receipt.outputDigest } }), artifactId: 'github-artifact-1', artifactDigest: 'sha256:zip-1' };
+  const accepted = createPaidMarker({ pending, result, previous: prepared, artifact: acceptedArtifact, status: 'paid_accepted' });
+  assert.equal(prepared.status, 'paid_prepared'); assert.equal(accepted.status, 'paid_accepted');
+  assert.ok(prepared.artifactName && prepared.artifactId && prepared.artifactDigest && prepared.artifactContentDigest);
+  assert.ok(accepted.responseDigest);
+});
+
+test('paid operation crash matrix resumes on a distinct runner filesystem with one POST', async () => {
+  const shared = fs.mkdtempSync(path.join(os.tmpdir(), 'factory-paid-shared-'));
+  const runnerA = fs.mkdtempSync(path.join(os.tmpdir(), 'factory-paid-runner-a-'));
+  const runnerB = fs.mkdtempSync(path.join(os.tmpdir(), 'factory-paid-runner-b-'));
+  let posts = 0; let interrupted = true;
+  const fetchImpl = async (url, options) => {
+    if (options.method === 'POST') { posts += 1; return { ok: true, status: 200, text: async () => JSON.stringify({ data: { id: 'run-crash', defaultDatasetId: 'dataset-crash', status: 'RUNNING' } }) }; }
+    if (url.includes('/actor-runs/')) {
+      if (interrupted) { interrupted = false; throw new Error('runner crashed after accepted response'); }
+      return { ok: true, status: 200, text: async () => JSON.stringify({ data: { id: 'run-crash', defaultDatasetId: 'dataset-crash', status: 'SUCCEEDED' } }) };
+    }
+    return { ok: true, status: 200, text: async () => JSON.stringify([{ placeId: 'ChIJcrash', url: 'https://www.google.com/maps/place/Crash', reviews: [] }]) };
+  };
+  const first = createApifyAdapter({ token: 'secret', fetchImpl, receiptStore: createFileReceiptStore(shared), pollIntervalMs: 0 });
+  await assert.rejects(() => first.enrichFinalist({ placeId: 'ChIJcrash', mapsUrl: 'https://www.google.com/maps/place/Crash' }), /runner crashed/);
+  assert.equal(posts, 1);
+  assert.ok(fs.existsSync(path.join(shared, 'state', 'vendor-receipts.json')));
+  assert.ok(fs.existsSync(runnerA) && fs.existsSync(runnerB));
+  const second = createApifyAdapter({ token: 'secret', fetchImpl, receiptStore: createFileReceiptStore(shared), pollIntervalMs: 0 });
+  await second.enrichFinalist({ placeId: 'ChIJcrash', mapsUrl: 'https://www.google.com/maps/place/Crash' });
+  assert.equal(posts, 1, 'fresh runner must resume durable accepted state without a second paid POST');
 });

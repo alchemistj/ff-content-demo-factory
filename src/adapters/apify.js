@@ -141,7 +141,7 @@ function normalizeError(error) {
   return error instanceof Error ? error.message.replace(/Bearer\s+\S+/gi, 'Bearer [redacted]') : String(error);
 }
 
-function createApifyAdapter({ token, fetchImpl = globalThis.fetch, clock = () => new Date().toISOString(), pollIntervalMs = 0, maxPollAttempts = 100, receiptStore = new Map(), reconcileAcceptance = async () => null }) {
+function createApifyAdapter({ token, fetchImpl = globalThis.fetch, clock = () => new Date().toISOString(), pollIntervalMs = 0, maxPollAttempts = 100, receiptStore = new Map(), reconcileAcceptance = async () => null, operationArtifacts = {}, production = false }) {
   required(token, 'APIFY_API_TOKEN');
   required(fetchImpl, 'fetchImpl');
   const enrichmentReceipts = new Map();
@@ -195,6 +195,7 @@ function createApifyAdapter({ token, fetchImpl = globalThis.fetch, clock = () =>
     if (prior?.status === 'running') return resumeActor(prior, input, jobKey);
     if (prior?.status === 'failed') throw new Error(`Apify run ${prior.apifyStatus || 'failed'} requires an explicit Architect retry decision`);
     if (prior?.status === 'needs-architect-review' || prior?.status === 'post-attempted' || prior?.status === 'intent') {
+      if (production && prior.artifactOrigin !== 'github-actions') throw new Error('Production paid operation cannot reconcile a local-only or invented vendor receipt');
       const reconciled = await reconcileAcceptance({ actorId: ACTOR_ID, operation, jobKey, input, idempotencyKey: prior.idempotencyKey, requestDigest: prior.requestDigest, prior });
       const runId = reconciled?.runId || reconciled?.id;
       const datasetId = reconciled?.datasetId || reconciled?.defaultDatasetId;
@@ -209,12 +210,16 @@ function createApifyAdapter({ token, fetchImpl = globalThis.fetch, clock = () =>
     }
     const requestDigest = crypto.createHash('sha256').update(JSON.stringify(input)).digest('hex');
     const idempotencyKey = `factory-apify-${stableHash(`${jobKey}:${requestDigest}`)}`;
+    const preparedIdentity = operationArtifacts['pre-post'] || operationArtifacts.prePost || null;
+    if (production && (!preparedIdentity || preparedIdentity.artifactOrigin !== 'github-actions' || !preparedIdentity.artifactId || !preparedIdentity.artifactDigest)) {
+      throw new Error('Production paid operation requires the verified GitHub pre-POST artifact identity before Apify POST');
+    }
     await persistOperationIntent(receiptStore, operationKey, { provider: 'apify', operation, input, context: { actor: ACTOR_ID, jobKey }, metadata: { idempotencyKey, requestDigest }, startedAt: clock() });
-    const checkpoint = operationArtifactBinding({ operationKey, provider: 'apify', operation, inputDigest: requestDigest, requestDigest, idempotencyKey, context: { actor: ACTOR_ID, jobKey }, stage: 'pre-post' });
+    const checkpoint = operationArtifactBinding({ operationKey, provider: 'apify', operation, inputDigest: requestDigest, requestDigest, idempotencyKey, context: { actor: ACTOR_ID, jobKey }, stage: 'pre-post', artifactIdentity: preparedIdentity });
     await persistOperationCheckpoint(receiptStore, operationKey, checkpoint);
     // Seal the outbound attempt before POST.  A runner crash after this point
     // must reconcile provider state, never issue a second paid POST.
-    await persistOperationState(receiptStore, operationKey, { schemaVersion: 'factory-paid-operation-v1', operationKey, provider: 'apify', operation, actor: ACTOR_ID, jobKey, input, inputDigest: requestDigest, idempotencyKey, requestDigest, status: 'post-attempted', postAttemptedAt: clock() });
+    await persistOperationState(receiptStore, operationKey, { schemaVersion: 'factory-paid-operation-v1', operationKey, provider: 'apify', operation, actor: ACTOR_ID, jobKey, input, inputDigest: requestDigest, idempotencyKey, requestDigest, ...checkpoint, status: 'post-attempted', postAttemptedAt: clock() });
     const started = await request('POST', `/acts/${ACTOR_ID}/runs`, input, { 'Idempotency-Key': idempotencyKey });
     const run = started.data || started;
     let runId = run.id || run.runId;

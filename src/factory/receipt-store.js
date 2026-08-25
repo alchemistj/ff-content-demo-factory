@@ -16,20 +16,29 @@ function receiptArtifactBinding({ handoffId, dispatchKey, outputDigest, phaseARu
   return { outcome: String(outcome), handoffId: String(handoffId), dispatchKey: String(dispatchKey), outputDigest: String(outputDigest), phaseARunId: String(phaseARunId), name: `factory-paid-receipts-${key.slice(0, 32)}` };
 }
 
-function operationArtifactBinding({ operationKey, provider, operation, inputDigest, requestDigest, idempotencyKey, context = {}, responseDigest = null, stage = 'pre-post' } = {}) {
+function operationArtifactBinding({ operationKey, provider, operation, inputDigest, requestDigest, idempotencyKey, context = {}, responseDigest = null, stage = 'pre-post', artifactIdentity = null } = {}) {
   for (const [name, value] of Object.entries({ operationKey, provider, operation, inputDigest, requestDigest, idempotencyKey })) {
     if (!value) throw new Error(`operation artifact binding ${name} is required`);
   }
   const content = { schemaVersion: 'factory-paid-operation-artifact-v1', stage, operationKey: String(operationKey), provider: String(provider), operation: String(operation), inputDigest: String(inputDigest), requestDigest: String(requestDigest), idempotencyKey: String(idempotencyKey), context, ...(responseDigest ? { responseDigest: String(responseDigest) } : {}) };
   const contentDigest = digest(content);
   const suffix = contentDigest.slice(0, 32);
-  return { ...content, artifactName: `factory-paid-operation-${stage}-${suffix}`, artifactId: `operation-artifact:${suffix}`, artifactDigest: contentDigest, artifactContentDigest: contentDigest };
+  const identity = artifactIdentity || {};
+  return {
+    ...content,
+    artifactName: identity.artifactName || `factory-paid-operation-${stage}-${suffix}`,
+    artifactId: identity.artifactId || `operation-artifact:${suffix}`,
+    artifactDigest: identity.artifactDigest || contentDigest,
+    artifactContentDigest: identity.artifactContentDigest || contentDigest,
+    artifactOrigin: identity.artifactOrigin || 'test-fixture',
+  };
 }
 
 async function persistOperationCheckpoint(store, key, binding) {
   const put = typeof store?.put === 'function' ? store.put.bind(store) : typeof store?.set === 'function' ? async (name, value) => store.set(name, value) : null;
   if (!put) throw new TypeError('receiptStore must implement put');
   if (!binding?.artifactName || !binding.artifactId || !binding.artifactDigest || !binding.artifactContentDigest) throw new Error('paid operation checkpoint artifact identity is incomplete');
+  if (!['github-actions', 'test-fixture'].includes(binding.artifactOrigin)) throw new Error('paid operation checkpoint artifact origin is invalid');
   const checkpoint = { schemaVersion: 'factory-paid-operation-checkpoint-v1', ...binding, checkpointKey: key, persistedAt: new Date().toISOString() };
   await put(`checkpoint:${key}`, checkpoint);
   return checkpoint;

@@ -3,8 +3,8 @@
 const { digest } = require('./prescription-policy');
 
 const SCHEMA_VERSION = 'factory-cursor-github-ledger-v1';
-const STATES = Object.freeze(['claimed', 'preparing', 'posted', 'in_motion', 'terminal', 'phase_b_claimed', 'resumed']);
-const TRANSITIONS = Object.freeze({ claimed: ['preparing'], preparing: ['posted'], posted: ['in_motion'], in_motion: ['terminal'], terminal: ['phase_b_claimed', 'resumed'], phase_b_claimed: ['resumed'], resumed: [] });
+const STATES = Object.freeze(['claimed', 'preparing', 'posted', 'in_motion', 'terminal', 'phase_b_claimed', 'paid_prepared', 'paid_accepted', 'resumed']);
+const TRANSITIONS = Object.freeze({ claimed: ['preparing'], preparing: ['posted'], posted: ['in_motion'], in_motion: ['terminal'], terminal: ['phase_b_claimed', 'resumed'], phase_b_claimed: ['paid_prepared', 'resumed'], paid_prepared: ['paid_accepted'], paid_accepted: ['resumed'], resumed: [] });
 
 function required(value, label) {
   if (value == null || String(value).trim() === '') throw new Error(`${label} is required`);
@@ -31,16 +31,20 @@ function contextFields(marker) {
     artifactId: marker.artifactId || null,
     artifactDigest: marker.artifactDigest || null,
     artifactContentDigest: marker.artifactContentDigest || null,
+    operationKey: marker.operationKey || null,
+    requestDigest: marker.requestDigest || null,
+    responseDigest: marker.responseDigest || null,
+    operationState: marker.operationState || null,
     ownerToken: marker.ownerToken || marker.dispatchKey || null,
   };
 }
 
-function markerFor({ kind, repository, issueNumber, prNumber, branch, checkedOutSha, handoffId, dispatchKey, dispatchDigest, runId, prospectId, sourceCheckpointDigest, sourceManifestDigest, inputManifestDigest, jobId, ownerToken, resultId, inputDigest, outputDigest, threadUrl, model, commentId, commentUrl, artifactName, artifactId, artifactDigest, artifactContentDigest, status = 'preparing' }) {
+function markerFor({ kind, repository, issueNumber, prNumber, branch, checkedOutSha, handoffId, dispatchKey, dispatchDigest, runId, prospectId, sourceCheckpointDigest, sourceManifestDigest, inputManifestDigest, jobId, ownerToken, resultId, inputDigest, outputDigest, threadUrl, model, commentId, commentUrl, artifactName, artifactId, artifactDigest, artifactContentDigest, operationKey, requestDigest, responseDigest, operationState, status = 'preparing' }) {
   if (!STATES.includes(status)) throw new Error(`Unknown ledger marker state: ${status}`);
   const marker = {
     schemaVersion: SCHEMA_VERSION,
     kind: required(kind, 'ledger marker kind'),
-    ...contextFields({ repository: required(repository, 'ledger marker repository'), issueNumber: required(issueNumber, 'ledger marker issue number'), prNumber: required(prNumber, 'ledger marker PR number'), branch: required(branch, 'ledger marker branch'), checkedOutSha: required(checkedOutSha, 'ledger marker checked-out head'), handoffId: required(handoffId, 'ledger marker handoff id'), dispatchKey: required(dispatchKey, 'ledger marker dispatch key'), dispatchDigest, runId, prospectId, sourceCheckpointDigest, sourceManifestDigest, inputManifestDigest, jobId, artifactName, artifactId, artifactDigest, artifactContentDigest, ownerToken }),
+    ...contextFields({ repository: required(repository, 'ledger marker repository'), issueNumber: required(issueNumber, 'ledger marker issue number'), prNumber: required(prNumber, 'ledger marker PR number'), branch: required(branch, 'ledger marker branch'), checkedOutSha: required(checkedOutSha, 'ledger marker checked-out head'), handoffId: required(handoffId, 'ledger marker handoff id'), dispatchKey: required(dispatchKey, 'ledger marker dispatch key'), dispatchDigest, runId, prospectId, sourceCheckpointDigest, sourceManifestDigest, inputManifestDigest, jobId, artifactName, artifactId, artifactDigest, artifactContentDigest, operationKey, requestDigest, responseDigest, operationState, ownerToken }),
     resultId: resultId == null ? null : String(resultId),
     inputDigest: inputDigest || null,
     outputDigest: outputDigest || null,
@@ -74,7 +78,7 @@ function parseMarker(body) {
 }
 
 function assertContext(value, expected) {
-  for (const field of ['repository', 'issueNumber', 'prNumber', 'branch', 'checkedOutSha', 'handoffId', 'dispatchKey', 'dispatchDigest', 'runId', 'prospectId', 'sourceCheckpointDigest', 'sourceManifestDigest', 'inputManifestDigest', 'jobId', 'artifactName', 'artifactId', 'artifactDigest', 'artifactContentDigest', 'ownerToken']) {
+  for (const field of ['repository', 'issueNumber', 'prNumber', 'branch', 'checkedOutSha', 'handoffId', 'dispatchKey', 'dispatchDigest', 'runId', 'prospectId', 'sourceCheckpointDigest', 'sourceManifestDigest', 'inputManifestDigest', 'jobId', 'artifactName', 'artifactId', 'artifactDigest', 'artifactContentDigest', 'operationKey', 'requestDigest', 'responseDigest', 'operationState', 'ownerToken']) {
     if (expected[field] != null && String(value?.[field] ?? '') !== String(expected[field])) throw new Error(`Ledger ${field} binding mismatch`);
   }
   return true;
@@ -86,7 +90,13 @@ function assertTransition(previous, next) {
     return next;
   }
   if (!TRANSITIONS[previous.status]?.includes(next.status)) throw new Error(`Invalid ledger transition ${previous.status} -> ${next.status}`);
-  assertContext(next, contextFields(previous));
+  const transitionContext = contextFields(previous);
+  // Paid-operation/artifact identity is intentionally introduced at the
+  // phase_b_claimed -> paid_prepared transition and may advance again at
+  // paid_accepted. It is verified by the marker digest and exact artifact
+  // restore, but is not an immutable handoff context field.
+  for (const field of ['artifactName', 'artifactId', 'artifactDigest', 'artifactContentDigest', 'operationKey', 'requestDigest', 'responseDigest', 'operationState']) delete transitionContext[field];
+  assertContext(next, transitionContext);
   if (previous.ownerToken && next.ownerToken !== previous.ownerToken) throw new Error('Ledger claim owner token mismatch');
   if (next.status === 'posted' && (!next.commentId || !next.commentUrl)) throw new Error('posted ledger state requires authoritative @cursor comment identity');
   return next;
@@ -103,7 +113,7 @@ function recoverClaim(comments, expected, ownerToken) {
   const current = findClaim(comments, expected);
   if (!current) return { action: 'prepare', status: null, claim: null };
   if (!claimOwnerMatches(current, ownerToken)) return { action: 'noop', status: current.status, claim: current, ownerMismatch: true };
-  const actions = { preparing: 'post', posted: 'in_motion', in_motion: 'terminal', terminal: 'phase_b_claimed', phase_b_claimed: 'resumed', resumed: 'noop' };
+  const actions = { preparing: 'post', posted: 'in_motion', in_motion: 'terminal', terminal: 'phase_b_claimed', phase_b_claimed: 'resumed', paid_prepared: 'paid-accepted', paid_accepted: 'resumed', resumed: 'noop' };
   return { action: actions[current.status] || 'noop', status: current.status, claim: current };
 }
 
@@ -155,7 +165,7 @@ function terminalIdentityMatches(marker, expected) {
   for (const field of ['repository', 'issueNumber', 'prNumber', 'branch', 'checkedOutSha', 'handoffId', 'dispatchKey', 'dispatchDigest', 'runId', 'prospectId', 'sourceCheckpointDigest', 'sourceManifestDigest', 'inputManifestDigest', 'jobId']) {
     if (expected[field] != null && String(marker?.[field] ?? '') !== String(expected[field])) return false;
   }
-  return marker?.kind === 'resume' && ['terminal', 'phase_b_claimed', 'resumed'].includes(marker.status);
+  return marker?.kind === 'resume' && ['terminal', 'phase_b_claimed', 'paid_prepared', 'paid_accepted', 'resumed'].includes(marker.status);
 }
 
 function findTerminalOutcome(comments, expected) {

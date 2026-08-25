@@ -174,6 +174,23 @@ test('Apify ambiguous acceptance is reconciled without a second POST, otherwise 
   assert.equal(reconciledCalls, 2, 'reconciliation performs only provider GETs and never a second POST');
 });
 
+test('production Apify refuses paid POST without a real GitHub pre-POST artifact identity', async () => {
+  let posts = 0;
+  const fetchImpl = async (url, options) => {
+    if (options.method === 'POST') posts += 1;
+    return response({ data: { id: 'run-production', defaultDatasetId: 'dataset-production', status: 'SUCCEEDED' } });
+  };
+  const adapter = createApifyAdapter({ token: 'secret', fetchImpl, production: true });
+  await assert.rejects(() => adapter.enrichFinalist({ placeId: 'ChIJproduction', mapsUrl: 'https://www.google.com/maps/place/Production' }), /GitHub pre-POST artifact identity/);
+  assert.equal(posts, 0);
+  const bound = createApifyAdapter({
+    token: 'secret', fetchImpl, production: true,
+    operationArtifacts: { 'pre-post': { artifactName: 'real-prepared', artifactId: '42', artifactDigest: 'sha256:zip', artifactContentDigest: 'sha256:content', artifactOrigin: 'github-actions' } },
+  });
+  await bound.enrichFinalist({ placeId: 'ChIJproduction-bound', mapsUrl: 'https://www.google.com/maps/place/Production-bound' }).catch(() => {});
+  assert.equal(posts, 1, 'a bound production operation may issue exactly one provider POST');
+});
+
 function catalog() {
   return [{
     id: ACTUAL_MODEL_ID,
