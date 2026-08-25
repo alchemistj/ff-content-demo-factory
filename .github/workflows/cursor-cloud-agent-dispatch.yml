@@ -141,7 +141,7 @@ jobs:
           key="$(node -e "const fs=require('node:fs');process.stdout.write(JSON.parse(fs.readFileSync(process.env.DISPATCH_FILE,'utf8')).dispatchKey)")"
           test -n "$GH_TOKEN"
           GH_TOKEN="$GH_TOKEN" gh api --paginate "repos/$GITHUB_REPOSITORY/issues/$PR_NUMBER/comments?per_page=100" > canary/outputs/execution-comments.json
-          expected="$(DIGEST="$digest" KEY="$key" node -e "process.stdout.write(JSON.stringify({repository:process.env.GITHUB_REPOSITORY,prNumber:process.env.PR_NUMBER,dispatchDigest:process.env.DIGEST,dispatchKey:process.env.KEY}))")"
+          expected="$(DIGEST="$digest" KEY="$key" node -e "const fs=require('node:fs');const p=JSON.parse(fs.readFileSync('canary/phase-a/pending.checked.json','utf8'));const e=p.envelope;process.stdout.write(JSON.stringify({repository:process.env.GITHUB_REPOSITORY,prNumber:process.env.PR_NUMBER,dispatchDigest:process.env.DIGEST,dispatchKey:process.env.KEY,handoffId:p.handoffId,phaseARunId:p.phaseARunId,inputManifestDigest:e.inputManifestDigest,sourceCheckpointDigest:e.sourceCheckpointDigest,sourceManifestDigest:e.sourceManifestDigest,jobDigest:process.env.DIGEST}))")"
           prior="$(node scripts/select-cursor-dispatch-comment.js canary/outputs/execution-comments.json "$expected" 2>/dev/null || true)"
           if [ -n "$prior" ]; then
             comment_id="$(node -e "process.stdout.write(String(JSON.parse(process.argv[1]).id))" "$prior")"
@@ -150,7 +150,9 @@ jobs:
           else
             input_manifest_digest="$(node -e "process.stdout.write(JSON.parse(require('fs').readFileSync('canary/phase-a/pending.checked.json','utf8')).envelope.inputManifestDigest)")"
             handoff_id="$(node -e "process.stdout.write(JSON.parse(require('fs').readFileSync('canary/phase-a/pending.checked.json','utf8')).handoffId)")"
-            { cat "$COMMENT_FILE"; printf 'Handoff ID: %s\\nPhase-A run: %s\\nInput manifest digest: %s\\nDispatch workflow run: %s\\n' "$handoff_id" "$PHASE_A_RUN_ID" "$input_manifest_digest" "$GITHUB_RUN_ID"; } > canary/outputs/cursor-dispatch.post.md
+            source_checkpoint_digest="$(node -e "process.stdout.write(JSON.parse(require('fs').readFileSync('canary/phase-a/pending.checked.json','utf8')).envelope.sourceCheckpointDigest)")"
+            source_manifest_digest="$(node -e "process.stdout.write(JSON.parse(require('fs').readFileSync('canary/phase-a/pending.checked.json','utf8')).envelope.sourceManifestDigest)")"
+            { cat "$COMMENT_FILE"; printf 'Handoff ID: %s\\nPhase-A run: %s\\nInput manifest digest: %s\\nSource checkpoint digest: %s\\nSource manifest digest: %s\\nJob digest: %s\\nDispatch workflow run: %s\\n' "$handoff_id" "$PHASE_A_RUN_ID" "$input_manifest_digest" "$source_checkpoint_digest" "$source_manifest_digest" "$digest" "$GITHUB_RUN_ID"; } > canary/outputs/cursor-dispatch.post.md
             response="$(GH_TOKEN="$GH_TOKEN" gh api "repos/$GITHUB_REPOSITORY/issues/$PR_NUMBER/comments" --method POST -f body="$(cat canary/outputs/cursor-dispatch.post.md)")"
             comment_id="$(node -e "process.stdout.write(String(JSON.parse(process.argv[1]).id))" "$response")"
             comment_url="$(node -e "process.stdout.write(JSON.parse(process.argv[1]).html_url)" "$response")"
@@ -226,7 +228,7 @@ jobs:
       - name: Bind dispatch comment to durable handoff identity
         if: env.FACTORY_SKIP_AUTOMATIC_DISPATCH != 'true'
         run: |
-          node -e "const fs=require('node:fs');const pending=JSON.parse(fs.readFileSync('canary/phase-a/pending.checked.json','utf8'));fs.appendFileSync('canary/phase-a/cursor-dispatch.comment.md','Handoff ID: '+pending.handoffId+'\\nPhase-A run: '+pending.phaseARunId+'\\nInput manifest digest: '+pending.envelope.inputManifestDigest+'\\nDispatch workflow run: '+process.env.GITHUB_RUN_ID+'\\n');"
+          node -e "const fs=require('node:fs');const pending=JSON.parse(fs.readFileSync('canary/phase-a/pending.checked.json','utf8'));fs.appendFileSync('canary/phase-a/cursor-dispatch.comment.md','Handoff ID: '+pending.handoffId+'\\nPhase-A run: '+pending.phaseARunId+'\\nInput manifest digest: '+pending.envelope.inputManifestDigest+'\\nSource checkpoint digest: '+pending.envelope.sourceCheckpointDigest+'\\nSource manifest digest: '+pending.envelope.sourceManifestDigest+'\\nJob digest: '+pending.envelope.dispatchDigest+'\\nDispatch workflow run: '+process.env.GITHUB_RUN_ID+'\\n');"
       - name: Claim durable GitHub ledger before connector dispatch
         if: env.FACTORY_SKIP_AUTOMATIC_DISPATCH != 'true'
         env:
@@ -273,7 +275,7 @@ jobs:
           key="$(node -e "const fs=require('node:fs');process.stdout.write(JSON.parse(fs.readFileSync(process.env.DISPATCH_FILE,'utf8')).dispatchKey)")"
           PR_NUMBER="$(node -e "process.stdout.write(String(JSON.parse(require('fs').readFileSync(process.env.DISPATCH_FILE,'utf8')).prNumber))")"
           GH_TOKEN="$GH_TOKEN" gh api --paginate "repos/$GITHUB_REPOSITORY/issues/$PR_NUMBER/comments?per_page=100" > canary/phase-a/execution-comments.json
-          expected="$(DIGEST="$digest" KEY="$key" node -e "process.stdout.write(JSON.stringify({repository:process.env.GITHUB_REPOSITORY,prNumber:process.env.PR_NUMBER,dispatchDigest:process.env.DIGEST,dispatchKey:process.env.KEY}))")"
+          expected="$(DIGEST="$digest" KEY="$key" node -e "const fs=require('node:fs');const p=JSON.parse(fs.readFileSync('canary/phase-a/pending.checked.json','utf8'));const e=p.envelope;process.stdout.write(JSON.stringify({repository:process.env.GITHUB_REPOSITORY,prNumber:process.env.PR_NUMBER,dispatchDigest:process.env.DIGEST,dispatchKey:process.env.KEY,handoffId:p.handoffId,phaseARunId:p.phaseARunId,inputManifestDigest:e.inputManifestDigest,sourceCheckpointDigest:e.sourceCheckpointDigest,sourceManifestDigest:e.sourceManifestDigest,jobDigest:process.env.DIGEST}))")"
           prior="$(node scripts/select-cursor-dispatch-comment.js canary/phase-a/execution-comments.json "$expected" 2>/dev/null || true)"
           if [ -n "$prior" ]; then comment_id="$(node -e "process.stdout.write(String(JSON.parse(process.argv[1]).id))" "$prior")"; comment_url="$(node -e "process.stdout.write(JSON.parse(process.argv[1]).html_url)" "$prior")"; else response="$(GH_TOKEN="$GH_TOKEN" gh api "repos/$GITHUB_REPOSITORY/issues/$PR_NUMBER/comments" --method POST -f body="$(cat canary/phase-a/cursor-dispatch.comment.md)")"; comment_id="$(node -e "process.stdout.write(String(JSON.parse(process.argv[1]).id))" "$response")"; comment_url="$(node -e "process.stdout.write(JSON.parse(process.argv[1]).html_url)" "$response")"; fi
           test -n "$comment_id"; test -n "$comment_url"
