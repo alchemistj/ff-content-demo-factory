@@ -87,15 +87,16 @@ function readJson(filename) {
 }
 
 function sealedVendor(operation) {
-  const apify = operation === 'discovery' || operation === 'finalist-enrichment';
   return {
     sealedEvidence: true,
+    synthetic: true,
     syntheticReplay: true,
     provenanceType: 'github-actions-artifact',
-    provider: apify ? 'apify' : 'cursor-sdk',
-    receiptKind: 'sealed-360-replay',
+    // Never impersonate a production provider in a repository replay.  These
+    // values are intentionally rejected by production receipt validation.
+    provider: 'repository-sealed-evidence',
+    receiptKind: 'synthetic-replay',
     runId: TRUSTED.runId,
-    datasetId: apify ? TRUSTED.artifactId : undefined,
     artifactId: TRUSTED.artifactId,
     githubArtifactId: TRUSTED.artifactId,
     sourceSha: TRUSTED.sourceSha,
