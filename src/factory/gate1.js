@@ -29,7 +29,7 @@ function validateWhyBuilt(whyBuilt, finalist, prescription) {
   return resolved.some((ref) => ref.type === 'opportunity') && resolved.some((ref) => ['graphic', 'review', 'service'].includes(ref.type));
 }
 
-function renderGate1({ finalist, prescription, whyBuilt }) {
+function renderGate1({ finalist, prescription, whyBuilt, qa = null, sourceCheckpoint = null, receipts = {}, actionProof = null, lineage = null }) {
   if (!validateWhyBuilt(whyBuilt, finalist, prescription)) throw new Error('Why We Built must be 2–4 sentences with resolvable opportunity and evidence refs');
   validateRejectedRouteLanguage(prescription.pages, 'Gate 1 pages');
   const lines = [`# ${finalist.name}`, '', '## Why We Built This Site', '', whyBuilt.text.trim(), '', '## Page Prescription', '', '| Page | Proposed URL | Primary Keyword | Proposed Title / H1 Direction | Recommended First Review |', '| --- | --- | --- | --- | --- |'];
@@ -41,6 +41,23 @@ function renderGate1({ finalist, prescription, whyBuilt }) {
   for (const page of prescription.pages) lines.push(`- **${page.type || page.service}:** ${page.whyIncluded}`);
   lines.push('', '### Services considered', '');
   for (const service of prescription.valueHierarchy) lines.push(`- ${service.name || service.id}: ${service.directCompletedEvidenceCount} direct anchor(s), ${service.evidenceCount} total evidence review(s); ${service.includedPage ? 'included' : `passed over — ${service.passedOverReason}`}.`);
+  lines.push('', '### QA decision record', '', '| Check | Result |', '| --- | --- |');
+  const qaChecks = qa?.checks || {};
+  if (!Object.keys(qaChecks).length) lines.push('| QA record | not supplied |');
+  else for (const [name, passed] of Object.entries(qaChecks)) lines.push(`| ${name} | ${passed === true ? 'PASS' : 'FAIL'} |`);
+  lines.push(`| Overall decision | ${qa ? (qa.passed === true ? 'PASS' : 'FAIL') : 'not supplied'} |`);
+  lines.push('', '### Durable receipts', '');
+  for (const [name, receipt] of Object.entries(receipts || {})) {
+    const link = receipt?.threadUrl || receipt?.url || receipt?.agentUrl || receipt?.cursorThreadUrl || null;
+    lines.push(`- **${name}:** ${receipt ? `provider=${receipt.provider || 'unknown'}, run=${receipt.runId || receipt.jobId || 'unknown'}, thread=${link || 'not recorded'}` : 'not recorded'}`);
+  }
+  lines.push('', '### Exact-head test evidence', '');
+  if (actionProof) {
+    lines.push(`- Checked-out source SHA: \`${actionProof.checkedOutSha || 'missing'}\``);
+    lines.push(`- Expected PR head SHA: \`${actionProof.expectedHeadSha || 'missing'}\``);
+    lines.push(`- Head assertion: ${actionProof.headAssertion === true ? 'PASS' : 'not proven'}`);
+    lines.push(`- Test run: ${actionProof.testRunUrl || 'not recorded'}`);
+  } else lines.push('- Exact-head workflow evidence was not supplied by the invoking Action.');
   lines.push('', '## Evidence & Lineage', '', '| Field | Bound value |', '| --- | --- |');
   lines.push(`| Run ID | ${prescription.runId || 'missing'} |`);
   lines.push(`| Source artifact digest | ${prescription.sourceArtifactDigest || 'missing'} |`);
@@ -48,6 +65,10 @@ function renderGate1({ finalist, prescription, whyBuilt }) {
   lines.push(`| Page-set digest | ${prescription.pageSetDigest || 'missing'} |`);
   lines.push(`| Prescription digest | ${prescription.prescriptionDigest || 'missing'} |`);
   lines.push(`| Source identity | ${prescription.sourceIdentity ? `\`${JSON.stringify(prescription.sourceIdentity)}\`` : 'missing'} |`);
+  lines.push(`| Source manifest digest | ${prescription.sourceManifestDigest || sourceCheckpoint?.sourceManifestDigest || 'missing'} |`);
+  lines.push(`| Source material digest | ${prescription.sourceManifest?.sourceMaterialDigest || sourceCheckpoint?.sourceManifest?.sourceMaterialDigest || 'missing'} |`);
+  lines.push(`| Source checkpoint | ${sourceCheckpoint ? `\`${JSON.stringify({ sourceIdentity: sourceCheckpoint.sourceIdentity, sourceArtifactDigest: sourceCheckpoint.sourceArtifactDigest })}\`` : 'not supplied'} |`);
+  lines.push(`| Lineage record | ${lineage ? `\`${JSON.stringify(lineage)}\`` : 'not supplied'} |`);
   lines.push('', '### Evidence references', '');
   for (const page of prescription.pages) {
     const refs = [page.strongestEvidence, page.recommendedFirstReview?.reviewId].filter(Boolean);
@@ -85,7 +106,7 @@ function architectQa({ finalist, inventory, prescription, whyBuilt, laterStageAr
     differentiatedPages: new Set(pages.map((p) => `${p.url}|${p.primaryKeyword}|${p.titleDirection}|${p.h1Direction}`)).size === pages.length,
     recommendationsFit: pages.filter((p) => p.type !== 'Contact').every((p) => Boolean(p.recommendedFirstReview) || !p.strongestEvidence),
     unsupportedClaimsAbsent: pages.every((p) => {
-      if (validateClaimReferences(p, inventory?.reviews || inventory?.classified || [], prescription?.serviceCoverageLedger || null).length) return false;
+      if (validateClaimReferences(p, inventory?.classified || inventory?.reviews || [], prescription?.serviceCoverageLedger || null).length) return false;
       const claims = (p.claims || []).map((claim) => typeof claim === 'string' ? claim : claim?.text || claim?.claim || '').join(' ');
       if (/(one[- ]hour|same[- ]day|guaranteed|response[- ]time\s*sla)/i.test(claims)) return false;
       if (/(24\/7|emergency service)/i.test(claims) && !inventory?.availabilityPattern) return false;
