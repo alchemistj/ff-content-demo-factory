@@ -83,6 +83,25 @@ test("verified Writer2 recursively rejects nested review-analysis and strategy d
   assert.doesNotThrow(() => validateVerifiedWriter2Output(clean));
 });
 
+test("verified Writer2 recursively enforces the exact four public routes for links and allows only safe contact protocols", () => {
+  for (const link of ["/garage-door-opener-installation", "/strategy", "/future-page", "https://example.test/other", "javascript:alert(1)"]) {
+    const value = structuredClone(writer2Output) as any;
+    value.header.navigation = [{ href: "/", children: [{ route: link }] }];
+    assert.throws(() => validateVerifiedWriter2Output(value), /unapproved route|forbidden scope/u, link);
+  }
+  const clean = structuredClone(writer2Output) as any;
+  clean.header.navigation = [
+    { href: "/", label: "Home" },
+    { href: "/garage-door-repair", label: "Repair" },
+    { href: "/garage-door-installation", label: "Installation" },
+    { href: "/contact", label: "Contact" },
+    { href: "tel:+15551234567", label: "Call" },
+    { href: "mailto:hello@example.test", label: "Email" },
+  ];
+  clean.footer.links = [{ href: "/contact" }, { href: "tel:+15551234567" }];
+  assert.doesNotThrow(() => validateVerifiedWriter2Output(clean));
+});
+
 test("verified Writer3 recursively rejects nested public page metadata while allowing clean internal strategy structures", () => {
   for (const mutation of [
     (value: any) => { value.strategyOverview.sections = [{ metadata: { homepage: { route: "/" } } }]; },

@@ -26,13 +26,16 @@ export const VERIFIED_WRITER2_RECEIPT_STORE = VERIFIED_RECEIPT_STORE;
 function record(value: unknown): Dict | null { return value && typeof value === "object" && !Array.isArray(value) ? value as Dict : null; }
 function nonEmpty(value: unknown): boolean { return typeof value === "string" && value.trim().length > 0; }
 function routeOf(value: unknown): string { const item = record(value); return String(item?.url || item?.route || item?.path || ""); }
+function isApprovedWriter2Link(value: string): boolean {
+  return VERIFIED_PUBLIC_ROUTES.includes(value as any) || /^(?:tel|mailto):[^\s]+$/iu.test(value);
+}
 function scanRecursive(value: unknown, pathValue: string, forbiddenKey: (key: string) => boolean, allowedKeys: ReadonlySet<string>, rejectNonPublicRoute = false): string[] {
   const errors: string[] = [];
   if (Array.isArray(value)) value.forEach((child, index) => errors.push(...scanRecursive(child, `${pathValue}/${index}`, forbiddenKey, allowedKeys, rejectNonPublicRoute)));
   else if (record(value)) for (const [key, child] of Object.entries(value as Dict)) {
     if (forbiddenKey(key)) errors.push(`${pathValue}/${key}`);
     else if (!allowedKeys.has(key)) errors.push(`${pathValue}/${key}`);
-    if (rejectNonPublicRoute && ["url", "route", "path", "href"].includes(key) && typeof child === "string" && !VERIFIED_PUBLIC_ROUTES.includes(child as any)) errors.push(`${pathValue}/${key}`);
+    if (rejectNonPublicRoute && ["url", "route", "path", "href"].includes(key) && typeof child === "string" && !isApprovedWriter2Link(child)) errors.push(`${pathValue}/${key}`);
     errors.push(...scanRecursive(child, `${pathValue}/${key}`, forbiddenKey, allowedKeys, rejectNonPublicRoute));
   }
   return errors;
@@ -47,7 +50,7 @@ export function validateVerifiedWriter2Output(value: unknown): asserts value is 
   const keys = Object.keys(root).sort(); if (JSON.stringify(keys) !== JSON.stringify(["contact", "footer", "header", "homepage", "schemaVersion"])) throw new Error("Verified Writer2 output must contain only Home, Contact, header, and footer");
   if (!record(root.homepage) || routeOf(root.homepage) !== "/" || !record(root.contact) || routeOf(root.contact) !== "/contact" || !record(root.header) || !record(root.footer)) throw new Error("Verified Writer2 output has an invalid Home, Contact, header, or footer scope");
   if (![root.homepage, root.contact].every((page) => nonEmpty(page.body || page.content) || (Array.isArray(page.sections) && page.sections.length > 0))) throw new Error("Verified Writer2 Home and Contact must contain copy");
-  const forbidden = scanRecursive(root, "", (key) => WRITER2_REVIEW_ANALYSIS_KEY.test(key), WRITER2_ALLOWED_KEYS); if (forbidden.length) throw new Error(`Verified Writer2 output leaks review-analysis scope or an unallowlisted key at ${forbidden[0]}`);
+  const forbidden = scanRecursive(root, "", (key) => WRITER2_REVIEW_ANALYSIS_KEY.test(key), WRITER2_ALLOWED_KEYS, true); if (forbidden.length) throw new Error(`Verified Writer2 output leaks review-analysis scope, an unapproved route, or an unallowlisted key at ${forbidden[0]}`);
 }
 
 export function validateVerifiedWriter3Output(value: unknown): asserts value is Dict {

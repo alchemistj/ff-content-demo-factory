@@ -677,6 +677,8 @@ export const WRITER1_CORRECTION_BANNED_PATTERNS: ReadonlyArray<RegExp> = Object.
   /spring\s+replacement\s+(?:is\s+)?(?:the\s+|a\s+)?(?:most|frequent|common|most\s+frequent|most\s+common)\s+(?:related\s+)?failure(?:s)?/iu,
   /\b(?:spring\s+replacement|(?:this|the)\s+service)\b[^.]{0,100}\b(?:one\s+of\s+the\s+)?(?:most|more)\s+(?:frequent|common|popular)\b/iu,
   /\b(?:evidence|reviews?|customer\s+feedback)\b[^.]{0,120}\b(?:shows?|proves?|indicates?|suggests?)\b[^.]{0,120}\b(?:most|more|highly)\s+(?:popular|common|frequent)\b/iu,
+  /\b(?:usually|typically|generally|often)\b[^.]{0,100}\b(?:finish(?:es|ed|ing)?|complete(?:s|d|ing)?|repair(?:s|ed|ing)?|fix(?:es|ed|ing)?|handle(?:s|d|ing)?)\b[^.]{0,80}\b(?:same[- ]day|that\s+day|during\s+(?:the|your)\s+visit|on\s+the\s+visit)\b/iu,
+  /\b(?:finish(?:es|ed|ing)?|complete(?:s|d|ing)?|repair(?:s|ed|ing)?|fix(?:es|ed|ing)?|handle(?:s|d|ing)?)\b[^.]{0,80}\b(?:usually|typically|generally|often)\b[^.]{0,80}\b(?:same[- ]day|that\s+day|during\s+(?:the|your)\s+visit|on\s+the\s+visit)\b/iu,
   /Jenny\s+(?:will\s+)?(?:schedule|schedules|scheduled|coordinate|coordinates|coordinated)\s+(?:(?:the|a)\s+)?(?:follow[- ]?up|return\s+visit)(?:s)?/iu,
   /(?:the\s+)?(?:same\s+)?(?:person|technician|one)\s+(?:who\s+)?(?:finds?|diagnos(?:es|ing)|identif(?:ies|ying))\s+(?:the\s+)?(?:problem|door|issue)\s+(?:is\s+)?(?:also\s+)?always\s+repair(?:s|ing)/iu,
   /(?:the\s+)?same\s+(?:person|technician|one)\s+(?:who\s+)?(?:finds?|diagnos(?:es|ing)|identif(?:ies|ying))\s+(?:the\s+)?(?:problem|door|issue)\s+and\s+repair(?:s|ing)/iu,

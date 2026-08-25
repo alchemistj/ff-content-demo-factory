@@ -86,10 +86,21 @@ test("verified correction bans unsupported claims and internal language only in 
     "Our evidence shows this service is the most popular.",
     "Our evidence proves this service is the most frequent choice.",
     "Customer reviews show this is the most common service.",
+    "The team can usually finish the job that day.",
+    "We typically complete the repair during the visit.",
+    "Technicians generally fix these issues the same day.",
+    "Our team often handles the repair on the same day.",
+    "The job is usually finished that day.",
     "The receipt digest is sealed.",
     "Authoritative written reviews support this.",
   ]) { const value: any = output(true); value.pages[0].body = phrase; assert.ok(validateWriter1CorrectionBannedLanguage(value).length > 0, phrase); }
+  for (const safePhrase of [
+    "Same-day completion is not guaranteed.",
+    "We cannot promise that every repair will be completed today.",
+    "Timing depends on the condition of the door and the parts needed.",
+  ]) { const value: any = output(true); value.pages[0].body = safePhrase; assert.equal(validateWriter1CorrectionBannedLanguage(value).length, 0, safePhrase); }
   const quote: any = output(true); quote.pages[0].quotes[0].quote = "The receipt digest is sealed."; assert.equal(validateWriter1CorrectionBannedLanguage(quote).length, 0);
+  const frozenTimingQuote: any = output(true); frozenTimingQuote.pages[0].quotes[0].quote = "The team can usually finish the job that day."; assert.equal(validateWriter1CorrectionBannedLanguage(frozenTimingQuote).length, 0);
 });
 
 test("verified correction resumes the exact fresh agent, sends once, retrieves Cursor artifact, HMAC-binds direct receipt, and blocks Writer2", async () => {
