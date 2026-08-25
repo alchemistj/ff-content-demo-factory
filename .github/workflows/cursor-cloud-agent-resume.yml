@@ -54,6 +54,7 @@ jobs:
           COMMENT_ID: ${{ github.event.comment.id }}
           COMMENT_URL: ${{ github.event.comment.html_url }}
           AUTHOR_LOGIN: ${{ github.event.comment.user.login }}
+          COMMENT_BODY: ${{ github.event.comment.body }}
         run: |
           handoff_id="$(sed -n 's/^Handoff ID: //p' canary/phase-a/dispatch.tsv | tail -1)"
           comments="$(gh api --paginate "repos/$GITHUB_REPOSITORY/issues/$ISSUE_NUMBER/comments?per_page=100" --jq '.[] | .body')"
@@ -61,7 +62,7 @@ jobs:
             echo "resume already claimed for $handoff_id"
             exit 0
           fi
-          printf '%s' '${{ github.event.comment.body }}' > canary/phase-a/cursor-terminal-comment.md
+          printf '%s' "$COMMENT_BODY" > canary/phase-a/cursor-terminal-comment.md
           node src/collect-cursor-terminal-result.js canary/phase-a/current-head-gate1-pending.json canary/phase-a/cursor-terminal-comment.md canary/phase-a/cursor-terminal-result.json "$AUTHOR_LOGIN" "$COMMENT_ID" "$COMMENT_URL"
           gh api "repos/$GITHUB_REPOSITORY/issues/$ISSUE_NUMBER/comments" --method POST -f body="Factory resume claimed: $handoff_id / result $COMMENT_ID"
       - name: Resume phase B automatically from the verified result
