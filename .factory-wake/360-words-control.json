@@ -1,6 +1,6 @@
 {
   "schemaVersion": "words-canary-control/v1",
-  "wakeNonce": "W1-RETRIEVAL-20260825-V3",
+  "wakeNonce": "DORMANT",
   "requestedBy": "architect",
   "stage": "writer1",
   "runId": "32717620900",
@@ -10,63 +10,15 @@
   "restore": null,
   "policy": {
     "writer1Only": true,
-    "approvedRoutes": ["/", "/garage-door-repair", "/garage-door-installation", "/contact"],
+    "approvedRoutes": [
+      "/",
+      "/garage-door-repair",
+      "/garage-door-installation",
+      "/contact"
+    ],
     "fast": false,
     "provider": "cursor-sdk",
     "model": "cursor-grok-4.6-high",
-    "mode": "writer1-retrieval-only",
-    "stopAfter": "awaiting-architect-qa",
-    "recovery": {
-      "recoveryVersion": "words-writer1-post-dispatch-retrieval/v1",
-      "sourceBranch": "architect/360-words-canary-verified",
-      "sourceSha": "e58a9bb4ab09c20d1962abcb558a01703d098c8c",
-      "actionRunId": "32825265478",
-      "artifactId": 9554789848,
-      "agentId": "bc-2486f645-c31c-4532-8145-fbe3af1d45a8",
-      "runId": "run-1686013d-dec5-454c-a39e-5817448e6a96",
-      "threadUrl": "https://cursor.com/agents/bc-2486f645-c31c-4532-8145-fbe3af1d45a8",
-      "requestedModel": "cursor-grok-4.6-high",
-      "resolvedModel": "grok-4.6",
-      "effort": "high",
-      "fast": false,
-      "inputDigest": "sha256:f4f59e9c645391266172892e4651f0da4ccedaa2bc86e35217a0ab8699fd0c1f",
-      "promptDigest": "sha256:e9c39355c8f0973250ebd97ad1b3b69c9e09c840796f39336abd5664c20303e3",
-      "idempotencyKey": "bc-2486f645-c31c-4532-8145-fbe3af1d45a8:writer1:correction:v2:sha256:f4f59e9c645391266172892e4651f0da4ccedaa2bc86e35217a0ab8699fd0c1f:sha256:e9c39355c8f0973250ebd97ad1b3b69c9e09c840796f39336abd5664c20303e3",
-      "allowCreate": false,
-      "allowResume": false,
-      "allowFollowUp": false,
-      "maxFollowUps": 0,
-      "sealActionRunId": "32833333789",
-      "sealArtifactId": 9557616223,
-      "receiptManifest": {
-        "schemaVersion": "verified-writer1-dispatch-manifest/v1",
-        "actionRunId": "32825265478",
-        "artifactId": 9554789848,
-        "artifactZipDigest": "sha256:e4315183eac7c3755a27e9a46622ea63c4d99978e5bc98e02eae9658a7504648",
-        "artifactZipSize": 2753,
-        "receiptPath": "runtime/writer1-dispatch-receipt.json",
-        "receiptDigest": "sha256:b4769f3dded171060119cc9f5b42f33dfe1d882c31d441c08c185806066598d4",
-        "receiptSize": 1536,
-        "controlBindingDigest": "sha256:c9b41421f70f5bc6fd3bc875eb98a51c398aa51485edb3b7f1d29cbbf68fe771",
-        "manifestDigest": "sha256:1528241fed5bfcf50058c9966eb48855e2c334e32ffe35a67101f805f11d79ff",
-        "manifestMac": "hmac-sha256:d31909ef2e4aa9f5df71c1c623f2d2e2a38c0b660d2447513d10a95a1bd66e1d"
-      },
-      "sealedManifest": {
-        "schemaVersion": "verified-writer1-sealed-manifest-pin/v1",
-        "sourceActionRunId": "32833333789",
-        "sourceArtifactId": 9557616223,
-        "sourceSha": "8ecdd00828d0c6e5240874329fa58e0f486e8f5b",
-        "artifactZipDigest": "sha256:7c6e39a1482256138790002380c01a85f0e14e3b0731e1bea9c22418a848d32e",
-        "artifactZipSize": 1659,
-        "manifestPath": "runtime/writer1-dispatch-manifest.json",
-        "manifestBytesDigest": "sha256:96aa8240d10309cf06833318a7c75d7a43bb0e5f1e82db33506268d209ccfca0",
-        "manifestSize": 716,
-        "manifestDigest": "sha256:1528241fed5bfcf50058c9966eb48855e2c334e32ffe35a67101f805f11d79ff",
-        "manifestMac": "hmac-sha256:d31909ef2e4aa9f5df71c1c623f2d2e2a38c0b660d2447513d10a95a1bd66e1d",
-        "sealReceiptPath": "runtime/writer1-seal-receipt.json",
-        "sealReceiptDigest": "sha256:73f977df62e4d339f48cee46199cd7c53369cec754ad4a58df36948a4e16fb3f",
-        "sealReceiptSize": 1535
-      }
-    }
+    "stopAfter": "awaiting-architect-qa"
   }
 }
