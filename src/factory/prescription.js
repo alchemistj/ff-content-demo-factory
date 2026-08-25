@@ -96,7 +96,7 @@ function validateClaimReferences(page, classified, serviceLedger, context = {}) 
     if (!text) { errors.push(`${page.type || page.service}: claim text is required`); continue; }
     const refs = claimEvidenceRefs(claim);
     if (!refs.length) { errors.push(`${page.type || page.service}: every claim requires resolvable evidenceRefs`); continue; }
-    const requestedService = canonicalClaimService(claim.service || claim.serviceId || page.service, serviceLedger);
+      const requestedService = canonicalClaimService(claim.service || claim.serviceId || page.service, serviceLedger);
     if (claim.prospectId && serviceLedger?.prospectId && String(claim.prospectId) !== String(serviceLedger.prospectId)) errors.push(`${page.type || page.service}: claim prospect binding is invalid`);
     for (const ref of refs) {
       const review = reviews.get(ref.id);
@@ -112,7 +112,8 @@ function validateClaimReferences(page, classified, serviceLedger, context = {}) 
       const judgment = review.authoritativeJudgment || review.judgment || {};
       if (review.authoritative !== true || judgment.directCompletedService !== true) errors.push(`${page.type || page.service}: evidence ${ref.id} is not direct completed-service support`);
       const supportedServices = (judgment.serviceEvidence || judgment.services || []).map((item) => canonicalClaimService(typeof item === 'string' ? item : item.service, serviceLedger)).filter(Boolean);
-      const strictServiceBinding = claim.service || claim.serviceId || ref.service;
+      const strictServiceBinding = serviceLedger?.strictEvidenceBinding === true || claim.service || claim.serviceId || ref.service;
+      if (serviceLedger?.strictEvidenceBinding === true && page.type === 'Service' && !claim.service && !claim.serviceId && !ref.service && String(page.strongestEvidence || '') !== ref.id) errors.push(`${page.type || page.service}: bare evidence reference ${ref.id} is not bound to the target page`);
       if (strictServiceBinding && requestedService && supportedServices.length && !supportedServices.includes(requestedService)) errors.push(`${page.type || page.service}: review ${ref.id} does not directly support this service`);
       if (claim.source && String(claim.source) !== String(review.sourceReview?.source || review.provenance?.source || '')) errors.push(`${page.type || page.service}: review ${ref.id} source binding is invalid`);
       const sourceDomain = claimSourceHost(ref);
