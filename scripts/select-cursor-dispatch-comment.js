@@ -23,6 +23,9 @@ function selectNewestDispatchComment(comments, expected = {}) {
   const handoffId = expected.handoffId ? String(expected.handoffId) : null;
   const phaseARunId = expected.phaseARunId || expected.phaseARun ? String(expected.phaseARunId || expected.phaseARun) : null;
   const inputDigest = expected.inputDigest || expected.inputManifestDigest ? String(expected.inputDigest || expected.inputManifestDigest) : null;
+  const sourceCheckpointDigest = expected.sourceCheckpointDigest ? String(expected.sourceCheckpointDigest) : null;
+  const sourceManifestDigest = expected.sourceManifestDigest ? String(expected.sourceManifestDigest) : null;
+  const jobDigest = expected.jobDigest ? String(expected.jobDigest) : null;
   return (comments || []).filter((comment) => {
     const body = String(comment?.body || '');
     const url = String(comment?.html_url || '');
@@ -33,6 +36,9 @@ function selectNewestDispatchComment(comments, expected = {}) {
     if (handoffId && markerValue(body, 'Handoff ID') !== handoffId) return false;
     if (phaseARunId && markerValue(body, 'Phase-A run') !== phaseARunId) return false;
     if (inputDigest && markerValue(body, 'Input manifest digest') !== inputDigest) return false;
+    if (sourceCheckpointDigest && markerValue(body, 'Source checkpoint digest') !== sourceCheckpointDigest) return false;
+    if (sourceManifestDigest && markerValue(body, 'Source manifest digest') !== sourceManifestDigest) return false;
+    if (jobDigest && markerValue(body, 'Job digest') !== jobDigest) return false;
     return (!digest || markerValue(body, 'Dispatch packet digest') === digest)
       && (!key || markerValue(body, 'Dispatch key') === key)
       && markerValue(body, 'Handoff ID') != null
