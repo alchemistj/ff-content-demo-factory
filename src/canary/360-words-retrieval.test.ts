@@ -1,10 +1,16 @@
 import assert from "node:assert/strict";
+import { createHash } from "node:crypto";
+import { readFileSync } from "node:fs";
 import test from "node:test";
 import { mkdtemp, mkdir, rm, writeFile } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { buildWriter1QuarantineMetadata, buildWriter1ValidationReport, collectWriter1ValidationDiagnostics, parseAndValidateFreshWriter1Output, parseAndValidateWriter1Output, readApprovedWriter1OutputForWriter2, quarantineWriter1Artifact, validateSealed, writer1Projection, Writer1OutputRecoveryError } from "../../scripts/360-words-canary.js";
 import { buildWriter1PointerLedgerNormalization, normalizeWriter1PointerLedger, writer1OutputDigests, writer1ProvenanceMetadataDigest, writer1SemanticRenderedCopyDigest, writer1StableIdentityDigest, WRITER1_WORD_KEYS, type CursorArtifactBinding } from "../../src/pipeline/cursor-writer.js";
+
+const sha256 = (bytes: Buffer) => "sha256:" + createHash("sha256").update(bytes).digest("hex");
+const quarantinedWriter1Path = join(process.cwd(), "canary/runtime/quarantine/writer1-output.json");
+const quarantinedWriter1MetadataPath = join(process.cwd(), "canary/runtime/quarantine/writer1-output.metadata.json");
 
 const projection = {
   services: [
@@ -75,6 +81,22 @@ test("pointer-ledger normalization removes exactly the 62 duplicated words and p
   const invalid = structuredClone(normalizedOutput) as Record<string, any>;
   delete invalid.pages[0].body;
   assert.throws(() => parseAndValidateWriter1Output(JSON.stringify(invalid), projectionWithRefs), /full copy field body/u);
+});
+
+test("production reviewer+excerpt reviewEvidence fails the exact word-bearing gate, then normalizes losslessly", () => {
+  const seeded = JSON.parse(valid) as Record<string, any>;
+  seeded.pages[0].reviewEvidence = [{ reviewId: "review-repair", reviewer: "Chris", excerpt: "The repair was excellent.", provenance: { type: "evidence", ref: "review-repair", placement: "pointer", section: "repair-section" } }];
+  const errors = collectWriter1ValidationDiagnostics(JSON.stringify(seeded), projection);
+  assert.ok(errors.some((error) => error.code === "REVIEW_EVIDENCE_CLAIM_TEXT_DUPLICATE" && error.path === "/pages/0/reviewEvidence/0/reviewer"));
+  assert.equal(errors[0]?.expectedRule, "reviewEvidence must not contain any accepted word-bearing key; it is a typed pointer ledger");
+  assert.throws(() => parseAndValidateWriter1Output(JSON.stringify(seeded), projection), /word-bearing|typed pointer ledger/u);
+  assert.throws(() => parseAndValidateFreshWriter1Output(seeded, projection), /word-bearing|typed pointer ledger/u);
+  const normalized = normalizeWriter1PointerLedger(seeded);
+  assert.equal("excerpt" in (normalized.output as Record<string, any>).pages[0].reviewEvidence[0], false);
+  assert.equal("reviewer" in (normalized.output as Record<string, any>).pages[0].reviewEvidence[0], false);
+  assert.equal((normalized.output as Record<string, any>).pages[0].reviewPlacements[0].quote, "The repair was excellent.");
+  assert.equal((normalized.output as Record<string, any>).pages[0].reviewPlacements[0].attribution, "Chris");
+  assert.doesNotThrow(() => parseAndValidateWriter1Output(JSON.stringify(normalized.output), projection));
 });
 
 test("Writer1 output validator rejects prose, missing copy, unbound quotes, and prohibited public topology", () => {
@@ -290,4 +312,42 @@ test("real supporting and not-applicable reviews cannot become quoted proof", ()
     injected.sealedRefs.push(candidate.id);
     assert.throws(() => parseAndValidateWriter1Output(realWriter1Output(injected, evidence), injected), /unapproved|non-authoritative|non-direct/u);
   }
+});
+
+test("quarantined 360 Writer1 bytes fail only the reviewEvidence pointer-ledger gate, then normalize losslessly", () => {
+  const rawBytes = readFileSync(quarantinedWriter1Path);
+  const metadata = JSON.parse(readFileSync(quarantinedWriter1MetadataPath, "utf8")) as Record<string, any>;
+  assert.equal(sha256(rawBytes), metadata.artifactByteDigest);
+  assert.equal(metadata.consumable, false);
+  assert.equal(metadata.approved, false);
+  const raw = rawBytes.toString("utf8");
+  const errors = collectWriter1ValidationDiagnostics(raw, realProjection);
+  assert.ok(errors.length > 0);
+  assert.ok(errors.every((error) => error.code === "REVIEW_EVIDENCE_CLAIM_TEXT_DUPLICATE"));
+  assert.equal(errors[0]?.expectedRule, "reviewEvidence must not contain any accepted word-bearing key; it is a typed pointer ledger");
+  assert.equal(errors[0]?.path, "/pages/0/reviewEvidence/0/reviewer");
+  assert.throws(() => parseAndValidateWriter1Output(raw, realProjection), /word-bearing|typed pointer ledger/u);
+  assert.throws(() => parseAndValidateFreshWriter1Output(JSON.parse(raw), realProjection), /word-bearing|typed pointer ledger/u);
+  const parsed = JSON.parse(raw) as Record<string, any>;
+  const repairQuote = parsed.pages[0].reviewPlacements[0].quote;
+  const installQuote = parsed.pages[1].reviewPlacements[0].quote;
+  const normalized = normalizeWriter1PointerLedger(parsed);
+  assert.equal(normalized.removed.length, 62);
+  assert.equal(normalized.removed.filter((entry) => entry.key === "reviewer").length, 31);
+  assert.equal(normalized.removed.filter((entry) => entry.key === "excerpt").length, 31);
+  assert.equal(writer1SemanticRenderedCopyDigest(parsed), writer1SemanticRenderedCopyDigest(normalized.output));
+  assert.equal(writer1StableIdentityDigest(parsed), writer1StableIdentityDigest(normalized.output));
+  assert.equal(writer1ProvenanceMetadataDigest(parsed), writer1ProvenanceMetadataDigest(normalized.output));
+  const validated = parseAndValidateWriter1Output(JSON.stringify(normalized.output), realProjection);
+  assert.equal(validated.pages[0].reviewPlacements[0].quote, repairQuote);
+  assert.equal(validated.pages[1].reviewPlacements[0].quote, installQuote);
+  for (const page of validated.pages) {
+    for (const item of page.reviewEvidence) {
+      assert.equal("excerpt" in item, false);
+      assert.equal("reviewer" in item, false);
+      assert.equal("quote" in item, false);
+    }
+  }
+  assert.deepEqual(validated.pages.map((page: Record<string, any>) => page.url), ["/garage-door-repair", "/garage-door-installation"]);
+  assert.equal(sha256(readFileSync(quarantinedWriter1Path)), metadata.artifactByteDigest);
 });
