@@ -1,6 +1,7 @@
 'use strict';
 
 const crypto = require('node:crypto');
+const { persistOperationIntent, persistOperationState } = require('../factory/receipt-store');
 
 const ACTOR_ID = 'compass~crawler-google-places';
 const APIFY_BASE_URL = 'https://api.apify.com/v2';
@@ -187,37 +188,40 @@ function createApifyAdapter({ token, fetchImpl = globalThis.fetch, clock = () =>
 
   async function runActor(input, { jobKey = `input:${stableHash(JSON.stringify(input))}` } = {}) {
     const receiptKey = `apify:run:${jobKey}`;
+    const operation = String(jobKey).startsWith('discovery:') ? 'discovery' : 'finalist-enrichment';
+    const operationKey = receiptKey;
     const prior = await receiptGet(receiptKey);
     if (prior?.status === 'completed' && Array.isArray(prior.items)) return { items: prior.items, receipt: prior };
     if (prior?.status === 'running') return resumeActor(prior, input, jobKey);
     if (prior?.status === 'failed') throw new Error(`Apify run ${prior.apifyStatus || 'failed'} requires an explicit Architect retry decision`);
+    await persistOperationIntent(receiptStore, operationKey, { provider: 'apify', operation, input, context: { actor: ACTOR_ID, jobKey }, startedAt: clock() });
     const started = await request('POST', `/acts/${ACTOR_ID}/runs`, input);
     const run = started.data || started;
     const runId = run.id || run.runId;
     const datasetId = run.defaultDatasetId || run.datasetId;
     if (!runId || !datasetId) throw new Error('Apify run receipt missing id or dataset');
-    await receiptPut(receiptKey, {
-      provider: 'apify', actor: ACTOR_ID, jobKey, runId, datasetId,
-      status: 'running', startedAt: clock(), input,
+    await persistOperationState(receiptStore, operationKey, {
+      schemaVersion: 'factory-paid-operation-v1', operationKey, provider: 'apify', operation, actor: ACTOR_ID, jobKey, runId, datasetId,
+      status: 'running', startedAt: clock(), input, inputDigest: crypto.createHash('sha256').update(JSON.stringify(input)).digest('hex'),
     });
     let terminal;
     try {
       terminal = await waitForRun(runId, run);
     } catch (error) {
-      if (error.apifyStatus) await receiptPut(receiptKey, {
-        provider: 'apify', actor: ACTOR_ID, jobKey, runId, datasetId,
-        status: 'failed', apifyStatus: error.apifyStatus, failedAt: clock(), input,
+      if (error.apifyStatus) await persistOperationState(receiptStore, operationKey, {
+        schemaVersion: 'factory-paid-operation-v1', operationKey, provider: 'apify', operation, actor: ACTOR_ID, jobKey, runId, datasetId,
+        status: 'failed', apifyStatus: error.apifyStatus, failedAt: clock(), input, inputDigest: crypto.createHash('sha256').update(JSON.stringify(input)).digest('hex'),
       });
       throw error;
     }
     const items = await request('GET', `/datasets/${encodeURIComponent(datasetId)}/items?format=json`);
     const receipt = {
-      provider: 'apify', actor: ACTOR_ID, jobKey, runId, datasetId,
-      status: 'completed', apifyStatus: terminal.status, completedAt: clock(),
+      schemaVersion: 'factory-paid-operation-v1', operationKey, provider: 'apify', operation, actor: ACTOR_ID, jobKey, runId, datasetId,
+      status: 'completed', terminalStatus: 'succeeded', apifyStatus: terminal.status, completedAt: clock(),
       itemCount: Array.isArray(items) ? items.length : 0,
-      input, items: Array.isArray(items) ? items : [],
+      input, inputDigest: crypto.createHash('sha256').update(JSON.stringify(input)).digest('hex'), items: Array.isArray(items) ? items : [], result: Array.isArray(items) ? items : [],
     };
-    await receiptPut(receiptKey, receipt);
+    await persistOperationState(receiptStore, operationKey, { ...receipt, outputDigest: crypto.createHash('sha256').update(JSON.stringify(receipt.result)).digest('hex') });
     return { items: Array.isArray(items) ? items : [], receipt };
   }
 
@@ -226,17 +230,19 @@ function createApifyAdapter({ token, fetchImpl = globalThis.fetch, clock = () =>
     try {
       terminal = await waitForRun(receipt.runId, { id: receipt.runId, defaultDatasetId: receipt.datasetId, status: receipt.status });
     } catch (error) {
-      if (error.apifyStatus) await receiptPut(`apify:run:${jobKey}`, {
-        ...receipt, jobKey, input, status: 'failed', apifyStatus: error.apifyStatus, failedAt: clock(),
+      if (error.apifyStatus) await persistOperationState(receiptStore, `apify:run:${jobKey}`, {
+        ...receipt, operationKey: `apify:run:${jobKey}`, jobKey, input, status: 'failed', apifyStatus: error.apifyStatus, failedAt: clock(),
       });
       throw error;
     }
     const items = await request('GET', `/datasets/${encodeURIComponent(receipt.datasetId)}/items?format=json`);
     const completed = {
-      ...receipt, jobKey, input, status: 'completed', apifyStatus: terminal.status, completedAt: clock(),
-      itemCount: Array.isArray(items) ? items.length : 0, items: Array.isArray(items) ? items : [],
+      ...receipt, operationKey: `apify:run:${jobKey}`, jobKey, input, status: 'completed', terminalStatus: 'succeeded', apifyStatus: terminal.status, completedAt: clock(),
+      itemCount: Array.isArray(items) ? items.length : 0, items: Array.isArray(items) ? items : [], result: Array.isArray(items) ? items : [],
+      inputDigest: receipt.inputDigest || crypto.createHash('sha256').update(JSON.stringify(input)).digest('hex'),
+      outputDigest: crypto.createHash('sha256').update(JSON.stringify(Array.isArray(items) ? items : [])).digest('hex'),
     };
-    await receiptPut(`apify:run:${jobKey}`, completed);
+    await persistOperationState(receiptStore, `apify:run:${jobKey}`, completed);
     return { items: completed.items, receipt: completed };
   }
 
