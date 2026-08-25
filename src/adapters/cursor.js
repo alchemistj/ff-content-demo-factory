@@ -19,7 +19,11 @@ function redact(value, secret) {
 }
 
 function isTerminalCursorRunError(error) {
-  return /Cursor research run ended (error|failed|aborted|timed[- ]?out)/i.test(String(error?.message || error || ''));
+  const message = String(error?.message || error || '');
+  return /Cursor research run ended (error|failed|aborted|timed[- ]?out)/i.test(message)
+    || /Cursor returned (invalid JSON|empty output)/i.test(message)
+    || /Cursor result kind mismatch/i.test(message)
+    || /result (must be an object|contract invalid)/i.test(message);
 }
 
 function parseJsonResult(output) {
@@ -217,4 +221,5 @@ function normalizeError(error) {
 module.exports = {
   FACTORY_MODEL_ALIAS, ACTUAL_MODEL_ID, createCursorAdapter, createMemoryReceiptStore,
   modelSelectionFromCatalog, parseJsonResult, validateResult, researchPrompt,
+  isTerminalCursorRunError,
 };

@@ -8,6 +8,7 @@ const {
   FACTORY_MODEL_ALIAS,
   createCursorAdapter,
   createMemoryReceiptStore,
+  isTerminalCursorRunError,
   modelSelectionFromCatalog,
   parseJsonResult,
 } = require('../src/adapters/cursor');
@@ -269,36 +270,90 @@ test('Cursor resumes an in-flight agent/run receipt without create or send', asy
   assert.equal((await receiptStore.get('cursor:resume-1')).status, 'completed');
 });
 
-test('Cursor does not resume a run that already ended in error; it starts a replacement research job', async () => {
-  const receiptStore = createMemoryReceiptStore();
-  await receiptStore.put('cursor:dead-run', {
-    provider: 'cursor-sdk', jobId: 'dead-run', kind: 'review-judgment', status: 'running',
-    agentId: 'agent-dead', runId: 'run-dead', lastError: 'Cursor research run ended error',
-    requestedAlias: FACTORY_MODEL_ALIAS, resolvedModel: ACTUAL_MODEL_ID,
+test('Cursor treats finished-but-bad research output as terminal, not resumable', () => {
+  assert.equal(isTerminalCursorRunError('Cursor research run ended error'), true);
+  assert.equal(isTerminalCursorRunError(new Error('Cursor returned invalid JSON')), true);
+  assert.equal(isTerminalCursorRunError('Cursor returned empty output'), true);
+  assert.equal(isTerminalCursorRunError('Cursor result kind mismatch for review-judgment'), true);
+  assert.equal(isTerminalCursorRunError('Review judgment result contract invalid'), true);
+  assert.equal(isTerminalCursorRunError('Cursor review-judgment result must be an object'), true);
+  assert.equal(isTerminalCursorRunError('ECONNRESET'), false);
+});
+
+for (const lastError of [
+  'Cursor research run ended error',
+  'Cursor returned invalid JSON',
+  'Cursor returned empty output',
+  'Cursor result kind mismatch for review-judgment',
+  'Review judgment result contract invalid',
+]) {
+  test(`Cursor does not resume a run that already ended (${lastError}); it starts a replacement research job`, async () => {
+    const receiptStore = createMemoryReceiptStore();
+    await receiptStore.put('cursor:dead-run', {
+      provider: 'cursor-sdk', jobId: 'dead-run', kind: 'review-judgment', status: 'running',
+      agentId: 'agent-dead', runId: 'run-dead', lastError,
+      requestedAlias: FACTORY_MODEL_ALIAS, resolvedModel: ACTUAL_MODEL_ID,
+    });
+    let creates = 0;
+    let resumes = 0;
+    const sdk = {
+      Cursor: { models: { list: async () => catalog() } },
+      Agent: {
+        resume: async () => { resumes += 1; throw new Error('must not resume a terminal error run'); },
+        getRun: async () => { throw new Error('must not reattach a terminal error run'); },
+        create: async () => {
+          creates += 1;
+          return {
+            agentId: 'agent-replacement',
+            send: async () => ({ id: 'run-replacement', wait: async () => ({ status: 'finished', text: '{"kind":"review-judgment","reviewId":"r1","decision":"supporting","authoritative":true}' }) }),
+            dispose: async () => {},
+          };
+        },
+      },
+    };
+    const adapter = createCursorAdapter({ apiKey: 'secret', sdk, receiptStore });
+    const result = await adapter.runResearch({ kind: 'review-judgment', jobId: 'dead-run', input: { reviewId: 'r1' } });
+    assert.equal(result.kind, 'review-judgment');
+    assert.equal(resumes, 0);
+    assert.equal(creates, 1);
+    assert.equal((await receiptStore.get('cursor:dead-run')).status, 'completed');
   });
+}
+
+test('Cursor persists invalid JSON from a finished wait as failed so the next attempt is a new job', async () => {
+  const receiptStore = createMemoryReceiptStore();
   let creates = 0;
   let resumes = 0;
+  let waitText = 'not-json {';
   const sdk = {
     Cursor: { models: { list: async () => catalog() } },
     Agent: {
-      resume: async () => { resumes += 1; throw new Error('must not resume a terminal error run'); },
-      getRun: async () => { throw new Error('must not reattach a terminal error run'); },
+      resume: async () => { resumes += 1; throw new Error('must not resume a finished invalid-JSON run'); },
+      getRun: async () => { throw new Error('must not reattach a finished invalid-JSON run'); },
       create: async () => {
         creates += 1;
         return {
-          agentId: 'agent-replacement',
-          send: async () => ({ id: 'run-replacement', wait: async () => ({ status: 'finished', text: '{"kind":"review-judgment","reviewId":"r1","decision":"supporting","authoritative":true}' }) }),
+          agentId: `agent-${creates}`,
+          send: async () => ({ id: `run-${creates}`, wait: async () => ({ status: 'finished', text: waitText }) }),
           dispose: async () => {},
         };
       },
     },
   };
   const adapter = createCursorAdapter({ apiKey: 'secret', sdk, receiptStore });
-  const result = await adapter.runResearch({ kind: 'review-judgment', jobId: 'dead-run', input: { reviewId: 'r1' } });
+  await assert.rejects(
+    () => adapter.runResearch({ kind: 'review-judgment', jobId: 'bad-json', input: { reviewId: 'r1' } }),
+    /invalid JSON/i,
+  );
+  const failed = await receiptStore.get('cursor:bad-json');
+  assert.equal(failed.status, 'failed');
+  assert.match(failed.error, /invalid JSON/i);
+  waitText = '{"kind":"review-judgment","reviewId":"r1","decision":"supporting","authoritative":true}';
+  const result = await adapter.runResearch({ kind: 'review-judgment', jobId: 'bad-json', input: { reviewId: 'r1' } });
   assert.equal(result.kind, 'review-judgment');
   assert.equal(resumes, 0);
-  assert.equal(creates, 1);
-  assert.equal((await receiptStore.get('cursor:dead-run')).status, 'completed');
+  assert.equal(creates, 2);
+  assert.equal((await receiptStore.get('cursor:bad-json')).status, 'completed');
 });
 
 test('Cursor reattaches an agent with no run id and sends exactly once', async () => {
