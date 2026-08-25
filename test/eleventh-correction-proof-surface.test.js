@@ -229,10 +229,9 @@ test('eleventh correction workflow is repository-native, not Josh-operated workf
   assert.doesNotMatch(workflow, /github\.actor == github\.repository_owner/);
   assert.doesNotMatch(workflow, /secrets\.CURSOR_API_KEY/);
   assert.doesNotMatch(workflow, /secrets\.APIFY_API_TOKEN/);
-  assert.match(workflow, /scripts\/run-exact-head-sealed-360-proof\.js/);
   assert.match(workflow, /src\/run-gate1-canary\.js|run-exact-head-sealed-360-proof/);
   assert.match(workflow, /node --test/);
-  assert.match(workflow, /canary\/outputs\/gate1\.md/);
+  assert.doesNotMatch(workflow, /canary\/outputs\/gate1\.md/);
   assert.match(workflow, /current-head-gate1-proof\.json/);
   assert.match(workflow, /if-no-files-found: error/);
   assert.match(workflow, /test -z "\$\{CURSOR_API_KEY:-\}"/);
@@ -245,7 +244,7 @@ test('eleventh correction workflow is repository-native, not Josh-operated workf
   assert.doesNotMatch(fs.readFileSync('.github/workflows/cursor-cloud-agent-dispatch.yml', 'utf8'), /Exact-head sealed 360 Gate 1 proof/);
 });
 
-test('eleventh correction real sealed 360 path assembles a fail-closed exact-head package without vendor secrets', async () => {
+test('eleventh correction real sealed 360 path remains synthetic-only and never assembles Gate 1', async () => {
   const head = spawnSync('git', ['rev-parse', 'HEAD'], { encoding: 'utf8' }).stdout.trim();
   assert.match(head, /^[a-f0-9]{40}$/);
   const root = tempRoot();
@@ -263,27 +262,13 @@ test('eleventh correction real sealed 360 path assembles a fail-closed exact-hea
     FACTORY_ACTION_RUN_URL: 'https://github.com/alchemistj/ff-content-demo-factory/actions/runs/local-eleventh',
     GITHUB_RUN_ID: 'local-eleventh',
   };
-  await assert.rejects(() => runExactHeadSealed360Proof({ root, env, deps: { runFactoryCycle: async () => ({}) } }), /injected\/mock/);
-  const { validated, result } = await runExactHeadSealed360Proof({ root, env });
-  assert.equal(result.proof.gate1State, 'awaiting-human-gate-1');
-  assert.equal(result.proof.sealedEvidence, true);
+  await assert.rejects(() => runExactHeadSealed360Proof({ root, env, deps: { runFactoryCycle: async () => ({}) } }), /injected\\/mock/);
+  const { result, validated } = await runExactHeadSealed360Proof({ root, env });
+  assert.equal(result.proof.gate1State, 'synthetic-sealed-evidence-only');
+  assert.equal(result.proof.synthetic, true);
+  assert.equal(result.proof.approvableGate1, false);
   assert.equal(result.proof.integratedFactoryReadiness, false);
-  assert.equal(result.proof.liveConnectorProven, false);
-  assert.equal(result.proof.proofScope, SEALED_PROOF_SCOPE);
-  assert.equal(validated.package.liveConnectorProven, false);
-  assert.equal(validated.prescription.pages.length, 4);
-  assert.match(validated.markdown, /Garage Door Repair/);
-  assert.match(validated.markdown, /Garage Door Installation/);
-  assert.match(validated.markdown, /Sealed replay truth/);
-  assert.doesNotMatch(validated.markdown, /CURSOR_API_KEY/);
-  const packet = JSON.parse(fs.readFileSync(path.join(root, CURRENT_PACKET_RELATIVE), 'utf8'));
-  assert.equal(packet.reviewedHeadSha, head);
-  assert.equal(packet.preparedOnly, false);
-  assert.equal(packet.executed, false);
-  assert.equal(packet.sealedReplayExecuted, true);
-  assert.equal(packet.liveConnectorExecuted, false);
-  assert.match(validated.package.packageDigest, /^sha256:[a-f0-9]{64}$/);
-  const recorded = { ...validated.package };
-  delete recorded.packageDigest;
-  assert.equal(digest(recorded), validated.package.packageDigest);
+  assert.equal(validated, null);
+  assert.equal(fs.existsSync(path.join(root, 'canary/outputs/current-head-gate1-proof.json')), true);
+  assert.equal(fs.existsSync(path.join(root, 'canary/outputs/gate1.md')), false);
 });
