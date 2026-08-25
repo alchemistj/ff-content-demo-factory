@@ -27,7 +27,9 @@ function standardPages(serviceCount = 2) {
 }
 
 const TEST_COVERAGE = { inspected: true, inspectedPageUrls: ['/'], matchingPageUrls: [], hasCorrespondingPage: false, crawlRefs: ['test-crawl'], absenceEvidence: { kind: 'test-absence', crawlRefs: ['test-crawl'] } };
-const TEST_LEDGER = { version: 'canonical-service-coverage-ledger-v1', prospectId: 'unit-prospect', placeId: 'unit-place', runId: 'run-1', aliases: {}, services: [
+const TEST_SOURCE_IDENTITY = { provider: 'repository-test-fixture', runId: 'run-1', artifactId: 'artifact-1', sourceSha: 'abc', rootIdentity: 'test-artifact-root:artifact-1' };
+const TEST_SOURCE_ARTIFACT_DIGEST = 'sha256:bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb';
+const TEST_LEDGER = { version: 'canonical-service-coverage-ledger-v1', prospectId: 'unit-prospect', placeId: 'unit-place', runId: 'run-1', sourceIdentity: TEST_SOURCE_IDENTITY, aliases: {}, services: [
   { id: 'repair', name: 'Repair', reviewIds: [], currentSitePageUrls: [], siteAuditCoverage: TEST_COVERAGE },
   { id: 'installation', name: 'Installation', reviewIds: [], currentSitePageUrls: [], siteAuditCoverage: TEST_COVERAGE },
   { id: 'opener', name: 'Opener', reviewIds: [], currentSitePageUrls: [], siteAuditCoverage: TEST_COVERAGE },
@@ -52,18 +54,18 @@ test('standard policy selects only the top two evidence-backed service destinati
 
 test('valid one-off expansion requires an explicit durable approval bound to the run and page set', () => {
   const pages = policyPages([...standardPages(), page('Service', '/opener', 'opener')]);
-  const sourceBinding = { runId: 'run-1', artifactId: 'artifact-1', sourceSha: 'abc' };
+  const sourceBinding = { sourceIdentity: TEST_SOURCE_IDENTITY };
   const evidenceDigest = digest({ test: 'evidence' });
-  const unsigned = { mode: 'expanded-one-off', overrideId: 'override-1', prospectId: 'unit-prospect', runId: 'run-1', policyVersion: STANDARD_PRESCRIPTION_POLICY.version, approvedPageIds: pages.map(pageId).sort(), approvedCanonicalIntentIds: ['installation', 'opener', 'repair'], approvedBy: 'Josh Lenz', approvedAt: '2026-08-24', expiresAt: '2026-12-31', reason: 'Documented one-off proposal approved for this prospect.', sourceArtifactDigest: 'sha256:source', evidenceDigest, pageSetDigest: pageSetDigest(pages) };
+  const unsigned = { mode: 'expanded-one-off', overrideId: 'override-1', prospectId: 'unit-prospect', runId: 'run-1', policyVersion: STANDARD_PRESCRIPTION_POLICY.version, approvedPageIds: pages.map(pageId).sort(), approvedCanonicalIntentIds: ['installation', 'opener', 'repair'], approvedBy: 'Josh Lenz', approvedAt: '2026-08-24', expiresAt: '2026-12-31', reason: 'Documented one-off proposal approved for this prospect.', sourceArtifactDigest: TEST_SOURCE_ARTIFACT_DIGEST, evidenceDigest, pageSetDigest: pageSetDigest(pages) };
   const override = { ...unsigned, overrideDigest: digest(unsigned) };
-  const result = validatePagePolicy({ pages, services: services(), serviceLedger: TEST_LEDGER, override, runContext: { prospectId: 'unit-prospect', placeId: 'unit-place', runId: 'run-1', now: '2026-08-24' }, sourceBinding: { ...sourceBinding, sourceArtifactDigest: 'sha256:source' }, evidenceDigest });
+  const result = validatePagePolicy({ pages, services: services(), serviceLedger: TEST_LEDGER, override, runContext: { prospectId: 'unit-prospect', placeId: 'unit-place', runId: 'run-1', now: '2026-08-24' }, sourceBinding: { ...sourceBinding, sourceArtifactDigest: TEST_SOURCE_ARTIFACT_DIGEST }, evidenceDigest });
   assert.equal(result.policyMode, 'expanded-one-off');
   assert.equal(result.allowedServicePageCount, 3);
   assert.equal(result.override.overrideDigest, override.overrideDigest);
-  assert.throws(() => validatePagePolicy({ pages, services: services(), serviceLedger: TEST_LEDGER, override: { ...override, pageSetDigest: digest('tampered') }, runContext: { prospectId: 'unit-prospect', placeId: 'unit-place', runId: 'run-1', now: '2026-08-24' }, sourceBinding: { ...sourceBinding, sourceArtifactDigest: 'sha256:source' }, evidenceDigest }), /page-set digest mismatch/);
-  assert.throws(() => validatePagePolicy({ pages, services: services(), serviceLedger: TEST_LEDGER, override: { ...override, expiresAt: '2020-01-01' }, runContext: { prospectId: 'unit-prospect', placeId: 'unit-place', runId: 'run-1', now: '2026-08-24' }, sourceBinding: { ...sourceBinding, sourceArtifactDigest: 'sha256:source' }, evidenceDigest }), /dates are invalid|stale/);
-  assert.throws(() => validatePagePolicy({ pages, services: services(), serviceLedger: TEST_LEDGER, override: { ...override, runId: 'other-run' }, runContext: { prospectId: 'unit-prospect', placeId: 'unit-place', runId: 'run-1', now: '2026-08-24' }, sourceBinding: { ...sourceBinding, sourceArtifactDigest: 'sha256:source' }, evidenceDigest }), /run mismatch|digest is invalid/);
-  assert.throws(() => validatePagePolicy({ pages, services: services(), serviceLedger: TEST_LEDGER, override: { ...override, approvedBy: undefined }, runContext: { prospectId: 'unit-prospect', placeId: 'unit-place', runId: 'run-1', now: '2026-08-24' }, sourceBinding: { ...sourceBinding, sourceArtifactDigest: 'sha256:source' }, evidenceDigest }), /missing approvedBy/);
+  assert.throws(() => validatePagePolicy({ pages, services: services(), serviceLedger: TEST_LEDGER, override: { ...override, pageSetDigest: digest('tampered') }, runContext: { prospectId: 'unit-prospect', placeId: 'unit-place', runId: 'run-1', now: '2026-08-24' }, sourceBinding: { ...sourceBinding, sourceArtifactDigest: TEST_SOURCE_ARTIFACT_DIGEST }, evidenceDigest }), /page-set digest mismatch/);
+  assert.throws(() => validatePagePolicy({ pages, services: services(), serviceLedger: TEST_LEDGER, override: { ...override, expiresAt: '2020-01-01' }, runContext: { prospectId: 'unit-prospect', placeId: 'unit-place', runId: 'run-1', now: '2026-08-24' }, sourceBinding: { ...sourceBinding, sourceArtifactDigest: TEST_SOURCE_ARTIFACT_DIGEST }, evidenceDigest }), /dates are invalid|stale/);
+  assert.throws(() => validatePagePolicy({ pages, services: services(), serviceLedger: TEST_LEDGER, override: { ...override, runId: 'other-run' }, runContext: { prospectId: 'unit-prospect', placeId: 'unit-place', runId: 'run-1', now: '2026-08-24' }, sourceBinding: { ...sourceBinding, sourceArtifactDigest: TEST_SOURCE_ARTIFACT_DIGEST }, evidenceDigest }), /run mismatch|digest is invalid/);
+  assert.throws(() => validatePagePolicy({ pages, services: services(), serviceLedger: TEST_LEDGER, override: { ...override, approvedBy: undefined }, runContext: { prospectId: 'unit-prospect', placeId: 'unit-place', runId: 'run-1', now: '2026-08-24' }, sourceBinding: { ...sourceBinding, sourceArtifactDigest: TEST_SOURCE_ARTIFACT_DIGEST }, evidenceDigest }), /missing approvedBy/);
 });
 
 test('service alias collisions fail closed', () => {
