@@ -90,7 +90,6 @@ export function validateControl(control, input = {}) {
   } else if (Object.entries(EXPECTED_RECOVERY_V2).some(([key, value]) => recovery[key] !== value) || recovery.priorRecoveryPromptDigest !== v1PromptDigest || recovery.promptDigest !== v2PromptDigest || typeof recovery.idempotencyKey !== "string" || !/^[^:\s]+:writer1:artifact-recovery:v2:sha256:[0-9a-f]{64}:sha256:[0-9a-f]{64}$/u.test(recovery.idempotencyKey) || !recovery.idempotencyKey.endsWith(`:${v2PromptDigest}`)) throw new Error("active artifact-recovery v2 wake is missing the exact failed-v1, absolute-path, canonical-prompt, or idempotency pins");
   return { dormant: false, stage: "writer1", sourceSha: recovery.sourceSha };
 }
-
 if (import.meta.url === `file://${process.argv[1]}`) {
   const control = JSON.parse(fs.readFileSync(CONTROL_PATH, "utf8"));
   const changedPaths = execFileSync("git", ["diff-tree", "--no-commit-id", "--name-only", "-r", `${process.env.GITHUB_SHA}^`, process.env.GITHUB_SHA], { encoding: "utf8" }).trim().split(/\n/u).filter(Boolean);
