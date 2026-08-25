@@ -23,7 +23,7 @@ function resetProofWorkspace(root) {
   }
   for (const relative of [
     'canary/outputs/gate1.md',
-    'canary/outputs/current-head-gate1-proof.json',
+    'canary/outputs/current-head-synthetic-replay-proof.json',
     'canary/outputs/exact-head-proof.json',
     'canary/outputs/source-evidence-receipt-ledger.json',
     'canary/outputs/four-page-prescription.json',
