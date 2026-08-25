@@ -1,4 +1,4 @@
-name: Exact-head sealed 360 Gate 1 proof
+name: Exact-head sealed 360 synthetic replay proof
 
 on:
   pull_request:
@@ -80,43 +80,28 @@ jobs:
           FACTORY_SEALED_REPLAY_EXECUTED: ''
           RUNTIME_PACKET_PATH: ''
         run: node --test
-      - name: Execute real sealed 360 Gate 1 path
+      - name: Execute sealed synthetic replay (never Gate 1)
         env:
           FACTORY_CANARY_PHASE: integrated
           FACTORY_SEALED_EVIDENCE: 'true'
         run: node scripts/run-exact-head-sealed-360-proof.js
-      - name: Fail closed unless the complete Gate 1 proof package exists
+      - name: Fail closed unless the synthetic proof exists and is non-approvable
         run: |
-          test -s canary/outputs/gate1.md
           test -s canary/outputs/current-head-gate1-proof.json
-          test -s canary/outputs/exact-head-proof.json
-          test -s canary/state/factory-state.json
-          test -s canary/outputs/source-evidence-receipt-ledger.json
-          test -s canary/outputs/four-page-prescription.json
-          test -s canary/outputs/exact-head-sealed-360-proof-package.json
-          test -s canary/outputs/360-current-head-gate1-dispatch-packet.json
           node -e "
-            const { validateExactHeadProofPackage } = require('./src/factory/exact-head-proof-package');
-            const result = validateExactHeadProofPackage({ root: process.cwd(), expectedHeadSha: process.env.EXPECTED_HEAD_SHA });
-            if (result.package.integratedFactoryReadiness !== false || result.package.liveConnectorProven !== false) {
-              throw new Error('sealed proof mislabeled as live connector readiness');
-            }
-            process.stdout.write(result.package.packageDigest + '\\n');
+            const fs = require('node:fs');
+            const proof = JSON.parse(fs.readFileSync('canary/outputs/current-head-gate1-proof.json', 'utf8'));
+            if (proof.synthetic !== true || proof.approvableGate1 !== false || proof.gate1State !== 'synthetic-sealed-evidence-only') throw new Error('sealed proof is not synthetic-only');
+            if (proof.integratedFactoryReadiness !== false || proof.liveConnectorProven !== false) throw new Error('sealed proof mislabeled as live connector readiness');
+            if (fs.existsSync('canary/outputs/gate1.md') || fs.existsSync('canary/state/factory-state.json')) throw new Error('sealed replay emitted Gate 1-shaped output');
+            process.stdout.write(proof.checkedOutSha + '\\n');
           "
-      - name: Upload complete Gate 1 proof package
+      - name: Upload synthetic proof
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         with:
-          name: exact-head-sealed-360-gate1-proof-${{ github.run_id }}
+          name: exact-head-sealed-360-synthetic-proof-${{ github.run_id }}
           path: |
-            canary/outputs/gate1.md
             canary/outputs/current-head-gate1-proof.json
-            canary/outputs/exact-head-proof.json
-            canary/outputs/source-evidence-receipt-ledger.json
-            canary/outputs/four-page-prescription.json
-            canary/outputs/exact-head-sealed-360-proof-package.json
-            canary/outputs/360-current-head-gate1-dispatch-packet.json
-            canary/outputs/current-head-gate1-pending.json
-            canary/state/factory-state.json
           if-no-files-found: error
           retention-days: 30
