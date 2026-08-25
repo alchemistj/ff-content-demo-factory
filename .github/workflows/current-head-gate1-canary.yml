@@ -134,9 +134,10 @@ jobs:
           test -n "$APIFY_API_TOKEN"
       - name: Install locked dependencies
         run: npm ci --ignore-scripts --no-audit --no-fund
-      - name: Run fresh current-head Gate 1 canary
+      - name: Run fresh current-head Gate 1 canary (trusted receipt path)
+        if: inputs.sealed_evidence != true
         env:
-          APIFY_API_TOKEN: ${{ inputs.sealed_evidence == true && '' || secrets.APIFY_API_TOKEN }}
+          APIFY_API_TOKEN: ${{ secrets.APIFY_API_TOKEN }}
           REQUEST_FILE: ${{ inputs.request_file }}
           SELECTION_FILE: ${{ inputs.selection_file }}
           QA_FILE: ${{ inputs.qa_file }}
@@ -150,6 +151,23 @@ jobs:
           FACTORY_PHASE_A_RUN_ID: ${{ inputs.phase_a_run_id }}
           FACTORY_REPOSITORY: ${{ github.repository }}
         run: node src/run-gate1-canary.js . "$REQUEST_FILE" "$SELECTION_FILE" "$QA_FILE" "$CURSOR_BUNDLE_FILE"
+      - name: Run synthetic sealed replay (test-only; no vendor credentials)
+        if: inputs.sealed_evidence == true
+        env:
+          REQUEST_FILE: ${{ inputs.request_file }}
+          SELECTION_FILE: ${{ inputs.selection_file }}
+          QA_FILE: ${{ inputs.qa_file }}
+          CURSOR_BUNDLE_FILE: ''
+          FACTORY_ISSUE_NUMBER: ${{ inputs.issue_number }}
+          FACTORY_PR_NUMBER: ${{ inputs.pr_number }}
+          FACTORY_BRANCH: ${{ inputs.branch }}
+          EXPECTED_HEAD_SHA: ${{ inputs.expected_head_sha }}
+          FACTORY_CANARY_PHASE: integrated
+          FACTORY_SEALED_EVIDENCE: 'true'
+          FACTORY_REPOSITORY: ${{ github.repository }}
+          FACTORY_CHECKED_OUT_SHA: ${{ inputs.expected_head_sha }}
+          FACTORY_HEAD_ASSERTION: 'true'
+        run: node src/run-gate1-canary.js . "$REQUEST_FILE" "$SELECTION_FILE" "$QA_FILE" ''
       - name: Upload exact-head proof (required)
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
@@ -167,7 +185,7 @@ jobs:
           if-no-files-found: error
           retention-days: 30
       - name: Prove Gate 1 artifacts exist
-        if: inputs.phase == 'resume' || inputs.phase == 'integrated'
+        if: (inputs.phase == 'resume' || inputs.phase == 'integrated') && inputs.sealed_evidence != true
         run: |
           test -s canary/outputs/current-head-gate1-proof.json
           test -s canary/outputs/gate1.md
@@ -178,7 +196,7 @@ jobs:
           name: current-head-gate1-canary-${{ github.run_id }}
           path: |
             canary/outputs/current-head-gate1-proof.json
-            canary/outputs/gate1.md
+            ${{ inputs.sealed_evidence == true && 'canary/outputs/current-head-gate1-proof.json' || 'canary/outputs/gate1.md' }}
             canary/state/factory-state.json
           if-no-files-found: error
           retention-days: 30
