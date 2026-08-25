@@ -104,6 +104,18 @@ function inventoryForQa(classification, packet, finalist) {
   return { ...classification, exactPlace, exactPlaceId: packetPlaceId, discoverySampleOnly, dateWindow, requestedLimit, listingReviewCount: listingReviewCount ?? null, retrievedReviewCount, writtenReviewCount: classification.writtenReviewCount, emptyReviewCount: classification.emptyReviewCount, enrichmentStatus: sufficient ? 'sufficient' : 'incomplete', availabilityPattern: null };
 }
 function proposalPayload(proposal) { return { proposal: proposal?.proposal || proposal?.prescription || proposal, receipt: proposal?.receipt || proposal?.cursorReceipt || null }; }
+function sourceCheckpointFor(run, state) {
+  const sourceMaterial = {
+    discoveryRequest: state.discoveryRequest || null,
+    discoveryReceipt: state.discoveryPacket?.receipt || state.discoveryPacket?.provenance?.run || null,
+    auditReceipt: state.auditReceipts?.[run.candidate?.placeId] || null,
+    candidate: { placeId: run.candidate?.placeId, name: run.candidate?.name, location: run.candidate?.location, website: run.candidate?.website, websiteAudit: run.candidate?.websiteAudit || null },
+    finalistEnrichment: run.artifacts.reviewPacket || null,
+  };
+  const sourceSha = digest(sourceMaterial).slice('sha256:'.length);
+  const sourceIdentity = { provider: 'factory-trusted-source', runId: run.runId, artifactId: `source-${run.runId}`, sourceSha, rootIdentity: `factory-source:${run.runId}` };
+  return { sourceIdentity, sourceArtifactDigest: digest({ sourceIdentity, sourceMaterial }) };
+}
 function correctedProposal(proposal, corrections) {
   if (!corrections || typeof corrections !== 'object') return proposal;
   return {
@@ -196,7 +208,8 @@ async function runFactoryCycle({ root, config, adapters, discoveryRequest = null
     }
     if (!run.artifacts.classification || Object.keys(run.artifacts.reviewJudgments || {}).length < run.artifacts.reviewPacket.reviews.length) await classifyResumably({ run, state, adapters, root, now });
     if (!run.artifacts.prescription) {
-      const proposalResult = await proposalAdapter(adapters)({ finalist: { ...run.candidate, prospectId: run.prospectId, runId: run.runId }, runId: run.runId, prospectId: run.prospectId, placeId: run.candidate?.placeId, classification: run.artifacts.classification, inventory: run.artifacts.inventory, discoveryPacket: state.discoveryPacket });
+      const sourceCheckpoint = sourceCheckpointFor(run, state);
+      const proposalResult = await proposalAdapter(adapters)({ finalist: { ...run.candidate, prospectId: run.prospectId, runId: run.runId }, runId: run.runId, prospectId: run.prospectId, placeId: run.candidate?.placeId, classification: run.artifacts.classification, inventory: run.artifacts.inventory, discoveryPacket: state.discoveryPacket, decision: { sourceCheckpoint } });
       const proposal = proposalPayload(proposalResult); run.artifacts.cursorProposal = proposal.proposal; run.artifacts.cursorProposalReceipt = proposal.receipt; run.artifacts.prescription = buildValidatedPrescription({ run, classification: run.artifacts.classification, proposal: proposal.proposal });
       run.artifacts.inventory.availabilityPattern = run.artifacts.prescription.evidence?.availabilityPattern || null;
       transition(state, run.runId, 'architect-qa', { owner, now, artifact: run.artifacts.prescription }); await persist(state, root, now);
@@ -233,4 +246,4 @@ async function runFactoryCycle({ root, config, adapters, discoveryRequest = null
   } finally { release(); }
 }
 
-module.exports = { REVIEW_LIMIT, requireDiscoveryRequest, inventoryForQa, writeAtomic, runFactoryCycle };
+module.exports = { REVIEW_LIMIT, requireDiscoveryRequest, inventoryForQa, sourceCheckpointFor, writeAtomic, runFactoryCycle };
