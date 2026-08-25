@@ -1,6 +1,6 @@
 {
   "schemaVersion": "words-canary-control/v1",
-  "wakeNonce": "W1-VERIFIED-20260825-V3-DELETE-2D49",
+  "wakeNonce": "DORMANT",
   "requestedBy": "architect",
   "stage": "writer1",
   "runId": "32717620900",
@@ -9,45 +9,16 @@
   "sealedManifestPath": "canary/sealed/360-handoff-manifest.json",
   "restore": null,
   "policy": {
-    "mode": "writer1-correction",
     "writer1Only": true,
-    "approvedRoutes": ["/", "/garage-door-repair", "/garage-door-installation", "/contact"],
+    "approvedRoutes": [
+      "/",
+      "/garage-door-repair",
+      "/garage-door-installation",
+      "/contact"
+    ],
+    "fast": false,
     "provider": "cursor-sdk",
     "model": "cursor-grok-4.6-high",
-    "fast": false,
-    "stopAfter": "awaiting-architect-qa",
-    "recovery": {
-      "correctionVersion": "words-writer1-correction/v3",
-      "sourceBranch": "architect/360-words-canary-verified",
-      "sourceSha": "2d49b0a5996e78f6beca2c8c52563da8ad10da6b",
-      "sealedHandoffDigest": "sha256:715f651a53055444b8381dd8a276a2046d93776c61d88a2193cc2d42a1c83ad6",
-      "agentId": "bc-2486f645-c31c-4532-8145-fbe3af1d45a8",
-      "threadUrl": "https://cursor.com/agents/bc-2486f645-c31c-4532-8145-fbe3af1d45a8",
-      "targetPath": "/pages/0/sections/3/body",
-      "inputDigest": "sha256:b1857597707c68eb781e73f33fd9c25e63724948e43b904e82726738597360bb",
-      "promptDigest": "sha256:f3cec1933c3e034154715f1e1ec46e791144c468c5a8f07095d9e8752769b744",
-      "idempotencyKey": "bc-2486f645-c31c-4532-8145-fbe3af1d45a8:writer1:correction:v3:sha256:b1857597707c68eb781e73f33fd9c25e63724948e43b904e82726738597360bb:sha256:f3cec1933c3e034154715f1e1ec46e791144c468c5a8f07095d9e8752769b744",
-      "allowCreate": false,
-      "allowResume": true,
-      "allowFollowUp": true,
-      "maxFollowUps": 1,
-      "sourceArtifact": {
-        "kind": "quarantine-file",
-        "actionRunId": "32838242891",
-        "artifactId": 9559472540,
-        "artifactZipDigest": "sha256:455c10d5928ee64d0d27d5f86eb80f63bd21dd811f601f6666f2c5b878eae824",
-        "path": "quarantine/writer1-rejected-output.txt",
-        "rawDigest": "sha256:1e2d5cabca16346f960b7bd893d2af1adf8dc6d453da926f7012711ae45ca0dd",
-        "size": 22468,
-        "agentId": "bc-2486f645-c31c-4532-8145-fbe3af1d45a8",
-        "runId": "run-1686013d-dec5-454c-a39e-5817448e6a96",
-        "threadUrl": "https://cursor.com/agents/bc-2486f645-c31c-4532-8145-fbe3af1d45a8",
-        "requestedModel": "cursor-grok-4.6-high",
-        "resolvedModel": "grok-4.6",
-        "effort": "high",
-        "fast": false,
-        "authorship": "cursor-authored-quarantined-unapproved"
-      }
-    }
+    "stopAfter": "awaiting-architect-qa"
   }
 }
