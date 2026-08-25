@@ -1,6 +1,6 @@
 {
   "schemaVersion": "words-canary-control/v1",
-  "wakeNonce": "DORMANT",
+  "wakeNonce": "W1-360-20260825-V3-METADATA",
   "requestedBy": "architect",
   "stage": "writer1",
   "runId": "32717620900",
@@ -10,10 +10,42 @@
   "restore": null,
   "policy": {
     "writer1Only": true,
-    "approvedRoutes": ["/", "/garage-door-repair", "/garage-door-installation", "/contact"],
+    "approvedRoutes": [
+      "/",
+      "/garage-door-repair",
+      "/garage-door-installation",
+      "/contact"
+    ],
     "fast": false,
     "provider": "cursor-sdk",
     "model": "cursor-grok-4.6-high",
-    "stopAfter": "awaiting-architect-qa"
+    "mode": "artifact-recovery",
+    "stopAfter": "awaiting-architect-qa",
+    "recovery": {
+      "priorActionRunId": "32785189225",
+      "priorArtifactId": 9541802267,
+      "priorAgentId": "bc-30fc8ffa-2005-44b9-8fc7-48ddd9c3bcc8",
+      "priorRunId": "run-b0341a7a-9f03-4dec-b76d-7350ba1e82f2",
+      "priorThreadUrl": "https://cursor.com/agents/bc-30fc8ffa-2005-44b9-8fc7-48ddd9c3bcc8",
+      "artifactPath": "artifacts/writer1-output.json",
+      "sourceBranch": "architect/360-words-canary",
+      "sealedHandoffDigest": "sha256:715f651a53055444b8381dd8a276a2046d93776c61d88a2193cc2d42a1c83ad6",
+      "sourceSha": "9c5c6a0c19f52860ad22961090baa1387bb29507",
+      "recoveryVersion": "words-writer1-artifact-recovery/v3",
+      "priorRecoveryV2ActionRunId": "32795481394",
+      "priorRecoveryV2ArtifactId": 9544693335,
+      "priorRecoveryV2ArtifactDigest": "sha256:469f3b04eb502316404d98023df34c38e57e8cc6bf51d6dbfdbda12be3834e2f",
+      "priorRecoveryV2SourceSha": "29311637f3f4adc04f3dd9ca7bfc54f05df47c88",
+      "priorRecoveryV2AgentId": "bc-30fc8ffa-2005-44b9-8fc7-48ddd9c3bcc8",
+      "priorRecoveryV2RunId": "run-04370412-4486-4ecf-8045-e7f23554071b",
+      "priorRecoveryV2ThreadUrl": "https://cursor.com/agents/bc-30fc8ffa-2005-44b9-8fc7-48ddd9c3bcc8",
+      "priorRecoveryV2PromptDigest": "sha256:76a6571a8b6bfaf233bf48534aaf3b161ffeea4e77010023a3e127de29b69ace",
+      "priorRecoveryV2FailureCode": "WRITER1_OUTPUT_INVALID",
+      "priorRecoveryV2InputDigest": "sha256:3ce24295a62cc863e6023b57ada26b0b88019b86e397e9c8e0ee98d1a612eda6",
+      "absoluteArtifactPath": "/opt/cursor/artifacts/writer1-output.json",
+      "apiArtifactPath": "artifacts/writer1-output.json",
+      "promptDigest": "sha256:b2ef742380aeb7b3b7ea020479ece673130341a16273fe67b2a3ffd2936a6f6d",
+      "idempotencyKey": "run-04370412-4486-4ecf-8045-e7f23554071b:writer1:artifact-recovery:v3:sha256:3ce24295a62cc863e6023b57ada26b0b88019b86e397e9c8e0ee98d1a612eda6:sha256:b2ef742380aeb7b3b7ea020479ece673130341a16273fe67b2a3ffd2936a6f6d"
+    }
   }
 }
