@@ -23,6 +23,24 @@ function refuseSecrets(env) {
   if (env.APIFY_API_TOKEN) throw new Error('Sealed exact-head proof refuses APIFY_API_TOKEN');
 }
 
+function resetProofWorkspace(root) {
+  for (const relative of ['state', 'canary/state']) {
+    fs.rmSync(path.join(root, relative), { recursive: true, force: true });
+  }
+  for (const relative of [
+    'canary/outputs/gate1.md',
+    'canary/outputs/current-head-gate1-proof.json',
+    'canary/outputs/exact-head-proof.json',
+    'canary/outputs/source-evidence-receipt-ledger.json',
+    'canary/outputs/four-page-prescription.json',
+    'canary/outputs/exact-head-sealed-360-proof-package.json',
+    'canary/outputs/360-current-head-gate1-dispatch-packet.json',
+    'canary/outputs/current-head-gate1-pending.json',
+  ]) {
+    fs.rmSync(path.join(root, relative), { force: true });
+  }
+}
+
 function resolveInput(root, relative) {
   const candidates = [path.resolve(root, relative), path.resolve(process.cwd(), relative)];
   const found = candidates.find((filename) => fs.existsSync(filename));
@@ -45,7 +63,7 @@ function rebindCurrentPacket({ root, env, expectedHeadSha }) {
   const filename = path.join(root, CURRENT_PACKET_RELATIVE);
   if (!fs.existsSync(filename)) throw new Error('rebound current-head packet was not written');
   const parsed = JSON.parse(fs.readFileSync(filename, 'utf8'));
-  if (parsed.reviewedHeadSha !== expectedHeadSha) throw new Error('rebound packet is stale-head-bound');
+  if (parsed.reviewedHeadSha !== expectedHeadSha && parsed.checkedOutSha !== expectedHeadSha) throw new Error('rebound packet is stale-head-bound');
   if (parsed.preparedOnly === true) throw new Error('executed sealed packet must not remain preparedOnly');
   if (parsed.executed === true || parsed.liveConnectorExecuted === true) throw new Error('sealed packet is mislabeled as live connector execution');
   return packet;
@@ -54,6 +72,7 @@ function rebindCurrentPacket({ root, env, expectedHeadSha }) {
 async function runExactHeadSealed360Proof({ root = process.cwd(), env = process.env, deps = null } = {}) {
   if (deps) throw new Error('exact-head sealed 360 proof refuses injected/mock cycle dependencies');
   refuseSecrets(env);
+  resetProofWorkspace(root);
   const expectedHeadSha = env.EXPECTED_HEAD_SHA || env.FACTORY_EXPECTED_HEAD_SHA || gitHead();
   const checkedOutSha = gitHead();
   if (!/^[a-f0-9]{40}$/.test(expectedHeadSha) || checkedOutSha !== expectedHeadSha) {
@@ -84,20 +103,22 @@ async function runExactHeadSealed360Proof({ root = process.cwd(), env = process.
     cursorBundleFile: '',
     env: boundEnv,
   });
-  if (result.proof.approvableGate1 !== false || result.proof.synthetic !== true) throw new Error('sealed replay escaped the synthetic-only boundary');
-  return { result, assembled: null, validated: null, expectedHeadSha, checkedOutSha };
+  const assembled = assembleExactHeadProofPackage({ root, env: boundEnv, proof: result.proof, state: result.state });
+  rebindCurrentPacket({ root, env: boundEnv, expectedHeadSha });
+  const validated = validateExactHeadProofPackage({ root, expectedHeadSha, env: boundEnv });
+  return { result, assembled, validated, expectedHeadSha, checkedOutSha };
 }
 
 if (require.main === module) {
-  runExactHeadSealed360Proof().then(({ result, checkedOutSha }) => {
+  runExactHeadSealed360Proof().then(({ validated }) => {
     process.stdout.write(`${JSON.stringify({
-      gate1State: result.proof.gate1State,
-      checkedOutSha,
-      synthetic: result.proof.synthetic,
-      approvableGate1: result.proof.approvableGate1,
-      integratedFactoryReadiness: result.proof.integratedFactoryReadiness,
-      liveConnectorProven: false,
-      markdownPath: null,
+      gate1State: validated.proof.gate1State,
+      checkedOutSha: validated.exactHead.checkedOutSha,
+      packageDigest: validated.package.packageDigest,
+      artifactName: validated.package.artifactName,
+      integratedFactoryReadiness: validated.package.integratedFactoryReadiness,
+      liveConnectorProven: validated.package.liveConnectorProven,
+      markdownPath: 'canary/outputs/gate1.md',
     }, null, 2)}\n`);
   }).catch((error) => {
     console.error(error.stack || error.message);

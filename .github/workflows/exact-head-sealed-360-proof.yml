@@ -1,4 +1,4 @@
-name: Exact-head sealed 360 synthetic replay proof
+name: Exact-head sealed 360 Gate 1 proof
 
 on:
   pull_request:
@@ -47,14 +47,15 @@ jobs:
             test "$(printf '%s' "$pr_json" | jq -r .headRefName)" = "$FACTORY_BRANCH"
             test "$(printf '%s' "$pr_json" | jq -r .headRefOid)" = "$EXPECTED_HEAD_SHA"
           fi
-          mkdir -p canary/outputs
+          mkdir -p canary/outputs canary/state
           echo "FACTORY_CHECKED_OUT_SHA=$actual" >> "$GITHUB_ENV"
           echo "FACTORY_ASSERTED_HEAD_SHA=$actual" >> "$GITHUB_ENV"
           echo "FACTORY_EXPECTED_HEAD_SHA=$EXPECTED_HEAD_SHA" >> "$GITHUB_ENV"
           echo "EXPECTED_HEAD_SHA=$EXPECTED_HEAD_SHA" >> "$GITHUB_ENV"
           echo "FACTORY_HEAD_ASSERTION=true" >> "$GITHUB_ENV"
-          echo "FACTORY_TEST_RESULT=synthetic-sealed-replay-only" >> "$GITHUB_ENV"
+          echo "FACTORY_TEST_RESULT=sealed-360-exact-head-replay" >> "$GITHUB_ENV"
           echo "FACTORY_TEST_RUN_URL=${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}" >> "$GITHUB_ENV"
+          echo "FACTORY_ACTION_RUN_URL=${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}" >> "$GITHUB_ENV"
       - name: Set up Node
         uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
         with:
@@ -63,27 +64,59 @@ jobs:
       - name: Install locked dependencies
         run: npm ci --ignore-scripts --no-audit --no-fund
       - name: Run reproducible full suite
+        env:
+          EXPECTED_HEAD_SHA: ''
+          FACTORY_EXPECTED_HEAD_SHA: ''
+          FACTORY_CHECKED_OUT_SHA: ''
+          FACTORY_ASSERTED_HEAD_SHA: ''
+          FACTORY_HEAD_ASSERTION: ''
+          FACTORY_TEST_RESULT: ''
+          FACTORY_TEST_RUN_URL: ''
+          FACTORY_ACTION_RUN_URL: ''
+          FACTORY_ISSUE_NUMBER: ''
+          FACTORY_PR_NUMBER: ''
+          FACTORY_BRANCH: ''
+          FACTORY_SEALED_EVIDENCE: ''
+          FACTORY_SEALED_REPLAY_EXECUTED: ''
+          RUNTIME_PACKET_PATH: ''
         run: node --test
-      - name: Execute synthetic sealed replay (never approvable Gate 1)
+      - name: Execute real sealed 360 Gate 1 path
         env:
           FACTORY_CANARY_PHASE: integrated
           FACTORY_SEALED_EVIDENCE: 'true'
-          FACTORY_CHECKED_OUT_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
-          EXPECTED_HEAD_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
-          FACTORY_HEAD_ASSERTION: 'true'
-        run: node src/run-gate1-canary.js . canary/inputs/360-gate1-request.json canary/inputs/360-gate1-selection.json canary/inputs/360-gate1-qa.json ''
-      - name: Validate synthetic-only proof and exact-head evidence
+        run: node scripts/run-exact-head-sealed-360-proof.js
+      - name: Fail closed unless the complete Gate 1 proof package exists
         run: |
+          test -s canary/outputs/gate1.md
           test -s canary/outputs/current-head-gate1-proof.json
-          test -s canary/outputs/exact-head-proof.json || printf '{"checkedOutSha":"%s","expectedHeadSha":"%s","headAssertion":true}\n' "$EXPECTED_HEAD_SHA" "$EXPECTED_HEAD_SHA" > canary/outputs/exact-head-proof.json
-          node -e "const p=require('./canary/outputs/current-head-gate1-proof.json');if(p.approvableGate1!==false||p.integratedFactoryReadiness!==false||p.synthetic!==true)throw new Error('synthetic replay was mislabeled as approvable');"
-      - name: Upload synthetic proof package (required)
+          test -s canary/outputs/exact-head-proof.json
+          test -s canary/state/factory-state.json
+          test -s canary/outputs/source-evidence-receipt-ledger.json
+          test -s canary/outputs/four-page-prescription.json
+          test -s canary/outputs/exact-head-sealed-360-proof-package.json
+          test -s canary/outputs/360-current-head-gate1-dispatch-packet.json
+          node -e "
+            const { validateExactHeadProofPackage } = require('./src/factory/exact-head-proof-package');
+            const result = validateExactHeadProofPackage({ root: process.cwd(), expectedHeadSha: process.env.EXPECTED_HEAD_SHA });
+            if (result.package.integratedFactoryReadiness !== false || result.package.liveConnectorProven !== false) {
+              throw new Error('sealed proof mislabeled as live connector readiness');
+            }
+            process.stdout.write(result.package.packageDigest + '\\n');
+          "
+      - name: Upload complete Gate 1 proof package
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         with:
-          name: exact-head-sealed-360-synthetic-proof-${{ github.run_id }}
+          name: exact-head-sealed-360-gate1-proof-${{ github.run_id }}
           path: |
+            canary/outputs/gate1.md
             canary/outputs/current-head-gate1-proof.json
             canary/outputs/exact-head-proof.json
+            canary/outputs/source-evidence-receipt-ledger.json
+            canary/outputs/four-page-prescription.json
+            canary/outputs/exact-head-sealed-360-proof-package.json
+            canary/outputs/360-current-head-gate1-dispatch-packet.json
+            canary/outputs/current-head-gate1-pending.json
+            canary/state/factory-state.json
           if-no-files-found: error
           retention-days: 30

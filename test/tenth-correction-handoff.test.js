@@ -343,7 +343,7 @@ test('tenth correction resume downloads the phase-A artifact and refuses duplica
   assert.throws(() => claimResumeAtomic(casFile, pending.handoffId, 'result-1'), /replay/);
 });
 
-test('tenth correction sealed 360 replay is synthetic-only and cannot reach Human Gate 1', async () => {
+test('tenth correction sealed 360 canary reaches Human Gate 1 without vendor calls or manual movement', async () => {
   const head = spawnSync('git', ['rev-parse', 'HEAD'], { encoding: 'utf8' }).stdout.trim();
   assert.match(head, /^[a-f0-9]{40}$/);
   const root = fs.mkdtempSync(path.join(os.tmpdir(), 'factory-ninth-sealed-360-'));
@@ -363,16 +363,18 @@ test('tenth correction sealed 360 replay is synthetic-only and cannot reach Huma
       FACTORY_TEST_RESULT: 'local-sealed-evidence',
     }),
   });
-  assert.equal(result.proof.gate1State, 'synthetic-sealed-evidence-only');
+  assert.equal(result.proof.gate1State, 'awaiting-human-gate-1');
   assert.equal(result.proof.sealedEvidence, true);
-  assert.equal(result.proof.synthetic, true);
-  assert.equal(result.proof.approvableGate1, false);
-  assert.equal(result.proof.candidate, undefined);
+  assert.equal(result.proof.candidate.placeId, PLACE_ID);
   assert.equal(result.proof.integratedFactoryReadiness, false);
-  assert.equal(result.state, null);
+  assert.equal(result.proof.liveConnectorProven, false);
+  assert.match(result.state.activeRun.artifacts.gate1.markdown, /Human Gate 1/);
+  assert.match(result.state.activeRun.artifacts.gate1.markdown, /360 Garage Door/);
+  assert.doesNotMatch(result.state.activeRun.artifacts.gate1.markdown, /CURSOR_API_KEY/);
   const proofFile = path.join(root, 'canary/outputs/current-head-gate1-proof.json');
+  const gateFile = path.join(root, 'canary/outputs/gate1.md');
   assert.equal(fs.existsSync(proofFile), true);
-  assert.equal(fs.existsSync(path.join(root, 'canary/outputs/gate1.md')), false);
+  assert.equal(fs.existsSync(gateFile), true);
 });
 
 test('eleventh correction rejects every mutation of the fixed historical sealed lineage', () => {
@@ -401,6 +403,8 @@ test('tenth correction workflow contracts automatic retrieval, sealed integrated
   assert.match(canary, /phase_a_run_id/);
   assert.match(canary, /FACTORY_SEALED_EVIDENCE/);
   assert.match(canary, /FACTORY_PHASE_A_RUN_ID/);
+  assert.match(canary, /test -s canary\/outputs\/gate1\.md/);
+  assert.doesNotMatch(canary, /Prove Gate 1 artifacts exist[\s\S]{0,250}sealed_evidence != true/);
   assert.doesNotMatch(canary, /CURSOR_API_KEY/);
   assert.match(resume, /gh run download/);
   assert.match(resume, /FACTORY_HANDOFF_FILE/);

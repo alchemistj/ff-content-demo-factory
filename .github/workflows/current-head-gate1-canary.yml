@@ -185,7 +185,7 @@ jobs:
           if-no-files-found: error
           retention-days: 30
       - name: Prove Gate 1 artifacts exist
-        if: (inputs.phase == 'resume' || inputs.phase == 'integrated') && inputs.sealed_evidence != true
+        if: inputs.phase == 'resume' || inputs.phase == 'integrated'
         run: |
           test -s canary/outputs/current-head-gate1-proof.json
           test -s canary/outputs/gate1.md
@@ -196,7 +196,7 @@ jobs:
           name: current-head-gate1-canary-${{ github.run_id }}
           path: |
             canary/outputs/current-head-gate1-proof.json
-            ${{ inputs.sealed_evidence == true && 'canary/outputs/current-head-gate1-proof.json' || 'canary/outputs/gate1.md' }}
+            canary/outputs/gate1.md
             canary/state/factory-state.json
           if-no-files-found: error
           retention-days: 30
