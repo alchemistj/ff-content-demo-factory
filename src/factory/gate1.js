@@ -1,4 +1,5 @@
-const { STANDARD_PRESCRIPTION_POLICY, validatePagePolicy, digest } = require('./prescription-policy');
+const { STANDARD_PRESCRIPTION_POLICY, validatePagePolicy, validateSourceBinding, digest } = require('./prescription-policy');
+const { validateClaimReferences } = require('./prescription');
 const { validateRejectedRouteLanguage } = require('./reseal');
 
 function sentenceCount(text) { return String(text || '').split(/[.!?]+/).map((s) => s.trim()).filter(Boolean).length; }
@@ -6,6 +7,7 @@ function sentenceCount(text) { return String(text || '').split(/[.!?]+/).map((s)
 function validatePolicyIntegrity(prescription) {
   if (!prescription?.pagePolicy || !Array.isArray(prescription.pages) || !Array.isArray(prescription.valueHierarchy)) return false;
   try {
+    validateSourceBinding({ sourceArtifactDigest: prescription.sourceArtifactDigest, sourceIdentity: prescription.sourceIdentity }, prescription.serviceCoverageLedger || null);
     const result = validatePagePolicy({ pages: prescription.pages, services: prescription.valueHierarchy, serviceLedger: prescription.serviceCoverageLedger || null, policy: prescription.pagePolicy, override: prescription.expansionOverride || null, runContext: { prospectId: prescription.prospect?.prospectId || prescription.prospect?.placeId, placeId: prescription.prospect?.placeId, runId: prescription.runId || prescription.prospect?.runId, now: new Date().toISOString() }, sourceBinding: { sourceArtifactDigest: prescription.sourceArtifactDigest, sourceIdentity: prescription.sourceIdentity, serviceLedger: prescription.serviceCoverageLedger || null }, evidenceDigest: prescription.evidenceDigest || null });
     if (prescription.policyMode !== result.policyMode || Number(prescription.allowedServicePageCount) !== result.allowedServicePageCount) return false;
     if (prescription.pageSetDigest && prescription.pageSetDigest !== result.pageSetDigest) return false;
@@ -39,6 +41,25 @@ function renderGate1({ finalist, prescription, whyBuilt }) {
   for (const page of prescription.pages) lines.push(`- **${page.type || page.service}:** ${page.whyIncluded}`);
   lines.push('', '### Services considered', '');
   for (const service of prescription.valueHierarchy) lines.push(`- ${service.name || service.id}: ${service.directCompletedEvidenceCount} direct anchor(s), ${service.evidenceCount} total evidence review(s); ${service.includedPage ? 'included' : `passed over — ${service.passedOverReason}`}.`);
+  lines.push('', '## Evidence & Lineage', '', '| Field | Bound value |', '| --- | --- |');
+  lines.push(`| Run ID | ${prescription.runId || 'missing'} |`);
+  lines.push(`| Source artifact digest | ${prescription.sourceArtifactDigest || 'missing'} |`);
+  lines.push(`| Evidence digest | ${prescription.evidenceDigest || 'missing'} |`);
+  lines.push(`| Page-set digest | ${prescription.pageSetDigest || 'missing'} |`);
+  lines.push(`| Prescription digest | ${prescription.prescriptionDigest || 'missing'} |`);
+  lines.push(`| Source identity | ${prescription.sourceIdentity ? `\`${JSON.stringify(prescription.sourceIdentity)}\`` : 'missing'} |`);
+  lines.push('', '### Evidence references', '');
+  for (const page of prescription.pages) {
+    const refs = [page.strongestEvidence, page.recommendedFirstReview?.reviewId].filter(Boolean);
+    lines.push(`- **${page.type || page.service}:** ${refs.length ? refs.join(', ') : 'none'}`);
+  }
+  const limitations = Array.isArray(prescription.limitations) && prescription.limitations.length ? prescription.limitations : [
+    'This artifact is a page prescription and Gate 1 record; production page copy has not been written.',
+    'Evidence and claims are limited to the bound source checkpoint and authoritative review judgments.',
+    'Word count is diagnostic only and is not a pass/fail condition.',
+  ];
+  lines.push('', '### Honest limitations', '');
+  for (const limitation of limitations) lines.push(`- ${limitation}`);
   lines.push('', '## Human Gate 1', '', 'Are these the right pages, URLs, keywords, title directions, and first-review recommendations for this prospect?', '', '## State', '', '`awaiting-human-gate-1`');
   return lines.join('\n') + '\n';
 }
@@ -64,7 +85,8 @@ function architectQa({ finalist, inventory, prescription, whyBuilt, laterStageAr
     differentiatedPages: new Set(pages.map((p) => `${p.url}|${p.primaryKeyword}|${p.titleDirection}|${p.h1Direction}`)).size === pages.length,
     recommendationsFit: pages.filter((p) => p.type !== 'Contact').every((p) => Boolean(p.recommendedFirstReview) || !p.strongestEvidence),
     unsupportedClaimsAbsent: pages.every((p) => {
-      const claims = JSON.stringify(p.claims || []);
+      if (validateClaimReferences(p, inventory?.reviews || inventory?.classified || [], prescription?.serviceCoverageLedger || null).length) return false;
+      const claims = (p.claims || []).map((claim) => typeof claim === 'string' ? claim : claim?.text || claim?.claim || '').join(' ');
       if (/(one[- ]hour|same[- ]day|guaranteed|response[- ]time\s*sla)/i.test(claims)) return false;
       if (/(24\/7|emergency service)/i.test(claims) && !inventory?.availabilityPattern) return false;
       return true;
