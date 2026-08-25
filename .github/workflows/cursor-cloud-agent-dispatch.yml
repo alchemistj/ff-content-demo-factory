@@ -34,7 +34,7 @@ permissions:
   actions: read
 
 concurrency:
-  group: factory-cursor-dispatch-${{ inputs.issue_number }}-${{ inputs.pr_number }}-${{ inputs.reviewed_head_sha }}
+  group: factory-cursor-handoff-${{ inputs.reviewed_head_sha || github.event.workflow_run.head_sha }}
   cancel-in-progress: false
 
 jobs:
@@ -68,6 +68,14 @@ jobs:
           FACTORY_REPOSITORY: ${{ github.repository }}
           FACTORY_DISPATCH_OUTPUT: canary/outputs/cursor-dispatch.json
         run: node src/dispatch-cursor-cloud-agent.js
+      - name: Persist dispatch CAS claim before connector dispatch
+        env:
+          CAS_FILE: canary/outputs/dispatch-cas.json
+          DISPATCH_FILE: canary/outputs/cursor-dispatch.json
+        run: |
+          handoff_key="$(node -e "const fs=require('node:fs');process.stdout.write(JSON.parse(fs.readFileSync(process.env.DISPATCH_FILE,'utf8')).dispatchKey)")"
+          dispatch_digest="$(node -e "const fs=require('node:fs');process.stdout.write(JSON.parse(fs.readFileSync(process.env.DISPATCH_FILE,'utf8')).dispatchDigest)")"
+          CAS_FILE="$CAS_FILE" HANDOFF_KEY="$handoff_key" RESULT_ID="$dispatch_digest" node -e "const {claimResumeAtomic}=require('./src/factory/handoff');claimResumeAtomic(process.env.CAS_FILE,process.env.HANDOFF_KEY,process.env.RESULT_ID)"
       - name: Post and record immutable connector-native @cursor dispatch
         env:
           GH_TOKEN: ${{ github.token }}
@@ -82,7 +90,8 @@ jobs:
             comment_url="$prior"
             echo "idempotent_existing_comment=$comment_url"
           else
-            comment_url="$(gh api "repos/$GITHUB_REPOSITORY/issues/$ISSUE_NUMBER/comments" --method POST -f body="$(cat "$COMMENT_FILE")" --jq .html_url)"
+            { cat "$COMMENT_FILE"; printf 'Dispatch workflow run: %s\\n' "$GITHUB_RUN_ID"; } > canary/outputs/cursor-dispatch.post.md
+            comment_url="$(gh api "repos/$GITHUB_REPOSITORY/issues/$ISSUE_NUMBER/comments" --method POST -f body="$(cat canary/outputs/cursor-dispatch.post.md)" --jq .html_url)"
           fi
           COMMENT_URL="$comment_url" DISPATCH_FILE="$DISPATCH_FILE" node -e "const fs=require('node:fs');const p=JSON.parse(fs.readFileSync(process.env.DISPATCH_FILE,'utf8'));p.commentUrl=process.env.COMMENT_URL;fs.writeFileSync(process.env.DISPATCH_FILE,JSON.stringify(p,null,2)+'\\n')"
       - name: Upload dispatch packet receipt
@@ -90,7 +99,9 @@ jobs:
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         with:
           name: cursor-cloud-agent-dispatch-${{ github.run_id }}
-          path: canary/outputs/cursor-dispatch.*
+          path: |
+            canary/outputs/cursor-dispatch.*
+            canary/outputs/dispatch-cas.json
           if-no-files-found: error
           retention-days: 30
 
@@ -98,7 +109,7 @@ jobs:
     if: github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     concurrency:
-      group: factory-cursor-dispatch-phase-a-${{ github.event.workflow_run.id }}
+      group: factory-cursor-handoff-${{ github.event.workflow_run.head_sha }}
       cancel-in-progress: false
     steps:
       - name: Checkout the immutable phase-A head
@@ -124,7 +135,15 @@ jobs:
         run: node src/dispatch-cursor-cloud-agent.js
       - name: Bind dispatch comment to durable handoff identity
         run: |
-          node -e "const fs=require('node:fs');const pending=JSON.parse(fs.readFileSync('canary/phase-a/pending.checked.json','utf8'));fs.appendFileSync('canary/phase-a/cursor-dispatch.comment.md','Handoff ID: '+pending.handoffId+'\\nPhase-A run: '+pending.phaseARunId+'\\n');"
+          node -e "const fs=require('node:fs');const pending=JSON.parse(fs.readFileSync('canary/phase-a/pending.checked.json','utf8'));fs.appendFileSync('canary/phase-a/cursor-dispatch.comment.md','Handoff ID: '+pending.handoffId+'\\nPhase-A run: '+pending.phaseARunId+'\\nDispatch workflow run: '+process.env.GITHUB_RUN_ID+'\\n');"
+      - name: Persist automatic dispatch CAS claim before connector dispatch
+        env:
+          CAS_FILE: canary/phase-a/dispatch-cas.json
+          DISPATCH_FILE: canary/phase-a/cursor-dispatch.json
+        run: |
+          handoff_key="$(node -e "const fs=require('node:fs');process.stdout.write(JSON.parse(fs.readFileSync(process.env.DISPATCH_FILE,'utf8')).dispatchKey)")"
+          dispatch_digest="$(node -e "const fs=require('node:fs');process.stdout.write(JSON.parse(fs.readFileSync(process.env.DISPATCH_FILE,'utf8')).dispatchDigest)")"
+          CAS_FILE="$CAS_FILE" HANDOFF_KEY="$handoff_key" RESULT_ID="$dispatch_digest" node -e "const {claimResumeAtomic}=require('./src/factory/handoff');claimResumeAtomic(process.env.CAS_FILE,process.env.HANDOFF_KEY,process.env.RESULT_ID)"
       - name: Post exactly once using durable dispatch CAS
         env:
           GH_TOKEN: ${{ github.token }}
