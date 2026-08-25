@@ -155,7 +155,7 @@ test("validation-report-only accepts only the exact v3-finalize pins and remains
 test("workflow is limited to the Architect control push and one dormant-safe Writer1 wake", () => {
   const workflow = readFileSync(path.join(root, ".github/workflows/architect-360-words-canary.yml"), "utf8");
   const controlScript = readFileSync(path.join(root, "scripts/360-words-control.mjs"), "utf8");
-  assert.match(workflow, /branches:\s*\n\s*- architect\/360-words-canary/);
+  assert.match(workflow, /branches:\s*\n\s*- architect\/360-words-canary-verified/);
   assert.match(workflow, /paths:\s*\n\s*- \.factory-wake\/360-words-control\.json/);
   assert.match(controlScript, /repository owner Architect actor/);
   assert.match(workflow, /CURSOR_API_KEY: \$\{\{ secrets\.CURSOR_API_KEY \}\}/);
@@ -163,7 +163,7 @@ test("workflow is limited to the Architect control push and one dormant-safe Wri
   assert.match(workflow, /CURSOR_FAST: 'false'/);
   assert.match(workflow, /scripts\/360-words-control\.mjs/);
   assert.match(workflow, /Download and verify exact prior Writer1 dispatch artifact/);
-  assert.match(workflow, /Recover Writer1 artifact on the same Cursor thread and stop at Architect QA/);
+  assert.match(workflow, /Recover Writer1 artifact on the same Cursor thread and stop at Architect QA|Run bounded Writer1 path and stop at Architect QA/);
   assert.match(workflow, /scripts\/360-words-canary\.ts --artifact-recovery/);
   assert.match(workflow, /32785189225/);
   assert.match(workflow, /9541802267/);

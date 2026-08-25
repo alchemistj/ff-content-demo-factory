@@ -21,8 +21,8 @@ export interface CursorWriterReceipt {
   requestDigest: string; createRequest: unknown; registryItem: unknown; registryDigest: string; modelParams: unknown;
   effort: "high"; effortParameterId?: string; effortAttestationSource: "official-response" | "official-registry-parameter" | "named-model-default";
   attestationSource: "official-response" | "bound-create-request"; apiVersion: "cloud-agent-api-v1";
-  mode?: "initial" | "same-thread-retrieval" | "same-thread-artifact-recovery" | "validation-only-artifact-recovery";
-  correctionVersion?: "words-writer1-retrieval/v1";
+  mode?: "initial" | "same-thread-retrieval" | "same-thread-artifact-recovery" | "validation-only-artifact-recovery" | "same-thread-correction";
+  correctionVersion?: "words-writer1-retrieval/v1" | "words-writer1-correction/v1";
   prior?: CursorFollowUpBindings;
   followUpPromptDigest?: string;
   artifact?: CursorArtifactBinding;
@@ -328,6 +328,31 @@ export interface CursorArtifactRecoveryV3FinalizeReceipt extends CursorArtifactR
   provenanceMetadataDigest: string;
   crossV3CopyPreservation: "not-asserted";
   pointerLedgerNormalization?: Writer1PointerLedgerNormalization;
+}
+export interface CursorWriterCorrectionPrior {
+  sourceBranch: string;
+  sourceSha: string;
+  sealedHandoffDigest: string;
+  inputDigest: string;
+  agentId: string;
+  threadUrl: string;
+}
+export interface CursorWriterCorrectionReceipt extends CursorWriterReceipt {
+  mode: "same-thread-correction";
+  correctionVersion: "words-writer1-correction/v1";
+  correctionPrior: CursorWriterCorrectionPrior;
+  correctionPromptDigest: string;
+  recoveryRunId: string;
+  beforeArtifact: CursorArtifactBinding;
+  afterArtifact: CursorArtifactBinding;
+  beforeOutput: unknown;
+  beforeOutputDigest: string;
+  afterOutputDigest: string;
+  frozenDigest: string;
+  changedPaths: string[];
+  changedPathsDigest: string;
+  writer2Blocked: true;
+  nextStage: null;
 }
 export interface CursorArtifactDescriptor { path: string; size: number; sha256?: string; updatedAt?: string; }
 export interface CursorArtifactClient {
@@ -645,6 +670,85 @@ export function writer1ProvenanceMetadataDigest(value: unknown): string { return
 export function writer1OutputDigests(value: unknown): { renderedWordsDigest: string; stableIdentityDigest: string; provenanceMetadataDigest: string } {
   return { renderedWordsDigest: writer1RenderedWordsDigest(value), stableIdentityDigest: writer1StableIdentityDigest(value), provenanceMetadataDigest: writer1ProvenanceMetadataDigest(value) };
 }
+export const WRITER1_CORRECTION_VERSION = "words-writer1-correction/v1" as const;
+export const WRITER1_CORRECTION_AGENT_ID = "bc-2486f645-c31c-4532-8145-fbe3af1d45a8" as const;
+export const WRITER1_CORRECTION_THREAD_URL = `https://cursor.com/agents/${WRITER1_CORRECTION_AGENT_ID}` as const;
+export const WRITER1_CORRECTION_BANNED_PATTERNS: ReadonlyArray<RegExp> = Object.freeze([
+  /spring\s+replacement\s+is\s+(?:the\s+)?most\s+common\s+related\s+failure/iu,
+  /Jenny\s+(?:will\s+)?schedule(?:s|d)?\s+(?:the\s+)?follow[- ]?up(?:\s+as\s+(?:a\s+)?general\s+process)?/iu,
+  /(?:the\s+)?(?:person|technician|one)\s+(?:who\s+)?diagnos(?:es|ing)\s+(?:the\s+)?(?:problem|door)\s+(?:is\s+)?(?:also\s+)?always\s+repair(?:s|ing)/iu,
+  /not\s+a\s+separate\s+add[- ]?on/iu,
+  /(?:service[- ]level\s+(?:agreement|promise|commitment)|response[- ]time\s+(?:guarantee|promise|commitment|sla)|warranty\s+(?:claim|promise|slogan)|primary\s+proof\s+point|designated\s+destination)/iu,
+  /(?:artifact|receipt|digest|handoff|prescription|inventory|provenance|canonical|validator|validation|\bqa\b|audit|cursor|grok|apify|luna|assignment|anchor|folded\s+evidence|passed[- ]over|review\s+record|evidence\s+ledger|review\s+analysis\s+methodolog(?:y|ies))/iu,
+  /(?:this\s+page|the\s+page)\s+is\s+(?:built|based|generated)\s+from\s+(?:written\s+)?(?:reviews?|evidence)/iu,
+  /(?:this\s+page|the\s+page)\s+is\s+based\s+on\s+(?:written\s+)?(?:reviews?|evidence)/iu,
+  /(?:authoritative|written|sealed|retrieved)\s+reviews?/iu,
+  /reviewers?\s+(?:describe|document|support|confirm)/iu,
+  /(?:review|evidence|source)\s+record/iu,
+  /we\s+(?:read|retrieved|analyzed|classified)\s+(?:the\s+)?reviews?/iu,
+  /not\s+a\s+response[- ]time\s+guarantee/iu,
+]);
+function correctionMutablePath(pathValue: string): boolean { return /^\/pages\/\d+\/(?:body|sections\/\d+\/(?:heading|body))$/u.test(pathValue); }
+export function writer1CorrectionFrozenProjection(value: unknown): unknown {
+  const output = structuredClone(value) as RecordValue;
+  if (!Array.isArray(output.pages)) return output;
+  output.pages.forEach((pageValue) => {
+    const page = asRecord(pageValue); if (!page) return;
+    delete page.body;
+    if (!Array.isArray(page.sections)) return;
+    page.sections.forEach((sectionValue) => { const section = asRecord(sectionValue); if (section) { delete section.heading; delete section.body; } });
+  });
+  return output;
+}
+export function writer1CorrectionFrozenDigest(value: unknown): string { return digestOf(writer1CorrectionFrozenProjection(value)); }
+export interface Writer1CorrectionDiagnostic { code: "WRITER1_CORRECTION_BANNED_LANGUAGE"; path: string; pattern: string; }
+export function validateWriter1CorrectionBannedLanguage(value: unknown): Writer1CorrectionDiagnostic[] {
+  const errors: Writer1CorrectionDiagnostic[] = [];
+  const root = asRecord(value); if (!root || !Array.isArray(root.pages)) return errors;
+  root.pages.forEach((pageValue, pageIndex) => {
+    const page = asRecord(pageValue); if (!page) return;
+    const mutable: Array<{ path: string; text: string }> = [];
+    if (typeof page.body === "string") mutable.push({ path: `/pages/${pageIndex}/body`, text: page.body });
+    if (Array.isArray(page.sections)) page.sections.forEach((sectionValue, sectionIndex) => {
+      const section = asRecord(sectionValue); if (!section) return;
+      if (typeof section.heading === "string") mutable.push({ path: `/pages/${pageIndex}/sections/${sectionIndex}/heading`, text: section.heading });
+      if (typeof section.body === "string") mutable.push({ path: `/pages/${pageIndex}/sections/${sectionIndex}/body`, text: section.body });
+    });
+    for (const item of mutable) for (const pattern of WRITER1_CORRECTION_BANNED_PATTERNS) if (pattern.test(item.text)) errors.push({ code: "WRITER1_CORRECTION_BANNED_LANGUAGE", path: item.path, pattern: pattern.source });
+  });
+  return errors;
+}
+function writer1CorrectionDiff(before: unknown, after: unknown, pathValue = ""): string[] {
+  if (Object.is(before, after)) return [];
+  if (Array.isArray(before) || Array.isArray(after)) {
+    if (!Array.isArray(before) || !Array.isArray(after) || before.length !== after.length) return [pathValue || "/"];
+    return before.flatMap((child, index) => writer1CorrectionDiff(child, after[index], `${pathValue}/${index}`));
+  }
+  const beforeRecord = asRecord(before); const afterRecord = asRecord(after);
+  if (beforeRecord || afterRecord) {
+    if (!beforeRecord || !afterRecord) return [pathValue || "/"];
+    return [...new Set([...Object.keys(beforeRecord), ...Object.keys(afterRecord)])].sort().flatMap((key) => writer1CorrectionDiff(beforeRecord[key], afterRecord[key], `${pathValue}/${key}`));
+  }
+  return [pathValue || "/"];
+}
+export function validateWriter1CorrectionDiff(before: unknown, after: unknown): string[] {
+  const beforeRecord = asRecord(before); const afterRecord = asRecord(after);
+  if (!beforeRecord || !afterRecord || !Array.isArray(beforeRecord.pages) || !Array.isArray(afterRecord.pages) || beforeRecord.pages.length !== 2 || afterRecord.pages.length !== 2) return ["/"];
+  const errors: string[] = [];
+  for (const [pageIndex, pageValue] of beforeRecord.pages.entries()) {
+    const page = asRecord(pageValue); const next = asRecord(afterRecord.pages[pageIndex]);
+    if (!page || !next || typeof next.body !== "string") errors.push(`/pages/${pageIndex}/body`);
+    if (Array.isArray(page?.sections) && Array.isArray(next?.sections)) for (const [sectionIndex] of page.sections.entries()) {
+      const nextSection = asRecord(next.sections[sectionIndex]);
+      if (!nextSection || typeof nextSection.heading !== "string") errors.push(`/pages/${pageIndex}/sections/${sectionIndex}/heading`);
+      if (!nextSection || typeof nextSection.body !== "string") errors.push(`/pages/${pageIndex}/sections/${sectionIndex}/body`);
+    }
+  }
+  for (const changed of writer1CorrectionDiff(before, after)) if (!correctionMutablePath(changed)) errors.push(changed);
+  return [...new Set(errors)].sort();
+}
+export function writer1CorrectionChangedPaths(before: unknown, after: unknown): string[] { return [...new Set(writer1CorrectionDiff(before, after))].sort(); }
+export function writer1CorrectionChangedPathsDigest(paths: string[]): string { return digestOf([...paths].sort()); }
 export const WRITER1_POINTER_LEDGER_NORMALIZATION_VERSION = "words-writer1-pointer-ledger-normalization/v1" as const;
 const WRITER1_REVIEW_EVIDENCE_FORBIDDEN_KEYS = new Set(["primaryKeyword", "title", "seoTitle", "metaDescription", "h1", "body", "heading", "quote", "excerpt", "exactText", "attribution", "reviewer", "author", "claim", "statement", "text"]);
 
@@ -1086,6 +1190,113 @@ export async function recoverCursorWriterArtifactV2ForTest(input: CursorArtifact
 export async function recoverCursorWriterArtifactV3ForTest(input: CursorArtifactRecoveryInternalInput & { recoveryVersion: "words-writer1-artifact-recovery/v3"; previousRecoveryV2: CursorArtifactRecoveryV2FailureBinding; validateBeforeOutput?: (raw: string) => unknown }): Promise<CursorArtifactRecoveryResult> {
   if (process.env.NODE_ENV !== "test" && !process.execArgv.some((arg) => arg.includes("--test"))) throw new CursorWriterExecutionError("CURSOR_TEST_SEAM_FORBIDDEN", "Injected artifact recovery transports are available only from the Node test boundary");
   return recoverCursorWriterArtifactInternal(input);
+}
+
+type CursorWriterCorrectionInternalInput = {
+  env?: Record<string, string | undefined>;
+  receiptStore: CursorWriterReceiptStore;
+  prior: CursorWriterCorrectionPrior;
+  prompt: string;
+  now?: () => Date;
+  sleep?: (milliseconds: number) => Promise<void>;
+  artifactBackoffMs?: readonly number[];
+  transport?: CloudTransport;
+  artifactClient?: CursorArtifactClient;
+  validateBeforeOutput?: (raw: string) => unknown;
+  validateOutput: (output: unknown) => void;
+  onDispatch?: (notice: CursorDispatchNotice) => void | Promise<void>;
+};
+export type CursorWriterCorrectionInput = Omit<CursorWriterCorrectionInternalInput, "env" | "transport" | "artifactClient">;
+export type CursorWriterCorrectionResult = { output: unknown; receipt: CursorWriterCorrectionReceipt; threadUrl: string; claim: CursorDispatchClaim };
+
+export function validateCursorWriterCorrectionReceipt(receipt: unknown, prior: CursorWriterCorrectionPrior, promptDigest: string, cursorApiKey?: string): asserts receipt is CursorWriterCorrectionReceipt {
+  validateCursorWriterReceipt(receipt, cursorApiKey);
+  const value = receipt as unknown as RecordValue;
+  if (value.mode !== "same-thread-correction" || value.correctionVersion !== WRITER1_CORRECTION_VERSION || value.writer2Blocked !== true || value.nextStage !== null) throw new CursorWriterExecutionError("CURSOR_WRITER1_CORRECTION_RECEIPT_INVALID", "Writer1 correction receipt did not stop at Architect QA with Writer2 blocked");
+  if (JSON.stringify(value.correctionPrior) !== JSON.stringify(prior) || value.correctionPromptDigest !== promptDigest) throw new CursorWriterExecutionError("CURSOR_WRITER1_CORRECTION_BINDING_INVALID", "Writer1 correction receipt lost the exact sealed, branch, agent, or prompt binding");
+  if (value.agentId !== prior.agentId || value.threadUrl !== prior.threadUrl || typeof value.jobId !== "string" || !value.jobId.startsWith("run-") || typeof value.recoveryRunId !== "string" || !value.recoveryRunId.startsWith("run-")) throw new CursorWriterExecutionError("CURSOR_WRITER1_CORRECTION_BINDING_INVALID", "Writer1 correction receipt is not bound to the existing fresh Cursor thread");
+  const before = asRecord(value.beforeArtifact); const after = asRecord(value.afterArtifact);
+  if (!before || !after || value.artifact === undefined || JSON.stringify(value.artifact) !== JSON.stringify(value.afterArtifact)) throw new CursorWriterExecutionError("CURSOR_WRITER1_CORRECTION_ARTIFACT_BINDING_INVALID", "Writer1 correction receipt lost the before/after artifact binding");
+  if (value.beforeOutputDigest !== digestOf(value.beforeOutput) || value.afterOutputDigest !== value.outputDigest || value.beforeOutputDigest === value.afterOutputDigest) throw new CursorWriterExecutionError("CURSOR_WRITER1_CORRECTION_OUTPUT_BINDING_INVALID", "Writer1 correction receipt output digest binding is invalid");
+  if (value.frozenDigest !== writer1CorrectionFrozenDigest(value.beforeOutput) || value.frozenDigest !== writer1CorrectionFrozenDigest(value.output)) throw new CursorWriterExecutionError("CURSOR_WRITER1_CORRECTION_PRESERVATION_INVALID", "Writer1 correction changed frozen topology, metadata, evidence, quotes, or provenance");
+  if (!Array.isArray(value.changedPaths) || value.changedPaths.some((item) => typeof item !== "string" || !correctionMutablePath(item)) || value.changedPathsDigest !== writer1CorrectionChangedPathsDigest(value.changedPaths)) throw new CursorWriterExecutionError("CURSOR_WRITER1_CORRECTION_DIFF_INVALID", "Writer1 correction changed a path outside page.body or existing section heading/body");
+  if (before.byteDigest === after.byteDigest || before.size !== before.contentSize || after.size !== after.contentSize || !DIGEST.test(String(before.byteDigest)) || !DIGEST.test(String(after.byteDigest))) throw new CursorWriterExecutionError("CURSOR_WRITER1_CORRECTION_ARTIFACT_STALE", "Writer1 correction receipt does not bind a changed complete Cursor artifact");
+}
+
+async function recoverCursorWriterCorrectionInternal(input: CursorWriterCorrectionInternalInput): Promise<CursorWriterCorrectionResult> {
+  const env = input.env || process.env;
+  if (!env.CURSOR_API_KEY) throw new CursorWriterExecutionError("CURSOR_API_KEY_REQUIRED", "Writer1 correction requires CURSOR_API_KEY");
+  const requestedModel = env.CURSOR_MODEL; const fastRaw = env.CURSOR_FAST; const fast = fastRaw === "false" || fastRaw === "off" ? false : fastRaw;
+  validateCursorWriterRuntime({ provider: CURSOR_PROVIDER, requestedModel, fast });
+  if (typeof input.prompt !== "string" || !input.prompt.trim()) throw new CursorWriterExecutionError("CURSOR_PROMPT_REQUIRED", "Writer1 correction requires a non-empty canonical prompt");
+  const prior = input.prior;
+  if (prior.agentId !== WRITER1_CORRECTION_AGENT_ID || prior.threadUrl !== WRITER1_CORRECTION_THREAD_URL || !/^[0-9a-f]{40}$/u.test(prior.sourceSha) || !DIGEST.test(prior.inputDigest) || !DIGEST.test(prior.sealedHandoffDigest)) throw new CursorWriterExecutionError("CURSOR_WRITER1_CORRECTION_PRIOR_INVALID", "Writer1 correction prior binding is not the exact fresh Cursor agent, branch source, or sealed input");
+  const transport = input.transport || await officialCloudTransport();
+  const artifactClient = input.artifactClient || transport.artifactClient || createCursorArtifactClient();
+  const selection = resolveCursorModelSelection(await transport.listModels(env.CURSOR_API_KEY), requestedModel);
+  if (selection.officialId !== OFFICIAL_CURSOR_MODEL || selection.params.some((item) => item.id === "fast" && item.value !== "false")) throw new CursorWriterExecutionError("CURSOR_WRITER1_CORRECTION_MODEL_INVALID", "Writer1 correction requires grok-4.6 with effort high and fast=false");
+  const promptDigest = digestOf(input.prompt); const key = `${prior.agentId}:writer1:correction:v1:${prior.inputDigest}:${promptDigest}`;
+  const options = modelOptions(env.CURSOR_API_KEY, selection);
+  const request = { ...createRequest(options, input.prompt, key, prior.agentId), mode: "same-thread-correction", correctionVersion: WRITER1_CORRECTION_VERSION, sourceBranch: prior.sourceBranch, sourceSha: prior.sourceSha, sealedHandoffDigest: prior.sealedHandoffDigest };
+  const requestDigest = digestOf(request);
+  const validateReceipt: (candidate: unknown) => asserts candidate is CursorWriterCorrectionReceipt = (candidate) => validateCursorWriterCorrectionReceipt(candidate, prior, promptDigest, env.CURSOR_API_KEY);
+  const existing = await input.receiptStore.get(key);
+  if (existing) {
+    validateReceipt(existing);
+    const recovered = await readWriter1Artifact({ client: artifactClient, agentId: prior.agentId, apiKey: env.CURSOR_API_KEY, validateOutput: (raw) => { const parsed = JSON.parse(raw); input.validateOutput(parsed); return parsed; } });
+    if (JSON.stringify(recovered.artifact) !== JSON.stringify(existing.afterArtifact) || digestOf(recovered.output) !== existing.outputDigest) throw new CursorWriterExecutionError("CURSOR_WRITER1_CORRECTION_ARTIFACT_RACE", "Completed Writer1 correction artifact changed after its receipt");
+    const claim = await input.receiptStore.getClaim?.(key); if (!claim) throw new CursorWriterExecutionError("CURSOR_WRITER1_CORRECTION_CLAIM_MISSING", "Completed Writer1 correction has no durable claim");
+    return { output: recovered.output, receipt: existing, threadUrl: existing.threadUrl, claim };
+  }
+  if (!input.receiptStore.tryClaim || !input.receiptStore.getClaim || !input.receiptStore.putClaim) throw new CursorWriterExecutionError("CURSOR_DISPATCH_CLAIM_REQUIRED", "Writer1 correction requires an atomic durable claim store");
+  const before = await readWriter1Artifact({ client: artifactClient, agentId: prior.agentId, apiKey: env.CURSOR_API_KEY, validateOutput: input.validateBeforeOutput || ((raw) => JSON.parse(raw)) });
+  const now = input.now || (() => new Date());
+  const initialClaim: CursorDispatchClaim = { key, stage: "writer1", runId: prior.inputDigest, inputDigest: prior.inputDigest, promptDigest, ownerToken: `${process.pid}:${now().getTime()}:${Math.random()}`, requestedAgentId: prior.agentId, claimedAt: now().toISOString(), heartbeatAt: now().toISOString(), leaseUntil: new Date(now().getTime() + 30_000).toISOString(), phase: "claimed", recoveryBeforeArtifact: before.artifact, copyProjectionDigest: writer1CorrectionFrozenDigest(before.output) };
+  const claimed = await input.receiptStore.tryClaim(key, initialClaim); let activeClaim = claimed.claim;
+  if (!claimed.acquired) {
+    const settled = await input.receiptStore.get(key); if (settled) { validateReceipt(settled); const claim = await input.receiptStore.getClaim?.(key); if (!claim) throw new CursorWriterExecutionError("CURSOR_WRITER1_CORRECTION_CLAIM_MISSING", "Completed Writer1 correction has no durable claim"); return { output: settled.output, receipt: settled, threadUrl: settled.threadUrl, claim }; }
+    throw new CursorWriterExecutionError("CURSOR_WRITER1_CORRECTION_IN_PROGRESS", "Another worker owns the Writer1 correction claim; reconcile the persisted run before retrying");
+  }
+  if (activeClaim.phase === "follow-up-sending" || (activeClaim.agentId && !activeClaim.jobId)) throw new CursorWriterExecutionError("CURSOR_WRITER1_CORRECTION_RUN_ID_MISSING", "Writer1 correction will not risk a duplicate message without a persisted follow-up run ID");
+  let agent: SDKAgent; let run: Run; let jobId: string;
+  if (activeClaim.agentId && activeClaim.jobId) {
+    if (activeClaim.agentId !== prior.agentId) throw new CursorWriterExecutionError("CURSOR_WRITER1_CORRECTION_AGENT_MISMATCH", "Persisted Writer1 correction claim is bound to another agent");
+    agent = await transport.resume(prior.agentId, options); if (!transport.getRun) throw new CursorWriterExecutionError("CURSOR_RUN_REATTACH_REQUIRED", "Writer1 correction retry requires official durable run lookup");
+    run = await transport.getRun(prior.agentId, activeClaim.jobId, env.CURSOR_API_KEY); jobId = activeClaim.jobId;
+  } else {
+    activeClaim = { ...activeClaim, phase: "follow-up-sending", heartbeatAt: now().toISOString() }; await input.receiptStore.putClaim(key, activeClaim);
+    agent = await transport.resume(prior.agentId, options);
+    if (!options.model) throw new CursorWriterExecutionError("CURSOR_MODEL_REQUIRED", "Writer1 correction requires the verified Cursor model selection");
+    run = await agent.send(input.prompt, { model: options.model, idempotencyKey: key }); jobId = String(run.id);
+    activeClaim = { ...activeClaim, agentId: prior.agentId, jobId, phase: "follow-up-sent", heartbeatAt: now().toISOString() }; await input.receiptStore.putClaim(key, activeClaim);
+    if (input.onDispatch) await input.onDispatch({ stage: "writer1", provider: CURSOR_PROVIDER, requestedModel: REQUIRED_CURSOR_MODEL, officialModel: selection.officialId, modelParams: selection.params, registryDigest: selection.registryDigest, effort: selection.effort, effortAttestationSource: selection.effortAttestationSource, fast: false, agentId: prior.agentId, jobId, threadUrl: prior.threadUrl, inputDigest: prior.inputDigest, promptDigest, requestDigest, dispatchedAt: now().toISOString() });
+  }
+  if (String(agent.agentId) !== prior.agentId || jobId === "") throw new CursorWriterExecutionError("CURSOR_WRITER1_CORRECTION_BINDING_INVALID", "Writer1 correction returned the wrong Cursor agent or run");
+  const record = await transport.getAgent(prior.agentId, env.CURSOR_API_KEY); if (record.id !== prior.agentId || record.url !== prior.threadUrl) throw new CursorWriterExecutionError("CURSOR_WRITER1_CORRECTION_THREAD_MISMATCH", "Writer1 correction changed the direct Cursor thread");
+  activeClaim = { ...activeClaim, phase: "waiting", heartbeatAt: now().toISOString() }; await input.receiptStore.putClaim(key, activeClaim);
+  const result = await run.wait(); const resolvedModel = resolvedModelOf(agent, run, result); validateCursorWriterRuntime({ provider: CURSOR_PROVIDER, requestedModel, resolvedModel, fast: false }); if (resolvedModel !== OFFICIAL_CURSOR_MODEL) throw new CursorWriterExecutionError("CURSOR_RESOLVED_MODEL_MISSING", "Writer1 correction did not attest resolved grok-4.6");
+  const after = await readWriter1ArtifactWithBackoff({ client: artifactClient, agentId: prior.agentId, apiKey: env.CURSOR_API_KEY, validateOutput: (raw) => { const parsed = JSON.parse(raw); input.validateOutput(parsed); return parsed; }, ...(input.sleep ? { sleep: input.sleep } : {}), ...(input.artifactBackoffMs ? { backoffMs: input.artifactBackoffMs } : {}) });
+  if (after.artifact.byteDigest === before.artifact.byteDigest || (before.artifact.updatedAt && after.artifact.updatedAt && Date.parse(after.artifact.updatedAt) <= Date.parse(before.artifact.updatedAt))) throw new CursorWriterExecutionError("CURSOR_WRITER1_CORRECTION_ARTIFACT_STALE", "Writer1 correction did not produce a newer artifact");
+  const diffErrors = validateWriter1CorrectionDiff(before.output, after.output); if (diffErrors.length > 0) throw new CursorWriterExecutionError("CURSOR_WRITER1_CORRECTION_DIFF_INVALID", `Writer1 correction changed frozen paths: ${diffErrors.join(", ")}`);
+  const changedPaths = writer1CorrectionChangedPaths(before.output, after.output);
+  const banned = validateWriter1CorrectionBannedLanguage(after.output); if (banned.length > 0) throw new CursorWriterExecutionError("CURSOR_WRITER1_CORRECTION_BANNED_LANGUAGE", "Writer1 correction left unsupported or internal language in mutable prose", banned);
+  const attestationSource = assertFastBound(options, [agent, run, result]); const effortAttestationSource = assertEffortBound(selection, [agent, run, result]);
+  const receipt = withReceiptIntegrityMac({ stage: "writer1", provider: CURSOR_PROVIDER, requestedModel: REQUIRED_CURSOR_MODEL, resolvedModel: OFFICIAL_CURSOR_MODEL, fast: false, jobId, agentId: prior.agentId, threadUrl: record.url, inputDigest: prior.inputDigest, promptDigest, outputDigest: digestOf(after.output), completedAt: now().toISOString(), status: "complete", output: after.output, requestDigest, createRequest: request, registryItem: selection.registryItem, registryDigest: selection.registryDigest, modelParams: selection.params, effort: "high", ...(selection.effortParameterId ? { effortParameterId: selection.effortParameterId } : {}), effortAttestationSource, attestationSource, apiVersion: API_VERSION, mode: "same-thread-correction", correctionVersion: WRITER1_CORRECTION_VERSION, correctionPrior: prior, correctionPromptDigest: promptDigest, artifact: after.artifact, recoveryRunId: jobId, beforeArtifact: before.artifact, afterArtifact: after.artifact, beforeOutput: before.output, beforeOutputDigest: digestOf(before.output), afterOutputDigest: digestOf(after.output), frozenDigest: writer1CorrectionFrozenDigest(before.output), changedPaths, changedPathsDigest: writer1CorrectionChangedPathsDigest(changedPaths), writer2Blocked: true, nextStage: null } as unknown as CursorWriterCorrectionReceipt, env.CURSOR_API_KEY);
+  validateCursorWriterCorrectionReceipt(receipt, prior, promptDigest, env.CURSOR_API_KEY);
+  await input.receiptStore.put(key, receipt); await input.receiptStore.putClaim(key, { ...activeClaim, agentId: prior.agentId, jobId, phase: "completed", heartbeatAt: now().toISOString() });
+  return { output: after.output, receipt, threadUrl: record.url, claim: { ...activeClaim, agentId: prior.agentId, jobId, phase: "completed", heartbeatAt: now().toISOString() } };
+}
+
+/** Production Writer1 correction owns process.env, the official SDK, and the fixed Cursor artifact client. */
+export async function recoverCursorWriterCorrection(input: CursorWriterCorrectionInput): Promise<CursorWriterCorrectionResult> {
+  const candidate = input as unknown as Record<string, unknown>;
+  if ("env" in candidate || "transport" in candidate || "artifactClient" in candidate) throw new CursorWriterExecutionError("CURSOR_WRITER1_CORRECTION_SUBSTITUTION_FORBIDDEN", "Production Writer1 correction does not accept caller-selected environment or Cursor seams");
+  const transport = await officialCloudTransport();
+  return recoverCursorWriterCorrectionInternal({ ...input, env: process.env, transport, artifactClient: createCursorArtifactClient() });
+}
+export async function recoverCursorWriterCorrectionForTest(input: CursorWriterCorrectionInternalInput): Promise<CursorWriterCorrectionResult> {
+  if (process.env.NODE_ENV !== "test" && !process.execArgv.some((arg) => arg.includes("--test"))) throw new CursorWriterExecutionError("CURSOR_TEST_SEAM_FORBIDDEN", "Injected Writer1 correction seams are available only from the Node test boundary");
+  return recoverCursorWriterCorrectionInternal(input);
 }
 
 export type CursorArtifactRecoveryV3FinalizeInput = Omit<CursorArtifactRecoveryInput, "recoveryVersion" | "previousRecovery" | "previousRecoveryV2" | "prompt" | "validateOutput" | "validateBeforeOutput"> & {

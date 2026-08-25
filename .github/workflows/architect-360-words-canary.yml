@@ -3,7 +3,7 @@ name: Architect 360 Words canary
 on:
   push:
     branches:
-      - architect/360-words-canary
+      - architect/360-words-canary-verified
     paths:
       - .factory-wake/360-words-control.json
 
@@ -12,7 +12,7 @@ permissions:
   actions: read
 
 concurrency:
-  group: 360-words-canary-artifact-recovery
+  group: 360-words-canary-verified-capacity-one
   cancel-in-progress: false
 
 jobs:
@@ -167,7 +167,7 @@ jobs:
           {"actionRunId":"$EXPECTED_V3_FINALIZE_ACTION_RUN_ID","artifactId":$EXPECTED_V3_FINALIZE_ARTIFACT_ID,"headBranch":"architect/360-words-canary","headSha":"$EXPECTED_V3_FINALIZE_SOURCE_SHA","artifactDigest":"$EXPECTED_V3_FINALIZE_ARTIFACT_DIGEST"}
           JSON
 
-      - name: Recover Writer1 artifact on the same Cursor thread and stop at Architect QA
+      - name: Run bounded Writer1 path and stop at Architect QA
         id: dispatch
         if: steps.control.outputs.dormant != 'true'
         continue-on-error: true
@@ -180,7 +180,12 @@ jobs:
           WRITER1_PRIOR_RECOVERY_ROOT: canary/inputs/prior-v1-recovery-artifact
           WRITER1_PRIOR_RECOVERY_V2_ROOT: canary/inputs/prior-v2-recovery-artifact
           WRITER1_LATEST_V3_FINALIZE_ROOT: canary/inputs/latest-v3-finalize-artifact
-        run: node --import tsx scripts/360-words-canary.ts --artifact-recovery
+        run: |
+          if [ "${{ steps.control.outputs.recovery_version }}" = 'words-writer1-correction/v1' ]; then
+            node --import tsx scripts/360-words-verified.ts --writer1-correction
+          else
+            node --import tsx scripts/360-words-canary.ts --artifact-recovery
+          fi
 
       - name: Write durable failure/state surface
         if: always()

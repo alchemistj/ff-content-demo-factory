@@ -64,6 +64,14 @@ export const EXPECTED_RECOVERY_V3_FINALIZE = Object.freeze({
   absoluteArtifactPath: "/opt/cursor/artifacts/writer1-output.json",
   apiArtifactPath: "artifacts/writer1-output.json",
 });
+export const EXPECTED_VERIFIED_CORRECTION = Object.freeze({
+  correctionVersion: "words-writer1-correction/v1",
+  sourceBranch: "architect/360-words-canary-verified",
+  agentId: "bc-2486f645-c31c-4532-8145-fbe3af1d45a8",
+  threadUrl: "https://cursor.com/agents/bc-2486f645-c31c-4532-8145-fbe3af1d45a8",
+  inputDigest: "sha256:aefca24b7fb0f2260cb32beabe81797c9d64cbb5dec4baee7e3252119e1c483b",
+  sealedHandoffDigest: "sha256:715f651a53055444b8381dd8a276a2046d93776c61d88a2193cc2d42a1c83ad6",
+});
 
 export function validateControl(control, input = {}) {
   if (!control || typeof control !== "object") throw new Error("canary control must be an object");
@@ -72,18 +80,22 @@ export function validateControl(control, input = {}) {
   if (control.policy?.writer1Only !== true || control.policy?.provider !== "cursor-sdk" || control.policy?.model !== "cursor-grok-4.6-high" || control.policy?.fast !== false) throw new Error("immutable Writer1 policy mismatch");
   if (control.restore !== null) throw new Error("Writer1 may not restore a previous artifact");
   if (control.wakeNonce === DORMANT_NONCE) return { dormant: true, stage: "writer1" };
-  if (control.policy?.mode !== "artifact-recovery" && control.policy?.mode !== "validation-only" && control.policy?.mode !== "validation-report-only") throw new Error("active Writer1 wake must explicitly select artifact-recovery, validation-only, or validation-report-only mode");
+  if (control.policy?.mode !== "artifact-recovery" && control.policy?.mode !== "validation-only" && control.policy?.mode !== "validation-report-only" && control.policy?.mode !== "writer1-correction") throw new Error("active Writer1 wake must explicitly select artifact-recovery, validation-only, validation-report-only, or writer1-correction mode");
   if (typeof control.wakeNonce !== "string" || !/^[A-Za-z0-9][A-Za-z0-9._-]{15,127}$/u.test(control.wakeNonce)) throw new Error("invalid wake nonce");
   const changedPaths = Array.isArray(input.changedPaths) ? input.changedPaths : [];
   if (changedPaths.length !== 1 || changedPaths[0] !== CONTROL_PATH) throw new Error("active wake must change only the control file");
   if (String(input.actor || "").toLowerCase() !== String(input.owner || "").toLowerCase()) throw new Error("active wake requires the repository owner Architect actor");
   const recovery = control.policy?.recovery;
-  if (!recovery || Object.entries(EXPECTED_RECOVERY).some(([key, value]) => recovery[key] !== value)) throw new Error("active artifact-recovery wake is missing the exact prior/run/source tuple");
+  const isVerifiedCorrection = recovery?.correctionVersion === "words-writer1-correction/v1";
+  if (!recovery || (!isVerifiedCorrection && Object.entries(EXPECTED_RECOVERY).some(([key, value]) => recovery[key] !== value))) throw new Error("active artifact-recovery wake is missing the exact prior/run/source tuple");
   if (typeof recovery.sourceSha !== "string" || !/^[0-9a-f]{40}$/u.test(recovery.sourceSha)) throw new Error("active artifact-recovery wake requires an exact 40-hex sourceSha");
   const v1PromptDigest = digestWriter1ArtifactRecoveryPrompt("v1");
   const v2PromptDigest = digestWriter1ArtifactRecoveryPrompt("v2");
   const v3PromptDigest = digestWriter1ArtifactRecoveryPrompt("v3");
-  if (recovery.recoveryVersion === "words-writer1-artifact-recovery/v3") {
+  const v5PromptDigest = digestWriter1ArtifactRecoveryPrompt("v5");
+  if (recovery.correctionVersion === "words-writer1-correction/v1") {
+    if (control.policy?.mode !== "writer1-correction" || Object.entries(EXPECTED_VERIFIED_CORRECTION).some(([key, value]) => recovery[key] !== value) || recovery.promptDigest !== v5PromptDigest || typeof recovery.sourceSha !== "string" || !/^[0-9a-f]{40}$/u.test(recovery.sourceSha) || recovery.allowCreate !== false || recovery.allowResume !== true || recovery.allowFollowUp !== true || recovery.maxFollowUps !== 1 || recovery.idempotencyKey !== `${EXPECTED_VERIFIED_CORRECTION.agentId}:writer1:correction:v1:${EXPECTED_VERIFIED_CORRECTION.inputDigest}:${v5PromptDigest}` || recovery.send !== undefined || control.policy.allowCreate !== undefined || control.policy.allowResume !== undefined || control.policy.allowFollowUp !== undefined || control.policy.send !== undefined) throw new Error("active Writer1 correction wake is missing exact source, same-thread, canonical-prompt, or idempotency pins");
+  } else if (recovery.recoveryVersion === "words-writer1-artifact-recovery/v3") {
     if (Object.entries(EXPECTED_RECOVERY_V3).some(([key, value]) => recovery[key] !== value) || recovery.priorRecoveryV2PromptDigest !== v2PromptDigest || typeof recovery.promptDigest !== "string" || recovery.promptDigest !== v3PromptDigest || typeof recovery.idempotencyKey !== "string" || !/^[^:\s]+:writer1:artifact-recovery:v3:sha256:[0-9a-f]{64}:sha256:[0-9a-f]{64}$/u.test(recovery.idempotencyKey) || !recovery.idempotencyKey.endsWith(`:${v3PromptDigest}`)) throw new Error("active artifact-recovery v3 wake is missing the exact v2 failure, absolute-path, canonical-prompt, or idempotency pins");
   } else if (recovery.recoveryVersion === "words-writer1-artifact-recovery/v3-finalize") {
     if ((control.policy?.mode !== "validation-only" && control.policy?.mode !== "validation-report-only") || Object.entries(EXPECTED_RECOVERY_V3_FINALIZE).some(([key, value]) => recovery[key] !== value) || recovery.promptDigest !== v3PromptDigest || recovery.priorRecoveryV3PromptDigest !== v3PromptDigest || typeof recovery.idempotencyKey !== "string" || !/^[^:\s]+:writer1:artifact-recovery:v3-finalize:sha256:[0-9a-f]{64}:sha256:[0-9a-f]{64}$/u.test(recovery.idempotencyKey) || !recovery.idempotencyKey.endsWith(`:${v3PromptDigest}`) || recovery.allowFollowUp !== undefined || recovery.allowResume !== undefined || recovery.allowCreate !== undefined || recovery.send !== undefined || control.policy.allowFollowUp !== undefined || control.policy.allowResume !== undefined || control.policy.allowCreate !== undefined || control.policy.send !== undefined) throw new Error("active v3-finalize wake is missing exact history, frozen-copy, no-message, canonical-prompt, or idempotency pins");
@@ -95,5 +107,6 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   const changedPaths = execFileSync("git", ["diff-tree", "--no-commit-id", "--name-only", "-r", `${process.env.GITHUB_SHA}^`, process.env.GITHUB_SHA], { encoding: "utf8" }).trim().split(/\n/u).filter(Boolean);
   const result = validateControl(control, { changedPaths, actor: process.env.GITHUB_ACTOR, owner: process.env.GITHUB_REPOSITORY_OWNER });
   const recoveryVersion = control.policy?.recovery?.recoveryVersion || "";
-  fs.appendFileSync(process.env.GITHUB_OUTPUT, `dormant=${result.dormant}\nstage=${result.stage}\nrecovery_version=${recoveryVersion}\n${result.sourceSha ? `source_sha=${result.sourceSha}\n` : ""}`);
+  const correctionVersion = control.policy?.recovery?.correctionVersion || "";
+  fs.appendFileSync(process.env.GITHUB_OUTPUT, `dormant=${result.dormant}\nstage=${result.stage}\nrecovery_version=${recoveryVersion || correctionVersion}\n${result.sourceSha ? `source_sha=${result.sourceSha}\n` : ""}`);
 }
