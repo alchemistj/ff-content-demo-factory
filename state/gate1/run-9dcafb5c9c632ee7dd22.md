@@ -15,31 +15,27 @@ Swifts Roofing can meet Springfield homeowners with dedicated roof replacement a
 
 ### Why these pages won
 
-- **Home:** Three authoritative generic roof completions (C Jackson, Hunter Gaston, Josh Baird) plus a large supporting-praise set. The owned homepage is titled Roof Inspection and has no differentiated service URLs, so Home must stay the company hub instead of duplicating inspection or replacement.
-- **Service:** Largest authoritative cluster: six written reviews with direct completed roof replacement. Owned site has no /roof-replacement URL; replacement is buried in a generic /services/ blurb.
-- **Service:** Jonathan Hoffman is a direct completed-repair anchor (leak on an exhaust flue, seal repairs found during the flue work, restored flues color-matched to the existing roof). Owned /services/ mentions repairs with no dedicated repair URL.
-- **Contact:** Owned site already has /contact/. Keep a contact URL so service pages can send people here instead of stuffing CTAs into undifferentiated Home copy.
+- **Home `/`:** C Jackson, Hunter Gaston, and Josh Baird document completed work on customers’ roofs. Home is the company story and sends replacement and repair to their own destinations.
+- **Roof replacement `/roof-replacement`:** Named completed reroofs, led by Neal Richardson Sr.’s first replacement with install, cleanup, and owner review after install. Laura Hampton’s new shingles belong here as the method of a replacement, not a second route.
+- **Roof repair `/roof-repair`:** Jonathan Hoffman documents a completed leak repair plus seal work and flue restoration on the same visit. That job is the repair destination; leak, seal, and flue are not separate pages.
+- **Contact `/contact`:** The place Springfield homeowners go to call or write after reading completed work.
 
 ### Services considered
 
-- Roof replacement: 6 direct anchor(s), 6 total evidence review(s); included.
-- Roofing: 3 direct anchor(s), 5 total evidence review(s); passed over — Generic completed-roof language belongs on Home. A /roofing URL would cannibalize replacement, repair, and inspection. Kirby Cattle Co. is a supporting recommendation only, not a third direct anchor..
-- Roof repair: 1 direct anchor(s), 1 total evidence review(s); included.
-- Leak repair: 1 direct anchor(s), 1 total evidence review(s); included.
-- Seal repair: 1 direct anchor(s), 1 total evidence review(s); included.
-- Flue repair: 1 direct anchor(s), 1 total evidence review(s); included.
-- Roof inspection: 1 direct anchor(s), 1 total evidence review(s); passed over — Architect passed this service over despite evidence; retained for review..
-- Emergency tarping: 1 direct anchor(s), 1 total evidence review(s); passed over — Architect passed this service over despite evidence; retained for review..
-- Shingle installation: 6 direct anchor(s), 6 total evidence review(s); included.
-- Roof: 3 direct anchor(s), 5 total evidence review(s); passed over — Josh Baird’s completed object is ‘my roof’ with no named method. Keep on Home. Do not mint repair, replacement, tarping, or inspection from it..
-- Storm restoration: 3 direct anchor(s), 5 total evidence review(s); passed over — No completed storm-restoration job. Fondren is hail-inspection scheduling only. Jesse Richards came during a storm with no completed-work verb. Collin’s wind-ripped shingles are the damage that prompted a tarp, not storm restoration..
-- Hail damage repair: 3 direct anchor(s), 5 total evidence review(s); passed over — Fondren names a major hail storm only as the reason for scheduling an inspection, with future-work intent. Do not mint hail repair. Do not upgrade Grable’s insurance replacement into hail..
-- Waterproofing: 3 direct anchor(s), 5 total evidence review(s); passed over — Apify listing category only. No completed waterproofing job. Collin’s water-damage prevention is the outcome of tarping, not a waterproofing service..
-- Gutters: 3 direct anchor(s), 5 total evidence review(s); passed over — Guttering appears only as debris in Shelby Snyder’s 1-star. That is not completed gutter work and must not become a gutter page..
-- Insurance claim service: 3 direct anchor(s), 5 total evidence review(s); passed over — McGrath providing documents and Grable’s replacement ‘through my insurance’ are payment and paperwork context, not a trade service. Mention as supporting color on inspection and replacement; do not build /insurance..
-- Commercial roofing: 3 direct anchor(s), 5 total evidence review(s); passed over — Website claims commercial work. Inventory has no named completed commercial job. Reviewer names Kirby Cattle Co. and Sampson Farms are not commercial-service proof..
-- Roof maintenance: 3 direct anchor(s), 5 total evidence review(s); passed over — Owned /services/ names maintenance. No authoritative completed-maintenance review..
-- Emergency roof repair: 3 direct anchor(s), 5 total evidence review(s); passed over — Owned form lists Emergency Services. Hoffman’s ‘emergency call’ is the company being occupied elsewhere. The only completed emergency-adjacent job is Collin’s tarp, which already has /emergency-tarping. Do not mint a second emergency-repair URL or a 24/7 repair SLA..
+- Roof replacement — included at `/roof-replacement`. Shingle installation stays on this page as the reroof method.
+- Roof repair — included at `/roof-repair`. Leak, seal, and flue work from the Hoffman visit stay on this page.
+- Home-level completed roof work — included at `/`. Generic “our roof” / roofing language stays on Home instead of a `/roofing` URL.
+- Contact — included at `/contact`.
+- Roof inspection — passed over. Completed inspection work exists; the two service destinations are replacement and repair.
+- Emergency tarping — passed over. Completed tarping work exists and can color the company story; it is not a third service URL.
+- Commercial roofing — passed over. Written reviews do not name a completed commercial job.
+- Hail damage repair — passed over. Hail appears as a reason someone scheduled an inspection, not as a completed hail-repair job.
+- Storm restoration — passed over. No completed storm-restoration job in the written reviews.
+- Waterproofing — passed over. No completed waterproofing job in the written reviews.
+- Gutters — passed over. Gutter debris in a complaint is not completed gutter work.
+- Insurance claim service — passed over. Insurance is payment context, not a trade page.
+- Roof maintenance — passed over. No authoritative completed-maintenance review.
+- Emergency roof repair — passed over. No second emergency URL and no response-time promise.
 
 ## Human Gate 1
 
