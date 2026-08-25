@@ -12,7 +12,7 @@ permissions:
   actions: read
 
 concurrency:
-  group: 360-words-canary-32793130502-artifact-recovery-v2
+  group: 360-words-canary-artifact-recovery
   cancel-in-progress: false
 
 jobs:
@@ -113,6 +113,33 @@ jobs:
           {"actionRunId":"$EXPECTED_V1_RECOVERY_ACTION_RUN_ID","artifactId":$EXPECTED_V1_RECOVERY_ARTIFACT_ID,"headBranch":"architect/360-words-canary","headSha":"$EXPECTED_V1_RECOVERY_SOURCE_SHA","artifactDigest":"$EXPECTED_V1_RECOVERY_ARTIFACT_DIGEST"}
           JSON
 
+      - name: Download and verify exact failed v2 metadata-recovery artifact
+        if: steps.control.outputs.dormant != 'true' && steps.control.outputs.recovery_version == 'words-writer1-artifact-recovery/v3'
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          EXPECTED_V2_RECOVERY_ACTION_RUN_ID: '32795481394'
+          EXPECTED_V2_RECOVERY_ARTIFACT_ID: '9544693335'
+          EXPECTED_V2_RECOVERY_SOURCE_SHA: '29311637f3f4adc04f3dd9ca7bfc54f05df47c88'
+          EXPECTED_V2_RECOVERY_ARTIFACT_DIGEST: 'sha256:469f3b04eb502316404d98023df34c38e57e8cc6bf51d6dbfdbda12be3834e2f'
+        run: |
+          set -euo pipefail
+          v2_metadata="$(gh api "repos/${GITHUB_REPOSITORY}/actions/artifacts/${EXPECTED_V2_RECOVERY_ARTIFACT_ID}")"
+          test "$(jq -r '.id' <<<"$v2_metadata")" = "$EXPECTED_V2_RECOVERY_ARTIFACT_ID"
+          test "$(jq -r '.workflow_run.id' <<<"$v2_metadata")" = "$EXPECTED_V2_RECOVERY_ACTION_RUN_ID"
+          test "$(jq -r '.digest' <<<"$v2_metadata")" = "$EXPECTED_V2_RECOVERY_ARTIFACT_DIGEST"
+          v2_run="$(gh api "repos/${GITHUB_REPOSITORY}/actions/runs/${EXPECTED_V2_RECOVERY_ACTION_RUN_ID}")"
+          test "$(jq -r '.id' <<<"$v2_run")" = "$EXPECTED_V2_RECOVERY_ACTION_RUN_ID"
+          test "$(jq -r '.head_branch' <<<"$v2_run")" = 'architect/360-words-canary'
+          test "$(jq -r '.head_sha' <<<"$v2_run")" = "$EXPECTED_V2_RECOVERY_SOURCE_SHA"
+          mkdir -p canary/inputs/prior-v2-recovery-artifact
+          gh api "repos/${GITHUB_REPOSITORY}/actions/artifacts/${EXPECTED_V2_RECOVERY_ARTIFACT_ID}/zip" > canary/inputs/prior-v2-recovery.zip
+          test "$(sha256sum canary/inputs/prior-v2-recovery.zip | cut -d ' ' -f 1)" = "${EXPECTED_V2_RECOVERY_ARTIFACT_DIGEST#sha256:}"
+          unzip -q canary/inputs/prior-v2-recovery.zip -d canary/inputs/prior-v2-recovery-artifact
+          cat > canary/inputs/prior-v2-recovery-artifact/runtime/artifact-verification.json <<JSON
+          {"actionRunId":"$EXPECTED_V2_RECOVERY_ACTION_RUN_ID","artifactId":$EXPECTED_V2_RECOVERY_ARTIFACT_ID,"headBranch":"architect/360-words-canary","headSha":"$EXPECTED_V2_RECOVERY_SOURCE_SHA","artifactDigest":"$EXPECTED_V2_RECOVERY_ARTIFACT_DIGEST"}
+          JSON
+
       - name: Recover Writer1 artifact on the same Cursor thread and stop at Architect QA
         id: dispatch
         if: steps.control.outputs.dormant != 'true'
@@ -124,6 +151,7 @@ jobs:
           CURSOR_FAST: 'false'
           WRITER1_PRIOR_DISPATCH_ROOT: canary/inputs/prior-dispatch-artifact
           WRITER1_PRIOR_RECOVERY_ROOT: canary/inputs/prior-v1-recovery-artifact
+          WRITER1_PRIOR_RECOVERY_V2_ROOT: canary/inputs/prior-v2-recovery-artifact
         run: node --import tsx scripts/360-words-canary.ts --artifact-recovery
 
       - name: Write durable failure/state surface

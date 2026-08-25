@@ -31,6 +31,20 @@ export const EXPECTED_RECOVERY_V2 = Object.freeze({
   absoluteArtifactPath: "/opt/cursor/artifacts/writer1-output.json",
   apiArtifactPath: "artifacts/writer1-output.json",
 });
+export const EXPECTED_RECOVERY_V3 = Object.freeze({
+  recoveryVersion: "words-writer1-artifact-recovery/v3",
+  priorRecoveryV2ActionRunId: "32795481394",
+  priorRecoveryV2ArtifactId: 9544693335,
+  priorRecoveryV2ArtifactDigest: "sha256:469f3b04eb502316404d98023df34c38e57e8cc6bf51d6dbfdbda12be3834e2f",
+  priorRecoveryV2SourceSha: "29311637f3f4adc04f3dd9ca7bfc54f05df47c88",
+  priorRecoveryV2AgentId: "bc-30fc8ffa-2005-44b9-8fc7-48ddd9c3bcc8",
+  priorRecoveryV2RunId: "run-04370412-4486-4ecf-8045-e7f23554071b",
+  priorRecoveryV2ThreadUrl: "https://cursor.com/agents/bc-30fc8ffa-2005-44b9-8fc7-48ddd9c3bcc8",
+  priorRecoveryV2FailureCode: "WRITER1_OUTPUT_INVALID",
+  priorRecoveryV2InputDigest: "sha256:3ce24295a62cc863e6023b57ada26b0b88019b86e397e9c8e0ee98d1a612eda6",
+  absoluteArtifactPath: "/opt/cursor/artifacts/writer1-output.json",
+  apiArtifactPath: "artifacts/writer1-output.json",
+});
 
 export function validateControl(control, input = {}) {
   if (!control || typeof control !== "object") throw new Error("canary control must be an object");
@@ -49,7 +63,10 @@ export function validateControl(control, input = {}) {
   if (typeof recovery.sourceSha !== "string" || !/^[0-9a-f]{40}$/u.test(recovery.sourceSha)) throw new Error("active artifact-recovery wake requires an exact 40-hex sourceSha");
   const v1PromptDigest = digestWriter1ArtifactRecoveryPrompt("v1");
   const v2PromptDigest = digestWriter1ArtifactRecoveryPrompt("v2");
-  if (Object.entries(EXPECTED_RECOVERY_V2).some(([key, value]) => recovery[key] !== value) || recovery.priorRecoveryPromptDigest !== v1PromptDigest || recovery.promptDigest !== v2PromptDigest || typeof recovery.idempotencyKey !== "string" || !/^[^:\s]+:writer1:artifact-recovery:v2:sha256:[0-9a-f]{64}:sha256:[0-9a-f]{64}$/u.test(recovery.idempotencyKey) || !recovery.idempotencyKey.endsWith(`:${v2PromptDigest}`)) throw new Error("active artifact-recovery v2 wake is missing the exact failed-v1, absolute-path, canonical-prompt, or idempotency pins");
+  const v3PromptDigest = digestWriter1ArtifactRecoveryPrompt("v3");
+  if (recovery.recoveryVersion === "words-writer1-artifact-recovery/v3") {
+    if (Object.entries(EXPECTED_RECOVERY_V3).some(([key, value]) => recovery[key] !== value) || recovery.priorRecoveryV2PromptDigest !== v2PromptDigest || typeof recovery.promptDigest !== "string" || recovery.promptDigest !== v3PromptDigest || typeof recovery.idempotencyKey !== "string" || !/^[^:\s]+:writer1:artifact-recovery:v3:sha256:[0-9a-f]{64}:sha256:[0-9a-f]{64}$/u.test(recovery.idempotencyKey) || !recovery.idempotencyKey.endsWith(`:${v3PromptDigest}`)) throw new Error("active artifact-recovery v3 wake is missing the exact v2 failure, absolute-path, canonical-prompt, or idempotency pins");
+  } else if (Object.entries(EXPECTED_RECOVERY_V2).some(([key, value]) => recovery[key] !== value) || recovery.priorRecoveryPromptDigest !== v1PromptDigest || recovery.promptDigest !== v2PromptDigest || typeof recovery.idempotencyKey !== "string" || !/^[^:\s]+:writer1:artifact-recovery:v2:sha256:[0-9a-f]{64}:sha256:[0-9a-f]{64}$/u.test(recovery.idempotencyKey) || !recovery.idempotencyKey.endsWith(`:${v2PromptDigest}`)) throw new Error("active artifact-recovery v2 wake is missing the exact failed-v1, absolute-path, canonical-prompt, or idempotency pins");
   return { dormant: false, stage: "writer1", sourceSha: recovery.sourceSha };
 }
 
@@ -57,5 +74,6 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   const control = JSON.parse(fs.readFileSync(CONTROL_PATH, "utf8"));
   const changedPaths = execFileSync("git", ["diff-tree", "--no-commit-id", "--name-only", "-r", `${process.env.GITHUB_SHA}^`, process.env.GITHUB_SHA], { encoding: "utf8" }).trim().split(/\n/u).filter(Boolean);
   const result = validateControl(control, { changedPaths, actor: process.env.GITHUB_ACTOR, owner: process.env.GITHUB_REPOSITORY_OWNER });
-  fs.appendFileSync(process.env.GITHUB_OUTPUT, `dormant=${result.dormant}\nstage=${result.stage}\n${result.sourceSha ? `source_sha=${result.sourceSha}\n` : ""}`);
+  const recoveryVersion = control.policy?.recovery?.recoveryVersion || "";
+  fs.appendFileSync(process.env.GITHUB_OUTPUT, `dormant=${result.dormant}\nstage=${result.stage}\nrecovery_version=${recoveryVersion}\n${result.sourceSha ? `source_sha=${result.sourceSha}\n` : ""}`);
 }

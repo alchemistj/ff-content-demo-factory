@@ -5,8 +5,8 @@ import * as fs from "node:fs/promises";
 import * as os from "node:os";
 import * as path from "node:path";
 import test from "node:test";
-import { ARTIFACT_RECOVERY_ACTION_RUN_ID, ARTIFACT_RECOVERY_AGENT_ID, ARTIFACT_RECOVERY_ARTIFACT_ID, ARTIFACT_RECOVERY_PRIOR_RUN_ID, ARTIFACT_RECOVERY_SOURCE_BRANCH, ARTIFACT_RECOVERY_THREAD_URL, ARTIFACT_RECOVERY_V1_ACTION_RUN_ID, ARTIFACT_RECOVERY_V1_AGENT_ID, ARTIFACT_RECOVERY_V1_ARTIFACT_ID, ARTIFACT_RECOVERY_V1_ARTIFACT_DIGEST, ARTIFACT_RECOVERY_V1_RUN_ID, ARTIFACT_RECOVERY_V1_SOURCE_SHA, ARTIFACT_RECOVERY_V1_THREAD_URL, WRITER1_ARTIFACT_RECOVERY_PROMPT, WRITER1_ARTIFACT_RECOVERY_V2_PROMPT, validatePriorArtifactRecoveryDispatch, validatePriorArtifactRecoveryFailure, validateSealed, dispatchReceipt, run, writer1Projection } from "../../scripts/360-words-canary.js";
-import { EXPECTED_RECOVERY, EXPECTED_RECOVERY_V2, validateControl } from "../../scripts/360-words-control.mjs";
+import { ARTIFACT_RECOVERY_ACTION_RUN_ID, ARTIFACT_RECOVERY_AGENT_ID, ARTIFACT_RECOVERY_ARTIFACT_ID, ARTIFACT_RECOVERY_PRIOR_RUN_ID, ARTIFACT_RECOVERY_SOURCE_BRANCH, ARTIFACT_RECOVERY_THREAD_URL, ARTIFACT_RECOVERY_V1_ACTION_RUN_ID, ARTIFACT_RECOVERY_V1_AGENT_ID, ARTIFACT_RECOVERY_V1_ARTIFACT_ID, ARTIFACT_RECOVERY_V1_ARTIFACT_DIGEST, ARTIFACT_RECOVERY_V1_RUN_ID, ARTIFACT_RECOVERY_V1_SOURCE_SHA, ARTIFACT_RECOVERY_V1_THREAD_URL, WRITER1_ARTIFACT_RECOVERY_PROMPT, WRITER1_ARTIFACT_RECOVERY_V2_PROMPT, WRITER1_ARTIFACT_RECOVERY_V3_PROMPT, validatePriorArtifactRecoveryDispatch, validatePriorArtifactRecoveryFailure, validateSealed, dispatchReceipt, run, writer1Projection } from "../../scripts/360-words-canary.js";
+import { EXPECTED_RECOVERY, EXPECTED_RECOVERY_V2, EXPECTED_RECOVERY_V3, validateControl } from "../../scripts/360-words-control.mjs";
 import { buildWriter1ArtifactRecoveryPrompt, digestWriter1ArtifactRecoveryPrompt } from "../../scripts/360-words-recovery-prompt.mjs";
 
 const root = path.resolve(process.cwd());
@@ -15,6 +15,7 @@ const rawHandoff = () => readFileSync(path.join(root, "canary/sealed/360-four-pa
 const blobSha = (raw: Buffer) => createHash("sha1").update(Buffer.concat([Buffer.from(`blob ${raw.length}\0`), raw])).digest("hex");
 const v1PromptDigest = digestWriter1ArtifactRecoveryPrompt("v1");
 const v2PromptDigest = digestWriter1ArtifactRecoveryPrompt("v2");
+const v3PromptDigest = digestWriter1ArtifactRecoveryPrompt("v3");
 const v2IdempotencyKey = (inputDigest = "sha256:" + "1".repeat(64), promptDigest = v2PromptDigest) => `run-1b862d23-a748-4574-909a-66aac905eb97:writer1:artifact-recovery:v2:${inputDigest}:${promptDigest}`;
 const activeRecovery = (sourceSha: string, promptDigest = v2PromptDigest, idempotencyKey = v2IdempotencyKey()) => ({ ...EXPECTED_RECOVERY, ...EXPECTED_RECOVERY_V2, sourceSha, priorRecoveryPromptDigest: v1PromptDigest, promptDigest, idempotencyKey });
 
@@ -108,6 +109,17 @@ test("canonical prompt bytes derive the digest and idempotency key, and stale pi
   assert.equal(v2PromptDigest, digestWriter1ArtifactRecoveryPrompt("v2"));
 });
 
+test("v3 control binds the exact failed v2 history and canonical prompt", () => {
+  const control = JSON.parse(readFileSync(path.join(root, ".factory-wake/360-words-control.json"), "utf8")) as Record<string, any>;
+  const active = { ...control, wakeNonce: "W1-360-20260824-V3METADATA" } as Record<string, any>;
+  const inputDigest = "sha256:3ce24295a62cc863e6023b57ada26b0b88019b86e397e9c8e0ee98d1a612eda6";
+  active.policy = { ...active.policy, mode: "artifact-recovery", recovery: { ...EXPECTED_RECOVERY, ...EXPECTED_RECOVERY_V3, sourceSha: "9c5c6a0c19f52860ad22961090baa1387bb29507", priorRecoveryV2PromptDigest: v2PromptDigest, promptDigest: v3PromptDigest, idempotencyKey: `run-04370412-4486-4ecf-8045-e7f23554071b:writer1:artifact-recovery:v3:${inputDigest}:${v3PromptDigest}` } };
+  assert.deepEqual(validateControl(active, { changedPaths: [".factory-wake/360-words-control.json"], actor: "architect", owner: "architect" }), { dormant: false, stage: "writer1", sourceSha: "9c5c6a0c19f52860ad22961090baa1387bb29507" });
+  assert.equal(WRITER1_ARTIFACT_RECOVERY_V3_PROMPT, buildWriter1ArtifactRecoveryPrompt("v3"));
+  assert.equal(v3PromptDigest, digestWriter1ArtifactRecoveryPrompt("v3"));
+  assert.throws(() => validateControl({ ...active, policy: { ...active.policy, recovery: { ...active.policy.recovery, promptDigest: v2PromptDigest } } }, { changedPaths: [".factory-wake/360-words-control.json"], actor: "architect", owner: "architect" }), /v3|prompt/u);
+});
+
 test("workflow is limited to the Architect control push and one dormant-safe Writer1 wake", () => {
   const workflow = readFileSync(path.join(root, ".github/workflows/architect-360-words-canary.yml"), "utf8");
   const controlScript = readFileSync(path.join(root, "scripts/360-words-control.mjs"), "utf8");
@@ -125,6 +137,12 @@ test("workflow is limited to the Architect control push and one dormant-safe Wri
   assert.match(workflow, /9541802267/);
   assert.match(workflow, /WRITER1_PRIOR_DISPATCH_ROOT/);
   assert.match(workflow, /WRITER1_PRIOR_RECOVERY_ROOT/);
+  assert.match(workflow, /WRITER1_PRIOR_RECOVERY_V2_ROOT/);
+  assert.match(workflow, /32795481394/);
+  assert.match(workflow, /9544693335/);
+  assert.match(workflow, /29311637f3f4adc04f3dd9ca7bfc54f05df47c88/);
+  assert.match(workflow, /sha256:469f3b04eb502316404d98023df34c38e57e8cc6bf51d6dbfdbda12be3834e2f/);
+  assert.match(workflow, /words-writer1-artifact-recovery\/v3/);
   assert.match(workflow, /32793130502/);
   assert.match(workflow, /9543869555/);
   assert.match(workflow, /6cf9b42e43e5728614a9b7302a8791e527197e3d/);

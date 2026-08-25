@@ -26,7 +26,7 @@ export interface CursorWriterReceipt {
   prior?: CursorFollowUpBindings;
   followUpPromptDigest?: string;
   artifact?: CursorArtifactBinding;
-  recoveryVersion?: "words-writer1-artifact-recovery/v1" | "words-writer1-artifact-recovery/v2";
+  recoveryVersion?: "words-writer1-artifact-recovery/v1" | "words-writer1-artifact-recovery/v2" | "words-writer1-artifact-recovery/v3";
   recoveryRunId?: string;
   recoveryPrior?: CursorArtifactRecoveryPrior;
   integrityMac?: string;
@@ -43,6 +43,8 @@ export interface CursorDispatchClaim {
   requestedAgentId: string; claimedAt: string; leaseUntil?: string; heartbeatAt?: string;
   phase?: "claimed" | "agent-created" | "prompt-sent" | "follow-up-sending" | "follow-up-sent" | "waiting" | "completed";
   agentId?: string; jobId?: string;
+  recoveryBeforeArtifact?: CursorArtifactBinding;
+  copyProjectionDigest?: string;
 }
 export interface CursorWriterReceiptStore {
   get(key: string): StoredCursorWriterReceipt | undefined | Promise<StoredCursorWriterReceipt | undefined>;
@@ -206,7 +208,7 @@ export const MAX_WRITER1_ARTIFACT_BYTES = 1024 * 1024;
 export interface CursorArtifactDownloadRequest { agentId: string; logicalPath: "artifacts/writer1-output.json"; cursorEndpoint: string; method: "GET"; apiVersion: "cloud-agent-api-v1"; }
 export interface CursorPresignedUrlEvidence { scheme: "https"; host: string; port?: number; pathname: string; queryParameterNames: string[]; }
 export interface CursorArtifactBinding {
-  path: "artifacts/writer1-output.json"; size: number; sha256: string; contentSize: number; byteDigest: string;
+  path: "artifacts/writer1-output.json"; size: number; sha256: string; contentSize: number; byteDigest: string; updatedAt?: string;
   downloadRequest: CursorArtifactDownloadRequest; requestShapeDigest: string; downloadRequestDigest: string;
   presignedUrlEvidence: CursorPresignedUrlEvidence; presignedUrlEvidenceDigest: string;
 }
@@ -220,7 +222,7 @@ export interface CursorArtifactRecoveryPrior {
 }
 export interface CursorArtifactRecoveryReceipt extends CursorWriterReceipt {
   mode: "same-thread-artifact-recovery";
-  recoveryVersion: "words-writer1-artifact-recovery/v1" | "words-writer1-artifact-recovery/v2";
+  recoveryVersion: "words-writer1-artifact-recovery/v1" | "words-writer1-artifact-recovery/v2" | "words-writer1-artifact-recovery/v3";
   artifact: CursorArtifactBinding;
   recoveryRunId: string;
   recoveryPrior: CursorArtifactRecoveryPrior;
@@ -243,7 +245,20 @@ export interface CursorArtifactRecoveryV2Receipt extends CursorArtifactRecoveryR
   recoveryVersion: "words-writer1-artifact-recovery/v2";
   previousRecovery: CursorArtifactRecoveryFailureBinding;
 }
-export interface CursorArtifactDescriptor { path: string; size: number; sha256?: string; }
+export interface CursorArtifactRecoveryV2FailureBinding {
+  recoveryVersion: "words-writer1-artifact-recovery/v2";
+  actionRunId: string; artifactId: number; artifactDigest: string; sourceBranch: string; sourceSha: string;
+  agentId: string; runId: string; threadUrl: string; promptDigest: string; failureCode: "WRITER1_OUTPUT_INVALID"; inputDigest: string;
+}
+export interface CursorArtifactRecoveryV3Receipt extends CursorArtifactRecoveryReceipt {
+  recoveryVersion: "words-writer1-artifact-recovery/v3";
+  previousRecoveryV2: CursorArtifactRecoveryV2FailureBinding;
+  beforeArtifact: CursorArtifactBinding;
+  afterArtifact: CursorArtifactBinding;
+  copyProjectionDigest: string;
+  metadataChangeDigest: string;
+}
+export interface CursorArtifactDescriptor { path: string; size: number; sha256?: string; updatedAt?: string; }
 export interface CursorArtifactClient {
   list(agentId: string, apiKey: string): Promise<CursorArtifactDescriptor[]>;
   download(agentId: string, artifactPath: string, apiKey: string): Promise<{ bytes: Buffer; sourceUrl: string; agentId: string; logicalPath: "artifacts/writer1-output.json"; cursorEndpoint: string; requestShapeDigest: string; downloadRequestDigest: string; presignedUrlEvidence: CursorPresignedUrlEvidence; presignedUrlEvidenceDigest: string }>;
@@ -338,6 +353,8 @@ function normalizeArtifactDescriptors(payload: unknown): CursorArtifactDescripto
     if (size > MAX_WRITER1_ARTIFACT_BYTES) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_TOO_LARGE", `Cursor Writer1 artifact exceeds the ${MAX_WRITER1_ARTIFACT_BYTES}-byte cap`);
     const descriptor: CursorArtifactDescriptor = { path: value.path, size };
     if (typeof value.sha256 === "string") descriptor.sha256 = value.sha256;
+    const updatedAt = typeof value.updatedAt === "string" ? value.updatedAt : typeof value.updated_at === "string" ? value.updated_at : undefined;
+    if (updatedAt && updatedAt.trim()) descriptor.updatedAt = updatedAt;
     return descriptor;
   });
 }
@@ -502,6 +519,17 @@ export async function retrieveCursorWriterOutput(input: {
 }
 
 function artifactSha256(bytes: Buffer): string { return `sha256:${createHash("sha256").update(bytes).digest("hex")}`; }
+/** Metadata-only recovery freezes every non-provenance field, including route, review, quote, claim, and copy values. */
+export function writer1CopyProjection(value: unknown): unknown {
+  if (Array.isArray(value)) return value.map(writer1CopyProjection);
+  const record = asRecord(value);
+  if (!record) return value;
+  return Object.fromEntries(Object.entries(record).filter(([key]) => key !== "provenance").map(([key, child]) => [key, writer1CopyProjection(child)]));
+}
+export function writer1CopyProjectionDigest(value: unknown): string { return digestOf(writer1CopyProjection(value)); }
+export function writer1MetadataChangeDigest(beforeArtifactDigest: string, afterArtifactDigest: string, copyProjectionDigest: string): string {
+  return digestOf({ beforeArtifactDigest, afterArtifactDigest, copyProjectionDigest });
+}
 async function readWriter1Artifact(input: { client: CursorArtifactClient; agentId: string; apiKey: string; validateOutput: (raw: string) => unknown }): Promise<{ output: unknown; artifact: CursorArtifactBinding }> {
   const descriptors = await input.client.list(input.agentId, input.apiKey);
   const matches = descriptors.filter((descriptor) => descriptor.path === "artifacts/writer1-output.json");
@@ -522,7 +550,7 @@ async function readWriter1Artifact(input: { client: CursorArtifactClient; agentI
   const sha256 = artifactSha256(downloaded.bytes);
   if (descriptor.sha256 && descriptor.sha256 !== sha256) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_DIGEST_MISMATCH", "Cursor artifact listing digest does not match downloaded bytes");
   const output = input.validateOutput(downloaded.bytes.toString("utf8"));
-  return { output, artifact: { path: "artifacts/writer1-output.json", size: downloaded.bytes.length, sha256, contentSize: downloaded.bytes.length, byteDigest: sha256, downloadRequest: expectedRequest, requestShapeDigest: downloaded.requestShapeDigest, downloadRequestDigest: downloaded.downloadRequestDigest, presignedUrlEvidence: downloaded.presignedUrlEvidence, presignedUrlEvidenceDigest: downloaded.presignedUrlEvidenceDigest } };
+  return { output, artifact: { path: "artifacts/writer1-output.json", size: downloaded.bytes.length, sha256, contentSize: downloaded.bytes.length, byteDigest: sha256, ...(descriptor.updatedAt ? { updatedAt: descriptor.updatedAt } : {}), downloadRequest: expectedRequest, requestShapeDigest: downloaded.requestShapeDigest, downloadRequestDigest: downloaded.downloadRequestDigest, presignedUrlEvidence: downloaded.presignedUrlEvidence, presignedUrlEvidenceDigest: downloaded.presignedUrlEvidenceDigest } };
 }
 
 const ARTIFACT_RECOVERY_EVENTUAL_CONSISTENCY_BACKOFF_MS = [1_000, 5_000, 15_000, 30_000, 60_000, 120_000] as const;
@@ -537,7 +565,7 @@ async function readWriter1ArtifactWithBackoff(input: { client: CursorArtifactCli
   }
 }
 
-function validateCursorArtifactRecoveryReceiptVersion(receipt: unknown, prior: CursorArtifactRecoveryPrior, promptDigest: string, cursorApiKey: string | undefined, expectedVersion: "words-writer1-artifact-recovery/v1" | "words-writer1-artifact-recovery/v2", previousRecovery?: CursorArtifactRecoveryFailureBinding): asserts receipt is CursorArtifactRecoveryReceipt {
+function validateCursorArtifactRecoveryReceiptVersion(receipt: unknown, prior: CursorArtifactRecoveryPrior, promptDigest: string, cursorApiKey: string | undefined, expectedVersion: "words-writer1-artifact-recovery/v1" | "words-writer1-artifact-recovery/v2" | "words-writer1-artifact-recovery/v3", previousRecovery?: CursorArtifactRecoveryFailureBinding, previousRecoveryV2?: CursorArtifactRecoveryV2FailureBinding): asserts receipt is CursorArtifactRecoveryReceipt {
   validateCursorWriterReceipt(receipt, cursorApiKey);
   const value = receipt as CursorArtifactRecoveryReceipt;
   if (value.mode !== "same-thread-artifact-recovery" || value.recoveryVersion !== expectedVersion) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_RECEIPT_INVALID", "Cursor receipt is not the expected Writer1 artifact-recovery version");
@@ -550,6 +578,15 @@ function validateCursorArtifactRecoveryReceiptVersion(receipt: unknown, prior: C
   if (value.followUpPromptDigest !== promptDigest || value.promptDigest !== promptDigest || value.inputDigest !== prior.inputDigest || value.agentId !== prior.agentId || value.threadUrl !== prior.threadUrl || value.recoveryRunId !== value.jobId) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_RECEIPT_BINDING_INVALID", "Cursor artifact receipt is not bound to the requested Writer1 recovery");
   if (value.jobId !== prior.runId && !String(value.jobId).startsWith("run-")) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_RECEIPT_BINDING_INVALID", "Cursor artifact receipt recovery run ID is invalid");
   if (expectedVersion === "words-writer1-artifact-recovery/v2" && (!previousRecovery || JSON.stringify(value.previousRecovery) !== JSON.stringify(previousRecovery))) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_RECEIPT_BINDING_INVALID", "Cursor v2 artifact receipt lost the failed v1 recovery binding");
+  if (expectedVersion === "words-writer1-artifact-recovery/v3") {
+    const v3 = value as CursorArtifactRecoveryV3Receipt;
+    const before = v3.beforeArtifact;
+    if (!previousRecoveryV2 || JSON.stringify(v3.previousRecoveryV2) !== JSON.stringify(previousRecoveryV2) || !before || !v3.afterArtifact || JSON.stringify(v3.afterArtifact) !== JSON.stringify(v3.artifact)) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_RECEIPT_BINDING_INVALID", "Cursor v3 artifact receipt lost the exact failed-v2 or before/after artifact binding");
+    if (before.path !== "artifacts/writer1-output.json" || !DIGEST.test(before.sha256) || before.byteDigest !== before.sha256 || before.contentSize !== before.size || before.size < 1 || before.size > MAX_WRITER1_ARTIFACT_BYTES || before.downloadRequestDigest !== artifactDownloadDigest(before.downloadRequest, before.presignedUrlEvidence) || before.presignedUrlEvidenceDigest !== digestOf(before.presignedUrlEvidence) || before.requestShapeDigest !== digestOf(before.downloadRequest)) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_RECEIPT_INVALID", "Cursor v3 before-artifact binding is invalid");
+    if (v3.afterArtifact.sha256 === before.sha256 && v3.afterArtifact.updatedAt === before.updatedAt) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_RECEIPT_STALE", "Cursor v3 accepted the unchanged invalid artifact");
+    if (typeof v3.copyProjectionDigest !== "string" || v3.copyProjectionDigest !== writer1CopyProjectionDigest(v3.output)) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_COPY_PROJECTION_MISMATCH", "Cursor v3 completed receipt copy projection digest is not recomputable");
+    if (v3.metadataChangeDigest !== writer1MetadataChangeDigest(before.sha256, v3.afterArtifact.sha256, v3.copyProjectionDigest)) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_METADATA_CHANGE_INVALID", "Cursor v3 metadata-change digest is not recomputable");
+  }
 }
 
 export function validateCursorArtifactRecoveryReceipt(receipt: unknown, prior: CursorArtifactRecoveryPrior, promptDigest: string, cursorApiKey?: string): asserts receipt is CursorArtifactRecoveryReceipt {
@@ -558,13 +595,17 @@ export function validateCursorArtifactRecoveryReceipt(receipt: unknown, prior: C
 export function validateCursorArtifactRecoveryV2Receipt(receipt: unknown, prior: CursorArtifactRecoveryPrior, previousRecovery: CursorArtifactRecoveryFailureBinding, promptDigest: string, cursorApiKey?: string): asserts receipt is CursorArtifactRecoveryV2Receipt {
   validateCursorArtifactRecoveryReceiptVersion(receipt, prior, promptDigest, cursorApiKey, "words-writer1-artifact-recovery/v2", previousRecovery);
 }
+export function validateCursorArtifactRecoveryV3Receipt(receipt: unknown, prior: CursorArtifactRecoveryPrior, previousRecoveryV2: CursorArtifactRecoveryV2FailureBinding, promptDigest: string, cursorApiKey?: string): asserts receipt is CursorArtifactRecoveryV3Receipt {
+  validateCursorArtifactRecoveryReceiptVersion(receipt, prior, promptDigest, cursorApiKey, "words-writer1-artifact-recovery/v3", undefined, previousRecoveryV2);
+}
 
 type CursorArtifactRecoveryInternalInput = {
   env?: Record<string, string | undefined>;
   receiptStore: CursorWriterReceiptStore;
   prior: CursorArtifactRecoveryPrior;
-  recoveryVersion?: "words-writer1-artifact-recovery/v1" | "words-writer1-artifact-recovery/v2";
+  recoveryVersion?: "words-writer1-artifact-recovery/v1" | "words-writer1-artifact-recovery/v2" | "words-writer1-artifact-recovery/v3";
   previousRecovery?: CursorArtifactRecoveryFailureBinding;
+  previousRecoveryV2?: CursorArtifactRecoveryV2FailureBinding;
   prompt: string;
   now?: () => Date;
   sleep?: (milliseconds: number) => Promise<void>;
@@ -573,6 +614,7 @@ type CursorArtifactRecoveryInternalInput = {
   artifactClient?: CursorArtifactClient;
   onFollowUp?: (notice: CursorDispatchNotice) => void | Promise<void>;
   validateOutput: (raw: string) => unknown;
+  validateBeforeOutput?: (raw: string) => unknown;
 };
 type CursorArtifactRecoveryResult = { output: unknown; receipt: CursorArtifactRecoveryReceipt; threadUrl: string; claim: CursorDispatchClaim };
 
@@ -580,6 +622,7 @@ async function recoverCursorWriterArtifactInternal(input: CursorArtifactRecovery
   const env = input.env || process.env;
   const recoveryVersion = input.recoveryVersion || "words-writer1-artifact-recovery/v1";
   if (recoveryVersion === "words-writer1-artifact-recovery/v2" && !input.previousRecovery) throw new CursorWriterExecutionError("CURSOR_PRIOR_RECOVERY_BINDING_REQUIRED", "Writer1 artifact recovery v2 requires the verified failed v1 recovery binding");
+  if (recoveryVersion === "words-writer1-artifact-recovery/v3" && !input.previousRecoveryV2) throw new CursorWriterExecutionError("CURSOR_PRIOR_RECOVERY_V2_BINDING_REQUIRED", "Writer1 artifact recovery v3 requires the verified failed v2 recovery binding");
   const now = input.now || (() => new Date());
   const requestedModel = env.CURSOR_MODEL;
   const fastRaw = env.CURSOR_FAST;
@@ -594,13 +637,18 @@ async function recoverCursorWriterArtifactInternal(input: CursorArtifactRecovery
   if (selection.officialId !== input.prior.resolvedModel || selection.registryDigest !== input.prior.registryDigest || JSON.stringify(selection.params) !== JSON.stringify(input.prior.modelParams) || input.prior.requestedModel !== REQUIRED_CURSOR_MODEL || input.prior.effort !== "high" || input.prior.fast !== false) throw new CursorWriterExecutionError("CURSOR_PRIOR_MODEL_BINDING_INVALID", "Prior dispatch model, effort, fast, or registry binding does not match the current official Cursor registry");
   const inputDigest = input.prior.inputDigest;
   const promptDigest = digestOf(input.prompt);
-  const recoveryKeyBase = recoveryVersion === "words-writer1-artifact-recovery/v2" ? input.previousRecovery!.runId : input.prior.runId;
-  const key = `${recoveryKeyBase}:writer1:artifact-recovery:${recoveryVersion.endsWith("/v2") ? "v2" : "v1"}:${inputDigest}:${promptDigest}`;
+  const isV2 = recoveryVersion === "words-writer1-artifact-recovery/v2";
+  const isV3 = recoveryVersion === "words-writer1-artifact-recovery/v3";
+  if (isV3 && (input.previousRecoveryV2!.agentId !== input.prior.agentId || input.previousRecoveryV2!.threadUrl !== input.prior.threadUrl || input.previousRecoveryV2!.inputDigest !== inputDigest)) throw new CursorWriterExecutionError("CURSOR_PRIOR_RECOVERY_V2_BINDING_INVALID", "Writer1 v3 recovery is not bound to the exact failed v2 agent, thread, or sealed input");
+  const recoveryKeyBase = isV2 ? input.previousRecovery!.runId : isV3 ? input.previousRecoveryV2!.runId : input.prior.runId;
+  const recoveryTag = isV3 ? "v3" : isV2 ? "v2" : "v1";
+  const key = `${recoveryKeyBase}:writer1:artifact-recovery:${recoveryTag}:${inputDigest}:${promptDigest}`;
   const options = modelOptions(env.CURSOR_API_KEY, selection);
   const recoveryRequest = createRequest(options, input.prompt, key, input.prior.agentId);
   const requestDigest = digestOf(recoveryRequest);
   const validateCompletedReceipt = (receipt: unknown): void => {
-    if (recoveryVersion === "words-writer1-artifact-recovery/v2") validateCursorArtifactRecoveryV2Receipt(receipt, input.prior, input.previousRecovery!, promptDigest, env.CURSOR_API_KEY);
+    if (isV3) validateCursorArtifactRecoveryV3Receipt(receipt, input.prior, input.previousRecoveryV2!, promptDigest, env.CURSOR_API_KEY);
+    else if (isV2) validateCursorArtifactRecoveryV2Receipt(receipt, input.prior, input.previousRecovery!, promptDigest, env.CURSOR_API_KEY);
     else validateCursorArtifactRecoveryReceipt(receipt, input.prior, promptDigest, env.CURSOR_API_KEY);
   };
   const existing = await input.receiptStore.get(key);
@@ -608,20 +656,26 @@ async function recoverCursorWriterArtifactInternal(input: CursorArtifactRecovery
     validateCompletedReceipt(existing);
     const recovered = await readWriter1Artifact({ client: artifactClient, agentId: input.prior.agentId, apiKey: env.CURSOR_API_KEY, validateOutput: input.validateOutput });
     const completed = existing as CursorArtifactRecoveryReceipt;
-    if (JSON.stringify(recovered.artifact) !== JSON.stringify(completed.artifact)) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_RACE", "Cursor artifact or download binding changed after the completed recovery receipt");
+    if (JSON.stringify(recovered.artifact) !== JSON.stringify(isV3 ? (completed as CursorArtifactRecoveryV3Receipt).afterArtifact : completed.artifact)) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_RACE", "Cursor artifact or download binding changed after the completed recovery receipt");
+    if (isV3 && writer1CopyProjectionDigest(recovered.output) !== (completed as CursorArtifactRecoveryV3Receipt).copyProjectionDigest) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_COPY_PROJECTION_MISMATCH", "Cursor v3 artifact changed after the completed receipt");
     const claim = await input.receiptStore.getClaim?.(key); if (!claim) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_CLAIM_MISSING", "Completed Cursor artifact recovery has no durable claim");
     return { output: recovered.output, receipt: { ...completed, output: recovered.output }, threadUrl: completed.threadUrl, claim };
   }
   if (!input.receiptStore.tryClaim || !input.receiptStore.getClaim || !input.receiptStore.putClaim) throw new CursorWriterExecutionError("CURSOR_DISPATCH_CLAIM_REQUIRED", "Cursor artifact recovery requires an atomic durable claim store");
 
   let preexisting: { output: unknown; artifact: CursorArtifactBinding } | undefined;
-  try { preexisting = await readWriter1Artifact({ client: artifactClient, agentId: input.prior.agentId, apiKey: env.CURSOR_API_KEY, validateOutput: input.validateOutput }); } catch (error) {
+  try { preexisting = await readWriter1Artifact({ client: artifactClient, agentId: input.prior.agentId, apiKey: env.CURSOR_API_KEY, validateOutput: isV3 ? (input.validateBeforeOutput || ((raw) => JSON.parse(raw))) : input.validateOutput }); } catch (error) {
+    if (isV3) {
+      if (error instanceof CursorWriterExecutionError && error.code === "CURSOR_ARTIFACT_MISSING") throw new CursorWriterExecutionError("CURSOR_V3_PRIOR_ARTIFACT_MISSING", "Writer1 v3 cannot repair metadata without downloading the existing invalid artifact");
+      throw error;
+    }
     // Only a genuinely absent descriptor permits the single same-thread
     // follow-up. A present but invalid artifact is evidence of a broken or
     // stale delivery and must fail closed before claiming or sending.
     if (!(error instanceof CursorWriterExecutionError) || error.code !== "CURSOR_ARTIFACT_MISSING") throw error;
   }
-  const initialClaim: CursorDispatchClaim = { key, stage: "writer1", runId: input.prior.runId, inputDigest, promptDigest, ownerToken: `${process.pid}:${now().getTime()}:${Math.random()}`, requestedAgentId: input.prior.agentId, claimedAt: now().toISOString(), heartbeatAt: now().toISOString(), leaseUntil: new Date(now().getTime() + 30_000).toISOString(), phase: "claimed" };
+  const priorClaim = await input.receiptStore.getClaim?.(key);
+  const initialClaim: CursorDispatchClaim = { key, stage: "writer1", runId: input.prior.runId, inputDigest, promptDigest, ownerToken: `${process.pid}:${now().getTime()}:${Math.random()}`, requestedAgentId: input.prior.agentId, claimedAt: now().toISOString(), heartbeatAt: now().toISOString(), leaseUntil: new Date(now().getTime() + 30_000).toISOString(), phase: "claimed", ...(isV3 && (priorClaim?.recoveryBeforeArtifact || preexisting) ? { recoveryBeforeArtifact: priorClaim?.recoveryBeforeArtifact || preexisting!.artifact, copyProjectionDigest: priorClaim?.copyProjectionDigest || writer1CopyProjectionDigest(preexisting!.output) } : {}) };
   let claimed = await input.receiptStore.tryClaim(key, initialClaim);
   let activeClaim = claimed.claim;
   if (!claimed.acquired) {
@@ -629,11 +683,14 @@ async function recoverCursorWriterArtifactInternal(input: CursorArtifactRecovery
     if (settled) { validateCompletedReceipt(settled); const recovered = await readWriter1Artifact({ client: artifactClient, agentId: input.prior.agentId, apiKey: env.CURSOR_API_KEY, validateOutput: input.validateOutput }); const finishedClaim = await input.receiptStore.getClaim(key); if (!finishedClaim) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_CLAIM_MISSING", "Completed Cursor artifact recovery has no durable claim"); return { output: recovered.output, receipt: { ...settled, output: recovered.output } as CursorArtifactRecoveryReceipt, threadUrl: settled.threadUrl, claim: finishedClaim }; }
     throw new CursorWriterExecutionError("CURSOR_DISPATCH_IN_PROGRESS", "Another worker owns the live Cursor artifact recovery claim; caller must reconcile before retrying", { key, phase: activeClaim.phase || "claimed" });
   }
-  if (preexisting) {
-    const noSendJobId = recoveryVersion === "words-writer1-artifact-recovery/v2" ? input.previousRecovery!.runId : input.prior.runId;
+  if (preexisting && !isV3) {
+    const noSendJobId = isV2 ? input.previousRecovery!.runId : input.prior.runId;
     const receipt: CursorArtifactRecoveryReceipt = withReceiptIntegrityMac({ stage: "writer1", provider: CURSOR_PROVIDER, requestedModel: REQUIRED_CURSOR_MODEL, resolvedModel: OFFICIAL_CURSOR_MODEL, fast: false, jobId: noSendJobId, agentId: input.prior.agentId, threadUrl: input.prior.threadUrl, inputDigest, promptDigest, outputDigest: digestOf(preexisting.output), completedAt: now().toISOString(), status: "complete", output: preexisting.output, requestDigest, createRequest: recoveryRequest, registryItem: selection.registryItem, registryDigest: selection.registryDigest, modelParams: selection.params, effort: "high", ...(selection.effortParameterId ? { effortParameterId: selection.effortParameterId } : {}), effortAttestationSource: input.prior.effortAttestationSource, attestationSource: "bound-create-request", apiVersion: API_VERSION, mode: "same-thread-artifact-recovery", recoveryVersion, artifact: preexisting.artifact, recoveryRunId: noSendJobId, recoveryPrior: input.prior, ...(input.previousRecovery ? { previousRecovery: input.previousRecovery } : {}), followUpPromptDigest: promptDigest } as CursorArtifactRecoveryReceipt, env.CURSOR_API_KEY);
     validateCompletedReceipt(receipt); await input.receiptStore.put(key, receipt); activeClaim = { ...activeClaim, agentId: input.prior.agentId, jobId: noSendJobId, phase: "completed", heartbeatAt: now().toISOString(), leaseUntil: new Date(now().getTime() + 30_000).toISOString() }; await input.receiptStore.putClaim(key, activeClaim); return { output: receipt.output, receipt, threadUrl: receipt.threadUrl, claim: activeClaim };
   }
+  const beforeArtifact = isV3 ? activeClaim.recoveryBeforeArtifact || preexisting?.artifact : undefined;
+  const beforeCopyProjectionDigest = isV3 ? activeClaim.copyProjectionDigest || (preexisting ? writer1CopyProjectionDigest(preexisting.output) : undefined) : undefined;
+  if (isV3 && (!beforeArtifact || !beforeCopyProjectionDigest)) throw new CursorWriterExecutionError("CURSOR_V3_BEFORE_BINDING_MISSING", "Writer1 v3 cannot continue without the persisted pre-repair artifact and copy projection binding");
   let agent: SDKAgent; let run: Run; let jobId: string;
   if (activeClaim.phase === "follow-up-sending" || (activeClaim.agentId && !activeClaim.jobId)) throw new CursorWriterExecutionError("CURSOR_FOLLOW_UP_RUN_ID_MISSING", "Cursor artifact recovery will not risk a duplicate follow-up without its persisted run ID");
   if (activeClaim.agentId && activeClaim.jobId) {
@@ -656,11 +713,13 @@ async function recoverCursorWriterArtifactInternal(input: CursorArtifactRecovery
   activeClaim = { ...activeClaim, agentId, jobId, phase: "waiting", heartbeatAt: now().toISOString(), leaseUntil: new Date(now().getTime() + 30_000).toISOString() }; await input.receiptStore.putClaim(key, activeClaim);
   const result = await run.wait();
   const resolvedModel = resolvedModelOf(agent, run, result); validateCursorWriterRuntime({ provider: CURSOR_PROVIDER, requestedModel, resolvedModel, fast: false }); if (resolvedModel !== OFFICIAL_CURSOR_MODEL) throw new CursorWriterExecutionError("CURSOR_RESOLVED_MODEL_MISSING", "Cursor artifact recovery did not attest the required resolved model");
-  const recovered = recoveryVersion === "words-writer1-artifact-recovery/v2"
+  const recovered = recoveryVersion === "words-writer1-artifact-recovery/v2" || isV3
     ? await readWriter1ArtifactWithBackoff({ client: artifactClient, agentId, apiKey: env.CURSOR_API_KEY, validateOutput: input.validateOutput, ...(input.sleep ? { sleep: input.sleep } : {}), ...(input.artifactBackoffMs ? { backoffMs: input.artifactBackoffMs } : {}) })
     : await readWriter1Artifact({ client: artifactClient, agentId, apiKey: env.CURSOR_API_KEY, validateOutput: input.validateOutput });
+  const copyProjectionDigest = isV3 ? writer1CopyProjectionDigest(recovered.output) : undefined;
+  if (isV3 && (recovered.artifact.sha256 === beforeArtifact!.sha256 && recovered.artifact.updatedAt === beforeArtifact!.updatedAt || copyProjectionDigest !== beforeCopyProjectionDigest)) throw new CursorWriterExecutionError(copyProjectionDigest !== beforeCopyProjectionDigest ? "CURSOR_V3_COPY_PROJECTION_CHANGED" : "CURSOR_V3_ARTIFACT_STALE", copyProjectionDigest !== beforeCopyProjectionDigest ? "Writer1 v3 copy projection changed; metadata-only repair cannot change words or evidence" : "Writer1 v3 artifact is stale and was not updated");
   const attestationSource = assertFastBound(options, [agent, run, result]); const effortAttestationSource = assertEffortBound(selection, [agent, run, result]);
-  const receipt: CursorArtifactRecoveryReceipt = withReceiptIntegrityMac({ stage: "writer1", provider: CURSOR_PROVIDER, requestedModel: REQUIRED_CURSOR_MODEL, resolvedModel: OFFICIAL_CURSOR_MODEL, fast: false, jobId, agentId, threadUrl: record.url, inputDigest, promptDigest, outputDigest: digestOf(recovered.output), completedAt: now().toISOString(), status: "complete", output: recovered.output, requestDigest, createRequest: recoveryRequest, registryItem: selection.registryItem, registryDigest: selection.registryDigest, modelParams: selection.params, effort: "high", ...(selection.effortParameterId ? { effortParameterId: selection.effortParameterId } : {}), effortAttestationSource, attestationSource, apiVersion: API_VERSION, mode: "same-thread-artifact-recovery", recoveryVersion, artifact: recovered.artifact, recoveryRunId: jobId, recoveryPrior: input.prior, ...(input.previousRecovery ? { previousRecovery: input.previousRecovery } : {}), followUpPromptDigest: promptDigest } as CursorArtifactRecoveryReceipt, env.CURSOR_API_KEY);
+  const receipt: CursorArtifactRecoveryReceipt = withReceiptIntegrityMac({ stage: "writer1", provider: CURSOR_PROVIDER, requestedModel: REQUIRED_CURSOR_MODEL, resolvedModel: OFFICIAL_CURSOR_MODEL, fast: false, jobId, agentId, threadUrl: record.url, inputDigest, promptDigest, outputDigest: digestOf(recovered.output), completedAt: now().toISOString(), status: "complete", output: recovered.output, requestDigest, createRequest: recoveryRequest, registryItem: selection.registryItem, registryDigest: selection.registryDigest, modelParams: selection.params, effort: "high", ...(selection.effortParameterId ? { effortParameterId: selection.effortParameterId } : {}), effortAttestationSource, attestationSource, apiVersion: API_VERSION, mode: "same-thread-artifact-recovery", recoveryVersion, artifact: recovered.artifact, recoveryRunId: jobId, recoveryPrior: input.prior, ...(input.previousRecovery ? { previousRecovery: input.previousRecovery } : {}), ...(isV3 ? { previousRecoveryV2: input.previousRecoveryV2, beforeArtifact: beforeArtifact!, afterArtifact: recovered.artifact, copyProjectionDigest: copyProjectionDigest!, metadataChangeDigest: writer1MetadataChangeDigest(beforeArtifact!.sha256, recovered.artifact.sha256, copyProjectionDigest!) } : {}), followUpPromptDigest: promptDigest } as CursorArtifactRecoveryReceipt, env.CURSOR_API_KEY);
   validateCompletedReceipt(receipt); await input.receiptStore.put(key, receipt); activeClaim = { ...activeClaim, phase: "completed", heartbeatAt: now().toISOString(), leaseUntil: new Date(now().getTime() + 30_000).toISOString() }; await input.receiptStore.putClaim(key, activeClaim); return { output: receipt.output, receipt, threadUrl: record.url, claim: activeClaim };
 }
 
@@ -689,6 +748,20 @@ export async function recoverCursorWriterArtifactV2(input: CursorArtifactRecover
   return recoverCursorWriterArtifactInternal({ ...input, env: process.env, transport, artifactClient: createCursorArtifactClient() });
 }
 
+export type CursorArtifactRecoveryV3Input = Omit<CursorArtifactRecoveryInput, "recoveryVersion" | "previousRecovery" | "previousRecoveryV2" | "validateBeforeOutput"> & {
+  recoveryVersion: "words-writer1-artifact-recovery/v3";
+  previousRecoveryV2: CursorArtifactRecoveryV2FailureBinding;
+};
+
+/** Production v3 recovery uses only the fixed Cursor SDK transport and process.env. */
+export async function recoverCursorWriterArtifactV3(input: CursorArtifactRecoveryV3Input): Promise<CursorArtifactRecoveryResult> {
+  const candidate = input as unknown as Record<string, unknown>;
+  if ("env" in candidate) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_ENV_SUBSTITUTION_FORBIDDEN", "Production artifact recovery reads process.env and does not accept caller-supplied environment");
+  if ("transport" in candidate || "artifactClient" in candidate) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_CLIENT_SUBSTITUTION_FORBIDDEN", "Production artifact recovery does not accept caller-supplied Cursor transports or artifact clients");
+  const transport = await officialCloudTransport();
+  return recoverCursorWriterArtifactInternal({ ...input, env: process.env, transport, artifactClient: createCursorArtifactClient(), validateBeforeOutput: (raw) => JSON.parse(raw) });
+}
+
 /** Test-only/internal seam. Production scripts cannot select this path by control input or environment. */
 export async function recoverCursorWriterArtifactForTest(input: CursorArtifactRecoveryInternalInput): Promise<CursorArtifactRecoveryResult> {
   if (process.env.NODE_ENV !== "test" && !process.execArgv.some((arg) => arg.includes("--test"))) throw new CursorWriterExecutionError("CURSOR_TEST_SEAM_FORBIDDEN", "Injected artifact recovery transports are available only from the Node test boundary");
@@ -696,6 +769,11 @@ export async function recoverCursorWriterArtifactForTest(input: CursorArtifactRe
 }
 
 export async function recoverCursorWriterArtifactV2ForTest(input: CursorArtifactRecoveryInternalInput & { recoveryVersion: "words-writer1-artifact-recovery/v2"; previousRecovery: CursorArtifactRecoveryFailureBinding }): Promise<CursorArtifactRecoveryResult> {
+  if (process.env.NODE_ENV !== "test" && !process.execArgv.some((arg) => arg.includes("--test"))) throw new CursorWriterExecutionError("CURSOR_TEST_SEAM_FORBIDDEN", "Injected artifact recovery transports are available only from the Node test boundary");
+  return recoverCursorWriterArtifactInternal(input);
+}
+
+export async function recoverCursorWriterArtifactV3ForTest(input: CursorArtifactRecoveryInternalInput & { recoveryVersion: "words-writer1-artifact-recovery/v3"; previousRecoveryV2: CursorArtifactRecoveryV2FailureBinding; validateBeforeOutput?: (raw: string) => unknown }): Promise<CursorArtifactRecoveryResult> {
   if (process.env.NODE_ENV !== "test" && !process.execArgv.some((arg) => arg.includes("--test"))) throw new CursorWriterExecutionError("CURSOR_TEST_SEAM_FORBIDDEN", "Injected artifact recovery transports are available only from the Node test boundary");
   return recoverCursorWriterArtifactInternal(input);
 }

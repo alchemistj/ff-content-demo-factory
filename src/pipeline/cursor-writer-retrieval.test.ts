@@ -8,14 +8,18 @@ import {
   recoverCursorWriterArtifact,
   recoverCursorWriterArtifactForTest,
   recoverCursorWriterArtifactV2ForTest,
+  recoverCursorWriterArtifactV3ForTest,
   retrieveCursorWriterOutput,
   validateCursorArtifactRecoveryReceipt,
   validateCursorArtifactRecoveryV2Receipt,
+  validateCursorArtifactRecoveryV3Receipt,
+  writer1CopyProjectionDigest,
   validateCursorWriterFollowUpReceipt,
   type CursorArtifactRecoveryInput,
   type CursorArtifactClient,
   type CursorArtifactRecoveryPrior,
   type CursorArtifactRecoveryFailureBinding,
+  type CursorArtifactRecoveryV2FailureBinding,
   type CursorTestTransport,
   type CursorFollowUpBindings,
 } from "./cursor-writer.js";
@@ -131,6 +135,9 @@ const artifactPrior: CursorArtifactRecoveryPrior = {
 const previousRecovery: CursorArtifactRecoveryFailureBinding = {
   recoveryVersion: "words-writer1-artifact-recovery/v1", actionRunId: "32793130502", artifactId: 9543869555, sourceBranch: "architect/360-words-canary", sourceSha: "6cf9b42e43e5728614a9b7302a8791e527197e3d", artifactDigest: "sha256:2d1d1c0d281917025be80898ab03c94171d59d1e2920ecf540b241f666464502", runId: "run-1b862d23-a748-4574-909a-66aac905eb97", agentId: artifactAgentId, threadUrl: artifactThreadUrl, promptDigest: digestWriter1ArtifactRecoveryPrompt("v1"), failureCode: "CURSOR_ARTIFACT_MISSING",
 };
+const previousRecoveryV2: CursorArtifactRecoveryV2FailureBinding = {
+  recoveryVersion: "words-writer1-artifact-recovery/v2", actionRunId: "32795481394", artifactId: 9544693335, artifactDigest: "sha256:469f3b04eb502316404d98023df34c38e57e8cc6bf51d6dbfdbda12be3834e2f", sourceBranch: "architect/360-words-canary", sourceSha: "29311637f3f4adc04f3dd9ca7bfc54f05df47c88", agentId: artifactAgentId, runId: "run-04370412-4486-4ecf-8045-e7f23554071b", threadUrl: artifactThreadUrl, promptDigest: "sha256:76a6571a8b6bfaf233bf48534aaf3b161ffeea4e77010023a3e127de29b69ace", failureCode: "WRITER1_OUTPUT_INVALID", inputDigest: artifactPrior.inputDigest,
+};
 const artifactBytes = Buffer.from('{"schemaVersion":"words-writer1-output/v1","pages":[]}\n', "utf8");
 function artifactDownloadResult(id: string, artifactPath: string, bytes: Buffer, sourceUrl: string): any {
   const cursorEndpoint = `https://api.cursor.com/v1/agents/${encodeURIComponent(id)}/artifacts/download?path=${encodeURIComponent(artifactPath)}`;
@@ -202,6 +209,75 @@ test("v2 finds an already-valid listed artifact before claiming or sending", asy
   const store = createMemoryCursorReceiptStore(); const state = { available: true, lists: 0, downloads: 0 }; const counters = { creates: 0, resumes: 0, sends: 0 };
   const result = await recoverCursorWriterArtifactV2ForTest({ env, receiptStore: store, prior: artifactPrior, previousRecovery, recoveryVersion: "words-writer1-artifact-recovery/v2", prompt: "v2 absolute materialization", transport: artifactTransport(counters, state), artifactClient: artifactClientFor(state), validateOutput: (raw) => JSON.parse(raw), artifactBackoffMs: [0] });
   assert.equal(result.receipt.recoveryVersion, "words-writer1-artifact-recovery/v2"); assert.deepEqual(counters, { creates: 0, resumes: 0, sends: 0 }); assert.equal(state.lists, 1);
+});
+
+function v3Output(provenance = false, mutation?: "word" | "quote" | "review" | "claim"): Record<string, any> {
+  const placement = (kind: string) => ({ ...(kind === "review" ? { reviewId: mutation === "review" ? "changed-review" : "review-1", quote: mutation === "quote" ? "changed quote" : "original quote", attribution: "Customer" } : kind === "claim" ? { claim: mutation === "claim" ? "changed claim" : "original claim" } : { evidenceId: "evidence-1", text: "original evidence" }), ...(provenance ? { provenance: { type: kind, ref: kind === "review" ? "review-1" : kind === "claim" ? "claim-1" : "evidence-1", placement: "body", section: "intro" } } : {}) });
+  const page = (url: string, prescriptionId: string) => ({ url, type: "service", prescriptionId, primaryKeyword: mutation === "word" ? "changed keyword" : "original keyword", title: mutation === "word" ? "Changed title" : "Original title", seoTitle: "Original SEO title", metaDescription: "Original meta description", h1: "Original H1", body: "Original body copy", sections: [{ id: "intro", heading: "Introduction", body: "Original section body" }], reviewPlacements: [placement("review")], reviewEvidence: [placement("evidence")], quotePlacements: [placement("evidence")], claims: [placement("claim")] });
+  return { schemaVersion: "words-writer1-output/v1", pages: [page("/garage-door-repair", "prescription-repair"), page("/garage-door-installation", "prescription-installation")] };
+}
+
+function v3Harness(before: Buffer, next: Buffer, counters: { creates: number; resumes: number; sends: number }, available = true): { state: { bytes: Buffer; nextBytes: Buffer; available: boolean; updatedAt: string; lists: number; downloads: number }; client: CursorArtifactClient; transport: CursorTestTransport } {
+  const state = { bytes: before, nextBytes: next, available, updatedAt: "2026-08-24T01:00:00.000Z", lists: 0, downloads: 0 };
+  const client: CursorArtifactClient = {
+    async list() { state.lists += 1; return state.available ? [{ path: "artifacts/writer1-output.json", size: state.bytes.length, updatedAt: state.updatedAt }] : []; },
+    async download(id, artifactPath) { state.downloads += 1; return artifactDownloadResult(id, artifactPath, state.bytes, "https://bucket.s3.us-east-1.amazonaws.com/opaque-key?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Signature=test"); },
+  };
+  const run = (id: string) => ({ id, agentId: artifactAgentId, model: { id: OFFICIAL_CURSOR_MODEL }, wait: async () => ({ status: "finished", result: "summary only", model: { id: OFFICIAL_CURSOR_MODEL } }) } as any);
+  const agent = { agentId: artifactAgentId, model: { id: OFFICIAL_CURSOR_MODEL }, send: async () => { counters.sends += 1; const changed = !state.bytes.equals(state.nextBytes); state.bytes = state.nextBytes; if (changed) state.updatedAt = "2026-08-24T01:01:00.000Z"; state.available = true; return run("run-v3-follow-up"); } } as any;
+  const transport: CursorTestTransport = { listModels: async () => artifactRegistry, create: async () => { counters.creates += 1; throw new Error("Agent.create must never be used by v3 recovery"); }, resume: async (id) => { counters.resumes += 1; assert.equal(id, artifactAgentId); return agent; }, getAgent: async (id) => ({ id, url: artifactThreadUrl }), getRun: async (_id, jobId) => run(jobId) };
+  return { state, client, transport };
+}
+
+function validateV3Output(raw: string): Record<string, any> {
+  const value = JSON.parse(raw) as Record<string, any>;
+  if (!Array.isArray(value.pages) || value.pages.length !== 2 || value.pages.some((page: any) => ![...(page.reviewPlacements || []), ...(page.reviewEvidence || []), ...(page.quotePlacements || []), ...(page.claims || [])].every((item: any) => item.provenance))) throw new Error("strict v3 output validation failed");
+  return value;
+}
+
+async function recoverV3(before: Buffer, next: Buffer, counters: { creates: number; resumes: number; sends: number }, available = true, store = createMemoryCursorReceiptStore()) {
+  const harness = v3Harness(before, next, counters, available);
+  const result = await recoverCursorWriterArtifactV3ForTest({ env, receiptStore: store, prior: artifactPrior, previousRecoveryV2, recoveryVersion: "words-writer1-artifact-recovery/v3", prompt: "canonical v3 metadata-only recovery", transport: harness.transport, artifactClient: harness.client, validateBeforeOutput: (raw) => JSON.parse(raw), validateOutput: validateV3Output, artifactBackoffMs: [0] });
+  return { result, harness, store };
+}
+
+test("v3 accepts provenance-only repair, binds before/after digests, and never sends twice", async () => {
+  const before = Buffer.from(JSON.stringify(v3Output(false)), "utf8");
+  const after = Buffer.from(JSON.stringify(v3Output(true)), "utf8");
+  const counters = { creates: 0, resumes: 0, sends: 0 };
+  const first = await recoverV3(before, after, counters);
+  const receipt = first.result.receipt as any;
+  assert.equal(counters.sends, 1); assert.equal(counters.creates, 0); assert.equal(receipt.recoveryVersion, "words-writer1-artifact-recovery/v3");
+  assert.notEqual(receipt.beforeArtifact.sha256, receipt.afterArtifact.sha256); assert.equal(receipt.artifact.sha256, receipt.afterArtifact.sha256); assert.equal(receipt.copyProjectionDigest, writer1CopyProjectionDigest(JSON.parse(after.toString("utf8"))));
+  validateCursorArtifactRecoveryV3Receipt(receipt, artifactPrior, previousRecoveryV2, digestOf("canonical v3 metadata-only recovery"), env.CURSOR_API_KEY);
+  const second = await recoverCursorWriterArtifactV3ForTest({ env, receiptStore: first.store, prior: artifactPrior, previousRecoveryV2, recoveryVersion: "words-writer1-artifact-recovery/v3", prompt: "canonical v3 metadata-only recovery", transport: first.harness.transport, artifactClient: first.harness.client, validateBeforeOutput: (raw) => JSON.parse(raw), validateOutput: validateV3Output, artifactBackoffMs: [0] });
+  assert.equal(counters.sends, 1); assert.equal(counters.resumes, 1); assert.deepEqual(second.receipt, first.result.receipt);
+});
+
+test("v3 rejects any word, quote, review, or claim change and persists no completed receipt", async () => {
+  for (const mutation of ["word", "quote", "review", "claim"] as const) {
+    const before = Buffer.from(JSON.stringify(v3Output(false)), "utf8");
+    const after = Buffer.from(JSON.stringify(v3Output(true, mutation)), "utf8");
+    const counters = { creates: 0, resumes: 0, sends: 0 }; const store = createMemoryCursorReceiptStore();
+    await assert.rejects(() => recoverV3(before, after, counters, true, store), /copy projection changed/u, mutation);
+    assert.equal(counters.sends, 1, mutation); assert.equal([...store.records.values()].some((value: any) => value.recoveryVersion === "words-writer1-artifact-recovery/v3"), false, mutation);
+  }
+});
+
+test("v3 rejects a stale artifact and a missing prior invalid artifact before follow-up", async () => {
+  const stale = Buffer.from(JSON.stringify(v3Output(true)), "utf8"); const staleCounters = { creates: 0, resumes: 0, sends: 0 };
+  await assert.rejects(() => recoverV3(stale, stale, staleCounters), /stale/u); assert.deepEqual(staleCounters, { creates: 0, resumes: 1, sends: 1 });
+  const missingCounters = { creates: 0, resumes: 0, sends: 0 };
+  await assert.rejects(() => recoverV3(stale, Buffer.from(JSON.stringify(v3Output(true)), "utf8"), missingCounters, false), /existing invalid artifact/u); assert.deepEqual(missingCounters, { creates: 0, resumes: 0, sends: 0 });
+});
+
+test("v3 crash recovery reattaches the same follow-up and never resends", async () => {
+  const before = Buffer.from(JSON.stringify(v3Output(false)), "utf8"); const wrong = Buffer.from(JSON.stringify(v3Output(true, "word")), "utf8"); const corrected = Buffer.from(JSON.stringify(v3Output(true)), "utf8");
+  const counters = { creates: 0, resumes: 0, sends: 0 }; const store = createMemoryCursorReceiptStore(); const harness = v3Harness(before, wrong, counters);
+  await assert.rejects(() => recoverCursorWriterArtifactV3ForTest({ env, receiptStore: store, prior: artifactPrior, previousRecoveryV2, recoveryVersion: "words-writer1-artifact-recovery/v3", prompt: "canonical v3 metadata-only recovery", transport: harness.transport, artifactClient: harness.client, validateBeforeOutput: (raw) => JSON.parse(raw), validateOutput: validateV3Output, artifactBackoffMs: [0] }), /copy projection changed/u);
+  const claim = store.claims.values().next().value as any; claim.leaseUntil = new Date(0).toISOString(); store.claims.set(claim.key, claim); harness.state.nextBytes = corrected; harness.state.bytes = corrected; harness.state.updatedAt = "2026-08-24T01:02:00.000Z";
+  const recovered = await recoverCursorWriterArtifactV3ForTest({ env, receiptStore: store, prior: artifactPrior, previousRecoveryV2, recoveryVersion: "words-writer1-artifact-recovery/v3", prompt: "canonical v3 metadata-only recovery", transport: harness.transport, artifactClient: harness.client, validateBeforeOutput: (raw) => JSON.parse(raw), validateOutput: validateV3Output, artifactBackoffMs: [0] });
+  assert.equal(counters.sends, 1); assert.equal(counters.resumes, 2); assert.equal(recovered.receipt.recoveryVersion, "words-writer1-artifact-recovery/v3");
 });
 
 test("artifact recovery rejects a summary artifact without a completed receipt, then reattaches the persisted run", async () => {
