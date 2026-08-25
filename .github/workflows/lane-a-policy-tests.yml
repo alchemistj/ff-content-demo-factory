@@ -22,8 +22,20 @@ jobs:
       - name: Checkout exact PR head
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
           fetch-depth: 1
           persist-credentials: false
+      - name: Assert and record exact source head
+        id: head
+        shell: bash
+        env:
+          EXPECTED_HEAD_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+        run: |
+          actual="$(git rev-parse HEAD)"
+          test "$actual" = "$EXPECTED_HEAD_SHA"
+          mkdir -p canary/outputs
+          ACTUAL="$actual" EXPECTED_HEAD_SHA="$EXPECTED_HEAD_SHA" RUN_URL="${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}" \
+            node -e "const fs=require('node:fs');fs.writeFileSync('canary/outputs/exact-head-proof.json',JSON.stringify({schemaVersion:'factory-exact-head-proof-v1',checkedOutSha:process.env.ACTUAL,expectedHeadSha:process.env.EXPECTED_HEAD_SHA,headAssertion:true,workflowRunUrl:process.env.RUN_URL},null,2)+'\\n')"
       - name: Set up Node
         uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
         with:
@@ -33,3 +45,11 @@ jobs:
         run: npm ci --ignore-scripts --no-audit --no-fund
       - name: Run reproducible full suite
         run: node --test
+      - name: Upload exact-head test proof
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: lane-a-exact-head-proof-${{ github.run_id }}
+          path: canary/outputs/exact-head-proof.json
+          if-no-files-found: error
+          retention-days: 30
