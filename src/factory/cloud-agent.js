@@ -40,9 +40,11 @@ function validateJobReceipt(receipt, { kind, expectedEnvelope }) {
   if (!TERMINAL.has(String(receipt.status || '').toLowerCase()) || receipt.terminalStatus !== 'succeeded') throw new Error(`Cloud Agent ${kind} receipt is not terminal success`);
   required(receipt.agentId, `${kind} agentId`);
   required(receipt.runId, `${kind} runId`);
+  if (String(receipt.agentId) === String(receipt.runId)) throw new Error(`Cloud Agent ${kind} receipt must preserve separate agentId and runId`);
   canonicalThreadUrl(receipt.threadUrl);
   required(receipt.inputDigest, `${kind} inputDigest`);
   required(receipt.outputDigest, `${kind} outputDigest`);
+  if (!/^sha256:[a-f0-9]{8,}$/i.test(String(receipt.inputDigest)) || !/^sha256:[a-f0-9]{8,}$/i.test(String(receipt.outputDigest))) throw new Error(`Cloud Agent ${kind} receipt digest format is invalid`);
   if (!receipt.startedAt || !receipt.completedAt) throw new Error(`Cloud Agent ${kind} receipt timestamps are incomplete`);
   const envelope = receipt.envelope;
   if (!envelope || envelope.checkedOutSha !== expectedEnvelope.checkedOutSha || envelope.inputManifestDigest !== expectedEnvelope.inputManifestDigest || envelope.operation !== kind || envelope.stage !== kind) throw new Error(`Cloud Agent ${kind} immutable envelope mismatch`);
