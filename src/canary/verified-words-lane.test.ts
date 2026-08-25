@@ -7,7 +7,7 @@ import test from "node:test";
 import { EXPECTED_VERIFIED_CORRECTION, EXPECTED_VERIFIED_CORRECTION_V2, EXPECTED_VERIFIED_CORRECTION_V3, selectVerifiedWriter1Dispatch, validateControl as rawValidateControl } from "../../scripts/360-words-control.mjs";
 import { digestWriter1QuarantineCorrectionV3Input, digestWriter1QuarantineCorrectionV3Prompt } from "../../scripts/360-words-recovery-prompt.mjs";
 import { validateSealed, writer1Projection } from "../../scripts/360-words-canary.js";
-import { VERIFIED_WRITER1_AGENT_ID, VERIFIED_WRITER1_PROMPT_DIGEST, VERIFIED_WRITER1_PROMPT_V2_DIGEST, validateVerifiedWriter1Control, validateVerifiedWriter1PostDispatchControl, validateVerifiedWriter1SealOnlyControl, verifyOriginalDispatchEvidence, runVerifiedWriter1Correction, verifyPinnedSealedManifestBytes, quarantineWriter1PostDispatchOutput, persistVerifiedWriterFailureSurface, VERIFIED_WRITER1_REJECTED_OUTPUT_PATH, VERIFIED_WRITER1_REJECTION_RECEIPT_PATH } from "../../scripts/360-words-verified.js";
+import { VERIFIED_WRITER1_AGENT_ID, VERIFIED_WRITER1_PROMPT_DIGEST, VERIFIED_WRITER1_PROMPT_V2_DIGEST, validateVerifiedWriter1Control, validateVerifiedWriter1PostDispatchControl, validateVerifiedWriter1SealOnlyControl, verifyOriginalDispatchEvidence, runVerifiedWriter1Correction, verifyPinnedSealedManifestBytes, quarantineWriter1PostDispatchOutput, persistVerifiedWriterFailureSurface, VERIFIED_WRITER1_REJECTED_OUTPUT_PATH, VERIFIED_WRITER1_REJECTION_RECEIPT_PATH, VERIFIED_WRITER1_CORRECTION_V3_ARTIFACT_PATHS, validateVerifiedWriter1CorrectionV3ArtifactListing } from "../../scripts/360-words-verified.js";
 import { digestOf } from "../../src/contracts/digests.js";
 import { createHash } from "node:crypto";
 import { assertNoLocalDownstreamGeneration, assertVerifiedDownstreamState, VERIFIED_PUBLIC_ROUTES, VERIFIED_STAGE_POLICY, VERIFIED_WRITER3_SEALED_FACTS } from "../../src/pipeline/verified-words-policy.js";
@@ -108,6 +108,20 @@ test("exact quarantined Writer1 correction-v3 wake is classified and bound witho
   assert.throws(() => rawValidateControl({ ...active, recovery: { ...recovery, promptDigest: "sha256:" + "0".repeat(64) } }, { changedPaths: [".factory-wake/360-words-control.json"], actor: "architect", owner: "architect", commitSha: "f".repeat(40), beforeSha: sourceSha, parentSha: sourceSha, verifiedLane: true }), /v3 wake/u);
   const workflow = readFileSync(path.join(root, ".github/workflows/architect-360-words-canary.yml"), "utf8");
   assert.match(workflow, /verified-writer1-correction-v3/u); assert.match(workflow, /scripts\/360-words-verified\.ts --writer1-correction-v3/u);
+});
+
+test("correction-v3 source artifact requires exactly the four artifact-relative paths", () => {
+  const exact = [...VERIFIED_WRITER1_CORRECTION_V3_ARTIFACT_PATHS];
+  assert.doesNotThrow(() => validateVerifiedWriter1CorrectionV3ArtifactListing(exact));
+  for (const variant of [
+    exact.filter((item) => item !== "runtime/state.json"),
+    [...exact, "quarantine/decoy.txt"],
+    [...exact.filter((item) => item !== "quarantine/writer1-rejected-output.txt"), "quarantine/writer1-rejected-output.json"],
+  ]) assert.throws(() => validateVerifiedWriter1CorrectionV3ArtifactListing(variant), /exact four-file manifest/u);
+  const workflow = readFileSync(path.join(root, ".github/workflows/architect-360-words-canary.yml"), "utf8");
+  assert.match(workflow, /runtime\/failure\.json[\s\S]*runtime\/state\.json[\s\S]*quarantine\/writer1-rejected-output\.txt[\s\S]*quarantine\/writer1-rejection\.json/u);
+  assert.match(workflow, /recoveryMessagesSent == 0[\s\S]*writer2Blocked == true/u);
+  assert.match(workflow, /approved == false/u);
 });
 
 test("post-dispatch wake is classified as retrieval-only and cannot reach a follow-up or legacy artifact runner", () => {

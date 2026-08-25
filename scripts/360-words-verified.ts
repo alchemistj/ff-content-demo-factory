@@ -52,6 +52,10 @@ export const VERIFIED_WRITER1_CORRECTION_V3 = WRITER1_QUARANTINE_CORRECTION_V3_V
 export const VERIFIED_WRITER1_PROMPT_V3 = buildWriter1QuarantineCorrectionV3Prompt();
 export const VERIFIED_WRITER1_PROMPT_V3_DIGEST = digestWriter1QuarantineCorrectionV3Prompt();
 export const VERIFIED_WRITER1_CORRECTION_V3_SOURCE = WRITER1_QUARANTINE_CORRECTION_V3_SOURCE;
+export const VERIFIED_WRITER1_CORRECTION_V3_ARTIFACT_PATHS = Object.freeze(["runtime/failure.json", "runtime/state.json", "quarantine/writer1-rejected-output.txt", "quarantine/writer1-rejection.json"] as const);
+export function validateVerifiedWriter1CorrectionV3ArtifactListing(paths: readonly string[]): void {
+  if (JSON.stringify([...paths].sort()) !== JSON.stringify([...VERIFIED_WRITER1_CORRECTION_V3_ARTIFACT_PATHS].sort())) throw new Error("verified Writer1 correction-v3 source artifact listing is not the exact four-file manifest");
+}
 export const VERIFIED_WRITER1_ROUTES = ["/garage-door-repair", "/garage-door-installation"] as const;
 export const VERIFIED_WRITER1_POST_DISPATCH = Object.freeze({
   recoveryVersion: "words-writer1-post-dispatch-retrieval/v1",
