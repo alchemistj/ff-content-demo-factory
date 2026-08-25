@@ -25,7 +25,7 @@ function main(env = process.env) {
   const output = path.resolve(env.FACTORY_DISPATCH_OUTPUT || 'canary/outputs/cursor-dispatch.json');
   fs.mkdirSync(path.dirname(output), { recursive: true });
   fs.writeFileSync(output, `${JSON.stringify(packet, null, 2)}\n`);
-  const comment = `${packet.commentBody}\nDispatch packet digest: ${packet.dispatchDigest}`;
+  const comment = `${packet.commentBody}\nAuthoritative Issue contract: https://github.com/${packet.repository}/issues/${packet.issueNumber}\nDispatch packet digest: ${packet.dispatchDigest}`;
   fs.writeFileSync(output.replace(/\.json$/i, '.comment.md'), `${comment}\n`);
   return packet;
 }
