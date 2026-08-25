@@ -27,15 +27,16 @@ function contextFields(marker) {
     sourceManifestDigest: marker.sourceManifestDigest || null,
     inputManifestDigest: marker.inputManifestDigest || null,
     jobId: marker.jobId || null,
+    ownerToken: marker.ownerToken || marker.dispatchKey || null,
   };
 }
 
-function markerFor({ kind, repository, issueNumber, prNumber, branch, checkedOutSha, handoffId, dispatchKey, dispatchDigest, runId, prospectId, sourceCheckpointDigest, sourceManifestDigest, inputManifestDigest, jobId, resultId, inputDigest, outputDigest, threadUrl, model, commentId, commentUrl, status = 'preparing' }) {
+function markerFor({ kind, repository, issueNumber, prNumber, branch, checkedOutSha, handoffId, dispatchKey, dispatchDigest, runId, prospectId, sourceCheckpointDigest, sourceManifestDigest, inputManifestDigest, jobId, ownerToken, resultId, inputDigest, outputDigest, threadUrl, model, commentId, commentUrl, status = 'preparing' }) {
   if (!STATES.includes(status)) throw new Error(`Unknown ledger marker state: ${status}`);
   const marker = {
     schemaVersion: SCHEMA_VERSION,
     kind: required(kind, 'ledger marker kind'),
-    ...contextFields({ repository: required(repository, 'ledger marker repository'), issueNumber: required(issueNumber, 'ledger marker issue number'), prNumber: required(prNumber, 'ledger marker PR number'), branch: required(branch, 'ledger marker branch'), checkedOutSha: required(checkedOutSha, 'ledger marker checked-out head'), handoffId: required(handoffId, 'ledger marker handoff id'), dispatchKey: required(dispatchKey, 'ledger marker dispatch key'), dispatchDigest, runId, prospectId, sourceCheckpointDigest, sourceManifestDigest, inputManifestDigest, jobId }),
+    ...contextFields({ repository: required(repository, 'ledger marker repository'), issueNumber: required(issueNumber, 'ledger marker issue number'), prNumber: required(prNumber, 'ledger marker PR number'), branch: required(branch, 'ledger marker branch'), checkedOutSha: required(checkedOutSha, 'ledger marker checked-out head'), handoffId: required(handoffId, 'ledger marker handoff id'), dispatchKey: required(dispatchKey, 'ledger marker dispatch key'), dispatchDigest, runId, prospectId, sourceCheckpointDigest, sourceManifestDigest, inputManifestDigest, jobId, ownerToken }),
     resultId: resultId == null ? null : String(resultId),
     inputDigest: inputDigest || null,
     outputDigest: outputDigest || null,
@@ -65,7 +66,7 @@ function parseMarker(body) {
 }
 
 function assertContext(value, expected) {
-  for (const field of ['repository', 'issueNumber', 'prNumber', 'branch', 'checkedOutSha', 'handoffId', 'dispatchKey', 'dispatchDigest', 'runId', 'prospectId', 'sourceCheckpointDigest', 'sourceManifestDigest', 'inputManifestDigest', 'jobId']) {
+  for (const field of ['repository', 'issueNumber', 'prNumber', 'branch', 'checkedOutSha', 'handoffId', 'dispatchKey', 'dispatchDigest', 'runId', 'prospectId', 'sourceCheckpointDigest', 'sourceManifestDigest', 'inputManifestDigest', 'jobId', 'ownerToken']) {
     if (expected[field] != null && String(value?.[field] ?? '') !== String(expected[field])) throw new Error(`Ledger ${field} binding mismatch`);
   }
   return true;
@@ -78,8 +79,24 @@ function assertTransition(previous, next) {
   }
   if (!TRANSITIONS[previous.status]?.includes(next.status)) throw new Error(`Invalid ledger transition ${previous.status} -> ${next.status}`);
   assertContext(next, contextFields(previous));
+  if (previous.ownerToken && next.ownerToken !== previous.ownerToken) throw new Error('Ledger claim owner token mismatch');
   if (next.status === 'posted' && (!next.commentId || !next.commentUrl)) throw new Error('posted ledger state requires authoritative @cursor comment identity');
   return next;
+}
+
+function claimOwnerMatches(marker, ownerToken) {
+  return !marker || !marker.ownerToken || String(marker.ownerToken) === String(ownerToken);
+}
+
+// Durable recovery decision used by both workflow entry points. A runner may
+// disappear after any marker POST; the Issue ledger, not a local file, tells a
+// retry whether to continue, reconcile, or safely no-op.
+function recoverClaim(comments, expected, ownerToken) {
+  const current = findClaim(comments, expected);
+  if (!current) return { action: 'prepare', status: null, claim: null };
+  if (!claimOwnerMatches(current, ownerToken)) return { action: 'noop', status: current.status, claim: current, ownerMismatch: true };
+  const actions = { preparing: 'post', posted: 'in_motion', in_motion: 'terminal', terminal: 'phase_b_claimed', phase_b_claimed: 'resumed', resumed: 'noop' };
+  return { action: actions[current.status] || 'noop', status: current.status, claim: current };
 }
 
 function issueCommentUrl(url, repository, issueNumber) {
@@ -131,4 +148,4 @@ function requireGitHubToken(env = process.env) {
   return token;
 }
 
-module.exports = { SCHEMA_VERSION, STATES, markerFor, markerBody, parseMarker, assertTransition, assertContext, authoritativeMarkers, findClaim, reconcileDispatchComment, requireGitHubToken };
+module.exports = { SCHEMA_VERSION, STATES, markerFor, markerBody, parseMarker, assertTransition, assertContext, authoritativeMarkers, findClaim, reconcileDispatchComment, claimOwnerMatches, recoverClaim, requireGitHubToken };
