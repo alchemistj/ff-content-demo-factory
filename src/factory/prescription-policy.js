@@ -56,6 +56,25 @@ function pageSetDigest(pages) {
   return digest((pages || []).map((page) => ({ id: pageId(page), type: page.type, canonicalIntentId: page.canonicalIntentId || null, service: page.service || null, url: routePath(page.url), primaryKeyword: page.primaryKeyword, titleDirection: page.titleDirection, h1Direction: page.h1Direction })));
 }
 
+function validateSourceIdentity(sourceIdentity) {
+  if (!sourceIdentity || typeof sourceIdentity !== 'object' || Array.isArray(sourceIdentity)) throw new Error('source identity is required');
+  for (const field of ['provider', 'runId', 'artifactId', 'sourceSha', 'rootIdentity']) {
+    if (sourceIdentity[field] == null || String(sourceIdentity[field]).trim() === '') throw new Error(`source identity is missing ${field}`);
+  }
+  return sourceIdentity;
+}
+
+function validateSourceBinding(sourceBinding = {}, serviceLedger = null) {
+  if (!sourceBinding || typeof sourceBinding !== 'object') throw new Error('source binding is required');
+  if (typeof sourceBinding.sourceArtifactDigest !== 'string' || !/^sha256:[a-f0-9]{8,}$/i.test(sourceBinding.sourceArtifactDigest)) throw new Error('source artifact digest is required');
+  const sourceIdentity = validateSourceIdentity(sourceBinding.sourceIdentity);
+  if (serviceLedger) {
+    const ledgerIdentity = validateSourceIdentity(serviceLedger.sourceIdentity);
+    if (JSON.stringify(canonical(ledgerIdentity)) !== JSON.stringify(canonical(sourceIdentity))) throw new Error('canonical service ledger source identity mismatch');
+  }
+  return sourceIdentity;
+}
+
 function ledgerMaps(ledger) {
   const entries = new Map();
   for (const entry of ledger?.services || []) {
@@ -124,7 +143,10 @@ function validateCompleteCanonicalLedger(ledger, { services = [], pages = [], id
   if (identity.prospectId != null && String(ledger.prospectId) !== String(identity.prospectId)) throw new Error('canonical service ledger prospect identity mismatch');
   if (identity.placeId != null && String(ledger.placeId) !== String(identity.placeId)) throw new Error('canonical service ledger place identity mismatch');
   if (identity.runId != null && String(ledger.runId) !== String(identity.runId)) throw new Error('canonical service ledger run identity mismatch');
-  if (identity.sourceIdentity && JSON.stringify(canonical(ledger.sourceIdentity || {})) !== JSON.stringify(canonical(identity.sourceIdentity))) throw new Error('canonical service ledger source identity mismatch');
+  if (identity.sourceIdentity) {
+    validateSourceIdentity(identity.sourceIdentity);
+    if (JSON.stringify(canonical(ledger.sourceIdentity || {})) !== JSON.stringify(canonical(identity.sourceIdentity))) throw new Error('canonical service ledger source identity mismatch');
+  }
   if (!Array.isArray(ledger.services) || !ledger.services.length) throw new Error('canonical service ledger is incomplete');
   const { entries } = ledgerMaps(ledger);
   for (const service of ledger.services) {
@@ -214,6 +236,7 @@ function validateExpansionOverride(override, { pages, policy, runContext = {}, s
 function validatePagePolicy({ pages, services, serviceLedger = null, policy = STANDARD_PRESCRIPTION_POLICY, override = null, runContext = {}, sourceBinding = {}, evidenceDigest = null } = {}) {
   if (!Array.isArray(pages)) throw new Error('prescription pages must be an array');
   if (!serviceLedger) throw new Error('canonical service ledger is required at the page-policy boundary');
+  if (sourceBinding && (sourceBinding.sourceIdentity || sourceBinding.sourceArtifactDigest)) validateSourceBinding(sourceBinding, serviceLedger);
   if (!isExactStandardPolicy(policy)) throw new Error('standard prescription policy object was altered');
   if (pages.some((page) => page.type === 'Strategy Overview' || page.type === 'Strategy')) throw new Error('Strategy Overview is not a business page and must not be in prescription.pages');
   validateCompleteCanonicalLedger(serviceLedger, { services, pages, identity: { prospectId: runContext.prospectId, placeId: runContext.placeId, runId: runContext.runId, sourceIdentity: sourceBinding.sourceIdentity } });
@@ -236,4 +259,4 @@ function validatePagePolicy({ pages, services, serviceLedger = null, policy = ST
   return { policy: { ...STANDARD_PRESCRIPTION_POLICY }, policyMode: overrideResult.mode, allowedServicePageCount: expectedServiceCount, override: overrideResult.override, selectedServiceIds: selected, normalizedPages, normalizedServices, pageSetDigest: pageSetDigest(normalizedPages) };
 }
 
-module.exports = { STANDARD_PRESCRIPTION_POLICY, AUTHORITATIVE_APPROVERS, canonical, digest, validDate, isExactStandardPolicy, serviceTerm, normalizeServiceKey, serviceIdentity, pageId, pageSetDigest, ledgerMaps, canonicalServiceId, canonicalizeServiceCandidates, canonicalizePageServices, assertNoServiceAliasCollisions, validateCompleteCanonicalLedger, rankCandidateServices, selectTopServiceDestinations, validateExpansionOverride, validatePagePolicy };
+module.exports = { STANDARD_PRESCRIPTION_POLICY, AUTHORITATIVE_APPROVERS, canonical, digest, validDate, isExactStandardPolicy, serviceTerm, normalizeServiceKey, serviceIdentity, pageId, pageSetDigest, validateSourceIdentity, validateSourceBinding, ledgerMaps, canonicalServiceId, canonicalizeServiceCandidates, canonicalizePageServices, assertNoServiceAliasCollisions, validateCompleteCanonicalLedger, rankCandidateServices, selectTopServiceDestinations, validateExpansionOverride, validatePagePolicy };
