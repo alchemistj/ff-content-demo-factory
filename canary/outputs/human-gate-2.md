@@ -4,23 +4,23 @@ Directly readable words package for the 360 Garage Door and More canary. Natural
 
 ## Completion contract
 
-- Repair page useful-body word count (diagnostic only): **835**
-- Installation page useful-body word count (diagnostic only): **680**
+- Repair page useful-body word count (diagnostic only): **817**
+- Installation page useful-body word count (diagnostic only): **574**
 - Word count is not the acceptance reason. The former hard 800-word floor is revoked.
-- Architect QA Writer 1: **accept** (fresh quality decision; Writer 2 released; raw quarantined artifact remains unapproved)
-- Architect QA Writer 2: **accept** (reconciled after the corrected Writer 1 pages; Writer 3 released)
+- Architect QA Writer 1: **waiting-for-architect** (independent review required; this worker does not accept; Writer 2 is not released; raw quarantined artifact remains unapproved)
+- Architect QA Writer 2: **waiting-for-architect** (Home/Contact/header/footer reconciled to claim-corrected Writer 1 pages; not accepted)
 - Writer 3 Strategy Overview: internal only
-- Whole-site QA: **pass** (fresh decision; prior accept/pass revoked)
-- Duplicate-quote scan: **pass** (each quotation displayed once)
-- Repetition scan: **pass** (hours/timing handled once per service page)
-- Unsupported-claim scan: **pass**
-- Evidence-fidelity scan: **pass**
+- Whole-site QA: **waiting-for-architect** (writer self-check only; prior accept/pass remain revoked; independent Architect review required)
+- Duplicate-quote scan: **writer-self-check-pass** (each quotation displayed once)
+- Repetition scan: **writer-self-check-pass** (hours/timing handled once per service page)
+- Unsupported-claim scan: **writer-self-check-pass** (six Architect-flagged overclaims removed or narrowed)
+- Evidence-fidelity scan: **writer-self-check-pass**
 - Merge occurred: **no**
 - Deployment occurred: **no**
 - Branch: `architect/360-words-canary`
-- Reviewed head for this correction packet: `778fbc8742038f6c4e4d88ca241bf2a62d8c0c6b`
-- Head at render: `efe429d4464d765b5b657cb0058f00fffb35d3d7`
-- Fresh Writer 1 rendered-words digest: `sha256:fed5a3f41c317ff64d3a8a8e82c1114af68e53a1a7f8378d55a31e66ce7d2b00`
+- Reviewed head for this correction packet: `cbe66a21f0b99c27fb4eed946267e378b5d11312`
+- Head at render: `cbe66a21f0b99c27fb4eed946267e378b5d11312`
+- Fresh Writer 1 rendered-words digest: `sha256:3edce1acff28a00b3f0064664f8b1b4d2beab1a0a9fda5f92108442ce4d1460e`
 - Rejected padded lineage (not restored): `sha256:165d310ae1e30225b6278cc0fbde7d2cab23a60f186157c59734257519c01f89`
 - Hermetic pointer-ledger fixtures: `561e9013f4ca5c5d3055bdbcff34c69b466f7940`
 - Sealed Writer 1 recovery/finalization: `0d6284a9aa037dc642669357c86fb02b3b859e3a`
@@ -38,6 +38,7 @@ Directly readable words package for the 360 Garage Door and More canary. Natural
 - Writer 1 Cursor thread: https://cursor.com/agents/bc-30fc8ffa-2005-44b9-8fc7-48ddd9c3bcc8
 - Prior correction Cursor thread: https://cursor.com/agents/bc-57cc62dc-de8f-4be0-840b-640662ae56a4
 - Fresh Writer 1 copy Cursor thread: https://cursor.com/agents/bc-2486f645-c31c-4532-8145-fbe3af1d45a8
+- Claim-correction Cursor thread: https://cursor.com/agents/bc-85fdb5d1-0b22-4892-8943-c9e597607491
 - GitHub issue: https://github.com/alchemistj/ff-content-demo-factory/issues/5
 - Quarantined source digest: `sha256:ec36da69992dd318e913671763a96e4b838ab747b36e512702f91176155e5eac`
 - Prior normalized output digest (pre-quality rewrite): `sha256:c771016e724a49dd41254bde3639de6c1b1c18fc69c23533ed19bd9773f3ef8e`
@@ -47,12 +48,26 @@ Directly readable words package for the 360 Garage Door and More canary. Natural
 
 - Targeted regression: production `reviewer`+`excerpt` fails `REVIEW_EVIDENCE_CLAIM_TEXT_DUPLICATE` at `/pages/0/reviewEvidence/0/reviewer` with expectedRule `reviewEvidence must not contain any accepted word-bearing key; it is a typed pointer ledger`, then normalizes losslessly.
 - Real quarantined bytes: 31 reviewer keys + 31 excerpt keys removed (62), semantic copy / identity / provenance preserved, raw `approved: false`.
-- Fresh Writer 1 quality QA: distinct section jobs, synthesized reviews, one display form per quote, no audit-memo public copy, unsupported-claim scan pass, word counts diagnostic only.
-- `NODE_ENV=test npm run test:all`: 131 passed, 0 failed, 0 skipped.
+- Fresh Writer 1 quality self-check: distinct section jobs, synthesized reviews, one display form per quote, no audit-memo public copy, unsupported-claim scan pass, six Architect-flagged overclaims removed or narrowed, word counts diagnostic only. This is not Architect acceptance.
+- `NODE_ENV=test npm run test:all`: recorded after this head is committed.
 
-## Architect QA — Writer 1 (fresh)
+## Changed-claim reasons
 
-Decision: **accept**. Word count did not pass the pages.
+- Repair: removed Jenny parts-arrival scheduling. Sealed evidence supports Jenny customer service/follow-up generally, not a parts-on-the-next-visit process.
+
+- Repair: replaced causal return-because-local/not-a-chain and always-same-person-diagnoses-and-repairs language with named completed-job facts only.
+
+- Installation: replaced 'when the slab is done' with natural homeowner language about needing a new door for the opening you have.
+
+- Installation: removed the Facebook-group discovery recital; it repeated how households found the shop rather than helping the purchase decision.
+
+- Installation: removed evidence-free evening-usability and two-opening staging advice. Kept paint-ready trim and on-site cleanup from named completed installs.
+
+- Home: replaced the awkward H1 with the sealed completed-jobs promise, without availability, speed, warranty, or pricing claims.
+
+## Architect QA — Writer 1
+
+Decision: **waiting-for-architect**. Independent Architect review is required. Word count did not pass the pages. This worker does not accept Writer 1 and does not open Human Gate 2.
 
 ### Garage Door Repair section jobs
 
@@ -62,21 +77,21 @@ Decision: **accept**. Word count did not pass the pages.
 
 - `repair-visit` (process): Explains diagnosis first, then a now-versus-later choice, so the homeowner knows what the visit is for before parts are swapped.
 
-- `repair-equipped` (visit-completion): Sets the expectation that work can finish in the visit when the part is on the truck, and that Jenny schedules a follow-up when it is not.
+- `repair-equipped` (visit-completion): Sets the expectation that work can finish in the visit when the part is already on the truck. Does not invent a Jenny parts-arrival follow-up process.
 
-- `repair-local-crew` (differentiator): Names the Springfield shop, Jenny on the phone, and Will on site as completed-job proof rather than a warranty slogan.
+- `repair-local-crew` (differentiator): Names the Springfield shop, Jenny on the phone, and Will on site from completed jobs, without causal 'callers return because' or always-same-person generalizations.
 
 - `repair-next` (next-step): Handles hours and the weekday call once, without repeating timing caveats through the page.
 
 ### Garage Door Installation section jobs
 
-- `install-when` (direct-answer): Defines installation as a new door for the opening you have, led by Marcie Spitzer’s completed job and cleanup, and sends keep-the-door jobs to repair.
+- `install-when` (direct-answer): Defines installation as a new door for the opening you have, led by Marcie Spitzer’s completed job and cleanup, and sends keep-the-door jobs to repair. No slab jargon or Facebook-group discovery recital.
 
 - `install-selection` (selection): Explains Jenny/Will selection help without inventing a model catalog or listing prices.
 
 - `install-opening` (scope-fit): Covers a taller door sized to an opening the homeowner already reframed, without a carpentry claim.
 
-- `install-onsite` (finish-expectation): Sets paint-ready trim and a cleaned workspace as the finish standard for the install visit.
+- `install-onsite` (finish-expectation): Sets paint-ready trim and on-site cleanup as the finish standard from named completed installs, without evening-usability or staging advice.
 
 - `install-next` (next-step): Sends the homeowner to call with the opening size they already have, during listed weekday hours.
 
@@ -84,9 +99,10 @@ Decision: **accept**. Word count did not pass the pages.
 
 - Duplicate quotes: repair `none`, installation `none`.
 - Repetition: hours and weekday next-step appear once per service page.
-- Unsupported claims: no 24/7, weekend dispatch, same-day SLA, warranty term, framing/carpentry, or pricing guarantee.
+- Unsupported claims: no 24/7, weekend dispatch, same-day SLA, warranty term, framing/carpentry, or pricing guarantee. Forbidden overclaim phrases: none.
 - Evidence fidelity: displayed quotations are contiguous sealed-review text.
-- Useful-body word counts: Repair **835**, Installation **680** (diagnostic only).
+- Useful-body word counts: Repair **817**, Installation **574** (diagnostic only).
+- Role: writer self-check only. Independent Architect QA owns accept/reject.
 
 ## Review / evidence pointer ledger
 
@@ -157,7 +173,7 @@ Header CTA: Call (417) 366-7360 → tel:+14173667360
 SEO title: 360 Garage Door and More — Springfield, MO Garage Door Work
 Meta description: Springfield garage door repair and installation from 360 Garage Door and More. Call (417) 366-7360, Monday–Friday 8 AM–5 PM.
 
-# Springfield garage door work from a shop with named people on the jobs
+# Springfield garage door work backed by completed jobs
 
 360 Garage Door and More is a local Springfield shop. Jenny answers the phone. Will does the on-site work.
 
@@ -205,7 +221,7 @@ The door you already have is the job. If it sags in the opening, sticks on the w
 
 ### When the door you have is the problem
 
-Call for repair when you intend to keep the door that is already in the opening. The clearest completed example is an old, oversized door that had started to sag with age. Will explained what was wrong, what would actually fix it, and what the work would cost before he started. That is the decision this page is for: get the opening working again, not shop a new slab.
+Call for repair when you intend to keep the door that is already in the opening. The clearest completed example is an old, oversized door that had started to sag with age. Will explained what was wrong, what would actually fix it, and what the work would cost before he started. That is the decision this page is for: get the opening working again, not shop a new door.
 
 If the door is off its usual travel, opening on one side only, or refusing to lift, say that when you call. Homeowners also come in after something has gone wrong in the garage itself — an animal getting into the wiring, a door that suddenly will not move — and need both doors traveling again. The point is the same. The door stays. The hardware that failed gets diagnosed on site.
 
@@ -234,14 +250,12 @@ That same visit shape shows up when the door simply needs to open and close cons
 
 When the needed part is already on the truck, the repair can finish in that visit. One homeowner’s recommendations were about a door that would stay stable and safe, and Will already had what he needed with him. On a routine maintenance stop, he has also spotted a couple of areas that would help the door run, explained the recommendation with pricing, and had the materials on hand.
 
-If a part is not on the truck, Jenny schedules the follow-up so the work can finish when the part arrives.
-
 > His recommendations were mindful to ensure that our garage was not only working properly, but that it was stabilized and safe. Will had everything he needed to complete our repair on his truck, so it was quick and efficient.
 > — Kelsie Bates
 
 ### A Springfield shop with named people
 
-Homeowners keep naming the same two people. Jenny handles the call, the text, and the schedule. Will does the on-site work; a spring install also names Blake on the job with him. Callers come back because this is a local Springfield business, not a chain, and because the person who diagnosed the door is the person who repaired it.
+Homeowners keep naming the same two people. Jenny handles the call, the text, and the schedule. Will does the on-site work; a spring install also names Blake on the job with him. One completed job names Will for the diagnosis and the repair, and Jenny for the customer-service follow-up. Another names the company as a local Springfield business, not a chain.
 
 The shop address is 2035 W Mt Vernon St. If you already know you need a new door rather than a repair, use the installation page. This page stays with the door you have.
 
@@ -260,9 +274,9 @@ This page is for a new door, or more than one, fitted to the opening you already
 
 ### When you need a new door, not a repair
 
-Choose installation when the slab is done, the opening needs a different door, or you are putting doors on a house that does not have the ones you want. The straightforward completed example is new garage doors — more than one on the same visit — installed, looking the way they should, with the installer keeping the site picked up while he worked.
+Choose installation when you need a new garage door for the opening you have, not a repair of the door already hanging. The straightforward completed example is new garage doors — more than one on the same visit — installed, looking the way they should, with the installer keeping the site picked up while he worked.
 
-If the door you have still belongs in that opening and just will not travel, start on the repair page instead. This page stays with a new door in the opening you have. Households that found the shop through a local Facebook group describe the same end state: a completed new door in the opening, not a repair patch on the old one.
+If the door you have still belongs in that opening and just will not travel, start on the repair page instead. This page stays with a new door in the opening you have.
 
 > We got our new garage doors installed yesterday and they look amazing!  Very professional and the gentleman that did the installation was very polite and kept things picked up while he worked.
 > — Marcie Spitzer
@@ -287,9 +301,7 @@ If your opening is taller, shorter, or simply not a standard size, the useful ne
 
 ### How the install visit is left
 
-On a considered purchase, the last hour of the visit matters as much as the first. One household was going to paint, so the technician left the trim loose for that work. The door was in, the site was usable, and the finish work they still planned to do was not blocked.
-
-Ask how the opening will be left at the end of the day: debris, trim, whether the door is ready to paint, and whether you can use the garage that evening. Cleanup during the install shows up in completed jobs, not as a separate add-on. If you are replacing two doors, ask whether both openings are finished in the same visit or staged.
+On a considered purchase, the last hour of the visit matters as much as the first. One household was going to paint, so the technician left the trim loose for that work. Cleanup during the install shows up in completed jobs, not as a separate add-on.
 
 > We are painting the door and the technician left the trim loose for the perfect application for paint.
 > — Matthew Smith
@@ -339,9 +351,9 @@ Words-only canary. No website deployment is authorized from this package.
 
 This is an internal Writer 3 artifact. It is not a public page and must not be linked from header, footer, or business CTAs.
 
-Public topology is exactly four routes in reading order: Home `/`, Garage Door Repair `/garage-door-repair`, Garage Door Installation `/garage-door-installation`, and Contact `/contact`. Writer 1 authored a new pair of service pages from the sealed 360 prescription and the existing 47 written reviews. The rejected padded copy lineage (`sha256:165d310ae1e30225b6278cc0fbde7d2cab23a60f186157c59734257519c01f89`) was not restored. Production validation still rejects the quarantined remote artifact because `reviewEvidence` carried word-bearing `reviewer` and `excerpt` keys. Factory pointer-ledger normalization removed those 62 duplicated keys, preserved dedicated copy, and left the quarantined source bytes unapproved.
+Public topology is exactly four routes in reading order: Home `/`, Garage Door Repair `/garage-door-repair`, Garage Door Installation `/garage-door-installation`, and Contact `/contact`. Writer 1 authored a new pair of service pages from the sealed 360 prescription and the existing 47 written reviews, then applied a copy-only claim correction on the same lineage. The rejected padded copy lineage (`sha256:165d310ae1e30225b6278cc0fbde7d2cab23a60f186157c59734257519c01f89`) was not restored. Production validation still rejects the quarantined remote artifact because `reviewEvidence` carried word-bearing `reviewer` and `excerpt` keys. Factory pointer-ledger normalization removed those 62 duplicated keys, preserved dedicated copy, and left the quarantined source bytes unapproved.
 
-The former hard 800-word floor is revoked. Architect QA accepted the corrected Writer 1 pages because each section has a distinct homeowner job, related reviews are synthesized, each quotation appears once, public copy reads like local-service writing, and unsupported speed, warranty, pricing, and carpentry claims stay out. Useful-body word counts are diagnostic evidence only and are not the accept reason. Writer 2 stayed blocked until that fresh decision, then authored Home, Contact, header, and footer using the same NAP, hours, and named people (Jenny / Will) without new vendor calls. Writer 3 records the fold: spring replacement, maintenance, seals, tracks, diagnostics, and related repair-family work stay on `/garage-door-repair`; opener and keypad work stay supporting evidence and do not receive public routes. Whole-site QA checks continuity, evidence fidelity, voice, CTA flow, and route completeness. Josh alone approves Human Gate 2 and any later merge. No deployment occurred.
+The former hard 800-word floor is revoked. Word counts are diagnostic only. This head is returned as waiting-for-architect: Writer 1 is not Architect-accepted, Writer 2 is not released, and Human Gate 2 is not opened. The claim-correction pass removed Jenny parts-arrival process language, causal local/not-a-chain and always-same-person generalizations, installation slab jargon, Facebook-group discovery recital, and evidence-free evening-usability/staging advice, and revised the Home H1 to the sealed completed-jobs promise. Writer 2 Home, Contact, header, and footer were reconciled to that corrected Writer 1 copy using the same NAP, hours, and named people (Jenny / Will) without new vendor calls. Writer 3 records the fold: spring replacement, maintenance, seals, tracks, diagnostics, and related repair-family work stay on `/garage-door-repair`; opener and keypad work stay supporting evidence and do not receive public routes. Independent Architect QA owns accept/reject. Josh alone approves Human Gate 2 and any later merge. No deployment occurred.
 
 ### Why these four pages
 
@@ -359,6 +371,6 @@ Each service-page section must add a distinct homeowner decision, scope fact, pr
 
 No 24/7, weekend on-site, holiday dispatch, same-day SLA, one-hour arrival, or guaranteed rating. Hours remain Monday–Friday 8 AM–5 PM. Retrieval count 47 and retrieval date 2026-08-23 stay in this internal artifact only.
 
-State: awaiting-human-gate-2
+State: waiting-for-architect
 
-Do you approve these website words for the coded demo?
+Independent Architect review is required. This package is not awaiting Human Gate 2 and is not a merge or deployment authorization.

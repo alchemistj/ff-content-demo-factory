@@ -3,10 +3,10 @@
   "status": "writer1-copy-authored",
   "writer2Blocked": true,
   "rawRejectedLineageRestored": false,
-  "renderedWordsDigest": "sha256:fed5a3f41c317ff64d3a8a8e82c1114af68e53a1a7f8378d55a31e66ce7d2b00",
+  "renderedWordsDigest": "sha256:3edce1acff28a00b3f0064664f8b1b4d2beab1a0a9fda5f92108442ce4d1460e",
   "rejectedRenderedWordsDigest": "sha256:165d310ae1e30225b6278cc0fbde7d2cab23a60f186157c59734257519c01f89",
-  "repairUsefulBodyWords": 835,
-  "installationUsefulBodyWords": 680,
+  "repairUsefulBodyWords": 817,
+  "installationUsefulBodyWords": 574,
   "quotedReviewIds": {
     "repair": [
       "Ci9DQUlRQUNvZENodHljRjlvT201TVdWZGZSak00ZUhSQ2VVdHNYMWxFYTBFdE9XYxAB",
@@ -22,6 +22,7 @@
     ]
   },
   "threadUrl": "https://cursor.com/agents/bc-2486f645-c31c-4532-8145-fbe3af1d45a8",
+  "claimCorrectionThreadUrl": "https://cursor.com/agents/bc-85fdb5d1-0b22-4892-8943-c9e597607491",
   "model": "cursor-grok-4.6-high",
   "fast": false,
   "effort": "high",

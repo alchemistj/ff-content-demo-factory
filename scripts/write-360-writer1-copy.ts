@@ -108,7 +108,7 @@ const repair = {
     {
       id: "repair-when-to-call",
       heading: "When the door you have is the problem",
-      body: "Call for repair when you intend to keep the door that is already in the opening. The clearest completed example is an old, oversized door that had started to sag with age. Will explained what was wrong, what would actually fix it, and what the work would cost before he started. That is the decision this page is for: get the opening working again, not shop a new slab.\n\nIf the door is off its usual travel, opening on one side only, or refusing to lift, say that when you call. Homeowners also come in after something has gone wrong in the garage itself — an animal getting into the wiring, a door that suddenly will not move — and need both doors traveling again. The point is the same. The door stays. The hardware that failed gets diagnosed on site.",
+      body: "Call for repair when you intend to keep the door that is already in the opening. The clearest completed example is an old, oversized door that had started to sag with age. Will explained what was wrong, what would actually fix it, and what the work would cost before he started. That is the decision this page is for: get the opening working again, not shop a new door.\n\nIf the door is off its usual travel, opening on one side only, or refusing to lift, say that when you call. Homeowners also come in after something has gone wrong in the garage itself — an animal getting into the wiring, a door that suddenly will not move — and need both doors traveling again. The point is the same. The door stays. The hardware that failed gets diagnosed on site.",
     },
     {
       id: "repair-whats-in-scope",
@@ -123,12 +123,12 @@ const repair = {
     {
       id: "repair-equipped",
       heading: "What they can finish while they are there",
-          body: "When the needed part is already on the truck, the repair can finish in that visit. One homeowner’s recommendations were about a door that would stay stable and safe, and Will already had what he needed with him. On a routine maintenance stop, he has also spotted a couple of areas that would help the door run, explained the recommendation with pricing, and had the materials on hand.\n\nIf a part is not on the truck, Jenny schedules the follow-up so the work can finish when the part arrives.",
+      body: "When the needed part is already on the truck, the repair can finish in that visit. One homeowner’s recommendations were about a door that would stay stable and safe, and Will already had what he needed with him. On a routine maintenance stop, he has also spotted a couple of areas that would help the door run, explained the recommendation with pricing, and had the materials on hand.",
     },
     {
       id: "repair-local-crew",
       heading: "A Springfield shop with named people",
-      body: "Homeowners keep naming the same two people. Jenny handles the call, the text, and the schedule. Will does the on-site work; a spring install also names Blake on the job with him. Callers come back because this is a local Springfield business, not a chain, and because the person who diagnosed the door is the person who repaired it.\n\nThe shop address is 2035 W Mt Vernon St. If you already know you need a new door rather than a repair, use the installation page. This page stays with the door you have.",
+      body: "Homeowners keep naming the same two people. Jenny handles the call, the text, and the schedule. Will does the on-site work; a spring install also names Blake on the job with him. One completed job names Will for the diagnosis and the repair, and Jenny for the customer-service follow-up. Another names the company as a local Springfield business, not a chain.\n\nThe shop address is 2035 W Mt Vernon St. If you already know you need a new door rather than a repair, use the installation page. This page stays with the door you have.",
     },
     {
       id: "repair-next",
@@ -172,7 +172,7 @@ const install = {
     {
       id: "install-when",
       heading: "When you need a new door, not a repair",
-      body: "Choose installation when the slab is done, the opening needs a different door, or you are putting doors on a house that does not have the ones you want. The straightforward completed example is new garage doors — more than one on the same visit — installed, looking the way they should, with the installer keeping the site picked up while he worked.\n\nIf the door you have still belongs in that opening and just will not travel, start on the repair page instead. This page stays with a new door in the opening you have. Households that found the shop through a local Facebook group describe the same end state: a completed new door in the opening, not a repair patch on the old one.",
+      body: "Choose installation when you need a new garage door for the opening you have, not a repair of the door already hanging. The straightforward completed example is new garage doors — more than one on the same visit — installed, looking the way they should, with the installer keeping the site picked up while he worked.\n\nIf the door you have still belongs in that opening and just will not travel, start on the repair page instead. This page stays with a new door in the opening you have.",
     },
     {
       id: "install-selection",
@@ -182,12 +182,12 @@ const install = {
     {
       id: "install-opening",
       heading: "Fitted to the opening you have",
-          body: "Not every opening is a catalog size. One completed job replaced a 1980 7-foot door with a 9-foot-6 door so a camper van would clear. The opening had already been reframed. Will and Jenny came out to size the door to that opening; they did not build the framing.\n\nIf your opening is taller, shorter, or simply not a standard size, the useful next step is that same on-site size conversation before anyone orders a door.",
+      body: "Not every opening is a catalog size. One completed job replaced a 1980 7-foot door with a 9-foot-6 door so a camper van would clear. The opening had already been reframed. Will and Jenny came out to size the door to that opening; they did not build the framing.\n\nIf your opening is taller, shorter, or simply not a standard size, the useful next step is that same on-site size conversation before anyone orders a door.",
     },
     {
       id: "install-onsite",
       heading: "How the install visit is left",
-      body: "On a considered purchase, the last hour of the visit matters as much as the first. One household was going to paint, so the technician left the trim loose for that work. The door was in, the site was usable, and the finish work they still planned to do was not blocked.\n\nAsk how the opening will be left at the end of the day: debris, trim, whether the door is ready to paint, and whether you can use the garage that evening. Cleanup during the install shows up in completed jobs, not as a separate add-on. If you are replacing two doors, ask whether both openings are finished in the same visit or staged.",
+      body: "On a considered purchase, the last hour of the visit matters as much as the first. One household was going to paint, so the technician left the trim loose for that work. Cleanup during the install shows up in completed jobs, not as a separate add-on.",
     },
     {
       id: "install-next",
@@ -313,6 +313,7 @@ const summary = {
     installation: [...installQuoted],
   },
   threadUrl: "https://cursor.com/agents/bc-2486f645-c31c-4532-8145-fbe3af1d45a8",
+  claimCorrectionThreadUrl: "https://cursor.com/agents/bc-85fdb5d1-0b22-4892-8943-c9e597607491",
   model: "cursor-grok-4.6-high",
   fast: false,
   effort: "high",

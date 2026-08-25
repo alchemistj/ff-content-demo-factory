@@ -1,21 +1,31 @@
 {
   "stage": "writer1",
-  "decision": "accept",
-  "writer2Released": true,
+  "decision": "waiting-for-architect",
+  "writer2Released": false,
   "rawArtifactApproved": false,
-  "normalizedOutputApprovedForWriter2": true,
+  "normalizedOutputApprovedForWriter2": false,
   "wordCountIsDiagnosticOnly": true,
   "formerHardFloorRevoked": "at least 800 words each",
+  "independentArchitectReviewRequired": true,
+  "changedClaimReasons": [
+    "Repair: removed Jenny parts-arrival scheduling. Sealed evidence supports Jenny customer service/follow-up generally, not a parts-on-the-next-visit process.",
+    "Repair: replaced causal return-because-local/not-a-chain and always-same-person-diagnoses-and-repairs language with named completed-job facts only.",
+    "Installation: replaced 'when the slab is done' with natural homeowner language about needing a new door for the opening you have.",
+    "Installation: removed the Facebook-group discovery recital; it repeated how households found the shop rather than helping the purchase decision.",
+    "Installation: removed evidence-free evening-usability and two-opening staging advice. Kept paint-ready trim and on-site cleanup from named completed installs.",
+    "Home: replaced the awkward H1 with the sealed completed-jobs promise, without availability, speed, warranty, or pricing claims."
+  ],
   "findings": [
     "Strict validator still rejects the quarantined bytes: only REVIEW_EVIDENCE_CLAIM_TEXT_DUPLICATE, first path /pages/0/reviewEvidence/0/reviewer.",
     "normalizeWriter1PointerLedger removed 62 duplicated reviewer/excerpt keys and preserved semantic copy, identity, and provenance. Raw artifact remains unapproved.",
-    "Repair useful-body word count 835 (diagnostic only; not an accept reason). Installation useful-body word count 680 (diagnostic only; not an accept reason). Depth follows the sealed written reviews; it was not padded to a number.",
+    "Repair useful-body word count 817 (diagnostic only; not an accept reason). Installation useful-body word count 574 (diagnostic only; not an accept reason). Installation sits below the 650 guidance because the sealed install set is six completed-new-door reviews and the Architect required removal of Facebook discovery recital plus generic evening/staging advice. That gap was not filled with generic copy.",
     "Duplicate-quote scan: each displayed quotation appears once; none are rendered as both inline copy and an adjacent blockquote.",
     "Repetition scan: shop hours and weekend/weekday timing are handled once on the next-step section rather than restated through the page.",
-    "Unsupported-claim scan: no 24/7, weekend dispatch, same-day SLA, warranty term, framing/carpentry, or pricing guarantee is asserted as policy.",
+    "Unsupported-claim scan: no 24/7, weekend dispatch, same-day SLA, warranty term, framing/carpentry, or pricing guarantee is asserted as policy. Jenny parts-arrival process, causal local/not-a-chain returns, always-same-person diagnosis/repair, slab jargon, Facebook-group discovery recital, and evening-usability/staging advice were removed or narrowed.",
     "Quote fidelity: displayed quotations are contiguous sealed-review text with the original reviewer attribution.",
     "Public copy reads as local-service writing. Internal evidence-defense phrasing was removed from customer-facing pages.",
-    "Word count alone did not pass either page. The former hard 800-word floor is revoked."
+    "Word count alone did not pass either page. The former hard 800-word floor is revoked.",
+    "This worker does not accept Writer 1. The package is returned waiting-for-architect for independent review."
   ],
   "sectionJobs": {
     "/garage-door-repair": [
@@ -37,12 +47,12 @@
       {
         "section": "repair-equipped",
         "job": "visit-completion",
-        "distinctPurpose": "Sets the expectation that work can finish in the visit when the part is on the truck, and that Jenny schedules a follow-up when it is not."
+        "distinctPurpose": "Sets the expectation that work can finish in the visit when the part is already on the truck. Does not invent a Jenny parts-arrival follow-up process."
       },
       {
         "section": "repair-local-crew",
         "job": "differentiator",
-        "distinctPurpose": "Names the Springfield shop, Jenny on the phone, and Will on site as completed-job proof rather than a warranty slogan."
+        "distinctPurpose": "Names the Springfield shop, Jenny on the phone, and Will on site from completed jobs, without causal 'callers return because' or always-same-person generalizations."
       },
       {
         "section": "repair-next",
@@ -54,7 +64,7 @@
       {
         "section": "install-when",
         "job": "direct-answer",
-        "distinctPurpose": "Defines installation as a new door for the opening you have, led by Marcie Spitzer\u2019s completed job and cleanup, and sends keep-the-door jobs to repair."
+        "distinctPurpose": "Defines installation as a new door for the opening you have, led by Marcie Spitzer\u2019s completed job and cleanup, and sends keep-the-door jobs to repair. No slab jargon or Facebook-group discovery recital."
       },
       {
         "section": "install-selection",
@@ -69,7 +79,7 @@
       {
         "section": "install-onsite",
         "job": "finish-expectation",
-        "distinctPurpose": "Sets paint-ready trim and a cleaned workspace as the finish standard for the install visit."
+        "distinctPurpose": "Sets paint-ready trim and on-site cleanup as the finish standard from named completed installs, without evening-usability or staging advice."
       },
       {
         "section": "install-next",
@@ -84,12 +94,14 @@
       "installation": []
     },
     "auditLanguage": [],
-    "unsupportedClaims": "pass",
-    "evidenceFidelity": "pass",
+    "forbiddenPublicPhrases": [],
+    "unsupportedClaims": "writer-self-check-pass",
+    "evidenceFidelity": "writer-self-check-pass",
     "usefulBodyWordCounts": {
-      "repair": 835,
-      "installation": 680,
+      "repair": 817,
+      "installation": 574,
       "role": "diagnostic-only"
-    }
+    },
+    "role": "diagnostic-self-check-not-architect-accept"
   }
 }

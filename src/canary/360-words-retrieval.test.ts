@@ -432,11 +432,45 @@ test("fresh committed Writer1 copy validates, is not the rejected lineage, and k
 
 test("committed live canary state cannot claim Writer2 approval before Architect QA", () => {
   const qaPath = join(process.cwd(), "canary/runtime/architect-qa-writer1.json");
-  const hasQualityQa = existsSync(qaPath) && (() => {
-    const qa = JSON.parse(readFileSync(qaPath, "utf8")) as Record<string, any>;
-    return qa.decision === "accept" && qa.wordCountIsDiagnosticOnly === true && qa.rawArtifactApproved === false && qa.formerHardFloorRevoked;
-  })();
+  const qa = existsSync(qaPath) ? JSON.parse(readFileSync(qaPath, "utf8")) as Record<string, any> : null;
+  const waitingForArchitect = Boolean(
+    qa &&
+    qa.decision === "waiting-for-architect" &&
+    qa.wordCountIsDiagnosticOnly === true &&
+    qa.rawArtifactApproved === false &&
+    qa.writer2Released === false &&
+    qa.formerHardFloorRevoked
+  );
+  const hasQualityQa = Boolean(
+    qa &&
+    qa.decision === "accept" &&
+    qa.wordCountIsDiagnosticOnly === true &&
+    qa.rawArtifactApproved === false &&
+    qa.formerHardFloorRevoked
+  );
   const statePath = join(process.cwd(), "canary/runtime/state.json");
+  if (waitingForArchitect) {
+    assert.equal(qa.decision, "waiting-for-architect");
+    assert.notEqual(qa.decision, "accept");
+    assert.equal(qa.writer2Released, false);
+    assert.equal(qa.rawArtifactApproved, false);
+    const state = existsSync(statePath) ? JSON.parse(readFileSync(statePath, "utf8")) as Record<string, any> : {};
+    assert.equal(state.status, "waiting-for-architect");
+    assert.notEqual(state.status, "awaiting-human-gate-2");
+    assert.notEqual(state.writer2Blocked, false);
+    assert.notEqual(state.adaptedOutputApproved, true);
+    assert.equal(state.mergeOccurred, false);
+    assert.equal(state.deploymentOccurred, false);
+    assert.equal(state.rawApproved, false);
+    for (const output of ["writer1-output.json", "writer2-output.json", "writer3-output.json", "human-gate-2.md"]) {
+      assert.equal(existsSync(join(process.cwd(), "canary/outputs", output)), true, `waiting-for-architect package requires ${output}`);
+    }
+    const md = readFileSync(join(process.cwd(), "canary/outputs/human-gate-2.md"), "utf8");
+    assert.match(md, /waiting-for-architect/u);
+    assert.doesNotMatch(md, /Architect QA Writer 1: \*\*accept\*\*/u);
+    assert.doesNotMatch(md, /^State: awaiting-human-gate-2$/mu);
+    return;
+  }
   if (existsSync(statePath) && !hasQualityQa) {
     const state = JSON.parse(readFileSync(statePath, "utf8")) as Record<string, any>;
     assert.notEqual(state.writer2Blocked, false);
@@ -446,9 +480,9 @@ test("committed live canary state cannot claim Writer2 approval before Architect
     assert.equal(state.nextStage, null);
   }
   if (hasQualityQa) {
-    const qa = JSON.parse(readFileSync(qaPath, "utf8")) as Record<string, any>;
-    assert.equal(qa.rawArtifactApproved, false);
-    assert.doesNotMatch(JSON.stringify(qa.findings), />= 800/u);
+    const accepted = JSON.parse(readFileSync(qaPath, "utf8")) as Record<string, any>;
+    assert.equal(accepted.rawArtifactApproved, false);
+    assert.doesNotMatch(JSON.stringify(accepted.findings), />= 800/u);
     const state = existsSync(statePath) ? JSON.parse(readFileSync(statePath, "utf8")) as Record<string, any> : {};
     assert.equal(state.mergeOccurred, false);
     assert.equal(state.deploymentOccurred, false);

@@ -1,13 +1,15 @@
 {
   "stage": "writer2",
-  "decision": "accept",
-  "writer3Released": true,
+  "decision": "waiting-for-architect",
+  "writer3Released": false,
+  "independentArchitectReviewRequired": true,
   "findings": [
-    "Home `/` routes to the two corrected service pages and Contact without adding extra public services.",
+    "Home `/` routes to the two claim-corrected service pages and Contact without adding extra public services.",
+    "Home H1 now uses the sealed completed-jobs promise instead of the awkward named-people phrasing.",
     "Contact is lean: phone, address, Monday\u2013Friday 8\u20135, closed Saturday and Sunday; no service SLAs.",
     "Header and footer resolve Home, Repair, Installation, and Contact. Strategy is not in navigation.",
     "Cameron Spitzer lead quote is contiguous source text and is displayed once.",
     "No new vendor calls and no new review inventory.",
-    "Writer 2 was withheld until fresh Writer 1 QA accepted the rewritten service pages."
+    "Writer 2 copy is reconciled for independent Architect review. Writer 2 is not released and this is not an Architect accept."
   ]
 }

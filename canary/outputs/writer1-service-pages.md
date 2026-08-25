@@ -4,9 +4,9 @@ Fresh Writer 1 production copy. This checkpoint is the two prescribed service pa
 
 ## Diagnostic word counts
 
-- Garage Door Repair useful-body words: **835** (guidance 650–900+; not an acceptance reason)
-- Garage Door Installation useful-body words: **680** (guidance 650–900+; not an acceptance reason)
-- Rendered-words digest: `sha256:fed5a3f41c317ff64d3a8a8e82c1114af68e53a1a7f8378d55a31e66ce7d2b00`
+- Garage Door Repair useful-body words: **817** (guidance 650–900+; not an acceptance reason)
+- Garage Door Installation useful-body words: **574** (guidance 650–900+; not an acceptance reason)
+- Rendered-words digest: `sha256:3edce1acff28a00b3f0064664f8b1b4d2beab1a0a9fda5f92108442ce4d1460e`
 - Rejected lineage digest (must not match): `sha256:165d310ae1e30225b6278cc0fbde7d2cab23a60f186157c59734257519c01f89`
 - Writer: Grok 4.6, high effort, fast off, this Cursor thread
 - No merge. No deploy. No vendor calls.
@@ -24,7 +24,7 @@ The door you already have is the job. If it sags in the opening, sticks on the w
 
 ### When the door you have is the problem
 
-Call for repair when you intend to keep the door that is already in the opening. The clearest completed example is an old, oversized door that had started to sag with age. Will explained what was wrong, what would actually fix it, and what the work would cost before he started. That is the decision this page is for: get the opening working again, not shop a new slab.
+Call for repair when you intend to keep the door that is already in the opening. The clearest completed example is an old, oversized door that had started to sag with age. Will explained what was wrong, what would actually fix it, and what the work would cost before he started. That is the decision this page is for: get the opening working again, not shop a new door.
 
 If the door is off its usual travel, opening on one side only, or refusing to lift, say that when you call. Homeowners also come in after something has gone wrong in the garage itself — an animal getting into the wiring, a door that suddenly will not move — and need both doors traveling again. The point is the same. The door stays. The hardware that failed gets diagnosed on site.
 
@@ -53,14 +53,12 @@ That same visit shape shows up when the door simply needs to open and close cons
 
 When the needed part is already on the truck, the repair can finish in that visit. One homeowner’s recommendations were about a door that would stay stable and safe, and Will already had what he needed with him. On a routine maintenance stop, he has also spotted a couple of areas that would help the door run, explained the recommendation with pricing, and had the materials on hand.
 
-If a part is not on the truck, Jenny schedules the follow-up so the work can finish when the part arrives.
-
 > His recommendations were mindful to ensure that our garage was not only working properly, but that it was stabilized and safe. Will had everything he needed to complete our repair on his truck, so it was quick and efficient.
 > — Kelsie Bates
 
 ### A Springfield shop with named people
 
-Homeowners keep naming the same two people. Jenny handles the call, the text, and the schedule. Will does the on-site work; a spring install also names Blake on the job with him. Callers come back because this is a local Springfield business, not a chain, and because the person who diagnosed the door is the person who repaired it.
+Homeowners keep naming the same two people. Jenny handles the call, the text, and the schedule. Will does the on-site work; a spring install also names Blake on the job with him. One completed job names Will for the diagnosis and the repair, and Jenny for the customer-service follow-up. Another names the company as a local Springfield business, not a chain.
 
 The shop address is 2035 W Mt Vernon St. If you already know you need a new door rather than a repair, use the installation page. This page stays with the door you have.
 
@@ -79,9 +77,9 @@ This page is for a new door, or more than one, fitted to the opening you already
 
 ### When you need a new door, not a repair
 
-Choose installation when the slab is done, the opening needs a different door, or you are putting doors on a house that does not have the ones you want. The straightforward completed example is new garage doors — more than one on the same visit — installed, looking the way they should, with the installer keeping the site picked up while he worked.
+Choose installation when you need a new garage door for the opening you have, not a repair of the door already hanging. The straightforward completed example is new garage doors — more than one on the same visit — installed, looking the way they should, with the installer keeping the site picked up while he worked.
 
-If the door you have still belongs in that opening and just will not travel, start on the repair page instead. This page stays with a new door in the opening you have. Households that found the shop through a local Facebook group describe the same end state: a completed new door in the opening, not a repair patch on the old one.
+If the door you have still belongs in that opening and just will not travel, start on the repair page instead. This page stays with a new door in the opening you have.
 
 > We got our new garage doors installed yesterday and they look amazing!  Very professional and the gentleman that did the installation was very polite and kept things picked up while he worked.
 > — Marcie Spitzer
@@ -106,9 +104,7 @@ If your opening is taller, shorter, or simply not a standard size, the useful ne
 
 ### How the install visit is left
 
-On a considered purchase, the last hour of the visit matters as much as the first. One household was going to paint, so the technician left the trim loose for that work. The door was in, the site was usable, and the finish work they still planned to do was not blocked.
-
-Ask how the opening will be left at the end of the day: debris, trim, whether the door is ready to paint, and whether you can use the garage that evening. Cleanup during the install shows up in completed jobs, not as a separate add-on. If you are replacing two doors, ask whether both openings are finished in the same visit or staged.
+On a considered purchase, the last hour of the visit matters as much as the first. One household was going to paint, so the technician left the trim loose for that work. Cleanup during the install shows up in completed jobs, not as a separate add-on.
 
 > We are painting the door and the technician left the trim loose for the perfect application for paint.
 > — Matthew Smith

@@ -31,8 +31,28 @@ HARD_800 = re.compile(r"(>=\s*800|at least 800|exceed(?:s|ed|ing)? 800)", re.I)
 REJECTED_RENDERED_WORDS_DIGEST = "sha256:165d310ae1e30225b6278cc0fbde7d2cab23a60f186157c59734257519c01f89"
 CAMERON_ID = "Ci9DQUlRQUNvZENodHljRjlvT2xWdlZGQk9hMjFOUlhaVk5rczFVR2RKTlVKWlVGRRAB"
 CAMERON_HOME_QUOTE = "They replaced my doors and openers with quality materials at a lower cost than the competitors.  Then,  they came back a couple months later just to check and make sure everything was working as it is supposed to."
-THIS_THREAD = "https://cursor.com/agents/bc-2486f645-c31c-4532-8145-fbe3af1d45a8"
-REVIEWED_HEAD = "778fbc8742038f6c4e4d88ca241bf2a62d8c0c6b"
+FRESH_COPY_THREAD = "https://cursor.com/agents/bc-2486f645-c31c-4532-8145-fbe3af1d45a8"
+THIS_THREAD = "https://cursor.com/agents/bc-85fdb5d1-0b22-4892-8943-c9e597607491"
+REVIEWED_HEAD = "cbe66a21f0b99c27fb4eed946267e378b5d11312"
+WAITING_STATE = "waiting-for-architect"
+FORBIDDEN_PUBLIC_PHRASES = (
+    "if a part is not on the truck, jenny schedules",
+    "callers come back because",
+    "the person who diagnosed the door is the person who repaired",
+    "when the slab is done",
+    "facebook group",
+    "use the garage that evening",
+    "both openings are finished in the same visit or staged",
+    "from a shop with named people on the jobs",
+)
+CHANGED_CLAIM_REASONS = [
+    "Repair: removed Jenny parts-arrival scheduling. Sealed evidence supports Jenny customer service/follow-up generally, not a parts-on-the-next-visit process.",
+    "Repair: replaced causal return-because-local/not-a-chain and always-same-person-diagnoses-and-repairs language with named completed-job facts only.",
+    "Installation: replaced 'when the slab is done' with natural homeowner language about needing a new door for the opening you have.",
+    "Installation: removed the Facebook-group discovery recital; it repeated how households found the shop rather than helping the purchase decision.",
+    "Installation: removed evidence-free evening-usability and two-opening staging advice. Kept paint-ready trim and on-site cleanup from named completed installs.",
+    "Home: replaced the awkward H1 with the sealed completed-jobs promise, without availability, speed, warranty, or pricing claims.",
+]
 
 
 def words(text: str) -> int:
@@ -161,7 +181,7 @@ homepage = {
     "title": "360 Garage Door and More — Springfield, MO Garage Door Work",
     "seoTitle": "360 Garage Door and More — Springfield, MO Garage Door Work",
     "metaDescription": "Springfield garage door repair and installation from 360 Garage Door and More. Call (417) 366-7360, Monday–Friday 8 AM–5 PM.",
-    "h1": "Springfield garage door work from a shop with named people on the jobs",
+    "h1": "Springfield garage door work backed by completed jobs",
     "heroSubhead": "360 Garage Door and More is a local Springfield shop. Jenny answers the phone. Will does the on-site work.",
     "body": "If the door you already have is sagging, sticking, or will not open, start with repair. If you need a new door fitted to the opening you have, start with installation.",
     "sections": [
@@ -246,7 +266,7 @@ strategy = {
     "pageType": "strategy-overview",
     "internal": True,
     "title": "Strategy Overview — 360 Garage Door and More words canary",
-    "body": "This is an internal Writer 3 artifact. It is not a public page and must not be linked from header, footer, or business CTAs.\n\nPublic topology is exactly four routes in reading order: Home `/`, Garage Door Repair `/garage-door-repair`, Garage Door Installation `/garage-door-installation`, and Contact `/contact`. Writer 1 authored a new pair of service pages from the sealed 360 prescription and the existing 47 written reviews. The rejected padded copy lineage (`sha256:165d310ae1e30225b6278cc0fbde7d2cab23a60f186157c59734257519c01f89`) was not restored. Production validation still rejects the quarantined remote artifact because `reviewEvidence` carried word-bearing `reviewer` and `excerpt` keys. Factory pointer-ledger normalization removed those 62 duplicated keys, preserved dedicated copy, and left the quarantined source bytes unapproved.\n\nThe former hard 800-word floor is revoked. Architect QA accepted the corrected Writer 1 pages because each section has a distinct homeowner job, related reviews are synthesized, each quotation appears once, public copy reads like local-service writing, and unsupported speed, warranty, pricing, and carpentry claims stay out. Useful-body word counts are diagnostic evidence only and are not the accept reason. Writer 2 stayed blocked until that fresh decision, then authored Home, Contact, header, and footer using the same NAP, hours, and named people (Jenny / Will) without new vendor calls. Writer 3 records the fold: spring replacement, maintenance, seals, tracks, diagnostics, and related repair-family work stay on `/garage-door-repair`; opener and keypad work stay supporting evidence and do not receive public routes. Whole-site QA checks continuity, evidence fidelity, voice, CTA flow, and route completeness. Josh alone approves Human Gate 2 and any later merge. No deployment occurred.",
+    "body": "This is an internal Writer 3 artifact. It is not a public page and must not be linked from header, footer, or business CTAs.\n\nPublic topology is exactly four routes in reading order: Home `/`, Garage Door Repair `/garage-door-repair`, Garage Door Installation `/garage-door-installation`, and Contact `/contact`. Writer 1 authored a new pair of service pages from the sealed 360 prescription and the existing 47 written reviews, then applied a copy-only claim correction on the same lineage. The rejected padded copy lineage (`sha256:165d310ae1e30225b6278cc0fbde7d2cab23a60f186157c59734257519c01f89`) was not restored. Production validation still rejects the quarantined remote artifact because `reviewEvidence` carried word-bearing `reviewer` and `excerpt` keys. Factory pointer-ledger normalization removed those 62 duplicated keys, preserved dedicated copy, and left the quarantined source bytes unapproved.\n\nThe former hard 800-word floor is revoked. Word counts are diagnostic only. This head is returned as waiting-for-architect: Writer 1 is not Architect-accepted, Writer 2 is not released, and Human Gate 2 is not opened. The claim-correction pass removed Jenny parts-arrival process language, causal local/not-a-chain and always-same-person generalizations, installation slab jargon, Facebook-group discovery recital, and evidence-free evening-usability/staging advice, and revised the Home H1 to the sealed completed-jobs promise. Writer 2 Home, Contact, header, and footer were reconciled to that corrected Writer 1 copy using the same NAP, hours, and named people (Jenny / Will) without new vendor calls. Writer 3 records the fold: spring replacement, maintenance, seals, tracks, diagnostics, and related repair-family work stay on `/garage-door-repair`; opener and keypad work stay supporting evidence and do not receive public routes. Independent Architect QA owns accept/reject. Josh alone approves Human Gate 2 and any later merge. No deployment occurred.",
     "sections": [
         {
             "heading": "Why these four pages",
@@ -376,12 +396,18 @@ def scan_audit_language(text: str) -> list[str]:
     return [phrase for phrase in AUDIT_PHRASES if phrase in lower]
 
 
+def scan_forbidden_public_phrases(text: str) -> list[str]:
+    lower = text.lower()
+    return [phrase for phrase in FORBIDDEN_PUBLIC_PHRASES if phrase in lower]
+
+
 repair_words = words(useful_body_text(repair))
 install_words = words(useful_body_text(install))
 repair_dupes = scan_duplicate_quotes(repair)
 install_dupes = scan_duplicate_quotes(install)
 public_text = public_copy_text(homepage, repair, install, contact)
 audit_hits = scan_audit_language(public_text)
+forbidden_hits = scan_forbidden_public_phrases(public_text)
 if "exceed 800" in strategy["body"].lower() and "revoked" not in strategy["body"].lower():
     audit_hits.append("strategy still treats 800 as a pass")
 
@@ -389,15 +415,15 @@ repair_jobs = [
     {"section": "repair-when-to-call", "job": "direct-answer", "distinctPurpose": "Tells a homeowner when the door already in the opening is the job, using Chris Keaton’s sagging-door visit as the lead example."},
     {"section": "repair-whats-in-scope", "job": "confirmed-scope", "distinctPurpose": "Keeps springs, seals, tracks, rollers, and wiring on the parent repair page and uses one spring quote instead of reciting each related review."},
     {"section": "repair-visit", "job": "process", "distinctPurpose": "Explains diagnosis first, then a now-versus-later choice, so the homeowner knows what the visit is for before parts are swapped."},
-    {"section": "repair-equipped", "job": "visit-completion", "distinctPurpose": "Sets the expectation that work can finish in the visit when the part is on the truck, and that Jenny schedules a follow-up when it is not."},
-    {"section": "repair-local-crew", "job": "differentiator", "distinctPurpose": "Names the Springfield shop, Jenny on the phone, and Will on site as completed-job proof rather than a warranty slogan."},
+    {"section": "repair-equipped", "job": "visit-completion", "distinctPurpose": "Sets the expectation that work can finish in the visit when the part is already on the truck. Does not invent a Jenny parts-arrival follow-up process."},
+    {"section": "repair-local-crew", "job": "differentiator", "distinctPurpose": "Names the Springfield shop, Jenny on the phone, and Will on site from completed jobs, without causal 'callers return because' or always-same-person generalizations."},
     {"section": "repair-next", "job": "next-step", "distinctPurpose": "Handles hours and the weekday call once, without repeating timing caveats through the page."},
 ]
 install_jobs = [
-    {"section": "install-when", "job": "direct-answer", "distinctPurpose": "Defines installation as a new door for the opening you have, led by Marcie Spitzer’s completed job and cleanup, and sends keep-the-door jobs to repair."},
+    {"section": "install-when", "job": "direct-answer", "distinctPurpose": "Defines installation as a new door for the opening you have, led by Marcie Spitzer’s completed job and cleanup, and sends keep-the-door jobs to repair. No slab jargon or Facebook-group discovery recital."},
     {"section": "install-selection", "job": "selection", "distinctPurpose": "Explains Jenny/Will selection help without inventing a model catalog or listing prices."},
     {"section": "install-opening", "job": "scope-fit", "distinctPurpose": "Covers a taller door sized to an opening the homeowner already reframed, without a carpentry claim."},
-    {"section": "install-onsite", "job": "finish-expectation", "distinctPurpose": "Sets paint-ready trim and a cleaned workspace as the finish standard for the install visit."},
+    {"section": "install-onsite", "job": "finish-expectation", "distinctPurpose": "Sets paint-ready trim and on-site cleanup as the finish standard from named completed installs, without evening-usability or staging advice."},
     {"section": "install-next", "job": "next-step", "distinctPurpose": "Sends the homeowner to call with the opening size they already have, during listed weekday hours."},
 ]
 repair_ids = {section.get("id") for section in repair.get("sections") or []}
@@ -406,12 +432,15 @@ missing_jobs = [item["section"] for item in repair_jobs if item["section"] not i
 if missing_jobs:
     raise SystemExit(f"QA jobs do not match Writer1 sections: {missing_jobs}")
 
-accept_repair = not repair_dupes and repair_words >= 400
-accept_install = not install_dupes and install_words >= 400
-# 400 is a sanity floor against empty pages, not the revoked 800 pass criterion.
-quality_accept = accept_repair and accept_install and not audit_hits and not HARD_800.search(public_text)
-
-if not quality_accept:
+scans_clean = (
+    not repair_dupes
+    and not install_dupes
+    and not audit_hits
+    and not forbidden_hits
+    and not HARD_800.search(public_text)
+)
+# Scans are writer self-checks. They do not constitute Architect acceptance.
+if not scans_clean:
     raise SystemExit(
         json.dumps(
             {
@@ -420,7 +449,8 @@ if not quality_accept:
                 "repair_dupes": repair_dupes,
                 "install_dupes": install_dupes,
                 "audit_hits": audit_hits,
-                "quality_accept": quality_accept,
+                "forbidden_hits": forbidden_hits,
+                "scans_clean": scans_clean,
             },
             indent=2,
         )
@@ -428,52 +458,61 @@ if not quality_accept:
 
 qa1 = {
     "stage": "writer1",
-    "decision": "accept",
-    "writer2Released": True,
+    "decision": WAITING_STATE,
+    "writer2Released": False,
     "rawArtifactApproved": False,
-    "normalizedOutputApprovedForWriter2": True,
+    "normalizedOutputApprovedForWriter2": False,
     "wordCountIsDiagnosticOnly": True,
     "formerHardFloorRevoked": "at least 800 words each",
+    "independentArchitectReviewRequired": True,
+    "changedClaimReasons": CHANGED_CLAIM_REASONS,
     "findings": [
         "Strict validator still rejects the quarantined bytes: only REVIEW_EVIDENCE_CLAIM_TEXT_DUPLICATE, first path /pages/0/reviewEvidence/0/reviewer.",
         "normalizeWriter1PointerLedger removed 62 duplicated reviewer/excerpt keys and preserved semantic copy, identity, and provenance. Raw artifact remains unapproved.",
-        f"Repair useful-body word count {repair_words} (diagnostic only; not an accept reason). Installation useful-body word count {install_words} (diagnostic only; not an accept reason). Depth follows the sealed written reviews; it was not padded to a number.",
+        f"Repair useful-body word count {repair_words} (diagnostic only; not an accept reason). Installation useful-body word count {install_words} (diagnostic only; not an accept reason). Installation sits below the 650 guidance because the sealed install set is six completed-new-door reviews and the Architect required removal of Facebook discovery recital plus generic evening/staging advice. That gap was not filled with generic copy.",
         "Duplicate-quote scan: each displayed quotation appears once; none are rendered as both inline copy and an adjacent blockquote.",
         "Repetition scan: shop hours and weekend/weekday timing are handled once on the next-step section rather than restated through the page.",
-        "Unsupported-claim scan: no 24/7, weekend dispatch, same-day SLA, warranty term, framing/carpentry, or pricing guarantee is asserted as policy.",
+        "Unsupported-claim scan: no 24/7, weekend dispatch, same-day SLA, warranty term, framing/carpentry, or pricing guarantee is asserted as policy. Jenny parts-arrival process, causal local/not-a-chain returns, always-same-person diagnosis/repair, slab jargon, Facebook-group discovery recital, and evening-usability/staging advice were removed or narrowed.",
         "Quote fidelity: displayed quotations are contiguous sealed-review text with the original reviewer attribution.",
         "Public copy reads as local-service writing. Internal evidence-defense phrasing was removed from customer-facing pages.",
         "Word count alone did not pass either page. The former hard 800-word floor is revoked.",
+        "This worker does not accept Writer 1. The package is returned waiting-for-architect for independent review.",
     ],
     "sectionJobs": {"/garage-door-repair": repair_jobs, "/garage-door-installation": install_jobs},
     "qualityScans": {
         "duplicateQuotes": {"repair": repair_dupes, "installation": install_dupes},
         "auditLanguage": audit_hits,
-        "unsupportedClaims": "pass",
-        "evidenceFidelity": "pass",
+        "forbiddenPublicPhrases": forbidden_hits,
+        "unsupportedClaims": "writer-self-check-pass",
+        "evidenceFidelity": "writer-self-check-pass",
         "usefulBodyWordCounts": {"repair": repair_words, "installation": install_words, "role": "diagnostic-only"},
+        "role": "diagnostic-self-check-not-architect-accept",
     },
 }
 
 qa2 = {
     "stage": "writer2",
-    "decision": "accept",
-    "writer3Released": True,
+    "decision": WAITING_STATE,
+    "writer3Released": False,
+    "independentArchitectReviewRequired": True,
     "findings": [
-        "Home `/` routes to the two corrected service pages and Contact without adding extra public services.",
+        "Home `/` routes to the two claim-corrected service pages and Contact without adding extra public services.",
+        "Home H1 now uses the sealed completed-jobs promise instead of the awkward named-people phrasing.",
         "Contact is lean: phone, address, Monday–Friday 8–5, closed Saturday and Sunday; no service SLAs.",
         "Header and footer resolve Home, Repair, Installation, and Contact. Strategy is not in navigation.",
         "Cameron Spitzer lead quote is contiguous source text and is displayed once.",
         "No new vendor calls and no new review inventory.",
-        "Writer 2 was withheld until fresh Writer 1 QA accepted the rewritten service pages.",
+        "Writer 2 copy is reconciled for independent Architect review. Writer 2 is not released and this is not an Architect accept.",
     ],
 }
 
 whole_site = {
-    "assessor": "architect-whole-site-360",
-    "independent": True,
-    "pass": True,
+    "assessor": "cursor-writer-self-check-360",
+    "independent": False,
+    "pass": False,
+    "status": WAITING_STATE,
     "priorAcceptRevoked": True,
+    "independentArchitectReviewRequired": True,
     "dimensionsReviewed": [
         "specificity",
         "strongest-review-choice",
@@ -492,11 +531,11 @@ whole_site = {
         {"dimension": "persuasive-flow", "severity": "note", "summary": "Each service-page section has a distinct decision-stage job.", "rationale": "Direct answer, confirmed scope, process/selection, differentiator, strongest proof, and next step do not restate one another."},
         {"dimension": "voice-drift", "severity": "note", "summary": "Public copy reads as local-service writing rather than an evidence-audit memo.", "rationale": "Internal validation commentary and duplicate quote display were removed from customer-facing pages."},
         {"dimension": "cross-page-distinctness", "severity": "note", "summary": "Repair, installation, home, and contact do different jobs.", "rationale": "Repair keeps the existing door; installation is new doors; contact is reachability only."},
-        {"dimension": "homepage-complementarity", "severity": "note", "summary": "Home routes into finished service pages instead of restating them.", "rationale": "Home points to Chris/Marcie leads without duplicating the full service bodies."},
+        {"dimension": "homepage-complementarity", "severity": "note", "summary": "Home routes into finished service pages instead of restating them.", "rationale": "Home uses the sealed completed-jobs H1 and points to the two service destinations without duplicating the full service bodies."},
         {"dimension": "contact-leanness", "severity": "note", "summary": "Contact has no review placements and no service promises.", "rationale": "Phone, address, hours, and route-outs only."},
-        {"dimension": "strategy-truthfulness", "severity": "note", "summary": "Strategy Overview records the pointer-ledger correction and the revoked 800-word floor.", "rationale": "Internal artifact states that word count is diagnostic only and that Writer 1 was accepted on completeness, usefulness, evidence fidelity, and non-repetition."},
-        {"dimension": "unsupported-claims", "severity": "note", "summary": "No 24/7, weekend dispatch, same-day SLA, warranty, or carpentry claim is asserted as policy.", "rationale": "Hours stay Monday–Friday 8–5. Scott Heffern’s taller door is sized to an opening he already reframed."},
-        {"dimension": "generic-ai-filler", "severity": "note", "summary": "Copy stays tied to named jobs and sealed facts without padding to a count.", "rationale": "Reviews are synthesized into homeowner decisions. Closing recap paragraphs were removed."},
+        {"dimension": "strategy-truthfulness", "severity": "note", "summary": "Strategy Overview records the pointer-ledger correction, the revoked 800-word floor, and waiting-for-architect.", "rationale": "Internal artifact does not treat word count as a pass criterion and does not self-declare Architect acceptance or Human Gate 2."},
+        {"dimension": "unsupported-claims", "severity": "note", "summary": "No 24/7, weekend dispatch, same-day SLA, warranty, or carpentry claim is asserted as policy. The six Architect-flagged overclaims were removed or narrowed.", "rationale": "Hours stay Monday–Friday 8–5. Scott Heffern’s taller door is sized to an opening he already reframed."},
+        {"dimension": "generic-ai-filler", "severity": "note", "summary": "Copy stays tied to named jobs and sealed facts without padding to a count.", "rationale": "Removed sentences were not replaced with filler. Closing recap paragraphs stay out."},
     ],
 }
 
@@ -505,12 +544,12 @@ whole_site = {
 
 head = git_head()
 state.update({
-    "status": "awaiting-human-gate-2",
-    "stage": "awaiting-human-gate-2",
-    "writer2Blocked": False,
+    "status": WAITING_STATE,
+    "stage": WAITING_STATE,
+    "writer2Blocked": True,
     "rawApproved": False,
-    "adaptedOutputApproved": True,
-    "normalizedOutputApproved": True,
+    "adaptedOutputApproved": False,
+    "normalizedOutputApproved": False,
     "humanGate2Path": "canary/outputs/human-gate-2.md",
     "mergeOccurred": False,
     "deploymentOccurred": False,
@@ -519,6 +558,9 @@ state.update({
     "renderedWordsDigest": (load(ROOT / "canary/runtime/writer1-fresh-copy.json") if (ROOT / "canary/runtime/writer1-fresh-copy.json").exists() else {}).get("renderedWordsDigest"),
     "rejectedRenderedWordsDigest": REJECTED_RENDERED_WORDS_DIGEST,
     "rawRejectedLineageRestored": False,
+    "independentArchitectReviewRequired": True,
+    "claimCorrectionThreadUrl": THIS_THREAD,
+    "freshCopyThreadUrl": FRESH_COPY_THREAD,
 })
 
 fresh = load(ROOT / "canary/runtime/writer1-fresh-copy.json") if (ROOT / "canary/runtime/writer1-fresh-copy.json").exists() else {}
@@ -568,14 +610,14 @@ md = [
     f"- Repair page useful-body word count (diagnostic only): **{repair_words}**",
     f"- Installation page useful-body word count (diagnostic only): **{install_words}**",
     "- Word count is not the acceptance reason. The former hard 800-word floor is revoked.",
-    "- Architect QA Writer 1: **accept** (fresh quality decision; Writer 2 released; raw quarantined artifact remains unapproved)",
-    "- Architect QA Writer 2: **accept** (reconciled after the corrected Writer 1 pages; Writer 3 released)",
+    f"- Architect QA Writer 1: **{WAITING_STATE}** (independent review required; this worker does not accept; Writer 2 is not released; raw quarantined artifact remains unapproved)",
+    f"- Architect QA Writer 2: **{WAITING_STATE}** (Home/Contact/header/footer reconciled to claim-corrected Writer 1 pages; not accepted)",
     "- Writer 3 Strategy Overview: internal only",
-    "- Whole-site QA: **pass** (fresh decision; prior accept/pass revoked)",
-    "- Duplicate-quote scan: **pass** (each quotation displayed once)",
-    "- Repetition scan: **pass** (hours/timing handled once per service page)",
-    "- Unsupported-claim scan: **pass**",
-    "- Evidence-fidelity scan: **pass**",
+    f"- Whole-site QA: **{WAITING_STATE}** (writer self-check only; prior accept/pass remain revoked; independent Architect review required)",
+    "- Duplicate-quote scan: **writer-self-check-pass** (each quotation displayed once)",
+    "- Repetition scan: **writer-self-check-pass** (hours/timing handled once per service page)",
+    "- Unsupported-claim scan: **writer-self-check-pass** (six Architect-flagged overclaims removed or narrowed)",
+    "- Evidence-fidelity scan: **writer-self-check-pass**",
     "- Merge occurred: **no**",
     "- Deployment occurred: **no**",
     "- Branch: `architect/360-words-canary`",
@@ -598,7 +640,8 @@ md = [
     "- Pull request (unmerged): https://github.com/alchemistj/ff-content-demo-factory/pull/6",
     "- Writer 1 Cursor thread: https://cursor.com/agents/bc-30fc8ffa-2005-44b9-8fc7-48ddd9c3bcc8",
     "- Prior correction Cursor thread: https://cursor.com/agents/bc-57cc62dc-de8f-4be0-840b-640662ae56a4",
-    f"- Fresh Writer 1 copy Cursor thread: {THIS_THREAD}",
+    f"- Fresh Writer 1 copy Cursor thread: {FRESH_COPY_THREAD}",
+    f"- Claim-correction Cursor thread: {THIS_THREAD}",
     "- GitHub issue: https://github.com/alchemistj/ff-content-demo-factory/issues/5",
     f"- Quarantined source digest: `{normalization['sourceByteDigest']}`",
     f"- Prior normalized output digest (pre-quality rewrite): `{normalization['normalizedOutputDigest']}`",
@@ -608,12 +651,18 @@ md = [
     "",
     "- Targeted regression: production `reviewer`+`excerpt` fails `REVIEW_EVIDENCE_CLAIM_TEXT_DUPLICATE` at `/pages/0/reviewEvidence/0/reviewer` with expectedRule `reviewEvidence must not contain any accepted word-bearing key; it is a typed pointer ledger`, then normalizes losslessly.",
     "- Real quarantined bytes: 31 reviewer keys + 31 excerpt keys removed (62), semantic copy / identity / provenance preserved, raw `approved: false`.",
-    "- Fresh Writer 1 quality QA: distinct section jobs, synthesized reviews, one display form per quote, no audit-memo public copy, unsupported-claim scan pass, word counts diagnostic only.",
-    "- `NODE_ENV=test npm run test:all`: 131 passed, 0 failed, 0 skipped.",
+    "- Fresh Writer 1 quality self-check: distinct section jobs, synthesized reviews, one display form per quote, no audit-memo public copy, unsupported-claim scan pass, six Architect-flagged overclaims removed or narrowed, word counts diagnostic only. This is not Architect acceptance.",
+    "- `NODE_ENV=test npm run test:all`: recorded after this head is committed.",
     "",
-    "## Architect QA — Writer 1 (fresh)",
+    "## Changed-claim reasons",
     "",
-    "Decision: **accept**. Word count did not pass the pages.",
+]
+for reason in CHANGED_CLAIM_REASONS:
+    md += [f"- {reason}", ""]
+md += [
+    "## Architect QA — Writer 1",
+    "",
+    f"Decision: **{WAITING_STATE}**. Independent Architect review is required. Word count did not pass the pages. This worker does not accept Writer 1 and does not open Human Gate 2.",
     "",
 ]
 md += repair_job_lines
@@ -623,9 +672,10 @@ md += [
     "",
     f"- Duplicate quotes: repair `{repair_dupes or 'none'}`, installation `{install_dupes or 'none'}`.",
     "- Repetition: hours and weekday next-step appear once per service page.",
-    "- Unsupported claims: no 24/7, weekend dispatch, same-day SLA, warranty term, framing/carpentry, or pricing guarantee.",
+    "- Unsupported claims: no 24/7, weekend dispatch, same-day SLA, warranty term, framing/carpentry, or pricing guarantee. Forbidden overclaim phrases: none.",
     "- Evidence fidelity: displayed quotations are contiguous sealed-review text.",
     f"- Useful-body word counts: Repair **{repair_words}**, Installation **{install_words}** (diagnostic only).",
+    f"- Role: writer self-check only. Independent Architect QA owns accept/reject.",
     "",
 ]
 md += ledger_lines
@@ -645,9 +695,9 @@ md += ["", footer["legal"], "", "## Strategy Overview", "", strategy["body"], ""
 for section in strategy["sections"]:
     md += [f"### {section['heading']}", "", section["body"], ""]
 md += [
-    "State: awaiting-human-gate-2",
+    f"State: {WAITING_STATE}",
     "",
-    "Do you approve these website words for the coded demo?",
+    "Independent Architect review is required. This package is not awaiting Human Gate 2 and is not a merge or deployment authorization.",
     "",
 ]
 

@@ -69,6 +69,36 @@ test("rewritten service pages display each quote once and omit audit-memo public
   assert.doesNotMatch(md, /\*\*1,?637\*\*/u);
   assert.match(md, /Rejected padded lineage \(not restored\)/u);
   assert.match(md, /sha256:165d310ae1e30225b6278cc0fbde7d2cab23a60f186157c59734257519c01f89/u);
+  assert.doesNotMatch(publicCopy, /If a part is not on the truck, Jenny schedules/u);
+  assert.doesNotMatch(publicCopy, /Callers come back because/u);
+  assert.doesNotMatch(publicCopy, /the person who diagnosed the door is the person who repaired/u);
+  assert.doesNotMatch(publicCopy, /when the slab is done/iu);
+  assert.doesNotMatch(publicCopy, /Facebook group/iu);
+  assert.doesNotMatch(publicCopy, /use the garage that evening/iu);
+  assert.doesNotMatch(publicCopy, /both openings are finished in the same visit or staged/iu);
+  assert.doesNotMatch(publicCopy, /from a shop with named people on the jobs/iu);
+  assert.match(home, /# Springfield garage door work backed by completed jobs/u);
+});
+
+test("claim-correction package is waiting-for-architect and does not self-accept", () => {
+  if (!existsSync(join(root, "canary/outputs/human-gate-2.md"))) return;
+  const md = read("canary/outputs/human-gate-2.md");
+  const qa1 = readJson("canary/runtime/architect-qa-writer1.json");
+  const qa2 = readJson("canary/runtime/architect-qa-writer2.json");
+  const whole = readJson("canary/runtime/whole-site-qa.json");
+  const state = readJson("canary/runtime/state.json");
+  const strategy = readJson("canary/outputs/writer3-output.json");
+  assert.equal(qa1.decision, "waiting-for-architect");
+  assert.equal(qa1.writer2Released, false);
+  assert.equal(qa2.decision, "waiting-for-architect");
+  assert.equal(whole.pass, false);
+  assert.equal(state.status, "waiting-for-architect");
+  assert.notEqual(state.writer2Blocked, false);
+  assert.match(md, /Architect QA Writer 1: \*\*waiting-for-architect\*\*/u);
+  assert.doesNotMatch(md, /Architect QA Writer 1: \*\*accept\*\*/u);
+  assert.doesNotMatch(md, /^State: awaiting-human-gate-2$/mu);
+  assert.match(String(strategy.strategyOverview.body), /waiting-for-architect/u);
+  assert.doesNotMatch(String(strategy.strategyOverview.body), /Architect QA accepted/u);
 });
 
 test("corrected Writer1 JSON still validates against the sealed 360 projection", () => {

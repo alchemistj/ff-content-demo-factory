@@ -1,8 +1,10 @@
 {
-  "assessor": "architect-whole-site-360",
-  "independent": true,
-  "pass": true,
+  "assessor": "cursor-writer-self-check-360",
+  "independent": false,
+  "pass": false,
+  "status": "waiting-for-architect",
   "priorAcceptRevoked": true,
+  "independentArchitectReviewRequired": true,
   "dimensionsReviewed": [
     "specificity",
     "strongest-review-choice",
@@ -50,7 +52,7 @@
       "dimension": "homepage-complementarity",
       "severity": "note",
       "summary": "Home routes into finished service pages instead of restating them.",
-      "rationale": "Home points to Chris/Marcie leads without duplicating the full service bodies."
+      "rationale": "Home uses the sealed completed-jobs H1 and points to the two service destinations without duplicating the full service bodies."
     },
     {
       "dimension": "contact-leanness",
@@ -61,20 +63,20 @@
     {
       "dimension": "strategy-truthfulness",
       "severity": "note",
-      "summary": "Strategy Overview records the pointer-ledger correction and the revoked 800-word floor.",
-      "rationale": "Internal artifact states that word count is diagnostic only and that Writer 1 was accepted on completeness, usefulness, evidence fidelity, and non-repetition."
+      "summary": "Strategy Overview records the pointer-ledger correction, the revoked 800-word floor, and waiting-for-architect.",
+      "rationale": "Internal artifact does not treat word count as a pass criterion and does not self-declare Architect acceptance or Human Gate 2."
     },
     {
       "dimension": "unsupported-claims",
       "severity": "note",
-      "summary": "No 24/7, weekend dispatch, same-day SLA, warranty, or carpentry claim is asserted as policy.",
+      "summary": "No 24/7, weekend dispatch, same-day SLA, warranty, or carpentry claim is asserted as policy. The six Architect-flagged overclaims were removed or narrowed.",
       "rationale": "Hours stay Monday\u2013Friday 8\u20135. Scott Heffern\u2019s taller door is sized to an opening he already reframed."
     },
     {
       "dimension": "generic-ai-filler",
       "severity": "note",
       "summary": "Copy stays tied to named jobs and sealed facts without padding to a count.",
-      "rationale": "Reviews are synthesized into homeowner decisions. Closing recap paragraphs were removed."
+      "rationale": "Removed sentences were not replaced with filler. Closing recap paragraphs stay out."
     }
   ]
 }
