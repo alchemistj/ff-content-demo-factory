@@ -26,6 +26,8 @@ function main(argv = process.argv.slice(2)) {
     phaseARunId: String(required(raw.phaseARunId, 'terminal phase-A run id')),
     inputDigest: String(raw.receipt.inputDigest),
     inputManifestDigest: String(raw.receipt.envelope.inputManifestDigest),
+    sourceCheckpointDigest: String(required(raw.receipt.envelope.sourceCheckpointDigest, 'terminal source checkpoint digest')),
+    sourceManifestDigest: String(required(raw.receipt.envelope.sourceManifestDigest, 'terminal source manifest digest')),
     checkedOutSha: String(raw.receipt.envelope.checkedOutSha),
     commentId: String(required(commentId, 'terminal comment id')),
     commentUrl: required(commentUrl, 'terminal comment URL'),
