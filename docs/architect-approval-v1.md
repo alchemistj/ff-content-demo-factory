@@ -1,10 +1,19 @@
 # External Architect approval contract
 
 Actions verifies Architect documents; it never signs them. The pinned public
-key is provided to the Action as the non-secret variable
-`ARCHITECT_APPROVAL_PUBLIC_KEY_PEM`. The pinned key identifier is the code
-constant `architect-ed25519-v1`. The corresponding private key must remain
-outside this repository and outside GitHub Actions.
+key is committed at
+`qa/architect/architect-ed25519-v1-public.pem` and loaded by the workflow
+after it verifies that the file is a regular non-symlink file with this exact
+SHA-256:
+
+`b0c4c57d7f905c215b6f8555d8abca81f7ea034319bc665dc920b50546b6e0f9`
+
+The process-local `ARCHITECT_APPROVAL_PUBLIC_KEY_PEM` value is derived from
+those committed bytes; no Actions variable is used. Missing, altered,
+wrong-type, or private-key material fails before approval verification or
+vendor access. The pinned key identifier is the code constant
+`architect-ed25519-v1`. The corresponding private key must remain outside
+this repository and outside GitHub Actions.
 
 The exact source files for the Writer1 approval-seal wake are:
 
@@ -54,4 +63,6 @@ There is no trailing newline. `canonicalize` recursively sorts object keys and
 preserves array order. Sign those bytes with Ed25519 and encode the raw 64-byte
 signature as `ed25519:<base64>`. Actions verifies this payload with the pinned
 public key and rejects extra keys, wrong author/key, unsigned files, and any
-source or path mismatch.
+source or path mismatch. The loader is
+`scripts/architect-approval-key.mjs` (`loadPinnedArchitectPublicKey`), with
+byte-level checks in `validatePinnedArchitectPublicKeyBytes`.

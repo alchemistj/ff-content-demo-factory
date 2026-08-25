@@ -99,8 +99,15 @@ jobs:
           CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
           CURSOR_MODEL: ${{ secrets.CURSOR_MODEL }}
           CURSOR_FAST: 'false'
-          ARCHITECT_APPROVAL_PUBLIC_KEY_PEM: ${{ vars.ARCHITECT_APPROVAL_PUBLIC_KEY_PEM }}
         run: |
+          set -euo pipefail
+          public_key_path='qa/architect/architect-ed25519-v1-public.pem'
+          test -f "$public_key_path"
+          test ! -L "$public_key_path"
+          test "$(sha256sum "$public_key_path" | cut -d ' ' -f 1)" = 'b0c4c57d7f905c215b6f8555d8abca81f7ea034319bc665dc920b50546b6e0f9'
+          ! grep -q 'PRIVATE KEY' "$public_key_path"
+          node scripts/architect-approval-key.mjs >/dev/null
+          export ARCHITECT_APPROVAL_PUBLIC_KEY_PEM="$(cat "$public_key_path")"
           test -n "$CURSOR_API_KEY"
           test "$CURSOR_MODEL" = "cursor-grok-4.6-high"
           test "$CURSOR_FAST" = "false"
@@ -385,7 +392,6 @@ jobs:
           CURSOR_MODEL: ${{ secrets.CURSOR_MODEL }}
           CURSOR_FAST: 'false'
           WRITER1_PRIOR_DISPATCH_ROOT: canary/inputs/prior-dispatch-artifact
-          ARCHITECT_APPROVAL_PUBLIC_KEY_PEM: ${{ vars.ARCHITECT_APPROVAL_PUBLIC_KEY_PEM }}
           WRITER1_PRIOR_RECOVERY_ROOT: canary/inputs/prior-v1-recovery-artifact
           WRITER1_PRIOR_RECOVERY_V2_ROOT: canary/inputs/prior-v2-recovery-artifact
           WRITER1_LATEST_V3_FINALIZE_ROOT: canary/inputs/latest-v3-finalize-artifact
@@ -396,6 +402,13 @@ jobs:
           WRITER1_CORRECTION_V3_SOURCE_ROOT: canary/inputs/writer1-correction-v3-artifact
           WRITER1_APPROVAL_SOURCE_ROOT: canary/inputs/writer1-approval-artifact
         run: |
+          set -euo pipefail
+          public_key_path='qa/architect/architect-ed25519-v1-public.pem'
+          test -f "$public_key_path"
+          test ! -L "$public_key_path"
+          test "$(sha256sum "$public_key_path" | cut -d ' ' -f 1)" = 'b0c4c57d7f905c215b6f8555d8abca81f7ea034319bc665dc920b50546b6e0f9'
+          ! grep -q 'PRIVATE KEY' "$public_key_path"
+          export ARCHITECT_APPROVAL_PUBLIC_KEY_PEM="$(node scripts/architect-approval-key.mjs)"
           if [ "${{ steps.dispatch_mode.outputs.mode }}" = 'verified-writer1-approval-seal' ]; then
             node --import tsx scripts/360-words-verified.ts --writer1-approval-seal
           elif [ "${{ steps.dispatch_mode.outputs.mode }}" = 'verified-writer2-write' ]; then

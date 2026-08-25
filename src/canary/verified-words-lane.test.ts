@@ -9,8 +9,9 @@ import { digestWriter1QuarantineCorrectionV3Input, digestWriter1QuarantineCorrec
 import { validateSealed, writer1Projection } from "../../scripts/360-words-canary.js";
 import { VERIFIED_WRITER1_AGENT_ID, VERIFIED_WRITER1_PROMPT_DIGEST, VERIFIED_WRITER1_PROMPT_V2_DIGEST, validateVerifiedWriter1Control, validateVerifiedWriter1PostDispatchControl, validateVerifiedWriter1SealOnlyControl, validateVerifiedWriter1CorrectionV3Control, verifyOriginalDispatchEvidence, runVerifiedWriter1Correction, verifyPinnedSealedManifestBytes, quarantineWriter1PostDispatchOutput, persistVerifiedWriterFailureSurface, VERIFIED_WRITER1_REJECTED_OUTPUT_PATH, VERIFIED_WRITER1_REJECTION_RECEIPT_PATH, VERIFIED_WRITER1_CORRECTION_V3_ARTIFACT_PATHS, VERIFIED_WRITER1_CORRECTION_V3_ARTIFACT_ZIP_SIZE, VERIFIED_WRITER1_CORRECTION_V3_SIDECAR_PINS, VERIFIED_WRITER1_CORRECTION_V3_SOURCE, validateVerifiedWriter1CorrectionV3ArtifactListing, validateVerifiedWriter1CorrectionV3ArtifactLayout, validateVerifiedWriter1CorrectionV3SidecarMetadata, verifyVerifiedWriter1CorrectionV3PinnedBytes } from "../../scripts/360-words-verified.js";
 import { digestOf } from "../../src/contracts/digests.js";
-import { createHash } from "node:crypto";
+import { createHash, generateKeyPairSync } from "node:crypto";
 import { assertNoLocalDownstreamGeneration, assertVerifiedDownstreamState, VERIFIED_PUBLIC_ROUTES, VERIFIED_STAGE_POLICY, VERIFIED_WRITER3_SEALED_FACTS } from "../../src/pipeline/verified-words-policy.js";
+import { ARCHITECT_APPROVAL_PUBLIC_KEY_PATH, ARCHITECT_APPROVAL_PUBLIC_KEY_SHA256, loadPinnedArchitectPublicKey, validatePinnedArchitectPublicKeyBytes } from "../../scripts/architect-approval-key.mjs";
 
 const root = path.resolve(process.cwd());
 const EXPECTED_POST_DISPATCH_ORIGINAL_INPUT_DIGEST = "sha256:f4f59e9c645391266172892e4651f0da4ccedaa2bc86e35217a0ab8699fd0c1f";
@@ -366,4 +367,36 @@ test("Architect approvals are externally Ed25519-verified and never signed with 
   assert.doesNotMatch(runner, /signArchitectStageApproval|createPrivateKey|privateKey/iu);
   assert.match(signer, /verify\(null/u); assert.match(signer, /ARCHITECT_APPROVAL_PUBLIC_KEY_ENV/u);
   assert.doesNotMatch(`${policy}\n${signer}\n${runner}`, /BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY/iu);
+});
+
+test("Actions loads the exact committed public key and rejects missing, altered, wrong, private, and symlinked keys", async () => {
+  const keyPath = path.join(root, ARCHITECT_APPROVAL_PUBLIC_KEY_PATH);
+  const keyBytes = readFileSync(keyPath);
+  assert.equal(createHash("sha256").update(keyBytes).digest("hex"), ARCHITECT_APPROVAL_PUBLIC_KEY_SHA256);
+  assert.doesNotMatch(keyBytes.toString("utf8"), /PRIVATE KEY/iu);
+  assert.equal(loadPinnedArchitectPublicKey(root), keyBytes.toString("utf8"));
+  assert.throws(() => validatePinnedArchitectPublicKeyBytes(Buffer.from(`${keyBytes}altered`)), /digest/u);
+  const wrongKey = generateKeyPairSync("ed25519").publicKey.export({ type: "spki", format: "pem" });
+  assert.throws(() => validatePinnedArchitectPublicKeyBytes(Buffer.from(wrongKey)), /digest/u);
+  assert.throws(() => validatePinnedArchitectPublicKeyBytes(Buffer.from("-----BEGIN PRIVATE KEY-----\nnot-a-key\n-----END PRIVATE KEY-----\n")), /private-key/u);
+  const missingRoot = await mkdtemp(path.join(tmpdir(), "ff-architect-public-key-missing-"));
+  const alteredRoot = await mkdtemp(path.join(tmpdir(), "ff-architect-public-key-altered-"));
+  const symlinkRoot = await mkdtemp(path.join(tmpdir(), "ff-architect-public-key-symlink-"));
+  try {
+    assert.throws(() => loadPinnedArchitectPublicKey(missingRoot), /missing/u);
+    await mkdir(path.join(alteredRoot, path.dirname(ARCHITECT_APPROVAL_PUBLIC_KEY_PATH)), { recursive: true });
+    await writeFile(path.join(alteredRoot, ARCHITECT_APPROVAL_PUBLIC_KEY_PATH), Buffer.from(`${keyBytes}altered`));
+    assert.throws(() => loadPinnedArchitectPublicKey(alteredRoot), /digest/u);
+    await mkdir(path.join(symlinkRoot, path.dirname(ARCHITECT_APPROVAL_PUBLIC_KEY_PATH)), { recursive: true });
+    await symlink(keyPath, path.join(symlinkRoot, ARCHITECT_APPROVAL_PUBLIC_KEY_PATH));
+    assert.throws(() => loadPinnedArchitectPublicKey(symlinkRoot), /symlink/u);
+  } finally {
+    await Promise.all([rm(missingRoot, { recursive: true, force: true }), rm(alteredRoot, { recursive: true, force: true }), rm(symlinkRoot, { recursive: true, force: true })]);
+  }
+  const workflow = readFileSync(path.join(root, ".github/workflows/architect-360-words-canary.yml"), "utf8");
+  assert.match(workflow, /qa\/architect\/architect-ed25519-v1-public\.pem/u);
+  assert.match(workflow, /sha256sum.*b0c4c57d7f905c215b6f8555d8abca81f7ea034319bc665dc920b50546b6e0f9/u);
+  assert.doesNotMatch(workflow, /vars\.ARCHITECT_APPROVAL_PUBLIC_KEY_PEM/u);
+  assert.match(workflow, /ARCHITECT_APPROVAL_PUBLIC_KEY_PEM=.*cat.*public_key_path/u);
+  assert.match(workflow, /! grep -q 'PRIVATE KEY'/u);
 });
