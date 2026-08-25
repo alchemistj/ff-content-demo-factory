@@ -3,31 +3,49 @@
 const { digest } = require('./prescription-policy');
 
 const SCHEMA_VERSION = 'factory-cursor-github-ledger-v1';
+const STATES = Object.freeze(['claimed', 'preparing', 'posted', 'in_motion', 'terminal', 'resumed']);
+const TRANSITIONS = Object.freeze({ claimed: ['preparing'], preparing: ['posted'], posted: ['in_motion'], in_motion: ['terminal'], terminal: ['resumed'], resumed: [] });
 
 function required(value, label) {
   if (value == null || String(value).trim() === '') throw new Error(`${label} is required`);
   return value;
 }
 
-function markerFor({ kind, repository, issueNumber, prNumber, branch, checkedOutSha, handoffId, dispatchKey, resultId, inputDigest, outputDigest, threadUrl, model, status = 'consumed' }) {
+function contextFields(marker) {
+  return {
+    repository: marker.repository,
+    issueNumber: marker.issueNumber,
+    prNumber: marker.prNumber,
+    branch: marker.branch,
+    checkedOutSha: marker.checkedOutSha,
+    handoffId: marker.handoffId,
+    dispatchKey: marker.dispatchKey,
+    dispatchDigest: marker.dispatchDigest || null,
+    runId: marker.runId || null,
+    prospectId: marker.prospectId || null,
+    sourceCheckpointDigest: marker.sourceCheckpointDigest || null,
+    sourceManifestDigest: marker.sourceManifestDigest || null,
+    inputManifestDigest: marker.inputManifestDigest || null,
+    jobId: marker.jobId || null,
+  };
+}
+
+function markerFor({ kind, repository, issueNumber, prNumber, branch, checkedOutSha, handoffId, dispatchKey, dispatchDigest, runId, prospectId, sourceCheckpointDigest, sourceManifestDigest, inputManifestDigest, jobId, resultId, inputDigest, outputDigest, threadUrl, model, commentId, commentUrl, status = 'preparing' }) {
+  if (!STATES.includes(status)) throw new Error(`Unknown ledger marker state: ${status}`);
   const marker = {
     schemaVersion: SCHEMA_VERSION,
     kind: required(kind, 'ledger marker kind'),
-    repository: required(repository, 'ledger marker repository'),
-    issueNumber: required(issueNumber, 'ledger marker issue number'),
-    prNumber: required(prNumber, 'ledger marker PR number'),
-    branch: required(branch, 'ledger marker branch'),
-    checkedOutSha: required(checkedOutSha, 'ledger marker checked-out head'),
-    handoffId: required(handoffId, 'ledger marker handoff id'),
-    dispatchKey: required(dispatchKey, 'ledger marker dispatch key'),
+    ...contextFields({ repository: required(repository, 'ledger marker repository'), issueNumber: required(issueNumber, 'ledger marker issue number'), prNumber: required(prNumber, 'ledger marker PR number'), branch: required(branch, 'ledger marker branch'), checkedOutSha: required(checkedOutSha, 'ledger marker checked-out head'), handoffId: required(handoffId, 'ledger marker handoff id'), dispatchKey: required(dispatchKey, 'ledger marker dispatch key'), dispatchDigest, runId, prospectId, sourceCheckpointDigest, sourceManifestDigest, inputManifestDigest, jobId }),
     resultId: resultId == null ? null : String(resultId),
     inputDigest: inputDigest || null,
     outputDigest: outputDigest || null,
     threadUrl: threadUrl || null,
     model: model || null,
+    commentId: commentId == null ? null : String(commentId),
+    commentUrl: commentUrl || null,
     status,
   };
-  marker.markerDigest = digest(marker);
+  marker.markerDigest = digest({ ...marker, markerDigest: undefined });
   return marker;
 }
 
@@ -42,7 +60,33 @@ function parseMarker(body) {
   let marker;
   try { marker = JSON.parse(text.slice('FACTORY_CURSOR_LEDGER_V1\n'.length)); } catch { throw new Error('Cursor ledger marker JSON is malformed'); }
   if (marker.schemaVersion !== SCHEMA_VERSION || marker.markerDigest !== digest({ ...marker, markerDigest: undefined })) throw new Error('Cursor ledger marker digest is stale or invented');
+  if (!STATES.includes(marker.status)) throw new Error('Cursor ledger marker state is invalid');
   return marker;
+}
+
+function assertContext(value, expected) {
+  for (const field of ['repository', 'issueNumber', 'prNumber', 'branch', 'checkedOutSha', 'handoffId', 'dispatchKey', 'dispatchDigest', 'runId', 'prospectId', 'sourceCheckpointDigest', 'sourceManifestDigest', 'inputManifestDigest', 'jobId']) {
+    if (expected[field] != null && String(value?.[field] ?? '') !== String(expected[field])) throw new Error(`Ledger ${field} binding mismatch`);
+  }
+  return true;
+}
+
+function assertTransition(previous, next) {
+  if (!previous) {
+    if (!['claimed', 'preparing'].includes(next.status)) throw new Error('Ledger must begin in claimed or preparing state');
+    return next;
+  }
+  if (!TRANSITIONS[previous.status]?.includes(next.status)) throw new Error(`Invalid ledger transition ${previous.status} -> ${next.status}`);
+  assertContext(next, contextFields(previous));
+  if (next.status === 'posted' && (!next.commentId || !next.commentUrl)) throw new Error('posted ledger state requires authoritative @cursor comment identity');
+  return next;
+}
+
+function issueCommentUrl(url, repository, issueNumber) {
+  try {
+    const parsed = new URL(String(url));
+    return parsed.protocol === 'https:' && parsed.hostname === 'github.com' && parsed.pathname === `/${repository}/issues/${issueNumber}` && /^#issuecomment-[0-9]+$/.test(parsed.hash);
+  } catch { return false; }
 }
 
 function authoritativeMarkers(comments, expected) {
@@ -51,14 +95,38 @@ function authoritativeMarkers(comments, expected) {
   return (comments || []).flatMap((comment) => {
     if (comment?.user?.login && comment.user.login !== expected.ownerLogin && !['github-actions[bot]', 'cursor[bot]'].includes(comment.user.login)) return [];
     const url = String(comment?.html_url || comment?.url || '');
-    if (!new RegExp(`^https://github\\.com/${repository.replace(/[.*+?^${}()|[\\]\\\\]/g, '\\\\$&')}/issues/${issueNumber}#issuecomment-[0-9]+$`).test(url)) return [];
+    if (!issueCommentUrl(url, repository, issueNumber)) return [];
     const marker = parseMarker(comment.body);
     return marker ? [{ ...marker, commentId: String(comment.id), commentUrl: url }] : [];
-  }).filter((marker) => marker.repository === repository && String(marker.issueNumber) === issueNumber);
+  }).filter((marker) => marker.repository === repository && String(marker.issueNumber) === issueNumber && (!expected.prNumber || String(marker.prNumber) === String(expected.prNumber)));
 }
 
 function findClaim(comments, expected) {
-  return authoritativeMarkers(comments, expected).find((marker) => marker.kind === expected.kind && marker.handoffId === expected.handoffId && marker.dispatchKey === expected.dispatchKey && (expected.resultId == null || marker.resultId === String(expected.resultId))) || null;
+  return authoritativeMarkers(comments, expected).find((marker) => {
+    if (expected.kind != null && marker.kind !== expected.kind) return false;
+    if (expected.handoffId != null && marker.handoffId !== String(expected.handoffId)) return false;
+    if (expected.dispatchKey != null && marker.dispatchKey !== String(expected.dispatchKey)) return false;
+    if (expected.resultId != null && marker.resultId !== String(expected.resultId)) return false;
+    if (expected.status != null && marker.status !== expected.status) return false;
+    try { assertContext(marker, expected); } catch { return false; }
+    return true;
+  }) || null;
 }
 
-module.exports = { SCHEMA_VERSION, markerFor, markerBody, parseMarker, authoritativeMarkers, findClaim };
+function reconcileDispatchComment(comments, expected) {
+  const repository = required(expected.repository, 'dispatch repository');
+  const issueNumber = String(required(expected.issueNumber, 'dispatch issue'));
+  return (comments || []).find((comment) => {
+    const body = String(comment?.body || '');
+    const url = String(comment?.html_url || '');
+    return issueCommentUrl(url, repository, issueNumber) && body.startsWith('@cursor') && body.includes(`Dispatch key: ${expected.dispatchKey}`) && (!expected.dispatchDigest || body.includes(`Dispatch packet digest: ${expected.dispatchDigest}`)) && (!expected.prNumber || body.includes(`PR: #${expected.prNumber}`));
+  }) || null;
+}
+
+function requireGitHubToken(env = process.env) {
+  const token = env.GH_TOKEN || env.GITHUB_TOKEN;
+  if (!token || String(token).trim() === '') throw new Error('GH_TOKEN or GITHUB_TOKEN is required for GitHub ledger operations');
+  return token;
+}
+
+module.exports = { SCHEMA_VERSION, STATES, markerFor, markerBody, parseMarker, assertTransition, assertContext, authoritativeMarkers, findClaim, reconcileDispatchComment, requireGitHubToken };
