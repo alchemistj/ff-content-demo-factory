@@ -69,7 +69,7 @@ jobs:
           test "$CURSOR_FAST" = "false"
 
       - name: Download and verify exact prior Writer1 dispatch artifact
-        if: steps.control.outputs.dormant != 'true'
+        if: steps.control.outputs.dormant != 'true' && (steps.control.outputs.recovery_version == 'words-writer1-artifact-recovery/v2' || steps.control.outputs.recovery_version == 'words-writer1-artifact-recovery/v3')
         shell: bash
         env:
           GH_TOKEN: ${{ github.token }}
@@ -140,6 +140,33 @@ jobs:
           {"actionRunId":"$EXPECTED_V2_RECOVERY_ACTION_RUN_ID","artifactId":$EXPECTED_V2_RECOVERY_ARTIFACT_ID,"headBranch":"architect/360-words-canary","headSha":"$EXPECTED_V2_RECOVERY_SOURCE_SHA","artifactDigest":"$EXPECTED_V2_RECOVERY_ARTIFACT_DIGEST"}
           JSON
 
+      - name: Download and verify exact failed v3 validation artifact
+        if: steps.control.outputs.dormant != 'true' && steps.control.outputs.recovery_version == 'words-writer1-artifact-recovery/v3-finalize'
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          EXPECTED_V3_FINALIZE_ACTION_RUN_ID: '32797811881'
+          EXPECTED_V3_FINALIZE_ARTIFACT_ID: '9545486318'
+          EXPECTED_V3_FINALIZE_SOURCE_SHA: '6d5f9e0f65af98185b6827b445cbfeff74e88ce7'
+          EXPECTED_V3_FINALIZE_ARTIFACT_DIGEST: 'sha256:23eac7a38caf588f383e424bd7bf39e5246f5634c7c06866d8e94250e6fe710e'
+        run: |
+          set -euo pipefail
+          metadata="$(gh api "repos/${GITHUB_REPOSITORY}/actions/artifacts/${EXPECTED_V3_FINALIZE_ARTIFACT_ID}")"
+          test "$(jq -r '.id' <<<"$metadata")" = "$EXPECTED_V3_FINALIZE_ARTIFACT_ID"
+          test "$(jq -r '.workflow_run.id' <<<"$metadata")" = "$EXPECTED_V3_FINALIZE_ACTION_RUN_ID"
+          test "$(jq -r '.digest' <<<"$metadata")" = "$EXPECTED_V3_FINALIZE_ARTIFACT_DIGEST"
+          run="$(gh api "repos/${GITHUB_REPOSITORY}/actions/runs/${EXPECTED_V3_FINALIZE_ACTION_RUN_ID}")"
+          test "$(jq -r '.id' <<<"$run")" = "$EXPECTED_V3_FINALIZE_ACTION_RUN_ID"
+          test "$(jq -r '.head_branch' <<<"$run")" = 'architect/360-words-canary'
+          test "$(jq -r '.head_sha' <<<"$run")" = "$EXPECTED_V3_FINALIZE_SOURCE_SHA"
+          mkdir -p canary/inputs/latest-v3-finalize-artifact
+          gh api "repos/${GITHUB_REPOSITORY}/actions/artifacts/${EXPECTED_V3_FINALIZE_ARTIFACT_ID}/zip" > canary/inputs/latest-v3-finalize.zip
+          test "$(sha256sum canary/inputs/latest-v3-finalize.zip | cut -d ' ' -f 1)" = "${EXPECTED_V3_FINALIZE_ARTIFACT_DIGEST#sha256:}"
+          unzip -q canary/inputs/latest-v3-finalize.zip -d canary/inputs/latest-v3-finalize-artifact
+          cat > canary/inputs/latest-v3-finalize-artifact/runtime/artifact-verification.json <<JSON
+          {"actionRunId":"$EXPECTED_V3_FINALIZE_ACTION_RUN_ID","artifactId":$EXPECTED_V3_FINALIZE_ARTIFACT_ID,"headBranch":"architect/360-words-canary","headSha":"$EXPECTED_V3_FINALIZE_SOURCE_SHA","artifactDigest":"$EXPECTED_V3_FINALIZE_ARTIFACT_DIGEST"}
+          JSON
+
       - name: Recover Writer1 artifact on the same Cursor thread and stop at Architect QA
         id: dispatch
         if: steps.control.outputs.dormant != 'true'
@@ -152,6 +179,7 @@ jobs:
           WRITER1_PRIOR_DISPATCH_ROOT: canary/inputs/prior-dispatch-artifact
           WRITER1_PRIOR_RECOVERY_ROOT: canary/inputs/prior-v1-recovery-artifact
           WRITER1_PRIOR_RECOVERY_V2_ROOT: canary/inputs/prior-v2-recovery-artifact
+          WRITER1_LATEST_V3_FINALIZE_ROOT: canary/inputs/latest-v3-finalize-artifact
         run: node --import tsx scripts/360-words-canary.ts --artifact-recovery
 
       - name: Write durable failure/state surface

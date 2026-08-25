@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { createHash } from "node:crypto";
 import test from "node:test";
 import {
   createCursorArtifactClient,
@@ -9,10 +10,12 @@ import {
   recoverCursorWriterArtifactForTest,
   recoverCursorWriterArtifactV2ForTest,
   recoverCursorWriterArtifactV3ForTest,
+  finalizeCursorWriterArtifactV3ForTest,
   retrieveCursorWriterOutput,
   validateCursorArtifactRecoveryReceipt,
   validateCursorArtifactRecoveryV2Receipt,
   validateCursorArtifactRecoveryV3Receipt,
+  validateCursorArtifactRecoveryV3FinalizeReceipt,
   writer1CopyProjectionDigest,
   validateCursorWriterFollowUpReceipt,
   type CursorArtifactRecoveryInput,
@@ -20,6 +23,7 @@ import {
   type CursorArtifactRecoveryPrior,
   type CursorArtifactRecoveryFailureBinding,
   type CursorArtifactRecoveryV2FailureBinding,
+  type CursorArtifactRecoveryV3FailureBinding,
   type CursorTestTransport,
   type CursorFollowUpBindings,
 } from "./cursor-writer.js";
@@ -235,6 +239,13 @@ function validateV3Output(raw: string): Record<string, any> {
   return value;
 }
 
+function artifactBindingFor(bytes: Buffer, updatedAt: string): any {
+  const sourceUrl = "https://bucket.s3.us-east-1.amazonaws.com/opaque-key?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Signature=test";
+  const download = artifactDownloadResult(artifactAgentId, "artifacts/writer1-output.json", bytes, sourceUrl);
+  const sha256 = `sha256:${createHash("sha256").update(bytes).digest("hex")}`;
+  return { path: "artifacts/writer1-output.json", size: bytes.length, sha256, contentSize: bytes.length, byteDigest: sha256, updatedAt, downloadRequest: { agentId: artifactAgentId, logicalPath: "artifacts/writer1-output.json", cursorEndpoint: `https://api.cursor.com/v1/agents/${encodeURIComponent(artifactAgentId)}/artifacts/download?path=artifacts%2Fwriter1-output.json`, method: "GET", apiVersion: "cloud-agent-api-v1" }, requestShapeDigest: download.requestShapeDigest, downloadRequestDigest: download.downloadRequestDigest, presignedUrlEvidence: download.presignedUrlEvidence, presignedUrlEvidenceDigest: download.presignedUrlEvidenceDigest };
+}
+
 async function recoverV3(before: Buffer, next: Buffer, counters: { creates: number; resumes: number; sends: number }, available = true, store = createMemoryCursorReceiptStore()) {
   const harness = v3Harness(before, next, counters, available);
   const result = await recoverCursorWriterArtifactV3ForTest({ env, receiptStore: store, prior: artifactPrior, previousRecoveryV2, recoveryVersion: "words-writer1-artifact-recovery/v3", prompt: "canonical v3 metadata-only recovery", transport: harness.transport, artifactClient: harness.client, validateBeforeOutput: (raw) => JSON.parse(raw), validateOutput: validateV3Output, artifactBackoffMs: [0] });
@@ -278,6 +289,41 @@ test("v3 crash recovery reattaches the same follow-up and never resends", async 
   const claim = store.claims.values().next().value as any; claim.leaseUntil = new Date(0).toISOString(); store.claims.set(claim.key, claim); harness.state.nextBytes = corrected; harness.state.bytes = corrected; harness.state.updatedAt = "2026-08-24T01:02:00.000Z";
   const recovered = await recoverCursorWriterArtifactV3ForTest({ env, receiptStore: store, prior: artifactPrior, previousRecoveryV2, recoveryVersion: "words-writer1-artifact-recovery/v3", prompt: "canonical v3 metadata-only recovery", transport: harness.transport, artifactClient: harness.client, validateBeforeOutput: (raw) => JSON.parse(raw), validateOutput: validateV3Output, artifactBackoffMs: [0] });
   assert.equal(counters.sends, 1); assert.equal(counters.resumes, 2); assert.equal(recovered.receipt.recoveryVersion, "words-writer1-artifact-recovery/v3");
+});
+
+test("v3-finalize validates the existing artifact with zero Cursor messages", async () => {
+  const before = Buffer.from(JSON.stringify(v3Output(false)), "utf8");
+  const after = Buffer.from(JSON.stringify(v3Output(true)), "utf8");
+  const beforeArtifact = artifactBindingFor(before, "2026-08-25T00:56:02.000Z");
+  const previousRecoveryV3: CursorArtifactRecoveryV3FailureBinding = {
+    recoveryVersion: "words-writer1-artifact-recovery/v3", actionRunId: "32797811881", artifactId: 9545486318, artifactDigest: "sha256:23eac7a38caf588f383e424bd7bf39e5246f5634c7c06866d8e94250e6fe710e", sourceBranch: "architect/360-words-canary", sourceSha: "6d5f9e0f65af98185b6827b445cbfeff74e88ce7", agentId: artifactAgentId, runId: "run-47a109e2-4fd4-48df-a727-8a92a76cc472", threadUrl: artifactThreadUrl, promptDigest: digestWriter1ArtifactRecoveryPrompt("v3"), failureCode: "WRITER1_OUTPUT_INVALID", inputDigest: artifactPrior.inputDigest, beforeArtifact, copyProjectionDigest: writer1CopyProjectionDigest(JSON.parse(before.toString("utf8"))),
+  };
+  const state = { lists: 0, downloads: 0 };
+  const client: CursorArtifactClient = {
+    async list() { state.lists += 1; return [{ path: "artifacts/writer1-output.json", size: after.length, updatedAt: "2026-08-25T01:30:42.000Z" }]; },
+    async download(id, artifactPath) { state.downloads += 1; return artifactDownloadResult(id, artifactPath, after, "https://bucket.s3.us-east-1.amazonaws.com/opaque-key?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Signature=test"); },
+  };
+  const prior = { ...artifactPrior, actionRunId: "32797811881", artifactId: 9545486318, runId: "run-47a109e2-4fd4-48df-a727-8a92a76cc472", sourceSha: "6d5f9e0f65af98185b6827b445cbfeff74e88ce7", promptDigest: digestWriter1ArtifactRecoveryPrompt("v3") };
+  const result = await finalizeCursorWriterArtifactV3ForTest({ env, receiptStore: createMemoryCursorReceiptStore(), prior, previousRecoveryV3, recoveryVersion: "words-writer1-artifact-recovery/v3-finalize", promptDigest: digestWriter1ArtifactRecoveryPrompt("v3"), artifactClient: client, validateOutput: (output) => validateV3Output(String(output)) });
+  assert.deepEqual(state, { lists: 1, downloads: 1 });
+  assert.equal(result.receipt.jobId, prior.runId);
+  assert.equal(result.receipt.recoveryRunId, prior.runId);
+  assert.equal(result.receipt.mode, "validation-only-artifact-recovery");
+  assert.equal((result.receipt as any).copyProjectionDigest, previousRecoveryV3.copyProjectionDigest);
+  validateCursorArtifactRecoveryV3FinalizeReceipt(result.receipt, prior, previousRecoveryV3, digestWriter1ArtifactRecoveryPrompt("v3"), env.CURSOR_API_KEY);
+});
+
+test("v3-finalize fails closed on stale or changed copy and cannot message", async () => {
+  const before = Buffer.from(JSON.stringify(v3Output(true)), "utf8");
+  const changed = Buffer.from(JSON.stringify(v3Output(true, "word")), "utf8");
+  const makePrevious = (bytes: Buffer): CursorArtifactRecoveryV3FailureBinding => ({ recoveryVersion: "words-writer1-artifact-recovery/v3", actionRunId: "32797811881", artifactId: 9545486318, artifactDigest: "sha256:23eac7a38caf588f383e424bd7bf39e5246f5634c7c06866d8e94250e6fe710e", sourceBranch: "architect/360-words-canary", sourceSha: "6d5f9e0f65af98185b6827b445cbfeff74e88ce7", agentId: artifactAgentId, runId: "run-47a109e2-4fd4-48df-a727-8a92a76cc472", threadUrl: artifactThreadUrl, promptDigest: digestWriter1ArtifactRecoveryPrompt("v3"), failureCode: "WRITER1_OUTPUT_INVALID", inputDigest: artifactPrior.inputDigest, beforeArtifact: artifactBindingFor(bytes, "2026-08-25T00:56:02.000Z"), copyProjectionDigest: writer1CopyProjectionDigest(JSON.parse(bytes.toString("utf8"))) });
+  for (const [label, current, expected] of [["stale", before, before], ["copy changed", changed, before]] as const) {
+    const state = { lists: 0, downloads: 0 }; const client: CursorArtifactClient = { async list() { state.lists += 1; return [{ path: "artifacts/writer1-output.json", size: current.length, updatedAt: "2026-08-25T00:56:02.000Z" }]; }, async download(id, artifactPath) { state.downloads += 1; return artifactDownloadResult(id, artifactPath, current, "https://bucket.s3.us-east-1.amazonaws.com/opaque-key?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Signature=test"); } };
+    const store = createMemoryCursorReceiptStore(); const prior = { ...artifactPrior, actionRunId: "32797811881", artifactId: 9545486318, runId: "run-47a109e2-4fd4-48df-a727-8a92a76cc472", sourceSha: "6d5f9e0f65af98185b6827b445cbfeff74e88ce7", promptDigest: digestWriter1ArtifactRecoveryPrompt("v3") };
+    await assert.rejects(() => finalizeCursorWriterArtifactV3ForTest({ env, receiptStore: store, prior, previousRecoveryV3: makePrevious(expected), recoveryVersion: "words-writer1-artifact-recovery/v3-finalize", promptDigest: digestWriter1ArtifactRecoveryPrompt("v3"), artifactClient: client, validateOutput: (output) => validateV3Output(String(output)) }), label === "stale" ? /stale/u : /copy projection changed/u);
+    assert.deepEqual(state, { lists: 1, downloads: 1 }, label);
+    assert.equal([...store.records.values()].some((value: any) => value.recoveryVersion === "words-writer1-artifact-recovery/v3-finalize"), false, label);
+  }
 });
 
 test("artifact recovery rejects a summary artifact without a completed receipt, then reattaches the persisted run", async () => {

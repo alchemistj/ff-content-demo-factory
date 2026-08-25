@@ -11,6 +11,8 @@ export {
   createMemoryCursorReceiptStore,
   recoverCursorWriterArtifactV2,
   recoverCursorWriterArtifactV3,
+  finalizeCursorWriterArtifactV3,
+  validateCursorArtifactRecoveryV3FinalizeReceipt,
   writer1CopyProjection,
   writer1CopyProjectionDigest,
   writer1MetadataChangeDigest,
@@ -32,4 +34,7 @@ export type {
   CursorArtifactRecoveryFailureBinding,
   CursorArtifactRecoveryV2Input,
   CursorArtifactRecoveryV2Receipt,
+  CursorArtifactRecoveryV3FailureBinding,
+  CursorArtifactRecoveryV3FinalizeInput,
+  CursorArtifactRecoveryV3FinalizeReceipt,
 } from './cursor-writer.js';

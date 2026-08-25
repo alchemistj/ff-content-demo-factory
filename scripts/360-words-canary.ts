@@ -2,7 +2,7 @@ import { createHash } from "node:crypto";
 import { existsSync, readFileSync } from "node:fs";
 import * as fs from "node:fs/promises";
 import * as path from "node:path";
-import { createCursorWriterExecutor, createJsonCursorReceiptStore, recoverCursorWriterArtifactV2, recoverCursorWriterArtifactV3, validateCursorArtifactRecoveryV2Receipt, validateCursorArtifactRecoveryV3Receipt, validateCursorWriterReceipt, type CursorArtifactRecoveryFailureBinding, type CursorArtifactRecoveryPrior, type CursorArtifactRecoveryV2FailureBinding, type CursorDispatchNotice, type CursorFollowUpBindings, type CursorWriterReceipt } from "../src/pipeline/cursor-writer.js";
+import { createCursorWriterExecutor, createJsonCursorReceiptStore, finalizeCursorWriterArtifactV3, recoverCursorWriterArtifactV2, recoverCursorWriterArtifactV3, validateCursorArtifactRecoveryV2Receipt, validateCursorArtifactRecoveryV3FinalizeReceipt, validateCursorArtifactRecoveryV3Receipt, validateCursorWriterReceipt, type CursorArtifactRecoveryFailureBinding, type CursorArtifactRecoveryPrior, type CursorArtifactRecoveryV2FailureBinding, type CursorArtifactRecoveryV3FailureBinding, type CursorDispatchNotice, type CursorFollowUpBindings, type CursorWriterReceipt } from "../src/pipeline/cursor-writer.js";
 import { digestOf } from "../src/contracts/digests.js";
 import { buildWriter1ArtifactRecoveryPrompt, digestWriter1ArtifactRecoveryPrompt } from "./360-words-recovery-prompt.mjs";
 
@@ -42,6 +42,15 @@ export const ARTIFACT_RECOVERY_V3_SOURCE_SHA = "29311637f3f4adc04f3dd9ca7bfc54f0
 export const ARTIFACT_RECOVERY_V3_RUN_ID = "run-04370412-4486-4ecf-8045-e7f23554071b";
 export const ARTIFACT_RECOVERY_V3_FAILURE_CODE = "WRITER1_OUTPUT_INVALID" as const;
 export const ARTIFACT_RECOVERY_V3_INPUT_DIGEST = "sha256:3ce24295a62cc863e6023b57ada26b0b88019b86e397e9c8e0ee98d1a612eda6";
+export const ARTIFACT_RECOVERY_V3_FINALIZE_RECOVERY_VERSION = "words-writer1-artifact-recovery/v3-finalize" as const;
+export const ARTIFACT_RECOVERY_V3_FINALIZE_ACTION_RUN_ID = "32797811881";
+export const ARTIFACT_RECOVERY_V3_FINALIZE_ARTIFACT_ID = 9545486318;
+export const ARTIFACT_RECOVERY_V3_FINALIZE_ARTIFACT_DIGEST = "sha256:23eac7a38caf588f383e424bd7bf39e5246f5634c7c06866d8e94250e6fe710e";
+export const ARTIFACT_RECOVERY_V3_FINALIZE_SOURCE_SHA = "6d5f9e0f65af98185b6827b445cbfeff74e88ce7";
+export const ARTIFACT_RECOVERY_V3_FINALIZE_RUN_ID = "run-47a109e2-4fd4-48df-a727-8a92a76cc472";
+export const ARTIFACT_RECOVERY_V3_FINALIZE_FAILURE_CODE = "WRITER1_OUTPUT_INVALID" as const;
+export const ARTIFACT_RECOVERY_V3_FINALIZE_BEFORE_ARTIFACT_DIGEST = "sha256:58338da9ffc6d8bd8b5ebc0fa9a1af71b4eceee0b86cd126d9c9243842c80178";
+export const ARTIFACT_RECOVERY_V3_FINALIZE_COPY_PROJECTION_DIGEST = "sha256:c1e33b69b4021623b917060efce36d8b91973deaf7db724c2183635741973d1b";
 type Dict = Record<string, any>;
 
 function jsonFile(root: string, relative: string): string { return path.join(root, relative); }
@@ -133,6 +142,23 @@ export function parseAndValidateWriter1Output(raw: unknown, projection: Dict): D
   if (parsed.pages.length !== 2) invalidWriter1Output("Writer1 output must contain exactly two service pages");
   const evidenceByRoute = new Map<string, Dict[]>((projection.services || []).map((service: Dict) => [service.page.url, service.reviewEvidence || []]));
   const serviceByRoute = new Map<string, Dict>((projection.services || []).map((service: Dict) => [service.page.url, service]));
+  // Folded review evidence is a separate authorization path. It is not enough
+  // for a review to appear in sealedRefs: the sealed folded entry must still
+  // be folded, target this page's canonical service, authorize the same parent,
+  // and list the review ID in both its direct and supporting ledgers.
+  for (const service of projection.services || []) {
+    const targetCanonicalServiceId = String(service.comparison?.canonicalServiceId || service.page.url.slice(1));
+    const folded = (projection.foldedSupport || []).filter((entry: Dict) => entry.status === "folded" && entry.canonicalServiceId === targetCanonicalServiceId && entry.supportingEvidence?.allowedParentCanonicalId === targetCanonicalServiceId);
+    const foldedEvidence = folded.flatMap((entry: Dict) => {
+      const directIds = new Set((Array.isArray(entry.directEvidenceReviewIds) ? entry.directEvidenceReviewIds : []).filter((id: unknown): id is string => stringValue(id)));
+      const supportingIds = new Set((Array.isArray(entry.supportingEvidence?.reviewIds) ? entry.supportingEvidence.reviewIds : []).filter((id: unknown): id is string => stringValue(id)));
+      return (Array.isArray(entry.reviewEvidence) ? entry.reviewEvidence : []).filter((evidence: Dict) => {
+        const id = evidence.review?.id ?? evidence.review?.reviewId;
+        return stringValue(id) && directIds.has(id) && supportingIds.has(id);
+      });
+    });
+    evidenceByRoute.set(service.page.url, [...(evidenceByRoute.get(service.page.url) || []), ...foldedEvidence]);
+  }
   const sealedRefs = new Set<string>((projection.sealedRefs || []).filter((ref: unknown): ref is string => stringValue(ref)));
   const seen = new Set<string>();
   for (const page of parsed.pages) {
@@ -162,7 +188,7 @@ export function parseAndValidateWriter1Output(raw: unknown, projection: Dict): D
         if (!stringValue(reviewId) || !stringValue(quote)) invalidWriter1Output("Writer1 review binding requires review ID and quote");
         if (String(stableRef) !== String(reviewId)) invalidWriter1Output("Writer1 review provenance ref must equal its stable review reference");
         const source = allowed.find((entry) => String(entry.review?.id ?? entry.review?.reviewId) === String(reviewId));
-        if (!source) invalidWriter1Output(`Writer1 review binding references an unapproved review: ${reviewId}`);
+        if (!source || source.judgment?.authoritative !== true) invalidWriter1Output(`Writer1 review binding references an unapproved or non-authoritative review: ${reviewId}`);
         const sourceText = String(source.review?.text ?? source.review?.exactText ?? source.review?.reviewText ?? "");
         if (!sourceText || !normalized(sourceText).includes(normalized(String(quote)))) invalidWriter1Output(`Writer1 quote is not bound to the source review: ${reviewId}`);
         if (!stringValue(placement.attribution ?? placement.reviewer ?? placement.author)) invalidWriter1Output(`Writer1 review binding is missing attribution: ${reviewId}`);
@@ -323,6 +349,24 @@ export function validatePriorArtifactRecoveryV2Failure(root: string): CursorArti
   return { recoveryVersion: ARTIFACT_RECOVERY_V2_RECOVERY_VERSION, actionRunId: ARTIFACT_RECOVERY_V3_ACTION_RUN_ID, artifactId: ARTIFACT_RECOVERY_V3_ARTIFACT_ID, artifactDigest: ARTIFACT_RECOVERY_V3_ARTIFACT_DIGEST, sourceBranch: ARTIFACT_RECOVERY_SOURCE_BRANCH, sourceSha: ARTIFACT_RECOVERY_V3_SOURCE_SHA, agentId: ARTIFACT_RECOVERY_AGENT_ID, runId: ARTIFACT_RECOVERY_V3_RUN_ID, threadUrl: ARTIFACT_RECOVERY_THREAD_URL, promptDigest: v2PromptDigest, failureCode: ARTIFACT_RECOVERY_V3_FAILURE_CODE, inputDigest: ARTIFACT_RECOVERY_V3_INPUT_DIGEST };
 }
 
+export function validatePriorArtifactRecoveryV3Failure(root: string): CursorArtifactRecoveryV3FailureBinding & { prior: CursorArtifactRecoveryPrior } {
+  const dispatch = readJson(root, "runtime/dispatch-receipt.json");
+  const failure = readJson(root, "runtime/failure.json");
+  const state = readJson(root, "runtime/state.json");
+  const verification = readJson(root, "runtime/artifact-verification.json");
+  const receipts = readJson(root, "runtime/cursor-receipts.json");
+  const promptDigest = digestWriter1ArtifactRecoveryPrompt("v3");
+  if (verification.actionRunId !== ARTIFACT_RECOVERY_V3_FINALIZE_ACTION_RUN_ID || Number(verification.artifactId) !== ARTIFACT_RECOVERY_V3_FINALIZE_ARTIFACT_ID || verification.headBranch !== ARTIFACT_RECOVERY_SOURCE_BRANCH || verification.headSha !== ARTIFACT_RECOVERY_V3_FINALIZE_SOURCE_SHA || verification.artifactDigest !== ARTIFACT_RECOVERY_V3_FINALIZE_ARTIFACT_DIGEST) throw new Error("latest v3 failure artifact metadata is not verified");
+  if (dispatch.schemaVersion !== "words-canary-dispatch/v2" || dispatch.status !== "dispatched" || dispatch.stage !== "writer1" || dispatch.provider !== "cursor-sdk" || dispatch.requestedModel !== "cursor-grok-4.6-high" || dispatch.officialModel !== "grok-4.6" || dispatch.fast !== false || dispatch.effort !== "high" || dispatch.agentId !== ARTIFACT_RECOVERY_AGENT_ID || dispatch.jobId !== ARTIFACT_RECOVERY_V3_FINALIZE_RUN_ID || dispatch.threadUrl !== ARTIFACT_RECOVERY_THREAD_URL || dispatch.promptDigest !== promptDigest || dispatch.inputDigest !== ARTIFACT_RECOVERY_V3_INPUT_DIGEST) throw new Error("latest v3 failure dispatch identity/model/thread/run/input binding is invalid");
+  if (failure.status !== "failed" || failure.stage !== "writer1" || failure.errorCode !== ARTIFACT_RECOVERY_V3_FINALIZE_FAILURE_CODE || failure.writer2Blocked !== true || state.status !== "writer1-failed" || state.stage !== "writer1" || state.errorCode !== ARTIFACT_RECOVERY_V3_FINALIZE_FAILURE_CODE || state.writer2Blocked !== true || state.nextStage !== null) throw new Error("latest v3 failure did not fail closed with Writer2 blocked");
+  const key = `${ARTIFACT_RECOVERY_V3_RUN_ID}:writer1:artifact-recovery:v3:${ARTIFACT_RECOVERY_V3_INPUT_DIGEST}:${promptDigest}`;
+  const claim = receipts.claims?.[key];
+  if (!claim || claim.phase !== "waiting" || claim.agentId !== ARTIFACT_RECOVERY_AGENT_ID || claim.jobId !== ARTIFACT_RECOVERY_V3_FINALIZE_RUN_ID || claim.requestedAgentId !== ARTIFACT_RECOVERY_AGENT_ID || claim.copyProjectionDigest !== ARTIFACT_RECOVERY_V3_FINALIZE_COPY_PROJECTION_DIGEST || claim.recoveryBeforeArtifact?.sha256 !== ARTIFACT_RECOVERY_V3_FINALIZE_BEFORE_ARTIFACT_DIGEST || claim.recoveryBeforeArtifact?.byteDigest !== ARTIFACT_RECOVERY_V3_FINALIZE_BEFORE_ARTIFACT_DIGEST || claim.recoveryBeforeArtifact?.path !== ARTIFACT_RECOVERY_PATH) throw new Error("latest v3 failure claim is missing the exact waiting run or frozen before-artifact binding");
+  if (receipts.receipts?.[key] !== undefined) throw new Error("latest v3 failure artifact unexpectedly contains a completed receipt");
+  const prior: CursorArtifactRecoveryPrior = { actionRunId: ARTIFACT_RECOVERY_V3_FINALIZE_ACTION_RUN_ID, artifactId: ARTIFACT_RECOVERY_V3_FINALIZE_ARTIFACT_ID, runId: ARTIFACT_RECOVERY_V3_FINALIZE_RUN_ID, agentId: ARTIFACT_RECOVERY_AGENT_ID, threadUrl: ARTIFACT_RECOVERY_THREAD_URL, inputDigest: ARTIFACT_RECOVERY_V3_INPUT_DIGEST, promptDigest, requestDigest: String(dispatch.requestDigest), requestedModel: "cursor-grok-4.6-high", resolvedModel: "grok-4.6", modelParams: dispatch.modelParams, registryDigest: dispatch.registryDigest, effort: "high", effortAttestationSource: dispatch.effortAttestationSource, fast: false, sourceBranch: ARTIFACT_RECOVERY_SOURCE_BRANCH, sourceSha: ARTIFACT_RECOVERY_V3_FINALIZE_SOURCE_SHA, sealedHandoffDigest: String(dispatch.sealedHandoffDigest || "") };
+  return { recoveryVersion: ARTIFACT_RECOVERY_V3_RECOVERY_VERSION, actionRunId: ARTIFACT_RECOVERY_V3_FINALIZE_ACTION_RUN_ID, artifactId: ARTIFACT_RECOVERY_V3_FINALIZE_ARTIFACT_ID, artifactDigest: ARTIFACT_RECOVERY_V3_FINALIZE_ARTIFACT_DIGEST, sourceBranch: ARTIFACT_RECOVERY_SOURCE_BRANCH, sourceSha: ARTIFACT_RECOVERY_V3_FINALIZE_SOURCE_SHA, agentId: ARTIFACT_RECOVERY_AGENT_ID, runId: ARTIFACT_RECOVERY_V3_FINALIZE_RUN_ID, threadUrl: ARTIFACT_RECOVERY_THREAD_URL, promptDigest, failureCode: ARTIFACT_RECOVERY_V3_FINALIZE_FAILURE_CODE, inputDigest: ARTIFACT_RECOVERY_V3_INPUT_DIGEST, beforeArtifact: claim.recoveryBeforeArtifact, copyProjectionDigest: claim.copyProjectionDigest, prior };
+}
+
 async function runArtifactRecoveryV3(root: string, control: Dict): Promise<{ status: string; stage: string; threadUrl?: string; recoveryRunId?: string }> {
   const recoveryPins = control.policy?.recovery;
   const v3Prompt = buildWriter1ArtifactRecoveryPrompt("v3");
@@ -354,11 +398,38 @@ async function runArtifactRecoveryV3(root: string, control: Dict): Promise<{ sta
   return { status: "awaiting-architect-qa", stage: "writer1", threadUrl: result.threadUrl, recoveryRunId: result.receipt.recoveryRunId };
 }
 
+async function runArtifactRecoveryV3Finalize(root: string, control: Dict): Promise<{ status: string; stage: string; threadUrl?: string; recoveryRunId?: string }> {
+  const recoveryPins = control.policy?.recovery;
+  const promptDigest = digestWriter1ArtifactRecoveryPrompt("v3");
+  if (control.policy?.mode !== "validation-only" || recoveryPins?.recoveryVersion !== ARTIFACT_RECOVERY_V3_FINALIZE_RECOVERY_VERSION || recoveryPins?.priorRecoveryV3ActionRunId !== ARTIFACT_RECOVERY_V3_FINALIZE_ACTION_RUN_ID || Number(recoveryPins?.priorRecoveryV3ArtifactId) !== ARTIFACT_RECOVERY_V3_FINALIZE_ARTIFACT_ID || recoveryPins?.priorRecoveryV3ArtifactDigest !== ARTIFACT_RECOVERY_V3_FINALIZE_ARTIFACT_DIGEST || recoveryPins?.priorRecoveryV3SourceSha !== ARTIFACT_RECOVERY_V3_FINALIZE_SOURCE_SHA || recoveryPins?.priorRecoveryV3AgentId !== ARTIFACT_RECOVERY_AGENT_ID || recoveryPins?.priorRecoveryV3RunId !== ARTIFACT_RECOVERY_V3_FINALIZE_RUN_ID || recoveryPins?.priorRecoveryV3ThreadUrl !== ARTIFACT_RECOVERY_THREAD_URL || recoveryPins?.priorRecoveryV3PromptDigest !== promptDigest || recoveryPins?.priorRecoveryV3FailureCode !== ARTIFACT_RECOVERY_V3_FINALIZE_FAILURE_CODE || recoveryPins?.priorRecoveryV3InputDigest !== ARTIFACT_RECOVERY_V3_INPUT_DIGEST || recoveryPins?.priorBeforeArtifactByteDigest !== ARTIFACT_RECOVERY_V3_FINALIZE_BEFORE_ARTIFACT_DIGEST || recoveryPins?.frozenCopyProjectionDigest !== ARTIFACT_RECOVERY_V3_FINALIZE_COPY_PROJECTION_DIGEST || recoveryPins?.absoluteArtifactPath !== ARTIFACT_RECOVERY_V2_ABSOLUTE_ARTIFACT_PATH || recoveryPins?.apiArtifactPath !== ARTIFACT_RECOVERY_PATH || recoveryPins?.promptDigest !== promptDigest || typeof recoveryPins?.idempotencyKey !== "string" || recoveryPins.idempotencyKey !== `${ARTIFACT_RECOVERY_V3_FINALIZE_RUN_ID}:writer1:artifact-recovery:v3-finalize:${ARTIFACT_RECOVERY_V3_INPUT_DIGEST}:${promptDigest}` || recoveryPins.allowFollowUp !== undefined || recoveryPins.allowResume !== undefined || recoveryPins.allowCreate !== undefined || recoveryPins.send !== undefined) throw new Error("active validation-only v3-finalize wake is missing exact failure, frozen-copy, no-message, or idempotency pins");
+  if (control.restore !== null || typeof control.wakeNonce !== "string" || !/^[A-Za-z0-9][A-Za-z0-9._-]{15,127}$/u.test(control.wakeNonce)) throw new Error("active validation-only v3-finalize wake requires a unique nonce and no restore");
+  if (process.env.CURSOR_MODEL !== "cursor-grok-4.6-high" || !process.env.CURSOR_API_KEY || process.env.CURSOR_FAST !== "false") throw new Error("Cursor production environment must provide exact model, API key, and fast=false");
+  const latestRoot = process.env.WRITER1_LATEST_V3_FINALIZE_ROOT;
+  if (!latestRoot) throw new Error("latest v3 failure artifact must be restored before validation-only finalization");
+  const sealed = validateSealed(root);
+  const payload = writer1Projection(sealed);
+  const verified = validatePriorArtifactRecoveryV3Failure(latestRoot);
+  if (verified.prior.inputDigest !== digestOf(payload) || (verified.prior.sealedHandoffDigest && verified.prior.sealedHandoffDigest !== sealed.handoff.resealDigest)) throw new Error("latest v3 failure is not bound to the current sealed 360 handoff");
+  verified.prior.sealedHandoffDigest = sealed.handoff.resealDigest;
+  const previousRecoveryV3: CursorArtifactRecoveryV3FailureBinding = { recoveryVersion: ARTIFACT_RECOVERY_V3_RECOVERY_VERSION, actionRunId: verified.actionRunId, artifactId: verified.artifactId, artifactDigest: verified.artifactDigest, sourceBranch: verified.sourceBranch, sourceSha: verified.sourceSha, agentId: verified.agentId, runId: verified.runId, threadUrl: verified.threadUrl, promptDigest: verified.promptDigest, failureCode: verified.failureCode, inputDigest: verified.inputDigest, beforeArtifact: verified.beforeArtifact, copyProjectionDigest: verified.copyProjectionDigest };
+  await writeJson(jsonFile(root, "canary/runtime/prior-recovery-v3-verification.json"), { status: "verified", previousRecoveryV3 });
+  await writeJson(jsonFile(root, "canary/runtime/state.json"), { status: "writer1-artifact-v3-finalize-validating", stage: "writer1", recoveryVersion: ARTIFACT_RECOVERY_V3_FINALIZE_RECOVERY_VERSION, runId: sealed.handoff.runId, sealedHandoffDigest: sealed.handoff.resealDigest, priorRunId: verified.prior.runId, priorAgentId: verified.prior.agentId, priorThreadUrl: verified.prior.threadUrl, nextStage: null, writer2Blocked: true, messagesSent: 0 });
+  const result = await finalizeCursorWriterArtifactV3({ receiptStore: createJsonCursorReceiptStore(jsonFile(root, "canary/runtime/cursor-receipts.json")), prior: verified.prior, previousRecoveryV3, recoveryVersion: ARTIFACT_RECOVERY_V3_FINALIZE_RECOVERY_VERSION, promptDigest, validateOutput: (output) => parseAndValidateWriter1Output(output, payload) });
+  const parsed = result.output as Dict;
+  validateCursorArtifactRecoveryV3FinalizeReceipt(result.receipt, verified.prior, previousRecoveryV3, promptDigest, process.env.CURSOR_API_KEY);
+  await writeJson(jsonFile(root, "canary/runtime/writer1-recovery-receipt.json"), result.receipt);
+  await writeJson(jsonFile(root, "canary/runtime/writer1-validation.json"), { status: "valid", mode: "validation-only", schemaVersion: parsed.schemaVersion, routes: parsed.pages.map((page: Dict) => page.url), outputDigest: result.receipt.outputDigest, beforeArtifactDigest: result.receipt.beforeArtifact.sha256, afterArtifactDigest: result.receipt.afterArtifact.sha256, copyProjectionDigest: result.receipt.copyProjectionDigest, metadataChangeDigest: result.receipt.metadataChangeDigest, recoveryRunId: result.receipt.recoveryRunId, agentId: result.receipt.agentId, threadUrl: result.threadUrl, nextStage: null, writer2Blocked: true, messagesSent: 0 });
+  await writeJson(jsonFile(root, "canary/outputs/writer1-output.json"), parsed);
+  await writeJson(jsonFile(root, "canary/runtime/state.json"), { status: "awaiting-architect-qa", stage: "writer1", recoveryVersion: ARTIFACT_RECOVERY_V3_FINALIZE_RECOVERY_VERSION, runId: sealed.handoff.runId, sealedHandoffDigest: sealed.handoff.resealDigest, threadUrl: result.threadUrl, agentId: result.receipt.agentId, recoveryRunId: result.receipt.recoveryRunId, receipt: result.receipt, beforeArtifactDigest: result.receipt.beforeArtifact.sha256, afterArtifactDigest: result.receipt.afterArtifact.sha256, copyProjectionDigest: result.receipt.copyProjectionDigest, nextStage: null, writer2Blocked: true, messagesSent: 0 });
+  return { status: "awaiting-architect-qa", stage: "writer1", threadUrl: result.threadUrl, recoveryRunId: result.receipt.recoveryRunId };
+}
+
 export async function runArtifactRecovery(root = process.cwd()): Promise<{ status: string; stage: string; threadUrl?: string; recoveryRunId?: string }> {
   const control = readJson(root, ".factory-wake/360-words-control.json");
   if (control.requestedBy !== "architect" || control.stage !== "writer1" || control.policy?.writer1Only !== true || control.policy?.provider !== "cursor-sdk" || control.policy?.model !== "cursor-grok-4.6-high" || control.policy?.fast !== false) throw new Error("360 canary control is not the immutable Writer1 policy");
   if (control.wakeNonce === DORMANT_NONCE) return { status: "dormant", stage: "writer1" };
-  if (control.policy?.mode !== "artifact-recovery") throw new Error("active 360 canary wake must explicitly select artifact-recovery mode");
+  if (control.policy?.mode !== "artifact-recovery" && control.policy?.mode !== "validation-only") throw new Error("active 360 canary wake must explicitly select artifact-recovery or validation-only mode");
+  if (control.policy?.recovery?.recoveryVersion === ARTIFACT_RECOVERY_V3_FINALIZE_RECOVERY_VERSION) return runArtifactRecoveryV3Finalize(root, control);
   if (control.policy?.recovery?.recoveryVersion === ARTIFACT_RECOVERY_V3_RECOVERY_VERSION) return runArtifactRecoveryV3(root, control);
   const recoveryPins = control.policy?.recovery;
   const v1PromptDigest = digestOf(buildWriter1ArtifactRecoveryPrompt("v1"));

@@ -45,6 +45,23 @@ export const EXPECTED_RECOVERY_V3 = Object.freeze({
   absoluteArtifactPath: "/opt/cursor/artifacts/writer1-output.json",
   apiArtifactPath: "artifacts/writer1-output.json",
 });
+export const EXPECTED_RECOVERY_V3_FINALIZE = Object.freeze({
+  recoveryVersion: "words-writer1-artifact-recovery/v3-finalize",
+  priorRecoveryV3ActionRunId: "32797811881",
+  priorRecoveryV3ArtifactId: 9545486318,
+  priorRecoveryV3ArtifactDigest: "sha256:23eac7a38caf588f383e424bd7bf39e5246f5634c7c06866d8e94250e6fe710e",
+  priorRecoveryV3SourceSha: "6d5f9e0f65af98185b6827b445cbfeff74e88ce7",
+  priorRecoveryV3AgentId: "bc-30fc8ffa-2005-44b9-8fc7-48ddd9c3bcc8",
+  priorRecoveryV3RunId: "run-47a109e2-4fd4-48df-a727-8a92a76cc472",
+  priorRecoveryV3ThreadUrl: "https://cursor.com/agents/bc-30fc8ffa-2005-44b9-8fc7-48ddd9c3bcc8",
+  priorRecoveryV3PromptDigest: "sha256:b2ef742380aeb7b3b7ea020479ece673130341a16273fe67b2a3ffd2936a6f6d",
+  priorRecoveryV3FailureCode: "WRITER1_OUTPUT_INVALID",
+  priorRecoveryV3InputDigest: "sha256:3ce24295a62cc863e6023b57ada26b0b88019b86e397e9c8e0ee98d1a612eda6",
+  priorBeforeArtifactByteDigest: "sha256:58338da9ffc6d8bd8b5ebc0fa9a1af71b4eceee0b86cd126d9c9243842c80178",
+  frozenCopyProjectionDigest: "sha256:c1e33b69b4021623b917060efce36d8b91973deaf7db724c2183635741973d1b",
+  absoluteArtifactPath: "/opt/cursor/artifacts/writer1-output.json",
+  apiArtifactPath: "artifacts/writer1-output.json",
+});
 
 export function validateControl(control, input = {}) {
   if (!control || typeof control !== "object") throw new Error("canary control must be an object");
@@ -53,7 +70,7 @@ export function validateControl(control, input = {}) {
   if (control.policy?.writer1Only !== true || control.policy?.provider !== "cursor-sdk" || control.policy?.model !== "cursor-grok-4.6-high" || control.policy?.fast !== false) throw new Error("immutable Writer1 policy mismatch");
   if (control.restore !== null) throw new Error("Writer1 may not restore a previous artifact");
   if (control.wakeNonce === DORMANT_NONCE) return { dormant: true, stage: "writer1" };
-  if (control.policy?.mode !== "artifact-recovery") throw new Error("active Writer1 wake must explicitly select artifact-recovery mode");
+  if (control.policy?.mode !== "artifact-recovery" && control.policy?.mode !== "validation-only") throw new Error("active Writer1 wake must explicitly select artifact-recovery or validation-only mode");
   if (typeof control.wakeNonce !== "string" || !/^[A-Za-z0-9][A-Za-z0-9._-]{15,127}$/u.test(control.wakeNonce)) throw new Error("invalid wake nonce");
   const changedPaths = Array.isArray(input.changedPaths) ? input.changedPaths : [];
   if (changedPaths.length !== 1 || changedPaths[0] !== CONTROL_PATH) throw new Error("active wake must change only the control file");
@@ -66,6 +83,8 @@ export function validateControl(control, input = {}) {
   const v3PromptDigest = digestWriter1ArtifactRecoveryPrompt("v3");
   if (recovery.recoveryVersion === "words-writer1-artifact-recovery/v3") {
     if (Object.entries(EXPECTED_RECOVERY_V3).some(([key, value]) => recovery[key] !== value) || recovery.priorRecoveryV2PromptDigest !== v2PromptDigest || typeof recovery.promptDigest !== "string" || recovery.promptDigest !== v3PromptDigest || typeof recovery.idempotencyKey !== "string" || !/^[^:\s]+:writer1:artifact-recovery:v3:sha256:[0-9a-f]{64}:sha256:[0-9a-f]{64}$/u.test(recovery.idempotencyKey) || !recovery.idempotencyKey.endsWith(`:${v3PromptDigest}`)) throw new Error("active artifact-recovery v3 wake is missing the exact v2 failure, absolute-path, canonical-prompt, or idempotency pins");
+  } else if (recovery.recoveryVersion === "words-writer1-artifact-recovery/v3-finalize") {
+    if (control.policy?.mode !== "validation-only" || Object.entries(EXPECTED_RECOVERY_V3_FINALIZE).some(([key, value]) => recovery[key] !== value) || recovery.promptDigest !== v3PromptDigest || recovery.priorRecoveryV3PromptDigest !== v3PromptDigest || typeof recovery.idempotencyKey !== "string" || !/^[^:\s]+:writer1:artifact-recovery:v3-finalize:sha256:[0-9a-f]{64}:sha256:[0-9a-f]{64}$/u.test(recovery.idempotencyKey) || !recovery.idempotencyKey.endsWith(`:${v3PromptDigest}`) || recovery.allowFollowUp !== undefined || recovery.allowResume !== undefined || recovery.allowCreate !== undefined || recovery.send !== undefined) throw new Error("active validation-only v3-finalize wake is missing exact history, frozen-copy, no-message, canonical-prompt, or idempotency pins");
   } else if (Object.entries(EXPECTED_RECOVERY_V2).some(([key, value]) => recovery[key] !== value) || recovery.priorRecoveryPromptDigest !== v1PromptDigest || recovery.promptDigest !== v2PromptDigest || typeof recovery.idempotencyKey !== "string" || !/^[^:\s]+:writer1:artifact-recovery:v2:sha256:[0-9a-f]{64}:sha256:[0-9a-f]{64}$/u.test(recovery.idempotencyKey) || !recovery.idempotencyKey.endsWith(`:${v2PromptDigest}`)) throw new Error("active artifact-recovery v2 wake is missing the exact failed-v1, absolute-path, canonical-prompt, or idempotency pins");
   return { dormant: false, stage: "writer1", sourceSha: recovery.sourceSha };
 }

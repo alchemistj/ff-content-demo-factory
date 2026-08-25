@@ -6,7 +6,7 @@ import * as os from "node:os";
 import * as path from "node:path";
 import test from "node:test";
 import { ARTIFACT_RECOVERY_ACTION_RUN_ID, ARTIFACT_RECOVERY_AGENT_ID, ARTIFACT_RECOVERY_ARTIFACT_ID, ARTIFACT_RECOVERY_PRIOR_RUN_ID, ARTIFACT_RECOVERY_SOURCE_BRANCH, ARTIFACT_RECOVERY_THREAD_URL, ARTIFACT_RECOVERY_V1_ACTION_RUN_ID, ARTIFACT_RECOVERY_V1_AGENT_ID, ARTIFACT_RECOVERY_V1_ARTIFACT_ID, ARTIFACT_RECOVERY_V1_ARTIFACT_DIGEST, ARTIFACT_RECOVERY_V1_RUN_ID, ARTIFACT_RECOVERY_V1_SOURCE_SHA, ARTIFACT_RECOVERY_V1_THREAD_URL, WRITER1_ARTIFACT_RECOVERY_PROMPT, WRITER1_ARTIFACT_RECOVERY_V2_PROMPT, WRITER1_ARTIFACT_RECOVERY_V3_PROMPT, validatePriorArtifactRecoveryDispatch, validatePriorArtifactRecoveryFailure, validateSealed, dispatchReceipt, run, writer1Projection } from "../../scripts/360-words-canary.js";
-import { EXPECTED_RECOVERY, EXPECTED_RECOVERY_V2, EXPECTED_RECOVERY_V3, validateControl } from "../../scripts/360-words-control.mjs";
+import { EXPECTED_RECOVERY, EXPECTED_RECOVERY_V2, EXPECTED_RECOVERY_V3, EXPECTED_RECOVERY_V3_FINALIZE, validateControl } from "../../scripts/360-words-control.mjs";
 import { buildWriter1ArtifactRecoveryPrompt, digestWriter1ArtifactRecoveryPrompt } from "../../scripts/360-words-recovery-prompt.mjs";
 
 const root = path.resolve(process.cwd());
@@ -120,6 +120,15 @@ test("v3 control binds the exact failed v2 history and canonical prompt", () => 
   assert.throws(() => validateControl({ ...active, policy: { ...active.policy, recovery: { ...active.policy.recovery, promptDigest: v2PromptDigest } } }, { changedPaths: [".factory-wake/360-words-control.json"], actor: "architect", owner: "architect" }), /v3|prompt/u);
 });
 
+test("v3-finalize control is validation-only, exact-history pinned, and cannot allow a message", () => {
+  const control = JSON.parse(readFileSync(path.join(root, ".factory-wake/360-words-control.json"), "utf8")) as Record<string, any>;
+  const active = { ...control, wakeNonce: "W1-360-20260825-V3FINALIZE" } as Record<string, any>;
+  const inputDigest = EXPECTED_RECOVERY_V3_FINALIZE.priorRecoveryV3InputDigest as string;
+  active.policy = { ...active.policy, mode: "validation-only", recovery: { ...EXPECTED_RECOVERY, ...EXPECTED_RECOVERY_V3_FINALIZE, sourceSha: "9c5c6a0c19f52860ad22961090baa1387bb29507", priorRecoveryV3PromptDigest: v3PromptDigest, promptDigest: v3PromptDigest, idempotencyKey: `run-47a109e2-4fd4-48df-a727-8a92a76cc472:writer1:artifact-recovery:v3-finalize:${inputDigest}:${v3PromptDigest}` } };
+  assert.deepEqual(validateControl(active, { changedPaths: [".factory-wake/360-words-control.json"], actor: "architect", owner: "architect" }), { dormant: false, stage: "writer1", sourceSha: "9c5c6a0c19f52860ad22961090baa1387bb29507" });
+  for (const field of ["allowFollowUp", "allowResume", "allowCreate", "send"]) assert.throws(() => validateControl({ ...active, policy: { ...active.policy, recovery: { ...active.policy.recovery, [field]: true } } }, { changedPaths: [".factory-wake/360-words-control.json"], actor: "architect", owner: "architect" }), /no-message|validation-only|pins/u);
+});
+
 test("workflow is limited to the Architect control push and one dormant-safe Writer1 wake", () => {
   const workflow = readFileSync(path.join(root, ".github/workflows/architect-360-words-canary.yml"), "utf8");
   const controlScript = readFileSync(path.join(root, "scripts/360-words-control.mjs"), "utf8");
@@ -142,6 +151,12 @@ test("workflow is limited to the Architect control push and one dormant-safe Wri
   assert.match(workflow, /9544693335/);
   assert.match(workflow, /29311637f3f4adc04f3dd9ca7bfc54f05df47c88/);
   assert.match(workflow, /sha256:469f3b04eb502316404d98023df34c38e57e8cc6bf51d6dbfdbda12be3834e2f/);
+  assert.match(workflow, /32797811881/);
+  assert.match(workflow, /9545486318/);
+  assert.match(workflow, /6d5f9e0f65af98185b6827b445cbfeff74e88ce7/);
+  assert.match(workflow, /sha256:23eac7a38caf588f383e424bd7bf39e5246f5634c7c06866d8e94250e6fe710e/);
+  assert.match(workflow, /WRITER1_LATEST_V3_FINALIZE_ROOT/);
+  assert.match(workflow, /words-writer1-artifact-recovery\/v3-finalize/);
   assert.match(workflow, /words-writer1-artifact-recovery\/v3/);
   assert.match(workflow, /32793130502/);
   assert.match(workflow, /9543869555/);

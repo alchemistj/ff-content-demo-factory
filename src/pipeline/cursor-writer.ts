@@ -21,12 +21,12 @@ export interface CursorWriterReceipt {
   requestDigest: string; createRequest: unknown; registryItem: unknown; registryDigest: string; modelParams: unknown;
   effort: "high"; effortParameterId?: string; effortAttestationSource: "official-response" | "official-registry-parameter" | "named-model-default";
   attestationSource: "official-response" | "bound-create-request"; apiVersion: "cloud-agent-api-v1";
-  mode?: "initial" | "same-thread-retrieval" | "same-thread-artifact-recovery";
+  mode?: "initial" | "same-thread-retrieval" | "same-thread-artifact-recovery" | "validation-only-artifact-recovery";
   correctionVersion?: "words-writer1-retrieval/v1";
   prior?: CursorFollowUpBindings;
   followUpPromptDigest?: string;
   artifact?: CursorArtifactBinding;
-  recoveryVersion?: "words-writer1-artifact-recovery/v1" | "words-writer1-artifact-recovery/v2" | "words-writer1-artifact-recovery/v3";
+  recoveryVersion?: "words-writer1-artifact-recovery/v1" | "words-writer1-artifact-recovery/v2" | "words-writer1-artifact-recovery/v3" | "words-writer1-artifact-recovery/v3-finalize";
   recoveryRunId?: string;
   recoveryPrior?: CursorArtifactRecoveryPrior;
   integrityMac?: string;
@@ -158,6 +158,17 @@ export function validateCursorWriterReceipt(receipt: unknown, cursorApiKey?: str
   if (digestOf(value.output) !== value.outputDigest) throw new CursorWriterExecutionError("CURSOR_RECEIPT_OUTPUT_TAMPERED", "Cursor receipt output no longer matches its output digest");
   validateReceiptIntegrityMac(value, cursorApiKey);
 }
+function validateValidationOnlyCursorReceipt(receipt: unknown, prior: CursorArtifactRecoveryPrior, cursorApiKey?: string): asserts receipt is CursorArtifactRecoveryV3FinalizeReceipt {
+  const value = asRecord(receipt); if (!value) throw new CursorWriterExecutionError("CURSOR_RECEIPT_INVALID", "Validation-only Cursor receipt must be an object");
+  validateCursorWriterRuntime({ provider: value.provider, requestedModel: value.requestedModel, resolvedModel: value.resolvedModel, fast: value.fast });
+  if (value.stage !== "writer1" || value.status !== "complete" || value.mode !== "validation-only-artifact-recovery" || value.recoveryVersion !== "words-writer1-artifact-recovery/v3-finalize") throw new CursorWriterExecutionError("CURSOR_RECEIPT_INVALID", "Validation-only Cursor receipt stage or mode is invalid");
+  for (const field of ["jobId", "agentId", "threadUrl", "inputDigest", "promptDigest", "outputDigest", "completedAt", "output"]) if (!(field in value) || value[field] === undefined) throw new CursorWriterExecutionError("CURSOR_RECEIPT_INVALID", `Validation-only Cursor receipt is missing ${field}`);
+  assertThreadUrl(value.threadUrl, String(value.agentId));
+  if (value.agentId !== prior.agentId || value.jobId !== prior.runId || value.requestedModel !== prior.requestedModel || value.resolvedModel !== prior.resolvedModel || value.fast !== false || value.effort !== "high" || value.registryDigest !== prior.registryDigest || JSON.stringify(value.modelParams) !== JSON.stringify(prior.modelParams) || value.requestDigest !== prior.requestDigest || value.inputDigest !== prior.inputDigest) throw new CursorWriterExecutionError("CURSOR_RECEIPT_MODEL_BINDING_INVALID", "Validation-only Cursor receipt lost the verified latest v3 model, run, or sealed input binding");
+  assertDigest(value.inputDigest, "inputDigest"); assertDigest(value.promptDigest, "promptDigest"); assertDigest(value.outputDigest, "outputDigest"); assertDigest(value.requestDigest, "requestDigest");
+  if (value.apiVersion !== API_VERSION || value.attestationSource !== "official-response" || typeof value.completedAt !== "string" || Number.isNaN(Date.parse(value.completedAt)) || new Date(value.completedAt).toISOString() !== value.completedAt || digestOf(value.output) !== value.outputDigest) throw new CursorWriterExecutionError("CURSOR_RECEIPT_INVALID", "Validation-only Cursor receipt attestation or output binding is invalid");
+  validateReceiptIntegrityMac(value, cursorApiKey);
+}
 function validatePendingReceipt(receipt: unknown): asserts receipt is CursorWriterPendingReceipt {
   const value = asRecord(receipt); if (!value) throw new CursorWriterExecutionError("CURSOR_RECEIPT_INVALID", "Pending Cursor receipt is invalid");
   validateCursorWriterRuntime({ provider: value.provider, requestedModel: value.requestedModel, resolvedModel: value.resolvedModel, fast: value.fast });
@@ -221,8 +232,8 @@ export interface CursorArtifactRecoveryPrior {
   sourceBranch: string; sourceSha: string; sealedHandoffDigest: string;
 }
 export interface CursorArtifactRecoveryReceipt extends CursorWriterReceipt {
-  mode: "same-thread-artifact-recovery";
-  recoveryVersion: "words-writer1-artifact-recovery/v1" | "words-writer1-artifact-recovery/v2" | "words-writer1-artifact-recovery/v3";
+  mode: "same-thread-artifact-recovery" | "validation-only-artifact-recovery";
+  recoveryVersion: "words-writer1-artifact-recovery/v1" | "words-writer1-artifact-recovery/v2" | "words-writer1-artifact-recovery/v3" | "words-writer1-artifact-recovery/v3-finalize";
   artifact: CursorArtifactBinding;
   recoveryRunId: string;
   recoveryPrior: CursorArtifactRecoveryPrior;
@@ -253,6 +264,21 @@ export interface CursorArtifactRecoveryV2FailureBinding {
 export interface CursorArtifactRecoveryV3Receipt extends CursorArtifactRecoveryReceipt {
   recoveryVersion: "words-writer1-artifact-recovery/v3";
   previousRecoveryV2: CursorArtifactRecoveryV2FailureBinding;
+  beforeArtifact: CursorArtifactBinding;
+  afterArtifact: CursorArtifactBinding;
+  copyProjectionDigest: string;
+  metadataChangeDigest: string;
+}
+export interface CursorArtifactRecoveryV3FailureBinding {
+  recoveryVersion: "words-writer1-artifact-recovery/v3";
+  actionRunId: string; artifactId: number; artifactDigest: string; sourceBranch: string; sourceSha: string;
+  agentId: string; runId: string; threadUrl: string; promptDigest: string; failureCode: "WRITER1_OUTPUT_INVALID"; inputDigest: string;
+  beforeArtifact: CursorArtifactBinding; copyProjectionDigest: string;
+}
+export interface CursorArtifactRecoveryV3FinalizeReceipt extends CursorArtifactRecoveryReceipt {
+  mode: "validation-only-artifact-recovery";
+  recoveryVersion: "words-writer1-artifact-recovery/v3-finalize";
+  previousRecoveryV3: CursorArtifactRecoveryV3FailureBinding;
   beforeArtifact: CursorArtifactBinding;
   afterArtifact: CursorArtifactBinding;
   copyProjectionDigest: string;
@@ -565,27 +591,33 @@ async function readWriter1ArtifactWithBackoff(input: { client: CursorArtifactCli
   }
 }
 
-function validateCursorArtifactRecoveryReceiptVersion(receipt: unknown, prior: CursorArtifactRecoveryPrior, promptDigest: string, cursorApiKey: string | undefined, expectedVersion: "words-writer1-artifact-recovery/v1" | "words-writer1-artifact-recovery/v2" | "words-writer1-artifact-recovery/v3", previousRecovery?: CursorArtifactRecoveryFailureBinding, previousRecoveryV2?: CursorArtifactRecoveryV2FailureBinding): asserts receipt is CursorArtifactRecoveryReceipt {
-  validateCursorWriterReceipt(receipt, cursorApiKey);
+function validateCursorArtifactRecoveryReceiptVersion(receipt: unknown, prior: CursorArtifactRecoveryPrior, promptDigest: string, cursorApiKey: string | undefined, expectedVersion: "words-writer1-artifact-recovery/v1" | "words-writer1-artifact-recovery/v2" | "words-writer1-artifact-recovery/v3" | "words-writer1-artifact-recovery/v3-finalize", previousRecovery?: CursorArtifactRecoveryFailureBinding, previousRecoveryV2?: CursorArtifactRecoveryV2FailureBinding, previousRecoveryV3?: CursorArtifactRecoveryV3FailureBinding): asserts receipt is CursorArtifactRecoveryReceipt {
+  if (expectedVersion === "words-writer1-artifact-recovery/v3-finalize") validateValidationOnlyCursorReceipt(receipt, prior, cursorApiKey); else validateCursorWriterReceipt(receipt, cursorApiKey);
   const value = receipt as CursorArtifactRecoveryReceipt;
-  if (value.mode !== "same-thread-artifact-recovery" || value.recoveryVersion !== expectedVersion) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_RECEIPT_INVALID", "Cursor receipt is not the expected Writer1 artifact-recovery version");
+  const expectedMode = expectedVersion === "words-writer1-artifact-recovery/v3-finalize" ? "validation-only-artifact-recovery" : "same-thread-artifact-recovery";
+  if (value.mode !== expectedMode || value.recoveryVersion !== expectedVersion) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_RECEIPT_INVALID", "Cursor receipt is not the expected Writer1 artifact-recovery version");
   const evidence = value.artifact?.presignedUrlEvidence;
   const approvedEvidenceHost = typeof evidence?.host === "string" && (evidence.host === "s3.amazonaws.com" || evidence.host.endsWith(".s3.amazonaws.com") || /^s3[.-][a-z0-9-]+\.amazonaws\.com$/u.test(evidence.host) || /\.s3[.-][a-z0-9-]+\.amazonaws\.com$/u.test(evidence.host));
   const saneEvidence = !!evidence && evidence.scheme === "https" && approvedEvidenceHost && typeof evidence.pathname === "string" && evidence.pathname.length > 1 && evidence.pathname.length <= 2048 && !evidence.pathname.includes("..") && Array.isArray(evidence.queryParameterNames) && evidence.queryParameterNames.length > 0 && evidence.queryParameterNames.every((name: unknown) => typeof name === "string" && /^[A-Za-z0-9_.-]{1,128}$/u.test(name)) && JSON.stringify(evidence.queryParameterNames) === JSON.stringify([...evidence.queryParameterNames].sort());
   const expectedRequest = value.artifact?.path === "artifacts/writer1-output.json" ? artifactRequestShape(prior.agentId, "artifacts/writer1-output.json", artifactDownloadEndpoint(prior.agentId, "artifacts/writer1-output.json")) : undefined;
   if (!value.artifact || value.artifact.path !== "artifacts/writer1-output.json" || !Number.isSafeInteger(value.artifact.size) || value.artifact.size < 1 || value.artifact.size > MAX_WRITER1_ARTIFACT_BYTES || value.artifact.contentSize !== value.artifact.size || typeof value.artifact.sha256 !== "string" || !DIGEST.test(value.artifact.sha256) || value.artifact.byteDigest !== value.artifact.sha256 || !value.artifact.downloadRequest || JSON.stringify(value.artifact.downloadRequest) !== JSON.stringify(expectedRequest) || value.artifact.requestShapeDigest !== digestOf(value.artifact.downloadRequest) || !saneEvidence || value.artifact.presignedUrlEvidenceDigest !== digestOf(evidence) || typeof value.artifact.downloadRequestDigest !== "string" || value.artifact.downloadRequestDigest !== artifactDownloadDigest(value.artifact.downloadRequest, evidence)) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_RECEIPT_INVALID", "Cursor artifact receipt path, size, byte, sanitized URL evidence, or request binding is invalid");
   if (!value.recoveryPrior || JSON.stringify(value.recoveryPrior) !== JSON.stringify(prior)) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_RECEIPT_BINDING_INVALID", "Cursor artifact receipt lost the prior dispatch/source bindings");
-  if (value.followUpPromptDigest !== promptDigest || value.promptDigest !== promptDigest || value.inputDigest !== prior.inputDigest || value.agentId !== prior.agentId || value.threadUrl !== prior.threadUrl || value.recoveryRunId !== value.jobId) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_RECEIPT_BINDING_INVALID", "Cursor artifact receipt is not bound to the requested Writer1 recovery");
+  if ((expectedVersion !== "words-writer1-artifact-recovery/v3-finalize" && value.followUpPromptDigest !== promptDigest) || value.promptDigest !== promptDigest || value.inputDigest !== prior.inputDigest || value.agentId !== prior.agentId || value.threadUrl !== prior.threadUrl || value.recoveryRunId !== value.jobId) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_RECEIPT_BINDING_INVALID", "Cursor artifact receipt is not bound to the requested Writer1 recovery");
   if (value.jobId !== prior.runId && !String(value.jobId).startsWith("run-")) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_RECEIPT_BINDING_INVALID", "Cursor artifact receipt recovery run ID is invalid");
   if (expectedVersion === "words-writer1-artifact-recovery/v2" && (!previousRecovery || JSON.stringify(value.previousRecovery) !== JSON.stringify(previousRecovery))) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_RECEIPT_BINDING_INVALID", "Cursor v2 artifact receipt lost the failed v1 recovery binding");
-  if (expectedVersion === "words-writer1-artifact-recovery/v3") {
+  if (expectedVersion === "words-writer1-artifact-recovery/v3" || expectedVersion === "words-writer1-artifact-recovery/v3-finalize") {
     const v3 = value as CursorArtifactRecoveryV3Receipt;
     const before = v3.beforeArtifact;
-    if (!previousRecoveryV2 || JSON.stringify(v3.previousRecoveryV2) !== JSON.stringify(previousRecoveryV2) || !before || !v3.afterArtifact || JSON.stringify(v3.afterArtifact) !== JSON.stringify(v3.artifact)) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_RECEIPT_BINDING_INVALID", "Cursor v3 artifact receipt lost the exact failed-v2 or before/after artifact binding");
+    if (expectedVersion === "words-writer1-artifact-recovery/v3" && (!previousRecoveryV2 || JSON.stringify(v3.previousRecoveryV2) !== JSON.stringify(previousRecoveryV2))) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_RECEIPT_BINDING_INVALID", "Cursor v3 artifact receipt lost the exact failed-v2 binding");
+    if (!before || !v3.afterArtifact || JSON.stringify(v3.afterArtifact) !== JSON.stringify(v3.artifact)) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_RECEIPT_BINDING_INVALID", "Cursor v3 artifact receipt lost the before/after artifact binding");
     if (before.path !== "artifacts/writer1-output.json" || !DIGEST.test(before.sha256) || before.byteDigest !== before.sha256 || before.contentSize !== before.size || before.size < 1 || before.size > MAX_WRITER1_ARTIFACT_BYTES || before.downloadRequestDigest !== artifactDownloadDigest(before.downloadRequest, before.presignedUrlEvidence) || before.presignedUrlEvidenceDigest !== digestOf(before.presignedUrlEvidence) || before.requestShapeDigest !== digestOf(before.downloadRequest)) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_RECEIPT_INVALID", "Cursor v3 before-artifact binding is invalid");
     if (v3.afterArtifact.sha256 === before.sha256 && v3.afterArtifact.updatedAt === before.updatedAt) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_RECEIPT_STALE", "Cursor v3 accepted the unchanged invalid artifact");
     if (typeof v3.copyProjectionDigest !== "string" || v3.copyProjectionDigest !== writer1CopyProjectionDigest(v3.output)) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_COPY_PROJECTION_MISMATCH", "Cursor v3 completed receipt copy projection digest is not recomputable");
     if (v3.metadataChangeDigest !== writer1MetadataChangeDigest(before.sha256, v3.afterArtifact.sha256, v3.copyProjectionDigest)) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_METADATA_CHANGE_INVALID", "Cursor v3 metadata-change digest is not recomputable");
+    if (expectedVersion === "words-writer1-artifact-recovery/v3-finalize") {
+      const finalize = value as CursorArtifactRecoveryV3FinalizeReceipt;
+      if (!previousRecoveryV3 || JSON.stringify(finalize.previousRecoveryV3) !== JSON.stringify(previousRecoveryV3) || JSON.stringify(before) !== JSON.stringify(previousRecoveryV3.beforeArtifact) || finalize.jobId !== prior.runId || finalize.recoveryRunId !== prior.runId || finalize.copyProjectionDigest !== previousRecoveryV3.copyProjectionDigest) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_RECEIPT_BINDING_INVALID", "Cursor v3-finalize receipt lost the exact failed-v3, existing run, or frozen copy binding");
+    }
   }
 }
 
@@ -597,6 +629,9 @@ export function validateCursorArtifactRecoveryV2Receipt(receipt: unknown, prior:
 }
 export function validateCursorArtifactRecoveryV3Receipt(receipt: unknown, prior: CursorArtifactRecoveryPrior, previousRecoveryV2: CursorArtifactRecoveryV2FailureBinding, promptDigest: string, cursorApiKey?: string): asserts receipt is CursorArtifactRecoveryV3Receipt {
   validateCursorArtifactRecoveryReceiptVersion(receipt, prior, promptDigest, cursorApiKey, "words-writer1-artifact-recovery/v3", undefined, previousRecoveryV2);
+}
+export function validateCursorArtifactRecoveryV3FinalizeReceipt(receipt: unknown, prior: CursorArtifactRecoveryPrior, previousRecoveryV3: CursorArtifactRecoveryV3FailureBinding, promptDigest: string, cursorApiKey?: string): asserts receipt is CursorArtifactRecoveryV3FinalizeReceipt {
+  validateCursorArtifactRecoveryReceiptVersion(receipt, prior, promptDigest, cursorApiKey, "words-writer1-artifact-recovery/v3-finalize", undefined, undefined, previousRecoveryV3);
 }
 
 type CursorArtifactRecoveryInternalInput = {
@@ -776,6 +811,70 @@ export async function recoverCursorWriterArtifactV2ForTest(input: CursorArtifact
 export async function recoverCursorWriterArtifactV3ForTest(input: CursorArtifactRecoveryInternalInput & { recoveryVersion: "words-writer1-artifact-recovery/v3"; previousRecoveryV2: CursorArtifactRecoveryV2FailureBinding; validateBeforeOutput?: (raw: string) => unknown }): Promise<CursorArtifactRecoveryResult> {
   if (process.env.NODE_ENV !== "test" && !process.execArgv.some((arg) => arg.includes("--test"))) throw new CursorWriterExecutionError("CURSOR_TEST_SEAM_FORBIDDEN", "Injected artifact recovery transports are available only from the Node test boundary");
   return recoverCursorWriterArtifactInternal(input);
+}
+
+export type CursorArtifactRecoveryV3FinalizeInput = Omit<CursorArtifactRecoveryInput, "recoveryVersion" | "previousRecovery" | "previousRecoveryV2" | "prompt" | "validateOutput" | "validateBeforeOutput"> & {
+  recoveryVersion: "words-writer1-artifact-recovery/v3-finalize";
+  previousRecoveryV3: CursorArtifactRecoveryV3FailureBinding;
+  promptDigest: string;
+  validateOutput?: (output: unknown) => void;
+};
+
+type CursorArtifactRecoveryV3FinalizeInternalInput = CursorArtifactRecoveryV3FinalizeInput & {
+  env?: Record<string, string | undefined>;
+  artifactClient?: CursorArtifactClient;
+};
+
+async function finalizeCursorWriterArtifactV3Internal(input: CursorArtifactRecoveryV3FinalizeInternalInput): Promise<CursorArtifactRecoveryResult> {
+  const env = input.env || process.env;
+  if (!env.CURSOR_API_KEY) throw new CursorWriterExecutionError("CURSOR_API_KEY_REQUIRED", "Validation-only Cursor artifact finalization requires CURSOR_API_KEY");
+  if (input.recoveryVersion !== "words-writer1-artifact-recovery/v3-finalize") throw new CursorWriterExecutionError("CURSOR_ARTIFACT_FINALIZE_VERSION_INVALID", "Cursor v3-finalize requires its exact recovery version");
+  const promptDigest = input.promptDigest;
+  if (!DIGEST.test(promptDigest)) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_FINALIZE_PROMPT_INVALID", "Cursor v3-finalize requires a bound prompt digest");
+  const key = `${input.prior.runId}:writer1:artifact-recovery:v3-finalize:${input.prior.inputDigest}:${promptDigest}`;
+  const artifactClient = input.artifactClient || createCursorArtifactClient();
+  const validateOutput = input.validateOutput;
+  if (!validateOutput) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_VALIDATOR_REQUIRED", "Validation-only Cursor artifact finalization requires the strict Writer1 validator");
+  const existing = await input.receiptStore.get(key);
+  if (existing) {
+    validateCursorArtifactRecoveryV3FinalizeReceipt(existing, input.prior, input.previousRecoveryV3, promptDigest, env.CURSOR_API_KEY);
+    const recovered = await readWriter1Artifact({ client: artifactClient, agentId: input.prior.agentId, apiKey: env.CURSOR_API_KEY, validateOutput });
+    const completed = existing as CursorArtifactRecoveryV3FinalizeReceipt;
+    if (JSON.stringify(recovered.artifact) !== JSON.stringify(completed.afterArtifact) || writer1CopyProjectionDigest(recovered.output) !== completed.copyProjectionDigest) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_RACE", "Cursor v3-finalize artifact changed after the completed receipt");
+    const claim = await input.receiptStore.getClaim?.(key); if (!claim) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_CLAIM_MISSING", "Completed Cursor v3-finalize has no durable claim");
+    return { output: recovered.output, receipt: { ...completed, output: recovered.output }, threadUrl: completed.threadUrl, claim };
+  }
+  if (!input.receiptStore.tryClaim || !input.receiptStore.getClaim || !input.receiptStore.putClaim) throw new CursorWriterExecutionError("CURSOR_DISPATCH_CLAIM_REQUIRED", "Cursor v3-finalize requires an atomic durable claim store");
+  const now = input.now || (() => new Date());
+  const claim: CursorDispatchClaim = { key, stage: "writer1", runId: input.prior.runId, inputDigest: input.prior.inputDigest, promptDigest, ownerToken: `${process.pid}:${now().getTime()}:${Math.random()}`, requestedAgentId: input.prior.agentId, claimedAt: now().toISOString(), heartbeatAt: now().toISOString(), leaseUntil: new Date(now().getTime() + 30_000).toISOString(), phase: "claimed" };
+  const claimed = await input.receiptStore.tryClaim(key, claim);
+  if (!claimed.acquired) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_FINALIZE_IN_PROGRESS", "Another validation-only Cursor artifact finalization owns the durable claim");
+  // This path intentionally has no CloudTransport. It can only list/download
+  // through the authenticated Cursor artifact client; Agent.create, resume,
+  // send, and run.wait are structurally unreachable.
+  const recovered = await readWriter1Artifact({ client: artifactClient, agentId: input.prior.agentId, apiKey: env.CURSOR_API_KEY, validateOutput });
+  const before = input.previousRecoveryV3.beforeArtifact;
+  const copyProjectionDigest = writer1CopyProjectionDigest(recovered.output);
+  if (recovered.artifact.sha256 === before.sha256 && recovered.artifact.updatedAt === before.updatedAt) throw new CursorWriterExecutionError("CURSOR_V3_ARTIFACT_STALE", "Cursor v3-finalize found the stale unchanged pre-repair artifact");
+  if (copyProjectionDigest !== input.previousRecoveryV3.copyProjectionDigest) throw new CursorWriterExecutionError("CURSOR_V3_COPY_PROJECTION_CHANGED", "Cursor v3-finalize found copy projection changed: words, routes, reviews, quotes, or claims");
+  const receipt = withReceiptIntegrityMac({ stage: "writer1", provider: CURSOR_PROVIDER, requestedModel: REQUIRED_CURSOR_MODEL, resolvedModel: OFFICIAL_CURSOR_MODEL, fast: false, jobId: input.prior.runId, agentId: input.prior.agentId, threadUrl: input.prior.threadUrl, inputDigest: input.prior.inputDigest, promptDigest, outputDigest: digestOf(recovered.output), completedAt: now().toISOString(), status: "complete", output: recovered.output, requestDigest: input.prior.requestDigest, createRequest: { apiVersion: API_VERSION, mode: "validation-only-artifact-recovery", agentId: input.prior.agentId, runId: input.prior.runId }, registryItem: { id: OFFICIAL_CURSOR_MODEL, validationOnly: true }, registryDigest: input.prior.registryDigest, modelParams: input.prior.modelParams, effort: "high", effortAttestationSource: input.prior.effortAttestationSource, attestationSource: "official-response", apiVersion: API_VERSION, mode: "validation-only-artifact-recovery", recoveryVersion: "words-writer1-artifact-recovery/v3-finalize", artifact: recovered.artifact, recoveryRunId: input.prior.runId, recoveryPrior: input.prior, previousRecoveryV3: input.previousRecoveryV3, beforeArtifact: before, afterArtifact: recovered.artifact, copyProjectionDigest, metadataChangeDigest: writer1MetadataChangeDigest(before.sha256, recovered.artifact.sha256, copyProjectionDigest) } as unknown as CursorArtifactRecoveryV3FinalizeReceipt, env.CURSOR_API_KEY);
+  validateCursorArtifactRecoveryV3FinalizeReceipt(receipt, input.prior, input.previousRecoveryV3, promptDigest, env.CURSOR_API_KEY);
+  const completedClaim = { ...claimed.claim, agentId: input.prior.agentId, jobId: input.prior.runId, phase: "completed" as const, heartbeatAt: now().toISOString(), leaseUntil: new Date(now().getTime() + 30_000).toISOString() };
+  await input.receiptStore.put(key, receipt);
+  await input.receiptStore.putClaim(key, completedClaim);
+  return { output: recovered.output, receipt, threadUrl: input.prior.threadUrl, claim: completedClaim };
+}
+
+/** Production v3-finalize owns process.env and the fixed Cursor artifact client. */
+export async function finalizeCursorWriterArtifactV3(input: CursorArtifactRecoveryV3FinalizeInput): Promise<CursorArtifactRecoveryResult> {
+  const candidate = input as unknown as Record<string, unknown>;
+  if ("env" in candidate || "transport" in candidate || "artifactClient" in candidate) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_CLIENT_SUBSTITUTION_FORBIDDEN", "Production v3-finalize does not accept caller-selected environment, transport, or artifact client");
+  return finalizeCursorWriterArtifactV3Internal({ ...input, env: process.env, artifactClient: createCursorArtifactClient() });
+}
+
+export async function finalizeCursorWriterArtifactV3ForTest(input: CursorArtifactRecoveryV3FinalizeInternalInput): Promise<CursorArtifactRecoveryResult> {
+  if (process.env.NODE_ENV !== "test" && !process.execArgv.some((arg) => arg.includes("--test"))) throw new CursorWriterExecutionError("CURSOR_TEST_SEAM_FORBIDDEN", "Injected v3-finalize seams are available only from the Node test boundary");
+  return finalizeCursorWriterArtifactV3Internal(input);
 }
 
 async function dispatchWithTransport(input: { transport: CloudTransport; env: Record<string, string | undefined>; receiptStore: CursorWriterReceiptStore; now: () => Date; onDispatch?: (notice: CursorDispatchNotice) => void | Promise<void>; validateOutput?: (output: unknown) => void }, stage: CursorWriterStage, payload: unknown, prompt: string, runId: string): Promise<{ output: unknown; receipt: CursorWriterReceipt; threadUrl: string; claim?: CursorDispatchClaim }> {
