@@ -104,17 +104,24 @@ function inventoryForQa(classification, packet, finalist) {
   return { ...classification, exactPlace, exactPlaceId: packetPlaceId, discoverySampleOnly, dateWindow, requestedLimit, listingReviewCount: listingReviewCount ?? null, retrievedReviewCount, writtenReviewCount: classification.writtenReviewCount, emptyReviewCount: classification.emptyReviewCount, enrichmentStatus: sufficient ? 'sufficient' : 'incomplete', availabilityPattern: null };
 }
 function proposalPayload(proposal) { return { proposal: proposal?.proposal || proposal?.prescription || proposal, receipt: proposal?.receipt || proposal?.cursorReceipt || null }; }
-function requiredReceipt(value, label, fallback = null) {
-  if (fallback && (!value || typeof value !== 'object' || Array.isArray(value) || !(value.provider || value.vendorReceipt || value.runId || value.jobId || value.receiptKey))) return { provider: 'repository-test-fixture', operation: label, status: 'completed', receiptKey: `test:${label}`, ...fallback };
+const TERMINAL_RECEIPT_STATUSES = new Set(['completed', 'succeeded', 'success']);
+function requiredReceipt(value, label, fallback = null, binding = null) {
+  if (fallback) return { provider: 'repository-test-fixture', operation: label, status: 'completed', terminalStatus: 'succeeded', receiptKey: `test:${label}`, inputDigest: digest({ label, fixture: true, source: value || null }), outputDigest: digest(fallback), startedAt: new Date(0).toISOString(), completedAt: new Date(0).toISOString(), ...fallback };
   if (!value || typeof value !== 'object' || Array.isArray(value)) throw Object.assign(new Error(`Trusted source checkpoint requires ${label} receipt`), { code: 'SOURCE_RECEIPT_MISSING' });
-  const hasIdentity = value.provider || value.vendorReceipt || value.runId || value.jobId || value.receiptKey;
-  if (!hasIdentity) throw Object.assign(new Error(`Trusted source checkpoint requires identifiable ${label} receipt`), { code: 'SOURCE_RECEIPT_INVALID' });
+  if (!value.provider || !value.operation || !TERMINAL_RECEIPT_STATUSES.has(String(value.status || '').toLowerCase()) || value.terminalStatus !== 'succeeded') throw Object.assign(new Error(`Trusted source checkpoint requires complete terminal ${label} receipt`), { code: 'SOURCE_RECEIPT_INVALID' });
+  if (!value.inputDigest || !value.outputDigest || !value.startedAt || !value.completedAt) throw Object.assign(new Error(`Trusted source checkpoint requires complete digests/timestamps for ${label}`), { code: 'SOURCE_RECEIPT_INVALID' });
+  const vendor = value.vendorReceipt || value;
+  const hasIdentity = vendor.agentId || vendor.runId || vendor.jobId || vendor.artifactId || vendor.datasetId || value.receiptKey;
+  if (!hasIdentity) throw Object.assign(new Error(`Trusted source checkpoint requires vendor/agent identity for ${label}`), { code: 'SOURCE_RECEIPT_INVALID' });
+  if ((value.provider === 'cursor-sdk' || value.provider === 'cursor-cloud-agent') && (!vendor.runId || !vendor.threadUrl)) throw Object.assign(new Error(`Trusted source checkpoint requires Cursor run/thread identity for ${label}`), { code: 'SOURCE_RECEIPT_INVALID' });
+  if (value.provider === 'apify' && (!vendor.runId || !vendor.datasetId)) throw Object.assign(new Error(`Trusted source checkpoint requires Apify run/dataset identity for ${label}`), { code: 'SOURCE_RECEIPT_INVALID' });
   return value;
 }
 function sourceCheckpointFor(run, state, { allowTestFixtures = false } = {}) {
   const candidateIdentity = stableCandidateIdentity(run.candidate || {});
   const auditReceiptForCandidate = state.auditReceipts?.[candidateIdentity] || state.auditReceipts?.[run.candidate?.placeId];
-  const fixtureFallback = allowTestFixtures && (!auditReceiptForCandidate || auditReceiptForCandidate.provider !== 'cursor-sdk') ? { fixture: true } : null;
+  const fixtureFallback = allowTestFixtures ? { fixture: true } : null;
+  const actionProof = actionProofFromEnvironment();
   const discoveryReceipt = requiredReceipt(state.discoveryPacket?.receipt || state.discoveryPacket?.provenance?.run, 'discovery', fixtureFallback);
   const auditReceipt = requiredReceipt(auditReceiptForCandidate, 'website-audit', fixtureFallback);
   const enrichmentReceipt = requiredReceipt(run.paidWork?.finalistEnrichment?.receipt, 'finalist-enrichment', fixtureFallback);
@@ -123,6 +130,7 @@ function sourceCheckpointFor(run, state, { allowTestFixtures = false } = {}) {
     reviewId,
     receipt: requiredReceipt(judgment?.receipt || judgment?.cursorReceipt || judgment?.provenance, `review-judgment:${reviewId}`, fixtureFallback),
   }));
+  if (!allowTestFixtures && (!actionProof?.checkedOutSha || actionProof.headAssertion !== true)) throw Object.assign(new Error('Trusted source checkpoint requires exact checked-out head binding'), { code: 'SOURCE_HEAD_BINDING_MISSING' });
   const sourceMaterial = {
     discoveryRequest: state.discoveryRequest || null,
     discoveryReceipt,
@@ -134,6 +142,7 @@ function sourceCheckpointFor(run, state, { allowTestFixtures = false } = {}) {
     finalistEnrichment: run.artifacts.reviewPacket || null,
   };
   const sourceSha = digest(sourceMaterial).slice('sha256:'.length);
+  const binding = { headSha: actionProof?.checkedOutSha || null, runId: run.runId, prospectId: run.prospectId || run.candidate?.placeId || null, placeId: run.candidate?.placeId || null, sourceSha };
   const sourceIdentity = { provider: 'factory-trusted-source', runId: run.runId, artifactId: `source-${run.runId}`, sourceSha, rootIdentity: `factory-source:${run.runId}` };
   const sourceManifest = {
     schemaVersion: 'factory-source-manifest-v1',
@@ -148,8 +157,12 @@ function sourceCheckpointFor(run, state, { allowTestFixtures = false } = {}) {
       reviewJudgments: digest(reviewReceipts),
     },
     sourceMaterialDigest: digest(sourceMaterial),
+    binding,
+    receiptBindings: [
+      ['discovery', discoveryReceipt], ['website-audit', auditReceipt], ['finalist-enrichment', enrichmentReceipt], ['review-judgments', reviewReceipts],
+    ].map(([label, receipt]) => ({ label, digest: digest(receipt), binding })),
   };
-  return { sourceIdentity, sourceArtifactDigest: digest({ sourceIdentity, sourceMaterial }), sourceManifest, sourceManifestDigest: digest(sourceManifest), sourceMaterial };
+  return { sourceIdentity, sourceArtifactDigest: digest({ sourceIdentity, sourceMaterial }), sourceManifest, sourceManifestDigest: digest(sourceManifest), sourceMaterial, headSha: binding.headSha };
 }
 function correctedProposal(proposal, corrections) {
   if (!corrections || typeof corrections !== 'object') return proposal;
@@ -163,12 +176,13 @@ function correctedProposal(proposal, corrections) {
 }
 function qaDecision(decision) { return decision?.qa || (decision && (Object.prototype.hasOwnProperty.call(decision, 'qaPass') || decision.whyBuilt) ? { passed: decision.qaPass === true, whyBuilt: decision.whyBuilt, corrections: decision.corrections } : null); }
 function actionProofFromEnvironment(env = process.env) {
-  if (!env.FACTORY_CHECKED_OUT_SHA && !env.FACTORY_EXPECTED_HEAD_SHA) return null;
+  if (!env.FACTORY_CHECKED_OUT_SHA && !env.FACTORY_ASSERTED_HEAD_SHA && !env.FACTORY_EXPECTED_HEAD_SHA) return null;
   return {
-    checkedOutSha: env.FACTORY_CHECKED_OUT_SHA || null,
+    checkedOutSha: env.FACTORY_CHECKED_OUT_SHA || env.FACTORY_ASSERTED_HEAD_SHA || null,
     expectedHeadSha: env.FACTORY_EXPECTED_HEAD_SHA || null,
     headAssertion: env.FACTORY_HEAD_ASSERTION === 'true',
-    testRunUrl: env.FACTORY_TEST_RUN_URL || null,
+    testRunUrl: env.FACTORY_TEST_RUN_URL || env.FACTORY_ACTION_RUN_URL || null,
+    testResult: env.FACTORY_TEST_RESULT || null,
   };
 }
 
@@ -294,4 +308,4 @@ async function runFactoryCycle({ root, config, adapters, discoveryRequest = null
   } finally { release(); }
 }
 
-module.exports = { REVIEW_LIMIT, requireDiscoveryRequest, inventoryForQa, sourceCheckpointFor, actionProofFromEnvironment, writeAtomic, runFactoryCycle };
+module.exports = { REVIEW_LIMIT, requireDiscoveryRequest, inventoryForQa, requiredReceipt, sourceCheckpointFor, actionProofFromEnvironment, writeAtomic, runFactoryCycle };
