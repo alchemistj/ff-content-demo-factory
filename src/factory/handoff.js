@@ -2,6 +2,8 @@
 
 const { digest } = require('./prescription-policy');
 const { canonicalThreadUrl, validateDispatchPacket, validateJobReceipt } = require('./cloud-agent');
+const fs = require('node:fs');
+const path = require('node:path');
 
 function required(value, label) {
   if (value == null || String(value).trim() === '') throw new Error(`${label} is required`);
@@ -60,7 +62,13 @@ function validateTerminalCursorResult(result, expected) {
   validatePendingHandoff(result.pending, expected);
   if (result.schemaVersion !== 'factory-cursor-terminal-result-v1' || result.authorLogin !== 'cursor[bot]') throw new Error('Cursor terminal result is not an authenticated cursor[bot] receipt');
   required(result.commentId, 'Cursor terminal result comment id');
-  if (!String(result.commentUrl || '').startsWith('https://github.com/')) throw new Error('Cursor terminal result comment URL is not GitHub-native');
+  const repository = result.pending.dispatchPacket.repository;
+  const issueNumber = String(result.pending.dispatchPacket.issueNumber);
+  const escapedRepository = String(repository).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const commentPattern = new RegExp(`^https://github\\.com/${escapedRepository}/issues/${issueNumber}#issuecomment-([0-9]+)$`);
+  const commentMatch = commentPattern.exec(String(result.commentUrl || ''));
+  if (!commentMatch || String(result.commentId) !== commentMatch[1]) throw new Error('Cursor terminal result comment URL is not bound to the authoritative repository, issue, and comment id');
+  if (result.authorType != null && result.authorType !== 'Bot') throw new Error('Cursor terminal result bot identity is not authenticated');
   if (result.handoffId !== result.pending.handoffId || result.dispatchKey !== result.pending.envelope.dispatchKey) throw new Error('Cursor terminal result handoff binding is mismatched');
   const receipt = result.receipt;
   const kind = receipt?.operation;
@@ -71,11 +79,41 @@ function validateTerminalCursorResult(result, expected) {
 }
 
 function claimResume(ledger, handoffId, resultId) {
-  const current = ledger && typeof ledger === 'object' ? ledger : { schemaVersion: 'factory-cursor-resume-ledger-v1', consumedHandoffs: [], consumedResults: [] };
+  const current = ledger && typeof ledger === 'object' ? ledger : { schemaVersion: 'factory-cursor-cas-ledger-v1', consumedHandoffs: [], consumedResults: [] };
+  if (current.schemaVersion !== 'factory-cursor-cas-ledger-v1') throw new Error('Cursor handoff CAS ledger schema is not authoritative');
   if (!Array.isArray(current.consumedHandoffs) || !Array.isArray(current.consumedResults)) throw new Error('Cursor resume ledger is malformed');
   if (current.consumedHandoffs.includes(handoffId) || current.consumedResults.includes(String(resultId))) throw new Error('Cursor resume replay detected');
   current.consumedHandoffs.push(handoffId); current.consumedResults.push(String(resultId)); current.lastHandoffId = handoffId; current.lastResultId = String(resultId);
   return current;
 }
 
-module.exports = { envelopeFor, createPendingHandoff, validatePendingHandoff, validateTerminalCursorResult, claimResume };
+function claimResumeAtomic(file, handoffId, resultId) {
+  required(file, 'Cursor handoff CAS file');
+  const directory = path.dirname(file);
+  fs.mkdirSync(directory, { recursive: true });
+  const lockFile = `${file}.lock`;
+  let lockFd;
+  try {
+    lockFd = fs.openSync(lockFile, 'wx');
+  } catch (error) {
+    throw new Error(`Cursor handoff CAS lock is already held: ${error.message}`);
+  }
+  try {
+    let ledger;
+    try {
+      ledger = JSON.parse(fs.readFileSync(file, 'utf8'));
+    } catch (error) {
+      if (error.code !== 'ENOENT') throw new Error(`Cursor handoff CAS ledger is unreadable: ${error.message}`);
+    }
+    const next = claimResume(ledger, handoffId, resultId);
+    const temporary = `${file}.${process.pid}.${Date.now()}.tmp`;
+    fs.writeFileSync(temporary, `${JSON.stringify(next, null, 2)}\n`, { flag: 'wx' });
+    fs.renameSync(temporary, file);
+    return next;
+  } finally {
+    if (lockFd !== undefined) fs.closeSync(lockFd);
+    try { fs.unlinkSync(lockFile); } catch (error) { if (error.code !== 'ENOENT') throw error; }
+  }
+}
+
+module.exports = { envelopeFor, createPendingHandoff, validatePendingHandoff, validateTerminalCursorResult, claimResume, claimResumeAtomic };
