@@ -127,6 +127,7 @@ test("v3-finalize control is validation-only, exact-history pinned, and cannot a
   active.policy = { ...active.policy, mode: "validation-only", recovery: { ...EXPECTED_RECOVERY, ...EXPECTED_RECOVERY_V3_FINALIZE, sourceSha: "9c5c6a0c19f52860ad22961090baa1387bb29507", priorRecoveryV3PromptDigest: v3PromptDigest, promptDigest: v3PromptDigest, idempotencyKey: `run-47a109e2-4fd4-48df-a727-8a92a76cc472:writer1:artifact-recovery:v3-finalize:${inputDigest}:${v3PromptDigest}` } };
   assert.deepEqual(validateControl(active, { changedPaths: [".factory-wake/360-words-control.json"], actor: "architect", owner: "architect" }), { dormant: false, stage: "writer1", sourceSha: "9c5c6a0c19f52860ad22961090baa1387bb29507" });
   for (const field of ["allowFollowUp", "allowResume", "allowCreate", "send"]) assert.throws(() => validateControl({ ...active, policy: { ...active.policy, recovery: { ...active.policy.recovery, [field]: true } } }, { changedPaths: [".factory-wake/360-words-control.json"], actor: "architect", owner: "architect" }), /no-message|validation-only|pins/u);
+  assert.throws(() => validateControl({ ...active, policy: { ...active.policy, allowFollowUp: true } }, { changedPaths: [".factory-wake/360-words-control.json"], actor: "architect", owner: "architect" }), /no-message|validation-only|pins/u);
 });
 
 test("workflow is limited to the Architect control push and one dormant-safe Writer1 wake", () => {
