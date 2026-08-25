@@ -10,6 +10,77 @@ const PLACE_ID = 'ChIJHa32AOi84YMR38BV93YKiS8';
 const WEBSITE = 'http://www.360garagedoor.com/';
 const OPPORTUNITY = 'The owned site currently uses Home plus an undifferentiated services gallery, which buries distinct completed-work evidence.';
 const TRUSTED = TRUSTED_ARTIFACTS['32717620900:9516514426:81587f8422a23313fd7868751061eec7e2fb5926'];
+const HISTORICAL_360 = Object.freeze({
+  sourceArtifactDigest: 'sha256:1525d7ad96da0b1b8213dfc38ac2068c94a87540aedbcb85f2bfe5738a4709e0',
+  evidenceDigest: 'sha256:0b01030ebdad4ece325a2cb390a79fd1c60ee985cfae6230f30701427486f504',
+  pageSetDigest: 'sha256:3111870c0acd262a030cb4a4b6ac56b9d6a3b83567321d5953b4e875d5cf364e',
+  prescriptionDigest: 'sha256:c0c9a62b04fe950c0037b237f76c97384b203e056c60b9f967e63e7f2a1b57b9',
+  approvalDigest: 'sha256:558fb8984c7bc516f265fdffd8c2321e4223cc0b6b85111fd6f36e7f54320742',
+  strategyDigest: 'sha256:8b1e4e983e7041302b82f9b0bc2bae4a5b3fb793a395c43e35125f7721bab94a',
+  approvalFileDigest: 'sha256:e9f271facf08876bd59cfdacb04378f530048abb3d08893897736e92dfbbc64f',
+  ledgerFileDigest: 'sha256:40b5b0e5833c03b55c6a6fa46b2f43e6565263aff1e008f6bc55d53cb2d61169',
+  discoveryFileDigest: 'sha256:d24de9e2075727eeb8a7867d89a8f667ac3158bb4bf9bc858d854a917ce05dd6',
+  handoffFileDigest: 'sha256:54bb8b31d5927d5b1ccd952499926ca2f99a8fca3c243b7215398399c6cdda7b',
+  runId: '32717620900',
+  sourceSha: '81587f8422a23313fd7868751061eec7e2fb5926',
+  artifactId: '9516514426',
+  prospectId: 'prospect-32cd5e266a718b3eee2e',
+  placeId: PLACE_ID,
+  selectedServiceIds: Object.freeze(['garage-door-installation', 'garage-door-repair']),
+  routes: Object.freeze(['/', '/garage-door-repair', '/garage-door-installation', '/contact']),
+  candidateServiceIds: Object.freeze(['garage-door-adjustment','garage-door-diagnostics','garage-door-lubrication','garage-door-maintenance','garage-door-opener','garage-door-opener-installation','garage-door-opener-replacement','garage-door-opener-remote','garage-door-replacement','garage-door-seal','garage-door-service-repair','garage-door-spring-repair','garage-door-spring-replacement','garage-door-track-and-roller-service','garage-door-wiring-repair','garage-door-installation','garage-door-repair','garage-door-keypad-installation','outdoor-pad-update','post-install-follow-up','app-setup','phone-support','garage-door'].sort()),
+});
+
+function fileDigest(filename) {
+  return 'sha256:' + require('node:crypto').createHash('sha256').update(fs.readFileSync(filename)).digest('hex');
+}
+
+function historicalStrategy(handoff) {
+  return {
+    pages: handoff.pages,
+    writerProjection: handoff.writerProjection,
+    foldedEvidence: handoff.foldedEvidence,
+    candidateServices: handoff.candidateServices,
+    valueHierarchy: handoff.valueHierarchy,
+    serviceCoverageLedger: handoff.serviceCoverageLedger,
+    reviewAnalysisFacts: handoff.reviewAnalysisFacts,
+    policy: handoff.policy,
+    policyMode: handoff.policyMode,
+  };
+}
+
+function verifySealed360Lineage({ root = process.cwd(), discovery, handoff } = {}) {
+  const approvalFile = path.join(root, 'canary/inputs/360-four-page-reseal-approval.json');
+  const ledgerFile = path.join(root, 'canary/inputs/360-four-page-reseal-ledger.json');
+  const discoveryFile = path.join(root, 'canary/inputs/360-garage-door-and-more.discovery.json');
+  const handoffFile = path.join(root, 'canary/outputs/360-four-page-reseal-handoff.json');
+  const approval = readJson(approvalFile);
+  const ledger = readJson(ledgerFile);
+  const checks = [
+    ['approval file', fileDigest(approvalFile), HISTORICAL_360.approvalFileDigest],
+    ['ledger file', fileDigest(ledgerFile), HISTORICAL_360.ledgerFileDigest],
+    ['discovery file', fileDigest(discoveryFile), HISTORICAL_360.discoveryFileDigest],
+    ['handoff file', fileDigest(handoffFile), HISTORICAL_360.handoffFileDigest],
+    ['sourceArtifactDigest', handoff.sourceArtifactDigest, HISTORICAL_360.sourceArtifactDigest],
+    ['evidenceDigest', handoff.evidenceDigest, HISTORICAL_360.evidenceDigest],
+    ['pageSetDigest', handoff.pageSetDigest, HISTORICAL_360.pageSetDigest],
+    ['prescriptionDigest', handoff.prescriptionDigest, HISTORICAL_360.prescriptionDigest],
+    ['approvalDigest', handoff.approvalDigest, HISTORICAL_360.approvalDigest],
+    ['approval source digest', handoff.approval?.sourceArtifactDigest, HISTORICAL_360.sourceArtifactDigest],
+    ['approval evidence digest', handoff.approval?.evidenceDigest, HISTORICAL_360.evidenceDigest],
+    ['approval page digest', handoff.approval?.pageSetDigest, HISTORICAL_360.pageSetDigest],
+    ['approval approval digest', handoff.approval?.approvalDigest, HISTORICAL_360.approvalDigest],
+    ['strategyDigest', digest(historicalStrategy(handoff)), HISTORICAL_360.strategyDigest],
+  ];
+  for (const [label, actual, expected] of checks) if (actual !== expected) throw new Error(`Sealed 360 historical ${label} mismatch; carry-forward requires Josh review`);
+  if (handoff.source.checkpoint.runId !== HISTORICAL_360.runId || handoff.source.checkpoint.sourceSha !== HISTORICAL_360.sourceSha || String(handoff.source.artifactId) !== HISTORICAL_360.artifactId) throw new Error('Sealed 360 source checkpoint/artifact identity mismatch; carry-forward requires Josh review');
+  if (handoff.runId !== HISTORICAL_360.runId || handoff.prospect.prospectId !== HISTORICAL_360.prospectId || handoff.prospect.placeId !== HISTORICAL_360.placeId || ledger.prospectId !== HISTORICAL_360.prospectId || ledger.placeId !== HISTORICAL_360.placeId) throw new Error('Sealed 360 prospect/place identity mismatch; carry-forward requires Josh review');
+  if (JSON.stringify(handoff.selectedServiceIds) !== JSON.stringify(HISTORICAL_360.selectedServiceIds)) throw new Error('Sealed 360 selected services mismatch; carry-forward requires Josh review');
+  if (JSON.stringify((handoff.pages || []).map(page => page.url)) !== JSON.stringify(HISTORICAL_360.routes)) throw new Error('Sealed 360 approved routes mismatch; carry-forward requires Josh review');
+  if (JSON.stringify((handoff.candidateServices || []).map(service => service.id).sort()) !== JSON.stringify(HISTORICAL_360.candidateServiceIds)) throw new Error('Sealed 360 rejected/folded service ledger mismatch; carry-forward requires Josh review');
+  if (handoff.approval?.approvedBy !== 'Josh Lenz' || handoff.approval?.runId !== HISTORICAL_360.runId || JSON.stringify(handoff.approval?.approvedRoutes) !== JSON.stringify(HISTORICAL_360.routes)) throw new Error('Sealed 360 Josh approval record mismatch; carry-forward requires Josh review');
+  return { ...HISTORICAL_360, synthetic: true, provenance: { provider: 'github-actions-artifact', runId: HISTORICAL_360.runId, artifactId: HISTORICAL_360.artifactId, sourceSha: HISTORICAL_360.sourceSha, rootIdentity: TRUSTED.rootIdentity } };
+}
 
 function readJson(filename) {
   return JSON.parse(fs.readFileSync(path.resolve(filename), 'utf8'));
@@ -18,10 +89,12 @@ function readJson(filename) {
 function sealedVendor(operation) {
   return {
     sealedEvidence: true,
-    provider: operation === 'discovery' || operation === 'finalist-enrichment' ? 'apify' : 'cursor-sdk',
+    synthetic: true,
+    provenanceType: 'github-actions-artifact',
+    provider: 'repository-sealed-evidence',
+    receiptKind: 'synthetic-replay',
     runId: TRUSTED.runId,
-    datasetId: TRUSTED.artifactId,
-    artifactId: TRUSTED.artifactId,
+    githubArtifactId: TRUSTED.artifactId,
     sourceSha: TRUSTED.sourceSha,
     archiveName: TRUSTED.archiveName,
     rootIdentity: TRUSTED.rootIdentity,
@@ -64,8 +137,9 @@ function loadSealed360({ root = process.cwd() } = {}) {
   const packet = handoff.reviewInventory?.reviewPacket;
   const classification = handoff.reviewInventory?.classification;
   if (!packet || !classification || handoff.prospect?.placeId !== PLACE_ID) throw new Error('Sealed 360 evidence is missing review inventory');
+  const lineage = verifySealed360Lineage({ root, discovery, handoff });
   const judgments = Object.fromEntries((classification.reviews || []).map((entry) => [entry.id, entry.authoritativeJudgment]));
-  return { discovery, handoff, packet, classification, judgments };
+  return { discovery, handoff, packet, classification, judgments, lineage };
 }
 
 function createSealedApifyAdapter(sealed) {
@@ -161,4 +235,4 @@ function createSealed360Adapters({ root = process.cwd() } = {}) {
   };
 }
 
-module.exports = { PLACE_ID, WEBSITE, OPPORTUNITY, loadSealed360, createSealed360Adapters, bindClaims, reboundLedger };
+module.exports = { PLACE_ID, WEBSITE, OPPORTUNITY, HISTORICAL_360, loadSealed360, verifySealed360Lineage, createSealed360Adapters, bindClaims, reboundLedger };
