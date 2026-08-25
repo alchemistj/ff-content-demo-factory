@@ -66,25 +66,58 @@ function claimText(claim) {
 }
 
 function claimEvidenceRefs(claim) {
-  return Array.isArray(claim?.evidenceRefs) ? claim.evidenceRefs.map(String).filter(Boolean) : [];
+  return Array.isArray(claim?.evidenceRefs) ? claim.evidenceRefs.filter((ref) => typeof ref === 'string' || (ref && typeof ref === 'object')).map((ref) => typeof ref === 'string' ? { id: ref, type: 'review' } : { ...ref, id: String(ref.id || ref.ref || ''), type: ref.type || 'review' }).filter((ref) => ref.id) : [];
 }
 
-function validateClaimReferences(page, classified, serviceLedger) {
+function canonicalClaimService(value, serviceLedger) {
+  return value ? canonicalServiceId(value, serviceLedger) : null;
+}
+
+function claimSourceHost(ref) {
+  const value = ref?.sourceUrl || ref?.sourceDomain || null;
+  if (!value) return null;
+  try { return new URL(String(value)).hostname.replace(/^www\./, '').toLowerCase(); } catch { return String(value).replace(/^www\./, '').toLowerCase(); }
+}
+
+function validateClaimReferences(page, classified, serviceLedger, context = {}) {
   const rawClaims = page.claims == null ? [] : page.claims;
   const rawProposedClaims = page.proposedClaims == null ? [] : page.proposedClaims;
   if (!Array.isArray(rawClaims) || !Array.isArray(rawProposedClaims)) return ['claims and proposedClaims must be arrays'];
   const claims = [...rawClaims, ...rawProposedClaims];
-  const known = new Set((classified || []).map((entry) => String(entry.id)));
+  const reviews = new Map((classified || []).map((entry) => [String(entry.id), entry]));
+  const crawlEvidence = new Map();
   for (const service of serviceLedger?.services || []) {
-    for (const id of service.reviewIds || []) known.add(String(id));
-    for (const id of service.siteAuditCoverage?.crawlRefs || []) known.add(String(id));
+    for (const id of service.reviewIds || []) if (!reviews.has(String(id))) reviews.set(String(id), { id: String(id), ledgerOnly: true, service: service.id });
+    for (const id of service.siteAuditCoverage?.crawlRefs || []) crawlEvidence.set(String(id), { id: String(id), service: service.id, coverage: service.siteAuditCoverage, sourceDomain: service.siteAuditCoverage.sourceDomain || service.siteAuditCoverage.websiteHost || null });
   }
   const errors = [];
   for (const claim of claims) {
     const text = claimText(claim).trim();
     if (!text) { errors.push(`${page.type || page.service}: claim text is required`); continue; }
     const refs = claimEvidenceRefs(claim);
-    if (!refs.length || refs.some((ref) => !known.has(ref))) errors.push(`${page.type || page.service}: every claim requires resolvable evidenceRefs`);
+    if (!refs.length) { errors.push(`${page.type || page.service}: every claim requires resolvable evidenceRefs`); continue; }
+    const requestedService = canonicalClaimService(claim.service || claim.serviceId || page.service, serviceLedger);
+    if (claim.prospectId && serviceLedger?.prospectId && String(claim.prospectId) !== String(serviceLedger.prospectId)) errors.push(`${page.type || page.service}: claim prospect binding is invalid`);
+    for (const ref of refs) {
+      const review = reviews.get(ref.id);
+      const crawl = crawlEvidence.get(ref.id);
+      if (!review && !crawl) { errors.push(`${page.type || page.service}: every claim requires resolvable evidenceRefs; evidence reference ${ref.id} is not in the bound source ledger`); continue; }
+      if (crawl) {
+        if (ref.type !== 'site-audit' || ref.directSupport !== true || !claimSourceHost(ref) || !crawl.sourceDomain || claimSourceHost(ref) !== String(crawl.sourceDomain).replace(/^www\./, '').toLowerCase()) errors.push(`${page.type || page.service}: site evidence ${ref.id} lacks direct source/domain support`);
+        if (requestedService && canonicalClaimService(crawl.service, serviceLedger) !== requestedService) errors.push(`${page.type || page.service}: evidence ${ref.id} does not support this service`);
+        continue;
+      }
+      if (review.ledgerOnly) { errors.push(`${page.type || page.service}: review ${ref.id} has no authoritative source record`); continue; }
+      if (ref.type !== 'review') errors.push(`${page.type || page.service}: review evidence ${ref.id} has an invalid evidence type`);
+      const judgment = review.authoritativeJudgment || review.judgment || {};
+      if (review.authoritative !== true || judgment.directCompletedService !== true) errors.push(`${page.type || page.service}: evidence ${ref.id} is not direct completed-service support`);
+      const supportedServices = (judgment.serviceEvidence || judgment.services || []).map((item) => canonicalClaimService(typeof item === 'string' ? item : item.service, serviceLedger)).filter(Boolean);
+      const strictServiceBinding = claim.service || claim.serviceId || ref.service;
+      if (strictServiceBinding && requestedService && supportedServices.length && !supportedServices.includes(requestedService)) errors.push(`${page.type || page.service}: review ${ref.id} does not directly support this service`);
+      if (claim.source && String(claim.source) !== String(review.sourceReview?.source || review.provenance?.source || '')) errors.push(`${page.type || page.service}: review ${ref.id} source binding is invalid`);
+      const sourceDomain = claimSourceHost(ref);
+      if (sourceDomain && sourceDomain !== claimSourceHost({ sourceUrl: review.sourceReview?.reviewUrl || review.sourceReview?.sourceUrl || review.provenance?.sourceUrl })) errors.push(`${page.type || page.service}: review ${ref.id} domain binding is invalid`);
+    }
   }
   return errors;
 }
