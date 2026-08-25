@@ -5,8 +5,9 @@ const assert = require('node:assert/strict');
 const { normalizeWebsiteAudit } = require('../src/factory/production-adapters');
 const { validateClaimReferences } = require('../src/factory/prescription');
 const { renderGate1 } = require('../src/factory/gate1');
-const { sourceCheckpointFor, actionProofFromEnvironment } = require('../src/factory/orchestrator');
-const { semanticDigests, assertSemanticCheckpoint } = require('../src/factory/checkpoint');
+const { sourceCheckpointFor, requiredReceipt, actionProofFromEnvironment } = require('../src/factory/orchestrator');
+const { semanticDigests, assertSemanticCheckpoint, recomputeSource, recomputeEvidence, recomputePrescription } = require('../src/factory/checkpoint');
+const { createDispatchPacket, canonicalThreadUrl, validateJobReceipt } = require('../src/factory/cloud-agent');
 const { runCurrentHeadGate1Canary } = require('../src/run-gate1-canary');
 const fs = require('node:fs');
 const os = require('node:os');
@@ -50,31 +51,85 @@ test('Gate 1 appendix exposes QA, receipt, exact-head, and checkpoint lineage wi
   assert.match(markdown, /cursor\.example\/thread\/1/);
   assert.match(markdown, /Exact-head test evidence/);
   assert.match(markdown, /Source manifest digest/);
+  assert.match(markdown, /Action proof result/);
   assert.match(markdown, /production page copy has not been written/);
 });
 
 test('restore semantic checks and exact-head proof are deterministic', () => {
-  const state = { activeRun: { status: 'awaiting-human-gate-1', artifacts: { sourceCheckpoint: { sourceManifest: { sourceMaterialDigest: 'sha256:source' }, sourceManifestDigest: 'sha256:manifest', sourceMaterial: {} }, prescription: { evidenceDigest: 'sha256:evidence', serviceCoverageLedger: { services: [] }, pages: [], prescriptionDigest: 'sha256:prescription' } } } };
-  const digests = semanticDigests(state);
-  const checkpoint = { sourceSha: 'head-1', semanticDigests: digests };
+  const run = { runId: 'run-1', prospectId: 'prospect-1', candidate: { placeId: 'place-1', name: 'Example', location: 'Town', website: 'https://owned.example' }, status: 'awaiting-human-gate-1', artifacts: { sourceCheckpoint: { sourceMaterial: { discoveryReceipt: { provider: 'fixture' }, auditReceipt: { provider: 'fixture' }, enrichmentReceipt: { provider: 'fixture' }, reviewReceipts: [] } }, inventory: { classified: [] }, prescription: { serviceCoverageLedger: { services: [] }, pages: [] } } };
+  let source = recomputeSource(run, 'head-1');
+  run.artifacts.sourceCheckpoint.sourceIdentity = { provider: 'factory-trusted-source', runId: run.runId, artifactId: 'source-run-1', sourceSha: source.sourceSha, rootIdentity: 'factory-source:run-1' };
+  source = recomputeSource(run, 'head-1');
+  Object.assign(run.artifacts.sourceCheckpoint, { sourceManifest: source.sourceManifest, sourceManifestDigest: source.sourceManifestDigest, sourceArtifactDigest: source.sourceArtifactDigest, sourceSha: 'head-1', headSha: 'head-1' });
+  run.artifacts.prescription.evidenceDigest = recomputeEvidence(run);
+  run.artifacts.prescription.pageSetDigest = require('../src/factory/prescription-policy').pageSetDigest([]);
+  run.artifacts.prescription.prescriptionDigest = recomputePrescription(run);
+  const state = { activeRun: run };
+  const digests = semanticDigests(state, 'head-1');
+  const checkpoint = { sourceSha: 'head-1', sourceManifest: source.sourceManifest, sourceArtifactDigest: source.sourceArtifactDigest, semanticDigests: digests };
   assert.deepEqual(assertSemanticCheckpoint({ checkpoint, state, currentHeadSha: 'head-1' }), digests);
   assert.throws(() => assertSemanticCheckpoint({ checkpoint: { ...checkpoint, semanticDigests: { ...digests, evidenceDigest: 'sha256:tampered' } }, state, currentHeadSha: 'head-1' }), /semantic digest mismatch/);
-  assert.deepEqual(actionProofFromEnvironment({ FACTORY_CHECKED_OUT_SHA: 'head-1', FACTORY_EXPECTED_HEAD_SHA: 'head-1', FACTORY_HEAD_ASSERTION: 'true', FACTORY_TEST_RUN_URL: 'https://actions.example/run' }), { checkedOutSha: 'head-1', expectedHeadSha: 'head-1', headAssertion: true, testRunUrl: 'https://actions.example/run' });
+  assert.deepEqual(actionProofFromEnvironment({ FACTORY_CHECKED_OUT_SHA: 'head-1', FACTORY_EXPECTED_HEAD_SHA: 'head-1', FACTORY_HEAD_ASSERTION: 'true', FACTORY_TEST_RUN_URL: 'https://actions.example/run', FACTORY_TEST_RESULT: 'success' }), { checkedOutSha: 'head-1', expectedHeadSha: 'head-1', headAssertion: true, testRunUrl: 'https://actions.example/run', testResult: 'success' });
   const wake = fs.readFileSync('.github/workflows/architect-factory-wake.yml', 'utf8');
   assert.match(wake, /consumedNonces\.includes/);
   assert.doesNotMatch(wake, /consumedWakeIds[^\n]*slice\(/);
   const canary = fs.readFileSync('.github/workflows/current-head-gate1-canary.yml', 'utf8');
   assert.match(canary, /FACTORY_ASSERTED_HEAD_SHA/);
+  assert.match(canary, /FACTORY_CHECKED_OUT_SHA/);
+  assert.match(canary, /FACTORY_TEST_RUN_URL/);
+  assert.match(canary, /FACTORY_TEST_RESULT/);
   assert.match(fs.readFileSync('src/run-gate1-canary.js', 'utf8'), /inputManifest|bindingDigest/);
   assert.doesNotMatch(canary, /CURSOR_API_KEY/);
   assert.doesNotMatch(fs.readFileSync('src/run-gate1-canary.js', 'utf8'), /createCursorAdapter/);
+  const dispatch = fs.readFileSync('.github/workflows/cursor-cloud-agent-dispatch.yml', 'utf8');
+  assert.match(dispatch, /@cursor/);
+  assert.match(dispatch, /gh api/);
+  assert.doesNotMatch(dispatch, /CURSOR_API_KEY/);
+});
+
+test('production receipts require terminal identity, digests, and timestamps', () => {
+  assert.throws(() => requiredReceipt({ provider: 'apify' }, 'discovery'), /complete terminal/);
+  assert.throws(() => requiredReceipt({ provider: 'apify', operation: 'discovery', status: 'running', terminalStatus: 'succeeded', inputDigest: 'i', outputDigest: 'o', startedAt: 't', completedAt: 't', vendorReceipt: { runId: 'r', datasetId: 'd' } }, 'discovery'), /complete terminal/);
+  assert.throws(() => requiredReceipt({ provider: 'apify', operation: 'discovery', status: 'completed', terminalStatus: 'succeeded', inputDigest: 'i', outputDigest: 'o', startedAt: 't', completedAt: 't', vendorReceipt: { runId: 'r' } }, 'discovery'), /run\/dataset/);
+});
+
+test('semantic restore rejects mutations to every persisted semantic component', () => {
+  const run = { runId: 'run-1', prospectId: 'prospect-1', candidate: { placeId: 'place-1', name: 'Example', location: 'Town', website: 'https://owned.example' }, status: 'awaiting-human-gate-1', artifacts: { sourceCheckpoint: { sourceMaterial: { discoveryReceipt: { provider: 'fixture' }, auditReceipt: { provider: 'fixture' }, enrichmentReceipt: { provider: 'fixture' }, reviewReceipts: [] } }, inventory: { classified: [] }, prescription: { serviceCoverageLedger: { services: [] }, pages: [] } } };
+  let source = recomputeSource(run, 'head-1');
+  run.artifacts.sourceCheckpoint.sourceIdentity = { provider: 'factory-trusted-source', runId: run.runId, artifactId: 'source-run-1', sourceSha: source.sourceSha, rootIdentity: 'factory-source:run-1' };
+  source = recomputeSource(run, 'head-1');
+  Object.assign(run.artifacts.sourceCheckpoint, { sourceManifest: source.sourceManifest, sourceManifestDigest: source.sourceManifestDigest, sourceArtifactDigest: source.sourceArtifactDigest, sourceSha: 'head-1', headSha: 'head-1' });
+  run.artifacts.prescription.evidenceDigest = recomputeEvidence(run);
+  run.artifacts.prescription.pageSetDigest = require('../src/factory/prescription-policy').pageSetDigest([]);
+  run.artifacts.prescription.prescriptionDigest = recomputePrescription(run);
+  const state = { activeRun: run };
+  const checkpoint = { sourceSha: 'head-1', sourceManifest: source.sourceManifest, sourceArtifactDigest: source.sourceArtifactDigest, semanticDigests: semanticDigests(state, 'head-1') };
+  for (const mutate of [
+    (copy) => { copy.activeRun.artifacts.sourceCheckpoint.sourceMaterial.discoveryReceipt.provider = 'tampered'; },
+    (copy) => { copy.activeRun.artifacts.inventory.classified.push({ id: 'evidence-mutation' }); },
+    (copy) => { copy.activeRun.artifacts.prescription.serviceCoverageLedger.services.push({ id: 'ledger-mutation' }); },
+    (copy) => { copy.activeRun.artifacts.prescription.pages.push({ type: 'Contact', url: '/contact' }); },
+    (copy) => { copy.activeRun.artifacts.prescription.generatedAt = 'tampered'; },
+  ]) assert.throws(() => assertSemanticCheckpoint({ checkpoint, state: JSON.parse(JSON.stringify(mutateState(state, mutate))), currentHeadSha: 'head-1' }), /mismatch|stale|tampered/);
+  assert.throws(() => assertSemanticCheckpoint({ checkpoint: { ...checkpoint, sourceManifest: { ...checkpoint.sourceManifest, sourceMaterialDigest: 'sha256:invented' } }, state, currentHeadSha: 'head-1' }), /mismatch|stale|tampered/);
+});
+
+function mutateState(state, mutate) { const copy = JSON.parse(JSON.stringify(state)); mutate(copy); return copy; }
+
+test('GitHub-native dispatch packet and Cursor receipt contract reject stale or fake links', () => {
+  const packet = createDispatchPacket({ issueNumber: 8, prNumber: 1, branch: 'architect/greenfield-gate1', reviewedHeadSha: 'head-1', scope: 'research-only' });
+  assert.match(packet.commentBody, /^@cursor/);
+  assert.equal(packet.model.fastOff, true);
+  assert.equal(canonicalThreadUrl('https://cursor.com/agents/agent-1'), 'https://cursor.com/agents/agent-1');
+  assert.throws(() => canonicalThreadUrl('https://example.com/agent-1'), /canonical/);
+  assert.throws(() => validateJobReceipt({ operation: 'website-audit', stage: 'website-audit', status: 'completed', terminalStatus: 'succeeded', agentId: 'a', runId: 'r', threadUrl: 'https://example.com/a', inputDigest: 'i', outputDigest: 'o', startedAt: 't', completedAt: 't', envelope: { checkedOutSha: 'head-1', inputManifestDigest: 'm', operation: 'website-audit', stage: 'website-audit' } }, { kind: 'website-audit', expectedEnvelope: { checkedOutSha: 'head-1', inputManifestDigest: 'm' } }), /canonical/);
 });
 
 test('current-head canary rejects API-key dispatch before alternate provider work', async () => {
   await assert.rejects(() => runCurrentHeadGate1Canary({ root: 'canary', requestFile: 'missing.json', selectionFile: 'missing.json', qaFile: 'missing.json', cursorBundleFile: 'missing.json', env: { CURSOR_API_KEY: 'must-not-be-used' } }), /CURSOR_API_KEY is not a supported canary credential/);
-  await assert.rejects(() => runCurrentHeadGate1Canary({ root: 'canary', requestFile: 'missing.json', selectionFile: 'missing.json', qaFile: 'missing.json', cursorBundleFile: 'missing.json', env: { CURSOR_MODEL: 'unsupported-provider-model' } }), /Unsupported Cursor model override/);
+  await assert.rejects(() => runCurrentHeadGate1Canary({ root: 'canary', requestFile: 'missing.json', selectionFile: 'missing.json', qaFile: 'missing.json', cursorBundleFile: 'missing.json', env: { CURSOR_MODEL: 'unsupported-provider-model', FACTORY_CHECKED_OUT_SHA: 'head-1', EXPECTED_HEAD_SHA: 'head-1', FACTORY_HEAD_ASSERTION: 'true' } }), /Unsupported Cursor model override/);
   const temp = fs.mkdtempSync(path.join(os.tmpdir(), 'factory-canary-'));
   for (const name of ['request.json', 'selection.json', 'qa.json']) fs.writeFileSync(path.join(temp, name), '{}');
   fs.writeFileSync(path.join(temp, 'cursor-bundle.json'), JSON.stringify({ schemaVersion: 'cursor-cloud-agent-bundle-v1' }));
-  await assert.rejects(() => runCurrentHeadGate1Canary({ root: temp, requestFile: path.join(temp, 'request.json'), selectionFile: path.join(temp, 'selection.json'), qaFile: path.join(temp, 'qa.json'), cursorBundleFile: path.join(temp, 'cursor-bundle.json'), env: {} }), /Cursor Cloud Agent bundle model attestation is invalid/);
+  await assert.rejects(() => runCurrentHeadGate1Canary({ root: temp, requestFile: path.join(temp, 'request.json'), selectionFile: path.join(temp, 'selection.json'), qaFile: path.join(temp, 'qa.json'), cursorBundleFile: path.join(temp, 'cursor-bundle.json'), env: { FACTORY_CHECKED_OUT_SHA: 'head-1', EXPECTED_HEAD_SHA: 'head-1', FACTORY_HEAD_ASSERTION: 'true', FACTORY_ISSUE_NUMBER: '8', FACTORY_PR_NUMBER: '1', FACTORY_BRANCH: 'architect/greenfield-gate1' } }), /Cloud Agent model\/Fast-off attestation is invalid/);
 });
