@@ -1,7 +1,7 @@
 'use strict';
 
 const crypto = require('node:crypto');
-const { persistOperationIntent, persistOperationState } = require('../factory/receipt-store');
+const { persistOperationIntent, persistOperationState, operationArtifactBinding, persistOperationCheckpoint } = require('../factory/receipt-store');
 
 const ACTOR_ID = 'compass~crawler-google-places';
 const APIFY_BASE_URL = 'https://api.apify.com/v2';
@@ -202,12 +202,16 @@ function createApifyAdapter({ token, fetchImpl = globalThis.fetch, clock = () =>
         if (prior.status !== 'needs-architect-review') await persistOperationState(receiptStore, operationKey, { ...prior, status: 'needs-architect-review', reviewReason: 'ambiguous Apify acceptance cannot be reconciled', reviewedAt: clock() });
         throw new Error('Apify acceptance is ambiguous; Architect review is required before any retry');
       }
-      await persistOperationState(receiptStore, operationKey, { ...prior, runId, datasetId, status: 'running', reconciledAt: clock() });
+      const acceptedArtifact = operationArtifactBinding({ operationKey, provider: 'apify', operation, inputDigest: prior.inputDigest || crypto.createHash('sha256').update(JSON.stringify(input)).digest('hex'), requestDigest: prior.requestDigest || crypto.createHash('sha256').update(JSON.stringify(input)).digest('hex'), idempotencyKey: prior.idempotencyKey || `factory-apify-${stableHash(`${jobKey}:${JSON.stringify(input)}`)}`, context: prior.context || { actor: ACTOR_ID, jobKey }, responseDigest: crypto.createHash('sha256').update(JSON.stringify(reconciled)).digest('hex'), stage: 'accepted' });
+      await persistOperationCheckpoint(receiptStore, operationKey, acceptedArtifact);
+      await persistOperationState(receiptStore, operationKey, { ...prior, ...acceptedArtifact, runId, datasetId, status: 'running', reconciledAt: clock() });
       return resumeActor({ ...prior, runId, datasetId, status: 'running' }, input, jobKey);
     }
     const requestDigest = crypto.createHash('sha256').update(JSON.stringify(input)).digest('hex');
     const idempotencyKey = `factory-apify-${stableHash(`${jobKey}:${requestDigest}`)}`;
     await persistOperationIntent(receiptStore, operationKey, { provider: 'apify', operation, input, context: { actor: ACTOR_ID, jobKey }, metadata: { idempotencyKey, requestDigest }, startedAt: clock() });
+    const checkpoint = operationArtifactBinding({ operationKey, provider: 'apify', operation, inputDigest: requestDigest, requestDigest, idempotencyKey, context: { actor: ACTOR_ID, jobKey }, stage: 'pre-post' });
+    await persistOperationCheckpoint(receiptStore, operationKey, checkpoint);
     // Seal the outbound attempt before POST.  A runner crash after this point
     // must reconcile provider state, never issue a second paid POST.
     await persistOperationState(receiptStore, operationKey, { schemaVersion: 'factory-paid-operation-v1', operationKey, provider: 'apify', operation, actor: ACTOR_ID, jobKey, input, inputDigest: requestDigest, idempotencyKey, requestDigest, status: 'post-attempted', postAttemptedAt: clock() });
@@ -226,9 +230,11 @@ function createApifyAdapter({ token, fetchImpl = globalThis.fetch, clock = () =>
       runId = reconciledRunId;
       datasetId = reconciledDatasetId;
     }
+    const acceptedArtifact = operationArtifactBinding({ operationKey, provider: 'apify', operation, inputDigest: requestDigest, requestDigest, idempotencyKey, context: { actor: ACTOR_ID, jobKey }, responseDigest: crypto.createHash('sha256').update(JSON.stringify({ runId, datasetId, run })).digest('hex'), stage: 'accepted' });
+    await persistOperationCheckpoint(receiptStore, operationKey, acceptedArtifact);
     await persistOperationState(receiptStore, operationKey, {
       schemaVersion: 'factory-paid-operation-v1', operationKey, provider: 'apify', operation, actor: ACTOR_ID, jobKey, runId, datasetId,
-      status: 'running', startedAt: clock(), input, inputDigest: requestDigest, idempotencyKey, requestDigest,
+      status: 'running', startedAt: clock(), input, inputDigest: requestDigest, idempotencyKey, requestDigest, ...checkpoint, ...acceptedArtifact,
     });
     let terminal;
     try {

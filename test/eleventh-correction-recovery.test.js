@@ -133,3 +133,18 @@ test('recovery decision conflict is persisted as quarantine and never advances p
   assert.equal(fs.existsSync(path.join(directory, 'conflict-quarantined.json')), true);
   assert.equal(fs.existsSync(path.join(directory, 'cursor-phase-b-claim.md')), false);
 });
+
+test('canonical recovery application marks every no-op decision as applied', () => {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), 'factory-recovery-applied-'));
+  const pending = pendingFor(); const result = resultFor(pending); const directory = path.join(root, 'phase-a');
+  const state = applyRecoveryDecision({ pending, result, comments: [], decision: { action: 'noop', status: 'resumed', ownerToken: 'owner', outcomeKey: 'outcome' }, directory });
+  assert.equal(state.applied, true);
+  assert.equal(state.canonical, true);
+  assert.equal(JSON.parse(fs.readFileSync(path.join(directory, 'recovery-state.json'))).applied, true);
+});
+
+test('canonical phase-B claim fails closed when no persisted recovery artifact identity exists', () => {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), 'factory-recovery-artifact-required-'));
+  const pending = pendingFor(); const result = resultFor(pending);
+  assert.throws(() => applyRecoveryDecision({ pending, result, comments: [], decision: { action: 'resume-phase-b', status: 'terminal', ownerToken: 'owner', outcomeKey: 'outcome', existing: { status: 'terminal' } }, directory: path.join(root, 'phase-a') }), /recovery artifact/);
+});

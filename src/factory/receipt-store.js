@@ -16,6 +16,25 @@ function receiptArtifactBinding({ handoffId, dispatchKey, outputDigest, phaseARu
   return { outcome: String(outcome), handoffId: String(handoffId), dispatchKey: String(dispatchKey), outputDigest: String(outputDigest), phaseARunId: String(phaseARunId), name: `factory-paid-receipts-${key.slice(0, 32)}` };
 }
 
+function operationArtifactBinding({ operationKey, provider, operation, inputDigest, requestDigest, idempotencyKey, context = {}, responseDigest = null, stage = 'pre-post' } = {}) {
+  for (const [name, value] of Object.entries({ operationKey, provider, operation, inputDigest, requestDigest, idempotencyKey })) {
+    if (!value) throw new Error(`operation artifact binding ${name} is required`);
+  }
+  const content = { schemaVersion: 'factory-paid-operation-artifact-v1', stage, operationKey: String(operationKey), provider: String(provider), operation: String(operation), inputDigest: String(inputDigest), requestDigest: String(requestDigest), idempotencyKey: String(idempotencyKey), context, ...(responseDigest ? { responseDigest: String(responseDigest) } : {}) };
+  const contentDigest = digest(content);
+  const suffix = contentDigest.slice(0, 32);
+  return { ...content, artifactName: `factory-paid-operation-${stage}-${suffix}`, artifactId: `operation-artifact:${suffix}`, artifactDigest: contentDigest, artifactContentDigest: contentDigest };
+}
+
+async function persistOperationCheckpoint(store, key, binding) {
+  const put = typeof store?.put === 'function' ? store.put.bind(store) : typeof store?.set === 'function' ? async (name, value) => store.set(name, value) : null;
+  if (!put) throw new TypeError('receiptStore must implement put');
+  if (!binding?.artifactName || !binding.artifactId || !binding.artifactDigest || !binding.artifactContentDigest) throw new Error('paid operation checkpoint artifact identity is incomplete');
+  const checkpoint = { schemaVersion: 'factory-paid-operation-checkpoint-v1', ...binding, checkpointKey: key, persistedAt: new Date().toISOString() };
+  await put(`checkpoint:${key}`, checkpoint);
+  return checkpoint;
+}
+
 async function persistOperationIntent(store, key, { provider, operation, input, context = {}, metadata = {}, startedAt = new Date().toISOString() } = {}) {
   const put = typeof store?.put === 'function' ? store.put.bind(store) : typeof store?.set === 'function' ? async (name, value) => store.set(name, value) : null;
   if (!put) throw new TypeError('receiptStore must implement put');
@@ -79,4 +98,4 @@ function createFileReceiptStore(root) {
   };
 }
 
-module.exports = { createFileReceiptStore, readJson, writeJson, operationKey, receiptArtifactBinding, persistOperationIntent, persistOperationState };
+module.exports = { createFileReceiptStore, readJson, writeJson, operationKey, receiptArtifactBinding, operationArtifactBinding, persistOperationCheckpoint, persistOperationIntent, persistOperationState };

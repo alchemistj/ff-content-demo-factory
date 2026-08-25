@@ -115,6 +115,8 @@ test('Apify persists in-flight paid receipts and resumes the run without a dupli
   const firstAdapter = createApifyAdapter({ token: 'secret', fetchImpl, receiptStore });
   await assert.rejects(() => firstAdapter.enrichFinalist({ placeId: 'ChIJresume', mapsUrl: 'https://www.google.com/maps/place/Resume' }), /simulated interruption/);
   assert.equal(receiptStore.get('apify:run:finalist:ChIJresume').status, 'running');
+  assert.ok(receiptStore.get('apify:run:finalist:ChIJresume').artifactName);
+  assert.ok(receiptStore.get('checkpoint:apify:run:finalist:ChIJresume').artifactContentDigest);
   const secondAdapter = createApifyAdapter({ token: 'secret', fetchImpl, receiptStore });
   const result = await secondAdapter.enrichFinalist({ placeId: 'ChIJresume', mapsUrl: 'https://www.google.com/maps/place/Resume' });
   assert.equal(result.reviews.length, 1);
@@ -159,6 +161,8 @@ test('Apify ambiguous acceptance is reconciled without a second POST, otherwise 
   const request = { placeId: 'ChIJambiguous', mapsUrl: 'https://www.google.com/maps/place/Ambiguous' };
   const first = createApifyAdapter({ token: 'secret', fetchImpl, receiptStore });
   await assert.rejects(() => first.enrichFinalist(request), /ambiguous.*Architect review/);
+  const checkpoint = receiptStore.get('checkpoint:apify:run:finalist:ChIJambiguous');
+  assert.ok(checkpoint?.artifactName && checkpoint.artifactId && checkpoint.artifactDigest && checkpoint.artifactContentDigest);
   const second = createApifyAdapter({ token: 'secret', fetchImpl, receiptStore });
   await assert.rejects(() => second.enrichFinalist(request), /ambiguous.*Architect review/);
   assert.equal(calls.filter((call) => call.method === 'POST').length, 1);

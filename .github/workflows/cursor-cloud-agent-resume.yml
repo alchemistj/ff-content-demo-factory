@@ -121,13 +121,13 @@ jobs:
           fi
           decision_action="$(node -e "process.stdout.write(JSON.parse(require('fs').readFileSync('canary/phase-a/recovery-state.json','utf8')).action)")"
           case "$decision_action" in
-            noop) echo 'FACTORY_RESUME_ALREADY_CLAIMED=true' >> "$GITHUB_ENV" ;;
-            recover-phase-b) echo 'FACTORY_PHASE_B_RECOVERY=true' >> "$GITHUB_ENV" ;;
-            resume-phase-b) echo 'FACTORY_TERMINAL_ALREADY_RECORDED=true' >> "$GITHUB_ENV" ;;
+            noop) echo 'FACTORY_RESUME_ALREADY_CLAIMED=true' >> "$GITHUB_ENV"; echo 'FACTORY_RECOVERY_DECISION_APPLIED=true' >> "$GITHUB_ENV" ;;
+            recover-phase-b) echo 'FACTORY_PHASE_B_RECOVERY=true' >> "$GITHUB_ENV"; echo 'FACTORY_RECOVERY_DECISION_APPLIED=true' >> "$GITHUB_ENV" ;;
+            resume-phase-b) echo 'FACTORY_TERMINAL_ALREADY_RECORDED=true' >> "$GITHUB_ENV"; echo 'FACTORY_RECOVERY_DECISION_APPLIED=true' >> "$GITHUB_ENV" ;;
             *) echo 'FACTORY_RECOVERY_DECISION_APPLIED=true' >> "$GITHUB_ENV" ;;
           esac
       - name: Record in-motion ledger state after validated Cursor receipt
-        if: env.FACTORY_RECOVERY_DECISION_APPLIED != 'true'
+        if: ${{ false }}
         env:
           GH_TOKEN: ${{ github.token }}
           ISSUE_NUMBER: ${{ env.FACTORY_DISPATCH_ISSUE_NUMBER }}
@@ -161,7 +161,7 @@ jobs:
           if [ "${FACTORY_TERMINAL_ALREADY_RECORDED:-false}" = 'true' ]; then exit 0; fi
           GH_TOKEN="$GH_TOKEN" gh api "repos/$REPOSITORY/issues/$ISSUE_NUMBER/comments" --method POST -f body="$(cat canary/phase-a/cursor-in-motion-ledger-marker.md)"
       - name: Consume durable resume ledger claim after validation
-        if: env.FACTORY_RECOVERY_DECISION_APPLIED != 'true'
+        if: ${{ false }}
         env:
           GH_TOKEN: ${{ github.token }}
           ISSUE_NUMBER: ${{ env.FACTORY_DISPATCH_ISSUE_NUMBER }}
@@ -194,7 +194,7 @@ jobs:
           if [ -f canary/phase-a/resume-already-claimed ] || [ -f canary/phase-a/terminal-already-recorded ]; then exit 0; fi
           GH_TOKEN="$GH_TOKEN" gh api "repos/$REPOSITORY/issues/$ISSUE_NUMBER/comments" --method POST -f body="$(cat canary/phase-a/cursor-resume-ledger-marker.md)"
       - name: Claim durable GitHub phase-B CAS before phase-B work
-        if: env.FACTORY_RESUME_ALREADY_CLAIMED != 'true' && env.FACTORY_RECOVERY_DECISION_APPLIED != 'true'
+        if: ${{ false }}
         env:
           GH_TOKEN: ${{ github.token }}
           ISSUE_NUMBER: ${{ env.FACTORY_DISPATCH_ISSUE_NUMBER }}
