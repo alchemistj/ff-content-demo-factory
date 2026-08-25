@@ -111,10 +111,10 @@ function requiredReceipt(value, label, fallback = null) {
   if (!hasIdentity) throw Object.assign(new Error(`Trusted source checkpoint requires identifiable ${label} receipt`), { code: 'SOURCE_RECEIPT_INVALID' });
   return value;
 }
-function sourceCheckpointFor(run, state) {
+function sourceCheckpointFor(run, state, { allowTestFixtures = false } = {}) {
   const candidateIdentity = stableCandidateIdentity(run.candidate || {});
   const auditReceiptForCandidate = state.auditReceipts?.[candidateIdentity] || state.auditReceipts?.[run.candidate?.placeId];
-  const fixtureFallback = !auditReceiptForCandidate || auditReceiptForCandidate.provider !== 'cursor-sdk' ? { fixture: true } : null;
+  const fixtureFallback = allowTestFixtures && (!auditReceiptForCandidate || auditReceiptForCandidate.provider !== 'cursor-sdk') ? { fixture: true } : null;
   const discoveryReceipt = requiredReceipt(state.discoveryPacket?.receipt || state.discoveryPacket?.provenance?.run, 'discovery', fixtureFallback);
   const auditReceipt = requiredReceipt(auditReceiptForCandidate, 'website-audit', fixtureFallback);
   const enrichmentReceipt = requiredReceipt(run.paidWork?.finalistEnrichment?.receipt, 'finalist-enrichment', fixtureFallback);
@@ -162,6 +162,15 @@ function correctedProposal(proposal, corrections) {
   };
 }
 function qaDecision(decision) { return decision?.qa || (decision && (Object.prototype.hasOwnProperty.call(decision, 'qaPass') || decision.whyBuilt) ? { passed: decision.qaPass === true, whyBuilt: decision.whyBuilt, corrections: decision.corrections } : null); }
+function actionProofFromEnvironment(env = process.env) {
+  if (!env.FACTORY_CHECKED_OUT_SHA && !env.FACTORY_EXPECTED_HEAD_SHA) return null;
+  return {
+    checkedOutSha: env.FACTORY_CHECKED_OUT_SHA || null,
+    expectedHeadSha: env.FACTORY_EXPECTED_HEAD_SHA || null,
+    headAssertion: env.FACTORY_HEAD_ASSERTION === 'true',
+    testRunUrl: env.FACTORY_TEST_RUN_URL || null,
+  };
+}
 
 async function classifyResumably({ run, state, adapters, root, now }) {
   const packet = run.artifacts.reviewPacket;
@@ -245,7 +254,7 @@ async function runFactoryCycle({ root, config, adapters, discoveryRequest = null
     }
     if (!run.artifacts.classification || Object.keys(run.artifacts.reviewJudgments || {}).length < run.artifacts.reviewPacket.reviews.length) await classifyResumably({ run, state, adapters, root, now });
     if (!run.artifacts.prescription) {
-      const sourceCheckpoint = sourceCheckpointFor(run, state);
+      const sourceCheckpoint = sourceCheckpointFor(run, state, { allowTestFixtures: adapters?.production !== true });
       run.artifacts.sourceCheckpoint = sourceCheckpoint;
       await persist(state, root, now);
       const proposalResult = await proposalAdapter(adapters)({ finalist: { ...run.candidate, prospectId: run.prospectId, runId: run.runId }, runId: run.runId, prospectId: run.prospectId, placeId: run.candidate?.placeId, classification: run.artifacts.classification, inventory: run.artifacts.inventory, discoveryPacket: state.discoveryPacket, decision: { sourceCheckpoint } });
@@ -271,7 +280,7 @@ async function runFactoryCycle({ root, config, adapters, discoveryRequest = null
     run.artifacts.qa = { decision: qa, checks: qaResult.checks, passed: qaResult.passed };
     if (qa.passed !== true || !qaResult.passed) { await persist(state, root, now); return { ok: true, state, run, nextAction: nextAction('architect-qa-required', 'Architect QA is not complete; correct the reported checks before Gate 1.', { checks: qaResult.checks }) }; }
     run.artifacts.prescription = correctedPrescription;
-    const gateResult = await gateAdapter(adapters)({ finalist: run.candidate, prescription: correctedPrescription, inventory: run.artifacts.inventory, classifications: run.artifacts.reviewJudgments, whyBuilt, qa: qaResult, run, sourceCheckpoint: run.artifacts.sourceCheckpoint || null, receipts: { discovery: state.discoveryPacket?.receipt || state.discoveryPacket?.provenance?.run || null, websiteAudit: state.auditReceipts?.[stableCandidateIdentity(run.candidate)] || null, finalistEnrichment: run.paidWork?.finalistEnrichment?.receipt || null, pagePrescription: run.artifacts.cursorProposalReceipt || null } });
+    const gateResult = await gateAdapter(adapters)({ finalist: run.candidate, prescription: correctedPrescription, inventory: run.artifacts.inventory, classifications: run.artifacts.reviewJudgments, whyBuilt, qa: qaResult, run, sourceCheckpoint: run.artifacts.sourceCheckpoint || null, actionProof: adapters?.actionProof || actionProofFromEnvironment(), receipts: { discovery: state.discoveryPacket?.receipt || state.discoveryPacket?.provenance?.run || null, websiteAudit: state.auditReceipts?.[stableCandidateIdentity(run.candidate)] || null, finalistEnrichment: run.paidWork?.finalistEnrichment?.receipt || null, pagePrescription: run.artifacts.cursorProposalReceipt || null } });
     const markdown = typeof gateResult === 'string' ? gateResult : gateResult?.markdown;
     if (typeof markdown !== 'string' || !markdown.trim()) throw Object.assign(new Error('Gate 1 renderer must return markdown text'), { code: 'INVALID_GATE1_ARTIFACT' });
     const relativeArtifactPath = path.join('state', 'gate1', `${run.runId}.md`);
@@ -285,4 +294,4 @@ async function runFactoryCycle({ root, config, adapters, discoveryRequest = null
   } finally { release(); }
 }
 
-module.exports = { REVIEW_LIMIT, requireDiscoveryRequest, inventoryForQa, sourceCheckpointFor, writeAtomic, runFactoryCycle };
+module.exports = { REVIEW_LIMIT, requireDiscoveryRequest, inventoryForQa, sourceCheckpointFor, actionProofFromEnvironment, writeAtomic, runFactoryCycle };
