@@ -317,9 +317,10 @@ function createProductionAdapters({
       const serviceLedger = decision.serviceCoverageLedger || decision.serviceLedger || modelResult.serviceCoverageLedger;
       const sourceBinding = decision.sourceCheckpoint || decision.sourceBinding || modelResult.sourceCheckpoint || modelResult.sourceBinding;
       if (!sourceBinding) throw new Error('Page prescription requires a trusted source checkpoint binding');
+      const boundServiceLedger = serviceLedger && serviceLedger.sourceIdentity ? serviceLedger : { ...serviceLedger, sourceIdentity: sourceBinding.sourceIdentity };
       const boundIdentity = { prospectId: finalist?.prospectId || finalist?.placeId, placeId: finalist?.placeId, runId: finalist?.runId || decision.runId };
-      validateCompleteCanonicalLedger(serviceLedger, { services, pages, identity: { ...boundIdentity, sourceIdentity: sourceBinding.sourceIdentity } });
-      const validated = validatePrescription({ finalist, classification, services, proposedPages: pages, architectReview: decision.architectReview || decision, policy: decision.pagePolicy || modelResult.pagePolicy, override: decision.expansionOverride || modelResult.expansionOverride, serviceLedger, runContext: { ...boundIdentity }, sourceBinding });
+      validateCompleteCanonicalLedger(boundServiceLedger, { services, pages, identity: { ...boundIdentity, sourceIdentity: sourceBinding.sourceIdentity } });
+      const validated = validatePrescription({ finalist, classification, services, proposedPages: pages, architectReview: decision.architectReview || decision, policy: decision.pagePolicy || modelResult.pagePolicy, override: decision.expansionOverride || modelResult.expansionOverride, serviceLedger: boundServiceLedger, runContext: { ...boundIdentity }, sourceBinding });
       const evidence = buildPrescriptionEvidence({ classification, pages: validated.pages, candidateServices: services });
       const output = {
         ...validated,
