@@ -29,6 +29,10 @@ permissions:
   issues: write
   pull-requests: read
 
+concurrency:
+  group: factory-cursor-dispatch-${{ inputs.issue_number }}-${{ inputs.pr_number }}-${{ inputs.reviewed_head_sha }}
+  cancel-in-progress: false
+
 jobs:
   dispatch:
     if: github.actor == github.repository_owner
@@ -57,6 +61,7 @@ jobs:
           FACTORY_BRANCH: ${{ inputs.branch }}
           FACTORY_REVIEWED_HEAD_SHA: ${{ inputs.reviewed_head_sha }}
           FACTORY_DISPATCH_SCOPE: ${{ inputs.scope }}
+          FACTORY_REPOSITORY: ${{ github.repository }}
           FACTORY_DISPATCH_OUTPUT: canary/outputs/cursor-dispatch.json
         run: node src/dispatch-cursor-cloud-agent.js
       - name: Post and record immutable connector-native @cursor dispatch
@@ -66,8 +71,17 @@ jobs:
           COMMENT_FILE: canary/outputs/cursor-dispatch.comment.md
           DISPATCH_FILE: canary/outputs/cursor-dispatch.json
         run: |
-          comment_url="$(gh api "repos/$GITHUB_REPOSITORY/issues/$ISSUE_NUMBER/comments" --method POST -f body="$(cat "$COMMENT_FILE")" --jq .html_url)"
-          COMMENT_URL="$comment_url" DISPATCH_FILE="$DISPATCH_FILE" node -e "const fs=require('node:fs');const p=JSON.parse(fs.readFileSync(process.env.DISPATCH_FILE,'utf8'));p.dispatch.commentUrl=process.env.COMMENT_URL;fs.writeFileSync(process.env.DISPATCH_FILE,JSON.stringify(p,null,2)+'\\n')"
+          digest="$(node -e "const fs=require('node:fs');process.stdout.write(JSON.parse(fs.readFileSync(process.env.DISPATCH_FILE,'utf8')).dispatchDigest)")"
+          key="$(node -e "const fs=require('node:fs');process.stdout.write(JSON.parse(fs.readFileSync(process.env.DISPATCH_FILE,'utf8')).dispatchKey)")"
+          comments="$(gh api --paginate "repos/$GITHUB_REPOSITORY/issues/$ISSUE_NUMBER/comments?per_page=100")"
+          prior="$(COMMENTS="$comments" DIGEST="$digest" KEY="$key" node -e "const a=JSON.parse(process.env.COMMENTS||'[]'); const d=process.env.DIGEST; const k=process.env.KEY; const x=a.find(c=>String(c.body||'').includes('Dispatch packet digest: '+d) || String(c.body||'').includes('Dispatch key: '+k)); process.stdout.write(x?.html_url||'')")"
+          if [ -n "$prior" ]; then
+            comment_url="$prior"
+            echo "idempotent_existing_comment=$comment_url"
+          else
+            comment_url="$(gh api "repos/$GITHUB_REPOSITORY/issues/$ISSUE_NUMBER/comments" --method POST -f body="$(cat "$COMMENT_FILE")" --jq .html_url)"
+          fi
+          COMMENT_URL="$comment_url" DISPATCH_FILE="$DISPATCH_FILE" node -e "const fs=require('node:fs');const p=JSON.parse(fs.readFileSync(process.env.DISPATCH_FILE,'utf8'));p.commentUrl=process.env.COMMENT_URL;fs.writeFileSync(process.env.DISPATCH_FILE,JSON.stringify(p,null,2)+'\\n')"
       - name: Upload dispatch packet receipt
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
