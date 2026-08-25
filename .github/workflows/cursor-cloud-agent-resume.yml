@@ -40,8 +40,9 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           ISSUE_NUMBER: ${{ github.event.issue.number }}
         run: |
+          test -n "$GH_TOKEN"
           mkdir -p canary/phase-a
-          gh api --paginate "repos/$GITHUB_REPOSITORY/issues/$ISSUE_NUMBER/comments?per_page=100" --jq '.[] | select((.body | contains("Dispatch packet digest:")) and (.body | contains("Handoff ID:"))) | [.id, .html_url, .body] | @tsv' | tail -1 > canary/phase-a/dispatch.tsv
+          GH_TOKEN="$GH_TOKEN" gh api --paginate "repos/$GITHUB_REPOSITORY/issues/$ISSUE_NUMBER/comments?per_page=100" --jq '.[] | select((.body | contains("Dispatch packet digest:")) and (.body | contains("Handoff ID:"))) | [.id, .html_url, .body] | @tsv' | tail -1 > canary/phase-a/dispatch.tsv
           test -s canary/phase-a/dispatch.tsv
           phase_run="$(cut -f3 canary/phase-a/dispatch.tsv | sed -n 's/^Phase-A run: //p' | tail -1)"
           test -n "$phase_run"
@@ -50,7 +51,7 @@ jobs:
           dispatch_run="$(cut -f3 canary/phase-a/dispatch.tsv | sed -n 's/^Dispatch workflow run: //p' | tail -1)"
           test -n "$dispatch_run"
           gh run download "$dispatch_run" --repo "$GITHUB_REPOSITORY" --name "cursor-cloud-agent-dispatch-$dispatch_run" --dir canary/phase-a/dispatch
-          gh api --paginate "repos/$GITHUB_REPOSITORY/issues/$ISSUE_NUMBER/comments?per_page=100" > canary/phase-a/ledger-comments.json
+          GH_TOKEN="$GH_TOKEN" gh api --paginate "repos/$GITHUB_REPOSITORY/issues/$ISSUE_NUMBER/comments?per_page=100" > canary/phase-a/ledger-comments.json
           REPOSITORY="$GITHUB_REPOSITORY" ISSUE_NUMBER="$ISSUE_NUMBER" PENDING_FILE=canary/phase-a/current-head-gate1-pending.json LEDGER_FILE=canary/phase-a/ledger-comments.json node - <<'NODE'
           const fs = require('node:fs'); const { findClaim } = require('./src/factory/github-ledger');
           const pending = JSON.parse(fs.readFileSync(process.env.PENDING_FILE)); const comments = JSON.parse(fs.readFileSync(process.env.LEDGER_FILE));
@@ -66,6 +67,7 @@ jobs:
           AUTHOR_LOGIN: ${{ github.event.comment.user.login }}
           COMMENT_BODY: ${{ github.event.comment.body }}
         run: |
+          test -n "$GH_TOKEN"
           printf '%s' "$COMMENT_BODY" > canary/phase-a/cursor-terminal-comment.md
           node src/collect-cursor-terminal-result.js canary/phase-a/current-head-gate1-pending.json canary/phase-a/cursor-terminal-comment.md canary/phase-a/cursor-terminal-result.json "$AUTHOR_LOGIN" "$COMMENT_ID" "$COMMENT_URL"
       - name: Consume durable resume ledger claim after validation
@@ -78,17 +80,17 @@ jobs:
         run: |
           handoff_id="$(node -e "process.stdout.write(JSON.parse(require('fs').readFileSync('canary/phase-a/current-head-gate1-pending.json','utf8')).handoffId)")"
           dispatch_key="$(node -e "process.stdout.write(JSON.parse(require('fs').readFileSync('canary/phase-a/current-head-gate1-pending.json','utf8')).envelope.dispatchKey)")"
-          comments="$(gh api --paginate "repos/$REPOSITORY/issues/$ISSUE_NUMBER/comments?per_page=100")"
+          comments="$(GH_TOKEN="$GH_TOKEN" gh api --paginate "repos/$REPOSITORY/issues/$ISSUE_NUMBER/comments?per_page=100")"
           LEDGER_COMMENTS="$comments" REPOSITORY="$REPOSITORY" ISSUE_NUMBER="$ISSUE_NUMBER" HANDOFF_ID="$handoff_id" DISPATCH_KEY="$dispatch_key" RESULT_ID="$COMMENT_ID" node - <<'NODE'
           const fs = require('node:fs'); const { markerFor, markerBody, findClaim } = require('./src/factory/github-ledger');
           const comments = JSON.parse(process.env.LEDGER_COMMENTS); const expected = { repository: process.env.REPOSITORY, issueNumber: process.env.ISSUE_NUMBER, kind: 'resume', handoffId: process.env.HANDOFF_ID, dispatchKey: process.env.DISPATCH_KEY, resultId: process.env.RESULT_ID };
           if (findClaim(comments, expected)) { fs.writeFileSync('canary/phase-a/resume-already-claimed', 'true'); fs.appendFileSync(process.env.GITHUB_ENV, 'FACTORY_RESUME_ALREADY_CLAIMED=true\n'); process.exit(0); }
           const result = JSON.parse(fs.readFileSync('canary/phase-a/cursor-terminal-result.json','utf8'));
-          const marker = markerFor({ kind: 'resume', repository: process.env.REPOSITORY, issueNumber: process.env.ISSUE_NUMBER, prNumber: result.pending.dispatchPacket.prNumber, branch: result.pending.dispatchPacket.branch, checkedOutSha: result.pending.envelope.checkedOutSha, handoffId: process.env.HANDOFF_ID, dispatchKey: process.env.DISPATCH_KEY, resultId: process.env.RESULT_ID, inputDigest: result.receipt.inputDigest, outputDigest: result.receipt.outputDigest, threadUrl: result.receipt.threadUrl, model: result.bundle.model });
+          const marker = markerFor({ kind: 'resume', repository: process.env.REPOSITORY, issueNumber: process.env.ISSUE_NUMBER, prNumber: result.pending.dispatchPacket.prNumber, branch: result.pending.dispatchPacket.branch, checkedOutSha: result.pending.envelope.checkedOutSha, handoffId: process.env.HANDOFF_ID, dispatchKey: process.env.DISPATCH_KEY, dispatchDigest: result.pending.envelope.dispatchDigest, resultId: process.env.RESULT_ID, inputDigest: result.receipt.inputDigest, outputDigest: result.receipt.outputDigest, threadUrl: result.receipt.threadUrl, model: result.bundle.model, status: 'terminal' });
           fs.writeFileSync('canary/phase-a/cursor-resume-ledger-marker.md', markerBody(marker));
           NODE
           if [ -f canary/phase-a/resume-already-claimed ]; then exit 0; fi
-          gh api "repos/$REPOSITORY/issues/$ISSUE_NUMBER/comments" --method POST -f body="$(cat canary/phase-a/cursor-resume-ledger-marker.md)"
+          GH_TOKEN="$GH_TOKEN" gh api "repos/$REPOSITORY/issues/$ISSUE_NUMBER/comments" --method POST -f body="$(cat canary/phase-a/cursor-resume-ledger-marker.md)"
       - name: Resume phase B automatically from the verified result
         if: env.FACTORY_RESUME_ALREADY_CLAIMED != 'true'
         env:
@@ -116,8 +118,15 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           ISSUE_NUMBER: ${{ github.event.issue.number }}
         run: |
+          test -n "$GH_TOKEN"
           handoff_id="$(node -e "process.stdout.write(JSON.parse(require('fs').readFileSync('canary/phase-a/current-head-gate1-pending.json','utf8')).handoffId)")"
-          gh api "repos/$GITHUB_REPOSITORY/issues/$ISSUE_NUMBER/comments" --method POST -f body="Factory resume completed: $handoff_id; phase-B Gate 1 proof is in Actions artifact $GITHUB_RUN_ID."
+          node - <<'NODE'
+          const fs=require('node:fs'); const { markerFor, markerBody }=require('./src/factory/github-ledger');
+          const p=JSON.parse(fs.readFileSync('canary/phase-a/current-head-gate1-pending.json','utf8')); const result=JSON.parse(fs.readFileSync('canary/phase-a/cursor-terminal-result.json','utf8'));
+          const marker=markerFor({kind:'resume',repository:process.env.GITHUB_REPOSITORY,issueNumber:process.env.ISSUE_NUMBER,prNumber:p.dispatchPacket.prNumber,branch:p.dispatchPacket.branch,checkedOutSha:p.envelope.checkedOutSha,handoffId:p.handoffId,dispatchKey:p.envelope.dispatchKey,dispatchDigest:p.envelope.dispatchDigest,resultId:result.commentId,inputDigest:result.receipt.inputDigest,outputDigest:result.receipt.outputDigest,threadUrl:result.receipt.threadUrl,model:result.bundle.model,status:'resumed'});
+          fs.writeFileSync('canary/phase-a/cursor-resumed-ledger-marker.md',markerBody(marker));
+          NODE
+          GH_TOKEN="$GH_TOKEN" gh api "repos/$GITHUB_REPOSITORY/issues/$ISSUE_NUMBER/comments" --method POST -f body="$(cat canary/phase-a/cursor-resumed-ledger-marker.md)"
       - name: Upload automatic handoff and Gate 1 proof
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
