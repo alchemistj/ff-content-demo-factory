@@ -1,6 +1,6 @@
 export declare const CONTROL_PATH: string;
 export declare const DORMANT_NONCE: string;
-export declare function selectVerifiedWriter1Dispatch(control: Record<string, any>): "verified-writer1-correction-v1" | "verified-writer1-correction-v2" | "verified-writer1-correction-v3" | "verified-writer1-seal-only" | "verified-writer1-retrieval-only" | "unsupported-verified-lane";
+export declare function selectVerifiedWriter1Dispatch(control: Record<string, any>): "verified-writer1-correction-v1" | "verified-writer1-correction-v2" | "verified-writer1-correction-v3" | "verified-writer1-seal-only" | "verified-writer1-retrieval-only" | "verified-writer1-approval-seal" | "verified-writer2-write" | "unsupported-verified-lane";
 export declare const EXPECTED_RECOVERY: Readonly<Record<string, string | number>>;
 export declare const EXPECTED_RECOVERY_V2: Readonly<Record<string, string | number>>;
 export declare const EXPECTED_RECOVERY_V3: Readonly<Record<string, string | number>>;
@@ -8,4 +8,5 @@ export declare const EXPECTED_RECOVERY_V3_FINALIZE: Readonly<Record<string, stri
 export declare const EXPECTED_VERIFIED_CORRECTION: Readonly<Record<string, string | number>>;
 export declare const EXPECTED_VERIFIED_CORRECTION_V2: Readonly<Record<string, unknown>>;
 export declare const EXPECTED_VERIFIED_CORRECTION_V3: Readonly<Record<string, unknown>>;
-export declare function validateControl(control: Record<string, any>, input?: { changedPaths?: string[]; actor?: string; owner?: string; commitSha?: string; beforeSha?: string; parentSha?: string; verifiedLane?: boolean }): { dormant: true; stage: "writer1" } | { dormant: false; stage: "writer1"; sourceSha: string };
+export declare const VERIFIED_WRITER2_PROMPT_DIGEST: string;
+export declare function validateControl(control: Record<string, any>, input?: { changedPaths?: string[]; actor?: string; owner?: string; commitSha?: string; beforeSha?: string; parentSha?: string; verifiedLane?: boolean }): { dormant: true; stage: "writer1" } | { dormant: false; stage: "writer1" | "writer2"; sourceSha: string };

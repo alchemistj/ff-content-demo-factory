@@ -4,7 +4,7 @@ import { mkdir, mkdtemp, readFile, rm, symlink, writeFile } from "node:fs/promis
 import * as path from "node:path";
 import { tmpdir } from "node:os";
 import test from "node:test";
-import { EXPECTED_VERIFIED_CORRECTION, EXPECTED_VERIFIED_CORRECTION_V2, EXPECTED_VERIFIED_CORRECTION_V3, selectVerifiedWriter1Dispatch, validateControl as rawValidateControl } from "../../scripts/360-words-control.mjs";
+import { EXPECTED_VERIFIED_CORRECTION, EXPECTED_VERIFIED_CORRECTION_V2, EXPECTED_VERIFIED_CORRECTION_V3, VERIFIED_WRITER2_PROMPT_DIGEST, selectVerifiedWriter1Dispatch, validateControl as rawValidateControl } from "../../scripts/360-words-control.mjs";
 import { digestWriter1QuarantineCorrectionV3Input, digestWriter1QuarantineCorrectionV3Prompt } from "../../scripts/360-words-recovery-prompt.mjs";
 import { validateSealed, writer1Projection } from "../../scripts/360-words-canary.js";
 import { VERIFIED_WRITER1_AGENT_ID, VERIFIED_WRITER1_PROMPT_DIGEST, VERIFIED_WRITER1_PROMPT_V2_DIGEST, validateVerifiedWriter1Control, validateVerifiedWriter1PostDispatchControl, validateVerifiedWriter1SealOnlyControl, validateVerifiedWriter1CorrectionV3Control, verifyOriginalDispatchEvidence, runVerifiedWriter1Correction, verifyPinnedSealedManifestBytes, quarantineWriter1PostDispatchOutput, persistVerifiedWriterFailureSurface, VERIFIED_WRITER1_REJECTED_OUTPUT_PATH, VERIFIED_WRITER1_REJECTION_RECEIPT_PATH, VERIFIED_WRITER1_CORRECTION_V3_ARTIFACT_PATHS, VERIFIED_WRITER1_CORRECTION_V3_ARTIFACT_ZIP_SIZE, VERIFIED_WRITER1_CORRECTION_V3_SIDECAR_PINS, VERIFIED_WRITER1_CORRECTION_V3_SOURCE, validateVerifiedWriter1CorrectionV3ArtifactListing, validateVerifiedWriter1CorrectionV3ArtifactLayout, validateVerifiedWriter1CorrectionV3SidecarMetadata, verifyVerifiedWriter1CorrectionV3PinnedBytes } from "../../scripts/360-words-verified.js";
@@ -108,6 +108,7 @@ test("exact quarantined Writer1 correction-v3 wake is classified and bound witho
   assert.throws(() => rawValidateControl({ ...active, recovery: { ...recovery, promptDigest: "sha256:" + "0".repeat(64) } }, { changedPaths: [".factory-wake/360-words-control.json"], actor: "architect", owner: "architect", commitSha: "f".repeat(40), beforeSha: sourceSha, parentSha: sourceSha, verifiedLane: true }), /v3 wake/u);
   const workflow = readFileSync(path.join(root, ".github/workflows/architect-360-words-canary.yml"), "utf8");
   assert.match(workflow, /verified-writer1-correction-v3/u); assert.match(workflow, /scripts\/360-words-verified\.ts --writer1-correction-v3/u);
+  assert.match(workflow, /verified-writer1-approval-seal/u); assert.match(workflow, /scripts\/360-words-verified\.ts --writer1-approval-seal/u); assert.match(workflow, /verified-writer2-write/u); assert.match(workflow, /scripts\/360-words-verified\.ts --writer2/u);
 });
 
 test("the audited Action v3 wake envelope, including quarantine-file sourceArtifact, passes the production validator before transport", async () => {
@@ -329,6 +330,21 @@ test("verified policy requires new downstream agents and signed direct receipts,
   assert.throws(() => assertVerifiedDownstreamState({ status: "awaiting-human-gate-2", stage: "awaiting-human-gate-2", writer2Blocked: false, writer3Released: true, nextStage: null }), /manufactured downstream/u);
 });
 
+test("two-wake Writer1 approval seal and Writer2 wake are separate, bounded, and classified fail-closed", () => {
+  const control = JSON.parse(readFileSync(path.join(root, ".factory-wake/360-words-control.json"), "utf8"));
+  const sourceSha = "b".repeat(40);
+  const seal: any = { ...control, wakeNonce: "W1-APPROVAL-SEAL-20260825", policy: { ...control.policy, mode: "writer1-approval-seal", stopAfter: "writer1-approval-sealed" }, recovery: { recoveryVersion: "verified-writer1-approval-seal/v1", sourceBranch: "architect/360-words-canary-verified", sourceSha, actionRunId: "32845845871", artifactId: 9562364448, artifactZipDigest: "sha256:147dad95aa6985a3991d7e12212921b18cbbd71a65d2a614f413444aaababade", artifactZipSize: 33290, allowCreate: false, allowResume: false, allowFollowUp: false, maxFollowUps: 0, independentQaArtifacts: [{ role: "content", path: "qa/architect/writer1-content.json", digest: "sha256:" + "1".repeat(64), decision: "PASS" }, { role: "evidence", path: "qa/architect/writer1-evidence.json", digest: "sha256:" + "2".repeat(64), decision: "PASS" }] } };
+  assert.equal(selectVerifiedWriter1Dispatch(seal), "verified-writer1-approval-seal");
+  assert.deepEqual(rawValidateControl(seal, { changedPaths: [".factory-wake/360-words-control.json"], actor: "architect", owner: "architect", commitSha: "c".repeat(40), beforeSha: sourceSha, parentSha: sourceSha, verifiedLane: true }), { dormant: false, stage: "writer1", sourceSha });
+  const writer2: any = { ...control, stage: "writer2", wakeNonce: "W2-NEW-AGENT-20260825", policy: { ...control.policy, writer1Only: undefined, writer2Only: true, mode: "writer2-write", stopAfter: "awaiting-architect-qa", approvedRoutes: ["/", "/garage-door-repair", "/garage-door-installation", "/contact"] }, recovery: { recoveryVersion: "verified-writer2-write/v1", sourceBranch: "architect/360-words-canary-verified", sourceSha, runId: "run-verified-writer2-wake", requestedModel: "cursor-grok-4.6-high", resolvedModel: "grok-4.6", effort: "high", fast: false, inputDigest: "sha256:" + "3".repeat(64), promptDigest: VERIFIED_WRITER2_PROMPT_DIGEST, idempotencyKey: "run-verified-writer2-wake:writer2:sha256:" + "3".repeat(64) + ":" + VERIFIED_WRITER2_PROMPT_DIGEST, allowCreate: true, allowResume: false, allowFollowUp: false, maxFollowUps: 0, seal: { approvalPath: "canary/runtime/architect-writer1-approval.json", receiptPath: "canary/runtime/writer1-approved-receipt.json", outputPath: "canary/outputs/writer1-output.json", artifactZipDigest: "sha256:147dad95aa6985a3991d7e12212921b18cbbd71a65d2a614f413444aaababade", artifactZipSize: 33290, approvalDigest: "sha256:" + "5".repeat(64), writer1OutputDigest: "sha256:" + "6".repeat(64), writer1ReceiptOutputDigest: "sha256:" + "6".repeat(64) } } };
+  assert.equal(selectVerifiedWriter1Dispatch(writer2), "verified-writer2-write");
+  assert.deepEqual(rawValidateControl(writer2, { changedPaths: [".factory-wake/360-words-control.json"], actor: "architect", owner: "architect", commitSha: "c".repeat(40), beforeSha: sourceSha, parentSha: sourceSha, verifiedLane: true }), { dormant: false, stage: "writer2", sourceSha });
+  for (const badMode of ["writer1-approval-seal", "artifact-recovery", "writer1-retrieval-only"]) {
+    const bad = structuredClone(writer2); bad.policy.mode = badMode; if (badMode !== "writer2-write") bad.recovery.recoveryVersion = "unknown";
+    assert.equal(selectVerifiedWriter1Dispatch(bad), "unsupported-verified-lane");
+  }
+});
+
 test("verified runner has no local copy, Writer2, Writer3, or QA generation path", () => {
   const verifiedRunner = readFileSync(path.join(root, "scripts/360-words-verified.ts"), "utf8");
   assert.doesNotMatch(verifiedRunner, /write-360-writer1-copy|render-360-human-gate-2|writer2-output\.json|writer3-output\.json|human-gate-2\.md/iu);
@@ -338,4 +354,6 @@ test("verified runner has no local copy, Writer2, Writer3, or QA generation path
   assert.equal(existsSync(path.join(root, "scripts/write-360-writer1-copy.ts")), false);
   const workflow = readFileSync(path.join(root, ".github/workflows/architect-360-words-canary.yml"), "utf8");
   assert.match(workflow, /architect\/360-words-canary-verified/u); assert.match(workflow, /scripts\/360-words-verified\.ts --writer1-correction/u); assert.match(workflow, /VERIFIED_LANE: 'true'/u); assert.match(workflow, /CURSOR_FAST: 'false'/u); assert.match(workflow, /GITHUB_EVENT_BEFORE/u); assert.match(workflow, /canary\/outputs\/writer1-output\.json/u); assert.doesNotMatch(workflow, /path:\s*\|\s*\n\s*canary\/runtime\s*$/mu); assert.doesNotMatch(workflow, /write-360-writer1-copy|render-360-human-gate-2/u);
+  const stages = readFileSync(path.join(root, "src/pipeline/verified-words-stages.ts"), "utf8");
+  assert.match(stages, /verified-writer2-dispatch\.json/u); assert.match(stages, /threadUrl: notice\.threadUrl/u);
 });

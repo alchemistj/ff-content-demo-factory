@@ -104,6 +104,59 @@ jobs:
           test "$CURSOR_MODEL" = "cursor-grok-4.6-high"
           test "$CURSOR_FAST" = "false"
 
+      - name: Download exact successful Writer1 artifact for Architect approval seal
+        if: steps.control.outputs.dormant != 'true' && steps.dispatch_mode.outputs.mode == 'verified-writer1-approval-seal'
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          EXPECTED_ACTION_RUN_ID: '32845845871'
+          EXPECTED_ARTIFACT_ID: '9562364448'
+          EXPECTED_ARTIFACT_ZIP_DIGEST: 'sha256:147dad95aa6985a3991d7e12212921b18cbbd71a65d2a614f413444aaababade'
+          EXPECTED_ARTIFACT_ZIP_SIZE: '33290'
+        run: |
+          set -euo pipefail
+          metadata="$(gh api "repos/${GITHUB_REPOSITORY}/actions/artifacts/${EXPECTED_ARTIFACT_ID}")"
+          test "$(jq -r '.id' <<<"$metadata")" = "$EXPECTED_ARTIFACT_ID"
+          test "$(jq -r '.workflow_run.id' <<<"$metadata")" = "$EXPECTED_ACTION_RUN_ID"
+          test "$(jq -r '.digest' <<<"$metadata")" = "$EXPECTED_ARTIFACT_ZIP_DIGEST"
+          run="$(gh api "repos/${GITHUB_REPOSITORY}/actions/runs/${EXPECTED_ACTION_RUN_ID}")"
+          test "$(jq -r '.id' <<<"$run")" = "$EXPECTED_ACTION_RUN_ID"
+          test "$(jq -r '.head_branch' <<<"$run")" = 'architect/360-words-canary-verified'
+          mkdir -p canary/inputs/writer1-approval-artifact
+          gh api "repos/${GITHUB_REPOSITORY}/actions/artifacts/${EXPECTED_ARTIFACT_ID}/zip" > canary/inputs/writer1-approval.zip
+          test "sha256:$(sha256sum canary/inputs/writer1-approval.zip | cut -d ' ' -f 1)" = "$EXPECTED_ARTIFACT_ZIP_DIGEST"
+          test "$(wc -c < canary/inputs/writer1-approval.zip | tr -d ' ')" = "$EXPECTED_ARTIFACT_ZIP_SIZE"
+          unzip -q canary/inputs/writer1-approval.zip -d canary/inputs/writer1-approval-artifact
+          test -f canary/inputs/writer1-approval-artifact/outputs/writer1-output.json
+          test -f canary/inputs/writer1-approval-artifact/runtime/writer1-correction-v3-receipt.json
+          test -f canary/inputs/writer1-approval-artifact/runtime/state.json
+
+      - name: Download exact sealed Writer1 approval for separate Writer2 wake
+        if: steps.control.outputs.dormant != 'true' && steps.dispatch_mode.outputs.mode == 'verified-writer2-write'
+        shell: bash
+        run: |
+          set -euo pipefail
+          seal_action_run_id="$(jq -r '.policy.recovery.seal.actionRunId' .factory-wake/360-words-control.json)"
+          seal_artifact_id="$(jq -r '.policy.recovery.seal.artifactId' .factory-wake/360-words-control.json)"
+          seal_zip_digest="$(jq -r '.policy.recovery.seal.artifactZipDigest' .factory-wake/360-words-control.json)"
+          seal_zip_size="$(jq -r '.policy.recovery.seal.artifactZipSize' .factory-wake/360-words-control.json)"
+          metadata="$(gh api "repos/${GITHUB_REPOSITORY}/actions/artifacts/${seal_artifact_id}")"
+          test "$(jq -r '.id' <<<"$metadata")" = "$seal_artifact_id"
+          test "$(jq -r '.workflow_run.id' <<<"$metadata")" = "$seal_action_run_id"
+          test "$(jq -r '.digest' <<<"$metadata")" = "$seal_zip_digest"
+          mkdir -p canary/inputs/writer1-approval-seal-artifact
+          gh api "repos/${GITHUB_REPOSITORY}/actions/artifacts/${seal_artifact_id}/zip" > canary/inputs/writer1-approval-seal.zip
+          test "sha256:$(sha256sum canary/inputs/writer1-approval-seal.zip | cut -d ' ' -f 1)" = "$seal_zip_digest"
+          test "$(wc -c < canary/inputs/writer1-approval-seal.zip | tr -d ' ')" = "$seal_zip_size"
+          unzip -q canary/inputs/writer1-approval-seal.zip -d canary/inputs/writer1-approval-seal-artifact
+          test -f canary/inputs/writer1-approval-seal-artifact/runtime/architect-writer1-approval.json
+          test -f canary/inputs/writer1-approval-seal-artifact/runtime/writer1-approved-receipt.json
+          test -f canary/inputs/writer1-approval-seal-artifact/outputs/writer1-output.json
+          mkdir -p canary/runtime canary/outputs
+          cp canary/inputs/writer1-approval-seal-artifact/runtime/architect-writer1-approval.json canary/runtime/architect-writer1-approval.json
+          cp canary/inputs/writer1-approval-seal-artifact/runtime/writer1-approved-receipt.json canary/runtime/writer1-approved-receipt.json
+          cp canary/inputs/writer1-approval-seal-artifact/outputs/writer1-output.json canary/outputs/writer1-output.json
+
       - name: Download and verify exact quarantined Writer1 correction-v3 source
         if: steps.control.outputs.dormant != 'true' && steps.control.outputs.recovery_version == 'words-writer1-correction/v3'
         shell: bash
@@ -335,8 +388,13 @@ jobs:
           WRITER1_POST_DISPATCH_ZIP: canary/inputs/post-dispatch.zip
           WRITER1_POST_DISPATCH_SEAL_ROOT: canary/inputs/post-dispatch-seal-artifact
           WRITER1_CORRECTION_V3_SOURCE_ROOT: canary/inputs/writer1-correction-v3-artifact
+          WRITER1_APPROVAL_SOURCE_ROOT: canary/inputs/writer1-approval-artifact
         run: |
-          if [ "${{ steps.dispatch_mode.outputs.mode }}" = 'verified-writer1-seal-only' ]; then
+          if [ "${{ steps.dispatch_mode.outputs.mode }}" = 'verified-writer1-approval-seal' ]; then
+            node --import tsx scripts/360-words-verified.ts --writer1-approval-seal
+          elif [ "${{ steps.dispatch_mode.outputs.mode }}" = 'verified-writer2-write' ]; then
+            node --import tsx scripts/360-words-verified.ts --writer2
+          elif [ "${{ steps.dispatch_mode.outputs.mode }}" = 'verified-writer1-seal-only' ]; then
             node --import tsx scripts/360-words-verified.ts --writer1-seal-only
           elif [ "${{ steps.dispatch_mode.outputs.mode }}" = 'verified-writer1-correction-v2' ]; then
             node --import tsx scripts/360-words-verified.ts --writer1-correction-v2
@@ -356,7 +414,7 @@ jobs:
         shell: bash
         run: |
           mkdir -p canary/runtime canary/outputs
-          test -f canary/runtime/state.json || node --input-type=module -e "import fs from 'node:fs'; fs.writeFileSync('canary/runtime/state.json', JSON.stringify({status:'workflow-failed-before-writer1',stage:'writer1',runId:'32717620900'}, null, 2)+'\\n')"
+          test -f canary/runtime/state.json || STAGE='${{ steps.control.outputs.stage }}' node --input-type=module -e "import fs from 'node:fs'; const stage=process.env.STAGE || 'writer1'; fs.writeFileSync('canary/runtime/state.json', JSON.stringify({status:'workflow-failed-before-'+stage,stage,writer2Blocked:stage==='writer1',writer3Blocked:stage==='writer2',nextStage:null}, null, 2)+'\\n')"
           node --input-type=module <<'NODE'
           import fs from 'node:fs';
           import crypto from 'node:crypto';
@@ -391,6 +449,7 @@ jobs:
             canary/runtime/cursor-receipts.json
             canary/runtime/dormant.json
             canary/runtime/writer1-*.json
+            canary/runtime/architect-writer1-approval.json
             canary/runtime/verified-writer2-*.json
             canary/runtime/verified-writer3-*.json
             canary/runtime/verified-*.json

@@ -1,3 +1,5 @@
+import * as fs from "node:fs/promises";
+import * as path from "node:path";
 import {
   createCursorWriterExecutor,
   createJsonCursorReceiptStore,
@@ -22,6 +24,47 @@ const WRITER3_PROMPT = "Verified Writer3 stage. After an independently signed Ar
 export const VERIFIED_WRITER2_PROMPT_DIGEST = digestOf(WRITER2_PROMPT);
 export const VERIFIED_WRITER3_PROMPT_DIGEST = digestOf(WRITER3_PROMPT);
 export const VERIFIED_WRITER2_RECEIPT_STORE = VERIFIED_RECEIPT_STORE;
+
+export const VERIFIED_WRITER1_APPROVED_ARTIFACT = Object.freeze({
+  actionRunId: "32845845871",
+  artifactId: 9562364448,
+  artifactZipDigest: "sha256:147dad95aa6985a3991d7e12212921b18cbbd71a65d2a614f413444aaababade",
+  artifactZipSize: 33290,
+  outputPath: "outputs/writer1-output.json",
+  outputFileDigest: "sha256:0a2d99e3cfc223a84584251272f0137f4f0aea0cd30e192ebd3b2c4103554602",
+  outputFileSize: 22186,
+  receiptPath: "runtime/writer1-correction-v3-receipt.json",
+  receiptDigest: "sha256:39905f7e32859b7388a0fe468ea445fb8a55d2c0fd5bfeea17955fd4e931477a",
+  receiptSize: 61202,
+  statePath: "runtime/state.json",
+  stateDigest: "sha256:2e4dd6a80c0e35708f36a6452a87e64cc9fb8925c07e5e36aa2d687ab072653a",
+  stateSize: 1687,
+  changedPaths: Object.freeze(["/pages/0/sections/3/body"]),
+  beforeOutputDigest: "sha256:9936c7fc80e7af2bb321de519ddf58ac046bc239e3b4ac81cda6cc6bb77a5248",
+  afterOutputDigest: "sha256:b6a9f00dfbc8c7e2b8b4485c374fe46691bc0b03126e24331df835de4eabfd22",
+  frozenDigest: "sha256:fc501dd09483a82a7842a116d9c9c424448bb454f4ecd08bc6a5950b04c6de58",
+});
+
+export type VerifiedWriter1QaArtifact = { role: "content" | "evidence"; path: string; digest: string; decision: "PASS" };
+
+function isSha256(value: unknown): value is string { return typeof value === "string" && /^sha256:[0-9a-f]{64}$/u.test(value); }
+
+/**
+ * Writer2 accepts only the Architect seal produced from the audited Cursor
+ * artifact.  This is deliberately separate from the generic stage approval:
+ * the seal binds the Action ZIP, raw output bytes, correction receipt/state,
+ * frozen diff, and two independent QA decisions without embedding a new
+ * copywriting decision in the runner.
+ */
+export function validateVerifiedWriter1Approval(value: unknown, receipt: unknown, cursorApiKey: string, sealedHandoffDigest: string): asserts value is Record<string, unknown> {
+  validateSignedArchitectStageApproval(value, "writer1", receipt, cursorApiKey, sealedHandoffDigest);
+  const approval = value as Record<string, any>;
+  const seal = approval.verifiedWriter1Seal;
+  if (!seal || seal.schemaVersion !== "verified-writer1-approval-seal/v1" || seal.actionRunId !== VERIFIED_WRITER1_APPROVED_ARTIFACT.actionRunId || Number(seal.artifactId) !== VERIFIED_WRITER1_APPROVED_ARTIFACT.artifactId || seal.artifactZipDigest !== VERIFIED_WRITER1_APPROVED_ARTIFACT.artifactZipDigest || seal.artifactZipSize !== VERIFIED_WRITER1_APPROVED_ARTIFACT.artifactZipSize || seal.outputPath !== VERIFIED_WRITER1_APPROVED_ARTIFACT.outputPath || seal.outputFileDigest !== VERIFIED_WRITER1_APPROVED_ARTIFACT.outputFileDigest || seal.outputFileSize !== VERIFIED_WRITER1_APPROVED_ARTIFACT.outputFileSize || seal.receiptPath !== VERIFIED_WRITER1_APPROVED_ARTIFACT.receiptPath || seal.receiptDigest !== VERIFIED_WRITER1_APPROVED_ARTIFACT.receiptDigest || seal.receiptSize !== VERIFIED_WRITER1_APPROVED_ARTIFACT.receiptSize || seal.statePath !== VERIFIED_WRITER1_APPROVED_ARTIFACT.statePath || seal.stateDigest !== VERIFIED_WRITER1_APPROVED_ARTIFACT.stateDigest || seal.stateSize !== VERIFIED_WRITER1_APPROVED_ARTIFACT.stateSize || JSON.stringify(seal.changedPaths) !== JSON.stringify(VERIFIED_WRITER1_APPROVED_ARTIFACT.changedPaths) || seal.beforeOutputDigest !== VERIFIED_WRITER1_APPROVED_ARTIFACT.beforeOutputDigest || seal.afterOutputDigest !== VERIFIED_WRITER1_APPROVED_ARTIFACT.afterOutputDigest || seal.frozenDigest !== VERIFIED_WRITER1_APPROVED_ARTIFACT.frozenDigest || seal.crossV3CopyPreservation !== "not-asserted" || seal.writer2Blocked !== true || seal.nextStage !== null) throw new Error("verified Writer1 approval seal is not bound to the exact successful artifact, receipt, frozen diff, or stop state");
+  if (!isSha256(seal.outputDigest) || seal.outputDigest !== (receipt as CursorWriterReceipt).outputDigest || seal.receiptDigest !== VERIFIED_WRITER1_APPROVED_ARTIFACT.receiptDigest) throw new Error("verified Writer1 approval seal is not bound to the direct Cursor receipt output");
+  const qa = seal.independentQaArtifacts;
+  if (!Array.isArray(qa) || qa.length !== 2 || new Set(qa.map((item) => item?.role)).size !== 2 || qa.some((item) => !item || (item.role !== "content" && item.role !== "evidence") || item.decision !== "PASS" || typeof item.path !== "string" || !/^(?:qa|architect\/qa|luna\/qa)\/[A-Za-z0-9._/-]+$/u.test(item.path) || !isSha256(item.digest))) throw new Error("verified Writer1 approval requires two independently pinned PASS QA artifacts");
+}
 
 function record(value: unknown): Dict | null { return value && typeof value === "object" && !Array.isArray(value) ? value as Dict : null; }
 function nonEmpty(value: unknown): boolean { return typeof value === "string" && value.trim().length > 0; }
@@ -76,22 +119,38 @@ function assertNewAgent(receipt: CursorWriterReceipt, prior: CursorWriterReceipt
   if (receipt.agentId === prior.agentId || receipt.threadUrl === prior.threadUrl) throw new Error("Verified downstream stage must use a new Cursor agent/thread");
 }
 function productionExecutor(): CursorWriterExecutor {
-  return createCursorWriterExecutor({ receiptStore: createJsonCursorReceiptStore(VERIFIED_RECEIPT_STORE) });
+  return createCursorWriterExecutor({
+    receiptStore: createJsonCursorReceiptStore(VERIFIED_RECEIPT_STORE),
+    onDispatch: async (notice) => {
+      if (notice.stage !== "writer2") return;
+      const file = path.resolve("canary/runtime/verified-writer2-dispatch.json");
+      await fs.mkdir(path.dirname(file), { recursive: true });
+      await fs.writeFile(file, `${JSON.stringify({ schemaVersion: "verified-writer2-dispatch/v1", stage: notice.stage, agentId: notice.agentId, runId: notice.jobId, threadUrl: notice.threadUrl, requestedModel: notice.requestedModel, resolvedModel: notice.officialModel, effort: notice.effort, fast: notice.fast, inputDigest: notice.inputDigest, promptDigest: notice.promptDigest, requestDigest: notice.requestDigest, dispatchedAt: notice.dispatchedAt, writer3Blocked: true, nextStage: null }, null, 2)}\n`, "utf8");
+    },
+  });
 }
 
 export interface VerifiedWriter2ProductionInput { runId: string; sealedHandoffDigest: string; writer1Receipt: unknown; writer1Approval: unknown; }
 export interface VerifiedWriter3ProductionInput { runId: string; sealedHandoffDigest: string; writer2Receipt: unknown; writer2Approval: unknown; }
 
-async function runWriter2WithExecutor(input: VerifiedWriter2ProductionInput, executor: CursorWriterExecutor): Promise<{ output: Dict; receipt: CursorWriterReceipt; threadUrl: string }> {
+async function runWriter2WithExecutor(input: VerifiedWriter2ProductionInput, executor: CursorWriterExecutor, requireVerifiedSeal = true): Promise<{ output: Dict; receipt: CursorWriterReceipt; threadUrl: string }> {
   assertPriorReceipt(input.writer1Receipt, "writer1");
   assertSealedDigest(input.sealedHandoffDigest);
-  validateSignedArchitectStageApproval(input.writer1Approval, "writer1", input.writer1Receipt, process.env.CURSOR_API_KEY || "", input.sealedHandoffDigest);
+  if (requireVerifiedSeal) validateVerifiedWriter1Approval(input.writer1Approval, input.writer1Receipt, process.env.CURSOR_API_KEY || "", input.sealedHandoffDigest);
+  else validateSignedArchitectStageApproval(input.writer1Approval, "writer1", input.writer1Receipt, process.env.CURSOR_API_KEY || "", input.sealedHandoffDigest);
   const prior = input.writer1Receipt as CursorWriterReceipt;
-  const payload = { schemaVersion: "verified-writer2-input/v1", stage: "writer2", sealedHandoffDigest: input.sealedHandoffDigest, writer1Output: prior.output, writer1OutputDigest: prior.outputDigest, allowedRoutes: VERIFIED_WRITER2_ROUTES, allowedFields: ["homepage", "contact", "header", "footer"], writer1ApprovalDigest: digestOf(input.writer1Approval) };
+  const payload = verifiedWriter2Payload(input.sealedHandoffDigest, prior, input.writer1Approval);
   const result = await executor.dispatch("writer2", payload, WRITER2_PROMPT, input.runId);
   validateCursorWriterReceipt(result.receipt, process.env.CURSOR_API_KEY);
   assertNewAgent(result.receipt, prior); validateVerifiedWriter2Output(result.output);
   return { output: result.output, receipt: result.receipt, threadUrl: result.threadUrl };
+}
+
+export function verifiedWriter2Payload(sealedHandoffDigest: string, writer1Receipt: CursorWriterReceipt, writer1Approval: unknown): Dict {
+  return { schemaVersion: "verified-writer2-input/v1", stage: "writer2", sealedHandoffDigest, writer1Output: writer1Receipt.output, writer1OutputDigest: writer1Receipt.outputDigest, allowedRoutes: VERIFIED_WRITER2_ROUTES, allowedFields: ["homepage", "contact", "header", "footer"], writer1ApprovalDigest: digestOf(writer1Approval) };
+}
+export function verifiedWriter2InputDigest(sealedHandoffDigest: string, writer1Receipt: CursorWriterReceipt, writer1Approval: unknown): string {
+  return digestOf(verifiedWriter2Payload(sealedHandoffDigest, writer1Receipt, writer1Approval));
 }
 
 async function runWriter3WithExecutor(input: VerifiedWriter3ProductionInput, executor: CursorWriterExecutor): Promise<{ output: Dict; receipt: CursorWriterReceipt; threadUrl: string }> {
@@ -117,7 +176,7 @@ export async function runVerifiedWriter3Production(input: VerifiedWriter3Product
 
 export async function runVerifiedWriter2ForTest(input: VerifiedWriter2ProductionInput, executor: CursorWriterExecutor): Promise<{ output: Dict; receipt: CursorWriterReceipt; threadUrl: string }> {
   if (!process.execArgv.some((arg) => arg.includes("--test"))) throw new Error("Verified downstream test seam is test-only");
-  return runWriter2WithExecutor(input, executor);
+  return runWriter2WithExecutor(input, executor, false);
 }
 export async function runVerifiedWriter3ForTest(input: VerifiedWriter3ProductionInput, executor: CursorWriterExecutor): Promise<{ output: Dict; receipt: CursorWriterReceipt; threadUrl: string }> {
   if (!process.execArgv.some((arg) => arg.includes("--test"))) throw new Error("Verified downstream test seam is test-only");

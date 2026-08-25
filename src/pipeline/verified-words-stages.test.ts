@@ -3,7 +3,7 @@ import { createHmac } from "node:crypto";
 import test from "node:test";
 import { canonicalize, digestOf } from "../contracts/digests.js";
 import { OFFICIAL_CURSOR_MODEL, REQUIRED_CURSOR_MODEL, type CursorWriterReceipt } from "./cursor-writer.js";
-import { runVerifiedWriter2ForTest, runVerifiedWriter3ForTest, validateVerifiedWriter2Output, validateVerifiedWriter3Output } from "./verified-words-stages.js";
+import { runVerifiedWriter2ForTest, runVerifiedWriter3ForTest, validateVerifiedWriter1Approval, validateVerifiedWriter2Output, validateVerifiedWriter3Output } from "./verified-words-stages.js";
 import { VERIFIED_WRITER3_SEALED_FACTS } from "./verified-words-policy.js";
 
 const secret = "verified-stage-test-secret";
@@ -45,6 +45,11 @@ test("verified Writer2 production seam requires signed Writer1 QA and creates a 
   const result = await runVerifiedWriter2ForTest({ runId: "run-verified-writer2", sealedHandoffDigest: sealedDigest, writer1Receipt: source, writer1Approval: approval("writer1", source) }, executor());
   assert.equal(result.receipt.stage, "writer2"); assert.notEqual(result.receipt.agentId, source.agentId); assert.notEqual(result.threadUrl, source.threadUrl); assert.equal(result.receipt.requestedModel, REQUIRED_CURSOR_MODEL); assert.equal(result.receipt.resolvedModel, OFFICIAL_CURSOR_MODEL); assert.equal(result.receipt.effort, "high"); assert.equal(result.receipt.fast, false); validateVerifiedWriter2Output(result.output);
   await assert.rejects(() => runVerifiedWriter2ForTest({ runId: "run-forged", sealedHandoffDigest: sealedDigest, writer1Receipt: source, writer1Approval: { ...approval("writer1", source), outputDigest: `sha256:${"f".repeat(64)}` } }, executor()), /signature|approval/u);
+});
+
+test("production Writer2 approval boundary rejects a generic signed QA without the audited Writer1 seal", () => {
+  const source = receipt("writer1", "bc-verified-writer1", writer1Output);
+  assert.throws(() => validateVerifiedWriter1Approval(approval("writer1", source), source, secret, sealedDigest), /approval seal|exact successful artifact/u);
 });
 
 test("verified Writer3 production seam requires signed Writer2 QA and immutable sealed facts", async () => {

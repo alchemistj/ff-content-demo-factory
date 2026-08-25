@@ -32,6 +32,8 @@ export interface SignedArchitectStageApproval {
   outputDigest: string;
   issuedAt: string;
   signature: string;
+  /** Present on the verified Writer1 approval seal. */
+  verifiedWriter1Seal?: Record<string, unknown>;
 }
 const APPROVAL_DOMAIN = "ff-content-demo-factory/architect-stage-approval/hmac-sha256/v1";
 function unsignedApproval(value: SignedArchitectStageApproval): string {
@@ -41,6 +43,10 @@ function unsignedApproval(value: SignedArchitectStageApproval): string {
 function approvalSignature(value: SignedArchitectStageApproval, key: string): string {
   const derived = createHmac("sha256", APPROVAL_DOMAIN).update(key, "utf8").digest();
   return `hmac-sha256:${createHmac("sha256", derived).update(unsignedApproval(value), "utf8").digest("hex")}`;
+}
+export function signArchitectStageApproval(value: Omit<SignedArchitectStageApproval, "signature">, key: string): string {
+  if (!key) throw new Error("Architect stage approval signing requires the configured signing key");
+  return approvalSignature({ ...value, signature: "" } as SignedArchitectStageApproval, key);
 }
 export function validateSignedArchitectStageApproval(value: unknown, stage: ApprovalStage, receipt: unknown, cursorApiKey: string, expectedSealedHandoffDigest?: string): asserts value is SignedArchitectStageApproval {
   if (!cursorApiKey) throw new Error("Architect stage approval verification requires the configured signing key");
