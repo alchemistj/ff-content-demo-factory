@@ -78,7 +78,6 @@ jobs:
           SELECTION_FILE: ${{ inputs.selection_file }}
           QA_FILE: ${{ inputs.qa_file }}
           CURSOR_BUNDLE_FILE: ${{ inputs.cursor_bundle_file }}
-          FACTORY_ASSERTED_HEAD_SHA: ${{ inputs.expected_head_sha }}
           EXPECTED_HEAD_SHA: ${{ inputs.expected_head_sha }}
         run: node src/run-gate1-canary.js canary "$REQUEST_FILE" "$SELECTION_FILE" "$QA_FILE" "$CURSOR_BUNDLE_FILE"
       - name: Upload Gate 1 canary proof
