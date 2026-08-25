@@ -91,7 +91,7 @@ function validateJobReceipt(receipt, { kind, expectedEnvelope }) {
 // Current execution comments are posted on the authoritative PR thread.  Keep
 // the legacy implementation above for historical fixtures, but make the
 // exported validator enforce the live topology and its immutable envelope.
-function validateBundle(bundle, { expectedHeadSha, inputManifestDigest, dispatch, repository = 'alchemistj/ff-content-demo-factory' }) {
+function validateBundle(bundle, { expectedHeadSha, inputManifestDigest, dispatch, expectedEnvelope = null, repository = 'alchemistj/ff-content-demo-factory' }) {
   if (!bundle || bundle.schemaVersion !== 'cursor-cloud-agent-bundle-v1') throw new Error('Canary requires a trusted Cursor Cloud Agent bundle');
   validateModelAttestation(bundle.model);
   validateDispatchPacket(bundle.dispatch);
@@ -102,13 +102,20 @@ function validateBundle(bundle, { expectedHeadSha, inputManifestDigest, dispatch
   if (bundle.dispatch.issueNumber !== dispatch.issueNumber || bundle.dispatch.prNumber !== dispatch.prNumber || bundle.dispatch.branch !== dispatch.branch || bundle.dispatch.reviewedHeadSha !== expectedHeadSha) throw new Error('Cloud Agent dispatch target is stale or mismatched');
   if (bundle.inputManifestDigest !== inputManifestDigest) throw new Error('Cloud Agent bundle input manifest digest mismatch');
   if (!bundle.envelope || bundle.envelope.checkedOutSha !== expectedHeadSha || bundle.envelope.inputManifestDigest !== inputManifestDigest) throw new Error('Cloud Agent bundle immutable envelope is missing or mismatched');
-  for (const field of ['dispatchKey', 'dispatchDigest', 'handoffId', 'runId', 'prospectId']) if (bundle.envelope[field] != null && String(bundle.envelope[field]) !== String(dispatch[field] || bundle.dispatch[field] || '')) throw new Error(`Cloud Agent bundle envelope ${field} is mismatched`);
+  const expected = expectedEnvelope || {};
+  for (const field of ['dispatchKey', 'dispatchDigest', 'handoffId', 'runId', 'prospectId', 'sourceCheckpointDigest', 'sourceManifestDigest']) {
+    const expectedValue = expectedEnvelope ? (expected[field] ?? dispatch[field] ?? bundle.dispatch[field]) : null;
+    if (expectedValue != null && String(bundle.envelope[field] ?? '') !== String(expectedValue)) throw new Error(`Cloud Agent bundle envelope ${field} is mismatched`);
+  }
+  if (expected.historicalLineageSeed) {
+    if (JSON.stringify(bundle.envelope.historicalLineageSeed || null) !== JSON.stringify(expected.historicalLineageSeed)) throw new Error('Cloud Agent bundle approved-lineage projection is mismatched');
+  }
   return bundle;
 }
 
 function createDispatchPacket({ issueNumber, prNumber, branch, reviewedHeadSha, scope, repository = 'alchemistj/ff-content-demo-factory' }) {
   const model = { alias: CURSOR_ALIAS, requestedModel: CURSOR_MODEL, resolvedModel: CURSOR_MODEL, fastOff: true, fast: false };
-  const commentBody = `@cursor\nIssue: #${issueNumber}\nPR: #${prNumber}\nBranch: ${branch}\nReviewed head: ${reviewedHeadSha}\nScope: ${scope}\nModel: Grok 4.6 High (cursor-grok-4.6-high), Fast off (fast: false).\nReturn a bound terminal receipt with the canonical https://cursor.com/agents/<id> thread URL, separate agentId/runId, input/output digests, dispatchDigest, handoffId, dispatchKey, runId, prospectId, and exact branch/head evidence. Do not write prospect copy.`;
+  const commentBody = `@cursor\nIssue: #${issueNumber}\nPR: #${prNumber}\nBranch: ${branch}\nReviewed head: ${reviewedHeadSha}\nScope: ${scope}\nModel: Grok 4.6 High (cursor-grok-4.6-high), Fast off (fast: false).\nReturn a bound terminal receipt with the canonical https://cursor.com/agents/<id> thread URL, separate agentId/runId, input/output digests, dispatchDigest, handoffId, dispatchKey, phaseARunId, runId, prospectId, and exact branch/head evidence. Do not write prospect copy.`;
   const dispatchKey = digest({ repository, issueNumber, prNumber, branch, reviewedHeadSha, scope });
   const fullCommentBody = `${commentBody}\nDispatch key: ${dispatchKey}`;
   return { schemaVersion: 'factory-cursor-dispatch-v1', repository, issueNumber, prNumber, branch, reviewedHeadSha, scope, dispatchKey, model, commentBody: fullCommentBody, dispatchDigest: digest({ issueNumber, prNumber, branch, reviewedHeadSha, scope, model, commentBody: fullCommentBody, repository }) };
