@@ -11,7 +11,6 @@ const { validateBundle, validateJobReceipt, canonicalThreadUrl, createDispatchPa
 const { createPendingHandoff, validatePendingHandoff, retrievePhaseAHandoff, claimResumeAtomic } = require('./factory/handoff');
 const { createSealed360Adapters } = require('./factory/sealed-evidence');
 const { actionProofFromEnvironment } = require('./factory/orchestrator');
-const { SEALED_PROOF_SCOPE, appendSealedReplayTruth, sealedProofLimitations } = require('./factory/exact-head-proof-package');
 
 function bundleDigest(bundle) { return digest({ ...bundle, inputManifestDigest: undefined }); }
 
@@ -62,6 +61,31 @@ async function runCurrentHeadGate1Canary({ root, requestFile, selectionFile, qaF
   if (phase === 'dispatch') {
     sealPending();
     return { proof: { schemaVersion: 'factory-current-head-gate1-canary-v1', proofScope: 'fresh-current-head-dispatch-phase-only', phase, expectedHeadSha: assertedHeadSha, checkedOutSha: assertedHeadSha, headAssertion: true, dispatch, inputManifest, awaitingCursorReceipt: true, integratedFactoryReadiness: false, limitations: ['Phase A seals the exact head and inputs and awaits the connector-native Cursor receipt.', 'No paid vendor or production writing is performed in phase A.'] }, state: null };
+  }
+  if (sealedEvidence) {
+    const lineage = sealedAdapters.sealed.lineage;
+    const proof = {
+      schemaVersion: 'factory-current-head-gate1-canary-v1',
+      proofScope: 'synthetic-sealed-evidence-test-only',
+      synthetic: true,
+      sealedEvidence: true,
+      approvableGate1: false,
+      integratedFactoryReadiness: false,
+      expectedHeadSha: assertedHeadSha,
+      checkedOutSha: assertedHeadSha,
+      headAssertion: true,
+      dispatch,
+      inputManifest,
+      historicalLineage: lineage,
+      gate1State: 'synthetic-sealed-evidence-only',
+      limitations: [
+        'Synthetic repository replay only; this is not a Human Gate 1 approval artifact.',
+        'No Apify API token, Cursor credential, Cursor thread, terminal receipt, or production vendor call was used.',
+        'Real phase A must pause for an authentic cursor[bot] terminal receipt before any Gate 1 path.',
+      ],
+    };
+    fs.writeFileSync(path.join(outputDir, 'current-head-gate1-proof.json'), JSON.stringify(proof, null, 2) + '\n');
+    return { proof, state: null };
   }
   let pendingFile = env.FACTORY_HANDOFF_FILE || path.join(outputDir, 'current-head-gate1-pending.json');
   if (phase === 'integrated' || (sealedEvidence && !fs.existsSync(pendingFile))) sealPending();
@@ -128,9 +152,8 @@ async function runCurrentHeadGate1Canary({ root, requestFile, selectionFile, qaF
   });
   const proof = {
     schemaVersion: 'factory-current-head-gate1-canary-v1',
-    proofScope: sealedEvidence ? SEALED_PROOF_SCOPE : 'fresh-current-head-gate1-canary-only',
+    proofScope: 'fresh-current-head-gate1-canary-only',
     integratedFactoryReadiness: false,
-    liveConnectorProven: false,
     expectedHeadSha: assertedHeadSha,
     checkedOutSha: assertedHeadSha,
     headAssertion: true,
@@ -151,13 +174,11 @@ async function runCurrentHeadGate1Canary({ root, requestFile, selectionFile, qaF
     cursorReceiptBindings: boundReceipts,
     gate1State: run.status,
     laterStageArtifacts: Object.keys(run.artifacts).filter((key) => ['copy', 'website', 'build', 'deploy'].some((word) => key.toLowerCase().includes(word))),
-    limitations: sealedEvidence ? sealedProofLimitations() : ['This proves a fresh current-head path through Human Gate 1 only.', 'It does not prove post-Gate-1 writer lanes, final copy QA, or website build readiness.', 'The live GitHub cursor[bot] terminal-bundle to automatic phase-B connector path remains unproven unless a trusted terminal receipt is bound.'],
+    limitations: ['This proves a fresh current-head path through Human Gate 1 only.', 'It does not prove post-Gate-1 writer lanes, final copy QA, or website build readiness.'],
   };
   fs.mkdirSync(path.join(root, 'canary', 'outputs'), { recursive: true });
-  const markdown = sealedEvidence ? appendSealedReplayTruth(run.artifacts.gate1.markdown) : run.artifacts.gate1.markdown;
-  run.artifacts.gate1.markdown = markdown;
   fs.writeFileSync(path.join(root, 'canary', 'outputs', 'current-head-gate1-proof.json'), `${JSON.stringify(proof, null, 2)}\n`);
-  fs.writeFileSync(path.join(root, 'canary', 'outputs', 'gate1.md'), markdown);
+  fs.writeFileSync(path.join(root, 'canary', 'outputs', 'gate1.md'), run.artifacts.gate1.markdown);
   return { proof, state: stage3.state };
 }
 
