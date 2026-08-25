@@ -96,9 +96,11 @@ function authoritativeMarkers(comments, expected) {
     if (comment?.user?.login && comment.user.login !== expected.ownerLogin && !['github-actions[bot]', 'cursor[bot]'].includes(comment.user.login)) return [];
     const url = String(comment?.html_url || comment?.url || '');
     if (!issueCommentUrl(url, repository, issueNumber)) return [];
-    const marker = parseMarker(comment.body);
-    return marker ? [{ ...marker, commentId: String(comment.id), commentUrl: url }] : [];
-  }).filter((marker) => marker.repository === repository && String(marker.issueNumber) === issueNumber && (!expected.prNumber || String(marker.prNumber) === String(expected.prNumber)));
+    let marker;
+    try { marker = parseMarker(comment.body); } catch { return []; }
+    return marker ? [{ ...marker, commentId: String(comment.id), commentUrl: url, _createdAt: comment.created_at || '' }] : [];
+  }).filter((marker) => marker.repository === repository && String(marker.issueNumber) === issueNumber && (!expected.prNumber || String(marker.prNumber) === String(expected.prNumber)))
+    .sort((a, b) => String(b._createdAt).localeCompare(String(a._createdAt)) || Number(b.commentId) - Number(a.commentId));
 }
 
 function findClaim(comments, expected) {
@@ -116,11 +118,11 @@ function findClaim(comments, expected) {
 function reconcileDispatchComment(comments, expected) {
   const repository = required(expected.repository, 'dispatch repository');
   const issueNumber = String(required(expected.issueNumber, 'dispatch issue'));
-  return (comments || []).find((comment) => {
+  return (comments || []).filter((comment) => {
     const body = String(comment?.body || '');
     const url = String(comment?.html_url || '');
     return issueCommentUrl(url, repository, issueNumber) && body.startsWith('@cursor') && body.includes(`Dispatch key: ${expected.dispatchKey}`) && (!expected.dispatchDigest || body.includes(`Dispatch packet digest: ${expected.dispatchDigest}`)) && (!expected.prNumber || body.includes(`PR: #${expected.prNumber}`));
-  }) || null;
+  }).sort((a, b) => String(b.created_at || '').localeCompare(String(a.created_at || '')) || Number(b.id) - Number(a.id))[0] || null;
 }
 
 function requireGitHubToken(env = process.env) {
