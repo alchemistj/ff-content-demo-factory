@@ -262,7 +262,7 @@ test('eleventh correction real sealed 360 path remains synthetic-only and never 
     FACTORY_ACTION_RUN_URL: 'https://github.com/alchemistj/ff-content-demo-factory/actions/runs/local-eleventh',
     GITHUB_RUN_ID: 'local-eleventh',
   };
-  await assert.rejects(() => runExactHeadSealed360Proof({ root, env, deps: { runFactoryCycle: async () => ({}) } }), /injected\\/mock/);
+  await assert.rejects(() => runExactHeadSealed360Proof({ root, env, deps: { runFactoryCycle: async () => ({}) } }), /injected\/mock/);
   const { result, validated } = await runExactHeadSealed360Proof({ root, env });
   assert.equal(result.proof.gate1State, 'synthetic-sealed-evidence-only');
   assert.equal(result.proof.synthetic, true);
