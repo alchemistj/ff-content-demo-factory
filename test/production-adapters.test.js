@@ -5,7 +5,7 @@ const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const os = require('node:os');
 const path = require('node:path');
-const { createProductionAdapters } = require('../src/factory/production-adapters');
+const { createProductionAdapters, normalizeWebsiteAudit } = require('../src/factory/production-adapters');
 const { createFileReceiptStore } = require('../src/factory/receipt-store');
 const { runFactoryCycle } = require('../src/factory/orchestrator');
 const { STANDARD_PRESCRIPTION_POLICY, pageSetDigest, digest } = require('../src/factory/prescription-policy');
@@ -20,9 +20,10 @@ function cursorDouble() {
     calls,
     async runResearchRecord({ kind, jobId, input }) {
       calls.push({ kind, jobId, input });
-      if (kind === 'website-audit') return { receipt: { provider: 'cursor-sdk', jobId, status: 'completed', resolvedModel: 'grok-4.6' }, result: { kind, website: input.website, opportunity: 'opp-1', evidence: [{ type: 'copy', id: 'copy-1', text: 'Licensed electrical services.' }], images: [{ url: 'https://example.test/service.png', kind: 'service-graphic' }] } };
+      if (kind === 'website-audit') return { receipt: { provider: 'cursor-sdk', jobId, status: 'completed', resolvedModel: 'grok-4.6' }, result: { kind, website: input.website, opportunity: 'opp-1', evidence: [{ type: 'copy', id: 'copy-1', text: 'Licensed electrical services.', sourceUrl: `${input.website}/services` }], images: [{ url: `${input.website}/service.png`, kind: 'service-graphic', provenance: { sourceUrl: `${input.website}/service.png` } }] } };
       if (kind === 'review-judgment') { const service = input.review.id === 'r2' ? 'panel-upgrade' : 'ev-charging'; return { receipt: { provider: 'cursor-sdk', jobId, status: 'completed', resolvedModel: 'grok-4.6', runId: 'run-review-1' }, result: { kind, reviewId: input.review.id, authoritative: true, decision: 'anchor', directCompletedService: true, serviceEvidence: [{ service, excerpt: input.review.text }], availabilityEvidence: [], provenance: { source: input.review.source, reviewId: input.review.id } } }; }
-      return { receipt: { provider: 'cursor-sdk', jobId, status: 'completed', resolvedModel: 'grok-4.6', runId: 'run-page-1' }, result: { kind, pages: fullPages(), serviceCoverageLedger: { version: 'canonical-service-coverage-ledger-v1', prospectId: input?.finalist?.prospectId || 'p1', placeId: input?.finalist?.placeId || 'p1', runId: input?.finalist?.runId || 'run-page-1', aliases: {}, services: [{ id: 'ev-charging', name: 'EV Charging', reviewIds: ['r1'], currentSitePageUrls: [] }, { id: 'panel-upgrade', name: 'Panel upgrade', reviewIds: ['r2'], currentSitePageUrls: [] }] }, comparison: { candidates: [{ id: 'ev-charging', name: 'EV Charging' }, { id: 'panel-upgrade', name: 'Panel upgrade' }] } } };
+      const sourceCheckpoint = { sourceIdentity: { provider: 'repository-test-fixture', runId: input?.finalist?.runId || 'run-page-1', artifactId: 'artifact-page-1', sourceSha: 'source-page-1', rootIdentity: 'test-artifact-root:artifact-page-1' }, sourceArtifactDigest: 'sha256:ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff' };
+      return { receipt: { provider: 'cursor-sdk', jobId, status: 'completed', resolvedModel: 'grok-4.6', runId: 'run-page-1' }, result: { kind, pages: fullPages(), sourceCheckpoint, serviceCoverageLedger: { version: 'canonical-service-coverage-ledger-v1', prospectId: input?.finalist?.prospectId || 'p1', placeId: input?.finalist?.placeId || 'p1', runId: input?.finalist?.runId || 'run-page-1', sourceIdentity: sourceCheckpoint.sourceIdentity, aliases: {}, services: [{ id: 'ev-charging', name: 'EV Charging', reviewIds: ['r1'], currentSitePageUrls: [] }, { id: 'panel-upgrade', name: 'Panel upgrade', reviewIds: ['r2'], currentSitePageUrls: [] }] }, comparison: { candidates: [{ id: 'ev-charging', name: 'EV Charging' }, { id: 'panel-upgrade', name: 'Panel upgrade' }] } } };
     },
   };
 }
@@ -32,7 +33,7 @@ function page() {
     type: 'Service', service: 'ev-charging', url: '/ev-charging', primaryKeyword: 'ev charging electrician',
     titleDirection: 'EV Charging Installation', h1Direction: 'EV Charging Installation in Town', angle: 'Evidence-led EV charging work',
     whyIncluded: 'A written review documents completed EV charging work.', overlapBoundaries: 'Do not overlap with general electrical repair.',
-    claims: ['Completed EV charging installation evidence'], traps: [], strongestEvidence: 'r1',
+    claims: [{ text: 'Completed EV charging installation evidence', evidenceRefs: ['r1'] }], traps: [], strongestEvidence: 'r1',
   };
 }
 
@@ -44,6 +45,13 @@ function fullPages() {
     { type: 'Contact', service: 'contact', url: '/contact', primaryKeyword: 'contact electrician', titleDirection: 'Contact One Electric', h1Direction: 'Talk with One Electric', angle: 'Give ready prospects a next step.', whyIncluded: 'Required contact page.', overlapBoundaries: 'No service claims.', claims: [], traps: [], strongestEvidence: null, recommendedFirstReview: null },
   ];
 }
+
+test('website audit rejects missing and cross-domain evidence provenance', () => {
+  const candidate = { website: 'https://one.example' };
+  assert.throws(() => normalizeWebsiteAudit({ website: 'https://one.example', evidence: [{ id: 'unbound' }], images: [] }, candidate), /missing source URL\/provenance/);
+  assert.throws(() => normalizeWebsiteAudit({ website: 'https://one.example', evidence: [{ id: 'foreign', sourceUrl: 'https://other.example/page' }], images: [] }, candidate), /not bound/);
+  assert.throws(() => normalizeWebsiteAudit({ website: 'https://one.example', evidence: [], images: [{ url: 'https://one.example/image.png' }], graphicsInspection: { findings: [{ id: 'missing' }] } }, candidate), /graphics inspection item is missing source URL\/provenance/);
+});
 
 test('production composition maps Apify GBP basics, audits owned website, and persists normalized receipts', async () => {
   const root = setup();
@@ -116,7 +124,8 @@ test('review judgment is authoritative, receipt-bound, and feeds validated evide
   const judgment2 = await adapters.reviewJudge.judge({ review: review2, finalist });
   assert.equal(judgment.authoritative, true);
   assert.equal(judgment.provenance.reviewId, 'r1');
-  const prescription = await adapters.prescriber.prescribe({ finalist, inventory: { exactPlace: true, discoverySampleOnly: false, dateWindow: null, requestedLimit: 50, listingReviewCount: 2, reviews: [review, review2], classifications: { r1: judgment, r2: judgment2 } }, decision: { runId: 'run-page-1', serviceCoverageLedger: { version: 'canonical-service-coverage-ledger-v1', prospectId: 'p1', placeId: 'p1', runId: 'run-page-1', aliases: {}, services: [{ id: 'ev-charging', name: 'EV Charging', reviewIds: ['r1'], currentSitePageUrls: [] }, { id: 'panel-upgrade', name: 'Panel Upgrade', reviewIds: ['r2'], currentSitePageUrls: [] }] }, candidateServices: [{ id: 'ev-charging', name: 'EV Charging' }, { id: 'panel-upgrade', name: 'Panel Upgrade' }], pages: fullPages(), whyBuilt: { text: 'The owned site shows an opportunity. A customer review documents completed EV charging work.', refs: [{ type: 'opportunity', id: 'opp-1' }, { type: 'review', id: 'r1' }] } } });
+  const sourceCheckpoint = { sourceIdentity: { provider: 'repository-test-fixture', runId: 'run-page-1', artifactId: 'artifact-page-1', sourceSha: 'source-page-1', rootIdentity: 'test-artifact-root:artifact-page-1' }, sourceArtifactDigest: 'sha256:ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff' };
+  const prescription = await adapters.prescriber.prescribe({ finalist, inventory: { exactPlace: true, discoverySampleOnly: false, dateWindow: null, requestedLimit: 50, listingReviewCount: 2, reviews: [review, review2], classifications: { r1: judgment, r2: judgment2 } }, decision: { runId: 'run-page-1', sourceCheckpoint, serviceCoverageLedger: { version: 'canonical-service-coverage-ledger-v1', prospectId: 'p1', placeId: 'p1', runId: 'run-page-1', sourceIdentity: sourceCheckpoint.sourceIdentity, aliases: {}, services: [{ id: 'ev-charging', name: 'EV Charging', reviewIds: ['r1'], currentSitePageUrls: [] }, { id: 'panel-upgrade', name: 'Panel Upgrade', reviewIds: ['r2'], currentSitePageUrls: [] }] }, candidateServices: [{ id: 'ev-charging', name: 'EV Charging' }, { id: 'panel-upgrade', name: 'Panel Upgrade' }], pages: fullPages(), whyBuilt: { text: 'The owned site shows an opportunity. A customer review documents completed EV charging work.', refs: [{ type: 'opportunity', id: 'opp-1' }, { type: 'review', id: 'r1' }] } } });
   assert.equal(prescription.status, 'prescribed');
   assert.equal(prescription.evidence.authoritativeAnchorCount, 2);
   assert.equal(prescription.valueHierarchy[0].includedPage, true);
@@ -140,8 +149,9 @@ test('production Gate 1 preserves an evidence-derived availability pattern', asy
   const finalist = { placeId: 'p1', name: 'One Electric', location: 'Austin, TX', architectQualified: true, disposition: { status: 'selected-finalist' }, duplicate: { status: 'unique' }, websiteAudit: { opportunity: 'opp-1', graphicsInspection: { status: 'inspected', findings: [] } } };
   const review = { id: 'r1', source: 'apify-finalist', author: 'A', rating: 5, date: '2026-01-01', text: 'Installed my EV charger.' };
   const classifications = { r1: { authoritative: true, decision: 'anchor', directCompletedService: true } };
-  const validPages = fullPages().map((entry, index) => ({ ...(index === 1 ? { ...entry, claims: ['24/7 emergency service'], recommendedFirstReview: { reviewId: 'r1', reviewer: 'A', why: 'Direct completed work.', exactText: review.text } } : entry), ...(entry.type === 'Service' ? { canonicalIntentId: entry.service } : {}) }));
-  const prescription = { pages: validPages, valueHierarchy: [{ id: 'ev-charging', includedPage: true, passedOverReason: null, directCompletedEvidenceCount: 1 }, { id: 'panel-upgrade', includedPage: true, passedOverReason: null, directCompletedEvidenceCount: 1 }], serviceCoverageLedger: { version: 'canonical-service-coverage-ledger-v1', prospectId: 'p1', placeId: 'p1', aliases: {}, services: [{ id: 'ev-charging', name: 'EV Charging', reviewIds: [], currentSitePageUrls: [] }, { id: 'panel-upgrade', name: 'Panel upgrade', reviewIds: [], currentSitePageUrls: [] }] }, pagePolicy: { ...STANDARD_PRESCRIPTION_POLICY }, policyMode: 'standard', allowedServicePageCount: 2, collisionValidation: { valid: true }, evidence: { availabilityPattern: { label: '24/7 emergency pattern', reviewIds: ['r1'] } }, evidenceDigest: digest({ test: 'availability' }), pageSetDigest: pageSetDigest(validPages), sourceArtifactDigest: null };
+  const validPages = fullPages().map((entry, index) => ({ ...(index === 1 ? { ...entry, claims: [{ text: '24/7 emergency service', evidenceRefs: ['r1'] }], recommendedFirstReview: { reviewId: 'r1', reviewer: 'A', why: 'Direct completed work.', exactText: review.text } } : entry), ...(entry.type === 'Service' ? { canonicalIntentId: entry.service } : {}) }));
+  const sourceIdentity = { provider: 'repository-test-fixture', runId: 'run-page-1', artifactId: 'artifact-page-1', sourceSha: 'source-page-1', rootIdentity: 'test-artifact-root:artifact-page-1' };
+  const prescription = { pages: validPages, runId: 'run-page-1', prospect: { prospectId: 'p1', placeId: 'p1' }, sourceIdentity, valueHierarchy: [{ id: 'ev-charging', includedPage: true, passedOverReason: null, directCompletedEvidenceCount: 1 }, { id: 'panel-upgrade', includedPage: true, passedOverReason: null, directCompletedEvidenceCount: 1 }], serviceCoverageLedger: { version: 'canonical-service-coverage-ledger-v1', prospectId: 'p1', placeId: 'p1', runId: 'run-page-1', sourceIdentity, aliases: {}, services: [{ id: 'ev-charging', name: 'EV Charging', reviewIds: [], currentSitePageUrls: [] }, { id: 'panel-upgrade', name: 'Panel upgrade', reviewIds: [], currentSitePageUrls: [] }] }, pagePolicy: { ...STANDARD_PRESCRIPTION_POLICY }, policyMode: 'standard', allowedServicePageCount: 2, collisionValidation: { valid: true }, evidence: { availabilityPattern: { label: '24/7 emergency pattern', reviewIds: ['r1'] } }, evidenceDigest: digest({ test: 'availability' }), pageSetDigest: pageSetDigest(validPages), sourceArtifactDigest: 'sha256:ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff' };
   prescription.prescriptionDigest = digest({ ...prescription, prescriptionDigest: undefined });
   const inventory = { exactPlace: true, discoverySampleOnly: false, dateWindow: null, requestedLimit: 50, enrichmentStatus: 'sufficient', listingReviewCount: 1, retrievedReviewCount: 1, writtenReviewCount: 1, reviews: [review] };
   const whyBuilt = { text: 'The owned site shows an opportunity. A customer review documents completed EV charging work.', refs: [{ type: 'opportunity', id: 'opp-1' }, { type: 'review', id: 'r1' }] };
