@@ -9,7 +9,7 @@ const { loadConfig } = require('./run-one');
 const { digest } = require('./factory/prescription-policy');
 const { validateBundle, validateJobReceipt, canonicalThreadUrl, createDispatchPacket } = require('./factory/cloud-agent');
 const { createPendingHandoff, validatePendingHandoff, retrievePhaseAHandoff, claimResumeAtomic } = require('./factory/handoff');
-const { createSealed360Adapters, verifySealed360Lineage } = require('./factory/sealed-evidence');
+const { createSealed360Adapters, verifySealed360Lineage, compareApprovedLineage } = require('./factory/sealed-evidence');
 const { actionProofFromEnvironment } = require('./factory/orchestrator');
 
 function bundleDigest(bundle) { return digest({ ...bundle, inputManifestDigest: undefined }); }
@@ -33,7 +33,7 @@ function required(value, name) { if (!value) throw new Error(`${name} is require
 
 function verifyApprovedLineageRuntimePacket({ root, filename, assertedHeadSha, dispatch }) {
   if (!filename) throw new Error('Needs Josh: production phase A requires a verified approved-lineage runtime packet');
-  const packet = readJson(filename);
+  const packet = readJson(path.isAbsolute(filename) ? filename : path.join(root, filename));
   const recordedDigest = packet.packetDigest;
   const unsigned = { ...packet };
   delete unsigned.packetDigest;
@@ -44,10 +44,13 @@ function verifyApprovedLineageRuntimePacket({ root, filename, assertedHeadSha, d
   for (const [field, expected] of [['repository', packet.repository], ['issueNumber', 8], ['prNumber', 1], ['branch', packet.branch], ['checkedOutSha', assertedHeadSha], ['dispatchKey', packet.dispatchPacket?.dispatchKey], ['dispatchDigest', packet.dispatchPacket?.dispatchDigest]]) {
     if (String(envelope[field]) !== String(expected)) throw new Error(`Needs Josh: approved-lineage runtime envelope ${field} is mismatched`);
   }
-  const historical = verifySealed360Lineage({ root });
+  const historicalHandoff = packet.approvedLineage?.handoff;
+  if (!historicalHandoff || typeof historicalHandoff !== 'object') throw new Error('Needs Josh: approved-lineage runtime packet must carry the authoritative historical handoff');
+  const historical = verifySealed360Lineage({ root, handoff: historicalHandoff });
   const approved = packet.approvedLineage || {};
   for (const field of ['sourceArtifactDigest', 'evidenceDigest', 'pageSetDigest', 'prescriptionDigest', 'approvalDigest', 'strategyDigest']) if (approved[field] !== historical[field]) throw new Error(`Needs Josh: approved historical ${field} changed`);
   if (JSON.stringify(approved.selectedServiceIds) !== JSON.stringify(historical.selectedServiceIds) || JSON.stringify(approved.routes) !== JSON.stringify(historical.routes)) throw new Error('Needs Josh: approved historical service/page selection changed');
+  compareApprovedLineage({ ...historical, pages: historicalHandoff.pages, candidateServices: historicalHandoff.candidateServices, valueHierarchy: historicalHandoff.valueHierarchy, serviceCoverageLedger: historicalHandoff.serviceCoverageLedger, writerProjection: historicalHandoff.writerProjection, foldedEvidence: historicalHandoff.foldedEvidence, reviewAnalysisFacts: historicalHandoff.reviewAnalysisFacts, policy: historicalHandoff.policy, policyMode: historicalHandoff.policyMode }, approved, 'Needs Josh: approved historical lineage');
   return packet;
 }
 
@@ -148,7 +151,7 @@ async function runCurrentHeadGate1Canary({ root, requestFile, selectionFile, qaF
   validatePendingHandoff(pending, expectedHandoff);
   if (pending.envelope.checkedOutSha !== assertedHeadSha || pending.envelope.inputManifestDigest !== inputManifest.manifestDigest) throw new Error('Canary pending handoff does not bind the current head/input manifest');
   if (env.FACTORY_HANDOFF_CAS_FILE) claimResumeAtomic(env.FACTORY_HANDOFF_CAS_FILE, pending.handoffId, env.FACTORY_RESUME_RESULT_ID || pending.handoffDigest);
-  const expectedEnvelope = { ...pending.envelope, checkedOutSha: assertedHeadSha, inputManifestDigest: inputManifest.manifestDigest };
+  const expectedEnvelope = { ...pending.envelope, handoffId: pending.handoffId, checkedOutSha: assertedHeadSha, inputManifestDigest: inputManifest.manifestDigest };
   const config = (deps.loadConfig || loadConfig)(process.cwd());
   const adapters = (deps.createProductionAdapters || createProductionAdapters)({
     root,
@@ -173,10 +176,7 @@ async function runCurrentHeadGate1Canary({ root, requestFile, selectionFile, qaF
   if (!run || run.status !== 'awaiting-human-gate-1' || !run.artifacts?.gate1?.markdown) throw new Error('Fresh canary Gate 1 artifact is missing');
   const approved = pending.envelope.approvedLineage;
   if (approved) {
-    const prescription = run.artifacts.prescription || {};
-    const actual = { sourceArtifactDigest: prescription.sourceArtifactDigest, evidenceDigest: prescription.evidenceDigest, pageSetDigest: prescription.pageSetDigest, prescriptionDigest: prescription.prescriptionDigest, approvalDigest: prescription.approvalDigest, strategyDigest: prescription.strategyDigest };
-    for (const field of Object.keys(actual)) if (actual[field] !== approved[field]) throw new Error(`Gate 1 output ${field} does not exactly match approved historical lineage`);
-    if (JSON.stringify(prescription.selectedServiceIds || []) !== JSON.stringify(approved.selectedServiceIds) || JSON.stringify((prescription.pages || []).map((page) => page.url)) !== JSON.stringify(approved.routes)) throw new Error('Gate 1 output services/routes do not exactly match approved historical lineage');
+    compareApprovedLineage(approved, run.artifacts.prescription || {}, 'Gate 1 output');
   }
   const finalEnvelope = { ...expectedEnvelope, factoryRunId: run.runId, factorySourceCheckpointDigest: run.artifacts.sourceCheckpoint ? digest(run.artifacts.sourceCheckpoint) : null };
   const boundReceipts = Object.entries(cursorBundle?.jobs || {}).map(([jobId, entry]) => {
@@ -226,4 +226,4 @@ if (require.main === module) {
   runCurrentHeadGate1Canary({ root, requestFile, selectionFile, qaFile, cursorBundleFile }).then(({ proof }) => process.stdout.write(`${JSON.stringify(proof, null, 2)}\n`)).catch((error) => { console.error(error.stack || error.message); process.exitCode = 1; });
 }
 
-module.exports = { runCurrentHeadGate1Canary };
+module.exports = { runCurrentHeadGate1Canary, verifyApprovedLineageRuntimePacket };
