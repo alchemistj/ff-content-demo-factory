@@ -17,6 +17,9 @@ const {
 } = require('../src/factory/handoff');
 const { runCurrentHeadGate1Canary } = require('../src/run-gate1-canary');
 const { PLACE_ID, verifySealed360Lineage } = require('../src/factory/sealed-evidence');
+const { selectNewestDispatchComment } = require('../scripts/select-cursor-dispatch-comment');
+const { markerFor, markerBody, assertTransition, findClaim } = require('../src/factory/github-ledger');
+const { claimPhaseBAtomic } = require('../src/factory/handoff');
 
 function completeBinding(extra = {}) {
   return {
@@ -145,6 +148,34 @@ test('tenth correction production receipts fail closed when required context is 
   assert.throws(() => requiredReceipt(enrichment, 'finalist-enrichment', null, enrichmentExpected), /prospectId binding is omitted/);
   delete enrichment.binding.runId;
   assert.throws(() => requiredReceipt(enrichment, 'finalist-enrichment', null, completeBinding({ operation: 'finalist-enrichment', placeId: PLACE_ID, prospectId: 'prospect-1', runId: 'run-1' })), /runId binding is omitted/);
+});
+
+test('forward correction binds approved historical lineage into phase-A handoff and production invocation', async () => {
+  const approvedLineage = {
+    packetDigest: 'sha256:packet',
+    sourceArtifactDigest: 'sha256:source-artifact',
+    evidenceDigest: 'sha256:evidence',
+    pageSetDigest: 'sha256:pages',
+    prescriptionDigest: 'sha256:prescription',
+    approvalDigest: 'sha256:approval',
+    strategyDigest: 'sha256:strategy',
+    selectedServiceIds: ['service-a', 'service-b'],
+    routes: ['/', '/service-a', '/service-b', '/contact'],
+  };
+  const pending = samplePending({ approvedLineage });
+  assert.deepEqual(pending.envelope.approvedLineage, approvedLineage);
+  assert.doesNotThrow(() => validatePendingHandoff(pending));
+  const tampered = { ...pending, envelope: { ...pending.envelope, approvedLineage: { ...approvedLineage, strategyDigest: 'sha256:forged' } } };
+  assert.throws(() => validatePendingHandoff(tampered), /handoff digest|invented/);
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), 'factory-approved-runtime-'));
+  await assert.rejects(() => runCurrentHeadGate1Canary({
+    root,
+    requestFile: path.resolve('canary/inputs/360-gate1-request.json'),
+    selectionFile: path.resolve('canary/inputs/360-gate1-selection.json'),
+    qaFile: path.resolve('canary/inputs/360-gate1-qa.json'),
+    cursorBundleFile: '',
+    env: canaryEnv({ FACTORY_PHASE_A_PRODUCTION: 'true' }),
+  }), /Needs Josh: production phase A requires a verified approved-lineage runtime packet/);
 });
 
 test('tenth correction recomputes input digests and rejects cross-prospect or tampered payloads', () => {
@@ -369,7 +400,7 @@ test('tenth correction sealed 360 canary remains synthetic-only without vendor c
   assert.equal(result.proof.sealedEvidence, true);
   assert.equal(result.proof.integratedFactoryReadiness, false);
   assert.equal(result.proof.liveConnectorProven, false);
-  const proofFile = path.join(root, 'canary/outputs/current-head-gate1-proof.json');
+  const proofFile = path.join(root, 'canary/outputs/current-head-synthetic-replay-proof.json');
   const gateFile = path.join(root, 'canary/outputs/gate1.md');
   assert.equal(fs.existsSync(proofFile), true);
   assert.equal(fs.existsSync(gateFile), false);
@@ -431,4 +462,28 @@ test('forward correction workflow events share Issue 8 / PR 1 context and retry 
   assert.match(handoff, /issues\/\$\{issueNumber\}\|pull\/\$\{prNumber\}/);
   assert.match(sealed, /provider: 'repository-sealed-evidence'/);
   assert.match(sealed, /syntheticReplay: true/);
+});
+
+test('forward correction executes mocked GitHub event/retry state machine exactly once', () => {
+  const context = { repository: 'alchemistj/ff-content-demo-factory', issueNumber: 8, prNumber: 1, branch: 'architect/greenfield-gate1', checkedOutSha: 'head-1', handoffId: 'handoff-1', dispatchKey: 'dispatch-1', dispatchDigest: 'sha256:dispatch', runId: 'run-1', prospectId: 'prospect-1', sourceCheckpointDigest: 'sha256:source', sourceManifestDigest: 'sha256:manifest', inputManifestDigest: 'sha256:input', jobId: 'phase-a-1', resultId: 'sha256:dispatch' };
+  const comments = [];
+  let previous = null;
+  for (const status of ['preparing', 'posted', 'in_motion', 'terminal', 'resumed']) {
+    const marker = markerFor({ kind: 'dispatch', ...context, status, commentId: status === 'posted' ? '101' : status === 'preparing' ? '100' : String(100 + status.length), commentUrl: `https://github.com/alchemistj/ff-content-demo-factory/issues/8#issuecomment-${100 + status.length}` });
+    if (status === 'posted') assertTransition(previous, marker);
+    else if (previous) assertTransition(previous, marker);
+    else assertTransition(null, marker);
+    comments.push({ id: marker.commentId, html_url: marker.commentUrl, created_at: `2026-01-01T00:00:0${comments.length}Z`, user: { login: 'github-actions[bot]' }, body: markerBody(marker) });
+    previous = marker;
+  }
+  assert.equal(findClaim(comments, { ...context, kind: 'dispatch' }).status, 'resumed');
+  assert.equal(findClaim(comments, { ...context, kind: 'dispatch', status: 'posted' }).status, 'posted');
+  const executionComments = [
+    { id: 1, html_url: 'https://github.com/alchemistj/ff-content-demo-factory/pull/1#issuecomment-1', created_at: '2026-01-01T00:00:00Z', body: '@cursor\nDispatch key: dispatch-1\nDispatch packet digest: sha256:dispatch\nHandoff ID: handoff-1\nPhase-A run: phase-a-1\nDispatch workflow run: 1' },
+    { id: 2, html_url: 'https://github.com/alchemistj/ff-content-demo-factory/pull/1#issuecomment-2', created_at: '2026-01-01T00:01:00Z', body: '@cursor\nDispatch key: dispatch-1\nDispatch packet digest: sha256:dispatch\nHandoff ID: handoff-1\nPhase-A run: phase-a-1\nDispatch workflow run: 2\nmultiline detail' },
+  ];
+  assert.equal(selectNewestDispatchComment(executionComments, { repository: context.repository, prNumber: 1, dispatchKey: context.dispatchKey, dispatchDigest: context.dispatchDigest }).id, 2);
+  const casFile = path.join(fs.mkdtempSync(path.join(os.tmpdir(), 'factory-phase-b-cas-')), 'phase-b.json');
+  assert.doesNotThrow(() => claimPhaseBAtomic(casFile, { handoffId: context.handoffId, resultId: 'terminal-1' }));
+  assert.throws(() => claimPhaseBAtomic(casFile, { handoffId: context.handoffId, resultId: 'terminal-1' }), /replay/);
 });
