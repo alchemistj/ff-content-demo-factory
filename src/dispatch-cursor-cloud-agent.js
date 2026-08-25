@@ -4,11 +4,16 @@
 const fs = require('node:fs');
 const path = require('node:path');
 const { createDispatchPacket } = require('./factory/cloud-agent');
+const { validatePendingHandoff } = require('./factory/handoff');
 
 function required(value, name) { if (!value) throw new Error(`${name} is required`); return value; }
 
 function main(env = process.env) {
-  const packet = createDispatchPacket({
+  const pending = env.FACTORY_PENDING_FILE ? JSON.parse(fs.readFileSync(path.resolve(env.FACTORY_PENDING_FILE), 'utf8')) : null;
+  if (pending) {
+    validatePendingHandoff(pending);
+  }
+  const packet = pending ? pending.dispatchPacket : createDispatchPacket({
     issueNumber: Number(required(env.FACTORY_ISSUE_NUMBER, 'FACTORY_ISSUE_NUMBER')),
     prNumber: Number(required(env.FACTORY_PR_NUMBER, 'FACTORY_PR_NUMBER')),
     branch: required(env.FACTORY_BRANCH, 'FACTORY_BRANCH'),
