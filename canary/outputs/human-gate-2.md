@@ -13,9 +13,8 @@ Directly readable words package for the 360 Garage Door and More canary. Natural
 - Merge occurred: **no**
 - Deployment occurred: **no**
 - Branch: `architect/360-words-canary`
-- Head commit: see git SHA on this file’s commit
+- Head commits: `5606962` (local pointer-ledger apply), `b0ebf46` (Human Gate 2 words package)
 - Pointer-ledger normalization commit parent: `137a8ae`
-- Local normalization commit: `5606962`
 - Prior fail-closed Action: https://github.com/alchemistj/ff-content-demo-factory/actions/runs/32806937751
 - Pull request (unmerged): https://github.com/alchemistj/ff-content-demo-factory/pull/6
 - Writer 1 Cursor thread: https://cursor.com/agents/bc-30fc8ffa-2005-44b9-8fc7-48ddd9c3bcc8
