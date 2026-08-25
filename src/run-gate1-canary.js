@@ -7,7 +7,8 @@ const { runFactoryCycle } = require('./factory/orchestrator');
 const { createProductionAdapters } = require('./factory/production-adapters');
 const { loadConfig } = require('./run-one');
 const { digest } = require('./factory/prescription-policy');
-const { validateBundle, validateJobReceipt, canonicalThreadUrl } = require('./factory/cloud-agent');
+const { validateBundle, validateJobReceipt, canonicalThreadUrl, createDispatchPacket } = require('./factory/cloud-agent');
+const { createPendingHandoff, validatePendingHandoff } = require('./factory/handoff');
 
 function bundleDigest(bundle) { return digest({ ...bundle, inputManifestDigest: undefined }); }
 
@@ -47,7 +48,15 @@ async function runCurrentHeadGate1Canary({ root, requestFile, selectionFile, qaF
   const outputDir = path.join(root, 'canary', 'outputs');
   fs.mkdirSync(outputDir, { recursive: true });
   if (phase === 'dispatch') {
-    const pending = { schemaVersion: 'factory-canary-pending-v1', phase: 'awaiting-cursor-receipt', immutable: true, expectedHeadSha: assertedHeadSha, dispatch, inputManifest, inputManifestDigest: inputManifest.manifestDigest, sealedDigest: digest({ expectedHeadSha: assertedHeadSha, dispatch, inputManifest }) };
+    const dispatchPacket = createDispatchPacket({ ...dispatch, scope: env.FACTORY_DISPATCH_SCOPE || 'fresh-current-head-gate1', repository: env.FACTORY_REPOSITORY || 'alchemistj/ff-content-demo-factory' });
+    const prospectId = request.prospectId || request.placeId || request.prospect?.prospectId || `canary-${digest(request).slice(7, 23)}`;
+    const pending = createPendingHandoff({ dispatchPacket, inputManifest, runId: env.FACTORY_CANARY_RUN_ID || `canary-${digest(inputManifest).slice(7, 23)}`, prospectId, sourceCheckpointDigest: digest({ request, selection, qa }), phaseARunId: env.GITHUB_RUN_ID || `local-${digest(inputManifest).slice(7, 23)}` });
+    pending.inputFiles = { request: requestFile, selection: selectionFile, qa: qaFile };
+    pending.expectedHeadSha = assertedHeadSha; pending.dispatch = dispatch; pending.inputManifest = inputManifest; pending.inputManifestDigest = inputManifest.manifestDigest; pending.sealedDigest = digest({ expectedHeadSha: assertedHeadSha, dispatch, inputManifest });
+    delete pending.handoffId; delete pending.handoffDigest;
+    const unsigned = { ...pending, handoffId: undefined, handoffDigest: undefined };
+    pending.handoffId = digest(unsigned);
+    pending.handoffDigest = digest({ ...unsigned, handoffId: pending.handoffId });
     fs.writeFileSync(path.join(outputDir, 'current-head-gate1-pending.json'), `${JSON.stringify(pending, null, 2)}\n`);
     return { proof: { schemaVersion: 'factory-current-head-gate1-canary-v1', proofScope: 'fresh-current-head-dispatch-phase-only', phase, expectedHeadSha: assertedHeadSha, checkedOutSha: assertedHeadSha, headAssertion: true, dispatch, inputManifest, awaitingCursorReceipt: true, integratedFactoryReadiness: false, limitations: ['Phase A seals the exact head and inputs and awaits the connector-native Cursor receipt.', 'No paid vendor or production writing is performed in phase A.'] }, state: null };
   }
@@ -56,9 +65,10 @@ async function runCurrentHeadGate1Canary({ root, requestFile, selectionFile, qaF
   const pendingFile = env.FACTORY_HANDOFF_FILE || path.join(outputDir, 'current-head-gate1-pending.json');
   if (!fs.existsSync(pendingFile)) throw new Error('Canary resume requires the durable phase-A pending handoff');
   const pending = readJson(pendingFile);
+  validatePendingHandoff(pending, { checkedOutSha: assertedHeadSha, inputManifestDigest: inputManifest.manifestDigest });
   if (pending.schemaVersion !== 'factory-canary-pending-v1' || pending.phase !== 'awaiting-cursor-receipt' || pending.sealedDigest !== digest({ expectedHeadSha: pending.expectedHeadSha, dispatch: pending.dispatch, inputManifest: pending.inputManifest })) throw new Error('Canary pending handoff is stale or tampered');
   if (pending.expectedHeadSha !== assertedHeadSha || pending.inputManifestDigest !== inputManifest.manifestDigest) throw new Error('Canary pending handoff does not bind the current head/input manifest');
-  const expectedEnvelope = { checkedOutSha: assertedHeadSha, inputManifestDigest: inputManifest.manifestDigest, runId: null, prospectId: null, sourceCheckpointDigest: null, sourceManifestDigest: null };
+  const expectedEnvelope = { ...pending.envelope, checkedOutSha: assertedHeadSha, inputManifestDigest: inputManifest.manifestDigest };
   const config = loadConfig(process.cwd());
   const adapters = createProductionAdapters({ root, config, env, cursor: createCloudAgentBundleAdapter(cursorBundle, expectedEnvelope), productionCloudAgent: true });
   const stage1 = await runFactoryCycle({ root, config, adapters, discoveryRequest: request });
@@ -66,20 +76,18 @@ async function runCurrentHeadGate1Canary({ root, requestFile, selectionFile, qaF
   const stage2 = await runFactoryCycle({ root, config, adapters, architectDecision: { selection } });
   if (stage2.nextAction?.code !== 'architect-qa-required') throw new Error(`Fresh canary did not stop at Architect QA: ${stage2.nextAction?.code || 'unknown'}`);
   const selectedRun = stage2.state?.activeRun || stage2.run;
-  expectedEnvelope.runId = selectedRun?.runId || null;
-  expectedEnvelope.prospectId = selectedRun?.prospectId || selectedRun?.candidate?.placeId || null;
-  expectedEnvelope.sourceCheckpointDigest = selectedRun?.artifacts?.sourceCheckpoint ? digest(selectedRun.artifacts.sourceCheckpoint) : null;
-  expectedEnvelope.sourceManifestDigest = selectedRun?.artifacts?.sourceCheckpoint?.sourceManifestDigest || null;
+  const factoryRunId = selectedRun?.runId || null;
+  const factorySourceCheckpointDigest = selectedRun?.artifacts?.sourceCheckpoint ? digest(selectedRun.artifacts.sourceCheckpoint) : null;
   const stage3 = await runFactoryCycle({ root, config, adapters, architectDecision: { qa } });
   if (stage3.nextAction?.code !== 'awaiting-human-gate-1') throw new Error(`Fresh canary did not reach Human Gate 1: ${stage3.nextAction?.code || 'unknown'}`);
   const run = stage3.state?.activeRun || stage3.run;
   if (!run || run.status !== 'awaiting-human-gate-1' || !run.artifacts?.gate1?.markdown) throw new Error('Fresh canary Gate 1 artifact is missing');
-  const finalEnvelope = { ...expectedEnvelope, runId: run.runId, prospectId: run.prospectId || run.candidate?.placeId || null, sourceCheckpointDigest: run.artifacts.sourceCheckpoint ? digest(run.artifacts.sourceCheckpoint) : null, sourceManifestDigest: run.artifacts.sourceCheckpoint?.sourceManifestDigest || null };
+  const finalEnvelope = { ...expectedEnvelope, factoryRunId: run.runId, factorySourceCheckpointDigest: run.artifacts.sourceCheckpoint ? digest(run.artifacts.sourceCheckpoint) : null };
   const boundReceipts = Object.entries(cursorBundle.jobs || {}).map(([jobId, entry]) => {
     const kind = entry.receipt?.operation || entry.result?.kind || 'unknown';
     const receipt = validateJobReceipt({ ...(entry.receipt || {}), provider: 'cursor-cloud-agent', jobId }, { kind, expectedEnvelope });
     for (const field of ['runId', 'prospectId', 'sourceCheckpointDigest', 'sourceManifestDigest']) if (receipt.envelope?.[field] != null && String(receipt.envelope[field]) !== String(finalEnvelope[field])) throw new Error(`Cloud Agent ${kind} final ${field} binding mismatch`);
-    return { jobId, receipt, finalBinding: { runId: finalEnvelope.runId, prospectId: finalEnvelope.prospectId, sourceCheckpointDigest: finalEnvelope.sourceCheckpointDigest, sourceManifestDigest: finalEnvelope.sourceManifestDigest }, boundDigest: digest({ jobId, receipt, finalBinding: { runId: finalEnvelope.runId, prospectId: finalEnvelope.prospectId, sourceCheckpointDigest: finalEnvelope.sourceCheckpointDigest, sourceManifestDigest: finalEnvelope.sourceManifestDigest } }) };
+    return { jobId, receipt, finalBinding: { handoffId: pending.handoffId, jobId: expectedEnvelope.jobId, factoryRunId, factorySourceCheckpointDigest }, boundDigest: digest({ jobId, receipt, finalBinding: { handoffId: pending.handoffId, jobId: expectedEnvelope.jobId, factoryRunId, factorySourceCheckpointDigest } }) };
   });
   const proof = {
     schemaVersion: 'factory-current-head-gate1-canary-v1',
