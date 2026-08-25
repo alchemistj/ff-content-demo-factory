@@ -7,6 +7,7 @@ const { deriveDeterministicSignals } = require('../review-evidence/signals');
 const { buildClassificationArtifact } = require('../review-evidence/classify');
 const { buildPrescriptionEvidence } = require('../review-evidence/prescription');
 const { prescribe: validatePrescription } = require('./prescription');
+const { digest, validateCompleteCanonicalLedger } = require('./prescription-policy');
 const { renderGate1, architectQa } = require('./gate1');
 const { createFileReceiptStore } = require('./receipt-store');
 
@@ -274,14 +275,17 @@ function createProductionAdapters({
       const jobId = `page-prescription:${finalist?.placeId || 'place'}`;
       const record = await cursorAdapter.runResearchRecord({
         kind: 'page-prescription', jobId,
-        input: { finalist: { placeId: finalist?.placeId, name: finalist?.name, website: finalist?.website }, inventory: classification, discoveryPacket, decision },
+        input: { finalist: { placeId: finalist?.placeId, prospectId: finalist?.prospectId, runId: finalist?.runId, name: finalist?.name, website: finalist?.website }, inventory: classification, discoveryPacket, decision },
       });
       const modelResult = record.result;
       const pages = decision.pages || decision.proposedPages || modelResult.pages;
       const services = decision.candidateServices || candidateServicesFrom(modelResult.comparison);
       if (!Array.isArray(pages) || !pages.length) throw new Error('Page prescription requires explicit validated pages');
       if (!Array.isArray(services) || !services.length) throw new Error('Page prescription requires a complete candidate service comparison');
-      const validated = validatePrescription({ finalist, classification, services, proposedPages: pages, architectReview: decision.architectReview || decision });
+      const serviceLedger = decision.serviceCoverageLedger || decision.serviceLedger || modelResult.serviceCoverageLedger;
+      const boundIdentity = { prospectId: finalist?.prospectId || finalist?.placeId, placeId: finalist?.placeId, runId: finalist?.runId || decision.runId };
+      validateCompleteCanonicalLedger(serviceLedger, { services, pages, identity: boundIdentity });
+      const validated = validatePrescription({ finalist, classification, services, proposedPages: pages, architectReview: decision.architectReview || decision, policy: decision.pagePolicy || modelResult.pagePolicy, override: decision.expansionOverride || modelResult.expansionOverride, serviceLedger, runContext: { ...boundIdentity }, sourceBinding: decision.sourceCheckpoint || decision.sourceBinding });
       const evidence = buildPrescriptionEvidence({ classification, pages: validated.pages, candidateServices: services });
       const output = {
         ...validated,
@@ -293,6 +297,7 @@ function createProductionAdapters({
         cursorComparison: modelResult.comparison,
         cursorReceipt: record.receipt,
       };
+      output.prescriptionDigest = digest({ ...output, prescriptionDigest: undefined });
       const receipt = await putReceipt(receipts, `factory:${jobId}`, { provider: 'cursor-sdk', operation: 'page-prescription', status: 'completed', completedAt: clock(), vendorReceipt: record.receipt, result: output });
       return { proposal: output, receipt };
     },

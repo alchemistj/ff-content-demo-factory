@@ -1,4 +1,18 @@
+const { STANDARD_PRESCRIPTION_POLICY, validatePagePolicy, digest } = require('./prescription-policy');
+const { validateRejectedRouteLanguage } = require('./reseal');
+
 function sentenceCount(text) { return String(text || '').split(/[.!?]+/).map((s) => s.trim()).filter(Boolean).length; }
+
+function validatePolicyIntegrity(prescription) {
+  if (!prescription?.pagePolicy || !Array.isArray(prescription.pages) || !Array.isArray(prescription.valueHierarchy)) return false;
+  try {
+    const result = validatePagePolicy({ pages: prescription.pages, services: prescription.valueHierarchy, serviceLedger: prescription.serviceCoverageLedger || null, policy: prescription.pagePolicy, override: prescription.expansionOverride || null, runContext: { prospectId: prescription.prospect?.prospectId || prescription.prospect?.placeId, placeId: prescription.prospect?.placeId, runId: prescription.runId || prescription.prospect?.runId, now: new Date().toISOString() }, sourceBinding: { sourceArtifactDigest: prescription.sourceArtifactDigest, sourceIdentity: prescription.sourceIdentity, serviceLedger: prescription.serviceCoverageLedger || null }, evidenceDigest: prescription.evidenceDigest || null });
+    if (prescription.policyMode !== result.policyMode || Number(prescription.allowedServicePageCount) !== result.allowedServicePageCount) return false;
+    if (prescription.pageSetDigest && prescription.pageSetDigest !== result.pageSetDigest) return false;
+    if (prescription.prescriptionDigest && prescription.prescriptionDigest !== digest({ ...prescription, prescriptionDigest: undefined })) return false;
+    return true;
+  } catch { return false; }
+}
 
 function validateWhyBuilt(whyBuilt, finalist, prescription) {
   if (!whyBuilt || typeof whyBuilt !== 'object' || sentenceCount(whyBuilt.text) < 2 || sentenceCount(whyBuilt.text) > 4 || !Array.isArray(whyBuilt.refs) || whyBuilt.refs.length < 2) return false;
@@ -15,6 +29,7 @@ function validateWhyBuilt(whyBuilt, finalist, prescription) {
 
 function renderGate1({ finalist, prescription, whyBuilt }) {
   if (!validateWhyBuilt(whyBuilt, finalist, prescription)) throw new Error('Why We Built must be 2–4 sentences with resolvable opportunity and evidence refs');
+  validateRejectedRouteLanguage(prescription.pages, 'Gate 1 pages');
   const lines = [`# ${finalist.name}`, '', '## Why We Built This Site', '', whyBuilt.text.trim(), '', '## Page Prescription', '', '| Page | Proposed URL | Primary Keyword | Proposed Title / H1 Direction | Recommended First Review |', '| --- | --- | --- | --- | --- |'];
   for (const page of prescription.pages) {
     const recommendation = page.recommendedFirstReview ? `${page.recommendedFirstReview.reviewer} — ${page.recommendedFirstReview.why}` : '—';
@@ -37,6 +52,7 @@ function architectQa({ finalist, inventory, prescription, whyBuilt, laterStageAr
   const retrievedCount = inventory?.retrievedReviewCount ?? ((inventory?.writtenReviewCount || 0) + (inventory?.emptyTextReviewCount || inventory?.emptyReviewCount || 0));
   const enrichmentSufficient = Boolean(inventory && inventory.exactPlace === true && inventory.discoverySampleOnly !== true && inventory.dateWindow === null && inventory.requestedLimit === 50 && inventory.enrichmentStatus === 'sufficient' && (listingCount < 25 ? retrievedCount >= listingCount : (inventory.writtenReviewCount >= 25 || retrievedCount >= Math.min(50, listingCount))));
   const checks = {
+    pagePolicy: validatePolicyIntegrity(prescription),
     qualified: Boolean(finalist?.architectQualified && finalist?.disposition?.status === 'selected-finalist'),
     exactGbpIdentity: Boolean(finalist?.gbp?.placeId || finalist?.placeId) && Boolean(finalist?.gbp?.name || finalist?.name) && Boolean(finalist?.gbp?.location || finalist?.location),
     truthfulFullEnrichment: enrichmentSufficient,

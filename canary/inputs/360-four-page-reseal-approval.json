@@ -1,0 +1,9 @@
+{
+  "approvedBy": "Josh Lenz",
+  "approvedAt": "2026-08-24",
+  "approvedRoutes": ["/", "/garage-door-repair", "/garage-door-installation", "/contact"],
+  "runId": "32717620900",
+  "sourceSha": "81587f8422a23313fd7868751061eec7e2fb5926",
+  "decision": "standard-four-page-prescription",
+  "reason": "Josh approved standard four-page prescription for this prospect."
+}
