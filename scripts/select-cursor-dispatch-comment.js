@@ -1,0 +1,47 @@
+#!/usr/bin/env node
+'use strict';
+
+const fs = require('node:fs');
+
+function required(value, name) {
+  if (value == null || String(value).trim() === '') throw new Error(`${name} is required`);
+  return String(value);
+}
+
+function markerValue(body, label) {
+  const line = String(body || '').split(/\r?\n/).find((entry) => entry.startsWith(`${label}:`));
+  return line ? line.slice(label.length + 1).trim() : null;
+}
+
+function selectNewestDispatchComment(comments, expected = {}) {
+  const digest = expected.dispatchDigest ? String(expected.dispatchDigest) : null;
+  const key = expected.dispatchKey ? String(expected.dispatchKey) : null;
+  const repository = expected.repository ? String(expected.repository) : null;
+  const prNumber = expected.prNumber == null ? null : String(expected.prNumber);
+  return (comments || []).filter((comment) => {
+    const body = String(comment?.body || '');
+    const url = String(comment?.html_url || '');
+    if (!body.startsWith('@cursor')) return false;
+    if (repository && !new RegExp(`^https://github\\.com/${repository.replace(/[.*+?^${}()|[\\]\\]/g, '\\$&')}/pull/${prNumber}#issuecomment-[0-9]+$`).test(url)) return false;
+    return (!digest || markerValue(body, 'Dispatch packet digest') === digest)
+      && (!key || markerValue(body, 'Dispatch key') === key)
+      && markerValue(body, 'Handoff ID') != null
+      && markerValue(body, 'Phase-A run') != null
+      && markerValue(body, 'Dispatch workflow run') != null;
+  }).sort((a, b) => String(b.created_at || '').localeCompare(String(a.created_at || '')) || Number(b.id) - Number(a.id))[0] || null;
+}
+
+function main(argv = process.argv.slice(2)) {
+  const commentsFile = required(argv[0], 'comments JSON file');
+  const expected = JSON.parse(argv[1] || '{}');
+  const comments = JSON.parse(fs.readFileSync(commentsFile, 'utf8'));
+  const selected = selectNewestDispatchComment(comments, expected);
+  if (!selected) throw new Error('No newest valid context-bound @cursor dispatch comment found');
+  return selected;
+}
+
+if (require.main === module) {
+  try { process.stdout.write(`${JSON.stringify(main())}\n`); } catch (error) { console.error(error.message); process.exitCode = 1; }
+}
+
+module.exports = { selectNewestDispatchComment, markerValue };
