@@ -15,8 +15,9 @@ const {
   retrievePhaseAHandoff,
   claimResumeAtomic,
 } = require('../src/factory/handoff');
-const { runCurrentHeadGate1Canary } = require('../src/run-gate1-canary');
-const { PLACE_ID, verifySealed360Lineage } = require('../src/factory/sealed-evidence');
+const { runCurrentHeadGate1Canary, verifyApprovedLineageRuntimePacket } = require('../src/run-gate1-canary');
+const { PLACE_ID, verifySealed360Lineage, HISTORICAL_360, compareApprovedLineage } = require('../src/factory/sealed-evidence');
+const { main: prepareRuntimePacket } = require('../scripts/prepare-360-gate1-canary-packet');
 const { selectNewestDispatchComment } = require('../scripts/select-cursor-dispatch-comment');
 const { markerFor, markerBody, assertTransition, findClaim } = require('../src/factory/github-ledger');
 const { claimPhaseBAtomic } = require('../src/factory/handoff');
@@ -176,6 +177,31 @@ test('forward correction binds approved historical lineage into phase-A handoff 
     cursorBundleFile: '',
     env: canaryEnv({ FACTORY_PHASE_A_PRODUCTION: 'true' }),
   }), /Needs Josh: production phase A requires a verified approved-lineage runtime packet/);
+});
+
+test('twelfth correction verifies the runtime approved handoff and canonical prescription projection before and after paid work', async () => {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), 'factory-runtime-approved-'));
+  for (const file of ['canary/inputs/360-four-page-reseal-approval.json', 'canary/inputs/360-four-page-reseal-ledger.json', 'canary/inputs/360-garage-door-and-more.discovery.json', 'canary/outputs/360-four-page-reseal-handoff.json']) {
+    const target = path.join(root, file); fs.mkdirSync(path.dirname(target), { recursive: true }); fs.copyFileSync(file, target);
+  }
+  const head = spawnSync('git', ['rev-parse', 'HEAD'], { encoding: 'utf8' }).stdout.trim();
+  const packetFile = path.join(root, 'runtime/approved.json');
+  prepareRuntimePacket({ root, lineageRoot: root, currentHead: head, expectedHeadSha: head, target: packetFile, env: {} });
+  assert.doesNotThrow(() => verifyApprovedLineageRuntimePacket({ root, filename: packetFile, assertedHeadSha: head, dispatch: { repository: 'alchemistj/ff-content-demo-factory', issueNumber: 8, prNumber: 1, branch: 'architect/greenfield-gate1' } }));
+  const productionRequest = path.join(root, 'request.json'); const productionSelection = path.join(root, 'selection.json'); const productionQa = path.join(root, 'qa.json');
+  fs.copyFileSync('canary/inputs/360-gate1-request.json', productionRequest); fs.copyFileSync('canary/inputs/360-gate1-selection.json', productionSelection); fs.copyFileSync('canary/inputs/360-gate1-qa.json', productionQa);
+  const productionPhaseA = await runCurrentHeadGate1Canary({ root, requestFile: productionRequest, selectionFile: productionSelection, qaFile: productionQa, cursorBundleFile: '', env: canaryEnv({ FACTORY_CANARY_PHASE: 'dispatch', FACTORY_CHECKED_OUT_SHA: head, FACTORY_EXPECTED_HEAD_SHA: head, EXPECTED_HEAD_SHA: head, FACTORY_PHASE_A_PRODUCTION: 'true', FACTORY_APPROVED_LINEAGE_PACKET: packetFile }) });
+  assert.equal(productionPhaseA.proof.awaitingCursorReceipt, true);
+  assert.ok(JSON.parse(fs.readFileSync(path.join(root, 'canary/outputs/current-head-gate1-pending.json'), 'utf8')).envelope.approvedLineage);
+  const packet = JSON.parse(fs.readFileSync(packetFile, 'utf8'));
+  const forged = JSON.parse(JSON.stringify(packet)); forged.approvedLineage.strategyDigest = 'sha256:forged'; forged.packetDigest = digest({ ...forged, packetDigest: undefined }); fs.writeFileSync(packetFile, JSON.stringify(forged));
+  assert.throws(() => verifyApprovedLineageRuntimePacket({ root, filename: packetFile, assertedHeadSha: head, dispatch: { repository: 'alchemistj/ff-content-demo-factory', issueNumber: 8, prNumber: 1, branch: 'architect/greenfield-gate1' } }), /strategyDigest|historical lineage/);
+  const historicalHandoff = JSON.parse(fs.readFileSync(path.join(root, 'canary/outputs/360-four-page-reseal-handoff.json'), 'utf8'));
+  const historical = verifySealed360Lineage({ root, handoff: historicalHandoff });
+  const unchanged = { ...historical, pages: historicalHandoff.pages };
+  assert.doesNotThrow(() => compareApprovedLineage(historical, unchanged, 'unchanged checkpoint'));
+  for (const field of ['sourceArtifactDigest', 'evidenceDigest', 'pageSetDigest', 'prescriptionDigest', 'approvalDigest', 'strategyDigest']) assert.throws(() => compareApprovedLineage(historical, { ...unchanged, [field]: 'sha256:forged' }, `mutated ${field}`), new RegExp(field));
+  assert.throws(() => compareApprovedLineage(historical, { ...unchanged, routes: [...historical.routes.slice(0, 3), '/foreign'] }, 'mutated routes'), /services\/routes/);
 });
 
 test('tenth correction recomputes input digests and rejects cross-prospect or tampered payloads', () => {
@@ -459,6 +485,11 @@ test('forward correction workflow events share Issue 8 / PR 1 context and retry 
   assert.match(resumeWorkflow, /FACTORY_ISSUE_NUMBER: \$\{\{ env\.FACTORY_DISPATCH_ISSUE_NUMBER \}\}/);
   assert.match(resumeWorkflow, /FACTORY_PR_NUMBER: \$\{\{ github\.event\.issue\.number \}\}/);
   assert.match(resumeWorkflow, /prior\.status === 'resumed'/);
+  assert.match(resumeWorkflow, /phase_b_claimed/);
+  assert.doesNotMatch(resumeWorkflow, /claimPhaseBAtomic/);
+  assert.match(resumeWorkflow, /FACTORY_STRICT_TERMINAL_BINDING: 'true'/);
+  assert.match(dispatchWorkflow, /phase_a_run_id/);
+  assert.doesNotMatch(dispatchWorkflow, /PR_NUMBER: \$\{\{ inputs\.pr_number \}\}\n\s+PR_NUMBER:/);
   assert.match(handoff, /issues\/\$\{issueNumber\}\|pull\/\$\{prNumber\}/);
   assert.match(sealed, /provider: 'repository-sealed-evidence'/);
   assert.match(sealed, /syntheticReplay: true/);
@@ -479,11 +510,43 @@ test('forward correction executes mocked GitHub event/retry state machine exactl
   assert.equal(findClaim(comments, { ...context, kind: 'dispatch' }).status, 'resumed');
   assert.equal(findClaim(comments, { ...context, kind: 'dispatch', status: 'posted' }).status, 'posted');
   const executionComments = [
-    { id: 1, html_url: 'https://github.com/alchemistj/ff-content-demo-factory/pull/1#issuecomment-1', created_at: '2026-01-01T00:00:00Z', body: '@cursor\nDispatch key: dispatch-1\nDispatch packet digest: sha256:dispatch\nHandoff ID: handoff-1\nPhase-A run: phase-a-1\nDispatch workflow run: 1' },
-    { id: 2, html_url: 'https://github.com/alchemistj/ff-content-demo-factory/pull/1#issuecomment-2', created_at: '2026-01-01T00:01:00Z', body: '@cursor\nDispatch key: dispatch-1\nDispatch packet digest: sha256:dispatch\nHandoff ID: handoff-1\nPhase-A run: phase-a-1\nDispatch workflow run: 2\nmultiline detail' },
+    { id: 1, html_url: 'https://github.com/alchemistj/ff-content-demo-factory/pull/1#issuecomment-1', created_at: '2026-01-01T00:00:00Z', body: '@cursor\nBranch: architect/greenfield-gate1\nReviewed head: head-1\nDispatch key: dispatch-1\nDispatch packet digest: sha256:dispatch\nHandoff ID: handoff-1\nPhase-A run: phase-a-1\nDispatch workflow run: 1' },
+    { id: 2, html_url: 'https://github.com/alchemistj/ff-content-demo-factory/pull/1#issuecomment-2', created_at: '2026-01-01T00:01:00Z', body: '@cursor\nBranch: architect/greenfield-gate1\nReviewed head: head-1\nDispatch key: dispatch-1\nDispatch packet digest: sha256:dispatch\nHandoff ID: handoff-1\nPhase-A run: phase-a-1\nDispatch workflow run: 2\nmultiline detail' },
   ];
   assert.equal(selectNewestDispatchComment(executionComments, { repository: context.repository, prNumber: 1, dispatchKey: context.dispatchKey, dispatchDigest: context.dispatchDigest }).id, 2);
+  executionComments.push({ id: 3, html_url: 'https://github.com/alchemistj/ff-content-demo-factory/pull/1#issuecomment-3', created_at: '2026-01-01T00:02:00Z', body: '@cursor\nBranch: other\nReviewed head: foreign-head\nDispatch key: dispatch-1\nDispatch packet digest: sha256:dispatch\nHandoff ID: handoff-foreign\nPhase-A run: phase-a-foreign\nDispatch workflow run: 3' });
+  assert.equal(selectNewestDispatchComment(executionComments, { repository: context.repository, prNumber: 1, branch: context.branch, reviewedHead: context.checkedOutSha, dispatchKey: context.dispatchKey, dispatchDigest: context.dispatchDigest }).id, 2, 'a current-head selector must skip an unrelated newer dispatch');
   const casFile = path.join(fs.mkdtempSync(path.join(os.tmpdir(), 'factory-phase-b-cas-')), 'phase-b.json');
   assert.doesNotThrow(() => claimPhaseBAtomic(casFile, { handoffId: context.handoffId, resultId: 'terminal-1' }));
   assert.throws(() => claimPhaseBAtomic(casFile, { handoffId: context.handoffId, resultId: 'terminal-1' }), /replay/);
+});
+
+test('twelfth correction runs split dispatch and resume event harness against durable artifact/comment/ledger APIs', () => {
+  const context = { repository: 'alchemistj/ff-content-demo-factory', issueNumber: 8, prNumber: 1, branch: 'architect/greenfield-gate1', checkedOutSha: 'head-12', handoffId: 'handoff-12', dispatchKey: 'dispatch-12', dispatchDigest: 'sha256:dispatch12', runId: 'run-12', prospectId: 'prospect-12', sourceCheckpointDigest: 'sha256:source12', sourceManifestDigest: 'sha256:manifest12', inputManifestDigest: 'sha256:input12', jobId: 'phase-a-12', resultId: 'terminal-12' };
+  const github = { issue8: [], pr1: [], artifacts: new Map([['phase-a-12', { pending: context }]]), nextId: 1, post(target, body) { const id = String(this.nextId++); const comment = { id, html_url: `https://github.com/${context.repository}/${target === 'pr1' ? 'pull/1' : 'issues/8'}#issuecomment-${id}`, created_at: `2026-01-01T00:00:${id.padStart(2, '0')}Z`, user: { login: target === 'pr1' ? 'cursor[bot]' : 'github-actions[bot]' }, body }; this[target].push(comment); return comment; }, comments(target) { return [...this[target]]; } };
+  const ledgerPost = (status, extra = {}, previous = null) => {
+    const marker = markerFor({ kind: 'resume', ...context, ...extra, status });
+    if (previous) assertTransition(previous, marker);
+    github.post('issue8', markerBody(marker));
+    return marker;
+  };
+  // Dispatch workflow: artifact handoff is uploaded, PR execution comment is
+  // posted once, and the Issue 8 ledger records preparing -> posted.
+  assert.equal(github.artifacts.get('phase-a-12').pending.handoffId, context.handoffId);
+  github.post('pr1', `@cursor\nPR: #1\nDispatch key: ${context.dispatchKey}\nDispatch packet digest: ${context.dispatchDigest}\nHandoff ID: ${context.handoffId}\nPhase-A run: phase-a-12\nDispatch workflow run: dispatch-workflow-12`);
+  const preparing = markerFor({ kind: 'dispatch', ...context, status: 'preparing' }); github.post('issue8', markerBody(preparing));
+  const posted = markerFor({ kind: 'dispatch', ...context, status: 'posted', commentId: '1', commentUrl: github.pr1[0].html_url }); assertTransition(preparing, posted); github.post('issue8', markerBody(posted));
+  assert.equal(selectNewestDispatchComment(github.comments('pr1'), { repository: context.repository, prNumber: 1, dispatchKey: context.dispatchKey, dispatchDigest: context.dispatchDigest }).id, '1');
+  // Resume workflow: a cursor terminal event is ingested, then the durable
+  // Issue ledger advances through terminal -> phase_b_claimed -> resumed.
+  const terminal = ledgerPost('in_motion', { kind: 'resume', commentId: '12', commentUrl: 'https://github.com/alchemistj/ff-content-demo-factory/pull/1#issuecomment-12' }, posted);
+  const terminalState = ledgerPost('terminal', { kind: 'resume', commentId: '12', commentUrl: terminal.commentUrl }, terminal);
+  const phaseBClaim = ledgerPost('phase_b_claimed', { kind: 'resume', commentId: '12', commentUrl: terminal.commentUrl }, terminalState);
+  let phaseBExecutions = 0;
+  if (!findClaim(github.comments('issue8'), { ...context, kind: 'resume', status: 'resumed' })) { phaseBExecutions += 1; ledgerPost('resumed', { kind: 'resume', commentId: '12', commentUrl: terminal.commentUrl }, phaseBClaim); }
+  // A retry after runner loss sees the durable resumed marker and does not
+  // execute phase B again; no local CAS file participates in this path.
+  if (!findClaim(github.comments('issue8'), { ...context, kind: 'resume', status: 'resumed' })) phaseBExecutions += 1;
+  assert.equal(phaseBExecutions, 1);
+  assert.equal(findClaim(github.comments('issue8'), { ...context, kind: 'resume' }).status, 'resumed');
 });
