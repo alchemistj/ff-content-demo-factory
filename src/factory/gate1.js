@@ -57,6 +57,7 @@ function renderGate1({ finalist, prescription, whyBuilt, qa = null, sourceCheckp
     lines.push(`- Expected PR head SHA: \`${actionProof.expectedHeadSha || 'missing'}\``);
     lines.push(`- Head assertion: ${actionProof.headAssertion === true ? 'PASS' : 'not proven'}`);
     lines.push(`- Test run: ${actionProof.testRunUrl || 'not recorded'}`);
+    lines.push(`- Action proof result: ${actionProof.testResult || 'not recorded'}`);
   } else lines.push('- Exact-head workflow evidence was not supplied by the invoking Action.');
   lines.push('', '## Evidence & Lineage', '', '| Field | Bound value |', '| --- | --- |');
   lines.push(`| Run ID | ${prescription.runId || 'missing'} |`);
