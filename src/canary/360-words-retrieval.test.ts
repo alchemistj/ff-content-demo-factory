@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import { buildWriter1ValidationReport, collectWriter1ValidationDiagnostics, parseAndValidateFreshWriter1Output, parseAndValidateWriter1Output, validateSealed, writer1Projection, Writer1OutputRecoveryError } from "../../scripts/360-words-canary.js";
+import { WRITER1_WORD_KEYS } from "../../src/pipeline/cursor-writer.js";
 
 const projection = {
   services: [
@@ -117,6 +118,24 @@ test("fresh Writer1 rejects summaries, absent copy, route leakage, and missing p
   assert.doesNotThrow(() => parseAndValidateFreshWriter1Output(JSON.parse(valid), projection));
 });
 
+test("reviewEvidence is a pure typed pointer ledger and rejects every accepted word-bearing alias", () => {
+  for (const key of WRITER1_WORD_KEYS) {
+    const seeded = JSON.parse(valid) as Record<string, any>;
+    seeded.pages[0].reviewEvidence = [{ evidenceId: "review-repair", [key]: "duplicated copy", provenance: { type: "evidence", ref: "review-repair", placement: "pointer", section: "repair-section" } }];
+    assert.throws(() => parseAndValidateWriter1Output(JSON.stringify(seeded), projection), /word-bearing|duplicate|reviewEvidence/u, key);
+  }
+});
+
+test("claims reject sealed review IDs and accept only explicitly typed claim/evidence references", () => {
+  const invalid = JSON.parse(valid) as Record<string, any>;
+  invalid.pages[0].claims = [{ claim: "A bounded claim", provenance: { type: "claim", ref: "review-repair", placement: "claim", section: "repair-section" } }];
+  assert.throws(() => parseAndValidateWriter1Output(JSON.stringify(invalid), projection), /CLAIM_REFERENCE|typed claim|review ID/u);
+  const validProjection = { ...projection, sealedRefs: [...projection.sealedRefs, "evidence-repair"], claimEvidenceRefs: { evidence: ["evidence-repair"] } };
+  const accepted = JSON.parse(valid) as Record<string, any>;
+  accepted.pages[0].claims = [{ claim: "A bounded claim", provenance: { type: "claim", ref: "evidence-repair", placement: "claim", section: "repair-section" } }];
+  assert.doesNotThrow(() => parseAndValidateWriter1Output(JSON.stringify(accepted), validProjection));
+});
+
 test("folded spring-replacement evidence is authorized only on the repair page", () => {
   assert.doesNotThrow(() => parseAndValidateWriter1Output(withSpringReplacementReview(), foldedProjection));
   assert.throws(() => parseAndValidateWriter1Output(withSpringReplacementReview("/garage-door-installation"), foldedProjection), /Spring-replacement|unapproved/u);
@@ -159,6 +178,19 @@ test("real 360 projection preserves folded authority ledgers and only authorizes
   assert.deepEqual(realSpringReview.judgment, { id: springReplacementReviewId, decision: "anchor", authoritative: true, grade: "anchor", directCompletedService: true });
   assert.doesNotThrow(() => parseAndValidateWriter1Output(realWriter1Output(realProjection, realSpringReview), realProjection));
   assert.throws(() => parseAndValidateWriter1Output(realWriter1Output(realProjection, realSpringReview, realSpringReview), realProjection), /Spring-replacement|unapproved/u);
+  assert.doesNotThrow(() => parseAndValidateWriter1Output(realWriter1Output(realProjection, realProjection.services[0].reviewEvidence[0], realInstallationReview), realProjection));
+  assert.throws(() => parseAndValidateWriter1Output(realWriter1Output(realProjection, realInstallationReview, realInstallationReview), realProjection), /unapproved|wrong route/u);
+});
+
+test("a folded entry may authorize direct evidence without supportingEvidence, but never a passed-over home-breadth entry", () => {
+  const directOnly = structuredClone(realProjection) as Record<string, any>;
+  delete directOnly.foldedSupport.find((entry: Record<string, any>) => entry.id === realSpring.id).supportingEvidence;
+  assert.doesNotThrow(() => parseAndValidateWriter1Output(realWriter1Output(directOnly, realSpringReview), directOnly));
+  const passedOver = structuredClone(realProjection) as Record<string, any>;
+  const openerReview = { ...realSpringReview, review: { ...realSpringReview.review, id: "opener-passed-over-review" } };
+  passedOver.sealedRefs.push("opener-passed-over-review");
+  passedOver.foldedSupport.push({ ...realSpring, id: "garage-door-opener-installation", status: "passed-over", canonicalServiceId: "home-breadth", foldedInto: "home-breadth", directEvidenceReviewIds: ["opener-passed-over-review"], reviewEvidence: [openerReview] });
+  assert.throws(() => parseAndValidateWriter1Output(realWriter1Output(passedOver, realProjection.services[0].reviewEvidence[0], openerReview), passedOver), /unapproved|wrong route/u);
 });
 
 test("real folded guards reject status, folded target, parent, ledger, and arbitrary sealed mismatches", () => {

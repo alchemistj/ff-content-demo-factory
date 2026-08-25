@@ -557,13 +557,16 @@ export function writer1CopyProjection(value: unknown): unknown {
 export function writer1CopyProjectionDigest(value: unknown): string { return digestOf(writer1CopyProjection(value)); }
 
 type Writer1DigestDomain = "renderedWords" | "stableIdentity" | "provenanceMetadata";
-const WRITER1_WORD_KEYS = new Set(["primaryKeyword", "title", "seoTitle", "metaDescription", "h1", "body", "heading", "quote", "excerpt", "exactText", "attribution", "reviewer", "author", "claim", "statement", "text"]);
-const WRITER1_IDENTITY_KEYS = new Set(["url", "route", "type", "prescriptionId", "pageId", "serviceId", "canonicalServiceId", "canonicalIntentId", "sourceServiceId", "reviewId", "sourceReviewId", "evidenceId", "refId", "claimId", "stableId", "stableRef", "id"]);
-const WRITER1_PROVENANCE_KEYS = new Set(["type", "ref", "stableRef", "placement", "section", "pointer", "pointerLedger", "placementMetadata", "ledger", "status", "foldedInto", "allowedParentCanonicalId", "directEvidenceReviewIds", "reviewIds", "supportingReviewIds"]);
-const WRITER1_PROVENANCE_OBJECT_KEYS = new Set(["provenance", "pointer", "pointerLedger", "placementMetadata", "ledger"]);
+export const WRITER1_WORD_KEYS = new Set(["primaryKeyword", "title", "seoTitle", "metaDescription", "h1", "body", "heading", "quote", "excerpt", "exactText", "attribution", "reviewer", "author", "claim", "statement", "text"]);
+export const WRITER1_IDENTITY_KEYS = new Set(["url", "route", "type", "prescriptionId", "pageId", "serviceId", "canonicalServiceId", "canonicalIntentId", "sourceServiceId", "reviewId", "sourceReviewId", "evidenceId", "refId", "claimId", "stableId", "stableRef", "id"]);
+export const WRITER1_PROVENANCE_KEYS = new Set(["type", "ref", "stableRef", "placement", "section", "pointer", "pointerLedger", "placementMetadata", "ledger", "status", "foldedInto", "allowedParentCanonicalId", "directEvidenceReviewIds", "reviewIds", "supportingReviewIds"]);
+export const WRITER1_PROVENANCE_OBJECT_KEYS = new Set(["provenance", "pointer", "pointerLedger", "placementMetadata", "ledger"]);
 
 function writer1DigestProjection(value: unknown, domain: Writer1DigestDomain, inProvenance = false): unknown {
-  if (Array.isArray(value)) return value.map((child) => writer1DigestProjection(child, domain, inProvenance));
+  if (Array.isArray(value)) {
+    const projected = value.map((child) => writer1DigestProjection(child, domain, inProvenance));
+    return projected.some((child) => child !== undefined) ? projected : undefined;
+  }
   const record = asRecord(value);
   if (!record) return undefined;
   const projected: Record<string, unknown> = {};
@@ -575,7 +578,12 @@ function writer1DigestProjection(value: unknown, domain: Writer1DigestDomain, in
         ? WRITER1_IDENTITY_KEYS.has(key) && !(inProvenance && (key === "ref" || key === "stableRef" || key === "type"))
         : WRITER1_PROVENANCE_KEYS.has(key) && (inProvenance || WRITER1_PROVENANCE_OBJECT_KEYS.has(key));
     if (selected) {
-      const childProjection = writer1DigestProjection(child, domain, childInProvenance);
+      const childProjection = Array.isArray(child)
+        ? child.map((item) => {
+          const itemProjection = writer1DigestProjection(item, domain, childInProvenance);
+          return itemProjection === undefined && (typeof item === "string" || typeof item === "number" || typeof item === "boolean" || item === null) ? item : itemProjection;
+        })
+        : writer1DigestProjection(child, domain, childInProvenance);
       projected[key] = childProjection === undefined && (typeof child === "string" || typeof child === "number" || typeof child === "boolean" || child === null) ? child : childProjection;
       continue;
     }

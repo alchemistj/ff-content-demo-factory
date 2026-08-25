@@ -2,7 +2,7 @@ import { createHash } from "node:crypto";
 import { existsSync, readFileSync } from "node:fs";
 import * as fs from "node:fs/promises";
 import * as path from "node:path";
-import { createCursorWriterExecutor, createJsonCursorReceiptStore, finalizeCursorWriterArtifactV3, inspectCursorWriterArtifactV3, recoverCursorWriterArtifactV2, recoverCursorWriterArtifactV3, validateCursorArtifactRecoveryV2Receipt, validateCursorArtifactRecoveryV3FinalizeReceipt, validateCursorArtifactRecoveryV3Receipt, validateCursorWriterReceipt, type CursorArtifactRecoveryFailureBinding, type CursorArtifactRecoveryPrior, type CursorArtifactRecoveryV2FailureBinding, type CursorArtifactRecoveryV3FailureBinding, type CursorDispatchNotice, type CursorFollowUpBindings, type CursorWriterReceipt } from "../src/pipeline/cursor-writer.js";
+import { createCursorWriterExecutor, createJsonCursorReceiptStore, finalizeCursorWriterArtifactV3, inspectCursorWriterArtifactV3, recoverCursorWriterArtifactV2, recoverCursorWriterArtifactV3, validateCursorArtifactRecoveryV2Receipt, validateCursorArtifactRecoveryV3FinalizeReceipt, validateCursorArtifactRecoveryV3Receipt, validateCursorWriterReceipt, WRITER1_WORD_KEYS, type CursorArtifactRecoveryFailureBinding, type CursorArtifactRecoveryPrior, type CursorArtifactRecoveryV2FailureBinding, type CursorArtifactRecoveryV3FailureBinding, type CursorDispatchNotice, type CursorFollowUpBindings, type CursorWriterReceipt } from "../src/pipeline/cursor-writer.js";
 import { digestOf } from "../src/contracts/digests.js";
 import { buildWriter1ArtifactRecoveryPrompt, digestWriter1ArtifactRecoveryPrompt } from "./360-words-recovery-prompt.mjs";
 
@@ -179,6 +179,43 @@ function reportRef(value: unknown, sealedRefs: Set<string>): string | undefined 
 function reportValue(value: unknown): string | undefined { return typeof value === "string" && value.length > 0 ? `<redacted-string:${Math.min(value.length, 128)}>` : undefined; }
 function routeBearingKey(key: string): boolean { return /(?:url|path|route|href|destination|nav|navigation|cta|callstoaction|header|footer|links?)/iu.test(key); }
 
+function firstWriter1WordKey(value: unknown): string | undefined {
+  if (Array.isArray(value)) { for (const child of value) { const found = firstWriter1WordKey(child); if (found) return found; } return undefined; }
+  if (!isRecord(value)) return undefined;
+  for (const [key, child] of Object.entries(value)) {
+    if (WRITER1_WORD_KEYS.has(key)) return key;
+    const found = firstWriter1WordKey(child); if (found) return found;
+  }
+  return undefined;
+}
+
+function typedClaimEvidenceRefs(projection: Dict, reviewIds: Set<string>): Map<string, "claim" | "evidence"> {
+  const result = new Map<string, "claim" | "evidence">();
+  const add = (value: unknown, type: "claim" | "evidence"): void => {
+    if (Array.isArray(value)) { value.forEach((child) => add(child, type)); return; }
+    if (stringValue(value) && !reviewIds.has(value)) result.set(value, type);
+  };
+  add(projection.claimEvidenceRefs?.claim, "claim");
+  add(projection.claimEvidenceRefs?.claims, "claim");
+  add(projection.claimEvidenceRefs?.evidence, "evidence");
+  add(projection.claimRefs, "claim");
+  add(projection.evidenceRefs, "evidence");
+  for (const service of projection.services || []) {
+    add(service.page?.id, "evidence");
+    add(service.page?.canonicalIntentId, "evidence");
+    add(service.comparison?.id, "evidence");
+    add(service.comparison?.canonicalIntentId, "evidence");
+    add(service.ledger?.id, "evidence");
+    add(service.ledger?.siteAuditCoverage?.crawlRefs, "evidence");
+    add(service.ledger?.provenance?.siteAuditUrls, "evidence");
+  }
+  for (const entry of projection.foldedSupport || []) {
+    add(entry.id, "evidence");
+    add(entry.canonicalIntentId, "evidence");
+  }
+  return result;
+}
+
 function collectForbiddenReferenceDiagnostics(value: unknown, errors: Writer1ValidationDiagnostic[], path = ""): void {
   if (Array.isArray(value)) { value.forEach((child, index) => { collectForbiddenReferenceDiagnostics(child, errors, `${path}/${index}`); }); return; }
   if (!isRecord(value)) return;
@@ -230,6 +267,10 @@ function collectWriter1Validation(raw: unknown, projection: Dict): { parsed?: Di
     evidenceByRoute.set(service.page.url, [...(evidenceByRoute.get(service.page.url) || []), ...foldedEvidence]);
   }
   const sealedRefs = new Set<string>((projection.sealedRefs || []).filter((ref: unknown): ref is string => stringValue(ref)));
+  const reviewIds = new Set<string>();
+  for (const service of projection.services || []) for (const evidence of service.reviewEvidence || []) if (stringValue(evidence.review?.id ?? evidence.review?.reviewId)) reviewIds.add(String(evidence.review.id ?? evidence.review.reviewId));
+  for (const entry of projection.foldedSupport || []) for (const evidence of entry.reviewEvidence || []) if (stringValue(evidence.review?.id ?? evidence.review?.reviewId)) reviewIds.add(String(evidence.review.id ?? evidence.review.reviewId));
+  const claimEvidenceRefs = typedClaimEvidenceRefs(projection, reviewIds);
   const seen = new Set<string>();
   for (const [pageIndex, pageValue] of parsed.pages.entries()) {
     const pagePath = `/pages/${pageIndex}`;
@@ -285,7 +326,8 @@ function collectWriter1Validation(raw: unknown, projection: Dict): { parsed?: Di
       };
       if (kind === "reviewEvidence") {
         if (provenance.type !== "evidence") add("REVIEW_EVIDENCE_PROVENANCE_TYPE_INVALID", `${placementPath}/provenance/type`, "reviewEvidence is a pointer ledger and requires provenance.type=evidence", { route, objectKind: kind, ref: reportRef(stableRef, sealedRefs) });
-        if ("claim" in placement || "statement" in placement || "body" in placement) add("REVIEW_EVIDENCE_CLAIM_TEXT_DUPLICATE", placementPath, "reviewEvidence must not duplicate claim text; it is a typed evidence pointer", { route, objectKind: kind, ref: reportRef(stableRef, sealedRefs) });
+        const duplicatedWordKey = firstWriter1WordKey(placement);
+        if (duplicatedWordKey) add("REVIEW_EVIDENCE_CLAIM_TEXT_DUPLICATE", `${placementPath}/${duplicatedWordKey}`, "reviewEvidence must not contain any accepted word-bearing key; it is a typed pointer ledger", { route, objectKind: kind, ref: reportRef(stableRef, sealedRefs), presentKeys: reportKeys(placement), presentTypes: { [duplicatedWordKey]: reportType(placement[duplicatedWordKey]) } });
       } else if (kind === "reviewPlacements") {
         if (provenance.type !== "review") add("REVIEW_PLACEMENT_PROVENANCE_TYPE_INVALID", `${placementPath}/provenance/type`, "reviewPlacements requires provenance.type=review", { route, objectKind: kind, ref: reportRef(stableRef, sealedRefs) });
         requireReviewProof(true);
@@ -293,7 +335,8 @@ function collectWriter1Validation(raw: unknown, projection: Dict): { parsed?: Di
         if (provenance.type !== "review") add("QUOTE_PLACEMENT_PROVENANCE_TYPE_INVALID", `${placementPath}/provenance/type`, "quotePlacements requires provenance.type=review", { route, objectKind: kind, ref: reportRef(stableRef, sealedRefs) });
         requireReviewProof(false);
       } else {
-        if (provenance.type !== "claim") add("CLAIM_PROVENANCE_TYPE_INVALID", `${placementPath}/provenance/type`, "claims requires provenance.type=claim", { route, objectKind: kind, ref: reportRef(stableRef, sealedRefs) });
+        if (provenance.type !== "claim" && provenance.type !== "evidence") add("CLAIM_PROVENANCE_TYPE_INVALID", `${placementPath}/provenance/type`, "claims requires provenance.type=claim or evidence", { route, objectKind: kind, ref: reportRef(stableRef, sealedRefs) });
+        if (!stringValue(stableRef) || !claimEvidenceRefs.has(String(stableRef))) add("CLAIM_REFERENCE_INVALID", `${placementPath}/provenance/ref`, "claims provenance.ref must resolve to an explicitly typed claim/evidence reference and may not be a review ID", { route, objectKind: kind, ref: reportRef(stableRef, sealedRefs), presentTypes: { provenance: reportType(provenance.type), ref: reportType(stableRef) } });
         if (!stringValue(placement.claim ?? placement.statement ?? placement.text ?? placement.body)) add("CLAIM_TEXT_MISSING", placementPath, "claim placement requires non-empty claim, statement, text, or body", { route, objectKind: kind, ref: reportRef(stableRef, sealedRefs), placement: reportValue(provenance.placement), section: reportValue(provenance.section) });
       }
     }

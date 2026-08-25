@@ -23,6 +23,10 @@ import {
   writer1RenderedWordsDigest,
   writer1StableIdentityDigest,
   writer1ProvenanceMetadataDigest,
+  WRITER1_WORD_KEYS,
+  WRITER1_IDENTITY_KEYS,
+  WRITER1_PROVENANCE_KEYS,
+  WRITER1_PROVENANCE_OBJECT_KEYS,
   validateCursorWriterFollowUpReceipt,
   type CursorArtifactRecoveryInput,
   type CursorArtifactClient,
@@ -248,6 +252,36 @@ function validateV3Output(raw: string): Record<string, any> {
 test("final receipt digests separate rendered words, stable identity, and provenance metadata", () => {
   const base = v3Output(true);
   const baseline = writer1OutputDigests(base);
+  const mutateAcceptedKey = (value: any, key: string, domain: "word" | "identity" | "provenance"): void => {
+    if (domain === "word") { value.pages[0].claims[0][key] = `changed-${key}`; return; }
+    if (domain === "identity") { value.pages[0][key] = `changed-${key}`; return; }
+    if (WRITER1_PROVENANCE_OBJECT_KEYS.has(key)) {
+      value.pages[0].reviewEvidence[0][key] = { placement: `changed-${key}`, [key === "pointerLedger" ? "reviewIds" : "metadata"]: ["changed"] };
+    } else {
+      value.pages[0].reviewPlacements[0].provenance[key] = WRITER1_PROVENANCE_KEYS.has(key) && ["directEvidenceReviewIds", "reviewIds", "supportingReviewIds"].includes(key) ? ["changed"] : `changed-${key}`;
+    }
+  };
+  for (const key of WRITER1_WORD_KEYS) {
+    const value = structuredClone(base); mutateAcceptedKey(value, key, "word");
+    const next = writer1OutputDigests(value);
+    assert.notEqual(next.renderedWordsDigest, baseline.renderedWordsDigest, `word key ${key} escaped renderedWordsDigest`);
+    assert.equal(next.stableIdentityDigest, baseline.stableIdentityDigest, `word key ${key} changed stableIdentityDigest`);
+    assert.equal(next.provenanceMetadataDigest, baseline.provenanceMetadataDigest, `word key ${key} changed provenanceMetadataDigest`);
+  }
+  for (const key of WRITER1_IDENTITY_KEYS) {
+    const value = structuredClone(base); mutateAcceptedKey(value, key, "identity");
+    const next = writer1OutputDigests(value);
+    assert.equal(next.renderedWordsDigest, baseline.renderedWordsDigest, `identity key ${key} changed renderedWordsDigest`);
+    assert.notEqual(next.stableIdentityDigest, baseline.stableIdentityDigest, `identity key ${key} escaped stableIdentityDigest`);
+    assert.equal(next.provenanceMetadataDigest, baseline.provenanceMetadataDigest, `identity key ${key} changed provenanceMetadataDigest`);
+  }
+  for (const key of WRITER1_PROVENANCE_KEYS) {
+    const value = structuredClone(base); mutateAcceptedKey(value, key, "provenance");
+    const next = writer1OutputDigests(value);
+    assert.equal(next.renderedWordsDigest, baseline.renderedWordsDigest, `provenance key ${key} changed renderedWordsDigest`);
+    assert.equal(next.stableIdentityDigest, baseline.stableIdentityDigest, `provenance key ${key} changed stableIdentityDigest`);
+    assert.notEqual(next.provenanceMetadataDigest, baseline.provenanceMetadataDigest, `provenance key ${key} escaped provenanceMetadataDigest`);
+  }
   const wordMutations: Array<(value: any) => void> = [
     (value) => { value.pages[0].primaryKeyword = "changed"; },
     (value) => { value.pages[0].title = "changed"; },
