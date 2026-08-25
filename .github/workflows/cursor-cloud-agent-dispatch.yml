@@ -1,0 +1,78 @@
+name: GitHub-native Cursor Cloud Agent dispatch
+
+on:
+  workflow_dispatch:
+    inputs:
+      issue_number:
+        description: 'Authoritative Content Demo Factory Issue'
+        required: true
+        type: string
+      pr_number:
+        description: 'Existing same-lineage PR'
+        required: true
+        type: string
+      branch:
+        description: 'Existing same-lineage branch'
+        required: true
+        type: string
+      reviewed_head_sha:
+        description: 'Reviewed starting head SHA'
+        required: true
+        type: string
+      scope:
+        description: 'Research or implementation scope for Cursor'
+        required: true
+        type: string
+
+permissions:
+  contents: read
+  issues: write
+  pull-requests: read
+
+jobs:
+  dispatch:
+    if: github.actor == github.repository_owner
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout reviewed head
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: ${{ inputs.reviewed_head_sha }}
+          fetch-depth: 1
+          persist-credentials: false
+      - name: Verify same-lineage PR target
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_NUMBER: ${{ inputs.pr_number }}
+          BRANCH: ${{ inputs.branch }}
+          REVIEWED_HEAD_SHA: ${{ inputs.reviewed_head_sha }}
+        run: |
+          test "$REVIEWED_HEAD_SHA" = "$(git rev-parse HEAD)"
+          test "$(gh pr view "$PR_NUMBER" --repo "$GITHUB_REPOSITORY" --json headRefName --jq .headRefName)" = "$BRANCH"
+          test "$(gh pr view "$PR_NUMBER" --repo "$GITHUB_REPOSITORY" --json headRefOid --jq .headRefOid)" = "$REVIEWED_HEAD_SHA"
+      - name: Generate durable @cursor dispatch packet
+        env:
+          FACTORY_ISSUE_NUMBER: ${{ inputs.issue_number }}
+          FACTORY_PR_NUMBER: ${{ inputs.pr_number }}
+          FACTORY_BRANCH: ${{ inputs.branch }}
+          FACTORY_REVIEWED_HEAD_SHA: ${{ inputs.reviewed_head_sha }}
+          FACTORY_DISPATCH_SCOPE: ${{ inputs.scope }}
+          FACTORY_DISPATCH_OUTPUT: canary/outputs/cursor-dispatch.json
+        run: node src/dispatch-cursor-cloud-agent.js
+      - name: Post and record immutable connector-native @cursor dispatch
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE_NUMBER: ${{ inputs.issue_number }}
+          COMMENT_FILE: canary/outputs/cursor-dispatch.comment.md
+          DISPATCH_FILE: canary/outputs/cursor-dispatch.json
+        run: |
+          comment_url="$(gh api "repos/$GITHUB_REPOSITORY/issues/$ISSUE_NUMBER/comments" --method POST -f body="$(cat "$COMMENT_FILE")" --jq .html_url)"
+          COMMENT_URL="$comment_url" DISPATCH_FILE="$DISPATCH_FILE" node -e "const fs=require('node:fs');const p=JSON.parse(fs.readFileSync(process.env.DISPATCH_FILE,'utf8'));p.dispatch.commentUrl=process.env.COMMENT_URL;fs.writeFileSync(process.env.DISPATCH_FILE,JSON.stringify(p,null,2)+'\\n')"
+      - name: Upload dispatch packet receipt
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: cursor-cloud-agent-dispatch-${{ github.run_id }}
+          path: canary/outputs/cursor-dispatch.*
+          if-no-files-found: error
+          retention-days: 30
