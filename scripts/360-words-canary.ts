@@ -2,7 +2,7 @@ import { createHash } from "node:crypto";
 import { existsSync, readFileSync } from "node:fs";
 import * as fs from "node:fs/promises";
 import * as path from "node:path";
-import { createCursorWriterExecutor, createJsonCursorReceiptStore, finalizeCursorWriterArtifactV3, inspectCursorWriterArtifactV3, recoverCursorWriterArtifactV2, recoverCursorWriterArtifactV3, validateCursorArtifactRecoveryV2Receipt, validateCursorArtifactRecoveryV3FinalizeReceipt, validateCursorArtifactRecoveryV3Receipt, validateCursorWriterReceipt, WRITER1_WORD_KEYS, type CursorArtifactBinding, type CursorArtifactRecoveryFailureBinding, type CursorArtifactRecoveryPrior, type CursorArtifactRecoveryV2FailureBinding, type CursorArtifactRecoveryV3FailureBinding, type CursorDispatchNotice, type CursorFollowUpBindings, type CursorWriterReceipt } from "../src/pipeline/cursor-writer.js";
+import { buildWriter1PointerLedgerNormalization, createCursorWriterExecutor, createJsonCursorReceiptStore, finalizeCursorWriterArtifactV3, inspectCursorWriterArtifactV3, normalizeWriter1PointerLedger, recoverCursorWriterArtifactV2, recoverCursorWriterArtifactV3, validateCursorArtifactRecoveryV2Receipt, validateCursorArtifactRecoveryV3FinalizeReceipt, validateCursorArtifactRecoveryV3Receipt, validateCursorWriterReceipt, WRITER1_WORD_KEYS, type CursorArtifactBinding, type CursorArtifactRecoveryFailureBinding, type CursorArtifactRecoveryPrior, type CursorArtifactRecoveryV2FailureBinding, type CursorArtifactRecoveryV3FailureBinding, type CursorDispatchNotice, type CursorFollowUpBindings, type CursorWriterReceipt } from "../src/pipeline/cursor-writer.js";
 import { digestOf } from "../src/contracts/digests.js";
 import { buildWriter1ArtifactRecoveryPrompt, digestWriter1ArtifactRecoveryPrompt } from "./360-words-recovery-prompt.mjs";
 
@@ -694,7 +694,10 @@ export function readApprovedWriter1OutputForWriter2(root = process.cwd()): Dict 
   const state = readJson(root, "canary/runtime/state.json");
   if (state.status !== "writer1-approved-for-writer2" || state.writer2Blocked !== false) throw new Error("Writer2 cannot consume Writer1 output before independent approval");
   const quarantineMetadata = jsonFile(root, "canary/runtime/quarantine/writer1-output.metadata.json");
-  if (existsSync(quarantineMetadata)) throw new Error("Writer2 cannot consume a quarantined Writer1 artifact");
+  if (existsSync(quarantineMetadata)) {
+    const metadata = readJson(root, "canary/runtime/quarantine/writer1-output.metadata.json");
+    if (metadata.status !== "superseded-by-approved-normalization") throw new Error("Writer2 cannot consume a quarantined Writer1 artifact");
+  }
   const outputPath = jsonFile(root, "canary/outputs/writer1-output.json");
   if (!existsSync(outputPath)) throw new Error("approved Writer1 output is missing");
   return JSON.parse(readFileSync(outputPath, "utf8")) as Dict;
@@ -765,7 +768,18 @@ async function runArtifactRecoveryV3Finalize(root: string, control: Dict): Promi
   if (inspection.stale) errors.push({ code: "ARTIFACT_STALE", path: "/artifact", objectKind: "artifact", expectedRule: "current Cursor artifact must differ from the pinned pre-repair artifact by digest or update time" });
   if (inspection.artifact.byteDigest !== ARTIFACT_RECOVERY_V3_FINALIZE_CURRENT_ARTIFACT_DIGEST) errors.push({ code: "ARTIFACT_DIGEST_UNEXPECTED", path: "/artifact/byteDigest", objectKind: "artifact", expectedRule: "artifact byte digest must equal the pinned current Cursor artifact digest" });
   if (inspection.artifact.updatedAt !== ARTIFACT_RECOVERY_V3_FINALIZE_CURRENT_ARTIFACT_UPDATED_AT) errors.push({ code: "ARTIFACT_UPDATED_AT_UNEXPECTED", path: "/artifact/updatedAt", objectKind: "artifact", expectedRule: "artifact updatedAt must equal the pinned current Cursor artifact update time" });
-  errors.push(...collectWriter1ValidationDiagnostics(inspection.raw, payload));
+  if (inspection.parsed !== undefined) {
+    try {
+      const normalized = normalizeWriter1PointerLedger(inspection.parsed);
+      buildWriter1PointerLedgerNormalization({ raw: inspection.parsed, normalized: normalized.output, removed: normalized.removed, artifact: inspection.artifact, prior: verified.prior });
+      errors.push(...collectWriter1ValidationDiagnostics(normalized.output, payload));
+      if (errors.length === 0) parseAndValidateWriter1Output(normalized.output, payload);
+    } catch (error) {
+      errors.push({ code: "POINTER_LEDGER_NORMALIZATION_FAILED", path: "/pages/*/reviewEvidence", objectKind: "reviewEvidence", expectedRule: error instanceof Error ? error.message : "pointer-ledger normalization must preserve semantic copy, identity, and provenance" });
+    }
+  } else {
+    errors.push(...collectWriter1ValidationDiagnostics(inspection.raw, payload));
+  }
   if (errors.length > 0) {
     const report = buildWriter1ValidationReport({
       artifactPath: inspection.artifact.path,
@@ -788,13 +802,15 @@ async function runArtifactRecoveryV3Finalize(root: string, control: Dict): Promi
     (failure as Error & { code?: string }).code = "WRITER1_OUTPUT_INVALID";
     throw failure;
   }
-  const result = await finalizeCursorWriterArtifactV3({ receiptStore: createJsonCursorReceiptStore(jsonFile(root, "canary/runtime/cursor-receipts.json")), prior: verified.prior, previousRecoveryV3, recoveryVersion: ARTIFACT_RECOVERY_V3_FINALIZE_RECOVERY_VERSION, promptDigest, expectedCurrentArtifactByteDigest: ARTIFACT_RECOVERY_V3_FINALIZE_CURRENT_ARTIFACT_DIGEST, expectedCurrentArtifactUpdatedAt: ARTIFACT_RECOVERY_V3_FINALIZE_CURRENT_ARTIFACT_UPDATED_AT, validateOutput: (output) => parseAndValidateWriter1Output(output, payload) });
+  const result = await finalizeCursorWriterArtifactV3({ receiptStore: createJsonCursorReceiptStore(jsonFile(root, "canary/runtime/cursor-receipts.json")), prior: verified.prior, previousRecoveryV3, recoveryVersion: ARTIFACT_RECOVERY_V3_FINALIZE_RECOVERY_VERSION, promptDigest, expectedCurrentArtifactByteDigest: ARTIFACT_RECOVERY_V3_FINALIZE_CURRENT_ARTIFACT_DIGEST, expectedCurrentArtifactUpdatedAt: ARTIFACT_RECOVERY_V3_FINALIZE_CURRENT_ARTIFACT_UPDATED_AT, normalizePointerLedger: true, validateOutput: (output) => parseAndValidateWriter1Output(output, payload) });
   const parsed = result.output as Dict;
   validateCursorArtifactRecoveryV3FinalizeReceipt(result.receipt, verified.prior, previousRecoveryV3, promptDigest, process.env.CURSOR_API_KEY, ARTIFACT_RECOVERY_V3_FINALIZE_CURRENT_ARTIFACT_DIGEST, ARTIFACT_RECOVERY_V3_FINALIZE_CURRENT_ARTIFACT_UPDATED_AT);
   await writeJson(jsonFile(root, "canary/runtime/writer1-recovery-receipt.json"), result.receipt);
-  await writeJson(jsonFile(root, "canary/runtime/writer1-validation.json"), { status: "valid", mode: "validation-only", schemaVersion: parsed.schemaVersion, routes: parsed.pages.map((page: Dict) => page.url), outputDigest: result.receipt.outputDigest, beforeArtifactDigest: result.receipt.beforeArtifact.sha256, afterArtifactDigest: result.receipt.afterArtifact.sha256, renderedWordsDigest: result.receipt.renderedWordsDigest, stableIdentityDigest: result.receipt.stableIdentityDigest, provenanceMetadataDigest: result.receipt.provenanceMetadataDigest, crossV3CopyPreservation: result.receipt.crossV3CopyPreservation, recoveryRunId: result.receipt.recoveryRunId, agentId: result.receipt.agentId, threadUrl: result.threadUrl, nextStage: null, writer2Blocked: true, messagesSent: 0 });
+  await writeJson(jsonFile(root, "canary/runtime/writer1-validation.json"), { status: "valid", mode: "validation-only", schemaVersion: parsed.schemaVersion, routes: parsed.pages.map((page: Dict) => page.url), outputDigest: result.receipt.outputDigest, beforeArtifactDigest: result.receipt.beforeArtifact.sha256, afterArtifactDigest: result.receipt.afterArtifact.sha256, renderedWordsDigest: result.receipt.renderedWordsDigest, stableIdentityDigest: result.receipt.stableIdentityDigest, provenanceMetadataDigest: result.receipt.provenanceMetadataDigest, crossV3CopyPreservation: result.receipt.crossV3CopyPreservation, pointerLedgerNormalization: result.receipt.pointerLedgerNormalization, recoveryRunId: result.receipt.recoveryRunId, agentId: result.receipt.agentId, threadUrl: result.threadUrl, nextStage: null, writer2Blocked: true, messagesSent: 0 });
   await writeJson(jsonFile(root, "canary/outputs/writer1-output.json"), parsed);
-  await writeJson(jsonFile(root, "canary/runtime/state.json"), { status: "awaiting-architect-qa", stage: "writer1", recoveryVersion: ARTIFACT_RECOVERY_V3_FINALIZE_RECOVERY_VERSION, runId: sealed.handoff.runId, sealedHandoffDigest: sealed.handoff.resealDigest, threadUrl: result.threadUrl, agentId: result.receipt.agentId, recoveryRunId: result.receipt.recoveryRunId, receipt: result.receipt, beforeArtifactDigest: result.receipt.beforeArtifact.sha256, afterArtifactDigest: result.receipt.afterArtifact.sha256, renderedWordsDigest: result.receipt.renderedWordsDigest, stableIdentityDigest: result.receipt.stableIdentityDigest, provenanceMetadataDigest: result.receipt.provenanceMetadataDigest, crossV3CopyPreservation: result.receipt.crossV3CopyPreservation, nextStage: null, writer2Blocked: true, messagesSent: 0 });
+  const quarantineMetadataPath = jsonFile(root, "canary/runtime/quarantine/writer1-output.metadata.json");
+  if (existsSync(quarantineMetadataPath)) await writeJson(quarantineMetadataPath, { ...readJson(root, "canary/runtime/quarantine/writer1-output.metadata.json"), status: "superseded-by-approved-normalization", consumable: false, approved: false, completionAuthorized: false, writer2Blocked: true, supersededByApprovedOutputPath: "canary/outputs/writer1-output.json", supersededByReceiptPath: "canary/runtime/writer1-recovery-receipt.json" });
+  await writeJson(jsonFile(root, "canary/runtime/state.json"), { status: "awaiting-architect-qa", stage: "writer1", recoveryVersion: ARTIFACT_RECOVERY_V3_FINALIZE_RECOVERY_VERSION, runId: sealed.handoff.runId, sealedHandoffDigest: sealed.handoff.resealDigest, threadUrl: result.threadUrl, agentId: result.receipt.agentId, recoveryRunId: result.receipt.recoveryRunId, receipt: result.receipt, beforeArtifactDigest: result.receipt.beforeArtifact.sha256, afterArtifactDigest: result.receipt.afterArtifact.sha256, renderedWordsDigest: result.receipt.renderedWordsDigest, stableIdentityDigest: result.receipt.stableIdentityDigest, provenanceMetadataDigest: result.receipt.provenanceMetadataDigest, crossV3CopyPreservation: result.receipt.crossV3CopyPreservation, pointerLedgerNormalization: result.receipt.pointerLedgerNormalization, nextStage: null, writer2Blocked: true, messagesSent: 0 });
   return { status: "awaiting-architect-qa", stage: "writer1", threadUrl: result.threadUrl, recoveryRunId: result.receipt.recoveryRunId };
 }
 

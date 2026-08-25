@@ -409,7 +409,17 @@ test("v3-finalize validates the existing artifact with zero Cursor messages", as
   assert.equal(result.receipt.recoveryRunId, prior.runId);
   assert.equal(result.receipt.mode, "validation-only-artifact-recovery");
   assert.equal((result.receipt as any).crossV3CopyPreservation, "not-asserted");
+  const normalization = (result.receipt as any).pointerLedgerNormalization;
+  assert.equal(normalization.normalizationVersion, "words-writer1-pointer-ledger-normalization/v1");
+  assert.equal(normalization.removed.length, 2);
+  assert.deepEqual(normalization.authorship, { renderableWords: OFFICIAL_CURSOR_MODEL, structuralPointerNormalization: "factory" });
+  assert.equal(normalization.rawSemanticRenderedCopyDigest, normalization.normalizedSemanticRenderedCopyDigest);
+  assert.equal(normalization.rawStableIdentityDigest, normalization.normalizedStableIdentityDigest);
+  assert.equal(normalization.rawProvenanceMetadataDigest, normalization.normalizedProvenanceMetadataDigest);
   validateCursorArtifactRecoveryV3FinalizeReceipt(result.receipt, prior, previousRecoveryV3, digestWriter1ArtifactRecoveryPrompt("v3"), env.CURSOR_API_KEY, expectedCurrentArtifact.byteDigest, expectedCurrentArtifact.updatedAt);
+  const forged = structuredClone(result.receipt) as any;
+  forged.pointerLedgerNormalization.removed[0].valueDigest = "sha256:" + "0".repeat(64);
+  assert.throws(() => validateCursorArtifactRecoveryV3FinalizeReceipt(forged, prior, previousRecoveryV3, digestWriter1ArtifactRecoveryPrompt("v3"), env.CURSOR_API_KEY, expectedCurrentArtifact.byteDigest, expectedCurrentArtifact.updatedAt), /MAC|integrity|mismatch/u);
 });
 
 test("v3-finalize fails closed on stale or changed copy and cannot message", async () => {

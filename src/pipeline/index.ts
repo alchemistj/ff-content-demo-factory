@@ -23,6 +23,11 @@ export {
   writer1StableIdentityDigest,
   writer1ProvenanceMetadataDigest,
   writer1OutputDigests,
+  writer1SemanticRenderedCopyProjection,
+  writer1SemanticRenderedCopyDigest,
+  normalizeWriter1PointerLedger,
+  buildWriter1PointerLedgerNormalization,
+  WRITER1_POINTER_LEDGER_NORMALIZATION_VERSION,
   WRITER1_WORD_KEYS,
   WRITER1_IDENTITY_KEYS,
   WRITER1_PROVENANCE_KEYS,
@@ -48,4 +53,6 @@ export type {
   CursorArtifactRecoveryV3FailureBinding,
   CursorArtifactRecoveryV3FinalizeInput,
   CursorArtifactRecoveryV3FinalizeReceipt,
+  Writer1PointerLedgerRemoval,
+  Writer1PointerLedgerNormalization,
 } from './cursor-writer.js';

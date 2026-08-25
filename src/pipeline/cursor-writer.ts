@@ -169,6 +169,19 @@ function validateValidationOnlyCursorReceipt(receipt: unknown, prior: CursorArti
   if (value.apiVersion !== API_VERSION || value.attestationSource !== "official-response" || typeof value.completedAt !== "string" || Number.isNaN(Date.parse(value.completedAt)) || new Date(value.completedAt).toISOString() !== value.completedAt || digestOf(value.output) !== value.outputDigest) throw new CursorWriterExecutionError("CURSOR_RECEIPT_INVALID", "Validation-only Cursor receipt attestation or output binding is invalid");
   validateReceiptIntegrityMac(value, cursorApiKey);
 }
+function validatePointerLedgerNormalization(normalization: unknown, output: unknown, artifact: CursorArtifactBinding, prior: CursorArtifactRecoveryPrior): asserts normalization is Writer1PointerLedgerNormalization {
+  const value = asRecord(normalization);
+  const authorship = value ? asRecord(value.authorship) : null;
+  if (!value || !authorship || value.normalizationVersion !== WRITER1_POINTER_LEDGER_NORMALIZATION_VERSION || authorship.renderableWords !== OFFICIAL_CURSOR_MODEL || authorship.structuralPointerNormalization !== "factory" || value.agentId !== prior.agentId || value.runId !== prior.runId || value.threadUrl !== prior.threadUrl || value.requestedModel !== REQUIRED_CURSOR_MODEL || value.resolvedModel !== OFFICIAL_CURSOR_MODEL || value.effort !== "high" || value.fast !== false) throw new CursorWriterExecutionError("CURSOR_POINTER_LEDGER_NORMALIZATION_INVALID", "Pointer-ledger normalization authorship or version binding is invalid");
+  const rawArtifact = asRecord(value.rawArtifact);
+  if (!rawArtifact || rawArtifact.byteDigest !== artifact.byteDigest || rawArtifact.size !== artifact.size || (rawArtifact.updatedAt || undefined) !== (artifact.updatedAt || undefined)) throw new CursorWriterExecutionError("CURSOR_POINTER_LEDGER_NORMALIZATION_INVALID", "Pointer-ledger normalization is not bound to the current Cursor artifact");
+  for (const field of ["rawOutputDigest", "normalizedOutputDigest", "rawSemanticRenderedCopyDigest", "normalizedSemanticRenderedCopyDigest", "rawRenderedWordsDigest", "normalizedRenderedWordsDigest", "rawStableIdentityDigest", "normalizedStableIdentityDigest", "rawProvenanceMetadataDigest", "normalizedProvenanceMetadataDigest"] as const) assertDigest(value[field], `pointerLedgerNormalization.${field}`);
+  if (value.normalizedOutputDigest !== digestOf(output) || value.rawSemanticRenderedCopyDigest !== value.normalizedSemanticRenderedCopyDigest || value.rawStableIdentityDigest !== value.normalizedStableIdentityDigest || value.rawProvenanceMetadataDigest !== value.normalizedProvenanceMetadataDigest) throw new CursorWriterExecutionError("CURSOR_POINTER_LEDGER_NORMALIZATION_PRESERVATION_FAILED", "Pointer-ledger normalization semantic preservation proof is invalid");
+  const finalDigests = asRecord(value.finalDigests);
+  const outputDigests = writer1OutputDigests(output);
+  if (!finalDigests || finalDigests.renderedWordsDigest !== outputDigests.renderedWordsDigest || finalDigests.stableIdentityDigest !== outputDigests.stableIdentityDigest || finalDigests.provenanceMetadataDigest !== outputDigests.provenanceMetadataDigest || value.normalizedRenderedWordsDigest !== outputDigests.renderedWordsDigest || value.normalizedStableIdentityDigest !== outputDigests.stableIdentityDigest || value.normalizedProvenanceMetadataDigest !== outputDigests.provenanceMetadataDigest) throw new CursorWriterExecutionError("CURSOR_POINTER_LEDGER_NORMALIZATION_DIGEST_INVALID", "Pointer-ledger normalization final digests are not recomputable");
+  if (!Array.isArray(value.removed) || value.removed.some((entry) => { const item = asRecord(entry); return !item || typeof item.path !== "string" || !/^\/pages\/\d+\/reviewEvidence\/\d+\/(?:primaryKeyword|title|seoTitle|metaDescription|h1|body|heading|quote|excerpt|exactText|attribution|reviewer|author|claim|statement|text)$/u.test(item.path) || typeof item.key !== "string" || item.path.slice(item.path.lastIndexOf("/") + 1) !== item.key || typeof item.valueDigest !== "string" || !DIGEST.test(item.valueDigest) || Object.keys(item).some((key) => !["path", "key", "valueDigest"].includes(key)); })) throw new CursorWriterExecutionError("CURSOR_POINTER_LEDGER_NORMALIZATION_REMOVAL_INVALID", "Pointer-ledger normalization removal record is invalid or leaks duplicated prose");
+}
 function validatePendingReceipt(receipt: unknown): asserts receipt is CursorWriterPendingReceipt {
   const value = asRecord(receipt); if (!value) throw new CursorWriterExecutionError("CURSOR_RECEIPT_INVALID", "Pending Cursor receipt is invalid");
   validateCursorWriterRuntime({ provider: value.provider, requestedModel: value.requestedModel, resolvedModel: value.resolvedModel, fast: value.fast });
@@ -275,6 +288,35 @@ export interface CursorArtifactRecoveryV3FailureBinding {
   agentId: string; runId: string; threadUrl: string; promptDigest: string; failureCode: "WRITER1_OUTPUT_INVALID"; inputDigest: string;
   beforeArtifact: CursorArtifactBinding; copyProjectionDigest: string;
 }
+export interface Writer1PointerLedgerRemoval {
+  path: string;
+  key: string;
+  valueDigest: string;
+}
+export interface Writer1PointerLedgerNormalization {
+  normalizationVersion: "words-writer1-pointer-ledger-normalization/v1";
+  authorship: { renderableWords: typeof OFFICIAL_CURSOR_MODEL; structuralPointerNormalization: "factory" };
+  rawArtifact: { byteDigest: string; size: number; updatedAt?: string };
+  agentId: string;
+  runId: string;
+  threadUrl: string;
+  requestedModel: typeof REQUIRED_CURSOR_MODEL;
+  resolvedModel: typeof OFFICIAL_CURSOR_MODEL;
+  effort: "high";
+  fast: false;
+  removed: Writer1PointerLedgerRemoval[];
+  rawOutputDigest: string;
+  normalizedOutputDigest: string;
+  rawSemanticRenderedCopyDigest: string;
+  normalizedSemanticRenderedCopyDigest: string;
+  rawRenderedWordsDigest: string;
+  normalizedRenderedWordsDigest: string;
+  rawStableIdentityDigest: string;
+  normalizedStableIdentityDigest: string;
+  rawProvenanceMetadataDigest: string;
+  normalizedProvenanceMetadataDigest: string;
+  finalDigests: { renderedWordsDigest: string; stableIdentityDigest: string; provenanceMetadataDigest: string };
+}
 export interface CursorArtifactRecoveryV3FinalizeReceipt extends CursorArtifactRecoveryReceipt {
   mode: "validation-only-artifact-recovery";
   recoveryVersion: "words-writer1-artifact-recovery/v3-finalize";
@@ -285,6 +327,7 @@ export interface CursorArtifactRecoveryV3FinalizeReceipt extends CursorArtifactR
   stableIdentityDigest: string;
   provenanceMetadataDigest: string;
   crossV3CopyPreservation: "not-asserted";
+  pointerLedgerNormalization?: Writer1PointerLedgerNormalization;
 }
 export interface CursorArtifactDescriptor { path: string; size: number; sha256?: string; updatedAt?: string; }
 export interface CursorArtifactClient {
@@ -602,10 +645,91 @@ export function writer1ProvenanceMetadataDigest(value: unknown): string { return
 export function writer1OutputDigests(value: unknown): { renderedWordsDigest: string; stableIdentityDigest: string; provenanceMetadataDigest: string } {
   return { renderedWordsDigest: writer1RenderedWordsDigest(value), stableIdentityDigest: writer1StableIdentityDigest(value), provenanceMetadataDigest: writer1ProvenanceMetadataDigest(value) };
 }
+export const WRITER1_POINTER_LEDGER_NORMALIZATION_VERSION = "words-writer1-pointer-ledger-normalization/v1" as const;
+const WRITER1_REVIEW_EVIDENCE_FORBIDDEN_KEYS = new Set(["primaryKeyword", "title", "seoTitle", "metaDescription", "h1", "body", "heading", "quote", "excerpt", "exactText", "attribution", "reviewer", "author", "claim", "statement", "text"]);
+
+function withoutWriter1ReviewEvidence(value: unknown): unknown {
+  if (Array.isArray(value)) return value.map(withoutWriter1ReviewEvidence);
+  const record = asRecord(value);
+  if (!record) return value;
+  const result: Record<string, unknown> = {};
+  for (const [key, child] of Object.entries(record)) {
+    if (key === "reviewEvidence") continue;
+    result[key] = withoutWriter1ReviewEvidence(child);
+  }
+  return result;
+}
+
+/** Semantic copy proof excludes the typed reviewEvidence pointer ledger, but keeps all renderable page words. */
+export function writer1SemanticRenderedCopyProjection(value: unknown): unknown {
+  return writer1RenderedWordsProjection(withoutWriter1ReviewEvidence(value));
+}
+export function writer1SemanticRenderedCopyDigest(value: unknown): string { return digestOf(writer1SemanticRenderedCopyProjection(value)); }
+
+export function normalizeWriter1PointerLedger(value: unknown): { output: unknown; removed: Writer1PointerLedgerRemoval[] } {
+  const output = structuredClone(value);
+  const removed: Writer1PointerLedgerRemoval[] = [];
+  const root = asRecord(output);
+  if (!root || !Array.isArray(root.pages)) return { output, removed };
+  root.pages.forEach((page, pageIndex) => {
+    const pageRecord = asRecord(page);
+    if (!pageRecord || !Array.isArray(pageRecord.reviewEvidence)) return;
+    pageRecord.reviewEvidence.forEach((entry, entryIndex) => {
+      const evidence = asRecord(entry);
+      if (!evidence) return;
+      for (const key of WRITER1_REVIEW_EVIDENCE_FORBIDDEN_KEYS) {
+        if (Object.prototype.hasOwnProperty.call(evidence, key)) {
+          removed.push({ path: `/pages/${pageIndex}/reviewEvidence/${entryIndex}/${key}`, key, valueDigest: digestOf(evidence[key]) });
+          delete evidence[key];
+        }
+      }
+    });
+  });
+  return { output, removed };
+}
+
+export function buildWriter1PointerLedgerNormalization(input: {
+  raw: unknown;
+  normalized: unknown;
+  removed: Writer1PointerLedgerRemoval[];
+  artifact: CursorArtifactBinding;
+  prior: CursorArtifactRecoveryPrior;
+}): Writer1PointerLedgerNormalization {
+  const rawDigests = writer1OutputDigests(input.raw);
+  const normalizedDigests = writer1OutputDigests(input.normalized);
+  const rawSemanticRenderedCopyDigest = writer1SemanticRenderedCopyDigest(input.raw);
+  const normalizedSemanticRenderedCopyDigest = writer1SemanticRenderedCopyDigest(input.normalized);
+  if (rawSemanticRenderedCopyDigest !== normalizedSemanticRenderedCopyDigest || rawDigests.stableIdentityDigest !== normalizedDigests.stableIdentityDigest || rawDigests.provenanceMetadataDigest !== normalizedDigests.provenanceMetadataDigest) throw new CursorWriterExecutionError("CURSOR_POINTER_LEDGER_NORMALIZATION_PRESERVATION_FAILED", "Pointer-ledger normalization changed semantic copy, stable identity, or provenance metadata");
+  return {
+    normalizationVersion: WRITER1_POINTER_LEDGER_NORMALIZATION_VERSION,
+    authorship: { renderableWords: OFFICIAL_CURSOR_MODEL, structuralPointerNormalization: "factory" },
+    rawArtifact: { byteDigest: input.artifact.byteDigest, size: input.artifact.size, ...(input.artifact.updatedAt ? { updatedAt: input.artifact.updatedAt } : {}) },
+    agentId: input.prior.agentId,
+    runId: input.prior.runId,
+    threadUrl: input.prior.threadUrl,
+    requestedModel: REQUIRED_CURSOR_MODEL,
+    resolvedModel: OFFICIAL_CURSOR_MODEL,
+    effort: "high",
+    fast: false,
+    removed: input.removed.map((entry) => ({ ...entry })),
+    rawOutputDigest: digestOf(input.raw),
+    normalizedOutputDigest: digestOf(input.normalized),
+    rawSemanticRenderedCopyDigest,
+    normalizedSemanticRenderedCopyDigest,
+    rawRenderedWordsDigest: rawDigests.renderedWordsDigest,
+    normalizedRenderedWordsDigest: normalizedDigests.renderedWordsDigest,
+    rawStableIdentityDigest: rawDigests.stableIdentityDigest,
+    normalizedStableIdentityDigest: normalizedDigests.stableIdentityDigest,
+    rawProvenanceMetadataDigest: rawDigests.provenanceMetadataDigest,
+    normalizedProvenanceMetadataDigest: normalizedDigests.provenanceMetadataDigest,
+    finalDigests: normalizedDigests,
+  };
+}
 export function writer1MetadataChangeDigest(beforeArtifactDigest: string, afterArtifactDigest: string, copyProjectionDigest: string): string {
   return digestOf({ beforeArtifactDigest, afterArtifactDigest, copyProjectionDigest });
 }
-async function readWriter1Artifact(input: { client: CursorArtifactClient; agentId: string; apiKey: string; validateOutput?: (raw: string) => unknown }): Promise<{ output: unknown; raw: string; bytes: Buffer; artifact: CursorArtifactBinding }> {
+type Writer1ArtifactOutputTransform = (raw: string, artifact: CursorArtifactBinding) => { output: unknown; normalization?: Writer1PointerLedgerNormalization };
+async function readWriter1Artifact(input: { client: CursorArtifactClient; agentId: string; apiKey: string; validateOutput?: (raw: string) => unknown; transformOutput?: Writer1ArtifactOutputTransform }): Promise<{ output: unknown; raw: string; bytes: Buffer; artifact: CursorArtifactBinding; normalization?: Writer1PointerLedgerNormalization }> {
   const descriptors = await input.client.list(input.agentId, input.apiKey);
   const matches = descriptors.filter((descriptor) => descriptor.path === "artifacts/writer1-output.json");
   if (matches.length > 1) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_RACE", "Cursor returned multiple artifacts at artifacts/writer1-output.json");
@@ -625,8 +749,13 @@ async function readWriter1Artifact(input: { client: CursorArtifactClient; agentI
   const sha256 = artifactSha256(downloaded.bytes);
   if (descriptor.sha256 && descriptor.sha256 !== sha256) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_DIGEST_MISMATCH", "Cursor artifact listing digest does not match downloaded bytes");
   const raw = downloaded.bytes.toString("utf8");
+  const artifact: CursorArtifactBinding = { path: "artifacts/writer1-output.json", size: downloaded.bytes.length, sha256, contentSize: downloaded.bytes.length, byteDigest: sha256, ...(descriptor.updatedAt ? { updatedAt: descriptor.updatedAt } : {}), downloadRequest: expectedRequest, requestShapeDigest: downloaded.requestShapeDigest, downloadRequestDigest: downloaded.downloadRequestDigest, presignedUrlEvidence: downloaded.presignedUrlEvidence, presignedUrlEvidenceDigest: downloaded.presignedUrlEvidenceDigest };
+  if (input.transformOutput) {
+    const transformed = input.transformOutput(raw, artifact);
+    return { output: transformed.output, ...(transformed.normalization ? { normalization: transformed.normalization } : {}), raw, bytes: downloaded.bytes, artifact };
+  }
   const output = input.validateOutput ? input.validateOutput(raw) : raw;
-  return { output, raw, bytes: downloaded.bytes, artifact: { path: "artifacts/writer1-output.json", size: downloaded.bytes.length, sha256, contentSize: downloaded.bytes.length, byteDigest: sha256, ...(descriptor.updatedAt ? { updatedAt: descriptor.updatedAt } : {}), downloadRequest: expectedRequest, requestShapeDigest: downloaded.requestShapeDigest, downloadRequestDigest: downloaded.downloadRequestDigest, presignedUrlEvidence: downloaded.presignedUrlEvidence, presignedUrlEvidenceDigest: downloaded.presignedUrlEvidenceDigest } };
+  return { output, raw, bytes: downloaded.bytes, artifact };
 }
 
 export interface CursorArtifactValidationReportInspection {
@@ -703,7 +832,7 @@ export async function inspectCursorWriterArtifactV3ForTest(input: CursorArtifact
 }
 
 const ARTIFACT_RECOVERY_EVENTUAL_CONSISTENCY_BACKOFF_MS = [1_000, 5_000, 15_000, 30_000, 60_000, 120_000] as const;
-async function readWriter1ArtifactWithBackoff(input: { client: CursorArtifactClient; agentId: string; apiKey: string; validateOutput?: (raw: string) => unknown; sleep?: (milliseconds: number) => Promise<void>; backoffMs?: readonly number[] }): Promise<{ output: unknown; raw: string; bytes: Buffer; artifact: CursorArtifactBinding }> {
+async function readWriter1ArtifactWithBackoff(input: { client: CursorArtifactClient; agentId: string; apiKey: string; validateOutput?: (raw: string) => unknown; transformOutput?: Writer1ArtifactOutputTransform; sleep?: (milliseconds: number) => Promise<void>; backoffMs?: readonly number[] }): Promise<{ output: unknown; raw: string; bytes: Buffer; artifact: CursorArtifactBinding; normalization?: Writer1PointerLedgerNormalization }> {
   const sleep = input.sleep || ((milliseconds: number) => new Promise<void>((resolve) => setTimeout(resolve, milliseconds)));
   const backoffMs = input.backoffMs || ARTIFACT_RECOVERY_EVENTUAL_CONSISTENCY_BACKOFF_MS;
   for (let attempt = 0; ; attempt += 1) {
@@ -748,9 +877,10 @@ function validateCursorArtifactRecoveryReceiptVersion(receipt: unknown, prior: C
       if (typeof v3.copyProjectionDigest !== "string" || v3.copyProjectionDigest !== writer1CopyProjectionDigest(v3.output)) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_COPY_PROJECTION_MISMATCH", "Cursor v3 completed receipt copy projection digest is not recomputable");
       if (v3.metadataChangeDigest !== writer1MetadataChangeDigest(before.sha256, v3.afterArtifact.sha256, v3.copyProjectionDigest)) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_METADATA_CHANGE_INVALID", "Cursor v3 metadata-change digest is not recomputable");
     }
-    if (expectedVersion === "words-writer1-artifact-recovery/v3-finalize") {
+      if (expectedVersion === "words-writer1-artifact-recovery/v3-finalize") {
       const finalize = value as CursorArtifactRecoveryV3FinalizeReceipt;
       if (!previousRecoveryV3 || JSON.stringify(finalize.previousRecoveryV3) !== JSON.stringify(previousRecoveryV3) || JSON.stringify(before) !== JSON.stringify(previousRecoveryV3.beforeArtifact) || finalize.jobId !== prior.runId || finalize.recoveryRunId !== prior.runId || finalize.crossV3CopyPreservation !== "not-asserted" || typeof finalize.renderedWordsDigest !== "string" || finalize.renderedWordsDigest !== writer1RenderedWordsDigest(finalize.output) || typeof finalize.stableIdentityDigest !== "string" || finalize.stableIdentityDigest !== writer1StableIdentityDigest(finalize.output) || typeof finalize.provenanceMetadataDigest !== "string" || finalize.provenanceMetadataDigest !== writer1ProvenanceMetadataDigest(finalize.output) || !expectedCurrentArtifactByteDigest || finalize.afterArtifact.byteDigest !== expectedCurrentArtifactByteDigest || !expectedCurrentArtifactUpdatedAt || finalize.afterArtifact.updatedAt !== expectedCurrentArtifactUpdatedAt || finalize.afterArtifact.byteDigest === before.byteDigest) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_RECEIPT_BINDING_INVALID", "Cursor v3-finalize receipt lost the current artifact, three digest, or explicit cross-v3 preservation binding");
+      if (finalize.pointerLedgerNormalization) validatePointerLedgerNormalization(finalize.pointerLedgerNormalization, finalize.output, finalize.afterArtifact, prior);
     }
   }
 }
@@ -954,6 +1084,7 @@ export type CursorArtifactRecoveryV3FinalizeInput = Omit<CursorArtifactRecoveryI
   expectedCurrentArtifactByteDigest: string;
   expectedCurrentArtifactUpdatedAt: string;
   validateOutput?: (output: unknown) => void;
+  normalizePointerLedger?: boolean;
 };
 
 type CursorArtifactRecoveryV3FinalizeInternalInput = CursorArtifactRecoveryV3FinalizeInput & {
@@ -971,10 +1102,19 @@ async function finalizeCursorWriterArtifactV3Internal(input: CursorArtifactRecov
   const artifactClient = input.artifactClient || createCursorArtifactClient();
   const validateOutput = input.validateOutput;
   if (!validateOutput) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_VALIDATOR_REQUIRED", "Validation-only Cursor artifact finalization requires the strict Writer1 validator");
+  const normalizePointerLedger = input.normalizePointerLedger !== false;
+  const transformOutput: Writer1ArtifactOutputTransform | undefined = normalizePointerLedger ? (raw, artifact) => {
+    let parsed: unknown;
+    try { parsed = JSON.parse(raw); } catch { throw new CursorWriterExecutionError("CURSOR_ARTIFACT_OUTPUT_INVALID", "Cursor Writer1 artifact is not valid JSON"); }
+    const normalized = normalizeWriter1PointerLedger(parsed);
+    const normalization = buildWriter1PointerLedgerNormalization({ raw: parsed, normalized: normalized.output, removed: normalized.removed, artifact, prior: input.prior });
+    validateOutput(JSON.stringify(normalized.output));
+    return { output: normalized.output, normalization };
+  } : undefined;
   const existing = await input.receiptStore.get(key);
   if (existing) {
     validateCursorArtifactRecoveryV3FinalizeReceipt(existing, input.prior, input.previousRecoveryV3, promptDigest, env.CURSOR_API_KEY, input.expectedCurrentArtifactByteDigest, input.expectedCurrentArtifactUpdatedAt);
-    const recovered = await readWriter1Artifact({ client: artifactClient, agentId: input.prior.agentId, apiKey: env.CURSOR_API_KEY, validateOutput });
+    const recovered = await readWriter1Artifact({ client: artifactClient, agentId: input.prior.agentId, apiKey: env.CURSOR_API_KEY, ...(transformOutput ? { transformOutput } : { validateOutput }) });
     const completed = existing as CursorArtifactRecoveryV3FinalizeReceipt;
     const recoveredDigests = writer1OutputDigests(recovered.output);
     if (JSON.stringify(recovered.artifact) !== JSON.stringify(completed.afterArtifact) || recoveredDigests.renderedWordsDigest !== completed.renderedWordsDigest || recoveredDigests.stableIdentityDigest !== completed.stableIdentityDigest || recoveredDigests.provenanceMetadataDigest !== completed.provenanceMetadataDigest) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_RACE", "Cursor v3-finalize artifact or digest projection changed after the completed receipt");
@@ -989,13 +1129,13 @@ async function finalizeCursorWriterArtifactV3Internal(input: CursorArtifactRecov
   // This path intentionally has no CloudTransport. It can only list/download
   // through the authenticated Cursor artifact client; Agent.create, resume,
   // send, and run.wait are structurally unreachable.
-  const recovered = await readWriter1Artifact({ client: artifactClient, agentId: input.prior.agentId, apiKey: env.CURSOR_API_KEY, validateOutput });
+  const recovered = await readWriter1Artifact({ client: artifactClient, agentId: input.prior.agentId, apiKey: env.CURSOR_API_KEY, ...(transformOutput ? { transformOutput } : { validateOutput }) });
   const before = input.previousRecoveryV3.beforeArtifact;
   if (recovered.artifact.sha256 === before.sha256 && recovered.artifact.updatedAt === before.updatedAt) throw new CursorWriterExecutionError("CURSOR_V3_ARTIFACT_STALE", "Cursor v3-finalize found the stale unchanged pre-repair artifact");
   if (recovered.artifact.byteDigest !== input.expectedCurrentArtifactByteDigest || recovered.artifact.updatedAt !== input.expectedCurrentArtifactUpdatedAt) throw new CursorWriterExecutionError("CURSOR_V3_CURRENT_ARTIFACT_BINDING_INVALID", "Cursor v3-finalize did not receive the exact diagnostic current artifact binding");
   if (recovered.artifact.byteDigest === before.byteDigest || (before.updatedAt && recovered.artifact.updatedAt && Date.parse(recovered.artifact.updatedAt) <= Date.parse(before.updatedAt))) throw new CursorWriterExecutionError("CURSOR_V3_ARTIFACT_STALE", "Cursor v3-finalize current artifact is not newer than the pinned v3-before artifact");
   const outputDigests = writer1OutputDigests(recovered.output);
-  const receipt = withReceiptIntegrityMac({ stage: "writer1", provider: CURSOR_PROVIDER, requestedModel: REQUIRED_CURSOR_MODEL, resolvedModel: OFFICIAL_CURSOR_MODEL, fast: false, jobId: input.prior.runId, agentId: input.prior.agentId, threadUrl: input.prior.threadUrl, inputDigest: input.prior.inputDigest, promptDigest, outputDigest: digestOf(recovered.output), completedAt: now().toISOString(), status: "complete", output: recovered.output, requestDigest: input.prior.requestDigest, createRequest: { apiVersion: API_VERSION, mode: "validation-only-artifact-recovery", agentId: input.prior.agentId, runId: input.prior.runId }, registryItem: { id: OFFICIAL_CURSOR_MODEL, validationOnly: true }, registryDigest: input.prior.registryDigest, modelParams: input.prior.modelParams, effort: "high", effortAttestationSource: input.prior.effortAttestationSource, attestationSource: "official-response", apiVersion: API_VERSION, mode: "validation-only-artifact-recovery", recoveryVersion: "words-writer1-artifact-recovery/v3-finalize", artifact: recovered.artifact, recoveryRunId: input.prior.runId, recoveryPrior: input.prior, previousRecoveryV3: input.previousRecoveryV3, beforeArtifact: before, afterArtifact: recovered.artifact, ...outputDigests, crossV3CopyPreservation: "not-asserted" } as unknown as CursorArtifactRecoveryV3FinalizeReceipt, env.CURSOR_API_KEY);
+  const receipt = withReceiptIntegrityMac({ stage: "writer1", provider: CURSOR_PROVIDER, requestedModel: REQUIRED_CURSOR_MODEL, resolvedModel: OFFICIAL_CURSOR_MODEL, fast: false, jobId: input.prior.runId, agentId: input.prior.agentId, threadUrl: input.prior.threadUrl, inputDigest: input.prior.inputDigest, promptDigest, outputDigest: digestOf(recovered.output), completedAt: now().toISOString(), status: "complete", output: recovered.output, requestDigest: input.prior.requestDigest, createRequest: { apiVersion: API_VERSION, mode: "validation-only-artifact-recovery", agentId: input.prior.agentId, runId: input.prior.runId }, registryItem: { id: OFFICIAL_CURSOR_MODEL, validationOnly: true }, registryDigest: input.prior.registryDigest, modelParams: input.prior.modelParams, effort: "high", effortAttestationSource: input.prior.effortAttestationSource, attestationSource: "official-response", apiVersion: API_VERSION, mode: "validation-only-artifact-recovery", recoveryVersion: "words-writer1-artifact-recovery/v3-finalize", artifact: recovered.artifact, recoveryRunId: input.prior.runId, recoveryPrior: input.prior, previousRecoveryV3: input.previousRecoveryV3, beforeArtifact: before, afterArtifact: recovered.artifact, ...outputDigests, crossV3CopyPreservation: "not-asserted", ...(recovered.normalization ? { pointerLedgerNormalization: recovered.normalization } : {}) } as unknown as CursorArtifactRecoveryV3FinalizeReceipt, env.CURSOR_API_KEY);
   validateCursorArtifactRecoveryV3FinalizeReceipt(receipt, input.prior, input.previousRecoveryV3, promptDigest, env.CURSOR_API_KEY, input.expectedCurrentArtifactByteDigest, input.expectedCurrentArtifactUpdatedAt);
   const completedClaim = { ...claimed.claim, agentId: input.prior.agentId, jobId: input.prior.runId, phase: "completed" as const, heartbeatAt: now().toISOString(), leaseUntil: new Date(now().getTime() + 30_000).toISOString() };
   await input.receiptStore.put(key, receipt);
@@ -1006,7 +1146,7 @@ async function finalizeCursorWriterArtifactV3Internal(input: CursorArtifactRecov
 /** Production v3-finalize owns process.env and the fixed Cursor artifact client. */
 export async function finalizeCursorWriterArtifactV3(input: CursorArtifactRecoveryV3FinalizeInput): Promise<CursorArtifactRecoveryResult> {
   const candidate = input as unknown as Record<string, unknown>;
-  if ("env" in candidate || "transport" in candidate || "artifactClient" in candidate) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_CLIENT_SUBSTITUTION_FORBIDDEN", "Production v3-finalize does not accept caller-selected environment, transport, or artifact client");
+  if ("env" in candidate || "transport" in candidate || "artifactClient" in candidate || input.normalizePointerLedger === false) throw new CursorWriterExecutionError("CURSOR_ARTIFACT_CLIENT_SUBSTITUTION_FORBIDDEN", "Production v3-finalize does not accept caller-selected environment, transport, artifact client, or disabled pointer-ledger normalization");
   return finalizeCursorWriterArtifactV3Internal({ ...input, env: process.env, artifactClient: createCursorArtifactClient() });
 }
 

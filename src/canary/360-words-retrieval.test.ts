@@ -4,7 +4,7 @@ import { mkdtemp, mkdir, rm, writeFile } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { buildWriter1QuarantineMetadata, buildWriter1ValidationReport, collectWriter1ValidationDiagnostics, parseAndValidateFreshWriter1Output, parseAndValidateWriter1Output, readApprovedWriter1OutputForWriter2, quarantineWriter1Artifact, validateSealed, writer1Projection, Writer1OutputRecoveryError } from "../../scripts/360-words-canary.js";
-import { WRITER1_WORD_KEYS, type CursorArtifactBinding } from "../../src/pipeline/cursor-writer.js";
+import { buildWriter1PointerLedgerNormalization, normalizeWriter1PointerLedger, writer1OutputDigests, writer1ProvenanceMetadataDigest, writer1SemanticRenderedCopyDigest, writer1StableIdentityDigest, WRITER1_WORD_KEYS, type CursorArtifactBinding } from "../../src/pipeline/cursor-writer.js";
 
 const projection = {
   services: [
@@ -45,6 +45,36 @@ test("Writer1 output validator accepts complete bound JSON only", () => {
   const parsed = parseAndValidateWriter1Output(valid, projection);
   assert.equal(parsed.schemaVersion, "words-writer1-output/v1");
   assert.deepEqual(parsed.pages.map((page: any) => page.url), ["/garage-door-repair", "/garage-door-installation"]);
+});
+
+test("pointer-ledger normalization removes exactly the 62 duplicated words and preserves semantic copy, identity, and provenance", () => {
+  const raw = JSON.parse(valid) as Record<string, any>;
+  const entries = (count: number, route: string, section: string) => Array.from({ length: count }, (_, index) => ({ reviewId: `${route}-review-${index}`, reviewer: `Reviewer ${index}`, excerpt: `Duplicated excerpt ${index}`, provenance: { type: "evidence", ref: `${route}-review-${index}`, placement: "sealed pointer", section } }));
+  raw.pages[0].reviewEvidence = entries(25, "repair", "repair-section");
+  raw.pages[1].reviewEvidence = entries(6, "installation", "installation-section");
+  const projectionWithRefs = structuredClone(projection) as Record<string, any>;
+  projectionWithRefs.sealedRefs.push(...raw.pages.flatMap((page: any) => page.reviewEvidence.map((entry: any) => entry.reviewId)));
+  const normalized = normalizeWriter1PointerLedger(raw);
+  const normalizedOutput = normalized.output as Record<string, any>;
+  assert.equal(normalized.removed.length, 62);
+  assert.equal(normalized.removed.filter((entry) => entry.key === "reviewer").length, 31);
+  assert.equal(normalized.removed.filter((entry) => entry.key === "excerpt").length, 31);
+  assert.ok(normalized.removed.every((entry) => /^\/pages\/\d+\/reviewEvidence\/\d+\/(?:reviewer|excerpt)$/u.test(entry.path) && /^sha256:[0-9a-f]{64}$/u.test(entry.valueDigest)));
+  assert.deepEqual(normalizedOutput.pages[0].reviewEvidence[0], { reviewId: "repair-review-0", provenance: { type: "evidence", ref: "repair-review-0", placement: "sealed pointer", section: "repair-section" } });
+  assert.equal(writer1SemanticRenderedCopyDigest(raw), writer1SemanticRenderedCopyDigest(normalizedOutput));
+  assert.equal(writer1StableIdentityDigest(raw), writer1StableIdentityDigest(normalizedOutput));
+  assert.equal(writer1ProvenanceMetadataDigest(raw), writer1ProvenanceMetadataDigest(normalizedOutput));
+  assert.doesNotThrow(() => parseAndValidateWriter1Output(JSON.stringify(normalizedOutput), projectionWithRefs));
+  const artifact = { path: "artifacts/writer1-output.json", size: 127586, sha256: "sha256:" + "a".repeat(64), contentSize: 127586, byteDigest: "sha256:" + "a".repeat(64), updatedAt: "2026-08-25T01:33:20.000Z", downloadRequest: {} as any, requestShapeDigest: "sha256:" + "b".repeat(64), downloadRequestDigest: "sha256:" + "c".repeat(64), presignedUrlEvidence: {} as any, presignedUrlEvidenceDigest: "sha256:" + "d".repeat(64) } as CursorArtifactBinding;
+  const normalization = buildWriter1PointerLedgerNormalization({ raw, normalized: normalizedOutput, removed: normalized.removed, artifact, prior: { actionRunId: "32797811881", artifactId: 9545486318, agentId: "bc-30fc8ffa-2005-44b9-8fc7-48ddd9c3bcc8", runId: "run-47a109e2-4fd4-48df-a727-8a92a76cc472", threadUrl: "https://cursor.com/agents/bc-30fc8ffa-2005-44b9-8fc7-48ddd9c3bcc8", requestedModel: "cursor-grok-4.6-high", resolvedModel: "grok-4.6", inputDigest: "sha256:" + "e".repeat(64), promptDigest: "sha256:" + "f".repeat(64), requestDigest: "sha256:" + "0".repeat(64), modelParams: [{ id: "fast", value: "false" }, { id: "effort", value: "high" }], registryDigest: "sha256:" + "1".repeat(64), effort: "high", effortAttestationSource: "named-model-default", fast: false, sourceBranch: "architect/360-words-canary", sourceSha: "9c5c6a0c19f52860ad22961090baa1387bb29507", sealedHandoffDigest: "sha256:" + "2".repeat(64) } });
+  assert.equal(normalization.removed.length, 62);
+  assert.deepEqual(normalization.finalDigests, writer1OutputDigests(normalizedOutput));
+  const tampered = structuredClone(normalizedOutput) as Record<string, any>;
+  tampered.pages[0].body = "tampered outside pointer ledger";
+  assert.throws(() => buildWriter1PointerLedgerNormalization({ raw, normalized: tampered, removed: normalized.removed, artifact, prior: normalization as any }), /semantic copy/u);
+  const invalid = structuredClone(normalizedOutput) as Record<string, any>;
+  delete invalid.pages[0].body;
+  assert.throws(() => parseAndValidateWriter1Output(JSON.stringify(invalid), projectionWithRefs), /full copy field body/u);
 });
 
 test("Writer1 output validator rejects prose, missing copy, unbound quotes, and prohibited public topology", () => {
