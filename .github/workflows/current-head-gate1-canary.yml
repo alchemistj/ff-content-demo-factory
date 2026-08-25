@@ -133,6 +133,8 @@ jobs:
           FACTORY_PR_NUMBER: ${{ inputs.pr_number }}
           FACTORY_BRANCH: ${{ inputs.branch }}
           EXPECTED_HEAD_SHA: ${{ inputs.expected_head_sha }}
+          FACTORY_CANARY_PHASE: ${{ inputs.phase }}
+          FACTORY_REPOSITORY: ${{ github.repository }}
         run: node src/run-gate1-canary.js canary "$REQUEST_FILE" "$SELECTION_FILE" "$QA_FILE" "$CURSOR_BUNDLE_FILE"
       - name: Upload Gate 1 canary proof
         if: always()
@@ -145,5 +147,5 @@ jobs:
             canary/outputs/current-head-gate1-pending.json
             canary/outputs/gate1.md
             canary/state/factory-state.json
-          if-no-files-found: error
+          if-no-files-found: warn
           retention-days: 30
