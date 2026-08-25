@@ -343,7 +343,7 @@ test('tenth correction resume downloads the phase-A artifact and refuses duplica
   assert.throws(() => claimResumeAtomic(casFile, pending.handoffId, 'result-1'), /replay/);
 });
 
-test('tenth correction sealed 360 canary reaches Human Gate 1 without vendor calls or manual movement', async () => {
+test('tenth correction sealed 360 canary remains synthetic-only without vendor calls or manual movement', async () => {
   const head = spawnSync('git', ['rev-parse', 'HEAD'], { encoding: 'utf8' }).stdout.trim();
   assert.match(head, /^[a-f0-9]{40}$/);
   const root = fs.mkdtempSync(path.join(os.tmpdir(), 'factory-ninth-sealed-360-'));
@@ -363,18 +363,17 @@ test('tenth correction sealed 360 canary reaches Human Gate 1 without vendor cal
       FACTORY_TEST_RESULT: 'local-sealed-evidence',
     }),
   });
-  assert.equal(result.proof.gate1State, 'awaiting-human-gate-1');
+  assert.equal(result.proof.gate1State, 'synthetic-sealed-evidence-only');
+  assert.equal(result.proof.synthetic, true);
+  assert.equal(result.proof.approvableGate1, false);
   assert.equal(result.proof.sealedEvidence, true);
-  assert.equal(result.proof.candidate.placeId, PLACE_ID);
   assert.equal(result.proof.integratedFactoryReadiness, false);
   assert.equal(result.proof.liveConnectorProven, false);
-  assert.match(result.state.activeRun.artifacts.gate1.markdown, /Human Gate 1/);
-  assert.match(result.state.activeRun.artifacts.gate1.markdown, /360 Garage Door/);
-  assert.doesNotMatch(result.state.activeRun.artifacts.gate1.markdown, /CURSOR_API_KEY/);
   const proofFile = path.join(root, 'canary/outputs/current-head-gate1-proof.json');
   const gateFile = path.join(root, 'canary/outputs/gate1.md');
   assert.equal(fs.existsSync(proofFile), true);
-  assert.equal(fs.existsSync(gateFile), true);
+  assert.equal(fs.existsSync(gateFile), false);
+  assert.equal(result.state, null);
 });
 
 test('eleventh correction rejects every mutation of the fixed historical sealed lineage', () => {
@@ -404,7 +403,8 @@ test('tenth correction workflow contracts automatic retrieval, sealed integrated
   assert.match(canary, /FACTORY_SEALED_EVIDENCE/);
   assert.match(canary, /FACTORY_PHASE_A_RUN_ID/);
   assert.match(canary, /test -s canary\/outputs\/gate1\.md/);
-  assert.doesNotMatch(canary, /Prove Gate 1 artifacts exist[\s\S]{0,250}sealed_evidence != true/);
+  assert.match(canary, /Prove Gate 1 artifacts exist[\s\S]{0,250}sealed_evidence != true/);
+  assert.match(canary, /FACTORY_APPROVED_LINEAGE_PACKET/);
   assert.doesNotMatch(canary, /CURSOR_API_KEY/);
   assert.match(resume, /gh run download/);
   assert.match(resume, /FACTORY_HANDOFF_FILE/);
@@ -412,4 +412,23 @@ test('tenth correction workflow contracts automatic retrieval, sealed integrated
   assert.match(runner, /retrievePhaseAHandoff/);
   assert.match(runner, /FACTORY_HANDOFF_CAS_FILE/);
   assert.match(runner, /createSealed360Adapters/);
+});
+
+test('forward correction workflow events share Issue 8 / PR 1 context and retry states', () => {
+  const dispatchWorkflow = fs.readFileSync('.github/workflows/cursor-cloud-agent-dispatch.yml', 'utf8');
+  const resumeWorkflow = fs.readFileSync('.github/workflows/cursor-cloud-agent-resume.yml', 'utf8');
+  const sealed = fs.readFileSync('src/factory/sealed-evidence.js', 'utf8');
+  const handoff = fs.readFileSync('src/factory/handoff.js', 'utf8');
+  assert.match(dispatchWorkflow, /github\.event_name == 'workflow_dispatch'/);
+  assert.match(dispatchWorkflow, /issue_number.*=.*'8'|inputs\.issue_number.*'8'/s);
+  assert.match(dispatchWorkflow, /pr_number.*=.*'1'|inputs\.pr_number.*'1'/s);
+  assert.match(dispatchWorkflow, /pending\.envelope/);
+  assert.match(dispatchWorkflow, /FACTORY_SKIP_AUTOMATIC_DISPATCH != 'true' && env\.FACTORY_LEDGER_ALREADY_CLAIMED != 'true'/);
+  assert.match(resumeWorkflow, /dispatch_issue='8'/);
+  assert.match(resumeWorkflow, /FACTORY_ISSUE_NUMBER: \$\{\{ env\.FACTORY_DISPATCH_ISSUE_NUMBER \}\}/);
+  assert.match(resumeWorkflow, /FACTORY_PR_NUMBER: \$\{\{ github\.event\.issue\.number \}\}/);
+  assert.match(resumeWorkflow, /prior\.status === 'resumed'/);
+  assert.match(handoff, /issues\/\$\{issueNumber\}\|pull\/\$\{prNumber\}/);
+  assert.match(sealed, /provider: 'repository-sealed-evidence'/);
+  assert.match(sealed, /syntheticReplay: true/);
 });
