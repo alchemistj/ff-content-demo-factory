@@ -7,12 +7,15 @@ import {
   OFFICIAL_CURSOR_MODEL,
   recoverCursorWriterArtifact,
   recoverCursorWriterArtifactForTest,
+  recoverCursorWriterArtifactV2ForTest,
   retrieveCursorWriterOutput,
   validateCursorArtifactRecoveryReceipt,
+  validateCursorArtifactRecoveryV2Receipt,
   validateCursorWriterFollowUpReceipt,
   type CursorArtifactRecoveryInput,
   type CursorArtifactClient,
   type CursorArtifactRecoveryPrior,
+  type CursorArtifactRecoveryFailureBinding,
   type CursorTestTransport,
   type CursorFollowUpBindings,
 } from "./cursor-writer.js";
@@ -124,6 +127,9 @@ const artifactPrior: CursorArtifactRecoveryPrior = {
   requestedModel: "cursor-grok-4.6-high", resolvedModel: OFFICIAL_CURSOR_MODEL, modelParams: [{ id: "fast", value: "false" }, { id: "effort", value: "high" }], registryDigest: digestOf(artifactRegistry.items[0]), effort: "high", effortAttestationSource: "official-registry-parameter", fast: false,
   sourceBranch: "architect/360-words-canary", sourceSha: "c89f82dae009d5bef3cc327543e1664985c85b76", sealedHandoffDigest: "sha256:" + "5".repeat(64),
 };
+const previousRecovery: CursorArtifactRecoveryFailureBinding = {
+  recoveryVersion: "words-writer1-artifact-recovery/v1", actionRunId: "32793130502", artifactId: 9543869555, sourceBranch: "architect/360-words-canary", sourceSha: "6cf9b42e43e5728614a9b7302a8791e527197e3d", artifactDigest: "sha256:2d1d1c0d281917025be80898ab03c94171d59d1e2920ecf540b241f666464502", runId: "run-1b862d23-a748-4574-909a-66aac905eb97", agentId: artifactAgentId, threadUrl: artifactThreadUrl, promptDigest: "sha256:1b9726fb288041c08ff2a58f2857ac209b0d4ff4fa7dc1ae8c52bd0a4ab6ded6", failureCode: "CURSOR_ARTIFACT_MISSING",
+};
 const artifactBytes = Buffer.from('{"schemaVersion":"words-writer1-output/v1","pages":[]}\n', "utf8");
 function artifactDownloadResult(id: string, artifactPath: string, bytes: Buffer, sourceUrl: string): any {
   const cursorEndpoint = `https://api.cursor.com/v1/agents/${encodeURIComponent(id)}/artifacts/download?path=${encodeURIComponent(artifactPath)}`;
@@ -166,6 +172,35 @@ test("artifact recovery sends one same-thread follow-up, ignores summary output,
   assert.equal(counters.creates, 0); assert.equal(counters.resumes, 1); assert.equal(counters.sends, 1); assert.equal(first.receipt.recoveryRunId, "run-recovery-1");
   const second = await recoverCursorWriterArtifactForTest({ env, receiptStore: store, prior: artifactPrior, prompt: "artifact recovery prompt", transport, artifactClient: client, validateOutput: (raw) => JSON.parse(raw) });
   assert.equal(counters.resumes, 1); assert.equal(counters.sends, 1); assert.equal(state.downloads, 2); assert.deepEqual(second.receipt.artifact, first.receipt.artifact);
+});
+
+test("v2 materialization uses a distinct key/receipt, reattaches the same agent, and never sends a second follow-up", async () => {
+  const store = createMemoryCursorReceiptStore(); const state = { available: false, lists: 0, downloads: 0 }; const counters = { creates: 0, resumes: 0, sends: 0 }; const transport = artifactTransport(counters, state); const prompt = "v2 materialize at /opt/cursor/artifacts/writer1-output.json; API path artifacts/writer1-output.json";
+  const first = await recoverCursorWriterArtifactV2ForTest({ env, receiptStore: store, prior: artifactPrior, previousRecovery, recoveryVersion: "words-writer1-artifact-recovery/v2", prompt, transport, artifactClient: artifactClientFor(state), validateOutput: (raw) => JSON.parse(raw), artifactBackoffMs: [0, 0] });
+  assert.equal(counters.creates, 0); assert.equal(counters.resumes, 1); assert.equal(counters.sends, 1); assert.equal(first.receipt.recoveryVersion, "words-writer1-artifact-recovery/v2");
+  assert.equal([...store.records.keys()].some((key) => key.includes(":artifact-recovery:v1:")), false);
+  assert.equal([...store.records.keys()].some((key) => key.includes(":artifact-recovery:v2:")), true);
+  validateCursorArtifactRecoveryV2Receipt(first.receipt, artifactPrior, previousRecovery, digestOf(prompt), env.CURSOR_API_KEY);
+  const second = await recoverCursorWriterArtifactV2ForTest({ env, receiptStore: store, prior: artifactPrior, previousRecovery, recoveryVersion: "words-writer1-artifact-recovery/v2", prompt, transport, artifactClient: artifactClientFor(state), validateOutput: (raw) => JSON.parse(raw), artifactBackoffMs: [0, 0] });
+  assert.equal(counters.sends, 1); assert.equal(counters.resumes, 1); assert.deepEqual(second.receipt, first.receipt);
+});
+
+test("v2 recovery relists through bounded uploader eventual consistency without resending", async () => {
+  const store = createMemoryCursorReceiptStore(); const counters = { creates: 0, resumes: 0, sends: 0 }; let lists = 0; let downloads = 0;
+  const client: CursorArtifactClient = { async list() { lists += 1; return lists >= 3 ? [{ path: "artifacts/writer1-output.json", size: artifactBytes.length }] : []; }, async download(id, artifactPath) { downloads += 1; return artifactDownloadResult(id, artifactPath, artifactBytes, "https://bucket.s3.us-east-1.amazonaws.com/opaque-key?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Signature=test"); } };
+  const transport = artifactTransport(counters, { available: false });
+  const result = await recoverCursorWriterArtifactV2ForTest({ env, receiptStore: store, prior: artifactPrior, previousRecovery, recoveryVersion: "words-writer1-artifact-recovery/v2", prompt: "v2 absolute materialization", transport, artifactClient: client, validateOutput: (raw) => JSON.parse(raw), artifactBackoffMs: [0, 0, 0] });
+  assert.equal(result.receipt.recoveryVersion, "words-writer1-artifact-recovery/v2"); assert.equal(counters.sends, 1); assert.equal(lists, 3); assert.equal(downloads, 1);
+});
+
+test("v2 requires the verified failed v1 binding before any same-thread send", async () => {
+  const counters = { creates: 0, resumes: 0, sends: 0 }; await assert.rejects(() => recoverCursorWriterArtifactV2ForTest({ env, receiptStore: createMemoryCursorReceiptStore(), prior: artifactPrior, recoveryVersion: "words-writer1-artifact-recovery/v2", prompt: "v2", transport: artifactTransport(counters, { available: false }), artifactClient: artifactClientFor({ available: false, lists: 0, downloads: 0 }), validateOutput: (raw: string) => JSON.parse(raw), artifactBackoffMs: [0] } as any), /failed v1 recovery binding/u); assert.deepEqual(counters, { creates: 0, resumes: 0, sends: 0 });
+});
+
+test("v2 finds an already-valid listed artifact before claiming or sending", async () => {
+  const store = createMemoryCursorReceiptStore(); const state = { available: true, lists: 0, downloads: 0 }; const counters = { creates: 0, resumes: 0, sends: 0 };
+  const result = await recoverCursorWriterArtifactV2ForTest({ env, receiptStore: store, prior: artifactPrior, previousRecovery, recoveryVersion: "words-writer1-artifact-recovery/v2", prompt: "v2 absolute materialization", transport: artifactTransport(counters, state), artifactClient: artifactClientFor(state), validateOutput: (raw) => JSON.parse(raw), artifactBackoffMs: [0] });
+  assert.equal(result.receipt.recoveryVersion, "words-writer1-artifact-recovery/v2"); assert.deepEqual(counters, { creates: 0, resumes: 0, sends: 0 }); assert.equal(state.lists, 1);
 });
 
 test("artifact recovery rejects a summary artifact without a completed receipt, then reattaches the persisted run", async () => {

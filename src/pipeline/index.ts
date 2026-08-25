@@ -9,6 +9,7 @@ export {
   createCursorWriterExecutor,
   createJsonCursorReceiptStore,
   createMemoryCursorReceiptStore,
+  recoverCursorWriterArtifactV2,
   isCursorWriterExecutor,
   validateCursorWriterReceipt,
   validateCursorWriterRuntime,
@@ -24,4 +25,7 @@ export type {
   StoredCursorWriterReceipt,
   CursorModelRegistry,
   CursorModelRegistryItem,
+  CursorArtifactRecoveryFailureBinding,
+  CursorArtifactRecoveryV2Input,
+  CursorArtifactRecoveryV2Receipt,
 } from './cursor-writer.js';

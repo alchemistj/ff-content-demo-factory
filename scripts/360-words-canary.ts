@@ -2,7 +2,7 @@ import { createHash } from "node:crypto";
 import { existsSync, readFileSync } from "node:fs";
 import * as fs from "node:fs/promises";
 import * as path from "node:path";
-import { createCursorWriterExecutor, createJsonCursorReceiptStore, recoverCursorWriterArtifact, validateCursorArtifactRecoveryReceipt, validateCursorWriterReceipt, type CursorArtifactRecoveryPrior, type CursorDispatchNotice, type CursorFollowUpBindings, type CursorWriterReceipt } from "../src/pipeline/cursor-writer.js";
+import { createCursorWriterExecutor, createJsonCursorReceiptStore, recoverCursorWriterArtifactV2, validateCursorArtifactRecoveryV2Receipt, validateCursorWriterReceipt, type CursorArtifactRecoveryFailureBinding, type CursorArtifactRecoveryPrior, type CursorDispatchNotice, type CursorFollowUpBindings, type CursorWriterReceipt } from "../src/pipeline/cursor-writer.js";
 import { digestOf } from "../src/contracts/digests.js";
 
 const DORMANT_NONCE = "DORMANT";
@@ -22,6 +22,19 @@ export const ARTIFACT_RECOVERY_THREAD_URL = `https://cursor.com/agents/${ARTIFAC
 export const ARTIFACT_RECOVERY_SOURCE_BRANCH = "architect/360-words-canary";
 export const ARTIFACT_RECOVERY_SEALED_HANDOFF_DIGEST = "sha256:715f651a53055444b8381dd8a276a2046d93776c61d88a2193cc2d42a1c83ad6";
 export const ARTIFACT_RECOVERY_PATH = "artifacts/writer1-output.json";
+export const ARTIFACT_RECOVERY_V1_ACTION_RUN_ID = "32793130502";
+export const ARTIFACT_RECOVERY_V1_ARTIFACT_ID = 9543869555;
+export const ARTIFACT_RECOVERY_V1_AGENT_ID = ARTIFACT_RECOVERY_AGENT_ID;
+export const ARTIFACT_RECOVERY_V1_RUN_ID = "run-1b862d23-a748-4574-909a-66aac905eb97";
+export const ARTIFACT_RECOVERY_V1_THREAD_URL = ARTIFACT_RECOVERY_THREAD_URL;
+export const ARTIFACT_RECOVERY_V1_SOURCE_SHA = "6cf9b42e43e5728614a9b7302a8791e527197e3d";
+export const ARTIFACT_RECOVERY_V1_ARTIFACT_DIGEST = "sha256:2d1d1c0d281917025be80898ab03c94171d59d1e2920ecf540b241f666464502";
+export const ARTIFACT_RECOVERY_V1_FAILURE_CODE = "CURSOR_ARTIFACT_MISSING" as const;
+export const ARTIFACT_RECOVERY_V1_RECOVERY_VERSION = "words-writer1-artifact-recovery/v1" as const;
+export const ARTIFACT_RECOVERY_V2_RECOVERY_VERSION = "words-writer1-artifact-recovery/v2" as const;
+export const ARTIFACT_RECOVERY_V1_PROMPT_DIGEST = "sha256:1b9726fb288041c08ff2a58f2857ac209b0d4ff4fa7dc1ae8c52bd0a4ab6ded6";
+export const ARTIFACT_RECOVERY_V2_PROMPT_DIGEST = "sha256:76a6571a8b6bfaf233bf48534aaf3b161ffeea4e77010023a3e127de29b69ace";
+export const ARTIFACT_RECOVERY_V2_ABSOLUTE_ARTIFACT_PATH = "/opt/cursor/artifacts/writer1-output.json";
 type Dict = Record<string, any>;
 
 function jsonFile(root: string, relative: string): string { return path.join(root, relative); }
@@ -271,27 +284,49 @@ SEALED WRITER1 INPUT:
 
 export const WRITER1_ARTIFACT_RECOVERY_PROMPT = `Versioned Writer1 artifact recovery for the existing same-thread agent. Do not write, rewrite, summarize, recompute, or regenerate any website copy. Read the already-written complete words-writer1-output/v1 from the current agent workspace. Materialize that exact existing JSON under artifacts/writer1-output.json. The artifact file must contain the complete JSON object, not a summary, Markdown, or prose wrapper. If the complete existing JSON is genuinely unavailable, materialize the exact literal OUTPUT_NOT_RECOVERABLE at artifacts/writer1-output.json. Do not create Home, Contact, Strategy, spring-repair, or opener-installation pages or routes. Do not run Writer2. The existing sealed Writer1 output must remain unchanged; this is retrieval and materialization only.`;
 
+export const WRITER1_ARTIFACT_RECOVERY_V2_PROMPT = `Versioned Writer1 artifact materialization recovery v2 for the existing same-thread agent. Do not write, rewrite, summarize, recompute, or generate website copy. Preserve the existing completed two-page words-writer1-output/v1 JSON exactly if it exists anywhere in the repository or agent workspace. Move or copy that exact complete JSON, without a prose wrapper or Markdown, to the absolute agent workspace path /opt/cursor/artifacts/writer1-output.json. The Cursor API artifact listing and download path remains the logical relative path artifacts/writer1-output.json; do not substitute a repository-relative path for the absolute workspace target. If the existing complete two-page JSON is unavailable but the already-written two-page draft exists in the repository or workspace, materialize that existing draft at the absolute path without changing its words. Do not summarize, rewrite, recompute, or create new pages. The artifact must be the complete words-writer1-output/v1 object with exactly /garage-door-repair and /garage-door-installation, or the exact literal OUTPUT_NOT_RECOVERABLE. If unrecoverable, materialize that exact sentinel at /opt/cursor/artifacts/writer1-output.json. Do not create Home, Contact, Strategy, spring-repair, or opener-installation routes, navigation items, or CTAs. Do not run Writer2. This is a versioned same-thread materialization correction only.`;
+
+export function validatePriorArtifactRecoveryFailure(root: string, expected = { actionRunId: ARTIFACT_RECOVERY_V1_ACTION_RUN_ID, artifactId: ARTIFACT_RECOVERY_V1_ARTIFACT_ID, agentId: ARTIFACT_RECOVERY_V1_AGENT_ID, runId: ARTIFACT_RECOVERY_V1_RUN_ID, threadUrl: ARTIFACT_RECOVERY_V1_THREAD_URL, sourceBranch: ARTIFACT_RECOVERY_SOURCE_BRANCH, sourceSha: ARTIFACT_RECOVERY_V1_SOURCE_SHA, artifactDigest: ARTIFACT_RECOVERY_V1_ARTIFACT_DIGEST }): CursorArtifactRecoveryFailureBinding {
+  const dispatch = readJson(root, "runtime/dispatch-receipt.json");
+  const failure = readJson(root, "runtime/failure.json");
+  const state = readJson(root, "runtime/state.json");
+  const artifactVerification = readJson(root, "runtime/artifact-verification.json");
+  const promptDigest = digestOf(WRITER1_ARTIFACT_RECOVERY_PROMPT);
+  if (promptDigest !== ARTIFACT_RECOVERY_V1_PROMPT_DIGEST) throw new Error("versioned v1 recovery prompt changed without updating its binding");
+  if (artifactVerification.actionRunId !== expected.actionRunId || Number(artifactVerification.artifactId) !== expected.artifactId || artifactVerification.headBranch !== expected.sourceBranch || artifactVerification.headSha !== expected.sourceSha || artifactVerification.artifactDigest !== expected.artifactDigest) throw new Error("prior v1 recovery artifact metadata is not verified");
+  if (dispatch.schemaVersion !== "words-canary-dispatch/v2" || dispatch.status !== "dispatched" || dispatch.stage !== "writer1" || dispatch.provider !== "cursor-sdk" || dispatch.requestedModel !== "cursor-grok-4.6-high" || dispatch.officialModel !== "grok-4.6" || dispatch.fast !== false || dispatch.agentId !== expected.agentId || dispatch.jobId !== expected.runId || dispatch.threadUrl !== expected.threadUrl || dispatch.promptDigest !== promptDigest) throw new Error("prior v1 recovery dispatch identity, model, thread, run, or prompt binding is invalid");
+  if (failure.status !== "failed" || failure.stage !== "writer1" || failure.errorCode !== ARTIFACT_RECOVERY_V1_FAILURE_CODE || failure.writer2Blocked !== true) throw new Error("prior v1 recovery did not fail closed on the missing artifact");
+  if (state.stage !== "writer1" || state.writer2Blocked !== true || state.nextStage !== null || state.errorCode !== ARTIFACT_RECOVERY_V1_FAILURE_CODE) throw new Error("prior v1 recovery state is not the verified missing-artifact failure");
+  if (existsSync(path.join(root, "runtime/writer1-recovery-receipt.json")) || existsSync(path.join(root, "outputs/writer1-output.json"))) throw new Error("prior v1 recovery unexpectedly contains a completed receipt or output");
+  return { recoveryVersion: ARTIFACT_RECOVERY_V1_RECOVERY_VERSION, actionRunId: expected.actionRunId, artifactId: expected.artifactId, sourceBranch: expected.sourceBranch, sourceSha: expected.sourceSha, artifactDigest: expected.artifactDigest, runId: expected.runId, agentId: expected.agentId, threadUrl: expected.threadUrl, promptDigest, failureCode: ARTIFACT_RECOVERY_V1_FAILURE_CODE };
+}
+
 export async function runArtifactRecovery(root = process.cwd()): Promise<{ status: string; stage: string; threadUrl?: string; recoveryRunId?: string }> {
   const control = readJson(root, ".factory-wake/360-words-control.json");
   if (control.requestedBy !== "architect" || control.stage !== "writer1" || control.policy?.writer1Only !== true || control.policy?.provider !== "cursor-sdk" || control.policy?.model !== "cursor-grok-4.6-high" || control.policy?.fast !== false) throw new Error("360 canary control is not the immutable Writer1 policy");
   if (control.wakeNonce === DORMANT_NONCE) return { status: "dormant", stage: "writer1" };
   if (control.policy?.mode !== "artifact-recovery") throw new Error("active 360 canary wake must explicitly select artifact-recovery mode");
   const recoveryPins = control.policy?.recovery;
-  if (recoveryPins?.priorActionRunId !== ARTIFACT_RECOVERY_ACTION_RUN_ID || Number(recoveryPins?.priorArtifactId) !== ARTIFACT_RECOVERY_ARTIFACT_ID || recoveryPins?.priorAgentId !== ARTIFACT_RECOVERY_AGENT_ID || recoveryPins?.priorRunId !== ARTIFACT_RECOVERY_PRIOR_RUN_ID || recoveryPins?.priorThreadUrl !== ARTIFACT_RECOVERY_THREAD_URL || recoveryPins?.artifactPath !== ARTIFACT_RECOVERY_PATH || recoveryPins?.sourceBranch !== ARTIFACT_RECOVERY_SOURCE_BRANCH || recoveryPins?.sealedHandoffDigest !== ARTIFACT_RECOVERY_SEALED_HANDOFF_DIGEST || typeof recoveryPins?.sourceSha !== "string" || !/^[0-9a-f]{40}$/u.test(recoveryPins.sourceSha)) throw new Error("active artifact-recovery wake is missing the exact prior/run/source pins");
+  if (recoveryPins?.recoveryVersion !== ARTIFACT_RECOVERY_V2_RECOVERY_VERSION || recoveryPins?.priorActionRunId !== ARTIFACT_RECOVERY_ACTION_RUN_ID || Number(recoveryPins?.priorArtifactId) !== ARTIFACT_RECOVERY_ARTIFACT_ID || recoveryPins?.priorAgentId !== ARTIFACT_RECOVERY_AGENT_ID || recoveryPins?.priorRunId !== ARTIFACT_RECOVERY_PRIOR_RUN_ID || recoveryPins?.priorThreadUrl !== ARTIFACT_RECOVERY_THREAD_URL || recoveryPins?.artifactPath !== ARTIFACT_RECOVERY_PATH || recoveryPins?.sourceBranch !== ARTIFACT_RECOVERY_SOURCE_BRANCH || recoveryPins?.sealedHandoffDigest !== ARTIFACT_RECOVERY_SEALED_HANDOFF_DIGEST || typeof recoveryPins?.sourceSha !== "string" || !/^[0-9a-f]{40}$/u.test(recoveryPins.sourceSha) || recoveryPins?.priorRecoveryActionRunId !== ARTIFACT_RECOVERY_V1_ACTION_RUN_ID || Number(recoveryPins?.priorRecoveryArtifactId) !== ARTIFACT_RECOVERY_V1_ARTIFACT_ID || recoveryPins?.priorRecoveryAgentId !== ARTIFACT_RECOVERY_V1_AGENT_ID || recoveryPins?.priorRecoveryRunId !== ARTIFACT_RECOVERY_V1_RUN_ID || recoveryPins?.priorRecoveryThreadUrl !== ARTIFACT_RECOVERY_V1_THREAD_URL || recoveryPins?.priorRecoverySourceSha !== ARTIFACT_RECOVERY_V1_SOURCE_SHA || recoveryPins?.priorRecoveryArtifactDigest !== ARTIFACT_RECOVERY_V1_ARTIFACT_DIGEST || recoveryPins?.priorRecoveryFailureCode !== ARTIFACT_RECOVERY_V1_FAILURE_CODE || recoveryPins?.priorRecoveryPromptDigest !== ARTIFACT_RECOVERY_V1_PROMPT_DIGEST || recoveryPins?.absoluteArtifactPath !== ARTIFACT_RECOVERY_V2_ABSOLUTE_ARTIFACT_PATH || recoveryPins?.apiArtifactPath !== ARTIFACT_RECOVERY_PATH || recoveryPins?.promptDigest !== ARTIFACT_RECOVERY_V2_PROMPT_DIGEST || typeof recoveryPins?.idempotencyKey !== "string" || !recoveryPins.idempotencyKey.includes(":writer1:artifact-recovery:v2:")) throw new Error("active artifact-recovery v2 wake is missing the exact prior/run/source/prompt pins");
   if (typeof control.wakeNonce !== "string" || !/^[A-Za-z0-9][A-Za-z0-9._-]{15,127}$/u.test(control.wakeNonce)) throw new Error("active 360 canary wake requires a unique nonce");
   if (control.restore !== null) throw new Error("Writer1 artifact recovery must not restore or mutate the sealed handoff");
   if (process.env.CURSOR_MODEL !== "cursor-grok-4.6-high" || !process.env.CURSOR_API_KEY || process.env.CURSOR_FAST !== "false") throw new Error("Cursor production environment must provide exact model, API key, and fast=false");
   const priorRoot = process.env.WRITER1_PRIOR_DISPATCH_ROOT;
   if (!priorRoot) throw new Error("exact prior Writer1 dispatch artifact must be downloaded before artifact recovery");
+  const priorRecoveryRoot = process.env.WRITER1_PRIOR_RECOVERY_ROOT;
+  if (!priorRecoveryRoot) throw new Error("the failed v1 Writer1 recovery artifact must be restored before v2 artifact materialization");
   const sealed = validateSealed(root);
   const payload = writer1Projection(sealed);
   const prior = validatePriorArtifactRecoveryDispatch(priorRoot, { actionRunId: ARTIFACT_RECOVERY_ACTION_RUN_ID, artifactId: ARTIFACT_RECOVERY_ARTIFACT_ID, agentId: ARTIFACT_RECOVERY_AGENT_ID, jobId: ARTIFACT_RECOVERY_PRIOR_RUN_ID, threadUrl: ARTIFACT_RECOVERY_THREAD_URL, sourceBranch: ARTIFACT_RECOVERY_SOURCE_BRANCH, sourceSha: recoveryPins.sourceSha });
   if (prior.inputDigest !== digestOf(payload) || (prior.sealedHandoffDigest && prior.sealedHandoffDigest !== sealed.handoff.resealDigest)) throw new Error("prior Writer1 dispatch is not bound to the current sealed 360 handoff");
+  const previousRecovery = validatePriorArtifactRecoveryFailure(priorRecoveryRoot);
+  if (previousRecovery.agentId !== prior.agentId || previousRecovery.threadUrl !== prior.threadUrl || previousRecovery.promptDigest !== ARTIFACT_RECOVERY_V1_PROMPT_DIGEST || recoveryPins.idempotencyKey !== `${previousRecovery.runId}:writer1:artifact-recovery:v2:${prior.inputDigest}:${ARTIFACT_RECOVERY_V2_PROMPT_DIGEST}`) throw new Error("v2 recovery idempotency or previous v1 recovery binding is invalid");
   await writeJson(jsonFile(root, "canary/runtime/prior-dispatch-verification.json"), { status: "verified", prior });
-  await writeJson(jsonFile(root, "canary/runtime/state.json"), { status: "writer1-artifact-recovery-dispatching", stage: "writer1", runId: sealed.handoff.runId, sealedHandoffDigest: sealed.handoff.resealDigest, priorRunId: prior.runId, priorAgentId: prior.agentId, priorThreadUrl: prior.threadUrl, nextStage: null, writer2Blocked: true });
-  const result = await recoverCursorWriterArtifact({ receiptStore: createJsonCursorReceiptStore(jsonFile(root, "canary/runtime/cursor-receipts.json")), prior, prompt: WRITER1_ARTIFACT_RECOVERY_PROMPT, onFollowUp: (notice) => dispatchReceipt(root, notice), validateOutput: (output) => parseAndValidateWriter1Output(output, payload) });
+  await writeJson(jsonFile(root, "canary/runtime/prior-recovery-verification.json"), { status: "verified", previousRecovery });
+  await writeJson(jsonFile(root, "canary/runtime/state.json"), { status: "writer1-artifact-recovery-v2-dispatching", stage: "writer1", recoveryVersion: ARTIFACT_RECOVERY_V2_RECOVERY_VERSION, runId: sealed.handoff.runId, sealedHandoffDigest: sealed.handoff.resealDigest, priorRunId: prior.runId, priorRecoveryRunId: previousRecovery.runId, priorAgentId: prior.agentId, priorThreadUrl: prior.threadUrl, nextStage: null, writer2Blocked: true });
+  const result = await recoverCursorWriterArtifactV2({ receiptStore: createJsonCursorReceiptStore(jsonFile(root, "canary/runtime/cursor-receipts.json")), prior, previousRecovery, recoveryVersion: ARTIFACT_RECOVERY_V2_RECOVERY_VERSION, prompt: WRITER1_ARTIFACT_RECOVERY_V2_PROMPT, onFollowUp: (notice) => dispatchReceipt(root, notice), validateOutput: (output) => parseAndValidateWriter1Output(output, payload) });
   const parsed = result.output as Dict;
-  validateCursorArtifactRecoveryReceipt(result.receipt, prior, digestOf(WRITER1_ARTIFACT_RECOVERY_PROMPT), process.env.CURSOR_API_KEY);
+  validateCursorArtifactRecoveryV2Receipt(result.receipt, prior, previousRecovery, digestOf(WRITER1_ARTIFACT_RECOVERY_V2_PROMPT), process.env.CURSOR_API_KEY);
   await writeJson(jsonFile(root, "canary/runtime/writer1-recovery-receipt.json"), result.receipt);
   await writeJson(jsonFile(root, "canary/runtime/writer1-validation.json"), { status: "valid", schemaVersion: parsed.schemaVersion, routes: parsed.pages.map((page: Dict) => page.url), outputDigest: result.receipt.outputDigest, artifact: result.receipt.artifact, recoveryRunId: result.receipt.recoveryRunId, agentId: result.receipt.agentId, threadUrl: result.threadUrl, nextStage: null, writer2Blocked: true });
   await writeJson(jsonFile(root, "canary/outputs/writer1-output.json"), parsed);
