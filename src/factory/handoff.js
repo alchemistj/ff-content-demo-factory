@@ -101,11 +101,12 @@ function validateTerminalCursorResult(result, expected) {
   const commentMatch = commentPattern.exec(String(result.commentUrl || ''));
   if (!commentMatch || String(result.commentId) !== commentMatch[1]) throw new Error('Cursor terminal result comment URL is not bound to the authoritative repository, issue, and comment id');
   if (result.authorType != null && result.authorType !== 'Bot') throw new Error('Cursor terminal result bot identity is not authenticated');
-  if (result.handoffId !== result.pending.handoffId || result.dispatchKey !== result.pending.envelope.dispatchKey) throw new Error('Cursor terminal result handoff binding is mismatched');
+  const strictDispatchBinding = expected?.strictDispatchBinding === true;
+  if (result.handoffId !== result.pending.handoffId || result.dispatchKey !== result.pending.envelope.dispatchKey || (strictDispatchBinding && result.dispatchDigest !== result.pending.envelope.dispatchDigest) || (result.dispatchDigest != null && result.dispatchDigest !== result.pending.envelope.dispatchDigest)) throw new Error('Cursor terminal result handoff/dispatch binding is mismatched');
   const receipt = result.receipt;
   const kind = receipt?.operation;
   if (!kind) throw new Error('Cursor terminal result receipt operation is missing');
-  validateJobReceipt(receipt, { kind, expectedEnvelope: { ...result.pending.envelope, operation: kind, stage: kind } });
+  validateJobReceipt(receipt, { kind, expectedEnvelope: { ...result.pending.envelope, operation: kind, stage: kind, ...(strictDispatchBinding ? { handoffId: result.pending.handoffId, dispatchKey: result.pending.envelope.dispatchKey, dispatchDigest: result.pending.envelope.dispatchDigest } : {}) } });
   canonicalThreadUrl(receipt.threadUrl);
   return result;
 }
