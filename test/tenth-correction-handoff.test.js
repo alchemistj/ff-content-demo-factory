@@ -19,8 +19,9 @@ const { runCurrentHeadGate1Canary, verifyApprovedLineageRuntimePacket } = requir
 const { PLACE_ID, verifySealed360Lineage, HISTORICAL_360, compareApprovedLineage } = require('../src/factory/sealed-evidence');
 const { main: prepareRuntimePacket } = require('../scripts/prepare-360-gate1-canary-packet');
 const { selectNewestDispatchComment } = require('../scripts/select-cursor-dispatch-comment');
-const { markerFor, markerBody, assertTransition, findClaim } = require('../src/factory/github-ledger');
+const { markerFor, markerBody, assertTransition, findClaim, recoverClaim } = require('../src/factory/github-ledger');
 const { claimPhaseBAtomic } = require('../src/factory/handoff');
+const { collect } = require('../src/collect-cursor-terminal-result');
 
 function completeBinding(extra = {}) {
   return {
@@ -74,7 +75,7 @@ function samplePending(extra = {}) {
   });
   return createPendingHandoff({
     dispatchPacket: packet,
-    inputManifest: { expectedHeadSha: 'head-1', manifestDigest: 'sha256:manifest' },
+    inputManifest: { expectedHeadSha: 'head-1', manifestDigest: 'sha256:manifest', sourceManifestDigest: 'sha256:manifest-source' },
     runId: 'canary-run-1',
     prospectId: 'prospect-1',
     placeId: PLACE_ID,
@@ -155,6 +156,7 @@ test('forward correction binds approved historical lineage into phase-A handoff 
   const approvedLineage = {
     packetDigest: 'sha256:packet',
     sourceArtifactDigest: 'sha256:source-artifact',
+    sourceManifestDigest: 'sha256:manifest-source',
     evidenceDigest: 'sha256:evidence',
     pageSetDigest: 'sha256:pages',
     prescriptionDigest: 'sha256:prescription',
@@ -164,9 +166,10 @@ test('forward correction binds approved historical lineage into phase-A handoff 
     routes: ['/', '/service-a', '/service-b', '/contact'],
   };
   const pending = samplePending({ approvedLineage });
-  assert.deepEqual(pending.envelope.approvedLineage, approvedLineage);
+  assert.equal(pending.envelope.approvedLineage, undefined);
+  assert.deepEqual(pending.envelope.historicalLineageSeed, { seedOnly: true, ...approvedLineage });
   assert.doesNotThrow(() => validatePendingHandoff(pending));
-  const tampered = { ...pending, envelope: { ...pending.envelope, approvedLineage: { ...approvedLineage, strategyDigest: 'sha256:forged' } } };
+  const tampered = { ...pending, envelope: { ...pending.envelope, historicalLineageSeed: { ...pending.envelope.historicalLineageSeed, strategyDigest: 'sha256:forged' } } };
   assert.throws(() => validatePendingHandoff(tampered), /handoff digest|invented/);
   const root = fs.mkdtempSync(path.join(os.tmpdir(), 'factory-approved-runtime-'));
   await assert.rejects(() => runCurrentHeadGate1Canary({
@@ -192,16 +195,46 @@ test('twelfth correction verifies the runtime approved handoff and canonical pre
   fs.copyFileSync('canary/inputs/360-gate1-request.json', productionRequest); fs.copyFileSync('canary/inputs/360-gate1-selection.json', productionSelection); fs.copyFileSync('canary/inputs/360-gate1-qa.json', productionQa);
   const productionPhaseA = await runCurrentHeadGate1Canary({ root, requestFile: productionRequest, selectionFile: productionSelection, qaFile: productionQa, cursorBundleFile: '', env: canaryEnv({ FACTORY_CANARY_PHASE: 'dispatch', FACTORY_CHECKED_OUT_SHA: head, FACTORY_EXPECTED_HEAD_SHA: head, EXPECTED_HEAD_SHA: head, FACTORY_PHASE_A_PRODUCTION: 'true', FACTORY_APPROVED_LINEAGE_PACKET: packetFile }) });
   assert.equal(productionPhaseA.proof.awaitingCursorReceipt, true);
-  assert.ok(JSON.parse(fs.readFileSync(path.join(root, 'canary/outputs/current-head-gate1-pending.json'), 'utf8')).envelope.approvedLineage);
+  assert.ok(JSON.parse(fs.readFileSync(path.join(root, 'canary/outputs/current-head-gate1-pending.json'), 'utf8')).envelope.historicalLineageSeed);
   const packet = JSON.parse(fs.readFileSync(packetFile, 'utf8'));
   const forged = JSON.parse(JSON.stringify(packet)); forged.approvedLineage.strategyDigest = 'sha256:forged'; forged.packetDigest = digest({ ...forged, packetDigest: undefined }); fs.writeFileSync(packetFile, JSON.stringify(forged));
   assert.throws(() => verifyApprovedLineageRuntimePacket({ root, filename: packetFile, assertedHeadSha: head, dispatch: { repository: 'alchemistj/ff-content-demo-factory', issueNumber: 8, prNumber: 1, branch: 'architect/greenfield-gate1' } }), /strategyDigest|historical lineage/);
   const historicalHandoff = JSON.parse(fs.readFileSync(path.join(root, 'canary/outputs/360-four-page-reseal-handoff.json'), 'utf8'));
   const historical = verifySealed360Lineage({ root, handoff: historicalHandoff });
-  const unchanged = { ...historical, pages: historicalHandoff.pages };
-  assert.doesNotThrow(() => compareApprovedLineage(historical, unchanged, 'unchanged checkpoint'));
-  for (const field of ['sourceArtifactDigest', 'evidenceDigest', 'pageSetDigest', 'prescriptionDigest', 'approvalDigest', 'strategyDigest']) assert.throws(() => compareApprovedLineage(historical, { ...unchanged, [field]: 'sha256:forged' }, `mutated ${field}`), new RegExp(field));
-  assert.throws(() => compareApprovedLineage(historical, { ...unchanged, routes: [...historical.routes.slice(0, 3), '/foreign'] }, 'mutated routes'), /services\/routes/);
+  const historicalProjection = { ...historical, pages: historicalHandoff.pages };
+  assert.equal(historicalProjection.sourceManifestDigest, digest(JSON.parse(fs.readFileSync(path.join(root, 'canary/inputs/360-four-page-reseal-ledger.json'), 'utf8'))));
+  for (const field of ['sourceArtifactDigest', 'sourceManifestDigest', 'evidenceDigest', 'pageSetDigest', 'prescriptionDigest', 'approvalDigest', 'strategyDigest']) assert.throws(() => compareApprovedLineage(historical, { ...historicalProjection, [field]: 'sha256:forged' }, `mutated ${field}`), new RegExp(field));
+  assert.throws(() => compareApprovedLineage(historical, { ...historicalProjection, routes: [...historical.routes.slice(0, 3), '/foreign'] }, 'mutated routes'), /services\/routes/);
+});
+
+test('current-head Gate 1 never carries stale historical approval and emits a readable Needs Josh artifact', async () => {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), 'factory-current-needs-josh-'));
+  const head = spawnSync('git', ['rev-parse', 'HEAD'], { encoding: 'utf8' }).stdout.trim();
+  for (const file of ['canary/inputs/360-four-page-reseal-approval.json', 'canary/inputs/360-four-page-reseal-ledger.json', 'canary/inputs/360-garage-door-and-more.discovery.json', 'canary/outputs/360-four-page-reseal-handoff.json']) {
+    const target = path.join(root, file); fs.mkdirSync(path.dirname(target), { recursive: true }); fs.copyFileSync(file, target);
+  }
+  const packetFile = path.join(root, 'runtime/approved.json');
+  prepareRuntimePacket({ root, lineageRoot: root, currentHead: head, expectedHeadSha: head, target: packetFile, env: {} });
+  const requestFile = path.join(root, 'request.json'); const selectionFile = path.join(root, 'selection.json'); const qaFile = path.join(root, 'qa.json');
+  fs.copyFileSync('canary/inputs/360-gate1-request.json', requestFile); fs.copyFileSync('canary/inputs/360-gate1-selection.json', selectionFile); fs.copyFileSync('canary/inputs/360-gate1-qa.json', qaFile);
+  const dispatchEnv = canaryEnv({ FACTORY_CANARY_PHASE: 'dispatch', FACTORY_CHECKED_OUT_SHA: head, FACTORY_EXPECTED_HEAD_SHA: head, EXPECTED_HEAD_SHA: head, FACTORY_PHASE_A_PRODUCTION: 'true', FACTORY_APPROVED_LINEAGE_PACKET: packetFile });
+  await runCurrentHeadGate1Canary({ root, requestFile, selectionFile, qaFile, cursorBundleFile: '', env: dispatchEnv });
+  const pendingFile = path.join(root, 'canary/outputs/current-head-gate1-pending.json');
+  const pending = JSON.parse(fs.readFileSync(pendingFile, 'utf8'));
+  const packet = pending.dispatchPacket;
+  const bundleFile = path.join(root, 'cursor-bundle.json');
+  fs.writeFileSync(bundleFile, JSON.stringify({
+    schemaVersion: 'cursor-cloud-agent-bundle-v1', model: packet.model,
+    dispatch: { ...packet, commentUrl: 'https://github.com/alchemistj/ff-content-demo-factory/pull/1#issuecomment-99' },
+    inputManifestDigest: pending.envelope.inputManifestDigest,
+    envelope: { ...pending.envelope, handoffId: pending.handoffId, historicalLineageSeed: pending.envelope.historicalLineageSeed },
+    jobs: {},
+  }, null, 2));
+  const result = await runCurrentHeadGate1Canary({ root, requestFile, selectionFile, qaFile, cursorBundleFile: bundleFile, env: canaryEnv({ FACTORY_CANARY_PHASE: 'integrated', FACTORY_CHECKED_OUT_SHA: head, FACTORY_EXPECTED_HEAD_SHA: head, EXPECTED_HEAD_SHA: head, FACTORY_PHASE_A_PRODUCTION: 'true', FACTORY_APPROVED_LINEAGE_PACKET: packetFile, FACTORY_HANDOFF_FILE: pendingFile }), deps: mockCycleDeps() });
+  assert.equal(result.proof.needsJosh.code, 'CURRENT_LINEAGE_DIFFERS_FROM_HISTORICAL_SEED');
+  assert.equal(result.proof.gate1State, 'awaiting-human-gate-1');
+  assert.match(fs.readFileSync(path.join(root, 'canary/outputs/gate1.md'), 'utf8'), /Needs Josh|Historical approval was not carried forward/);
+  assert.doesNotMatch(fs.readFileSync(path.join(root, 'canary/outputs/gate1.md'), 'utf8'), /approved historical lineage exactly|approvedGate1: true/);
 });
 
 test('tenth correction recomputes input digests and rejects cross-prospect or tampered payloads', () => {
@@ -354,7 +387,7 @@ test('tenth correction resume downloads the phase-A artifact and refuses duplica
     model: packet.model,
     dispatch: { ...packet, commentUrl: 'https://github.com/alchemistj/ff-content-demo-factory/issues/8#issuecomment-1' },
     inputManifestDigest: pending.envelope.inputManifestDigest,
-    envelope: { checkedOutSha: pending.envelope.checkedOutSha, inputManifestDigest: pending.envelope.inputManifestDigest },
+    envelope: { checkedOutSha: pending.envelope.checkedOutSha, inputManifestDigest: pending.envelope.inputManifestDigest, dispatchKey: pending.envelope.dispatchKey, dispatchDigest: pending.envelope.dispatchDigest, handoffId: pending.handoffId, runId: pending.envelope.runId, prospectId: pending.envelope.prospectId, sourceCheckpointDigest: pending.envelope.sourceCheckpointDigest, sourceManifestDigest: pending.envelope.sourceManifestDigest },
   }));
   const casFile = path.join(resumeRoot, 'handoff-cas.json');
   const deps = mockCycleDeps();
@@ -488,7 +521,11 @@ test('forward correction workflow events share Issue 8 / PR 1 context and retry 
   assert.match(resumeWorkflow, /phase_b_claimed/);
   assert.doesNotMatch(resumeWorkflow, /claimPhaseBAtomic/);
   assert.match(resumeWorkflow, /FACTORY_STRICT_TERMINAL_BINDING: 'true'/);
+  assert.match(resumeWorkflow, /FACTORY_IN_MOTION_RECOVERY/);
+  assert.match(resumeWorkflow, /FACTORY_PHASE_B_RECOVERY/);
+  assert.match(resumeWorkflow, /parse-cursor-terminal-comment\.js/);
   assert.match(dispatchWorkflow, /phase_a_run_id/);
+  assert.match(dispatchWorkflow, /Input manifest digest/);
   assert.doesNotMatch(dispatchWorkflow, /PR_NUMBER: \$\{\{ inputs\.pr_number \}\}\n\s+PR_NUMBER:/);
   assert.match(handoff, /issues\/\$\{issueNumber\}\|pull\/\$\{prNumber\}/);
   assert.match(sealed, /provider: 'repository-sealed-evidence'/);
@@ -549,4 +586,31 @@ test('twelfth correction runs split dispatch and resume event harness against du
   if (!findClaim(github.comments('issue8'), { ...context, kind: 'resume', status: 'resumed' })) phaseBExecutions += 1;
   assert.equal(phaseBExecutions, 1);
   assert.equal(findClaim(github.comments('issue8'), { ...context, kind: 'resume' }).status, 'resumed');
+});
+
+test('thirteenth correction recovers durable crashes by owner and executes real selector/terminal scripts', () => {
+  const pending = samplePending();
+  const context = { repository: 'alchemistj/ff-content-demo-factory', issueNumber: 8, prNumber: 1, branch: pending.dispatchPacket.branch, checkedOutSha: pending.envelope.checkedOutSha, handoffId: pending.handoffId, dispatchKey: pending.envelope.dispatchKey, dispatchDigest: pending.envelope.dispatchDigest, runId: pending.envelope.runId, prospectId: pending.envelope.prospectId, sourceCheckpointDigest: pending.envelope.sourceCheckpointDigest, sourceManifestDigest: pending.envelope.sourceManifestDigest, inputManifestDigest: pending.envelope.inputManifestDigest, jobId: pending.phaseARunId };
+  const owner = 'terminal-comment-77';
+  const comments = ['preparing', 'posted', 'in_motion', 'terminal', 'phase_b_claimed'].map((status, index) => {
+    const marker = markerFor({ kind: 'resume', ...context, ownerToken: owner, resultId: '77', status, commentId: String(index + 1), commentUrl: `https://github.com/${context.repository}/issues/8#issuecomment-${index + 1}` });
+    return { id: marker.commentId, html_url: marker.commentUrl, created_at: `2026-01-01T00:00:0${index}Z`, user: { login: 'github-actions[bot]' }, body: markerBody(marker) };
+  });
+  assert.equal(recoverClaim(comments, { ...context, kind: 'resume' }, owner).action, 'resumed');
+  assert.equal(recoverClaim(comments, { ...context, kind: 'resume' }, 'foreign-owner').action, 'noop');
+  assert.throws(() => assertTransition(JSON.parse(comments[2].body.slice('FACTORY_CURSOR_LEDGER_V1\n'.length)), markerFor({ ...context, kind: 'resume', ownerToken: 'foreign-owner', resultId: '77', status: 'terminal' })), /owner.?[Tt]oken/);
+  const dispatchBody = `@cursor\nBranch: ${context.branch}\nReviewed head: ${context.checkedOutSha}\nDispatch key: ${context.dispatchKey}\nDispatch packet digest: ${context.dispatchDigest}\nHandoff ID: ${context.handoffId}\nPhase-A run: ${context.jobId}\nInput manifest digest: ${context.inputManifestDigest}\nDispatch workflow run: dispatch-77`;
+  const dispatchComments = [{ id: 77, html_url: `https://github.com/${context.repository}/pull/1#issuecomment-77`, created_at: '2026-01-01T00:00:00Z', body: dispatchBody }, { id: 78, html_url: `https://github.com/${context.repository}/pull/1#issuecomment-78`, created_at: '2026-01-01T00:01:00Z', body: dispatchBody.replace(`Handoff ID: ${context.handoffId}`, 'Handoff ID: foreign').replace(`Input manifest digest: ${context.inputManifestDigest}`, 'Input manifest digest: foreign') }];
+  assert.equal(selectNewestDispatchComment(dispatchComments, { repository: context.repository, prNumber: 1, branch: context.branch, reviewedHead: context.checkedOutSha, handoffId: context.handoffId, dispatchKey: context.dispatchKey, dispatchDigest: context.dispatchDigest, phaseARunId: context.jobId, inputManifestDigest: context.inputManifestDigest }).id, 77);
+
+  const temp = fs.mkdtempSync(path.join(os.tmpdir(), 'factory-real-event-harness-'));
+  const pendingFile = path.join(temp, 'pending.json'); const commentFile = path.join(temp, 'terminal.md'); const outputFile = path.join(temp, 'result.json');
+  fs.writeFileSync(pendingFile, JSON.stringify(pending, null, 2));
+  const receipt = { operation: 'website-audit', stage: 'website-audit', status: 'completed', terminalStatus: 'succeeded', agentId: 'agent-77', runId: 'cursor-run-77', threadUrl: 'https://cursor.com/agents/agent-77', inputDigest: 'sha256:11111111', outputDigest: 'sha256:22222222', startedAt: '2026-01-01T00:00:00Z', completedAt: '2026-01-01T00:00:01Z', envelope: { ...pending.envelope, handoffId: pending.handoffId, operation: 'website-audit', stage: 'website-audit' } };
+  const raw = { handoffId: pending.handoffId, dispatchKey: pending.envelope.dispatchKey, dispatchDigest: pending.envelope.dispatchDigest, phaseARunId: pending.phaseARunId, receipt, bundle: { schemaVersion: 'cursor-cloud-agent-bundle-v1', model: pending.dispatchPacket.model, dispatch: { ...pending.dispatchPacket, commentUrl: 'https://github.com/alchemistj/ff-content-demo-factory/pull/1#issuecomment-77' }, inputManifestDigest: pending.envelope.inputManifestDigest, envelope: { ...pending.envelope, handoffId: pending.handoffId } } };
+  const fence = String.fromCharCode(96).repeat(3);
+  fs.writeFileSync(commentFile, `noise before\n${fence}json\n${JSON.stringify(raw)}\n${fence}\nnoise after\n`);
+  const collected = collect({ pendingFile, commentFile, outputFile, authorLogin: 'cursor[bot]', commentId: '77', commentUrl: 'https://github.com/alchemistj/ff-content-demo-factory/pull/1#issuecomment-77' });
+  assert.equal(collected.phaseARunId, pending.phaseARunId);
+  assert.equal(JSON.parse(fs.readFileSync(outputFile, 'utf8')).handoffId, pending.handoffId);
 });
