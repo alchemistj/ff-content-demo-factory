@@ -14,11 +14,12 @@ const branch = 'architect/greenfield-gate1';
 const files = ['canary/inputs/360-four-page-reseal-approval.json','canary/inputs/360-four-page-reseal-ledger.json','canary/inputs/360-garage-door-and-more.discovery.json','canary/outputs/360-four-page-reseal-handoff.json'];
 function byteDigest(file) { return 'sha256:' + crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex'); }
 function readJson(file) { return JSON.parse(fs.readFileSync(file, 'utf8')); }
-function main() {
-  const expectedHeadSha = process.env.EXPECTED_HEAD_SHA || process.env.FACTORY_EXPECTED_HEAD_SHA;
-  if (!/^[a-f0-9]{40}$/.test(String(expectedHeadSha || ''))) throw new Error('Runtime packet requires a 40-character EXPECTED_HEAD_SHA; no stale default is allowed');
-  const checkedOutSha = execFileSync('git', ['rev-parse', 'HEAD'], { encoding: 'utf8' }).trim();
-  if (checkedOutSha !== expectedHeadSha) throw new Error(`Runtime packet head mismatch: checkout ${checkedOutSha} is not asserted ${expectedHeadSha}`);
+function main(options = {}) {
+  const expectedHeadSha = options.expectedHeadSha || process.env.EXPECTED_HEAD_SHA || process.env.FACTORY_EXPECTED_HEAD_SHA;
+  const currentHead = options.currentHead || execFileSync('git', ['rev-parse', 'HEAD'], { encoding: 'utf8' }).trim();
+  if (!/^[a-f0-9]{40}$/.test(String(expectedHeadSha || '')) || currentHead !== expectedHeadSha) throw new Error('Runtime packet requires the exact checked-out head; no stale default is allowed');
+  if (options.surface === 'current-proof' && options.sealedReplayExecuted !== true) throw new Error('sealed replay execution is required before current-proof preparation');
+  const checkedOutSha = currentHead;
   const handoff = readJson(files[3]);
   const approval = readJson(files[0]);
   const ledger = readJson(files[1]);
