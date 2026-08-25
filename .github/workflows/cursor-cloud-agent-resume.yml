@@ -45,14 +45,16 @@ jobs:
           mkdir -p canary/phase-a
           test "$ISSUE_NUMBER" = '1'
           dispatch_issue='8'
+          execution_issue='1'
           echo "FACTORY_DISPATCH_ISSUE_NUMBER=$dispatch_issue" >> "$GITHUB_ENV"
-          GH_TOKEN="$GH_TOKEN" gh api --paginate "repos/$REPOSITORY/issues/$dispatch_issue/comments?per_page=100" --jq '.[] | select((.body | contains("Dispatch packet digest:")) and (.body | contains("Handoff ID:"))) | [.id, .html_url, .body] | @tsv' | tail -1 > canary/phase-a/dispatch.tsv
-          test -s canary/phase-a/dispatch.tsv
-          phase_run="$(cut -f3 canary/phase-a/dispatch.tsv | sed -n 's/^Phase-A run: //p' | tail -1)"
+          GH_TOKEN="$GH_TOKEN" gh api --paginate "repos/$REPOSITORY/issues/$execution_issue/comments?per_page=100" > canary/phase-a/dispatch-comments.json
+          dispatch_json="$(node scripts/select-cursor-dispatch-comment.js canary/phase-a/dispatch-comments.json "$(REPOSITORY="$REPOSITORY" node -e "process.stdout.write(JSON.stringify({repository:process.env.REPOSITORY,prNumber:'1'}))")")"
+          printf '%s\n' "$dispatch_json" > canary/phase-a/dispatch.json
+          phase_run="$(DISPATCH_JSON="$dispatch_json" node -e "const {markerValue}=require('./scripts/select-cursor-dispatch-comment');process.stdout.write(markerValue(JSON.parse(process.env.DISPATCH_JSON).body,'Phase-A run')||'')")"
           test -n "$phase_run"
           gh run download "$phase_run" --repo "$GITHUB_REPOSITORY" --name "current-head-gate1-canary-$phase_run" --dir canary/phase-a
           test -f canary/phase-a/current-head-gate1-pending.json
-          dispatch_run="$(cut -f3 canary/phase-a/dispatch.tsv | sed -n 's/^Dispatch workflow run: //p' | tail -1)"
+          dispatch_run="$(DISPATCH_JSON="$dispatch_json" node -e "const {markerValue}=require('./scripts/select-cursor-dispatch-comment');process.stdout.write(markerValue(JSON.parse(process.env.DISPATCH_JSON).body,'Dispatch workflow run')||'')")"
           test -n "$dispatch_run"
           gh run download "$dispatch_run" --repo "$GITHUB_REPOSITORY" --name "cursor-cloud-agent-dispatch-$dispatch_run" --dir canary/phase-a/dispatch
           GH_TOKEN="$GH_TOKEN" gh api --paginate "repos/$REPOSITORY/issues/$dispatch_issue/comments?per_page=100" > canary/phase-a/ledger-comments.json
@@ -85,8 +87,10 @@ jobs:
           test -n "$GH_TOKEN"
           node - <<'NODE'
           const fs=require('node:fs'); const { markerFor, markerBody }=require('./src/factory/github-ledger');
-          const p=JSON.parse(fs.readFileSync('canary/phase-a/current-head-gate1-pending.json','utf8')); const result=JSON.parse(fs.readFileSync('canary/phase-a/cursor-terminal-result.json','utf8'));
-          const { assertTransition } = require('./src/factory/github-ledger');
+          const p=JSON.parse(fs.readFileSync('canary/phase-a/current-head-gate1-pending.json','utf8')); const result=JSON.parse(fs.readFileSync('canary/phase-a/cursor-terminal-result.json','utf8')); const ledgerComments=JSON.parse(fs.readFileSync('canary/phase-a/ledger-comments.json','utf8'));
+          const { assertTransition, findClaim } = require('./src/factory/github-ledger');
+          const posted=findClaim(ledgerComments,{repository:process.env.REPOSITORY,issueNumber:'8',prNumber:'1',branch:p.dispatchPacket.branch,checkedOutSha:p.envelope.checkedOutSha,kind:'dispatch',handoffId:p.handoffId,dispatchKey:p.envelope.dispatchKey,dispatchDigest:p.envelope.dispatchDigest,status:'posted'});
+          if (!posted || !posted.commentId || !posted.commentUrl) throw new Error('Authoritative dispatch marker was not reconciled before in_motion');
           const marker=markerFor({kind:'resume',repository:process.env.REPOSITORY,issueNumber:process.env.ISSUE_NUMBER,prNumber:p.dispatchPacket.prNumber,branch:p.dispatchPacket.branch,checkedOutSha:p.envelope.checkedOutSha,handoffId:p.handoffId,dispatchKey:p.envelope.dispatchKey,dispatchDigest:p.envelope.dispatchDigest,resultId:process.env.COMMENT_ID,inputDigest:result.receipt.inputDigest,outputDigest:result.receipt.outputDigest,threadUrl:result.receipt.threadUrl,model:result.bundle.model,commentId:process.env.COMMENT_ID,commentUrl:process.env.COMMENT_URL,status:'in_motion'});
           assertTransition({ ...marker, status: 'posted' }, marker);
           fs.writeFileSync('canary/phase-a/cursor-in-motion-ledger-marker.md',markerBody(marker));
@@ -130,12 +134,15 @@ jobs:
           FACTORY_BRANCH: ${{ steps.target.outputs.branch }}
           FACTORY_REPOSITORY: ${{ github.repository }}
           FACTORY_HANDOFF_FILE: canary/phase-a/current-head-gate1-pending.json
+          FACTORY_PHASE_B_CAS_FILE: canary/phase-a/phase-b-cas.json
+          FACTORY_RESUME_RESULT_ID: ${{ github.event.comment.id }}
         run: |
           node -e "const fs=require('node:fs');const p=JSON.parse(fs.readFileSync('canary/phase-a/current-head-gate1-pending.json','utf8'));const r=JSON.parse(fs.readFileSync('canary/phase-a/cursor-terminal-result.json','utf8'));fs.mkdirSync('canary/phase-b',{recursive:true});fs.writeFileSync('canary/phase-b/cursor-bundle.json',JSON.stringify(r.bundle,null,2)+'\\n');process.env.REQUEST_FILE=p.inputFiles.request;process.env.SELECTION_FILE=p.inputFiles.selection;process.env.QA_FILE=p.inputFiles.qa;"
           pending="canary/phase-a/current-head-gate1-pending.json"
           request_file="$(node -e "process.stdout.write(JSON.parse(require('fs').readFileSync('$pending','utf8')).inputFiles.request)")"
           selection_file="$(node -e "process.stdout.write(JSON.parse(require('fs').readFileSync('$pending','utf8')).inputFiles.selection)")"
           qa_file="$(node -e "process.stdout.write(JSON.parse(require('fs').readFileSync('$pending','utf8')).inputFiles.qa)")"
+          node -e "const fs=require('node:fs');const p=JSON.parse(fs.readFileSync('$pending','utf8'));const r=JSON.parse(fs.readFileSync('canary/phase-a/cursor-terminal-result.json','utf8'));const {claimPhaseBAtomic}=require('./src/factory/handoff');claimPhaseBAtomic(process.env.FACTORY_PHASE_B_CAS_FILE,{handoffId:p.handoffId,resultId:process.env.FACTORY_RESUME_RESULT_ID||r.commentId});"
           node src/run-gate1-canary.js . "$request_file" "$selection_file" "$qa_file" canary/phase-b/cursor-bundle.json
       - name: Record automatic phase-B completion
         if: success() && env.FACTORY_RESUME_ALREADY_CLAIMED != 'true'
@@ -178,5 +185,6 @@ jobs:
             canary/outputs/current-head-gate1-proof.json
             canary/outputs/gate1.md
             canary/state/factory-state.json
+            canary/phase-a/phase-b-cas.json
           if-no-files-found: error
           retention-days: 30
