@@ -19,6 +19,10 @@ on:
         description: 'Repository-relative Architect Gate 1 QA JSON'
         required: true
         type: string
+      cursor_bundle_file:
+        description: 'Repository-relative trusted GitHub-to-Cursor Cloud Agent result bundle JSON'
+        required: true
+        type: string
 
 permissions:
   contents: read
@@ -42,10 +46,12 @@ jobs:
           REQUEST_FILE: ${{ inputs.request_file }}
           SELECTION_FILE: ${{ inputs.selection_file }}
           QA_FILE: ${{ inputs.qa_file }}
+          CURSOR_BUNDLE_FILE: ${{ inputs.cursor_bundle_file }}
         run: |
           test "$EXPECTED_HEAD_SHA" = "$(git rev-parse HEAD)"
           printf '%s\n' "$EXPECTED_HEAD_SHA" | grep -Eq '^[a-f0-9]{40}$'
-          for file in "$REQUEST_FILE" "$SELECTION_FILE" "$QA_FILE"; do
+          echo "FACTORY_ASSERTED_HEAD_SHA=$(git rev-parse HEAD)" >> "$GITHUB_ENV"
+          for file in "$REQUEST_FILE" "$SELECTION_FILE" "$QA_FILE" "$CURSOR_BUNDLE_FILE"; do
             printf '%s\n' "$file" | grep -Eq '^[-a-zA-Z0-9_/.]+\.json$'
             case "$file" in *..*) echo "path traversal is not allowed" >&2; exit 1 ;; esac
             test -f "$file"
@@ -61,24 +67,20 @@ jobs:
       - name: Validate trusted production runtime
         env:
           APIFY_API_TOKEN: ${{ secrets.APIFY_API_TOKEN }}
-          CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
-          CURSOR_MODEL: ${{ secrets.CURSOR_MODEL }}
         run: |
           test -n "$APIFY_API_TOKEN"
-          test -n "$CURSOR_API_KEY"
-          test "$CURSOR_MODEL" = "cursor-grok-4.6-high"
       - name: Install locked dependencies
         run: npm ci --ignore-scripts --no-audit --no-fund
       - name: Run fresh current-head Gate 1 canary
         env:
           APIFY_API_TOKEN: ${{ secrets.APIFY_API_TOKEN }}
-          CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
-          CURSOR_MODEL: ${{ secrets.CURSOR_MODEL }}
-          EXPECTED_HEAD_SHA: ${{ inputs.expected_head_sha }}
           REQUEST_FILE: ${{ inputs.request_file }}
           SELECTION_FILE: ${{ inputs.selection_file }}
           QA_FILE: ${{ inputs.qa_file }}
-        run: node src/run-gate1-canary.js canary "$REQUEST_FILE" "$SELECTION_FILE" "$QA_FILE"
+          CURSOR_BUNDLE_FILE: ${{ inputs.cursor_bundle_file }}
+          FACTORY_ASSERTED_HEAD_SHA: ${{ inputs.expected_head_sha }}
+          EXPECTED_HEAD_SHA: ${{ inputs.expected_head_sha }}
+        run: node src/run-gate1-canary.js canary "$REQUEST_FILE" "$SELECTION_FILE" "$QA_FILE" "$CURSOR_BUNDLE_FILE"
       - name: Upload Gate 1 canary proof
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
