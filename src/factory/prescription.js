@@ -1,4 +1,5 @@
 const { STANDARD_PRESCRIPTION_POLICY, validatePagePolicy, validateSourceBinding, assertNoServiceAliasCollisions, serviceIdentity, serviceTerm, canonicalServiceId, canonicalizeServiceCandidates, digest } = require('./prescription-policy');
+const { canonicalApprovedLineageProjection } = require('./sealed-evidence');
 
 function normalizeClassification(classification) {
   if (!classification || !Array.isArray(classification.reviews)) throw new Error('authoritative review classification is required');
@@ -179,6 +180,9 @@ function prescribe({ finalist, inventory, classification, services, proposedPage
   const selected = new Set((pageCheck.policy?.selectedServiceIds || []));
   const normalizedHierarchy = valueHierarchy.map((entry) => ({ ...entry, includedPage: selected.has(entry.canonicalIntentId), passedOverReason: selected.has(entry.canonicalIntentId) ? null : (entry.passedOverReason || 'Evidence preserved; not selected for a business-page destination under the active page policy.') }));
   const prescription = { version: 'page-prescription-v2', prospect: { prospectId: runContext?.prospectId || finalist.prospectId || finalist.placeId, placeId: runContext?.placeId || finalist.placeId, name: finalist.name, location: finalist.location, website: finalist.website }, runId: runContext?.runId || null, pages, valueHierarchy: normalizedHierarchy, architectReview: architectReview || null, collisionValidation: pageCheck.collision, pagePolicy: pageCheck.policy.policy, policyMode: pageCheck.policy.policyMode, allowedServicePageCount: pageCheck.policy.allowedServicePageCount, expansionOverride: pageCheck.policy.override, selectedServiceIds: pageCheck.policy.selectedServiceIds, serviceCoverageLedger: ledger || null, evidenceDigest, pageSetDigest: pageCheck.policy.pageSetDigest, sourceIdentity: sourceBinding.sourceIdentity, sourceArtifactDigest: sourceBinding.sourceArtifactDigest, status: 'prescribed', generatedAt: new Date().toISOString() };
+  const lineageProjection = canonicalApprovedLineageProjection(prescription);
+  prescription.approvalDigest = lineageProjection.approvalDigest;
+  prescription.strategyDigest = lineageProjection.strategyDigest;
   prescription.prescriptionDigest = digest({ ...prescription, prescriptionDigest: undefined });
   return prescription;
 }
