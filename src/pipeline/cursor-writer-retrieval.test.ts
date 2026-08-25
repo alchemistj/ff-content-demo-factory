@@ -1,5 +1,7 @@
 import assert from "node:assert/strict";
+import { execFileSync } from "node:child_process";
 import { createHash } from "node:crypto";
+import { existsSync } from "node:fs";
 import test from "node:test";
 import {
   createCursorArtifactClient,
@@ -23,6 +25,7 @@ import {
   writer1RenderedWordsDigest,
   writer1StableIdentityDigest,
   writer1ProvenanceMetadataDigest,
+  serializeWriter1OutputDeterministically,
   WRITER1_WORD_KEYS,
   WRITER1_IDENTITY_KEYS,
   WRITER1_PROVENANCE_KEYS,
@@ -39,6 +42,7 @@ import {
 } from "./cursor-writer.js";
 import { digestOf } from "../contracts/digests.js";
 import { digestWriter1ArtifactRecoveryPrompt } from "../../scripts/360-words-recovery-prompt.mjs";
+import { parseAndValidateWriter1Output, validateSealed, writer1Projection } from "../../scripts/360-words-canary.js";
 
 type PublicRecoveryInputHasNoEnv = "env" extends keyof CursorArtifactRecoveryInput ? never : true;
 const publicRecoveryInputHasNoEnv: PublicRecoveryInputHasNoEnv = true;
@@ -420,6 +424,50 @@ test("v3-finalize validates the existing artifact with zero Cursor messages", as
   const forged = structuredClone(result.receipt) as any;
   forged.pointerLedgerNormalization.removed[0].valueDigest = "sha256:" + "0".repeat(64);
   assert.throws(() => validateCursorArtifactRecoveryV3FinalizeReceipt(forged, prior, previousRecoveryV3, digestWriter1ArtifactRecoveryPrompt("v3"), env.CURSOR_API_KEY, expectedCurrentArtifact.byteDigest, expectedCurrentArtifact.updatedAt), /MAC|integrity|mismatch/u);
+});
+
+test("production v3-finalize normalizes the real quarantined artifact through the string validator", { skip: !existsSync("/workspace/scratch/ef9cabb1e3d7/360-writer1-normalization-failure.zip") }, async () => {
+  const bytes = execFileSync("unzip", ["-p", "/workspace/scratch/ef9cabb1e3d7/360-writer1-normalization-failure.zip", "runtime/quarantine/writer1-output.json"]);
+  const updatedAt = "2026-08-25T01:33:20.000Z";
+  const expected = artifactBindingFor(bytes, updatedAt);
+  const before = Buffer.from("{}", "utf8");
+  const beforeArtifact = artifactBindingFor(before, "2026-08-25T00:56:02.000Z");
+  const previousRecoveryV3: CursorArtifactRecoveryV3FailureBinding = {
+    recoveryVersion: "words-writer1-artifact-recovery/v3", actionRunId: "32797811881", artifactId: 9545486318, artifactDigest: "sha256:23eac7a38caf588f383e424bd7bf39e5246f5634c7c06866d8e94250e6fe710e", sourceBranch: "architect/360-words-canary", sourceSha: "6d5f9e0f65af98185b6827b445cbfeff74e88ce7", agentId: artifactAgentId, runId: "run-47a109e2-4fd4-48df-a727-8a92a76cc472", threadUrl: artifactThreadUrl, promptDigest: digestWriter1ArtifactRecoveryPrompt("v3"), failureCode: "WRITER1_OUTPUT_INVALID", inputDigest: artifactPrior.inputDigest, beforeArtifact, copyProjectionDigest: writer1CopyProjectionDigest(JSON.parse(before.toString("utf8"))),
+  };
+  const prior = { ...artifactPrior, actionRunId: "32797811881", artifactId: 9545486318, runId: "run-47a109e2-4fd4-48df-a727-8a92a76cc472", sourceSha: "6d5f9e0f65af98185b6827b445cbfeff74e88ce7", promptDigest: digestWriter1ArtifactRecoveryPrompt("v3") };
+  const calls = { lists: 0, downloads: 0, validator: 0 };
+  const client: CursorArtifactClient = {
+    async list() { calls.lists += 1; return [{ path: "artifacts/writer1-output.json", size: bytes.length, updatedAt }]; },
+    async download(id, artifactPath) { calls.downloads += 1; return artifactDownloadResult(id, artifactPath, bytes, "https://bucket.s3.us-east-1.amazonaws.com/opaque-key?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Signature=test"); },
+  };
+  const projection = writer1Projection(validateSealed());
+  const result = await finalizeCursorWriterArtifactV3ForTest({
+    env, receiptStore: createMemoryCursorReceiptStore(), prior, previousRecoveryV3, recoveryVersion: "words-writer1-artifact-recovery/v3-finalize", promptDigest: digestWriter1ArtifactRecoveryPrompt("v3"), expectedCurrentArtifactByteDigest: expected.byteDigest, expectedCurrentArtifactUpdatedAt: updatedAt, artifactClient: client,
+    validateOutput: (output) => {
+      calls.validator += 1;
+      assert.equal(typeof output, "string");
+      const parsed = JSON.parse(output as string);
+      assert.equal(output, serializeWriter1OutputDeterministically(parsed), "strict validation must receive the canonical normalized JSON bytes");
+      parseAndValidateWriter1Output(output, projection);
+    },
+  });
+  assert.deepEqual(calls, { lists: 1, downloads: 1, validator: 1 });
+  const receipt = result.receipt as any;
+  assert.equal(receipt.pointerLedgerNormalization.removed.length, 62);
+  assert.equal(receipt.pointerLedgerNormalization.removed.filter((entry: any) => entry.key === "reviewer").length, 31);
+  assert.equal(receipt.pointerLedgerNormalization.removed.filter((entry: any) => entry.key === "excerpt").length, 31);
+  assert.deepEqual(receipt.pointerLedgerNormalization.authorship, { renderableWords: OFFICIAL_CURSOR_MODEL, structuralPointerNormalization: "factory" });
+  assert.equal(receipt.crossV3CopyPreservation, "not-asserted");
+  assert.equal(receipt.pointerLedgerNormalization.rawSemanticRenderedCopyDigest, receipt.pointerLedgerNormalization.normalizedSemanticRenderedCopyDigest);
+  assert.equal(receipt.pointerLedgerNormalization.rawStableIdentityDigest, receipt.pointerLedgerNormalization.normalizedStableIdentityDigest);
+  assert.equal(receipt.pointerLedgerNormalization.rawProvenanceMetadataDigest, receipt.pointerLedgerNormalization.normalizedProvenanceMetadataDigest);
+  assert.equal(receipt.afterArtifact.byteDigest, expected.byteDigest);
+  assert.deepEqual((result.output as any).pages.map((page: any) => page.url), ["/garage-door-repair", "/garage-door-installation"]);
+  assert.ok((result.output as any).pages.every((page: any) => page.type === "service"));
+  assert.equal(receipt.mode, "validation-only-artifact-recovery");
+  assert.notEqual(receipt.status, "writer2-approved");
+  validateCursorArtifactRecoveryV3FinalizeReceipt(receipt, prior, previousRecoveryV3, digestWriter1ArtifactRecoveryPrompt("v3"), env.CURSOR_API_KEY, expected.byteDigest, updatedAt);
 });
 
 test("v3-finalize fails closed on stale or changed copy and cannot message", async () => {

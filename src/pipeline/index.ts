@@ -26,6 +26,7 @@ export {
   writer1SemanticRenderedCopyProjection,
   writer1SemanticRenderedCopyDigest,
   normalizeWriter1PointerLedger,
+  serializeWriter1OutputDeterministically,
   buildWriter1PointerLedgerNormalization,
   WRITER1_POINTER_LEDGER_NORMALIZATION_VERSION,
   WRITER1_WORD_KEYS,

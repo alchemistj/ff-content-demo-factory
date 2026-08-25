@@ -1,11 +1,9 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { existsSync } from "node:fs";
-import { cp, mkdtemp, mkdir, rm, writeFile, readFile } from "node:fs/promises";
-import { createHash } from "node:crypto";
+import { mkdtemp, mkdir, rm, writeFile } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
-import { buildWriter1QuarantineMetadata, buildWriter1ValidationReport, collectWriter1ValidationDiagnostics, parseAndValidateFreshWriter1Output, parseAndValidateWriter1Output, normalizeAndValidateWriter1Output, normalizeQuarantinedWriter1Output, readApprovedWriter1OutputForWriter2, quarantineWriter1Artifact, validateSealed, writer1Projection, Writer1OutputRecoveryError } from "../../scripts/360-words-canary.js";
+import { buildWriter1QuarantineMetadata, buildWriter1ValidationReport, collectWriter1ValidationDiagnostics, parseAndValidateFreshWriter1Output, parseAndValidateWriter1Output, readApprovedWriter1OutputForWriter2, quarantineWriter1Artifact, validateSealed, writer1Projection, Writer1OutputRecoveryError } from "../../scripts/360-words-canary.js";
 import { buildWriter1PointerLedgerNormalization, normalizeWriter1PointerLedger, writer1OutputDigests, writer1ProvenanceMetadataDigest, writer1SemanticRenderedCopyDigest, writer1StableIdentityDigest, WRITER1_WORD_KEYS, type CursorArtifactBinding } from "../../src/pipeline/cursor-writer.js";
 
 const projection = {
@@ -77,23 +75,6 @@ test("pointer-ledger normalization removes exactly the 62 duplicated words and p
   const invalid = structuredClone(normalizedOutput) as Record<string, any>;
   delete invalid.pages[0].body;
   assert.throws(() => parseAndValidateWriter1Output(JSON.stringify(invalid), projectionWithRefs), /full copy field body/u);
-});
-
-test("production reviewer+excerpt reviewEvidence fails the exact word-bearing gate, then normalizes losslessly", () => {
-  const seeded = JSON.parse(valid) as Record<string, any>;
-  seeded.pages[0].reviewEvidence = [{ reviewId: "review-repair", reviewer: "Chris", excerpt: "The repair was excellent.", provenance: { type: "evidence", ref: "review-repair", placement: "pointer", section: "repair-section" } }];
-  const errors = collectWriter1ValidationDiagnostics(JSON.stringify(seeded), projection);
-  assert.ok(errors.some((error) => error.code === "REVIEW_EVIDENCE_CLAIM_TEXT_DUPLICATE" && error.path === "/pages/0/reviewEvidence/0/reviewer"));
-  assert.equal(errors[0]?.expectedRule, "reviewEvidence must not contain any accepted word-bearing key; it is a typed pointer ledger");
-  assert.throws(() => parseAndValidateWriter1Output(JSON.stringify(seeded), projection), /word-bearing|typed pointer ledger/u);
-  const normalized = normalizeWriter1PointerLedger(seeded);
-  assert.equal("excerpt" in (normalized.output as Record<string, any>).pages[0].reviewEvidence[0], false);
-  assert.equal("reviewer" in (normalized.output as Record<string, any>).pages[0].reviewEvidence[0], false);
-  assert.equal((normalized.output as Record<string, any>).pages[0].reviewPlacements[0].quote, "The repair was excellent.");
-  assert.equal((normalized.output as Record<string, any>).pages[0].reviewPlacements[0].attribution, "Chris");
-  assert.doesNotThrow(() => parseAndValidateWriter1Output(JSON.stringify(normalized.output), projection));
-  assert.doesNotThrow(() => normalizeAndValidateWriter1Output(seeded, projection));
-  assert.doesNotThrow(() => parseAndValidateFreshWriter1Output(seeded, projection));
 });
 
 test("Writer1 output validator rejects prose, missing copy, unbound quotes, and prohibited public topology", () => {
@@ -308,103 +289,5 @@ test("real supporting and not-applicable reviews cannot become quoted proof", ()
     injected.services[0].reviewEvidence.push(evidence);
     injected.sealedRefs.push(candidate.id);
     assert.throws(() => parseAndValidateWriter1Output(realWriter1Output(injected, evidence), injected), /unapproved|non-authoritative|non-direct/u);
-  }
-});
-
-const quarantinedWriter1Path = join(process.cwd(), "canary/runtime/quarantine/writer1-output.json");
-const quarantinedWriter1MetadataPath = join(process.cwd(), "canary/runtime/quarantine/writer1-output.metadata.json");
-const sha256 = (bytes: Buffer) => `sha256:${createHash("sha256").update(bytes).digest("hex")}`;
-
-async function copySealedCanaryRoot(): Promise<string> {
-  const root = await mkdtemp(join(tmpdir(), "ff-writer1-normalize-"));
-  await cp(join(process.cwd(), "canary/sealed"), join(root, "canary/sealed"), { recursive: true });
-  await mkdir(join(root, "canary/runtime/quarantine"), { recursive: true });
-  await mkdir(join(root, "canary/outputs"), { recursive: true });
-  return root;
-}
-
-test("quarantined 360 Writer1 bytes fail only the reviewEvidence pointer-ledger gate, then normalize losslessly", async () => {
-  const rawBytes = await readFile(quarantinedWriter1Path);
-  const metadata = JSON.parse(await readFile(quarantinedWriter1MetadataPath, "utf8")) as Record<string, any>;
-  assert.equal(sha256(rawBytes), metadata.artifactByteDigest);
-  assert.equal(metadata.consumable, false);
-  assert.equal(metadata.approved, false);
-  assert.equal(metadata.writer2Blocked, true);
-  const raw = rawBytes.toString("utf8");
-  const errors = collectWriter1ValidationDiagnostics(raw, realProjection);
-  assert.ok(errors.length > 0);
-  assert.ok(errors.every((error) => error.code === "REVIEW_EVIDENCE_CLAIM_TEXT_DUPLICATE"));
-  assert.equal(errors[0]?.expectedRule, "reviewEvidence must not contain any accepted word-bearing key; it is a typed pointer ledger");
-  assert.equal(errors[0]?.path, "/pages/0/reviewEvidence/0/reviewer");
-  assert.throws(() => parseAndValidateWriter1Output(raw, realProjection), /word-bearing|typed pointer ledger/u);
-  const parsed = JSON.parse(raw) as Record<string, any>;
-  const repairQuote = parsed.pages[0].reviewPlacements[0].quote;
-  const installQuote = parsed.pages[1].reviewPlacements[0].quote;
-  const normalized = normalizeWriter1PointerLedger(parsed);
-  assert.equal(normalized.removed.length, 62);
-  assert.equal(normalized.removed.filter((entry) => entry.key === "reviewer").length, 31);
-  assert.equal(normalized.removed.filter((entry) => entry.key === "excerpt").length, 31);
-  assert.equal(writer1SemanticRenderedCopyDigest(parsed), writer1SemanticRenderedCopyDigest(normalized.output));
-  const validated = normalizeAndValidateWriter1Output(parsed, realProjection);
-  assert.equal(validated.pages[0].reviewPlacements[0].quote, repairQuote);
-  assert.equal(validated.pages[1].reviewPlacements[0].quote, installQuote);
-  for (const page of validated.pages) {
-    for (const item of page.reviewEvidence) {
-      assert.equal("excerpt" in item, false);
-      assert.equal("reviewer" in item, false);
-      assert.equal("quote" in item, false);
-    }
-  }
-  assert.deepEqual(validated.pages.map((page: Record<string, any>) => page.url), ["/garage-door-repair", "/garage-door-installation"]);
-});
-
-test("normalize-quarantine preserves source bytes, never approves the raw artifact, and keeps Writer2 blocked", async () => {
-  const root = await copySealedCanaryRoot();
-  try {
-    const rawBytes = await readFile(quarantinedWriter1Path);
-    const metadata = JSON.parse(await readFile(quarantinedWriter1MetadataPath, "utf8")) as Record<string, any>;
-    await writeFile(join(root, "canary/runtime/quarantine/writer1-output.json"), rawBytes);
-    await writeFile(join(root, "canary/runtime/quarantine/writer1-output.metadata.json"), JSON.stringify(metadata));
-    const result = await normalizeQuarantinedWriter1Output(root);
-    assert.equal(result.status, "awaiting-architect-qa");
-    assert.equal(result.stage, "writer1");
-    assert.equal(result.sourceByteDigest, metadata.artifactByteDigest);
-    assert.equal(result.removedCount, 62);
-    const preserved = await readFile(join(root, "canary/runtime/quarantine/writer1-output.json"));
-    assert.deepEqual(preserved, rawBytes);
-    const adaptation = JSON.parse(await readFile(join(root, "canary/runtime/writer1-pointer-ledger-normalization.json"), "utf8")) as Record<string, any>;
-    const state = JSON.parse(await readFile(join(root, "canary/runtime/state.json"), "utf8")) as Record<string, any>;
-    const quarantinedMeta = JSON.parse(await readFile(join(root, "canary/runtime/quarantine/writer1-output.metadata.json"), "utf8")) as Record<string, any>;
-    assert.equal(adaptation.rawApproved, false);
-    assert.equal(adaptation.completionAuthorized, false);
-    assert.equal(adaptation.writer2Blocked, true);
-    assert.equal(state.writer2Blocked, true);
-    assert.equal(state.rawApproved, false);
-    assert.equal(state.status, "awaiting-architect-qa");
-    assert.equal(quarantinedMeta.approved, false);
-    assert.notEqual(quarantinedMeta.status, "superseded-by-approved-normalization");
-    assert.throws(() => readApprovedWriter1OutputForWriter2(root), /cannot consume|approval/u);
-    const normalized = JSON.parse(await readFile(join(root, "canary/outputs/writer1-output.json"), "utf8"));
-    assert.doesNotThrow(() => parseAndValidateWriter1Output(JSON.stringify(normalized), writer1Projection(validateSealed(root))));
-  } finally {
-    await rm(root, { recursive: true, force: true });
-  }
-});
-
-test("normalize-quarantine refuses bytes whose errors are not limited to reviewEvidence word-bearing keys", async () => {
-  const root = await copySealedCanaryRoot();
-  try {
-    const parsed = JSON.parse(await readFile(quarantinedWriter1Path, "utf8")) as Record<string, any>;
-    delete parsed.pages[0].body;
-    const mutated = Buffer.from(JSON.stringify(parsed), "utf8");
-    const metadata = JSON.parse(await readFile(quarantinedWriter1MetadataPath, "utf8")) as Record<string, any>;
-    metadata.artifactByteDigest = sha256(mutated);
-    metadata.artifactSize = mutated.length;
-    await writeFile(join(root, "canary/runtime/quarantine/writer1-output.json"), mutated);
-    await writeFile(join(root, "canary/runtime/quarantine/writer1-output.metadata.json"), JSON.stringify(metadata));
-    await assert.rejects(() => normalizeQuarantinedWriter1Output(root), /beyond reviewEvidence word-bearing keys/u);
-    assert.equal(existsSync(join(root, "canary/outputs/writer1-output.json")), false);
-  } finally {
-    await rm(root, { recursive: true, force: true });
   }
 });

@@ -648,6 +648,17 @@ export function writer1OutputDigests(value: unknown): { renderedWordsDigest: str
 export const WRITER1_POINTER_LEDGER_NORMALIZATION_VERSION = "words-writer1-pointer-ledger-normalization/v1" as const;
 const WRITER1_REVIEW_EVIDENCE_FORBIDDEN_KEYS = new Set(["primaryKeyword", "title", "seoTitle", "metaDescription", "h1", "body", "heading", "quote", "excerpt", "exactText", "attribution", "reviewer", "author", "claim", "statement", "text"]);
 
+/**
+ * The strict Writer1 validator consumes the exact JSON text returned by Cursor.
+ * Keep serialization in one place so preflight and the receipt path validate
+ * identical bytes after pointer-ledger normalization.
+ */
+export function serializeWriter1OutputDeterministically(value: unknown): string {
+  const serialized = JSON.stringify(value);
+  if (typeof serialized !== "string") throw new CursorWriterExecutionError("CURSOR_ARTIFACT_OUTPUT_INVALID", "Normalized Writer1 output is not serializable JSON");
+  return serialized;
+}
+
 function withoutWriter1ReviewEvidence(value: unknown): unknown {
   if (Array.isArray(value)) return value.map(withoutWriter1ReviewEvidence);
   const record = asRecord(value);
@@ -1108,7 +1119,7 @@ async function finalizeCursorWriterArtifactV3Internal(input: CursorArtifactRecov
     try { parsed = JSON.parse(raw); } catch { throw new CursorWriterExecutionError("CURSOR_ARTIFACT_OUTPUT_INVALID", "Cursor Writer1 artifact is not valid JSON"); }
     const normalized = normalizeWriter1PointerLedger(parsed);
     const normalization = buildWriter1PointerLedgerNormalization({ raw: parsed, normalized: normalized.output, removed: normalized.removed, artifact, prior: input.prior });
-    validateOutput(JSON.stringify(normalized.output));
+    validateOutput(serializeWriter1OutputDeterministically(normalized.output));
     return { output: normalized.output, normalization };
   } : undefined;
   const existing = await input.receiptStore.get(key);
