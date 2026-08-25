@@ -1,6 +1,7 @@
 'use strict';
 
 const crypto = require('node:crypto');
+const { persistOperationIntent, persistOperationState } = require('../factory/receipt-store');
 
 const FACTORY_MODEL_ALIAS = 'cursor-grok-4.6-high';
 const ACTUAL_MODEL_ID = 'grok-4.6';
@@ -127,6 +128,7 @@ function createCursorAdapter({ apiKey, sdk, modelAlias = process.env.CURSOR_MODE
     const key = `cursor:${jobId}`;
     const prior = await receiptStore.get?.(key);
     if (prior?.status === 'completed') return prior.result;
+    const inputDigest = crypto.createHash('sha256').update(JSON.stringify(input)).digest('hex');
     const prompt = researchPrompt(kind, input);
     if (prior?.status === 'running' && prior.agentId) {
       let agent;
@@ -136,7 +138,7 @@ function createCursorAdapter({ apiKey, sdk, modelAlias = process.env.CURSOR_MODE
         const run = prior.runId ? await resumedRun(prior) : await agent.send(prompt);
         if (!prior.runId) {
           receipt = { ...receipt, runId: run.id || run.runId || null, requestId: run.requestId || null, threadUrl: run.url || run.threadUrl || run.agentUrl || null };
-          await receiptStore.put?.(key, receipt);
+          await persistOperationState(receiptStore, key, { ...receipt, operationKey: key, operation: kind, stage: kind, input, inputDigest: receipt.inputDigest || inputDigest });
           if (!receipt.runId) throw new Error('Cursor resumed send receipt missing runId');
         }
         const result = await run.wait();
@@ -145,33 +147,34 @@ function createCursorAdapter({ apiKey, sdk, modelAlias = process.env.CURSOR_MODE
         const parsed = validateResult(kind, parseJsonResult(raw));
         const safeResult = redact(parsed, apiKey);
         const completed = { ...receipt, status: 'completed', completedAt: clock(), result: safeResult };
-        await receiptStore.put?.(key, completed);
+        await persistOperationState(receiptStore, key, { ...completed, operationKey: key, operation: kind, stage: kind, input, inputDigest: completed.inputDigest || inputDigest });
         return safeResult;
       } catch (error) {
-        await receiptStore.put?.(key, { ...receipt, status: 'running', resumedAt: clock(), lastError: redact(normalizeError(error), apiKey) });
+        await persistOperationState(receiptStore, key, { ...receipt, operationKey: key, operation: kind, stage: kind, input, inputDigest: receipt.inputDigest || inputDigest, status: 'running', resumedAt: clock(), lastError: redact(normalizeError(error), apiKey) });
         throw error;
       } finally {
         await disposeAgent(agent);
       }
     }
+    await persistOperationIntent(receiptStore, key, { provider: 'cursor-sdk', operation: kind, input, context: { jobId, kind }, startedAt: clock() });
     const model = await resolveModel();
     let receipt = {
-      provider: 'cursor-sdk', jobId, kind, status: 'running',
+      schemaVersion: 'factory-paid-operation-v1', operationKey: key, provider: 'cursor-sdk', jobId, kind, operation: kind, stage: kind, status: 'running', input, inputDigest,
       requestedAlias: modelAlias, resolvedModel: model.id, modelParams: model.params,
       promptHash: crypto.createHash('sha256').update(prompt).digest('hex'), startedAt: clock(),
     };
-    await receiptStore.put?.(key, receipt);
+    await persistOperationState(receiptStore, key, receipt);
     let agent;
     try {
       // An empty cloud workspace prevents this research worker from receiving
       // a repository. The prompt separately forbids all file/code mutations.
       agent = await Agent.create({ apiKey, model: { id: model.id, params: model.params }, cloud: { repos: [] } });
       receipt = { ...receipt, agentId: agent.agentId || agent.id || null };
-      await receiptStore.put?.(key, receipt);
+      await persistOperationState(receiptStore, key, receipt);
       if (!receipt.agentId) throw new Error('Cursor Agent.create receipt missing agentId');
       const run = await agent.send(prompt);
       receipt = { ...receipt, runId: run.id || run.runId || null, requestId: run.requestId || null, threadUrl: run.url || run.threadUrl || run.agentUrl || null };
-      await receiptStore.put?.(key, receipt);
+      await persistOperationState(receiptStore, key, receipt);
       if (!receipt.runId) throw new Error('Cursor send receipt missing runId');
       const result = await run.wait();
       if (result?.status && result.status !== 'finished') throw new Error(`Cursor research run ended ${result.status}`);
@@ -179,7 +182,7 @@ function createCursorAdapter({ apiKey, sdk, modelAlias = process.env.CURSOR_MODE
       const parsed = validateResult(kind, parseJsonResult(raw));
       const safeResult = redact(parsed, apiKey);
       const completed = { ...receipt, status: 'completed', agentId: receipt.agentId || result?.agentId || null, runId: receipt.runId || result?.runId || null, requestId: receipt.requestId || result?.requestId || null, completedAt: clock(), result: safeResult };
-      await receiptStore.put?.(key, completed);
+      await persistOperationState(receiptStore, key, completed);
       return safeResult;
     } catch (error) {
       // Keep a receipt with a run id resumable after a process/network
@@ -188,7 +191,7 @@ function createCursorAdapter({ apiKey, sdk, modelAlias = process.env.CURSOR_MODE
       const interrupted = receipt.runId ? {
         ...receipt, status: 'running', interruptedAt: clock(), lastError: redact(normalizeError(error), apiKey),
       } : { ...receipt, status: 'failed', failedAt: clock(), error: redact(normalizeError(error), apiKey) };
-      await receiptStore.put?.(key, interrupted);
+      await persistOperationState(receiptStore, key, interrupted);
       throw error;
     } finally {
       await disposeAgent(agent);
