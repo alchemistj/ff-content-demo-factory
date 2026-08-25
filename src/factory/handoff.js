@@ -10,9 +10,14 @@ function required(value, label) {
   return value;
 }
 
-function envelopeFor({ dispatchPacket, inputManifest, runId, prospectId, sourceCheckpointDigest, approvedLineage = null, operation = 'gate1-cursor-research' }) {
+function envelopeFor({ dispatchPacket, inputManifest, runId, prospectId, sourceCheckpointDigest, sourceManifestDigest, approvedLineage = null, historicalLineageSeed = approvedLineage, operation = 'gate1-cursor-research' }) {
   validateDispatchPacket(dispatchPacket);
   required(inputManifest?.manifestDigest, 'handoff input manifest digest');
+  // Before vendor discovery completes, bind the pending handoff to a
+  // deterministic source-checkpoint manifest descriptor. Production packets
+  // replace this with the verified source manifest digest from their sealed
+  // runtime input; the field is never omitted from the durable handoff.
+  const resolvedSourceManifestDigest = sourceManifestDigest || inputManifest.sourceManifestDigest || digest({ sourceCheckpointDigest, inputManifestDigest: inputManifest.manifestDigest });
   return {
     schemaVersion: 'factory-cursor-job-envelope-v1',
     jobId: required(dispatchPacket.dispatchKey, 'handoff job id'),
@@ -23,25 +28,28 @@ function envelopeFor({ dispatchPacket, inputManifest, runId, prospectId, sourceC
     prospectId: required(prospectId, 'handoff prospect id'),
     sourceCheckpointDigest: required(sourceCheckpointDigest, 'handoff source checkpoint digest'),
     sourceArtifactDigest: sourceCheckpointDigest,
+    sourceManifestDigest: required(resolvedSourceManifestDigest, 'handoff source manifest digest'),
     sourceIdentityDigest: digest({ runId, prospectId, sourceCheckpointDigest }),
     dispatchDigest: dispatchPacket.dispatchDigest,
     dispatchKey: dispatchPacket.dispatchKey,
-    approvedLineage: approvedLineage ? {
-      packetDigest: required(approvedLineage.packetDigest, 'approved-lineage packet digest'),
-      sourceArtifactDigest: required(approvedLineage.sourceArtifactDigest, 'approved-lineage source artifact digest'),
-      evidenceDigest: required(approvedLineage.evidenceDigest, 'approved-lineage evidence digest'),
-      pageSetDigest: required(approvedLineage.pageSetDigest, 'approved-lineage page-set digest'),
-      prescriptionDigest: required(approvedLineage.prescriptionDigest, 'approved-lineage prescription digest'),
-      approvalDigest: required(approvedLineage.approvalDigest, 'approved-lineage approval digest'),
-      strategyDigest: required(approvedLineage.strategyDigest, 'approved-lineage strategy digest'),
-      selectedServiceIds: [...required(approvedLineage.selectedServiceIds, 'approved-lineage selected services')],
-      routes: [...required(approvedLineage.routes, 'approved-lineage routes')],
+    historicalLineageSeed: historicalLineageSeed ? {
+      seedOnly: true,
+      packetDigest: required(historicalLineageSeed.packetDigest, 'historical-lineage packet digest'),
+      sourceArtifactDigest: required(historicalLineageSeed.sourceArtifactDigest, 'historical-lineage source artifact digest'),
+      sourceManifestDigest: required(historicalLineageSeed.sourceManifestDigest || resolvedSourceManifestDigest, 'historical-lineage source manifest digest'),
+      evidenceDigest: required(historicalLineageSeed.evidenceDigest, 'historical-lineage evidence digest'),
+      pageSetDigest: required(historicalLineageSeed.pageSetDigest, 'historical-lineage page-set digest'),
+      prescriptionDigest: required(historicalLineageSeed.prescriptionDigest, 'historical-lineage prescription digest'),
+      approvalDigest: required(historicalLineageSeed.approvalDigest, 'historical-lineage approval digest'),
+      strategyDigest: required(historicalLineageSeed.strategyDigest, 'historical-lineage strategy digest'),
+      selectedServiceIds: [...required(historicalLineageSeed.selectedServiceIds, 'historical-lineage selected services')],
+      routes: [...required(historicalLineageSeed.routes, 'historical-lineage routes')],
     } : null,
   };
 }
 
-function createPendingHandoff({ dispatchPacket, inputManifest, runId, prospectId, sourceCheckpointDigest, phaseARunId, inputFiles, placeId = null, approvedLineage = null }) {
-  const envelope = envelopeFor({ dispatchPacket, inputManifest, runId, prospectId, sourceCheckpointDigest, approvedLineage });
+function createPendingHandoff({ dispatchPacket, inputManifest, runId, prospectId, sourceCheckpointDigest, sourceManifestDigest, phaseARunId, inputFiles, placeId = null, approvedLineage = null, historicalLineageSeed = approvedLineage }) {
+  const envelope = envelopeFor({ dispatchPacket, inputManifest, runId, prospectId, sourceCheckpointDigest, sourceManifestDigest, approvedLineage, historicalLineageSeed });
   const pending = {
     schemaVersion: 'factory-cursor-handoff-v1',
     phase: 'awaiting-cursor-receipt',
@@ -68,9 +76,11 @@ function validatePendingHandoff(pending, expected = {}) {
   if (pending.inputFiles) for (const field of ['request', 'selection', 'qa']) required(pending.inputFiles[field], `handoff ${field} input`);
   const envelope = pending.envelope;
   for (const field of ['jobId', 'checkedOutSha', 'inputManifestDigest', 'runId', 'prospectId', 'sourceCheckpointDigest', 'sourceArtifactDigest', 'sourceIdentityDigest', 'dispatchDigest', 'dispatchKey']) required(envelope?.[field], `handoff envelope ${field}`);
-  if (envelope.approvedLineage) {
-    for (const field of ['packetDigest', 'sourceArtifactDigest', 'evidenceDigest', 'pageSetDigest', 'prescriptionDigest', 'approvalDigest', 'strategyDigest']) required(envelope.approvedLineage[field], `handoff approved-lineage ${field}`);
-    if (!Array.isArray(envelope.approvedLineage.selectedServiceIds) || !Array.isArray(envelope.approvedLineage.routes)) throw new Error('Durable Cursor handoff approved-lineage services/routes are malformed');
+  for (const field of ['sourceManifestDigest']) required(envelope?.[field], `handoff envelope ${field}`);
+  if (envelope.historicalLineageSeed) {
+    if (envelope.historicalLineageSeed.seedOnly !== true) throw new Error('Durable Cursor handoff historical lineage must remain seed-only');
+    for (const field of ['packetDigest', 'sourceArtifactDigest', 'sourceManifestDigest', 'evidenceDigest', 'pageSetDigest', 'prescriptionDigest', 'approvalDigest', 'strategyDigest']) required(envelope.historicalLineageSeed[field], `handoff historical-lineage ${field}`);
+    if (!Array.isArray(envelope.historicalLineageSeed.selectedServiceIds) || !Array.isArray(envelope.historicalLineageSeed.routes)) throw new Error('Durable Cursor handoff historical-lineage services/routes are malformed');
   }
   if (pending.dispatchPacket.dispatchDigest !== envelope.dispatchDigest || pending.dispatchPacket.dispatchKey !== envelope.dispatchKey) throw new Error('Durable Cursor handoff dispatch binding is mismatched');
   if (!pending.continuation || pending.continuation.once !== true || pending.continuation.state !== 'awaiting-terminal-result') throw new Error('Durable Cursor handoff one-time continuation state is missing or consumed');
