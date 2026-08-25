@@ -140,9 +140,11 @@ function buildValidatedPrescription({ run, classification, proposal }) {
   if (!Array.isArray(pages) || !pages.length) throw new Error('Cursor proposal must include explicit pages');
   if (!Array.isArray(services)) throw new Error('Cursor proposal must include candidate services');
   const serviceLedger = proposal.serviceCoverageLedger || proposal.serviceLedger;
-  validateCompleteCanonicalLedger(serviceLedger, { services, pages, identity: { prospectId: run.prospectId, placeId: run.candidate?.placeId, runId: run.runId, sourceIdentity: proposal.sourceIdentity || proposal.sourceCheckpoint?.sourceIdentity } });
+  const sourceBinding = proposal.sourceCheckpoint || proposal.sourceBinding || { sourceIdentity: proposal.sourceIdentity, sourceArtifactDigest: proposal.sourceArtifactDigest };
+  if (!sourceBinding) throw new Error('Cursor proposal must include a trusted source checkpoint binding');
+  validateCompleteCanonicalLedger(serviceLedger, { services, pages, identity: { prospectId: run.prospectId, placeId: run.candidate?.placeId, runId: run.runId, sourceIdentity: sourceBinding.sourceIdentity } });
   const evidence = buildPrescriptionEvidence({ classification, pages, candidateServices: services });
-  const prescription = prescribe({ finalist: run.candidate, classification, services, proposedPages: pages, policy: proposal.pagePolicy, override: proposal.expansionOverride || proposal.expansionApproval, serviceLedger, runContext: { prospectId: run.prospectId, placeId: run.candidate?.placeId, runId: run.runId }, sourceBinding: proposal.sourceCheckpoint || proposal.sourceBinding });
+  const prescription = prescribe({ finalist: run.candidate, classification, services, proposedPages: pages, policy: proposal.pagePolicy, override: proposal.expansionOverride || proposal.expansionApproval, serviceLedger, runContext: { prospectId: run.prospectId, placeId: run.candidate?.placeId, runId: run.runId }, sourceBinding });
   prescription.evidence = evidence;
   prescription.prescriptionDigest = digest({ ...prescription, prescriptionDigest: undefined });
   return prescription;
