@@ -135,7 +135,7 @@ function createCursorAdapter({ apiKey, sdk, modelAlias = process.env.CURSOR_MODE
         agent = await resumeAgent(prior);
         const run = prior.runId ? await resumedRun(prior) : await agent.send(prompt);
         if (!prior.runId) {
-          receipt = { ...receipt, runId: run.id || run.runId || null, requestId: run.requestId || null };
+          receipt = { ...receipt, runId: run.id || run.runId || null, requestId: run.requestId || null, threadUrl: run.url || run.threadUrl || run.agentUrl || null };
           await receiptStore.put?.(key, receipt);
           if (!receipt.runId) throw new Error('Cursor resumed send receipt missing runId');
         }
@@ -170,7 +170,7 @@ function createCursorAdapter({ apiKey, sdk, modelAlias = process.env.CURSOR_MODE
       await receiptStore.put?.(key, receipt);
       if (!receipt.agentId) throw new Error('Cursor Agent.create receipt missing agentId');
       const run = await agent.send(prompt);
-      receipt = { ...receipt, runId: run.id || run.runId || null, requestId: run.requestId || null };
+      receipt = { ...receipt, runId: run.id || run.runId || null, requestId: run.requestId || null, threadUrl: run.url || run.threadUrl || run.agentUrl || null };
       await receiptStore.put?.(key, receipt);
       if (!receipt.runId) throw new Error('Cursor send receipt missing runId');
       const result = await run.wait();
