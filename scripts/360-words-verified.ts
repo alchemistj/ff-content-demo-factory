@@ -34,14 +34,18 @@ function jsonFile(root: string, relative: string): string { return path.join(roo
 function readJson(root: string, relative: string): Dict { return JSON.parse(readFileSync(jsonFile(root, relative), "utf8")) as Dict; }
 function writeJson(file: string, value: unknown): Promise<void> { return fs.mkdir(path.dirname(file), { recursive: true }).then(() => fs.writeFile(file, `${JSON.stringify(value, null, 2)}\n`, "utf8")); }
 function isDigest(value: unknown): value is string { return typeof value === "string" && /^sha256:[0-9a-f]{64}$/u.test(value); }
+function verifiedControlRecovery(control: Dict): Dict | undefined {
+  if (control.policy?.recovery !== undefined && control.recovery !== undefined) throw new Error("verified control may not provide ambiguous policy and top-level recovery objects");
+  return control.policy?.recovery ?? control.recovery;
+}
 
 export function validateVerifiedWriter1Control(control: Dict, inputDigest: string): void {
   if (control.schemaVersion !== "words-canary-control/v1" || control.requestedBy !== "architect" || control.stage !== "writer1" || control.restore !== null) throw new Error("verified control envelope is invalid");
   if (control.wakeNonce === DORMANT) return;
-  const policy = control.policy; const recovery = policy?.recovery;
+  const policy = control.policy; const recovery = verifiedControlRecovery(control);
   if (policy?.mode !== "writer1-correction" || policy.writer1Only !== true || policy.provider !== "cursor-sdk" || policy.model !== "cursor-grok-4.6-high" || policy.fast !== false || policy.stopAfter !== "awaiting-architect-qa") throw new Error("verified control does not select the bounded Writer1 correction policy");
   if (!/^[A-Za-z0-9][A-Za-z0-9._-]{15,127}$/u.test(control.wakeNonce)) throw new Error("verified control requires an owner wake nonce");
-  if (recovery?.correctionVersion !== VERIFIED_WRITER1_CORRECTION_VERSION || recovery?.sourceBranch !== VERIFIED_BRANCH || recovery?.agentId !== VERIFIED_WRITER1_AGENT_ID || recovery?.threadUrl !== VERIFIED_WRITER1_THREAD_URL || recovery?.inputDigest !== inputDigest || recovery?.promptDigest !== VERIFIED_WRITER1_PROMPT_DIGEST || recovery?.sourceSha !== control.policy.recovery.sourceSha || !/^[0-9a-f]{40}$/u.test(recovery?.sourceSha || "") || recovery?.allowCreate !== false || recovery?.allowResume !== true || recovery?.allowFollowUp !== true || recovery?.maxFollowUps !== 1 || recovery?.idempotencyKey !== `${VERIFIED_WRITER1_AGENT_ID}:writer1:correction:v1:${inputDigest}:${VERIFIED_WRITER1_PROMPT_DIGEST}` || recovery?.send !== undefined || policy.allowCreate !== undefined || policy.allowResume !== undefined || policy.allowFollowUp !== undefined || policy.send !== undefined) throw new Error("verified Writer1 correction pins are invalid");
+  if (recovery?.correctionVersion !== VERIFIED_WRITER1_CORRECTION_VERSION || recovery?.sourceBranch !== VERIFIED_BRANCH || recovery?.agentId !== VERIFIED_WRITER1_AGENT_ID || recovery?.threadUrl !== VERIFIED_WRITER1_THREAD_URL || recovery?.inputDigest !== inputDigest || recovery?.promptDigest !== VERIFIED_WRITER1_PROMPT_DIGEST || !/^[0-9a-f]{40}$/u.test(recovery?.sourceSha || "") || recovery?.allowCreate !== false || recovery?.allowResume !== true || recovery?.allowFollowUp !== true || recovery?.maxFollowUps !== 1 || recovery?.idempotencyKey !== `${VERIFIED_WRITER1_AGENT_ID}:writer1:correction:v1:${inputDigest}:${VERIFIED_WRITER1_PROMPT_DIGEST}` || recovery?.send !== undefined || policy.allowCreate !== undefined || policy.allowResume !== undefined || policy.allowFollowUp !== undefined || policy.send !== undefined) throw new Error("verified Writer1 correction pins are invalid");
   if (JSON.stringify(policy.approvedRoutes) !== JSON.stringify(["/", "/garage-door-repair", "/garage-door-installation", "/contact"])) throw new Error("verified public route set is invalid");
 }
 
@@ -61,7 +65,7 @@ function verifiedBaseline(root: string, sealed: Dict, projection: Dict): CursorG
 export function validateVerifiedWriter1CorrectionV2Control(control: Dict, inputDigest: string, baseline: CursorGitHubBaselineInput): void {
   if (control.schemaVersion !== "words-canary-control/v1" || control.requestedBy !== "architect" || control.stage !== "writer1" || control.restore !== null) throw new Error("verified v2 control envelope is invalid");
   if (control.wakeNonce === DORMANT) return;
-  const policy = control.policy; const recovery = policy?.recovery;
+  const policy = control.policy; const recovery = verifiedControlRecovery(control);
   const expectedBaseline = baselineControlMetadata(baseline);
   if (policy?.mode !== "writer1-correction" || policy.writer1Only !== true || policy.provider !== "cursor-sdk" || policy.model !== "cursor-grok-4.6-high" || policy.fast !== false || policy.stopAfter !== "awaiting-architect-qa") throw new Error("verified v2 control does not select the bounded Writer1 correction policy");
   if (recovery?.correctionVersion !== VERIFIED_WRITER1_CORRECTION_V2 || recovery?.sourceBranch !== VERIFIED_BRANCH || recovery?.agentId !== VERIFIED_WRITER1_AGENT_ID || recovery?.threadUrl !== VERIFIED_WRITER1_THREAD_URL || recovery?.inputDigest !== inputDigest || recovery?.promptDigest !== VERIFIED_WRITER1_PROMPT_V2_DIGEST || JSON.stringify(recovery?.baseline) !== JSON.stringify(expectedBaseline) || recovery?.allowCreate !== false || recovery?.allowResume !== true || recovery?.allowFollowUp !== true || recovery?.maxFollowUps !== 1 || recovery?.idempotencyKey !== `${VERIFIED_WRITER1_AGENT_ID}:writer1:correction:v2:${inputDigest}:${VERIFIED_WRITER1_PROMPT_V2_DIGEST}`) throw new Error("verified Writer1 correction v2 pins are invalid");
@@ -75,7 +79,9 @@ export async function runVerifiedWriter1CorrectionV2(root = process.cwd()): Prom
   const inputDigest = digestOf({ sealedHandoffDigest: sealed.handoff.resealDigest, writer1Projection: projection, githubBaseline: baselineMetadata(baseline) });
   validateVerifiedWriter1CorrectionV2Control(control, inputDigest, baseline);
   if (process.env.CURSOR_MODEL !== "cursor-grok-4.6-high" || !process.env.CURSOR_API_KEY || process.env.CURSOR_FAST !== "false") throw new Error("verified production environment requires cursor-grok-4.6-high, CURSOR_API_KEY, and fast=false");
-  const prior: CursorWriterCorrectionPrior = { sourceBranch: VERIFIED_BRANCH, sourceSha: control.policy.recovery.sourceSha, sealedHandoffDigest: sealed.handoff.resealDigest, inputDigest, agentId: VERIFIED_WRITER1_AGENT_ID, threadUrl: VERIFIED_WRITER1_THREAD_URL };
+  const recovery = verifiedControlRecovery(control);
+  if (!recovery) throw new Error("verified v2 correction recovery is missing");
+  const prior: CursorWriterCorrectionPrior = { sourceBranch: VERIFIED_BRANCH, sourceSha: recovery.sourceSha, sealedHandoffDigest: sealed.handoff.resealDigest, inputDigest, agentId: VERIFIED_WRITER1_AGENT_ID, threadUrl: VERIFIED_WRITER1_THREAD_URL };
   await writeJson(jsonFile(root, "canary/runtime/state.json"), { status: "writer1-correction-v2-dispatching", stage: "writer1", correctionVersion: VERIFIED_WRITER1_CORRECTION_V2, runId: sealed.handoff.runId, sourceBranch: VERIFIED_BRANCH, sourceSha: prior.sourceSha, sealedHandoffDigest: prior.sealedHandoffDigest, githubBaseline: baselineMetadata(baseline), agentId: prior.agentId, threadUrl: prior.threadUrl, nextStage: null, writer2Blocked: true, messagesSent: 0 });
   const result = await recoverCursorWriterCorrectionV2({
     receiptStore: createJsonCursorReceiptStore(jsonFile(root, "canary/runtime/cursor-receipts.json")), prior, prompt: VERIFIED_WRITER1_PROMPT_V2, correctionVersion: VERIFIED_WRITER1_CORRECTION_V2, baseline,
@@ -94,12 +100,14 @@ export async function runVerifiedWriter1CorrectionV2(root = process.cwd()): Prom
 
 export async function runVerifiedWriter1Correction(root = process.cwd()): Promise<{ status: string; stage: string; threadUrl?: string; correctionRunId?: string }> {
   const control = readJson(root, ".factory-wake/360-words-control.json");
-  if (control.wakeNonce !== DORMANT && control.policy?.recovery?.correctionVersion === VERIFIED_WRITER1_CORRECTION_V2) return runVerifiedWriter1CorrectionV2(root);
+  if (control.wakeNonce !== DORMANT && verifiedControlRecovery(control)?.correctionVersion === VERIFIED_WRITER1_CORRECTION_V2) return runVerifiedWriter1CorrectionV2(root);
   const sealed = validateSealed(root); const projection = writer1Projection(sealed); const inputDigest = digestOf(projection);
   validateVerifiedWriter1Control(control, inputDigest);
   if (control.wakeNonce === DORMANT) return { status: "dormant", stage: "writer1" };
   if (process.env.CURSOR_MODEL !== "cursor-grok-4.6-high" || !process.env.CURSOR_API_KEY || process.env.CURSOR_FAST !== "false") throw new Error("verified production environment requires cursor-grok-4.6-high, CURSOR_API_KEY, and fast=false");
-  const prior: CursorWriterCorrectionPrior = { sourceBranch: VERIFIED_BRANCH, sourceSha: control.policy.recovery.sourceSha, sealedHandoffDigest: sealed.handoff.resealDigest, inputDigest, agentId: VERIFIED_WRITER1_AGENT_ID, threadUrl: VERIFIED_WRITER1_THREAD_URL };
+  const recovery = verifiedControlRecovery(control);
+  if (!recovery) throw new Error("verified correction recovery is missing");
+  const prior: CursorWriterCorrectionPrior = { sourceBranch: VERIFIED_BRANCH, sourceSha: recovery.sourceSha, sealedHandoffDigest: sealed.handoff.resealDigest, inputDigest, agentId: VERIFIED_WRITER1_AGENT_ID, threadUrl: VERIFIED_WRITER1_THREAD_URL };
   await writeJson(jsonFile(root, "canary/runtime/state.json"), { status: "writer1-correction-dispatching", stage: "writer1", correctionVersion: VERIFIED_WRITER1_CORRECTION_VERSION, runId: sealed.handoff.runId, sourceBranch: VERIFIED_BRANCH, sourceSha: prior.sourceSha, sealedHandoffDigest: prior.sealedHandoffDigest, agentId: prior.agentId, threadUrl: prior.threadUrl, nextStage: null, writer2Blocked: true, messagesSent: 0 });
   const result = await recoverCursorWriterCorrection({
     receiptStore: createJsonCursorReceiptStore(jsonFile(root, "canary/runtime/cursor-receipts.json")),

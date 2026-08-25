@@ -94,8 +94,9 @@ export function validateControl(control, input = {}) {
   const changedPaths = Array.isArray(input.changedPaths) ? input.changedPaths : [];
   if (changedPaths.length !== 1 || changedPaths[0] !== CONTROL_PATH) throw new Error("active wake must change only the control file");
   if (String(input.actor || "").toLowerCase() !== String(input.owner || "").toLowerCase()) throw new Error("active wake requires the repository owner Architect actor");
-  const recovery = control.policy?.recovery;
-  const isVerifiedCorrection = recovery?.correctionVersion === "words-writer1-correction/v1" || recovery?.correctionVersion === "words-writer1-correction/v2";
+  if (control.policy?.recovery !== undefined && control.recovery !== undefined) throw new Error("active wake may not provide ambiguous policy and top-level recovery objects");
+  const recovery = control.policy?.recovery ?? control.recovery;
+  const isVerifiedCorrection = control.policy?.mode === "writer1-correction" && (recovery?.correctionVersion === "words-writer1-correction/v1" || recovery?.correctionVersion === "words-writer1-correction/v2");
   if (input.verifiedLane === true && !isVerifiedCorrection) throw new Error("isolated verified lane permits only its bounded Writer1 correction path");
   if (!recovery || (!isVerifiedCorrection && Object.entries(EXPECTED_RECOVERY).some(([key, value]) => recovery[key] !== value))) throw new Error("active artifact-recovery wake is missing the exact prior/run/source tuple");
   if (typeof recovery.sourceSha !== "string" || !/^[0-9a-f]{40}$/u.test(recovery.sourceSha)) throw new Error("active artifact-recovery wake requires an exact 40-hex sourceSha");
@@ -127,8 +128,9 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   const beforeSha = process.env.GITHUB_EVENT_BEFORE;
   const parentSha = execFileSync("git", ["rev-parse", `${commitSha}^`], { encoding: "utf8" }).trim();
   const result = validateControl(control, { changedPaths, actor: process.env.GITHUB_ACTOR, owner: process.env.GITHUB_REPOSITORY_OWNER, commitSha, beforeSha, parentSha, verifiedLane: process.env.VERIFIED_LANE === "true" });
-  const recoveryVersion = control.policy?.recovery?.recoveryVersion || control.policy?.recovery?.correctionVersion || "";
-  const correctionVersion = control.policy?.recovery?.correctionVersion || "";
-  const baseline = control.policy?.recovery?.baseline || {};
+  const recovery = control.policy?.recovery ?? control.recovery ?? {};
+  const recoveryVersion = recovery.recoveryVersion || recovery.correctionVersion || "";
+  const correctionVersion = recovery.correctionVersion || "";
+  const baseline = recovery.baseline || {};
   fs.appendFileSync(process.env.GITHUB_OUTPUT, `dormant=${result.dormant}\nstage=${result.stage}\nrecovery_version=${recoveryVersion || correctionVersion}\n${result.sourceSha ? `source_sha=${result.sourceSha}\n` : ""}${baseline.repository ? `baseline_repository=${baseline.repository}\nbaseline_commit=${baseline.sourceCommit}\nbaseline_path=${baseline.path}\nbaseline_blob_sha=${baseline.blobSha}\nbaseline_raw_sha256=${baseline.rawSha256}\nbaseline_size=${baseline.size}\n` : ""}`);
 }

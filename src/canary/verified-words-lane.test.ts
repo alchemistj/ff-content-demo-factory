@@ -2,9 +2,9 @@ import assert from "node:assert/strict";
 import { existsSync, readFileSync } from "node:fs";
 import * as path from "node:path";
 import test from "node:test";
-import { EXPECTED_VERIFIED_CORRECTION, validateControl as rawValidateControl } from "../../scripts/360-words-control.mjs";
+import { EXPECTED_VERIFIED_CORRECTION, EXPECTED_VERIFIED_CORRECTION_V2, validateControl as rawValidateControl } from "../../scripts/360-words-control.mjs";
 import { validateSealed, writer1Projection } from "../../scripts/360-words-canary.js";
-import { VERIFIED_WRITER1_AGENT_ID, VERIFIED_WRITER1_PROMPT_DIGEST, validateVerifiedWriter1Control, runVerifiedWriter1Correction } from "../../scripts/360-words-verified.js";
+import { VERIFIED_WRITER1_AGENT_ID, VERIFIED_WRITER1_PROMPT_DIGEST, VERIFIED_WRITER1_PROMPT_V2_DIGEST, validateVerifiedWriter1Control, runVerifiedWriter1Correction } from "../../scripts/360-words-verified.js";
 import { digestOf } from "../../src/contracts/digests.js";
 import { assertNoLocalDownstreamGeneration, assertVerifiedDownstreamState, VERIFIED_PUBLIC_ROUTES, VERIFIED_STAGE_POLICY, VERIFIED_WRITER3_SEALED_FACTS } from "../../src/pipeline/verified-words-policy.js";
 
@@ -50,6 +50,16 @@ test("active wake sourceSha is the exact dormant parent/event.before, not an arb
   assert.throws(() => rawValidateControl(active, { ...event, beforeSha: "e".repeat(40), parentSha: "e".repeat(40) }), /parent\/event\.before/u);
   assert.throws(() => rawValidateControl(active, { ...event, parentSha: "e".repeat(40) }), /parent\/event\.before/u);
   assert.throws(() => rawValidateControl(active, { changedPaths: event.changedPaths, actor: event.actor, owner: event.owner }), /commit, event\.before, and parent/u);
+});
+
+test("the top-level v2 verified wake shape is classified narrowly without broadening other modes", () => {
+  const control = JSON.parse(readFileSync(path.join(root, ".factory-wake/360-words-control.json"), "utf8"));
+  const sourceSha = "23b995f17069cc63b9770bfabd1b6da850aeea0c";
+  const active: any = { ...control, wakeNonce: "W1-VERIFIED-20260825-V2-23B995", policy: { ...control.policy, mode: "writer1-correction" }, recovery: { ...EXPECTED_VERIFIED_CORRECTION_V2, sourceSha, inputDigest: "sha256:f4f59e9c645391266172892e4651f0da4ccedaa2bc86e35217a0ab8699fd0c1f", promptDigest: VERIFIED_WRITER1_PROMPT_V2_DIGEST, allowCreate: false, allowResume: true, allowFollowUp: true, maxFollowUps: 1, idempotencyKey: `${VERIFIED_WRITER1_AGENT_ID}:writer1:correction:v2:sha256:f4f59e9c645391266172892e4651f0da4ccedaa2bc86e35217a0ab8699fd0c1f:${VERIFIED_WRITER1_PROMPT_V2_DIGEST}` } };
+  assert.deepEqual(rawValidateControl(active, { changedPaths: [".factory-wake/360-words-control.json"], actor: "architect", owner: "architect", commitSha: "95b83dc79c00de9f1e249b0d5fa0421a0928cd39", beforeSha: sourceSha, parentSha: sourceSha, verifiedLane: true }), { dormant: false, stage: "writer1", sourceSha });
+  assert.throws(() => rawValidateControl({ ...active, policy: { ...active.policy, mode: "artifact-recovery" } }, { changedPaths: [".factory-wake/360-words-control.json"], actor: "architect", owner: "architect", commitSha: "95b83dc79c00de9f1e249b0d5fa0421a0928cd39", beforeSha: sourceSha, parentSha: sourceSha, verifiedLane: true }), /isolated verified lane/u);
+  assert.throws(() => rawValidateControl({ ...active, recovery: { ...active.recovery, correctionVersion: "words-writer1-correction/v3" } }, { changedPaths: [".factory-wake/360-words-control.json"], actor: "architect", owner: "architect", commitSha: "95b83dc79c00de9f1e249b0d5fa0421a0928cd39", beforeSha: sourceSha, parentSha: sourceSha, verifiedLane: true }), /isolated verified lane/u);
+  assert.throws(() => rawValidateControl({ ...active, recovery: { recoveryVersion: "words-writer1-artifact-recovery/v2", sourceSha } }, { changedPaths: [".factory-wake/360-words-control.json"], actor: "architect", owner: "architect", commitSha: "95b83dc79c00de9f1e249b0d5fa0421a0928cd39", beforeSha: sourceSha, parentSha: sourceSha, verifiedLane: true }), /isolated verified lane/u);
 });
 
 test("verified policy requires new downstream agents and signed direct receipts, with immutable Writer3 facts", () => {
