@@ -13,9 +13,15 @@ Directly readable words package for the 360 Garage Door and More canary. Natural
 - Merge occurred: **no**
 - Deployment occurred: **no**
 - Branch: `architect/360-words-canary`
-- Head commits: `5606962` (local pointer-ledger apply), `b0ebf46` (Human Gate 2 words package)
-- Pointer-ledger normalization commit parent: `137a8ae`
-- Prior fail-closed Action: https://github.com/alchemistj/ff-content-demo-factory/actions/runs/32806937751
+- Head at dormant return: `1bc904cf4dbb2d09286d1d8a617a58fd9e6a6db3`
+- Human Gate 2 words package: `14078520014fc001532a2371f4b2c036e869a812`
+- Readable headings: `fd5087388fc6d936885f06e99d162a05f0189a65`
+- Pointer-ledger apply: `56069627ee62dd2f843e2b6a38313b37e7e23a72`
+- Factory pointer-ledger normalizer: `52b197fae95ce501c4729813a84751ca16b7278f`
+- Pointer-ledger parent: `137a8ae8906b5e9995c8e000d802fa62b5adbc2c`
+- Fail-closed diagnostic Action: https://github.com/alchemistj/ff-content-demo-factory/actions/runs/32806937751
+- Normalize wake (validation-only, fail-closed): https://github.com/alchemistj/ff-content-demo-factory/actions/runs/32808355566
+- Dormant return Action (success): https://github.com/alchemistj/ff-content-demo-factory/actions/runs/32808571523
 - Pull request (unmerged): https://github.com/alchemistj/ff-content-demo-factory/pull/6
 - Writer 1 Cursor thread: https://cursor.com/agents/bc-30fc8ffa-2005-44b9-8fc7-48ddd9c3bcc8
 - Correction Cursor thread: https://cursor.com/agents/bc-57cc62dc-de8f-4be0-840b-640662ae56a4
