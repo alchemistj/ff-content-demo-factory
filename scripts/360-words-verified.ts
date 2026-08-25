@@ -58,6 +58,7 @@ export const VERIFIED_WRITER1_POST_DISPATCH = Object.freeze({
 export const VERIFIED_WRITER1_POST_DISPATCH_SEAL_VERSION = "words-writer1-post-dispatch-seal/v1" as const;
 export const VERIFIED_WRITER1_POST_DISPATCH_SEAL_MODE = "writer1-seal-only" as const;
 export const VERIFIED_WRITER1_POST_DISPATCH_SEALED_MANIFEST_SCHEMA = "verified-writer1-sealed-manifest-pin/v1" as const;
+export const VERIFIED_WRITER1_POST_DISPATCH_MANIFEST_PATH = "runtime/writer1-dispatch-manifest.json" as const;
 
 function originalDispatchIdempotencyKey(): string { return POST_DISPATCH_ORIGINAL_IDEMPOTENCY_KEY; }
 function postDispatchBinding(value: Dict): string {
@@ -105,7 +106,7 @@ export function validateVerifiedWriter1SealOnlyControl(control: Dict): void {
 
 function validateSealedManifestPins(recovery: Dict): void {
   const pin = recovery.sealedManifest;
-  if (!pin || pin.schemaVersion !== VERIFIED_WRITER1_POST_DISPATCH_SEALED_MANIFEST_SCHEMA || pin.sourceActionRunId !== recovery.sealActionRunId || Number(pin.sourceArtifactId) !== Number(recovery.sealArtifactId) || pin.manifestPath !== "runtime/writer1-dispatch-manifest.json" || !isDigest(pin.manifestBytesDigest) || !Number.isSafeInteger(pin.manifestSize) || pin.manifestSize < 1 || !isDigest(pin.manifestDigest) || !/^hmac-sha256:[0-9a-f]{64}$/u.test(String(pin.manifestMac)) || typeof pin.sourceSha !== "string" || !/^[0-9a-f]{40}$/u.test(pin.sourceSha)) throw new Error("retrieval-only control is missing exact sealed manifest bytes, digest, MAC, or source pins");
+  if (!pin || pin.schemaVersion !== VERIFIED_WRITER1_POST_DISPATCH_SEALED_MANIFEST_SCHEMA || pin.sourceActionRunId !== recovery.sealActionRunId || Number(pin.sourceArtifactId) !== Number(recovery.sealArtifactId) || pin.manifestPath !== VERIFIED_WRITER1_POST_DISPATCH_MANIFEST_PATH || !isDigest(pin.manifestBytesDigest) || !Number.isSafeInteger(pin.manifestSize) || pin.manifestSize < 1 || !isDigest(pin.manifestDigest) || !/^hmac-sha256:[0-9a-f]{64}$/u.test(String(pin.manifestMac)) || typeof pin.sourceSha !== "string" || !/^[0-9a-f]{40}$/u.test(pin.sourceSha)) throw new Error("retrieval-only control is missing exact sealed manifest bytes, digest, MAC, or source pins");
 }
 
 function readSealedManifest(root: string, recovery: Dict, cursorApiKey: string): CursorPostDispatchReceiptManifest {
@@ -271,9 +272,9 @@ export async function runVerifiedWriter1PostDispatchSealOnly(root = process.cwd(
     threadUrl: VERIFIED_WRITER1_POST_DISPATCH.threadUrl, requestedModel: VERIFIED_WRITER1_POST_DISPATCH.requestedModel, resolvedModel: VERIFIED_WRITER1_POST_DISPATCH.resolvedModel,
     effort: "high", fast: false, originalInputDigest: POST_DISPATCH_ORIGINAL_INPUT_DIGEST, originalPromptDigest: POST_DISPATCH_ORIGINAL_PROMPT_DIGEST,
     originalIdempotencyKey: originalDispatchIdempotencyKey(), originalRequestDigest: dispatch.requestDigest, messagesSent: 1, recoveryMessagesSent: 0,
-    manifestPath: "canary/runtime/writer1-dispatch-manifest.json", manifestDigest: manifest.manifestDigest, manifestMac: manifest.manifestMac, originalIdempotencySource: originalEvidence.idempotencySource, originalMessagesSentSource: originalEvidence.messagesSentSource, writer2Blocked: true, nextStage: null,
+    manifestPath: VERIFIED_WRITER1_POST_DISPATCH_MANIFEST_PATH, manifestDigest: manifest.manifestDigest, manifestMac: manifest.manifestMac, originalIdempotencySource: originalEvidence.idempotencySource, originalMessagesSentSource: originalEvidence.messagesSentSource, writer2Blocked: true, nextStage: null,
   });
-  return { status: "manifest-sealed", stage: "writer1", manifestPath: "canary/runtime/writer1-dispatch-manifest.json" };
+  return { status: "manifest-sealed", stage: "writer1", manifestPath: VERIFIED_WRITER1_POST_DISPATCH_MANIFEST_PATH };
 }
 
 export async function runVerifiedWriter1PostDispatchRecovery(root = process.cwd()): Promise<{ status: string; stage: string; runId: string; threadUrl: string }> {

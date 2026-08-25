@@ -108,11 +108,16 @@ test("post-dispatch wake is classified as retrieval-only and cannot reach a foll
 
 test("sealed Action ZIP uses its exact root logical listing and extraction paths", () => {
   const workflow = readFileSync(path.join(root, ".github/workflows/architect-360-words-canary.yml"), "utf8");
+  const verifiedSource = readFileSync(path.join(root, "scripts/360-words-verified.ts"), "utf8");
   assert.match(workflow, /expected_seal_listing[\s\S]*runtime\/state\.json[\s\S]*runtime\/writer1-dispatch-manifest\.json[\s\S]*runtime\/writer1-seal-receipt\.json/u);
   assert.match(workflow, /manifest='canary\/inputs\/post-dispatch-seal-artifact\/runtime\/writer1-dispatch-manifest\.json'/u);
   assert.match(workflow, /seal_receipt='canary\/inputs\/post-dispatch-seal-artifact\/runtime\/writer1-seal-receipt\.json'/u);
   assert.match(workflow, /WRITER1_POST_DISPATCH_SEAL_ROOT: canary\/inputs\/post-dispatch-seal-artifact\n/u);
   assert.doesNotMatch(workflow, /post-dispatch-seal-artifact\/canary\/runtime\/(?:writer1-dispatch-manifest|writer1-seal-receipt)\.json/u);
+  assert.match(verifiedSource, /VERIFIED_WRITER1_POST_DISPATCH_MANIFEST_PATH\s*=\s*"runtime\/writer1-dispatch-manifest\.json"/u);
+  assert.match(verifiedSource, /manifestPath:\s*VERIFIED_WRITER1_POST_DISPATCH_MANIFEST_PATH/u);
+  assert.match(verifiedSource, /pin\.manifestPath\s*!==\s*VERIFIED_WRITER1_POST_DISPATCH_MANIFEST_PATH/u);
+  assert.doesNotMatch(verifiedSource, /manifestPath:\s*"canary\/runtime\/writer1-dispatch-manifest\.json"/u);
 });
 
 test("two-step seal-only mode is classified separately and has no Cursor retrieval path", () => {
