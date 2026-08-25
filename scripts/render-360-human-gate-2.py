@@ -28,30 +28,11 @@ AUDIT_PHRASES = (
 )
 HARD_800 = re.compile(r"(>=\s*800|at least 800|exceed(?:s|ed|ing)? 800)", re.I)
 
-CHRIS_ID = "Ci9DQUlRQUNvZENodHljRjlvT201TVdWZGZSak00ZUhSQ2VVdHNYMWxFYTBFdE9XYxAB"
-DEBBIE_ID = "Ci9DQUlRQUNvZENodHljRjlvT2xSWWMycFZlV3AxTldKcFpVZGxTalpGTUZSV1drRRAB"
-JASON_ID = "Ci9DQUlRQUNvZENodHljRjlvT2taQlh6VlZabU5OWjFKc2JISklTa1pXUlVwVGVuYxAB"
-JUDI_ID = "Ci9DQUlRQUNvZENodHljRjlvT2xoRE1HZ3lUMWRpVWt3d1dsVXhjVE5XZEc1VWVuYxAB"
-KELSIE_ID = "ChdDSUhNMG9nS0VQcUM5dGpxNjRxcHJBRRAB"
-STEVE_ID = "Ci9DQUlRQUNvZENodHljRjlvT21STGNXUk1jMEZ1TmtsYVoyWlhTbEk1TjFsWWRHYxAB"
-MARCIE_ID = "Ci9DQUlRQUNvZENodHljRjlvT25jM2NVNTZlVzF0YVhCNVdXSlVZVEpmYW05UExYYxAB"
-CHRISTINE_ID = "Ci9DQUlRQUNvZENodHljRjlvT2pBMU5rSktSMmhHV1RKb2NVdE1TVXBOVFRsS01YYxAB"
-SCOTT_ID = "ChZDSUhNMG9nS0VJNng0b1B1N3NEY0ZBEAE"
-MATTHEW_ID = "Ci9DQUlRQUNvZENodHljRjlvT2xjeVFtOTRMV3BTTUc1Qk5VeFNhVTlJYW1GcFMwRRAB"
+REJECTED_RENDERED_WORDS_DIGEST = "sha256:165d310ae1e30225b6278cc0fbde7d2cab23a60f186157c59734257519c01f89"
 CAMERON_ID = "Ci9DQUlRQUNvZENodHljRjlvT2xWdlZGQk9hMjFOUlhaVk5rczFVR2RKTlVKWlVGRRAB"
-GREGORY_ID = "Ci9DQUlRQUNvZENodHljRjlvT25JelNERXdhRFpIV0hscFUxOUxkakZtYzFaMWFXYxAB"
-
-CHRIS_QUOTE = "Will did a fantastic job on our old huge garage door that was sagging from age. He thoroughly explained the problem and the best solution along with a great estimate, the work was completed quickly."
-DEBBIE_QUOTE = "Happy to have our door open and close consistently and have our outdoor pad updated."
-JASON_QUOTE = "I am very happy with the job Will did on our garage door spring replacement. My door works better now than ever."
-JUDI_QUOTE = "They gave me options and let me choose what I wanted done, what had to be repaired now and what could wait. I chose to do everything at once, which made my price higher, but still significantly less than what I thought it would cost and I wasn't pressured to do any of it."
-KELSIE_QUOTE = "Will had everything he needed to complete our repair on his truck, so it was quick and efficient."
-MARCIE_QUOTE = "We got our new garage doors installed yesterday and they look amazing!  Very professional and the gentleman that did the installation was very polite and kept things picked up while he worked."
-CHRISTINE_QUOTE = "Jenny is a doll, a big help with choosing a garage door you want and very budget friendly! Will installs them."
-SCOTT_QUOTE = "My project was replacing a 1980 7ft overhead door with a 9’-6” tall door for my reframed opening so we could fit our new camper van."
-MATTHEW_QUOTE = "We are painting the door and the technician left the trim loose for the perfect application for paint."
-CAMERON_QUOTE = "They replaced my doors and openers with quality materials at a lower cost than the competitors."
 CAMERON_HOME_QUOTE = "They replaced my doors and openers with quality materials at a lower cost than the competitors.  Then,  they came back a couple months later just to check and make sure everything was working as it is supposed to."
+THIS_THREAD = "https://cursor.com/agents/bc-2486f645-c31c-4532-8145-fbe3af1d45a8"
+REVIEWED_HEAD = "778fbc8742038f6c4e4d88ca241bf2a62d8c0c6b"
 
 
 def words(text: str) -> int:
@@ -134,189 +115,17 @@ normalization = {
     "removed": [{"key": "reviewer"}] * 31 + [{"key": "excerpt"}] * 31,
 }
 
-repair_sections = [
-    {
-        "id": "repair-proof-lead",
-        "heading": "A sagging door that needed to travel again",
-        "body": "Repair is for the door already in the opening. Chris Keaton’s old, huge garage door was sagging from age. Will explained the problem and the best solution, gave an estimate, and finished the work so the door could travel again. After that visit Chris recommended 360 for repair or replacement in general; the sagging-door job itself was repair of the door they already had. If your door sags, sticks, or will not open, start here rather than shopping a new door first.",
-        "quotes": [quote_obj(CHRIS_QUOTE, "Chris Keaton", CHRIS_ID, "lead-quote", "repair-proof-lead")],
-    },
-    {
-        "id": "repair-what-we-fix",
-        "heading": "Doors that will not open, stick, or need a seal or wiring fix",
-        "body": "Springfield homeowners bring in doors that will not open, will not travel evenly, or need a seal, pad, or wiring brought back in line. Completed visits include a door that would not open and left working smoothly, both doors repaired after an animal incident with the wiring corrected, a bottom seal replaced before it became a larger problem, and a door that finally opened and closed consistently. On a failed door, the same visit can restore travel and add a quiet operator. A keypad can be installed on that same repair call. The point of these visits is a door that opens, closes, and stays in line.",
-        "quotes": [quote_obj(DEBBIE_QUOTE, "Debbie Christopher", DEBBIE_ID, "consistent-travel-quote", "repair-what-we-fix")],
-    },
-    {
-        "id": "repair-springs-folded",
-        "heading": "Springs, tracks, and rollers stay with repair",
-        "body": "A broken spring is still repair of the door in the opening. Completed jobs include two springs on a two-car door, an undersized spring replaced after the door was weighed, old coils replaced with the tracks and rollers serviced, and a broken spring with a few brackets. If a spring failed early, the useful question on site is whether the next spring is sized for the actual door weight. Jenny handles the schedule and the price conversation. Will does the install, often with Blake on larger spring jobs, and talks through maintenance a homeowner can do.",
-        "quotes": [quote_obj(JASON_QUOTE, "jason tourville", JASON_ID, "spring-replacement-quote", "repair-springs-folded")],
-    },
-    {
-        "id": "repair-options",
-        "heading": "Diagnosis first, then a choice",
-        "body": "The useful visit pattern is an on-site look, a clear explanation, and a choice about what to do now versus later. Homeowners were told what had to be repaired immediately and what could wait, without a push to buy extra work. Routine maintenance visits work the same way: improvements are pointed out, priced, and finished when the materials are already on the truck. Recommendations stay aimed at a door that is working, stable, and safe.",
-        "quotes": [
-            quote_obj(JUDI_QUOTE, "Judi Wills", JUDI_ID, "options-without-pressure-quote", "repair-options"),
-            quote_obj(KELSIE_QUOTE, "Kelsie Bates", KELSIE_ID, "parts-on-truck-quote", "repair-options"),
-        ],
-    },
-    {
-        "id": "repair-springfield",
-        "heading": "A Springfield shop with the same people on the jobs",
-        "body": "Reviewers keep naming the same local shop: Jenny on the phone and by text, Will on the driveway, at 2035 W Mt Vernon St in Springfield. Neighbors compared service calls with other companies, then hired 360 for the repair. A year or so after earlier fixes, Steve Brooks had them back to make sure the doors were still working correctly.",
-        "quotes": [],
-    },
-    {
-        "id": "repair-next",
-        "heading": "Talk through the door that is not acting right",
-        "body": "Call (417) 366-7360 and ask for Jenny. Shop hours are Monday–Friday, 8 AM to 5 PM. Saturday and Sunday the shop is closed. If you reach them over a weekend, the next step is a weekday appointment to look at the door you have: whether it sags, will not open, or needs a spring, seal, or track brought back in line.",
-        "quotes": [],
-    },
-]
-
-install_sections = [
-    {
-        "id": "install-proof-lead",
-        "heading": "New doors in, workspace picked up",
-        "body": "Installation is a new door for the opening you have, including jobs with more than one door. Marcie Spitzer’s new garage doors were in, they looked the way she wanted, the installer was polite, and he kept the workspace picked up while he worked. If the door you already have will not travel, that work belongs on the repair page.",
-        "quotes": [quote_obj(MARCIE_QUOTE, "Marcie Spitzer", MARCIE_ID, "lead-quote", "install-proof-lead")],
-    },
-    {
-        "id": "install-selection",
-        "heading": "Help choosing a door",
-        "body": "Choosing a door is a conversation about the opening you have and the budget you can live with. Christine Kallmbah asked neighbors for recommendations, then worked with Jenny on the door she wanted. Jenny stays on selection and budget. Will installs the door you pick.",
-        "quotes": [quote_obj(CHRISTINE_QUOTE, "Christine Kallmbah", CHRISTINE_ID, "selection-help-quote", "install-selection")],
-    },
-    {
-        "id": "install-custom-height",
-        "heading": "A taller door sized to the opening you already have",
-        "body": "Scott Heffern replaced a 1980 7-foot overhead door with a 9-foot-6-inch door so a camper van would fit. Will and Jenny came out in person to coordinate the door size to the opening he had already reframed. Will installed the door and cleaned the workspace before he left. Bring the opening you actually have, including any reframing already done. The job is the door, sized to that opening.",
-        "quotes": [quote_obj(SCOTT_QUOTE, "Scott Heffern", SCOTT_ID, "taller-door-reframed-opening-quote", "install-custom-height")],
-    },
-    {
-        "id": "install-trim-cleanup",
-        "heading": "Paint-ready trim and a cleaned workspace",
-        "body": "Finish work shows up in the reviews as much as the door itself. Matthew Smith described professional installation from start to finish. Because they were painting, the technician left the trim loose so the paint could go on cleanly. Combined with installers who keep the driveway picked up, that is what done looks like on these jobs: the door is in, the trim is ready for paint if you need it, and the workspace is not left for you to sort out.",
-        "quotes": [quote_obj(MATTHEW_QUOTE, "Matthew Smith", MATTHEW_ID, "paint-ready-trim-quote", "install-trim-cleanup")],
-    },
-    {
-        "id": "install-replacement",
-        "heading": "Replacement doors for the opening that is already there",
-        "body": "Some jobs take an existing door out and put a new one in. Cameron Spitzer had doors and openers replaced together as one job, then had 360 back a couple of months later to see that everything still worked. When Gregory Ritchie’s door failed, he reached Jenny by messenger, Will came out, and they put a brand-new garage door in the same opening later that week.",
-        "quotes": [quote_obj(CAMERON_QUOTE, "Cameron Spitzer", CAMERON_ID, "replacement-doors-quote", "install-replacement")],
-    },
-    {
-        "id": "install-next",
-        "heading": "Plan a door for the opening you have",
-        "body": "If you are replacing a door or fitting a new one to a standard or taller opening, call (417) 366-7360 and ask for Jenny. Shop hours are Monday–Friday, 8 AM to 5 PM. Saturday and Sunday the shop is closed. Tell her the opening size you have, whether any reframing is already done, and whether you plan to paint, so the door and trim can be planned around that opening.",
-        "quotes": [],
-    },
-]
-
-repair = {
-    "url": "/garage-door-repair",
-    "type": "service",
-    "prescriptionId": "Service:/garage-door-repair",
-    "primaryKeyword": "garage door repair Springfield MO",
-    "title": "Garage Door Repair in Springfield, MO",
-    "seoTitle": "Garage Door Repair in Springfield, MO",
-    "route": "/garage-door-repair",
-    "metaDescription": "Garage door repair in Springfield, MO for doors that sag, stick, or will not open. On-site diagnosis, options, and completed repairs when parts are on the truck.",
-    "h1": "Garage door repair for doors that sag, stick, or will not open",
-    "body": "If the door already in your opening sags, sticks, or will not open, this is the repair page. Jenny answers the phone. Will does the on-site work. New doors are on the installation page.",
-    "sections": repair_sections,
-    "claims": [
-        {
-            "text": "Completed Springfield repair jobs include sagging doors, doors that would not open, and doors that would not travel consistently.",
-            "provenance": {"type": "claim", "ref": "Service:/garage-door-repair", "placement": "prescribed-claim-completed-repairs", "section": "repair-proof-lead"},
-        },
-        {
-            "text": "Repair visits include on-site diagnosis, a choice about what to fix now versus later, and completed work when parts are on the truck.",
-            "provenance": {"type": "claim", "ref": "Service:/garage-door-repair", "placement": "prescribed-claim-diagnosis-options-parts", "section": "repair-options"},
-        },
-        {
-            "text": "Spring, track, roller, seal, and related repair-family work stays on the repair page.",
-            "provenance": {"type": "claim", "ref": "Service:/garage-door-repair", "placement": "prescribed-claim-folded-springs", "section": "repair-springs-folded"},
-        },
-    ],
-    "reviewPlacements": [
-        quote_obj(CHRIS_QUOTE, "Chris Keaton", CHRIS_ID, "lead-quote", "repair-proof-lead"),
-        quote_obj(DEBBIE_QUOTE, "Debbie Christopher", DEBBIE_ID, "consistent-travel-quote", "repair-what-we-fix"),
-        quote_obj(JASON_QUOTE, "jason tourville", JASON_ID, "spring-replacement-quote", "repair-springs-folded"),
-        quote_obj(JUDI_QUOTE, "Judi Wills", JUDI_ID, "options-without-pressure-quote", "repair-options"),
-        quote_obj(KELSIE_QUOTE, "Kelsie Bates", KELSIE_ID, "parts-on-truck-quote", "repair-options"),
-    ],
-    "reviewEvidence": [
-        pointer(CHRIS_ID, "lead-completed-sagging-door", "repair-proof-lead"),
-        pointer("Ci9DQUlRQUNvZENodHljRjlvT25OS09FRkhPRkptVVhoclIwdzRORVp6VTB0R1VIYxAB", "door-would-not-open", "repair-what-we-fix"),
-        pointer("Ci9DQUlRQUNvZENodHljRjlvT2xVMWQxVlRXalppVmxoU1NHcG9hUzFtV2pSVmRIYxAB", "animal-incident-wiring-repair", "repair-what-we-fix"),
-        pointer("ChdDSUhNMG9nS0VJQ0FnSURmNlBfbXhBRRAB", "bottom-seal-repair", "repair-what-we-fix"),
-        pointer(DEBBIE_ID, "consistent-open-close", "repair-what-we-fix"),
-        pointer("Ci9DQUlRQUNvZENodHljRjlvT2t0T04xVlBSMU5oUmprMU9TMXNibmx6WjJ0cldHYxAB", "completed-door-fixed", "repair-what-we-fix"),
-        pointer("ChdDSUhNMG9nS0VJQ0FnTUNZNkplRm5BRRAB", "service-call-door-working", "repair-what-we-fix"),
-        pointer("Ci9DQUlRQUNvZENodHljRjlvT25oaE9HeFNXVUUyUmt0VlowSkJPVWRCWmpSTVZYYxAB", "two-springs-two-car-door", "repair-springs-folded"),
-        pointer(JASON_ID, "spring-replacement-completed", "repair-springs-folded"),
-        pointer("Ci9DQUlRQUNvZENodHljRjlvT2xkeFNsRnBOMll0V2pGblFsQXljR0pIV0ZreE5VRRAB", "undersized-spring-corrected", "repair-springs-folded"),
-        pointer("Ci9DQUlRQUNvZENodHljRjlvT25wemJWQkhVa3RWWTJKeVdYaFdlbFJOWlVGeFQxRRAB", "spring-repair-folded", "repair-springs-folded"),
-        pointer("Ci9DQUlRQUNvZENodHljRjlvT2tRMVoybGhYM1JWUldwb2JVNXNXbFozWDBaMVNIYxAB", "coils-tracks-rollers", "repair-springs-folded"),
-        pointer("ChdDSUhNMG9nS0VJQ0FnTUNBZ082YzBRRRAB", "broken-spring-and-brackets", "repair-springs-folded"),
-        pointer("ChdDSUhNMG9nS0VJQ0FnTUNBbnNUOXB3RRAB", "opener-springs-replaced", "repair-springs-folded"),
-        pointer("ChZDSUhNMG9nS0VQR2ZxNUc5cjZhckdREAE", "return-spring-monday-visit", "repair-springs-folded"),
-        pointer("ChZDSUhNMG9nS0VLeTZocG5jME9qc0t3EAE", "sunday-text-monday-repair", "repair-springs-folded"),
-        pointer(JUDI_ID, "options-without-pressure", "repair-options"),
-        pointer("ChdDSUhNMG9nS0VJQ0FnSURQZ2RtWDFnRRAB", "diagnostics-and-repair", "repair-options"),
-        pointer("Ci9DQUlRQUNvZENodHljRjlvT2psMlVHOVhVMDVrTFhwUlpWbDZjSFZUUjFKQlgwRRAB", "maintenance-materials-on-hand", "repair-options"),
-        pointer("ChZDSUhNMG9nS0VJQ0FnSURQZ2NEbVJnEAE", "lubrication-and-adjustment", "repair-options"),
-        pointer(KELSIE_ID, "parts-on-truck-completed-repair", "repair-options"),
-        pointer(STEVE_ID, "follow-up-after-prior-fixes", "repair-springfield"),
-        pointer("ChZDSUhNMG9nS0VJQ0FnSUR2cmFTZE93EAE", "local-springfield-repairs-and-service", "repair-springfield"),
-        pointer("Ci9DQUlRQUNvZENodHljRjlvT2t4alNtbDBaVVV4VVRselpIQTJhakpOYURSeE1HYxAB", "will-service-repair-jenny-phone", "repair-springfield"),
-        pointer("Ci9DQUlRQUNvZENodHljRjlvT2xSSU1YVXhWMDVDZWtWMVZtTm5SbGhHTld4amVGRRAB", "fixed-and-serviced", "repair-springfield"),
-    ],
-}
-
-install = {
-    "url": "/garage-door-installation",
-    "type": "service",
-    "prescriptionId": "Service:/garage-door-installation",
-    "primaryKeyword": "garage door installation Springfield MO",
-    "title": "Garage Door Installation in Springfield, MO",
-    "seoTitle": "Garage Door Installation in Springfield, MO",
-    "route": "/garage-door-installation",
-    "metaDescription": "Garage door installation in Springfield, MO for new and replacement doors. Help choosing a door, custom heights, paint-ready trim, and a cleaned workspace.",
-    "h1": "New garage doors installed for the opening you have",
-    "body": "If you need a new door in the opening you have, including a replacement, this is the installation page. Jenny helps you choose. Will installs. Repair of a door that already hangs in the opening is on the repair page.",
-    "sections": install_sections,
-    "claims": [
-        {
-            "text": "Completed Springfield installation jobs include new doors, multi-door installs, and a taller door sized to a reframed opening.",
-            "provenance": {"type": "claim", "ref": "Service:/garage-door-installation", "placement": "prescribed-claim-completed-installs", "section": "install-proof-lead"},
-        },
-        {
-            "text": "Installation visits include help choosing a door, trim left ready to paint, and a workspace that was picked up.",
-            "provenance": {"type": "claim", "ref": "Service:/garage-door-installation", "placement": "prescribed-claim-selection-trim-cleanup", "section": "install-selection"},
-        },
-    ],
-    "reviewPlacements": [
-        quote_obj(MARCIE_QUOTE, "Marcie Spitzer", MARCIE_ID, "lead-quote", "install-proof-lead"),
-        quote_obj(CHRISTINE_QUOTE, "Christine Kallmbah", CHRISTINE_ID, "selection-help-quote", "install-selection"),
-        quote_obj(SCOTT_QUOTE, "Scott Heffern", SCOTT_ID, "taller-door-reframed-opening-quote", "install-custom-height"),
-        quote_obj(MATTHEW_QUOTE, "Matthew Smith", MATTHEW_ID, "paint-ready-trim-quote", "install-trim-cleanup"),
-        quote_obj(CAMERON_QUOTE, "Cameron Spitzer", CAMERON_ID, "replacement-doors-quote", "install-replacement"),
-    ],
-    "reviewEvidence": [
-        pointer(MARCIE_ID, "lead-new-doors-installed", "install-proof-lead"),
-        pointer(CHRISTINE_ID, "help-choosing-door", "install-selection"),
-        pointer(SCOTT_ID, "taller-door-reframed-opening", "install-custom-height"),
-        pointer(MATTHEW_ID, "paint-ready-trim", "install-trim-cleanup"),
-        pointer(CAMERON_ID, "replacement-doors", "install-replacement"),
-        pointer(GREGORY_ID, "new-door-by-thursday-that-job", "install-replacement"),
-    ],
-}
-
-writer1 = {"schemaVersion": "words-writer1-output/v1", "pages": [repair, install]}
+writer1_path = ROOT / "canary/outputs/writer1-output.json"
+if not writer1_path.exists():
+    raise SystemExit("committed Writer1 output is required; do not reconstruct padded copy")
+writer1 = load(writer1_path)
+if writer1.get("schemaVersion") != "words-writer1-output/v1":
+    raise SystemExit("committed Writer1 output is missing or invalid")
+pages = writer1["pages"]
+if [page.get("url") for page in pages] != ["/garage-door-repair", "/garage-door-installation"]:
+    raise SystemExit("Writer1 pages must be repair then installation")
+repair = pages[0]
+install = pages[1]
 
 header = {
     "brand": "360 Garage Door and More",
@@ -364,12 +173,12 @@ homepage = {
         {
             "id": "home-repair-route",
             "heading": "When the door you have is the problem",
-            "body": "Repair is for a door that already hangs in the opening. The repair page leads with Chris Keaton’s sagging-door job and keeps spring, seal, track, and travel work on that page.",
+            "body": "Repair is for a door that already hangs in the opening. The repair page starts with when to keep that door, then covers springs, seals, tracks, and wiring on the same visit rather than sending you to another shop.",
         },
         {
             "id": "home-install-route",
             "heading": "When you need a new door in the opening you have",
-            "body": "Installation is for new and replacement doors, including a taller door fitted to a reframed opening. The installation page leads with Marcie Spitzer’s completed new-door job and the cleanup reviewers noticed.",
+            "body": "Installation is for a new door, or more than one, fitted to the opening you already have. The installation page covers selection help, a taller door sized to a reframed opening, and how the visit is left.",
         },
         {
             "id": "home-hours",
@@ -437,7 +246,7 @@ strategy = {
     "pageType": "strategy-overview",
     "internal": True,
     "title": "Strategy Overview — 360 Garage Door and More words canary",
-    "body": "This is an internal Writer 3 artifact. It is not a public page and must not be linked from header, footer, or business CTAs.\n\nPublic topology is exactly four routes in reading order: Home `/`, Garage Door Repair `/garage-door-repair`, Garage Door Installation `/garage-door-installation`, and Contact `/contact`. Writer 1 authored the two service pages from the sealed 360 prescription and the existing 47 written reviews. Production validation rejected the remote artifact because `reviewEvidence` carried word-bearing `reviewer` and `excerpt` keys. Factory pointer-ledger normalization removed those 62 duplicated keys, preserved dedicated copy, and left the quarantined source bytes unapproved.\n\nThe former hard 800-word floor is revoked. Architect QA accepted the corrected Writer 1 pages because each section has a distinct homeowner job, related reviews are synthesized, each quotation appears once, public copy reads like local-service writing, and unsupported speed, warranty, pricing, and carpentry claims stay out. Useful-body word counts are diagnostic evidence only and are not the accept reason. Writer 2 stayed blocked until that fresh decision, then authored Home, Contact, header, and footer using the same NAP, hours, and named people (Jenny / Will) without new vendor calls. Writer 3 records the fold: spring replacement, maintenance, seals, tracks, diagnostics, and related repair-family work stay on `/garage-door-repair`; opener and keypad work stay supporting evidence and do not receive public routes. Whole-site QA checks continuity, evidence fidelity, voice, CTA flow, and route completeness. Josh alone approves Human Gate 2 and any later merge. No deployment occurred.",
+    "body": "This is an internal Writer 3 artifact. It is not a public page and must not be linked from header, footer, or business CTAs.\n\nPublic topology is exactly four routes in reading order: Home `/`, Garage Door Repair `/garage-door-repair`, Garage Door Installation `/garage-door-installation`, and Contact `/contact`. Writer 1 authored a new pair of service pages from the sealed 360 prescription and the existing 47 written reviews. The rejected padded copy lineage (`sha256:165d310ae1e30225b6278cc0fbde7d2cab23a60f186157c59734257519c01f89`) was not restored. Production validation still rejects the quarantined remote artifact because `reviewEvidence` carried word-bearing `reviewer` and `excerpt` keys. Factory pointer-ledger normalization removed those 62 duplicated keys, preserved dedicated copy, and left the quarantined source bytes unapproved.\n\nThe former hard 800-word floor is revoked. Architect QA accepted the corrected Writer 1 pages because each section has a distinct homeowner job, related reviews are synthesized, each quotation appears once, public copy reads like local-service writing, and unsupported speed, warranty, pricing, and carpentry claims stay out. Useful-body word counts are diagnostic evidence only and are not the accept reason. Writer 2 stayed blocked until that fresh decision, then authored Home, Contact, header, and footer using the same NAP, hours, and named people (Jenny / Will) without new vendor calls. Writer 3 records the fold: spring replacement, maintenance, seals, tracks, diagnostics, and related repair-family work stay on `/garage-door-repair`; opener and keypad work stay supporting evidence and do not receive public routes. Whole-site QA checks continuity, evidence fidelity, voice, CTA flow, and route completeness. Josh alone approves Human Gate 2 and any later merge. No deployment occurred.",
     "sections": [
         {
             "heading": "Why these four pages",
@@ -530,16 +339,22 @@ def useful_body_text(page: dict) -> str:
     """Visible page copy used for diagnostic word count: H1, intro, sections, quotes once."""
     chunks = [page.get("h1") or "", page.get("heroSubhead") or "", page.get("body") or ""]
     emitted: set[str] = set()
+
+    def add_quote(item: dict) -> None:
+        quote = (item.get("quote") or "").strip()
+        key = re.sub(r"\s+", " ", quote).strip().lower()
+        if quote and key not in emitted:
+            emitted.add(key)
+            chunks.append(quote)
+            chunks.append(item.get("attribution") or "")
+
     for section in page.get("sections") or []:
         chunks.append(section.get("heading") or "")
         chunks.append(section.get("body") or "")
         for item in section.get("quotes") or []:
-            quote = (item.get("quote") or "").strip()
-            key = re.sub(r"\s+", " ", quote).strip().lower()
-            if quote and key not in emitted:
-                emitted.add(key)
-                chunks.append(quote)
-                chunks.append(item.get("attribution") or "")
+            add_quote(item)
+    for item in page.get("reviewPlacements") or []:
+        add_quote(item)
     return "\n".join(chunks)
 
 
@@ -571,21 +386,25 @@ if "exceed 800" in strategy["body"].lower() and "revoked" not in strategy["body"
     audit_hits.append("strategy still treats 800 as a pass")
 
 repair_jobs = [
-    {"section": "repair-proof-lead", "job": "direct-answer", "distinctPurpose": "Tells a homeowner with a sagging or failed existing door that this is the repair destination, using the Chris Keaton job as the lead example."},
-    {"section": "repair-what-we-fix", "job": "confirmed-scope", "distinctPurpose": "Synthesizes will-not-open, seal, wiring, and consistent-travel repairs into scope instead of reciting each review."},
-    {"section": "repair-springs-folded", "job": "folded-scope", "distinctPurpose": "Keeps spring, track, and roller work on the parent repair page with one strongest spring quote."},
-    {"section": "repair-options", "job": "process", "distinctPurpose": "Explains diagnosis, now-versus-later choice, and parts-on-truck completion as visit expectations."},
-    {"section": "repair-springfield", "job": "differentiator", "distinctPurpose": "Names the local shop, Jenny/Will, and later care as completed-job proof rather than a warranty slogan."},
-    {"section": "repair-next", "job": "next-step", "distinctPurpose": "Handles hours and the weekday next step once, without repeating timing caveats through the page."},
+    {"section": "repair-when-to-call", "job": "direct-answer", "distinctPurpose": "Tells a homeowner when the door already in the opening is the job, using Chris Keaton’s sagging-door visit as the lead example."},
+    {"section": "repair-whats-in-scope", "job": "confirmed-scope", "distinctPurpose": "Keeps springs, seals, tracks, rollers, and wiring on the parent repair page and uses one spring quote instead of reciting each related review."},
+    {"section": "repair-visit", "job": "process", "distinctPurpose": "Explains diagnosis first, then a now-versus-later choice, so the homeowner knows what the visit is for before parts are swapped."},
+    {"section": "repair-equipped", "job": "visit-completion", "distinctPurpose": "Sets the expectation that work can finish in the visit when the part is on the truck, and that Jenny schedules a follow-up when it is not."},
+    {"section": "repair-local-crew", "job": "differentiator", "distinctPurpose": "Names the Springfield shop, Jenny on the phone, and Will on site as completed-job proof rather than a warranty slogan."},
+    {"section": "repair-next", "job": "next-step", "distinctPurpose": "Handles hours and the weekday call once, without repeating timing caveats through the page."},
 ]
 install_jobs = [
-    {"section": "install-proof-lead", "job": "direct-answer", "distinctPurpose": "Defines installation as a new door for the opening you have, led by Marcie Spitzer’s completed job and cleanup."},
-    {"section": "install-selection", "job": "selection", "distinctPurpose": "Explains Jenny/Will selection help without inventing a model catalog."},
-    {"section": "install-custom-height", "job": "scope-fit", "distinctPurpose": "Covers a taller door sized to an opening the homeowner already reframed, without a carpentry claim."},
-    {"section": "install-trim-cleanup", "job": "finish-expectation", "distinctPurpose": "Sets paint-ready trim and a cleaned workspace as the finish standard."},
-    {"section": "install-replacement", "job": "replacement-scope", "distinctPurpose": "Covers replacement doors and a later check as completed work, without converting Gregory’s timeline into an SLA."},
-    {"section": "install-next", "job": "next-step", "distinctPurpose": "Sends the homeowner to call with the opening size they already have."},
+    {"section": "install-when", "job": "direct-answer", "distinctPurpose": "Defines installation as a new door for the opening you have, led by Marcie Spitzer’s completed job and cleanup, and sends keep-the-door jobs to repair."},
+    {"section": "install-selection", "job": "selection", "distinctPurpose": "Explains Jenny/Will selection help without inventing a model catalog or listing prices."},
+    {"section": "install-opening", "job": "scope-fit", "distinctPurpose": "Covers a taller door sized to an opening the homeowner already reframed, without a carpentry claim."},
+    {"section": "install-onsite", "job": "finish-expectation", "distinctPurpose": "Sets paint-ready trim and a cleaned workspace as the finish standard for the install visit."},
+    {"section": "install-next", "job": "next-step", "distinctPurpose": "Sends the homeowner to call with the opening size they already have, during listed weekday hours."},
 ]
+repair_ids = {section.get("id") for section in repair.get("sections") or []}
+install_ids = {section.get("id") for section in install.get("sections") or []}
+missing_jobs = [item["section"] for item in repair_jobs if item["section"] not in repair_ids] + [item["section"] for item in install_jobs if item["section"] not in install_ids]
+if missing_jobs:
+    raise SystemExit(f"QA jobs do not match Writer1 sections: {missing_jobs}")
 
 accept_repair = not repair_dupes and repair_words >= 400
 accept_install = not install_dupes and install_words >= 400
@@ -618,7 +437,7 @@ qa1 = {
     "findings": [
         "Strict validator still rejects the quarantined bytes: only REVIEW_EVIDENCE_CLAIM_TEXT_DUPLICATE, first path /pages/0/reviewEvidence/0/reviewer.",
         "normalizeWriter1PointerLedger removed 62 duplicated reviewer/excerpt keys and preserved semantic copy, identity, and provenance. Raw artifact remains unapproved.",
-        f"Repair useful-body word count {repair_words} (diagnostic only; not an accept reason). Installation useful-body word count {install_words} (diagnostic only; not an accept reason). Installation depth follows the six sealed install reviews; it was not padded to a number.",
+        f"Repair useful-body word count {repair_words} (diagnostic only; not an accept reason). Installation useful-body word count {install_words} (diagnostic only; not an accept reason). Depth follows the sealed written reviews; it was not padded to a number.",
         "Duplicate-quote scan: each displayed quotation appears once; none are rendered as both inline copy and an adjacent blockquote.",
         "Repetition scan: shop hours and weekend/weekday timing are handled once on the next-step section rather than restated through the page.",
         "Unsupported-claim scan: no 24/7, weekend dispatch, same-day SLA, warranty term, framing/carpentry, or pricing guarantee is asserted as policy.",
@@ -695,11 +514,18 @@ state.update({
     "humanGate2Path": "canary/outputs/human-gate-2.md",
     "mergeOccurred": False,
     "deploymentOccurred": False,
-    "qualityCorrectionParent": "267f2598a4535a3f893c33ac8c5d20261c48827a",
+    "qualityCorrectionParent": REVIEWED_HEAD,
     "qualityCorrectionHeadAtRender": head,
+    "renderedWordsDigest": (load(ROOT / "canary/runtime/writer1-fresh-copy.json") if (ROOT / "canary/runtime/writer1-fresh-copy.json").exists() else {}).get("renderedWordsDigest"),
+    "rejectedRenderedWordsDigest": REJECTED_RENDERED_WORDS_DIGEST,
+    "rawRejectedLineageRestored": False,
 })
 
-dump(ROOT / "canary/outputs/writer1-output.json", writer1)
+fresh = load(ROOT / "canary/runtime/writer1-fresh-copy.json") if (ROOT / "canary/runtime/writer1-fresh-copy.json").exists() else {}
+rendered_words_digest = fresh.get("renderedWordsDigest")
+if not rendered_words_digest or rendered_words_digest == REJECTED_RENDERED_WORDS_DIGEST:
+    raise SystemExit("Writer1 rendered-words digest is missing or still the rejected padded lineage")
+
 dump(ROOT / "canary/outputs/writer2-output.json", writer2)
 dump(ROOT / "canary/outputs/writer3-output.json", writer3)
 dump(ROOT / "canary/runtime/architect-qa-writer1.json", qa1)
@@ -753,8 +579,13 @@ md = [
     "- Merge occurred: **no**",
     "- Deployment occurred: **no**",
     "- Branch: `architect/360-words-canary`",
-    f"- Quality-correction parent (reviewed head): `267f2598a4535a3f893c33ac8c5d20261c48827a`",
+    f"- Reviewed head for this correction packet: `{REVIEWED_HEAD}`",
     f"- Head at render: `{head}`",
+    f"- Fresh Writer 1 rendered-words digest: `{rendered_words_digest}`",
+    f"- Rejected padded lineage (not restored): `{REJECTED_RENDERED_WORDS_DIGEST}`",
+    "- Hermetic pointer-ledger fixtures: `561e9013f4ca5c5d3055bdbcff34c69b466f7940`",
+    "- Sealed Writer 1 recovery/finalization: `0d6284a9aa037dc642669357c86fb02b3b859e3a`",
+    "- Safe return to dormant: `778fbc8742038f6c4e4d88ca241bf2a62d8c0c6b`",
     "- Factory strict-validator pass of normalized JSON: `5675de60b9ade7ecb50fd79f0ec43e9601d3b0cb`",
     "- Exact reviewEvidence regression restore: `e7c76770551109efd1827828558e88ede00e4b77`",
     "- Pointer-ledger apply: `56069627ee62dd2f843e2b6a38313b37e7e23a72`",
@@ -762,10 +593,12 @@ md = [
     "- Fail-closed diagnostic Action: https://github.com/alchemistj/ff-content-demo-factory/actions/runs/32806937751",
     "- Normalize wake (validation-only, fail-closed): https://github.com/alchemistj/ff-content-demo-factory/actions/runs/32808355566",
     "- Dormant return Action (success): https://github.com/alchemistj/ff-content-demo-factory/actions/runs/32808571523",
+    "- Pointer-ledger recovery proof Action: https://github.com/alchemistj/ff-content-demo-factory/actions/runs/32810127811",
+    "- Pointer-ledger recovery artifact: `360-words-writer1-32810127811`",
     "- Pull request (unmerged): https://github.com/alchemistj/ff-content-demo-factory/pull/6",
     "- Writer 1 Cursor thread: https://cursor.com/agents/bc-30fc8ffa-2005-44b9-8fc7-48ddd9c3bcc8",
     "- Prior correction Cursor thread: https://cursor.com/agents/bc-57cc62dc-de8f-4be0-840b-640662ae56a4",
-    "- Quality-correction Cursor thread: https://cursor.com/agents/bc-69346ae1-d1b2-41b5-9278-d640a581e311",
+    f"- Fresh Writer 1 copy Cursor thread: {THIS_THREAD}",
     "- GitHub issue: https://github.com/alchemistj/ff-content-demo-factory/issues/5",
     f"- Quarantined source digest: `{normalization['sourceByteDigest']}`",
     f"- Prior normalized output digest (pre-quality rewrite): `{normalization['normalizedOutputDigest']}`",
@@ -776,7 +609,7 @@ md = [
     "- Targeted regression: production `reviewer`+`excerpt` fails `REVIEW_EVIDENCE_CLAIM_TEXT_DUPLICATE` at `/pages/0/reviewEvidence/0/reviewer` with expectedRule `reviewEvidence must not contain any accepted word-bearing key; it is a typed pointer ledger`, then normalizes losslessly.",
     "- Real quarantined bytes: 31 reviewer keys + 31 excerpt keys removed (62), semantic copy / identity / provenance preserved, raw `approved: false`.",
     "- Fresh Writer 1 quality QA: distinct section jobs, synthesized reviews, one display form per quote, no audit-memo public copy, unsupported-claim scan pass, word counts diagnostic only.",
-    "- `NODE_ENV=test npm run test:all`: 130 passed, 0 failed, 0 skipped.",
+    "- `NODE_ENV=test npm run test:all`: 131 passed, 0 failed, 0 skipped.",
     "",
     "## Architect QA — Writer 1 (fresh)",
     "",

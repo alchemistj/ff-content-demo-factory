@@ -4,9 +4,9 @@ Fresh Writer 1 production copy. This checkpoint is the two prescribed service pa
 
 ## Diagnostic word counts
 
-- Garage Door Repair useful-body words: **840** (guidance 650–900+; not an acceptance reason)
-- Garage Door Installation useful-body words: **689** (guidance 650–900+; not an acceptance reason)
-- Rendered-words digest: `sha256:07a6effe379b303040126e02863ccb0a5879d53e3450938726a28e76b03c645b`
+- Garage Door Repair useful-body words: **835** (guidance 650–900+; not an acceptance reason)
+- Garage Door Installation useful-body words: **680** (guidance 650–900+; not an acceptance reason)
+- Rendered-words digest: `sha256:fed5a3f41c317ff64d3a8a8e82c1114af68e53a1a7f8378d55a31e66ce7d2b00`
 - Rejected lineage digest (must not match): `sha256:165d310ae1e30225b6278cc0fbde7d2cab23a60f186157c59734257519c01f89`
 - Writer: Grok 4.6, high effort, fast off, this Cursor thread
 - No merge. No deploy. No vendor calls.
@@ -53,7 +53,7 @@ That same visit shape shows up when the door simply needs to open and close cons
 
 When the needed part is already on the truck, the repair can finish in that visit. One homeowner’s recommendations were about a door that would stay stable and safe, and Will already had what he needed with him. On a routine maintenance stop, he has also spotted a couple of areas that would help the door run, explained the recommendation with pricing, and had the materials on hand.
 
-If a part is not on the truck, Jenny schedules the follow-up. That is a parts question, not a promise that every repair finishes before lunch.
+If a part is not on the truck, Jenny schedules the follow-up so the work can finish when the part arrives.
 
 > His recommendations were mindful to ensure that our garage was not only working properly, but that it was stabilized and safe. Will had everything he needed to complete our repair on his truck, so it was quick and efficient.
 > — Kelsie Bates
@@ -97,7 +97,7 @@ Budget comes up in those conversations because Jenny is the person who walks the
 
 ### Fitted to the opening you have
 
-Not every opening is a catalog size. One completed job replaced a 1980 7-foot door with a 9-foot-6 door so a camper van would clear. The opening had already been reframed. Will and Jenny came out to coordinate the door size to that reframing. They coordinated the door size to that reframing; they did not build the opening.
+Not every opening is a catalog size. One completed job replaced a 1980 7-foot door with a 9-foot-6 door so a camper van would clear. The opening had already been reframed. Will and Jenny came out to size the door to that opening; they did not build the framing.
 
 If your opening is taller, shorter, or simply not a standard size, the useful next step is that same on-site size conversation before anyone orders a door.
 

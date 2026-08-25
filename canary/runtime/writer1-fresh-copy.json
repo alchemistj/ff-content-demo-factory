@@ -3,10 +3,10 @@
   "status": "writer1-copy-authored",
   "writer2Blocked": true,
   "rawRejectedLineageRestored": false,
-  "renderedWordsDigest": "sha256:07a6effe379b303040126e02863ccb0a5879d53e3450938726a28e76b03c645b",
+  "renderedWordsDigest": "sha256:fed5a3f41c317ff64d3a8a8e82c1114af68e53a1a7f8378d55a31e66ce7d2b00",
   "rejectedRenderedWordsDigest": "sha256:165d310ae1e30225b6278cc0fbde7d2cab23a60f186157c59734257519c01f89",
-  "repairUsefulBodyWords": 840,
-  "installationUsefulBodyWords": 689,
+  "repairUsefulBodyWords": 835,
+  "installationUsefulBodyWords": 680,
   "quotedReviewIds": {
     "repair": [
       "Ci9DQUlRQUNvZENodHljRjlvT201TVdWZGZSak00ZUhSQ2VVdHNYMWxFYTBFdE9XYxAB",

@@ -9,7 +9,7 @@
   "findings": [
     "Strict validator still rejects the quarantined bytes: only REVIEW_EVIDENCE_CLAIM_TEXT_DUPLICATE, first path /pages/0/reviewEvidence/0/reviewer.",
     "normalizeWriter1PointerLedger removed 62 duplicated reviewer/excerpt keys and preserved semantic copy, identity, and provenance. Raw artifact remains unapproved.",
-    "Repair useful-body word count 740 (diagnostic only; not an accept reason). Installation useful-body word count 617 (diagnostic only; not an accept reason). Installation depth follows the six sealed install reviews; it was not padded to a number.",
+    "Repair useful-body word count 835 (diagnostic only; not an accept reason). Installation useful-body word count 680 (diagnostic only; not an accept reason). Depth follows the sealed written reviews; it was not padded to a number.",
     "Duplicate-quote scan: each displayed quotation appears once; none are rendered as both inline copy and an adjacent blockquote.",
     "Repetition scan: shop hours and weekend/weekday timing are handled once on the next-step section rather than restated through the page.",
     "Unsupported-claim scan: no 24/7, weekend dispatch, same-day SLA, warranty term, framing/carpentry, or pricing guarantee is asserted as policy.",
@@ -20,66 +20,61 @@
   "sectionJobs": {
     "/garage-door-repair": [
       {
-        "section": "repair-proof-lead",
+        "section": "repair-when-to-call",
         "job": "direct-answer",
-        "distinctPurpose": "Tells a homeowner with a sagging or failed existing door that this is the repair destination, using the Chris Keaton job as the lead example."
+        "distinctPurpose": "Tells a homeowner when the door already in the opening is the job, using Chris Keaton\u2019s sagging-door visit as the lead example."
       },
       {
-        "section": "repair-what-we-fix",
+        "section": "repair-whats-in-scope",
         "job": "confirmed-scope",
-        "distinctPurpose": "Synthesizes will-not-open, seal, wiring, and consistent-travel repairs into scope instead of reciting each review."
+        "distinctPurpose": "Keeps springs, seals, tracks, rollers, and wiring on the parent repair page and uses one spring quote instead of reciting each related review."
       },
       {
-        "section": "repair-springs-folded",
-        "job": "folded-scope",
-        "distinctPurpose": "Keeps spring, track, and roller work on the parent repair page with one strongest spring quote."
-      },
-      {
-        "section": "repair-options",
+        "section": "repair-visit",
         "job": "process",
-        "distinctPurpose": "Explains diagnosis, now-versus-later choice, and parts-on-truck completion as visit expectations."
+        "distinctPurpose": "Explains diagnosis first, then a now-versus-later choice, so the homeowner knows what the visit is for before parts are swapped."
       },
       {
-        "section": "repair-springfield",
+        "section": "repair-equipped",
+        "job": "visit-completion",
+        "distinctPurpose": "Sets the expectation that work can finish in the visit when the part is on the truck, and that Jenny schedules a follow-up when it is not."
+      },
+      {
+        "section": "repair-local-crew",
         "job": "differentiator",
-        "distinctPurpose": "Names the local shop, Jenny/Will, and later care as completed-job proof rather than a warranty slogan."
+        "distinctPurpose": "Names the Springfield shop, Jenny on the phone, and Will on site as completed-job proof rather than a warranty slogan."
       },
       {
         "section": "repair-next",
         "job": "next-step",
-        "distinctPurpose": "Handles hours and the weekday next step once, without repeating timing caveats through the page."
+        "distinctPurpose": "Handles hours and the weekday call once, without repeating timing caveats through the page."
       }
     ],
     "/garage-door-installation": [
       {
-        "section": "install-proof-lead",
+        "section": "install-when",
         "job": "direct-answer",
-        "distinctPurpose": "Defines installation as a new door for the opening you have, led by Marcie Spitzer\u2019s completed job and cleanup."
+        "distinctPurpose": "Defines installation as a new door for the opening you have, led by Marcie Spitzer\u2019s completed job and cleanup, and sends keep-the-door jobs to repair."
       },
       {
         "section": "install-selection",
         "job": "selection",
-        "distinctPurpose": "Explains Jenny/Will selection help without inventing a model catalog."
+        "distinctPurpose": "Explains Jenny/Will selection help without inventing a model catalog or listing prices."
       },
       {
-        "section": "install-custom-height",
+        "section": "install-opening",
         "job": "scope-fit",
         "distinctPurpose": "Covers a taller door sized to an opening the homeowner already reframed, without a carpentry claim."
       },
       {
-        "section": "install-trim-cleanup",
+        "section": "install-onsite",
         "job": "finish-expectation",
-        "distinctPurpose": "Sets paint-ready trim and a cleaned workspace as the finish standard."
-      },
-      {
-        "section": "install-replacement",
-        "job": "replacement-scope",
-        "distinctPurpose": "Covers replacement doors and a later check as completed work, without converting Gregory\u2019s timeline into an SLA."
+        "distinctPurpose": "Sets paint-ready trim and a cleaned workspace as the finish standard for the install visit."
       },
       {
         "section": "install-next",
         "job": "next-step",
-        "distinctPurpose": "Sends the homeowner to call with the opening size they already have."
+        "distinctPurpose": "Sends the homeowner to call with the opening size they already have, during listed weekday hours."
       }
     ]
   },
@@ -92,8 +87,8 @@
     "unsupportedClaims": "pass",
     "evidenceFidelity": "pass",
     "usefulBodyWordCounts": {
-      "repair": 740,
-      "installation": 617,
+      "repair": 835,
+      "installation": 680,
       "role": "diagnostic-only"
     }
   }

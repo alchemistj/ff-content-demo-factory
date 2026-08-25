@@ -65,6 +65,10 @@ test("rewritten service pages display each quote once and omit audit-memo public
   const publicCopy = [home, repair, install, contact].join("\n");
   assert.doesNotMatch(publicCopy, AUDIT);
   assert.doesNotMatch(repair, /this page is built from written reviews/iu);
+  assert.doesNotMatch(md, /\*\*2,?827\*\*/u);
+  assert.doesNotMatch(md, /\*\*1,?637\*\*/u);
+  assert.match(md, /Rejected padded lineage \(not restored\)/u);
+  assert.match(md, /sha256:165d310ae1e30225b6278cc0fbde7d2cab23a60f186157c59734257519c01f89/u);
 });
 
 test("corrected Writer1 JSON still validates against the sealed 360 projection", () => {
