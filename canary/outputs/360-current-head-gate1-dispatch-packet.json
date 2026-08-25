@@ -1,0 +1,83 @@
+{
+  "schemaVersion": "factory-360-current-head-gate1-dispatch-packet-v1",
+  "preparedOnly": true,
+  "executed": false,
+  "repository": "alchemistj/ff-content-demo-factory",
+  "issueNumber": 8,
+  "prNumber": 1,
+  "branch": "architect/greenfield-gate1",
+  "reviewedHeadSha": "36f24c1ed15b871d52f1ec0b6fd797ae5e2461e6",
+  "lineage": {
+    "approvedRunId": "32717620900",
+    "prospectId": "prospect-32cd5e266a718b3eee2e",
+    "sourceSha": "81587f8422a23313fd7868751061eec7e2fb5926",
+    "sourceArtifactId": "9516514426",
+    "inputFiles": [
+      {
+        "path": "canary/inputs/360-four-page-reseal-approval.json",
+        "byteDigest": "sha256:e9f271facf08876bd59cfdacb04378f530048abb3d08893897736e92dfbbc64f",
+        "bytes": 367
+      },
+      {
+        "path": "canary/inputs/360-four-page-reseal-ledger.json",
+        "byteDigest": "sha256:40b5b0e5833c03b55c6a6fa46b2f43e6565263aff1e008f6bc55d53cb2d61169",
+        "bytes": 5639
+      },
+      {
+        "path": "canary/inputs/360-garage-door-and-more.discovery.json",
+        "byteDigest": "sha256:d24de9e2075727eeb8a7867d89a8f667ac3158bb4bf9bc858d854a917ce05dd6",
+        "bytes": 6916
+      },
+      {
+        "path": "canary/outputs/360-four-page-reseal-handoff.json",
+        "byteDigest": "sha256:54bb8b31d5927d5b1ccd952499926ca2f99a8fca3c243b7215398399c6cdda7b",
+        "bytes": 525575
+      }
+    ]
+  },
+  "inputManifestDigest": "sha256:21b4efece592b687fc4b6fffc4a8b4be0d6f975704573b9a4c9020f2d5c39263",
+  "envelope": {
+    "schemaVersion": "factory-360-current-head-gate1-job-envelope-v1",
+    "operation": "current-head-gate1-canary",
+    "stage": "dispatch",
+    "repository": "alchemistj/ff-content-demo-factory",
+    "issueNumber": 8,
+    "prNumber": 1,
+    "branch": "architect/greenfield-gate1",
+    "checkedOutSha": "36f24c1ed15b871d52f1ec0b6fd797ae5e2461e6",
+    "runId": "32717620900",
+    "prospectId": "prospect-32cd5e266a718b3eee2e",
+    "placeId": "ChIJHa32AOi84YMR38BV93YKiS8",
+    "sourceIdentityDigest": "sha256:ff6bf1d979c74e440ec7f0a22c2e62a29719b7fd8cc4d877aa6c400881748a96",
+    "sourceCheckpointDigest": "sha256:9edf102585e0e57b1c19163d171c7038db431ee175561d0b6f77952851b1c1ae",
+    "sourceManifestDigest": "sha256:490c4d4844a895d97014c8a0d00a50dde2516e81af11f5a5fa31a51837b93573",
+    "inputManifestDigest": "sha256:21b4efece592b687fc4b6fffc4a8b4be0d6f975704573b9a4c9020f2d5c39263",
+    "dispatchKey": "sha256:efcd3ad111ef4141df5b751fa7200788458699b994a824694b753e8a68085027",
+    "dispatchDigest": "sha256:c2628643708df96b4e4980f4791f631d8432ada98a3f759f0675032eeb8c55e1"
+  },
+  "dispatchPacket": {
+    "schemaVersion": "factory-cursor-dispatch-v1",
+    "repository": "alchemistj/ff-content-demo-factory",
+    "issueNumber": 8,
+    "prNumber": 1,
+    "branch": "architect/greenfield-gate1",
+    "reviewedHeadSha": "36f24c1ed15b871d52f1ec0b6fd797ae5e2461e6",
+    "scope": "360-current-head-gate1-canary-prepared-only",
+    "dispatchKey": "sha256:efcd3ad111ef4141df5b751fa7200788458699b994a824694b753e8a68085027",
+    "model": {
+      "alias": "cursor-grok-4.6-high",
+      "requestedModel": "grok-4.6",
+      "resolvedModel": "grok-4.6",
+      "fastOff": true,
+      "fast": false
+    },
+    "commentBody": "@cursor\nIssue: #8\nPR: #1\nBranch: architect/greenfield-gate1\nReviewed head: 36f24c1ed15b871d52f1ec0b6fd797ae5e2461e6\nScope: 360-current-head-gate1-canary-prepared-only\nModel: Grok 4.6 High (cursor-grok-4.6-high), Fast off (fast: false).\nReturn a bound terminal receipt with the canonical https://cursor.com/agents/<id> thread URL, separate agentId/runId, input/output digests, and exact branch/head evidence. Do not write prospect copy.\nDispatch key: sha256:efcd3ad111ef4141df5b751fa7200788458699b994a824694b753e8a68085027",
+    "dispatchDigest": "sha256:c2628643708df96b4e4980f4791f631d8432ada98a3f759f0675032eeb8c55e1"
+  },
+  "limitations": [
+    "Prepared from byte-identical approved Human Gate 1 lineage only; no workflow was dispatched.",
+    "No Cursor agent, vendor, production writing, or live canary execution occurred.",
+    "This packet is not proof of integrated factory readiness or post-Gate-1 writer quality."
+  ],
+  "packetDigest": "sha256:028c2eb6998d06c80ca212e69cb2edf6becf8c35d3093421c99ebf9af4d9ef81"
+}
