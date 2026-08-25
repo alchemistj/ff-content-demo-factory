@@ -7,7 +7,7 @@ const { validateClaimReferences } = require('../src/factory/prescription');
 const { renderGate1 } = require('../src/factory/gate1');
 const { sourceCheckpointFor, requiredReceipt, actionProofFromEnvironment } = require('../src/factory/orchestrator');
 const { semanticDigests, assertSemanticCheckpoint, recomputeSource, recomputeEvidence, recomputePrescription } = require('../src/factory/checkpoint');
-const { createDispatchPacket, canonicalThreadUrl, validateJobReceipt } = require('../src/factory/cloud-agent');
+const { createDispatchPacket, canonicalThreadUrl, validateJobReceipt, validateDispatchPacket, validateBundle } = require('../src/factory/cloud-agent');
 const { runCurrentHeadGate1Canary } = require('../src/run-gate1-canary');
 const fs = require('node:fs');
 const os = require('node:os');
@@ -66,7 +66,7 @@ test('restore semantic checks and exact-head proof are deterministic', () => {
   run.artifacts.prescription.prescriptionDigest = recomputePrescription(run);
   const state = { activeRun: run };
   const digests = semanticDigests(state, 'head-1');
-  const checkpoint = { sourceSha: 'head-1', sourceManifest: source.sourceManifest, sourceArtifactDigest: source.sourceArtifactDigest, semanticDigests: digests };
+  const checkpoint = { sourceSha: 'head-1', sourceIdentity: run.artifacts.sourceCheckpoint.sourceIdentity, sourceManifest: source.sourceManifest, sourceArtifactDigest: source.sourceArtifactDigest, semanticDigests: digests };
   assert.deepEqual(assertSemanticCheckpoint({ checkpoint, state, currentHeadSha: 'head-1' }), digests);
   assert.throws(() => assertSemanticCheckpoint({ checkpoint: { ...checkpoint, semanticDigests: { ...digests, evidenceDigest: 'sha256:tampered' } }, state, currentHeadSha: 'head-1' }), /semantic digest mismatch/);
   assert.deepEqual(actionProofFromEnvironment({ FACTORY_CHECKED_OUT_SHA: 'head-1', FACTORY_EXPECTED_HEAD_SHA: 'head-1', FACTORY_HEAD_ASSERTION: 'true', FACTORY_TEST_RUN_URL: 'https://actions.example/run', FACTORY_TEST_RESULT: 'success' }), { checkedOutSha: 'head-1', expectedHeadSha: 'head-1', headAssertion: true, testRunUrl: 'https://actions.example/run', testResult: 'success' });
@@ -103,7 +103,7 @@ test('semantic restore rejects mutations to every persisted semantic component',
   run.artifacts.prescription.pageSetDigest = require('../src/factory/prescription-policy').pageSetDigest([]);
   run.artifacts.prescription.prescriptionDigest = recomputePrescription(run);
   const state = { activeRun: run };
-  const checkpoint = { sourceSha: 'head-1', sourceManifest: source.sourceManifest, sourceArtifactDigest: source.sourceArtifactDigest, semanticDigests: semanticDigests(state, 'head-1') };
+  const checkpoint = { sourceSha: 'head-1', sourceIdentity: run.artifacts.sourceCheckpoint.sourceIdentity, sourceManifest: source.sourceManifest, sourceArtifactDigest: source.sourceArtifactDigest, semanticDigests: semanticDigests(state, 'head-1') };
   for (const mutate of [
     (copy) => { copy.activeRun.artifacts.sourceCheckpoint.sourceMaterial.discoveryReceipt.provider = 'tampered'; },
     (copy) => { copy.activeRun.artifacts.inventory.classified.push({ id: 'evidence-mutation' }); },
@@ -132,4 +132,48 @@ test('current-head canary rejects API-key dispatch before alternate provider wor
   for (const name of ['request.json', 'selection.json', 'qa.json']) fs.writeFileSync(path.join(temp, name), '{}');
   fs.writeFileSync(path.join(temp, 'cursor-bundle.json'), JSON.stringify({ schemaVersion: 'cursor-cloud-agent-bundle-v1' }));
   await assert.rejects(() => runCurrentHeadGate1Canary({ root: temp, requestFile: path.join(temp, 'request.json'), selectionFile: path.join(temp, 'selection.json'), qaFile: path.join(temp, 'qa.json'), cursorBundleFile: path.join(temp, 'cursor-bundle.json'), env: { FACTORY_CHECKED_OUT_SHA: 'head-1', EXPECTED_HEAD_SHA: 'head-1', FACTORY_HEAD_ASSERTION: 'true', FACTORY_ISSUE_NUMBER: '8', FACTORY_PR_NUMBER: '1', FACTORY_BRANCH: 'architect/greenfield-gate1' } }), /Cloud Agent model\/Fast-off attestation is invalid/);
+});
+
+test('fifth correction seals source identity and rejects unrelated production receipts', () => {
+  const run = { runId: 'run-1', prospectId: 'prospect-1', candidate: { placeId: 'place-1' }, artifacts: { sourceCheckpoint: { sourceMaterial: {} }, prescription: { pages: [], serviceCoverageLedger: { services: [] } } } };
+  const state = { activeRun: run };
+  let source = recomputeSource(run, 'head-1');
+  run.artifacts.sourceCheckpoint.sourceIdentity = { provider: 'factory-trusted-source', runId: 'run-1', artifactId: 'source-run-1', sourceSha: source.sourceSha, rootIdentity: 'factory-source:run-1' };
+  source = recomputeSource(run, 'head-1');
+  Object.assign(run.artifacts.sourceCheckpoint, { sourceManifest: source.sourceManifest, sourceManifestDigest: source.sourceManifestDigest, sourceArtifactDigest: source.sourceArtifactDigest, sourceSha: 'head-1', headSha: 'head-1' });
+  run.artifacts.prescription.evidenceDigest = recomputeEvidence(run); run.artifacts.prescription.pageSetDigest = require('../src/factory/prescription-policy').pageSetDigest([]); run.artifacts.prescription.prescriptionDigest = recomputePrescription(run);
+  const checkpoint = { sourceSha: 'head-1', sourceIdentity: run.artifacts.sourceCheckpoint.sourceIdentity, sourceManifest: source.sourceManifest, sourceArtifactDigest: source.sourceArtifactDigest, semanticDigests: semanticDigests(state, 'head-1') };
+  assert.throws(() => assertSemanticCheckpoint({ checkpoint: { ...checkpoint, sourceIdentity: { ...checkpoint.sourceIdentity, provider: 'foreign' } }, state, currentHeadSha: 'head-1' }), /source identity|artifact|mismatch|stale/i);
+  const valid = { provider: 'apify', operation: 'discovery', status: 'completed', terminalStatus: 'succeeded', inputDigest: 'sha256:11111111', outputDigest: 'sha256:22222222', startedAt: '2026-01-01T00:00:00Z', completedAt: '2026-01-01T00:00:01Z', input: { placeId: 'other-place' }, vendorReceipt: { runId: 'other-run', datasetId: 'other-dataset' } };
+  assert.throws(() => requiredReceipt({ ...valid, operation: 'unrelated-operation' }, 'discovery', null, { placeId: 'place-1' }), /operation/);
+  assert.throws(() => requiredReceipt(valid, 'discovery', null, { placeId: 'place-1' }), /candidate binding/);
+});
+
+test('fifth correction verifies dispatch digest, authoritative target, and foreign comment rejection', () => {
+  const packet = createDispatchPacket({ issueNumber: 8, prNumber: 1, branch: 'architect/greenfield-gate1', reviewedHeadSha: 'head-1', scope: 'research-only' });
+  assert.doesNotThrow(() => validateDispatchPacket(packet));
+  assert.throws(() => validateDispatchPacket({ ...packet, dispatchDigest: 'sha256:invented' }), /digest/);
+  assert.throws(() => validateDispatchPacket({ ...packet, commentBody: packet.commentBody.replace('Issue: #8', 'Issue: #99') }), /target|digest/);
+  const bundle = { schemaVersion: 'cursor-cloud-agent-bundle-v1', model: packet.model, dispatch: { ...packet, commentUrl: 'https://github.com/foreign/repo/issues/8#issuecomment-1' }, inputManifestDigest: 'sha256:manifest', envelope: { checkedOutSha: 'head-1', inputManifestDigest: 'sha256:manifest' } };
+  assert.throws(() => validateBundle(bundle, { expectedHeadSha: 'head-1', inputManifestDigest: 'sha256:manifest', dispatch: { issueNumber: 8, prNumber: 1, branch: packet.branch }, repository: 'alchemistj/ff-content-demo-factory' }), /foreign|missing/);
+  const dispatchWorkflow = fs.readFileSync('.github/workflows/cursor-cloud-agent-dispatch.yml', 'utf8');
+  assert.match(dispatchWorkflow, /concurrency:/); assert.match(dispatchWorkflow, /Dispatch packet digest/); assert.match(dispatchWorkflow, /--paginate/);
+});
+
+test('fifth correction exposes executable phase-A durable handoff without Cursor API credentials', async () => {
+  const temp = fs.mkdtempSync(path.join(os.tmpdir(), 'factory-phase-a-'));
+  for (const [name, value] of [['request.json', '{}'], ['selection.json', '{}'], ['qa.json', '{}']]) fs.writeFileSync(path.join(temp, name), value);
+  const result = await runCurrentHeadGate1Canary({ root: temp, requestFile: path.join(temp, 'request.json'), selectionFile: path.join(temp, 'selection.json'), qaFile: path.join(temp, 'qa.json'), cursorBundleFile: '', env: { FACTORY_CANARY_PHASE: 'dispatch', FACTORY_CHECKED_OUT_SHA: 'head-1', EXPECTED_HEAD_SHA: 'head-1', FACTORY_HEAD_ASSERTION: 'true', FACTORY_ISSUE_NUMBER: '8', FACTORY_PR_NUMBER: '1', FACTORY_BRANCH: 'architect/greenfield-gate1' } });
+  assert.equal(result.proof.awaitingCursorReceipt, true);
+  const pending = JSON.parse(fs.readFileSync(path.join(temp, 'canary/outputs/current-head-gate1-pending.json'), 'utf8'));
+  assert.equal(pending.immutable, true); assert.equal(pending.expectedHeadSha, 'head-1');
+  const canary = fs.readFileSync('src/run-gate1-canary.js', 'utf8');
+  assert.match(canary, /FACTORY_CANARY_PHASE/); assert.match(canary, /sealedDigest/); assert.match(canary, /boundReceipts/); assert.doesNotMatch(canary, /CURSOR_API_KEY.*required/);
+});
+
+test('fifth correction independently verifies authoritative PR metadata before paid canary work', () => {
+  const workflow = fs.readFileSync('.github/workflows/current-head-gate1-canary.yml', 'utf8');
+  assert.match(workflow, /gh pr view/); assert.match(workflow, /headRefOid/); assert.match(workflow, /headRefName/); assert.match(workflow, /gh issue view/); assert.match(workflow, /phase:/);
+  const wake = fs.readFileSync('.github/workflows/architect-factory-wake.yml', 'utf8');
+  assert.match(wake, /sourceIdentity:/); assert.match(wake, /sourceArtifactDigest:/); assert.doesNotMatch(wake, /test -n "\$CURSOR_API_KEY"/);
 });
