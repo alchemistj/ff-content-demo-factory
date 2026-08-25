@@ -8,6 +8,7 @@ import {
   WRITER1_CORRECTION_THREAD_URL,
   createMemoryCursorReceiptStore,
   recoverCursorWriterCorrectionForTest,
+  recoverCursorWriterCorrectionV3ForTest,
   validateCursorWriterCorrectionReceipt,
   validateWriter1CorrectionBannedLanguage,
   validateWriter1CorrectionDiff,
@@ -16,6 +17,7 @@ import {
   type CursorArtifactClient,
   type CursorTestTransport,
   type CursorWriterCorrectionPrior,
+  type CursorWriterCorrectionV3Source,
 } from "./cursor-writer.js";
 
 const env = { CURSOR_API_KEY: "verified-test-secret", CURSOR_MODEL: "cursor-grok-4.6-high", CURSOR_FAST: "false" };
@@ -112,4 +114,18 @@ test("verified correction resumes the exact fresh agent, sends once, retrieves C
 
 test("missing fresh Cursor artifact fails before any correction message", async () => {
   const counters = { creates: 0, resumes: 0, sends: 0 }; const empty: CursorArtifactClient = { list: async () => [], download: async () => { throw new Error("download must not run"); } }; const transport: CursorTestTransport = { listModels: async () => registry, create: async () => { counters.creates += 1; throw new Error("create forbidden"); }, resume: async () => { counters.resumes += 1; throw new Error("resume forbidden"); }, getAgent: async () => ({ id: WRITER1_CORRECTION_AGENT_ID, url: WRITER1_CORRECTION_THREAD_URL }) }; const p = prior(); await assert.rejects(() => recoverCursorWriterCorrectionForTest({ env, receiptStore: createMemoryCursorReceiptStore(), prior: p, prompt: "prompt", transport, artifactClient: empty, validateBeforeOutput: (raw) => JSON.parse(raw), validateOutput: () => undefined }), (error: any) => error?.code === "CURSOR_ARTIFACT_MISSING"); assert.deepEqual(counters, { creates: 0, resumes: 0, sends: 0 });
+});
+
+test("bounded correction v3 uses the quarantined before-copy, sends once on the same agent, and accepts only the one body pointer", async () => {
+  const before: any = output(true);
+  before.pages[0].sections[3].body = "If a part is not on the truck, Jenny schedules the follow-up so the work can finish when the part arrives. On a routine maintenance stop, Connie handles the visit.";
+  const after: any = structuredClone(before);
+  after.pages[0].sections[3].body = "Repair details depend on the condition of the door and the parts needed.";
+  const beforeBytes = Buffer.from(JSON.stringify(before)); const afterBytes = Buffer.from(JSON.stringify(after));
+  const source = { kind: "quarantine-file", actionRunId: "fixture-action", artifactId: 1, artifactZipDigest: "sha256:" + "1".repeat(64), path: "quarantine/writer1-rejected-output.txt", rawDigest: `sha256:${createHash("sha256").update(beforeBytes).digest("hex")}`, size: beforeBytes.length, contentSize: beforeBytes.length, byteDigest: `sha256:${createHash("sha256").update(beforeBytes).digest("hex")}`, agentId: WRITER1_CORRECTION_AGENT_ID, runId: "run-fixture-v3", threadUrl: WRITER1_CORRECTION_THREAD_URL, requestedModel: "cursor-grok-4.6-high", resolvedModel: OFFICIAL_CURSOR_MODEL, effort: "high", fast: false, authorship: "test-fixture", raw: beforeBytes.toString("utf8"), bytes: beforeBytes, output: before, outputDigest: digestOf(before) } as unknown as CursorWriterCorrectionV3Source;
+  const counters = { creates: 0, resumes: 0, sends: 0 }; const testHarness = harness(beforeBytes, afterBytes, counters); const store = createMemoryCursorReceiptStore(); const p = prior();
+  const result = await recoverCursorWriterCorrectionV3ForTest({ env, receiptStore: store, prior: p, prompt: "bounded v3 fixture prompt", correctionVersion: "words-writer1-correction/v3", sourceArtifact: source, sourceArtifactFixture: true, expectedChangedPaths: ["/pages/0/sections/3/body"], transport: testHarness.transport, artifactClient: testHarness.client, artifactBackoffMs: [0], validateBeforeOutput: (raw) => JSON.parse(raw), validateOutput: (value) => assert.equal((value as any).pages.length, 2) });
+  assert.deepEqual(counters, { creates: 0, resumes: 1, sends: 1 }); assert.deepEqual(result.receipt.changedPaths, ["/pages/0/sections/3/body"]); assert.equal(result.receipt.writer2Blocked, true); assert.equal(result.receipt.nextStage, null); assert.equal((result.receipt as any).correctionV3Source.path, "quarantine/writer1-rejected-output.txt");
+  const second = await recoverCursorWriterCorrectionV3ForTest({ env, receiptStore: store, prior: p, prompt: "bounded v3 fixture prompt", correctionVersion: "words-writer1-correction/v3", sourceArtifact: source, sourceArtifactFixture: true, expectedChangedPaths: ["/pages/0/sections/3/body"], transport: testHarness.transport, artifactClient: testHarness.client, artifactBackoffMs: [0], validateBeforeOutput: (raw) => JSON.parse(raw), validateOutput: () => undefined });
+  assert.deepEqual(counters, { creates: 0, resumes: 1, sends: 1 }); assert.deepEqual(second.receipt, result.receipt);
 });

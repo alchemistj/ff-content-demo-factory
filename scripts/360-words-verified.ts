@@ -8,6 +8,7 @@ import {
   recoverCursorWriterPostDispatch,
   recoverCursorWriterCorrection,
   recoverCursorWriterCorrectionV2,
+  recoverCursorWriterCorrectionV3,
   validateWriter1CorrectionDiff,
   validateWriter1CorrectionBannedLanguage,
   validateCursorWriterCorrectionReceipt,
@@ -25,10 +26,11 @@ import {
   postDispatchReceiptManifestMac,
   type CursorWriterCorrectionPrior,
   type CursorGitHubBaselineInput,
+  type CursorWriterCorrectionV3Source,
   type CursorPostDispatchReceiptManifest,
 } from "../src/pipeline/cursor-writer.js";
 import { digestOf } from "../src/contracts/digests.js";
-import { buildWriter1ArtifactRecoveryPrompt, digestWriter1ArtifactRecoveryPrompt, buildWriter1GithubBaselineCorrectionPrompt, digestWriter1GithubBaselineCorrectionPrompt } from "./360-words-recovery-prompt.mjs";
+import { buildWriter1ArtifactRecoveryPrompt, digestWriter1ArtifactRecoveryPrompt, buildWriter1GithubBaselineCorrectionPrompt, digestWriter1GithubBaselineCorrectionPrompt, WRITER1_QUARANTINE_CORRECTION_V3_SOURCE, WRITER1_QUARANTINE_CORRECTION_V3_VERSION, buildWriter1QuarantineCorrectionV3Prompt, digestWriter1QuarantineCorrectionV3Prompt, digestWriter1QuarantineCorrectionV3Input } from "./360-words-recovery-prompt.mjs";
 import { projectVerifiedWriter1Handoff, verifyGithubWriter1Baseline, VERIFIED_WRITER1_GITHUB_BASELINE } from "./360-words-github-baseline.mjs";
 import { parseAndValidateWriter1Output, validateSealed, writer1Projection } from "./360-words-canary.js";
 import { runVerifiedWriter2Production, runVerifiedWriter3Production } from "../src/pipeline/verified-words-stages.js";
@@ -44,6 +46,10 @@ export const VERIFIED_WRITER1_CORRECTION_V2 = "words-writer1-correction/v2" as c
 export const VERIFIED_WRITER1_BASELINE = VERIFIED_WRITER1_GITHUB_BASELINE;
 export const VERIFIED_WRITER1_PROMPT_V2 = buildWriter1GithubBaselineCorrectionPrompt(VERIFIED_WRITER1_BASELINE);
 export const VERIFIED_WRITER1_PROMPT_V2_DIGEST = digestWriter1GithubBaselineCorrectionPrompt(VERIFIED_WRITER1_BASELINE);
+export const VERIFIED_WRITER1_CORRECTION_V3 = WRITER1_QUARANTINE_CORRECTION_V3_VERSION;
+export const VERIFIED_WRITER1_PROMPT_V3 = buildWriter1QuarantineCorrectionV3Prompt();
+export const VERIFIED_WRITER1_PROMPT_V3_DIGEST = digestWriter1QuarantineCorrectionV3Prompt();
+export const VERIFIED_WRITER1_CORRECTION_V3_SOURCE = WRITER1_QUARANTINE_CORRECTION_V3_SOURCE;
 export const VERIFIED_WRITER1_ROUTES = ["/garage-door-repair", "/garage-door-installation"] as const;
 export const VERIFIED_WRITER1_POST_DISPATCH = Object.freeze({
   recoveryVersion: "words-writer1-post-dispatch-retrieval/v1",
@@ -220,6 +226,26 @@ export function validateVerifiedWriter1CorrectionV2Control(control: Dict, inputD
   if (recovery?.correctionVersion !== VERIFIED_WRITER1_CORRECTION_V2 || recovery?.sourceBranch !== VERIFIED_BRANCH || recovery?.agentId !== VERIFIED_WRITER1_AGENT_ID || recovery?.threadUrl !== VERIFIED_WRITER1_THREAD_URL || recovery?.inputDigest !== inputDigest || recovery?.promptDigest !== VERIFIED_WRITER1_PROMPT_V2_DIGEST || JSON.stringify(recovery?.baseline) !== JSON.stringify(expectedBaseline) || recovery?.allowCreate !== false || recovery?.allowResume !== true || recovery?.allowFollowUp !== true || recovery?.maxFollowUps !== 1 || recovery?.idempotencyKey !== `${VERIFIED_WRITER1_AGENT_ID}:writer1:correction:v2:${inputDigest}:${VERIFIED_WRITER1_PROMPT_V2_DIGEST}`) throw new Error("verified Writer1 correction v2 pins are invalid");
 }
 
+export function validateVerifiedWriter1CorrectionV3Control(control: Dict, inputDigest: string): void {
+  if (control.schemaVersion !== "words-canary-control/v1" || control.requestedBy !== "architect" || control.stage !== "writer1" || control.restore !== null) throw new Error("verified v3 control envelope is invalid");
+  if (control.wakeNonce === DORMANT) return;
+  const policy = control.policy; const recovery = verifiedControlRecovery(control);
+  if (policy?.mode !== "writer1-correction" || policy.writer1Only !== true || policy.provider !== "cursor-sdk" || policy.model !== "cursor-grok-4.6-high" || policy.fast !== false || policy.stopAfter !== "awaiting-architect-qa" || JSON.stringify(policy.approvedRoutes) !== JSON.stringify(["/", ...VERIFIED_WRITER1_ROUTES, "/contact"])) throw new Error("verified v3 control does not select the bounded Writer1 correction policy");
+  const source = recovery?.sourceArtifact;
+  if (recovery?.correctionVersion !== VERIFIED_WRITER1_CORRECTION_V3 || recovery?.sourceBranch !== VERIFIED_BRANCH || recovery?.agentId !== VERIFIED_WRITER1_AGENT_ID || recovery?.threadUrl !== VERIFIED_WRITER1_THREAD_URL || recovery?.inputDigest !== inputDigest || recovery?.promptDigest !== VERIFIED_WRITER1_PROMPT_V3_DIGEST || JSON.stringify(source) !== JSON.stringify(VERIFIED_WRITER1_CORRECTION_V3_SOURCE) || recovery?.targetPath !== "/pages/0/sections/3/body" || recovery?.allowCreate !== false || recovery?.allowResume !== true || recovery?.allowFollowUp !== true || recovery?.maxFollowUps !== 1 || recovery?.idempotencyKey !== `${VERIFIED_WRITER1_AGENT_ID}:writer1:correction:v3:${inputDigest}:${VERIFIED_WRITER1_PROMPT_V3_DIGEST}` || recovery?.send !== undefined || policy.allowCreate !== undefined || policy.allowResume !== undefined || policy.allowFollowUp !== undefined || policy.send !== undefined) throw new Error("verified Writer1 correction v3 pins are invalid");
+}
+
+function readVerifiedWriter1CorrectionV3Source(root: string, projection: Dict): CursorWriterCorrectionV3Source {
+  const sourceRoot = process.env.WRITER1_CORRECTION_V3_SOURCE_ROOT || path.join(root, "canary/inputs/writer1-correction-v3-artifact");
+  const file = path.join(sourceRoot, VERIFIED_WRITER1_CORRECTION_V3_SOURCE.path);
+  const bytes = readFileSync(file);
+  const rawDigest = `sha256:${createHash("sha256").update(bytes).digest("hex")}`;
+  if (bytes.length !== VERIFIED_WRITER1_CORRECTION_V3_SOURCE.size || rawDigest !== VERIFIED_WRITER1_CORRECTION_V3_SOURCE.rawDigest) throw new Error("verified v3 quarantined source bytes do not match the immutable pins");
+  const raw = bytes.toString("utf8");
+  const output = parseAndValidateWriter1Output(raw, projection);
+  return { kind: "quarantine-file", ...VERIFIED_WRITER1_CORRECTION_V3_SOURCE, contentSize: bytes.length, byteDigest: rawDigest, raw, bytes, output, outputDigest: digestOf(output) };
+}
+
 /** A post-dispatch wake is a read-only reconciliation mode, never a follow-up. */
 export function validateVerifiedWriter1PostDispatchControl(control: Dict, inputDigest: string): void {
   void inputDigest; // The original dispatch digest is immutable and checked below.
@@ -391,8 +417,40 @@ export async function runVerifiedWriter1CorrectionV2(root = process.cwd()): Prom
   return { status: "awaiting-architect-qa", stage: "writer1", threadUrl: result.threadUrl, correctionRunId: result.receipt.jobId };
 }
 
+export async function runVerifiedWriter1CorrectionV3(root = process.cwd()): Promise<{ status: string; stage: string; threadUrl?: string; correctionRunId?: string }> {
+  const control = readJson(root, ".factory-wake/360-words-control.json");
+  if (control.wakeNonce === DORMANT) return { status: "dormant", stage: "writer1" };
+  const sealed = validateSealed(root); const projection = writer1Projection(sealed);
+  const inputDigest = digestWriter1QuarantineCorrectionV3Input(sealed.handoff.resealDigest);
+  validateVerifiedWriter1CorrectionV3Control(control, inputDigest);
+  if (process.env.CURSOR_MODEL !== "cursor-grok-4.6-high" || !process.env.CURSOR_API_KEY || process.env.CURSOR_FAST !== "false") throw new Error("verified production environment requires cursor-grok-4.6-high, CURSOR_API_KEY, and fast=false");
+  const recovery = verifiedControlRecovery(control); if (!recovery) throw new Error("verified v3 correction recovery is missing");
+  const source = readVerifiedWriter1CorrectionV3Source(root, projection);
+  const prior: CursorWriterCorrectionPrior = { sourceBranch: VERIFIED_BRANCH, sourceSha: recovery.sourceSha, sealedHandoffDigest: sealed.handoff.resealDigest, inputDigest, agentId: VERIFIED_WRITER1_AGENT_ID, threadUrl: VERIFIED_WRITER1_THREAD_URL };
+  await writeJson(jsonFile(root, "canary/runtime/state.json"), { status: "writer1-correction-v3-dispatching", stage: "writer1", correctionVersion: VERIFIED_WRITER1_CORRECTION_V3, runId: sealed.handoff.runId, sourceBranch: VERIFIED_BRANCH, sourceSha: prior.sourceSha, sealedHandoffDigest: prior.sealedHandoffDigest, sourceArtifact: { ...source, raw: undefined, bytes: undefined, output: undefined }, agentId: prior.agentId, threadUrl: prior.threadUrl, targetPath: "/pages/0/sections/3/body", nextStage: null, writer2Blocked: true, messagesSent: 0 });
+  const result = await recoverCursorWriterCorrectionV3({
+    receiptStore: createJsonCursorReceiptStore(jsonFile(root, "canary/runtime/cursor-receipts.json")), prior, prompt: VERIFIED_WRITER1_PROMPT_V3, correctionVersion: VERIFIED_WRITER1_CORRECTION_V3, sourceArtifact: source, expectedChangedPaths: ["/pages/0/sections/3/body"],
+    onDispatch: async (notice) => { await writeJson(jsonFile(root, "canary/runtime/writer1-dispatch-receipt.json"), { schemaVersion: "verified-writer-dispatch/v3", stage: notice.stage, provider: notice.provider, agentId: notice.agentId, runId: notice.jobId, threadUrl: notice.threadUrl, requestedModel: notice.requestedModel, resolvedModel: notice.officialModel, modelParams: notice.modelParams, effort: notice.effort, fast: notice.fast, inputDigest: notice.inputDigest, promptDigest: notice.promptDigest, requestDigest: notice.requestDigest, dispatchedAt: notice.dispatchedAt, sourceArtifact: { ...source, raw: undefined, bytes: undefined, output: undefined } }); },
+    validateBeforeOutput: (raw) => parseAndValidateWriter1Output(raw, projection),
+    validateOutput: (output) => {
+      const parsed = parseAndValidateWriter1Output(JSON.stringify(output), projection);
+      if (validateWriter1CorrectionDiff(source.output, parsed).some((item) => item !== "/pages/0/sections/3/body")) throw new Error("verified v3 correction changed a frozen path");
+      if (/routine\s+maintenance|\bConnie\b/iu.test(String((parsed as Dict).pages?.[0]?.sections?.[3]?.body || ""))) throw new Error("verified v3 correction left unbound routine-maintenance/Connie language");
+      return parsed;
+    },
+  });
+  validateCursorWriterCorrectionReceipt(result.receipt, prior, VERIFIED_WRITER1_PROMPT_V3_DIGEST, process.env.CURSOR_API_KEY, undefined, result.receipt.correctionV3Source, ["/pages/0/sections/3/body"]);
+  const output = parseAndValidateWriter1Output(JSON.stringify(result.output), projection);
+  await writeJson(jsonFile(root, "canary/runtime/writer1-correction-v3-receipt.json"), result.receipt);
+  await writeJson(jsonFile(root, "canary/runtime/writer1-validation.json"), { schemaVersion: "verified-writer1-validation/v3", status: "valid-awaiting-architect-qa", stage: "writer1", correctionVersion: VERIFIED_WRITER1_CORRECTION_V3, outputDigest: result.receipt.outputDigest, sourceBranch: VERIFIED_BRANCH, sourceSha: prior.sourceSha, sealedHandoffDigest: prior.sealedHandoffDigest, sourceArtifact: result.receipt.correctionV3Source, beforeOutputDigest: result.receipt.beforeOutputDigest, afterOutputDigest: result.receipt.afterOutputDigest, frozenDigest: result.receipt.frozenDigest, changedPaths: result.receipt.changedPaths, agentId: result.receipt.agentId, runId: result.receipt.jobId, threadUrl: result.threadUrl, requestedModel: result.receipt.requestedModel, resolvedModel: result.receipt.resolvedModel, effort: result.receipt.effort, fast: result.receipt.fast, nextStage: null, writer2Blocked: true, messagesSent: 1 });
+  await writeJson(jsonFile(root, "canary/outputs/writer1-output.json"), output);
+  await writeJson(jsonFile(root, "canary/runtime/state.json"), { status: "awaiting-architect-qa", stage: "writer1", correctionVersion: VERIFIED_WRITER1_CORRECTION_V3, runId: sealed.handoff.runId, sourceBranch: VERIFIED_BRANCH, sourceSha: prior.sourceSha, sealedHandoffDigest: prior.sealedHandoffDigest, sourceArtifact: result.receipt.correctionV3Source, agentId: result.receipt.agentId, threadUrl: result.threadUrl, correctionRunId: result.receipt.jobId, receiptPath: "canary/runtime/writer1-correction-v3-receipt.json", targetPath: "/pages/0/sections/3/body", changedPaths: result.receipt.changedPaths, nextStage: null, writer2Blocked: true, messagesSent: 1 });
+  return { status: "awaiting-architect-qa", stage: "writer1", threadUrl: result.threadUrl, correctionRunId: result.receipt.jobId };
+}
+
 export async function runVerifiedWriter1Correction(root = process.cwd()): Promise<{ status: string; stage: string; threadUrl?: string; correctionRunId?: string }> {
   const control = readJson(root, ".factory-wake/360-words-control.json");
+  if (control.wakeNonce !== DORMANT && verifiedControlRecovery(control)?.correctionVersion === VERIFIED_WRITER1_CORRECTION_V3) return runVerifiedWriter1CorrectionV3(root);
   if (control.wakeNonce !== DORMANT && verifiedControlRecovery(control)?.correctionVersion === VERIFIED_WRITER1_CORRECTION_V2) return runVerifiedWriter1CorrectionV2(root);
   const sealed = validateSealed(root); const projection = writer1Projection(sealed); const inputDigest = digestOf(projection);
   validateVerifiedWriter1Control(control, inputDigest);
@@ -448,7 +506,7 @@ export function assertVerifiedReceiptMetadata(receipt: Dict): void {
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) {
-  const operation = process.argv.includes("--writer2") ? runVerifiedWriter2() : process.argv.includes("--writer3") ? runVerifiedWriter3() : process.argv.includes("--writer1-seal-only") ? runVerifiedWriter1PostDispatchSealOnly() : process.argv.includes("--writer1-retrieval-only") ? runVerifiedWriter1PostDispatchRecovery() : process.argv.includes("--writer1-correction-v2") ? runVerifiedWriter1CorrectionV2() : runVerifiedWriter1Correction();
+  const operation = process.argv.includes("--writer2") ? runVerifiedWriter2() : process.argv.includes("--writer3") ? runVerifiedWriter3() : process.argv.includes("--writer1-seal-only") ? runVerifiedWriter1PostDispatchSealOnly() : process.argv.includes("--writer1-retrieval-only") ? runVerifiedWriter1PostDispatchRecovery() : process.argv.includes("--writer1-correction-v3") ? runVerifiedWriter1CorrectionV3() : process.argv.includes("--writer1-correction-v2") ? runVerifiedWriter1CorrectionV2() : runVerifiedWriter1Correction();
   operation.then((result) => console.log(JSON.stringify(result))).catch(async (error) => {
     const code = error && typeof error === "object" && typeof (error as Dict).code === "string" ? (error as Dict).code : "VERIFIED_WRITER1_CORRECTION_FAILED";
     let dispatch: Dict | undefined;

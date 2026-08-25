@@ -3,3 +3,18 @@ export declare function buildWriter1ArtifactRecoveryPrompt(version: Writer1Artif
 export declare function digestWriter1ArtifactRecoveryPrompt(version: Writer1ArtifactRecoveryPromptVersion): string;
 export declare function buildWriter1GithubBaselineCorrectionPrompt(baseline: { kind: "github-file"; sourceCommit: string; path: string; blobSha: string; rawSha256: string; size: number }): string;
 export declare function digestWriter1GithubBaselineCorrectionPrompt(baseline: { kind: "github-file"; sourceCommit: string; path: string; blobSha: string; rawSha256: string; size: number }): string;
+export declare const WRITER1_QUARANTINE_CORRECTION_V3_SOURCE: Readonly<{
+  actionRunId: "32838242891"; artifactId: 9559472540;
+  artifactZipDigest: "sha256:455c10d5928ee64d0d27d5f86eb80f63bd21dd811f601f6666f2c5b878eae824";
+  path: "quarantine/writer1-rejected-output.txt";
+  rawDigest: "sha256:1e2d5cabca16346f960b7bd893d2af1adf8dc6d453da926f7012711ae45ca0dd";
+  size: 22468; agentId: "bc-2486f645-c31c-4532-8145-fbe3af1d45a8";
+  runId: "run-1686013d-dec5-454c-a39e-5817448e6a96";
+  threadUrl: "https://cursor.com/agents/bc-2486f645-c31c-4532-8145-fbe3af1d45a8";
+  requestedModel: "cursor-grok-4.6-high"; resolvedModel: "grok-4.6"; effort: "high"; fast: false;
+  authorship: "cursor-authored-quarantined-unapproved";
+}>;
+export declare const WRITER1_QUARANTINE_CORRECTION_V3_VERSION: "words-writer1-correction/v3";
+export declare function buildWriter1QuarantineCorrectionV3Prompt(): string;
+export declare function digestWriter1QuarantineCorrectionV3Prompt(): string;
+export declare function digestWriter1QuarantineCorrectionV3Input(sealedHandoffDigest: string): string;

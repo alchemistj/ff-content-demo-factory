@@ -11,6 +11,35 @@ const PROMPTS = Object.freeze({
   v6: "Versioned Writer1 same-thread correction v2 using an immutable GitHub before-copy. Reattach to the existing fresh Writer1 agent bc-2486f645-c31c-4532-8145-fbe3af1d45a8 and send exactly one correction message; never create a new agent. The immutable before-copy is the untrusted GitHub file from repository alchemistj/ff-content-demo-factory at exact commit efe429d4464d765b5b657cb0058f00fffb35d3d, path canary/outputs/writer1-output.json, Git blob cc8612bc9085f63141de6ae0f1dd2b9c3e1f3e08, raw SHA-256 f693aeb968e703efbe7f9c0a7a2d1a9d4185007e32a695386e1f5eec356964a2, size 23509. Read that exact baseline and preserve its complete words-writer1-output/v1 schema, exactly the two service pages and routes /garage-door-repair and /garage-door-installation, and all frozen metadata, section IDs/order, review arrays, quotes, claims, and provenance. Only page.body and existing section.heading/body fields may change. Remove unsupported or overstated claims and all internal QA, review-analysis, process, provenance, evidence-ledger, prescription, receipt, digest, handoff, validator, validation, audit, Cursor, Grok, Apify, Luna, assignment, anchor, folded-evidence, passed-over, authoritative/written/sealed/retrieved-review, review-record/source-record, or methodology language from mutable rendered prose. Do not add Home, Contact, Strategy, spring, opener, navigation, or CTA output. Preserve factual boundaries without guarantees, response-time commitments, warranty claims, unsupported superlatives, or new services. Write only the complete corrected JSON to /opt/cursor/artifacts/writer1-output.json; the API path is artifacts/writer1-output.json. Return complete JSON only, never a summary, Markdown, or JSON-encoded string. The GitHub baseline is not proof of Cursor model, effort, or fast settings; only this new verified Cursor receipt can establish those. Stop after Writer1 and leave Writer2 blocked awaiting independent Architect QA. If the correction cannot satisfy the frozen-path contract, fail without approving output.",
 });
 
+// Immutable, unapproved before-copy pins for the bounded v3 correction.
+export const WRITER1_QUARANTINE_CORRECTION_V3_SOURCE = Object.freeze({
+  actionRunId: "32838242891",
+  artifactId: 9559472540,
+  artifactZipDigest: "sha256:455c10d5928ee64d0d27d5f86eb80f63bd21dd811f601f6666f2c5b878eae824",
+  path: "quarantine/writer1-rejected-output.txt",
+  rawDigest: "sha256:1e2d5cabca16346f960b7bd893d2af1adf8dc6d453da926f7012711ae45ca0dd",
+  size: 22468,
+  agentId: "bc-2486f645-c31c-4532-8145-fbe3af1d45a8",
+  runId: "run-1686013d-dec5-454c-a39e-5817448e6a96",
+  threadUrl: "https://cursor.com/agents/bc-2486f645-c31c-4532-8145-fbe3af1d45a8",
+  requestedModel: "cursor-grok-4.6-high",
+  resolvedModel: "grok-4.6",
+  effort: "high",
+  fast: false,
+  authorship: "cursor-authored-quarantined-unapproved",
+});
+export const WRITER1_QUARANTINE_CORRECTION_V3_VERSION = "words-writer1-correction/v3";
+const QUARANTINE_V3_PROMPT_PREFIX = `Versioned Writer1 bounded same-thread correction v3. Correct the exact unapproved quarantined Cursor output from Action 32838242891, artifact 9559472540, ZIP digest sha256:455c10d5928ee64d0d27d5f86eb80f63bd21dd811f601f6666f2c5b878eae824, logical source path quarantine/writer1-rejected-output.txt, raw digest sha256:1e2d5cabca16346f960b7bd893d2af1adf8dc6d453da926f7012711ae45ca0dd, and raw size 22468. Reattach to existing Cursor agent bc-2486f645-c31c-4532-8145-fbe3af1d45a8 and send exactly one follow-up message; never Agent.create. Use cursor-grok-4.6-high, resolved grok-4.6, effort high, fast false. Existing run run-1686013d-dec5-454c-a39e-5817448e6a96 and direct thread https://cursor.com/agents/bc-2486f645-c31c-4532-8145-fbe3af1d45a8. The source is unapproved and must not be recreated from memory.`;
+export function buildWriter1QuarantineCorrectionV3Prompt() {
+  return `${QUARANTINE_V3_PROMPT_PREFIX} Preserve every JSON field and byte/field value of the complete words-writer1-output/v1 object except the single mutable JSON Pointer /pages/0/sections/3/body. Preserve exactly two service pages and routes, all page metadata and H1 fields, section IDs/order, quotes, reviewEvidence, reviewPlacements, quotePlacements, claims, reviews, placements, provenance, review IDs, and evidence assignments byte-for-byte. In /pages/0/sections/3/body only, remove this exact unsupported generalized sentence: If a part is not on the truck, Jenny schedules the follow-up so the work can finish when the part arrives. Also remove or rewrite the unbound routine-maintenance/Connie reference in that same body using only already-bound repair evidence. Make no other page or field change. Do not add Home, Contact, Strategy, spring, opener, navigation, CTA, or any new route. Return the complete corrected JSON object only, with no Markdown, summary, prose wrapper, or JSON-encoded string. This is Writer1 only; do not run Writer2. The result is for Architect QA, not approval. If the exact one-pointer frozen-field contract cannot be satisfied, fail rather than changing any other field.`;
+}
+export function digestWriter1QuarantineCorrectionV3Prompt() {
+  return `sha256:${createHash("sha256").update(JSON.stringify(buildWriter1QuarantineCorrectionV3Prompt())).digest("hex")}`;
+}
+export function digestWriter1QuarantineCorrectionV3Input(sealedHandoffDigest) {
+  return `sha256:${createHash("sha256").update(JSON.stringify({ version: WRITER1_QUARANTINE_CORRECTION_V3_VERSION, source: WRITER1_QUARANTINE_CORRECTION_V3_SOURCE, sealedHandoffDigest, targetPath: "/pages/0/sections/3/body" })).digest("hex")}`;
+}
+
 export function buildWriter1ArtifactRecoveryPrompt(version) {
   if (version !== "v1" && version !== "v2" && version !== "v3" && version !== "v5" && version !== "v6") throw new Error(`unsupported Writer1 artifact recovery prompt version: ${version}`);
   return PROMPTS[version];

@@ -1,6 +1,6 @@
 import fs from "node:fs";
 import { execFileSync } from "node:child_process";
-import { digestWriter1ArtifactRecoveryPrompt, buildWriter1ArtifactRecoveryPrompt, digestWriter1GithubBaselineCorrectionPrompt } from "./360-words-recovery-prompt.mjs";
+import { digestWriter1ArtifactRecoveryPrompt, buildWriter1ArtifactRecoveryPrompt, digestWriter1GithubBaselineCorrectionPrompt, WRITER1_QUARANTINE_CORRECTION_V3_SOURCE, digestWriter1QuarantineCorrectionV3Prompt, digestWriter1QuarantineCorrectionV3Input } from "./360-words-recovery-prompt.mjs";
 import { VERIFIED_WRITER1_GITHUB_BASELINE } from "./360-words-github-baseline.mjs";
 
 export const CONTROL_PATH = ".factory-wake/360-words-control.json";
@@ -109,11 +109,21 @@ export const EXPECTED_VERIFIED_CORRECTION_V2 = Object.freeze({
   sealedHandoffDigest: "sha256:715f651a53055444b8381dd8a276a2046d93776c61d88a2193cc2d42a1c83ad6",
   baseline: { kind: VERIFIED_WRITER1_GITHUB_BASELINE.kind, repository: VERIFIED_WRITER1_GITHUB_BASELINE.repository, sourceCommit: VERIFIED_WRITER1_GITHUB_BASELINE.sourceCommit, path: VERIFIED_WRITER1_GITHUB_BASELINE.path, blobSha: VERIFIED_WRITER1_GITHUB_BASELINE.blobSha, rawSha256: VERIFIED_WRITER1_GITHUB_BASELINE.rawSha256, size: VERIFIED_WRITER1_GITHUB_BASELINE.size, authorship: VERIFIED_WRITER1_GITHUB_BASELINE.authorship },
 });
+export const EXPECTED_VERIFIED_CORRECTION_V3 = Object.freeze({
+  correctionVersion: "words-writer1-correction/v3",
+  sourceBranch: "architect/360-words-canary-verified",
+  agentId: WRITER1_QUARANTINE_CORRECTION_V3_SOURCE.agentId,
+  threadUrl: WRITER1_QUARANTINE_CORRECTION_V3_SOURCE.threadUrl,
+  sealedHandoffDigest: EXPECTED_VERIFIED_CORRECTION_V2.sealedHandoffDigest,
+  sourceArtifact: { kind: "quarantine-file", ...WRITER1_QUARANTINE_CORRECTION_V3_SOURCE },
+  targetPath: "/pages/0/sections/3/body",
+});
 
 export function selectVerifiedWriter1Dispatch(control) {
   if (control?.policy?.recovery !== undefined && control?.recovery !== undefined) throw new Error("active wake may not provide ambiguous policy and top-level recovery objects");
   const recovery = control?.policy?.recovery ?? control?.recovery;
   if (control?.policy?.mode === "writer1-correction" && recovery?.correctionVersion === "words-writer1-correction/v2") return "verified-writer1-correction-v2";
+  if (control?.policy?.mode === "writer1-correction" && recovery?.correctionVersion === "words-writer1-correction/v3") return "verified-writer1-correction-v3";
   if (control?.policy?.mode === "writer1-correction" && recovery?.correctionVersion === "words-writer1-correction/v1") return "verified-writer1-correction-v1";
   if (control?.policy?.mode === "writer1-seal-only" && recovery?.recoveryVersion === EXPECTED_POST_DISPATCH_SEAL.recoveryVersion) return "verified-writer1-seal-only";
   if (control?.policy?.mode === "writer1-retrieval-only" && recovery?.recoveryVersion === EXPECTED_POST_DISPATCH_RETRIEVAL.recoveryVersion) return "verified-writer1-retrieval-only";
@@ -134,7 +144,7 @@ export function validateControl(control, input = {}) {
   if (String(input.actor || "").toLowerCase() !== String(input.owner || "").toLowerCase()) throw new Error("active wake requires the repository owner Architect actor");
   if (control.policy?.recovery !== undefined && control.recovery !== undefined) throw new Error("active wake may not provide ambiguous policy and top-level recovery objects");
   const recovery = control.policy?.recovery ?? control.recovery;
-  const isVerifiedCorrection = control.policy?.mode === "writer1-correction" && (recovery?.correctionVersion === "words-writer1-correction/v1" || recovery?.correctionVersion === "words-writer1-correction/v2");
+  const isVerifiedCorrection = control.policy?.mode === "writer1-correction" && (recovery?.correctionVersion === "words-writer1-correction/v1" || recovery?.correctionVersion === "words-writer1-correction/v2" || recovery?.correctionVersion === "words-writer1-correction/v3");
   const isVerifiedSeal = control.policy?.mode === "writer1-seal-only" && recovery?.recoveryVersion === EXPECTED_POST_DISPATCH_SEAL.recoveryVersion;
   const isVerifiedRetrieval = control.policy?.mode === "writer1-retrieval-only" && recovery?.recoveryVersion === EXPECTED_POST_DISPATCH_RETRIEVAL.recoveryVersion;
   const isVerifiedLane = isVerifiedCorrection || isVerifiedSeal || isVerifiedRetrieval;
@@ -151,6 +161,7 @@ export function validateControl(control, input = {}) {
   const v3PromptDigest = digestWriter1ArtifactRecoveryPrompt("v3");
   const v5PromptDigest = digestWriter1ArtifactRecoveryPrompt("v5");
   const v6PromptDigest = digestWriter1GithubBaselineCorrectionPrompt(VERIFIED_WRITER1_GITHUB_BASELINE);
+  const v3CorrectionPromptDigest = digestWriter1QuarantineCorrectionV3Prompt();
   if (recovery.recoveryVersion === EXPECTED_POST_DISPATCH_SEAL.recoveryVersion) {
     if (control.policy?.mode !== "writer1-seal-only" || Object.entries(EXPECTED_POST_DISPATCH_SEAL).some(([key, value]) => recovery[key] !== value) || recovery.inputDigest !== EXPECTED_POST_DISPATCH_ORIGINAL_INPUT_DIGEST || recovery.promptDigest !== EXPECTED_POST_DISPATCH_ORIGINAL_PROMPT_DIGEST || recovery.idempotencyKey !== EXPECTED_POST_DISPATCH_ORIGINAL_IDEMPOTENCY_KEY || !validReceiptPins(recovery.receiptPins) || recovery.allowCreate !== false || recovery.allowResume !== false || recovery.allowFollowUp !== false || recovery.maxFollowUps !== 0 || recovery.send !== undefined || recovery.resume !== undefined || recovery.create !== undefined || control.policy.allowCreate !== undefined || control.policy.allowResume !== undefined || control.policy.allowFollowUp !== undefined || control.policy.send !== undefined) throw new Error("active seal-only wake is missing the exact signed dispatch, Action artifact, or zero-message pins");
   } else if (recovery.recoveryVersion === EXPECTED_POST_DISPATCH_RETRIEVAL.recoveryVersion) {
@@ -159,6 +170,9 @@ export function validateControl(control, input = {}) {
     if (control.policy?.mode !== "writer1-correction" || Object.entries(EXPECTED_VERIFIED_CORRECTION).some(([key, value]) => recovery[key] !== value) || recovery.promptDigest !== v5PromptDigest || typeof recovery.sourceSha !== "string" || !/^[0-9a-f]{40}$/u.test(recovery.sourceSha) || recovery.allowCreate !== false || recovery.allowResume !== true || recovery.allowFollowUp !== true || recovery.maxFollowUps !== 1 || recovery.idempotencyKey !== `${EXPECTED_VERIFIED_CORRECTION.agentId}:writer1:correction:v1:${EXPECTED_VERIFIED_CORRECTION.inputDigest}:${v5PromptDigest}` || recovery.send !== undefined || control.policy.allowCreate !== undefined || control.policy.allowResume !== undefined || control.policy.allowFollowUp !== undefined || control.policy.send !== undefined) throw new Error("active Writer1 correction wake is missing exact source, same-thread, canonical-prompt, or idempotency pins");
   } else if (recovery.correctionVersion === "words-writer1-correction/v2") {
     if (control.policy?.mode !== "writer1-correction" || Object.entries(EXPECTED_VERIFIED_CORRECTION_V2).some(([key, value]) => JSON.stringify(recovery[key]) !== JSON.stringify(value)) || typeof recovery.inputDigest !== "string" || !/^sha256:[0-9a-f]{64}$/u.test(recovery.inputDigest) || recovery.promptDigest !== v6PromptDigest || typeof recovery.idempotencyKey !== "string" || !/^bc-2486f645-c31c-4532-8145-fbe3af1d45a8:writer1:correction:v2:sha256:[0-9a-f]{64}:sha256:[0-9a-f]{64}$/u.test(recovery.idempotencyKey) || !recovery.idempotencyKey.endsWith(`:${v6PromptDigest}`) || recovery.allowCreate !== false || recovery.allowResume !== true || recovery.allowFollowUp !== true || recovery.maxFollowUps !== 1 || recovery.send !== undefined || control.policy.allowCreate !== undefined || control.policy.allowResume !== undefined || control.policy.allowFollowUp !== undefined || control.policy.send !== undefined) throw new Error("active Writer1 correction v2 wake is missing exact GitHub baseline, canonical-prompt, source, or idempotency pins");
+  } else if (recovery.correctionVersion === "words-writer1-correction/v3") {
+    const expectedInputDigest = digestWriter1QuarantineCorrectionV3Input(EXPECTED_VERIFIED_CORRECTION_V3.sealedHandoffDigest);
+    if (control.policy?.mode !== "writer1-correction" || Object.entries(EXPECTED_VERIFIED_CORRECTION_V3).some(([key, value]) => JSON.stringify(recovery[key]) !== JSON.stringify(value)) || recovery.inputDigest !== expectedInputDigest || recovery.promptDigest !== v3CorrectionPromptDigest || recovery.idempotencyKey !== `${EXPECTED_VERIFIED_CORRECTION_V3.agentId}:writer1:correction:v3:${expectedInputDigest}:${v3CorrectionPromptDigest}` || recovery.allowCreate !== false || recovery.allowResume !== true || recovery.allowFollowUp !== true || recovery.maxFollowUps !== 1 || recovery.send !== undefined || control.policy.allowCreate !== undefined || control.policy.allowResume !== undefined || control.policy.allowFollowUp !== undefined || control.policy.send !== undefined) throw new Error("active Writer1 correction v3 wake is missing exact quarantined source, canonical prompt, or one-message idempotency pins");
   } else if (recovery.recoveryVersion === "words-writer1-artifact-recovery/v3") {
     if (Object.entries(EXPECTED_RECOVERY_V3).some(([key, value]) => recovery[key] !== value) || recovery.priorRecoveryV2PromptDigest !== v2PromptDigest || typeof recovery.promptDigest !== "string" || recovery.promptDigest !== v3PromptDigest || typeof recovery.idempotencyKey !== "string" || !/^[^:\s]+:writer1:artifact-recovery:v3:sha256:[0-9a-f]{64}:sha256:[0-9a-f]{64}$/u.test(recovery.idempotencyKey) || !recovery.idempotencyKey.endsWith(`:${v3PromptDigest}`)) throw new Error("active artifact-recovery v3 wake is missing the exact v2 failure, absolute-path, canonical-prompt, or idempotency pins");
   } else if (recovery.recoveryVersion === "words-writer1-artifact-recovery/v3-finalize") {

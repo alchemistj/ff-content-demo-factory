@@ -22,7 +22,7 @@ export interface CursorWriterReceipt {
   effort: "high"; effortParameterId?: string; effortAttestationSource: "official-response" | "official-registry-parameter" | "named-model-default";
   attestationSource: "official-response" | "bound-create-request"; apiVersion: "cloud-agent-api-v1";
   mode?: "initial" | "same-thread-retrieval" | "same-thread-artifact-recovery" | "validation-only-artifact-recovery" | "same-thread-correction";
-  correctionVersion?: "words-writer1-retrieval/v1" | "words-writer1-post-dispatch-retrieval/v1" | "words-writer1-correction/v1" | "words-writer1-correction/v2";
+  correctionVersion?: "words-writer1-retrieval/v1" | "words-writer1-post-dispatch-retrieval/v1" | "words-writer1-correction/v1" | "words-writer1-correction/v2" | "words-writer1-correction/v3";
   prior?: CursorFollowUpBindings;
   followUpPromptDigest?: string;
   artifact?: CursorArtifactBinding;
@@ -43,7 +43,7 @@ export interface CursorDispatchClaim {
   requestedAgentId: string; claimedAt: string; leaseUntil?: string; heartbeatAt?: string;
   phase?: "claimed" | "agent-created" | "prompt-sent" | "follow-up-sending" | "follow-up-sent" | "waiting" | "completed";
   agentId?: string; jobId?: string;
-  recoveryBeforeArtifact?: CursorArtifactBinding | CursorGitHubBaselineBinding;
+  recoveryBeforeArtifact?: CursorArtifactBinding | CursorGitHubBaselineBinding | CursorWriterCorrectionV3SourceBinding;
   copyProjectionDigest?: string;
 }
 export interface CursorWriterReceiptStore {
@@ -459,13 +459,38 @@ export interface CursorWriterCorrectionPrior {
   agentId: string;
   threadUrl: string;
 }
+export interface CursorWriterCorrectionV3SourceBinding {
+  kind: "quarantine-file";
+  actionRunId: "32838242891";
+  artifactId: 9559472540;
+  artifactZipDigest: "sha256:455c10d5928ee64d0d27d5f86eb80f63bd21dd811f601f6666f2c5b878eae824";
+  path: "quarantine/writer1-rejected-output.txt";
+  rawDigest: "sha256:1e2d5cabca16346f960b7bd893d2af1adf8dc6d453da926f7012711ae45ca0dd";
+  size: 22468;
+  contentSize: 22468;
+  byteDigest: "sha256:1e2d5cabca16346f960b7bd893d2af1adf8dc6d453da926f7012711ae45ca0dd";
+  agentId: "bc-2486f645-c31c-4532-8145-fbe3af1d45a8";
+  runId: "run-1686013d-dec5-454c-a39e-5817448e6a96";
+  threadUrl: "https://cursor.com/agents/bc-2486f645-c31c-4532-8145-fbe3af1d45a8";
+  requestedModel: "cursor-grok-4.6-high";
+  resolvedModel: "grok-4.6";
+  effort: "high";
+  fast: false;
+  authorship: "cursor-authored-quarantined-unapproved";
+}
+export interface CursorWriterCorrectionV3Source extends CursorWriterCorrectionV3SourceBinding {
+  raw: string;
+  bytes: Buffer;
+  output: unknown;
+  outputDigest: string;
+}
 export interface CursorWriterCorrectionReceipt extends CursorWriterReceipt {
   mode: "same-thread-correction";
-  correctionVersion: "words-writer1-correction/v1" | "words-writer1-correction/v2";
+  correctionVersion: "words-writer1-correction/v1" | "words-writer1-correction/v2" | "words-writer1-correction/v3";
   correctionPrior: CursorWriterCorrectionPrior;
   correctionPromptDigest: string;
   recoveryRunId: string;
-  beforeArtifact: CursorArtifactBinding | CursorGitHubBaselineBinding;
+  beforeArtifact: CursorArtifactBinding | CursorGitHubBaselineBinding | CursorWriterCorrectionV3SourceBinding;
   afterArtifact: CursorArtifactBinding;
   beforeOutput: unknown;
   beforeOutputDigest: string;
@@ -476,6 +501,7 @@ export interface CursorWriterCorrectionReceipt extends CursorWriterReceipt {
   writer2Blocked: true;
   nextStage: null;
   githubBaseline?: CursorGitHubBaselineBinding;
+  correctionV3Source?: CursorWriterCorrectionV3SourceBinding;
 }
 export interface CursorArtifactDescriptor { path: string; size: number; sha256?: string; updatedAt?: string; }
 export interface CursorGitHubBaselineBinding {
@@ -1447,16 +1473,23 @@ type CursorWriterCorrectionInternalInput = {
   validateBeforeOutput?: (raw: string) => unknown;
   validateOutput: (output: unknown) => void;
   onDispatch?: (notice: CursorDispatchNotice) => void | Promise<void>;
-  correctionVersion?: "words-writer1-correction/v1" | "words-writer1-correction/v2";
+  correctionVersion?: "words-writer1-correction/v1" | "words-writer1-correction/v2" | "words-writer1-correction/v3";
   baseline?: CursorGitHubBaselineInput;
   baselineFixture?: boolean;
+  sourceArtifact?: CursorWriterCorrectionV3Source;
+  sourceArtifactFixture?: boolean;
+  expectedChangedPaths?: readonly string[];
 };
 export type CursorWriterCorrectionInput = Omit<CursorWriterCorrectionInternalInput, "env" | "transport" | "artifactClient" | "correctionVersion" | "baseline">;
 export type CursorWriterCorrectionV2Input = Omit<CursorWriterCorrectionInternalInput, "env" | "transport" | "artifactClient" | "correctionVersion"> & { correctionVersion: "words-writer1-correction/v2"; baseline: CursorGitHubBaselineInput };
+export type CursorWriterCorrectionV3Input = Omit<CursorWriterCorrectionInternalInput, "env" | "transport" | "artifactClient" | "correctionVersion" | "sourceArtifact" | "sourceArtifactFixture"> & { correctionVersion: "words-writer1-correction/v3"; sourceArtifact: CursorWriterCorrectionV3Source };
 export type CursorWriterCorrectionResult = { output: unknown; receipt: CursorWriterCorrectionReceipt; threadUrl: string; claim: CursorDispatchClaim };
 
 function baselineBinding(input: CursorGitHubBaselineInput): CursorGitHubBaselineBinding {
   return { kind: input.kind, repository: input.repository, sourceCommit: input.sourceCommit, path: input.path, blobSha: input.blobSha, rawSha256: input.rawSha256, size: input.size, contentSize: input.contentSize, byteDigest: input.byteDigest, outputDigest: input.outputDigest, sealedHandoffDigest: input.sealedHandoffDigest, authorship: input.authorship };
+}
+function quarantineSourceBinding(input: CursorWriterCorrectionV3Source): CursorWriterCorrectionV3SourceBinding {
+  return { kind: input.kind, actionRunId: input.actionRunId, artifactId: input.artifactId, artifactZipDigest: input.artifactZipDigest, path: input.path, rawDigest: input.rawDigest, size: input.size, contentSize: input.contentSize, byteDigest: input.byteDigest, agentId: input.agentId, runId: input.runId, threadUrl: input.threadUrl, requestedModel: input.requestedModel, resolvedModel: input.resolvedModel, effort: input.effort, fast: input.fast, authorship: input.authorship };
 }
 function validateGithubBaselineBinding(value: unknown, expected?: CursorGitHubBaselineBinding, exactPauliBaseline = true): asserts value is CursorGitHubBaselineBinding {
   const item = asRecord(value);
@@ -1465,10 +1498,16 @@ function validateGithubBaselineBinding(value: unknown, expected?: CursorGitHubBa
   if (expected && JSON.stringify(item) !== JSON.stringify(expected)) throw new CursorWriterExecutionError("CURSOR_GITHUB_BASELINE_INVALID", "Writer1 GitHub baseline receipt binding changed between verification and completion");
 }
 
-export function validateCursorWriterCorrectionReceipt(receipt: unknown, prior: CursorWriterCorrectionPrior, promptDigest: string, cursorApiKey?: string, expectedBaseline?: CursorGitHubBaselineBinding): asserts receipt is CursorWriterCorrectionReceipt {
+function validateWriter1CorrectionV3SourceBinding(value: unknown, expected?: CursorWriterCorrectionV3SourceBinding, exactPins = true): asserts value is CursorWriterCorrectionV3SourceBinding {
+  const item = asRecord(value);
+  const exact = item && item.kind === "quarantine-file" && item.actionRunId === "32838242891" && item.artifactId === 9559472540 && item.artifactZipDigest === "sha256:455c10d5928ee64d0d27d5f86eb80f63bd21dd811f601f6666f2c5b878eae824" && item.path === "quarantine/writer1-rejected-output.txt" && item.rawDigest === "sha256:1e2d5cabca16346f960b7bd893d2af1adf8dc6d453da926f7012711ae45ca0dd" && item.size === 22468 && item.contentSize === 22468 && item.byteDigest === item.rawDigest && item.agentId === "bc-2486f645-c31c-4532-8145-fbe3af1d45a8" && item.runId === "run-1686013d-dec5-454c-a39e-5817448e6a96" && item.threadUrl === "https://cursor.com/agents/bc-2486f645-c31c-4532-8145-fbe3af1d45a8" && item.requestedModel === "cursor-grok-4.6-high" && item.resolvedModel === "grok-4.6" && item.effort === "high" && item.fast === false && item.authorship === "cursor-authored-quarantined-unapproved";
+  if ((!exactPins && !item) || (exactPins && !exact) || (expected && JSON.stringify(item) !== JSON.stringify(expected))) throw new CursorWriterExecutionError("CURSOR_WRITER1_CORRECTION_V3_SOURCE_INVALID", "Writer1 correction v3 source artifact is not the exact quarantined Cursor before-copy");
+}
+
+export function validateCursorWriterCorrectionReceipt(receipt: unknown, prior: CursorWriterCorrectionPrior, promptDigest: string, cursorApiKey?: string, expectedBaseline?: CursorGitHubBaselineBinding, expectedSource?: CursorWriterCorrectionV3SourceBinding, expectedChangedPaths?: readonly string[]): asserts receipt is CursorWriterCorrectionReceipt {
   validateCursorWriterReceipt(receipt, cursorApiKey);
   const value = receipt as unknown as RecordValue;
-  if (value.mode !== "same-thread-correction" || (value.correctionVersion !== WRITER1_CORRECTION_VERSION && value.correctionVersion !== "words-writer1-correction/v2") || value.writer2Blocked !== true || value.nextStage !== null) throw new CursorWriterExecutionError("CURSOR_WRITER1_CORRECTION_RECEIPT_INVALID", "Writer1 correction receipt did not stop at Architect QA with Writer2 blocked");
+  if (value.mode !== "same-thread-correction" || (value.correctionVersion !== WRITER1_CORRECTION_VERSION && value.correctionVersion !== "words-writer1-correction/v2" && value.correctionVersion !== "words-writer1-correction/v3") || value.writer2Blocked !== true || value.nextStage !== null) throw new CursorWriterExecutionError("CURSOR_WRITER1_CORRECTION_RECEIPT_INVALID", "Writer1 correction receipt did not stop at Architect QA with Writer2 blocked");
   if (value.correctionVersion === "words-writer1-correction/v2") {
     // Production preflight enforces the Pauli baseline. Test-only fixture seams
     // may use a fully bound synthetic baseline, which receipt validation must
@@ -1485,6 +1524,13 @@ export function validateCursorWriterCorrectionReceipt(receipt: unknown, prior: C
   if (!Array.isArray(value.changedPaths) || value.changedPaths.some((item) => typeof item !== "string" || !correctionMutablePath(item)) || value.changedPathsDigest !== writer1CorrectionChangedPathsDigest(value.changedPaths)) throw new CursorWriterExecutionError("CURSOR_WRITER1_CORRECTION_DIFF_INVALID", "Writer1 correction changed a path outside page.body or existing section heading/body");
   if (before.byteDigest === after.byteDigest || before.size !== before.contentSize || after.size !== after.contentSize || !DIGEST.test(String(before.byteDigest)) || !DIGEST.test(String(after.byteDigest))) throw new CursorWriterExecutionError("CURSOR_WRITER1_CORRECTION_ARTIFACT_STALE", "Writer1 correction receipt does not bind a changed complete Cursor artifact");
   if (value.correctionVersion === "words-writer1-correction/v2" && (before.kind !== "github-file" || before.byteDigest !== asRecord(value.githubBaseline)?.rawSha256)) throw new CursorWriterExecutionError("CURSOR_GITHUB_BASELINE_INVALID", "Writer1 v2 receipt before-artifact is not the verified immutable GitHub baseline");
+  if (value.correctionVersion === "words-writer1-correction/v3") {
+    const sourceIsProductionPinned = !expectedSource || (expectedSource.actionRunId === "32838242891" && expectedSource.artifactId === 9559472540 && expectedSource.rawDigest === "sha256:1e2d5cabca16346f960b7bd893d2af1adf8dc6d453da926f7012711ae45ca0dd");
+    validateWriter1CorrectionV3SourceBinding(value.correctionV3Source, expectedSource, sourceIsProductionPinned);
+    if (before.kind !== "quarantine-file" || JSON.stringify(before) !== JSON.stringify(value.correctionV3Source)) throw new CursorWriterExecutionError("CURSOR_WRITER1_CORRECTION_V3_SOURCE_INVALID", "Writer1 v3 receipt lost its exact quarantined before-copy binding");
+    const required = expectedChangedPaths || ["/pages/0/sections/3/body"];
+    if (JSON.stringify(value.changedPaths) !== JSON.stringify(required)) throw new CursorWriterExecutionError("CURSOR_WRITER1_CORRECTION_V3_DIFF_INVALID", "Writer1 v3 correction changed more or fewer than the one allowed body pointer");
+  }
 }
 
 async function recoverCursorWriterCorrectionInternal(input: CursorWriterCorrectionInternalInput): Promise<CursorWriterCorrectionResult> {
@@ -1500,18 +1546,28 @@ async function recoverCursorWriterCorrectionInternal(input: CursorWriterCorrecti
     const binding = baselineBinding(input.baseline); validateGithubBaselineBinding(binding, binding, !input.baselineFixture);
     if (input.baseline.sealedHandoffDigest !== prior.sealedHandoffDigest || input.baseline.bytes.length !== input.baseline.size || artifactSha256(input.baseline.bytes) !== input.baseline.rawSha256 || digestOf(input.baseline.output) !== input.baseline.outputDigest || Buffer.from(input.baseline.raw, "utf8").compare(input.baseline.bytes) !== 0) throw new CursorWriterExecutionError("CURSOR_GITHUB_BASELINE_INVALID", "Writer1 v2 baseline bytes, parsed output, or sealed handoff binding changed before vendor access");
   }
+  if (input.correctionVersion === "words-writer1-correction/v3") {
+    if (!input.sourceArtifact) throw new CursorWriterExecutionError("CURSOR_WRITER1_CORRECTION_V3_SOURCE_REQUIRED", "Writer1 correction v3 requires the exact quarantined before-copy");
+    const source = input.sourceArtifact;
+    const binding = quarantineSourceBinding(source);
+    validateWriter1CorrectionV3SourceBinding(binding, binding, !input.sourceArtifactFixture);
+    if (source.agentId !== prior.agentId || source.bytes.length !== source.size || artifactSha256(source.bytes) !== source.rawDigest || Buffer.from(source.raw, "utf8").compare(source.bytes) !== 0 || digestOf(source.output) !== source.outputDigest) throw new CursorWriterExecutionError("CURSOR_WRITER1_CORRECTION_V3_SOURCE_INVALID", "Writer1 v3 source bytes, parsed output, or digest binding changed before dispatch");
+    if (!input.sourceArtifactFixture && (source.runId !== "run-1686013d-dec5-454c-a39e-5817448e6a96" || source.agentId !== prior.agentId)) throw new CursorWriterExecutionError("CURSOR_WRITER1_CORRECTION_V3_SOURCE_INVALID", "Writer1 v3 source is not bound to the original Cursor dispatch");
+  }
   const transport = input.transport || await officialCloudTransport();
   const artifactClient = input.artifactClient || transport.artifactClient || createCursorArtifactClient();
   const correctionVersion = input.correctionVersion || "words-writer1-correction/v1";
   if (correctionVersion === "words-writer1-correction/v2" && !input.baseline) throw new CursorWriterExecutionError("CURSOR_GITHUB_BASELINE_REQUIRED", "Writer1 correction v2 requires the verified immutable GitHub baseline");
   const selection = resolveCursorModelSelection(await transport.listModels(env.CURSOR_API_KEY), requestedModel);
   if (selection.officialId !== OFFICIAL_CURSOR_MODEL || selection.params.some((item) => item.id === "fast" && item.value !== "false")) throw new CursorWriterExecutionError("CURSOR_WRITER1_CORRECTION_MODEL_INVALID", "Writer1 correction requires grok-4.6 with effort high and fast=false");
-  const promptDigest = digestOf(input.prompt); const key = `${prior.agentId}:writer1:correction:${correctionVersion.endsWith("/v2") ? "v2" : "v1"}:${prior.inputDigest}:${promptDigest}`;
+  const correctionKeyVersion = correctionVersion.endsWith("/v3") ? "v3" : correctionVersion.endsWith("/v2") ? "v2" : "v1";
+  const promptDigest = digestOf(input.prompt); const key = `${prior.agentId}:writer1:correction:${correctionKeyVersion}:${prior.inputDigest}:${promptDigest}`;
   const options = modelOptions(env.CURSOR_API_KEY, selection);
-  const request = { ...createRequest(options, input.prompt, key, prior.agentId), mode: "same-thread-correction", correctionVersion, sourceBranch: prior.sourceBranch, sourceSha: prior.sourceSha, sealedHandoffDigest: prior.sealedHandoffDigest, ...(input.baseline ? { githubBaseline: baselineBinding(input.baseline) } : {}) };
+  const request = { ...createRequest(options, input.prompt, key, prior.agentId), mode: "same-thread-correction", correctionVersion, sourceBranch: prior.sourceBranch, sourceSha: prior.sourceSha, sealedHandoffDigest: prior.sealedHandoffDigest, ...(input.baseline ? { githubBaseline: baselineBinding(input.baseline) } : {}), ...(input.sourceArtifact ? { quarantinedSource: quarantineSourceBinding(input.sourceArtifact) } : {}) };
   const requestDigest = digestOf(request);
   const expectedBaseline = input.baseline ? baselineBinding(input.baseline) : undefined;
-  const validateReceipt: (candidate: unknown) => asserts candidate is CursorWriterCorrectionReceipt = (candidate) => validateCursorWriterCorrectionReceipt(candidate, prior, promptDigest, env.CURSOR_API_KEY, expectedBaseline);
+  const expectedSource = input.sourceArtifact ? quarantineSourceBinding(input.sourceArtifact) : undefined;
+  const validateReceipt: (candidate: unknown) => asserts candidate is CursorWriterCorrectionReceipt = (candidate) => validateCursorWriterCorrectionReceipt(candidate, prior, promptDigest, env.CURSOR_API_KEY, expectedBaseline, expectedSource, input.expectedChangedPaths);
   const existing = await input.receiptStore.get(key);
   if (existing) {
     validateReceipt(existing);
@@ -1521,7 +1577,9 @@ async function recoverCursorWriterCorrectionInternal(input: CursorWriterCorrecti
     return { output: recovered.output, receipt: existing, threadUrl: existing.threadUrl, claim };
   }
   if (!input.receiptStore.tryClaim || !input.receiptStore.getClaim || !input.receiptStore.putClaim) throw new CursorWriterExecutionError("CURSOR_DISPATCH_CLAIM_REQUIRED", "Writer1 correction requires an atomic durable claim store");
-  const before = input.baseline
+  const before = input.sourceArtifact
+    ? (() => { const source = input.sourceArtifact!; const parsed = input.validateBeforeOutput ? input.validateBeforeOutput(source.raw) : source.output; if (digestOf(parsed) !== source.outputDigest) throw new CursorWriterExecutionError("CURSOR_WRITER1_CORRECTION_V3_SOURCE_INVALID", "Verified quarantined source output digest changed before dispatch"); return { output: parsed, raw: source.raw, bytes: source.bytes, artifact: quarantineSourceBinding(source) }; })()
+    : input.baseline
     ? (() => { const parsed = input.validateBeforeOutput ? input.validateBeforeOutput(input.baseline!.raw) : input.baseline!.output; if (digestOf(parsed) !== input.baseline!.outputDigest) throw new CursorWriterExecutionError("CURSOR_GITHUB_BASELINE_INVALID", "Verified GitHub baseline output digest changed before dispatch"); return { output: parsed, raw: input.baseline!.raw, bytes: input.baseline!.bytes, artifact: baselineBinding(input.baseline!) }; })()
     : await readWriter1Artifact({ client: artifactClient, agentId: prior.agentId, apiKey: env.CURSOR_API_KEY, validateOutput: input.validateBeforeOutput || ((raw) => JSON.parse(raw)) });
   const now = input.now || (() => new Date());
@@ -1553,10 +1611,11 @@ async function recoverCursorWriterCorrectionInternal(input: CursorWriterCorrecti
   if (after.artifact.byteDigest === before.artifact.byteDigest || ("updatedAt" in before.artifact && before.artifact.updatedAt && after.artifact.updatedAt && Date.parse(after.artifact.updatedAt) <= Date.parse(before.artifact.updatedAt))) throw new CursorWriterExecutionError("CURSOR_WRITER1_CORRECTION_ARTIFACT_STALE", "Writer1 correction did not produce a newer artifact");
   const diffErrors = validateWriter1CorrectionDiff(before.output, after.output); if (diffErrors.length > 0) throw new CursorWriterExecutionError("CURSOR_WRITER1_CORRECTION_DIFF_INVALID", `Writer1 correction changed frozen paths: ${diffErrors.join(", ")}`);
   const changedPaths = writer1CorrectionChangedPaths(before.output, after.output);
+  if (input.expectedChangedPaths && JSON.stringify(changedPaths) !== JSON.stringify([...input.expectedChangedPaths])) throw new CursorWriterExecutionError("CURSOR_WRITER1_CORRECTION_DIFF_INVALID", "Writer1 correction did not change exactly the expected paths");
   const banned = validateWriter1CorrectionBannedLanguage(after.output); if (banned.length > 0) throw new CursorWriterExecutionError("CURSOR_WRITER1_CORRECTION_BANNED_LANGUAGE", "Writer1 correction left unsupported or internal language in mutable prose", banned);
   const attestationSource = assertFastBound(options, [agent, run, result]); const effortAttestationSource = assertEffortBound(selection, [agent, run, result]);
-  const receipt = withReceiptIntegrityMac({ stage: "writer1", provider: CURSOR_PROVIDER, requestedModel: REQUIRED_CURSOR_MODEL, resolvedModel: OFFICIAL_CURSOR_MODEL, fast: false, jobId, agentId: prior.agentId, threadUrl: record.url, inputDigest: prior.inputDigest, promptDigest, outputDigest: digestOf(after.output), completedAt: now().toISOString(), status: "complete", output: after.output, requestDigest, createRequest: request, registryItem: selection.registryItem, registryDigest: selection.registryDigest, modelParams: selection.params, effort: "high", ...(selection.effortParameterId ? { effortParameterId: selection.effortParameterId } : {}), effortAttestationSource, attestationSource, apiVersion: API_VERSION, mode: "same-thread-correction", correctionVersion, correctionPrior: prior, correctionPromptDigest: promptDigest, artifact: after.artifact, recoveryRunId: jobId, beforeArtifact: before.artifact, afterArtifact: after.artifact, beforeOutput: before.output, beforeOutputDigest: digestOf(before.output), afterOutputDigest: digestOf(after.output), frozenDigest: writer1CorrectionFrozenDigest(before.output), changedPaths, changedPathsDigest: writer1CorrectionChangedPathsDigest(changedPaths), writer2Blocked: true, nextStage: null, ...(expectedBaseline ? { githubBaseline: expectedBaseline } : {}) } as unknown as CursorWriterCorrectionReceipt, env.CURSOR_API_KEY);
-  validateCursorWriterCorrectionReceipt(receipt, prior, promptDigest, env.CURSOR_API_KEY, expectedBaseline);
+  const receipt = withReceiptIntegrityMac({ stage: "writer1", provider: CURSOR_PROVIDER, requestedModel: REQUIRED_CURSOR_MODEL, resolvedModel: OFFICIAL_CURSOR_MODEL, fast: false, jobId, agentId: prior.agentId, threadUrl: record.url, inputDigest: prior.inputDigest, promptDigest, outputDigest: digestOf(after.output), completedAt: now().toISOString(), status: "complete", output: after.output, requestDigest, createRequest: request, registryItem: selection.registryItem, registryDigest: selection.registryDigest, modelParams: selection.params, effort: "high", ...(selection.effortParameterId ? { effortParameterId: selection.effortParameterId } : {}), effortAttestationSource, attestationSource, apiVersion: API_VERSION, mode: "same-thread-correction", correctionVersion, correctionPrior: prior, correctionPromptDigest: promptDigest, artifact: after.artifact, recoveryRunId: jobId, beforeArtifact: before.artifact, afterArtifact: after.artifact, beforeOutput: before.output, beforeOutputDigest: digestOf(before.output), afterOutputDigest: digestOf(after.output), frozenDigest: writer1CorrectionFrozenDigest(before.output), changedPaths, changedPathsDigest: writer1CorrectionChangedPathsDigest(changedPaths), writer2Blocked: true, nextStage: null, ...(expectedBaseline ? { githubBaseline: expectedBaseline } : {}), ...(expectedSource ? { correctionV3Source: expectedSource } : {}) } as unknown as CursorWriterCorrectionReceipt, env.CURSOR_API_KEY);
+  validateCursorWriterCorrectionReceipt(receipt, prior, promptDigest, env.CURSOR_API_KEY, expectedBaseline, expectedSource, input.expectedChangedPaths);
   await input.receiptStore.put(key, receipt); await input.receiptStore.putClaim(key, { ...activeClaim, agentId: prior.agentId, jobId, phase: "completed", heartbeatAt: now().toISOString() });
   return { output: after.output, receipt, threadUrl: record.url, claim: { ...activeClaim, agentId: prior.agentId, jobId, phase: "completed", heartbeatAt: now().toISOString() } };
 }
@@ -1575,6 +1634,13 @@ export async function recoverCursorWriterCorrectionV2(input: CursorWriterCorrect
   const transport = await officialCloudTransport();
   return recoverCursorWriterCorrectionInternal({ ...input, env: process.env, transport, artifactClient: createCursorArtifactClient(), correctionVersion: "words-writer1-correction/v2" });
 }
+/** Production v3 correction owns process.env, the official SDK, and the fixed Cursor artifact client. */
+export async function recoverCursorWriterCorrectionV3(input: CursorWriterCorrectionV3Input): Promise<CursorWriterCorrectionResult> {
+  const candidate = input as unknown as Record<string, unknown>;
+  if ("env" in candidate || "transport" in candidate || "artifactClient" in candidate || "sourceArtifactFixture" in candidate) throw new CursorWriterExecutionError("CURSOR_WRITER1_CORRECTION_SUBSTITUTION_FORBIDDEN", "Production Writer1 correction v3 does not accept caller-selected environment, Cursor seams, or fixture bypasses");
+  const transport = await officialCloudTransport();
+  return recoverCursorWriterCorrectionInternal({ ...input, env: process.env, transport, artifactClient: createCursorArtifactClient(), correctionVersion: "words-writer1-correction/v3" });
+}
 export async function recoverCursorWriterCorrectionForTest(input: CursorWriterCorrectionInternalInput): Promise<CursorWriterCorrectionResult> {
   if (process.env.NODE_ENV !== "test" && !process.execArgv.some((arg) => arg.includes("--test"))) throw new CursorWriterExecutionError("CURSOR_TEST_SEAM_FORBIDDEN", "Injected Writer1 correction seams are available only from the Node test boundary");
   return recoverCursorWriterCorrectionInternal(input);
@@ -1582,6 +1648,10 @@ export async function recoverCursorWriterCorrectionForTest(input: CursorWriterCo
 export async function recoverCursorWriterCorrectionV2ForTest(input: CursorWriterCorrectionInternalInput & { baseline: CursorGitHubBaselineInput }): Promise<CursorWriterCorrectionResult> {
   if (process.env.NODE_ENV !== "test" && !process.execArgv.some((arg) => arg.includes("--test"))) throw new CursorWriterExecutionError("CURSOR_TEST_SEAM_FORBIDDEN", "Injected Writer1 correction v2 seams are available only from the Node test boundary");
   return recoverCursorWriterCorrectionInternal({ ...input, correctionVersion: "words-writer1-correction/v2", baselineFixture: input.baselineFixture ?? true });
+}
+export async function recoverCursorWriterCorrectionV3ForTest(input: CursorWriterCorrectionInternalInput & { sourceArtifact: CursorWriterCorrectionV3Source }): Promise<CursorWriterCorrectionResult> {
+  if (process.env.NODE_ENV !== "test" && !process.execArgv.some((arg) => arg.includes("--test"))) throw new CursorWriterExecutionError("CURSOR_TEST_SEAM_FORBIDDEN", "Injected Writer1 correction seams are available only from the Node test boundary");
+  return recoverCursorWriterCorrectionInternal({ ...input, correctionVersion: "words-writer1-correction/v3", sourceArtifact: input.sourceArtifact, expectedChangedPaths: input.expectedChangedPaths || ["/pages/0/sections/3/body"] });
 }
 
 export type CursorArtifactRecoveryV3FinalizeInput = Omit<CursorArtifactRecoveryInput, "recoveryVersion" | "previousRecovery" | "previousRecoveryV2" | "prompt" | "validateOutput" | "validateBeforeOutput"> & {

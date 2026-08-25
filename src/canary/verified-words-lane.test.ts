@@ -4,7 +4,8 @@ import { mkdtemp, readFile, rm } from "node:fs/promises";
 import * as path from "node:path";
 import { tmpdir } from "node:os";
 import test from "node:test";
-import { EXPECTED_VERIFIED_CORRECTION, EXPECTED_VERIFIED_CORRECTION_V2, selectVerifiedWriter1Dispatch, validateControl as rawValidateControl } from "../../scripts/360-words-control.mjs";
+import { EXPECTED_VERIFIED_CORRECTION, EXPECTED_VERIFIED_CORRECTION_V2, EXPECTED_VERIFIED_CORRECTION_V3, selectVerifiedWriter1Dispatch, validateControl as rawValidateControl } from "../../scripts/360-words-control.mjs";
+import { digestWriter1QuarantineCorrectionV3Input, digestWriter1QuarantineCorrectionV3Prompt } from "../../scripts/360-words-recovery-prompt.mjs";
 import { validateSealed, writer1Projection } from "../../scripts/360-words-canary.js";
 import { VERIFIED_WRITER1_AGENT_ID, VERIFIED_WRITER1_PROMPT_DIGEST, VERIFIED_WRITER1_PROMPT_V2_DIGEST, validateVerifiedWriter1Control, validateVerifiedWriter1PostDispatchControl, validateVerifiedWriter1SealOnlyControl, verifyOriginalDispatchEvidence, runVerifiedWriter1Correction, verifyPinnedSealedManifestBytes, quarantineWriter1PostDispatchOutput, persistVerifiedWriterFailureSurface, VERIFIED_WRITER1_REJECTED_OUTPUT_PATH, VERIFIED_WRITER1_REJECTION_RECEIPT_PATH } from "../../scripts/360-words-verified.js";
 import { digestOf } from "../../src/contracts/digests.js";
@@ -64,7 +65,7 @@ test("the top-level v2 verified wake shape is classified narrowly without broade
   const active: any = { ...control, wakeNonce: "W1-VERIFIED-20260825-V2-23B995", policy: { ...control.policy, mode: "writer1-correction" }, recovery: { ...EXPECTED_VERIFIED_CORRECTION_V2, sourceSha, inputDigest: "sha256:f4f59e9c645391266172892e4651f0da4ccedaa2bc86e35217a0ab8699fd0c1f", promptDigest: VERIFIED_WRITER1_PROMPT_V2_DIGEST, allowCreate: false, allowResume: true, allowFollowUp: true, maxFollowUps: 1, idempotencyKey: `${VERIFIED_WRITER1_AGENT_ID}:writer1:correction:v2:sha256:f4f59e9c645391266172892e4651f0da4ccedaa2bc86e35217a0ab8699fd0c1f:${VERIFIED_WRITER1_PROMPT_V2_DIGEST}` } };
   assert.deepEqual(rawValidateControl(active, { changedPaths: [".factory-wake/360-words-control.json"], actor: "architect", owner: "architect", commitSha: "95b83dc79c00de9f1e249b0d5fa0421a0928cd39", beforeSha: sourceSha, parentSha: sourceSha, verifiedLane: true }), { dormant: false, stage: "writer1", sourceSha });
   assert.throws(() => rawValidateControl({ ...active, policy: { ...active.policy, mode: "artifact-recovery" } }, { changedPaths: [".factory-wake/360-words-control.json"], actor: "architect", owner: "architect", commitSha: "95b83dc79c00de9f1e249b0d5fa0421a0928cd39", beforeSha: sourceSha, parentSha: sourceSha, verifiedLane: true }), /isolated verified lane/u);
-  assert.throws(() => rawValidateControl({ ...active, recovery: { ...active.recovery, correctionVersion: "words-writer1-correction/v3" } }, { changedPaths: [".factory-wake/360-words-control.json"], actor: "architect", owner: "architect", commitSha: "95b83dc79c00de9f1e249b0d5fa0421a0928cd39", beforeSha: sourceSha, parentSha: sourceSha, verifiedLane: true }), /isolated verified lane/u);
+  assert.throws(() => rawValidateControl({ ...active, recovery: { ...active.recovery, correctionVersion: "words-writer1-correction/v9" } }, { changedPaths: [".factory-wake/360-words-control.json"], actor: "architect", owner: "architect", commitSha: "95b83dc79c00de9f1e249b0d5fa0421a0928cd39", beforeSha: sourceSha, parentSha: sourceSha, verifiedLane: true }), /isolated verified lane/u);
   assert.throws(() => rawValidateControl({ ...active, recovery: { recoveryVersion: "words-writer1-artifact-recovery/v2", sourceSha } }, { changedPaths: [".factory-wake/360-words-control.json"], actor: "architect", owner: "architect", commitSha: "95b83dc79c00de9f1e249b0d5fa0421a0928cd39", beforeSha: sourceSha, parentSha: sourceSha, verifiedLane: true }), /isolated verified lane/u);
 });
 
@@ -79,7 +80,7 @@ test("the bounded workflow dispatches the exact verified wake to the verified ru
     { ...v2, recovery: { ...v2.recovery, correctionVersion: "" } },
     { ...v2, recovery: { ...v2.recovery, correctionVersion: "unknown" } },
     { ...v2, policy: { ...v2.policy, mode: "artifact-recovery" } },
-    { ...v2, recovery: { ...v2.recovery, correctionVersion: "words-writer1-correction/v3" } },
+    { ...v2, recovery: { ...v2.recovery, correctionVersion: "words-writer1-correction/v9" } },
     { ...v2, policy: { ...v2.policy, mode: "validation-only" }, recovery: { recoveryVersion: "words-writer1-artifact-recovery/v3" } },
     { ...v2, policy: { ...v2.policy, mode: "validation-report-only" }, recovery: { recoveryVersion: "words-writer1-artifact-recovery/v3-finalize" } },
   ]) assert.equal(selectVerifiedWriter1Dispatch(invalid), "unsupported-verified-lane");
@@ -90,6 +91,23 @@ test("the bounded workflow dispatches the exact verified wake to the verified ru
   assert.match(workflow, /scripts\/360-words-verified\.ts --writer1-correction-v2/u);
   assert.doesNotMatch(workflow, /scripts\/360-words-canary\.ts --artifact-recovery/u);
   assert.match(workflow, /Unsupported verified-lane Writer1 dispatch/u);
+});
+
+test("exact quarantined Writer1 correction-v3 wake is classified and bound without broadening legacy modes", () => {
+  const control = JSON.parse(readFileSync(path.join(root, ".factory-wake/360-words-control.json"), "utf8"));
+  const sourceSha = "e".repeat(40);
+  const inputDigest = digestWriter1QuarantineCorrectionV3Input(String(EXPECTED_VERIFIED_CORRECTION_V3.sealedHandoffDigest));
+  const promptDigest = digestWriter1QuarantineCorrectionV3Prompt();
+  const recovery: any = { ...EXPECTED_VERIFIED_CORRECTION_V3, sourceSha, inputDigest, promptDigest, allowCreate: false, allowResume: true, allowFollowUp: true, maxFollowUps: 1, idempotencyKey: `${EXPECTED_VERIFIED_CORRECTION_V3.agentId}:writer1:correction:v3:${inputDigest}:${promptDigest}` };
+  const active: any = { ...control, wakeNonce: "W1-VERIFIED-20260825-V3-QUARANTINE", policy: { ...control.policy, mode: "writer1-correction", stopAfter: "awaiting-architect-qa", approvedRoutes: ["/", "/garage-door-repair", "/garage-door-installation", "/contact"] }, recovery };
+  assert.equal(selectVerifiedWriter1Dispatch(active), "verified-writer1-correction-v3");
+  assert.deepEqual(rawValidateControl(active, { changedPaths: [".factory-wake/360-words-control.json"], actor: "architect", owner: "architect", commitSha: "f".repeat(40), beforeSha: sourceSha, parentSha: sourceSha, verifiedLane: true }), { dormant: false, stage: "writer1", sourceSha });
+  const tampered = { ...active, recovery: { ...recovery, sourceArtifact: { ...recovery.sourceArtifact, rawDigest: "sha256:" + "0".repeat(64) } } };
+  assert.equal(selectVerifiedWriter1Dispatch(tampered), "verified-writer1-correction-v3");
+  assert.throws(() => rawValidateControl(tampered, { changedPaths: [".factory-wake/360-words-control.json"], actor: "architect", owner: "architect", commitSha: "f".repeat(40), beforeSha: sourceSha, parentSha: sourceSha, verifiedLane: true }), /v3 wake/u);
+  assert.throws(() => rawValidateControl({ ...active, recovery: { ...recovery, promptDigest: "sha256:" + "0".repeat(64) } }, { changedPaths: [".factory-wake/360-words-control.json"], actor: "architect", owner: "architect", commitSha: "f".repeat(40), beforeSha: sourceSha, parentSha: sourceSha, verifiedLane: true }), /v3 wake/u);
+  const workflow = readFileSync(path.join(root, ".github/workflows/architect-360-words-canary.yml"), "utf8");
+  assert.match(workflow, /verified-writer1-correction-v3/u); assert.match(workflow, /scripts\/360-words-verified\.ts --writer1-correction-v3/u);
 });
 
 test("post-dispatch wake is classified as retrieval-only and cannot reach a follow-up or legacy artifact runner", () => {

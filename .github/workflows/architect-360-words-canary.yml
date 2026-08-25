@@ -104,6 +104,36 @@ jobs:
           test "$CURSOR_MODEL" = "cursor-grok-4.6-high"
           test "$CURSOR_FAST" = "false"
 
+      - name: Download and verify exact quarantined Writer1 correction-v3 source
+        if: steps.control.outputs.dormant != 'true' && steps.control.outputs.recovery_version == 'words-writer1-correction/v3'
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          EXPECTED_ACTION_RUN_ID: '32838242891'
+          EXPECTED_ARTIFACT_ID: '9559472540'
+          EXPECTED_ARTIFACT_ZIP_DIGEST: 'sha256:455c10d5928ee64d0d27d5f86eb80f63bd21dd811f601f6666f2c5b878eae824'
+          EXPECTED_RAW_PATH: 'quarantine/writer1-rejected-output.txt'
+          EXPECTED_RAW_DIGEST: 'sha256:1e2d5cabca16346f960b7bd893d2af1adf8dc6d453da926f7012711ae45ca0dd'
+          EXPECTED_RAW_SIZE: '22468'
+        run: |
+          set -euo pipefail
+          metadata="$(gh api "repos/${GITHUB_REPOSITORY}/actions/artifacts/${EXPECTED_ARTIFACT_ID}")"
+          test "$(jq -r '.id' <<<"$metadata")" = "$EXPECTED_ARTIFACT_ID"
+          test "$(jq -r '.workflow_run.id' <<<"$metadata")" = "$EXPECTED_ACTION_RUN_ID"
+          test "$(jq -r '.digest' <<<"$metadata")" = "$EXPECTED_ARTIFACT_ZIP_DIGEST"
+          run="$(gh api "repos/${GITHUB_REPOSITORY}/actions/runs/${EXPECTED_ACTION_RUN_ID}")"
+          test "$(jq -r '.id' <<<"$run")" = "$EXPECTED_ACTION_RUN_ID"
+          test "$(jq -r '.head_branch' <<<"$run")" = 'architect/360-words-canary-verified'
+          mkdir -p canary/inputs/writer1-correction-v3-artifact
+          gh api "repos/${GITHUB_REPOSITORY}/actions/artifacts/${EXPECTED_ARTIFACT_ID}/zip" > canary/inputs/writer1-correction-v3.zip
+          test "sha256:$(sha256sum canary/inputs/writer1-correction-v3.zip | cut -d ' ' -f 1)" = "$EXPECTED_ARTIFACT_ZIP_DIGEST"
+          unzip -q canary/inputs/writer1-correction-v3.zip -d canary/inputs/writer1-correction-v3-artifact
+          test "$(unzip -Z1 canary/inputs/writer1-correction-v3.zip | LC_ALL=C sort)" = "$EXPECTED_RAW_PATH"
+          source_file="canary/inputs/writer1-correction-v3-artifact/$EXPECTED_RAW_PATH"
+          test -f "$source_file"
+          test "$(wc -c < "$source_file" | tr -d ' ')" = "$EXPECTED_RAW_SIZE"
+          test "sha256:$(sha256sum "$source_file" | cut -d ' ' -f 1)" = "$EXPECTED_RAW_DIGEST"
+
       - name: Download and verify exact prior Writer1 dispatch artifact
         if: steps.control.outputs.dormant != 'true' && (steps.control.outputs.recovery_version == 'words-writer1-artifact-recovery/v2' || steps.control.outputs.recovery_version == 'words-writer1-artifact-recovery/v3')
         shell: bash
@@ -290,11 +320,14 @@ jobs:
           WRITER1_POST_DISPATCH_ROOT: canary/inputs/post-dispatch-artifact
           WRITER1_POST_DISPATCH_ZIP: canary/inputs/post-dispatch.zip
           WRITER1_POST_DISPATCH_SEAL_ROOT: canary/inputs/post-dispatch-seal-artifact
+          WRITER1_CORRECTION_V3_SOURCE_ROOT: canary/inputs/writer1-correction-v3-artifact
         run: |
           if [ "${{ steps.dispatch_mode.outputs.mode }}" = 'verified-writer1-seal-only' ]; then
             node --import tsx scripts/360-words-verified.ts --writer1-seal-only
           elif [ "${{ steps.dispatch_mode.outputs.mode }}" = 'verified-writer1-correction-v2' ]; then
             node --import tsx scripts/360-words-verified.ts --writer1-correction-v2
+          elif [ "${{ steps.dispatch_mode.outputs.mode }}" = 'verified-writer1-correction-v3' ]; then
+            node --import tsx scripts/360-words-verified.ts --writer1-correction-v3
           elif [ "${{ steps.dispatch_mode.outputs.mode }}" = 'verified-writer1-retrieval-only' ]; then
             node --import tsx scripts/360-words-verified.ts --writer1-retrieval-only
           elif [ "${{ steps.dispatch_mode.outputs.mode }}" = 'verified-writer1-correction-v1' ]; then
