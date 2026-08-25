@@ -14,6 +14,7 @@ function main(env = process.env) {
     branch: required(env.FACTORY_BRANCH, 'FACTORY_BRANCH'),
     reviewedHeadSha: required(env.FACTORY_REVIEWED_HEAD_SHA, 'FACTORY_REVIEWED_HEAD_SHA'),
     scope: required(env.FACTORY_DISPATCH_SCOPE, 'FACTORY_DISPATCH_SCOPE'),
+    repository: required(env.FACTORY_REPOSITORY, 'FACTORY_REPOSITORY'),
   });
   if (!Number.isInteger(packet.issueNumber) || !Number.isInteger(packet.prNumber)) throw new Error('dispatch issue/PR numbers must be integers');
   const output = path.resolve(env.FACTORY_DISPATCH_OUTPUT || 'canary/outputs/cursor-dispatch.json');
