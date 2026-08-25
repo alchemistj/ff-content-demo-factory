@@ -11,7 +11,7 @@ permissions:
   pull-requests: read
 
 concurrency:
-  group: factory-cursor-resume-${{ github.event.issue.number }}
+  group: factory-cursor-handoff-${{ github.event.issue.number }}
   cancel-in-progress: false
 
 jobs:
@@ -47,7 +47,11 @@ jobs:
           test -n "$phase_run"
           gh run download "$phase_run" --repo "$GITHUB_REPOSITORY" --name "current-head-gate1-canary-$phase_run" --dir canary/phase-a
           test -f canary/phase-a/current-head-gate1-pending.json
-      - name: Claim this terminal result once and collect its trusted receipt
+          dispatch_run="$(cut -f3 canary/phase-a/dispatch.tsv | sed -n 's/^Dispatch workflow run: //p' | tail -1)"
+          test -n "$dispatch_run"
+          gh run download "$dispatch_run" --repo "$GITHUB_REPOSITORY" --name "cursor-cloud-agent-dispatch-$dispatch_run" --dir canary/phase-a/dispatch
+          test -s canary/phase-a/dispatch/dispatch-cas.json
+      - name: Claim this terminal result with durable CAS before comment lookup
         env:
           GH_TOKEN: ${{ github.token }}
           ISSUE_NUMBER: ${{ github.event.issue.number }}
@@ -57,10 +61,11 @@ jobs:
           COMMENT_BODY: ${{ github.event.comment.body }}
         run: |
           handoff_id="$(sed -n 's/^Handoff ID: //p' canary/phase-a/dispatch.tsv | tail -1)"
+          test -n "$handoff_id"
+          CAS_FILE=canary/phase-a/dispatch/dispatch-cas.json HANDOFF_KEY="$handoff_id" RESULT_ID="$COMMENT_ID" node -e "const {claimResumeAtomic}=require('./src/factory/handoff');claimResumeAtomic(process.env.CAS_FILE,process.env.HANDOFF_KEY,process.env.RESULT_ID)"
           comments="$(gh api --paginate "repos/$GITHUB_REPOSITORY/issues/$ISSUE_NUMBER/comments?per_page=100" --jq '.[] | .body')"
           if printf '%s\n' "$comments" | grep -Fq "Factory resume claimed: $handoff_id"; then
-            echo "resume already claimed for $handoff_id"
-            exit 0
+            echo "resume claim marker is already present; durable CAS is authoritative"
           fi
           printf '%s' "$COMMENT_BODY" > canary/phase-a/cursor-terminal-comment.md
           node src/collect-cursor-terminal-result.js canary/phase-a/current-head-gate1-pending.json canary/phase-a/cursor-terminal-comment.md canary/phase-a/cursor-terminal-result.json "$AUTHOR_LOGIN" "$COMMENT_ID" "$COMMENT_URL"
@@ -99,5 +104,23 @@ jobs:
         with:
           name: cursor-cloud-agent-resume-${{ github.run_id }}
           path: canary/phase-a
+          if-no-files-found: error
+          retention-days: 30
+      - name: Require phase-B proof before successful completion
+        if: success()
+        run: |
+          test -s canary/phase-b/cursor-bundle.json
+          test -s canary/outputs/current-head-gate1-proof.json
+          test -s canary/outputs/gate1.md
+          test -s canary/state/factory-state.json
+      - name: Upload phase-B proof
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: cursor-cloud-agent-phase-b-${{ github.run_id }}
+          path: |
+            canary/outputs/current-head-gate1-proof.json
+            canary/outputs/gate1.md
+            canary/state/factory-state.json
           if-no-files-found: error
           retention-days: 30
