@@ -1,6 +1,6 @@
 {
   "schemaVersion": "words-canary-control/v1",
-  "wakeNonce": "DORMANT",
+  "wakeNonce": "W1-VERIFIED-20260825-FINAL-72F3",
   "requestedBy": "architect",
   "stage": "writer1",
   "runId": "32717620900",
@@ -19,6 +19,22 @@
     "fast": false,
     "provider": "cursor-sdk",
     "model": "cursor-grok-4.6-high",
-    "stopAfter": "awaiting-architect-qa"
+    "stopAfter": "awaiting-architect-qa",
+    "mode": "writer1-correction",
+    "recovery": {
+      "correctionVersion": "words-writer1-correction/v1",
+      "sourceBranch": "architect/360-words-canary-verified",
+      "agentId": "bc-2486f645-c31c-4532-8145-fbe3af1d45a8",
+      "threadUrl": "https://cursor.com/agents/bc-2486f645-c31c-4532-8145-fbe3af1d45a8",
+      "inputDigest": "sha256:aefca24b7fb0f2260cb32beabe81797c9d64cbb5dec4baee7e3252119e1c483b",
+      "sealedHandoffDigest": "sha256:715f651a53055444b8381dd8a276a2046d93776c61d88a2193cc2d42a1c83ad6",
+      "sourceSha": "72f3e11363d293916c1fab8c6908695d161aec5d",
+      "promptDigest": "sha256:9d4dcfc89a2967556d92b531a64676d34a3aa3e36451377a5c3680d08281f3eb",
+      "allowCreate": false,
+      "allowResume": true,
+      "allowFollowUp": true,
+      "maxFollowUps": 1,
+      "idempotencyKey": "bc-2486f645-c31c-4532-8145-fbe3af1d45a8:writer1:correction:v1:sha256:aefca24b7fb0f2260cb32beabe81797c9d64cbb5dec4baee7e3252119e1c483b:sha256:9d4dcfc89a2967556d92b531a64676d34a3aa3e36451377a5c3680d08281f3eb"
+    }
   }
 }
