@@ -5,9 +5,10 @@ import * as fs from "node:fs/promises";
 import * as os from "node:os";
 import * as path from "node:path";
 import test from "node:test";
-import { ARTIFACT_RECOVERY_ACTION_RUN_ID, ARTIFACT_RECOVERY_AGENT_ID, ARTIFACT_RECOVERY_ARTIFACT_ID, ARTIFACT_RECOVERY_PRIOR_RUN_ID, ARTIFACT_RECOVERY_SOURCE_BRANCH, ARTIFACT_RECOVERY_THREAD_URL, ARTIFACT_RECOVERY_V1_ACTION_RUN_ID, ARTIFACT_RECOVERY_V1_AGENT_ID, ARTIFACT_RECOVERY_V1_ARTIFACT_ID, ARTIFACT_RECOVERY_V1_ARTIFACT_DIGEST, ARTIFACT_RECOVERY_V1_RUN_ID, ARTIFACT_RECOVERY_V1_SOURCE_SHA, ARTIFACT_RECOVERY_V1_THREAD_URL, WRITER1_ARTIFACT_RECOVERY_PROMPT, WRITER1_ARTIFACT_RECOVERY_V2_PROMPT, WRITER1_ARTIFACT_RECOVERY_V3_PROMPT, validatePriorArtifactRecoveryDispatch, validatePriorArtifactRecoveryFailure, validateSealed, dispatchReceipt, run, writer1Projection } from "../../scripts/360-words-canary.js";
+import { ARTIFACT_RECOVERY_ACTION_RUN_ID, ARTIFACT_RECOVERY_AGENT_ID, ARTIFACT_RECOVERY_ARTIFACT_ID, ARTIFACT_RECOVERY_PRIOR_RUN_ID, ARTIFACT_RECOVERY_SOURCE_BRANCH, ARTIFACT_RECOVERY_THREAD_URL, ARTIFACT_RECOVERY_V1_ACTION_RUN_ID, ARTIFACT_RECOVERY_V1_AGENT_ID, ARTIFACT_RECOVERY_V1_ARTIFACT_ID, ARTIFACT_RECOVERY_V1_ARTIFACT_DIGEST, ARTIFACT_RECOVERY_V1_RUN_ID, ARTIFACT_RECOVERY_V1_SOURCE_SHA, ARTIFACT_RECOVERY_V1_THREAD_URL, WRITER1_ARTIFACT_RECOVERY_PROMPT, WRITER1_ARTIFACT_RECOVERY_V2_PROMPT, WRITER1_ARTIFACT_RECOVERY_V3_PROMPT, validatePriorArtifactRecoveryDispatch, validatePriorArtifactRecoveryFailure, validateSealed, dispatchReceipt, run, writer1HistoricalInputDigest, writer1Projection } from "../../scripts/360-words-canary.js";
 import { EXPECTED_RECOVERY, EXPECTED_RECOVERY_V2, EXPECTED_RECOVERY_V3, EXPECTED_RECOVERY_V3_FINALIZE, validateControl } from "../../scripts/360-words-control.mjs";
 import { buildWriter1ArtifactRecoveryPrompt, digestWriter1ArtifactRecoveryPrompt } from "../../scripts/360-words-recovery-prompt.mjs";
+import { digestOf } from "../../src/contracts/digests.js";
 
 const root = path.resolve(process.cwd());
 const routes = ["/", "/garage-door-repair", "/garage-door-installation", "/contact"];
@@ -60,6 +61,17 @@ test("Writer1 receives only two service projections, service evidence, and bound
   assert.equal(JSON.stringify(input).includes("listingReviewCount"), false);
   assert.equal("source" in input, false);
   assert.equal("prospect" in input, false);
+});
+
+test("historical v3 input digest stays 3ce242 while the richer runtime projection has an explicit new digest", () => {
+  const raw = rawHandoff();
+  const input = writer1Projection(validateSealed(root, { raw, value: JSON.parse(raw.toString("utf8")) }));
+  const historical = "sha256:3ce24295a62cc863e6023b57ada26b0b88019b86e397e9c8e0ee98d1a612eda6";
+  assert.equal(writer1HistoricalInputDigest(input), historical);
+  assert.notEqual(digestOf(input), historical);
+  const spring = input.foldedSupport.find((entry: Record<string, any>) => entry.id === "garage-door-spring-replacement");
+  assert.equal(spring.status, "folded");
+  assert.equal(spring.reviewEvidence[1].judgment.directCompletedService, true);
 });
 
 test("dormant control exits before provider validation or dispatch", async () => {

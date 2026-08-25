@@ -9,6 +9,7 @@ import { buildWriter1ArtifactRecoveryPrompt, digestWriter1ArtifactRecoveryPrompt
 const DORMANT_NONCE = "DORMANT";
 const ROUTES = ["/", "/garage-door-repair", "/garage-door-installation", "/contact"] as const;
 const WRITER1_ROUTES = ["/garage-door-repair", "/garage-door-installation"] as const;
+const SPRING_REPLACEMENT_REVIEW_ID = "Ci9DQUlRQUNvZENodHljRjlvT2taQlh6VlZabU5OWjFKc2JISklTa1pXUlVwVGVuYxAB";
 export const PRIOR_ACTION_RUN_ID = "32776170549";
 export const PRIOR_ARTIFACT_ID = 9539302493;
 export const PRIOR_CURSOR_AGENT_ID = "bc-972b63b0-6e43-4c76-805d-b95a0ba13da8";
@@ -76,6 +77,40 @@ export class Writer1OutputRecoveryError extends Error {
 }
 
 function invalidWriter1Output(message: string): never { throw new Writer1OutputRecoveryError("WRITER1_OUTPUT_INVALID", message); }
+
+/**
+ * v3 was dispatched with a projection that did not yet expose the runtime
+ * folded-entry status or per-review direct-completion attestation. The sealed
+ * history remains bound to that exact input. Keep this compatibility digest
+ * explicit; new dispatches may bind the complete runtime projection digest.
+ */
+export function writer1HistoricalInputDigest(projection: Dict): string {
+  const legacy = structuredClone(projection) as Dict;
+  legacy.services = (legacy.services || []).map((service: Dict) => ({
+    ...service,
+    reviewEvidence: (service.reviewEvidence || []).map((evidence: Dict) => {
+      const judgment = evidence.judgment || {};
+      const { directCompletedService: _directCompletedService, ...withoutDirectCompletion } = judgment;
+      return { ...evidence, judgment: withoutDirectCompletion };
+    }),
+  }));
+  legacy.foldedSupport = (legacy.foldedSupport || []).map((entry: Dict) => {
+    const { status: _status, ...withoutStatus } = entry;
+    return {
+      ...withoutStatus,
+      reviewEvidence: (entry.reviewEvidence || []).map((evidence: Dict) => {
+        const judgment = evidence.judgment || {};
+        const { directCompletedService: _directCompletedService, ...withoutDirectCompletion } = judgment;
+        return { ...evidence, judgment: withoutDirectCompletion };
+      }),
+    };
+  });
+  return digestOf(legacy);
+}
+
+function writer1InputDigestMatches(inputDigest: unknown, projection: Dict): boolean {
+  return inputDigest === digestOf(projection) || inputDigest === writer1HistoricalInputDigest(projection);
+}
 
 export function validatePriorWriter1Artifact(root: string, expected = { actionRunId: PRIOR_ACTION_RUN_ID, artifactId: PRIOR_ARTIFACT_ID, agentId: PRIOR_CURSOR_AGENT_ID, jobId: PRIOR_CURSOR_RUN_ID, outputDigest: PRIOR_OUTPUT_DIGEST, threadUrl: PRIOR_CURSOR_THREAD_URL }): { receipt: CursorWriterReceipt; bindings: CursorFollowUpBindings } {
   const receipt = JSON.parse(readFileSync(path.join(root, "runtime/writer1-receipt.json"), "utf8")) as CursorWriterReceipt;
@@ -148,7 +183,7 @@ export function parseAndValidateWriter1Output(raw: unknown, projection: Dict): D
   // and list the review ID in both its direct and supporting ledgers.
   for (const service of projection.services || []) {
     const targetCanonicalServiceId = String(service.comparison?.canonicalServiceId || service.page.url.slice(1));
-    const folded = (projection.foldedSupport || []).filter((entry: Dict) => entry.status === "folded" && entry.canonicalServiceId === targetCanonicalServiceId && entry.supportingEvidence?.allowedParentCanonicalId === targetCanonicalServiceId);
+    const folded = (projection.foldedSupport || []).filter((entry: Dict) => entry.status === "folded" && entry.canonicalServiceId === targetCanonicalServiceId && entry.foldedInto === targetCanonicalServiceId && entry.supportingEvidence?.allowedParentCanonicalId === targetCanonicalServiceId);
     const foldedEvidence = folded.flatMap((entry: Dict) => {
       const directIds = new Set((Array.isArray(entry.directEvidenceReviewIds) ? entry.directEvidenceReviewIds : []).filter((id: unknown): id is string => stringValue(id)));
       const supportingIds = new Set((Array.isArray(entry.supportingEvidence?.reviewIds) ? entry.supportingEvidence.reviewIds : []).filter((id: unknown): id is string => stringValue(id)));
@@ -188,7 +223,8 @@ export function parseAndValidateWriter1Output(raw: unknown, projection: Dict): D
         if (!stringValue(reviewId) || !stringValue(quote)) invalidWriter1Output("Writer1 review binding requires review ID and quote");
         if (String(stableRef) !== String(reviewId)) invalidWriter1Output("Writer1 review provenance ref must equal its stable review reference");
         const source = allowed.find((entry) => String(entry.review?.id ?? entry.review?.reviewId) === String(reviewId));
-        if (!source || source.judgment?.authoritative !== true) invalidWriter1Output(`Writer1 review binding references an unapproved or non-authoritative review: ${reviewId}`);
+        if (reviewId === SPRING_REPLACEMENT_REVIEW_ID && page.url !== "/garage-door-repair") invalidWriter1Output(`Spring-replacement review is authorized only on /garage-door-repair: ${reviewId}`);
+        if (!source || source.judgment?.authoritative !== true || source.judgment?.decision !== "anchor" || source.judgment?.grade !== "anchor" || source.judgment?.directCompletedService !== true) invalidWriter1Output(`Writer1 review binding references an unapproved, non-authoritative, or non-direct-completed review: ${reviewId}`);
         const sourceText = String(source.review?.text ?? source.review?.exactText ?? source.review?.reviewText ?? "");
         if (!sourceText || !normalized(sourceText).includes(normalized(String(quote)))) invalidWriter1Output(`Writer1 quote is not bound to the source review: ${reviewId}`);
         if (!stringValue(placement.attribution ?? placement.reviewer ?? placement.author)) invalidWriter1Output(`Writer1 review binding is missing attribution: ${reviewId}`);
@@ -275,7 +311,7 @@ function reviewEvidence(handoff: Dict, ids: unknown): Dict[] {
   return (Array.isArray(ids) ? ids : []).map((id) => String(id)).map((id) => {
     const review = packet.get(id); const judgment = judgments.get(id);
     if (!review || !judgment) throw new Error(`sealed Writer1 evidence references unknown review ${id}`);
-    return { review, judgment: { id, decision: judgment.authoritativeJudgment?.decision, authoritative: judgment.authoritativeJudgment?.authoritative, grade: judgment.grade } };
+    return { review, judgment: { id, decision: judgment.authoritativeJudgment?.decision, authoritative: judgment.authoritativeJudgment?.authoritative, grade: judgment.grade, directCompletedService: judgment.authoritativeJudgment?.directCompletedService } };
   });
 }
 export function writer1Projection(sealed: { handoff: Dict; manifest: Dict; ledger: Dict; bridge: Dict }): Dict {
@@ -289,7 +325,7 @@ export function writer1Projection(sealed: { handoff: Dict; manifest: Dict; ledge
     const prescriptionId = String(page.id ?? page.canonicalIntentId);
     return { page, prescriptionId, comparison: { id: comparison.id, name: comparison.name, directCompletedEvidenceCount: comparison.directCompletedEvidenceCount, directEvidenceReviewIds: comparison.directEvidenceReviewIds, canonicalServiceId: comparison.canonicalServiceId, canonicalIntentId: comparison.canonicalIntentId, destination: comparison.destination }, ledger: { id: ledger.id, name: ledger.name, reviewIds: ledger.reviewIds, currentSitePageUrls: ledger.currentSitePageUrls, provenance: ledger.provenance, siteAuditCoverage: ledger.siteAuditCoverage }, reviewEvidence: reviewEvidence(handoff, comparison.directEvidenceReviewIds) };
   });
-  const foldedSupport = (handoff.candidateServices || []).filter((entry: Dict) => entry.status === "folded" && WRITER1_ROUTES.some((route) => route.slice(1) === entry.canonicalServiceId)).map((entry: Dict) => ({ id: entry.id, canonicalServiceId: entry.canonicalServiceId, foldedInto: entry.foldedInto, directCompletedEvidenceCount: entry.directCompletedEvidenceCount, directEvidenceReviewIds: entry.directEvidenceReviewIds, supportingEvidence: entry.supportingEvidence, reviewEvidence: reviewEvidence(handoff, entry.directEvidenceReviewIds) }));
+  const foldedSupport = (handoff.candidateServices || []).filter((entry: Dict) => entry.status === "folded" && WRITER1_ROUTES.some((route) => route.slice(1) === entry.canonicalServiceId)).map((entry: Dict) => ({ status: entry.status, id: entry.id, canonicalServiceId: entry.canonicalServiceId, foldedInto: entry.foldedInto, directCompletedEvidenceCount: entry.directCompletedEvidenceCount, directEvidenceReviewIds: entry.directEvidenceReviewIds, supportingEvidence: entry.supportingEvidence, reviewEvidence: reviewEvidence(handoff, entry.directEvidenceReviewIds) }));
   const sealedRefs = [...new Set([
     ...services.flatMap((service: Dict) => [service.prescriptionId, service.page.id, service.page.canonicalIntentId, service.comparison.id, service.comparison.canonicalServiceId, service.comparison.canonicalIntentId, ...(service.comparison.directEvidenceReviewIds || []), ...(service.ledger.reviewIds || []), ...(service.ledger.siteAuditCoverage?.crawlRefs || []), ...(service.ledger.provenance?.siteAuditUrls || []), ...service.reviewEvidence.map((entry: Dict) => entry.review.id), ...service.reviewEvidence.map((entry: Dict) => entry.judgment.id)]),
     ...foldedSupport.flatMap((entry: Dict) => [entry.id, entry.canonicalServiceId, ...(entry.directEvidenceReviewIds || []), ...(entry.supportingEvidence?.reviewIds || []), ...entry.reviewEvidence.map((review: Dict) => review.review.id)]),
@@ -381,7 +417,7 @@ async function runArtifactRecoveryV3(root: string, control: Dict): Promise<{ sta
   const sealed = validateSealed(root);
   const payload = writer1Projection(sealed);
   const prior = validatePriorArtifactRecoveryDispatch(priorRoot, { actionRunId: ARTIFACT_RECOVERY_ACTION_RUN_ID, artifactId: ARTIFACT_RECOVERY_ARTIFACT_ID, agentId: ARTIFACT_RECOVERY_AGENT_ID, jobId: ARTIFACT_RECOVERY_PRIOR_RUN_ID, threadUrl: ARTIFACT_RECOVERY_THREAD_URL, sourceBranch: ARTIFACT_RECOVERY_SOURCE_BRANCH, sourceSha: recoveryPins.sourceSha });
-  if (prior.inputDigest !== ARTIFACT_RECOVERY_V3_INPUT_DIGEST || prior.inputDigest !== digestOf(payload) || (prior.sealedHandoffDigest && prior.sealedHandoffDigest !== sealed.handoff.resealDigest)) throw new Error("prior Writer1 dispatch is not bound to the exact v3 sealed input");
+  if (prior.inputDigest !== ARTIFACT_RECOVERY_V3_INPUT_DIGEST || !writer1InputDigestMatches(prior.inputDigest, payload) || (prior.sealedHandoffDigest && prior.sealedHandoffDigest !== sealed.handoff.resealDigest)) throw new Error("prior Writer1 dispatch is not bound to the exact v3 sealed input");
   const previousRecoveryV2 = validatePriorArtifactRecoveryV2Failure(priorRecoveryV2Root);
   const expectedKey = `${previousRecoveryV2.runId}:writer1:artifact-recovery:v3:${prior.inputDigest}:${v3PromptDigest}`;
   if (previousRecoveryV2.agentId !== prior.agentId || previousRecoveryV2.threadUrl !== prior.threadUrl || previousRecoveryV2.inputDigest !== prior.inputDigest || recoveryPins.idempotencyKey !== expectedKey) throw new Error("v3 recovery idempotency or failed-v2 binding is invalid");
@@ -409,7 +445,7 @@ async function runArtifactRecoveryV3Finalize(root: string, control: Dict): Promi
   const sealed = validateSealed(root);
   const payload = writer1Projection(sealed);
   const verified = validatePriorArtifactRecoveryV3Failure(latestRoot);
-  if (verified.prior.inputDigest !== digestOf(payload) || (verified.prior.sealedHandoffDigest && verified.prior.sealedHandoffDigest !== sealed.handoff.resealDigest)) throw new Error("latest v3 failure is not bound to the current sealed 360 handoff");
+  if (!writer1InputDigestMatches(verified.prior.inputDigest, payload) || (verified.prior.sealedHandoffDigest && verified.prior.sealedHandoffDigest !== sealed.handoff.resealDigest)) throw new Error("latest v3 failure is not bound to the current sealed 360 handoff");
   verified.prior.sealedHandoffDigest = sealed.handoff.resealDigest;
   const previousRecoveryV3: CursorArtifactRecoveryV3FailureBinding = { recoveryVersion: ARTIFACT_RECOVERY_V3_RECOVERY_VERSION, actionRunId: verified.actionRunId, artifactId: verified.artifactId, artifactDigest: verified.artifactDigest, sourceBranch: verified.sourceBranch, sourceSha: verified.sourceSha, agentId: verified.agentId, runId: verified.runId, threadUrl: verified.threadUrl, promptDigest: verified.promptDigest, failureCode: verified.failureCode, inputDigest: verified.inputDigest, beforeArtifact: verified.beforeArtifact, copyProjectionDigest: verified.copyProjectionDigest };
   await writeJson(jsonFile(root, "canary/runtime/prior-recovery-v3-verification.json"), { status: "verified", previousRecoveryV3 });
@@ -447,7 +483,7 @@ export async function runArtifactRecovery(root = process.cwd()): Promise<{ statu
   const sealed = validateSealed(root);
   const payload = writer1Projection(sealed);
   const prior = validatePriorArtifactRecoveryDispatch(priorRoot, { actionRunId: ARTIFACT_RECOVERY_ACTION_RUN_ID, artifactId: ARTIFACT_RECOVERY_ARTIFACT_ID, agentId: ARTIFACT_RECOVERY_AGENT_ID, jobId: ARTIFACT_RECOVERY_PRIOR_RUN_ID, threadUrl: ARTIFACT_RECOVERY_THREAD_URL, sourceBranch: ARTIFACT_RECOVERY_SOURCE_BRANCH, sourceSha: recoveryPins.sourceSha });
-  if (prior.inputDigest !== digestOf(payload) || (prior.sealedHandoffDigest && prior.sealedHandoffDigest !== sealed.handoff.resealDigest)) throw new Error("prior Writer1 dispatch is not bound to the current sealed 360 handoff");
+  if (!writer1InputDigestMatches(prior.inputDigest, payload) || (prior.sealedHandoffDigest && prior.sealedHandoffDigest !== sealed.handoff.resealDigest)) throw new Error("prior Writer1 dispatch is not bound to the current sealed 360 handoff");
   const previousRecovery = validatePriorArtifactRecoveryFailure(priorRecoveryRoot);
   if (previousRecovery.agentId !== prior.agentId || previousRecovery.threadUrl !== prior.threadUrl || previousRecovery.promptDigest !== v1PromptDigest || recoveryPins.idempotencyKey !== `${previousRecovery.runId}:writer1:artifact-recovery:v2:${prior.inputDigest}:${v2PromptDigest}`) throw new Error("v2 recovery idempotency or previous v1 recovery binding is invalid");
   await writeJson(jsonFile(root, "canary/runtime/prior-dispatch-verification.json"), { status: "verified", prior });

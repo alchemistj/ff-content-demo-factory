@@ -1,11 +1,11 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { parseAndValidateFreshWriter1Output, parseAndValidateWriter1Output, Writer1OutputRecoveryError } from "../../scripts/360-words-canary.js";
+import { parseAndValidateFreshWriter1Output, parseAndValidateWriter1Output, validateSealed, writer1Projection, Writer1OutputRecoveryError } from "../../scripts/360-words-canary.js";
 
 const projection = {
   services: [
-    { page: { url: "/garage-door-repair" }, prescriptionId: "prescription-repair", comparison: { canonicalServiceId: "garage-door-repair" }, reviewEvidence: [{ review: { id: "review-repair", text: "The repair was excellent." }, judgment: { authoritative: true } }] },
-    { page: { url: "/garage-door-installation" }, prescriptionId: "prescription-install", comparison: { canonicalServiceId: "garage-door-installation" }, reviewEvidence: [{ review: { id: "review-install", text: "The installation was excellent." }, judgment: { authoritative: true } }] },
+    { page: { url: "/garage-door-repair" }, prescriptionId: "prescription-repair", comparison: { canonicalServiceId: "garage-door-repair" }, reviewEvidence: [{ review: { id: "review-repair", text: "The repair was excellent." }, judgment: { authoritative: true, decision: "anchor", grade: "anchor", directCompletedService: true } }] },
+    { page: { url: "/garage-door-installation" }, prescriptionId: "prescription-install", comparison: { canonicalServiceId: "garage-door-installation" }, reviewEvidence: [{ review: { id: "review-install", text: "The installation was excellent." }, judgment: { authoritative: true, decision: "anchor", grade: "anchor", directCompletedService: true } }] },
   ],
   sealedRefs: ["prescription-repair", "prescription-install", "review-repair", "review-install"],
 };
@@ -24,9 +24,10 @@ const foldedProjection = {
   foldedSupport: [{
     status: "folded",
     canonicalServiceId: "garage-door-repair",
+    foldedInto: "garage-door-repair",
     directEvidenceReviewIds: [springReplacementReviewId],
     supportingEvidence: { allowedParentCanonicalId: "garage-door-repair", reviewIds: [springReplacementReviewId] },
-    reviewEvidence: [{ review: { id: springReplacementReviewId, text: "The spring replacement was excellent." }, judgment: { authoritative: true } }],
+    reviewEvidence: [{ review: { id: springReplacementReviewId, text: "The spring replacement was excellent." }, judgment: { authoritative: true, decision: "anchor", grade: "anchor", directCompletedService: true } }],
   }],
 };
 const withSpringReplacementReview = (route = "/garage-door-repair") => {
@@ -82,7 +83,7 @@ test("fresh Writer1 rejects summaries, absent copy, route leakage, and missing p
 
 test("folded spring-replacement evidence is authorized only on the repair page", () => {
   assert.doesNotThrow(() => parseAndValidateWriter1Output(withSpringReplacementReview(), foldedProjection));
-  assert.throws(() => parseAndValidateWriter1Output(withSpringReplacementReview("/garage-door-installation"), foldedProjection), /unapproved/u);
+  assert.throws(() => parseAndValidateWriter1Output(withSpringReplacementReview("/garage-door-installation"), foldedProjection), /Spring-replacement|unapproved/u);
   assert.throws(() => parseAndValidateWriter1Output(withSpringReplacementReview(), { ...foldedProjection, foldedSupport: [{ ...foldedProjection.foldedSupport[0], canonicalServiceId: "garage-door-installation" }] }), /unapproved/u);
   assert.throws(() => parseAndValidateWriter1Output(withSpringReplacementReview(), { ...foldedProjection, foldedSupport: [{ ...foldedProjection.foldedSupport[0], supportingEvidence: { allowedParentCanonicalId: "garage-door-installation", reviewIds: [springReplacementReviewId] } }] }), /unapproved/u);
   assert.throws(() => parseAndValidateWriter1Output(withSpringReplacementReview(), { ...foldedProjection, foldedSupport: [{ ...foldedProjection.foldedSupport[0], supportingEvidence: { allowedParentCanonicalId: "garage-door-repair", reviewIds: ["sealed-but-not-approved"] } }] }), /unapproved/u);
@@ -92,4 +93,61 @@ test("sealed but non-authoritative direct reviews remain rejected", () => {
   const nonAuthoritative = structuredClone(projection) as Record<string, any>;
   nonAuthoritative.services[0].reviewEvidence[0].judgment.authoritative = false;
   assert.throws(() => parseAndValidateWriter1Output(valid, nonAuthoritative), /non-authoritative/u);
+});
+
+const realSealed = validateSealed(process.cwd());
+const realProjection = writer1Projection(realSealed);
+const realSpring = realProjection.foldedSupport.find((entry: Record<string, any>) => entry.id === "garage-door-spring-replacement");
+const realSpringReview = realSpring.reviewEvidence.find((entry: Record<string, any>) => entry.review.id === springReplacementReviewId);
+const realInstallationFolded = realProjection.foldedSupport.find((entry: Record<string, any>) => entry.id === "garage-door-replacement");
+const realInstallationReview = realInstallationFolded.reviewEvidence[0];
+
+function realWriter1Output(projection: Record<string, any>, repairReview: Record<string, any> = realProjection.services[0].reviewEvidence[0], installationReview: Record<string, any> = realProjection.services[1].reviewEvidence[0]): string {
+  return JSON.stringify({
+    schemaVersion: "words-writer1-output/v1",
+    pages: projection.services.map((service: Record<string, any>, index: number) => {
+      const entry = index === 0 ? repairReview : installationReview;
+      const section = `${service.page.url.slice(1)}-test-section`;
+      return { type: "service", url: service.page.url, prescriptionId: service.prescriptionId, primaryKeyword: `${service.page.url.slice(1)} test`, title: "Test title", seoTitle: "Test SEO title", metaDescription: "Test meta description", h1: "Test heading", body: "Test body", sections: [{ id: section, heading: "Test section", body: "Test section body" }], reviewPlacements: [{ reviewId: entry.review.id, quote: entry.review.text.slice(0, 32), attribution: entry.review.author, provenance: { type: "review", ref: entry.review.id, placement: "test quotation", section } }] };
+    }),
+  });
+}
+
+test("real 360 projection preserves folded authority ledgers and only authorizes spring replacement on repair", () => {
+  assert.equal(realSpring.status, "folded");
+  assert.equal(realSpring.canonicalServiceId, "garage-door-repair");
+  assert.equal(realSpring.foldedInto, "garage-door-repair");
+  assert.equal(realSpring.supportingEvidence.allowedParentCanonicalId, "garage-door-repair");
+  assert.ok(realSpring.directEvidenceReviewIds.includes(springReplacementReviewId));
+  assert.ok(realSpring.supportingEvidence.reviewIds.includes(springReplacementReviewId));
+  assert.deepEqual(realSpringReview.judgment, { id: springReplacementReviewId, decision: "anchor", authoritative: true, grade: "anchor", directCompletedService: true });
+  assert.doesNotThrow(() => parseAndValidateWriter1Output(realWriter1Output(realProjection, realSpringReview), realProjection));
+  assert.throws(() => parseAndValidateWriter1Output(realWriter1Output(realProjection, realSpringReview, realSpringReview), realProjection), /Spring-replacement|unapproved/u);
+});
+
+test("real folded guards reject status, folded target, parent, ledger, and arbitrary sealed mismatches", () => {
+  for (const mutation of [
+    { status: "passed-over" },
+    { foldedInto: "garage-door-installation" },
+    { supportingEvidence: { ...realSpring.supportingEvidence, allowedParentCanonicalId: "garage-door-installation" } },
+    { supportingEvidence: { ...realSpring.supportingEvidence, reviewIds: [] } },
+  ]) {
+    const mutated = structuredClone(realProjection) as Record<string, any>;
+    Object.assign(mutated.foldedSupport.find((entry: Record<string, any>) => entry.id === realSpring.id), mutation);
+    assert.throws(() => parseAndValidateWriter1Output(realWriter1Output(mutated, realSpringReview), mutated), /unapproved/u);
+  }
+  assert.throws(() => parseAndValidateWriter1Output(realWriter1Output(realProjection, realInstallationReview), realProjection), /unapproved/u);
+});
+
+test("real supporting and not-applicable reviews cannot become quoted proof", () => {
+  const handoff = realSealed.handoff as Record<string, any>;
+  const rejected = (handoff.reviewInventory.classification.reviews as Record<string, any>[]).filter((entry) => ["supporting", "not-applicable"].includes(entry.grade)).slice(0, 2);
+  assert.equal(rejected.length, 2);
+  for (const candidate of rejected) {
+    const evidence = { review: { id: candidate.id, author: candidate.sourceReview.author, text: candidate.sourceReview.text }, judgment: { id: candidate.id, decision: candidate.authoritativeJudgment.decision, authoritative: candidate.authoritativeJudgment.authoritative, grade: candidate.grade, directCompletedService: candidate.authoritativeJudgment.directCompletedService } };
+    const injected = structuredClone(realProjection) as Record<string, any>;
+    injected.services[0].reviewEvidence.push(evidence);
+    injected.sealedRefs.push(candidate.id);
+    assert.throws(() => parseAndValidateWriter1Output(realWriter1Output(injected, evidence), injected), /unapproved|non-authoritative|non-direct/u);
+  }
 });
