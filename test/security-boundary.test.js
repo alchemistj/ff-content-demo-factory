@@ -38,6 +38,10 @@ test('Cursor research prompts preserve read-only, no-copy/build/deploy, and no-G
     const prompt = researchPrompt(kind, { probe: 'security-test' });
     assert.match(prompt, /read-only research worker/i); assert.match(prompt, /Do not write, edit, create, delete/i); assert.match(prompt, /Do not open branches or pull requests, deploy, build a client, generate copy/i); assert.match(prompt, /Do not scrape Google, Google Maps, or GBP/i);
   }
+  const pagePrompt = researchPrompt('page-prescription', { probe: 'security-test' });
+  assert.match(pagePrompt, /exactly four business pages/i);
+  assert.match(pagePrompt, /serviceCoverageLedger/);
+  assert.match(pagePrompt, /Strategy Overview is internal/);
 });
 
 test('operator/canary examples contain no secret values', () => {

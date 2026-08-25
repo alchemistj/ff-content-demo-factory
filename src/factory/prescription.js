@@ -1,4 +1,4 @@
-const { STANDARD_PRESCRIPTION_POLICY, validatePagePolicy, assertNoServiceAliasCollisions, serviceIdentity, serviceTerm, canonicalServiceId, canonicalizeServiceCandidates, digest } = require('./prescription-policy');
+const { STANDARD_PRESCRIPTION_POLICY, validatePagePolicy, assertNoServiceAliasCollisions, serviceIdentity, serviceTerm, canonicalServiceId, canonicalizeServiceCandidates, digest, selectStandardBusinessPages } = require('./prescription-policy');
 
 function normalizeClassification(classification) {
   if (!classification || !Array.isArray(classification.reviews)) throw new Error('authoritative review classification is required');
@@ -109,6 +109,9 @@ function prescribe({ finalist, inventory, classification, services, proposedPage
   const pages = (proposedPages || []).map((page) => ({ ...page }));
   const ledger = serviceLedger || sourceBinding?.serviceLedger || null;
   const valueHierarchy = compareServices(services, inventory.classified, pages, ledger);
+  if (!override && pages.filter((page) => page.type === 'Service').length > STANDARD_PRESCRIPTION_POLICY.servicePageCount) {
+    pages.splice(0, pages.length, ...selectStandardBusinessPages(pages, valueHierarchy, ledger));
+  }
   const evidenceDigest = digest({ classification: inventory.classified, valueHierarchy, serviceLedger: ledger || null });
   const pageCheck = validateProposedPages(pages, inventory.classified, valueHierarchy, { policy, override, runContext, sourceBinding, serviceLedger: ledger, evidenceDigest });
   if (pageCheck.errors.length) throw new Error(`Prescription validation failed: ${pageCheck.errors.join('; ')}`);

@@ -105,6 +105,59 @@ test('composition caches completed finalist enrichment and does not make a secon
   assert.equal(enrichCalls, 1);
 });
 
+test('production prescription builds a canonical ledger and keeps four pages when Cursor omits the ledger', async () => {
+  const root = setup();
+  const extraPage = {
+    type: 'Service', service: 'surge-protection', url: '/surge-protection', primaryKeyword: 'surge protection electrician',
+    titleDirection: 'Surge Protection', h1Direction: 'Surge protection grounded in evidence', angle: 'Evidence-led surge work',
+    whyIncluded: 'A written review documents completed surge protection work.', overlapBoundaries: 'Do not overlap with EV charging.',
+    claims: ['Completed surge protection evidence'], traps: [], strongestEvidence: 'r3',
+  };
+  const cursor = {
+    async runResearchRecord({ kind, jobId }) {
+      if (kind !== 'page-prescription') throw new Error(`unexpected kind ${kind}`);
+      return {
+        receipt: { provider: 'cursor-sdk', jobId, status: 'completed', resolvedModel: 'grok-4.6', runId: 'run-page-1' },
+        result: {
+          kind,
+          pages: [...fullPages(), extraPage],
+          comparison: {
+            candidates: [
+              { id: 'ev-charging', name: 'EV Charging', includedPage: true, pageUrl: '/ev-charging', directCompletedEvidenceCount: 1, status: 'prescribed' },
+              { id: 'panel-upgrade', name: 'Panel upgrade', includedPage: true, pageUrl: '/panel-upgrade', directCompletedEvidenceCount: 1, status: 'prescribed' },
+              { id: 'surge-protection', name: 'Surge protection', includedPage: true, pageUrl: '/surge-protection', directCompletedEvidenceCount: 1, status: 'prescribed' },
+              { id: 'electrical', name: 'Electrical', includedPage: false, directCompletedEvidenceCount: 2, status: 'passed-over' },
+            ],
+          },
+        },
+      };
+    },
+  };
+  const adapters = createProductionAdapters({ root, apify: { async discoverCandidates() { return { candidates: [] }; }, async enrichFinalist() { throw new Error('not used'); } }, cursor });
+  const review = { id: 'r1', source: 'apify-finalist', author: 'A', rating: 5, date: '2026-01-01', text: 'Installed my EV charger.' };
+  const review2 = { id: 'r2', source: 'apify-finalist', author: 'B', rating: 5, date: '2026-01-02', text: 'Repaired my panel.' };
+  const review3 = { id: 'r3', source: 'apify-finalist', author: 'C', rating: 5, date: '2026-01-03', text: 'Installed surge protection.' };
+  const finalist = { placeId: 'p1', prospectId: 'p1', runId: 'run-page-1', mapsUrl: 'https://www.google.com/maps/place/One', name: 'One Electric', location: 'Austin, TX', website: 'https://one.example' };
+  const judgment = { kind: 'review-judgment', reviewId: 'r1', authoritative: true, decision: 'anchor', directCompletedService: true, serviceEvidence: [{ service: 'ev-charging', excerpt: review.text }], judgmentId: 'j1', model: 'grok-4.6', provenance: { source: review.source, reviewId: 'r1' } };
+  const judgment2 = { ...judgment, reviewId: 'r2', judgmentId: 'j2', serviceEvidence: [{ service: 'panel-upgrade', excerpt: review2.text }], provenance: { source: review2.source, reviewId: 'r2' } };
+  const judgment3 = { ...judgment, reviewId: 'r3', judgmentId: 'j3', serviceEvidence: [{ service: 'surge-protection', excerpt: review3.text }], provenance: { source: review3.source, reviewId: 'r3' } };
+  const result = await adapters.prescriber.propose({
+    finalist,
+    inventory: {
+      exactPlace: true, discoverySampleOnly: false, dateWindow: null, requestedLimit: 50, listingReviewCount: 3,
+      reviews: [review, review2, review3],
+      classifications: { r1: judgment, r2: judgment2, r3: judgment3 },
+    },
+  });
+  assert.equal(result.proposal.status, 'prescribed');
+  assert.equal(result.proposal.pages.length, 4);
+  assert.equal(result.proposal.serviceCoverageLedger.version, 'canonical-service-coverage-ledger-v1');
+  assert.equal(result.proposal.serviceCoverageLedger.aliases.electrical, 'home-breadth');
+  assert.deepEqual(result.proposal.pages.filter((page) => page.type === 'Service').map((page) => page.service).sort(), ['ev-charging', 'panel-upgrade']);
+  assert.equal(result.proposal.pages.filter((page) => page.type === 'Home').length, 1);
+  assert.equal(result.proposal.pages.filter((page) => page.type === 'Contact').length, 1);
+});
+
 test('review judgment is authoritative, receipt-bound, and feeds validated evidence prescription', async () => {
   const root = setup();
   const cursor = cursorDouble();
