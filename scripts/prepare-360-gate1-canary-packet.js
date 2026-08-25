@@ -109,7 +109,10 @@ function main(options = {}) {
     checkedOutSha: currentHead,
     envelope,
     dispatchPacket: packet,
-    approvedLineage: { ...lineage, inputFiles, approval: handoff.approval, prospect: handoff.prospect, source: handoff.source },
+    // Carry the exact Josh-approved handoff into the runtime packet.  The
+    // production verifier reloads and revalidates these bytes before any
+    // vendor/Cursor work; a digest-only claim is not an authoritative input.
+    approvedLineage: { ...lineage, inputFiles, approval: handoff.approval, prospect: handoff.prospect, source: handoff.source, handoff },
     limitations: sealedReplayExecuted ? [
       'Rebound at sealed-evidence exact-head execution time; this is not live connector proof.',
       'No Cursor agent, vendor, production writing, or live cursor[bot] terminal/resume path was executed.',
