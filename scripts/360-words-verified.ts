@@ -11,6 +11,7 @@ import {
 import { digestOf } from "../src/contracts/digests.js";
 import { buildWriter1ArtifactRecoveryPrompt, digestWriter1ArtifactRecoveryPrompt } from "./360-words-recovery-prompt.mjs";
 import { parseAndValidateWriter1Output, validateSealed, writer1Projection } from "./360-words-canary.js";
+import { runVerifiedWriter2Production, runVerifiedWriter3Production } from "../src/pipeline/verified-words-stages.js";
 
 const DORMANT = "DORMANT";
 export const VERIFIED_BRANCH = "architect/360-words-canary-verified";
@@ -64,12 +65,34 @@ export async function runVerifiedWriter1Correction(root = process.cwd()): Promis
   return { status: "awaiting-architect-qa", stage: "writer1", threadUrl: result.threadUrl, correctionRunId: result.receipt.jobId };
 }
 
+/** Later-stage production entry point. It consumes only a signed external Writer1 QA approval and Cursor's Writer1 receipt. */
+export async function runVerifiedWriter2(root = process.cwd()): Promise<{ status: string; stage: string; threadUrl: string; runId: string }> {
+  const sealed = readJson(root, "canary/sealed/360-four-page-reseal-handoff.json");
+  const receipt = readJson(root, "canary/runtime/writer1-recovery-receipt.json");
+  const approval = readJson(root, "canary/runtime/architect-writer1-approval.json");
+  const result = await runVerifiedWriter2Production({ runId: `${sealed.handoff.runId}:writer2`, sealedHandoffDigest: String(sealed.resealDigest), writer1Receipt: receipt, writer1Approval: approval });
+  await writeJson(jsonFile(root, "canary/runtime/verified-writer2-receipt.json"), result.receipt);
+  await writeJson(jsonFile(root, "canary/outputs/verified-writer2.json"), result.output);
+  return { status: "awaiting-writer2-qa", stage: "writer2", threadUrl: result.threadUrl, runId: result.receipt.jobId };
+}
+
+/** Later-stage production entry point. It consumes only a signed external Writer2 QA approval and Cursor's Writer2 receipt. */
+export async function runVerifiedWriter3(root = process.cwd()): Promise<{ status: string; stage: string; threadUrl: string; runId: string }> {
+  const sealed = readJson(root, "canary/sealed/360-four-page-reseal-handoff.json");
+  const receipt = readJson(root, "canary/runtime/verified-writer2-receipt.json");
+  const approval = readJson(root, "canary/runtime/architect-writer2-approval.json");
+  const result = await runVerifiedWriter3Production({ runId: `${sealed.handoff.runId}:writer3`, sealedHandoffDigest: String(sealed.resealDigest), writer2Receipt: receipt, writer2Approval: approval });
+  await writeJson(jsonFile(root, "canary/runtime/verified-writer3-receipt.json"), result.receipt);
+  await writeJson(jsonFile(root, "canary/outputs/verified-writer3.json"), result.output);
+  return { status: "awaiting-writer3-qa", stage: "writer3", threadUrl: result.threadUrl, runId: result.receipt.jobId };
+}
+
 export function assertVerifiedReceiptMetadata(receipt: Dict): void {
   if (receipt.agentId !== VERIFIED_WRITER1_AGENT_ID || receipt.threadUrl !== VERIFIED_WRITER1_THREAD_URL || receipt.requestedModel !== "cursor-grok-4.6-high" || receipt.resolvedModel !== "grok-4.6" || receipt.effort !== "high" || receipt.fast !== false || !isDigest(receipt.inputDigest) || !isDigest(receipt.promptDigest) || !isDigest(receipt.outputDigest) || !receipt.integrityMac) throw new Error("verified stage requires direct Cursor receipt metadata and HMAC");
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) {
-  const operation = process.argv.includes("--writer1-correction") ? runVerifiedWriter1Correction() : Promise.resolve(runVerifiedWriter1Correction());
+  const operation = process.argv.includes("--writer2") ? runVerifiedWriter2() : process.argv.includes("--writer3") ? runVerifiedWriter3() : runVerifiedWriter1Correction();
   operation.then((result) => console.log(JSON.stringify(result))).catch(async (error) => {
     const code = error && typeof error === "object" && typeof (error as Dict).code === "string" ? (error as Dict).code : "VERIFIED_WRITER1_CORRECTION_FAILED";
     await writeJson(path.join(process.cwd(), "canary/runtime/failure.json"), { schemaVersion: "verified-writer-failure/v1", status: "failed", stage: "writer1", errorCode: code, writer2Blocked: true, nextStage: null, messagesSent: 0 });

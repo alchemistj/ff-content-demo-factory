@@ -32,6 +32,10 @@ jobs:
       - name: Validate Architect control file and changed-path boundary
         id: control
         shell: bash
+        env:
+          GITHUB_COMMIT_SHA: ${{ github.sha }}
+          GITHUB_EVENT_BEFORE: ${{ github.event.before }}
+          VERIFIED_LANE: 'true'
         run: |
           node scripts/360-words-control.mjs
 
@@ -221,10 +225,19 @@ jobs:
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         with:
-          name: 360-words-writer1-${{ github.run_id }}
+          name: 360-words-verified-writer1-${{ github.run_id }}
           path: |
-            canary/runtime
-            canary/outputs
+            canary/runtime/cursor-receipts.json
+            canary/runtime/dormant.json
+            canary/runtime/writer1-*.json
+            canary/runtime/verified-writer2-*.json
+            canary/runtime/verified-writer3-*.json
+            canary/runtime/verified-*.json
+            canary/runtime/failure.json
+            canary/runtime/state.json
+            canary/outputs/writer1-output.json
+            canary/outputs/verified-writer2.json
+            canary/outputs/verified-writer3.json
           if-no-files-found: error
           retention-days: 30
 

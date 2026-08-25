@@ -674,18 +674,21 @@ export const WRITER1_CORRECTION_VERSION = "words-writer1-correction/v1" as const
 export const WRITER1_CORRECTION_AGENT_ID = "bc-2486f645-c31c-4532-8145-fbe3af1d45a8" as const;
 export const WRITER1_CORRECTION_THREAD_URL = `https://cursor.com/agents/${WRITER1_CORRECTION_AGENT_ID}` as const;
 export const WRITER1_CORRECTION_BANNED_PATTERNS: ReadonlyArray<RegExp> = Object.freeze([
-  /spring\s+replacement\s+is\s+(?:the\s+)?most\s+common\s+related\s+failure/iu,
-  /Jenny\s+(?:will\s+)?schedule(?:s|d)?\s+(?:the\s+)?follow[- ]?up(?:\s+as\s+(?:a\s+)?general\s+process)?/iu,
-  /(?:the\s+)?(?:person|technician|one)\s+(?:who\s+)?diagnos(?:es|ing)\s+(?:the\s+)?(?:problem|door)\s+(?:is\s+)?(?:also\s+)?always\s+repair(?:s|ing)/iu,
-  /not\s+a\s+separate\s+add[- ]?on/iu,
+  /spring\s+replacement\s+(?:is\s+)?(?:the\s+|a\s+)?(?:most|frequent|common|most\s+frequent|most\s+common)\s+(?:related\s+)?failure(?:s)?/iu,
+  /Jenny\s+(?:will\s+)?(?:schedule|schedules|scheduled|coordinate|coordinates|coordinated)\s+(?:(?:the|a)\s+)?(?:follow[- ]?up|return\s+visit)(?:s)?/iu,
+  /(?:the\s+)?(?:same\s+)?(?:person|technician|one)\s+(?:who\s+)?(?:finds?|diagnos(?:es|ing)|identif(?:ies|ying))\s+(?:the\s+)?(?:problem|door|issue)\s+(?:is\s+)?(?:also\s+)?always\s+repair(?:s|ing)/iu,
+  /(?:the\s+)?same\s+(?:person|technician|one)\s+(?:who\s+)?(?:finds?|diagnos(?:es|ing)|identif(?:ies|ying))\s+(?:the\s+)?(?:problem|door|issue)\s+and\s+repair(?:s|ing)/iu,
+  /(?:not\s+)?a\s+separate\s+add[- ]?on|no\s+(?:extra|separate)\s+(?:charge|fee)|without\s+(?:an?\s+)?extra\s+(?:charge|fee)/iu,
   /(?:service[- ]level\s+(?:agreement|promise|commitment)|response[- ]time\s+(?:guarantee|promise|commitment|sla)|warranty\s+(?:claim|promise|slogan)|primary\s+proof\s+point|designated\s+destination)/iu,
   /(?:artifact|receipt|digest|handoff|prescription|inventory|provenance|canonical|validator|validation|\bqa\b|audit|cursor|grok|apify|luna|assignment|anchor|folded\s+evidence|passed[- ]over|review\s+record|evidence\s+ledger|review\s+analysis\s+methodolog(?:y|ies))/iu,
   /(?:this\s+page|the\s+page)\s+is\s+(?:built|based|generated)\s+from\s+(?:written\s+)?(?:reviews?|evidence)/iu,
   /(?:this\s+page|the\s+page)\s+is\s+based\s+on\s+(?:written\s+)?(?:reviews?|evidence)/iu,
+  /(?:this\s+page|this\s+section|the\s+page|the\s+section)\s+(?:reflects?|is\s+(?:based|built|generated)\s+from)\s+(?:the\s+)?(?:written\s+)?(?:reviews?|evidence)/iu,
   /(?:authoritative|written|sealed|retrieved)\s+reviews?/iu,
   /reviewers?\s+(?:describe|document|support|confirm)/iu,
   /(?:review|evidence|source)\s+record/iu,
   /we\s+(?:read|retrieved|analyzed|classified)\s+(?:the\s+)?reviews?/iu,
+  /we\s+(?:read|reviewed|analyzed)\s+(?:\d+\s+)?(?:Google\s+)?reviews?/iu,
   /not\s+a\s+response[- ]time\s+guarantee/iu,
 ]);
 function correctionMutablePath(pathValue: string): boolean { return /^\/pages\/\d+\/(?:body|sections\/\d+\/(?:heading|body))$/u.test(pathValue); }

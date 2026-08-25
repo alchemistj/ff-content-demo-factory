@@ -19,7 +19,7 @@ export const VERIFIED_STAGE_POLICY = Object.freeze({
   writer3: Object.freeze({ agentMode: "new-agent", allowedRoutes: Object.freeze([VERIFIED_WRITER3_INTERNAL_ROUTE]), fields: Object.freeze(["strategyOverview"]), sealedFacts: VERIFIED_WRITER3_SEALED_FACTS }),
 });
 
-type ApprovalStage = "writer1" | "writer2";
+export type ApprovalStage = "writer1" | "writer2" | "writer3";
 export interface SignedArchitectStageApproval {
   schemaVersion: "architect-stage-approval/v1";
   stage: ApprovalStage;
@@ -27,6 +27,7 @@ export interface SignedArchitectStageApproval {
   approvedBy: "architect";
   independentQaArtifactPath: string;
   independentQaArtifactDigest: string;
+  sealedHandoffDigest: string;
   receiptDigest: string;
   outputDigest: string;
   issuedAt: string;
@@ -41,11 +42,11 @@ function approvalSignature(value: SignedArchitectStageApproval, key: string): st
   const derived = createHmac("sha256", APPROVAL_DOMAIN).update(key, "utf8").digest();
   return `hmac-sha256:${createHmac("sha256", derived).update(unsignedApproval(value), "utf8").digest("hex")}`;
 }
-export function validateSignedArchitectStageApproval(value: unknown, stage: ApprovalStage, receipt: unknown, cursorApiKey: string): asserts value is SignedArchitectStageApproval {
+export function validateSignedArchitectStageApproval(value: unknown, stage: ApprovalStage, receipt: unknown, cursorApiKey: string, expectedSealedHandoffDigest?: string): asserts value is SignedArchitectStageApproval {
   if (!cursorApiKey) throw new Error("Architect stage approval verification requires the configured signing key");
   if (!value || typeof value !== "object" || Array.isArray(value)) throw new Error("Architect stage approval must be an object");
   const approval = value as SignedArchitectStageApproval;
-  if (approval.schemaVersion !== "architect-stage-approval/v1" || approval.stage !== stage || approval.decision !== "approve" || approval.approvedBy !== "architect" || !approval.independentQaArtifactPath || !/^sha256:[0-9a-f]{64}$/u.test(approval.independentQaArtifactDigest) || !/^sha256:[0-9a-f]{64}$/u.test(approval.receiptDigest) || !/^sha256:[0-9a-f]{64}$/u.test(approval.outputDigest) || !/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d{3}Z$/u.test(approval.issuedAt)) throw new Error("Architect stage approval is incomplete");
+  if (approval.schemaVersion !== "architect-stage-approval/v1" || approval.stage !== stage || approval.decision !== "approve" || approval.approvedBy !== "architect" || !/^(?:qa|architect\/qa|luna\/qa)\/[A-Za-z0-9._/-]+$/u.test(approval.independentQaArtifactPath) || !/^sha256:[0-9a-f]{64}$/u.test(approval.independentQaArtifactDigest) || !/^sha256:[0-9a-f]{64}$/u.test(approval.sealedHandoffDigest) || (expectedSealedHandoffDigest !== undefined && approval.sealedHandoffDigest !== expectedSealedHandoffDigest) || !/^sha256:[0-9a-f]{64}$/u.test(approval.receiptDigest) || !/^sha256:[0-9a-f]{64}$/u.test(approval.outputDigest) || !/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d{3}Z$/u.test(approval.issuedAt)) throw new Error("Architect stage approval is incomplete, not sealed, or not an independent QA artifact");
   validateCursorWriterReceipt(receipt, cursorApiKey);
   const signedReceipt = receipt as CursorWriterReceipt;
   if (approval.receiptDigest !== digestOf(signedReceipt) || approval.outputDigest !== signedReceipt.outputDigest || signedReceipt.stage !== stage || signedReceipt.requestedModel !== REQUIRED_CURSOR_MODEL || signedReceipt.resolvedModel !== OFFICIAL_CURSOR_MODEL || signedReceipt.effort !== "high" || signedReceipt.fast !== false) throw new Error("Architect stage approval is not bound to the direct Cursor receipt");

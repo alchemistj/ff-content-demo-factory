@@ -6,7 +6,7 @@ import * as os from "node:os";
 import * as path from "node:path";
 import test from "node:test";
 import { ARTIFACT_RECOVERY_ACTION_RUN_ID, ARTIFACT_RECOVERY_AGENT_ID, ARTIFACT_RECOVERY_ARTIFACT_ID, ARTIFACT_RECOVERY_PRIOR_RUN_ID, ARTIFACT_RECOVERY_SOURCE_BRANCH, ARTIFACT_RECOVERY_THREAD_URL, ARTIFACT_RECOVERY_V1_ACTION_RUN_ID, ARTIFACT_RECOVERY_V1_AGENT_ID, ARTIFACT_RECOVERY_V1_ARTIFACT_ID, ARTIFACT_RECOVERY_V1_ARTIFACT_DIGEST, ARTIFACT_RECOVERY_V1_RUN_ID, ARTIFACT_RECOVERY_V1_SOURCE_SHA, ARTIFACT_RECOVERY_V1_THREAD_URL, WRITER1_ARTIFACT_RECOVERY_PROMPT, WRITER1_ARTIFACT_RECOVERY_V2_PROMPT, WRITER1_ARTIFACT_RECOVERY_V3_PROMPT, validatePriorArtifactRecoveryDispatch, validatePriorArtifactRecoveryFailure, validateSealed, dispatchReceipt, run, writer1HistoricalInputDigest, writer1Projection } from "../../scripts/360-words-canary.js";
-import { EXPECTED_RECOVERY, EXPECTED_RECOVERY_V2, EXPECTED_RECOVERY_V3, EXPECTED_RECOVERY_V3_FINALIZE, validateControl } from "../../scripts/360-words-control.mjs";
+import { EXPECTED_RECOVERY, EXPECTED_RECOVERY_V2, EXPECTED_RECOVERY_V3, EXPECTED_RECOVERY_V3_FINALIZE, validateControl as rawValidateControl } from "../../scripts/360-words-control.mjs";
 import { buildWriter1ArtifactRecoveryPrompt, digestWriter1ArtifactRecoveryPrompt } from "../../scripts/360-words-recovery-prompt.mjs";
 import { digestOf } from "../../src/contracts/digests.js";
 
@@ -19,6 +19,13 @@ const v2PromptDigest = digestWriter1ArtifactRecoveryPrompt("v2");
 const v3PromptDigest = digestWriter1ArtifactRecoveryPrompt("v3");
 const v2IdempotencyKey = (inputDigest = "sha256:" + "1".repeat(64), promptDigest = v2PromptDigest) => `run-1b862d23-a748-4574-909a-66aac905eb97:writer1:artifact-recovery:v2:${inputDigest}:${promptDigest}`;
 const activeRecovery = (sourceSha: string, promptDigest = v2PromptDigest, idempotencyKey = v2IdempotencyKey()) => ({ ...EXPECTED_RECOVERY, ...EXPECTED_RECOVERY_V2, sourceSha, priorRecoveryPromptDigest: v1PromptDigest, promptDigest, idempotencyKey });
+const validateControl = (control: Record<string, any>, input: Record<string, any> = {}) => {
+  if (control.wakeNonce !== "DORMANT") {
+    const sourceSha = control.policy?.recovery?.sourceSha;
+    return rawValidateControl(control, { ...input, commitSha: "d".repeat(40), beforeSha: sourceSha, parentSha: sourceSha });
+  }
+  return rawValidateControl(control, input);
+};
 
 test("imports the exact PR3 handoff blob and preserves the four public routes", () => {
   const raw = rawHandoff();

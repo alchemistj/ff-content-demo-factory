@@ -61,7 +61,21 @@ test("verified correction freezes all non-mutable topology and recognizes only t
 });
 
 test("verified correction bans unsupported claims and internal language only in mutable prose; frozen quotes are exempt", () => {
-  for (const phrase of ["Spring replacement is the most common related failure.", "Jenny schedules follow-up as a general process.", "The person diagnosing the door is always repairing it.", "This is not a separate add-on.", "This page is based on evidence.", "The receipt digest is sealed.", "Authoritative written reviews support this."]) { const value: any = output(true); value.pages[0].body = phrase; assert.ok(validateWriter1CorrectionBannedLanguage(value).length > 0, phrase); }
+  for (const phrase of [
+    "Spring replacement is the most common related failure.",
+    "Spring replacement is the most frequent failure.",
+    "Spring replacement is a common related failure.",
+    "Jenny coordinates a return visit.",
+    "Jenny schedules follow-up visits.",
+    "The same technician finds the problem and repairs it.",
+    "This is not a separate add-on.",
+    "There is no extra charge or separate fee.",
+    "We reviewed 47 Google reviews.",
+    "This section reflects the reviews.",
+    "This page is based on evidence.",
+    "The receipt digest is sealed.",
+    "Authoritative written reviews support this.",
+  ]) { const value: any = output(true); value.pages[0].body = phrase; assert.ok(validateWriter1CorrectionBannedLanguage(value).length > 0, phrase); }
   const quote: any = output(true); quote.pages[0].quotes[0].quote = "The receipt digest is sealed."; assert.equal(validateWriter1CorrectionBannedLanguage(quote).length, 0);
 });
 

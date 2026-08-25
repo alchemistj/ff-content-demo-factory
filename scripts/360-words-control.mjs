@@ -87,8 +87,14 @@ export function validateControl(control, input = {}) {
   if (String(input.actor || "").toLowerCase() !== String(input.owner || "").toLowerCase()) throw new Error("active wake requires the repository owner Architect actor");
   const recovery = control.policy?.recovery;
   const isVerifiedCorrection = recovery?.correctionVersion === "words-writer1-correction/v1";
+  if (input.verifiedLane === true && !isVerifiedCorrection) throw new Error("isolated verified lane permits only its bounded Writer1 correction path");
   if (!recovery || (!isVerifiedCorrection && Object.entries(EXPECTED_RECOVERY).some(([key, value]) => recovery[key] !== value))) throw new Error("active artifact-recovery wake is missing the exact prior/run/source tuple");
   if (typeof recovery.sourceSha !== "string" || !/^[0-9a-f]{40}$/u.test(recovery.sourceSha)) throw new Error("active artifact-recovery wake requires an exact 40-hex sourceSha");
+  const commitSha = input.commitSha;
+  const beforeSha = input.beforeSha;
+  const parentSha = input.parentSha;
+  if (![commitSha, beforeSha, parentSha].every((value) => typeof value === "string" && /^[0-9a-f]{40}$/u.test(value))) throw new Error("active wake requires verified commit, event.before, and parent SHAs before secrets/vendor access");
+  if (beforeSha !== recovery.sourceSha || parentSha !== beforeSha || commitSha === beforeSha) throw new Error("active wake sourceSha must equal the exact dormant implementation parent/event.before");
   const v1PromptDigest = digestWriter1ArtifactRecoveryPrompt("v1");
   const v2PromptDigest = digestWriter1ArtifactRecoveryPrompt("v2");
   const v3PromptDigest = digestWriter1ArtifactRecoveryPrompt("v3");
@@ -105,7 +111,10 @@ export function validateControl(control, input = {}) {
 if (import.meta.url === `file://${process.argv[1]}`) {
   const control = JSON.parse(fs.readFileSync(CONTROL_PATH, "utf8"));
   const changedPaths = execFileSync("git", ["diff-tree", "--no-commit-id", "--name-only", "-r", `${process.env.GITHUB_SHA}^`, process.env.GITHUB_SHA], { encoding: "utf8" }).trim().split(/\n/u).filter(Boolean);
-  const result = validateControl(control, { changedPaths, actor: process.env.GITHUB_ACTOR, owner: process.env.GITHUB_REPOSITORY_OWNER });
+  const commitSha = process.env.GITHUB_COMMIT_SHA || process.env.GITHUB_SHA;
+  const beforeSha = process.env.GITHUB_EVENT_BEFORE;
+  const parentSha = execFileSync("git", ["rev-parse", `${commitSha}^`], { encoding: "utf8" }).trim();
+  const result = validateControl(control, { changedPaths, actor: process.env.GITHUB_ACTOR, owner: process.env.GITHUB_REPOSITORY_OWNER, commitSha, beforeSha, parentSha, verifiedLane: process.env.VERIFIED_LANE === "true" });
   const recoveryVersion = control.policy?.recovery?.recoveryVersion || "";
   const correctionVersion = control.policy?.recovery?.correctionVersion || "";
   fs.appendFileSync(process.env.GITHUB_OUTPUT, `dormant=${result.dormant}\nstage=${result.stage}\nrecovery_version=${recoveryVersion || correctionVersion}\n${result.sourceSha ? `source_sha=${result.sourceSha}\n` : ""}`);
