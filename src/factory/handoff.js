@@ -29,7 +29,7 @@ function envelopeFor({ dispatchPacket, inputManifest, runId, prospectId, sourceC
   };
 }
 
-function createPendingHandoff({ dispatchPacket, inputManifest, runId, prospectId, sourceCheckpointDigest, phaseARunId }) {
+function createPendingHandoff({ dispatchPacket, inputManifest, runId, prospectId, sourceCheckpointDigest, phaseARunId, inputFiles }) {
   const envelope = envelopeFor({ dispatchPacket, inputManifest, runId, prospectId, sourceCheckpointDigest });
   const pending = {
     schemaVersion: 'factory-cursor-handoff-v1',
@@ -40,6 +40,7 @@ function createPendingHandoff({ dispatchPacket, inputManifest, runId, prospectId
     dispatchPacket,
     artifact: { name: `current-head-gate1-canary-${phaseARunId}`, digest: digest({ envelope, dispatchPacket }) },
   };
+  if (inputFiles) pending.inputFiles = { request: required(inputFiles.request, 'handoff request input'), selection: required(inputFiles.selection, 'handoff selection input'), qa: required(inputFiles.qa, 'handoff QA input') };
   const unsigned = { ...pending, handoffId: undefined, handoffDigest: undefined };
   const handoffId = digest(unsigned);
   return { ...pending, handoffId, handoffDigest: digest({ ...unsigned, handoffId }) };
@@ -51,6 +52,7 @@ function validatePendingHandoff(pending, expected = {}) {
   if (pending.handoffId !== digest(unsigned) || pending.handoffDigest !== digest({ ...unsigned, handoffId: pending.handoffId })) throw new Error('Durable Cursor handoff digest is stale or invented');
   validateDispatchPacket(pending.dispatchPacket);
   if (!pending.artifact || pending.artifact.name !== `current-head-gate1-canary-${pending.phaseARunId}` || pending.artifact.digest !== digest({ envelope: pending.envelope, dispatchPacket: pending.dispatchPacket })) throw new Error('Durable Cursor handoff artifact identity or digest is stale');
+  if (pending.inputFiles) for (const field of ['request', 'selection', 'qa']) required(pending.inputFiles[field], `handoff ${field} input`);
   const envelope = pending.envelope;
   for (const field of ['jobId', 'checkedOutSha', 'inputManifestDigest', 'runId', 'prospectId', 'sourceCheckpointDigest', 'sourceArtifactDigest', 'sourceIdentityDigest', 'dispatchDigest', 'dispatchKey']) required(envelope?.[field], `handoff envelope ${field}`);
   if (pending.dispatchPacket.dispatchDigest !== envelope.dispatchDigest || pending.dispatchPacket.dispatchKey !== envelope.dispatchKey) throw new Error('Durable Cursor handoff dispatch binding is mismatched');
