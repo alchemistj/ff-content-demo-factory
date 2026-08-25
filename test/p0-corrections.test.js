@@ -242,7 +242,7 @@ test('ninth correction uses recoverable ledger states and exact immutable contex
     const text = fs.readFileSync(workflow, 'utf8');
     assert.match(text, /test -n "\$GH_TOKEN"/);
     if (workflow.endsWith('dispatch.yml')) assert.match(text, /status:'posted'/);
-    else { assert.match(text, /status: 'terminal'/); assert.match(text, /status:'resumed'/); }
+    else { assert.match(text, /status:'in_motion'/); assert.match(text, /status: 'terminal'/); assert.match(text, /status:'resumed'/); }
   }
 });
 
