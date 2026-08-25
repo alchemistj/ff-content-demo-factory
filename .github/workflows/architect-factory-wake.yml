@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - cursor/swifts-roofing-gate1-7605
     paths:
       - .factory-wake/control.json
 
