@@ -48,6 +48,7 @@ function validatePendingHandoff(pending, expected = {}) {
   const unsigned = { ...pending, handoffId: undefined, handoffDigest: undefined };
   if (pending.handoffId !== digest(unsigned) || pending.handoffDigest !== digest({ ...unsigned, handoffId: pending.handoffId })) throw new Error('Durable Cursor handoff digest is stale or invented');
   validateDispatchPacket(pending.dispatchPacket);
+  if (!pending.artifact || pending.artifact.name !== `current-head-gate1-canary-${pending.phaseARunId}` || pending.artifact.digest !== digest({ envelope: pending.envelope, dispatchPacket: pending.dispatchPacket })) throw new Error('Durable Cursor handoff artifact identity or digest is stale');
   const envelope = pending.envelope;
   for (const field of ['jobId', 'checkedOutSha', 'inputManifestDigest', 'runId', 'prospectId', 'sourceCheckpointDigest', 'sourceArtifactDigest', 'sourceIdentityDigest', 'dispatchDigest', 'dispatchKey']) required(envelope?.[field], `handoff envelope ${field}`);
   if (pending.dispatchPacket.dispatchDigest !== envelope.dispatchDigest || pending.dispatchPacket.dispatchKey !== envelope.dispatchKey) throw new Error('Durable Cursor handoff dispatch binding is mismatched');
