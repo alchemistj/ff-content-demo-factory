@@ -15,6 +15,7 @@ const { runCurrentHeadGate1Canary } = require('../src/run-gate1-canary');
 const fs = require('node:fs');
 const os = require('node:os');
 const path = require('node:path');
+const { spawn } = require('node:child_process');
 
 test('owned-domain provenance rejects missing candidate domains, file URLs, conflicts, and cross-domain evidence', () => {
   assert.throws(() => normalizeWebsiteAudit({ website: 'https://owned.example', evidence: [], images: [] }, {}), /candidate-owned website domain/);
@@ -253,4 +254,19 @@ test('seventh correction makes manual and automatic dispatch share CAS and fails
   assert.match(canary, /test -s canary\/outputs\/current-head-gate1-proof\.json|current-head-gate1-proof\.json/);
   assert.match(resume, /if-no-files-found: error/);
   assert.match(resume, /test -s canary\/outputs\/gate1\.md/);
+});
+
+test('seventh correction rejects a concurrent manual/automatic handoff claim at the shared CAS boundary', async () => {
+  const temp = fs.mkdtempSync(path.join(os.tmpdir(), 'factory-concurrent-cas-'));
+  const casFile = path.join(temp, 'shared-cas.json');
+  const script = "const {claimResumeAtomic}=require('./src/factory/handoff'); try { claimResumeAtomic(process.argv[1], 'shared-dispatch-key', process.argv[2]); process.exit(0); } catch (error) { process.stderr.write(error.message); process.exit(17); }";
+  const run = (resultId) => new Promise((resolve) => {
+    const child = spawn(process.execPath, ['-e', script, casFile, resultId], { cwd: process.cwd(), stdio: ['ignore', 'ignore', 'pipe'] });
+    let stderr = ''; child.stderr.on('data', (chunk) => { stderr += chunk; });
+    child.on('close', (code) => resolve({ code, stderr }));
+  });
+  const outcomes = await Promise.all([run('manual-dispatch'), run('automatic-dispatch')]);
+  assert.equal(outcomes.filter((outcome) => outcome.code === 0).length, 1);
+  assert.equal(outcomes.filter((outcome) => outcome.code === 17).length, 1);
+  assert.match(outcomes.find((outcome) => outcome.code === 17).stderr, /replay|lock/);
 });
