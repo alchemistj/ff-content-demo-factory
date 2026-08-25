@@ -1,4 +1,4 @@
-const { STANDARD_PRESCRIPTION_POLICY, validatePagePolicy, assertNoServiceAliasCollisions, serviceIdentity, serviceTerm, canonicalServiceId, canonicalizeServiceCandidates, digest } = require('./prescription-policy');
+const { STANDARD_PRESCRIPTION_POLICY, validatePagePolicy, validateSourceBinding, assertNoServiceAliasCollisions, serviceIdentity, serviceTerm, canonicalServiceId, canonicalizeServiceCandidates, digest } = require('./prescription-policy');
 
 function normalizeClassification(classification) {
   if (!classification || !Array.isArray(classification.reviews)) throw new Error('authoritative review classification is required');
@@ -61,6 +61,34 @@ function validateCollisions(pages) {
   return { valid: errors.length === 0, errors };
 }
 
+function claimText(claim) {
+  return typeof claim === 'string' ? claim : String(claim?.text || claim?.claim || '');
+}
+
+function claimEvidenceRefs(claim) {
+  return Array.isArray(claim?.evidenceRefs) ? claim.evidenceRefs.map(String).filter(Boolean) : [];
+}
+
+function validateClaimReferences(page, classified, serviceLedger) {
+  const rawClaims = page.claims == null ? [] : page.claims;
+  const rawProposedClaims = page.proposedClaims == null ? [] : page.proposedClaims;
+  if (!Array.isArray(rawClaims) || !Array.isArray(rawProposedClaims)) return ['claims and proposedClaims must be arrays'];
+  const claims = [...rawClaims, ...rawProposedClaims];
+  const known = new Set((classified || []).map((entry) => String(entry.id)));
+  for (const service of serviceLedger?.services || []) {
+    for (const id of service.reviewIds || []) known.add(String(id));
+    for (const id of service.siteAuditCoverage?.crawlRefs || []) known.add(String(id));
+  }
+  const errors = [];
+  for (const claim of claims) {
+    const text = claimText(claim).trim();
+    if (!text) { errors.push(`${page.type || page.service}: claim text is required`); continue; }
+    const refs = claimEvidenceRefs(claim);
+    if (!refs.length || refs.some((ref) => !known.has(ref))) errors.push(`${page.type || page.service}: every claim requires resolvable evidenceRefs`);
+  }
+  return errors;
+}
+
 function compareServices(services, classified, pages = [], serviceLedger = null) {
   const normalizedServices = canonicalizeServiceCandidates(services || [], serviceLedger);
   const compared = normalizedServices.map((service) => {
@@ -82,6 +110,7 @@ function validateProposedPages(pages, classified, services = [], options = {}) {
   for (const page of pages) {
     for (const field of REQUIRED_PAGE_FIELDS) if (page[field] == null || (typeof page[field] === 'string' && !page[field].trim())) errors.push(`${page.type || 'page'}: missing ${field}`);
     if (!Object.prototype.hasOwnProperty.call(page, 'strongestEvidence')) errors.push(`${page.type || 'page'}: missing strongestEvidence (use null when not appropriate)`);
+    errors.push(...validateClaimReferences(page, classified, options.serviceLedger || null));
     const recommendation = recommendationFor(page, page.recommendedFirstReview, classified, options.serviceLedger || null);
     const target = page.type === 'Service' ? page.canonicalIntentId || canonicalServiceId(page.service, options.serviceLedger || null) : null;
     const hasEvidence = page.type === 'Service' && classified.some((review) => review.judgment?.services?.some((s) => canonicalServiceId(s, options.serviceLedger || null) === target) && (review.judgment.directCompletedService || review.judgment.operatingPattern));
@@ -108,15 +137,16 @@ function prescribe({ finalist, inventory, classification, services, proposedPage
   if (!inventory.authoritativeJudgmentCount) throw new Error('Cannot prescribe before authoritative review judgment');
   const pages = (proposedPages || []).map((page) => ({ ...page }));
   const ledger = serviceLedger || sourceBinding?.serviceLedger || null;
+  validateSourceBinding(sourceBinding, ledger);
   const valueHierarchy = compareServices(services, inventory.classified, pages, ledger);
   const evidenceDigest = digest({ classification: inventory.classified, valueHierarchy, serviceLedger: ledger || null });
   const pageCheck = validateProposedPages(pages, inventory.classified, valueHierarchy, { policy, override, runContext, sourceBinding, serviceLedger: ledger, evidenceDigest });
   if (pageCheck.errors.length) throw new Error(`Prescription validation failed: ${pageCheck.errors.join('; ')}`);
   const selected = new Set((pageCheck.policy?.selectedServiceIds || []));
   const normalizedHierarchy = valueHierarchy.map((entry) => ({ ...entry, includedPage: selected.has(entry.canonicalIntentId), passedOverReason: selected.has(entry.canonicalIntentId) ? null : (entry.passedOverReason || 'Evidence preserved; not selected for a business-page destination under the active page policy.') }));
-  const prescription = { version: 'page-prescription-v2', prospect: { prospectId: runContext?.prospectId || finalist.prospectId || finalist.placeId, placeId: runContext?.placeId || finalist.placeId, name: finalist.name, location: finalist.location, website: finalist.website }, runId: runContext?.runId || null, pages, valueHierarchy: normalizedHierarchy, architectReview: architectReview || null, collisionValidation: pageCheck.collision, pagePolicy: pageCheck.policy.policy, policyMode: pageCheck.policy.policyMode, allowedServicePageCount: pageCheck.policy.allowedServicePageCount, expansionOverride: pageCheck.policy.override, selectedServiceIds: pageCheck.policy.selectedServiceIds, serviceCoverageLedger: ledger || null, evidenceDigest, pageSetDigest: pageCheck.policy.pageSetDigest, sourceArtifactDigest: sourceBinding?.sourceArtifactDigest || null, status: 'prescribed', generatedAt: new Date().toISOString() };
+  const prescription = { version: 'page-prescription-v2', prospect: { prospectId: runContext?.prospectId || finalist.prospectId || finalist.placeId, placeId: runContext?.placeId || finalist.placeId, name: finalist.name, location: finalist.location, website: finalist.website }, runId: runContext?.runId || null, pages, valueHierarchy: normalizedHierarchy, architectReview: architectReview || null, collisionValidation: pageCheck.collision, pagePolicy: pageCheck.policy.policy, policyMode: pageCheck.policy.policyMode, allowedServicePageCount: pageCheck.policy.allowedServicePageCount, expansionOverride: pageCheck.policy.override, selectedServiceIds: pageCheck.policy.selectedServiceIds, serviceCoverageLedger: ledger || null, evidenceDigest, pageSetDigest: pageCheck.policy.pageSetDigest, sourceIdentity: sourceBinding.sourceIdentity, sourceArtifactDigest: sourceBinding.sourceArtifactDigest, status: 'prescribed', generatedAt: new Date().toISOString() };
   prescription.prescriptionDigest = digest({ ...prescription, prescriptionDigest: undefined });
   return prescription;
 }
 
-module.exports = { normalizeClassification, serviceTerm, chooseRecommendation, validateCollisions, compareServices, validateProposedPages, prescribe };
+module.exports = { normalizeClassification, serviceTerm, chooseRecommendation, validateCollisions, validateClaimReferences, compareServices, validateProposedPages, prescribe };
