@@ -64,6 +64,23 @@ jobs:
           test "$REVIEWED_HEAD_SHA" = "$(git rev-parse HEAD)"
           test "$(gh pr view "$PR_NUMBER" --repo "$GITHUB_REPOSITORY" --json headRefName --jq .headRefName)" = "$BRANCH"
           test "$(gh pr view "$PR_NUMBER" --repo "$GITHUB_REPOSITORY" --json headRefOid --jq .headRefOid)" = "$REVIEWED_HEAD_SHA"
+      - name: Retrieve and validate the exact phase-A pending handoff
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PHASE_A_RUN_ID: ${{ inputs.phase_a_run_id }}
+          REVIEWED_HEAD_SHA: ${{ inputs.reviewed_head_sha }}
+          REPOSITORY: ${{ github.repository }}
+        run: |
+          test -n "$GH_TOKEN"
+          mkdir -p canary/phase-a
+          gh run download "$PHASE_A_RUN_ID" --repo "$REPOSITORY" --name "current-head-gate1-canary-$PHASE_A_RUN_ID" --dir canary/phase-a
+          PENDING_FILE=canary/phase-a/current-head-gate1-pending.json PHASE_A_RUN_ID="$PHASE_A_RUN_ID" REVIEWED_HEAD_SHA="$REVIEWED_HEAD_SHA" REPOSITORY="$REPOSITORY" node - <<'NODE'
+          const fs=require('node:fs'); const { validatePendingHandoff }=require('./src/factory/handoff');
+          const p=JSON.parse(fs.readFileSync(process.env.PENDING_FILE,'utf8'));
+          validatePendingHandoff(p,{phaseARunId:process.env.PHASE_A_RUN_ID,checkedOutSha:process.env.REVIEWED_HEAD_SHA,repository:process.env.REPOSITORY,issueNumber:8,prNumber:1});
+          if (!p.envelope.sourceManifestDigest) throw new Error('phase-A pending sourceManifestDigest is required');
+          fs.writeFileSync('canary/phase-a/pending.checked.json',JSON.stringify(p,null,2)+'\n');
+          NODE
       - name: Generate durable @cursor dispatch packet
         env:
           FACTORY_ISSUE_NUMBER: ${{ inputs.issue_number }}
@@ -72,6 +89,7 @@ jobs:
           FACTORY_REVIEWED_HEAD_SHA: ${{ inputs.reviewed_head_sha }}
           FACTORY_DISPATCH_SCOPE: ${{ inputs.scope }}
           FACTORY_REPOSITORY: ${{ github.repository }}
+          FACTORY_PENDING_FILE: canary/phase-a/pending.checked.json
           FACTORY_DISPATCH_OUTPUT: canary/outputs/cursor-dispatch.json
         run: node src/dispatch-cursor-cloud-agent.js
       - name: Claim durable GitHub ledger before connector dispatch
@@ -85,16 +103,20 @@ jobs:
           REPOSITORY: ${{ github.repository }}
         run: |
           handoff_key="$(node -e "const fs=require('node:fs');process.stdout.write(JSON.parse(fs.readFileSync(process.env.DISPATCH_FILE,'utf8')).dispatchKey)")"
+          handoff_id="$(node -e "process.stdout.write(JSON.parse(require('fs').readFileSync('canary/phase-a/pending.checked.json','utf8')).handoffId)")"
+          phase_run_id="$(node -e "process.stdout.write(JSON.parse(require('fs').readFileSync('canary/phase-a/pending.checked.json','utf8')).phaseARunId)")"
+          input_manifest_digest="$(node -e "process.stdout.write(JSON.parse(require('fs').readFileSync('canary/phase-a/pending.checked.json','utf8')).envelope.inputManifestDigest)")"
+          source_manifest_digest="$(node -e "process.stdout.write(JSON.parse(require('fs').readFileSync('canary/phase-a/pending.checked.json','utf8')).envelope.sourceManifestDigest)")"
           dispatch_digest="$(node -e "const fs=require('node:fs');process.stdout.write(JSON.parse(fs.readFileSync(process.env.DISPATCH_FILE,'utf8')).dispatchDigest)")"
           test -n "$GH_TOKEN"
           comments="$(GH_TOKEN="$GH_TOKEN" gh api --paginate "repos/$REPOSITORY/issues/$ISSUE_NUMBER/comments?per_page=100")"
-          LEDGER_COMMENTS="$comments" HANDOFF_KEY="$handoff_key" DISPATCH_DIGEST="$dispatch_digest" REPOSITORY="$REPOSITORY" ISSUE_NUMBER="$ISSUE_NUMBER" PR_NUMBER="$PR_NUMBER" BRANCH="$BRANCH" HEAD_SHA="$REVIEWED_HEAD_SHA" node - <<'NODE'
+          LEDGER_COMMENTS="$comments" HANDOFF_KEY="$handoff_key" HANDOFF_ID="$handoff_id" PHASE_RUN_ID="$phase_run_id" INPUT_MANIFEST_DIGEST="$input_manifest_digest" SOURCE_MANIFEST_DIGEST="$source_manifest_digest" DISPATCH_DIGEST="$dispatch_digest" REPOSITORY="$REPOSITORY" ISSUE_NUMBER="$ISSUE_NUMBER" PR_NUMBER="$PR_NUMBER" BRANCH="$BRANCH" HEAD_SHA="$REVIEWED_HEAD_SHA" node - <<'NODE'
           const fs = require('node:fs'); const { markerFor, markerBody, findClaim } = require('./src/factory/github-ledger');
           const comments = JSON.parse(process.env.LEDGER_COMMENTS);
-          const expected = { repository: process.env.REPOSITORY, issueNumber: '8', prNumber: '1', branch: process.env.BRANCH, checkedOutSha: process.env.HEAD_SHA, kind: 'dispatch', handoffId: process.env.HANDOFF_KEY, dispatchKey: process.env.HANDOFF_KEY, dispatchDigest: process.env.DISPATCH_DIGEST, resultId: process.env.DISPATCH_DIGEST };
+          const expected = { repository: process.env.REPOSITORY, issueNumber: '8', prNumber: '1', branch: process.env.BRANCH, checkedOutSha: process.env.HEAD_SHA, kind: 'dispatch', handoffId: process.env.HANDOFF_ID, dispatchKey: process.env.HANDOFF_KEY, dispatchDigest: process.env.DISPATCH_DIGEST, runId: JSON.parse(fs.readFileSync('canary/phase-a/pending.checked.json')).envelope.runId, sourceCheckpointDigest: JSON.parse(fs.readFileSync('canary/phase-a/pending.checked.json')).envelope.sourceCheckpointDigest, sourceManifestDigest: process.env.SOURCE_MANIFEST_DIGEST, inputManifestDigest: process.env.INPUT_MANIFEST_DIGEST, jobId: process.env.PHASE_RUN_ID, resultId: process.env.DISPATCH_DIGEST };
           const claim = findClaim(comments, expected);
           if (claim && ['posted', 'in_motion', 'terminal', 'resumed'].includes(claim.status)) { fs.appendFileSync(process.env.GITHUB_ENV, 'FACTORY_LEDGER_ALREADY_CLAIMED=true\n'); process.exit(0); }
-          const marker = markerFor({ kind: 'dispatch', repository: process.env.REPOSITORY, issueNumber: process.env.ISSUE_NUMBER, prNumber: process.env.PR_NUMBER, branch: process.env.BRANCH, checkedOutSha: process.env.HEAD_SHA, handoffId: process.env.HANDOFF_KEY, dispatchKey: process.env.HANDOFF_KEY, dispatchDigest: process.env.DISPATCH_DIGEST, resultId: process.env.DISPATCH_DIGEST, status: 'preparing' });
+          const marker = markerFor({ kind: 'dispatch', repository: process.env.REPOSITORY, issueNumber: process.env.ISSUE_NUMBER, prNumber: process.env.PR_NUMBER, branch: process.env.BRANCH, checkedOutSha: process.env.HEAD_SHA, handoffId: process.env.HANDOFF_ID, dispatchKey: process.env.HANDOFF_KEY, dispatchDigest: process.env.DISPATCH_DIGEST, runId: expected.runId, sourceCheckpointDigest: expected.sourceCheckpointDigest, sourceManifestDigest: process.env.SOURCE_MANIFEST_DIGEST, inputManifestDigest: process.env.INPUT_MANIFEST_DIGEST, jobId: process.env.PHASE_RUN_ID, ownerToken: process.env.HANDOFF_KEY, resultId: process.env.DISPATCH_DIGEST, status: 'preparing' });
           fs.writeFileSync('canary/outputs/cursor-ledger-marker.md', markerBody(marker));
           NODE
       - name: Publish durable dispatch ledger marker
@@ -126,7 +148,9 @@ jobs:
             comment_url="$(node -e "process.stdout.write(JSON.parse(process.argv[1]).html_url)" "$prior")"
             echo "idempotent_existing_comment=$comment_url"
           else
-            { cat "$COMMENT_FILE"; printf 'Handoff ID: %s\\nPhase-A run: %s\\nDispatch workflow run: %s\\n' "$key" "$PHASE_A_RUN_ID" "$GITHUB_RUN_ID"; } > canary/outputs/cursor-dispatch.post.md
+            input_manifest_digest="$(node -e "process.stdout.write(JSON.parse(require('fs').readFileSync('canary/phase-a/pending.checked.json','utf8')).envelope.inputManifestDigest)")"
+            handoff_id="$(node -e "process.stdout.write(JSON.parse(require('fs').readFileSync('canary/phase-a/pending.checked.json','utf8')).handoffId)")"
+            { cat "$COMMENT_FILE"; printf 'Handoff ID: %s\\nPhase-A run: %s\\nInput manifest digest: %s\\nDispatch workflow run: %s\\n' "$handoff_id" "$PHASE_A_RUN_ID" "$input_manifest_digest" "$GITHUB_RUN_ID"; } > canary/outputs/cursor-dispatch.post.md
             response="$(GH_TOKEN="$GH_TOKEN" gh api "repos/$GITHUB_REPOSITORY/issues/$PR_NUMBER/comments" --method POST -f body="$(cat canary/outputs/cursor-dispatch.post.md)")"
             comment_id="$(node -e "process.stdout.write(String(JSON.parse(process.argv[1]).id))" "$response")"
             comment_url="$(node -e "process.stdout.write(JSON.parse(process.argv[1]).html_url)" "$response")"
@@ -152,7 +176,8 @@ jobs:
           node - <<'NODE'
           const fs=require('node:fs'); const { markerFor, markerBody }=require('./src/factory/github-ledger');
           const p=JSON.parse(fs.readFileSync(process.env.DISPATCH_FILE,'utf8'));
-          const marker=markerFor({kind:'dispatch',repository:process.env.REPOSITORY,issueNumber:process.env.ISSUE_NUMBER,prNumber:process.env.PR_NUMBER,branch:process.env.BRANCH,checkedOutSha:process.env.HEAD_SHA,handoffId:p.dispatchKey,dispatchKey:p.dispatchKey,dispatchDigest:p.dispatchDigest,resultId:p.dispatchDigest,commentId:process.env.COMMENT_ID,commentUrl:process.env.COMMENT_URL,status:'posted'});
+          const pending=JSON.parse(fs.readFileSync('canary/phase-a/pending.checked.json','utf8'));
+          const marker=markerFor({kind:'dispatch',repository:process.env.REPOSITORY,issueNumber:process.env.ISSUE_NUMBER,prNumber:process.env.PR_NUMBER,branch:process.env.BRANCH,checkedOutSha:process.env.HEAD_SHA,handoffId:pending.handoffId,dispatchKey:p.dispatchKey,dispatchDigest:p.dispatchDigest,runId:pending.envelope.runId,prospectId:pending.envelope.prospectId,sourceCheckpointDigest:pending.envelope.sourceCheckpointDigest,sourceManifestDigest:pending.envelope.sourceManifestDigest,inputManifestDigest:pending.envelope.inputManifestDigest,jobId:pending.phaseARunId,ownerToken:p.dispatchKey,resultId:p.dispatchDigest,commentId:process.env.COMMENT_ID,commentUrl:process.env.COMMENT_URL,status:'posted'});
           fs.writeFileSync('canary/outputs/cursor-ledger-posted.md',markerBody(marker));
           NODE
           GH_TOKEN="$GH_TOKEN" gh api "repos/$REPOSITORY/issues/$ISSUE_NUMBER/comments" --method POST -f body="$(cat canary/outputs/cursor-ledger-posted.md)"
@@ -201,7 +226,7 @@ jobs:
       - name: Bind dispatch comment to durable handoff identity
         if: env.FACTORY_SKIP_AUTOMATIC_DISPATCH != 'true'
         run: |
-          node -e "const fs=require('node:fs');const pending=JSON.parse(fs.readFileSync('canary/phase-a/pending.checked.json','utf8'));fs.appendFileSync('canary/phase-a/cursor-dispatch.comment.md','Handoff ID: '+pending.handoffId+'\\nPhase-A run: '+pending.phaseARunId+'\\nDispatch workflow run: '+process.env.GITHUB_RUN_ID+'\\n');"
+          node -e "const fs=require('node:fs');const pending=JSON.parse(fs.readFileSync('canary/phase-a/pending.checked.json','utf8'));fs.appendFileSync('canary/phase-a/cursor-dispatch.comment.md','Handoff ID: '+pending.handoffId+'\\nPhase-A run: '+pending.phaseARunId+'\\nInput manifest digest: '+pending.envelope.inputManifestDigest+'\\nDispatch workflow run: '+process.env.GITHUB_RUN_ID+'\\n');"
       - name: Claim durable GitHub ledger before connector dispatch
         if: env.FACTORY_SKIP_AUTOMATIC_DISPATCH != 'true'
         env:
@@ -225,7 +250,7 @@ jobs:
           const expected = { repository: process.env.REPOSITORY, issueNumber: '8', prNumber: '1', branch: process.env.BRANCH, checkedOutSha: e.checkedOutSha, kind: 'dispatch', handoffId: pending.handoffId, dispatchKey: e.dispatchKey, dispatchDigest: e.dispatchDigest, resultId: e.dispatchDigest, runId: e.runId, prospectId: e.prospectId, sourceCheckpointDigest: e.sourceCheckpointDigest, sourceManifestDigest: e.sourceManifestDigest, inputManifestDigest: e.inputManifestDigest, jobId: pending.phaseARunId };
           const claim = findClaim(comments, expected);
           if (claim && ['posted', 'in_motion', 'terminal', 'resumed'].includes(claim.status)) { fs.appendFileSync(process.env.GITHUB_ENV, 'FACTORY_LEDGER_ALREADY_CLAIMED=true\n'); process.exit(0); }
-          const marker = markerFor({ kind: 'dispatch', repository: process.env.REPOSITORY, issueNumber: '8', prNumber: '1', branch: process.env.BRANCH, checkedOutSha: e.checkedOutSha, handoffId: pending.handoffId, dispatchKey: e.dispatchKey, dispatchDigest: e.dispatchDigest, runId: e.runId, prospectId: e.prospectId, sourceCheckpointDigest: e.sourceCheckpointDigest, sourceManifestDigest: e.sourceManifestDigest, inputManifestDigest: e.inputManifestDigest, jobId: pending.phaseARunId, resultId: e.dispatchDigest, status: 'preparing' }); fs.writeFileSync('canary/phase-a/cursor-ledger-marker.md', markerBody(marker));
+          const marker = markerFor({ kind: 'dispatch', repository: process.env.REPOSITORY, issueNumber: '8', prNumber: '1', branch: process.env.BRANCH, checkedOutSha: e.checkedOutSha, handoffId: pending.handoffId, dispatchKey: e.dispatchKey, dispatchDigest: e.dispatchDigest, runId: e.runId, prospectId: e.prospectId, sourceCheckpointDigest: e.sourceCheckpointDigest, sourceManifestDigest: e.sourceManifestDigest, inputManifestDigest: e.inputManifestDigest, jobId: pending.phaseARunId, ownerToken: e.dispatchKey, resultId: e.dispatchDigest, status: 'preparing' }); fs.writeFileSync('canary/phase-a/cursor-ledger-marker.md', markerBody(marker));
           NODE
       - name: Publish durable dispatch ledger marker
         if: env.FACTORY_SKIP_AUTOMATIC_DISPATCH != 'true' && env.FACTORY_LEDGER_ALREADY_CLAIMED != 'true'
@@ -269,7 +294,7 @@ jobs:
           node - <<'NODE'
           const fs=require('node:fs'); const { markerFor, markerBody }=require('./src/factory/github-ledger');
           const p=JSON.parse(fs.readFileSync(process.env.DISPATCH_FILE,'utf8')); const pending=JSON.parse(fs.readFileSync('canary/phase-a/pending.checked.json','utf8'));
-          const marker=markerFor({kind:'dispatch',repository:process.env.REPOSITORY,issueNumber:p.issueNumber,prNumber:p.prNumber,branch:p.branch,checkedOutSha:pending.envelope.checkedOutSha,handoffId:pending.handoffId,dispatchKey:p.dispatchKey,dispatchDigest:p.dispatchDigest,resultId:p.dispatchDigest,commentId:process.env.COMMENT_ID,commentUrl:process.env.COMMENT_URL,status:'posted'});
+          const marker=markerFor({kind:'dispatch',repository:process.env.REPOSITORY,issueNumber:p.issueNumber,prNumber:p.prNumber,branch:p.branch,checkedOutSha:pending.envelope.checkedOutSha,handoffId:pending.handoffId,dispatchKey:p.dispatchKey,dispatchDigest:p.dispatchDigest,runId:pending.envelope.runId,prospectId:pending.envelope.prospectId,sourceCheckpointDigest:pending.envelope.sourceCheckpointDigest,sourceManifestDigest:pending.envelope.sourceManifestDigest,inputManifestDigest:pending.envelope.inputManifestDigest,jobId:pending.phaseARunId,ownerToken:p.dispatchKey,resultId:p.dispatchDigest,commentId:process.env.COMMENT_ID,commentUrl:process.env.COMMENT_URL,status:'posted'});
           fs.writeFileSync('canary/phase-a/cursor-ledger-posted.md',markerBody(marker));
           NODE
           GH_TOKEN="$GH_TOKEN" gh api "repos/$REPOSITORY/issues/$ISSUE_NUMBER/comments" --method POST -f body="$(cat canary/phase-a/cursor-ledger-posted.md)"
