@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "words-writer3-output/v1",
+  "strategyOverview": {
+    "pageType": "strategy-overview",
+    "internal": true,
+    "title": "Strategy Overview \u2014 360 Garage Door and More words canary",
+    "body": "This is an internal Writer 3 artifact. It is not a public page and must not be linked from header, footer, or business CTAs.\n\nPublic topology is exactly four routes in reading order: Home `/`, Garage Door Repair `/garage-door-repair`, Garage Door Installation `/garage-door-installation`, and Contact `/contact`. Writer 1 authored the two service pages from the sealed 360 prescription and the existing 47 written reviews. Production validation rejected the remote artifact because `reviewEvidence` carried word-bearing `reviewer` and `excerpt` keys. Factory pointer-ledger normalization removed those 62 duplicated keys, preserved dedicated copy, and left the quarantined source bytes unapproved.\n\nThe former hard 800-word floor is revoked. Architect QA accepted the corrected Writer 1 pages because each section has a distinct homeowner job, related reviews are synthesized, each quotation appears once, public copy reads like local-service writing, and unsupported speed, warranty, pricing, and carpentry claims stay out. Useful-body word counts are diagnostic evidence only and are not the accept reason. Writer 2 stayed blocked until that fresh decision, then authored Home, Contact, header, and footer using the same NAP, hours, and named people (Jenny / Will) without new vendor calls. Writer 3 records the fold: spring replacement, maintenance, seals, tracks, diagnostics, and related repair-family work stay on `/garage-door-repair`; opener and keypad work stay supporting evidence and do not receive public routes. Whole-site QA checks continuity, evidence fidelity, voice, CTA flow, and route completeness. Josh alone approves Human Gate 2 and any later merge. No deployment occurred.",
+    "sections": [
+      {
+        "heading": "Why these four pages",
+        "body": "The sealed four-page policy required Home, two review-backed service destinations, and Contact. Candidate services that were folded or passed over never become navigation items."
+      },
+      {
+        "heading": "Evidence binding",
+        "body": "Repair carries the larger authoritative completed-repair set, including folded spring-and-travel jobs quoted only as parent-page proof. Installation carries the completed new-door set. Home uses Cameron Spitzer as the prescribed lead because the review records completed doors plus a later check. Contact stays claim-light."
+      },
+      {
+        "heading": "Quality standard used for this correction",
+        "body": "Each service-page section must add a distinct homeowner decision, scope fact, process expectation, differentiator, or proof point. Word count alone must never pass a page. Do not pad to reach 800 or any other number, and do not cut useful evidence solely to fit a number. If evidence is thin, route the gap back to research or strategy rather than manufacturing generic copy."
+      },
+      {
+        "heading": "Claims that were refused",
+        "body": "No 24/7, weekend on-site, holiday dispatch, same-day SLA, one-hour arrival, or guaranteed rating. Hours remain Monday\u2013Friday 8 AM\u20135 PM. Retrieval count 47 and retrieval date 2026-08-23 stay in this internal artifact only."
+      }
+    ]
+  }
+}

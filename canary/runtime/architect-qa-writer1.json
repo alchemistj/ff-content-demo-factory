@@ -1,0 +1,100 @@
+{
+  "stage": "writer1",
+  "decision": "accept",
+  "writer2Released": true,
+  "rawArtifactApproved": false,
+  "normalizedOutputApprovedForWriter2": true,
+  "wordCountIsDiagnosticOnly": true,
+  "formerHardFloorRevoked": "at least 800 words each",
+  "findings": [
+    "Strict validator still rejects the quarantined bytes: only REVIEW_EVIDENCE_CLAIM_TEXT_DUPLICATE, first path /pages/0/reviewEvidence/0/reviewer.",
+    "normalizeWriter1PointerLedger removed 62 duplicated reviewer/excerpt keys and preserved semantic copy, identity, and provenance. Raw artifact remains unapproved.",
+    "Repair useful-body word count 740 (diagnostic only; not an accept reason). Installation useful-body word count 617 (diagnostic only; not an accept reason). Installation depth follows the six sealed install reviews; it was not padded to a number.",
+    "Duplicate-quote scan: each displayed quotation appears once; none are rendered as both inline copy and an adjacent blockquote.",
+    "Repetition scan: shop hours and weekend/weekday timing are handled once on the next-step section rather than restated through the page.",
+    "Unsupported-claim scan: no 24/7, weekend dispatch, same-day SLA, warranty term, framing/carpentry, or pricing guarantee is asserted as policy.",
+    "Quote fidelity: displayed quotations are contiguous sealed-review text with the original reviewer attribution.",
+    "Public copy reads as local-service writing. Internal evidence-defense phrasing was removed from customer-facing pages.",
+    "Word count alone did not pass either page. The former hard 800-word floor is revoked."
+  ],
+  "sectionJobs": {
+    "/garage-door-repair": [
+      {
+        "section": "repair-proof-lead",
+        "job": "direct-answer",
+        "distinctPurpose": "Tells a homeowner with a sagging or failed existing door that this is the repair destination, using the Chris Keaton job as the lead example."
+      },
+      {
+        "section": "repair-what-we-fix",
+        "job": "confirmed-scope",
+        "distinctPurpose": "Synthesizes will-not-open, seal, wiring, and consistent-travel repairs into scope instead of reciting each review."
+      },
+      {
+        "section": "repair-springs-folded",
+        "job": "folded-scope",
+        "distinctPurpose": "Keeps spring, track, and roller work on the parent repair page with one strongest spring quote."
+      },
+      {
+        "section": "repair-options",
+        "job": "process",
+        "distinctPurpose": "Explains diagnosis, now-versus-later choice, and parts-on-truck completion as visit expectations."
+      },
+      {
+        "section": "repair-springfield",
+        "job": "differentiator",
+        "distinctPurpose": "Names the local shop, Jenny/Will, and later care as completed-job proof rather than a warranty slogan."
+      },
+      {
+        "section": "repair-next",
+        "job": "next-step",
+        "distinctPurpose": "Handles hours and the weekday next step once, without repeating timing caveats through the page."
+      }
+    ],
+    "/garage-door-installation": [
+      {
+        "section": "install-proof-lead",
+        "job": "direct-answer",
+        "distinctPurpose": "Defines installation as a new door for the opening you have, led by Marcie Spitzer\u2019s completed job and cleanup."
+      },
+      {
+        "section": "install-selection",
+        "job": "selection",
+        "distinctPurpose": "Explains Jenny/Will selection help without inventing a model catalog."
+      },
+      {
+        "section": "install-custom-height",
+        "job": "scope-fit",
+        "distinctPurpose": "Covers a taller door sized to an opening the homeowner already reframed, without a carpentry claim."
+      },
+      {
+        "section": "install-trim-cleanup",
+        "job": "finish-expectation",
+        "distinctPurpose": "Sets paint-ready trim and a cleaned workspace as the finish standard."
+      },
+      {
+        "section": "install-replacement",
+        "job": "replacement-scope",
+        "distinctPurpose": "Covers replacement doors and a later check as completed work, without converting Gregory\u2019s timeline into an SLA."
+      },
+      {
+        "section": "install-next",
+        "job": "next-step",
+        "distinctPurpose": "Sends the homeowner to call with the opening size they already have."
+      }
+    ]
+  },
+  "qualityScans": {
+    "duplicateQuotes": {
+      "repair": [],
+      "installation": []
+    },
+    "auditLanguage": [],
+    "unsupportedClaims": "pass",
+    "evidenceFidelity": "pass",
+    "usefulBodyWordCounts": {
+      "repair": 740,
+      "installation": 617,
+      "role": "diagnostic-only"
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "assessor": "architect-whole-site-360",
+  "independent": true,
+  "pass": true,
+  "priorAcceptRevoked": true,
+  "dimensionsReviewed": [
+    "specificity",
+    "strongest-review-choice",
+    "persuasive-flow",
+    "voice-drift",
+    "cross-page-distinctness",
+    "homepage-complementarity",
+    "contact-leanness",
+    "strategy-truthfulness",
+    "unsupported-claims",
+    "generic-ai-filler"
+  ],
+  "findings": [
+    {
+      "dimension": "specificity",
+      "severity": "note",
+      "summary": "NAP, hours, named technicians, and job-specific review proof are present.",
+      "rationale": "Public copy uses the sealed Springfield address, listed hours, and named people from the written reviews."
+    },
+    {
+      "dimension": "strongest-review-choice",
+      "severity": "note",
+      "summary": "Service pages keep prescribed leads and display only the strongest adjacent quotes.",
+      "rationale": "Chris Keaton remains the repair lead; Marcie Spitzer remains the installation lead; Home uses Cameron Spitzer once."
+    },
+    {
+      "dimension": "persuasive-flow",
+      "severity": "note",
+      "summary": "Each service-page section has a distinct decision-stage job.",
+      "rationale": "Direct answer, confirmed scope, process/selection, differentiator, strongest proof, and next step do not restate one another."
+    },
+    {
+      "dimension": "voice-drift",
+      "severity": "note",
+      "summary": "Public copy reads as local-service writing rather than an evidence-audit memo.",
+      "rationale": "Internal validation commentary and duplicate quote display were removed from customer-facing pages."
+    },
+    {
+      "dimension": "cross-page-distinctness",
+      "severity": "note",
+      "summary": "Repair, installation, home, and contact do different jobs.",
+      "rationale": "Repair keeps the existing door; installation is new doors; contact is reachability only."
+    },
+    {
+      "dimension": "homepage-complementarity",
+      "severity": "note",
+      "summary": "Home routes into finished service pages instead of restating them.",
+      "rationale": "Home points to Chris/Marcie leads without duplicating the full service bodies."
+    },
+    {
+      "dimension": "contact-leanness",
+      "severity": "note",
+      "summary": "Contact has no review placements and no service promises.",
+      "rationale": "Phone, address, hours, and route-outs only."
+    },
+    {
+      "dimension": "strategy-truthfulness",
+      "severity": "note",
+      "summary": "Strategy Overview records the pointer-ledger correction and the revoked 800-word floor.",
+      "rationale": "Internal artifact states that word count is diagnostic only and that Writer 1 was accepted on completeness, usefulness, evidence fidelity, and non-repetition."
+    },
+    {
+      "dimension": "unsupported-claims",
+      "severity": "note",
+      "summary": "No 24/7, weekend dispatch, same-day SLA, warranty, or carpentry claim is asserted as policy.",
+      "rationale": "Hours stay Monday\u2013Friday 8\u20135. Scott Heffern\u2019s taller door is sized to an opening he already reframed."
+    },
+    {
+      "dimension": "generic-ai-filler",
+      "severity": "note",
+      "summary": "Copy stays tied to named jobs and sealed facts without padding to a count.",
+      "rationale": "Reviews are synthesized into homeowner decisions. Closing recap paragraphs were removed."
+    }
+  ]
+}

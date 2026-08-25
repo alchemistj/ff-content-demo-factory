@@ -1,0 +1,690 @@
+{
+  "schemaVersion": "words-writer1-output/v1",
+  "pages": [
+    {
+      "url": "/garage-door-repair",
+      "type": "service",
+      "prescriptionId": "Service:/garage-door-repair",
+      "primaryKeyword": "garage door repair Springfield MO",
+      "title": "Garage Door Repair in Springfield, MO",
+      "seoTitle": "Garage Door Repair in Springfield, MO",
+      "route": "/garage-door-repair",
+      "metaDescription": "Garage door repair in Springfield, MO for doors that sag, stick, or will not open. On-site diagnosis, options, and completed repairs when parts are on the truck.",
+      "h1": "Garage door repair for doors that sag, stick, or will not open",
+      "body": "If the door already in your opening sags, sticks, or will not open, this is the repair page. Jenny answers the phone. Will does the on-site work. New doors are on the installation page.",
+      "sections": [
+        {
+          "id": "repair-proof-lead",
+          "heading": "A sagging door that needed to travel again",
+          "body": "Repair is for the door already in the opening. Chris Keaton\u2019s old, huge garage door was sagging from age. Will explained the problem and the best solution, gave an estimate, and finished the work so the door could travel again. After that visit Chris recommended 360 for repair or replacement in general; the sagging-door job itself was repair of the door they already had. If your door sags, sticks, or will not open, start here rather than shopping a new door first.",
+          "quotes": [
+            {
+              "quote": "Will did a fantastic job on our old huge garage door that was sagging from age. He thoroughly explained the problem and the best solution along with a great estimate, the work was completed quickly.",
+              "attribution": "Chris Keaton",
+              "reviewer": "Chris Keaton",
+              "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT201TVdWZGZSak00ZUhSQ2VVdHNYMWxFYTBFdE9XYxAB",
+              "provenance": {
+                "type": "review",
+                "ref": "Ci9DQUlRQUNvZENodHljRjlvT201TVdWZGZSak00ZUhSQ2VVdHNYMWxFYTBFdE9XYxAB",
+                "placement": "lead-quote",
+                "section": "repair-proof-lead"
+              }
+            }
+          ]
+        },
+        {
+          "id": "repair-what-we-fix",
+          "heading": "Doors that will not open, stick, or need a seal or wiring fix",
+          "body": "Springfield homeowners bring in doors that will not open, will not travel evenly, or need a seal, pad, or wiring brought back in line. Completed visits include a door that would not open and left working smoothly, both doors repaired after an animal incident with the wiring corrected, a bottom seal replaced before it became a larger problem, and a door that finally opened and closed consistently. On a failed door, the same visit can restore travel and add a quiet operator. A keypad can be installed on that same repair call. The point of these visits is a door that opens, closes, and stays in line.",
+          "quotes": [
+            {
+              "quote": "Happy to have our door open and close consistently and have our outdoor pad updated.",
+              "attribution": "Debbie Christopher",
+              "reviewer": "Debbie Christopher",
+              "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xSWWMycFZlV3AxTldKcFpVZGxTalpGTUZSV1drRRAB",
+              "provenance": {
+                "type": "review",
+                "ref": "Ci9DQUlRQUNvZENodHljRjlvT2xSWWMycFZlV3AxTldKcFpVZGxTalpGTUZSV1drRRAB",
+                "placement": "consistent-travel-quote",
+                "section": "repair-what-we-fix"
+              }
+            }
+          ]
+        },
+        {
+          "id": "repair-springs-folded",
+          "heading": "Springs, tracks, and rollers stay with repair",
+          "body": "A broken spring is still repair of the door in the opening. Completed jobs include two springs on a two-car door, an undersized spring replaced after the door was weighed, old coils replaced with the tracks and rollers serviced, and a broken spring with a few brackets. If a spring failed early, the useful question on site is whether the next spring is sized for the actual door weight. Jenny handles the schedule and the price conversation. Will does the install, often with Blake on larger spring jobs, and talks through maintenance a homeowner can do.",
+          "quotes": [
+            {
+              "quote": "I am very happy with the job Will did on our garage door spring replacement. My door works better now than ever.",
+              "attribution": "jason tourville",
+              "reviewer": "jason tourville",
+              "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2taQlh6VlZabU5OWjFKc2JISklTa1pXUlVwVGVuYxAB",
+              "provenance": {
+                "type": "review",
+                "ref": "Ci9DQUlRQUNvZENodHljRjlvT2taQlh6VlZabU5OWjFKc2JISklTa1pXUlVwVGVuYxAB",
+                "placement": "spring-replacement-quote",
+                "section": "repair-springs-folded"
+              }
+            }
+          ]
+        },
+        {
+          "id": "repair-options",
+          "heading": "Diagnosis first, then a choice",
+          "body": "The useful visit pattern is an on-site look, a clear explanation, and a choice about what to do now versus later. Homeowners were told what had to be repaired immediately and what could wait, without a push to buy extra work. Routine maintenance visits work the same way: improvements are pointed out, priced, and finished when the materials are already on the truck. Recommendations stay aimed at a door that is working, stable, and safe.",
+          "quotes": [
+            {
+              "quote": "They gave me options and let me choose what I wanted done, what had to be repaired now and what could wait. I chose to do everything at once, which made my price higher, but still significantly less than what I thought it would cost and I wasn't pressured to do any of it.",
+              "attribution": "Judi Wills",
+              "reviewer": "Judi Wills",
+              "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xoRE1HZ3lUMWRpVWt3d1dsVXhjVE5XZEc1VWVuYxAB",
+              "provenance": {
+                "type": "review",
+                "ref": "Ci9DQUlRQUNvZENodHljRjlvT2xoRE1HZ3lUMWRpVWt3d1dsVXhjVE5XZEc1VWVuYxAB",
+                "placement": "options-without-pressure-quote",
+                "section": "repair-options"
+              }
+            },
+            {
+              "quote": "Will had everything he needed to complete our repair on his truck, so it was quick and efficient.",
+              "attribution": "Kelsie Bates",
+              "reviewer": "Kelsie Bates",
+              "reviewId": "ChdDSUhNMG9nS0VQcUM5dGpxNjRxcHJBRRAB",
+              "provenance": {
+                "type": "review",
+                "ref": "ChdDSUhNMG9nS0VQcUM5dGpxNjRxcHJBRRAB",
+                "placement": "parts-on-truck-quote",
+                "section": "repair-options"
+              }
+            }
+          ]
+        },
+        {
+          "id": "repair-springfield",
+          "heading": "A Springfield shop with the same people on the jobs",
+          "body": "Reviewers keep naming the same local shop: Jenny on the phone and by text, Will on the driveway, at 2035 W Mt Vernon St in Springfield. Neighbors compared service calls with other companies, then hired 360 for the repair. A year or so after earlier fixes, Steve Brooks had them back to make sure the doors were still working correctly.",
+          "quotes": []
+        },
+        {
+          "id": "repair-next",
+          "heading": "Talk through the door that is not acting right",
+          "body": "Call (417) 366-7360 and ask for Jenny. Shop hours are Monday\u2013Friday, 8 AM to 5 PM. Saturday and Sunday the shop is closed. If you reach them over a weekend, the next step is a weekday appointment to look at the door you have: whether it sags, will not open, or needs a spring, seal, or track brought back in line.",
+          "quotes": []
+        }
+      ],
+      "claims": [
+        {
+          "text": "Completed Springfield repair jobs include sagging doors, doors that would not open, and doors that would not travel consistently.",
+          "provenance": {
+            "type": "claim",
+            "ref": "Service:/garage-door-repair",
+            "placement": "prescribed-claim-completed-repairs",
+            "section": "repair-proof-lead"
+          }
+        },
+        {
+          "text": "Repair visits include on-site diagnosis, a choice about what to fix now versus later, and completed work when parts are on the truck.",
+          "provenance": {
+            "type": "claim",
+            "ref": "Service:/garage-door-repair",
+            "placement": "prescribed-claim-diagnosis-options-parts",
+            "section": "repair-options"
+          }
+        },
+        {
+          "text": "Spring, track, roller, seal, and related repair-family work stays on the repair page.",
+          "provenance": {
+            "type": "claim",
+            "ref": "Service:/garage-door-repair",
+            "placement": "prescribed-claim-folded-springs",
+            "section": "repair-springs-folded"
+          }
+        }
+      ],
+      "reviewPlacements": [
+        {
+          "quote": "Will did a fantastic job on our old huge garage door that was sagging from age. He thoroughly explained the problem and the best solution along with a great estimate, the work was completed quickly.",
+          "attribution": "Chris Keaton",
+          "reviewer": "Chris Keaton",
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT201TVdWZGZSak00ZUhSQ2VVdHNYMWxFYTBFdE9XYxAB",
+          "provenance": {
+            "type": "review",
+            "ref": "Ci9DQUlRQUNvZENodHljRjlvT201TVdWZGZSak00ZUhSQ2VVdHNYMWxFYTBFdE9XYxAB",
+            "placement": "lead-quote",
+            "section": "repair-proof-lead"
+          }
+        },
+        {
+          "quote": "Happy to have our door open and close consistently and have our outdoor pad updated.",
+          "attribution": "Debbie Christopher",
+          "reviewer": "Debbie Christopher",
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xSWWMycFZlV3AxTldKcFpVZGxTalpGTUZSV1drRRAB",
+          "provenance": {
+            "type": "review",
+            "ref": "Ci9DQUlRQUNvZENodHljRjlvT2xSWWMycFZlV3AxTldKcFpVZGxTalpGTUZSV1drRRAB",
+            "placement": "consistent-travel-quote",
+            "section": "repair-what-we-fix"
+          }
+        },
+        {
+          "quote": "I am very happy with the job Will did on our garage door spring replacement. My door works better now than ever.",
+          "attribution": "jason tourville",
+          "reviewer": "jason tourville",
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2taQlh6VlZabU5OWjFKc2JISklTa1pXUlVwVGVuYxAB",
+          "provenance": {
+            "type": "review",
+            "ref": "Ci9DQUlRQUNvZENodHljRjlvT2taQlh6VlZabU5OWjFKc2JISklTa1pXUlVwVGVuYxAB",
+            "placement": "spring-replacement-quote",
+            "section": "repair-springs-folded"
+          }
+        },
+        {
+          "quote": "They gave me options and let me choose what I wanted done, what had to be repaired now and what could wait. I chose to do everything at once, which made my price higher, but still significantly less than what I thought it would cost and I wasn't pressured to do any of it.",
+          "attribution": "Judi Wills",
+          "reviewer": "Judi Wills",
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xoRE1HZ3lUMWRpVWt3d1dsVXhjVE5XZEc1VWVuYxAB",
+          "provenance": {
+            "type": "review",
+            "ref": "Ci9DQUlRQUNvZENodHljRjlvT2xoRE1HZ3lUMWRpVWt3d1dsVXhjVE5XZEc1VWVuYxAB",
+            "placement": "options-without-pressure-quote",
+            "section": "repair-options"
+          }
+        },
+        {
+          "quote": "Will had everything he needed to complete our repair on his truck, so it was quick and efficient.",
+          "attribution": "Kelsie Bates",
+          "reviewer": "Kelsie Bates",
+          "reviewId": "ChdDSUhNMG9nS0VQcUM5dGpxNjRxcHJBRRAB",
+          "provenance": {
+            "type": "review",
+            "ref": "ChdDSUhNMG9nS0VQcUM5dGpxNjRxcHJBRRAB",
+            "placement": "parts-on-truck-quote",
+            "section": "repair-options"
+          }
+        }
+      ],
+      "reviewEvidence": [
+        {
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT201TVdWZGZSak00ZUhSQ2VVdHNYMWxFYTBFdE9XYxAB",
+          "provenance": {
+            "type": "evidence",
+            "ref": "Ci9DQUlRQUNvZENodHljRjlvT201TVdWZGZSak00ZUhSQ2VVdHNYMWxFYTBFdE9XYxAB",
+            "placement": "lead-completed-sagging-door",
+            "section": "repair-proof-lead"
+          }
+        },
+        {
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25OS09FRkhPRkptVVhoclIwdzRORVp6VTB0R1VIYxAB",
+          "provenance": {
+            "type": "evidence",
+            "ref": "Ci9DQUlRQUNvZENodHljRjlvT25OS09FRkhPRkptVVhoclIwdzRORVp6VTB0R1VIYxAB",
+            "placement": "door-would-not-open",
+            "section": "repair-what-we-fix"
+          }
+        },
+        {
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xVMWQxVlRXalppVmxoU1NHcG9hUzFtV2pSVmRIYxAB",
+          "provenance": {
+            "type": "evidence",
+            "ref": "Ci9DQUlRQUNvZENodHljRjlvT2xVMWQxVlRXalppVmxoU1NHcG9hUzFtV2pSVmRIYxAB",
+            "placement": "animal-incident-wiring-repair",
+            "section": "repair-what-we-fix"
+          }
+        },
+        {
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURmNlBfbXhBRRAB",
+          "provenance": {
+            "type": "evidence",
+            "ref": "ChdDSUhNMG9nS0VJQ0FnSURmNlBfbXhBRRAB",
+            "placement": "bottom-seal-repair",
+            "section": "repair-what-we-fix"
+          }
+        },
+        {
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xSWWMycFZlV3AxTldKcFpVZGxTalpGTUZSV1drRRAB",
+          "provenance": {
+            "type": "evidence",
+            "ref": "Ci9DQUlRQUNvZENodHljRjlvT2xSWWMycFZlV3AxTldKcFpVZGxTalpGTUZSV1drRRAB",
+            "placement": "consistent-open-close",
+            "section": "repair-what-we-fix"
+          }
+        },
+        {
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2t0T04xVlBSMU5oUmprMU9TMXNibmx6WjJ0cldHYxAB",
+          "provenance": {
+            "type": "evidence",
+            "ref": "Ci9DQUlRQUNvZENodHljRjlvT2t0T04xVlBSMU5oUmprMU9TMXNibmx6WjJ0cldHYxAB",
+            "placement": "completed-door-fixed",
+            "section": "repair-what-we-fix"
+          }
+        },
+        {
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUNZNkplRm5BRRAB",
+          "provenance": {
+            "type": "evidence",
+            "ref": "ChdDSUhNMG9nS0VJQ0FnTUNZNkplRm5BRRAB",
+            "placement": "service-call-door-working",
+            "section": "repair-what-we-fix"
+          }
+        },
+        {
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25oaE9HeFNXVUUyUmt0VlowSkJPVWRCWmpSTVZYYxAB",
+          "provenance": {
+            "type": "evidence",
+            "ref": "Ci9DQUlRQUNvZENodHljRjlvT25oaE9HeFNXVUUyUmt0VlowSkJPVWRCWmpSTVZYYxAB",
+            "placement": "two-springs-two-car-door",
+            "section": "repair-springs-folded"
+          }
+        },
+        {
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2taQlh6VlZabU5OWjFKc2JISklTa1pXUlVwVGVuYxAB",
+          "provenance": {
+            "type": "evidence",
+            "ref": "Ci9DQUlRQUNvZENodHljRjlvT2taQlh6VlZabU5OWjFKc2JISklTa1pXUlVwVGVuYxAB",
+            "placement": "spring-replacement-completed",
+            "section": "repair-springs-folded"
+          }
+        },
+        {
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xkeFNsRnBOMll0V2pGblFsQXljR0pIV0ZreE5VRRAB",
+          "provenance": {
+            "type": "evidence",
+            "ref": "Ci9DQUlRQUNvZENodHljRjlvT2xkeFNsRnBOMll0V2pGblFsQXljR0pIV0ZreE5VRRAB",
+            "placement": "undersized-spring-corrected",
+            "section": "repair-springs-folded"
+          }
+        },
+        {
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25wemJWQkhVa3RWWTJKeVdYaFdlbFJOWlVGeFQxRRAB",
+          "provenance": {
+            "type": "evidence",
+            "ref": "Ci9DQUlRQUNvZENodHljRjlvT25wemJWQkhVa3RWWTJKeVdYaFdlbFJOWlVGeFQxRRAB",
+            "placement": "spring-repair-folded",
+            "section": "repair-springs-folded"
+          }
+        },
+        {
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tRMVoybGhYM1JWUldwb2JVNXNXbFozWDBaMVNIYxAB",
+          "provenance": {
+            "type": "evidence",
+            "ref": "Ci9DQUlRQUNvZENodHljRjlvT2tRMVoybGhYM1JWUldwb2JVNXNXbFozWDBaMVNIYxAB",
+            "placement": "coils-tracks-rollers",
+            "section": "repair-springs-folded"
+          }
+        },
+        {
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUNBZ082YzBRRRAB",
+          "provenance": {
+            "type": "evidence",
+            "ref": "ChdDSUhNMG9nS0VJQ0FnTUNBZ082YzBRRRAB",
+            "placement": "broken-spring-and-brackets",
+            "section": "repair-springs-folded"
+          }
+        },
+        {
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUNBbnNUOXB3RRAB",
+          "provenance": {
+            "type": "evidence",
+            "ref": "ChdDSUhNMG9nS0VJQ0FnTUNBbnNUOXB3RRAB",
+            "placement": "opener-springs-replaced",
+            "section": "repair-springs-folded"
+          }
+        },
+        {
+          "reviewId": "ChZDSUhNMG9nS0VQR2ZxNUc5cjZhckdREAE",
+          "provenance": {
+            "type": "evidence",
+            "ref": "ChZDSUhNMG9nS0VQR2ZxNUc5cjZhckdREAE",
+            "placement": "return-spring-monday-visit",
+            "section": "repair-springs-folded"
+          }
+        },
+        {
+          "reviewId": "ChZDSUhNMG9nS0VLeTZocG5jME9qc0t3EAE",
+          "provenance": {
+            "type": "evidence",
+            "ref": "ChZDSUhNMG9nS0VLeTZocG5jME9qc0t3EAE",
+            "placement": "sunday-text-monday-repair",
+            "section": "repair-springs-folded"
+          }
+        },
+        {
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xoRE1HZ3lUMWRpVWt3d1dsVXhjVE5XZEc1VWVuYxAB",
+          "provenance": {
+            "type": "evidence",
+            "ref": "Ci9DQUlRQUNvZENodHljRjlvT2xoRE1HZ3lUMWRpVWt3d1dsVXhjVE5XZEc1VWVuYxAB",
+            "placement": "options-without-pressure",
+            "section": "repair-options"
+          }
+        },
+        {
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURQZ2RtWDFnRRAB",
+          "provenance": {
+            "type": "evidence",
+            "ref": "ChdDSUhNMG9nS0VJQ0FnSURQZ2RtWDFnRRAB",
+            "placement": "diagnostics-and-repair",
+            "section": "repair-options"
+          }
+        },
+        {
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2psMlVHOVhVMDVrTFhwUlpWbDZjSFZUUjFKQlgwRRAB",
+          "provenance": {
+            "type": "evidence",
+            "ref": "Ci9DQUlRQUNvZENodHljRjlvT2psMlVHOVhVMDVrTFhwUlpWbDZjSFZUUjFKQlgwRRAB",
+            "placement": "maintenance-materials-on-hand",
+            "section": "repair-options"
+          }
+        },
+        {
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURQZ2NEbVJnEAE",
+          "provenance": {
+            "type": "evidence",
+            "ref": "ChZDSUhNMG9nS0VJQ0FnSURQZ2NEbVJnEAE",
+            "placement": "lubrication-and-adjustment",
+            "section": "repair-options"
+          }
+        },
+        {
+          "reviewId": "ChdDSUhNMG9nS0VQcUM5dGpxNjRxcHJBRRAB",
+          "provenance": {
+            "type": "evidence",
+            "ref": "ChdDSUhNMG9nS0VQcUM5dGpxNjRxcHJBRRAB",
+            "placement": "parts-on-truck-completed-repair",
+            "section": "repair-options"
+          }
+        },
+        {
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21STGNXUk1jMEZ1TmtsYVoyWlhTbEk1TjFsWWRHYxAB",
+          "provenance": {
+            "type": "evidence",
+            "ref": "Ci9DQUlRQUNvZENodHljRjlvT21STGNXUk1jMEZ1TmtsYVoyWlhTbEk1TjFsWWRHYxAB",
+            "placement": "follow-up-after-prior-fixes",
+            "section": "repair-springfield"
+          }
+        },
+        {
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUR2cmFTZE93EAE",
+          "provenance": {
+            "type": "evidence",
+            "ref": "ChZDSUhNMG9nS0VJQ0FnSUR2cmFTZE93EAE",
+            "placement": "local-springfield-repairs-and-service",
+            "section": "repair-springfield"
+          }
+        },
+        {
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2t4alNtbDBaVVV4VVRselpIQTJhakpOYURSeE1HYxAB",
+          "provenance": {
+            "type": "evidence",
+            "ref": "Ci9DQUlRQUNvZENodHljRjlvT2t4alNtbDBaVVV4VVRselpIQTJhakpOYURSeE1HYxAB",
+            "placement": "will-service-repair-jenny-phone",
+            "section": "repair-springfield"
+          }
+        },
+        {
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xSSU1YVXhWMDVDZWtWMVZtTm5SbGhHTld4amVGRRAB",
+          "provenance": {
+            "type": "evidence",
+            "ref": "Ci9DQUlRQUNvZENodHljRjlvT2xSSU1YVXhWMDVDZWtWMVZtTm5SbGhHTld4amVGRRAB",
+            "placement": "fixed-and-serviced",
+            "section": "repair-springfield"
+          }
+        }
+      ]
+    },
+    {
+      "url": "/garage-door-installation",
+      "type": "service",
+      "prescriptionId": "Service:/garage-door-installation",
+      "primaryKeyword": "garage door installation Springfield MO",
+      "title": "Garage Door Installation in Springfield, MO",
+      "seoTitle": "Garage Door Installation in Springfield, MO",
+      "route": "/garage-door-installation",
+      "metaDescription": "Garage door installation in Springfield, MO for new and replacement doors. Help choosing a door, custom heights, paint-ready trim, and a cleaned workspace.",
+      "h1": "New garage doors installed for the opening you have",
+      "body": "If you need a new door in the opening you have, including a replacement, this is the installation page. Jenny helps you choose. Will installs. Repair of a door that already hangs in the opening is on the repair page.",
+      "sections": [
+        {
+          "id": "install-proof-lead",
+          "heading": "New doors in, workspace picked up",
+          "body": "Installation is a new door for the opening you have, including jobs with more than one door. Marcie Spitzer\u2019s new garage doors were in, they looked the way she wanted, the installer was polite, and he kept the workspace picked up while he worked. If the door you already have will not travel, that work belongs on the repair page.",
+          "quotes": [
+            {
+              "quote": "We got our new garage doors installed yesterday and they look amazing!  Very professional and the gentleman that did the installation was very polite and kept things picked up while he worked.",
+              "attribution": "Marcie Spitzer",
+              "reviewer": "Marcie Spitzer",
+              "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25jM2NVNTZlVzF0YVhCNVdXSlVZVEpmYW05UExYYxAB",
+              "provenance": {
+                "type": "review",
+                "ref": "Ci9DQUlRQUNvZENodHljRjlvT25jM2NVNTZlVzF0YVhCNVdXSlVZVEpmYW05UExYYxAB",
+                "placement": "lead-quote",
+                "section": "install-proof-lead"
+              }
+            }
+          ]
+        },
+        {
+          "id": "install-selection",
+          "heading": "Help choosing a door",
+          "body": "Choosing a door is a conversation about the opening you have and the budget you can live with. Christine Kallmbah asked neighbors for recommendations, then worked with Jenny on the door she wanted. Jenny stays on selection and budget. Will installs the door you pick.",
+          "quotes": [
+            {
+              "quote": "Jenny is a doll, a big help with choosing a garage door you want and very budget friendly! Will installs them.",
+              "attribution": "Christine Kallmbah",
+              "reviewer": "Christine Kallmbah",
+              "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pBMU5rSktSMmhHV1RKb2NVdE1TVXBOVFRsS01YYxAB",
+              "provenance": {
+                "type": "review",
+                "ref": "Ci9DQUlRQUNvZENodHljRjlvT2pBMU5rSktSMmhHV1RKb2NVdE1TVXBOVFRsS01YYxAB",
+                "placement": "selection-help-quote",
+                "section": "install-selection"
+              }
+            }
+          ]
+        },
+        {
+          "id": "install-custom-height",
+          "heading": "A taller door sized to the opening you already have",
+          "body": "Scott Heffern replaced a 1980 7-foot overhead door with a 9-foot-6-inch door so a camper van would fit. Will and Jenny came out in person to coordinate the door size to the opening he had already reframed. Will installed the door and cleaned the workspace before he left. Bring the opening you actually have, including any reframing already done. The job is the door, sized to that opening.",
+          "quotes": [
+            {
+              "quote": "My project was replacing a 1980 7ft overhead door with a 9\u2019-6\u201d tall door for my reframed opening so we could fit our new camper van.",
+              "attribution": "Scott Heffern",
+              "reviewer": "Scott Heffern",
+              "reviewId": "ChZDSUhNMG9nS0VJNng0b1B1N3NEY0ZBEAE",
+              "provenance": {
+                "type": "review",
+                "ref": "ChZDSUhNMG9nS0VJNng0b1B1N3NEY0ZBEAE",
+                "placement": "taller-door-reframed-opening-quote",
+                "section": "install-custom-height"
+              }
+            }
+          ]
+        },
+        {
+          "id": "install-trim-cleanup",
+          "heading": "Paint-ready trim and a cleaned workspace",
+          "body": "Finish work shows up in the reviews as much as the door itself. Matthew Smith described professional installation from start to finish. Because they were painting, the technician left the trim loose so the paint could go on cleanly. Combined with installers who keep the driveway picked up, that is what done looks like on these jobs: the door is in, the trim is ready for paint if you need it, and the workspace is not left for you to sort out.",
+          "quotes": [
+            {
+              "quote": "We are painting the door and the technician left the trim loose for the perfect application for paint.",
+              "attribution": "Matthew Smith",
+              "reviewer": "Matthew Smith",
+              "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xjeVFtOTRMV3BTTUc1Qk5VeFNhVTlJYW1GcFMwRRAB",
+              "provenance": {
+                "type": "review",
+                "ref": "Ci9DQUlRQUNvZENodHljRjlvT2xjeVFtOTRMV3BTTUc1Qk5VeFNhVTlJYW1GcFMwRRAB",
+                "placement": "paint-ready-trim-quote",
+                "section": "install-trim-cleanup"
+              }
+            }
+          ]
+        },
+        {
+          "id": "install-replacement",
+          "heading": "Replacement doors for the opening that is already there",
+          "body": "Some jobs take an existing door out and put a new one in. Cameron Spitzer had doors and openers replaced together as one job, then had 360 back a couple of months later to see that everything still worked. When Gregory Ritchie\u2019s door failed, he reached Jenny by messenger, Will came out, and they put a brand-new garage door in the same opening later that week.",
+          "quotes": [
+            {
+              "quote": "They replaced my doors and openers with quality materials at a lower cost than the competitors.",
+              "attribution": "Cameron Spitzer",
+              "reviewer": "Cameron Spitzer",
+              "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xWdlZGQk9hMjFOUlhaVk5rczFVR2RKTlVKWlVGRRAB",
+              "provenance": {
+                "type": "review",
+                "ref": "Ci9DQUlRQUNvZENodHljRjlvT2xWdlZGQk9hMjFOUlhaVk5rczFVR2RKTlVKWlVGRRAB",
+                "placement": "replacement-doors-quote",
+                "section": "install-replacement"
+              }
+            }
+          ]
+        },
+        {
+          "id": "install-next",
+          "heading": "Plan a door for the opening you have",
+          "body": "If you are replacing a door or fitting a new one to a standard or taller opening, call (417) 366-7360 and ask for Jenny. Shop hours are Monday\u2013Friday, 8 AM to 5 PM. Saturday and Sunday the shop is closed. Tell her the opening size you have, whether any reframing is already done, and whether you plan to paint, so the door and trim can be planned around that opening.",
+          "quotes": []
+        }
+      ],
+      "claims": [
+        {
+          "text": "Completed Springfield installation jobs include new doors, multi-door installs, and a taller door sized to a reframed opening.",
+          "provenance": {
+            "type": "claim",
+            "ref": "Service:/garage-door-installation",
+            "placement": "prescribed-claim-completed-installs",
+            "section": "install-proof-lead"
+          }
+        },
+        {
+          "text": "Installation visits include help choosing a door, trim left ready to paint, and a workspace that was picked up.",
+          "provenance": {
+            "type": "claim",
+            "ref": "Service:/garage-door-installation",
+            "placement": "prescribed-claim-selection-trim-cleanup",
+            "section": "install-selection"
+          }
+        }
+      ],
+      "reviewPlacements": [
+        {
+          "quote": "We got our new garage doors installed yesterday and they look amazing!  Very professional and the gentleman that did the installation was very polite and kept things picked up while he worked.",
+          "attribution": "Marcie Spitzer",
+          "reviewer": "Marcie Spitzer",
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25jM2NVNTZlVzF0YVhCNVdXSlVZVEpmYW05UExYYxAB",
+          "provenance": {
+            "type": "review",
+            "ref": "Ci9DQUlRQUNvZENodHljRjlvT25jM2NVNTZlVzF0YVhCNVdXSlVZVEpmYW05UExYYxAB",
+            "placement": "lead-quote",
+            "section": "install-proof-lead"
+          }
+        },
+        {
+          "quote": "Jenny is a doll, a big help with choosing a garage door you want and very budget friendly! Will installs them.",
+          "attribution": "Christine Kallmbah",
+          "reviewer": "Christine Kallmbah",
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pBMU5rSktSMmhHV1RKb2NVdE1TVXBOVFRsS01YYxAB",
+          "provenance": {
+            "type": "review",
+            "ref": "Ci9DQUlRQUNvZENodHljRjlvT2pBMU5rSktSMmhHV1RKb2NVdE1TVXBOVFRsS01YYxAB",
+            "placement": "selection-help-quote",
+            "section": "install-selection"
+          }
+        },
+        {
+          "quote": "My project was replacing a 1980 7ft overhead door with a 9\u2019-6\u201d tall door for my reframed opening so we could fit our new camper van.",
+          "attribution": "Scott Heffern",
+          "reviewer": "Scott Heffern",
+          "reviewId": "ChZDSUhNMG9nS0VJNng0b1B1N3NEY0ZBEAE",
+          "provenance": {
+            "type": "review",
+            "ref": "ChZDSUhNMG9nS0VJNng0b1B1N3NEY0ZBEAE",
+            "placement": "taller-door-reframed-opening-quote",
+            "section": "install-custom-height"
+          }
+        },
+        {
+          "quote": "We are painting the door and the technician left the trim loose for the perfect application for paint.",
+          "attribution": "Matthew Smith",
+          "reviewer": "Matthew Smith",
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xjeVFtOTRMV3BTTUc1Qk5VeFNhVTlJYW1GcFMwRRAB",
+          "provenance": {
+            "type": "review",
+            "ref": "Ci9DQUlRQUNvZENodHljRjlvT2xjeVFtOTRMV3BTTUc1Qk5VeFNhVTlJYW1GcFMwRRAB",
+            "placement": "paint-ready-trim-quote",
+            "section": "install-trim-cleanup"
+          }
+        },
+        {
+          "quote": "They replaced my doors and openers with quality materials at a lower cost than the competitors.",
+          "attribution": "Cameron Spitzer",
+          "reviewer": "Cameron Spitzer",
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xWdlZGQk9hMjFOUlhaVk5rczFVR2RKTlVKWlVGRRAB",
+          "provenance": {
+            "type": "review",
+            "ref": "Ci9DQUlRQUNvZENodHljRjlvT2xWdlZGQk9hMjFOUlhaVk5rczFVR2RKTlVKWlVGRRAB",
+            "placement": "replacement-doors-quote",
+            "section": "install-replacement"
+          }
+        }
+      ],
+      "reviewEvidence": [
+        {
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25jM2NVNTZlVzF0YVhCNVdXSlVZVEpmYW05UExYYxAB",
+          "provenance": {
+            "type": "evidence",
+            "ref": "Ci9DQUlRQUNvZENodHljRjlvT25jM2NVNTZlVzF0YVhCNVdXSlVZVEpmYW05UExYYxAB",
+            "placement": "lead-new-doors-installed",
+            "section": "install-proof-lead"
+          }
+        },
+        {
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pBMU5rSktSMmhHV1RKb2NVdE1TVXBOVFRsS01YYxAB",
+          "provenance": {
+            "type": "evidence",
+            "ref": "Ci9DQUlRQUNvZENodHljRjlvT2pBMU5rSktSMmhHV1RKb2NVdE1TVXBOVFRsS01YYxAB",
+            "placement": "help-choosing-door",
+            "section": "install-selection"
+          }
+        },
+        {
+          "reviewId": "ChZDSUhNMG9nS0VJNng0b1B1N3NEY0ZBEAE",
+          "provenance": {
+            "type": "evidence",
+            "ref": "ChZDSUhNMG9nS0VJNng0b1B1N3NEY0ZBEAE",
+            "placement": "taller-door-reframed-opening",
+            "section": "install-custom-height"
+          }
+        },
+        {
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xjeVFtOTRMV3BTTUc1Qk5VeFNhVTlJYW1GcFMwRRAB",
+          "provenance": {
+            "type": "evidence",
+            "ref": "Ci9DQUlRQUNvZENodHljRjlvT2xjeVFtOTRMV3BTTUc1Qk5VeFNhVTlJYW1GcFMwRRAB",
+            "placement": "paint-ready-trim",
+            "section": "install-trim-cleanup"
+          }
+        },
+        {
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xWdlZGQk9hMjFOUlhaVk5rczFVR2RKTlVKWlVGRRAB",
+          "provenance": {
+            "type": "evidence",
+            "ref": "Ci9DQUlRQUNvZENodHljRjlvT2xWdlZGQk9hMjFOUlhaVk5rczFVR2RKTlVKWlVGRRAB",
+            "placement": "replacement-doors",
+            "section": "install-replacement"
+          }
+        },
+        {
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25JelNERXdhRFpIV0hscFUxOUxkakZtYzFaMWFXYxAB",
+          "provenance": {
+            "type": "evidence",
+            "ref": "Ci9DQUlRQUNvZENodHljRjlvT25JelNERXdhRFpIV0hscFUxOUxkakZtYzFaMWFXYxAB",
+            "placement": "new-door-by-thursday-that-job",
+            "section": "install-replacement"
+          }
+        }
+      ]
+    }
+  ]
+}
