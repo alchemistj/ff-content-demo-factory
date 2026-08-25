@@ -52,9 +52,14 @@ function recomputeSource(run, currentHeadSha = null) {
       reviewJudgments: sourceMaterial.reviewReceipts || [],
     }).map(([label, receipt]) => ({ label, digest: safeDigest(receipt), binding })),
   };
-  const sourceIdentity = checkpoint.sourceIdentity || {};
+  const sourceIdentity = checkpoint.sourceIdentity || { provider: 'factory-trusted-source', runId: run?.runId || null, artifactId: `source-${run?.runId || 'missing'}`, sourceSha, rootIdentity: `factory-source:${run?.runId || 'missing'}` };
+  if (!sourceIdentity || typeof sourceIdentity !== 'object' || Array.isArray(sourceIdentity)) throw new Error('Checkpoint source identity is missing');
+  for (const field of ['provider', 'runId', 'artifactId', 'sourceSha', 'rootIdentity']) {
+    if (!sourceIdentity[field] || String(sourceIdentity[field]).trim() === '') throw new Error(`Checkpoint source identity is missing ${field}`);
+  }
+  if (sourceIdentity.runId !== run?.runId || sourceIdentity.sourceSha !== sourceSha) throw new Error('Checkpoint source identity is stale or tampered');
   const sourceArtifactDigest = digest({ sourceIdentity, sourceMaterial });
-  return { sourceMaterial, sourceMaterialDigest, sourceSha, sourceManifest, sourceManifestDigest: digest(sourceManifest), sourceArtifactDigest, binding };
+  return { sourceIdentity, sourceMaterial, sourceMaterialDigest, sourceSha, sourceManifest, sourceManifestDigest: digest(sourceManifest), sourceArtifactDigest, binding };
 }
 
 function recomputeEvidence(run) {
@@ -103,7 +108,8 @@ function assertSemanticCheckpoint({ checkpoint, state, currentHeadSha }) {
   if (prescription.evidenceDigest !== actual.evidenceDigest) throw new Error('Checkpoint evidence digest is invented or stale');
   if (prescription.pageSetDigest !== actual.pageSetDigest) throw new Error('Checkpoint page-set digest is invented or stale');
   if (prescription.prescriptionDigest !== actual.prescriptionDigest) throw new Error('Checkpoint prescription digest is invented or stale');
-  if (checkpoint.sourceArtifactDigest && checkpoint.sourceArtifactDigest !== actualSource.sourceArtifactDigest) throw new Error('Checkpoint source artifact digest is invented or stale');
+  if (!checkpoint.sourceIdentity || digest(checkpoint.sourceIdentity) !== digest(actualSource.sourceIdentity)) throw new Error('Checkpoint source identity is invented or stale');
+  if (!checkpoint.sourceArtifactDigest || checkpoint.sourceArtifactDigest !== actualSource.sourceArtifactDigest) throw new Error('Checkpoint source artifact digest is invented or stale');
   if (currentHeadSha && recordedManifest.binding?.headSha !== currentHeadSha) throw new Error('Checkpoint source manifest head binding is stale');
   return actual;
 }
