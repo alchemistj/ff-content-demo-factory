@@ -73,8 +73,7 @@ jobs:
         run: |
           digest="$(node -e "const fs=require('node:fs');process.stdout.write(JSON.parse(fs.readFileSync(process.env.DISPATCH_FILE,'utf8')).dispatchDigest)")"
           key="$(node -e "const fs=require('node:fs');process.stdout.write(JSON.parse(fs.readFileSync(process.env.DISPATCH_FILE,'utf8')).dispatchKey)")"
-          comments="$(gh api --paginate "repos/$GITHUB_REPOSITORY/issues/$ISSUE_NUMBER/comments?per_page=100")"
-          prior="$(COMMENTS="$comments" DIGEST="$digest" KEY="$key" node -e "const a=JSON.parse(process.env.COMMENTS||'[]'); const d=process.env.DIGEST; const k=process.env.KEY; const x=a.find(c=>String(c.body||'').includes('Dispatch packet digest: '+d) || String(c.body||'').includes('Dispatch key: '+k)); process.stdout.write(x?.html_url||'')")"
+          prior="$(gh api --paginate "repos/$GITHUB_REPOSITORY/issues/$ISSUE_NUMBER/comments?per_page=100" --jq '.[] | [.html_url, .body] | @tsv' | awk -v digest="$digest" -v key="$key" 'index($0, digest) || index($0, key) {print $1; exit}')"
           if [ -n "$prior" ]; then
             comment_url="$prior"
             echo "idempotent_existing_comment=$comment_url"
