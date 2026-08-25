@@ -7,7 +7,7 @@ import test from "node:test";
 import { EXPECTED_VERIFIED_CORRECTION, EXPECTED_VERIFIED_CORRECTION_V2, EXPECTED_VERIFIED_CORRECTION_V3, selectVerifiedWriter1Dispatch, validateControl as rawValidateControl } from "../../scripts/360-words-control.mjs";
 import { digestWriter1QuarantineCorrectionV3Input, digestWriter1QuarantineCorrectionV3Prompt } from "../../scripts/360-words-recovery-prompt.mjs";
 import { validateSealed, writer1Projection } from "../../scripts/360-words-canary.js";
-import { VERIFIED_WRITER1_AGENT_ID, VERIFIED_WRITER1_PROMPT_DIGEST, VERIFIED_WRITER1_PROMPT_V2_DIGEST, validateVerifiedWriter1Control, validateVerifiedWriter1PostDispatchControl, validateVerifiedWriter1SealOnlyControl, verifyOriginalDispatchEvidence, runVerifiedWriter1Correction, verifyPinnedSealedManifestBytes, quarantineWriter1PostDispatchOutput, persistVerifiedWriterFailureSurface, VERIFIED_WRITER1_REJECTED_OUTPUT_PATH, VERIFIED_WRITER1_REJECTION_RECEIPT_PATH, VERIFIED_WRITER1_CORRECTION_V3_ARTIFACT_PATHS, VERIFIED_WRITER1_CORRECTION_V3_ARTIFACT_ZIP_SIZE, VERIFIED_WRITER1_CORRECTION_V3_SIDECAR_PINS, VERIFIED_WRITER1_CORRECTION_V3_SOURCE, validateVerifiedWriter1CorrectionV3ArtifactListing, validateVerifiedWriter1CorrectionV3ArtifactLayout, validateVerifiedWriter1CorrectionV3SidecarMetadata, verifyVerifiedWriter1CorrectionV3PinnedBytes } from "../../scripts/360-words-verified.js";
+import { VERIFIED_WRITER1_AGENT_ID, VERIFIED_WRITER1_PROMPT_DIGEST, VERIFIED_WRITER1_PROMPT_V2_DIGEST, validateVerifiedWriter1Control, validateVerifiedWriter1PostDispatchControl, validateVerifiedWriter1SealOnlyControl, validateVerifiedWriter1CorrectionV3Control, verifyOriginalDispatchEvidence, runVerifiedWriter1Correction, verifyPinnedSealedManifestBytes, quarantineWriter1PostDispatchOutput, persistVerifiedWriterFailureSurface, VERIFIED_WRITER1_REJECTED_OUTPUT_PATH, VERIFIED_WRITER1_REJECTION_RECEIPT_PATH, VERIFIED_WRITER1_CORRECTION_V3_ARTIFACT_PATHS, VERIFIED_WRITER1_CORRECTION_V3_ARTIFACT_ZIP_SIZE, VERIFIED_WRITER1_CORRECTION_V3_SIDECAR_PINS, VERIFIED_WRITER1_CORRECTION_V3_SOURCE, validateVerifiedWriter1CorrectionV3ArtifactListing, validateVerifiedWriter1CorrectionV3ArtifactLayout, validateVerifiedWriter1CorrectionV3SidecarMetadata, verifyVerifiedWriter1CorrectionV3PinnedBytes } from "../../scripts/360-words-verified.js";
 import { digestOf } from "../../src/contracts/digests.js";
 import { createHash } from "node:crypto";
 import { assertNoLocalDownstreamGeneration, assertVerifiedDownstreamState, VERIFIED_PUBLIC_ROUTES, VERIFIED_STAGE_POLICY, VERIFIED_WRITER3_SEALED_FACTS } from "../../src/pipeline/verified-words-policy.js";
@@ -108,6 +108,24 @@ test("exact quarantined Writer1 correction-v3 wake is classified and bound witho
   assert.throws(() => rawValidateControl({ ...active, recovery: { ...recovery, promptDigest: "sha256:" + "0".repeat(64) } }, { changedPaths: [".factory-wake/360-words-control.json"], actor: "architect", owner: "architect", commitSha: "f".repeat(40), beforeSha: sourceSha, parentSha: sourceSha, verifiedLane: true }), /v3 wake/u);
   const workflow = readFileSync(path.join(root, ".github/workflows/architect-360-words-canary.yml"), "utf8");
   assert.match(workflow, /verified-writer1-correction-v3/u); assert.match(workflow, /scripts\/360-words-verified\.ts --writer1-correction-v3/u);
+});
+
+test("the audited Action v3 wake envelope, including quarantine-file sourceArtifact, passes the production validator before transport", async () => {
+  const control = JSON.parse(readFileSync(path.join(root, ".factory-wake/360-words-control.json"), "utf8"));
+  const sourceSha = "2d49b0a5996e78f6beca2c8c52563da8ad10da6b";
+  const inputDigest = digestWriter1QuarantineCorrectionV3Input("sha256:715f651a53055444b8381dd8a276a2046d93776c61d88a2193cc2d42a1c83ad6");
+  const promptDigest = digestWriter1QuarantineCorrectionV3Prompt();
+  const recovery: any = { ...EXPECTED_VERIFIED_CORRECTION_V3, sourceSha, inputDigest, promptDigest, allowCreate: false, allowResume: true, allowFollowUp: true, maxFollowUps: 1, idempotencyKey: `${EXPECTED_VERIFIED_CORRECTION_V3.agentId}:writer1:correction:v3:${inputDigest}:${promptDigest}` };
+  const active: any = { ...control, wakeNonce: "W1-VERIFIED-20260825-V3-DELETE-2D49", policy: { ...control.policy, mode: "writer1-correction", stopAfter: "awaiting-architect-qa", approvedRoutes: ["/", "/garage-door-repair", "/garage-door-installation", "/contact"], recovery } };
+  assert.doesNotThrow(() => validateVerifiedWriter1CorrectionV3Control(active, inputDigest));
+  assert.deepEqual(rawValidateControl(active, { changedPaths: [".factory-wake/360-words-control.json"], actor: "architect", owner: "architect", commitSha: "826ffd78b56144c6ccefe5bcd52e235d79783570", beforeSha: sourceSha, parentSha: sourceSha, verifiedLane: true }), { dormant: false, stage: "writer1", sourceSha });
+  const artifactRoot = await mkdtemp(path.join(tmpdir(), "ff-writer1-v3-extracted-root-"));
+  try {
+    for (const logicalPath of VERIFIED_WRITER1_CORRECTION_V3_ARTIFACT_PATHS) {
+      const file = path.join(artifactRoot, logicalPath); await mkdir(path.dirname(file), { recursive: true }); await writeFile(file, "production-shaped-fixture");
+    }
+    assert.doesNotThrow(() => validateVerifiedWriter1CorrectionV3ArtifactLayout(artifactRoot));
+  } finally { await rm(artifactRoot, { recursive: true, force: true }); }
 });
 
 test("correction-v3 source artifact requires exactly the four artifact-relative paths", () => {
