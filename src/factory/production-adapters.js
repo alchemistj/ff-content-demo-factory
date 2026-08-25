@@ -63,6 +63,23 @@ function candidateFromPlace(candidate) {
   };
 }
 
+function evidenceSourceUrl(item) {
+  if (!item || typeof item !== 'object' || Array.isArray(item)) return null;
+  return item.sourceUrl || item.url || item.src || item.provenance?.sourceUrl || item.provenance?.url || null;
+}
+
+function validateOwnedEvidence(items, host, label) {
+  if (!Array.isArray(items)) throw new Error(`${label} must be an array`);
+  for (const item of items) {
+    const sourceUrl = evidenceSourceUrl(item);
+    if (!sourceUrl) throw new Error(`${label} item is missing source URL/provenance`);
+    let sourceHost;
+    try { sourceHost = new URL(sourceUrl).hostname.replace(/^www\./, '').toLowerCase(); } catch { throw new Error(`${label} item source URL is invalid`); }
+    if (sourceHost !== host) throw new Error(`${label} item source URL is not bound to the inspected business-owned domain`);
+    if (!item.provenance && !item.source && !item.sourceRef && !item.sourceUrl && !item.url && !item.src) throw new Error(`${label} item is missing provenance`);
+  }
+}
+
 function normalizeWebsiteAudit(result, candidate) {
   if (!result || typeof result.website !== 'string' || !result.website.trim()) throw new Error('Website audit must identify the inspected business-owned website');
   let resultHost;
@@ -75,6 +92,11 @@ function normalizeWebsiteAudit(result, candidate) {
   }
   const evidence = Array.isArray(result.evidence) ? result.evidence : [];
   const images = Array.isArray(result.images) ? result.images : [];
+  validateOwnedEvidence(evidence, resultHost, 'Website audit evidence');
+  validateOwnedEvidence(images, resultHost, 'Website audit image');
+  if (result.siteCopyEvidence != null) validateOwnedEvidence(result.siteCopyEvidence, resultHost, 'Website site-copy evidence');
+  if (result.ownedGraphicEvidence != null) validateOwnedEvidence(result.ownedGraphicEvidence, resultHost, 'Website graphic evidence');
+  if (result.graphicsInspection?.findings != null) validateOwnedEvidence(result.graphicsInspection.findings, resultHost, 'Website graphics inspection');
   const siteCopyEvidence = result.siteCopyEvidence || evidence.filter((item) => /copy|service|nap|contact|website/i.test(String(item.type || item.kind || '')));
   const ownedGraphicEvidence = result.ownedGraphicEvidence || evidence.filter((item) => /graphic|flyer|image|gallery|marketing/i.test(String(item.type || item.kind || '')));
   const findings = result.graphicsInspection?.findings || result.graphicsFindings || images.map((image) => ({ url: image.url || image.src || null, kind: image.kind || 'website-image', provenance: image.provenance || null }));
@@ -283,9 +305,11 @@ function createProductionAdapters({
       if (!Array.isArray(pages) || !pages.length) throw new Error('Page prescription requires explicit validated pages');
       if (!Array.isArray(services) || !services.length) throw new Error('Page prescription requires a complete candidate service comparison');
       const serviceLedger = decision.serviceCoverageLedger || decision.serviceLedger || modelResult.serviceCoverageLedger;
+      const sourceBinding = decision.sourceCheckpoint || decision.sourceBinding || modelResult.sourceCheckpoint || modelResult.sourceBinding;
+      if (!sourceBinding) throw new Error('Page prescription requires a trusted source checkpoint binding');
       const boundIdentity = { prospectId: finalist?.prospectId || finalist?.placeId, placeId: finalist?.placeId, runId: finalist?.runId || decision.runId };
-      validateCompleteCanonicalLedger(serviceLedger, { services, pages, identity: boundIdentity });
-      const validated = validatePrescription({ finalist, classification, services, proposedPages: pages, architectReview: decision.architectReview || decision, policy: decision.pagePolicy || modelResult.pagePolicy, override: decision.expansionOverride || modelResult.expansionOverride, serviceLedger, runContext: { ...boundIdentity }, sourceBinding: decision.sourceCheckpoint || decision.sourceBinding });
+      validateCompleteCanonicalLedger(serviceLedger, { services, pages, identity: { ...boundIdentity, sourceIdentity: sourceBinding.sourceIdentity } });
+      const validated = validatePrescription({ finalist, classification, services, proposedPages: pages, architectReview: decision.architectReview || decision, policy: decision.pagePolicy || modelResult.pagePolicy, override: decision.expansionOverride || modelResult.expansionOverride, serviceLedger, runContext: { ...boundIdentity }, sourceBinding });
       const evidence = buildPrescriptionEvidence({ classification, pages: validated.pages, candidateServices: services });
       const output = {
         ...validated,
