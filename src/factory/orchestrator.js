@@ -109,12 +109,28 @@ function requiredReceipt(value, label, fallback = null, binding = null) {
   if (fallback) return { provider: 'repository-test-fixture', operation: label, status: 'completed', terminalStatus: 'succeeded', receiptKey: `test:${label}`, inputDigest: digest({ label, fixture: true, source: value || null }), outputDigest: digest(fallback), startedAt: new Date(0).toISOString(), completedAt: new Date(0).toISOString(), ...fallback };
   if (!value || typeof value !== 'object' || Array.isArray(value)) throw Object.assign(new Error(`Trusted source checkpoint requires ${label} receipt`), { code: 'SOURCE_RECEIPT_MISSING' });
   if (!value.provider || !value.operation || !TERMINAL_RECEIPT_STATUSES.has(String(value.status || '').toLowerCase()) || value.terminalStatus !== 'succeeded') throw Object.assign(new Error(`Trusted source checkpoint requires complete terminal ${label} receipt`), { code: 'SOURCE_RECEIPT_INVALID' });
+  const expectedOperation = String(label).split(':')[0];
+  if (String(value.operation) !== expectedOperation) throw Object.assign(new Error(`Trusted source checkpoint ${label} receipt operation is mismatched`), { code: 'SOURCE_RECEIPT_INVALID' });
+  const expectedProvider = new Set(['discovery', 'finalist-enrichment']).has(expectedOperation) ? 'apify' : new Set(['website-audit', 'review-judgment']).has(expectedOperation) ? 'cursor-sdk' : null;
+  if (expectedProvider && String(value.provider) !== expectedProvider && !(expectedProvider === 'cursor-sdk' && value.provider === 'cursor-cloud-agent')) throw Object.assign(new Error(`Trusted source checkpoint ${label} receipt provider is mismatched`), { code: 'SOURCE_RECEIPT_INVALID' });
   if (!value.inputDigest || !value.outputDigest || !value.startedAt || !value.completedAt) throw Object.assign(new Error(`Trusted source checkpoint requires complete digests/timestamps for ${label}`), { code: 'SOURCE_RECEIPT_INVALID' });
   const vendor = value.vendorReceipt || value;
   const hasIdentity = vendor.agentId || vendor.runId || vendor.jobId || vendor.artifactId || vendor.datasetId || value.receiptKey;
   if (!hasIdentity) throw Object.assign(new Error(`Trusted source checkpoint requires vendor/agent identity for ${label}`), { code: 'SOURCE_RECEIPT_INVALID' });
   if ((value.provider === 'cursor-sdk' || value.provider === 'cursor-cloud-agent') && (!vendor.runId || !vendor.threadUrl)) throw Object.assign(new Error(`Trusted source checkpoint requires Cursor run/thread identity for ${label}`), { code: 'SOURCE_RECEIPT_INVALID' });
   if (value.provider === 'apify' && (!vendor.runId || !vendor.datasetId)) throw Object.assign(new Error(`Trusted source checkpoint requires Apify run/dataset identity for ${label}`), { code: 'SOURCE_RECEIPT_INVALID' });
+  if (binding) {
+    const received = value.binding || value.context || {};
+    for (const field of ['runId', 'prospectId', 'placeId', 'headSha', 'sourceArtifactDigest', 'sourceManifestDigest']) {
+      if (binding[field] != null && received[field] != null && String(received[field]) !== String(binding[field])) throw Object.assign(new Error(`Trusted source checkpoint ${label} receipt ${field} binding is mismatched`), { code: 'SOURCE_RECEIPT_INVALID' });
+    }
+    const input = value.input || value.request || {};
+    const inputPlaceId = input.placeId || input.candidate?.placeId;
+    if (binding.placeId != null && expectedOperation !== 'discovery' && inputPlaceId == null) throw Object.assign(new Error(`Trusted source checkpoint ${label} receipt is missing candidate binding`), { code: 'SOURCE_RECEIPT_INVALID' });
+    if (binding.placeId != null && inputPlaceId != null && String(inputPlaceId) !== String(binding.placeId)) throw Object.assign(new Error(`Trusted source checkpoint ${label} receipt candidate binding is mismatched`), { code: 'SOURCE_RECEIPT_INVALID' });
+    if (binding.vendorRunId != null && String(vendor.runId) !== String(binding.vendorRunId)) throw Object.assign(new Error(`Trusted source checkpoint ${label} receipt vendor run binding is mismatched`), { code: 'SOURCE_RECEIPT_INVALID' });
+    if (binding.reviewId != null && input.reviewId != null && String(input.reviewId) !== String(binding.reviewId)) throw Object.assign(new Error(`Trusted source checkpoint ${label} receipt review binding is mismatched`), { code: 'SOURCE_RECEIPT_INVALID' });
+  }
   return value;
 }
 function sourceCheckpointFor(run, state, { allowTestFixtures = false } = {}) {
@@ -122,13 +138,14 @@ function sourceCheckpointFor(run, state, { allowTestFixtures = false } = {}) {
   const auditReceiptForCandidate = state.auditReceipts?.[candidateIdentity] || state.auditReceipts?.[run.candidate?.placeId];
   const fixtureFallback = allowTestFixtures ? { fixture: true } : null;
   const actionProof = actionProofFromEnvironment();
-  const discoveryReceipt = requiredReceipt(state.discoveryPacket?.receipt || state.discoveryPacket?.provenance?.run, 'discovery', fixtureFallback);
-  const auditReceipt = requiredReceipt(auditReceiptForCandidate, 'website-audit', fixtureFallback);
-  const enrichmentReceipt = requiredReceipt(run.paidWork?.finalistEnrichment?.receipt, 'finalist-enrichment', fixtureFallback);
+  const receiptBinding = { runId: run.runId, prospectId: run.prospectId || run.candidate?.placeId || null, placeId: run.candidate?.placeId || null, headSha: actionProof?.checkedOutSha || null };
+  const discoveryReceipt = requiredReceipt(state.discoveryPacket?.receipt || state.discoveryPacket?.provenance?.run, 'discovery', fixtureFallback, receiptBinding);
+  const auditReceipt = requiredReceipt(auditReceiptForCandidate, 'website-audit', fixtureFallback, receiptBinding);
+  const enrichmentReceipt = requiredReceipt(run.paidWork?.finalistEnrichment?.receipt, 'finalist-enrichment', fixtureFallback, receiptBinding);
   const judgments = run.artifacts.reviewJudgments || {};
   const reviewReceipts = Object.entries(judgments).map(([reviewId, judgment]) => ({
     reviewId,
-    receipt: requiredReceipt(judgment?.receipt || judgment?.cursorReceipt || judgment?.provenance, `review-judgment:${reviewId}`, fixtureFallback),
+    receipt: requiredReceipt(judgment?.receipt || judgment?.cursorReceipt || judgment?.provenance, `review-judgment:${reviewId}`, fixtureFallback, { ...receiptBinding, reviewId }),
   }));
   if (!allowTestFixtures && (!actionProof?.checkedOutSha || actionProof.headAssertion !== true)) throw Object.assign(new Error('Trusted source checkpoint requires exact checked-out head binding'), { code: 'SOURCE_HEAD_BINDING_MISSING' });
   const sourceMaterial = {
