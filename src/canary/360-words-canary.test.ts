@@ -171,7 +171,8 @@ test("workflow is limited to the Architect control push and one dormant-safe Wri
   assert.match(workflow, /scripts\/360-words-control\.mjs/);
   assert.match(workflow, /Download and verify exact prior Writer1 dispatch artifact/);
   assert.match(workflow, /Recover Writer1 artifact on the same Cursor thread and stop at Architect QA|Run bounded Writer1 path and stop at Architect QA/);
-  assert.match(workflow, /scripts\/360-words-canary\.ts --artifact-recovery/);
+  assert.doesNotMatch(workflow, /scripts\/360-words-canary\.ts --artifact-recovery/);
+  assert.match(workflow, /unsupported-verified-lane/);
   assert.match(workflow, /32785189225/);
   assert.match(workflow, /9541802267/);
   assert.match(workflow, /WRITER1_PRIOR_DISPATCH_ROOT/);

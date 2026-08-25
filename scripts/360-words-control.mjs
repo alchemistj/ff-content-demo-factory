@@ -82,6 +82,14 @@ export const EXPECTED_VERIFIED_CORRECTION_V2 = Object.freeze({
   baseline: { kind: VERIFIED_WRITER1_GITHUB_BASELINE.kind, repository: VERIFIED_WRITER1_GITHUB_BASELINE.repository, sourceCommit: VERIFIED_WRITER1_GITHUB_BASELINE.sourceCommit, path: VERIFIED_WRITER1_GITHUB_BASELINE.path, blobSha: VERIFIED_WRITER1_GITHUB_BASELINE.blobSha, rawSha256: VERIFIED_WRITER1_GITHUB_BASELINE.rawSha256, size: VERIFIED_WRITER1_GITHUB_BASELINE.size, authorship: VERIFIED_WRITER1_GITHUB_BASELINE.authorship },
 });
 
+export function selectVerifiedWriter1Dispatch(control) {
+  if (control?.policy?.recovery !== undefined && control?.recovery !== undefined) throw new Error("active wake may not provide ambiguous policy and top-level recovery objects");
+  const recovery = control?.policy?.recovery ?? control?.recovery;
+  if (control?.policy?.mode === "writer1-correction" && recovery?.correctionVersion === "words-writer1-correction/v2") return "verified-writer1-correction-v2";
+  if (control?.policy?.mode === "writer1-correction" && recovery?.correctionVersion === "words-writer1-correction/v1") return "verified-writer1-correction-v1";
+  return "unsupported-verified-lane";
+}
+
 export function validateControl(control, input = {}) {
   if (!control || typeof control !== "object") throw new Error("canary control must be an object");
   if (control.schemaVersion !== "words-canary-control/v1") throw new Error("unsupported canary control schema");
@@ -132,5 +140,5 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   const recoveryVersion = recovery.recoveryVersion || recovery.correctionVersion || "";
   const correctionVersion = recovery.correctionVersion || "";
   const baseline = recovery.baseline || {};
-  fs.appendFileSync(process.env.GITHUB_OUTPUT, `dormant=${result.dormant}\nstage=${result.stage}\nrecovery_version=${recoveryVersion || correctionVersion}\n${result.sourceSha ? `source_sha=${result.sourceSha}\n` : ""}${baseline.repository ? `baseline_repository=${baseline.repository}\nbaseline_commit=${baseline.sourceCommit}\nbaseline_path=${baseline.path}\nbaseline_blob_sha=${baseline.blobSha}\nbaseline_raw_sha256=${baseline.rawSha256}\nbaseline_size=${baseline.size}\n` : ""}`);
+  fs.appendFileSync(process.env.GITHUB_OUTPUT, `dormant=${result.dormant}\nstage=${result.stage}\nrecovery_version=${recoveryVersion || correctionVersion}\ndispatch_mode=${selectVerifiedWriter1Dispatch(control)}\n${result.sourceSha ? `source_sha=${result.sourceSha}\n` : ""}${baseline.repository ? `baseline_repository=${baseline.repository}\nbaseline_commit=${baseline.sourceCommit}\nbaseline_path=${baseline.path}\nbaseline_blob_sha=${baseline.blobSha}\nbaseline_raw_sha256=${baseline.rawSha256}\nbaseline_size=${baseline.size}\n` : ""}`);
 }

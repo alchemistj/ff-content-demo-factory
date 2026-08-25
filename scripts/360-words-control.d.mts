@@ -1,5 +1,6 @@
 export declare const CONTROL_PATH: string;
 export declare const DORMANT_NONCE: string;
+export declare function selectVerifiedWriter1Dispatch(control: Record<string, any>): "verified-writer1-correction-v1" | "verified-writer1-correction-v2" | "unsupported-verified-lane";
 export declare const EXPECTED_RECOVERY: Readonly<Record<string, string | number>>;
 export declare const EXPECTED_RECOVERY_V2: Readonly<Record<string, string | number>>;
 export declare const EXPECTED_RECOVERY_V3: Readonly<Record<string, string | number>>;

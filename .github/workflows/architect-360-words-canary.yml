@@ -45,6 +45,23 @@ jobs:
         with:
           node-version: '24'
 
+      - name: Select verified Writer1 dispatch mode
+        id: dispatch_mode
+        if: steps.control.outputs.dormant != 'true'
+        shell: bash
+        run: |
+          dispatch_mode="$(node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          import { selectVerifiedWriter1Dispatch } from './scripts/360-words-control.mjs';
+          process.stdout.write(selectVerifiedWriter1Dispatch(JSON.parse(fs.readFileSync('.factory-wake/360-words-control.json', 'utf8'))));
+          NODE
+          )"
+          if [ "$dispatch_mode" = 'unsupported-verified-lane' ]; then
+            echo "Unsupported verified-lane Writer1 dispatch: $dispatch_mode" >&2
+            exit 1
+          fi
+          echo "mode=$dispatch_mode" >> "$GITHUB_OUTPUT"
+
       - name: Install locked dependencies
         if: steps.control.outputs.dormant != 'true'
         run: npm ci --ignore-scripts --no-audit --no-fund
@@ -201,12 +218,13 @@ jobs:
           WRITER1_LATEST_V3_FINALIZE_ROOT: canary/inputs/latest-v3-finalize-artifact
           WRITER1_GITHUB_BASELINE_ROOT: canary/inputs/github-writer1-baseline
         run: |
-          if [ "${{ steps.control.outputs.recovery_version }}" = 'words-writer1-correction/v2' ]; then
+          if [ "${{ steps.dispatch_mode.outputs.mode }}" = 'verified-writer1-correction-v2' ]; then
             node --import tsx scripts/360-words-verified.ts --writer1-correction-v2
-          elif [ "${{ steps.control.outputs.recovery_version }}" = 'words-writer1-correction/v1' ]; then
+          elif [ "${{ steps.dispatch_mode.outputs.mode }}" = 'verified-writer1-correction-v1' ]; then
             node --import tsx scripts/360-words-verified.ts --writer1-correction
           else
-            node --import tsx scripts/360-words-canary.ts --artifact-recovery
+            echo "Unsupported verified-lane Writer1 dispatch" >&2
+            exit 1
           fi
 
       - name: Write durable failure/state surface
