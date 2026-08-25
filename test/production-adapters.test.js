@@ -51,6 +51,7 @@ test('website audit rejects missing and cross-domain evidence provenance', () =>
   assert.throws(() => normalizeWebsiteAudit({ website: 'https://one.example', evidence: [{ id: 'unbound' }], images: [] }, candidate), /missing source URL\/provenance/);
   assert.throws(() => normalizeWebsiteAudit({ website: 'https://one.example', evidence: [{ id: 'foreign', sourceUrl: 'https://other.example/page' }], images: [] }, candidate), /not bound/);
   assert.throws(() => normalizeWebsiteAudit({ website: 'https://one.example', evidence: [], images: [{ url: 'https://one.example/image.png' }], graphicsInspection: { findings: [{ id: 'missing' }] } }, candidate), /graphics inspection item is missing source URL\/provenance/);
+  assert.throws(() => normalizeWebsiteAudit({ website: 'https://one.example', evidence: [], images: [], publicImageUrls: ['https://other.example/image.png'] }, candidate), /public image URLs URL is not bound/);
 });
 
 test('production composition maps Apify GBP basics, audits owned website, and persists normalized receipts', async () => {
