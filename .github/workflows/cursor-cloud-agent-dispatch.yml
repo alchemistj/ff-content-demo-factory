@@ -23,11 +23,15 @@ on:
         description: 'Research or implementation scope for Cursor'
         required: true
         type: string
+  workflow_run:
+    workflows: ['Fresh current-head Gate 1 canary']
+    types: [completed]
 
 permissions:
   contents: read
   issues: write
   pull-requests: read
+  actions: read
 
 concurrency:
   group: factory-cursor-dispatch-${{ inputs.issue_number }}-${{ inputs.pr_number }}-${{ inputs.reviewed_head_sha }}
@@ -87,5 +91,56 @@ jobs:
         with:
           name: cursor-cloud-agent-dispatch-${{ github.run_id }}
           path: canary/outputs/cursor-dispatch.*
+          if-no-files-found: error
+          retention-days: 30
+
+  automatic-dispatch-from-phase-a:
+    if: github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    concurrency:
+      group: factory-cursor-dispatch-phase-a-${{ github.event.workflow_run.id }}
+      cancel-in-progress: false
+    steps:
+      - name: Checkout the immutable phase-A head
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: ${{ github.event.workflow_run.head_sha }}
+          fetch-depth: 1
+          persist-credentials: false
+      - name: Retrieve and verify phase-A handoff artifact automatically
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PHASE_A_RUN_ID: ${{ github.event.workflow_run.id }}
+        run: |
+          mkdir -p canary/phase-a
+          gh run download "$PHASE_A_RUN_ID" --repo "$GITHUB_REPOSITORY" --name "current-head-gate1-canary-$PHASE_A_RUN_ID" --dir canary/phase-a
+          test -f canary/phase-a/current-head-gate1-pending.json
+          PHASE_A_PENDING=canary/phase-a/current-head-gate1-pending.json node -e "const fs=require('node:fs');const {validatePendingHandoff}=require('./src/factory/handoff');const p=JSON.parse(fs.readFileSync(process.env.PHASE_A_PENDING,'utf8'));validatePendingHandoff(p,{checkedOutSha:p.envelope.checkedOutSha,inputManifestDigest:p.envelope.inputManifestDigest});fs.writeFileSync('canary/phase-a/pending.checked.json',JSON.stringify(p,null,2)+'\\n')"
+      - name: Generate the verified connector-native packet
+        env:
+          FACTORY_PENDING_FILE: canary/phase-a/pending.checked.json
+          FACTORY_DISPATCH_OUTPUT: canary/phase-a/cursor-dispatch.json
+          FACTORY_REPOSITORY: ${{ github.repository }}
+        run: node src/dispatch-cursor-cloud-agent.js
+      - name: Bind dispatch comment to durable handoff identity
+        run: |
+          node -e "const fs=require('node:fs');const pending=JSON.parse(fs.readFileSync('canary/phase-a/pending.checked.json','utf8'));fs.appendFileSync('canary/phase-a/cursor-dispatch.comment.md','Handoff ID: '+pending.handoffId+'\\nPhase-A run: '+pending.phaseARunId+'\\n');"
+      - name: Post exactly once using durable dispatch CAS
+        env:
+          GH_TOKEN: ${{ github.token }}
+          DISPATCH_FILE: canary/phase-a/cursor-dispatch.json
+        run: |
+          ISSUE_NUMBER="$(node -e "const fs=require('node:fs');process.stdout.write(String(JSON.parse(fs.readFileSync(process.env.DISPATCH_FILE,'utf8')).issueNumber))")"
+          digest="$(node -e "const fs=require('node:fs');process.stdout.write(JSON.parse(fs.readFileSync(process.env.DISPATCH_FILE,'utf8')).dispatchDigest)")"
+          key="$(node -e "const fs=require('node:fs');process.stdout.write(JSON.parse(fs.readFileSync(process.env.DISPATCH_FILE,'utf8')).dispatchKey)")"
+          prior="$(gh api --paginate "repos/$GITHUB_REPOSITORY/issues/$ISSUE_NUMBER/comments?per_page=100" --jq '.[] | [.html_url, .body] | @tsv' | awk -v digest="$digest" -v key="$key" 'index($0, digest) || index($0, key) {print $1; exit}')"
+          if [ -n "$prior" ]; then comment_url="$prior"; else comment_url="$(gh api "repos/$GITHUB_REPOSITORY/issues/$ISSUE_NUMBER/comments" --method POST -f body="$(cat canary/phase-a/cursor-dispatch.comment.md)" --jq .html_url)"; fi
+          COMMENT_URL="$comment_url" DISPATCH_FILE="$DISPATCH_FILE" node -e "const fs=require('node:fs');const p=JSON.parse(fs.readFileSync(process.env.DISPATCH_FILE,'utf8'));p.commentUrl=process.env.COMMENT_URL;fs.writeFileSync(process.env.DISPATCH_FILE,JSON.stringify(p,null,2)+'\\n')"
+      - name: Upload automatic dispatch receipt
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: cursor-cloud-agent-dispatch-${{ github.run_id }}
+          path: canary/phase-a/*
           if-no-files-found: error
           retention-days: 30
