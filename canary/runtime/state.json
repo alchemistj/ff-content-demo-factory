@@ -1,0 +1,13 @@
+{
+  "status": "writer1-validation-failed-quarantined",
+  "stage": "writer1",
+  "errorCode": "WRITER1_OUTPUT_INVALID",
+  "recoveryRequired": true,
+  "writer2Blocked": true,
+  "nextStage": null,
+  "quarantinePath": "canary/runtime/quarantine/writer1-output.json",
+  "quarantineMetadataPath": "canary/runtime/quarantine/writer1-output.metadata.json",
+  "validationReportPath": "canary/runtime/writer1-validation-report.json",
+  "artifactByteDigest": "sha256:ec36da69992dd318e913671763a96e4b838ab747b36e512702f91176155e5eac",
+  "messagesSent": 0
+}

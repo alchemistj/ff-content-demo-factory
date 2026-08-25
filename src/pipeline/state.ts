@@ -59,7 +59,12 @@ export function createInitialState(input: {
     handoffSeals: clone((handoff as any).digests || {}), writerClaims: {}, writerBindings: {},
   };
 }
-export function stagePrompt(stage: string): string { return `Words Factory ${stage} execution for approved handoff`; }
+export function stagePrompt(stage: string): string {
+  if (stage === STAGES.WRITER_1) {
+    return "Words Factory writer1 execution for approved handoff. Return schemaVersion words-writer1-output/v1. Full copy belongs in dedicated word-bearing fields (primaryKeyword, title, seoTitle, metaDescription, h1, body, section heading/body, reviewPlacements quote/attribution, quotePlacements, and claims). reviewEvidence is a typed pointer/provenance ledger and must not contain any accepted word-bearing key.";
+  }
+  return `Words Factory ${stage} execution for approved handoff`;
+}
 export function stageInputProjection(state: PipelineState, stage: string): JsonObject {
   const destinations = (state.handoff?.prospect?.destinations || {}) as JsonObject;
   const comparison = Array.isArray(state.handoff?.serviceComparison) ? state.handoff.serviceComparison : [];

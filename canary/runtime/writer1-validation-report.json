@@ -1,0 +1,547 @@
+{
+  "schemaVersion": "words-writer1-validation-report/v1",
+  "status": "diagnostic-failure",
+  "mode": "validation-report-only",
+  "completionAuthorized": false,
+  "writer2Blocked": true,
+  "messagesSent": 0,
+  "artifactPath": "artifacts/writer1-output.json",
+  "artifactByteDigest": "sha256:ec36da69992dd318e913671763a96e4b838ab747b36e512702f91176155e5eac",
+  "artifactSize": 127586,
+  "artifactUpdatedAt": "2026-08-25T01:33:20.000Z",
+  "copyProjectionDigest": "sha256:10a5ab25ca8a64de52ea6001893889a8ffaf282d7193e9c3b6815f7c08beedaa",
+  "renderedWordsDigest": "sha256:55f6540829ee4c9e6a02353f95872ac005f3831adb2a7d3e4baec8ea3bc28c54",
+  "stableIdentityDigest": "sha256:0fef8724cd5b16101589522f730b139ce29aebb28100467e8af72cc962bf566c",
+  "provenanceMetadataDigest": "sha256:874972859690b0bd8a087454c6106ad74e1739c0876759c82586a8f7eec749f7",
+  "frozenCopyProjectionDigest": "sha256:c1e33b69b4021623b917060efce36d8b91973deaf7db724c2183635741973d1b",
+  "projectionDigest": "sha256:aefca24b7fb0f2260cb32beabe81797c9d64cbb5dec4baee7e3252119e1c483b",
+  "errors": [
+    {
+      "code": "REVIEW_EVIDENCE_CLAIM_TEXT_DUPLICATE",
+      "path": "/pages/0/reviewEvidence/0/reviewer",
+      "expectedRule": "reviewEvidence must not contain any accepted word-bearing key; it is a typed pointer ledger",
+      "route": "/garage-door-repair",
+      "objectKind": "reviewEvidence",
+      "ref": "Ci9DQUlRQUNvZENodHljRjlvT201TVdWZGZSak00ZUhSQ2VVdHNYMWxFYTBFdE9XYxAB",
+      "presentKeys": [
+        "reviewId",
+        "reviewer",
+        "provenance",
+        "excerpt"
+      ],
+      "presentTypes": {
+        "reviewer": "string"
+      }
+    },
+    {
+      "code": "REVIEW_EVIDENCE_CLAIM_TEXT_DUPLICATE",
+      "path": "/pages/0/reviewEvidence/1/reviewer",
+      "expectedRule": "reviewEvidence must not contain any accepted word-bearing key; it is a typed pointer ledger",
+      "route": "/garage-door-repair",
+      "objectKind": "reviewEvidence",
+      "ref": "Ci9DQUlRQUNvZENodHljRjlvT25OS09FRkhPRkptVVhoclIwdzRORVp6VTB0R1VIYxAB",
+      "presentKeys": [
+        "reviewId",
+        "reviewer",
+        "provenance",
+        "excerpt"
+      ],
+      "presentTypes": {
+        "reviewer": "string"
+      }
+    },
+    {
+      "code": "REVIEW_EVIDENCE_CLAIM_TEXT_DUPLICATE",
+      "path": "/pages/0/reviewEvidence/2/reviewer",
+      "expectedRule": "reviewEvidence must not contain any accepted word-bearing key; it is a typed pointer ledger",
+      "route": "/garage-door-repair",
+      "objectKind": "reviewEvidence",
+      "ref": "Ci9DQUlRQUNvZENodHljRjlvT2xVMWQxVlRXalppVmxoU1NHcG9hUzFtV2pSVmRIYxAB",
+      "presentKeys": [
+        "reviewId",
+        "reviewer",
+        "provenance",
+        "excerpt"
+      ],
+      "presentTypes": {
+        "reviewer": "string"
+      }
+    },
+    {
+      "code": "REVIEW_EVIDENCE_CLAIM_TEXT_DUPLICATE",
+      "path": "/pages/0/reviewEvidence/3/reviewer",
+      "expectedRule": "reviewEvidence must not contain any accepted word-bearing key; it is a typed pointer ledger",
+      "route": "/garage-door-repair",
+      "objectKind": "reviewEvidence",
+      "ref": "ChdDSUhNMG9nS0VJQ0FnSURmNlBfbXhBRRAB",
+      "presentKeys": [
+        "reviewId",
+        "reviewer",
+        "provenance",
+        "excerpt"
+      ],
+      "presentTypes": {
+        "reviewer": "string"
+      }
+    },
+    {
+      "code": "REVIEW_EVIDENCE_CLAIM_TEXT_DUPLICATE",
+      "path": "/pages/0/reviewEvidence/4/reviewer",
+      "expectedRule": "reviewEvidence must not contain any accepted word-bearing key; it is a typed pointer ledger",
+      "route": "/garage-door-repair",
+      "objectKind": "reviewEvidence",
+      "ref": "Ci9DQUlRQUNvZENodHljRjlvT2xSWWMycFZlV3AxTldKcFpVZGxTalpGTUZSV1drRRAB",
+      "presentKeys": [
+        "reviewId",
+        "reviewer",
+        "provenance",
+        "excerpt"
+      ],
+      "presentTypes": {
+        "reviewer": "string"
+      }
+    },
+    {
+      "code": "REVIEW_EVIDENCE_CLAIM_TEXT_DUPLICATE",
+      "path": "/pages/0/reviewEvidence/5/reviewer",
+      "expectedRule": "reviewEvidence must not contain any accepted word-bearing key; it is a typed pointer ledger",
+      "route": "/garage-door-repair",
+      "objectKind": "reviewEvidence",
+      "ref": "Ci9DQUlRQUNvZENodHljRjlvT2t0T04xVlBSMU5oUmprMU9TMXNibmx6WjJ0cldHYxAB",
+      "presentKeys": [
+        "reviewId",
+        "reviewer",
+        "provenance",
+        "excerpt"
+      ],
+      "presentTypes": {
+        "reviewer": "string"
+      }
+    },
+    {
+      "code": "REVIEW_EVIDENCE_CLAIM_TEXT_DUPLICATE",
+      "path": "/pages/0/reviewEvidence/6/reviewer",
+      "expectedRule": "reviewEvidence must not contain any accepted word-bearing key; it is a typed pointer ledger",
+      "route": "/garage-door-repair",
+      "objectKind": "reviewEvidence",
+      "ref": "ChdDSUhNMG9nS0VJQ0FnTUNZNkplRm5BRRAB",
+      "presentKeys": [
+        "reviewId",
+        "reviewer",
+        "provenance",
+        "excerpt"
+      ],
+      "presentTypes": {
+        "reviewer": "string"
+      }
+    },
+    {
+      "code": "REVIEW_EVIDENCE_CLAIM_TEXT_DUPLICATE",
+      "path": "/pages/0/reviewEvidence/7/reviewer",
+      "expectedRule": "reviewEvidence must not contain any accepted word-bearing key; it is a typed pointer ledger",
+      "route": "/garage-door-repair",
+      "objectKind": "reviewEvidence",
+      "ref": "Ci9DQUlRQUNvZENodHljRjlvT25oaE9HeFNXVUUyUmt0VlowSkJPVWRCWmpSTVZYYxAB",
+      "presentKeys": [
+        "reviewId",
+        "reviewer",
+        "provenance",
+        "excerpt"
+      ],
+      "presentTypes": {
+        "reviewer": "string"
+      }
+    },
+    {
+      "code": "REVIEW_EVIDENCE_CLAIM_TEXT_DUPLICATE",
+      "path": "/pages/0/reviewEvidence/8/reviewer",
+      "expectedRule": "reviewEvidence must not contain any accepted word-bearing key; it is a typed pointer ledger",
+      "route": "/garage-door-repair",
+      "objectKind": "reviewEvidence",
+      "ref": "Ci9DQUlRQUNvZENodHljRjlvT2taQlh6VlZabU5OWjFKc2JISklTa1pXUlVwVGVuYxAB",
+      "presentKeys": [
+        "reviewId",
+        "reviewer",
+        "provenance",
+        "excerpt"
+      ],
+      "presentTypes": {
+        "reviewer": "string"
+      }
+    },
+    {
+      "code": "REVIEW_EVIDENCE_CLAIM_TEXT_DUPLICATE",
+      "path": "/pages/0/reviewEvidence/9/reviewer",
+      "expectedRule": "reviewEvidence must not contain any accepted word-bearing key; it is a typed pointer ledger",
+      "route": "/garage-door-repair",
+      "objectKind": "reviewEvidence",
+      "ref": "Ci9DQUlRQUNvZENodHljRjlvT2xkeFNsRnBOMll0V2pGblFsQXljR0pIV0ZreE5VRRAB",
+      "presentKeys": [
+        "reviewId",
+        "reviewer",
+        "provenance",
+        "excerpt"
+      ],
+      "presentTypes": {
+        "reviewer": "string"
+      }
+    },
+    {
+      "code": "REVIEW_EVIDENCE_CLAIM_TEXT_DUPLICATE",
+      "path": "/pages/0/reviewEvidence/10/reviewer",
+      "expectedRule": "reviewEvidence must not contain any accepted word-bearing key; it is a typed pointer ledger",
+      "route": "/garage-door-repair",
+      "objectKind": "reviewEvidence",
+      "ref": "Ci9DQUlRQUNvZENodHljRjlvT25wemJWQkhVa3RWWTJKeVdYaFdlbFJOWlVGeFQxRRAB",
+      "presentKeys": [
+        "reviewId",
+        "reviewer",
+        "provenance",
+        "excerpt"
+      ],
+      "presentTypes": {
+        "reviewer": "string"
+      }
+    },
+    {
+      "code": "REVIEW_EVIDENCE_CLAIM_TEXT_DUPLICATE",
+      "path": "/pages/0/reviewEvidence/11/reviewer",
+      "expectedRule": "reviewEvidence must not contain any accepted word-bearing key; it is a typed pointer ledger",
+      "route": "/garage-door-repair",
+      "objectKind": "reviewEvidence",
+      "ref": "Ci9DQUlRQUNvZENodHljRjlvT2tRMVoybGhYM1JWUldwb2JVNXNXbFozWDBaMVNIYxAB",
+      "presentKeys": [
+        "reviewId",
+        "reviewer",
+        "provenance",
+        "excerpt"
+      ],
+      "presentTypes": {
+        "reviewer": "string"
+      }
+    },
+    {
+      "code": "REVIEW_EVIDENCE_CLAIM_TEXT_DUPLICATE",
+      "path": "/pages/0/reviewEvidence/12/reviewer",
+      "expectedRule": "reviewEvidence must not contain any accepted word-bearing key; it is a typed pointer ledger",
+      "route": "/garage-door-repair",
+      "objectKind": "reviewEvidence",
+      "ref": "ChdDSUhNMG9nS0VJQ0FnTUNBZ082YzBRRRAB",
+      "presentKeys": [
+        "reviewId",
+        "reviewer",
+        "provenance",
+        "excerpt"
+      ],
+      "presentTypes": {
+        "reviewer": "string"
+      }
+    },
+    {
+      "code": "REVIEW_EVIDENCE_CLAIM_TEXT_DUPLICATE",
+      "path": "/pages/0/reviewEvidence/13/reviewer",
+      "expectedRule": "reviewEvidence must not contain any accepted word-bearing key; it is a typed pointer ledger",
+      "route": "/garage-door-repair",
+      "objectKind": "reviewEvidence",
+      "ref": "ChdDSUhNMG9nS0VJQ0FnTUNBbnNUOXB3RRAB",
+      "presentKeys": [
+        "reviewId",
+        "reviewer",
+        "provenance",
+        "excerpt"
+      ],
+      "presentTypes": {
+        "reviewer": "string"
+      }
+    },
+    {
+      "code": "REVIEW_EVIDENCE_CLAIM_TEXT_DUPLICATE",
+      "path": "/pages/0/reviewEvidence/14/reviewer",
+      "expectedRule": "reviewEvidence must not contain any accepted word-bearing key; it is a typed pointer ledger",
+      "route": "/garage-door-repair",
+      "objectKind": "reviewEvidence",
+      "ref": "ChZDSUhNMG9nS0VQR2ZxNUc5cjZhckdREAE",
+      "presentKeys": [
+        "reviewId",
+        "reviewer",
+        "provenance",
+        "excerpt"
+      ],
+      "presentTypes": {
+        "reviewer": "string"
+      }
+    },
+    {
+      "code": "REVIEW_EVIDENCE_CLAIM_TEXT_DUPLICATE",
+      "path": "/pages/0/reviewEvidence/15/reviewer",
+      "expectedRule": "reviewEvidence must not contain any accepted word-bearing key; it is a typed pointer ledger",
+      "route": "/garage-door-repair",
+      "objectKind": "reviewEvidence",
+      "ref": "ChZDSUhNMG9nS0VLeTZocG5jME9qc0t3EAE",
+      "presentKeys": [
+        "reviewId",
+        "reviewer",
+        "provenance",
+        "excerpt"
+      ],
+      "presentTypes": {
+        "reviewer": "string"
+      }
+    },
+    {
+      "code": "REVIEW_EVIDENCE_CLAIM_TEXT_DUPLICATE",
+      "path": "/pages/0/reviewEvidence/16/reviewer",
+      "expectedRule": "reviewEvidence must not contain any accepted word-bearing key; it is a typed pointer ledger",
+      "route": "/garage-door-repair",
+      "objectKind": "reviewEvidence",
+      "ref": "Ci9DQUlRQUNvZENodHljRjlvT2xoRE1HZ3lUMWRpVWt3d1dsVXhjVE5XZEc1VWVuYxAB",
+      "presentKeys": [
+        "reviewId",
+        "reviewer",
+        "provenance",
+        "excerpt"
+      ],
+      "presentTypes": {
+        "reviewer": "string"
+      }
+    },
+    {
+      "code": "REVIEW_EVIDENCE_CLAIM_TEXT_DUPLICATE",
+      "path": "/pages/0/reviewEvidence/17/reviewer",
+      "expectedRule": "reviewEvidence must not contain any accepted word-bearing key; it is a typed pointer ledger",
+      "route": "/garage-door-repair",
+      "objectKind": "reviewEvidence",
+      "ref": "ChdDSUhNMG9nS0VJQ0FnSURQZ2RtWDFnRRAB",
+      "presentKeys": [
+        "reviewId",
+        "reviewer",
+        "provenance",
+        "excerpt"
+      ],
+      "presentTypes": {
+        "reviewer": "string"
+      }
+    },
+    {
+      "code": "REVIEW_EVIDENCE_CLAIM_TEXT_DUPLICATE",
+      "path": "/pages/0/reviewEvidence/18/reviewer",
+      "expectedRule": "reviewEvidence must not contain any accepted word-bearing key; it is a typed pointer ledger",
+      "route": "/garage-door-repair",
+      "objectKind": "reviewEvidence",
+      "ref": "Ci9DQUlRQUNvZENodHljRjlvT2psMlVHOVhVMDVrTFhwUlpWbDZjSFZUUjFKQlgwRRAB",
+      "presentKeys": [
+        "reviewId",
+        "reviewer",
+        "provenance",
+        "excerpt"
+      ],
+      "presentTypes": {
+        "reviewer": "string"
+      }
+    },
+    {
+      "code": "REVIEW_EVIDENCE_CLAIM_TEXT_DUPLICATE",
+      "path": "/pages/0/reviewEvidence/19/reviewer",
+      "expectedRule": "reviewEvidence must not contain any accepted word-bearing key; it is a typed pointer ledger",
+      "route": "/garage-door-repair",
+      "objectKind": "reviewEvidence",
+      "ref": "ChZDSUhNMG9nS0VJQ0FnSURQZ2NEbVJnEAE",
+      "presentKeys": [
+        "reviewId",
+        "reviewer",
+        "provenance",
+        "excerpt"
+      ],
+      "presentTypes": {
+        "reviewer": "string"
+      }
+    },
+    {
+      "code": "REVIEW_EVIDENCE_CLAIM_TEXT_DUPLICATE",
+      "path": "/pages/0/reviewEvidence/20/reviewer",
+      "expectedRule": "reviewEvidence must not contain any accepted word-bearing key; it is a typed pointer ledger",
+      "route": "/garage-door-repair",
+      "objectKind": "reviewEvidence",
+      "ref": "ChdDSUhNMG9nS0VQcUM5dGpxNjRxcHJBRRAB",
+      "presentKeys": [
+        "reviewId",
+        "reviewer",
+        "provenance",
+        "excerpt"
+      ],
+      "presentTypes": {
+        "reviewer": "string"
+      }
+    },
+    {
+      "code": "REVIEW_EVIDENCE_CLAIM_TEXT_DUPLICATE",
+      "path": "/pages/0/reviewEvidence/21/reviewer",
+      "expectedRule": "reviewEvidence must not contain any accepted word-bearing key; it is a typed pointer ledger",
+      "route": "/garage-door-repair",
+      "objectKind": "reviewEvidence",
+      "ref": "Ci9DQUlRQUNvZENodHljRjlvT21STGNXUk1jMEZ1TmtsYVoyWlhTbEk1TjFsWWRHYxAB",
+      "presentKeys": [
+        "reviewId",
+        "reviewer",
+        "provenance",
+        "excerpt"
+      ],
+      "presentTypes": {
+        "reviewer": "string"
+      }
+    },
+    {
+      "code": "REVIEW_EVIDENCE_CLAIM_TEXT_DUPLICATE",
+      "path": "/pages/0/reviewEvidence/22/reviewer",
+      "expectedRule": "reviewEvidence must not contain any accepted word-bearing key; it is a typed pointer ledger",
+      "route": "/garage-door-repair",
+      "objectKind": "reviewEvidence",
+      "ref": "ChZDSUhNMG9nS0VJQ0FnSUR2cmFTZE93EAE",
+      "presentKeys": [
+        "reviewId",
+        "reviewer",
+        "provenance",
+        "excerpt"
+      ],
+      "presentTypes": {
+        "reviewer": "string"
+      }
+    },
+    {
+      "code": "REVIEW_EVIDENCE_CLAIM_TEXT_DUPLICATE",
+      "path": "/pages/0/reviewEvidence/23/reviewer",
+      "expectedRule": "reviewEvidence must not contain any accepted word-bearing key; it is a typed pointer ledger",
+      "route": "/garage-door-repair",
+      "objectKind": "reviewEvidence",
+      "ref": "Ci9DQUlRQUNvZENodHljRjlvT2t4alNtbDBaVVV4VVRselpIQTJhakpOYURSeE1HYxAB",
+      "presentKeys": [
+        "reviewId",
+        "reviewer",
+        "provenance",
+        "excerpt"
+      ],
+      "presentTypes": {
+        "reviewer": "string"
+      }
+    },
+    {
+      "code": "REVIEW_EVIDENCE_CLAIM_TEXT_DUPLICATE",
+      "path": "/pages/0/reviewEvidence/24/reviewer",
+      "expectedRule": "reviewEvidence must not contain any accepted word-bearing key; it is a typed pointer ledger",
+      "route": "/garage-door-repair",
+      "objectKind": "reviewEvidence",
+      "ref": "Ci9DQUlRQUNvZENodHljRjlvT2xSSU1YVXhWMDVDZWtWMVZtTm5SbGhHTld4amVGRRAB",
+      "presentKeys": [
+        "reviewId",
+        "reviewer",
+        "provenance",
+        "excerpt"
+      ],
+      "presentTypes": {
+        "reviewer": "string"
+      }
+    },
+    {
+      "code": "REVIEW_EVIDENCE_CLAIM_TEXT_DUPLICATE",
+      "path": "/pages/1/reviewEvidence/0/reviewer",
+      "expectedRule": "reviewEvidence must not contain any accepted word-bearing key; it is a typed pointer ledger",
+      "route": "/garage-door-installation",
+      "objectKind": "reviewEvidence",
+      "ref": "Ci9DQUlRQUNvZENodHljRjlvT25jM2NVNTZlVzF0YVhCNVdXSlVZVEpmYW05UExYYxAB",
+      "presentKeys": [
+        "reviewId",
+        "reviewer",
+        "provenance",
+        "excerpt"
+      ],
+      "presentTypes": {
+        "reviewer": "string"
+      }
+    },
+    {
+      "code": "REVIEW_EVIDENCE_CLAIM_TEXT_DUPLICATE",
+      "path": "/pages/1/reviewEvidence/1/reviewer",
+      "expectedRule": "reviewEvidence must not contain any accepted word-bearing key; it is a typed pointer ledger",
+      "route": "/garage-door-installation",
+      "objectKind": "reviewEvidence",
+      "ref": "Ci9DQUlRQUNvZENodHljRjlvT2pBMU5rSktSMmhHV1RKb2NVdE1TVXBOVFRsS01YYxAB",
+      "presentKeys": [
+        "reviewId",
+        "reviewer",
+        "provenance",
+        "excerpt"
+      ],
+      "presentTypes": {
+        "reviewer": "string"
+      }
+    },
+    {
+      "code": "REVIEW_EVIDENCE_CLAIM_TEXT_DUPLICATE",
+      "path": "/pages/1/reviewEvidence/2/reviewer",
+      "expectedRule": "reviewEvidence must not contain any accepted word-bearing key; it is a typed pointer ledger",
+      "route": "/garage-door-installation",
+      "objectKind": "reviewEvidence",
+      "ref": "ChZDSUhNMG9nS0VJNng0b1B1N3NEY0ZBEAE",
+      "presentKeys": [
+        "reviewId",
+        "reviewer",
+        "provenance",
+        "excerpt"
+      ],
+      "presentTypes": {
+        "reviewer": "string"
+      }
+    },
+    {
+      "code": "REVIEW_EVIDENCE_CLAIM_TEXT_DUPLICATE",
+      "path": "/pages/1/reviewEvidence/3/reviewer",
+      "expectedRule": "reviewEvidence must not contain any accepted word-bearing key; it is a typed pointer ledger",
+      "route": "/garage-door-installation",
+      "objectKind": "reviewEvidence",
+      "ref": "Ci9DQUlRQUNvZENodHljRjlvT2xjeVFtOTRMV3BTTUc1Qk5VeFNhVTlJYW1GcFMwRRAB",
+      "presentKeys": [
+        "reviewId",
+        "reviewer",
+        "provenance",
+        "excerpt"
+      ],
+      "presentTypes": {
+        "reviewer": "string"
+      }
+    },
+    {
+      "code": "REVIEW_EVIDENCE_CLAIM_TEXT_DUPLICATE",
+      "path": "/pages/1/reviewEvidence/4/reviewer",
+      "expectedRule": "reviewEvidence must not contain any accepted word-bearing key; it is a typed pointer ledger",
+      "route": "/garage-door-installation",
+      "objectKind": "reviewEvidence",
+      "ref": "Ci9DQUlRQUNvZENodHljRjlvT2xWdlZGQk9hMjFOUlhaVk5rczFVR2RKTlVKWlVGRRAB",
+      "presentKeys": [
+        "reviewId",
+        "reviewer",
+        "provenance",
+        "excerpt"
+      ],
+      "presentTypes": {
+        "reviewer": "string"
+      }
+    },
+    {
+      "code": "REVIEW_EVIDENCE_CLAIM_TEXT_DUPLICATE",
+      "path": "/pages/1/reviewEvidence/5/reviewer",
+      "expectedRule": "reviewEvidence must not contain any accepted word-bearing key; it is a typed pointer ledger",
+      "route": "/garage-door-installation",
+      "objectKind": "reviewEvidence",
+      "ref": "Ci9DQUlRQUNvZENodHljRjlvT25JelNERXdhRFpIV0hscFUxOUxkakZtYzFaMWFXYxAB",
+      "presentKeys": [
+        "reviewId",
+        "reviewer",
+        "provenance",
+        "excerpt"
+      ],
+      "presentTypes": {
+        "reviewer": "string"
+      }
+    }
+  ]
+}

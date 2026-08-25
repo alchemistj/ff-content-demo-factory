@@ -2,7 +2,7 @@ import { createHash } from "node:crypto";
 import { existsSync, readFileSync } from "node:fs";
 import * as fs from "node:fs/promises";
 import * as path from "node:path";
-import { buildWriter1PointerLedgerNormalization, createCursorWriterExecutor, createJsonCursorReceiptStore, finalizeCursorWriterArtifactV3, inspectCursorWriterArtifactV3, normalizeWriter1PointerLedger, recoverCursorWriterArtifactV2, recoverCursorWriterArtifactV3, validateCursorArtifactRecoveryV2Receipt, validateCursorArtifactRecoveryV3FinalizeReceipt, validateCursorArtifactRecoveryV3Receipt, validateCursorWriterReceipt, WRITER1_WORD_KEYS, type CursorArtifactBinding, type CursorArtifactRecoveryFailureBinding, type CursorArtifactRecoveryPrior, type CursorArtifactRecoveryV2FailureBinding, type CursorArtifactRecoveryV3FailureBinding, type CursorDispatchNotice, type CursorFollowUpBindings, type CursorWriterReceipt } from "../src/pipeline/cursor-writer.js";
+import { buildWriter1PointerLedgerNormalization, createCursorWriterExecutor, createJsonCursorReceiptStore, finalizeCursorWriterArtifactV3, inspectCursorWriterArtifactV3, normalizeWriter1PointerLedger, recoverCursorWriterArtifactV2, recoverCursorWriterArtifactV3, validateCursorArtifactRecoveryV2Receipt, validateCursorArtifactRecoveryV3FinalizeReceipt, validateCursorArtifactRecoveryV3Receipt, validateCursorWriterReceipt, writer1ProvenanceMetadataDigest, writer1SemanticRenderedCopyDigest, writer1StableIdentityDigest, WRITER1_WORD_KEYS, type CursorArtifactBinding, type CursorArtifactRecoveryFailureBinding, type CursorArtifactRecoveryPrior, type CursorArtifactRecoveryV2FailureBinding, type CursorArtifactRecoveryV3FailureBinding, type CursorDispatchNotice, type CursorFollowUpBindings, type CursorWriterReceipt } from "../src/pipeline/cursor-writer.js";
 import { digestOf } from "../src/contracts/digests.js";
 import { buildWriter1ArtifactRecoveryPrompt, digestWriter1ArtifactRecoveryPrompt } from "./360-words-recovery-prompt.mjs";
 
@@ -362,7 +362,15 @@ export function parseAndValidateWriter1Output(raw: unknown, projection: Dict): D
 export function parseAndValidateFreshWriter1Output(raw: unknown, projection: Dict): Dict {
   if (raw === "OUTPUT_NOT_RECOVERABLE") throw new Writer1OutputRecoveryError("OUTPUT_NOT_RECOVERABLE", "Fresh Writer1 output is not recoverable");
   if (!isRecord(raw)) invalidWriter1Output("Fresh Writer1 output must be a JSON object, not a summary or string");
-  return parseAndValidateWriter1Output(JSON.stringify(raw), projection);
+  return normalizeAndValidateWriter1Output(raw, projection);
+}
+
+export function normalizeAndValidateWriter1Output(raw: unknown, projection: Dict): Dict {
+  const parsed = typeof raw === "string" ? JSON.parse(raw) as unknown : raw;
+  if (!isRecord(parsed)) invalidWriter1Output("Writer1 pointer-ledger normalization requires a JSON object");
+  const normalized = normalizeWriter1PointerLedger(parsed);
+  if (writer1SemanticRenderedCopyDigest(parsed) !== writer1SemanticRenderedCopyDigest(normalized.output) || writer1StableIdentityDigest(parsed) !== writer1StableIdentityDigest(normalized.output) || writer1ProvenanceMetadataDigest(parsed) !== writer1ProvenanceMetadataDigest(normalized.output)) invalidWriter1Output("pointer-ledger normalization must preserve semantic copy, identity, and provenance");
+  return parseAndValidateWriter1Output(JSON.stringify(normalized.output), projection);
 }
 
 export function validateSealed(root = process.cwd(), handoffOverride?: { raw: Buffer; value: Dict }, bridgeOverride?: Dict): { handoff: Dict; manifest: Dict; pin: Dict; ledger: Dict; approval: Dict; bridge: Dict } {
@@ -468,7 +476,7 @@ For the JSON choice, schemaVersion must be exactly "words-writer1-output/v1" and
 
 export const WRITER1_FRESH_PROMPT = `Fresh Writer1 execution for the sealed 360 prescription. Write only the two prescribed service pages and return the complete result as a JSON object, never a summary string, prose wrapper, Markdown fence, or JSON-encoded string. Do not create Home, Contact, Strategy, spring-repair, or opener-installation pages or routes. Do not run Writer2.
 
-The root object must have schemaVersion exactly "words-writer1-output/v1" and pages exactly in this order: /garage-door-repair and /garage-door-installation. Each page must have type exactly "service", the exact sealed prescriptionId for its route, primaryKeyword, title, seoTitle, metaDescription, h1, body, and non-empty sections with heading/body. Every review, quote, and claim placement must include typed provenance {type: "review"|"evidence"|"claim", ref: <stable sealed Writer1 evidence/review ref>, placement: <placement>, section: <section>}; every provenance ref must resolve to the sealed Writer1 input. Use only the sealed prescription and evidence supplied below. If a complete valid object cannot be returned, return no partial result.
+The root object must have schemaVersion exactly "words-writer1-output/v1" and pages exactly in this order: /garage-door-repair and /garage-door-installation. Each page must have type exactly "service", the exact sealed prescriptionId for its route, primaryKeyword, title, seoTitle, metaDescription, h1, body, and non-empty sections with heading/body. Put every word of public copy in those dedicated word-bearing fields, plus reviewPlacements (quote and attribution), quotePlacements, and claims (claim, statement, text, or body). reviewEvidence is a typed pointer/provenance ledger only: each item may contain identity keys and provenance/pointer objects, and must not contain any accepted word-bearing key. Every review, quote, and claim placement must include typed provenance {type: "review"|"evidence"|"claim", ref: <stable sealed Writer1 evidence/review ref>, placement: <placement>, section: <section>}; every provenance ref must resolve to the sealed Writer1 input. Use only the sealed prescription and evidence supplied below. If a complete valid object cannot be returned, return no partial result.
 
 SEALED WRITER1 INPUT:
 `;
@@ -703,6 +711,64 @@ export function readApprovedWriter1OutputForWriter2(root = process.cwd()): Dict 
   return JSON.parse(readFileSync(outputPath, "utf8")) as Dict;
 }
 
+export async function normalizeQuarantinedWriter1Output(root = process.cwd()): Promise<{ status: string; stage: string; sourceByteDigest: string; normalizedOutputDigest: string; removedCount: number }> {
+  const sealed = validateSealed(root);
+  const payload = writer1Projection(sealed);
+  const quarantinedPath = jsonFile(root, "canary/runtime/quarantine/writer1-output.json");
+  const metadataPath = jsonFile(root, "canary/runtime/quarantine/writer1-output.metadata.json");
+  if (!existsSync(quarantinedPath) || !existsSync(metadataPath)) throw new Error("quarantined Writer1 source bytes are missing");
+  const metadata = JSON.parse(readFileSync(metadataPath, "utf8")) as Dict;
+  if (metadata.consumable !== false || metadata.approved !== false) throw new Error("quarantined Writer1 metadata is not the fail-closed source binding");
+  if (metadata.status === "superseded-by-approved-normalization") throw new Error("quarantined Writer1 bytes were already marked superseded; local normalization will not rewrite an approved path");
+  const rawBytes = readFileSync(quarantinedPath);
+  if (sha256(rawBytes) !== metadata.artifactByteDigest) throw new Error("quarantined Writer1 source bytes no longer match the preserved artifact digest");
+  const raw = rawBytes.toString("utf8");
+  const before = collectWriter1ValidationDiagnostics(raw, payload);
+  if (before.length === 0) throw new Error("quarantined Writer1 bytes unexpectedly already pass validation; normalizer will not silently authorize them");
+  if (before.some((error) => error.code !== "REVIEW_EVIDENCE_CLAIM_TEXT_DUPLICATE")) throw new Error("quarantined Writer1 bytes have errors beyond reviewEvidence word-bearing keys; normalizer will not drop or rewrite copy");
+  if (metadata.artifactByteDigest !== ARTIFACT_RECOVERY_V3_FINALIZE_CURRENT_ARTIFACT_DIGEST) throw new Error("quarantined Writer1 bytes are not the pinned production artifact");
+  const parsed = JSON.parse(raw) as Dict;
+  const normalized = normalizeWriter1PointerLedger(parsed);
+  if (writer1SemanticRenderedCopyDigest(parsed) !== writer1SemanticRenderedCopyDigest(normalized.output) || writer1StableIdentityDigest(parsed) !== writer1StableIdentityDigest(normalized.output) || writer1ProvenanceMetadataDigest(parsed) !== writer1ProvenanceMetadataDigest(normalized.output)) throw new Error("pointer-ledger normalization changed semantic copy, identity, or provenance");
+  const validated = parseAndValidateWriter1Output(JSON.stringify(normalized.output), payload);
+  await writeJson(jsonFile(root, "canary/outputs/writer1-output.json"), validated);
+  await writeJson(jsonFile(root, "canary/runtime/writer1-pointer-ledger-normalization.json"), {
+    schemaVersion: "words-writer1-pointer-ledger-normalization/v1",
+    status: "normalized-awaiting-architect-qa",
+    rawApproved: false,
+    completionAuthorized: false,
+    writer2Blocked: true,
+    sourceByteDigest: metadata.artifactByteDigest,
+    sourceSize: rawBytes.length,
+    normalizedOutputDigest: digestOf(validated),
+    removed: normalized.removed,
+    errorCountBefore: before.length,
+    preservedQuarantinePath: "canary/runtime/quarantine/writer1-output.json",
+    authorship: { renderableWords: "grok-4.6", structuralPointerNormalization: "factory" },
+    rawSemanticRenderedCopyDigest: writer1SemanticRenderedCopyDigest(parsed),
+    normalizedSemanticRenderedCopyDigest: writer1SemanticRenderedCopyDigest(normalized.output),
+    rawStableIdentityDigest: writer1StableIdentityDigest(parsed),
+    normalizedStableIdentityDigest: writer1StableIdentityDigest(normalized.output),
+    rawProvenanceMetadataDigest: writer1ProvenanceMetadataDigest(parsed),
+    normalizedProvenanceMetadataDigest: writer1ProvenanceMetadataDigest(normalized.output),
+  });
+  await writeJson(jsonFile(root, "canary/runtime/state.json"), {
+    status: "awaiting-architect-qa",
+    stage: "writer1",
+    recoveryVersion: "words-writer1-pointer-ledger-normalization/v1",
+    runId: sealed.handoff.runId,
+    sealedHandoffDigest: sealed.handoff.resealDigest,
+    artifactByteDigest: metadata.artifactByteDigest,
+    normalizedOutputDigest: digestOf(validated),
+    quarantinePath: "canary/runtime/quarantine/writer1-output.json",
+    nextStage: null,
+    writer2Blocked: true,
+    rawApproved: false,
+    messagesSent: 0,
+  });
+  return { status: "awaiting-architect-qa", stage: "writer1", sourceByteDigest: metadata.artifactByteDigest, normalizedOutputDigest: digestOf(validated), removedCount: normalized.removed.length };
+}
+
 async function runArtifactValidationReport(root: string, control: Dict): Promise<{ status: string; stage: string }> {
   const promptDigest = validateV3FinalizeWakePins(control, "validation-report-only");
   if (process.env.CURSOR_MODEL !== "cursor-grok-4.6-high" || !process.env.CURSOR_API_KEY || process.env.CURSOR_FAST !== "false") throw new Error("Cursor production environment must provide exact model, API key, and fast=false");
@@ -882,7 +948,7 @@ export const runCorrection = runFreshWriter1;
 export const run = runFreshWriter1;
 
 if (import.meta.url === `file://${process.argv[1]}`) {
-  const operation = process.argv.includes("--validate-only") ? Promise.resolve(validateSealed()) : process.argv.includes("--artifact-recovery") ? runArtifactRecovery() : runCorrection();
+  const operation = process.argv.includes("--validate-only") ? Promise.resolve(validateSealed()) : process.argv.includes("--normalize-quarantine") ? normalizeQuarantinedWriter1Output() : process.argv.includes("--artifact-recovery") ? runArtifactRecovery() : runCorrection();
   operation.then((result) => { console.log(JSON.stringify(result)); }).catch(async (error) => {
     const code = isRecord(error) && typeof error.code === "string" ? error.code : "WRITER1_CORRECTION_FAILED";
     const message = error instanceof Error ? error.message : String(error);

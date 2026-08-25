@@ -1,0 +1,56 @@
+{
+  "status": "verified",
+  "previousRecoveryV3": {
+    "recoveryVersion": "words-writer1-artifact-recovery/v3",
+    "actionRunId": "32797811881",
+    "artifactId": 9545486318,
+    "artifactDigest": "sha256:23eac7a38caf588f383e424bd7bf39e5246f5634c7c06866d8e94250e6fe710e",
+    "sourceBranch": "architect/360-words-canary",
+    "sourceSha": "6d5f9e0f65af98185b6827b445cbfeff74e88ce7",
+    "agentId": "bc-30fc8ffa-2005-44b9-8fc7-48ddd9c3bcc8",
+    "runId": "run-47a109e2-4fd4-48df-a727-8a92a76cc472",
+    "threadUrl": "https://cursor.com/agents/bc-30fc8ffa-2005-44b9-8fc7-48ddd9c3bcc8",
+    "promptDigest": "sha256:b2ef742380aeb7b3b7ea020479ece673130341a16273fe67b2a3ffd2936a6f6d",
+    "failureCode": "WRITER1_OUTPUT_INVALID",
+    "inputDigest": "sha256:3ce24295a62cc863e6023b57ada26b0b88019b86e397e9c8e0ee98d1a612eda6",
+    "beforeArtifact": {
+      "path": "artifacts/writer1-output.json",
+      "size": 97794,
+      "sha256": "sha256:58338da9ffc6d8bd8b5ebc0fa9a1af71b4eceee0b86cd126d9c9243842c80178",
+      "contentSize": 97794,
+      "byteDigest": "sha256:58338da9ffc6d8bd8b5ebc0fa9a1af71b4eceee0b86cd126d9c9243842c80178",
+      "updatedAt": "2026-08-25T00:56:02.000Z",
+      "downloadRequest": {
+        "agentId": "bc-30fc8ffa-2005-44b9-8fc7-48ddd9c3bcc8",
+        "logicalPath": "artifacts/writer1-output.json",
+        "cursorEndpoint": "https://api.cursor.com/v1/agents/bc-30fc8ffa-2005-44b9-8fc7-48ddd9c3bcc8/artifacts/download?path=artifacts%2Fwriter1-output.json",
+        "method": "GET",
+        "apiVersion": "cloud-agent-api-v1"
+      },
+      "requestShapeDigest": "sha256:c38ec64e4384c062bd078e17804f66a0f103bf7386bdb183b2d88b17aa1ab019",
+      "downloadRequestDigest": "sha256:548f9c0e282cb2e29c4597fd138c44dd44758a2b207a36f874ea60a4379dc2b0",
+      "presignedUrlEvidence": {
+        "scheme": "https",
+        "host": "agent-stores.s3.us-east-1.amazonaws.com",
+        "pathname": "/stores/store-3c67b6d1-83c5-4fa6-9a31-d911cf3dbb29/artifacts/writer1-output.json",
+        "queryParameterNames": [
+          "X-Amz-Algorithm",
+          "X-Amz-Content-Sha256",
+          "X-Amz-Credential",
+          "X-Amz-Date",
+          "X-Amz-Expires",
+          "X-Amz-Security-Token",
+          "X-Amz-Signature",
+          "X-Amz-SignedHeaders",
+          "response-cache-control",
+          "response-content-type",
+          "versionId",
+          "x-amz-checksum-mode",
+          "x-id"
+        ]
+      },
+      "presignedUrlEvidenceDigest": "sha256:7343328c61b16497600e55c1a325ec50b521f244ccff7b59aaf33245ab1550fe"
+    },
+    "copyProjectionDigest": "sha256:c1e33b69b4021623b917060efce36d8b91973deaf7db724c2183635741973d1b"
+  }
+}
