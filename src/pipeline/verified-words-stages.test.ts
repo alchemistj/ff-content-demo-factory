@@ -1,13 +1,16 @@
 import assert from "node:assert/strict";
-import { createHmac } from "node:crypto";
+import { createHmac, generateKeyPairSync, sign } from "node:crypto";
 import test from "node:test";
 import { canonicalize, digestOf } from "../contracts/digests.js";
+import { ARCHITECT_APPROVAL_KEY_ID, ARCHITECT_APPROVAL_PUBLIC_KEY_ENV, canonicalArchitectSigningPayload } from "./architect-approval.js";
 import { OFFICIAL_CURSOR_MODEL, REQUIRED_CURSOR_MODEL, type CursorWriterReceipt } from "./cursor-writer.js";
-import { runVerifiedWriter2ForTest, runVerifiedWriter3ForTest, validateVerifiedWriter1Approval, validateVerifiedWriter2Output, validateVerifiedWriter3Output } from "./verified-words-stages.js";
-import { VERIFIED_WRITER3_SEALED_FACTS } from "./verified-words-policy.js";
+import { runVerifiedWriter2ForTest, runVerifiedWriter3ForTest, validateVerifiedWriter1Approval, validateVerifiedWriter2Output, validateVerifiedWriter3Output, validateVerifiedWriter2ReleaseState, VERIFIED_WRITER1_APPROVED_ARTIFACT } from "./verified-words-stages.js";
+import { ARCHITECT_WRITER1_QA_SCHEMA, VERIFIED_WRITER3_SEALED_FACTS, validateArchitectWriter1ApprovalEnvelope, validateArchitectWriter1QaArtifact } from "./verified-words-policy.js";
 
 const secret = "verified-stage-test-secret";
 process.env.CURSOR_API_KEY = secret;
+const architectKeys = generateKeyPairSync("ed25519");
+process.env[ARCHITECT_APPROVAL_PUBLIC_KEY_ENV] = architectKeys.publicKey.export({ type: "spki", format: "pem" }).toString();
 const sealedDigest = `sha256:${"b".repeat(64)}`;
 const registryItem = { id: OFFICIAL_CURSOR_MODEL, parameters: [{ id: "fast", values: [{ value: "false" }] }, { id: "effort", values: [{ value: "high" }] }] };
 const cursorParams = [{ id: "fast", value: "false" }, { id: "effort", value: "high" }];
@@ -17,11 +20,7 @@ const mac = (receipt: Record<string, unknown>) => {
   const derived = createHmac("sha256", "ff-content-demo-factory/cursor-writer-receipt/hmac-sha256/v1").update(secret).digest();
   return `hmac-sha256:${createHmac("sha256", derived).update(JSON.stringify(canonicalize(unsigned)), "utf8").digest("hex")}`;
 };
-const approvalMac = (approval: Record<string, unknown>) => {
-  const { signature: _signature, ...unsigned } = approval;
-  const derived = createHmac("sha256", "ff-content-demo-factory/architect-stage-approval/hmac-sha256/v1").update(secret).digest();
-  return `hmac-sha256:${createHmac("sha256", derived).update(JSON.stringify(canonicalize(unsigned)), "utf8").digest("hex")}`;
-};
+const approvalSignature = (approval: Record<string, unknown>) => `ed25519:${sign(null, Buffer.from(canonicalArchitectSigningPayload(approval), "utf8"), architectKeys.privateKey).toString("base64")}`;
 function receipt(stage: "writer1" | "writer2" | "writer3", agentId: string, output: unknown): CursorWriterReceipt {
   const createRequest = { apiVersion: "cloud-agent-api-v1", agentId, idempotencyKey: `${stage}-idempotency`, prompt: `${stage} prompt`, model: { id: OFFICIAL_CURSOR_MODEL, params: cursorParams }, cloud: { env: { type: "cloud" } } };
   const value: any = { stage, provider: "cursor-sdk", requestedModel: REQUIRED_CURSOR_MODEL, resolvedModel: OFFICIAL_CURSOR_MODEL, fast: false, jobId: `run-${stage}-verified`, agentId, threadUrl: thread(agentId), inputDigest: digestOf({ stage, input: true }), promptDigest: digestOf(`${stage} prompt`), outputDigest: digestOf(output), completedAt: "2026-08-25T03:00:00.000Z", status: "complete", output, requestDigest: digestOf(createRequest), createRequest, registryItem, registryDigest: digestOf(registryItem), modelParams: cursorParams, effort: "high", effortParameterId: "effort", effortAttestationSource: "official-registry-parameter", attestationSource: "bound-create-request", apiVersion: "cloud-agent-api-v1" };
@@ -30,8 +29,8 @@ function receipt(stage: "writer1" | "writer2" | "writer3", agentId: string, outp
   return value as CursorWriterReceipt;
 }
 function approval(stage: "writer1" | "writer2", source: CursorWriterReceipt): Record<string, unknown> {
-  const value: any = { schemaVersion: "architect-stage-approval/v1", stage, decision: "approve", approvedBy: "architect", independentQaArtifactPath: `qa/architect/${stage}-qa.json`, independentQaArtifactDigest: `sha256:${"a".repeat(64)}`, sealedHandoffDigest: sealedDigest, receiptDigest: digestOf(source), outputDigest: source.outputDigest, issuedAt: "2026-08-25T03:01:00.000Z" };
-  value.signature = approvalMac(value); return value;
+  const value: any = { schemaVersion: "architect-stage-approval/v1", stage, decision: "approve", approvedBy: "architect", author: { kind: "architect", keyId: ARCHITECT_APPROVAL_KEY_ID }, independentQaArtifactPath: `qa/architect/${stage}-qa.json`, independentQaArtifactDigest: `sha256:${"a".repeat(64)}`, sealedHandoffDigest: sealedDigest, receiptDigest: digestOf(source), outputDigest: source.outputDigest, issuedAt: "2026-08-25T03:01:00.000Z" };
+  value.signature = approvalSignature(value); return value;
 }
 const writer1Output = { schemaVersion: "words-writer1-output/v1", pages: [{ type: "service", url: "/garage-door-repair" }, { type: "service", url: "/garage-door-installation" }] };
 const writer2Output = { schemaVersion: "words-writer2-output/v1", homepage: { url: "/", body: "Home copy" }, contact: { url: "/contact", body: "Contact copy" }, header: { navigation: [{ href: "/garage-door-repair" }, { href: "/garage-door-installation" }] }, footer: { links: [{ href: "/contact" }] } };
@@ -59,6 +58,49 @@ test("verified Writer3 production seam requires signed Writer2 QA and immutable 
   assert.notEqual(result.receipt.agentId, writer2.agentId); validateVerifiedWriter3Output(result.output); assert.deepEqual(result.output.reviewAnalysisFacts, { retrievedWrittenReviewCount: 47, reviewRetrievalDate: "2026-08-23", reviewBackedServicesWithoutPages: 2, reviewBackedServiceNames: ["Garage door repair", "Garage door installation"] });
   assert.throws(() => validateVerifiedWriter3Output({ ...writer3Output, reviewAnalysisFacts: { ...VERIFIED_WRITER3_SEALED_FACTS, retrievedWrittenReviewCount: 48 } }), /immutable|sealed/u);
   assert.equal(writer1.stage, "writer1");
+});
+
+test("Architect Writer1 QA fixtures are real-shaped, Ed25519-signed, exact-role, and source-pinned", () => {
+  const sourceBinding = {
+    actionRunId: VERIFIED_WRITER1_APPROVED_ARTIFACT.actionRunId,
+    artifactId: VERIFIED_WRITER1_APPROVED_ARTIFACT.artifactId,
+    artifactZipDigest: VERIFIED_WRITER1_APPROVED_ARTIFACT.artifactZipDigest,
+    artifactZipSize: VERIFIED_WRITER1_APPROVED_ARTIFACT.artifactZipSize,
+    outputPath: VERIFIED_WRITER1_APPROVED_ARTIFACT.outputPath,
+    outputDigest: VERIFIED_WRITER1_APPROVED_ARTIFACT.outputFileDigest,
+    outputSize: VERIFIED_WRITER1_APPROVED_ARTIFACT.outputFileSize,
+    receiptPath: VERIFIED_WRITER1_APPROVED_ARTIFACT.receiptPath,
+    receiptDigest: VERIFIED_WRITER1_APPROVED_ARTIFACT.receiptDigest,
+    receiptSize: VERIFIED_WRITER1_APPROVED_ARTIFACT.receiptSize,
+    statePath: VERIFIED_WRITER1_APPROVED_ARTIFACT.statePath,
+    stateDigest: VERIFIED_WRITER1_APPROVED_ARTIFACT.stateDigest,
+    stateSize: VERIFIED_WRITER1_APPROVED_ARTIFACT.stateSize,
+    serviceRoutes: ["/garage-door-repair", "/garage-door-installation"],
+    changedPaths: VERIFIED_WRITER1_APPROVED_ARTIFACT.changedPaths,
+    beforeOutputDigest: VERIFIED_WRITER1_APPROVED_ARTIFACT.beforeOutputDigest,
+    afterOutputDigest: VERIFIED_WRITER1_APPROVED_ARTIFACT.afterOutputDigest,
+    frozenDigest: VERIFIED_WRITER1_APPROVED_ARTIFACT.frozenDigest,
+    sealedHandoffDigest: sealedDigest,
+  };
+  const qa = (role: "content" | "evidence") => {
+    const value: any = { schemaVersion: ARCHITECT_WRITER1_QA_SCHEMA, stage: "writer1", decision: "PASS", author: { kind: "architect", keyId: ARCHITECT_APPROVAL_KEY_ID }, role, source: sourceBinding, issuedAt: "2026-08-25T03:01:00.000Z" };
+    value.signature = approvalSignature(value); return value;
+  };
+  assert.doesNotThrow(() => validateArchitectWriter1QaArtifact(qa("content"), "content"));
+  assert.doesNotThrow(() => validateArchitectWriter1QaArtifact(qa("evidence"), "evidence"));
+  assert.throws(() => validateArchitectWriter1QaArtifact({ ...qa("content"), author: { kind: "luna", keyId: ARCHITECT_APPROVAL_KEY_ID } }, "content"), /Architect/u);
+  assert.throws(() => validateArchitectWriter1QaArtifact({ ...qa("evidence"), extra: true }, "evidence"), /unexpected keys/u);
+  const approvalValue: any = { schemaVersion: "architect-writer1-approval/v1", stage: "writer1", decision: "APPROVE", author: { kind: "architect", keyId: ARCHITECT_APPROVAL_KEY_ID }, qaArtifacts: [{ role: "content", path: "qa/architect/writer1-content.json", size: 101, digest: `sha256:${"1".repeat(64)}`, decision: "PASS" }, { role: "evidence", path: "qa/architect/writer1-evidence.json", size: 102, digest: `sha256:${"2".repeat(64)}`, decision: "PASS" }], sealedHandoffDigest: sealedDigest, receiptDigest: digestOf(sourceBinding), outputDigest: VERIFIED_WRITER1_APPROVED_ARTIFACT.outputFileDigest, verifiedWriter1Seal: { schemaVersion: "verified-writer1-approval-seal/v1" }, issuedAt: "2026-08-25T03:01:00.000Z" };
+  approvalValue.signature = approvalSignature(approvalValue);
+  assert.doesNotThrow(() => validateArchitectWriter1ApprovalEnvelope(approvalValue, sealedDigest));
+  assert.throws(() => validateArchitectWriter1ApprovalEnvelope({ ...approvalValue, qaArtifacts: approvalValue.qaArtifacts.map((item: any) => ({ ...item, path: "luna/qa/writer1.json" })) }, sealedDigest), /exact external path|content and evidence|QA/u);
+});
+
+test("Writer3 release requires persisted Writer2 state, while the two wake stages remain separate", () => {
+  const state = { schemaVersion: "verified-writer2-state/v1", status: "awaiting-writer2-architect-qa", stage: "writer2", receiptPath: "canary/runtime/verified-writer2-receipt.json", outputPath: "canary/outputs/verified-writer2.json", messagesSent: 1, writer3Blocked: true, writer2Blocked: false, nextStage: null };
+  assert.doesNotThrow(() => validateVerifiedWriter2ReleaseState(state));
+  assert.throws(() => validateVerifiedWriter2ReleaseState({ ...state, writer3Blocked: false }), /blocked state/u);
+  assert.throws(() => validateVerifiedWriter2ReleaseState({ ...state, nextStage: "writer3" }), /blocked state/u);
 });
 
 test("verified downstream validators reject local scope expansion and public Strategy routes", () => {

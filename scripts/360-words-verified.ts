@@ -35,8 +35,8 @@ import { digestOf } from "../src/contracts/digests.js";
 import { buildWriter1ArtifactRecoveryPrompt, digestWriter1ArtifactRecoveryPrompt, buildWriter1GithubBaselineCorrectionPrompt, digestWriter1GithubBaselineCorrectionPrompt, WRITER1_QUARANTINE_CORRECTION_V3_SOURCE, WRITER1_QUARANTINE_CORRECTION_V3_VERSION, buildWriter1QuarantineCorrectionV3Prompt, digestWriter1QuarantineCorrectionV3Prompt, digestWriter1QuarantineCorrectionV3Input } from "./360-words-recovery-prompt.mjs";
 import { projectVerifiedWriter1Handoff, verifyGithubWriter1Baseline, VERIFIED_WRITER1_GITHUB_BASELINE } from "./360-words-github-baseline.mjs";
 import { parseAndValidateWriter1Output, validateSealed, writer1Projection } from "./360-words-canary.js";
-import { runVerifiedWriter2Production, runVerifiedWriter3Production, VERIFIED_WRITER1_APPROVED_ARTIFACT, validateVerifiedWriter1Approval, verifiedWriter2InputDigest } from "../src/pipeline/verified-words-stages.js";
-import { signArchitectStageApproval } from "../src/pipeline/verified-words-policy.js";
+import { runVerifiedWriter2Production, runVerifiedWriter3Production, VERIFIED_WRITER1_APPROVED_ARTIFACT, validateVerifiedWriter1Approval, validateVerifiedWriter2ReleaseState, verifiedWriter2InputDigest } from "../src/pipeline/verified-words-stages.js";
+import { validateArchitectWriter1QaArtifact } from "../src/pipeline/verified-words-policy.js";
 
 const DORMANT = "DORMANT";
 export const VERIFIED_BRANCH = "architect/360-words-canary-verified";
@@ -202,6 +202,7 @@ export function validateVerifiedWriter1SealOnlyControl(control: Dict): void {
 }
 
 function assertRegularPinnedFile(root: string, relative: string, size: number, digest: string): Buffer {
+  if (!relative || relative.startsWith("/") || relative.includes("\\") || relative.split("/").some((part) => part === "" || part === "." || part === "..")) throw new Error(`verified Writer1 approval source path is unsafe: ${relative}`);
   const file = path.join(root, relative);
   const stat = lstatSync(file);
   if (!stat.isFile() || stat.isSymbolicLink()) throw new Error(`verified Writer1 approval source is not a regular file: ${relative}`);
@@ -216,13 +217,15 @@ function validateVerifiedWriter1ApprovalControl(control: Dict): Dict {
   if (control.policy?.mode !== VERIFIED_WRITER1_APPROVAL_SEAL_MODE || control.policy.writer1Only !== true || control.policy.provider !== "cursor-sdk" || control.policy.model !== "cursor-grok-4.6-high" || control.policy.fast !== false || control.policy.stopAfter !== "writer1-approval-sealed" || JSON.stringify(control.policy.approvedRoutes) !== JSON.stringify(["/", ...VERIFIED_WRITER1_ROUTES, "/contact"])) throw new Error("Writer1 approval-seal control is outside the bounded no-vendor policy");
   if (recovery.recoveryVersion !== VERIFIED_WRITER1_APPROVAL_SEAL_VERSION || recovery.sourceBranch !== VERIFIED_BRANCH || recovery.actionRunId !== VERIFIED_WRITER1_APPROVED_ARTIFACT.actionRunId || Number(recovery.artifactId) !== VERIFIED_WRITER1_APPROVED_ARTIFACT.artifactId || recovery.artifactZipDigest !== VERIFIED_WRITER1_APPROVED_ARTIFACT.artifactZipDigest || recovery.artifactZipSize !== VERIFIED_WRITER1_APPROVED_ARTIFACT.artifactZipSize || recovery.allowCreate !== false || recovery.allowResume !== false || recovery.allowFollowUp !== false || recovery.maxFollowUps !== 0 || recovery.send !== undefined || recovery.resume !== undefined || recovery.create !== undefined) throw new Error("Writer1 approval-seal control is missing exact artifact or zero-message pins");
   const qa = recovery.independentQaArtifacts;
-  if (!Array.isArray(qa) || qa.length !== 2 || new Set(qa.map((item: any) => item?.role)).size !== 2 || qa.some((item: any) => !item || (item.role !== "content" && item.role !== "evidence") || item.decision !== "PASS" || typeof item.path !== "string" || !/^(?:qa|architect\/qa|luna\/qa)\/[A-Za-z0-9._/-]+$/u.test(item.path) || !isDigest(item.digest))) throw new Error("Writer1 approval-seal control requires two exact independent PASS QA artifact pins");
+  if (!Array.isArray(qa) || qa.length !== 2 || new Set(qa.map((item: any) => item?.role)).size !== 2 || qa.some((item: any) => !item || (item.role !== "content" && item.role !== "evidence") || item.decision !== "PASS" || item.path !== `qa/architect/writer1-${item.role}.json` || !isDigest(item.digest) || !Number.isSafeInteger(item.size) || item.size <= 0)) throw new Error("Writer1 approval-seal control requires two exact Architect PASS QA artifact pins");
+  const approval = recovery.approval;
+  if (!approval || approval.path !== "qa/architect/writer1-approval.json" || !isDigest(approval.digest) || !Number.isSafeInteger(approval.size) || approval.size <= 0) throw new Error("Writer1 approval-seal control requires one exact Architect approval pin");
   return recovery;
 }
 
 export function validateVerifiedWriter1ApprovalSource(root: string, cursorApiKey: string, control: Dict, sourceRoot = root): Dict {
   const recovery = validateVerifiedWriter1ApprovalControl(control);
-  if (!cursorApiKey) throw new Error("Writer1 approval seal requires CURSOR_API_KEY to verify the direct receipt and sign the seal");
+  if (!cursorApiKey) throw new Error("Writer1 approval seal requires CURSOR_API_KEY to verify the direct Cursor receipt");
   const sealed = validateSealed(root);
   const projection = writer1Projection(sealed);
   const outputBytes = assertRegularPinnedFile(sourceRoot, VERIFIED_WRITER1_APPROVED_ARTIFACT.outputPath, VERIFIED_WRITER1_APPROVED_ARTIFACT.outputFileSize, VERIFIED_WRITER1_APPROVED_ARTIFACT.outputFileDigest);
@@ -238,9 +241,25 @@ export function validateVerifiedWriter1ApprovalSource(root: string, cursorApiKey
   if (receipt.outputDigest !== VERIFIED_WRITER1_APPROVED_ARTIFACT.afterOutputDigest || receipt.afterOutputDigest !== VERIFIED_WRITER1_APPROVED_ARTIFACT.afterOutputDigest || receipt.beforeOutputDigest !== VERIFIED_WRITER1_APPROVED_ARTIFACT.beforeOutputDigest || receipt.frozenDigest !== VERIFIED_WRITER1_APPROVED_ARTIFACT.frozenDigest || receipt.changedPaths?.length !== 1 || receipt.changedPaths[0] !== VERIFIED_WRITER1_APPROVED_ARTIFACT.changedPaths[0] || state.status !== "awaiting-architect-qa" || state.writer2Blocked !== true || state.nextStage !== null || state.messagesSent !== 1) throw new Error("verified Writer1 approval source does not bind the successful correction receipt and stop state");
   if (digestOf(output) !== receipt.outputDigest) throw new Error("verified Writer1 output digest does not match the direct Cursor receipt");
   const seal = { schemaVersion: VERIFIED_WRITER1_APPROVAL_SEAL_VERSION, actionRunId: VERIFIED_WRITER1_APPROVED_ARTIFACT.actionRunId, artifactId: VERIFIED_WRITER1_APPROVED_ARTIFACT.artifactId, artifactZipDigest: VERIFIED_WRITER1_APPROVED_ARTIFACT.artifactZipDigest, artifactZipSize: VERIFIED_WRITER1_APPROVED_ARTIFACT.artifactZipSize, outputPath: VERIFIED_WRITER1_APPROVED_ARTIFACT.outputPath, outputFileDigest: VERIFIED_WRITER1_APPROVED_ARTIFACT.outputFileDigest, outputFileSize: VERIFIED_WRITER1_APPROVED_ARTIFACT.outputFileSize, outputDigest: receipt.outputDigest, receiptPath: VERIFIED_WRITER1_APPROVED_ARTIFACT.receiptPath, receiptDigest: VERIFIED_WRITER1_APPROVED_ARTIFACT.receiptDigest, receiptSize: VERIFIED_WRITER1_APPROVED_ARTIFACT.receiptSize, statePath: VERIFIED_WRITER1_APPROVED_ARTIFACT.statePath, stateDigest: VERIFIED_WRITER1_APPROVED_ARTIFACT.stateDigest, stateSize: VERIFIED_WRITER1_APPROVED_ARTIFACT.stateSize, changedPaths: VERIFIED_WRITER1_APPROVED_ARTIFACT.changedPaths, beforeOutputDigest: VERIFIED_WRITER1_APPROVED_ARTIFACT.beforeOutputDigest, afterOutputDigest: VERIFIED_WRITER1_APPROVED_ARTIFACT.afterOutputDigest, frozenDigest: VERIFIED_WRITER1_APPROVED_ARTIFACT.frozenDigest, crossV3CopyPreservation: "not-asserted", independentQaArtifacts: recovery.independentQaArtifacts, writer2Blocked: true, nextStage: null };
-  const unsigned = { schemaVersion: "architect-stage-approval/v1", stage: "writer1", decision: "approve", approvedBy: "architect", independentQaArtifactPath: recovery.independentQaArtifacts[0].path, independentQaArtifactDigest: recovery.independentQaArtifacts[0].digest, sealedHandoffDigest: sealed.handoff.resealDigest, receiptDigest: digestOf(receipt), outputDigest: receipt.outputDigest, issuedAt: new Date().toISOString(), verifiedWriter1Seal: seal } as any;
-  unsigned.signature = signArchitectStageApproval(unsigned, cursorApiKey);
-  return { approval: unsigned, receipt, output, outputBytes, receiptBytes, stateBytes, recovery };
+  const readPinnedJson = (item: { role: "content" | "evidence"; path: string; size: number; digest: string }): Dict => {
+    const bytes = assertRegularPinnedFile(sourceRoot, item.path, item.size, item.digest);
+    try { return JSON.parse(bytes.toString("utf8")) as Dict; } catch { throw new Error(`Architect ${item.role} QA artifact is not JSON`); }
+  };
+  const qaArtifacts = recovery.independentQaArtifacts.map((item: any) => readPinnedJson(item));
+  for (const role of ["content", "evidence"] as const) {
+    const qa = qaArtifacts.find((item: Dict) => item.role === role);
+    validateArchitectWriter1QaArtifact(qa, role);
+    const sourceKeys = ["actionRunId", "artifactId", "artifactZipDigest", "artifactZipSize", "outputPath", "outputDigest", "outputSize", "receiptPath", "receiptDigest", "receiptSize", "statePath", "stateDigest", "stateSize", "serviceRoutes", "changedPaths", "beforeOutputDigest", "afterOutputDigest", "frozenDigest", "sealedHandoffDigest"];
+    if (JSON.stringify(Object.keys(qa.source).sort()) !== JSON.stringify([...sourceKeys].sort())) throw new Error(`Architect ${role} QA source binding has unexpected keys`);
+    const expectedSource = { actionRunId: VERIFIED_WRITER1_APPROVED_ARTIFACT.actionRunId, artifactId: VERIFIED_WRITER1_APPROVED_ARTIFACT.artifactId, artifactZipDigest: VERIFIED_WRITER1_APPROVED_ARTIFACT.artifactZipDigest, artifactZipSize: VERIFIED_WRITER1_APPROVED_ARTIFACT.artifactZipSize, outputPath: VERIFIED_WRITER1_APPROVED_ARTIFACT.outputPath, outputDigest: VERIFIED_WRITER1_APPROVED_ARTIFACT.outputFileDigest, outputSize: VERIFIED_WRITER1_APPROVED_ARTIFACT.outputFileSize, receiptPath: VERIFIED_WRITER1_APPROVED_ARTIFACT.receiptPath, receiptDigest: VERIFIED_WRITER1_APPROVED_ARTIFACT.receiptDigest, receiptSize: VERIFIED_WRITER1_APPROVED_ARTIFACT.receiptSize, statePath: VERIFIED_WRITER1_APPROVED_ARTIFACT.statePath, stateDigest: VERIFIED_WRITER1_APPROVED_ARTIFACT.stateDigest, stateSize: VERIFIED_WRITER1_APPROVED_ARTIFACT.stateSize, serviceRoutes: ["/garage-door-repair", "/garage-door-installation"], changedPaths: VERIFIED_WRITER1_APPROVED_ARTIFACT.changedPaths, beforeOutputDigest: VERIFIED_WRITER1_APPROVED_ARTIFACT.beforeOutputDigest, afterOutputDigest: VERIFIED_WRITER1_APPROVED_ARTIFACT.afterOutputDigest, frozenDigest: VERIFIED_WRITER1_APPROVED_ARTIFACT.frozenDigest, sealedHandoffDigest: sealed.handoff.resealDigest };
+    if (digestOf(qa.source) !== digestOf(expectedSource)) throw new Error(`Architect ${role} QA source binding does not match the exact audited Writer1 artifact`);
+  }
+  const approvalBytes = assertRegularPinnedFile(sourceRoot, recovery.approval.path, recovery.approval.size, recovery.approval.digest);
+  let approval: Dict; try { approval = JSON.parse(approvalBytes.toString("utf8")) as Dict; } catch { throw new Error("Architect Writer1 approval is not JSON"); }
+  validateVerifiedWriter1Approval(approval, receipt, cursorApiKey, sealed.handoff.resealDigest);
+  if (digestOf(approval.verifiedWriter1Seal) !== digestOf(seal) || digestOf(approval.qaArtifacts) !== digestOf(recovery.independentQaArtifacts) || approval.receiptDigest !== digestOf(receipt) || approval.outputDigest !== receipt.outputDigest) throw new Error("Architect Writer1 approval does not bind the exact QA pins, receipt, or seal");
+  const qaBytes = recovery.independentQaArtifacts.map((item: any) => ({ role: item.role, bytes: assertRegularPinnedFile(sourceRoot, item.path, item.size, item.digest) }));
+  return { approval, approvalBytes, qaBytes, receipt, output, outputBytes, receiptBytes, stateBytes, recovery };
 }
 
 function validateSealedManifestPins(recovery: Dict): void {
@@ -451,7 +470,9 @@ export async function runVerifiedWriter1ApprovalSealOnly(root = process.cwd()): 
   const control = readJson(root, ".factory-wake/360-words-control.json");
   if (control.wakeNonce === DORMANT) return { status: "dormant", stage: "writer1" };
   const result = validateVerifiedWriter1ApprovalSource(root, process.env.CURSOR_API_KEY || "", control, process.env.WRITER1_APPROVAL_SOURCE_ROOT || root);
-  await writeJson(jsonFile(root, VERIFIED_WRITER1_APPROVAL_PATH), result.approval);
+  await fs.mkdir(path.dirname(jsonFile(root, VERIFIED_WRITER1_APPROVAL_PATH)), { recursive: true });
+  await fs.writeFile(jsonFile(root, VERIFIED_WRITER1_APPROVAL_PATH), result.approvalBytes);
+  for (const item of result.qaBytes) await fs.writeFile(jsonFile(root, `canary/runtime/architect-writer1-qa-${item.role}.json`), item.bytes);
   // These are byte-for-byte copies of the already audited Cursor-authored
   // artifact, retained in the seal Action for the later Writer2 wake. No local
   // copy generation or transformation occurs here.
@@ -459,7 +480,7 @@ export async function runVerifiedWriter1ApprovalSealOnly(root = process.cwd()): 
   await fs.writeFile(jsonFile(root, VERIFIED_WRITER1_APPROVED_RECEIPT_PATH), result.receiptBytes);
   await fs.mkdir(path.dirname(jsonFile(root, VERIFIED_WRITER1_APPROVED_OUTPUT_PATH)), { recursive: true });
   await fs.writeFile(jsonFile(root, VERIFIED_WRITER1_APPROVED_OUTPUT_PATH), result.outputBytes);
-  const approvalDigest = digestOf(result.approval);
+  const approvalDigest = `sha256:${createHash("sha256").update(result.approvalBytes).digest("hex")}`;
   await writeJson(jsonFile(root, "canary/runtime/state.json"), { schemaVersion: "verified-writer1-approval-state/v1", status: "writer1-approved-awaiting-writer2-wake", stage: "writer1", approvalPath: VERIFIED_WRITER1_APPROVAL_PATH, approvalDigest, receiptPath: VERIFIED_WRITER1_APPROVED_RECEIPT_PATH, outputPath: VERIFIED_WRITER1_APPROVED_OUTPUT_PATH, writer2Blocked: true, nextStage: null, messagesSent: 0, sourceActionRunId: VERIFIED_WRITER1_APPROVED_ARTIFACT.actionRunId, sourceArtifactId: VERIFIED_WRITER1_APPROVED_ARTIFACT.artifactId });
   return { status: "writer1-approved-awaiting-writer2-wake", stage: "writer1", approvalPath: VERIFIED_WRITER1_APPROVAL_PATH, approvalDigest };
 }
@@ -599,7 +620,7 @@ export async function runVerifiedWriter1CorrectionV3(root = process.cwd()): Prom
 export function validateVerifiedWriter2WakeControl(control: Dict, expectedInputDigest: string, approval: Dict): Dict {
   if (control.schemaVersion !== "words-canary-control/v1" || control.requestedBy !== "architect" || control.stage !== "writer2" || control.restore !== null || control.wakeNonce === DORMANT) throw new Error("verified Writer2 wake envelope is invalid or dormant");
   const recovery = verifiedControlRecovery(control);
-  if (!recovery || control.policy?.mode !== "writer2-write" || control.policy.writer2Only !== true || control.policy.provider !== "cursor-sdk" || control.policy.model !== "cursor-grok-4.6-high" || control.policy.fast !== false || control.policy.stopAfter !== "awaiting-architect-qa" || JSON.stringify(control.policy.approvedRoutes) !== JSON.stringify(["/", ...VERIFIED_WRITER1_ROUTES, "/contact"]) || recovery.recoveryVersion !== "verified-writer2-write/v1" || recovery.sourceBranch !== VERIFIED_BRANCH || recovery.inputDigest !== expectedInputDigest || recovery.promptDigest !== digestOf("Verified Writer2 stage. After an independently signed Architect Writer1 approval, write only the Home page at /, Contact at /contact, and the shared header/footer. Use the sealed Writer1 output as input. Return complete words-writer2-output/v1 JSON only. Do not write service pages, Strategy Overview, QA, or approval artifacts.") || recovery.idempotencyKey !== `${recovery.runId}:writer2:${expectedInputDigest}:${recovery.promptDigest}` || recovery.allowCreate !== true || recovery.allowResume !== false || recovery.allowFollowUp !== false || recovery.maxFollowUps !== 0 || recovery.seal?.approvalPath !== VERIFIED_WRITER1_APPROVAL_PATH || recovery.seal?.receiptPath !== VERIFIED_WRITER1_APPROVED_RECEIPT_PATH || recovery.seal?.outputPath !== VERIFIED_WRITER1_APPROVED_OUTPUT_PATH || recovery.seal?.artifactZipDigest !== VERIFIED_WRITER1_APPROVED_ARTIFACT.artifactZipDigest || recovery.seal?.artifactZipSize !== VERIFIED_WRITER1_APPROVED_ARTIFACT.artifactZipSize || recovery.seal?.writer1OutputDigest !== (approval.verifiedWriter1Seal as Dict)?.outputDigest || !isDigest(recovery.seal?.approvalDigest)) throw new Error("verified Writer2 wake pins are invalid");
+  if (!recovery || control.policy?.mode !== "writer2-write" || control.policy.writer2Only !== true || control.policy.provider !== "cursor-sdk" || control.policy.model !== "cursor-grok-4.6-high" || control.policy.fast !== false || control.policy.stopAfter !== "awaiting-architect-qa" || JSON.stringify(control.policy.approvedRoutes) !== JSON.stringify(["/", ...VERIFIED_WRITER1_ROUTES, "/contact"]) || recovery.recoveryVersion !== "verified-writer2-write/v1" || recovery.sourceBranch !== VERIFIED_BRANCH || recovery.inputDigest !== expectedInputDigest || recovery.promptDigest !== digestOf("Verified Writer2 stage. After an independently signed Architect Writer1 approval, write only the Home page at /, Contact at /contact, and the shared header/footer. Use the sealed Writer1 output as input. Return complete words-writer2-output/v1 JSON only. Do not write service pages, Strategy Overview, QA, or approval artifacts.") || recovery.idempotencyKey !== `${recovery.runId}:writer2:${expectedInputDigest}:${recovery.promptDigest}` || recovery.allowCreate !== true || recovery.allowResume !== false || recovery.allowFollowUp !== false || recovery.maxFollowUps !== 0 || recovery.seal?.approvalPath !== VERIFIED_WRITER1_APPROVAL_PATH || recovery.seal?.receiptPath !== VERIFIED_WRITER1_APPROVED_RECEIPT_PATH || recovery.seal?.outputPath !== VERIFIED_WRITER1_APPROVED_OUTPUT_PATH || recovery.seal?.artifactZipDigest !== VERIFIED_WRITER1_APPROVED_ARTIFACT.artifactZipDigest || recovery.seal?.artifactZipSize !== VERIFIED_WRITER1_APPROVED_ARTIFACT.artifactZipSize || recovery.seal?.writer1OutputDigest !== (approval.verifiedWriter1Seal as Dict)?.outputDigest || !isDigest(recovery.seal?.approvalDigest) || !Number.isSafeInteger(recovery.seal?.approvalSize) || recovery.seal.approvalSize <= 0) throw new Error("verified Writer2 wake pins are invalid");
   return recovery;
 }
 
@@ -639,9 +660,10 @@ export async function runVerifiedWriter2(root = process.cwd()): Promise<{ status
   const control = readJson(root, ".factory-wake/360-words-control.json");
   const sealed = readJson(root, "canary/sealed/360-four-page-reseal-handoff.json");
   const receipt = readJson(root, VERIFIED_WRITER1_APPROVED_RECEIPT_PATH);
-  const approval = readJson(root, VERIFIED_WRITER1_APPROVAL_PATH);
   const recoverySeal = verifiedControlRecovery(control)?.seal as Dict | undefined;
-  if (!recoverySeal || digestOf(approval) !== recoverySeal.approvalDigest) throw new Error("downloaded Writer1 approval bytes are not the exact sealed approval pin");
+  if (!recoverySeal || !isDigest(recoverySeal.approvalDigest) || !Number.isSafeInteger(recoverySeal.approvalSize) || recoverySeal.approvalSize <= 0) throw new Error("downloaded Writer1 approval is missing its exact byte pin");
+  const approvalBytes = assertRegularPinnedFile(root, VERIFIED_WRITER1_APPROVAL_PATH, recoverySeal.approvalSize, recoverySeal.approvalDigest);
+  let approval: Dict; try { approval = JSON.parse(approvalBytes.toString("utf8")) as Dict; } catch { throw new Error("downloaded Writer1 approval is not JSON"); }
   assertRegularPinnedFile(root, "canary/outputs/writer1-output.json", VERIFIED_WRITER1_APPROVED_ARTIFACT.outputFileSize, VERIFIED_WRITER1_APPROVED_ARTIFACT.outputFileDigest);
   assertRegularPinnedFile(root, "canary/runtime/writer1-approved-receipt.json", VERIFIED_WRITER1_APPROVED_ARTIFACT.receiptSize, VERIFIED_WRITER1_APPROVED_ARTIFACT.receiptDigest);
   validateVerifiedWriter1Approval(approval, receipt, process.env.CURSOR_API_KEY || "", String(sealed.resealDigest));
@@ -659,7 +681,9 @@ export async function runVerifiedWriter3(root = process.cwd()): Promise<{ status
   const sealed = readJson(root, "canary/sealed/360-four-page-reseal-handoff.json");
   const receipt = readJson(root, "canary/runtime/verified-writer2-receipt.json");
   const approval = readJson(root, "canary/runtime/architect-writer2-approval.json");
-  const result = await runVerifiedWriter3Production({ runId: `${sealed.handoff.runId}:writer3`, sealedHandoffDigest: String(sealed.resealDigest), writer2Receipt: receipt, writer2Approval: approval });
+  const state = readJson(root, "canary/runtime/state.json");
+  validateVerifiedWriter2ReleaseState(state);
+  const result = await runVerifiedWriter3Production({ runId: `${sealed.handoff.runId}:writer3`, sealedHandoffDigest: String(sealed.resealDigest), writer2Receipt: receipt, writer2Approval: approval, writer2State: state });
   await writeJson(jsonFile(root, "canary/runtime/verified-writer3-receipt.json"), result.receipt);
   await writeJson(jsonFile(root, "canary/outputs/verified-writer3.json"), result.output);
   return { status: "awaiting-writer3-qa", stage: "writer3", threadUrl: result.threadUrl, runId: result.receipt.jobId };

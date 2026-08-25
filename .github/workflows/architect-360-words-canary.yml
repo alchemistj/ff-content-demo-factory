@@ -99,10 +99,12 @@ jobs:
           CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
           CURSOR_MODEL: ${{ secrets.CURSOR_MODEL }}
           CURSOR_FAST: 'false'
+          ARCHITECT_APPROVAL_PUBLIC_KEY_PEM: ${{ vars.ARCHITECT_APPROVAL_PUBLIC_KEY_PEM }}
         run: |
           test -n "$CURSOR_API_KEY"
           test "$CURSOR_MODEL" = "cursor-grok-4.6-high"
           test "$CURSOR_FAST" = "false"
+          test -n "$ARCHITECT_APPROVAL_PUBLIC_KEY_PEM"
 
       - name: Download exact successful Writer1 artifact for Architect approval seal
         if: steps.control.outputs.dormant != 'true' && steps.dispatch_mode.outputs.mode == 'verified-writer1-approval-seal'
@@ -130,6 +132,9 @@ jobs:
           test -f canary/inputs/writer1-approval-artifact/outputs/writer1-output.json
           test -f canary/inputs/writer1-approval-artifact/runtime/writer1-correction-v3-receipt.json
           test -f canary/inputs/writer1-approval-artifact/runtime/state.json
+          test -f canary/inputs/writer1-approval-artifact/qa/architect/writer1-content.json
+          test -f canary/inputs/writer1-approval-artifact/qa/architect/writer1-evidence.json
+          test -f canary/inputs/writer1-approval-artifact/qa/architect/writer1-approval.json
 
       - name: Download exact sealed Writer1 approval for separate Writer2 wake
         if: steps.control.outputs.dormant != 'true' && steps.dispatch_mode.outputs.mode == 'verified-writer2-write'
@@ -380,6 +385,7 @@ jobs:
           CURSOR_MODEL: ${{ secrets.CURSOR_MODEL }}
           CURSOR_FAST: 'false'
           WRITER1_PRIOR_DISPATCH_ROOT: canary/inputs/prior-dispatch-artifact
+          ARCHITECT_APPROVAL_PUBLIC_KEY_PEM: ${{ vars.ARCHITECT_APPROVAL_PUBLIC_KEY_PEM }}
           WRITER1_PRIOR_RECOVERY_ROOT: canary/inputs/prior-v1-recovery-artifact
           WRITER1_PRIOR_RECOVERY_V2_ROOT: canary/inputs/prior-v2-recovery-artifact
           WRITER1_LATEST_V3_FINALIZE_ROOT: canary/inputs/latest-v3-finalize-artifact

@@ -13,6 +13,7 @@ import {
   VERIFIED_PUBLIC_ROUTES,
   VERIFIED_WRITER2_ROUTES,
   VERIFIED_WRITER3_SEALED_FACTS,
+  validateArchitectWriter1ApprovalEnvelope,
   validateSignedArchitectStageApproval,
 } from "./verified-words-policy.js";
 
@@ -59,11 +60,12 @@ function isSha256(value: unknown): value is string { return typeof value === "st
 export function validateVerifiedWriter1Approval(value: unknown, receipt: unknown, cursorApiKey: string, sealedHandoffDigest: string): asserts value is Record<string, unknown> {
   validateSignedArchitectStageApproval(value, "writer1", receipt, cursorApiKey, sealedHandoffDigest);
   const approval = value as Record<string, any>;
+  if (approval.schemaVersion === "architect-writer1-approval/v1") validateArchitectWriter1ApprovalEnvelope(approval, sealedHandoffDigest);
   const seal = approval.verifiedWriter1Seal;
   if (!seal || seal.schemaVersion !== "verified-writer1-approval-seal/v1" || seal.actionRunId !== VERIFIED_WRITER1_APPROVED_ARTIFACT.actionRunId || Number(seal.artifactId) !== VERIFIED_WRITER1_APPROVED_ARTIFACT.artifactId || seal.artifactZipDigest !== VERIFIED_WRITER1_APPROVED_ARTIFACT.artifactZipDigest || seal.artifactZipSize !== VERIFIED_WRITER1_APPROVED_ARTIFACT.artifactZipSize || seal.outputPath !== VERIFIED_WRITER1_APPROVED_ARTIFACT.outputPath || seal.outputFileDigest !== VERIFIED_WRITER1_APPROVED_ARTIFACT.outputFileDigest || seal.outputFileSize !== VERIFIED_WRITER1_APPROVED_ARTIFACT.outputFileSize || seal.receiptPath !== VERIFIED_WRITER1_APPROVED_ARTIFACT.receiptPath || seal.receiptDigest !== VERIFIED_WRITER1_APPROVED_ARTIFACT.receiptDigest || seal.receiptSize !== VERIFIED_WRITER1_APPROVED_ARTIFACT.receiptSize || seal.statePath !== VERIFIED_WRITER1_APPROVED_ARTIFACT.statePath || seal.stateDigest !== VERIFIED_WRITER1_APPROVED_ARTIFACT.stateDigest || seal.stateSize !== VERIFIED_WRITER1_APPROVED_ARTIFACT.stateSize || JSON.stringify(seal.changedPaths) !== JSON.stringify(VERIFIED_WRITER1_APPROVED_ARTIFACT.changedPaths) || seal.beforeOutputDigest !== VERIFIED_WRITER1_APPROVED_ARTIFACT.beforeOutputDigest || seal.afterOutputDigest !== VERIFIED_WRITER1_APPROVED_ARTIFACT.afterOutputDigest || seal.frozenDigest !== VERIFIED_WRITER1_APPROVED_ARTIFACT.frozenDigest || seal.crossV3CopyPreservation !== "not-asserted" || seal.writer2Blocked !== true || seal.nextStage !== null) throw new Error("verified Writer1 approval seal is not bound to the exact successful artifact, receipt, frozen diff, or stop state");
   if (!isSha256(seal.outputDigest) || seal.outputDigest !== (receipt as CursorWriterReceipt).outputDigest || seal.receiptDigest !== VERIFIED_WRITER1_APPROVED_ARTIFACT.receiptDigest) throw new Error("verified Writer1 approval seal is not bound to the direct Cursor receipt output");
-  const qa = seal.independentQaArtifacts;
-  if (!Array.isArray(qa) || qa.length !== 2 || new Set(qa.map((item) => item?.role)).size !== 2 || qa.some((item) => !item || (item.role !== "content" && item.role !== "evidence") || item.decision !== "PASS" || typeof item.path !== "string" || !/^(?:qa|architect\/qa|luna\/qa)\/[A-Za-z0-9._/-]+$/u.test(item.path) || !isSha256(item.digest))) throw new Error("verified Writer1 approval requires two independently pinned PASS QA artifacts");
+  const qa = approval.qaArtifacts ?? seal.independentQaArtifacts;
+  if (!Array.isArray(qa) || qa.length !== 2 || new Set(qa.map((item) => item?.role)).size !== 2 || qa.some((item) => !item || (item.role !== "content" && item.role !== "evidence") || item.decision !== "PASS" || item.path !== `qa/architect/writer1-${item.role}.json` || !isSha256(item.digest) || !Number.isSafeInteger(item.size) || item.size <= 0)) throw new Error("verified Writer1 approval requires two independently pinned PASS Architect QA artifacts");
 }
 
 function record(value: unknown): Dict | null { return value && typeof value === "object" && !Array.isArray(value) ? value as Dict : null; }
@@ -131,7 +133,12 @@ function productionExecutor(): CursorWriterExecutor {
 }
 
 export interface VerifiedWriter2ProductionInput { runId: string; sealedHandoffDigest: string; writer1Receipt: unknown; writer1Approval: unknown; }
-export interface VerifiedWriter3ProductionInput { runId: string; sealedHandoffDigest: string; writer2Receipt: unknown; writer2Approval: unknown; }
+export interface VerifiedWriter3ProductionInput { runId: string; sealedHandoffDigest: string; writer2Receipt: unknown; writer2Approval: unknown; writer2State?: unknown; }
+
+export function validateVerifiedWriter2ReleaseState(value: unknown): asserts value is Dict {
+  const state = record(value);
+  if (!state || state.schemaVersion !== "verified-writer2-state/v1" || state.status !== "awaiting-writer2-architect-qa" || state.stage !== "writer2" || state.writer3Blocked !== true || state.nextStage !== null || state.writer2Blocked !== false || state.messagesSent !== 1 || state.receiptPath !== "canary/runtime/verified-writer2-receipt.json" || state.outputPath !== "canary/outputs/verified-writer2.json") throw new Error("Writer3 release requires the persisted Writer2 blocked state and receipt/output paths");
+}
 
 async function runWriter2WithExecutor(input: VerifiedWriter2ProductionInput, executor: CursorWriterExecutor, requireVerifiedSeal = true): Promise<{ output: Dict; receipt: CursorWriterReceipt; threadUrl: string }> {
   assertPriorReceipt(input.writer1Receipt, "writer1");
@@ -154,6 +161,7 @@ export function verifiedWriter2InputDigest(sealedHandoffDigest: string, writer1R
 }
 
 async function runWriter3WithExecutor(input: VerifiedWriter3ProductionInput, executor: CursorWriterExecutor): Promise<{ output: Dict; receipt: CursorWriterReceipt; threadUrl: string }> {
+  if (input.writer2State !== undefined) validateVerifiedWriter2ReleaseState(input.writer2State);
   assertPriorReceipt(input.writer2Receipt, "writer2");
   assertSealedDigest(input.sealedHandoffDigest);
   validateSignedArchitectStageApproval(input.writer2Approval, "writer2", input.writer2Receipt, process.env.CURSOR_API_KEY || "", input.sealedHandoffDigest);
@@ -171,6 +179,7 @@ export async function runVerifiedWriter2Production(input: VerifiedWriter2Product
 }
 /** Production-only verified Writer3 path. It obtains secrets and the official SDK executor internally. */
 export async function runVerifiedWriter3Production(input: VerifiedWriter3ProductionInput): Promise<{ output: Dict; receipt: CursorWriterReceipt; threadUrl: string }> {
+  validateVerifiedWriter2ReleaseState(input.writer2State);
   assertProductionEnvironment(); return runWriter3WithExecutor(input, productionExecutor());
 }
 
