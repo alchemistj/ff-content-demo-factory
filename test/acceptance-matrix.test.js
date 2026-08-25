@@ -24,6 +24,7 @@ function harness({ failFirstJudge = false } = {}) {
     { id: 'r1', source: 'apify-finalist', author: 'A', rating: 5, date: '2026-01-01', text: 'Installed an EV charger.' },
     { id: 'r2', source: 'apify-finalist', author: 'B', rating: 5, date: '2026-01-02', text: 'Repaired a panel.' },
   ];
+  const sourceCheckpoint = { sourceIdentity: { provider: 'repository-test-fixture', runId: 'matrix-run', artifactId: 'matrix-artifact', sourceSha: 'matrix-source-sha', rootIdentity: 'test-artifact-root:matrix-artifact' }, sourceArtifactDigest: 'sha256:cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc' };
   const adapters = {
     discovery: { discoverCandidates: async ({ searchStrings, location, limit }) => { calls.discover++; assert.deepEqual(searchStrings, ['electrician']); assert.equal(location, 'Dallas, TX'); return { kind: 'discovery-candidates', candidates: candidates.slice(0, limit), request: { searchStrings, location }, provenance: { run: { provider: 'test', status: 'completed', runId: 'discovery-1' } } }; } },
     websiteAudit: { audit: async () => { calls.audits++; return { inspected: true, opportunity: 'clear site opportunity', graphicsInspection: { status: 'inspected', findings: [] } }; } },
@@ -37,7 +38,7 @@ function harness({ failFirstJudge = false } = {}) {
     { id: 'panel-upgrade', name: 'Panel upgrade', reviewIds: ['r2'], currentSitePageUrls: [] },
   ] };
   const originalProposal = adapters.prescriber.propose;
-  adapters.prescriber.propose = async (...args) => { const result = await originalProposal(...args); const bound = args[0] || {}; result.proposal.serviceCoverageLedger = { ...serviceCoverageLedger, prospectId: bound.prospectId, placeId: bound.placeId, runId: bound.runId }; return result; };
+  adapters.prescriber.propose = async (...args) => { const result = await originalProposal(...args); const bound = args[0] || {}; result.proposal.sourceCheckpoint = sourceCheckpoint; result.proposal.serviceCoverageLedger = { ...serviceCoverageLedger, prospectId: bound.prospectId, placeId: bound.placeId, runId: bound.runId, sourceIdentity: sourceCheckpoint.sourceIdentity }; return result; };
   return { root, config, calls, candidates, adapters };
 }
 
