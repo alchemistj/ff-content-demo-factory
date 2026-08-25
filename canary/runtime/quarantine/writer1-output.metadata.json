@@ -1,10 +1,10 @@
 {
   "schemaVersion": "words-writer1-quarantine/v1",
-  "status": "quarantined-invalid",
+  "status": "superseded-by-approved-normalization",
   "consumable": false,
   "approved": false,
   "completionAuthorized": false,
-  "writer2Blocked": true,
+  "writer2Blocked": false,
   "authorship": "cursor-cloud-agent-artifact",
   "provider": "cursor-sdk",
   "requestedModel": "cursor-grok-4.6-high",
@@ -586,5 +586,7 @@
         "reviewer": "string"
       }
     }
-  ]
+  ],
+  "supersededByApprovedOutputPath": "canary/outputs/writer1-output.json",
+  "supersededByNormalizationPath": "canary/runtime/writer1-pointer-ledger-normalization.json"
 }

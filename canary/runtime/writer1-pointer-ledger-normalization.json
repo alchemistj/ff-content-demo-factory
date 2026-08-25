@@ -1,0 +1,334 @@
+{
+  "schemaVersion": "words-writer1-pointer-ledger-normalization/v1",
+  "status": "normalized-awaiting-architect-qa",
+  "rawApproved": false,
+  "completionAuthorized": false,
+  "writer2Blocked": true,
+  "sourceByteDigest": "sha256:ec36da69992dd318e913671763a96e4b838ab747b36e512702f91176155e5eac",
+  "sourceSize": 127586,
+  "normalizedOutputDigest": "sha256:c771016e724a49dd41254bde3639de6c1b1c18fc69c23533ed19bd9773f3ef8e",
+  "removed": [
+    {
+      "path": "/pages/0/reviewEvidence/0/excerpt",
+      "key": "excerpt",
+      "valueDigest": "sha256:25bbb32878ecf10fa177a61835c0bdb867fe4b3c1cf8cb85acbc02ff08d15dc3"
+    },
+    {
+      "path": "/pages/0/reviewEvidence/0/reviewer",
+      "key": "reviewer",
+      "valueDigest": "sha256:a413f1fcf587af2308778e408dca014b8c8c6428ceede23160d133241b0441c8"
+    },
+    {
+      "path": "/pages/0/reviewEvidence/1/excerpt",
+      "key": "excerpt",
+      "valueDigest": "sha256:6942462d70775d850e870c373465f6d31f82b05bc2387329216892b899c6ce40"
+    },
+    {
+      "path": "/pages/0/reviewEvidence/1/reviewer",
+      "key": "reviewer",
+      "valueDigest": "sha256:ec8a9257278aaa4aa6b0768573823d2a562e253fe6245a4c02da0f6df1f22ba6"
+    },
+    {
+      "path": "/pages/0/reviewEvidence/2/excerpt",
+      "key": "excerpt",
+      "valueDigest": "sha256:6a54b08a1d67bd14d88161a0d79928ac2e5fc08a3bdcad6583f0043445f9ce5f"
+    },
+    {
+      "path": "/pages/0/reviewEvidence/2/reviewer",
+      "key": "reviewer",
+      "valueDigest": "sha256:048c135be54eae7961e6dfb8c6252588b04c1225baf10024847b8eb65a437f74"
+    },
+    {
+      "path": "/pages/0/reviewEvidence/3/excerpt",
+      "key": "excerpt",
+      "valueDigest": "sha256:38df2cb73e4c0e4490ac3d00b2a063472a429ec091fe2dc3a156196adfc82fff"
+    },
+    {
+      "path": "/pages/0/reviewEvidence/3/reviewer",
+      "key": "reviewer",
+      "valueDigest": "sha256:7a713b2c176da9ed14e332f4d6cb20641c3baba458d675eaa6c2e925c3de1645"
+    },
+    {
+      "path": "/pages/0/reviewEvidence/4/excerpt",
+      "key": "excerpt",
+      "valueDigest": "sha256:7cdd6fd10700257d351219ab3939d489b6dfb03e808bd9ad7131165b64c42f37"
+    },
+    {
+      "path": "/pages/0/reviewEvidence/4/reviewer",
+      "key": "reviewer",
+      "valueDigest": "sha256:65f06c515575778559e70b34244a9478aa1eeccf312e3fa03abe5a407cd97674"
+    },
+    {
+      "path": "/pages/0/reviewEvidence/5/excerpt",
+      "key": "excerpt",
+      "valueDigest": "sha256:5275775f810fe35a86d75e9d9f9d763c00aa51579874ac631a551e1dc18f3e69"
+    },
+    {
+      "path": "/pages/0/reviewEvidence/5/reviewer",
+      "key": "reviewer",
+      "valueDigest": "sha256:83ea7d6a3ea30788750f56a8286973459470a290d9ed2ded2a9365b1211f2379"
+    },
+    {
+      "path": "/pages/0/reviewEvidence/6/excerpt",
+      "key": "excerpt",
+      "valueDigest": "sha256:58ba044cc266d1d39fdf8f85173f12de2491894deecd251bd569a785f8a1116b"
+    },
+    {
+      "path": "/pages/0/reviewEvidence/6/reviewer",
+      "key": "reviewer",
+      "valueDigest": "sha256:b9b02f215c6fafa01cd6c937bfbee8056e3bce1b1a9938019f0f3db684825ec6"
+    },
+    {
+      "path": "/pages/0/reviewEvidence/7/excerpt",
+      "key": "excerpt",
+      "valueDigest": "sha256:2f7acdda0e8af9ca74a3935f3de1f2697fabe26c801d864972cb8f2e6623285e"
+    },
+    {
+      "path": "/pages/0/reviewEvidence/7/reviewer",
+      "key": "reviewer",
+      "valueDigest": "sha256:70bf9dc24ababed5f29784c4520d72d2eaf4b2df790dc8699149e61685b0ca54"
+    },
+    {
+      "path": "/pages/0/reviewEvidence/8/excerpt",
+      "key": "excerpt",
+      "valueDigest": "sha256:039b6d3bd1855e7d3210fbe90e87109aad586a57fb6ea938a92fcd1ce467b739"
+    },
+    {
+      "path": "/pages/0/reviewEvidence/8/reviewer",
+      "key": "reviewer",
+      "valueDigest": "sha256:369db062dfd167dad480101167ba5c5265950a492fbef79e60271b99fc409994"
+    },
+    {
+      "path": "/pages/0/reviewEvidence/9/excerpt",
+      "key": "excerpt",
+      "valueDigest": "sha256:d60dbf8d0f4464c48a33487326dc867944cc42054eb8b6043767724c6549553f"
+    },
+    {
+      "path": "/pages/0/reviewEvidence/9/reviewer",
+      "key": "reviewer",
+      "valueDigest": "sha256:adaa6f7b9474a2965f1172fd1c6bd187e6a48b1d46e7494fede2bcc0d2eacbd2"
+    },
+    {
+      "path": "/pages/0/reviewEvidence/10/excerpt",
+      "key": "excerpt",
+      "valueDigest": "sha256:319aa9443dd911f0c3f3ea92bd5df69987eabcdeab5735b042486b3cc0829b37"
+    },
+    {
+      "path": "/pages/0/reviewEvidence/10/reviewer",
+      "key": "reviewer",
+      "valueDigest": "sha256:fa560a6458a134a5b2dc28f9dcac984017d9062dbe82a21fd098bf5ed9d4d82f"
+    },
+    {
+      "path": "/pages/0/reviewEvidence/11/excerpt",
+      "key": "excerpt",
+      "valueDigest": "sha256:fc42b667aa10514d44b8b0d6d696aa8c481ebc1d53927e45dd7b28da4d6c3721"
+    },
+    {
+      "path": "/pages/0/reviewEvidence/11/reviewer",
+      "key": "reviewer",
+      "valueDigest": "sha256:c547c071a3201b58b01f888673f460d55535c700c79d748f6394f7b98a9cc983"
+    },
+    {
+      "path": "/pages/0/reviewEvidence/12/excerpt",
+      "key": "excerpt",
+      "valueDigest": "sha256:f76fe366de34d3c60795f0d221100b41b1a99875cd9f2987f77e9b20b3896c4a"
+    },
+    {
+      "path": "/pages/0/reviewEvidence/12/reviewer",
+      "key": "reviewer",
+      "valueDigest": "sha256:0e5d7cc342cf9996ffcd301101ed2817f2bc6025881f56fc94a925e87af86a6e"
+    },
+    {
+      "path": "/pages/0/reviewEvidence/13/excerpt",
+      "key": "excerpt",
+      "valueDigest": "sha256:5ea48d50a76c30bf44dda179f0e599c3114fcaadb853f3bd45ee75fba82044ad"
+    },
+    {
+      "path": "/pages/0/reviewEvidence/13/reviewer",
+      "key": "reviewer",
+      "valueDigest": "sha256:18d52d66191385cb0042c6ee553fc2d8bf9577fdca65eb804693ff821f9e2990"
+    },
+    {
+      "path": "/pages/0/reviewEvidence/14/excerpt",
+      "key": "excerpt",
+      "valueDigest": "sha256:285bd9b9ee8bfb3d155f21c9d700b17876e69856e5181b3745ea781be3a01715"
+    },
+    {
+      "path": "/pages/0/reviewEvidence/14/reviewer",
+      "key": "reviewer",
+      "valueDigest": "sha256:eb58286aa0b748db17c8fe78757c076c70632e1a99edfcdab0886c1fd90461c8"
+    },
+    {
+      "path": "/pages/0/reviewEvidence/15/excerpt",
+      "key": "excerpt",
+      "valueDigest": "sha256:138501961ffed32de6a08df9b5999a737334ecc412120c622132c31c758459d5"
+    },
+    {
+      "path": "/pages/0/reviewEvidence/15/reviewer",
+      "key": "reviewer",
+      "valueDigest": "sha256:d3825204202f3dbaff11c827ec67210d35882a1954ad07346f11a0016b536628"
+    },
+    {
+      "path": "/pages/0/reviewEvidence/16/excerpt",
+      "key": "excerpt",
+      "valueDigest": "sha256:f575cc4bfd0c5793b03f0f2c5ea886866d0e05f6b8befce1385b2107ff539e8e"
+    },
+    {
+      "path": "/pages/0/reviewEvidence/16/reviewer",
+      "key": "reviewer",
+      "valueDigest": "sha256:d668522d0a22504ce2061e3dfece5a552e75eda496a58196c5a25db4104f2c54"
+    },
+    {
+      "path": "/pages/0/reviewEvidence/17/excerpt",
+      "key": "excerpt",
+      "valueDigest": "sha256:22854534bb8f426ac7bcddeab88f5aae482ff27b068606553744a1d910f6d187"
+    },
+    {
+      "path": "/pages/0/reviewEvidence/17/reviewer",
+      "key": "reviewer",
+      "valueDigest": "sha256:c0bfb2e0e58fd7e4930cb6c9c51aed6a6654ad3dad3f9627e4f32daf55eba38a"
+    },
+    {
+      "path": "/pages/0/reviewEvidence/18/excerpt",
+      "key": "excerpt",
+      "valueDigest": "sha256:a832d7eef9bafd1eb260e211386d88a16988b4b89d11c26df9cd8a6f93b5e685"
+    },
+    {
+      "path": "/pages/0/reviewEvidence/18/reviewer",
+      "key": "reviewer",
+      "valueDigest": "sha256:afe58ae94e288f692460cef83069dd42cc75bcac788b23410e04479a27fbdbc3"
+    },
+    {
+      "path": "/pages/0/reviewEvidence/19/excerpt",
+      "key": "excerpt",
+      "valueDigest": "sha256:0ab4b4c15cc7366769599c51bf2487d1de79491ba0a4628242efe69bc74f79aa"
+    },
+    {
+      "path": "/pages/0/reviewEvidence/19/reviewer",
+      "key": "reviewer",
+      "valueDigest": "sha256:b036d76ce1d6977883eb77b190ee789ec4489d4d7f2846b46538bc1fd287b67b"
+    },
+    {
+      "path": "/pages/0/reviewEvidence/20/excerpt",
+      "key": "excerpt",
+      "valueDigest": "sha256:4d16460d9a94e9238827a845a3b5977e58ac30201d02dccb097857532b0bfc08"
+    },
+    {
+      "path": "/pages/0/reviewEvidence/20/reviewer",
+      "key": "reviewer",
+      "valueDigest": "sha256:0f628899fb33ae858b8e746388d347df853bc45414c2c72c0a21d245e8c86f47"
+    },
+    {
+      "path": "/pages/0/reviewEvidence/21/excerpt",
+      "key": "excerpt",
+      "valueDigest": "sha256:46be135ec58392bbced4311d766546cafcdf9ab990955fc8712a1e8f1121f662"
+    },
+    {
+      "path": "/pages/0/reviewEvidence/21/reviewer",
+      "key": "reviewer",
+      "valueDigest": "sha256:d60da3748155d4f5e2985861e410279dec891d933eeaa4edc72de4630a2d898f"
+    },
+    {
+      "path": "/pages/0/reviewEvidence/22/excerpt",
+      "key": "excerpt",
+      "valueDigest": "sha256:c548f29636087cd923838320cdaae157e683d1f930e6125245b4cfad635a2c01"
+    },
+    {
+      "path": "/pages/0/reviewEvidence/22/reviewer",
+      "key": "reviewer",
+      "valueDigest": "sha256:e5660ffb67488dffebf89501e527c406a82a418224f3a953a8ac5fc2c3a08f17"
+    },
+    {
+      "path": "/pages/0/reviewEvidence/23/excerpt",
+      "key": "excerpt",
+      "valueDigest": "sha256:76780ecb451b627d2b4f0f37c49eab72f597d64521475ffbde5b859c3915897a"
+    },
+    {
+      "path": "/pages/0/reviewEvidence/23/reviewer",
+      "key": "reviewer",
+      "valueDigest": "sha256:9ced10c100a63b8cce0b2eff59bda6565679f48ad2204a005d5a8a2ef7bd8b87"
+    },
+    {
+      "path": "/pages/0/reviewEvidence/24/excerpt",
+      "key": "excerpt",
+      "valueDigest": "sha256:b02fc9a7c8f897ca47885c92e31a7aea04eedbf79b034dbe6ec728c9892adf9a"
+    },
+    {
+      "path": "/pages/0/reviewEvidence/24/reviewer",
+      "key": "reviewer",
+      "valueDigest": "sha256:0150184bda8aa08d4cc3a46cf7759c6a4cb85944b7fb653069110b54625536c4"
+    },
+    {
+      "path": "/pages/1/reviewEvidence/0/excerpt",
+      "key": "excerpt",
+      "valueDigest": "sha256:ecc9bbab230a6faaf95ac5c203601b487cc51c153baf7f3af2173a3c06be37f6"
+    },
+    {
+      "path": "/pages/1/reviewEvidence/0/reviewer",
+      "key": "reviewer",
+      "valueDigest": "sha256:57666e4b6c22bdbf038a46858526f1591a30fee8ffb1bedc42d4d8ce3a3a7645"
+    },
+    {
+      "path": "/pages/1/reviewEvidence/1/excerpt",
+      "key": "excerpt",
+      "valueDigest": "sha256:527a8a165800f1b8dcd4caa502f4770e9a9c66b0dcc5e6b7480f709002980f62"
+    },
+    {
+      "path": "/pages/1/reviewEvidence/1/reviewer",
+      "key": "reviewer",
+      "valueDigest": "sha256:5e5d8881902dd1b9c2c490010130c9a19bd2a1c8d14d85f8bd6e6dd155221f87"
+    },
+    {
+      "path": "/pages/1/reviewEvidence/2/excerpt",
+      "key": "excerpt",
+      "valueDigest": "sha256:348eeadd9ac492ef8059b2f53b7f9396174fe527bba171a9612855bf6013b148"
+    },
+    {
+      "path": "/pages/1/reviewEvidence/2/reviewer",
+      "key": "reviewer",
+      "valueDigest": "sha256:79d74ebd6a7d9e5b815ac2c17f91712785bbe55b2d679d3d83442890307689c5"
+    },
+    {
+      "path": "/pages/1/reviewEvidence/3/excerpt",
+      "key": "excerpt",
+      "valueDigest": "sha256:360204b8dffd1f6e0fa0221dd1ddd0610048b000e650849a2d810c180a56ff83"
+    },
+    {
+      "path": "/pages/1/reviewEvidence/3/reviewer",
+      "key": "reviewer",
+      "valueDigest": "sha256:5111ffc9eedfd205e59868589999d16380d0881f4614e9b3f55c2ac4b28038a0"
+    },
+    {
+      "path": "/pages/1/reviewEvidence/4/excerpt",
+      "key": "excerpt",
+      "valueDigest": "sha256:6f3f22af0f3f0e1febc8b680f6c082ba30a58ec39ffa040a77240f92496a1cf5"
+    },
+    {
+      "path": "/pages/1/reviewEvidence/4/reviewer",
+      "key": "reviewer",
+      "valueDigest": "sha256:1b6a3f8fdd67e612abc9733628a1d3d0b9bc26a2d79706d456bdb935c627c9c9"
+    },
+    {
+      "path": "/pages/1/reviewEvidence/5/excerpt",
+      "key": "excerpt",
+      "valueDigest": "sha256:fca6e9fe9f0c725adba3d79fb67db93836c83c30765bfa8a2478e2f88abd01c6"
+    },
+    {
+      "path": "/pages/1/reviewEvidence/5/reviewer",
+      "key": "reviewer",
+      "valueDigest": "sha256:301bc76f72c463c59f0271a6f1017f8e21560a81a0197c64186994b79b582274"
+    }
+  ],
+  "errorCountBefore": 31,
+  "preservedQuarantinePath": "canary/runtime/quarantine/writer1-output.json",
+  "authorship": {
+    "renderableWords": "grok-4.6",
+    "structuralPointerNormalization": "factory"
+  },
+  "rawSemanticRenderedCopyDigest": "sha256:165d310ae1e30225b6278cc0fbde7d2cab23a60f186157c59734257519c01f89",
+  "normalizedSemanticRenderedCopyDigest": "sha256:165d310ae1e30225b6278cc0fbde7d2cab23a60f186157c59734257519c01f89",
+  "rawStableIdentityDigest": "sha256:0fef8724cd5b16101589522f730b139ce29aebb28100467e8af72cc962bf566c",
+  "normalizedStableIdentityDigest": "sha256:0fef8724cd5b16101589522f730b139ce29aebb28100467e8af72cc962bf566c",
+  "rawProvenanceMetadataDigest": "sha256:874972859690b0bd8a087454c6106ad74e1739c0876759c82586a8f7eec749f7",
+  "normalizedProvenanceMetadataDigest": "sha256:874972859690b0bd8a087454c6106ad74e1739c0876759c82586a8f7eec749f7"
+}

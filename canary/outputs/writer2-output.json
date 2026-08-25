@@ -1,0 +1,170 @@
+{
+  "schemaVersion": "words-writer2-output/v1",
+  "homepage": {
+    "type": "homepage",
+    "pageType": "homepage",
+    "url": "/",
+    "prescriptionId": "Home:/",
+    "pageId": "Home:/",
+    "primaryKeyword": "garage door company Springfield MO",
+    "title": "360 Garage Door and More \u2014 Springfield, MO Garage Door Work",
+    "seoTitle": "360 Garage Door and More \u2014 Springfield, MO Garage Door Work",
+    "metaDescription": "Springfield garage door work from 360 Garage Door and More, grounded in completed repair and installation jobs. Call (417) 366-7360, Monday\u2013Friday 8 AM\u20135 PM.",
+    "h1": "Springfield garage door work backed by completed jobs",
+    "heroSubhead": "360 Garage Door and More is a local Springfield shop. Jenny answers the phone. Will does the on-site work. The two service pages below carry the completed-job record; this page gets you to the right door problem without turning one visit\u2019s timing into a promise.",
+    "body": "If the door you already have is sagging, sticking, or will not open, start with repair. If you need a new door fitted to the opening you have, start with installation. Related hardware work stays with those parent pages. There is no separate spring, opener, or weekend-dispatch destination here.\n\nListing hours are Monday\u2013Friday 8 AM to 5 PM. Saturday and Sunday are closed. A review that mentions a same-day visit, a next-day arrival, or a holiday message is that job\u2019s timeline, not a same-day, weekend, or 24/7 coverage claim.",
+    "sections": [
+      {
+        "id": "home-local-shop",
+        "heading": "A Springfield shop with named people on the jobs",
+        "body": "Reviewers keep naming the same people: Jenny on the phone and schedule, Will on the driveway. That is how the written record describes the company, not a slogan about being everywhere at once. The shop address is 2035 W Mt Vernon St, Springfield, MO 65802."
+      },
+      {
+        "id": "home-repair-route",
+        "heading": "When the door you have is the problem",
+        "body": "Repair is for a door that already hangs in the opening. The repair page leads with Chris Keaton\u2019s sagging-door job and keeps related spring, seal, track, and travel work on that page instead of inventing extra routes."
+      },
+      {
+        "id": "home-install-route",
+        "heading": "When you need a new door in the opening you have",
+        "body": "Installation is for new doors, including multi-door jobs and a taller door fitted to a reframed opening. The installation page leads with Marcie Spitzer\u2019s completed new-door job and the on-site cleanup reviewers noticed."
+      },
+      {
+        "id": "home-proof",
+        "heading": "Completed work, then a later check \u2014 not a warranty window",
+        "body": "Cameron Spitzer\u2019s written review records replacement of doors, then a return months later to see that everything still worked. That follow-up is what happened on his jobs. It is not a callback window, warranty term, or guaranteed rating."
+      }
+    ],
+    "reviewPlacements": [
+      {
+        "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xWdlZGQk9hMjFOUlhaVk5rczFVR2RKTlVKWlVGRRAB",
+        "quote": "They replaced my doors and openers with quality materials at a lower cost than the competitors.  Then,  they came back a couple months later just to check and make sure everything was working as it is supposed to.",
+        "attribution": "Cameron Spitzer",
+        "sectionId": "home-proof",
+        "provenance": {
+          "type": "review",
+          "ref": "Ci9DQUlRQUNvZENodHljRjlvT2xWdlZGQk9hMjFOUlhaVk5rczFVR2RKTlVKWlVGRRAB",
+          "placement": "home-lead-completed-doors",
+          "section": "home-proof"
+        }
+      }
+    ],
+    "ctas": [
+      {
+        "label": "Garage door repair",
+        "href": "/garage-door-repair"
+      },
+      {
+        "label": "Garage door installation",
+        "href": "/garage-door-installation"
+      },
+      {
+        "label": "Call (417) 366-7360",
+        "href": "tel:+14173667360",
+        "kind": "phone"
+      },
+      {
+        "label": "Contact",
+        "href": "/contact"
+      }
+    ]
+  },
+  "contact": {
+    "type": "contact",
+    "pageType": "contact",
+    "url": "/contact",
+    "prescriptionId": "Contact:/contact",
+    "pageId": "Contact:/contact",
+    "primaryKeyword": "contact 360 Garage Door Springfield",
+    "title": "Contact 360 Garage Door and More",
+    "seoTitle": "Contact 360 Garage Door and More",
+    "metaDescription": "Call or visit 360 Garage Door and More in Springfield, MO. Phone (417) 366-7360. Monday\u2013Friday 8 AM to 5 PM, closed Saturday and Sunday.",
+    "h1": "Talk with 360 Garage Door and More",
+    "eligibleForReviews": false,
+    "body": "Jenny is the person reviewers name when they call. Reach the shop during listed hours. Do not read a holiday text or an Easter messenger reply as on-call coverage.",
+    "sections": [
+      {
+        "id": "contact-reach",
+        "heading": "Phone, address, and hours",
+        "body": "Phone: (417) 366-7360. Address: 2035 W Mt Vernon St, Springfield, MO 65802. Hours: Monday\u2013Friday 8 AM to 5 PM. Saturday closed. Sunday closed."
+      },
+      {
+        "id": "contact-where-next",
+        "heading": "If you already know the job",
+        "body": "Repair questions belong on the repair page. New-door questions belong on the installation page. This page does not add service claims, pricing, or arrival promises."
+      }
+    ],
+    "ctas": [
+      {
+        "label": "Call (417) 366-7360",
+        "href": "tel:+14173667360",
+        "kind": "phone"
+      },
+      {
+        "label": "Garage door repair",
+        "href": "/garage-door-repair"
+      },
+      {
+        "label": "Garage door installation",
+        "href": "/garage-door-installation"
+      }
+    ]
+  },
+  "header": {
+    "brand": "360 Garage Door and More",
+    "logo": {
+      "href": "/",
+      "label": "360 Garage Door and More"
+    },
+    "navigation": [
+      {
+        "label": "Home",
+        "href": "/"
+      },
+      {
+        "label": "Garage Door Repair",
+        "href": "/garage-door-repair"
+      },
+      {
+        "label": "Garage Door Installation",
+        "href": "/garage-door-installation"
+      },
+      {
+        "label": "Contact",
+        "href": "/contact"
+      }
+    ],
+    "cta": {
+      "label": "Call (417) 366-7360",
+      "href": "tel:+14173667360",
+      "kind": "phone"
+    }
+  },
+  "footer": {
+    "body": "360 Garage Door and More \u00b7 2035 W Mt Vernon St, Springfield, MO 65802 \u00b7 Monday\u2013Friday 8 AM to 5 PM, closed Saturday and Sunday.",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/"
+      },
+      {
+        "label": "Garage Door Repair",
+        "href": "/garage-door-repair"
+      },
+      {
+        "label": "Garage Door Installation",
+        "href": "/garage-door-installation"
+      },
+      {
+        "label": "Contact",
+        "href": "/contact"
+      },
+      {
+        "label": "Call (417) 366-7360",
+        "href": "tel:+14173667360",
+        "kind": "phone"
+      }
+    ],
+    "legal": "Words-only canary. No website deployment is authorized from this package."
+  }
+}

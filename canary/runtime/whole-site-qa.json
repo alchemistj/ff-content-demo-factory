@@ -1,0 +1,79 @@
+{
+  "assessor": "architect-whole-site-360",
+  "independent": true,
+  "pass": true,
+  "dimensionsReviewed": [
+    "specificity",
+    "strongest-review-choice",
+    "persuasive-flow",
+    "voice-drift",
+    "cross-page-distinctness",
+    "homepage-complementarity",
+    "contact-leanness",
+    "strategy-truthfulness",
+    "unsupported-claims",
+    "generic-ai-filler"
+  ],
+  "findings": [
+    {
+      "dimension": "specificity",
+      "severity": "note",
+      "summary": "NAP, hours, named technicians, and job-specific review proof are present.",
+      "rationale": "Public copy uses the sealed Springfield address, listed hours, and named people from the written reviews."
+    },
+    {
+      "dimension": "strongest-review-choice",
+      "severity": "note",
+      "summary": "Service pages keep their prescribed lead reviews; Home uses Cameron Spitzer.",
+      "rationale": "Chris Keaton remains the repair lead; Marcie Spitzer remains the installation lead; Home uses the prescribed completed-doors review."
+    },
+    {
+      "dimension": "persuasive-flow",
+      "severity": "note",
+      "summary": "Home splits repair vs installation, then Contact.",
+      "rationale": "CTAs match the four approved routes."
+    },
+    {
+      "dimension": "voice-drift",
+      "severity": "note",
+      "summary": "Voice stays local and job-specific rather than generic nationwide SLA copy.",
+      "rationale": "Will/Jenny naming and Springfield address recur without inventing coverage claims."
+    },
+    {
+      "dimension": "cross-page-distinctness",
+      "severity": "note",
+      "summary": "Repair, installation, home, and contact do different jobs.",
+      "rationale": "Repair keeps the existing door; installation is new doors; contact is reachability only."
+    },
+    {
+      "dimension": "homepage-complementarity",
+      "severity": "note",
+      "summary": "Home routes into finished service pages instead of restating them.",
+      "rationale": "Home points to Chris/Marcie leads without duplicating the full service bodies."
+    },
+    {
+      "dimension": "contact-leanness",
+      "severity": "note",
+      "summary": "Contact has no review placements and no service promises.",
+      "rationale": "Phone, address, hours, and route-outs only."
+    },
+    {
+      "dimension": "strategy-truthfulness",
+      "severity": "note",
+      "summary": "Strategy Overview describes the actual four-page canary and the pointer-ledger correction.",
+      "rationale": "Internal artifact records the 62-key normalization, blocked Writer2 until QA, and no merge/deploy."
+    },
+    {
+      "dimension": "unsupported-claims",
+      "severity": "note",
+      "summary": "No 24/7, weekend dispatch, or same-day SLA is asserted as policy.",
+      "rationale": "Anecdotal timing in reviews is labeled as that job\u2019s timeline."
+    },
+    {
+      "dimension": "generic-ai-filler",
+      "severity": "note",
+      "summary": "Copy stays tied to named jobs and sealed facts.",
+      "rationale": "No filler about being the most trusted garage door company in America."
+    }
+  ]
+}
