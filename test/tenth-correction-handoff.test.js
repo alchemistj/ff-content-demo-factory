@@ -16,7 +16,7 @@ const {
   claimResumeAtomic,
 } = require('../src/factory/handoff');
 const { runCurrentHeadGate1Canary } = require('../src/run-gate1-canary');
-const { PLACE_ID } = require('../src/factory/sealed-evidence');
+const { PLACE_ID, verifySealed360Lineage } = require('../src/factory/sealed-evidence');
 
 function completeBinding(extra = {}) {
   return {
@@ -51,6 +51,7 @@ function validReceipt({ operation = 'discovery', input, binding, provider } = {}
     terminalStatus: 'succeeded',
     input: payload,
     inputDigest: digest(payload),
+    result: { ok: true },
     outputDigest: digest({ ok: true }),
     startedAt: '2026-01-01T00:00:00Z',
     completedAt: '2026-01-01T00:00:01Z',
@@ -342,7 +343,7 @@ test('tenth correction resume downloads the phase-A artifact and refuses duplica
   assert.throws(() => claimResumeAtomic(casFile, pending.handoffId, 'result-1'), /replay/);
 });
 
-test('tenth correction sealed 360 canary reaches Human Gate 1 without vendor calls or manual movement', async () => {
+test('tenth correction sealed 360 replay is synthetic-only and cannot reach Human Gate 1', async () => {
   const head = spawnSync('git', ['rev-parse', 'HEAD'], { encoding: 'utf8' }).stdout.trim();
   assert.match(head, /^[a-f0-9]{40}$/);
   const root = fs.mkdtempSync(path.join(os.tmpdir(), 'factory-ninth-sealed-360-'));
@@ -362,20 +363,32 @@ test('tenth correction sealed 360 canary reaches Human Gate 1 without vendor cal
       FACTORY_TEST_RESULT: 'local-sealed-evidence',
     }),
   });
-  assert.equal(result.proof.gate1State, 'awaiting-human-gate-1');
+  assert.equal(result.proof.gate1State, 'synthetic-sealed-evidence-only');
   assert.equal(result.proof.sealedEvidence, true);
-  assert.equal(result.proof.candidate.placeId, PLACE_ID);
+  assert.equal(result.proof.synthetic, true);
+  assert.equal(result.proof.approvableGate1, false);
+  assert.equal(result.proof.candidate, undefined);
   assert.equal(result.proof.integratedFactoryReadiness, false);
-  assert.match(result.state.activeRun.artifacts.gate1.markdown, /Human Gate 1/);
-  assert.match(result.state.activeRun.artifacts.gate1.markdown, /360 Garage Door/);
-  assert.doesNotMatch(result.state.activeRun.artifacts.gate1.markdown, /CURSOR_API_KEY/);
+  assert.equal(result.state, null);
   const proofFile = path.join(root, 'canary/outputs/current-head-gate1-proof.json');
-  const gateFile = path.join(root, 'canary/outputs/gate1.md');
   assert.equal(fs.existsSync(proofFile), true);
-  assert.equal(fs.existsSync(gateFile), true);
-  fs.mkdirSync('/tmp/cursor/tenth-correction', { recursive: true });
-  fs.copyFileSync(gateFile, '/tmp/cursor/tenth-correction/gate1.md');
-  fs.copyFileSync(proofFile, '/tmp/cursor/tenth-correction/current-head-gate1-proof.json');
+  assert.equal(fs.existsSync(path.join(root, 'canary/outputs/gate1.md')), false);
+});
+
+test('eleventh correction rejects every mutation of the fixed historical sealed lineage', () => {
+  for (const [label, relative, mutate] of [
+    ['approval', 'canary/inputs/360-four-page-reseal-approval.json', (v) => { v.approvedBy = 'not Josh'; }],
+    ['ledger', 'canary/inputs/360-four-page-reseal-ledger.json', (v) => { v.prospectId = 'foreign-prospect'; }],
+    ['discovery', 'canary/inputs/360-garage-door-and-more.discovery.json', (v) => { v.request = { changed: true }; }],
+    ['handoff strategy/service/routes', 'canary/outputs/360-four-page-reseal-handoff.json', (v) => { v.selectedServiceIds[0] = 'foreign-service'; v.pages[0].url = '/foreign'; v.writerProjection.routes[0] = '/foreign'; }],
+  ]) {
+    const root = fs.mkdtempSync(path.join(os.tmpdir(), 'factory-eleventh-lineage-'));
+    for (const file of ['canary/inputs/360-four-page-reseal-approval.json', 'canary/inputs/360-four-page-reseal-ledger.json', 'canary/inputs/360-garage-door-and-more.discovery.json', 'canary/outputs/360-four-page-reseal-handoff.json']) {
+      const target = path.join(root, file); fs.mkdirSync(path.dirname(target), { recursive: true }); fs.copyFileSync(file, target);
+    }
+    const target = path.join(root, relative); const value = JSON.parse(fs.readFileSync(target, 'utf8')); mutate(value); fs.writeFileSync(target, JSON.stringify(value, null, 2) + '\n');
+    assert.throws(() => verifySealed360Lineage({ root, handoff: JSON.parse(fs.readFileSync(path.join(root, 'canary/outputs/360-four-page-reseal-handoff.json'), 'utf8')) }), /carry-forward requires Josh review/, label);
+  }
 });
 
 test('tenth correction workflow contracts automatic retrieval, sealed integrated phase, and no API key', () => {
@@ -395,5 +408,4 @@ test('tenth correction workflow contracts automatic retrieval, sealed integrated
   assert.match(runner, /retrievePhaseAHandoff/);
   assert.match(runner, /FACTORY_HANDOFF_CAS_FILE/);
   assert.match(runner, /createSealed360Adapters/);
-  assert.equal(fs.existsSync('.github/workflows/exact-head-sealed-360-proof.yml'), true);
 });
