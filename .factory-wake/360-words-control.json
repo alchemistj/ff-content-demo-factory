@@ -1,6 +1,6 @@
 {
   "schemaVersion": "words-canary-control/v1",
-  "wakeNonce": "DORMANT",
+  "wakeNonce": "W1-360-20260825-FINAL-126-001",
   "requestedBy": "architect",
   "stage": "writer1",
   "runId": "32717620900",
@@ -10,10 +10,46 @@
   "restore": null,
   "policy": {
     "writer1Only": true,
-    "approvedRoutes": ["/", "/garage-door-repair", "/garage-door-installation", "/contact"],
+    "approvedRoutes": [
+      "/",
+      "/garage-door-repair",
+      "/garage-door-installation",
+      "/contact"
+    ],
     "fast": false,
     "provider": "cursor-sdk",
     "model": "cursor-grok-4.6-high",
-    "stopAfter": "awaiting-architect-qa"
+    "stopAfter": "awaiting-architect-qa",
+    "mode": "validation-only",
+    "recovery": {
+      "priorActionRunId": "32785189225",
+      "priorArtifactId": 9541802267,
+      "priorAgentId": "bc-30fc8ffa-2005-44b9-8fc7-48ddd9c3bcc8",
+      "priorRunId": "run-b0341a7a-9f03-4dec-b76d-7350ba1e82f2",
+      "priorThreadUrl": "https://cursor.com/agents/bc-30fc8ffa-2005-44b9-8fc7-48ddd9c3bcc8",
+      "artifactPath": "artifacts/writer1-output.json",
+      "sourceBranch": "architect/360-words-canary",
+      "sourceSha": "9c5c6a0c19f52860ad22961090baa1387bb29507",
+      "sealedHandoffDigest": "sha256:715f651a53055444b8381dd8a276a2046d93776c61d88a2193cc2d42a1c83ad6",
+      "recoveryVersion": "words-writer1-artifact-recovery/v3-finalize",
+      "priorRecoveryV3ActionRunId": "32797811881",
+      "priorRecoveryV3ArtifactId": 9545486318,
+      "priorRecoveryV3ArtifactDigest": "sha256:23eac7a38caf588f383e424bd7bf39e5246f5634c7c06866d8e94250e6fe710e",
+      "priorRecoveryV3SourceSha": "6d5f9e0f65af98185b6827b445cbfeff74e88ce7",
+      "priorRecoveryV3AgentId": "bc-30fc8ffa-2005-44b9-8fc7-48ddd9c3bcc8",
+      "priorRecoveryV3RunId": "run-47a109e2-4fd4-48df-a727-8a92a76cc472",
+      "priorRecoveryV3ThreadUrl": "https://cursor.com/agents/bc-30fc8ffa-2005-44b9-8fc7-48ddd9c3bcc8",
+      "priorRecoveryV3PromptDigest": "sha256:b2ef742380aeb7b3b7ea020479ece673130341a16273fe67b2a3ffd2936a6f6d",
+      "priorRecoveryV3FailureCode": "WRITER1_OUTPUT_INVALID",
+      "priorRecoveryV3InputDigest": "sha256:3ce24295a62cc863e6023b57ada26b0b88019b86e397e9c8e0ee98d1a612eda6",
+      "priorBeforeArtifactByteDigest": "sha256:58338da9ffc6d8bd8b5ebc0fa9a1af71b4eceee0b86cd126d9c9243842c80178",
+      "currentArtifactByteDigest": "sha256:ec36da69992dd318e913671763a96e4b838ab747b36e512702f91176155e5eac",
+      "currentArtifactUpdatedAt": "2026-08-25T01:33:20.000Z",
+      "frozenCopyProjectionDigest": "sha256:c1e33b69b4021623b917060efce36d8b91973deaf7db724c2183635741973d1b",
+      "absoluteArtifactPath": "/opt/cursor/artifacts/writer1-output.json",
+      "apiArtifactPath": "artifacts/writer1-output.json",
+      "promptDigest": "sha256:b2ef742380aeb7b3b7ea020479ece673130341a16273fe67b2a3ffd2936a6f6d",
+      "idempotencyKey": "run-47a109e2-4fd4-48df-a727-8a92a76cc472:writer1:artifact-recovery:v3-finalize:sha256:3ce24295a62cc863e6023b57ada26b0b88019b86e397e9c8e0ee98d1a612eda6:sha256:b2ef742380aeb7b3b7ea020479ece673130341a16273fe67b2a3ffd2936a6f6d"
+    }
   }
 }
