@@ -11,6 +11,7 @@ const { createDispatchPacket, canonicalThreadUrl, validateJobReceipt, validateDi
 const { createPendingHandoff, validatePendingHandoff, validateTerminalCursorResult, claimResume, claimResumeAtomic } = require('../src/factory/handoff');
 const { main: dispatchCursor } = require('../src/dispatch-cursor-cloud-agent');
 const { collect: collectCursorTerminal } = require('../src/collect-cursor-terminal-result');
+const { markerFor, markerBody, parseMarker, findClaim } = require('../src/factory/github-ledger');
 const { runCurrentHeadGate1Canary } = require('../src/run-gate1-canary');
 const fs = require('node:fs');
 const os = require('node:os');
@@ -170,9 +171,48 @@ test('fifth correction exposes executable phase-A durable handoff without Cursor
   const result = await runCurrentHeadGate1Canary({ root: temp, requestFile: path.join(temp, 'request.json'), selectionFile: path.join(temp, 'selection.json'), qaFile: path.join(temp, 'qa.json'), cursorBundleFile: '', env: { FACTORY_CANARY_PHASE: 'dispatch', FACTORY_CHECKED_OUT_SHA: 'head-1', EXPECTED_HEAD_SHA: 'head-1', FACTORY_HEAD_ASSERTION: 'true', FACTORY_ISSUE_NUMBER: '8', FACTORY_PR_NUMBER: '1', FACTORY_BRANCH: 'architect/greenfield-gate1' } });
   assert.equal(result.proof.awaitingCursorReceipt, true);
   const pending = JSON.parse(fs.readFileSync(path.join(temp, 'canary/outputs/current-head-gate1-pending.json'), 'utf8'));
-  assert.equal(pending.immutable, true); assert.equal(pending.expectedHeadSha, 'head-1');
+  assert.equal(pending.immutable, true); assert.equal(pending.envelope.checkedOutSha, 'head-1');
   const canary = fs.readFileSync('src/run-gate1-canary.js', 'utf8');
-  assert.match(canary, /FACTORY_CANARY_PHASE/); assert.match(canary, /sealedDigest/); assert.match(canary, /boundReceipts/); assert.doesNotMatch(canary, /CURSOR_API_KEY.*required/);
+  assert.match(canary, /FACTORY_CANARY_PHASE/); assert.match(canary, /factory-cursor-handoff-v1|validatePendingHandoff/); assert.doesNotMatch(canary, /sealedDigest/); assert.match(canary, /boundReceipts/); assert.doesNotMatch(canary, /CURSOR_API_KEY.*required/);
+});
+
+test('eighth correction sends real phase-A output through the real resume entrypoint with the canonical handoff schema', async () => {
+  const temp = fs.mkdtempSync(path.join(os.tmpdir(), 'factory-phase-a-b-integration-'));
+  const requestFile = path.join(temp, 'request.json'); const selectionFile = path.join(temp, 'selection.json'); const qaFile = path.join(temp, 'qa.json');
+  for (const file of [requestFile, selectionFile, qaFile]) fs.writeFileSync(file, '{}');
+  const baseEnv = { FACTORY_CANARY_PHASE: 'dispatch', FACTORY_CHECKED_OUT_SHA: 'head-1', EXPECTED_HEAD_SHA: 'head-1', FACTORY_HEAD_ASSERTION: 'true', FACTORY_ISSUE_NUMBER: '8', FACTORY_PR_NUMBER: '1', FACTORY_BRANCH: 'architect/greenfield-gate1', FACTORY_REPOSITORY: 'alchemistj/ff-content-demo-factory' };
+  await runCurrentHeadGate1Canary({ root: temp, requestFile, selectionFile, qaFile, cursorBundleFile: '', env: baseEnv });
+  const pendingFile = path.join(temp, 'canary/outputs/current-head-gate1-pending.json'); const pending = JSON.parse(fs.readFileSync(pendingFile, 'utf8'));
+  assert.equal(pending.schemaVersion, 'factory-cursor-handoff-v1'); assert.equal(pending.envelope.checkedOutSha, 'head-1'); assert.equal(pending.inputFiles.request, requestFile); assert.equal('sealedDigest' in pending, false);
+  const packet = pending.dispatchPacket;
+  const bundleFile = path.join(temp, 'cursor-bundle.json');
+  const validDispatch = { ...packet, commentUrl: 'https://github.com/alchemistj/ff-content-demo-factory/issues/8#issuecomment-1' };
+  const validBundle = { schemaVersion: 'cursor-cloud-agent-bundle-v1', model: packet.model, dispatch: validDispatch, inputManifestDigest: pending.envelope.inputManifestDigest, envelope: { checkedOutSha: pending.envelope.checkedOutSha, inputManifestDigest: pending.envelope.inputManifestDigest } };
+  fs.writeFileSync(bundleFile, JSON.stringify(validBundle));
+  const receipt = { operation: 'website-audit', stage: 'website-audit', status: 'completed', terminalStatus: 'succeeded', agentId: 'agent-1', runId: 'run-1', threadUrl: 'https://cursor.com/agents/agent-1', inputDigest: 'sha256:11111111', outputDigest: 'sha256:22222222', startedAt: '2026-01-01T00:00:00Z', completedAt: '2026-01-01T00:00:01Z', envelope: { ...pending.envelope, operation: 'website-audit', stage: 'website-audit' } };
+  const malformedComment = path.join(temp, 'malformed-comment.md'); fs.writeFileSync(malformedComment, '```json\n' + JSON.stringify({ handoffId: pending.handoffId, dispatchKey: pending.envelope.dispatchKey, receipt, bundle: { schemaVersion: 'cursor-cloud-agent-bundle-v1' } }) + '\n```\n');
+  assert.throws(() => collectCursorTerminal({ pendingFile, commentFile: malformedComment, outputFile: path.join(temp, 'malformed-result.json'), authorLogin: 'cursor[bot]', commentId: '54', commentUrl: 'https://github.com/alchemistj/ff-content-demo-factory/issues/8#issuecomment-54' }), /model|attestation/);
+  const validComment = path.join(temp, 'valid-comment.md'); fs.writeFileSync(validComment, '```json\n' + JSON.stringify({ handoffId: pending.handoffId, dispatchKey: pending.envelope.dispatchKey, receipt, bundle: validBundle }) + '\n```\n');
+  assert.equal(collectCursorTerminal({ pendingFile, commentFile: validComment, outputFile: path.join(temp, 'valid-result.json'), authorLogin: 'cursor[bot]', commentId: '55', commentUrl: 'https://github.com/alchemistj/ff-content-demo-factory/issues/8#issuecomment-55' }).commentId, '55');
+  let cycleCount = 0;
+  const result = await runCurrentHeadGate1Canary({ root: temp, requestFile, selectionFile, qaFile, cursorBundleFile: bundleFile, env: { ...baseEnv, FACTORY_CANARY_PHASE: 'resume', FACTORY_HANDOFF_FILE: pendingFile }, deps: {
+    loadConfig: () => ({}), createProductionAdapters: () => ({}), runFactoryCycle: async () => {
+      cycleCount += 1;
+      if (cycleCount === 1) return { nextAction: { code: 'architect-candidate-review-required' }, state: { activeRun: { runId: 'factory-run-1', prospectId: 'prospect-1' } } };
+      if (cycleCount === 2) return { nextAction: { code: 'architect-qa-required' }, state: { activeRun: { runId: 'factory-run-1', prospectId: 'prospect-1' } } };
+      return { nextAction: { code: 'awaiting-human-gate-1' }, state: { activeRun: { runId: 'factory-run-1', prospectId: 'prospect-1', status: 'awaiting-human-gate-1', candidate: {}, artifacts: { gate1: { markdown: '# Gate 1' } } } } };
+    },
+  } });
+  assert.equal(result.proof.gate1State, 'awaiting-human-gate-1'); assert.equal(cycleCount, 3); assert.equal(result.proof.integratedFactoryReadiness, false);
+});
+
+test('eighth correction durable ledger rejects foreign or malformed markers without burning a valid claim', () => {
+  const marker = markerFor({ kind: 'resume', repository: 'alchemistj/ff-content-demo-factory', issueNumber: 8, prNumber: 1, branch: 'architect/greenfield-gate1', checkedOutSha: 'head-1', handoffId: 'handoff-1', dispatchKey: 'dispatch-1', resultId: '55', inputDigest: 'sha256:11111111', outputDigest: 'sha256:22222222', threadUrl: 'https://cursor.com/agents/agent-1', model: { alias: 'cursor-grok-4.6-high', resolvedModel: 'grok-4.6', fastOff: true } });
+  assert.deepEqual(parseMarker(markerBody(marker)), marker);
+  const comments = [{ id: 55, html_url: 'https://github.com/alchemistj/ff-content-demo-factory/issues/8#issuecomment-55', user: { login: 'cursor[bot]' }, body: markerBody(marker) }, { id: 56, html_url: 'https://github.com/other/repo/issues/8#issuecomment-56', user: { login: 'cursor[bot]' }, body: markerBody(marker) }];
+  assert.equal(findClaim(comments, { repository: 'alchemistj/ff-content-demo-factory', issueNumber: 8, kind: 'resume', handoffId: 'handoff-1', dispatchKey: 'dispatch-1', resultId: '55' }).commentId, '55');
+  assert.equal(findClaim(comments, { repository: 'alchemistj/ff-content-demo-factory', issueNumber: 8, kind: 'resume', handoffId: 'handoff-1', dispatchKey: 'dispatch-1', resultId: '56' }), null);
+  assert.throws(() => parseMarker('FACTORY_CURSOR_LEDGER_V1\n{"schemaVersion":"factory-cursor-github-ledger-v1"}'), /digest|stale/);
 });
 
 test('fifth correction independently verifies authoritative PR metadata before paid canary work', () => {
@@ -197,7 +237,7 @@ test('sixth correction binds automatic handoff retrieval, terminal receipt, fore
   assert.deepEqual(claimed.consumedHandoffs, [pending.handoffId]);
   assert.throws(() => claimResume(claimed, pending.handoffId, result.commentId), /replay/);
   const resume = fs.readFileSync('.github/workflows/cursor-cloud-agent-resume.yml', 'utf8');
-  assert.match(resume, /issue_comment/); assert.match(resume, /gh run download/); assert.match(resume, /cursor\[bot\]/); assert.match(resume, /Factory resume claimed/); assert.match(resume, /FACTORY_HANDOFF_FILE/);
+  assert.match(resume, /issue_comment/); assert.match(resume, /gh run download/); assert.match(resume, /cursor\[bot\]/); assert.match(resume, /factory-ledger|github-ledger/); assert.match(resume, /FACTORY_HANDOFF_FILE/);
   const dispatch = fs.readFileSync('.github/workflows/cursor-cloud-agent-dispatch.yml', 'utf8');
   assert.match(dispatch, /workflow_run/); assert.match(dispatch, /current-head-gate1-canary-\$PHASE_A_RUN_ID/); assert.match(dispatch, /pending.checked.json/);
 });
@@ -227,7 +267,8 @@ test('seventh correction executes a phase-A dispatch to phase-B receipt contract
   const envelope = { ...pending.envelope, operation: 'website-audit', stage: 'website-audit' };
   const receipt = { operation: 'website-audit', stage: 'website-audit', status: 'completed', terminalStatus: 'succeeded', agentId: 'agent-1', runId: 'run-1', threadUrl: 'https://cursor.com/agents/agent-1', inputDigest: 'sha256:11111111', outputDigest: 'sha256:22222222', startedAt: '2026-01-01T00:00:00Z', completedAt: '2026-01-01T00:00:01Z', envelope };
   const commentFile = path.join(temp, 'cursor-comment.md');
-  const terminalJson = JSON.stringify({ handoffId: pending.handoffId, dispatchKey: pending.envelope.dispatchKey, receipt, bundle: { schemaVersion: 'cursor-cloud-agent-bundle-v1' } });
+  const bundle = { schemaVersion: 'cursor-cloud-agent-bundle-v1', model: packet.model, dispatch: { ...packet, commentUrl: 'https://github.com/alchemistj/ff-content-demo-factory/issues/8#issuecomment-1' }, inputManifestDigest: pending.envelope.inputManifestDigest, envelope: { checkedOutSha: pending.envelope.checkedOutSha, inputManifestDigest: pending.envelope.inputManifestDigest } };
+  const terminalJson = JSON.stringify({ handoffId: pending.handoffId, dispatchKey: pending.envelope.dispatchKey, receipt, bundle });
   fs.writeFileSync(commentFile, 'Result:\n```json\n' + terminalJson + '\n```\n');
   const outputFile = path.join(temp, 'terminal-result.json');
   const terminal = collectCursorTerminal({ pendingFile, commentFile, outputFile, authorLogin: 'cursor[bot]', commentId: '55', commentUrl: 'https://github.com/alchemistj/ff-content-demo-factory/issues/8#issuecomment-55' });
@@ -237,23 +278,29 @@ test('seventh correction executes a phase-A dispatch to phase-B receipt contract
   assert.throws(() => claimResumeAtomic(casFile, pending.handoffId, '55'), /replay/);
 });
 
-test('seventh correction makes manual and automatic dispatch share CAS and fails closed on absent proof artifacts', () => {
+test('seventh correction makes manual and automatic dispatch share a handoff namespace and fails closed on absent proof artifacts', () => {
   const dispatch = fs.readFileSync('.github/workflows/cursor-cloud-agent-dispatch.yml', 'utf8');
   const resume = fs.readFileSync('.github/workflows/cursor-cloud-agent-resume.yml', 'utf8');
   const canary = fs.readFileSync('.github/workflows/current-head-gate1-canary.yml', 'utf8');
   assert.match(dispatch, /factory-cursor-handoff-/);
-  assert.ok((dispatch.match(/claimResumeAtomic/g) || []).length >= 2);
+  assert.match(dispatch, /group: factory-cursor-handoff-\$\{\{ github\.repository \}\}/);
+  assert.doesNotMatch(dispatch, /claimResumeAtomic/);
+  assert.match(dispatch, /github-ledger/);
   assert.match(resume, /factory-cursor-handoff-/);
-  assert.match(resume, /claimResumeAtomic/);
+  assert.match(resume, /group: factory-cursor-handoff-\$\{\{ github\.repository \}\}/);
+  assert.doesNotMatch(resume, /claimResumeAtomic/);
+  assert.match(resume, /github-ledger/);
   assert.match(resume, /cursor-cloud-agent-dispatch-\$dispatch_run/);
-  assert.match(resume, /dispatch\/dispatch-cas\.json/);
+  assert.match(resume, /ledger-comments\.json/);
   assert.match(dispatch, /Dispatch workflow run:/);
-  assert.match(dispatch, /dispatch-cas\.json/);
+  assert.doesNotMatch(dispatch, /dispatch-cas\.json/);
   assert.match(canary, /if-no-files-found: error/);
   assert.doesNotMatch(canary, /if-no-files-found: warn/);
   assert.match(canary, /test -s canary\/outputs\/current-head-gate1-proof\.json|current-head-gate1-proof\.json/);
   assert.match(resume, /if-no-files-found: error/);
   assert.match(resume, /test -s canary\/outputs\/gate1\.md/);
+  assert.ok(resume.indexOf('Validate terminal result before consuming durable resume claim') < resume.indexOf('Consume durable resume ledger claim after validation'));
+  assert.match(fs.readFileSync('src/collect-cursor-terminal-result.js', 'utf8'), /validateBundle/);
 });
 
 test('seventh correction rejects a concurrent manual/automatic handoff claim at the shared CAS boundary', async () => {
