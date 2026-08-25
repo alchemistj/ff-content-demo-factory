@@ -3,8 +3,8 @@
 const { digest } = require('./prescription-policy');
 
 const SCHEMA_VERSION = 'factory-cursor-github-ledger-v1';
-const STATES = Object.freeze(['claimed', 'preparing', 'posted', 'in_motion', 'terminal', 'resumed']);
-const TRANSITIONS = Object.freeze({ claimed: ['preparing'], preparing: ['posted'], posted: ['in_motion'], in_motion: ['terminal'], terminal: ['resumed'], resumed: [] });
+const STATES = Object.freeze(['claimed', 'preparing', 'posted', 'in_motion', 'terminal', 'phase_b_claimed', 'resumed']);
+const TRANSITIONS = Object.freeze({ claimed: ['preparing'], preparing: ['posted'], posted: ['in_motion'], in_motion: ['terminal'], terminal: ['phase_b_claimed', 'resumed'], phase_b_claimed: ['resumed'], resumed: [] });
 
 function required(value, label) {
   if (value == null || String(value).trim() === '') throw new Error(`${label} is required`);
