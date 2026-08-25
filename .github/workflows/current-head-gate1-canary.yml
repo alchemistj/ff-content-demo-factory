@@ -132,6 +132,13 @@ jobs:
           APIFY_API_TOKEN: ${{ secrets.APIFY_API_TOKEN }}
         run: |
           test -n "$APIFY_API_TOKEN"
+      - name: Seal verified approved-lineage runtime packet after exact checkout
+        if: inputs.sealed_evidence != true
+        env:
+          EXPECTED_HEAD_SHA: ${{ inputs.expected_head_sha }}
+          FACTORY_EXPECTED_HEAD_SHA: ${{ inputs.expected_head_sha }}
+          RUNTIME_PACKET_PATH: canary/outputs/runtime/360-current-head-gate1-dispatch-packet.json
+        run: node scripts/prepare-360-gate1-canary-packet.js
       - name: Install locked dependencies
         run: npm ci --ignore-scripts --no-audit --no-fund
       - name: Run fresh current-head Gate 1 canary (trusted receipt path)
@@ -150,6 +157,11 @@ jobs:
           FACTORY_SEALED_EVIDENCE: ${{ inputs.sealed_evidence }}
           FACTORY_PHASE_A_RUN_ID: ${{ inputs.phase_a_run_id }}
           FACTORY_REPOSITORY: ${{ github.repository }}
+          FACTORY_CHECKED_OUT_SHA: ${{ inputs.expected_head_sha }}
+          FACTORY_ASSERTED_HEAD_SHA: ${{ inputs.expected_head_sha }}
+          FACTORY_HEAD_ASSERTION: 'true'
+          FACTORY_PHASE_A_PRODUCTION: 'true'
+          FACTORY_APPROVED_LINEAGE_PACKET: canary/outputs/runtime/360-current-head-gate1-dispatch-packet.json
         run: node src/run-gate1-canary.js . "$REQUEST_FILE" "$SELECTION_FILE" "$QA_FILE" "$CURSOR_BUNDLE_FILE"
       - name: Run synthetic sealed replay (test-only; no vendor credentials)
         if: inputs.sealed_evidence == true
@@ -185,12 +197,12 @@ jobs:
           if-no-files-found: error
           retention-days: 30
       - name: Prove Gate 1 artifacts exist
-        if: inputs.phase == 'resume' || inputs.phase == 'integrated'
+        if: (inputs.phase == 'resume' || inputs.phase == 'integrated') && inputs.sealed_evidence != true
         run: |
           test -s canary/outputs/current-head-gate1-proof.json
           test -s canary/outputs/gate1.md
-      - name: Upload phase-B Gate 1 proof (required for resume or integrated)
-        if: always() && (inputs.phase == 'resume' || inputs.phase == 'integrated')
+      - name: Upload phase-B Gate 1 proof (required for production resume or integrated)
+        if: always() && (inputs.phase == 'resume' || inputs.phase == 'integrated') && inputs.sealed_evidence != true
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         with:
           name: current-head-gate1-canary-${{ github.run_id }}
