@@ -20,6 +20,14 @@ test("verified branch starts dormant and never treats the committed downstream s
   assert.throws(() => assertVerifiedDownstreamState({ status: "awaiting-human-gate-2", stage: "awaiting-human-gate-2", writer2Blocked: false, nextStage: null }), /manufactured downstream|Writer2 blocked/u);
 });
 
+test("DORMANT control is the minimal safe envelope and contains no wake placeholders", () => {
+  const control = JSON.parse(readFileSync(path.join(root, ".factory-wake/360-words-control.json"), "utf8"));
+  assert.equal(control.wakeNonce, "DORMANT");
+  assert.equal(Object.hasOwn(control.policy, "mode"), false);
+  assert.equal(Object.hasOwn(control.policy, "recovery"), false);
+  assert.doesNotMatch(JSON.stringify(control), /PENDING|PLACEHOLDER|TODO/iu);
+});
+
 test("verified control binds the new isolated branch, exact fresh agent, v5 prompt, one same-thread correction, and no create", () => {
   const control = JSON.parse(readFileSync(path.join(root, ".factory-wake/360-words-control.json"), "utf8"));
   const inputDigest = digestOf(writer1Projection(validateSealed(root)));

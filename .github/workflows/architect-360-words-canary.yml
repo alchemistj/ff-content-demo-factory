@@ -60,6 +60,21 @@ jobs:
             node --import tsx scripts/360-words-canary.ts --validate-only
           fi
 
+      - name: Download and verify immutable GitHub Writer1 baseline before vendor access
+        if: steps.control.outputs.dormant != 'true' && steps.control.outputs.recovery_version == 'words-writer1-correction/v2'
+        shell: bash
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          BASELINE_REPOSITORY: ${{ steps.control.outputs.baseline_repository }}
+          BASELINE_COMMIT: ${{ steps.control.outputs.baseline_commit }}
+          BASELINE_PATH: ${{ steps.control.outputs.baseline_path }}
+          BASELINE_BLOB_SHA: ${{ steps.control.outputs.baseline_blob_sha }}
+          BASELINE_RAW_SHA256: ${{ steps.control.outputs.baseline_raw_sha256 }}
+          BASELINE_SIZE: ${{ steps.control.outputs.baseline_size }}
+          SEALED_HANDOFF_PATH: canary/sealed/360-four-page-reseal-handoff.json
+          BASELINE_OUTPUT_ROOT: canary/inputs/github-writer1-baseline
+        run: node scripts/360-words-github-baseline.mjs
+
       - name: Validate secret-backed Cursor runtime
         if: steps.control.outputs.dormant != 'true'
         shell: bash
@@ -184,8 +199,11 @@ jobs:
           WRITER1_PRIOR_RECOVERY_ROOT: canary/inputs/prior-v1-recovery-artifact
           WRITER1_PRIOR_RECOVERY_V2_ROOT: canary/inputs/prior-v2-recovery-artifact
           WRITER1_LATEST_V3_FINALIZE_ROOT: canary/inputs/latest-v3-finalize-artifact
+          WRITER1_GITHUB_BASELINE_ROOT: canary/inputs/github-writer1-baseline
         run: |
-          if [ "${{ steps.control.outputs.recovery_version }}" = 'words-writer1-correction/v1' ]; then
+          if [ "${{ steps.control.outputs.recovery_version }}" = 'words-writer1-correction/v2' ]; then
+            node --import tsx scripts/360-words-verified.ts --writer1-correction-v2
+          elif [ "${{ steps.control.outputs.recovery_version }}" = 'words-writer1-correction/v1' ]; then
             node --import tsx scripts/360-words-verified.ts --writer1-correction
           else
             node --import tsx scripts/360-words-canary.ts --artifact-recovery

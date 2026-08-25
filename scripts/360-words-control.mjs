@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import { execFileSync } from "node:child_process";
-import { digestWriter1ArtifactRecoveryPrompt } from "./360-words-recovery-prompt.mjs";
+import { digestWriter1ArtifactRecoveryPrompt, buildWriter1ArtifactRecoveryPrompt, digestWriter1GithubBaselineCorrectionPrompt } from "./360-words-recovery-prompt.mjs";
+import { VERIFIED_WRITER1_GITHUB_BASELINE } from "./360-words-github-baseline.mjs";
 
 export const CONTROL_PATH = ".factory-wake/360-words-control.json";
 export const DORMANT_NONCE = "DORMANT";
@@ -72,6 +73,14 @@ export const EXPECTED_VERIFIED_CORRECTION = Object.freeze({
   inputDigest: "sha256:aefca24b7fb0f2260cb32beabe81797c9d64cbb5dec4baee7e3252119e1c483b",
   sealedHandoffDigest: "sha256:715f651a53055444b8381dd8a276a2046d93776c61d88a2193cc2d42a1c83ad6",
 });
+export const EXPECTED_VERIFIED_CORRECTION_V2 = Object.freeze({
+  correctionVersion: "words-writer1-correction/v2",
+  sourceBranch: "architect/360-words-canary-verified",
+  agentId: "bc-2486f645-c31c-4532-8145-fbe3af1d45a8",
+  threadUrl: "https://cursor.com/agents/bc-2486f645-c31c-4532-8145-fbe3af1d45a8",
+  sealedHandoffDigest: "sha256:715f651a53055444b8381dd8a276a2046d93776c61d88a2193cc2d42a1c83ad6",
+  baseline: { kind: VERIFIED_WRITER1_GITHUB_BASELINE.kind, repository: VERIFIED_WRITER1_GITHUB_BASELINE.repository, sourceCommit: VERIFIED_WRITER1_GITHUB_BASELINE.sourceCommit, path: VERIFIED_WRITER1_GITHUB_BASELINE.path, blobSha: VERIFIED_WRITER1_GITHUB_BASELINE.blobSha, rawSha256: VERIFIED_WRITER1_GITHUB_BASELINE.rawSha256, size: VERIFIED_WRITER1_GITHUB_BASELINE.size, authorship: VERIFIED_WRITER1_GITHUB_BASELINE.authorship },
+});
 
 export function validateControl(control, input = {}) {
   if (!control || typeof control !== "object") throw new Error("canary control must be an object");
@@ -86,7 +95,7 @@ export function validateControl(control, input = {}) {
   if (changedPaths.length !== 1 || changedPaths[0] !== CONTROL_PATH) throw new Error("active wake must change only the control file");
   if (String(input.actor || "").toLowerCase() !== String(input.owner || "").toLowerCase()) throw new Error("active wake requires the repository owner Architect actor");
   const recovery = control.policy?.recovery;
-  const isVerifiedCorrection = recovery?.correctionVersion === "words-writer1-correction/v1";
+  const isVerifiedCorrection = recovery?.correctionVersion === "words-writer1-correction/v1" || recovery?.correctionVersion === "words-writer1-correction/v2";
   if (input.verifiedLane === true && !isVerifiedCorrection) throw new Error("isolated verified lane permits only its bounded Writer1 correction path");
   if (!recovery || (!isVerifiedCorrection && Object.entries(EXPECTED_RECOVERY).some(([key, value]) => recovery[key] !== value))) throw new Error("active artifact-recovery wake is missing the exact prior/run/source tuple");
   if (typeof recovery.sourceSha !== "string" || !/^[0-9a-f]{40}$/u.test(recovery.sourceSha)) throw new Error("active artifact-recovery wake requires an exact 40-hex sourceSha");
@@ -99,8 +108,11 @@ export function validateControl(control, input = {}) {
   const v2PromptDigest = digestWriter1ArtifactRecoveryPrompt("v2");
   const v3PromptDigest = digestWriter1ArtifactRecoveryPrompt("v3");
   const v5PromptDigest = digestWriter1ArtifactRecoveryPrompt("v5");
+  const v6PromptDigest = digestWriter1GithubBaselineCorrectionPrompt(VERIFIED_WRITER1_GITHUB_BASELINE);
   if (recovery.correctionVersion === "words-writer1-correction/v1") {
     if (control.policy?.mode !== "writer1-correction" || Object.entries(EXPECTED_VERIFIED_CORRECTION).some(([key, value]) => recovery[key] !== value) || recovery.promptDigest !== v5PromptDigest || typeof recovery.sourceSha !== "string" || !/^[0-9a-f]{40}$/u.test(recovery.sourceSha) || recovery.allowCreate !== false || recovery.allowResume !== true || recovery.allowFollowUp !== true || recovery.maxFollowUps !== 1 || recovery.idempotencyKey !== `${EXPECTED_VERIFIED_CORRECTION.agentId}:writer1:correction:v1:${EXPECTED_VERIFIED_CORRECTION.inputDigest}:${v5PromptDigest}` || recovery.send !== undefined || control.policy.allowCreate !== undefined || control.policy.allowResume !== undefined || control.policy.allowFollowUp !== undefined || control.policy.send !== undefined) throw new Error("active Writer1 correction wake is missing exact source, same-thread, canonical-prompt, or idempotency pins");
+  } else if (recovery.correctionVersion === "words-writer1-correction/v2") {
+    if (control.policy?.mode !== "writer1-correction" || Object.entries(EXPECTED_VERIFIED_CORRECTION_V2).some(([key, value]) => JSON.stringify(recovery[key]) !== JSON.stringify(value)) || typeof recovery.inputDigest !== "string" || !/^sha256:[0-9a-f]{64}$/u.test(recovery.inputDigest) || recovery.promptDigest !== v6PromptDigest || typeof recovery.idempotencyKey !== "string" || !/^bc-2486f645-c31c-4532-8145-fbe3af1d45a8:writer1:correction:v2:sha256:[0-9a-f]{64}:sha256:[0-9a-f]{64}$/u.test(recovery.idempotencyKey) || !recovery.idempotencyKey.endsWith(`:${v6PromptDigest}`) || recovery.allowCreate !== false || recovery.allowResume !== true || recovery.allowFollowUp !== true || recovery.maxFollowUps !== 1 || recovery.send !== undefined || control.policy.allowCreate !== undefined || control.policy.allowResume !== undefined || control.policy.allowFollowUp !== undefined || control.policy.send !== undefined) throw new Error("active Writer1 correction v2 wake is missing exact GitHub baseline, canonical-prompt, source, or idempotency pins");
   } else if (recovery.recoveryVersion === "words-writer1-artifact-recovery/v3") {
     if (Object.entries(EXPECTED_RECOVERY_V3).some(([key, value]) => recovery[key] !== value) || recovery.priorRecoveryV2PromptDigest !== v2PromptDigest || typeof recovery.promptDigest !== "string" || recovery.promptDigest !== v3PromptDigest || typeof recovery.idempotencyKey !== "string" || !/^[^:\s]+:writer1:artifact-recovery:v3:sha256:[0-9a-f]{64}:sha256:[0-9a-f]{64}$/u.test(recovery.idempotencyKey) || !recovery.idempotencyKey.endsWith(`:${v3PromptDigest}`)) throw new Error("active artifact-recovery v3 wake is missing the exact v2 failure, absolute-path, canonical-prompt, or idempotency pins");
   } else if (recovery.recoveryVersion === "words-writer1-artifact-recovery/v3-finalize") {
@@ -115,7 +127,8 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   const beforeSha = process.env.GITHUB_EVENT_BEFORE;
   const parentSha = execFileSync("git", ["rev-parse", `${commitSha}^`], { encoding: "utf8" }).trim();
   const result = validateControl(control, { changedPaths, actor: process.env.GITHUB_ACTOR, owner: process.env.GITHUB_REPOSITORY_OWNER, commitSha, beforeSha, parentSha, verifiedLane: process.env.VERIFIED_LANE === "true" });
-  const recoveryVersion = control.policy?.recovery?.recoveryVersion || "";
+  const recoveryVersion = control.policy?.recovery?.recoveryVersion || control.policy?.recovery?.correctionVersion || "";
   const correctionVersion = control.policy?.recovery?.correctionVersion || "";
-  fs.appendFileSync(process.env.GITHUB_OUTPUT, `dormant=${result.dormant}\nstage=${result.stage}\nrecovery_version=${recoveryVersion || correctionVersion}\n${result.sourceSha ? `source_sha=${result.sourceSha}\n` : ""}`);
+  const baseline = control.policy?.recovery?.baseline || {};
+  fs.appendFileSync(process.env.GITHUB_OUTPUT, `dormant=${result.dormant}\nstage=${result.stage}\nrecovery_version=${recoveryVersion || correctionVersion}\n${result.sourceSha ? `source_sha=${result.sourceSha}\n` : ""}${baseline.repository ? `baseline_repository=${baseline.repository}\nbaseline_commit=${baseline.sourceCommit}\nbaseline_path=${baseline.path}\nbaseline_blob_sha=${baseline.blobSha}\nbaseline_raw_sha256=${baseline.rawSha256}\nbaseline_size=${baseline.size}\n` : ""}`);
 }
