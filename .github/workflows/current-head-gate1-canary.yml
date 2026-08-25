@@ -136,16 +136,30 @@ jobs:
           FACTORY_CANARY_PHASE: ${{ inputs.phase }}
           FACTORY_REPOSITORY: ${{ github.repository }}
         run: node src/run-gate1-canary.js canary "$REQUEST_FILE" "$SELECTION_FILE" "$QA_FILE" "$CURSOR_BUNDLE_FILE"
-      - name: Upload Gate 1 canary proof
+      - name: Upload exact-head proof (required)
         if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: current-head-gate1-canary-${{ github.run_id }}-exact-head
+          path: canary/outputs/exact-head-proof.json
+          if-no-files-found: error
+          retention-days: 30
+      - name: Upload phase-A handoff (required for dispatch)
+        if: always() && inputs.phase == 'dispatch'
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: current-head-gate1-canary-${{ github.run_id }}
+          path: canary/outputs/current-head-gate1-pending.json
+          if-no-files-found: error
+          retention-days: 30
+      - name: Upload phase-B Gate 1 proof (required for resume)
+        if: always() && inputs.phase == 'resume'
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         with:
           name: current-head-gate1-canary-${{ github.run_id }}
           path: |
-            canary/outputs/exact-head-proof.json
             canary/outputs/current-head-gate1-proof.json
-            canary/outputs/current-head-gate1-pending.json
             canary/outputs/gate1.md
             canary/state/factory-state.json
-          if-no-files-found: warn
+          if-no-files-found: error
           retention-days: 30
