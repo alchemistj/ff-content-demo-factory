@@ -1,6 +1,6 @@
 {
   "schemaVersion": "words-canary-control/v1",
-  "wakeNonce": "DORMANT",
+  "wakeNonce": "W1-VERIFIED-20260825-V2-7B292C3",
   "requestedBy": "architect",
   "stage": "writer1",
   "runId": "32717620900",
@@ -10,15 +10,36 @@
   "restore": null,
   "policy": {
     "writer1Only": true,
-    "approvedRoutes": [
-      "/",
-      "/garage-door-repair",
-      "/garage-door-installation",
-      "/contact"
-    ],
+    "approvedRoutes": ["/", "/garage-door-repair", "/garage-door-installation", "/contact"],
     "fast": false,
     "provider": "cursor-sdk",
     "model": "cursor-grok-4.6-high",
-    "stopAfter": "awaiting-architect-qa"
+    "stopAfter": "awaiting-architect-qa",
+    "mode": "writer1-correction"
+  },
+  "recovery": {
+    "correctionVersion": "words-writer1-correction/v2",
+    "sourceBranch": "architect/360-words-canary-verified",
+    "sourceSha": "7b292c36f1e275903801c7efad0ac11a9202510d",
+    "agentId": "bc-2486f645-c31c-4532-8145-fbe3af1d45a8",
+    "threadUrl": "https://cursor.com/agents/bc-2486f645-c31c-4532-8145-fbe3af1d45a8",
+    "sealedHandoffDigest": "sha256:715f651a53055444b8381dd8a276a2046d93776c61d88a2193cc2d42a1c83ad6",
+    "baseline": {
+      "kind": "github-file",
+      "repository": "alchemistj/ff-content-demo-factory",
+      "sourceCommit": "efe429d4464d765b5b657cb0058f00fffb35d3d7",
+      "path": "canary/outputs/writer1-output.json",
+      "blobSha": "cc8612bc9085f63141de6ae0f1dd2b9c3e1f3e08",
+      "rawSha256": "sha256:f693aeb968e703efbe7f9c0a7a2d1a9d4185007e32a695386e1f5eec356964a2",
+      "size": 23509,
+      "authorship": "unverified-github-before-copy"
+    },
+    "inputDigest": "sha256:f4f59e9c645391266172892e4651f0da4ccedaa2bc86e35217a0ab8699fd0c1f",
+    "promptDigest": "sha256:e9c39355c8f0973250ebd97ad1b3b69c9e09c840796f39336abd5664c20303e3",
+    "allowCreate": false,
+    "allowResume": true,
+    "allowFollowUp": true,
+    "maxFollowUps": 1,
+    "idempotencyKey": "bc-2486f645-c31c-4532-8145-fbe3af1d45a8:writer1:correction:v2:sha256:f4f59e9c645391266172892e4651f0da4ccedaa2bc86e35217a0ab8699fd0c1f:sha256:e9c39355c8f0973250ebd97ad1b3b69c9e09c840796f39336abd5664c20303e3"
   }
 }
