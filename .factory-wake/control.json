@@ -1,6 +1,8 @@
 {
-  "wakeId": "swifts-roofing-stage1-2026-08-25-01",
-  "mode": "stage1",
-  "seedDiscovery": "requests/swifts-roofing.seeded-discovery.json",
+  "wakeId": "swifts-roofing-selection-2026-08-25-01",
+  "mode": "selection",
+  "restoreFromRunId": "32808755205",
+  "restoreFromSourceSha": "3fdbc1fca7fc67b2c8a0f4551a4d5d684e823181",
+  "decisionFile": ".factory-wake/decision.json",
   "requestedBy": "architect"
 }
