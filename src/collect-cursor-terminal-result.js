@@ -4,6 +4,7 @@
 const fs = require('node:fs');
 const path = require('node:path');
 const { validateTerminalCursorResult } = require('./factory/handoff');
+const { validateBundle } = require('./factory/cloud-agent');
 
 function readJson(file) { return JSON.parse(fs.readFileSync(path.resolve(file), 'utf8')); }
 function extractJson(body) {
@@ -20,7 +21,7 @@ function collect({ pendingFile, commentFile, outputFile, authorLogin, commentId,
     pending, handoffId: raw.handoffId, dispatchKey: raw.dispatchKey, receipt: raw.receipt, bundle: raw.bundle,
   };
   validateTerminalCursorResult(result, { checkedOutSha: pending.envelope.checkedOutSha, inputManifestDigest: pending.envelope.inputManifestDigest, runId: pending.envelope.runId, prospectId: pending.envelope.prospectId, sourceCheckpointDigest: pending.envelope.sourceCheckpointDigest, jobId: pending.envelope.jobId });
-  if (!result.bundle || result.bundle.schemaVersion !== 'cursor-cloud-agent-bundle-v1') throw new Error('Cursor terminal result is missing its trusted bundle');
+  validateBundle(result.bundle, { expectedHeadSha: pending.envelope.checkedOutSha, inputManifestDigest: pending.envelope.inputManifestDigest, dispatch: pending.dispatchPacket, repository: pending.dispatchPacket.repository });
   fs.mkdirSync(path.dirname(path.resolve(outputFile)), { recursive: true });
   fs.writeFileSync(path.resolve(outputFile), `${JSON.stringify(result, null, 2)}\n`);
   return result;
