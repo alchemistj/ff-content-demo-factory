@@ -33,12 +33,20 @@ on:
         type: string
       cursor_bundle_file:
         description: 'Repository-relative trusted GitHub-to-Cursor Cloud Agent result bundle JSON'
-        required: true
+        required: false
         type: string
+      phase:
+        description: 'Two-phase continuation: dispatch seals inputs; resume ingests the verified receipt bundle'
+        required: true
+        default: resume
+        type: choice
+        options: [dispatch, resume]
 
 permissions:
   contents: read
   actions: read
+  pull-requests: read
+  issues: read
 
 jobs:
   current-head-gate1:
@@ -59,6 +67,8 @@ jobs:
           SELECTION_FILE: ${{ inputs.selection_file }}
           QA_FILE: ${{ inputs.qa_file }}
           CURSOR_BUNDLE_FILE: ${{ inputs.cursor_bundle_file }}
+          FACTORY_CANARY_PHASE: ${{ inputs.phase }}
+          FACTORY_REPOSITORY: ${{ github.repository }}
         run: |
           test "$EXPECTED_HEAD_SHA" = "$(git rev-parse HEAD)"
           printf '%s\n' "$EXPECTED_HEAD_SHA" | grep -Eq '^[a-f0-9]{40}$'
@@ -70,11 +80,17 @@ jobs:
           echo "FACTORY_TEST_RUN_URL=${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}" >> "$GITHUB_ENV"
           echo "FACTORY_ACTION_RUN_URL=${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}" >> "$GITHUB_ENV"
           echo "FACTORY_TEST_RESULT=asserted-checkout" >> "$GITHUB_ENV"
-          for file in "$REQUEST_FILE" "$SELECTION_FILE" "$QA_FILE" "$CURSOR_BUNDLE_FILE"; do
+          for file in "$REQUEST_FILE" "$SELECTION_FILE" "$QA_FILE"; do
             printf '%s\n' "$file" | grep -Eq '^[-a-zA-Z0-9_/.]+\.json$'
             case "$file" in *..*) echo "path traversal is not allowed" >&2; exit 1 ;; esac
             test -f "$file"
           done
+          if [ "${{ inputs.phase }}" = "resume" ]; then
+            test -n "$CURSOR_BUNDLE_FILE"
+            printf '%s\n' "$CURSOR_BUNDLE_FILE" | grep -Eq '^[-a-zA-Z0-9_/.]+\.json$'
+            case "$CURSOR_BUNDLE_FILE" in *..*) echo "path traversal is not allowed" >&2; exit 1 ;; esac
+            test -f "$CURSOR_BUNDLE_FILE"
+          fi
           mkdir -p canary/outputs
           printf '{"schemaVersion":"factory-exact-head-proof-v1","expectedHeadSha":"%s","checkedOutSha":"%s","headAssertion":true,"workflowRunUrl":"%s/%s/actions/runs/%s"}\n' \
             "$EXPECTED_HEAD_SHA" "$(git rev-parse HEAD)" "$GITHUB_SERVER_URL" "$GITHUB_REPOSITORY" "$GITHUB_RUN_ID" > canary/outputs/exact-head-proof.json
@@ -83,7 +99,23 @@ jobs:
         with:
           node-version: '22.13.0'
           cache: npm
+      - name: Independently verify authoritative PR and Issue head before paid work
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_NUMBER: ${{ inputs.pr_number }}
+          ISSUE_NUMBER: ${{ inputs.issue_number }}
+          BRANCH: ${{ inputs.branch }}
+          EXPECTED_HEAD_SHA: ${{ inputs.expected_head_sha }}
+        run: |
+          pr_json="$(gh pr view "$PR_NUMBER" --repo "$GITHUB_REPOSITORY" --json number,headRefName,headRefOid,body)"
+          test "$(printf '%s' "$pr_json" | jq -r .number)" = "$PR_NUMBER"
+          test "$(printf '%s' "$pr_json" | jq -r .headRefName)" = "$BRANCH"
+          test "$(printf '%s' "$pr_json" | jq -r .headRefOid)" = "$EXPECTED_HEAD_SHA"
+          printf '%s' "$pr_json" | jq -r .body | grep -Fq "issues/$ISSUE_NUMBER"
+          gh issue view "$ISSUE_NUMBER" --repo "$GITHUB_REPOSITORY" --json number --jq .number | grep -Fxq "$ISSUE_NUMBER"
+          echo "FACTORY_REPOSITORY=$GITHUB_REPOSITORY" >> "$GITHUB_ENV"
       - name: Validate trusted production runtime
+        if: inputs.phase == 'resume'
         env:
           APIFY_API_TOKEN: ${{ secrets.APIFY_API_TOKEN }}
         run: |
@@ -110,6 +142,7 @@ jobs:
           path: |
             canary/outputs/exact-head-proof.json
             canary/outputs/current-head-gate1-proof.json
+            canary/outputs/current-head-gate1-pending.json
             canary/outputs/gate1.md
             canary/state/factory-state.json
           if-no-files-found: error
