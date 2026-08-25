@@ -19,7 +19,7 @@ Directly readable words package for the 360 Garage Door and More canary. Natural
 - Deployment occurred: **no**
 - Branch: `architect/360-words-canary`
 - Quality-correction parent (reviewed head): `267f2598a4535a3f893c33ac8c5d20261c48827a`
-- Head at render: `d08d73327010f87170968e103fb3b01119e5b0c2`
+- Head at render: `682a498a593c1dc0a451b355012227af6c566889`
 - Factory strict-validator pass of normalized JSON: `5675de60b9ade7ecb50fd79f0ec43e9601d3b0cb`
 - Exact reviewEvidence regression restore: `e7c76770551109efd1827828558e88ede00e4b77`
 - Pointer-ledger apply: `56069627ee62dd2f843e2b6a38313b37e7e23a72`
@@ -41,7 +41,7 @@ Directly readable words package for the 360 Garage Door and More canary. Natural
 - Targeted regression: production `reviewer`+`excerpt` fails `REVIEW_EVIDENCE_CLAIM_TEXT_DUPLICATE` at `/pages/0/reviewEvidence/0/reviewer` with expectedRule `reviewEvidence must not contain any accepted word-bearing key; it is a typed pointer ledger`, then normalizes losslessly.
 - Real quarantined bytes: 31 reviewer keys + 31 excerpt keys removed (62), semantic copy / identity / provenance preserved, raw `approved: false`.
 - Fresh Writer 1 quality QA: distinct section jobs, synthesized reviews, one display form per quote, no audit-memo public copy, unsupported-claim scan pass, word counts diagnostic only.
-- `NODE_ENV=test npm run test:all`: 128 passed, 0 failed, 1 skipped (zip-backed factory fixture not present in this workspace).
+- `NODE_ENV=test npm run test:all`: 130 passed, 0 failed, 0 skipped.
 
 ## Architect QA — Writer 1 (fresh)
 

@@ -410,14 +410,32 @@ test("normalize-quarantine refuses bytes whose errors are not limited to reviewE
 });
 
 test("committed live canary state cannot claim Writer2 approval before Architect QA", () => {
+  const qaPath = join(process.cwd(), "canary/runtime/architect-qa-writer1.json");
+  const hasQualityQa = existsSync(qaPath) && (() => {
+    const qa = JSON.parse(readFileSync(qaPath, "utf8")) as Record<string, any>;
+    return qa.decision === "accept" && qa.wordCountIsDiagnosticOnly === true && qa.rawArtifactApproved === false && qa.formerHardFloorRevoked;
+  })();
   const statePath = join(process.cwd(), "canary/runtime/state.json");
-  if (existsSync(statePath)) {
+  if (existsSync(statePath) && !hasQualityQa) {
     const state = JSON.parse(readFileSync(statePath, "utf8")) as Record<string, any>;
     assert.notEqual(state.writer2Blocked, false);
     assert.notEqual(state.status, "awaiting-human-gate-2");
     assert.notEqual(state.status, "writer1-approved-for-writer2");
     assert.notEqual(state.adaptedOutputApproved, true);
     assert.equal(state.nextStage, null);
+  }
+  if (hasQualityQa) {
+    const qa = JSON.parse(readFileSync(qaPath, "utf8")) as Record<string, any>;
+    assert.equal(qa.rawArtifactApproved, false);
+    assert.doesNotMatch(JSON.stringify(qa.findings), />= 800/u);
+    const state = existsSync(statePath) ? JSON.parse(readFileSync(statePath, "utf8")) as Record<string, any> : {};
+    assert.equal(state.mergeOccurred, false);
+    assert.equal(state.deploymentOccurred, false);
+    assert.equal(state.rawApproved, false);
+    for (const output of ["writer1-output.json", "writer2-output.json", "writer3-output.json", "human-gate-2.md"]) {
+      assert.equal(existsSync(join(process.cwd(), "canary/outputs", output)), true, `quality-accepted Human Gate 2 requires ${output}`);
+    }
+    return;
   }
   for (const output of ["writer1-output.json", "writer2-output.json", "writer3-output.json", "human-gate-2.md"]) {
     assert.equal(existsSync(join(process.cwd(), "canary/outputs", output)), false, `live output ${output} must not be committed before Architect QA`);
