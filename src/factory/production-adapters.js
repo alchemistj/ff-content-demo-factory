@@ -79,13 +79,17 @@ function normalizeOwnedUrl(value, host, label) {
   return parsed;
 }
 
+function canonicalOwnedUrl(parsed) {
+  return `${parsed.protocol}//${parsed.hostname.replace(/^www\./, '').toLowerCase()}${parsed.port ? `:${parsed.port}` : ''}${parsed.pathname}${parsed.search}${parsed.hash}`;
+}
+
 function assertNoConflictingProvenance(item, sourceUrl, host, label) {
   const provenance = item?.provenance;
   if (!provenance || typeof provenance !== 'object' || Array.isArray(provenance)) return;
   for (const candidate of [provenance.sourceUrl, provenance.url, provenance.website]) {
     if (candidate == null) continue;
     const parsed = normalizeOwnedUrl(String(candidate), host, `${label} provenance`);
-    if (parsed.href !== sourceUrl.href) throw new Error(`${label} has conflicting provenance URL`);
+    if (canonicalOwnedUrl(parsed) !== canonicalOwnedUrl(sourceUrl)) throw new Error(`${label} has conflicting provenance URL`);
   }
 }
 
