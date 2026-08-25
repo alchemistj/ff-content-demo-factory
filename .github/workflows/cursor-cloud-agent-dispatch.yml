@@ -34,7 +34,7 @@ permissions:
   actions: read
 
 concurrency:
-  group: factory-cursor-handoff-${{ inputs.reviewed_head_sha || github.event.workflow_run.head_sha }}
+  group: factory-cursor-handoff-${{ github.repository }}
   cancel-in-progress: false
 
 jobs:
@@ -68,15 +68,34 @@ jobs:
           FACTORY_REPOSITORY: ${{ github.repository }}
           FACTORY_DISPATCH_OUTPUT: canary/outputs/cursor-dispatch.json
         run: node src/dispatch-cursor-cloud-agent.js
-      - name: Persist dispatch CAS claim before connector dispatch
+      - name: Claim durable GitHub ledger before connector dispatch
         env:
-          CAS_FILE: canary/outputs/dispatch-cas.json
           DISPATCH_FILE: canary/outputs/cursor-dispatch.json
+          ISSUE_NUMBER: ${{ inputs.issue_number }}
+          PR_NUMBER: ${{ inputs.pr_number }}
+          BRANCH: ${{ inputs.branch }}
+          REVIEWED_HEAD_SHA: ${{ inputs.reviewed_head_sha }}
+          REPOSITORY: ${{ github.repository }}
         run: |
           handoff_key="$(node -e "const fs=require('node:fs');process.stdout.write(JSON.parse(fs.readFileSync(process.env.DISPATCH_FILE,'utf8')).dispatchKey)")"
           dispatch_digest="$(node -e "const fs=require('node:fs');process.stdout.write(JSON.parse(fs.readFileSync(process.env.DISPATCH_FILE,'utf8')).dispatchDigest)")"
-          CAS_FILE="$CAS_FILE" HANDOFF_KEY="$handoff_key" RESULT_ID="$dispatch_digest" node -e "const {claimResumeAtomic}=require('./src/factory/handoff');claimResumeAtomic(process.env.CAS_FILE,process.env.HANDOFF_KEY,process.env.RESULT_ID)"
+          comments="$(gh api --paginate "repos/$REPOSITORY/issues/$ISSUE_NUMBER/comments?per_page=100")"
+          LEDGER_COMMENTS="$comments" HANDOFF_KEY="$handoff_key" DISPATCH_DIGEST="$dispatch_digest" REPOSITORY="$REPOSITORY" ISSUE_NUMBER="$ISSUE_NUMBER" PR_NUMBER="$PR_NUMBER" BRANCH="$BRANCH" HEAD_SHA="$REVIEWED_HEAD_SHA" node - <<'NODE'
+          const fs = require('node:fs'); const { markerFor, markerBody, findClaim } = require('./src/factory/github-ledger');
+          const comments = JSON.parse(process.env.LEDGER_COMMENTS);
+          const expected = { repository: process.env.REPOSITORY, issueNumber: process.env.ISSUE_NUMBER, kind: 'dispatch', handoffId: process.env.HANDOFF_KEY, dispatchKey: process.env.HANDOFF_KEY, resultId: process.env.DISPATCH_DIGEST };
+          if (findClaim(comments, expected)) { fs.appendFileSync(process.env.GITHUB_ENV, 'FACTORY_LEDGER_ALREADY_CLAIMED=true\n'); process.exit(0); }
+          const marker = markerFor({ kind: 'dispatch', repository: process.env.REPOSITORY, issueNumber: process.env.ISSUE_NUMBER, prNumber: process.env.PR_NUMBER, branch: process.env.BRANCH, checkedOutSha: process.env.HEAD_SHA, handoffId: process.env.HANDOFF_KEY, dispatchKey: process.env.HANDOFF_KEY, resultId: process.env.DISPATCH_DIGEST });
+          fs.writeFileSync('canary/outputs/cursor-ledger-marker.md', markerBody(marker));
+          NODE
+      - name: Publish durable dispatch ledger marker
+        if: env.FACTORY_LEDGER_ALREADY_CLAIMED != 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE_NUMBER: ${{ inputs.issue_number }}
+        run: gh api "repos/$GITHUB_REPOSITORY/issues/$ISSUE_NUMBER/comments" --method POST -f body="$(cat canary/outputs/cursor-ledger-marker.md)"
       - name: Post and record immutable connector-native @cursor dispatch
+        if: env.FACTORY_LEDGER_ALREADY_CLAIMED != 'true'
         env:
           GH_TOKEN: ${{ github.token }}
           ISSUE_NUMBER: ${{ inputs.issue_number }}
@@ -99,9 +118,7 @@ jobs:
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         with:
           name: cursor-cloud-agent-dispatch-${{ github.run_id }}
-          path: |
-            canary/outputs/cursor-dispatch.*
-            canary/outputs/dispatch-cas.json
+          path: canary/outputs/cursor-dispatch.*
           if-no-files-found: error
           retention-days: 30
 
@@ -109,7 +126,7 @@ jobs:
     if: github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     concurrency:
-      group: factory-cursor-handoff-${{ github.event.workflow_run.head_sha }}
+      group: factory-cursor-handoff-${{ github.repository }}
       cancel-in-progress: false
     steps:
       - name: Checkout the immutable phase-A head
@@ -136,15 +153,36 @@ jobs:
       - name: Bind dispatch comment to durable handoff identity
         run: |
           node -e "const fs=require('node:fs');const pending=JSON.parse(fs.readFileSync('canary/phase-a/pending.checked.json','utf8'));fs.appendFileSync('canary/phase-a/cursor-dispatch.comment.md','Handoff ID: '+pending.handoffId+'\\nPhase-A run: '+pending.phaseARunId+'\\nDispatch workflow run: '+process.env.GITHUB_RUN_ID+'\\n');"
-      - name: Persist automatic dispatch CAS claim before connector dispatch
+      - name: Claim durable GitHub ledger before connector dispatch
         env:
-          CAS_FILE: canary/phase-a/dispatch-cas.json
           DISPATCH_FILE: canary/phase-a/cursor-dispatch.json
+          GH_TOKEN: ${{ github.token }}
+          REPOSITORY: ${{ github.repository }}
         run: |
           handoff_key="$(node -e "const fs=require('node:fs');process.stdout.write(JSON.parse(fs.readFileSync(process.env.DISPATCH_FILE,'utf8')).dispatchKey)")"
           dispatch_digest="$(node -e "const fs=require('node:fs');process.stdout.write(JSON.parse(fs.readFileSync(process.env.DISPATCH_FILE,'utf8')).dispatchDigest)")"
-          CAS_FILE="$CAS_FILE" HANDOFF_KEY="$handoff_key" RESULT_ID="$dispatch_digest" node -e "const {claimResumeAtomic}=require('./src/factory/handoff');claimResumeAtomic(process.env.CAS_FILE,process.env.HANDOFF_KEY,process.env.RESULT_ID)"
+          handoff_id="$(node -e "process.stdout.write(JSON.parse(require('fs').readFileSync('canary/phase-a/pending.checked.json','utf8')).handoffId)")"
+          issue_number="$(node -e "const fs=require('node:fs');process.stdout.write(String(JSON.parse(fs.readFileSync(process.env.DISPATCH_FILE,'utf8')).issueNumber))")"
+          pr_number="$(node -e "const fs=require('node:fs');process.stdout.write(String(JSON.parse(fs.readFileSync(process.env.DISPATCH_FILE,'utf8')).prNumber))")"
+          branch="$(node -e "const fs=require('node:fs');process.stdout.write(JSON.parse(fs.readFileSync(process.env.DISPATCH_FILE,'utf8')).branch)")"
+          head_sha="$(node -e "const fs=require('node:fs');process.stdout.write(JSON.parse(fs.readFileSync('canary/phase-a/pending.checked.json','utf8')).envelope.checkedOutSha)")"
+          comments="$(gh api --paginate "repos/$REPOSITORY/issues/$issue_number/comments?per_page=100")"
+          LEDGER_COMMENTS="$comments" HANDOFF_KEY="$handoff_key" HANDOFF_ID="$handoff_id" DISPATCH_DIGEST="$dispatch_digest" REPOSITORY="$REPOSITORY" ISSUE_NUMBER="$issue_number" PR_NUMBER="$pr_number" BRANCH="$branch" HEAD_SHA="$head_sha" node - <<'NODE'
+          const fs = require('node:fs'); const { markerFor, markerBody, findClaim } = require('./src/factory/github-ledger');
+          const comments = JSON.parse(process.env.LEDGER_COMMENTS); const expected = { repository: process.env.REPOSITORY, issueNumber: process.env.ISSUE_NUMBER, kind: 'dispatch', handoffId: process.env.HANDOFF_ID, dispatchKey: process.env.HANDOFF_KEY, resultId: process.env.DISPATCH_DIGEST };
+          if (findClaim(comments, expected)) { fs.appendFileSync(process.env.GITHUB_ENV, 'FACTORY_LEDGER_ALREADY_CLAIMED=true\n'); process.exit(0); }
+          const marker = markerFor({ kind: 'dispatch', repository: process.env.REPOSITORY, issueNumber: process.env.ISSUE_NUMBER, prNumber: process.env.PR_NUMBER, branch: process.env.BRANCH, checkedOutSha: process.env.HEAD_SHA, handoffId: process.env.HANDOFF_ID, dispatchKey: process.env.HANDOFF_KEY, resultId: process.env.DISPATCH_DIGEST }); fs.writeFileSync('canary/phase-a/cursor-ledger-marker.md', markerBody(marker));
+          NODE
+      - name: Publish durable dispatch ledger marker
+        if: env.FACTORY_LEDGER_ALREADY_CLAIMED != 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          DISPATCH_FILE: canary/phase-a/cursor-dispatch.json
+        run: |
+          ISSUE_NUMBER="$(node -e "const fs=require('node:fs');process.stdout.write(String(JSON.parse(fs.readFileSync(process.env.DISPATCH_FILE,'utf8')).issueNumber))")"
+          gh api "repos/$GITHUB_REPOSITORY/issues/$ISSUE_NUMBER/comments" --method POST -f body="$(cat canary/phase-a/cursor-ledger-marker.md)"
       - name: Post exactly once using durable dispatch CAS
+        if: env.FACTORY_LEDGER_ALREADY_CLAIMED != 'true'
         env:
           GH_TOKEN: ${{ github.token }}
           DISPATCH_FILE: canary/phase-a/cursor-dispatch.json
