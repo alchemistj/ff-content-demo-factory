@@ -1,0 +1,41 @@
+{
+  "stage": "writer2",
+  "role": "production-writer",
+  "recordedBeforeImplementation": true,
+  "recordedAt": "2026-08-26T16:12:00Z",
+  "run": {
+    "bcId": "bc-96aa2636-7d6d-48f1-a546-2c064a1b89e3",
+    "name": "Writer 2 website copy",
+    "url": "https://cursor.com/agents/bc-96aa2636-7d6d-48f1-a546-2c064a1b89e3",
+    "source": "scm",
+    "githubIssueId": "12"
+  },
+  "requested": "Grok 4.6 with Fast Off",
+  "observedOriginalModelName": "cursor-grok-4.6-high",
+  "fastOff": true,
+  "fastVariantRejected": "cursor-grok-4.6-high-fast was not the run model",
+  "independence": {
+    "notWriter1": "bc-ab1911ff-c34a-45e0-b7ee-79f4d72dad2c",
+    "notArchitectQa": "bc-7aa7c250-fa2b-4c33-a9a3-79ad51ebad82",
+    "writer1Pr": "https://github.com/alchemistj/ff-content-demo-factory/pull/10",
+    "writer1AcceptedContentHead": "c1241a377f70424affe4ed2796b4dceec94ae0f1",
+    "writer1LineageHeadAtStart": "d8e60e2f3198f010bd1544de20498bae1573357c"
+  },
+  "scope": [
+    "Homepage /",
+    "Contact /contact",
+    "header/menu labels",
+    "footer copy"
+  ],
+  "frozen": [
+    "/roof-replacement",
+    "/roof-repair"
+  ],
+  "outOfScope": [
+    "Strategy Overview / Why We Built This Site",
+    "website build",
+    "deployment",
+    "merge",
+    "Human Gate 2 approval"
+  ]
+}
