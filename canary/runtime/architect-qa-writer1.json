@@ -1,0 +1,111 @@
+{
+  "stage": "writer1",
+  "role": "independent-architect-qa",
+  "decision": "accept",
+  "writer1ArchitectQaAccepted": true,
+  "writer2Released": true,
+  "humanGate2": "not-started",
+  "productionCopyRewritten": false,
+  "wordCountIsDiagnosticOnly": true,
+  "formerHardFloorRevoked": "at least 800 words each",
+  "independentArchitectReviewedHead": "c1241a377f70424affe4ed2796b4dceec94ae0f1",
+  "acceptedProductionCopyDigest": "sha256:8181dc56e0706968becf88391d89129785b4ac1364eaeaefbbfeb7d92e3eba5b",
+  "readableArtifact": "canary/outputs/writer1-service-pages.md",
+  "auditorRun": "https://cursor.com/agents/bc-ab1911ff-c34a-45e0-b7ee-79f4d72dad2c",
+  "runSettings": {
+    "requested": "Grok 4.6 with Fast Off",
+    "observedOriginalModelName": "cursor-grok-4.6-high",
+    "fastOff": true,
+    "fastVariantRejected": "cursor-grok-4.6-high-fast was not the run model"
+  },
+  "pages": {
+    "/roof-replacement": {
+      "upstreamEvidenceGrade": "A",
+      "observableReviewStandard": "Grade A floor met",
+      "decision": "accept",
+      "usefulBodyWordsDiagnostic": 887,
+      "reviews": {
+        "count": 3,
+        "lead": "Neal Richardson Sr",
+        "supporting": ["David Carson", "Linda Mulholland"],
+        "prescribedLeadKept": true,
+        "adjacent": false,
+        "clumpedTestimonialBlock": false,
+        "proximityHuman": "each quote sits immediately after the claim it proves; under the approximate 150-word rule",
+        "fidelity": "contiguous faithful excerpts from the exact-place 40-review corpus; attributions preserved; customer claims not strengthened"
+      },
+      "correctionsRequired": []
+    },
+    "/roof-repair": {
+      "upstreamEvidenceGrade": "B",
+      "observableReviewStandard": "Grade B floor met",
+      "decision": "accept",
+      "usefulBodyWordsDiagnostic": 779,
+      "reviews": {
+        "count": 2,
+        "lead": "Jonathan Hoffman",
+        "supporting": ["Bonnie Held"],
+        "prescribedLeadKept": true,
+        "adjacent": false,
+        "clumpedTestimonialBlock": false,
+        "proximityHuman": "each quote sits immediately after the claim it proves; under the approximate 150-word rule",
+        "fidelity": "contiguous faithful excerpts from the exact-place 40-review corpus; attributions preserved; Hoffman 'flume' wording preserved; customer claims not strengthened"
+      },
+      "supportingReviewReason": "Bonnie Held is communication/honesty/price proof for the keep-or-replace decision. Grade B supporting reviews are not required to repeat the service keyword. Hoffman already carries leak, seal, and flue.",
+      "correctionsRequired": []
+    }
+  },
+  "findings": [
+    "Independent Architect QA accepts Writer 1 copy quality at production digest sha256:8181dc56e0706968becf88391d89129785b4ac1364eaeaefbbfeb7d92e3eba5b from reviewed head c1241a377f70424affe4ed2796b4dceec94ae0f1. Acceptance is based on observable quality against Gate 1, the writing guides, and the 40-review corpus. Word count is not an accept reason.",
+    "Both pages keep the Josh-approved URLs, intents, and primary keywords: roof replacement Springfield MO and roof repair Springfield MO.",
+    "H1s are literal service + Springfield, MO + Swifts Roofing. First H2 opening paragraphs include the primary keyword, answer what/where, and fall inside 40–60 words (replacement 59, repair 45).",
+    "Pages are distinct customer decisions. Replacement owns tear-off and a new roof. Repair owns the roof that stays. No third service URL. Passed-over intents (inspection, tarping, hail, commercial, gutters, maintenance, insurance-claim service) are not sold as destinations.",
+    "Replacement uses named completed-reroof proof (Neal first replacement; David evaluation and manufacturers; Linda replacement-day cleanup) plus first-party/OC Preferred Contractor and one owner-confirmed Duration Flex install. Insurance-billed replacement is FAQ-only from Rebecca Grable, not a new service.",
+    "Repair uses Hoffman’s leak/seal/flue visit as lead and does not convert prompt/emergency-call language into an SLA. Broken tiles are stated as one completed keep-the-roof job from the Kimberly Mills owner response, not as a quoted review.",
+    "Home-bound reviews C Jackson, Hunter Gaston, and Josh Baird are not used on these pages.",
+    "No star ratings or review counts. No 24/7, same-day, warranty, or invented response-time promises. Hours omitted because GBP/homepage 24-hour claims conflict with the contact-page 9–5 listing. Address used is 4268 S Hillcrest Ave Ste 110; 5580 South Aaron Avenue is unresolved and must not be published by Writer 2 without a resolution.",
+    "Two short timing-boundary sentences ('not a night-service promise'; 'not a promised response time') sit next to named jobs. They are not factory/demo leakage. Writer 2 should not multiply that pattern on Home/Contact.",
+    "Laura Hampton tear-off/new-shingles sequence is used as method evidence without presenting that job as a named house, matching the Fordland Municipal Courts owner response. Shelby Snyder 1/5 apartment cleanup was not used as positive proof.",
+    "Depth is earned: replacement diagnostic ~887 words in a Grade A evidence environment; repair diagnostic ~779 words in a narrower Grade B environment and was not padded to resemble Grade A.",
+    "This branch is copy-only on main. There is no factory npm suite here. Validator evidence is the Architect checklist in this file plus the scans below."
+  ],
+  "qualityScans": {
+    "duplicateQuotes": [],
+    "auditLanguageInBusinessCopy": [],
+    "forbiddenPublicPhrases": [],
+    "unsupportedClaims": "architect-accept",
+    "evidenceFidelity": "architect-accept",
+    "architecture": "home-plus-two-services-plus-contact preserved; Writer 1 delivered only the two service pages",
+    "usefulBodyWordCounts": {
+      "replacement": 887,
+      "repair": 779,
+      "role": "diagnostic-only"
+    }
+  },
+  "validatorEvidence": {
+    "factoryNpmTestAll": "not-applicable-copy-only-branch",
+    "deterministicChecks": {
+      "replacementReviewFloor": "pass (3)",
+      "repairReviewFloor": "pass (2)",
+      "reviewsAdjacent": "pass (false)",
+      "quoteExcerptsIn40ReviewCorpus": "pass",
+      "keywordInFirstH2Sentence": "pass both",
+      "firstH2Para40to60": "pass both",
+      "primaryPhoneCta": "pass (417) 771-0477",
+      "siblingCtaGradient": "pass",
+      "noThirdServicePage": "pass"
+    }
+  },
+  "nextOwner": "Writer 2 (separate Cursor writing agent) for Home, Contact, header, and footer",
+  "outOfScope": [
+    "Home",
+    "Contact",
+    "header",
+    "footer",
+    "menu",
+    "Strategy Overview",
+    "website build",
+    "deployment",
+    "Human Gate 2 approval"
+  ]
+}

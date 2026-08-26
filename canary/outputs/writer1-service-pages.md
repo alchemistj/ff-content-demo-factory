@@ -259,3 +259,25 @@ Prospect-owned completed-roof photos on swiftsroofing.com may support below-fold
 - Review floors: Grade A = 3, Grade B = 2. Reviews are not adjacent and are not in a testimonial dump.
 - No third service page. Josh-approved four-page architecture was not reopened.
 - No demo, audit, factory, or agency language in the business copy above.
+
+### Architect QA — Writer 1 (independent)
+
+**Decision: accept both pages. Writer 1 Architect QA accepted.**
+
+This slot was audited independently of the writer. Production copy above this metadata section was not rewritten, polished, or extended.
+
+| Page | Upstream evidence grade | Observable review standard | Decision |
+| --- | --- | --- | --- |
+| `/roof-replacement` | A | 3 reviews (lead + 2 supporting), spaced, proximate, faithful | **accept** |
+| `/roof-repair` | B | 2 reviews (lead + 1 supporting), spaced, proximate, faithful | **accept** |
+
+Reviewed copy head: `c1241a377f70424affe4ed2796b4dceec94ae0f1`  
+Production-copy digest (bytes above “For Josh and the Architect”): `sha256:8181dc56e0706968becf88391d89129785b4ac1364eaeaefbbfeb7d92e3eba5b`  
+Auditor run: https://cursor.com/agents/bc-ab1911ff-c34a-45e0-b7ee-79f4d72dad2c  
+Model: Grok 4.6 high (`cursor-grok-4.6-high`). Not the fast variant. Fast Off.
+
+**Next owner:** Writer 2, as a separate Cursor writing agent, for Home `/`, Contact `/contact`, header, and footer. Do not start that work in this lane.
+
+Human Gate 2 remains Josh’s after the complete four-page package exists. This PR stays draft and unmerged. No website build. No deploy.
+
+Machine record: `canary/runtime/architect-qa-writer1.json`
