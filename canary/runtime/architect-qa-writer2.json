@@ -1,0 +1,143 @@
+{
+  "stage": "writer2",
+  "role": "independent-architect-qa",
+  "decision": "accept",
+  "writer2ArchitectQaAccepted": true,
+  "writer3Released": true,
+  "humanGate2": "not-started",
+  "productionCopyRewritten": false,
+  "wordCountIsDiagnosticOnly": true,
+  "formerHardFloorRevoked": "at least 800 words",
+  "independentArchitectReviewedHead": "52e3528ef8f886e058547b5091ffe4d4f50e6fa1",
+  "writer1AcceptedContentHead": "c1241a377f70424affe4ed2796b4dceec94ae0f1",
+  "acceptedWriter1ProductionCopyDigest": "sha256:8181dc56e0706968becf88391d89129785b4ac1364eaeaefbbfeb7d92e3eba5b",
+  "writer1ProductionCopyDigestVerifiedOnThisHead": true,
+  "readableArtifact": "canary/outputs/writer2-package-so-far.md",
+  "auditorRun": "https://cursor.com/agents/bc-e6ca4c27-31b8-4754-8baa-5ab0a024d2ad",
+  "runSettings": {
+    "requested": "Grok 4.6 with Fast Off",
+    "observedOriginalModelName": "cursor-grok-4.6-high",
+    "fastOff": true,
+    "fastVariantRejected": "cursor-grok-4.6-high-fast was not the run model",
+    "receipt": "canary/runtime/architect-qa-writer2-run-settings.json"
+  },
+  "surfaces": {
+    "/": {
+      "decision": "accept",
+      "usefulBodyWordsDiagnostic": 625,
+      "firstH2WordsDiagnostic": 40,
+      "reviews": {
+        "count": 3,
+        "lead": "C Jackson",
+        "supporting": ["Hunter Gaston", "Josh Baird"],
+        "prescribedLeadKept": true,
+        "adjacent": false,
+        "clumpedTestimonialBlock": false,
+        "proximityHuman": "each quote sits in the same section as the completed-roof claim it proves",
+        "fidelity": "contiguous excerpts of the sealed exact-place 40-review corpus; C Jackson and Hunter Gaston are full texts; Josh Baird omits only the trailing recommend sentence"
+      },
+      "correctionsRequired": []
+    },
+    "/contact": {
+      "decision": "accept",
+      "usefulBodyWordsDiagnostic": 203,
+      "firstH2WordsDiagnostic": 44,
+      "reviews": {
+        "count": 0,
+        "ineligible": true
+      },
+      "hoursPublished": false,
+      "aaronAvenuePublished": false,
+      "nap": "4268 S Hillcrest Ave Ste 110, Springfield, MO 65810; (417) 771-0477; swiftsroofingllc@gmail.com",
+      "correctionsRequired": []
+    },
+    "header/menu": {
+      "decision": "accept",
+      "publicRoutes": ["/", "/roof-replacement", "/roof-repair", "/contact"],
+      "unpublishedRoutes": [],
+      "cta": "tel:+14177710477",
+      "correctionsRequired": []
+    },
+    "footer": {
+      "decision": "accept",
+      "publicRoutes": ["/", "/roof-replacement", "/roof-repair", "/contact"],
+      "actions": ["tel:+14177710477", "mailto:swiftsroofingllc@gmail.com"],
+      "unpublishedRoutes": [],
+      "correctionsRequired": []
+    },
+    "writer1Preservation": {
+      "decision": "accept",
+      "byteIdenticalFrozenServicePages": true,
+      "productionCopyDigest": "sha256:8181dc56e0706968becf88391d89129785b4ac1364eaeaefbbfeb7d92e3eba5b"
+    },
+    "packageSoFarReadability": {
+      "decision": "accept",
+      "naturalOrder": ["Header", "Home /", "Roof Replacement /roof-replacement", "Roof Repair /roof-repair", "Contact /contact", "Footer"],
+      "singleMarkdownFile": "canary/outputs/writer2-package-so-far.md"
+    }
+  },
+  "findings": [
+    "Independent Architect QA accepts Writer 2 on reviewed head 52e3528ef8f886e058547b5091ffe4d4f50e6fa1. Production Home/Contact/header/footer words were not rewritten. Word count is not an accept reason.",
+    "Writer 1 production copy above the Josh/Architect notes remains sha256:8181dc56e0706968becf88391d89129785b4ac1364eaeaefbbfeb7d92e3eba5b, identical to accepted head c1241a377f70424affe4ed2796b4dceec94ae0f1. Those bytes are present in the package-so-far.",
+    "Home keeps the Josh-approved company hub: keyword roofing company Springfield MO, H1 Roofing Company in Springfield, MO | Swifts Roofing, completed-roof proof rather than a reroof-only pitch, and sends replacement and repair to their own URLs.",
+    "Prescribed Home lead C Jackson is kept. Supporting Hunter Gaston and Josh Baird are the Gate 1 home anchors. None of the three is upgraded into replacement, repair, inspection, or a named product.",
+    "Contact is complete for call/write purpose: Hillcrest NAP, phone, email, what to say, routing to the two service pages. Hours omitted because GBP/homepage 24-hour Mon–Sat conflicts with owned contact 9–5. 5580 South Aaron Avenue is unpublished.",
+    "Header and footer expose exactly the four public routes plus typed tel:/mailto: actions. No /strategy, /about, /services, /privacy, or other unpublished utility routes.",
+    "Review quotes match the sealed exact-place packet (Action 32839684505; 50 retrieved, 40 written, placeId ChIJZWfAc5d9z4cR2TLlkLdpqMk). Replacement and repair leads are not reused on Home/Contact/chrome.",
+    "Writer 2 deterministic QA is a writer-owned checklist with hardcoded home-corpus strings and a weak four-route contains-check. This audit independently rechecked quotes against the sealed 40-review packet and independently listed hrefs. Machine-proven vs Architect judgment are distinguished in validatorEvidence.",
+    "This branch is copy-only on main. There is no factory npm suite here. PR #13 has no check runs. Writer 2 did not merge, deploy, build the website, or self-approve Human Gate 2."
+  ],
+  "qualityScans": {
+    "duplicateQuotes": [],
+    "auditLanguageInBusinessCopy": [],
+    "forbiddenPublicPhrases": [],
+    "unsupportedClaims": "architect-accept",
+    "evidenceFidelity": "architect-accept",
+    "architecture": "home-plus-two-services-plus-contact preserved; Writer 2 added Home, Contact, header, and footer only",
+    "usefulBodyWordCounts": {
+      "home": 625,
+      "contact": 203,
+      "role": "diagnostic-only"
+    }
+  },
+  "validatorEvidence": {
+    "factoryNpmTestAll": "not-applicable-copy-only-branch",
+    "pr13CheckRunsOnReviewedHead": "none",
+    "gate1CorpusAction": "https://github.com/alchemistj/ff-content-demo-factory/actions/runs/32839684505",
+    "writerOwnedScript": {
+      "command": "python3 canary/scripts/assemble_and_qa_writer2.py",
+      "result": "pass",
+      "honesty": "writer-owned; not treated as independent Architect proof"
+    },
+    "independentDeterministicChecks": {
+      "writer1ProductionDigest": "pass (sha256:8181dc56e0706968becf88391d89129785b4ac1364eaeaefbbfeb7d92e3eba5b)",
+      "frozenServicePagesInHandoff": "pass (byte-identical to accepted Writer 1 production region)",
+      "homeQuoteFidelityVsSealed40": "pass (3/3 contiguous excerpts)",
+      "homeReviewFloorObservable": "pass (3; 1 lead + 2 support)",
+      "homeReviewsAdjacent": "pass (false)",
+      "contactReviewCount": "pass (0; ineligible)",
+      "keywordInHomeH1AndFirstH2": "pass (roofing company + Springfield)",
+      "contactKeywordInH1AndFirstH2": "pass (contact + Swifts Roofing + Springfield)",
+      "primaryPhoneCta": "pass (417) 771-0477",
+      "exactlyFourPublicRoutes": "pass (independently listed hrefs: / /roof-replacement /roof-repair /contact plus tel: and mailto: actions)",
+      "aaronAvenueUnpublished": "pass",
+      "hoursUnpublished": "pass",
+      "noStrategyOverviewInChrome": "pass"
+    },
+    "architectJudgment": [
+      "Home strategy, hierarchy, usefulness, non-repetition, and claim support",
+      "Contact completeness for its purpose",
+      "header/footer labels and absence of accidental build scope",
+      "natural reading order of the package-so-far"
+    ]
+  },
+  "nextOwner": "Writer 3 (separate Cursor writing agent) for Strategy Overview / Why We Built This Site",
+  "outOfScope": [
+    "Strategy Overview",
+    "website build",
+    "deployment",
+    "merge",
+    "Human Gate 2 approval",
+    "Josh action"
+  ]
+}

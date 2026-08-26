@@ -376,11 +376,28 @@ Contact has no first review.
 
 See `canary/runtime/writer2-qa.json`. Word count is diagnostic only.
 
-### Architect QA — Writer 2
+### Architect QA — Writer 2 (independent)
 
-**Decision: awaiting independent Architect QA.** This writer does not self-approve.
+**Decision: accept all Writer 2 surfaces. Writer 2 Architect QA accepted.**
+
+This slot was audited independently of the writer. Production copy above this metadata section was not rewritten, polished, shortened, or lengthened.
+
+| Surface | Decision |
+| --- | --- |
+| Homepage `/` | **accept** |
+| Contact `/contact` | **accept** |
+| Header/menu | **accept** |
+| Footer | **accept** |
+| Writer 1 preservation | **accept** |
+| Package-so-far readability | **accept** |
+
+Reviewed Writer 2 head: `52e3528ef8f886e058547b5091ffe4d4f50e6fa1`  
+Writer 1 production-copy digest (unchanged): `sha256:8181dc56e0706968becf88391d89129785b4ac1364eaeaefbbfeb7d92e3eba5b`  
+Auditor run: https://cursor.com/agents/bc-e6ca4c27-31b8-4754-8baa-5ab0a024d2ad  
+Model: Grok 4.6 high (`cursor-grok-4.6-high`). Not the fast variant. Fast Off.
 
 **Next owner:** separate Writer 3 for Strategy Overview / Why We Built This Site, then fresh whole-site Architect QA, then the complete four-page Human Gate 2 package. Josh does not act yet.
 
-Machine record: `canary/runtime/writer2-qa.json`  
-Settings receipt: `canary/runtime/writer2-run-settings.json`
+Machine record: `canary/runtime/architect-qa-writer2.json`  
+Settings receipt: `canary/runtime/architect-qa-writer2-run-settings.json`  
+Full receipt: `canary/outputs/architect-qa-writer2.md`
