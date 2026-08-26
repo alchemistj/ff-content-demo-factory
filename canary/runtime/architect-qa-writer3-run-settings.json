@@ -1,0 +1,53 @@
+{
+  "stage": "writer3-architect-qa",
+  "role": "independent-architect-qa",
+  "recordedBeforeAudit": true,
+  "recordedAt": "2026-08-26T19:06:30Z",
+  "source": "cursor-cloud run-info MCP on this run, before production-copy audit",
+  "run": {
+    "bcId": "bc-c2f523a6-a36f-4166-83f2-e177cb4668e6",
+    "name": "Swifts writer 3 audit",
+    "url": "https://cursor.com/agents/bc-c2f523a6-a36f-4166-83f2-e177cb4668e6",
+    "source": "scm",
+    "githubIssueId": "18",
+    "branchName": null,
+    "originalModelName": "cursor-grok-4.6-high",
+    "owningUserName": "Josh Lenz"
+  },
+  "requested": "Grok 4.6 High with Fast Off",
+  "observedOriginalModelName": "cursor-grok-4.6-high",
+  "fastOff": true,
+  "fastVariantRejected": "cursor-grok-4.6-high-fast was not the run model",
+  "independence": {
+    "notWriter3": "bc-9839de59-bd52-4752-84ed-2255614492b7",
+    "notWriter2": "bc-96aa2636-7d6d-48f1-a546-2c064a1b89e3",
+    "notWriter2ArchitectQa": "bc-e6ca4c27-31b8-4754-8baa-5ab0a024d2ad",
+    "notWriter1": "bc-ab1911ff-c34a-45e0-b7ee-79f4d72dad2c",
+    "notWriter1ArchitectQa": "bc-7aa7c250-fa2b-4c33-a9a3-79ad51ebad82"
+  },
+  "reviewedObject": {
+    "writer3Branch": "cursor/swifts-writer3-strategy-overview-92b7",
+    "writer3ExactHead": "40af1c133c15ab178671c34e566d2fb0e5078e1f",
+    "writer3Pr": "https://github.com/alchemistj/ff-content-demo-factory/pull/17",
+    "writer3Issue": "https://github.com/alchemistj/ff-content-demo-factory/issues/16",
+    "readablePackage": "canary/outputs/writer3-package.md",
+    "writer2AcceptedHead": "52e3528ef8f886e058547b5091ffe4d4f50e6fa1",
+    "acceptedWriter1ProductionCopyDigest": "sha256:8181dc56e0706968becf88391d89129785b4ac1364eaeaefbbfeb7d92e3eba5b"
+  },
+  "scope": [
+    "Frozen public-copy preservation (Homepage, Roof Replacement, Roof Repair, Contact, header/menu, footer)",
+    "Strategy Overview / Why We Built This Site",
+    "Evidence/claim integrity",
+    "Four-page architecture and navigation",
+    "Whole-package readability",
+    "Human Gate 2 readiness"
+  ],
+  "outOfScope": [
+    "production-copy rewrite",
+    "website build",
+    "deployment",
+    "merge",
+    "Human Gate 2 self-approval",
+    "Josh subjective approval (named next owner only if all areas accept)"
+  ]
+}
