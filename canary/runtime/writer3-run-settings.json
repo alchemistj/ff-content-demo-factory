@@ -1,0 +1,68 @@
+{
+  "stage": "writer3",
+  "role": "production-writer",
+  "recordedBeforeImplementation": true,
+  "recordedAt": "2026-08-26T18:07:49Z",
+  "source": "cursor-cloud run-info MCP on this run, before Strategy Overview copy",
+  "run": {
+    "bcId": "bc-9839de59-bd52-4752-84ed-2255614492b7",
+    "name": "Swifts strategy overview",
+    "url": "https://cursor.com/agents/bc-9839de59-bd52-4752-84ed-2255614492b7",
+    "source": "scm",
+    "githubIssueId": "16",
+    "branchName": null
+  },
+  "requested": "Grok 4.6 High with Fast Off",
+  "observedOriginalModelName": "cursor-grok-4.6-high",
+  "fastOff": true,
+  "fastVariantRejected": "cursor-grok-4.6-high-fast was not the run model",
+  "independence": {
+    "notWriter1": "bc-ab1911ff-c34a-45e0-b7ee-79f4d72dad2c",
+    "notWriter1ArchitectQa": "bc-7aa7c250-fa2b-4c33-a9a3-79ad51ebad82",
+    "notWriter2": "bc-96aa2636-7d6d-48f1-a546-2c064a1b89e3",
+    "notWriter2ArchitectQa": "bc-e6ca4c27-31b8-4754-8baa-5ab0a024d2ad",
+    "writer2Pr": "https://github.com/alchemistj/ff-content-demo-factory/pull/13",
+    "writer2ExactHead": "52e3528ef8f886e058547b5091ffe4d4f50e6fa1",
+    "writer2ArchitectQaPr": "https://github.com/alchemistj/ff-content-demo-factory/pull/15",
+    "writer2ArchitectQaHead": "453dfb8578408eea9b6a05cb4edad85ab6853cef",
+    "writer1Pr": "https://github.com/alchemistj/ff-content-demo-factory/pull/10",
+    "writer1AcceptedContentHead": "c1241a377f70424affe4ed2796b4dceec94ae0f1",
+    "acceptedWriter1ProductionCopyDigest": "sha256:8181dc56e0706968becf88391d89129785b4ac1364eaeaefbbfeb7d92e3eba5b",
+    "acceptedWriter2PublicPagesDigest": "sha256:3e9ce7881478eabd3ecd2eedc32002f50f1c49c8c24b33a42448ec8845f8b4fe"
+  },
+  "scope": [
+    "internal Strategy Overview / Why We Built This Site",
+    "one readable package containing frozen public-page copy plus the new overview"
+  ],
+  "frozen": [
+    "/ (Homepage production copy)",
+    "/roof-replacement",
+    "/roof-repair",
+    "/contact",
+    "header/menu",
+    "footer"
+  ],
+  "outOfScope": [
+    "rewrite of accepted Writer 1 or Writer 2 production copy",
+    "website build",
+    "application-code edits",
+    "provider configuration",
+    "deployment",
+    "merge",
+    "Human Gate 2"
+  ],
+  "canonicalGuides": {
+    "requested": [
+      "Fluid Frame Demo Writing Guide",
+      "Strategy Overview Instructions (runtime)"
+    ],
+    "googleDriveExport": "401 Unauthorized — same limitation recorded by Writer 1 and Writer 2 Architect QA",
+    "appliedInstead": [
+      "factory STRATEGY_INSTRUCTIONS in src/guides/catalog.ts on workgpt/words-factory-v3",
+      "merged Gate 1 compact artifact state/gate1/run-9dcafb5c9c632ee7dd22.md",
+      "Issue 8 quality contract",
+      "Issue 5 evidence-led depth rule (word count diagnostic only)",
+      "observable Grade A/B floors in src/qa/deterministic.ts"
+    ]
+  }
+}
