@@ -1,0 +1,130 @@
+{
+  "schemaVersion": "1.0.0",
+  "source": "architect-overnight-packet",
+  "verifiedAt": "2026-09-01",
+  "slug": "kingdom-roofing-and-construction",
+  "businessName": "Kingdom Roofing and Construction, Joplin Mo.",
+  "category": "Roofing contractor",
+  "phone": "(417) 317-6233",
+  "phoneDisplay": "(417) 317-6233",
+  "phonesObserved": [
+    {
+      "value": "(417) 317-6233",
+      "source": "GBP / owner post also lists 417-317-6233",
+      "canonicalCandidate": true
+    },
+    {
+      "value": "417-614-3141",
+      "source": "website also showed 417-614-3141",
+      "canonicalCandidate": false
+    }
+  ],
+  "phoneConflict": {
+    "status": "unresolved",
+    "note": "Do not pick a single canonical number without noting the conflict. GBP and owner post: (417) 317-6233. Website also showed 417-614-3141. Record both as observed.",
+    "observed": [
+      "(417) 317-6233",
+      "417-614-3141"
+    ]
+  },
+  "phonePlacement": {
+    "status": "unresolved",
+    "headerHero": null,
+    "footer": null,
+    "doNotDisplay": [],
+    "confirmedNumbers": [
+      "(417) 317-6233",
+      "417-614-3141"
+    ],
+    "decision": "Multiple observed numbers; do not inherit an ordering guess. Copy must note the conflict if a number is shown.",
+    "decidedBy": null
+  },
+  "email": null,
+  "address": "1421 S Main St, Joplin, MO 64801",
+  "city": "Joplin",
+  "state": "MO",
+  "postalCode": "64801",
+  "hours": "Open 24 hours",
+  "website": "http://kingdomroofingjoplin.com/",
+  "websiteUse": "thin template; NOT a copy source; NOT an IA source",
+  "rating": 5.0,
+  "reviewCount": 54,
+  "reviewTextApprox": 47,
+  "ownerOperator": {
+    "namedInReviews": "Eric (Manning)",
+    "office": "Danielle"
+  },
+  "tagline": "A company you can have faith in.",
+  "ownerPost": {
+    "date": "2026-05-10",
+    "sourceType": "first-party-gbp-owner-post",
+    "notCustomerEvidence": true,
+    "verbatimExcerpt": "Most people think commercial roofing only has two options: 1. Ignore it 2. Replace it But that's not always true. At Kingdom Roofing and Construction, we focus heavily on commercial roof asset preservation and restoration… We specialize in: Commercial roof inspections, Preventative maintenance programs, Silicone roof restoration systems, Metal roof restoration, Leak diagnostics, Seam and penetration protection, Long-term roof management planning.",
+    "specialtiesClaimedByOwner": [
+      "Commercial roof inspections",
+      "Preventative maintenance programs",
+      "Silicone roof restoration systems",
+      "Metal roof restoration",
+      "Leak diagnostics",
+      "Seam and penetration protection",
+      "Long-term roof management planning"
+    ],
+    "copyRule": "Do not claim silicone/metal restoration on a page unless treated as a first-party owner-post claim and labeled that way. Do not invent certifications."
+  },
+  "servicesFull": [
+    "Roof installation",
+    "Roof inspection",
+    "Roof repair",
+    "Roof damage repair",
+    "Roof repair for storm & wind damage",
+    "Attic venting",
+    "siding",
+    "Residential roof replacement / new roof",
+    "Commercial roof restoration and inspection (owner-post first-party claim)"
+  ],
+  "servicesFromReviewTags": [
+    "Roof installation",
+    "Roof inspection",
+    "Roof repair",
+    "Roof damage repair",
+    "Roof repair for storm & wind damage",
+    "Attic venting",
+    "siding"
+  ],
+  "differentiators": [
+    "Same-day callback with estimate (Randy Coleman review)",
+    "Week-turnaround new roof including tree trim (Randy Coleman review)",
+    "Honest inspection; will say repairs are not necessary (Val Packard review)",
+    "Owner-stated focus on commercial roof asset preservation and restoration (first-party post, not a customer claim)",
+    "Tagline: A company you can have faith in."
+  ],
+  "foundingYear": null,
+  "credentials": [],
+  "promotions": [],
+  "architectApprovedServicePages": [
+    {
+      "intent": "Residential roof replacement / new roof",
+      "slug": "roof-replacement-joplin-mo",
+      "path": "/roof-replacement-joplin-mo",
+      "basis": "Customers describing leaky roofs replaced, week-turnaround, tree trim with the job"
+    },
+    {
+      "intent": "Commercial roof restoration & inspection",
+      "slug": "commercial-roof-restoration-joplin-mo",
+      "path": "/commercial-roof-restoration-joplin-mo",
+      "basis": "Owner post + church/commercial-adjacent urgency. Silicone/metal restoration only as labeled first-party owner-post claims. Do not invent certifications."
+    }
+  ],
+  "evidenceGrade": "B",
+  "evidenceGradeReason": "54 reviews, high specificity in several; owner post is first-party not customer; phone number conflict; template site ignored",
+  "prohibitedClaims": [
+    "Do not invent testimonials or extra reviews.",
+    "Do not quote rating-only reviews.",
+    "Do not use the template website as a copy or IA source.",
+    "Do not pick one canonical phone without noting the (417) 317-6233 vs 417-614-3141 conflict.",
+    "Do not claim silicone or metal restoration as independently verified; owner post only, labeled first-party.",
+    "Do not invent certifications, licenses, warranties, years in business, or guarantees.",
+    "Do not convert review themes into standing guarantees.",
+    "Do not claim the listing has only five text reviews; ~47 have text and this packet is a signed subset."
+  ]
+}

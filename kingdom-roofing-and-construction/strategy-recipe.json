@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "1.0.0",
+  "businessName": "Kingdom Roofing and Construction",
+  "industry": "Roofing",
+  "city": "Joplin",
+  "state": "MO",
+  "websiteStatus": "thin-template",
+  "auditSummary": "Current site is a thin template at http://kingdomroofingjoplin.com/ and is not a copy or IA source. It does not give residential roof replacement and commercial roof restoration their own paths. Google Business Profile shows 54 reviews unused by the site. Two phone numbers are observed and the conflict is unresolved: GBP/owner post (417) 317-6233 vs website 417-614-3141.",
+  "brandTone": "Direct, local, faithful, no hype. Speak as the Joplin roofing company on business pages. Strategy Overview only uses Fluid Frame demo voice.",
+  "heroDirection": "Homepage: Joplin roofing, Eric Manning, tagline, dual paths to replacement vs commercial restoration, call the Google listing number. Contact carries NAP, hours, and the phone conflict.",
+  "pages": [
+    {
+      "title": "Strategy Overview",
+      "purpose": "Explain why Fluid Frame built this five-route demo: thin template, unresolved phone conflict, unused 54-review GBP, and separate residential-replacement vs commercial-restoration URLs.",
+      "searchIntent": "branded",
+      "primaryKeyword": "Kingdom Roofing Joplin demo strategy",
+      "avoidDuplicateOf": ""
+    },
+    {
+      "title": "Homepage",
+      "purpose": "Business homepage for Joplin roofing: Eric, tagline, dual service cards, review outcomes, call the Google listing number.",
+      "searchIntent": "local-service",
+      "primaryKeyword": "Joplin roofing",
+      "avoidDuplicateOf": ""
+    },
+    {
+      "title": "Roof Replacement Joplin MO",
+      "purpose": "Residential roof replacement / new roof lander for Joplin homes. Randy, Val, and Juell. Distinct from commercial restoration.",
+      "searchIntent": "commercial",
+      "primaryKeyword": "roof replacement Joplin MO",
+      "avoidDuplicateOf": "Commercial Roof Restoration Joplin MO"
+    },
+    {
+      "title": "Commercial Roof Restoration Joplin MO",
+      "purpose": "Commercial roof restoration and inspection. Owner-post specialties labeled first-party. Church quote for showed-up / no more leaks. Val for honest inspection.",
+      "searchIntent": "commercial",
+      "primaryKeyword": "commercial roof restoration Joplin MO",
+      "avoidDuplicateOf": "Roof Replacement Joplin MO"
+    },
+    {
+      "title": "Contact",
+      "purpose": "NAP, Open 24 hours, office named Danielle, Google listing CTA, and the unresolved phone conflict recorded in body copy.",
+      "searchIntent": "commercial",
+      "primaryKeyword": "contact Kingdom Roofing Joplin",
+      "avoidDuplicateOf": ""
+    }
+  ]
+}

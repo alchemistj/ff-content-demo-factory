@@ -1,0 +1,40 @@
+{
+  "titleTag": null,
+  "h1": null,
+  "hasServicePages": false,
+  "hasMetaDescription": null,
+  "hasContactForm": null,
+  "mobileFriendlySignals": "not used; template site is not an IA or copy source",
+  "websiteStatus": "thin-template",
+  "auditedUrl": "http://kingdomroofingjoplin.com/",
+  "copySource": false,
+  "iaSource": false,
+  "notableIssues": [
+    "Thin template site.",
+    "Grammar issues on the current site.",
+    "Not a copy source.",
+    "Not an IA source.",
+    "Website also showed 417-614-3141, which conflicts with GBP/owner-post (417) 317-6233.",
+    "Do not scrape or rewrite template copy into the demo."
+  ],
+  "seoSnapshot": [
+    {
+      "label": "Current site",
+      "currentValue": "thin template at http://kingdomroofingjoplin.com/",
+      "flag": "Ignore for copy and information architecture",
+      "severity": "critical"
+    },
+    {
+      "label": "Grammar",
+      "currentValue": "grammar issues observed",
+      "flag": "Do not reuse phrasing",
+      "severity": "warning"
+    },
+    {
+      "label": "Phone on website",
+      "currentValue": "417-614-3141 observed on website; GBP/owner post use (417) 317-6233",
+      "flag": "Phone conflict; do not silently canonicalize",
+      "severity": "warning"
+    }
+  ]
+}

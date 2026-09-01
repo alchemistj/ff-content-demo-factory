@@ -1,0 +1,116 @@
+{
+  "schemaVersion": "1.0.0",
+  "slug": "kingdom-roofing-and-construction",
+  "businessName": "Kingdom Roofing and Construction",
+  "notes": "Recipe v1 has no contractual sectionSketch. Blueprint records intended structure, no sketch departures, and per-page anchor evidence. Quotes stay on review-inventory approvedPages only.",
+  "pages": [
+    {
+      "title": "Strategy Overview",
+      "slug": "/",
+      "intendedStructure": [
+        "Hero (demo voice)",
+        "What we found on the current site",
+        "The unresolved phone conflict",
+        "What this demo builds",
+        "Evidence grade and refuse list (writer-facing facts, not customer testimonials)"
+      ],
+      "sketchDepartures": [
+        {
+          "reason": "v1 recipe has empty sectionSketch; writer used audit-only defects: thin template, phone conflict, missing dual service paths, unused 54 reviews."
+        }
+      ],
+      "anchorEvidence": [
+        "current-site-audit.json: thin-template, not copy/IA source, website 417-614-3141 vs GBP (417) 317-6233",
+        "confirmed-facts.json: 54 reviews, grade B, architectApprovedServicePages",
+        "No customer quotes on this page"
+      ]
+    },
+    {
+      "title": "Homepage",
+      "slug": "/home",
+      "intendedStructure": [
+        "Hero: Joplin roofing + Eric + tagline + dual CTA",
+        "Two service paths (cards, not a third route)",
+        "Review outcomes woven as named excerpts (Randy, Val, Juell, Church)",
+        "Hours and Joplin address without a second main phone CTA"
+      ],
+      "sketchDepartures": [
+        {
+          "reason": "All four anchors have /home on approvedPages, so excerpts appear here instead of a bottom testimonial dump. Justin supporting unused on purpose."
+        }
+      ],
+      "anchorEvidence": [
+        "Randy Coleman \u2014 same-day estimate, week turnaround, tree trim, names Eric",
+        "Val Packard \u2014 honest inspection, no unneeded repair",
+        "Juell Brandt \u2014 mobile home leak, came from Joplin, no leaks/sound-proof; no $12k listing tag",
+        "Carterville First Baptist Church \u2014 showed up, no more leaks",
+        "Tagline and Eric from confirmed-facts"
+      ]
+    },
+    {
+      "title": "Roof Replacement Joplin MO",
+      "slug": "/roof-replacement-joplin-mo",
+      "intendedStructure": [
+        "Hero: residential replacement keyword",
+        "New roof + tree (Randy full quote)",
+        "Honest inspection (Val)",
+        "Mobile home leak vs second roof (Juell)",
+        "Not the commercial restoration page"
+      ],
+      "sketchDepartures": [
+        {
+          "reason": "No church quote: not on this review's approvedPages. No owner-post silicone/metal on this residential page."
+        }
+      ],
+      "anchorEvidence": [
+        "Randy Coleman approvedPages /home + this route",
+        "Val Packard approvedPages includes this route",
+        "Juell Brandt approvedPages /home + this route"
+      ]
+    },
+    {
+      "title": "Commercial Roof Restoration Joplin MO",
+      "slug": "/commercial-roof-restoration-joplin-mo",
+      "intendedStructure": [
+        "Hero: restore vs replace",
+        "Owner post verbatimExcerpt labeled first-party",
+        "Church quote (showed up, no more leaks)",
+        "Val honest inspection",
+        "Not a residential replacement recap"
+      ],
+      "sketchDepartures": [
+        {
+          "reason": "No Randy/Juell quotes (not on approvedPages). Church is not recast as a replacement case. Silicone/metal only inside labeled owner post."
+        }
+      ],
+      "anchorEvidence": [
+        "confirmed-facts.ownerPost.verbatimExcerpt",
+        "Carterville First Baptist Church",
+        "Val Packard"
+      ]
+    },
+    {
+      "title": "Contact",
+      "slug": "/contact",
+      "intendedStructure": [
+        "Hero with Google listing CTA",
+        "NAP block",
+        "Phone conflict (both observed numbers)",
+        "Hours Open 24 hours",
+        "Office named Danielle (office only)",
+        "What to have ready"
+      ],
+      "sketchDepartures": [
+        {
+          "reason": "No customer quotes on Contact (none list /contact on approvedPages). Phone conflict must live here plus Strategy Overview."
+        }
+      ],
+      "anchorEvidence": [
+        "prospect.json / confirmed-facts NAP",
+        "phonesObserved both numbers",
+        "hours Open 24 hours",
+        "people.office Danielle"
+      ]
+    }
+  ]
+}
