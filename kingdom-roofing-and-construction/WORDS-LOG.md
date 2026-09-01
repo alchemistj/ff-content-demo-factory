@@ -71,3 +71,6 @@ TEK / Healing Hearts / Ozarks for sentence craft and evidence, not page count. G
 - industry Roofing; city Joplin; state MO
 - Page titles match between recipe and artifact
 - Footer servicesFull + differentiators + hours from confirmed-facts
+
+## Chrome follow-up
+Footer differentiators no longer include same-day callback, week-turnaround, or “repairs not necessary.” Those remain on pages that name Randy/Val. Chrome keeps the tagline only.
