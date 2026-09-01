@@ -14,56 +14,54 @@
       "hero": {
         "eyebrow": "Fluid Frame Marketing · Demo Strategy",
         "heading": "We built Kingdom Roofing a site that can carry Joplin search and a real call path.",
-        "subheading": "The live listing is strong. The current website is a thin template, so it is not the copy source. This mockup gives Kingdom a homepage, two evidence-backed service paths, and a single call number that matches Google.",
+        "subheading": "The live listing is strong. The current website is a thin template. This mockup gives Kingdom a homepage, two service paths, and a single call number that matches Google.",
         "primaryCta": "View the homepage",
         "secondaryCta": "See roof replacement"
       },
       "sections": [
         {
           "heading": "What We Found",
-          "body": "Kingdom Roofing and Construction, Joplin Mo. is a roofing contractor at 1421 S Main St with a live Google listing (54 reviews, 5.0). The website at kingdomroofingjoplin.com is a thin template with grammar issues. We did not scrape it. We did not rewrite it. Information architecture comes from the signed packet, not from that template.",
+          "body": "Kingdom Roofing and Construction, Joplin Mo. is a roofing contractor at 1421 S Main St with a live Google listing (54 reviews, 5.0). The website at kingdomroofingjoplin.com is a thin template with grammar issues. This demo does not reuse that template. Identity comes from the Google listing: name, address, hours, and reviews.",
           "bullets": [
-            "Thin template site — not a copy source and not an IA source",
-            "GBP listing is the identity source: name, address, hours, review corpus",
-            "Evidence grade B: specific jobs in several reviews, plus a first-party owner post, plus an unresolved phone conflict"
+            "Thin template site — not reused for this mockup",
+            "Google listing supplies name, address, hours, and reviews",
+            "Two service paths instead of one generic contractor page"
           ]
         },
         {
           "heading": "The Phone Conflict",
-          "body": "Two numbers showed up in the overnight packet. Google and the owner post list (417) 317-6233. The current website also showed 417-614-3141. Business pages, Contact, and header/footer chrome use (417) 317-6233 only. The website number is recorded here and in the words log. It is not a second customer-facing line.",
+          "body": "Google and the owner post list (417) 317-6233. The current website also showed 417-614-3141. Business pages, Contact, and the header and footer use (417) 317-6233 only. The website number is noted on this page so the conflict is not hidden.",
           "bullets": [
-            "GBP / owner post: (417) 317-6233 — used on /home, both service pages, /contact, and chrome",
-            "Website observed: 417-614-3141 — not placed on business pages",
-            "Conflict status remains unresolved; this page is the customer-visible note"
+            "Google / owner post: (417) 317-6233 — used on the homepage, both service pages, Contact, and chrome",
+            "Website showed: 417-614-3141 — not used on business pages"
           ]
         },
         {
           "heading": "Two Routes, Not Three",
-          "body": "Healing Hearts and Ozarks are voice references. Their three service pages are not a license to invent a third Kingdom service URL. Architect sign-off approved residential roof replacement and commercial roof restoration. Siding, attic venting, and other confirmed names may appear in the footer list. They do not get their own routes in this package.",
+          "body": "This demo has five pages: why we built it, a homepage, residential roof replacement, commercial roof restoration, and contact. Siding, attic venting, and other listed work can appear in the footer. They do not get their own pages here.",
           "bullets": [
             "/home — Joplin roofing identity, tagline, both service paths, call (417) 317-6233",
             "/roof-replacement-joplin-mo — new roofs and leak-stop residential work",
-            "/commercial-roof-restoration-joplin-mo — inspect, restore, and plan; owner-post specialties labeled as the company’s Google post",
+            "/commercial-roof-restoration-joplin-mo — inspect, restore, and plan, with the company’s own Google post on restoration",
             "/contact — address, hours, office named Danielle, same phone"
           ]
         },
         {
-          "heading": "Evidence, Not a Five-Review Myth",
-          "body": "The listing reports 54 reviews. About 47 have text. This overnight packet is a signed subset: four anchor-grade text reviews, one supporting text review with original spelling, and eight named rating-only records that must never be quoted. We did not invent the missing reviews. We also did not claim the listing only has five write-ups.",
+          "heading": "The Reviews This Demo Uses",
+          "body": "The listing reports 54 reviews. About 47 have text. This mockup quotes four detailed reviews plus one supporting note, and it does not invent the rest.",
           "bullets": [
-            "Anchors used: Randy Coleman, Val Packard, Juell Brandt, Carterville First Baptist Church",
-            "Supporting optional: Justin Anderson (typos kept)",
-            "Owner Google post dated 2026-05-10 is first-party copy, never a customer quote",
+            "Quoted in full: Randy Coleman, Val Packard, Juell Brandt, Carterville First Baptist Church",
+            "Supporting: Justin Anderson",
+            "Company Google post from May 10, 2026 is Kingdom speaking, not a customer review",
             "Tagline kept verbatim: A company you can have faith in."
           ]
         },
         {
           "heading": "What This Demo Does Not Claim",
-          "body": "No licenses, warranties, years in business, or guarantees were in the packet, so none appear on business pages. A same-day callback and a one-week new roof are Randy Coleman's story, not a standing SLA. Silicone and metal restoration stay labeled as Kingdom's own post. A listing-tag price range on one review stays out of customer copy.",
+          "body": "No licenses, warranties, years in business, or written guarantees appear on the business pages because none were in the listing facts we used. A same-day callback and a one-week new roof are Randy Coleman’s story. Silicone and metal restoration are Kingdom’s own Google post.",
           "bullets": [
-            "Do not treat review outcomes as warranties",
-            "Do not invent Danielle’s job title — office is the fact",
-            "Do not deploy from this words PR"
+            "Review outcomes stay stories, not warranties",
+            "Danielle is named as the office, with no invented title"
           ]
         }
       ]
@@ -93,16 +91,16 @@
         },
         {
           "heading": "Services You Can Open From This Site",
-          "body": "Two pages go deep. Other work we are known for stays on the list so we do not invent extra URLs.",
+          "body": "Two pages go deep: roof replacement for homes, and commercial roof restoration for buildings. Other listed work stays in the footer.",
           "bullets": [
             "Roof replacement in Joplin, MO — new roofs, leak-stop work, and an honest look before you replace",
             "Commercial roof restoration in Joplin, MO — inspections, leak finding, and restoration planning",
-            "Also listed: roof installation, roof inspection, roof repair, storm and wind damage repair, attic venting, and siding (no separate page in this site)"
+            "Also listed: roof installation, roof inspection, roof repair, storm and wind damage repair, attic venting, and siding"
           ]
         },
         {
           "heading": "Why Joplin Customers Pick Up the Phone",
-          "body": "People who hired Kingdom talk about speed, honesty, and showing up. Those are their stories. We do not turn one job into a written guarantee.",
+          "body": "People who hired Kingdom talk about speed, honesty, and showing up. Those are their stories.",
           "bullets": [
             "Randy Coleman got a same-day call and an estimate, then a new roof within a week — including tree trim that protected the new work",
             "Val Packard had Eric inspect the roof and say repairs were not necessary, instead of selling unneeded work",
@@ -289,7 +287,7 @@
         },
         {
           "heading": "What Kingdom Wrote on Google About Commercial Work",
-          "body": "This is the company’s own Google post from May 10, 2026 — not a customer review. Kingdom wrote: \"Most people think commercial roofing only has two options: 1. Ignore it 2. Replace it But that's not always true. At Kingdom Roofing and Construction, we focus heavily on commercial roof asset preservation and restoration… We specialize in: Commercial roof inspections, Preventative maintenance programs, Silicone roof restoration systems, Metal roof restoration, Leak diagnostics, Seam and penetration protection, Long-term roof management planning.\" Those specialties are what the company said about itself. They are not outside certifications.",
+          "body": "This is the company’s own Google post from May 10, 2026 — not a customer review. Kingdom wrote: \"Most people think commercial roofing only has two options: 1. Ignore it 2. Replace it But that's not always true. At Kingdom Roofing and Construction, we focus heavily on commercial roof asset preservation and restoration… We specialize in: Commercial roof inspections, Preventative maintenance programs, Silicone roof restoration systems, Metal roof restoration, Leak diagnostics, Seam and penetration protection, Long-term roof management planning.\" Those specialties are what the company said about itself.",
           "bullets": [
             "Commercial roof inspections",
             "Preventative maintenance programs",
@@ -302,7 +300,7 @@
         },
         {
           "heading": "A Church That Could Not Get Anyone to Show",
-          "body": "Carterville First Baptist Church wrote: \"Kingdom Roofing responded immediately to my request for a quote on my roof. Most other roofing companies wouldn't even show up… The best part, no more leaks!\" Immediate quote. Other companies would not show. No more leaks. That is the commercial-adjacent proof we will stand next to.",
+          "body": "Carterville First Baptist Church wrote: \"Kingdom Roofing responded immediately to my request for a quote on my roof. Most other roofing companies wouldn't even show up… The best part, no more leaks!\" Immediate quote. Other companies would not show. No more leaks.",
           "bullets": [
             "Carterville First Baptist Church, Google review"
           ]
@@ -406,14 +404,14 @@
       "Attic venting",
       "siding",
       "Residential roof replacement / new roof",
-      "Commercial roof restoration and inspection (owner-post first-party claim)"
+      "Commercial roof restoration and inspection"
     ],
     "differentiators": [
-      "Same-day callback with estimate (Randy Coleman review)",
-      "Week-turnaround new roof including tree trim (Randy Coleman review)",
-      "Honest inspection; will say repairs are not necessary (Val Packard review)",
-      "Owner-stated focus on commercial roof asset preservation and restoration (first-party post, not a customer claim)",
-      "Tagline: A company you can have faith in."
+      "Same-day callback with estimate",
+      "Week-turnaround new roof including tree trim",
+      "Honest inspection; will say repairs are not necessary",
+      "Owner-stated focus on commercial roof asset preservation and restoration",
+      "A company you can have faith in."
     ],
     "hours": "Open 24 hours"
   }
