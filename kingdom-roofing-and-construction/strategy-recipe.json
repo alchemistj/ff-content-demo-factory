@@ -1,48 +1,63 @@
 {
   "schemaVersion": "1.0.0",
-  "businessName": "Kingdom Roofing and Construction",
+  "businessName": "Kingdom Roofing and Construction, Joplin Mo.",
   "industry": "Roofing",
   "city": "Joplin",
   "state": "MO",
   "websiteStatus": "thin-template",
-  "auditSummary": "Current site is a thin template at http://kingdomroofingjoplin.com/ and is not a copy or IA source. It does not give residential roof replacement and commercial roof restoration their own paths. Google Business Profile shows 54 reviews unused by the site. Two phone numbers are observed and the conflict is unresolved: GBP/owner post (417) 317-6233 vs website 417-614-3141.",
-  "brandTone": "Direct, local, faithful, no hype. Speak as the Joplin roofing company on business pages. Strategy Overview only uses Fluid Frame demo voice.",
-  "heroDirection": "Homepage: Joplin roofing, Eric Manning, tagline, dual paths to replacement vs commercial restoration, call the Google listing number. Contact carries NAP, hours, and the phone conflict.",
+  "auditSummary": "Current site at http://kingdomroofingjoplin.com/ is a thin template with grammar issues. It is not a copy source and not an IA source. GBP is live with 54 reviews (listing 5.0; ~47 with text). Architect signed two service routes from reviews plus a first-party owner post: residential roof replacement and commercial roof restoration. Phone conflict exists between GBP/owner-post (417) 317-6233 and a website-observed alternate; this recipe uses the GBP number on business pages and records the conflict only on the demo strategy page.",
+  "brandTone": "Ozarks contractor voice in the TEK / Healing Hearts / Ozarks family: plain, local, evidence-led, faith-steady without preaching. Grade 5–6. AP heads. Dual CTA. Business pages speak as the company. Strategy page is the only Fluid Frame voice. Do not add a third service page because other demos had three.",
+  "heroDirection": "Homepage leads with Joplin roofing identity, the tagline A company you can have faith in, and call (417) 317-6233. Replacement page leads with new-roof / leak-stop residential work. Commercial page leads with inspect-and-restore before replace, with owner-post specialties labeled as the company’s own Google post. Contact is phone-first at the Main Street address.",
   "pages": [
     {
-      "title": "Strategy Overview",
-      "purpose": "Explain why Fluid Frame built this five-route demo: thin template, unresolved phone conflict, unused 54-review GBP, and separate residential-replacement vs commercial-restoration URLs.",
+      "title": "Why We Built This",
+      "purpose": "Fluid Frame demo lander at / explaining why the mockup exists, why the template site was ignored, why there are two service routes not three, how reviews were used as a subset, and where the phone conflict is recorded.",
       "searchIntent": "branded",
-      "primaryKeyword": "Kingdom Roofing Joplin demo strategy",
-      "avoidDuplicateOf": ""
+      "primaryKeyword": "Kingdom Roofing Joplin demo",
+      "avoidDuplicateOf": "",
+      "route": "/",
+      "pageType": "strategy-overview",
+      "contentMode": "demo-strategy"
     },
     {
       "title": "Homepage",
-      "purpose": "Business homepage for Joplin roofing: Eric, tagline, dual service cards, review outcomes, call the Google listing number.",
+      "purpose": "Business homepage at /home establishing Joplin roofing identity, tagline, two service paths, people named in facts (Eric, Danielle as office), hours, and call path (417) 317-6233.",
       "searchIntent": "local-service",
-      "primaryKeyword": "Joplin roofing",
-      "avoidDuplicateOf": ""
+      "primaryKeyword": "roofing Joplin MO",
+      "avoidDuplicateOf": "",
+      "route": "/home",
+      "pageType": "homepage",
+      "contentMode": "production-site"
     },
     {
       "title": "Roof Replacement Joplin MO",
-      "purpose": "Residential roof replacement / new roof lander for Joplin homes. Randy, Val, and Juell. Distinct from commercial restoration.",
+      "purpose": "Residential roof replacement / new roof lander for Joplin homeowners comparing a new roof after leaks or delay from a prior roofer.",
       "searchIntent": "commercial",
       "primaryKeyword": "roof replacement Joplin MO",
-      "avoidDuplicateOf": "Commercial Roof Restoration Joplin MO"
+      "avoidDuplicateOf": "Commercial Roof Restoration Joplin MO",
+      "route": "/roof-replacement-joplin-mo",
+      "pageType": "service-page",
+      "contentMode": "production-site"
     },
     {
       "title": "Commercial Roof Restoration Joplin MO",
-      "purpose": "Commercial roof restoration and inspection. Owner-post specialties labeled first-party. Church quote for showed-up / no more leaks. Val for honest inspection.",
+      "purpose": "Commercial restoration and inspection lander. Owner-post specialties labeled as company statements. Church review for show-up and leak stop. No invented certifications.",
       "searchIntent": "commercial",
       "primaryKeyword": "commercial roof restoration Joplin MO",
-      "avoidDuplicateOf": "Roof Replacement Joplin MO"
+      "avoidDuplicateOf": "Roof Replacement Joplin MO",
+      "route": "/commercial-roof-restoration-joplin-mo",
+      "pageType": "service-page",
+      "contentMode": "production-site"
     },
     {
       "title": "Contact",
-      "purpose": "NAP, Open 24 hours, office named Danielle, Google listing CTA, and the unresolved phone conflict recorded in body copy.",
+      "purpose": "Phone-first contact page with Joplin address, hours, (417) 317-6233 only, and office named as Danielle without an invented title.",
       "searchIntent": "commercial",
-      "primaryKeyword": "contact Kingdom Roofing Joplin",
-      "avoidDuplicateOf": ""
+      "primaryKeyword": "Kingdom Roofing Joplin contact",
+      "avoidDuplicateOf": "",
+      "route": "/contact",
+      "pageType": "contact",
+      "contentMode": "production-site"
     }
   ]
 }

@@ -1,59 +1,69 @@
 {
   "schemaVersion": "1.0.0",
-  "businessName": "Kingdom Roofing and Construction",
+  "businessName": "Kingdom Roofing and Construction, Joplin Mo.",
   "industry": "Roofing",
   "city": "Joplin",
   "state": "MO",
   "sourceStrategyRecipeVersion": "1.0.0",
   "pages": [
     {
-      "title": "Strategy Overview",
+      "title": "Why We Built This",
       "slug": "/",
-      "seoTitle": "Why We Built This Site | Kingdom Roofing and Construction",
-      "metaDescription": "Why Fluid Frame built this Joplin roofing demo: thin template site, unresolved phone conflict, unused Google reviews, and separate replacement vs restoration paths.",
+      "seoTitle": "Why We Built This | Kingdom Roofing Joplin",
+      "metaDescription": "Why Fluid Frame built a five-route Joplin roofing demo for Kingdom Roofing and Construction — two service paths, review evidence, and a number that matches Google.",
       "hero": {
         "eyebrow": "Fluid Frame Marketing · Demo Strategy",
-        "heading": "We built Kingdom Roofing a site with two honest service paths.",
-        "subheading": "The current site is a thin template. It does not split residential roof replacement from commercial roof restoration. Google already holds 54 reviews and two different phone numbers. This demo uses that evidence instead of rewriting the template.",
-        "primaryCta": "View the full demo site",
-        "secondaryCta": "Read the phone conflict"
+        "heading": "We built Kingdom Roofing a site that can carry Joplin search and a real call path.",
+        "subheading": "The live listing is strong. The current website is a thin template, so it is not the copy source. This mockup gives Kingdom a homepage, two evidence-backed service paths, and a single call number that matches Google.",
+        "primaryCta": "View the homepage",
+        "secondaryCta": "See roof replacement"
       },
       "sections": [
         {
-          "heading": "What We Found on the Current Site",
-          "body": "Kingdom Roofing and Construction, Joplin Mo., already has a Google listing at 5.0 from 54 reviews. The first-party website at http://kingdomroofingjoplin.com/ is a thin template. We did not use it as copy. We did not use it as information architecture.",
+          "heading": "What We Found",
+          "body": "Kingdom Roofing and Construction, Joplin Mo. is a roofing contractor at 1421 S Main St with a live Google listing (54 reviews, 5.0). The website at kingdomroofingjoplin.com is a thin template with grammar issues. We did not scrape it. We did not rewrite it. Information architecture comes from the signed packet, not from that template.",
           "bullets": [
-            "Thin template site, not a copy source",
-            "No dedicated residential roof-replacement path",
-            "No dedicated commercial roof-restoration path",
-            "54 Google reviews unused by the current site"
+            "Thin template site — not a copy source and not an IA source",
+            "GBP listing is the identity source: name, address, hours, review corpus",
+            "Evidence grade B: specific jobs in several reviews, plus a first-party owner post, plus an unresolved phone conflict"
           ]
         },
         {
-          "heading": "The Phone Conflict Is Unresolved",
-          "body": "Two numbers are on the record. Google Business Profile and the owner post list (417) 317-6233. The website also showed 417-614-3141. This demo does not pick a silent canonical. Customer-facing call buttons use the Google listing number (417) 317-6233 as the single main CTA. Contact records both observed numbers. The website number is not a second main CTA.",
+          "heading": "The Phone Conflict",
+          "body": "Two numbers showed up in the overnight packet. Google and the owner post list (417) 317-6233. The current website also showed 417-614-3141. Business pages, Contact, and header/footer chrome use (417) 317-6233 only. The website number is recorded here and in the words log. It is not a second customer-facing line.",
           "bullets": [
-            "GBP / owner post: (417) 317-6233 — used as the Google listing CTA",
-            "Website: 417-614-3141 — recorded here and on Contact, not run as a second main CTA"
+            "GBP / owner post: (417) 317-6233 — used on /home, both service pages, /contact, and chrome",
+            "Website observed: 417-614-3141 — not placed on business pages",
+            "Conflict status remains unresolved; this page is the customer-visible note"
           ]
         },
         {
-          "heading": "What This Demo Builds",
-          "body": "Five routes. Business pages speak as the roofing company. This overview explains the demo and the template. Contact still lists both observed phone numbers so the conflict is not hidden.",
+          "heading": "Two Routes, Not Three",
+          "body": "Healing Hearts and Ozarks are voice references. Their three service pages are not a license to invent a third Kingdom service URL. Architect sign-off approved residential roof replacement and commercial roof restoration. Siding, attic venting, and other confirmed names may appear in the footer list. They do not get their own routes in this package.",
           "bullets": [
-            "/home — Joplin roofing homepage with Eric Manning, the faith tagline, and cards to both services",
-            "/roof-replacement-joplin-mo — residential replacement and new-roof intent",
-            "/commercial-roof-restoration-joplin-mo — owner-stated restoration and inspection, plus the church quote",
-            "/contact — 1421 S Main St, Joplin, MO 64801, Open 24 hours, both observed phones"
+            "/home — Joplin roofing identity, tagline, both service paths, call (417) 317-6233",
+            "/roof-replacement-joplin-mo — new roofs and leak-stop residential work",
+            "/commercial-roof-restoration-joplin-mo — inspect, restore, and plan; owner-post specialties labeled as the company’s Google post",
+            "/contact — address, hours, office named Danielle, same phone"
           ]
         },
         {
-          "heading": "Evidence Grade B",
-          "body": "The signed packet is grade B: 54 listing reviews, high specificity in several transcribed reviews, a first-party owner post, and an unresolved phone conflict. This packet is a signed subset of listing text. Missing reviews were not invented. Silicone and metal restoration stay labeled as owner-post claims.",
+          "heading": "Evidence, Not a Five-Review Myth",
+          "body": "The listing reports 54 reviews. About 47 have text. This overnight packet is a signed subset: four anchor-grade text reviews, one supporting text review with original spelling, and eight named rating-only records that must never be quoted. We did not invent the missing reviews. We also did not claim the listing only has five write-ups.",
           "bullets": [
-            "This demo does not invent warranties, licenses, insurance, financing, or years in business",
-            "This demo does not add a third service route. Siding and attic venting do not get their own pages",
-            "This demo does not scrape or rewrite the template"
+            "Anchors used: Randy Coleman, Val Packard, Juell Brandt, Carterville First Baptist Church",
+            "Supporting optional: Justin Anderson (typos kept)",
+            "Owner Google post dated 2026-05-10 is first-party copy, never a customer quote",
+            "Tagline kept verbatim: A company you can have faith in."
+          ]
+        },
+        {
+          "heading": "What This Demo Does Not Claim",
+          "body": "No licenses, warranties, years in business, or guarantees were in the packet, so none appear on business pages. A same-day callback and a one-week new roof are Randy Coleman's story, not a standing SLA. Silicone and metal restoration stay labeled as Kingdom's own post. A listing-tag price range on one review stays out of customer copy.",
+          "bullets": [
+            "Do not treat review outcomes as warranties",
+            "Do not invent Danielle’s job title — office is the fact",
+            "Do not deploy from this words PR"
           ]
         }
       ]
@@ -61,168 +71,327 @@
     {
       "title": "Homepage",
       "slug": "/home",
-      "seoTitle": "Joplin Roofing | Kingdom Roofing and Construction",
-      "metaDescription": "Kingdom Roofing and Construction in Joplin, MO. Residential roof replacement and commercial roof restoration. Call the Google listing at (417) 317-6233.",
+      "seoTitle": "Roofing in Joplin, MO | Kingdom Roofing",
+      "metaDescription": "Kingdom Roofing and Construction serves Joplin, MO with roof replacement and commercial roof restoration. A company you can have faith in. Call (417) 317-6233.",
       "hero": {
         "eyebrow": "Joplin, MO Roofing",
-        "heading": "Joplin roofing from a company you can have faith in",
-        "subheading": "Kingdom Roofing and Construction works out of Joplin. Eric Manning is the owner named in customer reviews. Call the Google listing at (417) 317-6233 when you need a new roof or a commercial roof looked at.",
+        "heading": "Roofing in Joplin You Can Have Faith In",
+        "subheading": "Kingdom Roofing and Construction puts new roofs on Joplin homes and helps building owners inspect and restore commercial roofs when replacement is not the only path. Call (417) 317-6233 and talk with the team.",
         "primaryCta": "Call (417) 317-6233",
         "secondaryCta": "See roof replacement"
       },
       "sections": [
         {
-          "heading": "Joplin Roofing, Two Clear Paths",
-          "body": "You get a residential roof-replacement path and a commercial roof-restoration path. Neighbors describe new roofs, honest inspections, and stopped leaks. The owner describes commercial restoration as its own job. Pick the work you have.",
+          "heading": "Joplin Roofing From a Main Street Shop",
+          "body": "Kingdom Roofing and Construction is a Joplin, MO roofing contractor at 1421 S Main St. Homeowners call us for a new roof when leaks will not quit. Building owners call us to inspect a commercial roof and talk through restoration before they tear it off. Google lists us as open 24 hours. The tagline is simple: A company you can have faith in.",
           "bullets": [
-            "Residential roof replacement and new roofs for Joplin homes",
-            "Commercial roof restoration and inspection for buildings that may not need a tear-off first",
-            "Open 24 hours · 1421 S Main St, Joplin, MO 64801"
+            "Residential roof replacement and new roofs",
+            "Commercial roof restoration and inspection",
+            "Roof repair and storm-damage repair as listed work",
+            "Office on S Main St in Joplin"
           ]
         },
         {
-          "heading": "What Joplin Neighbors Report",
-          "body": "Google lists Kingdom Roofing and Construction at 5.0 from 54 reviews. Here is what named customers wrote about the work.",
+          "heading": "Services You Can Open From This Site",
+          "body": "Two pages go deep. Other work we are known for stays on the list so we do not invent extra URLs.",
           "bullets": [
-            "Randy Coleman: \"After waiting on my roofer I've had for years I called Eric. He got back with me the same day not only with a phone call but an estimate. Within a week the roof was on. I now have a new roofer! The price was reasonable and the service was exceptional, including trimming back some tree that over time would have caused damage to the new roof! I recommend Eric and his company 5 stars!\"",
-            "Val Packard: \"If you're looking for an honest roofing company, I highly recommend Kingdom Roofing. Eric came out quickly to inspect everything and was professional, efficient, and incredibly knowledgeable… he wasn't looking to sell me something I didn't need and was upfront that repairs weren't necessary.\"",
-            "Juell Brandt: \"My mobile home has had a leaky roof since we got it in 2020… Kingdom Roofing came up from Joplin and gave me a very good solution & quote, much cheaper than having a second roof put on… No leaks, sound-proof!\"",
-            "Carterville First Baptist Church: \"Kingdom Roofing responded immediately to my request for a quote on my roof. Most other roofing companies wouldn't even show up… The best part, no more leaks!\""
+            "Roof replacement in Joplin, MO — new roofs, leak-stop work, and an honest look before you replace",
+            "Commercial roof restoration in Joplin, MO — inspections, leak finding, and restoration planning",
+            "Also listed: roof installation, roof inspection, roof repair, storm and wind damage repair, attic venting, and siding (no separate page in this site)"
           ]
         },
         {
-          "heading": "Call Eric When You Are Ready",
-          "body": "A company you can have faith in. Call the Google listing number. Tell us whether you need a home roof replaced or a commercial roof inspected.",
+          "heading": "Why Joplin Customers Pick Up the Phone",
+          "body": "People who hired Kingdom talk about speed, honesty, and showing up. Those are their stories. We do not turn one job into a written guarantee.",
           "bullets": [
-            "Call (417) 317-6233 (Google listing)",
-            "Residential roof replacement for Joplin homes",
-            "Commercial roof restoration and inspection"
+            "Randy Coleman got a same-day call and an estimate, then a new roof within a week — including tree trim that protected the new work",
+            "Val Packard had Eric inspect the roof and say repairs were not necessary, instead of selling unneeded work",
+            "Carterville First Baptist Church asked for a quote when other companies would not even show. The leaks stopped"
           ]
+        },
+        {
+          "heading": "What Homeowners Tell Neighbors",
+          "body": "Randy Coleman wrote: \"After waiting on my roofer I've had for years I called Eric. He got back with me the same day not only with a phone call but an estimate. Within a week the roof was on. I now have a new roofer! The price was reasonable and the service was exceptional, including trimming back some tree that over time would have caused damage to the new roof! I recommend Eric and his company 5 stars!\"",
+          "bullets": [
+            "Randy Coleman, Google review"
+          ]
+        },
+        {
+          "heading": "Honesty Before a Sale",
+          "body": "Val Packard wrote: \"If you're looking for an honest roofing company, I highly recommend Kingdom Roofing. Eric came out quickly to inspect everything and was professional, efficient, and incredibly knowledgeable… he wasn't looking to sell me something I didn't need and was upfront that repairs weren't necessary.\"",
+          "bullets": [
+            "Val Packard, Google review"
+          ]
+        },
+        {
+          "heading": "A Leaky Roof, Then Quiet",
+          "body": "Juell Brandt wrote: \"My mobile home has had a leaky roof since we got it in 2020… Kingdom Roofing came up from Joplin and gave me a very good solution & quote, much cheaper than having a second roof put on… No leaks, sound-proof!\"",
+          "bullets": [
+            "Juell Brandt, Google review"
+          ]
+        },
+        {
+          "heading": "A Church That Needed Someone to Show Up",
+          "body": "Carterville First Baptist Church wrote: \"Kingdom Roofing responded immediately to my request for a quote on my roof. Most other roofing companies wouldn't even show up… The best part, no more leaks!\"",
+          "bullets": [
+            "Carterville First Baptist Church, Google review"
+          ]
+        },
+        {
+          "heading": "People and Hours",
+          "body": "Reviews name Eric. Danielle is in the office. Hours on the listing are Open 24 hours. Call (417) 317-6233. Supporting note from Justin Anderson, quoted as written: \"Great company honest deoendable excellent work ethic and they work to please the customer would recomend kingdom roofing\"",
+          "bullets": [
+            "Eric — named by customers",
+            "Danielle — office",
+            "1421 S Main St, Joplin, MO 64801",
+            "Open 24 hours"
+          ]
+        },
+        {
+          "heading": "Ready When You Are",
+          "body": "Call (417) 317-6233 for a roof quote in Joplin. If you already know you need a new roof or a commercial inspection, use those pages. If you are not sure, call anyway and describe the leak.",
+          "bullets": [
+            "Call (417) 317-6233",
+            "Roof replacement for homes",
+            "Commercial restoration and inspection"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "question": "How do I reach Kingdom Roofing in Joplin?",
+          "answer": "Call (417) 317-6233. The shop address is 1421 S Main St, Joplin, MO 64801. Danielle is in the office. Reviews also name Eric."
+        },
+        {
+          "question": "Do you replace residential roofs?",
+          "answer": "Yes. The roof replacement page covers new roofs and leak-stop work for Joplin homes, including jobs customers described as a full new roof."
+        },
+        {
+          "question": "Do you work on commercial roofs?",
+          "answer": "Yes. The commercial page covers restoration and inspection. Kingdom has also described commercial roof asset preservation on its own Google post."
+        },
+        {
+          "question": "What are your hours?",
+          "answer": "The Google listing shows Open 24 hours. Call (417) 317-6233."
+        },
+        {
+          "question": "Who will I talk to?",
+          "answer": "Danielle is in the office. Customers name Eric in their reviews."
         }
       ]
     },
     {
       "title": "Roof Replacement Joplin MO",
       "slug": "/roof-replacement-joplin-mo",
-      "seoTitle": "Roof Replacement in Joplin MO | Kingdom Roofing",
-      "metaDescription": "Residential roof replacement in Joplin, MO. Eric inspects the job, quotes the work, and neighbors describe new roofs, honest calls, and stopped leaks.",
+      "seoTitle": "Roof Replacement Joplin MO | Kingdom Roofing",
+      "metaDescription": "Roof replacement in Joplin, MO from Kingdom Roofing and Construction. New roofs, leak-stop work, and an honest inspection. Call (417) 317-6233.",
       "hero": {
-        "eyebrow": "Residential Roof Replacement · Joplin, MO",
-        "heading": "Roof replacement for Joplin homes that need a new roof",
-        "subheading": "If your roof is leaking or worn out, you need a replacement conversation—not a commercial restoration pitch. Eric Manning inspects the work, then you decide. Call the Google listing at (417) 317-6233.",
+        "eyebrow": "Roof replacement · Joplin, MO",
+        "heading": "Roof Replacement in Joplin, MO",
+        "subheading": "When the roof still leaks, or the roofer you used for years does not call back, Kingdom Roofing and Construction will look at the job and quote a new roof. Call (417) 317-6233.",
         "primaryCta": "Call (417) 317-6233",
-        "secondaryCta": "See commercial restoration"
+        "secondaryCta": "Contact the office"
       },
       "sections": [
         {
-          "heading": "New Roof, Tree Trimmed With the Job",
-          "body": "Roof replacement in Joplin, MO is the path for a home that needs a new roof. Randy Coleman named Eric, the same-day estimate, and a roof on within a week.",
+          "heading": "New Roofs for Joplin Homes",
+          "body": "Roof replacement in Joplin, MO is the work we do when a patch will not hold. Kingdom Roofing and Construction quotes new roofs for houses and mobile homes, then puts the roof on. If an inspection shows you do not need the work, we say so. Call (417) 317-6233 and tell us where it leaks.",
           "bullets": [
-            "Randy Coleman: \"After waiting on my roofer I've had for years I called Eric. He got back with me the same day not only with a phone call but an estimate. Within a week the roof was on. I now have a new roofer! The price was reasonable and the service was exceptional, including trimming back some tree that over time would have caused damage to the new roof! I recommend Eric and his company 5 stars!\""
+            "New residential roofs",
+            "Leaky-roof replacement, including mobile homes",
+            "Tree trim with the job when it protects the new roof, as Randy Coleman described"
           ]
         },
         {
-          "heading": "An Honest Look Before Anyone Sells a Repair",
-          "body": "You want a roofer who will say when work is not needed. Val Packard wrote that after Eric inspected the roof.",
+          "heading": "When Is Replacement the Right Call?",
+          "body": "You do not need a blog lesson. You need a crew that will look at the roof you have. Customers came to Kingdom after years of leaks, after waiting on an old roofer, and after getting a quote that beat stacking a second roof on a mobile home.",
           "bullets": [
-            "Val Packard: \"If you're looking for an honest roofing company, I highly recommend Kingdom Roofing. Eric came out quickly to inspect everything and was professional, efficient, and incredibly knowledgeable… he wasn't looking to sell me something I didn't need and was upfront that repairs weren't necessary.\""
+            "Active leaks that keep coming back",
+            "A roof you already know is at the end of its life",
+            "A quote you can compare without the hard sell"
           ]
         },
         {
-          "heading": "A Leaky Mobile Home, Solved From Joplin",
-          "body": "Juell Brandt needed a better option than stacking a second roof. Kingdom Roofing came up from Joplin.",
+          "heading": "What One Homeowner Described",
+          "body": "Randy Coleman wrote: \"After waiting on my roofer I've had for years I called Eric. He got back with me the same day not only with a phone call but an estimate. Within a week the roof was on. I now have a new roofer! The price was reasonable and the service was exceptional, including trimming back some tree that over time would have caused damage to the new roof! I recommend Eric and his company 5 stars!\" That is his job, not a promise we stamp on every calendar. It is how the work went for him: same-day call, estimate, new roof within a week, trees cut back so they would not wreck the new shingles.",
           "bullets": [
-            "Juell Brandt: \"My mobile home has had a leaky roof since we got it in 2020… Kingdom Roofing came up from Joplin and gave me a very good solution & quote, much cheaper than having a second roof put on… No leaks, sound-proof!\""
+            "Randy Coleman, Google review"
           ]
         },
         {
-          "heading": "This Page Is for Homes, Not Commercial Restoration",
-          "body": "Commercial roof preservation, silicone systems, and metal restoration live on the commercial page. Stay here if you need residential replacement. Call the Google listing at (417) 317-6233.",
-          "bullets": []
+          "heading": "A Mobile Home That Finally Quit Leaking",
+          "body": "Juell Brandt wrote: \"My mobile home has had a leaky roof since we got it in 2020… Kingdom Roofing came up from Joplin and gave me a very good solution & quote, much cheaper than having a second roof put on… No leaks, sound-proof!\" Kingdom came up from Joplin, quoted a better path than a second roof, and left the home quiet and dry.",
+          "bullets": [
+            "Juell Brandt, Google review"
+          ]
+        },
+        {
+          "heading": "Inspection First, Then the Quote",
+          "body": "Replacement is not always the honest sale. Val Packard wrote: \"If you're looking for an honest roofing company, I highly recommend Kingdom Roofing. Eric came out quickly to inspect everything and was professional, efficient, and incredibly knowledgeable… he wasn't looking to sell me something I didn't need and was upfront that repairs weren't necessary.\" If we can save you a job you do not need, we will say that on the roof.",
+          "bullets": [
+            "Val Packard, Google review"
+          ]
+        },
+        {
+          "heading": "Call for a Roof Replacement Quote",
+          "body": "Call (417) 317-6233. Ask for a Joplin roof replacement look. Have the address and a short note on the leaks. Danielle is in the office. Customers often ask for Eric.",
+          "bullets": [
+            "Phone: (417) 317-6233",
+            "1421 S Main St, Joplin, MO 64801",
+            "Open 24 hours"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "question": "Do you replace roofs on mobile homes?",
+          "answer": "Juell Brandt hired Kingdom for a leaky mobile-home roof and described a Joplin crew, a quote, and no more leaks. Call (417) 317-6233 with the address and we will look at your roof."
+        },
+        {
+          "question": "What if I do not need a new roof?",
+          "answer": "Say so is part of the job. Val Packard wrote that Eric inspected the roof and was upfront that repairs were not necessary."
+        },
+        {
+          "question": "How do I start a replacement quote?",
+          "answer": "Call (417) 317-6233. Tell us the Joplin-area address and what the roof is doing. Randy Coleman described getting a same-day call and an estimate on his job."
         }
       ]
     },
     {
       "title": "Commercial Roof Restoration Joplin MO",
       "slug": "/commercial-roof-restoration-joplin-mo",
-      "seoTitle": "Commercial Roof Restoration in Joplin MO | Kingdom Roofing",
-      "metaDescription": "Commercial roof restoration and inspection in Joplin, MO. Owner-stated preservation work, leak diagnostics, and a church that reported no more leaks.",
+      "seoTitle": "Commercial Roof Restoration Joplin MO",
+      "metaDescription": "Commercial roof restoration and inspection in Joplin, MO from Kingdom Roofing and Construction. Inspect and restore before you replace. Call (417) 317-6233.",
       "hero": {
-        "eyebrow": "Commercial Roof Restoration · Joplin, MO",
-        "heading": "Restore the commercial roof you already have",
-        "subheading": "Replacement is not the only commercial option. Kingdom Roofing and Construction focuses on preservation and restoration. Call the Google listing at (417) 317-6233 for an inspection.",
+        "eyebrow": "Commercial restoration · Joplin, MO",
+        "heading": "Commercial Roof Restoration in Joplin, MO",
+        "subheading": "A leaking building roof is not always a tear-off. Kingdom Roofing and Construction inspects commercial roofs, finds leaks, and talks restoration when the roof can still be saved. Call (417) 317-6233.",
         "primaryCta": "Call (417) 317-6233",
-        "secondaryCta": "See roof replacement"
+        "secondaryCta": "Contact the office"
       },
       "sections": [
         {
-          "heading": "What the Owner Posted (First-Party)",
-          "body": "This block is a first-party Google owner post from Kingdom Roofing and Construction. It is not a customer review. Read it as the company describing its own commercial work, including silicone and metal restoration.",
+          "heading": "Commercial Roof Restoration for Joplin Buildings",
+          "body": "Commercial roof restoration in Joplin, MO is for owners who are tired of leaks and not ready to replace the whole roof on a guess. Kingdom Roofing and Construction inspects the roof, traces leaks, and plans restoration work. If the honest read is that you do not need the sale, we say that too.",
           "bullets": [
-            "Owner post: \"Most people think commercial roofing only has two options: 1. Ignore it 2. Replace it But that's not always true. At Kingdom Roofing and Construction, we focus heavily on commercial roof asset preservation and restoration… We specialize in: Commercial roof inspections, Preventative maintenance programs, Silicone roof restoration systems, Metal roof restoration, Leak diagnostics, Seam and penetration protection, Long-term roof management planning.\""
+            "Commercial roof inspections",
+            "Leak diagnostics",
+            "Restoration planning instead of ignore-it or replace-it as the only two options"
           ]
         },
         {
-          "heading": "They Showed Up. The Leaks Stopped.",
-          "body": "Carterville First Baptist Church asked for a quote. Other companies would not show. The church did not describe a full replacement beyond this text. Take the outcome as written.",
+          "heading": "Inspect and Preserve Before You Replace",
+          "body": "Most people jump from ignore it to replace it. That skip costs money. An inspection tells you whether seams, penetrations, and coatings can still protect the building. Val Packard’s inspection story is residential, and the same honesty applies when a building owner asks what the roof actually needs.",
           "bullets": [
-            "Carterville First Baptist Church: \"Kingdom Roofing responded immediately to my request for a quote on my roof. Most other roofing companies wouldn't even show up… The best part, no more leaks!\""
+            "Look at the roof you have before you buy the roof you think you need",
+            "Ask for leak tracing, not a bid that only knows tear-off"
           ]
         },
         {
-          "heading": "An Inspection That Does Not Force a Sale",
-          "body": "Val Packard is a customer review, not the owner post. Eric inspected and said repairs were not necessary.",
+          "heading": "What Kingdom Wrote on Google About Commercial Work",
+          "body": "This is the company’s own Google post from May 10, 2026 — not a customer review. Kingdom wrote: \"Most people think commercial roofing only has two options: 1. Ignore it 2. Replace it But that's not always true. At Kingdom Roofing and Construction, we focus heavily on commercial roof asset preservation and restoration… We specialize in: Commercial roof inspections, Preventative maintenance programs, Silicone roof restoration systems, Metal roof restoration, Leak diagnostics, Seam and penetration protection, Long-term roof management planning.\" Those specialties are what the company said about itself. They are not outside certifications.",
           "bullets": [
-            "Val Packard: \"If you're looking for an honest roofing company, I highly recommend Kingdom Roofing. Eric came out quickly to inspect everything and was professional, efficient, and incredibly knowledgeable… he wasn't looking to sell me something I didn't need and was upfront that repairs weren't necessary.\""
+            "Commercial roof inspections",
+            "Preventative maintenance programs",
+            "Silicone roof restoration systems (company Google post)",
+            "Metal roof restoration (company Google post)",
+            "Leak diagnostics",
+            "Seam and penetration protection",
+            "Long-term roof management planning"
           ]
         },
         {
-          "heading": "Not the Residential Replacement Page",
-          "body": "Home tear-offs, new residential roofs, and the mobile-home job live on the roof-replacement page. Use this page for commercial inspection, restoration, and leak diagnostics. Call the Google listing at (417) 317-6233.",
-          "bullets": []
+          "heading": "A Church That Could Not Get Anyone to Show",
+          "body": "Carterville First Baptist Church wrote: \"Kingdom Roofing responded immediately to my request for a quote on my roof. Most other roofing companies wouldn't even show up… The best part, no more leaks!\" Immediate quote. Other companies would not show. No more leaks. That is the commercial-adjacent proof we will stand next to.",
+          "bullets": [
+            "Carterville First Baptist Church, Google review"
+          ]
+        },
+        {
+          "heading": "Honesty on the Inspection",
+          "body": "Val Packard wrote: \"If you're looking for an honest roofing company, I highly recommend Kingdom Roofing. Eric came out quickly to inspect everything and was professional, efficient, and incredibly knowledgeable… he wasn't looking to sell me something I didn't need and was upfront that repairs weren't necessary.\" Building owners get the same rule. We would rather lose a restoration sale than sell a job the roof does not need.",
+          "bullets": [
+            "Val Packard, Google review"
+          ]
+        },
+        {
+          "heading": "Call About a Commercial Roof",
+          "body": "Call (417) 317-6233. Tell us the building address and where it leaks. Danielle is in the office. Hours on the listing are Open 24 hours.",
+          "bullets": [
+            "Phone: (417) 317-6233",
+            "1421 S Main St, Joplin, MO 64801"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "question": "Is replacement the only option for a commercial roof?",
+          "answer": "Not always. In its May 2026 Google post, Kingdom said most people think the only options are ignore it or replace it, and that the company focuses on commercial roof asset preservation and restoration. Call (417) 317-6233 for an inspection."
+        },
+        {
+          "question": "Do you inspect church or other building roofs?",
+          "answer": "Carterville First Baptist Church wrote that Kingdom responded immediately to a roof quote when other companies would not show, and the leaks stopped. Call with the building address."
+        },
+        {
+          "question": "Will you sell restoration if the roof does not need it?",
+          "answer": "Val Packard wrote that Eric inspected and was upfront that repairs were not necessary. Ask for that same honest read on a commercial roof."
         }
       ]
     },
     {
       "title": "Contact",
       "slug": "/contact",
-      "seoTitle": "Contact Kingdom Roofing and Construction | Joplin, MO",
-      "metaDescription": "Contact Kingdom Roofing and Construction at 1421 S Main St, Joplin, MO 64801. Google listing (417) 317-6233. Open 24 hours. Website also showed 417-614-3141.",
+      "seoTitle": "Contact Kingdom Roofing | Joplin, MO",
+      "metaDescription": "Contact Kingdom Roofing and Construction in Joplin, MO. Call (417) 317-6233. 1421 S Main St. Open 24 hours. Ask for the office.",
       "hero": {
         "eyebrow": "Contact · Joplin, MO",
-        "heading": "Call Kingdom Roofing and Construction in Joplin",
-        "subheading": "Call the Google listing number as the main line. We are open 24 hours. Google and the website currently show different numbers, so both are listed below.",
+        "heading": "Call Kingdom Roofing in Joplin",
+        "subheading": "Phone is the fastest way to get a roof quote. Call (417) 317-6233. Stop by 1421 S Main St, Joplin, MO 64801. Danielle is in the office.",
         "primaryCta": "Call (417) 317-6233",
-        "secondaryCta": "View the homepage"
+        "secondaryCta": "See the homepage"
       },
       "sections": [
         {
-          "heading": "Address, Hours, and Office",
-          "body": "Kingdom Roofing and Construction, Joplin Mo. 1421 S Main St, Joplin, MO 64801. Open 24 hours. The office is named Danielle. Eric Manning is the owner named in reviews.",
+          "heading": "How to Reach Us",
+          "body": "Call (417) 317-6233 for residential roof replacement or commercial roof restoration in Joplin. The office is Danielle. Customers name Eric in their reviews. The listing hours are Open 24 hours.",
           "bullets": [
-            "1421 S Main St, Joplin, MO 64801",
-            "Open 24 hours",
-            "Office: Danielle",
-            "Owner named in reviews: Eric Manning"
-          ]
-        },
-        {
-          "heading": "Two Phone Numbers on Record",
-          "body": "Google Business Profile and the owner post list (417) 317-6233. The website also showed 417-614-3141. Call buttons on this site use (417) 317-6233 as the Google listing number. The website number is listed here so you can see the conflict. It is not a second main call button.",
-          "bullets": [
-            "Google listing / owner post: (417) 317-6233 — main CTA",
-            "Also shown on the website: 417-614-3141 — recorded, not a second main CTA"
+            "Phone: (417) 317-6233",
+            "Address: 1421 S Main St, Joplin, MO 64801",
+            "Hours: Open 24 hours",
+            "Office: Danielle"
           ]
         },
         {
           "heading": "What to Have Ready",
-          "body": "A short description helps Eric and the office route the job to the right path: home replacement or commercial restoration.",
+          "body": "A short note speeds up the call. You do not need a perfect file. You need the address and what the roof is doing.",
           "bullets": [
             "Service address in Joplin",
-            "Home roof vs commercial building",
-            "Leaks, missing shingles, or a request for inspection",
-            "Best number to call you back"
+            "Home or commercial building",
+            "Where it leaks, or that you want a new roof",
+            "Photos if you already have them on your phone"
           ]
+        },
+        {
+          "heading": "After You Call",
+          "body": "Tell us whether you need a home replacement look or a commercial inspection. We will use that to send the right person. If you already know the path, the roof replacement page and the commercial restoration page spell out the work.",
+          "bullets": [
+            "Roof replacement for homes",
+            "Commercial restoration and inspection"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "question": "What number should I call?",
+          "answer": "Call (417) 317-6233."
+        },
+        {
+          "question": "Where is the office?",
+          "answer": "1421 S Main St, Joplin, MO 64801. Danielle is in the office."
+        },
+        {
+          "question": "When can I call?",
+          "answer": "The Google listing shows Open 24 hours."
         }
       ]
     }
@@ -240,11 +409,11 @@
       "Commercial roof restoration and inspection (owner-post first-party claim)"
     ],
     "differentiators": [
-      "Same-day callback with estimate (Randy Coleman review)",
-      "Week-turnaround new roof including tree trim (Randy Coleman review)",
-      "Honest inspection; will say repairs are not necessary (Val Packard review)",
-      "Owner-stated focus on commercial roof asset preservation and restoration (first-party post, not a customer claim)",
-      "Tagline: A company you can have faith in."
+      "Same-day callback with estimate",
+      "Week-turnaround new roof including tree trim",
+      "Honest inspection; will say repairs are not necessary",
+      "Owner-stated focus on commercial roof asset preservation and restoration",
+      "A company you can have faith in."
     ],
     "hours": "Open 24 hours"
   }

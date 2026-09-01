@@ -12,35 +12,32 @@ Five-route Fluid Frame demo words package. Signed architect pack is copied verba
 
 | Route | Page title | Voice |
 | --- | --- | --- |
-| `/` | Strategy Overview | Fluid Frame demo |
+| `/` | Why We Built This | Fluid Frame demo |
 | `/home` | Homepage | Business |
 | `/roof-replacement-joplin-mo` | Roof Replacement Joplin MO | Business |
 | `/commercial-roof-restoration-joplin-mo` | Commercial Roof Restoration Joplin MO | Business |
 | `/contact` | Contact | Business |
 
-Two service routes only: residential replacement vs commercial restoration. No siding, attic, gutters, or third service URL.
+Two service routes only: residential replacement vs commercial restoration. No siding, attic, gutters, or third service URL. Footer may list the full confirmed service names without linking a third route.
 
-## Phone (unresolved conflict)
+## Phone (override)
 
-Observed:
+Business pages (`/home`, both service routes, `/contact`) and header/footer chrome use one number: `(417) 317-6233`.
 
-- GBP / owner post: `(417) 317-6233`
-- Website: `417-614-3141`
-
-Customer CTAs use the Google listing number `(417) 317-6233` as the single main call path. Strategy Overview and Contact record both numbers. Do not treat this as a silent canonical.
+Do not place the website-observed alternate on those routes. Record the website number conflict only on `/` and in `WORDS-LOG.md`.
 
 ## Quotes
 
-Quote only `review-inventory.json` `reviews[].text`. Anchors in customer-facing copy:
+Quote only `review-inventory.json` `reviews[].text`. All four anchor authors appear in `copy-artifact.json`.
 
 - Randy Coleman — `/home`, `/roof-replacement-joplin-mo`
 - Val Packard — `/home`, `/roof-replacement-joplin-mo`, `/commercial-roof-restoration-joplin-mo`
-- Juell Brandt — `/home`, `/roof-replacement-joplin-mo`
+- Juell Brandt — `/home`, `/roof-replacement-joplin-mo` (no listing-tag dollar range in customer copy)
 - Carterville First Baptist Church — `/home`, `/commercial-roof-restoration-joplin-mo`
 
-Justin Anderson is supporting (optional; original spelling preserved if quoted). Do not quote `droppedEmptyReviews`. Do not mention the `$12,000–14,000` listing tag.
+Justin Anderson is supporting (optional; original spelling preserved). Do not quote `droppedEmptyReviews`. Owner post is first-party only (never a customer quote). Tagline: *A company you can have faith in.*
 
-Owner post is first-party only (never a customer quote). Tagline: *A company you can have faith in.*
+Office: Danielle is a confirmed office fact. Do not invent a job title.
 
 ## Files
 

@@ -1,57 +1,70 @@
 # Copy quality report — Kingdom Roofing and Construction
 
-**Verdict:** HUMAN_REVIEW (grade B packet, unresolved phone conflict, incomplete review retrieval). Copy is ready for PR review. Not stamped PASS.
+**Verdict:** HUMAN_REVIEW (overnight words package; no factory Node QA binary in this workspace). Self-check below.
 
-**When:** 2026-09-01 evening America/Chicago  
-**Artifact:** `copy-artifact.json` schemaVersion 1.0.0  
-**Recipe titles match artifact titles:** yes
+## Schema
 
-## Thin extraction
+- [x] copy-artifact schemaVersion 1.0.0
+- [x] businessName Kingdom Roofing and Construction, Joplin Mo.
+- [x] industry Roofing
+- [x] city Joplin / state MO
+- [x] sourceStrategyRecipeVersion 1.0.0
+- [x] five pages; titles match strategy-recipe.json
+- [x] each page: title, slug, seoTitle, metaDescription, hero (eyebrow, heading, subheading, primaryCta, secondaryCta), sections[{heading,body,bullets}]
+- [x] footer.servicesFull, footer.differentiators, footer.hours from confirmed-facts.json
+- [x] strategy-recipe schemaVersion 1.0.0
 
-Customer pages use named review text, the owner-post excerpt, NAP, hours, Eric, Danielle (office), and the tagline. Strategy Overview uses only audit defects the packet allows: thin template, phone conflict, missing dual service paths, unused 54 reviews. No invented licenses, warranties, financing, years in business, extra cities, or extra service routes.
+## Routes
 
-## Cannibalized titles
-
-| Page | seoTitle | Distinct intent |
+| Slug | Title | Voice |
 | --- | --- | --- |
-| `/` | Why We Built This Site \| Kingdom Roofing and Construction | Demo strategy |
-| `/home` | Joplin Roofing \| Kingdom Roofing and Construction | Category / brand |
-| `/roof-replacement-joplin-mo` | Roof Replacement in Joplin MO \| Kingdom Roofing | Residential replacement |
-| `/commercial-roof-restoration-joplin-mo` | Commercial Roof Restoration in Joplin MO \| Kingdom Roofing | Commercial restoration |
-| `/contact` | Contact Kingdom Roofing and Construction \| Joplin, MO | NAP / call |
+| `/` | Why We Built This | Fluid Frame |
+| `/home` | Homepage | Business |
+| `/roof-replacement-joplin-mo` | Roof Replacement Joplin MO | Business |
+| `/commercial-roof-restoration-joplin-mo` | Commercial Roof Restoration Joplin MO | Business |
+| `/contact` | Contact | Business |
 
-H1s follow the same split. Homepage does not steal the replacement or restoration keyword as its H1.
-
-## Structural dupes
-
-Service pages share a dual-CTA pattern and a closing other-path section. Proof blocks differ: Randy/Juell stay on replacement; church plus labeled owner post stay on commercial; Val is the allowed overlap (honest inspection). Homepage is the only page that carries all four anchors together.
-
-## Unused anchors
-
-| Anchor | `/` | `/home` | replacement | commercial | `/contact` |
-| --- | --- | --- | --- | --- | --- |
-| Randy Coleman | no | yes | yes | no | no |
-| Val Packard | no | yes | yes | yes | no |
-| Juell Brandt | no | yes | yes | no | no |
-| Carterville First Baptist Church | no | yes | no | yes | no |
-
-Placement matches `approvedPages`. Justin Anderson (supporting, anchor:false) is unused on purpose. Original spelling was not tidied because the quote was omitted. `droppedEmptyReviews` names are not quoted.
-
-## Instruction-leak
-
-Customer pages (`/home`, replacement, commercial, contact) do not mention Fluid Frame, the demo, the packet, or writer refuse commands. Contact states the two observed numbers in customer language. Strategy Overview is demo voice and is allowed to discuss the template, grade B, and the unresolved conflict.
-
-## FAQ about refused claims
-
-No FAQ blocks. Skipped so we would not write Q&A about the listing-tag price range, missing reviews, or unproven warranties.
+No third service route. Footer lists full confirmed services without extra URLs.
 
 ## Phone
 
-Conflict remains unresolved in `confirmed-facts.json` (verbatim signed pack). CTAs use (417) 317-6233 as the Google listing number. Strategy Overview and Contact both record 417-614-3141. Not two equal main CTAs.
+- Business page copy and CTAs: (417) 317-6233 only
+- `/home`, both services, `/contact`: no 417-614-3141
+- Conflict (website 417-614-3141 vs GBP (417) 317-6233): `/` and WORDS-LOG.md only
 
-## Other
+## Anchors in copy-artifact
 
-- Listing-tag price range not in copy-artifact.
-- Owner post quoted from `confirmed-facts.ownerPost.verbatimExcerpt`, labeled first-party.
-- Footer `servicesFull` copied from confirmed-facts, including review-tagged siding/attic venting as list items only. No third route.
-- Do not claim the listing has only five text reviews.
+| Author | Pages present |
+| --- | --- |
+| Randy Coleman | `/home`, `/roof-replacement-joplin-mo` |
+| Val Packard | `/home`, `/roof-replacement-joplin-mo`, `/commercial-roof-restoration-joplin-mo` |
+| Juell Brandt | `/home`, `/roof-replacement-joplin-mo` |
+| Carterville First Baptist Church | `/home`, `/commercial-roof-restoration-joplin-mo` |
+| Justin Anderson | `/home` supporting; original spelling (`deoendable`, `recomend`) |
+
+Quotes are inventory `reviews[].text`. No droppedEmptyReviews. No $12k / $14k in customer pages. Owner post labeled as company Google post, not a customer quote.
+
+## Claims
+
+- No invented licenses, warranties, years in business, free estimates, or SLAs
+- Same-day callback / week roof attributed to Randy Coleman, not a guarantee
+- Silicone / metal restoration labeled as May 10, 2026 Google post
+- Danielle = office only
+- Does not claim only five text reviews; strategy page states ~47 text / 54 listing / packet subset
+- Tagline used: A company you can have faith in.
+- Hours: Open 24 hours
+- Address: 1421 S Main St, Joplin, MO 64801
+
+## Craft
+
+- Dual CTA on every hero
+- AP-style section heads
+- Customer pages: no factory instruction leak
+- FAQs skip refused-claim topics (warranty, license, five-review myth, silent canonical)
+- Voice refs TEK / Healing Hearts / Ozarks named on `/` as voice, not as a three-page mandate
+
+## Not done
+
+- No deploy
+- No ff-2-demos
+- No existing-PR survey
