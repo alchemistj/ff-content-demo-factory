@@ -65,3 +65,6 @@ TEK / Healing Hearts / Ozarks for sentence craft, not page count. Grade 5–6. A
 - copy-artifact.json schemaVersion 1.0.0, sourceStrategyRecipeVersion 1.0.0
 - industry HVAC; city Joplin; state MO
 - Page titles match between recipe and artifact
+
+## Verbatim count
+Copy pages were locked from the Architect-signed 60 texts. After cleanup the pack file holds 117 valid customer texts. Pages were not expanded to pad. julia ansari still unused.
