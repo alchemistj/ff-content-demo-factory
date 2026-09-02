@@ -1,0 +1,502 @@
+{
+  "schemaVersion": "2.0.0",
+  "kind": "factory-review-inventory",
+  "slug": "kingdom-roofing-and-construction",
+  "businessName": "Kingdom Roofing and Construction, Joplin Mo.",
+  "identity": {
+    "placeId": null,
+    "googleMapsUrl": null,
+    "businessName": "Kingdom Roofing and Construction, Joplin Mo."
+  },
+  "gbpResolution": {
+    "status": "resolved",
+    "placeId": null,
+    "reason": "Architect overnight packet matched the GBP listing by name, address, phone, and review authors. Place ID was not supplied in the packet.",
+    "candidateClass": "gbp-matched"
+  },
+  "retrieval": {
+    "status": "incomplete",
+    "completeness": "partial",
+    "proceedsVia": "incomplete-retrieval-override",
+    "platform": "google",
+    "reviewsOrigin": null,
+    "listingReviewCount": 54,
+    "retrievedCount": 5,
+    "listingTextReviewEstimate": 47,
+    "sufficiencyThreshold": 25,
+    "maxRequested": 50,
+    "sourceStage": "architect-overnight-packet",
+    "attemptedAt": "2026-09-01T22:37:00.000Z",
+    "readAt": "2026-09-01T22:37:00.000Z",
+    "failureReason": "Overnight packet includes only the architect-selected text reviews plus named rating-only records. ~47 text reviews exist on the listing; remaining text was not retrieved and must not be invented.",
+    "emptyTextDropped": 8,
+    "emptyTextPolicy": "Empty-text review records are dropped from reviews[] and recorded in droppedEmptyReviews. They never become customer-facing quotations. Listing totals still use the GBP-reported count."
+  },
+  "noGbpPath": {
+    "eligible": false,
+    "candidateClass": null,
+    "reason": null,
+    "authority": null
+  },
+  "platforms": [
+    {
+      "platform": "google",
+      "rating": 5.0,
+      "listingReviewCount": 54,
+      "retrievedCount": 5,
+      "reviewsOrigin": null,
+      "reviewsDistribution": null,
+      "textRetrieved": true,
+      "textRead": true,
+      "readProof": {
+        "kind": "architect-overnight-packet",
+        "readAt": "2026-09-01T22:37:00.000Z",
+        "note": "Architect transcribed the listed verbatim reviews and rating-only names from GBP. Template website was not used as a review source."
+      }
+    }
+  ],
+  "ratingDistribution": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 1,
+    "5": 4,
+    "unrated": 0
+  },
+  "listingRatingDistribution": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 0,
+    "unrated": 0
+  },
+  "divergence": {
+    "flagged": false,
+    "threshold": 0.8,
+    "spread": 0,
+    "platforms": [
+      {
+        "platform": "google",
+        "rating": 5.0,
+        "listingReviewCount": 54
+      }
+    ],
+    "lowerRatedPlatform": null,
+    "lowerRatedTextRetrieved": null,
+    "lowerRatedTextRead": null,
+    "exception": null
+  },
+  "overrides": [
+    {
+      "kind": "incomplete-retrieval-override",
+      "reason": "Joplin overnight system test. Architect signed a B-grade packet: 54 listing reviews, five verbatim text reviews (four anchor-grade with specific job + outcome), eight named rating-only records. Remaining ~42 text reviews were not in the packet. Words may start from this inventory only and must not invent the missing reviews.",
+      "authority": "FF Demos Architect — Joplin overnight Kingdom sign-off 2026-09-01"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "kingdom-roofing-and-construction:google:c27da51aaa08",
+      "platform": "google",
+      "source": "gbp-architect-overnight-packet",
+      "author": "Randy Coleman",
+      "rating": 5,
+      "date": "4 months ago",
+      "text": "After waiting on my roofer I've had for years I called Eric. He got back with me the same day not only with a phone call but an estimate. Within a week the roof was on. I now have a new roofer! The price was reasonable and the service was exceptional, including trimming back some tree that over time would have caused damage to the new roof! I recommend Eric and his company 5 stars!",
+      "wordCount": 75,
+      "preflag": {
+        "meetsWordFloor": true,
+        "wordCount": 75,
+        "floor": 15,
+        "floorStatus": "proposed-15-issue-148-non-mold"
+      },
+      "heuristicReferent": {
+        "hasConcreteReferent": true,
+        "rationale": "Heuristic signal from described-action, described-sequence, described-outcome, named-team-member",
+        "method": "heuristic-v1",
+        "authoritative": false,
+        "signals": [
+          "described-action",
+          "described-sequence",
+          "described-outcome",
+          "named-team-member"
+        ]
+      },
+      "heuristicGrade": "anchor",
+      "referentJudgment": {
+        "hasConcreteReferent": true,
+        "rationale": "Specific residential roof replacement: same-day call plus estimate, new roof installed within a week, tree trimmed with the job, reasonable price. Names Eric. Concrete job plus outcome.",
+        "method": "model",
+        "model": "cursor-grok-4.6-high",
+        "signals": [
+          "described-action",
+          "described-sequence",
+          "described-outcome",
+          "named-team-member"
+        ],
+        "judgedAt": "2026-09-01T22:37:00.000Z",
+        "stage": "prescription",
+        "runId": "joplin-overnight-kingdom-architect-signoff",
+        "actor": "FF Demos Architect",
+        "authoritative": true
+      },
+      "grade": "anchor",
+      "verificationState": "model-classified",
+      "authoritative": true,
+      "copyQuoteAllowed": true,
+      "themes": [
+        "same-day-estimate",
+        "week-turnaround",
+        "new-roof",
+        "tree-trim",
+        "reasonable-price",
+        "eric"
+      ],
+      "approvedPages": [
+        "/home",
+        "/roof-replacement-joplin-mo"
+      ]
+    },
+    {
+      "id": "kingdom-roofing-and-construction:google:a0c7bc19632b",
+      "platform": "google",
+      "source": "gbp-architect-overnight-packet",
+      "author": "Val Packard",
+      "rating": 5,
+      "date": "a month ago",
+      "text": "If you're looking for an honest roofing company, I highly recommend Kingdom Roofing. Eric came out quickly to inspect everything and was professional, efficient, and incredibly knowledgeable… he wasn't looking to sell me something I didn't need and was upfront that repairs weren't necessary.",
+      "wordCount": 44,
+      "preflag": {
+        "meetsWordFloor": true,
+        "wordCount": 44,
+        "floor": 15,
+        "floorStatus": "proposed-15-issue-148-non-mold"
+      },
+      "heuristicReferent": {
+        "hasConcreteReferent": true,
+        "rationale": "Heuristic signal from described-action, described-outcome, named-team-member",
+        "method": "heuristic-v1",
+        "authoritative": false,
+        "signals": [
+          "described-action",
+          "described-outcome",
+          "named-team-member"
+        ]
+      },
+      "heuristicGrade": "anchor",
+      "referentJudgment": {
+        "hasConcreteReferent": true,
+        "rationale": "Named inspection visit by Eric with a concrete outcome: repairs were not necessary and he declined to sell unneeded work.",
+        "method": "model",
+        "model": "cursor-grok-4.6-high",
+        "signals": [
+          "described-action",
+          "described-outcome",
+          "named-team-member"
+        ],
+        "judgedAt": "2026-09-01T22:37:00.000Z",
+        "stage": "prescription",
+        "runId": "joplin-overnight-kingdom-architect-signoff",
+        "actor": "FF Demos Architect",
+        "authoritative": true
+      },
+      "grade": "anchor",
+      "verificationState": "model-classified",
+      "authoritative": true,
+      "copyQuoteAllowed": true,
+      "themes": [
+        "honest-inspection",
+        "no-upsell",
+        "eric",
+        "quick-inspect"
+      ],
+      "approvedPages": [
+        "/home",
+        "/roof-replacement-joplin-mo",
+        "/commercial-roof-restoration-joplin-mo"
+      ]
+    },
+    {
+      "id": "kingdom-roofing-and-construction:google:6da85727b967",
+      "platform": "google",
+      "source": "gbp-architect-overnight-packet",
+      "author": "Juell Brandt",
+      "rating": 5,
+      "date": "5 months ago",
+      "text": "My mobile home has had a leaky roof since we got it in 2020… Kingdom Roofing came up from Joplin and gave me a very good solution & quote, much cheaper than having a second roof put on… No leaks, sound-proof!",
+      "wordCount": 41,
+      "preflag": {
+        "meetsWordFloor": true,
+        "wordCount": 41,
+        "floor": 15,
+        "floorStatus": "proposed-15-issue-148-non-mold"
+      },
+      "heuristicReferent": {
+        "hasConcreteReferent": true,
+        "rationale": "Heuristic signal from described-action, described-outcome",
+        "method": "heuristic-v1",
+        "authoritative": false,
+        "signals": [
+          "described-action",
+          "described-outcome"
+        ]
+      },
+      "heuristicGrade": "anchor",
+      "referentJudgment": {
+        "hasConcreteReferent": true,
+        "rationale": "Specific mobile-home leak since 2020; Joplin crew quoted a cheaper alternative to a second roof in the $12,000–14,000 range noted on the listing chip; outcome is no leaks and sound-proof.",
+        "method": "model",
+        "model": "cursor-grok-4.6-high",
+        "signals": [
+          "described-action",
+          "described-outcome"
+        ],
+        "judgedAt": "2026-09-01T22:37:00.000Z",
+        "stage": "prescription",
+        "runId": "joplin-overnight-kingdom-architect-signoff",
+        "actor": "FF Demos Architect",
+        "authoritative": true
+      },
+      "grade": "anchor",
+      "verificationState": "model-classified",
+      "authoritative": true,
+      "copyQuoteAllowed": true,
+      "themes": [
+        "mobile-home-roof",
+        "leak-fix",
+        "price-range-12k-14k",
+        "came-from-joplin"
+      ],
+      "approvedPages": [
+        "/home",
+        "/roof-replacement-joplin-mo"
+      ],
+      "listingNotes": "GBP listing also tagged this review with a mobile-home roof quote of $12,000–14,000. That range is a listing tag, not additional review text."
+    },
+    {
+      "id": "kingdom-roofing-and-construction:google:4d7ee5478857",
+      "platform": "google",
+      "source": "gbp-architect-overnight-packet",
+      "author": "Carterville First Baptist Church",
+      "rating": 5,
+      "date": "4 years ago",
+      "text": "Kingdom Roofing responded immediately to my request for a quote on my roof. Most other roofing companies wouldn't even show up… The best part, no more leaks!",
+      "wordCount": 27,
+      "preflag": {
+        "meetsWordFloor": true,
+        "wordCount": 27,
+        "floor": 15,
+        "floorStatus": "proposed-15-issue-148-non-mold"
+      },
+      "heuristicReferent": {
+        "hasConcreteReferent": true,
+        "rationale": "Heuristic signal from described-action, described-sequence, described-outcome",
+        "method": "heuristic-v1",
+        "authoritative": false,
+        "signals": [
+          "described-action",
+          "described-sequence",
+          "described-outcome"
+        ]
+      },
+      "heuristicGrade": "anchor",
+      "referentJudgment": {
+        "hasConcreteReferent": true,
+        "rationale": "Church (commercial-adjacent) quote request with immediate response and a leak-stop outcome after other companies would not show.",
+        "method": "model",
+        "model": "cursor-grok-4.6-high",
+        "signals": [
+          "described-action",
+          "described-sequence",
+          "described-outcome"
+        ],
+        "judgedAt": "2026-09-01T22:37:00.000Z",
+        "stage": "prescription",
+        "runId": "joplin-overnight-kingdom-architect-signoff",
+        "actor": "FF Demos Architect",
+        "authoritative": true
+      },
+      "grade": "anchor",
+      "verificationState": "model-classified",
+      "authoritative": true,
+      "copyQuoteAllowed": true,
+      "themes": [
+        "immediate-quote",
+        "church",
+        "no-more-leaks",
+        "showed-up"
+      ],
+      "approvedPages": [
+        "/home",
+        "/commercial-roof-restoration-joplin-mo"
+      ]
+    },
+    {
+      "id": "kingdom-roofing-and-construction:google:71396863d86e",
+      "platform": "google",
+      "source": "gbp-architect-overnight-packet",
+      "author": "Justin Anderson",
+      "rating": 4,
+      "date": "6 years ago",
+      "text": "Great company honest deoendable excellent work ethic and they work to please the customer would recomend kingdom roofing",
+      "wordCount": 18,
+      "preflag": {
+        "meetsWordFloor": true,
+        "wordCount": 18,
+        "floor": 15,
+        "floorStatus": "proposed-15-issue-148-non-mold"
+      },
+      "heuristicReferent": {
+        "hasConcreteReferent": false,
+        "rationale": "No described action, sequence, or outcome.",
+        "method": "heuristic-v1",
+        "authoritative": false,
+        "signals": []
+      },
+      "heuristicGrade": "supporting",
+      "referentJudgment": {
+        "hasConcreteReferent": false,
+        "rationale": "Generic praise with no described job, sequence, or outcome. Supporting only. Preserve original spelling; do not tidy into a testimonial.",
+        "method": "model",
+        "model": "cursor-grok-4.6-high",
+        "signals": [],
+        "judgedAt": "2026-09-01T22:37:00.000Z",
+        "stage": "prescription",
+        "runId": "joplin-overnight-kingdom-architect-signoff",
+        "actor": "FF Demos Architect",
+        "authoritative": true
+      },
+      "grade": "supporting",
+      "verificationState": "model-classified",
+      "authoritative": false,
+      "copyQuoteAllowed": true,
+      "themes": [
+        "honest",
+        "work-ethic"
+      ]
+    }
+  ],
+  "droppedEmptyReviews": [
+    {
+      "id": "kingdom-roofing-and-construction:google:0ef697dc9fce",
+      "platform": "google",
+      "author": "Dustin Hall",
+      "rating": 5,
+      "date": "6 years ago",
+      "reason": "empty-text",
+      "note": "Rating-only GBP review. Do not quote. Do not invent text."
+    },
+    {
+      "id": "kingdom-roofing-and-construction:google:46cc8261c43c",
+      "platform": "google",
+      "author": "Peggie Krider",
+      "rating": 5,
+      "date": "2 months ago",
+      "reason": "empty-text",
+      "note": "Rating-only GBP review. Do not quote. Do not invent text."
+    },
+    {
+      "id": "kingdom-roofing-and-construction:google:3cb4c55689b1",
+      "platform": "google",
+      "author": "Stephanie Grimes",
+      "rating": 5,
+      "date": "5 years ago",
+      "reason": "empty-text",
+      "note": "Rating-only GBP review. Do not quote. Do not invent text."
+    },
+    {
+      "id": "kingdom-roofing-and-construction:google:da4563dee22b",
+      "platform": "google",
+      "author": "Donnie",
+      "rating": 5,
+      "date": "11 months ago",
+      "reason": "empty-text",
+      "note": "Rating-only GBP review. Do not quote. Do not invent text."
+    },
+    {
+      "id": "kingdom-roofing-and-construction:google:9481b16499b9",
+      "platform": "google",
+      "author": "Brian Williams",
+      "rating": 5,
+      "date": "4 years ago",
+      "reason": "empty-text",
+      "note": "Rating-only GBP review. Do not quote. Do not invent text."
+    },
+    {
+      "id": "kingdom-roofing-and-construction:google:4787308ad8c2",
+      "platform": "google",
+      "author": "Dalton Barwick",
+      "rating": 5,
+      "date": "4 years ago",
+      "reason": "empty-text",
+      "note": "Rating-only GBP review. Do not quote. Do not invent text."
+    },
+    {
+      "id": "kingdom-roofing-and-construction:google:7ffa961a60dc",
+      "platform": "google",
+      "author": "Will Skucius",
+      "rating": 5,
+      "date": "5 years ago",
+      "reason": "empty-text",
+      "note": "Rating-only GBP review. Do not quote. Do not invent text."
+    },
+    {
+      "id": "kingdom-roofing-and-construction:google:a07dbe46dc3c",
+      "platform": "google",
+      "author": "Sands Fencing",
+      "rating": 5,
+      "date": "5 years ago",
+      "reason": "empty-text",
+      "note": "Rating-only GBP review. Do not quote. Do not invent text."
+    }
+  ],
+  "chips": [
+    "roof color",
+    "timely estimate",
+    "thorough inspection",
+    "estimate process",
+    "siding repair",
+    "quick quote",
+    "immediate response",
+    "reasonable pricing",
+    "yard cleanup",
+    "quick job"
+  ],
+  "reviewTaggedServices": [
+    "Roof installation",
+    "Roof inspection",
+    "Roof repair",
+    "Roof damage repair",
+    "Roof repair for storm & wind damage",
+    "Attic venting",
+    "siding"
+  ],
+  "peopleNamedInReviews": [
+    {
+      "name": "Eric",
+      "alsoSeenAs": "Eric Manning",
+      "role": "owner/operator named in reviews"
+    },
+    {
+      "name": "Danielle",
+      "role": "office"
+    }
+  ],
+  "classification": {
+    "wordCountFloor": 15,
+    "wordCountFloorStatus": "proposed-15-issue-148-non-mold",
+    "adoption": "model-judgment-required-issue-148-non-mold",
+    "anchorCount": 4,
+    "supportingCount": 1,
+    "pendingModelJudgmentCount": 0,
+    "method": "deterministic-preflag+authoritative-model-referent"
+  },
+  "rules": [
+    "Quote only reviews[].text verbatim or as a faithful excerpt.",
+    "Do not quote droppedEmptyReviews.",
+    "Do not invent additional testimonials.",
+    "Justin Anderson text is supporting only; keep original spelling.",
+    "Juell Brandt $12,000–14,000 is a listing tag on that review, not extra quote text."
+  ],
+  "migratedFrom": null
+}

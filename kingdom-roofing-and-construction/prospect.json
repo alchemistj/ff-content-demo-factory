@@ -1,0 +1,41 @@
+{
+  "businessName": "Kingdom Roofing and Construction, Joplin Mo.",
+  "slug": "kingdom-roofing-and-construction",
+  "website": "http://kingdomroofingjoplin.com/",
+  "websiteQuality": "thin-template-not-copy-source",
+  "phone": "(417) 317-6233",
+  "phoneTel": "tel:+14173176233",
+  "phoneObservedAlternate": "417-614-3141",
+  "phoneConflict": true,
+  "email": null,
+  "address": "1421 S Main St, Joplin, MO 64801",
+  "city": "Joplin",
+  "state": "MO",
+  "postalCode": "64801",
+  "categories": [
+    "Roofing contractor"
+  ],
+  "category": "Roofing contractor",
+  "market": "Joplin, MO",
+  "rating": 5.0,
+  "reviewCount": 54,
+  "reviewTextApprox": 47,
+  "hours": "Open 24 hours",
+  "placeId": null,
+  "whyThisProspect": "Joplin overnight roofing prospect. GBP is live with 54 reviews (5.0). Current site is a thin template and is not a copy source. Distinct from the HVAC and exterior-remodel overnight picks.",
+  "evidenceGrade": "B",
+  "people": {
+    "ownerOperatorNamedInReviews": "Eric (Manning)",
+    "office": "Danielle"
+  },
+  "tagline": "A company you can have faith in.",
+  "approvedRoutes": [
+    "/",
+    "/home",
+    "/roof-replacement-joplin-mo",
+    "/commercial-roof-restoration-joplin-mo",
+    "/contact"
+  ],
+  "contentRepo": "alchemistj/ff-content-demo-factory",
+  "deploy": false
+}

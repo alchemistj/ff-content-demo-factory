@@ -1,0 +1,116 @@
+{
+  "schemaVersion": "1.0.0",
+  "slug": "kingdom-roofing-and-construction",
+  "voiceReferences": [
+    "TEK",
+    "Healing Hearts",
+    "Ozarks"
+  ],
+  "voiceNote": "Use those three for voice and evidence density, not page count. Kingdom ships two service routes.",
+  "phoneChrome": "(417) 317-6233",
+  "intendedStructure": {
+    "Why We Built This": [
+      "Hero (Fluid Frame voice, dual CTA into /home)",
+      "What we found (thin template, not a copy source)",
+      "Phone conflict (website alternate recorded here only)",
+      "Two routes, not three",
+      "Evidence and the review subset",
+      "What this demo does not claim",
+      "Final CTA"
+    ],
+    "Homepage": [
+      "Hero (Joplin roofing + tagline + dual CTA)",
+      "Direct opening (who, what, where)",
+      "Services (two linked routes; other confirmed names unlinked)",
+      "Why people call (review-backed, not guarantees)",
+      "What homeowners and buildings tell us (distributed quotes)",
+      "People and hours",
+      "FAQ",
+      "Final CTA"
+    ],
+    "Roof Replacement Joplin MO": [
+      "Hero",
+      "Opening paragraph with primary keyword",
+      "When a new roof is the job",
+      "What customers describe about the work",
+      "Honest inspection before you replace",
+      "FAQ",
+      "Final CTA"
+    ],
+    "Commercial Roof Restoration Joplin MO": [
+      "Hero",
+      "Opening paragraph with primary keyword",
+      "Inspect and preserve before you replace",
+      "What Kingdom said about commercial work (labeled Google post)",
+      "A building that needed someone to show up",
+      "FAQ",
+      "Final CTA"
+    ],
+    "Contact": [
+      "Hero",
+      "How to reach us",
+      "What to have ready",
+      "FAQ",
+      "Final CTA"
+    ]
+  },
+  "sketchDepartures": [
+    {
+      "page": "Why We Built This",
+      "departure": "No customer FAQ block.",
+      "reason": "Strategy page answers factory/demo questions in body sections; skip FAQs that restate refused claims."
+    },
+    {
+      "page": "Homepage",
+      "departure": "Four anchor quotes plus optional Justin Anderson, more than the usual two-review homepage target.",
+      "reason": "Architect required all four anchors in the artifact; homepage is the only route on every approvedPages list."
+    },
+    {
+      "page": "Roof Replacement Joplin MO",
+      "departure": "No numbered 12-step install process module.",
+      "reason": "Packet has job outcomes, not a documented install SOP. Inventing process would leak instruction and fake procedure."
+    },
+    {
+      "page": "Commercial Roof Restoration Joplin MO",
+      "departure": "Owner-post specialties are a labeled first-party section, not a reviews section and not a certifications grid.",
+      "reason": "Copy rule: silicone/metal restoration only as the company’s own Google post, never as independent proof."
+    },
+    {
+      "page": "Contact",
+      "departure": "No email, map embed claim, or form-success state.",
+      "reason": "Email is null. Do not invent a form backend. Phone is the path."
+    }
+  ],
+  "anchorEvidence": {
+    "Why We Built This": [
+      "current-site-audit.json thin-template flags",
+      "confirmed-facts.json phoneConflict and prohibitedClaims",
+      "review-inventory.json retrieval.listingTextReviewEstimate ~47, retrievedCount 5",
+      "architectApprovedServicePages (two routes)"
+    ],
+    "Homepage": [
+      "Randy Coleman reviews[].text",
+      "Val Packard reviews[].text",
+      "Juell Brandt reviews[].text",
+      "Carterville First Baptist Church reviews[].text",
+      "Justin Anderson reviews[].text (supporting, original spelling)",
+      "tagline, address, hours, Eric, Danielle office"
+    ],
+    "Roof Replacement Joplin MO": [
+      "Randy Coleman reviews[].text",
+      "Val Packard reviews[].text",
+      "Juell Brandt reviews[].text"
+    ],
+    "Commercial Roof Restoration Joplin MO": [
+      "Val Packard reviews[].text",
+      "Carterville First Baptist Church reviews[].text",
+      "ownerPost.verbatimExcerpt (first-party, labeled)"
+    ],
+    "Contact": [
+      "phone (417) 317-6233",
+      "address 1421 S Main St, Joplin, MO 64801",
+      "hours Open 24 hours",
+      "Danielle office, Eric named in reviews"
+    ]
+  }
+}
