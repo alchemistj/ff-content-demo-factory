@@ -1,0 +1,400 @@
+{
+  "schemaVersion": "1.0.0",
+  "businessName": "Barone's Heat & Air LLC",
+  "industry": "HVAC",
+  "city": "Joplin",
+  "state": "MO",
+  "sourceStrategyRecipeVersion": "1.0.0",
+  "pages": [
+    {
+      "title": "Why We Built This",
+      "slug": "/",
+      "seoTitle": "Why We Built This | Barone's Heat & Air Joplin",
+      "metaDescription": "Why Fluid Frame built a Joplin heat and air mockup for Barone's Heat & Air LLC \u2014 a 500 website, a strong Google listing, and two service paths people already hired.",
+      "hero": {
+        "eyebrow": "Fluid Frame Marketing \u00b7 Joplin HVAC",
+        "heading": "Barone's listing is strong. The website is down.",
+        "subheading": "Barone's Heat & Air LLC shows 4.9 from 124 Google reviews. The site at barone-heat-air.com returned HTTP 500 on our capture, so neighbors never saw those stories. This mockup gives the shop a homepage, two service paths, and the Google phone number.",
+        "primaryCta": "View the homepage",
+        "secondaryCta": "See AC repair"
+      },
+      "sections": [
+        {
+          "heading": "What We Found",
+          "body": "Barone's Heat & Air LLC is Brad Barone's shop at 1709 S Joplin Ave, Joplin, MO 64804. Google lists (417) 529-0227. Hours on the listing are Tuesday through Friday 8 AM\u20136 PM, Saturday 8 AM\u201312 PM, and Sunday closed. Labor Day Monday was shown closed. The current website did not load (HTTP 500), so it is not where this copy came from.",
+          "bullets": [
+            "Current site: down with HTTP 500",
+            "Google listing: 4.9 from 124 reviews",
+            "Phone on this mockup: (417) 529-0227 \u2014 the listing number"
+          ]
+        },
+        {
+          "heading": "Two Jobs People Already Hired",
+          "body": "Customers wrote about two different kinds of work, so this mockup has two service pages. One is same-day diagnosis and AC or heat-pump repair. The other is a new unit, with the old unit taken away, including careful work in old houses and attics.",
+          "bullets": [
+            "/home \u2014 Brad, the Joplin shop, both paths, call (417) 529-0227",
+            "/ac-repair-joplin-mo \u2014 diagnosis and repair",
+            "/hvac-installation-joplin-mo \u2014 new unit and haul-away",
+            "/contact \u2014 address, hours, Brad / office, same phone"
+          ]
+        },
+        {
+          "heading": "Reviews We Could Quote",
+          "body": "The listing reports 124 reviews, about 117 with text. We captured 60 of those write-ups. This mockup quotes from that set. We did not invent the missing reviews. Same-day visits, explained options, no upsell, haul-away, and a window unit overnight stay next to the people who said them. They are not footer slogans.",
+          "bullets": [
+            "124 reviews on the listing",
+            "About 117 with text",
+            "60 texts captured and available to quote"
+          ]
+        },
+        {
+          "heading": "Service Towns Brad Named",
+          "body": "Brad posted on Google: \"Barone's Heat and Air For all your Heating & cooling needs in Joplin, Webb City, Carl Junction.\" That is the shop speaking, not a customer review. This mockup uses those three towns as he labeled them.",
+          "bullets": [
+            "Joplin",
+            "Webb City",
+            "Carl Junction"
+          ]
+        },
+        {
+          "heading": "Ready to Look Around",
+          "body": "Open the homepage to hear the shop in its own voice. Call (417) 529-0227 if you are hiring heat and air help in Joplin.",
+          "bullets": [
+            "Homepage for the shop",
+            "AC repair for a unit that stopped",
+            "HVAC installation for a new system"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Homepage",
+      "slug": "/home",
+      "seoTitle": "Heat and Air in Joplin, MO | Barone's Heat & Air",
+      "metaDescription": "Barone's Heat & Air LLC serves Joplin with AC repair and HVAC installation from Brad's shop at 1709 S Joplin Ave.",
+      "hero": {
+        "eyebrow": "Joplin, MO Heat & Air",
+        "heading": "Heat and Air Help in Joplin",
+        "subheading": "Barone's Heat & Air LLC is Brad Barone's shop on S Joplin Ave. Call (417) 529-0227 when your AC stops or you need a new unit. We will tell you what we see and what you can do next.",
+        "primaryCta": "Call (417) 529-0227",
+        "secondaryCta": "See AC repair"
+      },
+      "sections": [
+        {
+          "heading": "A Joplin Shop You Can Call",
+          "body": "You are calling a local heat and air shop, not a call center. Brad Barone owns Barone's Heat & Air LLC at 1709 S Joplin Ave, Joplin, MO 64804. Hours on our Google listing are Tuesday through Friday 8 AM\u20136 PM, Saturday 8 AM\u201312 PM, and Sunday closed. Call (417) 529-0227.",
+          "bullets": [
+            "Owner: Brad Barone",
+            "1709 S Joplin Ave, Joplin, MO 64804",
+            "Tue\u2013Fri 8 AM\u20136 PM; Sat 8 AM\u201312 PM; Sun closed",
+            "Phone: (417) 529-0227"
+          ]
+        },
+        {
+          "heading": "Two Paths From This Site",
+          "body": "Most people who find us need one of two things. Your AC or heat pump is down and you want it diagnosed and repaired. Or the old system is done and you want a new unit put in.",
+          "bullets": [
+            "AC repair in Joplin, MO \u2014 diagnosis and repair when cooling or a heat pump fails",
+            "HVAC installation in Joplin, MO \u2014 a new unit, and taking the old one away",
+            "Also the kind of work people mention: heat pump service and furnace check"
+          ]
+        },
+        {
+          "heading": "Towns Brad Named on Google",
+          "body": "Brad posted: \"Barone's Heat and Air For all your Heating & cooling needs in Joplin, Webb City, Carl Junction.\" If you live in one of those towns, call (417) 529-0227 and tell us what stopped working.",
+          "bullets": [
+            "Joplin",
+            "Webb City",
+            "Carl Junction"
+          ]
+        },
+        {
+          "heading": "Same Day When Jamie Called",
+          "body": "Jamie Atteberry wrote: \"Brad and his crew did a great job.  Came right out the same day and had my AC up and running in no time. He explained everything to me as to what was wrong and gave me options.  They were experienced and very thorough.  I'll be calling Barone's with any other heat and air needs!\"",
+          "bullets": [
+            "Jamie Atteberry, Google review"
+          ]
+        },
+        {
+          "heading": "Brad and Richard on a New System",
+          "body": "Bill Hancock wrote: \"Brad and Richard were outstanding\u2014professional, punctual, and incredibly hardworking. Brad clearly explained the installation process and let me know it would take a couple of days due to the challenges of working in my older home's closet furnace and water heater setup. They went above and beyond to ensure everything was installed properly and working perfectly, and even removed my heavy window unit for me. I couldn't be happier with my new HVAC system and will definitely call Barone for any future HVAC needs. Highly recommended!\"",
+          "bullets": [
+            "Bill Hancock, Google review"
+          ]
+        },
+        {
+          "heading": "Neighbors Who Keep Calling",
+          "body": "CRO NBK wrote: \"Brad\u2019s prompt response and top notch service is second to none!! His clear communication and expertise reassured me that he knows what he\u2019s doing. His staff communicated what they were doing as well and held themselves with the upmost professionalism. Prices are fair and the follow up is appreciated. Thank you!\" Russell Webb wrote: \"We trust our comfort to Brad and team. Quality work.\"",
+          "bullets": [
+            "CRO NBK, Google review",
+            "Russell Webb, Google review"
+          ]
+        },
+        {
+          "heading": "Ready When You Are",
+          "body": "Call (417) 529-0227. Tell us if you need repair or a new unit. We will meet you at the house and walk through what we find.",
+          "bullets": [
+            "Call (417) 529-0227",
+            "Or open AC repair or HVAC installation"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "question": "Who owns the shop?",
+          "answer": "Brad Barone. Customers also name Richard on install jobs."
+        },
+        {
+          "question": "Where are you?",
+          "answer": "1709 S Joplin Ave, Joplin, MO 64804. Call (417) 529-0227."
+        },
+        {
+          "question": "What are your hours?",
+          "answer": "Tuesday through Friday 8 AM\u20136 PM, Saturday 8 AM\u201312 PM, Sunday closed."
+        }
+      ]
+    },
+    {
+      "title": "AC Repair Joplin MO",
+      "slug": "/ac-repair-joplin-mo",
+      "seoTitle": "AC Repair in Joplin, MO | Barone's Heat & Air",
+      "metaDescription": "Need AC repair in Joplin, MO? Barone's Heat & Air diagnoses the problem and talks through options from the S Joplin Ave shop.",
+      "hero": {
+        "eyebrow": "AC Repair \u00b7 Joplin, MO",
+        "heading": "AC Repair in Joplin When the House Gets Hot",
+        "subheading": "Call (417) 529-0227. Brad and the crew diagnose what failed, explain your options, and get cooling back on. People who hired us talk about same-day visits \u2014 that is their story, not a slogan in the footer.",
+        "primaryCta": "Call (417) 529-0227",
+        "secondaryCta": "See installation"
+      },
+      "sections": [
+        {
+          "heading": "AC Repair in Joplin, MO",
+          "body": "When your AC repair in Joplin, MO cannot wait, you want someone who answers and looks at the unit. Barone's Heat & Air LLC comes to the house, finds the problem, and tells you what it will take to run again. Call (417) 529-0227.",
+          "bullets": [
+            "Diagnosis before you spend on parts",
+            "Heat pump service as well as central AC",
+            "One number: (417) 529-0227"
+          ]
+        },
+        {
+          "heading": "Jamie Got Same-Day Help",
+          "body": "Jamie Atteberry wrote: \"Brad and his crew did a great job.  Came right out the same day and had my AC up and running in no time. He explained everything to me as to what was wrong and gave me options.  They were experienced and very thorough.  I'll be calling Barone's with any other heat and air needs!\"",
+          "bullets": [
+            "Jamie Atteberry, Google review"
+          ]
+        },
+        {
+          "heading": "Susan and Mary on Heat Pumps",
+          "body": "Susan Parish wrote: \"Always comes same day I call and takes care of my heat pump immediately and completely..\nalways fair price if any charge at all. The kind of friend to have!\" Mary Hunt wrote: \"Have had my heat pump for 11 years now, and a common part needed replaced for the first time, and they were out at my place same day, so fast. Great customer service, and my house is cool and dry again. Thank you!\"",
+          "bullets": [
+            "Susan Parish, Google review",
+            "Mary Hunt, Google review"
+          ]
+        },
+        {
+          "heading": "Options Explained, No Extra Sales Pitch",
+          "body": "Christian Hutchinson wrote: \"Excellent Service and Reliable Team!\n\nI had a fantastic experience with Brone's Heating & Air! My AC stopped working during a heatwave, and they were able to send someone out the same day. The owner was professional, friendly, and clearly knew what he was doing. He quickly diagnosed the issue, explained everything in simple terms, and had it fixed within an hour.\n\nPricing was fair, and they didn\u2019t try to upsell me on anything I didn\u2019t need. It\u2019s rare to find a company that\u2019s this honest and responsive. I\u2019ll definitely be using them again for all my heating and cooling needs\u2014and recommending them to friends and family!\"",
+          "bullets": [
+            "Christian Hutchinson, Google review"
+          ]
+        },
+        {
+          "heading": "Gary and Don in a Heat Wave",
+          "body": "Gary Selby wrote: \"Brad was great. Came out the same day during extreme heat wave. Communicated and diagnosed the issue. Very personable, professional, and will be my guy the next time I need any heat or air conditioning issues! Thanks again!!! Gary\" Don Olsen wrote: \"Brad actually answered the phone (no voicemail or phone-tag) when I called about our A/C failing and he managed to fit us into his schedule on the same day. He resolved the issue in less than 20 minutes and was on his way to his next job. Thanks for the great work and making sure we didn't sleep another night in the heat.\"",
+          "bullets": [
+            "Gary Selby, Google review",
+            "Don Olsen, Google review"
+          ]
+        },
+        {
+          "heading": "Call About the Unit That Stopped",
+          "body": "Tell us what you hear, smell, or see. We will look at the system and talk through repair versus waiting. Call (417) 529-0227.",
+          "bullets": [
+            "Call (417) 529-0227",
+            "Shop: 1709 S Joplin Ave, Joplin, MO 64804"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "question": "Do you work on heat pumps as well as AC?",
+          "answer": "Yes. Customers such as Susan Parish and Mary Hunt wrote about heat pump visits. Call (417) 529-0227."
+        },
+        {
+          "question": "Who should I ask for?",
+          "answer": "Ask for Brad. Call (417) 529-0227."
+        },
+        {
+          "question": "Where do I send you?",
+          "answer": "1709 S Joplin Ave is the shop. We come to your house for the repair visit."
+        }
+      ]
+    },
+    {
+      "title": "HVAC Installation Joplin MO",
+      "slug": "/hvac-installation-joplin-mo",
+      "seoTitle": "HVAC Installation in Joplin, MO | Barone's Heat & Air",
+      "metaDescription": "HVAC installation in Joplin, MO from Barone's Heat & Air \u2014 a new unit and the old one hauled away, including careful work in older homes.",
+      "hero": {
+        "eyebrow": "HVAC Installation \u00b7 Joplin, MO",
+        "heading": "New HVAC in Joplin, Old Unit Hauled Away",
+        "subheading": "When the old system is done, Brad's crew installs a new unit and takes the old one with them. Call (417) 529-0227. Neighbors talk about careful work in old closets and attics.",
+        "primaryCta": "Call (417) 529-0227",
+        "secondaryCta": "See AC repair"
+      },
+      "sections": [
+        {
+          "heading": "HVAC Installation in Joplin, MO",
+          "body": "HVAC installation in Joplin, MO at Barone's Heat & Air LLC means a new unit set, started, and checked. People who hired us also talk about the old unit leaving the same visit. Call (417) 529-0227 and we will look at the house before we order equipment.",
+          "bullets": [
+            "New unit install",
+            "Old unit removal when that is the job",
+            "Work in tight closets, attics, and older homes"
+          ]
+        },
+        {
+          "heading": "Bill's Older Home, New System",
+          "body": "Bill Hancock wrote: \"Brad and Richard were outstanding\u2014professional, punctual, and incredibly hardworking. Brad clearly explained the installation process and let me know it would take a couple of days due to the challenges of working in my older home's closet furnace and water heater setup. They went above and beyond to ensure everything was installed properly and working perfectly, and even removed my heavy window unit for me. I couldn't be happier with my new HVAC system and will definitely call Barone for any future HVAC needs. Highly recommended!\"",
+          "bullets": [
+            "Bill Hancock, Google review"
+          ]
+        },
+        {
+          "heading": "Gail's Old Unit, Gone the Same Day",
+          "body": "Gail Wacker wrote: \"My older HVAC unit died of old age. Barone's Heat&Air llc in Joplin, came to the rescue. Installed a new unit, took care of the old unit in a matter of hours. The only time they left was for lunch break. No running for parts, or tools forgotten. All three men were very knowledgeable and courteous.  Mr Barone explained to me what was happening as they went along, so no surprises. Very happy w the new unit and smooth install.\"",
+          "bullets": [
+            "Gail Wacker, Google review"
+          ]
+        },
+        {
+          "heading": "Monica's Attic, Walls and Floors Intact",
+          "body": "Monica Klaurens wrote: \"Brad and his crew installed a complete unit, removed and disposed of the old unit, and returned the following day to double check everything was working without issues. Getting to the unit in the attic was a challenge, and they were extremely careful with walls, flooring and doorways.\n\nPrice and equipment was competitive, but the service was beyond expectations. All three gentlemen were friendly, knowledgeable, and helpful. They went above and beyond, including clearing the drain lines to all my units, cleaning up (including vacuuming) all areas, and answering all my questions.\n\nI highly recommend this small business.\n\nCarl Junction, MO\"",
+          "bullets": [
+            "Monica Klaurens, Google review"
+          ]
+        },
+        {
+          "heading": "Gretchen's Window Unit Overnight",
+          "body": "Gretchen Goddard wrote: \"I can\u2019t recommend Barone\u2019s Heat and Air enough. Brad repaired one AC and replaced another during the hottest days in July. He was prompt with next day service. He even put in a window unit for the night until the unit was installed the next day. Dependable, honest and efficient. Truly went above and beyond.\"",
+          "bullets": [
+            "Gretchen Goddard, Google review"
+          ]
+        },
+        {
+          "heading": "Jim's Saturday Install After the Heat Failed",
+          "body": "Jim wrote: \"Just our luck our heat went out on one of the coldest days so far so I emailed Barones and within 15 minutes I had a reply asking the problem. I figure it would be awhile before I could get someone to look at it but Brad and his crew were at my house within and an hour. He said my unit was in bad shape . He got it running again but he said he didn\u2019t know how long it would last and he was right an hour later it was down again . So I got back ahold of him and he went over everything with me so we decided we needed to replace the unit. It would take a day to get it shipped to him so he brought us two heaters to get us through. So him and his crew came over on a Saturday morning their day off! which was two days after we lost heat and installed the new unit . Within 45 minutes our house was warm again! I can\u2019t recommend Brad and his team enough. Very professional and super friendly. Thank you Brad and you team!\"",
+          "bullets": [
+            "Jim, Google review"
+          ]
+        },
+        {
+          "heading": "A Complicated Older System",
+          "body": "VolVet03 wrote: \"Highly recommend Barone HVAC. Our  home had a complicated older HVAC system with obsolete components that no longer translate to today\u2019s equipment.  Brad came up with the best possible solution for our difficult situation.  Lots of other companies were trying to take shortcuts and still charge us top dollar but Brad shot it to us straight from the beginning and did the job for a price we could afford.  Communication was excellent before and during the project,  he patiently answered all my questions about how this was going to work since we had to make some major changes to the system. For those wondering Barone HVAC is a Goodman dealer and Goodman is known for quality equipment with excellent warranties.\"",
+          "bullets": [
+            "VolVet03, Google review"
+          ]
+        },
+        {
+          "heading": "Talk Through a New Unit",
+          "body": "Call (417) 529-0227. Tell us the age of the system and how the house is laid out. We will walk the job with you before we start.",
+          "bullets": [
+            "Call (417) 529-0227",
+            "1709 S Joplin Ave, Joplin, MO 64804"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "question": "Do you take the old unit?",
+          "answer": "Customers such as Gail Wacker and Monica Klaurens wrote that we installed a new unit and took care of the old one. Ask about that when you call (417) 529-0227."
+        },
+        {
+          "question": "Can you work in an attic or an older closet?",
+          "answer": "Bill Hancock wrote about an older home's closet setup. Monica Klaurens wrote about getting to a unit in the attic and being careful with walls, flooring, and doorways."
+        },
+        {
+          "question": "Who comes to the house?",
+          "answer": "Brad Barone owns the shop. Bill Hancock named Brad and Richard on his install."
+        }
+      ]
+    },
+    {
+      "title": "Contact",
+      "slug": "/contact",
+      "seoTitle": "Contact Barone's Heat & Air | Joplin, MO",
+      "metaDescription": "Reach Barone's Heat & Air LLC at 1709 S Joplin Ave, Joplin, MO 64804. Hours Tuesday through Saturday as listed on Google.",
+      "hero": {
+        "eyebrow": "Joplin, MO",
+        "heading": "Call Barone's Heat & Air",
+        "subheading": "Reach Brad and the office at (417) 529-0227. We are at 1709 S Joplin Ave in Joplin. Tell us if you need repair or a new unit.",
+        "primaryCta": "Call (417) 529-0227",
+        "secondaryCta": "View the homepage"
+      },
+      "sections": [
+        {
+          "heading": "How to Reach Us",
+          "body": "Call (417) 529-0227. That is the number on our Google listing and the only number on this site. Ask for Brad or the office.",
+          "bullets": [
+            "Phone: (417) 529-0227",
+            "Barone's Heat & Air LLC",
+            "1709 S Joplin Ave, Joplin, MO 64804",
+            "Owner: Brad Barone"
+          ]
+        },
+        {
+          "heading": "Hours as Listed",
+          "body": "Google shows Tuesday through Friday 8 AM\u20136 PM, Saturday 8 AM\u201312 PM, and Sunday closed. Labor Day Monday was shown closed on the listing we captured.",
+          "bullets": [
+            "Tue\u2013Fri: 8 AM\u20136 PM",
+            "Sat: 8 AM\u201312 PM",
+            "Sun: closed",
+            "Labor Day Monday: closed (as captured)"
+          ]
+        },
+        {
+          "heading": "What to Have Ready",
+          "body": "When you call, say whether cooling, heat, or a heat pump failed, or whether you want a new unit. Share the town \u2014 Joplin, Webb City, or Carl Junction, the towns Brad named on Google \u2014 and any tight space like an attic or old closet.",
+          "bullets": [
+            "What stopped working",
+            "Repair or a possible new unit",
+            "Where the equipment sits"
+          ]
+        },
+        {
+          "heading": "We Will Pick Up",
+          "body": "Call (417) 529-0227. We will get you on the schedule and come to the house.",
+          "bullets": [
+            "Call (417) 529-0227"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "question": "What number do I call?",
+          "answer": "Call (417) 529-0227."
+        },
+        {
+          "question": "Where is the shop?",
+          "answer": "1709 S Joplin Ave, Joplin, MO 64804."
+        },
+        {
+          "question": "When are you open?",
+          "answer": "Tuesday through Friday 8 AM\u20136 PM, Saturday 8 AM\u201312 PM, Sunday closed. Labor Day Monday was shown closed on the listing we captured."
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "servicesFull": [
+      "AC repair",
+      "HVAC installation",
+      "Heat pump service",
+      "Furnace check"
+    ],
+    "differentiators": [
+      "Brad Barone, owner",
+      "1709 S Joplin Ave, Joplin, MO 64804"
+    ],
+    "hours": "Tue\u2013Fri 8 AM\u20136 PM; Sat 8 AM\u201312 PM; Sun closed"
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "schemaVersion": "1.0.0",
+  "slug": "barones-heat-air",
+  "voiceReferences": [
+    "TEK",
+    "Healing Hearts",
+    "Ozarks"
+  ],
+  "voiceNote": "Use those three for sentence craft and evidence density, not page count. Barone's ships two service routes.",
+  "phoneChrome": "(417) 529-0227",
+  "intendedStructure": {
+    "Why We Built This": [
+      "Hero (Fluid Frame voice, dual CTA into /home)",
+      "What we found (500 site, strong listing)",
+      "Two jobs customers already hired",
+      "Reviews we could quote (124 / ~117 / 60)",
+      "Phone and hours as listed",
+      "Final CTA"
+    ],
+    "Homepage": [
+      "Hero (Joplin heat and air + dual CTA)",
+      "Who we are (Brad, NAP, hours)",
+      "Two service paths",
+      "Named customer quotes",
+      "FAQ",
+      "Final CTA"
+    ],
+    "AC Repair Joplin MO": [
+      "Hero",
+      "Opening with primary keyword",
+      "Same-day diagnosis stories (named)",
+      "Explained options / no upsell (named, not chrome)",
+      "Heat pump repair stories",
+      "FAQ",
+      "Final CTA"
+    ],
+    "HVAC Installation Joplin MO": [
+      "Hero",
+      "Opening with primary keyword",
+      "New unit and haul-away (named)",
+      "Old houses, attics, window unit overnight (named)",
+      "FAQ",
+      "Final CTA"
+    ],
+    "Contact": [
+      "Hero",
+      "How to reach us (NAP, one phone, hours)",
+      "What to have ready",
+      "FAQ",
+      "Final CTA"
+    ]
+  },
+  "sketchDepartures": [
+    {
+      "page": "Why We Built This",
+      "departure": "No customer FAQ block. No factory jargon.",
+      "reason": "Strategy page explains the 500 site and unused listing in plain language."
+    },
+    {
+      "page": "Homepage",
+      "departure": "A few named quotes, not the full 60.",
+      "reason": "Home orients; service pages carry the same-day and install anchors."
+    },
+    {
+      "page": "AC Repair Joplin MO",
+      "departure": "Same-day, explained options, and no upsell sit next to named quotes, not in the footer.",
+      "reason": "Those are customer stories, not chrome promises."
+    },
+    {
+      "page": "HVAC Installation Joplin MO",
+      "departure": "Haul-away, attic care, and a window unit overnight sit next to named quotes. Goodman appears only inside VolVet03's quote.",
+      "reason": "Do not put Goodman, haul-away, or same-day on chrome."
+    },
+    {
+      "page": "Contact",
+      "departure": "No second phone. No invented Monday hours. Labor Day Monday closed as captured.",
+      "reason": "Hours follow the listing capture."
+    }
+  ],
+  "anchorEvidence": {
+    "Why We Built This": [
+      "current-site-audit.json http-500",
+      "listing 4.9 / 124; ~117 with text; 60 captured texts",
+      "phone (417) 529-0227"
+    ],
+    "Homepage": [
+      "Jamie Atteberry reviews-verbatim.json",
+      "Bill Hancock reviews-verbatim.json",
+      "Russell Webb reviews-verbatim.json",
+      "Brad Barone, address, hours"
+    ],
+    "AC Repair Joplin MO": [
+      "Jamie Atteberry",
+      "Susan Parish",
+      "Mary Hunt",
+      "Christian Hutchinson",
+      "Gary Selby",
+      "Don Olsen"
+    ],
+    "HVAC Installation Joplin MO": [
+      "Bill Hancock",
+      "Gail Wacker",
+      "Monica Klaurens",
+      "Gretchen Goddard",
+      "Jim",
+      "VolVet03 (Goodman only inside this quote)"
+    ],
+    "Contact": [
+      "phone (417) 529-0227",
+      "address 1709 S Joplin Ave, Joplin, MO 64804",
+      "hours Tue\u2013Fri 8 AM\u20136 PM; Sat 8 AM\u201312 PM; Sun closed",
+      "Labor Day Monday closed as captured",
+      "Brad Barone owner / office"
+    ]
+  }
+}

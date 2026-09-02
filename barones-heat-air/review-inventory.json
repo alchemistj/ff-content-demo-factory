@@ -1,0 +1,333 @@
+{
+  "schemaVersion": "2.0.0",
+  "kind": "factory-review-inventory",
+  "slug": "barones-heat-air",
+  "businessName": "Barone's Heat & Air LLC",
+  "identity": {
+    "placeId": null,
+    "googleMapsUrl": null,
+    "businessName": "Barone's Heat & Air LLC"
+  },
+  "gbpResolution": {
+    "status": "resolved",
+    "placeId": null,
+    "reason": "GBP identity captured from Maps UI for overnight packet; placeId not supplied.",
+    "candidateClass": "gbp-matched"
+  },
+  "retrieval": {
+    "status": "incomplete",
+    "completeness": "partial",
+    "proceedsVia": null,
+    "platform": "google",
+    "reviewsOrigin": "gbp-maps-ui-overnight-capture",
+    "listingReviewCount": 124,
+    "retrievedCount": 7,
+    "textReviewsReportedApprox": "100+",
+    "capturedTextReviewsInPacket": 7,
+    "sufficiencyThreshold": 25,
+    "maxRequested": 50,
+    "sourceStage": "overnight-gbp-maps-ui",
+    "attemptedAt": "2026-09-01T22:39:03Z",
+    "readAt": "2026-09-01T22:39:03Z",
+    "failureReason": null,
+    "emptyTextDropped": 0,
+    "emptyTextPolicy": "Empty-text review records are dropped from reviews[] and recorded in droppedEmptyReviews. They never become customer-facing quotations. Listing totals still use the GBP-reported count, so empty-text drops can make a pull incomplete.",
+    "gapNote": "GBP shows 124 reviews (~100+ with text). This packet contains only the verbatim quotes supplied in the Architect brief. Do not invent the rest."
+  },
+  "noGbpPath": {
+    "eligible": false,
+    "candidateClass": null,
+    "reason": null,
+    "authority": null
+  },
+  "platforms": [
+    {
+      "platform": "google",
+      "rating": 4.9,
+      "listingReviewCount": 124,
+      "retrievedCount": 7,
+      "reviewsOrigin": "gbp-maps-ui-overnight-capture",
+      "reviewsDistribution": null,
+      "textRetrieved": true,
+      "textRead": true,
+      "readProof": {
+        "method": "architect-brief-verbatim-quotes",
+        "readAt": "2026-09-01T22:39:03Z"
+      }
+    }
+  ],
+  "ratingDistribution": {
+    "1": 2,
+    "2": 0,
+    "3": 0,
+    "4": 1,
+    "5": 4,
+    "unrated": 0
+  },
+  "listingRatingDistribution": null,
+  "listingRating": 4.9,
+  "reviewChips": [
+    {
+      "label": "knowledgeable staff",
+      "count": 49
+    },
+    {
+      "label": "fair pricing",
+      "count": 14
+    },
+    {
+      "label": "honest company",
+      "count": 5
+    },
+    {
+      "label": "new unit installation",
+      "count": 4
+    },
+    {
+      "label": "quick diagnosis",
+      "count": 4
+    },
+    {
+      "label": "furnace check",
+      "count": 3
+    },
+    {
+      "label": "professional crew",
+      "count": 3
+    },
+    {
+      "label": "quick fix",
+      "count": 3
+    },
+    {
+      "label": "old unit removal",
+      "count": 2
+    },
+    {
+      "label": "heat pump",
+      "count": 2
+    }
+  ],
+  "customerSaidNotVerified": [
+    {
+      "author": "VolVet03",
+      "claim": "Goodman dealer",
+      "status": "customer-said",
+      "fullReviewTextNotInPacket": true,
+      "rule": "Treat as customer-said. Do not claim Barone is a Goodman dealer unless separately labeled and verified."
+    }
+  ],
+  "flaggedMisplacedReviews": [
+    {
+      "id": "barones-heat-air:google:82ac26140f00",
+      "author": "julia ansari",
+      "rating": 5,
+      "textCaptured": false,
+      "fullTextNotInPacket": true,
+      "mentions": [
+        "Greg Adams",
+        "ACCI"
+      ],
+      "flag": "possible-misplaced-review",
+      "doNotUseAsBaroneProof": true,
+      "reason": "Mentions Greg Adams / ACCI. Flagged as possible misplaced review. Do not use as Barone proof (people, services, or quotes)."
+    }
+  ],
+  "doNotUseAsProof": [
+    "julia ansari",
+    "Greg Adams",
+    "ACCI"
+  ],
+  "reviews": [
+    {
+      "id": "barones-heat-air:google:198c86bbd959",
+      "platform": "google",
+      "source": "gbp-maps-ui-overnight-capture",
+      "author": "Bill Hancock",
+      "rating": 5,
+      "date": "2 months ago",
+      "when": "2 months ago",
+      "text": "Brad and Richard were outstanding—professional, punctual, and incredibly hardworking… They went above and beyond to ensure everything was installed properly and working perfectly, and even removed my heavy window unit for me.",
+      "wordCount": 32,
+      "preflag": {
+        "meetsWordFloor": true,
+        "wordCount": 32,
+        "floor": 15,
+        "floorStatus": "proposed-15-issue-148-non-mold"
+      },
+      "heuristicGrade": "anchor",
+      "overnightAnchorCandidate": true,
+      "grade": "supporting",
+      "verificationState": "pending-model-judgment",
+      "authoritative": false,
+      "copyQuoteAllowed": true,
+      "referentJudgment": null,
+      "notes": "Named Brad and Richard; new-unit install plus old window-unit removal."
+    },
+    {
+      "id": "barones-heat-air:google:cd7896ffd64b",
+      "platform": "google",
+      "source": "gbp-maps-ui-overnight-capture",
+      "author": "Gail Wacker",
+      "rating": 5,
+      "date": "3 months ago",
+      "when": "3 months ago",
+      "text": "My older HVAC unit died of old age. Barone's Heat&Air llc in Joplin, came to the rescue. Installed a new unit, took care of the old unit in a matter of hours… no surprises.",
+      "wordCount": 34,
+      "preflag": {
+        "meetsWordFloor": true,
+        "wordCount": 34,
+        "floor": 15,
+        "floorStatus": "proposed-15-issue-148-non-mold"
+      },
+      "heuristicGrade": "anchor",
+      "overnightAnchorCandidate": true,
+      "grade": "supporting",
+      "verificationState": "pending-model-judgment",
+      "authoritative": false,
+      "copyQuoteAllowed": true,
+      "referentJudgment": null,
+      "notes": "New unit installation and old unit removal, same-day hours."
+    },
+    {
+      "id": "barones-heat-air:google:0ea0a747f236",
+      "platform": "google",
+      "source": "gbp-maps-ui-overnight-capture",
+      "author": "Monica Klaurens",
+      "rating": 5,
+      "date": "5 months ago",
+      "when": "5 months ago",
+      "text": "Price and equipment was competitive, but the service was beyond expectations… I highly recommend this small business. Carl Junction, MO",
+      "wordCount": 20,
+      "preflag": {
+        "meetsWordFloor": true,
+        "wordCount": 20,
+        "floor": 15,
+        "floorStatus": "proposed-15-issue-148-non-mold"
+      },
+      "heuristicGrade": "anchor",
+      "overnightAnchorCandidate": true,
+      "grade": "supporting",
+      "verificationState": "pending-model-judgment",
+      "authoritative": false,
+      "copyQuoteAllowed": true,
+      "referentJudgment": null,
+      "notes": "Carl Junction, MO customer; competitive price/equipment plus service."
+    },
+    {
+      "id": "barones-heat-air:google:94332d1b08ea",
+      "platform": "google",
+      "source": "gbp-maps-ui-overnight-capture",
+      "author": "Jim",
+      "rating": 5,
+      "date": "a year ago",
+      "when": "a year ago",
+      "text": "he brought us two heaters to get us through. So him and his crew came over on a Saturday morning their day off!",
+      "wordCount": 23,
+      "preflag": {
+        "meetsWordFloor": true,
+        "wordCount": 23,
+        "floor": 15,
+        "floorStatus": "proposed-15-issue-148-non-mold"
+      },
+      "heuristicGrade": "anchor",
+      "overnightAnchorCandidate": true,
+      "grade": "supporting",
+      "verificationState": "pending-model-judgment",
+      "authoritative": false,
+      "copyQuoteAllowed": true,
+      "referentJudgment": null,
+      "notes": "Emergency heat / Saturday off-hours visit. Supports repair/emergency intent, not a signed service."
+    },
+    {
+      "id": "barones-heat-air:google:39a5d5dd0b45",
+      "platform": "google",
+      "source": "gbp-maps-ui-overnight-capture",
+      "author": "Russell Webb",
+      "rating": 4,
+      "date": "5 months ago",
+      "when": "5 months ago",
+      "text": "We trust our comfort to Brad and team. Quality work.",
+      "wordCount": 10,
+      "preflag": {
+        "meetsWordFloor": false,
+        "wordCount": 10,
+        "floor": 15,
+        "floorStatus": "proposed-15-issue-148-non-mold"
+      },
+      "heuristicGrade": "supporting",
+      "overnightAnchorCandidate": false,
+      "grade": "supporting",
+      "verificationState": "pending-model-judgment",
+      "authoritative": false,
+      "copyQuoteAllowed": true,
+      "referentJudgment": null,
+      "notes": "Named Brad; no specific job details. Supporting only."
+    },
+    {
+      "id": "barones-heat-air:google:f1e628404083",
+      "platform": "google",
+      "source": "gbp-maps-ui-overnight-capture",
+      "author": "Cheri",
+      "rating": 1,
+      "date": "7 years ago",
+      "when": "7 years ago",
+      "text": "Quote goes from agreed price to 4-6000$ higher he's not really sure yet.",
+      "wordCount": 13,
+      "preflag": {
+        "meetsWordFloor": false,
+        "wordCount": 13,
+        "floor": 15,
+        "floorStatus": "proposed-15-issue-148-non-mold"
+      },
+      "heuristicGrade": "supporting",
+      "overnightAnchorCandidate": false,
+      "grade": "supporting",
+      "verificationState": "pending-model-judgment",
+      "authoritative": false,
+      "copyQuoteAllowed": false,
+      "referentJudgment": null,
+      "notes": "Negative; copyQuoteAllowed false. Do not use as a testimonial."
+    },
+    {
+      "id": "barones-heat-air:google:415e2932a2d6",
+      "platform": "google",
+      "source": "gbp-maps-ui-overnight-capture",
+      "author": "Carol Woodward",
+      "rating": 1,
+      "date": "7 years ago",
+      "when": "7 years ago",
+      "text": "Does not return phone calls or answer text messages",
+      "wordCount": 9,
+      "preflag": {
+        "meetsWordFloor": false,
+        "wordCount": 9,
+        "floor": 15,
+        "floorStatus": "proposed-15-issue-148-non-mold"
+      },
+      "heuristicGrade": "supporting",
+      "overnightAnchorCandidate": false,
+      "grade": "supporting",
+      "verificationState": "pending-model-judgment",
+      "authoritative": false,
+      "copyQuoteAllowed": false,
+      "referentJudgment": null,
+      "notes": "Negative; copyQuoteAllowed false. Do not use as a testimonial."
+    }
+  ],
+  "droppedEmptyReviews": [],
+  "classification": {
+    "wordCountFloor": 15,
+    "wordCountFloorStatus": "proposed-15-issue-148-non-mold",
+    "adoption": "model-judgment-required-issue-148-non-mold",
+    "anchorCount": 0,
+    "overnightAnchorCandidateCount": 4,
+    "supportingCount": 7,
+    "pendingModelJudgmentCount": 7,
+    "method": "deterministic-preflag+authoritative-model-referent",
+    "note": "Authoritative anchor grades require model referent judgment. overnightAnchorCandidate is a packet hint only, not a signed grade."
+  },
+  "quoteRule": "Quote only reviews[].text for authors in this file with copyQuoteAllowed true. Do not invent additional reviews. Do not quote flaggedMisplacedReviews.",
+  "packageEvidenceGradeLikely": "A/B",
+  "packageEvidenceGradeRationale": "High listing volume (4.9 / 124, ~100+ with text) and several specific install/emergency quotes, but this packet is a partial pull of supplied quotes only; services not Architect-signed."
+}

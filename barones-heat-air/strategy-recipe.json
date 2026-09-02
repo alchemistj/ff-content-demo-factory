@@ -1,0 +1,63 @@
+{
+  "schemaVersion": "1.0.0",
+  "businessName": "Barone's Heat & Air LLC",
+  "industry": "HVAC",
+  "city": "Joplin",
+  "state": "MO",
+  "websiteStatus": "http-500",
+  "auditSummary": "http://www.barone-heat-air.com/ returned HTTP 500 on capture and is not a copy source. Google listing is live at 4.9 from 124 reviews. This recipe uses the listing phone (417) 529-0227, Joplin NAP, captured hours (Tue\u2013Fri 8 AM\u20136 PM, Sat 8 AM\u201312 PM, Sun closed), owner Brad Barone, and two service routes from work customers describe: same-day AC diagnosis/repair and new-unit installation with old-unit haul-away.",
+  "brandTone": "Ozarks contractor voice: plain, local, evidence-led. Grade 5\u20136. AP heads. Dual CTA. Business pages speak as the company in second person. Strategy page is the only Fluid Frame voice. Do not turn customer stories (same-day, no upsell, haul-away, Goodman, tenure) into chrome promises.",
+  "heroDirection": "Homepage leads with Joplin heat and air identity, Brad, and call (417) 529-0227. Repair page leads with same-day diagnosis and repair as customer stories. Install page leads with a new unit and hauling the old one away, including careful work in old houses and attics. Contact is phone-first at 1709 S Joplin Ave.",
+  "pages": [
+    {
+      "title": "Why We Built This",
+      "purpose": "Fluid Frame demo lander at / explaining the dead 500 site, the unused 4.9/124 listing, two service paths from work customers hired, and the Google phone number.",
+      "searchIntent": "branded",
+      "primaryKeyword": "Barone's Heat & Air Joplin demo",
+      "avoidDuplicateOf": "",
+      "route": "/",
+      "pageType": "strategy-overview",
+      "contentMode": "demo-strategy"
+    },
+    {
+      "title": "Homepage",
+      "purpose": "Business homepage at /home with Joplin HVAC identity, dual CTA, paths to repair and install, NAP, hours, Brad, and a few named customer quotes.",
+      "searchIntent": "local-service",
+      "primaryKeyword": "HVAC Joplin MO",
+      "avoidDuplicateOf": "",
+      "route": "/home",
+      "pageType": "homepage",
+      "contentMode": "production-site"
+    },
+    {
+      "title": "AC Repair Joplin MO",
+      "purpose": "Same-day diagnosis and repair lander for Joplin homeowners when AC or a heat pump is down.",
+      "searchIntent": "commercial",
+      "primaryKeyword": "AC repair Joplin MO",
+      "avoidDuplicateOf": "HVAC Installation Joplin MO",
+      "route": "/ac-repair-joplin-mo",
+      "pageType": "service-page",
+      "contentMode": "production-site"
+    },
+    {
+      "title": "HVAC Installation Joplin MO",
+      "purpose": "New unit plus haul-away lander. Careful work in old houses and attics from named quotes.",
+      "searchIntent": "commercial",
+      "primaryKeyword": "HVAC installation Joplin MO",
+      "avoidDuplicateOf": "AC Repair Joplin MO",
+      "route": "/hvac-installation-joplin-mo",
+      "pageType": "service-page",
+      "contentMode": "production-site"
+    },
+    {
+      "title": "Contact",
+      "purpose": "Phone-first contact with Joplin address, (417) 529-0227 only, captured hours, Brad / office.",
+      "searchIntent": "commercial",
+      "primaryKeyword": "Barone's Heat & Air Joplin contact",
+      "avoidDuplicateOf": "",
+      "route": "/contact",
+      "pageType": "contact",
+      "contentMode": "production-site"
+    }
+  ]
+}
