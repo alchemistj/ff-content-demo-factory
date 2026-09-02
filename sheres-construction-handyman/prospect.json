@@ -1,0 +1,61 @@
+{
+  "slug": "sheres-construction-handyman",
+  "businessName": "Shere's construction & handyman",
+  "gbpName": "Shere's construction & handyman",
+  "category": "Handyman",
+  "categories": [
+    "Handyman"
+  ],
+  "address": "1705 Ohio Ave, Joplin, MO 64804",
+  "city": "Joplin",
+  "state": "MO",
+  "postalCode": "64804",
+  "phone": "(417) 385-8899",
+  "phoneTel": "tel:+14173858899",
+  "website": null,
+  "websiteStatus": "none",
+  "websiteCopySource": false,
+  "rating": 4.5,
+  "reviewCount": 116,
+  "textReviewsCapturedSoFar": 40,
+  "hours": "Mon–Sat 8 AM–6 PM; Sun closed",
+  "openingHoursRaw": [
+    {
+      "day": "Monday",
+      "hours": "8 AM–6 PM"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "8 AM–6 PM"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "8 AM–6 PM"
+    },
+    {
+      "day": "Thursday",
+      "hours": "8 AM–6 PM"
+    },
+    {
+      "day": "Friday",
+      "hours": "8 AM–6 PM"
+    },
+    {
+      "day": "Saturday",
+      "hours": "8 AM–6 PM"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Closed"
+    }
+  ],
+  "owner": "Keaton Shere",
+  "crewNamedInBrief": [
+    "James",
+    "Kenneth"
+  ],
+  "inBusinessSince": 2013,
+  "inBusinessSinceSource": "owner replies",
+  "market": "Joplin, MO",
+  "architectSignOff": false
+}

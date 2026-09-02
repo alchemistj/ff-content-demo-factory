@@ -1,0 +1,17 @@
+{
+  "auditedUrl": null,
+  "websiteStatus": "none",
+  "copySource": false,
+  "iaSource": false,
+  "titleTag": null,
+  "h1": null,
+  "hasServicePages": false,
+  "hasMetaDescription": null,
+  "hasContactForm": null,
+  "mobileFriendlySignals": null,
+  "notableIssues": [
+    "No website on the GBP capture.",
+    "Demo IA cannot be copied from an existing site; GBP + review packet only."
+  ],
+  "verdict": "no website; not a copy source"
+}

@@ -1,0 +1,63 @@
+{
+  "schemaVersion": "1.0.0",
+  "businessName": "Shere's construction & handyman",
+  "industry": "Handyman",
+  "city": "Joplin",
+  "state": "MO",
+  "websiteStatus": "no-website",
+  "auditSummary": "No website on the Google listing. Identity is NAP, hours, owner Keaton Shere, and reviews. Two customer-job paths only: handyman repairs (thicker) and fence/gate installation (thinner). Do not invent extra routes from GBP review tags.",
+  "brandTone": "Ozarks contractor voice in the TEK / Healing Hearts / Ozarks family: plain, local, evidence-led. Grade 5\u20136. AP heads. Dual CTA. Second person on business pages. Strategy page is the only Fluid Frame voice. Fence page stays thin on purpose; do not match handyman page length.",
+  "heroDirection": "Homepage leads with Joplin handyman identity, Keaton Shere, NAP, hours, and call (417) 385-8899, with paths to repairs and fence/gate. Handyman page leads with indoor/general repairs, apartment setup, and named on-time/cleanup stories. Fence page leads with fence and gate work and Julie North only. Contact is phone-first. Heroes do not use unattributed on-time, cleanup, or fence-speed slogans.",
+  "pages": [
+    {
+      "title": "Why We Built This",
+      "purpose": "Fluid Frame lander at / explaining the missing website, the 116-review listing, and two customer-job paths (repairs vs fence/gate) without factory jargon or slug inventory.",
+      "searchIntent": "branded",
+      "primaryKeyword": "Shere's construction handyman Joplin demo",
+      "avoidDuplicateOf": "",
+      "route": "/",
+      "pageType": "strategy-overview",
+      "contentMode": "demo-strategy"
+    },
+    {
+      "title": "Homepage",
+      "purpose": "Business homepage at /home with Keaton, NAP, hours, dual CTA, two service paths, and named quotes only.",
+      "searchIntent": "local-service",
+      "primaryKeyword": "handyman Joplin MO",
+      "avoidDuplicateOf": "",
+      "route": "/home",
+      "pageType": "homepage",
+      "contentMode": "production-site"
+    },
+    {
+      "title": "Handyman Repairs Joplin MO",
+      "purpose": "General repairs lander: on-time and cleanup as named stories, apartment setup, dryer vent in a 90-year house, sink and faucet with James named only in the LWilliams Masters quote.",
+      "searchIntent": "commercial",
+      "primaryKeyword": "handyman repairs Joplin MO",
+      "avoidDuplicateOf": "Fence Installation Joplin MO",
+      "route": "/handyman-repairs-joplin-mo",
+      "pageType": "service-page",
+      "contentMode": "production-site"
+    },
+    {
+      "title": "Fence Installation Joplin MO",
+      "purpose": "Thin fence and gate page. Julie North is the positive fence+gate quote. Do not pad with deck, roof, patio, or unrelated outdoor work.",
+      "searchIntent": "commercial",
+      "primaryKeyword": "fence installation Joplin MO",
+      "avoidDuplicateOf": "Handyman Repairs Joplin MO",
+      "route": "/fence-installation-joplin-mo",
+      "pageType": "service-page",
+      "contentMode": "production-site"
+    },
+    {
+      "title": "Contact",
+      "purpose": "Phone-first contact: 1705 Ohio Ave, Joplin, MO 64804, (417) 385-8899, Mon\u2013Sat 8 AM\u20136 PM, Sunday closed.",
+      "searchIntent": "commercial",
+      "primaryKeyword": "Shere's construction handyman Joplin contact",
+      "avoidDuplicateOf": "",
+      "route": "/contact",
+      "pageType": "contact",
+      "contentMode": "production-site"
+    }
+  ]
+}

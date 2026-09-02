@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "1.0.0",
+  "source": "overnight-gbp-maps-ui-architect-brief",
+  "verifiedAt": "2026-09-01",
+  "slug": "sheres-construction-handyman",
+  "businessName": "Shere's construction & handyman",
+  "phone": "(417) 385-8899",
+  "phoneDisplay": "(417) 385-8899",
+  "phonePlacement": {
+    "status": "resolved",
+    "headerHero": "(417) 385-8899",
+    "footer": "(417) 385-8899",
+    "doNotDisplay": [],
+    "confirmedNumbers": [
+      "(417) 385-8899"
+    ],
+    "decision": "Single confirmed GBP number",
+    "decidedBy": "overnight-packet"
+  },
+  "email": null,
+  "address": "1705 Ohio Ave, Joplin, MO 64804",
+  "city": "Joplin",
+  "state": "MO",
+  "hours": "Mon–Sat 8 AM–6 PM; Sun closed",
+  "rating": 4.5,
+  "reviewCount": 116,
+  "owner": "Keaton Shere",
+  "people": {
+    "owner": "Keaton Shere",
+    "crewNamedInBrief": [
+      "James",
+      "Kenneth"
+    ]
+  },
+  "foundingYear": 2013,
+  "foundingYearSource": "owner replies",
+  "servicesFull": [],
+  "reviewTaggedServices": [
+    "general construction",
+    "demolition",
+    "fence",
+    "repairs",
+    "concrete patio",
+    "flooring",
+    "drywall",
+    "outdoor plumbing",
+    "appliance install"
+  ],
+  "differentiators": [],
+  "credentials": [],
+  "promotions": [],
+  "customerSaidPricing": {
+    "status": "customer-said-only",
+    "author": "Kristina Cline",
+    "when": "5 years ago",
+    "text": "$80/hr two man crew cash or check",
+    "rule": "Do not present as current official rate or payment policy."
+  },
+  "proposedServicesUnsigned": [],
+  "prohibitedClaims": [
+    "Do not invent reviews or expand excerpted review text into fuller testimonials.",
+    "Do not ignore the capture gap: 116 listing reviews vs 40 text captured so far vs 5 items in this packet.",
+    "Do not publish $80/hr, two-man crew, or cash/check as current official pricing (Kristina Cline, 5 years ago, customer-said).",
+    "Do not claim a website.",
+    "No Architect-signed two-service split in this packet.",
+    "Do not convert review-tagged services into certifications or guarantees.",
+    "Do not quote the 1-star material-pricing dispute as a testimonial; owner disputed; full texts not in packet.",
+    "Do not invent licensing, insurance, warranties, or financing."
+  ],
+  "architectSignOff": false
+}
