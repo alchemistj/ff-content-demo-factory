@@ -1,0 +1,47 @@
+{
+  "stage": "writer2-architect-qa",
+  "role": "independent-architect-qa",
+  "recordedBeforeAudit": true,
+  "recordedAt": "2026-08-26T17:02:00Z",
+  "source": "cursor-cloud run-info MCP on this run, before production-copy audit",
+  "run": {
+    "bcId": "bc-e6ca4c27-31b8-4754-8baa-5ab0a024d2ad",
+    "name": "Writer 2 architect QA",
+    "url": "https://cursor.com/agents/bc-e6ca4c27-31b8-4754-8baa-5ab0a024d2ad",
+    "source": "scm",
+    "githubIssueId": "14",
+    "branchName": null
+  },
+  "requested": "Grok 4.6 with Fast Off",
+  "observedOriginalModelName": "cursor-grok-4.6-high",
+  "fastOff": true,
+  "fastVariantRejected": "cursor-grok-4.6-high-fast was not the run model",
+  "independence": {
+    "notWriter2": "bc-96aa2636-7d6d-48f1-a546-2c064a1b89e3",
+    "notWriter1": "bc-ab1911ff-c34a-45e0-b7ee-79f4d72dad2c",
+    "notWriter1ArchitectQa": "bc-7aa7c250-fa2b-4c33-a9a3-79ad51ebad82"
+  },
+  "reviewedObject": {
+    "writer2Branch": "cursor/swifts-writer2-home-contact-89e3",
+    "writer2ExactHead": "52e3528ef8f886e058547b5091ffe4d4f50e6fa1",
+    "writer2Pr": "https://github.com/alchemistj/ff-content-demo-factory/pull/13",
+    "readablePackage": "canary/outputs/writer2-package-so-far.md"
+  },
+  "scope": [
+    "Homepage /",
+    "Contact /contact",
+    "header/menu",
+    "footer",
+    "Writer 1 preservation",
+    "complete package-so-far readability"
+  ],
+  "outOfScope": [
+    "production-copy rewrite",
+    "Writer 3 Strategy Overview",
+    "website build",
+    "deployment",
+    "merge",
+    "Human Gate 2 approval",
+    "Josh action"
+  ]
+}
