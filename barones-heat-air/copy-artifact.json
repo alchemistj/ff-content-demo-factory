@@ -30,17 +30,17 @@
         },
         {
           "heading": "Two Jobs People Already Hired",
-          "body": "Customers wrote about two different kinds of work, so this mockup has two service pages. One is same-day diagnosis and AC or heat-pump repair. The other is a new unit, with the old unit taken away, including careful work in old houses and attics.",
+          "body": "This mockup has two service pages. One is AC and heat-pump repair. The other is a new HVAC installation.",
           "bullets": [
             "Homepage — Brad, the Joplin shop, both paths, call (417) 529-0227",
             "AC repair — diagnosis and repair",
-            "HVAC installation — new unit and haul-away",
+            "HVAC installation — a new system",
             "Contact — address, hours, Brad, same phone"
           ]
         },
         {
           "heading": "Reviews on the Listing",
-          "body": "The listing reports 124 reviews, about 117 with text. This mockup quotes named customers from that listing. Same-day visits, explained options, no upsell, haul-away, and a window unit overnight stay next to the people who said them.",
+          "body": "The listing reports 124 reviews, about 117 with text. This mockup quotes named customers from that listing.",
           "bullets": [
             "124 reviews on the listing",
             "About 117 with text",
@@ -162,7 +162,7 @@
       "hero": {
         "eyebrow": "AC Repair · Joplin, MO",
         "heading": "AC Repair in Joplin When the House Gets Hot",
-        "subheading": "Call (417) 529-0227. Brad and the crew diagnose what failed, explain your options, and get cooling back on. People who hired us talk about same-day visits.",
+        "subheading": "Call (417) 529-0227. Brad and the crew diagnose what failed, explain your options, and get cooling back on.",
         "primaryCta": "Call (417) 529-0227",
         "secondaryCta": "See installation"
       },
@@ -237,8 +237,8 @@
       "metaDescription": "HVAC installation in Joplin, MO from Barone's Heat & Air — a new unit and the old one hauled away, including careful work in older homes.",
       "hero": {
         "eyebrow": "HVAC Installation · Joplin, MO",
-        "heading": "New HVAC in Joplin, Old Unit Hauled Away",
-        "subheading": "When the old system is done, Brad's crew installs a new unit and takes the old one with them. Call (417) 529-0227. Neighbors talk about careful work in old closets and attics.",
+        "heading": "HVAC Installation in Joplin, MO",
+        "subheading": "Call (417) 529-0227. Brad's crew installs a new unit and walks you through the job at the house.",
         "primaryCta": "Call (417) 529-0227",
         "secondaryCta": "See AC repair"
       },
@@ -343,7 +343,7 @@
         },
         {
           "heading": "Hours",
-          "body": "Google shows Tuesday through Friday 8 AM–6 PM, Saturday 8 AM–12 PM, and Sunday closed. Labor Day Monday is shown closed.",
+          "body": "Tuesday through Friday 8 AM–6 PM. Saturday 8 AM–12 PM. Sunday closed. Closed Labor Day Monday.",
           "bullets": [
             "Tue–Fri: 8 AM–6 PM",
             "Sat: 8 AM–12 PM",
@@ -379,7 +379,7 @@
         },
         {
           "question": "When are you open?",
-          "answer": "Tuesday through Friday 8 AM–6 PM, Saturday 8 AM–12 PM, Sunday closed. Labor Day Monday is shown closed."
+          "answer": "Tuesday through Friday 8 AM–6 PM, Saturday 8 AM–12 PM, Sunday closed. Closed Labor Day Monday."
         }
       ]
     }
