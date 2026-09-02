@@ -1,0 +1,135 @@
+{
+  "schemaVersion": "1.0.0",
+  "slug": "sheres-construction-handyman",
+  "voiceReferences": [
+    "TEK",
+    "Healing Hearts",
+    "Ozarks"
+  ],
+  "voiceNote": "Use those three for voice and evidence density, not page count. Fence staying thin is the quality bar.",
+  "phoneChrome": "(417) 385-8899",
+  "quoteSource": "reviews-apify.json only (109 texts). Listing reports 116. Do not invent the seven missing listing texts.",
+  "intendedStructure": {
+    "Why We Built This": [
+      "Hero (Fluid Frame, dual CTA into homepage)",
+      "No website, unused listing",
+      "Two paths from customer jobs",
+      "Fence page stays short",
+      "What we do not claim",
+      "Final CTA"
+    ],
+    "Homepage": [
+      "Hero (identity + dual CTA, no unattributed slogans)",
+      "Who we are (Keaton, NAP, hours)",
+      "Two kinds of work",
+      "Named quotes distributed",
+      "FAQ",
+      "Final CTA"
+    ],
+    "Handyman Repairs Joplin MO": [
+      "Hero",
+      "Opening with primary keyword",
+      "Named on-time and cleanup stories",
+      "Apartment setup",
+      "Dryer vent in a 90-year house",
+      "Sink and faucet (James only via LWilliams Masters)",
+      "FAQ",
+      "Final CTA"
+    ],
+    "Fence Installation Joplin MO": [
+      "Hero (no fence-in-no-time slogan)",
+      "Short opening",
+      "Julie North quote",
+      "Call to start",
+      "Short FAQ"
+    ],
+    "Contact": [
+      "Hero",
+      "NAP, phone, hours",
+      "What to have ready",
+      "FAQ"
+    ]
+  },
+  "sketchDepartures": [
+    {
+      "page": "Why We Built This",
+      "departure": "No FAQ. No slug inventory. No factory terms.",
+      "reason": "Customer-visible strategy page may name the missing site and 116 reviews; it must not leak pack language or route files."
+    },
+    {
+      "page": "Fence Installation Joplin MO",
+      "departure": "Fewer sections than the handyman page; one named quote.",
+      "reason": "Only Julie North is a positive fence-and-gate write-up. Padding with decks, roofs, or patios would invent a second outdoor product."
+    },
+    {
+      "page": "Homepage",
+      "departure": "Footer and hero omit unattributed on-time, cleanup, and fence-speed lines.",
+      "reason": "Those outcomes live next to named quotes only."
+    },
+    {
+      "page": "Contact",
+      "departure": "No capture language about Google or listings.",
+      "reason": "Contact is NAP, phone, and hours."
+    }
+  ],
+  "anchorEvidence": [
+    {
+      "author": "Carol Scheerer",
+      "pages": [
+        "Homepage",
+        "Handyman Repairs Joplin MO"
+      ]
+    },
+    {
+      "author": "Andrew Anthony",
+      "pages": [
+        "Homepage",
+        "Handyman Repairs Joplin MO"
+      ]
+    },
+    {
+      "author": "Siji Ajayi",
+      "pages": [
+        "Handyman Repairs Joplin MO"
+      ]
+    },
+    {
+      "author": "Beth",
+      "pages": [
+        "Handyman Repairs Joplin MO"
+      ]
+    },
+    {
+      "author": "Colleen Butkovich",
+      "pages": [
+        "Handyman Repairs Joplin MO"
+      ]
+    },
+    {
+      "author": "LWilliams Masters",
+      "pages": [
+        "Handyman Repairs Joplin MO"
+      ],
+      "note": "Only quote that may name James on this package."
+    },
+    {
+      "author": "Julie North",
+      "pages": [
+        "Homepage",
+        "Fence Installation Joplin MO"
+      ]
+    },
+    {
+      "author": "Elizabeth Ritchey",
+      "pages": [
+        "Homepage"
+      ],
+      "note": "Only home quote that names Kenneth."
+    }
+  ],
+  "doNotQuoteAsTestimonial": [
+    "gary williams (1-star chain-link fence complaint)",
+    "Kevin Schroer (1-star; inventory excerpt was a pricing dispute)",
+    "Kristina Cline rate line ($80/hr two-man cash-check \u2014 customer-said, old; not a current rate)"
+  ]
+}

@@ -1,0 +1,222 @@
+{
+  "schemaVersion": "2.0.0",
+  "kind": "factory-review-inventory",
+  "slug": "sheres-construction-handyman",
+  "businessName": "Shere's construction & handyman",
+  "identity": {
+    "placeId": null,
+    "googleMapsUrl": null,
+    "businessName": "Shere's construction & handyman"
+  },
+  "gbpResolution": {
+    "status": "resolved",
+    "placeId": null,
+    "reason": "GBP identity captured from Maps UI for overnight packet; placeId not supplied.",
+    "candidateClass": "gbp-matched"
+  },
+  "retrieval": {
+    "status": "incomplete",
+    "completeness": "partial",
+    "proceedsVia": null,
+    "platform": "google",
+    "reviewsOrigin": "gbp-maps-ui-overnight-capture",
+    "listingReviewCount": 116,
+    "retrievedCount": 5,
+    "textReviewsCapturedSoFar": 40,
+    "capturedTextReviewsInPacket": 5,
+    "sufficiencyThreshold": 25,
+    "maxRequested": 50,
+    "sourceStage": "overnight-gbp-maps-ui",
+    "attemptedAt": "2026-09-01T22:39:03Z",
+    "readAt": "2026-09-01T22:39:03Z",
+    "failureReason": null,
+    "emptyTextDropped": 0,
+    "emptyTextPolicy": "Empty-text review records are dropped from reviews[] and recorded in droppedEmptyReviews. They never become customer-facing quotations. Listing totals still use the GBP-reported count, so empty-text drops can make a pull incomplete.",
+    "gapNote": "GBP 116 reviews; only 40 text reviews captured so far in discovery. This packet includes only the 5 verbatim/excerpt items in the Architect brief. Do not invent the remaining 35 captured texts or the rest of the 116."
+  },
+  "noGbpPath": {
+    "eligible": false,
+    "candidateClass": null,
+    "reason": null,
+    "authority": null
+  },
+  "platforms": [
+    {
+      "platform": "google",
+      "rating": 4.5,
+      "listingReviewCount": 116,
+      "retrievedCount": 5,
+      "reviewsOrigin": "gbp-maps-ui-overnight-capture",
+      "reviewsDistribution": null,
+      "textRetrieved": true,
+      "textRead": true,
+      "readProof": {
+        "method": "architect-brief-verbatim-quotes",
+        "readAt": "2026-09-01T22:39:03Z"
+      }
+    }
+  ],
+  "ratingDistribution": {
+    "1": 1,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 4,
+    "unrated": 0
+  },
+  "listingRatingDistribution": null,
+  "listingRating": 4.5,
+  "reviewTaggedServices": [
+    "general construction",
+    "demolition",
+    "fence",
+    "repairs",
+    "concrete patio",
+    "flooring",
+    "drywall",
+    "outdoor plumbing",
+    "appliance install"
+  ],
+  "reviews": [
+    {
+      "id": "sheres-construction-handyman:google:70726bfbabf3",
+      "platform": "google",
+      "source": "gbp-maps-ui-overnight-capture",
+      "author": "Sinna Stevenson",
+      "rating": 5,
+      "date": "2 months ago",
+      "when": "2 months ago",
+      "text": "service above and beyond",
+      "wordCount": 4,
+      "preflag": {
+        "meetsWordFloor": false,
+        "wordCount": 4,
+        "floor": 15,
+        "floorStatus": "proposed-15-issue-148-non-mold"
+      },
+      "heuristicGrade": "supporting",
+      "overnightAnchorCandidate": false,
+      "grade": "supporting",
+      "verificationState": "pending-model-judgment",
+      "authoritative": false,
+      "copyQuoteAllowed": true,
+      "referentJudgment": null,
+      "notes": "Packet supplied this short excerpt only. Thin; not overnight-anchor."
+    },
+    {
+      "id": "sheres-construction-handyman:google:cfd8d0b2455c",
+      "platform": "google",
+      "source": "gbp-maps-ui-overnight-capture",
+      "author": "Susan Heard",
+      "rating": 5,
+      "date": "6 months ago",
+      "when": "6 months ago",
+      "text": "neighbor tree limb and snow driveway, 24h response",
+      "wordCount": 8,
+      "preflag": {
+        "meetsWordFloor": false,
+        "wordCount": 8,
+        "floor": 15,
+        "floorStatus": "proposed-15-issue-148-non-mold"
+      },
+      "heuristicGrade": "supporting",
+      "overnightAnchorCandidate": true,
+      "grade": "supporting",
+      "verificationState": "pending-model-judgment",
+      "authoritative": false,
+      "copyQuoteAllowed": true,
+      "referentJudgment": null,
+      "notes": "Packet supplied this excerpt (tree limb, snow driveway, 24-hour response). Treat as excerpt, not a reconstructed paragraph."
+    },
+    {
+      "id": "sheres-construction-handyman:google:d890e165999e",
+      "platform": "google",
+      "source": "gbp-maps-ui-overnight-capture",
+      "author": "Kristina Cline",
+      "rating": 5,
+      "date": "5 years ago",
+      "when": "5 years ago",
+      "text": "$80/hr two man crew cash or check",
+      "wordCount": 7,
+      "preflag": {
+        "meetsWordFloor": false,
+        "wordCount": 7,
+        "floor": 15,
+        "floorStatus": "proposed-15-issue-148-non-mold"
+      },
+      "heuristicGrade": "supporting",
+      "overnightAnchorCandidate": false,
+      "grade": "supporting",
+      "verificationState": "pending-model-judgment",
+      "authoritative": false,
+      "copyQuoteAllowed": true,
+      "referentJudgment": null,
+      "notes": "Customer-said rate and payment method. Do not publish as current official pricing unless labeled customer-said and dated 5 years ago."
+    },
+    {
+      "id": "sheres-construction-handyman:google:f22fcb83e27b",
+      "platform": "google",
+      "source": "gbp-maps-ui-overnight-capture",
+      "author": "Joy Graham",
+      "rating": 5,
+      "date": "5 years ago",
+      "when": "5 years ago",
+      "text": "as a woman I felt safe",
+      "wordCount": 6,
+      "preflag": {
+        "meetsWordFloor": false,
+        "wordCount": 6,
+        "floor": 15,
+        "floorStatus": "proposed-15-issue-148-non-mold"
+      },
+      "heuristicGrade": "supporting",
+      "overnightAnchorCandidate": false,
+      "grade": "supporting",
+      "verificationState": "pending-model-judgment",
+      "authoritative": false,
+      "copyQuoteAllowed": true,
+      "referentJudgment": null,
+      "notes": "Safety sentiment; no specific job. Supporting only."
+    },
+    {
+      "id": "sheres-construction-handyman:google:a493a3a0d0fc",
+      "platform": "google",
+      "source": "gbp-maps-ui-overnight-capture",
+      "author": "Kevin Schroer",
+      "rating": 1,
+      "date": "3 years ago",
+      "when": "3 years ago",
+      "text": "material pricing dispute (owner disputed)",
+      "wordCount": 5,
+      "preflag": {
+        "meetsWordFloor": false,
+        "wordCount": 5,
+        "floor": 15,
+        "floorStatus": "proposed-15-issue-148-non-mold"
+      },
+      "heuristicGrade": "supporting",
+      "overnightAnchorCandidate": false,
+      "grade": "supporting",
+      "verificationState": "pending-model-judgment",
+      "authoritative": false,
+      "copyQuoteAllowed": false,
+      "referentJudgment": null,
+      "notes": "1-star material pricing dispute; owner disputed. copyQuoteAllowed false. Packet did not include full customer wording or the owner-reply text."
+    }
+  ],
+  "droppedEmptyReviews": [],
+  "classification": {
+    "wordCountFloor": 15,
+    "wordCountFloorStatus": "proposed-15-issue-148-non-mold",
+    "adoption": "model-judgment-required-issue-148-non-mold",
+    "anchorCount": 0,
+    "overnightAnchorCandidateCount": 1,
+    "supportingCount": 5,
+    "pendingModelJudgmentCount": 5,
+    "method": "deterministic-preflag+authoritative-model-referent",
+    "note": "Most packet texts are short excerpts, not full review bodies. Do not reconstruct fuller testimonials."
+  },
+  "quoteRule": "Quote only reviews[].text exactly as stored. Several items are brief excerpts from the packet, not full Google bodies. Do not invent additional reviews.",
+  "packageEvidenceGradeLikely": "C/B-thin-text-sample",
+  "packageEvidenceGradeRationale": "Listing volume is 116 at 4.5, but only 40 text reviews captured so far and this packet has 5 excerpts; several are too short for anchors. Gap must stay visible."
+}
