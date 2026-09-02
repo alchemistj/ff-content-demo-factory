@@ -1,0 +1,72 @@
+{
+  "slug": "barones-heat-air",
+  "businessName": "Barone's Heat & Air LLC",
+  "gbpName": "Barone's Heat & Air LLC",
+  "category": "Air conditioning contractor",
+  "categories": [
+    "Air conditioning contractor"
+  ],
+  "address": "1709 S Joplin Ave, Joplin, MO 64804",
+  "city": "Joplin",
+  "state": "MO",
+  "postalCode": "64804",
+  "phone": "(417) 529-0227",
+  "phoneTel": "tel:+14175290227",
+  "website": "http://www.barone-heat-air.com/",
+  "websiteStatus": "http-500",
+  "websiteCopySource": false,
+  "rating": 4.9,
+  "reviewCount": 124,
+  "hours": "Tue–Fri 8 AM–6 PM; Sat 8 AM–12 PM; Sun closed; Labor Day Mon closed",
+  "openingHoursRaw": [
+    {
+      "day": "Monday",
+      "hours": "Not listed as open on this capture; Labor Day Monday shown closed"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "8 AM–6 PM"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "8 AM–6 PM"
+    },
+    {
+      "day": "Thursday",
+      "hours": "8 AM–6 PM"
+    },
+    {
+      "day": "Friday",
+      "hours": "8 AM–6 PM"
+    },
+    {
+      "day": "Saturday",
+      "hours": "8 AM–12 PM"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Closed"
+    }
+  ],
+  "holidayHoursNoted": [
+    "Labor Day Monday closed"
+  ],
+  "owner": "Brad Barone",
+  "peopleNamedInUsableReviews": [
+    "Brad",
+    "Richard"
+  ],
+  "techsListedInBrief": [
+    "Richard",
+    "RJ",
+    "James"
+  ],
+  "techsExcludedPendingIdentity": [
+    {
+      "name": "Greg Adams",
+      "reason": "Only associated here via julia ansari / ACCI mention; flagged possible misplaced review. Do not treat as Barone staff."
+    }
+  ],
+  "market": "Joplin, MO",
+  "architectSignOff": false
+}

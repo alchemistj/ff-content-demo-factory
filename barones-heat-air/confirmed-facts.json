@@ -1,0 +1,99 @@
+{
+  "schemaVersion": "1.0.0",
+  "source": "overnight-gbp-maps-ui-architect-brief",
+  "verifiedAt": "2026-09-01",
+  "slug": "barones-heat-air",
+  "businessName": "Barone's Heat & Air LLC",
+  "phone": "(417) 529-0227",
+  "phoneDisplay": "(417) 529-0227",
+  "phonePlacement": {
+    "status": "resolved",
+    "headerHero": "(417) 529-0227",
+    "footer": "(417) 529-0227",
+    "doNotDisplay": [],
+    "confirmedNumbers": [
+      "(417) 529-0227"
+    ],
+    "decision": "Single confirmed GBP number",
+    "decidedBy": "overnight-packet"
+  },
+  "email": null,
+  "address": "1709 S Joplin Ave, Joplin, MO 64804",
+  "city": "Joplin",
+  "state": "MO",
+  "hours": "Tue–Fri 8 AM–6 PM; Sat 8 AM–12 PM; Sun closed; Labor Day Mon closed",
+  "rating": 4.9,
+  "reviewCount": 124,
+  "owner": "Brad Barone",
+  "people": {
+    "owner": "Brad Barone",
+    "namedInUsableReviews": [
+      "Brad",
+      "Richard"
+    ],
+    "techsListedInBriefNotIndependentlyVerifiedBeyondBrief": [
+      "RJ",
+      "James"
+    ],
+    "doNotCiteAsStaff": [
+      "Greg Adams"
+    ]
+  },
+  "firstPartyOwnerPost": {
+    "date": "2026-08-09",
+    "text": "Barone's Heat and Air For all your Heating & cooling needs in Joplin, Webb City, Carl Junction",
+    "kind": "first-party-gbp-post",
+    "notACustomerReview": true
+  },
+  "serviceAreaFromOwnerPost": [
+    "Joplin",
+    "Webb City",
+    "Carl Junction"
+  ],
+  "servicesFull": [],
+  "servicesObservedInReviewChips": [
+    "new unit installation",
+    "quick diagnosis",
+    "furnace check",
+    "quick fix",
+    "old unit removal",
+    "heat pump"
+  ],
+  "proposedServicesUnsigned": [
+    {
+      "intent": "new-unit-installation",
+      "label": "New unit installation",
+      "signed": false,
+      "evidence": "Review chips (new unit installation 4, old unit removal 2) plus Bill Hancock and Gail Wacker quotes."
+    },
+    {
+      "intent": "repair-emergency-service",
+      "label": "Repair / emergency service",
+      "signed": false,
+      "evidence": "Jim quote (two heaters Saturday, crew day off); chips quick diagnosis / quick fix / furnace check."
+    }
+  ],
+  "differentiators": [],
+  "foundingYear": null,
+  "credentials": [],
+  "promotions": [],
+  "brands": {
+    "goodman": {
+      "status": "customer-said-only",
+      "source": "review author VolVet03",
+      "rule": "Do not claim Goodman dealer."
+    }
+  },
+  "prohibitedClaims": [
+    "Do not invent reviews or paraphrase missing review text.",
+    "Do not use julia ansari, Greg Adams, or ACCI as Barone proof.",
+    "Do not claim Barone is a Goodman dealer (customer-said only, VolVet03; full text not in packet).",
+    "Do not use http://www.barone-heat-air.com/ as a copy or IA source (returns 500; dated).",
+    "Do not treat proposedServicesUnsigned as Architect-signed.",
+    "Do not convert review chips (knowledgeable staff, fair pricing, honest company, etc.) into standing guarantees.",
+    "Do not quote 1-star reviews as testimonials.",
+    "Do not invent licensing, certifications, warranties, financing, or years in business.",
+    "Monday regular hours were not listed as open on this capture; only Labor Day Monday closed was noted — do not invent Monday hours."
+  ],
+  "architectSignOff": false
+}

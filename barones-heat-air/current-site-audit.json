@@ -1,0 +1,18 @@
+{
+  "auditedUrl": "http://www.barone-heat-air.com/",
+  "websiteStatus": "http-500",
+  "copySource": false,
+  "iaSource": false,
+  "titleTag": null,
+  "h1": null,
+  "hasServicePages": false,
+  "hasMetaDescription": null,
+  "hasContactForm": null,
+  "mobileFriendlySignals": null,
+  "notableIssues": [
+    "Website returns HTTP 500 on this capture.",
+    "Site described as dated; not usable as copy or information-architecture source.",
+    "GBP is the identity/NAP/hours source for this packet."
+  ],
+  "verdict": "broken-or-dated-site; not a copy source"
+}
