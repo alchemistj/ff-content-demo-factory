@@ -1,0 +1,228 @@
+name: Architect 360 Words canary
+
+on:
+  push:
+    branches:
+      - architect/360-words-canary
+    paths:
+      - .factory-wake/360-words-control.json
+
+permissions:
+  contents: read
+  actions: read
+
+concurrency:
+  group: 360-words-canary-artifact-recovery
+  cancel-in-progress: false
+
+jobs:
+  writer1:
+    # Repository-owner authorship plus the control-file requestedBy check is
+    # the only wake authority. The dormant file exits before any secret/vendor
+    # step and never creates a Cursor job.
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - name: Checkout exact canary branch
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          fetch-depth: 2
+          persist-credentials: false
+
+      - name: Validate Architect control file and changed-path boundary
+        id: control
+        shell: bash
+        run: |
+          node scripts/360-words-control.mjs
+
+      - name: Set up Node for active wake
+        if: steps.control.outputs.dormant != 'true'
+        uses: actions/setup-node@ae0d4ed08881f17d1511386f5be3e62356acd4a6
+        with:
+          node-version: '24'
+
+      - name: Install locked dependencies
+        if: steps.control.outputs.dormant != 'true'
+        run: npm ci --ignore-scripts --no-audit --no-fund
+
+      - name: Validate sealed 360 handoff, pin, and four-route topology
+        id: sealed
+        shell: bash
+        run: |
+          mkdir -p canary/runtime canary/outputs
+          if [ "${{ steps.control.outputs.dormant }}" = "true" ]; then
+            node --input-type=module -e "import fs from 'node:fs'; fs.writeFileSync('canary/runtime/dormant.json', JSON.stringify({status:'dormant',stage:'writer1'}, null, 2)+'\\n')"
+          else
+            node --import tsx scripts/360-words-canary.ts --validate-only
+          fi
+
+      - name: Validate secret-backed Cursor runtime
+        if: steps.control.outputs.dormant != 'true'
+        shell: bash
+        env:
+          CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
+          CURSOR_MODEL: ${{ secrets.CURSOR_MODEL }}
+          CURSOR_FAST: 'false'
+        run: |
+          test -n "$CURSOR_API_KEY"
+          test "$CURSOR_MODEL" = "cursor-grok-4.6-high"
+          test "$CURSOR_FAST" = "false"
+
+      - name: Download and verify exact prior Writer1 dispatch artifact
+        if: steps.control.outputs.dormant != 'true' && (steps.control.outputs.recovery_version == 'words-writer1-artifact-recovery/v2' || steps.control.outputs.recovery_version == 'words-writer1-artifact-recovery/v3')
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          EXPECTED_ACTION_RUN_ID: '32785189225'
+          EXPECTED_ARTIFACT_ID: '9541802267'
+          EXPECTED_SOURCE_SHA: ${{ steps.control.outputs.source_sha }}
+          EXPECTED_V1_RECOVERY_ACTION_RUN_ID: '32793130502'
+          EXPECTED_V1_RECOVERY_ARTIFACT_ID: '9543869555'
+          EXPECTED_V1_RECOVERY_SOURCE_SHA: '6cf9b42e43e5728614a9b7302a8791e527197e3d'
+          EXPECTED_V1_RECOVERY_ARTIFACT_DIGEST: 'sha256:2d1d1c0d281917025be80898ab03c94171d59d1e2920ecf540b241f666464502'
+        run: |
+          set -euo pipefail
+          metadata="$(gh api "repos/${GITHUB_REPOSITORY}/actions/artifacts/${EXPECTED_ARTIFACT_ID}")"
+          test "$(jq -r '.id' <<<"$metadata")" = "$EXPECTED_ARTIFACT_ID"
+          test "$(jq -r '.workflow_run.id' <<<"$metadata")" = "$EXPECTED_ACTION_RUN_ID"
+          run="$(gh api "repos/${GITHUB_REPOSITORY}/actions/runs/${EXPECTED_ACTION_RUN_ID}")"
+          test "$(jq -r '.id' <<<"$run")" = "$EXPECTED_ACTION_RUN_ID"
+          test "$(jq -r '.head_branch' <<<"$run")" = 'architect/360-words-canary'
+          test "$(jq -r '.head_sha' <<<"$run")" = "$EXPECTED_SOURCE_SHA"
+          SEALED_HANDOFF_DIGEST="$(jq -r '.resealDigest' canary/sealed/360-four-page-reseal-handoff.json)"
+          mkdir -p canary/inputs/prior-dispatch-artifact
+          gh api "repos/${GITHUB_REPOSITORY}/actions/artifacts/${EXPECTED_ARTIFACT_ID}/zip" > canary/inputs/prior-writer1-dispatch.zip
+          unzip -q canary/inputs/prior-writer1-dispatch.zip -d canary/inputs/prior-dispatch-artifact
+          test -f canary/inputs/prior-dispatch-artifact/runtime/dispatch-receipt.json
+          cat > canary/inputs/prior-dispatch-artifact/runtime/source-verification.json <<JSON
+          {"actionRunId":"$EXPECTED_ACTION_RUN_ID","artifactId":$EXPECTED_ARTIFACT_ID,"headBranch":"architect/360-words-canary","headSha":"$EXPECTED_SOURCE_SHA","sealedHandoffDigest":"$SEALED_HANDOFF_DIGEST"}
+          JSON
+          v1_metadata="$(gh api "repos/${GITHUB_REPOSITORY}/actions/artifacts/${EXPECTED_V1_RECOVERY_ARTIFACT_ID}")"
+          test "$(jq -r '.id' <<<"$v1_metadata")" = "$EXPECTED_V1_RECOVERY_ARTIFACT_ID"
+          test "$(jq -r '.workflow_run.id' <<<"$v1_metadata")" = "$EXPECTED_V1_RECOVERY_ACTION_RUN_ID"
+          test "$(jq -r '.digest' <<<"$v1_metadata")" = "$EXPECTED_V1_RECOVERY_ARTIFACT_DIGEST"
+          v1_run="$(gh api "repos/${GITHUB_REPOSITORY}/actions/runs/${EXPECTED_V1_RECOVERY_ACTION_RUN_ID}")"
+          test "$(jq -r '.id' <<<"$v1_run")" = "$EXPECTED_V1_RECOVERY_ACTION_RUN_ID"
+          test "$(jq -r '.head_branch' <<<"$v1_run")" = 'architect/360-words-canary'
+          test "$(jq -r '.head_sha' <<<"$v1_run")" = "$EXPECTED_V1_RECOVERY_SOURCE_SHA"
+          mkdir -p canary/inputs/prior-v1-recovery-artifact
+          gh api "repos/${GITHUB_REPOSITORY}/actions/artifacts/${EXPECTED_V1_RECOVERY_ARTIFACT_ID}/zip" > canary/inputs/prior-v1-recovery.zip
+          test "$(sha256sum canary/inputs/prior-v1-recovery.zip | cut -d ' ' -f 1)" = "${EXPECTED_V1_RECOVERY_ARTIFACT_DIGEST#sha256:}"
+          unzip -q canary/inputs/prior-v1-recovery.zip -d canary/inputs/prior-v1-recovery-artifact
+          cat > canary/inputs/prior-v1-recovery-artifact/runtime/artifact-verification.json <<JSON
+          {"actionRunId":"$EXPECTED_V1_RECOVERY_ACTION_RUN_ID","artifactId":$EXPECTED_V1_RECOVERY_ARTIFACT_ID,"headBranch":"architect/360-words-canary","headSha":"$EXPECTED_V1_RECOVERY_SOURCE_SHA","artifactDigest":"$EXPECTED_V1_RECOVERY_ARTIFACT_DIGEST"}
+          JSON
+
+      - name: Download and verify exact failed v2 metadata-recovery artifact
+        if: steps.control.outputs.dormant != 'true' && steps.control.outputs.recovery_version == 'words-writer1-artifact-recovery/v3'
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          EXPECTED_V2_RECOVERY_ACTION_RUN_ID: '32795481394'
+          EXPECTED_V2_RECOVERY_ARTIFACT_ID: '9544693335'
+          EXPECTED_V2_RECOVERY_SOURCE_SHA: '29311637f3f4adc04f3dd9ca7bfc54f05df47c88'
+          EXPECTED_V2_RECOVERY_ARTIFACT_DIGEST: 'sha256:469f3b04eb502316404d98023df34c38e57e8cc6bf51d6dbfdbda12be3834e2f'
+        run: |
+          set -euo pipefail
+          v2_metadata="$(gh api "repos/${GITHUB_REPOSITORY}/actions/artifacts/${EXPECTED_V2_RECOVERY_ARTIFACT_ID}")"
+          test "$(jq -r '.id' <<<"$v2_metadata")" = "$EXPECTED_V2_RECOVERY_ARTIFACT_ID"
+          test "$(jq -r '.workflow_run.id' <<<"$v2_metadata")" = "$EXPECTED_V2_RECOVERY_ACTION_RUN_ID"
+          test "$(jq -r '.digest' <<<"$v2_metadata")" = "$EXPECTED_V2_RECOVERY_ARTIFACT_DIGEST"
+          v2_run="$(gh api "repos/${GITHUB_REPOSITORY}/actions/runs/${EXPECTED_V2_RECOVERY_ACTION_RUN_ID}")"
+          test "$(jq -r '.id' <<<"$v2_run")" = "$EXPECTED_V2_RECOVERY_ACTION_RUN_ID"
+          test "$(jq -r '.head_branch' <<<"$v2_run")" = 'architect/360-words-canary'
+          test "$(jq -r '.head_sha' <<<"$v2_run")" = "$EXPECTED_V2_RECOVERY_SOURCE_SHA"
+          mkdir -p canary/inputs/prior-v2-recovery-artifact
+          gh api "repos/${GITHUB_REPOSITORY}/actions/artifacts/${EXPECTED_V2_RECOVERY_ARTIFACT_ID}/zip" > canary/inputs/prior-v2-recovery.zip
+          test "$(sha256sum canary/inputs/prior-v2-recovery.zip | cut -d ' ' -f 1)" = "${EXPECTED_V2_RECOVERY_ARTIFACT_DIGEST#sha256:}"
+          unzip -q canary/inputs/prior-v2-recovery.zip -d canary/inputs/prior-v2-recovery-artifact
+          cat > canary/inputs/prior-v2-recovery-artifact/runtime/artifact-verification.json <<JSON
+          {"actionRunId":"$EXPECTED_V2_RECOVERY_ACTION_RUN_ID","artifactId":$EXPECTED_V2_RECOVERY_ARTIFACT_ID,"headBranch":"architect/360-words-canary","headSha":"$EXPECTED_V2_RECOVERY_SOURCE_SHA","artifactDigest":"$EXPECTED_V2_RECOVERY_ARTIFACT_DIGEST"}
+          JSON
+
+      - name: Download and verify exact failed v3 validation artifact
+        if: steps.control.outputs.dormant != 'true' && steps.control.outputs.recovery_version == 'words-writer1-artifact-recovery/v3-finalize'
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          EXPECTED_V3_FINALIZE_ACTION_RUN_ID: '32797811881'
+          EXPECTED_V3_FINALIZE_ARTIFACT_ID: '9545486318'
+          EXPECTED_V3_FINALIZE_SOURCE_SHA: '6d5f9e0f65af98185b6827b445cbfeff74e88ce7'
+          EXPECTED_V3_FINALIZE_ARTIFACT_DIGEST: 'sha256:23eac7a38caf588f383e424bd7bf39e5246f5634c7c06866d8e94250e6fe710e'
+        run: |
+          set -euo pipefail
+          metadata="$(gh api "repos/${GITHUB_REPOSITORY}/actions/artifacts/${EXPECTED_V3_FINALIZE_ARTIFACT_ID}")"
+          test "$(jq -r '.id' <<<"$metadata")" = "$EXPECTED_V3_FINALIZE_ARTIFACT_ID"
+          test "$(jq -r '.workflow_run.id' <<<"$metadata")" = "$EXPECTED_V3_FINALIZE_ACTION_RUN_ID"
+          test "$(jq -r '.digest' <<<"$metadata")" = "$EXPECTED_V3_FINALIZE_ARTIFACT_DIGEST"
+          run="$(gh api "repos/${GITHUB_REPOSITORY}/actions/runs/${EXPECTED_V3_FINALIZE_ACTION_RUN_ID}")"
+          test "$(jq -r '.id' <<<"$run")" = "$EXPECTED_V3_FINALIZE_ACTION_RUN_ID"
+          test "$(jq -r '.head_branch' <<<"$run")" = 'architect/360-words-canary'
+          test "$(jq -r '.head_sha' <<<"$run")" = "$EXPECTED_V3_FINALIZE_SOURCE_SHA"
+          mkdir -p canary/inputs/latest-v3-finalize-artifact
+          gh api "repos/${GITHUB_REPOSITORY}/actions/artifacts/${EXPECTED_V3_FINALIZE_ARTIFACT_ID}/zip" > canary/inputs/latest-v3-finalize.zip
+          test "$(sha256sum canary/inputs/latest-v3-finalize.zip | cut -d ' ' -f 1)" = "${EXPECTED_V3_FINALIZE_ARTIFACT_DIGEST#sha256:}"
+          unzip -q canary/inputs/latest-v3-finalize.zip -d canary/inputs/latest-v3-finalize-artifact
+          cat > canary/inputs/latest-v3-finalize-artifact/runtime/artifact-verification.json <<JSON
+          {"actionRunId":"$EXPECTED_V3_FINALIZE_ACTION_RUN_ID","artifactId":$EXPECTED_V3_FINALIZE_ARTIFACT_ID,"headBranch":"architect/360-words-canary","headSha":"$EXPECTED_V3_FINALIZE_SOURCE_SHA","artifactDigest":"$EXPECTED_V3_FINALIZE_ARTIFACT_DIGEST"}
+          JSON
+
+      - name: Recover Writer1 artifact on the same Cursor thread and stop at Architect QA
+        id: dispatch
+        if: steps.control.outputs.dormant != 'true'
+        continue-on-error: true
+        shell: bash
+        env:
+          CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
+          CURSOR_MODEL: ${{ secrets.CURSOR_MODEL }}
+          CURSOR_FAST: 'false'
+          WRITER1_PRIOR_DISPATCH_ROOT: canary/inputs/prior-dispatch-artifact
+          WRITER1_PRIOR_RECOVERY_ROOT: canary/inputs/prior-v1-recovery-artifact
+          WRITER1_PRIOR_RECOVERY_V2_ROOT: canary/inputs/prior-v2-recovery-artifact
+          WRITER1_LATEST_V3_FINALIZE_ROOT: canary/inputs/latest-v3-finalize-artifact
+        run: node --import tsx scripts/360-words-canary.ts --artifact-recovery
+
+      - name: Write durable failure/state surface
+        if: always()
+        shell: bash
+        run: |
+          mkdir -p canary/runtime canary/outputs
+          test -f canary/runtime/state.json || node --input-type=module -e "import fs from 'node:fs'; fs.writeFileSync('canary/runtime/state.json', JSON.stringify({status:'workflow-failed-before-writer1',stage:'writer1',runId:'32717620900'}, null, 2)+'\\n')"
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          import crypto from 'node:crypto';
+          const files = [];
+          const visit = (root) => { if (!fs.existsSync(root)) return; const stat = fs.statSync(root); if (stat.isDirectory()) for (const name of fs.readdirSync(root)) visit(`${root}/${name}`); else files.push(root); };
+          visit('canary/runtime'); visit('canary/outputs');
+          const manifest = files.sort().map((file) => `${crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex')}  ${file}`).join('\n') + '\n';
+          fs.writeFileSync('canary/runtime/manifest.sha256', manifest);
+          NODE
+
+      - name: Verify active artifacts contain no secret material
+        if: always() && steps.control.outputs.dormant != 'true'
+        shell: bash
+        env:
+          CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
+        run: |
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          const files = [];
+          const visit = (root) => { if (!fs.existsSync(root)) return; const stat = fs.statSync(root); if (stat.isDirectory()) for (const name of fs.readdirSync(root)) visit(`${root}/${name}`); else files.push(root); };
+          visit('canary/runtime'); visit('canary/outputs');
+          if (process.env.CURSOR_API_KEY && files.some((file) => fs.readFileSync(file).includes(Buffer.from(process.env.CURSOR_API_KEY)))) throw new Error('secret material detected in canary artifacts');
+          NODE
+
+      - name: Upload durable canary state, dispatch receipt, and output
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: 360-words-writer1-${{ github.run_id }}
+          path: |
+            canary/runtime
+            canary/outputs
+          if-no-files-found: error
+          retention-days: 30
+
+      - name: Preserve fail-closed result
+        if: always() && steps.control.outputs.dormant != 'true' && steps.dispatch.outcome != 'success'
+        run: exit 1

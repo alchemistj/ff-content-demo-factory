@@ -1,0 +1,45 @@
+{
+  "schemaVersion": "sealed-words-canary-manifest/v1",
+  "importedFrom": {
+    "commit": "4063cb7265d32f4d4739c1dc7724d5a6d3a8d381",
+    "path": "canary/outputs/360-four-page-reseal-handoff.json",
+    "blobSha": "5df3089350d1e713f50c5f7d9d789d2ba20295f3",
+    "byteLength": 525575,
+    "resealDigest": "sha256:715f651a53055444b8381dd8a276a2046d93776c61d88a2193cc2d42a1c83ad6"
+  },
+  "pinPath": "canary/sealed/360-trusted-pin.json",
+  "ledgerPath": "canary/sealed/360-service-coverage-ledger.json",
+  "projectionPath": "canary/sealed/360-service-coverage-projection.json",
+  "projectionDigest": "sha256:9da412699be2306d52a87286bc7d387ec2f57c3e0a31180f5e282aa75804de47",
+  "bridgePath": "canary/sealed/360-words-sealed-envelope-bridge.json",
+  "bridgeDigest": "sha256:e726375dcf2b1512a235db3e5d89652133870a65d7910d9995ae1fdadaf8c896",
+  "envelopeDigest": "sha256:ae06d6e141d2bc7dc9c2b194c54e317b389e9986100eecb4639ef80f29b6f3b6",
+  "approvalPath": "canary/sealed/360-four-page-approval.json",
+  "approvalDigest": "sha256:2ef42360dbb296f1c7600de0a8fa9d1b17d83b88b91333acd3a977813a97f269",
+  "sourceArtifacts": [
+    {
+      "path": "canary/sealed/360-service-coverage-ledger.json",
+      "sourcePath": "canary/inputs/360-four-page-reseal-ledger.json",
+      "commit": "4063cb7265d32f4d4739c1dc7724d5a6d3a8d381",
+      "blobSha": "440f88691f31ac2039119dbbaa4036aad4bcf8b9",
+      "byteLength": 5639,
+      "sha256Digest": "sha256:40b5b0e5833c03b55c6a6fa46b2f43e6565263aff1e008f6bc55d53cb2d61169"
+    },
+    {
+      "path": "canary/sealed/360-four-page-approval.json",
+      "sourcePath": "canary/inputs/360-four-page-reseal-approval.json",
+      "commit": "4063cb7265d32f4d4739c1dc7724d5a6d3a8d381",
+      "blobSha": "42a6c6026d78787e555b0ed50e9382517a898e75",
+      "byteLength": 367,
+      "sha256Digest": "sha256:e9f271facf08876bd59cfdacb04378f530048abb3d08893897736e92dfbbc64f"
+    }
+  ],
+  "prospectId": "prospect-32cd5e266a718b3eee2e",
+  "runId": "32717620900",
+  "artifactId": "9516514426",
+  "sourceSha": "81587f8422a23313fd7868751061eec7e2fb5926",
+  "approvedRoutes": ["/", "/garage-door-repair", "/garage-door-installation", "/contact"],
+  "writer1Routes": ["/garage-door-repair", "/garage-door-installation"],
+  "writer1Only": true,
+  "noVendorReseal": true
+}

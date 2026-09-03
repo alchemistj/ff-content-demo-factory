@@ -1,0 +1,115 @@
+{
+  "stage": "writer1",
+  "decision": "accept",
+  "writer2Released": true,
+  "rawArtifactApproved": false,
+  "normalizedOutputApprovedForWriter2": true,
+  "wordCountIsDiagnosticOnly": true,
+  "formerHardFloorRevoked": "at least 800 words each",
+  "independentArchitectReviewRequired": false,
+  "independentArchitectAccepted": true,
+  "acceptedRenderedWordsDigest": "sha256:3edce1acff28a00b3f0064664f8b1b4d2beab1a0a9fda5f92108442ce4d1460e",
+  "independentArchitectReviewedHead": "1b6ab7c9f174bfafdcd25487982933be06a42191",
+  "priorWaitingForArchitectRevoked": true,
+  "changedClaimReasons": [
+    "Repair: removed Jenny parts-arrival scheduling. Sealed evidence supports Jenny customer service/follow-up generally, not a parts-on-the-next-visit process.",
+    "Repair: replaced causal return-because-local/not-a-chain and always-same-person-diagnoses-and-repairs language with named completed-job facts only.",
+    "Installation: replaced 'when the slab is done' with natural homeowner language about needing a new door for the opening you have.",
+    "Installation: removed the Facebook-group discovery recital; it repeated how households found the shop rather than helping the purchase decision.",
+    "Installation: removed evidence-free evening-usability and two-opening staging advice. Kept paint-ready trim and on-site cleanup from named completed installs.",
+    "Home: replaced the awkward H1 with the sealed completed-jobs promise, without availability, speed, warranty, or pricing claims."
+  ],
+  "findings": [
+    "Independent Architect QA accepted Writer 1 copy quality at rendered digest sha256:3edce1acff28a00b3f0064664f8b1b4d2beab1a0a9fda5f92108442ce4d1460e from reviewed head 1b6ab7c9f174bfafdcd25487982933be06a42191. Acceptance is based on observable quality, not length.",
+    "Home, Repair, Installation, Contact, then internal Strategy are complete and directly readable.",
+    "Repair useful-body word count 817 (diagnostic only; not an accept reason). Installation useful-body word count 574 (diagnostic only; not an accept reason). Installation's 574-word count is accepted as an evidence-limited outcome: the sealed record supports only six completed new-door reviews after unsupported/generic material was removed. Do not pad it toward 650 or 800.",
+    "Repair and Installation serve distinct homeowner decisions without review-by-review recital, repeated closing summaries, internal audit language, or duplicated public quote display.",
+    "Public quotes were checked against the sealed 47-review evidence and appear once in public copy; corresponding repetitions in the internal evidence ledger are not duplicate public display.",
+    "Unsupported-claim scan found no 24/7, same-day, warranty, parts-arrival, slab/framing, Facebook, evening-staging, or fabricated specificity.",
+    "The strongest adjacent proof is retained in natural customer-facing language.",
+    "Duplicate-quote scan: each displayed quotation appears once; none are rendered as both inline copy and an adjacent blockquote.",
+    "Repetition scan: shop hours and weekend/weekday timing are handled once on the next-step section rather than restated through the page.",
+    "Quote fidelity: displayed quotations are contiguous sealed-review text with the original reviewer attribution.",
+    "Word count alone did not pass either page. The former hard 800-word floor is revoked.",
+    "Strict validator still rejects the quarantined bytes: only REVIEW_EVIDENCE_CLAIM_TEXT_DUPLICATE, first path /pages/0/reviewEvidence/0/reviewer.",
+    "normalizeWriter1PointerLedger removed 62 duplicated reviewer/excerpt keys and preserved semantic copy, identity, and provenance. Raw artifact remains unapproved.",
+    "Pointer-ledger normalization, strict dirty-ledger failure, quarantined raw digest/provenance, sealed evidence bindings, four-route topology, and no-merge/no-build/no-deploy boundary remain required."
+  ],
+  "sectionJobs": {
+    "/garage-door-repair": [
+      {
+        "section": "repair-when-to-call",
+        "job": "direct-answer",
+        "distinctPurpose": "Tells a homeowner when the door already in the opening is the job, using Chris Keaton\u2019s sagging-door visit as the lead example."
+      },
+      {
+        "section": "repair-whats-in-scope",
+        "job": "confirmed-scope",
+        "distinctPurpose": "Keeps springs, seals, tracks, rollers, and wiring on the parent repair page and uses one spring quote instead of reciting each related review."
+      },
+      {
+        "section": "repair-visit",
+        "job": "process",
+        "distinctPurpose": "Explains diagnosis first, then a now-versus-later choice, so the homeowner knows what the visit is for before parts are swapped."
+      },
+      {
+        "section": "repair-equipped",
+        "job": "visit-completion",
+        "distinctPurpose": "Sets the expectation that work can finish in the visit when the part is already on the truck. Does not invent a Jenny parts-arrival follow-up process."
+      },
+      {
+        "section": "repair-local-crew",
+        "job": "differentiator",
+        "distinctPurpose": "Names the Springfield shop, Jenny on the phone, and Will on site from completed jobs, without causal 'callers return because' or always-same-person generalizations."
+      },
+      {
+        "section": "repair-next",
+        "job": "next-step",
+        "distinctPurpose": "Handles hours and the weekday call once, without repeating timing caveats through the page."
+      }
+    ],
+    "/garage-door-installation": [
+      {
+        "section": "install-when",
+        "job": "direct-answer",
+        "distinctPurpose": "Defines installation as a new door for the opening you have, led by Marcie Spitzer\u2019s completed job and cleanup, and sends keep-the-door jobs to repair. No slab jargon or Facebook-group discovery recital."
+      },
+      {
+        "section": "install-selection",
+        "job": "selection",
+        "distinctPurpose": "Explains Jenny/Will selection help without inventing a model catalog or listing prices."
+      },
+      {
+        "section": "install-opening",
+        "job": "scope-fit",
+        "distinctPurpose": "Covers a taller door sized to an opening the homeowner already reframed, without a carpentry claim."
+      },
+      {
+        "section": "install-onsite",
+        "job": "finish-expectation",
+        "distinctPurpose": "Sets paint-ready trim and on-site cleanup as the finish standard from named completed installs, without evening-usability or staging advice."
+      },
+      {
+        "section": "install-next",
+        "job": "next-step",
+        "distinctPurpose": "Sends the homeowner to call with the opening size they already have, during listed weekday hours."
+      }
+    ]
+  },
+  "qualityScans": {
+    "duplicateQuotes": {
+      "repair": [],
+      "installation": []
+    },
+    "auditLanguage": [],
+    "forbiddenPublicPhrases": [],
+    "unsupportedClaims": "architect-accept",
+    "evidenceFidelity": "architect-accept",
+    "usefulBodyWordCounts": {
+      "repair": 817,
+      "installation": 574,
+      "role": "diagnostic-only"
+    },
+    "role": "independent-architect-accept-quality-not-length"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "words-writer3-output/v1",
+  "strategyOverview": {
+    "pageType": "strategy-overview",
+    "internal": true,
+    "title": "Strategy Overview \u2014 360 Garage Door and More words canary",
+    "body": "This is an internal Writer 3 artifact. It is not a public page and must not be linked from header, footer, or business CTAs.\n\nPublic topology is exactly four routes in reading order: Home `/`, Garage Door Repair `/garage-door-repair`, Garage Door Installation `/garage-door-installation`, and Contact `/contact`. Writer 1 authored a new pair of service pages from the sealed 360 prescription and the existing 47 written reviews, then applied a copy-only claim correction on the same lineage. The rejected padded copy lineage (`sha256:165d310ae1e30225b6278cc0fbde7d2cab23a60f186157c59734257519c01f89`) was not restored. Production validation still rejects the quarantined remote artifact because `reviewEvidence` carried word-bearing `reviewer` and `excerpt` keys. Factory pointer-ledger normalization removed those 62 duplicated keys, preserved dedicated copy, and left the quarantined source bytes unapproved.\n\nThe former hard 800-word floor is revoked. Word counts are diagnostic only. Independent Architect QA accepted Writer 1 copy quality at rendered digest `sha256:3edce1acff28a00b3f0064664f8b1b4d2beab1a0a9fda5f92108442ce4d1460e` from reviewed head `1b6ab7c9f174bfafdcd25487982933be06a42191`. Acceptance is based on observable quality, not length. Repair (817 useful-body words) and Installation (574) serve distinct homeowner decisions without review-by-review recital, repeated closing summaries, internal audit language, or duplicated public quote display. Installation's 574-word count is accepted as an evidence-limited outcome: the sealed record supports only six completed new-door reviews after unsupported/generic material was removed. Do not pad it toward 650 or 800.\n\nThe claim-correction pass removed Jenny parts-arrival process language, causal local/not-a-chain and always-same-person generalizations, installation slab jargon, Facebook-group discovery recital, and evidence-free evening-usability/staging advice, and revised the Home H1 to the sealed completed-jobs promise. After that independent Writer 1 accept, Writer 2 Home, Contact, header, and footer stay reconciled to the accepted Writer 1 copy using the same NAP, hours, and named people (Jenny / Will) without new vendor calls or public-copy expansion. Writer 3 records the fold: spring replacement, maintenance, seals, tracks, diagnostics, and related repair-family work stay on `/garage-door-repair`; opener and keypad work stay supporting evidence and do not receive public routes. Fresh Writer 2 and whole-site decisions were recorded after the independent Writer 1 accept; the revoked prior pass is not reused. State is awaiting-human-gate-2 / Needs Josh \u2014 Human Gate 2. Josh alone approves Human Gate 2 and any later merge. No build, merge, or deployment occurred.",
+    "sections": [
+      {
+        "heading": "Why these four pages",
+        "body": "The sealed four-page policy required Home, two review-backed service destinations, and Contact. Candidate services that were folded or passed over never become navigation items."
+      },
+      {
+        "heading": "Evidence binding",
+        "body": "Repair carries the larger authoritative completed-repair set, including folded spring-and-travel jobs quoted only as parent-page proof. Installation carries the completed new-door set. Home uses Cameron Spitzer as the prescribed lead because the review records completed doors plus a later check. Contact stays claim-light."
+      },
+      {
+        "heading": "Quality standard used for this correction",
+        "body": "Each service-page section must add a distinct homeowner decision, scope fact, process expectation, differentiator, or proof point. Word count alone must never pass a page. Do not pad to reach 800 or any other number, and do not cut useful evidence solely to fit a number. If evidence is thin, route the gap back to research or strategy rather than manufacturing generic copy."
+      },
+      {
+        "heading": "Claims that were refused",
+        "body": "No 24/7, weekend on-site, holiday dispatch, same-day SLA, one-hour arrival, or guaranteed rating. Hours remain Monday\u2013Friday 8 AM\u20135 PM. Retrieval count 47 and retrieval date 2026-08-23 stay in this internal artifact only."
+      }
+    ]
+  }
+}

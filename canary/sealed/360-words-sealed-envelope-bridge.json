@@ -1,0 +1,1003 @@
+{
+  "schemaVersion": "words-sealed-envelope-bridge/v1",
+  "source": {
+    "commit": "4063cb7265d32f4d4739c1dc7724d5a6d3a8d381",
+    "path": "canary/outputs/360-four-page-reseal-handoff.json",
+    "blobSha": "5df3089350d1e713f50c5f7d9d789d2ba20295f3",
+    "byteLength": 525575,
+    "resealDigest": "sha256:715f651a53055444b8381dd8a276a2046d93776c61d88a2193cc2d42a1c83ad6",
+    "envelopeDigest": "sha256:ae06d6e141d2bc7dc9c2b194c54e317b389e9986100eecb4639ef80f29b6f3b6",
+    "topLevelKeys": [
+      "approval",
+      "approvalDigest",
+      "archiveSha256",
+      "artifactRootIdentity",
+      "candidateServices",
+      "evidenceDigest",
+      "expansionOverride",
+      "foldedEvidence",
+      "handoffVersion",
+      "noVendorReseal",
+      "pageSetDigest",
+      "pages",
+      "policy",
+      "policyMode",
+      "prescriptionDigest",
+      "prospect",
+      "resealDigest",
+      "reviewAnalysisFacts",
+      "reviewInventory",
+      "runId",
+      "selectedServiceIds",
+      "serviceCoverageLedger",
+      "source",
+      "sourceArtifactDigest",
+      "stableReviewIds",
+      "trustedArtifact",
+      "valueHierarchy",
+      "vendorBoundaryProof",
+      "writerProjection"
+    ]
+  },
+  "routes": [
+    "/",
+    "/garage-door-repair",
+    "/garage-door-installation",
+    "/contact"
+  ],
+  "pageAssignments": {
+    "digest": "sha256:8c5627f1510c51508ad89d2930a7412c4c3c9b190b6de8dfff5c97d126c10c96",
+    "value": [
+      {
+        "pageId": "Home:/",
+        "type": "Home",
+        "route": "/",
+        "canonicalIntentId": null
+      },
+      {
+        "pageId": "Service:/garage-door-repair",
+        "type": "Service",
+        "route": "/garage-door-repair",
+        "canonicalIntentId": "garage-door-repair"
+      },
+      {
+        "pageId": "Service:/garage-door-installation",
+        "type": "Service",
+        "route": "/garage-door-installation",
+        "canonicalIntentId": "garage-door-installation"
+      },
+      {
+        "pageId": "Contact:/contact",
+        "type": "Contact",
+        "route": "/contact",
+        "canonicalIntentId": null
+      }
+    ]
+  },
+  "selectedServiceIds": {
+    "digest": "sha256:dbb1f982195881e40065bc6b5fe50ef727b6d5da8e3c439a05da474f72c498b9",
+    "value": [
+      "garage-door-installation",
+      "garage-door-repair"
+    ]
+  },
+  "policy": {
+    "digest": "sha256:d9bdbb0fccb5b9ae0761ce393f5321518702f8df143f3c90ef6c32c327ac09f1",
+    "value": {
+      "version": "business-page-policy-v1",
+      "mode": "standard",
+      "homeRoute": "/",
+      "contactRoute": "/contact",
+      "servicePageCount": 2,
+      "businessPageCount": 4
+    }
+  },
+  "approval": {
+    "digest": "sha256:9cfea3192d1da6c7100b8c84524a2c3e7d4505f2921eeea7b7e87e4c5c36caa5",
+    "value": {
+      "approvedBy": "Josh Lenz",
+      "approvedAt": "2026-08-24",
+      "approvedRoutes": [
+        "/",
+        "/garage-door-repair",
+        "/garage-door-installation",
+        "/contact"
+      ],
+      "runId": "32717620900",
+      "sourceSha": "81587f8422a23313fd7868751061eec7e2fb5926",
+      "decision": "standard-four-page-prescription",
+      "reason": "Josh approved standard four-page prescription for this prospect.",
+      "policyVersion": "business-page-policy-v1",
+      "approvedPageIds": [
+        "Contact:/contact",
+        "Home:/",
+        "Service:/garage-door-installation",
+        "Service:/garage-door-repair"
+      ],
+      "approvedCanonicalIntentIds": [
+        "garage-door-installation",
+        "garage-door-repair"
+      ],
+      "sourceArtifactDigest": "sha256:1525d7ad96da0b1b8213dfc38ac2068c94a87540aedbcb85f2bfe5738a4709e0",
+      "evidenceDigest": "sha256:0b01030ebdad4ece325a2cb390a79fd1c60ee985cfae6230f30701427486f504",
+      "pageSetDigest": "sha256:3111870c0acd262a030cb4a4b6ac56b9d6a3b83567321d5953b4e875d5cf364e",
+      "approvalDigest": "sha256:558fb8984c7bc516f265fdffd8c2321e4223cc0b6b85111fd6f36e7f54320742"
+    }
+  },
+  "approvalBindings": {
+    "sourceArtifactDigest": "sha256:1525d7ad96da0b1b8213dfc38ac2068c94a87540aedbcb85f2bfe5738a4709e0",
+    "evidenceDigest": "sha256:0b01030ebdad4ece325a2cb390a79fd1c60ee985cfae6230f30701427486f504",
+    "pageSetDigest": "sha256:3111870c0acd262a030cb4a4b6ac56b9d6a3b83567321d5953b4e875d5cf364e",
+    "prescriptionDigest": "sha256:c0c9a62b04fe950c0037b237f76c97384b203e056c60b9f967e63e7f2a1b57b9",
+    "approvalDigest": "sha256:558fb8984c7bc516f265fdffd8c2321e4223cc0b6b85111fd6f36e7f54320742"
+  },
+  "reviewAnalysisFacts": {
+    "digest": "sha256:b99340f18d84ad623c38363f44faf9cf41ca65123262ddd27c0e7a3837f6bfb9",
+    "value": {
+      "retrievedWrittenReviewCount": 47,
+      "reviewRetrievalDate": "2026-08-23",
+      "reviewBackedServicesWithoutPages": 2,
+      "reviewBackedServiceNames": [
+        "Garage door installation",
+        "Garage door repair"
+      ]
+    }
+  },
+  "reviewInventory": {
+    "digest": "sha256:f7fdb689749e5b3f19b0a92508d2ac10f8540d7c3e542711d65b6db748b065b0",
+    "stableReviewIds": [
+      "ChZDSUhNMG9nS0VJNng0b1B1N3NEY0ZBEAE",
+      "ChZDSUhNMG9nS0VJQ0FnSUR2cmFTZE93EAE",
+      "ChZDSUhNMG9nS0VJQ0FnSURQZ2NEbVJnEAE",
+      "ChZDSUhNMG9nS0VJQ0FnTUR3OW82cFpBEAE",
+      "ChZDSUhNMG9nS0VLeTZocG5jME9qc0t3EAE",
+      "ChZDSUhNMG9nS0VQR2ZxNUc5cjZhckdREAE",
+      "ChdDSUhNMG9nS0VJQ0FnSUNQN2FDS19BRRAB",
+      "ChdDSUhNMG9nS0VJQ0FnSURGa2JlSXRnRRAB",
+      "ChdDSUhNMG9nS0VJQ0FnSURQZ2RtWDFnRRAB",
+      "ChdDSUhNMG9nS0VJQ0FnSURmNlBfbXhBRRAB",
+      "ChdDSUhNMG9nS0VJQ0FnTUNBZ082YzBRRRAB",
+      "ChdDSUhNMG9nS0VJQ0FnTUNBbnNUOXB3RRAB",
+      "ChdDSUhNMG9nS0VJQ0FnTUNRdUpxN2xBRRAB",
+      "ChdDSUhNMG9nS0VJQ0FnTUNZNkplRm5BRRAB",
+      "ChdDSUhNMG9nS0VQcUM5dGpxNjRxcHJBRRAB",
+      "Ci9DQUlRQUNvZENodHljRjlvT201TVdWZGZSak00ZUhSQ2VVdHNYMWxFYTBFdE9XYxAB",
+      "Ci9DQUlRQUNvZENodHljRjlvT210NWFFVnBlVWxKZFVjd2FERnVMVFUwVjNKQ2IzYxAB",
+      "Ci9DQUlRQUNvZENodHljRjlvT21STFVuUnJUWE0xUkhCTFNWcFZMVWxrTlhjeVVrRRAB",
+      "Ci9DQUlRQUNvZENodHljRjlvT21STGNXUk1jMEZ1TmtsYVoyWlhTbEk1TjFsWWRHYxAB",
+      "Ci9DQUlRQUNvZENodHljRjlvT25JelNERXdhRFpIV0hscFUxOUxkakZtYzFaMWFXYxAB",
+      "Ci9DQUlRQUNvZENodHljRjlvT25OS09FRkhPRkptVVhoclIwdzRORVp6VTB0R1VIYxAB",
+      "Ci9DQUlRQUNvZENodHljRjlvT25OWmFVRldUa3BDZEhZMU5pMXZNRU53TTBwMVVGRRAB",
+      "Ci9DQUlRQUNvZENodHljRjlvT25jM2NVNTZlVzF0YVhCNVdXSlVZVEpmYW05UExYYxAB",
+      "Ci9DQUlRQUNvZENodHljRjlvT25jd1dqbEdSMjh6VlhCT1NGaEJkamszUlVSTWVVRRAB",
+      "Ci9DQUlRQUNvZENodHljRjlvT25oaE9HeFNXVUUyUmt0VlowSkJPVWRCWmpSTVZYYxAB",
+      "Ci9DQUlRQUNvZENodHljRjlvT25wemJWQkhVa3RWWTJKeVdYaFdlbFJOWlVGeFQxRRAB",
+      "Ci9DQUlRQUNvZENodHljRjlvT2pBMU5rSktSMmhHV1RKb2NVdE1TVXBOVFRsS01YYxAB",
+      "Ci9DQUlRQUNvZENodHljRjlvT2pSMllVdHZRMUJLYUcxeU4xOXhZVVpmVTBKMGIyYxAB",
+      "Ci9DQUlRQUNvZENodHljRjlvT2poTVF5MUJZa3R1ZDJ3NWJWWXlibTVEUzJaNGQzYxAB",
+      "Ci9DQUlRQUNvZENodHljRjlvT2psMlVHOVhVMDVrTFhwUlpWbDZjSFZUUjFKQlgwRRAB",
+      "Ci9DQUlRQUNvZENodHljRjlvT2t0T04xVlBSMU5oUmprMU9TMXNibmx6WjJ0cldHYxAB",
+      "Ci9DQUlRQUNvZENodHljRjlvT2t4alNtbDBaVVV4VVRselpIQTJhakpOYURSeE1HYxAB",
+      "Ci9DQUlRQUNvZENodHljRjlvT2tFNVJHNTNabU5MZFdzd2JURTVTRk53V2tFemNYYxAB",
+      "Ci9DQUlRQUNvZENodHljRjlvT2tKYVdtb3dXbTFzUVd4UlZ6Wk1RbHBLU0RWQ2RYYxAB",
+      "Ci9DQUlRQUNvZENodHljRjlvT2tRMVoybGhYM1JWUldwb2JVNXNXbFozWDBaMVNIYxAB",
+      "Ci9DQUlRQUNvZENodHljRjlvT2taQlh6VlZabU5OWjFKc2JISklTa1pXUlVwVGVuYxAB",
+      "Ci9DQUlRQUNvZENodHljRjlvT2tkUGVXaFdZMVpCVWxnNFFtbGtRVGhCYmkxbU1rRRAB",
+      "Ci9DQUlRQUNvZENodHljRjlvT2xCcFRrWlJaR2MwZUVkWVZFMDJWV2N0TFhOMmVsRRAB",
+      "Ci9DQUlRQUNvZENodHljRjlvT2xRMU5XcDNZMlJCWm1KS05tSkpVbEJqYjJ0NWIwRRAB",
+      "Ci9DQUlRQUNvZENodHljRjlvT2xSSU1YVXhWMDVDZWtWMVZtTm5SbGhHTld4amVGRRAB",
+      "Ci9DQUlRQUNvZENodHljRjlvT2xSWWMycFZlV3AxTldKcFpVZGxTalpGTUZSV1drRRAB",
+      "Ci9DQUlRQUNvZENodHljRjlvT2xVMWQxVlRXalppVmxoU1NHcG9hUzFtV2pSVmRIYxAB",
+      "Ci9DQUlRQUNvZENodHljRjlvT2xWdlZGQk9hMjFOUlhaVk5rczFVR2RKTlVKWlVGRRAB",
+      "Ci9DQUlRQUNvZENodHljRjlvT2xaeFFXcDRlRWhrTjFrMWRIUXlTazFhWW5aQlJFRRAB",
+      "Ci9DQUlRQUNvZENodHljRjlvT2xjeVFtOTRMV3BTTUc1Qk5VeFNhVTlJYW1GcFMwRRAB",
+      "Ci9DQUlRQUNvZENodHljRjlvT2xkeFNsRnBOMll0V2pGblFsQXljR0pIV0ZreE5VRRAB",
+      "Ci9DQUlRQUNvZENodHljRjlvT2xoRE1HZ3lUMWRpVWt3d1dsVXhjVE5XZEc1VWVuYxAB"
+    ],
+    "inventoryStableReviewIds": [
+      "ChZDSUhNMG9nS0VJNng0b1B1N3NEY0ZBEAE",
+      "ChZDSUhNMG9nS0VJQ0FnSUR2cmFTZE93EAE",
+      "ChZDSUhNMG9nS0VJQ0FnSURQZ2NEbVJnEAE",
+      "ChZDSUhNMG9nS0VJQ0FnTUR3OW82cFpBEAE",
+      "ChZDSUhNMG9nS0VLeTZocG5jME9qc0t3EAE",
+      "ChZDSUhNMG9nS0VQR2ZxNUc5cjZhckdREAE",
+      "ChdDSUhNMG9nS0VJQ0FnSUNQN2FDS19BRRAB",
+      "ChdDSUhNMG9nS0VJQ0FnSURGa2JlSXRnRRAB",
+      "ChdDSUhNMG9nS0VJQ0FnSURQZ2RtWDFnRRAB",
+      "ChdDSUhNMG9nS0VJQ0FnSURmNlBfbXhBRRAB",
+      "ChdDSUhNMG9nS0VJQ0FnTUNBZ082YzBRRRAB",
+      "ChdDSUhNMG9nS0VJQ0FnTUNBbnNUOXB3RRAB",
+      "ChdDSUhNMG9nS0VJQ0FnTUNRdUpxN2xBRRAB",
+      "ChdDSUhNMG9nS0VJQ0FnTUNZNkplRm5BRRAB",
+      "ChdDSUhNMG9nS0VQcUM5dGpxNjRxcHJBRRAB",
+      "Ci9DQUlRQUNvZENodHljRjlvT201TVdWZGZSak00ZUhSQ2VVdHNYMWxFYTBFdE9XYxAB",
+      "Ci9DQUlRQUNvZENodHljRjlvT210NWFFVnBlVWxKZFVjd2FERnVMVFUwVjNKQ2IzYxAB",
+      "Ci9DQUlRQUNvZENodHljRjlvT21STFVuUnJUWE0xUkhCTFNWcFZMVWxrTlhjeVVrRRAB",
+      "Ci9DQUlRQUNvZENodHljRjlvT21STGNXUk1jMEZ1TmtsYVoyWlhTbEk1TjFsWWRHYxAB",
+      "Ci9DQUlRQUNvZENodHljRjlvT25JelNERXdhRFpIV0hscFUxOUxkakZtYzFaMWFXYxAB",
+      "Ci9DQUlRQUNvZENodHljRjlvT25OS09FRkhPRkptVVhoclIwdzRORVp6VTB0R1VIYxAB",
+      "Ci9DQUlRQUNvZENodHljRjlvT25OWmFVRldUa3BDZEhZMU5pMXZNRU53TTBwMVVGRRAB",
+      "Ci9DQUlRQUNvZENodHljRjlvT25jM2NVNTZlVzF0YVhCNVdXSlVZVEpmYW05UExYYxAB",
+      "Ci9DQUlRQUNvZENodHljRjlvT25jd1dqbEdSMjh6VlhCT1NGaEJkamszUlVSTWVVRRAB",
+      "Ci9DQUlRQUNvZENodHljRjlvT25oaE9HeFNXVUUyUmt0VlowSkJPVWRCWmpSTVZYYxAB",
+      "Ci9DQUlRQUNvZENodHljRjlvT25wemJWQkhVa3RWWTJKeVdYaFdlbFJOWlVGeFQxRRAB",
+      "Ci9DQUlRQUNvZENodHljRjlvT2pBMU5rSktSMmhHV1RKb2NVdE1TVXBOVFRsS01YYxAB",
+      "Ci9DQUlRQUNvZENodHljRjlvT2pSMllVdHZRMUJLYUcxeU4xOXhZVVpmVTBKMGIyYxAB",
+      "Ci9DQUlRQUNvZENodHljRjlvT2poTVF5MUJZa3R1ZDJ3NWJWWXlibTVEUzJaNGQzYxAB",
+      "Ci9DQUlRQUNvZENodHljRjlvT2psMlVHOVhVMDVrTFhwUlpWbDZjSFZUUjFKQlgwRRAB",
+      "Ci9DQUlRQUNvZENodHljRjlvT2t0T04xVlBSMU5oUmprMU9TMXNibmx6WjJ0cldHYxAB",
+      "Ci9DQUlRQUNvZENodHljRjlvT2t4alNtbDBaVVV4VVRselpIQTJhakpOYURSeE1HYxAB",
+      "Ci9DQUlRQUNvZENodHljRjlvT2tFNVJHNTNabU5MZFdzd2JURTVTRk53V2tFemNYYxAB",
+      "Ci9DQUlRQUNvZENodHljRjlvT2tKYVdtb3dXbTFzUVd4UlZ6Wk1RbHBLU0RWQ2RYYxAB",
+      "Ci9DQUlRQUNvZENodHljRjlvT2tRMVoybGhYM1JWUldwb2JVNXNXbFozWDBaMVNIYxAB",
+      "Ci9DQUlRQUNvZENodHljRjlvT2taQlh6VlZabU5OWjFKc2JISklTa1pXUlVwVGVuYxAB",
+      "Ci9DQUlRQUNvZENodHljRjlvT2tkUGVXaFdZMVpCVWxnNFFtbGtRVGhCYmkxbU1rRRAB",
+      "Ci9DQUlRQUNvZENodHljRjlvT2xCcFRrWlJaR2MwZUVkWVZFMDJWV2N0TFhOMmVsRRAB",
+      "Ci9DQUlRQUNvZENodHljRjlvT2xRMU5XcDNZMlJCWm1KS05tSkpVbEJqYjJ0NWIwRRAB",
+      "Ci9DQUlRQUNvZENodHljRjlvT2xSSU1YVXhWMDVDZWtWMVZtTm5SbGhHTld4amVGRRAB",
+      "Ci9DQUlRQUNvZENodHljRjlvT2xSWWMycFZlV3AxTldKcFpVZGxTalpGTUZSV1drRRAB",
+      "Ci9DQUlRQUNvZENodHljRjlvT2xVMWQxVlRXalppVmxoU1NHcG9hUzFtV2pSVmRIYxAB",
+      "Ci9DQUlRQUNvZENodHljRjlvT2xWdlZGQk9hMjFOUlhaVk5rczFVR2RKTlVKWlVGRRAB",
+      "Ci9DQUlRQUNvZENodHljRjlvT2xaeFFXcDRlRWhrTjFrMWRIUXlTazFhWW5aQlJFRRAB",
+      "Ci9DQUlRQUNvZENodHljRjlvT2xjeVFtOTRMV3BTTUc1Qk5VeFNhVTlJYW1GcFMwRRAB",
+      "Ci9DQUlRQUNvZENodHljRjlvT2xkeFNsRnBOMll0V2pGblFsQXljR0pIV0ZreE5VRRAB",
+      "Ci9DQUlRQUNvZENodHljRjlvT2xoRE1HZ3lUMWRpVWt3d1dsVXhjVE5XZEc1VWVuYxAB"
+    ],
+    "reviewPacket": {
+      "requestedReviewLimit": 50,
+      "listingReviewCount": 110,
+      "retrievedReviewCount": 50,
+      "writtenReviewCount": 47,
+      "emptyTextReviewCount": 3,
+      "retrievalCompleteness": "complete",
+      "exactPlace": true,
+      "discoverySampleOnly": false
+    },
+    "classification": {
+      "reviewCount": 50,
+      "writtenReviewCount": 47,
+      "authoritativeJudgmentCount": 47
+    }
+  },
+  "candidateServices": {
+    "digest": "sha256:dc2716e823bb09e41b532fc40917b968cb0e5a976569cb145a2d6b6afcbe5018",
+    "value": [
+      {
+        "id": "garage-door-repair",
+        "name": "Garage door repair",
+        "status": "selected",
+        "includedPage": true,
+        "pageUrl": "/garage-door-repair",
+        "directCompletedEvidenceCount": 17,
+        "directEvidenceReviewIds": [
+          "Ci9DQUlRQUNvZENodHljRjlvT2t4alNtbDBaVVV4VVRselpIQTJhakpOYURSeE1HYxAB",
+          "Ci9DQUlRQUNvZENodHljRjlvT25OS09FRkhPRkptVVhoclIwdzRORVp6VTB0R1VIYxAB",
+          "Ci9DQUlRQUNvZENodHljRjlvT2xVMWQxVlRXalppVmxoU1NHcG9hUzFtV2pSVmRIYxAB",
+          "Ci9DQUlRQUNvZENodHljRjlvT201TVdWZGZSak00ZUhSQ2VVdHNYMWxFYTBFdE9XYxAB",
+          "Ci9DQUlRQUNvZENodHljRjlvT2xSSU1YVXhWMDVDZWtWMVZtTm5SbGhHTld4amVGRRAB",
+          "Ci9DQUlRQUNvZENodHljRjlvT25oaE9HeFNXVUUyUmt0VlowSkJPVWRCWmpSTVZYYxAB",
+          "Ci9DQUlRQUNvZENodHljRjlvT2xoRE1HZ3lUMWRpVWt3d1dsVXhjVE5XZEc1VWVuYxAB",
+          "Ci9DQUlRQUNvZENodHljRjlvT2t0T04xVlBSMU5oUmprMU9TMXNibmx6WjJ0cldHYxAB",
+          "Ci9DQUlRQUNvZENodHljRjlvT2xSWWMycFZlV3AxTldKcFpVZGxTalpGTUZSV1drRRAB",
+          "Ci9DQUlRQUNvZENodHljRjlvT21STGNXUk1jMEZ1TmtsYVoyWlhTbEk1TjFsWWRHYxAB",
+          "ChdDSUhNMG9nS0VQcUM5dGpxNjRxcHJBRRAB",
+          "ChZDSUhNMG9nS0VLeTZocG5jME9qc0t3EAE",
+          "ChZDSUhNMG9nS0VQR2ZxNUc5cjZhckdREAE",
+          "ChdDSUhNMG9nS0VJQ0FnTUNZNkplRm5BRRAB",
+          "ChdDSUhNMG9nS0VJQ0FnSURmNlBfbXhBRRAB",
+          "ChZDSUhNMG9nS0VJQ0FnSUR2cmFTZE93EAE",
+          "ChdDSUhNMG9nS0VJQ0FnSURQZ2RtWDFnRRAB"
+        ],
+        "passedOverReason": null,
+        "sourceServiceId": "garage-door-repair",
+        "canonicalServiceId": "garage-door-repair",
+        "canonicalIntentId": "garage-door-repair",
+        "destination": "service-assignment"
+      },
+      {
+        "id": "garage-door-installation",
+        "name": "Garage door installation",
+        "status": "selected",
+        "includedPage": true,
+        "pageUrl": "/garage-door-installation",
+        "directCompletedEvidenceCount": 5,
+        "directEvidenceReviewIds": [
+          "Ci9DQUlRQUNvZENodHljRjlvT2pBMU5rSktSMmhHV1RKb2NVdE1TVXBOVFRsS01YYxAB",
+          "Ci9DQUlRQUNvZENodHljRjlvT2xjeVFtOTRMV3BTTUc1Qk5VeFNhVTlJYW1GcFMwRRAB",
+          "Ci9DQUlRQUNvZENodHljRjlvT25jM2NVNTZlVzF0YVhCNVdXSlVZVEpmYW05UExYYxAB",
+          "Ci9DQUlRQUNvZENodHljRjlvT25JelNERXdhRFpIV0hscFUxOUxkakZtYzFaMWFXYxAB",
+          "ChZDSUhNMG9nS0VJNng0b1B1N3NEY0ZBEAE"
+        ],
+        "passedOverReason": null,
+        "sourceServiceId": "garage-door-installation",
+        "canonicalServiceId": "garage-door-installation",
+        "canonicalIntentId": "garage-door-installation",
+        "destination": "service-assignment"
+      },
+      {
+        "id": "garage-door-spring-replacement",
+        "name": "Supporting evidence family",
+        "status": "folded",
+        "includedPage": false,
+        "pageUrl": null,
+        "directCompletedEvidenceCount": 5,
+        "directEvidenceReviewIds": [
+          "Ci9DQUlRQUNvZENodHljRjlvT2tRMVoybGhYM1JWUldwb2JVNXNXbFozWDBaMVNIYxAB",
+          "Ci9DQUlRQUNvZENodHljRjlvT2taQlh6VlZabU5OWjFKc2JISklTa1pXUlVwVGVuYxAB",
+          "Ci9DQUlRQUNvZENodHljRjlvT2xkeFNsRnBOMll0V2pGblFsQXljR0pIV0ZreE5VRRAB",
+          "ChdDSUhNMG9nS0VJQ0FnTUNBbnNUOXB3RRAB",
+          "ChdDSUhNMG9nS0VJQ0FnTUNBZ082YzBRRRAB"
+        ],
+        "passedOverReason": "Supporting evidence is folded into the approved parent assignment.",
+        "sourceServiceId": "garage-door-spring-replacement",
+        "canonicalServiceId": "garage-door-repair",
+        "canonicalIntentId": "garage-door-repair",
+        "destination": null,
+        "foldedInto": "garage-door-repair",
+        "supportingEvidence": {
+          "allowedParentCanonicalId": "garage-door-repair",
+          "sourceServiceId": "garage-door-spring-replacement",
+          "reviewIds": [
+            "ChdDSUhNMG9nS0VJQ0FnTUNBZ082YzBRRRAB",
+            "ChdDSUhNMG9nS0VJQ0FnTUNBbnNUOXB3RRAB",
+            "Ci9DQUlRQUNvZENodHljRjlvT2tRMVoybGhYM1JWUldwb2JVNXNXbFozWDBaMVNIYxAB",
+            "Ci9DQUlRQUNvZENodHljRjlvT2taQlh6VlZabU5OWjFKc2JISklTa1pXUlVwVGVuYxAB",
+            "Ci9DQUlRQUNvZENodHljRjlvT2xkeFNsRnBOMll0V2pGblFsQXljR0pIV0ZreE5VRRAB"
+          ],
+          "statement": "Supporting evidence is folded into the approved Garage Door Repair assignment."
+        }
+      },
+      {
+        "id": "garage-door-opener-installation",
+        "name": "Supporting evidence family",
+        "status": "passed-over",
+        "includedPage": false,
+        "pageUrl": null,
+        "directCompletedEvidenceCount": 2,
+        "directEvidenceReviewIds": [
+          "Ci9DQUlRQUNvZENodHljRjlvT25OS09FRkhPRkptVVhoclIwdzRORVp6VTB0R1VIYxAB",
+          "ChZDSUhNMG9nS0VJQ0FnTUR3OW82cFpBEAE"
+        ],
+        "passedOverReason": "Supporting evidence is assigned to Home breadth only.",
+        "sourceServiceId": "garage-door-opener-installation",
+        "canonicalServiceId": "home-breadth",
+        "canonicalIntentId": "home-breadth",
+        "destination": "home-support",
+        "supportingEvidence": {
+          "allowedParentCanonicalId": "home-breadth",
+          "sourceServiceId": "garage-door-opener-installation",
+          "reviewIds": [
+            "ChZDSUhNMG9nS0VJQ0FnTUR3OW82cFpBEAE",
+            "Ci9DQUlRQUNvZENodHljRjlvT25OS09FRkhPRkptVVhoclIwdzRORVp6VTB0R1VIYxAB"
+          ],
+          "statement": "Supporting evidence remains within the approved Home breadth assignment."
+        },
+        "supportingEvidenceFor": "/"
+      },
+      {
+        "id": "garage-door-opener-replacement",
+        "name": "Supporting evidence family",
+        "status": "passed-over",
+        "includedPage": false,
+        "pageUrl": null,
+        "directCompletedEvidenceCount": 2,
+        "directEvidenceReviewIds": [
+          "Ci9DQUlRQUNvZENodHljRjlvT2xWdlZGQk9hMjFOUlhaVk5rczFVR2RKTlVKWlVGRRAB",
+          "Ci9DQUlRQUNvZENodHljRjlvT2tRMVoybGhYM1JWUldwb2JVNXNXbFozWDBaMVNIYxAB"
+        ],
+        "passedOverReason": "Supporting evidence is assigned to Home breadth only.",
+        "sourceServiceId": "garage-door-opener-replacement",
+        "canonicalServiceId": "home-breadth",
+        "canonicalIntentId": "home-breadth",
+        "destination": "home-support",
+        "supportingEvidence": {
+          "allowedParentCanonicalId": "home-breadth",
+          "sourceServiceId": "garage-door-opener-replacement",
+          "reviewIds": [
+            "Ci9DQUlRQUNvZENodHljRjlvT2tRMVoybGhYM1JWUldwb2JVNXNXbFozWDBaMVNIYxAB",
+            "Ci9DQUlRQUNvZENodHljRjlvT2xWdlZGQk9hMjFOUlhaVk5rczFVR2RKTlVKWlVGRRAB"
+          ],
+          "statement": "Supporting evidence remains within the approved Home breadth assignment."
+        },
+        "supportingEvidenceFor": "/"
+      },
+      {
+        "id": "garage-door-maintenance",
+        "name": "Garage door maintenance",
+        "status": "folded",
+        "includedPage": false,
+        "directCompletedEvidenceCount": 2,
+        "directEvidenceReviewIds": [
+          "Ci9DQUlRQUNvZENodHljRjlvT2psMlVHOVhVMDVrTFhwUlpWbDZjSFZUUjFKQlgwRRAB",
+          "Ci9DQUlRQUNvZENodHljRjlvT2xSSU1YVXhWMDVDZWtWMVZtTm5SbGhHTld4amVGRRAB"
+        ],
+        "passedOverReason": "Supporting evidence is folded into the approved parent assignment.",
+        "sourceServiceId": "garage-door-maintenance",
+        "canonicalServiceId": "garage-door-repair",
+        "canonicalIntentId": "garage-door-repair",
+        "pageUrl": null,
+        "destination": null,
+        "foldedInto": "garage-door-repair"
+      },
+      {
+        "id": "garage-door-service-repair",
+        "name": "Garage door service and repair",
+        "status": "folded",
+        "includedPage": false,
+        "directCompletedEvidenceCount": 2,
+        "directEvidenceReviewIds": [
+          "ChdDSUhNMG9nS0VQcUM5dGpxNjRxcHJBRRAB",
+          "ChZDSUhNMG9nS0VJQ0FnSUR2cmFTZE93EAE"
+        ],
+        "passedOverReason": "Supporting evidence is folded into the approved parent assignment.",
+        "sourceServiceId": "garage-door-service-repair",
+        "canonicalServiceId": "garage-door-repair",
+        "canonicalIntentId": "garage-door-repair",
+        "pageUrl": null,
+        "destination": null,
+        "foldedInto": "garage-door-repair"
+      },
+      {
+        "id": "garage-door-spring-repair",
+        "name": "Supporting evidence family",
+        "status": "folded",
+        "includedPage": false,
+        "pageUrl": null,
+        "directCompletedEvidenceCount": 1,
+        "directEvidenceReviewIds": [
+          "Ci9DQUlRQUNvZENodHljRjlvT25wemJWQkhVa3RWWTJKeVdYaFdlbFJOWlVGeFQxRRAB"
+        ],
+        "passedOverReason": "Supporting evidence is folded into the approved parent assignment.",
+        "sourceServiceId": "garage-door-spring-repair",
+        "canonicalServiceId": "garage-door-repair",
+        "canonicalIntentId": "garage-door-repair",
+        "destination": null,
+        "foldedInto": "garage-door-repair",
+        "supportingEvidence": {
+          "allowedParentCanonicalId": "garage-door-repair",
+          "sourceServiceId": "garage-door-spring-repair",
+          "reviewIds": [
+            "Ci9DQUlRQUNvZENodHljRjlvT25wemJWQkhVa3RWWTJKeVdYaFdlbFJOWlVGeFQxRRAB"
+          ],
+          "statement": "Supporting evidence is folded into the approved Garage Door Repair assignment."
+        }
+      },
+      {
+        "id": "garage-door-replacement",
+        "name": "Garage door replacement",
+        "status": "folded",
+        "includedPage": false,
+        "directCompletedEvidenceCount": 1,
+        "directEvidenceReviewIds": [
+          "Ci9DQUlRQUNvZENodHljRjlvT2xWdlZGQk9hMjFOUlhaVk5rczFVR2RKTlVKWlVGRRAB"
+        ],
+        "passedOverReason": "Supporting evidence is folded into the approved parent assignment.",
+        "sourceServiceId": "garage-door-replacement",
+        "canonicalServiceId": "garage-door-installation",
+        "canonicalIntentId": "garage-door-installation",
+        "pageUrl": null,
+        "destination": null,
+        "foldedInto": "garage-door-installation"
+      },
+      {
+        "id": "garage-door-opener",
+        "name": "Supporting evidence family",
+        "status": "passed-over",
+        "includedPage": false,
+        "directCompletedEvidenceCount": 1,
+        "directEvidenceReviewIds": [
+          "ChdDSUhNMG9nS0VJQ0FnSUNQN2FDS19BRRAB"
+        ],
+        "passedOverReason": "Supporting evidence is assigned to Home breadth only.",
+        "sourceServiceId": "garage-door-opener",
+        "canonicalServiceId": "home-breadth",
+        "canonicalIntentId": "home-breadth",
+        "pageUrl": null,
+        "destination": "home-support",
+        "supportingEvidence": {
+          "allowedParentCanonicalId": "home-breadth",
+          "sourceServiceId": "garage-door-opener",
+          "reviewIds": [
+            "ChdDSUhNMG9nS0VJQ0FnSUNQN2FDS19BRRAB"
+          ],
+          "statement": "Supporting evidence remains within the approved Home breadth assignment."
+        },
+        "supportingEvidenceFor": "/"
+      },
+      {
+        "id": "garage-door-keypad-installation",
+        "name": "Garage door keypad installation",
+        "status": "passed-over",
+        "includedPage": false,
+        "directCompletedEvidenceCount": 1,
+        "directEvidenceReviewIds": [
+          "Ci9DQUlRQUNvZENodHljRjlvT25wemJWQkhVa3RWWTJKeVdYaFdlbFJOWlVGeFQxRRAB"
+        ],
+        "passedOverReason": "Supporting evidence is assigned to Home breadth only.",
+        "sourceServiceId": "garage-door-keypad-installation",
+        "canonicalServiceId": "home-breadth",
+        "canonicalIntentId": "home-breadth",
+        "pageUrl": null,
+        "destination": "home-support",
+        "supportingEvidence": {
+          "allowedParentCanonicalId": "home-breadth",
+          "sourceServiceId": "garage-door-keypad-installation",
+          "reviewIds": [
+            "Ci9DQUlRQUNvZENodHljRjlvT25wemJWQkhVa3RWWTJKeVdYaFdlbFJOWlVGeFQxRRAB"
+          ],
+          "statement": "Supporting evidence remains within the approved Home breadth assignment."
+        },
+        "supportingEvidenceFor": "/"
+      },
+      {
+        "id": "garage-door-wiring-repair",
+        "name": "Garage door wiring repair",
+        "status": "folded",
+        "includedPage": false,
+        "directCompletedEvidenceCount": 1,
+        "directEvidenceReviewIds": [
+          "Ci9DQUlRQUNvZENodHljRjlvT2xVMWQxVlRXalppVmxoU1NHcG9hUzFtV2pSVmRIYxAB"
+        ],
+        "passedOverReason": "Supporting evidence is folded into the approved parent assignment.",
+        "sourceServiceId": "garage-door-wiring-repair",
+        "canonicalServiceId": "garage-door-repair",
+        "canonicalIntentId": "garage-door-repair",
+        "pageUrl": null,
+        "destination": null,
+        "foldedInto": "garage-door-repair"
+      },
+      {
+        "id": "garage-door-track-and-roller-service",
+        "name": "Garage door track and roller service",
+        "status": "folded",
+        "includedPage": false,
+        "directCompletedEvidenceCount": 1,
+        "directEvidenceReviewIds": [
+          "Ci9DQUlRQUNvZENodHljRjlvT2tRMVoybGhYM1JWUldwb2JVNXNXbFozWDBaMVNIYxAB"
+        ],
+        "passedOverReason": "Supporting evidence is folded into the approved parent assignment.",
+        "sourceServiceId": "garage-door-track-and-roller-service",
+        "canonicalServiceId": "garage-door-repair",
+        "canonicalIntentId": "garage-door-repair",
+        "pageUrl": null,
+        "destination": null,
+        "foldedInto": "garage-door-repair"
+      },
+      {
+        "id": "outdoor-pad-update",
+        "name": "Outdoor keypad/pad update",
+        "status": "passed-over",
+        "includedPage": false,
+        "directCompletedEvidenceCount": 1,
+        "directEvidenceReviewIds": [
+          "Ci9DQUlRQUNvZENodHljRjlvT2xSWWMycFZlV3AxTldKcFpVZGxTalpGTUZSV1drRRAB"
+        ],
+        "passedOverReason": "Supporting evidence is assigned to Home breadth only.",
+        "sourceServiceId": "outdoor-pad-update",
+        "canonicalServiceId": "home-breadth",
+        "canonicalIntentId": "home-breadth",
+        "pageUrl": null,
+        "destination": "home-support",
+        "supportingEvidence": {
+          "allowedParentCanonicalId": "home-breadth",
+          "sourceServiceId": "outdoor-pad-update",
+          "reviewIds": [
+            "Ci9DQUlRQUNvZENodHljRjlvT2xSWWMycFZlV3AxTldKcFpVZGxTalpGTUZSV1drRRAB"
+          ],
+          "statement": "Supporting evidence remains within the approved Home breadth assignment."
+        },
+        "supportingEvidenceFor": "/"
+      },
+      {
+        "id": "garage-door-seal",
+        "name": "Garage door bottom seal",
+        "status": "folded",
+        "includedPage": false,
+        "directCompletedEvidenceCount": 1,
+        "directEvidenceReviewIds": [
+          "ChdDSUhNMG9nS0VJQ0FnSURmNlBfbXhBRRAB"
+        ],
+        "passedOverReason": "Supporting evidence is folded into the approved parent assignment.",
+        "sourceServiceId": "garage-door-seal",
+        "canonicalServiceId": "garage-door-repair",
+        "canonicalIntentId": "garage-door-repair",
+        "pageUrl": null,
+        "destination": null,
+        "foldedInto": "garage-door-repair"
+      },
+      {
+        "id": "garage-door-diagnostics",
+        "name": "Garage door diagnostics",
+        "status": "folded",
+        "includedPage": false,
+        "directCompletedEvidenceCount": 1,
+        "directEvidenceReviewIds": [
+          "ChdDSUhNMG9nS0VJQ0FnSURQZ2RtWDFnRRAB"
+        ],
+        "passedOverReason": "Supporting evidence is folded into the approved parent assignment.",
+        "sourceServiceId": "garage-door-diagnostics",
+        "canonicalServiceId": "garage-door-repair",
+        "canonicalIntentId": "garage-door-repair",
+        "pageUrl": null,
+        "destination": null,
+        "foldedInto": "garage-door-repair"
+      },
+      {
+        "id": "garage-door-opener-remote",
+        "name": "Supporting evidence family",
+        "status": "passed-over",
+        "includedPage": false,
+        "directCompletedEvidenceCount": 1,
+        "directEvidenceReviewIds": [
+          "ChZDSUhNMG9nS0VJQ0FnSURQZ2NEbVJnEAE"
+        ],
+        "passedOverReason": "Supporting evidence is assigned to Home breadth only.",
+        "sourceServiceId": "garage-door-opener-remote",
+        "canonicalServiceId": "home-breadth",
+        "canonicalIntentId": "home-breadth",
+        "pageUrl": null,
+        "destination": "home-support",
+        "supportingEvidence": {
+          "allowedParentCanonicalId": "home-breadth",
+          "sourceServiceId": "garage-door-opener-remote",
+          "reviewIds": [
+            "ChZDSUhNMG9nS0VJQ0FnSURQZ2NEbVJnEAE"
+          ],
+          "statement": "Supporting evidence remains within the approved Home breadth assignment."
+        },
+        "supportingEvidenceFor": "/"
+      },
+      {
+        "id": "garage-door-lubrication",
+        "name": "Garage door lubrication",
+        "status": "folded",
+        "includedPage": false,
+        "directCompletedEvidenceCount": 1,
+        "directEvidenceReviewIds": [
+          "ChZDSUhNMG9nS0VJQ0FnSURQZ2NEbVJnEAE"
+        ],
+        "passedOverReason": "Supporting evidence is folded into the approved parent assignment.",
+        "sourceServiceId": "garage-door-lubrication",
+        "canonicalServiceId": "garage-door-repair",
+        "canonicalIntentId": "garage-door-repair",
+        "pageUrl": null,
+        "destination": null,
+        "foldedInto": "garage-door-repair"
+      },
+      {
+        "id": "garage-door-adjustment",
+        "name": "Garage door adjustment",
+        "status": "folded",
+        "includedPage": false,
+        "directCompletedEvidenceCount": 1,
+        "directEvidenceReviewIds": [
+          "ChZDSUhNMG9nS0VJQ0FnSURQZ2NEbVJnEAE"
+        ],
+        "passedOverReason": "Supporting evidence is folded into the approved parent assignment.",
+        "sourceServiceId": "garage-door-adjustment",
+        "canonicalServiceId": "garage-door-repair",
+        "canonicalIntentId": "garage-door-repair",
+        "pageUrl": null,
+        "destination": null,
+        "foldedInto": "garage-door-repair"
+      },
+      {
+        "id": "post-install-follow-up",
+        "name": "Post-install follow-up",
+        "status": "passed-over",
+        "includedPage": false,
+        "directCompletedEvidenceCount": 0,
+        "directEvidenceReviewIds": [],
+        "passedOverReason": "Supporting evidence is assigned to Home breadth only.",
+        "sourceServiceId": "post-install-follow-up",
+        "canonicalServiceId": "home-breadth",
+        "canonicalIntentId": "home-breadth",
+        "pageUrl": null,
+        "destination": "home-support",
+        "supportingEvidence": {
+          "allowedParentCanonicalId": "home-breadth",
+          "sourceServiceId": "post-install-follow-up",
+          "reviewIds": [],
+          "statement": "Supporting evidence remains within the approved Home breadth assignment."
+        },
+        "supportingEvidenceFor": "/"
+      },
+      {
+        "id": "app-setup",
+        "name": "Supporting evidence family",
+        "status": "passed-over",
+        "includedPage": false,
+        "directCompletedEvidenceCount": 0,
+        "directEvidenceReviewIds": [],
+        "passedOverReason": "Supporting evidence is assigned to Home breadth only.",
+        "sourceServiceId": "app-setup",
+        "canonicalServiceId": "home-breadth",
+        "canonicalIntentId": "home-breadth",
+        "pageUrl": null,
+        "destination": "home-support",
+        "supportingEvidence": {
+          "allowedParentCanonicalId": "home-breadth",
+          "sourceServiceId": "app-setup",
+          "reviewIds": [],
+          "statement": "Supporting evidence remains within the approved Home breadth assignment."
+        },
+        "supportingEvidenceFor": "/"
+      },
+      {
+        "id": "phone-support",
+        "name": "Phone support",
+        "status": "passed-over",
+        "includedPage": false,
+        "directCompletedEvidenceCount": 0,
+        "directEvidenceReviewIds": [],
+        "passedOverReason": "Supporting evidence is assigned to Home breadth only.",
+        "sourceServiceId": "phone-support",
+        "canonicalServiceId": "home-breadth",
+        "canonicalIntentId": "home-breadth",
+        "pageUrl": null,
+        "destination": "home-support",
+        "supportingEvidence": {
+          "allowedParentCanonicalId": "home-breadth",
+          "sourceServiceId": "phone-support",
+          "reviewIds": [],
+          "statement": "Supporting evidence remains within the approved Home breadth assignment."
+        },
+        "supportingEvidenceFor": "/"
+      },
+      {
+        "id": "garage-door",
+        "name": "Garage door (generic)",
+        "status": "passed-over",
+        "includedPage": false,
+        "directCompletedEvidenceCount": 0,
+        "directEvidenceReviewIds": [],
+        "passedOverReason": "Supporting evidence is assigned to Home breadth only.",
+        "sourceServiceId": "garage-door",
+        "canonicalServiceId": "home-breadth",
+        "canonicalIntentId": "home-breadth",
+        "pageUrl": null,
+        "destination": "home-support",
+        "supportingEvidence": {
+          "allowedParentCanonicalId": "home-breadth",
+          "sourceServiceId": "garage-door",
+          "reviewIds": [],
+          "statement": "Supporting evidence remains within the approved Home breadth assignment."
+        },
+        "supportingEvidenceFor": "/"
+      }
+    ]
+  },
+  "foldedEvidence": {
+    "digest": "sha256:4c80d53c831cae56118d5af1cce224d179b6b895e87f051db71454383d7d0dab",
+    "value": {
+      "garageDoorRepair": {
+        "reviewIds": [
+          "ChZDSUhNMG9nS0VJQ0FnSUR2cmFTZE93EAE",
+          "ChZDSUhNMG9nS0VJQ0FnSURQZ2NEbVJnEAE",
+          "ChdDSUhNMG9nS0VJQ0FnSURQZ2RtWDFnRRAB",
+          "ChdDSUhNMG9nS0VJQ0FnSURmNlBfbXhBRRAB",
+          "ChdDSUhNMG9nS0VJQ0FnTUNBZ082YzBRRRAB",
+          "ChdDSUhNMG9nS0VJQ0FnTUNBbnNUOXB3RRAB",
+          "ChdDSUhNMG9nS0VQcUM5dGpxNjRxcHJBRRAB",
+          "Ci9DQUlRQUNvZENodHljRjlvT25wemJWQkhVa3RWWTJKeVdYaFdlbFJOWlVGeFQxRRAB",
+          "Ci9DQUlRQUNvZENodHljRjlvT2psMlVHOVhVMDVrTFhwUlpWbDZjSFZUUjFKQlgwRRAB",
+          "Ci9DQUlRQUNvZENodHljRjlvT2tRMVoybGhYM1JWUldwb2JVNXNXbFozWDBaMVNIYxAB",
+          "Ci9DQUlRQUNvZENodHljRjlvT2taQlh6VlZabU5OWjFKc2JISklTa1pXUlVwVGVuYxAB",
+          "Ci9DQUlRQUNvZENodHljRjlvT2xSSU1YVXhWMDVDZWtWMVZtTm5SbGhHTld4amVGRRAB",
+          "Ci9DQUlRQUNvZENodHljRjlvT2xVMWQxVlRXalppVmxoU1NHcG9hUzFtV2pSVmRIYxAB",
+          "Ci9DQUlRQUNvZENodHljRjlvT2xkeFNsRnBOMll0V2pGblFsQXljR0pIV0ZreE5VRRAB"
+        ]
+      },
+      "home": {
+        "reviewIds": [
+          "ChZDSUhNMG9nS0VJQ0FnSURQZ2NEbVJnEAE",
+          "ChZDSUhNMG9nS0VJQ0FnTUR3OW82cFpBEAE",
+          "ChdDSUhNMG9nS0VJQ0FnSUNQN2FDS19BRRAB",
+          "Ci9DQUlRQUNvZENodHljRjlvT25OS09FRkhPRkptVVhoclIwdzRORVp6VTB0R1VIYxAB",
+          "Ci9DQUlRQUNvZENodHljRjlvT25wemJWQkhVa3RWWTJKeVdYaFdlbFJOWlVGeFQxRRAB",
+          "Ci9DQUlRQUNvZENodHljRjlvT2tRMVoybGhYM1JWUldwb2JVNXNXbFozWDBaMVNIYxAB",
+          "Ci9DQUlRQUNvZENodHljRjlvT2xSWWMycFZlV3AxTldKcFpVZGxTalpGTUZSV1drRRAB",
+          "Ci9DQUlRQUNvZENodHljRjlvT2xWdlZGQk9hMjFOUlhaVk5rczFVR2RKTlVKWlVGRRAB"
+        ]
+      }
+    }
+  },
+  "serviceCoverageLedger": {
+    "digest": "sha256:490c4d4844a895d97014c8a0d00a50dde2516e81af11f5a5fa31a51837b93573",
+    "value": {
+      "version": "canonical-service-coverage-ledger-v1",
+      "prospectId": "prospect-32cd5e266a718b3eee2e",
+      "placeId": "ChIJHa32AOi84YMR38BV93YKiS8",
+      "runId": "32717620900",
+      "sourceIdentity": {
+        "provider": "github-actions-artifact",
+        "runId": "32717620900",
+        "artifactId": "9516514426",
+        "sourceSha": "81587f8422a23313fd7868751061eec7e2fb5926",
+        "archiveName": "360-garage-door-gate1.zip",
+        "archiveSha256": "a5c948af6389b21786d9daf01106f1fd0662d7bf6bb0f21e078a4d7e2ecb1999",
+        "rootIdentity": "github-actions-artifact:9516514426"
+      },
+      "aliases": {
+        "garage-door-spring-replacement": "garage-door-repair",
+        "garage-door-spring-repair": "garage-door-repair",
+        "garage-door-maintenance": "garage-door-repair",
+        "garage-door-service-repair": "garage-door-repair",
+        "garage-door-wiring-repair": "garage-door-repair",
+        "garage-door-track-and-roller-service": "garage-door-repair",
+        "garage-door-seal": "garage-door-repair",
+        "garage-door-diagnostics": "garage-door-repair",
+        "garage-door-lubrication": "garage-door-repair",
+        "garage-door-adjustment": "garage-door-repair",
+        "garage-door-replacement": "garage-door-installation",
+        "garage-door-opener-installation": "home-breadth",
+        "garage-door-opener-replacement": "home-breadth",
+        "garage-door-opener": "home-breadth",
+        "garage-door-keypad-installation": "home-breadth",
+        "outdoor-pad-update": "home-breadth",
+        "garage-door-opener-remote": "home-breadth",
+        "post-install-follow-up": "home-breadth",
+        "app-setup": "home-breadth",
+        "phone-support": "home-breadth",
+        "garage-door": "home-breadth"
+      },
+      "services": [
+        {
+          "id": "garage-door-repair",
+          "name": "Garage door repair",
+          "reviewIds": [
+            "Ci9DQUlRQUNvZENodHljRjlvT2t4alNtbDBaVVV4VVRselpIQTJhakpOYURSeE1HYxAB",
+            "Ci9DQUlRQUNvZENodHljRjlvT25OS09FRkhPRkptVVhoclIwdzRORVp6VTB0R1VIYxAB",
+            "Ci9DQUlRQUNvZENodHljRjlvT2xVMWQxVlRXalppVmxoU1NHcG9hUzFtV2pSVmRIYxAB",
+            "Ci9DQUlRQUNvZENodHljRjlvT201TVdWZGZSak00ZUhSQ2VVdHNYMWxFYTBFdE9XYxAB",
+            "Ci9DQUlRQUNvZENodHljRjlvT2xSSU1YVXhWMDVDZWtWMVZtTm5SbGhHTld4amVGRRAB",
+            "Ci9DQUlRQUNvZENodHljRjlvT25oaE9HeFNXVUUyUmt0VlowSkJPVWRCWmpSTVZYYxAB",
+            "Ci9DQUlRQUNvZENodHljRjlvT2xoRE1HZ3lUMWRpVWt3d1dsVXhjVE5XZEc1VWVuYxAB",
+            "Ci9DQUlRQUNvZENodHljRjlvT2t0T04xVlBSMU5oUmprMU9TMXNibmx6WjJ0cldHYxAB",
+            "Ci9DQUlRQUNvZENodHljRjlvT2xSWWMycFZlV3AxTldKcFpVZGxTalpGTUZSV1drRRAB",
+            "Ci9DQUlRQUNvZENodHljRjlvT21STGNXUk1jMEZ1TmtsYVoyWlhTbEk1TjFsWWRHYxAB",
+            "ChdDSUhNMG9nS0VQcUM5dGpxNjRxcHJBRRAB",
+            "ChZDSUhNMG9nS0VLeTZocG5jME9qc0t3EAE",
+            "ChZDSUhNMG9nS0VQR2ZxNUc5cjZhckdREAE",
+            "ChdDSUhNMG9nS0VJQ0FnTUNZNkplRm5BRRAB",
+            "ChdDSUhNMG9nS0VJQ0FnSURmNlBfbXhBRRAB",
+            "ChZDSUhNMG9nS0VJQ0FnSUR2cmFTZE93EAE",
+            "ChdDSUhNMG9nS0VJQ0FnSURQZ2RtWDFnRRAB",
+            "Ci9DQUlRQUNvZENodHljRjlvT2tRMVoybGhYM1JWUldwb2JVNXNXbFozWDBaMVNIYxAB",
+            "Ci9DQUlRQUNvZENodHljRjlvT2taQlh6VlZabU5OWjFKc2JISklTa1pXUlVwVGVuYxAB",
+            "Ci9DQUlRQUNvZENodHljRjlvT2xkeFNsRnBOMll0V2pGblFsQXljR0pIV0ZreE5VRRAB",
+            "ChdDSUhNMG9nS0VJQ0FnTUNBbnNUOXB3RRAB",
+            "ChdDSUhNMG9nS0VJQ0FnTUNBZ082YzBRRRAB",
+            "Ci9DQUlRQUNvZENodHljRjlvT2psMlVHOVhVMDVrTFhwUlpWbDZjSFZUUjFKQlgwRRAB",
+            "Ci9DQUlRQUNvZENodHljRjlvT2xSSU1YVXhWMDVDZWtWMVZtTm5SbGhHTld4amVGRRAB",
+            "ChdDSUhNMG9nS0VJQ0FnSURQZ2RtWDFnRRAB",
+            "ChZDSUhNMG9nS0VJQ0FnSURQZ2NEbVJnEAE"
+          ],
+          "currentSitePageUrls": [],
+          "provenance": {
+            "source": "360 checkpoint cursorComparison plus explicit site audit",
+            "siteAuditUrls": [
+              "/",
+              "/services/",
+              "/contact/"
+            ]
+          },
+          "siteAuditCoverage": {
+            "inspected": true,
+            "inspectedPageUrls": [
+              "/",
+              "/services/",
+              "/contact/"
+            ],
+            "matchingPageUrls": [],
+            "hasCorrespondingPage": false,
+            "crawlRefs": [
+              "full-service-line"
+            ],
+            "absenceEvidence": {
+              "kind": "no-corresponding-service-page",
+              "crawlRefs": [
+                "full-service-line"
+              ]
+            }
+          }
+        },
+        {
+          "id": "garage-door-installation",
+          "name": "Garage door installation",
+          "reviewIds": [
+            "Ci9DQUlRQUNvZENodHljRjlvT2pBMU5rSktSMmhHV1RKb2NVdE1TVXBOVFRsS01YYxAB",
+            "Ci9DQUlRQUNvZENodHljRjlvT2xjeVFtOTRMV3BTTUc1Qk5VeFNhVTlJYW1GcFMwRRAB",
+            "Ci9DQUlRQUNvZENodHljRjlvT25jM2NVNTZlVzF0YVhCNVdXSlVZVEpmYW05UExYYxAB",
+            "Ci9DQUlRQUNvZENodHljRjlvT25JelNERXdhRFpIV0hscFUxOUxkakZtYzFaMWFXYxAB",
+            "ChZDSUhNMG9nS0VJNng0b1B1N3NEY0ZBEAE",
+            "Ci9DQUlRQUNvZENodHljRjlvT2xWdlZGQk9hMjFOUlhaVk5rczFVR2RKTlVKWlVGRRAB"
+          ],
+          "currentSitePageUrls": [],
+          "provenance": {
+            "source": "360 checkpoint cursorComparison plus explicit site audit",
+            "siteAuditUrls": [
+              "/",
+              "/services/",
+              "/contact/"
+            ]
+          },
+          "siteAuditCoverage": {
+            "inspected": true,
+            "inspectedPageUrls": [
+              "/",
+              "/services/",
+              "/contact/"
+            ],
+            "matchingPageUrls": [],
+            "hasCorrespondingPage": false,
+            "crawlRefs": [
+              "full-service-line"
+            ],
+            "absenceEvidence": {
+              "kind": "no-corresponding-service-page",
+              "crawlRefs": [
+                "full-service-line"
+              ]
+            }
+          }
+        },
+        {
+          "id": "home-breadth",
+          "name": "Home-level breadth",
+          "reviewIds": [
+            "Ci9DQUlRQUNvZENodHljRjlvT25OS09FRkhPRkptVVhoclIwdzRORVp6VTB0R1VIYxAB",
+            "ChZDSUhNMG9nS0VJQ0FnTUR3OW82cFpBEAE",
+            "ChdDSUhNMG9nS0VJQ0FnSUNQN2FDS19BRRAB",
+            "ChZDSUhNMG9nS0VJQ0FnSURQZ2NEbVJnEAE"
+          ],
+          "currentSitePageUrls": [
+            "/"
+          ],
+          "provenance": {
+            "source": "explicit Home-level breadth mapping; not a service destination"
+          },
+          "siteAuditCoverage": {
+            "inspected": true,
+            "inspectedPageUrls": [
+              "/",
+              "/services/",
+              "/contact/"
+            ],
+            "matchingPageUrls": [
+              "/"
+            ],
+            "hasCorrespondingPage": true,
+            "crawlRefs": [
+              "full-service-line"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "trustedArtifact": {
+    "digest": "sha256:ff6bf1d979c74e440ec7f0a22c2e62a29719b7fd8cc4d877aa6c400881748a96",
+    "value": {
+      "provider": "github-actions-artifact",
+      "runId": "32717620900",
+      "artifactId": "9516514426",
+      "sourceSha": "81587f8422a23313fd7868751061eec7e2fb5926",
+      "archiveName": "360-garage-door-gate1.zip",
+      "archiveSha256": "a5c948af6389b21786d9daf01106f1fd0662d7bf6bb0f21e078a4d7e2ecb1999",
+      "rootIdentity": "github-actions-artifact:9516514426"
+    }
+  },
+  "sourcePin": {
+    "artifactRootIdentity": "github-actions-artifact:9516514426",
+    "archiveSha256": "a5c948af6389b21786d9daf01106f1fd0662d7bf6bb0f21e078a4d7e2ecb1999"
+  },
+  "reseal": {
+    "sourceArtifactDigest": "sha256:1525d7ad96da0b1b8213dfc38ac2068c94a87540aedbcb85f2bfe5738a4709e0",
+    "evidenceDigest": "sha256:0b01030ebdad4ece325a2cb390a79fd1c60ee985cfae6230f30701427486f504",
+    "pageSetDigest": "sha256:3111870c0acd262a030cb4a4b6ac56b9d6a3b83567321d5953b4e875d5cf364e",
+    "prescriptionDigest": "sha256:c0c9a62b04fe950c0037b237f76c97384b203e056c60b9f967e63e7f2a1b57b9",
+    "approvalDigest": "sha256:558fb8984c7bc516f265fdffd8c2321e4223cc0b6b85111fd6f36e7f54320742",
+    "resealDigest": "sha256:715f651a53055444b8381dd8a276a2046d93776c61d88a2193cc2d42a1c83ad6"
+  }
+}

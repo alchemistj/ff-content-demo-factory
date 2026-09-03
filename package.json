@@ -1,0 +1,27 @@
+{
+  "name": "ff-content-demo-factory",
+  "version": "3.0.0",
+  "private": true,
+  "description": "Clean-room Human Gate 1 to Human Gate 2 Words Factory",
+  "type": "module",
+  "main": "./dist/src/index.js",
+  "types": "./dist/src/index.d.ts",
+  "exports": "./dist/src/index.js",
+  "dependencies": {
+    "@cursor/sdk": "^1.0.28"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "check": "tsc -p tsconfig.json --noEmit",
+    "test": "node --import tsx --test src/*/*.test.ts src/*/*/*.test.ts",
+    "test:all": "npm run check && npm test"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2"
+  }
+}
