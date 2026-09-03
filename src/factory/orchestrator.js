@@ -1,0 +1,365 @@
+'use strict';
+
+const fs = require('node:fs');
+const path = require('node:path');
+const { FINAL_STAGE, STAGES, loadState, writeState, acquireLock, enqueue, claimNext, transition } = require('./control-plane');
+const { MAX_DISCOVERY_CANDIDATES, stableCandidateIdentity, buildCandidateBench, architectSelect } = require('./candidates');
+const { buildClassificationArtifact } = require('../review-evidence/classify');
+const { buildPrescriptionEvidence } = require('../review-evidence/prescription');
+const { prescribe } = require('./prescription');
+const { digest, validateCompleteCanonicalLedger } = require('./prescription-policy');
+const { architectQa, renderGate1 } = require('./gate1');
+
+const REVIEW_LIMIT = 50;
+const nextAction = (code, message, extra = {}) => ({ code, owner: 'architect', message, ...extra });
+const currentRun = (state) => state.runs.find((run) => ['active', 'interrupted', FINAL_STAGE].includes(run.status)) || null;
+const configValue = (config, key, fallback) => Number.isFinite(config?.[key]) ? config[key] : fallback;
+
+function requireDiscoveryRequest(request) {
+  if (!request || !Array.isArray(request.searchStrings) || !request.searchStrings.length || !String(request.location || '').trim()) throw Object.assign(new Error('A fresh discovery request requires searchStrings and location'), { code: 'DISCOVERY_REQUEST_REQUIRED' });
+  return { searchStrings: request.searchStrings.map(String), location: String(request.location).trim() };
+}
+function discoveryAdapter(adapters) {
+  if (typeof adapters?.discovery?.discoverCandidates === 'function') return adapters.discovery.discoverCandidates.bind(adapters.discovery);
+  if (typeof adapters?.discovery?.discover === 'function') return adapters.discovery.discover.bind(adapters.discovery);
+  throw new TypeError('discovery adapter must implement discoverCandidates or discover');
+}
+function auditAdapter(adapters) {
+  if (typeof adapters?.websiteAudit?.audit === 'function') return adapters.websiteAudit.audit.bind(adapters.websiteAudit);
+  throw new TypeError('website audit adapter must implement audit');
+}
+function enrichmentAdapter(adapters) {
+  if (typeof adapters?.enrichment?.enrichFinalist === 'function') return adapters.enrichment.enrichFinalist.bind(adapters.enrichment);
+  if (typeof adapters?.enrichment?.enrichExactPlace === 'function') return adapters.enrichment.enrichExactPlace.bind(adapters.enrichment);
+  throw new TypeError('enrichment adapter must implement enrichFinalist or enrichExactPlace');
+}
+function judgeAdapter(adapters) {
+  if (typeof adapters?.reviewJudge?.judge === 'function') return adapters.reviewJudge.judge.bind(adapters.reviewJudge);
+  if (typeof adapters?.reviewJudge === 'function') return adapters.reviewJudge;
+  throw new TypeError('review judge adapter must implement judge');
+}
+function proposalAdapter(adapters) {
+  if (typeof adapters?.prescriber?.propose === 'function') return adapters.prescriber.propose.bind(adapters.prescriber);
+  if (typeof adapters?.prescriber?.prescribe === 'function') return adapters.prescriber.prescribe.bind(adapters.prescriber);
+  if (typeof adapters?.cursorProposal?.propose === 'function') return adapters.cursorProposal.propose.bind(adapters.cursorProposal);
+  throw new TypeError('proposal adapter must implement prescriber.propose/prescribe or cursorProposal.propose');
+}
+function gateAdapter(adapters) {
+  if (typeof adapters?.gate1?.render === 'function') return adapters.gate1.render.bind(adapters.gate1);
+  return renderGate1;
+}
+function unwrapPacket(packet) { return packet?.packet && typeof packet.packet === 'object' ? packet.packet : packet || {}; }
+function normalizeCandidate(candidate, request) { return { ...candidate, location: candidate.location || candidate.address || request.location, placeId: candidate.placeId || candidate.id || null, website: candidate.website || candidate.websiteUrl || null }; }
+function writeAtomic(filename, contents, filesystem = fs) {
+  const temporary = `${filename}.${process.pid}.tmp`;
+  filesystem.writeFileSync(temporary, contents, 'utf8');
+  filesystem.renameSync(temporary, filename);
+}
+async function persist(state, root, now) { return writeState(root, state, now); }
+
+async function discoverAndAudit({ state, root, adapters, request, config, now }) {
+  const discovery = await discoveryAdapter(adapters)({ ...request, limit: configValue(config, 'maxDiscoveryCandidates', MAX_DISCOVERY_CANDIDATES) });
+  const packet = unwrapPacket(discovery);
+  const rawCandidates = (packet.candidates || packet.places || packet.items || []).slice(0, MAX_DISCOVERY_CANDIDATES).map((candidate) => normalizeCandidate(candidate, request));
+  const audits = new Map();
+  const auditReceipts = {};
+  for (const candidate of rawCandidates) {
+    const result = await auditAdapter(adapters)({ candidate, request });
+    const audit = result?.audit || result;
+    const identity = stableCandidateIdentity(candidate);
+    audits.set(identity, audit);
+    if (result?.receipt || result?.cursorReceipt) auditReceipts[identity] = result.receipt || result.cursorReceipt;
+  }
+  state.discoveryRequest = request;
+  state.discoveryPacket = { kind: packet.kind || 'discovery-candidates', candidates: rawCandidates, request: packet.request || request, provenance: packet.provenance || null, receipt: packet.receipt || packet.provenance?.run || null, retrievedAt: new Date(now).toISOString() };
+  state.auditReceipts = auditReceipts;
+  state.candidateBench = buildCandidateBench(rawCandidates, audits, { durableIdentities: state.durableIdentities || [] });
+  state.pendingSelection = { status: 'awaiting-architect-selection', createdAt: new Date(now).toISOString() };
+}
+
+function applySelection(state, decision, now) {
+  const selected = architectSelect(state.candidateBench || [], decision);
+  state.candidateBench = selected.bench;
+  state.durableIdentities = [...(state.durableIdentities || []), ...selected.bench.filter((candidate) => candidate.stage === 'qualified-backlog').map((candidate) => ({ name: candidate.name, website: candidate.website, location: candidate.location }))];
+  const selectedEntry = enqueue(state, selected.finalist, now);
+  if (!selectedEntry || selectedEntry.disposition !== 'clear' || selectedEntry.item?.status !== 'queued') {
+    throw Object.assign(new Error('Selected finalist was blocked before queue claim'), { code: 'SELECTED_FINALIST_BLOCKED', disposition: selectedEntry?.disposition || 'unknown' });
+  }
+  for (const candidate of selected.bench.filter((entry) => entry.stage === 'qualified-backlog')) enqueue(state, candidate, now);
+  state.pendingSelection = null;
+}
+
+function inventoryForQa(classification, packet, finalist) {
+  const reviews = packet.reviews || [];
+  const empty = packet.emptyTextReviews || [];
+  const requestedLimit = packet.requestedLimit ?? packet.requestedReviewLimit ?? null;
+  const dateWindow = Object.prototype.hasOwnProperty.call(packet, 'dateWindow') ? packet.dateWindow : undefined;
+  const packetPlaceId = packet.placeId || packet.provenance?.exactPlaceId || packet.provenance?.placeId || null;
+  const exactPlace = Boolean(finalist?.placeId && packetPlaceId && String(finalist.placeId) === String(packetPlaceId));
+  const discoverySampleOnly = packet.discoverySampleOnly === true || packet.sampleOnly === true;
+  const listingReviewCount = packet.listingReviewCount;
+  const retrievedReviewCount = reviews.length + empty.length;
+  const enoughForListing = Number.isFinite(listingReviewCount) && (listingReviewCount < 25 ? retrievedReviewCount >= listingReviewCount : retrievedReviewCount >= Math.min(REVIEW_LIMIT, listingReviewCount));
+  const sufficient = exactPlace && requestedLimit === REVIEW_LIMIT && dateWindow === null && !discoverySampleOnly && enoughForListing;
+  return { ...classification, exactPlace, exactPlaceId: packetPlaceId, discoverySampleOnly, dateWindow, requestedLimit, listingReviewCount: listingReviewCount ?? null, retrievedReviewCount, writtenReviewCount: classification.writtenReviewCount, emptyReviewCount: classification.emptyReviewCount, enrichmentStatus: sufficient ? 'sufficient' : 'incomplete', availabilityPattern: null };
+}
+function proposalPayload(proposal) { return { proposal: proposal?.proposal || proposal?.prescription || proposal, receipt: proposal?.receipt || proposal?.cursorReceipt || null }; }
+const TERMINAL_RECEIPT_STATUSES = new Set(['completed', 'succeeded', 'success']);
+function requiredReceipt(value, label, fallback = null, binding = null) {
+  if (fallback) return { provider: 'repository-test-fixture', operation: label, status: 'completed', terminalStatus: 'succeeded', receiptKey: `test:${label}`, inputDigest: digest({ label, fixture: true, source: value || null }), outputDigest: digest(fallback), startedAt: new Date(0).toISOString(), completedAt: new Date(0).toISOString(), ...fallback };
+  if (!value || typeof value !== 'object' || Array.isArray(value)) throw Object.assign(new Error(`Trusted source checkpoint requires ${label} receipt`), { code: 'SOURCE_RECEIPT_MISSING' });
+  if (!value.provider || !value.operation || !TERMINAL_RECEIPT_STATUSES.has(String(value.status || '').toLowerCase()) || value.terminalStatus !== 'succeeded') throw Object.assign(new Error(`Trusted source checkpoint requires complete terminal ${label} receipt`), { code: 'SOURCE_RECEIPT_INVALID' });
+  const expectedOperation = String(label).split(':')[0];
+  if (String(value.operation) !== expectedOperation) throw Object.assign(new Error(`Trusted source checkpoint ${label} receipt operation is mismatched`), { code: 'SOURCE_RECEIPT_INVALID' });
+  const trustedCheckpoint = value.provider === 'github-trusted-checkpoint';
+  const expectedProvider = new Set(['discovery', 'finalist-enrichment']).has(expectedOperation) ? 'apify' : new Set(['website-audit', 'review-judgment']).has(expectedOperation) ? 'cursor-sdk' : null;
+  if (!trustedCheckpoint && expectedProvider && String(value.provider) !== expectedProvider && !(expectedProvider === 'cursor-sdk' && value.provider === 'cursor-cloud-agent')) throw Object.assign(new Error(`Trusted source checkpoint ${label} receipt provider is mismatched`), { code: 'SOURCE_RECEIPT_INVALID' });
+  if (!value.inputDigest || !value.outputDigest || !value.startedAt || !value.completedAt) throw Object.assign(new Error(`Trusted source checkpoint requires complete digests/timestamps for ${label}`), { code: 'SOURCE_RECEIPT_INVALID' });
+  const vendor = value.vendorReceipt || value;
+  const hasIdentity = vendor.agentId || vendor.runId || vendor.jobId || vendor.artifactId || vendor.datasetId || value.receiptKey;
+  if (!hasIdentity && !(trustedCheckpoint && (value.source?.artifactId || value.artifactId))) throw Object.assign(new Error(`Trusted source checkpoint requires vendor/agent identity for ${label}`), { code: 'SOURCE_RECEIPT_INVALID' });
+  if ((value.provider === 'cursor-sdk' || value.provider === 'cursor-cloud-agent') && (!vendor.runId || !vendor.threadUrl || !/^https:\/\/cursor\.com\/agents\/[^/?#]+$/.test(String(vendor.threadUrl)))) throw Object.assign(new Error(`Trusted source checkpoint requires canonical Cursor run/thread identity for ${label}`), { code: 'SOURCE_RECEIPT_INVALID' });
+  if (value.provider === 'apify' && (!vendor.runId || !vendor.datasetId)) throw Object.assign(new Error(`Trusted source checkpoint requires Apify run/dataset identity for ${label}`), { code: 'SOURCE_RECEIPT_INVALID' });
+  const payload = value.input != null ? value.input : value.request;
+  if (payload == null) throw Object.assign(new Error(`Trusted source checkpoint ${label} receipt is missing input payload`), { code: 'SOURCE_RECEIPT_INVALID' });
+  const recomputedInputDigest = digest(payload);
+  if (value.inputDigest !== recomputedInputDigest) throw Object.assign(new Error(`Trusted source checkpoint ${label} input digest does not match persisted payload`), { code: 'SOURCE_RECEIPT_INVALID' });
+  if (!Object.prototype.hasOwnProperty.call(value, 'result')) throw Object.assign(new Error(`Trusted source checkpoint ${label} receipt is missing persisted result`), { code: 'SOURCE_RECEIPT_INVALID' });
+  const recomputedOutputDigest = digest(value.result);
+  if (value.outputDigest !== recomputedOutputDigest) throw Object.assign(new Error(`Trusted source checkpoint ${label} output digest does not match persisted result`), { code: 'SOURCE_RECEIPT_INVALID' });
+  if (!binding || typeof binding !== 'object') throw Object.assign(new Error(`Trusted source checkpoint ${label} receipt context is missing`), { code: 'SOURCE_RECEIPT_INVALID' });
+  const received = value.binding || value.context || {};
+  const requiredFields = ['repository', 'issueNumber', 'prNumber', 'branch', 'headSha', 'operation'];
+  if (expectedOperation !== 'discovery') requiredFields.push('placeId');
+  if (!['discovery', 'website-audit'].includes(expectedOperation)) requiredFields.push('prospectId');
+  for (const field of requiredFields) {
+    if (binding[field] == null || String(binding[field]).trim() === '') throw Object.assign(new Error(`Trusted source checkpoint ${label} expected ${field} binding is omitted`), { code: 'SOURCE_RECEIPT_INVALID' });
+    const actual = received[field];
+    if (actual == null || String(actual).trim() === '') throw Object.assign(new Error(`Trusted source checkpoint ${label} receipt ${field} binding is omitted`), { code: 'SOURCE_RECEIPT_INVALID' });
+    if (String(actual) !== String(binding[field]) && !(field === 'operation' && String(actual) === expectedOperation)) throw Object.assign(new Error(`Trusted source checkpoint ${label} receipt ${field} binding is mismatched`), { code: 'SOURCE_RECEIPT_INVALID' });
+  }
+  if (binding.source == null || String(binding.source).trim() === '') throw Object.assign(new Error(`Trusted source checkpoint ${label} expected source binding is omitted`), { code: 'SOURCE_RECEIPT_INVALID' });
+  const receivedSource = received.source != null ? received.source : value.source;
+  if (receivedSource == null || String(receivedSource).trim() === '') throw Object.assign(new Error(`Trusted source checkpoint ${label} receipt source binding is omitted`), { code: 'SOURCE_RECEIPT_INVALID' });
+  if (String(receivedSource) !== String(binding.source)) throw Object.assign(new Error(`Trusted source checkpoint ${label} receipt source binding is mismatched`), { code: 'SOURCE_RECEIPT_INVALID' });
+  if (['finalist-enrichment', 'review-judgment', 'page-prescription'].includes(expectedOperation)) {
+    if (binding.runId == null || String(binding.runId).trim() === '') throw Object.assign(new Error(`Trusted source checkpoint ${label} expected runId binding is omitted`), { code: 'SOURCE_RECEIPT_INVALID' });
+    const receivedRunId = received.runId != null ? received.runId : value.runId;
+    if (receivedRunId == null || String(receivedRunId).trim() === '') throw Object.assign(new Error(`Trusted source checkpoint ${label} receipt runId binding is omitted`), { code: 'SOURCE_RECEIPT_INVALID' });
+    if (String(receivedRunId) !== String(binding.runId)) throw Object.assign(new Error(`Trusted source checkpoint ${label} receipt runId binding is mismatched`), { code: 'SOURCE_RECEIPT_INVALID' });
+  }
+  if (binding.expectedInput != null && digest(binding.expectedInput) !== recomputedInputDigest) throw Object.assign(new Error(`Trusted source checkpoint ${label} receipt input payload is mismatched`), { code: 'SOURCE_RECEIPT_INVALID' });
+  const inputPlaceId = payload.placeId || payload.candidate?.placeId;
+  if (binding.placeId != null && expectedOperation !== 'discovery' && inputPlaceId == null) throw Object.assign(new Error(`Trusted source checkpoint ${label} receipt is missing candidate binding`), { code: 'SOURCE_RECEIPT_INVALID' });
+  if (binding.placeId != null && inputPlaceId != null && String(inputPlaceId) !== String(binding.placeId)) throw Object.assign(new Error(`Trusted source checkpoint ${label} receipt candidate binding is mismatched`), { code: 'SOURCE_RECEIPT_INVALID' });
+  if (binding.vendorRunId != null && String(vendor.runId) !== String(binding.vendorRunId)) throw Object.assign(new Error(`Trusted source checkpoint ${label} receipt vendor run binding is mismatched`), { code: 'SOURCE_RECEIPT_INVALID' });
+  if (binding.reviewId != null && payload.reviewId != null && String(payload.reviewId) !== String(binding.reviewId)) throw Object.assign(new Error(`Trusted source checkpoint ${label} receipt review binding is mismatched`), { code: 'SOURCE_RECEIPT_INVALID' });
+  return value;
+}
+function sourceCheckpointFor(run, state, { allowTestFixtures = false, env = process.env } = {}) {
+  const candidateIdentity = stableCandidateIdentity(run.candidate || {});
+  const auditReceiptForCandidate = state.auditReceipts?.[candidateIdentity] || state.auditReceipts?.[run.candidate?.placeId];
+  const fixtureFallback = allowTestFixtures ? { fixture: true } : null;
+  const actionProof = actionProofFromEnvironment(env);
+  const issueNumber = Number(env.FACTORY_ISSUE_NUMBER);
+  const prNumber = Number(env.FACTORY_PR_NUMBER);
+  const receiptBinding = {
+    repository: env.FACTORY_REPOSITORY || 'alchemistj/ff-content-demo-factory',
+    issueNumber: Number.isInteger(issueNumber) ? issueNumber : null,
+    prNumber: Number.isInteger(prNumber) ? prNumber : null,
+    branch: env.FACTORY_BRANCH || env.GITHUB_REF_NAME || null,
+    headSha: actionProof?.checkedOutSha || null,
+    source: actionProof?.checkedOutSha || null,
+    runId: run.runId,
+    prospectId: run.prospectId || run.candidate?.placeId || null,
+    placeId: run.candidate?.placeId || null,
+    operation: null,
+  };
+  const withOperation = (operation) => ({ ...receiptBinding, operation });
+  const discoveryReceipt = requiredReceipt(state.discoveryPacket?.receipt || state.discoveryPacket?.provenance?.run, 'discovery', fixtureFallback, withOperation('discovery'));
+  const auditReceipt = requiredReceipt(auditReceiptForCandidate, 'website-audit', fixtureFallback, withOperation('website-audit'));
+  const enrichmentReceipt = requiredReceipt(run.paidWork?.finalistEnrichment?.receipt, 'finalist-enrichment', fixtureFallback, withOperation('finalist-enrichment'));
+  const judgments = run.artifacts.reviewJudgments || {};
+  const reviewReceipts = Object.entries(judgments).map(([reviewId, judgment]) => ({
+    reviewId,
+    receipt: requiredReceipt(judgment?.receipt || judgment?.cursorReceipt || judgment?.provenance, `review-judgment:${reviewId}`, fixtureFallback, { ...withOperation('review-judgment'), reviewId }),
+  }));
+  if (!allowTestFixtures && (!actionProof?.checkedOutSha || actionProof.headAssertion !== true)) throw Object.assign(new Error('Trusted source checkpoint requires exact checked-out head binding'), { code: 'SOURCE_HEAD_BINDING_MISSING' });
+  const sourceMaterial = {
+    discoveryRequest: state.discoveryRequest || null,
+    discoveryReceipt,
+    auditReceipt,
+    enrichmentReceipt,
+    reviewReceipts,
+    candidateIdentity,
+    candidate: { placeId: run.candidate?.placeId, name: run.candidate?.name, location: run.candidate?.location, website: run.candidate?.website, websiteAuditDigest: run.candidate?.websiteAudit ? digest(run.candidate.websiteAudit) : null },
+    finalistEnrichment: run.artifacts.reviewPacket || null,
+  };
+  const sourceSha = digest(sourceMaterial).slice('sha256:'.length);
+  const binding = { headSha: actionProof?.checkedOutSha || null, runId: run.runId, prospectId: run.prospectId || run.candidate?.placeId || null, placeId: run.candidate?.placeId || null, sourceSha };
+  const sourceIdentity = { provider: 'factory-trusted-source', runId: run.runId, artifactId: `source-${run.runId}`, sourceSha, rootIdentity: `factory-source:${run.runId}` };
+  const sourceManifest = {
+    schemaVersion: 'factory-source-manifest-v1',
+    candidateIdentity,
+    runId: run.runId,
+    sourceSha,
+    requiredReceipts: ['discovery', 'website-audit', 'finalist-enrichment', 'review-judgment'],
+    receiptDigests: {
+      discovery: digest(discoveryReceipt),
+      websiteAudit: digest(auditReceipt),
+      finalistEnrichment: digest(enrichmentReceipt),
+      reviewJudgments: digest(reviewReceipts),
+    },
+    sourceMaterialDigest: digest(sourceMaterial),
+    binding,
+    receiptBindings: [
+      ['discovery', discoveryReceipt], ['website-audit', auditReceipt], ['finalist-enrichment', enrichmentReceipt], ['review-judgments', reviewReceipts],
+    ].map(([label, receipt]) => ({ label, digest: digest(receipt), binding })),
+  };
+  return { sourceIdentity, sourceArtifactDigest: digest({ sourceIdentity, sourceMaterial }), sourceManifest, sourceManifestDigest: digest(sourceManifest), sourceMaterial, headSha: binding.headSha };
+}
+function correctedProposal(proposal, corrections) {
+  if (!corrections || typeof corrections !== 'object') return proposal;
+  return {
+    ...proposal,
+    ...(Array.isArray(corrections.pages) ? { pages: corrections.pages } : {}),
+    ...(Array.isArray(corrections.proposedPages) ? { proposedPages: corrections.proposedPages } : {}),
+    ...(Array.isArray(corrections.services) ? { services: corrections.services } : {}),
+    ...(Array.isArray(corrections.candidateServices) ? { candidateServices: corrections.candidateServices } : {}),
+  };
+}
+function qaDecision(decision) { return decision?.qa || (decision && (Object.prototype.hasOwnProperty.call(decision, 'qaPass') || decision.whyBuilt) ? { passed: decision.qaPass === true, whyBuilt: decision.whyBuilt, corrections: decision.corrections } : null); }
+function actionProofFromEnvironment(env = process.env) {
+  if (!env.FACTORY_CHECKED_OUT_SHA && !env.FACTORY_ASSERTED_HEAD_SHA && !env.FACTORY_EXPECTED_HEAD_SHA) return null;
+  return {
+    checkedOutSha: env.FACTORY_CHECKED_OUT_SHA || env.FACTORY_ASSERTED_HEAD_SHA || null,
+    expectedHeadSha: env.FACTORY_EXPECTED_HEAD_SHA || env.EXPECTED_HEAD_SHA || null,
+    headAssertion: env.FACTORY_HEAD_ASSERTION === 'true',
+    testRunUrl: env.FACTORY_TEST_RUN_URL || env.FACTORY_ACTION_RUN_URL || null,
+    testResult: env.FACTORY_TEST_RESULT || null,
+  };
+}
+
+async function classifyResumably({ run, state, adapters, root, now }) {
+  const packet = run.artifacts.reviewPacket;
+  const judgments = run.artifacts.reviewJudgments || {};
+  const judge = judgeAdapter(adapters);
+  for (const review of packet.reviews || []) {
+    if (judgments[review.id]) continue;
+    judgments[review.id] = await judge({ review, finalist: run.candidate, runId: run.runId, prospectId: run.prospectId });
+    run.artifacts.reviewJudgments = judgments;
+    await persist(state, root, now);
+  }
+  const classification = buildClassificationArtifact({ reviews: [...(packet.reviews || []), ...(packet.emptyTextReviews || [])], judgments });
+  run.artifacts.classification = classification;
+  run.artifacts.inventory = inventoryForQa(classification, packet, run.candidate);
+  run.completedStages = [...new Set([...(run.completedStages || []), 'review-intelligence'])];
+  transition(state, run.runId, 'page-prescription', { owner: run.owner, now });
+  await persist(state, root, now);
+}
+
+function buildValidatedPrescription({ run, classification, proposal }) {
+  const pages = proposal.pages || proposal.proposedPages;
+  const services = proposal.services || proposal.candidateServices || (Array.isArray(proposal.valueHierarchy) ? proposal.valueHierarchy : proposal.valueHierarchy?.candidates) || [];
+  if (!Array.isArray(pages) || !pages.length) throw new Error('Cursor proposal must include explicit pages');
+  if (!Array.isArray(services)) throw new Error('Cursor proposal must include candidate services');
+  const serviceLedger = proposal.serviceCoverageLedger || proposal.serviceLedger;
+  const sourceBinding = proposal.sourceCheckpoint || proposal.sourceBinding || { sourceIdentity: proposal.sourceIdentity, sourceArtifactDigest: proposal.sourceArtifactDigest };
+  if (!sourceBinding) throw new Error('Cursor proposal must include a trusted source checkpoint binding');
+  validateCompleteCanonicalLedger(serviceLedger, { services, pages, identity: { prospectId: run.prospectId, placeId: run.candidate?.placeId, runId: run.runId, sourceIdentity: sourceBinding.sourceIdentity } });
+  const evidence = buildPrescriptionEvidence({ classification, pages, candidateServices: services });
+  const prescription = prescribe({ finalist: run.candidate, classification, services, proposedPages: pages, policy: proposal.pagePolicy, override: proposal.expansionOverride || proposal.expansionApproval, serviceLedger, runContext: { prospectId: run.prospectId, placeId: run.candidate?.placeId, runId: run.runId }, sourceBinding });
+  prescription.sourceManifest = sourceBinding.sourceManifest || null;
+  prescription.sourceManifestDigest = sourceBinding.sourceManifestDigest || null;
+  prescription.evidence = evidence;
+  prescription.prescriptionDigest = digest({ ...prescription, prescriptionDigest: undefined });
+  return prescription;
+}
+
+async function runFactoryCycle({ root, config, adapters, discoveryRequest = null, architectDecision = {}, owner = 'architect', now = new Date(), env = process.env }) {
+  if (config?.productionCapacity !== 1) throw Object.assign(new Error('productionCapacity must be exactly 1'), { code: 'INVALID_CAPACITY' });
+  const release = acquireLock(root, owner, now);
+  let state;
+  try {
+    state = loadState(root, config, now);
+    let run = currentRun(state);
+    if (run?.status === FINAL_STAGE) return { ok: true, state, run, nextAction: nextAction(FINAL_STAGE, 'Gate 1 is ready; no later stage may start.') };
+    if (!run && state.pendingSelection) {
+      if (!architectDecision.selection && !(architectDecision.selectedPlaceId || architectDecision.qualifiedPlaceIds)) { await persist(state, root, now); return { ok: true, state, candidateBench: state.candidateBench, nextAction: nextAction('architect-candidate-review-required', 'Architect must qualify the candidate bench and select one finalist.', { candidateBench: state.candidateBench }) }; }
+      applySelection(state, architectDecision.selection || { selectedPlaceId: architectDecision.selectedPlaceId, qualifiedPlaceIds: architectDecision.qualifiedPlaceIds, reason: architectDecision.reason }, now);
+      run = claimNext(state, owner, now); await persist(state, root, now);
+    }
+    if (!run) { run = claimNext(state, owner, now); if (run) await persist(state, root, now); }
+    if (!run) {
+      if (!discoveryRequest) return { ok: true, state, nextAction: nextAction('architect-discovery-request-required', 'Architect must provide searchStrings and location for a fresh discovery request.') };
+      const request = requireDiscoveryRequest(discoveryRequest);
+      await discoverAndAudit({ state, root, adapters, request, config, now }); await persist(state, root, now);
+      if (!architectDecision.selection && !(architectDecision.selectedPlaceId || architectDecision.qualifiedPlaceIds)) return { ok: true, state, candidateBench: state.candidateBench, nextAction: nextAction('architect-candidate-review-required', 'Architect must qualify the candidate bench and select one finalist.', { candidateBench: state.candidateBench }) };
+      applySelection(state, architectDecision.selection || { selectedPlaceId: architectDecision.selectedPlaceId, qualifiedPlaceIds: architectDecision.qualifiedPlaceIds, reason: architectDecision.reason }, now);
+      run = claimNext(state, owner, now); await persist(state, root, now);
+    }
+    if (run.stage === STAGES[0]) { transition(state, run.runId, 'finalist-enrichment', { owner, now }); await persist(state, root, now); }
+    if (!run.paidWork.finalistEnrichment) {
+      const packet = unwrapPacket(await enrichmentAdapter(adapters)({ finalist: run.candidate, placeId: run.candidate.placeId, mapsUrl: run.candidate.mapsUrl || run.candidate.googleMapsUrl || run.candidate.url, limit: REVIEW_LIMIT, dateWindow: null, exactPlace: true, runId: run.runId, prospectId: run.prospectId }));
+      const hasPacketDateWindow = Object.prototype.hasOwnProperty.call(packet, 'dateWindow');
+      const hasProvenanceDateWindow = Object.prototype.hasOwnProperty.call(packet.provenance || {}, 'dateWindow');
+      const packetDateWindow = hasPacketDateWindow
+        ? packet.dateWindow
+        : (hasProvenanceDateWindow ? packet.provenance.dateWindow : undefined);
+      run.artifacts.reviewPacket = {
+        ...packet,
+        placeId: packet.placeId || packet.provenance?.exactPlaceId || null,
+        // Keep adapter-reported request metadata intact; missing limit remains
+        // unknown and therefore cannot satisfy the full-enrichment QA check.
+        requestedLimit: packet.requestedLimit ?? packet.requestedReviewLimit ?? null,
+        discoverySampleOnly: packet.discoverySampleOnly === true || packet.sampleOnly === true,
+        reviews: packet.reviews || [],
+        emptyTextReviews: packet.emptyTextReviews || [],
+      };
+      if (hasPacketDateWindow || hasProvenanceDateWindow) run.artifacts.reviewPacket.dateWindow = packetDateWindow;
+      run.paidWork.finalistEnrichment = { completedAt: new Date(now).toISOString(), receipt: packet.receipt || packet.provenance?.run || null, reviewsRetrieved: run.artifacts.reviewPacket.reviews.length };
+      transition(state, run.runId, 'review-intelligence', { owner, now, artifact: run.artifacts.reviewPacket, paid: true }); await persist(state, root, now);
+    }
+    if (!run.artifacts.classification || Object.keys(run.artifacts.reviewJudgments || {}).length < run.artifacts.reviewPacket.reviews.length) await classifyResumably({ run, state, adapters, root, now });
+    if (!run.artifacts.prescription) {
+      const sourceCheckpoint = sourceCheckpointFor(run, state, { allowTestFixtures: adapters?.production !== true, env });
+      run.artifacts.sourceCheckpoint = sourceCheckpoint;
+      await persist(state, root, now);
+      const proposalResult = await proposalAdapter(adapters)({ finalist: { ...run.candidate, prospectId: run.prospectId, runId: run.runId }, runId: run.runId, prospectId: run.prospectId, placeId: run.candidate?.placeId, classification: run.artifacts.classification, inventory: run.artifacts.inventory, discoveryPacket: state.discoveryPacket, decision: { sourceCheckpoint } });
+      const proposal = proposalPayload(proposalResult); run.artifacts.cursorProposal = proposal.proposal; run.artifacts.cursorProposalReceipt = proposal.receipt; run.artifacts.prescription = buildValidatedPrescription({ run, classification: run.artifacts.classification, proposal: proposal.proposal });
+      run.artifacts.inventory.availabilityPattern = run.artifacts.prescription.evidence?.availabilityPattern || null;
+      transition(state, run.runId, 'architect-qa', { owner, now, artifact: run.artifacts.prescription }); await persist(state, root, now);
+    }
+    const qa = qaDecision(architectDecision);
+    if (!qa) { await persist(state, root, now); return { ok: true, state, run, nextAction: nextAction('architect-qa-required', 'Architect must independently review the Cursor proposal, provide Why We Built evidence, and pass or correct it.') }; }
+    let correctedPrescription = run.artifacts.prescription;
+    if (qa.corrections) {
+      try {
+        correctedPrescription = buildValidatedPrescription({ run, classification: run.artifacts.classification, proposal: correctedProposal(run.artifacts.cursorProposal, qa.corrections) });
+        run.artifacts.inventory.availabilityPattern = correctedPrescription.evidence?.availabilityPattern || null;
+      } catch (error) {
+        run.artifacts.qa = { decision: qa, passed: false, correctionError: error.message };
+        await persist(state, root, now);
+        return { ok: true, state, run, nextAction: nextAction('architect-qa-required', 'Architect correction failed prescription validation; no corrected artifact was accepted.', { correctionError: error.message }) };
+      }
+    }
+    const whyBuilt = qa.whyBuilt || qa.corrections?.whyBuilt;
+    const qaResult = architectQa({ finalist: run.candidate, inventory: run.artifacts.inventory, prescription: correctedPrescription, whyBuilt, laterStageArtifacts: [] });
+    run.artifacts.qa = { decision: qa, checks: qaResult.checks, passed: qaResult.passed };
+    if (qa.passed !== true || !qaResult.passed) { await persist(state, root, now); return { ok: true, state, run, nextAction: nextAction('architect-qa-required', 'Architect QA is not complete; correct the reported checks before Gate 1.', { checks: qaResult.checks }) }; }
+    run.artifacts.prescription = correctedPrescription;
+    const gateResult = await gateAdapter(adapters)({ finalist: run.candidate, prescription: correctedPrescription, inventory: run.artifacts.inventory, classifications: run.artifacts.reviewJudgments, whyBuilt, qa: qaResult, run, sourceCheckpoint: run.artifacts.sourceCheckpoint || null, actionProof: adapters?.actionProof || actionProofFromEnvironment(env), receipts: { discovery: state.discoveryPacket?.receipt || state.discoveryPacket?.provenance?.run || null, websiteAudit: state.auditReceipts?.[stableCandidateIdentity(run.candidate)] || null, finalistEnrichment: run.paidWork?.finalistEnrichment?.receipt || null, pagePrescription: run.artifacts.cursorProposalReceipt || null } });
+    const markdown = typeof gateResult === 'string' ? gateResult : gateResult?.markdown;
+    if (typeof markdown !== 'string' || !markdown.trim()) throw Object.assign(new Error('Gate 1 renderer must return markdown text'), { code: 'INVALID_GATE1_ARTIFACT' });
+    const relativeArtifactPath = path.join('state', 'gate1', `${run.runId}.md`);
+    const artifactPath = path.join(root, relativeArtifactPath); fs.mkdirSync(path.dirname(artifactPath), { recursive: true }); writeAtomic(artifactPath, markdown);
+    run.artifacts.gate1 = { path: relativeArtifactPath, markdown }; transition(state, run.runId, FINAL_STAGE, { owner, now, artifact: run.artifacts.gate1 }); await persist(state, root, now);
+    return { ok: true, state, run, nextAction: nextAction(FINAL_STAGE, 'Gate 1 is ready; no later stage may start.') };
+  } catch (error) {
+    state = state || loadState(root, config, now); const interrupted = currentRun(state);
+    if (interrupted && interrupted.status !== FINAL_STAGE) { interrupted.status = 'interrupted'; interrupted.interruption = { message: error.message, at: new Date(now).toISOString() }; await persist(state, root, now); }
+    throw error;
+  } finally { release(); }
+}
+
+module.exports = { REVIEW_LIMIT, requireDiscoveryRequest, inventoryForQa, requiredReceipt, sourceCheckpointFor, actionProofFromEnvironment, writeAtomic, runFactoryCycle };

@@ -1,0 +1,518 @@
+'use strict';
+
+const crypto = require('node:crypto');
+const fs = require('node:fs');
+const { createApifyAdapter } = require('../adapters/apify');
+const { createCursorAdapter } = require('../adapters/cursor');
+const { deriveDeterministicSignals } = require('../review-evidence/signals');
+const { buildClassificationArtifact } = require('../review-evidence/classify');
+const { buildPrescriptionEvidence } = require('../review-evidence/prescription');
+const { prescribe: validatePrescription } = require('./prescription');
+const { digest, validateCompleteCanonicalLedger } = require('./prescription-policy');
+const { renderGate1, architectQa } = require('./gate1');
+const { createFileReceiptStore, verifyOperationArtifact } = require('./receipt-store');
+
+const VALID_DECISIONS = new Set(['anchor', 'supporting', 'negative', 'not-applicable']);
+
+function hash(value) {
+  return crypto.createHash('sha256').update(JSON.stringify(value)).digest('hex').slice(0, 24);
+}
+
+function required(value, name) {
+  if (value == null || value === '') throw new TypeError(`${name} is required`);
+  return value;
+}
+
+function receiptContextFromEnv(env = process.env, extra = {}) {
+  const issueNumber = Number(env.FACTORY_ISSUE_NUMBER);
+  const prNumber = Number(env.FACTORY_PR_NUMBER);
+  return {
+    repository: env.FACTORY_REPOSITORY || env.GITHUB_REPOSITORY || null,
+    issueNumber: Number.isInteger(issueNumber) ? issueNumber : null,
+    prNumber: Number.isInteger(prNumber) ? prNumber : null,
+    branch: env.FACTORY_BRANCH || env.GITHUB_REF_NAME || null,
+    headSha: env.FACTORY_CHECKED_OUT_SHA || env.FACTORY_ASSERTED_HEAD_SHA || env.EXPECTED_HEAD_SHA || null,
+    source: env.FACTORY_CHECKED_OUT_SHA || env.FACTORY_ASSERTED_HEAD_SHA || env.EXPECTED_HEAD_SHA || null,
+    ...extra,
+  };
+}
+
+async function putReceipt(store, key, receipt, env = process.env) {
+  if (!store || typeof store.put !== 'function') throw new TypeError('receiptStore must implement put');
+  const payload = receipt.input != null ? receipt.input : receipt.request;
+  if (payload == null) throw new Error(`${receipt.operation || key} receipt is missing input payload`);
+  const binding = receiptContextFromEnv(env, { operation: receipt.operation || null, ...(receipt.binding || receipt.context || {}) });
+  const checkpoint = receipt.vendorReceipt?.provider === 'github-trusted-checkpoint' ? receipt.vendorReceipt : null;
+  const complete = {
+    schemaVersion: 'factory-receipt-v1',
+    key,
+    ...receipt,
+    ...(checkpoint ? { provider: 'github-trusted-checkpoint', source: checkpoint.source } : {}),
+    binding,
+    status: receipt.status || 'completed',
+    terminalStatus: receipt.terminalStatus || (receipt.status === 'completed' || !receipt.status ? 'succeeded' : null),
+    startedAt: receipt.startedAt || receipt.completedAt || null,
+    completedAt: receipt.completedAt || null,
+    // A trusted GitHub checkpoint has a workflow-run identity in `source`,
+    // while the factory receipt itself must bind to the current factory run.
+    // Keep those identities distinct instead of mistaking the historical
+    // artifact's run for this run's source checkpoint.
+    runId: receipt.provider === 'github-trusted-checkpoint'
+      ? (binding.runId || receipt.runId || null)
+      : (receipt.runId || receipt.vendorReceipt?.runId || receipt.vendorReceipt?.jobId || null),
+    threadUrl: receipt.threadUrl || receipt.vendorReceipt?.threadUrl || null,
+    inputDigest: digest(payload),
+    outputDigest: digest(receipt.result || null),
+  };
+  return store.put(key, complete).then?.(() => complete) || complete;
+}
+
+async function getReceipt(store, key) {
+  return typeof store?.get === 'function' ? store.get(key) : undefined;
+}
+
+function candidateFromPlace(candidate) {
+  const written = candidate.writtenReviews || candidate.reviews || [];
+  const empty = candidate.emptyTextReviews || [];
+  return {
+    ...candidate,
+    placeId: candidate.placeId || candidate.id || null,
+    mapsUrl: candidate.mapsUrl || candidate.url || null,
+    location: candidate.location || candidate.address || null,
+    reviewCount: candidate.reviewCount ?? candidate.listingReviewCount ?? null,
+    discoveryReviews: [...written, ...empty],
+    discoveryReviewSample: { reviews: [...written, ...empty], sampleOnly: true, source: candidate.provenance?.source || 'apify-discovery' },
+    discoveryReviewSource: candidate.provenance?.source || 'apify-discovery',
+    gbpBasics: {
+      placeId: candidate.placeId || candidate.id || null,
+      mapsUrl: candidate.mapsUrl || null,
+      name: candidate.name || null,
+      location: candidate.location || candidate.address || null,
+      city: candidate.city || null,
+      state: candidate.state || null,
+      postalCode: candidate.postalCode || null,
+      phone: candidate.phone || null,
+      rating: candidate.rating ?? null,
+      reviewCount: candidate.reviewCount ?? candidate.listingReviewCount ?? null,
+      coordinates: candidate.coordinates || null,
+      openingHours: candidate.openingHours || null,
+      temporarilyClosed: Boolean(candidate.temporarilyClosed),
+      permanentlyClosed: Boolean(candidate.permanentlyClosed),
+      images: Array.isArray(candidate.images) ? candidate.images.slice(0, 5) : [],
+    },
+  };
+}
+
+function evidenceSourceUrl(item) {
+  if (!item || typeof item !== 'object' || Array.isArray(item)) return null;
+  return item.sourceUrl || item.url || item.src || item.provenance?.sourceUrl || item.provenance?.url || null;
+}
+
+function normalizeOwnedUrl(value, host, label) {
+  if (typeof value !== 'string' || !value.trim()) throw new Error(`${label} is missing a URL`);
+  let parsed;
+  try { parsed = new URL(value); } catch { throw new Error(`${label} URL is invalid`); }
+  if (parsed.protocol !== 'http:' && parsed.protocol !== 'https:') throw new Error(`${label} URL must use http or https`);
+  const normalizedHost = parsed.hostname.replace(/^www\./, '').toLowerCase();
+  if (!normalizedHost) throw new Error(`${label} URL is missing a host`);
+  if (normalizedHost !== host) throw new Error(`${label} URL is not bound to the inspected business-owned domain`);
+  return parsed;
+}
+
+function canonicalOwnedUrl(parsed) {
+  return `${parsed.protocol}//${parsed.hostname.replace(/^www\./, '').toLowerCase()}${parsed.port ? `:${parsed.port}` : ''}${parsed.pathname}${parsed.search}${parsed.hash}`;
+}
+
+function assertNoConflictingProvenance(item, sourceUrl, host, label) {
+  const provenance = item?.provenance;
+  const aliases = [item?.sourceUrl, item?.url, item?.src];
+  if (provenance && typeof provenance === 'object' && !Array.isArray(provenance)) aliases.push(provenance.sourceUrl, provenance.url, provenance.website);
+  for (const candidate of aliases) {
+    if (candidate == null) continue;
+    const parsed = normalizeOwnedUrl(String(candidate), host, `${label} provenance`);
+    if (canonicalOwnedUrl(parsed) !== canonicalOwnedUrl(sourceUrl)) throw new Error(`${label} has conflicting provenance URL`);
+  }
+}
+
+function validateOwnedEvidence(items, host, label) {
+  if (!Array.isArray(items)) throw new Error(`${label} must be an array`);
+  for (const item of items) {
+    const sourceUrl = evidenceSourceUrl(item);
+    if (!sourceUrl) throw new Error(`${label} item is missing source URL/provenance`);
+    const parsed = normalizeOwnedUrl(String(sourceUrl), host, `${label} item source`);
+    assertNoConflictingProvenance(item, parsed, host, label);
+    if (!item.provenance && !item.source && !item.sourceRef && !item.sourceUrl && !item.url && !item.src) throw new Error(`${label} item is missing provenance`);
+  }
+}
+
+function validateOwnedUrlList(items, host, label) {
+  if (!Array.isArray(items)) throw new Error(`${label} must be an array`);
+  for (const sourceUrl of items) {
+    normalizeOwnedUrl(sourceUrl, host, `${label}`);
+  }
+}
+
+function normalizeWebsiteAudit(result, candidate) {
+  if (!result || typeof result.website !== 'string' || !result.website.trim()) throw new Error('Website audit must identify the inspected business-owned website');
+  if (!candidate || typeof candidate.website !== 'string' || !candidate.website.trim()) throw new Error('Website audit requires a candidate-owned website domain');
+  let resultHost;
+  let parsedWebsite;
+  try { parsedWebsite = normalizeOwnedUrl(result.website, '', 'Website audit website'); } catch (error) {
+    // Normalize the inspected website before applying the host binding. The
+    // empty host is intentional here: normalizeOwnedUrl still enforces the
+    // scheme/host contract, while the business host is established below.
+    try { parsedWebsite = new URL(result.website); } catch { throw error; }
+    if (parsedWebsite.protocol !== 'http:' && parsedWebsite.protocol !== 'https:') throw error;
+  }
+  resultHost = parsedWebsite.hostname.replace(/^www\./, '').toLowerCase();
+  if (!resultHost) throw new Error('Website audit website URL is missing a host');
+  if (/google\./i.test(resultHost) || resultHost === 'google.com') throw new Error('Website audit cannot use Google as business-owned evidence');
+  if (candidate.website) {
+    let candidateHost;
+    try {
+      const candidateUrl = new URL(candidate.website);
+      if (candidateUrl.protocol !== 'http:' && candidateUrl.protocol !== 'https:') throw new Error('scheme');
+      candidateHost = candidateUrl.hostname.replace(/^www\./, '').toLowerCase();
+    } catch { throw new Error('Website audit candidate website URL is invalid'); }
+    if (candidateHost && candidateHost !== resultHost) throw new Error('Website audit result does not bind to the candidate-owned website');
+  }
+  if (result.provenance?.website != null) {
+    const provenanceUrl = normalizeOwnedUrl(String(result.provenance.website), resultHost, 'Website audit provenance website');
+    if (canonicalOwnedUrl(provenanceUrl) !== canonicalOwnedUrl(parsedWebsite)) throw new Error('Website audit provenance conflicts with inspected website');
+  }
+  const evidence = Array.isArray(result.evidence) ? result.evidence : [];
+  const images = Array.isArray(result.images) ? result.images : [];
+  validateOwnedEvidence(evidence, resultHost, 'Website audit evidence');
+  validateOwnedEvidence(images, resultHost, 'Website audit image');
+  if (result.siteCopyEvidence != null) validateOwnedEvidence(result.siteCopyEvidence, resultHost, 'Website site-copy evidence');
+  if (result.ownedGraphicEvidence != null) validateOwnedEvidence(result.ownedGraphicEvidence, resultHost, 'Website graphic evidence');
+  if (result.graphicsInspection?.findings != null) validateOwnedEvidence(result.graphicsInspection.findings, resultHost, 'Website graphics inspection');
+  if (result.publicImageUrls != null) validateOwnedUrlList(result.publicImageUrls, resultHost, 'Website public image URLs');
+  const siteCopyEvidence = result.siteCopyEvidence || evidence.filter((item) => /copy|service|nap|contact|website/i.test(String(item.type || item.kind || '')));
+  const ownedGraphicEvidence = result.ownedGraphicEvidence || evidence.filter((item) => /graphic|flyer|image|gallery|marketing/i.test(String(item.type || item.kind || '')));
+  const findings = result.graphicsInspection?.findings || result.graphicsFindings || images.map((image) => ({ url: image.url || image.src || null, kind: image.kind || 'website-image', provenance: image.provenance || null }));
+  return {
+    quality: result.quality || result.siteQuality || 'inspected',
+    opportunity: result.opportunity || null,
+    siteCopyEvidence: Array.isArray(siteCopyEvidence) ? siteCopyEvidence : [],
+    ownedGraphicEvidence: Array.isArray(ownedGraphicEvidence) ? ownedGraphicEvidence : [],
+    publicImageUrls: result.publicImageUrls || images.map((image) => image.url || image.src).filter(Boolean),
+    graphicsInspection: { status: 'inspected', findings: Array.isArray(findings) ? findings : [] },
+    inspected: true,
+    website: result.website || candidate.website || null,
+    provenance: result.provenance || { website: candidate.website || null, source: 'cursor-website-audit' },
+    cursorEvidence: evidence,
+    cursorImages: images,
+  };
+}
+
+function normalizeEnrichment(packet, finalist, limit) {
+  const reviews = Array.isArray(packet.reviews) ? packet.reviews : [];
+  const emptyTextReviews = Array.isArray(packet.emptyTextReviews) ? packet.emptyTextReviews : [];
+  const quarantinedReviews = Array.isArray(packet.quarantinedReviews) ? packet.quarantinedReviews : [];
+  const retrievedReviewCount = reviews.length + emptyTextReviews.length;
+  const listingReviewCount = packet.listingReviewCount ?? null;
+  const sufficient = listingReviewCount != null && retrievedReviewCount >= Math.min(limit, listingReviewCount);
+  return {
+    ...packet,
+    kind: 'finalist-review-enrichment',
+    placeId: finalist.placeId,
+    mapsUrl: finalist.mapsUrl,
+    exactPlace: true,
+    discoverySampleOnly: false,
+    requestedLimit: limit,
+    requestedReviewLimit: limit,
+    dateWindow: null,
+    reviews,
+    emptyTextReviews,
+    quarantinedReviews,
+    writtenReviewCount: reviews.filter((review) => String(review.text || '').trim()).length,
+    emptyTextReviewCount: emptyTextReviews.length,
+    retrievedReviewCount,
+    quarantinedReviewCount: quarantinedReviews.length,
+    listingReviewCount,
+    retrievalCompleteness: packet.retrievalCompleteness || (sufficient ? 'complete' : 'incomplete'),
+    enrichmentStatus: sufficient ? 'sufficient' : 'insufficient',
+    source: packet.provenance?.provider || 'apify',
+    provenance: { ...packet.provenance, exactPlaceId: finalist.placeId, exactMapsUrl: finalist.mapsUrl },
+  };
+}
+
+function normalizeJudgment(result, receipt, review) {
+  if (!result || result.kind !== 'review-judgment' || result.reviewId !== review.id || result.authoritative !== true) {
+    throw new Error(`Cursor review judgment contract invalid for ${review.id}`);
+  }
+  if (!VALID_DECISIONS.has(result.decision)) throw new Error(`Invalid authoritative decision for review ${review.id}`);
+  if (!Array.isArray(result.serviceEvidence) || !Array.isArray(result.availabilityEvidence)) {
+    throw new Error(`Cursor review judgment evidence contract invalid for ${review.id}`);
+  }
+  for (const item of result.serviceEvidence) {
+    if (!item || !item.service || !item.excerpt) throw new Error(`Service evidence must include service and exact excerpt for ${review.id}`);
+    if (!String(review.text).includes(String(item.excerpt))) throw new Error(`Service evidence excerpt is not an exact source substring for ${review.id}`);
+  }
+  for (const item of result.availabilityEvidence) {
+    if (item?.excerpt && !String(review.text).includes(String(item.excerpt))) throw new Error(`Availability evidence excerpt is not an exact source substring for ${review.id}`);
+  }
+  if (result.directCompletedService === true && result.decision !== 'anchor') throw new Error(`Direct completed service must be an anchor for ${review.id}`);
+  const provenance = { ...(result.provenance || {}), source: review.source, reviewId: review.id, receiptKey: `cursor:${receipt?.jobId || review.id}`, model: { requestedAlias: receipt?.requestedAlias || null, resolvedModel: receipt?.resolvedModel || null } };
+  return {
+    ...result,
+    judgmentId: result.judgmentId || receipt?.runId || receipt?.jobId || `cursor:${review.id}`,
+    model: result.model || receipt?.resolvedModel || 'grok-4.6',
+    modelReceipt: { requestedAlias: receipt?.requestedAlias || null, resolvedModel: receipt?.resolvedModel || null },
+    receipt: receipt || null,
+    judgedAt: result.judgedAt || receipt?.completedAt || receipt?.startedAt || null,
+    provenance,
+    directCompletedService: result.directCompletedService === true,
+    serviceEvidence: result.serviceEvidence,
+    availabilityEvidence: result.availabilityEvidence,
+  };
+}
+
+function classificationForInventory(inventory) {
+  if (!inventory || !Array.isArray(inventory.reviews)) throw new Error('Finalist review inventory is required');
+  const judgments = inventory.classifications || {};
+  const map = new Map();
+  for (const review of inventory.reviews.filter((item) => String(item.text || '').trim())) {
+    const judgment = judgments instanceof Map ? judgments.get(review.id) : judgments[review.id];
+    if (!judgment || judgment.authoritative !== true) throw new Error(`Missing authoritative judgment for review ${review.id}`);
+    map.set(review.id, judgment);
+  }
+  return buildClassificationArtifact({ reviews: inventory.reviews, judgments: map });
+}
+
+function candidateServicesFrom(value) {
+  if (Array.isArray(value)) return value;
+  if (Array.isArray(value?.candidates)) return value.candidates;
+  if (Array.isArray(value?.services)) return value.services;
+  return [];
+}
+
+/**
+ * Compose the official vendor adapters with the factory's stage contracts.
+ * Vendor receipts and normalized stage results are both durable, so an
+ * orchestrator restart can reconcile paid work without starting it again.
+ */
+function createProductionAdapters({
+  root,
+  config = {},
+  env = process.env,
+  fetchImpl,
+  cursorSdk,
+  clock = () => new Date().toISOString(),
+  receiptStore,
+  apify,
+  cursor,
+  productionCloudAgent = false,
+} = {}) {
+  required(root, 'root');
+  const productionRuntime = productionCloudAgent || (!cursor && !apify && !receiptStore);
+  const receipts = receiptStore || createFileReceiptStore(root);
+  let preparedArtifact = null;
+  let preparedProjection = null;
+  if (env.FACTORY_PAID_PREPARED_ARTIFACT_FILE && fs.existsSync(env.FACTORY_PAID_PREPARED_ARTIFACT_FILE)) {
+    try {
+      preparedArtifact = JSON.parse(fs.readFileSync(env.FACTORY_PAID_PREPARED_ARTIFACT_FILE, 'utf8'));
+      if (productionRuntime) verifyOperationArtifact(preparedArtifact, { stage: 'pre-post', provider: 'apify', context: env.FACTORY_OPERATION_CONTEXT_JSON ? JSON.parse(env.FACTORY_OPERATION_CONTEXT_JSON) : null });
+      preparedProjection = preparedArtifact.requestProjection || null;
+    } catch (error) {
+      if (productionRuntime) throw error;
+      preparedArtifact = null;
+      preparedProjection = null;
+    }
+  }
+  const apifyAdapter = apify || createApifyAdapter({
+    token: env.APIFY_API_TOKEN,
+    fetchImpl,
+    clock,
+    receiptStore: receipts,
+    pollIntervalMs: config.apifyPollIntervalMs ?? 2000,
+    maxPollAttempts: config.apifyMaxPollAttempts ?? 1800,
+    production: productionRuntime && env.FACTORY_PHASE_B_PRODUCTION === 'true',
+    operationArtifacts: {
+      'pre-post': {
+        artifactName: env.FACTORY_PAID_PREPARED_ARTIFACT_NAME,
+        artifactId: env.FACTORY_PAID_PREPARED_ARTIFACT_ID,
+        artifactDigest: env.FACTORY_PAID_PREPARED_ARTIFACT_DIGEST,
+        artifactContentDigest: env.FACTORY_PAID_PREPARED_ARTIFACT_CONTENT_DIGEST,
+        artifactOrigin: 'github-actions',
+        operationKey: env.FACTORY_PAID_PREPARED_OPERATION_KEY || preparedArtifact?.operationKey,
+        requestDigest: env.FACTORY_PAID_PREPARED_REQUEST_DIGEST || preparedArtifact?.requestDigest,
+        idempotencyKey: env.FACTORY_PAID_PREPARED_IDEMPOTENCY_KEY || preparedArtifact?.idempotencyKey,
+        context: preparedArtifact?.context || null,
+        requestProjection: preparedProjection,
+      },
+    },
+    expectedOperationContext: env.FACTORY_OPERATION_CONTEXT_JSON ? JSON.parse(env.FACTORY_OPERATION_CONTEXT_JSON) : null,
+    operationArtifactWriter: env.FACTORY_ACCEPTED_OPERATION_ARTIFACT_PATH ? async (artifact, response) => {
+      const filename = env.FACTORY_ACCEPTED_OPERATION_ARTIFACT_PATH;
+      fs.mkdirSync(require('node:path').dirname(filename), { recursive: true });
+      fs.writeFileSync(filename, `${JSON.stringify({ ...artifact, response }, null, 2)}\n`);
+      if (env.FACTORY_STOP_AFTER_ACCEPTANCE === 'true') {
+        const boundaryFile = env.FACTORY_ACCEPTANCE_BOUNDARY_FILE || 'canary/phase-b/accepted-boundary';
+        fs.writeFileSync(boundaryFile, `${artifact.operationKey}\n`);
+        const boundary = new Error('PAID_OPERATION_ACCEPTANCE_BOUNDARY');
+        boundary.code = 'PAID_OPERATION_ACCEPTANCE_BOUNDARY';
+        throw boundary;
+      }
+    } : null,
+  });
+  const cursorAdapter = cursor || createCursorAdapter({ apiKey: env.CURSOR_API_KEY, sdk: cursorSdk, modelAlias: env.CURSOR_MODEL || config.cursorModel, clock, receiptStore: receipts, workspace: root });
+  const discovery = {
+    requiresRequest: true,
+    async discover({ searchStrings, location, limit, reviewLimit = config.discoveryReviewLimit || 5 } = {}) {
+      if (!Array.isArray(searchStrings) || !searchStrings.length || !location || !Number.isFinite(limit)) {
+        throw new Error('Production discovery requires Architect searchStrings, location, and limit');
+      }
+      const result = await apifyAdapter.discoverCandidates({ searchStrings, location, limit: Math.min(7, limit), reviewLimit: Math.min(10, reviewLimit) });
+      const candidates = (result.candidates || []).map(candidateFromPlace);
+      const request = { searchStrings, location, limit: Math.min(7, limit), reviewLimit: Math.min(10, reviewLimit) };
+      const packet = { ...result, candidates, request };
+      const receipt = await putReceipt(receipts, `factory:discovery:${hash(request)}`, { provider: 'apify', operation: 'discovery', status: 'completed', completedAt: clock(), vendorReceipt: result.provenance?.run || null, input: request, request, result: { count: candidates.length, candidateDigest: digest(candidates) }, binding: { operation: 'discovery' } }, env);
+      return { ...packet, receipt };
+    },
+  };
+
+  const websiteAudit = {
+    async audit(input) {
+      const candidate = input?.candidate || input;
+      const request = input?.request || null;
+      if (!candidate?.placeId && !candidate?.mapsUrl) {
+        return {
+          quality: 'quarantined', opportunity: null, siteCopyEvidence: [], ownedGraphicEvidence: [], publicImageUrls: [],
+          graphicsInspection: { status: 'not-inspected', findings: [] }, inspected: false,
+          quarantined: true, quarantineReason: 'missing-stable-place-identity', provenance: { source: 'apify-discovery' },
+        };
+      }
+      required(candidate?.placeId || candidate?.mapsUrl, 'candidate stable place identity');
+      const jobId = `website-audit:${candidate.placeId || hash(candidate.mapsUrl)}`;
+      const record = await cursorAdapter.runResearchRecord({
+        kind: 'website-audit', jobId,
+        input: { candidate: { placeId: candidate.placeId, name: candidate.name, website: candidate.website, location: candidate.location }, website: candidate.website || null, request },
+      });
+      const audit = normalizeWebsiteAudit(record.result, candidate);
+      const receipt = await putReceipt(receipts, `factory:${jobId}`, { provider: 'cursor-sdk', operation: 'website-audit', status: 'completed', completedAt: clock(), vendorReceipt: record.receipt, input: { candidate: { placeId: candidate.placeId, name: candidate.name, website: candidate.website, location: candidate.location }, request }, binding: { placeId: candidate.placeId }, result: audit }, env);
+      return { audit, receipt };
+    },
+  };
+
+  const enrichment = {
+    async enrichExactPlace({ finalist, limit = 50, dateWindow = null, exactPlace = true, runId = null, prospectId = null }) {
+      if (!exactPlace || dateWindow !== null || limit !== 50) throw new Error('Finalist enrichment requires exact place, 50 reviews, and no date window');
+      const placeId = finalist?.placeId || finalist?.gbp?.placeId;
+      const mapsUrl = finalist?.mapsUrl || finalist?.gbp?.mapsUrl;
+      required(placeId, 'finalist.placeId');
+      required(mapsUrl, 'finalist.mapsUrl');
+      const key = `factory:enrichment:${placeId}`;
+      const prior = await getReceipt(receipts, key);
+      if (prior?.status === 'completed' && prior.result) return prior.result;
+      const packet = normalizeEnrichment(await apifyAdapter.enrichFinalist({ placeId, mapsUrl, limit }), { ...finalist, placeId, mapsUrl }, limit);
+      // The adapter receipt is metadata, not part of the canonical result
+      // payload.  Keeping it enumerable here would make the digest depend on
+      // the later receipt wrapper and fail deterministic restore validation.
+      const sourceReceipt = packet.receipt || packet.provenance?.run || null;
+      delete packet.receipt;
+      const input = { placeId, mapsUrl, limit, dateWindow: null };
+      const receipt = await putReceipt(receipts, key, { provider: sourceReceipt?.provider || 'apify', operation: 'finalist-enrichment', status: 'completed', completedAt: clock(), vendorReceipt: sourceReceipt, input, request: input, binding: { placeId, prospectId: prospectId || finalist?.prospectId || placeId, runId: runId || finalist?.runId || null }, result: packet }, env);
+      Object.defineProperty(packet, 'receipt', { value: receipt, enumerable: false, configurable: true });
+      return packet;
+    },
+  };
+
+  const reviewJudge = {
+    async judge({ review, finalist, runId = null, prospectId = null }) {
+      required(review?.id, 'review.id');
+      const jobId = `review-judgment:${finalist?.placeId || 'place'}:${review.id}`;
+      const record = await cursorAdapter.runResearchRecord({
+        kind: 'review-judgment', jobId,
+        input: { finalist: { placeId: finalist?.placeId, name: finalist?.name }, review, deterministicSignals: deriveDeterministicSignals(review) },
+      });
+      const judgment = normalizeJudgment(record.result, record.receipt, review);
+      const receiptResult = { ...judgment };
+      delete receiptResult.receipt;
+      const input = { placeId: finalist?.placeId, reviewId: review.id, reviewDigest: digest(review) };
+      const receipt = await putReceipt(receipts, `factory:${jobId}`, { provider: 'cursor-sdk', operation: 'review-judgment', status: 'completed', completedAt: clock(), vendorReceipt: record.receipt, input, binding: { placeId: finalist?.placeId, prospectId: prospectId || finalist?.prospectId || finalist?.placeId, runId: runId || finalist?.runId || null, reviewId: review.id }, result: receiptResult }, env);
+      judgment.receipt = receipt;
+      return judgment;
+    },
+  };
+
+  const prescriber = {
+    async propose({ finalist, classification, inventory, discoveryPacket, decision = {} }) {
+      classification = classification?.reviews ? classification : classificationForInventory(inventory);
+      const jobId = `page-prescription:${finalist?.placeId || 'place'}`;
+      const record = await cursorAdapter.runResearchRecord({
+        kind: 'page-prescription', jobId,
+        input: { finalist: { placeId: finalist?.placeId, prospectId: finalist?.prospectId, runId: finalist?.runId, name: finalist?.name, website: finalist?.website }, inventory: classification, discoveryPacket, decision },
+      });
+      const modelResult = record.result;
+      const pages = decision.pages || decision.proposedPages || modelResult.pages;
+      const services = decision.candidateServices || modelResult.candidateServices || candidateServicesFrom(modelResult.comparison);
+      if (!Array.isArray(pages) || !pages.length) throw new Error('Page prescription requires explicit validated pages');
+      if (!Array.isArray(services) || !services.length) throw new Error('Page prescription requires a complete candidate service comparison');
+      const serviceLedger = decision.serviceCoverageLedger || decision.serviceLedger || modelResult.serviceCoverageLedger;
+      const sourceBinding = decision.sourceCheckpoint || decision.sourceBinding || modelResult.sourceCheckpoint || modelResult.sourceBinding;
+      if (!sourceBinding) throw new Error('Page prescription requires a trusted source checkpoint binding');
+      // The restored historical ledger is evidence, not the current run's
+      // identity.  Rebind its service rows to the newly computed source
+      // checkpoint while preserving the exact service/review decisions.
+      const boundServiceLedger = { ...serviceLedger, sourceIdentity: sourceBinding.sourceIdentity, strictEvidenceBinding: productionRuntime };
+      const boundIdentity = { prospectId: finalist?.prospectId || finalist?.placeId, placeId: finalist?.placeId, runId: finalist?.runId || decision.runId };
+      validateCompleteCanonicalLedger(boundServiceLedger, { services, pages, identity: { ...boundIdentity, sourceIdentity: sourceBinding.sourceIdentity } });
+      const validated = validatePrescription({ finalist, classification, services, proposedPages: pages, architectReview: decision.architectReview || decision, policy: decision.pagePolicy || modelResult.pagePolicy, override: decision.expansionOverride || modelResult.expansionOverride, serviceLedger: boundServiceLedger, runContext: { ...boundIdentity }, sourceBinding });
+      const evidence = buildPrescriptionEvidence({ classification, pages: validated.pages, candidateServices: services });
+      const output = {
+        ...validated,
+        sourceCheckpoint: sourceBinding,
+        candidateServices: services,
+        whyBuilt: decision.whyBuilt || modelResult.whyBuilt || null,
+        evidence,
+        availabilityPattern: evidence.availabilityPattern,
+        authoritativeAnchorCount: evidence.authoritativeAnchorCount,
+        cursorComparison: modelResult.comparison,
+        cursorReceipt: record.receipt,
+      };
+      output.prescriptionDigest = digest({ ...output, prescriptionDigest: undefined });
+      const receipt = await putReceipt(receipts, `factory:${jobId}`, { provider: 'cursor-sdk', operation: 'page-prescription', status: 'completed', completedAt: clock(), vendorReceipt: record.receipt, input: { placeId: finalist?.placeId, prospectId: finalist?.prospectId, runId: finalist?.runId || decision.runId, classificationDigest: digest(classification), sourceManifestDigest: sourceBinding.sourceManifestDigest || null }, result: output }, env);
+      return { proposal: output, receipt };
+    },
+    async prescribe(input) {
+      const result = await prescriber.propose(input);
+      return result.proposal;
+    },
+  };
+
+  const gate1 = {
+    async render({ finalist, inventory, classifications, prescription, whyBuilt, qa: suppliedQa = null, sourceCheckpoint = null, receipts: receiptBundle = {}, actionProof = null, lineage = null }) {
+      const classified = classifications || {};
+      const enrichedInventory = {
+        ...inventory,
+        classifications: classified,
+        classified: inventory.classified || (inventory.reviews ? inventory.reviews.map((review) => ({ id: review.id, authoritative: true, sourceReview: review, judgment: classified[review.id] || {} })) : []),
+        writtenReviewCount: inventory.writtenReviewCount ?? inventory.reviews?.length ?? 0,
+        authoritativeJudgmentCount: Object.keys(classified).length,
+        authoritativeAnchorCount: Object.values(classified).filter((item) => item?.decision === 'anchor' && item?.directCompletedService === true).length,
+        availabilityPattern: prescription.availabilityPattern || prescription.evidence?.availabilityPattern || inventory.availabilityPattern || null,
+      };
+      const resolvedWhyBuilt = whyBuilt || prescription.whyBuilt;
+      const qa = suppliedQa || architectQa({ finalist, inventory: enrichedInventory, prescription, whyBuilt: resolvedWhyBuilt });
+      if (!qa.passed) throw new Error(`Gate 1 QA failed: ${Object.entries(qa.checks).filter(([, passed]) => !passed).map(([name]) => name).join(', ')}`);
+      const markdown = renderGate1({ finalist, prescription, whyBuilt: resolvedWhyBuilt, qa, sourceCheckpoint: sourceCheckpoint || prescription.sourceCheckpoint || null, receipts: receiptBundle, actionProof, lineage: lineage || { prospectId: prescription.prospect?.prospectId, placeId: prescription.prospect?.placeId, runId: prescription.runId } });
+      const result = { markdown, qa, state: 'awaiting-human-gate-1', receiptKeys: [`factory:page-prescription:${finalist.placeId}`] };
+      await putReceipt(receipts, `factory:gate-1:${finalist.placeId}`, { provider: 'factory', operation: 'gate-1', status: 'completed', completedAt: clock(), input: { placeId: finalist.placeId, prospectId: prescription?.prospect?.prospectId || finalist.placeId }, result }, env);
+      return result;
+    },
+  };
+
+  return { production: productionRuntime, testOnly: !productionRuntime, discovery, websiteAudit, enrichment, reviewJudge, prescriber, gate1, receiptStore: receipts, apify: apifyAdapter, cursor: cursorAdapter };
+}
+
+module.exports = {
+  createProductionAdapters,
+  createFactoryAdapters: createProductionAdapters,
+  normalizeEnrichment,
+  normalizeWebsiteAudit,
+  normalizeJudgment,
+  classificationForInventory,
+  receiptContextFromEnv,
+};

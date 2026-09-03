@@ -1,0 +1,105 @@
+{
+  "kind": "seeded-apify-discovery-result",
+  "sourceBoundary": "Raw GBP fields projected to the new factory's inexpensive discovery shape; no prior qualification, audit, evidence judgment, or page conclusions are included.",
+  "discoveryRequest": {
+    "searchStrings": ["garage door repair"],
+    "location": "Springfield, Missouri",
+    "limit": 7,
+    "reviewLimit": 5
+  },
+  "candidates": [
+    {
+      "placeId": "ChIJHa32AOi84YMR38BV93YKiS8",
+      "name": "360 Garage Door and More",
+      "category": "Garage door supplier",
+      "categories": ["Garage door supplier"],
+      "location": "2035 W Mt Vernon St, Springfield, MO 65802",
+      "city": "Springfield",
+      "state": "Missouri",
+      "postalCode": "65802",
+      "coordinates": {
+        "lat": 37.204992,
+        "lng": -93.3195164
+      },
+      "phone": "(417) 366-7360",
+      "website": "http://www.360garagedoor.com/",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=360%20Garage%20Door%20and%20More&query_place_id=ChIJHa32AOi84YMR38BV93YKiS8",
+      "rating": 5,
+      "reviewCount": 110,
+      "reviewsDistribution": {
+        "oneStar": 0,
+        "twoStar": 0,
+        "threeStar": 0,
+        "fourStar": 0,
+        "fiveStar": 110
+      },
+      "openingHours": [
+        { "day": "Monday", "hours": "8 AM to 5 PM" },
+        { "day": "Tuesday", "hours": "8 AM to 5 PM" },
+        { "day": "Wednesday", "hours": "8 AM to 5 PM" },
+        { "day": "Thursday", "hours": "8 AM to 5 PM" },
+        { "day": "Friday", "hours": "8 AM to 5 PM" },
+        { "day": "Saturday", "hours": "Closed" },
+        { "day": "Sunday", "hours": "Closed" }
+      ],
+      "permanentlyClosed": false,
+      "temporarilyClosed": false,
+      "discoveryReviewSource": "google-via-apify",
+      "discoveryReviews": [
+        {
+          "author": "Gen Taylor",
+          "rating": 5,
+          "date": "2026-08-19T22:07:53.063Z",
+          "text": "We had such a great experience with 360 Garage Door and More. Jenny answered the phone and was incredibly friendly, kind, and helpful. They were able to get us scheduled very quickly, which we really appreciated.\n\nWill came out to repair our garage door spring and install a new keypad. He was quick, friendly, professional, and did a great job. The whole process was easy, fast, and very affordable.\n\nWe are extremely happy with the service we received and would absolutely recommend 360 Garage Door and More to anyone needing garage door repair or service.",
+          "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25wemJWQkhVa3RWWTJKeVdYaFdlbFJOWlVGeFQxRRAB!2m1!1s0x0:0x2f890a76f755c0df!3m1!1s2@1:CAIQACodChtycF9oOnpzbVBHUktVY2JyWXhWelRNZUFxT1E%7C%7C?hl=en",
+          "source": "Google"
+        },
+        {
+          "author": "Cameron Spitzer",
+          "rating": 5,
+          "date": "2026-08-18T17:07:57.316Z",
+          "text": "Great Company. They replaced my doors and openers with quality materials at a lower cost than the competitors. Then, they came back a couple months later just to check and make sure everything was working as it is supposed to. Highly recommend.",
+          "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xWdlZGQk9hMjFOUlhaVk5rczFVR2RKTlVKWlVGRRAB!2m1!1s0x0:0x2f890a76f755c0df!3m1!1s2@1:CAIQACodChtycF9oOlVvVFBOa21NRXZVNks1UGdJNUJZUFE%7C%7C?hl=en",
+          "source": "Google"
+        },
+        {
+          "author": "Steven Michaels",
+          "rating": 5,
+          "date": "2026-08-14T14:03:32.132Z",
+          "text": "Great people!",
+          "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT210NWFFVnBlVWxKZFVjd2FERnVMVFUwVjNKQ2IzYxAB!2m1!1s0x0:0x2f890a76f755c0df!3m1!1s2@1:CAIQACodChtycF9oOmt5aEVpeUlJdUcwaDFuLTU0V3JCb3c%7C%7C?hl=en",
+          "source": "Google"
+        },
+        {
+          "author": "Matthew Baker",
+          "rating": 5,
+          "date": "2026-08-12T17:42:56.349Z",
+          "text": "Excellent and fast customer service! He stayed and helped me set up the app and everything",
+          "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21STFVuUnJUWE0xUkhCTFNWcFZMVWxrTlhjeVVrRRAB!2m1!1s0x0:0x2f890a76f755c0df!3m1!1s2@1:CAIQACodChtycF9oOmRLUnRrTXM1RHBLSVpVLUlkNXcyUkE%7C%7C?hl=en",
+          "source": "Google"
+        },
+        {
+          "author": "Diana Viviano",
+          "rating": 5,
+          "date": "2026-07-31T17:42:48.090Z",
+          "text": "Very professional, courteous, friendly (love Jenny) phone skills and texting on availability was superb. Will was amazing and skillful in his service repair. All in all, we had a truly great experience with 360 garage door repair service and they were the most reasonable price around after comparing service calls with several companies. Great job 360!! We will be using you in the future and referring you to others in need of garage door services. A+",
+          "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2t4alNtbDBaVVV4VVRselpIQTJhakpOYURSeE1HYxAB!2m1!1s0x0:0x2f890a76f755c0df!3m1!1s2@1:CAIQACodChtycF9oOkxjSml0ZUUxUTlzZHA2ajJNaDRxMGc%7C%7C?hl=en",
+          "source": "Google"
+        }
+      ],
+      "images": [
+        { "url": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkyDt1DUfzlapCJtMkRjKvbaXEAedS3fcT_8yap9N5qNX2pxVrXHM2n1AQfzA8b6gHQjLnd1B8xchXmPCDhMbxUhdiuWzb0Qmjh_NIUb7PGToTTwHG_XjEU_Wr7dVNxZpSzWJpLeA=w1920-h1080-k-no", "source": "google-via-apify" },
+        { "url": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmXp7kjkObts9U5A-amNw3uVV9g_oIZWi_YAeqQdIaOfnuvAvOYRJIGMSYbbFYdEZT2nP1nbfNhOL7tmVpizCLfMjEdILouiU3R-knBrQiT4d8ySVfRb0V_aRnu-uJcDGlExuL23A=w1920-h1080-k-no", "source": "google-via-apify" },
+        { "url": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkc5jU1wIaf-HrV6nPLZ7Sklkw688ilLcXOjJuU_l6jaw-iwLYQGsRx82am9ei10k9nFHslJmoJ-7rx0BXmM_nggESI1EGknqzovVEXDlsWsePCtxmYYOey6ngGPaOIJj4G3b0=w1920-h1080-k-no", "source": "google-via-apify" },
+        { "url": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnPJEvLeEwbXfQJaKaZSCVwogAGsY3pv24qleYmRfp2INQ_7JDobXGIziOlAQki3cCnvAp55IiLXakZaVsDpr-986gmCy5lEAwOwEVP08OGo156xkJ3AWqkDffof2OHqIAgyKu4=w1920-h1080-k-no", "source": "google-via-apify" },
+        { "url": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlK8awFsHPvsikPDEPDIZkhCV6S75srbIyk5KSOYHeqeqSn9lyTWfi751Dhdm_UYxm0eykMGl9559UjX1a5YV9y0ejJPl2IKOLZq3ISerZS_F7IxeAhRAAJbZl1jRX9RUqnJ4XZ=w1920-h1080-k-no", "source": "google-via-apify" }
+      ],
+      "provenance": {
+        "provider": "apify",
+        "sourceArtifact": "scout/runs/2026-08-19/finalists/360-garage-door-and-more/apify-finalist.json",
+        "sourceCommit": "bd3762576de81ded7f1a02a45b8b4fe7943dd6a3",
+        "projection": "discovery-fields-only"
+      }
+    }
+  ]
+}

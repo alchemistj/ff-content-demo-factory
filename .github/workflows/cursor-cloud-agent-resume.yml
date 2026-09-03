@@ -1,0 +1,486 @@
+name: Resume Gate 1 from Cursor terminal receipt
+
+on:
+  issue_comment:
+    types: [created]
+
+permissions:
+  contents: read
+  actions: read
+  issues: write
+  pull-requests: read
+
+concurrency:
+  group: factory-cursor-handoff-${{ github.repository }}
+  cancel-in-progress: false
+
+jobs:
+  resume:
+    if: github.event.issue.pull_request && github.event.comment.user.login == 'cursor[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - name: Resolve the authoritative PR head
+        id: target
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_NUMBER: ${{ github.event.issue.number }}
+        run: |
+          pr_json="$(gh pr view "$PR_NUMBER" --repo "$GITHUB_REPOSITORY" --json headRefName,headRefOid)"
+          echo "branch=$(printf '%s' "$pr_json" | jq -r .headRefName)" >> "$GITHUB_OUTPUT"
+          echo "head=$(printf '%s' "$pr_json" | jq -r .headRefOid)" >> "$GITHUB_OUTPUT"
+      - name: Checkout the immutable PR head
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: ${{ steps.target.outputs.head }}
+          fetch-depth: 1
+          persist-credentials: false
+      - name: Parse terminal receipt binding before locating dispatch
+        env:
+          COMMENT_ID: ${{ github.event.comment.id }}
+          COMMENT_URL: ${{ github.event.comment.html_url }}
+          AUTHOR_LOGIN: ${{ github.event.comment.user.login }}
+          COMMENT_BODY: ${{ github.event.comment.body }}
+        run: |
+          mkdir -p canary/phase-a
+          printf '%s' "$COMMENT_BODY" > canary/phase-a/cursor-terminal-comment.md
+          node scripts/parse-cursor-terminal-comment.js canary/phase-a/cursor-terminal-comment.md "$AUTHOR_LOGIN" "$COMMENT_ID" "$COMMENT_URL" > canary/phase-a/terminal-binding.json
+      - name: Retrieve the phase-A dispatch and pending artifact automatically
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          REPOSITORY: ${{ github.repository }}
+        run: |
+          test -n "$GH_TOKEN"
+          mkdir -p canary/phase-a
+          test "$ISSUE_NUMBER" = '1'
+          dispatch_issue='8'
+          execution_issue='1'
+          echo "FACTORY_DISPATCH_ISSUE_NUMBER=$dispatch_issue" >> "$GITHUB_ENV"
+          GH_TOKEN="$GH_TOKEN" gh api --paginate "repos/$REPOSITORY/issues/$execution_issue/comments?per_page=100" > canary/phase-a/dispatch-comments.json
+          expected="$(REPOSITORY="$REPOSITORY" BRANCH="${{ steps.target.outputs.branch }}" HEAD="${{ steps.target.outputs.head }}" BINDING_FILE=canary/phase-a/terminal-binding.json node -e "const fs=require('node:fs');const b=JSON.parse(fs.readFileSync(process.env.BINDING_FILE,'utf8'));process.stdout.write(JSON.stringify({repository:process.env.REPOSITORY,prNumber:'1',branch:process.env.BRANCH,reviewedHead:process.env.HEAD,handoffId:b.handoffId,dispatchKey:b.dispatchKey,dispatchDigest:b.dispatchDigest,phaseARunId:b.phaseARunId,inputManifestDigest:b.inputManifestDigest,sourceCheckpointDigest:b.sourceCheckpointDigest,sourceManifestDigest:b.sourceManifestDigest,jobDigest:b.dispatchDigest}))")"
+          dispatch_json="$(node scripts/select-cursor-dispatch-comment.js canary/phase-a/dispatch-comments.json "$expected")"
+          printf '%s\n' "$dispatch_json" > canary/phase-a/dispatch.json
+          phase_run="$(DISPATCH_JSON="$dispatch_json" node -e "const {markerValue}=require('./scripts/select-cursor-dispatch-comment');process.stdout.write(markerValue(JSON.parse(process.env.DISPATCH_JSON).body,'Phase-A run')||'')")"
+          test -n "$phase_run"
+          binding_phase_run="$(node -e "process.stdout.write(String(JSON.parse(require('fs').readFileSync('canary/phase-a/terminal-binding.json','utf8')).phaseARunId||''))")"
+          if [ -n "$binding_phase_run" ] && [ "$phase_run" != "$binding_phase_run" ]; then echo 'terminal receipt phase-A run does not match dispatch'; exit 1; fi
+          gh run download "$phase_run" --repo "$GITHUB_REPOSITORY" --name "current-head-gate1-canary-$phase_run" --dir canary/phase-a
+          test -f canary/phase-a/current-head-gate1-pending.json
+          dispatch_run="$(DISPATCH_JSON="$dispatch_json" node -e "const {markerValue}=require('./scripts/select-cursor-dispatch-comment');process.stdout.write(markerValue(JSON.parse(process.env.DISPATCH_JSON).body,'Dispatch workflow run')||'')")"
+          test -n "$dispatch_run"
+          gh run download "$dispatch_run" --repo "$GITHUB_REPOSITORY" --name "cursor-cloud-agent-dispatch-$dispatch_run" --dir canary/phase-a/dispatch
+          GH_TOKEN="$GH_TOKEN" gh api --paginate "repos/$REPOSITORY/issues/$dispatch_issue/comments?per_page=100" > canary/phase-a/ledger-comments.json
+          REPOSITORY="$REPOSITORY" ISSUE_NUMBER="$dispatch_issue" PENDING_FILE=canary/phase-a/current-head-gate1-pending.json LEDGER_FILE=canary/phase-a/ledger-comments.json node - <<'NODE'
+          const fs = require('node:fs'); const { findClaim } = require('./src/factory/github-ledger');
+          const pending = JSON.parse(fs.readFileSync(process.env.PENDING_FILE)); const comments = JSON.parse(fs.readFileSync(process.env.LEDGER_FILE));
+          const claim = findClaim(comments, { repository: process.env.REPOSITORY, issueNumber: '8', prNumber: '1', branch: pending.dispatchPacket.branch, checkedOutSha: pending.envelope.checkedOutSha, kind: 'dispatch', handoffId: pending.handoffId, dispatchKey: pending.envelope.dispatchKey, dispatchDigest: pending.envelope.dispatchDigest, runId: pending.envelope.runId, prospectId: pending.envelope.prospectId, sourceCheckpointDigest: pending.envelope.sourceCheckpointDigest, sourceManifestDigest: pending.envelope.sourceManifestDigest, inputManifestDigest: pending.envelope.inputManifestDigest, jobId: pending.phaseARunId, resultId: pending.envelope.dispatchDigest });
+          if (!claim) throw new Error('Authoritative durable dispatch ledger marker is missing or mismatched');
+          NODE
+      - name: Validate terminal result before consuming durable resume claim
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          COMMENT_ID: ${{ github.event.comment.id }}
+          COMMENT_URL: ${{ github.event.comment.html_url }}
+          AUTHOR_LOGIN: ${{ github.event.comment.user.login }}
+          COMMENT_BODY: ${{ github.event.comment.body }}
+          FACTORY_STRICT_TERMINAL_BINDING: 'true'
+        run: |
+          test -n "$GH_TOKEN"
+          printf '%s' "$COMMENT_BODY" > canary/phase-a/cursor-terminal-comment.md
+          node src/collect-cursor-terminal-result.js canary/phase-a/current-head-gate1-pending.json canary/phase-a/cursor-terminal-comment.md canary/phase-a/cursor-terminal-result.json "$AUTHOR_LOGIN" "$COMMENT_ID" "$COMMENT_URL"
+      - name: Execute terminal dedupe and crash-recovery guard
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPOSITORY: ${{ github.repository }}
+          ISSUE_NUMBER: ${{ env.FACTORY_DISPATCH_ISSUE_NUMBER }}
+        run: |
+          test -n "$GH_TOKEN"
+          GH_TOKEN="$GH_TOKEN" gh api --paginate "repos/$REPOSITORY/issues/$ISSUE_NUMBER/comments?per_page=100" > canary/phase-a/ledger-comments-before-resume.json
+          node scripts/cursor-handoff-recovery.js canary/phase-a/current-head-gate1-pending.json canary/phase-a/cursor-terminal-result.json canary/phase-a/ledger-comments-before-resume.json > canary/phase-a/recovery-decision.json
+          node scripts/apply-cursor-recovery-decision.js canary/phase-a/current-head-gate1-pending.json canary/phase-a/cursor-terminal-result.json canary/phase-a/ledger-comments-before-resume.json canary/phase-a/recovery-decision.json canary/phase-a
+      - name: Post recovery transitions from the sealed decision
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE_NUMBER: ${{ env.FACTORY_DISPATCH_ISSUE_NUMBER }}
+          REPOSITORY: ${{ github.repository }}
+        run: |
+          test -n "$GH_TOKEN"
+          state="canary/phase-a/recovery-state.json"
+          action="$(node -e "process.stdout.write(JSON.parse(require('fs').readFileSync('$state','utf8')).next||'')")"
+          if [ "$action" = 'post-in-motion-terminal-and-phase-b' ]; then
+            GH_TOKEN="$GH_TOKEN" gh api "repos/$REPOSITORY/issues/$ISSUE_NUMBER/comments" --method POST -f body="$(cat canary/phase-a/cursor-in-motion-ledger-marker.md)"
+            GH_TOKEN="$GH_TOKEN" gh api "repos/$REPOSITORY/issues/$ISSUE_NUMBER/comments" --method POST -f body="$(cat canary/phase-a/cursor-resume-ledger-marker.md)"
+            GH_TOKEN="$GH_TOKEN" gh api "repos/$REPOSITORY/issues/$ISSUE_NUMBER/comments" --method POST -f body="$(cat canary/phase-a/cursor-phase-b-claim.md)"
+          elif [ "$action" = 'post-terminal-and-phase-b' ]; then
+            GH_TOKEN="$GH_TOKEN" gh api "repos/$REPOSITORY/issues/$ISSUE_NUMBER/comments" --method POST -f body="$(cat canary/phase-a/cursor-resume-ledger-marker.md)"
+            GH_TOKEN="$GH_TOKEN" gh api "repos/$REPOSITORY/issues/$ISSUE_NUMBER/comments" --method POST -f body="$(cat canary/phase-a/cursor-phase-b-claim.md)"
+          elif [ "$action" = 'post-phase-b' ]; then
+            GH_TOKEN="$GH_TOKEN" gh api "repos/$REPOSITORY/issues/$ISSUE_NUMBER/comments" --method POST -f body="$(cat canary/phase-a/cursor-phase-b-claim.md)"
+          fi
+          decision_action="$(node -e "process.stdout.write(JSON.parse(require('fs').readFileSync('canary/phase-a/recovery-state.json','utf8')).action)")"
+          echo "FACTORY_RECOVERY_ACTION=$decision_action" >> "$GITHUB_ENV"
+          case "$decision_action" in
+            noop) echo 'FACTORY_RESUME_ALREADY_CLAIMED=true' >> "$GITHUB_ENV"; echo 'FACTORY_RECOVERY_DECISION_APPLIED=true' >> "$GITHUB_ENV" ;;
+            recover-phase-b) echo 'FACTORY_RECOVERY_DECISION_APPLIED=true' >> "$GITHUB_ENV" ;;
+            recover-prepared) echo 'FACTORY_PHASE_B_RECOVERY=true' >> "$GITHUB_ENV"; echo 'FACTORY_RECOVERY_DECISION_APPLIED=true' >> "$GITHUB_ENV" ;;
+            recover-accepted) echo 'FACTORY_ACCEPTED_RECOVERY=true' >> "$GITHUB_ENV"; echo 'FACTORY_RECOVERY_DECISION_APPLIED=true' >> "$GITHUB_ENV" ;;
+            resume-phase-b) echo 'FACTORY_TERMINAL_ALREADY_RECORDED=true' >> "$GITHUB_ENV"; echo 'FACTORY_RECOVERY_DECISION_APPLIED=true' >> "$GITHUB_ENV" ;;
+            *) echo 'FACTORY_RECOVERY_DECISION_APPLIED=true' >> "$GITHUB_ENV" ;;
+          esac
+      - name: Record in-motion ledger state after validated Cursor receipt
+        if: ${{ false }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE_NUMBER: ${{ env.FACTORY_DISPATCH_ISSUE_NUMBER }}
+          COMMENT_ID: ${{ github.event.comment.id }}
+          COMMENT_URL: ${{ github.event.comment.html_url }}
+          REPOSITORY: ${{ github.repository }}
+        run: |
+          test -n "$GH_TOKEN"
+          GH_TOKEN="$GH_TOKEN" gh api --paginate "repos/$REPOSITORY/issues/$ISSUE_NUMBER/comments?per_page=100" > canary/phase-a/ledger-comments-current.json
+          LEDGER_FILE=canary/phase-a/ledger-comments-current.json REPOSITORY="$REPOSITORY" ISSUE_NUMBER="$ISSUE_NUMBER" node - <<'NODE'
+          const fs=require('node:fs'); const { markerFor, markerBody, assertTransition, findClaim, findTerminalOutcome, terminalOutcomeKey }=require('./src/factory/github-ledger');
+          const p=JSON.parse(fs.readFileSync('canary/phase-a/current-head-gate1-pending.json','utf8')); const result=JSON.parse(fs.readFileSync('canary/phase-a/cursor-terminal-result.json','utf8')); const comments=JSON.parse(fs.readFileSync(process.env.LEDGER_FILE));
+          const outcome={repository:process.env.REPOSITORY,issueNumber:'8',prNumber:'1',branch:p.dispatchPacket.branch,checkedOutSha:p.envelope.checkedOutSha,kind:'resume',handoffId:p.handoffId,dispatchKey:p.envelope.dispatchKey,dispatchDigest:p.envelope.dispatchDigest,runId:p.envelope.runId,prospectId:p.envelope.prospectId,sourceCheckpointDigest:p.envelope.sourceCheckpointDigest,sourceManifestDigest:p.envelope.sourceManifestDigest,inputManifestDigest:p.envelope.inputManifestDigest,jobId:p.phaseARunId,inputDigest:result.receipt.inputDigest,outputDigest:result.receipt.outputDigest};
+          const ownerToken=terminalOutcomeKey(outcome); const context={...outcome,ownerToken,resultId:ownerToken};
+          const existing=findTerminalOutcome(comments,outcome);
+          if (existing?.status === 'resumed') { fs.appendFileSync(process.env.GITHUB_ENV,'FACTORY_RESUME_ALREADY_CLAIMED=true\n'); process.exit(0); }
+          if (existing?.status === 'phase_b_claimed') { fs.writeFileSync('canary/phase-a/terminal-already-recorded','true'); fs.appendFileSync(process.env.GITHUB_ENV,'FACTORY_PHASE_B_RECOVERY=true\nFACTORY_TERMINAL_ALREADY_RECORDED=true\n'); process.exit(0); }
+          if (existing?.status === 'terminal') { fs.writeFileSync('canary/phase-a/terminal-already-recorded','true'); fs.appendFileSync(process.env.GITHUB_ENV,'FACTORY_TERMINAL_ALREADY_RECORDED=true\n'); process.exit(0); }
+          const prior=findClaim(comments,context) || existing;
+          if (prior && prior.status === 'resumed') { fs.appendFileSync(process.env.GITHUB_ENV,'FACTORY_RESUME_ALREADY_CLAIMED=true\n'); process.exit(0); }
+          if (prior && prior.status === 'phase_b_claimed') { fs.writeFileSync('canary/phase-a/terminal-already-recorded','true'); fs.appendFileSync(process.env.GITHUB_ENV,'FACTORY_PHASE_B_RECOVERY=true\nFACTORY_TERMINAL_ALREADY_RECORDED=true\n'); process.exit(0); }
+          if (prior && prior.status === 'in_motion') { fs.appendFileSync(process.env.GITHUB_ENV,'FACTORY_IN_MOTION_RECOVERY=true\n'); process.exit(0); }
+          if (prior && prior.status === 'terminal') { fs.appendFileSync(process.env.GITHUB_ENV,'FACTORY_TERMINAL_ALREADY_RECORDED=true\n'); process.exit(0); }
+          const posted=findClaim(comments,{...context,kind:'dispatch',ownerToken:p.envelope.dispatchKey,handoffId:p.handoffId,dispatchKey:p.envelope.dispatchKey,dispatchDigest:p.envelope.dispatchDigest,resultId:p.envelope.dispatchDigest,status:'posted'});
+          if (!posted || !posted.commentId || !posted.commentUrl) throw new Error('Authoritative dispatch marker was not reconciled before in_motion');
+          const marker=markerFor({kind:'resume',...context,threadUrl:result.receipt.threadUrl,model:result.bundle.model,commentId:result.commentId,commentUrl:result.commentUrl,status:'in_motion'});
+          assertTransition({ ...marker, status:'posted' }, marker); fs.writeFileSync('canary/phase-a/cursor-in-motion-ledger-marker.md',markerBody(marker));
+          NODE
+          if [ "${FACTORY_RESUME_ALREADY_CLAIMED:-false}" = 'true' ]; then exit 0; fi
+          if [ "${FACTORY_IN_MOTION_RECOVERY:-false}" = 'true' ]; then exit 0; fi
+          if [ "${FACTORY_TERMINAL_ALREADY_RECORDED:-false}" = 'true' ]; then exit 0; fi
+          GH_TOKEN="$GH_TOKEN" gh api "repos/$REPOSITORY/issues/$ISSUE_NUMBER/comments" --method POST -f body="$(cat canary/phase-a/cursor-in-motion-ledger-marker.md)"
+      - name: Consume durable resume ledger claim after validation
+        if: ${{ false }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE_NUMBER: ${{ env.FACTORY_DISPATCH_ISSUE_NUMBER }}
+          COMMENT_ID: ${{ github.event.comment.id }}
+          COMMENT_URL: ${{ github.event.comment.html_url }}
+          REPOSITORY: ${{ github.repository }}
+        run: |
+          handoff_id="$(node -e "process.stdout.write(JSON.parse(require('fs').readFileSync('canary/phase-a/current-head-gate1-pending.json','utf8')).handoffId)")"
+          dispatch_key="$(node -e "process.stdout.write(JSON.parse(require('fs').readFileSync('canary/phase-a/current-head-gate1-pending.json','utf8')).envelope.dispatchKey)")"
+          comments="$(GH_TOKEN="$GH_TOKEN" gh api --paginate "repos/$REPOSITORY/issues/$ISSUE_NUMBER/comments?per_page=100")"
+          LEDGER_COMMENTS="$comments" REPOSITORY="$REPOSITORY" ISSUE_NUMBER="$ISSUE_NUMBER" HANDOFF_ID="$handoff_id" DISPATCH_KEY="$dispatch_key" RESULT_ID="$COMMENT_ID" node - <<'NODE'
+          const fs = require('node:fs'); const { markerFor, markerBody, findClaim, findTerminalOutcome, terminalOutcomeKey } = require('./src/factory/github-ledger');
+          const result = JSON.parse(fs.readFileSync('canary/phase-a/cursor-terminal-result.json','utf8'));
+          const outcome = { repository: process.env.REPOSITORY, issueNumber: '8', prNumber: '1', branch: result.pending.dispatchPacket.branch, checkedOutSha: result.pending.envelope.checkedOutSha, kind: 'resume', handoffId: process.env.HANDOFF_ID, dispatchKey: process.env.DISPATCH_KEY, dispatchDigest: result.pending.envelope.dispatchDigest, runId: result.pending.envelope.runId, prospectId: result.pending.envelope.prospectId, sourceCheckpointDigest: result.pending.envelope.sourceCheckpointDigest, sourceManifestDigest: result.pending.envelope.sourceManifestDigest, inputManifestDigest: result.pending.envelope.inputManifestDigest, jobId: result.pending.phaseARunId, inputDigest: result.receipt.inputDigest, outputDigest: result.receipt.outputDigest };
+          const ownerToken = terminalOutcomeKey(outcome);
+          const expected = { ...outcome, ownerToken, resultId: ownerToken };
+          const existing = findTerminalOutcome(comments, outcome);
+          if (existing?.status === 'resumed') { fs.writeFileSync('canary/phase-a/resume-already-claimed', 'true'); fs.appendFileSync(process.env.GITHUB_ENV, 'FACTORY_RESUME_ALREADY_CLAIMED=true\n'); process.exit(0); }
+          if (existing?.status === 'phase_b_claimed') { fs.writeFileSync('canary/phase-a/terminal-already-recorded', 'true'); fs.appendFileSync(process.env.GITHUB_ENV, 'FACTORY_PHASE_B_RECOVERY=true\nFACTORY_TERMINAL_ALREADY_RECORDED=true\n'); process.exit(0); }
+          if (existing?.status === 'terminal') { fs.writeFileSync('canary/phase-a/terminal-already-recorded', 'true'); fs.appendFileSync(process.env.GITHUB_ENV, 'FACTORY_TERMINAL_ALREADY_RECORDED=true\n'); process.exit(0); }
+          const prior = findClaim(comments, expected);
+          if (prior && prior.status === 'resumed') { fs.writeFileSync('canary/phase-a/resume-already-claimed', 'true'); fs.appendFileSync(process.env.GITHUB_ENV, 'FACTORY_RESUME_ALREADY_CLAIMED=true\n'); process.exit(0); }
+          if (prior && prior.status === 'phase_b_claimed') { fs.writeFileSync('canary/phase-a/phase-b-claimed-recovery', 'true'); fs.writeFileSync('canary/phase-a/terminal-already-recorded','true'); fs.appendFileSync(process.env.GITHUB_ENV, 'FACTORY_PHASE_B_RECOVERY=true\nFACTORY_TERMINAL_ALREADY_RECORDED=true\n'); process.exit(0); }
+          if (prior && prior.status === 'terminal') { fs.writeFileSync('canary/phase-a/terminal-already-recorded', 'true'); process.exit(0); }
+          const { assertTransition } = require('./src/factory/github-ledger');
+          const marker = markerFor({ kind: 'resume', ...expected, commentId: result.commentId, commentUrl: result.commentUrl, threadUrl: result.receipt.threadUrl, model: result.bundle.model, status: 'terminal' });
+          assertTransition({ ...marker, status: 'in_motion' }, marker);
+          fs.writeFileSync('canary/phase-a/cursor-resume-ledger-marker.md', markerBody(marker));
+          NODE
+          if [ -f canary/phase-a/resume-already-claimed ] || [ -f canary/phase-a/terminal-already-recorded ]; then exit 0; fi
+          GH_TOKEN="$GH_TOKEN" gh api "repos/$REPOSITORY/issues/$ISSUE_NUMBER/comments" --method POST -f body="$(cat canary/phase-a/cursor-resume-ledger-marker.md)"
+      - name: Claim durable GitHub phase-B CAS before phase-B work
+        if: ${{ false }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE_NUMBER: ${{ env.FACTORY_DISPATCH_ISSUE_NUMBER }}
+          COMMENT_ID: ${{ github.event.comment.id }}
+          COMMENT_URL: ${{ github.event.comment.html_url }}
+          REPOSITORY: ${{ github.repository }}
+        run: |
+          test -n "$GH_TOKEN"
+          comments="$(GH_TOKEN="$GH_TOKEN" gh api --paginate "repos/$REPOSITORY/issues/$ISSUE_NUMBER/comments?per_page=100")"
+          LEDGER_COMMENTS="$comments" REPOSITORY="$REPOSITORY" ISSUE_NUMBER="$ISSUE_NUMBER" COMMENT_ID="$COMMENT_ID" COMMENT_URL="$COMMENT_URL" node - <<'NODE'
+          const fs=require('node:fs'); const { markerFor, markerBody, assertTransition, findClaim, findTerminalOutcome, terminalOutcomeKey }=require('./src/factory/github-ledger');
+          const p=JSON.parse(fs.readFileSync('canary/phase-a/current-head-gate1-pending.json','utf8')); const result=JSON.parse(fs.readFileSync('canary/phase-a/cursor-terminal-result.json','utf8')); const comments=JSON.parse(process.env.LEDGER_COMMENTS);
+          const outcome={repository:process.env.REPOSITORY,issueNumber:'8',prNumber:'1',branch:p.dispatchPacket.branch,checkedOutSha:p.envelope.checkedOutSha,kind:'resume',handoffId:p.handoffId,dispatchKey:p.envelope.dispatchKey,dispatchDigest:p.envelope.dispatchDigest,runId:p.envelope.runId,prospectId:p.envelope.prospectId,sourceCheckpointDigest:p.envelope.sourceCheckpointDigest,sourceManifestDigest:p.envelope.sourceManifestDigest,inputManifestDigest:p.envelope.inputManifestDigest,jobId:p.phaseARunId,inputDigest:result.receipt.inputDigest,outputDigest:result.receipt.outputDigest};
+          const ownerToken=terminalOutcomeKey(outcome); const context={...outcome,ownerToken,resultId:ownerToken};
+          const existing=findTerminalOutcome(comments,outcome);
+          if (existing?.status === 'resumed') { fs.appendFileSync(process.env.GITHUB_ENV,'FACTORY_RESUME_ALREADY_CLAIMED=true\n'); process.exit(0); }
+          if (existing?.status === 'phase_b_claimed') { fs.appendFileSync(process.env.GITHUB_ENV,'FACTORY_PHASE_B_RECOVERY=true\n'); process.exit(0); }
+          const prior=findClaim(comments,context) || existing;
+          if (prior && prior.status === 'resumed') { fs.appendFileSync(process.env.GITHUB_ENV,'FACTORY_RESUME_ALREADY_CLAIMED=true\n'); process.exit(0); }
+          if (prior && prior.status === 'phase_b_claimed') { fs.appendFileSync(process.env.GITHUB_ENV,'FACTORY_PHASE_B_RECOVERY=true\n'); process.exit(0); }
+          if (!prior || prior.status !== 'terminal') throw new Error('Durable terminal ledger state is required before claiming phase B');
+          const marker=markerFor({kind:'resume',...context,threadUrl:result.receipt.threadUrl,model:result.bundle.model,commentId:process.env.COMMENT_ID,commentUrl:process.env.COMMENT_URL,status:'phase_b_claimed'});
+          assertTransition(prior,marker); fs.writeFileSync('canary/phase-a/cursor-phase-b-claim.md',markerBody(marker));
+          NODE
+          if [ "${FACTORY_RESUME_ALREADY_CLAIMED:-false}" = 'true' ]; then exit 0; fi
+          if [ "${FACTORY_PHASE_B_RECOVERY:-false}" = 'true' ]; then exit 0; fi
+          GH_TOKEN="$GH_TOKEN" gh api "repos/$REPOSITORY/issues/$ISSUE_NUMBER/comments" --method POST -f body="$(cat canary/phase-a/cursor-phase-b-claim.md)"
+      - name: Restore durable paid receipts before phase-B recovery
+        if: env.FACTORY_RECOVERY_ACTION == 'recover-accepted'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPOSITORY: ${{ github.repository }}
+        run: |
+          test -n "$GH_TOKEN"
+          mkdir -p canary/phase-b/receipt-archive
+          artifacts="$(GH_TOKEN="$GH_TOKEN" gh api --paginate "repos/$REPOSITORY/actions/artifacts?per_page=100")"
+          expected="$(node -e "const d=JSON.parse(require('fs').readFileSync('canary/phase-a/recovery-decision.json','utf8'));const x=d.existing||{};process.stdout.write(JSON.stringify({name:x.artifactName,id:x.artifactId,digest:x.artifactDigest,contentDigest:x.artifactContentDigest,handoffId:x.handoffId,dispatchKey:x.dispatchKey,outputDigest:x.outputDigest,phaseARunId:x.jobId,providerRunId:x.providerRunId,datasetId:x.datasetId}))")"
+          artifact_id="$(ARTIFACTS="$artifacts" EXPECTED="$expected" node -e "const {selectExactArtifact}=require('./scripts/restore-paid-receipts');const e=JSON.parse(process.env.EXPECTED);const x=selectExactArtifact(JSON.parse(process.env.ARTIFACTS).artifacts||[],e);process.stdout.write(String(x.id))")"
+          GH_TOKEN="$GH_TOKEN" gh api "repos/$REPOSITORY/actions/artifacts/$artifact_id/zip" > canary/phase-b/receipt-archive/phase-b.zip
+          unzip -q canary/phase-b/receipt-archive/phase-b.zip -d canary/phase-b/receipt-archive/extracted
+          snapshot="$(find canary/phase-b/receipt-archive/extracted -name paid-accepted-operation-artifact.json -type f -print -quit)"
+          if [ -n "$snapshot" ]; then
+            OPERATION_SNAPSHOT="$snapshot" node - <<'NODE'
+            const fs=require('node:fs'); const d=JSON.parse(fs.readFileSync('canary/phase-a/recovery-decision.json','utf8')); const x=d.existing||{}; const a=JSON.parse(fs.readFileSync(process.env.OPERATION_SNAPSHOT,'utf8')); if(x.operationKey&&a.operationKey!==x.operationKey) throw new Error('accepted operation key mismatch'); if(x.requestDigest&&a.requestDigest!==x.requestDigest) throw new Error('accepted request digest mismatch');
+            NODE
+            SNAPSHOT="$snapshot" node -e "const x=(JSON.parse(require('fs').readFileSync('canary/phase-a/recovery-decision.json','utf8')).existing||{});require('./scripts/restore-paid-operation').restoreAcceptedOperation({snapshotFile:process.env.SNAPSHOT,targetFile:'state/vendor-receipts.json',expected:{operationKey:x.operationKey,requestDigest:x.requestDigest,providerRunId:x.providerRunId,datasetId:x.datasetId}})"
+          else
+            snapshot="$(find canary/phase-b/receipt-archive/extracted -name paid-receipt-artifact.json -type f -print -quit)"
+            if [ -z "$snapshot" ]; then snapshot="$(find canary/phase-b/receipt-archive/extracted -name vendor-receipts.json -type f -print -quit)"; fi
+            test -n "$snapshot"
+            SNAPSHOT="$snapshot" EXPECTED="$expected" node -e "const {restore}=require('./scripts/restore-paid-receipts');restore({snapshotFile:process.env.SNAPSHOT,targetFile:'state/vendor-receipts.json',expected:JSON.parse(process.env.EXPECTED)})"
+          fi
+      - name: Stop safely for unreconciled paid_prepared operation
+        if: env.FACTORY_RECOVERY_ACTION == 'recover-prepared'
+        run: |
+          echo 'Needs Architect review: paid_prepared exists without an accepted-response artifact; provider state must be reconciled before any retry.' >&2
+          exit 1
+      - name: Prepare paid operation checkpoint before any vendor POST
+        id: paid-prepared-artifact
+        if: env.FACTORY_RESUME_ALREADY_CLAIMED != 'true' && env.FACTORY_PHASE_B_RECOVERY != 'true' && env.FACTORY_ACCEPTED_RECOVERY != 'true'
+        run: |
+          node - <<'NODE'
+          const fs=require('node:fs'); const {createArtifact,writeArtifact}=require('./scripts/paid-operation-ledger');
+          const p=JSON.parse(fs.readFileSync('canary/phase-a/current-head-gate1-pending.json','utf8')); const r=JSON.parse(fs.readFileSync('canary/phase-a/cursor-terminal-result.json','utf8'));
+          if (!p.apifyOperationProjection) throw new Error('Exact Apify request projection is missing from the immutable phase-A handoff; paid work is forbidden');
+          const artifact=createArtifact({pending:p,result:r,stage:'pre-post'}); writeArtifact('canary/phase-b/paid-prepared-artifact.json',artifact); fs.writeFileSync('canary/phase-b/paid-operation-context.json',JSON.stringify({operationKey:artifact.operationKey,requestDigest:artifact.requestDigest,idempotencyKey:artifact.idempotencyKey,requestProjection:artifact.requestProjection,artifactName:artifact.artifactName,artifactId:artifact.artifactId,artifactDigest:artifact.artifactDigest,artifactContentDigest:artifact.artifactContentDigest},null,2)+'\n');
+          fs.appendFileSync(process.env.GITHUB_OUTPUT,`name=${artifact.artifactName}\ncontentDigest=${artifact.artifactContentDigest}\n`);
+          NODE
+      - name: Upload paid operation checkpoint before vendor POST
+        if: success() && env.FACTORY_RESUME_ALREADY_CLAIMED != 'true' && env.FACTORY_PHASE_B_RECOVERY != 'true' && env.FACTORY_ACCEPTED_RECOVERY != 'true'
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: ${{ steps.paid-prepared-artifact.outputs.name }}
+          path: canary/phase-b/paid-prepared-artifact.json
+          if-no-files-found: error
+          retention-days: 30
+      - name: Resolve authoritative paid_prepared artifact identity
+        id: paid-prepared-identity
+        if: success() && env.FACTORY_RESUME_ALREADY_CLAIMED != 'true' && env.FACTORY_PHASE_B_RECOVERY != 'true' && env.FACTORY_ACCEPTED_RECOVERY != 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPOSITORY: ${{ github.repository }}
+        run: |
+          test -n "$GH_TOKEN"
+          artifacts="$(GH_TOKEN="$GH_TOKEN" gh api --paginate "repos/$REPOSITORY/actions/artifacts?per_page=100")"
+          ARTIFACTS="$artifacts" NAME="${{ steps.paid-prepared-artifact.outputs.name }}" RUN_ID="${{ github.run_id }}" node -e "const a=JSON.parse(process.env.ARTIFACTS).artifacts||[];const x=a.filter(v=>!v.expired&&v.name===process.env.NAME&&String(v.workflow_run?.id||'')===process.env.RUN_ID);if(x.length!==1||!x[0].digest)throw new Error('paid_prepared artifact identity is missing');process.stdout.write('id='+x[0].id+'\ndigest='+x[0].digest+'\n')" >> "$GITHUB_OUTPUT"
+      - name: Record paid_prepared ledger state
+        if: success() && env.FACTORY_RESUME_ALREADY_CLAIMED != 'true' && env.FACTORY_PHASE_B_RECOVERY != 'true' && env.FACTORY_ACCEPTED_RECOVERY != 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE_NUMBER: ${{ env.FACTORY_DISPATCH_ISSUE_NUMBER }}
+          REPOSITORY: ${{ github.repository }}
+        run: |
+          test -n "$GH_TOKEN"
+          echo "FACTORY_PAID_PREPARED_ARTIFACT_NAME=${{ steps.paid-prepared-artifact.outputs.name }}" >> "$GITHUB_ENV"
+          echo "FACTORY_PAID_PREPARED_ARTIFACT_ID=${{ steps.paid-prepared-identity.outputs.id }}" >> "$GITHUB_ENV"
+          echo "FACTORY_PAID_PREPARED_ARTIFACT_DIGEST=${{ steps.paid-prepared-identity.outputs.digest }}" >> "$GITHUB_ENV"
+          echo "FACTORY_PAID_PREPARED_ARTIFACT_CONTENT_DIGEST=${{ steps.paid-prepared-artifact.outputs.contentDigest }}" >> "$GITHUB_ENV"
+          echo "FACTORY_PAID_PREPARED_ARTIFACT_FILE=canary/phase-b/paid-prepared-artifact.json" >> "$GITHUB_ENV"
+          echo "FACTORY_PAID_PREPARED_OPERATION_KEY=$(node -e "process.stdout.write(JSON.parse(require('fs').readFileSync('canary/phase-b/paid-prepared-artifact.json','utf8')).operationKey)")" >> "$GITHUB_ENV"
+          echo "FACTORY_PAID_PREPARED_REQUEST_DIGEST=$(node -e "process.stdout.write(JSON.parse(require('fs').readFileSync('canary/phase-b/paid-prepared-artifact.json','utf8')).requestDigest)")" >> "$GITHUB_ENV"
+          echo "FACTORY_PAID_PREPARED_IDEMPOTENCY_KEY=$(node -e "process.stdout.write(JSON.parse(require('fs').readFileSync('canary/phase-b/paid-prepared-artifact.json','utf8')).idempotencyKey)")" >> "$GITHUB_ENV"
+          echo "FACTORY_OPERATION_CONTEXT_JSON=$(node -e "process.stdout.write(JSON.stringify(JSON.parse(require('fs').readFileSync('canary/phase-b/paid-prepared-artifact.json','utf8')).context))")" >> "$GITHUB_ENV"
+          PAID_ARTIFACT_ID="${{ steps.paid-prepared-identity.outputs.id }}" PAID_ARTIFACT_DIGEST="${{ steps.paid-prepared-identity.outputs.digest }}" node - <<'NODE'
+          const fs=require('node:fs'); const {parseMarker,markerFor,markerBody,assertTransition}=require('./src/factory/github-ledger'); const {createArtifact,createPaidMarker}=require('./scripts/paid-operation-ledger');
+          const p=JSON.parse(fs.readFileSync('canary/phase-a/current-head-gate1-pending.json','utf8')); const r=JSON.parse(fs.readFileSync('canary/phase-a/cursor-terminal-result.json','utf8')); const previous=parseMarker(fs.readFileSync('canary/phase-a/cursor-phase-b-claim.md','utf8')); const artifact=JSON.parse(fs.readFileSync('canary/phase-b/paid-prepared-artifact.json','utf8')); artifact.artifactId=process.env.PAID_ARTIFACT_ID; artifact.artifactDigest=process.env.PAID_ARTIFACT_DIGEST; const marker=createPaidMarker({pending:p,result:r,previous,artifact,status:'paid_prepared'}); fs.writeFileSync('canary/phase-a/cursor-paid-prepared-ledger-marker.md',markerBody(marker));
+          NODE
+          GH_TOKEN="$GH_TOKEN" gh api "repos/$REPOSITORY/issues/$ISSUE_NUMBER/comments" --method POST -f body="$(cat canary/phase-a/cursor-paid-prepared-ledger-marker.md)"
+      - name: Invoke exactly one paid Apify POST and stop at accepted boundary
+        if: env.FACTORY_RESUME_ALREADY_CLAIMED != 'true' && env.FACTORY_ACCEPTED_RECOVERY != 'true'
+        env:
+          APIFY_API_TOKEN: ${{ secrets.APIFY_API_TOKEN }}
+          FACTORY_CANARY_PHASE: resume
+          FACTORY_PHASE_B_PRODUCTION: 'true'
+          FACTORY_CANARY_RUN_ID: ${{ github.run_id }}
+          FACTORY_CHECKED_OUT_SHA: ${{ steps.target.outputs.head }}
+          EXPECTED_HEAD_SHA: ${{ steps.target.outputs.head }}
+          FACTORY_HEAD_ASSERTION: 'true'
+          FACTORY_ACCEPTED_OPERATION_ARTIFACT_PATH: canary/phase-b/paid-accepted-operation-artifact.json
+          FACTORY_ACCEPTANCE_BOUNDARY_FILE: canary/phase-b/accepted-boundary
+          FACTORY_STOP_AFTER_ACCEPTANCE: 'true'
+          FACTORY_ISSUE_NUMBER: ${{ env.FACTORY_DISPATCH_ISSUE_NUMBER }}
+          FACTORY_PR_NUMBER: ${{ github.event.issue.number }}
+          FACTORY_BRANCH: ${{ steps.target.outputs.branch }}
+          FACTORY_REPOSITORY: ${{ github.repository }}
+          FACTORY_HANDOFF_FILE: canary/phase-a/current-head-gate1-pending.json
+          FACTORY_RESUME_RESULT_ID: ${{ github.event.comment.id }}
+        run: |
+          node -e "const fs=require('node:fs');const p=JSON.parse(fs.readFileSync('canary/phase-a/current-head-gate1-pending.json','utf8'));const r=JSON.parse(fs.readFileSync('canary/phase-a/cursor-terminal-result.json','utf8'));fs.mkdirSync('canary/phase-b',{recursive:true});fs.writeFileSync('canary/phase-b/cursor-bundle.json',JSON.stringify(r.bundle,null,2)+'\\n');process.env.REQUEST_FILE=p.inputFiles.request;process.env.SELECTION_FILE=p.inputFiles.selection;process.env.QA_FILE=p.inputFiles.qa;"
+          pending="canary/phase-a/current-head-gate1-pending.json"
+          request_file="$(node -e "process.stdout.write(JSON.parse(require('fs').readFileSync('$pending','utf8')).inputFiles.request)")"
+          selection_file="$(node -e "process.stdout.write(JSON.parse(require('fs').readFileSync('$pending','utf8')).inputFiles.selection)")"
+          qa_file="$(node -e "process.stdout.write(JSON.parse(require('fs').readFileSync('$pending','utf8')).inputFiles.qa)")"
+          set +e
+          node src/run-gate1-canary.js . "$request_file" "$selection_file" "$qa_file" canary/phase-b/cursor-bundle.json
+          code=$?
+          set -e
+          test -s canary/phase-b/accepted-boundary
+          test -s canary/phase-b/paid-accepted-operation-artifact.json
+      - name: Seal accepted-response operation artifact immediately after provider acceptance
+        id: accepted-operation-artifact
+        if: success() && env.FACTORY_RESUME_ALREADY_CLAIMED != 'true' && env.FACTORY_PHASE_B_RECOVERY != 'true' && env.FACTORY_ACCEPTED_RECOVERY != 'true'
+        run: |
+          test -s canary/phase-b/paid-accepted-operation-artifact.json
+          node -e "const a=require('./canary/phase-b/paid-accepted-operation-artifact.json');for(const k of ['artifactName','artifactContentDigest','responseDigest','operationKey','requestDigest','idempotencyKey'])if(!a[k])throw new Error('accepted operation artifact field missing: '+k);process.stdout.write('name='+a.artifactName+'\ncontentDigest='+a.artifactContentDigest+'\n')" >> "$GITHUB_OUTPUT"
+      - name: Upload accepted-response operation artifact before remaining phase-B work
+        if: success() && env.FACTORY_RESUME_ALREADY_CLAIMED != 'true' && env.FACTORY_PHASE_B_RECOVERY != 'true' && env.FACTORY_ACCEPTED_RECOVERY != 'true'
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: ${{ steps.accepted-operation-artifact.outputs.name }}
+          path: canary/phase-b/paid-accepted-operation-artifact.json
+          if-no-files-found: error
+          retention-days: 30
+      - name: Resolve authoritative accepted-response operation artifact identity
+        id: accepted-operation-identity
+        if: success() && env.FACTORY_RESUME_ALREADY_CLAIMED != 'true' && env.FACTORY_PHASE_B_RECOVERY != 'true' && env.FACTORY_ACCEPTED_RECOVERY != 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPOSITORY: ${{ github.repository }}
+        run: |
+          test -n "$GH_TOKEN"
+          artifacts="$(GH_TOKEN="$GH_TOKEN" gh api --paginate "repos/$REPOSITORY/actions/artifacts?per_page=100")"
+          ARTIFACTS="$artifacts" NAME="${{ steps.accepted-operation-artifact.outputs.name }}" RUN_ID="${{ github.run_id }}" node -e "const a=JSON.parse(process.env.ARTIFACTS).artifacts||[];const x=a.filter(v=>!v.expired&&v.name===process.env.NAME&&String(v.workflow_run?.id||'')===process.env.RUN_ID);if(x.length!==1||!x[0].digest)throw new Error('accepted operation artifact identity is missing');process.stdout.write('id='+x[0].id+'\ndigest='+x[0].digest+'\n')" >> "$GITHUB_OUTPUT"
+      - name: Record paid_accepted ledger state before continuation
+        if: success() && env.FACTORY_RESUME_ALREADY_CLAIMED != 'true' && env.FACTORY_PHASE_B_RECOVERY != 'true' && env.FACTORY_ACCEPTED_RECOVERY != 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE_NUMBER: ${{ env.FACTORY_DISPATCH_ISSUE_NUMBER }}
+          REPOSITORY: ${{ github.repository }}
+        run: |
+          test -n "$GH_TOKEN"
+          PAID_ARTIFACT_ID="${{ steps.accepted-operation-identity.outputs.id }}" PAID_ARTIFACT_DIGEST="${{ steps.accepted-operation-identity.outputs.digest }}" node - <<'NODE'
+          const fs=require('node:fs'); const {parseMarker,markerBody}=require('./src/factory/github-ledger'); const {createPaidMarker}=require('./scripts/paid-operation-ledger');
+          const p=JSON.parse(fs.readFileSync('canary/phase-a/current-head-gate1-pending.json','utf8')); const r=JSON.parse(fs.readFileSync('canary/phase-a/cursor-terminal-result.json','utf8')); const previous=parseMarker(fs.readFileSync('canary/phase-a/cursor-paid-prepared-ledger-marker.md','utf8')); const artifact=JSON.parse(fs.readFileSync('canary/phase-b/paid-accepted-operation-artifact.json','utf8')); artifact.artifactId=process.env.PAID_ARTIFACT_ID; artifact.artifactDigest=process.env.PAID_ARTIFACT_DIGEST; const marker=createPaidMarker({pending:p,result:r,previous,artifact,status:'paid_accepted'}); fs.writeFileSync('canary/phase-a/cursor-paid-accepted-ledger-marker.md',markerBody(marker));
+          NODE
+          GH_TOKEN="$GH_TOKEN" gh api "repos/$REPOSITORY/issues/$ISSUE_NUMBER/comments" --method POST -f body="$(cat canary/phase-a/cursor-paid-accepted-ledger-marker.md)"
+      - name: Continue phase B after accepted-response artifact is durable
+        if: success() && env.FACTORY_RESUME_ALREADY_CLAIMED != 'true' && env.FACTORY_PHASE_B_RECOVERY != 'true' && env.FACTORY_ACCEPTED_RECOVERY != 'true'
+        env:
+          APIFY_API_TOKEN: ${{ secrets.APIFY_API_TOKEN }}
+          FACTORY_CANARY_PHASE: resume
+          FACTORY_PHASE_B_PRODUCTION: 'true'
+          FACTORY_STOP_AFTER_ACCEPTANCE: 'false'
+          FACTORY_CANARY_RUN_ID: ${{ github.run_id }}
+          FACTORY_CHECKED_OUT_SHA: ${{ steps.target.outputs.head }}
+          EXPECTED_HEAD_SHA: ${{ steps.target.outputs.head }}
+          FACTORY_HEAD_ASSERTION: 'true'
+          FACTORY_ACCEPTED_OPERATION_ARTIFACT_PATH: canary/phase-b/paid-accepted-operation-artifact.json
+          FACTORY_ISSUE_NUMBER: ${{ env.FACTORY_DISPATCH_ISSUE_NUMBER }}
+          FACTORY_PR_NUMBER: ${{ github.event.issue.number }}
+          FACTORY_BRANCH: ${{ steps.target.outputs.branch }}
+          FACTORY_REPOSITORY: ${{ github.repository }}
+          FACTORY_HANDOFF_FILE: canary/phase-a/current-head-gate1-pending.json
+          FACTORY_RESUME_RESULT_ID: ${{ github.event.comment.id }}
+        run: |
+          pending="canary/phase-a/current-head-gate1-pending.json"
+          request_file="$(node -e "process.stdout.write(JSON.parse(require('fs').readFileSync('$pending','utf8')).inputFiles.request)")"
+          selection_file="$(node -e "process.stdout.write(JSON.parse(require('fs').readFileSync('$pending','utf8')).inputFiles.selection)")"
+          qa_file="$(node -e "process.stdout.write(JSON.parse(require('fs').readFileSync('$pending','utf8')).inputFiles.qa)")"
+          node src/run-gate1-canary.js . "$request_file" "$selection_file" "$qa_file" canary/phase-b/cursor-bundle.json
+      - name: Seal exact paid receipt artifact binding
+        id: receipt-artifact
+        if: success() && env.FACTORY_RESUME_ALREADY_CLAIMED != 'true' && env.FACTORY_PHASE_B_RECOVERY != 'true' && env.FACTORY_ACCEPTED_RECOVERY != 'true'
+        run: |
+          test -s state/vendor-receipts.json
+          node - <<'NODE'
+          const fs=require('node:fs'); const {digest}=require('./src/factory/prescription-policy'); const {receiptArtifactBinding}=require('./src/factory/receipt-store');
+          const p=JSON.parse(fs.readFileSync('canary/phase-a/current-head-gate1-pending.json','utf8')); const r=JSON.parse(fs.readFileSync('canary/phase-a/cursor-terminal-result.json','utf8')); const content=JSON.parse(fs.readFileSync('state/vendor-receipts.json','utf8'));
+          const binding=receiptArtifactBinding({handoffId:p.handoffId,dispatchKey:p.envelope.dispatchKey,outputDigest:r.receipt.outputDigest,phaseARunId:p.phaseARunId});
+          const artifact={schemaVersion:'factory-paid-receipt-artifact-v1',binding,contentDigest:digest(content),content}; fs.writeFileSync('canary/phase-b/paid-receipt-artifact.json',JSON.stringify(artifact,null,2)+'\n');
+          fs.appendFileSync(process.env.GITHUB_OUTPUT,`name=${binding.name}\ncontentDigest=${artifact.contentDigest}\n`);
+          NODE
+      - name: Upload exact paid receipt artifact
+        if: success() && env.FACTORY_RESUME_ALREADY_CLAIMED != 'true' && env.FACTORY_PHASE_B_RECOVERY != 'true' && env.FACTORY_ACCEPTED_RECOVERY != 'true'
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: ${{ steps.receipt-artifact.outputs.name }}
+          path: canary/phase-b/paid-receipt-artifact.json
+          if-no-files-found: error
+          retention-days: 30
+      - name: Resolve exact paid receipt artifact identity
+        id: receipt-artifact-id
+        if: success() && env.FACTORY_RESUME_ALREADY_CLAIMED != 'true' && env.FACTORY_PHASE_B_RECOVERY != 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPOSITORY: ${{ github.repository }}
+        run: |
+          test -n "$GH_TOKEN"
+          artifacts="$(GH_TOKEN="$GH_TOKEN" gh api --paginate "repos/$REPOSITORY/actions/artifacts?per_page=100")"
+          ARTIFACTS="$artifacts" NAME="${{ steps.receipt-artifact.outputs.name }}" RUN_ID="${{ github.run_id }}" node -e "const a=JSON.parse(process.env.ARTIFACTS).artifacts||[];const x=a.filter(v=>!v.expired&&v.name===process.env.NAME&&String(v.workflow_run?.id||'')===process.env.RUN_ID);if(x.length!==1||!x[0].digest)throw new Error('exact uploaded receipt artifact identity is missing');process.stdout.write('id='+x[0].id+'\ndigest='+x[0].digest+'\n')" >> "$GITHUB_OUTPUT"
+      - name: Verify paid_accepted ledger state remains durable
+        if: success() && env.FACTORY_RESUME_ALREADY_CLAIMED != 'true' && env.FACTORY_PHASE_B_RECOVERY != 'true' && env.FACTORY_ACCEPTED_RECOVERY != 'true'
+        run: |
+          test -s canary/phase-a/cursor-paid-accepted-ledger-marker.md
+      - name: Record automatic phase-B completion
+        if: success() && env.FACTORY_RESUME_ALREADY_CLAIMED != 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE_NUMBER: ${{ env.FACTORY_DISPATCH_ISSUE_NUMBER }}
+          ARTIFACT_NAME: ${{ steps.accepted-operation-artifact.outputs.name }}
+          ARTIFACT_CONTENT_DIGEST: ${{ steps.accepted-operation-artifact.outputs.contentDigest }}
+          ARTIFACT_ID: ${{ steps.accepted-operation-identity.outputs.id }}
+          ARTIFACT_DIGEST: ${{ steps.accepted-operation-identity.outputs.digest }}
+        run: |
+          test -n "$GH_TOKEN"
+          handoff_id="$(node -e "process.stdout.write(JSON.parse(require('fs').readFileSync('canary/phase-a/current-head-gate1-pending.json','utf8')).handoffId)")"
+          node - <<'NODE'
+          const fs=require('node:fs'); const { markerFor, markerBody, terminalOutcomeKey }=require('./src/factory/github-ledger');
+          const p=JSON.parse(fs.readFileSync('canary/phase-a/current-head-gate1-pending.json','utf8')); const result=JSON.parse(fs.readFileSync('canary/phase-a/cursor-terminal-result.json','utf8')); const old=JSON.parse(fs.readFileSync('canary/phase-a/recovery-decision.json','utf8')).existing||{};
+          const { assertTransition } = require('./src/factory/github-ledger');
+          const outcome={repository:process.env.GITHUB_REPOSITORY,issueNumber:process.env.ISSUE_NUMBER,prNumber:p.dispatchPacket.prNumber,branch:p.dispatchPacket.branch,checkedOutSha:p.envelope.checkedOutSha,handoffId:p.handoffId,dispatchKey:p.envelope.dispatchKey,dispatchDigest:p.envelope.dispatchDigest,runId:p.envelope.runId,prospectId:p.envelope.prospectId,sourceCheckpointDigest:p.envelope.sourceCheckpointDigest,sourceManifestDigest:p.envelope.sourceManifestDigest,inputManifestDigest:p.envelope.inputManifestDigest,jobId:p.phaseARunId,inputDigest:result.receipt.inputDigest,outputDigest:result.receipt.outputDigest};
+          const ownerToken=terminalOutcomeKey(outcome);
+          const previous=fs.existsSync('canary/phase-a/cursor-paid-accepted-ledger-marker.md') ? JSON.parse(fs.readFileSync('canary/phase-a/cursor-paid-accepted-ledger-marker.md','utf8').split('\n').slice(1).join('\n')) : { ...markerFor({kind:'resume',...outcome,ownerToken,resultId:ownerToken,inputDigest:result.receipt.inputDigest,outputDigest:result.receipt.outputDigest,status:'phase_b_claimed'}), status:'phase_b_claimed' };
+          const marker=markerFor({kind:'resume',...outcome,ownerToken,resultId:ownerToken,inputDigest:result.receipt.inputDigest,outputDigest:result.receipt.outputDigest,threadUrl:result.receipt.threadUrl,model:result.bundle.model,artifactName:process.env.ARTIFACT_NAME||old.artifactName,artifactId:process.env.ARTIFACT_ID||old.artifactId,artifactDigest:process.env.ARTIFACT_DIGEST||old.artifactDigest,artifactContentDigest:process.env.ARTIFACT_CONTENT_DIGEST||old.artifactContentDigest,status:'resumed'});
+          assertTransition(previous, marker);
+          fs.writeFileSync('canary/phase-a/cursor-resumed-ledger-marker.md',markerBody(marker));
+          NODE
+          GH_TOKEN="$GH_TOKEN" gh api "repos/$GITHUB_REPOSITORY/issues/$ISSUE_NUMBER/comments" --method POST -f body="$(cat canary/phase-a/cursor-resumed-ledger-marker.md)"
+      - name: Upload automatic handoff and Gate 1 proof
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: cursor-cloud-agent-resume-${{ github.run_id }}
+          path: canary/phase-a
+          if-no-files-found: error
+          retention-days: 30
+      - name: Require phase-B proof before successful completion
+        if: success()
+        run: |
+          test -s canary/phase-b/cursor-bundle.json
+          test -s canary/outputs/current-head-gate1-proof.json
+          test -s canary/outputs/gate1.md
+          test -s state/factory-state.json
+      - name: Upload phase-B proof
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: cursor-cloud-agent-phase-b-proof-${{ github.run_id }}
+          path: |
+            canary/outputs/current-head-gate1-proof.json
+            canary/outputs/gate1.md
+            state/factory-state.json
+            state/vendor-receipts.json
+            canary/phase-a/cursor-phase-b-claim.md
+          if-no-files-found: error
+          retention-days: 30

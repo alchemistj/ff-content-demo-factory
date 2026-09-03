@@ -1,0 +1,113 @@
+name: Exact-head sealed 360 synthetic replay proof
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [architect/greenfield-gate1]
+
+permissions:
+  contents: read
+  pull-requests: read
+  actions: read
+
+concurrency:
+  group: exact-head-sealed-360-proof-${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  sealed-360-proof:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      FACTORY_ISSUE_NUMBER: '8'
+      FACTORY_PR_NUMBER: ${{ github.event.pull_request.number || 1 }}
+      FACTORY_BRANCH: ${{ github.event.pull_request.head.ref || github.ref_name }}
+      FACTORY_REPOSITORY: ${{ github.repository }}
+    steps:
+      - name: Checkout exact PR head
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+          fetch-depth: 1
+          persist-credentials: false
+      - name: Assert exact source head and refuse vendor secrets
+        env:
+          EXPECTED_HEAD_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          test -z "${CURSOR_API_KEY:-}"
+          test -z "${APIFY_API_TOKEN:-}"
+          actual="$(git rev-parse HEAD)"
+          test "$actual" = "$EXPECTED_HEAD_SHA"
+          printf '%s\n' "$EXPECTED_HEAD_SHA" | grep -Eq '^[a-f0-9]{40}$'
+          if [ -n "${{ github.event.pull_request.number }}" ]; then
+            pr_json="$(gh pr view "${{ github.event.pull_request.number }}" --repo "$GITHUB_REPOSITORY" --json number,headRefName,headRefOid)"
+            test "$(printf '%s' "$pr_json" | jq -r .number)" = "$FACTORY_PR_NUMBER"
+            test "$(printf '%s' "$pr_json" | jq -r .headRefName)" = "$FACTORY_BRANCH"
+            test "$(printf '%s' "$pr_json" | jq -r .headRefOid)" = "$EXPECTED_HEAD_SHA"
+          fi
+          mkdir -p canary/outputs canary/state
+          echo "FACTORY_CHECKED_OUT_SHA=$actual" >> "$GITHUB_ENV"
+          echo "FACTORY_ASSERTED_HEAD_SHA=$actual" >> "$GITHUB_ENV"
+          echo "FACTORY_EXPECTED_HEAD_SHA=$EXPECTED_HEAD_SHA" >> "$GITHUB_ENV"
+          echo "EXPECTED_HEAD_SHA=$EXPECTED_HEAD_SHA" >> "$GITHUB_ENV"
+          echo "FACTORY_HEAD_ASSERTION=true" >> "$GITHUB_ENV"
+          echo "FACTORY_TEST_RESULT=sealed-360-exact-head-replay" >> "$GITHUB_ENV"
+          echo "FACTORY_TEST_RUN_URL=${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}" >> "$GITHUB_ENV"
+          echo "FACTORY_ACTION_RUN_URL=${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}" >> "$GITHUB_ENV"
+      - name: Set up Node
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '22.13.0'
+          cache: npm
+      - name: Install locked dependencies
+        run: npm ci --ignore-scripts --no-audit --no-fund
+      - name: Run reproducible full suite
+        env:
+          EXPECTED_HEAD_SHA: ''
+          FACTORY_EXPECTED_HEAD_SHA: ''
+          FACTORY_CHECKED_OUT_SHA: ''
+          FACTORY_ASSERTED_HEAD_SHA: ''
+          FACTORY_HEAD_ASSERTION: ''
+          FACTORY_TEST_RESULT: ''
+          FACTORY_TEST_RUN_URL: ''
+          FACTORY_ACTION_RUN_URL: ''
+          FACTORY_ISSUE_NUMBER: ''
+          FACTORY_PR_NUMBER: ''
+          FACTORY_BRANCH: ''
+          FACTORY_SEALED_EVIDENCE: ''
+          FACTORY_SEALED_REPLAY_EXECUTED: ''
+          RUNTIME_PACKET_PATH: ''
+        run: |
+          set +e
+          node --test > canary/outputs/full-suite-test-output.txt 2>&1
+          code=$?
+          tail -200 canary/outputs/full-suite-test-output.txt
+          exit "$code"
+      - name: Execute sealed synthetic replay (never Gate 1)
+        env:
+          FACTORY_CANARY_PHASE: integrated
+          FACTORY_SEALED_EVIDENCE: 'true'
+        run: node scripts/run-exact-head-sealed-360-proof.js
+      - name: Fail closed unless the synthetic proof exists and is non-approvable
+        run: |
+          test -s canary/outputs/current-head-synthetic-replay-proof.json
+          node -e "
+            const fs = require('node:fs');
+            const proof = JSON.parse(fs.readFileSync('canary/outputs/current-head-synthetic-replay-proof.json', 'utf8'));
+            if (proof.synthetic !== true || proof.approvableGate1 !== false || proof.gate1State !== 'synthetic-sealed-evidence-only') throw new Error('sealed proof is not synthetic-only');
+            if (proof.integratedFactoryReadiness !== false || proof.liveConnectorProven !== false) throw new Error('sealed proof mislabeled as live connector readiness');
+            if (fs.existsSync('canary/outputs/gate1.md') || fs.existsSync('canary/state/factory-state.json')) throw new Error('sealed replay emitted Gate 1-shaped output');
+            process.stdout.write(proof.checkedOutSha + '\\n');
+          "
+      - name: Upload synthetic proof
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: exact-head-sealed-360-synthetic-proof-${{ github.run_id }}
+          path: |
+            canary/outputs/current-head-synthetic-replay-proof.json
+            canary/outputs/full-suite-test-output.txt
+          if-no-files-found: error
+          retention-days: 30
