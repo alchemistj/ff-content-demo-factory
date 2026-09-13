@@ -1,0 +1,166 @@
+name: Materialize RLB writer packet
+
+on:
+  push:
+    branches:
+      - claude/rlb-electric-writer-test
+    paths:
+      - .github/workflows/materialize-rlb-writer-packet.yml
+
+permissions:
+  contents: write
+
+jobs:
+  materialize:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out writer branch
+        uses: actions/checkout@v4
+        with:
+          ref: claude/rlb-electric-writer-test
+          fetch-depth: 0
+
+      - name: Pull exact approved upstream inputs
+        shell: bash
+        run: |
+          set -euo pipefail
+          dir="rlb-electric-remodel-repair"
+          mkdir -p "$dir"
+
+          # Reviews come from the exact finalist-enrichment PR #161 head.
+          curl --fail --location --silent --show-error \
+            "https://raw.githubusercontent.com/alchemistj/ff-2-demos/a389a9c428df199b9cb203a356f84292b36bf044/factory-runs/rlb-electric-remodel-repair/review-inventory.json" \
+            -o "$dir/review-inventory.json"
+
+          # Prescription/facts/approval come from the exact approved RLB PR #167 head.
+          # Only upstream non-copy artifacts are imported. Historical authored copy is intentionally excluded.
+          for file in strategy-recipe.json confirmed-facts.json prescription-approval.json; do
+            curl --fail --location --silent --show-error \
+              "https://raw.githubusercontent.com/alchemistj/ff-2-demos/252d36fd886ed17067ea0800c84e4981db5ab2b5/factory-runs/rlb-electric-remodel-repair/$file" \
+              -o "$dir/$file"
+          done
+
+          cat > "$dir/TASK.md" <<'EOF'
+          # Current assignment
+
+          **Prospect:** RLB Electric Remodel & Repair — Springfield, Missouri  
+          **State:** Ready for writer
+
+          Wake up inside this repository and complete the current repo-defined writing workflow for this prospect.
+
+          The canonical writer instructions live at the repository level. Use this folder as the approved prospect input packet.
+
+          ## Inputs present
+
+          - `strategy-recipe.json` — approved page prescription, page jobs, route/keyword decisions, current-site evidence, traps, review references, and value hierarchy
+          - `confirmed-facts.json` — verified fact sheet and source URLs
+          - `review-inventory.json` — exact-place Google review inventory: 68 listed, 44 retrieved, 4.9 rating
+          - `prescription-approval.json` — recorded Josh approval envelope for the prescription package
+          - `SOURCE-PROVENANCE.md` — immutable source lineage and clean-room boundary
+
+          ## Clean-room boundary
+
+          Historical authored RLB website copy is intentionally absent from this branch.
+
+          Do not fetch, read, use, compare against, or revise the old RLB copy from FF2 PR #167 or any other completed RLB copy artifact. The purpose of this branch is to see what the current Content Demo Factory and this writer produce from the approved prescription and evidence.
+
+          Follow the repository's canonical workflow and writer guides rather than treating this task file as a writing SOP.
+          EOF
+
+          cat > "$dir/SOURCE-PROVENANCE.md" <<'EOF'
+          # RLB input provenance
+
+          This folder is a clean-room writer input packet assembled for the Claude writer test.
+
+          ## Imported upstream authority
+
+          ### Exact-place review inventory
+
+          Source repository: `alchemistj/ff-2-demos`  
+          Source PR: `#161`  
+          Source head: `a389a9c428df199b9cb203a356f84292b36bf044`  
+          Source path: `factory-runs/rlb-electric-remodel-repair/review-inventory.json`
+
+          The upstream inventory records Google Place ID `ChIJt4A_O26JxYcRFWiYP7cPk-U`, 68 listing reviews, 44 retrieved written reviews, and a 4.9 listing rating. Its review classifications remain exactly as upstream; this import does not promote or rewrite them.
+
+          ### Approved prescription and facts
+
+          Source repository: `alchemistj/ff-2-demos`  
+          Approval/copy-lineage PR: `#167`  
+          Exact source head: `252d36fd886ed17067ea0800c84e4981db5ab2b5`
+
+          Imported paths only:
+
+          - `factory-runs/rlb-electric-remodel-repair/strategy-recipe.json`
+          - `factory-runs/rlb-electric-remodel-repair/confirmed-facts.json`
+          - `factory-runs/rlb-electric-remodel-repair/prescription-approval.json`
+
+          `prescription-approval.json` records `authorized: true`, `recordedJoshApproval: true`, and the approval method `architect-recording-josh`.
+
+          There was no separate standalone RLB `current-site-audit.json` in this imported lineage. Current-site evidence needed by the writer is embedded in the approved `strategy-recipe.json` and sourced facts. Do not invent a replacement audit artifact.
+
+          ## Intentionally excluded contamination
+
+          No authored copy from FF2 PR #167 was imported. In particular, this branch intentionally excludes:
+
+          - `copy-artifact.json`
+          - `copy-blueprint.json`
+          - `copy-evidence.json`
+          - `copy-pages/**`
+          - `copy-review.md`
+          - `copy-sitewide/**`
+          - copy quality / render-binding artifacts
+
+          Those are historical writer outputs, not evidence for this clean-room experiment.
+
+          The canonical writing authority for this test is the repo-native Markdown guide set under `docs/writer-guides/` on this branch.
+          EOF
+
+          cat > "$dir/input-manifest.json" <<'EOF'
+          {
+            "schemaVersion": "1.0.0",
+            "kind": "clean-room-writer-input",
+            "slug": "rlb-electric-remodel-repair",
+            "businessName": "RLB Electric Remodel & Repair",
+            "city": "Springfield",
+            "state": "MO",
+            "state": "ready-for-writer",
+            "inputs": {
+              "strategyRecipe": "strategy-recipe.json",
+              "confirmedFacts": "confirmed-facts.json",
+              "reviewInventory": "review-inventory.json",
+              "prescriptionApproval": "prescription-approval.json"
+            },
+            "sourceRefs": {
+              "reviews": "alchemistj/ff-2-demos#161@a389a9c428df199b9cb203a356f84292b36bf044",
+              "prescriptionFactsApproval": "alchemistj/ff-2-demos#167@252d36fd886ed17067ea0800c84e4981db5ab2b5"
+            },
+            "cleanRoom": {
+              "historicalRlbCopyImported": false,
+              "historicalRlbCopyMayBeRead": false
+            }
+          }
+          EOF
+
+          # Sanity checks: required files non-empty and no historical copy paths accidentally imported.
+          test -s "$dir/strategy-recipe.json"
+          test -s "$dir/confirmed-facts.json"
+          test -s "$dir/review-inventory.json"
+          test -s "$dir/prescription-approval.json"
+          test "$(jq -r '.retrieval.retrievedCount' "$dir/review-inventory.json")" = "44"
+          test "$(jq -r '.retrieval.listingReviewCount' "$dir/review-inventory.json")" = "68"
+          test "$(jq -r '.authorized' "$dir/prescription-approval.json")" = "true"
+          test ! -e "$dir/copy-artifact.json"
+          test ! -d "$dir/copy-pages"
+
+      - name: Commit the self-contained packet and remove this one-shot workflow
+        shell: bash
+        run: |
+          set -euo pipefail
+          git rm .github/workflows/materialize-rlb-writer-packet.yml
+          git add rlb-electric-remodel-repair
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Add clean-room RLB writer input packet"
+          git push origin HEAD:claude/rlb-electric-writer-test
