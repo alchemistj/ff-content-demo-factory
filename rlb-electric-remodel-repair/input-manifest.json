@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "1.0.0",
+  "kind": "clean-room-writer-input",
+  "slug": "rlb-electric-remodel-repair",
+  "businessName": "RLB Electric Remodel & Repair",
+  "city": "Springfield",
+  "state": "MO",
+  "workflowState": "ready-for-writer",
+  "inputs": {
+    "strategyRecipe": "strategy-recipe.json",
+    "confirmedFacts": "confirmed-facts.json",
+    "reviewInventory": "review-inventory.json",
+    "prescriptionApproval": "prescription-approval.json"
+  },
+  "sourceRefs": {
+    "reviews": "alchemistj/ff-2-demos#161@a389a9c428df199b9cb203a356f84292b36bf044",
+    "prescriptionFactsApproval": "alchemistj/ff-2-demos#167@252d36fd886ed17067ea0800c84e4981db5ab2b5"
+  },
+  "cleanRoom": {
+    "historicalRlbCopyImported": false,
+    "historicalRlbCopyMayBeRead": false
+  }
+}
