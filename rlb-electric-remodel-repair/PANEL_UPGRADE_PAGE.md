@@ -26,50 +26,58 @@ When your home's electrical panel can't keep up with modern demand, you need som
 
 ### Direct Opening
 
-A panel upgrade in Springfield helps your electrical system handle the power demands of modern homes and appliances. RLB Electric assesses what your panel needs and handles the work with the precision it demands. We diagnose the issue clearly, explain your options, and get the job done right.
+A panel upgrade in Springfield helps your electrical system handle modern demand. RLB Electric assesses what your panel needs, explains your options clearly, and handles the upgrade with the precision it deserves. We tell you straight whether your panel has room or needs replacing, and we never push unnecessary upgrades.
 
 ---
 
 ### The Panel Upgrade Decision
 
-Not every electrical issue means you need a panel upgrade. Sometimes a breaker has failed or a circuit is overloaded. A panel upgrade is different—it's planned work to give your system capacity for the future.
+Not every electrical issue needs a panel upgrade. Sometimes a breaker tripped or a circuit is overloaded.
 
-During a panel inspection, we look at whether your current setup can handle what you want to add (a renovated kitchen, additional outlets, new appliances, or expanded air conditioning). We'll tell you straight: does your panel have room to handle it, or does it need to be replaced? We don't sell unnecessary upgrades, and we explain the real reason the work makes sense for your situation.
+A panel upgrade is different. It's planned work that adds capacity to your system for the future.
 
-The upgrade itself is careful, methodical work. We make sure the new panel is installed to code, all connections are secure, and everything works exactly as it should. We clean up thoroughly when we're done.
+**During inspection, we assess what you're adding.** A renovated kitchen. New appliances. Expanded air conditioning. Additional outlets. We answer the real question: does your panel handle it, or does it need replacing?
+
+We don't push unnecessary upgrades. We explain why the work makes sense for your situation.
+
+**The upgrade itself is methodical work.** We install to code, verify every connection, and test everything thoroughly. We clean up when we're done.
 
 ---
 
 ### What Happens During the Visit
 
-When you call about a panel upgrade, tell us what's prompting it—a renovation you're planning, appliances you want to add, or concerns from an inspector. We'll ask a few questions to understand the job and schedule a time that works for you.
+**When you call:** Tell us what's prompting the upgrade—a planned renovation, new appliances, or an inspector's recommendation. We'll ask questions and schedule at your convenience.
 
-When we arrive, we'll examine the panel, check the existing wiring, and walk you through what we find. We explain the options and costs clearly so you can decide confidently. If you move forward, we handle the installation with the attention to detail this work requires.
+**When we arrive:** We examine the panel and existing wiring. We walk you through what we find in plain language.
+
+**We explain your options** and the costs so you decide with confidence. If you move forward, we install with the precision this work requires.
 
 ---
 
 ### FAQ
 
 **How do I know if my panel needs upgrading?**  
-Your panel might need upgrading if you're planning a major renovation, adding significant electrical load (like a pool or new HVAC), or if an inspector flags capacity issues. We can inspect and tell you what's actually needed. Some homes have capacity issues; others manage fine with what they have.
+You might need an upgrade if you're planning a major renovation, adding significant load (like a pool or new HVAC), or if an inspector flags capacity issues. We inspect and tell you what's actually needed.
 
-**What's the difference between a repair and a panel upgrade?**  
-A repair fixes something that's broken—a failed breaker, a short circuit, a dead outlet. A panel upgrade adds capacity and is planned work for the future. We handle both, and the way you call us might be different depending on the urgency.
+**What's the difference between a repair and an upgrade?**  
+A repair fixes something broken (failed breaker, short, dead outlet). An upgrade adds capacity for planned growth. We handle both.
 
-**How long does a panel upgrade take?**  
-An upgrade usually takes several hours depending on the scope of the job and what we find. We'll give you a clear picture of the timeline when we inspect.
+**How long does an upgrade take?**  
+Several hours, depending on scope. We'll give you a timeline after inspection.
 
-**Do I need to be home during the work?**  
-Yes, we'll need access to the panel and your home during the upgrade. We'll work efficiently and keep disruption minimal.
+**Do I need to be home?**  
+Yes, we need access to the panel and your home. We work efficiently and keep disruption minimal.
 
-**Why should I call RLB for a panel upgrade?**  
-We know electrical systems. We explain what needs to happen and why, we do thorough work, and we charge fair prices for the skill we bring.
+**Why call RLB?**  
+We know electrical systems. We explain what's needed and why. Thorough work. Fair pricing.
 
 ---
 
 ### Final CTA
 
-If you're thinking about a panel upgrade in Springfield, call RLB Electric at **(417) 350-2809** to schedule an inspection. We'll assess what you need and give you honest guidance on how to move forward.
+Ready to talk about a panel upgrade? Call RLB Electric to schedule an inspection.
+
+**(417) 350-2809**
 
 [Call (417) 350-2809](tel:+14173502809)
 
