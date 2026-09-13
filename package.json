@@ -1,0 +1,29 @@
+{
+  "name": "ff-content-demo-factory",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Repo-native Fluid Frame writer guides and deterministic local loader",
+  "type": "module",
+  "main": "./dist/src/index.js",
+  "types": "./dist/src/index.d.ts",
+  "exports": {
+    ".": "./dist/src/index.js",
+    "./writer-guides": "./dist/src/writer-guides/index.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "check": "tsc -p tsconfig.json --noEmit",
+    "test": "node --import tsx --test src/writer-guides/*.test.ts",
+    "test:compiled": "npm run build && node scripts/assert-compiled-writer-guides.mjs",
+    "test:all": "npm run check && npm test && npm run test:compiled",
+    "writer-guides:receipt": "node --import tsx src/writer-guides/cli.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2"
+  }
+}
