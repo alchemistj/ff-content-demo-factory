@@ -29,7 +29,7 @@ Raw Markdown in those files is the writer context. Do not summarize them into a 
 
 ## Programmatic loader
 
-Entry point: `src/writer-guides/index.ts`
+Entry point: `src/writer-guides/index.ts` (compiled export: `dist/src/writer-guides/index.js`, package export `./writer-guides`).
 
 ```ts
 import { loadWriterStageGuides, loadCanonicalGuideCatalog } from "./src/writer-guides/index.ts";
@@ -39,6 +39,7 @@ const catalog = loadCanonicalGuideCatalog();
 ```
 
 - Loads those exact repository Markdown files from disk.
+- Discovers the repository root from the loader module path. Callers do not need to pass `repoRoot`. This works from TypeScript source (`tsx`) and from the compiled `dist` package — not from a naive `../..` that would resolve to `dist/` after `tsc`.
 - Validates that all six catalog files exist and are non-empty before returning a stage set.
 - Preserves full raw Markdown on each loaded guide (`guide.markdown` / `guide.bytes`).
 - Fails closed on missing, empty, or unknown guide IDs and unknown stages.
@@ -52,6 +53,8 @@ npm install
 npm run writer-guides:receipt
 npm run test:all
 ```
+
+`npm run test:all` typechecks, runs the source tests, then `npm run build` and a fresh Node process that imports the compiled `dist` exports with network disabled.
 
 ## Lineage note
 

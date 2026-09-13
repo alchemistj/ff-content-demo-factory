@@ -1,9 +1,10 @@
 import { readFileSync, statSync } from "node:fs";
-import { isAbsolute, join, normalize, resolve, sep } from "node:path";
+import { dirname, isAbsolute, join, normalize, resolve, sep } from "node:path";
 import { fileURLToPath } from "node:url";
 import {
   GUIDE_CATALOG,
   GUIDE_IDS,
+  WRITER_GUIDES_DIR,
   catalogEntry,
   stageGuideIds,
   type GuideCatalogEntry,
@@ -58,8 +59,43 @@ export class WriterGuideError extends Error {
   }
 }
 
+const FACTORY_PACKAGE_NAME = "ff-content-demo-factory";
+
+function isFactoryRepoRoot(dir: string): boolean {
+  try {
+    const pkgPath = join(dir, "package.json");
+    if (!statSync(pkgPath).isFile()) return false;
+    const pkg = JSON.parse(readFileSync(pkgPath, "utf8")) as { name?: unknown };
+    if (pkg.name !== FACTORY_PACKAGE_NAME) return false;
+    return statSync(join(dir, WRITER_GUIDES_DIR)).isDirectory();
+  } catch {
+    return false;
+  }
+}
+
+/**
+ * Resolve the repository root that contains `docs/writer-guides/`.
+ *
+ * Source lives at `src/writer-guides/loader.ts`; the compiled export lives at
+ * `dist/src/writer-guides/loader.js`. A naive `../..` from the compiled file
+ * is `dist/`, not the repo root. Walking up until this factory's package.json
+ * and canonical guides directory are found works from both layouts without
+ * callers passing `repoRoot`.
+ */
 export function defaultRepoRoot(): string {
-  return resolve(fileURLToPath(new URL("../..", import.meta.url)));
+  let dir = resolve(fileURLToPath(new URL(".", import.meta.url)));
+  for (;;) {
+    if (isFactoryRepoRoot(dir)) {
+      return dir;
+    }
+    const parent = dirname(dir);
+    if (parent === dir) {
+      throw new WriterGuideError(
+        `Unable to locate ${FACTORY_PACKAGE_NAME} repository root containing ${WRITER_GUIDES_DIR} from ${fileURLToPath(import.meta.url)}`,
+      );
+    }
+    dir = parent;
+  }
 }
 
 function resolveRepoRoot(options?: LoadGuidesOptions): string {

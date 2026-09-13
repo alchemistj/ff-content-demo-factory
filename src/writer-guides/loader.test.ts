@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
-import { cpSync, mkdtempSync, mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
+import { cpSync, existsSync, mkdtempSync, mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
-import { join } from "node:path";
+import { join, sep } from "node:path";
 import { chdir } from "node:process";
 import test from "node:test";
 import {
@@ -122,6 +122,16 @@ test("Writer 1/2/3 sets load from repo files with no provider and preserve raw M
   assert.notEqual(writer1.setHash, writer3.setHash);
   assert.notEqual(writer2.setHash, writer3.setHash);
   assert.equal(loadWriterStageGuides("writer1").setHash, writer1.setHash);
+});
+
+test("defaultRepoRoot is the factory repo root, not dist", () => {
+  const root = defaultRepoRoot();
+  const pkg = JSON.parse(readFileSync(join(root, "package.json"), "utf8")) as { name?: string };
+  assert.equal(pkg.name, "ff-content-demo-factory");
+  assert.equal(root.endsWith(`${sep}dist`), false);
+  assert.notEqual(root, join(root, "dist"));
+  assert.equal(existsSync(join(root, "docs/writer-guides/FLUID_FRAME_DEMO_WRITING_GUIDE.md")), true);
+  assert.equal(existsSync(join(root, "docs/writer-guides/README.md")), true);
 });
 
 test("default repo root still resolves when cwd is elsewhere", () => {

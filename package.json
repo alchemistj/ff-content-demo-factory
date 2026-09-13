@@ -17,7 +17,8 @@
     "build": "tsc -p tsconfig.json",
     "check": "tsc -p tsconfig.json --noEmit",
     "test": "node --import tsx --test src/writer-guides/*.test.ts",
-    "test:all": "npm run check && npm test",
+    "test:compiled": "npm run build && node scripts/assert-compiled-writer-guides.mjs",
+    "test:all": "npm run check && npm test && npm run test:compiled",
     "writer-guides:receipt": "node --import tsx src/writer-guides/cli.ts"
   },
   "devDependencies": {
