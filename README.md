@@ -1,1 +1,58 @@
 # ff-content-demo-factory
+
+This repository is the GitHub-native home of the Fluid Frame Content Demo Factory writer authorities. A writer agent with ordinary GitHub read access can load the current guides from this repo. **Google Drive is not required at runtime.**
+
+## Canonical writer guides
+
+Current authority lives here:
+
+```text
+docs/writer-guides/README.md
+docs/writer-guides/FLUID_FRAME_DEMO_WRITING_GUIDE.md
+docs/writer-guides/SERVICE_PAGE_GUIDE.md
+docs/writer-guides/HOMEPAGE_GUIDE.md
+docs/writer-guides/CONTACT_PAGE_GUIDE.md
+docs/writer-guides/HEADER_FOOTER_GUIDE.md
+```
+
+`docs/writer-guides/README.md` is the human-readable index for this set. It is part of the canonical six-file catalog. For new Content Demo Factory writing work, **these guides replace — they do not sit beside — older overlapping writer instructions.** Do not also load deprecated FF2 craft guides or Google Doc copies of the same documents.
+
+Raw Markdown in those files is the writer context. Do not summarize them into a second source of truth.
+
+## What to read by writing stage
+
+| Stage | Also called | Read these files | Then write |
+| --- | --- | --- | --- |
+| Writer 1 | Copy Agent 1 | `FLUID_FRAME_DEMO_WRITING_GUIDE.md`, `SERVICE_PAGE_GUIDE.md`, plus the approved prospect prescription/evidence | only the two service pages |
+| Writer 2 | Copy Agent 2 | `FLUID_FRAME_DEMO_WRITING_GUIDE.md`, `HOMEPAGE_GUIDE.md`, `CONTACT_PAGE_GUIDE.md`, `HEADER_FOOTER_GUIDE.md`, plus finished accepted service pages and the approved prescription/evidence | homepage, contact, header, and footer |
+| Writer 3 | Copy Agent 3 | `FLUID_FRAME_DEMO_WRITING_GUIDE.md`, plus the finished business-facing site and the original audit/prescription/evidence needed for Strategy | Strategy Overview last |
+
+## Programmatic loader
+
+Entry point: `src/writer-guides/index.ts`
+
+```ts
+import { loadWriterStageGuides, loadCanonicalGuideCatalog } from "./src/writer-guides/index.ts";
+
+const writer1 = loadWriterStageGuides("writer1");
+const catalog = loadCanonicalGuideCatalog();
+```
+
+- Loads those exact repository Markdown files from disk.
+- Validates that all six catalog files exist and are non-empty before returning a stage set.
+- Preserves full raw Markdown on each loaded guide (`guide.markdown` / `guide.bytes`).
+- Fails closed on missing, empty, or unknown guide IDs and unknown stages.
+- Emits SHA-256 per file plus a deterministic catalog `manifestHash` and per-stage `setHash`.
+- Does not fetch Google Drive, Google Docs, or any network source.
+
+Print a receipt:
+
+```bash
+npm install
+npm run writer-guides:receipt
+npm run test:all
+```
+
+## Lineage note
+
+Current `main` contains prospect word packages and does not yet include the draft Words Factory v3 system from PR #2 (`workgpt/words-factory-v3`). That factory still pointed at a closed Google Doc catalog. This repo-native loader is the current canonical writer-guide boundary for GitHub-only writer tests. It is not a merge of the unfinished factory pipeline.
