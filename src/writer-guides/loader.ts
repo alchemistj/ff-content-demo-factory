@@ -61,6 +61,13 @@ export class WriterGuideError extends Error {
 
 const FACTORY_PACKAGE_NAME = "ff-content-demo-factory";
 
+/**
+ * Source: `src/writer-guides` is two parents from the repo root.
+ * Compiled: `dist/src/writer-guides` is three parents from the repo root.
+ * Bound the search so a nested extra package.json cannot win by walking the disk.
+ */
+const REPO_ROOT_MAX_ASCENT = 6;
+
 function isFactoryRepoRoot(dir: string): boolean {
   try {
     const pkgPath = join(dir, "package.json");
@@ -73,29 +80,37 @@ function isFactoryRepoRoot(dir: string): boolean {
   }
 }
 
+function repoRootCandidates(moduleDir: string): readonly string[] {
+  const candidates: string[] = [];
+  let dir = resolve(moduleDir);
+  for (let ascent = 0; ascent <= REPO_ROOT_MAX_ASCENT; ascent += 1) {
+    candidates.push(dir);
+    const parent = dirname(dir);
+    if (parent === dir) break;
+    dir = parent;
+  }
+  return candidates;
+}
+
 /**
  * Resolve the repository root that contains `docs/writer-guides/`.
  *
  * Source lives at `src/writer-guides/loader.ts`; the compiled export lives at
  * `dist/src/writer-guides/loader.js`. A naive `../..` from the compiled file
- * is `dist/`, not the repo root. Walking up until this factory's package.json
- * and canonical guides directory are found works from both layouts without
- * callers passing `repoRoot`.
+ * is `dist/`, not the repo root. Check a small bounded set of parent
+ * directories and accept the first that has this factory's package.json and
+ * the canonical guides directory. Callers do not pass `repoRoot`.
  */
 export function defaultRepoRoot(): string {
-  let dir = resolve(fileURLToPath(new URL(".", import.meta.url)));
-  for (;;) {
+  const moduleDir = resolve(fileURLToPath(new URL(".", import.meta.url)));
+  for (const dir of repoRootCandidates(moduleDir)) {
     if (isFactoryRepoRoot(dir)) {
       return dir;
     }
-    const parent = dirname(dir);
-    if (parent === dir) {
-      throw new WriterGuideError(
-        `Unable to locate ${FACTORY_PACKAGE_NAME} repository root containing ${WRITER_GUIDES_DIR} from ${fileURLToPath(import.meta.url)}`,
-      );
-    }
-    dir = parent;
   }
+  throw new WriterGuideError(
+    `Unable to locate ${FACTORY_PACKAGE_NAME} repository root containing ${WRITER_GUIDES_DIR} from ${fileURLToPath(import.meta.url)}`,
+  );
 }
 
 function resolveRepoRoot(options?: LoadGuidesOptions): string {

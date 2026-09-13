@@ -58,11 +58,17 @@ assert.equal(typeof main.defaultRepoRoot, "function");
 assert.equal(typeof guides.loadWriterStageGuides, "function");
 assert.equal(typeof guides.defaultRepoRoot, "function");
 
+const distLoaderPath = join(repoRoot, "dist/src/writer-guides/loader.js");
+const naiveFromCompiledLoader = resolve(dirname(distLoaderPath), "../..");
+assert.equal(naiveFromCompiledLoader, join(repoRoot, "dist"));
+assert.equal(existsSync(join(naiveFromCompiledLoader, "docs/writer-guides")), false);
+
 const discoveredRoot = guides.defaultRepoRoot();
 assert.equal(discoveredRoot, repoRoot);
 assert.equal(main.defaultRepoRoot(), repoRoot);
 assert.equal(discoveredRoot.endsWith(`${sep}dist`), false);
 assert.notEqual(discoveredRoot, join(repoRoot, "dist"));
+assert.notEqual(discoveredRoot, naiveFromCompiledLoader);
 
 const catalog = guides.loadCanonicalGuideCatalog();
 assert.equal(catalog.repoRoot, repoRoot);

@@ -132,6 +132,9 @@ test("defaultRepoRoot is the factory repo root, not dist", () => {
   assert.notEqual(root, join(root, "dist"));
   assert.equal(existsSync(join(root, "docs/writer-guides/FLUID_FRAME_DEMO_WRITING_GUIDE.md")), true);
   assert.equal(existsSync(join(root, "docs/writer-guides/README.md")), true);
+  const loaderSource = readFileSync(join(root, "src/writer-guides/loader.ts"), "utf8");
+  assert.equal(loaderSource.includes('new URL("../..", import.meta.url)'), false);
+  assert.match(loaderSource, /REPO_ROOT_MAX_ASCENT/);
 });
 
 test("default repo root still resolves when cwd is elsewhere", () => {
