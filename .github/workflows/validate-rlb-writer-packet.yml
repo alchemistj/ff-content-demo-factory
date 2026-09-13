@@ -1,0 +1,80 @@
+name: Validate RLB writer packet
+
+on:
+  push:
+    branches:
+      - claude/rlb-electric-writer-test
+    paths:
+      - .github/workflows/validate-rlb-writer-packet.yml
+
+permissions:
+  contents: write
+
+jobs:
+  validate:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: claude/rlb-electric-writer-test
+          fetch-depth: 0
+
+      - name: Validate packet
+        shell: bash
+        run: |
+          set -euo pipefail
+          d=rlb-electric-remodel-repair
+
+          jq empty "$d/input-manifest.json" "$d/strategy-recipe.json" "$d/confirmed-facts.json" "$d/review-inventory.json" "$d/prescription-approval.json"
+
+          test "$(jq '.reviews | length' "$d/review-inventory.json")" = "44"
+          test "$(jq -r '.retrieval.retrievedCount' "$d/review-inventory.json")" = "44"
+          test "$(jq -r '.retrieval.listingReviewCount' "$d/review-inventory.json")" = "68"
+          test "$(jq -r '.platforms[0].rating' "$d/review-inventory.json")" = "4.9"
+          test "$(jq -r '.identity.placeId' "$d/review-inventory.json")" = "ChIJt4A_O26JxYcRFWiYP7cPk-U"
+
+          test "$(jq '.pages | length' "$d/strategy-recipe.json")" = "5"
+          test "$(jq '.reviewInventory | length' "$d/strategy-recipe.json")" = "44"
+          test "$(jq -r '.collisionReport.status' "$d/strategy-recipe.json")" = "PASS"
+          test "$(jq -r '.pages[] | select(.route=="/panel-upgrade-springfield") | .proposedH1' "$d/strategy-recipe.json")" = "Panel Upgrade in Springfield, MO"
+          test "$(jq -r '.pages[] | select(.route=="/electrical-repair-springfield") | .proposedH1' "$d/strategy-recipe.json")" = "Electrical Repair in Springfield, MO"
+
+          test "$(jq -r '.authorized' "$d/prescription-approval.json")" = "true"
+          test "$(jq -r '.recordedJoshApproval' "$d/prescription-approval.json")" = "true"
+          test "$(jq -r '.workflowState' "$d/input-manifest.json")" = "ready-for-writer"
+          test "$(jq -r '.state' "$d/input-manifest.json")" = "MO"
+
+          test ! -e "$d/copy-artifact.json"
+          test ! -e "$d/copy-review.md"
+          test ! -d "$d/copy-pages"
+          test ! -d "$d/copy-sitewide"
+
+          cat > "$d/PACKET-VALIDATION.md" <<EOF
+          # Packet validation
+
+          Validated from branch \`claude/rlb-electric-writer-test\` on $(date -u +%Y-%m-%dT%H:%M:%SZ).
+
+          - JSON inputs parse: PASS
+          - Review inventory: 44 retrieved / 68 listed / 4.9 / exact-place ID: PASS
+          - Strategy recipe: five pages, 44 embedded reviews, collision report PASS: PASS
+          - Prescription approval: authorized and recorded Josh approval: PASS
+          - Clean-room check: no historical RLB authored copy artifacts present: PASS
+
+          File SHA-256:
+
+          \`\`\`
+          $(sha256sum "$d"/strategy-recipe.json "$d"/confirmed-facts.json "$d"/review-inventory.json "$d"/prescription-approval.json)
+          \`\`\`
+          EOF
+
+      - name: Commit validation receipt and remove one-shot workflow
+        shell: bash
+        run: |
+          set -euo pipefail
+          git rm .github/workflows/validate-rlb-writer-packet.yml
+          git add rlb-electric-remodel-repair/PACKET-VALIDATION.md
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Validate clean-room RLB writer packet"
+          git push origin HEAD:claude/rlb-electric-writer-test
