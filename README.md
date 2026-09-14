@@ -59,3 +59,18 @@ npm run test:all
 ## Lineage note
 
 Current `main` contains prospect word packages and does not yet include the draft Words Factory v3 system from PR #2 (`workgpt/words-factory-v3`). That factory still pointed at a closed Google Doc catalog. This repo-native loader is the current canonical writer-guide boundary for GitHub-only writer tests. It is not a merge of the unfinished factory pipeline.
+
+## Google Docs human review
+
+Writer-guide loading still does not call Google. When a finished writing package reaches an existing human gate, trusted factory code can publish a native Google Doc for human QA.
+
+- Operator setup: `docs/google-docs/OPERATOR_SETUP.md`
+- Workflow-lane interface: `docs/google-docs/WORKFLOW_INTERFACE.md`
+- Package export: `ff-content-demo-factory/google-docs`
+
+```bash
+npm run google-docs:authorize
+npm run google-docs:init-folder
+npm run google-docs:test-connection
+```
+

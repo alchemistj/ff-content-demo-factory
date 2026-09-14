@@ -1,0 +1,58 @@
+# Publish a writing package to Google Docs (trusted)
+
+# Run from a trusted ref only. Do not attach this workflow to pull_request.
+# Untrusted PR code must never execute with Google credentials.
+
+name: Google Docs publish
+
+on:
+  workflow_dispatch:
+    inputs:
+      package_path:
+        description: Path to writing-package JSON
+        required: true
+      lifecycle_path:
+        description: Optional existing lifecycle JSON to reuse the same Doc
+        required: false
+      new_review_version:
+        description: Create a replacement review Doc instead of overwriting
+        required: false
+        default: "false"
+        type: boolean
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      GOOGLE_OAUTH_CLIENT_ID: ${{ secrets.GOOGLE_OAUTH_CLIENT_ID }}
+      GOOGLE_OAUTH_CLIENT_SECRET: ${{ secrets.GOOGLE_OAUTH_CLIENT_SECRET }}
+      GOOGLE_OAUTH_REFRESH_TOKEN: ${{ secrets.GOOGLE_OAUTH_REFRESH_TOKEN }}
+      GOOGLE_DRIVE_FOLDER_ID: ${{ vars.GOOGLE_DRIVE_FOLDER_ID }}
+      GOOGLE_ACCOUNT_EMAIL: ${{ vars.GOOGLE_ACCOUNT_EMAIL }}
+    steps:
+      - name: Check out trusted ref
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      - name: Install
+        run: npm ci
+
+      - name: Publish
+        run: |
+          extra=()
+          if [ -n "${{ inputs.lifecycle_path }}" ]; then
+            extra+=(--lifecycle "${{ inputs.lifecycle_path }}" --lifecycle-out "${{ inputs.lifecycle_path }}")
+          fi
+          if [ "${{ inputs.new_review_version }}" = "true" ]; then
+            extra+=(--new-review-version)
+          fi
+          npm run google-docs:publish -- --package "${{ inputs.package_path }}" --receipt-out google-doc-receipt.json "${extra[@]}"

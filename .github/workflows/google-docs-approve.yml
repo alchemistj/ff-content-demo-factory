@@ -1,0 +1,60 @@
+# Import a reviewed Google Doc into an approved repository snapshot.
+# Authenticated GitHub actor is the approver. Text typed in the public-link
+# Doc is not authorization.
+
+name: Google Docs approve copy
+
+on:
+  workflow_dispatch:
+    inputs:
+      package_path:
+        description: Path to the draft writing-package JSON
+        required: true
+      receipt_path:
+        description: Path to the publication receipt JSON
+        required: true
+      snapshot_dir:
+        description: Directory for the approved snapshot
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  approve:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      GOOGLE_OAUTH_CLIENT_ID: ${{ secrets.GOOGLE_OAUTH_CLIENT_ID }}
+      GOOGLE_OAUTH_CLIENT_SECRET: ${{ secrets.GOOGLE_OAUTH_CLIENT_SECRET }}
+      GOOGLE_OAUTH_REFRESH_TOKEN: ${{ secrets.GOOGLE_OAUTH_REFRESH_TOKEN }}
+      GOOGLE_DRIVE_FOLDER_ID: ${{ vars.GOOGLE_DRIVE_FOLDER_ID }}
+      GOOGLE_ACCOUNT_EMAIL: ${{ vars.GOOGLE_ACCOUNT_EMAIL }}
+    steps:
+      - name: Check out trusted ref
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      - name: Install
+        run: npm ci
+
+      - name: Approve and snapshot
+        run: >
+          npm run google-docs:approve --
+          --package "${{ inputs.package_path }}"
+          --receipt "${{ inputs.receipt_path }}"
+          --snapshot-dir "${{ inputs.snapshot_dir }}"
+          --actor "${{ github.actor }}"
+
+      - name: Commit snapshot
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "${{ inputs.snapshot_dir }}"
+          git commit -m "Approve Google Doc copy snapshot as ${{ github.actor }}" || echo "No snapshot changes"
+          git push

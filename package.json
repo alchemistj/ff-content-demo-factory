@@ -2,13 +2,14 @@
   "name": "ff-content-demo-factory",
   "version": "0.0.0",
   "private": true,
-  "description": "Repo-native Fluid Frame writer guides and deterministic local loader",
+  "description": "Repo-native Fluid Frame writer guides, deterministic local loader, and Google Docs human review",
   "type": "module",
   "main": "./dist/src/index.js",
   "types": "./dist/src/index.d.ts",
   "exports": {
     ".": "./dist/src/index.js",
-    "./writer-guides": "./dist/src/writer-guides/index.js"
+    "./writer-guides": "./dist/src/writer-guides/index.js",
+    "./google-docs": "./dist/src/google-docs/index.js"
   },
   "engines": {
     "node": ">=22"
@@ -16,10 +17,21 @@
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "check": "tsc -p tsconfig.json --noEmit",
-    "test": "node --import tsx --test src/writer-guides/*.test.ts",
+    "test": "node --import tsx --test src/writer-guides/*.test.ts src/google-docs/*.test.ts",
     "test:compiled": "npm run build && node scripts/assert-compiled-writer-guides.mjs",
     "test:all": "npm run check && npm test && npm run test:compiled",
-    "writer-guides:receipt": "node --import tsx src/writer-guides/cli.ts"
+    "writer-guides:receipt": "node --import tsx src/writer-guides/cli.ts",
+    "google-docs:authorize": "node --import tsx src/google-docs/cli.ts authorize",
+    "google-docs:init-folder": "node --import tsx src/google-docs/cli.ts init-folder",
+    "google-docs:test-connection": "node --import tsx src/google-docs/cli.ts test-connection",
+    "google-docs:publish": "node --import tsx src/google-docs/cli.ts publish",
+    "google-docs:import": "node --import tsx src/google-docs/cli.ts import",
+    "google-docs:approve": "node --import tsx src/google-docs/cli.ts approve",
+    "google-docs:push-secrets": "node --import tsx src/google-docs/cli.ts push-secrets",
+    "google-docs:live-verify": "node --import tsx src/google-docs/cli.ts live-verify"
+  },
+  "dependencies": {
+    "google-auth-library": "^10.5.0"
   },
   "devDependencies": {
     "@types/node": "^24.3.0",

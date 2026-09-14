@@ -14,9 +14,9 @@ import { dirname, join, resolve, sep } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 
 const EXPECTED_MANIFEST =
-  "569bf4d57648b3323ac9ed3d4a6773c5fdba84fa3bb5913e354a206babcb83bb";
+  "942c567fc7011f8d7576ce84dedfc679705d323dbe2039aa77cb7e975c7ad37e";
 const EXPECTED_GUIDE_SHA256 = Object.freeze({
-  general: "46aa8d8ac384abaf6b01d4737997c227d757f4298432437d00454ffa99f354f2",
+  general: "7852b1b444723b5c003ec517651f3a94332b395f692b2eec117c06a62489e0d2",
   service: "b013b5b962411c67a565e2d681c2fd71ae95d3447fb5cbd190d8d67e148e1bc7",
   homepage: "3e1b492b80e6f101613d924fad366805ced4918e7892438e827e0946016017cc",
   contact: "4cdaf7f6c7724aa6b052aad21f898817f0b5ef059750023a92a967cd59ddf574",
@@ -24,9 +24,9 @@ const EXPECTED_GUIDE_SHA256 = Object.freeze({
   readme: "671712749521c34233f126cc78c8917e86576692c6effab9007f5b49e9cd2764",
 });
 const EXPECTED_SET_HASH = Object.freeze({
-  writer1: "49073fba8c34b5f90bbfaef484b4357acea3bf75f912ba65d5a33b80b4e8ea12",
-  writer2: "65e55d628e53492b8108ab0e2f21bf84f1fa2ed145a3892be3673276c6dc7486",
-  writer3: "6e32befedc8dc09615c9443781c0ad0c30759f72d019302a50e7ac0b03321fb9",
+  writer1: "b6b4bfa27be4bfde1a6a25e8a3547973a3c75ccf5e8e47137b3d4094dbb32206",
+  writer2: "082eb65038fbe8e68c18c14e17ff5c128bbfa24ac17ec6705c21353347a125e8",
+  writer3: "395d11721da5ebab45d57fb76f1a77580d904b863bb177310305421a99b23ed1",
 });
 
 const scriptDir = dirname(fileURLToPath(import.meta.url));
@@ -35,11 +35,14 @@ const pkg = JSON.parse(readFileSync(join(repoRoot, "package.json"), "utf8"));
 assert.equal(pkg.name, "ff-content-demo-factory");
 assert.equal(pkg.exports?.["."], "./dist/src/index.js");
 assert.equal(pkg.exports?.["./writer-guides"], "./dist/src/writer-guides/index.js");
+assert.equal(pkg.exports?.["./google-docs"], "./dist/src/google-docs/index.js");
 
 const mainExportPath = join(repoRoot, pkg.exports["."]);
 const guidesExportPath = join(repoRoot, pkg.exports["./writer-guides"]);
+const googleDocsExportPath = join(repoRoot, pkg.exports["./google-docs"]);
 assert.equal(existsSync(mainExportPath), true, `missing compiled main export: ${mainExportPath}`);
 assert.equal(existsSync(guidesExportPath), true, `missing compiled writer-guides export: ${guidesExportPath}`);
+assert.equal(existsSync(googleDocsExportPath), true, `missing compiled google-docs export: ${googleDocsExportPath}`);
 assert.equal(existsSync(join(repoRoot, "dist/docs/writer-guides")), false);
 
 const block = () => {
