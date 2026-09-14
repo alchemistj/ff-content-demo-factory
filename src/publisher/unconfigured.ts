@@ -3,16 +3,20 @@ import type { WritingPackage } from "../writing-package/index.js";
 
 export function createUnconfiguredPublisher(): GoogleDocsPublisher {
   return {
-    async publishWritingPackage(pkg: WritingPackage): Promise<PublicationReceipt> {
+    async publishReviewPackage(pkg: WritingPackage): Promise<PublicationReceipt> {
+      const preserved =
+        pkg.kind === "prescription"
+          ? "The proposed page plan is preserved. Retry publication without rerunning research or prescription."
+          : "The writing package is preserved. Retry publication without rerunning the writer.";
       return {
         status: "setup-required",
+        kind: pkg.kind,
         prospectId: pkg.prospectId,
         runId: pkg.runId,
-        packageIdentity: { packageHash: pkg.packageHash },
+        packageIdentity: { packageId: pkg.packageId, packageHash: pkg.packageHash },
         error: {
           code: GOOGLE_PUBLISHER_UNCONFIGURED,
-          message:
-            "Google Docs publication is not configured in this repository yet. The writing package is preserved. Retry publication without rerunning the writer once the google-docs lane is wired.",
+          message: `Google Docs publication is not configured in this repository yet. ${preserved}`,
         },
       };
     },

@@ -1,4 +1,5 @@
 import type { WritingPackage } from "../writing-package/index.js";
+import type { ReviewKind } from "../writing-package/types.js";
 
 export type PublicationStatus = "published" | "setup-required" | "failed";
 
@@ -9,9 +10,11 @@ export interface PublicationError {
 
 export interface PublicationReceipt {
   readonly status: PublicationStatus;
+  readonly kind: ReviewKind;
   readonly prospectId: string;
   readonly runId: string;
   readonly packageIdentity: {
+    readonly packageId: string;
     readonly packageHash: string;
   };
   readonly url?: string;
@@ -20,12 +23,12 @@ export interface PublicationReceipt {
 }
 
 /**
- * Model-neutral publisher boundary. The Google Docs lane owns the real
- * implementation. This lane calls the interface at the copy gate and never
- * reruns the writer to retry publication.
+ * Model-neutral publisher boundary for both existing human gates.
+ * The Google Docs lane owns the real implementation. Retrying publication
+ * must not rerun research, prescription, or the writer.
  */
 export interface GoogleDocsPublisher {
-  publishWritingPackage(pkg: WritingPackage): Promise<PublicationReceipt>;
+  publishReviewPackage(pkg: WritingPackage): Promise<PublicationReceipt>;
 }
 
 export const GOOGLE_PUBLISHER_UNCONFIGURED = "GOOGLE_PUBLISHER_UNCONFIGURED" as const;

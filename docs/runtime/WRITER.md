@@ -1,6 +1,8 @@
 # Writer assignment
 
-One selected writer model owns the complete writing package. Provider and model are configurable. This assignment belongs to Fluid Frame, not to one vendor.
+One selected writer model owns the complete writing package in **one writer run**. Provider and model are configurable. This assignment belongs to Fluid Frame, not to one vendor.
+
+The factory calls `writeCompletePackage()` once. It receives the full writer context, canonical guides, examples when present, and a recommended internal order. It must return the complete `writing-package/v1` website-copy package. Do not treat service pages, site chrome, and Strategy Overview as three fresh model sessions.
 
 Read, in this order:
 
@@ -10,7 +12,7 @@ Read, in this order:
 4. The approved page plan
 5. The full research evidence and both recommendation sets
 
-Internal phases, in one assignment, with context carried forward and **no routine human stop** between them:
+Recommended internal order, inside that one run, with context carried forward and **no routine human stop**:
 
 1. The two approved service pages
 2. Homepage, contact, header, and footer
@@ -21,14 +23,15 @@ Editorial acceptance then belongs to the human, not a second model.
 
 ## Produce
 
-The complete business-facing copy and the owner-facing Strategy Overview. Preserve the prospect's approved route map. Keep owner-facing strategy copy distinct from customer-facing pages.
+The complete business-facing copy and the owner-facing Strategy Overview as one `website_copy` package. Preserve the prospect's approved route map. Keep owner-facing strategy copy distinct from customer-facing pages.
 
-Quote only source-backed review text, with attribution. You may evaluate relevance and choose which reviews to use. You may set aside earlier recommendations. You do not need an administrative rationale for every ordinary editorial choice.
+Quote source-backed review text with attribution. A quote may be the full source wording or a faithful contiguous excerpt. Do not paraphrase inside quotation marks. You may evaluate relevance and choose which reviews to use. You may set aside earlier recommendations. You do not need an administrative rationale for every ordinary editorial choice.
 
 Write direct, confident customer-facing copy where the evidence supports it. May-language is for advice between agents, not for the business's public voice.
 
 ## Do not
 
+- Split this assignment into three independent writer runs
 - Wait for a human between internal phases
 - Treat recommended first reviews or suggested outlines as mandatory
 - Invent facts, credentials, or customer quotations

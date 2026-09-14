@@ -1,82 +1,110 @@
 /**
- * Writing-package contract consumed by the Google Docs human-review lane.
+ * Canonical review-package contract owned by the workflow lane.
  *
- * Natural reading order for publication:
- * homepage → two service pages → contact → header/footer chrome →
- * owner-facing Strategy Overview.
+ * Google Docs (PR #31) must import this module instead of defining a second
+ * package type. One schema, one validator, one hash.
  *
- * Evidence administration, hashes, internal QA reports, and raw research
- * stay out of the customer-facing copy payload.
+ * Website-copy reading order:
+ * homepage → two service pages → contact → header/footer → owner Strategy Overview.
+ *
+ * Prescription packages use the same schema with kind "prescription".
  */
 
-export const WRITING_PACKAGE_VERSION = "writing-package/v1" as const;
+export const WRITING_PACKAGE_SCHEMA_VERSION = "writing-package/v1" as const;
 
-export type BusinessPageType = "homepage" | "service" | "contact";
-export type CopyAudience = "business" | "owner";
+export const REVIEW_KINDS = Object.freeze(["website_copy", "prescription"] as const);
+export type ReviewKind = (typeof REVIEW_KINDS)[number];
 
-export interface CopyBlock {
-  readonly heading?: string;
-  readonly body: string;
-  readonly bullets?: readonly string[];
-  readonly quote?: {
-    readonly text: string;
-    readonly attribution: string;
-    readonly reviewId?: string;
-  };
+export const PAGE_ROLES = Object.freeze([
+  "homepage",
+  "service",
+  "contact",
+  "header_footer",
+  "strategy_overview",
+  "prescription",
+] as const);
+export type PageRole = (typeof PAGE_ROLES)[number];
+
+export const PAGE_AUDIENCES = Object.freeze(["business", "owner"] as const);
+export type PageAudience = (typeof PAGE_AUDIENCES)[number];
+
+export const WEBSITE_COPY_READING_ORDER = Object.freeze([
+  "homepage",
+  "service",
+  "service",
+  "contact",
+  "header_footer",
+  "strategy_overview",
+] as const);
+
+export const PAGE_ID_RE = /^[a-z][a-z0-9-]{0,63}$/;
+
+/** Optional emphasis/link on a contiguous run of text. Omit flags rather than set false. */
+export interface TextSpan {
+  readonly text: string;
+  readonly bold?: true;
+  readonly italic?: true;
+  readonly href?: string;
 }
 
-export interface PageCopy {
+export interface ListItem {
+  readonly spans: readonly TextSpan[];
+}
+
+export type HeadingBlock = {
+  readonly type: "heading";
+  readonly level: 1 | 2 | 3;
+  readonly text: string;
+};
+
+export type ParagraphBlock = {
+  readonly type: "paragraph";
+  readonly spans: readonly TextSpan[];
+};
+
+export type ListBlock = {
+  readonly type: "list";
+  readonly ordered: boolean;
+  readonly items: readonly ListItem[];
+};
+
+export type QuoteBlock = {
+  readonly type: "quote";
+  readonly spans: readonly TextSpan[];
+  readonly attribution: string;
+  readonly reviewId?: string;
+};
+
+export type ContentBlock = HeadingBlock | ParagraphBlock | ListBlock | QuoteBlock;
+
+export interface WritingPackagePage {
+  /** Stable identity. Never derived from heading text. Humans may edit title/H1. */
   readonly pageId: string;
-  readonly pageType: BusinessPageType | "strategy";
-  readonly route: string;
-  readonly audience: CopyAudience;
+  readonly role: PageRole;
+  readonly audience: PageAudience;
+  readonly route?: string;
+  readonly readingOrder: number;
+  /** Default H1. Changing this must not reassign pageId. */
   readonly title: string;
-  readonly h1: string;
-  readonly blocks: readonly CopyBlock[];
-}
-
-export interface ChromeCopy {
-  readonly pageId: "header-footer";
-  readonly pageType: "chrome";
-  readonly audience: "business";
-  readonly header: {
-    readonly businessName: string;
-    readonly nav: readonly { readonly label: string; readonly href: string }[];
-    readonly ctaLabel: string;
-    readonly ctaHref: string;
-  };
-  readonly footer: {
-    readonly businessName: string;
-    readonly phone: string;
-    readonly address: string;
-    readonly nav: readonly { readonly label: string; readonly href: string }[];
-  };
-}
-
-export interface WritingPackagePages {
-  readonly homepage: PageCopy;
-  readonly servicePages: readonly [PageCopy, PageCopy];
-  readonly contact: PageCopy;
-  readonly chrome: ChromeCopy;
-  readonly strategyOverview: PageCopy;
+  readonly blocks: readonly ContentBlock[];
 }
 
 export interface WritingPackage {
-  readonly version: typeof WRITING_PACKAGE_VERSION;
+  readonly schemaVersion: typeof WRITING_PACKAGE_SCHEMA_VERSION;
+  readonly kind: ReviewKind;
+  readonly packageId: string;
   readonly prospectId: string;
   readonly runId: string;
   readonly businessName: string;
-  readonly routeMap: readonly { readonly pageId: string; readonly route: string; readonly pageType: string }[];
-  readonly readingOrder: readonly string[];
-  readonly pages: WritingPackagePages;
+  readonly pages: readonly WritingPackagePage[];
   readonly packageHash: string;
 }
 
-export const DEFAULT_READING_ORDER = Object.freeze([
-  "homepage",
-  "service-1",
-  "service-2",
-  "contact",
-  "header-footer",
-  "strategy-overview",
+/** Recommended internal order inside one writer run. Not separate model calls. */
+export const WRITER_INTERNAL_ORDER = Object.freeze([
+  "servicePages",
+  "siteChrome",
+  "strategyOverview",
 ] as const);
+
+export type WriterInternalPhase = (typeof WRITER_INTERNAL_ORDER)[number];

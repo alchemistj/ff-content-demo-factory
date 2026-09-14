@@ -31,10 +31,15 @@ export {
 } from "./handoff/index.js";
 
 export {
-  WRITING_PACKAGE_VERSION,
+  WRITING_PACKAGE_SCHEMA_VERSION,
+  WRITER_INTERNAL_ORDER,
   assertWritingPackage,
   buildWritingPackage,
+  buildPrescriptionReviewPackage,
+  hashWritingPackage,
+  parseWritingPackage,
   publisherPayload,
+  reviewDocumentTitle,
   type WritingPackage,
 } from "./writing-package/index.js";
 

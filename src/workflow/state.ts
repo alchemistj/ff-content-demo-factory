@@ -10,11 +10,12 @@ import type {
 import type { PublicationReceipt } from "../publisher/types.js";
 import type { WritingPackage } from "../writing-package/types.js";
 
-export const WORKFLOW_VERSION = 1 as const;
+export const WORKFLOW_VERSION = 2 as const;
 
 export const WORKFLOW_STAGES = Object.freeze({
   RESEARCH: "research",
   PRESCRIPTION: "prescription",
+  PUBLISHING_PRESCRIPTION: "publishing_prescription",
   AWAITING_PRESCRIPTION_APPROVAL: "awaiting_prescription_approval",
   WRITING: "writing",
   MECHANICAL_VALIDATION: "mechanical_validation",
@@ -24,15 +25,6 @@ export const WORKFLOW_STAGES = Object.freeze({
 } as const);
 
 export type WorkflowStage = (typeof WORKFLOW_STAGES)[keyof typeof WORKFLOW_STAGES];
-
-export const WRITING_INTERNAL_PHASES = Object.freeze([
-  "servicePages",
-  "siteChrome",
-  "strategyOverview",
-  "polish",
-] as const);
-
-export type WritingInternalPhase = (typeof WRITING_INTERNAL_PHASES)[number];
 
 export interface WorkflowModels {
   readonly researcher: ModelRef;
@@ -61,8 +53,11 @@ export interface WorkflowState {
   prescription: ProposedPrescription | null;
   approvedPlan: ApprovedPlan | null;
   writingPackage: WritingPackage | null;
-  writingPhasesCompleted: WritingInternalPhase[];
+  prescriptionPackage: WritingPackage | null;
+  writerInvocations: number;
+  writerRunId: string | null;
   publication: PublicationReceipt | null;
+  prescriptionPublication: PublicationReceipt | null;
   humanQaTask: HumanQaTask | null;
   events: WorkflowEvent[];
 }
@@ -113,8 +108,11 @@ export function createInitialState(input: {
     prescription: null,
     approvedPlan: null,
     writingPackage: null,
-    writingPhasesCompleted: [],
+    prescriptionPackage: null,
+    writerInvocations: 0,
+    writerRunId: null,
     publication: null,
+    prescriptionPublication: null,
     humanQaTask: null,
     events: [],
   };

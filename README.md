@@ -12,10 +12,10 @@ Current `main` already had the repo-native writer-guide loader. This factory pat
 
 1. Research produces an evidence packet plus advisory recommendations.
 2. Prescription proposes a page plan plus advisory recommendations.
-3. A human approves the page plan (existing prescription gate). Approval does not lock accompanying suggestions.
-4. One configurable writer model completes the package (service pages, homepage/contact/chrome, Strategy Overview as internal phases, with optional self-polish). There is no second-model editor and no routine human stop between those phases.
-5. Mechanical validation checks artifact integrity only.
-6. The writing package is handed to a Google Docs publisher interface. If Google is unconfigured or publication fails, the writing is preserved and the error is recorded. Retrying publication does not rerun the writer.
+3. A human approves the page plan (existing prescription gate, published through the same Google Docs review surface when configured). Approval does not lock accompanying suggestions.
+4. One configurable writer model completes the package in **one writer run**. Service pages, homepage/contact/chrome, and Strategy Overview are recommended internal order, not three model sessions. There is no second-model editor and no routine human stop inside that run.
+5. Mechanical validation checks artifact integrity only, including faithful review excerpts.
+6. Both human gates use `publishReviewPackage()`. If Google is unconfigured or publication fails, the stored package is preserved and the error is recorded. Retrying publication does not rerun research, prescription, or the writer.
 7. The human copy-QA task receives the Doc link when publication succeeded.
 
 Programmatic entry:

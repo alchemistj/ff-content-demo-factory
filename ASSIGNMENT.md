@@ -17,7 +17,7 @@ const assignment = discoverAssignment();
 `discoverAssignment()` returns:
 
 - Canonical writer guides from `docs/writer-guides/`
-- The complete writing-assignment guide set (service, homepage/contact/chrome, and Strategy Overview as **internal phases** of one writing job)
+- The complete writing-assignment guide set (service, homepage/contact/chrome, and Strategy Overview as recommended order inside **one writer run**)
 - The approved example library when the examples lane has landed at `examples/approved-copy/`
 - The current run, if one exists
 - These runtime instructions
@@ -36,7 +36,7 @@ Load those files as written. Do not summarize them into a second source of truth
 
 ## Workflow
 
-Research → prescription → **human page-plan gate** → one writer (internal phases, no routine human stop) → mechanical validation → Google Docs publication → **human copy QA**.
+Research → prescription → **human page-plan gate** (same gate, published through the Google Docs review surface when configured) → **one writer run** → mechanical validation → Google Docs publication → **human copy QA**.
 
 The human is the editorial quality gate for website copy. There is no second model acting as editor, judge, scorer, or approval gate.
 

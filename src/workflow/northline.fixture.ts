@@ -13,13 +13,12 @@ import {
 } from "../handoff/types.js";
 import { evidenceFingerprint } from "./state.js";
 import { writerContextFromApprovedPlan } from "../handoff/validate.js";
-import { buildWritingPackage, type WritingPackage, type WritingPackagePages } from "../writing-package/index.js";
+import { buildWritingPackage, type ContentBlock, type WritingPackage, type WritingPackagePage } from "../writing-package/index.js";
 import type {
   FactoryAdapters,
   PrescriptionAdapter,
   ResearchAdapter,
   WriterAdapter,
-  WriterPhaseOutput,
 } from "./types.js";
 import type { PublicationReceipt } from "../publisher/types.js";
 
@@ -299,153 +298,164 @@ export function northlineWriterContext(): WriterContext {
   });
 }
 
-function block(heading: string, body: string, quote?: { text: string; attribution: string; reviewId: string }) {
-  return quote ? { heading, body, quote } : { heading, body };
+function heading(level: 1 | 2 | 3, text: string): ContentBlock {
+  return { type: "heading", level, text };
 }
 
-export function northlinePages(options?: { readonly useAriInsteadOfMaya?: boolean }): WritingPackagePages {
-  const repairQuote = options?.useAriInsteadOfMaya
-    ? {
-        text: "The repair solved the noise, although the appointment window ran late.",
-        attribution: "Ari K.",
-        reviewId: "review-unclassified",
-      }
-    : {
-        text: "The technician explained the repair, arrived when promised, and left the area tidy.",
-        attribution: "Maya R.",
-        reviewId: "review-maya",
-      };
+function paragraph(text: string): ContentBlock {
+  return { type: "paragraph", spans: [{ text }] };
+}
 
-  return {
-    homepage: {
+function quote(text: string, attribution: string, reviewId: string): ContentBlock {
+  return { type: "quote", spans: [{ text }], attribution, reviewId };
+}
+
+function page(
+  input: Omit<WritingPackagePage, "blocks"> & { readonly blocks: readonly ContentBlock[] },
+): WritingPackagePage {
+  return input;
+}
+
+export function northlineWebsitePages(options?: {
+  readonly useAriExcerpt?: boolean;
+}): readonly WritingPackagePage[] {
+  const repairQuote = options?.useAriExcerpt
+    ? quote("The repair solved the noise", "Ari K.", "review-unclassified")
+    : quote(
+        "The technician explained the repair, arrived when promised, and left the area tidy.",
+        "Maya R.",
+        "review-maya",
+      );
+
+  return [
+    page({
       pageId: "page-home",
-      pageType: "homepage",
-      route: "/home",
+      role: "homepage",
       audience: "business",
-      title: "Garage Door Repair and Replacement in Lake County",
-      h1: "Garage door help for the next practical step",
+      route: "/home",
+      readingOrder: 1,
+      title: "Garage door help for the next practical step",
       blocks: [
-        block(
-          "Repair or replacement",
-          "Northline Garage Doors serves Lake County homeowners who need a door repaired or replaced. Call +1-555-010-1000.",
+        heading(1, "Garage door help for the next practical step"),
+        heading(2, "Repair or replacement"),
+        paragraph("Northline Garage Doors serves Lake County homeowners who need a door repaired or replaced."),
+        { type: "paragraph", spans: [{ text: "Call " }, { text: "+1-555-010-1000", bold: true }, { text: "." }] },
+      ],
+    }),
+    page({
+      pageId: "page-repair",
+      role: "service",
+      audience: "business",
+      route: "/garage-door-repair",
+      readingOrder: 2,
+      title: "Garage door repair when the door stops working",
+      blocks: [
+        heading(1, "Garage door repair when the door stops working"),
+        heading(2, "What a repair visit is for"),
+        paragraph("When the door still has life in it, a repair visit can explain the problem and get it moving again."),
+        repairQuote,
+      ],
+    }),
+    page({
+      pageId: "page-replacement",
+      role: "service",
+      audience: "business",
+      route: "/garage-door-replacement",
+      readingOrder: 3,
+      title: "Replacement when the opener and door are worn through",
+      blocks: [
+        heading(1, "Replacement when the opener and door are worn through"),
+        heading(2, "A worn opener is a different job"),
+        paragraph("Replacement is the path when repair will not restore reliable daily use."),
+        quote(
+          "They replaced the worn opener and walked me through the new controls.",
+          "Jon P.",
+          "review-jon",
         ),
       ],
-    },
-    servicePages: [
-      {
-        pageId: "page-repair",
-        pageType: "service",
-        route: "/garage-door-repair",
-        audience: "business",
-        title: "Garage Door Repair",
-        h1: "Garage door repair when the door stops working",
-        blocks: [
-          block(
-            "What a repair visit is for",
-            "When the door still has life in it, a repair visit can explain the problem and get it moving again.",
-            repairQuote,
-          ),
-        ],
-      },
-      {
-        pageId: "page-replacement",
-        pageType: "service",
-        route: "/garage-door-replacement",
-        audience: "business",
-        title: "Garage Door Replacement",
-        h1: "Replacement when the opener and door are worn through",
-        blocks: [
-          block(
-            "A worn opener is a different job",
-            "Replacement is the path when repair will not restore reliable daily use.",
-            {
-              text: "They replaced the worn opener and walked me through the new controls.",
-              attribution: "Jon P.",
-              reviewId: "review-jon",
-            },
-          ),
-        ],
-      },
-    ],
-    contact: {
+    }),
+    page({
       pageId: "page-contact",
-      pageType: "contact",
+      role: "contact",
+      audience: "business",
       route: "/contact",
-      audience: "business",
-      title: "Contact Northline Garage Doors",
-      h1: "Call Northline Garage Doors",
+      readingOrder: 4,
+      title: "Call Northline Garage Doors",
       blocks: [
-        block("Phone", "Call +1-555-010-1000. 18 Harbor Avenue, Mason, IL 60000."),
+        heading(1, "Call Northline Garage Doors"),
+        paragraph("Call +1-555-010-1000. 18 Harbor Avenue, Mason, IL 60000."),
       ],
-    },
-    chrome: {
+    }),
+    page({
       pageId: "header-footer",
-      pageType: "chrome",
+      role: "header_footer",
       audience: "business",
-      header: {
-        businessName: "Northline Garage Doors",
-        nav: [
-          { label: "Home", href: "/home" },
-          { label: "Repair", href: "/garage-door-repair" },
-          { label: "Replacement", href: "/garage-door-replacement" },
-          { label: "Contact", href: "/contact" },
-        ],
-        ctaLabel: "Call +1-555-010-1000",
-        ctaHref: "tel:+15550101000",
-      },
-      footer: {
-        businessName: "Northline Garage Doors",
-        phone: "+1-555-010-1000",
-        address: "18 Harbor Avenue, Mason, IL 60000",
-        nav: [
-          { label: "Home", href: "/home" },
-          { label: "Contact", href: "/contact" },
-        ],
-      },
-    },
-    strategyOverview: {
-      pageId: "page-strategy",
-      pageType: "strategy",
-      route: "/",
-      audience: "owner",
-      title: "Why We Built This Site",
-      h1: "Why this site uses two service jobs",
+      readingOrder: 5,
+      title: "Header and footer",
       blocks: [
-        block(
-          "What we built",
+        heading(1, "Header and footer"),
+        heading(2, "Header"),
+        {
+          type: "list",
+          ordered: false,
+          items: [
+            { spans: [{ text: "Home", href: "/home" }] },
+            { spans: [{ text: "Repair", href: "/garage-door-repair" }] },
+            { spans: [{ text: "Replacement", href: "/garage-door-replacement" }] },
+            { spans: [{ text: "Contact", href: "/contact" }] },
+          ],
+        },
+        heading(2, "Footer"),
+        paragraph("Northline Garage Doors · +1-555-010-1000 · 18 Harbor Avenue, Mason, IL 60000"),
+      ],
+    }),
+    page({
+      pageId: "page-strategy",
+      role: "strategy_overview",
+      audience: "owner",
+      route: "/",
+      readingOrder: 6,
+      title: "Why this site uses two service jobs",
+      blocks: [
+        heading(1, "Why this site uses two service jobs"),
+        heading(2, "What we built"),
+        paragraph(
           "The public site keeps repair and replacement on separate routes because the captured company pages and customer accounts describe two jobs. This page is for the owner, not for customers.",
         ),
       ],
-    },
-  };
+    }),
+  ];
 }
 
 export function northlineWritingPackage(runId = "run-prospect-northline"): WritingPackage {
-  const pages = northlinePages({ useAriInsteadOfMaya: true });
   return buildWritingPackage({
+    kind: "website_copy",
+    packageId: "website-copy-prospect-northline",
     prospectId: northlineSeed.prospectId,
     runId,
     businessName: northlineSeed.business.name,
-    routeMap: pagePlan().routeMap,
-    pages,
+    pages: northlineWebsitePages({ useAriExcerpt: true }),
   });
 }
 
 export interface FixtureWriterStats {
   writeCalls: number;
-  phases: string[];
+  researchCalls: number;
+  prescribeCalls: number;
+  writerRunIds: string[];
 }
 
 export function createFixtureAdapters(options?: {
   readonly publisher?: FactoryAdapters["publisher"];
   readonly writerStats?: FixtureWriterStats;
-  readonly useAriInsteadOfMaya?: boolean;
+  readonly useAriExcerpt?: boolean;
 }): FactoryAdapters & { stats: FixtureWriterStats } {
-  const stats = options?.writerStats ?? { writeCalls: 0, phases: [] };
+  const stats = options?.writerStats ?? { writeCalls: 0, researchCalls: 0, prescribeCalls: 0, writerRunIds: [] };
   const researcher: ResearchAdapter = {
     provider: "test",
     model: "fixture-researcher",
     async research() {
+      stats.researchCalls += 1;
       return northlineResearchRecord();
     },
   };
@@ -453,35 +463,39 @@ export function createFixtureAdapters(options?: {
     provider: "test",
     model: "fixture-prescriber",
     async prescribe() {
+      stats.prescribeCalls += 1;
       return northlinePrescription();
     },
   };
   const writer: WriterAdapter = {
     provider: "test",
     model: "fixture-writer",
-    async write(input): Promise<WriterPhaseOutput> {
+    async writeCompletePackage(assignment) {
       stats.writeCalls += 1;
-      stats.phases.push(input.phase);
-      const pages = northlinePages({ useAriInsteadOfMaya: options?.useAriInsteadOfMaya ?? true });
-      if (input.phase === "servicePages") {
-        return { phase: input.phase, pages: { servicePages: pages.servicePages } };
+      stats.writerRunIds.push(assignment.writerRunId);
+      if (!assignment.writerRunId) {
+        throw new Error("writer assignment must include a durable writerRunId");
       }
-      if (input.phase === "siteChrome") {
-        if (!input.priorWork.servicePages) {
-          throw new Error("site chrome phase must receive finished service pages");
-        }
-        return {
-          phase: input.phase,
-          pages: { homepage: pages.homepage, contact: pages.contact, chrome: pages.chrome },
-        };
+      if (assignment.internalOrder.length !== 3) {
+        throw new Error("writer assignment must include the recommended internal order");
       }
-      if (input.phase === "strategyOverview") {
-        if (!input.priorWork.homepage) {
-          throw new Error("strategy phase must receive finished business copy");
-        }
-        return { phase: input.phase, pages: { strategyOverview: pages.strategyOverview } };
+      if (assignment.context.evidence.reviews.length < 3) {
+        throw new Error("writer assignment must include the original review inventory");
       }
-      return { phase: input.phase, pages };
+      if (
+        !assignment.context.researchRecommendations.items.every((item) => item.stance === "advisory") ||
+        !assignment.context.prescriptionRecommendations.items.every((item) => item.stance === "advisory")
+      ) {
+        throw new Error("writer assignment recommendations must remain advisory");
+      }
+      return buildWritingPackage({
+        kind: "website_copy",
+        packageId: `website-copy-${assignment.context.prospectId}`,
+        prospectId: assignment.context.prospectId,
+        runId: assignment.runId,
+        businessName: assignment.context.evidence.business.name,
+        pages: northlineWebsitePages({ useAriExcerpt: options?.useAriExcerpt ?? true }),
+      });
     },
   };
   return options?.publisher
@@ -490,14 +504,19 @@ export function createFixtureAdapters(options?: {
 }
 
 export function publishedReceipt(pkg: WritingPackage): PublicationReceipt {
-  return {
+  const receipt: PublicationReceipt = {
     status: "published",
+    kind: pkg.kind,
     prospectId: pkg.prospectId,
     runId: pkg.runId,
-    packageIdentity: { packageHash: pkg.packageHash },
-    url: "https://docs.google.com/document/d/fixture-northline",
-    documentId: "fixture-northline",
+    packageIdentity: { packageId: pkg.packageId, packageHash: pkg.packageHash },
+    url:
+      pkg.kind === "prescription"
+        ? "https://docs.google.com/document/d/fixture-northline-prescription"
+        : "https://docs.google.com/document/d/fixture-northline",
+    documentId: pkg.kind === "prescription" ? "fixture-northline-prescription" : "fixture-northline",
   };
+  return receipt;
 }
 
 export { WRITER_CONTEXT_VERSION, pagePlan };

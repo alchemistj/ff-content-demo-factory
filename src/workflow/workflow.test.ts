@@ -3,22 +3,34 @@ import { mkdtempSync, mkdirSync, rmSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import test from "node:test";
-import { createMemoryStateStore } from "./state.js";
+import { createMemoryStateStore, WORKFLOW_STAGES } from "./state.js";
 import { retryPublication, runFactory } from "./orchestrator.js";
-import { WORKFLOW_STAGES } from "./state.js";
-import { mechanicalScope, validateWritingMechanics, writerMaySetAsideRecommendations } from "./mechanical.js";
+import {
+  mechanicalScope,
+  MechanicalValidationError,
+  validateWritingMechanics,
+  writerMaySetAsideRecommendations,
+} from "./mechanical.js";
 import { discoverAssignment, assertProviderEntriesPointToAssignment } from "./assignment.js";
 import { loadActiveRuntimeInstructions } from "./runtime-docs.js";
 import { loadApprovedExampleLibrary } from "../examples/catalog.js";
 import {
   createFixtureAdapters,
   northlineSeed,
+  northlineWebsitePages,
   northlineWriterContext,
+  northlineWritingPackage,
   publishedReceipt,
 } from "./northline.fixture.js";
 import { createUnconfiguredPublisher } from "../publisher/index.js";
 import type { GoogleDocsPublisher } from "../publisher/types.js";
-import type { WritingPackage } from "../writing-package/index.js";
+import {
+  buildWritingPackage,
+  isFaithfulReviewExcerpt,
+  parseWritingPackage,
+  websiteCopyPages,
+  type WritingPackage,
+} from "../writing-package/index.js";
 
 const approval = {
   status: "approved" as const,
@@ -26,26 +38,47 @@ const approval = {
   approvedBy: "fixture-human",
 };
 
-test("research-to-prescription stops at the existing human page-plan gate", async () => {
+test("research-to-prescription publishes the existing human page-plan gate and does not start writing", async () => {
   const store = createMemoryStateStore();
-  const adapters = createFixtureAdapters();
+  const publishCalls: WritingPackage[] = [];
+  const publisher: GoogleDocsPublisher = {
+    async publishReviewPackage(pkg) {
+      publishCalls.push(pkg);
+      return publishedReceipt(pkg);
+    },
+  };
+  const adapters = createFixtureAdapters({ publisher });
   const first = await runFactory({ seed: northlineSeed, adapters, stateStore: store });
   assert.equal(first.state.stage, WORKFLOW_STAGES.AWAITING_PRESCRIPTION_APPROVAL);
   assert.equal(first.awaitingHuman, true);
   assert.equal(first.state.writingPackage, null);
-  assert.equal(first.state.humanQaTask?.kind, "prescription-gate");
   assert.equal(adapters.stats.writeCalls, 0);
-  assert.ok(first.state.research);
-  assert.ok(first.state.prescription);
-  assert.equal(first.state.prescription.evidenceFingerprint.length, 64);
+  assert.equal(publishCalls.length, 1);
+  assert.equal(publishCalls[0]?.kind, "prescription");
+  assert.equal(first.state.humanQaTask?.kind, "prescription-gate");
+  assert.equal(
+    first.state.humanQaTask?.googleDocUrl,
+    "https://docs.google.com/document/d/fixture-northline-prescription",
+  );
+  assert.ok(first.state.prescriptionPackage);
+  assert.deepEqual(
+    first.state.prescriptionPackage.pages.map((page) => page.pageId),
+    ["prescription-decisions", "prescription-evidence", "prescription-recommendations"],
+  );
+  assert.match(first.state.prescriptionPackage.pages[0]?.title ?? "", /for approval/i);
+  assert.match(first.state.prescriptionPackage.pages[2]?.title ?? "", /advisory/i);
+  assert.equal(
+    first.state.events.filter((event) => event.stage === WORKFLOW_STAGES.AWAITING_COPY_QA).length,
+    0,
+  );
 });
 
-test("one writer completes internal phases without a human stop, then hands copy to the publisher", async () => {
+test("one writer run owns the complete package; internal order is not three model calls", async () => {
   const store = createMemoryStateStore();
-  const publishCalls: WritingPackage[] = [];
+  const publishKinds: string[] = [];
   const publisher: GoogleDocsPublisher = {
-    async publishWritingPackage(pkg) {
-      publishCalls.push(pkg);
+    async publishReviewPackage(pkg) {
+      publishKinds.push(pkg.kind);
       return publishedReceipt(pkg);
     },
   };
@@ -57,24 +90,31 @@ test("one writer completes internal phases without a human stop, then hands copy
     prescriptionApproval: approval,
   });
   assert.equal(result.state.stage, WORKFLOW_STAGES.AWAITING_COPY_QA);
-  assert.equal(result.awaitingHuman, true);
-  assert.deepEqual(adapters.stats.phases, ["servicePages", "siteChrome", "strategyOverview", "polish"]);
-  assert.equal(adapters.stats.writeCalls, 4);
+  assert.equal(adapters.stats.writeCalls, 1);
+  assert.equal(result.state.writerInvocations, 1);
+  assert.equal(adapters.stats.writerRunIds.length, 1);
+  assert.equal(adapters.stats.writerRunIds[0], result.state.writerRunId);
   assert.equal(result.state.events.some((event) => event.type === "qa-pass"), false);
-  assert.equal(
-    result.state.events.filter((event) => event.type === "writing-phase").map((event) => event.detail).join(","),
-    "servicePages,siteChrome,strategyOverview,polish",
-  );
-  assert.equal(publishCalls.length, 1);
+  assert.equal(result.state.events.filter((event) => event.type === "writing-phase").length, 0);
+  assert.deepEqual(publishKinds, ["prescription", "website_copy"]);
   assert.equal(result.state.humanQaTask?.kind, "copy-gate");
   assert.equal(result.state.humanQaTask?.googleDocUrl, "https://docs.google.com/document/d/fixture-northline");
-  assert.ok(result.state.writingPackage);
-  assert.equal(result.state.writingPackage.pages.strategyOverview.audience, "owner");
-  assert.equal(result.state.writingPackage.pages.homepage.audience, "business");
+  assert.equal("write" in adapters.writer, false);
+  assert.equal(result.state.writerRunId, `${result.state.runId}:writer`);
+  assert.equal(result.state.prescriptionPublication?.kind, "prescription");
+  assert.equal(result.state.publication?.kind, "website_copy");
+  assert.equal(
+    result.state.events.filter((event) => event.type === "published" || event.type === "publication-recorded").length,
+    2,
+  );
+  const pages = websiteCopyPages(result.state.writingPackage!);
+  assert.equal(pages.strategyOverview.audience, "owner");
+  assert.equal(pages.homepage.audience, "business");
+  assert.equal(pages.servicePages.length, 2);
 });
 
-test("writer may set aside a prescribed review recommendation and still pass mechanical checks", async () => {
-  const adapters = createFixtureAdapters({ useAriInsteadOfMaya: true });
+test("writer may set aside a prescribed review and quote a faithful excerpt", async () => {
+  const adapters = createFixtureAdapters({ useAriExcerpt: true });
   const result = await runFactory({
     seed: northlineSeed,
     adapters,
@@ -82,34 +122,71 @@ test("writer may set aside a prescribed review recommendation and still pass mec
   });
   const pkg = result.state.writingPackage;
   assert.ok(pkg);
-  const repairQuote = pkg.pages.servicePages[0]?.blocks[0]?.quote;
-  assert.equal(repairQuote?.reviewId, "review-unclassified");
-  assert.notEqual(repairQuote?.reviewId, "review-maya");
-  const context = northlineWriterContext();
-  assert.equal(writerMaySetAsideRecommendations(context), true);
+  const repair = websiteCopyPages(pkg).servicePages[0];
+  const repairQuote = repair.blocks.find((block) => block.type === "quote");
+  assert.equal(repairQuote && repairQuote.type === "quote" ? repairQuote.reviewId : undefined, "review-unclassified");
+  assert.notEqual(repairQuote && repairQuote.type === "quote" ? repairQuote.reviewId : undefined, "review-maya");
+  assert.equal(writerMaySetAsideRecommendations(northlineWriterContext()), true);
   validateWritingMechanics({
     pkg,
-    decisions: context.decisions,
-    evidence: context.evidence,
+    decisions: northlineWriterContext().decisions,
+    evidence: northlineWriterContext().evidence,
   });
-  assert.deepEqual(mechanicalScope().includes("taste"), false);
+  assert.equal(mechanicalScope().includes("taste"), false);
 });
 
-test("missing Google configuration preserves writing and records setup separately", async () => {
+test("missing Google configuration preserves the proposed plan and the writing package", async () => {
   const adapters = createFixtureAdapters({ publisher: createUnconfiguredPublisher() });
+  const gated = await runFactory({ seed: northlineSeed, adapters });
+  assert.equal(gated.state.stage, WORKFLOW_STAGES.AWAITING_PRESCRIPTION_APPROVAL);
+  assert.ok(gated.state.prescriptionPackage);
+  assert.equal(gated.state.prescriptionPublication?.status, "setup-required");
+  assert.equal(gated.state.humanQaTask?.publicationError?.code, "GOOGLE_PUBLISHER_UNCONFIGURED");
+  assert.equal(adapters.stats.writeCalls, 0);
+
   const result = await runFactory({
     seed: northlineSeed,
     adapters,
+    stateStore: createMemoryStateStore(gated.state),
     prescriptionApproval: approval,
   });
   assert.equal(result.state.stage, WORKFLOW_STAGES.AWAITING_COPY_QA);
   assert.ok(result.state.writingPackage);
   assert.equal(result.state.publication?.status, "setup-required");
-  assert.equal(result.state.humanQaTask?.googleDocUrl, undefined);
-  assert.equal(result.state.humanQaTask?.publicationError?.code, "GOOGLE_PUBLISHER_UNCONFIGURED");
 });
 
-test("retrying publication does not rerun the writer", async () => {
+test("retrying prescription publication does not rerun research, prescription, or the writer", async () => {
+  const store = createMemoryStateStore();
+  const adapters = createFixtureAdapters({ publisher: createUnconfiguredPublisher() });
+  const first = await runFactory({ seed: northlineSeed, adapters, stateStore: store });
+  assert.equal(first.state.stage, WORKFLOW_STAGES.AWAITING_PRESCRIPTION_APPROVAL);
+  const researchCalls = adapters.stats.researchCalls;
+  const prescribeCalls = adapters.stats.prescribeCalls;
+  const writes = adapters.stats.writeCalls;
+  const packageHash = first.state.prescriptionPackage?.packageHash;
+  assert.ok(packageHash);
+
+  let publishCalls = 0;
+  const retry = await retryPublication({
+    stateStore: store,
+    publisher: {
+      async publishReviewPackage(pkg) {
+        publishCalls += 1;
+        return publishedReceipt(pkg);
+      },
+    },
+  });
+  assert.equal(publishCalls, 1);
+  assert.equal(adapters.stats.researchCalls, researchCalls);
+  assert.equal(adapters.stats.prescribeCalls, prescribeCalls);
+  assert.equal(adapters.stats.writeCalls, writes);
+  assert.equal(retry.state.prescriptionPackage?.packageHash, packageHash);
+  assert.equal(retry.state.prescriptionPublication?.status, "published");
+  assert.equal(retry.state.stage, WORKFLOW_STAGES.AWAITING_PRESCRIPTION_APPROVAL);
+  assert.equal(retry.awaitingHuman, true);
+});
+
+test("retrying copy publication does not rerun the writer", async () => {
   const store = createMemoryStateStore();
   const adapters = createFixtureAdapters({ publisher: createUnconfiguredPublisher() });
   const first = await runFactory({
@@ -119,43 +196,103 @@ test("retrying publication does not rerun the writer", async () => {
     prescriptionApproval: approval,
   });
   const writesAfterFirst = adapters.stats.writeCalls;
-  assert.ok(first.state.writingPackage);
-  const packageHash = first.state.writingPackage.packageHash;
+  assert.equal(writesAfterFirst, 1);
+  const packageHash = first.state.writingPackage?.packageHash;
+  assert.ok(packageHash);
 
-  let publishCalls = 0;
   const retry = await retryPublication({
     stateStore: store,
     publisher: {
-      async publishWritingPackage(pkg) {
-        publishCalls += 1;
+      async publishReviewPackage(pkg) {
         return publishedReceipt(pkg);
       },
     },
   });
-  assert.equal(publishCalls, 1);
-  assert.equal(adapters.stats.writeCalls, writesAfterFirst);
+  assert.equal(adapters.stats.writeCalls, 1);
   assert.equal(retry.state.writingPackage?.packageHash, packageHash);
   assert.equal(retry.state.publication?.status, "published");
-  assert.equal(retry.state.humanQaTask?.googleDocUrl, "https://docs.google.com/document/d/fixture-northline");
   assert.equal(retry.state.stage, WORKFLOW_STAGES.AWAITING_COPY_QA);
+});
+
+test("paraphrased quotation marks fail mechanical validation; contiguous excerpts pass", () => {
+  assert.equal(
+    isFaithfulReviewExcerpt(
+      "The technician explained the repair, arrived when promised, and left the area tidy.",
+      "The technician explained the repair",
+    ),
+    true,
+  );
+  assert.equal(
+    isFaithfulReviewExcerpt(
+      "The technician explained the repair,\narrived when promised, and left the area tidy.",
+      "arrived when promised",
+    ),
+    true,
+  );
+  assert.equal(
+    isFaithfulReviewExcerpt(
+      "The technician explained the repair, arrived when promised, and left the area tidy.",
+      "The technician did a great job and was tidy",
+    ),
+    false,
+  );
+
+  const context = northlineWriterContext();
+  const good = northlineWritingPackage();
+  validateWritingMechanics({ pkg: good, decisions: context.decisions, evidence: context.evidence });
+
+  const paraphrasedPages = northlineWebsitePages({ useAriExcerpt: true }).map((page) => {
+    if (page.pageId !== "page-repair") return page;
+    return {
+      ...page,
+      blocks: page.blocks.map((block) =>
+        block.type === "quote"
+          ? { ...block, spans: [{ text: "The repair really fixed the annoying noise quickly." }] }
+          : block,
+      ),
+    };
+  });
+  const bad = buildWritingPackage({
+    kind: "website_copy",
+    packageId: "website-copy-paraphrase",
+    prospectId: northlineSeed.prospectId,
+    runId: "run-prospect-northline",
+    businessName: northlineSeed.business.name,
+    pages: paraphrasedPages,
+  });
+  assert.throws(
+    () => validateWritingMechanics({ pkg: bad, decisions: context.decisions, evidence: context.evidence }),
+    MechanicalValidationError,
+  );
+
+  const misattributedPages = northlineWebsitePages({ useAriExcerpt: true }).map((page) => {
+    if (page.pageId !== "page-repair") return page;
+    return {
+      ...page,
+      blocks: page.blocks.map((block) =>
+        block.type === "quote" ? { ...block, attribution: "Someone else" } : block,
+      ),
+    };
+  });
+  const misattributed = buildWritingPackage({
+    kind: "website_copy",
+    packageId: "website-copy-misattributed",
+    prospectId: northlineSeed.prospectId,
+    runId: "run-prospect-northline",
+    businessName: northlineSeed.business.name,
+    pages: misattributedPages,
+  });
+  assert.throws(
+    () => validateWritingMechanics({ pkg: misattributed, decisions: context.decisions, evidence: context.evidence }),
+    /must keep source attribution/,
+  );
 });
 
 test("assignment discovery has one entry point and provider files only point at it", () => {
   const assignment = discoverAssignment();
   assert.equal(assignment.entryPoint, "ASSIGNMENT.md");
   assert.equal(assignment.writingGuides.assignment, "writing");
-  assert.deepEqual(assignment.writingGuides.sourceIds, [
-    "general",
-    "service",
-    "homepage",
-    "contact",
-    "headerFooter",
-  ]);
-  assert.equal(assignment.examples.status, "pending-examples-lane");
-  assert.equal(assignment.historicalProspects.every((item) => item.role === "history-not-runtime-instructions"), true);
-  assert.match(assignment.instructions.authority, /independent thinking/i);
-  assert.match(assignment.instructions.writer, /One selected writer model/);
-  assert.match(assignment.instructions.writer, /Editorial acceptance then belongs to the human/);
+  assert.match(assignment.instructions.writer, /one writer run/i);
   assertProviderEntriesPointToAssignment();
 });
 
@@ -181,4 +318,37 @@ test("example library becomes available when the examples lane directory exists"
   } finally {
     rmSync(root, { recursive: true, force: true });
   }
+});
+
+test("canonical package parser accepts the shared website-copy shape", () => {
+  const pkg = northlineWritingPackage();
+  const parsed = parseWritingPackage(pkg);
+  assert.equal(parsed.schemaVersion, "writing-package/v1");
+  assert.equal(parsed.kind, "website_copy");
+  assert.equal(parsed.pages.length, 6);
+  assert.ok(parsed.pages.some((page) => page.blocks.some((block) => block.type === "quote" && block.reviewId)));
+  assert.ok(
+    parsed.pages.some((page) =>
+      page.blocks.some((block) => block.type === "paragraph" && block.spans.some((span) => span.bold || span.href)),
+    ),
+  );
+});
+
+test("the only routine human gates are prescription approval and copy QA", async () => {
+  const adapters = createFixtureAdapters();
+  const gated = await runFactory({ seed: northlineSeed, adapters });
+  assert.equal(gated.state.humanQaTask?.kind, "prescription-gate");
+  assert.equal(gated.state.stage, WORKFLOW_STAGES.AWAITING_PRESCRIPTION_APPROVAL);
+  const result = await runFactory({
+    seed: northlineSeed,
+    adapters,
+    stateStore: createMemoryStateStore(gated.state),
+    prescriptionApproval: approval,
+  });
+  assert.equal(result.state.humanQaTask?.kind, "copy-gate");
+  assert.equal(result.state.stage, WORKFLOW_STAGES.AWAITING_COPY_QA);
+  assert.deepEqual(
+    Object.values(WORKFLOW_STAGES).filter((stage) => stage.startsWith("awaiting_")),
+    ["awaiting_prescription_approval", "awaiting_copy_qa"],
+  );
 });

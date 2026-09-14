@@ -11,13 +11,13 @@ import { sha256Json } from "../handoff/fingerprint.js";
 import { APPROVED_PLAN_VERSION } from "../handoff/types.js";
 import { createUnconfiguredPublisher, type GoogleDocsPublisher, type PublicationReceipt } from "../publisher/index.js";
 import { loadWritingAssignmentGuides } from "../writer-guides/loader.js";
-import { buildWritingPackage, type WritingPackagePages } from "../writing-package/index.js";
+import { WRITER_INTERNAL_ORDER } from "../writing-package/types.js";
+import { assertWritingPackage, buildPrescriptionReviewPackage } from "../writing-package/index.js";
 import { discoverAssignment } from "./assignment.js";
 import { MechanicalValidationError, validateWritingMechanics } from "./mechanical.js";
 import { loadActiveRuntimeInstructions } from "./runtime-docs.js";
 import {
   WORKFLOW_STAGES,
-  WRITING_INTERNAL_PHASES,
   cloneState,
   createInitialState,
   createMemoryStateStore,
@@ -34,7 +34,6 @@ import {
   type FactoryAdapters,
   type FactoryRunInput,
   type FactoryRunResult,
-  type WriterPhaseInput,
 } from "./types.js";
 
 function repoRootOption(repoRoot: string | undefined): { readonly repoRoot: string } | undefined {
@@ -49,38 +48,22 @@ function publisherOf(adapters: FactoryAdapters): GoogleDocsPublisher {
   return adapters.publisher ?? createUnconfiguredPublisher();
 }
 
-function prescriptionTask(state: WorkflowState): HumanQaTask {
-  return {
-    kind: "prescription-gate",
-    prospectId: state.prospectId,
-    runId: state.runId,
-    title: `${state.seed.business.name} — Page plan — Human review`,
-    materials: [
-      "proposed page plan (jobs, routes, intents, scope)",
-      "research evidence packet",
-      "advisory research and prescription recommendations",
-    ],
-  };
-}
-
-function copyTask(state: WorkflowState, publication: PublicationReceipt | null): HumanQaTask {
+function gateTask(
+  state: WorkflowState,
+  kind: HumanQaTask["kind"],
+  title: string,
+  materials: readonly string[],
+  publication: PublicationReceipt | null,
+): HumanQaTask {
   const task: HumanQaTask = {
-    kind: "copy-gate",
+    kind,
     prospectId: state.prospectId,
     runId: state.runId,
-    title: `${state.seed.business.name} — Website Copy — Human Review`,
-    materials: [
-      "complete writing package",
-      "approved route map",
-      "owner-facing Strategy Overview",
-    ],
+    title,
+    materials,
   };
   if (publication?.url) {
-    return {
-      ...task,
-      googleDocUrl: publication.url,
-      publicationStatus: publication.status,
-    };
+    return { ...task, googleDocUrl: publication.url, publicationStatus: publication.status };
   }
   if (publication) {
     return {
@@ -90,6 +73,30 @@ function copyTask(state: WorkflowState, publication: PublicationReceipt | null):
     };
   }
   return task;
+}
+
+function prescriptionTask(state: WorkflowState, publication: PublicationReceipt | null): HumanQaTask {
+  return gateTask(
+    state,
+    "prescription-gate",
+    `${state.seed.business.name} — Prescription — Human Review`,
+    [
+      "proposed page plan (jobs, routes, intents, scope) — for approval",
+      "original evidence references — context, not approval",
+      "research and prescription recommendations — advisory, not approvals",
+    ],
+    publication,
+  );
+}
+
+function copyTask(state: WorkflowState, publication: PublicationReceipt | null): HumanQaTask {
+  return gateTask(
+    state,
+    "copy-gate",
+    `${state.seed.business.name} — Website Copy — Human Review`,
+    ["complete writing package", "approved route map", "owner-facing Strategy Overview"],
+    publication,
+  );
 }
 
 async function persist(store: StateStore, state: WorkflowState): Promise<void> {
@@ -170,48 +177,89 @@ async function runPrescription(state: WorkflowState, input: FactoryRunInput, now
     );
   }
   state.prescription = proposed;
-  state.humanQaTask = prescriptionTask(state);
+  state.prescriptionPackage = buildPrescriptionReviewPackage({
+    research,
+    prescription: proposed,
+    runId: state.runId,
+  });
   markEvent(state, { type: "stage-complete", stage: WORKFLOW_STAGES.PRESCRIPTION }, now);
+  state.stage = WORKFLOW_STAGES.PUBLISHING_PRESCRIPTION;
+}
+
+async function publishStoredPackage(
+  state: WorkflowState,
+  publisher: GoogleDocsPublisher,
+  pkg: import("../writing-package/types.js").WritingPackage,
+  now: Date,
+  stage: typeof WORKFLOW_STAGES.PUBLISHING_PRESCRIPTION | typeof WORKFLOW_STAGES.PUBLISHING,
+): Promise<PublicationReceipt> {
+  const publication = await publisher.publishReviewPackage(pkg);
+  if (publication.packageIdentity.packageHash !== pkg.packageHash) {
+    throw new WorkflowError("PUBLICATION_PACKAGE_MISMATCH", "Publisher receipt does not match the preserved package");
+  }
+  markEvent(
+    state,
+    {
+      type: publication.status === "published" ? "published" : "publication-recorded",
+      stage,
+      detail: `${pkg.kind}:${publication.status}`,
+    },
+    now,
+  );
+  return publication;
+}
+
+async function runPublishingPrescription(state: WorkflowState, input: FactoryRunInput, now: Date): Promise<void> {
+  if (!state.prescriptionPackage) {
+    throw new WorkflowError("PRESCRIPTION_PACKAGE_REQUIRED", "Prescription review package is missing");
+  }
+  const publication = await publishStoredPackage(
+    state,
+    publisherOf(input.adapters),
+    state.prescriptionPackage,
+    now,
+    WORKFLOW_STAGES.PUBLISHING_PRESCRIPTION,
+  );
+  state.prescriptionPublication = publication;
+  state.humanQaTask = prescriptionTask(state, publication);
   state.stage = WORKFLOW_STAGES.AWAITING_PRESCRIPTION_APPROVAL;
   state.status = "awaiting_human";
 }
 
 async function runWriting(state: WorkflowState, input: FactoryRunInput, now: Date): Promise<void> {
+  if (state.writerInvocations > 0 || state.writingPackage) {
+    throw new WorkflowError("WRITER_RERUN_FORBIDDEN", "The writing assignment already ran; do not start a second writer run");
+  }
   const plan = requirePlan(state);
   const context = writerContextFromApprovedPlan(plan);
   const guides = loadWritingAssignmentGuides(repoRootOption(input.repoRoot));
   const examples = loadApprovedExampleLibrary(repoRootOption(input.repoRoot));
   const instructions = loadActiveRuntimeInstructions(repoRootOption(input.repoRoot));
-  const priorWork: Partial<WritingPackagePages> = {};
-
-  for (const phase of WRITING_INTERNAL_PHASES) {
-    const phaseInput: WriterPhaseInput = {
-      phase,
-      context,
-      guides,
-      examples,
-      instructions: instructions.writer,
-      authority: instructions.authority,
-      priorWork: cloneState(priorWork),
-    };
-    const output = await input.adapters.writer.write(phaseInput);
-    if (output.phase !== phase) {
-      throw new WorkflowError("WRITER_PHASE_MISMATCH", `Writer returned ${output.phase} during ${phase}`);
-    }
-    Object.assign(priorWork, output.pages);
-    state.writingPhasesCompleted.push(phase);
-    markEvent(state, { type: "writing-phase", stage: WORKFLOW_STAGES.WRITING, detail: phase }, now);
-  }
-
-  const pages = priorWork as WritingPackagePages;
-  state.writingPackage = buildWritingPackage({
-    prospectId: state.prospectId,
+  const writerRunId = `${state.runId}:writer`;
+  state.writerRunId = writerRunId;
+  const pkg = await input.adapters.writer.writeCompletePackage({
+    writerRunId,
     runId: state.runId,
-    businessName: plan.evidence.business.name,
-    routeMap: plan.decisions.routeMap,
-    pages,
+    context,
+    guides,
+    examples,
+    instructions: instructions.writer,
+    authority: instructions.authority,
+    internalOrder: WRITER_INTERNAL_ORDER,
   });
-  markEvent(state, { type: "stage-complete", stage: WORKFLOW_STAGES.WRITING }, now);
+  state.writerInvocations += 1;
+  if (state.writerInvocations !== 1) {
+    throw new WorkflowError("WRITER_RERUN_FORBIDDEN", "The writing assignment must be one writer run");
+  }
+  assertWritingPackage(pkg);
+  if (pkg.kind !== "website_copy") {
+    throw new WorkflowError("WRITING_PACKAGE_KIND", "Writer must return a website_copy package");
+  }
+  if (pkg.prospectId !== state.prospectId || pkg.runId !== state.runId) {
+    throw new WorkflowError("PROSPECT_MISMATCH", "Writing package identity does not match the run");
+  }
+  state.writingPackage = pkg;
+  markEvent(state, { type: "stage-complete", stage: WORKFLOW_STAGES.WRITING, detail: writerRunId }, now);
   state.stage = WORKFLOW_STAGES.MECHANICAL_VALIDATION;
 }
 
@@ -236,21 +284,15 @@ function runMechanical(state: WorkflowState, now: Date): void {
 
 async function runPublishing(state: WorkflowState, input: FactoryRunInput, now: Date): Promise<void> {
   const pkg = requirePackage(state);
-  const publication = await publisherOf(input.adapters).publishWritingPackage(pkg);
-  if (publication.packageIdentity.packageHash !== pkg.packageHash) {
-    throw new WorkflowError("PUBLICATION_PACKAGE_MISMATCH", "Publisher receipt does not match the preserved writing package");
-  }
+  const publication = await publishStoredPackage(
+    state,
+    publisherOf(input.adapters),
+    pkg,
+    now,
+    WORKFLOW_STAGES.PUBLISHING,
+  );
   state.publication = publication;
   state.humanQaTask = copyTask(state, publication);
-  markEvent(
-    state,
-    {
-      type: publication.status === "published" ? "published" : "publication-recorded",
-      stage: WORKFLOW_STAGES.PUBLISHING,
-      detail: publication.status,
-    },
-    now,
-  );
   state.stage = WORKFLOW_STAGES.AWAITING_COPY_QA;
   state.status = "awaiting_human";
 }
@@ -282,10 +324,7 @@ export async function runFactory(input: FactoryRunInput): Promise<FactoryRunResu
     await persist(store, state);
   }
 
-  while (
-    state.stage !== WORKFLOW_STAGES.COMPLETE &&
-    state.stage !== WORKFLOW_STAGES.AWAITING_COPY_QA
-  ) {
+  while (state.stage !== WORKFLOW_STAGES.COMPLETE && state.stage !== WORKFLOW_STAGES.AWAITING_COPY_QA) {
     if (state.stage === WORKFLOW_STAGES.RESEARCH) {
       await runResearch(state, input, now);
       await persist(store, state);
@@ -293,6 +332,11 @@ export async function runFactory(input: FactoryRunInput): Promise<FactoryRunResu
     }
     if (state.stage === WORKFLOW_STAGES.PRESCRIPTION) {
       await runPrescription(state, input, now);
+      await persist(store, state);
+      continue;
+    }
+    if (state.stage === WORKFLOW_STAGES.PUBLISHING_PRESCRIPTION) {
+      await runPublishingPrescription(state, input, now);
       await persist(store, state);
       continue;
     }
@@ -328,7 +372,7 @@ export async function runFactory(input: FactoryRunInput): Promise<FactoryRunResu
 }
 
 /**
- * Retry Google Docs publication without invoking the writer.
+ * Retry Google Docs publication without rerunning research, prescription, or the writer.
  */
 export async function retryPublication(input: {
   readonly stateStore: StateStore;
@@ -337,31 +381,56 @@ export async function retryPublication(input: {
 }): Promise<FactoryRunResult> {
   const state = await readState(input.stateStore);
   if (!state) throw new WorkflowError("STATE_REQUIRED", "No workflow state to publish");
+  const writerInvocations = state.writerInvocations;
+  const now = input.now ?? new Date();
+
+  if (
+    state.stage === WORKFLOW_STAGES.AWAITING_PRESCRIPTION_APPROVAL ||
+    state.stage === WORKFLOW_STAGES.PUBLISHING_PRESCRIPTION
+  ) {
+    if (!state.prescriptionPackage) {
+      throw new WorkflowError("PRESCRIPTION_PACKAGE_REQUIRED", "Cannot publish before the prescription package exists");
+    }
+    if (state.research === null || state.prescription === null) {
+      throw new WorkflowError("PRESCRIPTION_REQUIRED", "Prescription retry cannot invent a plan");
+    }
+    const publication = await publishStoredPackage(
+      state,
+      input.publisher,
+      state.prescriptionPackage,
+      now,
+      WORKFLOW_STAGES.PUBLISHING_PRESCRIPTION,
+    );
+    if (state.writerInvocations !== writerInvocations) {
+      throw new WorkflowError("WRITER_RERUN_FORBIDDEN", "Publication retry must not rerun the writer");
+    }
+    state.prescriptionPublication = publication;
+    state.humanQaTask = prescriptionTask(state, publication);
+    markEvent(state, { type: "publication-retry", stage: WORKFLOW_STAGES.PUBLISHING_PRESCRIPTION, detail: publication.status }, now);
+    state.stage = WORKFLOW_STAGES.AWAITING_PRESCRIPTION_APPROVAL;
+    state.status = "awaiting_human";
+    await writeState(input.stateStore, state);
+    return stop(state);
+  }
+
+  if (state.stage !== WORKFLOW_STAGES.AWAITING_COPY_QA && state.stage !== WORKFLOW_STAGES.PUBLISHING) {
+    throw new WorkflowError("PUBLICATION_RETRY_NOT_READY", "Publication retry is only valid at an existing human gate");
+  }
   if (!state.writingPackage) {
     throw new WorkflowError("WRITING_PACKAGE_REQUIRED", "Cannot publish before the writing package exists");
   }
-  if (
-    state.stage !== WORKFLOW_STAGES.AWAITING_COPY_QA &&
-    state.stage !== WORKFLOW_STAGES.PUBLISHING
-  ) {
-    throw new WorkflowError(
-      "PUBLICATION_RETRY_NOT_READY",
-      "Publication retry is only valid after writing is complete",
-    );
-  }
-  const writerCallsBefore = state.writingPhasesCompleted.length;
-  const now = input.now ?? new Date();
-  state.stage = WORKFLOW_STAGES.PUBLISHING;
-  state.status = "active";
-  const publication = await input.publisher.publishWritingPackage(state.writingPackage);
-  if (publication.packageIdentity.packageHash !== state.writingPackage.packageHash) {
-    throw new WorkflowError("PUBLICATION_PACKAGE_MISMATCH", "Publisher receipt does not match the preserved writing package");
+  const publication = await publishStoredPackage(
+    state,
+    input.publisher,
+    state.writingPackage,
+    now,
+    WORKFLOW_STAGES.PUBLISHING,
+  );
+  if (state.writerInvocations !== writerInvocations) {
+    throw new WorkflowError("WRITER_RERUN_FORBIDDEN", "Publication retry must not rerun the writer");
   }
   state.publication = publication;
   state.humanQaTask = copyTask(state, publication);
-  if (state.writingPhasesCompleted.length !== writerCallsBefore) {
-    throw new WorkflowError("WRITER_RERUN_FORBIDDEN", "Publication retry must not rerun the writer");
-  }
   markEvent(state, { type: "publication-retry", stage: WORKFLOW_STAGES.PUBLISHING, detail: publication.status }, now);
   state.stage = WORKFLOW_STAGES.AWAITING_COPY_QA;
   state.status = "awaiting_human";

@@ -20,4 +20,10 @@ Do not put recommended reviews, suggested angles, or section ideas into the page
 
 ## Human gate
 
-Stop after the proposed plan. The existing prescription human gate is the only routine stop before writing. Do not add another gate. Do not start writing.
+Stop after the proposed plan. The existing prescription human gate is the only routine stop before writing. The workflow publishes that same gate through `publishReviewPackage()` so the reviewer receives a Doc link when Google is configured. Publication failure preserves the proposed plan and is retryable without rerunning research or prescription. Do not add another gate. Do not start writing.
+
+The prescription Doc distinguishes:
+
+1. Proposed decisions the human is approving (jobs, routes, intents, scope, reserved decisions)
+2. Original evidence references as context, not as approvals
+3. Research and prescription recommendations as advisory ideas, not approvals

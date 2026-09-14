@@ -8,8 +8,8 @@ import type {
 } from "../handoff/types.js";
 import type { GoogleDocsPublisher } from "../publisher/types.js";
 import type { WritingAssignmentGuideSet } from "../writer-guides/loader.js";
-import type { WritingPackagePages } from "../writing-package/types.js";
-import type { WritingInternalPhase } from "./state.js";
+import type { WritingPackage } from "../writing-package/types.js";
+import type { WriterInternalPhase } from "../writing-package/types.js";
 
 export interface ResearchAssignment {
   readonly seed: ProspectSeed;
@@ -23,19 +23,21 @@ export interface PrescriptionAssignment {
   readonly authority: string;
 }
 
-export interface WriterPhaseInput {
-  readonly phase: WritingInternalPhase;
+/**
+ * One writer run. Internal order is recommended sequencing inside this call,
+ * not three independent model sessions.
+ */
+export interface WriterAssignment {
+  /** Durable writer session. Created once for the complete package. */
+  readonly writerRunId: string;
+  /** Factory run id recorded on the writing package. */
+  readonly runId: string;
   readonly context: WriterContext;
   readonly guides: WritingAssignmentGuideSet;
   readonly examples: ExampleLibraryReceipt;
   readonly instructions: string;
   readonly authority: string;
-  readonly priorWork: Partial<WritingPackagePages>;
-}
-
-export interface WriterPhaseOutput {
-  readonly phase: WritingInternalPhase;
-  readonly pages: Partial<WritingPackagePages>;
+  readonly internalOrder: readonly WriterInternalPhase[];
 }
 
 export interface ResearchAdapter {
@@ -50,14 +52,10 @@ export interface PrescriptionAdapter {
   prescribe(input: PrescriptionAssignment): Promise<ProposedPrescription>;
 }
 
-/**
- * One selected writer model. Internal phases belong to this assignment.
- * There is no second-model editor, judge, scorer, or approval gate.
- */
 export interface WriterAdapter {
   readonly provider: string;
   readonly model: string;
-  write(input: WriterPhaseInput): Promise<WriterPhaseOutput>;
+  writeCompletePackage(assignment: WriterAssignment): Promise<WritingPackage>;
 }
 
 export interface FactoryAdapters {

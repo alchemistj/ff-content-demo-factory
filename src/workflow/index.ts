@@ -16,7 +16,6 @@ export {
 export {
   WORKFLOW_STAGES,
   WORKFLOW_VERSION,
-  WRITING_INTERNAL_PHASES,
   cloneState,
   createInitialState,
   createMemoryStateStore,
@@ -30,7 +29,6 @@ export {
   type WorkflowModels,
   type WorkflowStage,
   type WorkflowState,
-  type WritingInternalPhase,
 } from "./state.js";
 export {
   WorkflowError,
@@ -38,10 +36,9 @@ export {
   type FactoryRunInput,
   type FactoryRunResult,
   type PrescriptionAdapter,
+  type PrescriptionAssignment,
   type ResearchAdapter,
   type ResearchAssignment,
-  type PrescriptionAssignment,
   type WriterAdapter,
-  type WriterPhaseInput,
-  type WriterPhaseOutput,
+  type WriterAssignment,
 } from "./types.js";

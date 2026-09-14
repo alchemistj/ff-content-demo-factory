@@ -1,4 +1,5 @@
 import type { ApprovedDecisions, EvidencePacket, ReviewRecord, WriterContext } from "../handoff/types.js";
+import { isFaithfulReviewExcerpt, plainTextFromSpans } from "../writing-package/excerpt.js";
 import type { WritingPackage } from "../writing-package/types.js";
 import { assertWritingPackage } from "../writing-package/validate.js";
 
@@ -12,21 +13,15 @@ export class MechanicalValidationError extends Error {
   }
 }
 
-function quotedReviewIds(pkg: WritingPackage): readonly { reviewId: string; text: string; attribution: string }[] {
+function quotedReviews(pkg: WritingPackage): readonly { reviewId: string; text: string; attribution: string }[] {
   const quotes: { reviewId: string; text: string; attribution: string }[] = [];
-  const pages = [
-    pkg.pages.homepage,
-    ...pkg.pages.servicePages,
-    pkg.pages.contact,
-    pkg.pages.strategyOverview,
-  ];
-  for (const page of pages) {
+  for (const page of pkg.pages) {
     for (const block of page.blocks) {
-      if (block.quote?.reviewId) {
+      if (block.type === "quote" && block.reviewId) {
         quotes.push({
-          reviewId: block.quote.reviewId,
-          text: block.quote.text,
-          attribution: block.quote.attribution,
+          reviewId: block.reviewId,
+          text: plainTextFromSpans(block.spans),
+          attribution: block.attribution,
         });
       }
     }
@@ -46,14 +41,13 @@ export function validateWritingMechanics(input: {
     failures.push(error instanceof Error ? error.message : String(error));
   }
 
+  if (input.pkg.kind !== "website_copy") {
+    failures.push("copy-gate mechanical validation requires a website_copy package");
+  }
+
   const expectedRoutes = new Map(input.decisions.routeMap.map((entry) => [entry.pageId, entry.route]));
-  const actualPages = [
-    input.pkg.pages.homepage,
-    ...input.pkg.pages.servicePages,
-    input.pkg.pages.contact,
-    input.pkg.pages.strategyOverview,
-  ];
-  for (const page of actualPages) {
+  for (const page of input.pkg.pages) {
+    if (page.role === "header_footer" || page.role === "prescription") continue;
     const expected = expectedRoutes.get(page.pageId);
     if (!expected) {
       failures.push(`writing package includes unapproved pageId ${page.pageId}`);
@@ -65,20 +59,20 @@ export function validateWritingMechanics(input: {
   }
   for (const entry of input.decisions.routeMap) {
     if (entry.pageType === "chrome") continue;
-    if (!actualPages.some((page) => page.pageId === entry.pageId)) {
+    if (!input.pkg.pages.some((page) => page.pageId === entry.pageId)) {
       failures.push(`approved page ${entry.pageId} is missing from the writing package`);
     }
   }
 
   const reviews = new Map<string, ReviewRecord>(input.evidence.reviews.map((review) => [review.id, review]));
-  for (const quote of quotedReviewIds(input.pkg)) {
+  for (const quote of quotedReviews(input.pkg)) {
     const source = reviews.get(quote.reviewId);
     if (!source) {
       failures.push(`quoted review ${quote.reviewId} is not in the source inventory`);
       continue;
     }
-    if (source.exactText !== quote.text) {
-      failures.push(`quoted review ${quote.reviewId} must use exact source text`);
+    if (!isFaithfulReviewExcerpt(source.exactText, quote.text)) {
+      failures.push(`quoted review ${quote.reviewId} must be the exact source text or a contiguous excerpt`);
     }
     if (source.reviewer !== quote.attribution) {
       failures.push(`quoted review ${quote.reviewId} must keep source attribution`);
@@ -88,17 +82,12 @@ export function validateWritingMechanics(input: {
   if (failures.length) throw new MechanicalValidationError(failures);
 }
 
-/**
- * Taste and evidence selection are writer/human work. Mechanical validation
- * does not score copy, force recommended reviews, or compare against a taste
- * catalog.
- */
 export function mechanicalScope(): readonly string[] {
   return [
     "package structure",
     "approved route map",
     "audience distinction",
-    "quoted-review source fidelity",
+    "quoted-review source fidelity (exact or contiguous excerpt)",
     "package hash integrity",
   ];
 }
