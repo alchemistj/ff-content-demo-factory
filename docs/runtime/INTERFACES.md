@@ -41,7 +41,7 @@ Validator/hash: `parseWritingPackage`, `assertWritingPackage`, `hashWritingPacka
 
 Package export: `ff-content-demo-factory/writing-package`.
 
-**PR #31 must import this module** and delete `src/google-docs/writing-package.ts`. Do not keep `schemaVersion: "1.0.0"`, optional `runId`, optional quote attribution, or a second hash function. Differences this contract adds on purpose:
+The Google Docs publisher imports this module. There is no second writing-package schema. Differences this contract keeps on purpose:
 
 - `schemaVersion` is `writing-package/v1`
 - `audience` is required on every page (`business` or `owner`)
@@ -58,17 +58,19 @@ Both existing human gates call that method:
 
 If Google is missing or publication fails, the package is preserved and the error is recorded on the human-QA task. `retryPublication()` republishes the stored package for the current gate and does not rerun research, prescription, or the writer.
 
-This lane ships `createUnconfiguredPublisher()` so the workflow can finish without the google-docs implementation.
+This lane ships `createConfiguredPublisher()` (Google Docs, setup-required when Gmail OAuth is missing) and `createUnconfiguredPublisher()` for explicit tests.
 
 ## Writer run
 
 The factory calls `writer.writeCompletePackage()` **once**. The adapter receives full `WriterContext`, guides, examples, and `internalOrder`. Returning the complete website-copy package is required. Internal order is recommended sequencing inside that one run, not three stateless model calls.
 
-## Examples lane
+## Examples
 
-The writer assignment loads `examples/approved-copy/` when present. If that directory is missing, discovery reports `pending-examples-lane` and writing still proceeds with canonical guides plus the prospect packet.
+The writer assignment loads the PR #29 approved-copy catalog. Primary pages are the exact twelve Springfield examples. README, SOURCE_MANIFEST, and historical material are not writer examples. Shared `_chrome.md` files are supplemental header/footer references for the site/chrome phase.
 
-Canonical guide files remain at `docs/writer-guides/`. This lane adds a complete writing-assignment loader; it does not rewrite the craft guides.
+Canonical modules: `src/approved-copy/` (source of truth) and `src/examples/` (workflow adapter). Package export: `ff-content-demo-factory/approved-copy`.
+
+Canonical guide files remain at `docs/writer-guides/`. The complete writing-assignment loader feeds one writer run; Writer 1/2/3 ids remain internal phase helpers.
 
 ## Human gates
 

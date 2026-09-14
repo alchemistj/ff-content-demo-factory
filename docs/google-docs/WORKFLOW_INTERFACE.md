@@ -2,7 +2,7 @@
 
 The Google Docs lane **consumes** the canonical writing-package contract owned by the workflow lane (PR #30). It does not define a second package schema.
 
-Canonical module: `src/writing-package/` at PR #30 head `2b2ce4e75edd37d96e2b898efeddd125464c3329`.
+Canonical module: `src/writing-package/` (`schemaVersion: "writing-package/v1"`).
 
 Package exports:
 

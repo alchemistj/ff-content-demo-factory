@@ -31,6 +31,8 @@ SRA's twice-a-year visits check:
 You get the findings in plain language, whether that's “you're good for another season” or “this flashing needs attention now.” SRA doesn't manufacture urgency to sell a job. An honest “not yet” costs nothing and earns the next call.
 
 > Nickolas P visited my home for an inspection. No, I didn't spend any money. But he could have made something up to get me to use his services. He didn't. He was totally honest with me. Actually complemented my roof and home. He was personable and kind. I don't normally give reviews to a business or person whom services I have not utilized, but this is an exception. Because of his professionalism and all that I stated above, I had to write this. I WILL be using their services in the future. Great job!
+>
+> — Brandon T.
 
 ## Built for Ozarks Weather
 
@@ -41,6 +43,8 @@ Spring and early summer bring the hail and straight-line wind this region is kno
 None of that is unusual. It's the normal wear pattern for this part of Missouri — and exactly why a roof that looked fine at move-in can be quietly aging faster than you'd expect.
 
 > Josh Buyher came out and checked our roof and to my surprise told us our roof was in good shape. While he was up there he noticed our gutters were dirty, so he took it upon himself to clean them. As someone who is 8 months pregnant and already has my hands full, his willingness to not take advantage of me and go above and beyond will not be forgotten. Glad to know there are good people and businesses still left in this crazy world. Thank you, Josh!
+>
+> — Emily W.
 
 ## Repair, Replace or Maintain?
 

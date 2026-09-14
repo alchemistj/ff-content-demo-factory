@@ -2,7 +2,8 @@
  * Closed catalog of Springfield reference pages.
  *
  * Runtime authority is the Markdown in examples/approved-copy/. This module
- * does not change the writer-guide assignment path used by Writer 1/2/3.
+ * is the only example-library source of truth. Writer 1/2/3 ids remain
+ * internal phase helpers inside one writing assignment.
  */
 
 import {

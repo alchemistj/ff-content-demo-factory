@@ -18,7 +18,7 @@ const assignment = discoverAssignment();
 
 - Canonical writer guides from `docs/writer-guides/`
 - The complete writing-assignment guide set (service, homepage/contact/chrome, and Strategy Overview as recommended order inside **one writer run**)
-- The approved example library when the examples lane has landed at `examples/approved-copy/`
+- The approved example library at `examples/approved-copy/` (twelve Springfield pages from the approved-copy catalog; `_chrome.md` is supplemental)
 - The current run, if one exists
 - These runtime instructions
 
@@ -46,4 +46,4 @@ The writer model is configurable. This workflow belongs to Fluid Frame, not to o
 
 Workflow code, handoff contracts, assignment discovery, and these runtime instructions.
 
-Canonical craft-guide wording and the Springfield example library belong to the positive-examples lane. Google OAuth and native Doc publication belong to the Google Docs lane.
+Canonical craft-guide wording and the Springfield example library live in `docs/writer-guides/` and `examples/approved-copy/`. Google OAuth and native Doc publication live in `src/google-docs/`. This file remains the assignment entry point for the integrated factory.

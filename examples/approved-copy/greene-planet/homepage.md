@@ -24,6 +24,8 @@ Greene Planet is Springfield’s leading mold remediation and removal specialist
 From mold inspection and testing to remediation and independent testing when appropriate, we handle the entire process from start to finish.
 
 > David and the team at Greene Planet Mold Removal were exceptional in handling our home's mold remediation after significant water damage from a pipe burst. Even when the mold damage turned out to be more extensive than anticipated, they honored their initial quote, which speaks volumes about their integrity.
+>
+> — JD M.
 
 Don’t Guess About Mold. Talk to David.
 
@@ -60,6 +62,8 @@ Our remediation services include:
 - damage restoration
 
 > Entire experience was quick and easy! We had three rooms contaminated with mold, and now they're completely mold free. If you need someone to remove mold, you will not be disappointed with Greene Planet Mold Removal.
+>
+> — Trisha H.
 
 [Call (417) 415-4357 for A Mold Remediation Quote](tel:4174154357)
 

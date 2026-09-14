@@ -4,4 +4,5 @@ export {
   type ExampleLibraryReceipt,
   type ExampleLibraryStatus,
   type ExamplePage,
+  type ExamplePageRole,
 } from "./catalog.js";

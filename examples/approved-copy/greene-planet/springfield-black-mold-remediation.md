@@ -26,6 +26,8 @@ The most common reason Springfield homeowners call Greene Planet is because a pr
 The second most common shortcut is skipped containment. Mold containment is what keeps the remediation process itself from spreading spores into clean areas of the home. Without it, disturbing mold in a basement can push spores into rooms that had no problem before the job started. Greene Planet sets up full containment before touching anything, every time.
 
 > David Maldonado and his team did a fantastic job for us. Everyone was very professional. They explained everything to us in detail on the work needed on our home. The workers went beyond the call of duty for us.
+>
+> — Ruth Ann D.
 
 ## Not Every Dark Mold Is Stachybotrys — But Every Dark Mold Needs Assessment
 
@@ -34,6 +36,8 @@ Finding dark mold in your Springfield basement, crawl space, or attic is alarmin
 In Springfield homes, that "why" is almost always moisture. Water pushes through foundation walls, humidity rises out of crawl spaces, and condensation collects in attics when ventilation is off. The mold problem is rarely random — it is usually the visible sign of a moisture issue the house has been carrying for a while. The mold problem isn't a surprise when you understand the geology underneath it.
 
 > David and the team at Greene Planet Mold Removal were exceptional in handling our home's mold remediation after significant water damage from a pipe burst. Even when the mold damage turned out to be more extensive than anticipated, they honored their initial quote.
+>
+> — JD M.
 
 ## The Full Remediation Protocol
 
@@ -58,13 +62,13 @@ Owner-Operated · No Shortcuts
 
 ## Related Mold Services
 
-[Basement And Crawl Space Mold RemediationLearn more](/springfield/basement-crawl-space-mold-remediation/)
+[Basement And Crawl Space Mold Remediation](/springfield/basement-crawl-space-mold-remediation/)
 
-[Attic Mold RemediationLearn more](/springfield/attic-mold-remediation/)
+[Attic Mold Remediation](/springfield/attic-mold-remediation/)
 
-[Mold Inspection & TestingLearn more](/springfield/mold-inspection-testing/)
+[Mold Inspection & Testing](/springfield/mold-inspection-testing/)
 
-[Dry Ice BlastingLearn more](/springfield/dry-ice-blasting/)
+[Dry Ice Blasting](/springfield/dry-ice-blasting/)
 
 ## Frequently Asked Questions
 
@@ -78,9 +82,13 @@ It means the moisture source was never fixed. Surface cleaning without identifyi
 
 ### Why does Greene Planet use independent clearance testing instead of clearing jobs in-house?
 
+When the same company performs the remediation and clears the job, they're grading their own work — a built-in conflict of interest. Post-remediation verification by an independent environmental hygienist means the clearance results belong to you, not the contractor. If the numbers aren't back to normal background levels, the job isn't done. Greene Planet doesn't self-clear any job, and recommends independent IEP testing at both the inspection and clearance stages.
+
 > Outstanding work and customer service! David was beyond exceptional to work with. He was very detailed explaining the issues and there every step of the way to ensure the issues were resolved.
 >
-> — ★★★★★4.8 Stars · 80+ Google Reviews
+> — Claudia S.
+
+★★★★★ 4.8 Stars · 80+ Google Reviews
 
 ## Talk to David Directly
 

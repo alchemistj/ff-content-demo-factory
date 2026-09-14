@@ -156,7 +156,7 @@ test("Greene Planet homepage is root, not /springfield/", () => {
   assert.equal(home.markdown.includes("# Springfield\n"), false);
 });
 
-test("writer-guide assignment path still loads Writer 1/2/3 independently of examples", () => {
+test("writer-guide assignment path still loads internal phases independently of examples", () => {
   const writer1 = loadWriterStageGuides("writer1");
   const writer2 = loadWriterStageGuides("writer2");
   const writer3 = loadWriterStageGuides("writer3");
@@ -169,4 +169,33 @@ test("writer-guide assignment path still loads Writer 1/2/3 independently of exa
   assert.match(writer1.guides[0]?.markdown ?? "", /What the writer should accomplish/);
   const index = readFileSync(join(defaultRepoRoot(), "docs/writer-guides/README.md"), "utf8");
   assert.match(index, /examples\/approved-copy/);
+});
+
+const EXPECTED_REVIEW_ATTRIBUTIONS: Readonly<Record<string, readonly string[]>> = {
+  "wd-home": ["Bryan VanDyne", "Cindy Keener"],
+  "wd-glass": ["Ron Smith", "Brandon Meyers"],
+  "wd-replace": ["John Bacon", "Nina Fazio"],
+  "wd-contact": ["Amber Campbell", "Jim Gray"],
+  "sra-home": ["Kelly C.", "Adam R.", "Vicky C.", "Marcy V."],
+  "sra-replace": ["Marsha B.", "Randy B."],
+  "sra-maint": ["Brandon T.", "Emily W."],
+  "gp-home": ["JD M.", "Trisha H."],
+  "gp-inspect": ["Chris", "Byron H."],
+  "gp-black": ["Ruth Ann D.", "JD M.", "Claudia S."],
+};
+
+test("review quotations keep displayed customer names, not aggregate rating UI", () => {
+  const catalog = loadApprovedCopyCatalog();
+  for (const example of catalog.examples) {
+    assert.equal(/[A-Za-z0-9]Learn more/.test(example.markdown), false, `${example.id} smashed Learn more`);
+    const attributionLines = example.markdown.match(/^> — .+$/gm) ?? [];
+    for (const line of attributionLines) {
+      assert.equal(/★/.test(line), false, `${example.id} used stars as attribution: ${line}`);
+      assert.equal(/Google Reviews/i.test(line), false, `${example.id} used review-count UI as attribution: ${line}`);
+    }
+    const expected = EXPECTED_REVIEW_ATTRIBUTIONS[example.id] ?? [];
+    for (const name of expected) {
+      assert.match(example.markdown, new RegExp(`^> — ${name.replace(".", "\\.")}$`, "m"), `${example.id} missing ${name}`);
+    }
+  }
 });

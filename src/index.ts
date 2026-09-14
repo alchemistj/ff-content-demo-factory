@@ -60,6 +60,7 @@ export {
 export {
   GOOGLE_PUBLISHER_UNCONFIGURED,
   createUnconfiguredPublisher,
+  createConfiguredPublisher,
   type GoogleDocsPublisher,
   type PublicationReceipt,
 } from "./publisher/index.js";

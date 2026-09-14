@@ -54,6 +54,8 @@ Single-pane breakage, impact damage, stress cracks — we cut replacement glass 
 Springfield's humidity, storms, and older homes can be hard on window frames. Soft wood, swelling, peeling paint, or gaps around the frame usually point to moisture damage — and we'll tell you whether it can be repaired or if replacement makes more sense.
 
 > Unbelievable service from these people. I was representing a buyer on a home purchase and we needed a window repaired for a VA loan to close on time. The day of closing, the window didn't make it onto the delivery truck. We were scrambling at the last minute and thought our closing would surely get delayed. Instead, the tech drove all the way to Tulsa, OK and back to get the window and still managed to get the repair done in time for us to close. This kind of customer service is nearly impossible to find these days. THANK YOU for the amazing service, I'm excited to use you again in the future!
+>
+> — Bryan VanDyne
 
 One call gets you a straight answer on repair vs. replacement.
 
@@ -63,23 +65,23 @@ One call gets you a straight answer on repair vs. replacement.
 
 One call covers everything window, door, glass, and screen for Springfield homes.
 
-[Replacement Window InstallationFull-frame and pocket replacement using vinyl, fiberglass, and wood — measured and installed by Springfield's inspector-led team.](/springfield/replacement-window-installation/)
+[Replacement Window Installation Full-frame and pocket replacement using vinyl, fiberglass, and wood — measured and installed by Springfield's inspector-led team.](/springfield/replacement-window-installation/)
 
-[Vinyl Window InstallationLow-maintenance, energy-efficient vinyl windows from brands we vet for quality and warranty.](/springfield/vinyl-window-installation/)
+[Vinyl Window Installation Low-maintenance, energy-efficient vinyl windows from brands we vet for quality and warranty.](/springfield/vinyl-window-installation/)
 
 ### Energy-Efficient Window Installation
 
 Low-E glass, argon fills, and thermally broken frames built for Springfield's climate and utility bills.
 
-[New Construction Window InstallationSupply and install for new builds and major renovations — flashed, sealed, and inspected for the long haul.](/springfield/new-construction-window-installation/)
+[New Construction Window Installation Supply and install for new builds and major renovations — flashed, sealed, and inspected for the long haul.](/springfield/new-construction-window-installation/)
 
 ### Storm Windows
 
 Performance upgrade when full replacement isn't the right call — interior and exterior storm options.
 
-[Window Screen ReplacementRe-screen, re-frame, or fully replace torn or sagging window screens — including custom sizes.](/springfield/window-screen-replacement/)
+[Window Screen Replacement Re-screen, re-frame, or fully replace torn or sagging window screens — including custom sizes.](/springfield/window-screen-replacement/)
 
-[Exterior Door Supplier & InstallerFull-opening exterior door installs — entry, patio, and storm doors in fiberglass, steel, and wood, fitted and sealed by Springfield's inspector-led team.](/springfield/entry-door-installation/)
+[Exterior Door Supplier & Installer Full-opening exterior door installs — entry, patio, and storm doors in fiberglass, steel, and wood, fitted and sealed by Springfield's inspector-led team.](/springfield/entry-door-installation/)
 
 ### Sliding Door Installation
 
@@ -88,6 +90,8 @@ Patio and sliding glass doors installed for a tight seal and smooth glide — bu
 We also repair everything on this list. Broken glass, a stuck window, a leaking sliding door, a drafty entry door — if it's cracked, stuck, or not sealing right, call or text us and we'll get it fixed.
 
 > For years I have been trying to find someone to fix or even come to my house to tell me what was wrong with my window. YEARS! I called Window Dudes and I had an appointment the following week. David took minutes to figure out what was wrong and had my window fixed in 30 minutes. I am so thankful for what David was able to do and will always use Window Dudes. I highly recommend them. 100 Stars is what I give you guys! Thank you.
+>
+> — Cindy Keener
 
 [Contact Window Dudes](/contact/)
 

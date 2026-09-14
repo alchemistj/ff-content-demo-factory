@@ -142,6 +142,7 @@ class PageExtractor(HTMLParser):
         self.in_cite = False
         self.cite_buf: list[str] = []
         self.quote_attr: str | None = None
+        self.in_blockquote = 0
         self.capture_root = False
 
     def handle_startendtag(self, tag: str, attrs_list: list[tuple[str, str | None]]) -> None:
@@ -169,10 +170,10 @@ class PageExtractor(HTMLParser):
         if tag == "form":
             self.skip += 1
             return
+        if tag == "footer" and self._review_footer_context():
+            # Review cards use <footer> for customer attribution, not site chrome.
+            return
         if tag in SKIP_CHROME_TAGS or looks_like_chrome(attrs):
-            # Review cards use <footer> for attribution; keep those.
-            if tag == "footer" and self.cur_kind == "quote":
-                return
             self.chrome += 1
             return
         if self.skip or self.chrome:
@@ -211,6 +212,7 @@ class PageExtractor(HTMLParser):
             return
         if tag == "blockquote":
             self.flush_block()
+            self.in_blockquote += 1
             self.start_block("quote")
             self.quote_attr = None
             return
@@ -252,7 +254,7 @@ class PageExtractor(HTMLParser):
                 self.stack.pop()
             return
         if tag in SKIP_CHROME_TAGS:
-            if tag == "footer" and self.cur_kind == "quote":
+            if tag == "footer" and self._review_footer_context(include_self=True):
                 if self.stack and self.stack[-1] == tag:
                     self.stack.pop()
                 return
@@ -270,7 +272,7 @@ class PageExtractor(HTMLParser):
             self.in_main = False
             return
         if tag == "a" and self.link_href is not None:
-            label = normalize_space("".join(self.link_buf))
+            label = clean_link_label("".join(self.link_buf))
             href = self.link_href
             self.link_href = None
             self.link_buf = []
@@ -302,9 +304,12 @@ class PageExtractor(HTMLParser):
             return
         if tag in {"p", "li", "h1", "h2", "h3", "h4", "h5", "h6", "blockquote"}:
             self.flush_block()
-            if tag == "blockquote" and self.quote_attr:
-                self.blocks.append(("attribution", self.quote_attr))
-                self.quote_attr = None
+            if tag == "blockquote":
+                if self.in_blockquote:
+                    self.in_blockquote -= 1
+                if self.quote_attr:
+                    self.blocks.append(("attribution", self.quote_attr))
+                    self.quote_attr = None
             return
         if tag == "span" and self.cur_kind == "eyebrow":
             self.flush_block()
@@ -319,6 +324,10 @@ class PageExtractor(HTMLParser):
             return
         if self.link_href is not None:
             formatted = self.apply_fmt(data)
+            if self.link_buf and formatted and not formatted.startswith((" ", "\n")) and not self.link_buf[-1].endswith((" ", "\n", "[", "]")):
+                prev = self.link_buf[-1]
+                if prev and prev[-1].isalnum() and formatted[0].isalpha():
+                    self.link_buf.append(" ")
             self.link_buf.append(formatted)
             return
         self.add_text(self.apply_fmt(data))
@@ -392,6 +401,49 @@ class PageExtractor(HTMLParser):
             return
         self.blocks.append((kind, text))
 
+    def _review_footer_context(self, include_self: bool = False) -> bool:
+        parents = self.stack if include_self else self.stack[:-1]
+        if self.in_blockquote or self.cur_kind == "quote":
+            return True
+        return any(parent in {"blockquote", "article", "li", "figure"} for parent in parents)
+
+
+def is_aggregate_rating_ui(text: str) -> bool:
+    compact = normalize_space(text)
+    compact = compact.lstrip("+−-— ").strip()
+    if re.search(r"\d+(?:\.\d+)?\s*stars?\b", compact, re.I) and re.search(r"\breviews?\b", compact, re.I):
+        return True
+    if re.match(r"★+\s*\d+(?:\.\d+)?\s*stars?\b", compact, re.I):
+        return True
+    return False
+
+
+def clean_link_label(raw: str) -> str:
+    label = normalize_space(raw)
+    label = re.sub(r"(?i)(?<=\S)Learn more$", " Learn more", label)
+    label = re.sub(r"(?i)\s*Learn more\s*$", "", label).strip()
+    return normalize_space(label)
+
+
+def clean_attribution(text: str) -> str | None:
+    text = normalize_space(text)
+    text = re.sub(r"^[-*]\s+", "", text)
+    text = text.lstrip("—–- ").strip()
+    if not text or is_aggregate_rating_ui(text):
+        return None
+    return text
+
+
+def looks_like_reviewer_name(text: str) -> bool:
+    cleaned = clean_attribution(text)
+    if not cleaned:
+        return False
+    if cleaned.endswith(".") and not re.search(r"\b[A-Z]\.$", cleaned):
+        return False
+    if cleaned.startswith("[") or "http" in cleaned:
+        return False
+    return 1 <= len(cleaned.split()) <= 6
+
 
 def collapse_inline(text: str) -> str:
     text = text.replace("\xa0", " ")
@@ -420,28 +472,67 @@ def blocks_to_markdown(blocks: list[tuple[str, str]], faq: dict[str, str]) -> st
             key = text.casefold()
             next_kind = blocks[i + 1][0] if i + 1 < len(blocks) else None
             next_text = blocks[i + 1][1] if i + 1 < len(blocks) else ""
-            if key in faq and (
-                next_kind not in {"p", "li", "quote"}
-                or (next_kind == "p" and next_text in {"+", "−", "-", "—"})
-            ):
-                lines.append(faq[key])
-                lines.append("")
-                emitted_faq.add(key)
+            if key in faq:
+                answer = faq[key]
+                nxt = re.sub(r"^[-*]\s+", "", next_text).strip() if next_text else ""
+                already = next_kind in {"p", "li"} and nxt and (
+                    nxt == answer or answer.startswith(nxt[:80]) or nxt.startswith(answer[:80])
+                )
+                if not already:
+                    lines.append(answer)
+                    lines.append("")
+                    emitted_faq.add(key)
         elif kind == "p":
-            extra = paragraph_lines(text, faq, emitted_faq)
-            if extra:
-                lines.extend(extra)
-                # Skip immediately following duplicate JSON-LD answer paragraphs.
-                answer = faq.get(text.rstrip("−+-").strip().casefold(), "")
-                while answer and i + 1 < len(blocks) and blocks[i + 1][0] == "p":
-                    nxt = blocks[i + 1][1].strip()
-                    if nxt == answer or answer.startswith(nxt[:80]) or nxt.startswith(answer[:80]):
+            quote_like = text.startswith("“") or text.startswith('"') or (
+                text.startswith("★") and ("“" in text or '"' in text)
+            )
+            if quote_like:
+                quote = re.sub(r"^★+\s*", "", text).strip().strip("“”\"")
+                attr = None
+                if i + 1 < len(blocks) and blocks[i + 1][0] in {"p", "li", "attribution"}:
+                    maybe = blocks[i + 1][1]
+                    if blocks[i + 1][0] == "attribution" or looks_like_reviewer_name(maybe):
+                        attr = clean_attribution(maybe)
                         i += 1
-                        continue
-                    break
+                rendered = as_quote(quote, attr)
+                if rendered.strip():
+                    lines.append(rendered)
+                    lines.append("")
+            else:
+                extra = paragraph_lines(text, faq, emitted_faq)
+                if extra:
+                    lines.extend(extra)
+                    # Skip immediately following duplicate JSON-LD answer paragraphs.
+                    answer = faq.get(text.rstrip("−+-").strip().casefold(), "")
+                    while answer and i + 1 < len(blocks) and blocks[i + 1][0] == "p":
+                        nxt = blocks[i + 1][1].strip()
+                        if nxt == answer or answer.startswith(nxt[:80]) or nxt.startswith(answer[:80]):
+                            i += 1
+                            continue
+                        break
         elif kind == "li":
             while i < len(blocks) and blocks[i][0] == "li":
-                lines.extend(list_item_lines(blocks[i][1], faq))
+                item = blocks[i][1]
+                prefix, _, rest = item.partition(" ")
+                body = rest.strip()
+                quote_like = body.startswith("“") or body.startswith('"') or (
+                    "“" in body and body.lstrip("★ ").startswith("“")
+                )
+                if quote_like:
+                    quote = re.sub(r"^★+\s*", "", body)
+                    attr = None
+                    if i + 1 < len(blocks) and blocks[i + 1][0] in {"li", "p", "attribution"}:
+                        maybe = blocks[i + 1][1]
+                        if blocks[i + 1][0] == "attribution" or looks_like_reviewer_name(maybe):
+                            attr = clean_attribution(maybe)
+                            i += 1
+                    rendered = as_quote(quote, attr)
+                    if rendered.strip():
+                        lines.append(rendered)
+                        lines.append("")
+                    i += 1
+                    continue
+                lines.extend(list_item_lines(item, faq))
                 i += 1
             lines.append("")
             continue
@@ -455,13 +546,11 @@ def blocks_to_markdown(blocks: list[tuple[str, str]], faq: dict[str, str]) -> st
                 continue
             attr = None
             if i + 1 < len(blocks) and blocks[i + 1][0] == "attribution":
-                attr = blocks[i + 1][1]
+                attr = clean_attribution(blocks[i + 1][1])
                 i += 1
-            elif i + 1 < len(blocks) and blocks[i + 1][0] == "p" and len(blocks[i + 1][1].split()) <= 6:
-                maybe = blocks[i + 1][1]
-                if not maybe.endswith(".") and not maybe.startswith("[") and "http" not in maybe:
-                    attr = maybe
-                    i += 1
+            elif i + 1 < len(blocks) and blocks[i + 1][0] in {"p", "li"} and looks_like_reviewer_name(blocks[i + 1][1]):
+                attr = clean_attribution(blocks[i + 1][1])
+                i += 1
             lines.append(as_quote(quote, attr))
             lines.append("")
         elif kind == "attribution":
@@ -513,10 +602,13 @@ def list_item_lines(text: str, faq: dict[str, str]) -> list[str]:
 
 def as_quote(text: str, attr: str | None = None) -> str:
     text = text.strip().strip("“”\"")
+    if is_aggregate_rating_ui(text):
+        return ""
     if " — " in text[-90:]:
         body, maybe = text.rsplit(" — ", 1)
-        if len(maybe.split()) <= 6 and attr is None:
+        if looks_like_reviewer_name(maybe) and attr is None:
             text, attr = body, maybe
+    attr = clean_attribution(attr) if attr else None
     lines = [f"> {part}" if part else ">" for part in text.split("\n")]
     if attr:
         lines.append(">")
@@ -556,13 +648,20 @@ def separate_adjacent_links(md: str) -> str:
     return re.sub(r"(\]\([^)]+\))(?=[A-Za-z\[])", r"\1\n\n", md)
 
 
+def polish_extracted_markdown(md: str) -> str:
+    """Fix smashed star-rating UI and leftover accordion controls."""
+    md = re.sub(r"^[+−\-]+\s*(★)", r"\1", md, flags=re.M)
+    md = re.sub(r"(★+)(\d)", r"\1 \2", md)
+    return md
+
+
 def extract_page(raw: str) -> tuple[str, str]:
     faq = faq_map(raw)
     parser = PageExtractor(faq)
     parser.feed(raw)
     parser.flush_block()
-    page_md = separate_adjacent_links(blocks_to_markdown(parser.blocks, faq))
-    chrome_md = separate_adjacent_links(extract_chrome(raw))
+    page_md = polish_extracted_markdown(separate_adjacent_links(blocks_to_markdown(parser.blocks, faq)))
+    chrome_md = polish_extracted_markdown(separate_adjacent_links(extract_chrome(raw)))
     return page_md, chrome_md
 
 

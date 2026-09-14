@@ -24,6 +24,8 @@ Something's off — a smell, a spot that keeps coming back, a vague flag from a 
 A visual scan from across the room doesn't tell you what's happening inside a wall or ceiling cavity. When something doesn't add up — a stain, a smell, a soft spot — David opens it up. Seeing the actual framing and sheathing is the only way to know whether moisture has reached the structure or stopped short of it. That distinction changes everything. Surface staining can often be cleaned, but moisture that's reached structural materials usually requires a different plan. Instead of recommending work based on assumptions, David shows you exactly what he finds so you can make an informed decision.
 
 > I was pretty anxious about the initial inspection, but David immediately put me at ease. He took the time to check my house, and laid out a price for the crawlspace and all that.
+>
+> — Chris
 
 ## When Lab Testing Makes the Difference
 
@@ -34,6 +36,8 @@ A dark spot could be common, manageable mold, or it could be something that need
 Crawl space access isn't an upgrade — it's part of every inspection David does in Springfield. That's where moisture problems accumulate for years without anyone upstairs knowing. Foundation walls, floor joists, and framing all get checked before our job is finished. It's also where plumbing leaks, standing water, damaged vapor barriers, and condensation issues often hide long before they become visible inside the home. Skipping the crawl space means skipping one of the most common sources of mold and moisture problems in Southwest Missouri.
 
 > David from Greene Planet inspected my basement interior wall for signs of mold. He was very knowledgeable and professional. He answered all my questions and even showed me pictures of what to look for.
+>
+> — Byron H.
 
 ## Real Estate Closing or Water Damage Last Night? Don't Wait
 
@@ -58,11 +62,11 @@ Prefer to pick a time now? Request a free inspection in Springfield online. Davi
 
 ## Related Mold Services
 
-[Certified Mold InspectionsLearn more](/springfield/certified-mold-inspections/)
+[Certified Mold Inspections](/springfield/certified-mold-inspections/)
 
-[Black Mold RemediationLearn more](/springfield/black-mold-remediation/)
+[Black Mold Remediation](/springfield/black-mold-remediation/)
 
-[Dry Ice BlastingLearn more](/springfield/dry-ice-blasting/)
+[Dry Ice Blasting](/springfield/dry-ice-blasting/)
 
 ## Frequently Asked Questions
 
@@ -76,7 +80,9 @@ Yes. Mold testing compares indoor spore counts against outdoor baseline readings
 
 ### What is mold prevention services — is that something Greene Planet offers?
 
-+★★★★★4.8 Stars · 80+ Google Reviews
+Mold prevention is the moisture control work that keeps remediation from being a temporary fix. After any mold removal job, Greene Planet addresses the moisture source that allowed mold to grow — vapor barrier installation, crawl space encapsulation, drainage correction, or foundation crack sealing depending on what's driving the moisture. Preventing recurrence is part of how Greene Planet closes jobs, not a separate service sold afterward.
+
+★★★★★ 4.8 Stars · 80+ Google Reviews
 
 ## Talk to David Directly
 

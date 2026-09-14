@@ -32,29 +32,29 @@ SRA also works with multiple lenders so homeowners can [explore financing](/spri
 
 Browse SRA's public Springfield service pages, or call for a free inspection on any roof or gutter issue.
 
-[Free Roofing EstimateStart with a clear estimate and practical next steps for your roofing project.](/springfield/free-roofing-estimate/)
+[Free Roofing Estimate Start with a clear estimate and practical next steps for your roofing project.](/springfield/free-roofing-estimate/)
 
-[Roof ReplacementComplete roof replacement for worn-out, damaged, or storm-compromised roofing systems.](/springfield/roof-replacement/)
+[Roof Replacement Complete roof replacement for worn-out, damaged, or storm-compromised roofing systems.](/springfield/roof-replacement/)
 
-[Metal Roofing SystemsCompare metal roofing systems for long-term protection in Missouri weather.](/springfield/metal-roofing/)
+[Metal Roofing Systems Compare metal roofing systems for long-term protection in Missouri weather.](/springfield/metal-roofing/)
 
-[Standing Seam Metal RoofingDurable concealed-fastener metal roofing with long-term protection and a clean finish.](/springfield/standing-seam-metal-roof/)
+[Standing Seam Metal Roofing Durable concealed-fastener metal roofing with long-term protection and a clean finish.](/springfield/standing-seam-metal-roof/)
 
-[Asphalt Shingle RoofingCertified installs with Class 4 impact-resistant options built for Ozark weather.](/springfield/asphalt-shingle-roofing/)
+[Asphalt Shingle Roofing Certified installs with Class 4 impact-resistant options built for Ozark weather.](/springfield/asphalt-shingle-roofing/)
 
-[Roof InspectionDocumented findings and a clear explanation of what your roof needs.](/springfield/roof-inspection/)
+[Roof Inspection Documented findings and a clear explanation of what your roof needs.](/springfield/roof-inspection/)
 
-[Roof RepairA straight repair-vs-replace answer after a documented inspection — not an automatic new roof.](/springfield/roof-repair/)
+[Roof Repair A straight repair-vs-replace answer after a documented inspection — not an automatic new roof.](/springfield/roof-repair/)
 
-[Gutter InstallationGutter systems designed to move water away from your roof, siding, and foundation.](/springfield/gutter-installation/)
+[Gutter Installation Gutter systems designed to move water away from your roof, siding, and foundation.](/springfield/gutter-installation/)
 
-[Gutter RepairPractical repair-or-replace guidance for leaking, sagging, or detached gutters.](/springfield/gutter-repair/)
+[Gutter Repair Practical repair-or-replace guidance for leaking, sagging, or detached gutters.](/springfield/gutter-repair/)
 
-[Gutter CleaningDebris removal and drainage checks to help keep water moving away from the property.](/springfield/gutter-cleaning/)
+[Gutter Cleaning Debris removal and drainage checks to help keep water moving away from the property.](/springfield/gutter-cleaning/)
 
-[Gutter InspectionA documented check of gutter condition, slope, fasteners, downspouts, and drainage.](/springfield/gutter-inspection/)
+[Gutter Inspection A documented check of gutter condition, slope, fasteners, downspouts, and drainage.](/springfield/gutter-inspection/)
 
-[Roof FinancingCompare available financing options for out-of-pocket roof work. Terms depend on the project, lender, and credit approval.](/springfield/roof-financing/)
+[Roof Financing Compare available financing options for out-of-pocket roof work. Terms depend on the project, lender, and credit approval.](/springfield/roof-financing/)
 
 ## After the Storm, Who Stays?
 
@@ -65,10 +65,16 @@ SRA is based at 1340 S Barnes Ave, a few miles from most of the Springfield roof
 Customers describe the difference in plain language:
 
 > We would absolutely hire SRA Roofing & Gutter again and recommend them to all our family and friends. Our project manager (Anthony and Nicholas) kept us informed from the initial quote to the final inspection. The initial quote was accurate with no added fees, and they keep us updated through the process. SRA insurance specialist (Chris) worked with our insurance adjustor on getting the additional storm damaged gutters replaced. SRA office staff (Bailey, Meagan and Alexceia)) were always polite, professional and directed our question to the appropriate team member. The roofing crew did a great job on the installation of the new roof, and the gutter team (Damian's team) was A+. Our new roof, skylights and gutters look fantastic.
+>
+> — Kelly C.
 
 > Working with SRA was an easy and comfortable experience from start to finish. I worked with Nicholas and Megan throughout the project. They kept me up to speed on what was going on and what to expect. They walked me through the process of working with my insurance company to get the roof checked and claim filed. They were both professional, kind, and easy to talk with. If I had to start over today on getting a new roof, I wouldn’t hesitate to use SRA again.
+>
+> — Adam R.
 
 > The roofing crew was respectful. They moved my plants out of the way so not to damage them. All debris was cleaned up after thoroughly and with care. The ceiling to our bathroom caved in and they tarped it within a couple of hours and even worked with insurance to get the repair costs covered for us even though they don't handle the interior repairs themselves. I can't reccomend them enough!
+>
+> — Vicky C.
 
 One customer put it plainly:
 

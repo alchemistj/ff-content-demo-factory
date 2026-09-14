@@ -15,6 +15,8 @@ Once replacement is the right call, we walk you through material and financing o
 SRA is certified by GAF, Owens Corning, CertainTeed, and IKO, and has installed more than 20,000 roofs, completing 500+ every year — backed by a local, permanent team that's still here after the crew leaves, for workmanship questions or anything else that comes up.
 
 > I was very hesitant to let any of the people who stopped by my home have access to my roof. After all, I knew they would tell me what they wanted me to know! However, Mark was different. He was honest, believable, and seemed genuinely interested in my home, circumstances and what he could do if I needed and wanted it done. He didn’t over promise and under deliver. He told me the challenges, why and what he thought his team could do. Together they walked me through every step of the process and kept me updated on each activity. As a skeptical person, I was more than pleased with the results. They did exactly what they said, when they said, and with great results including clean up!
+>
+> — Marsha B.
 
 ## Choosing a Material
 
@@ -75,6 +77,8 @@ Decking is soft, discolored, or sagging in more than a small area
 A new roof is a major investment, but you may have more ways to pay for it than you think. SRA works with multiple lenders so you can [compare available financing options](/springfield/roof-financing/) and find one that makes sense for your project and budget. Approval, rates, and terms depend on the lender, project, and applicant.
 
 > I just had my roof replaced by SRA roofing. It was not only a great job done on the roof, but the whole process was handled wonderfully. I had a two month delay due to the insurance company, but my contact with SRA, Nathan Condron, was never out of touch. Nathan was always available, willingly and able to help. He was phenomenal to work with! In all of the dealings with SRA I have nothing but good things to say. The finished roof looks fantastic and I feel that they will be there in the future should anything arise. Highly recommended!
+>
+> — Randy B.
 
 ## Storm and Insurance
 

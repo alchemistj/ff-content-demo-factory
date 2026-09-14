@@ -67,7 +67,7 @@ test("loadCanonicalGuideCatalog reads exact on-disk Markdown and hashes determin
   const second = loadCanonicalGuideCatalog();
   assert.equal(first.guides.length, 6);
   assert.equal(first.manifestHash, second.manifestHash);
-  assert.equal(first.manifestHash, "0a1e5b3d8289efed2e9a2a9d31cec82c04d75de087a8e30fae5254dc6a221d05");
+  assert.equal(first.manifestHash, "3e530584535c04bd3f68e7e431e82781a27de93b7717e0356fb93d40f1a1f085");
   assert.deepEqual(
     Object.fromEntries(first.guides.map((guide) => [guide.id, guide.sha256])),
     {
@@ -76,7 +76,7 @@ test("loadCanonicalGuideCatalog reads exact on-disk Markdown and hashes determin
       homepage: "0c3292f44a0e855844f5c91d89f451398a86c91acfe3acf38cc61d6bf57721ea",
       contact: "0673e245abdb9c6c8cd91ba3f47ff92d05305ffdfdf3a5ade3b8c19a8dd5a57c",
       headerFooter: "9f6192c2e126581a3ce1aefcf5d632c00583fe9bb8201aafe81ec3c14d8fa5f8",
-      readme: "cd058eeb9601746ba13eeae1efac4e195f2ad6d97acb6b1bc36f90ed80b7a726",
+      readme: "34d572bd5602d6a03e8d207439f0c4a49cd3218c6568341d8d23f529af355383",
     },
   );
   assert.match(first.manifestHash, /^[0-9a-f]{64}$/);

@@ -304,17 +304,50 @@ test("runtime instructions are loaded as the active path, not historical prospec
   assert.doesNotMatch(docs.writer, /intelligent QA repair/);
 });
 
-test("example library becomes available when the examples lane directory exists", () => {
+test("example library is the twelve-page approved-copy catalog, not a recursive markdown dump", () => {
+  const examples = loadApprovedExampleLibrary();
+  assert.equal(examples.status, "available");
+  assert.equal(examples.pages.length, 12);
+  assert.equal(examples.pages.every((page) => page.role === "primary"), true);
+  assert.equal(
+    examples.pages.some((page) => /README|SOURCE_MANIFEST|_not-authority|_chrome\.md/i.test(page.relativePath)),
+    false,
+  );
+  assert.deepEqual(
+    examples.pages.map((page) => page.id),
+    [
+      "wd-home",
+      "wd-glass",
+      "wd-replace",
+      "wd-contact",
+      "sra-home",
+      "sra-replace",
+      "sra-maint",
+      "sra-contact",
+      "gp-home",
+      "gp-inspect",
+      "gp-black",
+      "gp-contact",
+    ],
+  );
+  assert.equal(examples.chromePages.length, 3);
+  assert.equal(examples.chromePages.every((page) => page.role === "chrome"), true);
+  assert.equal(examples.chromePages.every((page) => page.relativePath.endsWith("_chrome.md")), true);
+});
+
+test("stray markdown under examples/approved-copy does not become the writer corpus", () => {
   const root = mkdtempSync(join(tmpdir(), "ff-examples-"));
   try {
     mkdirSync(join(root, "examples/approved-copy/window-dudes"), { recursive: true });
+    writeFileSync(join(root, "examples/approved-copy/README.md"), "# Manifest, not a craft page\n");
     writeFileSync(
       join(root, "examples/approved-copy/window-dudes/springfield-home.md"),
       "# Springfield homepage\n\nCraft reference only.\n",
     );
     const examples = loadApprovedExampleLibrary({ repoRoot: root });
-    assert.equal(examples.status, "available");
-    assert.equal(examples.pages.length, 1);
+    assert.equal(examples.status, "pending-examples-lane");
+    assert.equal(examples.available, false);
+    assert.equal(examples.pages.length, 0);
   } finally {
     rmSync(root, { recursive: true, force: true });
   }

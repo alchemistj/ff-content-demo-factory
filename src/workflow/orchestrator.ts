@@ -9,7 +9,7 @@ import {
 } from "../handoff/index.js";
 import { sha256Json } from "../handoff/fingerprint.js";
 import { APPROVED_PLAN_VERSION } from "../handoff/types.js";
-import { createUnconfiguredPublisher, type GoogleDocsPublisher, type PublicationReceipt } from "../publisher/index.js";
+import { createConfiguredPublisher, type GoogleDocsPublisher, type PublicationReceipt } from "../publisher/index.js";
 import { loadWritingAssignmentGuides } from "../writer-guides/loader.js";
 import { WRITER_INTERNAL_ORDER } from "../writing-package/types.js";
 import { assertWritingPackage, buildPrescriptionReviewPackage } from "../writing-package/index.js";
@@ -45,7 +45,7 @@ function clock(input: FactoryRunInput): Date {
 }
 
 function publisherOf(adapters: FactoryAdapters): GoogleDocsPublisher {
-  return adapters.publisher ?? createUnconfiguredPublisher();
+  return adapters.publisher ?? createConfiguredPublisher();
 }
 
 function gateTask(

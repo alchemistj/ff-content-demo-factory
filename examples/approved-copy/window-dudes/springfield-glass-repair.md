@@ -26,6 +26,8 @@ Glass failure in Springfield follows familiar patterns: failed insulated glass s
 - Clean installation, sealing, and jobsite cleanup
 
 > Had a window pane crack due to house settling. Dave from Window Dudes came out, got the pane measured, and went above and beyond in making the replacement pane look like the one he was replacing. We really appreciate the care he took in making sure we were completely satisfied!
+>
+> — Ron Smith
 
 ## Why Glass Fails in Springfield — and What to Do About It
 
@@ -65,6 +67,8 @@ Tempered and safety glass for doors, low windows, and other code-required locati
 [Call (417) 862-9003](tel:+14178629003)
 
 > Had these guys do a bunch of small panes and glazing. Lots of IG units over the years. Great service and prices! Communication was far better than I expected, compared to companies I've used in other towns.
+>
+> — Brandon Meyers
 
 ## How to Prevent Repeat Glass Problems
 

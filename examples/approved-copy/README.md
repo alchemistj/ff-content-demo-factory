@@ -15,7 +15,7 @@ Different pages here reach the same quality by different routes. Do not outline 
 
 The lengths you see are the lengths of these sites. They are demonstrations, not ceilings or required word counts.
 
-## The set
+The twelve rows below are the primary craft corpus. Shared `_chrome.md` files are supplemental header/footer examples for the site/chrome phase; they are not a thirteenth page.
 
 See [SOURCE_MANIFEST.md](SOURCE_MANIFEST.md) for repository, SHA, and capture URLs.
 

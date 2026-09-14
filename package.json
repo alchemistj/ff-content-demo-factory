@@ -22,7 +22,7 @@
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "check": "tsc -p tsconfig.json --noEmit",
-    "test": "node --import tsx --test src/writer-guides/*.test.ts src/approved-copy/*.test.ts src/handoff/*.test.ts src/workflow/*.test.ts src/writing-package/*.test.ts src/google-docs/*.test.ts src/integration/*.test.ts",
+    "test": "node --import tsx --test src/writer-guides/*.test.ts src/approved-copy/*.test.ts src/examples/*.test.ts src/handoff/*.test.ts src/workflow/*.test.ts src/writing-package/*.test.ts src/google-docs/*.test.ts src/integration/*.test.ts",
     "test:compiled": "npm run build && node scripts/assert-compiled-writer-guides.mjs",
     "test:all": "npm run check && npm test && npm run test:compiled",
     "writer-guides:receipt": "node --import tsx src/writer-guides/cli.ts",

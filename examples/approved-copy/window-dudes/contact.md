@@ -23,8 +23,12 @@ Google Reviews
 Read recent Google reviews before you call — then reach out when you're ready.
 
 > They went above and beyond. Great communication with the person taking the appointments and also with the installer!
+>
+> — Amber Campbell
 
 > Very satisfied with their product and service. On time with their initial review of problem, gave me a precise proposal, scheduled the date for the actual repairs, and kept me informed as to what to expect. And the field technician was most professional. Definitely a company I would recommend. - JG
+>
+> — Jim Gray
 
 ### Hours
 

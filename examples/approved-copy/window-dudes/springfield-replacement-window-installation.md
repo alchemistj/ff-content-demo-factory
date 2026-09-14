@@ -31,6 +31,8 @@ A lot of window problems do not require new windows. Window Dudes starts by figu
 > We are very pleased with every aspect of doing business with Window Dudes.
 > They will certainly be our first contact choice for any future window replacement needs.
 > .....Below are a few pictures of their finished work.
+>
+> — John Bacon
 
 ## Signs Your Windows Need Full Replacement
 
@@ -70,6 +72,8 @@ A practical choice for wide openings, ranch-style homes, and basement areas.
 [Call (417) 862-9003](tel:+14178629003)
 
 > So easy to do business with Window Dudes. One phone call with Mitzy; an assessment visit from Corey; and the installers, Jacob and Gabe, showed up on time (early, actually) and completed the job in a reasonable length of time. They were professional, courteous, and left the work site clean and free of debris. Replacement windows installed!
+>
+> — Nina Fazio
 
 ## What Happens If We Find Hidden Damage
 

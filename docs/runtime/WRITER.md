@@ -8,7 +8,7 @@ Read, in this order:
 
 1. `ASSIGNMENT.md` and `docs/runtime/AUTHORITY.md`
 2. The current canonical framework in `docs/writer-guides/` (the complete writing-assignment set)
-3. The approved example library when present at `examples/approved-copy/` — craft references whose facts belong to those businesses, not this prospect
+3. The approved example library at `examples/approved-copy/` — the twelve-page Springfield craft catalog. Their facts belong to those businesses, not this prospect. Shared `_chrome.md` files are supplemental header/footer examples.
 4. The approved page plan
 5. The full research evidence and both recommendation sets
 

@@ -7,3 +7,4 @@ export {
   type PublicationStatus,
 } from "./types.js";
 export { createUnconfiguredPublisher } from "./unconfigured.js";
+export { createConfiguredPublisher } from "./configured.js";

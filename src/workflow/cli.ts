@@ -24,6 +24,8 @@ const receipt = {
     available: assignment.examples.available,
     expectedRoot: assignment.examples.expectedRoot,
     pageCount: assignment.examples.pages.length,
+    chromePageCount: assignment.examples.chromePages.length,
+    primaryIds: assignment.examples.pages.map((page) => page.id ?? page.relativePath),
   },
   historicalProspects: assignment.historicalProspects,
   currentRunStage: assignment.currentRun?.stage ?? null,
