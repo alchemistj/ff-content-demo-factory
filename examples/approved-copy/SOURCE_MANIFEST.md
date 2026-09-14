@@ -2,29 +2,51 @@
 
 Provenance for the Springfield reference set. Source repositories were not modified.
 
-This Content Factory GitHub App can clone `alchemistj/ff-content-demo-factory` only. Client site repositories could not be opened, so git SHAs could not be read from those remotes. Window Dudes and Greene Planet examples were taken from the current canonical Vercel-hosted builds of those sites. SRA examples were taken from the current `sra-roofing-website` deployment of the Springfield routes that exist there, which is **not** a substitute for a cloned `reconcile/sra-local-recovery-2026-09-09` checkout.
+Copy authority is the git ref named below. HTTP/Preview may be used only as composition verification (routes, redirects, `ff-source-sha`), never as the sole source of approved copy.
 
-| ID | Business | Page | Route | Repository (inferred from Vercel project) | Branch / ref actually used | SHA | Source location(s) | Limitation |
+## Required refs
+
+| Business | Repository | Branch / ref | Exact SHA to extract |
+| --- | --- | --- | --- |
+| Window Dudes | `alchemistj/window-dudes` | canonical `main` | `5a3019ac2f9c89e588ff03bb916aca3b4476a2e5` |
+| SRA Roofing & Gutters | `alchemistj/sra-roofing-website` | `reconcile/sra-local-recovery-2026-09-09` | `f3f22a8154555cc762593c41947a5f2c6d4a2832` |
+| Greene Planet | `alchemistj/greene-planet-website` | canonical `main` | `f9047501d167bd4977a61012d519ae06e9a169c8` |
+
+SRA SHA is the recovery-branch head named in the architect review. Extract from that commit (or a later head on the same branch if it moves, and record the SHA actually used).
+
+## Page status
+
+| ID | Business | Page | Route | Repository | Branch / ref | SHA | Source files | Status |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| wd-home | Window Dudes | Homepage | `/` | `window-dudes` (Vercel project; production `www.windowdudesllc.com`) | Canonical production deployment of that project (not a separate new-copy branch) | Unavailable — client repo not in this installation | Prerendered `/` HTML (`data-prerender-path="/"`); reviews and FAQ resolved from page HTML and JSON-LD `FAQPage` | Could not clone the GitHub repository. Extracted the rendered canonical homepage. Last-Modified `Thu, 10 Sep 2026 03:44:52 GMT`. |
-| wd-repair | Window Dudes | Springfield window repair | `/` | `window-dudes` | Canonical production deployment | Unavailable — client repo not in this installation | Same prerendered `/` as the homepage. Published Springfield service slugs are `window-supplier`, `replacement-window-installation`, `vinyl-window-installation`, `new-construction-window-installation`, `glass-repair`, `window-screen-replacement`, `entry-door-installation`. Redirect note: `/residential-window-repairs/` → `/` (“Old residential repair page → homepage (stakeholder preference; not glass-repair)”). `/springfield/window-repair/` 404s. | No dedicated window-repair route on the canonical site. This example is the homepage, which is the published Springfield window-repair writing. |
-| wd-replace | Window Dudes | Replacement window installation | `/springfield/replacement-window-installation/` | `window-dudes` | Canonical production deployment | Unavailable — client repo not in this installation | Prerendered service page HTML; FAQ from JSON-LD; customer quotations from page blockquotes | Git SHA unavailable. Last-Modified `Thu, 10 Sep 2026 01:57:49 GMT`. |
-| wd-contact | Window Dudes | Contact | `/contact/` | `window-dudes` | Canonical production deployment | Unavailable — client repo not in this installation | Prerendered `/contact/` HTML; form fields omitted; quotations from page body | Git SHA unavailable. Last-Modified `Thu, 10 Sep 2026 13:15:37 GMT`. Visual form labels were not dumped as prose. |
-| sra-home | SRA Roofing & Gutters | Springfield homepage | `/springfield/` | `sra-roofing-website` (Vercel project; production `www.sraroofs.com`) | **Intended:** `reconcile/sra-local-recovery-2026-09-09`. **Actually used:** current production Springfield homepage on `sra-roofing-website` | Unavailable — client repo not in this installation; recovery-branch head therefore not recorded | Prerendered `/springfield/` HTML; FAQ from JSON-LD `FAQPage`; customer quotations from page body | Could not clone `reconcile/sra-local-recovery-2026-09-09`. Used the deployed Springfield homepage (Last-Modified `Mon, 14 Sep 2026 16:28:16 GMT`). Statewide `/` was not used. |
-| sra-replace | SRA Roofing & Gutters | Springfield roof replacement | `/springfield/roof-replacement/` | `sra-roofing-website` | **Intended:** `reconcile/sra-local-recovery-2026-09-09`. **Actually used:** current production Springfield replacement page | Unavailable — client repo not in this installation | Prerendered `/springfield/roof-replacement/` HTML; FAQ from JSON-LD | Git SHA unavailable. Last-Modified `Thu, 10 Sep 2026 08:03:32 GMT`. |
-| sra-maint | SRA Roofing & Gutters | Roof maintenance / The SRA Advantage | `/springfield/roof-maintenance/` | `sra-roofing-website` | **Intended:** `reconcile/sra-local-recovery-2026-09-09`. **Actually used:** current production Springfield maintenance page | Unavailable — client repo not in this installation | Prerendered `/springfield/roof-maintenance/` HTML; FAQ from JSON-LD | Git SHA unavailable. Last-Modified `Thu, 10 Sep 2026 16:26:11 GMT`. |
-| sra-contact | SRA Roofing & Gutters | Springfield contact | `/springfield/contact/` | `sra-roofing-website` | **Required:** `reconcile/sra-local-recovery-2026-09-09` at its then-current head | Unavailable — client repo not in this installation | None. Deployed `https://www.sraroofs.com/springfield/contact/` and `https://sra-roofing-website.vercel.app/springfield/contact/` return 404 (`Page Not Found │ SRA Roofing & Gutters`, Last-Modified `Thu, 10 Sep 2026 01:56:37 GMT`). | **Incomplete.** Statewide `/contact/` exists and is titled “Contact SRA Roofing & Gutters │ Springfield, MO”; it was not extracted. Recovery-branch preview URLs without the Vercel team slug 404. Do not treat `sra/springfield-contact.md` as a finished example. |
-| gp-home | Greene Planet | Homepage | `/` | `greene-planet-website` (Vercel project; canonical host in metadata `www.greeneplanetco.com`) | Canonical Vercel deployment of that project (not a separate new-copy branch) | Unavailable — client repo not in this installation | SSR HTML for `/` on `https://greene-planet-website.vercel.app/`; FAQ from JSON-LD `FAQPage`; quotations from `.gp-customer-review-card` | Live Duda site at greeneplanetco.com was **not** used. `/springfield/` 308-redirects to `/` on this build. Git SHA unavailable. |
-| gp-inspect | Greene Planet | Mold inspection & testing | `/springfield/mold-inspection-testing/` | `greene-planet-website` | Canonical Vercel deployment | Unavailable — client repo not in this installation | SSR HTML for that route; FAQ from JSON-LD `@graph` `FAQPage` | Git SHA unavailable. Collapsed accordion answers filled from JSON-LD. |
-| gp-black | Greene Planet | Black mold remediation | `/springfield/black-mold-remediation/` | `greene-planet-website` | Canonical Vercel deployment | Unavailable — client repo not in this installation | SSR HTML for that route; FAQ from JSON-LD | Git SHA unavailable. |
-| gp-contact | Greene Planet | Contact | `/springfield/contact/` | `greene-planet-website` | Canonical Vercel deployment | Unavailable — client repo not in this installation | SSR HTML for `/springfield/contact/`; `/contact/` 308-redirects to `/springfield/contact/` | Git SHA unavailable. |
+| wd-home | Window Dudes | Homepage | `/` | `alchemistj/window-dudes` | `main` | `5a3019ac2f9c89e588ff03bb916aca3b4476a2e5` | Not read — clone failed | pending-git |
+| wd-repair | Window Dudes | Springfield window repair | (none) | `alchemistj/window-dudes` | `main` | `5a3019ac2f9c89e588ff03bb916aca3b4476a2e5` | No distinct approved page artifact at this SHA | **corpus-gap** |
+| wd-replace | Window Dudes | Replacement window installation | `/springfield/replacement-window-installation/` | `alchemistj/window-dudes` | `main` | `5a3019ac2f9c89e588ff03bb916aca3b4476a2e5` | Not read — clone failed | pending-git |
+| wd-contact | Window Dudes | Contact | `/contact/` | `alchemistj/window-dudes` | `main` | `5a3019ac2f9c89e588ff03bb916aca3b4476a2e5` | Not read — clone failed | pending-git |
+| sra-home | SRA | Springfield homepage | `/springfield/` | `alchemistj/sra-roofing-website` | `reconcile/sra-local-recovery-2026-09-09` | `f3f22a8154555cc762593c41947a5f2c6d4a2832` | Not read — clone failed | pending-git |
+| sra-replace | SRA | Roof replacement | `/springfield/roof-replacement/` | `alchemistj/sra-roofing-website` | `reconcile/sra-local-recovery-2026-09-09` | `f3f22a8154555cc762593c41947a5f2c6d4a2832` | Not read — clone failed | pending-git |
+| sra-maint | SRA | Roof maintenance / The SRA Advantage | `/springfield/roof-maintenance/` | `alchemistj/sra-roofing-website` | `reconcile/sra-local-recovery-2026-09-09` | `f3f22a8154555cc762593c41947a5f2c6d4a2832` | Not read — clone failed | pending-git |
+| sra-contact | SRA | Springfield contact | `/springfield/contact/` | `alchemistj/sra-roofing-website` | `reconcile/sra-local-recovery-2026-09-09` | `f3f22a8154555cc762593c41947a5f2c6d4a2832` | `src/content/springfieldContact.ts`, `src/content/contact.ts`, `src/pages/SpringfieldContactPage.tsx`, plus shared chrome/review sources as rendered | pending-git (source present on branch; not extracted) |
+| gp-home | Greene Planet | Homepage | `/` | `alchemistj/greene-planet-website` | `main` | `f9047501d167bd4977a61012d519ae06e9a169c8` | Not read — clone failed | pending-git |
+| gp-inspect | Greene Planet | Mold inspection & testing | `/springfield/mold-inspection-testing/` | `alchemistj/greene-planet-website` | `main` | `f9047501d167bd4977a61012d519ae06e9a169c8` | Not read — clone failed | pending-git |
+| gp-black | Greene Planet | Black mold remediation | `/springfield/black-mold-remediation/` | `alchemistj/greene-planet-website` | `main` | `f9047501d167bd4977a61012d519ae06e9a169c8` | Not read — clone failed | pending-git |
+| gp-contact | Greene Planet | Contact | `/springfield/contact/` | `alchemistj/greene-planet-website` | `main` | `f9047501d167bd4977a61012d519ae06e9a169c8` | Not read — clone failed | pending-git |
 
-## Route and branch choices
+None of the twelve slots are marked `complete`. Catalog tests require the eleven non-gap pages to be git-complete; that assertion is supposed to fail until a runtime that can clone the client repositories extracts them.
 
-- **Window Dudes:** Canonical repository state, not a hunted “new copy” branch. Springfield homepage remains `/`. Window-repair writing is that same homepage.
-- **Greene Planet:** Canonical repository state. Homepage is `/`, not `/springfield/`.
-- **SRA:** The reviewed copy branch is `reconcile/sra-local-recovery-2026-09-09`. This agent could not clone that branch. Springfield `/springfield/` pages that exist on the current Vercel deployment were extracted; `/springfield/contact/` was not available there. Statewide `/` and `/contact/` were not used as examples.
+## Window Dudes window repair (corpus gap)
 
-## Extraction method
+Do not count the homepage as the Window Repair example.
 
-Customer-facing Markdown was generated from prerendered HTML (`scripts/extract-approved-copy.py`). Implementation keys, TSX, and duplicated mobile chrome were omitted. Shared header/footer live in each business’s `_chrome.md`. FAQ answers that were collapsed in the accordion were restored from on-page JSON-LD. This is extraction, not a rewrite of the source copy.
+At SHA `5a3019ac2f9c89e588ff03bb916aca3b4476a2e5`, composition checks of the published route table found no dedicated Josh-approved Window Repair / residential-repair page:
+
+- No `/springfield/window-repair/` route.
+- `/residential-window-repairs/` → `/` (old residential repair page folded into the homepage; explicitly not `glass-repair`).
+- `/springfield/glass-repair/` is a different service and was not substituted.
+
+Git history could not be walked because the repository could not be cloned. If an unpublished repair artifact exists only in history, it is still not a distinct approved page at this SHA. Architect/Josh should pick a replacement fourth Window Dudes page.
+
+## Clone access on this SCM agent
+
+`GET /installation/repositories` for this GitHub App token returns only `alchemistj/ff-content-demo-factory`. `git clone` of the three client repositories returns `Repository not found`. A later runtime with read access to those repos should extract from the SHAs above, fill `source files`, set catalog `status: "complete"` with `copyAuthority: "git-repository"`, and leave `wd-repair` as the corpus gap unless a replacement page is chosen.
+
+Client repositories must stay read-only.

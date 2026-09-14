@@ -9,6 +9,7 @@ import {
   type ExampleCatalogEntry,
   type ExampleId,
 } from "./catalog.js";
+import type { ExampleProvenance } from "./provenance.js";
 
 export interface LoadedExample {
   readonly id: ExampleId;
@@ -18,6 +19,10 @@ export interface LoadedExample {
   readonly relativePath: string;
   readonly absolutePath: string;
   readonly status: ExampleCatalogEntry["status"];
+  readonly requiredRepository: string;
+  readonly requiredRef: string;
+  readonly requiredSha: string;
+  readonly provenance: ExampleProvenance | null;
   readonly markdown: string;
   readonly bytes: Buffer;
   readonly sha256: string;
@@ -57,6 +62,10 @@ function readExample(entry: ExampleCatalogEntry, repoRoot: string): LoadedExampl
     relativePath: entry.relativePath,
     absolutePath,
     status: entry.status,
+    requiredRepository: entry.requiredRepository,
+    requiredRef: entry.requiredRef,
+    requiredSha: entry.requiredSha,
+    provenance: entry.provenance,
     markdown,
     bytes,
     sha256: sha256Hex(bytes),

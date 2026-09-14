@@ -12,7 +12,7 @@ The approved prescription names the URL, primary keyword, and job. This guide do
 
 Orient the customer quickly: who does this work, where, and why this company is a fit. Then go deep enough on **this** service that the homepage summary is not enough.
 
-Sibling service pages should own different customer decisions. Do not restating the other service page with swapped nouns.
+Sibling service pages should own different customer decisions. Do not restate the other service page with swapped nouns.
 
 ## What to draw from the examples
 

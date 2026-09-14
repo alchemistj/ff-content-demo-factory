@@ -1,17 +1,14 @@
-# Springfield contact — source not available
+# SRA Springfield contact — pending git extraction
 
-This is not an approved complete example.
+This slot is not an approved example yet. The page source **is present** on the recovery branch. It has not been extracted here because this GitHub App cannot clone `alchemistj/sra-roofing-website`.
 
-**Required source:** SRA repository branch `reconcile/sra-local-recovery-2026-09-09`, route `/springfield/contact/`, at that branch’s then-current head SHA.
+**Required source:** branch `reconcile/sra-local-recovery-2026-09-09` at `f3f22a8154555cc762593c41947a5f2c6d4a2832`, route `/springfield/contact/`.
 
-**What this agent could access**
+Extract from repository files, then compose as the Springfield contact page actually renders:
 
-- This GitHub App can read `alchemistj/ff-content-demo-factory` only. The SRA git repository could not be cloned, so the recovery-branch head SHA could not be recorded.
-- `https://www.sraroofs.com/springfield/contact/` and `https://sra-roofing-website.vercel.app/springfield/contact/` return **404** (`Page Not Found │ SRA Roofing & Gutters`).
-- Vercel git-preview hosts for `sra-roofing-website-git-reconcile-sra-local-recovery-2026-09-09` without the team slug also 404.
+- `src/content/springfieldContact.ts` — Springfield title, H1, intro, service-area, route context
+- `src/content/contact.ts` — shared contact, FAQ, and CTA copy
+- `src/pages/SpringfieldContactPage.tsx` — composition
+- plus the shared chrome and review sources that page actually renders
 
-**What was not used**
-
-Statewide `/contact/` on the same deployment exists and is titled “Contact SRA Roofing & Gutters │ Springfield, MO” (Last-Modified `Mon, 14 Sep 2026 17:20:21 GMT`). It was not extracted. The assignment forbids using SRA’s statewide contact page as the Springfield contact example.
-
-Do not write Springfield contact copy by imitating the statewide contact page, and do not treat this file as finished reference writing.
+Do not use statewide `/contact/` as a substitute. Do not invent Springfield contact copy.

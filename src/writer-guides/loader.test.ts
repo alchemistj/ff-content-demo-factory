@@ -66,12 +66,12 @@ test("loadCanonicalGuideCatalog reads exact on-disk Markdown and hashes determin
   const second = loadCanonicalGuideCatalog();
   assert.equal(first.guides.length, 6);
   assert.equal(first.manifestHash, second.manifestHash);
-  assert.equal(first.manifestHash, "54715877d30d33a9d600a31d659785e4d57f42af67f87e300af9351a60a6a892");
+  assert.equal(first.manifestHash, "fe2ed31e4148922270a8a05b684526968299e08c76d025a8fe2ba9ca62b4bf25");
   assert.deepEqual(
     Object.fromEntries(first.guides.map((guide) => [guide.id, guide.sha256])),
     {
       general: "cd54af56ab604efd62cd12355f3bc64c309d9c9677fd4e0592e23f2a87292abe",
-      service: "c40e07f39fc4d7126063c1b65ed408bbfc6f8aa38e8b948e3c4b47987bfdb5bf",
+      service: "93086cb4d773359a046b22843b98966410505090ce1f78fba800dfa3ce9392e9",
       homepage: "0c3292f44a0e855844f5c91d89f451398a86c91acfe3acf38cc61d6bf57721ea",
       contact: "a4480f190e2744e1350fc03aa9e343c5278e7cd68c2e25386f84cc65b8d59e4d",
       headerFooter: "9f6192c2e126581a3ce1aefcf5d632c00583fe9bb8201aafe81ec3c14d8fa5f8",
@@ -115,7 +115,7 @@ test("Writer 1/2/3 sets load from repo files with no provider and preserve raw M
   assert.equal(writer1.catalogManifestHash, catalog.manifestHash);
   assert.equal(writer2.catalogManifestHash, catalog.manifestHash);
   assert.equal(writer3.catalogManifestHash, catalog.manifestHash);
-  assert.equal(writer1.setHash, "519a7d5a3f2c9fa2702e9780cdf3d23c84897a17c667cd4acfa4c89929531c53");
+  assert.equal(writer1.setHash, "0ec0ffd88c8f1d362155e786cabd48e7ecf2e211282e0bd86ecd037f84ddd4c2");
   assert.equal(writer2.setHash, "bf52fc6ae18185f8660e95c442da979fb20244d563f0062778e4a8a383cbc6ad");
   assert.equal(writer3.setHash, "7b8de953190d9949cd8af92f4b6b8fa7bea6428a401d88bb7f672714b8fca302");
   assert.notEqual(writer1.setHash, writer2.setHash);

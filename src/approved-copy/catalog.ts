@@ -1,9 +1,17 @@
 /**
- * Closed catalog of approved Springfield reference pages.
+ * Closed catalog of Springfield reference pages.
  *
  * Runtime authority is the Markdown in examples/approved-copy/. This module
  * does not change the writer-guide assignment path used by Writer 1/2/3.
+ *
+ * An example may be marked `complete` only when its copy was extracted from
+ * the named git repository ref. HTTP/Preview is not copy authority.
  */
+
+import {
+  REQUIRED_CLIENT_REFS,
+  type ExampleProvenance,
+} from "./provenance.js";
 
 export const APPROVED_COPY_DIR = "examples/approved-copy";
 
@@ -24,7 +32,7 @@ export const EXAMPLE_IDS = Object.freeze([
 
 export type ExampleId = (typeof EXAMPLE_IDS)[number];
 
-export type ExampleStatus = "complete" | "source-unavailable";
+export type ExampleStatus = "complete" | "corpus-gap" | "pending-git";
 
 export interface ExampleCatalogEntry {
   readonly id: ExampleId;
@@ -33,106 +41,126 @@ export interface ExampleCatalogEntry {
   readonly route: string;
   readonly relativePath: string;
   readonly status: ExampleStatus;
+  readonly requiredRepository: string;
+  readonly requiredRef: string;
+  readonly requiredSha: string;
+  readonly provenance: ExampleProvenance | null;
+}
+
+const WD = REQUIRED_CLIENT_REFS["window-dudes"];
+
+function pending(
+  entry: Omit<
+    ExampleCatalogEntry,
+    "status" | "provenance" | "requiredRepository" | "requiredRef" | "requiredSha"
+  > & { business: ExampleCatalogEntry["business"] },
+): ExampleCatalogEntry {
+  const required = REQUIRED_CLIENT_REFS[entry.business];
+  return Object.freeze({
+    ...entry,
+    status: "pending-git",
+    requiredRepository: required.repository,
+    requiredRef: required.ref,
+    requiredSha: required.sha,
+    provenance: null,
+  });
 }
 
 export const EXAMPLE_CATALOG: Readonly<Record<ExampleId, ExampleCatalogEntry>> = Object.freeze({
-  "wd-home": Object.freeze({
+  "wd-home": pending({
     id: "wd-home",
     business: "window-dudes",
     title: "Window Dudes homepage",
     route: "/",
     relativePath: `${APPROVED_COPY_DIR}/window-dudes/homepage.md`,
-    status: "complete",
   }),
   "wd-repair": Object.freeze({
     id: "wd-repair",
     business: "window-dudes",
     title: "Window Dudes Springfield window repair",
-    route: "/",
+    route: "(no distinct approved page artifact at pinned SHA)",
     relativePath: `${APPROVED_COPY_DIR}/window-dudes/springfield-window-repair.md`,
-    status: "complete",
+    status: "corpus-gap",
+    requiredRepository: WD.repository,
+    requiredRef: WD.ref,
+    requiredSha: WD.sha,
+    provenance: null,
   }),
-  "wd-replace": Object.freeze({
+  "wd-replace": pending({
     id: "wd-replace",
     business: "window-dudes",
     title: "Window Dudes replacement window installation",
     route: "/springfield/replacement-window-installation/",
     relativePath: `${APPROVED_COPY_DIR}/window-dudes/springfield-replacement-window-installation.md`,
-    status: "complete",
   }),
-  "wd-contact": Object.freeze({
+  "wd-contact": pending({
     id: "wd-contact",
     business: "window-dudes",
     title: "Window Dudes contact",
     route: "/contact/",
     relativePath: `${APPROVED_COPY_DIR}/window-dudes/contact.md`,
-    status: "complete",
   }),
-  "sra-home": Object.freeze({
+  "sra-home": pending({
     id: "sra-home",
     business: "sra",
     title: "SRA Springfield homepage",
     route: "/springfield/",
     relativePath: `${APPROVED_COPY_DIR}/sra/springfield-homepage.md`,
-    status: "complete",
   }),
-  "sra-replace": Object.freeze({
+  "sra-replace": pending({
     id: "sra-replace",
     business: "sra",
     title: "SRA Springfield roof replacement",
     route: "/springfield/roof-replacement/",
     relativePath: `${APPROVED_COPY_DIR}/sra/springfield-roof-replacement.md`,
-    status: "complete",
   }),
-  "sra-maint": Object.freeze({
+  "sra-maint": pending({
     id: "sra-maint",
     business: "sra",
     title: "SRA Springfield roof maintenance / The SRA Advantage",
     route: "/springfield/roof-maintenance/",
     relativePath: `${APPROVED_COPY_DIR}/sra/springfield-roof-maintenance.md`,
-    status: "complete",
   }),
-  "sra-contact": Object.freeze({
+  "sra-contact": pending({
     id: "sra-contact",
     business: "sra",
     title: "SRA Springfield contact",
     route: "/springfield/contact/",
     relativePath: `${APPROVED_COPY_DIR}/sra/springfield-contact.md`,
-    status: "source-unavailable",
   }),
-  "gp-home": Object.freeze({
+  "gp-home": pending({
     id: "gp-home",
     business: "greene-planet",
     title: "Greene Planet homepage",
     route: "/",
     relativePath: `${APPROVED_COPY_DIR}/greene-planet/homepage.md`,
-    status: "complete",
   }),
-  "gp-inspect": Object.freeze({
+  "gp-inspect": pending({
     id: "gp-inspect",
     business: "greene-planet",
     title: "Greene Planet mold inspection & testing",
     route: "/springfield/mold-inspection-testing/",
     relativePath: `${APPROVED_COPY_DIR}/greene-planet/springfield-mold-inspection-testing.md`,
-    status: "complete",
   }),
-  "gp-black": Object.freeze({
+  "gp-black": pending({
     id: "gp-black",
     business: "greene-planet",
     title: "Greene Planet black mold remediation",
     route: "/springfield/black-mold-remediation/",
     relativePath: `${APPROVED_COPY_DIR}/greene-planet/springfield-black-mold-remediation.md`,
-    status: "complete",
   }),
-  "gp-contact": Object.freeze({
+  "gp-contact": pending({
     id: "gp-contact",
     business: "greene-planet",
     title: "Greene Planet contact",
     route: "/springfield/contact/",
     relativePath: `${APPROVED_COPY_DIR}/greene-planet/springfield-contact.md`,
-    status: "complete",
   }),
 });
+
+export const EXPECTED_COMPLETE_EXAMPLE_IDS = Object.freeze(
+  EXAMPLE_IDS.filter((id) => id !== "wd-repair"),
+);
 
 export function isExampleId(value: string): value is ExampleId {
   return (EXAMPLE_IDS as readonly string[]).includes(value);

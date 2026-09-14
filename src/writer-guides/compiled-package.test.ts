@@ -9,7 +9,7 @@ import { defaultRepoRoot } from "./index.js";
 const REPO_ROOT = defaultRepoRoot();
 const SCRIPT = resolve(REPO_ROOT, "scripts/assert-compiled-writer-guides.mjs");
 const EXPECTED_MANIFEST =
-  "54715877d30d33a9d600a31d659785e4d57f42af67f87e300af9351a60a6a892";
+  "fe2ed31e4148922270a8a05b684526968299e08c76d025a8fe2ba9ca62b4bf25";
 
 test("compiled dist export loads Writer 1/2/3 from repo-root Markdown", () => {
   const childEnv = { ...process.env };
@@ -50,7 +50,7 @@ test("compiled dist export loads Writer 1/2/3 from repo-root Markdown", () => {
     assert.equal(receipt.catalogManifestHash, EXPECTED_MANIFEST);
     assert.equal(
       receipt.stageSetHashes.writer1,
-      "519a7d5a3f2c9fa2702e9780cdf3d23c84897a17c667cd4acfa4c89929531c53",
+      "0ec0ffd88c8f1d362155e786cabd48e7ecf2e211282e0bd86ecd037f84ddd4c2",
     );
     assert.equal(
       receipt.stageSetHashes.writer2,
