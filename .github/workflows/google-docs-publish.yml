@@ -1,0 +1,69 @@
+# Publish a writing package to Google Docs.
+
+# Secret-bearing. Runs only from the trusted main ref. Do not attach to pull_request.
+
+name: Google Docs publish
+
+on:
+  workflow_dispatch:
+    inputs:
+      package_path:
+        description: Repo-relative path to writing-package JSON
+        required: true
+      lifecycle_path:
+        description: Optional existing lifecycle JSON to reuse the same Doc
+        required: false
+      new_review_version:
+        description: Create a replacement review Doc instead of overwriting
+        required: false
+        default: "false"
+        type: boolean
+
+permissions: {}
+
+jobs:
+  publish:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+    env:
+      GOOGLE_OAUTH_CLIENT_ID: ${{ secrets.GOOGLE_OAUTH_CLIENT_ID }}
+      GOOGLE_OAUTH_CLIENT_SECRET: ${{ secrets.GOOGLE_OAUTH_CLIENT_SECRET }}
+      GOOGLE_OAUTH_REFRESH_TOKEN: ${{ secrets.GOOGLE_OAUTH_REFRESH_TOKEN }}
+      GOOGLE_DRIVE_FOLDER_ID: ${{ vars.GOOGLE_DRIVE_FOLDER_ID }}
+      GOOGLE_ACCOUNT_EMAIL: ${{ vars.GOOGLE_ACCOUNT_EMAIL }}
+    steps:
+      - name: Enforce trusted ref
+        run: |
+          if [ "$GITHUB_REF" != "refs/heads/main" ]; then
+            echo "Secret-bearing Google Docs jobs may only run from refs/heads/main"
+            exit 1
+          fi
+
+      - name: Check out trusted main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: false
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      - name: Install
+        run: npm ci
+
+      - name: Publish
+        run: |
+          extra=()
+          if [ -n "${{ inputs.lifecycle_path }}" ]; then
+            extra+=(--lifecycle "${{ inputs.lifecycle_path }}" --lifecycle-out "${{ inputs.lifecycle_path }}")
+          fi
+          if [ "${{ inputs.new_review_version }}" = "true" ]; then
+            extra+=(--new-review-version)
+          fi
+          npm run google-docs:publish -- --package "${{ inputs.package_path }}" --receipt-out google-doc-receipt.json "${extra[@]}"

@@ -93,3 +93,21 @@ The loader still:
 ## Lineage note
 
 Unmerged Words Factory v3 (`workgpt/words-factory-v3`, PR #2) implemented a sequential Writer 1 → model QA → Writer 2 → model QA → Writer 3 pipeline against a closed Google Doc catalog. That is not the active path. Historical canary and old Words Factory work remains in repository history and should not be treated as the current factory. This workflow reuses the idea of a complete review inventory and a human copy gate, and it replaces three-writer/model-editor sequencing with one writer model and independent-thinking handoffs.
+
+## Google Docs human review
+
+Writer-guide loading still does not call Google. When a finished writing package reaches an existing human gate, trusted factory code can publish a native Google Doc for human QA.
+
+- Operator setup: `docs/google-docs/OPERATOR_SETUP.md`
+- Workflow-lane interface: `docs/google-docs/WORKFLOW_INTERFACE.md`
+- Shared package contract: `src/writing-package/` (`schemaVersion: "writing-package/v1"`; export `ff-content-demo-factory/writing-package`)
+- Package export: `ff-content-demo-factory/google-docs`
+
+Secret-bearing publish/approve workflows run only from trusted `main` (`refs/heads/main`). Mocked tests are not live Google proof; `npm run google-docs:live-verify` reports pending until the operator Gmail account is authorized.
+
+```bash
+npm run google-docs:authorize
+npm run google-docs:init-folder
+npm run google-docs:test-connection
+```
+

@@ -2,7 +2,7 @@
   "name": "ff-content-demo-factory",
   "version": "0.0.0",
   "private": true,
-  "description": "Fluid Frame Content Demo Factory: independent-thinking workflow, one-writer assignment, Springfield examples, and repo-native writer guides",
+  "description": "Fluid Frame Content Demo Factory: independent-thinking workflow, one-writer assignment, Springfield examples, and Google Docs human review",
   "type": "module",
   "main": "./dist/src/index.js",
   "types": "./dist/src/index.d.ts",
@@ -13,7 +13,8 @@
     "./workflow": "./dist/src/workflow/index.js",
     "./handoff": "./dist/src/handoff/index.js",
     "./writing-package": "./dist/src/writing-package/index.js",
-    "./publisher": "./dist/src/publisher/index.js"
+    "./publisher": "./dist/src/publisher/index.js",
+    "./google-docs": "./dist/src/google-docs/index.js"
   },
   "engines": {
     "node": ">=22"
@@ -21,11 +22,22 @@
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "check": "tsc -p tsconfig.json --noEmit",
-    "test": "node --import tsx --test src/writer-guides/*.test.ts src/approved-copy/*.test.ts src/handoff/*.test.ts src/workflow/*.test.ts src/writing-package/*.test.ts",
+    "test": "node --import tsx --test src/writer-guides/*.test.ts src/approved-copy/*.test.ts src/handoff/*.test.ts src/workflow/*.test.ts src/writing-package/*.test.ts src/google-docs/*.test.ts src/integration/*.test.ts",
     "test:compiled": "npm run build && node scripts/assert-compiled-writer-guides.mjs",
     "test:all": "npm run check && npm test && npm run test:compiled",
     "writer-guides:receipt": "node --import tsx src/writer-guides/cli.ts",
-    "assignment:receipt": "node --import tsx src/workflow/cli.ts"
+    "assignment:receipt": "node --import tsx src/workflow/cli.ts",
+    "google-docs:authorize": "node --import tsx src/google-docs/cli.ts authorize",
+    "google-docs:init-folder": "node --import tsx src/google-docs/cli.ts init-folder",
+    "google-docs:test-connection": "node --import tsx src/google-docs/cli.ts test-connection",
+    "google-docs:publish": "node --import tsx src/google-docs/cli.ts publish",
+    "google-docs:import": "node --import tsx src/google-docs/cli.ts import",
+    "google-docs:approve": "node --import tsx src/google-docs/cli.ts approve",
+    "google-docs:push-secrets": "node --import tsx src/google-docs/cli.ts push-secrets",
+    "google-docs:live-verify": "node --import tsx src/google-docs/cli.ts live-verify"
+  },
+  "dependencies": {
+    "google-auth-library": "^10.5.0"
   },
   "devDependencies": {
     "@types/node": "^24.3.0",

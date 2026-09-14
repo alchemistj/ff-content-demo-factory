@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 /**
- * Fresh-process compiled-package acceptance for Issue #23 / PR #24.
+ * Fresh-process compiled-package acceptance for the integrated Content Factory.
  *
  * Imports the advertised `dist` package exports (not tsx/source), loads
- * Writer 1/2/3 with HTTP/HTTPS/fetch disabled, and proves the default
- * loader reads repo-root `docs/writer-guides/` rather than `dist/docs/`.
+ * writing-assignment guides with HTTP/HTTPS/fetch disabled, and proves the
+ * default loader reads repo-root `docs/writer-guides/` rather than `dist/docs/`.
  */
 import assert from "node:assert/strict";
 import { existsSync, readFileSync } from "node:fs";
@@ -36,13 +36,20 @@ assert.equal(pkg.name, "ff-content-demo-factory");
 assert.equal(pkg.exports?.["."], "./dist/src/index.js");
 assert.equal(pkg.exports?.["./writer-guides"], "./dist/src/writer-guides/index.js");
 assert.equal(pkg.exports?.["./approved-copy"], "./dist/src/approved-copy/index.js");
+assert.equal(pkg.exports?.["./google-docs"], "./dist/src/google-docs/index.js");
+assert.equal(pkg.exports?.["./writing-package"], "./dist/src/writing-package/index.js");
+assert.equal(pkg.exports?.["./workflow"], "./dist/src/workflow/index.js");
 
 const mainExportPath = join(repoRoot, pkg.exports["."]);
 const guidesExportPath = join(repoRoot, pkg.exports["./writer-guides"]);
 const approvedCopyExportPath = join(repoRoot, pkg.exports["./approved-copy"]);
+const googleDocsExportPath = join(repoRoot, pkg.exports["./google-docs"]);
+const writingPackageExportPath = join(repoRoot, pkg.exports["./writing-package"]);
 assert.equal(existsSync(mainExportPath), true, `missing compiled main export: ${mainExportPath}`);
 assert.equal(existsSync(guidesExportPath), true, `missing compiled writer-guides export: ${guidesExportPath}`);
 assert.equal(existsSync(approvedCopyExportPath), true, `missing compiled approved-copy export: ${approvedCopyExportPath}`);
+assert.equal(existsSync(googleDocsExportPath), true, `missing compiled google-docs export: ${googleDocsExportPath}`);
+assert.equal(existsSync(writingPackageExportPath), true, `missing compiled writing-package export: ${writingPackageExportPath}`);
 assert.equal(existsSync(join(repoRoot, "dist/docs/writer-guides")), false);
 
 const block = () => {
@@ -55,6 +62,8 @@ globalThis.fetch = block;
 const main = await import(pathToFileURL(mainExportPath).href);
 const guides = await import(pathToFileURL(guidesExportPath).href);
 const approvedCopy = await import(pathToFileURL(approvedCopyExportPath).href);
+const writingPackage = await import(pathToFileURL(writingPackageExportPath).href);
+const googleDocs = await import(pathToFileURL(googleDocsExportPath).href);
 
 assert.equal(typeof main.loadWriterStageGuides, "function");
 assert.equal(typeof main.loadCanonicalGuideCatalog, "function");
@@ -63,11 +72,18 @@ assert.equal(typeof main.loadApprovedCopyCatalog, "function");
 assert.equal(typeof main.discoverAssignment, "function");
 assert.equal(typeof main.runFactory, "function");
 assert.equal(typeof main.retryPublication, "function");
+assert.equal(typeof main.createGoogleDocsPublisher, "function");
 assert.equal(typeof main.defaultRepoRoot, "function");
 assert.equal(typeof guides.loadWriterStageGuides, "function");
 assert.equal(typeof guides.defaultRepoRoot, "function");
 assert.equal(typeof approvedCopy.loadApprovedCopyCatalog, "function");
 assert.equal(approvedCopy.EXAMPLE_IDS.length, 12);
+assert.equal(writingPackage.WRITING_PACKAGE_SCHEMA_VERSION, "writing-package/v1");
+assert.equal(typeof writingPackage.parseWritingPackage, "function");
+assert.equal(typeof writingPackage.buildWritingPackage, "function");
+assert.equal(typeof writingPackage.hashWritingPackage, "function");
+assert.equal(typeof googleDocs.createGoogleDocsPublisher, "function");
+assert.equal(typeof googleDocs.parseWritingPackage, "function");
 
 const distLoaderPath = join(repoRoot, "dist/src/writer-guides/loader.js");
 const naiveFromCompiledLoader = resolve(dirname(distLoaderPath), "../..");
@@ -101,6 +117,7 @@ const writer1 = main.loadWriterStageGuides("writer1");
 const writer2 = guides.loadWriterStageGuides("writer2");
 const writer3 = main.loadWriterStageGuides("writer3");
 const writing = main.loadWritingAssignmentGuides();
+const examples = approvedCopy.loadApprovedCopyCatalog();
 
 assert.deepEqual(writer1.sourceIds, ["general", "service"]);
 assert.deepEqual(writer2.sourceIds, ["general", "homepage", "contact", "headerFooter"]);
@@ -126,6 +143,15 @@ assert.deepEqual(writing.sourceIds, ["general", "service", "homepage", "contact"
 assert.equal(writing.phases.servicePages.setHash, writer1.setHash);
 assert.equal(writing.phases.siteChrome.setHash, writer2.setHash);
 assert.equal(writing.phases.strategyOverview.setHash, writer3.setHash);
+assert.equal(examples.examples.length, 12);
+assert.equal(
+  examples.examples.some((example) => example.relativePath.endsWith("README.md")),
+  false,
+);
+assert.equal(
+  examples.examples.some((example) => example.relativePath.includes("_chrome.md")),
+  false,
+);
 
 const receipt = {
   ok: true,
@@ -133,6 +159,9 @@ const receipt = {
   repoRoot: discoveredRoot,
   compiledMainExport: pkg.exports["."],
   compiledWriterGuidesExport: pkg.exports["./writer-guides"],
+  compiledApprovedCopyExport: pkg.exports["./approved-copy"],
+  compiledWritingPackageExport: pkg.exports["./writing-package"],
+  compiledGoogleDocsExport: pkg.exports["./google-docs"],
   distDocsPresent: existsSync(join(repoRoot, "dist/docs/writer-guides")),
   catalogManifestHash: catalog.manifestHash,
   guideSha256: byId,
@@ -141,6 +170,7 @@ const receipt = {
     writer2: writer2.setHash,
     writer3: writer3.setHash,
   },
+  exampleIds: examples.examples.map((example) => example.id),
   absolutePaths: catalog.guides.map((guide) => guide.absolutePath),
 };
 

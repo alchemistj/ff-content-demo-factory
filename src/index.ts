@@ -73,3 +73,5 @@ export {
   type FactoryRunInput,
   type FactoryRunResult,
 } from "./workflow/index.js";
+
+export { createGoogleDocsPublisher } from "./google-docs/publisher-adapter.js";
