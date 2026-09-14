@@ -5,11 +5,13 @@ import {
   GUIDE_CATALOG,
   GUIDE_IDS,
   WRITER_GUIDES_DIR,
+  WRITING_ASSIGNMENT_GUIDE_IDS,
   catalogEntry,
   stageGuideIds,
   type GuideCatalogEntry,
   type GuideId,
   type WriterStage,
+  type WritingPhase,
 } from "./catalog.js";
 import { manifestHash, sha256Hex, stageSetHash, type ManifestMember } from "./hash.js";
 import { parseHeadings, type GuideHeading } from "./parse.js";
@@ -192,6 +194,44 @@ export function loadCanonicalGuideCatalog(options?: LoadGuidesOptions): GuideCat
     guides: Object.freeze(guides),
     members: Object.freeze(members),
     manifestHash: manifestHash(members),
+  });
+}
+
+export interface WritingAssignmentGuideSet {
+  readonly assignment: "writing";
+  readonly repoRoot: string;
+  readonly catalogManifestHash: string;
+  readonly setHash: string;
+  readonly sourceIds: readonly GuideId[];
+  readonly guides: readonly LoadedGuide[];
+  readonly phases: Readonly<Record<WritingPhase, StageGuideSet>>;
+}
+
+export function loadWritingAssignmentGuides(options?: LoadGuidesOptions): WritingAssignmentGuideSet {
+  const catalog = loadCanonicalGuideCatalog(options);
+  const byId = new Map(catalog.guides.map((guide) => [guide.id, guide]));
+  const ids = WRITING_ASSIGNMENT_GUIDE_IDS;
+  const guides = ids.map((id) => {
+    const guide = byId.get(id);
+    if (!guide) {
+      throw new WriterGuideError(`Canonical writer guide is missing from catalog receipt: ${id}`);
+    }
+    return guide;
+  });
+  const members = guides.map(toMember);
+  const phases = Object.freeze({
+    servicePages: loadWriterStageGuides("writer1", options),
+    siteChrome: loadWriterStageGuides("writer2", options),
+    strategyOverview: loadWriterStageGuides("writer3", options),
+  });
+  return Object.freeze({
+    assignment: "writing",
+    repoRoot: catalog.repoRoot,
+    catalogManifestHash: catalog.manifestHash,
+    setHash: stageSetHash("writing", members),
+    sourceIds: Object.freeze([...ids]),
+    guides: Object.freeze(guides),
+    phases,
   });
 }
 

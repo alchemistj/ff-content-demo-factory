@@ -22,6 +22,28 @@ export const WRITER_STAGES = Object.freeze(["writer1", "writer2", "writer3"] as 
 
 export type WriterStage = (typeof WRITER_STAGES)[number];
 
+/**
+ * Internal writing phases inside one writing assignment.
+ * Legacy writer1/2/3 ids remain available as phase loaders.
+ */
+export const WRITING_PHASES = Object.freeze(["servicePages", "siteChrome", "strategyOverview"] as const);
+
+export type WritingPhase = (typeof WRITING_PHASES)[number];
+
+export const WRITING_PHASE_TO_STAGE: Readonly<Record<WritingPhase, WriterStage>> = Object.freeze({
+  servicePages: "writer1",
+  siteChrome: "writer2",
+  strategyOverview: "writer3",
+});
+
+export const WRITING_ASSIGNMENT_GUIDE_IDS = Object.freeze([
+  "general",
+  "service",
+  "homepage",
+  "contact",
+  "headerFooter",
+] as const);
+
 export interface GuideCatalogEntry {
   readonly id: GuideId;
   readonly title: string;
@@ -95,4 +117,15 @@ export function stageGuideIds(stage: string): readonly GuideId[] {
     throw new Error(`Unknown writer stage: ${stage}`);
   }
   return STAGE_GUIDE_IDS[stage];
+}
+
+export function isWritingPhase(value: string): value is WritingPhase {
+  return (WRITING_PHASES as readonly string[]).includes(value);
+}
+
+export function writingPhaseGuideIds(phase: string): readonly GuideId[] {
+  if (!isWritingPhase(phase)) {
+    throw new Error(`Unknown writing phase: ${phase}`);
+  }
+  return STAGE_GUIDE_IDS[WRITING_PHASE_TO_STAGE[phase]];
 }
