@@ -9,7 +9,7 @@ import { assertImportableDocument } from "./document-reader.js";
 import { FakeGoogleTransport } from "./fake-google.js";
 import { GoogleDocsError } from "./errors.js";
 import { publishForHumanReview } from "./publisher.js";
-import { validateWritingPackage, writingPackageContentHash } from "../writing-package/index.js";
+import { parseWritingPackage, hashWritingPackage } from "../writing-package/index.js";
 import type { GoogleDocsConfig } from "./config.js";
 import type { DocsDocument } from "./google-rest.js";
 
@@ -23,7 +23,7 @@ const config: GoogleDocsConfig = {
 };
 
 test("import preserves wording, lists, quotes, and page ids", async () => {
-  const original = validateWritingPackage(JSON.parse(readFileSync(fixturePath, "utf8")));
+  const original = parseWritingPackage(JSON.parse(readFileSync(fixturePath, "utf8")));
   const fake = new FakeGoogleTransport();
   const published = await publishForHumanReview(fake, original, config, undefined);
   assert.equal(published.ok, true);
@@ -36,7 +36,7 @@ test("import preserves wording, lists, quotes, and page ids", async () => {
   const quote = imported.package.pages[0]?.blocks.find((block) => block.type === "quote");
   assert.ok(quote && quote.type === "quote");
   assert.equal(quote.attribution, "Dana M., Springfield");
-  assert.equal(quote.reviewId, "rev.dana-m-springfield");
+  assert.equal(quote.reviewId, "rev-dana-m-springfield");
   assert.ok(imported.importedContentHash.length === 64);
 });
 
@@ -93,7 +93,7 @@ test("multiple content tabs refuse import", () => {
 });
 
 test("approval snapshot records actor, document, revision, hash, and does not follow later edits", async () => {
-  const original = validateWritingPackage(JSON.parse(readFileSync(fixturePath, "utf8")));
+  const original = parseWritingPackage(JSON.parse(readFileSync(fixturePath, "utf8")));
   const fake = new FakeGoogleTransport();
   const published = await publishForHumanReview(fake, original, config, undefined);
   assert.equal(published.ok, true);
@@ -112,8 +112,8 @@ test("approval snapshot records actor, document, revision, hash, and does not fo
   assert.equal(record.documentId, published.receipt.documentId);
   assert.equal(record.importedContentHash, imported.importedContentHash);
   assert.equal(record.sourceRevisionId, imported.sourceRevisionId);
-  const snapshot = validateWritingPackage(JSON.parse(readFileSync(join(dir, "approved-writing-package.json"), "utf8")));
+  const snapshot = parseWritingPackage(JSON.parse(readFileSync(join(dir, "approved-writing-package.json"), "utf8")));
   fake.simulateHumanEdit(published.receipt.documentId, "Later public-link edit\n");
   const later = await importReviewedDocument(fake, original, published.receipt);
-  assert.notEqual(writingPackageContentHash(snapshot), later.importedContentHash);
+  assert.notEqual(hashWritingPackage(snapshot), later.importedContentHash);
 });

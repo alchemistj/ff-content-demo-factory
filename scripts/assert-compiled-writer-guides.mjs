@@ -65,10 +65,12 @@ assert.equal(typeof main.loadCanonicalGuideCatalog, "function");
 assert.equal(typeof main.defaultRepoRoot, "function");
 assert.equal(typeof guides.loadWriterStageGuides, "function");
 assert.equal(typeof guides.defaultRepoRoot, "function");
-assert.equal(writingPackage.WRITING_PACKAGE_VERSION, "writing-package/v1");
-assert.equal(typeof writingPackage.validateWritingPackage, "function");
+assert.equal(writingPackage.WRITING_PACKAGE_SCHEMA_VERSION, "writing-package/v1");
+assert.equal(typeof writingPackage.parseWritingPackage, "function");
+assert.equal(typeof writingPackage.buildWritingPackage, "function");
+assert.equal(typeof writingPackage.hashWritingPackage, "function");
 assert.equal(typeof googleDocs.createGoogleDocsPublisher, "function");
-assert.equal(typeof googleDocs.validateWritingPackage, "function");
+assert.equal(typeof googleDocs.parseWritingPackage, "function");
 
 const distLoaderPath = join(repoRoot, "dist/src/writer-guides/loader.js");
 const naiveFromCompiledLoader = resolve(dirname(distLoaderPath), "../..");

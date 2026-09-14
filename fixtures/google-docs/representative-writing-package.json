@@ -1,6 +1,7 @@
 {
-  "version": "writing-package/v1",
+  "schemaVersion": "writing-package/v1",
   "kind": "website_copy",
+  "packageId": "website-copy-oak-iron-plumbing",
   "prospectId": "oak-iron-plumbing",
   "runId": "run_fixture_001",
   "businessName": "Oak & Iron Plumbing",
@@ -38,7 +39,7 @@
           "type": "quote",
           "spans": [{ "text": "They showed up after hours and stopped the water before it wrecked the floor." }],
           "attribution": "Dana M., Springfield",
-          "reviewId": "rev.dana-m-springfield"
+          "reviewId": "rev-dana-m-springfield"
         },
         {
           "type": "paragraph",
@@ -150,6 +151,7 @@
       "pageId": "strategy",
       "role": "strategy_overview",
       "audience": "owner",
+      "route": "/",
       "readingOrder": 6,
       "title": "Why We Built This Site",
       "blocks": [

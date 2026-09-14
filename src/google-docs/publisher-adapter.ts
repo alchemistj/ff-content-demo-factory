@@ -1,29 +1,37 @@
-import type { WritingPackage } from "../writing-package/index.js";
+import type { ReviewKind, WritingPackage } from "../writing-package/index.js";
 import { loadGoogleDocsConfig, createLiveTransport } from "./runtime.js";
 import { missingConfigPublishResult, publishForHumanReview } from "./publisher.js";
 import type { LifecycleRecord } from "./lifecycle.js";
-import { writingPackageContentHash } from "../writing-package/index.js";
 import type { GoogleDocsConfigLoad } from "./config.js";
 import type { GoogleTransport } from "./google-rest.js";
 
 export type PublicationStatus = "published" | "setup-required" | "failed";
 
-export interface PublisherPublicationReceipt {
-  readonly status: PublicationStatus;
-  readonly prospectId: string;
-  readonly runId: string;
-  readonly packageIdentity: { readonly packageHash: string };
-  readonly url?: string;
-  readonly documentId?: string;
-  readonly error?: { readonly code: string; readonly message: string };
+export interface PublicationError {
+  readonly code: string;
+  readonly message: string;
 }
 
 /**
- * Model-neutral publisher boundary used by the workflow lane at existing
- * human gates (prescription and website copy). This does not add a gate.
+ * Workflow-lane publisher receipt. Matches the PR #30 publisher contract.
+ */
+export interface PublisherPublicationReceipt {
+  readonly status: PublicationStatus;
+  readonly kind: ReviewKind;
+  readonly prospectId: string;
+  readonly runId: string;
+  readonly packageIdentity: { readonly packageId: string; readonly packageHash: string };
+  readonly url?: string;
+  readonly documentId?: string;
+  readonly error?: PublicationError;
+}
+
+/**
+ * Model-neutral publisher boundary for both existing human gates.
+ * This does not add a gate. Retrying publication must not rerun the writer.
  */
 export interface GoogleDocsPublisher {
-  publishWritingPackage(pkg: WritingPackage, lifecycle?: LifecycleRecord): Promise<PublisherPublicationReceipt>;
+  publishReviewPackage(pkg: WritingPackage, lifecycle?: LifecycleRecord): Promise<PublisherPublicationReceipt>;
 }
 
 export interface GoogleDocsPublisherOptions {
@@ -35,13 +43,14 @@ export function createGoogleDocsPublisher(options: GoogleDocsPublisherOptions = 
   const loadConfig = options.loadConfig ?? loadGoogleDocsConfig;
   const createTransport = options.createTransport ?? createLiveTransport;
   return {
-    async publishWritingPackage(pkg: WritingPackage, lifecycle?: LifecycleRecord): Promise<PublisherPublicationReceipt> {
-      const loaded = loadConfig();
+    async publishReviewPackage(pkg: WritingPackage, lifecycle?: LifecycleRecord): Promise<PublisherPublicationReceipt> {
       const identity = {
+        kind: pkg.kind,
         prospectId: pkg.prospectId,
         runId: pkg.runId,
-        packageIdentity: { packageHash: writingPackageContentHash(pkg) },
+        packageIdentity: { packageId: pkg.packageId, packageHash: pkg.packageHash },
       };
+      const loaded = loadConfig();
       if (loaded.missing.length > 0) {
         const unpublished = missingConfigPublishResult(loaded.missing);
         if (!unpublished.ok) {

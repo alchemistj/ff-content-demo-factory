@@ -16,7 +16,7 @@ import { lifecycleAfterPublish, missingConfigPublishResult, publishForHumanRevie
 import { redactSecrets } from "./redaction.js";
 import { createLiveTransport, loadGoogleDocsConfig } from "./runtime.js";
 import { defaultSecretStorePath, readSecretStore } from "./secret-store.js";
-import { validateWritingPackage, type WritingPackage } from "../writing-package/index.js";
+import { parseWritingPackage, type WritingPackage } from "../writing-package/index.js";
 import { requireGoogleConfig } from "./config.js";
 import { assertRepoRelativeInputPath, assertTrustedGithubRef, resolveApprovedSnapshotDir } from "./trust.js";
 
@@ -252,7 +252,7 @@ async function liveTransport() {
 }
 
 function loadPackage(path: string): WritingPackage {
-  return validateWritingPackage(JSON.parse(readFileSync(resolve(assertRepoRelativeInputPath(path, "package")), "utf8")));
+  return parseWritingPackage(JSON.parse(readFileSync(resolve(assertRepoRelativeInputPath(path, "package")), "utf8")));
 }
 
 function loadReceipt(path: string): PublicationReceipt {

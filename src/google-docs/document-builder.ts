@@ -1,4 +1,4 @@
-import { pagesInReadingOrder, reviewDocumentTitle, type ContentBlock, type TextSpan, type WritingPackage, type WritingPackagePage } from "../writing-package/index.js";
+import { reviewDocumentTitle, type ContentBlock, type TextSpan, type WritingPackage, type WritingPackagePage } from "../writing-package/index.js";
 import { namedRangeForPage, namedRangeForQuote } from "./named-ranges.js";
 import type { DocsRequest } from "./google-rest.js";
 
@@ -49,7 +49,7 @@ interface ParagraphPlan {
  */
 export function buildNativeDocument(pkg: WritingPackage, version?: number): BuiltNativeDocument {
   const title = reviewDocumentTitle(pkg, version);
-  const pages = pagesInReadingOrder(pkg);
+  const pages = pagesInReadingOrder(pkg.pages);
   const paragraphs: ParagraphPlan[] = [];
   const pageRanges: PageRangePlan[] = [];
   const quoteRanges: { name: string; startIndex: number; endIndex: number }[] = [];
@@ -162,6 +162,10 @@ export function buildNativeDocument(pkg: WritingPackage, version?: number): Buil
   }
 
   return { title, insertText: text, requests, pageRanges };
+}
+
+function pagesInReadingOrder(pages: readonly WritingPackagePage[]): readonly WritingPackagePage[] {
+  return [...pages].sort((a, b) => a.readingOrder - b.readingOrder || a.pageId.localeCompare(b.pageId));
 }
 
 function identityLine(page: WritingPackagePage): string {

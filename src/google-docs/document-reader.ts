@@ -91,6 +91,7 @@ export function importedPackageFromReadback(
 ): WritingPackage {
   return buildWritingPackage({
     kind: original.kind,
+    packageId: original.packageId,
     prospectId: original.prospectId,
     runId: original.runId,
     businessName: original.businessName,
@@ -184,19 +185,19 @@ function blocksFromParagraphs(
       continue;
     }
     const reviewId = reviewIdForParagraph(expected.pageId, paragraph, ranges);
-    if (reviewId || (isItalicParagraph(paragraph) && rest[i + 1]?.raw.startsWith("— "))) {
-      const attribution = rest[i + 1]?.raw.startsWith("— ") ? rest[i + 1]?.raw.replace(/^— /, "") ?? "" : "";
-      if (attribution) i += 1;
+    const attribution = rest[i + 1]?.raw.startsWith("— ") ? rest[i + 1]?.raw.replace(/^— /, "") ?? "" : "";
+    if (attribution && (reviewId || isItalicParagraph(paragraph))) {
+      i += 1;
       const quote: {
         type: "quote";
         spans: TextSpan[];
-        attribution?: string;
+        attribution: string;
         reviewId?: string;
       } = {
         type: "quote",
         spans: paragraph.spans.map(stripForcedItalic),
+        attribution,
       };
-      if (attribution) quote.attribution = attribution;
       if (reviewId) quote.reviewId = reviewId;
       blocks.push(quote);
       continue;

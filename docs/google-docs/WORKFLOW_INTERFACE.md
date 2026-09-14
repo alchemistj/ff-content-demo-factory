@@ -1,16 +1,15 @@
 # Writing package interface for the workflow lane
 
-The Google Docs lane **consumes** the canonical writing-package contract. It does not define a second package schema.
+The Google Docs lane **consumes** the canonical writing-package contract owned by the workflow lane (PR #30). It does not define a second package schema.
+
+Canonical module: `src/writing-package/` at PR #30 head `2b2ce4e75edd37d96e2b898efeddd125464c3329`.
 
 Package exports:
 
-- `ff-content-demo-factory/writing-package` — shared types, validation, hashing, page identity, review title
-- `ff-content-demo-factory/google-docs` — native Docs publish/import plus the publisher boundary
+- `ff-content-demo-factory/writing-package` — types, `parseWritingPackage`, `buildWritingPackage`, `hashWritingPackage`, `publisherPayload`, review title
+- `ff-content-demo-factory/google-docs` — native Docs publish/import plus `createGoogleDocsPublisher().publishReviewPackage()`
 
-Contract: `src/writing-package/` (`version: "writing-package/v1"`)  
-Fixture: `fixtures/google-docs/representative-writing-package.json`
-
-The workflow lane should produce this payload. This lane renders and imports it. When the workflow branch publishes the same `src/writing-package/` module, rebase onto that interface rather than keeping a google-docs-only copy.
+Required package fields: `schemaVersion: "writing-package/v1"`, `packageId`, `prospectId`, `runId`, `businessName`, `pages`, stored `packageHash`. There is no top-level `version` field and no top-level `readingOrder` array. Quote `attribution` is required. Optional quote `reviewId` is a lowercase slug.
 
 ## Publisher boundary
 
@@ -19,12 +18,11 @@ Call the existing human gates (prescription and website copy) through one implem
 ```ts
 import {
   createGoogleDocsPublisher,
-  humanQaTaskFromReceipt,
-  validateWritingPackage,
+  parseWritingPackage,
 } from "ff-content-demo-factory/google-docs";
 
-const pkg = validateWritingPackage(writingPackageJson);
-const result = await createGoogleDocsPublisher().publishWritingPackage(pkg);
+const pkg = parseWritingPackage(writingPackageJson);
+const result = await createGoogleDocsPublisher().publishReviewPackage(pkg);
 if (result.status === "setup-required" || result.status === "failed") {
   // Keep the finished writing. Record publication_failed. Do not rerun the writer.
 } else {
@@ -41,7 +39,7 @@ Prescription human gate: send `kind: "prescription"` through the same publisher.
 - `pageId` is the stable identity. Heading text is editable and must not reassign a page.
 - `website_copy` reading order: homepage, two service pages, contact, header/footer, strategy overview.
 - Customer-facing copy only in those pages. Do not include evidence administration, hashes, QA reports, or raw research.
-- Spans carry wording, bold, italic, and link destinations. Quotes keep attribution separately.
+- Spans carry wording, bold, italic, and link destinations. Quotes keep attribution (required) separately.
 - Optional quote `reviewId` is preserved through the Doc as a named range (`ffcf_rev_…`). It is never inserted as visible text. If a human removes the quotation or its named range, import does not invent a review mapping.
 
 ## Trusted execution

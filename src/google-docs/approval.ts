@@ -3,7 +3,7 @@ import { join } from "node:path";
 import { docsGet, type GoogleTransport } from "./google-rest.js";
 import { importPagesFromDocument, importedPackageFromReadback } from "./document-reader.js";
 import type { ApprovalRecord, PublicationReceipt } from "./lifecycle.js";
-import { writingPackageContentHash, validateWritingPackage, type WritingPackage } from "../writing-package/index.js";
+import { parseWritingPackage, type WritingPackage } from "../writing-package/index.js";
 
 export interface ImportedReview {
   readonly documentId: string;
@@ -19,10 +19,10 @@ export async function importReviewedDocument(
 ): Promise<ImportedReview> {
   const document = await docsGet(transport, receipt.documentId);
   const readback = importPagesFromDocument(document, original.pages);
-  const imported = validateWritingPackage(importedPackageFromReadback(original, readback));
+  const imported = parseWritingPackage(importedPackageFromReadback(original, readback));
   const result: ImportedReview = {
     documentId: receipt.documentId,
-    importedContentHash: writingPackageContentHash(imported),
+    importedContentHash: imported.packageHash,
     package: imported,
   };
   if (readback.revisionId !== undefined) {

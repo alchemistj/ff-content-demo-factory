@@ -12,14 +12,14 @@ export { GoogleDocsError, isGoogleDocsError } from "./errors.js";
 export { redactSecrets } from "./redaction.js";
 export {
   REVIEW_KINDS,
-  WRITING_PACKAGE_VERSION,
+  WRITING_PACKAGE_SCHEMA_VERSION,
   WEBSITE_COPY_READING_ORDER,
   buildWritingPackage,
   canonicalizeWritingPackage,
-  hashWritingPages,
+  hashWritingPackage,
+  parseWritingPackage,
+  publisherPayload,
   reviewDocumentTitle,
-  validateWritingPackage,
-  writingPackageContentHash,
   type ContentBlock,
   type PageRole,
   type ReviewKind,
@@ -43,7 +43,7 @@ export {
   missingConfigPublishResult,
   publishForHumanReview,
 } from "./publisher.js";
-export { createGoogleDocsPublisher, type GoogleDocsPublisher, type GoogleDocsPublisherOptions, type PublisherPublicationReceipt } from "./publisher-adapter.js";
+export { createGoogleDocsPublisher, type GoogleDocsPublisher, type GoogleDocsPublisherOptions, type PublicationError, type PublisherPublicationReceipt } from "./publisher-adapter.js";
 export { importReviewedDocument, writeApprovedSnapshot } from "./approval.js";
 export {
   createLabeledTestDocument,

@@ -26,7 +26,7 @@ import {
   type PublicationReceipt,
   type PublishResult,
 } from "./lifecycle.js";
-import { writingPackageContentHash, type WritingPackage } from "../writing-package/index.js";
+import { hashWritingPackage, type WritingPackage } from "../writing-package/index.js";
 
 export interface PublishOptions {
   readonly newReviewVersion?: boolean;
@@ -43,7 +43,7 @@ export async function publishForHumanReview(
   options: PublishOptions = {},
 ): Promise<PublishResult> {
   const current = lifecycle ?? initialLifecycle(pkg);
-  const contentHash = writingPackageContentHash(pkg);
+  const contentHash = hashWritingPackage(pkg);
   try {
     if (!config.folderId) {
       return failed(

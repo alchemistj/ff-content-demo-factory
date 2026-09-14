@@ -7,13 +7,13 @@ import { FakeGoogleTransport } from "./fake-google.js";
 import { GoogleDocsError } from "./errors.js";
 import { lifecycleAfterPublish, missingConfigPublishResult, publishForHumanReview } from "./publisher.js";
 import { REVIEW_PERMISSION } from "./lifecycle.js";
-import { validateWritingPackage, type WritingPackage, type WritingPackagePage } from "../writing-package/index.js";
+import { buildWritingPackage, parseWritingPackage, type WritingPackage, type WritingPackagePage } from "../writing-package/index.js";
 import type { GoogleDocsConfig } from "./config.js";
 
 const fixturePath = join(dirname(fileURLToPath(import.meta.url)), "../../fixtures/google-docs/representative-writing-package.json");
 
 function loadPackage(): WritingPackage {
-  return validateWritingPackage(JSON.parse(readFileSync(fixturePath, "utf8")));
+  return parseWritingPackage(JSON.parse(readFileSync(fixturePath, "utf8")));
 }
 
 function withMachineRewrite(pkg: WritingPackage): WritingPackage {
@@ -44,7 +44,7 @@ test("publish creates a native Doc in the app folder and sets anyone-writer with
     name: "Oak & Iron Plumbing — Website Copy — Human Review",
     mimeType: "application/vnd.google-apps.document",
     parents: ["folder_review"],
-    description: "ff-content-factory website_copy oak-iron-plumbing/run_fixture_001",
+    description: "ff-content-factory website_copy website-copy-oak-iron-plumbing",
   });
   const permission = fake.calls.find((call) => call.url.includes("/permissions") && call.method === "POST");
   assert.deepEqual(permission?.body, REVIEW_PERMISSION);
@@ -99,9 +99,9 @@ test("missing Google config fails publication without implying another writing r
 });
 
 test("prescription packages publish through the same publisher without adding a gate", async () => {
-  const pkg = validateWritingPackage({
-    version: "writing-package/v1",
+  const pkg = buildWritingPackage({
     kind: "prescription",
+    packageId: "prescription-oak-iron-plumbing",
     prospectId: "oak-iron-plumbing",
     runId: "run_fixture_001",
     businessName: "Oak & Iron Plumbing",

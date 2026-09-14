@@ -1,4 +1,4 @@
-import { writingPackageContentHash, type ReviewKind, type WritingPackage } from "../writing-package/index.js";
+import { hashWritingPackage, type ReviewKind, type WritingPackage } from "../writing-package/index.js";
 import type { DrivePermission } from "./google-rest.js";
 
 export const PUBLICATION_STATES = Object.freeze([
@@ -101,7 +101,7 @@ export function matchesAnyoneWriter(permissions: readonly DrivePermission[]): bo
 }
 
 export function packageIdentity(pkg: WritingPackage): string {
-  return `${pkg.prospectId}/${pkg.runId}`;
+  return pkg.packageId;
 }
 
 export function initialLifecycle(pkg: WritingPackage): LifecycleRecord {
@@ -110,7 +110,7 @@ export function initialLifecycle(pkg: WritingPackage): LifecycleRecord {
     state: "draft_ready",
     prospectId: pkg.prospectId,
     packageId: packageIdentity(pkg),
-    packageContentHash: writingPackageContentHash(pkg),
+    packageContentHash: hashWritingPackage(pkg),
   };
 }
 

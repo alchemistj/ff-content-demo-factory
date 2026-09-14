@@ -7,12 +7,12 @@ import { buildNativeDocument, looksLikeMarkdownDump } from "./document-builder.j
 import { importPagesFromDocument, importedPackageFromReadback } from "./document-reader.js";
 import { FakeGoogleTransport } from "./fake-google.js";
 import { namedRangeForQuote } from "./named-ranges.js";
-import { validateWritingPackage } from "../writing-package/index.js";
+import { parseWritingPackage } from "../writing-package/index.js";
 
 const fixturePath = join(dirname(fileURLToPath(import.meta.url)), "../../fixtures/google-docs/representative-writing-package.json");
 
 test("native document requests use heading styles, lists, quotes, and links instead of Markdown", async () => {
-  const pkg = validateWritingPackage(JSON.parse(readFileSync(fixturePath, "utf8")));
+  const pkg = parseWritingPackage(JSON.parse(readFileSync(fixturePath, "utf8")));
   const built = buildNativeDocument(pkg);
   assert.equal(looksLikeMarkdownDump(built.insertText), false);
   assert.equal(built.insertText.includes("**"), false);
@@ -24,7 +24,7 @@ test("native document requests use heading styles, lists, quotes, and links inst
   assert.ok(built.requests.some((request) => request.updateTextStyle?.textStyle.bold === true));
   assert.ok(built.requests.some((request) => request.updateTextStyle?.textStyle.italic === true));
   assert.ok(built.requests.some((request) => request.createNamedRange?.name === "ffcf_page_homepage"));
-  assert.ok(built.requests.some((request) => request.createNamedRange?.name === namedRangeForQuote("homepage", "rev.dana-m-springfield")));
+  assert.ok(built.requests.some((request) => request.createNamedRange?.name === namedRangeForQuote("homepage", "rev-dana-m-springfield")));
   const headingBold = built.requests.filter(
     (request) => request.updateTextStyle?.fields === "bold" && request.updateTextStyle.textStyle.bold === false,
   );
@@ -32,7 +32,7 @@ test("native document requests use heading styles, lists, quotes, and links inst
 });
 
 test("published native document round-trips page identity after an H1 change", async () => {
-  const pkg = validateWritingPackage(JSON.parse(readFileSync(fixturePath, "utf8")));
+  const pkg = parseWritingPackage(JSON.parse(readFileSync(fixturePath, "utf8")));
   const fake = new FakeGoogleTransport();
   const created = await fake.request<{ id: string }>({
     method: "POST",
@@ -55,15 +55,15 @@ test("published native document round-trips page identity after an H1 change", a
   const quote = imported.pages[0]?.blocks.find((block) => block.type === "quote");
   assert.ok(quote && quote.type === "quote");
   assert.equal(quote.attribution, "Dana M., Springfield");
-  assert.equal(quote.reviewId, "rev.dana-m-springfield");
-  assert.equal(built.insertText.includes("rev.dana-m-springfield"), false);
+  assert.equal(quote.reviewId, "rev-dana-m-springfield");
+  assert.equal(built.insertText.includes("rev-dana-m-springfield"), false);
   const restored = importedPackageFromReadback(pkg, imported);
   assert.equal(restored.pages[1]?.pageId, "leak-repair");
   assert.equal(restored.packageHash.length, 64);
 });
 
 test("human quote wording edits keep reviewId when the named range remains", async () => {
-  const pkg = validateWritingPackage(JSON.parse(readFileSync(fixturePath, "utf8")));
+  const pkg = parseWritingPackage(JSON.parse(readFileSync(fixturePath, "utf8")));
   const fake = new FakeGoogleTransport();
   const created = await fake.request<{ id: string }>({
     method: "POST",
@@ -84,12 +84,12 @@ test("human quote wording edits keep reviewId when the named range remains", asy
   const imported = importPagesFromDocument(document, pkg.pages);
   const quote = imported.pages[0]?.blocks.find((block) => block.type === "quote");
   assert.ok(quote && quote.type === "quote");
-  assert.equal(quote.reviewId, "rev.dana-m-springfield");
+  assert.equal(quote.reviewId, "rev-dana-m-springfield");
   assert.equal(quote.spans[0]?.text, "They came after hours and stopped the water.");
 });
 
 test("removed quote named range does not invent a review mapping", async () => {
-  const pkg = validateWritingPackage(JSON.parse(readFileSync(fixturePath, "utf8")));
+  const pkg = parseWritingPackage(JSON.parse(readFileSync(fixturePath, "utf8")));
   const fake = new FakeGoogleTransport();
   const created = await fake.request<{ id: string }>({
     method: "POST",
@@ -102,7 +102,7 @@ test("removed quote named range does not invent a review mapping", async () => {
     url: `https://docs.googleapis.com/v1/documents/${created.id}:batchUpdate`,
     body: { requests: built.requests },
   });
-  const document = fake.deleteNamedRange(created.id, namedRangeForQuote("homepage", "rev.dana-m-springfield"));
+  const document = fake.deleteNamedRange(created.id, namedRangeForQuote("homepage", "rev-dana-m-springfield"));
   const imported = importPagesFromDocument(document, pkg.pages);
   const quote = imported.pages[0]?.blocks.find((block) => block.type === "quote");
   assert.ok(quote && quote.type === "quote");

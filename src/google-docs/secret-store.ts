@@ -3,7 +3,10 @@ import { dirname, join } from "node:path";
 import { homedir } from "node:os";
 import { GoogleDocsError } from "./errors.js";
 import type { SecretStorePayload } from "./config.js";
-import { isRecord } from "../writing-package/types.js";
+
+function isRecord(value: unknown): value is Record<string, unknown> {
+  return typeof value === "object" && value !== null && !Array.isArray(value);
+}
 
 export const SECRET_STORE_RELATIVE = join(".config", "ff-content-factory", "google-oauth.json");
 
