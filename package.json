@@ -2,13 +2,17 @@
   "name": "ff-content-demo-factory",
   "version": "0.0.0",
   "private": true,
-  "description": "Repo-native Fluid Frame writer guides and deterministic local loader",
+  "description": "Fluid Frame Content Demo Factory: independent-thinking workflow, one-writer assignment, and repo-native writer guides",
   "type": "module",
   "main": "./dist/src/index.js",
   "types": "./dist/src/index.d.ts",
   "exports": {
     ".": "./dist/src/index.js",
-    "./writer-guides": "./dist/src/writer-guides/index.js"
+    "./writer-guides": "./dist/src/writer-guides/index.js",
+    "./workflow": "./dist/src/workflow/index.js",
+    "./handoff": "./dist/src/handoff/index.js",
+    "./writing-package": "./dist/src/writing-package/index.js",
+    "./publisher": "./dist/src/publisher/index.js"
   },
   "engines": {
     "node": ">=22"
@@ -16,10 +20,11 @@
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "check": "tsc -p tsconfig.json --noEmit",
-    "test": "node --import tsx --test src/writer-guides/*.test.ts",
+    "test": "node --import tsx --test src/writer-guides/*.test.ts src/handoff/*.test.ts src/workflow/*.test.ts src/writing-package/*.test.ts",
     "test:compiled": "npm run build && node scripts/assert-compiled-writer-guides.mjs",
     "test:all": "npm run check && npm test && npm run test:compiled",
-    "writer-guides:receipt": "node --import tsx src/writer-guides/cli.ts"
+    "writer-guides:receipt": "node --import tsx src/writer-guides/cli.ts",
+    "assignment:receipt": "node --import tsx src/workflow/cli.ts"
   },
   "devDependencies": {
     "@types/node": "^24.3.0",

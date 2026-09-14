@@ -4,13 +4,19 @@ export {
   STAGE_GUIDE_IDS,
   WRITER_GUIDES_DIR,
   WRITER_STAGES,
+  WRITING_ASSIGNMENT_GUIDE_IDS,
+  WRITING_PHASES,
+  WRITING_PHASE_TO_STAGE,
   catalogEntry,
   isGuideId,
   isWriterStage,
+  isWritingPhase,
   stageGuideIds,
+  writingPhaseGuideIds,
   type GuideCatalogEntry,
   type GuideId,
   type WriterStage,
+  type WritingPhase,
 } from "./catalog.js";
 export { canonicalizeManifest, manifestHash, sha256Hex, stageSetHash, type ManifestMember } from "./hash.js";
 export { parseHeadings, type GuideHeading } from "./parse.js";
@@ -21,8 +27,10 @@ export {
   loadGuideById,
   loadGuidesByIds,
   loadWriterStageGuides,
+  loadWritingAssignmentGuides,
   type GuideCatalogReceipt,
   type LoadGuidesOptions,
   type LoadedGuide,
   type StageGuideSet,
+  type WritingAssignmentGuideSet,
 } from "./loader.js";
