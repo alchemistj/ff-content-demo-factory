@@ -1,210 +1,61 @@
-# **Fluid Frame Demo Service Page Guide**
+# Fluid Frame Demo Service Page Guide
 
-## **Purpose**
+Write one decision-stage service page for a local customer who is already considering this service and deciding whom to hire.
 
-Write one decision-stage service page for a local customer who is already considering this service and deciding who to hire.  
-The page should prove that this business is a credible fit, explain the choices or process that matter, and make the next step obvious.  
-Do not write a blog post. Do not write the homepage again with a different H1.
+Prove that this business is a credible fit, explain the choices or process that matter, and make the next step obvious. Do not write a blog post. Do not write the homepage again with a different H1.
 
-## **Inputs to trust**
+Read `FLUID_FRAME_DEMO_WRITING_GUIDE.md` and the service-page examples before writing.
 
-Use:
+## The job of the page
 
-> * approved page prescription  
-> * approved URL and primary keyword  
-> * page evidence grade  
-> * recommended first review  
-> * full verified review inventory  
-> * confirmed facts and service evidence  
-> * finished sibling service page when available for duplication control  
-> * FLUID\_FRAME\_DEMO\_WRITING\_GUIDE.md
+The approved prescription names the URL, primary keyword, and job. This guide does not override it.
 
-The page prescription tells you the job of the page. This guide does not override it.
+Orient the customer quickly: who does this work, where, and why this company is a fit. Then go deep enough on **this** service that the homepage summary is not enough.
 
-## **Hero**
+Sibling service pages should own different customer decisions. Do not restate the other service page with swapped nouns.
 
-Use the shared Fluid Frame above-the-fold shape:
+## What to draw from the examples
 
-> * eyebrow  
-> * literal service \+ location H1 \+ Company Name  
-> * 2–3 short trust/differentiation sentences  
-> * high-commitment primary CTA
+Window Dudes glass repair, Window Dudes replacement, SRA roof replacement, SRA roof maintenance, Greene Planet inspection, and Greene Planet black mold remediation all do this job differently.
 
-Orient the customer immediately. Avoid clever slogans.
+Notice, rather than copying:
 
-# **Hero → First Section**
+- How the opening makes a specific case, not a slogan
+- How process, options, or diagnosis appear only where they help the buyer choose
+- How a distinctive offer (SRA Advantage, inspector-led repair-first, dry ice blasting) becomes a customer benefit
+- Where a quotation sits beside the benefit it supports
+- How the page ends on the same offer and contact path it started with
 
-The hero shape is the page's true opening. There is no separate headerless paragraph between the hero and the first body section — the page moves directly from hero into the first H2.
+## Depth and shape
 
-That first H2's opening paragraph:
+Build depth from evidence, not from a slot list.
 
-* Includes the primary keyword in the first sentence  
-* Runs 40–60 words  
-* Plainly answers what the service is and where it's offered
+Useful material often includes what the service includes, when customers call, repair vs. replace or other real options, materials or project types, what happens during the work, local context that actually affects the job, and a clear final CTA.
 
-This is only the *lead-in* paragraph, not the entire section. It sets up the section's point — the section itself continues with whatever additional content that topic needs (process detail, differentiators, proof points, etc.) before the next H2 begins. The 40–60 word count applies to that first paragraph only, never to the section as a whole.
+You do not need every section type. You do not need the same order on every service. Current example lengths are demonstrations, not required word counts.
 
-## **Build depth from evidence, not template slots**
+A recommended first review, section sketch, FAQ count, or word target in the packet is advisory.
 
-A strong service page often lands around **650–900+ body words** when the evidence supports that depth.  
-Do not pad thin evidence to hit a number.  
-Choose the sections that best help this customer decide. Useful possibilities include:
+## Hero
 
-> * what the service includes  
-> * problems or situations that lead customers to call  
-> * repair vs. replace / option selection  
-> * materials, products, systems, or project types  
-> * diagnosis or inspection approach  
-> * what happens during the work  
-> * installation or verification standards  
-> * timing variables  
-> * local/service-area context  
-> * service-specific reasons to choose this business  
-> * related built services  
-> * FAQ  
-> * final CTA
+A service page usually opens with a short orientation, a literal service + location heading, two or three specific trust sentences, and a real next step. Fit the words to the business. This is not a fill-in template.
 
-You do **not** need every section type. Do not force the same section order onto every service or business.
+Move from that opening into the first real section. Do not park a headerless essay between the hero and the first H2.
 
-## **Service scope**
+## Decision help
 
-Be concrete.  
-Use confirmed:
+Explain real choices without manufacturing promises: repair vs. replacement, what changes scope, what the visit is for, what to expect.
 
-> * sub-services  
-> * installation types  
-> * repairs  
-> * materials  
-> * equipment  
-> * products  
-> * project types  
-> * property types
+Only write process the evidence supports. Do not invent response times or standard operating procedures.
 
-Do not add common industry services merely because they are plausible.  
-A concrete completed-work review can support the fact that the business performs that service. Do not discard direct customer evidence simply because the first-party site is thin.
+## Local context
 
-## **Decision help**
+Use confirmed geography only. Natural local detail is useful when it truly affects the service or the decision.
 
-Focus on what a buyer needs to choose confidently.  
-Good decision-stage writing explains real choices without manufacturing promises.  
-Examples:
+## FAQ
 
-> * when a repair makes sense vs. replacement  
-> * what changes the scope of the job  
-> * what the technician is trying to diagnose  
-> * what options a customer may need to choose between  
-> * what to expect during installation
+Use FAQ when it removes real buyer friction. Do not manufacture questions to hit a count. Do not invent pricing, guarantees, availability, or timelines.
 
-Only write process steps the evidence supports. Do not invent response times or standard operating procedures.
+## Finish
 
-## **Differentiation**
-
-Use service-specific proof whenever possible.  
-Better differentiators come from:
-
-> * direct completed-work evidence  
-> * specific process or diagnosis behavior  
-> * specialized project experience  
-> * credentials  
-> * ownership/tenure  
-> * product/material experience  
-> * customer communication pattern  
-> * documented 24/7/emergency availability when supported  
-> * real estimate/warranty/financing policies when confirmed
-
-Avoid generic “quality,” “reliable,” or “customer satisfaction” bullets.
-
-## **Reviews: required proof pattern**
-
-Follow the evidence grade supplied upstream.
-
-### **Grade A**
-
-Use 3 reviews:
-
-> * one lead  
-> * two supporting
-
-### **Grade B**
-
-Use 2 reviews:
-
-> * one lead  
-> * one supporting
-
-### **Grade C**
-
-Use one suitable review if suitable evidence exists. Zero is allowed only when no suitable review exists.
-
-### **Lead review**
-
-Start from the prescription's recommended first review.  
-It should normally be the review that most directly proves the core service or page angle.  
-You may choose another verified lead when the written page makes another review clearly stronger. Record why.
-
-### **Placement**
-
-> * No two reviews adjacent.  
-> * No dedicated testimonial block.  
-> * Keep each review within roughly 150 words of the claim it proves.  
-> * Supporting reviews may prove workmanship, responsiveness, price, communication, trust, or another nearby claim; they do not need to repeat the service keyword.
-
-If suitable anchors exist and this page uses zero reviews, it fails.
-
-## **Local context**
-
-Use confirmed geography only.  
-Do not invent:
-
-> * neighborhoods  
-> * nearby cities  
-> * counties  
-> * job locations  
-> * weather expertise  
-> * code expertise  
-> * “surrounding areas” unless supported
-
-Natural local context is useful when it truly affects the service or customer decision.
-
-## **Images**
-
-The writer may flag useful approved prospect-owned image URLs or visual subjects when they materially support the page.  
-Do not prescribe exact layout.  
-Prospect-hosted images are later-build **below-fold only** and should be attributed to the prospect/source domain. Never rely on them for the hero.
-
-## **FAQ**
-
-Use FAQ when it removes real buyer friction.  
-Five to seven questions remains a useful target when the page has enough decision-stage questions, but do not manufacture filler simply to hit a count.  
-Good questions address:
-
-> * scope  
-> * options  
-> * process  
-> * service area  
-> * what to expect  
-> * related service decisions
-
-Do not invent pricing, guarantees, availability, warranties, or timelines.
-
-## **Final CTA**
-
-End with a clear next step that matches the approved contact path.  
-Repeat the same business offer/phone hierarchy. Do not introduce a new promise at the bottom of the page.
-
-## **Service-page hard failures**
-
-Revise the page if:
-
-> * it targets the wrong intent or overlaps a sibling page  
-> * the opening does not answer what/where/who quickly  
-> * a service, process, offer, outcome, or local claim is unsupported  
-> * the page is mostly generic contractor prose  
-> * direct evidence exists but the page ignores it  
-> * suitable review anchors exist and zero reviews are used  
-> * review floor for the page grade is missed  
-> * reviews are adjacent or clumped in a testimonial section  
-> * a review is more than roughly 150 words from the claim it is meant to prove  
-> * review text/attribution is inaccurate  
-> * the page repeats the sibling service page instead of owning its own customer decision  
-> * demo/audit/Fluid Frame language leaks into the business page
+End with the approved contact path. Repeat the same offer and phone hierarchy. Do not introduce a new promise in the last block.

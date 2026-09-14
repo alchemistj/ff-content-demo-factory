@@ -14,19 +14,19 @@ import { dirname, join, resolve, sep } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 
 const EXPECTED_MANIFEST =
-  "942c567fc7011f8d7576ce84dedfc679705d323dbe2039aa77cb7e975c7ad37e";
+  "0a1e5b3d8289efed2e9a2a9d31cec82c04d75de087a8e30fae5254dc6a221d05";
 const EXPECTED_GUIDE_SHA256 = Object.freeze({
-  general: "7852b1b444723b5c003ec517651f3a94332b395f692b2eec117c06a62489e0d2",
-  service: "b013b5b962411c67a565e2d681c2fd71ae95d3447fb5cbd190d8d67e148e1bc7",
-  homepage: "3e1b492b80e6f101613d924fad366805ced4918e7892438e827e0946016017cc",
-  contact: "4cdaf7f6c7724aa6b052aad21f898817f0b5ef059750023a92a967cd59ddf574",
-  headerFooter: "6df297ba5cc076382950de2df7161494c64c76db6af644fba717284640bfa8df",
-  readme: "671712749521c34233f126cc78c8917e86576692c6effab9007f5b49e9cd2764",
+  general: "cd54af56ab604efd62cd12355f3bc64c309d9c9677fd4e0592e23f2a87292abe",
+  service: "c2225e3e5561ec69de4f3738dbf2b75a9b8d60fecc24bfc2e5c39f9915b1cfb5",
+  homepage: "0c3292f44a0e855844f5c91d89f451398a86c91acfe3acf38cc61d6bf57721ea",
+  contact: "0673e245abdb9c6c8cd91ba3f47ff92d05305ffdfdf3a5ade3b8c19a8dd5a57c",
+  headerFooter: "9f6192c2e126581a3ce1aefcf5d632c00583fe9bb8201aafe81ec3c14d8fa5f8",
+  readme: "cd058eeb9601746ba13eeae1efac4e195f2ad6d97acb6b1bc36f90ed80b7a726",
 });
 const EXPECTED_SET_HASH = Object.freeze({
-  writer1: "b6b4bfa27be4bfde1a6a25e8a3547973a3c75ccf5e8e47137b3d4094dbb32206",
-  writer2: "082eb65038fbe8e68c18c14e17ff5c128bbfa24ac17ec6705c21353347a125e8",
-  writer3: "395d11721da5ebab45d57fb76f1a77580d904b863bb177310305421a99b23ed1",
+  writer1: "23c797572e419b69fccbf4b306eff7203a58ed570b101434bdee9b6944db86f7",
+  writer2: "fcf22e7f07332e01eaa3479df1519cbb6316f418eb261cecd58b80b8e2699fe4",
+  writer3: "7b8de953190d9949cd8af92f4b6b8fa7bea6428a401d88bb7f672714b8fca302",
 });
 
 const scriptDir = dirname(fileURLToPath(import.meta.url));
@@ -35,11 +35,14 @@ const pkg = JSON.parse(readFileSync(join(repoRoot, "package.json"), "utf8"));
 assert.equal(pkg.name, "ff-content-demo-factory");
 assert.equal(pkg.exports?.["."], "./dist/src/index.js");
 assert.equal(pkg.exports?.["./writer-guides"], "./dist/src/writer-guides/index.js");
+assert.equal(pkg.exports?.["./approved-copy"], "./dist/src/approved-copy/index.js");
 
 const mainExportPath = join(repoRoot, pkg.exports["."]);
 const guidesExportPath = join(repoRoot, pkg.exports["./writer-guides"]);
+const approvedCopyExportPath = join(repoRoot, pkg.exports["./approved-copy"]);
 assert.equal(existsSync(mainExportPath), true, `missing compiled main export: ${mainExportPath}`);
 assert.equal(existsSync(guidesExportPath), true, `missing compiled writer-guides export: ${guidesExportPath}`);
+assert.equal(existsSync(approvedCopyExportPath), true, `missing compiled approved-copy export: ${approvedCopyExportPath}`);
 assert.equal(existsSync(join(repoRoot, "dist/docs/writer-guides")), false);
 
 const block = () => {
@@ -51,16 +54,20 @@ globalThis.fetch = block;
 
 const main = await import(pathToFileURL(mainExportPath).href);
 const guides = await import(pathToFileURL(guidesExportPath).href);
+const approvedCopy = await import(pathToFileURL(approvedCopyExportPath).href);
 
 assert.equal(typeof main.loadWriterStageGuides, "function");
 assert.equal(typeof main.loadCanonicalGuideCatalog, "function");
 assert.equal(typeof main.loadWritingAssignmentGuides, "function");
+assert.equal(typeof main.loadApprovedCopyCatalog, "function");
 assert.equal(typeof main.discoverAssignment, "function");
 assert.equal(typeof main.runFactory, "function");
 assert.equal(typeof main.retryPublication, "function");
 assert.equal(typeof main.defaultRepoRoot, "function");
 assert.equal(typeof guides.loadWriterStageGuides, "function");
 assert.equal(typeof guides.defaultRepoRoot, "function");
+assert.equal(typeof approvedCopy.loadApprovedCopyCatalog, "function");
+assert.equal(approvedCopy.EXAMPLE_IDS.length, 12);
 
 const distLoaderPath = join(repoRoot, "dist/src/writer-guides/loader.js");
 const naiveFromCompiledLoader = resolve(dirname(distLoaderPath), "../..");
