@@ -27,10 +27,27 @@ function manifestText(repoRoot = defaultRepoRoot()): string {
   return readFileSync(join(repoRoot, MANIFEST_PATH), "utf8");
 }
 
-test("approved-copy catalog has twelve Springfield slots with pinned git refs", () => {
-  assert.equal(EXAMPLE_IDS.length, 12);
-  assert.equal(EXPECTED_COMPLETE_EXAMPLE_IDS.length, 11);
-  assert.equal(EXAMPLE_CATALOG["wd-repair"].status, "corpus-gap");
+test("approved-copy catalog is the exact twelve-page Springfield set with pinned git refs", () => {
+  assert.deepEqual([...EXAMPLE_IDS], [
+    "wd-home",
+    "wd-glass",
+    "wd-replace",
+    "wd-contact",
+    "sra-home",
+    "sra-replace",
+    "sra-maint",
+    "sra-contact",
+    "gp-home",
+    "gp-inspect",
+    "gp-black",
+    "gp-contact",
+  ]);
+  assert.equal((EXAMPLE_IDS as readonly string[]).includes("wd-repair"), false);
+  assert.equal(EXPECTED_COMPLETE_EXAMPLE_IDS.length, 12);
+  assert.equal(EXAMPLE_CATALOG["wd-home"].route, "/");
+  assert.equal(EXAMPLE_CATALOG["wd-glass"].route, "/springfield/glass-repair/");
+  assert.equal(EXAMPLE_CATALOG["wd-replace"].route, "/springfield/replacement-window-installation/");
+  assert.equal(EXAMPLE_CATALOG["wd-contact"].route, "/contact/");
   assert.equal(EXAMPLE_CATALOG["gp-home"].route, "/");
   assert.equal(EXAMPLE_CATALOG["sra-home"].route, "/springfield/");
   assert.equal(EXAMPLE_CATALOG["sra-replace"].route, "/springfield/roof-replacement/");
@@ -39,8 +56,6 @@ test("approved-copy catalog has twelve Springfield slots with pinned git refs", 
   assert.equal(EXAMPLE_CATALOG["gp-inspect"].route, "/springfield/mold-inspection-testing/");
   assert.equal(EXAMPLE_CATALOG["gp-black"].route, "/springfield/black-mold-remediation/");
   assert.equal(EXAMPLE_CATALOG["gp-contact"].route, "/springfield/contact/");
-  assert.equal(EXAMPLE_CATALOG["wd-replace"].route, "/springfield/replacement-window-installation/");
-  assert.equal(EXAMPLE_CATALOG["wd-contact"].route, "/contact/");
   assert.equal(EXAMPLE_CATALOG["wd-home"].requiredSha, "5a3019ac2f9c89e588ff03bb916aca3b4476a2e5");
   assert.equal(EXAMPLE_CATALOG["sra-contact"].requiredSha, "f3f22a8154555cc762593c41947a5f2c6d4a2832");
   assert.equal(EXAMPLE_CATALOG["gp-home"].requiredSha, "f9047501d167bd4977a61012d519ae06e9a169c8");
@@ -72,8 +87,7 @@ test("an example marked complete/approved cannot use SHA-unavailable, source-una
   }
 });
 
-test("the Springfield set has eleven git-complete examples; Window Dudes window repair is the one corpus gap", () => {
-  assert.equal(EXAMPLE_CATALOG["wd-repair"].status, "corpus-gap");
+test("all twelve Springfield examples must be git-complete; Vercel/HTML snapshots are not approved", () => {
   for (const id of EXPECTED_COMPLETE_EXAMPLE_IDS) {
     const entry = EXAMPLE_CATALOG[id];
     assert.equal(entry.status, "complete", `${id} must be git-complete; Vercel/HTML snapshots are not approved`);
@@ -98,15 +112,16 @@ test("complete examples are readable customer-facing Markdown with headings and 
   }
 });
 
-test("Window Dudes window-repair slot is a corpus gap, not a homepage duplicate", () => {
-  const repair = loadExampleById("wd-repair");
+test("Window Dudes glass repair is a distinct service route, not a homepage duplicate", () => {
+  const glass = loadExampleById("wd-glass");
   const home = loadExampleById("wd-home");
-  assert.equal(repair.status, "corpus-gap");
-  assert.notEqual(repair.markdown, home.markdown);
-  assert.match(repair.markdown, /corpus gap/i);
-  assert.equal(repair.markdown.includes("# Window Repair"), false);
-  assert.match(repair.markdown, /5a3019ac2f9c89e588ff03bb916aca3b4476a2e5/);
-  assert.equal(/silently substitute the homepage/i.test(repair.markdown), true);
+  assert.equal(glass.route, "/springfield/glass-repair/");
+  assert.equal(home.route, "/");
+  assert.notEqual(glass.route, home.route);
+  assert.notEqual(glass.relativePath, home.relativePath);
+  assert.notEqual(glass.markdown, home.markdown);
+  assert.match(glass.markdown, /\/springfield\/glass-repair\//);
+  assert.match(glass.markdown, /5a3019ac2f9c89e588ff03bb916aca3b4476a2e5/);
 });
 
 test("SRA Springfield contact names repository source files, not a production 404", () => {

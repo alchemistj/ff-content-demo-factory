@@ -16,7 +16,7 @@ Sibling service pages should own different customer decisions. Do not restate th
 
 ## What to draw from the examples
 
-Window Dudes replacement, SRA roof replacement, SRA roof maintenance, Greene Planet inspection, and Greene Planet black mold remediation all do this job differently.
+Window Dudes glass repair, Window Dudes replacement, SRA roof replacement, SRA roof maintenance, Greene Planet inspection, and Greene Planet black mold remediation all do this job differently.
 
 Notice, rather than copying:
 

@@ -570,9 +570,9 @@ PAGES = [
     },
     {
         "business": "window-dudes",
-        "id": "window-repair",
-        "html": "/tmp/ff-extract/window-dudes/homepage.html",
-        "out": "examples/approved-copy/window-dudes/springfield-window-repair.md",
+        "id": "glass-repair",
+        "html": "/tmp/ff-extract/window-dudes/glass-repair.html",
+        "out": "examples/approved-copy/window-dudes/springfield-glass-repair.md",
     },
     {
         "business": "window-dudes",

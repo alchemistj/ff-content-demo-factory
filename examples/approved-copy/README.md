@@ -7,7 +7,7 @@ The guides in `docs/writer-guides/` name the job. Approved pages show how that j
 ## How to use them
 
 1. Read the overall writing guide, then the page-role guide for the page you are writing.
-2. Read the matching **complete** examples for that page role (two or three is enough). Skip pending-git and corpus-gap files.
+2. Read the matching **complete** examples for that page role (two or three is enough). Skip pending-git placeholders.
 3. Notice rhythm, proof placement, decision help, and how claims stay inside the evidence — not sentence patterns to reuse.
 4. Write the current prospect’s pages from the current prospect packet. Window Dudes, SRA, and Greene Planet facts stay with those businesses.
 
@@ -17,7 +17,7 @@ The lengths you see on complete examples are the lengths of those sites. They ar
 
 ## The set
 
-Status: **11 pending git extraction**, **1 corpus gap**. See [SOURCE_MANIFEST.md](SOURCE_MANIFEST.md).
+Status: **12 pending git extraction**. See [SOURCE_MANIFEST.md](SOURCE_MANIFEST.md).
 
 ### Window Dudes
 
@@ -26,11 +26,11 @@ Required ref: `alchemistj/window-dudes` `main` @ `5a3019ac2f9c89e588ff03bb916aca
 | Page | File | Route | Status |
 | --- | --- | --- | --- |
 | Homepage | [window-dudes/homepage.md](window-dudes/homepage.md) | `/` | pending-git |
-| Springfield window repair | [window-dudes/springfield-window-repair.md](window-dudes/springfield-window-repair.md) | (none at pinned SHA) | **corpus-gap** |
+| Glass repair | [window-dudes/springfield-glass-repair.md](window-dudes/springfield-glass-repair.md) | `/springfield/glass-repair/` | pending-git |
 | Replacement window installation | [window-dudes/springfield-replacement-window-installation.md](window-dudes/springfield-replacement-window-installation.md) | `/springfield/replacement-window-installation/` | pending-git |
 | Contact | [window-dudes/contact.md](window-dudes/contact.md) | `/contact/` | pending-git |
 
-The homepage is not counted as the Window Repair example. Architect/Josh can choose a replacement fourth page.
+Glass Repair is the Window Dudes repair-side service example. There is no dedicated `/springfield/window-repair/` page at this SHA, and the homepage is not counted twice.
 
 Shared header and footer: [window-dudes/_chrome.md](window-dudes/_chrome.md) (pending git extraction).
 

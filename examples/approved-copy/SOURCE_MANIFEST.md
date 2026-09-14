@@ -19,7 +19,7 @@ SRA SHA is the recovery-branch head named in the architect review. Extract from 
 | ID | Business | Page | Route | Repository | Branch / ref | SHA | Source files | Status |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | wd-home | Window Dudes | Homepage | `/` | `alchemistj/window-dudes` | `main` | `5a3019ac2f9c89e588ff03bb916aca3b4476a2e5` | Not read — clone failed | pending-git |
-| wd-repair | Window Dudes | Springfield window repair | (none) | `alchemistj/window-dudes` | `main` | `5a3019ac2f9c89e588ff03bb916aca3b4476a2e5` | No distinct approved page artifact at this SHA | **corpus-gap** |
+| wd-glass | Window Dudes | Glass repair | `/springfield/glass-repair/` | `alchemistj/window-dudes` | `main` | `5a3019ac2f9c89e588ff03bb916aca3b4476a2e5` | Not read — clone failed | pending-git |
 | wd-replace | Window Dudes | Replacement window installation | `/springfield/replacement-window-installation/` | `alchemistj/window-dudes` | `main` | `5a3019ac2f9c89e588ff03bb916aca3b4476a2e5` | Not read — clone failed | pending-git |
 | wd-contact | Window Dudes | Contact | `/contact/` | `alchemistj/window-dudes` | `main` | `5a3019ac2f9c89e588ff03bb916aca3b4476a2e5` | Not read — clone failed | pending-git |
 | sra-home | SRA | Springfield homepage | `/springfield/` | `alchemistj/sra-roofing-website` | `reconcile/sra-local-recovery-2026-09-09` | `f3f22a8154555cc762593c41947a5f2c6d4a2832` | Not read — clone failed | pending-git |
@@ -31,22 +31,12 @@ SRA SHA is the recovery-branch head named in the architect review. Extract from 
 | gp-black | Greene Planet | Black mold remediation | `/springfield/black-mold-remediation/` | `alchemistj/greene-planet-website` | `main` | `f9047501d167bd4977a61012d519ae06e9a169c8` | Not read — clone failed | pending-git |
 | gp-contact | Greene Planet | Contact | `/springfield/contact/` | `alchemistj/greene-planet-website` | `main` | `f9047501d167bd4977a61012d519ae06e9a169c8` | Not read — clone failed | pending-git |
 
-None of the twelve slots are marked `complete`. Catalog tests require the eleven non-gap pages to be git-complete; that assertion is supposed to fail until a runtime that can clone the client repositories extracts them.
+None of the twelve slots are marked `complete`. Catalog tests require all twelve pages to be git-complete; that assertion is supposed to fail until a runtime that can clone the client repositories extracts them.
 
-## Window Dudes window repair (corpus gap)
-
-Do not count the homepage as the Window Repair example.
-
-At SHA `5a3019ac2f9c89e588ff03bb916aca3b4476a2e5`, composition checks of the published route table found no dedicated Josh-approved Window Repair / residential-repair page:
-
-- No `/springfield/window-repair/` route.
-- `/residential-window-repairs/` → `/` (old residential repair page folded into the homepage; explicitly not `glass-repair`).
-- `/springfield/glass-repair/` is a different service and was not substituted.
-
-Git history could not be walked because the repository could not be cloned. If an unpublished repair artifact exists only in history, it is still not a distinct approved page at this SHA. Architect/Josh should pick a replacement fourth Window Dudes page.
+There is no `wd-repair` slot. Window Dudes’ repair-side example is Glass Repair at `/springfield/glass-repair/`. The homepage is not counted twice. There is no dedicated `/springfield/window-repair/` page at the pinned SHA.
 
 ## Clone access on this SCM agent
 
-`GET /installation/repositories` for this GitHub App token returns only `alchemistj/ff-content-demo-factory`. `git clone` of the three client repositories returns `Repository not found`. A later runtime with read access to those repos should extract from the SHAs above, fill `source files`, set catalog `status: "complete"` with `copyAuthority: "git-repository"`, and leave `wd-repair` as the corpus gap unless a replacement page is chosen.
+`GET /installation/repositories` for this GitHub App token returns only `alchemistj/ff-content-demo-factory`. `git clone` of the three client repositories returns `Repository not found`. A later runtime with read access to those repos should extract from the SHAs above, fill `source files`, and set catalog `status: "complete"` with `copyAuthority: "git-repository"`.
 
 Client repositories must stay read-only.

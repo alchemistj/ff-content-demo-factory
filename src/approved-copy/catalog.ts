@@ -17,7 +17,7 @@ export const APPROVED_COPY_DIR = "examples/approved-copy";
 
 export const EXAMPLE_IDS = Object.freeze([
   "wd-home",
-  "wd-repair",
+  "wd-glass",
   "wd-replace",
   "wd-contact",
   "sra-home",
@@ -32,7 +32,7 @@ export const EXAMPLE_IDS = Object.freeze([
 
 export type ExampleId = (typeof EXAMPLE_IDS)[number];
 
-export type ExampleStatus = "complete" | "corpus-gap" | "pending-git";
+export type ExampleStatus = "complete" | "pending-git";
 
 export interface ExampleCatalogEntry {
   readonly id: ExampleId;
@@ -46,8 +46,6 @@ export interface ExampleCatalogEntry {
   readonly requiredSha: string;
   readonly provenance: ExampleProvenance | null;
 }
-
-const WD = REQUIRED_CLIENT_REFS["window-dudes"];
 
 function pending(
   entry: Omit<
@@ -74,17 +72,12 @@ export const EXAMPLE_CATALOG: Readonly<Record<ExampleId, ExampleCatalogEntry>> =
     route: "/",
     relativePath: `${APPROVED_COPY_DIR}/window-dudes/homepage.md`,
   }),
-  "wd-repair": Object.freeze({
-    id: "wd-repair",
+  "wd-glass": pending({
+    id: "wd-glass",
     business: "window-dudes",
-    title: "Window Dudes Springfield window repair",
-    route: "(no distinct approved page artifact at pinned SHA)",
-    relativePath: `${APPROVED_COPY_DIR}/window-dudes/springfield-window-repair.md`,
-    status: "corpus-gap",
-    requiredRepository: WD.repository,
-    requiredRef: WD.ref,
-    requiredSha: WD.sha,
-    provenance: null,
+    title: "Window Dudes Springfield glass repair",
+    route: "/springfield/glass-repair/",
+    relativePath: `${APPROVED_COPY_DIR}/window-dudes/springfield-glass-repair.md`,
   }),
   "wd-replace": pending({
     id: "wd-replace",
@@ -158,9 +151,7 @@ export const EXAMPLE_CATALOG: Readonly<Record<ExampleId, ExampleCatalogEntry>> =
   }),
 });
 
-export const EXPECTED_COMPLETE_EXAMPLE_IDS = Object.freeze(
-  EXAMPLE_IDS.filter((id) => id !== "wd-repair"),
-);
+export const EXPECTED_COMPLETE_EXAMPLE_IDS = EXAMPLE_IDS;
 
 export function isExampleId(value: string): value is ExampleId {
   return (EXAMPLE_IDS as readonly string[]).includes(value);

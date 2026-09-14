@@ -29,7 +29,7 @@ examples/approved-copy/sra/
 examples/approved-copy/greene-planet/
 ```
 
-Twelve Springfield reference slots (homepage, two services, contact for each business). Approved examples must be extracted from the pinned client git refs in `SOURCE_MANIFEST.md`, not from Vercel or production HTML. Window Dudes window repair is a reported corpus gap if no distinct approved page exists at that SHA. See `examples/approved-copy/README.md`.
+Twelve Springfield reference slots (homepage, two services, contact for each business). Approved examples must be extracted from the pinned client git refs in `SOURCE_MANIFEST.md`, not from Vercel or production HTML. Window Dudes’ repair-side example is Glass Repair (`/springfield/glass-repair/`), not a homepage duplicate. See `examples/approved-copy/README.md`.
 
 ## What to read by writing stage
 
