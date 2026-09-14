@@ -1,60 +1,41 @@
-# **FF Content Demo Factory — Writer Guide Set**
+# FF Content Demo Factory — Writer Guide Set
 
-These five documents are the writer-facing authority set for FF Content Demo Factory.  
-The goal is to give writing agents enough direction to produce unmistakably Fluid Frame demo copy without feeding them several generations of overlapping rules or turning them into form-fillers.
+These documents, plus the Springfield examples, are the writer-facing authority for FF Content Demo Factory.
 
-## **The five guides**
+The goal is confident, specific, customer-facing business copy, with customer quotations supporting the business’s benefits and a clear path to action.
 
-> 1. FLUID\_FRAME\_DEMO\_WRITING\_GUIDE.md  
-   * Overall voice, truth, page agency, review-proof rules, cross-stage continuity, SEO/craft, and Strategy Overview boundary.  
-> 2. SERVICE\_PAGE\_GUIDE.md  
-   * Used by Copy Agent 1 for the two service pages.  
-> 3. HOMEPAGE\_GUIDE.md  
-   * Used by Copy Agent 2 after the service pages are finished.  
-> 4. CONTACT\_PAGE\_GUIDE.md  
-   * Used by Copy Agent 2 for the intentionally lean contact page.  
-> 5. HEADER\_FOOTER\_GUIDE.md  
-   * Used by Copy Agent 2 for sitewide business chrome.
+Teach primarily from the examples. Keep this framework small. Human QA is the editorial gate.
 
-## **Read order by copy stage**
+## What to read
 
-### **Copy Agent 1 — Service pages**
+1. [FLUID_FRAME_DEMO_WRITING_GUIDE.md](FLUID_FRAME_DEMO_WRITING_GUIDE.md) — overall job, truth, judgment, quotations, mobile/emphasis, Strategy Overview boundary
+2. The page-role guide for the pages you are writing
+3. [Approved Springfield examples](../../examples/approved-copy/README.md) — finished work from Window Dudes, SRA, and Greene Planet
+4. The approved prescription and evidence packet for the **current** prospect
 
-Read:
+### Page-role guides
 
-> * FLUID\_FRAME\_DEMO\_WRITING\_GUIDE.md  
-> * SERVICE\_PAGE\_GUIDE.md  
-> * approved page prescription and evidence packet
+- [SERVICE_PAGE_GUIDE.md](SERVICE_PAGE_GUIDE.md) — Writer 1, two service pages
+- [HOMEPAGE_GUIDE.md](HOMEPAGE_GUIDE.md) — Writer 2, homepage
+- [CONTACT_PAGE_GUIDE.md](CONTACT_PAGE_GUIDE.md) — Writer 2, contact
+- [HEADER_FOOTER_GUIDE.md](HEADER_FOOTER_GUIDE.md) — Writer 2, sitewide chrome
 
-Write only the two service pages.
+## Read order by copy stage
 
-### **Copy Agent 2 — Homepage \+ Contact \+ Header/Footer**
+### Writer 1 — Service pages
 
-Read:
+Read the overall guide, the service guide, the service-page examples, and the approved packet. Write only the two service pages.
 
-> * FLUID\_FRAME\_DEMO\_WRITING\_GUIDE.md  
-> * HOMEPAGE\_GUIDE.md  
-> * CONTACT\_PAGE\_GUIDE.md  
-> * HEADER\_FOOTER\_GUIDE.md  
-> * the finished service pages  
-> * approved page prescription and evidence packet
+### Writer 2 — Homepage, contact, header, footer
 
-Write the homepage, contact page, header, and footer so they feel like the same website as the completed service pages.
+Read the overall guide, the homepage/contact/chrome guides, the matching examples, the finished service pages, and the packet. Write homepage, contact, header, and footer so they feel like the same website.
 
-### **Copy Agent 3 — Strategy Overview**
+### Writer 3 — Strategy Overview
 
-Read:
+Read the overall guide, the completed business-facing site, and the original audit/prescription. Write the Strategy Overview last so it describes the website that actually exists.
 
-> * FLUID\_FRAME\_DEMO\_WRITING\_GUIDE.md  
-> * the completed service pages, homepage, contact page, header, and footer  
-> * the original audit and page prescription
+## Catalog note
 
-Write the Strategy Overview last so it describes the website that actually exists.
+This README remains the human-readable index for the six-file writer-guide catalog. Example pages live under `examples/approved-copy/` and load separately so the workflow lane can keep its current guide assignment path.
 
-## **Review-proof rule in one sentence**
-
-Use the page's upstream evidence grade to determine the review floor, distribute reviews beside the claims they prove, never clump them into a testimonial block, and never let a suitable review anchor disappear from a sales page without a reason.
-
-## **Authority**
-
-For writing work in the new content factory, these five guides should replace—not sit beside—older overlapping writer instructions. Machine schemas and approved prospect artifacts still govern structure and facts. The writer should not be fed deprecated or duplicate craft guides at the same time.
+Upstream research and prescription recommendations use may-language. Writers use judgment. Humans perform final editorial QA.
