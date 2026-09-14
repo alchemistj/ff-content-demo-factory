@@ -1,13 +1,7 @@
 import { GoogleDocsError } from "./errors.js";
 import type { DocsBody, DocsDocument, DocsNamedRanges, DocsStructuralElement, DocsTab } from "./google-rest.js";
-import {
-  namedRangeForPage,
-  type ContentBlock,
-  type PageRole,
-  type TextSpan,
-  type WritingPackage,
-  type WritingPackagePage,
-} from "./writing-package.js";
+import { namedRangeForPage, parseQuoteNamedRange } from "./named-ranges.js";
+import { buildWritingPackage, type ContentBlock, type PageRole, type TextSpan, type WritingPackage, type WritingPackagePage } from "../writing-package/index.js";
 
 export interface ImportReadback {
   readonly documentId: string;
@@ -54,7 +48,7 @@ export function assertImportableDocument(document: DocsDocument): {
 
 export function importPagesFromDocument(
   document: DocsDocument,
-  expected: readonly Pick<WritingPackagePage, "pageId" | "role" | "readingOrder" | "route">[],
+  expected: readonly Pick<WritingPackagePage, "pageId" | "role" | "readingOrder" | "route" | "audience">[],
 ): ImportReadback {
   const { body } = assertImportableDocument(document);
   const ranges = namedRangeMap(document.namedRanges);
@@ -76,7 +70,7 @@ export function importPagesFromDocument(
     if (slice.length === 0) {
       throw new GoogleDocsError("import_identity_mismatch", `Named range ${name} did not cover any paragraphs.`);
     }
-    pages.push(blocksFromParagraphs(expectedPage, slice));
+    pages.push(blocksFromParagraphs(expectedPage, slice, ranges));
   }
 
   const result: ImportReadback = {
@@ -95,16 +89,13 @@ export function importedPackageFromReadback(
   original: WritingPackage,
   readback: ImportReadback,
 ): WritingPackage {
-  const next: WritingPackage = {
-    schemaVersion: original.schemaVersion,
+  return buildWritingPackage({
     kind: original.kind,
-    packageId: original.packageId,
     prospectId: original.prospectId,
+    runId: original.runId,
     businessName: original.businessName,
     pages: readback.pages,
-  };
-  if (original.runId !== undefined) return { ...next, runId: original.runId };
-  return next;
+  });
 }
 
 interface ParagraphRead {
@@ -158,8 +149,9 @@ function listKind(listId: string | undefined, document: DocsDocument): "UL" | "O
 }
 
 function blocksFromParagraphs(
-  expected: Pick<WritingPackagePage, "pageId" | "role" | "readingOrder" | "route">,
+  expected: Pick<WritingPackagePage, "pageId" | "role" | "readingOrder" | "route" | "audience">,
   paragraphs: readonly ParagraphRead[],
+  ranges: Map<string, { startIndex: number; endIndex: number }>,
 ): WritingPackagePage {
   const titleParagraph = paragraphs.find((paragraph) => paragraph.namedStyleType === "HEADING_1") ?? paragraphs[0];
   const title = titleParagraph?.raw ?? expected.pageId;
@@ -191,14 +183,21 @@ function blocksFromParagraphs(
       blocks.push({ type: "list", ordered: paragraph.list === "OL", items });
       continue;
     }
-    if (isItalicParagraph(paragraph) && rest[i + 1]?.raw.startsWith("— ")) {
-      const attribution = rest[i + 1]?.raw.replace(/^— /, "") ?? "";
-      i += 1;
-      const quote: { type: "quote"; spans: TextSpan[]; attribution?: string } = {
+    const reviewId = reviewIdForParagraph(expected.pageId, paragraph, ranges);
+    if (reviewId || (isItalicParagraph(paragraph) && rest[i + 1]?.raw.startsWith("— "))) {
+      const attribution = rest[i + 1]?.raw.startsWith("— ") ? rest[i + 1]?.raw.replace(/^— /, "") ?? "" : "";
+      if (attribution) i += 1;
+      const quote: {
+        type: "quote";
+        spans: TextSpan[];
+        attribution?: string;
+        reviewId?: string;
+      } = {
         type: "quote",
         spans: paragraph.spans.map(stripForcedItalic),
       };
       if (attribution) quote.attribution = attribution;
+      if (reviewId) quote.reviewId = reviewId;
       blocks.push(quote);
       continue;
     }
@@ -208,12 +207,29 @@ function blocksFromParagraphs(
   const page: WritingPackagePage = {
     pageId: expected.pageId,
     role: expected.role as PageRole,
+    audience: expected.audience,
     readingOrder: expected.readingOrder,
     title,
     blocks,
   };
   if (expected.route !== undefined) return { ...page, route: expected.route };
   return page;
+}
+
+function reviewIdForParagraph(
+  pageId: string,
+  paragraph: ParagraphRead,
+  ranges: Map<string, { startIndex: number; endIndex: number }>,
+): string | undefined {
+  for (const [name, range] of ranges) {
+    const parsed = parseQuoteNamedRange(name);
+    if (!parsed || parsed.pageId !== pageId) continue;
+    const overlaps = paragraph.start < range.endIndex && paragraph.end > range.startIndex;
+    if (overlaps) {
+      return parsed.reviewId;
+    }
+  }
+  return undefined;
 }
 
 function isIdentityLine(raw: string): boolean {

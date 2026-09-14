@@ -9,7 +9,7 @@ import { assertImportableDocument } from "./document-reader.js";
 import { FakeGoogleTransport } from "./fake-google.js";
 import { GoogleDocsError } from "./errors.js";
 import { publishForHumanReview } from "./publisher.js";
-import { validateWritingPackage, writingPackageContentHash } from "./writing-package.js";
+import { validateWritingPackage, writingPackageContentHash } from "../writing-package/index.js";
 import type { GoogleDocsConfig } from "./config.js";
 import type { DocsDocument } from "./google-rest.js";
 
@@ -36,6 +36,7 @@ test("import preserves wording, lists, quotes, and page ids", async () => {
   const quote = imported.package.pages[0]?.blocks.find((block) => block.type === "quote");
   assert.ok(quote && quote.type === "quote");
   assert.equal(quote.attribution, "Dana M., Springfield");
+  assert.equal(quote.reviewId, "rev.dana-m-springfield");
   assert.ok(imported.importedContentHash.length === 64);
 });
 

@@ -151,6 +151,27 @@ export class FakeGoogleTransport implements GoogleTransport {
     return cloned;
   }
 
+  deleteNamedRange(documentId: string, name: string): DocsDocument {
+    const current = this.require(documentId);
+    delete current.document.namedRanges[name];
+    return structuredClone(current.document) as DocsDocument;
+  }
+
+  replaceParagraphText(documentId: string, find: string, replacement: string): DocsDocument {
+    const current = this.require(documentId);
+    const cloned = structuredClone(current.document) as DocsDocument;
+    for (const element of cloned.body?.content ?? []) {
+      for (const el of element.paragraph?.elements ?? []) {
+        const run = el.textRun;
+        if (run && typeof run.content === "string" && run.content.includes(find)) {
+          (run as { content: string }).content = run.content.replace(find, replacement);
+        }
+      }
+    }
+    current.document = cloned as MutableDocument;
+    return cloned;
+  }
+
   private nextRevision(): string {
     this.revisionSeq += 1;
     return `rev_${this.revisionSeq}_${randomBytes(4).toString("hex")}`;

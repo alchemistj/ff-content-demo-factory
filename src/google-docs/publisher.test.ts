@@ -7,7 +7,7 @@ import { FakeGoogleTransport } from "./fake-google.js";
 import { GoogleDocsError } from "./errors.js";
 import { lifecycleAfterPublish, missingConfigPublishResult, publishForHumanReview } from "./publisher.js";
 import { REVIEW_PERMISSION } from "./lifecycle.js";
-import { validateWritingPackage, type WritingPackage, type WritingPackagePage } from "./writing-package.js";
+import { validateWritingPackage, type WritingPackage, type WritingPackagePage } from "../writing-package/index.js";
 import type { GoogleDocsConfig } from "./config.js";
 
 const fixturePath = join(dirname(fileURLToPath(import.meta.url)), "../../fixtures/google-docs/representative-writing-package.json");
@@ -44,7 +44,7 @@ test("publish creates a native Doc in the app folder and sets anyone-writer with
     name: "Oak & Iron Plumbing — Website Copy — Human Review",
     mimeType: "application/vnd.google-apps.document",
     parents: ["folder_review"],
-    description: "ff-content-factory website_copy pkg_oak-iron-plumbing_run-fixture",
+    description: "ff-content-factory website_copy oak-iron-plumbing/run_fixture_001",
   });
   const permission = fake.calls.find((call) => call.url.includes("/permissions") && call.method === "POST");
   assert.deepEqual(permission?.body, REVIEW_PERMISSION);
@@ -96,4 +96,30 @@ test("missing Google config fails publication without implying another writing r
   assert.equal(result.writingPreserved, true);
   assert.equal(result.failure.status, "publication_failed");
   assert.match(result.failure.message, /without rerunning the writer/);
+});
+
+test("prescription packages publish through the same publisher without adding a gate", async () => {
+  const pkg = validateWritingPackage({
+    version: "writing-package/v1",
+    kind: "prescription",
+    prospectId: "oak-iron-plumbing",
+    runId: "run_fixture_001",
+    businessName: "Oak & Iron Plumbing",
+    pages: [
+      {
+        pageId: "prescription",
+        role: "prescription",
+        audience: "owner",
+        readingOrder: 1,
+        title: "Proposed page plan",
+        blocks: [{ type: "paragraph", spans: [{ text: "Keep the existing prescription human gate." }] }],
+      },
+    ],
+  });
+  const fake = new FakeGoogleTransport();
+  const result = await publishForHumanReview(fake, pkg, config, undefined);
+  assert.equal(result.ok, true);
+  if (!result.ok) return;
+  assert.equal(result.receipt.kind, "prescription");
+  assert.equal(result.receipt.title, "Oak & Iron Plumbing — Prescription — Human Review");
 });

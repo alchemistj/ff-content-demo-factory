@@ -20,12 +20,13 @@ import {
   documentUrlFor,
   initialLifecycle,
   matchesAnyoneWriter,
+  packageIdentity,
   type LifecycleRecord,
   type PublicationFailure,
   type PublicationReceipt,
   type PublishResult,
 } from "./lifecycle.js";
-import { writingPackageContentHash, type WritingPackage } from "./writing-package.js";
+import { writingPackageContentHash, type WritingPackage } from "../writing-package/index.js";
 
 export interface PublishOptions {
   readonly newReviewVersion?: boolean;
@@ -52,7 +53,7 @@ export async function publishForHumanReview(
     }
 
     const existing = current.receipt;
-    if (existing && existing.packageId === pkg.packageId && !options.newReviewVersion) {
+    if (existing && existing.packageId === packageIdentity(pkg) && !options.newReviewVersion) {
       const live = await docsGet(transport, existing.documentId);
       const humanEdited = Boolean(
         existing.revisionId && live.revisionId && live.revisionId !== existing.revisionId,
@@ -82,7 +83,7 @@ export async function publishForHumanReview(
       name: built.title,
       mimeType: GOOGLE_DOC_MIME,
       parents: [config.folderId],
-      description: `ff-content-factory ${pkg.kind} ${pkg.packageId}`,
+      description: `ff-content-factory ${pkg.kind} ${packageIdentity(pkg)}`,
     });
     const createdDoc = await docsGet(transport, created.id);
     await docsBatchUpdate(transport, created.id, {
@@ -98,7 +99,8 @@ export async function publishForHumanReview(
       documentUrl: created.webViewLink ?? documentUrlFor(created.id),
       title: built.title,
       prospectId: pkg.prospectId,
-      packageId: pkg.packageId,
+      runId: pkg.runId,
+      packageId: packageIdentity(pkg),
       packageContentHash: contentHash,
       folderId: config.folderId,
       publishedAt: options.now ?? new Date().toISOString(),

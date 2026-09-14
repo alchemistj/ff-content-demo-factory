@@ -1,7 +1,6 @@
-# Publish a writing package to Google Docs (trusted)
+# Publish a writing package to Google Docs.
 
-# Run from a trusted ref only. Do not attach this workflow to pull_request.
-# Untrusted PR code must never execute with Google credentials.
+# Secret-bearing. Runs only from the trusted main ref. Do not attach to pull_request.
 
 name: Google Docs publish
 
@@ -9,7 +8,7 @@ on:
   workflow_dispatch:
     inputs:
       package_path:
-        description: Path to writing-package JSON
+        description: Repo-relative path to writing-package JSON
         required: true
       lifecycle_path:
         description: Optional existing lifecycle JSON to reuse the same Doc
@@ -20,13 +19,15 @@ on:
         default: "false"
         type: boolean
 
-permissions:
-  contents: write
+permissions: {}
 
 jobs:
   publish:
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     timeout-minutes: 15
+    permissions:
+      contents: read
     env:
       GOOGLE_OAUTH_CLIENT_ID: ${{ secrets.GOOGLE_OAUTH_CLIENT_ID }}
       GOOGLE_OAUTH_CLIENT_SECRET: ${{ secrets.GOOGLE_OAUTH_CLIENT_SECRET }}
@@ -34,8 +35,18 @@ jobs:
       GOOGLE_DRIVE_FOLDER_ID: ${{ vars.GOOGLE_DRIVE_FOLDER_ID }}
       GOOGLE_ACCOUNT_EMAIL: ${{ vars.GOOGLE_ACCOUNT_EMAIL }}
     steps:
-      - name: Check out trusted ref
+      - name: Enforce trusted ref
+        run: |
+          if [ "$GITHUB_REF" != "refs/heads/main" ]; then
+            echo "Secret-bearing Google Docs jobs may only run from refs/heads/main"
+            exit 1
+          fi
+
+      - name: Check out trusted main
         uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: false
 
       - name: Set up Node.js
         uses: actions/setup-node@v4

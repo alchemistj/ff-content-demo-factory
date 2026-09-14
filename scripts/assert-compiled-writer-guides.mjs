@@ -36,13 +36,16 @@ assert.equal(pkg.name, "ff-content-demo-factory");
 assert.equal(pkg.exports?.["."], "./dist/src/index.js");
 assert.equal(pkg.exports?.["./writer-guides"], "./dist/src/writer-guides/index.js");
 assert.equal(pkg.exports?.["./google-docs"], "./dist/src/google-docs/index.js");
+assert.equal(pkg.exports?.["./writing-package"], "./dist/src/writing-package/index.js");
 
 const mainExportPath = join(repoRoot, pkg.exports["."]);
 const guidesExportPath = join(repoRoot, pkg.exports["./writer-guides"]);
 const googleDocsExportPath = join(repoRoot, pkg.exports["./google-docs"]);
+const writingPackageExportPath = join(repoRoot, pkg.exports["./writing-package"]);
 assert.equal(existsSync(mainExportPath), true, `missing compiled main export: ${mainExportPath}`);
 assert.equal(existsSync(guidesExportPath), true, `missing compiled writer-guides export: ${guidesExportPath}`);
 assert.equal(existsSync(googleDocsExportPath), true, `missing compiled google-docs export: ${googleDocsExportPath}`);
+assert.equal(existsSync(writingPackageExportPath), true, `missing compiled writing-package export: ${writingPackageExportPath}`);
 assert.equal(existsSync(join(repoRoot, "dist/docs/writer-guides")), false);
 
 const block = () => {
@@ -54,12 +57,18 @@ globalThis.fetch = block;
 
 const main = await import(pathToFileURL(mainExportPath).href);
 const guides = await import(pathToFileURL(guidesExportPath).href);
+const writingPackage = await import(pathToFileURL(writingPackageExportPath).href);
+const googleDocs = await import(pathToFileURL(googleDocsExportPath).href);
 
 assert.equal(typeof main.loadWriterStageGuides, "function");
 assert.equal(typeof main.loadCanonicalGuideCatalog, "function");
 assert.equal(typeof main.defaultRepoRoot, "function");
 assert.equal(typeof guides.loadWriterStageGuides, "function");
 assert.equal(typeof guides.defaultRepoRoot, "function");
+assert.equal(writingPackage.WRITING_PACKAGE_VERSION, "writing-package/v1");
+assert.equal(typeof writingPackage.validateWritingPackage, "function");
+assert.equal(typeof googleDocs.createGoogleDocsPublisher, "function");
+assert.equal(typeof googleDocs.validateWritingPackage, "function");
 
 const distLoaderPath = join(repoRoot, "dist/src/writer-guides/loader.js");
 const naiveFromCompiledLoader = resolve(dirname(distLoaderPath), "../..");
@@ -119,6 +128,8 @@ const receipt = {
   repoRoot: discoveredRoot,
   compiledMainExport: pkg.exports["."],
   compiledWriterGuidesExport: pkg.exports["./writer-guides"],
+  compiledWritingPackageExport: pkg.exports["./writing-package"],
+  compiledGoogleDocsExport: pkg.exports["./google-docs"],
   distDocsPresent: existsSync(join(repoRoot, "dist/docs/writer-guides")),
   catalogManifestHash: catalog.manifestHash,
   guideSha256: byId,

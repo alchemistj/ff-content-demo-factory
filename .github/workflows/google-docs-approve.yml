@@ -1,6 +1,6 @@
-# Import a reviewed Google Doc into an approved repository snapshot.
+# Import a reviewed Google Doc into approved-copy/<prospect-id>/.
 # Authenticated GitHub actor is the approver. Text typed in the public-link
-# Doc is not authorization.
+# Doc is not authorization. Secret-bearing; runs only from trusted main.
 
 name: Google Docs approve copy
 
@@ -8,22 +8,24 @@ on:
   workflow_dispatch:
     inputs:
       package_path:
-        description: Path to the draft writing-package JSON
+        description: Repo-relative path to the draft writing-package JSON
         required: true
       receipt_path:
-        description: Path to the publication receipt JSON
+        description: Repo-relative path to the publication receipt JSON
         required: true
-      snapshot_dir:
-        description: Directory for the approved snapshot
+      prospect_id:
+        description: Prospect slug; snapshot is written only under approved-copy/<prospect_id>/
         required: true
 
-permissions:
-  contents: write
+permissions: {}
 
 jobs:
   approve:
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     timeout-minutes: 15
+    permissions:
+      contents: write
     env:
       GOOGLE_OAUTH_CLIENT_ID: ${{ secrets.GOOGLE_OAUTH_CLIENT_ID }}
       GOOGLE_OAUTH_CLIENT_SECRET: ${{ secrets.GOOGLE_OAUTH_CLIENT_SECRET }}
@@ -31,8 +33,18 @@ jobs:
       GOOGLE_DRIVE_FOLDER_ID: ${{ vars.GOOGLE_DRIVE_FOLDER_ID }}
       GOOGLE_ACCOUNT_EMAIL: ${{ vars.GOOGLE_ACCOUNT_EMAIL }}
     steps:
-      - name: Check out trusted ref
+      - name: Enforce trusted ref
+        run: |
+          if [ "$GITHUB_REF" != "refs/heads/main" ]; then
+            echo "Secret-bearing Google Docs jobs may only run from refs/heads/main"
+            exit 1
+          fi
+
+      - name: Check out trusted main
         uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: true
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
@@ -43,18 +55,18 @@ jobs:
       - name: Install
         run: npm ci
 
-      - name: Approve and snapshot
+      - name: Approve into approved-copy
         run: >
           npm run google-docs:approve --
           --package "${{ inputs.package_path }}"
           --receipt "${{ inputs.receipt_path }}"
-          --snapshot-dir "${{ inputs.snapshot_dir }}"
+          --prospect-id "${{ inputs.prospect_id }}"
           --actor "${{ github.actor }}"
 
-      - name: Commit snapshot
+      - name: Commit snapshot to main
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add "${{ inputs.snapshot_dir }}"
-          git commit -m "Approve Google Doc copy snapshot as ${{ github.actor }}" || echo "No snapshot changes"
-          git push
+          git add -- "approved-copy"
+          git diff --cached --quiet || git commit -m "Approve Google Doc copy snapshot as ${{ github.actor }}"
+          git push origin HEAD:main

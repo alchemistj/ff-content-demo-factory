@@ -1,4 +1,5 @@
-import { namedRangeForPage, reviewDocumentTitle, type ContentBlock, type TextSpan, type WritingPackage, type WritingPackagePage } from "./writing-package.js";
+import { pagesInReadingOrder, reviewDocumentTitle, type ContentBlock, type TextSpan, type WritingPackage, type WritingPackagePage } from "../writing-package/index.js";
+import { namedRangeForPage, namedRangeForQuote } from "./named-ranges.js";
 import type { DocsRequest } from "./google-rest.js";
 
 const HEADING_STYLE: Record<1 | 2 | 3, string> = {
@@ -48,9 +49,10 @@ interface ParagraphPlan {
  */
 export function buildNativeDocument(pkg: WritingPackage, version?: number): BuiltNativeDocument {
   const title = reviewDocumentTitle(pkg, version);
-  const pages = [...pkg.pages].sort((a, b) => a.readingOrder - b.readingOrder);
+  const pages = pagesInReadingOrder(pkg);
   const paragraphs: ParagraphPlan[] = [];
   const pageRanges: PageRangePlan[] = [];
+  const quoteRanges: { name: string; startIndex: number; endIndex: number }[] = [];
   let cursor = 1;
   let text = "";
 
@@ -69,9 +71,17 @@ export function buildNativeDocument(pkg: WritingPackage, version?: number): Buil
 
     const blocks = blocksWithoutLeadingH1(page);
     for (const block of blocks) {
+      const quoteStart = cursor;
       const pushed = pushBlock(paragraphs, text, cursor, block);
       text = pushed.text;
       cursor = pushed.cursor;
+      if (block.type === "quote" && block.reviewId) {
+        quoteRanges.push({
+          name: namedRangeForQuote(page.pageId, block.reviewId),
+          startIndex: quoteStart,
+          endIndex: quoteStart + utf16Length(`${block.spans.map((span) => span.text).join("")}\n`),
+        });
+      }
     }
     const range: PageRangePlan = {
       pageId: page.pageId,
@@ -139,6 +149,14 @@ export function buildNativeDocument(pkg: WritingPackage, version?: number): Buil
       createNamedRange: {
         name: page.namedRange,
         range: { startIndex: page.startIndex, endIndex: page.endIndex },
+      },
+    });
+  }
+  for (const quote of quoteRanges) {
+    requests.push({
+      createNamedRange: {
+        name: quote.name,
+        range: { startIndex: quote.startIndex, endIndex: quote.endIndex },
       },
     });
   }

@@ -66,7 +66,10 @@ Writer-guide loading still does not call Google. When a finished writing package
 
 - Operator setup: `docs/google-docs/OPERATOR_SETUP.md`
 - Workflow-lane interface: `docs/google-docs/WORKFLOW_INTERFACE.md`
+- Shared package contract: `src/writing-package/` (`ff-content-demo-factory/writing-package`)
 - Package export: `ff-content-demo-factory/google-docs`
+
+Secret-bearing publish/approve workflows run only from trusted `main` (`refs/heads/main`). Mocked tests are not live Google proof; `npm run google-docs:live-verify` reports pending until the operator Gmail account is authorized.
 
 ```bash
 npm run google-docs:authorize

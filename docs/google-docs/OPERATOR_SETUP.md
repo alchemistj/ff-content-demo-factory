@@ -124,7 +124,12 @@ If credentials are absent, that command reports `liveVerification: "pending"` an
 | `GOOGLE_DRIVE_FOLDER_ID` | Actions variable | no |
 | `GOOGLE_ACCOUNT_EMAIL` | Actions variable | no |
 
-Trusted jobs: `.github/workflows/google-docs-publish.yml` and `.github/workflows/google-docs-approve.yml`. Both are `workflow_dispatch` only. They must run from a trusted ref (default branch or a maintained factory branch). They must **not** execute untrusted pull-request code while holding Google credentials or a privileged `GITHUB_TOKEN`.
+Trusted jobs: `.github/workflows/google-docs-publish.yml` and `.github/workflows/google-docs-approve.yml`. Both are `workflow_dispatch` only.
+
+They fail closed unless `github.ref` is `refs/heads/main`, then they check out that trusted `main` ref before using Google OAuth secrets. They must **not** execute untrusted pull-request code while holding Google credentials or a privileged `GITHUB_TOKEN`.
+
+- Publish: `contents: read` only. It does not push.
+- Approve: `contents: write` only to commit under `approved-copy/<prospect-id>/` and `git push origin HEAD:main`. A workflow input cannot choose an arbitrary snapshot path or turn `git add` into a generic write primitive.
 
 ## 9. Reauthorization
 
@@ -144,7 +149,7 @@ npm run google-docs:init-folder
 npm run google-docs:test-connection
 npm run google-docs:publish -- --package fixtures/google-docs/representative-writing-package.json
 npm run google-docs:import -- --package <draft.json> --receipt <receipt.json> --out imported.json
-npm run google-docs:approve -- --package <draft.json> --receipt <receipt.json> --snapshot-dir <dir> --actor <github-user>
+npm run google-docs:approve -- --package <draft.json> --receipt <receipt.json> --prospect-id <slug> --actor <github-user>
 ```
 
 A phrase typed into the anonymously editable Doc cannot approve copy. Approval is the authenticated GitHub Action / `google-docs:approve` command.

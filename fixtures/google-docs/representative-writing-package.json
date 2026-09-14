@@ -1,7 +1,6 @@
 {
-  "schemaVersion": "1.0.0",
+  "version": "writing-package/v1",
   "kind": "website_copy",
-  "packageId": "pkg_oak-iron-plumbing_run-fixture",
   "prospectId": "oak-iron-plumbing",
   "runId": "run_fixture_001",
   "businessName": "Oak & Iron Plumbing",
@@ -9,6 +8,7 @@
     {
       "pageId": "homepage",
       "role": "homepage",
+      "audience": "business",
       "route": "/",
       "readingOrder": 1,
       "title": "Plumbing help in Springfield",
@@ -37,7 +37,8 @@
         {
           "type": "quote",
           "spans": [{ "text": "They showed up after hours and stopped the water before it wrecked the floor." }],
-          "attribution": "Dana M., Springfield"
+          "attribution": "Dana M., Springfield",
+          "reviewId": "rev.dana-m-springfield"
         },
         {
           "type": "paragraph",
@@ -54,6 +55,7 @@
     {
       "pageId": "leak-repair",
       "role": "service",
+      "audience": "business",
       "route": "/leak-repair",
       "readingOrder": 2,
       "title": "Leak repair in Springfield",
@@ -83,6 +85,7 @@
     {
       "pageId": "water-heaters",
       "role": "service",
+      "audience": "business",
       "route": "/water-heaters",
       "readingOrder": 3,
       "title": "Water heater replacement",
@@ -98,6 +101,7 @@
     {
       "pageId": "contact",
       "role": "contact",
+      "audience": "business",
       "route": "/contact",
       "readingOrder": 4,
       "title": "Call Oak & Iron",
@@ -118,6 +122,7 @@
     {
       "pageId": "chrome",
       "role": "header_footer",
+      "audience": "business",
       "readingOrder": 5,
       "title": "Header and footer",
       "blocks": [
@@ -144,6 +149,7 @@
     {
       "pageId": "strategy",
       "role": "strategy_overview",
+      "audience": "owner",
       "readingOrder": 6,
       "title": "Why We Built This Site",
       "blocks": [

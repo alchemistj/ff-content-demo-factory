@@ -16,8 +16,9 @@ import { lifecycleAfterPublish, missingConfigPublishResult, publishForHumanRevie
 import { redactSecrets } from "./redaction.js";
 import { createLiveTransport, loadGoogleDocsConfig } from "./runtime.js";
 import { defaultSecretStorePath, readSecretStore } from "./secret-store.js";
-import { validateWritingPackage, type WritingPackage } from "./writing-package.js";
+import { validateWritingPackage, type WritingPackage } from "../writing-package/index.js";
 import { requireGoogleConfig } from "./config.js";
+import { assertRepoRelativeInputPath, assertTrustedGithubRef, resolveApprovedSnapshotDir } from "./trust.js";
 
 const USAGE = `Usage:
   npm run google-docs:authorize
@@ -25,7 +26,7 @@ const USAGE = `Usage:
   npm run google-docs:test-connection
   npm run google-docs:publish -- --package <path> [--receipt-out <path>] [--lifecycle <path>] [--new-review-version]
   npm run google-docs:import -- --package <path> --receipt <path> --out <path>
-  npm run google-docs:approve -- --package <path> --receipt <path> --snapshot-dir <path> --actor <github-user>
+  npm run google-docs:approve -- --package <path> --receipt <path> --prospect-id <slug> --actor <github-user>
   npm run google-docs:push-secrets
   npm run google-docs:live-verify
 
@@ -33,6 +34,7 @@ Credentials are never printed. Authorization writes ~/.config/ff-content-factory
 `;
 
 async function main(argv: string[]): Promise<void> {
+  assertTrustedGithubRef();
   const [command, ...rest] = argv;
   const flags = parseFlags(rest);
   switch (command) {
@@ -169,15 +171,15 @@ async function runApprove(flags: Record<string, string | true>): Promise<void> {
   }
   const pkg = loadPackage(requireFlag(flags, "package"));
   const receipt = loadReceipt(requireFlag(flags, "receipt"));
-  const snapshotDir = resolve(requireFlag(flags, "snapshot-dir"));
+  const snapshot = resolveApprovedSnapshotDir(requireFlag(flags, "prospect-id"));
   const transport = await liveTransport();
   const imported = await importReviewedDocument(transport, pkg, receipt);
   const record = writeApprovedSnapshot({
-    snapshotDir,
+    snapshotDir: snapshot.absoluteDir,
     imported,
     actor,
     receipt,
-    relativeDir: requireFlag(flags, "snapshot-dir"),
+    relativeDir: snapshot.relativeDir,
   });
   process.stdout.write(`${JSON.stringify(record, null, 2)}\n`);
 }
@@ -250,16 +252,18 @@ async function liveTransport() {
 }
 
 function loadPackage(path: string): WritingPackage {
-  return validateWritingPackage(JSON.parse(readFileSync(resolve(path), "utf8")));
+  return validateWritingPackage(JSON.parse(readFileSync(resolve(assertRepoRelativeInputPath(path, "package")), "utf8")));
 }
 
 function loadReceipt(path: string): PublicationReceipt {
-  return JSON.parse(readFileSync(resolve(path), "utf8")) as PublicationReceipt;
+  return JSON.parse(readFileSync(resolve(assertRepoRelativeInputPath(path, "receipt")), "utf8")) as PublicationReceipt;
 }
 
 function loadLifecycle(path: string | undefined): LifecycleRecord | undefined {
   if (!path) return undefined;
-  return JSON.parse(readFileSync(resolve(path), "utf8")) as LifecycleRecord;
+  return JSON.parse(
+    readFileSync(resolve(assertRepoRelativeInputPath(path, "lifecycle")), "utf8"),
+  ) as LifecycleRecord;
 }
 
 function publicReceipt(receipt: PublicationReceipt): PublicationReceipt {

@@ -12,10 +12,11 @@ export { GoogleDocsError, isGoogleDocsError } from "./errors.js";
 export { redactSecrets } from "./redaction.js";
 export {
   REVIEW_KINDS,
-  WRITING_PACKAGE_SCHEMA_VERSION,
+  WRITING_PACKAGE_VERSION,
   WEBSITE_COPY_READING_ORDER,
+  buildWritingPackage,
   canonicalizeWritingPackage,
-  namedRangeForPage,
+  hashWritingPages,
   reviewDocumentTitle,
   validateWritingPackage,
   writingPackageContentHash,
@@ -25,7 +26,8 @@ export {
   type TextSpan,
   type WritingPackage,
   type WritingPackagePage,
-} from "./writing-package.js";
+} from "../writing-package/index.js";
+export { namedRangeForPage, namedRangeForQuote, parseQuoteNamedRange } from "./named-ranges.js";
 export {
   humanQaTaskFromReceipt,
   initialLifecycle,
@@ -41,6 +43,7 @@ export {
   missingConfigPublishResult,
   publishForHumanReview,
 } from "./publisher.js";
+export { createGoogleDocsPublisher, type GoogleDocsPublisher, type GoogleDocsPublisherOptions, type PublisherPublicationReceipt } from "./publisher-adapter.js";
 export { importReviewedDocument, writeApprovedSnapshot } from "./approval.js";
 export {
   createLabeledTestDocument,
@@ -51,3 +54,4 @@ export {
 export { authorizeDesktopUser, authorizationReceiptLog } from "./authorize.js";
 export { loadGoogleDocsConfig, createLiveTransport } from "./runtime.js";
 export { createAuthorizedTransport, type GoogleTransport } from "./google-rest.js";
+export { APPROVED_COPY_ROOT, TRUSTED_BRANCH, TRUSTED_REF } from "./trust.js";
