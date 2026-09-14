@@ -551,13 +551,18 @@ def extract_simple_links(fragment: str) -> str:
     return blocks_to_markdown(parser.blocks, {}).strip()
 
 
+def separate_adjacent_links(md: str) -> str:
+    """Keep consecutive CTAs on their own lines instead of gluing labels together."""
+    return re.sub(r"(\]\([^)]+\))(?=[A-Za-z\[])", r"\1\n\n", md)
+
+
 def extract_page(raw: str) -> tuple[str, str]:
     faq = faq_map(raw)
     parser = PageExtractor(faq)
     parser.feed(raw)
     parser.flush_block()
-    page_md = blocks_to_markdown(parser.blocks, faq)
-    chrome_md = extract_chrome(raw)
+    page_md = separate_adjacent_links(blocks_to_markdown(parser.blocks, faq))
+    chrome_md = separate_adjacent_links(extract_chrome(raw))
     return page_md, chrome_md
 
 
@@ -589,20 +594,26 @@ PAGES = [
     {
         "business": "sra",
         "id": "homepage",
-        "html": "/tmp/ff-extract/sra/homepage.html",
+        "html": "/tmp/ff-extract/sra-preview/springfield-homepage.html",
         "out": "examples/approved-copy/sra/springfield-homepage.md",
     },
     {
         "business": "sra",
         "id": "replacement",
-        "html": "/tmp/ff-extract/sra/roof-replacement.html",
+        "html": "/tmp/ff-extract/sra-preview/springfield-roof-replacement.html",
         "out": "examples/approved-copy/sra/springfield-roof-replacement.md",
     },
     {
         "business": "sra",
         "id": "maintenance",
-        "html": "/tmp/ff-extract/sra/roof-maintenance.html",
+        "html": "/tmp/ff-extract/sra-preview/springfield-roof-maintenance.html",
         "out": "examples/approved-copy/sra/springfield-roof-maintenance.md",
+    },
+    {
+        "business": "sra",
+        "id": "contact",
+        "html": "/tmp/ff-extract/sra-preview/springfield-contact.html",
+        "out": "examples/approved-copy/sra/springfield-contact.md",
     },
     {
         "business": "greene-planet",

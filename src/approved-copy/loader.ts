@@ -22,7 +22,7 @@ export interface LoadedExample {
   readonly requiredRepository: string;
   readonly requiredRef: string;
   readonly requiredSha: string;
-  readonly provenance: ExampleProvenance | null;
+  readonly provenance: ExampleProvenance;
   readonly markdown: string;
   readonly bytes: Buffer;
   readonly sha256: string;

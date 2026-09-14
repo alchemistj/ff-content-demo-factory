@@ -1,14 +1,63 @@
-# SRA Springfield contact — pending git extraction
+Free Inspection · Licensed & Insured · BBB A+ Rating
 
-This slot is not an approved example yet. The page source **is present** on the recovery branch. It has not been extracted here because this GitHub App cannot clone `alchemistj/sra-roofing-website`.
+# Contact SRA Roofing in Springfield, MO
 
-**Required source:** branch `reconcile/sra-local-recovery-2026-09-09` at `f3f22a8154555cc762593c41947a5f2c6d4a2832`, route `/springfield/contact/`.
+Call, send us a message, or go ahead and book your appointment — every roof inspection is free.
 
-Extract from repository files, then compose as the Springfield contact page actually renders:
+[Call (417) 840-6715](tel:+14178406715)
 
-- `src/content/springfieldContact.ts` — Springfield title, H1, intro, service-area, route context
-- `src/content/contact.ts` — shared contact, FAQ, and CTA copy
-- `src/pages/SpringfieldContactPage.tsx` — composition
-- plus the shared chrome and review sources that page actually renders
+Schedule an SRA Visit
 
-Do not use statewide `/contact/` as a substitute. Do not invent Springfield contact copy.
+SRA Roofing & Gutters is based in Springfield at 1340 S Barnes Ave. If you need a roof looked at, a repair-versus-replacement read, or a written estimate, call or send a message.
+
+## Request a Free Quote
+
+## Contact Information
+
+Phone
+
+[(417) 840-6715](tel:+14178406715)
+
+Email
+
+[info@sraroofs.com](mailto:info@sraroofs.com?subject=SRA%20Roofing%20Website%20Inquiry)
+
+Service Area
+
+Springfield, Missouri and nearby Ozarks communities. Work starts from our shop at 1340 S Barnes Ave, Springfield, MO 65804.
+
+Office Hours
+
+Monday–Friday: 8 AM – 5 PM
+
+Saturday–Sunday: Closed
+
+### Emergency Service?
+
+If you've experienced storm damage and need immediate assistance, call us directly:
+
+[Call (417) 840-6715](tel:+14178406715)
+
+## Contact FAQ
+
+**Is the inspection really free?**
+
+Yes — every roof inspection is free, with no obligation to book any work afterward.
+
+**What's the fastest way to reach you?**
+
+Calling is fastest. The contact form works too, but a phone call gets you a same-day answer more reliably.
+
+**Do I need to be home for the inspection?**
+
+It helps, but it's not required — we can walk the roof and follow up by phone either way.
+
+**What information should I have ready when I call?**
+
+Your address and a general sense of the issue (leak, storm damage, routine checkup) — we'll ask the rest.
+
+## Ready to Talk About Your Roof?
+
+Call, schedule a free inspection, or fill out the form — we'll get someone out to take a look.
+
+Schedule a Free Roof Inspection [Call (417) 840-6715](tel:+14178406715)

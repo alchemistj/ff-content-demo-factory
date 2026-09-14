@@ -12,9 +12,7 @@ Short, practical, confident, human. Do not spend paragraphs reselling the compan
 
 ## What to draw from the examples
 
-Window Dudes `/contact/` and Greene Planet `/springfield/contact/` are both lean utility pages with a clear next step.
-
-SRA’s Springfield contact example is **not** available in this set. Do not substitute SRA’s statewide `/contact/` and do not invent a Springfield contact page from it. See `examples/approved-copy/SOURCE_MANIFEST.md`.
+Window Dudes `/contact/`, Greene Planet `/springfield/contact/`, and SRA `/springfield/contact/` are lean utility pages with a clear next step.
 
 ## Hero
 

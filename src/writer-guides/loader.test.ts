@@ -66,14 +66,14 @@ test("loadCanonicalGuideCatalog reads exact on-disk Markdown and hashes determin
   const second = loadCanonicalGuideCatalog();
   assert.equal(first.guides.length, 6);
   assert.equal(first.manifestHash, second.manifestHash);
-  assert.equal(first.manifestHash, "2c539a6ed359a4033ab3d62bbc66064f07a448bd745775665f88e6bed0e85617");
+  assert.equal(first.manifestHash, "0a1e5b3d8289efed2e9a2a9d31cec82c04d75de087a8e30fae5254dc6a221d05");
   assert.deepEqual(
     Object.fromEntries(first.guides.map((guide) => [guide.id, guide.sha256])),
     {
       general: "cd54af56ab604efd62cd12355f3bc64c309d9c9677fd4e0592e23f2a87292abe",
       service: "c2225e3e5561ec69de4f3738dbf2b75a9b8d60fecc24bfc2e5c39f9915b1cfb5",
       homepage: "0c3292f44a0e855844f5c91d89f451398a86c91acfe3acf38cc61d6bf57721ea",
-      contact: "a4480f190e2744e1350fc03aa9e343c5278e7cd68c2e25386f84cc65b8d59e4d",
+      contact: "0673e245abdb9c6c8cd91ba3f47ff92d05305ffdfdf3a5ade3b8c19a8dd5a57c",
       headerFooter: "9f6192c2e126581a3ce1aefcf5d632c00583fe9bb8201aafe81ec3c14d8fa5f8",
       readme: "cd058eeb9601746ba13eeae1efac4e195f2ad6d97acb6b1bc36f90ed80b7a726",
     },
@@ -116,7 +116,7 @@ test("Writer 1/2/3 sets load from repo files with no provider and preserve raw M
   assert.equal(writer2.catalogManifestHash, catalog.manifestHash);
   assert.equal(writer3.catalogManifestHash, catalog.manifestHash);
   assert.equal(writer1.setHash, "23c797572e419b69fccbf4b306eff7203a58ed570b101434bdee9b6944db86f7");
-  assert.equal(writer2.setHash, "bf52fc6ae18185f8660e95c442da979fb20244d563f0062778e4a8a383cbc6ad");
+  assert.equal(writer2.setHash, "fcf22e7f07332e01eaa3479df1519cbb6316f418eb261cecd58b80b8e2699fe4");
   assert.equal(writer3.setHash, "7b8de953190d9949cd8af92f4b6b8fa7bea6428a401d88bb7f672714b8fca302");
   assert.notEqual(writer1.setHash, writer2.setHash);
   assert.notEqual(writer1.setHash, writer3.setHash);

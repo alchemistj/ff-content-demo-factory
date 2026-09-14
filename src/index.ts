@@ -17,7 +17,7 @@ export {
   REQUIRED_CLIENT_REFS,
   loadApprovedCopyCatalog,
   loadExampleById,
-  provenanceLooksLikeGitSource,
+  provenanceHasTruthfulIdentity,
   type ApprovedCopyCatalogReceipt,
   type ExampleProvenance,
   type LoadedExample,

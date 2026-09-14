@@ -12,10 +12,11 @@ export {
 export {
   GIT_SHA_RE,
   REQUIRED_CLIENT_REFS,
+  SRA_REVIEWED_PREVIEW_ORIGIN,
+  captureUrlFor,
   isGitSha,
-  provenanceLooksLikeGitSource,
-  textClaimsNonGitAuthority,
-  type CopyAuthority,
+  provenanceHasTruthfulIdentity,
+  type CaptureKind,
   type ExampleProvenance,
 } from "./provenance.js";
 export {
