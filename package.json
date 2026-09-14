@@ -33,6 +33,8 @@
     "google-docs:publish": "node --import tsx src/google-docs/cli.ts publish",
     "google-docs:import": "node --import tsx src/google-docs/cli.ts import",
     "google-docs:approve": "node --import tsx src/google-docs/cli.ts approve",
+    "google-docs:write-publish-summary": "node --import tsx src/google-docs/cli.ts write-publish-summary",
+    "google-docs:assert-publish-run": "node --import tsx src/google-docs/cli.ts assert-publish-run",
     "google-docs:push-secrets": "node --import tsx src/google-docs/cli.ts push-secrets",
     "google-docs:live-verify": "node --import tsx src/google-docs/cli.ts live-verify"
   },

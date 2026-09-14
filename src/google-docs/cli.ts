@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
+import { readFileSync, writeFileSync, mkdirSync, appendFileSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { spawnSync } from "node:child_process";
 import { authorizeDesktopUser, authorizationReceiptLog } from "./authorize.js";
@@ -12,6 +12,15 @@ import {
 } from "./connection.js";
 import { GoogleDocsError } from "./errors.js";
 import { humanQaTaskFromReceipt, type LifecycleRecord, type PublicationReceipt } from "./lifecycle.js";
+import {
+  assertNumericPublishRunId,
+  assertTrustedPublishRun,
+  formatPublishFailureSummary,
+  formatPublishJobSummary,
+  formatPublishLogBanner,
+  parseGithubActionsRunMetadata,
+  readHandoffReceipt,
+} from "./publish-handoff.js";
 import { lifecycleAfterPublish, missingConfigPublishResult, publishForHumanReview } from "./publisher.js";
 import { redactSecrets } from "./redaction.js";
 import { createLiveTransport, loadGoogleDocsConfig } from "./runtime.js";
@@ -27,6 +36,8 @@ const USAGE = `Usage:
   npm run google-docs:publish -- --package <path> [--receipt-out <path>] [--lifecycle <path>] [--new-review-version]
   npm run google-docs:import -- --package <path> --receipt <path> --out <path>
   npm run google-docs:approve -- --package <path> --receipt <path> --prospect-id <slug> --actor <github-user>
+  npm run google-docs:write-publish-summary -- --handoff-dir <dir>
+  npm run google-docs:assert-publish-run -- --run-json <path> [--run-id <id>]
   npm run google-docs:push-secrets
   npm run google-docs:live-verify
 
@@ -55,6 +66,12 @@ async function main(argv: string[]): Promise<void> {
       return;
     case "approve":
       await runApprove(flags);
+      return;
+    case "write-publish-summary":
+      runWritePublishSummary(flags);
+      return;
+    case "assert-publish-run":
+      runAssertPublishRun(flags);
       return;
     case "push-secrets":
       runPushSecrets();
@@ -125,6 +142,7 @@ async function runPublish(flags: Record<string, string | true>): Promise<void> {
     const result = missingConfigPublishResult(loaded.missing);
     writeJson(optionalFlag(flags, "receipt-out"), result);
     process.stdout.write(`${JSON.stringify(result, null, 2)}\n`);
+    failActionsPublishJob();
     return;
   }
   const lifecycle = loadLifecycle(optionalFlag(flags, "lifecycle"));
@@ -145,6 +163,7 @@ async function runPublish(flags: Record<string, string | true>): Promise<void> {
   }
   writeJson(optionalFlag(flags, "receipt-out"), result);
   process.stdout.write(`${JSON.stringify(result, null, 2)}\n`);
+  failActionsPublishJob();
 }
 
 async function runImport(flags: Record<string, string | true>): Promise<void> {
@@ -182,6 +201,38 @@ async function runApprove(flags: Record<string, string | true>): Promise<void> {
     relativeDir: snapshot.relativeDir,
   });
   process.stdout.write(`${JSON.stringify(record, null, 2)}\n`);
+}
+
+function runWritePublishSummary(flags: Record<string, string | true>): void {
+  const handoffDir = requireFlag(flags, "handoff-dir");
+  try {
+    const receipt = readHandoffReceipt(handoffDir);
+    const summary = formatPublishJobSummary(receipt);
+    const banner = formatPublishLogBanner(receipt.documentUrl);
+    process.stdout.write(`${banner}\n`);
+    process.stdout.write(`${summary}\n`);
+    const stepSummary = process.env.GITHUB_STEP_SUMMARY;
+    if (stepSummary) appendFileSync(stepSummary, summary);
+    const output = process.env.GITHUB_OUTPUT;
+    if (output) appendFileSync(output, `review_url=${receipt.documentUrl}\n`);
+  } catch (error) {
+    const detail = error instanceof Error ? error.message : String(error);
+    const summary = formatPublishFailureSummary(detail);
+    process.stderr.write(`${summary}\n`);
+    const stepSummary = process.env.GITHUB_STEP_SUMMARY;
+    if (stepSummary) appendFileSync(stepSummary, summary);
+    throw error;
+  }
+}
+
+function runAssertPublishRun(flags: Record<string, string | true>): void {
+  const expectedId = optionalFlag(flags, "run-id");
+  if (expectedId) assertNumericPublishRunId(expectedId);
+  const raw = JSON.parse(readFileSync(resolve(requireFlag(flags, "run-json")), "utf8")) as unknown;
+  const run = assertTrustedPublishRun(parseGithubActionsRunMetadata(raw), expectedId);
+  process.stdout.write(
+    `${JSON.stringify({ ok: true, id: run.id, path: run.path, head_branch: run.head_branch }, null, 2)}\n`,
+  );
 }
 
 async function runLiveVerify(): Promise<void> {
@@ -268,6 +319,12 @@ function loadLifecycle(path: string | undefined): LifecycleRecord | undefined {
 
 function publicReceipt(receipt: PublicationReceipt): PublicationReceipt {
   return receipt;
+}
+
+function failActionsPublishJob(): void {
+  if (process.env.GITHUB_ACTIONS === "true") {
+    process.exitCode = 1;
+  }
 }
 
 function writeJson(path: string | undefined, value: unknown): void {

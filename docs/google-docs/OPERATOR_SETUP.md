@@ -128,8 +128,10 @@ Trusted jobs: `.github/workflows/google-docs-publish.yml` and `.github/workflows
 
 They fail closed unless `github.ref` is `refs/heads/main`, then they check out that trusted `main` ref before using Google OAuth secrets. They must **not** execute untrusted pull-request code while holding Google credentials or a privileged `GITHUB_TOKEN`.
 
-- Publish: `contents: read` only. It does not push.
-- Approve: `contents: write` only to commit under `approved-copy/<prospect-id>/` and `git push origin HEAD:main`. A workflow input cannot choose an arbitrary snapshot path or turn `git add` into a generic write primitive.
+Manual `workflow_dispatch` inputs are passed through `env:` and quoted shell variables. Never put `${{ inputs.* }}` inside a `run:` script.
+
+- Publish: `contents: read` plus `actions: write` to upload the `google-docs-publish` artifact. It does not `git push`.
+- Approve: `contents: write` only to commit under `approved-copy/<prospect-id>/` and `git push origin HEAD:main`, plus `actions: read` to download that artifact. A workflow input cannot choose an arbitrary snapshot path or turn `git add` into a generic write primitive.
 
 ## 9. Reauthorization
 
@@ -153,3 +155,42 @@ npm run google-docs:approve -- --package <draft.json> --receipt <receipt.json> -
 ```
 
 A phrase typed into the anonymously editable Doc cannot approve copy. Approval is the authenticated GitHub Action / `google-docs:approve` command.
+
+## 10. GitHub-native review sequence (copy/paste)
+
+These jobs run only on **main**, after this code is on `main`. Dispatch them from the `main` branch. They never execute pull-request code while holding Google secrets.
+
+### A. Publish the review Doc
+
+1. GitHub → **Actions** → **Google Docs publish** → **Run workflow**.
+2. Use branch **main**.
+3. Fill:
+   - `package_path` — repo-relative writing-package JSON, for example `prospects/acme/writing-package.json`
+   - `lifecycle_path` — leave empty for a new Doc, or a repo-relative lifecycle JSON to reuse the same Doc
+   - `new_review_version` — leave false unless you intend a replacement Doc
+4. When the job succeeds:
+   - Open the run **Summary** and click the Google Doc URL (also printed as `REVIEW DOC` in the log)
+   - Copy the numeric **run id** from the browser URL: `https://github.com/<owner>/<repo>/actions/runs/<publish_run_id>`
+5. The receipt and lifecycle live as artifact `google-docs-publish` on that run. Do not commit those files. Do not rerun the writer.
+
+### B. Human edit
+
+Open the Summary link and edit the copy in Google Docs. Typing “APPROVED” in the Doc does nothing.
+
+### C. Approve into `approved-copy/<prospect-id>/`
+
+1. GitHub → **Actions** → **Google Docs approve copy** → **Run workflow**.
+2. Use branch **main**.
+3. Fill:
+   - `package_path` — the same draft JSON used for publish
+   - `publish_run_id` — the numeric run id from step A (digits only)
+   - `prospect_id` — lowercase slug; the job writes only under `approved-copy/<prospect_id>/`
+4. The job checks that the run is this repo’s successful `google-docs-publish.yml` on `main`, downloads the artifact, imports the edited Doc, and commits that snapshot to `main`.
+
+Local CLI (when you already have a receipt file) is unchanged:
+
+```bash
+npm run google-docs:approve -- --package <draft.json> --receipt <receipt.json> --prospect-id <slug> --actor <github-user>
+```
+
+That local path is not the GitHub-native handoff. GitHub-native approve always takes `publish_run_id`.

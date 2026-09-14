@@ -1,6 +1,7 @@
 # Publish a writing package to Google Docs.
-
 # Secret-bearing. Runs only from the trusted main ref. Do not attach to pull_request.
+# Manual inputs are passed through env (never interpolated into run: shells).
+# Receipt/lifecycle are uploaded as a GitHub Actions artifact for the approve job.
 
 name: Google Docs publish
 
@@ -28,12 +29,16 @@ jobs:
     timeout-minutes: 15
     permissions:
       contents: read
+      actions: write
     env:
       GOOGLE_OAUTH_CLIENT_ID: ${{ secrets.GOOGLE_OAUTH_CLIENT_ID }}
       GOOGLE_OAUTH_CLIENT_SECRET: ${{ secrets.GOOGLE_OAUTH_CLIENT_SECRET }}
       GOOGLE_OAUTH_REFRESH_TOKEN: ${{ secrets.GOOGLE_OAUTH_REFRESH_TOKEN }}
       GOOGLE_DRIVE_FOLDER_ID: ${{ vars.GOOGLE_DRIVE_FOLDER_ID }}
       GOOGLE_ACCOUNT_EMAIL: ${{ vars.GOOGLE_ACCOUNT_EMAIL }}
+      PACKAGE_PATH: ${{ inputs.package_path }}
+      LIFECYCLE_PATH: ${{ inputs.lifecycle_path }}
+      NEW_REVIEW_VERSION: ${{ inputs.new_review_version }}
     steps:
       - name: Enforce trusted ref
         run: |
@@ -59,11 +64,26 @@ jobs:
 
       - name: Publish
         run: |
-          extra=()
-          if [ -n "${{ inputs.lifecycle_path }}" ]; then
-            extra+=(--lifecycle "${{ inputs.lifecycle_path }}" --lifecycle-out "${{ inputs.lifecycle_path }}")
+          set -euo pipefail
+          mkdir -p .google-docs-handoff
+          publish_args=(--package "${PACKAGE_PATH}" --receipt-out .google-docs-handoff/google-doc-receipt.json --lifecycle-out .google-docs-handoff/lifecycle.json)
+          if [ -n "${LIFECYCLE_PATH}" ]; then
+            publish_args+=(--lifecycle "${LIFECYCLE_PATH}")
           fi
-          if [ "${{ inputs.new_review_version }}" = "true" ]; then
-            extra+=(--new-review-version)
+          if [ "${NEW_REVIEW_VERSION}" = "true" ]; then
+            publish_args+=(--new-review-version)
           fi
-          npm run google-docs:publish -- --package "${{ inputs.package_path }}" --receipt-out google-doc-receipt.json "${extra[@]}"
+          npm run google-docs:publish -- "${publish_args[@]}"
+
+      - name: Write review URL summary
+        run: |
+          set -euo pipefail
+          npm run google-docs:write-publish-summary -- --handoff-dir .google-docs-handoff
+
+      - name: Upload publish handoff
+        uses: actions/upload-artifact@v4
+        with:
+          name: google-docs-publish
+          path: .google-docs-handoff
+          if-no-files-found: error
+          retention-days: 90

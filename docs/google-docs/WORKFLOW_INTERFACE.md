@@ -46,8 +46,23 @@ Prescription human gate: send `kind: "prescription"` through the same publisher.
 
 Secret-bearing jobs `.github/workflows/google-docs-publish.yml` and `.github/workflows/google-docs-approve.yml` are `workflow_dispatch` only. They fail closed unless `github.ref` is `refs/heads/main`, then they check out `main` explicitly.
 
-- Publish uses `contents: read` and does not persist credentials.
-- Approve uses `contents: write` only to commit under `approved-copy/<prospect-id>/` and push to `main`. Workflow inputs cannot choose an arbitrary `git add` path.
+Manual `workflow_dispatch` inputs are passed through job `env:` and referenced as quoted shell variables. They are never interpolated with `${{ inputs.* }}` inside a `run:` script.
+
+- Publish uses `contents: read` plus `actions: write` to upload the receipt/lifecycle artifact. It does not `git push` or otherwise write the repository.
+- Approve uses `contents: write` only to commit under `approved-copy/<prospect-id>/` and push to `main`, plus `actions: read` to download that trusted publish artifact. Workflow inputs cannot choose an arbitrary `git add` path.
+
+## GitHub-native publish → review → approve
+
+1. On `main`, run **Google Docs publish** with `package_path` (repo-relative writing-package JSON). Optional `lifecycle_path` reuses an existing Doc; `new_review_version` only when a replacement Doc is intended.
+2. Open the job **Summary** and click the Google Doc URL. Copy the numeric run id from the publish URL (`…/actions/runs/<id>`). The receipt and lifecycle are the `google-docs-publish` artifact on that run — do not commit them, and do not rerun the writer.
+3. Edit the Doc in place.
+4. On `main`, run **Google Docs approve copy** with the same `package_path`, the publish `publish_run_id`, and `prospect_id`. The job verifies the run is this repo’s successful `google-docs-publish.yml` on `main`, downloads the artifact, imports the Doc, and commits only under `approved-copy/<prospect-id>/`.
+
+Local CLI (not the GitHub-native handoff) still takes a receipt file:
+
+```bash
+npm run google-docs:approve -- --package <draft.json> --receipt <receipt.json> --prospect-id <slug> --actor <github-user>
+```
 
 ## Lifecycle
 
@@ -59,13 +74,7 @@ States: `draft_ready` → `human_review` or `publication_failed` → `approved`.
 
 ## Approval
 
-Authenticated repository action:
-
-```bash
-npm run google-docs:approve -- --package <draft.json> --receipt <receipt.json> --prospect-id <slug> --actor <github-user>
-```
-
-Anonymous “APPROVED” text in the public-link Doc is ignored.
+Anonymous “APPROVED” text in the public-link Doc is ignored. GitHub-native approval always uses `publish_run_id` (see above). The local CLI `--receipt` path is for machines that already have the receipt file.
 
 Import fails closed on unresolved suggestions or extra content tabs. Comments are not copy.
 

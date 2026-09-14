@@ -55,3 +55,11 @@ export { authorizeDesktopUser, authorizationReceiptLog } from "./authorize.js";
 export { loadGoogleDocsConfig, createLiveTransport } from "./runtime.js";
 export { createAuthorizedTransport, type GoogleTransport } from "./google-rest.js";
 export { APPROVED_COPY_ROOT, TRUSTED_BRANCH, TRUSTED_REF } from "./trust.js";
+export {
+  APPROVE_WORKFLOW_FILE,
+  PUBLISH_ARTIFACT_NAME,
+  PUBLISH_HANDOFF_DIR,
+  PUBLISH_WORKFLOW_FILE,
+  assertTrustedPublishRun,
+  formatPublishJobSummary,
+} from "./publish-handoff.js";
