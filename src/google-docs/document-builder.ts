@@ -1,5 +1,6 @@
 import { reviewDocumentTitle, type ContentBlock, type TextSpan, type WritingPackage, type WritingPackagePage } from "../writing-package/index.js";
 import { namedRangeForPage, namedRangeForQuote } from "./named-ranges.js";
+import { metaDescriptionLine, seoTitleLine } from "./seo-lines.js";
 import type { DocsRequest } from "./google-rest.js";
 
 const HEADING_STYLE: Record<1 | 2 | 3, string> = {
@@ -68,6 +69,17 @@ export function buildNativeDocument(pkg: WritingPackage, version?: number): Buil
     const identity = identityLine(page);
     cursor = pushParagraph(paragraphs, text, cursor, [{ text: identity }], "NORMAL_TEXT");
     text = applyParagraphText(text, [{ text: identity }]);
+
+    if (page.seoTitle) {
+      const line = seoTitleLine(page.seoTitle);
+      cursor = pushParagraph(paragraphs, text, cursor, [{ text: line }], "NORMAL_TEXT");
+      text = applyParagraphText(text, [{ text: line }]);
+    }
+    if (page.metaDescription) {
+      const line = metaDescriptionLine(page.metaDescription);
+      cursor = pushParagraph(paragraphs, text, cursor, [{ text: line }], "NORMAL_TEXT");
+      text = applyParagraphText(text, [{ text: line }]);
+    }
 
     const blocks = blocksWithoutLeadingH1(page);
     for (const block of blocks) {

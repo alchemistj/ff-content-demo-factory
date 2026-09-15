@@ -188,6 +188,8 @@ test("PR #30 writing-package objects publish and import through the Google Docs 
   const imported = await importReviewedDocument(fake, pkg, published.receipt);
   assert.equal(imported.package.schemaVersion, "writing-package/v1");
   assert.equal(imported.package.packageId, pkg.packageId);
+  assert.equal(imported.package.pages[0]?.seoTitle, pkg.pages[0]?.seoTitle);
+  assert.equal(imported.package.pages[0]?.metaDescription, pkg.pages[0]?.metaDescription);
   const quote = imported.package.pages.flatMap((page) => page.blocks).find((block) => block.type === "quote");
   const sourceQuote = pkg.pages.flatMap((page) => page.blocks).find((block) => block.type === "quote");
   assert.ok(quote && quote.type === "quote");

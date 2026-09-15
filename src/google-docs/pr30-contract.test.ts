@@ -57,6 +57,9 @@ function pr30WritingPackage(): WritingPackage {
         route: "/home",
         readingOrder: 1,
         title: "Garage door help for the next practical step",
+        seoTitle: "Garage door repair and replacement in Mason | Northline",
+        metaDescription:
+          "Northline Garage Doors helps Mason homeowners repair a door that still has life or replace one that is worn through.",
         blocks: [
           heading(1, "Garage door help for the next practical step"),
           heading(2, "Repair or replacement"),
@@ -71,6 +74,9 @@ function pr30WritingPackage(): WritingPackage {
         route: "/garage-door-repair",
         readingOrder: 2,
         title: "Garage door repair when the door stops working",
+        seoTitle: "Garage door repair in Mason | Northline Garage Doors",
+        metaDescription:
+          "When a Mason garage door stops working, Northline explains the problem and repairs it when the door still has useful life.",
         blocks: [
           heading(1, "Garage door repair when the door stops working"),
           heading(2, "What a repair visit is for"),
@@ -85,6 +91,9 @@ function pr30WritingPackage(): WritingPackage {
         route: "/garage-door-replacement",
         readingOrder: 3,
         title: "Replacement when the opener and door are worn through",
+        seoTitle: "Garage door replacement in Mason | Northline Garage Doors",
+        metaDescription:
+          "Northline replaces worn garage doors and openers in Mason when repair will not restore reliable daily use.",
         blocks: [
           heading(1, "Replacement when the opener and door are worn through"),
           heading(2, "A worn opener is a different job"),
@@ -99,6 +108,8 @@ function pr30WritingPackage(): WritingPackage {
         route: "/contact",
         readingOrder: 4,
         title: "Call Northline Garage Doors",
+        seoTitle: "Call Northline Garage Doors in Mason",
+        metaDescription: "Call Northline Garage Doors at +1-555-010-1000. Shop at 18 Harbor Avenue, Mason, IL 60000.",
         blocks: [
           heading(1, "Call Northline Garage Doors"),
           paragraph("Call +1-555-010-1000. 18 Harbor Avenue, Mason, IL 60000."),
@@ -166,6 +177,8 @@ test("Google Docs publisher and importer accept the PR #30 contract without tran
   assert.equal(imported.package.schemaVersion, WRITING_PACKAGE_SCHEMA_VERSION);
   assert.equal(imported.package.packageId, pkg.packageId);
   assert.equal(imported.package.pages[1]?.pageId, "page-repair");
+  assert.equal(imported.package.pages[1]?.seoTitle, "Garage door repair in Mason | Northline Garage Doors");
+  assert.equal(imported.package.pages[0]?.seoTitle, pkg.pages[0]?.seoTitle);
   const quote = imported.package.pages[1]?.blocks.find((block) => block.type === "quote");
   assert.ok(quote && quote.type === "quote");
   assert.equal(quote.attribution, "Ari K.");

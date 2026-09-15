@@ -32,6 +32,7 @@ Approved decisions contain page jobs, routes, target intents, business scope, an
 | Route | required on website-copy pages except header/footer |
 | Reading order | `readingOrder` integers; website copy must be homepage, two services, contact, header/footer, strategy overview |
 | Title | default H1; humans may edit it without changing `pageId` |
+| SEO metadata | `seoTitle` and `metaDescription` are **required** on homepage, both service pages, and contact. Omit them on `header_footer`. They are optional on `strategy_overview` (owner-facing review copy, not a SERP page). |
 | Blocks | `heading` (level 1–3, text only), `paragraph` (text spans), `list` (ordered + item spans), `quote` (spans + attribution + optional `reviewId`) |
 | Text spans | `text` plus optional `bold`, `italic`, `href` |
 
@@ -48,6 +49,7 @@ The Google Docs publisher imports this module. There is no second writing-packag
 - `runId` is required
 - `packageHash` is stored on the package; use `hashWritingPackage` / `parseWritingPackage`
 - quote `attribution` is required; `reviewId` is optional and used for source-fidelity checks
+- final `seoTitle` and `metaDescription` are required on every normal customer-facing routed page (homepage, services, contact). Content Factory final copy owns those words. The later website builder consumes them rather than inventing them. Header/footer has no SEO fields. Strategy Overview does not require them.
 
 Publisher boundary: `GoogleDocsPublisher.publishReviewPackage(pkg)` in `src/publisher/index.ts`.
 

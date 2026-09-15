@@ -121,3 +121,88 @@ test("publisherPayload identity uses packageId and packageHash", () => {
     packageHash: pkg.packageHash,
   });
 });
+
+test("customer-facing routed pages require seoTitle and metaDescription", () => {
+  const pkg = northlineWritingPackage();
+  for (const page of pkg.pages) {
+    if (page.role === "homepage" || page.role === "service" || page.role === "contact") {
+      assert.ok(page.seoTitle && page.seoTitle.length > 0, `${page.pageId} seoTitle`);
+      assert.ok(page.metaDescription && page.metaDescription.length > 0, `${page.pageId} metaDescription`);
+    }
+    if (page.role === "header_footer") {
+      assert.equal(page.seoTitle, undefined);
+      assert.equal(page.metaDescription, undefined);
+    }
+    if (page.role === "strategy_overview") {
+      assert.equal(page.seoTitle, undefined);
+      assert.equal(page.metaDescription, undefined);
+    }
+  }
+  const home = pkg.pages.find((page) => page.pageId === "page-home");
+  assert.ok(home);
+  const withoutSeo = pkg.pages.map((page) =>
+    page.pageId === "page-home"
+      ? { pageId: page.pageId, role: page.role, audience: page.audience, route: page.route, readingOrder: page.readingOrder, title: page.title, blocks: page.blocks }
+      : page,
+  );
+  assert.throws(
+    () =>
+      parseWritingPackage({
+        schemaVersion: WRITING_PACKAGE_SCHEMA_VERSION,
+        kind: pkg.kind,
+        packageId: pkg.packageId,
+        prospectId: pkg.prospectId,
+        runId: pkg.runId,
+        businessName: pkg.businessName,
+        pages: withoutSeo,
+      }),
+    /requires seoTitle and metaDescription/,
+  );
+  assert.throws(
+    () =>
+      parseWritingPackage({
+        schemaVersion: WRITING_PACKAGE_SCHEMA_VERSION,
+        kind: pkg.kind,
+        packageId: pkg.packageId,
+        prospectId: pkg.prospectId,
+        runId: pkg.runId,
+        businessName: pkg.businessName,
+        pages: pkg.pages.map((page) =>
+          page.pageId === "header-footer" ? { ...page, seoTitle: "Header should not rank", metaDescription: "Not a route" } : page,
+        ),
+      }),
+    /header\/footer copy must not include SEO metadata/,
+  );
+});
+
+test("SEO metadata is part of the canonical hash and optional on Strategy Overview", () => {
+  const pkg = northlineWritingPackage();
+  const changed = {
+    ...pkg,
+    pages: pkg.pages.map((page) =>
+      page.pageId === "page-home" ? { ...page, seoTitle: "Different garage door title | Northline" } : page,
+    ),
+  };
+  assert.notEqual(hashWritingPackage(changed), pkg.packageHash);
+  const withStrategySeo = {
+    ...pkg,
+    packageHash: "",
+    pages: pkg.pages.map((page) =>
+      page.pageId === "page-strategy"
+        ? { ...page, seoTitle: "Why two service jobs | Northline owner review", metaDescription: "Owner-facing explanation of the two-job site." }
+        : page,
+    ),
+  };
+  const parsed = parseWritingPackage({
+    schemaVersion: WRITING_PACKAGE_SCHEMA_VERSION,
+    kind: withStrategySeo.kind,
+    packageId: withStrategySeo.packageId,
+    prospectId: withStrategySeo.prospectId,
+    runId: withStrategySeo.runId,
+    businessName: withStrategySeo.businessName,
+    pages: withStrategySeo.pages,
+  });
+  const strategy = parsed.pages.find((page) => page.pageId === "page-strategy");
+  assert.equal(strategy?.seoTitle, "Why two service jobs | Northline owner review");
+  assert.equal(hashWritingPackage(parsed), parsed.packageHash);
+});

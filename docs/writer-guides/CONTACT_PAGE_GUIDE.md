@@ -34,3 +34,7 @@ The contact page is a utility page. Do not force quotations onto it merely to de
 Use a quotation when it genuinely helps the contact decision and the evidence supports it. The same fidelity rules apply.
 
 A few practical questions can help (area, hours, what to include, call vs. message). Do not invent response times or guarantees. Packet FAQ counts and word targets are advisory. Overwriting the contact page is a defect.
+
+## SEO metadata
+
+Write the final SEO title and meta description for this contact route as part of the page. Follow the general guide. The website builder will consume those words rather than inventing them.

@@ -25,6 +25,12 @@ Editorial acceptance then belongs to the human, not a second model.
 
 The complete business-facing copy and the owner-facing Strategy Overview as one `website_copy` package. Preserve the prospect's approved route map. Keep owner-facing strategy copy distinct from customer-facing pages.
 
+For each customer-facing routed page (homepage, both service pages, contact), include a final **SEO title** and **meta description** in the package. Let the approved page job, URL, and primary keyword guide the wording. Write literal, useful, evidence-supported result-lines. Do not stuff keywords. Do not treat character or pixel counts as a gate. Human QA is the editorial gate.
+
+Header and footer copy does not get SEO metadata. The Strategy Overview is owner-facing review copy, not a search-result page; omit SEO metadata there unless a human explicitly asks for it.
+
+The later website builder consumes these SEO words. It must not invent a title tag or meta description for a route that already has approved copy.
+
 Quote source-backed review text with attribution. A quote may be the full source wording or a faithful contiguous excerpt. Do not paraphrase inside quotation marks. You may evaluate relevance and choose which reviews to use. You may set aside earlier recommendations. You do not need an administrative rationale for every ordinary editorial choice.
 
 Write direct, confident customer-facing copy where the evidence supports it. May-language is for advice between agents, not for the business's public voice.

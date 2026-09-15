@@ -62,6 +62,43 @@ test("published native document round-trips page identity after an H1 change", a
   assert.equal(restored.packageHash.length, 64);
 });
 
+test("SEO title and meta description are visible in the Doc and round-trip on import", async () => {
+  const pkg = parseWritingPackage(JSON.parse(readFileSync(fixturePath, "utf8")));
+  const built = buildNativeDocument(pkg);
+  assert.match(built.insertText, /SEO title: Springfield plumber for leaks and water heaters \| Oak & Iron/);
+  assert.match(built.insertText, /Meta description: Oak & Iron Plumbing is a Springfield shop/);
+  assert.equal(built.insertText.includes("SEO title: Header"), false);
+
+  const fake = new FakeGoogleTransport();
+  const created = await fake.request<{ id: string }>({
+    method: "POST",
+    url: "https://www.googleapis.com/drive/v3/files",
+    body: { name: "doc", mimeType: "application/vnd.google-apps.document", parents: ["folder"] },
+  });
+  await fake.request({
+    method: "POST",
+    url: `https://docs.googleapis.com/v1/documents/${created.id}:batchUpdate`,
+    body: { requests: built.requests },
+  });
+  const edited = fake.replaceParagraphText(
+    created.id,
+    "SEO title: Springfield plumber for leaks and water heaters | Oak & Iron",
+    "SEO title: Springfield leak and water heater plumber | Oak & Iron",
+  );
+  const imported = importPagesFromDocument(edited, pkg.pages);
+  assert.equal(imported.pages[0]?.seoTitle, "Springfield leak and water heater plumber | Oak & Iron");
+  assert.equal(
+    imported.pages[0]?.metaDescription,
+    "Oak & Iron Plumbing is a Springfield shop that answers when a pipe fails and can replace a water heater that is done.",
+  );
+  assert.equal(imported.pages[1]?.seoTitle, "Leak repair in Springfield | Oak & Iron Plumbing");
+  const chrome = imported.pages.find((page) => page.pageId === "chrome");
+  assert.equal(chrome?.seoTitle, undefined);
+  const restored = importedPackageFromReadback(pkg, imported);
+  assert.equal(restored.pages[0]?.seoTitle, "Springfield leak and water heater plumber | Oak & Iron");
+  assert.notEqual(restored.packageHash, pkg.packageHash);
+});
+
 test("human quote wording edits keep reviewId when the named range remains", async () => {
   const pkg = parseWritingPackage(JSON.parse(readFileSync(fixturePath, "utf8")));
   const fake = new FakeGoogleTransport();

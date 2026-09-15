@@ -13,6 +13,8 @@
       "route": "/",
       "readingOrder": 1,
       "title": "Plumbing help in Springfield",
+      "seoTitle": "Springfield plumber for leaks and water heaters | Oak & Iron",
+      "metaDescription": "Oak & Iron Plumbing is a Springfield shop that answers when a pipe fails and can replace a water heater that is done.",
       "blocks": [
         {
           "type": "paragraph",
@@ -60,6 +62,8 @@
       "route": "/leak-repair",
       "readingOrder": 2,
       "title": "Leak repair in Springfield",
+      "seoTitle": "Leak repair in Springfield | Oak & Iron Plumbing",
+      "metaDescription": "Oak & Iron finds the leak, stops the water, and tells Springfield homeowners the repair in plain language.",
       "blocks": [
         {
           "type": "paragraph",
@@ -90,6 +94,8 @@
       "route": "/water-heaters",
       "readingOrder": 3,
       "title": "Water heater replacement",
+      "seoTitle": "Water heater replacement in Springfield | Oak & Iron",
+      "metaDescription": "Oak & Iron replaces a Springfield water heater that is rusting or running out of hot water before it floods the closet.",
       "blocks": [
         {
           "type": "paragraph",
@@ -106,6 +112,8 @@
       "route": "/contact",
       "readingOrder": 4,
       "title": "Call Oak & Iron",
+      "seoTitle": "Call Oak & Iron Plumbing in Springfield",
+      "metaDescription": "Call Oak & Iron Plumbing at (417) 555-0142. Shop at 400 W Walnut St, Springfield, MO.",
       "blocks": [
         {
           "type": "paragraph",

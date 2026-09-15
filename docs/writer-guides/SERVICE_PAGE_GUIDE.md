@@ -59,3 +59,7 @@ Use FAQ when it removes real buyer friction. Do not manufacture questions to hit
 ## Finish
 
 End with the approved contact path. Repeat the same offer and phone hierarchy. Do not introduce a new promise in the last block.
+
+## SEO metadata
+
+Write the final SEO title and meta description for this service route as part of the page. Follow the general guide. The website builder will consume those words rather than inventing them.

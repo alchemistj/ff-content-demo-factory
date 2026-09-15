@@ -6,6 +6,7 @@ import {
   REVIEW_KINDS,
   WEBSITE_COPY_READING_ORDER,
   WRITING_PACKAGE_SCHEMA_VERSION,
+  pageRequiresSeoMetadata,
   type ContentBlock,
   type PageAudience,
   type PageRole,
@@ -82,7 +83,8 @@ export function canonicalizeWritingPackage(pkg: Omit<WritingPackage, "packageHas
         title: page.title,
         blocks: page.blocks.map(canonicalizeBlock),
       };
-      return page.route !== undefined ? { ...next, route: page.route } : next;
+      const withRoute = page.route !== undefined ? { ...next, route: page.route } : next;
+      return withSeoFields(withRoute, page.seoTitle, page.metaDescription);
     })
     .sort((a, b) => a.readingOrder - b.readingOrder || a.pageId.localeCompare(b.pageId));
   return {
@@ -224,7 +226,29 @@ function validatePage(input: unknown, index: number): WritingPackagePage {
     title: input.title,
     blocks: input.blocks.map((block, blockIndex) => validateBlock(block, pageId, blockIndex)),
   };
-  return typeof input.route === "string" ? { ...page, route: input.route } : page;
+  const withRoute = typeof input.route === "string" ? { ...page, route: input.route } : page;
+  return withSeoFields(
+    withRoute,
+    optionalNonEmptyString(input.seoTitle, pageId, "seoTitle"),
+    optionalNonEmptyString(input.metaDescription, pageId, "metaDescription"),
+  );
+}
+
+function optionalNonEmptyString(value: unknown, pageId: string, field: string): string | undefined {
+  if (value === undefined) return undefined;
+  if (typeof value !== "string" || value.trim().length === 0) {
+    throw new WritingPackageError(`Page ${pageId} ${field} must be a non-empty string when present`);
+  }
+  return value;
+}
+
+function withSeoFields(
+  page: WritingPackagePage,
+  seoTitle: string | undefined,
+  metaDescription: string | undefined,
+): WritingPackagePage {
+  const withTitle = seoTitle !== undefined ? { ...page, seoTitle } : page;
+  return metaDescription !== undefined ? { ...withTitle, metaDescription } : withTitle;
 }
 
 function validateWebsiteCopyShape(pages: readonly WritingPackagePage[]): void {
@@ -252,6 +276,16 @@ function validateWebsiteCopyShape(pages: readonly WritingPackagePage[]): void {
     }
     if (page.role !== "header_footer" && !page.route) {
       throw new WritingPackageError(`${page.pageId} must include its approved route`);
+    }
+    if (pageRequiresSeoMetadata(page.role)) {
+      if (!page.seoTitle || !page.metaDescription) {
+        throw new WritingPackageError(
+          `${page.pageId} requires seoTitle and metaDescription for this customer-facing route`,
+        );
+      }
+    }
+    if (page.role === "header_footer" && (page.seoTitle !== undefined || page.metaDescription !== undefined)) {
+      throw new WritingPackageError(`${page.pageId} header/footer copy must not include SEO metadata`);
     }
   }
 }

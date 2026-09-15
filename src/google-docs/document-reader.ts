@@ -1,6 +1,7 @@
 import { GoogleDocsError } from "./errors.js";
 import type { DocsBody, DocsDocument, DocsNamedRanges, DocsStructuralElement, DocsTab } from "./google-rest.js";
 import { namedRangeForPage, parseQuoteNamedRange } from "./named-ranges.js";
+import { isSeoMetadataLine, parseMetaDescriptionLine, parseSeoTitleLine } from "./seo-lines.js";
 import { buildWritingPackage, type ContentBlock, type PageRole, type TextSpan, type WritingPackage, type WritingPackagePage } from "../writing-package/index.js";
 
 export interface ImportReadback {
@@ -157,11 +158,34 @@ function blocksFromParagraphs(
   const titleParagraph = paragraphs.find((paragraph) => paragraph.namedStyleType === "HEADING_1") ?? paragraphs[0];
   const title = titleParagraph?.raw ?? expected.pageId;
   const rest = paragraphs.filter((paragraph) => paragraph !== titleParagraph);
+  let offset = 0;
+  if (rest[0] && isIdentityLine(rest[0].raw)) offset = 1;
+  let seoTitle: string | undefined;
+  let metaDescription: string | undefined;
+  while (offset < rest.length) {
+    const raw = rest[offset]?.raw ?? "";
+    const parsedTitle = parseSeoTitleLine(raw);
+    if (parsedTitle !== undefined) {
+      seoTitle = parsedTitle;
+      offset += 1;
+      continue;
+    }
+    const parsedMeta = parseMetaDescriptionLine(raw);
+    if (parsedMeta !== undefined) {
+      metaDescription = parsedMeta;
+      offset += 1;
+      continue;
+    }
+    if (isIdentityLine(raw) || isSeoMetadataLine(raw)) {
+      offset += 1;
+      continue;
+    }
+    break;
+  }
   const blocks: ContentBlock[] = [];
-  for (let i = 0; i < rest.length; i += 1) {
+  for (let i = offset; i < rest.length; i += 1) {
     const paragraph = rest[i];
     if (!paragraph) continue;
-    if (i === 0 && isIdentityLine(paragraph.raw)) continue;
     if (paragraph.namedStyleType === "HEADING_1") {
       blocks.push({ type: "heading", level: 1, text: paragraph.raw });
       continue;
@@ -213,8 +237,9 @@ function blocksFromParagraphs(
     title,
     blocks,
   };
-  if (expected.route !== undefined) return { ...page, route: expected.route };
-  return page;
+  const withRoute = expected.route !== undefined ? { ...page, route: expected.route } : page;
+  const withSeoTitle = seoTitle !== undefined ? { ...withRoute, seoTitle } : withRoute;
+  return metaDescription !== undefined ? { ...withSeoTitle, metaDescription } : withSeoTitle;
 }
 
 function reviewIdForParagraph(

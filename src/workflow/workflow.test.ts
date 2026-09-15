@@ -300,6 +300,8 @@ test("runtime instructions are loaded as the active path, not historical prospec
   const docs = loadActiveRuntimeInstructions();
   assert.match(docs.research, /You may consider/);
   assert.match(docs.prescription, /Human gate/);
+  assert.match(docs.writer, /SEO title/);
+  assert.match(docs.writer, /website builder consumes/);
   assert.doesNotMatch(docs.authority, /Writer 1 creates exactly two/);
   assert.doesNotMatch(docs.writer, /intelligent QA repair/);
 });

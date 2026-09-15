@@ -39,6 +39,14 @@ export const WEBSITE_COPY_READING_ORDER = Object.freeze([
 
 export const PAGE_ID_RE = /^[a-z][a-z0-9-]{0,63}$/;
 
+/** Customer-facing routed pages that must ship final SEO title + meta description. */
+export const SEO_REQUIRED_ROLES = Object.freeze(["homepage", "service", "contact"] as const);
+export type SeoRequiredRole = (typeof SEO_REQUIRED_ROLES)[number];
+
+export function pageRequiresSeoMetadata(role: PageRole): boolean {
+  return role === "homepage" || role === "service" || role === "contact";
+}
+
 /** Optional emphasis/link on a contiguous run of text. Omit flags rather than set false. */
 export interface TextSpan {
   readonly text: string;
@@ -86,6 +94,16 @@ export interface WritingPackagePage {
   readonly readingOrder: number;
   /** Default H1. Changing this must not reassign pageId. */
   readonly title: string;
+  /**
+   * Final search-result title. Required on homepage, both service pages, and contact.
+   * Omit on header_footer. Optional on strategy_overview (owner review copy, not a SERP page).
+   */
+  readonly seoTitle?: string;
+  /**
+   * Final search-result description. Required on the same business routes as seoTitle.
+   * The later website builder consumes these words; it must not invent them.
+   */
+  readonly metaDescription?: string;
   readonly blocks: readonly ContentBlock[];
 }
 

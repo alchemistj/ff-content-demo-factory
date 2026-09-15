@@ -14,19 +14,19 @@ import { dirname, join, resolve, sep } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 
 const EXPECTED_MANIFEST =
-  "3e530584535c04bd3f68e7e431e82781a27de93b7717e0356fb93d40f1a1f085";
+  "0a360d43f873a47d94788472694e8e30ceb5ab8c5e33d3e12bb6725ecf7db1b1";
 const EXPECTED_GUIDE_SHA256 = Object.freeze({
-  general: "cd54af56ab604efd62cd12355f3bc64c309d9c9677fd4e0592e23f2a87292abe",
-  service: "c2225e3e5561ec69de4f3738dbf2b75a9b8d60fecc24bfc2e5c39f9915b1cfb5",
-  homepage: "0c3292f44a0e855844f5c91d89f451398a86c91acfe3acf38cc61d6bf57721ea",
-  contact: "0673e245abdb9c6c8cd91ba3f47ff92d05305ffdfdf3a5ade3b8c19a8dd5a57c",
-  headerFooter: "9f6192c2e126581a3ce1aefcf5d632c00583fe9bb8201aafe81ec3c14d8fa5f8",
+  general: "136744acf8591b7d5fae6343f0da4502ea6890f954fc7a25dedf797496e4bbe9",
+  service: "972bd08d862ee8df655b2c495de31286ce6dd8f9962a068c8ec8588fc08b3bd7",
+  homepage: "407e55b87719e9476ace07d61d3143421a2be3465b509fab5d86dd6115d5176b",
+  contact: "07b8e35e68e68fadb93f5e194fef5c6580b5eac0a97ab1749b5603fb38aa2a02",
+  headerFooter: "fdb9d43b593bbcf6a0b1de4d7f1d88e87b701e51231e96ac6fed4e879706c22c",
   readme: "34d572bd5602d6a03e8d207439f0c4a49cd3218c6568341d8d23f529af355383",
 });
 const EXPECTED_SET_HASH = Object.freeze({
-  writer1: "23c797572e419b69fccbf4b306eff7203a58ed570b101434bdee9b6944db86f7",
-  writer2: "fcf22e7f07332e01eaa3479df1519cbb6316f418eb261cecd58b80b8e2699fe4",
-  writer3: "7b8de953190d9949cd8af92f4b6b8fa7bea6428a401d88bb7f672714b8fca302",
+  writer1: "fc99fd77d3931c4a3f413337844c5b309f9d3f2215ffedfb10a4db18323ef4de",
+  writer2: "c1dd23c52627da14036c70bea588e026c0c4ce457c694b78070fd4e062b33ef0",
+  writer3: "4898d43999afce020c7fb476d6cfd0efcfd5e5750b793e22bc90ebaed6f04e0e",
 });
 
 const scriptDir = dirname(fileURLToPath(import.meta.url));

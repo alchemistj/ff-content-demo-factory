@@ -41,6 +41,7 @@ Prescription human gate: send `kind: "prescription"` through the same publisher.
 - Customer-facing copy only in those pages. Do not include evidence administration, hashes, QA reports, or raw research.
 - Spans carry wording, bold, italic, and link destinations. Quotes keep attribution (required) separately.
 - Optional quote `reviewId` is preserved through the Doc as a named range (`ffcf_rev_…`). It is never inserted as visible text. If a human removes the quotation or its named range, import does not invent a review mapping.
+- Customer-facing routed pages show editable `SEO title:` and `Meta description:` lines in the review Doc. Import writes those lines back onto `seoTitle` / `metaDescription`. Header/footer has no such lines. Strategy Overview omits them unless the package included optional metadata.
 
 ## Trusted execution
 

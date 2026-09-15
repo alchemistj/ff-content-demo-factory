@@ -13,8 +13,19 @@ The approved Springfield examples in `examples/approved-copy/` are the main teac
 - Fulfill the **approved job of each page** while choosing the flow and expression that suit this business.
 - Learn craft, rhythm, depth, and judgment from the examples.
 - Write an owner-facing **Strategy Overview** that explains the finished work, separately from the business-facing pages.
+- Write a final **SEO title** and **meta description** for each customer-facing routed page (homepage, both service pages, contact). The later builder consumes those words.
 
 The reference businesses’ facts, credentials, offers, and reviews belong to those businesses. They teach craft. The current prospect packet supplies the current business’s evidence.
+
+## SEO title and meta description
+
+These fields are part of the finished `writing-package/v1` page, not a later builder invention.
+
+- Let the approved page job, URL, and primary keyword guide the wording.
+- Write a literal, useful result-line the customer can trust. Stay inside confirmed evidence.
+- Do not stuff keywords. Do not treat character or pixel counts as a gate. Human QA is the editorial gate.
+- Header and footer copy does not get SEO metadata.
+- The Strategy Overview is owner-facing review copy, not a search-result page. Omit SEO metadata there unless a human explicitly asks for it.
 
 ## Sources of truth
 

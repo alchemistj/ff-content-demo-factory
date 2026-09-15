@@ -57,3 +57,7 @@ Example homepage lengths are demonstrations. Do not add generic paragraphs to ma
 ## Finish
 
 Make the path to call or contact obvious. Use the same offer and contact hierarchy as the rest of the site.
+
+## SEO metadata
+
+Write the final SEO title and meta description for this homepage route as part of the page. Follow the general guide. The website builder will consume those words rather than inventing them.

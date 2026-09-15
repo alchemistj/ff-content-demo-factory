@@ -39,3 +39,7 @@ Page quotation rules do not apply to header/footer. Primary proof belongs in pag
 ## Consistency
 
 Use the same business name, phone hierarchy, service names, service-area language, CTA language, and capitalization as the finished pages.
+
+## SEO metadata
+
+Do not write an SEO title or meta description for header/footer chrome. Those fields belong on the customer-facing routed pages.
