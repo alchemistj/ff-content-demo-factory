@@ -1,0 +1,99 @@
+# Import a reviewed Google Doc into approved-copy/<prospect-id>/.
+# Authenticated GitHub actor is the approver. Text typed in the public-link
+# Doc is not authorization. Secret-bearing; runs only from trusted main.
+# Manual inputs are passed through env (never interpolated into run: shells).
+# Receipt/lifecycle come from the trusted publish workflow artifact.
+
+name: Google Docs approve copy
+
+on:
+  workflow_dispatch:
+    inputs:
+      package_path:
+        description: Repo-relative path to the draft writing-package JSON
+        required: true
+      publish_run_id:
+        description: Numeric GitHub Actions run id of the trusted Google Docs publish job
+        required: true
+      prospect_id:
+        description: Prospect slug; snapshot is written only under approved-copy/<prospect_id>/
+        required: true
+
+permissions: {}
+
+jobs:
+  approve:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+      actions: read
+    env:
+      GOOGLE_OAUTH_CLIENT_ID: ${{ secrets.GOOGLE_OAUTH_CLIENT_ID }}
+      GOOGLE_OAUTH_CLIENT_SECRET: ${{ secrets.GOOGLE_OAUTH_CLIENT_SECRET }}
+      GOOGLE_OAUTH_REFRESH_TOKEN: ${{ secrets.GOOGLE_OAUTH_REFRESH_TOKEN }}
+      GOOGLE_DRIVE_FOLDER_ID: ${{ vars.GOOGLE_DRIVE_FOLDER_ID }}
+      GOOGLE_ACCOUNT_EMAIL: ${{ vars.GOOGLE_ACCOUNT_EMAIL }}
+      PACKAGE_PATH: ${{ inputs.package_path }}
+      PUBLISH_RUN_ID: ${{ inputs.publish_run_id }}
+      PROSPECT_ID: ${{ inputs.prospect_id }}
+      GIT_COMMIT_ACTOR: ${{ github.actor }}
+    steps:
+      - name: Enforce trusted ref
+        run: |
+          if [ "$GITHUB_REF" != "refs/heads/main" ]; then
+            echo "Secret-bearing Google Docs jobs may only run from refs/heads/main"
+            exit 1
+          fi
+
+      - name: Check out trusted main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: true
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      - name: Install
+        run: npm ci
+
+      - name: Verify trusted publish run
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          case "${PUBLISH_RUN_ID}" in
+            ''|*[!0-9]*)
+              echo "publish_run_id must be a numeric GitHub Actions run id" >&2
+              exit 1
+              ;;
+          esac
+          gh api "repos/${GITHUB_REPOSITORY}/actions/runs/${PUBLISH_RUN_ID}" > "${RUNNER_TEMP}/publish-run.json"
+          npm run google-docs:assert-publish-run -- --run-json "${RUNNER_TEMP}/publish-run.json" --run-id "${PUBLISH_RUN_ID}"
+
+      - name: Download publish handoff
+        uses: actions/download-artifact@v4
+        with:
+          name: google-docs-publish
+          run-id: ${{ inputs.publish_run_id }}
+          path: .google-docs-handoff
+          github-token: ${{ github.token }}
+
+      - name: Approve into approved-copy
+        run: |
+          set -euo pipefail
+          npm run google-docs:approve -- --package "${PACKAGE_PATH}" --receipt ".google-docs-handoff/google-doc-receipt.json" --prospect-id "${PROSPECT_ID}" --actor "${GIT_COMMIT_ACTOR}"
+
+      - name: Commit snapshot to main
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- "approved-copy"
+          git diff --cached --quiet || git commit -m "Approve Google Doc copy snapshot as ${GIT_COMMIT_ACTOR}"
+          git push origin HEAD:main

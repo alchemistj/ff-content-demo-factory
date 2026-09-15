@@ -1,0 +1,89 @@
+# Publish a writing package to Google Docs.
+# Secret-bearing. Runs only from the trusted main ref. Do not attach to pull_request.
+# Manual inputs are passed through env (never interpolated into run: shells).
+# Receipt/lifecycle are uploaded as a GitHub Actions artifact for the approve job.
+
+name: Google Docs publish
+
+on:
+  workflow_dispatch:
+    inputs:
+      package_path:
+        description: Repo-relative path to writing-package JSON
+        required: true
+      lifecycle_path:
+        description: Optional existing lifecycle JSON to reuse the same Doc
+        required: false
+      new_review_version:
+        description: Create a replacement review Doc instead of overwriting
+        required: false
+        default: "false"
+        type: boolean
+
+permissions: {}
+
+jobs:
+  publish:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+      actions: write
+    env:
+      GOOGLE_OAUTH_CLIENT_ID: ${{ secrets.GOOGLE_OAUTH_CLIENT_ID }}
+      GOOGLE_OAUTH_CLIENT_SECRET: ${{ secrets.GOOGLE_OAUTH_CLIENT_SECRET }}
+      GOOGLE_OAUTH_REFRESH_TOKEN: ${{ secrets.GOOGLE_OAUTH_REFRESH_TOKEN }}
+      GOOGLE_DRIVE_FOLDER_ID: ${{ vars.GOOGLE_DRIVE_FOLDER_ID }}
+      GOOGLE_ACCOUNT_EMAIL: ${{ vars.GOOGLE_ACCOUNT_EMAIL }}
+      PACKAGE_PATH: ${{ inputs.package_path }}
+      LIFECYCLE_PATH: ${{ inputs.lifecycle_path }}
+      NEW_REVIEW_VERSION: ${{ inputs.new_review_version }}
+    steps:
+      - name: Enforce trusted ref
+        run: |
+          if [ "$GITHUB_REF" != "refs/heads/main" ]; then
+            echo "Secret-bearing Google Docs jobs may only run from refs/heads/main"
+            exit 1
+          fi
+
+      - name: Check out trusted main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: false
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      - name: Install
+        run: npm ci
+
+      - name: Publish
+        run: |
+          set -euo pipefail
+          mkdir -p .google-docs-handoff
+          publish_args=(--package "${PACKAGE_PATH}" --receipt-out .google-docs-handoff/google-doc-receipt.json --lifecycle-out .google-docs-handoff/lifecycle.json)
+          if [ -n "${LIFECYCLE_PATH}" ]; then
+            publish_args+=(--lifecycle "${LIFECYCLE_PATH}")
+          fi
+          if [ "${NEW_REVIEW_VERSION}" = "true" ]; then
+            publish_args+=(--new-review-version)
+          fi
+          npm run google-docs:publish -- "${publish_args[@]}"
+
+      - name: Write review URL summary
+        run: |
+          set -euo pipefail
+          npm run google-docs:write-publish-summary -- --handoff-dir .google-docs-handoff
+
+      - name: Upload publish handoff
+        uses: actions/upload-artifact@v4
+        with:
+          name: google-docs-publish
+          path: .google-docs-handoff
+          if-no-files-found: error
+          retention-days: 90

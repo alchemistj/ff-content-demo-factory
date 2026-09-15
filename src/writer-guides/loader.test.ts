@@ -15,6 +15,7 @@ import {
   loadGuideById,
   loadGuidesByIds,
   loadWriterStageGuides,
+  loadWritingAssignmentGuides,
   manifestHash,
   sha256Hex,
   stageGuideIds,
@@ -66,16 +67,16 @@ test("loadCanonicalGuideCatalog reads exact on-disk Markdown and hashes determin
   const second = loadCanonicalGuideCatalog();
   assert.equal(first.guides.length, 6);
   assert.equal(first.manifestHash, second.manifestHash);
-  assert.equal(first.manifestHash, "569bf4d57648b3323ac9ed3d4a6773c5fdba84fa3bb5913e354a206babcb83bb");
+  assert.equal(first.manifestHash, "0a360d43f873a47d94788472694e8e30ceb5ab8c5e33d3e12bb6725ecf7db1b1");
   assert.deepEqual(
     Object.fromEntries(first.guides.map((guide) => [guide.id, guide.sha256])),
     {
-      general: "46aa8d8ac384abaf6b01d4737997c227d757f4298432437d00454ffa99f354f2",
-      service: "b013b5b962411c67a565e2d681c2fd71ae95d3447fb5cbd190d8d67e148e1bc7",
-      homepage: "3e1b492b80e6f101613d924fad366805ced4918e7892438e827e0946016017cc",
-      contact: "4cdaf7f6c7724aa6b052aad21f898817f0b5ef059750023a92a967cd59ddf574",
-      headerFooter: "6df297ba5cc076382950de2df7161494c64c76db6af644fba717284640bfa8df",
-      readme: "671712749521c34233f126cc78c8917e86576692c6effab9007f5b49e9cd2764",
+      general: "136744acf8591b7d5fae6343f0da4502ea6890f954fc7a25dedf797496e4bbe9",
+      service: "972bd08d862ee8df655b2c495de31286ce6dd8f9962a068c8ec8588fc08b3bd7",
+      homepage: "407e55b87719e9476ace07d61d3143421a2be3465b509fab5d86dd6115d5176b",
+      contact: "07b8e35e68e68fadb93f5e194fef5c6580b5eac0a97ab1749b5603fb38aa2a02",
+      headerFooter: "fdb9d43b593bbcf6a0b1de4d7f1d88e87b701e51231e96ac6fed4e879706c22c",
+      readme: "34d572bd5602d6a03e8d207439f0c4a49cd3218c6568341d8d23f529af355383",
     },
   );
   assert.match(first.manifestHash, /^[0-9a-f]{64}$/);
@@ -91,6 +92,20 @@ test("loadCanonicalGuideCatalog reads exact on-disk Markdown and hashes determin
   }
   assert.equal(manifestHash(first.members), first.manifestHash);
   assert.equal(manifestHash([...first.members].reverse()), first.manifestHash);
+});
+
+test("complete writing assignment loads all craft guides and keeps Writer 1/2/3 as internal phases", () => {
+  const assignment = loadWritingAssignmentGuides();
+  const writer1 = loadWriterStageGuides("writer1");
+  const writer2 = loadWriterStageGuides("writer2");
+  const writer3 = loadWriterStageGuides("writer3");
+  assert.equal(assignment.assignment, "writing");
+  assert.deepEqual(assignment.sourceIds, ["general", "service", "homepage", "contact", "headerFooter"]);
+  assert.equal(assignment.guides.length, 5);
+  assert.equal(assignment.phases.servicePages.setHash, writer1.setHash);
+  assert.equal(assignment.phases.siteChrome.setHash, writer2.setHash);
+  assert.equal(assignment.phases.strategyOverview.setHash, writer3.setHash);
+  assert.equal(assignment.guides.some((guide) => guide.id === "readme"), false);
 });
 
 test("Writer 1/2/3 sets load from repo files with no provider and preserve raw Markdown", () => {
@@ -115,9 +130,9 @@ test("Writer 1/2/3 sets load from repo files with no provider and preserve raw M
   assert.equal(writer1.catalogManifestHash, catalog.manifestHash);
   assert.equal(writer2.catalogManifestHash, catalog.manifestHash);
   assert.equal(writer3.catalogManifestHash, catalog.manifestHash);
-  assert.equal(writer1.setHash, "49073fba8c34b5f90bbfaef484b4357acea3bf75f912ba65d5a33b80b4e8ea12");
-  assert.equal(writer2.setHash, "65e55d628e53492b8108ab0e2f21bf84f1fa2ed145a3892be3673276c6dc7486");
-  assert.equal(writer3.setHash, "6e32befedc8dc09615c9443781c0ad0c30759f72d019302a50e7ac0b03321fb9");
+  assert.equal(writer1.setHash, "fc99fd77d3931c4a3f413337844c5b309f9d3f2215ffedfb10a4db18323ef4de");
+  assert.equal(writer2.setHash, "c1dd23c52627da14036c70bea588e026c0c4ce457c694b78070fd4e062b33ef0");
+  assert.equal(writer3.setHash, "4898d43999afce020c7fb476d6cfd0efcfd5e5750b793e22bc90ebaed6f04e0e");
   assert.notEqual(writer1.setHash, writer2.setHash);
   assert.notEqual(writer1.setHash, writer3.setHash);
   assert.notEqual(writer2.setHash, writer3.setHash);

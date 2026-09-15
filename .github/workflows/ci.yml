@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   writer-guides:
-    name: Writer guides
+    name: Factory
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:

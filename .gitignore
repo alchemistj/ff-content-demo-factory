@@ -1,2 +1,8 @@
 node_modules/
 dist/
+.env
+.env.*
+.ff-content-factory/
+.google-docs-handoff/
+google-oauth.json
+

@@ -1,0 +1,181 @@
+{
+  "schemaVersion": "writing-package/v1",
+  "kind": "website_copy",
+  "packageId": "website-copy-oak-iron-plumbing",
+  "prospectId": "oak-iron-plumbing",
+  "runId": "run_fixture_001",
+  "businessName": "Oak & Iron Plumbing",
+  "pages": [
+    {
+      "pageId": "homepage",
+      "role": "homepage",
+      "audience": "business",
+      "route": "/",
+      "readingOrder": 1,
+      "title": "Plumbing help in Springfield",
+      "seoTitle": "Springfield plumber for leaks and water heaters | Oak & Iron",
+      "metaDescription": "Oak & Iron Plumbing is a Springfield shop that answers when a pipe fails and can replace a water heater that is done.",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "spans": [
+            { "text": "Oak & Iron Plumbing is a Springfield shop that answers the phone when a pipe fails. Call " },
+            { "text": "(417) 555-0142", "bold": true },
+            { "text": " and we will tell you what we see." }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "What neighbors hire us for"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            { "spans": [{ "text": "Emergency leak repair the same day we can reach you" }] },
+            { "spans": [{ "text": "Water heater replacement when the tank is done" }] }
+          ]
+        },
+        {
+          "type": "quote",
+          "spans": [{ "text": "They showed up after hours and stopped the water before it wrecked the floor." }],
+          "attribution": "Dana M., Springfield",
+          "reviewId": "rev-dana-m-springfield"
+        },
+        {
+          "type": "paragraph",
+          "spans": [
+            { "text": "See " },
+            { "text": "leak repair", "href": "/leak-repair" },
+            { "text": " or " },
+            { "text": "water heaters", "href": "/water-heaters" },
+            { "text": "." }
+          ]
+        }
+      ]
+    },
+    {
+      "pageId": "leak-repair",
+      "role": "service",
+      "audience": "business",
+      "route": "/leak-repair",
+      "readingOrder": 2,
+      "title": "Leak repair in Springfield",
+      "seoTitle": "Leak repair in Springfield | Oak & Iron Plumbing",
+      "metaDescription": "Oak & Iron finds the leak, stops the water, and tells Springfield homeowners the repair in plain language.",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "spans": [
+            { "text": "When a pipe breaks, the useful next step is a plumber who can find the leak and shut it down." }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "What we do on the visit"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            { "spans": [{ "text": "Find the source" }] },
+            { "spans": [{ "text": "Stop the water" }] },
+            { "spans": [{ "text": "Tell you the repair in plain language" }] }
+          ]
+        }
+      ]
+    },
+    {
+      "pageId": "water-heaters",
+      "role": "service",
+      "audience": "business",
+      "route": "/water-heaters",
+      "readingOrder": 3,
+      "title": "Water heater replacement",
+      "seoTitle": "Water heater replacement in Springfield | Oak & Iron",
+      "metaDescription": "Oak & Iron replaces a Springfield water heater that is rusting or running out of hot water before it floods the closet.",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "spans": [
+            { "text": "A tank that is rusting or running out of hot water can be replaced before it floods the closet." }
+          ]
+        }
+      ]
+    },
+    {
+      "pageId": "contact",
+      "role": "contact",
+      "audience": "business",
+      "route": "/contact",
+      "readingOrder": 4,
+      "title": "Call Oak & Iron",
+      "seoTitle": "Call Oak & Iron Plumbing in Springfield",
+      "metaDescription": "Call Oak & Iron Plumbing at (417) 555-0142. Shop at 400 W Walnut St, Springfield, MO.",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "spans": [
+            { "text": "Phone: " },
+            { "text": "(417) 555-0142", "bold": true }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "spans": [{ "text": "Shop: 400 W Walnut St, Springfield, MO" }]
+        }
+      ]
+    },
+    {
+      "pageId": "chrome",
+      "role": "header_footer",
+      "audience": "business",
+      "readingOrder": 5,
+      "title": "Header and footer",
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Header"
+        },
+        {
+          "type": "paragraph",
+          "spans": [{ "text": "Oak & Iron Plumbing · Springfield" }]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Footer"
+        },
+        {
+          "type": "paragraph",
+          "spans": [{ "text": "Call (417) 555-0142 · 400 W Walnut St" }]
+        }
+      ]
+    },
+    {
+      "pageId": "strategy",
+      "role": "strategy_overview",
+      "audience": "owner",
+      "route": "/",
+      "readingOrder": 6,
+      "title": "Why We Built This Site",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "spans": [
+            { "text": "This owner-facing overview explains the page jobs. It is not a public website page." }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "spans": [
+            { "text": "The two service pages follow jobs people already hired: leak repair and water heater replacement." }
+          ]
+        }
+      ]
+    }
+  ]
+}
