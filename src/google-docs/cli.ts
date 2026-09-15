@@ -4,6 +4,7 @@ import { dirname, resolve } from "node:path";
 import { spawnSync } from "node:child_process";
 import { authorizeDesktopUser, authorizationReceiptLog } from "./authorize.js";
 import { importReviewedDocument, writeApprovedSnapshot } from "./approval.js";
+import { assertPackageReceiptIdentity } from "./identity.js";
 import {
   createLabeledTestDocument,
   initializeReviewFolder,
@@ -169,6 +170,7 @@ async function runPublish(flags: Record<string, string | true>): Promise<void> {
 async function runImport(flags: Record<string, string | true>): Promise<void> {
   const pkg = loadPackage(requireFlag(flags, "package"));
   const receipt = loadReceipt(requireFlag(flags, "receipt"));
+  assertPackageReceiptIdentity(pkg, receipt);
   const transport = await liveTransport();
   const imported = await importReviewedDocument(transport, pkg, receipt);
   const out = {
@@ -190,7 +192,15 @@ async function runApprove(flags: Record<string, string | true>): Promise<void> {
   }
   const pkg = loadPackage(requireFlag(flags, "package"));
   const receipt = loadReceipt(requireFlag(flags, "receipt"));
-  const snapshot = resolveApprovedSnapshotDir(requireFlag(flags, "prospect-id"));
+  const prospectId = requireFlag(flags, "prospect-id");
+  assertPackageReceiptIdentity(pkg, receipt);
+  if (pkg.prospectId !== prospectId) {
+    throw new GoogleDocsError(
+      "import_identity_mismatch",
+      `destination prospectId mismatch (${prospectId} !== ${pkg.prospectId}). A trusted GitHub run does not bind the approved snapshot path.`,
+    );
+  }
+  const snapshot = resolveApprovedSnapshotDir(prospectId);
   const transport = await liveTransport();
   const imported = await importReviewedDocument(transport, pkg, receipt);
   const record = writeApprovedSnapshot({
@@ -198,6 +208,7 @@ async function runApprove(flags: Record<string, string | true>): Promise<void> {
     imported,
     actor,
     receipt,
+    original: pkg,
     relativeDir: snapshot.relativeDir,
   });
   process.stdout.write(`${JSON.stringify(record, null, 2)}\n`);

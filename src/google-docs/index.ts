@@ -41,10 +41,18 @@ export { importPagesFromDocument, importedPackageFromReadback } from "./document
 export {
   lifecycleAfterPublish,
   missingConfigPublishResult,
+  publicationFailureFromError,
   publishForHumanReview,
 } from "./publisher.js";
 export { createGoogleDocsPublisher, type GoogleDocsPublisher, type GoogleDocsPublisherOptions, type PublicationError, type PublisherPublicationReceipt } from "./publisher-adapter.js";
 export { importReviewedDocument, writeApprovedSnapshot } from "./approval.js";
+export {
+  assertApprovedSnapshotIdentity,
+  assertImportedDocumentIdentity,
+  assertPackageReceiptIdentity,
+  identityFromPackage,
+  identityFromReceipt,
+} from "./identity.js";
 export {
   createLabeledTestDocument,
   initializeReviewFolder,

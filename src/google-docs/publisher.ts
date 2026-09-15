@@ -119,7 +119,7 @@ export async function publishForHumanReview(
     return { ok: true, receipt, state: "human_review" };
   } catch (error) {
     if (error instanceof GoogleDocsError && error.code === "human_edits_protected") throw error;
-    const failure = toFailure(error);
+    const failure = publicationFailureFromError(error);
     return { ok: false, failure, writingPreserved: true };
   }
 }
@@ -215,7 +215,8 @@ function failed(code: string, message: string): PublishResult {
   return { ok: false, failure, writingPreserved: true };
 }
 
-function toFailure(error: unknown): PublicationFailure {
+/** Normalize thrown Google/OAuth/network errors into the publication receipt contract. */
+export function publicationFailureFromError(error: unknown): PublicationFailure {
   if (error instanceof GoogleDocsError) {
     return { status: "publication_failed", code: error.code, message: redactSecrets(error.message) };
   }

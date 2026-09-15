@@ -2,6 +2,11 @@ import { mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { docsGet, type GoogleTransport } from "./google-rest.js";
 import { importPagesFromDocument, importedPackageFromReadback } from "./document-reader.js";
+import {
+  assertApprovedSnapshotIdentity,
+  assertImportedDocumentIdentity,
+  assertPackageReceiptIdentity,
+} from "./identity.js";
 import type { ApprovalRecord, PublicationReceipt } from "./lifecycle.js";
 import { parseWritingPackage, type WritingPackage } from "../writing-package/index.js";
 
@@ -17,6 +22,7 @@ export async function importReviewedDocument(
   original: WritingPackage,
   receipt: PublicationReceipt,
 ): Promise<ImportedReview> {
+  assertPackageReceiptIdentity(original, receipt);
   const document = await docsGet(transport, receipt.documentId);
   const readback = importPagesFromDocument(document, original.pages);
   const imported = parseWritingPackage(importedPackageFromReadback(original, readback));
@@ -25,10 +31,10 @@ export async function importReviewedDocument(
     importedContentHash: imported.packageHash,
     package: imported,
   };
-  if (readback.revisionId !== undefined) {
-    return { ...result, sourceRevisionId: readback.revisionId };
-  }
-  return result;
+  const withRevision =
+    readback.revisionId !== undefined ? { ...result, sourceRevisionId: readback.revisionId } : result;
+  assertImportedDocumentIdentity(original, receipt, withRevision);
+  return withRevision;
 }
 
 export function writeApprovedSnapshot(input: {
@@ -36,9 +42,17 @@ export function writeApprovedSnapshot(input: {
   readonly imported: ImportedReview;
   readonly actor: string;
   readonly receipt: PublicationReceipt;
+  readonly original: WritingPackage;
   readonly relativeDir: string;
   readonly now?: string;
 }): ApprovalRecord {
+  assertApprovedSnapshotIdentity({
+    original: input.original,
+    receipt: input.receipt,
+    imported: input.imported,
+    relativeDir: input.relativeDir,
+    snapshotDir: input.snapshotDir,
+  });
   mkdirSync(input.snapshotDir, { recursive: true });
   const packagePath = join(input.snapshotDir, "approved-writing-package.json");
   writeFileSync(packagePath, `${JSON.stringify(input.imported.package, null, 2)}\n`);

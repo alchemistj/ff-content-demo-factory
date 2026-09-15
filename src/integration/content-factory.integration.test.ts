@@ -8,6 +8,7 @@ import { loadApprovedExampleLibrary } from "../examples/index.js";
 import { createGoogleDocsPublisher } from "../google-docs/publisher-adapter.js";
 import { importReviewedDocument, writeApprovedSnapshot } from "../google-docs/approval.js";
 import { FakeGoogleTransport } from "../google-docs/fake-google.js";
+import { GoogleDocsError } from "../google-docs/errors.js";
 import { buildNativeDocument } from "../google-docs/document-builder.js";
 import { publishForHumanReview } from "../google-docs/publisher.js";
 import { discoverAssignment } from "../workflow/assignment.js";
@@ -111,6 +112,44 @@ test("later stages may set aside advisory recommendations without failing", () =
   });
 });
 
+test("transport construction failure is recorded recoverably and retry does not rerun the writer", async () => {
+  const store = createMemoryStateStore();
+  const fake = new FakeGoogleTransport();
+  let transportCalls = 0;
+  const publisher = createGoogleDocsPublisher({
+    loadConfig: () => ({ config: googleConfig, missing: [], source: "env" }),
+    createTransport: async () => {
+      transportCalls += 1;
+      if (transportCalls === 2) {
+        throw new GoogleDocsError("reauthorization_required", "Google refresh token is invalid, revoked, or expired.");
+      }
+      return fake;
+    },
+  });
+  const adapters = createFixtureAdapters({ publisher });
+  const first = await runFactory({
+    seed: northlineSeed,
+    adapters,
+    stateStore: store,
+    prescriptionApproval: approval,
+  });
+  assert.equal(adapters.stats.writeCalls, 1);
+  assert.equal(first.state.writerInvocations, 1);
+  assert.equal(first.state.stage, WORKFLOW_STAGES.AWAITING_COPY_QA);
+  assert.equal(first.state.publication?.status, "failed");
+  assert.equal(first.state.publication?.error?.code, "reauthorization_required");
+  const writingHash = first.state.writingPackage?.packageHash;
+  assert.ok(writingHash);
+
+  const retry = await retryPublication({ stateStore: store, publisher });
+  assert.equal(adapters.stats.writeCalls, 1);
+  assert.equal(retry.state.writerInvocations, 1);
+  assert.equal(retry.state.writingPackage?.packageHash, writingHash);
+  assert.equal(retry.state.publication?.status, "published");
+  assert.equal(retry.state.stage, WORKFLOW_STAGES.AWAITING_COPY_QA);
+  assert.ok(transportCalls >= 3);
+});
+
 test("publication retry uses the stored package and does not rerun the writer", async () => {
   const store = createMemoryStateStore();
   const fake = new FakeGoogleTransport();
@@ -160,16 +199,19 @@ test("PR #30 writing-package objects publish and import through the Google Docs 
   assert.equal(built.insertText.includes(sourceQuote.reviewId), false);
 
   const dir = mkdtempSync(join(tmpdir(), "ff-approved-"));
+  const relativeDir = `approved-copy/${pkg.prospectId}`;
+  const snapshotDir = join(dir, relativeDir);
   const record = writeApprovedSnapshot({
-    snapshotDir: dir,
+    snapshotDir,
     imported,
     actor: "integration",
     receipt: published.receipt,
-    relativeDir: "approved-copy/prospect-northline",
+    original: pkg,
+    relativeDir,
   });
-  assert.equal(record.snapshotRelativeDir, "approved-copy/prospect-northline");
-  assert.equal(existsSync(join(dir, "approved-writing-package.json")), true);
-  parseWritingPackage(JSON.parse(readFileSync(join(dir, "approved-writing-package.json"), "utf8")));
+  assert.equal(record.snapshotRelativeDir, relativeDir);
+  assert.equal(existsSync(join(snapshotDir, "approved-writing-package.json")), true);
+  parseWritingPackage(JSON.parse(readFileSync(join(snapshotDir, "approved-writing-package.json"), "utf8")));
 });
 
 test("faithful excerpts pass and paraphrases or wrong attribution fail", () => {

@@ -1,7 +1,8 @@
 import type { ReviewKind, WritingPackage } from "../writing-package/index.js";
 import { loadGoogleDocsConfig, createLiveTransport } from "./runtime.js";
-import { missingConfigPublishResult, publishForHumanReview } from "./publisher.js";
-import type { LifecycleRecord } from "./lifecycle.js";
+import { missingConfigPublishResult, publicationFailureFromError, publishForHumanReview } from "./publisher.js";
+import { GoogleDocsError } from "./errors.js";
+import type { LifecycleRecord, PublicationFailure } from "./lifecycle.js";
 import type { GoogleDocsConfigLoad } from "./config.js";
 import type { GoogleTransport } from "./google-rest.js";
 
@@ -50,32 +51,48 @@ export function createGoogleDocsPublisher(options: GoogleDocsPublisherOptions = 
         runId: pkg.runId,
         packageIdentity: { packageId: pkg.packageId, packageHash: pkg.packageHash },
       };
-      const loaded = loadConfig();
-      if (loaded.missing.length > 0) {
-        const unpublished = missingConfigPublishResult(loaded.missing);
-        if (!unpublished.ok) {
-          return {
-            status: "setup-required",
-            ...identity,
-            error: { code: unpublished.failure.code, message: unpublished.failure.message },
-          };
+      try {
+        const loaded = loadConfig();
+        if (loaded.missing.length > 0) {
+          const unpublished = missingConfigPublishResult(loaded.missing);
+          if (!unpublished.ok) {
+            return receiptFromFailure(identity, unpublished.failure, "setup-required");
+          }
         }
-      }
-      const transport = await createTransport(loaded.config);
-      const result = await publishForHumanReview(transport, pkg, loaded.config, lifecycle);
-      if (!result.ok) {
+        const transport = await createTransport(loaded.config);
+        const result = await publishForHumanReview(transport, pkg, loaded.config, lifecycle);
+        if (!result.ok) {
+          return receiptFromFailure(identity, result.failure);
+        }
         return {
-          status: "failed",
+          status: "published",
           ...identity,
-          error: { code: result.failure.code, message: result.failure.message },
+          url: result.receipt.documentUrl,
+          documentId: result.receipt.documentId,
         };
+      } catch (error) {
+        if (error instanceof GoogleDocsError && error.code === "human_edits_protected") throw error;
+        const failure = publicationFailureFromError(error);
+        const status: PublicationStatus = failure.code === "missing_google_config" ? "setup-required" : "failed";
+        return receiptFromFailure(identity, failure, status);
       }
-      return {
-        status: "published",
-        ...identity,
-        url: result.receipt.documentUrl,
-        documentId: result.receipt.documentId,
-      };
     },
+  };
+}
+
+function receiptFromFailure(
+  identity: {
+    readonly kind: ReviewKind;
+    readonly prospectId: string;
+    readonly runId: string;
+    readonly packageIdentity: { readonly packageId: string; readonly packageHash: string };
+  },
+  failure: PublicationFailure,
+  status: PublicationStatus = "failed",
+): PublisherPublicationReceipt {
+  return {
+    status,
+    ...identity,
+    error: { code: failure.code, message: failure.message },
   };
 }
