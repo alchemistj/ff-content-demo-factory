@@ -76,3 +76,18 @@ export {
 } from "./workflow/index.js";
 
 export { createGoogleDocsPublisher } from "./google-docs/publisher-adapter.js";
+
+export {
+  D2D_FACTORY_INTAKE_VERSION,
+  D2D_INTAKE_HTTP_PATH,
+  D2D_INTAKE_SHARED_SECRET_ENV,
+  D2D_INTAKE_STATUSES,
+  acceptD2dIntake,
+  handleD2dIntakeRequest,
+  intakeCorrelationId,
+  mapD2dProspectToSeed,
+  parseD2dIntakeBatch,
+  type D2dIntakeBatch,
+  type D2dIntakeBatchReceipt,
+  type D2dProspectReceipt,
+} from "./d2d-intake/index.js";

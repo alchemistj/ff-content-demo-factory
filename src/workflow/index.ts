@@ -14,6 +14,7 @@ export {
   loadRuntimeDocument,
 } from "./runtime-docs.js";
 export {
+  D2D_SOURCE_KIND,
   WORKFLOW_STAGES,
   WORKFLOW_VERSION,
   cloneState,
@@ -27,6 +28,7 @@ export {
   type StateStore,
   type WorkflowEvent,
   type WorkflowModels,
+  type WorkflowSourceCorrelation,
   type WorkflowStage,
   type WorkflowState,
 } from "./state.js";

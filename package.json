@@ -14,7 +14,8 @@
     "./handoff": "./dist/src/handoff/index.js",
     "./writing-package": "./dist/src/writing-package/index.js",
     "./publisher": "./dist/src/publisher/index.js",
-    "./google-docs": "./dist/src/google-docs/index.js"
+    "./google-docs": "./dist/src/google-docs/index.js",
+    "./d2d-intake": "./dist/src/d2d-intake/index.js"
   },
   "engines": {
     "node": ">=22"
@@ -22,7 +23,8 @@
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "check": "tsc -p tsconfig.json --noEmit",
-    "test": "node --import tsx --test src/writer-guides/*.test.ts src/approved-copy/*.test.ts src/examples/*.test.ts src/handoff/*.test.ts src/workflow/*.test.ts src/writing-package/*.test.ts src/google-docs/*.test.ts src/integration/*.test.ts",
+    "test": "node --import tsx --test src/writer-guides/*.test.ts src/approved-copy/*.test.ts src/examples/*.test.ts src/handoff/*.test.ts src/workflow/*.test.ts src/writing-package/*.test.ts src/google-docs/*.test.ts src/d2d-intake/*.test.ts src/integration/*.test.ts",
+    "d2d-intake": "node --import tsx src/d2d-intake/cli.ts",
     "test:compiled": "npm run build && node scripts/assert-compiled-writer-guides.mjs",
     "test:all": "npm run check && npm test && npm run test:compiled",
     "writer-guides:receipt": "node --import tsx src/writer-guides/cli.ts",

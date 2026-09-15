@@ -82,3 +82,11 @@ The only routine human gates are:
 2. Copy QA after the writing package exists (`awaiting_copy_qa`)
 
 No additional human gates. No model-as-editor gate. Prescription publication is the same existing gate, with a Doc link when configured.
+
+## D2D qualified-prospect intake
+
+Versioned contract: `d2d-factory-intake/v1`. Types: `src/d2d-intake/index.ts` (package export `ff-content-demo-factory/d2d-intake`). Human docs: `docs/d2d-intake/CONTRACT.md`.
+
+D2D sends only **qualified** candidates. Content Factory maps them onto the existing `ProspectSeed` and `runFactory()` state machine. Intake stops at Human Gate 1 (`awaiting_prescription_approval`). It does not invent NAP/identity, does not start the writer, and does not publish website copy.
+
+Ingress is authenticated (`D2D_INTAKE_SHARED_SECRET`) and fails closed. Statuses: `accepted` / `duplicate` / `held` / `failed` / `retryable`. Campaign, campaign-run, export, and D2D prospect IDs are persisted on receipts and `WorkflowState.sourceCorrelation`.

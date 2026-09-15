@@ -4,5 +4,6 @@ dist/
 .env.*
 .ff-content-factory/
 .google-docs-handoff/
+.d2d-intake-state/
 google-oauth.json
 

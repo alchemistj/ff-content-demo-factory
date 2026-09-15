@@ -26,6 +26,19 @@ export const WORKFLOW_STAGES = Object.freeze({
 
 export type WorkflowStage = (typeof WORKFLOW_STAGES)[keyof typeof WORKFLOW_STAGES];
 
+export const D2D_SOURCE_KIND = "d2d-factory-intake/v1" as const;
+
+export interface WorkflowSourceCorrelation {
+  readonly kind: typeof D2D_SOURCE_KIND;
+  readonly d2dProspectId: string;
+  readonly campaignId: string;
+  readonly campaignRunId: string;
+  readonly exportId: string;
+  readonly exportedAt: string;
+  readonly qualificationClassification: string;
+  readonly qualificationReason: string;
+}
+
 export interface WorkflowModels {
   readonly researcher: ModelRef;
   readonly prescriber: ModelRef;
@@ -60,6 +73,7 @@ export interface WorkflowState {
   prescriptionPublication: PublicationReceipt | null;
   humanQaTask: HumanQaTask | null;
   events: WorkflowEvent[];
+  sourceCorrelation?: WorkflowSourceCorrelation;
 }
 
 export interface HumanQaTask {
@@ -92,6 +106,7 @@ export function createInitialState(input: {
   readonly seed: ProspectSeed;
   readonly models: WorkflowModels;
   readonly now?: Date;
+  readonly sourceCorrelation?: WorkflowSourceCorrelation;
 }): WorkflowState {
   const now = (input.now ?? new Date()).toISOString();
   return {
@@ -115,6 +130,7 @@ export function createInitialState(input: {
     prescriptionPublication: null,
     humanQaTask: null,
     events: [],
+    ...(input.sourceCorrelation ? { sourceCorrelation: cloneState(input.sourceCorrelation) } : {}),
   };
 }
 
