@@ -1,10 +1,17 @@
-# RLB Electric clean-room writer test
+# RLB Electric clean-room two-service-page writing test
 
 ## Purpose
 
-Redo the RLB Electric Remodel & Repair writing test from scratch using the current Content Demo Factory architecture on this branch.
+Redo the RLB Electric Remodel & Repair service-page writing test from scratch using the current Content Demo Factory architecture on this branch.
 
-This is a **writing-quality test of the new one-writer system**. Produce a fresh complete website-copy package from source evidence, the already-approved page plan, the current Fluid Frame guides, and the current approved Springfield examples.
+This phase is intentionally a **writing-quality test of only two service pages**. It is not the full website-copy package yet.
+
+Write:
+
+1. Panel Upgrade — `/panel-upgrade-springfield`
+2. Electrical Repair — `/electrical-repair-springfield`
+
+Stop after those two pages for Josh's editorial review.
 
 ## Absolute clean-room rule
 
@@ -17,171 +24,201 @@ Specifically excluded:
 - commit `48e4db8b8de0f5006b922e9b7e6892b1165a17e9`
 - `ELECTRICAL_REPAIR_PAGE.md`
 - `PANEL_UPGRADE_PAGE.md`
-- any historical RLB `copy-artifact.json`, `copy-blueprint.json`, `copy-evidence.json`, `copy-pages/**`, `copy-review.md`, `copy-sitewide/**`, copy-quality output, or render-binding output
+- historical RLB `copy-artifact.json`, `copy-blueprint.json`, `copy-evidence.json`, `copy-pages/**`, `copy-review.md`, `copy-sitewide/**`, quality output, or render-binding output
+- any current or historical FF-2 Demos browsing for this task
 
-Those are prior writer outputs and are contamination for this test.
+Those are prior writer outputs or uncontrolled alternate source paths and are contamination for this test.
 
-The only RLB-specific authority is the immutable upstream evidence/prescription material listed in `INPUT_MANIFEST.json` and materialized by `scripts/materialize-rlb-clean-room-inputs.mjs`.
+The only RLB-specific authority is the four SHA-verified inputs defined in `INPUT_MANIFEST.json` and materialized by `scripts/materialize-rlb-clean-room-inputs.mjs`.
+
+## Why the source path is safe
+
+The materializer reads from Content Factory commit:
+
+`82b72510cb480f12fc02358263781528d30c39ab`
+
+That commit is a validated **pre-writing clean-room packet** created before any RLB service-page prose was authored. It contains the four verified source inputs that had been copied from the pinned FF-2 Demos evidence/approval lineage.
+
+The source snapshot contains no RLB service-page drafts. The materializer also verifies the expected SHA-256 for every file before writing it locally.
+
+Do not browse the old branch or FF-2 Demos to confirm or supplement these files. If the materializer fails, stop and report the failure.
 
 ## Start here
 
 1. Read repository-root `ASSIGNMENT.md`.
 2. Read `docs/runtime/AUTHORITY.md`.
 3. Read `docs/runtime/WRITER.md`.
-4. Read the canonical writer guides under `docs/writer-guides/`.
-5. Read the approved example library under `examples/approved-copy/` through the repository's normal assignment/example loader. The primary corpus is the twelve approved Springfield pages; `_chrome.md` files are supplemental.
+4. Read the current canonical writer guides under `docs/writer-guides/`.
+5. Read the approved example library under `examples/approved-copy/` through the repository's normal assignment/example loader. The examples teach craft; their facts belong to those businesses.
 6. Run:
 
 ```bash
 node scripts/materialize-rlb-clean-room-inputs.mjs
 ```
 
-7. Read all four files created under `writer-runs/rlb-electric-remodel-repair/inputs/`.
-
-Do not search GitHub for prior RLB writing. The materializer is the approved source path.
+7. Read all four files created under `writer-runs/rlb-electric-remodel-repair/inputs/`:
+   - `review-inventory.json`
+   - `strategy-recipe.json`
+   - `confirmed-facts.json`
+   - `prescription-approval.json`
 
 ## Source authority
 
-The materializer pins the original FF-2 Demos evidence and approved prescription to exact commits and verifies SHA-256 hashes before writing local files.
+The four inputs mean:
 
-The four inputs are:
+- `review-inventory.json` — full exact-place Google review inventory: 68 listing reviews, 44 retrieved written reviews, 4.9 listing rating.
+- `strategy-recipe.json` — the approved RLB strategy/page prescription plus embedded evidence/context.
+- `confirmed-facts.json` — confirmed business facts.
+- `prescription-approval.json` — records the human approval of the prescription (`authorized: true`, `recordedJoshApproval: true`).
 
-- `review-inventory.json` — original exact-place Google review inventory
-- `strategy-recipe.json` — approved RLB strategy/page prescription and embedded evidence/context
-- `confirmed-facts.json` — confirmed business facts
-- `prescription-approval.json` — record of Josh's approval of the prescription
+The writer has the **full source-backed review inventory**. Review grades/classifications or suggested lead-review choices in older artifacts are not commands under the current architecture. Use your own editorial judgment to choose the strongest truthful evidence for each page.
 
-Source provenance is documented in `INPUT_MANIFEST.json`.
+Every quotation must preserve exact source wording or a faithful contiguous excerpt and correct attribution. Do not convert a customer's individual experience into a company-wide promise.
 
-## Human-approved page plan
+## Human-approved service-page jobs
 
-Preserve the approved five-page demo architecture:
+### Panel Upgrade
 
-1. Owner-facing Strategy Overview at `/`
-2. Business homepage at `/home`
-3. Panel Upgrade service page at `/panel-upgrade-springfield`
-4. Electrical Repair service page at `/electrical-repair-springfield`
-5. Contact page at `/contact`
+Route: `/panel-upgrade-springfield`
 
-Shared header/footer is part of the complete writing package, not a separate public route.
+Job: considered-purchase / planned-capacity electrical work. Help a Springfield homeowner understand when a panel upgrade is the relevant service and why RLB is a credible company to call.
 
-The two service jobs are intentionally distinct:
+### Electrical Repair
 
-- **Panel Upgrade** — considered-purchase/planned-capacity work
-- **Electrical Repair** — urgent/problem-solving residential repair and troubleshooting
+Route: `/electrical-repair-springfield`
 
-Kitchen & bath remodel electrical installation remains a confirmed business capability but is intentionally **not** one of the two dedicated demo service landers. Do not add a third service page.
+Job: urgent/problem-solving residential electrical repair and troubleshooting. Help a Springfield homeowner with an active electrical problem understand that RLB diagnoses and repairs this kind of work.
 
-## How to treat the old prescription under the new architecture
+These two pages must remain meaningfully distinct. Do not write the same page twice with swapped keywords.
 
-The approved page jobs, routes, business scope, and explicit human locks are binding.
+Kitchen & bath remodel electrical installation remains a confirmed RLB capability but is intentionally not a dedicated service lander in this test. Do not add a third service page.
 
-Research/prescription suggestions about which review to lead with, exact section order, review counts, word counts, FAQ counts, paragraph lengths, or other editorial tactics are **recommendations to consider**, not commands, unless the source clearly records them as an explicit Josh-approved decision.
+## What remains binding vs advisory
 
-Use your own writing judgment under `docs/runtime/AUTHORITY.md`.
+Binding:
 
-The full source-backed review inventory remains available to you. You may choose the reviews that best support the final written page. Preserve quotation fidelity and attribution.
+- factual evidence
+- business identity/contact facts
+- the two approved routes
+- the distinct jobs/intents of the two pages
+- explicit human locks recorded in the approved prescription
 
-## One writer owns the entire package
+Advisory rather than mandatory:
 
-This assignment is **one writer run**.
+- suggested first review
+- section sketches/order
+- review counts
+- word counts
+- FAQ counts
+- paragraph-length targets
+- review-distance rules
+- other editorial tactics that were not explicitly human-approved decisions
 
-Do not split the work into separate fresh agents or model sessions for services, homepage, chrome, or strategy.
-
-Recommended internal sequence inside the same run:
-
-1. Write the two service pages.
-2. Write homepage, contact, header, and footer with continuity from the service pages.
-3. Write the owner-facing Strategy Overview last, describing the site that now actually exists.
-4. Reread and polish the complete package as a whole.
+Use the current positive-framework system and your own writing judgment.
 
 ## Writing philosophy
 
-Use the current positive-framework system on this branch.
-
 - Make RLB's specific, source-supported case.
-- Write direct customer-facing business copy where evidence supports it.
-- Use reviews as proof beside the benefits they support, not as a compliance exercise.
+- Write as the business to a customer choosing whom to call.
+- Use concrete evidence and customer experiences rather than generic contractor praise.
+- Use reviews as proof beside the benefits they genuinely support, not as a compliance exercise.
 - Do not narrate evidence limitations to customers.
-- Do not mechanically recreate the old rubric.
+- Do not mechanically recreate the old V2 rubric.
 - Do not write to fixed review counts, FAQ counts, word counts, paragraph lengths, or review-distance quotas.
-- Do not manufacture claims, offers, credentials, timing, availability, warranties, pricing, service areas, or customer outcomes.
-- Do not convert one customer's experience into a company-wide promise.
+- Do not manufacture services, credentials, response times, emergency/24-hour claims, warranties, pricing, financing, service areas, guarantees, or customer outcomes.
 - Do not copy facts, claims, or wording from the Springfield example businesses; they teach craft only.
 
 ## SEO metadata is required
 
-The same writer must produce final SEO metadata as part of the copy package.
+For **both** service pages, write final:
 
-`seoTitle` and `metaDescription` are required for:
+- `seoTitle`
+- `metaDescription`
 
-- homepage
-- Panel Upgrade service page
-- Electrical Repair service page
-- contact page
+Use the approved page job, route, and search intent to guide literal, useful, evidence-supported search-result wording.
 
-Do not put SEO metadata on shared header/footer. Strategy Overview SEO metadata is not required.
+Do not keyword-stuff. Do not treat character or pixel counts as a grading gate. The later website builder should consume these approved words rather than invent replacements.
 
-Use the approved page job, route, and target intent to guide literal, useful search-result wording. Do not keyword-stuff and do not treat character/pixel counts as a grading gate.
+## Output for this partial test
 
-The later website builder should consume these final SEO words rather than invent replacements.
+Do **not** weaken or change the canonical `writing-package/v1` schema.
 
-## Required output
+Do **not** fake a full package containing only two pages and claim it is valid `writing-package/v1`; the full schema correctly requires the entire site package.
 
-Create exactly one complete canonical `writing-package/v1` JSON artifact at:
+Instead, create a clearly labeled partial review artifact under:
 
-`writer-runs/rlb-electric-remodel-repair/output/writing-package.json`
+`writer-runs/rlb-electric-remodel-repair/output/`
 
-It must contain the complete package in this order:
+Use a machine-readable structure that preserves, for each page:
 
-1. homepage
-2. Panel Upgrade service page
-3. Electrical Repair service page
-4. contact
-5. shared header/footer
-6. owner-facing Strategy Overview
+- stable page ID
+- role = `service`
+- audience = `business`
+- route
+- SEO title
+- meta description
+- H1/title
+- full content blocks (headings, paragraphs, lists, quotations)
+- source review ID for any quoted review where practical
 
-Use stable page IDs; do not derive identity from H1 text.
+Also create one **readable review document/artifact** containing both pages in this order:
 
-The package must satisfy the current `src/writing-package/` contract, including required routes, audiences, content blocks, SEO metadata, and canonical package hash.
+1. Panel Upgrade
+2. Electrical Repair
 
-Do not create separate Markdown page drafts as the authoritative output. The JSON writing package is the source of truth for this test.
+For each page, visibly show:
+
+- route
+- SEO title
+- meta description
+- H1
+- complete page copy
+
+This readable artifact is what Josh should review first. Do not make Josh review raw JSON to judge prose.
 
 ## Validation before handoff
 
-Before declaring the writing complete:
+Do not run the full six-part `writing-package/v1` validator against this intentionally partial artifact and then try to “fix” the schema when it fails.
 
-- Validate the package with the repository's current `writing-package/v1` parser/validator.
-- Confirm homepage/services/contact all have non-empty `seoTitle` and `metaDescription`.
-- Confirm header/footer has no SEO metadata.
-- Confirm Strategy Overview is owner-facing and business pages are customer-facing.
-- Confirm every quoted review is exact source text or a faithful contiguous excerpt with correct attribution.
-- Confirm the package contains only the approved page set/routes.
-- Run the repository typecheck/tests relevant to your changes.
+Validate the things that legitimately apply at page level:
+
+- exactly the two approved service routes
+- stable page IDs
+- business-facing audience
+- non-empty SEO title and meta description on both pages
+- valid content-block structure
+- every quotation maps to source-backed review text and uses exact wording or a faithful contiguous excerpt
+- correct reviewer attribution
+- no unsupported claims
+- the two pages own meaningfully different customer decisions
+- no historical RLB authored copy was consulted
+
+Run repository typecheck/tests only as relevant to ensure your changes did not break existing factory code. Do not change factory architecture, schemas, guides, examples, or tests merely to accommodate this partial experiment.
 
 ## Scope boundary
 
-For this test, do not:
+Do not:
 
-- change the factory architecture, writer guides, examples, schemas, or tests unless a genuine blocking defect prevents producing a valid package
+- write homepage/contact/chrome/Strategy Overview in this phase
 - build the website
 - touch FF-2 Demos
 - publish to production
 - perform outreach
-- use the old RLB writer branch or PR
 - add another editorial-model gate
+- inspect prior RLB authored copy
+- redesign the factory
 
-If you discover a framework defect that prevents the assignment, stop and report the defect rather than silently redesigning the factory.
+If a genuine framework defect blocks the writing task, stop and report it rather than silently working around it.
 
 ## Handoff
 
 When finished, report:
 
 - exact branch and HEAD SHA
-- output path
+- paths to the structured partial artifact and readable review artifact
 - validation/test results
-- which source reviews were actually used
-- any source ambiguity or unsupported claim you deliberately excluded
-- confirmation that no historical RLB authored copy was consulted
+- which source reviews were actually used on each page
+- any source ambiguity or unsupported claim deliberately excluded
+- confirmation that no historical RLB authored copy or FF-2 Demos material was consulted outside the four materialized inputs
 
 Do not self-grade the prose as approved. Josh is the editorial quality gate.
