@@ -1,5 +1,5 @@
 {
-  "notes": "Canonical d2d-factory-intake/v1 request and expected Content Factory receipt. Copied from alchemistj/ff-gb-door-to-door-system tests/fixtures/d2d-factory-intake-v1.json at fe5b74f5f1059af2808e61a0b13755ead55999a5. Content Factory is the sole qualifier. Complete listing is Northline Garage Doors. Sparse listing is No website shop (phone, website, and rating omitted). Transport statuses are received|duplicate|invalid|retryable.",
+  "notes": "Frozen d2d-factory-intake/v1 request and CF receipt. D2D PR #5 and Content Factory PR #36 must consume this file without translating field names. correlationId is the cross-repo identity. Google place/maps ids are evidence only. qualification.outcome is not a transport status.",
   "request": {
     "version": "d2d-factory-intake/v1",
     "campaignId": "campaign-1",
@@ -7,21 +7,13 @@
     "exportId": "export:campaign-1:apify-run-1:d2d-factory-intake/v1",
     "exportedAt": "2026-09-16T12:00:00.000Z",
     "campaign": {
-      "location": "Springfield, MO",
+      "center": { "lat": 37.20896, "lng": -93.2923 },
       "radiusMiles": 0.25,
       "radiusMeters": 402.336,
-      "center": { "lat": 37.20896, "lng": -93.2923 },
-      "search": {
-        "query": "business",
-        "searchStrings": ["garage door"]
-      }
+      "location": "Springfield, MO",
+      "search": { "query": "business", "searchStrings": ["business"] }
     },
-    "provenance": {
-      "provider": "apify",
-      "actor": "compass/crawler-google-places",
-      "runId": "apify-run-1",
-      "datasetId": "dataset-1"
-    },
+    "provenance": { "provider": "apify", "actor": "compass/crawler-google-places", "runId": "apify-run-1", "datasetId": "dataset-1" },
     "businesses": [
       {
         "d2dProspectId": "cb-1",
@@ -29,33 +21,22 @@
         "campaignBusinessId": "cb-1",
         "d2dBusinessId": "biz-1",
         "correlationId": "biz-1::export:campaign-1:apify-run-1:d2d-factory-intake/v1::d2d-factory-intake/v1",
+        "name": "Northline Garage Doors",
         "title": "Northline Garage Doors",
-        "category": "garage door service",
-        "categories": ["garage door service"],
-        "address": {
-          "street": "18 Harbor Avenue",
-          "city": "Mason",
-          "region": "IL",
-          "postalCode": "60000",
-          "country": "US"
-        },
-        "location": "Lake County",
-        "phone": "+1-555-010-1000",
-        "website": "https://northline.example/",
-        "rating": 4.8,
-        "reviewCount": 42,
         "placeId": "place-1",
         "googlePlaceId": "place-1",
         "cid": "cid-northline",
         "mapsUrl": "https://maps.example/northline",
-        "coordinates": { "lat": 41.901, "lng": -87.812 },
-        "apify": {
-          "provider": "apify",
-          "actor": "compass/crawler-google-places",
-          "runId": "apify-run-1",
-          "datasetId": "dataset-1",
-          "itemId": "item-9"
-        }
+        "category": "Garage door service",
+        "categories": ["Garage door service"],
+        "address": { "street": "18 Harbor Avenue", "city": "Mason", "region": "IL", "postalCode": "60000" },
+        "location": "Mason, IL",
+        "coordinates": { "lat": 37.20896, "lng": -93.2923 },
+        "phone": "5550101000",
+        "website": "https://northline.example/",
+        "rating": 4.6,
+        "reviewCount": 18,
+        "apify": { "provider": "apify", "actor": "compass/crawler-google-places", "runId": "apify-run-1", "datasetId": "dataset-1", "itemId": "item-9" }
       },
       {
         "d2dProspectId": "cb-sparse",
@@ -63,29 +44,19 @@
         "campaignBusinessId": "cb-sparse",
         "d2dBusinessId": "biz-sparse",
         "correlationId": "biz-sparse::export:campaign-1:apify-run-1:d2d-factory-intake/v1::d2d-factory-intake/v1",
+        "name": "No website shop",
         "title": "No website shop",
-        "category": "garage door service",
-        "categories": ["garage door service"],
-        "address": {
-          "street": "18 Harbor Avenue",
-          "city": "Mason",
-          "region": "IL",
-          "postalCode": "60000",
-          "country": "US"
-        },
-        "location": "Lake County",
         "placeId": "place-1",
         "googlePlaceId": "place-1",
         "cid": "cid-northline",
         "mapsUrl": "https://maps.example/northline",
-        "coordinates": { "lat": 41.901, "lng": -87.812 },
-        "apify": {
-          "provider": "apify",
-          "actor": "compass/crawler-google-places",
-          "runId": "apify-run-1",
-          "datasetId": "dataset-1",
-          "itemId": "item-9"
-        }
+        "category": "Garage door service",
+        "categories": ["Garage door service"],
+        "address": { "street": "18 Harbor Avenue", "city": "Mason", "region": "IL", "postalCode": "60000" },
+        "location": "Mason, IL",
+        "coordinates": { "lat": 37.20896, "lng": -93.2923 },
+        "reviewCount": 18,
+        "apify": { "provider": "apify", "actor": "compass/crawler-google-places", "runId": "apify-run-1", "datasetId": "dataset-1", "itemId": "item-9" }
       }
     ]
   },
@@ -98,21 +69,7 @@
       {
         "version": "d2d-factory-intake/v1",
         "status": "received",
-        "qualification": {
-          "outcome": "advanced",
-          "reasonCode": "FACTORY_ADVANCED",
-          "reason": "Content Factory selected this business from candidate-bench + website/opportunity evidence, not from ProspectSeed completeness or a D2D qualification conclusion.",
-          "websiteOpportunity": {
-            "inspected": true,
-            "quality": "strong",
-            "opportunity": "strong",
-            "searchFit": true,
-            "source": "listing-evidence",
-            "reasons": [
-              "Listing website plus rating/review evidence supports a factory opportunity."
-            ]
-          }
-        },
+        "qualification": { "outcome": "advanced", "reason": "Factory advanced this raw listing", "reasonCode": "FACTORY_ADVANCED" },
         "d2dProspectId": "cb-1",
         "sourceBusinessId": "biz-1",
         "campaignBusinessId": "cb-1",
@@ -122,28 +79,16 @@
         "campaignRunId": "apify-run-1",
         "exportId": "export:campaign-1:apify-run-1:d2d-factory-intake/v1",
         "correlationId": "biz-1::export:campaign-1:apify-run-1:d2d-factory-intake/v1::d2d-factory-intake/v1",
-        "factoryProspectId": "biz-1",
-        "factoryRunId": "run-biz-1",
-        "factoryStage": "awaiting_prescription_approval"
+        "factoryProspectId": "factory-northline",
+        "factoryRunId": "run-factory-northline",
+        "factoryStage": "awaiting_prescription_approval",
+        "reason": "Factory advanced this raw listing",
+        "reasonCode": "FACTORY_ADVANCED"
       },
       {
         "version": "d2d-factory-intake/v1",
         "status": "received",
-        "qualification": {
-          "outcome": "held",
-          "reasonCode": "WEAK_OPPORTUNITY",
-          "reason": "Factory website/opportunity evidence is not strong enough to select this business.",
-          "websiteOpportunity": {
-            "inspected": true,
-            "quality": "unknown",
-            "opportunity": "unknown",
-            "searchFit": true,
-            "source": "listing-evidence",
-            "reasons": [
-              "No website on the listing; opportunity evidence is incomplete."
-            ]
-          }
-        },
+        "qualification": { "outcome": "held", "reason": "Missing phone/website; factory will not invent ProspectSeed values", "reasonCode": "INSUFFICIENT_SEED_FACTS" },
         "d2dProspectId": "cb-sparse",
         "sourceBusinessId": "biz-sparse",
         "campaignBusinessId": "cb-sparse",
@@ -153,8 +98,8 @@
         "campaignRunId": "apify-run-1",
         "exportId": "export:campaign-1:apify-run-1:d2d-factory-intake/v1",
         "correlationId": "biz-sparse::export:campaign-1:apify-run-1:d2d-factory-intake/v1::d2d-factory-intake/v1",
-        "reason": "Factory website/opportunity evidence is not strong enough to select this business.",
-        "reasonCode": "WEAK_OPPORTUNITY"
+        "reason": "Missing phone/website; factory will not invent ProspectSeed values",
+        "reasonCode": "INSUFFICIENT_SEED_FACTS"
       }
     ]
   }

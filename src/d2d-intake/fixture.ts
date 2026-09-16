@@ -12,10 +12,13 @@ import type { FactoryAdapters, PrescriptionAdapter, ResearchAdapter, WriterAdapt
 import type { GoogleDocsPublisher } from "../publisher/types.js";
 import type { WritingPackage } from "../writing-package/types.js";
 import { createFactoryQualifier, type QualificationAdapter } from "../factory/qualify.js";
-import { composeRawSourceNotes, factoryProspectId } from "./map.js";
+import { composeRawSourceNotes, factoryProspectId, mapAdvancedBusinessToSeed } from "./map.js";
+import type { SeedMappingResult } from "./map.js";
 import { normalizeRawBusiness } from "./normalize.js";
 import {
   D2D_FACTORY_INTAKE_VERSION,
+  D2D_INTAKE_REASON_CODES,
+  FACTORY_QUALIFICATION_OUTCOMES,
   type D2dCampaignContext,
   type D2dIntakeBatch,
   type D2dRawBusiness,
@@ -216,6 +219,49 @@ export function countingQualifier(inner: QualificationAdapter = createFactoryQua
     },
   };
   return wrapped;
+}
+
+export function createGoldenContractQualifier(): QualificationAdapter {
+  return {
+    provider: "d2d-golden-contract",
+    model: "d2d-factory-intake/v1",
+    async qualify({ record }) {
+      if (record.sourceBusinessId === "biz-1") {
+        return {
+          outcome: FACTORY_QUALIFICATION_OUTCOMES.ADVANCED,
+          reason: "Factory advanced this raw listing",
+          reasonCode: D2D_INTAKE_REASON_CODES.FACTORY_ADVANCED,
+        };
+      }
+      return {
+        outcome: FACTORY_QUALIFICATION_OUTCOMES.HELD,
+        reason: "Missing phone/website; factory will not invent ProspectSeed values",
+        reasonCode: D2D_INTAKE_REASON_CODES.INSUFFICIENT_SEED_FACTS,
+      };
+    },
+  };
+}
+
+export function goldenContractMapSeed(
+  record: Parameters<typeof mapAdvancedBusinessToSeed>[0],
+  envelope: Parameters<typeof mapAdvancedBusinessToSeed>[1],
+): SeedMappingResult {
+  if (record.sourceBusinessId !== "biz-1") {
+    return mapAdvancedBusinessToSeed(record, envelope);
+  }
+  const withCountry = {
+    ...record,
+    address: record.address ? { ...record.address, country: "US" } : { country: "US" },
+  };
+  const mapped = mapAdvancedBusinessToSeed(withCountry, envelope);
+  if (!mapped.ok) return mapped;
+  return {
+    ok: true,
+    mapped: {
+      ...mapped.mapped,
+      seed: { ...mapped.mapped.seed, prospectId: "factory-northline" },
+    },
+  };
 }
 
 export function createIntakeAdapters(options?: {

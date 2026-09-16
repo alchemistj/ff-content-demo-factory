@@ -85,7 +85,7 @@ Missing optional fields stay empty. They are not fabricated and they are not a t
 correlationId = `${sourceBusinessId}::${exportId}::d2d-factory-intake/v1`
 ```
 
-The golden D2D request is the two-business cohort at `src/d2d-intake/fixtures/d2d-factory-intake-v1.json`: complete `cb-1`/`biz-1` (Northline Garage Doors) and sparse `cb-sparse`/`biz-sparse` titled `No website shop` (no phone/website/rating). Campaign run is `apify-run-1`; export id is `export:campaign-1:apify-run-1:d2d-factory-intake/v1`. It is a duplicated copy of D2D `tests/fixtures/d2d-factory-intake-v1.json` at `fe5b74f5`, including producer `notes` and full expected receipt fields. Northline/Lake County samples in this document and in unit tests are local examples only; they are not a second golden.
+The golden D2D request is the two-business cohort at `src/d2d-intake/fixtures/d2d-factory-intake-v1.json`: complete `cb-1`/`biz-1` (Northline Garage Doors) and sparse `cb-sparse`/`biz-sparse` titled `No website shop` (no phone/website/rating). Campaign run is `apify-run-1`; export id is `export:campaign-1:apify-run-1:d2d-factory-intake/v1`. It is a duplicated copy of D2D `tests/fixtures/d2d-factory-intake-v1.json` at `fe5b74f5`, including producer `notes` and full expected receipt fields. Do not translate phone, category, address, location, or expected-receipt semantics. Northline/Lake County samples in this document and in unit tests are local examples only; they are not a second golden.
 
 D2D `assignContentFactoryReceipts()` reconciles by `d2dProspectId` plus this `correlationId`. Idempotency is the same triple. A missing or mismatched `correlationId` is transport `invalid` (`MISSING_CORRELATION_ID` / `INVALID_CORRELATION_ID`) for that item only.
 

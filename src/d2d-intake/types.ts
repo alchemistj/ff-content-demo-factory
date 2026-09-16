@@ -25,36 +25,52 @@ export const D2D_PR5_HEAD = "fe5b74f5f1059af2808e61a0b13755ead55999a5" as const;
 
 /** SHA-256 of JSON.stringify(parsed copied D2D golden). Drift guard against lookalikes. */
 export const D2D_GOLDEN_FIXTURE_SHA256 =
-  "9c8c93968ffb5645fbb74cff55748c2370658e1bfe294427fb8b482f3ffaef8f" as const;
+  "6de2858a612e7f70a89d8f9588aafe27ab7d98c0c5eb979138eca730f787fa08" as const;
 
 /**
  * Exact producer facts from D2D PR #5 `tests/fixtures/d2d-factory-intake-v1.json`
- * at `fe5b74f5`. The copied golden must contain these values; hashing a
- * different internally consistent fixture is not sufficient.
+ * at `fe5b74f5`. Additional guard only; the full-object SHA-256 is authoritative.
  */
 export const D2D_GOLDEN_PRODUCER_FACTS = Object.freeze({
+  notes:
+    "Frozen d2d-factory-intake/v1 request and CF receipt. D2D PR #5 and Content Factory PR #36 must consume this file without translating field names. correlationId is the cross-repo identity. Google place/maps ids are evidence only. qualification.outcome is not a transport status.",
   exportedAt: "2026-09-16T12:00:00.000Z",
   location: "Springfield, MO",
   center: Object.freeze({ lat: 37.20896, lng: -93.2923 }),
   radiusMiles: 0.25,
   radiusMeters: 402.336,
   searchQuery: "business",
+  searchStrings: Object.freeze(["business"]),
   actor: "compass/crawler-google-places",
+  completeName: "Northline Garage Doors",
   completeTitle: "Northline Garage Doors",
+  completeCategory: "Garage door service",
   completePlaceId: "place-1",
   completeGooglePlaceId: "place-1",
   completeCid: "cid-northline",
   completeItemId: "item-9",
   completeCity: "Mason",
   completeRegion: "IL",
+  completeCountry: null,
+  completeLocation: "Mason, IL",
+  completePhone: "5550101000",
+  completeRating: 4.6,
+  completeReviewCount: 18,
+  completeCoordinates: Object.freeze({ lat: 37.20896, lng: -93.2923 }),
   sparseTitle: "No website shop",
-  completeFactoryRunId: "run-biz-1",
+  sparseName: "No website shop",
+  sparseReviewCount: 18,
+  sparseHasPhone: false,
+  completeFactoryProspectId: "factory-northline",
+  completeFactoryRunId: "run-factory-northline",
   completeFactoryStage: "awaiting_prescription_approval",
+  completeReason: "Factory advanced this raw listing",
+  sparseReasonCode: "INSUFFICIENT_SEED_FACTS",
 });
 
 /** SHA-256 of JSON.stringify of the producer-facts projection from the copied golden. */
 export const D2D_GOLDEN_PRODUCER_FACTS_SHA256 =
-  "2d2eb2845f43dc714019e77901168b15990d7693e315336532aa7ebd64eb8e73" as const;
+  "0ee7da4dd82695008b273f21674340aa2502ea239a01dde8b7102b5d02ddd77e" as const;
 
 export const D2D_INTAKE_DEFAULT_MAX_BATCH = 40;
 

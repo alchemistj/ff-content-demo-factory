@@ -13,7 +13,7 @@ import type { GoogleDocsPublisher } from "../publisher/types.js";
 import type { WritingPackage } from "../writing-package/types.js";
 import { assertD2dIntakeAuth } from "./auth.js";
 import { D2dIntakeAuthError } from "./errors.js";
-import { mapAdvancedBusinessToSeed } from "./map.js";
+import { mapAdvancedBusinessToSeed, type SeedMappingResult } from "./map.js";
 import { configuredMaxBatch, normalizeRawBusiness, parseD2dIntakeBatch } from "./normalize.js";
 import type { D2dIntakeRegistry } from "./registry.js";
 import {
@@ -36,6 +36,17 @@ export interface D2dIntakeInput {
   readonly adapters: FactoryAdapters;
   readonly registry: D2dIntakeRegistry;
   readonly qualifier?: QualificationAdapter;
+  /** Test-only seed mapper for frozen producer receipts. Production uses mapAdvancedBusinessToSeed. */
+  readonly mapSeed?: (
+    record: NormalizedRawBusiness,
+    envelope: {
+      readonly campaignId: string;
+      readonly campaignRunId: string;
+      readonly exportId: string;
+      readonly exportedAt: string;
+      readonly campaign: D2dIntakeBatch["campaign"];
+    },
+  ) => SeedMappingResult;
   readonly now?: Date;
   readonly repoRoot?: string;
   readonly maxBatch?: number;
@@ -88,6 +99,21 @@ export async function acceptD2dIntake(input: D2dIntakeInput): Promise<D2dIntakeB
   };
 }
 
+function mapRecordToSeed(
+  record: NormalizedRawBusiness,
+  batch: D2dIntakeBatch,
+  input: D2dIntakeInput,
+): SeedMappingResult {
+  const envelope = {
+    campaignId: batch.campaignId,
+    campaignRunId: batch.campaignRunId,
+    exportId: batch.exportId,
+    exportedAt: batch.exportedAt,
+    campaign: batch.campaign,
+  };
+  return (input.mapSeed ?? mapAdvancedBusinessToSeed)(record, envelope);
+}
+
 async function acceptOneBusiness(
   raw: unknown,
   batch: D2dIntakeBatch,
@@ -132,13 +158,7 @@ async function acceptOneBusiness(
       const store = await input.registry.getStateStore(existing.factoryRunId);
       const state = await readState(store);
       if (state) {
-        const mapped = mapAdvancedBusinessToSeed(record, {
-          campaignId: batch.campaignId,
-          campaignRunId: batch.campaignRunId,
-          exportId: batch.exportId,
-          exportedAt: batch.exportedAt,
-          campaign: batch.campaign,
-        });
+        const mapped = mapRecordToSeed(record, batch, input);
         if (mapped.ok) {
           return runAdvanced(
             batch,
@@ -196,13 +216,7 @@ async function acceptOneBusiness(
     return receipt;
   }
 
-  const mapped = mapAdvancedBusinessToSeed(record, {
-    campaignId: batch.campaignId,
-    campaignRunId: batch.campaignRunId,
-    exportId: batch.exportId,
-    exportedAt: batch.exportedAt,
-    campaign: batch.campaign,
-  });
+  const mapped = mapRecordToSeed(record, batch, input);
   if (!mapped.ok) {
     const held: FactoryQualification = {
       outcome: FACTORY_QUALIFICATION_OUTCOMES.HELD,
@@ -289,6 +303,8 @@ async function runAdvanced(
     }
     const received = receiptFromState(batch, record, correlationId, qualification, next, {
       status: D2D_TRANSPORT_STATUSES.RECEIVED,
+      reason: qualification.reason,
+      reasonCode: qualification.reasonCode,
     });
     await input.registry.saveReceipt(received);
     return received;
