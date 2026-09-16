@@ -3,10 +3,10 @@ import type { Address, BusinessIdentity, Nap, ProspectSeed } from "../handoff/ty
 import {
   D2D_FACTORY_INTAKE_VERSION,
   D2D_INTAKE_REASON_CODES,
-  D2D_RAW_EXPORT_SCHEMA,
+  campaignSearchTerms,
   intakeCorrelationId,
+  type D2dCampaignContext,
   type D2dIntakeReasonCode,
-  type D2dSearchContext,
   type MappedD2dBusiness,
   type NormalizedRawBusiness,
 } from "./types.js";
@@ -26,14 +26,14 @@ export type SeedMappingResult = SeedMappingSuccess | SeedMappingFailure;
 
 export function canFormProspectSeed(
   record: NormalizedRawBusiness,
-  searchContext?: D2dSearchContext,
+  campaign?: D2dCampaignContext,
 ): SeedMappingResult {
   return mapAdvancedBusinessToSeed(record, {
     campaignId: "campaign",
     campaignRunId: "campaign-run",
     exportId: "export",
     exportedAt: "2026-01-01T00:00:00.000Z",
-    ...(searchContext ? { searchContext } : { searchContext: { latitude: 0, longitude: 0, radiusMiles: 1, searchTerms: ["x"] } }),
+    campaign: campaign ?? { center: { lat: 0, lng: 0 }, radiusMiles: 1 },
   });
 }
 
@@ -44,14 +44,14 @@ export function mapAdvancedBusinessToSeed(
     readonly campaignRunId: string;
     readonly exportId: string;
     readonly exportedAt: string;
-    readonly searchContext: D2dSearchContext;
+    readonly campaign: D2dCampaignContext;
   },
 ): SeedMappingResult {
   const trade = record.category;
   if (!trade) {
     return fail(D2D_INTAKE_REASON_CODES.MISSING_TRADE, "category/trade is missing; it was not invented");
   }
-  const serviceArea = serviceAreaFrom(record);
+  const serviceArea = serviceAreaFrom(record, envelope.campaign);
   if (!serviceArea) {
     return fail(D2D_INTAKE_REASON_CODES.MISSING_SERVICE_AREA, "service area/location is missing; it was not invented");
   }
@@ -93,13 +93,13 @@ export function mapAdvancedBusinessToSeed(
     exportId: envelope.exportId,
     exportedAt: envelope.exportedAt,
     correlationId,
-    searchContext: envelope.searchContext,
+    campaign: envelope.campaign,
     factoryQualificationOutcome: "advanced",
     factoryQualificationReason: "Advanced by Content Factory after candidate-bench + website/opportunity selection.",
     ...(record.campaignBusinessId ? { campaignBusinessId: record.campaignBusinessId } : {}),
     ...(record.placeId ? { placeId: record.placeId } : {}),
     ...(record.coordinates ? { coordinates: record.coordinates } : {}),
-    ...(record.provenance ? { provenance: record.provenance } : {}),
+    ...(record.apify ? { apify: record.apify } : {}),
   };
   const seed: ProspectSeed = {
     prospectId,
@@ -127,32 +127,34 @@ export function composeRawSourceNotes(
     readonly campaignRunId: string;
     readonly exportId: string;
     readonly exportedAt: string;
-    readonly searchContext: D2dSearchContext;
+    readonly campaign: D2dCampaignContext;
   },
 ): string {
   const refs = [
     `d2dProspectId=${record.d2dProspectId}`,
     `sourceBusinessId=${record.sourceBusinessId}`,
+    `d2dBusinessId=${record.d2dBusinessId}`,
     record.campaignBusinessId ? `campaignBusinessId=${record.campaignBusinessId}` : null,
     record.placeId ? `placeId=${record.placeId}` : null,
     record.mapsUrl ? `mapsUrl=${record.mapsUrl}` : null,
     record.googleUrl ? `googleUrl=${record.googleUrl}` : null,
-    record.coordinates
-      ? `coordinates=${record.coordinates.latitude},${record.coordinates.longitude}`
-      : null,
-    record.provenance?.actor ? `provenance.actor=${record.provenance.actor}` : null,
-    record.provenance?.runId ? `provenance.runId=${record.provenance.runId}` : null,
-    record.provenance?.datasetId ? `provenance.datasetId=${record.provenance.datasetId}` : null,
-    record.provenance?.itemId ? `provenance.itemId=${record.provenance.itemId}` : null,
+    record.coordinates ? `coordinates=${record.coordinates.lat},${record.coordinates.lng}` : null,
+    record.apify?.actor ? `apify.actor=${record.apify.actor}` : null,
+    record.apify?.runId ? `apify.runId=${record.apify.runId}` : null,
+    record.apify?.datasetId ? `apify.datasetId=${record.apify.datasetId}` : null,
+    record.apify?.itemId ? `apify.itemId=${record.apify.itemId}` : null,
   ].filter(Boolean);
   const searchBits = [
-    `searchContext.latitude=${envelope.searchContext.latitude}`,
-    `searchContext.longitude=${envelope.searchContext.longitude}`,
-    `searchContext.radiusMiles=${envelope.searchContext.radiusMiles}`,
-    `searchContext.searchTerms=${envelope.searchContext.searchTerms.join(",")}`,
-  ];
+    envelope.campaign.center ? `campaign.center=${envelope.campaign.center.lat},${envelope.campaign.center.lng}` : null,
+    envelope.campaign.radiusMiles != null ? `campaign.radiusMiles=${envelope.campaign.radiusMiles}` : null,
+    envelope.campaign.radiusMeters != null ? `campaign.radiusMeters=${envelope.campaign.radiusMeters}` : null,
+    envelope.campaign.location ? `campaign.location=${envelope.campaign.location}` : null,
+    campaignSearchTerms(envelope.campaign).length
+      ? `campaign.search=${campaignSearchTerms(envelope.campaign).join(",")}`
+      : null,
+  ].filter(Boolean);
   return [
-    `D2D raw intake ${D2D_FACTORY_INTAKE_VERSION} consuming ${D2D_RAW_EXPORT_SCHEMA}.`,
+    `D2D raw intake ${D2D_FACTORY_INTAKE_VERSION}.`,
     `campaignId=${envelope.campaignId};`,
     `campaignRunId=${envelope.campaignRunId};`,
     `exportId=${envelope.exportId};`,
@@ -164,7 +166,8 @@ export function composeRawSourceNotes(
     .join(" ");
 }
 
-function serviceAreaFrom(record: NormalizedRawBusiness): string | null {
+function serviceAreaFrom(record: NormalizedRawBusiness, campaign: D2dCampaignContext): string | null {
+  if (campaign.location?.trim()) return campaign.location.trim();
   if (record.location) return record.location;
   if (record.address?.city && record.address.region) return `${record.address.city}, ${record.address.region}`;
   if (record.address?.city) return record.address.city;

@@ -9,11 +9,11 @@
 
 import type {
   D2dIntakeReasonCode,
-  D2dSearchContext,
+  D2dCampaignContext,
   NormalizedRawBusiness,
   WebsiteOpportunityEvidence,
 } from "../d2d-intake/types.js";
-import { D2D_INTAKE_REASON_CODES } from "../d2d-intake/types.js";
+import { D2D_INTAKE_REASON_CODES, campaignSearchTerms } from "../d2d-intake/types.js";
 
 export type CandidateDisposition = "rejected" | "uncertain" | "discovered" | "duplicate";
 
@@ -31,7 +31,7 @@ export interface CandidateBenchEntry {
 export interface WebsiteOpportunityAuditor {
   audit(input: {
     readonly record: NormalizedRawBusiness;
-    readonly searchContext: D2dSearchContext;
+    readonly campaign: D2dCampaignContext;
   }): Promise<WebsiteOpportunityEvidence> | WebsiteOpportunityEvidence;
 }
 
@@ -52,8 +52,8 @@ export function stableCandidateIdentity(
   return record.d2dProspectId;
 }
 
-export function listingSearchFit(record: NormalizedRawBusiness, searchContext: D2dSearchContext): boolean {
-  const searchTokens = tokenizeAll(searchContext.searchTerms);
+export function listingSearchFit(record: NormalizedRawBusiness, campaign: D2dCampaignContext): boolean {
+  const searchTokens = tokenizeAll(campaignSearchTerms(campaign));
   if (searchTokens.size === 0) return false;
   const businessTokens = tokenizeAll([
     record.name,
@@ -71,19 +71,19 @@ export function listingSearchFit(record: NormalizedRawBusiness, searchContext: D
 
 export function createListingOpportunityAuditor(): WebsiteOpportunityAuditor {
   return {
-    audit({ record, searchContext }) {
-      return auditListingOpportunity(record, searchContext);
+    audit({ record, campaign }) {
+      return auditListingOpportunity(record, campaign);
     },
   };
 }
 
 export function auditListingOpportunity(
   record: NormalizedRawBusiness,
-  searchContext: D2dSearchContext,
+  campaign: D2dCampaignContext,
 ): WebsiteOpportunityEvidence {
   const reasons: string[] = [];
-  const searchFit = listingSearchFit(record, searchContext);
-  if (!searchFit) reasons.push("Category/name does not fit campaign searchTerms.");
+  const searchFit = listingSearchFit(record, campaign);
+  if (!searchFit) reasons.push("Category/name does not fit campaign search.");
 
   if (!record.website) {
     reasons.push("No website on the listing; opportunity evidence is incomplete.");
@@ -125,7 +125,7 @@ export function auditListingOpportunity(
 
 export function buildCandidateEntry(input: {
   readonly record: NormalizedRawBusiness;
-  readonly searchContext: D2dSearchContext;
+  readonly campaign: D2dCampaignContext;
   readonly websiteEvidence: WebsiteOpportunityEvidence;
   readonly duplicateOf?: string | null;
   readonly seedable: boolean;
@@ -188,7 +188,7 @@ export function factorySelection(entry: CandidateBenchEntry): {
     return {
       selected: false,
       reasonCode: D2D_INTAKE_REASON_CODES.SEARCH_MISMATCH,
-      reason: "Factory did not select this seedable listing; it does not fit campaign searchTerms.",
+      reason: "Factory did not select this listing; it does not fit campaign search.",
     };
   }
   if (entry.websiteEvidence.opportunity !== "strong") {

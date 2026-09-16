@@ -16,34 +16,43 @@ import { composeRawSourceNotes, factoryProspectId } from "./map.js";
 import { normalizeRawBusiness } from "./normalize.js";
 import {
   D2D_FACTORY_INTAKE_VERSION,
-  D2D_RAW_EXPORT_SCHEMA,
+  type D2dCampaignContext,
   type D2dIntakeBatch,
   type D2dRawBusiness,
-  type D2dSearchContext,
 } from "./types.js";
 
 export const INTAKE_NOW = new Date("2026-09-15T18:00:00.000Z");
 
 const FIXTURE_DIR = dirname(fileURLToPath(import.meta.url));
 
-export function loadD2dPr5RawExport(): Record<string, unknown> {
-  return JSON.parse(readFileSync(join(FIXTURE_DIR, "fixtures/d2d-pr5-raw-export.v1.json"), "utf8")) as Record<
-    string,
-    unknown
-  >;
+export interface D2dGoldenContractFixture {
+  readonly request: Record<string, unknown>;
+  readonly expectedReceipt: {
+    readonly version: string;
+    readonly campaignId: string;
+    readonly campaignRunId: string;
+    readonly exportId: string;
+    readonly receipts: ReadonlyArray<Record<string, unknown>>;
+  };
 }
 
-export const NORTHLINE_SEARCH_CONTEXT: D2dSearchContext = {
-  latitude: 41.9,
-  longitude: -87.8,
+export function loadD2dFactoryIntakeV1Golden(): D2dGoldenContractFixture {
+  return JSON.parse(readFileSync(join(FIXTURE_DIR, "fixtures/d2d-factory-intake-v1.json"), "utf8")) as D2dGoldenContractFixture;
+}
+
+export const NORTHLINE_CAMPAIGN: D2dCampaignContext = {
+  location: "Lake County",
   radiusMiles: 5,
-  searchTerms: ["garage door repair"],
+  radiusMeters: 8047,
+  center: { lat: 41.9, lng: -87.8 },
+  search: { query: "garage door", searchStrings: ["garage door repair"] },
 };
 
 export const NORTHLINE_RAW: D2dRawBusiness = {
   d2dProspectId: "d2d-prospect-northline",
   sourceBusinessId: "src-northline",
   campaignBusinessId: "campaign-biz-northline",
+  d2dBusinessId: "src-northline",
   name: "Northline Garage Doors",
   category: "garage door service",
   categories: ["garage door service"],
@@ -59,15 +68,16 @@ export const NORTHLINE_RAW: D2dRawBusiness = {
   website: "https://northline.example/",
   rating: 4.8,
   reviewCount: 42,
-  coordinates: { latitude: 41.901, longitude: -87.812 },
-  provenance: {
+  placeId: "ChIJ-northline",
+  mapsUrl: "https://maps.example/northline",
+  googleUrl: "https://maps.google.com/?cid=northline",
+  coordinates: { lat: 41.901, lng: -87.812 },
+  apify: {
+    provider: "apify",
     actor: "compass~crawler-google-places",
     runId: "apify-run-northline",
     datasetId: "ds-northline",
     itemId: "item-northline",
-    googlePlaceId: "ChIJ-northline",
-    mapsUrl: "https://maps.example/northline",
-    googleUrl: "https://maps.google.com/?cid=northline",
   },
 };
 
@@ -75,6 +85,7 @@ export const SEEDABLE_HVAC_RAW: D2dRawBusiness = {
   d2dProspectId: "d2d-prospect-harbor-hvac",
   sourceBusinessId: "src-harbor-hvac",
   campaignBusinessId: "campaign-biz-harbor-hvac",
+  d2dBusinessId: "src-harbor-hvac",
   name: "Harbor Climate HVAC",
   category: "hvac contractor",
   categories: ["hvac contractor", "heating and cooling"],
@@ -90,14 +101,15 @@ export const SEEDABLE_HVAC_RAW: D2dRawBusiness = {
   website: "https://harbor-hvac.example/",
   rating: 4.9,
   reviewCount: 180,
-  coordinates: { latitude: 41.902, longitude: -87.81 },
-  provenance: {
+  placeId: "ChIJ-harbor-hvac",
+  mapsUrl: "https://maps.example/harbor-hvac",
+  coordinates: { lat: 41.902, lng: -87.81 },
+  apify: {
+    provider: "apify",
     actor: "compass~crawler-google-places",
     runId: "apify-run-northline",
     datasetId: "ds-northline",
     itemId: "item-harbor-hvac",
-    googlePlaceId: "ChIJ-harbor-hvac",
-    mapsUrl: "https://maps.example/harbor-hvac",
   },
 };
 
@@ -111,7 +123,7 @@ export const EXPECTED_NORTHLINE_SOURCE_NOTES = composeRawSourceNotes(
     campaignRunId: "campaign-run-2026-09-15",
     exportId: "export-2026-09-15-northline",
     exportedAt: "2026-09-15T17:00:00.000Z",
-    searchContext: NORTHLINE_SEARCH_CONTEXT,
+    campaign: NORTHLINE_CAMPAIGN,
   },
 );
 
@@ -145,19 +157,28 @@ export function northlineBatch(overrides?: {
   readonly businesses?: readonly unknown[];
 }): D2dIntakeBatch {
   return {
-    schema: D2D_RAW_EXPORT_SCHEMA,
     version: D2D_FACTORY_INTAKE_VERSION,
     campaignId: "campaign-lake-county",
     campaignRunId: "campaign-run-2026-09-15",
     exportId: overrides?.exportId ?? "export-2026-09-15-northline",
     exportedAt: "2026-09-15T17:00:00.000Z",
-    searchContext: NORTHLINE_SEARCH_CONTEXT,
+    campaign: NORTHLINE_CAMPAIGN,
+    provenance: {
+      provider: "apify",
+      actor: "compass~crawler-google-places",
+      runId: "apify-run-northline",
+      datasetId: "ds-northline",
+    },
     businesses: overrides?.businesses ?? [NORTHLINE_RAW],
   };
 }
 
 export function rawWith(overrides: Partial<D2dRawBusiness> & Record<string, unknown>): Record<string, unknown> {
-  return { ...NORTHLINE_RAW, ...overrides };
+  const merged: Record<string, unknown> = { ...NORTHLINE_RAW, ...overrides };
+  if (Object.prototype.hasOwnProperty.call(overrides, "sourceBusinessId") && !Object.prototype.hasOwnProperty.call(overrides, "d2dBusinessId")) {
+    merged.d2dBusinessId = overrides.sourceBusinessId;
+  }
+  return merged;
 }
 
 export interface IntakeAdapterStats extends FixtureWriterStats {

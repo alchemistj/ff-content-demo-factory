@@ -67,7 +67,7 @@ test("HTTP intake authenticates first and returns per-business receipts", async 
   assert.equal(statusBody.d2dProspectId, "d2d-prospect-northline");
   assert.equal(statusBody.sourceBusinessId, "src-northline");
   assert.equal(statusBody.sourceCorrelation.d2dProspectId, "d2d-prospect-northline");
-  assert.equal(statusBody.correlationId, "src-northline::export-2026-09-15-northline::d2d-factory-raw-export/v1");
+  assert.equal(statusBody.correlationId, "src-northline::export-2026-09-15-northline::d2d-factory-intake/v1");
   assert.equal(adapters.stats.writeCalls, 0);
 });
 

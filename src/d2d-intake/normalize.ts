@@ -4,12 +4,11 @@ import {
   D2D_FACTORY_INTAKE_VERSION,
   D2D_INTAKE_DEFAULT_MAX_BATCH,
   D2D_INTAKE_REASON_CODES,
-  D2D_RAW_EXPORT_SCHEMA,
-  type D2dBusinessProvenance,
-  type D2dGeoCoordinates,
+  type D2dApifyProvenance,
+  type D2dCampaignContext,
   type D2dIntakeBatch,
+  type D2dLatLng,
   type D2dRawAddress,
-  type D2dSearchContext,
   type NormalizedRawBusiness,
 } from "./types.js";
 
@@ -46,10 +45,10 @@ export function parseD2dIntakeBatch(input: unknown): D2dIntakeBatch {
   if (!isRecord(input)) {
     throw new D2dIntakeEnvelopeError(D2D_INTAKE_REASON_CODES.INVALID_ENVELOPE, "D2D intake payload must be an object");
   }
-  if (input.schema !== D2D_RAW_EXPORT_SCHEMA) {
+  if (input.version !== D2D_FACTORY_INTAKE_VERSION) {
     throw new D2dIntakeEnvelopeError(
       D2D_INTAKE_REASON_CODES.UNSUPPORTED_VERSION,
-      `schema must be ${D2D_RAW_EXPORT_SCHEMA} (d2d-factory-intake/v1 consumes the D2D raw export, not a prequalified shortlist)`,
+      `version must be ${D2D_FACTORY_INTAKE_VERSION}`,
     );
   }
   if ("prospects" in input && !("businesses" in input)) {
@@ -73,7 +72,7 @@ export function parseD2dIntakeBatch(input: unknown): D2dIntakeBatch {
   );
   const exportId = requiredId(input.exportId, D2D_INTAKE_REASON_CODES.MISSING_EXPORT_ID, "exportId");
   const exportedAt = requiredTimestamp(input.exportedAt, "exportedAt");
-  const searchContext = parseSearchContext(input.searchContext);
+  const campaign = parseCampaign(input.campaign);
   if (!Array.isArray(input.businesses)) {
     throw new D2dIntakeEnvelopeError(D2D_INTAKE_REASON_CODES.INVALID_ENVELOPE, "businesses must be an array");
   }
@@ -81,18 +80,18 @@ export function parseD2dIntakeBatch(input: unknown): D2dIntakeBatch {
     throw new D2dIntakeEnvelopeError(D2D_INTAKE_REASON_CODES.EMPTY_BATCH, "businesses must contain at least one raw listing");
   }
   return {
-    schema: D2D_RAW_EXPORT_SCHEMA,
     version: D2D_FACTORY_INTAKE_VERSION,
     campaignId,
     campaignRunId,
     exportId,
     exportedAt,
-    searchContext,
+    campaign,
     businesses: input.businesses,
+    ...(isRecord(input.provenance) ? { provenance: input.provenance as D2dApifyProvenance } : {}),
   };
 }
 
-export function normalizeRawBusiness(input: unknown): NormalizeRawResult {
+export function normalizeRawBusiness(input: unknown, envelopeProvenance?: D2dApifyProvenance): NormalizeRawResult {
   if (!isRecord(input)) {
     return invalid("", "", D2D_INTAKE_REASON_CODES.MALFORMED_BUSINESS, "Business entry must be an object");
   }
@@ -125,13 +124,15 @@ export function normalizeRawBusiness(input: unknown): NormalizeRawResult {
       "Raw listing is missing d2dProspectId; Content Factory will not invent a D2D prospect id",
     );
   }
-  const provenance = isRecord(input.provenance) ? (input.provenance as D2dBusinessProvenance) : null;
-  const placeId =
-    firstTrimmed(input.placeId, input.googlePlaceId, input.cid, provenance?.googlePlaceId, provenance?.placeId, provenance?.cid) ??
-    null;
-  const mapsUrl =
-    firstTrimmed(input.mapsUrl, input.googleMapsUrl, input.googleUrl, input.url, provenance?.mapsUrl, provenance?.googleMapsUrl, provenance?.googleUrl) ??
-    null;
+  const presentedBusinessId = firstTrimmed(input.d2dBusinessId);
+  if (presentedBusinessId && presentedBusinessId !== sourceBusinessId) {
+    return invalid(
+      d2dProspectId,
+      sourceBusinessId,
+      D2D_INTAKE_REASON_CODES.MALFORMED_BUSINESS,
+      "d2dBusinessId must equal sourceBusinessId",
+    );
+  }
   const name = firstTrimmed(input.name, input.title);
   if (!name) {
     return invalid(
@@ -141,6 +142,9 @@ export function normalizeRawBusiness(input: unknown): NormalizeRawResult {
       "Raw listing is missing name/title; a name was not invented",
     );
   }
+  const apify = isRecord(input.apify) ? (input.apify as D2dApifyProvenance) : envelopeProvenance ?? null;
+  const placeId = firstTrimmed(input.placeId, input.googlePlaceId, input.cid) ?? null;
+  const mapsUrl = firstTrimmed(input.mapsUrl, input.googleMapsUrl, input.googleUrl, input.url) ?? null;
   const categories = Array.isArray(input.categories)
     ? input.categories.map((item) => optionalTrimmed(item)).filter((item): item is string => Boolean(item))
     : [];
@@ -167,7 +171,7 @@ export function normalizeRawBusiness(input: unknown): NormalizeRawResult {
       d2dBusinessId: sourceBusinessId,
       placeId,
       mapsUrl,
-      googleUrl: firstTrimmed(input.googleUrl, input.googleMapsUrl, input.mapsUrl, provenance?.googleUrl) ?? null,
+      googleUrl: firstTrimmed(input.googleUrl, input.googleMapsUrl, input.mapsUrl) ?? null,
       name,
       category,
       categories,
@@ -179,7 +183,7 @@ export function normalizeRawBusiness(input: unknown): NormalizeRawResult {
       website,
       rating,
       reviewCount,
-      provenance,
+      apify,
     },
   };
 }
@@ -190,35 +194,51 @@ function envelopeWithoutBusinesses(input: AnyRecord): AnyRecord {
   return copy;
 }
 
-function parseSearchContext(value: unknown): D2dSearchContext {
+function parseCampaign(value: unknown): D2dCampaignContext {
   if (!isRecord(value)) {
-    throw new D2dIntakeEnvelopeError(D2D_INTAKE_REASON_CODES.INVALID_ENVELOPE, "searchContext is required");
+    throw new D2dIntakeEnvelopeError(D2D_INTAKE_REASON_CODES.INVALID_ENVELOPE, "campaign is required");
   }
-  const latitude = asFiniteNumber(value.latitude);
-  const longitude = asFiniteNumber(value.longitude);
+  const center = parseCoordinates(value.center);
+  if (!center) {
+    throw new D2dIntakeEnvelopeError(
+      D2D_INTAKE_REASON_CODES.INVALID_ENVELOPE,
+      "campaign.center requires lat and lng",
+    );
+  }
   const radiusMiles = asFiniteNumber(value.radiusMiles);
-  if (latitude == null || longitude == null || radiusMiles == null) {
+  const radiusMeters = asFiniteNumber(value.radiusMeters);
+  if (radiusMiles == null && radiusMeters == null) {
     throw new D2dIntakeEnvelopeError(
       D2D_INTAKE_REASON_CODES.INVALID_ENVELOPE,
-      "searchContext requires latitude, longitude, and radiusMiles",
+      "campaign requires radiusMiles or radiusMeters",
     );
   }
-  if (!Array.isArray(value.searchTerms) || value.searchTerms.length === 0) {
-    throw new D2dIntakeEnvelopeError(
-      D2D_INTAKE_REASON_CODES.INVALID_ENVELOPE,
-      "searchContext.searchTerms must be a non-empty array",
-    );
-  }
-  const searchTerms = value.searchTerms
-    .map((item) => optionalTrimmed(item))
-    .filter((item): item is string => Boolean(item));
-  if (searchTerms.length === 0) {
-    throw new D2dIntakeEnvelopeError(
-      D2D_INTAKE_REASON_CODES.INVALID_ENVELOPE,
-      "searchContext.searchTerms must contain at least one term",
-    );
-  }
-  return { latitude, longitude, radiusMiles, searchTerms };
+  const search = isRecord(value.search) ? value.search : null;
+  const query = search ? optionalTrimmed(search.query) : undefined;
+  const searchStrings =
+    search && Array.isArray(search.searchStrings)
+      ? search.searchStrings.map((item) => optionalTrimmed(item)).filter((item): item is string => Boolean(item))
+      : undefined;
+  const categories =
+    search && Array.isArray(search.categories)
+      ? search.categories.map((item) => optionalTrimmed(item)).filter((item): item is string => Boolean(item))
+      : undefined;
+  const location = optionalTrimmed(value.location);
+  return {
+    center,
+    ...(location ? { location } : {}),
+    ...(radiusMiles != null ? { radiusMiles } : {}),
+    ...(radiusMeters != null ? { radiusMeters } : {}),
+    ...(query || searchStrings || categories
+      ? {
+          search: {
+            ...(query ? { query } : {}),
+            ...(searchStrings ? { searchStrings } : {}),
+            ...(categories ? { categories } : {}),
+          },
+        }
+      : {}),
+  };
 }
 
 function parseAddress(value: unknown): D2dRawAddress | null {
@@ -238,12 +258,12 @@ function parseAddress(value: unknown): D2dRawAddress | null {
   };
 }
 
-function parseCoordinates(value: unknown): D2dGeoCoordinates | null {
+function parseCoordinates(value: unknown): D2dLatLng | null {
   if (!isRecord(value)) return null;
-  const latitude = asFiniteNumber(value.latitude) ?? asFiniteNumber(value.lat);
-  const longitude = asFiniteNumber(value.longitude) ?? asFiniteNumber(value.lng);
-  if (latitude == null || longitude == null) return null;
-  return { latitude, longitude };
+  const lat = asFiniteNumber(value.lat);
+  const lng = asFiniteNumber(value.lng);
+  if (lat == null || lng == null) return null;
+  return { lat, lng };
 }
 
 function composeLocation(address: D2dRawAddress | null): string | null {

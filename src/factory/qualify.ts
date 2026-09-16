@@ -18,7 +18,7 @@ import {
 import {
   D2D_INTAKE_REASON_CODES,
   FACTORY_QUALIFICATION_OUTCOMES,
-  type D2dSearchContext,
+  type D2dCampaignContext,
   type FactoryQualification,
   type NormalizedRawBusiness,
 } from "../d2d-intake/types.js";
@@ -38,7 +38,7 @@ export const FORBIDDEN_CONCLUSION_FIELDS = Object.freeze([
 
 export interface QualificationAssignment {
   readonly record: NormalizedRawBusiness;
-  readonly searchContext: D2dSearchContext;
+  readonly campaign: D2dCampaignContext;
   readonly duplicateOf?: string | null;
   readonly seedable?: boolean;
 }
@@ -89,11 +89,11 @@ export async function qualifyRawBusiness(
 ): Promise<FactoryQualification> {
   const websiteEvidence = await auditor.audit({
     record: input.record,
-    searchContext: input.searchContext,
+    campaign: input.campaign,
   });
   const entry = buildCandidateEntry({
     record: input.record,
-    searchContext: input.searchContext,
+    campaign: input.campaign,
     websiteEvidence,
     duplicateOf: input.duplicateOf ?? null,
     seedable: input.seedable === true,

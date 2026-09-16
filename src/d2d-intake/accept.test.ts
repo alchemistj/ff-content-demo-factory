@@ -57,7 +57,7 @@ test("advanced raw business maps to downstream workflow, preserves source correl
   assert.equal(receipt.sourceBusinessId, "src-northline");
   assert.equal(receipt.campaignId, "campaign-lake-county");
   assert.equal(receipt.exportId, "export-2026-09-15-northline");
-  assert.equal(receipt.correlationId, "src-northline::export-2026-09-15-northline::d2d-factory-raw-export/v1");
+  assert.equal(receipt.correlationId, "src-northline::export-2026-09-15-northline::d2d-factory-intake/v1");
   assert.equal(qualifier.calls, 1);
   assert.equal(adapters.stats.researchCalls, 1);
   assert.equal(adapters.stats.prescribeCalls, 1);
@@ -71,9 +71,9 @@ test("advanced raw business maps to downstream workflow, preserves source correl
   assert.equal(state.sourceCorrelation?.d2dBusinessId, "src-northline");
   assert.equal(state.sourceCorrelation?.placeId, "ChIJ-northline");
   assert.equal(state.sourceCorrelation?.campaignRunId, "campaign-run-2026-09-15");
-  assert.equal(state.sourceCorrelation?.coordinates?.latitude, 41.901);
-  assert.equal(state.sourceCorrelation?.provenance?.runId, "apify-run-northline");
-  assert.equal(state.sourceCorrelation?.searchContext?.radiusMiles, 5);
+  assert.equal(state.sourceCorrelation?.coordinates?.lat, 41.901);
+  assert.equal(state.sourceCorrelation?.apify?.runId, "apify-run-northline");
+  assert.equal(state.sourceCorrelation?.campaign?.radiusMiles, 5);
   assert.equal(state.sourceCorrelation?.factoryQualificationOutcome, "advanced");
   assert.equal(state.writingPackage, null);
   assert.equal(state.writerInvocations, 0);
@@ -227,13 +227,14 @@ test("operator-sized ~40-item raw batch is contract-valid with per-item isolatio
         d2dProspectId: `d2d-held-${index}`,
         sourceBusinessId: `src-held-${index}`,
         campaignBusinessId: `campaign-held-${index}`,
+        d2dBusinessId: `src-held-${index}`,
         phone: "",
-        provenance: {
+        apify: {
+          provider: "apify",
           actor: "compass~crawler-google-places",
           runId: "apify-run-northline",
           datasetId: "ds-northline",
           itemId: `item-held-${index}`,
-          googlePlaceId: `place-held-${index}`,
         },
       }),
     );
@@ -251,7 +252,7 @@ test("operator-sized ~40-item raw batch is contract-valid with per-item isolatio
       googleUrl: "",
       url: "",
       name: "No Identity Listing",
-      provenance: {},
+      apify: {},
     }),
   );
   businesses.push(
@@ -259,6 +260,7 @@ test("operator-sized ~40-item raw batch is contract-valid with per-item isolatio
       placeId: "place-inherited",
       d2dProspectId: "d2d-inherited",
       sourceBusinessId: "src-inherited",
+      d2dBusinessId: "src-inherited",
       qualification: { classification: "qualified" },
     }),
   );

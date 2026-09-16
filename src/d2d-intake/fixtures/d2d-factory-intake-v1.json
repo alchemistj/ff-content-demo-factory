@@ -1,0 +1,79 @@
+{
+  "request": {
+    "version": "d2d-factory-intake/v1",
+    "campaignId": "campaign-lake-county",
+    "campaignRunId": "campaign-run-2026-09-15",
+    "exportId": "export-2026-09-15-northline",
+    "exportedAt": "2026-09-15T17:00:00.000Z",
+    "campaign": {
+      "location": "Lake County",
+      "radiusMiles": 5,
+      "radiusMeters": 8047,
+      "center": { "lat": 41.9, "lng": -87.8 },
+      "search": {
+        "query": "garage door",
+        "searchStrings": ["garage door repair"]
+      }
+    },
+    "provenance": {
+      "provider": "apify",
+      "actor": "compass~crawler-google-places",
+      "runId": "apify-run-northline",
+      "datasetId": "ds-northline"
+    },
+    "businesses": [
+      {
+        "d2dProspectId": "d2d-prospect-northline",
+        "sourceBusinessId": "src-northline",
+        "campaignBusinessId": "campaign-biz-northline",
+        "d2dBusinessId": "src-northline",
+        "name": "Northline Garage Doors",
+        "category": "garage door service",
+        "categories": ["garage door service"],
+        "address": {
+          "street": "18 Harbor Avenue",
+          "city": "Mason",
+          "region": "IL",
+          "postalCode": "60000",
+          "country": "US"
+        },
+        "location": "Lake County",
+        "phone": "+1-555-010-1000",
+        "website": "https://northline.example/",
+        "rating": 4.8,
+        "reviewCount": 42,
+        "placeId": "ChIJ-northline",
+        "mapsUrl": "https://maps.example/northline",
+        "googleUrl": "https://maps.google.com/?cid=northline",
+        "coordinates": { "lat": 41.901, "lng": -87.812 },
+        "apify": {
+          "provider": "apify",
+          "actor": "compass~crawler-google-places",
+          "runId": "apify-run-northline",
+          "datasetId": "ds-northline",
+          "itemId": "item-northline"
+        }
+      }
+    ]
+  },
+  "expectedReceipt": {
+    "version": "d2d-factory-intake/v1",
+    "campaignId": "campaign-lake-county",
+    "campaignRunId": "campaign-run-2026-09-15",
+    "exportId": "export-2026-09-15-northline",
+    "receipts": [
+      {
+        "version": "d2d-factory-intake/v1",
+        "status": "received",
+        "d2dProspectId": "d2d-prospect-northline",
+        "sourceBusinessId": "src-northline",
+        "campaignBusinessId": "campaign-biz-northline",
+        "d2dBusinessId": "src-northline",
+        "correlationId": "src-northline::export-2026-09-15-northline::d2d-factory-intake/v1",
+        "campaignId": "campaign-lake-county",
+        "campaignRunId": "campaign-run-2026-09-15",
+        "exportId": "export-2026-09-15-northline"
+      }
+    ]
+  }
+}

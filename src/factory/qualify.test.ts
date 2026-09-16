@@ -7,8 +7,8 @@ import { createFactoryQualifier, findForbiddenConclusion, isMoldExcluded } from 
 import { canFormProspectSeed } from "../d2d-intake/map.js";
 import { normalizeRawBusiness } from "../d2d-intake/normalize.js";
 import {
+  NORTHLINE_CAMPAIGN,
   NORTHLINE_RAW,
-  NORTHLINE_SEARCH_CONTEXT,
   SEEDABLE_HVAC_RAW,
   rawWith,
 } from "../d2d-intake/fixture.js";
@@ -20,7 +20,7 @@ test("factory qualifier rejects mold and does not treat D2D labels as authority"
   assert.equal(mold.status, "normalized");
   if (mold.status !== "normalized") return;
   assert.equal(isMoldExcluded(mold.record), true);
-  const decision = await qualifier.qualify({ record: mold.record, searchContext: NORTHLINE_SEARCH_CONTEXT });
+  const decision = await qualifier.qualify({ record: mold.record, campaign: NORTHLINE_CAMPAIGN });
   assert.equal(decision.outcome, FACTORY_QUALIFICATION_OUTCOMES.REJECTED);
 });
 
@@ -35,8 +35,8 @@ test("complete raw facts can be advanced by the factory qualifier exactly once c
   const normalized = normalizeRawBusiness(NORTHLINE_RAW);
   assert.equal(normalized.status, "normalized");
   if (normalized.status !== "normalized") return;
-  const first = await qualifier.qualify({ record: normalized.record, searchContext: NORTHLINE_SEARCH_CONTEXT });
-  const second = await qualifier.qualify({ record: normalized.record, searchContext: NORTHLINE_SEARCH_CONTEXT });
+  const first = await qualifier.qualify({ record: normalized.record, campaign: NORTHLINE_CAMPAIGN });
+  const second = await qualifier.qualify({ record: normalized.record, campaign: NORTHLINE_CAMPAIGN });
   assert.equal(first.outcome, FACTORY_QUALIFICATION_OUTCOMES.ADVANCED);
   assert.equal(second.outcome, FACTORY_QUALIFICATION_OUTCOMES.ADVANCED);
   assert.equal(first.websiteOpportunity?.opportunity, "strong");
@@ -48,11 +48,11 @@ test("seedable raw business does not advance; qualification is not canFormProspe
   const normalized = normalizeRawBusiness(SEEDABLE_HVAC_RAW);
   assert.equal(normalized.status, "normalized");
   if (normalized.status !== "normalized") return;
-  const seedable = canFormProspectSeed(normalized.record, NORTHLINE_SEARCH_CONTEXT);
+  const seedable = canFormProspectSeed(normalized.record, NORTHLINE_CAMPAIGN);
   assert.equal(seedable.ok, true);
   const decision = await qualifier.qualify({
     record: normalized.record,
-    searchContext: NORTHLINE_SEARCH_CONTEXT,
+    campaign: NORTHLINE_CAMPAIGN,
     seedable: true,
   });
   assert.equal(decision.outcome, FACTORY_QUALIFICATION_OUTCOMES.HELD);

@@ -3,10 +3,10 @@ import test from "node:test";
 import { mapAdvancedBusinessToSeed } from "./map.js";
 import { normalizeRawBusiness, parseD2dIntakeBatch } from "./normalize.js";
 import { D2dIntakeEnvelopeError } from "./errors.js";
-import { D2D_INTAKE_REASON_CODES, D2D_RAW_EXPORT_SCHEMA, intakeCorrelationId } from "./types.js";
+import { D2D_FACTORY_INTAKE_VERSION, D2D_INTAKE_REASON_CODES, intakeCorrelationId } from "./types.js";
 import {
+  NORTHLINE_CAMPAIGN,
   NORTHLINE_RAW,
-  NORTHLINE_SEARCH_CONTEXT,
   SEEDABLE_HVAC_RAW,
   northlineBatch,
   rawWith,
@@ -15,22 +15,23 @@ import {
 test("raw D2D payload requires no upstream qualification and maps advanced facts without invention", () => {
   const batch = parseD2dIntakeBatch(northlineBatch());
   assert.equal("prospects" in batch, false);
-  assert.equal(batch.schema, D2D_RAW_EXPORT_SCHEMA);
+  assert.equal(batch.version, D2D_FACTORY_INTAKE_VERSION);
   const normalized = normalizeRawBusiness(NORTHLINE_RAW);
   assert.equal(normalized.status, "normalized");
   if (normalized.status !== "normalized") return;
   assert.equal(normalized.record.phone, "+1-555-010-1000");
   assert.equal(normalized.record.sourceBusinessId, "src-northline");
   assert.equal(normalized.record.d2dProspectId, "d2d-prospect-northline");
+  assert.equal(normalized.record.d2dBusinessId, "src-northline");
   assert.equal(normalized.record.placeId, "ChIJ-northline");
-  assert.equal(normalized.record.coordinates?.latitude, 41.901);
-  assert.equal(normalized.record.provenance?.runId, "apify-run-northline");
+  assert.equal(normalized.record.coordinates?.lat, 41.901);
+  assert.equal(normalized.record.apify?.runId, "apify-run-northline");
   const mapped = mapAdvancedBusinessToSeed(normalized.record, {
     campaignId: batch.campaignId,
     campaignRunId: batch.campaignRunId,
     exportId: batch.exportId,
     exportedAt: batch.exportedAt,
-    searchContext: NORTHLINE_SEARCH_CONTEXT,
+    campaign: NORTHLINE_CAMPAIGN,
   });
   assert.equal(mapped.ok, true);
   if (!mapped.ok) return;
@@ -39,14 +40,17 @@ test("raw D2D payload requires no upstream qualification and maps advanced facts
   assert.equal(mapped.mapped.seed.nap.phone, "+1-555-010-1000");
   assert.equal(mapped.mapped.correlation.sourceBusinessId, "src-northline");
   assert.equal(mapped.mapped.correlation.d2dProspectId, "d2d-prospect-northline");
+  assert.equal(mapped.mapped.correlation.d2dBusinessId, "src-northline");
   assert.equal(mapped.mapped.correlation.campaignId, "campaign-lake-county");
   assert.equal(mapped.mapped.correlation.factoryQualificationOutcome, "advanced");
   assert.equal(
     mapped.mapped.correlation.correlationId,
     intakeCorrelationId({ sourceBusinessId: "src-northline", exportId: batch.exportId }),
   );
-  assert.match(mapped.mapped.seed.sourceNotes ?? "", /provenance.runId=apify-run-northline/);
-  assert.match(mapped.mapped.seed.sourceNotes ?? "", /searchContext.radiusMiles=5/);
+  assert.match(mapped.mapped.seed.sourceNotes ?? "", /apify.runId=apify-run-northline/);
+  assert.match(mapped.mapped.seed.sourceNotes ?? "", /campaign.radiusMiles=5/);
+  assert.equal(mapped.mapped.correlation.campaign?.center?.lat, 41.9);
+  assert.equal(mapped.mapped.correlation.coordinates?.lng, -87.812);
 });
 
 test("raw record without phone or website is normalized without fabricated values", () => {
@@ -59,7 +63,7 @@ test("raw record without phone or website is normalized without fabricated value
     campaignRunId: "r",
     exportId: "e",
     exportedAt: "2026-09-15T17:00:00.000Z",
-    searchContext: NORTHLINE_SEARCH_CONTEXT,
+    campaign: NORTHLINE_CAMPAIGN,
   });
   assert.equal(mappedPhone.ok, false);
   if (mappedPhone.ok) return;
@@ -74,7 +78,7 @@ test("raw record without phone or website is normalized without fabricated value
     campaignRunId: "r",
     exportId: "e",
     exportedAt: "2026-09-15T17:00:00.000Z",
-    searchContext: NORTHLINE_SEARCH_CONTEXT,
+    campaign: NORTHLINE_CAMPAIGN,
   });
   assert.equal(mappedWebsite.ok, false);
   if (mappedWebsite.ok) return;
@@ -105,12 +109,12 @@ test("prequalified prospects envelope is rejected", () => {
   assert.throws(
     () =>
       parseD2dIntakeBatch({
-        schema: D2D_RAW_EXPORT_SCHEMA,
+        version: D2D_FACTORY_INTAKE_VERSION,
         campaignId: "c",
         campaignRunId: "r",
         exportId: "e",
         exportedAt: "2026-09-15T17:00:00.000Z",
-        searchContext: NORTHLINE_SEARCH_CONTEXT,
+        campaign: NORTHLINE_CAMPAIGN,
         prospects: [NORTHLINE_RAW],
       }),
     D2dIntakeEnvelopeError,
@@ -126,7 +130,7 @@ test("seedable HVAC listing can form ProspectSeed from the same mapping path", (
     campaignRunId: "r",
     exportId: "e",
     exportedAt: "2026-09-15T17:00:00.000Z",
-    searchContext: NORTHLINE_SEARCH_CONTEXT,
+    campaign: NORTHLINE_CAMPAIGN,
   });
   assert.equal(mapped.ok, true);
 });

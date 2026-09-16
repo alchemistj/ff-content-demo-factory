@@ -19,7 +19,6 @@ import type { D2dIntakeRegistry } from "./registry.js";
 import {
   D2D_FACTORY_INTAKE_VERSION,
   D2D_INTAKE_REASON_CODES,
-  D2D_RAW_EXPORT_SCHEMA,
   D2D_TRANSPORT_STATUSES,
   FACTORY_QUALIFICATION_OUTCOMES,
   intakeCorrelationId,
@@ -83,7 +82,6 @@ export async function acceptD2dIntake(input: D2dIntakeInput): Promise<D2dIntakeB
 
   return {
     version: D2D_FACTORY_INTAKE_VERSION,
-    schema: D2D_RAW_EXPORT_SCHEMA,
     campaignId: batch.campaignId,
     campaignRunId: batch.campaignRunId,
     exportId: batch.exportId,
@@ -99,7 +97,7 @@ async function acceptOneBusiness(
   input: D2dIntakeInput,
   seenIds: Map<string, string>,
 ): Promise<D2dBusinessReceipt> {
-  const normalized = normalizeRawBusiness(raw);
+  const normalized = normalizeRawBusiness(raw, batch.provenance);
   if (normalized.status === "invalid") {
     return transportReceipt(
       batch,
@@ -139,7 +137,7 @@ async function acceptOneBusiness(
           campaignRunId: batch.campaignRunId,
           exportId: batch.exportId,
           exportedAt: batch.exportedAt,
-          searchContext: batch.searchContext,
+          campaign: batch.campaign,
         });
         if (mapped.ok) {
           return runAdvanced(
@@ -183,7 +181,7 @@ async function acceptOneBusiness(
 
   const qualification = await qualifier.qualify({
     record,
-    searchContext: batch.searchContext,
+    campaign: batch.campaign,
     ...(duplicateOf ? { duplicateOf } : {}),
   });
 
@@ -203,7 +201,7 @@ async function acceptOneBusiness(
     campaignRunId: batch.campaignRunId,
     exportId: batch.exportId,
     exportedAt: batch.exportedAt,
-    searchContext: batch.searchContext,
+    campaign: batch.campaign,
   });
   if (!mapped.ok) {
     const held: FactoryQualification = {
@@ -323,7 +321,6 @@ function receiptFromState(
 ): D2dBusinessReceipt {
   return {
     version: D2D_FACTORY_INTAKE_VERSION,
-    schema: D2D_RAW_EXPORT_SCHEMA,
     status: outcome.status,
     qualification,
     d2dProspectId: record.d2dProspectId,
@@ -363,7 +360,6 @@ function transportReceipt(
   const d2dProspectId = ids.d2dProspectId || "unknown";
   return {
     version: D2D_FACTORY_INTAKE_VERSION,
-    schema: D2D_RAW_EXPORT_SCHEMA,
     status: outcome.status,
     qualification: outcome.qualification ?? null,
     d2dProspectId,

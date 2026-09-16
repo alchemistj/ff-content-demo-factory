@@ -1,22 +1,22 @@
 /**
  * Frozen d2d-factory-intake/v1 request/receipt contract.
  *
- * Request body is the D2D raw export (`schema: d2d-factory-raw-export/v1`)
- * emitted by companion D2D PR #5 head
- * `56c8fd4fe3e8ce95b9e281c01e382737b815c24b`.
+ * Canonical producer: companion D2D PR #5 head
+ * `00ae71fa67eede3674834e5ad4d81e79e951e395`
+ * (`tests/fixtures/d2d-factory-intake-v1.json`,
+ * `src/lib/content-factory/contract.ts`).
  *
- * Receipts are `version: d2d-factory-intake/v1`. Transport status is
- * separate from factory qualification. D2D source IDs are preserved
- * end-to-end; Google place identity is evidence, not the transport key.
+ * correlationId = `${sourceBusinessId}::${exportId}::d2d-factory-intake/v1`
+ * d2dBusinessId === sourceBusinessId
  *
- * correlationId = `${sourceBusinessId}::${exportId}::${D2D_RAW_EXPORT_SCHEMA}`
+ * Transport status is separate from factory qualification. Google place
+ * identity is evidence, not the transport key.
  */
 
 import type { Address, BusinessIdentity, Nap, ProspectSeed } from "../handoff/types.js";
 import type { WorkflowSourceCorrelation, WorkflowStage } from "../workflow/state.js";
 
 export const D2D_FACTORY_INTAKE_VERSION = "d2d-factory-intake/v1" as const;
-export const D2D_RAW_EXPORT_SCHEMA = "d2d-factory-raw-export/v1" as const;
 
 export const D2D_INTAKE_DEFAULT_MAX_BATCH = 40;
 
@@ -98,29 +98,29 @@ export const D2D_INTAKE_MAX_BATCH_ENV = "D2D_INTAKE_MAX_BATCH" as const;
 
 export const D2D_INTAKE_HTTP_PATH = "/d2d-factory-intake/v1" as const;
 
-export interface D2dGeoCoordinates {
-  readonly latitude: number;
-  readonly longitude: number;
+export interface D2dLatLng {
+  readonly lat: number;
+  readonly lng: number;
 }
 
-export interface D2dSearchContext {
-  readonly latitude: number;
-  readonly longitude: number;
-  readonly radiusMiles: number;
-  readonly searchTerms: readonly string[];
+export interface D2dCampaignContext {
+  readonly location?: string;
+  readonly radiusMiles?: number;
+  readonly radiusMeters?: number;
+  readonly center?: D2dLatLng;
+  readonly search?: {
+    readonly query?: string;
+    readonly searchStrings?: readonly string[];
+    readonly categories?: readonly string[];
+  };
 }
 
-export interface D2dBusinessProvenance {
+export interface D2dApifyProvenance {
+  readonly provider?: string;
   readonly actor?: string;
   readonly runId?: string;
   readonly datasetId?: string;
   readonly itemId?: string;
-  readonly googlePlaceId?: string;
-  readonly placeId?: string;
-  readonly mapsUrl?: string;
-  readonly googleMapsUrl?: string;
-  readonly googleUrl?: string;
-  readonly cid?: string;
 }
 
 export interface D2dRawAddress {
@@ -135,6 +135,7 @@ export interface D2dRawBusiness {
   readonly d2dProspectId?: string;
   readonly sourceBusinessId?: string;
   readonly campaignBusinessId?: string;
+  readonly d2dBusinessId?: string;
   readonly placeId?: string;
   readonly googlePlaceId?: string;
   readonly cid?: string;
@@ -148,24 +149,24 @@ export interface D2dRawBusiness {
   readonly categories?: readonly string[];
   readonly address?: string | D2dRawAddress;
   readonly location?: string;
-  readonly coordinates?: D2dGeoCoordinates | { readonly lat: number; readonly lng: number };
+  readonly coordinates?: D2dLatLng;
   readonly phone?: string;
   readonly website?: string;
   readonly websiteUrl?: string;
   readonly rating?: number;
   readonly reviewCount?: number;
   readonly listingReviewCount?: number;
-  readonly provenance?: D2dBusinessProvenance;
+  readonly apify?: D2dApifyProvenance;
 }
 
 export interface D2dIntakeBatch {
-  readonly schema: typeof D2D_RAW_EXPORT_SCHEMA;
   readonly version: typeof D2D_FACTORY_INTAKE_VERSION;
   readonly campaignId: string;
   readonly campaignRunId: string;
   readonly exportId: string;
   readonly exportedAt: string;
-  readonly searchContext: D2dSearchContext;
+  readonly campaign: D2dCampaignContext;
+  readonly provenance?: D2dApifyProvenance;
   readonly businesses: readonly unknown[];
 }
 
@@ -192,12 +193,12 @@ export interface NormalizedRawBusiness {
   readonly location: string | null;
   readonly address: D2dRawAddress | null;
   readonly addressText: string | null;
-  readonly coordinates: D2dGeoCoordinates | null;
+  readonly coordinates: D2dLatLng | null;
   readonly phone: string | null;
   readonly website: string | null;
   readonly rating: number | null;
   readonly reviewCount: number | null;
-  readonly provenance: D2dBusinessProvenance | null;
+  readonly apify: D2dApifyProvenance | null;
 }
 
 export interface FactoryQualification {
@@ -209,7 +210,6 @@ export interface FactoryQualification {
 
 export interface D2dBusinessReceipt {
   readonly version: typeof D2D_FACTORY_INTAKE_VERSION;
-  readonly schema: typeof D2D_RAW_EXPORT_SCHEMA;
   readonly status: D2dTransportStatus;
   readonly qualification: FactoryQualification | null;
   readonly d2dProspectId: string;
@@ -230,7 +230,6 @@ export interface D2dBusinessReceipt {
 
 export interface D2dIntakeBatchReceipt {
   readonly version: typeof D2D_FACTORY_INTAKE_VERSION;
-  readonly schema: typeof D2D_RAW_EXPORT_SCHEMA;
   readonly campaignId: string;
   readonly campaignRunId: string;
   readonly exportId: string;
@@ -250,6 +249,41 @@ export function intakeCorrelationId(input: {
   readonly exportId: string;
   readonly version?: string;
 }): string {
-  const version = input.version ?? D2D_RAW_EXPORT_SCHEMA;
+  const version = input.version ?? D2D_FACTORY_INTAKE_VERSION;
   return `${input.sourceBusinessId}::${input.exportId}::${version}`;
+}
+
+export function campaignSearchTerms(campaign: D2dCampaignContext): readonly string[] {
+  const terms: string[] = [];
+  if (campaign.search?.query?.trim()) terms.push(campaign.search.query.trim());
+  for (const item of campaign.search?.searchStrings ?? []) {
+    if (typeof item === "string" && item.trim()) terms.push(item.trim());
+  }
+  return terms;
+}
+
+export function reconcilableReceiptIdentity(receipt: D2dBusinessReceipt): {
+  readonly version: typeof D2D_FACTORY_INTAKE_VERSION;
+  readonly status: D2dTransportStatus;
+  readonly d2dProspectId: string;
+  readonly sourceBusinessId: string;
+  readonly campaignBusinessId: string | null;
+  readonly d2dBusinessId: string;
+  readonly correlationId: string;
+  readonly campaignId: string;
+  readonly campaignRunId: string;
+  readonly exportId: string;
+} {
+  return {
+    version: receipt.version,
+    status: receipt.status,
+    d2dProspectId: receipt.d2dProspectId,
+    sourceBusinessId: receipt.sourceBusinessId,
+    campaignBusinessId: receipt.campaignBusinessId,
+    d2dBusinessId: receipt.d2dBusinessId,
+    correlationId: receipt.correlationId,
+    campaignId: receipt.campaignId,
+    campaignRunId: receipt.campaignRunId,
+    exportId: receipt.exportId,
+  };
 }

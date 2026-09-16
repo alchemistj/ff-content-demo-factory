@@ -40,24 +40,24 @@ export interface WorkflowSourceCorrelation {
   readonly exportId: string;
   readonly exportedAt: string;
   readonly correlationId: string;
-  readonly searchContext?: {
-    readonly latitude: number;
-    readonly longitude: number;
-    readonly radiusMiles: number;
-    readonly searchTerms: readonly string[];
+  readonly campaign?: {
+    readonly location?: string;
+    readonly radiusMiles?: number;
+    readonly radiusMeters?: number;
+    readonly center?: { readonly lat: number; readonly lng: number };
+    readonly search?: {
+      readonly query?: string;
+      readonly searchStrings?: readonly string[];
+      readonly categories?: readonly string[];
+    };
   };
-  readonly coordinates?: { readonly latitude: number; readonly longitude: number };
-  readonly provenance?: {
+  readonly coordinates?: { readonly lat: number; readonly lng: number };
+  readonly apify?: {
+    readonly provider?: string;
     readonly actor?: string;
     readonly runId?: string;
     readonly datasetId?: string;
     readonly itemId?: string;
-    readonly googlePlaceId?: string;
-    readonly placeId?: string;
-    readonly mapsUrl?: string;
-    readonly googleMapsUrl?: string;
-    readonly googleUrl?: string;
-    readonly cid?: string;
   };
   readonly factoryQualificationOutcome: "advanced";
   readonly factoryQualificationReason: string;
