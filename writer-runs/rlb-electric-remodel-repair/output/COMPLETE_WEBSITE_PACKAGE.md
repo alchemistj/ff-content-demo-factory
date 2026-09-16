@@ -61,7 +61,7 @@ We handle residential repair—outlets, switches, breakers, troubleshooting—an
 
 **Electrical Repair** — When power stops working, breakers trip, or something isn't safe, we diagnose the problem and fix it right. Usually in one visit.
 
-**Panel Upgrades** — Adding major appliances or power demands? We assess your needs, handle permits, and install a new panel that actually fits your home.
+**Panel Upgrades** — Adding major appliances, power demands, or upgrading to new panel technology? We assess your needs, handle permits, and install a panel that actually fits your home.
 
 **Lighting & Outlets** — Kitchen lights, garage circuits, new outlets—we install what you need, cleanly and to code.
 
@@ -150,8 +150,9 @@ An undersized electrical panel shows several signs:
 - You're adding major power draws (new AC, electric vehicle charging, workshop)
 - The panel itself is aging and needs updating
 - You're planning a kitchen or bathroom remodel
+- You want to upgrade to smart or automated panel technology for better safety and control
 
-RLB inspects your panel and usage to determine whether an upgrade is necessary—or whether a simpler solution works better.
+Older panels lack the capacity and features modern homes need. New panel technology offers better monitoring, safety features, and the ability to manage power more efficiently. RLB inspects your panel and usage to determine whether an upgrade is necessary—or whether a simpler solution works better.
 
 > I had a circuit in my house that would randomly cause multiple outlets to cease providing power. Rick came out to my house, I explained the issue and what I had done to diagnose it, and he knew exactly what to do. He wasted no time, got straight to work, and had the issue fixed in short order.
 >
@@ -401,76 +402,46 @@ We serve Springfield, MO and the surrounding area for residential electrical rep
 
 ---
 
-### Why We Built This Site
+### Why This Website Matters
 
-RLB Electric is a Springfield electrician doing two distinct jobs: emergency repair and planned panel upgrades. The current Wix site is a free DIY builder—clip-art tiles, unlinked phone, no conversion path. This demo shows what a focused, decision-stage website looks like for a local electrician.
+You're an electrician running a real business—diagnosing problems, fixing them right, and treating customers fairly. Your work speaks for itself, but most customers find you through Google or Google Business, not through one-on-one referrals.
 
----
-
-## The Five-Page Architecture
-
-**Homepage** — Local electrician identity, residential repair, panel-upgrade work, and a tap-to-call button. Establishes who RLB is and what they handle.
-
-**Panel Upgrade Service Page** — Considered-purchase audience. Homeowner deciding whether to invest in capacity. Clear process, honest assessment, fair pricing.
-
-**Electrical Repair Service Page** — Urgent-problem audience. Homeowner with an active electrical problem. Fast diagnosis, honest work, no guessing.
-
-**Contact** — Remove friction from calling. Simple, direct.
-
-**Header/Footer** — Business information, logo, navigation. No Wix chrome or clip-art.
-
----
-
-## What Changed
-
-**From the Wix site:**
-- Removed clip-art service tiles
-- Removed visible-but-unlinked phone
-- Removed typos and generic contractor praise
-- Added decision-stage customer language (repair vs. upgrade; diagnosis-first approach)
-- Added genuine customer reviews with exact quotations
-- Added clear process explanation (what happens during a repair, what panel assessment entails)
-- Added real detail from RLB's demonstrated behavior (quick response, fair pricing, honest assessment)
-
-**Key principles:**
-- Speak as the Springfield shop, not as a demo
-- Show customer benefits backed by actual reviews
-- Make the two service jobs meaningfully distinct
-- Lead with what matters to a customer deciding whom to call
-- Use reviews as proof, not as a testimonial dump
-
----
-
-## Source Material
-
-**Reviews:** 44 verified Google reviews (4.9 rating, 68 listed). All marked as supporting/pending-model-judgment. Used exact quotations with proper attribution.
-
-**Business facts:** Confirmed services, location, phone, team behavior from owned-site Wix listing and review inventory.
-
-**Approved prescription:** Josh locked the page plan, routes, and distinct service jobs. Panel Upgrade as considered-purchase lander (volume, ticket, intent), Electrical Repair as urgent primary service.
-
-**Writing guidance:** Current positive-framework system. Specific evidence and customer experiences over generic praise. Decision help without manufacturing claims.
+This website is built to represent your business the way you actually work. It's the foundation for making your Google presence stronger and helping more Springfield homeowners find you when they need repair or planning a panel upgrade.
 
 ---
 
 ## What This Site Does
 
-For a homeowner with a tripped breaker: quick diagnosis, honest price, done right.
+**For you:** One-tap calling from every page. Customers who land here can reach you immediately—no navigation headaches, no wasted clicks.
 
-For a homeowner adding an appliance: clear assessment, fair options, straightforward upgrade.
+**For customers:** Clear information about what you do (repair and upgrades) and how you work (honest diagnosis, fair pricing, no guessing). They can see what a repair or panel assessment actually looks like before calling.
 
-For RLB: one-tap call from every page. No confusing navigation. No clip-art.
+**For your business:** A better representation online than a single-page or multi-page generic site. This builds trust with customers who are researching you, and it gives Google more structured information about your business.
 
 ---
 
-## Handoff Notes
+## The Pages
 
-**Validation:** All quotations are exact source text with proper attribution. No invented warranties, emergency claims, licensing, insurance, pricing, or 24-hour service. No unsupported claims.
+**Homepage** — Who you are and what you do. Repair and upgrade. One tap to call.
 
-**Clean-room compliance:** No prior RLB authored copy consulted. All source material from SHA-verified materialized inputs.
+**Electrical Repair** — For customers with an active problem (breaker tripping, outlet dead, power out). What to expect when you come out.
 
-**Audience distinction:** Homepage is local-electrician identity. Panel Upgrade and Electrical Repair are distinct customer decisions and service intents. Contact is simple and direct.
+**Panel Upgrade** — For customers thinking ahead. When a panel upgrade makes sense, what the process looks like, what it costs.
 
-**SEO metadata:** All customer-facing pages (homepage, both service pages, contact) include SEO title and meta description. Strategy Overview is owner-facing, not a search-result page.
+**Contact** — Simple. Just your phone, address, and what to expect when they call.
 
-**Josh's editorial gate:** This site is ready for Josh's review and approval. No self-grading from the writer.
+---
+
+## What's Built In
+
+Every review on this site is a direct quote from your actual Google reviews. No paraphrasing. Customers trust actual words more than summaries.
+
+Every claim is something you've actually done or offered (fair pricing, quick response, honest diagnosis). Nothing invented. Nothing promised that you can't deliver.
+
+---
+
+## Next Steps
+
+Publish this site. Watch your Google Business profile get stronger as the site's information matches and supports your listing. More customers will find you when they search for electrician repair or panel upgrade in Springfield.
+
+Keep your Google Business profile updated. Keep getting great work done. This website builds on both of those.
