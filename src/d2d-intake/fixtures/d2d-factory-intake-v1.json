@@ -1,23 +1,24 @@
 {
+  "notes": "Canonical d2d-factory-intake/v1 request and expected Content Factory receipt. Copied from alchemistj/ff-gb-door-to-door-system tests/fixtures/d2d-factory-intake-v1.json at fe5b74f5f1059af2808e61a0b13755ead55999a5. Content Factory is the sole qualifier. Complete listing is Northline Garage Doors. Sparse listing is No website shop (phone, website, and rating omitted). Transport statuses are received|duplicate|invalid|retryable.",
   "request": {
     "version": "d2d-factory-intake/v1",
     "campaignId": "campaign-1",
     "campaignRunId": "apify-run-1",
     "exportId": "export:campaign-1:apify-run-1:d2d-factory-intake/v1",
-    "exportedAt": "2026-09-15T12:00:00.000Z",
+    "exportedAt": "2026-09-16T12:00:00.000Z",
     "campaign": {
       "location": "Springfield, MO",
-      "radiusMiles": 10,
-      "radiusMeters": 16093,
-      "center": { "lat": 37.208957, "lng": -93.292298 },
+      "radiusMiles": 0.25,
+      "radiusMeters": 402.336,
+      "center": { "lat": 37.20896, "lng": -93.2923 },
       "search": {
-        "query": "garage door repair",
+        "query": "business",
         "searchStrings": ["garage door"]
       }
     },
     "provenance": {
       "provider": "apify",
-      "actor": "compass~crawler-google-places",
+      "actor": "compass/crawler-google-places",
       "runId": "apify-run-1",
       "datasetId": "dataset-1"
     },
@@ -28,29 +29,32 @@
         "campaignBusinessId": "cb-1",
         "d2dBusinessId": "biz-1",
         "correlationId": "biz-1::export:campaign-1:apify-run-1:d2d-factory-intake/v1::d2d-factory-intake/v1",
-        "title": "Springfield Garage Door Co.",
-        "category": "Garage door repair service",
-        "categories": ["Garage door repair service"],
+        "title": "Northline Garage Doors",
+        "category": "garage door service",
+        "categories": ["garage door service"],
         "address": {
-          "street": "100 Industrial Drive",
-          "city": "Springfield",
-          "region": "MO",
-          "postalCode": "65802",
+          "street": "18 Harbor Avenue",
+          "city": "Mason",
+          "region": "IL",
+          "postalCode": "60000",
           "country": "US"
         },
-        "phone": "+1-417-555-0100",
-        "website": "https://springfield-garage.example/",
-        "rating": 4.7,
-        "reviewCount": 56,
-        "googlePlaceId": "ChIJ-complete-1",
-        "cid": "cid-1",
-        "coordinates": { "lat": 37.2094, "lng": -93.293 },
+        "location": "Lake County",
+        "phone": "+1-555-010-1000",
+        "website": "https://northline.example/",
+        "rating": 4.8,
+        "reviewCount": 42,
+        "placeId": "place-1",
+        "googlePlaceId": "place-1",
+        "cid": "cid-northline",
+        "mapsUrl": "https://maps.example/northline",
+        "coordinates": { "lat": 41.901, "lng": -87.812 },
         "apify": {
           "provider": "apify",
-          "actor": "compass~crawler-google-places",
+          "actor": "compass/crawler-google-places",
           "runId": "apify-run-1",
           "datasetId": "dataset-1",
-          "itemId": "item-1"
+          "itemId": "item-9"
         }
       },
       {
@@ -59,25 +63,28 @@
         "campaignBusinessId": "cb-sparse",
         "d2dBusinessId": "biz-sparse",
         "correlationId": "biz-sparse::export:campaign-1:apify-run-1:d2d-factory-intake/v1::d2d-factory-intake/v1",
-        "title": "Neighborhood Garage Repair",
-        "category": "Garage door repair service",
-        "categories": ["Garage door repair service"],
+        "title": "No website shop",
+        "category": "garage door service",
+        "categories": ["garage door service"],
         "address": {
-          "street": "200 Market Street",
-          "city": "Springfield",
-          "region": "MO",
-          "postalCode": "65806",
+          "street": "18 Harbor Avenue",
+          "city": "Mason",
+          "region": "IL",
+          "postalCode": "60000",
           "country": "US"
         },
-        "googlePlaceId": "ChIJ-sparse",
-        "cid": "cid-sparse",
-        "coordinates": { "lat": 37.2102, "lng": -93.2915 },
+        "location": "Lake County",
+        "placeId": "place-1",
+        "googlePlaceId": "place-1",
+        "cid": "cid-northline",
+        "mapsUrl": "https://maps.example/northline",
+        "coordinates": { "lat": 41.901, "lng": -87.812 },
         "apify": {
           "provider": "apify",
-          "actor": "compass~crawler-google-places",
+          "actor": "compass/crawler-google-places",
           "runId": "apify-run-1",
           "datasetId": "dataset-1",
-          "itemId": "item-sparse"
+          "itemId": "item-9"
         }
       }
     ]
@@ -91,28 +98,63 @@
       {
         "version": "d2d-factory-intake/v1",
         "status": "received",
+        "qualification": {
+          "outcome": "advanced",
+          "reasonCode": "FACTORY_ADVANCED",
+          "reason": "Content Factory selected this business from candidate-bench + website/opportunity evidence, not from ProspectSeed completeness or a D2D qualification conclusion.",
+          "websiteOpportunity": {
+            "inspected": true,
+            "quality": "strong",
+            "opportunity": "strong",
+            "searchFit": true,
+            "source": "listing-evidence",
+            "reasons": [
+              "Listing website plus rating/review evidence supports a factory opportunity."
+            ]
+          }
+        },
         "d2dProspectId": "cb-1",
         "sourceBusinessId": "biz-1",
         "campaignBusinessId": "cb-1",
         "d2dBusinessId": "biz-1",
-        "correlationId": "biz-1::export:campaign-1:apify-run-1:d2d-factory-intake/v1::d2d-factory-intake/v1",
+        "placeId": "place-1",
         "campaignId": "campaign-1",
         "campaignRunId": "apify-run-1",
         "exportId": "export:campaign-1:apify-run-1:d2d-factory-intake/v1",
-        "qualification": { "outcome": "advanced" }
+        "correlationId": "biz-1::export:campaign-1:apify-run-1:d2d-factory-intake/v1::d2d-factory-intake/v1",
+        "factoryProspectId": "biz-1",
+        "factoryRunId": "run-biz-1",
+        "factoryStage": "awaiting_prescription_approval"
       },
       {
         "version": "d2d-factory-intake/v1",
         "status": "received",
+        "qualification": {
+          "outcome": "held",
+          "reasonCode": "WEAK_OPPORTUNITY",
+          "reason": "Factory website/opportunity evidence is not strong enough to select this business.",
+          "websiteOpportunity": {
+            "inspected": true,
+            "quality": "unknown",
+            "opportunity": "unknown",
+            "searchFit": true,
+            "source": "listing-evidence",
+            "reasons": [
+              "No website on the listing; opportunity evidence is incomplete."
+            ]
+          }
+        },
         "d2dProspectId": "cb-sparse",
         "sourceBusinessId": "biz-sparse",
         "campaignBusinessId": "cb-sparse",
         "d2dBusinessId": "biz-sparse",
-        "correlationId": "biz-sparse::export:campaign-1:apify-run-1:d2d-factory-intake/v1::d2d-factory-intake/v1",
+        "placeId": "place-1",
         "campaignId": "campaign-1",
         "campaignRunId": "apify-run-1",
         "exportId": "export:campaign-1:apify-run-1:d2d-factory-intake/v1",
-        "qualification": { "outcome": "held" }
+        "correlationId": "biz-sparse::export:campaign-1:apify-run-1:d2d-factory-intake/v1::d2d-factory-intake/v1",
+        "reason": "Factory website/opportunity evidence is not strong enough to select this business.",
+        "reasonCode": "WEAK_OPPORTUNITY"
       }
     ]
   }

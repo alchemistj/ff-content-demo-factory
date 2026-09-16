@@ -10,6 +10,8 @@ import { createMemoryIntakeRegistry } from "./registry.js";
 import {
   D2D_FACTORY_INTAKE_VERSION,
   D2D_GOLDEN_FIXTURE_SHA256,
+  D2D_GOLDEN_PRODUCER_FACTS,
+  D2D_GOLDEN_PRODUCER_FACTS_SHA256,
   D2D_INTAKE_REASON_CODES,
   D2D_PR5_HEAD,
   D2D_TRANSPORT_STATUSES,
@@ -42,44 +44,130 @@ function loadGoldenFileObject(): ReturnType<typeof loadD2dFactoryIntakeV1Golden>
   return JSON.parse(readFileSync(GOLDEN_PATH, "utf8")) as ReturnType<typeof loadD2dFactoryIntakeV1Golden>;
 }
 
+function producerFactsFromGolden(golden: ReturnType<typeof loadD2dFactoryIntakeV1Golden>) {
+  const request = golden.request as {
+    exportedAt: string;
+    campaign: {
+      location: string;
+      center: { lat: number; lng: number };
+      radiusMiles: number;
+      radiusMeters: number;
+      search: { query: string };
+    };
+    provenance: { actor: string };
+    businesses: Array<{
+      title: string;
+      placeId: string;
+      googlePlaceId: string;
+      cid: string;
+      address: { city: string; region: string };
+      apify: { itemId: string };
+    }>;
+  };
+  const completeReceipt = golden.expectedReceipt.receipts[0] as {
+    factoryRunId: string;
+    factoryStage: string;
+  };
+  return {
+    exportedAt: request.exportedAt,
+    location: request.campaign.location,
+    center: request.campaign.center,
+    radiusMiles: request.campaign.radiusMiles,
+    radiusMeters: request.campaign.radiusMeters,
+    searchQuery: request.campaign.search.query,
+    actor: request.provenance.actor,
+    completeTitle: request.businesses[0]!.title,
+    completePlaceId: request.businesses[0]!.placeId,
+    completeGooglePlaceId: request.businesses[0]!.googlePlaceId,
+    completeCid: request.businesses[0]!.cid,
+    completeItemId: request.businesses[0]!.apify.itemId,
+    completeCity: request.businesses[0]!.address.city,
+    completeRegion: request.businesses[0]!.address.region,
+    sparseTitle: request.businesses[1]!.title,
+    completeFactoryRunId: completeReceipt.factoryRunId,
+    completeFactoryStage: completeReceipt.factoryStage,
+  };
+}
+
 test("copied D2D golden is the frozen producer fixture, not a lookalike", () => {
   const fromDisk = loadGoldenFileObject();
   const golden = loadD2dFactoryIntakeV1Golden();
   assert.deepEqual(golden, fromDisk);
   assert.deepEqual(golden.request, fromDisk.request);
   assert.deepEqual(golden.expectedReceipt, fromDisk.expectedReceipt);
+  assert.equal(typeof golden.notes, "string");
+  assert.ok((golden.notes ?? "").length > 0);
   const digest = createHash("sha256").update(JSON.stringify(fromDisk)).digest("hex");
   assert.equal(digest, D2D_GOLDEN_FIXTURE_SHA256);
+
+  const facts = producerFactsFromGolden(fromDisk);
+  assert.deepEqual(facts, D2D_GOLDEN_PRODUCER_FACTS);
+  const factsDigest = createHash("sha256").update(JSON.stringify(facts)).digest("hex");
+  assert.equal(factsDigest, D2D_GOLDEN_PRODUCER_FACTS_SHA256);
 
   const request = golden.request as {
     version: string;
     campaignId: string;
     campaignRunId: string;
     exportId: string;
-    campaign: { location: string; center: { lat: number; lng: number } };
+    exportedAt: string;
+    campaign: {
+      location: string;
+      radiusMiles: number;
+      radiusMeters: number;
+      center: { lat: number; lng: number };
+      search: { query: string };
+    };
+    provenance: { actor: string };
     businesses: Array<Record<string, unknown>>;
   };
   assert.equal(request.version, D2D_FACTORY_INTAKE_VERSION);
   assert.equal(request.campaignId, "campaign-1");
   assert.equal(request.campaignRunId, "apify-run-1");
   assert.equal(request.exportId, CANONICAL_EXPORT_ID);
+  assert.equal(request.exportedAt, "2026-09-16T12:00:00.000Z");
+  assert.notEqual(request.exportedAt, "2026-09-15T12:00:00.000Z");
   assert.equal(request.campaign.location, "Springfield, MO");
-  assert.notEqual(request.campaign.location, "Springfield, IL");
-  assert.equal(request.campaignRunId, "apify-run-1");
-  assert.notEqual(request.exportId, "export-1");
+  assert.equal(request.campaign.center.lat, 37.20896);
+  assert.equal(request.campaign.center.lng, -93.2923);
+  assert.equal(request.campaign.radiusMiles, 0.25);
+  assert.equal(request.campaign.radiusMeters, 402.336);
+  assert.equal(request.campaign.search.query, "business");
+  assert.notEqual(request.campaign.search.query, "garage door repair");
+  assert.equal(request.provenance.actor, "compass/crawler-google-places");
+  assert.notEqual(request.provenance.actor, "compass~crawler-google-places");
   const complete = request.businesses[0]!;
   const sparse = request.businesses[1]!;
   assert.equal(complete.campaignBusinessId, "cb-1");
   assert.equal(complete.sourceBusinessId, "biz-1");
   assert.equal(complete.d2dBusinessId, "biz-1");
-  assert.equal(complete.d2dProspectId, "cb-1");
+  assert.equal(complete.title, "Northline Garage Doors");
+  assert.equal(complete.placeId, "place-1");
+  assert.equal(complete.googlePlaceId, "place-1");
+  assert.equal(complete.cid, "cid-northline");
+  assert.equal(typeof complete.mapsUrl, "string");
+  assert.equal((complete.apify as { itemId: string }).itemId, "item-9");
+  assert.equal((complete.address as { city: string; region: string }).city, "Mason");
+  assert.equal((complete.address as { city: string; region: string }).region, "IL");
   assert.equal(sparse.campaignBusinessId, "cb-sparse");
   assert.equal(sparse.sourceBusinessId, "biz-sparse");
   assert.equal(sparse.d2dBusinessId, "biz-sparse");
+  assert.equal(sparse.title, "No website shop");
   assert.equal(complete.correlationId, CANONICAL_BIZ1_CORRELATION);
   assert.equal(sparse.correlationId, CANONICAL_SPARSE_CORRELATION);
-  assert.notEqual(complete.sourceBusinessId, "src-1");
-  assert.notEqual(sparse.sourceBusinessId, "src-sparse");
+  assert.equal("phone" in sparse, false);
+  assert.equal("website" in sparse, false);
+  assert.equal("rating" in sparse, false);
+  const advanced = golden.expectedReceipt.receipts[0] as Record<string, unknown>;
+  const held = golden.expectedReceipt.receipts[1] as Record<string, unknown>;
+  assert.equal(advanced.placeId, "place-1");
+  assert.equal(advanced.factoryProspectId, "biz-1");
+  assert.equal(advanced.factoryRunId, "run-biz-1");
+  assert.equal(advanced.factoryStage, WORKFLOW_STAGES.AWAITING_PRESCRIPTION_APPROVAL);
+  assert.equal(typeof (advanced.qualification as { reason: string }).reason, "string");
+  assert.equal(held.placeId, "place-1");
+  assert.equal(typeof held.reason, "string");
+  assert.equal(held.reasonCode, D2D_INTAKE_REASON_CODES.WEAK_OPPORTUNITY);
 });
 
 test("golden D2D PR #5 two-business intake v1 request is accepted directly and receipts are reconcilable", async () => {
@@ -101,9 +189,9 @@ test("golden D2D PR #5 two-business intake v1 request is accepted directly and r
   assert.equal(sparse.d2dBusinessId, sparse.sourceBusinessId);
   assert.equal(complete.correlationId, CANONICAL_BIZ1_CORRELATION);
   assert.equal(sparse.correlationId, CANONICAL_SPARSE_CORRELATION);
-  assert.equal(typeof complete.title, "string");
-  assert.equal(typeof complete.googlePlaceId, "string");
-  assert.equal(typeof complete.cid, "string");
+  assert.equal(complete.title, "Northline Garage Doors");
+  assert.equal(complete.googlePlaceId, "place-1");
+  assert.equal(complete.cid, "cid-northline");
   assert.equal("phone" in sparse, false);
   assert.equal("website" in sparse, false);
   assert.equal("rating" in sparse, false);
@@ -128,6 +216,7 @@ test("golden D2D PR #5 two-business intake v1 request is accepted directly and r
   assert.equal(normalizedComplete.record.correlationId, complete.correlationId);
   assert.equal(normalizedSparse.record.correlationId, sparse.correlationId);
   assert.equal(normalizedComplete.record.name, complete.title);
+  assert.equal(normalizedComplete.record.placeId, complete.placeId);
   assert.equal(normalizedComplete.record.placeId, complete.googlePlaceId);
   assert.equal(normalizedComplete.record.d2dBusinessId, complete.sourceBusinessId);
   assert.notEqual(normalizedComplete.record.d2dBusinessId, complete.googlePlaceId);
@@ -137,7 +226,8 @@ test("golden D2D PR #5 two-business intake v1 request is accepted directly and r
   assert.equal(normalizedSparse.record.rating, null);
   assert.equal(normalizedComplete.record.coordinates?.lat, (complete.coordinates as { lat: number }).lat);
   assert.equal(normalizedComplete.record.apify?.runId, (complete.apify as { runId: string }).runId);
-  assert.equal(normalizedComplete.record.apify?.runId, "apify-run-1");
+  assert.equal(normalizedComplete.record.apify?.actor, "compass/crawler-google-places");
+  assert.equal(normalizedComplete.record.apify?.itemId, "item-9");
 
   const adapters = createIntakeAdapters();
   const qualifier = countingQualifier();
@@ -169,6 +259,13 @@ test("golden D2D PR #5 two-business intake v1 request is accepted directly and r
       campaignRunId: expected.campaignRunId,
       exportId: expected.exportId,
     });
+    assert.equal(receipt.placeId, expected.placeId);
+    assert.equal(receipt.factoryProspectId, expected.factoryProspectId);
+    assert.equal(receipt.factoryRunId, expected.factoryRunId);
+    assert.equal(receipt.factoryStage, expected.factoryStage);
+    assert.equal(receipt.reason, expected.reason);
+    assert.equal(receipt.reasonCode, expected.reasonCode);
+    assert.deepEqual(receipt.qualification, expected.qualification);
     const expectedQualification = expected.qualification as { outcome: string };
     assert.equal(receipt.qualification?.outcome, expectedQualification.outcome);
     assert.equal(receipt.correlationId, businesses[index]!.correlationId);
@@ -180,6 +277,7 @@ test("golden D2D PR #5 two-business intake v1 request is accepted directly and r
   assert.equal(result.receipts[0]?.qualification?.outcome, FACTORY_QUALIFICATION_OUTCOMES.ADVANCED);
   assert.equal(result.receipts[1]?.qualification?.outcome, FACTORY_QUALIFICATION_OUTCOMES.HELD);
   assert.equal(result.receipts[0]?.factoryStage, WORKFLOW_STAGES.AWAITING_PRESCRIPTION_APPROVAL);
+  assert.equal(result.receipts[0]?.factoryRunId, "run-biz-1");
   assert.equal(result.receipts[1]?.factoryRunId, undefined);
   assert.equal(qualifier.calls, 2);
   assert.equal(adapters.stats.researchCalls, 1);

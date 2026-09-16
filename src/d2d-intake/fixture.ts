@@ -26,6 +26,7 @@ export const INTAKE_NOW = new Date("2026-09-15T18:00:00.000Z");
 const FIXTURE_DIR = dirname(fileURLToPath(import.meta.url));
 
 export interface D2dGoldenContractFixture {
+  readonly notes?: string;
   readonly request: Record<string, unknown>;
   readonly expectedReceipt: {
     readonly version: string;

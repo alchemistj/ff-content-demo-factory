@@ -25,7 +25,36 @@ export const D2D_PR5_HEAD = "fe5b74f5f1059af2808e61a0b13755ead55999a5" as const;
 
 /** SHA-256 of JSON.stringify(parsed copied D2D golden). Drift guard against lookalikes. */
 export const D2D_GOLDEN_FIXTURE_SHA256 =
-  "e96a3196e9bde010d28c17db1035520d1e1081d58046bbeb495f95ebb7e9cc18" as const;
+  "9c8c93968ffb5645fbb74cff55748c2370658e1bfe294427fb8b482f3ffaef8f" as const;
+
+/**
+ * Exact producer facts from D2D PR #5 `tests/fixtures/d2d-factory-intake-v1.json`
+ * at `fe5b74f5`. The copied golden must contain these values; hashing a
+ * different internally consistent fixture is not sufficient.
+ */
+export const D2D_GOLDEN_PRODUCER_FACTS = Object.freeze({
+  exportedAt: "2026-09-16T12:00:00.000Z",
+  location: "Springfield, MO",
+  center: Object.freeze({ lat: 37.20896, lng: -93.2923 }),
+  radiusMiles: 0.25,
+  radiusMeters: 402.336,
+  searchQuery: "business",
+  actor: "compass/crawler-google-places",
+  completeTitle: "Northline Garage Doors",
+  completePlaceId: "place-1",
+  completeGooglePlaceId: "place-1",
+  completeCid: "cid-northline",
+  completeItemId: "item-9",
+  completeCity: "Mason",
+  completeRegion: "IL",
+  sparseTitle: "No website shop",
+  completeFactoryRunId: "run-biz-1",
+  completeFactoryStage: "awaiting_prescription_approval",
+});
+
+/** SHA-256 of JSON.stringify of the producer-facts projection from the copied golden. */
+export const D2D_GOLDEN_PRODUCER_FACTS_SHA256 =
+  "2d2eb2845f43dc714019e77901168b15990d7693e315336532aa7ebd64eb8e73" as const;
 
 export const D2D_INTAKE_DEFAULT_MAX_BATCH = 40;
 

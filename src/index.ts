@@ -80,6 +80,8 @@ export { createGoogleDocsPublisher } from "./google-docs/publisher-adapter.js";
 export {
   D2D_FACTORY_INTAKE_VERSION,
   D2D_GOLDEN_FIXTURE_SHA256,
+  D2D_GOLDEN_PRODUCER_FACTS,
+  D2D_GOLDEN_PRODUCER_FACTS_SHA256,
   D2D_PR5_HEAD,
   D2D_INTAKE_HTTP_PATH,
   D2D_INTAKE_SHARED_SECRET_ENV,

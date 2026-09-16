@@ -2,7 +2,7 @@
 
 This is the frozen cross-repo request/receipt schema between `alchemistj/ff-gb-door-to-door-system` (companion D2D PR #5 head `fe5b74f5f1059af2808e61a0b13755ead55999a5`) and this Content Demo Factory.
 
-Canonical D2D sources: `tests/fixtures/d2d-factory-intake-v1.json` and `src/lib/content-factory/contract.ts` at `fe5b74f5`. Fixture content is unchanged from `00ae71fa`; the producer head advanced for strict receipt-consumer fixes. The **only** cross-repo golden in this repo is the copied fixture `src/d2d-intake/fixtures/d2d-factory-intake-v1.json` (Springfield, MO; complete `cb-1`/`biz-1` + sparse `cb-sparse`/`biz-sparse`). The JSON sample below is an illustrative local example, not that golden.
+Canonical D2D sources: `tests/fixtures/d2d-factory-intake-v1.json` and `src/lib/content-factory/contract.ts` at `fe5b74f5`. Fixture content is unchanged from `00ae71fa`; the producer head advanced for strict receipt-consumer fixes. The **only** cross-repo golden in this repo is the copied fixture `src/d2d-intake/fixtures/d2d-factory-intake-v1.json` (Springfield, MO campaign envelope; complete `cb-1`/`biz-1` is D2D's Northline Garage Doors listing; sparse `cb-sparse`/`biz-sparse` is D2D's No website shop). The JSON sample below is an illustrative local example, not that golden.
 
 **D2D owns collection and transport facts:** campaign/run/export IDs, campaign geography/search, Apify/Google listing fields, D2D source IDs, and delivery/correlation.
 
@@ -85,7 +85,7 @@ Missing optional fields stay empty. They are not fabricated and they are not a t
 correlationId = `${sourceBusinessId}::${exportId}::d2d-factory-intake/v1`
 ```
 
-The golden D2D request is the two-business cohort at `src/d2d-intake/fixtures/d2d-factory-intake-v1.json`: complete `cb-1`/`biz-1` and sparse `cb-sparse`/`biz-sparse` (no phone/website/rating). Campaign run is `apify-run-1`; export id is `export:campaign-1:apify-run-1:d2d-factory-intake/v1`. It is a duplicated copy of D2D `tests/fixtures/d2d-factory-intake-v1.json` at `fe5b74f5`. Northline/Lake County samples in this document and in unit tests are local examples only.
+The golden D2D request is the two-business cohort at `src/d2d-intake/fixtures/d2d-factory-intake-v1.json`: complete `cb-1`/`biz-1` (Northline Garage Doors) and sparse `cb-sparse`/`biz-sparse` titled `No website shop` (no phone/website/rating). Campaign run is `apify-run-1`; export id is `export:campaign-1:apify-run-1:d2d-factory-intake/v1`. It is a duplicated copy of D2D `tests/fixtures/d2d-factory-intake-v1.json` at `fe5b74f5`, including producer `notes` and full expected receipt fields. Northline/Lake County samples in this document and in unit tests are local examples only; they are not a second golden.
 
 D2D `assignContentFactoryReceipts()` reconciles by `d2dProspectId` plus this `correlationId`. Idempotency is the same triple. A missing or mismatched `correlationId` is transport `invalid` (`MISSING_CORRELATION_ID` / `INVALID_CORRELATION_ID`) for that item only.
 
