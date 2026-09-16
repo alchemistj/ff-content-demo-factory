@@ -1,0 +1,364 @@
+/**
+ * Frozen d2d-factory-intake/v1 request/receipt contract.
+ *
+ * Canonical producer: companion D2D PR #5 head
+ * `fe5b74f5f1059af2808e61a0b13755ead55999a5`
+ * (`tests/fixtures/d2d-factory-intake-v1.json`,
+ * `src/lib/content-factory/contract.ts`).
+ * Fixture content is unchanged from `00ae71fa`; the producer head
+ * advanced for strict receipt-consumer fixes.
+ *
+ * correlationId = `${sourceBusinessId}::${exportId}::d2d-factory-intake/v1`
+ * d2dBusinessId === sourceBusinessId
+ *
+ * Transport status is separate from factory qualification. Google place
+ * identity is evidence, not the transport key.
+ */
+
+import type { Address, BusinessIdentity, Nap, ProspectSeed } from "../handoff/types.js";
+import type { WorkflowSourceCorrelation, WorkflowStage } from "../workflow/state.js";
+
+export const D2D_FACTORY_INTAKE_VERSION = "d2d-factory-intake/v1" as const;
+
+/** Frozen companion producer head for the copied golden fixture. */
+export const D2D_PR5_HEAD = "fe5b74f5f1059af2808e61a0b13755ead55999a5" as const;
+
+/** SHA-256 of JSON.stringify(parsed copied D2D golden). Drift guard against lookalikes. */
+export const D2D_GOLDEN_FIXTURE_SHA256 =
+  "6de2858a612e7f70a89d8f9588aafe27ab7d98c0c5eb979138eca730f787fa08" as const;
+
+/**
+ * Exact producer facts from D2D PR #5 `tests/fixtures/d2d-factory-intake-v1.json`
+ * at `fe5b74f5`. Additional guard only; the full-object SHA-256 is authoritative.
+ */
+export const D2D_GOLDEN_PRODUCER_FACTS = Object.freeze({
+  notes:
+    "Frozen d2d-factory-intake/v1 request and CF receipt. D2D PR #5 and Content Factory PR #36 must consume this file without translating field names. correlationId is the cross-repo identity. Google place/maps ids are evidence only. qualification.outcome is not a transport status.",
+  exportedAt: "2026-09-16T12:00:00.000Z",
+  location: "Springfield, MO",
+  center: Object.freeze({ lat: 37.20896, lng: -93.2923 }),
+  radiusMiles: 0.25,
+  radiusMeters: 402.336,
+  searchQuery: "business",
+  searchStrings: Object.freeze(["business"]),
+  actor: "compass/crawler-google-places",
+  completeName: "Northline Garage Doors",
+  completeTitle: "Northline Garage Doors",
+  completeCategory: "Garage door service",
+  completePlaceId: "place-1",
+  completeGooglePlaceId: "place-1",
+  completeCid: "cid-northline",
+  completeItemId: "item-9",
+  completeCity: "Mason",
+  completeRegion: "IL",
+  completeCountry: null,
+  completeLocation: "Mason, IL",
+  completePhone: "5550101000",
+  completeRating: 4.6,
+  completeReviewCount: 18,
+  completeCoordinates: Object.freeze({ lat: 37.20896, lng: -93.2923 }),
+  sparseTitle: "No website shop",
+  sparseName: "No website shop",
+  sparseReviewCount: 18,
+  sparseHasPhone: false,
+  completeFactoryProspectId: "factory-northline",
+  completeFactoryRunId: "run-factory-northline",
+  completeFactoryStage: "awaiting_prescription_approval",
+  completeReason: "Factory advanced this raw listing",
+  sparseReasonCode: "INSUFFICIENT_SEED_FACTS",
+});
+
+/** SHA-256 of JSON.stringify of the producer-facts projection from the copied golden. */
+export const D2D_GOLDEN_PRODUCER_FACTS_SHA256 =
+  "0ee7da4dd82695008b273f21674340aa2502ea239a01dde8b7102b5d02ddd77e" as const;
+
+export const D2D_INTAKE_DEFAULT_MAX_BATCH = 40;
+
+export const D2D_TRANSPORT_STATUSES = Object.freeze({
+  RECEIVED: "received",
+  DUPLICATE: "duplicate",
+  INVALID: "invalid",
+  RETRYABLE: "retryable",
+} as const);
+
+export type D2dTransportStatus = (typeof D2D_TRANSPORT_STATUSES)[keyof typeof D2D_TRANSPORT_STATUSES];
+
+/** @deprecated Use D2D_TRANSPORT_STATUSES. Kept only so older imports fail closed at typecheck. */
+export const D2D_INTAKE_STATUSES = D2D_TRANSPORT_STATUSES;
+export type D2dIntakeStatus = D2dTransportStatus;
+
+export const FACTORY_QUALIFICATION_OUTCOMES = Object.freeze({
+  ADVANCED: "advanced",
+  REJECTED: "rejected",
+  HELD: "held",
+  BACKLOG: "backlog",
+} as const);
+
+export type FactoryQualificationOutcome =
+  (typeof FACTORY_QUALIFICATION_OUTCOMES)[keyof typeof FACTORY_QUALIFICATION_OUTCOMES];
+
+export const D2D_INTAKE_REASON_CODES = Object.freeze({
+  AUTH_NOT_CONFIGURED: "AUTH_NOT_CONFIGURED",
+  AUTH_MISSING: "AUTH_MISSING",
+  AUTH_INVALID: "AUTH_INVALID",
+  INVALID_ENVELOPE: "INVALID_ENVELOPE",
+  UNSUPPORTED_VERSION: "UNSUPPORTED_CONTRACT_VERSION",
+  EMPTY_BATCH: "EMPTY_BATCH",
+  BATCH_LIMIT: "BATCH_LIMIT",
+  MALFORMED_BUSINESS: "MALFORMED_BUSINESS",
+  MISSING_STABLE_IDENTITY: "MISSING_STABLE_IDENTITY",
+  MISSING_SOURCE_BUSINESS_ID: "MISSING_SOURCE_BUSINESS_ID",
+  MISSING_D2D_PROSPECT_ID: "MISSING_D2D_PROSPECT_ID",
+  MISSING_BUSINESS_NAME: "MISSING_BUSINESS_NAME",
+  MISSING_CAMPAIGN_ID: "MISSING_CAMPAIGN_ID",
+  MISSING_CAMPAIGN_RUN_ID: "MISSING_CAMPAIGN_RUN_ID",
+  MISSING_EXPORT_ID: "MISSING_EXPORT_ID",
+  INVALID_TIMESTAMP: "INVALID_TIMESTAMP",
+  INHERITED_CONCLUSION: "INHERITED_CONCLUSION",
+  INCOMPLETE_IDENTITY: "INCOMPLETE_IDENTITY",
+  EXCLUDED_CATEGORY: "EXCLUDED_CATEGORY",
+  NOT_SELECTED: "NOT_SELECTED",
+  WEAK_OPPORTUNITY: "WEAK_OPPORTUNITY",
+  SEARCH_MISMATCH: "SEARCH_MISMATCH",
+  INSUFFICIENT_SEED_FACTS: "INSUFFICIENT_SEED_FACTS",
+  MISSING_TRADE: "MISSING_TRADE",
+  MISSING_SERVICE_AREA: "MISSING_SERVICE_AREA",
+  MISSING_NAP_NAME: "MISSING_NAP_NAME",
+  MISSING_ADDRESS_STREET: "MISSING_ADDRESS_STREET",
+  MISSING_ADDRESS_CITY: "MISSING_ADDRESS_CITY",
+  MISSING_ADDRESS_REGION: "MISSING_ADDRESS_REGION",
+  MISSING_ADDRESS_POSTAL_CODE: "MISSING_ADDRESS_POSTAL_CODE",
+  MISSING_ADDRESS_COUNTRY: "MISSING_ADDRESS_COUNTRY",
+  MISSING_PHONE: "MISSING_PHONE",
+  MISSING_WEBSITE: "MISSING_WEBSITE",
+  INVALID_WEBSITE: "INVALID_WEBSITE",
+  EXISTING_FACTORY_RUN: "EXISTING_FACTORY_RUN",
+  EXISTING_QUALIFICATION: "EXISTING_QUALIFICATION",
+  TRANSIENT_FACTORY_FAILURE: "TRANSIENT_FACTORY_FAILURE",
+  FACTORY_ADAPTERS_UNCONFIGURED: "FACTORY_ADAPTERS_UNCONFIGURED",
+  WRITER_BEFORE_GATE_FORBIDDEN: "WRITER_BEFORE_GATE_FORBIDDEN",
+  FACTORY_ADVANCED: "FACTORY_ADVANCED",
+  MISSING_CORRELATION_ID: "MISSING_CORRELATION_ID",
+  INVALID_CORRELATION_ID: "INVALID_CORRELATION_ID",
+} as const);
+
+export type D2dIntakeReasonCode = (typeof D2D_INTAKE_REASON_CODES)[keyof typeof D2D_INTAKE_REASON_CODES];
+
+export const D2D_INTAKE_SHARED_SECRET_ENV = "D2D_INTAKE_SHARED_SECRET" as const;
+export const D2D_INTAKE_TOKEN_ENV = "D2D_INTAKE_TOKEN" as const;
+export const D2D_INTAKE_STATE_DIR_ENV = "D2D_INTAKE_STATE_DIR" as const;
+export const D2D_INTAKE_HOST_ENV = "D2D_INTAKE_HOST" as const;
+export const D2D_INTAKE_PORT_ENV = "D2D_INTAKE_PORT" as const;
+export const D2D_INTAKE_ADAPTERS_MODULE_ENV = "D2D_INTAKE_ADAPTERS_MODULE" as const;
+export const D2D_INTAKE_MAX_BATCH_ENV = "D2D_INTAKE_MAX_BATCH" as const;
+
+export const D2D_INTAKE_HTTP_PATH = "/d2d-factory-intake/v1" as const;
+
+export interface D2dLatLng {
+  readonly lat: number;
+  readonly lng: number;
+}
+
+export interface D2dCampaignContext {
+  readonly location?: string;
+  readonly radiusMiles?: number;
+  readonly radiusMeters?: number;
+  readonly center?: D2dLatLng;
+  readonly search?: {
+    readonly query?: string;
+    readonly searchStrings?: readonly string[];
+    readonly categories?: readonly string[];
+  };
+}
+
+export interface D2dApifyProvenance {
+  readonly provider?: string;
+  readonly actor?: string;
+  readonly runId?: string;
+  readonly datasetId?: string;
+  readonly itemId?: string;
+}
+
+export interface D2dRawAddress {
+  readonly street?: string;
+  readonly city?: string;
+  readonly region?: string;
+  readonly postalCode?: string;
+  readonly country?: string;
+}
+
+export interface D2dRawBusiness {
+  readonly d2dProspectId?: string;
+  readonly sourceBusinessId?: string;
+  readonly campaignBusinessId?: string;
+  readonly d2dBusinessId?: string;
+  readonly placeId?: string;
+  readonly googlePlaceId?: string;
+  readonly cid?: string;
+  readonly mapsUrl?: string;
+  readonly googleMapsUrl?: string;
+  readonly googleUrl?: string;
+  readonly url?: string;
+  readonly name?: string;
+  readonly title?: string;
+  readonly category?: string;
+  readonly categories?: readonly string[];
+  readonly address?: string | D2dRawAddress;
+  readonly location?: string;
+  readonly coordinates?: D2dLatLng;
+  readonly phone?: string;
+  readonly website?: string;
+  readonly websiteUrl?: string;
+  readonly rating?: number;
+  readonly reviewCount?: number;
+  readonly listingReviewCount?: number;
+  readonly apify?: D2dApifyProvenance;
+  readonly correlationId?: string;
+}
+
+export interface D2dIntakeBatch {
+  readonly version: typeof D2D_FACTORY_INTAKE_VERSION;
+  readonly campaignId: string;
+  readonly campaignRunId: string;
+  readonly exportId: string;
+  readonly exportedAt: string;
+  readonly campaign: D2dCampaignContext;
+  readonly provenance?: D2dApifyProvenance;
+  readonly businesses: readonly unknown[];
+}
+
+export interface WebsiteOpportunityEvidence {
+  readonly inspected: boolean;
+  readonly quality: "unknown" | "weak" | "adequate" | "strong";
+  readonly opportunity: "unknown" | "weak" | "strong";
+  readonly searchFit: boolean;
+  readonly source: "listing-evidence";
+  readonly reasons: readonly string[];
+}
+
+export interface NormalizedRawBusiness {
+  readonly d2dProspectId: string;
+  readonly sourceBusinessId: string;
+  readonly campaignBusinessId: string | null;
+  readonly d2dBusinessId: string;
+  readonly placeId: string | null;
+  readonly mapsUrl: string | null;
+  readonly googleUrl: string | null;
+  readonly name: string;
+  readonly category: string | null;
+  readonly categories: readonly string[];
+  readonly location: string | null;
+  readonly address: D2dRawAddress | null;
+  readonly addressText: string | null;
+  readonly coordinates: D2dLatLng | null;
+  readonly phone: string | null;
+  readonly website: string | null;
+  readonly rating: number | null;
+  readonly reviewCount: number | null;
+  readonly apify: D2dApifyProvenance | null;
+  readonly correlationId: string;
+}
+
+export interface FactoryQualification {
+  readonly outcome: FactoryQualificationOutcome;
+  readonly reason: string;
+  readonly reasonCode: D2dIntakeReasonCode;
+  readonly websiteOpportunity?: WebsiteOpportunityEvidence;
+}
+
+export interface D2dBusinessReceipt {
+  readonly version: typeof D2D_FACTORY_INTAKE_VERSION;
+  readonly status: D2dTransportStatus;
+  readonly qualification: FactoryQualification | null;
+  readonly d2dProspectId: string;
+  readonly sourceBusinessId: string;
+  readonly campaignBusinessId: string | null;
+  readonly d2dBusinessId: string;
+  readonly placeId: string | null;
+  readonly campaignId: string;
+  readonly campaignRunId: string;
+  readonly exportId: string;
+  readonly correlationId: string;
+  readonly factoryProspectId?: string;
+  readonly factoryRunId?: string;
+  readonly factoryStage?: WorkflowStage;
+  readonly reason?: string;
+  readonly reasonCode?: D2dIntakeReasonCode;
+}
+
+export interface D2dIntakeBatchReceipt {
+  readonly version: typeof D2D_FACTORY_INTAKE_VERSION;
+  readonly campaignId: string;
+  readonly campaignRunId: string;
+  readonly exportId: string;
+  readonly receipts: readonly D2dBusinessReceipt[];
+}
+
+export interface MappedD2dBusiness {
+  readonly seed: ProspectSeed;
+  readonly correlation: WorkflowSourceCorrelation;
+  readonly business: BusinessIdentity;
+  readonly nap: Nap;
+  readonly address: Address;
+}
+
+export function intakeCorrelationId(input: {
+  readonly sourceBusinessId: string;
+  readonly exportId: string;
+  readonly version?: string;
+}): string {
+  const version = input.version ?? D2D_FACTORY_INTAKE_VERSION;
+  return `${input.sourceBusinessId}::${input.exportId}::${version}`;
+}
+
+export function parseIntakeCorrelationId(presented: string): {
+  readonly sourceBusinessId: string;
+  readonly exportId: string;
+  readonly version: typeof D2D_FACTORY_INTAKE_VERSION;
+} | null {
+  const suffix = `::${D2D_FACTORY_INTAKE_VERSION}`;
+  if (!presented.endsWith(suffix)) return null;
+  const withoutVersion = presented.slice(0, presented.length - suffix.length);
+  const sep = withoutVersion.indexOf("::");
+  if (sep <= 0) return null;
+  const sourceBusinessId = withoutVersion.slice(0, sep);
+  const exportId = withoutVersion.slice(sep + 2);
+  if (!sourceBusinessId || !exportId) return null;
+  if (presented !== intakeCorrelationId({ sourceBusinessId, exportId })) return null;
+  return { sourceBusinessId, exportId, version: D2D_FACTORY_INTAKE_VERSION };
+}
+
+export function campaignSearchTerms(campaign: D2dCampaignContext): readonly string[] {
+  const terms: string[] = [];
+  if (campaign.search?.query?.trim()) terms.push(campaign.search.query.trim());
+  for (const item of campaign.search?.searchStrings ?? []) {
+    if (typeof item === "string" && item.trim()) terms.push(item.trim());
+  }
+  return terms;
+}
+
+export function reconcilableReceiptIdentity(receipt: D2dBusinessReceipt): {
+  readonly version: typeof D2D_FACTORY_INTAKE_VERSION;
+  readonly status: D2dTransportStatus;
+  readonly d2dProspectId: string;
+  readonly sourceBusinessId: string;
+  readonly campaignBusinessId: string | null;
+  readonly d2dBusinessId: string;
+  readonly correlationId: string;
+  readonly campaignId: string;
+  readonly campaignRunId: string;
+  readonly exportId: string;
+} {
+  return {
+    version: receipt.version,
+    status: receipt.status,
+    d2dProspectId: receipt.d2dProspectId,
+    sourceBusinessId: receipt.sourceBusinessId,
+    campaignBusinessId: receipt.campaignBusinessId,
+    d2dBusinessId: receipt.d2dBusinessId,
+    correlationId: receipt.correlationId,
+    campaignId: receipt.campaignId,
+    campaignRunId: receipt.campaignRunId,
+    exportId: receipt.exportId,
+  };
+}

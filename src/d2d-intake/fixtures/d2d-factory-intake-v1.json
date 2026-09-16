@@ -1,0 +1,106 @@
+{
+  "notes": "Frozen d2d-factory-intake/v1 request and CF receipt. D2D PR #5 and Content Factory PR #36 must consume this file without translating field names. correlationId is the cross-repo identity. Google place/maps ids are evidence only. qualification.outcome is not a transport status.",
+  "request": {
+    "version": "d2d-factory-intake/v1",
+    "campaignId": "campaign-1",
+    "campaignRunId": "apify-run-1",
+    "exportId": "export:campaign-1:apify-run-1:d2d-factory-intake/v1",
+    "exportedAt": "2026-09-16T12:00:00.000Z",
+    "campaign": {
+      "center": { "lat": 37.20896, "lng": -93.2923 },
+      "radiusMiles": 0.25,
+      "radiusMeters": 402.336,
+      "location": "Springfield, MO",
+      "search": { "query": "business", "searchStrings": ["business"] }
+    },
+    "provenance": { "provider": "apify", "actor": "compass/crawler-google-places", "runId": "apify-run-1", "datasetId": "dataset-1" },
+    "businesses": [
+      {
+        "d2dProspectId": "cb-1",
+        "sourceBusinessId": "biz-1",
+        "campaignBusinessId": "cb-1",
+        "d2dBusinessId": "biz-1",
+        "correlationId": "biz-1::export:campaign-1:apify-run-1:d2d-factory-intake/v1::d2d-factory-intake/v1",
+        "name": "Northline Garage Doors",
+        "title": "Northline Garage Doors",
+        "placeId": "place-1",
+        "googlePlaceId": "place-1",
+        "cid": "cid-northline",
+        "mapsUrl": "https://maps.example/northline",
+        "category": "Garage door service",
+        "categories": ["Garage door service"],
+        "address": { "street": "18 Harbor Avenue", "city": "Mason", "region": "IL", "postalCode": "60000" },
+        "location": "Mason, IL",
+        "coordinates": { "lat": 37.20896, "lng": -93.2923 },
+        "phone": "5550101000",
+        "website": "https://northline.example/",
+        "rating": 4.6,
+        "reviewCount": 18,
+        "apify": { "provider": "apify", "actor": "compass/crawler-google-places", "runId": "apify-run-1", "datasetId": "dataset-1", "itemId": "item-9" }
+      },
+      {
+        "d2dProspectId": "cb-sparse",
+        "sourceBusinessId": "biz-sparse",
+        "campaignBusinessId": "cb-sparse",
+        "d2dBusinessId": "biz-sparse",
+        "correlationId": "biz-sparse::export:campaign-1:apify-run-1:d2d-factory-intake/v1::d2d-factory-intake/v1",
+        "name": "No website shop",
+        "title": "No website shop",
+        "placeId": "place-1",
+        "googlePlaceId": "place-1",
+        "cid": "cid-northline",
+        "mapsUrl": "https://maps.example/northline",
+        "category": "Garage door service",
+        "categories": ["Garage door service"],
+        "address": { "street": "18 Harbor Avenue", "city": "Mason", "region": "IL", "postalCode": "60000" },
+        "location": "Mason, IL",
+        "coordinates": { "lat": 37.20896, "lng": -93.2923 },
+        "reviewCount": 18,
+        "apify": { "provider": "apify", "actor": "compass/crawler-google-places", "runId": "apify-run-1", "datasetId": "dataset-1", "itemId": "item-9" }
+      }
+    ]
+  },
+  "expectedReceipt": {
+    "version": "d2d-factory-intake/v1",
+    "campaignId": "campaign-1",
+    "campaignRunId": "apify-run-1",
+    "exportId": "export:campaign-1:apify-run-1:d2d-factory-intake/v1",
+    "receipts": [
+      {
+        "version": "d2d-factory-intake/v1",
+        "status": "received",
+        "qualification": { "outcome": "advanced", "reason": "Factory advanced this raw listing", "reasonCode": "FACTORY_ADVANCED" },
+        "d2dProspectId": "cb-1",
+        "sourceBusinessId": "biz-1",
+        "campaignBusinessId": "cb-1",
+        "d2dBusinessId": "biz-1",
+        "placeId": "place-1",
+        "campaignId": "campaign-1",
+        "campaignRunId": "apify-run-1",
+        "exportId": "export:campaign-1:apify-run-1:d2d-factory-intake/v1",
+        "correlationId": "biz-1::export:campaign-1:apify-run-1:d2d-factory-intake/v1::d2d-factory-intake/v1",
+        "factoryProspectId": "factory-northline",
+        "factoryRunId": "run-factory-northline",
+        "factoryStage": "awaiting_prescription_approval",
+        "reason": "Factory advanced this raw listing",
+        "reasonCode": "FACTORY_ADVANCED"
+      },
+      {
+        "version": "d2d-factory-intake/v1",
+        "status": "received",
+        "qualification": { "outcome": "held", "reason": "Missing phone/website; factory will not invent ProspectSeed values", "reasonCode": "INSUFFICIENT_SEED_FACTS" },
+        "d2dProspectId": "cb-sparse",
+        "sourceBusinessId": "biz-sparse",
+        "campaignBusinessId": "cb-sparse",
+        "d2dBusinessId": "biz-sparse",
+        "placeId": "place-1",
+        "campaignId": "campaign-1",
+        "campaignRunId": "apify-run-1",
+        "exportId": "export:campaign-1:apify-run-1:d2d-factory-intake/v1",
+        "correlationId": "biz-sparse::export:campaign-1:apify-run-1:d2d-factory-intake/v1::d2d-factory-intake/v1",
+        "reason": "Missing phone/website; factory will not invent ProspectSeed values",
+        "reasonCode": "INSUFFICIENT_SEED_FACTS"
+      }
+    ]
+  }
+}

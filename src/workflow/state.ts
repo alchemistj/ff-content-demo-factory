@@ -26,6 +26,43 @@ export const WORKFLOW_STAGES = Object.freeze({
 
 export type WorkflowStage = (typeof WORKFLOW_STAGES)[keyof typeof WORKFLOW_STAGES];
 
+export const D2D_SOURCE_KIND = "d2d-factory-intake/v1" as const;
+
+export interface WorkflowSourceCorrelation {
+  readonly kind: typeof D2D_SOURCE_KIND;
+  readonly d2dProspectId: string;
+  readonly sourceBusinessId: string;
+  readonly d2dBusinessId: string;
+  readonly campaignBusinessId?: string;
+  readonly placeId?: string;
+  readonly campaignId: string;
+  readonly campaignRunId: string;
+  readonly exportId: string;
+  readonly exportedAt: string;
+  readonly correlationId: string;
+  readonly campaign?: {
+    readonly location?: string;
+    readonly radiusMiles?: number;
+    readonly radiusMeters?: number;
+    readonly center?: { readonly lat: number; readonly lng: number };
+    readonly search?: {
+      readonly query?: string;
+      readonly searchStrings?: readonly string[];
+      readonly categories?: readonly string[];
+    };
+  };
+  readonly coordinates?: { readonly lat: number; readonly lng: number };
+  readonly apify?: {
+    readonly provider?: string;
+    readonly actor?: string;
+    readonly runId?: string;
+    readonly datasetId?: string;
+    readonly itemId?: string;
+  };
+  readonly factoryQualificationOutcome: "advanced";
+  readonly factoryQualificationReason: string;
+}
+
 export interface WorkflowModels {
   readonly researcher: ModelRef;
   readonly prescriber: ModelRef;
@@ -60,6 +97,9 @@ export interface WorkflowState {
   prescriptionPublication: PublicationReceipt | null;
   humanQaTask: HumanQaTask | null;
   events: WorkflowEvent[];
+  sourceCorrelation?: WorkflowSourceCorrelation;
+  /** All accepted raw D2D observations linked to this run; sourceCorrelation remains the original. */
+  sourceCorrelations?: WorkflowSourceCorrelation[];
 }
 
 export interface HumanQaTask {
@@ -92,6 +132,7 @@ export function createInitialState(input: {
   readonly seed: ProspectSeed;
   readonly models: WorkflowModels;
   readonly now?: Date;
+  readonly sourceCorrelation?: WorkflowSourceCorrelation;
 }): WorkflowState {
   const now = (input.now ?? new Date()).toISOString();
   return {
@@ -115,7 +156,42 @@ export function createInitialState(input: {
     prescriptionPublication: null,
     humanQaTask: null,
     events: [],
+    ...(input.sourceCorrelation
+      ? {
+          sourceCorrelation: cloneState(input.sourceCorrelation),
+          sourceCorrelations: [cloneState(input.sourceCorrelation)],
+        }
+      : {}),
   };
+}
+
+export function recordedSourceCorrelations(state: WorkflowState): WorkflowSourceCorrelation[] {
+  if (state.sourceCorrelations && state.sourceCorrelations.length > 0) {
+    return state.sourceCorrelations;
+  }
+  return state.sourceCorrelation ? [state.sourceCorrelation] : [];
+}
+
+export function hasSourceCorrelation(state: WorkflowState, correlationId: string): boolean {
+  return recordedSourceCorrelations(state).some((item) => item.correlationId === correlationId);
+}
+
+/** Append a later export observation without replacing the original sourceCorrelation. */
+export function linkSourceCorrelation(
+  state: WorkflowState,
+  correlation: WorkflowSourceCorrelation,
+  now?: Date,
+): WorkflowState {
+  const current = recordedSourceCorrelations(state);
+  const next = cloneState(state);
+  if (!next.sourceCorrelation) next.sourceCorrelation = cloneState(correlation);
+  if (current.some((item) => item.correlationId === correlation.correlationId)) {
+    next.sourceCorrelations = current.map((item) => cloneState(item));
+    return next;
+  }
+  next.sourceCorrelations = [...current.map((item) => cloneState(item)), cloneState(correlation)];
+  next.updatedAt = (now ?? new Date()).toISOString();
+  return next;
 }
 
 export function validateWorkflowState(state: WorkflowState): WorkflowState {

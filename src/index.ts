@@ -76,3 +76,29 @@ export {
 } from "./workflow/index.js";
 
 export { createGoogleDocsPublisher } from "./google-docs/publisher-adapter.js";
+
+export {
+  D2D_FACTORY_INTAKE_VERSION,
+  D2D_GOLDEN_FIXTURE_SHA256,
+  D2D_GOLDEN_PRODUCER_FACTS,
+  D2D_GOLDEN_PRODUCER_FACTS_SHA256,
+  D2D_PR5_HEAD,
+  D2D_INTAKE_HTTP_PATH,
+  D2D_INTAKE_SHARED_SECRET_ENV,
+  D2D_TRANSPORT_STATUSES,
+  FACTORY_QUALIFICATION_OUTCOMES,
+  acceptD2dIntake,
+  handleD2dIntakeRequest,
+  intakeCorrelationId,
+  mapAdvancedBusinessToSeed,
+  normalizeRawBusiness,
+  parseD2dIntakeBatch,
+  type D2dIntakeBatch,
+  type D2dIntakeBatchReceipt,
+  type D2dBusinessReceipt,
+} from "./d2d-intake/index.js";
+
+export {
+  createFactoryQualifier,
+  FORBIDDEN_CONCLUSION_FIELDS,
+} from "./factory/index.js";
