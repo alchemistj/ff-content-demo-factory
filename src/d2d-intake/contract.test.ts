@@ -1,13 +1,20 @@
 import assert from "node:assert/strict";
+import { createHash } from "node:crypto";
+import { readFileSync } from "node:fs";
+import { dirname, join } from "node:path";
+import { fileURLToPath } from "node:url";
 import test from "node:test";
 import { acceptD2dIntake } from "./accept.js";
 import { D2dIntakeEnvelopeError } from "./errors.js";
 import { createMemoryIntakeRegistry } from "./registry.js";
 import {
   D2D_FACTORY_INTAKE_VERSION,
+  D2D_GOLDEN_FIXTURE_SHA256,
   D2D_INTAKE_REASON_CODES,
+  D2D_PR5_HEAD,
   D2D_TRANSPORT_STATUSES,
   FACTORY_QUALIFICATION_OUTCOMES,
+  intakeCorrelationId,
   reconcilableReceiptIdentity,
 } from "./types.js";
 import {
@@ -20,7 +27,60 @@ import { WORKFLOW_STAGES } from "../workflow/state.js";
 import { parseD2dIntakeBatch, normalizeRawBusiness } from "./normalize.js";
 
 const SECRET = "test-d2d-intake-secret";
-const D2D_PR5_HEAD = "00ae71fa67eede3674834e5ad4d81e79e951e395";
+const GOLDEN_PATH = join(dirname(fileURLToPath(import.meta.url)), "fixtures/d2d-factory-intake-v1.json");
+const CANONICAL_EXPORT_ID = "export:campaign-1:apify-run-1:d2d-factory-intake/v1";
+const CANONICAL_BIZ1_CORRELATION = intakeCorrelationId({
+  sourceBusinessId: "biz-1",
+  exportId: CANONICAL_EXPORT_ID,
+});
+const CANONICAL_SPARSE_CORRELATION = intakeCorrelationId({
+  sourceBusinessId: "biz-sparse",
+  exportId: CANONICAL_EXPORT_ID,
+});
+
+function loadGoldenFileObject(): ReturnType<typeof loadD2dFactoryIntakeV1Golden> {
+  return JSON.parse(readFileSync(GOLDEN_PATH, "utf8")) as ReturnType<typeof loadD2dFactoryIntakeV1Golden>;
+}
+
+test("copied D2D golden is the frozen producer fixture, not a lookalike", () => {
+  const fromDisk = loadGoldenFileObject();
+  const golden = loadD2dFactoryIntakeV1Golden();
+  assert.deepEqual(golden, fromDisk);
+  assert.deepEqual(golden.request, fromDisk.request);
+  assert.deepEqual(golden.expectedReceipt, fromDisk.expectedReceipt);
+  const digest = createHash("sha256").update(JSON.stringify(fromDisk)).digest("hex");
+  assert.equal(digest, D2D_GOLDEN_FIXTURE_SHA256);
+
+  const request = golden.request as {
+    version: string;
+    campaignId: string;
+    campaignRunId: string;
+    exportId: string;
+    campaign: { location: string; center: { lat: number; lng: number } };
+    businesses: Array<Record<string, unknown>>;
+  };
+  assert.equal(request.version, D2D_FACTORY_INTAKE_VERSION);
+  assert.equal(request.campaignId, "campaign-1");
+  assert.equal(request.campaignRunId, "apify-run-1");
+  assert.equal(request.exportId, CANONICAL_EXPORT_ID);
+  assert.equal(request.campaign.location, "Springfield, MO");
+  assert.notEqual(request.campaign.location, "Springfield, IL");
+  assert.equal(request.campaignRunId, "apify-run-1");
+  assert.notEqual(request.exportId, "export-1");
+  const complete = request.businesses[0]!;
+  const sparse = request.businesses[1]!;
+  assert.equal(complete.campaignBusinessId, "cb-1");
+  assert.equal(complete.sourceBusinessId, "biz-1");
+  assert.equal(complete.d2dBusinessId, "biz-1");
+  assert.equal(complete.d2dProspectId, "cb-1");
+  assert.equal(sparse.campaignBusinessId, "cb-sparse");
+  assert.equal(sparse.sourceBusinessId, "biz-sparse");
+  assert.equal(sparse.d2dBusinessId, "biz-sparse");
+  assert.equal(complete.correlationId, CANONICAL_BIZ1_CORRELATION);
+  assert.equal(sparse.correlationId, CANONICAL_SPARSE_CORRELATION);
+  assert.notEqual(complete.sourceBusinessId, "src-1");
+  assert.notEqual(sparse.sourceBusinessId, "src-sparse");
+});
 
 test("golden D2D PR #5 two-business intake v1 request is accepted directly and receipts are reconcilable", async () => {
   const golden = loadD2dFactoryIntakeV1Golden();
@@ -33,11 +93,14 @@ test("golden D2D PR #5 two-business intake v1 request is accepted directly and r
   const complete = businesses[0]!;
   const sparse = businesses[1]!;
   assert.equal(complete.campaignBusinessId, "cb-1");
+  assert.equal(complete.sourceBusinessId, "biz-1");
+  assert.equal(complete.d2dBusinessId, "biz-1");
   assert.equal(sparse.campaignBusinessId, "cb-sparse");
+  assert.equal(sparse.sourceBusinessId, "biz-sparse");
   assert.equal(complete.d2dBusinessId, complete.sourceBusinessId);
   assert.equal(sparse.d2dBusinessId, sparse.sourceBusinessId);
-  assert.equal(typeof complete.correlationId, "string");
-  assert.equal(typeof sparse.correlationId, "string");
+  assert.equal(complete.correlationId, CANONICAL_BIZ1_CORRELATION);
+  assert.equal(sparse.correlationId, CANONICAL_SPARSE_CORRELATION);
   assert.equal(typeof complete.title, "string");
   assert.equal(typeof complete.googlePlaceId, "string");
   assert.equal(typeof complete.cid, "string");
@@ -48,6 +111,9 @@ test("golden D2D PR #5 two-business intake v1 request is accepted directly and r
   assert.equal("provenance" in complete, false);
 
   const parsed = parseD2dIntakeBatch(request);
+  assert.equal(parsed.campaignId, "campaign-1");
+  assert.equal(parsed.campaignRunId, "apify-run-1");
+  assert.equal(parsed.exportId, CANONICAL_EXPORT_ID);
   const normalizedComplete = normalizeRawBusiness(complete, {
     ...(parsed.provenance ? { provenance: parsed.provenance } : {}),
     exportId: parsed.exportId,
@@ -71,6 +137,7 @@ test("golden D2D PR #5 two-business intake v1 request is accepted directly and r
   assert.equal(normalizedSparse.record.rating, null);
   assert.equal(normalizedComplete.record.coordinates?.lat, (complete.coordinates as { lat: number }).lat);
   assert.equal(normalizedComplete.record.apify?.runId, (complete.apify as { runId: string }).runId);
+  assert.equal(normalizedComplete.record.apify?.runId, "apify-run-1");
 
   const adapters = createIntakeAdapters();
   const qualifier = countingQualifier();
@@ -84,6 +151,9 @@ test("golden D2D PR #5 two-business intake v1 request is accepted directly and r
   });
   assert.equal(result.receipts.length, 2);
   assert.equal(golden.expectedReceipt.receipts.length, 2);
+  assert.equal(result.campaignId, golden.expectedReceipt.campaignId);
+  assert.equal(result.campaignRunId, golden.expectedReceipt.campaignRunId);
+  assert.equal(result.exportId, golden.expectedReceipt.exportId);
 
   for (const [index, expected] of golden.expectedReceipt.receipts.entries()) {
     const receipt = result.receipts[index]!;
@@ -123,7 +193,9 @@ test("mismatched request correlationId is per-item invalid against canonical D2D
     businesses: Array<Record<string, unknown>>;
     exportId: string;
   };
+  assert.equal(request.exportId, CANONICAL_EXPORT_ID);
   const complete = request.businesses[0]!;
+  assert.equal(complete.sourceBusinessId, "biz-1");
   const tampered = `${complete.sourceBusinessId}::${request.exportId}::tampered`;
   complete.correlationId = tampered;
   const adapters = createIntakeAdapters();
@@ -140,11 +212,13 @@ test("mismatched request correlationId is per-item invalid against canonical D2D
   assert.equal(receipt.status, D2D_TRANSPORT_STATUSES.INVALID);
   assert.equal(receipt.reasonCode, D2D_INTAKE_REASON_CODES.INVALID_CORRELATION_ID);
   assert.equal(receipt.qualification, null);
-  assert.equal(receipt.sourceBusinessId, "src-1");
+  assert.equal(receipt.sourceBusinessId, "biz-1");
   assert.equal(receipt.campaignBusinessId, "cb-1");
+  assert.equal(receipt.exportId, CANONICAL_EXPORT_ID);
   assert.equal(receipt.correlationId, tampered);
-  assert.notEqual(receipt.correlationId, "src-1::export-1::d2d-factory-intake/v1");
+  assert.notEqual(receipt.correlationId, CANONICAL_BIZ1_CORRELATION);
   assert.equal(result.receipts[1]?.status, D2D_TRANSPORT_STATUSES.RECEIVED);
+  assert.equal(result.receipts[1]?.sourceBusinessId, "biz-sparse");
   assert.equal(result.receipts[1]?.qualification?.outcome, FACTORY_QUALIFICATION_OUTCOMES.HELD);
   assert.equal(qualifier.calls, 1);
   assert.equal(adapters.stats.researchCalls, 0);
@@ -183,6 +257,7 @@ test("stale d2d-factory-raw-export aliases are not remapped", () => {
   assert.equal(aliasedCoords.record.coordinates, null);
 });
 
-test("D2D PR #5 head referenced by this frozen contract is 00ae71fa", () => {
-  assert.equal(D2D_PR5_HEAD, "00ae71fa67eede3674834e5ad4d81e79e951e395");
+test("D2D PR #5 head referenced by this frozen contract is fe5b74f5", () => {
+  assert.equal(D2D_PR5_HEAD, "fe5b74f5f1059af2808e61a0b13755ead55999a5");
+  assert.notEqual(D2D_PR5_HEAD, "00ae71fa67eede3674834e5ad4d81e79e951e395");
 });

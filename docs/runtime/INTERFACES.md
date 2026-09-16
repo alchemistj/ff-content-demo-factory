@@ -85,7 +85,7 @@ No additional human gates. No model-as-editor gate. Prescription publication is 
 
 ## D2D raw geographic intake
 
-Versioned contract: `d2d-factory-intake/v1`, frozen against companion D2D PR #5 head `00ae71fa67eede3674834e5ad4d81e79e951e395`. Types: `src/d2d-intake/index.ts` (package export `ff-content-demo-factory/d2d-intake`). Factory qualifier: `src/factory/qualify.ts`. Human docs: `docs/d2d-intake/CONTRACT.md`.
+Versioned contract: `d2d-factory-intake/v1`, frozen against companion D2D PR #5 head `fe5b74f5f1059af2808e61a0b13755ead55999a5`. Types: `src/d2d-intake/index.ts` (package export `ff-content-demo-factory/d2d-intake`). Factory qualifier: `src/factory/qualify.ts`. Human docs: `docs/d2d-intake/CONTRACT.md`.
 
 D2D sends a **raw/normalized** Google Business / Apify cohort (`d2d-factory-intake/v1`). Content Factory is the only owner of keep/reject/advance. Intake calls the factory qualifier once per new `sourceBusinessId` + export identity. Qualification uses candidate-bench + website/opportunity evidence and is not `ProspectSeed` completeness. Only an **advanced** business is mapped onto the existing `ProspectSeed` and `runFactory()`. Intake stops at Human Gate 1 (`awaiting_prescription_approval`). It does not invent NAP/identity, does not start the writer, and does not publish website copy.
 

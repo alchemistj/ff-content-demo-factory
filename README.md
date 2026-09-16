@@ -33,7 +33,7 @@ npm run test:all
 
 Lane interfaces live in [`docs/runtime/INTERFACES.md`](docs/runtime/INTERFACES.md).
 
-Raw D2D geographic listings enter through the frozen `d2d-factory-intake/v1` contract (companion D2D PR #5 head `00ae71fa67eede3674834e5ad4d81e79e951e395`). Content Factory owns keep/reject/advance via candidate-bench + website/opportunity evidence. Only factory-selected businesses map to the existing `ProspectSeed`, run research + prescription, and stop at Human Gate 1. Contract and operator setup (no secrets): [`docs/d2d-intake/CONTRACT.md`](docs/d2d-intake/CONTRACT.md), [`docs/d2d-intake/OPERATOR_SETUP.md`](docs/d2d-intake/OPERATOR_SETUP.md).
+Raw D2D geographic listings enter through the frozen `d2d-factory-intake/v1` contract (companion D2D PR #5 head `fe5b74f5f1059af2808e61a0b13755ead55999a5`). Content Factory owns keep/reject/advance via candidate-bench + website/opportunity evidence. Only factory-selected businesses map to the existing `ProspectSeed`, run research + prescription, and stop at Human Gate 1. Contract and operator setup (no secrets): [`docs/d2d-intake/CONTRACT.md`](docs/d2d-intake/CONTRACT.md), [`docs/d2d-intake/OPERATOR_SETUP.md`](docs/d2d-intake/OPERATOR_SETUP.md).
 
 ## Canonical writer guides
 

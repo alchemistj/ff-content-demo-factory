@@ -2,9 +2,11 @@
  * Frozen d2d-factory-intake/v1 request/receipt contract.
  *
  * Canonical producer: companion D2D PR #5 head
- * `00ae71fa67eede3674834e5ad4d81e79e951e395`
+ * `fe5b74f5f1059af2808e61a0b13755ead55999a5`
  * (`tests/fixtures/d2d-factory-intake-v1.json`,
  * `src/lib/content-factory/contract.ts`).
+ * Fixture content is unchanged from `00ae71fa`; the producer head
+ * advanced for strict receipt-consumer fixes.
  *
  * correlationId = `${sourceBusinessId}::${exportId}::d2d-factory-intake/v1`
  * d2dBusinessId === sourceBusinessId
@@ -17,6 +19,13 @@ import type { Address, BusinessIdentity, Nap, ProspectSeed } from "../handoff/ty
 import type { WorkflowSourceCorrelation, WorkflowStage } from "../workflow/state.js";
 
 export const D2D_FACTORY_INTAKE_VERSION = "d2d-factory-intake/v1" as const;
+
+/** Frozen companion producer head for the copied golden fixture. */
+export const D2D_PR5_HEAD = "fe5b74f5f1059af2808e61a0b13755ead55999a5" as const;
+
+/** SHA-256 of JSON.stringify(parsed copied D2D golden). Drift guard against lookalikes. */
+export const D2D_GOLDEN_FIXTURE_SHA256 =
+  "e96a3196e9bde010d28c17db1035520d1e1081d58046bbeb495f95ebb7e9cc18" as const;
 
 export const D2D_INTAKE_DEFAULT_MAX_BATCH = 40;
 
