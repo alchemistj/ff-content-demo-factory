@@ -4,7 +4,6 @@ import {
   D2D_FACTORY_INTAKE_VERSION,
   D2D_INTAKE_REASON_CODES,
   campaignSearchTerms,
-  intakeCorrelationId,
   type D2dCampaignContext,
   type D2dIntakeReasonCode,
   type MappedD2dBusiness,
@@ -79,10 +78,6 @@ export function mapAdvancedBusinessToSeed(
     website: record.website,
   };
   const prospectId = factoryProspectId(record);
-  const correlationId = intakeCorrelationId({
-    sourceBusinessId: record.sourceBusinessId,
-    exportId: envelope.exportId,
-  });
   const correlation: WorkflowSourceCorrelation = {
     kind: D2D_SOURCE_KIND,
     d2dProspectId: record.d2dProspectId,
@@ -92,7 +87,7 @@ export function mapAdvancedBusinessToSeed(
     campaignRunId: envelope.campaignRunId,
     exportId: envelope.exportId,
     exportedAt: envelope.exportedAt,
-    correlationId,
+    correlationId: record.correlationId,
     campaign: envelope.campaign,
     factoryQualificationOutcome: "advanced",
     factoryQualificationReason: "Advanced by Content Factory after candidate-bench + website/opportunity selection.",
@@ -134,6 +129,7 @@ export function composeRawSourceNotes(
     `d2dProspectId=${record.d2dProspectId}`,
     `sourceBusinessId=${record.sourceBusinessId}`,
     `d2dBusinessId=${record.d2dBusinessId}`,
+    `correlationId=${record.correlationId}`,
     record.campaignBusinessId ? `campaignBusinessId=${record.campaignBusinessId}` : null,
     record.placeId ? `placeId=${record.placeId}` : null,
     record.mapsUrl ? `mapsUrl=${record.mapsUrl}` : null,

@@ -40,6 +40,10 @@ export function loadD2dFactoryIntakeV1Golden(): D2dGoldenContractFixture {
   return JSON.parse(readFileSync(join(FIXTURE_DIR, "fixtures/d2d-factory-intake-v1.json"), "utf8")) as D2dGoldenContractFixture;
 }
 
+export const NORTHLINE_EXPORT_ID = "export-2026-09-15-northline";
+export const NORTHLINE_CORRELATION_ID = "src-northline::export-2026-09-15-northline::d2d-factory-intake/v1";
+export const SPARSE_CORRELATION_ID = "src-sparse::export-2026-09-15-northline::d2d-factory-intake/v1";
+
 export const NORTHLINE_CAMPAIGN: D2dCampaignContext = {
   location: "Lake County",
   radiusMiles: 5,
@@ -53,6 +57,7 @@ export const NORTHLINE_RAW: D2dRawBusiness = {
   sourceBusinessId: "src-northline",
   campaignBusinessId: "campaign-biz-northline",
   d2dBusinessId: "src-northline",
+  correlationId: "src-northline::export-2026-09-15-northline::d2d-factory-intake/v1",
   name: "Northline Garage Doors",
   category: "garage door service",
   categories: ["garage door service"],
@@ -86,6 +91,7 @@ export const SEEDABLE_HVAC_RAW: D2dRawBusiness = {
   sourceBusinessId: "src-harbor-hvac",
   campaignBusinessId: "campaign-biz-harbor-hvac",
   d2dBusinessId: "src-harbor-hvac",
+  correlationId: "src-harbor-hvac::export-2026-09-15-northline::d2d-factory-intake/v1",
   name: "Harbor Climate HVAC",
   category: "hvac contractor",
   categories: ["hvac contractor", "heating and cooling"],
@@ -177,6 +183,16 @@ export function rawWith(overrides: Partial<D2dRawBusiness> & Record<string, unkn
   const merged: Record<string, unknown> = { ...NORTHLINE_RAW, ...overrides };
   if (Object.prototype.hasOwnProperty.call(overrides, "sourceBusinessId") && !Object.prototype.hasOwnProperty.call(overrides, "d2dBusinessId")) {
     merged.d2dBusinessId = overrides.sourceBusinessId;
+  }
+  if (
+    Object.prototype.hasOwnProperty.call(overrides, "sourceBusinessId") &&
+    !Object.prototype.hasOwnProperty.call(overrides, "correlationId")
+  ) {
+    const sourceBusinessId = overrides.sourceBusinessId;
+    merged.correlationId =
+      typeof sourceBusinessId === "string" && sourceBusinessId
+        ? `${sourceBusinessId}::${NORTHLINE_EXPORT_ID}::${D2D_FACTORY_INTAKE_VERSION}`
+        : "";
   }
   return merged;
 }

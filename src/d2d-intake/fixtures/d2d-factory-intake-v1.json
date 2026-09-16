@@ -27,6 +27,7 @@
         "sourceBusinessId": "src-northline",
         "campaignBusinessId": "campaign-biz-northline",
         "d2dBusinessId": "src-northline",
+        "correlationId": "src-northline::export-2026-09-15-northline::d2d-factory-intake/v1",
         "name": "Northline Garage Doors",
         "category": "garage door service",
         "categories": ["garage door service"],
@@ -53,6 +54,36 @@
           "datasetId": "ds-northline",
           "itemId": "item-northline"
         }
+      },
+      {
+        "d2dProspectId": "d2d-prospect-sparse",
+        "sourceBusinessId": "src-sparse",
+        "campaignBusinessId": "campaign-biz-sparse",
+        "d2dBusinessId": "src-sparse",
+        "correlationId": "src-sparse::export-2026-09-15-northline::d2d-factory-intake/v1",
+        "name": "Harbor Overhead Doors",
+        "category": "garage door service",
+        "categories": ["garage door service"],
+        "address": {
+          "street": "22 Lake Street",
+          "city": "Mason",
+          "region": "IL",
+          "postalCode": "60000",
+          "country": "US"
+        },
+        "location": "Lake County",
+        "rating": 4.2,
+        "reviewCount": 11,
+        "placeId": "ChIJ-sparse",
+        "mapsUrl": "https://maps.example/sparse",
+        "coordinates": { "lat": 41.903, "lng": -87.811 },
+        "apify": {
+          "provider": "apify",
+          "actor": "compass~crawler-google-places",
+          "runId": "apify-run-northline",
+          "datasetId": "ds-northline",
+          "itemId": "item-sparse"
+        }
       }
     ]
   },
@@ -72,7 +103,21 @@
         "correlationId": "src-northline::export-2026-09-15-northline::d2d-factory-intake/v1",
         "campaignId": "campaign-lake-county",
         "campaignRunId": "campaign-run-2026-09-15",
-        "exportId": "export-2026-09-15-northline"
+        "exportId": "export-2026-09-15-northline",
+        "qualification": { "outcome": "advanced" }
+      },
+      {
+        "version": "d2d-factory-intake/v1",
+        "status": "received",
+        "d2dProspectId": "d2d-prospect-sparse",
+        "sourceBusinessId": "src-sparse",
+        "campaignBusinessId": "campaign-biz-sparse",
+        "d2dBusinessId": "src-sparse",
+        "correlationId": "src-sparse::export-2026-09-15-northline::d2d-factory-intake/v1",
+        "campaignId": "campaign-lake-county",
+        "campaignRunId": "campaign-run-2026-09-15",
+        "exportId": "export-2026-09-15-northline",
+        "qualification": { "outcome": "held" }
       }
     ]
   }

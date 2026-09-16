@@ -14,6 +14,7 @@ export {
   FACTORY_QUALIFICATION_OUTCOMES,
   campaignSearchTerms,
   intakeCorrelationId,
+  parseIntakeCorrelationId,
   reconcilableReceiptIdentity,
   type D2dBusinessReceipt,
   type D2dCampaignContext,

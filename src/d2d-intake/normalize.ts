@@ -4,6 +4,8 @@ import {
   D2D_FACTORY_INTAKE_VERSION,
   D2D_INTAKE_DEFAULT_MAX_BATCH,
   D2D_INTAKE_REASON_CODES,
+  intakeCorrelationId,
+  parseIntakeCorrelationId,
   type D2dApifyProvenance,
   type D2dCampaignContext,
   type D2dIntakeBatch,
@@ -26,6 +28,7 @@ export interface NormalizeInvalid {
   readonly d2dProspectId: string;
   readonly sourceBusinessId: string;
   readonly d2dBusinessId: string;
+  readonly correlationId: string;
   readonly reasonCode: (typeof D2D_INTAKE_REASON_CODES)[keyof typeof D2D_INTAKE_REASON_CODES];
   readonly reason: string;
 }
@@ -91,10 +94,16 @@ export function parseD2dIntakeBatch(input: unknown): D2dIntakeBatch {
   };
 }
 
-export function normalizeRawBusiness(input: unknown, envelopeProvenance?: D2dApifyProvenance): NormalizeRawResult {
+export interface NormalizeBusinessEnvelope {
+  readonly provenance?: D2dApifyProvenance;
+  readonly exportId?: string;
+}
+
+export function normalizeRawBusiness(input: unknown, envelope: NormalizeBusinessEnvelope = {}): NormalizeRawResult {
   if (!isRecord(input)) {
     return invalid("", "", D2D_INTAKE_REASON_CODES.MALFORMED_BUSINESS, "Business entry must be an object");
   }
+  const presentedCorrelationId = firstTrimmed(input.correlationId) ?? "";
   const forbidden = findForbiddenConclusion(input);
   if (forbidden) {
     const d2dProspectId = firstTrimmed(input.d2dProspectId) ?? "";
@@ -104,6 +113,7 @@ export function normalizeRawBusiness(input: unknown, envelopeProvenance?: D2dApi
       sourceBusinessId,
       D2D_INTAKE_REASON_CODES.INHERITED_CONCLUSION,
       `Inherited conclusion field at ${forbidden} is not Content Factory qualification authority`,
+      presentedCorrelationId,
     );
   }
   const d2dProspectId = firstTrimmed(input.d2dProspectId);
@@ -114,6 +124,7 @@ export function normalizeRawBusiness(input: unknown, envelopeProvenance?: D2dApi
       "",
       D2D_INTAKE_REASON_CODES.MISSING_SOURCE_BUSINESS_ID,
       "Raw listing is missing sourceBusinessId; Google place identity is not a substitute transport key",
+      presentedCorrelationId,
     );
   }
   if (!d2dProspectId) {
@@ -122,6 +133,7 @@ export function normalizeRawBusiness(input: unknown, envelopeProvenance?: D2dApi
       sourceBusinessId,
       D2D_INTAKE_REASON_CODES.MISSING_D2D_PROSPECT_ID,
       "Raw listing is missing d2dProspectId; Content Factory will not invent a D2D prospect id",
+      presentedCorrelationId,
     );
   }
   const presentedBusinessId = firstTrimmed(input.d2dBusinessId);
@@ -131,6 +143,36 @@ export function normalizeRawBusiness(input: unknown, envelopeProvenance?: D2dApi
       sourceBusinessId,
       D2D_INTAKE_REASON_CODES.MALFORMED_BUSINESS,
       "d2dBusinessId must equal sourceBusinessId",
+      presentedCorrelationId,
+    );
+  }
+  if (!presentedCorrelationId) {
+    return invalid(
+      d2dProspectId,
+      sourceBusinessId,
+      D2D_INTAKE_REASON_CODES.MISSING_CORRELATION_ID,
+      "Raw listing is missing correlationId; Content Factory will not invent or repair D2D correlation identity",
+    );
+  }
+  const parsedCorrelation = parseIntakeCorrelationId(presentedCorrelationId);
+  const expectedCorrelation = envelope.exportId
+    ? intakeCorrelationId({ sourceBusinessId, exportId: envelope.exportId })
+    : parsedCorrelation && parsedCorrelation.sourceBusinessId === sourceBusinessId
+      ? presentedCorrelationId
+      : null;
+  if (
+    !parsedCorrelation ||
+    parsedCorrelation.sourceBusinessId !== sourceBusinessId ||
+    (envelope.exportId && presentedCorrelationId !== expectedCorrelation)
+  ) {
+    return invalid(
+      d2dProspectId,
+      sourceBusinessId,
+      D2D_INTAKE_REASON_CODES.INVALID_CORRELATION_ID,
+      envelope.exportId
+        ? `correlationId must equal ${intakeCorrelationId({ sourceBusinessId, exportId: envelope.exportId })}; presented value was not repaired`
+        : `correlationId must equal ${sourceBusinessId}::<exportId>::${D2D_FACTORY_INTAKE_VERSION}; presented value was not repaired`,
+      presentedCorrelationId,
     );
   }
   const name = firstTrimmed(input.name, input.title);
@@ -140,9 +182,10 @@ export function normalizeRawBusiness(input: unknown, envelopeProvenance?: D2dApi
       sourceBusinessId,
       D2D_INTAKE_REASON_CODES.MISSING_BUSINESS_NAME,
       "Raw listing is missing name/title; a name was not invented",
+      presentedCorrelationId,
     );
   }
-  const apify = isRecord(input.apify) ? (input.apify as D2dApifyProvenance) : envelopeProvenance ?? null;
+  const apify = isRecord(input.apify) ? (input.apify as D2dApifyProvenance) : envelope.provenance ?? null;
   const placeId = firstTrimmed(input.placeId, input.googlePlaceId, input.cid) ?? null;
   const mapsUrl = firstTrimmed(input.mapsUrl, input.googleMapsUrl, input.googleUrl, input.url) ?? null;
   const categories = Array.isArray(input.categories)
@@ -184,6 +227,7 @@ export function normalizeRawBusiness(input: unknown, envelopeProvenance?: D2dApi
       rating,
       reviewCount,
       apify,
+      correlationId: presentedCorrelationId,
     },
   };
 }
@@ -277,12 +321,14 @@ function invalid(
   sourceBusinessId: string,
   reasonCode: NormalizeInvalid["reasonCode"],
   reason: string,
+  correlationId = "",
 ): NormalizeInvalid {
   return {
     status: "invalid",
     d2dProspectId,
     sourceBusinessId,
     d2dBusinessId: sourceBusinessId || d2dProspectId,
+    correlationId,
     reasonCode,
     reason,
   };

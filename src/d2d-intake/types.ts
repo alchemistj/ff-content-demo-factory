@@ -84,6 +84,8 @@ export const D2D_INTAKE_REASON_CODES = Object.freeze({
   FACTORY_ADAPTERS_UNCONFIGURED: "FACTORY_ADAPTERS_UNCONFIGURED",
   WRITER_BEFORE_GATE_FORBIDDEN: "WRITER_BEFORE_GATE_FORBIDDEN",
   FACTORY_ADVANCED: "FACTORY_ADVANCED",
+  MISSING_CORRELATION_ID: "MISSING_CORRELATION_ID",
+  INVALID_CORRELATION_ID: "INVALID_CORRELATION_ID",
 } as const);
 
 export type D2dIntakeReasonCode = (typeof D2D_INTAKE_REASON_CODES)[keyof typeof D2D_INTAKE_REASON_CODES];
@@ -157,6 +159,7 @@ export interface D2dRawBusiness {
   readonly reviewCount?: number;
   readonly listingReviewCount?: number;
   readonly apify?: D2dApifyProvenance;
+  readonly correlationId?: string;
 }
 
 export interface D2dIntakeBatch {
@@ -199,6 +202,7 @@ export interface NormalizedRawBusiness {
   readonly rating: number | null;
   readonly reviewCount: number | null;
   readonly apify: D2dApifyProvenance | null;
+  readonly correlationId: string;
 }
 
 export interface FactoryQualification {
@@ -251,6 +255,23 @@ export function intakeCorrelationId(input: {
 }): string {
   const version = input.version ?? D2D_FACTORY_INTAKE_VERSION;
   return `${input.sourceBusinessId}::${input.exportId}::${version}`;
+}
+
+export function parseIntakeCorrelationId(presented: string): {
+  readonly sourceBusinessId: string;
+  readonly exportId: string;
+  readonly version: typeof D2D_FACTORY_INTAKE_VERSION;
+} | null {
+  const suffix = `::${D2D_FACTORY_INTAKE_VERSION}`;
+  if (!presented.endsWith(suffix)) return null;
+  const withoutVersion = presented.slice(0, presented.length - suffix.length);
+  const sep = withoutVersion.indexOf("::");
+  if (sep <= 0) return null;
+  const sourceBusinessId = withoutVersion.slice(0, sep);
+  const exportId = withoutVersion.slice(sep + 2);
+  if (!sourceBusinessId || !exportId) return null;
+  if (presented !== intakeCorrelationId({ sourceBusinessId, exportId })) return null;
+  return { sourceBusinessId, exportId, version: D2D_FACTORY_INTAKE_VERSION };
 }
 
 export function campaignSearchTerms(campaign: D2dCampaignContext): readonly string[] {
