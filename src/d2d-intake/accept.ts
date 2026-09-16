@@ -106,7 +106,7 @@ async function acceptOneBusiness(
       {
         d2dProspectId: normalized.d2dProspectId,
         sourceBusinessId: normalized.sourceBusinessId,
-        campaignBusinessId: null,
+        campaignBusinessId: normalized.campaignBusinessId,
         d2dBusinessId: normalized.d2dBusinessId,
         placeId: null,
         correlationId: normalized.correlationId,

@@ -11,13 +11,10 @@ import {
   reconcilableReceiptIdentity,
 } from "./types.js";
 import {
-  NORTHLINE_CORRELATION_ID,
   NORTHLINE_RAW,
   countingQualifier,
   createIntakeAdapters,
   loadD2dFactoryIntakeV1Golden,
-  northlineBatch,
-  rawWith,
 } from "./fixture.js";
 import { WORKFLOW_STAGES } from "../workflow/state.js";
 import { parseD2dIntakeBatch, normalizeRawBusiness } from "./normalize.js";
@@ -35,12 +32,18 @@ test("golden D2D PR #5 two-business intake v1 request is accepted directly and r
   assert.equal(businesses.length, 2);
   const complete = businesses[0]!;
   const sparse = businesses[1]!;
-  assert.equal(typeof complete.correlationId, "string");
-  assert.equal(typeof sparse.correlationId, "string");
+  assert.equal(complete.campaignBusinessId, "cb-1");
+  assert.equal(sparse.campaignBusinessId, "cb-sparse");
   assert.equal(complete.d2dBusinessId, complete.sourceBusinessId);
   assert.equal(sparse.d2dBusinessId, sparse.sourceBusinessId);
-  assert.equal("phone" in sparse && Boolean(sparse.phone), false);
-  assert.equal("website" in sparse && Boolean(sparse.website), false);
+  assert.equal(typeof complete.correlationId, "string");
+  assert.equal(typeof sparse.correlationId, "string");
+  assert.equal(typeof complete.title, "string");
+  assert.equal(typeof complete.googlePlaceId, "string");
+  assert.equal(typeof complete.cid, "string");
+  assert.equal("phone" in sparse, false);
+  assert.equal("website" in sparse, false);
+  assert.equal("rating" in sparse, false);
   assert.equal("apify" in complete, true);
   assert.equal("provenance" in complete, false);
 
@@ -58,8 +61,14 @@ test("golden D2D PR #5 two-business intake v1 request is accepted directly and r
   if (normalizedComplete.status !== "normalized" || normalizedSparse.status !== "normalized") return;
   assert.equal(normalizedComplete.record.correlationId, complete.correlationId);
   assert.equal(normalizedSparse.record.correlationId, sparse.correlationId);
+  assert.equal(normalizedComplete.record.name, complete.title);
+  assert.equal(normalizedComplete.record.placeId, complete.googlePlaceId);
+  assert.equal(normalizedComplete.record.d2dBusinessId, complete.sourceBusinessId);
+  assert.notEqual(normalizedComplete.record.d2dBusinessId, complete.googlePlaceId);
+  assert.notEqual(normalizedComplete.record.d2dBusinessId, complete.cid);
   assert.equal(normalizedSparse.record.phone, null);
   assert.equal(normalizedSparse.record.website, null);
+  assert.equal(normalizedSparse.record.rating, null);
   assert.equal(normalizedComplete.record.coordinates?.lat, (complete.coordinates as { lat: number }).lat);
   assert.equal(normalizedComplete.record.apify?.runId, (complete.apify as { runId: string }).runId);
 
@@ -94,6 +103,8 @@ test("golden D2D PR #5 two-business intake v1 request is accepted directly and r
     assert.equal(receipt.qualification?.outcome, expectedQualification.outcome);
     assert.equal(receipt.correlationId, businesses[index]!.correlationId);
     assert.equal(receipt.status, D2D_TRANSPORT_STATUSES.RECEIVED);
+    assert.notEqual(receipt.d2dBusinessId, businesses[index]!.googlePlaceId);
+    assert.notEqual(receipt.d2dBusinessId, businesses[index]!.cid);
   }
 
   assert.equal(result.receipts[0]?.qualification?.outcome, FACTORY_QUALIFICATION_OUTCOMES.ADVANCED);
@@ -106,14 +117,19 @@ test("golden D2D PR #5 two-business intake v1 request is accepted directly and r
   assert.equal(adapters.stats.writeCalls, 0);
 });
 
-test("mismatched request correlationId is per-item invalid and spends zero qualifier or model work", async () => {
+test("mismatched request correlationId is per-item invalid against canonical D2D IDs", async () => {
+  const golden = loadD2dFactoryIntakeV1Golden();
+  const request = structuredClone(golden.request) as Record<string, unknown> & {
+    businesses: Array<Record<string, unknown>>;
+    exportId: string;
+  };
+  const complete = request.businesses[0]!;
+  const tampered = `${complete.sourceBusinessId}::${request.exportId}::tampered`;
+  complete.correlationId = tampered;
   const adapters = createIntakeAdapters();
   const qualifier = countingQualifier();
-  const tampered = "src-northline::export-2026-09-15-northline::tampered";
   const result = await acceptD2dIntake({
-    payload: northlineBatch({
-      businesses: [rawWith({ correlationId: tampered })],
-    }),
+    payload: request,
     presentedToken: SECRET,
     expectedSecret: SECRET,
     adapters,
@@ -124,11 +140,14 @@ test("mismatched request correlationId is per-item invalid and spends zero quali
   assert.equal(receipt.status, D2D_TRANSPORT_STATUSES.INVALID);
   assert.equal(receipt.reasonCode, D2D_INTAKE_REASON_CODES.INVALID_CORRELATION_ID);
   assert.equal(receipt.qualification, null);
+  assert.equal(receipt.sourceBusinessId, "src-1");
+  assert.equal(receipt.campaignBusinessId, "cb-1");
   assert.equal(receipt.correlationId, tampered);
-  assert.notEqual(receipt.correlationId, NORTHLINE_CORRELATION_ID);
-  assert.equal(qualifier.calls, 0);
+  assert.notEqual(receipt.correlationId, "src-1::export-1::d2d-factory-intake/v1");
+  assert.equal(result.receipts[1]?.status, D2D_TRANSPORT_STATUSES.RECEIVED);
+  assert.equal(result.receipts[1]?.qualification?.outcome, FACTORY_QUALIFICATION_OUTCOMES.HELD);
+  assert.equal(qualifier.calls, 1);
   assert.equal(adapters.stats.researchCalls, 0);
-  assert.equal(adapters.stats.prescribeCalls, 0);
   assert.equal(adapters.stats.writeCalls, 0);
 });
 

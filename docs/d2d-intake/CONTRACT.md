@@ -2,7 +2,7 @@
 
 This is the frozen cross-repo request/receipt schema between `alchemistj/ff-gb-door-to-door-system` (companion D2D PR #5 head `00ae71fa67eede3674834e5ad4d81e79e951e395`) and this Content Demo Factory.
 
-Canonical D2D sources: `tests/fixtures/d2d-factory-intake-v1.json` and `src/lib/content-factory/contract.ts`. CF golden copy: `src/d2d-intake/fixtures/d2d-factory-intake-v1.json`.
+Canonical D2D sources: `tests/fixtures/d2d-factory-intake-v1.json` and `src/lib/content-factory/contract.ts` at `00ae71fa`. The **only** cross-repo golden in this repo is the copied fixture `src/d2d-intake/fixtures/d2d-factory-intake-v1.json` (`cb-1` complete + `cb-sparse`). The JSON sample below is an illustrative local example, not that golden.
 
 **D2D owns collection and transport facts:** campaign/run/export IDs, campaign geography/search, Apify/Google listing fields, D2D source IDs, and delivery/correlation.
 
@@ -13,6 +13,8 @@ Canonical D2D sources: `tests/fixtures/d2d-factory-intake-v1.json` and `src/lib/
 `POST /d2d-factory-intake/v1`
 
 Default operator cohort size is **40** (`D2D_INTAKE_MAX_BATCH`, configurable). Transport does not inherit the historical 7-candidate cap.
+
+Illustrative local example (not the cross-repo golden):
 
 ```json
 {
@@ -83,7 +85,7 @@ Missing optional fields stay empty. They are not fabricated and they are not a t
 correlationId = `${sourceBusinessId}::${exportId}::d2d-factory-intake/v1`
 ```
 
-The golden D2D request (`tests/fixtures/d2d-factory-intake-v1.json` at `00ae71fa`) is a two-business cohort: complete Northline plus a sparse listing with no phone/website. CF golden copy: `src/d2d-intake/fixtures/d2d-factory-intake-v1.json`.
+The golden D2D request is the two-business cohort at `src/d2d-intake/fixtures/d2d-factory-intake-v1.json`: complete `cb-1` and sparse `cb-sparse` (no phone/website/rating). It is a duplicated copy of D2D `tests/fixtures/d2d-factory-intake-v1.json` at `00ae71fa`. Northline/Lake County samples in this document and in unit tests are local examples only.
 
 D2D `assignContentFactoryReceipts()` reconciles by `d2dProspectId` plus this `correlationId`. Idempotency is the same triple. A missing or mismatched `correlationId` is transport `invalid` (`MISSING_CORRELATION_ID` / `INVALID_CORRELATION_ID`) for that item only.
 

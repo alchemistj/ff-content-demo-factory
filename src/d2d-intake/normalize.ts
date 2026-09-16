@@ -28,6 +28,7 @@ export interface NormalizeInvalid {
   readonly d2dProspectId: string;
   readonly sourceBusinessId: string;
   readonly d2dBusinessId: string;
+  readonly campaignBusinessId: string | null;
   readonly correlationId: string;
   readonly reasonCode: (typeof D2D_INTAKE_REASON_CODES)[keyof typeof D2D_INTAKE_REASON_CODES];
   readonly reason: string;
@@ -104,6 +105,8 @@ export function normalizeRawBusiness(input: unknown, envelope: NormalizeBusiness
     return invalid("", "", D2D_INTAKE_REASON_CODES.MALFORMED_BUSINESS, "Business entry must be an object");
   }
   const presentedCorrelationId = firstTrimmed(input.correlationId) ?? "";
+  const campaignBusinessId = firstTrimmed(input.campaignBusinessId) ?? null;
+  const ids = { correlationId: presentedCorrelationId, campaignBusinessId };
   const forbidden = findForbiddenConclusion(input);
   if (forbidden) {
     const d2dProspectId = firstTrimmed(input.d2dProspectId) ?? "";
@@ -113,7 +116,7 @@ export function normalizeRawBusiness(input: unknown, envelope: NormalizeBusiness
       sourceBusinessId,
       D2D_INTAKE_REASON_CODES.INHERITED_CONCLUSION,
       `Inherited conclusion field at ${forbidden} is not Content Factory qualification authority`,
-      presentedCorrelationId,
+      ids,
     );
   }
   const d2dProspectId = firstTrimmed(input.d2dProspectId);
@@ -124,7 +127,7 @@ export function normalizeRawBusiness(input: unknown, envelope: NormalizeBusiness
       "",
       D2D_INTAKE_REASON_CODES.MISSING_SOURCE_BUSINESS_ID,
       "Raw listing is missing sourceBusinessId; Google place identity is not a substitute transport key",
-      presentedCorrelationId,
+      ids,
     );
   }
   if (!d2dProspectId) {
@@ -133,7 +136,7 @@ export function normalizeRawBusiness(input: unknown, envelope: NormalizeBusiness
       sourceBusinessId,
       D2D_INTAKE_REASON_CODES.MISSING_D2D_PROSPECT_ID,
       "Raw listing is missing d2dProspectId; Content Factory will not invent a D2D prospect id",
-      presentedCorrelationId,
+      ids,
     );
   }
   const presentedBusinessId = firstTrimmed(input.d2dBusinessId);
@@ -143,7 +146,7 @@ export function normalizeRawBusiness(input: unknown, envelope: NormalizeBusiness
       sourceBusinessId,
       D2D_INTAKE_REASON_CODES.MALFORMED_BUSINESS,
       "d2dBusinessId must equal sourceBusinessId",
-      presentedCorrelationId,
+      ids,
     );
   }
   if (!presentedCorrelationId) {
@@ -152,6 +155,7 @@ export function normalizeRawBusiness(input: unknown, envelope: NormalizeBusiness
       sourceBusinessId,
       D2D_INTAKE_REASON_CODES.MISSING_CORRELATION_ID,
       "Raw listing is missing correlationId; Content Factory will not invent or repair D2D correlation identity",
+      ids,
     );
   }
   const parsedCorrelation = parseIntakeCorrelationId(presentedCorrelationId);
@@ -172,7 +176,7 @@ export function normalizeRawBusiness(input: unknown, envelope: NormalizeBusiness
       envelope.exportId
         ? `correlationId must equal ${intakeCorrelationId({ sourceBusinessId, exportId: envelope.exportId })}; presented value was not repaired`
         : `correlationId must equal ${sourceBusinessId}::<exportId>::${D2D_FACTORY_INTAKE_VERSION}; presented value was not repaired`,
-      presentedCorrelationId,
+      ids,
     );
   }
   const name = firstTrimmed(input.name, input.title);
@@ -182,7 +186,7 @@ export function normalizeRawBusiness(input: unknown, envelope: NormalizeBusiness
       sourceBusinessId,
       D2D_INTAKE_REASON_CODES.MISSING_BUSINESS_NAME,
       "Raw listing is missing name/title; a name was not invented",
-      presentedCorrelationId,
+      ids,
     );
   }
   const apify = isRecord(input.apify) ? (input.apify as D2dApifyProvenance) : envelope.provenance ?? null;
@@ -321,14 +325,15 @@ function invalid(
   sourceBusinessId: string,
   reasonCode: NormalizeInvalid["reasonCode"],
   reason: string,
-  correlationId = "",
+  extra?: { readonly correlationId?: string; readonly campaignBusinessId?: string | null },
 ): NormalizeInvalid {
   return {
     status: "invalid",
     d2dProspectId,
     sourceBusinessId,
     d2dBusinessId: sourceBusinessId || d2dProspectId,
-    correlationId,
+    campaignBusinessId: extra?.campaignBusinessId ?? null,
+    correlationId: extra?.correlationId ?? "",
     reasonCode,
     reason,
   };
