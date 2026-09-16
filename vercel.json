@@ -1,0 +1,16 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "rewrites": [
+    { "source": "/health", "destination": "/api/health" },
+    { "source": "/d2d-factory-intake/v1", "destination": "/api/d2d-intake" },
+    { "source": "/d2d-factory-intake/v1/:path*", "destination": "/api/d2d-intake/:path*" }
+  ],
+  "functions": {
+    "api/health.ts": {
+      "maxDuration": 10
+    },
+    "api/d2d-intake/[[...path]].ts": {
+      "maxDuration": 300
+    }
+  }
+}

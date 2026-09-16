@@ -3,9 +3,9 @@ import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { pathToFileURL } from "node:url";
 import type { FactoryAdapters } from "../workflow/types.js";
-import { WorkflowError } from "../workflow/types.js";
 import { acceptD2dIntake } from "./accept.js";
 import { configuredIntakeSecret } from "./auth.js";
+import { createEnvFactoryAdapters } from "./env-adapters.js";
 import { createD2dIntakeServer } from "./http.js";
 import { createFileIntakeRegistry } from "./registry.js";
 import {
@@ -104,21 +104,7 @@ async function loadAdapters(): Promise<FactoryAdapters> {
     }
     return factory();
   }
-  return unconfiguredAdapters();
-}
-
-function unconfiguredAdapters(): FactoryAdapters {
-  const fail = async (): Promise<never> => {
-    throw new WorkflowError(
-      "FACTORY_ADAPTERS_UNCONFIGURED",
-      `${D2D_INTAKE_ADAPTERS_MODULE_ENV} is not set; research and prescription adapters are required for accepted intake.`,
-    );
-  };
-  return {
-    researcher: { provider: "unconfigured", model: "unconfigured", research: fail },
-    prescriber: { provider: "unconfigured", model: "unconfigured", prescribe: fail },
-    writer: { provider: "unconfigured", model: "forbidden-before-gate-1", writeCompletePackage: fail },
-  };
+  return createEnvFactoryAdapters();
 }
 
 function parseFlags(argv: string[]): Record<string, string | true> {
