@@ -4,6 +4,8 @@ import { runFactory } from "../workflow/orchestrator.js";
 import {
   WORKFLOW_STAGES,
   createInitialState,
+  hasSourceCorrelation,
+  linkSourceCorrelation,
   readState,
   writeState,
   type WorkflowState,
@@ -251,13 +253,24 @@ async function runAdvanced(
   }
 
   if (isAtOrPastGate1(state)) {
-    const duplicate = receiptFromState(batch, record, correlationId, qualification, state, {
-      status: D2D_TRANSPORT_STATUSES.DUPLICATE,
-      reasonCode: D2D_INTAKE_REASON_CODES.EXISTING_FACTORY_RUN,
-      reason: "Existing factory run already stopped at Human Gate 1",
+    if (hasSourceCorrelation(state, correlationId)) {
+      const duplicate = receiptFromState(batch, record, correlationId, qualification, state, {
+        status: D2D_TRANSPORT_STATUSES.DUPLICATE,
+        reasonCode: D2D_INTAKE_REASON_CODES.EXISTING_FACTORY_RUN,
+        reason: "Existing factory run already stopped at Human Gate 1",
+      });
+      await input.registry.saveReceipt(duplicate);
+      return duplicate;
+    }
+    const linked = linkSourceCorrelation(state, correlation, input.now);
+    await writeState(store, linked);
+    const received = receiptFromState(batch, record, correlationId, qualification, linked, {
+      status: D2D_TRANSPORT_STATUSES.RECEIVED,
+      reason: qualification.reason,
+      reasonCode: qualification.reasonCode,
     });
-    await input.registry.saveReceipt(duplicate);
-    return duplicate;
+    await input.registry.saveReceipt(received);
+    return received;
   }
 
   try {

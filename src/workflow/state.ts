@@ -98,6 +98,8 @@ export interface WorkflowState {
   humanQaTask: HumanQaTask | null;
   events: WorkflowEvent[];
   sourceCorrelation?: WorkflowSourceCorrelation;
+  /** All accepted raw D2D observations linked to this run; sourceCorrelation remains the original. */
+  sourceCorrelations?: WorkflowSourceCorrelation[];
 }
 
 export interface HumanQaTask {
@@ -154,8 +156,42 @@ export function createInitialState(input: {
     prescriptionPublication: null,
     humanQaTask: null,
     events: [],
-    ...(input.sourceCorrelation ? { sourceCorrelation: cloneState(input.sourceCorrelation) } : {}),
+    ...(input.sourceCorrelation
+      ? {
+          sourceCorrelation: cloneState(input.sourceCorrelation),
+          sourceCorrelations: [cloneState(input.sourceCorrelation)],
+        }
+      : {}),
   };
+}
+
+export function recordedSourceCorrelations(state: WorkflowState): WorkflowSourceCorrelation[] {
+  if (state.sourceCorrelations && state.sourceCorrelations.length > 0) {
+    return state.sourceCorrelations;
+  }
+  return state.sourceCorrelation ? [state.sourceCorrelation] : [];
+}
+
+export function hasSourceCorrelation(state: WorkflowState, correlationId: string): boolean {
+  return recordedSourceCorrelations(state).some((item) => item.correlationId === correlationId);
+}
+
+/** Append a later export observation without replacing the original sourceCorrelation. */
+export function linkSourceCorrelation(
+  state: WorkflowState,
+  correlation: WorkflowSourceCorrelation,
+  now?: Date,
+): WorkflowState {
+  const current = recordedSourceCorrelations(state);
+  const next = cloneState(state);
+  if (!next.sourceCorrelation) next.sourceCorrelation = cloneState(correlation);
+  if (current.some((item) => item.correlationId === correlation.correlationId)) {
+    next.sourceCorrelations = current.map((item) => cloneState(item));
+    return next;
+  }
+  next.sourceCorrelations = [...current.map((item) => cloneState(item)), cloneState(correlation)];
+  next.updatedAt = (now ?? new Date()).toISOString();
+  return next;
 }
 
 export function validateWorkflowState(state: WorkflowState): WorkflowState {

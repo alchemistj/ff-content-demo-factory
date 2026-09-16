@@ -333,6 +333,112 @@ test("same sourceBusinessId in a new export is a new intake identity and is qual
   assert.equal(adapters.stats.writeCalls, 0);
 });
 
+test("advanced listing in a new export is received, reuses the Gate 1 run, and links both source observations", async () => {
+  const adapters = createIntakeAdapters();
+  const qualifier = countingQualifier();
+  const registry = createMemoryIntakeRegistry();
+  const firstExportId = NORTHLINE_EXPORT_ID;
+  const secondExportId = "export-2026-09-16-second";
+  const firstCorrelation = intakeCorrelationId({
+    sourceBusinessId: "src-northline",
+    exportId: firstExportId,
+  });
+  const secondCorrelation = intakeCorrelationId({
+    sourceBusinessId: "src-northline",
+    exportId: secondExportId,
+  });
+  const first = await acceptD2dIntake({
+    payload: exportBatch({
+      exportId: firstExportId,
+      campaignRunId: "campaign-run-2026-09-15",
+    }),
+    presentedToken: SECRET,
+    expectedSecret: SECRET,
+    adapters,
+    qualifier,
+    registry,
+    now: INTAKE_NOW,
+  });
+  const retryA = await acceptD2dIntake({
+    payload: exportBatch({
+      exportId: firstExportId,
+      campaignRunId: "campaign-run-2026-09-15",
+    }),
+    presentedToken: SECRET,
+    expectedSecret: SECRET,
+    adapters,
+    qualifier,
+    registry,
+    now: INTAKE_NOW,
+  });
+  const second = await acceptD2dIntake({
+    payload: exportBatch({
+      exportId: secondExportId,
+      campaignRunId: "campaign-run-2026-09-16",
+    }),
+    presentedToken: SECRET,
+    expectedSecret: SECRET,
+    adapters,
+    qualifier,
+    registry,
+    now: INTAKE_NOW,
+  });
+  const retryB = await acceptD2dIntake({
+    payload: exportBatch({
+      exportId: secondExportId,
+      campaignRunId: "campaign-run-2026-09-16",
+    }),
+    presentedToken: SECRET,
+    expectedSecret: SECRET,
+    adapters,
+    qualifier,
+    registry,
+    now: INTAKE_NOW,
+  });
+  const firstReceipt = first.receipts[0]!;
+  const secondReceipt = second.receipts[0]!;
+  assert.equal(firstReceipt.status, D2D_TRANSPORT_STATUSES.RECEIVED);
+  assert.equal(firstReceipt.qualification?.outcome, FACTORY_QUALIFICATION_OUTCOMES.ADVANCED);
+  assert.equal(firstReceipt.factoryStage, WORKFLOW_STAGES.AWAITING_PRESCRIPTION_APPROVAL);
+  assert.equal(firstReceipt.correlationId, firstCorrelation);
+  assert.equal(firstReceipt.exportId, firstExportId);
+  assert.equal(firstReceipt.campaignRunId, "campaign-run-2026-09-15");
+  assert.equal(retryA.receipts[0]?.status, D2D_TRANSPORT_STATUSES.DUPLICATE);
+  assert.equal(retryA.receipts[0]?.correlationId, firstCorrelation);
+  assert.equal(secondReceipt.status, D2D_TRANSPORT_STATUSES.RECEIVED);
+  assert.notEqual(secondReceipt.status, D2D_TRANSPORT_STATUSES.DUPLICATE);
+  assert.notEqual(secondReceipt.reasonCode, D2D_INTAKE_REASON_CODES.EXISTING_FACTORY_RUN);
+  assert.equal(secondReceipt.qualification?.outcome, FACTORY_QUALIFICATION_OUTCOMES.ADVANCED);
+  assert.equal(secondReceipt.sourceBusinessId, "src-northline");
+  assert.equal(secondReceipt.campaignRunId, "campaign-run-2026-09-16");
+  assert.equal(secondReceipt.exportId, secondExportId);
+  assert.equal(secondReceipt.correlationId, secondCorrelation);
+  assert.equal(secondReceipt.factoryRunId, firstReceipt.factoryRunId);
+  assert.equal(secondReceipt.factoryStage, WORKFLOW_STAGES.AWAITING_PRESCRIPTION_APPROVAL);
+  assert.equal(retryB.receipts[0]?.status, D2D_TRANSPORT_STATUSES.DUPLICATE);
+  assert.equal(retryB.receipts[0]?.correlationId, secondCorrelation);
+  assert.equal(qualifier.calls, 2);
+  assert.equal(adapters.stats.researchCalls, 1);
+  assert.equal(adapters.stats.prescribeCalls, 1);
+  assert.equal(adapters.stats.writeCalls, 0);
+  const state = await readState(await registry.getStateStore(firstReceipt.factoryRunId!));
+  assert.ok(state);
+  assert.equal(state.sourceCorrelation?.correlationId, firstCorrelation);
+  assert.equal(state.sourceCorrelation?.campaignRunId, "campaign-run-2026-09-15");
+  assert.equal(state.sourceCorrelation?.exportId, firstExportId);
+  const linkedIds = (state.sourceCorrelations ?? []).map((item) => item.correlationId);
+  assert.deepEqual(linkedIds, [firstCorrelation, secondCorrelation]);
+  assert.equal(state.sourceCorrelations?.[1]?.campaignRunId, "campaign-run-2026-09-16");
+  assert.equal(state.sourceCorrelations?.[1]?.exportId, secondExportId);
+  const storedA = await registry.getReceipt(firstCorrelation);
+  const storedB = await registry.getReceipt(secondCorrelation);
+  assert.equal(storedA?.status, D2D_TRANSPORT_STATUSES.RECEIVED);
+  assert.equal(storedA?.exportId, firstExportId);
+  assert.equal(storedB?.status, D2D_TRANSPORT_STATUSES.RECEIVED);
+  assert.equal(storedB?.exportId, secondExportId);
+  assert.equal((await registry.getReceiptByBusiness("src-northline"))?.correlationId, secondCorrelation);
+});
+
 test("business status lookup returns latest receipt without collapsing per-correlation identity", async () => {
   const adapters = createIntakeAdapters();
   const qualifier = countingQualifier();

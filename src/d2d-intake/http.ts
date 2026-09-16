@@ -142,6 +142,7 @@ async function withStage(receipt: Awaited<ReturnType<D2dIntakeRegistry["getRecei
     factoryProspectId: state.prospectId,
     factoryRunId: state.runId,
     sourceCorrelation: state.sourceCorrelation ?? null,
+    sourceCorrelations: state.sourceCorrelations ?? (state.sourceCorrelation ? [state.sourceCorrelation] : []),
   };
 }
 

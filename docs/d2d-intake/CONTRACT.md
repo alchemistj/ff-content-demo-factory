@@ -128,4 +128,4 @@ Poll:
 
 `src/factory/candidates.ts` + `src/factory/qualify.ts` remain the keep/reject/advance path. Intake calls that qualifier **once** per new `sourceBusinessId` + export identity.
 
-Only `advanced` records are mapped into today's `ProspectSeed` and `runFactory()`. After that, the merged workflow is authoritative through Human Gate 1.
+Only `advanced` records are mapped into today's `ProspectSeed` and `runFactory()`. After that, the merged workflow is authoritative through Human Gate 1. A later export that independently qualifies the same `sourceBusinessId` is transport `received` for that new `correlationId`. If the factory run is already at Human Gate 1, research/prescription are not rerun; the new observation is linked on the run (`sourceCorrelations`) while `sourceCorrelation` stays the original.
