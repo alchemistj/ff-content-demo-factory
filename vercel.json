@@ -1,5 +1,6 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
+  "outputDirectory": "public",
   "rewrites": [
     { "source": "/health", "destination": "/api/health" },
     { "source": "/d2d-factory-intake/v1", "destination": "/api/d2d-intake" },
