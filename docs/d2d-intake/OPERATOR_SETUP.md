@@ -23,9 +23,9 @@ D2D delivers a **raw/normalized Google Business / Apify cohort** (`version: d2d-
 | `D2D_INTAKE_ADAPTERS_MODULE` | local advanced runs | Module exporting `createFactoryAdapters()`. **Not used on Vercel**; production uses `FACTORY_*` env vars |
 | `D2D_INTAKE_SUPABASE_URL` / `SUPABASE_URL` | Vercel | Durable store URL. Missing on Vercel → `DURABLE_STORE_NOT_CONFIGURED` before qualifier/model spend |
 | `D2D_INTAKE_SUPABASE_SERVICE_ROLE_KEY` / `SUPABASE_SERVICE_ROLE_KEY` | Vercel | Durable store service role |
-| `FACTORY_RESEARCH_PROVIDER` / `FACTORY_RESEARCH_MODEL` | advanced on Vercel | Env-driven research adapter names |
-| `FACTORY_PRESCRIPTION_PROVIDER` / `FACTORY_PRESCRIPTION_MODEL` | optional | Defaults to research provider/model |
-| `FACTORY_MODEL_API_KEY` | advanced on Vercel | Provider key. Health checks presence only |
+| `FACTORY_RESEARCH_PROVIDER` / `FACTORY_RESEARCH_MODEL` | advanced on Vercel | Env-driven research provider and model. Both required for research readiness |
+| `FACTORY_PRESCRIPTION_PROVIDER` / `FACTORY_PRESCRIPTION_MODEL` | optional | Defaults to research provider/model. Readiness still requires an effective provider, model, and key |
+| `FACTORY_MODEL_API_KEY` | advanced on Vercel | Provider key. Health checks presence only; it does not call the provider |
 | `FACTORY_MODEL_BASE_URL` | optional | OpenAI-compatible base. Default `https://api.openai.com/v1` |
 
 Production Vercel setup, custom domain, and D2D `CONTENT_FACTORY_INTAKE_URL` are in [`VERCEL.md`](VERCEL.md).

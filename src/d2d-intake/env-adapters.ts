@@ -21,34 +21,65 @@ export interface EnvAdapterCompleteInput {
 
 export type EnvAdapterCompleteJson = (input: EnvAdapterCompleteInput) => Promise<unknown>;
 
+const UNCONFIGURED_ADAPTER = "unconfigured";
+
+function configuredAdapterValue(value: string | undefined): string | undefined {
+  const trimmed = value?.trim();
+  if (!trimmed || trimmed === UNCONFIGURED_ADAPTER) return undefined;
+  return trimmed;
+}
+
+function effectiveEnvAdapterProvider(
+  env: NodeJS.ProcessEnv,
+  kind: "research" | "prescription",
+): string | undefined {
+  if (kind === "research") {
+    return configuredAdapterValue(env[FACTORY_RESEARCH_PROVIDER_ENV]);
+  }
+  return (
+    configuredAdapterValue(env[FACTORY_PRESCRIPTION_PROVIDER_ENV]) ??
+    configuredAdapterValue(env[FACTORY_RESEARCH_PROVIDER_ENV])
+  );
+}
+
+function effectiveEnvAdapterModel(
+  env: NodeJS.ProcessEnv,
+  kind: "research" | "prescription",
+): string | undefined {
+  if (kind === "research") {
+    return configuredAdapterValue(env[FACTORY_RESEARCH_MODEL_ENV]);
+  }
+  return (
+    configuredAdapterValue(env[FACTORY_PRESCRIPTION_MODEL_ENV]) ??
+    configuredAdapterValue(env[FACTORY_RESEARCH_MODEL_ENV])
+  );
+}
+
 export function envAdapterConfigured(
   env: NodeJS.ProcessEnv,
   kind: "research" | "prescription",
 ): boolean {
-  const provider =
-    kind === "research"
-      ? env[FACTORY_RESEARCH_PROVIDER_ENV]?.trim()
-      : (env[FACTORY_PRESCRIPTION_PROVIDER_ENV]?.trim() || env[FACTORY_RESEARCH_PROVIDER_ENV]?.trim());
-  const key = env[FACTORY_MODEL_API_KEY_ENV]?.trim();
-  return Boolean(provider && key);
+  const provider = effectiveEnvAdapterProvider(env, kind);
+  const model = effectiveEnvAdapterModel(env, kind);
+  const key = configuredAdapterValue(env[FACTORY_MODEL_API_KEY_ENV]);
+  return Boolean(provider && model && key);
 }
 
 /**
  * Production adapters from FACTORY_* env. Does not load a local filesystem
  * D2D_INTAKE_ADAPTERS_MODULE. Writer is always forbidden before Human Gate 1.
- * Live provider HTTP only runs when research/prescription is invoked with a key.
+ * Live provider HTTP only runs when research/prescription is invoked with
+ * provider, model, and key. Missing model is not ready and fails closed locally.
  */
 export function createEnvFactoryAdapters(
   env: NodeJS.ProcessEnv = process.env,
   options?: { readonly completeJson?: EnvAdapterCompleteJson },
 ): FactoryAdapters {
-  const researchProvider = env[FACTORY_RESEARCH_PROVIDER_ENV]?.trim() || "unconfigured";
-  const researchModel = env[FACTORY_RESEARCH_MODEL_ENV]?.trim() || "unconfigured";
-  const prescriptionProvider =
-    env[FACTORY_PRESCRIPTION_PROVIDER_ENV]?.trim() || env[FACTORY_RESEARCH_PROVIDER_ENV]?.trim() || "unconfigured";
-  const prescriptionModel =
-    env[FACTORY_PRESCRIPTION_MODEL_ENV]?.trim() || env[FACTORY_RESEARCH_MODEL_ENV]?.trim() || "unconfigured";
-  const apiKey = env[FACTORY_MODEL_API_KEY_ENV]?.trim();
+  const researchProvider = effectiveEnvAdapterProvider(env, "research") ?? UNCONFIGURED_ADAPTER;
+  const researchModel = effectiveEnvAdapterModel(env, "research") ?? UNCONFIGURED_ADAPTER;
+  const prescriptionProvider = effectiveEnvAdapterProvider(env, "prescription") ?? UNCONFIGURED_ADAPTER;
+  const prescriptionModel = effectiveEnvAdapterModel(env, "prescription") ?? UNCONFIGURED_ADAPTER;
+  const apiKey = configuredAdapterValue(env[FACTORY_MODEL_API_KEY_ENV]);
   const baseUrl = env[FACTORY_MODEL_BASE_URL_ENV]?.trim() || "https://api.openai.com/v1";
   const completeJson = options?.completeJson ?? openaiCompatibleJsonComplete;
 
@@ -116,17 +147,20 @@ async function completeOrFail(input: {
   readonly payload: unknown;
   readonly completeJson: EnvAdapterCompleteJson;
 }): Promise<unknown> {
-  if (!input.apiKey || input.provider === "unconfigured") {
+  const apiKey = configuredAdapterValue(input.apiKey);
+  const provider = configuredAdapterValue(input.provider);
+  const model = configuredAdapterValue(input.model);
+  if (!apiKey || !provider || !model) {
     throw new WorkflowError(
       "FACTORY_ADAPTERS_UNCONFIGURED",
-      `${FACTORY_RESEARCH_PROVIDER_ENV}/${FACTORY_PRESCRIPTION_PROVIDER_ENV} and ${FACTORY_MODEL_API_KEY_ENV} are required for advanced intake. ${D2D_INTAKE_ADAPTERS_MODULE_ENV} is not used on Vercel.`,
+      `${FACTORY_RESEARCH_PROVIDER_ENV}/${FACTORY_RESEARCH_MODEL_ENV}, ${FACTORY_PRESCRIPTION_PROVIDER_ENV}/${FACTORY_PRESCRIPTION_MODEL_ENV} (falling back to research), and ${FACTORY_MODEL_API_KEY_ENV} are required for advanced intake. ${D2D_INTAKE_ADAPTERS_MODULE_ENV} is not used on Vercel.`,
     );
   }
   return input.completeJson({
     kind: input.kind,
-    provider: input.provider,
-    model: input.model,
-    apiKey: input.apiKey,
+    provider,
+    model,
+    apiKey,
     baseUrl: input.baseUrl,
     payload: input.payload,
   });

@@ -58,7 +58,7 @@ Optional: `D2D_INTAKE_RUNTIME=production` forces the same fail-closed durable pa
 | `FACTORY_MODEL_API_KEY` | Provider API key. Health checks presence only; it does not call the provider |
 | `FACTORY_MODEL_BASE_URL` | Optional OpenAI-compatible base. Default `https://api.openai.com/v1` |
 
-Held/rejected listings still do not invoke adapters. Advanced businesses require provider + key. Writer remains forbidden before Human Gate 1 (`WRITER_BEFORE_GATE_FORBIDDEN`).
+Held/rejected listings still do not invoke adapters. Advanced businesses require provider + model + key. Missing or literal `unconfigured` model is not ready and fails closed locally before any provider HTTP. Writer remains forbidden before Human Gate 1 (`WRITER_BEFORE_GATE_FORBIDDEN`).
 
 Optional Google Docs publisher vars stay as documented in `docs/google-docs/OPERATOR_SETUP.md`. Intake still stops at Gate 1 even if Google is configured.
 
@@ -77,7 +77,7 @@ GET https://factory.fluidframemarketing.com/health
 GET https://factory.fluidframemarketing.com/api/health
 ```
 
-Returns HTTP 200 with `{ ok, service, path, domain, runtime, ready, requestDriven, scheduler }` when the function is alive. `ready` is booleans only (shared secret present, durable-store env present, research/prescription env present). Health does **not** call providers, Apify, or Supabase.
+Returns HTTP 200 with `{ ok, service, path, domain, runtime, ready, requestDriven, scheduler }` when the function is alive. `ready` is booleans only (shared secret present, durable-store env present, research/prescription provider+model+key present). Prescription falls back to the research provider/model when its own vars are omitted. Missing model reports `researchAdapter`/`prescriptionAdapter` false. Health does **not** call providers, Apify, or Supabase.
 
 ## D2D Production setting
 
