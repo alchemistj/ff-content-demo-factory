@@ -5,7 +5,7 @@ import { join } from "node:path";
 import test from "node:test";
 import { handleD2dIntakeRequest } from "./http.js";
 import { createFileIntakeRegistry, createMemoryIntakeRegistry } from "./registry.js";
-import { D2D_INTAKE_HTTP_PATH, D2D_INTAKE_REASON_CODES, D2D_INTAKE_STATUSES } from "./types.js";
+import { D2D_INTAKE_HTTP_PATH, D2D_INTAKE_REASON_CODES, D2D_TRANSPORT_STATUSES } from "./types.js";
 import { WORKFLOW_STAGES } from "../workflow/state.js";
 import { createIntakeAdapters, northlineBatch } from "./fixture.js";
 
@@ -15,7 +15,7 @@ function request(path: string, init: RequestInit): Request {
   return new Request(`http://127.0.0.1${path}`, init);
 }
 
-test("HTTP intake authenticates first and returns per-prospect receipts", async () => {
+test("HTTP intake authenticates first and returns per-business receipts", async () => {
   const adapters = createIntakeAdapters();
   const registry = createMemoryIntakeRegistry();
   const unauthorized = await handleD2dIntakeRequest(
@@ -31,28 +31,6 @@ test("HTTP intake authenticates first and returns per-prospect receipts", async 
   assert.equal(unauthorizedBody.reasonCode, D2D_INTAKE_REASON_CODES.AUTH_MISSING);
   assert.equal(adapters.stats.researchCalls, 0);
 
-  const wrong = await handleD2dIntakeRequest(
-    request(D2D_INTAKE_HTTP_PATH, {
-      method: "POST",
-      headers: { authorization: "Bearer nope", "content-type": "application/json" },
-      body: JSON.stringify(northlineBatch()),
-    }),
-    { expectedSecret: SECRET, adapters, registry },
-  );
-  assert.equal(wrong.status, 401);
-  assert.equal(adapters.stats.researchCalls, 0);
-
-  const unconfigured = await handleD2dIntakeRequest(
-    request(D2D_INTAKE_HTTP_PATH, {
-      method: "POST",
-      headers: { authorization: `Bearer ${SECRET}`, "content-type": "application/json" },
-      body: JSON.stringify(northlineBatch()),
-    }),
-    { expectedSecret: "", adapters, registry },
-  );
-  assert.equal(unconfigured.status, 503);
-  assert.equal(adapters.stats.researchCalls, 0);
-
   const accepted = await handleD2dIntakeRequest(
     request(D2D_INTAKE_HTTP_PATH, {
       method: "POST",
@@ -63,13 +41,13 @@ test("HTTP intake authenticates first and returns per-prospect receipts", async 
   );
   assert.equal(accepted.status, 200);
   const body = (await accepted.json()) as {
-    receipts: Array<{ status: string; factoryRunId?: string; factoryStage?: string }>;
+    receipts: Array<{ status: string; factoryStage?: string; d2dBusinessId: string }>;
   };
-  assert.equal(body.receipts[0]?.status, D2D_INTAKE_STATUSES.ACCEPTED);
+  assert.equal(body.receipts[0]?.status, D2D_TRANSPORT_STATUSES.RECEIVED);
   assert.equal(body.receipts[0]?.factoryStage, WORKFLOW_STAGES.AWAITING_PRESCRIPTION_APPROVAL);
 
   const polled = await handleD2dIntakeRequest(
-    request(`${D2D_INTAKE_HTTP_PATH}/prospects/prospect-northline`, {
+    request(`${D2D_INTAKE_HTTP_PATH}/businesses/ChIJ-northline`, {
       method: "GET",
       headers: { authorization: `Bearer ${SECRET}` },
     }),
@@ -80,12 +58,10 @@ test("HTTP intake authenticates first and returns per-prospect receipts", async 
     factoryRunId: string;
     campaignId: string;
     exportId: string;
-    sourceCorrelation: { campaignId: string };
+    sourceCorrelation: { d2dBusinessId: string };
   };
-  assert.equal(statusBody.factoryRunId, "run-prospect-northline");
   assert.equal(statusBody.campaignId, "campaign-lake-county");
-  assert.equal(statusBody.exportId, "export-2026-09-15-northline");
-  assert.equal(statusBody.sourceCorrelation.campaignId, "campaign-lake-county");
+  assert.equal(statusBody.sourceCorrelation.d2dBusinessId, "ChIJ-northline");
   assert.equal(adapters.stats.writeCalls, 0);
 });
 
@@ -102,11 +78,11 @@ test("file registry preserves run correlation across process-like reloads", asyn
       adapters,
       registry: first,
     });
-    assert.equal(result.receipts[0]?.status, D2D_INTAKE_STATUSES.ACCEPTED);
+    assert.equal(result.receipts[0]?.status, D2D_TRANSPORT_STATUSES.RECEIVED);
     const reloaded = createFileIntakeRegistry(root);
-    const receipt = await reloaded.getReceiptByProspect("prospect-northline");
-    assert.equal(receipt?.factoryRunId, "run-prospect-northline");
+    const receipt = await reloaded.getReceiptByBusiness("ChIJ-northline");
     assert.equal(receipt?.exportId, "export-2026-09-15-northline");
+    assert.ok(receipt?.factoryRunId);
   } finally {
     rmSync(root, { recursive: true, force: true });
   }

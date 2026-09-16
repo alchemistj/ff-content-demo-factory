@@ -19,11 +19,11 @@ import {
 
 const USAGE = `Usage:
   npm run d2d-intake -- --payload <path> [--receipt-out <path>] [--token <token>]
-  npm run d2d-intake -- --status --prospect-id <d2dProspectId>
+  npm run d2d-intake -- --status --business-id <d2dBusinessId>
   npm run d2d-intake -- --status --run-id <factoryRunId>
   npm run d2d-intake -- serve
 
-Authenticated D2D intake. Fails closed without ${D2D_INTAKE_SHARED_SECRET_ENV}.
+Authenticated raw D2D geographic intake. Fails closed without ${D2D_INTAKE_SHARED_SECRET_ENV}.
 See docs/d2d-intake/OPERATOR_SETUP.md.
 `;
 
@@ -56,15 +56,15 @@ async function main(argv: string[]): Promise<void> {
   }
 
   if (flags.status === true) {
-    const prospectId = optionalFlag(flags, "prospect-id");
+    const businessId = optionalFlag(flags, "business-id");
     const runId = optionalFlag(flags, "run-id");
-    const receipt = prospectId
-      ? await registry.getReceiptByProspect(prospectId)
+    const receipt = businessId
+      ? await registry.getReceiptByBusiness(businessId)
       : runId
         ? await registry.getReceiptByRunId(runId)
         : null;
     if (!receipt) {
-      throw new Error("No D2D intake receipt found for that prospect or run");
+      throw new Error("No D2D intake receipt found for that business or run");
     }
     process.stdout.write(`${JSON.stringify(receipt, null, 2)}\n`);
     return;

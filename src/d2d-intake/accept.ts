@@ -1,4 +1,5 @@
 import { createUnconfiguredPublisher } from "../publisher/index.js";
+import { createFactoryQualifier, type QualificationAdapter } from "../factory/qualify.js";
 import { runFactory } from "../workflow/orchestrator.js";
 import {
   WORKFLOW_STAGES,
@@ -12,18 +13,21 @@ import type { GoogleDocsPublisher } from "../publisher/types.js";
 import type { WritingPackage } from "../writing-package/types.js";
 import { assertD2dIntakeAuth } from "./auth.js";
 import { D2dIntakeAuthError } from "./errors.js";
-import { mapD2dProspectToSeed, parseD2dIntakeBatch } from "./map.js";
+import { mapAdvancedBusinessToSeed } from "./map.js";
+import { configuredMaxBatch, normalizeRawBusiness, parseD2dIntakeBatch } from "./normalize.js";
 import type { D2dIntakeRegistry } from "./registry.js";
 import {
   D2D_FACTORY_INTAKE_VERSION,
   D2D_INTAKE_REASON_CODES,
-  D2D_INTAKE_STATUSES,
+  D2D_TRANSPORT_STATUSES,
+  FACTORY_QUALIFICATION_OUTCOMES,
   intakeCorrelationId,
+  type D2dBusinessReceipt,
   type D2dIntakeBatch,
   type D2dIntakeBatchReceipt,
   type D2dIntakeReasonCode,
-  type D2dProspectReceipt,
-  type D2dProspectCandidate,
+  type FactoryQualification,
+  type NormalizedRawBusiness,
 } from "./types.js";
 
 export interface D2dIntakeInput {
@@ -32,8 +36,10 @@ export interface D2dIntakeInput {
   readonly expectedSecret?: string;
   readonly adapters: FactoryAdapters;
   readonly registry: D2dIntakeRegistry;
+  readonly qualifier?: QualificationAdapter;
   readonly now?: Date;
   readonly repoRoot?: string;
+  readonly maxBatch?: number;
 }
 
 export async function acceptD2dIntake(input: D2dIntakeInput): Promise<D2dIntakeBatchReceipt> {
@@ -43,28 +49,38 @@ export async function acceptD2dIntake(input: D2dIntakeInput): Promise<D2dIntakeB
   });
   const batch = parseD2dIntakeBatch(input.payload);
   const adapters = gate1Adapters(input.adapters);
-  const receipts: D2dProspectReceipt[] = [];
-  for (const candidate of batch.prospects) {
+  const qualifier = input.qualifier ?? createFactoryQualifier();
+  const maxBatch = input.maxBatch ?? configuredMaxBatch();
+  const receipts: D2dBusinessReceipt[] = [];
+  const seenIds = new Map<string, string>();
+
+  for (const [index, raw] of batch.businesses.entries()) {
     try {
-      receipts.push(await acceptOneProspect(candidate, batch, adapters, input));
+      if (index >= maxBatch) {
+        receipts.push(
+          transportReceipt(batch, `batch-index-${index}`, {
+            status: D2D_TRANSPORT_STATUSES.INVALID,
+            reasonCode: D2D_INTAKE_REASON_CODES.BATCH_LIMIT,
+            reason: `Raw cohort item ${index} exceeds configured max ${maxBatch}. Transport does not inherit a 7-item cap; raise D2D_INTAKE_MAX_BATCH for a larger operator cohort.`,
+          }),
+        );
+        continue;
+      }
+      receipts.push(await acceptOneBusiness(raw, batch, adapters, qualifier, input, seenIds));
     } catch (error) {
-      const d2dProspectId = isCandidate(candidate) ? String(candidate.d2dProspectId ?? "") : "";
-      receipts.push({
-        version: D2D_FACTORY_INTAKE_VERSION,
-        status: D2D_INTAKE_STATUSES.RETRYABLE,
-        d2dProspectId,
-        campaignId: batch.campaignId,
-        campaignRunId: batch.campaignRunId,
-        exportId: batch.exportId,
-        correlationId: intakeCorrelationId({
-          d2dProspectId: d2dProspectId || "unknown",
-          exportId: batch.exportId,
+      const d2dBusinessId = isRecord(raw)
+        ? String(raw.placeId ?? raw.googlePlaceId ?? raw.name ?? raw.title ?? "")
+        : "";
+      receipts.push(
+        transportReceipt(batch, d2dBusinessId || "unknown", {
+          status: D2D_TRANSPORT_STATUSES.RETRYABLE,
+          reasonCode: D2D_INTAKE_REASON_CODES.TRANSIENT_FACTORY_FAILURE,
+          reason: error instanceof Error ? error.message : "Business intake failed independently",
         }),
-        reason: error instanceof Error ? error.message : "Prospect intake failed independently",
-        reasonCode: D2D_INTAKE_REASON_CODES.TRANSIENT_FACTORY_FAILURE,
-      });
+      );
     }
   }
+
   return {
     version: D2D_FACTORY_INTAKE_VERSION,
     campaignId: batch.campaignId,
@@ -74,59 +90,144 @@ export async function acceptD2dIntake(input: D2dIntakeInput): Promise<D2dIntakeB
   };
 }
 
-async function acceptOneProspect(
-  candidate: unknown,
+async function acceptOneBusiness(
+  raw: unknown,
   batch: D2dIntakeBatch,
   adapters: FactoryAdapters,
+  qualifier: QualificationAdapter,
   input: D2dIntakeInput,
-): Promise<D2dProspectReceipt> {
-  const mapped = mapD2dProspectToSeed(candidate, batch);
-  if (mapped.status === "held") {
-    const d2dProspectId =
-      mapped.d2dProspectId ||
-      (isCandidate(candidate) ? String(candidate.d2dProspectId ?? "") : "");
-    return heldReceipt(batch, d2dProspectId, mapped.reasonCode, mapped.reason);
+  seenIds: Map<string, string>,
+): Promise<D2dBusinessReceipt> {
+  const normalized = normalizeRawBusiness(raw, batch.provenance);
+  if (normalized.status === "invalid") {
+    return transportReceipt(batch, normalized.d2dBusinessId, {
+      status: D2D_TRANSPORT_STATUSES.INVALID,
+      reasonCode: normalized.reasonCode,
+      reason: normalized.reason,
+    });
   }
 
-  const { seed, correlation } = mapped.mapped;
+  const record = normalized.record;
   const correlationId = intakeCorrelationId({
-    d2dProspectId: correlation.d2dProspectId,
+    d2dBusinessId: record.d2dBusinessId,
     exportId: batch.exportId,
   });
 
-  const existingSameExport = await input.registry.getReceipt(correlationId);
-  if (existingSameExport?.factoryRunId) {
-    const store = await input.registry.getStateStore(existingSameExport.factoryRunId);
-    const state = await readState(store);
-    if (state && isAtOrPastGate1(state)) {
-      const duplicate = receiptFromState(batch, correlation.d2dProspectId, correlationId, state, {
-        status: D2D_INTAKE_STATUSES.DUPLICATE,
-        reasonCode: D2D_INTAKE_REASON_CODES.EXISTING_FACTORY_RUN,
-        reason: "Idempotent retry of the same D2D prospect and export/intake version",
-      });
-      await input.registry.saveReceipt(duplicate);
-      return duplicate;
+  const existing = await input.registry.getReceipt(correlationId);
+  if (existing) {
+    if (
+      existing.status === D2D_TRANSPORT_STATUSES.RETRYABLE &&
+      existing.qualification?.outcome === FACTORY_QUALIFICATION_OUTCOMES.ADVANCED &&
+      existing.factoryRunId
+    ) {
+      const store = await input.registry.getStateStore(existing.factoryRunId);
+      const state = await readState(store);
+      if (state) {
+        const mapped = mapAdvancedBusinessToSeed(record, {
+          campaignId: batch.campaignId,
+          campaignRunId: batch.campaignRunId,
+          exportId: batch.exportId,
+          exportedAt: batch.exportedAt,
+          ...(batch.campaign ? { campaign: batch.campaign } : {}),
+        });
+        if (mapped.ok) {
+          return runAdvanced(
+            batch,
+            record,
+            mapped.mapped.seed,
+            mapped.mapped.correlation,
+            existing.qualification,
+            adapters,
+            input,
+          );
+        }
+      }
     }
-    if (state) {
-      return resumeRun(batch, correlation.d2dProspectId, correlationId, state, adapters, input);
-    }
+    return {
+      ...existing,
+      status: D2D_TRANSPORT_STATUSES.DUPLICATE,
+      reason: existing.reason ?? "Idempotent retry of the same raw business and export/intake version",
+      reasonCode: existing.reasonCode ?? D2D_INTAKE_REASON_CODES.EXISTING_QUALIFICATION,
+    };
   }
 
-  const existingProspect = await input.registry.getReceiptByProspect(correlation.d2dProspectId);
-  if (existingProspect?.factoryRunId && existingProspect.correlationId !== correlationId) {
-    const store = await input.registry.getStateStore(existingProspect.factoryRunId);
-    const state = await readState(store);
-    if (state) {
-      const duplicate = receiptFromState(batch, correlation.d2dProspectId, correlationId, state, {
-        status: D2D_INTAKE_STATUSES.DUPLICATE,
-        reasonCode: D2D_INTAKE_REASON_CODES.EXISTING_FACTORY_RUN,
-        reason: "This D2D prospect already has a durable Content Factory run",
-      });
-      await input.registry.saveReceipt(duplicate);
-      return duplicate;
-    }
+  const existingBusiness = await input.registry.getReceiptByBusiness(record.d2dBusinessId);
+  if (existingBusiness?.qualification) {
+    const duplicate: D2dBusinessReceipt = {
+      ...existingBusiness,
+      status: D2D_TRANSPORT_STATUSES.DUPLICATE,
+      campaignId: batch.campaignId,
+      campaignRunId: batch.campaignRunId,
+      exportId: batch.exportId,
+      correlationId,
+      reason: "This raw business already has a factory qualification decision",
+      reasonCode: D2D_INTAKE_REASON_CODES.EXISTING_QUALIFICATION,
+    };
+    await input.registry.saveReceipt(duplicate);
+    return duplicate;
   }
 
+  const duplicateOf = seenIds.get(record.d2dBusinessId) ?? null;
+  if (!duplicateOf) seenIds.set(record.d2dBusinessId, record.d2dBusinessId);
+
+  const qualification = await qualifier.qualify({
+    record,
+    ...(batch.campaign ? { campaign: batch.campaign } : {}),
+    ...(duplicateOf ? { duplicateOf } : {}),
+  });
+
+  if (qualification.outcome !== FACTORY_QUALIFICATION_OUTCOMES.ADVANCED) {
+    const receipt = transportReceipt(batch, record.d2dBusinessId, {
+      status: D2D_TRANSPORT_STATUSES.RECEIVED,
+      qualification,
+      placeId: record.placeId,
+      reason: qualification.reason,
+      reasonCode: qualification.reasonCode,
+    });
+    await input.registry.saveReceipt(receipt);
+    return receipt;
+  }
+
+  const mapped = mapAdvancedBusinessToSeed(record, {
+    campaignId: batch.campaignId,
+    campaignRunId: batch.campaignRunId,
+    exportId: batch.exportId,
+    exportedAt: batch.exportedAt,
+    ...(batch.campaign ? { campaign: batch.campaign } : {}),
+  });
+  if (!mapped.ok) {
+    const held: FactoryQualification = {
+      outcome: FACTORY_QUALIFICATION_OUTCOMES.HELD,
+      reasonCode: mapped.reasonCode,
+      reason: `${mapped.reason} Advanced mapping refused to invent ProspectSeed values.`,
+    };
+    const receipt = transportReceipt(batch, record.d2dBusinessId, {
+      status: D2D_TRANSPORT_STATUSES.RECEIVED,
+      qualification: held,
+      placeId: record.placeId,
+      reason: held.reason,
+      reasonCode: held.reasonCode,
+    });
+    await input.registry.saveReceipt(receipt);
+    return receipt;
+  }
+
+  return runAdvanced(batch, record, mapped.mapped.seed, mapped.mapped.correlation, qualification, adapters, input);
+}
+
+async function runAdvanced(
+  batch: D2dIntakeBatch,
+  record: NormalizedRawBusiness,
+  seed: import("../handoff/types.js").ProspectSeed,
+  correlation: import("../workflow/state.js").WorkflowSourceCorrelation,
+  qualification: FactoryQualification,
+  adapters: FactoryAdapters,
+  input: D2dIntakeInput,
+): Promise<D2dBusinessReceipt> {
+  const correlationId = intakeCorrelationId({
+    d2dBusinessId: record.d2dBusinessId,
+    exportId: batch.exportId,
+  });
   const runId = `run-${seed.prospectId}`;
   const store = await input.registry.getStateStore(runId);
   let state = await readState(store);
@@ -144,21 +245,9 @@ async function acceptOneProspect(
     await writeState(store, state);
   }
 
-  return resumeRun(batch, correlation.d2dProspectId, correlationId, state, adapters, input);
-}
-
-async function resumeRun(
-  batch: D2dIntakeBatch,
-  d2dProspectId: string,
-  correlationId: string,
-  state: WorkflowState,
-  adapters: FactoryAdapters,
-  input: D2dIntakeInput,
-): Promise<D2dProspectReceipt> {
-  const store = await input.registry.getStateStore(state.runId);
   if (isAtOrPastGate1(state)) {
-    const duplicate = receiptFromState(batch, d2dProspectId, correlationId, state, {
-      status: D2D_INTAKE_STATUSES.DUPLICATE,
+    const duplicate = receiptFromState(batch, record, correlationId, qualification, state, {
+      status: D2D_TRANSPORT_STATUSES.DUPLICATE,
       reasonCode: D2D_INTAKE_REASON_CODES.EXISTING_FACTORY_RUN,
       reason: "Existing factory run already stopped at Human Gate 1",
     });
@@ -176,8 +265,8 @@ async function resumeRun(
     });
     const next = result.state;
     if (next.writerInvocations > 0 || next.writingPackage || next.publication) {
-      const failed = receiptFromState(batch, d2dProspectId, correlationId, next, {
-        status: D2D_INTAKE_STATUSES.FAILED,
+      const failed = receiptFromState(batch, record, correlationId, qualification, next, {
+        status: D2D_TRANSPORT_STATUSES.RETRYABLE,
         reasonCode: D2D_INTAKE_REASON_CODES.WRITER_BEFORE_GATE_FORBIDDEN,
         reason: "Intake must stop at Human Gate 1 and must not run the writer or website-copy publication",
       });
@@ -185,23 +274,23 @@ async function resumeRun(
       return failed;
     }
     if (next.stage !== WORKFLOW_STAGES.AWAITING_PRESCRIPTION_APPROVAL) {
-      const retryable = receiptFromState(batch, d2dProspectId, correlationId, next, {
-        status: D2D_INTAKE_STATUSES.RETRYABLE,
+      const retryable = receiptFromState(batch, record, correlationId, qualification, next, {
+        status: D2D_TRANSPORT_STATUSES.RETRYABLE,
         reasonCode: D2D_INTAKE_REASON_CODES.TRANSIENT_FACTORY_FAILURE,
         reason: `Factory run stopped at ${next.stage} before Human Gate 1`,
       });
       await input.registry.saveReceipt(retryable);
       return retryable;
     }
-    const accepted = receiptFromState(batch, d2dProspectId, correlationId, next, {
-      status: D2D_INTAKE_STATUSES.ACCEPTED,
+    const received = receiptFromState(batch, record, correlationId, qualification, next, {
+      status: D2D_TRANSPORT_STATUSES.RECEIVED,
     });
-    await input.registry.saveReceipt(accepted);
-    return accepted;
+    await input.registry.saveReceipt(received);
+    return received;
   } catch (error) {
     const latest = (await readState(store)) ?? state;
-    const retryable = receiptFromState(batch, d2dProspectId, correlationId, latest, {
-      status: D2D_INTAKE_STATUSES.RETRYABLE,
+    const retryable = receiptFromState(batch, record, correlationId, qualification, latest, {
+      status: D2D_TRANSPORT_STATUSES.RETRYABLE,
       reasonCode: D2D_INTAKE_REASON_CODES.TRANSIENT_FACTORY_FAILURE,
       reason: transientReason(error),
     });
@@ -212,19 +301,22 @@ async function resumeRun(
 
 function receiptFromState(
   batch: D2dIntakeBatch,
-  d2dProspectId: string,
+  record: NormalizedRawBusiness,
   correlationId: string,
+  qualification: FactoryQualification,
   state: WorkflowState,
   outcome: {
-    readonly status: D2dProspectReceipt["status"];
+    readonly status: D2dBusinessReceipt["status"];
     readonly reason?: string;
     readonly reasonCode?: D2dIntakeReasonCode;
   },
-): D2dProspectReceipt {
+): D2dBusinessReceipt {
   return {
     version: D2D_FACTORY_INTAKE_VERSION,
     status: outcome.status,
-    d2dProspectId,
+    qualification,
+    d2dBusinessId: record.d2dBusinessId,
+    placeId: record.placeId,
     campaignId: batch.campaignId,
     campaignRunId: batch.campaignRunId,
     exportId: batch.exportId,
@@ -237,25 +329,32 @@ function receiptFromState(
   };
 }
 
-function heldReceipt(
+function transportReceipt(
   batch: D2dIntakeBatch,
-  d2dProspectId: string,
-  reasonCode: D2dIntakeReasonCode,
-  reason: string,
-): D2dProspectReceipt {
+  d2dBusinessId: string,
+  outcome: {
+    readonly status: D2dBusinessReceipt["status"];
+    readonly qualification?: FactoryQualification | null;
+    readonly placeId?: string | null;
+    readonly reason?: string;
+    readonly reasonCode?: D2dIntakeReasonCode;
+  },
+): D2dBusinessReceipt {
   return {
     version: D2D_FACTORY_INTAKE_VERSION,
-    status: D2D_INTAKE_STATUSES.HELD,
-    d2dProspectId,
+    status: outcome.status,
+    qualification: outcome.qualification ?? null,
+    d2dBusinessId,
+    placeId: outcome.placeId ?? null,
     campaignId: batch.campaignId,
     campaignRunId: batch.campaignRunId,
     exportId: batch.exportId,
     correlationId: intakeCorrelationId({
-      d2dProspectId: d2dProspectId || "unknown",
+      d2dBusinessId: d2dBusinessId || "unknown",
       exportId: batch.exportId,
     }),
-    reason,
-    reasonCode,
+    ...(outcome.reason ? { reason: outcome.reason } : {}),
+    ...(outcome.reasonCode ? { reasonCode: outcome.reasonCode } : {}),
   };
 }
 
@@ -313,7 +412,7 @@ function transientReason(error: unknown): string {
   return "Transient factory failure";
 }
 
-function isCandidate(value: unknown): value is D2dProspectCandidate {
+function isRecord(value: unknown): value is Record<string, unknown> {
   return typeof value === "object" && value !== null;
 }
 

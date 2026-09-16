@@ -48,8 +48,8 @@ export async function handleD2dIntakeRequest(request: Request, deps: D2dIntakeHt
     return handlePost(request, deps);
   }
   if (request.method === "GET") {
-    const prospect = matchPath(url.pathname, `${D2D_INTAKE_HTTP_PATH}/prospects/`);
-    if (prospect) return handleGetProspect(prospect, deps);
+    const business = matchPath(url.pathname, `${D2D_INTAKE_HTTP_PATH}/businesses/`);
+    if (business) return handleGetBusiness(business, deps);
     const run = matchPath(url.pathname, `${D2D_INTAKE_HTTP_PATH}/runs/`);
     if (run) return handleGetRun(run, deps);
   }
@@ -112,8 +112,8 @@ async function handlePost(request: Request, deps: D2dIntakeHttpDeps): Promise<Re
   }
 }
 
-async function handleGetProspect(d2dProspectId: string, deps: D2dIntakeHttpDeps): Promise<Response> {
-  const receipt = await deps.registry.getReceiptByProspect(d2dProspectId);
+async function handleGetBusiness(d2dBusinessId: string, deps: D2dIntakeHttpDeps): Promise<Response> {
+  const receipt = await deps.registry.getReceiptByBusiness(d2dBusinessId);
   if (!receipt) return jsonResponse(404, { error: "not_found", version: D2D_FACTORY_INTAKE_VERSION });
   return jsonResponse(200, await withStage(receipt, deps));
 }

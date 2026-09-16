@@ -30,13 +30,14 @@ export const D2D_SOURCE_KIND = "d2d-factory-intake/v1" as const;
 
 export interface WorkflowSourceCorrelation {
   readonly kind: typeof D2D_SOURCE_KIND;
-  readonly d2dProspectId: string;
+  readonly d2dBusinessId: string;
+  readonly placeId?: string;
   readonly campaignId: string;
   readonly campaignRunId: string;
   readonly exportId: string;
   readonly exportedAt: string;
-  readonly qualificationClassification: string;
-  readonly qualificationReason: string;
+  readonly factoryQualificationOutcome: "advanced";
+  readonly factoryQualificationReason: string;
 }
 
 export interface WorkflowModels {

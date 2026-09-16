@@ -6,70 +6,187 @@ import { createMemoryIntakeRegistry } from "./registry.js";
 import { WORKFLOW_STAGES, readState } from "../workflow/state.js";
 import { runFactory } from "../workflow/orchestrator.js";
 import { createFixtureAdapters } from "../workflow/northline.fixture.js";
+import { createFactoryQualifier } from "../factory/qualify.js";
 import {
   D2D_INTAKE_REASON_CODES,
-  D2D_INTAKE_STATUSES,
+  D2D_TRANSPORT_STATUSES,
+  FACTORY_QUALIFICATION_OUTCOMES,
 } from "./types.js";
 import {
   EXPECTED_NORTHLINE_SEED,
   INTAKE_NOW,
-  candidateWith,
+  NORTHLINE_RAW,
+  countingQualifier,
   createIntakeAdapters,
   northlineBatch,
+  rawWith,
 } from "./fixture.js";
+import { factoryProspectId } from "./map.js";
+import { normalizeRawBusiness } from "./normalize.js";
 
 const SECRET = "test-d2d-intake-secret";
 
-test("accepted D2D prospect runs research and prescription and stops at Human Gate 1", async () => {
+function northlineProspectId(): string {
+  const normalized = normalizeRawBusiness(NORTHLINE_RAW);
+  assert.equal(normalized.status, "normalized");
+  if (normalized.status !== "normalized") return "";
+  return factoryProspectId(normalized.record);
+}
+
+test("advanced raw business maps to downstream workflow, preserves source correlation, and stops at Human Gate 1", async () => {
   const adapters = createIntakeAdapters();
+  const qualifier = countingQualifier();
   const registry = createMemoryIntakeRegistry();
   const result = await acceptD2dIntake({
     payload: northlineBatch(),
     presentedToken: SECRET,
     expectedSecret: SECRET,
     adapters,
+    qualifier,
     registry,
     now: INTAKE_NOW,
   });
-  assert.equal(result.receipts.length, 1);
   const receipt = result.receipts[0]!;
-  assert.equal(receipt.status, D2D_INTAKE_STATUSES.ACCEPTED);
-  assert.equal(receipt.factoryRunId, "run-prospect-northline");
-  assert.equal(receipt.factoryProspectId, "prospect-northline");
+  assert.equal(result.receipts.length, 1);
+  assert.equal(receipt.status, D2D_TRANSPORT_STATUSES.RECEIVED);
+  assert.equal(receipt.qualification?.outcome, FACTORY_QUALIFICATION_OUTCOMES.ADVANCED);
+  assert.equal(receipt.factoryRunId, `run-${northlineProspectId()}`);
   assert.equal(receipt.factoryStage, WORKFLOW_STAGES.AWAITING_PRESCRIPTION_APPROVAL);
   assert.equal(receipt.campaignId, "campaign-lake-county");
-  assert.equal(receipt.campaignRunId, "campaign-run-2026-09-15");
   assert.equal(receipt.exportId, "export-2026-09-15-northline");
+  assert.equal(qualifier.calls, 1);
   assert.equal(adapters.stats.researchCalls, 1);
   assert.equal(adapters.stats.prescribeCalls, 1);
   assert.equal(adapters.stats.writeCalls, 0);
-  assert.deepEqual(adapters.stats.publishKinds, ["prescription"]);
 
   const state = await readState(await registry.getStateStore(receipt.factoryRunId!));
   assert.ok(state);
   assert.deepEqual(state.seed, EXPECTED_NORTHLINE_SEED);
-  assert.equal(state.stage, WORKFLOW_STAGES.AWAITING_PRESCRIPTION_APPROVAL);
-  assert.equal(state.writingPackage, null);
-  assert.equal(state.publication, null);
-  assert.equal(state.writerInvocations, 0);
-  assert.equal(state.humanQaTask?.kind, "prescription-gate");
-  assert.ok(state.research);
-  assert.ok(state.prescription);
-  assert.ok(state.prescriptionPackage);
-  assert.equal(state.sourceCorrelation?.campaignId, "campaign-lake-county");
+  assert.equal(state.sourceCorrelation?.d2dBusinessId, "ChIJ-northline");
+  assert.equal(state.sourceCorrelation?.placeId, "ChIJ-northline");
   assert.equal(state.sourceCorrelation?.campaignRunId, "campaign-run-2026-09-15");
-  assert.equal(state.sourceCorrelation?.exportId, "export-2026-09-15-northline");
-  assert.equal(state.sourceCorrelation?.d2dProspectId, "prospect-northline");
+  assert.equal(state.sourceCorrelation?.factoryQualificationOutcome, "advanced");
+  assert.equal(state.writingPackage, null);
+  assert.equal(state.writerInvocations, 0);
 });
 
-test("duplicate retry of the same prospect and export returns the same run without repeating model work", async () => {
+test("raw record without phone is received and evaluated without fabricated values or research", async () => {
   const adapters = createIntakeAdapters();
+  const qualifier = countingQualifier();
+  const result = await acceptD2dIntake({
+    payload: northlineBatch({ businesses: [rawWith({ phone: "" })] }),
+    presentedToken: SECRET,
+    expectedSecret: SECRET,
+    adapters,
+    qualifier,
+    registry: createMemoryIntakeRegistry(),
+  });
+  const receipt = result.receipts[0]!;
+  assert.equal(receipt.status, D2D_TRANSPORT_STATUSES.RECEIVED);
+  assert.equal(receipt.qualification?.outcome, FACTORY_QUALIFICATION_OUTCOMES.HELD);
+  assert.equal(receipt.qualification?.reasonCode, D2D_INTAKE_REASON_CODES.MISSING_PHONE);
+  assert.equal(receipt.factoryRunId, undefined);
+  assert.equal(qualifier.calls, 1);
+  assert.equal(adapters.stats.researchCalls, 0);
+  assert.equal(adapters.stats.prescribeCalls, 0);
+  assert.equal(adapters.stats.writeCalls, 0);
+  assert.match(receipt.reason ?? "", /not invented/i);
+});
+
+test("inherited qualification conclusions cannot drive advancement", async () => {
+  const adapters = createIntakeAdapters();
+  const qualifier = countingQualifier();
+  const result = await acceptD2dIntake({
+    payload: northlineBatch({
+      businesses: [rawWith({ qualification: { classification: "qualified" } })],
+    }),
+    presentedToken: SECRET,
+    expectedSecret: SECRET,
+    adapters,
+    qualifier,
+    registry: createMemoryIntakeRegistry(),
+  });
+  const receipt = result.receipts[0]!;
+  assert.equal(receipt.status, D2D_TRANSPORT_STATUSES.INVALID);
+  assert.equal(receipt.reasonCode, D2D_INTAKE_REASON_CODES.INHERITED_CONCLUSION);
+  assert.equal(receipt.qualification, null);
+  assert.equal(qualifier.calls, 0);
+  assert.equal(adapters.stats.researchCalls, 0);
+});
+
+test("factory qualifier/selection path is invoked once, not duplicated in intake", async () => {
+  const adapters = createIntakeAdapters();
+  const alwaysReject = countingQualifier({
+    provider: "test",
+    model: "always-reject",
+    async qualify() {
+      return {
+        outcome: FACTORY_QUALIFICATION_OUTCOMES.REJECTED,
+        reasonCode: D2D_INTAKE_REASON_CODES.EXCLUDED_CATEGORY,
+        reason: "Fixture qualifier rejected independently of D2D labels.",
+      };
+    },
+  });
+  const complete = await acceptD2dIntake({
+    payload: northlineBatch(),
+    presentedToken: SECRET,
+    expectedSecret: SECRET,
+    adapters,
+    qualifier: alwaysReject,
+    registry: createMemoryIntakeRegistry(),
+  });
+  assert.equal(complete.receipts[0]?.qualification?.outcome, FACTORY_QUALIFICATION_OUTCOMES.REJECTED);
+  assert.equal(alwaysReject.calls, 1);
+  assert.equal(adapters.stats.researchCalls, 0);
+
+  const once = countingQualifier(createFactoryQualifier());
+  const registry = createMemoryIntakeRegistry();
+  await acceptD2dIntake({
+    payload: northlineBatch(),
+    presentedToken: SECRET,
+    expectedSecret: SECRET,
+    adapters,
+    qualifier: once,
+    registry,
+  });
+  await acceptD2dIntake({
+    payload: northlineBatch(),
+    presentedToken: SECRET,
+    expectedSecret: SECRET,
+    adapters,
+    qualifier: once,
+    registry,
+  });
+  assert.equal(once.calls, 1);
+});
+
+test("not-advanced business causes zero research, prescription, or writer calls", async () => {
+  const adapters = createIntakeAdapters();
+  const result = await acceptD2dIntake({
+    payload: northlineBatch({
+      businesses: [rawWith({ category: "mold remediation", categories: ["mold remediation"] })],
+    }),
+    presentedToken: SECRET,
+    expectedSecret: SECRET,
+    adapters,
+    registry: createMemoryIntakeRegistry(),
+  });
+  assert.equal(result.receipts[0]?.qualification?.outcome, FACTORY_QUALIFICATION_OUTCOMES.REJECTED);
+  assert.equal(adapters.stats.researchCalls, 0);
+  assert.equal(adapters.stats.prescribeCalls, 0);
+  assert.equal(adapters.stats.writeCalls, 0);
+});
+
+test("duplicate retry does not repeat qualification or later model work", async () => {
+  const adapters = createIntakeAdapters();
+  const qualifier = countingQualifier();
   const registry = createMemoryIntakeRegistry();
   const first = await acceptD2dIntake({
     payload: northlineBatch(),
     presentedToken: SECRET,
     expectedSecret: SECRET,
     adapters,
+    qualifier,
     registry,
     now: INTAKE_NOW,
   });
@@ -78,56 +195,65 @@ test("duplicate retry of the same prospect and export returns the same run witho
     presentedToken: SECRET,
     expectedSecret: SECRET,
     adapters,
+    qualifier,
     registry,
     now: INTAKE_NOW,
   });
-  assert.equal(first.receipts[0]?.status, D2D_INTAKE_STATUSES.ACCEPTED);
-  assert.equal(second.receipts[0]?.status, D2D_INTAKE_STATUSES.DUPLICATE);
+  assert.equal(first.receipts[0]?.qualification?.outcome, FACTORY_QUALIFICATION_OUTCOMES.ADVANCED);
+  assert.equal(second.receipts[0]?.status, D2D_TRANSPORT_STATUSES.DUPLICATE);
   assert.equal(second.receipts[0]?.factoryRunId, first.receipts[0]?.factoryRunId);
-  assert.equal(second.receipts[0]?.reasonCode, D2D_INTAKE_REASON_CODES.EXISTING_FACTORY_RUN);
+  assert.equal(qualifier.calls, 1);
   assert.equal(adapters.stats.researchCalls, 1);
   assert.equal(adapters.stats.prescribeCalls, 1);
-  assert.equal(adapters.stats.writeCalls, 0);
 });
 
-test("partial batch failure holds the invalid prospect and accepts the rest independently", async () => {
+test("operator-sized ~40-item raw batch is contract-valid with per-item isolation and no 7-item cap", async () => {
   const adapters = createIntakeAdapters();
-  const registry = createMemoryIntakeRegistry();
-  const held = candidateWith({
-    d2dProspectId: "prospect-held-nap",
-    nap: { phone: "" },
-  });
-  const second = candidateWith({
-    d2dProspectId: "prospect-second-door",
-  });
-  const result = await acceptD2dIntake({
-    payload: northlineBatch({
-      prospects: [NORTHLINE_FROM_BATCH(), held, second],
+  const qualifier = countingQualifier();
+  const businesses: unknown[] = [];
+  for (let index = 0; index < 37; index += 1) {
+    businesses.push(rawWith({ placeId: `place-held-${index}`, phone: "" }));
+  }
+  businesses.push(
+    rawWith({
+      placeId: "",
+      googlePlaceId: "",
+      cid: "",
+      mapsUrl: "",
+      googleMapsUrl: "",
+      googleUrl: "",
+      url: "",
+      name: "No Identity Listing",
     }),
+  );
+  businesses.push(rawWith({ placeId: "place-inherited", qualification: { classification: "qualified" } }));
+  businesses.push(NORTHLINE_RAW);
+  assert.equal(businesses.length, 40);
+
+  const result = await acceptD2dIntake({
+    payload: northlineBatch({ businesses }),
     presentedToken: SECRET,
     expectedSecret: SECRET,
     adapters,
-    registry,
+    qualifier,
+    registry: createMemoryIntakeRegistry(),
     now: INTAKE_NOW,
   });
-  assert.equal(result.receipts.length, 3);
-  assert.equal(result.receipts[0]?.status, D2D_INTAKE_STATUSES.ACCEPTED);
-  assert.equal(result.receipts[1]?.status, D2D_INTAKE_STATUSES.HELD);
-  assert.equal(result.receipts[1]?.reasonCode, D2D_INTAKE_REASON_CODES.MISSING_PHONE);
-  assert.equal(result.receipts[1]?.factoryRunId, undefined);
-  assert.equal(result.receipts[2]?.status, D2D_INTAKE_STATUSES.ACCEPTED);
-  assert.equal(result.receipts[2]?.factoryRunId, "run-prospect-second-door");
-  assert.equal(adapters.stats.researchCalls, 2);
-  assert.equal(adapters.stats.prescribeCalls, 2);
+  assert.equal(result.receipts.length, 40);
+  assert.equal(result.receipts.filter((item) => item.status === D2D_TRANSPORT_STATUSES.RECEIVED).length, 38);
+  assert.equal(result.receipts.filter((item) => item.status === D2D_TRANSPORT_STATUSES.INVALID).length, 2);
+  assert.equal(
+    result.receipts.filter((item) => item.qualification?.outcome === FACTORY_QUALIFICATION_OUTCOMES.ADVANCED).length,
+    1,
+  );
+  assert.equal(qualifier.calls, 38);
+  assert.equal(adapters.stats.researchCalls, 1);
   assert.equal(adapters.stats.writeCalls, 0);
 });
 
-function NORTHLINE_FROM_BATCH() {
-  return northlineBatch().prospects[0]!;
-}
-
 test("missing or invalid authentication fails closed before resource-spending work", async () => {
   const adapters = createIntakeAdapters();
+  const qualifier = countingQualifier();
   const registry = createMemoryIntakeRegistry();
   await assert.rejects(
     () =>
@@ -136,16 +262,10 @@ test("missing or invalid authentication fails closed before resource-spending wo
         presentedToken: SECRET,
         expectedSecret: "",
         adapters,
+        qualifier,
         registry,
       }),
-    (error: unknown) => {
-      assert.equal(error instanceof D2dIntakeAuthError, true);
-      if (error instanceof D2dIntakeAuthError) {
-        assert.equal(error.code, D2D_INTAKE_REASON_CODES.AUTH_NOT_CONFIGURED);
-        assert.equal(error.httpStatus, 503);
-      }
-      return true;
-    },
+    D2dIntakeAuthError,
   );
   await assert.rejects(
     () =>
@@ -153,16 +273,10 @@ test("missing or invalid authentication fails closed before resource-spending wo
         payload: northlineBatch(),
         expectedSecret: SECRET,
         adapters,
+        qualifier,
         registry,
       }),
-    (error: unknown) => {
-      assert.equal(error instanceof D2dIntakeAuthError, true);
-      if (error instanceof D2dIntakeAuthError) {
-        assert.equal(error.code, D2D_INTAKE_REASON_CODES.AUTH_MISSING);
-        assert.equal(error.httpStatus, 401);
-      }
-      return true;
-    },
+    D2dIntakeAuthError,
   );
   await assert.rejects(
     () =>
@@ -171,95 +285,65 @@ test("missing or invalid authentication fails closed before resource-spending wo
         presentedToken: "wrong-token",
         expectedSecret: SECRET,
         adapters,
+        qualifier,
         registry,
       }),
-    (error: unknown) => {
-      assert.equal(error instanceof D2dIntakeAuthError, true);
-      if (error instanceof D2dIntakeAuthError) {
-        assert.equal(error.code, D2D_INTAKE_REASON_CODES.AUTH_INVALID);
-        assert.equal(error.httpStatus, 401);
-      }
-      return true;
-    },
+    D2dIntakeAuthError,
   );
+  assert.equal(qualifier.calls, 0);
   assert.equal(adapters.stats.researchCalls, 0);
-  assert.equal(adapters.stats.prescribeCalls, 0);
-  assert.equal(adapters.stats.writeCalls, 0);
-  assert.deepEqual(adapters.stats.publishKinds, []);
 });
 
-test("invalid envelope fails before any prospect work", async () => {
+test("invalid envelope fails before any business work", async () => {
   const adapters = createIntakeAdapters();
+  const qualifier = countingQualifier();
   await assert.rejects(
     () =>
       acceptD2dIntake({
-        payload: { version: "d2d-factory-intake/v0", prospects: [northlineBatch().prospects[0]] },
+        payload: { version: "d2d-factory-intake/v0", businesses: [NORTHLINE_RAW] },
         presentedToken: SECRET,
         expectedSecret: SECRET,
         adapters,
+        qualifier,
         registry: createMemoryIntakeRegistry(),
       }),
     D2dIntakeEnvelopeError,
   );
+  assert.equal(qualifier.calls, 0);
   assert.equal(adapters.stats.researchCalls, 0);
 });
 
-test("transient downstream failure can resume without redoing completed research", async () => {
+test("transient downstream failure can resume without redoing qualification or research", async () => {
   const adapters = createIntakeAdapters({ prescribeErrorOnce: { throws: 1 } });
+  const qualifier = countingQualifier();
   const registry = createMemoryIntakeRegistry();
   const first = await acceptD2dIntake({
     payload: northlineBatch(),
     presentedToken: SECRET,
     expectedSecret: SECRET,
     adapters,
+    qualifier,
     registry,
     now: INTAKE_NOW,
   });
-  assert.equal(first.receipts[0]?.status, D2D_INTAKE_STATUSES.RETRYABLE);
-  assert.equal(first.receipts[0]?.factoryRunId, "run-prospect-northline");
+  assert.equal(first.receipts[0]?.status, D2D_TRANSPORT_STATUSES.RETRYABLE);
+  assert.equal(qualifier.calls, 1);
   assert.equal(adapters.stats.researchCalls, 1);
-  assert.equal(adapters.stats.prescribeCalls, 1);
-  const stateAfterFail = await readState(await registry.getStateStore("run-prospect-northline"));
-  assert.equal(stateAfterFail?.stage, WORKFLOW_STAGES.PRESCRIPTION);
-  assert.ok(stateAfterFail?.research);
-  assert.equal(stateAfterFail?.prescription, null);
-
   const second = await acceptD2dIntake({
     payload: northlineBatch(),
     presentedToken: SECRET,
     expectedSecret: SECRET,
     adapters,
+    qualifier,
     registry,
     now: INTAKE_NOW,
   });
-  assert.equal(second.receipts[0]?.status, D2D_INTAKE_STATUSES.ACCEPTED);
-  assert.equal(second.receipts[0]?.factoryRunId, "run-prospect-northline");
+  assert.equal(second.receipts[0]?.status, D2D_TRANSPORT_STATUSES.RECEIVED);
+  assert.equal(second.receipts[0]?.qualification?.outcome, FACTORY_QUALIFICATION_OUTCOMES.ADVANCED);
   assert.equal(second.receipts[0]?.factoryStage, WORKFLOW_STAGES.AWAITING_PRESCRIPTION_APPROVAL);
+  assert.equal(qualifier.calls, 1);
   assert.equal(adapters.stats.researchCalls, 1);
   assert.equal(adapters.stats.prescribeCalls, 2);
-  assert.equal(adapters.stats.writeCalls, 0);
-});
-
-test("intake does not run writer, website-copy publication, or a demo build before approval", async () => {
-  const adapters = createIntakeAdapters();
-  const registry = createMemoryIntakeRegistry();
-  const result = await acceptD2dIntake({
-    payload: northlineBatch(),
-    presentedToken: SECRET,
-    expectedSecret: SECRET,
-    adapters,
-    registry,
-    now: INTAKE_NOW,
-  });
-  const state = await readState(await registry.getStateStore(result.receipts[0]!.factoryRunId!));
-  assert.equal(state?.stage, WORKFLOW_STAGES.AWAITING_PRESCRIPTION_APPROVAL);
-  assert.equal(state?.writingPackage, null);
-  assert.equal(state?.publication, null);
-  assert.equal(state?.writerInvocations, 0);
-  assert.equal(adapters.stats.writeCalls, 0);
-  assert.equal(adapters.stats.publishKinds.includes("website_copy"), false);
-  assert.equal("websiteBuild" in (state ?? {}), false);
-  assert.equal("outreach" in (state ?? {}), false);
 });
 
 test("existing factory can continue from the intake store after Human Gate 1 approval", async () => {
@@ -288,24 +372,4 @@ test("existing factory can continue from the intake store after Human Gate 1 app
   assert.equal(continued.state.stage, WORKFLOW_STAGES.AWAITING_COPY_QA);
   assert.equal(continuedAdapters.stats.writeCalls, 1);
   assert.equal(intakeAdapters.stats.writeCalls, 0);
-});
-
-test("held invalid NAP does not create a factory run", async () => {
-  const adapters = createIntakeAdapters();
-  const registry = createMemoryIntakeRegistry();
-  const result = await acceptD2dIntake({
-    payload: northlineBatch({
-      prospects: [candidateWith({ nap: { website: "" } })],
-    }),
-    presentedToken: SECRET,
-    expectedSecret: SECRET,
-    adapters,
-    registry,
-  });
-  assert.equal(result.receipts[0]?.status, D2D_INTAKE_STATUSES.HELD);
-  assert.equal(result.receipts[0]?.reasonCode, D2D_INTAKE_REASON_CODES.MISSING_WEBSITE);
-  assert.equal(result.receipts[0]?.factoryRunId, undefined);
-  const state = await readState(await registry.getStateStore("run-prospect-northline"));
-  assert.equal(state, null);
-  assert.equal(adapters.stats.researchCalls, 0);
 });

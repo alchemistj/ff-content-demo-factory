@@ -83,10 +83,10 @@ The only routine human gates are:
 
 No additional human gates. No model-as-editor gate. Prescription publication is the same existing gate, with a Doc link when configured.
 
-## D2D qualified-prospect intake
+## D2D raw geographic intake
 
-Versioned contract: `d2d-factory-intake/v1`. Types: `src/d2d-intake/index.ts` (package export `ff-content-demo-factory/d2d-intake`). Human docs: `docs/d2d-intake/CONTRACT.md`.
+Versioned contract: `d2d-factory-intake/v1`. Types: `src/d2d-intake/index.ts` (package export `ff-content-demo-factory/d2d-intake`). Factory qualifier: `src/factory/qualify.ts`. Human docs: `docs/d2d-intake/CONTRACT.md`.
 
-D2D sends only **qualified** candidates. Content Factory maps them onto the existing `ProspectSeed` and `runFactory()` state machine. Intake stops at Human Gate 1 (`awaiting_prescription_approval`). It does not invent NAP/identity, does not start the writer, and does not publish website copy.
+D2D sends a **raw/normalized** Google Business / Apify cohort. Content Factory is the only owner of keep/reject/advance. Intake calls that qualifier once per new business + export identity. Only an **advanced** business is mapped onto the existing `ProspectSeed` and `runFactory()`. Intake stops at Human Gate 1 (`awaiting_prescription_approval`). It does not invent NAP/identity, does not start the writer, and does not publish website copy.
 
-Ingress is authenticated (`D2D_INTAKE_SHARED_SECRET`) and fails closed. Statuses: `accepted` / `duplicate` / `held` / `failed` / `retryable`. Campaign, campaign-run, export, and D2D prospect IDs are persisted on receipts and `WorkflowState.sourceCorrelation`.
+Ingress is authenticated (`D2D_INTAKE_SHARED_SECRET`) and fails closed. Transport statuses: `received` / `duplicate` / `invalid` / `retryable`. Qualification outcomes: `advanced` / `rejected` / `held` / `backlog`. Campaign, campaign-run, export, place, and Apify IDs are persisted on receipts and `WorkflowState.sourceCorrelation`.

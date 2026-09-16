@@ -33,7 +33,7 @@ npm run test:all
 
 Lane interfaces live in [`docs/runtime/INTERFACES.md`](docs/runtime/INTERFACES.md).
 
-Qualified D2D prospects enter through the versioned `d2d-factory-intake/v1` contract. That path maps to the existing `ProspectSeed`, runs research + prescription, and stops at Human Gate 1. Contract and operator setup (no secrets): [`docs/d2d-intake/CONTRACT.md`](docs/d2d-intake/CONTRACT.md), [`docs/d2d-intake/OPERATOR_SETUP.md`](docs/d2d-intake/OPERATOR_SETUP.md).
+Raw D2D geographic listings enter through the versioned `d2d-factory-intake/v1` contract. Content Factory owns keep/reject/advance qualification. Only advanced businesses map to the existing `ProspectSeed`, run research + prescription, and stop at Human Gate 1. Contract and operator setup (no secrets): [`docs/d2d-intake/CONTRACT.md`](docs/d2d-intake/CONTRACT.md), [`docs/d2d-intake/OPERATOR_SETUP.md`](docs/d2d-intake/OPERATOR_SETUP.md).
 
 ## Canonical writer guides
 

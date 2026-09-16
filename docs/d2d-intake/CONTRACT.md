@@ -2,13 +2,17 @@
 
 This is the versioned cross-repo contract between `alchemistj/ff-gb-door-to-door-system` and this Content Demo Factory.
 
-D2D remains source of truth for campaign geography, business identity, upstream qualification, and upstream evidence/provenance. Content Factory owns factory run state from accepted intake forward.
+**D2D owns collection and transport facts:** campaign geography (center/radius/search), Apify/Google Business identity, raw listing fields, deterministic hygiene, and delivery/correlation status.
 
-The old direct D2D → `ff-2-demos` route is not this pipeline. The route is: **qualified D2D candidate → Content Factory → Human Gate 1 → existing factory process**.
+**Content Factory is the only owner of keep/reject/advance qualification.** D2D must not send a qualification conclusion as authority. The route is: **raw/normalized geographic cohort → Content Factory qualification → only advanced businesses enter `ProspectSeed` / research / prescription → Human Gate 1**.
+
+The old direct D2D → `ff-2-demos` route is not this pipeline. D2D is not asked to prequalify a 4–7 demo shortlist.
 
 ## Envelope
 
 `POST /d2d-factory-intake/v1`
+
+Default operator cohort size is **40** (`D2D_INTAKE_MAX_BATCH`, configurable). Transport does not inherit the historical 7-candidate cap.
 
 ```json
 {
@@ -17,84 +21,83 @@ The old direct D2D → `ff-2-demos` route is not this pipeline. The route is: **
   "campaignRunId": "campaign-run-2026-09-15",
   "exportId": "export-2026-09-15-northline",
   "exportedAt": "2026-09-15T17:00:00.000Z",
-  "prospects": [
+  "campaign": {
+    "location": "Lake County",
+    "radiusMeters": 8000,
+    "center": { "lat": 41.9, "lng": -87.8 },
+    "search": { "query": "garage door", "searchStrings": ["garage door repair"] }
+  },
+  "provenance": {
+    "provider": "apify",
+    "actor": "compass~crawler-google-places",
+    "runId": "apify-run-northline",
+    "datasetId": "ds-northline"
+  },
+  "businesses": [
     {
-      "d2dProspectId": "prospect-northline",
-      "business": {
-        "name": "Northline Garage Doors",
-        "trade": "garage door service",
-        "serviceArea": "Lake County"
+      "placeId": "ChIJ-northline",
+      "name": "Northline Garage Doors",
+      "category": "garage door service",
+      "categories": ["garage door service"],
+      "address": {
+        "street": "18 Harbor Avenue",
+        "city": "Mason",
+        "region": "IL",
+        "postalCode": "60000",
+        "country": "US"
       },
-      "nap": {
-        "name": "Northline Garage Doors",
-        "address": {
-          "street": "18 Harbor Avenue",
-          "city": "Mason",
-          "region": "IL",
-          "postalCode": "60000",
-          "country": "US"
-        },
-        "phone": "+1-555-010-1000",
-        "website": "https://northline.example/"
-      },
-      "qualification": {
-        "classification": "qualified",
-        "reason": "Complete NAP and service-area evidence from the Google Business listing.",
-        "evidenceRefs": [{ "kind": "google_business", "refId": "place-northline", "url": "https://maps.example/northline" }]
-      },
-      "provenance": {
-        "sourceRefs": [
-          {
-            "kind": "google_business",
-            "refId": "place-northline",
-            "url": "https://maps.example/northline",
-            "label": "Google Business Profile"
-          }
-        ],
-        "sourceNotes": "Qualified by D2D geographic campaign; not a raw scrape dump."
-      },
-      "createdAt": "2026-09-15T16:30:00.000Z"
+      "location": "Lake County",
+      "phone": "+1-555-010-1000",
+      "website": "https://northline.example/",
+      "rating": 4.8,
+      "reviewCount": 42,
+      "mapsUrl": "https://maps.example/northline",
+      "coordinates": { "lat": 41.901, "lng": -87.812 }
     }
   ]
 }
 ```
 
-Required identity/NAP fields are exactly the `ProspectSeed` fields. Missing values are **held**, never invented.
+Raw intake accepts available source facts. Missing optional fields (phone, website, category, street address, rating) remain evidence for factory qualification. They are not fabricated and they are not a transport rejection.
 
-`qualification.classification` must be `qualified` to start a run. `unqualified` and `needs_review` are held.
+Stable identity is required at transport: `placeId` / `googlePlaceId` / `cid`, or a Google/maps URL, plus a name/title.
+
+## Non-authoritative inherited conclusions
+
+These fields are **not** Content Factory qualification. If present on a business or the envelope, they are rejected as `INHERITED_CONCLUSION` and cannot drive advancement:
+
+`qualification`, `viable`, `architectQualified`, `pagePrescription`, `opportunityScore`, `tier`, `strongDemoCandidate`, `valueHierarchy`, `reviewClassification`, `recommendedFirstReview`.
 
 ## Receipts
 
-Each prospect gets an independent receipt. One malformed item does not drop the rest of the batch.
+Transport status and factory qualification are separate. One malformed item does not drop the rest of the batch.
 
-| `status` | Meaning |
+| `status` (transport) | Meaning |
 | --- | --- |
-| `accepted` | New durable factory run created and progressed through research + prescription to Human Gate 1 |
-| `duplicate` | Same D2D prospect + export/intake version, or this prospect already has a factory run. Same `factoryRunId`. No repeated model work |
-| `held` | Invalid/partial identity, NAP, provenance, or not qualified. No factory run |
-| `failed` | Non-retryable factory contract violation (for example writer/website-copy ran before Gate 1) |
-| `retryable` | Transient downstream failure. Retry the same payload; completed research/prescription stages are not redone |
+| `received` | Raw listing accepted into Content Factory. Qualification ran (or is recorded on `qualification`) |
+| `duplicate` | Same stable business + export/intake version (or an existing qualification). No repeated qualification or model work |
+| `invalid` | Malformed identity, inherited conclusion, or over-limit extra item |
+| `retryable` | Transient factory failure after advance. Retry resumes without re-qualifying |
 
-Correlation fields on every receipt: `d2dProspectId`, `campaignId`, `campaignRunId`, `exportId`, `correlationId` (`{d2dProspectId}::{exportId}::d2d-factory-intake/v1`). Accepted/duplicate/retryable receipts also include `factoryRunId`, `factoryProspectId`, and `factoryStage`.
+| `qualification.outcome` | Meaning |
+| --- | --- |
+| `advanced` | Factory selected this business. Mapped to `ProspectSeed` and run through research + prescription to Human Gate 1 |
+| `rejected` | Factory rejected (for example excluded category). Zero research/prescription/writer calls |
+| `held` | Factory judged the record not ready to advance (for example missing phone/website). No invented `ProspectSeed` |
+| `backlog` | Duplicate on the current factory bench |
+| `null` | Transport invalid; qualification did not run |
 
-Poll without scraping logs:
+Correlation: `d2dBusinessId`, `placeId`, `campaignId`, `campaignRunId`, `exportId`, `correlationId`. Advanced receipts also include `factoryRunId`, `factoryProspectId`, and `factoryStage`.
 
-- `GET /d2d-factory-intake/v1/prospects/{d2dProspectId}`
+Poll:
+
+- `GET /d2d-factory-intake/v1/businesses/{d2dBusinessId}`
 - `GET /d2d-factory-intake/v1/runs/{factoryRunId}`
 
 ## Factory boundary
 
-Accepted intake maps to the existing `ProspectSeed`, creates/resumes the existing workflow state, runs the existing research and prescription stages, and **stops at `awaiting_prescription_approval`** (Human Gate 1).
+`src/factory/qualify.ts` is the keep/reject/advance path (smallest useful port of historical seeded-discovery / candidate-bench rules). Intake calls it **once** per new raw business + export identity.
 
-It does not run the writer, website-copy publication, website build, `ff-2-demos`, or outreach. D2D seed/provenance is recorded as source notes and `sourceCorrelation` on workflow state. It is not an approved page plan.
+Only `advanced` records are mapped into today's `ProspectSeed` and `runFactory()`. After that, the merged workflow is authoritative through Human Gate 1. Intake does not run the writer, website-copy publication, website build, or outreach.
 
-The existing `runFactory()` path remains the factory after Gate 1 approval.
-
-## Idempotency
-
-- One accepted D2D prospect → exactly one durable factory run (`run-{d2dProspectId}`).
-- Retry of the same prospect + `exportId` + `d2d-factory-intake/v1` returns `duplicate`.
-- A later export for a prospect that already has a run also returns `duplicate` of that run.
-- Held records are not runs. A later complete payload for the same prospect may be accepted.
-
-Companion upstream: `alchemistj/ff-gb-door-to-door-system#4`. This schema is the Content Factory intake contract those exports should emit.
+Companion upstream: `alchemistj/ff-gb-door-to-door-system#4`. D2D should emit this raw cohort, not a prequalified shortlist.
