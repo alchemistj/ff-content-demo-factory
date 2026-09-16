@@ -29,3 +29,19 @@ export function isD2dIntakeAuthError(value: unknown): value is D2dIntakeAuthErro
 export function isD2dIntakeEnvelopeError(value: unknown): value is D2dIntakeEnvelopeError {
   return value instanceof D2dIntakeEnvelopeError;
 }
+
+export class D2dIntakeConfigError extends Error {
+  readonly code: D2dIntakeReasonCode;
+  readonly httpStatus: number;
+
+  constructor(code: D2dIntakeReasonCode, message: string, httpStatus = 503) {
+    super(message);
+    this.name = "D2dIntakeConfigError";
+    this.code = code;
+    this.httpStatus = httpStatus;
+  }
+}
+
+export function isD2dIntakeConfigError(value: unknown): value is D2dIntakeConfigError {
+  return value instanceof D2dIntakeConfigError;
+}

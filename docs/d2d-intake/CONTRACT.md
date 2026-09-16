@@ -12,6 +12,8 @@ Canonical D2D sources: `tests/fixtures/d2d-factory-intake-v1.json` and `src/lib/
 
 `POST /d2d-factory-intake/v1`
 
+Intended Production URL: `https://factory.fluidframemarketing.com/d2d-factory-intake/v1`.
+
 Default operator cohort size is **40** (`D2D_INTAKE_MAX_BATCH`, configurable). Transport does not inherit the historical 7-candidate cap.
 
 Illustrative local example (not the cross-repo golden):

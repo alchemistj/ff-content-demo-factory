@@ -149,7 +149,7 @@ export async function readRunState(registry: D2dIntakeRegistry, runId: string): 
   return readState(await registry.getStateStore(runId));
 }
 
-function shouldReplaceReceipt(existing: D2dBusinessReceipt, next: D2dBusinessReceipt): boolean {
+export function shouldReplaceReceipt(existing: D2dBusinessReceipt, next: D2dBusinessReceipt): boolean {
   if (!existing.factoryRunId && next.factoryRunId) return true;
   if (existing.status === "invalid") return true;
   if (existing.status === "retryable" && next.status !== "invalid") return true;

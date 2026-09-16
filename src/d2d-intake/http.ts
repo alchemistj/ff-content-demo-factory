@@ -2,7 +2,7 @@ import { createServer, type IncomingMessage, type Server, type ServerResponse } 
 import type { FactoryAdapters } from "../workflow/types.js";
 import { readState } from "../workflow/state.js";
 import { assertD2dIntakeAuth, presentedBearerToken } from "./auth.js";
-import { isD2dIntakeAuthError, isD2dIntakeEnvelopeError } from "./errors.js";
+import { isD2dIntakeAuthError, isD2dIntakeConfigError, isD2dIntakeEnvelopeError } from "./errors.js";
 import { acceptD2dIntake } from "./accept.js";
 import type { D2dIntakeRegistry } from "./registry.js";
 import {
@@ -110,6 +110,13 @@ async function handlePost(request: Request, deps: D2dIntakeHttpDeps): Promise<Re
         reason: error.message,
       });
     }
+    if (isD2dIntakeConfigError(error)) {
+      return jsonResponse(error.httpStatus, {
+        error: "durable_store_not_configured",
+        reasonCode: error.code,
+        reason: error.message,
+      });
+    }
     throw error;
   }
 }
@@ -146,26 +153,34 @@ async function withStage(receipt: Awaited<ReturnType<D2dIntakeRegistry["getRecei
   };
 }
 
+export async function nodeIncomingToRequest(req: IncomingMessage): Promise<Request> {
+  const host = req.headers.host ?? "127.0.0.1";
+  const url = `http://${host}${req.url ?? "/"}`;
+  const body = await readNodeBody(req);
+  const headers = new Headers();
+  for (const [key, value] of Object.entries(req.headers)) {
+    if (typeof value === "string") headers.set(key, value);
+    else if (Array.isArray(value)) headers.set(key, value.join(", "));
+  }
+  const init: RequestInit = { method: req.method ?? "GET", headers };
+  if (body.length > 0 && req.method !== "GET" && req.method !== "HEAD") {
+    init.body = body;
+  }
+  return new Request(url, init);
+}
+
+export async function writeFetchResponse(res: ServerResponse, response: Response): Promise<void> {
+  res.statusCode = response.status;
+  response.headers.forEach((value, key) => {
+    res.setHeader(key, value);
+  });
+  res.end(Buffer.from(await response.arrayBuffer()));
+}
+
 async function dispatchNode(req: IncomingMessage, res: ServerResponse, deps: D2dIntakeHttpDeps): Promise<void> {
   try {
-    const host = req.headers.host ?? "127.0.0.1";
-    const url = `http://${host}${req.url ?? "/"}`;
-    const body = await readNodeBody(req);
-    const headers = new Headers();
-    for (const [key, value] of Object.entries(req.headers)) {
-      if (typeof value === "string") headers.set(key, value);
-      else if (Array.isArray(value)) headers.set(key, value.join(", "));
-    }
-    const init: RequestInit = { method: req.method ?? "GET", headers };
-    if (body.length > 0 && req.method !== "GET" && req.method !== "HEAD") {
-      init.body = body;
-    }
-    const response = await handleD2dIntakeRequest(new Request(url, init), deps);
-    res.statusCode = response.status;
-    response.headers.forEach((value, key) => {
-      res.setHeader(key, value);
-    });
-    res.end(Buffer.from(await response.arrayBuffer()));
+    const response = await handleD2dIntakeRequest(await nodeIncomingToRequest(req), deps);
+    await writeFetchResponse(res, response);
   } catch (error) {
     res.statusCode = 500;
     res.setHeader("content-type", "application/json");
@@ -181,7 +196,12 @@ async function readLimitedBody(request: Request): Promise<string> {
   return raw.toString("utf8");
 }
 
-function readNodeBody(req: IncomingMessage): Promise<string> {
+function readNodeBody(req: IncomingMessage & { body?: unknown }): Promise<string> {
+  if (typeof req.body === "string") return Promise.resolve(req.body);
+  if (Buffer.isBuffer(req.body)) return Promise.resolve(req.body.toString("utf8"));
+  if (req.body && typeof req.body === "object") {
+    return Promise.resolve(JSON.stringify(req.body));
+  }
   return new Promise((resolve, reject) => {
     const chunks: Buffer[] = [];
     let size = 0;

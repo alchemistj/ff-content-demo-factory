@@ -140,6 +140,7 @@ export const D2D_INTAKE_REASON_CODES = Object.freeze({
   FACTORY_ADVANCED: "FACTORY_ADVANCED",
   MISSING_CORRELATION_ID: "MISSING_CORRELATION_ID",
   INVALID_CORRELATION_ID: "INVALID_CORRELATION_ID",
+  DURABLE_STORE_NOT_CONFIGURED: "DURABLE_STORE_NOT_CONFIGURED",
 } as const);
 
 export type D2dIntakeReasonCode = (typeof D2D_INTAKE_REASON_CODES)[keyof typeof D2D_INTAKE_REASON_CODES];
@@ -151,8 +152,24 @@ export const D2D_INTAKE_HOST_ENV = "D2D_INTAKE_HOST" as const;
 export const D2D_INTAKE_PORT_ENV = "D2D_INTAKE_PORT" as const;
 export const D2D_INTAKE_ADAPTERS_MODULE_ENV = "D2D_INTAKE_ADAPTERS_MODULE" as const;
 export const D2D_INTAKE_MAX_BATCH_ENV = "D2D_INTAKE_MAX_BATCH" as const;
+export const D2D_INTAKE_RUNTIME_ENV = "D2D_INTAKE_RUNTIME" as const;
+export const D2D_INTAKE_SUPABASE_URL_ENV = "D2D_INTAKE_SUPABASE_URL" as const;
+export const D2D_INTAKE_SUPABASE_SERVICE_ROLE_KEY_ENV = "D2D_INTAKE_SUPABASE_SERVICE_ROLE_KEY" as const;
+export const SUPABASE_URL_ENV = "SUPABASE_URL" as const;
+export const SUPABASE_SERVICE_ROLE_KEY_ENV = "SUPABASE_SERVICE_ROLE_KEY" as const;
+export const FACTORY_RESEARCH_PROVIDER_ENV = "FACTORY_RESEARCH_PROVIDER" as const;
+export const FACTORY_RESEARCH_MODEL_ENV = "FACTORY_RESEARCH_MODEL" as const;
+export const FACTORY_PRESCRIPTION_PROVIDER_ENV = "FACTORY_PRESCRIPTION_PROVIDER" as const;
+export const FACTORY_PRESCRIPTION_MODEL_ENV = "FACTORY_PRESCRIPTION_MODEL" as const;
+export const FACTORY_MODEL_API_KEY_ENV = "FACTORY_MODEL_API_KEY" as const;
+export const FACTORY_MODEL_BASE_URL_ENV = "FACTORY_MODEL_BASE_URL" as const;
 
 export const D2D_INTAKE_HTTP_PATH = "/d2d-factory-intake/v1" as const;
+export const D2D_INTAKE_VERCEL_API_PATH = "/api/d2d-intake" as const;
+export const D2D_INTAKE_HEALTH_PATH = "/health" as const;
+export const D2D_INTAKE_HEALTH_API_PATH = "/api/health" as const;
+export const D2D_INTAKE_PUBLIC_HOST = "factory.fluidframemarketing.com" as const;
+export const D2D_INTAKE_PUBLIC_URL = `https://${D2D_INTAKE_PUBLIC_HOST}${D2D_INTAKE_HTTP_PATH}` as const;
 
 export interface D2dLatLng {
   readonly lat: number;
