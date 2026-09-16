@@ -180,22 +180,8 @@ async function acceptOneBusiness(
     };
   }
 
-  const existingBusiness = await input.registry.getReceiptByBusiness(record.sourceBusinessId);
-  if (existingBusiness?.qualification) {
-    const duplicate: D2dBusinessReceipt = {
-      ...existingBusiness,
-      status: D2D_TRANSPORT_STATUSES.DUPLICATE,
-      campaignId: batch.campaignId,
-      campaignRunId: batch.campaignRunId,
-      exportId: batch.exportId,
-      correlationId,
-      reason: "This raw business already has a factory qualification decision",
-      reasonCode: D2D_INTAKE_REASON_CODES.EXISTING_QUALIFICATION,
-    };
-    await input.registry.saveReceipt(duplicate);
-    return duplicate;
-  }
-
+  // Durable idempotency is correlationId (sourceBusinessId + exportId + version).
+  // getReceiptByBusiness() is operator latest-status lookup and must not collapse a new export.
   const duplicateOf = seenIds.get(record.sourceBusinessId) ?? null;
   if (!duplicateOf) seenIds.set(record.sourceBusinessId, record.sourceBusinessId);
 

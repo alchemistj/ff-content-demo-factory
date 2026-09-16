@@ -69,6 +69,19 @@ test("HTTP intake authenticates first and returns per-business receipts", async 
   assert.equal(statusBody.sourceCorrelation.d2dProspectId, "d2d-prospect-northline");
   assert.equal(statusBody.correlationId, "src-northline::export-2026-09-15-northline::d2d-factory-intake/v1");
   assert.equal(adapters.stats.writeCalls, 0);
+
+  const byBusiness = await handleD2dIntakeRequest(
+    request(`${D2D_INTAKE_HTTP_PATH}/businesses/src-northline`, {
+      method: "GET",
+      headers: { authorization: `Bearer ${SECRET}` },
+    }),
+    { expectedSecret: SECRET, adapters, registry },
+  );
+  assert.equal(byBusiness.status, 200);
+  const businessBody = (await byBusiness.json()) as { sourceBusinessId: string; correlationId: string; exportId: string };
+  assert.equal(businessBody.sourceBusinessId, "src-northline");
+  assert.equal(businessBody.exportId, "export-2026-09-15-northline");
+  assert.equal(businessBody.correlationId, statusBody.correlationId);
 });
 
 test("file registry preserves run correlation across process-like reloads", async () => {

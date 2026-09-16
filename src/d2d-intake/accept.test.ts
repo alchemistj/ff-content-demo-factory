@@ -11,10 +11,13 @@ import {
   D2D_INTAKE_REASON_CODES,
   D2D_TRANSPORT_STATUSES,
   FACTORY_QUALIFICATION_OUTCOMES,
+  intakeCorrelationId,
 } from "./types.js";
 import {
   EXPECTED_NORTHLINE_SEED,
   INTAKE_NOW,
+  NORTHLINE_CORRELATION_ID,
+  NORTHLINE_EXPORT_ID,
   NORTHLINE_RAW,
   SEEDABLE_HVAC_RAW,
   countingQualifier,
@@ -32,6 +35,27 @@ function northlineProspectId(): string {
   assert.equal(normalized.status, "normalized");
   if (normalized.status !== "normalized") return "";
   return factoryProspectId(normalized.record);
+}
+
+function exportBatch(input: {
+  readonly exportId: string;
+  readonly campaignRunId: string;
+  readonly business?: Record<string, unknown>;
+}) {
+  const business = input.business ?? { ...NORTHLINE_RAW };
+  const sourceBusinessId = String(business.sourceBusinessId ?? "src-northline");
+  return {
+    ...northlineBatch({
+      exportId: input.exportId,
+      businesses: [
+        {
+          ...business,
+          correlationId: intakeCorrelationId({ sourceBusinessId, exportId: input.exportId }),
+        },
+      ],
+    }),
+    campaignRunId: input.campaignRunId,
+  };
 }
 
 test("advanced raw business maps to downstream workflow, preserves source correlation, and stops at Human Gate 1", async () => {
@@ -214,6 +238,171 @@ test("duplicate retry does not repeat qualification or later model work", async 
   assert.equal(qualifier.calls, 1);
   assert.equal(adapters.stats.researchCalls, 1);
   assert.equal(adapters.stats.prescribeCalls, 1);
+});
+
+test("same payload/same export retried twice is duplicate and qualifier/model work runs once", async () => {
+  const adapters = createIntakeAdapters();
+  const qualifier = countingQualifier();
+  const registry = createMemoryIntakeRegistry();
+  const payload = northlineBatch();
+  const first = await acceptD2dIntake({
+    payload,
+    presentedToken: SECRET,
+    expectedSecret: SECRET,
+    adapters,
+    qualifier,
+    registry,
+    now: INTAKE_NOW,
+  });
+  const second = await acceptD2dIntake({
+    payload,
+    presentedToken: SECRET,
+    expectedSecret: SECRET,
+    adapters,
+    qualifier,
+    registry,
+    now: INTAKE_NOW,
+  });
+  assert.equal(first.receipts[0]?.status, D2D_TRANSPORT_STATUSES.RECEIVED);
+  assert.equal(first.receipts[0]?.correlationId, NORTHLINE_CORRELATION_ID);
+  assert.equal(first.receipts[0]?.exportId, NORTHLINE_EXPORT_ID);
+  assert.equal(second.receipts[0]?.status, D2D_TRANSPORT_STATUSES.DUPLICATE);
+  assert.equal(second.receipts[0]?.correlationId, NORTHLINE_CORRELATION_ID);
+  assert.equal(second.receipts[0]?.exportId, NORTHLINE_EXPORT_ID);
+  assert.equal(second.receipts[0]?.factoryRunId, first.receipts[0]?.factoryRunId);
+  assert.equal(qualifier.calls, 1);
+  assert.equal(adapters.stats.researchCalls, 1);
+  assert.equal(adapters.stats.prescribeCalls, 1);
+  assert.equal(adapters.stats.writeCalls, 0);
+});
+
+test("same sourceBusinessId in a new export is a new intake identity and is qualified once per export", async () => {
+  const adapters = createIntakeAdapters();
+  const qualifier = countingQualifier();
+  const registry = createMemoryIntakeRegistry();
+  const firstExportId = NORTHLINE_EXPORT_ID;
+  const secondExportId = "export-2026-09-16-second";
+  const first = await acceptD2dIntake({
+    payload: exportBatch({
+      exportId: firstExportId,
+      campaignRunId: "campaign-run-2026-09-15",
+      business: { ...SEEDABLE_HVAC_RAW },
+    }),
+    presentedToken: SECRET,
+    expectedSecret: SECRET,
+    adapters,
+    qualifier,
+    registry,
+  });
+  const second = await acceptD2dIntake({
+    payload: exportBatch({
+      exportId: secondExportId,
+      campaignRunId: "campaign-run-2026-09-16",
+      business: { ...SEEDABLE_HVAC_RAW },
+    }),
+    presentedToken: SECRET,
+    expectedSecret: SECRET,
+    adapters,
+    qualifier,
+    registry,
+  });
+  const firstReceipt = first.receipts[0]!;
+  const secondReceipt = second.receipts[0]!;
+  const firstCorrelation = intakeCorrelationId({
+    sourceBusinessId: "src-harbor-hvac",
+    exportId: firstExportId,
+  });
+  const secondCorrelation = intakeCorrelationId({
+    sourceBusinessId: "src-harbor-hvac",
+    exportId: secondExportId,
+  });
+  assert.equal(firstReceipt.status, D2D_TRANSPORT_STATUSES.RECEIVED);
+  assert.equal(secondReceipt.status, D2D_TRANSPORT_STATUSES.RECEIVED);
+  assert.notEqual(secondReceipt.status, D2D_TRANSPORT_STATUSES.DUPLICATE);
+  assert.equal(firstReceipt.sourceBusinessId, "src-harbor-hvac");
+  assert.equal(secondReceipt.sourceBusinessId, "src-harbor-hvac");
+  assert.equal(firstReceipt.campaignRunId, "campaign-run-2026-09-15");
+  assert.equal(secondReceipt.campaignRunId, "campaign-run-2026-09-16");
+  assert.equal(firstReceipt.exportId, firstExportId);
+  assert.equal(secondReceipt.exportId, secondExportId);
+  assert.equal(firstReceipt.correlationId, firstCorrelation);
+  assert.equal(secondReceipt.correlationId, secondCorrelation);
+  assert.equal(qualifier.calls, 2);
+  assert.equal(adapters.stats.researchCalls, 0);
+  assert.equal(adapters.stats.prescribeCalls, 0);
+  assert.equal(adapters.stats.writeCalls, 0);
+});
+
+test("business status lookup returns latest receipt without collapsing per-correlation identity", async () => {
+  const adapters = createIntakeAdapters();
+  const qualifier = countingQualifier();
+  const registry = createMemoryIntakeRegistry();
+  const firstExportId = NORTHLINE_EXPORT_ID;
+  const secondExportId = "export-2026-09-16-second";
+  const firstCorrelation = intakeCorrelationId({
+    sourceBusinessId: "src-harbor-hvac",
+    exportId: firstExportId,
+  });
+  const secondCorrelation = intakeCorrelationId({
+    sourceBusinessId: "src-harbor-hvac",
+    exportId: secondExportId,
+  });
+  await acceptD2dIntake({
+    payload: exportBatch({
+      exportId: firstExportId,
+      campaignRunId: "campaign-run-2026-09-15",
+      business: { ...SEEDABLE_HVAC_RAW },
+    }),
+    presentedToken: SECRET,
+    expectedSecret: SECRET,
+    adapters,
+    qualifier,
+    registry,
+  });
+  await acceptD2dIntake({
+    payload: exportBatch({
+      exportId: secondExportId,
+      campaignRunId: "campaign-run-2026-09-16",
+      business: { ...SEEDABLE_HVAC_RAW },
+    }),
+    presentedToken: SECRET,
+    expectedSecret: SECRET,
+    adapters,
+    qualifier,
+    registry,
+  });
+  const latest = await registry.getReceiptByBusiness("src-harbor-hvac");
+  const firstStored = await registry.getReceipt(firstCorrelation);
+  const secondStored = await registry.getReceipt(secondCorrelation);
+  assert.equal(latest?.exportId, secondExportId);
+  assert.equal(latest?.campaignRunId, "campaign-run-2026-09-16");
+  assert.equal(latest?.correlationId, secondCorrelation);
+  assert.equal(firstStored?.status, D2D_TRANSPORT_STATUSES.RECEIVED);
+  assert.equal(firstStored?.exportId, firstExportId);
+  assert.equal(firstStored?.correlationId, firstCorrelation);
+  assert.equal(secondStored?.status, D2D_TRANSPORT_STATUSES.RECEIVED);
+  assert.equal(secondStored?.exportId, secondExportId);
+  const retryFirst = await acceptD2dIntake({
+    payload: exportBatch({
+      exportId: firstExportId,
+      campaignRunId: "campaign-run-2026-09-15",
+      business: { ...SEEDABLE_HVAC_RAW },
+    }),
+    presentedToken: SECRET,
+    expectedSecret: SECRET,
+    adapters,
+    qualifier,
+    registry,
+  });
+  assert.equal(retryFirst.receipts[0]?.status, D2D_TRANSPORT_STATUSES.DUPLICATE);
+  assert.equal(retryFirst.receipts[0]?.correlationId, firstCorrelation);
+  assert.equal(retryFirst.receipts[0]?.exportId, firstExportId);
+  assert.equal(qualifier.calls, 2);
+  const latestAfterRetry = await registry.getReceiptByBusiness("src-harbor-hvac");
+  assert.equal(latestAfterRetry?.correlationId, secondCorrelation);
+  assert.equal(latestAfterRetry?.exportId, secondExportId);
+  assert.equal((await registry.getReceipt(firstCorrelation))?.status, D2D_TRANSPORT_STATUSES.RECEIVED);
+  assert.equal((await registry.getReceipt(secondCorrelation))?.status, D2D_TRANSPORT_STATUSES.RECEIVED);
 });
 
 test("operator-sized ~40-item raw batch is contract-valid with per-item isolation and no 7-item cap", async () => {

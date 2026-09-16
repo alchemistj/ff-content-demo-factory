@@ -104,7 +104,7 @@ Every receipt includes: `d2dProspectId`, `sourceBusinessId`, `campaignBusinessId
 | `status` (transport) | Meaning |
 | --- | --- |
 | `received` | Raw listing accepted. Qualification ran (or is recorded on `qualification`) |
-| `duplicate` | Same `sourceBusinessId` + export + `d2d-factory-intake/v1`. No repeated qualification or model work |
+| `duplicate` | Same `sourceBusinessId` + export + `d2d-factory-intake/v1` (`correlationId`). No repeated qualification or model work. A new export of the same `sourceBusinessId` is a new identity |
 | `invalid` | Malformed D2D identity, inherited conclusion, mismatched `correlationId`, or over-limit extra item |
 | `retryable` | Transient factory failure after advance. Retry resumes without re-qualifying |
 
@@ -121,7 +121,7 @@ Being complete enough to form `ProspectSeed` is **not** sufficient to advance.
 Poll:
 
 - `GET /d2d-factory-intake/v1/prospects/{d2dProspectId}`
-- `GET /d2d-factory-intake/v1/businesses/{sourceBusinessId}`
+- `GET /d2d-factory-intake/v1/businesses/{sourceBusinessId}` (latest/canonical receipt for operator status; not the idempotency key)
 - `GET /d2d-factory-intake/v1/runs/{factoryRunId}`
 
 ## Factory boundary
