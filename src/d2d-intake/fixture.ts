@@ -1,3 +1,6 @@
+import { readFileSync } from "node:fs";
+import { dirname, join } from "node:path";
+import { fileURLToPath } from "node:url";
 import type { ProspectSeed } from "../handoff/types.js";
 import {
   northlinePrescription,
@@ -13,15 +16,34 @@ import { composeRawSourceNotes, factoryProspectId } from "./map.js";
 import { normalizeRawBusiness } from "./normalize.js";
 import {
   D2D_FACTORY_INTAKE_VERSION,
-  type D2dCampaignContext,
+  D2D_RAW_EXPORT_SCHEMA,
   type D2dIntakeBatch,
   type D2dRawBusiness,
+  type D2dSearchContext,
 } from "./types.js";
 
 export const INTAKE_NOW = new Date("2026-09-15T18:00:00.000Z");
 
+const FIXTURE_DIR = dirname(fileURLToPath(import.meta.url));
+
+export function loadD2dPr5RawExport(): Record<string, unknown> {
+  return JSON.parse(readFileSync(join(FIXTURE_DIR, "fixtures/d2d-pr5-raw-export.v1.json"), "utf8")) as Record<
+    string,
+    unknown
+  >;
+}
+
+export const NORTHLINE_SEARCH_CONTEXT: D2dSearchContext = {
+  latitude: 41.9,
+  longitude: -87.8,
+  radiusMiles: 5,
+  searchTerms: ["garage door repair"],
+};
+
 export const NORTHLINE_RAW: D2dRawBusiness = {
-  placeId: "ChIJ-northline",
+  d2dProspectId: "d2d-prospect-northline",
+  sourceBusinessId: "src-northline",
+  campaignBusinessId: "campaign-biz-northline",
   name: "Northline Garage Doors",
   category: "garage door service",
   categories: ["garage door service"],
@@ -37,35 +59,59 @@ export const NORTHLINE_RAW: D2dRawBusiness = {
   website: "https://northline.example/",
   rating: 4.8,
   reviewCount: 42,
-  mapsUrl: "https://maps.example/northline",
-  googleUrl: "https://maps.google.com/?cid=northline",
-  coordinates: { lat: 41.901, lng: -87.812 },
-  apify: {
-    provider: "apify",
+  coordinates: { latitude: 41.901, longitude: -87.812 },
+  provenance: {
     actor: "compass~crawler-google-places",
     runId: "apify-run-northline",
     datasetId: "ds-northline",
     itemId: "item-northline",
+    googlePlaceId: "ChIJ-northline",
+    mapsUrl: "https://maps.example/northline",
+    googleUrl: "https://maps.google.com/?cid=northline",
   },
 };
 
-export const NORTHLINE_CAMPAIGN: D2dCampaignContext = {
+export const SEEDABLE_HVAC_RAW: D2dRawBusiness = {
+  d2dProspectId: "d2d-prospect-harbor-hvac",
+  sourceBusinessId: "src-harbor-hvac",
+  campaignBusinessId: "campaign-biz-harbor-hvac",
+  name: "Harbor Climate HVAC",
+  category: "hvac contractor",
+  categories: ["hvac contractor", "heating and cooling"],
+  address: {
+    street: "40 Industrial Park",
+    city: "Mason",
+    region: "IL",
+    postalCode: "60000",
+    country: "US",
+  },
   location: "Lake County",
-  radiusMeters: 8000,
-  center: { lat: 41.9, lng: -87.8 },
-  search: { query: "garage door", searchStrings: ["garage door repair"] },
+  phone: "+1-555-010-2000",
+  website: "https://harbor-hvac.example/",
+  rating: 4.9,
+  reviewCount: 180,
+  coordinates: { latitude: 41.902, longitude: -87.81 },
+  provenance: {
+    actor: "compass~crawler-google-places",
+    runId: "apify-run-northline",
+    datasetId: "ds-northline",
+    itemId: "item-harbor-hvac",
+    googlePlaceId: "ChIJ-harbor-hvac",
+    mapsUrl: "https://maps.example/harbor-hvac",
+  },
 };
 
 export const EXPECTED_NORTHLINE_SOURCE_NOTES = composeRawSourceNotes(
   normalizeRawBusiness(NORTHLINE_RAW).status === "normalized"
-    ? (normalizeRawBusiness(NORTHLINE_RAW) as { status: "normalized"; record: import("./types.js").NormalizedRawBusiness }).record
+    ? (normalizeRawBusiness(NORTHLINE_RAW) as { status: "normalized"; record: import("./types.js").NormalizedRawBusiness })
+        .record
     : ({} as import("./types.js").NormalizedRawBusiness),
   {
     campaignId: "campaign-lake-county",
     campaignRunId: "campaign-run-2026-09-15",
     exportId: "export-2026-09-15-northline",
     exportedAt: "2026-09-15T17:00:00.000Z",
-    campaign: NORTHLINE_CAMPAIGN,
+    searchContext: NORTHLINE_SEARCH_CONTEXT,
   },
 );
 
@@ -99,18 +145,13 @@ export function northlineBatch(overrides?: {
   readonly businesses?: readonly unknown[];
 }): D2dIntakeBatch {
   return {
+    schema: D2D_RAW_EXPORT_SCHEMA,
     version: D2D_FACTORY_INTAKE_VERSION,
     campaignId: "campaign-lake-county",
     campaignRunId: "campaign-run-2026-09-15",
     exportId: overrides?.exportId ?? "export-2026-09-15-northline",
     exportedAt: "2026-09-15T17:00:00.000Z",
-    campaign: NORTHLINE_CAMPAIGN,
-    provenance: {
-      provider: "apify",
-      actor: "compass~crawler-google-places",
-      runId: "apify-run-northline",
-      datasetId: "ds-northline",
-    },
+    searchContext: NORTHLINE_SEARCH_CONTEXT,
     businesses: overrides?.businesses ?? [NORTHLINE_RAW],
   };
 }

@@ -16,6 +16,7 @@ import {
   EXPECTED_NORTHLINE_SEED,
   INTAKE_NOW,
   NORTHLINE_RAW,
+  SEEDABLE_HVAC_RAW,
   countingQualifier,
   createIntakeAdapters,
   northlineBatch,
@@ -52,8 +53,11 @@ test("advanced raw business maps to downstream workflow, preserves source correl
   assert.equal(receipt.qualification?.outcome, FACTORY_QUALIFICATION_OUTCOMES.ADVANCED);
   assert.equal(receipt.factoryRunId, `run-${northlineProspectId()}`);
   assert.equal(receipt.factoryStage, WORKFLOW_STAGES.AWAITING_PRESCRIPTION_APPROVAL);
+  assert.equal(receipt.d2dProspectId, "d2d-prospect-northline");
+  assert.equal(receipt.sourceBusinessId, "src-northline");
   assert.equal(receipt.campaignId, "campaign-lake-county");
   assert.equal(receipt.exportId, "export-2026-09-15-northline");
+  assert.equal(receipt.correlationId, "src-northline::export-2026-09-15-northline::d2d-factory-raw-export/v1");
   assert.equal(qualifier.calls, 1);
   assert.equal(adapters.stats.researchCalls, 1);
   assert.equal(adapters.stats.prescribeCalls, 1);
@@ -62,9 +66,14 @@ test("advanced raw business maps to downstream workflow, preserves source correl
   const state = await readState(await registry.getStateStore(receipt.factoryRunId!));
   assert.ok(state);
   assert.deepEqual(state.seed, EXPECTED_NORTHLINE_SEED);
-  assert.equal(state.sourceCorrelation?.d2dBusinessId, "ChIJ-northline");
+  assert.equal(state.sourceCorrelation?.d2dProspectId, "d2d-prospect-northline");
+  assert.equal(state.sourceCorrelation?.sourceBusinessId, "src-northline");
+  assert.equal(state.sourceCorrelation?.d2dBusinessId, "src-northline");
   assert.equal(state.sourceCorrelation?.placeId, "ChIJ-northline");
   assert.equal(state.sourceCorrelation?.campaignRunId, "campaign-run-2026-09-15");
+  assert.equal(state.sourceCorrelation?.coordinates?.latitude, 41.901);
+  assert.equal(state.sourceCorrelation?.provenance?.runId, "apify-run-northline");
+  assert.equal(state.sourceCorrelation?.searchContext?.radiusMiles, 5);
   assert.equal(state.sourceCorrelation?.factoryQualificationOutcome, "advanced");
   assert.equal(state.writingPackage, null);
   assert.equal(state.writerInvocations, 0);
@@ -212,10 +221,28 @@ test("operator-sized ~40-item raw batch is contract-valid with per-item isolatio
   const qualifier = countingQualifier();
   const businesses: unknown[] = [];
   for (let index = 0; index < 37; index += 1) {
-    businesses.push(rawWith({ placeId: `place-held-${index}`, phone: "" }));
+    businesses.push(
+      rawWith({
+        placeId: `place-held-${index}`,
+        d2dProspectId: `d2d-held-${index}`,
+        sourceBusinessId: `src-held-${index}`,
+        campaignBusinessId: `campaign-held-${index}`,
+        phone: "",
+        provenance: {
+          actor: "compass~crawler-google-places",
+          runId: "apify-run-northline",
+          datasetId: "ds-northline",
+          itemId: `item-held-${index}`,
+          googlePlaceId: `place-held-${index}`,
+        },
+      }),
+    );
   }
   businesses.push(
     rawWith({
+      d2dProspectId: "",
+      sourceBusinessId: "",
+      campaignBusinessId: "",
       placeId: "",
       googlePlaceId: "",
       cid: "",
@@ -224,9 +251,17 @@ test("operator-sized ~40-item raw batch is contract-valid with per-item isolatio
       googleUrl: "",
       url: "",
       name: "No Identity Listing",
+      provenance: {},
     }),
   );
-  businesses.push(rawWith({ placeId: "place-inherited", qualification: { classification: "qualified" } }));
+  businesses.push(
+    rawWith({
+      placeId: "place-inherited",
+      d2dProspectId: "d2d-inherited",
+      sourceBusinessId: "src-inherited",
+      qualification: { classification: "qualified" },
+    }),
+  );
   businesses.push(NORTHLINE_RAW);
   assert.equal(businesses.length, 40);
 
@@ -373,3 +408,27 @@ test("existing factory can continue from the intake store after Human Gate 1 app
   assert.equal(continuedAdapters.stats.writeCalls, 1);
   assert.equal(intakeAdapters.stats.writeCalls, 0);
 });
+
+test("seedable-but-not-qualified business causes zero research, prescription, or writer calls", async () => {
+  const adapters = createIntakeAdapters();
+  const qualifier = countingQualifier();
+  const result = await acceptD2dIntake({
+    payload: northlineBatch({ businesses: [SEEDABLE_HVAC_RAW] }),
+    presentedToken: SECRET,
+    expectedSecret: SECRET,
+    adapters,
+    qualifier,
+    registry: createMemoryIntakeRegistry(),
+  });
+  const receipt = result.receipts[0]!;
+  assert.equal(receipt.status, D2D_TRANSPORT_STATUSES.RECEIVED);
+  assert.equal(receipt.qualification?.outcome, FACTORY_QUALIFICATION_OUTCOMES.HELD);
+  assert.equal(receipt.qualification?.reasonCode, D2D_INTAKE_REASON_CODES.SEARCH_MISMATCH);
+  assert.equal(receipt.factoryRunId, undefined);
+  assert.equal(receipt.d2dProspectId, "d2d-prospect-harbor-hvac");
+  assert.equal(qualifier.calls, 1);
+  assert.equal(adapters.stats.researchCalls, 0);
+  assert.equal(adapters.stats.prescribeCalls, 0);
+  assert.equal(adapters.stats.writeCalls, 0);
+});
+

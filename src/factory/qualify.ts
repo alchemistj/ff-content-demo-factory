@@ -1,17 +1,24 @@
 /**
  * Factory-owned keep/reject/advance qualification.
  *
- * Ported from the smallest useful boundary on historical
- * architect/greenfield-gate1 (seeded-discovery forbidden conclusions +
- * candidate bench/exclusion/dedupe). Not a second factory. After a
- * business is advanced, today's runFactory() remains authoritative.
+ * Candidate bench + website/opportunity evidence + independent
+ * selection (smallest useful port of historical greenfield-gate1).
+ * Seedability is recorded but is not the advance decision.
+ * After a business is advanced, today's runFactory() remains authoritative.
  */
 
-import { canFormProspectSeed } from "../d2d-intake/map.js";
+import {
+  buildCandidateEntry,
+  createListingOpportunityAuditor,
+  factorySelection,
+  isMoldExcluded,
+  stableCandidateIdentity,
+  type WebsiteOpportunityAuditor,
+} from "./candidates.js";
 import {
   D2D_INTAKE_REASON_CODES,
   FACTORY_QUALIFICATION_OUTCOMES,
-  type D2dCampaignContext,
+  type D2dSearchContext,
   type FactoryQualification,
   type NormalizedRawBusiness,
 } from "../d2d-intake/types.js";
@@ -31,8 +38,9 @@ export const FORBIDDEN_CONCLUSION_FIELDS = Object.freeze([
 
 export interface QualificationAssignment {
   readonly record: NormalizedRawBusiness;
-  readonly campaign?: D2dCampaignContext;
+  readonly searchContext: D2dSearchContext;
   readonly duplicateOf?: string | null;
+  readonly seedable?: boolean;
 }
 
 export interface QualificationAdapter {
@@ -60,60 +68,55 @@ export function findForbiddenConclusion(value: unknown, path = "$"): string | nu
   return null;
 }
 
-export function isMoldExcluded(record: Pick<NormalizedRawBusiness, "name" | "category" | "categories">): boolean {
-  const haystack = [record.name, record.category, ...(record.categories ?? [])].filter(Boolean).join(" ").toLowerCase();
-  return /\bmold(?: remediation| removal| testing| inspection| cleanup| abatement)?\b/.test(haystack);
-}
+export { isMoldExcluded, stableCandidateIdentity as stableBusinessIdentity };
 
-export function stableBusinessIdentity(record: Pick<NormalizedRawBusiness, "placeId" | "mapsUrl" | "d2dBusinessId">): string {
-  if (record.placeId) return record.placeId;
-  if (record.mapsUrl) return record.mapsUrl;
-  return record.d2dBusinessId;
-}
-
-export function createFactoryQualifier(): QualificationAdapter {
+export function createFactoryQualifier(options?: {
+  readonly auditor?: WebsiteOpportunityAuditor;
+}): QualificationAdapter {
+  const auditor = options?.auditor ?? createListingOpportunityAuditor();
   return {
     provider: "content-factory",
     model: "factory-qualifier/v1",
     async qualify(input) {
-      return qualifyRawBusiness(input);
+      return qualifyRawBusiness(input, auditor);
     },
   };
 }
 
-export function qualifyRawBusiness(input: QualificationAssignment): FactoryQualification {
-  if (input.duplicateOf) {
+export async function qualifyRawBusiness(
+  input: QualificationAssignment,
+  auditor: WebsiteOpportunityAuditor = createListingOpportunityAuditor(),
+): Promise<FactoryQualification> {
+  const websiteEvidence = await auditor.audit({
+    record: input.record,
+    searchContext: input.searchContext,
+  });
+  const entry = buildCandidateEntry({
+    record: input.record,
+    searchContext: input.searchContext,
+    websiteEvidence,
+    duplicateOf: input.duplicateOf ?? null,
+    seedable: input.seedable === true,
+  });
+  const selection = factorySelection(entry);
+  if (!selection.selected) {
+    const outcome =
+      selection.reasonCode === D2D_INTAKE_REASON_CODES.EXISTING_QUALIFICATION
+        ? FACTORY_QUALIFICATION_OUTCOMES.BACKLOG
+        : selection.reasonCode === D2D_INTAKE_REASON_CODES.EXCLUDED_CATEGORY
+          ? FACTORY_QUALIFICATION_OUTCOMES.REJECTED
+          : FACTORY_QUALIFICATION_OUTCOMES.HELD;
     return {
-      outcome: FACTORY_QUALIFICATION_OUTCOMES.BACKLOG,
-      reasonCode: D2D_INTAKE_REASON_CODES.EXISTING_QUALIFICATION,
-      reason: `Duplicate of ${input.duplicateOf} on this factory bench; not advanced.`,
-    };
-  }
-  if (isMoldExcluded(input.record)) {
-    return {
-      outcome: FACTORY_QUALIFICATION_OUTCOMES.REJECTED,
-      reasonCode: D2D_INTAKE_REASON_CODES.EXCLUDED_CATEGORY,
-      reason: "Mold service category is excluded from this factory.",
-    };
-  }
-  if (!input.record.placeId && !input.record.mapsUrl) {
-    return {
-      outcome: FACTORY_QUALIFICATION_OUTCOMES.HELD,
-      reasonCode: D2D_INTAKE_REASON_CODES.INCOMPLETE_IDENTITY,
-      reason: "GBP identity is incomplete; Content Factory will not invent a place id.",
-    };
-  }
-  const seedable = canFormProspectSeed(input.record, input.campaign);
-  if (!seedable.ok) {
-    return {
-      outcome: FACTORY_QUALIFICATION_OUTCOMES.HELD,
-      reasonCode: seedable.reasonCode,
-      reason: `${seedable.reason} Content Factory will not invent missing source facts or spend research until the record can advance.`,
+      outcome,
+      reasonCode: selection.reasonCode,
+      reason: selection.reason,
+      websiteOpportunity: websiteEvidence,
     };
   }
   return {
     outcome: FACTORY_QUALIFICATION_OUTCOMES.ADVANCED,
     reasonCode: D2D_INTAKE_REASON_CODES.FACTORY_ADVANCED,
-    reason: "Content Factory advanced this business from raw source facts without an inherited D2D qualification conclusion.",
+    reason: selection.reason,
+    websiteOpportunity: websiteEvidence,
   };
 }

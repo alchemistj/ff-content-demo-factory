@@ -6,7 +6,7 @@ This repository has no always-on HTTP service, queue, or Kubernetes runtime. Sec
 2. **Authenticated native HTTP handler** — `POST /d2d-factory-intake/v1` with `Authorization: Bearer <token>`. Default bind `127.0.0.1`.
 3. **CLI** — `npm run d2d-intake` for operators and trusted automation.
 
-D2D delivers a **raw/normalized Google Business / Apify cohort**. Content Factory owns qualification. Do not configure D2D to prequalify a 4–7 demo shortlist for this path.
+D2D delivers a **raw/normalized Google Business / Apify cohort** (`schema: d2d-factory-raw-export/v1`). Content Factory owns qualification via candidate-bench + website/opportunity evidence. Do not configure D2D to prequalify a 4–7 demo shortlist for this path.
 
 This PR does **not** deploy Production, set provider secrets, or run live D2D/Apify batches.
 
@@ -40,7 +40,8 @@ export D2D_INTAKE_TOKEN="$D2D_INTAKE_SHARED_SECRET"
 export D2D_INTAKE_ADAPTERS_MODULE="/absolute/path/to/factory-adapters.mjs"
 
 npm run d2d-intake -- --payload ./d2d-export.json --receipt-out ./receipt.json
-npm run d2d-intake -- --status --business-id ChIJ-northline
+npm run d2d-intake -- --status --prospect-id d2d-prospect-northline
+npm run d2d-intake -- --status --business-id src-northline
 npm run d2d-intake -- serve
 ```
 

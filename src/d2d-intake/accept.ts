@@ -19,6 +19,7 @@ import type { D2dIntakeRegistry } from "./registry.js";
 import {
   D2D_FACTORY_INTAKE_VERSION,
   D2D_INTAKE_REASON_CODES,
+  D2D_RAW_EXPORT_SCHEMA,
   D2D_TRANSPORT_STATUSES,
   FACTORY_QUALIFICATION_OUTCOMES,
   intakeCorrelationId,
@@ -57,8 +58,9 @@ export async function acceptD2dIntake(input: D2dIntakeInput): Promise<D2dIntakeB
   for (const [index, raw] of batch.businesses.entries()) {
     try {
       if (index >= maxBatch) {
+        const ids = transportIdsFromRaw(raw);
         receipts.push(
-          transportReceipt(batch, `batch-index-${index}`, {
+          transportReceipt(batch, ids, {
             status: D2D_TRANSPORT_STATUSES.INVALID,
             reasonCode: D2D_INTAKE_REASON_CODES.BATCH_LIMIT,
             reason: `Raw cohort item ${index} exceeds configured max ${maxBatch}. Transport does not inherit a 7-item cap; raise D2D_INTAKE_MAX_BATCH for a larger operator cohort.`,
@@ -68,11 +70,9 @@ export async function acceptD2dIntake(input: D2dIntakeInput): Promise<D2dIntakeB
       }
       receipts.push(await acceptOneBusiness(raw, batch, adapters, qualifier, input, seenIds));
     } catch (error) {
-      const d2dBusinessId = isRecord(raw)
-        ? String(raw.placeId ?? raw.googlePlaceId ?? raw.name ?? raw.title ?? "")
-        : "";
+      const ids = transportIdsFromRaw(raw);
       receipts.push(
-        transportReceipt(batch, d2dBusinessId || "unknown", {
+        transportReceipt(batch, ids, {
           status: D2D_TRANSPORT_STATUSES.RETRYABLE,
           reasonCode: D2D_INTAKE_REASON_CODES.TRANSIENT_FACTORY_FAILURE,
           reason: error instanceof Error ? error.message : "Business intake failed independently",
@@ -83,6 +83,7 @@ export async function acceptD2dIntake(input: D2dIntakeInput): Promise<D2dIntakeB
 
   return {
     version: D2D_FACTORY_INTAKE_VERSION,
+    schema: D2D_RAW_EXPORT_SCHEMA,
     campaignId: batch.campaignId,
     campaignRunId: batch.campaignRunId,
     exportId: batch.exportId,
@@ -98,18 +99,28 @@ async function acceptOneBusiness(
   input: D2dIntakeInput,
   seenIds: Map<string, string>,
 ): Promise<D2dBusinessReceipt> {
-  const normalized = normalizeRawBusiness(raw, batch.provenance);
+  const normalized = normalizeRawBusiness(raw);
   if (normalized.status === "invalid") {
-    return transportReceipt(batch, normalized.d2dBusinessId, {
-      status: D2D_TRANSPORT_STATUSES.INVALID,
-      reasonCode: normalized.reasonCode,
-      reason: normalized.reason,
-    });
+    return transportReceipt(
+      batch,
+      {
+        d2dProspectId: normalized.d2dProspectId,
+        sourceBusinessId: normalized.sourceBusinessId,
+        campaignBusinessId: null,
+        d2dBusinessId: normalized.d2dBusinessId,
+        placeId: null,
+      },
+      {
+        status: D2D_TRANSPORT_STATUSES.INVALID,
+        reasonCode: normalized.reasonCode,
+        reason: normalized.reason,
+      },
+    );
   }
 
   const record = normalized.record;
   const correlationId = intakeCorrelationId({
-    d2dBusinessId: record.d2dBusinessId,
+    sourceBusinessId: record.sourceBusinessId,
     exportId: batch.exportId,
   });
 
@@ -128,7 +139,7 @@ async function acceptOneBusiness(
           campaignRunId: batch.campaignRunId,
           exportId: batch.exportId,
           exportedAt: batch.exportedAt,
-          ...(batch.campaign ? { campaign: batch.campaign } : {}),
+          searchContext: batch.searchContext,
         });
         if (mapped.ok) {
           return runAdvanced(
@@ -151,7 +162,7 @@ async function acceptOneBusiness(
     };
   }
 
-  const existingBusiness = await input.registry.getReceiptByBusiness(record.d2dBusinessId);
+  const existingBusiness = await input.registry.getReceiptByBusiness(record.sourceBusinessId);
   if (existingBusiness?.qualification) {
     const duplicate: D2dBusinessReceipt = {
       ...existingBusiness,
@@ -167,20 +178,19 @@ async function acceptOneBusiness(
     return duplicate;
   }
 
-  const duplicateOf = seenIds.get(record.d2dBusinessId) ?? null;
-  if (!duplicateOf) seenIds.set(record.d2dBusinessId, record.d2dBusinessId);
+  const duplicateOf = seenIds.get(record.sourceBusinessId) ?? null;
+  if (!duplicateOf) seenIds.set(record.sourceBusinessId, record.sourceBusinessId);
 
   const qualification = await qualifier.qualify({
     record,
-    ...(batch.campaign ? { campaign: batch.campaign } : {}),
+    searchContext: batch.searchContext,
     ...(duplicateOf ? { duplicateOf } : {}),
   });
 
   if (qualification.outcome !== FACTORY_QUALIFICATION_OUTCOMES.ADVANCED) {
-    const receipt = transportReceipt(batch, record.d2dBusinessId, {
+    const receipt = transportReceipt(batch, record, {
       status: D2D_TRANSPORT_STATUSES.RECEIVED,
       qualification,
-      placeId: record.placeId,
       reason: qualification.reason,
       reasonCode: qualification.reasonCode,
     });
@@ -193,18 +203,18 @@ async function acceptOneBusiness(
     campaignRunId: batch.campaignRunId,
     exportId: batch.exportId,
     exportedAt: batch.exportedAt,
-    ...(batch.campaign ? { campaign: batch.campaign } : {}),
+    searchContext: batch.searchContext,
   });
   if (!mapped.ok) {
     const held: FactoryQualification = {
       outcome: FACTORY_QUALIFICATION_OUTCOMES.HELD,
       reasonCode: mapped.reasonCode,
-      reason: `${mapped.reason} Advanced mapping refused to invent ProspectSeed values.`,
+      reason: `${mapped.reason} Factory selected this listing but refused to invent ProspectSeed values.`,
+      ...(qualification.websiteOpportunity ? { websiteOpportunity: qualification.websiteOpportunity } : {}),
     };
-    const receipt = transportReceipt(batch, record.d2dBusinessId, {
+    const receipt = transportReceipt(batch, record, {
       status: D2D_TRANSPORT_STATUSES.RECEIVED,
       qualification: held,
-      placeId: record.placeId,
       reason: held.reason,
       reasonCode: held.reasonCode,
     });
@@ -225,7 +235,7 @@ async function runAdvanced(
   input: D2dIntakeInput,
 ): Promise<D2dBusinessReceipt> {
   const correlationId = intakeCorrelationId({
-    d2dBusinessId: record.d2dBusinessId,
+    sourceBusinessId: record.sourceBusinessId,
     exportId: batch.exportId,
   });
   const runId = `run-${seed.prospectId}`;
@@ -313,9 +323,13 @@ function receiptFromState(
 ): D2dBusinessReceipt {
   return {
     version: D2D_FACTORY_INTAKE_VERSION,
+    schema: D2D_RAW_EXPORT_SCHEMA,
     status: outcome.status,
     qualification,
-    d2dBusinessId: record.d2dBusinessId,
+    d2dProspectId: record.d2dProspectId,
+    sourceBusinessId: record.sourceBusinessId,
+    campaignBusinessId: record.campaignBusinessId,
+    d2dBusinessId: record.sourceBusinessId,
     placeId: record.placeId,
     campaignId: batch.campaignId,
     campaignRunId: batch.campaignRunId,
@@ -331,30 +345,68 @@ function receiptFromState(
 
 function transportReceipt(
   batch: D2dIntakeBatch,
-  d2dBusinessId: string,
+  ids: {
+    readonly d2dProspectId: string;
+    readonly sourceBusinessId: string;
+    readonly campaignBusinessId: string | null;
+    readonly d2dBusinessId: string;
+    readonly placeId: string | null;
+  },
   outcome: {
     readonly status: D2dBusinessReceipt["status"];
     readonly qualification?: FactoryQualification | null;
-    readonly placeId?: string | null;
     readonly reason?: string;
     readonly reasonCode?: D2dIntakeReasonCode;
   },
 ): D2dBusinessReceipt {
+  const sourceBusinessId = ids.sourceBusinessId || "unknown";
+  const d2dProspectId = ids.d2dProspectId || "unknown";
   return {
     version: D2D_FACTORY_INTAKE_VERSION,
+    schema: D2D_RAW_EXPORT_SCHEMA,
     status: outcome.status,
     qualification: outcome.qualification ?? null,
-    d2dBusinessId,
-    placeId: outcome.placeId ?? null,
+    d2dProspectId,
+    sourceBusinessId,
+    campaignBusinessId: ids.campaignBusinessId,
+    d2dBusinessId: sourceBusinessId,
+    placeId: ids.placeId,
     campaignId: batch.campaignId,
     campaignRunId: batch.campaignRunId,
     exportId: batch.exportId,
     correlationId: intakeCorrelationId({
-      d2dBusinessId: d2dBusinessId || "unknown",
+      sourceBusinessId,
       exportId: batch.exportId,
     }),
     ...(outcome.reason ? { reason: outcome.reason } : {}),
     ...(outcome.reasonCode ? { reasonCode: outcome.reasonCode } : {}),
+  };
+}
+
+function transportIdsFromRaw(raw: unknown): {
+  readonly d2dProspectId: string;
+  readonly sourceBusinessId: string;
+  readonly campaignBusinessId: string | null;
+  readonly d2dBusinessId: string;
+  readonly placeId: string | null;
+} {
+  if (!isRecord(raw)) {
+    return {
+      d2dProspectId: "",
+      sourceBusinessId: "",
+      campaignBusinessId: null,
+      d2dBusinessId: "",
+      placeId: null,
+    };
+  }
+  const sourceBusinessId = String(raw.sourceBusinessId ?? "");
+  const d2dProspectId = String(raw.d2dProspectId ?? "");
+  return {
+    d2dProspectId,
+    sourceBusinessId,
+    campaignBusinessId: typeof raw.campaignBusinessId === "string" ? raw.campaignBusinessId : null,
+    d2dBusinessId: sourceBusinessId,
+    placeId: typeof raw.placeId === "string" ? raw.placeId : null,
   };
 }
 

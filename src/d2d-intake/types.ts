@@ -1,18 +1,22 @@
 /**
- * Cross-repo D2D → Content Factory raw geographic intake.
+ * Frozen d2d-factory-intake/v1 request/receipt contract.
  *
- * D2D owns collection/transport facts: campaign geography, Apify/Google
- * Business identity, raw listing fields, normalization hygiene, and
- * delivery/correlation. D2D is not the source of truth for keep/reject/advance.
+ * Request body is the D2D raw export (`schema: d2d-factory-raw-export/v1`)
+ * emitted by companion D2D PR #5 head
+ * `56c8fd4fe3e8ce95b9e281c01e382737b815c24b`.
  *
- * Content Factory is the only owner of qualification. Only businesses the
- * factory advances are mapped into ProspectSeed and the existing workflow.
+ * Receipts are `version: d2d-factory-intake/v1`. Transport status is
+ * separate from factory qualification. D2D source IDs are preserved
+ * end-to-end; Google place identity is evidence, not the transport key.
+ *
+ * correlationId = `${sourceBusinessId}::${exportId}::${D2D_RAW_EXPORT_SCHEMA}`
  */
 
 import type { Address, BusinessIdentity, Nap, ProspectSeed } from "../handoff/types.js";
 import type { WorkflowSourceCorrelation, WorkflowStage } from "../workflow/state.js";
 
 export const D2D_FACTORY_INTAKE_VERSION = "d2d-factory-intake/v1" as const;
+export const D2D_RAW_EXPORT_SCHEMA = "d2d-factory-raw-export/v1" as const;
 
 export const D2D_INTAKE_DEFAULT_MAX_BATCH = 40;
 
@@ -49,6 +53,8 @@ export const D2D_INTAKE_REASON_CODES = Object.freeze({
   BATCH_LIMIT: "BATCH_LIMIT",
   MALFORMED_BUSINESS: "MALFORMED_BUSINESS",
   MISSING_STABLE_IDENTITY: "MISSING_STABLE_IDENTITY",
+  MISSING_SOURCE_BUSINESS_ID: "MISSING_SOURCE_BUSINESS_ID",
+  MISSING_D2D_PROSPECT_ID: "MISSING_D2D_PROSPECT_ID",
   MISSING_BUSINESS_NAME: "MISSING_BUSINESS_NAME",
   MISSING_CAMPAIGN_ID: "MISSING_CAMPAIGN_ID",
   MISSING_CAMPAIGN_RUN_ID: "MISSING_CAMPAIGN_RUN_ID",
@@ -57,6 +63,9 @@ export const D2D_INTAKE_REASON_CODES = Object.freeze({
   INHERITED_CONCLUSION: "INHERITED_CONCLUSION",
   INCOMPLETE_IDENTITY: "INCOMPLETE_IDENTITY",
   EXCLUDED_CATEGORY: "EXCLUDED_CATEGORY",
+  NOT_SELECTED: "NOT_SELECTED",
+  WEAK_OPPORTUNITY: "WEAK_OPPORTUNITY",
+  SEARCH_MISMATCH: "SEARCH_MISMATCH",
   INSUFFICIENT_SEED_FACTS: "INSUFFICIENT_SEED_FACTS",
   MISSING_TRADE: "MISSING_TRADE",
   MISSING_SERVICE_AREA: "MISSING_SERVICE_AREA",
@@ -89,23 +98,29 @@ export const D2D_INTAKE_MAX_BATCH_ENV = "D2D_INTAKE_MAX_BATCH" as const;
 
 export const D2D_INTAKE_HTTP_PATH = "/d2d-factory-intake/v1" as const;
 
-export interface D2dCampaignContext {
-  readonly center?: { readonly lat: number; readonly lng: number };
-  readonly radiusMeters?: number;
-  readonly location?: string;
-  readonly search?: {
-    readonly query?: string;
-    readonly categories?: readonly string[];
-    readonly searchStrings?: readonly string[];
-  };
+export interface D2dGeoCoordinates {
+  readonly latitude: number;
+  readonly longitude: number;
 }
 
-export interface D2dApifyProvenance {
-  readonly provider?: string;
+export interface D2dSearchContext {
+  readonly latitude: number;
+  readonly longitude: number;
+  readonly radiusMiles: number;
+  readonly searchTerms: readonly string[];
+}
+
+export interface D2dBusinessProvenance {
   readonly actor?: string;
   readonly runId?: string;
   readonly datasetId?: string;
   readonly itemId?: string;
+  readonly googlePlaceId?: string;
+  readonly placeId?: string;
+  readonly mapsUrl?: string;
+  readonly googleMapsUrl?: string;
+  readonly googleUrl?: string;
+  readonly cid?: string;
 }
 
 export interface D2dRawAddress {
@@ -117,6 +132,9 @@ export interface D2dRawAddress {
 }
 
 export interface D2dRawBusiness {
+  readonly d2dProspectId?: string;
+  readonly sourceBusinessId?: string;
+  readonly campaignBusinessId?: string;
   readonly placeId?: string;
   readonly googlePlaceId?: string;
   readonly cid?: string;
@@ -130,28 +148,40 @@ export interface D2dRawBusiness {
   readonly categories?: readonly string[];
   readonly address?: string | D2dRawAddress;
   readonly location?: string;
-  readonly coordinates?: { readonly lat: number; readonly lng: number };
+  readonly coordinates?: D2dGeoCoordinates | { readonly lat: number; readonly lng: number };
   readonly phone?: string;
   readonly website?: string;
   readonly websiteUrl?: string;
   readonly rating?: number;
   readonly reviewCount?: number;
   readonly listingReviewCount?: number;
-  readonly apify?: D2dApifyProvenance;
+  readonly provenance?: D2dBusinessProvenance;
 }
 
 export interface D2dIntakeBatch {
+  readonly schema: typeof D2D_RAW_EXPORT_SCHEMA;
   readonly version: typeof D2D_FACTORY_INTAKE_VERSION;
   readonly campaignId: string;
   readonly campaignRunId: string;
   readonly exportId: string;
   readonly exportedAt: string;
-  readonly campaign?: D2dCampaignContext;
-  readonly provenance?: D2dApifyProvenance;
+  readonly searchContext: D2dSearchContext;
   readonly businesses: readonly unknown[];
 }
 
+export interface WebsiteOpportunityEvidence {
+  readonly inspected: boolean;
+  readonly quality: "unknown" | "weak" | "adequate" | "strong";
+  readonly opportunity: "unknown" | "weak" | "strong";
+  readonly searchFit: boolean;
+  readonly source: "listing-evidence";
+  readonly reasons: readonly string[];
+}
+
 export interface NormalizedRawBusiness {
+  readonly d2dProspectId: string;
+  readonly sourceBusinessId: string;
+  readonly campaignBusinessId: string | null;
   readonly d2dBusinessId: string;
   readonly placeId: string | null;
   readonly mapsUrl: string | null;
@@ -162,24 +192,29 @@ export interface NormalizedRawBusiness {
   readonly location: string | null;
   readonly address: D2dRawAddress | null;
   readonly addressText: string | null;
-  readonly coordinates: { readonly lat: number; readonly lng: number } | null;
+  readonly coordinates: D2dGeoCoordinates | null;
   readonly phone: string | null;
   readonly website: string | null;
   readonly rating: number | null;
   readonly reviewCount: number | null;
-  readonly apify: D2dApifyProvenance | null;
+  readonly provenance: D2dBusinessProvenance | null;
 }
 
 export interface FactoryQualification {
   readonly outcome: FactoryQualificationOutcome;
   readonly reason: string;
   readonly reasonCode: D2dIntakeReasonCode;
+  readonly websiteOpportunity?: WebsiteOpportunityEvidence;
 }
 
 export interface D2dBusinessReceipt {
   readonly version: typeof D2D_FACTORY_INTAKE_VERSION;
+  readonly schema: typeof D2D_RAW_EXPORT_SCHEMA;
   readonly status: D2dTransportStatus;
   readonly qualification: FactoryQualification | null;
+  readonly d2dProspectId: string;
+  readonly sourceBusinessId: string;
+  readonly campaignBusinessId: string | null;
   readonly d2dBusinessId: string;
   readonly placeId: string | null;
   readonly campaignId: string;
@@ -195,6 +230,7 @@ export interface D2dBusinessReceipt {
 
 export interface D2dIntakeBatchReceipt {
   readonly version: typeof D2D_FACTORY_INTAKE_VERSION;
+  readonly schema: typeof D2D_RAW_EXPORT_SCHEMA;
   readonly campaignId: string;
   readonly campaignRunId: string;
   readonly exportId: string;
@@ -210,10 +246,10 @@ export interface MappedD2dBusiness {
 }
 
 export function intakeCorrelationId(input: {
-  readonly d2dBusinessId: string;
+  readonly sourceBusinessId: string;
   readonly exportId: string;
   readonly version?: string;
 }): string {
-  const version = input.version ?? D2D_FACTORY_INTAKE_VERSION;
-  return `${input.d2dBusinessId}::${input.exportId}::${version}`;
+  const version = input.version ?? D2D_RAW_EXPORT_SCHEMA;
+  return `${input.sourceBusinessId}::${input.exportId}::${version}`;
 }

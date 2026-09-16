@@ -30,12 +30,35 @@ export const D2D_SOURCE_KIND = "d2d-factory-intake/v1" as const;
 
 export interface WorkflowSourceCorrelation {
   readonly kind: typeof D2D_SOURCE_KIND;
+  readonly d2dProspectId: string;
+  readonly sourceBusinessId: string;
   readonly d2dBusinessId: string;
+  readonly campaignBusinessId?: string;
   readonly placeId?: string;
   readonly campaignId: string;
   readonly campaignRunId: string;
   readonly exportId: string;
   readonly exportedAt: string;
+  readonly correlationId: string;
+  readonly searchContext?: {
+    readonly latitude: number;
+    readonly longitude: number;
+    readonly radiusMiles: number;
+    readonly searchTerms: readonly string[];
+  };
+  readonly coordinates?: { readonly latitude: number; readonly longitude: number };
+  readonly provenance?: {
+    readonly actor?: string;
+    readonly runId?: string;
+    readonly datasetId?: string;
+    readonly itemId?: string;
+    readonly googlePlaceId?: string;
+    readonly placeId?: string;
+    readonly mapsUrl?: string;
+    readonly googleMapsUrl?: string;
+    readonly googleUrl?: string;
+    readonly cid?: string;
+  };
   readonly factoryQualificationOutcome: "advanced";
   readonly factoryQualificationReason: string;
 }

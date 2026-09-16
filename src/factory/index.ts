@@ -8,3 +8,12 @@ export {
   type QualificationAdapter,
   type QualificationAssignment,
 } from "./qualify.js";
+export {
+  auditListingOpportunity,
+  buildCandidateEntry,
+  createListingOpportunityAuditor,
+  factorySelection,
+  listingSearchFit,
+  type CandidateBenchEntry,
+  type WebsiteOpportunityAuditor,
+} from "./candidates.js";

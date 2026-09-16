@@ -47,7 +47,7 @@ test("HTTP intake authenticates first and returns per-business receipts", async 
   assert.equal(body.receipts[0]?.factoryStage, WORKFLOW_STAGES.AWAITING_PRESCRIPTION_APPROVAL);
 
   const polled = await handleD2dIntakeRequest(
-    request(`${D2D_INTAKE_HTTP_PATH}/businesses/ChIJ-northline`, {
+    request(`${D2D_INTAKE_HTTP_PATH}/prospects/d2d-prospect-northline`, {
       method: "GET",
       headers: { authorization: `Bearer ${SECRET}` },
     }),
@@ -58,10 +58,16 @@ test("HTTP intake authenticates first and returns per-business receipts", async 
     factoryRunId: string;
     campaignId: string;
     exportId: string;
-    sourceCorrelation: { d2dBusinessId: string };
+    d2dProspectId: string;
+    sourceBusinessId: string;
+    correlationId: string;
+    sourceCorrelation: { d2dProspectId: string; sourceBusinessId: string };
   };
   assert.equal(statusBody.campaignId, "campaign-lake-county");
-  assert.equal(statusBody.sourceCorrelation.d2dBusinessId, "ChIJ-northline");
+  assert.equal(statusBody.d2dProspectId, "d2d-prospect-northline");
+  assert.equal(statusBody.sourceBusinessId, "src-northline");
+  assert.equal(statusBody.sourceCorrelation.d2dProspectId, "d2d-prospect-northline");
+  assert.equal(statusBody.correlationId, "src-northline::export-2026-09-15-northline::d2d-factory-raw-export/v1");
   assert.equal(adapters.stats.writeCalls, 0);
 });
 
@@ -80,8 +86,9 @@ test("file registry preserves run correlation across process-like reloads", asyn
     });
     assert.equal(result.receipts[0]?.status, D2D_TRANSPORT_STATUSES.RECEIVED);
     const reloaded = createFileIntakeRegistry(root);
-    const receipt = await reloaded.getReceiptByBusiness("ChIJ-northline");
+    const receipt = await reloaded.getReceiptByProspect("d2d-prospect-northline");
     assert.equal(receipt?.exportId, "export-2026-09-15-northline");
+    assert.equal(receipt?.d2dProspectId, "d2d-prospect-northline");
     assert.ok(receipt?.factoryRunId);
   } finally {
     rmSync(root, { recursive: true, force: true });

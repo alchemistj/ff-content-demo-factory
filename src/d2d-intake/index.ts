@@ -1,5 +1,6 @@
 export {
   D2D_FACTORY_INTAKE_VERSION,
+  D2D_RAW_EXPORT_SCHEMA,
   D2D_INTAKE_ADAPTERS_MODULE_ENV,
   D2D_INTAKE_DEFAULT_MAX_BATCH,
   D2D_INTAKE_HOST_ENV,
@@ -17,6 +18,7 @@ export {
   type D2dIntakeBatch,
   type D2dIntakeBatchReceipt,
   type D2dRawBusiness,
+  type D2dSearchContext,
   type D2dTransportStatus,
   type FactoryQualificationOutcome,
   type MappedD2dBusiness,

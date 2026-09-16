@@ -4,10 +4,12 @@ import {
   D2D_FACTORY_INTAKE_VERSION,
   D2D_INTAKE_DEFAULT_MAX_BATCH,
   D2D_INTAKE_REASON_CODES,
-  type D2dApifyProvenance,
-  type D2dCampaignContext,
+  D2D_RAW_EXPORT_SCHEMA,
+  type D2dBusinessProvenance,
+  type D2dGeoCoordinates,
   type D2dIntakeBatch,
   type D2dRawAddress,
+  type D2dSearchContext,
   type NormalizedRawBusiness,
 } from "./types.js";
 
@@ -22,6 +24,8 @@ export interface NormalizeSuccess {
 
 export interface NormalizeInvalid {
   readonly status: "invalid";
+  readonly d2dProspectId: string;
+  readonly sourceBusinessId: string;
   readonly d2dBusinessId: string;
   readonly reasonCode: (typeof D2D_INTAKE_REASON_CODES)[keyof typeof D2D_INTAKE_REASON_CODES];
   readonly reason: string;
@@ -42,10 +46,10 @@ export function parseD2dIntakeBatch(input: unknown): D2dIntakeBatch {
   if (!isRecord(input)) {
     throw new D2dIntakeEnvelopeError(D2D_INTAKE_REASON_CODES.INVALID_ENVELOPE, "D2D intake payload must be an object");
   }
-  if (input.version !== D2D_FACTORY_INTAKE_VERSION) {
+  if (input.schema !== D2D_RAW_EXPORT_SCHEMA) {
     throw new D2dIntakeEnvelopeError(
       D2D_INTAKE_REASON_CODES.UNSUPPORTED_VERSION,
-      `version must be ${D2D_FACTORY_INTAKE_VERSION}`,
+      `schema must be ${D2D_RAW_EXPORT_SCHEMA} (d2d-factory-intake/v1 consumes the D2D raw export, not a prequalified shortlist)`,
     );
   }
   if ("prospects" in input && !("businesses" in input)) {
@@ -69,6 +73,7 @@ export function parseD2dIntakeBatch(input: unknown): D2dIntakeBatch {
   );
   const exportId = requiredId(input.exportId, D2D_INTAKE_REASON_CODES.MISSING_EXPORT_ID, "exportId");
   const exportedAt = requiredTimestamp(input.exportedAt, "exportedAt");
+  const searchContext = parseSearchContext(input.searchContext);
   if (!Array.isArray(input.businesses)) {
     throw new D2dIntakeEnvelopeError(D2D_INTAKE_REASON_CODES.INVALID_ENVELOPE, "businesses must be an array");
   }
@@ -76,48 +81,66 @@ export function parseD2dIntakeBatch(input: unknown): D2dIntakeBatch {
     throw new D2dIntakeEnvelopeError(D2D_INTAKE_REASON_CODES.EMPTY_BATCH, "businesses must contain at least one raw listing");
   }
   return {
+    schema: D2D_RAW_EXPORT_SCHEMA,
     version: D2D_FACTORY_INTAKE_VERSION,
     campaignId,
     campaignRunId,
     exportId,
     exportedAt,
+    searchContext,
     businesses: input.businesses,
-    ...(isRecord(input.campaign) ? { campaign: input.campaign as D2dCampaignContext } : {}),
-    ...(isRecord(input.provenance) ? { provenance: input.provenance as D2dApifyProvenance } : {}),
   };
 }
 
-export function normalizeRawBusiness(input: unknown, provenance?: D2dApifyProvenance): NormalizeRawResult {
+export function normalizeRawBusiness(input: unknown): NormalizeRawResult {
   if (!isRecord(input)) {
-    return invalid("", D2D_INTAKE_REASON_CODES.MALFORMED_BUSINESS, "Business entry must be an object");
+    return invalid("", "", D2D_INTAKE_REASON_CODES.MALFORMED_BUSINESS, "Business entry must be an object");
   }
   const forbidden = findForbiddenConclusion(input);
   if (forbidden) {
-    const id = stableIdFromRaw(input);
+    const d2dProspectId = firstTrimmed(input.d2dProspectId) ?? "";
+    const sourceBusinessId = firstTrimmed(input.sourceBusinessId) ?? "";
     return invalid(
-      id,
+      d2dProspectId,
+      sourceBusinessId,
       D2D_INTAKE_REASON_CODES.INHERITED_CONCLUSION,
       `Inherited conclusion field at ${forbidden} is not Content Factory qualification authority`,
     );
   }
-  const placeId = firstTrimmed(input.placeId, input.googlePlaceId, input.cid);
-  const mapsUrl = firstTrimmed(input.mapsUrl, input.googleMapsUrl, input.googleUrl, input.url);
-  const name = firstTrimmed(input.name, input.title);
-  if (!placeId && !mapsUrl) {
+  const d2dProspectId = firstTrimmed(input.d2dProspectId);
+  const sourceBusinessId = firstTrimmed(input.sourceBusinessId);
+  if (!sourceBusinessId) {
     return invalid(
-      name ?? "",
-      D2D_INTAKE_REASON_CODES.MISSING_STABLE_IDENTITY,
-      "Raw listing is missing stable Google/place identity (placeId or maps URL)",
+      d2dProspectId ?? "",
+      "",
+      D2D_INTAKE_REASON_CODES.MISSING_SOURCE_BUSINESS_ID,
+      "Raw listing is missing sourceBusinessId; Google place identity is not a substitute transport key",
     );
   }
+  if (!d2dProspectId) {
+    return invalid(
+      "",
+      sourceBusinessId,
+      D2D_INTAKE_REASON_CODES.MISSING_D2D_PROSPECT_ID,
+      "Raw listing is missing d2dProspectId; Content Factory will not invent a D2D prospect id",
+    );
+  }
+  const provenance = isRecord(input.provenance) ? (input.provenance as D2dBusinessProvenance) : null;
+  const placeId =
+    firstTrimmed(input.placeId, input.googlePlaceId, input.cid, provenance?.googlePlaceId, provenance?.placeId, provenance?.cid) ??
+    null;
+  const mapsUrl =
+    firstTrimmed(input.mapsUrl, input.googleMapsUrl, input.googleUrl, input.url, provenance?.mapsUrl, provenance?.googleMapsUrl, provenance?.googleUrl) ??
+    null;
+  const name = firstTrimmed(input.name, input.title);
   if (!name) {
     return invalid(
-      placeId ?? mapsUrl ?? "",
+      d2dProspectId,
+      sourceBusinessId,
       D2D_INTAKE_REASON_CODES.MISSING_BUSINESS_NAME,
       "Raw listing is missing name/title; a name was not invented",
     );
   }
-  const d2dBusinessId = placeId ?? mapsUrl ?? name;
   const categories = Array.isArray(input.categories)
     ? input.categories.map((item) => optionalTrimmed(item)).filter((item): item is string => Boolean(item))
     : [];
@@ -134,15 +157,17 @@ export function normalizeRawBusiness(input: unknown, provenance?: D2dApifyProven
       : typeof input.listingReviewCount === "number" && Number.isFinite(input.listingReviewCount)
         ? input.listingReviewCount
         : null;
-  const itemApify = isRecord(input.apify) ? (input.apify as D2dApifyProvenance) : provenance ?? null;
 
   return {
     status: "normalized",
     record: {
-      d2dBusinessId,
-      placeId: placeId ?? null,
-      mapsUrl: mapsUrl ?? null,
-      googleUrl: firstTrimmed(input.googleUrl, input.googleMapsUrl, input.mapsUrl) ?? null,
+      d2dProspectId,
+      sourceBusinessId,
+      campaignBusinessId: firstTrimmed(input.campaignBusinessId) ?? null,
+      d2dBusinessId: sourceBusinessId,
+      placeId,
+      mapsUrl,
+      googleUrl: firstTrimmed(input.googleUrl, input.googleMapsUrl, input.mapsUrl, provenance?.googleUrl) ?? null,
       name,
       category,
       categories,
@@ -154,7 +179,7 @@ export function normalizeRawBusiness(input: unknown, provenance?: D2dApifyProven
       website,
       rating,
       reviewCount,
-      apify: itemApify,
+      provenance,
     },
   };
 }
@@ -163,6 +188,37 @@ function envelopeWithoutBusinesses(input: AnyRecord): AnyRecord {
   const copy: AnyRecord = { ...input };
   delete copy.businesses;
   return copy;
+}
+
+function parseSearchContext(value: unknown): D2dSearchContext {
+  if (!isRecord(value)) {
+    throw new D2dIntakeEnvelopeError(D2D_INTAKE_REASON_CODES.INVALID_ENVELOPE, "searchContext is required");
+  }
+  const latitude = asFiniteNumber(value.latitude);
+  const longitude = asFiniteNumber(value.longitude);
+  const radiusMiles = asFiniteNumber(value.radiusMiles);
+  if (latitude == null || longitude == null || radiusMiles == null) {
+    throw new D2dIntakeEnvelopeError(
+      D2D_INTAKE_REASON_CODES.INVALID_ENVELOPE,
+      "searchContext requires latitude, longitude, and radiusMiles",
+    );
+  }
+  if (!Array.isArray(value.searchTerms) || value.searchTerms.length === 0) {
+    throw new D2dIntakeEnvelopeError(
+      D2D_INTAKE_REASON_CODES.INVALID_ENVELOPE,
+      "searchContext.searchTerms must be a non-empty array",
+    );
+  }
+  const searchTerms = value.searchTerms
+    .map((item) => optionalTrimmed(item))
+    .filter((item): item is string => Boolean(item));
+  if (searchTerms.length === 0) {
+    throw new D2dIntakeEnvelopeError(
+      D2D_INTAKE_REASON_CODES.INVALID_ENVELOPE,
+      "searchContext.searchTerms must contain at least one term",
+    );
+  }
+  return { latitude, longitude, radiusMiles, searchTerms };
 }
 
 function parseAddress(value: unknown): D2dRawAddress | null {
@@ -182,11 +238,12 @@ function parseAddress(value: unknown): D2dRawAddress | null {
   };
 }
 
-function parseCoordinates(value: unknown): { readonly lat: number; readonly lng: number } | null {
+function parseCoordinates(value: unknown): D2dGeoCoordinates | null {
   if (!isRecord(value)) return null;
-  if (typeof value.lat !== "number" || typeof value.lng !== "number") return null;
-  if (!Number.isFinite(value.lat) || !Number.isFinite(value.lng)) return null;
-  return { lat: value.lat, lng: value.lng };
+  const latitude = asFiniteNumber(value.latitude) ?? asFiniteNumber(value.lat);
+  const longitude = asFiniteNumber(value.longitude) ?? asFiniteNumber(value.lng);
+  if (latitude == null || longitude == null) return null;
+  return { latitude, longitude };
 }
 
 function composeLocation(address: D2dRawAddress | null): string | null {
@@ -195,16 +252,20 @@ function composeLocation(address: D2dRawAddress | null): string | null {
   return parts.length ? parts.join(", ") : null;
 }
 
-function stableIdFromRaw(input: AnyRecord): string {
-  return firstTrimmed(input.placeId, input.googlePlaceId, input.cid, input.mapsUrl, input.googleMapsUrl, input.name, input.title) ?? "";
-}
-
 function invalid(
-  d2dBusinessId: string,
+  d2dProspectId: string,
+  sourceBusinessId: string,
   reasonCode: NormalizeInvalid["reasonCode"],
   reason: string,
 ): NormalizeInvalid {
-  return { status: "invalid", d2dBusinessId, reasonCode, reason };
+  return {
+    status: "invalid",
+    d2dProspectId,
+    sourceBusinessId,
+    d2dBusinessId: sourceBusinessId || d2dProspectId,
+    reasonCode,
+    reason,
+  };
 }
 
 function requiredId(value: unknown, code: (typeof D2D_INTAKE_REASON_CODES)[keyof typeof D2D_INTAKE_REASON_CODES], field: string): string {
@@ -220,6 +281,10 @@ function requiredTimestamp(value: unknown, field: string): string {
     throw new D2dIntakeEnvelopeError(D2D_INTAKE_REASON_CODES.INVALID_TIMESTAMP, `${field} must be an ISO-8601 timestamp`);
   }
   return value;
+}
+
+function asFiniteNumber(value: unknown): number | null {
+  return typeof value === "number" && Number.isFinite(value) ? value : null;
 }
 
 function firstTrimmed(...values: unknown[]): string | undefined {

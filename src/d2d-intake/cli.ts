@@ -19,7 +19,8 @@ import {
 
 const USAGE = `Usage:
   npm run d2d-intake -- --payload <path> [--receipt-out <path>] [--token <token>]
-  npm run d2d-intake -- --status --business-id <d2dBusinessId>
+  npm run d2d-intake -- --status --business-id <sourceBusinessId>
+  npm run d2d-intake -- --status --prospect-id <d2dProspectId>
   npm run d2d-intake -- --status --run-id <factoryRunId>
   npm run d2d-intake -- serve
 
@@ -57,14 +58,17 @@ async function main(argv: string[]): Promise<void> {
 
   if (flags.status === true) {
     const businessId = optionalFlag(flags, "business-id");
+    const prospectId = optionalFlag(flags, "prospect-id");
     const runId = optionalFlag(flags, "run-id");
     const receipt = businessId
       ? await registry.getReceiptByBusiness(businessId)
-      : runId
-        ? await registry.getReceiptByRunId(runId)
-        : null;
+      : prospectId
+        ? await registry.getReceiptByProspect(prospectId)
+        : runId
+          ? await registry.getReceiptByRunId(runId)
+          : null;
     if (!receipt) {
-      throw new Error("No D2D intake receipt found for that business or run");
+      throw new Error("No D2D intake receipt found for that business, prospect, or run");
     }
     process.stdout.write(`${JSON.stringify(receipt, null, 2)}\n`);
     return;

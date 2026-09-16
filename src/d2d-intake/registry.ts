@@ -12,7 +12,8 @@ import type { D2dBusinessReceipt } from "./types.js";
 
 export interface D2dIntakeRegistry {
   getReceipt(correlationId: string): Promise<D2dBusinessReceipt | null>;
-  getReceiptByBusiness(d2dBusinessId: string): Promise<D2dBusinessReceipt | null>;
+  getReceiptByBusiness(sourceBusinessId: string): Promise<D2dBusinessReceipt | null>;
+  getReceiptByProspect(d2dProspectId: string): Promise<D2dBusinessReceipt | null>;
   getReceiptByRunId(factoryRunId: string): Promise<D2dBusinessReceipt | null>;
   saveReceipt(receipt: D2dBusinessReceipt): Promise<void>;
   getStateStore(runId: string): Promise<StateStore>;
@@ -21,6 +22,7 @@ export interface D2dIntakeRegistry {
 export function createMemoryIntakeRegistry(): D2dIntakeRegistry {
   const receiptsByKey = new Map<string, D2dBusinessReceipt>();
   const receiptsByBusiness = new Map<string, D2dBusinessReceipt>();
+  const receiptsByProspect = new Map<string, D2dBusinessReceipt>();
   const receiptsByRun = new Map<string, D2dBusinessReceipt>();
   const stores = new Map<string, StateStore>();
 
@@ -28,17 +30,23 @@ export function createMemoryIntakeRegistry(): D2dIntakeRegistry {
     async getReceipt(correlationId) {
       return receiptsByKey.get(correlationId) ?? null;
     },
-    async getReceiptByBusiness(d2dBusinessId) {
-      return receiptsByBusiness.get(d2dBusinessId) ?? null;
+    async getReceiptByBusiness(sourceBusinessId) {
+      return receiptsByBusiness.get(sourceBusinessId) ?? null;
+    },
+    async getReceiptByProspect(d2dProspectId) {
+      return receiptsByProspect.get(d2dProspectId) ?? null;
     },
     async getReceiptByRunId(factoryRunId) {
       return receiptsByRun.get(factoryRunId) ?? null;
     },
     async saveReceipt(receipt) {
       receiptsByKey.set(receipt.correlationId, cloneState(receipt));
-      const existing = receiptsByBusiness.get(receipt.d2dBusinessId);
+      const existing = receiptsByBusiness.get(receipt.sourceBusinessId);
       if (!existing || shouldReplaceReceipt(existing, receipt)) {
-        receiptsByBusiness.set(receipt.d2dBusinessId, cloneState(receipt));
+        receiptsByBusiness.set(receipt.sourceBusinessId, cloneState(receipt));
+      }
+      if (receipt.d2dProspectId) {
+        receiptsByProspect.set(receipt.d2dProspectId, cloneState(receipt));
       }
       if (receipt.factoryRunId) {
         receiptsByRun.set(receipt.factoryRunId, cloneState(receipt));
@@ -61,8 +69,11 @@ export function createFileIntakeRegistry(rootDir: string): D2dIntakeRegistry {
   function receiptPath(correlationId: string): string {
     return join(rootDir, "receipts", `${encodeURIComponent(correlationId)}.json`);
   }
-  function businessPath(d2dBusinessId: string): string {
-    return join(rootDir, "businesses", `${encodeURIComponent(d2dBusinessId)}.json`);
+  function businessPath(sourceBusinessId: string): string {
+    return join(rootDir, "businesses", `${encodeURIComponent(sourceBusinessId)}.json`);
+  }
+  function prospectPath(d2dProspectId: string): string {
+    return join(rootDir, "prospects", `${encodeURIComponent(d2dProspectId)}.json`);
   }
   function runPointerPath(factoryRunId: string): string {
     return join(rootDir, "runs", `${encodeURIComponent(factoryRunId)}.receipt.json`);
@@ -88,17 +99,23 @@ export function createFileIntakeRegistry(rootDir: string): D2dIntakeRegistry {
     async getReceipt(correlationId) {
       return readJson<D2dBusinessReceipt>(receiptPath(correlationId));
     },
-    async getReceiptByBusiness(d2dBusinessId) {
-      return readJson<D2dBusinessReceipt>(businessPath(d2dBusinessId));
+    async getReceiptByBusiness(sourceBusinessId) {
+      return readJson<D2dBusinessReceipt>(businessPath(sourceBusinessId));
+    },
+    async getReceiptByProspect(d2dProspectId) {
+      return readJson<D2dBusinessReceipt>(prospectPath(d2dProspectId));
     },
     async getReceiptByRunId(factoryRunId) {
       return readJson<D2dBusinessReceipt>(runPointerPath(factoryRunId));
     },
     async saveReceipt(receipt) {
       writeJson(receiptPath(receipt.correlationId), receipt);
-      const existing = readJson<D2dBusinessReceipt>(businessPath(receipt.d2dBusinessId));
+      const existing = readJson<D2dBusinessReceipt>(businessPath(receipt.sourceBusinessId));
       if (!existing || shouldReplaceReceipt(existing, receipt)) {
-        writeJson(businessPath(receipt.d2dBusinessId), receipt);
+        writeJson(businessPath(receipt.sourceBusinessId), receipt);
+      }
+      if (receipt.d2dProspectId) {
+        writeJson(prospectPath(receipt.d2dProspectId), receipt);
       }
       if (receipt.factoryRunId) {
         writeJson(runPointerPath(receipt.factoryRunId), receipt);
