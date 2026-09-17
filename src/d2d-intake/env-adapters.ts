@@ -21,34 +21,69 @@ export interface EnvAdapterCompleteInput {
 
 export type EnvAdapterCompleteJson = (input: EnvAdapterCompleteInput) => Promise<unknown>;
 
+const UNCONFIGURED_ADAPTER = "unconfigured";
+
+function configuredAdapterValue(value: string | undefined): string | undefined {
+  const trimmed = value?.trim();
+  if (!trimmed || trimmed === UNCONFIGURED_ADAPTER) return undefined;
+  return trimmed;
+}
+
+function adapterPair(
+  provider: string | undefined,
+  model: string | undefined,
+): { readonly provider: string; readonly model: string } | undefined {
+  if (!provider || !model) return undefined;
+  return { provider, model };
+}
+
+function effectiveEnvAdapterPair(
+  env: NodeJS.ProcessEnv,
+  kind: "research" | "prescription",
+): { readonly provider: string; readonly model: string } | undefined {
+  const research = adapterPair(
+    configuredAdapterValue(env[FACTORY_RESEARCH_PROVIDER_ENV]),
+    configuredAdapterValue(env[FACTORY_RESEARCH_MODEL_ENV]),
+  );
+  if (kind === "research") return research;
+
+  const prescriptionProvider = configuredAdapterValue(env[FACTORY_PRESCRIPTION_PROVIDER_ENV]);
+  const prescriptionModel = configuredAdapterValue(env[FACTORY_PRESCRIPTION_MODEL_ENV]);
+  if (prescriptionProvider && prescriptionModel) {
+    return { provider: prescriptionProvider, model: prescriptionModel };
+  }
+  if (prescriptionProvider || prescriptionModel) return undefined;
+  return research;
+}
+
 export function envAdapterConfigured(
   env: NodeJS.ProcessEnv,
   kind: "research" | "prescription",
 ): boolean {
-  const provider =
-    kind === "research"
-      ? env[FACTORY_RESEARCH_PROVIDER_ENV]?.trim()
-      : (env[FACTORY_PRESCRIPTION_PROVIDER_ENV]?.trim() || env[FACTORY_RESEARCH_PROVIDER_ENV]?.trim());
-  const key = env[FACTORY_MODEL_API_KEY_ENV]?.trim();
-  return Boolean(provider && key);
+  const pair = effectiveEnvAdapterPair(env, kind);
+  const key = configuredAdapterValue(env[FACTORY_MODEL_API_KEY_ENV]);
+  return Boolean(pair && key);
 }
 
 /**
  * Production adapters from FACTORY_* env. Does not load a local filesystem
  * D2D_INTAKE_ADAPTERS_MODULE. Writer is always forbidden before Human Gate 1.
- * Live provider HTTP only runs when research/prescription is invoked with a key.
+ * Live provider HTTP only runs when research/prescription is invoked with
+ * provider, model, and key. Missing model is not ready and fails closed locally.
+ * Prescription inherits the research provider/model pair only when both
+ * prescription overrides are omitted; a partial override is unconfigured.
  */
 export function createEnvFactoryAdapters(
   env: NodeJS.ProcessEnv = process.env,
   options?: { readonly completeJson?: EnvAdapterCompleteJson },
 ): FactoryAdapters {
-  const researchProvider = env[FACTORY_RESEARCH_PROVIDER_ENV]?.trim() || "unconfigured";
-  const researchModel = env[FACTORY_RESEARCH_MODEL_ENV]?.trim() || "unconfigured";
-  const prescriptionProvider =
-    env[FACTORY_PRESCRIPTION_PROVIDER_ENV]?.trim() || env[FACTORY_RESEARCH_PROVIDER_ENV]?.trim() || "unconfigured";
-  const prescriptionModel =
-    env[FACTORY_PRESCRIPTION_MODEL_ENV]?.trim() || env[FACTORY_RESEARCH_MODEL_ENV]?.trim() || "unconfigured";
-  const apiKey = env[FACTORY_MODEL_API_KEY_ENV]?.trim();
+  const research = effectiveEnvAdapterPair(env, "research");
+  const prescription = effectiveEnvAdapterPair(env, "prescription");
+  const researchProvider = research?.provider ?? UNCONFIGURED_ADAPTER;
+  const researchModel = research?.model ?? UNCONFIGURED_ADAPTER;
+  const prescriptionProvider = prescription?.provider ?? UNCONFIGURED_ADAPTER;
+  const prescriptionModel = prescription?.model ?? UNCONFIGURED_ADAPTER;
+  const apiKey = configuredAdapterValue(env[FACTORY_MODEL_API_KEY_ENV]);
   const baseUrl = env[FACTORY_MODEL_BASE_URL_ENV]?.trim() || "https://api.openai.com/v1";
   const completeJson = options?.completeJson ?? openaiCompatibleJsonComplete;
 
@@ -116,17 +151,20 @@ async function completeOrFail(input: {
   readonly payload: unknown;
   readonly completeJson: EnvAdapterCompleteJson;
 }): Promise<unknown> {
-  if (!input.apiKey || input.provider === "unconfigured") {
+  const apiKey = configuredAdapterValue(input.apiKey);
+  const provider = configuredAdapterValue(input.provider);
+  const model = configuredAdapterValue(input.model);
+  if (!apiKey || !provider || !model) {
     throw new WorkflowError(
       "FACTORY_ADAPTERS_UNCONFIGURED",
-      `${FACTORY_RESEARCH_PROVIDER_ENV}/${FACTORY_PRESCRIPTION_PROVIDER_ENV} and ${FACTORY_MODEL_API_KEY_ENV} are required for advanced intake. ${D2D_INTAKE_ADAPTERS_MODULE_ENV} is not used on Vercel.`,
+      `${FACTORY_RESEARCH_PROVIDER_ENV}/${FACTORY_RESEARCH_MODEL_ENV}, ${FACTORY_PRESCRIPTION_PROVIDER_ENV}/${FACTORY_PRESCRIPTION_MODEL_ENV} (both omitted inherit the research pair; a partial prescription override is unconfigured), and ${FACTORY_MODEL_API_KEY_ENV} are required for advanced intake. ${D2D_INTAKE_ADAPTERS_MODULE_ENV} is not used on Vercel.`,
     );
   }
   return input.completeJson({
     kind: input.kind,
-    provider: input.provider,
-    model: input.model,
-    apiKey: input.apiKey,
+    provider,
+    model,
+    apiKey,
     baseUrl: input.baseUrl,
     payload: input.payload,
   });

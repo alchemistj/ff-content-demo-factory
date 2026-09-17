@@ -194,6 +194,7 @@ test("health is alive, reports readiness booleans, and does not start model work
   assert.equal(body.ready.sharedSecret, true);
   assert.equal(body.ready.durableStore, true);
   assert.equal(body.ready.researchAdapter, true);
+  assert.equal(body.ready.prescriptionAdapter, true);
   assert.equal(body.requestDriven, true);
   assert.equal(body.scheduler, false);
   assert.doesNotMatch(text, /service-role-secret-value/);
