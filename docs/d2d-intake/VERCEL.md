@@ -53,8 +53,8 @@ Optional: `D2D_INTAKE_RUNTIME=production` forces the same fail-closed durable pa
 | --- | --- |
 | `FACTORY_RESEARCH_PROVIDER` | Provider name recorded on the researcher |
 | `FACTORY_RESEARCH_MODEL` | Model id for research JSON complete |
-| `FACTORY_PRESCRIPTION_PROVIDER` | Optional; defaults to research provider |
-| `FACTORY_PRESCRIPTION_MODEL` | Optional; defaults to research model |
+| `FACTORY_PRESCRIPTION_PROVIDER` | Optional; if both prescription vars are omitted, inherit the research provider |
+| `FACTORY_PRESCRIPTION_MODEL` | Optional; if both prescription vars are omitted, inherit the research model. A provider-only or model-only override is not ready |
 | `FACTORY_MODEL_API_KEY` | Provider API key. Health checks presence only; it does not call the provider |
 | `FACTORY_MODEL_BASE_URL` | Optional OpenAI-compatible base. Default `https://api.openai.com/v1` |
 
@@ -77,7 +77,7 @@ GET https://factory.fluidframemarketing.com/health
 GET https://factory.fluidframemarketing.com/api/health
 ```
 
-Returns HTTP 200 with `{ ok, service, path, domain, runtime, ready, requestDriven, scheduler }` when the function is alive. `ready` is booleans only (shared secret present, durable-store env present, research/prescription provider+model+key present). Prescription falls back to the research provider/model when its own vars are omitted. Missing model reports `researchAdapter`/`prescriptionAdapter` false. Health does **not** call providers, Apify, or Supabase.
+Returns HTTP 200 with `{ ok, service, path, domain, runtime, ready, requestDriven, scheduler }` when the function is alive. `ready` is booleans only (shared secret present, durable-store env present, research/prescription provider+model+key present). Prescription inherits the research provider/model pair only when both prescription vars are omitted. A partial prescription override, or a missing model, reports the matching adapter false. Health does **not** call providers, Apify, or Supabase.
 
 ## D2D Production setting
 

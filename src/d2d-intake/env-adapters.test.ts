@@ -11,6 +11,7 @@ import {
   FACTORY_QUALIFICATION_OUTCOMES,
 } from "./types.js";
 import { WorkflowError, type WriterAssignment } from "../workflow/types.js";
+import { northlineResearchRecord } from "../workflow/northline.fixture.js";
 import { countingQualifier, northlineBatch, rawWith } from "./fixture.js";
 
 const SECRET = "test-env-adapter-secret";
@@ -96,6 +97,45 @@ test("prescription readiness falls back to research provider and model", () => {
     ),
     true,
   );
+});
+
+async function assertPartialPrescriptionOverrideFailsClosed(env: NodeJS.ProcessEnv): Promise<void> {
+  assert.equal(envAdapterConfigured(env, "research"), true);
+  assert.equal(envAdapterConfigured(env, "prescription"), false);
+  const health = intakeHealthReport(env);
+  assert.equal(health.ready.researchAdapter, true);
+  assert.equal(health.ready.prescriptionAdapter, false);
+
+  const spy = unusedCompleteJson();
+  const adapters = createEnvFactoryAdapters(env, { completeJson: spy.completeJson });
+  assert.equal(adapters.prescriber.provider, "unconfigured");
+  assert.equal(adapters.prescriber.model, "unconfigured");
+  await assert.rejects(
+    () =>
+      adapters.prescriber.prescribe({
+        research: northlineResearchRecord(),
+        instructions: "",
+        authority: "",
+      }),
+    (error: unknown) =>
+      error instanceof WorkflowError &&
+      error.code === D2D_INTAKE_REASON_CODES.FACTORY_ADAPTERS_UNCONFIGURED,
+  );
+  assert.equal(spy.stats.calls, 0);
+}
+
+test("provider-only prescription override is not ready and does not call completeJson", async () => {
+  await assertPartialPrescriptionOverrideFailsClosed({
+    ...FULLY_CONFIGURED,
+    FACTORY_PRESCRIPTION_PROVIDER: "anthropic",
+  });
+});
+
+test("model-only prescription override is not ready and does not call completeJson", async () => {
+  await assertPartialPrescriptionOverrideFailsClosed({
+    ...FULLY_CONFIGURED,
+    FACTORY_PRESCRIPTION_MODEL: "claude-test",
+  });
 });
 
 test("advanced path with provider+key but no model fails before completeJson", async () => {
