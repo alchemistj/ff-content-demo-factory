@@ -1,0 +1,66 @@
+{
+  "schemaVersion": "rlb-clean-room-inputs/v1",
+  "prospectId": "rlb-electric-remodel-repair",
+  "businessName": "RLB Electric Remodel & Repair",
+  "factoryBase": {
+    "repository": "alchemistj/ff-content-demo-factory",
+    "sourcePr": 33,
+    "sourceHead": "75a457d69846a27f3992d8e2c10c8f8566492ad3",
+    "branch": "writer/rlb-electric-clean-room-v2"
+  },
+  "sourceSnapshot": {
+    "repository": "alchemistj/ff-content-demo-factory",
+    "ref": "82b72510cb480f12fc02358263781528d30c39ab",
+    "status": "validated pre-writing clean-room packet",
+    "note": "This commit predates any RLB service-page prose. It contains only source/provenance/task material and the four verified inputs copied from the pinned FF-2 Demos evidence/approval lineage."
+  },
+  "cleanRoomExclusions": {
+    "pullRequests": [25],
+    "branches": ["claude/rlb-electric-writer-test"],
+    "commits": ["48e4db8b8de0f5006b922e9b7e6892b1165a17e9"],
+    "note": "Never inspect historical authored RLB copy. The materializer may read only the four files below from the pre-writing Content Factory snapshot. Do not browse FF-2 Demos."
+  },
+  "inputs": [
+    {
+      "name": "review-inventory.json",
+      "repository": "alchemistj/ff-content-demo-factory",
+      "ref": "82b72510cb480f12fc02358263781528d30c39ab",
+      "path": "rlb-electric-remodel-repair/review-inventory.json",
+      "sha256": "eed5b9243ae325bb5c4b4c6845a187844f1ab7bae15a6a48a3086dcf51c758f4",
+      "authority": "Original exact-place Google review inventory; 68 listing reviews, 44 retrieved written reviews, 4.9 listing rating."
+    },
+    {
+      "name": "strategy-recipe.json",
+      "repository": "alchemistj/ff-content-demo-factory",
+      "ref": "82b72510cb480f12fc02358263781528d30c39ab",
+      "path": "rlb-electric-remodel-repair/strategy-recipe.json",
+      "sha256": "d2e81d857c8019283740437d1995d2f94a05f202f02c3afa27049f1d3a0f7884",
+      "authority": "Approved RLB strategy/page prescription and embedded evidence/context."
+    },
+    {
+      "name": "confirmed-facts.json",
+      "repository": "alchemistj/ff-content-demo-factory",
+      "ref": "82b72510cb480f12fc02358263781528d30c39ab",
+      "path": "rlb-electric-remodel-repair/confirmed-facts.json",
+      "sha256": "78d2379c484a6f14f48f699ef7a3ac7587ba46c2dda65fd55f0a6583146e5ddc",
+      "authority": "Confirmed business facts from the approved source lineage."
+    },
+    {
+      "name": "prescription-approval.json",
+      "repository": "alchemistj/ff-content-demo-factory",
+      "ref": "82b72510cb480f12fc02358263781528d30c39ab",
+      "path": "rlb-electric-remodel-repair/prescription-approval.json",
+      "sha256": "8b78291b4dcee0f0a5dee6bc4b7dfe743f61f2857cbb706b0dbcd2968a99d1fc",
+      "authority": "Human approval record: authorized true; recorded Josh approval true; approval method architect-recording-josh."
+    }
+  ],
+  "approvedPagePlanSummary": {
+    "ownerStrategy": { "route": "/", "role": "strategy_overview", "audience": "owner" },
+    "homepage": { "route": "/home", "role": "homepage", "audience": "business", "intent": "electrician Springfield MO" },
+    "panelUpgrade": { "route": "/panel-upgrade-springfield", "role": "service", "audience": "business", "intent": "panel upgrade / planned capacity work" },
+    "electricalRepair": { "route": "/electrical-repair-springfield", "role": "service", "audience": "business", "intent": "electrical repair / urgent troubleshooting" },
+    "contact": { "route": "/contact", "role": "contact", "audience": "business" },
+    "chrome": { "role": "header_footer", "audience": "business" },
+    "explicitExclusion": "Kitchen & bath remodel electrical installation remains a confirmed capability but is not a dedicated demo service page."
+  }
+}
