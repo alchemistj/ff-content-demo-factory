@@ -1,0 +1,183 @@
+{
+  "stage": "writer3",
+  "role": "writer-deterministic-qa",
+  "selfApproved": false,
+  "architectQa": "awaiting-independent-whole-package-look",
+  "humanGate2": "not-started",
+  "pass": true,
+  "wordCountIsDiagnosticOnly": true,
+  "frozenCopy": {
+    "writer1AcceptedContentHead": "c1241a377f70424affe4ed2796b4dceec94ae0f1",
+    "writer1ProductionDigestExpected": "sha256:8181dc56e0706968becf88391d89129785b4ac1364eaeaefbbfeb7d92e3eba5b",
+    "writer1ProductionDigestObserved": "sha256:8181dc56e0706968becf88391d89129785b4ac1364eaeaefbbfeb7d92e3eba5b",
+    "writer1Match": true,
+    "writer2AcceptedHead": "52e3528ef8f886e058547b5091ffe4d4f50e6fa1",
+    "writer2ArchitectQaHead": "453dfb8578408eea9b6a05cb4edad85ab6853cef",
+    "writer2PublicPagesDigestExpected": "sha256:3e9ce7881478eabd3ecd2eedc32002f50f1c49c8c24b33a42448ec8845f8b4fe",
+    "writer2PublicPagesDigestObserved": "sha256:3e9ce7881478eabd3ecd2eedc32002f50f1c49c8c24b33a42448ec8845f8b4fe",
+    "writer2PublicPagesMatch": true,
+    "writer2ChromeDigestExpected": "sha256:9c26840d32cf3e5a8430bcc30ef2fe991a86abd27688e458cae378d3a4f737c5",
+    "writer2ChromeDigestObserved": "sha256:9c26840d32cf3e5a8430bcc30ef2fe991a86abd27688e458cae378d3a4f737c5",
+    "writer2ChromeMatch": true
+  },
+  "readableArtifact": "canary/outputs/writer3-package.md",
+  "authoredOverview": "canary/outputs/writer3-strategy-overview.md",
+  "findings": [
+    {
+      "code": "writer1-production-digest",
+      "pass": true,
+      "message": "Writer 1 production digest is sha256:8181dc56e0706968becf88391d89129785b4ac1364eaeaefbbfeb7d92e3eba5b; expected sha256:8181dc56e0706968becf88391d89129785b4ac1364eaeaefbbfeb7d92e3eba5b."
+    },
+    {
+      "code": "writer2-public-pages-digest",
+      "pass": true,
+      "message": "Writer 2 public-pages digest is sha256:3e9ce7881478eabd3ecd2eedc32002f50f1c49c8c24b33a42448ec8845f8b4fe; expected sha256:3e9ce7881478eabd3ecd2eedc32002f50f1c49c8c24b33a42448ec8845f8b4fe."
+    },
+    {
+      "code": "writer2-chrome-digest",
+      "pass": true,
+      "message": "Writer 2 chrome digest is sha256:9c26840d32cf3e5a8430bcc30ef2fe991a86abd27688e458cae378d3a4f737c5; expected sha256:9c26840d32cf3e5a8430bcc30ef2fe991a86abd27688e458cae378d3a4f737c5."
+    },
+    {
+      "code": "handoff-contains-frozen-writer2-pages",
+      "pass": true,
+      "message": "Writer 3 package contains the accepted Writer 2 Header-through-Footer bytes."
+    },
+    {
+      "code": "handoff-contains-frozen-writer1-replacement",
+      "pass": true,
+      "message": "Handoff includes frozen replacement page."
+    },
+    {
+      "code": "handoff-contains-frozen-writer1-repair",
+      "pass": true,
+      "message": "Handoff includes frozen repair page."
+    },
+    {
+      "code": "strategy-present",
+      "pass": true,
+      "message": "Handoff includes the Strategy Overview heading."
+    },
+    {
+      "code": "strategy-after-footer",
+      "pass": true,
+      "message": "Strategy Overview follows Footer in natural reading order."
+    },
+    {
+      "code": "strategy-internal-not-public",
+      "pass": true,
+      "message": "Strategy Overview states it is internal and not linked from chrome."
+    },
+    {
+      "code": "strategy-not-human-gate-2",
+      "pass": true,
+      "message": "Strategy Overview does not begin Human Gate 2."
+    },
+    {
+      "code": "header-no-strategy",
+      "pass": true,
+      "message": "Header does not expose Strategy Overview."
+    },
+    {
+      "code": "footer-no-strategy",
+      "pass": true,
+      "message": "Footer does not expose Strategy Overview."
+    },
+    {
+      "code": "four-nav-routes",
+      "pass": true,
+      "message": "Header navigation is exactly the four public routes."
+    },
+    {
+      "code": "aaron-avenue-unpublished-public",
+      "pass": true,
+      "message": "Aaron Avenue is unpublished on the frozen public pages."
+    },
+    {
+      "code": "hours-unpublished-public",
+      "pass": true,
+      "message": "Hours are unpublished on the frozen public pages."
+    },
+    {
+      "code": "strategy-topic-why-we-built",
+      "pass": true,
+      "message": "Strategy Overview covers why we built."
+    },
+    {
+      "code": "strategy-topic-four-pages",
+      "pass": true,
+      "message": "Strategy Overview covers four pages."
+    },
+    {
+      "code": "strategy-topic-passed-over",
+      "pass": true,
+      "message": "Strategy Overview covers passed over."
+    },
+    {
+      "code": "strategy-topic-evidence-gaps",
+      "pass": true,
+      "message": "Strategy Overview covers evidence gaps."
+    },
+    {
+      "code": "strategy-topic-hours-conflict",
+      "pass": true,
+      "message": "Strategy Overview covers hours conflict."
+    },
+    {
+      "code": "strategy-topic-address-conflict",
+      "pass": true,
+      "message": "Strategy Overview covers address conflict."
+    },
+    {
+      "code": "strategy-topic-grade-ab",
+      "pass": true,
+      "message": "Strategy Overview covers grade ab."
+    },
+    {
+      "code": "strategy-topic-c-jackson",
+      "pass": true,
+      "message": "Strategy Overview covers c jackson."
+    },
+    {
+      "code": "strategy-topic-neal",
+      "pass": true,
+      "message": "Strategy Overview covers neal."
+    },
+    {
+      "code": "strategy-topic-hoffman",
+      "pass": true,
+      "message": "Strategy Overview covers hoffman."
+    },
+    {
+      "code": "strategy-topic-hillcrest",
+      "pass": true,
+      "message": "Strategy Overview covers hillcrest."
+    },
+    {
+      "code": "strategy-topic-no-platinum",
+      "pass": true,
+      "message": "Strategy Overview covers no platinum."
+    },
+    {
+      "code": "strategy-does-not-publish-aaron-as-nap",
+      "pass": true,
+      "message": "Strategy Overview does not resolve Aaron Avenue into a published NAP."
+    },
+    {
+      "code": "frozen-source-files-not-strategy-authored",
+      "pass": true,
+      "message": "Writer 1 and Writer 2 source files were not used as the Strategy Overview authoring surface."
+    }
+  ],
+  "hardFailCodes": [],
+  "nextOwner": "separate audit-only Architect for the whole writing package",
+  "outOfScope": [
+    "website build",
+    "application-code edits",
+    "provider configuration",
+    "deployment",
+    "merge",
+    "Human Gate 2",
+    "Josh action"
+  ]
+}
