@@ -66,6 +66,14 @@ This lane ships `createConfiguredPublisher()` (Google Docs, setup-required when 
 
 The factory calls `writer.writeCompletePackage()` **once**. The adapter receives full `WriterContext`, guides, examples, and `internalOrder`. Returning the complete website-copy package is required. Internal order is recommended sequencing inside that one run, not three stateless model calls.
 
+## Local Claude Code writer runtime
+
+When an operator **explicitly** sets `FACTORY_WRITER_RUNTIME=claude-code`, `createSelectedWriterAdapter()` returns a `WriterAdapter` that invokes local Claude Code (`claude -p --output-format json`) on the machine (intended: DigitalOcean My Machines worker `fluid-frame-dev-1`). This is not used by D2D intake. D2D still installs a forbidden writer before Human Gate 1.
+
+Subscription/OAuth only. Missing binary, missing login, timeout, cancellation, and API/cloud billing environment (`ANTHROPIC_API_KEY`, Console/`api_key` login, Bedrock/Vertex/Foundry) fail closed. There is no silent Anthropic API fallback and no hidden alternate paid-provider fallback.
+
+Package export: `ff-content-demo-factory/writer-runtime`. Operator status: `npm run writer-runtime:status`.
+
 ## Examples
 
 The writer assignment loads the PR #29 approved-copy catalog. Primary pages are the exact twelve Springfield examples. README, SOURCE_MANIFEST, and historical material are not writer examples. Shared `_chrome.md` files are supplemental header/footer references for the site/chrome phase.
