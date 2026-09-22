@@ -78,6 +78,17 @@ export {
 export { createGoogleDocsPublisher } from "./google-docs/publisher-adapter.js";
 
 export {
+  CLAUDE_CODE_PROVIDER,
+  CLAUDE_CODE_RUNTIME,
+  FACTORY_WRITER_RUNTIME_ENV,
+  WRITER_RUNTIME_ERROR_CODES,
+  createClaudeCodeWriterAdapter,
+  createSelectedWriterAdapter,
+  inspectClaudeCodeStatus,
+  type SelectedWriterAdapter,
+} from "./writer-runtime/index.js";
+
+export {
   D2D_FACTORY_INTAKE_VERSION,
   D2D_GOLDEN_FIXTURE_SHA256,
   D2D_GOLDEN_PRODUCER_FACTS,

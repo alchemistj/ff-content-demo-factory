@@ -230,3 +230,17 @@ test("D2D_INTAKE_ADAPTERS_MODULE stays unused by env adapters and writer is forb
   assert.equal(adapters.researcher.provider, "openai");
   assert.equal(adapters.researcher.model, "gpt-test");
 });
+
+test("FACTORY_WRITER_RUNTIME does not unlock the D2D intake writer before Gate 1", async () => {
+  const adapters = createEnvFactoryAdapters({
+    ...FULLY_CONFIGURED,
+    FACTORY_WRITER_RUNTIME: "claude-code",
+  });
+  assert.equal(adapters.writer.provider, "forbidden");
+  await assert.rejects(
+    () => adapters.writer.writeCompletePackage({} as WriterAssignment),
+    (error: unknown) =>
+      error instanceof WorkflowError &&
+      error.code === D2D_INTAKE_REASON_CODES.WRITER_BEFORE_GATE_FORBIDDEN,
+  );
+});
