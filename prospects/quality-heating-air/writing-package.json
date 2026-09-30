@@ -22,20 +22,29 @@
           "type": "paragraph",
           "spans": [
             {
-              "text": "Quality Heating & Air is the HVAC shop at "
+              "text": "The air conditioner will not cool, or the heat will not come on. "
+            },
+            {
+              "text": "Quality Heating & Air"
+            },
+            {
+              "text": " is the HVAC contractor at "
             },
             {
               "text": "22124 Highway 32, Lebanon, MO 65536",
               "bold": true
             },
             {
-              "text": ". If the building will not cool or will not heat, start with the job that matches the problem."
+              "text": "."
             }
           ]
         },
         {
           "type": "paragraph",
           "spans": [
+            {
+              "text": "Call "
+            },
             {
               "text": "(417) 532-6239",
               "bold": true
@@ -44,31 +53,24 @@
               "text": " or "
             },
             {
-              "text": "schedule service",
+              "text": "send a work request",
               "href": "https://clienthub.getjobber.com/client_hubs/f1dea92e-dc3b-4174-8e3f-545813006311/public/work_request/new?source=social_media"
             },
             {
-              "text": ". Scheduling opens the work request on our site. "
-            },
-            {
-              "text": "Contact",
-              "href": "/contact"
-            },
-            {
-              "text": " has the email and the shop address."
+              "text": "."
             }
           ]
         },
         {
           "type": "heading",
           "level": 2,
-          "text": "Two repair paths"
+          "text": "Cooling or heat"
         },
         {
           "type": "paragraph",
           "spans": [
             {
-              "text": "We repair heating and cooling units. We also do ventilation work and maintenance checks, for homes and for businesses."
+              "text": "We handle heating, cooling, and ventilation for homes and for businesses. Start with the problem you have."
             }
           ]
         },
@@ -83,7 +85,7 @@
                   "href": "/ac-repair-lebanon-mo"
                 },
                 {
-                  "text": " — cooling that will not start, will not keep up, or needs a look before anyone talks about a different system."
+                  "text": " — the cooling unit will not start, or it runs and the rooms will not cool."
                 }
               ]
             },
@@ -94,22 +96,34 @@
                   "href": "/heating-repair-lebanon-mo"
                 },
                 {
-                  "text": " — heat that will not come on or will not hold. Heating repair covers the heating unit. It is not limited to furnaces."
+                  "text": " — the heating unit will not come on, or it runs and the building stays cold."
                 }
               ]
             }
           ]
         },
         {
+          "type": "paragraph",
+          "spans": [
+            {
+              "text": "When you call, say whether you need a repair, a maintenance check, or a consultation to choose a system for the home or the business."
+            }
+          ]
+        },
+        {
           "type": "heading",
           "level": 2,
-          "text": "What you can check before you call"
+          "text": "Hours"
         },
         {
           "type": "paragraph",
           "spans": [
             {
-              "text": "Lennox lists us on its Lebanon dealer locator at this address and phone. We also link to a Lennox article on repair versus replace, and to Amana’s product site. That Amana link is their general product homepage."
+              "text": "Monday–Friday, 8am–4:30pm",
+              "bold": true
+            },
+            {
+              "text": ". Saturday and Sunday are by appointment only."
             }
           ]
         },
@@ -117,14 +131,7 @@
           "type": "paragraph",
           "spans": [
             {
-              "text": "Shop hours are "
-            },
-            {
-              "text": "Monday–Friday, 8am–4:30pm",
-              "bold": true
-            },
-            {
-              "text": ". Saturday and Sunday are by appointment only. For emergency service, contact us. We do not publish an overnight schedule."
+              "text": "For emergency service, please contact us at your convenience."
             }
           ]
         },
@@ -139,20 +146,26 @@
               "href": "https://apply.svcfin.com/home/dealerAuthentication?id=400512199&key=1742219857"
             },
             {
-              "text": ". We do not print rates or approval rules on this page."
+              "text": " to start an application."
             }
           ]
         },
         {
           "type": "heading",
           "level": 2,
-          "text": "Where the work starts"
+          "text": "Reach the shop"
         },
         {
           "type": "paragraph",
           "spans": [
             {
-              "text": "The shop is on Highway 32 in Lebanon."
+              "text": "Call, email "
+            },
+            {
+              "text": "josh@qualityheatnow.com"
+            },
+            {
+              "text": ", or send the work request. The request opens in Jobber. It does not set an appointment."
             }
           ]
         },
@@ -160,18 +173,18 @@
           "type": "paragraph",
           "spans": [
             {
-              "text": "Contact Quality Heating & Air",
+              "text": "Contact",
               "href": "/contact"
             },
             {
-              "text": " — phone (417) 532-6239, email josh@qualityheatnow.com, or the Jobber request."
+              "text": " has the address and the other ways to reach us."
             }
           ]
         }
       ],
       "route": "/home",
-      "seoTitle": "Quality Heating & Air | HVAC Contractor in Lebanon, MO",
-      "metaDescription": "Quality Heating & Air is an HVAC contractor at 22124 Highway 32 in Lebanon, MO. Call (417) 532-6239 or send the shop’s service request for AC or heating repair."
+      "seoTitle": "HVAC Contractor in Lebanon, MO | Quality Heating & Air",
+      "metaDescription": "No cooling or no heat in Lebanon, MO? Quality Heating & Air is the HVAC contractor at 22124 Highway 32. Call (417) 532-6239 or send a work request."
     },
     {
       "pageId": "page-ac-repair",
@@ -189,7 +202,7 @@
           "type": "paragraph",
           "spans": [
             {
-              "text": "Cooling is its own job. We are Quality Heating & Air, on Highway 32 in Lebanon, and we repair heating and cooling units. This page is the cooling side: the house or the business will not come down to temperature, the outdoor unit is misbehaving, or you want the equipment you have checked before a replacement conversation."
+              "text": "The cooling will not start, or it runs and the rooms never come down. Quality Heating & Air repairs cooling units for homes and businesses in Lebanon."
             }
           ]
         },
@@ -204,10 +217,10 @@
               "bold": true
             },
             {
-              "text": ", or open "
+              "text": " or "
             },
             {
-              "text": "Schedule service",
+              "text": "send a work request",
               "href": "https://clienthub.getjobber.com/client_hubs/f1dea92e-dc3b-4174-8e3f-545813006311/public/work_request/new?source=social_media"
             },
             {
@@ -218,28 +231,15 @@
         {
           "type": "heading",
           "level": 2,
-          "text": "What we handle on a cooling call"
+          "text": "What the cooling is doing"
         },
         {
           "type": "paragraph",
           "spans": [
             {
-              "text": "We work on heating, cooling, and ventilation, including a maintenance check and a repair, for homes and for businesses. When you are choosing a system, we will walk through the options. On a cooling call the fork is simple: put the current unit back to work, or talk through a different system."
+              "text": "Tell us which of these fits:"
             }
           ]
-        },
-        {
-          "type": "paragraph",
-          "spans": [
-            {
-              "text": "We link to a Lennox article on repair versus replace. That article is Lennox’s guide. What we offer from our own shop is the consultation and a way to request the visit."
-            }
-          ]
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "When a cooling call makes sense"
         },
         {
           "type": "list",
@@ -248,28 +248,28 @@
             {
               "spans": [
                 {
-                  "text": "The system runs and the rooms never catch up."
+                  "text": "The cooling unit will not start."
                 }
               ]
             },
             {
               "spans": [
                 {
-                  "text": "The outdoor unit is not starting, or it is doing something it did not do last season."
+                  "text": "It runs, and the rooms still will not cool."
                 }
               ]
             },
             {
               "spans": [
                 {
-                  "text": "You want maintenance on equipment that still cools, rather than a repair of a breakdown."
+                  "text": "It still cools, and you want a maintenance check."
                 }
               ]
             },
             {
               "spans": [
                 {
-                  "text": "The problem is heat, not cooling. That visit belongs on the heating repair page."
+                  "text": "You are choosing a system and want the options for this home or business."
                 }
               ]
             }
@@ -278,13 +278,17 @@
         {
           "type": "heading",
           "level": 2,
-          "text": "Hours"
+          "text": "Hours for a cooling call"
         },
         {
           "type": "paragraph",
           "spans": [
             {
-              "text": "Monday–Friday, 8am–4:30pm. Saturday and Sunday, by appointment only. For emergency service, contact us. We are not publishing nights, holidays, or a response time. Use the phone or the service request, and say that the cooling is the problem."
+              "text": "Monday–Friday, 8am–4:30pm",
+              "bold": true
+            },
+            {
+              "text": ". Saturday and Sunday are by appointment only."
             }
           ]
         },
@@ -292,7 +296,15 @@
           "type": "paragraph",
           "spans": [
             {
-              "text": "If the problem is heat, use "
+              "text": "For emergency service, please contact us at your convenience."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "spans": [
+            {
+              "text": "If the heat is the problem, use "
             },
             {
               "text": "heating repair in Lebanon",
@@ -306,32 +318,20 @@
         {
           "type": "heading",
           "level": 2,
-          "text": "Ask for the cooling visit"
+          "text": "Request AC repair"
         },
         {
           "type": "paragraph",
           "spans": [
             {
-              "text": "Have the address, whether this is a home or a business, and what the cooling equipment is doing. The Jobber link is a work request, not a clock time on a calendar."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "spans": [
-            {
-              "text": "Go to contact",
-              "href": "/contact"
-            },
-            {
-              "text": " or call (417) 532-6239."
+              "text": "Have the address and what the cooling unit is doing. Then call or send the work request."
             }
           ]
         }
       ],
       "route": "/ac-repair-lebanon-mo",
       "seoTitle": "AC Repair in Lebanon, MO | Quality Heating & Air",
-      "metaDescription": "AC repair in Lebanon, MO from Quality Heating & Air at 22124 Highway 32. Call (417) 532-6239 or use the shop’s published service request when cooling will not keep up."
+      "metaDescription": "Cooling will not start, or the rooms will not cool, in Lebanon, MO? Call Quality Heating & Air at (417) 532-6239 or send a work request."
     },
     {
       "pageId": "page-heating-repair",
@@ -349,7 +349,7 @@
           "type": "paragraph",
           "spans": [
             {
-              "text": "We repair heating units, along with cooling and ventilation. We are not limiting this page to furnaces. If the heat will not come on, or it runs and the building stays cold, start here."
+              "text": "The heat will not come on, or the unit runs and the building stays cold. Call Quality Heating & Air for heating repair in Lebanon."
             }
           ]
         },
@@ -364,10 +364,10 @@
               "bold": true
             },
             {
-              "text": ", or open "
+              "text": " or "
             },
             {
-              "text": "Schedule service",
+              "text": "send a work request",
               "href": "https://clienthub.getjobber.com/client_hubs/f1dea92e-dc3b-4174-8e3f-545813006311/public/work_request/new?source=social_media"
             },
             {
@@ -378,28 +378,46 @@
         {
           "type": "heading",
           "level": 2,
-          "text": "Repair the heating side, or talk about a different system"
+          "text": "No heat, or heat that will not hold"
         },
         {
           "type": "paragraph",
           "spans": [
             {
-              "text": "We will walk through HVAC options in a consultation so you can choose a system for a home or a business. On a no-heat call, that split matters: fix the heating equipment you have, or look at a replacement system. We are not publishing a price for either path."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "spans": [
-            {
-              "text": "We also do a maintenance check on equipment you want looked at before it fails. If you already know the visit is maintenance rather than a breakdown, say so when you call."
+              "text": "Tell us whether any heat is coming out. We repair heating units in homes and in businesses."
             }
           ]
         },
         {
           "type": "heading",
           "level": 2,
-          "text": "What to tell us"
+          "text": "Choosing a system"
+        },
+        {
+          "type": "paragraph",
+          "spans": [
+            {
+              "text": "If you are comparing heating options, we will walk through them so you can choose the system for your home or business."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "A maintenance check"
+        },
+        {
+          "type": "paragraph",
+          "spans": [
+            {
+              "text": "If the heating equipment is still running and you want it checked, ask for a maintenance check."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "What to have ready"
         },
         {
           "type": "list",
@@ -415,14 +433,14 @@
             {
               "spans": [
                 {
-                  "text": "Home or business, and the address in Lebanon."
+                  "text": "The service address."
                 }
               ]
             },
             {
               "spans": [
                 {
-                  "text": "If the same system’s cooling side has been a problem too. Cooling has its own page so the request stays clear."
+                  "text": "Home or business."
                 }
               ]
             }
@@ -432,7 +450,7 @@
           "type": "paragraph",
           "spans": [
             {
-              "text": "Cooling problems go to "
+              "text": "A cooling problem belongs on "
             },
             {
               "text": "AC repair in Lebanon",
@@ -452,31 +470,54 @@
           "type": "paragraph",
           "spans": [
             {
-              "text": "Monday–Friday, 8am–4:30pm. Saturday and Sunday, by appointment only. For emergency service, contact us. That is an invitation to call, not an overnight schedule."
+              "text": "Monday–Friday, 8am–4:30pm",
+              "bold": true
+            },
+            {
+              "text": ". Saturday and Sunday are by appointment only."
             }
           ]
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Request the heating visit"
         },
         {
           "type": "paragraph",
           "spans": [
             {
-              "text": "Contact the shop",
+              "text": "For emergency service, please contact us at your convenience."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "spans": [
+            {
+              "text": "Call "
+            },
+            {
+              "text": "(417) 532-6239",
+              "bold": true
+            },
+            {
+              "text": ", email "
+            },
+            {
+              "text": "josh@qualityheatnow.com"
+            },
+            {
+              "text": ", or "
+            },
+            {
+              "text": "contact the shop",
               "href": "/contact"
             },
             {
-              "text": " at (417) 532-6239 or josh@qualityheatnow.com, or use Schedule service to open the Jobber request."
+              "text": "."
             }
           ]
         }
       ],
       "route": "/heating-repair-lebanon-mo",
       "seoTitle": "Heating Repair in Lebanon, MO | Quality Heating & Air",
-      "metaDescription": "Heating repair in Lebanon, MO from Quality Heating & Air. The shop publishes heating-unit repair for homes and businesses. Call (417) 532-6239 or send a service request."
+      "metaDescription": "Heat will not come on or will not hold in Lebanon, MO? Call Quality Heating & Air at (417) 532-6239 or send a work request for heating repair."
     },
     {
       "pageId": "page-contact",
@@ -494,7 +535,7 @@
           "type": "paragraph",
           "spans": [
             {
-              "text": "Call, send the service request, or email."
+              "text": "Call, email, or send a work request."
             }
           ]
         },
@@ -504,16 +545,13 @@
             {
               "text": "(417) 532-6239",
               "bold": true
-            },
-            {
-              "text": " is the shop phone."
             }
           ]
         },
         {
           "type": "heading",
           "level": 2,
-          "text": "Ways to reach the shop"
+          "text": "Ways to reach us"
         },
         {
           "type": "list",
@@ -522,67 +560,82 @@
             {
               "spans": [
                 {
-                  "text": "Phone: ",
+                  "text": "Phone:",
                   "bold": true
                 },
                 {
-                  "text": "(417) 532-6239. Weekdays 8am–4:30pm. Saturday and Sunday by appointment only."
+                  "text": " "
+                },
+                {
+                  "text": "(417) 532-6239",
+                  "bold": true
+                },
+                {
+                  "text": ". Monday–Friday, 8am–4:30pm. Saturday and Sunday by appointment only."
                 }
               ]
             },
             {
               "spans": [
                 {
-                  "text": "Email: ",
+                  "text": "Email:",
                   "bold": true
                 },
                 {
-                  "text": "josh@qualityheatnow.com."
+                  "text": " "
+                },
+                {
+                  "text": "josh@qualityheatnow.com"
+                },
+                {
+                  "text": "."
                 }
               ]
             },
             {
               "spans": [
                 {
-                  "text": "Service request: ",
+                  "text": "Work request:",
                   "bold": true
                 },
                 {
-                  "text": "Schedule service",
+                  "text": " "
+                },
+                {
+                  "text": "send a work request",
                   "href": "https://clienthub.getjobber.com/client_hubs/f1dea92e-dc3b-4174-8e3f-545813006311/public/work_request/new?source=social_media"
                 },
                 {
-                  "text": ". This opens our Jobber work request. It does not confirm a clock time by itself."
+                  "text": ". It opens in Jobber and does not set an appointment."
                 }
               ]
             },
             {
               "spans": [
                 {
-                  "text": "WhatsApp: ",
+                  "text": "WhatsApp:",
                   "bold": true
+                },
+                {
+                  "text": " "
                 },
                 {
                   "text": "message (417) 288-2968",
                   "href": "https://wa.me/14172882968"
                 },
                 {
-                  "text": ". That is the WhatsApp link on the homepage. It is not the shop phone above."
+                  "text": ". Separate from the shop phone."
                 }
               ]
             },
             {
               "spans": [
                 {
-                  "text": "Financing application: ",
+                  "text": "Address:",
                   "bold": true
                 },
                 {
-                  "text": "Apply for financing",
-                  "href": "https://apply.svcfin.com/home/dealerAuthentication?id=400512199&key=1742219857"
-                },
-                {
-                  "text": ". Terms are not listed on the homepage."
+                  "text": " 22124 Highway 32, Lebanon, Missouri 65536."
                 }
               ]
             }
@@ -591,28 +644,7 @@
         {
           "type": "heading",
           "level": 2,
-          "text": "Shop"
-        },
-        {
-          "type": "paragraph",
-          "spans": [
-            {
-              "text": "22124 Highway 32, Lebanon, Missouri 65536."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "spans": [
-            {
-              "text": "For emergency service, contact us. The hours above are the schedule we publish."
-            }
-          ]
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "What helps on the first call"
+          "text": "Before you call"
         },
         {
           "type": "list",
@@ -628,14 +660,14 @@
             {
               "spans": [
                 {
-                  "text": "Heating or cooling."
+                  "text": "Cooling or heat."
                 }
               ]
             },
             {
               "spans": [
                 {
-                  "text": "What the equipment is doing."
+                  "text": "What the unit is doing."
                 }
               ]
             },
@@ -652,14 +684,14 @@
           "type": "paragraph",
           "spans": [
             {
-              "text": "Use the phone, the email, or the Jobber request. This page does not submit a separate form."
+              "text": "For emergency service, please contact us at your convenience."
             }
           ]
         }
       ],
       "route": "/contact",
       "seoTitle": "Contact Quality Heating & Air in Lebanon, MO",
-      "metaDescription": "Call Quality Heating & Air at (417) 532-6239, email josh@qualityheatnow.com, or use the published Jobber service request. Shop: 22124 Highway 32, Lebanon, MO 65536."
+      "metaDescription": "Call Quality Heating & Air at (417) 532-6239, email josh@qualityheatnow.com, or send a work request. 22124 Highway 32, Lebanon, MO."
     },
     {
       "pageId": "header-footer",
@@ -729,10 +761,22 @@
           "type": "paragraph",
           "spans": [
             {
-              "text": "Primary action: (417) 532-6239. Secondary: "
+              "text": "Call "
             },
             {
-              "text": "Schedule service",
+              "text": "(417) 532-6239",
+              "bold": true
+            },
+            {
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "spans": [
+            {
+              "text": "Send a work request",
               "href": "https://clienthub.getjobber.com/client_hubs/f1dea92e-dc3b-4174-8e3f-545813006311/public/work_request/new?source=social_media"
             },
             {
@@ -760,14 +804,29 @@
             {
               "spans": [
                 {
-                  "text": "Phone: (417) 532-6239"
+                  "text": "Phone:",
+                  "bold": true
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "(417) 532-6239",
+                  "bold": true
                 }
               ]
             },
             {
               "spans": [
                 {
-                  "text": "Email: josh@qualityheatnow.com"
+                  "text": "Email:",
+                  "bold": true
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "josh@qualityheatnow.com"
                 }
               ]
             },
@@ -782,6 +841,14 @@
               "spans": [
                 {
                   "text": "Monday–Friday, 8am–4:30pm. Saturday–Sunday by appointment only."
+                }
+              ]
+            },
+            {
+              "spans": [
+                {
+                  "text": "Home",
+                  "href": "/home"
                 }
               ]
             },
@@ -845,20 +912,27 @@
           "type": "paragraph",
           "spans": [
             {
-              "text": "This page is for the owner of Quality Heating & Air and for human copy QA. It is not a page for a homeowner to hire from."
+              "text": "This overview is for you, the owner of Quality Heating & Air. It describes the draft a customer in Lebanon would use."
             }
           ]
         },
         {
           "type": "heading",
           "level": 2,
-          "text": "The approval this draft follows"
+          "text": "What a customer can do"
         },
         {
           "type": "paragraph",
           "spans": [
             {
-              "text": "Josh approved the page jobs in chat on 2026-09-30: homepage intent HVAC contractor Lebanon MO, AC repair Lebanon MO, and heating repair Lebanon MO. He said to move it to stage two and have Cursor write the words. He also allowed top-ten Maps ranks and listing counts under 21. That approval does not accept this copy, a build, or the Scout repair work on ff-2-demos pull request 270."
+              "text": "Someone whose air conditioner will not cool, or whose heat will not come on, sees that problem first. The next step is a call to "
+            },
+            {
+              "text": "(417) 532-6239",
+              "bold": true
+            },
+            {
+              "text": " or a work request. The request opens in Jobber, off this website, and it does not confirm an appointment."
             }
           ]
         },
@@ -866,27 +940,43 @@
           "type": "paragraph",
           "spans": [
             {
-              "text": "There was no Cursor prescription in this repository to reuse. Routes are the conventional Content Factory set: / for this overview, /home, /ac-repair-lebanon-mo, /heating-repair-lebanon-mo, and /contact. No earlier approved route map existed."
-            }
-          ]
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "What the customer can do"
-        },
-        {
-          "type": "paragraph",
-          "spans": [
-            {
-              "text": "The homepage introduces the Highway 32 shop and sends people to cooling or heating. The AC page stays on cooling repair versus a system consultation. The heating page refuses a furnace-only claim because the official site does not make one. Contact repeats the published phone, email, Jobber request, hours, and the separate WhatsApp number."
+              "text": "The homepage names the shop at 22124 Highway 32 and offers AC repair or heating repair. Weekday hours are 8am–4:30pm. Saturday and Sunday are by appointment only. Emergency service uses the line already on your site: contact us at your convenience."
             }
           ]
         },
         {
           "type": "heading",
           "level": 2,
-          "text": "What we left out on purpose"
+          "text": "How the pages are split"
+        },
+        {
+          "type": "paragraph",
+          "spans": [
+            {
+              "text": "The homepage carries HVAC contractor in Lebanon and sends the customer to the page that matches the problem. AC repair is the cooling visit. Heating repair stays on the heating unit in the home or the business, the same breadth as your current site."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "spans": [
+            {
+              "text": "Repair, a maintenance check, and a consultation on system options all stay available, because your site offers each of them. The copy leaves the choice with the customer."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "spans": [
+            {
+              "text": "Contact is the short list: phone, email, the Jobber work request, the Highway 32 address, and hours. WhatsApp stays at (417) 288-2968 so it is not mistaken for the shop phone."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Questions for you"
         },
         {
           "type": "list",
@@ -895,57 +985,58 @@
             {
               "spans": [
                 {
-                  "text": "No customer quotations. The discovery listing said 192 reviews. The normalized export dropped the review text, and this worker could not re-read Apify dataset o3rGh1edmkftb6dNG without APIFY_API_TOKEN. No new paid Apify call was made. Prior discovery spend on that run was 0.2832 USD of a 5 USD cap."
+                  "text": "Emergency service is offered, and weekends are by appointment only. There is no after-hours schedule on the site. How should those two facts read together?"
                 }
               ]
             },
             {
               "spans": [
                 {
-                  "text": "No Premier Dealer, factory-trained, or Amana-dealer badge. Lennox does list the shop at the matching address and phone. The Premier language on that page reads as generic explanation."
+                  "text": "Should WhatsApp stay on the contact page at (417) 288-2968?"
                 }
               ]
             },
             {
               "spans": [
                 {
-                  "text": "No 24/7 or same-day promise. The site says emergency service is available and publishes weekday hours plus weekend by appointment."
+                  "text": "Your site does not name towns beyond Lebanon. Is Lebanon the service area you want shown?"
                 }
               ]
             },
             {
               "spans": [
                 {
-                  "text": "No defined guarantee. The homepage heading says Customer Satisfaction Guaranteed and does not define the remedy."
+                  "text": "The shop links to general Lennox and Amana product pages. Lennox's dealer locator matches this address and phone. Premier Dealer wording on that locator is not used as your badge. Do you want any manufacturer link on the customer pages?"
                 }
               ]
             },
             {
               "spans": [
                 {
-                  "text": "No financing terms. Only the application link they publish."
+                  "text": "The current homepage says Customer Satisfaction Guaranteed and does not define a remedy. This draft leaves that heading off. What should it mean if you want it back?"
                 }
               ]
             },
             {
               "spans": [
                 {
-                  "text": "No extra service routes for maintenance, ventilation, or replacement."
+                  "text": "Financing is only the application link. Should that link stay, with no rates on the page?"
                 }
               ]
-            }
-          ]
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Still for a person"
-        },
-        {
-          "type": "paragraph",
-          "spans": [
+            },
             {
-              "text": "Confirm whether weekend by appointment is the line you want next to the emergency heading. Confirm that (417) 288-2968 should appear as WhatsApp only. Confirm any town list beyond Lebanon before a builder adds one."
+              "spans": [
+                {
+                  "text": "Your live site also has a message form. This draft does not add a second form. Phone, email, and the Jobber request are the paths. Do you want that message form represented?"
+                }
+              ]
+            },
+            {
+              "spans": [
+                {
+                  "text": "No review quotations appear, because the exact review words are not in the evidence this draft can quote. When those words are available, which comments should sit next to the work?"
+                }
+              ]
             }
           ]
         }
@@ -953,5 +1044,5 @@
       "route": "/"
     }
   ],
-  "packageHash": "3e3b063fca75912c5a9dd2fd46e6992e3c301ab4737ea8dc9c3d2b3c85b847c5"
+  "packageHash": "71f16cbe068c46670008430f5daa22fca2f65d4c858a18bf5f9ff24a0f0f8aa8"
 }

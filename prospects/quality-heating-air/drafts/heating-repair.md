@@ -4,32 +4,38 @@ Role: service. Audience: business. Route: /heating-repair-lebanon-mo.
 
 SEO title: Heating Repair in Lebanon, MO | Quality Heating & Air
 
-Meta description: Heating repair in Lebanon, MO from Quality Heating & Air. The shop publishes heating-unit repair for homes and businesses. Call (417) 532-6239 or send a service request.
+Meta description: Heat will not come on or will not hold in Lebanon, MO? Call Quality Heating & Air at (417) 532-6239 or send a work request for heating repair.
 
 # Heating Repair in Lebanon, MO
 
-We repair heating units, along with cooling and ventilation. We are not limiting this page to furnaces. If the heat will not come on, or it runs and the building stays cold, start here.
+The heat will not come on, or the unit runs and the building stays cold. Call Quality Heating & Air for heating repair in Lebanon.
 
-Call **(417) 532-6239**, or open [Schedule service](https://clienthub.getjobber.com/client_hubs/f1dea92e-dc3b-4174-8e3f-545813006311/public/work_request/new?source=social_media).
+Call [**(417) 532-6239**](tel:+14175326239) or [send a work request](https://clienthub.getjobber.com/client_hubs/f1dea92e-dc3b-4174-8e3f-545813006311/public/work_request/new?source=social_media).
 
-## Repair the heating side, or talk about a different system
+## No heat, or heat that will not hold
 
-We will walk through HVAC options in a consultation so you can choose a system for a home or a business. On a no-heat call, that split matters: fix the heating equipment you have, or look at a replacement system. We are not publishing a price for either path.
+Tell us whether any heat is coming out. We repair heating units in homes and in businesses.
 
-We also do a maintenance check on equipment you want looked at before it fails. If you already know the visit is maintenance rather than a breakdown, say so when you call.
+## Choosing a system
 
-## What to tell us
+If you are comparing heating options, we will walk through them so you can choose the system for your home or business.
+
+## A maintenance check
+
+If the heating equipment is still running and you want it checked, ask for a maintenance check.
+
+## What to have ready
 
 - Whether any heat is coming out, or none at all.
-- Home or business, and the address in Lebanon.
-- If the same system’s cooling side has been a problem too. Cooling has its own page so the request stays clear.
+- The service address.
+- Home or business.
 
-Cooling problems go to [AC repair in Lebanon](/ac-repair-lebanon-mo).
+A cooling problem belongs on [AC repair in Lebanon](/ac-repair-lebanon-mo).
 
 ## When you can reach us
 
-Monday–Friday, 8am–4:30pm. Saturday and Sunday, by appointment only. For emergency service, contact us. That is an invitation to call, not an overnight schedule.
+**Monday–Friday, 8am–4:30pm**. Saturday and Sunday are by appointment only.
 
-## Request the heating visit
+For emergency service, please contact us at your convenience.
 
-[Contact the shop](/contact) at (417) 532-6239 or josh@qualityheatnow.com, or use Schedule service to open the Jobber request.
+Call [**(417) 532-6239**](tel:+14175326239), email [josh@qualityheatnow.com](mailto:josh@qualityheatnow.com), or [contact the shop](/contact).
