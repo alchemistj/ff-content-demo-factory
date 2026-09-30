@@ -6,34 +6,24 @@ Role: homepage. Audience: business. Route: /home.
 
 SEO title: Moore Heating & Cooling | HVAC Contractor in Lebanon, MO
 
-Meta description: Moore Heating & Cooling is an HVAC contractor in Lebanon, MO for an air conditioner that is not cooling or heat that is out.
+Meta description: Moore Heating & Cooling is an HVAC contractor in Lebanon, MO. Call (417) 588-8822 when the air conditioner is not cooling or the heat is out.
 
 # HVAC Contractor in Lebanon, MO
 
 Moore Heating & Cooling is an HVAC contractor in Lebanon, Missouri.
 
-If the air conditioner is not cooling, or the heat will not come on, start with the page that matches the problem.
+If the air conditioner is not cooling, or the heat will not come on, call.
 
-The address is **22 Glenridge St, Lebanon, MO 65536**. [Contact](/contact) is the next step. The phone number is not confirmed, so this site has no call link.
+Call [**(417) 588-8822**](tel:+14175888822).
 
 ## No cooling, or no heat
 
-- [AC repair in Lebanon](/ac-repair-lebanon-mo) — the air conditioner is not cooling, will not start, or runs without catching the house.
+- [AC repair in Lebanon](/ac-repair-lebanon-mo) — the air conditioner is not cooling or will not start.
 - [Furnace repair in Lebanon](/furnace-repair-lebanon-mo) — the heat is out, or the house will not get warm.
-
-## A plain explanation of the system
-
-New homeowners described a visit on their system this way.
-
-> Dave came and looked at our system. My wife and I are brand new homeowners so we know nothing. He explained everything in very simple and easy to understand terms.
->
-> — 5 out of 5, 2025-10-26
-
-Review id: review-moore-2025-10-26
 
 ## Follow-up after the work
 
-Another customer described the HVAC work and the follow-up.
+One customer described the HVAC work and the follow-up.
 
 > Dave is the only guy I use for HVAC. He’s fast affordable and friendly and he always follows up on his work.
 >
@@ -51,9 +41,9 @@ A customer with rentals in Lebanon described the help this way.
 
 Review id: review-moore-2025-09-06
 
-## Where to go next
+## Call Moore Heating & Cooling
 
-[Contact](/contact) has the address. AC repair and furnace repair are the two jobs on this site.
+Call [**(417) 588-8822**](tel:+14175888822) for AC repair or furnace repair.
 
 ---
 
@@ -63,27 +53,33 @@ Role: service. Audience: business. Route: /ac-repair-lebanon-mo.
 
 SEO title: AC Repair in Lebanon, MO | Moore Heating & Cooling
 
-Meta description: AC repair in Lebanon, MO for an air conditioner that is not cooling or will not start. Moore Heating & Cooling, 22 Glenridge St.
+Meta description: AC repair in Lebanon, MO. Call Moore Heating & Cooling at (417) 588-8822 when the air conditioner is not cooling or will not start.
 
 # AC Repair in Lebanon, MO
 
-If the air conditioner is not cooling, will not start, or runs without catching the house, this is the visit.
+If the air conditioner is not cooling or will not start, call Moore Heating & Cooling.
 
-Moore Heating & Cooling handles that cooling problem in Lebanon.
+Call [**(417) 588-8822**](tel:+14175888822).
 
-[Contact](/contact) shows **22 Glenridge St, Lebanon, MO 65536**. The phone number is not confirmed, so this site has no call link.
+## What to tell us about the cooling
 
-## What to say about the cooling problem
+- What it is doing: no cool air, weak cooling, or a unit that will not start.
+- When it started.
+- Your service address.
 
-- Whether there is no cool air, weak cooling, or a unit that will not start.
-- The service address.
-- Whether this is your home or another property you look after in Lebanon.
+## A plain explanation
 
-## Heat is a different page
+New homeowners described a plain explanation of the system in front of them.
 
-If the heat is out, use [furnace repair in Lebanon](/furnace-repair-lebanon-mo).
+> Dave came and looked at our system. My wife and I are brand new homeowners so we know nothing. He explained everything in very simple and easy to understand terms.
+>
+> — 5 out of 5, 2025-10-26
 
-[Contact](/contact) has the address for this cooling visit.
+Review id: review-moore-2025-10-26
+
+If the heat is out, see [furnace repair in Lebanon](/furnace-repair-lebanon-mo).
+
+Call [**(417) 588-8822**](tel:+14175888822).
 
 ---
 
@@ -93,15 +89,13 @@ Role: service. Audience: business. Route: /furnace-repair-lebanon-mo.
 
 SEO title: Furnace Repair in Lebanon, MO | Moore Heating & Cooling
 
-Meta description: Furnace repair in Lebanon, MO when the heat is out. Moore Heating & Cooling, 22 Glenridge St.
+Meta description: Furnace repair in Lebanon, MO. Call Moore Heating & Cooling at (417) 588-8822 when the heat is out.
 
 # Furnace Repair in Lebanon, MO
 
-If the heat is out, or the house will not get warm, this is the visit.
+If the heat is out, or the house will not get warm, call Moore Heating & Cooling.
 
-Moore Heating & Cooling works on that heating problem in Lebanon.
-
-[Contact](/contact) shows **22 Glenridge St, Lebanon, MO 65536**. The phone number is not confirmed, so this site has no call link.
+Call [**(417) 588-8822**](tel:+14175888822).
 
 ## A winter with no heat
 
@@ -123,15 +117,15 @@ That customer called again at the beginning of summer, got a price, and had the 
 
 Review id: review-moore-2025-09-05
 
-## What to say about the heating problem
+## What to tell us about the heat
 
 - No heat, or heat that is too weak.
-- Whether someone has already said the equipment is old.
-- The service address.
+- When it started.
+- Your service address.
 
-Cooling problems stay on [AC repair in Lebanon](/ac-repair-lebanon-mo).
+If the air conditioner is not cooling, see [AC repair in Lebanon](/ac-repair-lebanon-mo).
 
-[Contact](/contact) has the address for this heating visit.
+Call [**(417) 588-8822**](tel:+14175888822).
 
 ---
 
@@ -141,27 +135,25 @@ Role: contact. Audience: business. Route: /contact.
 
 SEO title: Contact Moore Heating & Cooling in Lebanon, MO
 
-Meta description: Moore Heating & Cooling is at 22 Glenridge St, Lebanon, MO 65536. The phone number is not confirmed, so this page has no call link.
+Meta description: Call Moore Heating & Cooling at (417) 588-8822 for AC repair or furnace repair in Lebanon, MO.
 
 # Contact Moore Heating & Cooling
 
-Moore Heating & Cooling serves Lebanon, Missouri.
+For AC repair or furnace repair in Lebanon.
+
+Call [**(417) 588-8822**](tel:+14175888822).
+
+## What to have ready
+
+- AC repair or furnace repair.
+- What the system is doing, and when it started.
+- Your service address.
 
 ## Address
 
 **22 Glenridge St, Lebanon, MO 65536**
 
-## Phone number not confirmed
-
-This page does not include a call link.
-
-## Useful details
-
-- AC repair or furnace repair.
-- The service address.
-- What the system is doing.
-
-[AC repair](/ac-repair-lebanon-mo) and [furnace repair](/furnace-repair-lebanon-mo) are the two jobs.
+See [AC repair](/ac-repair-lebanon-mo) or [furnace repair](/furnace-repair-lebanon-mo).
 
 ---
 
@@ -180,13 +172,13 @@ Role: header_footer. Audience: business. No route.
 - [Furnace Repair](/furnace-repair-lebanon-mo)
 - [Contact](/contact)
 
-Primary action: [Contact](/contact). Phone number not confirmed.
+Call [**(417) 588-8822**](tel:+14175888822).
 
 ## Footer
 
 Moore Heating & Cooling. HVAC contractor in Lebanon, Missouri.
 
-- Phone number not confirmed.
+- Phone: [**(417) 588-8822**](tel:+14175888822)
 - 22 Glenridge St, Lebanon, MO 65536
 - [AC repair](/ac-repair-lebanon-mo)
 - [Furnace repair](/furnace-repair-lebanon-mo)
@@ -200,27 +192,27 @@ Role: strategy_overview. Audience: owner. Route: /.
 
 # Why we built this site
 
-This page is for the owner of Moore Heating & Cooling. It describes the site a Lebanon customer would use.
+This page is for the owner of Moore Heating & Cooling.
 
 ## What the customer can do
 
-Someone whose air conditioner is not cooling, or whose heat is out, can see who you are, choose AC repair or furnace repair, and find 22 Glenridge St, Lebanon, MO 65536.
+Someone in Lebanon whose air conditioner is not cooling, or whose heat is out, can call (417) 588-8822 and choose AC repair or furnace repair.
 
-The site does not ask that customer to leave a request, call a number, or walk in. The published phone numbers do not agree, so the contact page has one line: phone number not confirmed. There is no call link.
+That number is on the primary Google Maps profile for this business at 22 Glenridge St, observed September 30, 2026 at 21:32 UTC. The pages do not promise hours, a tested call, or a time when someone will answer.
 
 ## Why the pages are split this way
 
-The homepage carries the HVAC contractor in Lebanon job. It sends a cooling problem to AC repair and a heating problem to furnace repair. The comments on the homepage are about a plain explanation, follow-up, and rentals in Lebanon. They do not name an air-conditioner failure or a furnace job, and the homepage does not present them as either.
+The homepage introduces Moore Heating & Cooling as the HVAC contractor and sends cooling and heating to their own pages.
 
-The AC page stays with a system that is not cooling. No comment we have describes an air-conditioning repair, so that page does not borrow a general system comment and call it AC work.
+The AC page asks what the cooling is doing, when it started, and for the customer's service address. The comment on that page is a plain explanation of a system. It does not describe an air-conditioner repair.
 
-The furnace page uses one winter comment. The heat went out. In that customer's words, Mr. Moore came the same day, got the heat working for the time being, and advised a new unit because of the issues and the age. The customer later asked for the new unit, received a price, and had it installed. The installation sentence is complete, so it is quoted. The next sentence on the source is cut off and is not quoted. The page keeps that same-day line inside the quotation and does not offer same-day service as a company promise.
+The furnace page quotes one winter story through the completed installation sentence: the heat went out, it was restored for the time being, and a new unit was installed later. The same-day wording stays inside that quotation.
 
-The pages use the name Dave because customers do. They do not call him the owner. That title was not confirmed.
+22 Glenridge St is the listed business address. The pages do not send the customer there for the repair, and they do not invite a walk-in.
 
 ## The comment kept off the sales pages
 
-One comment in the file is a complaint. It is here so you can see it. It is not on the homepage or the service pages, and it is not used as your price.
+One complaint stays here. It is not used as a price.
 
 > Lie about how much the up keep cost, say 100$ yearly for filters then say 700$ when comes time to change filters
 >
@@ -228,18 +220,15 @@ One comment in the file is a complaint. It is here so you can see it. It is not 
 
 Review id: review-moore-2024-11-13
 
-The comment names 100$ yearly for filters, then 700$ when the filters were changed. It is one person's account.
+The comment names 100$ yearly for filters, then 700$ when the filters were changed.
 
 ## What the quotes are
 
-Each quote keeps the star rating and date from the Exa place-page display. Reviewer names were not on that display. The page showed 8 comments. The listing count was 11. Two comments are cut off. This is not the full set, and it was not checked as a complete Google review export.
+Each quote keeps the star rating and date. Reviewer names were not shown. Eight comments were on the display. The profile count is 11. This is not the full set.
 
-The business name and the Glenridge Street address match on that Exa page and on Merchant Circle. The match is name and address. It is not a separate full verification of the Google listing.
+## Still open
 
-## Questions for you
-
-1. Which phone should the site publish? The Exa page shows +14176572342. Merchant Circle shows 417-344-0669 near the title and (417) 588-8822 in the about text. None is used.
-2. Should the address stay 22 Glenridge St, Lebanon, MO 65536? Those pages say Street. An earlier note said Road.
-3. Are there hours or an email you want listed? None was confirmed, so none is shown.
-4. Does the winter heating story match how you want furnace work described?
-5. Do you want the filter-cost comment answered before this copy is accepted?
+1. Hours and email were not confirmed.
+2. The profile showed Add website. That does not prove there is no website.
+3. Does the winter heating story match how you want furnace work described?
+4. Do you want the filter-cost comment answered before this copy is accepted?

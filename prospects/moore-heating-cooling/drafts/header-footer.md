@@ -13,13 +13,13 @@ Role: header_footer. Audience: business. No route.
 - [Furnace Repair](/furnace-repair-lebanon-mo)
 - [Contact](/contact)
 
-Primary action: [Contact](/contact). Phone number not confirmed.
+Call [**(417) 588-8822**](tel:+14175888822).
 
 ## Footer
 
 Moore Heating & Cooling. HVAC contractor in Lebanon, Missouri.
 
-- Phone number not confirmed.
+- Phone: [**(417) 588-8822**](tel:+14175888822)
 - 22 Glenridge St, Lebanon, MO 65536
 - [AC repair](/ac-repair-lebanon-mo)
 - [Furnace repair](/furnace-repair-lebanon-mo)

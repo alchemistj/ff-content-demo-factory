@@ -4,34 +4,24 @@ Role: homepage. Audience: business. Route: /home.
 
 SEO title: Moore Heating & Cooling | HVAC Contractor in Lebanon, MO
 
-Meta description: Moore Heating & Cooling is an HVAC contractor in Lebanon, MO for an air conditioner that is not cooling or heat that is out.
+Meta description: Moore Heating & Cooling is an HVAC contractor in Lebanon, MO. Call (417) 588-8822 when the air conditioner is not cooling or the heat is out.
 
 # HVAC Contractor in Lebanon, MO
 
 Moore Heating & Cooling is an HVAC contractor in Lebanon, Missouri.
 
-If the air conditioner is not cooling, or the heat will not come on, start with the page that matches the problem.
+If the air conditioner is not cooling, or the heat will not come on, call.
 
-The address is **22 Glenridge St, Lebanon, MO 65536**. [Contact](/contact) is the next step. The phone number is not confirmed, so this site has no call link.
+Call [**(417) 588-8822**](tel:+14175888822).
 
 ## No cooling, or no heat
 
-- [AC repair in Lebanon](/ac-repair-lebanon-mo) — the air conditioner is not cooling, will not start, or runs without catching the house.
+- [AC repair in Lebanon](/ac-repair-lebanon-mo) — the air conditioner is not cooling or will not start.
 - [Furnace repair in Lebanon](/furnace-repair-lebanon-mo) — the heat is out, or the house will not get warm.
-
-## A plain explanation of the system
-
-New homeowners described a visit on their system this way.
-
-> Dave came and looked at our system. My wife and I are brand new homeowners so we know nothing. He explained everything in very simple and easy to understand terms.
->
-> — 5 out of 5, 2025-10-26
-
-Review id: review-moore-2025-10-26
 
 ## Follow-up after the work
 
-Another customer described the HVAC work and the follow-up.
+One customer described the HVAC work and the follow-up.
 
 > Dave is the only guy I use for HVAC. He’s fast affordable and friendly and he always follows up on his work.
 >
@@ -49,6 +39,6 @@ A customer with rentals in Lebanon described the help this way.
 
 Review id: review-moore-2025-09-06
 
-## Where to go next
+## Call Moore Heating & Cooling
 
-[Contact](/contact) has the address. AC repair and furnace repair are the two jobs on this site.
+Call [**(417) 588-8822**](tel:+14175888822) for AC repair or furnace repair.

@@ -17,7 +17,7 @@
         "postalCode": "65536",
         "country": "US"
       },
-      "phone": "CONFIRMATION PLACEHOLDER — do not publish a call link",
+      "phone": "(417) 588-8822",
       "website": "https://www.google.com/maps/search/?api=1&query=Moore%20Heating%20%26%20Cooling%20Lebanon%20MO&query_place_id=ChIJP1KNzm45xYcRFL7_8I0jLR0"
     },
     "facts": [
@@ -35,7 +35,7 @@
       },
       {
         "id": "fact-moore-address",
-        "statement": "Two fetched pages publish 22 Glenridge St, Lebanon, MO 65536 for Moore Heating & Cooling: the Exa place page and Merchant Circle. The writing task said 22 Glenridge Road. These fetched pages say St/Street, not Road. The discovery export did not preserve an address. No official website confirmed the street.",
+        "statement": "The primary Google Maps profile observed 2026-09-30 at 21:32 UTC, the Exa place page, and Merchant Circle publish 22 Glenridge St, Lebanon, MO 65536 for Moore Heating & Cooling. An earlier note said 22 Glenridge Road. These sources say St, not Road. No official website confirmed the street. The Maps address is the listed business address, not a walk-in service location.",
         "status": "confirmed",
         "sourceRefs": [
           {
@@ -45,13 +45,17 @@
           {
             "kind": "site_evidence",
             "refId": "site-moore-merchant"
+          },
+          {
+            "kind": "site_evidence",
+            "refId": "site-moore-maps-primary"
           }
         ],
         "capturedAt": "2026-09-30"
       },
       {
         "id": "fact-moore-phones",
-        "statement": "Fetched pages disagree on the phone. Exa shows +14176572342. Merchant Circle shows 417-344-0669 near the title and (417) 588-8822 in the about text. No number was selected. The NAP phone is a confirmation placeholder. Customer copy must not use a tel link.",
+        "statement": "Earlier directory pages disagreed. Exa showed +14176572342. Merchant Circle showed 417-344-0669 near the title and (417) 588-8822 in the about text. The primary Google Maps profile observed 2026-09-30 at 21:32 UTC for place ID ChIJP1KNzm45xYcRFL7_8I0jLR0 displays (417) 588-8822 with Moore Heating & Cooling and 22 Glenridge St, Lebanon, MO. That primary number supersedes the directory conflict. Customer copy uses (417) 588-8822. No test call was made, and no hours were confirmed.",
         "status": "confirmed",
         "sourceRefs": [
           {
@@ -61,18 +65,26 @@
           {
             "kind": "site_evidence",
             "refId": "site-moore-merchant"
+          },
+          {
+            "kind": "site_evidence",
+            "refId": "site-moore-maps-primary"
           }
         ],
         "capturedAt": "2026-09-30"
       },
       {
         "id": "fact-moore-no-official-site",
-        "statement": "The discovery website field was empty. A fetch of http://www.moreheatingcooling.com on 2026-09-30 returned HTTP 502. That is not proof that no official site exists.",
+        "statement": "The discovery website field was empty. A fetch of http://www.moreheatingcooling.com on 2026-09-30 returned HTTP 502. The primary Google Maps profile observed 2026-09-30 at 21:32 UTC displayed Add website. That control does not prove that no independent website exists.",
         "status": "confirmed",
         "sourceRefs": [
           {
             "kind": "site_evidence",
             "refId": "site-moore-moreheatingcooling"
+          },
+          {
+            "kind": "site_evidence",
+            "refId": "site-moore-maps-primary"
           }
         ],
         "capturedAt": "2026-09-30"
@@ -139,7 +151,7 @@
       },
       {
         "id": "fact-moore-name-address",
-        "statement": "On 2026-09-30 the Exa place page and Merchant Circle were re-read. Both show the name Moore Heating & Cooling and the address 22 Glenridge St, Lebanon, MO 65536. That is name-and-address corroboration between those two pages and the stored discovery name. It is not an independent full Google verification of placeId ChIJP1KNzm45xYcRFL7_8I0jLR0. A Carthage, Tennessee business, a Lebanon Highway listing, and moore-heating-cooling.business.site were not used.",
+        "statement": "On 2026-09-30 at 21:32 UTC the primary Google Maps profile for place ID ChIJP1KNzm45xYcRFL7_8I0jLR0 showed the name Moore Heating & Cooling, the address 22 Glenridge St, Lebanon, MO, the phone (417) 588-8822, 4.5 stars, and 11 reviews. Earlier Exa and Merchant Circle pages had matched the name and street only. Review text remains the eight-comment Exa display, not a complete 11-review inventory. A Carthage, Tennessee listing, a Lebanon Highway listing, and moore-heating-cooling.business.site were not used.",
         "status": "confirmed",
         "sourceRefs": [
           {
@@ -149,6 +161,10 @@
           {
             "kind": "site_evidence",
             "refId": "site-moore-merchant"
+          },
+          {
+            "kind": "site_evidence",
+            "refId": "site-moore-maps-primary"
           }
         ],
         "capturedAt": "2026-09-30"
@@ -186,6 +202,14 @@
         "observation": "MapQuest-style search snippets have associated this domain with a More/Moore spelling at the same street. Fetch on 2026-09-30 returned HTTP 502. Not treated as a working official site.",
         "capturedAt": "2026-09-30",
         "source": "writer fetch"
+      },
+      {
+        "id": "site-moore-maps-primary",
+        "url": "https://www.google.com/maps/place/Moore+Heating+%26+Cooling/@37.6582843,-92.6703006,17z/data=!3m1!4b1!4m6!3m5!1s0x87c5396ece8d523f:0x1d2d238df0ffbe14!8m2!3d37.6582843!4d-92.6703006!16s%2Fg%2F1261vtjhv?entry=ttu&g_ep=EgoyMDI2MDkyOC4wIKXMDSoASAFQAw%3D%3D",
+        "pageType": "maps-profile",
+        "observation": "Observed 2026-09-30 at 21:32 UTC. Primary Google Maps profile for place ID ChIJP1KNzm45xYcRFL7_8I0jLR0. Name Moore Heating & Cooling. Address 22 Glenridge St, Lebanon, MO. Phone (417) 588-8822. Rating 4.5 stars from 11 reviews. The profile displayed Add website. That control does not prove that no independent website exists. No hours were taken from this observation. No test call was made. This phone supersedes the earlier Exa and Merchant Circle directory numbers. The 11-review count is a listing count, not a complete review-text inventory.",
+        "capturedAt": "2026-09-30",
+        "source": "primary Google Maps profile observed 2026-09-30 at 21:32 UTC"
       }
     ],
     "imageRefs": [],
@@ -311,12 +335,12 @@
         "id": "rec-moore-phone",
         "kind": "observation",
         "stance": "advisory",
-        "text": "You may consider leaving every phone number out of call links, because the fetched Exa and Merchant Circle pages do not publish the same number.",
-        "reason": "Choosing one number would invent a confirmed NAP phone.",
+        "text": "You may use (417) 588-8822 from the primary Google Maps profile observed 2026-09-30 at 21:32 UTC, because that profile supersedes the earlier directory conflict.",
+        "reason": "Place ID ChIJP1KNzm45xYcRFL7_8I0jLR0 displayed that number with Moore Heating & Cooling and 22 Glenridge St. The other directory numbers are not selected. No test call was made.",
         "sourceRefs": [
           {
             "kind": "site_evidence",
-            "refId": "site-moore-merchant"
+            "refId": "site-moore-maps-primary"
           }
         ]
       },

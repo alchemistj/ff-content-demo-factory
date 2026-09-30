@@ -4,15 +4,13 @@ Role: service. Audience: business. Route: /furnace-repair-lebanon-mo.
 
 SEO title: Furnace Repair in Lebanon, MO | Moore Heating & Cooling
 
-Meta description: Furnace repair in Lebanon, MO when the heat is out. Moore Heating & Cooling, 22 Glenridge St.
+Meta description: Furnace repair in Lebanon, MO. Call Moore Heating & Cooling at (417) 588-8822 when the heat is out.
 
 # Furnace Repair in Lebanon, MO
 
-If the heat is out, or the house will not get warm, this is the visit.
+If the heat is out, or the house will not get warm, call Moore Heating & Cooling.
 
-Moore Heating & Cooling works on that heating problem in Lebanon.
-
-[Contact](/contact) shows **22 Glenridge St, Lebanon, MO 65536**. The phone number is not confirmed, so this site has no call link.
+Call [**(417) 588-8822**](tel:+14175888822).
 
 ## A winter with no heat
 
@@ -34,12 +32,12 @@ That customer called again at the beginning of summer, got a price, and had the 
 
 Review id: review-moore-2025-09-05
 
-## What to say about the heating problem
+## What to tell us about the heat
 
 - No heat, or heat that is too weak.
-- Whether someone has already said the equipment is old.
-- The service address.
+- When it started.
+- Your service address.
 
-Cooling problems stay on [AC repair in Lebanon](/ac-repair-lebanon-mo).
+If the air conditioner is not cooling, see [AC repair in Lebanon](/ac-repair-lebanon-mo).
 
-[Contact](/contact) has the address for this heating visit.
+Call [**(417) 588-8822**](tel:+14175888822).

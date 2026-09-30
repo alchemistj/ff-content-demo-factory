@@ -2,14 +2,10 @@
 
 These items are flagged for human QA. They did not stop the draft. They stay out of customer-facing pages.
 
-1. Phone is unresolved. Do not ship a call link.
-   - Merchant Circle, re-read 2026-09-30: 417-344-0669 near the title and (417) 588-8822 in the about text.
-   - Exa place page, re-read 2026-09-30: +14176572342.
-   - The task named 417-588-8822 versus 417-657-2342. Both appear. Merchant Circle adds a third.
-   - Customer pages and chrome use one line, "Phone number not confirmed." They do not publish any of these numbers.
-2. Address spelling. Both re-read pages say 22 Glenridge St, Lebanon, MO 65536. The task said 22 Glenridge Road. Discovery did not preserve the street. No official site confirmed it. Customer copy uses Street and does not invite a walk-in.
-3. No working official website was opened. Discovery website field was empty. http://www.moreheatingcooling.com returned HTTP 502 on 2026-09-30. That does not prove no site exists. Some snippets spell the name More Heating & Cooling at the same street.
-4. Identity is corroborated by name and address only. The 2026-09-30 re-read of https://exa.ai/library/place/kb345qddxgs and https://www.merchantcircle.com/moore-heating-cooling-lebanon-mo shows Moore Heating & Cooling at 22 Glenridge St, Lebanon, MO 65536 on both. That is not an independent full Google verification of placeId ChIJP1KNzm45xYcRFL7_8I0jLR0. The Exa page heading showed September 14, 2026, a category line "Heating, Ventilating and Air Conditioning Contractor," status Open with no hours, coordinates 37.658049, -92.670036, and an Open in Google Maps link. A Carthage, Tennessee Moore Heating & Cooling, a Lebanon Highway listing, and moore-heating-cooling.business.site were not used.
+1. Phone is resolved for customer copy. Primary Google Maps profile observed 2026-09-30 at 21:32 UTC for place ID ChIJP1KNzm45xYcRFL7_8I0jLR0 shows Moore Heating & Cooling, 22 Glenridge St, Lebanon, MO, phone (417) 588-8822, 4.5 stars, and 11 reviews. That number supersedes Exa +14176572342 and Merchant Circle 417-344-0669. No test call was made. No hours, answered-call, or appointment claim is supported. A later fetch of the same Maps URL in this session returned an empty JavaScript page and did not re-display the panel.
+2. Address spelling. The primary Maps profile, the Exa page, and Merchant Circle say 22 Glenridge St, Lebanon, MO 65536. An earlier note said Road. No official site confirmed it. Customer copy lists the street as the business address and does not invite a walk-in or treat it as the place where the repair happens.
+3. No working official website was opened. Discovery website field was empty. http://www.moreheatingcooling.com returned HTTP 502 on 2026-09-30. The primary profile displayed Add website. That does not prove no independent website exists. Some snippets spell the name More Heating & Cooling at the same street.
+4. The 21:32 UTC Maps profile is the primary identity source for name, street, and phone. Review text is still the eight-comment Exa display, not a complete 11-review inventory. Reviewer names were absent. The Exa page heading showed September 14, 2026, a category line "Heating, Ventilating and Air Conditioning Contractor," status Open with no hours, and coordinates 37.658049, -92.670036. A Carthage, Tennessee Moore Heating & Cooling, a Lebanon Highway listing, and moore-heating-cooling.business.site were not used.
 5. Review inventory is incomplete.
    - Listing count on 2026-09-30: 11.
    - Actor sample was capped at 5 reviews and was not preserved in discovery.json.
@@ -25,4 +21,4 @@ These items are flagged for human QA. They did not stop the draft. They stay out
 10. timetoopen listed furnace and cooling categories and also mislabeled Lebanon as United Kingdom. Those category lines were not used as a service menu. The Exa category line is not an official service menu. Ventilation is not an approved page.
 11. Merchant Circle's own review module showed 0 reviews, which conflicts with the Maps listing count of 11.
 12. Service area beyond Lebanon was not confirmed. One comment mentions rentals in Lebanon.
-13. No displayed comment describes an air-conditioning repair specifically. Generic system comments stay on the homepage and are not presented as AC or furnace jobs.
+13. No displayed comment describes an air-conditioning repair specifically. The AC page uses the new-homeowner explanation as communication about a system, not as an AC repair. The HVAC follow-up comment and the Lebanon rentals comment stay on the homepage.

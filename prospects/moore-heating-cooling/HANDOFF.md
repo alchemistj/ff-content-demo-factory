@@ -36,11 +36,22 @@ This file is the prospect's internal handoff. It is not customer copy and not th
 - No website code, build, deploy, outreach, CRM, or email was done.
 - Google Docs publication was not run.
 
+## Phone and builder link
+
+- Primary Google Maps profile observed 2026-09-30 at 21:32 UTC for place ID `ChIJP1KNzm45xYcRFL7_8I0jLR0`: Moore Heating & Cooling, 22 Glenridge St, Lebanon, MO, phone (417) 588-8822, 4.5 stars, 11 reviews.
+- Source: https://www.google.com/maps/place/Moore+Heating+%26+Cooling/@37.6582843,-92.6703006,17z/data=!3m1!4b1!4m6!3m5!1s0x87c5396ece8d523f:0x1d2d238df0ffbe14!8m2!3d37.6582843!4d-92.6703006!16s%2Fg%2F1261vtjhv?entry=ttu&g_ep=EgoyMDI2MDkyOC4wIKXMDSoASAFQAw%3D%3D
+- The profile displayed Add website. That does not prove no independent website exists.
+- That phone supersedes Exa `+14176572342` and Merchant Circle `417-344-0669`.
+- No test call, answered call, appointment check, or hours confirmation was made.
+- A fetch of the same URL during this revision returned an empty JavaScript page and did not re-display the panel. The recorded fields are the 21:32 UTC observation.
+- `writing-package/v1` span hrefs accept only `http(s)` and site paths, so `tel:+14175888822` is in the Markdown drafts, not in `writing-package.json` href fields. The package text uses the same visible number, `(417) 588-8822`.
+- The website builder must link that visible number with `tel:+14175888822`. Do not redesign the schema for this prospect.
+
 ## Package
 
 - `packageId`: `website-copy-moore-heating-cooling`
 - `runId`: `writing-2026-09-30-lebanon-hvac`
-- `packageHash`: `a306432b83eb19ed7309162acffe9592962d96b1521411b9189225fd9502b586`
-- Evidence fingerprint (`sha256Json` of the evidence packet): `e680390493222babd3e87bdbb47861aa68eefa6e6cc88749472af257c641dc4a`
+- `packageHash`: `e0d4b30791696792b70f94fc473aaf95ef1f3aeee4c45ba4d8dde8ff24d683b9`
+- Evidence fingerprint (`sha256Json` of the evidence packet): `78d96a0baa8804791a354f288ef618f991ebff196795b42eda3f65e37ec8451e`
 
-The fingerprint changed from `808e788632991006087ef7c02e45b159b1bedfcc520223fbed7ddd5cb0f106f0` because the evidence notes now record the name-and-address re-read and the corrected winter-review truncation boundary. Review texts were not replaced.
+The fingerprint changed from `e680390493222babd3e87bdbb47861aa68eefa6e6cc88749472af257c641dc4a` because the evidence packet now records the primary Maps phone. Review texts were not replaced. Approved routes and target intents were not changed.

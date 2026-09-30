@@ -30,7 +30,7 @@
           "type": "paragraph",
           "spans": [
             {
-              "text": "If the air conditioner is not cooling, or the heat will not come on, start with the page that matches the problem."
+              "text": "If the air conditioner is not cooling, or the heat will not come on, call."
             }
           ]
         },
@@ -38,21 +38,14 @@
           "type": "paragraph",
           "spans": [
             {
-              "text": "The address is "
+              "text": "Call "
             },
             {
-              "text": "22 Glenridge St, Lebanon, MO 65536",
+              "text": "(417) 588-8822",
               "bold": true
             },
             {
-              "text": ". "
-            },
-            {
-              "text": "Contact",
-              "href": "/contact"
-            },
-            {
-              "text": " is the next step. The phone number is not confirmed, so this site has no call link."
+              "text": "."
             }
           ]
         },
@@ -72,7 +65,7 @@
                   "href": "/ac-repair-lebanon-mo"
                 },
                 {
-                  "text": " — the air conditioner is not cooling, will not start, or runs without catching the house."
+                  "text": " — the air conditioner is not cooling or will not start."
                 }
               ]
             },
@@ -92,36 +85,13 @@
         {
           "type": "heading",
           "level": 2,
-          "text": "A plain explanation of the system"
-        },
-        {
-          "type": "paragraph",
-          "spans": [
-            {
-              "text": "New homeowners described a visit on their system this way."
-            }
-          ]
-        },
-        {
-          "type": "quote",
-          "spans": [
-            {
-              "text": "Dave came and looked at our system. My wife and I are brand new homeowners so we know nothing. He explained everything in very simple and easy to understand terms."
-            }
-          ],
-          "attribution": "5 out of 5, 2025-10-26",
-          "reviewId": "review-moore-2025-10-26"
-        },
-        {
-          "type": "heading",
-          "level": 2,
           "text": "Follow-up after the work"
         },
         {
           "type": "paragraph",
           "spans": [
             {
-              "text": "Another customer described the HVAC work and the follow-up."
+              "text": "One customer described the HVAC work and the follow-up."
             }
           ]
         },
@@ -161,24 +131,27 @@
         {
           "type": "heading",
           "level": 2,
-          "text": "Where to go next"
+          "text": "Call Moore Heating & Cooling"
         },
         {
           "type": "paragraph",
           "spans": [
             {
-              "text": "Contact",
-              "href": "/contact"
+              "text": "Call "
             },
             {
-              "text": " has the address. AC repair and furnace repair are the two jobs on this site."
+              "text": "(417) 588-8822",
+              "bold": true
+            },
+            {
+              "text": " for AC repair or furnace repair."
             }
           ]
         }
       ],
       "route": "/home",
       "seoTitle": "Moore Heating & Cooling | HVAC Contractor in Lebanon, MO",
-      "metaDescription": "Moore Heating & Cooling is an HVAC contractor in Lebanon, MO for an air conditioner that is not cooling or heat that is out."
+      "metaDescription": "Moore Heating & Cooling is an HVAC contractor in Lebanon, MO. Call (417) 588-8822 when the air conditioner is not cooling or the heat is out."
     },
     {
       "pageId": "page-ac-repair",
@@ -196,7 +169,7 @@
           "type": "paragraph",
           "spans": [
             {
-              "text": "If the air conditioner is not cooling, will not start, or runs without catching the house, this is the visit."
+              "text": "If the air conditioner is not cooling or will not start, call Moore Heating & Cooling."
             }
           ]
         },
@@ -204,33 +177,21 @@
           "type": "paragraph",
           "spans": [
             {
-              "text": "Moore Heating & Cooling handles that cooling problem in Lebanon."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "spans": [
-            {
-              "text": "Contact",
-              "href": "/contact"
+              "text": "Call "
             },
             {
-              "text": " shows "
-            },
-            {
-              "text": "22 Glenridge St, Lebanon, MO 65536",
+              "text": "(417) 588-8822",
               "bold": true
             },
             {
-              "text": ". The phone number is not confirmed, so this site has no call link."
+              "text": "."
             }
           ]
         },
         {
           "type": "heading",
           "level": 2,
-          "text": "What to say about the cooling problem"
+          "text": "What to tell us about the cooling"
         },
         {
           "type": "list",
@@ -239,21 +200,21 @@
             {
               "spans": [
                 {
-                  "text": "Whether there is no cool air, weak cooling, or a unit that will not start."
+                  "text": "What it is doing: no cool air, weak cooling, or a unit that will not start."
                 }
               ]
             },
             {
               "spans": [
                 {
-                  "text": "The service address."
+                  "text": "When it started."
                 }
               ]
             },
             {
               "spans": [
                 {
-                  "text": "Whether this is your home or another property you look after in Lebanon."
+                  "text": "Your service address."
                 }
               ]
             }
@@ -262,13 +223,31 @@
         {
           "type": "heading",
           "level": 2,
-          "text": "Heat is a different page"
+          "text": "A plain explanation"
         },
         {
           "type": "paragraph",
           "spans": [
             {
-              "text": "If the heat is out, use "
+              "text": "New homeowners described a plain explanation of the system in front of them."
+            }
+          ]
+        },
+        {
+          "type": "quote",
+          "spans": [
+            {
+              "text": "Dave came and looked at our system. My wife and I are brand new homeowners so we know nothing. He explained everything in very simple and easy to understand terms."
+            }
+          ],
+          "attribution": "5 out of 5, 2025-10-26",
+          "reviewId": "review-moore-2025-10-26"
+        },
+        {
+          "type": "paragraph",
+          "spans": [
+            {
+              "text": "If the heat is out, see "
             },
             {
               "text": "furnace repair in Lebanon",
@@ -283,18 +262,21 @@
           "type": "paragraph",
           "spans": [
             {
-              "text": "Contact",
-              "href": "/contact"
+              "text": "Call "
             },
             {
-              "text": " has the address for this cooling visit."
+              "text": "(417) 588-8822",
+              "bold": true
+            },
+            {
+              "text": "."
             }
           ]
         }
       ],
       "route": "/ac-repair-lebanon-mo",
       "seoTitle": "AC Repair in Lebanon, MO | Moore Heating & Cooling",
-      "metaDescription": "AC repair in Lebanon, MO for an air conditioner that is not cooling or will not start. Moore Heating & Cooling, 22 Glenridge St."
+      "metaDescription": "AC repair in Lebanon, MO. Call Moore Heating & Cooling at (417) 588-8822 when the air conditioner is not cooling or will not start."
     },
     {
       "pageId": "page-furnace-repair",
@@ -312,7 +294,7 @@
           "type": "paragraph",
           "spans": [
             {
-              "text": "If the heat is out, or the house will not get warm, this is the visit."
+              "text": "If the heat is out, or the house will not get warm, call Moore Heating & Cooling."
             }
           ]
         },
@@ -320,26 +302,14 @@
           "type": "paragraph",
           "spans": [
             {
-              "text": "Moore Heating & Cooling works on that heating problem in Lebanon."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "spans": [
-            {
-              "text": "Contact",
-              "href": "/contact"
+              "text": "Call "
             },
             {
-              "text": " shows "
-            },
-            {
-              "text": "22 Glenridge St, Lebanon, MO 65536",
+              "text": "(417) 588-8822",
               "bold": true
             },
             {
-              "text": ". The phone number is not confirmed, so this site has no call link."
+              "text": "."
             }
           ]
         },
@@ -392,7 +362,7 @@
         {
           "type": "heading",
           "level": 2,
-          "text": "What to say about the heating problem"
+          "text": "What to tell us about the heat"
         },
         {
           "type": "list",
@@ -408,14 +378,14 @@
             {
               "spans": [
                 {
-                  "text": "Whether someone has already said the equipment is old."
+                  "text": "When it started."
                 }
               ]
             },
             {
               "spans": [
                 {
-                  "text": "The service address."
+                  "text": "Your service address."
                 }
               ]
             }
@@ -425,7 +395,7 @@
           "type": "paragraph",
           "spans": [
             {
-              "text": "Cooling problems stay on "
+              "text": "If the air conditioner is not cooling, see "
             },
             {
               "text": "AC repair in Lebanon",
@@ -440,18 +410,21 @@
           "type": "paragraph",
           "spans": [
             {
-              "text": "Contact",
-              "href": "/contact"
+              "text": "Call "
             },
             {
-              "text": " has the address for this heating visit."
+              "text": "(417) 588-8822",
+              "bold": true
+            },
+            {
+              "text": "."
             }
           ]
         }
       ],
       "route": "/furnace-repair-lebanon-mo",
       "seoTitle": "Furnace Repair in Lebanon, MO | Moore Heating & Cooling",
-      "metaDescription": "Furnace repair in Lebanon, MO when the heat is out. Moore Heating & Cooling, 22 Glenridge St."
+      "metaDescription": "Furnace repair in Lebanon, MO. Call Moore Heating & Cooling at (417) 588-8822 when the heat is out."
     },
     {
       "pageId": "page-contact",
@@ -469,7 +442,54 @@
           "type": "paragraph",
           "spans": [
             {
-              "text": "Moore Heating & Cooling serves Lebanon, Missouri."
+              "text": "For AC repair or furnace repair in Lebanon."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "spans": [
+            {
+              "text": "Call "
+            },
+            {
+              "text": "(417) 588-8822",
+              "bold": true
+            },
+            {
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "What to have ready"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            {
+              "spans": [
+                {
+                  "text": "AC repair or furnace repair."
+                }
+              ]
+            },
+            {
+              "spans": [
+                {
+                  "text": "What the system is doing, and when it started."
+                }
+              ]
+            },
+            {
+              "spans": [
+                {
+                  "text": "Your service address."
+                }
+              ]
             }
           ]
         },
@@ -488,73 +508,31 @@
           ]
         },
         {
-          "type": "heading",
-          "level": 2,
-          "text": "Phone number not confirmed"
-        },
-        {
           "type": "paragraph",
           "spans": [
             {
-              "text": "This page does not include a call link."
-            }
-          ]
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Useful details"
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            {
-              "spans": [
-                {
-                  "text": "AC repair or furnace repair."
-                }
-              ]
+              "text": "See "
             },
-            {
-              "spans": [
-                {
-                  "text": "The service address."
-                }
-              ]
-            },
-            {
-              "spans": [
-                {
-                  "text": "What the system is doing."
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "spans": [
             {
               "text": "AC repair",
               "href": "/ac-repair-lebanon-mo"
             },
             {
-              "text": " and "
+              "text": " or "
             },
             {
               "text": "furnace repair",
               "href": "/furnace-repair-lebanon-mo"
             },
             {
-              "text": " are the two jobs."
+              "text": "."
             }
           ]
         }
       ],
       "route": "/contact",
       "seoTitle": "Contact Moore Heating & Cooling in Lebanon, MO",
-      "metaDescription": "Moore Heating & Cooling is at 22 Glenridge St, Lebanon, MO 65536. The phone number is not confirmed, so this page has no call link."
+      "metaDescription": "Call Moore Heating & Cooling at (417) 588-8822 for AC repair or furnace repair in Lebanon, MO."
     },
     {
       "pageId": "header-footer",
@@ -624,14 +602,14 @@
           "type": "paragraph",
           "spans": [
             {
-              "text": "Primary action: "
+              "text": "Call "
             },
             {
-              "text": "Contact",
-              "href": "/contact"
+              "text": "(417) 588-8822",
+              "bold": true
             },
             {
-              "text": ". Phone number not confirmed."
+              "text": "."
             }
           ]
         },
@@ -655,7 +633,11 @@
             {
               "spans": [
                 {
-                  "text": "Phone number not confirmed."
+                  "text": "Phone: "
+                },
+                {
+                  "text": "(417) 588-8822",
+                  "bold": true
                 }
               ]
             },
@@ -710,7 +692,7 @@
           "type": "paragraph",
           "spans": [
             {
-              "text": "This page is for the owner of Moore Heating & Cooling. It describes the site a Lebanon customer would use."
+              "text": "This page is for the owner of Moore Heating & Cooling."
             }
           ]
         },
@@ -723,7 +705,7 @@
           "type": "paragraph",
           "spans": [
             {
-              "text": "Someone whose air conditioner is not cooling, or whose heat is out, can see who you are, choose AC repair or furnace repair, and find 22 Glenridge St, Lebanon, MO 65536."
+              "text": "Someone in Lebanon whose air conditioner is not cooling, or whose heat is out, can call (417) 588-8822 and choose AC repair or furnace repair."
             }
           ]
         },
@@ -731,7 +713,7 @@
           "type": "paragraph",
           "spans": [
             {
-              "text": "The site does not ask that customer to leave a request, call a number, or walk in. The published phone numbers do not agree, so the contact page has one line: phone number not confirmed. There is no call link."
+              "text": "That number is on the primary Google Maps profile for this business at 22 Glenridge St, observed September 30, 2026 at 21:32 UTC. The pages do not promise hours, a tested call, or a time when someone will answer."
             }
           ]
         },
@@ -744,7 +726,7 @@
           "type": "paragraph",
           "spans": [
             {
-              "text": "The homepage carries the HVAC contractor in Lebanon job. It sends a cooling problem to AC repair and a heating problem to furnace repair. The comments on the homepage are about a plain explanation, follow-up, and rentals in Lebanon. They do not name an air-conditioner failure or a furnace job, and the homepage does not present them as either."
+              "text": "The homepage introduces Moore Heating & Cooling as the HVAC contractor and sends cooling and heating to their own pages."
             }
           ]
         },
@@ -752,7 +734,7 @@
           "type": "paragraph",
           "spans": [
             {
-              "text": "The AC page stays with a system that is not cooling. No comment we have describes an air-conditioning repair, so that page does not borrow a general system comment and call it AC work."
+              "text": "The AC page asks what the cooling is doing, when it started, and for the customer's service address. The comment on that page is a plain explanation of a system. It does not describe an air-conditioner repair."
             }
           ]
         },
@@ -760,7 +742,7 @@
           "type": "paragraph",
           "spans": [
             {
-              "text": "The furnace page uses one winter comment. The heat went out. In that customer's words, Mr. Moore came the same day, got the heat working for the time being, and advised a new unit because of the issues and the age. The customer later asked for the new unit, received a price, and had it installed. The installation sentence is complete, so it is quoted. The next sentence on the source is cut off and is not quoted. The page keeps that same-day line inside the quotation and does not offer same-day service as a company promise."
+              "text": "The furnace page quotes one winter story through the completed installation sentence: the heat went out, it was restored for the time being, and a new unit was installed later. The same-day wording stays inside that quotation."
             }
           ]
         },
@@ -768,7 +750,7 @@
           "type": "paragraph",
           "spans": [
             {
-              "text": "The pages use the name Dave because customers do. They do not call him the owner. That title was not confirmed."
+              "text": "22 Glenridge St is the listed business address. The pages do not send the customer there for the repair, and they do not invite a walk-in."
             }
           ]
         },
@@ -781,7 +763,7 @@
           "type": "paragraph",
           "spans": [
             {
-              "text": "One comment in the file is a complaint. It is here so you can see it. It is not on the homepage or the service pages, and it is not used as your price."
+              "text": "One complaint stays here. It is not used as a price."
             }
           ]
         },
@@ -799,7 +781,7 @@
           "type": "paragraph",
           "spans": [
             {
-              "text": "The comment names 100$ yearly for filters, then 700$ when the filters were changed. It is one person's account."
+              "text": "The comment names 100$ yearly for filters, then 700$ when the filters were changed."
             }
           ]
         },
@@ -812,22 +794,14 @@
           "type": "paragraph",
           "spans": [
             {
-              "text": "Each quote keeps the star rating and date from the Exa place-page display. Reviewer names were not on that display. The page showed 8 comments. The listing count was 11. Two comments are cut off. This is not the full set, and it was not checked as a complete Google review export."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "spans": [
-            {
-              "text": "The business name and the Glenridge Street address match on that Exa page and on Merchant Circle. The match is name and address. It is not a separate full verification of the Google listing."
+              "text": "Each quote keeps the star rating and date. Reviewer names were not shown. Eight comments were on the display. The profile count is 11. This is not the full set."
             }
           ]
         },
         {
           "type": "heading",
           "level": 2,
-          "text": "Questions for you"
+          "text": "Still open"
         },
         {
           "type": "list",
@@ -836,21 +810,14 @@
             {
               "spans": [
                 {
-                  "text": "Which phone should the site publish? The Exa page shows +14176572342. Merchant Circle shows 417-344-0669 near the title and (417) 588-8822 in the about text. None is used."
+                  "text": "Hours and email were not confirmed."
                 }
               ]
             },
             {
               "spans": [
                 {
-                  "text": "Should the address stay 22 Glenridge St, Lebanon, MO 65536? Those pages say Street. An earlier note said Road."
-                }
-              ]
-            },
-            {
-              "spans": [
-                {
-                  "text": "Are there hours or an email you want listed? None was confirmed, so none is shown."
+                  "text": "The profile showed Add website. That does not prove there is no website."
                 }
               ]
             },
@@ -874,5 +841,5 @@
       "route": "/"
     }
   ],
-  "packageHash": "a306432b83eb19ed7309162acffe9592962d96b1521411b9189225fd9502b586"
+  "packageHash": "e0d4b30791696792b70f94fc473aaf95ef1f3aeee4c45ba4d8dde8ff24d683b9"
 }

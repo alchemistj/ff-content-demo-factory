@@ -4,27 +4,27 @@ Role: strategy_overview. Audience: owner. Route: /.
 
 # Why we built this site
 
-This page is for the owner of Moore Heating & Cooling. It describes the site a Lebanon customer would use.
+This page is for the owner of Moore Heating & Cooling.
 
 ## What the customer can do
 
-Someone whose air conditioner is not cooling, or whose heat is out, can see who you are, choose AC repair or furnace repair, and find 22 Glenridge St, Lebanon, MO 65536.
+Someone in Lebanon whose air conditioner is not cooling, or whose heat is out, can call (417) 588-8822 and choose AC repair or furnace repair.
 
-The site does not ask that customer to leave a request, call a number, or walk in. The published phone numbers do not agree, so the contact page has one line: phone number not confirmed. There is no call link.
+That number is on the primary Google Maps profile for this business at 22 Glenridge St, observed September 30, 2026 at 21:32 UTC. The pages do not promise hours, a tested call, or a time when someone will answer.
 
 ## Why the pages are split this way
 
-The homepage carries the HVAC contractor in Lebanon job. It sends a cooling problem to AC repair and a heating problem to furnace repair. The comments on the homepage are about a plain explanation, follow-up, and rentals in Lebanon. They do not name an air-conditioner failure or a furnace job, and the homepage does not present them as either.
+The homepage introduces Moore Heating & Cooling as the HVAC contractor and sends cooling and heating to their own pages.
 
-The AC page stays with a system that is not cooling. No comment we have describes an air-conditioning repair, so that page does not borrow a general system comment and call it AC work.
+The AC page asks what the cooling is doing, when it started, and for the customer's service address. The comment on that page is a plain explanation of a system. It does not describe an air-conditioner repair.
 
-The furnace page uses one winter comment. The heat went out. In that customer's words, Mr. Moore came the same day, got the heat working for the time being, and advised a new unit because of the issues and the age. The customer later asked for the new unit, received a price, and had it installed. The installation sentence is complete, so it is quoted. The next sentence on the source is cut off and is not quoted. The page keeps that same-day line inside the quotation and does not offer same-day service as a company promise.
+The furnace page quotes one winter story through the completed installation sentence: the heat went out, it was restored for the time being, and a new unit was installed later. The same-day wording stays inside that quotation.
 
-The pages use the name Dave because customers do. They do not call him the owner. That title was not confirmed.
+22 Glenridge St is the listed business address. The pages do not send the customer there for the repair, and they do not invite a walk-in.
 
 ## The comment kept off the sales pages
 
-One comment in the file is a complaint. It is here so you can see it. It is not on the homepage or the service pages, and it is not used as your price.
+One complaint stays here. It is not used as a price.
 
 > Lie about how much the up keep cost, say 100$ yearly for filters then say 700$ when comes time to change filters
 >
@@ -32,18 +32,15 @@ One comment in the file is a complaint. It is here so you can see it. It is not 
 
 Review id: review-moore-2024-11-13
 
-The comment names 100$ yearly for filters, then 700$ when the filters were changed. It is one person's account.
+The comment names 100$ yearly for filters, then 700$ when the filters were changed.
 
 ## What the quotes are
 
-Each quote keeps the star rating and date from the Exa place-page display. Reviewer names were not on that display. The page showed 8 comments. The listing count was 11. Two comments are cut off. This is not the full set, and it was not checked as a complete Google review export.
+Each quote keeps the star rating and date. Reviewer names were not shown. Eight comments were on the display. The profile count is 11. This is not the full set.
 
-The business name and the Glenridge Street address match on that Exa page and on Merchant Circle. The match is name and address. It is not a separate full verification of the Google listing.
+## Still open
 
-## Questions for you
-
-1. Which phone should the site publish? The Exa page shows +14176572342. Merchant Circle shows 417-344-0669 near the title and (417) 588-8822 in the about text. None is used.
-2. Should the address stay 22 Glenridge St, Lebanon, MO 65536? Those pages say Street. An earlier note said Road.
-3. Are there hours or an email you want listed? None was confirmed, so none is shown.
-4. Does the winter heating story match how you want furnace work described?
-5. Do you want the filter-cost comment answered before this copy is accepted?
+1. Hours and email were not confirmed.
+2. The profile showed Add website. That does not prove there is no website.
+3. Does the winter heating story match how you want furnace work described?
+4. Do you want the filter-cost comment answered before this copy is accepted?
