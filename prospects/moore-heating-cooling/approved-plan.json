@@ -114,7 +114,7 @@
         "kind": "review_use",
         "stance": "advisory",
         "text": "The winter no-heat display may support the furnace page as a contiguous excerpt, because the visible opening names a heat outage and a later replacement decision. It should not be turned into a same-day promise.",
-        "reason": "The Exa display continues past that opening and then cuts off with an ellipsis.",
+        "reason": "The installation sentence ending in installed it! is complete. The following sentence is truncated with an ellipsis. A later stage may quote through that complete installation sentence and leave the truncated sentence unused. The customer's same-day wording stays inside the quotation.",
         "sourceRefs": [
           {
             "kind": "review",
@@ -219,7 +219,7 @@
       },
       {
         "id": "fact-moore-furnace-association",
-        "statement": "The approved second service is furnace repair. Directory category on the discovery listing is Air conditioning contractor. A separate hours directory (timetoopen) was not used as a service menu because its page mislabeled the country and invented commercial claims. Furnace association for the approved page rests on the human-approved job plus customers' heating comments, not on a fetched official service list.",
+        "statement": "The approved second service is furnace repair. The discovery listing category is Air conditioning contractor. The Exa place page re-read on 2026-09-30 uses the category line Heating, Ventilating and Air Conditioning Contractor. Neither line is an official service menu, and ventilation is not an approved page. A separate hours directory (timetoopen) was not used as a service menu because its page mislabeled the country and invented commercial claims. Furnace association for the approved page rests on the human-approved job plus the winter heating comment, not on a fetched official service list.",
         "status": "inference",
         "sourceRefs": [
           {
@@ -231,7 +231,7 @@
       },
       {
         "id": "fact-moore-reviews-completeness",
-        "statement": "Discovery listing count is 11. The Apify run was configured for at most 5 reviews per listing and no finalist enrichment. Review text was not in the normalized export, and the dataset could not be re-read without APIFY_API_TOKEN. The Exa place page fetched 2026-09-30 displayed 8 review texts, claimed 4.5 from 11 reviews, showed no reviewer names, and truncated 2 texts with an ellipsis. This inventory is that display, not a complete 11-review inventory and not the Apify sample.",
+        "statement": "Discovery listing count is 11. The Apify run was configured for at most 5 reviews per listing and no finalist enrichment. Review text was not in the normalized export, and the dataset could not be re-read without APIFY_API_TOKEN. The Exa place page, stored in evidence/exa-place-reviews-2026-09-30.json and re-read 2026-09-30, displayed 8 review texts, claimed 4.5 from 11 reviews, and showed no reviewer names. This inventory is that display, not a complete 11-review inventory and not the Apify sample. On the 2025-09-05 winter display, the installation sentence ending installed it! is complete; the following sentence is truncated at It took him no time at…. The 2025-07-29 twenty-year display is truncated at its final sentence.",
         "status": "confirmed",
         "sourceRefs": [
           {
@@ -276,6 +276,22 @@
           }
         ],
         "capturedAt": "2026-09-30"
+      },
+      {
+        "id": "fact-moore-name-address",
+        "statement": "On 2026-09-30 the Exa place page and Merchant Circle were re-read. Both show the name Moore Heating & Cooling and the address 22 Glenridge St, Lebanon, MO 65536. That is name-and-address corroboration between those two pages and the stored discovery name. It is not an independent full Google verification of placeId ChIJP1KNzm45xYcRFL7_8I0jLR0. A Carthage, Tennessee business, a Lebanon Highway listing, and moore-heating-cooling.business.site were not used.",
+        "status": "confirmed",
+        "sourceRefs": [
+          {
+            "kind": "site_evidence",
+            "refId": "site-moore-exa"
+          },
+          {
+            "kind": "site_evidence",
+            "refId": "site-moore-merchant"
+          }
+        ],
+        "capturedAt": "2026-09-30"
       }
     ],
     "siteEvidence": [
@@ -291,7 +307,7 @@
         "id": "site-moore-exa",
         "url": "https://exa.ai/library/place/kb345qddxgs",
         "pageType": "place-page",
-        "observation": "Fetched 2026-09-30. Address 22 Glenridge St, Lebanon, MO 65536. Phone +14176572342. Rating line 4.5 out of 5 from 11 reviews. Eight review displays, two truncated, no reviewer names.",
+        "observation": "Fetched and re-read 2026-09-30. The page heading showed September 14, 2026. Name Moore Heating & Cooling. Address 22 Glenridge St, Lebanon, MO 65536. Phone +14176572342. Category line: Heating, Ventilating and Air Conditioning Contractor. Rating line 4.5 out of 5 from 11 reviews. Coordinates 37.658049, -92.670036. Status line said Open and did not list hours. Eight review displays matched evidence/exa-place-reviews-2026-09-30.json. Reviewer names were absent. On the 2025-09-05 winter display, the installation sentence ending installed it! is complete; the following sentence is truncated. The 2025-07-29 twenty-year display is truncated at its final sentence. The page includes an Open in Google Maps link. Name and street match Merchant Circle. This re-read is name-and-address corroboration, not an independent full Google verification.",
         "capturedAt": "2026-09-30",
         "source": "writer fetch"
       },
@@ -299,7 +315,7 @@
         "id": "site-moore-merchant",
         "url": "https://www.merchantcircle.com/moore-heating-cooling-lebanon-mo",
         "pageType": "directory",
-        "observation": "Fetched 2026-09-30. Address 22 Glenridge St, Lebanon, Missouri 65536. Title area shows 417-344-0669. About text says they can be contacted at (417) 588-8822. Directory review module showed 0 reviews, which does not match the Maps listing count.",
+        "observation": "Re-read 2026-09-30. Name Moore Heating & Cooling. Address 22 Glenridge St, Lebanon, Missouri 65536. Title area shows 417-344-0669. About text says they can be contacted at (417) 588-8822. Directory review module showed 0 reviews, which does not match the Maps listing count of 11. Name and street match the Exa place page. This is not an independent full Google verification.",
         "capturedAt": "2026-09-30",
         "source": "writer fetch"
       },
@@ -367,7 +383,7 @@
           "sourceType": "public_place_page_display",
           "sourceUrl": "https://exa.ai/library/place/kb345qddxgs",
           "capturedAt": "2026-09-30",
-          "sourceLabel": "Exa place page for Moore Heating & Cooling, fetched 2026-09-30. Not the Apify discovery sample. Reviewer names were not shown. Two displays end in an ellipsis and are incomplete."
+          "sourceLabel": "Exa place page for Moore Heating & Cooling, re-read 2026-09-30. Reviewer name was not shown. Rating and date are the attribution. The installation sentence ending installed it! is complete. The following sentence is truncated at It took him no time at…. Not a complete 11-review inventory and not the Apify sample. Name and address on this page match Merchant Circle; this is not an independent full Google verification."
         }
       },
       {

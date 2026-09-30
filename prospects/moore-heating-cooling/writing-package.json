@@ -22,14 +22,7 @@
           "type": "paragraph",
           "spans": [
             {
-              "text": "Moore Heating & Cooling serves Lebanon from "
-            },
-            {
-              "text": "22 Glenridge St, Lebanon, MO 65536",
-              "bold": true
-            },
-            {
-              "text": ". The two jobs on this site are air-conditioning repair and furnace repair."
+              "text": "Moore Heating & Cooling is an HVAC contractor in Lebanon, Missouri."
             }
           ]
         },
@@ -37,18 +30,36 @@
           "type": "paragraph",
           "spans": [
             {
+              "text": "If the air conditioner is not cooling, or the heat will not come on, start with the page that matches the problem."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "spans": [
+            {
+              "text": "The address is "
+            },
+            {
+              "text": "22 Glenridge St, Lebanon, MO 65536",
+              "bold": true
+            },
+            {
+              "text": ". "
+            },
+            {
               "text": "Contact",
               "href": "/contact"
             },
             {
-              "text": " is the next step. The phone number is not confirmed, so there is no call link yet."
+              "text": " is the next step. The phone number is not confirmed, so this site has no call link."
             }
           ]
         },
         {
           "type": "heading",
           "level": 2,
-          "text": "Which visit you need"
+          "text": "No cooling, or no heat"
         },
         {
           "type": "list",
@@ -61,7 +72,7 @@
                   "href": "/ac-repair-lebanon-mo"
                 },
                 {
-                  "text": " — the cooling system is the reason you are looking."
+                  "text": " — the air conditioner is not cooling, will not start, or runs without catching the house."
                 }
               ]
             },
@@ -72,24 +83,47 @@
                   "href": "/furnace-repair-lebanon-mo"
                 },
                 {
-                  "text": " — the heat is out, or you are deciding whether an older furnace is finished."
+                  "text": " — the heat is out, or the house will not get warm."
                 }
               ]
             }
           ]
         },
         {
+          "type": "heading",
+          "level": 2,
+          "text": "A plain explanation of the system"
+        },
+        {
           "type": "paragraph",
           "spans": [
             {
-              "text": "We are listed as an air conditioning contractor on Glenridge St. Customers talk about Dave explaining the system and following up. Those comments are not a printed service menu."
+              "text": "New homeowners described a visit on their system this way."
             }
           ]
         },
         {
+          "type": "quote",
+          "spans": [
+            {
+              "text": "Dave came and looked at our system. My wife and I are brand new homeowners so we know nothing. He explained everything in very simple and easy to understand terms."
+            }
+          ],
+          "attribution": "5 out of 5, 2025-10-26",
+          "reviewId": "review-moore-2025-10-26"
+        },
+        {
           "type": "heading",
           "level": 2,
-          "text": "What customers describe"
+          "text": "Follow-up after the work"
+        },
+        {
+          "type": "paragraph",
+          "spans": [
+            {
+              "text": "Another customer described the HVAC work and the follow-up."
+            }
+          ]
         },
         {
           "type": "quote",
@@ -102,10 +136,15 @@
           "reviewId": "review-moore-2025-09-04"
         },
         {
+          "type": "heading",
+          "level": 2,
+          "text": "Rentals in Lebanon"
+        },
+        {
           "type": "paragraph",
           "spans": [
             {
-              "text": "That comment is one person’s HVAC experience. It is not a published arrival window or a price list."
+              "text": "A customer with rentals in Lebanon described the help this way."
             }
           ]
         },
@@ -113,25 +152,7 @@
           "type": "quote",
           "spans": [
             {
-              "text": "Dave Moore is a perfect example of someone who does his job and cares about giving you an honest experience! He has always got back to me and serviced me in a timely manner and is straight to the point! This is the type of guy we need to start giving our business to as a community! Not the big cooperations that just want commission off of you! So if you need some work done this is the man you need to contact."
-            }
-          ],
-          "attribution": "5 out of 5, 2025-10-31",
-          "reviewId": "review-moore-2025-10-31"
-        },
-        {
-          "type": "paragraph",
-          "spans": [
-            {
-              "text": "A customer with rentals in Lebanon describes prompt help and prices that were fair for them. The years in that comment are the customer’s, not a founding date."
-            }
-          ]
-        },
-        {
-          "type": "quote",
-          "spans": [
-            {
-              "text": "We've used Dave for 40 years and he's always given us exceptional service. We have multiple rentals in Lebanon and anytime we have an issue Dave always promptly takes care of it. His work has always been excellent and his prices, more than fair."
+              "text": "We have multiple rentals in Lebanon and anytime we have an issue Dave always promptly takes care of it."
             }
           ],
           "attribution": "5 out of 5, 2025-09-06",
@@ -140,20 +161,24 @@
         {
           "type": "heading",
           "level": 2,
-          "text": "Before you come in"
+          "text": "Where to go next"
         },
         {
           "type": "paragraph",
           "spans": [
             {
-              "text": "Use the contact page. It keeps the Glenridge St address and a clear placeholder where a phone number will go after someone confirms which listing is right."
+              "text": "Contact",
+              "href": "/contact"
+            },
+            {
+              "text": " has the address. AC repair and furnace repair are the two jobs on this site."
             }
           ]
         }
       ],
       "route": "/home",
       "seoTitle": "Moore Heating & Cooling | HVAC Contractor in Lebanon, MO",
-      "metaDescription": "Moore Heating & Cooling is listed in Lebanon, MO for air conditioning and furnace work at 22 Glenridge St. The phone number is still unconfirmed, so there is no call link."
+      "metaDescription": "Moore Heating & Cooling is an HVAC contractor in Lebanon, MO for an air conditioner that is not cooling or heat that is out."
     },
     {
       "pageId": "page-ac-repair",
@@ -171,7 +196,7 @@
           "type": "paragraph",
           "spans": [
             {
-              "text": "If the cooling is why you are here, this is the page for that job. We are listed in Lebanon as an air conditioning contractor at 22 Glenridge St. Furnace work is a different page, so a no-heat call stays separate from a cooling request."
+              "text": "If the air conditioner is not cooling, will not start, or runs without catching the house, this is the visit."
             }
           ]
         },
@@ -179,63 +204,71 @@
           "type": "paragraph",
           "spans": [
             {
-              "text": "Go to contact",
+              "text": "Moore Heating & Cooling handles that cooling problem in Lebanon."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "spans": [
+            {
+              "text": "Contact",
               "href": "/contact"
             },
             {
-              "text": " to leave the request. There is no call link until the phone number is confirmed."
+              "text": " shows "
+            },
+            {
+              "text": "22 Glenridge St, Lebanon, MO 65536",
+              "bold": true
+            },
+            {
+              "text": ". The phone number is not confirmed, so this site has no call link."
             }
           ]
         },
         {
           "type": "heading",
           "level": 2,
-          "text": "What a cooling visit is for"
+          "text": "What to say about the cooling problem"
         },
         {
-          "type": "paragraph",
-          "spans": [
+          "type": "list",
+          "ordered": false,
+          "items": [
             {
-              "text": "Tell us what the system is doing: no cool air, cool air that never catches the house, or a unit that will not start. Customers describe a visit where the system was explained in plain language. They do not leave a step-by-step AC menu."
-            }
-          ]
-        },
-        {
-          "type": "quote",
-          "spans": [
+              "spans": [
+                {
+                  "text": "Whether there is no cool air, weak cooling, or a unit that will not start."
+                }
+              ]
+            },
             {
-              "text": "Dave came and looked at our system. My wife and I are brand new homeowners so we know nothing. He explained everything in very simple and easy to understand terms. And fixed what turned out to be a minor inconvenience in less than 5 minutes. Best service and company we have used for a new house by far."
-            }
-          ],
-          "attribution": "5 out of 5, 2025-10-26",
-          "reviewId": "review-moore-2025-10-26"
-        },
-        {
-          "type": "paragraph",
-          "spans": [
+              "spans": [
+                {
+                  "text": "The service address."
+                }
+              ]
+            },
             {
-              "text": "That visit is described as a minor fix, not as an air-conditioner replacement and not as a price. Use it as a picture of how a first conversation can go. It does not promise a five-minute repair."
+              "spans": [
+                {
+                  "text": "Whether this is your home or another property you look after in Lebanon."
+                }
+              ]
             }
           ]
         },
         {
           "type": "heading",
           "level": 2,
-          "text": "Repair, or a system that is used up"
+          "text": "Heat is a different page"
         },
         {
           "type": "paragraph",
           "spans": [
             {
-              "text": "A cooling problem can be a small fault or equipment that is finished. Customers describe an explanation of the system in front of them, and a follow-up after the work. We are not publishing a checklist or a price for that choice."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "spans": [
-            {
-              "text": "Heat belongs on "
+              "text": "If the heat is out, use "
             },
             {
               "text": "furnace repair in Lebanon",
@@ -247,49 +280,21 @@
           ]
         },
         {
-          "type": "heading",
-          "level": 2,
-          "text": "What to have ready"
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            {
-              "spans": [
-                {
-                  "text": "The service address in Lebanon."
-                }
-              ]
-            },
-            {
-              "spans": [
-                {
-                  "text": "What the cooling equipment is doing."
-                }
-              ]
-            },
-            {
-              "spans": [
-                {
-                  "text": "Whether this is a home or another property you look after."
-                }
-              ]
-            }
-          ]
-        },
-        {
           "type": "paragraph",
           "spans": [
             {
-              "text": "Bring that to the contact page. Do not use a phone number from an old directory until it is confirmed."
+              "text": "Contact",
+              "href": "/contact"
+            },
+            {
+              "text": " has the address for this cooling visit."
             }
           ]
         }
       ],
       "route": "/ac-repair-lebanon-mo",
       "seoTitle": "AC Repair in Lebanon, MO | Moore Heating & Cooling",
-      "metaDescription": "AC repair in Lebanon, MO with Moore Heating & Cooling, listed at 22 Glenridge St. Comments describe plain-language system visits. The phone number is still unconfirmed."
+      "metaDescription": "AC repair in Lebanon, MO for an air conditioner that is not cooling or will not start. Moore Heating & Cooling, 22 Glenridge St."
     },
     {
       "pageId": "page-furnace-repair",
@@ -307,7 +312,7 @@
           "type": "paragraph",
           "spans": [
             {
-              "text": "This page is for heat. We are listed in Lebanon as an air conditioning contractor at 22 Glenridge St, and furnace repair is the heating job on this site. One customer describes a heating failure on an old unit and, later, a new unit. Cooling requests stay on the AC page."
+              "text": "If the heat is out, or the house will not get warm, this is the visit."
             }
           ]
         },
@@ -315,24 +320,39 @@
           "type": "paragraph",
           "spans": [
             {
-              "text": "Contact Moore Heating & Cooling",
+              "text": "Moore Heating & Cooling works on that heating problem in Lebanon."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "spans": [
+            {
+              "text": "Contact",
               "href": "/contact"
             },
             {
-              "text": ". The phone is a confirmation placeholder, not a call link."
+              "text": " shows "
+            },
+            {
+              "text": "22 Glenridge St, Lebanon, MO 65536",
+              "bold": true
+            },
+            {
+              "text": ". The phone number is not confirmed, so this site has no call link."
             }
           ]
         },
         {
           "type": "heading",
           "level": 2,
-          "text": "A winter no-heat visit, in a customer’s words"
+          "text": "A winter with no heat"
         },
         {
           "type": "paragraph",
           "spans": [
             {
-              "text": "One customer described the heating failure, and later the decision to replace the unit."
+              "text": "One customer called when the heat went out during the winter. Mr. Moore got the heat working for the time being and advised a new unit because of the issues. The customer said the unit was more than 25 years old."
             }
           ]
         },
@@ -347,10 +367,15 @@
           "reviewId": "review-moore-2025-09-05"
         },
         {
+          "type": "heading",
+          "level": 2,
+          "text": "The new unit, later"
+        },
+        {
           "type": "paragraph",
           "spans": [
             {
-              "text": "The same comment later describes the replacement decision:"
+              "text": "That customer called again at the beginning of summer, got a price, and had the new unit installed."
             }
           ]
         },
@@ -358,55 +383,16 @@
           "type": "quote",
           "spans": [
             {
-              "text": "Fast forward to the beginning of summer I gave him a call to let him know I was ready to go ahead with the new unit and he came out priced it for me and once I gave him the go ahead he ordered the unit."
+              "text": "Fast forward to the beginning of summer I gave him a call to let him know I was ready to go ahead with the new unit and he came out priced it for me and once I gave him the go ahead he ordered the unit. Once everything showed up he came out to the house and installed it!"
             }
           ],
           "attribution": "5 out of 5, 2025-09-05",
           "reviewId": "review-moore-2025-09-05"
         },
         {
-          "type": "paragraph",
-          "spans": [
-            {
-              "text": "Read that as one household’s account. Coming out the same day is what they said happened that winter. It is not a standing promise. The age in the comment is the age of their unit, not a company history."
-            }
-          ]
-        },
-        {
           "type": "heading",
           "level": 2,
-          "text": "Repair it for now, or replace it"
-        },
-        {
-          "type": "paragraph",
-          "spans": [
-            {
-              "text": "In that account, the heat was restored for the moment, the unit had a lot of issues, and the customer later asked for a new one, got a price, and had it installed. We are not publishing that price or a list of furnace brands."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "spans": [
-            {
-              "text": "Other comments talk about straight answers and follow-up, which is the part of a furnace visit you can ask for even when the equipment decision is still open."
-            }
-          ]
-        },
-        {
-          "type": "quote",
-          "spans": [
-            {
-              "text": "Dave's been doing my work for the past 30 years. Has always been honest and fair priced imo."
-            }
-          ],
-          "attribution": "5 out of 5, 2025-07-29",
-          "reviewId": "review-moore-2025-07-29-thirty-years"
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Ask for the heating visit"
+          "text": "What to say about the heating problem"
         },
         {
           "type": "list",
@@ -415,21 +401,21 @@
             {
               "spans": [
                 {
-                  "text": "Say whether there is no heat or weak heat."
+                  "text": "No heat, or heat that is too weak."
                 }
               ]
             },
             {
               "spans": [
                 {
-                  "text": "Say if someone has already told you the equipment is old."
+                  "text": "Whether someone has already said the equipment is old."
                 }
               ]
             },
             {
               "spans": [
                 {
-                  "text": "Keep cooling problems on the AC repair page."
+                  "text": "The service address."
                 }
               ]
             }
@@ -439,25 +425,33 @@
           "type": "paragraph",
           "spans": [
             {
-              "text": "AC repair",
+              "text": "Cooling problems stay on "
+            },
+            {
+              "text": "AC repair in Lebanon",
               "href": "/ac-repair-lebanon-mo"
             },
             {
-              "text": " is the cooling path. "
-            },
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "spans": [
             {
               "text": "Contact",
               "href": "/contact"
             },
             {
-              "text": " is where the unconfirmed phone is labeled, next to 22 Glenridge St."
+              "text": " has the address for this heating visit."
             }
           ]
         }
       ],
       "route": "/furnace-repair-lebanon-mo",
       "seoTitle": "Furnace Repair in Lebanon, MO | Moore Heating & Cooling",
-      "metaDescription": "Furnace repair in Lebanon, MO with Moore Heating & Cooling at 22 Glenridge St. One customer describes a winter no-heat visit and a later replacement. No call link until the phone is confirmed."
+      "metaDescription": "Furnace repair in Lebanon, MO when the heat is out. Moore Heating & Cooling, 22 Glenridge St."
     },
     {
       "pageId": "page-contact",
@@ -475,24 +469,7 @@
           "type": "paragraph",
           "spans": [
             {
-              "text": "The address listings agree more than the phone listings do. Use the address below. Do not call from this page until one number is confirmed."
-            }
-          ]
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Phone — confirmation placeholder"
-        },
-        {
-          "type": "paragraph",
-          "spans": [
-            {
-              "text": "Do not publish a call link yet. ",
-              "bold": true
-            },
-            {
-              "text": "Directory listings disagree: (417) 588-8822, (417) 657-2342, and 417-344-0669. None is selected here."
+              "text": "Moore Heating & Cooling serves Lebanon, Missouri."
             }
           ]
         },
@@ -505,22 +482,28 @@
           "type": "paragraph",
           "spans": [
             {
-              "text": "22 Glenridge St, Lebanon, MO 65536."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "spans": [
-            {
-              "text": "Listings use Street, not Road. A company website was not available to confirm the spelling."
+              "text": "22 Glenridge St, Lebanon, MO 65536",
+              "bold": true
             }
           ]
         },
         {
           "type": "heading",
           "level": 2,
-          "text": "What to have ready once a number is confirmed"
+          "text": "Phone number not confirmed"
+        },
+        {
+          "type": "paragraph",
+          "spans": [
+            {
+              "text": "This page does not include a call link."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Useful details"
         },
         {
           "type": "list",
@@ -529,14 +512,14 @@
             {
               "spans": [
                 {
-                  "text": "Service address."
+                  "text": "AC repair or furnace repair."
                 }
               ]
             },
             {
               "spans": [
                 {
-                  "text": "AC repair or furnace repair."
+                  "text": "The service address."
                 }
               ]
             },
@@ -553,14 +536,25 @@
           "type": "paragraph",
           "spans": [
             {
-              "text": "Hours and email are not listed here. This page does not send a form."
+              "text": "AC repair",
+              "href": "/ac-repair-lebanon-mo"
+            },
+            {
+              "text": " and "
+            },
+            {
+              "text": "furnace repair",
+              "href": "/furnace-repair-lebanon-mo"
+            },
+            {
+              "text": " are the two jobs."
             }
           ]
         }
       ],
       "route": "/contact",
       "seoTitle": "Contact Moore Heating & Cooling in Lebanon, MO",
-      "metaDescription": "Moore Heating & Cooling is listed at 22 Glenridge St, Lebanon, MO 65536. The phone number is a confirmation placeholder until the conflicting directory numbers are resolved."
+      "metaDescription": "Moore Heating & Cooling is at 22 Glenridge St, Lebanon, MO 65536. The phone number is not confirmed, so this page has no call link."
     },
     {
       "pageId": "header-footer",
@@ -637,7 +631,7 @@
               "href": "/contact"
             },
             {
-              "text": ". No phone button until a number is confirmed."
+              "text": ". Phone number not confirmed."
             }
           ]
         },
@@ -650,7 +644,7 @@
           "type": "paragraph",
           "spans": [
             {
-              "text": "Moore Heating & Cooling. HVAC contractor listing in Lebanon, Missouri."
+              "text": "Moore Heating & Cooling. HVAC contractor in Lebanon, Missouri."
             }
           ]
         },
@@ -661,7 +655,7 @@
             {
               "spans": [
                 {
-                  "text": "Phone: confirmation placeholder — do not use a call link."
+                  "text": "Phone number not confirmed."
                 }
               ]
             },
@@ -697,14 +691,6 @@
               ]
             }
           ]
-        },
-        {
-          "type": "paragraph",
-          "spans": [
-            {
-              "text": "No hours, email, or extra towns are in the footer. They were not confirmed."
-            }
-          ]
         }
       ]
     },
@@ -724,20 +710,20 @@
           "type": "paragraph",
           "spans": [
             {
-              "text": "This page is for Moore Heating & Cooling’s owner and for human copy QA. Customers should not be sent here to hire."
+              "text": "This page is for the owner of Moore Heating & Cooling. It describes the site a Lebanon customer would use."
             }
           ]
         },
         {
           "type": "heading",
           "level": 2,
-          "text": "The approval this draft follows"
+          "text": "What the customer can do"
         },
         {
           "type": "paragraph",
           "spans": [
             {
-              "text": "Josh approved the page jobs in chat on 2026-09-30: homepage intent HVAC contractor Lebanon MO, AC repair Lebanon MO, and furnace repair Lebanon MO. Top-ten rank and a listing count under 21 are allowed. The approval does not accept this copy, a build, or Scout repairs on ff-2-demos pull request 270."
+              "text": "Someone whose air conditioner is not cooling, or whose heat is out, can see who you are, choose AC repair or furnace repair, and find 22 Glenridge St, Lebanon, MO 65536."
             }
           ]
         },
@@ -745,33 +731,20 @@
           "type": "paragraph",
           "spans": [
             {
-              "text": "No Cursor prescription was in this repository. Routes are / for this overview, /home, /ac-repair-lebanon-mo, /furnace-repair-lebanon-mo, and /contact."
-            }
-          ]
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Why the pages split this way"
-        },
-        {
-          "type": "paragraph",
-          "spans": [
-            {
-              "text": "The homepage is the HVAC contractor introduction and points at the two approved jobs. AC repair stays with cooling and uses a comment about a plain-language system visit, without pretending that visit was an air-conditioner story. Furnace repair uses two excerpts from the winter no-heat comment: the outage, then the later decision to replace. The install sentence after that was cut off on the source page, so it is not quoted."
+              "text": "The site does not ask that customer to leave a request, call a number, or walk in. The published phone numbers do not agree, so the contact page has one line: phone number not confirmed. There is no call link."
             }
           ]
         },
         {
           "type": "heading",
           "level": 2,
-          "text": "Reviews, honestly"
+          "text": "Why the pages are split this way"
         },
         {
           "type": "paragraph",
           "spans": [
             {
-              "text": "The Maps listing count on 2026-09-30 was 11. The discovery actor retrieved a limited sample and the normalized file dropped it. Apify dataset o3rGh1edmkftb6dNG could not be re-read here. No new paid call was made. The quotes in this draft come from eight reviews displayed on an Exa place page the same day. Two of those eight are truncated and were not quoted in full. Reviewer names were not on that page. This is not a complete inventory."
+              "text": "The homepage carries the HVAC contractor in Lebanon job. It sends a cooling problem to AC repair and a heating problem to furnace repair. The comments on the homepage are about a plain explanation, follow-up, and rentals in Lebanon. They do not name an air-conditioner failure or a furnace job, and the homepage does not present them as either."
             }
           ]
         },
@@ -779,7 +752,36 @@
           "type": "paragraph",
           "spans": [
             {
-              "text": "One displayed comment is a complaint. It stays in the evidence and here, not on the sales pages:"
+              "text": "The AC page stays with a system that is not cooling. No comment we have describes an air-conditioning repair, so that page does not borrow a general system comment and call it AC work."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "spans": [
+            {
+              "text": "The furnace page uses one winter comment. The heat went out. In that customer's words, Mr. Moore came the same day, got the heat working for the time being, and advised a new unit because of the issues and the age. The customer later asked for the new unit, received a price, and had it installed. The installation sentence is complete, so it is quoted. The next sentence on the source is cut off and is not quoted. The page keeps that same-day line inside the quotation and does not offer same-day service as a company promise."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "spans": [
+            {
+              "text": "The pages use the name Dave because customers do. They do not call him the owner. That title was not confirmed."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "The comment kept off the sales pages"
+        },
+        {
+          "type": "paragraph",
+          "spans": [
+            {
+              "text": "One comment in the file is a complaint. It is here so you can see it. It is not on the homepage or the service pages, and it is not used as your price."
             }
           ]
         },
@@ -797,64 +799,72 @@
           "type": "paragraph",
           "spans": [
             {
-              "text": "That comment alleges a filter-maintenance price changed from about $100 a year to $700. It is one person’s accusation. It is not treated as the company’s price, and it is not answered with a defense this draft does not have."
+              "text": "The comment names 100$ yearly for filters, then 700$ when the filters were changed. It is one person's account."
             }
           ]
         },
         {
           "type": "heading",
           "level": 2,
-          "text": "Phone and address"
+          "text": "What the quotes are"
         },
         {
           "type": "paragraph",
           "spans": [
             {
-              "text": "Merchant Circle, fetched directly, shows 417-344-0669 near the title and (417) 588-8822 in the body, at 22 Glenridge St. Exa shows +1 417-657-2342 at the same street. The task said Glenridge Road. The draft uses St and refuses a call link. moreheatingcooling.com returned HTTP 502. That is not proof the business has no website. Owner title for Dave Moore was not confirmed; customers use the name."
+              "text": "Each quote keeps the star rating and date from the Exa place-page display. Reviewer names were not on that display. The page showed 8 comments. The listing count was 11. Two comments are cut off. This is not the full set, and it was not checked as a complete Google review export."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "spans": [
+            {
+              "text": "The business name and the Glenridge Street address match on that Exa page and on Merchant Circle. The match is name and address. It is not a separate full verification of the Google listing."
             }
           ]
         },
         {
           "type": "heading",
           "level": 2,
-          "text": "Still for a person"
+          "text": "Questions for you"
         },
         {
           "type": "list",
-          "ordered": false,
+          "ordered": true,
           "items": [
             {
               "spans": [
                 {
-                  "text": "Pick the phone number, or confirm there is not one to publish."
+                  "text": "Which phone should the site publish? The Exa page shows +14176572342. Merchant Circle shows 417-344-0669 near the title and (417) 588-8822 in the about text. None is used."
                 }
               ]
             },
             {
               "spans": [
                 {
-                  "text": "Confirm Street versus Road."
+                  "text": "Should the address stay 22 Glenridge St, Lebanon, MO 65536? Those pages say Street. An earlier note said Road."
                 }
               ]
             },
             {
               "spans": [
                 {
-                  "text": "Confirm hours and email if they should appear."
+                  "text": "Are there hours or an email you want listed? None was confirmed, so none is shown."
                 }
               ]
             },
             {
               "spans": [
                 {
-                  "text": "Decide whether the filter-cost comment needs a response before this copy is accepted."
+                  "text": "Does the winter heating story match how you want furnace work described?"
                 }
               ]
             },
             {
               "spans": [
                 {
-                  "text": "If a full review export becomes readable, replace this eight-comment display. Do not treat it as all 11."
+                  "text": "Do you want the filter-cost comment answered before this copy is accepted?"
                 }
               ]
             }
@@ -864,5 +874,5 @@
       "route": "/"
     }
   ],
-  "packageHash": "28586382620f3317c96fcee0ea727aad7e4d9ad441b6869e3258584ffe7cb9a0"
+  "packageHash": "a306432b83eb19ed7309162acffe9592962d96b1521411b9189225fd9502b586"
 }

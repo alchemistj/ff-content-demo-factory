@@ -13,16 +13,14 @@ Role: header_footer. Audience: business. No route.
 - [Furnace Repair](/furnace-repair-lebanon-mo)
 - [Contact](/contact)
 
-Primary action: [Contact](/contact). No phone button until a number is confirmed.
+Primary action: [Contact](/contact). Phone number not confirmed.
 
 ## Footer
 
-Moore Heating & Cooling. HVAC contractor listing in Lebanon, Missouri.
+Moore Heating & Cooling. HVAC contractor in Lebanon, Missouri.
 
-- Phone: confirmation placeholder — do not use a call link.
+- Phone number not confirmed.
 - 22 Glenridge St, Lebanon, MO 65536
 - [AC repair](/ac-repair-lebanon-mo)
 - [Furnace repair](/furnace-repair-lebanon-mo)
 - [Contact](/contact)
-
-No hours, email, or extra towns are in the footer. They were not confirmed.

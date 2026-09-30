@@ -4,22 +4,34 @@ Role: homepage. Audience: business. Route: /home.
 
 SEO title: Moore Heating & Cooling | HVAC Contractor in Lebanon, MO
 
-Meta description: Moore Heating & Cooling is listed in Lebanon, MO for air conditioning and furnace work at 22 Glenridge St. The phone number is still unconfirmed, so there is no call link.
+Meta description: Moore Heating & Cooling is an HVAC contractor in Lebanon, MO for an air conditioner that is not cooling or heat that is out.
 
 # HVAC Contractor in Lebanon, MO
 
-Moore Heating & Cooling serves Lebanon from **22 Glenridge St, Lebanon, MO 65536**. The two jobs on this site are air-conditioning repair and furnace repair.
+Moore Heating & Cooling is an HVAC contractor in Lebanon, Missouri.
 
-[Contact](/contact) is the next step. The phone number is not confirmed, so there is no call link yet.
+If the air conditioner is not cooling, or the heat will not come on, start with the page that matches the problem.
 
-## Which visit you need
+The address is **22 Glenridge St, Lebanon, MO 65536**. [Contact](/contact) is the next step. The phone number is not confirmed, so this site has no call link.
 
-- [AC repair in Lebanon](/ac-repair-lebanon-mo) — the cooling system is the reason you are looking.
-- [Furnace repair in Lebanon](/furnace-repair-lebanon-mo) — the heat is out, or you are deciding whether an older furnace is finished.
+## No cooling, or no heat
 
-We are listed as an air conditioning contractor on Glenridge St. Customers talk about Dave explaining the system and following up. Those comments are not a printed service menu.
+- [AC repair in Lebanon](/ac-repair-lebanon-mo) — the air conditioner is not cooling, will not start, or runs without catching the house.
+- [Furnace repair in Lebanon](/furnace-repair-lebanon-mo) — the heat is out, or the house will not get warm.
 
-## What customers describe
+## A plain explanation of the system
+
+New homeowners described a visit on their system this way.
+
+> Dave came and looked at our system. My wife and I are brand new homeowners so we know nothing. He explained everything in very simple and easy to understand terms.
+>
+> — 5 out of 5, 2025-10-26
+
+Review id: review-moore-2025-10-26
+
+## Follow-up after the work
+
+Another customer described the HVAC work and the follow-up.
 
 > Dave is the only guy I use for HVAC. He’s fast affordable and friendly and he always follows up on his work.
 >
@@ -27,22 +39,16 @@ We are listed as an air conditioning contractor on Glenridge St. Customers talk 
 
 Review id: review-moore-2025-09-04
 
-That comment is one person’s HVAC experience. It is not a published arrival window or a price list.
+## Rentals in Lebanon
 
-> Dave Moore is a perfect example of someone who does his job and cares about giving you an honest experience! He has always got back to me and serviced me in a timely manner and is straight to the point! This is the type of guy we need to start giving our business to as a community! Not the big cooperations that just want commission off of you! So if you need some work done this is the man you need to contact.
->
-> — 5 out of 5, 2025-10-31
+A customer with rentals in Lebanon described the help this way.
 
-Review id: review-moore-2025-10-31
-
-A customer with rentals in Lebanon describes prompt help and prices that were fair for them. The years in that comment are the customer’s, not a founding date.
-
-> We've used Dave for 40 years and he's always given us exceptional service. We have multiple rentals in Lebanon and anytime we have an issue Dave always promptly takes care of it. His work has always been excellent and his prices, more than fair.
+> We have multiple rentals in Lebanon and anytime we have an issue Dave always promptly takes care of it.
 >
 > — 5 out of 5, 2025-09-06
 
 Review id: review-moore-2025-09-06
 
-## Before you come in
+## Where to go next
 
-Use the contact page. It keeps the Glenridge St address and a clear placeholder where a phone number will go after someone confirms which listing is right.
+[Contact](/contact) has the address. AC repair and furnace repair are the two jobs on this site.

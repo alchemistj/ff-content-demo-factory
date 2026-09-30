@@ -4,26 +4,24 @@ Role: contact. Audience: business. Route: /contact.
 
 SEO title: Contact Moore Heating & Cooling in Lebanon, MO
 
-Meta description: Moore Heating & Cooling is listed at 22 Glenridge St, Lebanon, MO 65536. The phone number is a confirmation placeholder until the conflicting directory numbers are resolved.
+Meta description: Moore Heating & Cooling is at 22 Glenridge St, Lebanon, MO 65536. The phone number is not confirmed, so this page has no call link.
 
 # Contact Moore Heating & Cooling
 
-The address listings agree more than the phone listings do. Use the address below. Do not call from this page until one number is confirmed.
-
-## Phone — confirmation placeholder
-
-**Do not publish a call link yet. **Directory listings disagree: (417) 588-8822, (417) 657-2342, and 417-344-0669. None is selected here.
+Moore Heating & Cooling serves Lebanon, Missouri.
 
 ## Address
 
-22 Glenridge St, Lebanon, MO 65536.
+**22 Glenridge St, Lebanon, MO 65536**
 
-Listings use Street, not Road. A company website was not available to confirm the spelling.
+## Phone number not confirmed
 
-## What to have ready once a number is confirmed
+This page does not include a call link.
 
-- Service address.
+## Useful details
+
 - AC repair or furnace repair.
+- The service address.
 - What the system is doing.
 
-Hours and email are not listed here. This page does not send a form.
+[AC repair](/ac-repair-lebanon-mo) and [furnace repair](/furnace-repair-lebanon-mo) are the two jobs.

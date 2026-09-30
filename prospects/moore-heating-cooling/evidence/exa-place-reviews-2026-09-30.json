@@ -1,7 +1,7 @@
 {
   "sourceUrl": "https://exa.ai/library/place/kb345qddxgs",
   "fetchedAt": "2026-09-30",
-  "completeness": "Eight review displays from the Exa place page. Not the Apify dataset. Not a complete 11-review inventory. Two texts are truncated with an ellipsis. Reviewer names were absent. Attribution lines are copied from the page.",
+  "completeness": "Eight review displays from the Exa place page, re-read 2026-09-30, matching this file. Not the Apify dataset. Not a complete 11-review inventory. Reviewer names were absent. Attribution lines are copied from the page. On the 2025-09-05 winter display, the installation sentence ending in installed it! is complete; the following sentence is truncated at It took him no time at…. The 2025-07-29 display that begins I have done business is truncated at its final sentence.",
   "reviews": [
     {
       "text": "Dave Moore is a perfect example of someone who does his job and cares about giving you an honest experience! He has always got back to me and serviced me in a timely manner and is straight to the point! This is the type of guy we need to start giving our business to as a community! Not the big cooperations that just want commission off of you! So if you need some work done this is the man you need to contact.",

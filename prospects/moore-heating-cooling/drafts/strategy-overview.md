@@ -4,23 +4,27 @@ Role: strategy_overview. Audience: owner. Route: /.
 
 # Why we built this site
 
-This page is for Moore Heating & Cooling’s owner and for human copy QA. Customers should not be sent here to hire.
+This page is for the owner of Moore Heating & Cooling. It describes the site a Lebanon customer would use.
 
-## The approval this draft follows
+## What the customer can do
 
-Josh approved the page jobs in chat on 2026-09-30: homepage intent HVAC contractor Lebanon MO, AC repair Lebanon MO, and furnace repair Lebanon MO. Top-ten rank and a listing count under 21 are allowed. The approval does not accept this copy, a build, or Scout repairs on ff-2-demos pull request 270.
+Someone whose air conditioner is not cooling, or whose heat is out, can see who you are, choose AC repair or furnace repair, and find 22 Glenridge St, Lebanon, MO 65536.
 
-No Cursor prescription was in this repository. Routes are / for this overview, /home, /ac-repair-lebanon-mo, /furnace-repair-lebanon-mo, and /contact.
+The site does not ask that customer to leave a request, call a number, or walk in. The published phone numbers do not agree, so the contact page has one line: phone number not confirmed. There is no call link.
 
-## Why the pages split this way
+## Why the pages are split this way
 
-The homepage is the HVAC contractor introduction and points at the two approved jobs. AC repair stays with cooling and uses a comment about a plain-language system visit, without pretending that visit was an air-conditioner story. Furnace repair uses two excerpts from the winter no-heat comment: the outage, then the later decision to replace. The install sentence after that was cut off on the source page, so it is not quoted.
+The homepage carries the HVAC contractor in Lebanon job. It sends a cooling problem to AC repair and a heating problem to furnace repair. The comments on the homepage are about a plain explanation, follow-up, and rentals in Lebanon. They do not name an air-conditioner failure or a furnace job, and the homepage does not present them as either.
 
-## Reviews, honestly
+The AC page stays with a system that is not cooling. No comment we have describes an air-conditioning repair, so that page does not borrow a general system comment and call it AC work.
 
-The Maps listing count on 2026-09-30 was 11. The discovery actor retrieved a limited sample and the normalized file dropped it. Apify dataset o3rGh1edmkftb6dNG could not be re-read here. No new paid call was made. The quotes in this draft come from eight reviews displayed on an Exa place page the same day. Two of those eight are truncated and were not quoted in full. Reviewer names were not on that page. This is not a complete inventory.
+The furnace page uses one winter comment. The heat went out. In that customer's words, Mr. Moore came the same day, got the heat working for the time being, and advised a new unit because of the issues and the age. The customer later asked for the new unit, received a price, and had it installed. The installation sentence is complete, so it is quoted. The next sentence on the source is cut off and is not quoted. The page keeps that same-day line inside the quotation and does not offer same-day service as a company promise.
 
-One displayed comment is a complaint. It stays in the evidence and here, not on the sales pages:
+The pages use the name Dave because customers do. They do not call him the owner. That title was not confirmed.
+
+## The comment kept off the sales pages
+
+One comment in the file is a complaint. It is here so you can see it. It is not on the homepage or the service pages, and it is not used as your price.
 
 > Lie about how much the up keep cost, say 100$ yearly for filters then say 700$ when comes time to change filters
 >
@@ -28,16 +32,18 @@ One displayed comment is a complaint. It stays in the evidence and here, not on 
 
 Review id: review-moore-2024-11-13
 
-That comment alleges a filter-maintenance price changed from about $100 a year to $700. It is one person’s accusation. It is not treated as the company’s price, and it is not answered with a defense this draft does not have.
+The comment names 100$ yearly for filters, then 700$ when the filters were changed. It is one person's account.
 
-## Phone and address
+## What the quotes are
 
-Merchant Circle, fetched directly, shows 417-344-0669 near the title and (417) 588-8822 in the body, at 22 Glenridge St. Exa shows +1 417-657-2342 at the same street. The task said Glenridge Road. The draft uses St and refuses a call link. moreheatingcooling.com returned HTTP 502. That is not proof the business has no website. Owner title for Dave Moore was not confirmed; customers use the name.
+Each quote keeps the star rating and date from the Exa place-page display. Reviewer names were not on that display. The page showed 8 comments. The listing count was 11. Two comments are cut off. This is not the full set, and it was not checked as a complete Google review export.
 
-## Still for a person
+The business name and the Glenridge Street address match on that Exa page and on Merchant Circle. The match is name and address. It is not a separate full verification of the Google listing.
 
-- Pick the phone number, or confirm there is not one to publish.
-- Confirm Street versus Road.
-- Confirm hours and email if they should appear.
-- Decide whether the filter-cost comment needs a response before this copy is accepted.
-- If a full review export becomes readable, replace this eight-comment display. Do not treat it as all 11.
+## Questions for you
+
+1. Which phone should the site publish? The Exa page shows +14176572342. Merchant Circle shows 417-344-0669 near the title and (417) 588-8822 in the about text. None is used.
+2. Should the address stay 22 Glenridge St, Lebanon, MO 65536? Those pages say Street. An earlier note said Road.
+3. Are there hours or an email you want listed? None was confirmed, so none is shown.
+4. Does the winter heating story match how you want furnace work described?
+5. Do you want the filter-cost comment answered before this copy is accepted?

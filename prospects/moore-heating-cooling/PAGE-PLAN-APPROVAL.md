@@ -22,10 +22,14 @@ Routes chosen for this package, with no earlier approved route map to retain:
 - `/furnace-repair-lebanon-mo` furnace repair
 - `/contact` contact
 
-Evidence fingerprint (`sha256Json` of the evidence packet, same helper as the factory): `808e788632991006087ef7c02e45b159b1bedfcc520223fbed7ddd5cb0f106f0`
+Evidence fingerprint (`sha256Json` of the evidence packet, same helper as the factory): `e680390493222babd3e87bdbb47861aa68eefa6e6cc88749472af257c641dc4a`
 
 The research record in this folder was assembled by the same writer on 2026-09-30 because Content Factory had no prior research record for this prospect. Advisory recommendations are not locked decisions. Prescription recommendations are an empty set on purpose.
 
 Writer: Cursor Grok 4.7, Fast off, on host fluid-frame-dev-1. No nested cloud writer, auditor, or editor was launched.
 
 Run id: writing-2026-09-30-lebanon-hvac
+
+Copy revision, 2026-09-30: Cursor Grok 4.7 High, Fast off, on host fluid-frame-dev-1. Customer and owner copy were rewritten in this pass. Chat, pull-request, dataset, and spend details are in `HANDOFF.md`. No nested writer, auditor, or editor was launched.
+
+The evidence packet's winter-review truncation note was corrected after a re-read of the existing Exa place page and Merchant Circle page. The fingerprint above was recomputed. Page-job approval is unchanged.
