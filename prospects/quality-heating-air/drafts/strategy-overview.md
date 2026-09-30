@@ -4,27 +4,29 @@ Role: strategy_overview. Audience: owner. Route: /.
 
 # Why we built this site
 
-This page is for the owner of Quality Heating & Air and for human copy QA. It is not a page for a homeowner to hire from.
+This overview is for you, the owner of Quality Heating & Air. It describes the draft a customer in Lebanon would use.
 
-## The approval this draft follows
+## What a customer can do
 
-Josh approved the page jobs in chat on 2026-09-30: homepage intent HVAC contractor Lebanon MO, AC repair Lebanon MO, and heating repair Lebanon MO. He said to move it to stage two and have Cursor write the words. He also allowed top-ten Maps ranks and listing counts under 21. That approval does not accept this copy, a build, or the Scout repair work on ff-2-demos pull request 270.
+Someone whose air conditioner will not cool, or whose heat will not come on, sees that problem first. The next step is a call to [**(417) 532-6239**](tel:+14175326239) or a work request. The request opens in Jobber, off this website, and it does not confirm an appointment.
 
-There was no Cursor prescription in this repository to reuse. Routes are the conventional Content Factory set: / for this overview, /home, /ac-repair-lebanon-mo, /heating-repair-lebanon-mo, and /contact. No earlier approved route map existed.
+The homepage names the shop at 22124 Highway 32 and offers AC repair or heating repair. Weekday hours are 8am–4:30pm. Saturday and Sunday are by appointment only. Emergency service uses the line already on your site: contact us at your convenience.
 
-## What the customer can do
+## How the pages are split
 
-The homepage introduces the Highway 32 shop and sends people to cooling or heating. The AC page stays on cooling repair versus a system consultation. The heating page refuses a furnace-only claim because the official site does not make one. Contact repeats the published phone, email, Jobber request, hours, and the separate WhatsApp number.
+The homepage carries HVAC contractor in Lebanon and sends the customer to the page that matches the problem. AC repair is the cooling visit. Heating repair stays on the heating unit in the home or the business, the same breadth as your current site.
 
-## What we left out on purpose
+Repair, a maintenance check, and a consultation on system options all stay available, because your site offers each of them. The copy leaves the choice with the customer.
 
-- No customer quotations. The discovery listing said 192 reviews. The normalized export dropped the review text, and this worker could not re-read Apify dataset o3rGh1edmkftb6dNG without APIFY_API_TOKEN. No new paid Apify call was made. Prior discovery spend on that run was 0.2832 USD of a 5 USD cap.
-- No Premier Dealer, factory-trained, or Amana-dealer badge. Lennox does list the shop at the matching address and phone. The Premier language on that page reads as generic explanation.
-- No 24/7 or same-day promise. The site says emergency service is available and publishes weekday hours plus weekend by appointment.
-- No defined guarantee. The homepage heading says Customer Satisfaction Guaranteed and does not define the remedy.
-- No financing terms. Only the application link they publish.
-- No extra service routes for maintenance, ventilation, or replacement.
+Contact is the short list: phone, email, the Jobber work request, the Highway 32 address, and hours. WhatsApp stays at (417) 288-2968 so it is not mistaken for the shop phone.
 
-## Still for a person
+## Questions for you
 
-Confirm whether weekend by appointment is the line you want next to the emergency heading. Confirm that (417) 288-2968 should appear as WhatsApp only. Confirm any town list beyond Lebanon before a builder adds one.
+- Emergency service is offered, and weekends are by appointment only. There is no after-hours schedule on the site. How should those two facts read together?
+- Should WhatsApp stay on the contact page at (417) 288-2968?
+- Your site does not name towns beyond Lebanon. Is Lebanon the service area you want shown?
+- The shop links to general Lennox and Amana product pages. Lennox's dealer locator matches this address and phone. Premier Dealer wording on that locator is not used as your badge. Do you want any manufacturer link on the customer pages?
+- The current homepage says Customer Satisfaction Guaranteed and does not define a remedy. This draft leaves that heading off. What should it mean if you want it back?
+- Financing is only the application link. Should that link stay, with no rates on the page?
+- Your live site also has a message form. This draft does not add a second form. Phone, email, and the Jobber request are the paths. Do you want that message form represented?
+- No review quotations appear, because the exact review words are not in the evidence this draft can quote. When those words are available, which comments should sit next to the work?
