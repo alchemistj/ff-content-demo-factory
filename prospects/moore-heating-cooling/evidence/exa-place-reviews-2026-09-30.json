@@ -1,0 +1,47 @@
+{
+  "sourceUrl": "https://exa.ai/library/place/kb345qddxgs",
+  "fetchedAt": "2026-09-30",
+  "completeness": "Eight review displays from the Exa place page. Not the Apify dataset. Not a complete 11-review inventory. Two texts are truncated with an ellipsis. Reviewer names were absent. Attribution lines are copied from the page.",
+  "reviews": [
+    {
+      "text": "Dave Moore is a perfect example of someone who does his job and cares about giving you an honest experience! He has always got back to me and serviced me in a timely manner and is straight to the point! This is the type of guy we need to start giving our business to as a community! Not the big cooperations that just want commission off of you! So if you need some work done this is the man you need to contact.",
+      "attr": "— 5 out of 5, 2025-10-31",
+      "ellipsis": false
+    },
+    {
+      "text": "Dave came and looked at our system. My wife and I are brand new homeowners so we know nothing. He explained everything in very simple and easy to understand terms. And fixed what turned out to be a minor inconvenience in less than 5 minutes. Best service and company we have used for a new house by far.",
+      "attr": "— 5 out of 5, 2025-10-26",
+      "ellipsis": false
+    },
+    {
+      "text": "We've used Dave for 40 years and he's always given us exceptional service. We have multiple rentals in Lebanon and anytime we have an issue Dave always promptly takes care of it. His work has always been excellent and his prices, more than fair.",
+      "attr": "— 5 out of 5, 2025-09-06",
+      "ellipsis": false
+    },
+    {
+      "text": "My heat went out last year during the winter and I called Mr.Moore and he came out same day to take a look at it to see what was going on he was able to get it working for the time being since it was so cold but advised me that I needed a new unit because of all of the issues and it was 25+years old. Fast forward to the beginning of summer I gave him a call to let him know I was ready to go ahead with the new unit and he came out priced it for me and once I gave him the go ahead he ordered the unit. Once everything showed up he came out to the house and installed it! It took him no time at…",
+      "attr": "— 5 out of 5, 2025-09-05",
+      "ellipsis": true
+    },
+    {
+      "text": "Dave is the only guy I use for HVAC. He’s fast affordable and friendly and he always follows up on his work.",
+      "attr": "— 5 out of 5, 2025-09-04",
+      "ellipsis": false
+    },
+    {
+      "text": "Dave's been doing my work for the past 30 years. Has always been honest and fair priced imo.",
+      "attr": "— 5 out of 5, 2025-07-29",
+      "ellipsis": false
+    },
+    {
+      "text": "I have done business with this company on a personal and professional level for over 20 years, they have been my customers and I have been there and it has been a great relationship all the way around. They installed my entire system on my home and several systems on my commercial properties, they approach their work methodically, they are quick to respond and have great communication skills. They do not sugarcoat things and they will not cut corners to save a buck when they know it will cost you so much later. If you’re looking for a company to service or install your heating and air you…",
+      "attr": "— 5 out of 5, 2025-07-29",
+      "ellipsis": true
+    },
+    {
+      "text": "Lie about how much the up keep cost, say 100$ yearly for filters then say 700$ when comes time to change filters",
+      "attr": "— 1 out of 5, 2024-11-13",
+      "ellipsis": false
+    }
+  ]
+}
