@@ -8,7 +8,7 @@ Read, in this order:
 
 1. `ASSIGNMENT.md` and `docs/runtime/AUTHORITY.md`
 2. The current canonical framework in `docs/writer-guides/` (the complete writing-assignment set)
-3. The approved example library at `examples/approved-copy/` — the twelve-page Springfield craft catalog. Their facts belong to those businesses, not this prospect. Shared `_chrome.md` files are supplemental header/footer examples.
+3. The approved example library at `examples/approved-copy/` — the twelve-page Springfield customer-facing craft catalog, plus `strategy-overview-examples.md` for the owner-facing Strategy Overview pass. Their facts belong to those businesses, not this prospect. Shared `_chrome.md` files are supplemental header/footer examples.
 4. The approved page plan
 5. The full research evidence and both recommendation sets
 
@@ -16,7 +16,7 @@ Recommended internal order, inside that one run, with context carried forward an
 
 1. The two approved service pages
 2. Homepage, contact, header, and footer
-3. Owner-facing Strategy Overview / Why We Built This Site
+3. Owner-facing Strategy Overview / Why We Built This Site, using the finished site plus the Strategy Overview examples as craft references
 4. Optional reread and polish of your own work
 
 Editorial acceptance then belongs to the human, not a second model.
