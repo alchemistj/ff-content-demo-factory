@@ -17,6 +17,12 @@ The lengths you see are the lengths of these sites. They are demonstrations, not
 
 The twelve rows below are the primary craft corpus. Shared `_chrome.md` files are supplemental header/footer examples for the site/chrome phase; they are not a thirteenth page.
 
+## Owner-facing Strategy Overview examples
+
+The final internal writing pass has its own craft reference: [strategy-overview-examples.md](strategy-overview-examples.md). It contains the finished **Why We Built This Site** copy from High Efficiency HVAC, Alpha Outdoors 417, and Ozarks Outdoor Solutions.
+
+That document is owner-facing and loads separately from the twelve customer-facing pages. Use it to learn how the finished site, audit evidence, page-by-page rationale, broader opportunity, and owner CTA can become a coherent Strategy Overview. Do not copy its business facts, audit findings, route map, promises, or exact section inventory.
+
 See [SOURCE_MANIFEST.md](SOURCE_MANIFEST.md) for repository, SHA, and capture URLs.
 
 ### Window Dudes
