@@ -12,7 +12,7 @@ export { APPROVED_COPY_DIR as APPROVED_EXAMPLES_DIR };
 
 export type ExampleLibraryStatus = "available" | "pending-examples-lane";
 
-export type ExamplePageRole = "primary" | "chrome";
+export type ExamplePageRole = "primary" | "chrome" | "strategy";
 
 export interface ExamplePage {
   readonly id?: ExampleId | string;
@@ -27,6 +27,7 @@ export interface ExampleLibraryReceipt {
   readonly available: boolean;
   readonly pages: readonly ExamplePage[];
   readonly chromePages: readonly ExamplePage[];
+  readonly strategyPages: readonly ExamplePage[];
   readonly note: string;
 }
 
@@ -36,13 +37,19 @@ const CHROME_FILES = Object.freeze([
   `${APPROVED_COPY_DIR}/greene-planet/_chrome.md`,
 ]);
 
+const STRATEGY_FILES = Object.freeze([
+  `${APPROVED_COPY_DIR}/strategy-overview-examples.md`,
+]);
+
 /**
  * Compatibility adapter over the approved-copy catalog.
  *
  * The twelve-page catalog is the only primary craft library. README,
  * SOURCE_MANIFEST, historical material, and recursive Markdown dumps are not
  * writer examples. Shared `_chrome.md` files are supplemental header/footer
- * references for the site/chrome phase.
+ * references for the site/chrome phase. Owner-facing Strategy Overview
+ * examples load separately so they teach the final writing pass without
+ * becoming a thirteenth customer-facing page.
  */
 export function loadApprovedExampleLibrary(options?: { readonly repoRoot?: string }): ExampleLibraryReceipt {
   const repoRoot = options?.repoRoot ? resolve(options.repoRoot) : defaultRepoRoot();
@@ -68,7 +75,8 @@ export function loadApprovedExampleLibrary(options?: { readonly repoRoot?: strin
       available: true,
       pages: Object.freeze(pages),
       chromePages: Object.freeze(loadChromePages(repoRoot)),
-      note: "Approved Springfield pages are craft references. Their facts belong to those businesses, not the current prospect.",
+      strategyPages: Object.freeze(loadStrategyPages(repoRoot)),
+      note: "Approved Springfield pages and Strategy Overview examples are craft references. Their facts belong to those businesses, not the current prospect.",
     });
   } catch (error) {
     if (error instanceof WriterGuideError || !existsSync(join(repoRoot, APPROVED_COPY_DIR))) {
@@ -78,6 +86,7 @@ export function loadApprovedExampleLibrary(options?: { readonly repoRoot?: strin
         available: false,
         pages: Object.freeze([]),
         chromePages: Object.freeze([]),
+        strategyPages: Object.freeze([]),
         note: "Approved Springfield examples are owned by the approved-copy catalog. Writing still proceeds with canonical guides and the prospect packet.",
       });
     }
@@ -99,6 +108,30 @@ function loadChromePages(repoRoot: string): ExamplePage[] {
           relativePath,
           markdown,
           role: "chrome",
+        }),
+      );
+    } catch {
+      continue;
+    }
+  }
+  return pages;
+}
+
+
+function loadStrategyPages(repoRoot: string): ExamplePage[] {
+  const pages: ExamplePage[] = [];
+  for (const relativePath of STRATEGY_FILES) {
+    const absolutePath = join(repoRoot, relativePath);
+    try {
+      if (!statSync(absolutePath).isFile()) continue;
+      const markdown = readFileSync(absolutePath, "utf8");
+      if (!markdown.trim()) continue;
+      pages.push(
+        Object.freeze({
+          id: relativePath,
+          relativePath,
+          markdown,
+          role: "strategy",
         }),
       );
     } catch {
