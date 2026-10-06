@@ -306,7 +306,7 @@ test("runtime instructions are loaded as the active path, not historical prospec
   assert.doesNotMatch(docs.writer, /intelligent QA repair/);
 });
 
-test("example library is the twelve-page approved-copy catalog, not a recursive markdown dump", () => {
+test("example library keeps twelve customer-facing pages and loads strategy references separately", () => {
   const examples = loadApprovedExampleLibrary();
   assert.equal(examples.status, "available");
   assert.equal(examples.pages.length, 12);
@@ -335,6 +335,12 @@ test("example library is the twelve-page approved-copy catalog, not a recursive 
   assert.equal(examples.chromePages.length, 3);
   assert.equal(examples.chromePages.every((page) => page.role === "chrome"), true);
   assert.equal(examples.chromePages.every((page) => page.relativePath.endsWith("_chrome.md")), true);
+  assert.equal(examples.strategyPages.length, 1);
+  assert.equal(examples.strategyPages.every((page) => page.role === "strategy"), true);
+  assert.equal(
+    examples.strategyPages[0]?.relativePath,
+    "examples/approved-copy/strategy-overview-examples.md",
+  );
 });
 
 test("stray markdown under examples/approved-copy does not become the writer corpus", () => {
@@ -350,6 +356,7 @@ test("stray markdown under examples/approved-copy does not become the writer cor
     assert.equal(examples.status, "pending-examples-lane");
     assert.equal(examples.available, false);
     assert.equal(examples.pages.length, 0);
+    assert.equal(examples.strategyPages.length, 0);
   } finally {
     rmSync(root, { recursive: true, force: true });
   }

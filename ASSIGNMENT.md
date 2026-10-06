@@ -18,7 +18,7 @@ const assignment = discoverAssignment();
 
 - Canonical writer guides from `docs/writer-guides/`
 - The complete writing-assignment guide set (service, homepage/contact/chrome, and Strategy Overview as recommended order inside **one writer run**)
-- The approved example library at `examples/approved-copy/` (twelve Springfield pages from the approved-copy catalog; `_chrome.md` is supplemental)
+- The approved example library at `examples/approved-copy/` (twelve Springfield customer-facing pages from the approved-copy catalog; `_chrome.md` is supplemental; `strategy-overview-examples.md` is the owner-facing Strategy Overview craft reference)
 - The current run, if one exists
 - These runtime instructions
 

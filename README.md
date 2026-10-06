@@ -71,7 +71,7 @@ examples/approved-copy/sra/
 examples/approved-copy/greene-planet/
 ```
 
-Twelve Springfield reference pages (homepage, two services, contact for each business). They are faithful extractions from the captured builds recorded in `SOURCE_MANIFEST.md`. Window Dudes’ repair-side example is Glass Repair (`/springfield/glass-repair/`). Shared `_chrome.md` files are supplemental header/footer examples and are not part of the twelve-page primary corpus. See `examples/approved-copy/README.md`.
+Twelve Springfield customer-facing reference pages (homepage, two services, contact for each business). They are faithful extractions from the captured builds recorded in `SOURCE_MANIFEST.md`. Window Dudes’ repair-side example is Glass Repair (`/springfield/glass-repair/`). Shared `_chrome.md` files are supplemental header/footer examples and are not part of the twelve-page primary corpus. `examples/approved-copy/strategy-overview-examples.md` separately teaches the owner-facing Why We Built This Site pass from High Efficiency HVAC, Alpha Outdoors 417, and Ozarks Outdoor Solutions. See `examples/approved-copy/README.md`.
 
 ## Internal writing phases (one writer run)
 
