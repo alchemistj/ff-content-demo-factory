@@ -12,7 +12,7 @@ One writer model completes the package in **one writer run**. The headings below
 
 1. [FLUID_FRAME_DEMO_WRITING_GUIDE.md](FLUID_FRAME_DEMO_WRITING_GUIDE.md) — overall job, truth, judgment, quotations, mobile/emphasis, Strategy Overview boundary
 2. The page-role guide for the pages you are writing
-3. [Approved Springfield examples](../../examples/approved-copy/README.md) — finished customer-facing work from Window Dudes, SRA, and Greene Planet, plus the separate [Why We Built This Site examples](../../examples/approved-copy/strategy-overview-examples.md) for the owner-facing Strategy Overview pass
+3. [Approved Springfield examples](../../examples/approved-copy/README.md) — finished work from Window Dudes, SRA, and Greene Planet
 4. The approved prescription and evidence packet for the **current** prospect
 
 ### Page-role guides
@@ -34,10 +34,10 @@ Read the overall guide, the homepage/contact/chrome guides, the matching example
 
 ### Internal Strategy Overview pass
 
-Read the overall guide, the completed business-facing site, the original audit/prescription, and `examples/approved-copy/strategy-overview-examples.md`. Write the Strategy Overview last so it describes the website that actually exists. Learn structure, pacing, proof, and owner-facing explanation from the examples without copying their facts or section inventory.
+Read the overall guide, the completed business-facing site, and the original audit/prescription. Write the Strategy Overview last so it describes the website that actually exists.
 
 ## Catalog note
 
-This README remains the human-readable index for the six-file writer-guide catalog. Customer-facing example pages live under `examples/approved-copy/` and load from the approved-copy catalog so the writer receives the twelve Springfield pages rather than manifests or history files. The separate Strategy Overview example document is loaded as owner-facing strategy context, not counted as a thirteenth customer-facing page.
+This README remains the human-readable index for the six-file writer-guide catalog. Example pages live under `examples/approved-copy/` and load from the approved-copy catalog so the writer receives the twelve Springfield pages rather than manifests or history files.
 
 Upstream research and prescription recommendations use may-language. Writers use judgment. Humans perform final editorial QA.
