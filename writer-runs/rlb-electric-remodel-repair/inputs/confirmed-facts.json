@@ -1,0 +1,50 @@
+{
+  "schemaVersion": "1.0.0",
+  "source": "owned-site",
+  "sourceUrl": "https://rbirt2001.wixsite.com/electrical-repair",
+  "businessName": "RLB Electric Remodel & Repair",
+  "city": "Springfield",
+  "state": "MO",
+  "phone": "(417) 350-2809",
+  "phoneDisplay": "(417) 350-2809",
+  "address": "1235 S Meadowview Ave, Springfield, MO 65804",
+  "servicesFull": {
+    "value": [
+      "Residential electrical repair",
+      "Kitchen & bath remodel electrical installation",
+      "Indoor/outdoor lighting",
+      "Receptacles and switches",
+      "Wiring",
+      "Troubleshooting",
+      "Smoke detectors",
+      "Exhaust fans",
+      "Pools and spas",
+      "Motors and pumps",
+      "Ceiling fans",
+      "Well house",
+      "Garage doors",
+      "Heat pumps",
+      "Furnace",
+      "Panel upgrade installation",
+      "Hardwood flooring",
+      "Tiles",
+      "Sheetrock repair"
+    ],
+    "source": "owned-site",
+    "sourceUrl": "https://rbirt2001.wixsite.com/electrical-repair",
+    "confidence": "high",
+    "notes": "Names follow live Wix listed headings plus the Panel upgrade gallery caption. Kitchen/bath remodel and panel upgrade include installation language so classifyServiceIntent can mark them considered-purchase. Residential electrical repair maps the listed Residential Service Calls / troubleshooting work to urgent-problem. Flooring and sheetrock are listed on the live page and kept in the candidate set; they are not demo landers."
+  },
+  "repairServices": {
+    "value": ["Residential electrical repair", "Troubleshooting", "Sheetrock repair"],
+    "source": "owned-site",
+    "sourceUrl": "https://rbirt2001.wixsite.com/electrical-repair",
+    "confidence": "high"
+  },
+  "installationServices": {
+    "value": ["Kitchen & bath remodel electrical installation", "Panel upgrade installation"],
+    "source": "owned-site",
+    "sourceUrl": "https://rbirt2001.wixsite.com/electrical-repair",
+    "confidence": "high"
+  }
+}

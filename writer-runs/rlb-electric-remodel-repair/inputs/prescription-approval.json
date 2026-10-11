@@ -1,0 +1,14 @@
+{
+  "schemaVersion": "1.0.0",
+  "kind": "factory-prescription-approval",
+  "slug": "rlb-electric-remodel-repair",
+  "authorized": true,
+  "authorizedAt": "2026-08-21T20:41:30.242Z",
+  "authorizedBy": "Demos Architect",
+  "authorizedByRole": "architect",
+  "method": "architect-recording-josh",
+  "packageSha256": "8a06bc149fcbfc385f46467572495cfc80034e1cba7d5bae17f22e08ee9169e0",
+  "intendedBuildDate": "2026-08-21",
+  "reviewForDate": null,
+  "recordedJoshApproval": true
+}
