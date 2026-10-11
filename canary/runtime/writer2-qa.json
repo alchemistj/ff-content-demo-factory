@@ -1,0 +1,334 @@
+{
+  "stage": "writer2",
+  "role": "writer-deterministic-qa",
+  "selfApproved": false,
+  "architectQa": "awaiting-independent-look",
+  "humanGate2": "not-started",
+  "pass": true,
+  "wordCountIsDiagnosticOnly": true,
+  "usefulBodyWordsDiagnostic": {
+    "home": 625,
+    "contact": 203,
+    "homeFirstH2": 40,
+    "contactFirstH2": 44,
+    "role": "diagnostic-only"
+  },
+  "frozenWriter1": {
+    "acceptedContentHead": "c1241a377f70424affe4ed2796b4dceec94ae0f1",
+    "lineageHeadAtStart": "d8e60e2f3198f010bd1544de20498bae1573357c",
+    "sourceFile": "canary/outputs/writer1-service-pages.md",
+    "byteIdentical": true
+  },
+  "pages": {
+    "/": {
+      "reviewCount": 3,
+      "lead": "C Jackson",
+      "supporting": [
+        "Hunter Gaston",
+        "Josh Baird"
+      ],
+      "adjacent": false
+    },
+    "/contact": {
+      "reviewCount": 0
+    },
+    "/roof-replacement": {
+      "status": "frozen",
+      "decision": "writer1-architect-accept"
+    },
+    "/roof-repair": {
+      "status": "frozen",
+      "decision": "writer1-architect-accept"
+    }
+  },
+  "findings": [
+    {
+      "code": "frozen-service-pages-byte-identical",
+      "pass": true,
+      "message": "Writer 1 service pages copied byte-for-byte into the handoff source region."
+    },
+    {
+      "code": "handoff-contains-frozen-bytes",
+      "pass": true,
+      "message": "Handoff contains the accepted Writer 1 service-page bytes."
+    },
+    {
+      "code": "writer1-file-untouched-region",
+      "pass": true,
+      "message": "Writer 1 readable file still contains both accepted service pages."
+    },
+    {
+      "code": "handoff-contains-frozen-replacement",
+      "pass": true,
+      "message": "Handoff includes frozen replacement page."
+    },
+    {
+      "code": "handoff-contains-frozen-repair",
+      "pass": true,
+      "message": "Handoff includes frozen repair page."
+    },
+    {
+      "code": "home-review-count",
+      "pass": true,
+      "message": "Home has 3 quoted reviews; expected 3."
+    },
+    {
+      "code": "home-prescribed-lead",
+      "pass": true,
+      "message": "Home lead is ['C Jackson']; expected C Jackson."
+    },
+    {
+      "code": "home-supporting",
+      "pass": true,
+      "message": "Home supporting reviews are ['Hunter Gaston', 'Josh Baird']."
+    },
+    {
+      "code": "home-reviews-not-adjacent",
+      "pass": true,
+      "message": "Home reviews are separated by intervening headings."
+    },
+    {
+      "code": "contact-no-reviews",
+      "pass": true,
+      "message": "Contact has no quoted reviews."
+    },
+    {
+      "code": "quote-fidelity-C-Jackson",
+      "pass": true,
+      "message": "C Jackson quote is a contiguous excerpt of the exact-place corpus text."
+    },
+    {
+      "code": "quote-fidelity-Hunter-Gaston",
+      "pass": true,
+      "message": "Hunter Gaston quote is a contiguous excerpt of the exact-place corpus text."
+    },
+    {
+      "code": "quote-fidelity-Josh-Baird",
+      "pass": true,
+      "message": "Josh Baird quote is a contiguous excerpt of the exact-place corpus text."
+    },
+    {
+      "code": "no-stolen-Neal-Richardson-Sr",
+      "pass": true,
+      "message": "Neal Richardson Sr is not used on Home/Contact/chrome."
+    },
+    {
+      "code": "no-stolen-Jonathan-Hoffman",
+      "pass": true,
+      "message": "Jonathan Hoffman is not used on Home/Contact/chrome."
+    },
+    {
+      "code": "no-stolen-David-Carson",
+      "pass": true,
+      "message": "David Carson is not used on Home/Contact/chrome."
+    },
+    {
+      "code": "no-stolen-Linda-Mulholland",
+      "pass": true,
+      "message": "Linda Mulholland is not used on Home/Contact/chrome."
+    },
+    {
+      "code": "no-stolen-Bonnie-Held",
+      "pass": true,
+      "message": "Bonnie Held is not used on Home/Contact/chrome."
+    },
+    {
+      "code": "no-stolen-Laura-Hampton",
+      "pass": true,
+      "message": "Laura Hampton is not used on Home/Contact/chrome."
+    },
+    {
+      "code": "no-stolen-Rebecca-Grable",
+      "pass": true,
+      "message": "Rebecca Grable is not used on Home/Contact/chrome."
+    },
+    {
+      "code": "no-stolen-Roger-Richardson",
+      "pass": true,
+      "message": "Roger Richardson is not used on Home/Contact/chrome."
+    },
+    {
+      "code": "no-stolen-Collin-Mckinney",
+      "pass": true,
+      "message": "Collin Mckinney is not used on Home/Contact/chrome."
+    },
+    {
+      "code": "no-stolen-Steve-McGrath",
+      "pass": true,
+      "message": "Steve McGrath is not used on Home/Contact/chrome."
+    },
+    {
+      "code": "no-stolen-Shelby-Snyder",
+      "pass": true,
+      "message": "Shelby Snyder is not used on Home/Contact/chrome."
+    },
+    {
+      "code": "no-stolen-Dan-Wilson",
+      "pass": true,
+      "message": "Dan Wilson is not used on Home/Contact/chrome."
+    },
+    {
+      "code": "no-stolen-Wheat-Bread",
+      "pass": true,
+      "message": "Wheat Bread is not used on Home/Contact/chrome."
+    },
+    {
+      "code": "no-stolen-Julie-Lamb",
+      "pass": true,
+      "message": "Julie Lamb is not used on Home/Contact/chrome."
+    },
+    {
+      "code": "no-stolen-Solid-John",
+      "pass": true,
+      "message": "Solid John is not used on Home/Contact/chrome."
+    },
+    {
+      "code": "no-stolen-Alma-Pettenger",
+      "pass": true,
+      "message": "Alma Pettenger is not used on Home/Contact/chrome."
+    },
+    {
+      "code": "forbidden-5580",
+      "pass": true,
+      "message": "Public chrome/pages do not contain '5580'."
+    },
+    {
+      "code": "forbidden-aaron-avenue",
+      "pass": true,
+      "message": "Public chrome/pages do not contain 'Aaron Avenue'."
+    },
+    {
+      "code": "forbidden-aaron-ave",
+      "pass": true,
+      "message": "Public chrome/pages do not contain 'Aaron Ave'."
+    },
+    {
+      "code": "forbidden-24-hours",
+      "pass": true,
+      "message": "Public chrome/pages do not contain '24 hours'."
+    },
+    {
+      "code": "forbidden-24-7",
+      "pass": true,
+      "message": "Public chrome/pages do not contain '24/7'."
+    },
+    {
+      "code": "forbidden-9-00-am",
+      "pass": true,
+      "message": "Public chrome/pages do not contain '9:00 AM'."
+    },
+    {
+      "code": "forbidden-9-00-am",
+      "pass": true,
+      "message": "Public chrome/pages do not contain '9:00 am'."
+    },
+    {
+      "code": "forbidden-100-customer",
+      "pass": true,
+      "message": "Public chrome/pages do not contain '100% CUSTOMER'."
+    },
+    {
+      "code": "forbidden-100-customer-satisfaction",
+      "pass": true,
+      "message": "Public chrome/pages do not contain '100% customer satisfaction'."
+    },
+    {
+      "code": "forbidden-strategy-overview",
+      "pass": true,
+      "message": "Public chrome/pages do not contain 'Strategy Overview'."
+    },
+    {
+      "code": "forbidden-strategy",
+      "pass": true,
+      "message": "Public chrome/pages do not contain '/strategy'."
+    },
+    {
+      "code": "forbidden-human-gate",
+      "pass": true,
+      "message": "Public chrome/pages do not contain 'Human Gate'."
+    },
+    {
+      "code": "forbidden-architect-qa",
+      "pass": true,
+      "message": "Public chrome/pages do not contain 'Architect QA'."
+    },
+    {
+      "code": "forbidden-writer-2",
+      "pass": true,
+      "message": "Public chrome/pages do not contain 'Writer 2'."
+    },
+    {
+      "code": "forbidden-demo-factory",
+      "pass": true,
+      "message": "Public chrome/pages do not contain 'demo factory'."
+    },
+    {
+      "code": "forbidden-fluid-frame",
+      "pass": true,
+      "message": "Public chrome/pages do not contain 'Fluid Frame'."
+    },
+    {
+      "code": "no-star-ratings",
+      "pass": true,
+      "message": "No star ratings in public copy."
+    },
+    {
+      "code": "no-review-counts",
+      "pass": true,
+      "message": "No review counts in public copy."
+    },
+    {
+      "code": "home-keyword-first-h2",
+      "pass": true,
+      "message": "Home first H2 includes roofing company + Springfield."
+    },
+    {
+      "code": "home-first-h2-40-60",
+      "pass": true,
+      "message": "Home first H2 is 40 words (advisory 40\u201360)."
+    },
+    {
+      "code": "contact-keyword-first-h2",
+      "pass": true,
+      "message": "Contact first H2 includes contact + Swifts Roofing + Springfield."
+    },
+    {
+      "code": "home-h1",
+      "pass": true,
+      "message": "Home H1 is literal company + Springfield, MO + brand."
+    },
+    {
+      "code": "contact-h1",
+      "pass": true,
+      "message": "Contact H1 is literal contact + Springfield, MO + brand."
+    },
+    {
+      "code": "primary-phone-cta",
+      "pass": true,
+      "message": "Primary phone CTA is present on Home, Contact, and header."
+    },
+    {
+      "code": "four-nav-routes",
+      "pass": true,
+      "message": "Header navigation is exactly the four public routes."
+    },
+    {
+      "code": "footer-four-routes",
+      "pass": true,
+      "message": "Footer links resolve the four public routes."
+    },
+    {
+      "code": "hillcrest-published",
+      "pass": true,
+      "message": "Hillcrest NAP is published on Home, Contact, and footer."
+    },
+    {
+      "code": "email-published",
+      "pass": true,
+      "message": "Gmail contact path is published."
+    }
+  ],
+  "hardFailCodes": [],
+  "advisory": [],
+  "nextOwner": "Writer 3 (separate Cursor writing agent) for Strategy Overview / Why We Built This Site"
+}
