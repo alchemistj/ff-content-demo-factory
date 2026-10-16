@@ -16,7 +16,8 @@
     "./publisher": "./dist/src/publisher/index.js",
     "./google-docs": "./dist/src/google-docs/index.js",
     "./d2d-intake": "./dist/src/d2d-intake/index.js",
-    "./factory": "./dist/src/factory/index.js"
+    "./factory": "./dist/src/factory/index.js",
+    "./writer-runtime": "./dist/src/writer-runtime/index.js"
   },
   "engines": {
     "node": ">=22"
@@ -24,11 +25,12 @@
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "check": "tsc -p tsconfig.json --noEmit",
-    "test": "node --import tsx --test src/writer-guides/*.test.ts src/approved-copy/*.test.ts src/examples/*.test.ts src/handoff/*.test.ts src/workflow/*.test.ts src/writing-package/*.test.ts src/google-docs/*.test.ts src/d2d-intake/*.test.ts src/factory/*.test.ts src/integration/*.test.ts",
+    "test": "node --import tsx --test src/writer-guides/*.test.ts src/approved-copy/*.test.ts src/examples/*.test.ts src/handoff/*.test.ts src/workflow/*.test.ts src/writing-package/*.test.ts src/google-docs/*.test.ts src/d2d-intake/*.test.ts src/factory/*.test.ts src/integration/*.test.ts src/writer-runtime/*.test.ts",
     "d2d-intake": "node --import tsx src/d2d-intake/cli.ts",
     "test:compiled": "npm run build && node scripts/assert-compiled-writer-guides.mjs",
     "test:all": "npm run check && npm test && npm run test:compiled",
     "writer-guides:receipt": "node --import tsx src/writer-guides/cli.ts",
+    "writer-runtime:status": "node --import tsx src/writer-runtime/cli.ts",
     "assignment:receipt": "node --import tsx src/workflow/cli.ts",
     "google-docs:authorize": "node --import tsx src/google-docs/cli.ts authorize",
     "google-docs:init-folder": "node --import tsx src/google-docs/cli.ts init-folder",
