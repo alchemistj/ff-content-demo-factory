@@ -18,7 +18,7 @@ The matching design ideas live in `ff-2-demos` and `ff-astro-demos` under `docs/
 
 ## 3. Review captions and quotes
 
-**Rule (Josh, confirmed 2026-10-21): the caption under every review is the reviewer's first name and last initial only.**
+**Rule (Josh, confirmed 2026-10-21): the caption under every review is the reviewer's first name and last initial only. No "Google review" statement, no date.**
 
 - Write `Dana C.`, never `Dana Carter`.
 - No "Google review", no date, no city, no stars, no rating.
@@ -28,7 +28,7 @@ The matching design ideas live in `ff-2-demos` and `ff-astro-demos` under `docs/
 - Quote the customer. Never narrate a review ("Scott had a heat pump installed and described…", "customers tell us…"). A review is a bare quote plus the caption.
 - No reviewer names in body text or FAQ answers.
 
-Note: the older approved examples in `examples/approved-copy/` show full customer names, and `src/approved-copy/catalog.test.ts` locks them in. Those examples predate this rule. Open question: leave them as historical examples, or refresh them.
+Note: the older "approved" examples in `examples/approved-copy/` show full customer names, and `src/approved-copy/catalog.test.ts` locks them in. Josh suspects most of those examples came out of earlier AI automation and are not good reference. Until he has reviewed them, do not treat them as the style authority, and do not copy their caption format.
 
 ## 4. Voice
 
@@ -58,7 +58,7 @@ Every demo has a homepage, two service pages and a contact page, plus the Fluid 
 
 Decisions so far: Abbott is Ozark. Hawkins is Republic. Kode's is Walnut Grove. H-VAC, Stump Away and Drain Doctor are Springfield. Nixa and Willard are not needed for Drain Doctor.
 
-**Open item for Josh: High Efficiency HVAC.** Its Google profile is `1252 Ashley Dr, Nixa, MO 65714`. Its current site (highehvac.com) says Springfield/Branson and shows no street address. The demo is built for Springfield and its business-page words are approved and frozen. Under rule 4 the strategy page should say the two disagree. It does not today. Josh to decide.
+**Undecided (Josh, 2026-10-21): High Efficiency HVAC and the Nixa / Springfield / Willard question.** High Efficiency's Google profile is `1252 Ashley Dr, Nixa, MO 65714`, while its current site (highehvac.com) says Springfield/Branson with no street address. The demo is built for Springfield and its business-page words are approved and frozen. Josh leans toward Springfield for all of these but has not concluded. Until he does, leave the demos on Springfield and change nothing.
 
 ## 8. Approved copy is frozen
 
@@ -121,7 +121,12 @@ The full paragraph text for each closing lives in `docs/strategy-chrome/v1/CHROM
 
 ## 12. Open questions for Josh
 
-1. Settle on one menu and one closing, or keep rotating them.
-2. Refresh the approved examples to the new caption rule, or keep them as history.
-3. Should the strategy page flag the High Efficiency Nixa/Springfield mismatch, given its business words are frozen?
+1. Menus and closings: not settled on one system yet.
+2. Nixa / Springfield / Willard: leaning Springfield for all, not concluded (section 7).
+3. Whether the strategy page should flag a site-versus-profile town mismatch while a site's business words are frozen.
 4. Single-name reviewers (`Joe`, `Sarah`): keep as shown?
+5. The old approved examples: review them and keep, rewrite or retire.
+
+## 13. Final QA
+
+Going forward, final QA covers every site, every time, not only the site that just changed. The checklist is in the design SOP ideas (`ff-2-demos` and `ff-astro-demos`, `docs/design-sop-ideas/`). Words are checked against the rules above: captions, no narrated reviews, no unsourced claims, no words changed on approved pages.
