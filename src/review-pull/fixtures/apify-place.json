@@ -1,0 +1,149 @@
+{
+  "title": "Kode's Roofing",
+  "placeId": "ChIJfakekodesroofing0001",
+  "url": "https://www.google.com/maps/place/?q=place_id:ChIJfakekodesroofing0001",
+  "address": "100 Sample Street, Springfield, MO 65802",
+  "phone": "(417) 555-0134",
+  "phoneUnformatted": "+14175550134",
+  "totalScore": 4.9,
+  "reviewsCount": 59,
+  "reviews": [
+    {
+      "reviewId": "r-new",
+      "name": "Isaac Rodriguez",
+      "stars": 5,
+      "text": "Fixed the leak the same week.",
+      "textTranslated": null,
+      "publishAt": "a month ago",
+      "publishedAtDate": "2026-09-14T00:00:00.000Z",
+      "likesCount": 2,
+      "reviewUrl": "https://reviews.example.test/r/r-new",
+      "reviewerId": "reviewer-isaac-private",
+      "reviewerUrl": "https://profiles.example.test/people/isaac-rodriguez",
+      "reviewerPhotoUrl": "https://cdn.example.test/photos/isaac-rodriguez.jpg",
+      "reviewerNumberOfReviews": 4,
+      "isLocalGuide": false,
+      "reviewOrigin": "Google",
+      "responseFromOwnerDate": "2026-09-15T00:00:00.000Z",
+      "responseFromOwnerText": "Glad we could help.",
+      "originalLanguage": "en"
+    },
+    {
+      "reviewId": "r-new",
+      "name": "Zebediah Duplicateperson",
+      "stars": 1,
+      "text": "DO_NOT_KEEP_DUPLICATE",
+      "publishedAtDate": "2026-09-01T00:00:00.000Z",
+      "reviewerId": "reviewer-zebediah-private",
+      "reviewerUrl": "https://profiles.example.test/people/zebediah-duplicateperson",
+      "reviewerPhotoUrl": "https://cdn.example.test/photos/zebediah-duplicateperson.jpg"
+    },
+    {
+      "reviewId": "r-cher",
+      "name": "Cher",
+      "stars": 5,
+      "text": "Solid roof work.",
+      "publishedAtDate": "2026-07-01T00:00:00.000Z",
+      "reviewerUrl": "https://profiles.example.test/people/cher"
+    },
+    {
+      "reviewId": "r-original",
+      "name": "Ana Morales",
+      "stars": 5,
+      "text": "TRANSLATED_BODY_DO_NOT_KEEP",
+      "originalText": "Texto original.",
+      "publishedAtDate": "2026-06-15T00:00:00.000Z",
+      "originalLanguage": "es",
+      "reviewerUrl": "https://profiles.example.test/people/ana-morales",
+      "reviewerPhotoUrl": "https://cdn.example.test/photos/ana-morales.jpg"
+    },
+    {
+      "reviewId": "r-jose",
+      "name": "José García",
+      "stars": 4,
+      "text": "Trabajo limpio.",
+      "textTranslated": "TRANSLATED_TEXT_DO_NOT_KEEP",
+      "publishedAtDate": "2026-06-01T00:00:00.000Z",
+      "originalLanguage": "es",
+      "reviewerUrl": "https://profiles.example.test/people/jose-garcia",
+      "reviewerPhotoUrl": "https://cdn.example.test/photos/jose-garcia.jpg"
+    },
+    {
+      "reviewId": "r-jsmith",
+      "name": "J. Smith",
+      "stars": 5,
+      "text": "On time.",
+      "publishedAtDate": "2026-05-01T00:00:00.000Z",
+      "reviewerUrl": "https://profiles.example.test/people/j-smith"
+    },
+    {
+      "reviewId": "r-ada",
+      "name": "  Ada   Lovelace  ",
+      "stars": 5,
+      "text": "Careful crew.",
+      "publishedAtDate": "2026-04-01T00:00:00.000Z",
+      "reviewerUrl": "https://profiles.example.test/people/ada-lovelace"
+    },
+    {
+      "reviewId": "r-sam",
+      "name": "Sam 😀 Nguyen",
+      "stars": 3,
+      "text": "Average wait.",
+      "publishedAtDate": "2026-03-01T00:00:00.000Z",
+      "reviewerUrl": "https://profiles.example.test/people/sam-nguyen",
+      "reviewerPhotoUrl": "https://cdn.example.test/photos/sam-nguyen.jpg"
+    },
+    {
+      "reviewId": "r-google",
+      "name": "Google user",
+      "stars": 4,
+      "text": "Fine.",
+      "publishedAtDate": "2026-02-15T00:00:00.000Z",
+      "reviewerUrl": "https://profiles.example.test/people/google-user"
+    },
+    {
+      "reviewId": "r-empty",
+      "name": "",
+      "stars": 5,
+      "text": "Would hire again.",
+      "publishedAtDate": "2026-02-01T00:00:00.000Z",
+      "reviewerUrl": "https://profiles.example.test/people/empty-name"
+    },
+    {
+      "reviewId": "r-mary",
+      "name": "Mary Ann Lee",
+      "stars": 4,
+      "text": "Clear estimate.",
+      "publishedAtDate": "2026-01-02T00:00:00.000Z",
+      "reviewUrl": null,
+      "reviewerUrl": "https://profiles.example.test/people/mary-ann-lee",
+      "reviewerPhotoUrl": "https://cdn.example.test/photos/mary-ann-lee.jpg"
+    },
+    {
+      "reviewId": "r-pat",
+      "name": "Pat",
+      "stars": 2,
+      "text": "   ",
+      "publishedAtDate": "2026-08-02T00:00:00.000Z",
+      "reviewerUrl": "https://profiles.example.test/people/pat",
+      "reviewerPhotoUrl": "https://cdn.example.test/photos/pat.jpg"
+    },
+    {
+      "reviewId": "r-jane",
+      "name": "Jane Doe",
+      "stars": 5,
+      "text": "",
+      "publishedAtDate": "2026-08-01T00:00:00.000Z",
+      "reviewerUrl": "https://profiles.example.test/people/jane-doe",
+      "reviewerPhotoUrl": "https://cdn.example.test/photos/jane-doe.jpg"
+    },
+    {
+      "name": "No Id Person",
+      "stars": 5,
+      "text": "NO_ID_TEXT",
+      "publishedAtDate": "2026-10-01T00:00:00.000Z",
+      "reviewerUrl": "https://profiles.example.test/people/no-id-person",
+      "reviewerPhotoUrl": "https://cdn.example.test/photos/no-id-person.jpg"
+    }
+  ]
+}

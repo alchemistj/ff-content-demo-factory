@@ -1,0 +1,248 @@
+# Pull Google reviews for one Maps listing onto the review-data branch.
+# Inputs are passed through env. The Apify token is set only on the pull step.
+
+name: Google review pull
+
+on:
+  workflow_dispatch:
+    inputs:
+      maps_url:
+        description: google.com/maps URL, share link, or place_id:<id>
+        required: true
+        type: string
+      slug:
+        description: Output folder slug (optional)
+        required: false
+        type: string
+      max_reviews:
+        description: Maximum reviews, from 1 to 250
+        required: false
+        default: "75"
+        type: string
+      expected_phone:
+        description: Phone digits the listing must end with
+        required: false
+        type: string
+      expected_name:
+        description: Name text the listing must contain
+        required: false
+        type: string
+  push:
+    paths:
+      - "review-requests/*.json"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: review-data
+  cancel-in-progress: false
+
+env:
+  MAPS_URL: ${{ inputs.maps_url }}
+  REVIEW_SLUG: ${{ inputs.slug }}
+  MAX_REVIEWS: ${{ inputs.max_reviews }}
+  EXPECTED_PHONE: ${{ inputs.expected_phone }}
+  EXPECTED_NAME: ${{ inputs.expected_name }}
+  REVIEW_TRIGGER: ${{ github.event_name }}
+  EVENT_BEFORE: ${{ github.event.before }}
+  REVIEW_WORK: ${{ runner.temp }}/review-data
+
+jobs:
+  pull:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - name: Check out
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      - name: Install
+        run: npm ci
+
+      - name: Require one request file
+        if: github.event_name == 'push'
+        id: request
+        run: |
+          set -euo pipefail
+          zero="0000000000000000000000000000000000000000"
+          if [ -z "${EVENT_BEFORE}" ] || [ "$EVENT_BEFORE" = "$zero" ]; then
+            mapfile -t changed < <(git diff-tree --no-commit-id --name-only -r --diff-filter=AM "$GITHUB_SHA" -- 'review-requests/*.json')
+          else
+            mapfile -t changed < <(git diff --name-only --diff-filter=AM "$EVENT_BEFORE" "$GITHUB_SHA" -- 'review-requests/*.json')
+          fi
+          if [ "${#changed[@]}" -ne 1 ]; then
+            echo "This push must change exactly one review-requests/*.json file. Found ${#changed[@]}: ${changed[*]:-none}."
+            exit 1
+          fi
+          file="${changed[0]}"
+          if ! [[ "$file" =~ ^review-requests/[A-Za-z0-9._-]{1,80}\.json$ ]]; then
+            echo "Request file must be a single review-requests/*.json file. Got: ${file}"
+            exit 1
+          fi
+          if [ ! -f "$file" ]; then
+            echo "Request file ${file} is not in this commit."
+            exit 1
+          fi
+          echo "request_file=${file}" >> "$GITHUB_OUTPUT"
+
+      - name: Prepare review-data
+        run: |
+          set -euo pipefail
+          git worktree remove --force "$REVIEW_WORK" >/dev/null 2>&1 || true
+          rm -rf "$REVIEW_WORK"
+          if git ls-remote --exit-code --heads origin review-data >/dev/null 2>&1; then
+            git fetch origin review-data
+            git worktree add "$REVIEW_WORK" origin/review-data
+            git -C "$REVIEW_WORK" checkout -B review-data
+          else
+            git worktree add --detach "$REVIEW_WORK" HEAD
+            git -C "$REVIEW_WORK" checkout --orphan review-data
+            git -C "$REVIEW_WORK" rm -rf --cached . >/dev/null
+            find "$REVIEW_WORK" -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
+          fi
+
+      - name: Pull reviews
+        id: pull
+        continue-on-error: true
+        env:
+          APIFY_API_TOKEN: ${{ secrets.APIFY_API_TOKEN }}
+          REQUEST_FILE: ${{ steps.request.outputs.request_file }}
+        run: |
+          set -euo pipefail
+          args=(--out "$REVIEW_WORK/reviews" --trigger "$REVIEW_TRIGGER")
+          if [ "$REVIEW_TRIGGER" = "push" ]; then
+            args+=(--request "$GITHUB_WORKSPACE/$REQUEST_FILE")
+          elif [ "$REVIEW_TRIGGER" = "workflow_dispatch" ]; then
+            args+=(--maps-url "$MAPS_URL")
+            if [ -n "${REVIEW_SLUG}" ]; then args+=(--slug "$REVIEW_SLUG"); fi
+            if [ -n "${MAX_REVIEWS}" ]; then args+=(--max-reviews "$MAX_REVIEWS"); fi
+            if [ -n "${EXPECTED_PHONE}" ]; then args+=(--expected-phone "$EXPECTED_PHONE"); fi
+            if [ -n "${EXPECTED_NAME}" ]; then args+=(--expected-name "$EXPECTED_NAME"); fi
+          else
+            echo "Unsupported trigger: $REVIEW_TRIGGER"
+            exit 1
+          fi
+          receipt_out="${RUNNER_TEMP}/review-pull-receipt.json"
+          set +e
+          npm run --silent reviews:pull -- "${args[@]}" | tee "$receipt_out"
+          pull_exit=${PIPESTATUS[0]}
+          tee_exit=${PIPESTATUS[1]}
+          set -e
+          if [ "$tee_exit" -ne 0 ]; then
+            echo "Could not save the review pull receipt"
+            exit 1
+          fi
+          slug=$(node --input-type=module -e '
+            import { readFileSync } from "node:fs";
+            const receipt = JSON.parse(readFileSync(process.argv[1], "utf8"));
+            if (typeof receipt.slug !== "string" || !/^[a-z0-9-]{2,60}$/.test(receipt.slug)) {
+              process.stderr.write("Review pull did not return a safe slug\n");
+              process.exit(1);
+            }
+            process.stdout.write(receipt.slug);
+          ' "$receipt_out")
+          {
+            echo "slug=${slug}"
+            echo "exit_code=${pull_exit}"
+            echo "dir=${REVIEW_WORK}/reviews/${slug}"
+            echo "receipt=${REVIEW_WORK}/reviews/${slug}/receipt.json"
+            echo "reviews=${REVIEW_WORK}/reviews/${slug}/reviews.json"
+            echo "files_url=${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/blob/review-data/reviews/${slug}/receipt.json"
+          } >> "$GITHUB_OUTPUT"
+          exit "$pull_exit"
+
+      - name: Write job summary
+        if: steps.pull.outputs.receipt != ''
+        env:
+          RECEIPT_PATH: ${{ steps.pull.outputs.receipt }}
+          REVIEWS_PATH: ${{ steps.pull.outputs.reviews }}
+          FILES_URL: ${{ steps.pull.outputs.files_url }}
+        run: |
+          set -euo pipefail
+          node --input-type=module <<'JS'
+          import { appendFileSync, existsSync, readFileSync } from "node:fs";
+          const receipt = JSON.parse(readFileSync(process.env.RECEIPT_PATH, "utf8"));
+          const reviewsPath = process.env.REVIEWS_PATH ?? "";
+          let business = receipt.slug;
+          let rating = "unavailable";
+          if (reviewsPath && existsSync(reviewsPath)) {
+            const data = JSON.parse(readFileSync(reviewsPath, "utf8"));
+            if (data.place && typeof data.place.name === "string") business = data.place.name;
+            if (data.place && data.place.rating !== undefined && data.place.rating !== null) rating = String(data.place.rating);
+          }
+          const counts = receipt.counts ?? {};
+          const listingTotal = counts.listingTotal === null || counts.listingTotal === undefined ? "unknown" : String(counts.listingTotal);
+          const lines = [
+            "### Google review pull",
+            "",
+            `- Business: ${business}`,
+            `- Rating: ${rating}`,
+            `- Counts: ${counts.withText ?? 0} with text, ${counts.ratingOnly ?? 0} rating only, ${listingTotal} on the listing`,
+            `- Status: ${receipt.status}`,
+            `- Files: ${process.env.FILES_URL}`,
+          ];
+          if (receipt.detail) lines.push(`- Detail: ${receipt.detail}`);
+          if (receipt.githubRunUrl) lines.push(`- Run: ${receipt.githubRunUrl}`);
+          appendFileSync(process.env.GITHUB_STEP_SUMMARY, `${lines.join("\n")}\n`);
+          JS
+
+      - name: Upload reviews
+        if: steps.pull.outputs.dir != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: review-pull-${{ steps.pull.outputs.slug }}
+          path: ${{ steps.pull.outputs.dir }}
+          if-no-files-found: error
+
+      - name: Commit and push review-data
+        env:
+          PULL_SLUG: ${{ steps.pull.outputs.slug }}
+        run: |
+          set -euo pipefail
+          git -C "$REVIEW_WORK" add -f reviews
+          if git -C "$REVIEW_WORK" diff --cached --quiet; then
+            echo "No review-data changes to commit"
+            exit 0
+          fi
+          message="Pull Google reviews"
+          if [ -n "${PULL_SLUG}" ]; then
+            message="Pull Google reviews for ${PULL_SLUG}"
+          fi
+          git -C "$REVIEW_WORK" -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" commit -m "$message"
+          pushed=0
+          for try in 1 2 3; do
+            if git -C "$REVIEW_WORK" push origin HEAD:review-data; then
+              pushed=1
+              break
+            fi
+            if [ "$try" -eq 3 ]; then
+              break
+            fi
+            git -C "$REVIEW_WORK" fetch origin review-data
+            git -C "$REVIEW_WORK" rebase origin/review-data
+          done
+          if [ "$pushed" -ne 1 ]; then
+            echo "Push to review-data failed after 3 tries"
+            exit 1
+          fi
+
+      - name: Report pull failure
+        if: steps.pull.outcome == 'failure'
+        env:
+          PULL_EXIT: ${{ steps.pull.outputs.exit_code }}
+        run: |
+          set -euo pipefail
+          echo "Review pull failed with status ${PULL_EXIT}"
+          exit 1
