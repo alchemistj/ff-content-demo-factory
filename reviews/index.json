@@ -3,6 +3,18 @@
   "version": 1,
   "places": [
     {
+      "slug": "hawkins-tree-service",
+      "name": "Hawkins Tree Service LLC",
+      "placeId": "ChIJQTgKCf3byIcRqu-rlDPBSko",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 31,
+        "withText": 28,
+        "ratingOnly": 3
+      },
+      "pulledAt": "2026-10-23T17:39:44.854Z"
+    },
+    {
       "slug": "kodes-roofing",
       "name": "Kode's Roofing CO",
       "placeId": "ChIJ39JLV0nxxYcR_Cs2VJ_a7w4",

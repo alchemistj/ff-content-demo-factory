@@ -1,0 +1,318 @@
+{
+  "kind": "google-review-pull",
+  "version": 1,
+  "slug": "hawkins-tree-service",
+  "place": {
+    "name": "Hawkins Tree Service LLC",
+    "placeId": "ChIJQTgKCf3byIcRqu-rlDPBSko",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Hawkins%20Tree%20Service%20LLC&query_place_id=ChIJQTgKCf3byIcRqu-rlDPBSko",
+    "address": "1336 S Westbury Dr, Republic, MO 65738",
+    "phone": "(417) 342-3738",
+    "rating": 4.9,
+    "totalReviewCount": 31
+  },
+  "pulledAt": "2026-10-23T17:39:44.854Z",
+  "requestedMax": 75,
+  "reviews": [
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pBeGRtWXRWakozTVVoUVUwZEtlVkZOY0VZd1dIYxAB",
+      "reviewer": "James O.",
+      "rating": 5,
+      "text": "They came out and removed a tree and ground out the stump at our house in Republic. Very professional and I would definitely recommend their services.",
+      "publishedAt": "2026-08-31T17:51:48.156Z",
+      "ownerResponse": "Thank you so much for your review. We appreciate your business and support.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pBeGRtWXRWakozTVVoUVUwZEtlVkZOY0VZd1dIYxAB!2m1!1s0x0:0x4a4ac13394abefaa!3m1!1s2@1:CAIQACodChtycF9oOjAxdmYtVjJ3MUhQU0dKeVFNcEYwWHc%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pKNWVtMDFiMlU0UVY5WWExOVJabFpEZFhCbU1HYxAB",
+      "reviewer": "Jesse M.",
+      "rating": 5,
+      "text": "Did a fantastic job cutting my tree down. Very honest.",
+      "publishedAt": "2026-06-26T16:59:16.655Z",
+      "ownerResponse": "Thank you for your business. We truly appreciate your support by leaving a review.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pKNWVtMDFiMlU0UVY5WWExOVJabFpEZFhCbU1HYxAB!2m1!1s0x0:0x4a4ac13394abefaa!3m1!1s2@1:CAIQACodChtycF9oOjJ5em01b2U4QV9Ya19RZlZDdXBmMGc%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2kxd05FaHpSMnBWVlhwM09HNXFaVTB5UjNNMlFYYxAB",
+      "reviewer": "Katie W.",
+      "rating": 5,
+      "text": "The Hawkins took out 6 trees for us, cleaned everything up they took down and some branches that came down before they came !\nThis 69 year old lady really appreciated the little extras they did for us! Great service and friendly crew!\n\nThis spring  2026 they came back and took out two more trees that died over the winter and ground the stumps out for us.  They leave the yard very clean.\nThey treat us like family. Thank you!",
+      "publishedAt": "2026-06-05T15:02:17.596Z",
+      "ownerResponse": "Thank you so much for your review and your business! We truly appreciate it!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2kxd05FaHpSMnBWVlhwM09HNXFaVTB5UjNNMlFYYxAB!2m1!1s0x0:0x4a4ac13394abefaa!3m1!1s2@1:CAIQACodChtycF9oOi1wNEhzR2pVVXp3OG5qZU0yR3M2QXc%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2w5Q2FEWkNlVXd4YkdkeWQyWTVPRTFMU0VsV04xRRAB",
+      "reviewer": "Jean M.",
+      "rating": 5,
+      "text": "Quick, fair quote.  Work was done expeditiously, safely and everything was cleaned up after completion.  Couldn't be more pleased with the service received from Hawkins Tree Service.",
+      "publishedAt": "2025-07-07T21:17:37.289Z",
+      "ownerResponse": "Thank you so much for your review and your business! We truly appreciate it!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2w5Q2FEWkNlVXd4YkdkeWQyWTVPRTFMU0VsV04xRRAB!2m1!1s0x0:0x4a4ac13394abefaa!3m1!1s2@1:CAIQACodChtycF9oOl9CaDZCeUwxbGdyd2Y5OE1LSElWN1E%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnTUNZcU5uYVF3EAE",
+      "reviewer": "Rob W.",
+      "rating": 5,
+      "text": "Wish I could give more stars. Mike and his guy came out right away and got the tree off my propane tank. A real \"work your butt off\" kinda guy. Definitely a steadfast customer here.",
+      "publishedAt": "2025-04-30T20:39:10.767Z",
+      "ownerResponse": "We truly appreciate your business and your review. Thank you so much!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTUNZcU5uYVF3EAE!2m1!1s0x0:0x4a4ac13394abefaa!3m1!1s2@1:CIHM0ogKEICAgMCYqNnaQw%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNYOGF5ODVRRRAB",
+      "reviewer": "Dylan M.",
+      "rating": 5,
+      "text": "Mike and his crew are fantastic. We've hired them for several projects on our property, some of which probably turned out to be more complicated than anyone initially anticipated. Through it all, they've consistently impressed with their professionalism and the quality of their work. Highly recommended.",
+      "publishedAt": "2024-10-17T20:12:28.909Z",
+      "ownerResponse": "Thank you so much for your business, we truly appreciate your review! We are here if you need anything in the future.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNYOGF5ODVRRRAB!2m1!1s0x0:0x4a4ac13394abefaa!3m1!1s2@1:CIHM0ogKEICAgICX8ay85QE%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUR6OVBtZUpBEAE",
+      "reviewer": "Darin H.",
+      "rating": 5,
+      "text": "Mike and crew was out today to trim back a giant birch away from my house. They did a wonderful job and did everything I needed done and cleaned up the evidence when done. You’d never know they were there. I will be calling them for future services. Thanks",
+      "publishedAt": "2024-06-08T14:28:09.744Z",
+      "ownerResponse": "Thank you so much for your business and review, we truly appreciate it!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR6OVBtZUpBEAE!2m1!1s0x0:0x4a4ac13394abefaa!3m1!1s2@1:CIHM0ogKEICAgIDz9PmeJA%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURWNXB1dUhnEAE",
+      "reviewer": "MISSOURI G.",
+      "rating": 5,
+      "text": "Very professional and courteous. They cut down 4 trees for me in a few hours all close to buildings. I'd use them again as I'm very satisfied with the work they did and the timely manner they did it.",
+      "publishedAt": "2023-12-12T19:12:45.571Z",
+      "ownerResponse": "Thank you so much for your business and review. We truly appreciate it!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURWNXB1dUhnEAE!2m1!1s0x0:0x4a4ac13394abefaa!3m1!1s2@1:CIHM0ogKEICAgIDV5puuHg%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURwM095VjJnRRAB",
+      "reviewer": "Midgets A.",
+      "rating": 1,
+      "text": "You put me in the hospital, and refused to lift a finger to help. Now you tell me I need to try harder? You need to man up and do the right thing for once in your miserable life.",
+      "publishedAt": "2023-11-02T00:39:42.235Z",
+      "ownerResponse": "Because you are harassing us and we have never done any work for you. You are an angry subcontractor only out for revenge. You should apply yourself more instead of wasting your time on harassing us.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwM095VjJnRRAB!2m1!1s0x0:0x4a4ac13394abefaa!3m1!1s2@1:CIHM0ogKEICAgIDp3OyV2gE%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURwMU9IZ1VnEAE",
+      "reviewer": "Paul D.",
+      "rating": 5,
+      "text": "Very stand up guys. Was doing some work at my neighbors place,  I asked if he would chip up some limbs while he was here. Did great work and nice guys. Highly recommend",
+      "publishedAt": "2023-08-16T20:40:44.472Z",
+      "ownerResponse": "Thank you for the review! We appreciate the business and here if you need any services in the future.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwMU9IZ1VnEAE!2m1!1s0x0:0x4a4ac13394abefaa!3m1!1s2@1:CIHM0ogKEICAgIDp1OHgUg%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUR4N1lMOXZBRRAB",
+      "reviewer": "Cindy J.",
+      "rating": 5,
+      "text": "I would highly recommend this business.",
+      "publishedAt": "2023-06-13T15:10:16.517Z",
+      "ownerResponse": "Thank you so much for the review! We appreciate your business!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR4N1lMOXZBRRAB!2m1!1s0x0:0x4a4ac13394abefaa!3m1!1s2@1:CIHM0ogKEICAgIDx7YL9vAE%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUR4OXRDdlVBEAE",
+      "reviewer": "Laraine M.",
+      "rating": 5,
+      "text": "Good people! Will use them again!  Thanks Mike and crew!",
+      "publishedAt": "2023-06-07T21:45:42.184Z",
+      "ownerResponse": "Thank you for your business! We would love to help in the future! \nThanks again!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR4OXRDdlVBEAE!2m1!1s0x0:0x4a4ac13394abefaa!3m1!1s2@1:CIHM0ogKEICAgIDx9tCvUA%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUN4M1kyNUZ3EAE",
+      "reviewer": "Ara S.",
+      "rating": 5,
+      "text": "Excellent service all the way around.  Would wholeheartedly recommend!",
+      "publishedAt": "2023-05-24T01:53:16.474Z",
+      "ownerResponse": "Thank you very much for your review! We appreciate your business and here if you need further help in the future.\nThanks again!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN4M1kyNUZ3EAE!2m1!1s0x0:0x4a4ac13394abefaa!3m1!1s2@1:CIHM0ogKEICAgICx3Y25Fw%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUN4bmI2SE1BEAE",
+      "reviewer": "Carlee B.",
+      "rating": 5,
+      "text": "We are incredibly pleased by the work of Hawkins Tree Service. They promptly returned phone calls, were incredibly reliable and stuck to their word. We hired the team to remove a massive ash tree from our yard. What seemed like a significant undertaking was made easy thanks to the great work by this team.\n\nThe team was quick, efficient and consistent. Highly recommend!",
+      "publishedAt": "2023-05-23T19:57:27.866Z",
+      "ownerResponse": "Thank you so much for your business, we are grateful and appreciate your feedback. We hope to help you in the future if needed! Thanks again!!!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN4bmI2SE1BEAE!2m1!1s0x0:0x4a4ac13394abefaa!3m1!1s2@1:CIHM0ogKEICAgICxnb6HMA%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNSNy1LN2N3EAE",
+      "reviewer": "Sheila S.",
+      "rating": 5,
+      "text": "Mike was great to work with. My husband told him what he wanted done and Mike did everything he asked.\nHe told us about a problem one of our trees had but said it needed to be watched but not taken out yet.\nThey cleaned up everything when they were done.\nI would highly recommend them and will definitely call them the next time we need tree work done.",
+      "publishedAt": "2023-04-13T20:48:57.331Z",
+      "ownerResponse": "Thank you so much for your business, we are grateful and appreciate your feedback. We hope to help you in the future! Thanks again!!!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNSNy1LN2N3EAE!2m1!1s0x0:0x4a4ac13394abefaa!3m1!1s2@1:CIHM0ogKEICAgICR7-K7cw%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNocGZ6NUFREAE",
+      "reviewer": "Hunter M.",
+      "rating": 5,
+      "text": "Extremely nice people! With competitive prices would recommend them to anyone and If I ever need tree work again this is the first place I will call, we had a miscommunication on the form of pay I thought I mailed in a check after the service was done so when he was done I didn’t have a check ready luckily he was willing to work with us and gave us time to get a check together. Amazing service!",
+      "publishedAt": "2023-02-17T20:25:00.164Z",
+      "ownerResponse": "We truly thank you for your business!\nWe work hard to accommodate our customers the best we can. It was our pleasure working with you! Thank you again for your business!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNocGZ6NUFREAE!2m1!1s0x0:0x4a4ac13394abefaa!3m1!1s2@1:CIHM0ogKEICAgIChpfz5AQ%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNoak9QQXFBRRAB",
+      "reviewer": "William V.",
+      "rating": 5,
+      "text": "Mike came out and helped me with some LARGE oaks I have at my property. This was work well beyond my abilities and I appreciated Mike talking me threw what he recommended for my situation and even advised me on how I could address some of the smaller issues myself. Great team and they did a great job with some precarious projects.",
+      "publishedAt": "2023-02-06T21:39:40.160Z",
+      "ownerResponse": "Thank you very much for your review! We appreciate your business and here if you need further help in the future.\nThanks again!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNoak9QQXFBRRAB!2m1!1s0x0:0x4a4ac13394abefaa!3m1!1s2@1:CIHM0ogKEICAgIChjOPAqAE%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUR1bHBYVG9RRRAB",
+      "reviewer": "Bill C.",
+      "rating": 5,
+      "text": "Hawkins did an excellent job at removing a 40yr old Large maple tree from our yard.They also ground up the stump and trimmed two other trees in the yard for us. Everything was safely and professionally.We would highly recommend them to anyone.",
+      "publishedAt": "2022-08-20T03:25:38.517Z",
+      "ownerResponse": "Thank you so much for your review! We truly appreciate your business and we are here if you need additional tree work in the future!\nThank you again!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR1bHBYVG9RRRAB!2m1!1s0x0:0x4a4ac13394abefaa!3m1!1s2@1:CIHM0ogKEICAgIDulpXToQE%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURPbmNLV09nEAE",
+      "reviewer": "Jan V.",
+      "rating": 5,
+      "text": "Mike did a wonderful job of removing trees and lots of brush. He is always so polite and knowledgeable.",
+      "publishedAt": "2022-07-11T22:40:34.485Z",
+      "ownerResponse": "Hi Jan! Thank you so much for your kind words and review. We truly appreciate your business and we're always here, in the future, if you need additional tree/shrub work.\nThank you again!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURPbmNLV09nEAE!2m1!1s0x0:0x4a4ac13394abefaa!3m1!1s2@1:CIHM0ogKEICAgIDOncKWOg%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURPN2I3OFJREAE",
+      "reviewer": "Sonny H.",
+      "rating": 5,
+      "text": "Excellent, professional tree removal.",
+      "publishedAt": "2022-07-11T19:10:36.632Z",
+      "ownerResponse": "Hi Sonny!\nThank you so much for taking the time to leave a review, we appreciate your business. We would love to help in the future if you need additional tree work done.\nAgain thanks!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURPN2I3OFJREAE!2m1!1s0x0:0x4a4ac13394abefaa!3m1!1s2@1:CIHM0ogKEICAgIDO7b78RQ%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURPOWJIcHh3RRAB",
+      "reviewer": "Rodney W.",
+      "rating": 5,
+      "text": "Very friendly,  professional, and will be there when they say they will be there.",
+      "publishedAt": "2022-07-11T04:12:03.301Z",
+      "ownerResponse": "Hi Rodney! Thank you for taking the time to leave a review. We truly appreciate your business and would love to help you in the future if you need additional tree work done.\nThanks again!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURPOWJIcHh3RRAB!2m1!1s0x0:0x4a4ac13394abefaa!3m1!1s2@1:CIHM0ogKEICAgIDO9bHpxwE%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNPcDZ5eGZBEAE",
+      "reviewer": "Rhonda W.",
+      "rating": 5,
+      "text": "Project involved removal of a tree and stump grinding of multiple stumps left behind by the previous owner.  They were out quickly to do a quote and were able to get the work done quickly as well.  They did a great job and left the areas tidy and had me review all the work before they left, to ensure I was happy.  They are prompt, professional, courteous, friendly and do great work.   Their pricing is very, very reasonable as well.  Highly recommend.",
+      "publishedAt": "2022-06-21T14:54:41.703Z",
+      "ownerResponse": "Thank you so much for your review! We truly appreciate your business!\nIf you ever need anything please don't hesitate to call us back. Thanks again!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNPcDZ5eGZBEAE!2m1!1s0x0:0x4a4ac13394abefaa!3m1!1s2@1:CIHM0ogKEICAgICOp6yxfA%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNPZzdMV2JnEAE",
+      "reviewer": "chris A.",
+      "rating": 5,
+      "text": "Great company to work with. Very professional and managed to overcome some difficulties with ease. A true pleasure,  I highly recommend them.",
+      "publishedAt": "2022-06-17T23:06:34.562Z",
+      "ownerResponse": "Thank you for your review! We were faced with difficult times with your massive tree, but overcame without damage. We thank you again for your business!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNPZzdMV2JnEAE!2m1!1s0x0:0x4a4ac13394abefaa!3m1!1s2@1:CIHM0ogKEICAgICOg7LWbg%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUQyemZIcEt3EAE",
+      "reviewer": "Kent R.",
+      "rating": 5,
+      "text": "Mike has done several jobs for me. Also excellent work. Always careful to save precious vegetation as we requested. His team saved 24 azaleas that I thought we dead from a hard freeze. He cleaned a new lot of mine that now looks like a state park.\nI highly recommend Hawkins Tree Service.",
+      "publishedAt": "2022-05-21T19:10:15.436Z",
+      "ownerResponse": "It has been our pleasure working with you! Thank you so much for your business and we appreciate the review!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQyemZIcEt3EAE!2m1!1s0x0:0x4a4ac13394abefaa!3m1!1s2@1:CIHM0ogKEICAgID2zfHpKw%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUQ2b2FlZFZBEAE",
+      "reviewer": "Michael H.",
+      "rating": 5,
+      "text": "Mike came and looked at my tree that was in jeapordy of falling on my house. Mike offered to remove the tree the same day on a Friday night at 7pm. The price was much cheaper than anyone I called and highly recommend them!",
+      "publishedAt": "2021-10-02T00:59:53.384Z",
+      "ownerResponse": "Thank you so much for the review! We truly appreciate your business and look forward to working with you in the future!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ2b2FlZFZBEAE!2m1!1s0x0:0x4a4ac13394abefaa!3m1!1s2@1:CIHM0ogKEICAgID6oaedVA%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNLNGZXVXpBRRAB",
+      "reviewer": "Charles C.",
+      "rating": 5,
+      "text": "Hawkins Tree Service removed two trees and topped a third that we’re leaning over our house. The work was professionally done in a minimum of time and at a cost under their competitors. I would highly recommend them for your tree service needs.",
+      "publishedAt": "2021-04-08T13:50:39.919Z",
+      "ownerResponse": "Thank you so much Charles! We look forward to working with you in the future. Truly appreciate your business!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNLNGZXVXpBRRAB!2m1!1s0x0:0x4a4ac13394abefaa!3m1!1s2@1:CIHM0ogKEICAgICK4fWUzAE%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNLNm9XTnFRRRAB",
+      "reviewer": "Jake R.",
+      "rating": 5,
+      "text": "They left my yard cleaner than it was when they got here.  They worked through their weekend getting it done.  Both gentleman that were here were very polite and very friendly.",
+      "publishedAt": "2021-04-01T22:09:36.069Z",
+      "ownerResponse": "Thank you so much for your review! We truly appreciate our customers and hope to work with you again in the future!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNLNm9XTnFRRRAB!2m1!1s0x0:0x4a4ac13394abefaa!3m1!1s2@1:CIHM0ogKEICAgICK6oWNqQE%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNLaXAyVzRnRRAB",
+      "reviewer": "Andrea H.",
+      "rating": 5,
+      "text": "Amazing service and affordable price.  Hawkins responded very quickly to my quote request. He thoroughly inspected my trees and took the time to educate me which I really liked. He was very knowledgeable and professional... I was sure I couldn't afford this service. I'd already had two quotes from other businesses prior to this. Hawkins was nearly half the price of the other two. I was so thrilled I hired em on the spot. Did my tree trimming way sooner than expected and did an amazing job. My trees had a terrible trim job the previous year and were a complete mess. Now they're beautiful again. He made sure everything looked the way I wanted and catered to my somewhat picky \"perfectionist\" tendencies. All the branches were completely cleaned up and taken away. There was nothing left for me to deal with. I was very happy with this service. They even followed up with me the next week to make sure I was still satisfied. I'd definitely recommend Hawkins to anyone!",
+      "publishedAt": "2021-04-01T05:43:38.085Z",
+      "ownerResponse": "Thank you so much for your business Andrea! We hope to get the opportunity to work for you again! We truly appreciate your review and so glad we could help!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNLaXAyVzRnRRAB!2m1!1s0x0:0x4a4ac13394abefaa!3m1!1s2@1:CIHM0ogKEICAgICKip2W4gE%7C%7C?hl=en",
+      "language": "en"
+    }
+  ],
+  "ratingOnly": [
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURKbklfRk1BEAE",
+      "reviewer": "Brett G.",
+      "rating": 5,
+      "publishedAt": "2023-07-12T18:22:08.508Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURPOWVMT2FBEAE",
+      "reviewer": "The W.",
+      "rating": 5,
+      "publishedAt": "2022-07-11T02:50:04.817Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUQyemF2TFJ3EAE",
+      "reviewer": "Rich D.",
+      "rating": 5,
+      "publishedAt": "2022-05-21T20:39:49.653Z"
+    }
+  ]
+}

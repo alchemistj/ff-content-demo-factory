@@ -1,0 +1,28 @@
+{
+  "kind": "google-review-pull-receipt",
+  "status": "ok",
+  "slug": "hawkins-tree-service",
+  "request": {
+    "mapsUrl": "https://www.google.com/maps/search/Hawkins+Tree+Service+LLC+Republic+MO",
+    "maxReviews": 75,
+    "expectedPhone": "4173423738",
+    "expectedName": "hawkins"
+  },
+  "trigger": "push",
+  "apify": {
+    "actor": "compass~crawler-google-places",
+    "runId": "VMMGxjimnAnSx00kA",
+    "datasetId": "LPPbkZXrZO6rytf3V",
+    "attempts": 1,
+    "usageUsd": 0.021699999999999997
+  },
+  "counts": {
+    "listingTotal": 31,
+    "withText": 28,
+    "ratingOnly": 3
+  },
+  "detail": null,
+  "startedAt": "2026-10-23T17:39:23.555Z",
+  "finishedAt": "2026-10-23T17:39:44.854Z",
+  "githubRunUrl": "https://github.com/alchemistj/ff-content-demo-factory/actions/runs/39996822889"
+}
