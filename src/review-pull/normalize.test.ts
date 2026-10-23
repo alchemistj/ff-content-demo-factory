@@ -24,6 +24,7 @@ const FULL_NAMES = [
 test("reviewer names keep a first name and last initial", () => {
   assert.equal(formatReviewerName("Isaac Rodriguez"), "Isaac R.");
   assert.equal(formatReviewerName("Cher"), "Cher");
+  assert.equal(formatReviewerName("bob jones"), "bob J.");
   assert.equal(formatReviewerName("  Ada   Lovelace  "), "Ada L.");
   assert.equal(formatReviewerName(""), "Google user");
   assert.equal(formatReviewerName("   "), "Google user");

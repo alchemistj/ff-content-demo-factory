@@ -63,7 +63,7 @@ export function formatReviewerName(raw: unknown): string {
   const last = parts[parts.length - 1] ?? "";
   const initial = last.match(/\p{L}/u)?.[0];
   if (!initial) return first;
-  return `${first} ${initial}.`;
+  return `${first} ${initial.toLocaleUpperCase("en-US")}.`;
 }
 
 export function readListing(item: unknown): ListingFields | null {
