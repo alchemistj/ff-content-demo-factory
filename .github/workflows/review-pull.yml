@@ -139,8 +139,9 @@ jobs:
           receipt_out="${RUNNER_TEMP}/review-pull-receipt.json"
           set +e
           npm run --silent reviews:pull -- "${args[@]}" | tee "$receipt_out"
-          pull_exit=${PIPESTATUS[0]}
-          tee_exit=${PIPESTATUS[1]}
+          statuses=("${PIPESTATUS[@]}")
+          pull_exit=${statuses[0]}
+          tee_exit=${statuses[1]}
           set -e
           if [ "$tee_exit" -ne 0 ]; then
             echo "Could not save the review pull receipt"
