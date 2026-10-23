@@ -100,7 +100,7 @@ test("a successful pull writes reviews, markdown, a receipt, and an index row", 
   }
 });
 
-test("every failure path writes a receipt and no reviews, and a re-pull replaces the index row", async () => {
+test("every failure path writes a receipt and no reviews, and a failed re-pull keeps the last good reviews", async () => {
   const outDir = tempDir();
   try {
     const first = await run(outDir, { mapsUrl: "place_id:ChIJfakekodesroofing0001", slug: "kodes-roofing" }, {
@@ -168,24 +168,33 @@ test("every failure path writes a receipt and no reviews, and a re-pull replaces
       assert.equal(JSON.stringify(receipt).includes(TOKEN), false);
     }
 
-    const replaced = await run(outDir, { mapsUrl: "https://example.com/nope", slug: "kodes-roofing" }, {
+    const failedRepull = await run(outDir, { mapsUrl: "https://example.com/nope", slug: "kodes-roofing" }, {
       token: TOKEN,
       now: () => new Date("2026-10-24T18:00:00.000Z"),
     });
-    assert.equal(replaced.status, "invalid_request");
-    assert.equal(existsSync(join(outDir, "kodes-roofing", "reviews.json")), false);
-    assert.equal(existsSync(join(outDir, "kodes-roofing", "reviews.md")), false);
-    assert.equal(existsSync(join(outDir, "kodes-roofing", "receipt.json")), true);
+    assert.equal(failedRepull.status, "invalid_request");
+    assert.equal(existsSync(join(outDir, "kodes-roofing", "reviews.json")), true);
+    assert.equal(existsSync(join(outDir, "kodes-roofing", "reviews.md")), true);
+    const keptReceipt = readJson(join(outDir, "kodes-roofing", "receipt.json")) as ReviewPullReceipt;
+    assert.equal(keptReceipt.status, "invalid_request");
     assert.equal(existsSync(join(outDir, "other-roofing", "reviews.json")), true);
-    const index = readJson(join(outDir, "index.json")) as ReviewIndexFile;
+    let index = readJson(join(outDir, "index.json")) as ReviewIndexFile;
     assert.deepEqual(
-      index.places.map((place) => [place.slug, place.status]),
+      index.places.map((place) => [place.slug, place.status, place.pulledAt]),
       [
-        ["kodes-roofing", "invalid_request"],
-        ["other-roofing", "ok"],
+        ["kodes-roofing", "ok", first.finishedAt],
+        ["other-roofing", "ok", other.finishedAt],
       ],
     );
-    assert.equal(index.places[0]?.pulledAt, "2026-10-24T18:00:00.000Z");
+
+    const repulled = await run(outDir, { mapsUrl: "place_id:ChIJfakekodesroofing0001", slug: "kodes-roofing" }, {
+      token: TOKEN,
+      fetchImpl: succeededFetch([fixture]),
+      now: () => new Date("2026-10-25T18:00:00.000Z"),
+    });
+    assert.equal(repulled.status, "ok");
+    index = readJson(join(outDir, "index.json")) as ReviewIndexFile;
+    assert.equal(index.places[0]?.pulledAt, repulled.finishedAt);
   } finally {
     rmSync(outDir, { recursive: true, force: true });
   }

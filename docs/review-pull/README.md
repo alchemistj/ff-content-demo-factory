@@ -40,9 +40,9 @@ That writes to `./reviews/`. The folder is gitignored, which is fine for a local
 
 ## Read a failed receipt
 
-Open `reviews/<slug>/receipt.json` on `review-data` (or under `./reviews/<slug>/` after a local run). `status` says what happened. `detail` says it in plain language. A failed run does not leave `reviews.json` or `reviews.md`. If the slug was not known yet, the folder is `unnamed-<github run id>`.
+Open `reviews/<slug>/receipt.json` on `review-data` (or under `./reviews/<slug>/` after a local run). `status` says what happened. `detail` says it in plain language. A failed run writes only `receipt.json`. If an earlier pull of that slug worked, its `reviews.json`, `reviews.md` and index row stay as they were. If the slug was not known yet, the folder is `unnamed-<github run id>`.
 
-`reviews/index.json` has one row per slug: name, placeId, status, counts, and pulledAt. Pulling the same slug again replaces that folder. Git history keeps the previous files.
+`reviews/index.json` has one row per slug: name, placeId, status, counts, and pulledAt. A successful pull of the same slug replaces that folder. Git history keeps the previous files.
 
 ## What each status means
 

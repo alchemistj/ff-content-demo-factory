@@ -294,9 +294,11 @@ function publish(
   mkdirSync(root, { recursive: true });
   const index = loadIndex(root);
   const dir = slugDirectory(root, receipt.slug);
-  rmSync(dir, { recursive: true, force: true });
+  const succeeded = receipt.status === "ok" && reviews !== null;
+  // A failed pull only replaces the receipt, so the last good reviews stay readable.
+  if (succeeded) rmSync(dir, { recursive: true, force: true });
   mkdirSync(dir, { recursive: true });
-  if (receipt.status === "ok" && reviews) {
+  if (succeeded && reviews) {
     const stamped: GoogleReviewFile = { ...reviews, slug: receipt.slug, pulledAt: receipt.finishedAt };
     writeJson(join(dir, "reviews.json"), stamped);
     writeFileSync(join(dir, "reviews.md"), renderReviewsMarkdown(stamped));
@@ -310,8 +312,9 @@ function publish(
     counts: receipt.counts,
     pulledAt: receipt.finishedAt,
   };
+  const previous = index.places.find((place) => place.slug === receipt.slug);
   const places = index.places.filter((place) => place.slug !== receipt.slug);
-  places.push(row);
+  places.push(!succeeded && previous?.status === "ok" ? previous : row);
   places.sort((left, right) => left.slug.localeCompare(right.slug));
   writeJson(join(root, "index.json"), {
     kind: "google-review-pull-index",
