@@ -11,8 +11,8 @@
   "trigger": "workflow_dispatch",
   "apify": {
     "actor": "compass~crawler-google-places",
-    "runId": "Y1pYAHpbaH6dQgGhU",
-    "datasetId": "adJCXyW1G7qagN4Bb",
+    "runId": "ZMoTuJrVYZhE5TQoZ",
+    "datasetId": "lDkUsPhc6YbwFrTGM",
     "attempts": 1,
     "usageUsd": 0.0002
   },
@@ -22,7 +22,7 @@
     "ratingOnly": 9
   },
   "detail": null,
-  "startedAt": "2026-10-23T17:34:13.305Z",
-  "finishedAt": "2026-10-23T17:34:34.084Z",
-  "githubRunUrl": "https://github.com/alchemistj/ff-content-demo-factory/actions/runs/39996127722"
+  "startedAt": "2026-10-23T17:37:41.117Z",
+  "finishedAt": "2026-10-23T17:38:02.396Z",
+  "githubRunUrl": "https://github.com/alchemistj/ff-content-demo-factory/actions/runs/39996596608"
 }

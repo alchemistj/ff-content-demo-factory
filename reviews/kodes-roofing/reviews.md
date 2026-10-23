@@ -1,6 +1,6 @@
 # Kode's Roofing CO
 
-4.9 · 59 Google reviews · pulled 2026-10-23T17:34:34.084Z
+4.9 · 59 Google reviews · pulled 2026-10-23T17:38:02.396Z
 
 ## ★★★★★ · Stephen L. · 2026-07-26
 
