@@ -1,0 +1,92 @@
+{
+  "kind": "google-review-pull",
+  "version": 1,
+  "slug": "swmo-services",
+  "place": {
+    "name": "SWMO Services Inc.",
+    "placeId": "ChIJoRHO5Itgz4cRAvm9H5jWIdU",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=SWMO%20Services%20Inc.&query_place_id=ChIJoRHO5Itgz4cRAvm9H5jWIdU",
+    "address": "776 S Long Dr, Springfield, MO 65802",
+    "phone": "(417) 849-7966",
+    "rating": 4.5,
+    "totalReviewCount": 8
+  },
+  "pulledAt": "2026-10-24T02:05:35.765Z",
+  "requestedMax": 75,
+  "reviews": [
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURJazQtRzVnRRAB",
+      "reviewer": "Jason B.",
+      "rating": 5,
+      "text": "Great service.",
+      "publishedAt": "2019-01-20T04:00:44.531Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURJazQtRzVnRRAB!2m1!1s0x0:0xd521d6981fbdf902!3m1!1s2@1:CIHM0ogKEICAgIDIk4-G5gE%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURJN2YzMENBEAE",
+      "reviewer": "Kris C.",
+      "rating": 5,
+      "text": "Great company. Would recommend this company to any one.",
+      "publishedAt": "2019-01-16T18:23:37.523Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURJN2YzMENBEAE!2m1!1s0x0:0xd521d6981fbdf902!3m1!1s2@1:CIHM0ogKEICAgIDI7f30CA%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUN3b2F6R1JnEAE",
+      "reviewer": "Zach A.",
+      "rating": 5,
+      "text": "This company was great. I contacted Clinton about leaf removal and they were out within a week of my request. I had almost a half an acre of leaves that I moved to the side of my property. They came by and sucked them up into a trailer... all of them. I would recommend this company for leaf removal or other services. They saved me a lot of hassle and it was fairly priced. Thumbs up.",
+      "publishedAt": "2015-01-16T14:23:11.082Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN3b2F6R1JnEAE!2m1!1s0x0:0xd521d6981fbdf902!3m1!1s2@1:CIHM0ogKEICAgICwoazGRg%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURBN3BUSVpBEAE",
+      "reviewer": "Tim F.",
+      "rating": 5,
+      "text": "Simply an honest company who knows their stuff.  They ARE NOT some round the block college guy who wants to make a few bucks on the side by pretending to know how to sufficiently care for your lawn and landscape.  They also can clear your snow faster than you can build an Olaf.  Although who doesn't want an Olaf?",
+      "publishedAt": "2014-07-16T20:08:50.154Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURBN3BUSVpBEAE!2m1!1s0x0:0xd521d6981fbdf902!3m1!1s2@1:CIHM0ogKEICAgIDA7pTIZA%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUN3MWNIS1pnEAE",
+      "reviewer": "Nathan B.",
+      "rating": 5,
+      "text": "SWMO Services is an amazing company. We have had some amazing changes in our yard since they started the fertilization process last year. We have noticed a huge difference in our crab grass and weeds! Would highly recommend this place!",
+      "publishedAt": "2013-03-28T18:24:58.749Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN3MWNIS1pnEAE!2m1!1s0x0:0xd521d6981fbdf902!3m1!1s2@1:CIHM0ogKEICAgICw1cHKZg%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNnbVBqbDZBRRAB",
+      "reviewer": "Kim W.",
+      "rating": 5,
+      "text": "I have seen the great work this company does all over town from our neighborhood school Cherokee to many residential accounts. Thanks guys great job",
+      "publishedAt": "2013-03-27T20:50:09.956Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNnbVBqbDZBRRAB!2m1!1s0x0:0xd521d6981fbdf902!3m1!1s2@1:CIHM0ogKEICAgICgmPjl6AE%7C%7C?hl=en",
+      "language": "en"
+    }
+  ],
+  "ratingOnly": [
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUR2MElEQXVRRRAB",
+      "reviewer": "De J.",
+      "rating": 5,
+      "publishedAt": "2024-12-16T19:39:30.317Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUR2a0szRHl3RRAB",
+      "reviewer": "Phillip L.",
+      "rating": 1,
+      "publishedAt": "2024-12-16T19:07:10.816Z"
+    }
+  ]
+}
