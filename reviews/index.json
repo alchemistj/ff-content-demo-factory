@@ -27,6 +27,18 @@
       "pulledAt": "2026-10-23T17:38:02.396Z"
     },
     {
+      "slug": "stokes-fence-co",
+      "name": "Stokes Fence Co. LLC",
+      "placeId": "ChIJY0VRIKCaNU8RdWVJPabins4",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 18,
+        "withText": 11,
+        "ratingOnly": 7
+      },
+      "pulledAt": "2026-10-24T02:07:22.729Z"
+    },
+    {
       "slug": "stone-electric-llc",
       "name": "Stone Electric",
       "placeId": "ChIJBd-B56llz4cR5U3yb8ZPzLs",
