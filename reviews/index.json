@@ -3,6 +3,18 @@
   "version": 1,
   "places": [
     {
+      "slug": "ad-mechanical-services",
+      "name": "A & D Mechanical Services LLC, Plumbing, Heating & Air",
+      "placeId": "ChIJZYoQJgZiz4cRSabi7P800Vw",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 68,
+        "withText": 58,
+        "ratingOnly": 10
+      },
+      "pulledAt": "2026-10-24T02:07:34.165Z"
+    },
+    {
       "slug": "hawkins-tree-service",
       "name": "Hawkins Tree Service LLC",
       "placeId": "ChIJQTgKCf3byIcRqu-rlDPBSko",
