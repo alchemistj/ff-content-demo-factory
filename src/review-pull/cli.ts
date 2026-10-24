@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import { resolve } from "node:path";
-import { executeReviewPull, type ReviewPullReceipt } from "./output.js";
+import { executeReviewPull, rebuildIndex, type ReviewPullReceipt } from "./output.js";
 import { loadRequestFile, type ReviewPullTrigger } from "./request.js";
 
 const USAGE = `Usage:
@@ -14,6 +14,11 @@ async function main(argv: string[]): Promise<void> {
     return;
   }
   const flags = parseFlags(argv);
+  if (flags["rebuild-index"] === true) {
+    const index = rebuildIndex(resolve(typeof flags.out === "string" ? flags.out : "reviews"));
+    process.stdout.write(`${JSON.stringify({ rebuiltIndex: index.places.length })}\n`);
+    return;
+  }
   const trigger = parseTrigger(flags.trigger);
   const outDir = resolve(typeof flags.out === "string" ? flags.out : "reviews");
   let raw: unknown = {};

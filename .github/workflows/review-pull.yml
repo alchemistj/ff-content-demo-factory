@@ -34,8 +34,10 @@ on:
 permissions:
   contents: write
 
+# One queue per business. Different businesses pull in parallel; the push step
+# below handles two pulls landing on review-data at the same time.
 concurrency:
-  group: review-data
+  group: review-pull-${{ inputs.slug || github.run_id }}
   cancel-in-progress: false
 
 env:
@@ -225,19 +227,37 @@ jobs:
           fi
           git -C "$REVIEW_WORK" -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" commit -m "$message"
           pushed=0
-          for try in 1 2 3; do
+          for try in 1 2 3 4 5; do
             if git -C "$REVIEW_WORK" push origin HEAD:review-data; then
               pushed=1
               break
             fi
-            if [ "$try" -eq 3 ]; then
+            if [ "$try" -eq 5 ]; then
               break
             fi
+            sleep $((try * 3))
             git -C "$REVIEW_WORK" fetch origin review-data
-            git -C "$REVIEW_WORK" rebase origin/review-data
+            if [ -n "${PULL_SLUG}" ] && [ -d "$REVIEW_WORK/reviews/${PULL_SLUG}" ]; then
+              # Another pull landed first. Keep its work, put ours back on top,
+              # and rebuild the shared index from the folders instead of merging it.
+              saved="${RUNNER_TEMP}/review-pull-saved"
+              rm -rf "$saved" && mkdir -p "$saved"
+              cp -R "$REVIEW_WORK/reviews/${PULL_SLUG}" "$saved/"
+              git -C "$REVIEW_WORK" reset --hard origin/review-data
+              rm -rf "$REVIEW_WORK/reviews/${PULL_SLUG}"
+              mkdir -p "$REVIEW_WORK/reviews"
+              cp -R "$saved/${PULL_SLUG}" "$REVIEW_WORK/reviews/"
+              npm run --silent reviews:pull -- --rebuild-index --out "$REVIEW_WORK/reviews"
+              git -C "$REVIEW_WORK" add -f reviews
+              if ! git -C "$REVIEW_WORK" diff --cached --quiet; then
+                git -C "$REVIEW_WORK" -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" commit -m "$message"
+              fi
+            else
+              git -C "$REVIEW_WORK" rebase origin/review-data
+            fi
           done
           if [ "$pushed" -ne 1 ]; then
-            echo "Push to review-data failed after 3 tries"
+            echo "Push to review-data failed after 5 tries"
             exit 1
           fi
 
