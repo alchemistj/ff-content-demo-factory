@@ -25,6 +25,18 @@
         "ratingOnly": 9
       },
       "pulledAt": "2026-10-23T17:38:02.396Z"
+    },
+    {
+      "slug": "stone-electric-llc",
+      "name": "Stone Electric",
+      "placeId": "ChIJBd-B56llz4cR5U3yb8ZPzLs",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 8,
+        "withText": 8,
+        "ratingOnly": 0
+      },
+      "pulledAt": "2026-10-24T02:05:02.106Z"
     }
   ]
 }

@@ -1,0 +1,28 @@
+{
+  "kind": "google-review-pull-receipt",
+  "status": "ok",
+  "slug": "stone-electric-llc",
+  "request": {
+    "mapsUrl": "https://www.google.com/maps/search/Stone+Electric+LLC+Springfield+MO",
+    "maxReviews": 75,
+    "expectedPhone": "4172078328",
+    "expectedName": "stone"
+  },
+  "trigger": "workflow_dispatch",
+  "apify": {
+    "actor": "compass~crawler-google-places",
+    "runId": "ryhTLaMuk8pAeyDkl",
+    "datasetId": "6fnlOfiHRIapMFN5w",
+    "attempts": 1,
+    "usageUsd": 0.0002
+  },
+  "counts": {
+    "listingTotal": 8,
+    "withText": 8,
+    "ratingOnly": 0
+  },
+  "detail": null,
+  "startedAt": "2026-10-24T02:04:21.069Z",
+  "finishedAt": "2026-10-24T02:05:02.106Z",
+  "githubRunUrl": "https://github.com/alchemistj/ff-content-demo-factory/actions/runs/40052608569"
+}
