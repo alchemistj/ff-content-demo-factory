@@ -1,0 +1,27 @@
+{
+  "kind": "google-review-pull-receipt",
+  "status": "ok",
+  "slug": "jons-plumbing",
+  "request": {
+    "mapsUrl": "https://www.google.com/maps/search/Jon%27s+Plumbing+LLC+Marshfield+MO",
+    "maxReviews": 75,
+    "expectedPhone": "4177553257"
+  },
+  "trigger": "workflow_dispatch",
+  "apify": {
+    "actor": "compass~crawler-google-places",
+    "runId": "W7kkiwin1qPJKrjuM",
+    "datasetId": "V81iAmvVwnxacsqBA",
+    "attempts": 1,
+    "usageUsd": 0.0397
+  },
+  "counts": {
+    "listingTotal": 67,
+    "withText": 59,
+    "ratingOnly": 8
+  },
+  "detail": null,
+  "startedAt": "2026-10-25T02:02:13.415Z",
+  "finishedAt": "2026-10-25T02:03:15.493Z",
+  "githubRunUrl": "https://github.com/alchemistj/ff-content-demo-factory/actions/runs/40152904173"
+}

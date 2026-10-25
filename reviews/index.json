@@ -39,6 +39,18 @@
       "pulledAt": "2026-10-25T02:02:46.849Z"
     },
     {
+      "slug": "jons-plumbing",
+      "name": "Jon's Plumbing, LLC",
+      "placeId": "ChIJVVXxT51kz4cRt_W0muFXJbQ",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 67,
+        "withText": 59,
+        "ratingOnly": 8
+      },
+      "pulledAt": "2026-10-25T02:03:15.493Z"
+    },
+    {
       "slug": "kodes-roofing",
       "name": "Kode's Roofing CO",
       "placeId": "ChIJ39JLV0nxxYcR_Cs2VJ_a7w4",
