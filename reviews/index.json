@@ -27,6 +27,18 @@
       "pulledAt": "2026-10-23T17:39:44.854Z"
     },
     {
+      "slug": "imperial-landscaping",
+      "name": "IMPERIAL LANDSCAPING LLC",
+      "placeId": "ChIJG59zWFoVgKMRjzvzfqjRykg",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 42,
+        "withText": 39,
+        "ratingOnly": 3
+      },
+      "pulledAt": "2026-10-25T02:02:46.849Z"
+    },
+    {
       "slug": "kodes-roofing",
       "name": "Kode's Roofing CO",
       "placeId": "ChIJ39JLV0nxxYcR_Cs2VJ_a7w4",
