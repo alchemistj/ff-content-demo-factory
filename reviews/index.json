@@ -73,6 +73,18 @@
         "ratingOnly": 2
       },
       "pulledAt": "2026-10-24T02:05:35.765Z"
+    },
+    {
+      "slug": "take-a-break-cleaning",
+      "name": "Take A Break Cleaning Service LLC",
+      "placeId": "ChIJHxJZS4t9z4cRvAsziYVkCIA",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 13,
+        "withText": 10,
+        "ratingOnly": 3
+      },
+      "pulledAt": "2026-10-25T02:02:27.141Z"
     }
   ]
 }
