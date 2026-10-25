@@ -85,6 +85,18 @@
         "ratingOnly": 3
       },
       "pulledAt": "2026-10-25T02:02:27.141Z"
+    },
+    {
+      "slug": "your-choice-lawncare",
+      "name": "Your Choice Lawncare",
+      "placeId": "ChIJK5THSLphz4cRYzH1z8Wp88s",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 25,
+        "withText": 22,
+        "ratingOnly": 3
+      },
+      "pulledAt": "2026-10-25T02:02:31.544Z"
     }
   ]
 }

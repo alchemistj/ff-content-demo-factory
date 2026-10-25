@@ -1,0 +1,258 @@
+{
+  "kind": "google-review-pull",
+  "version": 1,
+  "slug": "your-choice-lawncare",
+  "place": {
+    "name": "Your Choice Lawncare",
+    "placeId": "ChIJK5THSLphz4cRYzH1z8Wp88s",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Your%20Choice%20Lawncare&query_place_id=ChIJK5THSLphz4cRYzH1z8Wp88s",
+    "address": "1111 N Farm Rd 123, Springfield, MO 65802",
+    "phone": "(417) 799-1790",
+    "rating": 4,
+    "totalReviewCount": 25
+  },
+  "pulledAt": "2026-10-25T02:02:31.544Z",
+  "requestedMax": 75,
+  "reviews": [
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21STlJsUTVSMjlCZDFZelJ6YzFaVkZCUTJwelJGRRAB",
+      "reviewer": "Kyle M.",
+      "rating": 1,
+      "text": "Poor customer relations.  I've been waiting on a refund for over 6mo with return calls. Poor lawn management, didn't stop weeds. The is a really nice lady who answers the phone, she's great!",
+      "publishedAt": "2026-02-12T07:50:10.685Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21STlJsUTVSMjlCZDFZelJ6YzFaVkZCUTJwelJGRRAB!2m1!1s0x0:0xcbf3a9c5cff53163!3m1!1s2@1:CAIQACodChtycF9oOmRNRlQ5R29Bd1YzRzc1ZVFBQ2pzRFE%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnTURncDVYQm5BRRAB",
+      "reviewer": "Hannah P.",
+      "rating": 3,
+      "text": "****edit*** I spoke with Mike and he has agreed to fix the problem this season. Will happily go up to 4-5 stars after a few treatments.",
+      "publishedAt": "2025-03-25T15:40:48.443Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTURncDVYQm5BRRAB!2m1!1s0x0:0xcbf3a9c5cff53163!3m1!1s2@1:CIHM0ogKEICAgMDgp5XBnAE%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnTUN3MDZIOV9RRRAB",
+      "reviewer": "Bryce F.",
+      "rating": 5,
+      "text": "Mike’s team did a great job on my lawn. I will be using them in the future and definitely recommend using them",
+      "publishedAt": "2025-03-21T01:32:33.158Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTUN3MDZIOV9RRRAB!2m1!1s0x0:0xcbf3a9c5cff53163!3m1!1s2@1:CIHM0ogKEICAgMCw06H9_QE%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnTUN3MDZDeUJnEAE",
+      "reviewer": "Dustin A.",
+      "rating": 5,
+      "text": "I had my lawn over seeded back in the fall and now it starting to come in great can’t wait to see it in all of green fullness this spring. Great group of guys and an amazing lawn care service. Highly recommend your choice lawn care for all your lawn needs and much more they offer.",
+      "publishedAt": "2025-03-21T00:53:18.793Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTUN3MDZDeUJnEAE!2m1!1s0x0:0xcbf3a9c5cff53163!3m1!1s2@1:CIHM0ogKEICAgMCw06CyBg%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnTUN3azZpNkZ3EAE",
+      "reviewer": "Jamie W.",
+      "rating": 5,
+      "text": "Your Choice Lawncare has provided me outstanding service for over 6 years. They established a beautiful, lush, green lawn with no weeds. I regularly get compliments from neighbors and family on my lawn. Their customer service has always been courteous and responsive to any questions I have. I highly recommend their services!",
+      "publishedAt": "2025-03-21T00:22:03.794Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTUN3azZpNkZ3EAE!2m1!1s0x0:0xcbf3a9c5cff53163!3m1!1s2@1:CIHM0ogKEICAgMCwk6i6Fw%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnTUN3ay1IY0Z3EAE",
+      "reviewer": "Tiffany M.",
+      "rating": 5,
+      "text": "I had Your Choice Lawn Care come and overseed my lawn, in the Fall, it’s Spring and my yard is already filling in! I would definitely recommend them.",
+      "publishedAt": "2025-03-21T00:13:49.997Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTUN3ay1IY0Z3EAE!2m1!1s0x0:0xcbf3a9c5cff53163!3m1!1s2@1:CIHM0ogKEICAgMCwk-HcFw%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnTUN3M1ltQTFRRRAB",
+      "reviewer": "Nautika C.",
+      "rating": 5,
+      "text": "Super nice employees and excellent services! 10/10 would recommend!",
+      "publishedAt": "2025-03-20T16:22:08.041Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTUN3M1ltQTFRRRAB!2m1!1s0x0:0xcbf3a9c5cff53163!3m1!1s2@1:CIHM0ogKEICAgMCw3YmA1QE%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnTUN3bmFpZGlBRRAB",
+      "reviewer": "Ryan M.",
+      "rating": 5,
+      "text": "We’ve been using Your Choice for about 7-8 years now, for my business and my home. These guys are phenomenal! Never had an issue, trustworthy, just all around a good group of dudes that take pride their work. 5 stars",
+      "publishedAt": "2025-03-20T15:00:21.797Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTUN3bmFpZGlBRRAB!2m1!1s0x0:0xcbf3a9c5cff53163!3m1!1s2@1:CIHM0ogKEICAgMCwnaidiAE%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnTUN3bmRDSXpnRRAB",
+      "reviewer": "Anthony E.",
+      "rating": 5,
+      "text": "Had a great experience with Mike and the guys. Very professional and hard working, I will be a separate customer in the future. I would recommend these guys for anybody’s lawn needs!",
+      "publishedAt": "2025-03-20T14:57:45.007Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTUN3bmRDSXpnRRAB!2m1!1s0x0:0xcbf3a9c5cff53163!3m1!1s2@1:CIHM0ogKEICAgMCwndCIzgE%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUM3bjZyQV9nRRAB",
+      "reviewer": "Love L.",
+      "rating": 5,
+      "text": "Very reliable and efficient! Always leaves our yard looking magnificent! Our go to guys for lawn and tree service, as well as got rid of fleas and ticks that showed up recently.  Great guys!!!!",
+      "publishedAt": "2024-08-19T14:12:32.909Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUM3bjZyQV9nRRAB!2m1!1s0x0:0xcbf3a9c5cff53163!3m1!1s2@1:CIHM0ogKEICAgIC7n6rA_gE%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURiNDhtTmZnEAE",
+      "reviewer": "Howard L.",
+      "rating": 5,
+      "text": "I entrusted my yard care and two other projects with Your Choice.   One of those rare times when I know I made the right decision.   Prompt, professional, experienced and priced fairly.   I am happy! You will be too.",
+      "publishedAt": "2024-08-09T00:40:29.319Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURiNDhtTmZnEAE!2m1!1s0x0:0xcbf3a9c5cff53163!3m1!1s2@1:CIHM0ogKEICAgIDb48mNfg%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUREejR6MmtRRRAB",
+      "reviewer": "Allison",
+      "rating": 1,
+      "text": "Doesn’t use a blinker, playing on phone while driving, and trailer and truck break lights not working!",
+      "publishedAt": "2024-04-15T19:54:19.966Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUREejR6MmtRRRAB!2m1!1s0x0:0xcbf3a9c5cff53163!3m1!1s2@1:CIHM0ogKEICAgIDDz4z2kQE%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNHMkptZXh3RRAB",
+      "reviewer": "Joseph B.",
+      "rating": 1,
+      "text": "Not responsive, were not punctual nor did they notify us most of the time. Incessant backlog of other customers, yet they insisted they could deal with it. Evidently they could not, our lawn has barely improved.",
+      "publishedAt": "2021-10-19T16:40:29.189Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNHMkptZXh3RRAB!2m1!1s0x0:0xcbf3a9c5cff53163!3m1!1s2@1:CIHM0ogKEICAgICG2JmexwE%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURhaUliV193RRAB",
+      "reviewer": "Justin H.",
+      "rating": 5,
+      "text": "They have given prompt and professional service.  The owners clearly and truly value their customers.  My lawn has never looked better.",
+      "publishedAt": "2021-08-13T15:53:04.135Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURhaUliV193RRAB!2m1!1s0x0:0xcbf3a9c5cff53163!3m1!1s2@1:CIHM0ogKEICAgIDaiIbW_wE%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUM4dk5yd2N3EAE",
+      "reviewer": "Shannon M.",
+      "rating": 1,
+      "text": "I've never experienced worse customer service with a small business as I have with this one. I'm not sure how companies like this even stay in business.  Whatever you do, do not pay for an entire season in advance, or you will be sorry. Unless you don't mind your phone calls and emails not being returned and weeds taking over your yard in the meantime.",
+      "publishedAt": "2021-08-10T11:47:44.995Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM4dk5yd2N3EAE!2m1!1s0x0:0xcbf3a9c5cff53163!3m1!1s2@1:CIHM0ogKEICAgIC8vNrwcw%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURxNjkzaXdBRRAB",
+      "reviewer": "Julie H.",
+      "rating": 5,
+      "text": "Absolutely the best lawn care we have ever received. My yard looks the nicest it ever has. Great customer service, timely, and very professional.",
+      "publishedAt": "2021-07-15T23:01:37.898Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURxNjkzaXdBRRAB!2m1!1s0x0:0xcbf3a9c5cff53163!3m1!1s2@1:CIHM0ogKEICAgIDq693iwAE%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURxcy1EMU1REAE",
+      "reviewer": "Heather W.",
+      "rating": 5,
+      "text": "By far the best lawn service around the Springfield area, Mike went out of his way to help bring in extra dirt for our bare spots before he aerated our yard, and now our new grass is beautiful and so green! Thank you for great customer service Dan and Mike!",
+      "publishedAt": "2021-07-15T15:34:33.399Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURxcy1EMU1REAE!2m1!1s0x0:0xcbf3a9c5cff53163!3m1!1s2@1:CIHM0ogKEICAgIDqs-D1MQ%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURxdXU3Z0tnEAE",
+      "reviewer": "Clayton M.",
+      "rating": 2,
+      "text": "Got let go because I said that my time there might be temporary",
+      "publishedAt": "2021-07-06T06:37:25.997Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURxdXU3Z0tnEAE!2m1!1s0x0:0xcbf3a9c5cff53163!3m1!1s2@1:CIHM0ogKEICAgIDquu7gKg%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURZNU1ldnpnRRAB",
+      "reviewer": "Kirk M.",
+      "rating": 5,
+      "text": "Professional service and customer service oriented!",
+      "publishedAt": "2019-04-30T15:59:16.607Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURZNU1ldnpnRRAB!2m1!1s0x0:0xcbf3a9c5cff53163!3m1!1s2@1:CIHM0ogKEICAgIDY5MevzgE%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUN3dk1Qdkl3EAE",
+      "reviewer": "Jill P.",
+      "rating": 5,
+      "text": "Great Service",
+      "publishedAt": "2018-09-27T13:08:24.197Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN3dk1Qdkl3EAE!2m1!1s0x0:0xcbf3a9c5cff53163!3m1!1s2@1:CIHM0ogKEICAgICwvMPvIw%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURReVpDdlFREAE",
+      "reviewer": "Chris J.",
+      "rating": 5,
+      "text": "Fantastic service and great people.",
+      "publishedAt": "2018-08-30T14:46:51.717Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURReVpDdlFREAE!2m1!1s0x0:0xcbf3a9c5cff53163!3m1!1s2@1:CIHM0ogKEICAgIDQyZCvQQ%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNBanQyQldBEAE",
+      "reviewer": "Benny Q.",
+      "rating": 1,
+      "text": "If you want to be ignored and never get a call or an email, feel free to call Your Choice Lawn Care. Terrible customer service and probably even worse lawn care.",
+      "publishedAt": "2016-06-17T14:56:45.901Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBanQyQldBEAE!2m1!1s0x0:0xcbf3a9c5cff53163!3m1!1s2@1:CIHM0ogKEICAgICAjt2BWA%7C%7C?hl=en",
+      "language": "en"
+    }
+  ],
+  "ratingOnly": [
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUMyOUp6NDFnRRAB",
+      "reviewer": "Allen T.",
+      "rating": 5,
+      "publishedAt": "2022-04-14T00:29:00.765Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURxcDhfLXBnRRAB",
+      "reviewer": "Tia E.",
+      "rating": 5,
+      "publishedAt": "2021-07-17T15:17:31.963Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNnelpHUmNBEAE",
+      "reviewer": "Amy W.",
+      "rating": 5,
+      "publishedAt": "2016-08-19T04:55:32.475Z"
+    }
+  ]
+}
