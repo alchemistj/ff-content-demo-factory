@@ -1,0 +1,340 @@
+{
+  "version": "factory-research/v1",
+  "prospectId": "moore-heating-cooling",
+  "evidence": {
+    "prospectId": "moore-heating-cooling",
+    "business": {
+      "name": "Moore Heating & Cooling",
+      "trade": "HVAC contractor",
+      "serviceArea": "Lebanon, Missouri"
+    },
+    "nap": {
+      "name": "Moore Heating & Cooling",
+      "address": {
+        "street": "22 Glenridge St",
+        "city": "Lebanon",
+        "region": "MO",
+        "postalCode": "65536",
+        "country": "US"
+      },
+      "phone": "CONFIRMATION PLACEHOLDER — do not publish a call link",
+      "website": "https://www.google.com/maps/search/?api=1&query=Moore%20Heating%20%26%20Cooling%20Lebanon%20MO&query_place_id=ChIJP1KNzm45xYcRFL7_8I0jLR0"
+    },
+    "facts": [
+      {
+        "id": "fact-moore-identity",
+        "statement": "On 2026-09-30 the Google Places discovery listing titled Moore Heating & Cooling, placeId ChIJP1KNzm45xYcRFL7_8I0jLR0, category Air conditioning contractor, maps rank 1, reviewsCount 11, website field empty, query HVAC repair / Lebanon, Missouri. reviewsCount is a listing count. The normalized export did not keep address, phone, or review text.",
+        "status": "confirmed",
+        "sourceRefs": [
+          {
+            "kind": "business_identity",
+            "refId": "site-moore-discovery"
+          }
+        ],
+        "capturedAt": "2026-09-30"
+      },
+      {
+        "id": "fact-moore-address",
+        "statement": "Two fetched pages publish 22 Glenridge St, Lebanon, MO 65536 for Moore Heating & Cooling: the Exa place page and Merchant Circle. The writing task said 22 Glenridge Road. These fetched pages say St/Street, not Road. The discovery export did not preserve an address. No official website confirmed the street.",
+        "status": "confirmed",
+        "sourceRefs": [
+          {
+            "kind": "site_evidence",
+            "refId": "site-moore-exa"
+          },
+          {
+            "kind": "site_evidence",
+            "refId": "site-moore-merchant"
+          }
+        ],
+        "capturedAt": "2026-09-30"
+      },
+      {
+        "id": "fact-moore-phones",
+        "statement": "Fetched pages disagree on the phone. Exa shows +14176572342. Merchant Circle shows 417-344-0669 near the title and (417) 588-8822 in the about text. No number was selected. The NAP phone is a confirmation placeholder. Customer copy must not use a tel link.",
+        "status": "confirmed",
+        "sourceRefs": [
+          {
+            "kind": "site_evidence",
+            "refId": "site-moore-exa"
+          },
+          {
+            "kind": "site_evidence",
+            "refId": "site-moore-merchant"
+          }
+        ],
+        "capturedAt": "2026-09-30"
+      },
+      {
+        "id": "fact-moore-no-official-site",
+        "statement": "The discovery website field was empty. A fetch of http://www.moreheatingcooling.com on 2026-09-30 returned HTTP 502. That is not proof that no official site exists.",
+        "status": "confirmed",
+        "sourceRefs": [
+          {
+            "kind": "site_evidence",
+            "refId": "site-moore-moreheatingcooling"
+          }
+        ],
+        "capturedAt": "2026-09-30"
+      },
+      {
+        "id": "fact-moore-furnace-association",
+        "statement": "The approved second service is furnace repair. Directory category on the discovery listing is Air conditioning contractor. A separate hours directory (timetoopen) was not used as a service menu because its page mislabeled the country and invented commercial claims. Furnace association for the approved page rests on the human-approved job plus customers' heating comments, not on a fetched official service list.",
+        "status": "inference",
+        "sourceRefs": [
+          {
+            "kind": "business_identity",
+            "refId": "site-moore-discovery"
+          }
+        ],
+        "capturedAt": "2026-09-30"
+      },
+      {
+        "id": "fact-moore-reviews-completeness",
+        "statement": "Discovery listing count is 11. The Apify run was configured for at most 5 reviews per listing and no finalist enrichment. Review text was not in the normalized export, and the dataset could not be re-read without APIFY_API_TOKEN. The Exa place page fetched 2026-09-30 displayed 8 review texts, claimed 4.5 from 11 reviews, showed no reviewer names, and truncated 2 texts with an ellipsis. This inventory is that display, not a complete 11-review inventory and not the Apify sample.",
+        "status": "confirmed",
+        "sourceRefs": [
+          {
+            "kind": "site_evidence",
+            "refId": "site-moore-exa"
+          }
+        ],
+        "capturedAt": "2026-09-30"
+      },
+      {
+        "id": "fact-moore-dave-name",
+        "statement": "Displayed reviews address Dave, Dave Moore, and Mr.Moore. A search snippet called Dave Moore the owner, but that directory page was blocked by a bot wall and was not fetched. Owner title is not confirmed.",
+        "status": "inference",
+        "sourceRefs": [
+          {
+            "kind": "review",
+            "refId": "review-moore-2025-10-31"
+          }
+        ],
+        "capturedAt": "2026-09-30"
+      },
+      {
+        "id": "fact-moore-service-area",
+        "statement": "No official service-area list was found. One displayed review mentions rentals in Lebanon. The packet service area stays Lebanon, Missouri.",
+        "status": "confirmed",
+        "sourceRefs": [
+          {
+            "kind": "review",
+            "refId": "review-moore-2025-09-06"
+          }
+        ],
+        "capturedAt": "2026-09-30"
+      },
+      {
+        "id": "fact-moore-hours-unknown",
+        "statement": "No hours were confirmed from a fetched official page or a consistent directory page.",
+        "status": "confirmed",
+        "sourceRefs": [
+          {
+            "kind": "site_evidence",
+            "refId": "site-moore-merchant"
+          }
+        ],
+        "capturedAt": "2026-09-30"
+      }
+    ],
+    "siteEvidence": [
+      {
+        "id": "site-moore-discovery",
+        "url": "https://www.google.com/maps/search/?api=1&query=Moore%20Heating%20%26%20Cooling%20Lebanon%20MO&query_place_id=ChIJP1KNzm45xYcRFL7_8I0jLR0",
+        "pageType": "maps-listing-reference",
+        "observation": "Normalized discovery place. Rank 1, listing reviewsCount 11, category Air conditioning contractor, website empty. The NAP website field in this packet is this Maps search URL, not a confirmed company website.",
+        "capturedAt": "2026-09-30",
+        "source": "ff-2-demos scout/runs/2026-09-30/discovery.json at 5d9bd319fe52e7c5efa10a9c1dd8950746f7d930"
+      },
+      {
+        "id": "site-moore-exa",
+        "url": "https://exa.ai/library/place/kb345qddxgs",
+        "pageType": "place-page",
+        "observation": "Fetched 2026-09-30. Address 22 Glenridge St, Lebanon, MO 65536. Phone +14176572342. Rating line 4.5 out of 5 from 11 reviews. Eight review displays, two truncated, no reviewer names.",
+        "capturedAt": "2026-09-30",
+        "source": "writer fetch"
+      },
+      {
+        "id": "site-moore-merchant",
+        "url": "https://www.merchantcircle.com/moore-heating-cooling-lebanon-mo",
+        "pageType": "directory",
+        "observation": "Fetched 2026-09-30. Address 22 Glenridge St, Lebanon, Missouri 65536. Title area shows 417-344-0669. About text says they can be contacted at (417) 588-8822. Directory review module showed 0 reviews, which does not match the Maps listing count.",
+        "capturedAt": "2026-09-30",
+        "source": "writer fetch"
+      },
+      {
+        "id": "site-moore-moreheatingcooling",
+        "url": "http://www.moreheatingcooling.com/",
+        "pageType": "suspected-domain",
+        "observation": "MapQuest-style search snippets have associated this domain with a More/Moore spelling at the same street. Fetch on 2026-09-30 returned HTTP 502. Not treated as a working official site.",
+        "capturedAt": "2026-09-30",
+        "source": "writer fetch"
+      }
+    ],
+    "imageRefs": [],
+    "reviews": [
+      {
+        "id": "review-moore-2025-10-31",
+        "reviewer": "5 out of 5, 2025-10-31",
+        "exactText": "Dave Moore is a perfect example of someone who does his job and cares about giving you an honest experience! He has always got back to me and serviced me in a timely manner and is straight to the point! This is the type of guy we need to start giving our business to as a community! Not the big cooperations that just want commission off of you! So if you need some work done this is the man you need to contact.",
+        "rating": 5,
+        "date": "2025-10-31",
+        "classification": "positive",
+        "provenance": {
+          "sourceType": "public_place_page_display",
+          "sourceUrl": "https://exa.ai/library/place/kb345qddxgs",
+          "capturedAt": "2026-09-30",
+          "sourceLabel": "Exa place page for Moore Heating & Cooling, fetched 2026-09-30. Not the Apify discovery sample. Reviewer names were not shown. Two displays end in an ellipsis and are incomplete."
+        }
+      },
+      {
+        "id": "review-moore-2025-10-26",
+        "reviewer": "5 out of 5, 2025-10-26",
+        "exactText": "Dave came and looked at our system. My wife and I are brand new homeowners so we know nothing. He explained everything in very simple and easy to understand terms. And fixed what turned out to be a minor inconvenience in less than 5 minutes. Best service and company we have used for a new house by far.",
+        "rating": 5,
+        "date": "2025-10-26",
+        "classification": "positive",
+        "provenance": {
+          "sourceType": "public_place_page_display",
+          "sourceUrl": "https://exa.ai/library/place/kb345qddxgs",
+          "capturedAt": "2026-09-30",
+          "sourceLabel": "Exa place page for Moore Heating & Cooling, fetched 2026-09-30. Not the Apify discovery sample. Reviewer names were not shown. Two displays end in an ellipsis and are incomplete."
+        }
+      },
+      {
+        "id": "review-moore-2025-09-06",
+        "reviewer": "5 out of 5, 2025-09-06",
+        "exactText": "We've used Dave for 40 years and he's always given us exceptional service. We have multiple rentals in Lebanon and anytime we have an issue Dave always promptly takes care of it. His work has always been excellent and his prices, more than fair.",
+        "rating": 5,
+        "date": "2025-09-06",
+        "classification": "positive",
+        "provenance": {
+          "sourceType": "public_place_page_display",
+          "sourceUrl": "https://exa.ai/library/place/kb345qddxgs",
+          "capturedAt": "2026-09-30",
+          "sourceLabel": "Exa place page for Moore Heating & Cooling, fetched 2026-09-30. Not the Apify discovery sample. Reviewer names were not shown. Two displays end in an ellipsis and are incomplete."
+        }
+      },
+      {
+        "id": "review-moore-2025-09-05",
+        "reviewer": "5 out of 5, 2025-09-05",
+        "exactText": "My heat went out last year during the winter and I called Mr.Moore and he came out same day to take a look at it to see what was going on he was able to get it working for the time being since it was so cold but advised me that I needed a new unit because of all of the issues and it was 25+years old. Fast forward to the beginning of summer I gave him a call to let him know I was ready to go ahead with the new unit and he came out priced it for me and once I gave him the go ahead he ordered the unit. Once everything showed up he came out to the house and installed it! It took him no time at…",
+        "rating": 5,
+        "date": "2025-09-05",
+        "classification": "positive",
+        "provenance": {
+          "sourceType": "public_place_page_display",
+          "sourceUrl": "https://exa.ai/library/place/kb345qddxgs",
+          "capturedAt": "2026-09-30",
+          "sourceLabel": "Exa place page for Moore Heating & Cooling, fetched 2026-09-30. Not the Apify discovery sample. Reviewer names were not shown. Two displays end in an ellipsis and are incomplete."
+        }
+      },
+      {
+        "id": "review-moore-2025-09-04",
+        "reviewer": "5 out of 5, 2025-09-04",
+        "exactText": "Dave is the only guy I use for HVAC. He’s fast affordable and friendly and he always follows up on his work.",
+        "rating": 5,
+        "date": "2025-09-04",
+        "classification": "positive",
+        "provenance": {
+          "sourceType": "public_place_page_display",
+          "sourceUrl": "https://exa.ai/library/place/kb345qddxgs",
+          "capturedAt": "2026-09-30",
+          "sourceLabel": "Exa place page for Moore Heating & Cooling, fetched 2026-09-30. Not the Apify discovery sample. Reviewer names were not shown. Two displays end in an ellipsis and are incomplete."
+        }
+      },
+      {
+        "id": "review-moore-2025-07-29-thirty-years",
+        "reviewer": "5 out of 5, 2025-07-29",
+        "exactText": "Dave's been doing my work for the past 30 years. Has always been honest and fair priced imo.",
+        "rating": 5,
+        "date": "2025-07-29",
+        "classification": "positive",
+        "provenance": {
+          "sourceType": "public_place_page_display",
+          "sourceUrl": "https://exa.ai/library/place/kb345qddxgs",
+          "capturedAt": "2026-09-30",
+          "sourceLabel": "Exa place page for Moore Heating & Cooling, fetched 2026-09-30. Not the Apify discovery sample. Reviewer names were not shown. Two displays end in an ellipsis and are incomplete."
+        }
+      },
+      {
+        "id": "review-moore-2025-07-29-twenty-years",
+        "reviewer": "5 out of 5, 2025-07-29",
+        "exactText": "I have done business with this company on a personal and professional level for over 20 years, they have been my customers and I have been there and it has been a great relationship all the way around. They installed my entire system on my home and several systems on my commercial properties, they approach their work methodically, they are quick to respond and have great communication skills. They do not sugarcoat things and they will not cut corners to save a buck when they know it will cost you so much later. If you’re looking for a company to service or install your heating and air you…",
+        "rating": 5,
+        "date": "2025-07-29",
+        "classification": "positive",
+        "provenance": {
+          "sourceType": "public_place_page_display",
+          "sourceUrl": "https://exa.ai/library/place/kb345qddxgs",
+          "capturedAt": "2026-09-30",
+          "sourceLabel": "Exa place page for Moore Heating & Cooling, fetched 2026-09-30. Not the Apify discovery sample. Reviewer names were not shown. Two displays end in an ellipsis and are incomplete."
+        }
+      },
+      {
+        "id": "review-moore-2024-11-13",
+        "reviewer": "1 out of 5, 2024-11-13",
+        "exactText": "Lie about how much the up keep cost, say 100$ yearly for filters then say 700$ when comes time to change filters",
+        "rating": 1,
+        "date": "2024-11-13",
+        "classification": "negative",
+        "provenance": {
+          "sourceType": "public_place_page_display",
+          "sourceUrl": "https://exa.ai/library/place/kb345qddxgs",
+          "capturedAt": "2026-09-30",
+          "sourceLabel": "Exa place page for Moore Heating & Cooling, fetched 2026-09-30. Not the Apify discovery sample. Reviewer names were not shown. Two displays end in an ellipsis and are incomplete."
+        }
+      }
+    ]
+  },
+  "recommendations": {
+    "stage": "research",
+    "items": [
+      {
+        "id": "rec-moore-phone",
+        "kind": "observation",
+        "stance": "advisory",
+        "text": "You may consider leaving every phone number out of call links, because the fetched Exa and Merchant Circle pages do not publish the same number.",
+        "reason": "Choosing one number would invent a confirmed NAP phone.",
+        "sourceRefs": [
+          {
+            "kind": "site_evidence",
+            "refId": "site-moore-merchant"
+          }
+        ]
+      },
+      {
+        "id": "rec-moore-excerpt",
+        "kind": "review_use",
+        "stance": "advisory",
+        "text": "The winter no-heat display may support the furnace page as a contiguous excerpt, because the visible opening names a heat outage and a later replacement decision. It should not be turned into a same-day promise.",
+        "reason": "The Exa display continues past that opening and then cuts off with an ellipsis.",
+        "sourceRefs": [
+          {
+            "kind": "review",
+            "refId": "review-moore-2025-09-05"
+          }
+        ]
+      },
+      {
+        "id": "rec-moore-negative",
+        "kind": "review_use",
+        "stance": "advisory",
+        "text": "One useful direction could be to keep the filter-cost complaint in the owner-facing overview, because it is part of the displayed sample and the sales pages do not have to feature it.",
+        "reason": "Withholding it from the inventory would hide a source-backed review.",
+        "sourceRefs": [
+          {
+            "kind": "review",
+            "refId": "review-moore-2024-11-13"
+          }
+        ]
+      }
+    ]
+  },
+  "researcher": {
+    "provider": "cursor",
+    "model": "grok-4.7"
+  },
+  "completedAt": "2026-09-30"
+}

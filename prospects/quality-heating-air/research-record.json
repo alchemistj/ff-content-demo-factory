@@ -1,0 +1,283 @@
+{
+  "version": "factory-research/v1",
+  "prospectId": "quality-heating-air",
+  "evidence": {
+    "prospectId": "quality-heating-air",
+    "business": {
+      "name": "Quality Heating & Air",
+      "trade": "HVAC contractor",
+      "serviceArea": "Lebanon, Missouri"
+    },
+    "nap": {
+      "name": "Quality Heating & Air",
+      "address": {
+        "street": "22124 Highway 32",
+        "city": "Lebanon",
+        "region": "MO",
+        "postalCode": "65536",
+        "country": "US"
+      },
+      "phone": "(417) 532-6239",
+      "website": "https://www.qualityheatnow.com/"
+    },
+    "facts": [
+      {
+        "id": "fact-quality-identity",
+        "statement": "On 2026-09-30 the Google Places discovery listing titled Quality Heating & Air, placeId ChIJLedCd3c5xYcRGrsaYPLaEDU, category HVAC contractor, maps rank 5, reviewsCount 192, in the query HVAC repair / Lebanon, Missouri. reviewsCount is a listing count. The normalized discovery export did not keep address, phone, hours, or review text.",
+        "status": "confirmed",
+        "sourceRefs": [
+          {
+            "kind": "business_identity",
+            "refId": "site-quality-discovery"
+          }
+        ],
+        "capturedAt": "2026-09-30"
+      },
+      {
+        "id": "fact-quality-nap",
+        "statement": "The official homepage https://www.qualityheatnow.com/ publishes the name Quality Heating & Air, address 22124 Highway 32, Lebanon, Missouri 65536, United States, phone (417) 532-6239 with tel:4175326239, and email josh@qualityheatnow.com.",
+        "status": "confirmed",
+        "sourceRefs": [
+          {
+            "kind": "site_evidence",
+            "refId": "site-quality-home"
+          }
+        ],
+        "capturedAt": "2026-09-30"
+      },
+      {
+        "id": "fact-quality-hours",
+        "statement": "The official homepage publishes hours Monday–Friday 8am–4:30pm and Saturday–Sunday by appointment only.",
+        "status": "confirmed",
+        "sourceRefs": [
+          {
+            "kind": "site_evidence",
+            "refId": "site-quality-home"
+          }
+        ],
+        "capturedAt": "2026-09-30"
+      },
+      {
+        "id": "fact-quality-services",
+        "statement": "The official homepage says the company handles heating, cooling, and ventilation needs, including a routine maintenance check or an emergency repair on a heating or cooling unit, for residential and commercial clients, plus a consultation on system options. It does not publish a furnace-only specialty.",
+        "status": "confirmed",
+        "sourceRefs": [
+          {
+            "kind": "site_evidence",
+            "refId": "site-quality-home"
+          }
+        ],
+        "capturedAt": "2026-09-30"
+      },
+      {
+        "id": "fact-quality-jobber",
+        "statement": "The homepage label SCHEDULE SERVICE links to a Jobber client-hub public work request: https://clienthub.getjobber.com/client_hubs/f1dea92e-dc3b-4174-8e3f-545813006311/public/work_request/new?source=social_media. The link was not submitted.",
+        "status": "confirmed",
+        "sourceRefs": [
+          {
+            "kind": "site_evidence",
+            "refId": "site-quality-jobber"
+          }
+        ],
+        "capturedAt": "2026-09-30"
+      },
+      {
+        "id": "fact-quality-financing",
+        "statement": "The homepage labels APPLY FOR FINANCING and FINANCING link to https://apply.svcfin.com/home/dealerAuthentication?id=400512199&key=1742219857. The homepage does not publish rates, terms, or approval rules.",
+        "status": "confirmed",
+        "sourceRefs": [
+          {
+            "kind": "site_evidence",
+            "refId": "site-quality-financing"
+          }
+        ],
+        "capturedAt": "2026-09-30"
+      },
+      {
+        "id": "fact-quality-emergency-wording",
+        "statement": "The homepage has a heading Emergency Service Available and the sentence For emergency service, please contact us at your convenience. It does not publish a 24/7 schedule or a response-time promise.",
+        "status": "confirmed",
+        "sourceRefs": [
+          {
+            "kind": "site_evidence",
+            "refId": "site-quality-home"
+          }
+        ],
+        "capturedAt": "2026-09-30"
+      },
+      {
+        "id": "fact-quality-guarantee-wording",
+        "statement": "The homepage has a heading Customer Satisfaction Guaranteed. The paragraph under it does not define a warranty, refund, or labor-coverage term.",
+        "status": "confirmed",
+        "sourceRefs": [
+          {
+            "kind": "site_evidence",
+            "refId": "site-quality-home"
+          }
+        ],
+        "capturedAt": "2026-09-30"
+      },
+      {
+        "id": "fact-quality-lennox-listing",
+        "statement": "Lennox publishes a dealer-locator page for Quality Htg & Air / Quality Heating & Air at 22124 MO-32, Lebanon, Missouri 65536, telephone 417-532-6239, URL matching the official site. The page also contains generic Premier Dealer, factory-trained, and mini-split explanation. Those distinctions were not clear enough to treat as assigned credentials.",
+        "status": "confirmed",
+        "sourceRefs": [
+          {
+            "kind": "site_evidence",
+            "refId": "site-quality-lennox"
+          }
+        ],
+        "capturedAt": "2026-09-30"
+      },
+      {
+        "id": "fact-quality-amana-link",
+        "statement": "The homepage label AMANA PRODUCT links to https://www.amana-hac.com, the general Amana HVAC site, not a dealer-locator record for this shop.",
+        "status": "confirmed",
+        "sourceRefs": [
+          {
+            "kind": "site_evidence",
+            "refId": "site-quality-home"
+          }
+        ],
+        "capturedAt": "2026-09-30"
+      },
+      {
+        "id": "fact-quality-whatsapp",
+        "statement": "The homepage publishes a WhatsApp link https://wa.me/14172882968. That number, (417) 288-2968, is not the published shop phone (417) 532-6239.",
+        "status": "confirmed",
+        "sourceRefs": [
+          {
+            "kind": "site_evidence",
+            "refId": "site-quality-home"
+          }
+        ],
+        "capturedAt": "2026-09-30"
+      },
+      {
+        "id": "fact-quality-reviews-missing",
+        "statement": "The discovery listing count was 192 reviews. This writer could not re-read Apify dataset o3rGh1edmkftb6dNG because APIFY_API_TOKEN is not available on fluid-frame-dev-1. No paid Apify call was made. No Quality review text is in this packet. Third-party star counts were not copied into the inventory.",
+        "status": "confirmed",
+        "sourceRefs": [
+          {
+            "kind": "source_document",
+            "refId": "site-quality-discovery"
+          }
+        ],
+        "capturedAt": "2026-09-30"
+      },
+      {
+        "id": "fact-quality-service-area",
+        "statement": "A wider service-area list was not published on the homepage captured on 2026-09-30. The confirmed place is Lebanon, Missouri, at the Highway 32 address.",
+        "status": "confirmed",
+        "sourceRefs": [
+          {
+            "kind": "site_evidence",
+            "refId": "site-quality-home"
+          }
+        ],
+        "capturedAt": "2026-09-30"
+      }
+    ],
+    "siteEvidence": [
+      {
+        "id": "site-quality-discovery",
+        "url": "https://www.google.com/maps/search/?api=1&query=Quality%20Heating%20%26%20Air%20Lebanon%20MO&query_place_id=ChIJLedCd3c5xYcRGrsaYPLaEDU",
+        "pageType": "maps-listing-reference",
+        "observation": "Normalized discovery place for Quality Heating & Air. Listing count 192, rank 5, category HVAC contractor, website field present with GBP utm parameters. Review text, street address, and phone were not in the normalized export.",
+        "capturedAt": "2026-09-30",
+        "source": "ff-2-demos scout/runs/2026-09-30/discovery.json at 5d9bd319fe52e7c5efa10a9c1dd8950746f7d930"
+      },
+      {
+        "id": "site-quality-home",
+        "url": "https://www.qualityheatnow.com/",
+        "pageType": "official-homepage",
+        "observation": "Fetched 2026-09-30. Title Quality Heating & Air - Air Conditioning, Heating. Visible sections cover heating, cooling, ventilation, maintenance, emergency contact wording, residential and commercial clients, consultation, NAP, hours, Jobber schedule link, financing application link, Lennox repair-versus-replace article, Amana product homepage, and a WhatsApp link.",
+        "capturedAt": "2026-09-30",
+        "source": "writer fetch of the official site"
+      },
+      {
+        "id": "site-quality-jobber",
+        "url": "https://clienthub.getjobber.com/client_hubs/f1dea92e-dc3b-4174-8e3f-545813006311/public/work_request/new?source=social_media",
+        "pageType": "scheduling-link",
+        "observation": "Destination of the homepage SCHEDULE SERVICE control. Public Jobber work request. Not submitted during this writing task.",
+        "capturedAt": "2026-09-30",
+        "source": "href on https://www.qualityheatnow.com/"
+      },
+      {
+        "id": "site-quality-financing",
+        "url": "https://apply.svcfin.com/home/dealerAuthentication?id=400512199&key=1742219857",
+        "pageType": "financing-link",
+        "observation": "Destination of APPLY FOR FINANCING and FINANCING on the homepage. Terms were not published on the homepage.",
+        "capturedAt": "2026-09-30",
+        "source": "href on https://www.qualityheatnow.com/"
+      },
+      {
+        "id": "site-quality-lennox",
+        "url": "https://www.lennox.com/residential/locate/dealer/mo/lebanon/quality-htg-and-air",
+        "pageType": "manufacturer-dealer-locator",
+        "observation": "Fetched 2026-09-30. Lennox dealer locator page naming Quality Heating & Air at 22124 MO-32 with telephone 417-532-6239. JSON-LD opening hours of 00:00–23:59 were treated as template noise, not shop hours. Premier Dealer copy was not used as a confirmed badge.",
+        "capturedAt": "2026-09-30",
+        "source": "writer fetch"
+      }
+    ],
+    "imageRefs": [
+      {
+        "id": "image-quality-homepage",
+        "url": "https://img1.wsimg.com/isteam/ip/17084e12-1e72-4f40-8982-74ad4a92d0a9/IMG_7715.jpeg",
+        "altText": "Quality Heating & Air",
+        "source": "og:image and img alt on https://www.qualityheatnow.com/ fetched 2026-09-30",
+        "evidenceUse": "Homepage image reference only. Do not infer credentials, trucks, or completed jobs from the filename."
+      }
+    ],
+    "reviews": []
+  },
+  "recommendations": {
+    "stage": "research",
+    "items": [
+      {
+        "id": "rec-quality-separate-jobs",
+        "kind": "emphasis",
+        "stance": "advisory",
+        "text": "You may consider keeping AC repair and heating repair as different customer decisions, because the shop site names both heating and cooling units and does not publish a furnace-only menu.",
+        "reason": "The homepage text treats heating and cooling as parallel unit work.",
+        "sourceRefs": [
+          {
+            "kind": "site_evidence",
+            "refId": "site-quality-home"
+          }
+        ]
+      },
+      {
+        "id": "rec-quality-jobber",
+        "kind": "observation",
+        "stance": "advisory",
+        "text": "The published Jobber work-request link may support the contact path, because the homepage Schedule service control points at it.",
+        "reason": "The href was present on the fetched homepage. Submitting it was out of scope.",
+        "sourceRefs": [
+          {
+            "kind": "site_evidence",
+            "refId": "site-quality-jobber"
+          }
+        ]
+      },
+      {
+        "id": "rec-quality-lennox",
+        "kind": "differentiator",
+        "stance": "advisory",
+        "text": "One useful direction could be to mention the Lennox dealer-locator listing without Premier Dealer language, because the page matches the shop NAP and also carries generic Premier explanation.",
+        "reason": "A credential the page does not clearly assign should stay out of customer claims.",
+        "sourceRefs": [
+          {
+            "kind": "site_evidence",
+            "refId": "site-quality-lennox"
+          }
+        ]
+      }
+    ]
+  },
+  "researcher": {
+    "provider": "cursor",
+    "model": "grok-4.7"
+  },
+  "completedAt": "2026-09-30"
+}
