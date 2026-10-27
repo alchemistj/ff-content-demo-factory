@@ -1,0 +1,336 @@
+{
+  "kind": "google-review-pull",
+  "version": 1,
+  "slug": "ashs-barber-collective",
+  "place": {
+    "name": "Ash's Barber Collective",
+    "placeId": "ChIJ8bZtIFBxz4cR5BpeENYruuQ",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Ash's%20Barber%20Collective&query_place_id=ChIJ8bZtIFBxz4cR5BpeENYruuQ",
+    "address": "5104 N 22nd St, Ozark, MO 65721",
+    "phone": "(417) 380-3078",
+    "rating": 4.9,
+    "totalReviewCount": 34
+  },
+  "pulledAt": "2026-10-27T19:21:55.183Z",
+  "requestedMax": 75,
+  "reviews": [
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xabVYxaGlaMjVoVkdsM2RUTmZWVEpUT1hsa1MzYxAB",
+      "reviewer": "Levi B.",
+      "rating": 5,
+      "text": "Ashley is the only person I've found in the area that cuts my hair just the way I like it every time!",
+      "publishedAt": "2026-04-21T17:04:46.924Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xabVYxaGlaMjVoVkdsM2RUTmZWVEpUT1hsa1MzYxAB!2m1!1s0x0:0xe4ba2bd6105e1ae4!3m1!1s2@1:CAIQACodChtycF9oOlZmV1hiZ25hVGl3dTNfVTJTOXlkS3c%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT210NFFtVmpiWHBOWlZGaGFVcHdTREJQUmpWa1pHYxAB",
+      "reviewer": "D T.",
+      "rating": 5,
+      "text": "Thank you Ashley, you’ve done it again! First my sons hair, which boosted his self esteem, then me where you listened and cut my hair just how I’d visioned ( I’ve had lots of complements) and now my Mom! She just loves her hair and I absolutely love it too! My mom can be quite picky and she left smiling and is over the moon with the cut.  We will all be back for our trims soon!  You’re awesome!",
+      "publishedAt": "2026-04-11T15:05:38.250Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT210NFFtVmpiWHBOWlZGaGFVcHdTREJQUmpWa1pHYxAB!2m1!1s0x0:0xe4ba2bd6105e1ae4!3m1!1s2@1:CAIQACodChtycF9oOmt4QmVjbXpNZVFhaUpwSDBPRjVkZGc%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pkbmQyczViazVpYTNWa1lUQkViSGxuVmtSTFQxRRAB",
+      "reviewer": "Josie M.",
+      "rating": 5,
+      "text": "My son is 5 and Ash did such a good job on his hair ❤️ He’s got multiple cowlicks. She did his hard-part expertly and blended everything beautifully. Very thorough, with awesome attention to detail.",
+      "publishedAt": "2026-04-02T22:54:55.632Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pkbmQyczViazVpYTNWa1lUQkViSGxuVmtSTFQxRRAB!2m1!1s0x0:0xe4ba2bd6105e1ae4!3m1!1s2@1:CAIQACodChtycF9oOjdnd2s5bk5ia3VkYTBEbHlnVkRLT1E%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xBNFJVTjRkRzlHV1Vwa1ZIcG9hSFJSTjNGR01tYxAB",
+      "reviewer": "Chris O.",
+      "rating": 1,
+      "text": "worst cut I've ever had",
+      "publishedAt": "2026-03-24T21:41:18.444Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xBNFJVTjRkRzlHV1Vwa1ZIcG9hSFJSTjNGR01tYxAB!2m1!1s0x0:0xe4ba2bd6105e1ae4!3m1!1s2@1:CAIQACodChtycF9oOlA4RUN4dG9GWUpkVHpoaHRRN3FGMmc%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xaYVJqaHVNRTFDU1dWWGJUQkNSSE5JWlhONVFYYxAB",
+      "reviewer": "Austin C.",
+      "rating": 5,
+      "text": "Best haircut I’ve gotten, the fade she does is crazy good, I will definitely be going back",
+      "publishedAt": "2026-01-21T02:14:55.684Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xaYVJqaHVNRTFDU1dWWGJUQkNSSE5JWlhONVFYYxAB!2m1!1s0x0:0xe4ba2bd6105e1ae4!3m1!1s2@1:CAIQACodChtycF9oOlZaRjhuME1CSWVXbTBCRHNIZXN5QXc%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21KTFdWZHFkQzFUZVdOVE1HVlJiakpNWkV0M1JXYxAB",
+      "reviewer": "Gordon W.",
+      "rating": 5,
+      "text": "Just moved to this Ozark Community from Kansas.  Needed a barber to take care of my hair needs...Can't say enough about Ash, fantastic barber and great for conversation.\n⭐️⭐️⭐️⭐️⭐️🌟",
+      "publishedAt": "2026-01-15T01:47:21.287Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21KTFdWZHFkQzFUZVdOVE1HVlJiakpNWkV0M1JXYxAB!2m1!1s0x0:0xe4ba2bd6105e1ae4!3m1!1s2@1:CAIQACodChtycF9oOmJLWVdqdC1TeWNTMGVRbjJMZEt3RWc%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2t0TE5ETkpiVmRUZGpKZlgxZGlXamRTVWkxTkxYYxAB",
+      "reviewer": "Sabrina L.",
+      "rating": 5,
+      "text": "Ashley always does such a good job! I just give her an idea of what I’m wanting for my kids and she always blows it out of the park! The kids finally look forward to haircuts because they are getting what they want, not just a quick cut. She’s very detailed with every cut!",
+      "publishedAt": "2026-01-05T20:31:52.876Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2t0TE5ETkpiVmRUZGpKZlgxZGlXamRTVWkxTkxYYxAB!2m1!1s0x0:0xe4ba2bd6105e1ae4!3m1!1s2@1:CAIQACodChtycF9oOktLNDNJbVdTdjJfX1diWjdSUi1NLXc%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21Vd1Myc3RURlZSTjFKeGRuaGxTVTlMUWtOcWFsRRAB",
+      "reviewer": "Westwood G.",
+      "rating": 5,
+      "text": "Great",
+      "publishedAt": "2025-12-24T00:10:21.782Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21Vd1Myc3RURlZSTjFKeGRuaGxTVTlMUWtOcWFsRRAB!2m1!1s0x0:0xe4ba2bd6105e1ae4!3m1!1s2@1:CAIQACodChtycF9oOmUwS2stTFVRN1JxdnhlSU9LQkNqalE%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xWVFFWVkNRa3AwYjNreWJFc3RhazlZVFhwSFkyYxAB",
+      "reviewer": "Ozark S.",
+      "rating": 5,
+      "text": "Amazing cut, great service",
+      "publishedAt": "2025-12-21T21:50:32.091Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xWVFFWVkNRa3AwYjNreWJFc3RhazlZVFhwSFkyYxAB!2m1!1s0x0:0xe4ba2bd6105e1ae4!3m1!1s2@1:CAIQACodChtycF9oOlVTQVVCQkp0b3kybEstak9YTXpHY2c%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21SVlMydE9TMnhzYVUxSFdYb3RNV3RET0hSeGFuYxAB",
+      "reviewer": "Takota S.",
+      "rating": 5,
+      "text": "The place has a lovely environment and is relaxing",
+      "publishedAt": "2025-12-20T21:18:55.654Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21SVlMydE9TMnhzYVUxSFdYb3RNV3RET0hSeGFuYxAB!2m1!1s0x0:0xe4ba2bd6105e1ae4!3m1!1s2@1:CAIQACodChtycF9oOmRVS2tOS2xsaU1HWXotMWtDOHRxanc%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pFeFRIRkVTMUZxVWtoclNpMXphRXBDUzNnMlJrRRAB",
+      "reviewer": "Riley H.",
+      "rating": 5,
+      "text": "Ashley did a phenomenal job giving me a short haircut with curtain bangs and highlights! She did exactly what i wanted!",
+      "publishedAt": "2025-12-20T19:03:09.849Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pFeFRIRkVTMUZxVWtoclNpMXphRXBDUzNnMlJrRRAB!2m1!1s0x0:0xe4ba2bd6105e1ae4!3m1!1s2@1:CAIQACodChtycF9oOjExTHFES1FqUkhrSi1zaEpCS3g2RkE%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21aRWVuTTFkV0Z3UXpWSk5tTlVkM00zYkZsbVlWRRAB",
+      "reviewer": "Brady R.",
+      "rating": 5,
+      "text": "Absolutely love going to visit Ash she does an amazing job with my hair and is extremely quick with it always good conversation! She’s got all sorts of gear to do exactly what you need done I would recommend her to anyone you will not be disappointed!",
+      "publishedAt": "2025-12-20T17:35:52.815Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21aRWVuTTFkV0Z3UXpWSk5tTlVkM00zYkZsbVlWRRAB!2m1!1s0x0:0xe4ba2bd6105e1ae4!3m1!1s2@1:CAIQACodChtycF9oOmZEenM1dWFwQzVJNmNUd3M3bFlmYVE%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25NdGIxTXpNWGt0TlMwMGJreGxaV2xYU0hSaGMxRRAB",
+      "reviewer": "Brandy C.",
+      "rating": 5,
+      "text": "Excellent customer service. She did a great job on my son’s hair. Very engaged with him during his appointment.",
+      "publishedAt": "2025-12-20T17:33:41.855Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25NdGIxTXpNWGt0TlMwMGJreGxaV2xYU0hSaGMxRRAB!2m1!1s0x0:0xe4ba2bd6105e1ae4!3m1!1s2@1:CAIQACodChtycF9oOnMtb1MzMXktNS00bkxlZWlXSHRhc1E%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25GWlJIbE5TMmhvWlcxbWVGbERjbUpEYlV4aWRuYxAB",
+      "reviewer": "ItsJust B.",
+      "rating": 5,
+      "text": "She always cuts it exactly how you want and makes sure your comfortable and supplies you with everything you need",
+      "publishedAt": "2025-12-20T17:25:53.313Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25GWlJIbE5TMmhvWlcxbWVGbERjbUpEYlV4aWRuYxAB!2m1!1s0x0:0xe4ba2bd6105e1ae4!3m1!1s2@1:CAIQACodChtycF9oOnFZRHlNS2hoZW1meFlDcmJDbUxidnc%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21Wa04xaFpkV3hSYUZRME1VWnlTRUo2TWpoVlZVRRAB",
+      "reviewer": "Matt M.",
+      "rating": 5,
+      "text": "Ashley has been cutting my hair for a few years now and has always been a delight to work with. Easy to contact and schedule and love the conversations!",
+      "publishedAt": "2025-11-06T13:13:51.810Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21Wa04xaFpkV3hSYUZRME1VWnlTRUo2TWpoVlZVRRAB!2m1!1s0x0:0xe4ba2bd6105e1ae4!3m1!1s2@1:CAIQACodChtycF9oOmVkN1hZdWxRaFQ0MUZySEJ6MjhVVUE%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT20xdlNXWkJUMUJWU0RabWVYcDFUV3RHUWs5NVJsRRAB",
+      "reviewer": "Tara R.",
+      "rating": 5,
+      "text": "PHENOMENAL AMAZING LOVELY",
+      "publishedAt": "2025-11-05T00:57:46.561Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT20xdlNXWkJUMUJWU0RabWVYcDFUV3RHUWs5NVJsRRAB!2m1!1s0x0:0xe4ba2bd6105e1ae4!3m1!1s2@1:CAIQACodChtycF9oOm1vSWZBT1BVSDZmeXp1TWtGQk95RlE%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xSamFWSm1aRXd4YzJkQmMwUTJabFE0U1ROeFIyYxAB",
+      "reviewer": "Steven G.",
+      "rating": 5,
+      "text": "She is an amazing barber! Her personality and attitude is great!! I have been using her for a few years and love the haircuts!!",
+      "publishedAt": "2025-10-23T20:52:28.236Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xSamFWSm1aRXd4YzJkQmMwUTJabFE0U1ROeFIyYxAB!2m1!1s0x0:0xe4ba2bd6105e1ae4!3m1!1s2@1:CAIQACodChtycF9oOlRjaVJmZEwxc2dBc0Q2ZlQ4STNxR2c%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21OQmQzWnpNVFEzTTBWQlgyWkhlRnAzT1RoaU1WRRAB",
+      "reviewer": "Kevin D.",
+      "rating": 5,
+      "text": "Ashley is the only person I trust with my hair.  She’s does great work, she’s very personable, and has always been flexible with working around my schedule!  10/10",
+      "publishedAt": "2025-10-23T19:53:14.408Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21OQmQzWnpNVFEzTTBWQlgyWkhlRnAzT1RoaU1WRRAB!2m1!1s0x0:0xe4ba2bd6105e1ae4!3m1!1s2@1:CAIQACodChtycF9oOmNBd3ZzMTQ3M0VBX2ZHeFp3OThiMVE%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xCZlgxUTVVWGxGVlhSUFJIRmFVRFI1UkdNelMyYxAB",
+      "reviewer": "Derek B.",
+      "rating": 5,
+      "text": "Very professional and clean! Highly recommend",
+      "publishedAt": "2025-10-17T01:22:47.457Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xCZlgxUTVVWGxGVlhSUFJIRmFVRFI1UkdNelMyYxAB!2m1!1s0x0:0xe4ba2bd6105e1ae4!3m1!1s2@1:CAIQACodChtycF9oOlBfX1Q5UXlFVXRPRHFaUDR5RGMzS2c%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xFMGVtZHJMWEo2YWxoemFsbDJZMFJ0YkMxblJXYxAB",
+      "reviewer": "Miles B.",
+      "rating": 5,
+      "text": "Wonderful experience definitely would recommend to get your hair cut here",
+      "publishedAt": "2025-10-17T00:09:23.228Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xFMGVtZHJMWEo2YWxoemFsbDJZMFJ0YkMxblJXYxAB!2m1!1s0x0:0xe4ba2bd6105e1ae4!3m1!1s2@1:CAIQACodChtycF9oOlE0emdrLXJ6alhzall2Y0RtbC1nRWc%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pJMWVtMVpORGRXY0hSRFJrRmpWV3cxYlcxUGRXYxAB",
+      "reviewer": "Greg N.",
+      "rating": 5,
+      "text": "Ashley is always friendly and precise",
+      "publishedAt": "2025-10-15T16:06:14.056Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pJMWVtMVpORGRXY0hSRFJrRmpWV3cxYlcxUGRXYxAB!2m1!1s0x0:0xe4ba2bd6105e1ae4!3m1!1s2@1:CAIQACodChtycF9oOjI1em1ZNDdWcHRDRkFjVWw1bW1PdWc%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21WTFdIUTBPSGRNVWkxclNFTTBaa1ExUVhOcVZWRRAB",
+      "reviewer": "Zach P.",
+      "rating": 5,
+      "text": "Ashley did a wonderful job on my hair cut, looked exactly how I wanted it to be. I like to start it super short at the bottom and fade it longer up to the top so I don’t look like the kids with mops on their head nowadays. She knew exactly what I was going for and exceeded expectations. Shes a super cool person to have a conversation with too so it’s not boring.",
+      "publishedAt": "2025-10-11T02:39:46.060Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21WTFdIUTBPSGRNVWkxclNFTTBaa1ExUVhOcVZWRRAB!2m1!1s0x0:0xe4ba2bd6105e1ae4!3m1!1s2@1:CAIQACodChtycF9oOmVLWHQ0OHdMUi1rSEM0ZkQ1QXNqVVE%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25kcWNtdFdkeTF3ZEdwMWVuQjFkM1kwWVZoaFNIYxAB",
+      "reviewer": "Mark B.",
+      "rating": 5,
+      "text": "I always enjoy getting my hair cut here! Ashley’s the best—quick, friendly, and does a great job every time. I bring my toddlers here too, and she’s amazing with them. Highly recommend!",
+      "publishedAt": "2025-10-10T17:10:29.913Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25kcWNtdFdkeTF3ZEdwMWVuQjFkM1kwWVZoaFNIYxAB!2m1!1s0x0:0xe4ba2bd6105e1ae4!3m1!1s2@1:CAIQACodChtycF9oOndqcmtWdy1wdGp1enB1d3Y0YVhhSHc%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21ZMWEwcEhTbEJvVW5KRldrSkZhM1ZoTkdKWlpYYxAB",
+      "reviewer": "Michael D.",
+      "rating": 5,
+      "text": "Fantastic haircut great attention to detail very accommodating",
+      "publishedAt": "2025-10-10T16:49:12.654Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21ZMWEwcEhTbEJvVW5KRldrSkZhM1ZoTkdKWlpYYxAB!2m1!1s0x0:0xe4ba2bd6105e1ae4!3m1!1s2@1:CAIQACodChtycF9oOmY1a0pHSlBoUnJFWkJFa3VhNGJZZXc%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tkVVEwcG5iRzlVU0VWalVURmlSRzlpWXpKMlIxRRAB",
+      "reviewer": "Scott W.",
+      "rating": 5,
+      "text": "Ashley always does an amazing job. Would recommend for anyone looking for a hair cut and/or a beard trim.",
+      "publishedAt": "2025-10-10T16:44:06.192Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tkVVEwcG5iRzlVU0VWalVURmlSRzlpWXpKMlIxRRAB!2m1!1s0x0:0xe4ba2bd6105e1ae4!3m1!1s2@1:CAIQACodChtycF9oOkdUQ0pnbG9USEVjUTFiRG9iYzJ2R1E%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25SWWRrNXRaMWt6V25Cek9WbDBabDlxVUROM05WRRAB",
+      "reviewer": "Abby S.",
+      "rating": 5,
+      "text": "Ash does my hair when I come to visit and I love it every time! Shes the first hair dresser that has been able to cut my wolf cut the way I want it and it looks great!",
+      "publishedAt": "2025-10-10T16:37:50.388Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25SWWRrNXRaMWt6V25Cek9WbDBabDlxVUROM05WRRAB!2m1!1s0x0:0xe4ba2bd6105e1ae4!3m1!1s2@1:CAIQACodChtycF9oOnRYdk5tZ1kzWnBzOVl0Zl9qUDN3NVE%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25vMGJGaFBNSGxyVUhkRU5ERkxibUZ3ZW14b2IxRRAB",
+      "reviewer": "Chris V.",
+      "rating": 5,
+      "text": "Ashley did a fantastic job, straight line cut and fade is on point she was quick and did a good job.",
+      "publishedAt": "2025-10-10T16:28:45.803Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25vMGJGaFBNSGxyVUhkRU5ERkxibUZ3ZW14b2IxRRAB!2m1!1s0x0:0xe4ba2bd6105e1ae4!3m1!1s2@1:CAIQACodChtycF9oOno0bFhPMHlrUHdENDFLbmFwemxob1E%7C%7C?hl=en",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2s1dmQyTlZhbkpMVVdaaFR6VTJTVGhFYTBsVVYxRRAB",
+      "reviewer": "Keaton W.",
+      "rating": 5,
+      "text": "Ashley is so funny and sweet. 10/10 barber!",
+      "publishedAt": "2025-10-10T16:12:22.300Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2s1dmQyTlZhbkpMVVdaaFR6VTJTVGhFYTBsVVYxRRAB!2m1!1s0x0:0xe4ba2bd6105e1ae4!3m1!1s2@1:CAIQACodChtycF9oOk5vd2NVanJLUWZhTzU2SThEa0lUV1E%7C%7C?hl=en",
+      "language": "en"
+    }
+  ],
+  "ratingOnly": [
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21SV1dHUjNiRFl4Wmw4MlZVdHJkMFF0YzNSQ1ZuYxAB",
+      "reviewer": "Brent M.",
+      "rating": 5,
+      "publishedAt": "2026-01-10T04:22:39.498Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pGcU9FczJNR3hSY0hac2IxSlhTWGROV0MweE4zYxAB",
+      "reviewer": "Don D.",
+      "rating": 5,
+      "publishedAt": "2026-01-06T20:10:00.392Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21oTVZESnZNVzlIVVhobU1GRkNkbEpuZFc5dlZtYxAB",
+      "reviewer": "Kyle G.",
+      "rating": 5,
+      "publishedAt": "2025-12-24T00:10:55.879Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25Sd05GUk9XRjlSYzBNNVkwTmphbm8zV2tsRVRIYxAB",
+      "reviewer": "Luis T.",
+      "rating": 5,
+      "publishedAt": "2025-12-20T18:05:46.563Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2poTWVtVktOa2xQVGxWUmNVUjRWRVpNVkZKRGFWRRAB",
+      "reviewer": "Asa V.",
+      "rating": 5,
+      "publishedAt": "2025-10-23T21:50:19.566Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xRNGFWSmhjSFp2ZWxweFNIUlNTbEUzVEV4bWIzYxAB",
+      "reviewer": "Wyatt",
+      "rating": 5,
+      "publishedAt": "2025-10-10T16:21:24.024Z"
+    }
+  ]
+}
