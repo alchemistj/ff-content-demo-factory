@@ -51,6 +51,18 @@
       "pulledAt": "2026-10-25T02:02:46.849Z"
     },
     {
+      "slug": "incend-media",
+      "name": "Incend Media",
+      "placeId": "ChIJz51S3_1iz4cR-tQKImIvtX0",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 6,
+        "withText": 6,
+        "ratingOnly": 0
+      },
+      "pulledAt": "2026-11-01T20:54:22.378Z"
+    },
+    {
       "slug": "jons-plumbing",
       "name": "Jon's Plumbing, LLC",
       "placeId": "ChIJVVXxT51kz4cRt_W0muFXJbQ",
