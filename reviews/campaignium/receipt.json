@@ -1,0 +1,27 @@
+{
+  "kind": "google-review-pull-receipt",
+  "status": "ok",
+  "slug": "campaignium",
+  "request": {
+    "mapsUrl": "place_id:ChIJo1bxmQFjz4cRBoRVTlu7FZc",
+    "maxReviews": 75,
+    "expectedPhone": "4174134899"
+  },
+  "trigger": "workflow_dispatch",
+  "apify": {
+    "actor": "compass~crawler-google-places",
+    "runId": "u0iL3C2zngCI2YrlT",
+    "datasetId": "TqyuV6qMzgShZ479I",
+    "attempts": 1,
+    "usageUsd": 0.0422
+  },
+  "counts": {
+    "listingTotal": 72,
+    "withText": 67,
+    "ratingOnly": 5
+  },
+  "detail": null,
+  "startedAt": "2026-11-01T20:53:56.060Z",
+  "finishedAt": "2026-11-01T20:54:26.900Z",
+  "githubRunUrl": "https://github.com/alchemistj/ff-content-demo-factory/actions/runs/41349176585"
+}
