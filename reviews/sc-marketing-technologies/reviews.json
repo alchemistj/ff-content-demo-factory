@@ -1,0 +1,468 @@
+{
+  "kind": "google-review-pull",
+  "version": 1,
+  "slug": "sc-marketing-technologies",
+  "place": {
+    "name": "SC Marketing Technologies LLC",
+    "placeId": "ChIJiWeNBQxcq6oRDHLT3Zz3mkY",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=SC%20Marketing%20Technologies%20LLC&query_place_id=ChIJiWeNBQxcq6oRDHLT3Zz3mkY",
+    "address": "1740 S Glenstone Ave Unit M, Springfield, MO 65804",
+    "phone": "(417) 597-3867",
+    "rating": 5,
+    "totalReviewCount": 46
+  },
+  "pulledAt": "2026-11-01T20:54:30.979Z",
+  "requestedMax": 75,
+  "reviews": [
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xORFJFNTFSVEZVZVUxSVIyZGpTVkZVZVhKbmIzYxAB",
+      "reviewer": "todd T.",
+      "rating": 5,
+      "text": "Sarah and her team are the epitome of professionalism and knowledge.  There is a reason they are the number one rated SEO firm in the area.  Do your business a favor and call Sarah now!!!",
+      "publishedAt": "2026-10-29T19:29:38.575Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xORFJFNTFSVEZVZVUxSVIyZGpTVkZVZVhKbmIzYxAB!2m1!1s0x0:0x469af79cddd3720c!3m1!1s2@1:CAIQACodChtycF9oOlNDRE51RTFUeU1IR2djSVFUeXJnb3c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xCWmQwbGhNSE53YjJ4M09HMDNORzFTT0c5M01WRRAB",
+      "reviewer": "Volt U.",
+      "rating": 5,
+      "text": "We partnered with Sarah-Cortney Chin and SC Marketing Technologies in May 2026 to strengthen Volt Credit Union’s SEO and online visibility in Springfield, MO, and the results have been incredible.<br><br>In just a few months, we saw a 39% increase in organic clicks, stronger Google Business Profile visibility and major improvements across important local search terms. Most notably, Volt now ranks #1 on Google for “Credit Union Springfield, MO,” along with several other high-value searches related to checking accounts, HELOCs and auto loans.<br><br>What truly sets Sarah apart is that she doesn’t take a cookie-cutter approach to SEO. She takes the time to understand our goals, builds a data-driven strategy around them and explains everything in a way that is easy to understand. She is proactive, responsive, transparent and genuinely invested in our success. She truly feels like an extension of our marketing team.<br><br>If you’re looking for an SEO and digital marketing partner who understands local search, Google rankings, analytics and long-term organic growth, I highly recommend Sarah and SC Marketing Technologies. The measurable results speak for themselves, and we’re excited to continue growing with her!",
+      "publishedAt": "2026-09-30T19:50:12.111Z",
+      "ownerResponse": "Thank you so much for this thoughtful review! It has been a pleasure working alongside the Volt team and seeing the progress we've made in local search visibility. I especially appreciate you recognizing the strategy and communication behind the work. We're grateful to be part of your marketing efforts and excited to keep building on that momentum!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xCWmQwbGhNSE53YjJ4M09HMDNORzFTT0c5M01WRRAB!2m1!1s0x0:0x469af79cddd3720c!3m1!1s2@1:CAIQACodChtycF9oOlBZd0lhMHNwb2x3OG03NG1SOG93MVE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xsSlRHWk1TRUZrZWxkUGRqaFVXbWw2UTNKblNtYxAB",
+      "reviewer": "Megan S.",
+      "rating": 5,
+      "text": "Sarah was referred to me by another SEO company.  It’s clear that her competitors recognize and appreciate her competence and professionalism. She helped me code my website so my customers could find it easily and quickly on a Google search. One day I had trouble with my Google page and for free she helped me problem solve what was wrong. She clearly cares about her clients success. Highly recommend!",
+      "publishedAt": "2026-07-25T16:25:32.269Z",
+      "ownerResponse": "Thank you, Megan! I really appreciate you taking the time to share this. I'm so glad I could help with your website and get things sorted out with your Google profile. It means a lot that you trusted me with your business, and I'm always happy to help when I can!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xsSlRHWk1TRUZrZWxkUGRqaFVXbWw2UTNKblNtYxAB!2m1!1s0x0:0x469af79cddd3720c!3m1!1s2@1:CAIQACodChtycF9oOllJTGZMSEFkeldPdjhUWml6Q3JnSmc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xkeE5EUjFhM0pMTW1VNGNuVmFSRGRNV0ZGUE4zYxAB",
+      "reviewer": "Kalli P.",
+      "rating": 5,
+      "text": "SC Marketing Technologies is fantastic! I set up an initial call with ideas in mind for what I wanted for my business. Sarah took her time explaining what would actually benefit my business & even told me steps to get set up on my own. I was so appreciative of her knowledge and her kindness! 10/10 recommend!",
+      "publishedAt": "2026-05-03T23:49:14.328Z",
+      "ownerResponse": "Hi Kalli! Thank you so much for your kind words! I'm glad I could help you make the best decisions for your marketing needs!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xkeE5EUjFhM0pMTW1VNGNuVmFSRGRNV0ZGUE4zYxAB!2m1!1s0x0:0x469af79cddd3720c!3m1!1s2@1:CAIQACodChtycF9oOldxNDR1a3JLMmU4cnVaRDdMWFFPN3c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2s1UWFrcEhSbk5rUWpkclpYWkRhblZHTW0xQlkwRRAB",
+      "reviewer": "Lana P.",
+      "rating": 5,
+      "text": "Just in the first 30 mins I spent talking to SC marketing, I learned so much! I felt like they took their time with me and were very knowledgeable. They also seem to be several steps above their competitors when it comes to coding and content building.",
+      "publishedAt": "2026-05-02T19:46:51.240Z",
+      "ownerResponse": "Thank you so much Lana! We love to hear this. We are always here to help with all your internet marketing needs.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2s1UWFrcEhSbk5rUWpkclpYWkRhblZHTW0xQlkwRRAB!2m1!1s0x0:0x469af79cddd3720c!3m1!1s2@1:CAIQACodChtycF9oOk5QakpHRnNkQjdrZXZDanVGMm1BY0E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xJMk0yMHplSE00UWpGU1JUVlVSV0ZsUWtwMk1IYxAB",
+      "reviewer": "Thomas W.",
+      "rating": 5,
+      "text": "She is very knowledgeable about marketing and explaining everything in language that is easy to understand.  I would highly recommend her for your marketing needs.",
+      "publishedAt": "2026-05-01T23:55:03.329Z",
+      "ownerResponse": "Thank you for this thoughtful review Thomas! We love helping business owners understand their options when it comes to website and SEO services.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xJMk0yMHplSE00UWpGU1JUVlVSV0ZsUWtwMk1IYxAB!2m1!1s0x0:0x469af79cddd3720c!3m1!1s2@1:CAIQACodChtycF9oOlI2M20zeHM4QjFSRTVURWFlQkp2MHc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xOc2RscDNVWE5DVVcxS1ZFRnlZVFYyZVRKS2FuYxAB",
+      "reviewer": "Alex S.",
+      "rating": 5,
+      "text": "Great company!! Sarah is amazing to work with!",
+      "publishedAt": "2026-02-05T17:00:07.181Z",
+      "ownerResponse": "Thank you so much Alex! So glad our SEO services have helped!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xOc2RscDNVWE5DVVcxS1ZFRnlZVFYyZVRKS2FuYxAB!2m1!1s0x0:0x469af79cddd3720c!3m1!1s2@1:CAIQACodChtycF9oOlNsdlp3UXNCUW1KVEFyYTV2eTJKanc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tNd1JsSklObWhoVm1SM1RWVjZOREJ2WVRFek1FRRAB",
+      "reviewer": "Nick L.",
+      "rating": 5,
+      "text": "Super helpful and took the time to explain what is working right now and what we need to focus on as a business to make sure we are the most visible",
+      "publishedAt": "2026-02-04T22:45:50.363Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tNd1JsSklObWhoVm1SM1RWVjZOREJ2WVRFek1FRRAB!2m1!1s0x0:0x469af79cddd3720c!3m1!1s2@1:CAIQACodChtycF9oOkMwRlJINmhhVmR3TVV6NDBvYTEzMEE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xkTWMzTlpTRGxsZUZkalZXSllNRU5sU2tjNFFrRRAB",
+      "reviewer": "Colton M.",
+      "rating": 5,
+      "text": "Great company - you will get results!",
+      "publishedAt": "2026-02-04T22:35:47.424Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xkTWMzTlpTRGxsZUZkalZXSllNRU5sU2tjNFFrRRAB!2m1!1s0x0:0x469af79cddd3720c!3m1!1s2@1:CAIQACodChtycF9oOldMc3NZSDlleFdjVWJYMENlSkc4QkE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tOM1RHUldZbEU0ZUdFNVJYQTVNMVpxUTFsa1MzYxAB",
+      "reviewer": "Bo V.",
+      "rating": 5,
+      "text": "Truly such a great company! She has gone above and beyond for our real estate team! I would highly suggest using her company!",
+      "publishedAt": "2026-02-04T21:56:19.289Z",
+      "ownerResponse": "Thank you, Bo! It's been such a pleasure working with your real estate team. I really appreciate your support and recommendation, and I'm grateful for the opportunity to help with your online presence!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tOM1RHUldZbEU0ZUdFNVJYQTVNMVpxUTFsa1MzYxAB!2m1!1s0x0:0x469af79cddd3720c!3m1!1s2@1:CAIQACodChtycF9oOkN3TGRWYlE4eGE5RXA5M1ZqQ1lkS3c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25GTllXWjFlWFZhWjNoMldGTkdWRVJtUWpodGFXYxAB",
+      "reviewer": "Kelsey W.",
+      "rating": 5,
+      "text": "SC Marketing Technologies has been an absolute game-changer for our business. Their team is sharp, responsive, and truly understands how to turn strategy into real results. From clear communication to smart execution, they make the entire process seamless and stress-free. It’s rare to find a marketing partner that actually delivers what they promise, and Sarah's team does just that. Highly recommend to any business looking to grow the right way!",
+      "publishedAt": "2026-02-04T21:54:19.758Z",
+      "ownerResponse": "Thank you so much, Kelsey! I really appreciate your kind words about our team and the work we do. Clear communication and thoughtful strategy are so important to us, so it means a lot to hear that reflected in your experience. We're grateful for your trust!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25GTllXWjFlWFZhWjNoMldGTkdWRVJtUWpodGFXYxAB!2m1!1s0x0:0x469af79cddd3720c!3m1!1s2@1:CAIQACodChtycF9oOnFNYWZ1eXVaZ3h2WFNGVERmQjhtaWc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xSNVlsSkZWbmxCYUdwd1V6TmhiVWxSVUVoQlFuYxAB",
+      "reviewer": "Jason C.",
+      "rating": 5,
+      "text": "Sarah was great to work with. I look forward to doing more business with her in the future.",
+      "publishedAt": "2026-01-28T15:08:47.864Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xSNVlsSkZWbmxCYUdwd1V6TmhiVWxSVUVoQlFuYxAB!2m1!1s0x0:0x469af79cddd3720c!3m1!1s2@1:CAIQACodChtycF9oOlR5YlJFVnlBaGpwUzNhbUlRUEhBQnc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2t4TmNWWjFhV0ptWlhNdE4wcEJlamhHU1dRemRsRRAB",
+      "reviewer": "Springfield-LifeInsurance",
+      "rating": 5,
+      "text": "Sarah has been so helpful getting my GBP verified and provided great insight for me as a small business owner! Thank you Sarah!",
+      "publishedAt": "2026-01-14T18:58:16.212Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2t4TmNWWjFhV0ptWlhNdE4wcEJlamhHU1dRemRsRRAB!2m1!1s0x0:0x469af79cddd3720c!3m1!1s2@1:CAIQACodChtycF9oOkxNcVZ1aWJmZXMtN0pBejhGSWQzdlE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21GblZXdFlRbU5vYm5aV1FUTndPRFppTms1SGFYYxAB",
+      "reviewer": "Brian H.",
+      "rating": 5,
+      "text": "Sarah and her team not only set up a new website for me, they also migrated my email service. The team's attention to details was amazing and they did everything I asked for and more! I would highly recommend SC Marketing if you are in the market for a new website.",
+      "publishedAt": "2026-01-13T23:08:14.189Z",
+      "ownerResponse": "Thank you, Brian! I'm so glad you're happy with the new website and that we could make the email migration part of the process easier for you. I appreciate you recognizing the team's attention to detail. It was a pleasure working with you!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21GblZXdFlRbU5vYm5aV1FUTndPRFppTms1SGFYYxAB!2m1!1s0x0:0x469af79cddd3720c!3m1!1s2@1:CAIQACodChtycF9oOmFnVWtYQmNobnZWQTNwODZiNk5HaXc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21WbmNXSjRaVzVvV2w5cmQxRjRVV2N4ZG1WVFIxRRAB",
+      "reviewer": "Adam M.",
+      "rating": 5,
+      "text": "Sarah is fantastic! I attended a presentation where she shared a lot of valuable information and insights on how to be found online. She’s very personable and explains things in a way that’s easy to understand. Highly recommend!",
+      "publishedAt": "2025-11-07T16:52:22.072Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21WbmNXSjRaVzVvV2w5cmQxRjRVV2N4ZG1WVFIxRRAB!2m1!1s0x0:0x469af79cddd3720c!3m1!1s2@1:CAIQACodChtycF9oOmVncWJ4ZW5oWl9rd1F4UWcxdmVTR1E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2psbk4zcDFWWGN4Y1RBM1duZGlZWEF6VEVSb1duYxAB",
+      "reviewer": "crysta'l O.",
+      "rating": 5,
+      "text": "SC Marketing Technologies is a great resource. Their team is professional, creative, and truly invested in helping businesses grow. They go above and beyond to deliver quality results and innovative solutions. Highly recommend to anyone looking to take their marketing to the next level!",
+      "publishedAt": "2025-11-02T03:32:39.303Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2psbk4zcDFWWGN4Y1RBM1duZGlZWEF6VEVSb1duYxAB!2m1!1s0x0:0x469af79cddd3720c!3m1!1s2@1:CAIQACodChtycF9oOjlnN3p1VXcxcTA3WndiYXAzTERoWnc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tONWJqWTNhbmR6ZEZaRmJUTmFRM3BYYjNSblEwRRAB",
+      "reviewer": "Robert L.",
+      "rating": 5,
+      "text": "Sarah is outstanding at what she does. I’ve had her help my wife and I with our counseling business and one week after she made our site live we already got multiple form submissions. She’s really smart and knows websites and SEO.",
+      "publishedAt": "2025-10-31T16:10:12.826Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tONWJqWTNhbmR6ZEZaRmJUTmFRM3BYYjNSblEwRRAB!2m1!1s0x0:0x469af79cddd3720c!3m1!1s2@1:CAIQACodChtycF9oOkN5bjY3andzdFZFbTNaQ3pXb3RnQ0E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25kR2VrOHlkVVZ0Y0ZWRFRGODRZVlowUkZKcFdIYxAB",
+      "reviewer": "Briana R.",
+      "rating": 5,
+      "text": "Literally the best. I’ve had her help my husband and I with planning for our lawn care business website. She answered all our questions and helped us implement everything.",
+      "publishedAt": "2025-10-31T15:28:39.720Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25kR2VrOHlkVVZ0Y0ZWRFRGODRZVlowUkZKcFdIYxAB!2m1!1s0x0:0x469af79cddd3720c!3m1!1s2@1:CAIQACodChtycF9oOndGek8ydUVtcFVDTF84YVZ0RFJpWHc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2kwdGJtSktlak4xZWs1bFMxVlJWa3hqZFdkUk1YYxAB",
+      "reviewer": "Cristi L.",
+      "rating": 5,
+      "text": "I’m so glad I used SC Marketing Technologies to build and optimize my website. It is so fast and beautiful. The staff really know their stuff and continue to be available at a moments notice. If you’re needing help moving your ranking up on Google call SC Marketing Technologies today! Thank you, Sarah, for all you’ve done for my business!",
+      "publishedAt": "2025-10-30T18:41:33.477Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2kwdGJtSktlak4xZWs1bFMxVlJWa3hqZFdkUk1YYxAB!2m1!1s0x0:0x469af79cddd3720c!3m1!1s2@1:CAIQACodChtycF9oOi0tbmJKejN1ek5lS1VRVkxjdWdRMXc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25NMmNqbGtTRUpXUldwRmNFY3lOamxHUlRVdE0xRRAB",
+      "reviewer": "Linda H.",
+      "rating": 5,
+      "text": "Sara gave a very informative and thorough presentation at the Strafford Chamber meeting last week. She taught us some tips to use right away and gave us \"homework\" items to check out. She really is very knowledgeable!",
+      "publishedAt": "2025-10-30T18:04:20.283Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25NMmNqbGtTRUpXUldwRmNFY3lOamxHUlRVdE0xRRAB!2m1!1s0x0:0x469af79cddd3720c!3m1!1s2@1:CAIQACodChtycF9oOnM2cjlkSEJWRWpFcEcyNjlGRTUtM1E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2taMWVEaFlSRGh2Y1VaVGRsRjJPV010TTJWaU1uYxAB",
+      "reviewer": "Cindy P.",
+      "rating": 5,
+      "text": "Are you looking to optimize your SEO? Look no further. SC Marketing in Springfield offering the best SEO services in 417. Sarah is amazing in offering a trustworthy service for your business.",
+      "publishedAt": "2025-10-23T03:21:53.173Z",
+      "ownerResponse": "Thank you so much Cindy! We love providing trustworthy SEO services to Springfield and nationwide businesses!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2taMWVEaFlSRGh2Y1VaVGRsRjJPV010TTJWaU1uYxAB!2m1!1s0x0:0x469af79cddd3720c!3m1!1s2@1:CAIQACodChtycF9oOkZ1eDhYRDhvcUZTdlF2OWMtM2ViMnc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xKeU5qSlZiVXByU21OcFFYQkdWM0E1V1U5YWVFRRAB",
+      "reviewer": "Tyler J.",
+      "rating": 5,
+      "text": "We are very happy with the support we get from SC Marketing. They work with us very closely on tweaking and designing the best marketing fits for our companies. The communication is clear and prompt!",
+      "publishedAt": "2025-09-26T14:23:23.759Z",
+      "ownerResponse": "Thank you so much Tyler! We have thoroughly enjoyed working with you and seeing your business grow online!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xKeU5qSlZiVXByU21OcFFYQkdWM0E1V1U5YWVFRRAB!2m1!1s0x0:0x469af79cddd3720c!3m1!1s2@1:CAIQACodChtycF9oOlJyNjJVbUprSmNpQXBGV3A5WU9aeEE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2psaFFWaFlOMEkxZGt0UVNqSm9RM2h2UWxCaVJFRRAB",
+      "reviewer": "Sativa B.",
+      "rating": 5,
+      "text": "It has been wonderful working with someone so knowledgeable and responsive. SEO and website marketing are very nuanced and finding a business that will help with anything you need is a true blessing!",
+      "publishedAt": "2025-09-25T17:12:03.748Z",
+      "ownerResponse": "Thank you Sativa! It has been a pleasure working with you. We are always here when you need us!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2psaFFWaFlOMEkxZGt0UVNqSm9RM2h2UWxCaVJFRRAB!2m1!1s0x0:0x469af79cddd3720c!3m1!1s2@1:CAIQACodChtycF9oOjlhQVhYN0I1dktQSjJoQ3hvQlBiREE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2t4VmEwbE1UbGN4VUUxdE9YcG9kMFJsV210ZmVuYxAB",
+      "reviewer": "Tiffany E.",
+      "rating": 5,
+      "text": "Sarah is so knowledgeable and passionate about what she does. She's definitely who I recommend to anyone who needs help with their SEO. She's been able to help me with any questions I have about my website. Definitely recommend!",
+      "publishedAt": "2025-09-25T15:06:57.455Z",
+      "ownerResponse": "Thank you Tiffany! We value all of your recommendations and have loved working with you on your website!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2t4VmEwbE1UbGN4VUUxdE9YcG9kMFJsV210ZmVuYxAB!2m1!1s0x0:0x469af79cddd3720c!3m1!1s2@1:CAIQACodChtycF9oOkxVa0lMTlcxUE1tOXpod0RlWmtfenc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25kNlV6aHZNVGxMWkU1elJEVkpaR1k1WjJFNGVXYxAB",
+      "reviewer": "brett B.",
+      "rating": 5,
+      "text": "Sarah is incredibly dedicated and knowledgeable. Her genuine desire for her clients success is obvious from the first time you work with her. Highly recommend!",
+      "publishedAt": "2025-09-25T13:52:17.004Z",
+      "ownerResponse": "Thank you Brett! We love what we do and are glad that it shows!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25kNlV6aHZNVGxMWkU1elJEVkpaR1k1WjJFNGVXYxAB!2m1!1s0x0:0x469af79cddd3720c!3m1!1s2@1:CAIQACodChtycF9oOnd6UzhvMTlLZE5zRDVJZGY5Z2E4eWc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tkYVJ6bHRZak5yTlY4NVVHRlBTbU4yUVVkemJXYxAB",
+      "reviewer": "Justin M.",
+      "rating": 5,
+      "text": "Excellent team at SC! Sarah is helpful, knowledgeable and really takes her projects seriously. I highly recommend.",
+      "publishedAt": "2025-09-25T11:07:45.478Z",
+      "ownerResponse": "Thank you Justin! We appreciate the honest feedback!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tkYVJ6bHRZak5yTlY4NVVHRlBTbU4yUVVkemJXYxAB!2m1!1s0x0:0x469af79cddd3720c!3m1!1s2@1:CAIQACodChtycF9oOkdaRzltYjNrNV85UGFPSmN2QUdzbWc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2paWVQyRmpSR1UwWTBOYWVFaHpMVU13ZFZWMFpHYxAB",
+      "reviewer": "Mollie W.",
+      "rating": 5,
+      "text": "THERE IS A REASON SHE IS AT THE TOP OF GOOGLE! WOW is all I can say. SHE IS SO GOOD.",
+      "publishedAt": "2025-09-25T02:14:45.277Z",
+      "ownerResponse": "Mollie! Thank YOU! We love helping our clients get to the top too, and staying there 😉",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2paWVQyRmpSR1UwWTBOYWVFaHpMVU13ZFZWMFpHYxAB!2m1!1s0x0:0x469af79cddd3720c!3m1!1s2@1:CAIQACodChtycF9oOjZYT2FjRGU0Y0NaeEhzLUMwdVV0ZGc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2toRFdXaE5ORmM0WkdORGIxVlhWVmRDWWxKNk9GRRAB",
+      "reviewer": "Jordan S.",
+      "rating": 5,
+      "text": "We've been working with Sara for the past 3 months, and the results have been outstanding. Their SEO strategies helped our website rank on the first page of Google for several competitive keywords in our industry.<br>From on-page optimization to backlink building and local SEO, her team is knowledgeable, responsive, and results-driven. They provided regular reports and clear insights, which made it easy to track our growth in traffic and conversions.<br>If you're looking for a reliable SEO agency that delivers real, measurable results, Sara is the one to choose. They've significantly boosted our online visibility and helped us attract more qualified leads.",
+      "publishedAt": "2025-08-31T19:55:56.016Z",
+      "ownerResponse": "Thank you Jordan! It has been wonderful working alongside you, building your search presence online. Clients like you make what we do so rewarding!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2toRFdXaE5ORmM0WkdORGIxVlhWVmRDWWxKNk9GRRAB!2m1!1s0x0:0x469af79cddd3720c!3m1!1s2@1:CAIQACodChtycF9oOkhDWWhNNFc4ZGNDb1VXVVdCYlJ6OFE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21sWlpEVnVNSFk1UlZWSlJtUndUMDV4Tm1wd09FRRAB",
+      "reviewer": "joe M.",
+      "rating": 5,
+      "text": "The quality of service and responsiveness Sarah provides is incredible to say the least.  Excellent communication throughout the entire process.  Very affordable and truly feels like she cares about getting results instead of just making a buck. No high pressure sales of upgrades either.  She listens and gets results.  Highly recommend.",
+      "publishedAt": "2025-07-25T18:05:18.369Z",
+      "ownerResponse": "Joe, thank you so much for the kind words! Your success is our success, and we're grateful you’ve trusted us with your business. Working with clients like you makes it all worth it!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21sWlpEVnVNSFk1UlZWSlJtUndUMDV4Tm1wd09FRRAB!2m1!1s0x0:0x469af79cddd3720c!3m1!1s2@1:CAIQACodChtycF9oOmlZZDVuMHY5RVVJRmRwT05xNmpwOEE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2toeU56TlNlRmhKUkVOMFYyMW5kSFJGY205c1owRRAB",
+      "reviewer": "Josef K.",
+      "rating": 5,
+      "text": "Working with SC Technologies was amazing. From the get go, communication was clear, transparent, and left little room for interpretation on what was going to happen. From explanation of services to execution, the process was very smooth. But that isn’t the best part. SC Technologies went above and beyond what I requested. This company really goes the extra mile and is worth developing a long term relationship with. I will be coming back again and again as my business needs change. SEO is just the beginning of the goodness offered. Thanks for a great experience!",
+      "publishedAt": "2025-07-22T16:04:34.340Z",
+      "ownerResponse": "Wow! Thank you for this thoughtful review! We have loved every minute of working with you. We will always be here to help more when you need it.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2toeU56TlNlRmhKUkVOMFYyMW5kSFJGY205c1owRRAB!2m1!1s0x0:0x469af79cddd3720c!3m1!1s2@1:CAIQACodChtycF9oOkhyNzNSeFhJREN0V21ndHRFcm9sZ0E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tNNVJEaEpUVmRNT0RaeVFXUmxja2RHT0UxSGFFRRAB",
+      "reviewer": "Brian L.",
+      "rating": 5,
+      "text": "Sarah and her team are the very definition of professional and quality. Sarah is so knowledgeable in the field and will do what it takes to make things exactly how you want them. The quality of work is unmatched. I would HIGHLY recommend SC Marketing Technologies to anyone who is looking to improve or update their digital presence.",
+      "publishedAt": "2025-06-23T18:59:01.182Z",
+      "ownerResponse": "Thank you so much for this review Brian! It has been a pleasure working with you.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tNNVJEaEpUVmRNT0RaeVFXUmxja2RHT0UxSGFFRRAB!2m1!1s0x0:0x469af79cddd3720c!3m1!1s2@1:CAIQACodChtycF9oOkM5RDhJTVdMODZyQWRlckdGOE1HaEE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25NeVREVjFVMlpMZFU1emVVdENRbUpEVFRkeU1FRRAB",
+      "reviewer": "Dr. L.",
+      "rating": 5,
+      "text": "Working with Sarah is both a delight and a privilege. She thoroughly answered all my questions, created a stunning masterpiece of a website for my company and showed patience, a creative edge and professionalism beyond what I have worked with before. HIGHLY recommend.",
+      "publishedAt": "2025-06-21T01:11:18.421Z",
+      "ownerResponse": "Thank you so much Brianna for the kind words! It was an absolute pleasure working with you, and I’m thrilled to hear you’re happy with the website. I truly enjoyed bringing your vision to life and appreciate your trust throughout the process. Looking forward to supporting your continued success!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25NeVREVjFVMlpMZFU1emVVdENRbUpEVFRkeU1FRRAB!2m1!1s0x0:0x469af79cddd3720c!3m1!1s2@1:CAIQACodChtycF9oOnMyTDV1U2ZLdU5zeUtCQmJDTTdyMEE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VNUFV2N241OXJ5WFJBEAE",
+      "reviewer": "Catie B.",
+      "rating": 5,
+      "text": "Sarah went above and beyond what I expected for our salon website!<br>She was able to take little pieces of what I envisioned and bring it to life! She was very hands on and keeping in touch with me with changes , and updates! I highly recommend! We couldn’t be happier with our site!!",
+      "publishedAt": "2025-06-12T22:24:47.394Z",
+      "ownerResponse": "Thank you so much, Catie! It was such a joy bringing your vision to life. I’m so glad you’re happy with the site — you were wonderful to work with and made the process so smooth. Excited to see all the amazing things ahead for your salon!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VNUFV2N241OXJ5WFJBEAE!2m1!1s0x0:0x469af79cddd3720c!3m1!1s2@1:CIHM0ogKEMPUv7n59ryXRA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnTURRNDVuRTdRRRAB",
+      "reviewer": "Nathan S.",
+      "rating": 5,
+      "text": "Love working with Sarah. She goes above and beyond to make sure her clients are showing up 1st in search consoles. Above that, she is honest, trustworthy, reliable, and an overall excellent person.",
+      "publishedAt": "2025-03-13T20:20:42.623Z",
+      "ownerResponse": "Thanks so much for taking the time to share this, Nathan! I really appreciate the kind words and always aim to bring that level of care to everything I do.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTURRNDVuRTdRRRAB!2m1!1s0x0:0x469af79cddd3720c!3m1!1s2@1:CIHM0ogKEICAgMDQ45nE7QE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnTUNRaXRuVUF3EAE",
+      "reviewer": "Kathleen R.",
+      "rating": 5,
+      "text": "Sarah was so easy to work with and went above and beyond to help us get our website updated. Her processes were super user friendly and thorough...even for someone like me who is not very tech savvy. I highly recommend SC Marketing!",
+      "publishedAt": "2025-03-03T14:44:01.118Z",
+      "ownerResponse": "Thank you Kathleen! We're so glad the process was easy and seamless for you. We appreciate your recommendation and are always here to help!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTUNRaXRuVUF3EAE!2m1!1s0x0:0x469af79cddd3720c!3m1!1s2@1:CIHM0ogKEICAgMCQitnUAw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnTUNncmEzQ3N3RRAB",
+      "reviewer": "Dana L.",
+      "rating": 5,
+      "text": "Sarah provided outstanding service to our non-profit. Her expertise and easy-to-work-with nature made our website refresh project a dream!  I highly recommend SC Marketing!",
+      "publishedAt": "2025-02-19T23:07:57.765Z",
+      "ownerResponse": "Thank you Dana! We're so happy to hear your website refresh was a smooth experience. We appreciate your recommendation and love supporting non-profits!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTUNncmEzQ3N3RRAB!2m1!1s0x0:0x469af79cddd3720c!3m1!1s2@1:CIHM0ogKEICAgMCgra3CswE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUN2M1plNHNRRRAB",
+      "reviewer": "Justin M.",
+      "rating": 5,
+      "text": "Can’t say enough good things about working with Sarah. She walked us through the website building process and was very thorough and efficient. Our website started generating leads for our business immediately! Highly recommend",
+      "publishedAt": "2024-12-13T21:17:10.371Z",
+      "ownerResponse": "Thank you Justin! We're thrilled to hear your website is generating leads quickly! We take pride in making the process smooth and effective. We appreciate your recommendation!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN2M1plNHNRRRAB!2m1!1s0x0:0x469af79cddd3720c!3m1!1s2@1:CIHM0ogKEICAgICv3Ze4sQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURYOU1xTklnEAE",
+      "reviewer": "Olive B.",
+      "rating": 5,
+      "text": "Sarah was an absolute dream to work with and I look forward to working together in the future.  What I loved was that Sarah really explained herself when giving instructions.  Instead of just fixing an issue she really walked you through what the issue was and how to fix it in the future.  Thanks again Sarah and I can't wait to see the growth on my site and working together in the future.<br><br>Signed,<br><br>A very happy florist,",
+      "publishedAt": "2024-10-24T19:07:01.694Z",
+      "ownerResponse": "Thank you Melissa! It was a pleasure working with you as well.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURYOU1xTklnEAE!2m1!1s0x0:0x469af79cddd3720c!3m1!1s2@1:CIHM0ogKEICAgIDX9MqNIg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURuNXN2VmNREAE",
+      "reviewer": "Gilda H.",
+      "rating": 5,
+      "text": "i can’t say enough positive things about SC marketing! i have referred numerous of businesses, from small to large to sarah because i know she will deliver exactly what the customer is looking. no matter if it is website building or S.E.O. she’s the best at all of it. highly recommend!!!",
+      "publishedAt": "2024-10-05T13:03:50.797Z",
+      "ownerResponse": "Thank you so much Gilda for your kind words and referrals! We’re thrilled to hear you’ve had such great experiences with our website and SEO services. Your support means the world to us!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURuNXN2VmNREAE!2m1!1s0x0:0x469af79cddd3720c!3m1!1s2@1:CIHM0ogKEICAgIDn5svVcQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURIODh1eUZnEAE",
+      "reviewer": "MyQuan S.",
+      "rating": 5,
+      "text": "Working with Sarah was an absolute pleasure! Her expertise and passion for ensuring our website's success were truly unmatched. She not only brought our vision to life but went above and beyond to equip us for long-term success even after her work was done. That in itself speaks volumes! I highly recommend SC Marketing Technologies!",
+      "publishedAt": "2024-09-19T20:31:07.757Z",
+      "ownerResponse": "Thank you for your review MyQuan! It was a pleasure working with you, and we’re glad our services helped set you up for continued success.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURIODh1eUZnEAE!2m1!1s0x0:0x469af79cddd3720c!3m1!1s2@1:CIHM0ogKEICAgIDH88uyFg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURIelpTeGJBEAE",
+      "reviewer": "December B.",
+      "rating": 5,
+      "text": "Sarah did an amazing job with our website! She transformed it into something beyond my expectations, and the results have been fantastic. Even in the first month, we've seen a boost in traffic and outreach from our site.<br>The 30-minute SEO training she provides after completing her work is incredibly helpful. Running a small business means juggling many responsibilities, and managing our SEO felt overwhelming, but Sarah made it easy.<br>She’s set us up for success and given us the tools to maintain it moving forward. I can't recommend her enough—10/10!\"",
+      "publishedAt": "2024-09-18T20:31:55.980Z",
+      "ownerResponse": "December! Thank you so much for your wonderful feedback! We’re delighted to hear that your website transformation exceeded expectations and that you’re already seeing great results. It’s fantastic that the SEO training made things easier for you, and we’re happy to have equipped you with the tools to keep growing. Your recommendation means a lot to us!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURIelpTeGJBEAE!2m1!1s0x0:0x469af79cddd3720c!3m1!1s2@1:CIHM0ogKEICAgIDHzZSxbA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURIOWRYb2F3EAE",
+      "reviewer": "William E.",
+      "rating": 5,
+      "text": "Working with SC Marketing has been an absolute pleasure. Their team of skilled professionals is not only knowledgeable in their field but also dedicated to providing top-notch service and support.",
+      "publishedAt": "2024-09-18T17:59:33.128Z",
+      "ownerResponse": "Thank you, Will, for your kind words! We’re glad to hear you’ve had a great experience with our team. It’s a pleasure working with you, and we appreciate your continued support!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURIOWRYb2F3EAE!2m1!1s0x0:0x469af79cddd3720c!3m1!1s2@1:CIHM0ogKEICAgIDH9dXoaw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNkNEtDYndnRRAB",
+      "reviewer": "Longhorn D.",
+      "rating": 5,
+      "text": "We hired SC Marketing Technologies to help us with our SEO because we know how valuable SEO and Google Optimization are to the success of any business with a digital presence.  From our initial call to the intake form to the reporting we have been so impressed with the quality of service we received. As a business owner, SEO is not my area of expertise but I feel confident knowing Sarah is taking care of it! Highly recommend!",
+      "publishedAt": "2024-02-09T15:09:29.821Z",
+      "ownerResponse": "Thank you so much for your positive feedback! We appreciate your kind words. We strive to provide the best SEO services and reporting, and we’re glad to hear that we are succeeding. Thanks again!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNkNEtDYndnRRAB!2m1!1s0x0:0x469af79cddd3720c!3m1!1s2@1:CIHM0ogKEICAgICd4KCbwgE%7C%7C?hl=en-US",
+      "language": "en"
+    }
+  ],
+  "ratingOnly": [
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2t0clZXcDFYM05MZWxCcVRFOU5la1phYzNsbVJIYxAB",
+      "reviewer": "Robert M.",
+      "rating": 5,
+      "publishedAt": "2026-04-17T03:36:04.275Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25SWWNXdG5jVVI0WXpsWk9WWmxNSFUwY1ZBM1dtYxAB",
+      "reviewer": "Katie S.",
+      "rating": 5,
+      "publishedAt": "2026-02-04T22:48:20.600Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21wWk1rMXdaVlJNUmpCMVQwSXRkRGhwTUZCa2JYYxAB",
+      "reviewer": "Laura C.",
+      "rating": 5,
+      "publishedAt": "2025-12-30T18:36:48.203Z"
+    }
+  ]
+}

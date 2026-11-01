@@ -99,6 +99,18 @@
       "pulledAt": "2026-10-23T17:38:02.396Z"
     },
     {
+      "slug": "sc-marketing-technologies",
+      "name": "SC Marketing Technologies LLC",
+      "placeId": "ChIJiWeNBQxcq6oRDHLT3Zz3mkY",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 46,
+        "withText": 43,
+        "ratingOnly": 3
+      },
+      "pulledAt": "2026-11-01T20:54:30.979Z"
+    },
+    {
       "slug": "stokes-fence-co",
       "name": "Stokes Fence Co. LLC",
       "placeId": "ChIJY0VRIKCaNU8RdWVJPabins4",
