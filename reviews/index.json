@@ -15,6 +15,18 @@
       "pulledAt": "2026-10-24T02:07:34.165Z"
     },
     {
+      "slug": "all-phase-electric",
+      "name": null,
+      "placeId": null,
+      "status": "identity_mismatch",
+      "counts": {
+        "listingTotal": 14,
+        "withText": 0,
+        "ratingOnly": 0
+      },
+      "pulledAt": "2026-11-03T04:06:22.827Z"
+    },
+    {
       "slug": "ashs-barber-collective",
       "name": "Ash's Barber Collective",
       "placeId": "ChIJ8bZtIFBxz4cR5BpeENYruuQ",
