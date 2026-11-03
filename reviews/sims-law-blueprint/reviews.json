@@ -1,0 +1,18 @@
+{
+  "kind": "google-review-pull",
+  "version": 1,
+  "slug": "sims-law-blueprint",
+  "place": {
+    "name": "The Law Office of Lisa M. Sims, LLC",
+    "placeId": "ChIJp4mCMABlz4cRceAzDTqUwgM",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=The%20Law%20Office%20of%20Lisa%20M.%20Sims%2C%20LLC&query_place_id=ChIJp4mCMABlz4cRceAzDTqUwgM",
+    "address": "1350 E Kingsley St D, Springfield, MO 65804",
+    "phone": "(417) 883-4848",
+    "rating": null,
+    "totalReviewCount": null
+  },
+  "pulledAt": "2026-11-03T04:06:17.877Z",
+  "requestedMax": 75,
+  "reviews": [],
+  "ratingOnly": []
+}

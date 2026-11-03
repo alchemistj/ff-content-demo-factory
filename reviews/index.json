@@ -111,6 +111,18 @@
       "pulledAt": "2026-11-01T20:54:30.979Z"
     },
     {
+      "slug": "sims-law-blueprint",
+      "name": "The Law Office of Lisa M. Sims, LLC",
+      "placeId": "ChIJp4mCMABlz4cRceAzDTqUwgM",
+      "status": "ok",
+      "counts": {
+        "listingTotal": null,
+        "withText": 0,
+        "ratingOnly": 0
+      },
+      "pulledAt": "2026-11-03T04:06:17.877Z"
+    },
+    {
       "slug": "stokes-fence-co",
       "name": "Stokes Fence Co. LLC",
       "placeId": "ChIJY0VRIKCaNU8RdWVJPabins4",
