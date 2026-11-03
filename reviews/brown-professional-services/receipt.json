@@ -1,0 +1,27 @@
+{
+  "kind": "google-review-pull-receipt",
+  "status": "ok",
+  "slug": "brown-professional-services",
+  "request": {
+    "mapsUrl": "https://www.google.com/maps/search/Brown+Professional+Services+4270+S+Hillcrest+Ave+Springfield+MO",
+    "maxReviews": 75,
+    "expectedPhone": "4175903902"
+  },
+  "trigger": "workflow_dispatch",
+  "apify": {
+    "actor": "compass~crawler-google-places",
+    "runId": "KzYZBjeGC3gzyNNOa",
+    "datasetId": "PJTaqQnjb7VWE83MS",
+    "attempts": 1,
+    "usageUsd": 0.0342
+  },
+  "counts": {
+    "listingTotal": 56,
+    "withText": 49,
+    "ratingOnly": 7
+  },
+  "detail": null,
+  "startedAt": "2026-11-03T04:06:01.097Z",
+  "finishedAt": "2026-11-03T04:06:22.696Z",
+  "githubRunUrl": "https://github.com/alchemistj/ff-content-demo-factory/actions/runs/41576073580"
+}
