@@ -16,15 +16,15 @@
     },
     {
       "slug": "all-phase-electric",
-      "name": null,
-      "placeId": null,
-      "status": "identity_mismatch",
+      "name": "All Phase Electric",
+      "placeId": "ChIJYXNjpctuz4cR1nr3AbY_YsQ",
+      "status": "ok",
       "counts": {
         "listingTotal": 14,
-        "withText": 0,
-        "ratingOnly": 0
+        "withText": 11,
+        "ratingOnly": 3
       },
-      "pulledAt": "2026-11-03T04:07:36.202Z"
+      "pulledAt": "2026-11-03T04:08:55.017Z"
     },
     {
       "slug": "ashs-barber-collective",
