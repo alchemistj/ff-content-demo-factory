@@ -41,12 +41,13 @@ env:
   SCOUT_SLUG: ${{ inputs.slug }}
   SCOUT_TRIGGER: ${{ github.event_name }}
   EVENT_BEFORE: ${{ github.event.before }}
-  SCOUT_WORK: ${{ runner.temp }}/scout-data
 
 jobs:
   scout:
     runs-on: ubuntu-latest
     timeout-minutes: 25
+    env:
+      SCOUT_WORK: ${{ runner.temp }}/scout-data
     defaults:
       run:
         shell: bash
