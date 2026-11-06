@@ -17,7 +17,8 @@
     "./google-docs": "./dist/src/google-docs/index.js",
     "./d2d-intake": "./dist/src/d2d-intake/index.js",
     "./factory": "./dist/src/factory/index.js",
-    "./review-pull": "./dist/src/review-pull/index.js"
+    "./review-pull": "./dist/src/review-pull/index.js",
+    "./scout": "./dist/src/scout/index.js"
   },
   "engines": {
     "node": ">=22"
@@ -25,9 +26,10 @@
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "check": "tsc -p tsconfig.json --noEmit",
-    "test": "node --import tsx --test src/writer-guides/*.test.ts src/approved-copy/*.test.ts src/examples/*.test.ts src/handoff/*.test.ts src/workflow/*.test.ts src/writing-package/*.test.ts src/google-docs/*.test.ts src/d2d-intake/*.test.ts src/factory/*.test.ts src/integration/*.test.ts src/review-pull/*.test.ts",
+    "test": "node --import tsx --test src/writer-guides/*.test.ts src/approved-copy/*.test.ts src/examples/*.test.ts src/handoff/*.test.ts src/workflow/*.test.ts src/writing-package/*.test.ts src/google-docs/*.test.ts src/d2d-intake/*.test.ts src/factory/*.test.ts src/integration/*.test.ts src/review-pull/*.test.ts src/scout/*.test.ts",
     "d2d-intake": "node --import tsx src/d2d-intake/cli.ts",
     "reviews:pull": "node --import tsx src/review-pull/cli.ts",
+    "prospects:scout": "node --import tsx src/scout/cli.ts",
     "test:compiled": "npm run build && node scripts/assert-compiled-writer-guides.mjs",
     "test:all": "npm run check && npm test && npm run test:compiled",
     "writer-guides:receipt": "node --import tsx src/writer-guides/cli.ts",

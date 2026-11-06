@@ -42,6 +42,18 @@ export interface ApifyPullOptions {
   readonly log?: (line: string) => void;
 }
 
+export interface ApifyDatasetOptions {
+  readonly token: string;
+  readonly actorInput: Record<string, unknown>;
+  readonly fetch?: typeof fetch;
+  readonly sleep?: (ms: number) => Promise<void>;
+  readonly now?: () => number;
+  readonly pollIntervalMs?: number;
+  readonly pollTimeoutMs?: number;
+  readonly retryDelayMs?: number;
+  readonly log?: (line: string) => void;
+}
+
 interface AttemptFailure {
   readonly ok: false;
   readonly retryable: boolean;
@@ -85,6 +97,20 @@ export function redactSecret(text: string, secret: string): string {
 }
 
 export async function pullApifyPlaces(options: ApifyPullOptions): Promise<ApifyPullResult> {
+  return pullApifyDataset({
+    token: options.token,
+    actorInput: buildActorInput(options.request),
+    ...(options.fetch ? { fetch: options.fetch } : {}),
+    ...(options.sleep ? { sleep: options.sleep } : {}),
+    ...(options.now ? { now: options.now } : {}),
+    ...(options.pollIntervalMs !== undefined ? { pollIntervalMs: options.pollIntervalMs } : {}),
+    ...(options.pollTimeoutMs !== undefined ? { pollTimeoutMs: options.pollTimeoutMs } : {}),
+    ...(options.retryDelayMs !== undefined ? { retryDelayMs: options.retryDelayMs } : {}),
+    ...(options.log ? { log: options.log } : {}),
+  });
+}
+
+export async function pullApifyDataset(options: ApifyDatasetOptions): Promise<ApifyPullResult> {
   const fetchImpl = options.fetch ?? fetch;
   const sleep = options.sleep ?? delay;
   const now = options.now ?? Date.now;
@@ -116,7 +142,7 @@ export async function pullApifyPlaces(options: ApifyPullOptions): Promise<ApifyP
     try {
       result = await oneAttempt({
         token: options.token,
-        request: options.request,
+        actorInput: options.actorInput,
         fetchImpl,
         sleep,
         now,
@@ -157,7 +183,7 @@ export async function pullApifyPlaces(options: ApifyPullOptions): Promise<ApifyP
 
 async function oneAttempt(options: {
   token: string;
-  request: ReviewPullRequest;
+  actorInput: Record<string, unknown>;
   fetchImpl: typeof fetch;
   sleep: (ms: number) => Promise<void>;
   now: () => number;
@@ -165,7 +191,7 @@ async function oneAttempt(options: {
   pollTimeoutMs: number;
   log: (line: string) => void;
 }): Promise<AttemptSuccess | AttemptFailure> {
-  const input = buildActorInput(options.request);
+  const input = options.actorInput;
   const startUrl = `${APIFY_BASE}/acts/${APIFY_ACTOR}/runs`;
   const started = await requestJson(options.fetchImpl, options.token, startUrl, {
     method: "POST",
