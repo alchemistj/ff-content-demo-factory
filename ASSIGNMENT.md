@@ -54,3 +54,9 @@ Canonical craft-guide wording and the Springfield example library live in `docs/
 - Demo links go out plain. Never add `?utm_source=email` or any other tracking query to a link the owner will read.
 - Offer call times from Josh's real openings: the "Book a Call with Josh" calendar in Go High Level (Fluid Frame Legacy location), not guesses.
 - When Josh states a rule for future work, write it into the repo's notes right away. Don't ask first.
+
+## Prospect picking (Josh's standing rules)
+
+- Pull 50 businesses per scout search (trade + city). Work from the bottom: check rank 50 first, then 49, 48 and up, and take the first ones that qualify. Lower-ranked businesses have the most to gain.
+- Keep a ledger per search on the `scout-data` branch (`scout/<slug>/ledger.json` and `ledger.md`): every rank checked, with status picked / qualified-backlog / disqualified and a one-line reason, plus `next_start_rank` so the next day's run continues upward from where the last one stopped.
+- Qualified businesses not picked today stay in the backlog for the next run.
