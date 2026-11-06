@@ -46,12 +46,13 @@ jobs:
   scout:
     runs-on: ubuntu-latest
     timeout-minutes: 25
-    env:
-      SCOUT_WORK: ${{ runner.temp }}/scout-data
     defaults:
       run:
         shell: bash
     steps:
+      - name: Set work folder
+        run: echo "SCOUT_WORK=${RUNNER_TEMP}/scout-data" >> "$GITHUB_ENV"
+
       - name: Check out
         uses: actions/checkout@v4
         with:
