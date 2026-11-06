@@ -47,3 +47,10 @@ The writer model is configurable. This workflow belongs to Fluid Frame, not to o
 Workflow code, handoff contracts, assignment discovery, and these runtime instructions.
 
 Canonical craft-guide wording and the Springfield example library live in `docs/writer-guides/` and `examples/approved-copy/`. Google OAuth and native Doc publication live in `src/google-docs/`. This file remains the assignment entry point for the integrated factory.
+
+## Demo outreach (Josh's standing rules)
+
+- Send the demo through the business's own website contact form when it has one, with a line like: "By the way, our contact form would have filtered this out as spam, and you wouldn't have even seen it."
+- Demo links go out plain. Never add `?utm_source=email` or any other tracking query to a link the owner will read.
+- Offer call times from Josh's real openings: the "Book a Call with Josh" calendar in Go High Level (Fluid Frame Legacy location), not guesses.
+- When Josh states a rule for future work, write it into the repo's notes right away. Don't ask first.
