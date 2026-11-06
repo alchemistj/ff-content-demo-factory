@@ -1,8 +1,10 @@
 export {
   APIFY_ACTOR,
   buildActorInput,
+  pullApifyDataset,
   pullApifyPlaces,
   redactSecret,
+  type ApifyDatasetOptions,
   type ApifyPullOptions,
   type ApifyPullResult,
 } from "./apify.js";

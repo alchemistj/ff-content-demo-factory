@@ -7,4 +7,5 @@ dist/
 .d2d-intake-state/
 google-oauth.json
 reviews/
+/scout/
 
