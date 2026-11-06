@@ -50,6 +50,7 @@ Canonical craft-guide wording and the Springfield example library live in `docs/
 
 ## Demo outreach (Josh's standing rules)
 
+- **Contact form only (for now).** Outreach goes through each prospect's own website contact form, not email. Claude or a Sonnet fills and sends it, with honest name and reply details, and keeps a screenshot of the confirmation. When a send is blocked (CAPTCHA, bot check, login, no form, form error), never try to get around it: add the prospect to Josh's hand-send list with the message ready to paste, and Josh sends those himself.
 - Send the demo through the business's own website contact form when it has one, with a line like: "By the way, our contact form system would have recognized this as a solicitation, and you wouldn't have even seen it." Say solicitation or sales pitch, never spam.
 - Demo links go out plain. Never add `?utm_source=email` or any other tracking query to a link the owner will read.
 - Offer call times from Josh's real openings: the "Book a Call with Josh" calendar in Go High Level (Fluid Frame Legacy location), not guesses.
