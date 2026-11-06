@@ -41,7 +41,6 @@ env:
   SCOUT_SLUG: ${{ inputs.slug }}
   SCOUT_TRIGGER: ${{ github.event_name }}
   EVENT_BEFORE: ${{ github.event.before }}
-  SCOUT_WORK: ${{ runner.temp }}/scout-data
 
 jobs:
   scout:
@@ -51,6 +50,9 @@ jobs:
       run:
         shell: bash
     steps:
+      - name: Set work folder
+        run: echo "SCOUT_WORK=${RUNNER_TEMP}/scout-data" >> "$GITHUB_ENV"
+
       - name: Check out
         uses: actions/checkout@v4
         with:
