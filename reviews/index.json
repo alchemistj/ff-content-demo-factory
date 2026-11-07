@@ -63,6 +63,18 @@
       "pulledAt": "2026-11-01T20:54:26.900Z"
     },
     {
+      "slug": "crossroads-windows",
+      "name": "Crossroads Windows",
+      "placeId": "ChIJQ8YPLqy8G0IRawHWQFHeWoY",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 51,
+        "withText": 48,
+        "ratingOnly": 3
+      },
+      "pulledAt": "2026-11-07T03:08:39.073Z"
+    },
+    {
       "slug": "hawkins-tree-service",
       "name": "Hawkins Tree Service LLC",
       "placeId": "ChIJQTgKCf3byIcRqu-rlDPBSko",
