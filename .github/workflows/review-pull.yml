@@ -46,7 +46,6 @@ env:
   EXPECTED_NAME: ${{ inputs.expected_name }}
   REVIEW_TRIGGER: ${{ github.event_name }}
   EVENT_BEFORE: ${{ github.event.before }}
-  REVIEW_WORK: ${{ runner.temp }}/review-data
 
 jobs:
   pull:
@@ -56,6 +55,9 @@ jobs:
       run:
         shell: bash
     steps:
+      - name: Set work folder
+        run: echo "REVIEW_WORK=${RUNNER_TEMP}/review-data" >> "$GITHUB_ENV"
+
       - name: Check out
         uses: actions/checkout@v4
         with:
