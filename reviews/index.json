@@ -123,6 +123,18 @@
       "pulledAt": "2026-11-01T20:54:22.378Z"
     },
     {
+      "slug": "indiana-quality-windows",
+      "name": "Indiana Quality Windows",
+      "placeId": "ChIJgQlrv-WnbIgRsAraNnUTq1E",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 330,
+        "withText": 70,
+        "ratingOnly": 5
+      },
+      "pulledAt": "2026-11-07T03:19:35.945Z"
+    },
+    {
       "slug": "jons-plumbing",
       "name": "Jon's Plumbing, LLC",
       "placeId": "ChIJVVXxT51kz4cRt_W0muFXJbQ",
