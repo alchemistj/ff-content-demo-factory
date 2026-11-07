@@ -99,6 +99,18 @@
       "pulledAt": "2026-11-07T03:07:44.452Z"
     },
     {
+      "slug": "hoosier-windows-and-doors",
+      "name": "Hoosier Windows and Doors",
+      "placeId": "ChIJ3a5RORNba4gRjRahadziQ3I",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 29,
+        "withText": 25,
+        "ratingOnly": 4
+      },
+      "pulledAt": "2026-11-07T03:20:38.184Z"
+    },
+    {
       "slug": "imperial-landscaping",
       "name": "IMPERIAL LANDSCAPING LLC",
       "placeId": "ChIJG59zWFoVgKMRjzvzfqjRykg",

@@ -1,0 +1,26 @@
+{
+  "kind": "google-review-pull-receipt",
+  "status": "ok",
+  "slug": "hoosier-windows-and-doors",
+  "request": {
+    "mapsUrl": "place_id:ChIJ3a5RORNba4gRjRahadziQ3I",
+    "maxReviews": 75
+  },
+  "trigger": "workflow_dispatch",
+  "apify": {
+    "actor": "compass~crawler-google-places",
+    "runId": "NdiBZ7uccOoMqerRE",
+    "datasetId": "Dhy5b2UEIKnqP1KRG",
+    "attempts": 1,
+    "usageUsd": 0.0207
+  },
+  "counts": {
+    "listingTotal": 29,
+    "withText": 25,
+    "ratingOnly": 4
+  },
+  "detail": null,
+  "startedAt": "2026-11-07T03:20:16.444Z",
+  "finishedAt": "2026-11-07T03:20:38.184Z",
+  "githubRunUrl": "https://github.com/alchemistj/ff-content-demo-factory/actions/runs/42333519714"
+}
