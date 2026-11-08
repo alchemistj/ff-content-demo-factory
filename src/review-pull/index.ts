@@ -23,6 +23,7 @@ export {
   MISSING_TOKEN_DETAIL,
   chooseSlug,
   executeReviewPull,
+  rebuildIndex,
   renderReviewsMarkdown,
   type ExecuteReviewPullOptions,
   type GoogleReviewFile,
