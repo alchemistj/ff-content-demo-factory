@@ -1,0 +1,654 @@
+{
+  "kind": "google-review-pull",
+  "version": 1,
+  "slug": "wichita-royal-supply",
+  "place": {
+    "name": "Royal Supply Inc",
+    "placeId": "ChIJ1fuExcHluocRdWR3H1YmQhY",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Royal%20Supply%20Inc&query_place_id=ChIJ1fuExcHluocRdWR3H1YmQhY",
+    "address": "5116 S Broadway #3719, Wichita, KS 67216",
+    "phone": "(316) 524-9335",
+    "rating": 4.5,
+    "totalReviewCount": 75
+  },
+  "pulledAt": "2026-11-08T22:06:33.937Z",
+  "requestedMax": 75,
+  "reviews": [
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tKaWVXaDFPVWxXWlU1b2NpMXlaSEYxU0c4MVNrRRAB",
+      "reviewer": "Jessica W.",
+      "rating": 5,
+      "text": "Great people I love that they really care about what they do. They were very thorough making sure everything worked beautifully before they would just say the job is done! I loved that they took the time to examine every detail of our issue we were having. We are so grateful to now have the heat back on! Thank you guys 😁👍",
+      "publishedAt": "2026-11-05T20:34:29.739Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tKaWVXaDFPVWxXWlU1b2NpMXlaSEYxU0c4MVNrRRAB!2m1!1s0x0:0x164226561f776475!3m1!1s2@1:CAIQACodChtycF9oOkJieWh1OUlWZU5oci1yZHF1SG81SkE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2sxbVowRlJabFY1VHpkVlVXbFJaMUk0Y1hVMVdtYxAB",
+      "reviewer": "Daniel L.",
+      "rating": 5,
+      "text": "My expectations were exceeded! My technician, Jordan, was extremely knowledgeable and very proficient in both diagnosing and repairing my heating and cooling systems. Top notch, friendly, competent service combined with fair pricing is what my experience was. What more could you possibly want?",
+      "publishedAt": "2026-11-02T15:32:50.850Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2sxbVowRlJabFY1VHpkVlVXbFJaMUk0Y1hVMVdtYxAB!2m1!1s0x0:0x164226561f776475!3m1!1s2@1:CAIQACodChtycF9oOk1mZ0FRZlV5TzdVUWlRZ1I4cXU1Wmc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2t4UWJGUkJOVGRhZGxCSmJERmhhR3RCWmxJelVrRRAB",
+      "reviewer": "Linda C.",
+      "rating": 5,
+      "text": "Jordan is very polite, experienced, and thorough.  She came and and fixed the problem that 3 different guys couldn't figure out. I recommend this very reputable company.  Thank you for figuring it out. I'll sure save money on my bill now.",
+      "publishedAt": "2026-10-30T18:07:43.964Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2t4UWJGUkJOVGRhZGxCSmJERmhhR3RCWmxJelVrRRAB!2m1!1s0x0:0x164226561f776475!3m1!1s2@1:CAIQACodChtycF9oOkxQbFRBNTdadlBJbDFhaGtBZlIzUkE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25KNlkyMDNSVzVFUms0NWRqazBRVEV4WlZORExYYxAB",
+      "reviewer": "Jared S.",
+      "rating": 5,
+      "text": "Jordan came out for a pre-winter clean and check on our HVAC system. She was very friendly and knowledgeable. Didn’t try to upsell on anything unneeded and provided helpful advice for upkeep and fully explained everything done. Bit pricey for the service (you pay more if you’re not in the immediate Wichita area) but still very worth it.",
+      "publishedAt": "2026-09-30T15:36:32.206Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25KNlkyMDNSVzVFUms0NWRqazBRVEV4WlZORExYYxAB!2m1!1s0x0:0x164226561f776475!3m1!1s2@1:CAIQACodChtycF9oOnJ6Y203RW5ERk45djk0QTExZVNDLXc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tvMlducENSVmxZUjBwMlYzUk1NbWxwUTJJNGVFRRAB",
+      "reviewer": "tattoo L.",
+      "rating": 5,
+      "text": "The staff here is always so friendly and helpful! They really will go out of their way for their customers. Highly recommend to anyone who owns a mobile home or manages them! --Sleepy Hollow",
+      "publishedAt": "2026-09-17T14:00:34.989Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tvMlducENSVmxZUjBwMlYzUk1NbWxwUTJJNGVFRRAB!2m1!1s0x0:0x164226561f776475!3m1!1s2@1:CAIQACodChtycF9oOko2WnpCRVlYR0p2V3RMMmlpQ2I4eEE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2paUVpYTjRNbE5HVDBKaFZuaEpURVJWZWpRMVNsRRAB",
+      "reviewer": "Brynne C.",
+      "rating": 5,
+      "text": "Jordan at Royal was great! She was friendly,  knowledgeable,  efficient.  She identified the problem with our AC/thermostat in minutes, and did extra maintenance to keep things running smoothly in the future.  She called ahead and was on time. Thank you for your excellent work and professionalism! Same day service was awesome, as well!",
+      "publishedAt": "2026-09-10T21:43:03.053Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2paUVpYTjRNbE5HVDBKaFZuaEpURVJWZWpRMVNsRRAB!2m1!1s0x0:0x164226561f776475!3m1!1s2@1:CAIQACodChtycF9oOjZQZXN4MlNGT0JhVnhJTERVejQ1SlE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25SU1JFWnVaRWRwV0hsRmVWWkNaa2xsWmxVMVUyYxAB",
+      "reviewer": "Marcy H.",
+      "rating": 5,
+      "text": "They were very fast at fixing my central AC unit.  The technician was awesome and very kind and understanding.  She was very thorough in diagnosing the problem and making sure the AC was working well before leaving.  I highly recommend this company!",
+      "publishedAt": "2026-09-10T08:20:10.429Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25SU1JFWnVaRWRwV0hsRmVWWkNaa2xsWmxVMVUyYxAB!2m1!1s0x0:0x164226561f776475!3m1!1s2@1:CAIQACodChtycF9oOnRSREZuZEdpWHlFeVZCZkllZlU1U2c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21jd2JrRkRVVkpqZFdsSVNETTFURkp6V2xwTlFrRRAB",
+      "reviewer": "Bre B.",
+      "rating": 5,
+      "text": "Jordan was so knowledgeable and friendly, and was able to get us fixed up within minutes of being here. She also taught us about what filters to use for our home! She is the best! Thank you!",
+      "publishedAt": "2026-09-08T20:07:19.639Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21jd2JrRkRVVkpqZFdsSVNETTFURkp6V2xwTlFrRRAB!2m1!1s0x0:0x164226561f776475!3m1!1s2@1:CAIQACodChtycF9oOmcwbkFDUVJjdWlISDM1TFJzWlpNQkE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2twdVRIcG1jVkYzVlVOelozYzFWazQxUWxoMU4wRRAB",
+      "reviewer": "Bobbi V.",
+      "rating": 5,
+      "text": "Jordan came out, she got us up and running in no time. You guys are amazing.",
+      "publishedAt": "2026-08-12T19:00:46.488Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2twdVRIcG1jVkYzVlVOelozYzFWazQxUWxoMU4wRRAB!2m1!1s0x0:0x164226561f776475!3m1!1s2@1:CAIQACodChtycF9oOkpuTHpmcVF3VUNzZ3c1Vk41Qlh1N0E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25kbk0zWXdkRFJEVGxBek4zTkRNRmgwWlhGWVJrRRAB",
+      "reviewer": "Connor K.",
+      "rating": 5,
+      "text": "Jordan came out super fast after we reported our AC not working, she was able to diagnosis the issue in about 10 minutes. I’ve worked with other companies before out in Las Vegas, and she was miles ahead of them. Our AC is running strong now thanks to her and Royal.",
+      "publishedAt": "2026-08-11T13:18:19.170Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25kbk0zWXdkRFJEVGxBek4zTkRNRmgwWlhGWVJrRRAB!2m1!1s0x0:0x164226561f776475!3m1!1s2@1:CAIQACodChtycF9oOndnM3YwdDRDTlAzN3NDMFh0ZXFYRkE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xWUlVYaERPRkpTU25ob2FsTTVjMXBxVlVkRFQxRRAB",
+      "reviewer": "Alex B.",
+      "rating": 5,
+      "text": "Jordan is a life saver. She came in, solved the problem, and explained why the problem happened and just had a nice chat. Give this woman a raise!",
+      "publishedAt": "2026-08-10T21:17:59.859Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xWUlVYaERPRkpTU25ob2FsTTVjMXBxVlVkRFQxRRAB!2m1!1s0x0:0x164226561f776475!3m1!1s2@1:CAIQACodChtycF9oOlVRUXhDOFJSSnhoalM5c1pqVUdDT1E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pZNFNFaFRTbFI0WXpoNldtUlFhV3cwVlRsSWRHYxAB",
+      "reviewer": "Rita W.",
+      "rating": 5,
+      "text": "Thank you Jordan!!!! Had 2 other technicians from a different company come out and look at it and they said nothing was wrong it. I’m so happy that Jordan was able to find the leak in the coil and install the new one! It’s amazing to have the A/C working properly after 10 days of 90+ degree weather.  She was amazing 🤩🤩🤩. Amazing customer service and",
+      "publishedAt": "2026-08-04T00:45:36.644Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pZNFNFaFRTbFI0WXpoNldtUlFhV3cwVlRsSWRHYxAB!2m1!1s0x0:0x164226561f776475!3m1!1s2@1:CAIQACodChtycF9oOjY4SEhTSlR4Yzh6WmRQaWw0VTlIdGc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21wVlVVTXpPQzFYVWtvelIxWXlOV3AxYWxseFkxRRAB",
+      "reviewer": "Wyhfyhe_ L.",
+      "rating": 5,
+      "text": "100% recommended - Calling for repairs is really scary because we have all been over charged or fed a line to get more money out of us. They worked on a horrendously hot day to fix my A/C and were budget friendly.  This company was truly God sent!",
+      "publishedAt": "2026-07-28T17:37:30.172Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21wVlVVTXpPQzFYVWtvelIxWXlOV3AxYWxseFkxRRAB!2m1!1s0x0:0x164226561f776475!3m1!1s2@1:CAIQACodChtycF9oOmpVUUMzOC1XUkozR1YyNWp1allxY1E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xGU2RVWlRSMDVxVG5STVdYVXdiMVo1U20xU1NGRRAB",
+      "reviewer": "Bill L.",
+      "rating": 5,
+      "text": "Super people!<br>Well operated business!",
+      "publishedAt": "2026-06-11T22:42:03.969Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xGU2RVWlRSMDVxVG5STVdYVXdiMVo1U20xU1NGRRAB!2m1!1s0x0:0x164226561f776475!3m1!1s2@1:CAIQACodChtycF9oOlFSdUZTR05qTnRMWXUwb1Z5Sm1SSFE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNCcUtMMjN3RRAB",
+      "reviewer": "Dan C.",
+      "rating": 5,
+      "text": "Great place for mobile home products, knowledgeable staff",
+      "publishedAt": "2022-12-15T23:03:00.304Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNCcUtMMjN3RRAB!2m1!1s0x0:0x164226561f776475!3m1!1s2@1:CIHM0ogKEICAgICBqKL23wE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURPdVlmTDd3RRAB",
+      "reviewer": "Carl W.",
+      "rating": 5,
+      "text": "The attendant was very knowledgeable as he helped me.",
+      "publishedAt": "2022-07-09T14:58:59.381Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURPdVlmTDd3RRAB!2m1!1s0x0:0x164226561f776475!3m1!1s2@1:CIHM0ogKEICAgIDOuYfL7wE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURPcWIzV2x3RRAB",
+      "reviewer": "Aaron D.",
+      "rating": 5,
+      "text": "Evan with Royal was a God send for us! He helped get our AC hooked up in our new modular. Over a few phone calls and texts he helped troubleshoot even after hours! Highly recommend!",
+      "publishedAt": "2022-07-08T19:51:14.819Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURPcWIzV2x3RRAB!2m1!1s0x0:0x164226561f776475!3m1!1s2@1:CIHM0ogKEICAgIDOqb3WlwE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNPbnJtSVdBEAE",
+      "reviewer": "Kellogg O.",
+      "rating": 1,
+      "text": "They have absolutely no idea what they are doing when it comes to heating and air. Not friendly and the guy on the phone has terrible communication.",
+      "publishedAt": "2022-06-10T20:16:53.405Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNPbnJtSVdBEAE!2m1!1s0x0:0x164226561f776475!3m1!1s2@1:CIHM0ogKEICAgICOnrmIWA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNPNXNlYzh3RRAB",
+      "reviewer": "Kevin P.",
+      "rating": 5,
+      "text": "Your mobile home repair supply center.  They know their stuff.",
+      "publishedAt": "2022-06-09T01:24:32.789Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNPNXNlYzh3RRAB!2m1!1s0x0:0x164226561f776475!3m1!1s2@1:CIHM0ogKEICAgICO5sec8wE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNPMUs2cVlnEAE",
+      "reviewer": "Mary E.",
+      "rating": 5,
+      "text": "We were wanting to get some prices on exterior door and storm door.",
+      "publishedAt": "2022-06-02T16:51:41.058Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNPMUs2cVlnEAE!2m1!1s0x0:0x164226561f776475!3m1!1s2@1:CIHM0ogKEICAgICO1K6qYg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURta3ViRUxBEAE",
+      "reviewer": "Brian K.",
+      "rating": 5,
+      "text": "Got some friendly helpful people to assist me finially.",
+      "publishedAt": "2022-01-23T17:34:19.827Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURta3ViRUxBEAE!2m1!1s0x0:0x164226561f776475!3m1!1s2@1:CIHM0ogKEICAgIDmkubELA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURtZ292dWRBEAE",
+      "reviewer": "Kim O.",
+      "rating": 4,
+      "text": "They had exactly what I needed.",
+      "publishedAt": "2022-01-22T18:18:54.050Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURtZ292dWRBEAE!2m1!1s0x0:0x164226561f776475!3m1!1s2@1:CIHM0ogKEICAgIDmgovudA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURHMlpqSnRRRRAB",
+      "reviewer": "Daylan H.",
+      "rating": 5,
+      "text": "Very good services",
+      "publishedAt": "2021-12-02T23:42:41.062Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURHMlpqSnRRRRAB!2m1!1s0x0:0x164226561f776475!3m1!1s2@1:CIHM0ogKEICAgIDG2ZjJtQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUM2OExhMEhREAE",
+      "reviewer": "Karen C.",
+      "rating": 5,
+      "text": "We called ahead and our order was ready when we got there",
+      "publishedAt": "2021-08-28T18:48:11.106Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM2OExhMEhREAE!2m1!1s0x0:0x164226561f776475!3m1!1s2@1:CIHM0ogKEICAgIC68La0HQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURhcXFLV0hREAE",
+      "reviewer": "Milton S.",
+      "rating": 5,
+      "text": "A great staff along with quality products very helpful people",
+      "publishedAt": "2021-08-18T21:42:50.922Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURhcXFLV0hREAE!2m1!1s0x0:0x164226561f776475!3m1!1s2@1:CIHM0ogKEICAgIDaqqKWHQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURxMS1xanZRRRAB",
+      "reviewer": "Pearl H.",
+      "rating": 5,
+      "text": "They are alot of help. Got the parts I needed",
+      "publishedAt": "2021-07-18T01:40:27.794Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURxMS1xanZRRRAB!2m1!1s0x0:0x164226561f776475!3m1!1s2@1:CIHM0ogKEICAgIDq1-qjvQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNxcU4zeW5RRRAB",
+      "reviewer": "Shauna S.",
+      "rating": 5,
+      "text": "We work with Royal Supply out of Wichita almost weekly. They are amazing. Any questions I have they are fast to reply, and they ship to our property timely and never have any issues. I always send people their way! Redbud Estates appreciates everything they do!!",
+      "publishedAt": "2021-05-25T15:36:37.347Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNxcU4zeW5RRRAB!2m1!1s0x0:0x164226561f776475!3m1!1s2@1:CIHM0ogKEICAgICqqN3ynQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNLd2Fpd1FnEAE",
+      "reviewer": "Scott T.",
+      "rating": 5,
+      "text": "Fast, friendly service as always!",
+      "publishedAt": "2021-04-07T19:12:07.444Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNLd2Fpd1FnEAE!2m1!1s0x0:0x164226561f776475!3m1!1s2@1:CIHM0ogKEICAgICKwaiwQg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNpa0phRUFnEAE",
+      "reviewer": "Richard H.",
+      "rating": 4,
+      "text": "Good service friendly and helpful",
+      "publishedAt": "2020-11-26T01:36:07.971Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNpa0phRUFnEAE!2m1!1s0x0:0x164226561f776475!3m1!1s2@1:CIHM0ogKEICAgICikJaEAg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNDdWRTZ0NBEAE",
+      "reviewer": "Matt R.",
+      "rating": 5,
+      "text": "Good service!",
+      "publishedAt": "2020-08-28T21:10:44.895Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNDdWRTZ0NBEAE!2m1!1s0x0:0x164226561f776475!3m1!1s2@1:CIHM0ogKEICAgICCudSgCA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNDbWY3b1VBEAE",
+      "reviewer": "Nancy C.",
+      "rating": 5,
+      "text": "Had just what we needed to remodel our Skyline Home!! Great service!!",
+      "publishedAt": "2020-08-28T12:00:04.951Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNDbWY3b1VBEAE!2m1!1s0x0:0x164226561f776475!3m1!1s2@1:CIHM0ogKEICAgICCmf7oUA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURjN05MNmp3RRAB",
+      "reviewer": "Tim K.",
+      "rating": 1,
+      "text": "This place is THE absolute worst. They think they are the only ones who can help mobile homes in Wichita. Over PRICED and do not sell you the Wright products and won't work with you on a return or refund/credit. DO NOT GO HERE/SHOP HERE/ ORDER FROM HERE.",
+      "publishedAt": "2020-05-28T20:56:11.431Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURjN05MNmp3RRAB!2m1!1s0x0:0x164226561f776475!3m1!1s2@1:CIHM0ogKEICAgIDc7NL6jwE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNjdzVXNm9nRRAB",
+      "reviewer": "Anonymous A.",
+      "rating": 2,
+      "text": "Perhaps you should post on your website that you are closed Instead of being open. That would have saved me 2 hours of driving and almost a tank of gas.",
+      "publishedAt": "2020-03-28T15:35:36.059Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNjdzVXNm9nRRAB!2m1!1s0x0:0x164226561f776475!3m1!1s2@1:CIHM0ogKEICAgICcw5W6ogE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUQwZ0t5UGFnEAE",
+      "reviewer": "ghostnight",
+      "rating": 5,
+      "text": "Great place to go to get stuff for your mobile home",
+      "publishedAt": "2019-10-17T07:36:13.561Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQwZ0t5UGFnEAE!2m1!1s0x0:0x164226561f776475!3m1!1s2@1:CIHM0ogKEICAgID0gKyPag%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUM0eDRib3R3RRAB",
+      "reviewer": "Lisa M.",
+      "rating": 5,
+      "text": "Very friendly  and very helpful",
+      "publishedAt": "2019-06-12T01:47:06.616Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUM0eDRib3R3RRAB!2m1!1s0x0:0x164226561f776475!3m1!1s2@1:CIHM0ogKEICAgIC4x4botwE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURJejQzalF3EAE",
+      "reviewer": "Lefler B.",
+      "rating": 3,
+      "text": "Ok",
+      "publishedAt": "2019-01-27T15:23:24.873Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURJejQzalF3EAE!2m1!1s0x0:0x164226561f776475!3m1!1s2@1:CIHM0ogKEICAgIDIz43jQw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNJOS1heGNBEAE",
+      "reviewer": "Larry C.",
+      "rating": 4,
+      "text": "They have what you need, with great knowledgeable , friendly service",
+      "publishedAt": "2018-12-12T12:47:03.200Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNJOS1heGNBEAE!2m1!1s0x0:0x164226561f776475!3m1!1s2@1:CIHM0ogKEICAgICI9-axcA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNJbG9mNnpBRRAB",
+      "reviewer": "Jordan H.",
+      "rating": 5,
+      "text": "The customer sales associates are the best, they are knowledgeable and friendly! Will definatly do all my mobile home improvements with them!",
+      "publishedAt": "2018-11-13T03:52:03.718Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNJbG9mNnpBRRAB!2m1!1s0x0:0x164226561f776475!3m1!1s2@1:CIHM0ogKEICAgICIlof6zAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUR3MlB1bmhRRRAB",
+      "reviewer": "Mark F.",
+      "rating": 4,
+      "text": "I've never had any problems there, I get what I need.",
+      "publishedAt": "2018-10-18T14:01:25.672Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR3MlB1bmhRRRAB!2m1!1s0x0:0x164226561f776475!3m1!1s2@1:CIHM0ogKEICAgIDw2PunhQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUR3anFtTTdRRRAB",
+      "reviewer": "Wichita_Steve",
+      "rating": 5,
+      "text": "They have everything a person needs for trailers.",
+      "publishedAt": "2018-10-11T06:22:30.440Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR3anFtTTdRRRAB!2m1!1s0x0:0x164226561f776475!3m1!1s2@1:CIHM0ogKEICAgIDwjqmM7QE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNRZ3FPQ1pnEAE",
+      "reviewer": "C T.",
+      "rating": 5,
+      "text": "Employees are very helpful here!",
+      "publishedAt": "2018-08-20T12:43:54.007Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNRZ3FPQ1pnEAE!2m1!1s0x0:0x164226561f776475!3m1!1s2@1:CIHM0ogKEICAgICQgqOCZg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNBeU4yNFJnEAE",
+      "reviewer": "michael G.",
+      "rating": 4,
+      "text": "Good place to go to get supplies and they're very helpful",
+      "publishedAt": "2018-07-18T10:24:57.975Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBeU4yNFJnEAE!2m1!1s0x0:0x164226561f776475!3m1!1s2@1:CIHM0ogKEICAgICAyN24Rg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNndTliN3VRRRAB",
+      "reviewer": "Erika A.",
+      "rating": 5,
+      "text": "Great place",
+      "publishedAt": "2018-07-11T19:05:27.279Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNndTliN3VRRRAB!2m1!1s0x0:0x164226561f776475!3m1!1s2@1:CIHM0ogKEICAgICgu9b7uQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURnLThMN1pBEAE",
+      "reviewer": "A",
+      "rating": 5,
+      "text": "Parts place for all mobile homes",
+      "publishedAt": "2018-03-15T04:45:49.961Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURnLThMN1pBEAE!2m1!1s0x0:0x164226561f776475!3m1!1s2@1:CIHM0ogKEICAgIDg-8L7ZA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUN3bmZ2XzJBRRAB",
+      "reviewer": "Donita S.",
+      "rating": 5,
+      "text": "Guys are always nice and helpful when I go in.",
+      "publishedAt": "2017-06-23T03:56:20.836Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN3bmZ2XzJBRRAB!2m1!1s0x0:0x164226561f776475!3m1!1s2@1:CIHM0ogKEICAgICwnfv_2AE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNBb01pSWNnEAE",
+      "reviewer": "James B.",
+      "rating": 4,
+      "text": "Sales staff were very pleasant & helpful.",
+      "publishedAt": "2017-03-09T17:57:35.207Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBb01pSWNnEAE!2m1!1s0x0:0x164226561f776475!3m1!1s2@1:CIHM0ogKEICAgICAoMiIcg%7C%7C?hl=en-US",
+      "language": "en"
+    }
+  ],
+  "ratingOnly": [
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2poaFRHSlFlVzAxZG5WamFWZFNNMnAzVFRacmJGRRAB",
+      "reviewer": "Eugenio R.",
+      "rating": 5,
+      "publishedAt": "2026-07-17T20:59:15.037Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tscE5GRXdjMjVLYzJ0dmNrcHZka0o2VVhaZlJtYxAB",
+      "reviewer": "Tina D.",
+      "rating": 5,
+      "publishedAt": "2026-02-14T19:05:17.849Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURackpIcUpBEAE",
+      "reviewer": "Todd B.",
+      "rating": 5,
+      "publishedAt": "2023-09-26T04:44:51.421Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUMtX1p1M09nEAE",
+      "reviewer": "Norman P.",
+      "rating": 4,
+      "publishedAt": "2022-11-11T16:48:37.916Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNPdWNIYW1BRRAB",
+      "reviewer": "Benjamin G.",
+      "rating": 3,
+      "publishedAt": "2022-06-14T10:32:19.470Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUQybHV5Slh3EAE",
+      "reviewer": "Bonnie M.",
+      "rating": 5,
+      "publishedAt": "2022-05-13T21:48:21.745Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURtN3VqSkpnEAE",
+      "reviewer": "Cynthia S.",
+      "rating": 4,
+      "publishedAt": "2022-01-29T00:51:57.709Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNtc2FHT05BEAE",
+      "reviewer": "Richard L.",
+      "rating": 5,
+      "publishedAt": "2022-01-01T01:00:06.610Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURHbWNLYXBBRRAB",
+      "reviewer": "Denise D.",
+      "rating": 2,
+      "publishedAt": "2021-12-02T18:42:48.968Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNHcExtWmZBEAE",
+      "reviewer": "Brittney",
+      "rating": 5,
+      "publishedAt": "2021-10-20T19:28:13.598Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURxbk9HZ2N3EAE",
+      "reviewer": "Jason W.",
+      "rating": 5,
+      "publishedAt": "2021-07-01T18:05:05.033Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNxcExPMnhnRRAB",
+      "reviewer": "Carol P.",
+      "rating": 5,
+      "publishedAt": "2021-05-27T17:08:28.040Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURLMzlPejNnRRAB",
+      "reviewer": "Jerrelyn C.",
+      "rating": 3,
+      "publishedAt": "2021-05-21T21:21:50.925Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUR5bXBpTS1RRRAB",
+      "reviewer": "Da'mond P.",
+      "rating": 5,
+      "publishedAt": "2021-03-03T22:41:35.865Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUR5dElIVU1REAE",
+      "reviewer": "Cody R.",
+      "rating": 5,
+      "publishedAt": "2021-02-25T22:35:34.389Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUR5dE1DeW1RRRAB",
+      "reviewer": "Robert S.",
+      "rating": 5,
+      "publishedAt": "2021-02-25T19:37:29.085Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURTeDVxc2lRRRAB",
+      "reviewer": "Andrew T.",
+      "rating": 5,
+      "publishedAt": "2021-01-11T16:39:26.264Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNTMHVMWk53EAE",
+      "reviewer": "Jon M.",
+      "rating": 5,
+      "publishedAt": "2020-12-15T22:41:42.804Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNpeU0ycEFnEAE",
+      "reviewer": "Sibyl H.",
+      "rating": 5,
+      "publishedAt": "2020-10-19T19:23:33.537Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURDNTZIY3RRRRAB",
+      "reviewer": "Tomas F.",
+      "rating": 5,
+      "publishedAt": "2020-10-14T16:59:14.378Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURDbXVINkVBEAE",
+      "reviewer": "Dawn L.",
+      "rating": 3,
+      "publishedAt": "2020-09-23T05:18:47.417Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURDZ3JQV3J3RRAB",
+      "reviewer": "Sheryl A.",
+      "rating": 5,
+      "publishedAt": "2020-09-19T15:18:25.935Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNDcXJmQi13RRAB",
+      "reviewer": "C P.",
+      "rating": 5,
+      "publishedAt": "2020-08-19T20:33:16.956Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUMwbTRxQVdBEAE",
+      "reviewer": "Ken H.",
+      "rating": 5,
+      "publishedAt": "2019-10-11T10:01:45.109Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURVZ3BIN0VREAE",
+      "reviewer": "Frances",
+      "rating": 1,
+      "publishedAt": "2019-08-17T21:16:35.685Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNZNktISkx3EAE",
+      "reviewer": "Kurtis V.",
+      "rating": 4,
+      "publishedAt": "2019-03-31T22:19:13.540Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNJOWFTT1lBEAE",
+      "reviewer": "Jessica C.",
+      "rating": 5,
+      "publishedAt": "2018-11-29T21:51:24.573Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNROC02ZDF3RRAB",
+      "reviewer": "Alvia M.",
+      "rating": 4,
+      "publishedAt": "2018-10-08T20:41:09.829Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURRemYtZWlBRRAB",
+      "reviewer": "Matt H.",
+      "rating": 3,
+      "publishedAt": "2017-10-05T10:09:38.656Z"
+    }
+  ]
+}

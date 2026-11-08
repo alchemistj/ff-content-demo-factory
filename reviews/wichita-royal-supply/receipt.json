@@ -1,0 +1,26 @@
+{
+  "kind": "google-review-pull-receipt",
+  "status": "ok",
+  "slug": "wichita-royal-supply",
+  "request": {
+    "mapsUrl": "place_id:ChIJ1fuExcHluocRdWR3H1YmQhY",
+    "maxReviews": 75
+  },
+  "trigger": "push",
+  "apify": {
+    "actor": "compass~crawler-google-places",
+    "runId": "0348jyKeP7V9ctcSF",
+    "datasetId": "7eao5gQhahrsGfS08",
+    "attempts": 1,
+    "usageUsd": 0.043699999999999996
+  },
+  "counts": {
+    "listingTotal": 75,
+    "withText": 46,
+    "ratingOnly": 29
+  },
+  "detail": null,
+  "startedAt": "2026-11-08T22:06:02.787Z",
+  "finishedAt": "2026-11-08T22:06:33.937Z",
+  "githubRunUrl": "https://github.com/alchemistj/ff-content-demo-factory/actions/runs/42528492890"
+}

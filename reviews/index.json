@@ -291,6 +291,18 @@
       "pulledAt": "2026-11-08T22:04:15.734Z"
     },
     {
+      "slug": "wichita-royal-supply",
+      "name": "Royal Supply Inc",
+      "placeId": "ChIJ1fuExcHluocRdWR3H1YmQhY",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 75,
+        "withText": 46,
+        "ratingOnly": 29
+      },
+      "pulledAt": "2026-11-08T22:06:33.937Z"
+    },
+    {
       "slug": "wichita-twg-construction",
       "name": "TWG Construction",
       "placeId": "ChIJ3Y2IRHfjuocRdEKsI5Z8660",
