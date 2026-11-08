@@ -255,6 +255,18 @@
       "pulledAt": "2026-11-08T22:02:04.609Z"
     },
     {
+      "slug": "wichita-gs-gutters",
+      "name": "GS Gutters LLC",
+      "placeId": "ChIJdSs-9d3juocRiudGu11QlVA",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 52,
+        "withText": 36,
+        "ratingOnly": 16
+      },
+      "pulledAt": "2026-11-08T22:02:51.127Z"
+    },
+    {
       "slug": "your-choice-lawncare",
       "name": "Your Choice Lawncare",
       "placeId": "ChIJK5THSLphz4cRYzH1z8Wp88s",

@@ -1,0 +1,26 @@
+{
+  "kind": "google-review-pull-receipt",
+  "status": "ok",
+  "slug": "wichita-gs-gutters",
+  "request": {
+    "mapsUrl": "place_id:ChIJdSs-9d3juocRiudGu11QlVA",
+    "maxReviews": 75
+  },
+  "trigger": "push",
+  "apify": {
+    "actor": "compass~crawler-google-places",
+    "runId": "b4ndINpiYakSxVBQv",
+    "datasetId": "tSN0YAoso2ntwnm1K",
+    "attempts": 1,
+    "usageUsd": 0.0322
+  },
+  "counts": {
+    "listingTotal": 52,
+    "withText": 36,
+    "ratingOnly": 16
+  },
+  "detail": null,
+  "startedAt": "2026-11-08T22:02:29.058Z",
+  "finishedAt": "2026-11-08T22:02:51.127Z",
+  "githubRunUrl": "https://github.com/alchemistj/ff-content-demo-factory/actions/runs/42528167282"
+}
