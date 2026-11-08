@@ -243,6 +243,18 @@
       "pulledAt": "2026-10-25T02:02:27.141Z"
     },
     {
+      "slug": "wichita-farha-hometrends",
+      "name": "Farha HomeTrends",
+      "placeId": "ChIJq6qqqn7kuocR_Z8vzcJEikY",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 26,
+        "withText": 24,
+        "ratingOnly": 2
+      },
+      "pulledAt": "2026-11-08T22:02:04.609Z"
+    },
+    {
       "slug": "your-choice-lawncare",
       "name": "Your Choice Lawncare",
       "placeId": "ChIJK5THSLphz4cRYzH1z8Wp88s",
