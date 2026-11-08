@@ -291,6 +291,18 @@
       "pulledAt": "2026-11-08T22:03:30.372Z"
     },
     {
+      "slug": "wichita-wichita-home-works",
+      "name": "Wichita Home Works LLC",
+      "placeId": "ChIJy03xs3bmuocRP0byT8BN-aQ",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 230,
+        "withText": 74,
+        "ratingOnly": 1
+      },
+      "pulledAt": "2026-11-08T22:04:58.917Z"
+    },
+    {
       "slug": "your-choice-lawncare",
       "name": "Your Choice Lawncare",
       "placeId": "ChIJK5THSLphz4cRYzH1z8Wp88s",

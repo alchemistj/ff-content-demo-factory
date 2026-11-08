@@ -1,0 +1,26 @@
+{
+  "kind": "google-review-pull-receipt",
+  "status": "ok",
+  "slug": "wichita-wichita-home-works",
+  "request": {
+    "mapsUrl": "place_id:ChIJy03xs3bmuocRP0byT8BN-aQ",
+    "maxReviews": 75
+  },
+  "trigger": "push",
+  "apify": {
+    "actor": "compass~crawler-google-places",
+    "runId": "r2wx34RRX0IM3lg34",
+    "datasetId": "UPqSWsQRGYFxSyEHr",
+    "attempts": 1,
+    "usageUsd": 0.0002
+  },
+  "counts": {
+    "listingTotal": 230,
+    "withText": 74,
+    "ratingOnly": 1
+  },
+  "detail": null,
+  "startedAt": "2026-11-08T22:04:37.819Z",
+  "finishedAt": "2026-11-08T22:04:58.917Z",
+  "githubRunUrl": "https://github.com/alchemistj/ff-content-demo-factory/actions/runs/42528356786"
+}
