@@ -267,6 +267,18 @@
       "pulledAt": "2026-11-08T22:02:51.127Z"
     },
     {
+      "slug": "wichita-modern-glass-structures",
+      "name": "Modern Glass Structures",
+      "placeId": "ChIJY1Do0-fluocRjIT-U7NNDC0",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 25,
+        "withText": 14,
+        "ratingOnly": 11
+      },
+      "pulledAt": "2026-11-08T22:04:15.734Z"
+    },
+    {
       "slug": "wichita-twg-construction",
       "name": "TWG Construction",
       "placeId": "ChIJ3Y2IRHfjuocRdEKsI5Z8660",

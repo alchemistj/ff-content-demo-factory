@@ -1,0 +1,26 @@
+{
+  "kind": "google-review-pull-receipt",
+  "status": "ok",
+  "slug": "wichita-modern-glass-structures",
+  "request": {
+    "mapsUrl": "place_id:ChIJY1Do0-fluocRjIT-U7NNDC0",
+    "maxReviews": 75
+  },
+  "trigger": "push",
+  "apify": {
+    "actor": "compass~crawler-google-places",
+    "runId": "vbE3QrzRN8qwZJD9U",
+    "datasetId": "SyZwQyQsfXNo6EL4h",
+    "attempts": 1,
+    "usageUsd": 0.0002
+  },
+  "counts": {
+    "listingTotal": 25,
+    "withText": 14,
+    "ratingOnly": 11
+  },
+  "detail": null,
+  "startedAt": "2026-11-08T22:03:54.302Z",
+  "finishedAt": "2026-11-08T22:04:15.734Z",
+  "githubRunUrl": "https://github.com/alchemistj/ff-content-demo-factory/actions/runs/42528292832"
+}
