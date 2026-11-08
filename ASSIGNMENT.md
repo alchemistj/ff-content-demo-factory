@@ -61,3 +61,5 @@ Canonical craft-guide wording and the Springfield example library live in `docs/
 - Pull 50 businesses per scout search (trade + city). Work from the bottom: check rank 50 first, then 49, 48 and up, and take the first ones that qualify. Lower-ranked businesses have the most to gain.
 - Keep a ledger per search on the `scout-data` branch (`scout/<slug>/ledger.json` and `ledger.md`): every rank checked, with status picked / qualified-backlog / disqualified and a one-line reason, plus `next_start_rank` so the next day's run continues upward from where the last one stopped.
 - Qualified businesses not picked today stay in the backlog for the next run.
+- Never filter the search by Google category. Owners often pick the wrong primary category, so real prospects hide under the wrong one. Judge each business by its name, website and reviews instead.
+- Find the owner's first name in the reviews and the owner's replies to reviews too, not only on the website (reviews named the owner for two of four businesses in the Nov 7 run).
