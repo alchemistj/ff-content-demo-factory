@@ -243,6 +243,18 @@
       "pulledAt": "2026-10-25T02:02:27.141Z"
     },
     {
+      "slug": "wichita-apex-remodeling-and-contracting",
+      "name": "Apex Remodeling and Contracting LLC",
+      "placeId": "ChIJuz5eUqzXuocRk2oNzeafPic",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 128,
+        "withText": 69,
+        "ratingOnly": 6
+      },
+      "pulledAt": "2026-11-08T22:05:50.985Z"
+    },
+    {
       "slug": "wichita-farha-hometrends",
       "name": "Farha HomeTrends",
       "placeId": "ChIJq6qqqn7kuocR_Z8vzcJEikY",
