@@ -267,6 +267,18 @@
       "pulledAt": "2026-11-08T22:02:51.127Z"
     },
     {
+      "slug": "wichita-twg-construction",
+      "name": "TWG Construction",
+      "placeId": "ChIJ3Y2IRHfjuocRdEKsI5Z8660",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 32,
+        "withText": 29,
+        "ratingOnly": 3
+      },
+      "pulledAt": "2026-11-08T22:03:30.372Z"
+    },
+    {
       "slug": "your-choice-lawncare",
       "name": "Your Choice Lawncare",
       "placeId": "ChIJK5THSLphz4cRYzH1z8Wp88s",

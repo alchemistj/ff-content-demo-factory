@@ -1,0 +1,26 @@
+{
+  "kind": "google-review-pull-receipt",
+  "status": "ok",
+  "slug": "wichita-twg-construction",
+  "request": {
+    "mapsUrl": "place_id:ChIJ3Y2IRHfjuocRdEKsI5Z8660",
+    "maxReviews": 75
+  },
+  "trigger": "push",
+  "apify": {
+    "actor": "compass~crawler-google-places",
+    "runId": "9OHddDYAtD3fOVg4h",
+    "datasetId": "OowwTDD2NvHQ2akVi",
+    "attempts": 1,
+    "usageUsd": 0.022199999999999998
+  },
+  "counts": {
+    "listingTotal": 32,
+    "withText": 29,
+    "ratingOnly": 3
+  },
+  "detail": null,
+  "startedAt": "2026-11-08T22:03:09.335Z",
+  "finishedAt": "2026-11-08T22:03:30.372Z",
+  "githubRunUrl": "https://github.com/alchemistj/ff-content-demo-factory/actions/runs/42528228879"
+}
