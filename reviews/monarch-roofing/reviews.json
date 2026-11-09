@@ -1,0 +1,612 @@
+{
+  "kind": "google-review-pull",
+  "version": 1,
+  "slug": "monarch-roofing",
+  "place": {
+    "name": "Monarch Roofing & Construction",
+    "placeId": "ChIJd6I2UHfjuocRn5blnlN8N-0",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Monarch%20Roofing%20%26%20Construction&query_place_id=ChIJd6I2UHfjuocRn5blnlN8N-0",
+    "address": "200 N Broadway Ave 6th Floor suite 611, Wichita, KS 67202",
+    "phone": "(316) 223-3575",
+    "rating": 4.9,
+    "totalReviewCount": 60
+  },
+  "pulledAt": "2026-11-09T17:55:50.588Z",
+  "requestedMax": 100,
+  "reviews": [
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xGWlVIQlpRMFp2WWxRd1NUUkxWalpEUVhVNFFuYxAB",
+      "reviewer": "Claudia",
+      "rating": 5,
+      "text": "Me gustó el trabajo que le hicieron al techo de mi casa, Cesar es una persona muy amable y profesional.<br>Hicieron tan buen trabajo que le recomendé esta compañía a mi cuñada.<br>Super 100%",
+      "publishedAt": "2026-08-14T16:53:18.329Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xGWlVIQlpRMFp2WWxRd1NUUkxWalpEUVhVNFFuYxAB!2m1!1s0x0:0xed377c539ee5969f!3m1!1s2@1:CAIQACodChtycF9oOlFZUHBZQ0ZvYlQwSTRLVjZDQXU4Qnc%7C%7C?hl=en-US",
+      "language": "es"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25odGNrNWlaMTluUkd4ME5rc3hUM2xPVkZoR2IyYxAB",
+      "reviewer": "Jesse H.",
+      "rating": 5,
+      "text": "Our entire experience was great.  Cesar was very attentive to our needs and the crew was hard working and professional every step of the way.  This company followed through with everything it promised.  Our new roof looks great and all.leaks are gone.  Thank you!!",
+      "publishedAt": "2026-06-22T22:25:01.825Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25odGNrNWlaMTluUkd4ME5rc3hUM2xPVkZoR2IyYxAB!2m1!1s0x0:0xed377c539ee5969f!3m1!1s2@1:CAIQACodChtycF9oOnhtck5iZ19nRGx0NksxT3lOVFhGb2c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pGUU5IZ3lOMVpsZUdKS2IzbEpVVE5GVmpBd05YYxAB",
+      "reviewer": "Austin L.",
+      "rating": 5,
+      "text": "Working with Monarch was quick and easy. Cesar was friendly, knowledgeable, and always kept me informed throughout the process. The work on my roof and gutters exceded my expectations. I’m very happy I chose them and would highly recommend!",
+      "publishedAt": "2026-04-30T00:12:42.271Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pGUU5IZ3lOMVpsZUdKS2IzbEpVVE5GVmpBd05YYxAB!2m1!1s0x0:0xed377c539ee5969f!3m1!1s2@1:CAIQACodChtycF9oOjFQNHgyN1ZleGJKb3lJUTNFVjAwNXc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2s5YVlXUkZXWFo1V0dwWFNIcERhRXBpYjJ0cE1VRRAB",
+      "reviewer": "Tammy",
+      "rating": 5,
+      "text": "Need a new roof monarch are your guys.<br>They did our rough about a month ago they were very polite they did a great job and they really did a great job at cleaning up.<br>You guys are great thanks!",
+      "publishedAt": "2026-04-24T03:13:04.210Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2s5YVlXUkZXWFo1V0dwWFNIcERhRXBpYjJ0cE1VRRAB!2m1!1s0x0:0xed377c539ee5969f!3m1!1s2@1:CAIQACodChtycF9oOk9aYWRFWXZ5WGpXSHpDaEpib2tpMUE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT205UWVEVTRXbE5VU25KNGJVbHJVa3B5WXpKcE1sRRAB",
+      "reviewer": "Kendall S.",
+      "rating": 5,
+      "text": "Monarch Roofing has been fantastic! Cesar is very easy to work with, and makes the whole process easy guiding you through step by step. He also is good dealing with the insurance company and making that process easy as well. I would recommend them to anyone!",
+      "publishedAt": "2026-04-23T21:16:22.689Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT205UWVEVTRXbE5VU25KNGJVbHJVa3B5WXpKcE1sRRAB!2m1!1s0x0:0xed377c539ee5969f!3m1!1s2@1:CAIQACodChtycF9oOm9QeDU4WlNUSnJ4bUlrUkpyYzJpMlE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2paUFh6Y3lUemhNYjBaSlJVSmxabkprTm1NM00yYxAB",
+      "reviewer": "Daisy T.",
+      "rating": 5,
+      "text": "We had a great experience with Monarch Roofing & Construction. They were efficient, stayed on schedule, and got our roof replaced in time for us to list our home. Highly recommend",
+      "publishedAt": "2026-04-23T20:45:41.900Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2paUFh6Y3lUemhNYjBaSlJVSmxabkprTm1NM00yYxAB!2m1!1s0x0:0xed377c539ee5969f!3m1!1s2@1:CAIQACodChtycF9oOjZPXzcyTzhMb0ZJRUJlZnJkNmM3M2c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT20xcWMxTjFPVEZuY1VaMGMzZElNRkJhTWxkSVQxRRAB",
+      "reviewer": "Mike C.",
+      "rating": 1,
+      "text": "New fence and new roofs finished yesterday and looks wonderful.  Thank you to the Monarch Roofing & Construction crew for the good job and hard work in extreme temperatures and especially Cesar Verdin for all your help in getting things covered and done.  I would highly recommend them for your roofing and construction needs.<br>UPDATE:  Problems that came up after the initial review was posted. 1. Noticed nails missing in fence boards. Inspected the complete fence and found a total of 54 nails missing and some not completely set. They did come finish the nailing after I had to take my time to locate and mark the missing nails, which was not my job and shouldn't have had to do.  2. Had to use a magnet and picked up handfuls of nails out of my yard for 2 days after the roofing was completed.  3. Two turbine vents were installed over the attached garage for better venting of the garage. They were not installed level as should have been.  Had to send Cesar a youtube video showing how to install them correctly.  Basses were not installed correctly to begin with, not clocked properly for the pitch of the roof, but luckily we're still able to be adjusted to level without tearing the roof back off.  They did come back and adjust after being shown how via the video.  4.  Guttering crew came to do gutters, downspouts and were supposedly two metal wraps on eaves.  Parked their truck in my front yard, which was soft from recent rains, and put tire ruts through my yard.  I then had to try communicating with them, none of them spoke English, as to what the job involved.  I think they did a decent job on Guttering but didn't get the eaves wrapped.  So after they were done and gone, and it was going into nighttime,  I went to walk around the house and look at the gutters.  Didn't make it 10 steps into the yard and had a 2\" screw shoot up through my shoe. Luckily I was able to shift my weight so it missed going in my foot. So I got out my magnet again and spent several hours at night picking up screws, nails and debris.  Next day I spent a few more hours of my time going through the yard picking up more screws, nails and debris.  Many were picked up closer to the street than the house like they had been strewn across the yard. By the time I felt like I might have made my yard a little safer to walk in and the driveway safer to drive on I had picked up 2 lbs of screws, nails and metal trimming debris.  I think, or hope,  they did a good job on the roofing, fence and guttering but the aftermath of each phase was not too pleasant for me, the homeowner.  ANOTHER UPDATE:  MY WIFE ALOS HAD HIM PUT A ROOF ON HER PARENTS HOUSE IN HAYSVILLE.  IN SELLING THE HOME, AND UPON AN INSPECTION, WE FOUND THAT THE ROOF WAS NOT INSTALLED PER CURRENT CODES.  TRIED CALLING CESAR SEVERAL TIMES AND ALSO LEFT SEVERAL MESSAGES WITH NO RETURN CALL OR MESSAGE.  THE REALTOR WAS FINALLY ABLE TO MAKE CONTACT WITH HIM, BECAUSE HE DIDN'T KNOW WHO SHE WAS, AND HIS REPLY TO HER WAS \"IT MUST HAVE SLIPPED THROUGH THE CRACKS.  THIS ID DEFINITELY A BUYER BE WARE COMPANY TO DO BUSINESS WITH.  WE WILL BE FILING A COMPLAINT WITH THE CITY OF HAYSVILLE AS WELL AS THE CITY OF WICHITA PERMIT AND CODE ENFORCEMENT DIVISIONS.  ********BEWARE OF DOING ANY BUSINESS WITH MONARCH CONSTRUCTION AND ROOFING********   I HOPE THIS REVIEW SAVES OTHER UNSUSPECTING HOMEOWNERS FROM HIRING THIS SUBPAR COMPANY FOR ANY WORK WHATSOEVER.   ************ FOR YOUR OWN SAKE, BEWARE, JUST BEWARE***********",
+      "publishedAt": "2026-03-06T17:06:19.615Z",
+      "ownerResponse": "Thank you so much! We’re glad everything turned out great and really appreciate you recognizing the crew’s hard work. Especially in that heat! Big thanks from all of us for trusting Monarch Roofing & Construction.<br><br>— The Monarch Team",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT20xcWMxTjFPVEZuY1VaMGMzZElNRkJhTWxkSVQxRRAB!2m1!1s0x0:0xed377c539ee5969f!3m1!1s2@1:CAIQACodChtycF9oOm1qc1N1OTFncUZ0c3dIMFBaMldIT1E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xKSmNsOUlia1J3UzFFMFYxZHNhbFZLYjFSbVdIYxAB",
+      "reviewer": "juvenal F.",
+      "rating": 5,
+      "text": "Mother’s house was leaking after recent hail storm. Was told from an out of town contractor that the roof whole was damaged and bid for a full replacement.<br>Got a second bid from local company MONARCH ROOFING and was completely honest and only needed a few repairs saved us thousands and Defntly will be referring him to family.",
+      "publishedAt": "2026-03-06T03:13:29.707Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xKSmNsOUlia1J3UzFFMFYxZHNhbFZLYjFSbVdIYxAB!2m1!1s0x0:0xed377c539ee5969f!3m1!1s2@1:CAIQACodChtycF9oOlJJcl9IbkRwS1E0V1dsalVKb1RmWHc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tOVFJuYzFNRmQwWW05aFFWRkhURkZWYmsxd2RsRRAB",
+      "reviewer": "Juan S.",
+      "rating": 5,
+      "text": "I couldn't be more pleased with the service from Monarch Roofing.  Unfortunately,  I had a poor experience before with  Quality Roofing which installed a deficient roof.<br>Monarch Roofing provided a total replacement,  and the quality is unmatched. They installed  shingles Tamko Class 4 material, highly resistant to impact,  new gutters and the finish was perfect,  with exceptional cleanup.  Special thanks to Mr. Cesar Verdin,  the owner, for his personal attention and for always being attentive to any call,  message or email. Thank you Cesar.<br>I highly recommend Monarch Roofing services<br>Juan Carlos Salmeron<br>Realtor<br><br>No podría estar más satisfecho con el servicio de Monarch Roofing. Desafortunadamente, tuve una mala experiencia con Quality Roofing, que instaló un techo deficiente.<br>Monarch Roofing realizó un reemplazo total y la calidad es inigualable. Instalaron shingles Tamko Clase 4,  altamente resistentes a impactos, canaletas (gutters) nuevas y el acabado fue perfecto, con una limpieza excepcional. Un agradecimiento especial a Sr. César Verdín, el propietario, por su atención personalizada y por estar siempre atento a cualquier llamada, mensaje o correo electrónico. Gracias César.<br>Recomiendo ampliamente los servicios de Monarch Roofing.<br>Juan Carlos Salmerón<br>Agente inmobiliario",
+      "publishedAt": "2026-03-04T16:25:24.028Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tOVFJuYzFNRmQwWW05aFFWRkhURkZWYmsxd2RsRRAB!2m1!1s0x0:0xed377c539ee5969f!3m1!1s2@1:CAIQACodChtycF9oOkNTRnc1MFd0Ym9hQVFHTFFVbk1wdlE%7C%7C?hl=en-US",
+      "language": "es"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25OemNtNTZTa0p2YkVoVmJHOVdhblJCYjFoNWFHYxAB",
+      "reviewer": "Ema",
+      "rating": 5,
+      "text": "The crew had great customer service and was professional and amazing. They finished the job in time and gave really good results.",
+      "publishedAt": "2025-11-30T03:11:06.214Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25OemNtNTZTa0p2YkVoVmJHOVdhblJCYjFoNWFHYxAB!2m1!1s0x0:0xed377c539ee5969f!3m1!1s2@1:CAIQACodChtycF9oOnNzcm56SkJvbEhVbG9WanRBb1h5aGc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pORmVrWmpXVjlCUWxCbFoydE9XSFZKVW5VNWJGRRAB",
+      "reviewer": "Hortensia C.",
+      "rating": 5,
+      "text": "This company has been great to work and are always in contact with me about every step and what's being done. They made replacing my roof and gutters extremely easy. Thank you to Cesar and his whole crew.",
+      "publishedAt": "2025-10-07T14:59:13.861Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pORmVrWmpXVjlCUWxCbFoydE9XSFZKVW5VNWJGRRAB!2m1!1s0x0:0xed377c539ee5969f!3m1!1s2@1:CAIQACodChtycF9oOjNFekZjWV9BQlBlZ2tOWHVJUnU5bFE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2kweFJtSnJXVzgzVTA1VVVVOVpTekY2YkhwWFkxRRAB",
+      "reviewer": "Francisco T.",
+      "rating": 5,
+      "text": "I had Cesar with Monarch Roofing come out to a project to help identify a water leak. I only had to give him a brief overview of the issue, and he immediately pinpointed the problem. His experience and knowledge were clear from the start.<br><br>Cesar was quick to get his crew scheduled, and they completed the work in a timely and professional manner. I really appreciated the responsiveness and how smoothly everything went from identifying the issue to the repair.<br><br>Highly recommend Cesar and Monarch Roofing if you need someone reliable, efficient, and knowledgeable for roofing issues.",
+      "publishedAt": "2025-09-25T11:21:23.702Z",
+      "ownerResponse": "Thank you for the detailed feedback — we really appreciate it. Cesar takes pride in being responsive and solution-oriented, and we’re glad it made a difference for your project. It means a lot to be recognized for the way we work, and we’re grateful for the recommendation!<br><br>— Monarch Roofing & Construction",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2kweFJtSnJXVzgzVTA1VVVVOVpTekY2YkhwWFkxRRAB!2m1!1s0x0:0xed377c539ee5969f!3m1!1s2@1:CAIQACodChtycF9oOi0xRmJrWW83U05UUU9ZSzF6bHpXY1E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xsUldGRjVkWGh6T1hCNFdUbDRjVm8zVmtsRFgwRRAB",
+      "reviewer": "Rosario V.",
+      "rating": 5,
+      "text": "The team is knowledgeable, professional, and takes the time to explain the entire process clearly. They’re honest, reliable, and truly care about delivering quality work. Highly recommend them if you're looking for a roofing contractor you can trust.",
+      "publishedAt": "2025-09-24T17:57:11.524Z",
+      "ownerResponse": "Thank you for the kind words! We take a lot of pride in making sure our customers feel informed and confident every step of the way. Honesty and quality are what we stand for, so it means a lot to hear that came through. We truly appreciate the recommendation!<br><br>— Monarch Roofing & Construction",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xsUldGRjVkWGh6T1hCNFdUbDRjVm8zVmtsRFgwRRAB!2m1!1s0x0:0xed377c539ee5969f!3m1!1s2@1:CAIQACodChtycF9oOllRWFF5dXhzOXB4WTl4cVo3VklDX0E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2t4Zk0yZEpWMmszTWpVeGVUaHhjMWQxY0U1eFdWRRAB",
+      "reviewer": "Thuyanh V.",
+      "rating": 5,
+      "text": "I prefer to support local own business. The owner is very supportive. He suggests the best options that can fit my situation. I really appreciate his kindness.",
+      "publishedAt": "2025-09-24T17:53:21.305Z",
+      "ownerResponse": "We really appreciate your support — it means a lot as a locally owned business. We're glad we could find the right solution for your situation, and we'll always be here if you need anything down the road. Thanks again for choosing Monarch!<br><br>— Monarch Roofing & Construction",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2t4Zk0yZEpWMmszTWpVeGVUaHhjMWQxY0U1eFdWRRAB!2m1!1s0x0:0xed377c539ee5969f!3m1!1s2@1:CAIQACodChtycF9oOkxfM2dJV2k3MjUxeThxc1d1cE5xWVE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2s5MFVUSTVPVVZHT1RSMmRHUnJUbTFpTlc4MFNrRRAB",
+      "reviewer": "Noel E.",
+      "rating": 5,
+      "text": "The roofers came in early just before I went in for work and were done by the time I got home!! Everything was cleaned up and the roof looked incredible. Loved it!",
+      "publishedAt": "2025-09-24T17:11:11.432Z",
+      "ownerResponse": "That’s awesome to hear! We’re glad the crew could get it done fast and leave things spotless — even better that you came home to a brand new roof you love. Thanks for trusting Monarch!<br><br>— Monarch Roofing & Construction",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2s5MFVUSTVPVVZHT1RSMmRHUnJUbTFpTlc4MFNrRRAB!2m1!1s0x0:0xed377c539ee5969f!3m1!1s2@1:CAIQACodChtycF9oOk90UTI5OUVGOTR2dGRrTm1iNW80SkE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tWNFYzUkpORzQzYTNCRFFuRkdhakZ2V0dsVFdtYxAB",
+      "reviewer": "Brian A.",
+      "rating": 5,
+      "text": "Very friendly and helpful crew. Answered all my questions and we're on time and I was very satisfied with the results of their work. I would hire them again.",
+      "publishedAt": "2025-09-04T22:59:38.261Z",
+      "ownerResponse": "Thanks for taking the time to leave this! We’re glad the crew took good care of you and that you’re happy with the results. We’d be honored to work with you again anytime.<br><br>— Monarch Roofing & Construction",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tWNFYzUkpORzQzYTNCRFFuRkdhakZ2V0dsVFdtYxAB!2m1!1s0x0:0xed377c539ee5969f!3m1!1s2@1:CAIQACodChtycF9oOkV4V3RJNG43a3BDQnFGajFvWGlTWmc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21seWJFcEJOVTF0UWpkbE1USnlNMEY0ZVhoeFJIYxAB",
+      "reviewer": "Kevin M.",
+      "rating": 5,
+      "text": "Cesar was super nice & friendly from the start. He explained everything very well. It took some time for us to get thru it but Cesar kept checking weekly. Monarch crew did a super job @ getting it done in one day for a bigger house! Thank you",
+      "publishedAt": "2025-09-03T01:34:43.319Z",
+      "ownerResponse": "Thanks for the kind words! Glad to hear Cesar was helpful throughout the whole process — he’s great about staying in touch. We’re proud of the crew for knocking it out in a day, especially on a bigger roof! Really appreciate you choosing Monarch.<br><br>— Monarch Roofing & Construction",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21seWJFcEJOVTF0UWpkbE1USnlNMEY0ZVhoeFJIYxAB!2m1!1s0x0:0xed377c539ee5969f!3m1!1s2@1:CAIQACodChtycF9oOmlybEpBNU1tQjdlMTJyM0F4eXhxRHc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25wb2FERTJaSEZ5UlUxVGNtZHJZakJHWlUxSk1tYxAB",
+      "reviewer": "Wayne G.",
+      "rating": 5,
+      "text": "Very happy with my experience working with monarch. Cesar was very professional and was there for all my questions and concerns throughout the whole process. The crew was very respectful and did an awesome job. I was really surprised at the cleanup after the job. Couldn't even tell they were there. I would recommend this company.",
+      "publishedAt": "2025-08-27T20:30:26.230Z",
+      "ownerResponse": "Really appreciate you sharing your experience! Cesar always makes it a point to be available and we're glad the crew lived up to the standard. Clean-up is something we take seriously, so it's great to hear you noticed. Thanks again for trusting us and for the recommendation!<br><br>— Monarch Roofing & Construction",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25wb2FERTJaSEZ5UlUxVGNtZHJZakJHWlUxSk1tYxAB!2m1!1s0x0:0xed377c539ee5969f!3m1!1s2@1:CAIQACodChtycF9oOnpoaDE2ZHFyRU1TcmdrYjBGZU1JMmc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21sUGIwcFlORzR4UTFCTFR6UlRaVzlUUXpoTk0wRRAB",
+      "reviewer": "Kayla H.",
+      "rating": 5,
+      "text": "I had put off getting my roof replaced for the longest time because I didn’t want to hassle with it and the process. Caesar made the process very easy, they were out here within the week getting my roof done and did an excellent job! I recommend Monarch Roofing for any of your roofing needs!!",
+      "publishedAt": "2025-08-25T20:59:27.775Z",
+      "ownerResponse": "Thank you for the kind words! We're so glad we could make the process easy and that you're happy with the results. Appreciate the recommendation, it means a lot!<br><br>— Monarch Roofing & Construction",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21sUGIwcFlORzR4UTFCTFR6UlRaVzlUUXpoTk0wRRAB!2m1!1s0x0:0xed377c539ee5969f!3m1!1s2@1:CAIQACodChtycF9oOmlPb0pYNG4xQ1BLTzRTZW9TQzhNM0E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25ZNU4wSlljVWx3WTJ3d2VVSkJObkZDYVZneFgwRRAB",
+      "reviewer": "John F.",
+      "rating": 5,
+      "text": "Highly recommend Monarch Roofing & Construction! Cesar Verdin listened to our roof replacement needs and met every expectation along the way. Great communication and execution! Our situation required a fast turnaround to get a new roof installed in order to meet a previously scheduled closing date for the sale of our home. Cesar's crew was on-task early last Saturday to begin work, by 4pm when the last vehicle rolled away we had a brand new roof on both house and shed. I personally walked the roof with Cesar upon completion, where he also pointed out several items where his crew went above and beyond the scope of work that will ensure this roof remains solid for many many years. After this experience, I also recommended a niece to use Monarch Roofing for her own roof replacement, which is currently underway. Thanks again Cesar for a job well done and taking the time to understand and meet our needs for the new roof!",
+      "publishedAt": "2025-08-15T16:14:44.282Z",
+      "ownerResponse": "Wow, thank you John for the amazing feedback! We’re so glad Cesar and the crew were able to deliver exactly what you needed, especially under a tight deadline. It means a lot to us that you noticed the extra effort and trusted Monarch not only with your home, but also recommended us to your family. We truly appreciate your support!<br><br>— Monarch Roofing & Construction",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25ZNU4wSlljVWx3WTJ3d2VVSkJObkZDYVZneFgwRRAB!2m1!1s0x0:0xed377c539ee5969f!3m1!1s2@1:CAIQACodChtycF9oOnY5N0JYcUlwY2wweUJBNnFCaVgxX0E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2taTVFsZ3lTbFYwV1Rkc2MwOUNia2xqWW0xd1NGRRAB",
+      "reviewer": "Jasmin V.",
+      "rating": 5,
+      "text": "Met with the owner extremely helpful and very knowledgeable of his work, met the deadlines and gave a great and reasonable estimate. I absolutely recommend.",
+      "publishedAt": "2025-08-08T03:23:50.114Z",
+      "ownerResponse": "Thank you for the great feedback! We’re glad everything went smoothly and that you felt confident in the process. We appreciate the recommendation and your trust in our team!<br><br>— Monarch Roofing & Construction",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2taTVFsZ3lTbFYwV1Rkc2MwOUNia2xqWW0xd1NGRRAB!2m1!1s0x0:0xed377c539ee5969f!3m1!1s2@1:CAIQACodChtycF9oOkZMQlgySlV0WTdsc09CbkljYm1wSFE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tScFoyeFpaM2hKUmtkSVJ6SXRWSGxJTlRRM1JsRRAB",
+      "reviewer": "Pablo L.",
+      "rating": 5,
+      "text": "Excellent services and great experience with personal!",
+      "publishedAt": "2025-08-07T21:35:24.549Z",
+      "ownerResponse": "Thanks so much! We’re glad you had a great experience with our team. We truly appreciate your support!<br><br>— Monarch Roofing & Construction",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tScFoyeFpaM2hKUmtkSVJ6SXRWSGxJTlRRM1JsRRAB!2m1!1s0x0:0xed377c539ee5969f!3m1!1s2@1:CAIQACodChtycF9oOkRpZ2xZZ3hJRkdIRzItVHlINTQ3RlE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2s5MGRUZEpORVp6Y1c1M1JqTjFiRGg0V25wMFRVRRAB",
+      "reviewer": "Gary H.",
+      "rating": 5,
+      "text": "Great company amazing owner. Would recommend This company to do any construction/remodel jobs. Cesar constantly kept me informed of the progress.",
+      "publishedAt": "2025-08-07T20:58:20.800Z",
+      "ownerResponse": "We really appreciate the kind words! We work hard to keep everyone in the loop, and it means a lot to know you felt taken care of. Thanks for the recommendation and for trusting Monarch with your project!<br><br>— Monarch Roofing & Construction",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2s5MGRUZEpORVp6Y1c1M1JqTjFiRGg0V25wMFRVRRAB!2m1!1s0x0:0xed377c539ee5969f!3m1!1s2@1:CAIQACodChtycF9oOk90dTdJNEZzcW53RjN1bDh4Wnp0TUE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xkd2FqUmxNR3AyWVhjNFQxYzNWVTQ1WVRZeWFVRRAB",
+      "reviewer": "jared S.",
+      "rating": 5,
+      "text": "Monarch roofing and construction is top notch! Ceasar was amazing to work with!",
+      "publishedAt": "2025-07-30T00:16:53.889Z",
+      "ownerResponse": "Thanks so much Jared!<br><br>— Monarch Roofing",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xkd2FqUmxNR3AyWVhjNFQxYzNWVTQ1WVRZeWFVRRAB!2m1!1s0x0:0xed377c539ee5969f!3m1!1s2@1:CAIQACodChtycF9oOldwajRlMGp2YXc4T1c3VU45YTYyaUE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xSc2FubDFTRE5vVmxkSlQzbExaR3c0YmtaM2RrRRAB",
+      "reviewer": "Jim W.",
+      "rating": 5,
+      "text": "Once I agreed to Cesar inspecting my roof after a hail storm, which he verified, he took care of everything else, including being on-site during the insurance adjuster's inspection. Cesar and Monarch Roofing made the entire process unbelievably easy and really earned my trust. Because of this, I used them to install gutters on four other buildings and soon they'll be working on my shop roof. If you've had bad experiences with other contractors, you won't with Cesar and Monarch Roofing.",
+      "publishedAt": "2025-07-29T17:45:24.408Z",
+      "ownerResponse": "Jim! Thanks so much for the trust and kind words! We’re glad Cesar and the team could make things easy and take care of everything for you. We appreciate your continued business and look forward to working on your shop roof soon!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xSc2FubDFTRE5vVmxkSlQzbExaR3c0YmtaM2RrRRAB!2m1!1s0x0:0xed377c539ee5969f!3m1!1s2@1:CAIQACodChtycF9oOlRsanl1SDNoVldJT3lLZGw4bkZ3dkE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xoVExVMDBla3hEU0daeVpWaEdUbFZOV1RacFpuYxAB",
+      "reviewer": "Jenn E.",
+      "rating": 5,
+      "text": "Monarch Roofing did a great job on my roof. Cesar was very helpful and explained the process. Monarch got to work right away and completed the job. They did a great clean up as well. I would recommend them to everyone.",
+      "publishedAt": "2025-07-16T00:13:49.111Z",
+      "ownerResponse": "Thank you so much for the kind words and recommendation! We're glad to hear you had a great experience with Monarch Roofing and that Cesar was able to guide you through the process. We take pride in getting the job done right and leaving your property clean and protected. If you ever need anything in the future, we're just a call away!<br><br>— The Monarch Roofing Team 🦁🏠",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xoVExVMDBla3hEU0daeVpWaEdUbFZOV1RacFpuYxAB!2m1!1s0x0:0xed377c539ee5969f!3m1!1s2@1:CAIQACodChtycF9oOlhTLU00ekxDSGZyZVhGTlVNWTZpZnc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnTUNvMDVUTHVRRRAB",
+      "reviewer": "Diane R.",
+      "rating": 5,
+      "text": "I am glad I chose Monarch Roofing and Construction to replace my roof. Cesar explained everything about the replacement process so well I chose a treated shingles that would last longer. They removed the old roof and layer the new one all in one day.  I love the color and the efficient work Monarch did on my roof.  I had ro have a leak repaired as well and with Monarch having a construction side of they're business I was able to get everything done by one company.  Again Cesar thoroughly explained everything which made me feel great about having chose then.<br>I highly recommend Monarch Roofing and Construction.  You won't go wrong choosing them. Thank you, I am thoroughly satisfied and pleased.",
+      "publishedAt": "2025-04-19T17:21:32.205Z",
+      "ownerResponse": "Thank you so much — this means a lot to us. We’re really glad Cesar could walk you through everything and help you find the best option for your home. Being able to handle both the roof and repairs is exactly why we do what we do. We appreciate the recommendation and are so glad you’re happy with how everything turned out!<br><br>— Monarch Roofing & Construction",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTUNvMDVUTHVRRRAB!2m1!1s0x0:0xed377c539ee5969f!3m1!1s2@1:CIHM0ogKEICAgMCo05TLuQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnTUNveGMzdzVBRRAB",
+      "reviewer": "Evangelina G.",
+      "rating": 5,
+      "text": "Did an excellent job with my roof. Great customer service!",
+      "publishedAt": "2025-04-18T17:02:32.767Z",
+      "ownerResponse": "Thanks so much! We’re glad you’re happy with the roof and appreciated the customer service — that’s what we aim for every time.<br><br>— Monarch Roofing & Construction",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTUNveGMzdzVBRRAB!2m1!1s0x0:0xed377c539ee5969f!3m1!1s2@1:CIHM0ogKEICAgMCoxc3w5AE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnTURJelpXei1BRRAB",
+      "reviewer": "Alberto G.",
+      "rating": 5,
+      "text": "Cesar came out and gave me an estimate on my roof. I appreciate the fact that he was honest and straight forward with the pricing and the process of the whole project. His crew came out and was super efficient, left a beautiful looking roof and cleaned everything off my yard. I highly recommend them if you want to work with a company that cares.",
+      "publishedAt": "2025-04-12T04:28:19.420Z",
+      "ownerResponse": "Thanks for sharing this! We’re all about being upfront and making sure you feel good about the process from start to finish. Cesar and the crew will be glad to hear this — we appreciate the recommendation and are glad you’re happy with the final result.<br><br>— Monarch Roofing & Construction",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTURJelpXei1BRRAB!2m1!1s0x0:0xed377c539ee5969f!3m1!1s2@1:CIHM0ogKEICAgMDIzZWz-AE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnTUN3NllmQ2FnEAE",
+      "reviewer": "Chuck",
+      "rating": 5,
+      "text": "Very helpful with the whole process and willing to work with you! Did an amazing job on our roof my wife and I can't be happier with the finish job they've done. Recommended 100%<br>Thank you!",
+      "publishedAt": "2025-03-19T19:18:49.983Z",
+      "ownerResponse": "We appreciate the kind words!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTUN3NllmQ2FnEAE!2m1!1s0x0:0xed377c539ee5969f!3m1!1s2@1:CIHM0ogKEICAgMCw6YfCag%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnTUN3c2FQcmhnRRAB",
+      "reviewer": "Matthew W.",
+      "rating": 5,
+      "text": "We had an excellent experience with Monarch replacing our roofs on 2 houses. Cesar, our project manager, was great from start to finish.  Always responded to our questions and concerns, plus communicating with the 2 different insurance companies.  Very professional and would recommend to everyone looking for great service and workmanship.",
+      "publishedAt": "2025-03-19T14:53:03.382Z",
+      "ownerResponse": "It was pleasure working with you Mathew!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTUN3c2FQcmhnRRAB!2m1!1s0x0:0xed377c539ee5969f!3m1!1s2@1:CIHM0ogKEICAgMCwsaPrhgE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnTUN3c1oyczhnRRAB",
+      "reviewer": "Lois Y.",
+      "rating": 5,
+      "text": "We appreciate their quick response and all the did to help us!",
+      "publishedAt": "2025-03-19T14:50:21.051Z",
+      "ownerResponse": "It was a pleasure being of service!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTUN3c1oyczhnRRAB!2m1!1s0x0:0xed377c539ee5969f!3m1!1s2@1:CIHM0ogKEICAgMCwsZ2s8gE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnTUN3c1oySWR3EAE",
+      "reviewer": "Andrea R.",
+      "rating": 5,
+      "text": "Highly recommend! Very professional and honest",
+      "publishedAt": "2025-03-19T14:50:17.704Z",
+      "ownerResponse": "We try our best to do the best work we can possibly do! Thank you!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTUN3c1oySWR3EAE!2m1!1s0x0:0xed377c539ee5969f!3m1!1s2@1:CIHM0ogKEICAgMCwsZ2Idw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnTUN3cE12YjZ3RRAB",
+      "reviewer": "Tyler R.",
+      "rating": 5,
+      "text": "I recently had the pleasure of working with Monarch Roofing that exceeded my expectations in every way. From the initial consultation to the final inspection, the entire process was seamless and professional. The roofer arrived on time, took the time to explain the materials and options available, and provided a detailed estimate that was transparent and fair.<br><br>During the installation, the crew was efficient and respectful of my property. They worked diligently, ensuring that every detail was attended to, and cleaned up thoroughly afterward. The quality of the workmanship is evident; my new roof not only looks fantastic but also makes my home feel brand new. I appreciated their commitment to using high-quality materials, which gives me confidence that it will last for years to come.<br><br>Overall, I highly recommend Monarch Roofing to anyone in need of roof repairs or replacement. Their expertise, professionalism, and dedication to customer satisfaction truly set them apart from others in the industry. I couldn't be happier with the results!",
+      "publishedAt": "2025-03-16T18:14:45.355Z",
+      "ownerResponse": "We appreciate the kind words! It was a pleasure working with you Tyler!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTUN3cE12YjZ3RRAB!2m1!1s0x0:0xed377c539ee5969f!3m1!1s2@1:CIHM0ogKEICAgMCwpMvb6wE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnTUNRbDVtMWNREAE",
+      "reviewer": "Ariel F.",
+      "rating": 5,
+      "text": "I recently had the pleasure of working with Monarch Roofing and Construction for a roof replacement, and I couldn’t be more impressed with their service. From the very start, their team was professional, courteous, and efficient. They thoroughly explained the entire process, especially regarding how the roof replacement would be handled through my insurance, ensuring everything was clear and transparent.",
+      "publishedAt": "2025-03-07T18:52:06.273Z",
+      "ownerResponse": "Thanks for the kind words!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTUNRbDVtMWNREAE!2m1!1s0x0:0xed377c539ee5969f!3m1!1s2@1:CIHM0ogKEICAgMCQl5m1cQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnTUNRdnFUWGVBEAE",
+      "reviewer": "David M.",
+      "rating": 5,
+      "text": "Excelente trabajo,lo asen muy rápido son muy respetuosos con los clientes y con la propiedad te explican muy bien el proceso y te ayudan mucho con el proceso de la aseguradora ,estamos muy satisfechos con Monarch Roofing y construction 100% recomendada",
+      "publishedAt": "2025-03-04T17:16:59.334Z",
+      "ownerResponse": "Thank your for the kind words! It was great working with you!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTUNRdnFUWGVBEAE!2m1!1s0x0:0xed377c539ee5969f!3m1!1s2@1:CIHM0ogKEICAgMCQvqTXeA%7C%7C?hl=en-US",
+      "language": "es"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnTUNneW9LcGtBRRAB",
+      "reviewer": "Molly E.",
+      "rating": 5,
+      "text": "Javier and Cesar were very easy to work with.  They communicated with us throughout the process, and completely dealt with the insurance, which made the whole process incredibly easy. We highly recommend working with this company!",
+      "publishedAt": "2025-02-15T23:00:08.691Z",
+      "ownerResponse": "It was an honor being of service! Thank you for the kind words!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTUNneW9LcGtBRRAB!2m1!1s0x0:0xed377c539ee5969f!3m1!1s2@1:CIHM0ogKEICAgMCgyoKpkAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURfNUtQZGRBEAE",
+      "reviewer": "Owen G.",
+      "rating": 5,
+      "text": "Their word is good! They do exactly what they promise.  Good people.",
+      "publishedAt": "2025-01-21T20:36:41.487Z",
+      "ownerResponse": "We do our best to always stand on our word! Thank you!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURfNUtQZGRBEAE!2m1!1s0x0:0xed377c539ee5969f!3m1!1s2@1:CIHM0ogKEICAgID_5KPddA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURfNVBtbjFBRRAB",
+      "reviewer": "Brenda H.",
+      "rating": 5,
+      "text": "Fast, fair and prompt",
+      "publishedAt": "2025-01-21T20:22:14.075Z",
+      "ownerResponse": "We appreciate the kind words! We hope to work with you on future projects!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURfNVBtbjFBRRAB!2m1!1s0x0:0xed377c539ee5969f!3m1!1s2@1:CIHM0ogKEICAgID_5Pmn1AE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUR2NF82MEx3EAE",
+      "reviewer": "Esther G.",
+      "rating": 5,
+      "text": "Southwest Kansas. Be ready for Monarch roofing and construction. Cesar came to my house. He noticed my roof was in  a bad shape. He came to me and my Husband and educated us in what to do with the insurance,  the necessary steps to have a new roof. He answer all my questions. He sent pictures of what they have done and what I needed. We appreciate Cesar effort to communicate and answer all of our questions, great work<br><br>Southwest Kansas, Monarch, Roofing and construction vino a mi casa. César fue muy instructivo en lo que yo necesitaba. Me educó en los problemas de la aseguranza como funcionaba toda la aseguranza Trabajo para mí él hizo toda la comunicación. Después me comunicaba a mí que tenía que hacer en el proceso, fue un proceso muy rápido, la construcción fue rápida, limpiaron todo,no hubo problemas. Yo agradezco a Monarch  por el gran trabajo que hicieron. Por qué pagar más por compañías tan caras Monarch  Roofing es lo que usted necesita",
+      "publishedAt": "2024-12-23T17:11:50.130Z",
+      "ownerResponse": "Thank you Esther!!!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR2NF82MEx3EAE!2m1!1s0x0:0xed377c539ee5969f!3m1!1s2@1:CIHM0ogKEICAgIDv4_60Lw%7C%7C?hl=en-US",
+      "language": "es"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUR2aU9iTEhBEAE",
+      "reviewer": "Jennifer S.",
+      "rating": 5,
+      "text": "I am so impressed with this companies work and how professional and nice they were I will refer to anyone needing this kinda work",
+      "publishedAt": "2024-12-17T02:05:56.770Z",
+      "ownerResponse": "Thank you Jennifer! It was great working with you!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR2aU9iTEhBEAE!2m1!1s0x0:0xed377c539ee5969f!3m1!1s2@1:CIHM0ogKEICAgIDviObLHA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURQcVlUZXp3RRAB",
+      "reviewer": "Ann W.",
+      "rating": 5,
+      "text": "We were very pleased with the service and personnel. Cesar and Javier were clean cut, polite and prompt. They arrived on time did our roof on time and explained the process and materials used in detail.",
+      "publishedAt": "2024-12-03T15:42:01.499Z",
+      "ownerResponse": "We highly appreciate the feedback Ann!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURQcVlUZXp3RRAB!2m1!1s0x0:0xed377c539ee5969f!3m1!1s2@1:CIHM0ogKEICAgIDPqYTezwE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUMzNE12UF9RRRAB",
+      "reviewer": "Laura W.",
+      "rating": 5,
+      "text": "The Monarch Roofing Company did a great job in replacing my roof.   They were very easy to work with and their communication is wonderful.   They know there way around insurance companies.  They made the process very easy.   Thank you for doing a great job and it was pleasure to work with you.",
+      "publishedAt": "2024-11-01T22:11:00.922Z",
+      "ownerResponse": "Thank You Laura!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMzNE12UF9RRRAB!2m1!1s0x0:0xed377c539ee5969f!3m1!1s2@1:CIHM0ogKEICAgIC34MvP_QE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURYZzlmeUl3EAE",
+      "reviewer": "Michael J.",
+      "rating": 5,
+      "text": "Monarch Roofing and Construction has been an absolute pleasure to work with. From the beginning they were transparent and always available to answer any questions or concerns we had about our roof replacement. On they day the insurance adjuster arrived they were there to make sure that everything was documented and covered so that we would have an accurate representation of the damage. When the crew showed up, Cesar was there throughout the day to make sure everything was running smoothly and even did a few extra last minute repairs that weren't originally part of the job. Their attention to detail and the efficiency with which they work are a testament to how well the company is run. I would highly recommend Cesar and Monarch Roofing and Construction for any project.",
+      "publishedAt": "2024-10-30T15:00:34.634Z",
+      "ownerResponse": "We appreciate the kind words!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURYZzlmeUl3EAE!2m1!1s0x0:0xed377c539ee5969f!3m1!1s2@1:CIHM0ogKEICAgIDXg9fyIw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURYZzdHRFdnEAE",
+      "reviewer": "Hina P.",
+      "rating": 5,
+      "text": "Over all it was a good experience, Cesar helped with most of the things so I didn’t had to do much.  Only thing that I thought that need to be worked on was when I had insurance inspection I wasn’t home so I wanted to move it and they promised that someone will be there from Monarch and nobody was there.  It worked out at the end but I would expect people to be there when they said they would.",
+      "publishedAt": "2024-10-30T14:26:26.809Z",
+      "ownerResponse": "It was great working with you Hina, thank you!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURYZzdHRFdnEAE!2m1!1s0x0:0xed377c539ee5969f!3m1!1s2@1:CIHM0ogKEICAgIDXg7GDWg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURYc3B6bDZRRRAB",
+      "reviewer": "Emmanuel E.",
+      "rating": 5,
+      "text": "Monarch Construction is by far one of the best roofing and construction companies I’ve used. They were efficient and proficient. Cesar made sure to check in with us and also made sure we were satisfied through this whole renovation. He made the processing with the insurance company seem effortless! He really goes above and beyond for his customers and I’m grateful! I would highly recommend using this company. If you want satisfactory work completed efficiently and peace of mind knowing you won’t have any hiccups along the way use Monarch Roofing and Construction!",
+      "publishedAt": "2024-10-25T19:28:36.785Z",
+      "ownerResponse": "We appreciate the feedback!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURYc3B6bDZRRRAB!2m1!1s0x0:0xed377c539ee5969f!3m1!1s2@1:CIHM0ogKEICAgIDXspzl6QE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNYNXRpaUdREAE",
+      "reviewer": "Nancy R.",
+      "rating": 5,
+      "text": "Cesar and his company is great to work with. He took care of us through the whole process. Crews came in and got the job down in no time I did not have to worry about any of it and he was fast to turn in our paperwork for insurance claim. Don’t hesitate to give Cesar with monarch a call for your roofing needs",
+      "publishedAt": "2024-10-16T03:16:03.665Z",
+      "ownerResponse": "We greatly appreciate the feedback!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNYNXRpaUdREAE!2m1!1s0x0:0xed377c539ee5969f!3m1!1s2@1:CIHM0ogKEICAgICX5tiiGQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNYa3Ytd1V3EAE",
+      "reviewer": "Shane G.",
+      "rating": 5,
+      "text": "No presure, all work was done too my standard, cleanup outstanding. Very pleased!",
+      "publishedAt": "2024-10-14T19:50:29.723Z",
+      "ownerResponse": "We appreciate the opportunity! It was great working with you Shane!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNYa3Ytd1V3EAE!2m1!1s0x0:0xed377c539ee5969f!3m1!1s2@1:CIHM0ogKEICAgICXkv-wUw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUR6MEthV2t3RRAB",
+      "reviewer": "Andrea A.",
+      "rating": 5,
+      "text": "Monarch Roofing & Construction provided amazing communication throughout our roofing insurance claim process. Their proactive updates and transparent approach kept us informed every step of the way, ensuring a smooth and stress-free experience. Highly recommend!",
+      "publishedAt": "2024-06-06T22:53:10.212Z",
+      "ownerResponse": "We appreciate the feed back!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR6MEthV2t3RRAB!2m1!1s0x0:0xed377c539ee5969f!3m1!1s2@1:CIHM0ogKEICAgIDz0KaWkwE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURUcV9UMUxBEAE",
+      "reviewer": "Riri H.",
+      "rating": 5,
+      "text": "Monarch Roofing & Construction, specifically Cesar, made the roofing insurance process a breeze! Their team's expertise and efficiency were remarkable. Cesar’s team made sure our insurance company accounted for all damages. Highly recommended!!!",
+      "publishedAt": "2024-05-28T03:34:50.080Z",
+      "ownerResponse": "Efficiency is key!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURUcV9UMUxBEAE!2m1!1s0x0:0xed377c539ee5969f!3m1!1s2@1:CIHM0ogKEICAgIDTq_T1LA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURUeS1md2xBRRAB",
+      "reviewer": "Luis V.",
+      "rating": 5,
+      "text": "Cesar at Monarch Roofing & Construction demonstrated remarkable professionalism throughout the roofing insurance process, despite the confusion typical with insurance restoration. He remained courteous and patient, guiding us seamlessly through the complexities. Highly commendable service!",
+      "publishedAt": "2024-05-28T02:46:50.057Z",
+      "ownerResponse": "Patience is key!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURUeS1md2xBRRAB!2m1!1s0x0:0xed377c539ee5969f!3m1!1s2@1:CIHM0ogKEICAgIDTy-fwlAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURUeS1tTEZBEAE",
+      "reviewer": "Fili P.",
+      "rating": 5,
+      "text": "Cesar with Monarch Roofing & Construction navigated the insurance process seamlessly. Their kindness and constant communication from start to finish made the project stress-free. Highly recommend for any roofing endeavor.",
+      "publishedAt": "2024-05-28T01:50:45.166Z",
+      "ownerResponse": "We appriciate the feedback!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURUeS1tTEZBEAE!2m1!1s0x0:0xed377c539ee5969f!3m1!1s2@1:CIHM0ogKEICAgIDTy-mLFA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURUeTlLQXlRRRAB",
+      "reviewer": "Eric E.",
+      "rating": 5,
+      "text": "Cesar from Monarch Roofing & Construction provided exceptional assistance with the insurance roofing process. Their team communicated effectively, scheduled efficiently, and completed the roof replacement in just one day. Highly recommended!",
+      "publishedAt": "2024-05-28T00:54:21.616Z",
+      "ownerResponse": "We appreciate the kind words, hope to work with you on the next project!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURUeTlLQXlRRRAB!2m1!1s0x0:0xed377c539ee5969f!3m1!1s2@1:CIHM0ogKEICAgIDTy9KAyQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURUc05IM2xnRRAB",
+      "reviewer": "Cody S.",
+      "rating": 5,
+      "text": "I’ve used Monarch on a few different projects and they have always been responsive and done great work. 👍🏼👍🏼",
+      "publishedAt": "2024-05-21T16:54:27.491Z",
+      "ownerResponse": "We appreciate the great feedback!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURUc05IM2xnRRAB!2m1!1s0x0:0xed377c539ee5969f!3m1!1s2@1:CIHM0ogKEICAgIDTsNH3lgE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNUNDdxQld3EAE",
+      "reviewer": "Kylee W.",
+      "rating": 5,
+      "text": "Cesar and his team went above and beyond to transform the exterior of our house. With the need to prepare our house for the market, we entrusted them with replacing the siding and soffit while painting the entire exterior. From start to finish, their professionalism and communication were stellar. The competitive pricing and top-notch quality of their work exceeded our expectations. We are confident in their abilities and excited to work with them on future projects. Highly recommend Cesar and his team for any home improvement needs - thank you for a job well done!",
+      "publishedAt": "2024-05-18T16:39:05.448Z",
+      "ownerResponse": "Thank you for trusting us with such an important task! It was a pleasure assisting your family!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNUNDdxQld3EAE!2m1!1s0x0:0xed377c539ee5969f!3m1!1s2@1:CIHM0ogKEICAgICT47qBWw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNUMlo2SWZ3EAE",
+      "reviewer": "Austin C.",
+      "rating": 5,
+      "text": "Cesar is great to work with.<br>Partnered with him on multiple projects, they do great work, and are very good at communicating during the process.<br>He's bid tons of work for us and his pricing is great for the quality of work they put out. They are a constant referral for me.",
+      "publishedAt": "2024-05-16T17:22:40.464Z",
+      "ownerResponse": "We appreciate the feedback! We hope to work with you on the next one!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNUMlo2SWZ3EAE!2m1!1s0x0:0xed377c539ee5969f!3m1!1s2@1:CIHM0ogKEICAgICT2Z6Ifw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNUMmFqM2lRRRAB",
+      "reviewer": "Brittany B.",
+      "rating": 5,
+      "text": "Cesar stopped by and did a quick inspection of my roof. He was able to help me make an insurance claim for wind and hail damage and then followed through with me throughout the entire process of getting the roof replaced! Very professional and excellent communication!",
+      "publishedAt": "2024-05-16T16:39:41.477Z",
+      "ownerResponse": "Thank you for the kind words! That's why we are here to make the process as smooth as possible.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNUMmFqM2lRRRAB!2m1!1s0x0:0xed377c539ee5969f!3m1!1s2@1:CIHM0ogKEICAgICT2aj3iQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNENjZHVHhBRRAB",
+      "reviewer": "Aydin L.",
+      "rating": 5,
+      "text": "Cesar and Brian helped us out here big time at 1-800JUNKPRO. Super cool guys, highly recommend using them for your construction needs!",
+      "publishedAt": "2024-04-01T20:25:49.955Z",
+      "ownerResponse": "Anytime we can help, count us in!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNENjZHVHhBRRAB!2m1!1s0x0:0xed377c539ee5969f!3m1!1s2@1:CIHM0ogKEICAgICD66GTxAE%7C%7C?hl=en-US",
+      "language": "en"
+    }
+  ],
+  "ratingOnly": [
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tsQ1RrZHVORWxLVUZodGFIZDBaVUZPZDJRNFZFRRAB",
+      "reviewer": "Rick J.",
+      "rating": 5,
+      "publishedAt": "2025-07-29T02:59:37.982Z"
+    },
+    {
+      "id": "ChRDSUhNMG9nS0VJQ0FnSURQcWVKVhAB",
+      "reviewer": "Jim S.",
+      "rating": 5,
+      "publishedAt": "2024-12-03T15:55:53.867Z"
+    }
+  ]
+}

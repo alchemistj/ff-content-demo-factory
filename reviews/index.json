@@ -327,6 +327,18 @@
       "pulledAt": "2026-10-23T17:38:02.396Z"
     },
     {
+      "slug": "monarch-roofing",
+      "name": "Monarch Roofing & Construction",
+      "placeId": "ChIJd6I2UHfjuocRn5blnlN8N-0",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 60,
+        "withText": 58,
+        "ratingOnly": 2
+      },
+      "pulledAt": "2026-11-09T17:55:50.588Z"
+    },
+    {
       "slug": "new-windows-for-america",
       "name": "New Windows For America, LLC",
       "placeId": "ChIJFXMwlZbjuocRD--gA-gcNAs",
