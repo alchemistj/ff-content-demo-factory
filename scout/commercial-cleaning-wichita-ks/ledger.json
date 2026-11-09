@@ -1,0 +1,392 @@
+{
+  "slug": "commercial-cleaning-wichita-ks",
+  "updated": "2026-11-09",
+  "run": "wichita-cleaning Architect",
+  "next_start_rank": 9,
+  "checked": [
+    {
+      "rank": 50,
+      "name": "Cypress Facility Services",
+      "status": "qualified-backlog",
+      "reason": "Janitorial + building maintenance, one-page site, but no review count/rating on Maps, no phone on Maps",
+      "website": "cypressmgmt.net",
+      "reviews": "none"
+    },
+    {
+      "rank": 49,
+      "name": "Molly Maid of Greater Wichita",
+      "status": "disqualified",
+      "reason": "national residential franchise",
+      "website": "mollymaid.com",
+      "reviews": "349"
+    },
+    {
+      "rank": 48,
+      "name": "WAEI",
+      "status": "qualified-backlog",
+      "reason": "2 reviews; site (kwaei.com) returned 503 and could not be checked",
+      "website": "kwaei.com",
+      "reviews": "2"
+    },
+    {
+      "rank": 47,
+      "name": "Royal Building Services L.L.C.",
+      "status": "qualified-backlog",
+      "reason": "Woman-owned office/janitorial, 20+ yrs, weak site (placeholder filename, mismatched email); only 3 reviews",
+      "website": "royaljanitors.com",
+      "reviews": "3"
+    },
+    {
+      "rank": 46,
+      "name": "Simply Clean",
+      "status": "disqualified (mixed)",
+      "reason": "Commercial + residential + vacation rental, equal billing; 7 reviews",
+      "website": "hiresimplyclean.com",
+      "reviews": "7"
+    },
+    {
+      "rank": 45,
+      "name": "Clean Rite Building Services",
+      "status": "qualified-backlog",
+      "reason": "Family-owned, carpet + janitorial + floor care, \"residences to industrial\"; carpet is Maps category; 4.8",
+      "website": "cleanrite.net",
+      "reviews": "9"
+    },
+    {
+      "rank": 44,
+      "name": "Armstrong Plumbing, Inc.",
+      "status": "disqualified",
+      "reason": "plumber",
+      "website": "none",
+      "reviews": "10"
+    },
+    {
+      "rank": 43,
+      "name": "Crown heights Pressure Washing LLC",
+      "status": "disqualified",
+      "reason": "pressure washing",
+      "website": "crownheightspressurewashing.com",
+      "reviews": "9"
+    },
+    {
+      "rank": 42,
+      "name": "Aqua Fix Damage Restoration Services",
+      "status": "disqualified",
+      "reason": "restoration; 2 reviews",
+      "website": "none",
+      "reviews": "2"
+    },
+    {
+      "rank": 41,
+      "name": "MaidPro Wichita",
+      "status": "disqualified",
+      "reason": "national franchise, residential",
+      "website": "maidpro.com",
+      "reviews": "180"
+    },
+    {
+      "rank": 40,
+      "name": "BuzzClean",
+      "status": "qualified-backlog",
+      "reason": "5 reviews, no website. Directory (naicslist) lists BUZZCLEAN, INC., janitorial, 3112 N 124th St W, ~25 employees (self-reported). Not site-verified",
+      "website": "none",
+      "reviews": "5"
+    },
+    {
+      "rank": 39,
+      "name": "The Maids in Wichita",
+      "status": "disqualified",
+      "reason": "national franchise",
+      "website": "maids.com",
+      "reviews": "139"
+    },
+    {
+      "rank": 38,
+      "name": "Cleaning",
+      "status": "disqualified",
+      "reason": "no website, no reviews, no phone; nothing to write from",
+      "website": "none",
+      "reviews": "none"
+    },
+    {
+      "rank": 37,
+      "name": "D & A CLEANING SERVICES LLC",
+      "status": "qualified-backlog",
+      "reason": "6 reviews, no website; likely related to D & A Services (rank 36), not confirmed",
+      "website": "none",
+      "reviews": "6"
+    },
+    {
+      "rank": 36,
+      "name": "D & A Services",
+      "status": "qualified-backlog",
+      "reason": "Office cleaning/janitorial/carpet/floor, very weak site; 7 reviews",
+      "website": "dandaservices.com",
+      "reviews": "7"
+    },
+    {
+      "rank": 35,
+      "name": "Shine Bright Cleaning Services",
+      "status": "disqualified (known (mixed, reserve))",
+      "reason": "per brief, not re-researched",
+      "website": "shinebrightcs.com",
+      "reviews": "115"
+    },
+    {
+      "rank": 34,
+      "name": "Fish Window Cleaning",
+      "status": "disqualified",
+      "reason": "franchise, window cleaning",
+      "website": "fishwindowcleaning.com",
+      "reviews": "88"
+    },
+    {
+      "rank": 33,
+      "name": "Super Home Maid Cleaning Services",
+      "status": "disqualified",
+      "reason": "residential by name/category",
+      "website": "superhomemaidcleaningservice.com",
+      "reviews": "209"
+    },
+    {
+      "rank": 32,
+      "name": "Williams Janitorial Supply Warehouse",
+      "status": "disqualified",
+      "reason": "supply store",
+      "website": "lafetwilliams.com",
+      "reviews": "42"
+    },
+    {
+      "rank": 31,
+      "name": "Professional Cleaning Supply Wichita",
+      "status": "disqualified",
+      "reason": "supply store",
+      "website": "shopatpcs.com",
+      "reviews": "25"
+    },
+    {
+      "rank": 30,
+      "name": "Facilicorp Solutions LLC",
+      "status": "qualified-backlog",
+      "reason": "6 reviews, no website; web search found nothing",
+      "website": "none",
+      "reviews": "6"
+    },
+    {
+      "rank": 29,
+      "name": "The Proper People Cleaning Co.",
+      "status": "qualified-backlog",
+      "reason": "Wix site titled \"Commercial Cleaning Wichita KS\" (confirmed from the page title only); body would not render (page-text.cjs timed out, WebFetch got title only); no Maps rating/reviews/address",
+      "website": "theproperpeoplecleaning.com",
+      "reviews": "none"
+    },
+    {
+      "rank": 28,
+      "name": "Clean Tech Facilities Maintenance",
+      "status": "disqualified (restoration-first / too big)",
+      "reason": "Maps category water-damage restoration; directories say commercial water losses, building maintenance, snow removal, since late 1970s, estimates 21-156 staff; site returned 503 (not fetched)",
+      "website": "cleantechinc.com",
+      "reviews": "24"
+    },
+    {
+      "rank": 27,
+      "name": "Office Depot",
+      "status": "disqualified",
+      "reason": "retail",
+      "website": "officedepot.com",
+      "reviews": "225"
+    },
+    {
+      "rank": 26,
+      "name": "Continental Siding",
+      "status": "disqualified",
+      "reason": "siding contractor",
+      "website": "continentalsiding.com",
+      "reviews": "545"
+    },
+    {
+      "rank": 25,
+      "name": "ICT Roofing & Exteriors",
+      "status": "disqualified",
+      "reason": "roofer",
+      "website": "ict-roofing.com",
+      "reviews": "74"
+    },
+    {
+      "rank": 24,
+      "name": "Enviro-Master of Wichita",
+      "status": "disqualified",
+      "reason": "national franchise",
+      "website": "enviro-master.com",
+      "reviews": "9"
+    },
+    {
+      "rank": 23,
+      "name": "Cintas Facility Services",
+      "status": "disqualified",
+      "reason": "national",
+      "website": "cintas.com",
+      "reviews": "none"
+    },
+    {
+      "rank": 22,
+      "name": "Air Capital Cleaning Co.",
+      "status": "qualified-backlog",
+      "reason": "Janitorial category, 4.9-5 stars; serves homes, offices, realtors, Airbnb",
+      "website": "aircapitalcleaning.com",
+      "reviews": "31"
+    },
+    {
+      "rank": 21,
+      "name": "Three Ace Cleaning Solutions",
+      "status": "disqualified (not verified)",
+      "reason": "no website, no reviews; not researched further",
+      "website": "none",
+      "reviews": "none"
+    },
+    {
+      "rank": 20,
+      "name": "NeXus Commercial Property Maintenance",
+      "status": "disqualified",
+      "reason": "pressure washing / snow / sweeping, 1.6 rating, 5 reviews; site copyright 2017",
+      "website": "nexuscommercial.net",
+      "reviews": "5"
+    },
+    {
+      "rank": 19,
+      "name": "Elite Cleaning Co.",
+      "status": "disqualified (not verified)",
+      "reason": "Maps category house cleaning; domain elitecleaningco.org would not resolve in this session (network allow-list)",
+      "website": "elitecleaningco.org",
+      "reviews": "none"
+    },
+    {
+      "rank": 18,
+      "name": "Warsh Exterior Cleaning Pros",
+      "status": "disqualified",
+      "reason": "exterior/window",
+      "website": "warshmywindows.com",
+      "reviews": "469"
+    },
+    {
+      "rank": 17,
+      "name": "ServiceMaster DSI - Wichita",
+      "status": "disqualified",
+      "reason": "franchise, restoration",
+      "website": "servicemasterrestore.com",
+      "reviews": "84"
+    },
+    {
+      "rank": 16,
+      "name": "JAN-PRO",
+      "status": "disqualified",
+      "reason": "national franchise",
+      "website": "jan-pro.com",
+      "reviews": "6"
+    },
+    {
+      "rank": 15,
+      "name": "Be Amazed Residential and Commercial Cleaning",
+      "status": "disqualified",
+      "reason": "carpet-first, about 75% of listed services residential; 516 reviews, polished",
+      "website": "beamazedclean.com",
+      "reviews": "516"
+    },
+    {
+      "rank": 14,
+      "name": "Merry Maids of Wichita",
+      "status": "disqualified",
+      "reason": "national franchise",
+      "website": "merrymaids.com",
+      "reviews": "121"
+    },
+    {
+      "rank": 13,
+      "name": "Jani-King Wichita",
+      "status": "disqualified",
+      "reason": "national franchise",
+      "website": "janiking.com",
+      "reviews": "33"
+    },
+    {
+      "rank": 12,
+      "name": "ICT Cleaning Solutions LLC",
+      "status": "disqualified (not verified)",
+      "reason": "janitorial; 4 reviews; site did not resolve in this session; no phone on Maps",
+      "website": "ictcleaningsolutions.com",
+      "reviews": "4"
+    },
+    {
+      "rank": 11,
+      "name": "AJS PRO CLEANING",
+      "status": "disqualified (not verified)",
+      "reason": "no website, no reviews",
+      "website": "none",
+      "reviews": "none"
+    },
+    {
+      "rank": 10,
+      "name": "Ramco Building Maintenance",
+      "status": "picked",
+      "reason": "Family-owned commercial janitorial; unfinished template with lorem ipsum",
+      "website": "ramcowichita.com",
+      "reviews": "25"
+    },
+    {
+      "rank": 9,
+      "name": "Clean Maid USA",
+      "status": "disqualified (known)",
+      "reason": "mostly residential",
+      "website": "cleanmaidusa.com",
+      "reviews": "67"
+    },
+    {
+      "rank": 8,
+      "name": "Christian Cleaning & Restoration",
+      "status": "disqualified (known)",
+      "reason": "restoration",
+      "website": "christiancleaningrestoration.com",
+      "reviews": "277"
+    },
+    {
+      "rank": 7,
+      "name": "City Wide Facility Solutions",
+      "status": "disqualified",
+      "reason": "national franchise",
+      "website": "gocitywide.com",
+      "reviews": "118"
+    },
+    {
+      "rank": 6,
+      "name": "Spaces in between cleaning services",
+      "status": "disqualified (not checked)",
+      "reason": "no website, house cleaning category, 20 reviews",
+      "website": "none",
+      "reviews": "20"
+    },
+    {
+      "rank": 5,
+      "name": "Spotless Janitorial Services",
+      "status": "disqualified",
+      "reason": "restoration-first (water damage page), carpet category; 1 review",
+      "website": "spotlessjanitorialwichita.com",
+      "reviews": "1"
+    },
+    {
+      "rank": 2,
+      "name": "Wichita Premier Commercial Cleaning LLC",
+      "status": "qualified-backlog",
+      "reason": "site is a Squarespace \"under construction\" placeholder",
+      "website": "wichitakscleaningservice.com",
+      "reviews": "8"
+    },
+    {
+      "rank": 1,
+      "name": "Harris Facility Solutions",
+      "status": "picked",
+      "reason": "Commercial/office janitorial headline; busy template one-pager",
+      "website": "harrisfac.com",
+      "reviews": "22"
+    }
+  ]
+}

@@ -1,0 +1,376 @@
+{
+  "slug": "house-cleaning-wichita-ks",
+  "updated": "2026-11-09",
+  "run": "wichita-cleaning Architect",
+  "next_start_rank": 2,
+  "checked": [
+    {
+      "rank": 65,
+      "name": "Purify Cleaning Services Inc",
+      "status": "disqualified",
+      "reason": "janitorial, no reviews, no site",
+      "website": "none",
+      "reviews": "0"
+    },
+    {
+      "rank": 63,
+      "name": "H2Glow Wichita LLC",
+      "status": "disqualified",
+      "reason": "pressure washing",
+      "website": "h2glowwichita.com",
+      "reviews": "9"
+    },
+    {
+      "rank": 60,
+      "name": "Superior Exterior Cleaning LLC",
+      "status": "disqualified",
+      "reason": "exterior/lawn",
+      "website": "jobbersites subdomain",
+      "reviews": "4"
+    },
+    {
+      "rank": 58,
+      "name": "The Home Cleaners LLC",
+      "status": "qualified-backlog",
+      "reason": "house cleaner, 1 review, no site found",
+      "website": "none",
+      "reviews": "1"
+    },
+    {
+      "rank": 57,
+      "name": "Kayla's Cleaning Wichita",
+      "status": "qualified-backlog",
+      "reason": "house cleaner, Facebook only, no rating/reviews",
+      "website": "facebook.com/kaylascleaningwichita",
+      "reviews": "0"
+    },
+    {
+      "rank": 56,
+      "name": "CB Enterprises of Derby llc",
+      "status": "disqualified",
+      "reason": "pool repair",
+      "website": "cbenterprisesllc.com",
+      "reviews": "1"
+    },
+    {
+      "rank": 55,
+      "name": "CleanBliss LLC",
+      "status": "qualified-backlog",
+      "reason": "house cleaner, no site, 0 reviews",
+      "website": "none",
+      "reviews": "0"
+    },
+    {
+      "rank": 54,
+      "name": "Clean Pro Gutter Cleaning Wichita",
+      "status": "disqualified",
+      "reason": "gutters",
+      "website": "cleanproguttercleaning.com",
+      "reviews": "5"
+    },
+    {
+      "rank": 53,
+      "name": "Clean Wave Carpet Cleaning",
+      "status": "disqualified",
+      "reason": "carpet-only",
+      "website": "cleanwavecarpetcleaning.com",
+      "reviews": "32"
+    },
+    {
+      "rank": 52,
+      "name": "Power House Car Wash",
+      "status": "disqualified",
+      "reason": "car wash",
+      "website": "powerhousecarwashllc.com",
+      "reviews": "117"
+    },
+    {
+      "rank": 47,
+      "name": "The Crazy Cleaning Lady",
+      "status": "qualified-backlog",
+      "reason": "house cleaner, no site, 0 reviews",
+      "website": "none",
+      "reviews": "0"
+    },
+    {
+      "rank": 44,
+      "name": "Valere Solutions",
+      "status": "disqualified",
+      "reason": "site is commercial-focused janitorial (fetched)",
+      "website": "valeresolutions.com",
+      "reviews": "8"
+    },
+    {
+      "rank": 43,
+      "name": "A Clearer Vision Window Cleaning",
+      "status": "disqualified",
+      "reason": "window cleaning",
+      "website": "windowcleaningks.com",
+      "reviews": "92"
+    },
+    {
+      "rank": 40,
+      "name": "1st Due Pressure Washing",
+      "status": "disqualified",
+      "reason": "pressure washing",
+      "website": "1st-due.com",
+      "reviews": "151"
+    },
+    {
+      "rank": 38,
+      "name": "J&A Cleaning",
+      "status": "qualified-backlog",
+      "reason": "house cleaner, no site, 0 reviews",
+      "website": "none",
+      "reviews": "0"
+    },
+    {
+      "rank": 36,
+      "name": "Dream Makers LLC Heating and Cooling",
+      "status": "disqualified",
+      "reason": "HVAC",
+      "website": "heatingandcooling.online",
+      "reviews": "43"
+    },
+    {
+      "rank": 35,
+      "name": "Eck Pressure Washing",
+      "status": "disqualified",
+      "reason": "site H1 \"Pressure Washing in Wichita, KS\"; despite GBP category",
+      "website": "eckpressurewashing.com",
+      "reviews": "23"
+    },
+    {
+      "rank": 34,
+      "name": "Bin Busters LLC",
+      "status": "disqualified",
+      "reason": "trash-bin cleaning/pressure washing",
+      "website": "binbustersmidwest.com",
+      "reviews": "45"
+    },
+    {
+      "rank": 33,
+      "name": "Bugs R Us",
+      "status": "disqualified",
+      "reason": "pest control",
+      "website": "none",
+      "reviews": "14"
+    },
+    {
+      "rank": 32,
+      "name": "Mechi's Mess Management",
+      "status": "qualified-backlog",
+      "reason": "2 reviews, no site",
+      "website": "none",
+      "reviews": "2"
+    },
+    {
+      "rank": 31,
+      "name": "Earl and Earl small business",
+      "status": "disqualified",
+      "reason": "lawn care; site \"under construction\"",
+      "website": "earlandearlsmallbusiness.com",
+      "reviews": "0"
+    },
+    {
+      "rank": 25,
+      "name": "Wheat State Cleaning",
+      "status": "disqualified",
+      "reason": "site is Lawrence KS (not Wichita), referral/matching model, 6 reviews",
+      "website": "wheatstatecleaning.com",
+      "reviews": "6"
+    },
+    {
+      "rank": 22,
+      "name": "Facilicorp Solutions LLC",
+      "status": "disqualified",
+      "reason": "janitorial",
+      "website": "none",
+      "reviews": "6"
+    },
+    {
+      "rank": 20,
+      "name": "Christian Cleaning & Restoration",
+      "status": "disqualified",
+      "reason": "restoration/carpet/mold plus cleaning, house cleaning not the headline; 277 reviews",
+      "website": "christiancleaningrestoration.com",
+      "reviews": "277"
+    },
+    {
+      "rank": 19,
+      "name": "Green Clean ICT",
+      "status": "disqualified (too big)",
+      "reason": "commercial/janitorial-heavy (H1 \"Facility Janitorial & Residential\"), 7-item nav, 108 reviews",
+      "website": "greencleanict.com",
+      "reviews": "108"
+    },
+    {
+      "rank": 19,
+      "name": "Jenny Maid's",
+      "status": "picked",
+      "reason": "residential headline, template WP site, \"#\" menu links",
+      "website": "jennymaidsict.com",
+      "reviews": "41"
+    },
+    {
+      "rank": 18,
+      "name": "Mida's Maid Service",
+      "status": "picked",
+      "reason": "owner-run 18+ yrs, thin Squarespace site",
+      "website": "midasmaidservice.com",
+      "reviews": "21"
+    },
+    {
+      "rank": 18,
+      "name": "Green Essence Maid and House Cleaning Services of Kansas",
+      "status": "qualified-backlog",
+      "reason": "4 reviews, no site",
+      "website": "none",
+      "reviews": "4"
+    },
+    {
+      "rank": 17,
+      "name": "We Got This Cleaning Service",
+      "status": "qualified-backlog",
+      "reason": "2 reviews, no site, 318 phone",
+      "website": "none",
+      "reviews": "2"
+    },
+    {
+      "rank": 16,
+      "name": "Yami Cleaning Services LLC",
+      "status": "qualified-backlog",
+      "reason": "GBP category house cleaning, 5.0 rating, no site; web search found nothing on it, so not verified beyond GBP",
+      "website": "none",
+      "reviews": "12"
+    },
+    {
+      "rank": 16,
+      "name": "Wichita Cleaning Services",
+      "status": "qualified-backlog",
+      "reason": "1 review, no site",
+      "website": "none",
+      "reviews": "1"
+    },
+    {
+      "rank": 15,
+      "name": "The Maids in Wichita",
+      "status": "disqualified",
+      "reason": "national franchise",
+      "website": "maids.com",
+      "reviews": "139"
+    },
+    {
+      "rank": 13,
+      "name": "Margaret McHenry Maids",
+      "status": "disqualified (too big)",
+      "reason": "415 reviews, established; site blocked WebFetch and headless render (cookie/security check), could not view",
+      "website": "margaretmchenrymaids.com",
+      "reviews": "415"
+    },
+    {
+      "rank": 12,
+      "name": "Clean Maid USA LLC",
+      "status": "qualified-backlog",
+      "reason": "since 2008, residential headline + office, weak site",
+      "website": "cleanmaidusa.com",
+      "reviews": "67"
+    },
+    {
+      "rank": 11,
+      "name": "MaidPro Wichita",
+      "status": "disqualified",
+      "reason": "franchise",
+      "website": "maidpro.com",
+      "reviews": "180"
+    },
+    {
+      "rank": 11,
+      "name": "Warsh Exterior Cleaning Pros",
+      "status": "disqualified",
+      "reason": "exterior/window",
+      "website": "warshmywindows.com",
+      "reviews": "469"
+    },
+    {
+      "rank": 11,
+      "name": "Fish Window Cleaning",
+      "status": "disqualified",
+      "reason": "franchise, windows",
+      "website": "fishwindowcleaning.com",
+      "reviews": "88"
+    },
+    {
+      "rank": 11,
+      "name": "OpenCorp",
+      "status": "disqualified",
+      "reason": "TV mounting/furniture assembly",
+      "website": "opencorpservices.com",
+      "reviews": "1"
+    },
+    {
+      "rank": 10,
+      "name": "The Cleaning Authority - Wichita",
+      "status": "disqualified",
+      "reason": "franchise",
+      "website": "thecleaningauthority.com",
+      "reviews": "230"
+    },
+    {
+      "rank": 9,
+      "name": "Merry Maids of Wichita",
+      "status": "disqualified",
+      "reason": "franchise",
+      "website": "merrymaids.com",
+      "reviews": "121"
+    },
+    {
+      "rank": 8,
+      "name": "Shine Bright Cleaning Services",
+      "status": "disqualified (too big)",
+      "reason": "residential+commercial+ATM/window/power wash; multi-page; 115 reviews; fixable weak spots listed below",
+      "website": "shinebrightcs.com",
+      "reviews": "115"
+    },
+    {
+      "rank": 7,
+      "name": "Above & Beyond Cleaning LLC",
+      "status": "qualified-backlog",
+      "reason": "house cleaner, owner Tracie Richardson per Thumbtack, no site",
+      "website": "none",
+      "reviews": "11"
+    },
+    {
+      "rank": 6,
+      "name": "D & A Cleaning Services LLC",
+      "status": "disqualified",
+      "reason": "janitorial, 6 reviews",
+      "website": "none",
+      "reviews": "6"
+    },
+    {
+      "rank": 5,
+      "name": "Super Home Maid Cleaning Services",
+      "status": "disqualified (too big)",
+      "reason": "polished multi-page, Best of Wichita, 209 reviews",
+      "website": "superhomemaidcleaningservice.com",
+      "reviews": "209"
+    },
+    {
+      "rank": 5,
+      "name": "A Clean Sweep",
+      "status": "qualified-backlog",
+      "reason": "3 reviews, janitorial category (site not fetched)",
+      "website": "cleaningserviceswichitaks.com",
+      "reviews": "3"
+    },
+    {
+      "rank": 3,
+      "name": "Spontaneous Home Cleaning LLC",
+      "status": "disqualified (not checkable)",
+      "reason": "site domain does not resolve, 0 reviews",
+      "website": "spontanoushomecleaningllc.com",
+      "reviews": "0"
+    }
+  ]
+}
