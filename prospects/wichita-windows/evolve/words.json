@@ -46,32 +46,32 @@
     {
       "name": "Window Replacement",
       "route": "/window-replacement-wichita-ks/",
-      "blurb": "Energy efficient windows measured and installed by our crew, one window or the whole house."
+      "blurb": "Energy efficient windows measured and installed by our crew, from one window to the whole house."
     },
     {
       "name": "Basement Windows",
       "route": null,
-      "blurb": "Sealed and trimmed out, so the lower level stops sounding like the yard."
+      "blurb": "Sealed and trimmed out. We have replaced five basement windows in four hours."
     },
     {
       "name": "Bay and Picture Windows",
       "route": null,
-      "blurb": "The big openings in your living and dining rooms, replaced to match the rest of the house."
+      "blurb": "The big views in your living and dining rooms, fitted to the opening you already have."
     },
     {
       "name": "Vinyl Siding",
       "route": "/siding-patio-doors-wichita-ks/",
-      "blurb": "A new outside for your house, with the old siding hauled away."
+      "blurb": "A new outside for your house that helps lower your energy bills. We have sided a home in one day."
     },
     {
       "name": "Sliding Patio Doors",
       "route": "/siding-patio-doors-wichita-ks/",
-      "blurb": "A door that glides open with one finger and lets in the light."
+      "blurb": "Put in on their own or with your windows, by the same crew."
     },
     {
       "name": "Soffit and Fascia",
       "route": null,
-      "blurb": "Replaced along with siding so the edge of the roof matches the walls."
+      "blurb": "The boards along the edge of your roof, replaced so the outside of your house looks finished."
     }
   ],
   "pages": [
@@ -84,7 +84,7 @@
       "hero": {
         "eyebrow": "Locally owned in Wichita and Oklahoma City",
         "h1": "Exterior Remodeling Company in Wichita, KS — Evolve Exteriors",
-        "sub": "We're Colton and Riley, the owners. Our crews replace windows, install vinyl siding and hang sliding patio doors across Wichita and Oklahoma City. Every energy efficient window carries a manufacturer's lifetime warranty.",
+        "sub": "We're Colton and Riley, the owners. We replace windows, install vinyl siding and put in sliding patio doors across Wichita and Oklahoma City. Every energy efficient window carries a manufacturer's lifetime warranty.",
         "primaryCta": {
           "label": "Call (316) 435-8009",
           "action": "call"
@@ -109,8 +109,7 @@
           "type": "split",
           "heading": "You Deal With the Owners",
           "body": [
-            "Colton walks your home, quotes the work and calls after the install to make sure it went right. Colton and Riley both work with you from estimate to finish.",
-            "You get the product quality and installation guarantees of the big companies, with the attention to detail of a small one."
+            "**Colton and Riley own Evolve and stay close to every job.** Colton quotes many of our homes himself and checks back once the work is done."
           ],
           "image": {
             "slot": "home-owners",
@@ -121,15 +120,14 @@
         },
         {
           "type": "review",
-          "quote": "Small company with owner involvement.",
-          "name": "Kathie S."
+          "quote": "Colton came by to make sure everything was to our liking and, overall, I'm very happy with the finished product and how much cooler our house feels!",
+          "name": "Reagan P."
         },
         {
           "type": "split",
           "heading": "Quieter, Cooler Rooms",
           "body": [
-            "New windows keep heat out in July and drafts out in January. Street noise drops too.",
-            "Our crew cleans up after itself and hauls the old windows away."
+            "**New energy efficient windows hold the temperature you set.** Rooms stay cooler through a Kansas July, the drafts stop in January and the street goes quiet."
           ],
           "image": {
             "slot": "home-windows",
@@ -144,16 +142,10 @@
           "name": "Russell M."
         },
         {
-          "type": "services",
-          "heading": "Everything We Do",
-          "intro": "Windows are our main work. Siding and patio doors follow the same way: owners on the job and a crew that cleans up."
-        },
-        {
           "type": "prose",
-          "heading": "Wichita and Oklahoma City",
+          "heading": "A Straight Price, on Your Terms",
           "body": [
-            "We have a hub in each city. We work within 150 miles of Wichita and within 150 miles of Oklahoma City.",
-            "That covers Haysville, Derby, Mulvane, El Dorado, McPherson, Salina and Emporia. Call the number for your side of the state and we'll set up your estimate."
+            "**We show you the windows and give you the price, with no pressure.** Do the whole house at once, or piece it out room by room on your schedule."
           ]
         },
         {
@@ -162,12 +154,24 @@
           "name": "Jessica C."
         },
         {
+          "type": "services",
+          "heading": "Everything We Do",
+          "intro": "Windows are most of our work. Siding, patio doors, and soffit and fascia get the same crew and the same clean finish."
+        },
+        {
+          "type": "prose",
+          "heading": "Wichita, Oklahoma City and 150 Miles Around",
+          "body": [
+            "We have a hub in each city and work within 150 miles of both. We have done jobs in Haysville, Derby, Mulvane, El Dorado, McPherson, Salina and Emporia, and in Edmond, Yukon and Ponca City."
+          ]
+        },
+        {
           "type": "faq",
           "heading": "Questions Before You Call",
           "items": [
             {
               "q": "Is the estimate free?",
-              "a": "Yes. We quote windows, siding and patio doors for free, and we offer financing if you want to spread the cost."
+              "a": "Yes. Estimates for windows, siding and patio doors are free, and financing is available."
             },
             {
               "q": "What if I find a lower price?",
@@ -175,7 +179,7 @@
             },
             {
               "q": "What does the window warranty cover?",
-              "a": "Every energy efficient window carries a manufacturer's lifetime warranty, from glass breakage to how the window works."
+              "a": "Our energy efficient windows carry a manufacturer's lifetime warranty, from glass breakage to how the window works."
             }
           ]
         },
@@ -195,7 +199,7 @@
       "hero": {
         "eyebrow": "Energy efficient windows",
         "h1": "Window Replacement in Wichita, KS — Evolve Exteriors",
-        "sub": "We measure every opening, install your new windows and haul the old ones away. Every energy efficient window carries a manufacturer's lifetime warranty. Colton quotes the job himself.",
+        "sub": "We measure every opening, install your new windows and haul the old ones away. Each energy efficient window carries a manufacturer's lifetime warranty, and we beat a lower price on a comparable product.",
         "primaryCta": {
           "label": "Call (316) 435-8009",
           "action": "call"
@@ -220,8 +224,8 @@
           "type": "split",
           "heading": "One Window or the Whole House",
           "body": [
-            "Start with the window that bothers you most, or replace every one. We have done both, from five basement windows in four hours to an 80-year-old house with mangled openings.",
-            "Our crew works the old trim and framing into a clean fit, so the new window looks like it was always there."
+            "**Replace the window that bothers you most, or every window you own.** We have put in two windows on one visit and five basement windows in four hours.",
+            "Pick the style that fits how you use each room:"
           ],
           "list": [
             "**Casement and double hung** for the rooms you open every day",
@@ -243,10 +247,23 @@
         },
         {
           "type": "prose",
+          "heading": "Measured for Your House, Not a Window Count",
+          "body": [
+            "**We plan the job around your house.** We spend the time to measure every opening, and sometimes fewer, larger windows do the job better.",
+            "On one home with 34 old windows, our plan replaced the whole house with 17."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Our house originally had 34 windows, and Anthony was able to make it so that we would only need 17 windows to replace the whole house.",
+          "name": "Rob R."
+        },
+        {
+          "type": "prose",
           "heading": "Older Homes and Crooked Openings",
           "body": [
-            "Old houses rarely have square openings. Our crew fits each new window into the frame and trim you already have, and finishes the edges so the room looks clean.",
-            "A 1948 house, an 80-year-old house and a third-story hail break are all jobs we have done."
+            "**Old houses rarely have square openings, and we fit them anyway.** We work each new window into the frame and trim you already have, then finish the edges so the room looks clean.",
+            "We have done it in a 1948 house, in 80-year-old openings and on a third story broken out by hail."
           ]
         },
         {
@@ -256,10 +273,10 @@
         },
         {
           "type": "prose",
-          "heading": "Why Evolve Windows Quiet and Cool a House",
+          "heading": "Cooler Rooms and Less Noise",
           "body": [
-            "New energy efficient windows seal tight, so rooms hold the temperature you set. The drafts stop, and so does most of the noise from outside.",
-            "You can see the result the first hot afternoon or the first cold night."
+            "**New energy efficient windows seal tight, so rooms hold the temperature you set.** The drafts stop, and most of the noise from outside goes with them.",
+            "You feel the change the first hot afternoon or the first cold night."
           ]
         },
         {
@@ -273,20 +290,33 @@
           "items": [
             {
               "title": "We measure and quote",
-              "text": "Our window consultation runs about an hour and a half. We measure your openings, show you the windows and give you the price."
+              "text": "Your window consultation runs about an hour and a half. We measure your openings, show you the windows and give you the price."
             },
             {
-              "title": "Your windows are made",
-              "text": "You choose the style for each room, from casement to picture, and we schedule the install."
+              "title": "You choose each window",
+              "text": "Pick the style, color and hardware for each room, down to the grids. Then we schedule your install."
             },
             {
               "title": "Install day",
-              "text": "Our crew arrives in the morning, covers the work area and replaces your windows. We have replaced eleven windows in a day."
+              "text": "Our crew arrives in the morning and covers the work area before the first window comes out. We have installed eleven windows in one day."
             },
             {
-              "title": "Clean-up and a follow-up call",
-              "text": "We trim, caulk, clean and haul off the old windows. Then we call to make sure you're happy."
+              "title": "Clean-up and a walkthrough",
+              "text": "We trim, caulk, clean up and haul off the old windows, then show you how your new windows work."
             }
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "They answered all my questions and took their time explaining use of my beautiful new windows.",
+          "name": "Anita B."
+        },
+        {
+          "type": "prose",
+          "heading": "Price, Warranty and Financing",
+          "body": [
+            "**Our energy efficient windows carry a manufacturer's lifetime warranty,** from glass breakage to how the window works.",
+            "Bring your foreman a lower price on a comparable product and we'll beat it. Financing is available for larger projects; ask about it at your estimate."
           ]
         },
         {
@@ -295,20 +325,12 @@
           "name": "Kathleen M."
         },
         {
-          "type": "prose",
-          "heading": "Price, Warranty and Financing",
-          "body": [
-            "Every energy efficient window carries a manufacturer's lifetime warranty. Bring us a lower price on a comparable product and we'll beat it.",
-            "Financing is available if you want to spread the cost of a larger project. Ask us about it at your estimate."
-          ]
-        },
-        {
           "type": "faq",
           "heading": "Window Replacement Questions",
           "items": [
             {
               "q": "How long does installation take?",
-              "a": "We have installed all of a home's windows in under four hours, and eleven windows in one day. Bigger jobs can take a second day for trim and caulk."
+              "a": "We have installed all of a home's windows in under four hours, and eleven windows in one day. On larger homes we have come back a second day for trim and caulk."
             },
             {
               "q": "Do you take the old windows away?",
@@ -319,8 +341,8 @@
               "a": "Yes. We seal and trim them out the same as every other window."
             },
             {
-              "q": "Is there a warranty on the windows?",
-              "a": "Yes. Our energy efficient windows carry a manufacturer's lifetime warranty that covers everything from glass breakage to how the window works."
+              "q": "Can I replace a few windows now and more later?",
+              "a": "Yes. Start with the rooms that matter most and add the rest when you're ready."
             }
           ]
         },
@@ -340,7 +362,7 @@
       "hero": {
         "eyebrow": "Vinyl siding and sliding patio doors",
         "h1": "Siding & Sliding Patio Doors in Wichita, KS — Evolve Exteriors",
-        "sub": "New vinyl siding lowers your Kansas energy bills. A new sliding patio door lets the light in and glides open with one finger. Our crew finishes both clean and quickly.",
+        "sub": "New vinyl siding helps lower your Kansas and Oklahoma energy bills. We have sided a home in one day and put in a sliding patio door alongside ten windows in about seven hours.",
         "primaryCta": {
           "label": "Call (316) 435-8009",
           "action": "call"
@@ -365,8 +387,8 @@
           "type": "split",
           "heading": "Vinyl Siding That Lowers Your Energy Bills",
           "body": [
-            "Vinyl siding is durable, holds its color and needs little upkeep. It also helps cut your Kansas and Oklahoma energy bills.",
-            "Colton surveys your house, quotes the price and sends our crew. We take away the old siding and leave the yard clean."
+            "**New vinyl siding is a sure way to lower your energy bills.** We survey your house, give you the price and send our crew.",
+            "We take away every piece of the old siding and leave your yard clean."
           ],
           "image": {
             "slot": "siding-main",
@@ -382,10 +404,10 @@
         },
         {
           "type": "prose",
-          "heading": "We Tell You What's Behind the Old Siding",
+          "heading": "We Tell You What's Wrong With the Old Siding",
           "body": [
-            "Sometimes a window job shows that the siding has worn out or was poorly installed. We walk you through the problem and the options before you decide.",
-            "You choose whether to keep it or replace it."
+            "**If your siding is worn out, melted or badly installed, we show you.** Then we lay out your options, keep it for now or replace it, and you decide.",
+            "We have found failing siding during a window job and replaced it as part of the same project."
           ]
         },
         {
@@ -397,29 +419,27 @@
           "type": "prose",
           "heading": "Soffit and Fascia, Done With the Siding",
           "body": [
-            "Soffit and fascia trim the edge of your roof. We replace them along with your siding, so the roof edge matches the new walls.",
-            "The whole outside of the house ends up looking like one finished job instead of a patched one."
+            "**Soffit and fascia are the boards under and along the edge of your roof.** When they need it, we replace them with your siding, so the whole outside of the house looks like one finished job."
           ]
         },
         {
           "type": "prose",
           "heading": "Siding and Windows Together",
           "body": [
-            "Windows and siding share the same wall, so we plan them as one project when you want both. You can also do windows first and siding later.",
-            "Either way, Colton gives you one clear price for the work."
+            "**Windows and siding meet on the same wall, so we can plan them as one project.** Or start with windows and add siding later. We have done it both ways."
           ]
         },
         {
           "type": "review",
-          "quote": "Evolve Exteriors made our siding replacement very easy. They handled everything professionally, did great work, and finished the job quickly.",
-          "name": "Lucas M."
+          "quote": "I have new siding and it really made my home beautiful, it's quieter, and is staying so much cooler.",
+          "name": "Melinda D."
         },
         {
           "type": "split",
-          "heading": "Sliding Patio Doors That Glide",
+          "heading": "Sliding Patio Doors That Open Easily",
           "body": [
-            "A sliding door brings daylight into the room and opens the house to the yard. The insulated glass helps keep the heat in or out.",
-            "Our crew installs the door and cleans up when the job is done."
+            "**A new sliding patio door brings in daylight and opens the house to the yard.** We put it in on its own or alongside your windows.",
+            "We have installed ten windows and a sliding door in about seven hours, then taken the old ones with us."
           ],
           "image": {
             "slot": "siding-doors",
@@ -430,7 +450,7 @@
         },
         {
           "type": "review",
-          "quote": "I now can open my sliding glass door with 1 finger instead of putting my whole body in it.",
+          "quote": "His installers came out today & put in 10 windows & a sliding glass door in like 7 hours. I now can open my sliding glass door with 1 finger instead of putting my whole body in it.",
           "name": "Karla S."
         },
         {
@@ -438,27 +458,27 @@
           "heading": "How Siding and Door Jobs Go",
           "items": [
             {
-              "title": "A one-hour consultation",
-              "text": "We look at your house and talk through what you want. Then you get the price."
+              "title": "We look and quote",
+              "text": "Our siding consultation takes about an hour. We look at your house, talk through what you want and give you the price."
             },
             {
-              "title": "Your materials arrive",
-              "text": "You choose your siding or patio door, and we schedule the crew."
+              "title": "You choose",
+              "text": "Pick your siding or patio door, and we schedule the crew."
             },
             {
               "title": "Our crew does the work",
-              "text": "Our crew removes the old siding or door and installs the new one. We have finished a whole house of siding in a day."
+              "text": "We remove the old siding or door and install the new one. We have finished a whole house of siding in a day."
             },
             {
               "title": "Clean-up",
-              "text": "We haul away the old material and leave the yard clean."
+              "text": "We haul away the old material and leave your yard clean."
             }
           ]
         },
         {
           "type": "review",
-          "quote": "Love the new sliding door and the large casement windows they installed.",
-          "name": "Terry K."
+          "quote": "Evolve Exteriors made our siding replacement very easy. They handled everything professionally, did great work, and finished the job quickly.",
+          "name": "Lucas M."
         },
         {
           "type": "faq",
@@ -466,27 +486,23 @@
           "items": [
             {
               "q": "How long does siding take?",
-              "a": "We have finished a whole house in one day. Ask us about the schedule for yours."
-            },
-            {
-              "q": "Do you take away the old siding?",
-              "a": "Yes. We remove the old siding and clean up the yard when the job is done."
+              "a": "We have finished a whole house in one day. We give you the schedule for yours at your estimate."
             },
             {
               "q": "Can I pair siding with new windows?",
-              "a": "Yes. Some homeowners start with windows and add siding next. Ask us about both at your estimate."
+              "a": "Yes. We can do both in one project, or windows now and siding later."
+            },
+            {
+              "q": "Do you replace soffit and fascia?",
+              "a": "Yes. We replace them with your siding so the edge of your roof matches the walls."
             },
             {
               "q": "Is financing available?",
               "a": "Yes. Ask about financing at your estimate."
             },
             {
-              "q": "Do you replace soffit and fascia?",
-              "a": "Yes. We replace them with the siding so the edge of your roof matches the walls."
-            },
-            {
               "q": "How do I start?",
-              "a": "Call (316) 435-8009 in Wichita or (405) 363-2294 in Oklahoma City. Our siding consultation takes about an hour."
+              "a": "Call (316) 435-8009 in Wichita or (405) 363-2294 in Oklahoma City to book your consultation."
             }
           ]
         },
@@ -506,7 +522,7 @@
       "hero": {
         "eyebrow": "Contact",
         "h1": "Contact Evolve Exteriors",
-        "sub": "Call the office for your side of the state. We're in Monday to Friday, 9:00 AM to 5:00 PM.",
+        "sub": "Call the office for your side of the state and we'll set up your free estimate. We're in Monday to Friday, 9:00 AM to 5:00 PM.",
         "primaryCta": {
           "label": "Call (316) 435-8009",
           "action": "call"
@@ -534,6 +550,7 @@
           "type": "list",
           "heading": "Have This Ready",
           "list": [
+            "Your town, so the right office calls you back",
             "How many windows, and which rooms",
             "Whether you want siding or a patio door too",
             "Whether you want to hear about financing"
@@ -566,9 +583,9 @@
     }
   ],
   "footer": {
-    "about": "Evolve Exteriors is a locally owned and operated exterior remodeling company with hubs in Wichita and Oklahoma City. We replace windows, install vinyl siding and hang sliding patio doors.",
+    "about": "We're a locally owned and operated exterior remodeling company with hubs in Wichita and Oklahoma City. We replace windows, install vinyl siding and put in sliding patio doors.",
     "why": [
-      "Owners on every project",
+      "Owner-run by Colton and Riley",
       "Manufacturer's lifetime warranty on energy efficient windows",
       "We beat a lower price on a comparable product"
     ]
@@ -576,23 +593,25 @@
   "strategy": {
     "whyHeading": "Why we built this site",
     "why": [
-      "Your customers love you: you hold a 5.0 on 140 Google reviews. Your website hides every one of them, and its phone buttons dial a number that does not exist.",
-      "So we rebuilt it around what your customers already say: fast crews, clean job sites, owners who answer, and rooms that get quieter and cooler."
+      "Your customers already make your case. You hold a 5.0 on 140 Google reviews, and they say it plainly: \"Small company with owner involvement.\" \"My house is much quieter and cooler now.\" \"If you are looking into getting new windows call Evolve Exteriors first!\"",
+      "Your website hides all of it behind sample text, and its phone buttons reach neither office.",
+      "So we built this site around their words."
     ],
     "cardsHeading": "Be the Exterior Company People Find on Google",
-    "cardsIntro": "Each card is one page of the demo: what costs you calls today, and how the demo fixes it.",
+    "cardsIntro": "Each card is one page: what your site does today and what we changed.",
     "cards": [
       {
         "route": "/home/",
         "title": "Homepage",
-        "why": "The first page people see, and the one Google reads to learn who you are and where you work.",
+        "why": "The page Google reads to learn who you are and where you work.",
         "problems": [
-          "Every call button dials 1234567890, so someone on a phone cannot reach you. Your real numbers sit at the very bottom of the page.",
-          "The top of the page says \"Best Professional Window Installation\" with no town, so Google can't tell you serve Wichita.",
-          "The one customer quote is \"Samantha Johnson\", leftover sample text, while 140 real reviews go unused."
+          "Every call button dials 1234567890, so a visitor who taps your Wichita number reaches nothing.",
+          "The Oklahoma City number is plain text with no button, so your second office can't be reached by tap.",
+          "The top of the page says \"Best Professional Window Installation\" with no town, so Google can't tell you work in Wichita.",
+          "Your 140 reviews are missing; the only quote is sample text from \"Samantha Johnson\"."
         ],
         "fixes": [
-          "Every number is a one-tap call, including Oklahoma City.",
+          "Wichita and Oklahoma City are each one tap to call, on every page.",
           "A headline that says exterior remodeling company in Wichita, KS, right at the top.",
           "Real reviews from your customers, each beside the point it proves."
         ],
@@ -601,43 +620,41 @@
       {
         "route": "/window-replacement-wichita-ks/",
         "title": "Window Replacement",
-        "why": "Windows are about three quarters of your written reviews, and they have no page of their own.",
+        "why": "Windows are about three quarters of your written reviews, and they have no real page.",
         "problems": [
-          "Window styles are a bare list of names on \"Our Windows\", with nothing on price, warranty or how a job goes.",
-          "The \"Read More\" button on Sliding Patio Doors opens this windows page instead of a patio door page."
+          "\"Our Windows\" is eight style names with nothing on warranty, price or install, so Google has little to rank and shoppers little reason to call."
         ],
         "fixes": [
-          "A full page for window replacement in Wichita, KS.",
-          "Styles, warranty, price match and install day explained.",
-          "Reviews matched to each point."
+          "A full page for window replacement in Wichita, KS: styles, warranty, price match and install day.",
+          "Reviews on basement windows, old houses and cooler rooms, each beside its point."
         ],
         "alsoAdd": "Pages planned from what Google actually shows for each search, so every page targets something people really look for."
       },
       {
         "route": "/siding-patio-doors-wichita-ks/",
         "title": "Siding & Patio Doors",
-        "why": "Siding and patio doors are real jobs your crews finish in a day, and your site has no page for either.",
+        "why": "Your crews finish siding in a day, and neither siding nor patio doors has a page.",
         "problems": [
-          "\"Vinyl Siding\" opens a page called \"copy-of-our-windows\", a leftover duplicate with one paragraph.",
-          "Patio doors have no page at all, so nobody searching for one finds you."
+          "The Sliding Patio Doors \"Read More\" button opens your windows page, so a door shopper lands on window style names.",
+          "\"Vinyl Siding\" opens a leftover page called \"copy-of-our-windows\": one siding paragraph, then window text ending mid-sentence on \"that fit your.\""
         ],
         "fixes": [
-          "A page for vinyl siding and sliding patio doors in Wichita.",
-          "Real jobs and reviews, one for each service."
+          "One page for vinyl siding and sliding patio doors in Wichita, and every button opens it.",
+          "Your siding and patio door reviews beside the work they describe."
         ],
         "alsoAdd": "A check of what your competitors offer, so services you didn't think to mention still get their own pages."
       },
       {
         "route": "/contact/",
         "title": "Contact",
-        "why": "The page where interest turns into a call, and where two offices need clear numbers.",
+        "why": "Where a ready customer reaches you, at either office.",
         "problems": [
-          "The email link opens info@mysite.com, not your address.",
-          "The Oklahoma City number is plain text, and \"Get a Free Estimate\", \"Services\" and \"About Us\" all link back to the homepage."
+          "\"Get a Free Estimate\", \"Get a Quote\" and \"About Us\" all lead back to the homepage.",
+          "The email link writes to info@mysite.com, a stranger's address."
         ],
         "fixes": [
-          "Both numbers are one tap, with the hours beside them.",
-          "A real contact page that says what to have ready."
+          "Both numbers one tap away, with your hours and your real email.",
+          "A short list of what to have ready before you call."
         ],
         "alsoAdd": "Call and form tracking that shows which pages and towns your leads come from."
       }
@@ -645,12 +662,12 @@
     "reportCardHeading": "What great exterior company websites get right, and how yours measures up.",
     "reportCard": [
       {
-        "label": "Headline says what you do and where",
-        "status": "Needs work"
-      },
-      {
         "label": "Every phone number dials correctly",
         "status": "Missing"
+      },
+      {
+        "label": "Headline says what you do and where",
+        "status": "Needs work"
       },
       {
         "label": "Each money service has its own page",
@@ -661,12 +678,12 @@
         "status": "Missing"
       },
       {
-        "label": "Email link opens your address",
-        "status": "Missing"
-      },
-      {
         "label": "Buttons open the right pages",
         "status": "Needs work"
+      },
+      {
+        "label": "Email link opens your address",
+        "status": "Missing"
       },
       {
         "label": "No leftover sample text",
@@ -675,7 +692,7 @@
     ],
     "closing": {
       "heading": "Want a website like this for your business?",
-      "text": "Your customers already say you show up, work fast and leave the house clean. You likely do more than we found, so on your onboarding call we confirm the full list of services and every detail with you and your team."
+      "text": "Your customers already tell people to call you first. Book a strategy call with Fluid Frame and we'll walk you through this demo and plan your new site."
     }
   },
   "onboardingQuestions": [
@@ -689,7 +706,7 @@
     "Licensing, insurance, BBB or any certification to verify and show. None is stated anywhere we found.",
     "Is financing through a named lender, and may we say \"low-to-no interest\"? The financing page also names the wrong city (Addison).",
     "Should the 15% off sign-up offer on the current homepage be honored on the new site?",
-    "Typical install times for windows and siding, and what is included in the window and siding consultations, so the steps can be firmed up.",
+    "Typical install times for windows and siding, and what is included in the window, siding and patio door consultations, so the steps can be firmed up.",
     "Logo file and brand colors (not sampled; none held in our files).",
     "Is Evolve Egress and Exteriors (named in one review and on Angi) the same company?"
   ]

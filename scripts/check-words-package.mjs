@@ -101,7 +101,13 @@ for (const p of pages) {
 }
 
 // 6. Lengths (approximate rendered count)
-const chrome = words("← See why we built this site") + pages.reduce((n, p) => n + words(p.navLabel), 0) + words("Services Service area Contact Why choose us") + words(`© 2026 ${b.name}`) + 4;
+// Fixed text the template adds to every business page, calibrated against the rendered Evolve template (2026-11-09):
+// back bar, nav (desktop + mobile menu), header phone button, phone call bar, footer headings and labels, copyright.
+const mainPhone = words((b.phones || [])[0]?.display);
+const ctaLabel = words(pages.find((p) => p.role === "home")?.hero?.secondaryCta?.label || "Get a Free Estimate");
+const chrome = words("← See why we built this site") + 2 * pages.filter((p) => p.role !== "home").reduce((n, p) => n + words(p.navLabel), 0)
+  + mainPhone + (1 + mainPhone + ctaLabel) + words("Services Service area Contact Why choose us") + (b.email ? 1 : 0) + (b.hours ? 1 : 0)
+  + words(`© 2026 ${b.name}`) + words(b.name) + 6;
 const footerWords = words(pkg.footer?.about) + pkg.services.reduce((n, s) => n + words(s.name), 0) + words(b.serviceArea?.summary) + (b.phones || []).reduce((n, p) => n + words(p.label) + words(p.display), 0) + words(b.email) + words(b.hours) + (pkg.footer?.why || []).reduce((n, w) => n + words(w), 0);
 const trust = pkg.trustBar.reduce((n, t) => n + words(t), 0);
 const ranges = { home: [580, 700], service: [750, 900], contact: [250, 450] };
