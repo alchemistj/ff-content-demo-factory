@@ -351,6 +351,18 @@
       "pulledAt": "2026-10-23T17:38:02.396Z"
     },
     {
+      "slug": "midas-maid-service",
+      "name": "Mida's Maid Service",
+      "placeId": "ChIJO3ofHUf7aEURBCzZ9-PMy70",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 21,
+        "withText": 18,
+        "ratingOnly": 3
+      },
+      "pulledAt": "2026-11-09T18:20:29.427Z"
+    },
+    {
       "slug": "monarch-roofing",
       "name": "Monarch Roofing & Construction",
       "placeId": "ChIJd6I2UHfjuocRn5blnlN8N-0",
