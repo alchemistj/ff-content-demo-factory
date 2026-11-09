@@ -8,7 +8,7 @@ Sources: `facts.md`, `reviews.json`, `audit.md`. Nothing here is a claim that fa
 - **Service page 1:** Window Replacement in Wichita, KS — Dan Dan The Window Man (`/window-replacement-wichita-ks/`, keyword "window replacement Wichita KS"). Windows are about 74% of what the 39 written reviews describe.
 - **Service page 2:** Door Replacement in Wichita, KS — Dan Dan The Window Man (`/door-replacement-wichita-ks/`, keyword "door replacement Wichita KS"). Doors are the next most reviewed service (about 15%) and nearly always sold with windows.
 - Cannibalization: neither service H1 contains "exterior remodeling company". Siding, gutters, roofing and hail work get a homepage section but no page; they have almost no review proof.
-- Contact page: Contact Dan Dan The Window Man (not written in this run).
+- **Contact page:** Contact Dan Dan The Window Man (`/contact/`). Utility page: call or message, what to have ready, showroom address, area. One review.
 
 ## The idea (homepage)
 Replacing windows should be the easy part of your year. You deal with the owner, Rick, who tells you straight what you need and what it costs; then a crew shows up on the date, finishes fast and leaves the house cleaner than it found it. Windows are what we do most, and the same owner and crew handle the doors, siding, gutters and storm claims around them.
@@ -83,7 +83,34 @@ See below.
 7. **How do I pay, and is there financing?** Synchrony Bank, 18 months no monthly interest if paid in full; checks and cards.
 8. **Do you speak Spanish?** Se Habla Español (site).
 
-## Service page outlines (not written in this run)
+## Review allocation (each review appears once across the site)
+- Homepage: Brooke B., Greg S., Lakesha B., Tim D., Joni M.
+- Window page: Stacy C. (the installation is the experience), Andy H. (a hard opening), Dwight S. (a date kept, early), Nasia T. (clear communication on order and schedule).
+- Door page: Callie W. (patio door, easy, no pressure), Trevor W. (side door and window on a garage), Trevelyn G. (3 windows and 2 doors, installer explained as he worked).
+- Contact page: Simon K. (clear on communication, on top of every detail).
+- Roofing is dropped from the homepage copy: no review supports it.
+
+## Window page plan (`/window-replacement-wichita-ks/`)
+- **Idea:** the window is the product, but the installation is the experience; you meet the person who measures and the crew that installs.
+- **Failing windows:** moment is fog, drafts, a sash that sticks; reason is the failed seal. Proof: none needed; teaching.
+- **Replace or not, and which style:** double-hung, slider, casement, picture, awning, shaped, basement; trade knowledge on when each fits. Proof: Andy H. (difficult opening, Rick found a solution).
+- **What we build:** double-pane, Low-E, argon, double-strength glass, exceed ENERGY STAR criteria (site). One, some or all. Not claimed: brand, American-made, lifetime warranty.
+- **Measure, order, wait:** custom-built so there is a wait; plan on two to three weeks (Chicken W., 2021). Proof: Dwight S. (install came before promised).
+- **Install day:** crew keeps you posted, cleans up. Proof: Stacy C.
+- **Insurance, price, financing:** window claims worked with the adjuster (Lakesha B. is used on the homepage, so no quote); free estimate; Synchrony 18 months.
+- **Questions and warranty:** installation warranty per Rick; communication. Proof: Nasia T.
+
+## Door page plan (`/door-replacement-wichita-ks/`)
+- **Idea:** a door is a hole in the wall that opens and closes thousands of times, so the frame and the fit matter as much as the door.
+- **Moment:** shoulder-opening a patio door, drafts, a swollen side door. Reason: weatherstrip, threshold, hinges, track.
+- **Types:** entry, patio, French, side (custom-manufactured, site). Proof: Callie W., Trevor W.
+- **Doors with windows:** match frames and finishes; one crew, one visit. Proof: Trevelyn G.
+- **Questions:** free estimate, lead time, financing.
+
+## Contact page plan (`/contact/`)
+- Call for the fastest answer; message form; what to have ready; showroom 6810 W Kellogg Dr; Wichita metro; Se habla español; payment and financing. No hours (conflict), no email, no response-time promise. Proof: Simon K.
+
+## Service page outlines (earlier draft, superseded by the plans above)
 - **Window Replacement:** what a failed window feels like; why seals fail; choosing frame type and style (double-hung, slider, casement, picture, awning, shaped, basement); how an opening is measured and the window is ordered to fit; install day and cleanup (Stacy C., Callie W., Dwight S.); insurance (Lakesha B.); price and financing; questions.
 - **Door Replacement:** patio, entry, French and side doors; why doors fail; matching windows and doors on one job (Brooke B., Trevelyn G.); install and cleanup (Tim D., Trevor W.); questions.
 
