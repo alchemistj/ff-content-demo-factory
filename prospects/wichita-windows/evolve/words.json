@@ -183,7 +183,7 @@
             },
             {
               "q": "What does the window warranty cover?",
-              "a": "Our energy efficient windows carry a manufacturer's lifetime warranty, from glass breakage to how the window works."
+              "a": "Everything from glass breakage to how the window works."
             }
           ]
         },
@@ -203,7 +203,7 @@
       "hero": {
         "eyebrow": "Energy efficient windows",
         "h1": "Window Replacement in Wichita, KS — Evolve Exteriors",
-        "sub": "We measure every opening, install your new windows and haul the old ones away. Each energy efficient window carries a manufacturer's lifetime warranty, and we beat a lower price on a comparable product.",
+        "sub": "We measure every opening, install your new windows and haul the old ones away.",
         "primaryCta": {
           "label": "Call (316) 435-8009",
           "action": "call"

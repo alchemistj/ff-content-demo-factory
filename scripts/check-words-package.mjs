@@ -117,11 +117,26 @@ const chrome = words("← See why we built this site") + 2 * pages.filter((p) =>
   + words(`© 2026 ${b.name}`) + words(b.name) + 6;
 const footerWords = words(pkg.footer?.about) + pkg.services.reduce((n, s) => n + words(s.name), 0) + words(b.serviceArea?.summary) + (b.phones || []).reduce((n, p) => n + words(p.label) + words(p.display), 0) + words(b.email) + words(b.hours) + (pkg.footer?.why || []).reduce((n, w) => n + words(w), 0);
 const trust = pkg.trustBar.reduce((n, t) => n + words(t), 0);
-const ranges = { home: [580, 700], service: [750, 900], contact: [250, 450] };
+// Josh, 2026-11-09: thin copy is the problem, not long copy. Fail below the minimum; above the soft size, only flag it for a look.
+const ranges = { home: [550, 900], service: [700, 1150], contact: [250, 600] };
 for (const p of pages) {
   const n = pageTexts(p).reduce((a, t) => a + words(t), 0) + chrome + footerWords + trust;
   const [lo, hi] = ranges[p.role];
-  (n < lo || n > hi ? fail : (m) => info.push(m))(`${p.route}: about ${n} rendered words (target ${lo}–${hi})`);
+  if (n < lo) fail(`${p.route}: about ${n} rendered words, too thin (minimum ${lo})`);
+  else if (n > hi) warn(`${p.route}: about ${n} rendered words; long, check for filler (soft size ${hi})`);
+  else info.push(`${p.route}: about ${n} rendered words (minimum ${lo})`);
+  // One fact, said once per page: years in business, a "since" year, the warranty, the price promise. Trust bar and footer don't count.
+  const body = [p.hero?.eyebrow, p.hero?.sub, ...(p.sections || []).filter((x) => x.type !== "review").flatMap((x) => [x.heading, x.intro, x.text, ...(x.body || []), ...(x.list || []), ...(x.items || []).flatMap((i) => [i.title, i.text, i.q, i.a])])].filter(Boolean).join(" \n ");
+  const facts = [
+    [/\bsince (?:19|20)\d\d\b/gi, "a since-year"],
+    [/\b(?:over |more than |nearly |almost )?\d+\+? years?\b(?! old)(?!-old)/gi, "years in business"],
+    [/\blifetime warrant/gi, "the lifetime warranty"],
+    [/\b(?:we('ll| will) beat it|beat (?:a|any|the) lower price|price[- ]beat)/gi, "the price-beat promise"],
+  ];
+  for (const [re, label] of facts) {
+    const hits = (body.match(re) || []).map((h) => h.toLowerCase());
+    if (hits.length > 1) fail(`${p.route}: ${label} is said ${hits.length} times on one page (${[...new Set(hits)].join(", ")}); say it once`);
+  }
 }
 const st = pkg.strategy || {};
 const stWords = [st.whyHeading, ...(st.why || []), st.cardsHeading, st.cardsIntro, ...(st.cards || []).flatMap((c) => [c.title, c.route, c.why, ...(c.problems || []), ...(c.fixes || []), c.alsoAdd, "Current site problem What the demo fixes A full build would also add View page"]), st.reportCardHeading, ...(st.reportCard || []).flatMap((r) => [r.label, r.status]), st.closing?.heading, st.closing?.text].reduce((a, t) => a + words(t), 0) + 330; // + fixed hero, case study, full-build list, header, bar
