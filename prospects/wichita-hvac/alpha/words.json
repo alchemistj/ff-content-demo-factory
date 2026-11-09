@@ -1,0 +1,751 @@
+{
+  "schema": "words-package/v1",
+  "business": {
+    "name": "Alpha HVAC & Plumbing",
+    "slug": "alpha",
+    "city": "Wichita",
+    "state": "KS",
+    "companyType": "HVAC Company",
+    "phones": [
+      {
+        "label": "Wichita",
+        "display": "(316) 260-5775",
+        "tel": "+13162605775"
+      }
+    ],
+    "email": "tomt@alpha-heatair.com",
+    "hours": "Monday to Friday, 7:30 AM to 5:00 PM, with 24-hour emergency service",
+    "address": null,
+    "serviceArea": {
+      "summary": "Wichita and the surrounding areas",
+      "towns": [
+        "Wichita"
+      ]
+    }
+  },
+  "trustBar": [
+    "24-Hour Emergency Service",
+    "Free Replacement Estimates",
+    "100% Customer Satisfaction Guaranteed",
+    "Locally Owned & Operated"
+  ],
+  "services": [
+    {
+      "name": "AC Repair",
+      "route": "/ac-repair-wichita-ks/",
+      "blurb": "We repair all makes and models of air conditioning equipment."
+    },
+    {
+      "name": "Furnace Repair",
+      "route": "/furnace-repair-wichita-ks/",
+      "blurb": "We repair all makes and models of heating equipment."
+    },
+    {
+      "name": "AC Installation",
+      "route": null,
+      "blurb": "New cooling equipment, with a free replacement estimate."
+    },
+    {
+      "name": "Furnace Installation",
+      "route": null,
+      "blurb": "New heating equipment, with a free replacement estimate."
+    },
+    {
+      "name": "Heating and Cooling Maintenance",
+      "route": null,
+      "blurb": "Scheduled service that keeps your system running efficiently year-round."
+    },
+    {
+      "name": "Plumbing Repairs",
+      "route": null,
+      "blurb": "Residential and commercial plumbing repairs."
+    },
+    {
+      "name": "Water Heater Replacement and Service",
+      "route": null,
+      "blurb": "We replace and install new water heaters, with a free estimate, and service the one you have."
+    },
+    {
+      "name": "Plumbing for Remodels",
+      "route": null,
+      "blurb": "Plumbing work for your remodel, handled by the same company."
+    }
+  ],
+  "pages": [
+    {
+      "role": "home",
+      "route": "/home/",
+      "navLabel": "Home",
+      "keyword": "hvac company wichita ks",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Locally owned and operated in Wichita",
+        "h1": "HVAC Company in Wichita, KS — Alpha HVAC & Plumbing",
+        "sub": "We repair and install heating and cooling equipment, and we repair and replace plumbing, for homes and businesses in Wichita and the surrounding areas. Call any hour: we run 24-hour emergency service.",
+        "primaryCta": {
+          "label": "Call (316) 260-5775",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Schedule an Appointment",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "home-hero",
+          "alt": "Wichita ranch house with an air conditioner unit and a clear sky",
+          "brief": "ranch house with a tidy outdoor air conditioner unit, house on the right half, driveway leading off to the left, calm clear sky behind the text side, no readable text, no people"
+        }
+      },
+      "sections": [
+        {
+          "type": "review",
+          "quote": "Tom, Brett, Haden and Michael did an awesome job. Great company to work with. We’ll refer you to everyone.",
+          "name": "Janet A."
+        },
+        {
+          "type": "split",
+          "heading": "One Company for Heating, Cooling and Plumbing",
+          "body": [
+            "**You call one number for the furnace, the air conditioner and the water heater.** We repair all makes and models of heating and cooling equipment, and we handle residential and commercial plumbing.",
+            "We have replumbed the water lines in the same job as a new heating and cooling system."
+          ],
+          "image": {
+            "slot": "home-one-company",
+            "alt": "Wichita brick ranch house with a tidy outdoor AC unit beside the wall",
+            "brief": "brick ranch house with an outdoor air conditioner unit beside the wall, house on the right, lawn leading off to the left, calm clear sky behind the text side, no readable text, no people"
+          },
+          "imageSide": "right"
+        },
+        {
+          "type": "review",
+          "quote": "It’s hard to find contractors that handle both HVAC and plumbing work this well, but Alpha HVAC & Plumbing did an outstanding job. I highly recommend them to anyone needing HVAC installation, furnace or AC replacement, or plumbing work.",
+          "name": "Victor S."
+        },
+        {
+          "type": "prose",
+          "heading": "Fast When Your System Quits",
+          "body": [
+            "**We run 24-hour emergency service, and we move quickly.** We have been at a house within two hours of a Sunday-morning call.",
+            "Our office is open Monday to Friday, 7:30 AM to 5:00 PM."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Tech came out the same day and was very knowledgeable. He pinpointed the problem quickly and repaired it quickly.",
+          "name": "Jason P."
+        },
+        {
+          "type": "services",
+          "heading": "Everything We Do",
+          "intro": "Heating, cooling and plumbing, for homes and businesses. Repairs and installations both."
+        },
+        {
+          "type": "prose",
+          "heading": "Service That Saves You Money",
+          "body": [
+            "**Scheduled service keeps your heating, cooling and water heater running efficiently year-round.** We offer an annual service plan."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Their annual service plan has saved me a lot of money. I was told from previous company that an expensive repair was needed, when it was actually a less expensive part.",
+          "name": "Braxton H."
+        },
+        {
+          "type": "prose",
+          "heading": "Plumbing, Water Heaters and Remodels",
+          "body": [
+            "**We repair plumbing, replace water heaters and plumb your remodel.** Water heater replacement comes with a free estimate, for homes and businesses."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Vincent replaced our hot water heater. He was professional, personnel, and timely. Great company!",
+          "name": "Jarett B."
+        },
+        {
+          "type": "prose",
+          "heading": "Wichita and the Area Around It",
+          "body": [
+            "**We serve Wichita and the surrounding areas.** Homeowners, landlords and businesses call us for heating, cooling and plumbing."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "I’ve used Alpha many times, and they are professional, and prompt. Highly recommend.",
+          "name": "Mary B."
+        },
+        {
+          "type": "faq",
+          "heading": "Questions Before You Call",
+          "items": [
+            {
+              "q": "Do you charge for a replacement estimate?",
+              "a": "No. Replacement estimates on new heating and cooling equipment are free."
+            },
+            {
+              "q": "Can you work on my brand of equipment?",
+              "a": "Yes. We repair all makes and models of heating and air conditioning equipment."
+            },
+            {
+              "q": "Is financing available?",
+              "a": "Yes, through Wisetack."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Need Heat, Cooling or Plumbing?",
+          "text": "Call (316) 260-5775, any hour for emergencies. Our office is open Monday to Friday, 7:30 AM to 5:00 PM."
+        }
+      ]
+    },
+    {
+      "role": "service",
+      "route": "/ac-repair-wichita-ks/",
+      "navLabel": "AC Repair",
+      "keyword": "ac repair wichita ks",
+      "seo": null,
+      "hero": {
+        "eyebrow": "AC repair, every make and model",
+        "h1": "AC Repair in Wichita, KS — Alpha HVAC & Plumbing",
+        "sub": "We repair all makes and models of air conditioning equipment. We run 24-hour emergency service, and a technician explains what is wrong before you decide what to do.",
+        "primaryCta": {
+          "label": "Call (316) 260-5775",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Schedule an Appointment",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "ac-hero",
+          "alt": "Outdoor air conditioner unit on a summer afternoon beside a Wichita home",
+          "brief": "outdoor air conditioner unit beside a house wall, unit on the right, lawn leading to the left, bright calm sky behind the text side, no readable text, no people"
+        }
+      },
+      "sections": [
+        {
+          "type": "review",
+          "quote": "Brett came out on a Saturday, trouble-shot my janky old house, and got my AC running within an hour! Good price too",
+          "name": "Peter T."
+        },
+        {
+          "type": "split",
+          "heading": "When Your AC Quits",
+          "body": [
+            "**Call us the hour it stops cooling.** We run 24-hour emergency service and repair all makes and models of air conditioning equipment.",
+            "We have been out on a Saturday, and at a house within two hours of a Sunday-morning call."
+          ],
+          "image": {
+            "slot": "ac-quits",
+            "alt": "Outdoor air conditioner condenser beside a brick wall in sunshine",
+            "brief": "outdoor air conditioner condenser beside a brick wall, unit on the right, grass and walkway leading to the left, calm sky behind the text side, no readable text, no people"
+          },
+          "imageSide": "right"
+        },
+        {
+          "type": "review",
+          "quote": "Our AC went out on Saturday and we called Alpha Sunday morning and they came out within 2 hours. Very quick response, knowledgeable tech, fast results and reasonable price.",
+          "name": "Courtney B."
+        },
+        {
+          "type": "prose",
+          "heading": "Fixed, Not Replaced by Default",
+          "body": [
+            "**We look for the part that failed before we talk about a new system.** We have traced an AC that quit blowing cold to one small part and had it fixed in 30 minutes.",
+            "We have fixed a blower motor the same day we were called."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Geoff comes in, fixes a small part, educates me on what it does, is polite and respectful and I spent way way less than I was expecting.",
+          "name": "Desiree F."
+        },
+        {
+          "type": "prose",
+          "heading": "We Show You What We Find",
+          "body": [
+            "**Our technicians explain the problem at your unit and answer your questions.** On a service visit we take pictures of your system, so you see what we see."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Brett was very professional and nice! Answered all the questions we had!",
+          "name": "Candice R."
+        },
+        {
+          "type": "prose",
+          "heading": "Mini Splits Too",
+          "body": [
+            "**Your cooling equipment is our job, mini splits included.** We have installed mini splits through a whole house, so every room holds its own temperature, and found a leak at a mini split head."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Alpha installed mini splits in our entire home. We love having every room being set at its own temperature and not to mention the great job the crew did installing everything in our house.",
+          "name": "Donnie W."
+        },
+        {
+          "type": "prose",
+          "heading": "A Tune-Up That Checks Everything",
+          "body": [
+            "**A maintenance visit means real work on your AC.** We have changed the filter, checked the temperature at every register and cleaned the outdoor unit.",
+            "We have worn shoe covers inside customers' homes."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Alpha did a great job this morning servicing my HVAC system. They changed the filter, checked temp at all the registers, and cleaned the exterior unit. They were detail oriented and even wore shoe covers when in the house.",
+          "name": "Joshua T."
+        },
+        {
+          "type": "split",
+          "heading": "When a New AC Is the Answer",
+          "body": [
+            "**If your AC is past repair, we install new cooling equipment and give you a free replacement estimate.** Financing is available through Wisetack, and high-efficiency equipment carries an extended warranty.",
+            "We have installed a new A/C on a day when the heat index hit 105."
+          ],
+          "image": {
+            "slot": "ac-install",
+            "alt": "New outdoor air conditioner unit installed on a level pad beside a house",
+            "brief": "new outdoor air conditioner installed on a gravel pad beside a house wall, unit on the right, yard on the left, soft calm sky behind the text side, no readable text, no people"
+          },
+          "imageSide": "right"
+        },
+        {
+          "type": "review",
+          "quote": "Brett did a GREAT job installing our new A/C unit today with heat index of 105. We’ve used this company for years and always so satisfied with their work",
+          "name": "Greg W."
+        },
+        {
+          "type": "steps",
+          "heading": "How an AC Call Goes",
+          "items": [
+            {
+              "title": "You call",
+              "text": "Call (316) 260-5775 any hour for an emergency, or during office hours, Monday to Friday, 7:30 AM to 5:00 PM."
+            },
+            {
+              "title": "We find the cause",
+              "text": "A technician looks over your system and shows you what the problem is."
+            },
+            {
+              "title": "You choose",
+              "text": "Repair it, or replace it with a free replacement estimate in hand."
+            },
+            {
+              "title": "We check it",
+              "text": "We make sure everything works before we leave."
+            }
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Mike did a great job. He was very thorough and made sure everything was working properly before leaving.",
+          "name": "Michael R."
+        },
+        {
+          "type": "faq",
+          "heading": "AC Repair Questions",
+          "items": [
+            {
+              "q": "Do you repair my brand of AC?",
+              "a": "Yes. We repair all makes and models."
+            },
+            {
+              "q": "Do you come out after hours?",
+              "a": "Yes. We run 24-hour emergency service."
+            },
+            {
+              "q": "Is a replacement estimate free?",
+              "a": "Yes. Replacement estimates on new cooling equipment are free."
+            },
+            {
+              "q": "Do you offer financing?",
+              "a": "Yes, through Wisetack."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Get Your AC Running",
+          "text": "Call (316) 260-5775. We take emergency calls 24 hours a day."
+        }
+      ]
+    },
+    {
+      "role": "service",
+      "route": "/furnace-repair-wichita-ks/",
+      "navLabel": "Furnace Repair",
+      "keyword": "furnace repair wichita ks",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Furnace repair, every make and model",
+        "h1": "Furnace Repair in Wichita, KS — Alpha HVAC & Plumbing",
+        "sub": "We repair all makes and models of heating equipment. We run 24-hour emergency service, and we find the cause before we talk about replacing anything.",
+        "primaryCta": {
+          "label": "Call (316) 260-5775",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Schedule an Appointment",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "furnace-hero",
+          "alt": "Furnace in a tidy basement with a plain wall behind it",
+          "brief": "furnace in a tidy basement, furnace on the right, open floor leading to the left, calm plain wall behind the text side, no readable text, no people"
+        }
+      },
+      "sections": [
+        {
+          "type": "review",
+          "quote": "Quick service, diagnosed the problem right and had heat back on within an hour. Would highly recommend and will use them in the future.",
+          "name": "Darrin F."
+        },
+        {
+          "type": "split",
+          "heading": "When Your Heat Goes Out",
+          "body": [
+            "**Call us when the furnace stops, any hour.** We run 24-hour emergency service and repair all makes and models of heating equipment.",
+            "We have had heat back on within the hour, and put in a whole new system within a couple of days in winter."
+          ],
+          "image": {
+            "slot": "furnace-out",
+            "alt": "Gas furnace in a tidy utility closet with the access panel closed",
+            "brief": "residential furnace standing in a tidy utility closet, furnace on the right, open floor on the left, calm plain wall behind the text side, no readable text, no people"
+          },
+          "imageSide": "right"
+        },
+        {
+          "type": "review",
+          "quote": "Heater went out in the winter. Geoff and Tom moved heaven and earth to get a new system put in in a couple of days. Our three month old really appreciated it.",
+          "name": "Zachary S."
+        },
+        {
+          "type": "prose",
+          "heading": "Find the Cause First",
+          "body": [
+            "**We chase a furnace problem down to the cause.** We have come back twice to one furnace, ahead of a deep freeze, to find what was wrong."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Sean and his crew came out twice before a deep freeze and took the time to find the cause of the issue!",
+          "name": "Jenae W."
+        },
+        {
+          "type": "prose",
+          "heading": "Repair or Replace, You Decide",
+          "body": [
+            "**We explain what repair costs you and what replacement gets you.** We have talked a customer through high-efficiency systems and agreed that repair was the better choice.",
+            "When replacement is right, the estimate is free."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "He put it the effort to educate me on the plus/minus of a new and high efficiency systems, and ultimately convinced me fixing vs replacing was a better option. Brett, the technician, was on time and courteous. Kept me in the loop on what was going on with my furnace and had it fixed in no time, for a great price.",
+          "name": "Brian R."
+        },
+        {
+          "type": "split",
+          "heading": "A New Furnace, Installed Neatly",
+          "body": [
+            "**We install new heating equipment and keep your house clean while we do.** High-efficiency heating equipment carries an extended warranty, and financing is available through Wisetack.",
+            "We have written the City permit into the quote as its own line."
+          ],
+          "image": {
+            "slot": "furnace-install",
+            "alt": "New furnace in a basement with clean ductwork and a swept floor",
+            "brief": "new furnace with clean ductwork in a basement, furnace on the right, empty swept floor on the left, calm plain wall behind the text side, no readable text, no people"
+          },
+          "imageSide": "right"
+        },
+        {
+          "type": "review",
+          "quote": "Had a new furnace installed and the team at Alpha did great work and were very neat as they installed the furnace. Peace of mind buying American made equipment",
+          "name": "Kasie M."
+        },
+        {
+          "type": "prose",
+          "heading": "Permits and Paperwork Handled",
+          "body": [
+            "**We put the City permit in the quote.** On one install we emailed the warranty paperwork right after the work and scheduled the City inspection for the customer."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Tom included the City permit as a line item in the quote, unprompted.",
+          "name": "Nick B."
+        },
+        {
+          "type": "prose",
+          "heading": "A Furnace Check You Can Follow",
+          "body": [
+            "**On a service visit we take pictures of your system and walk you through them.** We show you what to watch, like rust on a heat exchanger.",
+            "Scheduled service keeps your furnace running efficiently year-round."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Having Alpha out today on my 5 year old furnace and learning thru all the pictures they take about my system, and things to watch and stay alert to some rust on heat exchangers.",
+          "name": "Thomas T."
+        },
+        {
+          "type": "steps",
+          "heading": "How a Furnace Call Goes",
+          "items": [
+            {
+              "title": "You call",
+              "text": "Call (316) 260-5775 any hour for an emergency, or in the office Monday to Friday, 7:30 AM to 5:00 PM."
+            },
+            {
+              "title": "We diagnose",
+              "text": "A technician finds the cause and explains it."
+            },
+            {
+              "title": "You decide",
+              "text": "Repair your furnace, or install a new one with a free replacement estimate."
+            },
+            {
+              "title": "We confirm it works",
+              "text": "Your heat is on before we leave."
+            }
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Geoff was great. Did a great job servicing my HVAC unit and showing me what he was looking at and explaining the process.",
+          "name": "Melissa S."
+        },
+        {
+          "type": "faq",
+          "heading": "Furnace Questions",
+          "items": [
+            {
+              "q": "Do you repair every brand of furnace?",
+              "a": "Yes. We repair all makes and models of heating equipment."
+            },
+            {
+              "q": "Can I get a replacement estimate for free?",
+              "a": "Yes. Replacement estimates on new heating equipment are free."
+            },
+            {
+              "q": "Is financing available?",
+              "a": "Yes, through Wisetack."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Get Your Heat Back On",
+          "text": "Call (316) 260-5775. We take emergency calls 24 hours a day."
+        }
+      ]
+    },
+    {
+      "role": "contact",
+      "route": "/contact/",
+      "navLabel": "Contact",
+      "keyword": "contact alpha hvac plumbing wichita ks",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Contact",
+        "h1": "Contact Alpha HVAC & Plumbing",
+        "sub": "Call us for repairs, installs and emergencies. Our office is open Monday to Friday, 7:30 AM to 5:00 PM, and emergency service runs 24 hours.",
+        "primaryCta": {
+          "label": "Call (316) 260-5775",
+          "action": "call"
+        },
+        "image": {
+          "slot": "contact-hero",
+          "alt": "Front door of a Wichita home with a small porch",
+          "brief": "front porch of a brick house with the door on the right, steps leading to the left, calm soft sky behind the text side, no readable text, no people"
+        }
+      },
+      "sections": [
+        {
+          "type": "prose",
+          "heading": "Call or Write",
+          "body": [
+            "Call (316) 260-5775. Email tomt@alpha-heatair.com. We serve Wichita and the surrounding areas."
+          ]
+        },
+        {
+          "type": "list",
+          "heading": "Have This Ready",
+          "list": [
+            "Your address, and whether it is a home or a business",
+            "What the system is doing, or has stopped doing",
+            "The make and model of your equipment, if you can find it",
+            "Whether it is an emergency, so we know to hurry"
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "They were quick to respond and had excellent service from the initial call to following up after installation. They were knowledgeable, did a great job and I highly recommend their heating and air conditioning service for existing units and new installs.",
+          "name": "Robin S."
+        },
+        {
+          "type": "faq",
+          "heading": "Before You Call",
+          "items": [
+            {
+              "q": "Is there a number for emergencies?",
+              "a": "Call (316) 260-5775. We run 24-hour emergency service."
+            },
+            {
+              "q": "When is the office open?",
+              "a": "Monday to Friday, 7:30 AM to 5:00 PM."
+            },
+            {
+              "q": "Do you charge for a replacement estimate?",
+              "a": "No. Replacement estimates on new heating and cooling equipment are free."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "about": "We're a locally owned and operated HVAC and plumbing company in Wichita. We repair and install heating and cooling equipment, and we repair and replace plumbing.",
+    "why": [
+      "24-hour emergency service",
+      "Free replacement estimates",
+      "100% Customer Satisfaction Guaranteed",
+      "Extended warranties on high-efficiency A/C and heating equipment"
+    ]
+  },
+  "strategy": {
+    "whyHeading": "Why we built this site",
+    "why": [
+      "Your customers already make your case. You hold a 5.0 on 131 Google reviews, and they say it plainly: \"When my air conditioner stopped working on a Friday, I called and they were here that same day.\"",
+      "Your website tells a thinner story: a phone visitor must open the menu to tap your number, and nothing at the top says HVAC company in Wichita.",
+      "So we built this site around their words."
+    ],
+    "cardsHeading": "Be the HVAC Company People Find on Google",
+    "cardsIntro": "Each card is one page: what your site does today, and what we changed.",
+    "cards": [
+      {
+        "route": "/home/",
+        "title": "Homepage",
+        "why": "The page Google reads to learn who you are and where you work.",
+        "problems": [
+          "The top of the page says \"Alpha HVAC & Plumbing\" and nothing more, so Google can't tell you're an HVAC company in Wichita.",
+          "On a phone, your number hides in the menu, and the one at the very bottom of the page is plain text, not a button.",
+          "The review box shows 48 of your 131 Google reviews, under a different business name than Google's.",
+          "\"Click on a brand below\" invites a click on six logos, and nothing happens."
+        ],
+        "fixes": [
+          "A headline that says HVAC company in Wichita, KS, right at the top.",
+          "Your number one tap away at the top of every page, on a phone.",
+          "Reviews on every page, each beside the point it proves."
+        ],
+        "alsoAdd": "Every page set up behind the scenes so Google and AI tools like ChatGPT know exactly what you do, where you work, and what your customers say."
+      },
+      {
+        "route": "/ac-repair-wichita-ks/",
+        "title": "AC Repair",
+        "why": "Your customers call when the AC quits, and this page gives them little.",
+        "problems": [
+          "Cooling is one short block and three bullets, so someone whose AC quit today finds no page about it.",
+          "No photos of your work and no list of towns."
+        ],
+        "fixes": [
+          "A full page for AC repair in Wichita, KS, with your 24-hour emergency line.",
+          "Reviews on fast response and clear explanations, each beside its point."
+        ],
+        "alsoAdd": "Pages planned from what Google actually shows for each search, so every page targets something people really look for."
+      },
+      {
+        "route": "/furnace-repair-wichita-ks/",
+        "title": "Furnace Repair",
+        "why": "Heating is half of what you do, and it shares one thin page.",
+        "problems": [
+          "Heating is one short block and three bullets, with nothing for a furnace that stopped on a cold night.",
+          "No photos of your work and no questions answered."
+        ],
+        "fixes": [
+          "A full page for furnace repair in Wichita, KS, from the cold-night call to the new install.",
+          "Reviews from customers who got heat back."
+        ],
+        "alsoAdd": "A check of what your competitors offer, so services you didn’t think to mention still get their own pages."
+      },
+      {
+        "route": "/contact/",
+        "title": "Contact",
+        "why": "Where a ready customer reaches you.",
+        "problems": [
+          "A public \"Site Under Maintenance\" page shows a different phone number and a personal Gmail address.",
+          "An empty \"Test for Reviews\" page is public too."
+        ],
+        "fixes": [
+          "One number and one business email, everywhere.",
+          "A short list of what to have ready."
+        ],
+        "alsoAdd": "Call and form tracking that shows which pages and towns your leads come from."
+      }
+    ],
+    "reportCardHeading": "What great HVAC company websites get right, and how yours measures up.",
+    "reportCard": [
+      {
+        "label": "Phone number one tap away on a phone",
+        "status": "Needs work"
+      },
+      {
+        "label": "Headline says what you do and where",
+        "status": "Needs work"
+      },
+      {
+        "label": "Each money service has its own page",
+        "status": "Needs work"
+      },
+      {
+        "label": "All your Google reviews shown",
+        "status": "Needs work"
+      },
+      {
+        "label": "Buttons and logos do what they say",
+        "status": "Needs work"
+      },
+      {
+        "label": "No leftover pages with other numbers",
+        "status": "Missing"
+      },
+      {
+        "label": "Contact form on every page",
+        "status": "Looks good"
+      }
+    ],
+    "closing": {
+      "heading": "Want a website like this for your business?",
+      "text": "Your customers already call you their go-to. Book a strategy call with Fluid Frame and we'll walk you through this demo and plan your new site."
+    }
+  },
+  "onboardingQuestions": [
+    "Who owns the business, and what is the owner's full name? Tom Tallon is named most in reviews as the quote and office contact (the site's email is tomt@alpha-heatair.com). What is his role, and how should the site introduce him?",
+    "What is the legal name: Alpha HVAC and Plumbing LLC (Google), Alpha Heating & Air Conditioning, LLC (the site's review box and BBB snippet), or something else? Which one goes on the site and the Google listing?",
+    "Which of Goodman, Amana, Bryant, Daikin, Ruud and LG are they a certified or authorized dealer for? Can they send the dealer letter or locator listing? Until then the site shows no brand claims.",
+    "When was the company founded, and is it veteran-owned (a chamber directory snippet says so; the company's site does not)?",
+    "What is the 316-765-4492 number and the alphahc16@gmail.com address on the leftover \"Site Under Maintenance\" page? Is either one live, and should the page come down?",
+    "Are they licensed and insured in Kansas and Wichita, for HVAC and for plumbing? License numbers for the footer if so.",
+    "Maintenance plan: name, price, number of visits and what each visit covers (reviews call it the annual service plan, yearly service contract and maintenance agreement).",
+    "Wisetack financing: what terms, and for which jobs?",
+    "Which towns do they serve outside Wichita? The site says only \"Wichita and all surrounding areas\".",
+    "Street address: Google shows 3101 W Harry St, Wichita, KS 67213; a BBB snippet shows 1405 S Bebe St. Which is current, and should an address appear on the site?",
+    "Is the 24-hour emergency line the same (316) 260-5775 number? Does it ring through after hours, and is there an emergency fee?",
+    "Is there a Saturday or Sunday schedule? Reviews mention Saturday and Sunday visits, but the site lists Monday to Friday only.",
+    "Mini splits and ductless: do they install and repair them? Reviews mention a whole-home mini split install and a leak found at a mini split head. Heat pumps, ductwork and air purification systems also appear in reviews: confirm each.",
+    "Plumbing scope: drain cleaning, sewer backups, water lines and repiping, and tankless water heaters all appear in reviews or nowhere. Which should be listed?",
+    "Do they pull City permits and handle the City inspection and utility rebates (Evergy) on installs? One review says so; is it standard?",
+    "Do they take pictures of every system on a service visit, and wear shoe covers? Reviews say so; confirm before the site states it as standard.",
+    "Is equipment American-made? Two reviews say so, one naming Amana. Which brands do they install?",
+    "What does \"100% Customer Satisfaction Guaranteed\" cover, in writing?",
+    "Residential and commercial: what kinds of commercial work (apartment complexes, rentals, offices)?",
+    "Which Facebook page is the real one: facebook.com/alphahvacict or the profile.php?id=61575954281986 page? Do they want the second one removed?",
+    "Do they want the test page removed and the site's review count updated from 48 to the Google count?",
+    "Google shows 131 reviews, and 102 were pulled. Can they give us access to the rest, and permission to quote reviews on the site?",
+    "Logo file, brand colors and photos of real jobs and the team."
+  ]
+}
