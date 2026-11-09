@@ -582,7 +582,7 @@
     "whyHeading": "Why we built this site",
     "why": [
       "When hail hits Wichita, homeowners want one company for the roof, the insurance and the clean-up. Your Google reviews say that is you; roofs, hail and insurance come up most. One wrote, \"They worked with the insurance company to get the money needed for repairs.\"",
-      "Your website never says roofing. Its top line says \"Remodeling & Renovation Contractors\", so someone searching for a roofing company in Wichita may never see you. Its phone number also differs from your Google profile, and two numbers can cost you both calls.",
+      "Your website never says roofing. Its top line says \"Remodeling & Renovation Contractors\", so someone searching for a roofing company in Wichita may never see you. Its phone number also differs from Google's, and two numbers can cost you both calls.",
       "So we built a demo that leads with roofing and hail damage, gives siding, windows and doors a page, and shows one number everywhere."
     ],
     "cardsHeading": "Be the Roofing Company People Find on Google",
@@ -607,7 +607,7 @@
       {
         "route": "/roof-replacement-hail-damage-wichita-ks/",
         "title": "Roof Replacement & Hail Damage Repair",
-        "why": "Roofs, hail and insurance claims are most of what customers write about.",
+        "why": "Roofs, hail and insurance are what customers write about most.",
         "problems": [
           "Your whole site is one page. Roofing and hail damage share a few lines with five other services, so Google has no page to show someone searching for hail damage repair."
         ],
