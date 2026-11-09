@@ -55,7 +55,7 @@
     {
       "name": "Basement Windows",
       "route": null,
-      "blurb": "Sealed and trimmed out. We have replaced five basement windows in four hours."
+      "blurb": "Basement windows fitted and finished with the same care as the windows upstairs."
     },
     {
       "name": "Bay and Picture Windows",
@@ -65,7 +65,7 @@
     {
       "name": "Vinyl Siding",
       "route": "/vinyl-siding-wichita-ks/",
-      "blurb": "A new outside for your house that helps lower your energy bills. We have sided a home in one day."
+      "blurb": "A new outside for your house that helps lower your energy bills."
     },
     {
       "name": "Sliding Patio Doors",
@@ -228,7 +228,7 @@
           "type": "split",
           "heading": "One Window or the Whole House",
           "body": [
-            "**Replace the window that bothers you most, or every window you own.** We have put in two windows on one visit and five basement windows in four hours.",
+            "**Replace the window that bothers you most, or every window you own.** A small job gets the same care as a whole house.",
             "Pick the style that fits how you use each room:"
           ],
           "list": [
@@ -254,7 +254,7 @@
           "heading": "Older Homes and Crooked Openings",
           "body": [
             "**Old houses rarely have square openings, and we fit them anyway.** We work each new window into the frame and trim you already have, then finish the edges so the room looks clean.",
-            "We have done it in a 1948 house, in 80-year-old openings and on a third story broken out by hail."
+            "That goes for upper floors and storm-damaged openings too, not just the easy ground-floor windows."
           ]
         },
         {
@@ -301,7 +301,7 @@
             },
             {
               "title": "Install day",
-              "text": "Our crew arrives in the morning and covers the work area before the first window comes out. We have installed eleven windows in one day."
+              "text": "Our crew arrives in the morning and covers the work area before the first window comes out, so dust stays off your floors and furniture."
             },
             {
               "title": "Clean-up and a walkthrough",
@@ -333,7 +333,7 @@
           "items": [
             {
               "q": "How long does installation take?",
-              "a": "We have installed all of a home's windows in under four hours, and eleven windows in one day. On larger homes we have come back a second day for trim and caulk."
+              "a": "It depends on how many windows you replace and how much trim your openings need. We give you the schedule at your estimate, and on larger homes we may come back a second day for trim and caulk."
             },
             {
               "q": "Do you replace basement windows?",
@@ -361,7 +361,7 @@
       "hero": {
         "eyebrow": "Vinyl siding",
         "h1": "Vinyl Siding in Wichita, KS — Evolve Exteriors",
-        "sub": "New vinyl siding helps lower your Kansas and Oklahoma energy bills. We survey your house, give you a straight price and have finished a whole house of siding in one day.",
+        "sub": "New vinyl siding helps lower your Kansas and Oklahoma energy bills. We survey your house, give you a straight price and take away every piece of the old siding when we finish.",
         "primaryCta": {
           "label": "Call (316) 435-8009",
           "action": "call"
@@ -387,7 +387,7 @@
           "heading": "Vinyl Siding That Lowers Your Energy Bills",
           "body": [
             "**New vinyl siding is a sure way to lower your energy bills.** We survey your house, give you the price and send our crew.",
-            "We take away every piece of the old siding and leave your yard clean."
+            "You won't be picking scraps of old siding out of the grass after we leave."
           ],
           "image": {
             "slot": "siding-main",
@@ -424,7 +424,7 @@
           "type": "prose",
           "heading": "Siding and Windows Together",
           "body": [
-            "**Windows and siding meet on the same wall, so we can plan them as one project.** Or start with windows and add siding later. We have done it both ways, and we have replaced bad siding we found during a window job."
+            "**Windows and siding meet on the same wall, so we can plan them as one project.** Or start with windows and add siding later. If we spot bad siding while we put in your windows, we show you and fix it as part of the same project."
           ]
         },
         {
@@ -459,7 +459,7 @@
             },
             {
               "title": "Our crew does the work",
-              "text": "We remove every piece of the old siding and install the new. We have finished a whole house of siding in a day."
+              "text": "We remove every piece of the old siding and install the new, on the schedule we gave you at your estimate."
             },
             {
               "title": "Clean-up",
@@ -478,7 +478,7 @@
           "items": [
             {
               "q": "How long does siding take?",
-              "a": "We have finished a whole house in one day. We give you the schedule for yours at your estimate."
+              "a": "It depends on the size of your house and whether soffit and fascia are part of the job. We give you the schedule at your estimate."
             },
             {
               "q": "Can I pair siding with new windows?",

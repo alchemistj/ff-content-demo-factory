@@ -9,7 +9,7 @@ import { defaultRepoRoot } from "./index.js";
 const REPO_ROOT = defaultRepoRoot();
 const SCRIPT = resolve(REPO_ROOT, "scripts/assert-compiled-writer-guides.mjs");
 const EXPECTED_MANIFEST =
-  "e1d7bc635cf8b7a29d08259d6ff57c4680b10fb25e76f4dd8ac15836ee6828ae";
+  "f4b3a479f127495cb5999df0c3e82f93a28622c9d2a2f1366eb51c9f21d5d005";
 
 test("compiled dist export loads Writer 1/2/3 from repo-root Markdown", () => {
   const childEnv = { ...process.env };
@@ -50,15 +50,15 @@ test("compiled dist export loads Writer 1/2/3 from repo-root Markdown", () => {
     assert.equal(receipt.catalogManifestHash, EXPECTED_MANIFEST);
     assert.equal(
       receipt.stageSetHashes.writer1,
-      "7a35ce860e1f8ce2f009b7218c499525ba7b029999739cf3c0a5b6d34e8000d3",
+      "d8397c093b07bc089182dea54a9bbeb40a4d711a542d6d28d21af2cc3047ecf5",
     );
     assert.equal(
       receipt.stageSetHashes.writer2,
-      "6f4e1be8af2a7387a60b29302868fb9e1296a006e46cb3a1b0305c75c6912f78",
+      "f4390acba829e3648c7d60afbf2a81d99f3b932a6f8b5acb924e68aad9817024",
     );
     assert.equal(
       receipt.stageSetHashes.writer3,
-      "861164c966f05dfdb9a5d00977b47d7a4e928d08d5ac02e63872e73f511f9040",
+      "63aa6ef5b23a7ae8a856866346c76f049f663feab7d3dbfeb222ce53c321e0ec",
     );
     for (const absolutePath of receipt.absolutePaths) {
       assert.equal(absolutePath.startsWith(join(REPO_ROOT, "docs/writer-guides") + "/"), true);
