@@ -63,6 +63,18 @@
       "pulledAt": "2026-11-01T20:54:26.900Z"
     },
     {
+      "slug": "cooks-hvac-wichita",
+      "name": "Cook's Heating and Cooling",
+      "placeId": "ChIJjxss2tbmuocREGRO-I7jkEE",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 67,
+        "withText": 56,
+        "ratingOnly": 11
+      },
+      "pulledAt": "2026-11-09T12:44:09.449Z"
+    },
+    {
       "slug": "crossroads-windows",
       "name": "Crossroads Windows",
       "placeId": "ChIJQ8YPLqy8G0IRawHWQFHeWoY",
