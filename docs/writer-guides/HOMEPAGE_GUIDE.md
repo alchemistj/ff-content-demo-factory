@@ -16,6 +16,8 @@ Do not reopen their strategy or rewrite them inside the homepage.
 
 The homepage normally owns the broad company/category + primary market intent. Do not make the H1 compete with a dedicated service page unless the prescription says otherwise.
 
+One market in the H1: the city of the Google profile. A business with a second office (Evolve: Wichita and Oklahoma City) still names one city; the second office gets its number and a service-area line, and a full build gives it its own page (Josh, 2026-11-09).
+
 Window Dudes is a useful exception to study: Springfield window-repair writing lives on `/` because that is the canonical homepage job on that site. Do not copy that routing onto a prospect whose repair work belongs on a service page.
 
 ## What to draw from the examples
