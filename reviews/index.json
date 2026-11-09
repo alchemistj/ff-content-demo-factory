@@ -231,6 +231,18 @@
       "pulledAt": "2026-11-09T02:15:05.165Z"
     },
     {
+      "slug": "harris-facility-solutions",
+      "name": "Harris Facility Solutions",
+      "placeId": "ChIJg-AHkRX7uocRbp5HlhFtOx0",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 22,
+        "withText": 15,
+        "ratingOnly": 7
+      },
+      "pulledAt": "2026-11-09T18:33:39.423Z"
+    },
+    {
       "slug": "hawkins-tree-service",
       "name": "Hawkins Tree Service LLC",
       "placeId": "ChIJQTgKCf3byIcRqu-rlDPBSko",
