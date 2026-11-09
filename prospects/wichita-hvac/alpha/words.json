@@ -108,7 +108,7 @@
           "heading": "One Company for Heating, Cooling and Plumbing",
           "body": [
             "**You call one number for the furnace, the air conditioner and the water heater.** We repair all makes and models of heating and cooling equipment, and we handle residential and commercial plumbing.",
-            "We have installed a complete heating and cooling system and replumbed the water lines in the same job."
+            "When a new system and plumbing work are on the same list, one crew can handle both, so you are not coordinating two companies."
           ],
           "image": {
             "slot": "home-one-company",
@@ -144,7 +144,7 @@
           "type": "prose",
           "heading": "Service That Saves You Money",
           "body": [
-            "**Scheduled service keeps your heating, cooling and water heater running efficiently year-round.** On an annual service plan, we have found a less expensive part where another company called for an expensive repair."
+            "**Scheduled service keeps your heating, cooling and water heater running efficiently year-round.** A service plan puts a technician in front of small problems early, so you can fix them before they turn into big bills."
           ]
         },
         {
@@ -186,7 +186,7 @@
             },
             {
               "q": "Can you work on my brand of equipment?",
-              "a": "Yes. We repair all makes and models of heating and air conditioning equipment."
+              "a": "Yes. We repair all makes and models of furnaces and air conditioners."
             },
             {
               "q": "Is financing available?",
@@ -236,7 +236,7 @@
           "heading": "When Your AC Quits",
           "body": [
             "**Call us when it stops cooling, any hour.** We run 24-hour emergency service and repair all makes and models of air conditioning equipment.",
-            "We have been at a house within two hours of a Sunday-morning call."
+            "Waiting on a dead AC is miserable, so we move fast on every call, weekends included."
           ],
           "image": {
             "slot": "ac-quits",
@@ -290,7 +290,7 @@
           "type": "prose",
           "heading": "A Tune-Up That Checks Everything",
           "body": [
-            "**Scheduled service keeps your AC running efficiently year-round.** We have changed the filter, checked the temperature at every register, cleaned the outdoor unit and worn shoe covers inside the house, all on one service visit."
+            "**Scheduled service keeps your AC running efficiently year-round.** One careful visit leaves the system in better shape and your house as clean as we found it."
           ]
         },
         {
@@ -470,7 +470,7 @@
           "type": "prose",
           "heading": "The Permit, Right in the Quote",
           "body": [
-            "**We have listed the City permit in the quote as its own line, without being asked,** on a full A/C and furnace replacement. That cost was on paper before any work started."
+            "**Your replacement quote shows its costs up front, so nothing surprises you after work begins.** The paperwork is part of the price, not an afterthought."
           ]
         },
         {
@@ -482,7 +482,7 @@
           "type": "prose",
           "heading": "A Furnace Check You Can Follow",
           "body": [
-            "**Scheduled service keeps your furnace running efficiently year-round.** We have photographed a five-year-old furnace on a service visit and shown the homeowner what to watch, like some rust on the heat exchanger."
+            "**Scheduled service keeps your furnace running efficiently year-round.** Every visit should leave you knowing more about your furnace than when we arrived, and what to keep an eye on."
           ]
         },
         {

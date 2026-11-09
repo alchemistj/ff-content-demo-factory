@@ -15,7 +15,7 @@
       }
     ],
     "email": "justin@epichvac.net",
-    "hours": "Monday to Friday, 8:00 AM to 5:00 PM",
+    "hours": "Monday to Friday, 8 a.m. to 5 p.m.",
     "address": null,
     "serviceArea": {
       "summary": "Wichita and surrounding areas",
@@ -385,7 +385,7 @@
             },
             {
               "q": "When can I reach you?",
-              "a": "Call (316) 633-8097. Our hours are Monday to Friday, 8:00 AM to 5:00 PM."
+              "a": "Call (316) 633-8097. Our hours are Monday to Friday, 8 a.m. to 5 p.m.."
             }
           ]
         },
@@ -431,7 +431,7 @@
           "heading": "Heat Back On, Start to Finish",
           "body": [
             "We handle every kind of furnace work, from seasonal maintenance to full system installation, so you call one company.",
-            "We have had a furnace diagnosed and running again in under 15 minutes."
+            "A furnace problem should be found fast and fixed without a long wait."
           ],
           "list": [
             "A furnace that will not start",
@@ -468,7 +468,7 @@
           "type": "split",
           "heading": "When a New Furnace Is the Answer",
           "body": [
-            "We install the new furnace. We have replaced one within two days of the first call.",
+            "We install the new furnace and keep the gap between the first call and a warm house short.",
             "Our installers protect your home and clean up as they work. For a complete system, we install the furnace and the AC together, with high-efficiency models available."
           ],
           "image": {
@@ -550,7 +550,7 @@
             },
             {
               "q": "When can I reach you?",
-              "a": "Call (316) 633-8097. We answer Monday to Friday, 8:00 AM to 5:00 PM."
+              "a": "Call (316) 633-8097. We answer Monday to Friday, 8 a.m. to 5 p.m.."
             }
           ]
         },
@@ -588,7 +588,7 @@
           "heading": "Call or Email",
           "body": [
             "Call (316) 633-8097. You can also email justin@epichvac.net.",
-            "We are open Monday to Friday, 8:00 AM to 5:00 PM, and we serve Wichita and surrounding areas."
+            "We are open Monday to Friday, 8 a.m. to 5 p.m., and we serve Wichita and surrounding areas."
           ]
         },
         {
