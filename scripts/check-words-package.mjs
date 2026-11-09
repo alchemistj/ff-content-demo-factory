@@ -70,7 +70,8 @@ if (home) {
 for (const p of roles("service")) if (norm(p.hero?.h1).toLowerCase().includes(ct)) fail(`${p.route}: service H1 repeats the homepage keyword "${b.companyType}"`);
 for (const p of roles("service")) {
   const head = norm(p.hero?.h1).split(/ in [A-Z]/)[0];
-  if (/ & | and |, /.test(head)) fail(`${p.route}: one service per service page; "${head}" combines services`);
+  const ages = /^(kids?|children|teens?|adults?|men|women|seniors)( (and|&) (kids?|children|teens?|adults?|men|women|seniors))+ /i; // one service for two age groups is still one service
+  if (/ & | and |, /.test(head) && !ages.test(head)) fail(`${p.route}: one service per service page; "${head}" combines services`);
 }
 const svcRoutes = new Map();
 for (const s of pkg.services || []) if (s.route) { if (svcRoutes.has(s.route)) fail(`services "${svcRoutes.get(s.route)}" and "${s.name}" both link to ${s.route}`); svcRoutes.set(s.route, s.name); }
@@ -140,7 +141,7 @@ for (const p of pages) {
 }
 const st = pkg.strategy || {};
 const stWords = [st.whyHeading, ...(st.why || []), st.cardsHeading, st.cardsIntro, ...(st.cards || []).flatMap((c) => [c.title, c.route, c.why, ...(c.problems || []), ...(c.fixes || []), c.alsoAdd, "Current site problem What the demo fixes A full build would also add View page"]), st.reportCardHeading, ...(st.reportCard || []).flatMap((r) => [r.label, r.status]), st.closing?.heading, st.closing?.text].reduce((a, t) => a + words(t), 0) + 330; // + fixed hero, case study, full-build list, header, bar
-(stWords > 1000 ? fail : (m) => info.push(m))(`strategy: about ${stWords} rendered words (max 1,000)`);
+(stWords > 1000 ? warn : (m) => info.push(m))(`strategy: about ${stWords} rendered words (aim for 1,000 or fewer; Josh 2026-11-09: not a hard cap)`);
 
 // 7. Repetition
 const seen = new Map();
