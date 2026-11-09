@@ -1,0 +1,328 @@
+{
+  "kind": "google-review-pull",
+  "version": 1,
+  "slug": "wichita-twg-construction",
+  "place": {
+    "name": "TWG Construction",
+    "placeId": "ChIJ3Y2IRHfjuocRdEKsI5Z8660",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=TWG%20Construction&query_place_id=ChIJ3Y2IRHfjuocRdEKsI5Z8660",
+    "address": "2801 #101 E Kellogg Dr S, Wichita, KS 67211",
+    "phone": "(316) 685-1010",
+    "rating": 4.8,
+    "totalReviewCount": 32
+  },
+  "pulledAt": "2026-11-08T22:03:30.372Z",
+  "requestedMax": 75,
+  "reviews": [
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2s5eFJEVkRNVXRVUlUxUlpHbGZZVjlrUW1kd1ExRRAB",
+      "reviewer": "Sheila H.",
+      "rating": 5,
+      "text": "TWG did a great job replacing our roof. Quick and efficient service from beginning to end.  Thanks to Victor and all of the roofers! Great work!!",
+      "publishedAt": "2026-08-26T18:33:29.157Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2s5eFJEVkRNVXRVUlUxUlpHbGZZVjlrUW1kd1ExRRAB!2m1!1s0x0:0xadeb7c9623ac4274!3m1!1s2@1:CAIQACodChtycF9oOk9xRDVDMUtURU1RZGlfYV9kQmdwQ1E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tFNFNUWnhNbFJQVFZrd1dtZHBkV3Q0WDBONmVVRRAB",
+      "reviewer": "Dan M.",
+      "rating": 5,
+      "text": "The roofing team did a fantastic job. They were quick, professional, and the roof looks fantastic. Scott was amazing to work with. He was on the phone with me for every step of the process, including working with my insurance, and he made sure I understood everything that was going on. I’d absolutely recommend TWG Construction.",
+      "publishedAt": "2025-08-07T16:04:51.906Z",
+      "ownerResponse": "Thanks Dan.  It was great working for you!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tFNFNUWnhNbFJQVFZrd1dtZHBkV3Q0WDBONmVVRRAB!2m1!1s0x0:0xadeb7c9623ac4274!3m1!1s2@1:CAIQACodChtycF9oOkE4STZxMlRPTVkwWmdpdWt4X0N6eUE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnTUNZMU5QdDV3RRAB",
+      "reviewer": "Jessica H.",
+      "rating": 5,
+      "text": "TWG did an amazing job on our house. We now have new windows, siding and a fantastic new color on our house. All the guys were nice and respectful. We will definitely call TWG when we need another project done! I love my house!",
+      "publishedAt": "2025-05-01T19:07:05.559Z",
+      "ownerResponse": "Thanks Jessica!<br>It was a pleasure working for you!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTUNZMU5QdDV3RRAB!2m1!1s0x0:0xadeb7c9623ac4274!3m1!1s2@1:CIHM0ogKEICAgMCY1NPt5wE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUMxdElEYWZBEAE",
+      "reviewer": "Jeffrey R.",
+      "rating": 5,
+      "text": "Have a painting issue in my house and TWG provided free consulting advice on behalf of the painting contractor to try to help find a solution.",
+      "publishedAt": "2023-12-23T17:25:49.458Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMxdElEYWZBEAE!2m1!1s0x0:0xadeb7c9623ac4274!3m1!1s2@1:CIHM0ogKEICAgIC1tIDafA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUQycW9DLU13EAE",
+      "reviewer": "Kevin G.",
+      "rating": 5,
+      "text": "Brad Randall and his team do fantastic work and i wouldnt recommend anyone else!",
+      "publishedAt": "2022-05-11T17:47:00.058Z",
+      "ownerResponse": "Thanks, Kevin! Really enjoyed working on your project.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQycW9DLU13EAE!2m1!1s0x0:0xadeb7c9623ac4274!3m1!1s2@1:CIHM0ogKEICAgID2qoC-Mw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUMybnRqQTd3RRAB",
+      "reviewer": "Justin R.",
+      "rating": 5,
+      "text": "Brad Randall and his team are absolutely fantastic! They were very quick with providing a bid for our job and were extremely transparent about the costs and how they may change. Highly recommend!",
+      "publishedAt": "2022-04-21T13:44:45.326Z",
+      "ownerResponse": "Thanks, Justin! We really love our customers and it was a pleasure working on your project. Thanks for great review!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMybnRqQTd3RRAB!2m1!1s0x0:0xadeb7c9623ac4274!3m1!1s2@1:CIHM0ogKEICAgIC2ntjA7wE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUMyOW9ISmlBRRAB",
+      "reviewer": "Jon E.",
+      "rating": 5,
+      "text": "TWG Construction is a premier construction company.  Highly knowledgeable.  Their work is exemplary.  I highly recommend this company.",
+      "publishedAt": "2022-04-20T14:42:06.844Z",
+      "ownerResponse": "Thanks, Jon! We’ve been doing this for over 30 years and it’s still great to get kudos from our customers. Really enjoyed working with you. Thanks for the great review!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMyOW9ISmlBRRAB!2m1!1s0x0:0xadeb7c9623ac4274!3m1!1s2@1:CIHM0ogKEICAgIC29oHJiAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUM2bXZUazhnRRAB",
+      "reviewer": "Zeb S.",
+      "rating": 1,
+      "text": "Very rude guy who answered the phone. Very pushy, and right away asking if I need a quote. I told him I'd like to speak to the owner, he hung up on me. I tried calling back twice, and goes straight to voicemail. I learned about this company through a B.N.I. group.., whoever answered the phone needs better ppl skills. They lost whatever business I was going to give them.",
+      "publishedAt": "2021-09-02T19:10:22.763Z",
+      "ownerResponse": "Sorry to hear about your experience with our call center. We have since determined who you spoke with and let them go. Customer service is of utmost importance to us. Again, please accept our apologies.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUM2bXZUazhnRRAB!2m1!1s0x0:0xadeb7c9623ac4274!3m1!1s2@1:CIHM0ogKEICAgIC6mvTk8gE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURDcW9MRGFBEAE",
+      "reviewer": "Doug D.",
+      "rating": 5,
+      "text": "Brad Randall is very knowledgeable and honest.  I recommend asking for him by name for all your exterior home needs.",
+      "publishedAt": "2020-09-22T12:38:23.037Z",
+      "ownerResponse": "Thanks for your kind review. There’s not much Brad doesn’t know about exterior home work. And he’s honest as the day is long. Maybe that’s why he’s always busy!!!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURDcW9MRGFBEAE!2m1!1s0x0:0xadeb7c9623ac4274!3m1!1s2@1:CIHM0ogKEICAgIDCqoLDaA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUMwX1lDLW13RRAB",
+      "reviewer": "Andy B.",
+      "rating": 5,
+      "text": "We used TWG for a new roof and to repaint our house after the hail storms and could not be happier with the results.  They were out quickly  and did the work in a professional, efficient manner.  Everything was done per our agreement with no snags at all.   There were many roofing companies working in our area and I can say without hesitation that I think TWG was the best.  We were so happy with the result and our house is looking as good as the day we moved in!  We highly recommend TWG!",
+      "publishedAt": "2019-10-07T21:15:47.301Z",
+      "ownerResponse": "Thank you Andy.  We enjoyed working with you to repair your home from the storm.  We appreciate entrusting your roof replacement and other repairs to us.  Thank you for your business!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMwX1lDLW13RRAB!2m1!1s0x0:0xadeb7c9623ac4274!3m1!1s2@1:CIHM0ogKEICAgIC0_YC-mwE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURVeXV5b1NnEAE",
+      "reviewer": "Ryan B.",
+      "rating": 5,
+      "text": "We recently had our exterior, and garage reworked by TWG. The workmanship is excellent. Everyone that came to our house was kind, communicative and tidy. There was no clean-up after they left, the only left behind a great looking house. We'll use them for our next project.",
+      "publishedAt": "2019-08-19T20:20:40.165Z",
+      "ownerResponse": "Thank you, Ryan.  It was a pleasure working with you. Your house looks great!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURVeXV5b1NnEAE!2m1!1s0x0:0xadeb7c9623ac4274!3m1!1s2@1:CIHM0ogKEICAgIDUyuyoSg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURrMGItdzlRRRAB",
+      "reviewer": "Carole",
+      "rating": 5,
+      "text": "We initially called TWG for siding repair.  Scott determined  that the siding damage was caused by hail and we also had hail damage to the roof. He coordinated with the insurance adjustor to make sure we were compensated for all the hail damage.  We have also used TWG on another project and have been very satisfied with their work.",
+      "publishedAt": "2019-06-28T22:35:36.197Z",
+      "ownerResponse": "Thanks For reviewing our firm!  I look forward to working with you again.<br>Best Regards,<br>Scott",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURrMGItdzlRRRAB!2m1!1s0x0:0xadeb7c9623ac4274!3m1!1s2@1:CIHM0ogKEICAgIDk0b-w9QE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUQ0X3V6cHlBRRAB",
+      "reviewer": "WoVella T.",
+      "rating": 4,
+      "text": "Everything is good",
+      "publishedAt": "2019-06-14T01:27:09.796Z",
+      "ownerResponse": "We never did any work for you. So, we’re unsure how you came up with a 4 star review.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ0X3V6cHlBRRAB!2m1!1s0x0:0xadeb7c9623ac4274!3m1!1s2@1:CIHM0ogKEICAgID4_uzpyAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURZaHAyand3RRAB",
+      "reviewer": "Mark B.",
+      "rating": 5,
+      "text": "TWG Construction worked with my Insurance company and replaced my metal hail damaged roof.  They also replaced a hail damaged door, awning and siding.  They did a fantastic job!  I highly recommend TWG Roofing!",
+      "publishedAt": "2019-05-09T20:31:22.814Z",
+      "ownerResponse": "Thanks, Mark! And thanks for the business. It's great to know we were able to help and so nice of you to leave a 5 star review.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURZaHAyand3RRAB!2m1!1s0x0:0xadeb7c9623ac4274!3m1!1s2@1:CIHM0ogKEICAgIDYhp2jwwE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNZejVqdkNnEAE",
+      "reviewer": "Colin F.",
+      "rating": 5,
+      "text": "Scott and his guys replaced a few windows in our home. His team was on time and very professional through the whole process. We highly recommend",
+      "publishedAt": "2019-04-25T01:31:26.361Z",
+      "ownerResponse": "It was a joy installing the windows in your home, Colin. And they looked so good! You did a great job picking them out.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNZejVqdkNnEAE!2m1!1s0x0:0xadeb7c9623ac4274!3m1!1s2@1:CIHM0ogKEICAgICYz5jvCg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNZajl1NC1BRRAB",
+      "reviewer": "Linden M.",
+      "rating": 5,
+      "text": "After a giant hailstorm TWG took care of everything we needed. They even worked with our insurance company and got us all new siding. The work they do has withstood the test of time! Thanks, TWG!",
+      "publishedAt": "2019-04-24T22:35:54.562Z",
+      "ownerResponse": "Thanks Linden!  Hard to believe its been 10 years!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNZajl1NC1BRRAB!2m1!1s0x0:0xadeb7c9623ac4274!3m1!1s2@1:CIHM0ogKEICAgICYj9u4-AE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNZc191RjZRRRAB",
+      "reviewer": "Mike C.",
+      "rating": 5,
+      "text": "TWG did a great job on my house that had hail damage.  They worked with the insurance company to get the money needed for repairs.  They fixed my roof, replaced windows and painted the house.  I was completely satisfied with the work done.",
+      "publishedAt": "2019-04-19T13:08:29.802Z",
+      "ownerResponse": "Thanks for your review Mike!<br>It was a pleasure working for you!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNZc191RjZRRRAB!2m1!1s0x0:0xadeb7c9623ac4274!3m1!1s2@1:CIHM0ogKEICAgICYs_uF6QE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNZc1lhTURREAE",
+      "reviewer": "Phil B.",
+      "rating": 5,
+      "text": "The crew at TWG came out and did a top notch job on our roof.  After 5 years it still looked so great, we had them do the roof of another (rental) house. Both times, they went above and beyond to the the best job possible with top quality materials, and did it quickly to boot!  You can't go wrong with these guys.",
+      "publishedAt": "2019-04-13T19:11:11.939Z",
+      "ownerResponse": "Thanks for your business!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNZc1lhTURREAE!2m1!1s0x0:0xadeb7c9623ac4274!3m1!1s2@1:CIHM0ogKEICAgICYsYaMDQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNZc1l6OGZ3EAE",
+      "reviewer": "Duane S.",
+      "rating": 5,
+      "text": "Highly recommended!! Very professional, fast service, and prompt response to all questions and concerns. Scott is definetly knowledgable and someone you want on your project! His team roofed my house changed gutters and offered invaluable advice. Very competitive prices, would definetly use services again!",
+      "publishedAt": "2019-04-13T18:07:34.309Z",
+      "ownerResponse": "Thanks for hiring TWG!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNZc1l6OGZ3EAE!2m1!1s0x0:0xadeb7c9623ac4274!3m1!1s2@1:CIHM0ogKEICAgICYsYz8fw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNZb2Y2NjRRRRAB",
+      "reviewer": "Michael S.",
+      "rating": 5,
+      "text": "TWG came out and looked at our roof, gave us an estimate and we were impressed.  Brad was very though and explained every detail.<br>When the crew came out to remove the old roof and replace it they were very courteous and took care of every detail, our yard was cleaner when they left than it was before they came.  The roof looks great and has been up long enough to go through several rain storms.  No leaks, no tabs blown off and a follow up call to make sure we were happy!   We are so happy with the entire experience, TWG is an outstanding company!",
+      "publishedAt": "2019-04-12T15:57:25.788Z",
+      "ownerResponse": "Thanks again for the opportunity to work with you!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNZb2Y2NjRRRRAB!2m1!1s0x0:0xadeb7c9623ac4274!3m1!1s2@1:CIHM0ogKEICAgICYof664QE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNZbXNySGtRRRAB",
+      "reviewer": "Russell C.",
+      "rating": 5,
+      "text": "It's so hard to find great, trustworthy contractors.  Finding these folks has really made my life easier, and my home better.",
+      "publishedAt": "2019-04-11T09:48:12.828Z",
+      "ownerResponse": "Russell, It has been a pleasure working with you.  Thanks for your review!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNZbXNySGtRRRAB!2m1!1s0x0:0xadeb7c9623ac4274!3m1!1s2@1:CIHM0ogKEICAgICYmsrHkQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNZeXEtaXRnRRAB",
+      "reviewer": "William G.",
+      "rating": 5,
+      "text": "Amazing crew!! Amazing work!!",
+      "publishedAt": "2019-04-10T19:20:21.932Z",
+      "ownerResponse": "Thanks so much for your review.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNZeXEtaXRnRRAB!2m1!1s0x0:0xadeb7c9623ac4274!3m1!1s2@1:CIHM0ogKEICAgICYyq-itgE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNvdzZPdU9REAE",
+      "reviewer": "RC S.",
+      "rating": 5,
+      "text": "Great crew and job! Worked with my insurance co. to get more money for repairs.  House looks like new.",
+      "publishedAt": "2019-03-06T04:57:02.496Z",
+      "ownerResponse": "Thanks so much for your review.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNvdzZPdU9REAE!2m1!1s0x0:0xadeb7c9623ac4274!3m1!1s2@1:CIHM0ogKEICAgICow6OuOQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNvNF9uOGN3EAE",
+      "reviewer": "Doug B.",
+      "rating": 5,
+      "text": "The Window Guys helped me fix some rotted windows. They were professional, on time and showed me ways to save money in the project. Well done!",
+      "publishedAt": "2019-02-26T18:40:57.821Z",
+      "ownerResponse": "Thanks, Doug! We’re all about helping our customers save money. And your project was fun because we got to see the dramatic change from those rotted windows!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNvNF9uOGN3EAE!2m1!1s0x0:0xadeb7c9623ac4274!3m1!1s2@1:CIHM0ogKEICAgICo4_n8cw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURJOTZtQllnEAE",
+      "reviewer": "Linda M.",
+      "rating": 5,
+      "text": "They were very professional in how they did the overall roof.  They even adjusted my claim to help me out.  The finished job looks fantastic!!",
+      "publishedAt": "2019-01-26T21:36:04.811Z",
+      "ownerResponse": "Thanks Linda!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURJOTZtQllnEAE!2m1!1s0x0:0xadeb7c9623ac4274!3m1!1s2@1:CIHM0ogKEICAgIDI96mBYg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNRN0lTM0tnEAE",
+      "reviewer": "Richard A.",
+      "rating": 5,
+      "text": "Very respectable company. Reliable and always delivers high-end quality results.",
+      "publishedAt": "2018-08-25T00:15:35.757Z",
+      "ownerResponse": "Thanks, Nicole!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNRN0lTM0tnEAE!2m1!1s0x0:0xadeb7c9623ac4274!3m1!1s2@1:CIHM0ogKEICAgICQ7IS3Kg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNBaGV2bF93RRAB",
+      "reviewer": "Scott H.",
+      "rating": 5,
+      "text": "Scott is great",
+      "publishedAt": "2017-11-13T12:01:44.899Z",
+      "ownerResponse": "Thanks for the 5 star review, Scott!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNBaGV2bF93RRAB!2m1!1s0x0:0xadeb7c9623ac4274!3m1!1s2@1:CIHM0ogKEICAgICAhevl_wE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNnNi1yQTdnRRAB",
+      "reviewer": "Jeff N.",
+      "rating": 5,
+      "text": "I would highly recommend TWG Construction for any exterior or interior work on your house.  They recently replaced two windows with faulty seals and did not charge me for the replacement, no questions asked.  So I know they stand behind their products. I have also seen their interior work and am impressed with the quality and exceptional interior design ability.  They are about to start a new job of putting up new siding and their bid was by far the most reasonable.",
+      "publishedAt": "2017-05-09T13:07:32.980Z",
+      "ownerResponse": "Thanks for your business and review!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNnNi1yQTdnRRAB!2m1!1s0x0:0xadeb7c9623ac4274!3m1!1s2@1:CIHM0ogKEICAgICg6-rA7gE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNBajdPMDNBRRAB",
+      "reviewer": "Megan B.",
+      "rating": 5,
+      "text": "If you are considering making exterior changes on your home, be sure to talk to the Window Guys.  They have a great selection of windows, siding, doors, etc to give your home the facelift you were looking for!",
+      "publishedAt": "2012-04-18T22:14:15.909Z",
+      "ownerResponse": "Thanks so much for hiring TWG Construction!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNBajdPMDNBRRAB!2m1!1s0x0:0xadeb7c9623ac4274!3m1!1s2@1:CIHM0ogKEICAgICAj7O03AE%7C%7C?hl=en-US",
+      "language": "en"
+    }
+  ],
+  "ratingOnly": [
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUQ4ZzY2TGtBRRAB",
+      "reviewer": "Shawn N.",
+      "rating": 5,
+      "publishedAt": "2020-07-27T13:15:12.491Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUM4dXEzREtBEAE",
+      "reviewer": "Jackson C.",
+      "rating": 5,
+      "publishedAt": "2020-07-03T17:54:16.700Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUQwcnN6emF3EAE",
+      "reviewer": "Randy E.",
+      "rating": 5,
+      "publishedAt": "2019-11-05T15:19:32.348Z"
+    }
+  ]
+}
