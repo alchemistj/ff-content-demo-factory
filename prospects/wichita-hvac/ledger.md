@@ -74,3 +74,5 @@ Only places not already on the HVAC list, bottom-up:
 | 9 | Frank Wille Service | skip | 3 reviews |
 | 5 | All About Heating and Cooling | skip | 6 reviews |
 Result: no clean 4th pick in Wichita. Azteca (7 reviews) is still the only weak-site HVAC company left.
+
+**Josh, 2026-11-09: drop the 4th batch-2 demo.** Batch 2 is Air Capital, Integrity and Dream Makers.
