@@ -65,7 +65,7 @@ We install new heating equipment, and high-efficiency heating equipment comes wi
 
 A new furnace is a big job in your home. How it goes in and how the space is left matters as much as the equipment.
 
-We install it, check that it's running right and leave the space clean. Before the work starts, you'll see the estimate and your options, with no charge for the replacement estimate.
+We install it, check that it's running right and leave the space clean. The replacement estimate is free, so you can see your options first.
 
 > "Had a new furnace installed and the team at Alpha did great work and were very neat as they installed the furnace."
 > — Kasie M.

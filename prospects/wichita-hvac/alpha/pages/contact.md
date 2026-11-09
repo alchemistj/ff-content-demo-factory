@@ -12,7 +12,11 @@ If your AC or furnace is out, or something is leaking, call (316) 260-5775. Don'
 
 ## If It Can Wait
 
-Send a message with your name, phone number, email and what's going on. Tell us what the equipment is doing, what you've already tried and, for plumbing, where the water is showing up. We'll follow up on weekdays during office hours. You can also email tomt@alpha-heatair.com.
+Send a message with your name, phone number, email and what's going on.
+
+Tell us what the equipment is doing, what you've already tried and, for plumbing, where the water is showing up. You can also email tomt@alpha-heatair.com.
+
+If you're weighing a new system, say so in your message. That's a free replacement estimate, and the more we know about the house, the better the conversation.
 
 Replacement estimates for heating and cooling equipment are free, and so are water heater replacement estimates.
 
