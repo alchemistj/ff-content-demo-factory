@@ -35,7 +35,7 @@ A new roof is more than new shingles. Here is what a proper replacement covers, 
 
 Most house roofs go on in a day or two. A big roof, a steep one or a roof with a lot of rotted decking takes longer.
 
-If the gutters are being replaced too, they usually go on right after the roof. You can plan around a short job, not a week of noise.
+If new gutters are part of the job, they go up after the roof, because they hang on the new edge. You can plan around a short job, not a week of noise.
 
 > very pleased with the whole roofing experience! Eric is very helpful & patient in explaining the work he & his team would be doing and handling some of the questions with the insurance company. it was a brutally hot day but the roof was done in one and the the gutters completed the second. AND after the hail storm 2 months later, he returned to make sure all was well.
 > — Barbara G.
@@ -62,7 +62,7 @@ When the forecast turns, I move your day and call you to set a new one. You shou
 
 If hail or wind brought you here, your insurance company is part of the job. I walk the roof with you, explain the work a replacement involves, and meet your adjuster to talk through the roofing side.
 
-I can't say what an insurer will pay. That's decided between you and your policy. What I can do is make sure the roof is looked at properly and your questions get answered.
+I can't say what an insurer will pay, and no honest roofer can. That's between you and your insurer. What I can do is make sure the roof is looked at properly and your questions get answered.
 
 > Excellent customer service, Helped us from the start of filling the insurance claim,to meeting with the adjusters, Eric was present from start to finish. Very respectful crew and worked fast and picked everything up better than when they started.
 > — John C.
@@ -86,7 +86,7 @@ If you have more than one quote, make them match up. Ask each roofer the same qu
 - Are gutters in the price, or separate?
 - Who cleans up, and how?
 
-A low number that leaves these out isn't low. I'm glad to go through any quote with you.
+A low number that leaves these out isn't low. Ask me the same questions, and I'll answer every one.
 
 ## Questions About Roof Replacement
 

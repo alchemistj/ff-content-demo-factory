@@ -2,7 +2,7 @@
 
 Scout: `scout/roof-replacement-wichita-ks/` on `scout-data` (50 places, Prospect scout run 8). Positions below are list positions in `places.json`. Worked from the bottom up. Qualified from each business's own site; reviews were pulled only for the four picks. Google category was never used as a filter.
 
-**Next run starts at position 4** (Midwest Roofing Services) and moves up, after re-checking the backlog.
+**Wichita roofing is nearly exhausted.** Next run starts at position 4 (Midwest Roofing Services) and moves up, after re-checking the backlog.
 
 ## Picked
 | Pos | Business | Why |
@@ -11,6 +11,16 @@ Scout: `scout/roof-replacement-wichita-ks/` on `scout-data` (50 places, Prospect
 | 34 | Flawless Roofing Co | Small roofing contractor (roofing, siding, gutters, painting). Template site: H1 "Roofing Redefined for Modern Living", service page H1 just "Roofing". 26 reviews, 4.6. |
 | 9 | ICT Roofing & Exteriors | Roofing-led, insurance claims. Squarespace site still titled "Your Site Title", no H1 on any page, About link opens the Insurance page, leftover "/rooms-rates" template link. 74 reviews, 4.9. |
 | 5 | Douglas Fry Roofing, Inc | Family roofer since 1981. "Repair Services" menu link opens the Tile Roofs page; pages named "-copy" are live. 79 reviews, 4.8. |
+
+## Picked, batch 2 (Josh chose "Wichita leftovers", 2026-11-09)
+| Pos | Business | Why |
+|---|---|---|
+| 40 | Better Solutions Roofing & Construction | Site lists fences and concrete, but 48 of 88 reviews are roofs and none are fences or concrete. Site runs off a phone screen; "Services" menu dead. |
+| 32 | Ashbrook Roofing & Contracting | Website returns a 502 error on every try. Owner Andy, 44 reviews. |
+| 8 | Monarch Roofing & Construction | Domain no longer resolves. Cesar named in 34 reviews. |
+| 30 | Diamond Roof & Gutter | Site shows a 781 (Massachusetts) phone number, not the Google number, and returned errors. 19 reviews. |
+
+Second scout (`roofing-contractor-wichita-ks`, 50 places) added nothing new that fit: Statewide Roofing and Heritage Roofing & Exteriors have strong multi-page sites; Lenz Construction is a Minneapolis company; the rest are under 15 reviews, under 4.5, or already demoed (TWG, NWFA).
 
 ## Backlog (qualified or possibly qualified, not picked today)
 | Pos | Business | Note |

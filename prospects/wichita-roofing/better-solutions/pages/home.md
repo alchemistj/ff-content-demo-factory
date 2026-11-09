@@ -2,24 +2,24 @@
 
 # Roofing Company in Wichita, KS — Better Solutions Roofing & Construction
 
-I'm Eric, and I own Better Solutions. We replace and repair roofs in Wichita, and I stay in touch with you from the first call to the last day on your roof. Call me or ask for a free quote and I'll tell you what your roof needs.
+I'm Eric, and I own Better Solutions. We replace and repair roofs in Wichita, and on my jobs I'm the one who calls to tell you when the crew is coming, what we found and what happens next. Call me or ask for a free quote and I'll tell you what your roof needs.
 
 **Buttons:** Call (316) 708-0046 | Get a Free Quote
 
 > Highly recommend Eric for roofing! He’s professional, dependable, easy to communicate with, and really knows his stuff. He takes pride in his work and makes sure people are taken care of from start to finish.
 > — Edna E.
 
-## You Deal With the Owner
+## I Tell You What's Happening on Your Roof
 
 A roof is the one part of your house you can't watch someone work on. You're at work, or standing in the yard looking up, and all you can do is wait to hear how it's going.
 
-So most of my job is talking to you. I tell you when we're coming, what we find up there and what happens next.
+That's why I pick up the phone. I tell you when we're coming, what we find up there and what happens next, so you're not left guessing.
 
 If rain pushes a day, you hear it from me, and we set a new one. When the work is done, I check back to see how everything looks to you.
 
 I was born and raised in Wichita. I didn't go to school for roofing. I learned it by doing it.
 
-Noah works alongside me on estimates and on the roof, so when you call, you're talking to the people who will be at your house.
+You may meet Noah, too. He works with me on roof estimates and up on the roofs themselves.
 
 > From the first phone call to the final cleanup, they were professional, honest, and easy to work with. The crew showed up on time, worked hard, and made sure everything was done right. My new roof looks amazing, and they left my property clean when they finished.
 > — Alex M.
@@ -30,7 +30,7 @@ Some roofs are past saving. The shingles curl at the edges, bare patches show wh
 
 Once the damage is spread across the whole roof, every patch becomes one more seam for water to find. You end up paying for repairs on a roof that is already finished.
 
-A replacement starts with a free estimate. I look at the roof, tell you what I see, and give you the price before any work begins.
+A replacement starts with a free estimate. We look at the roof, tell you what we see, and give you the price before any work begins.
 
 Then we tear off the old roof and put on the new one. Most house roofs go on in a day or two, depending on the size and the weather.
 

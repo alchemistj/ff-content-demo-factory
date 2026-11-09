@@ -2,7 +2,7 @@
 
 # Contact Better Solutions Roofing & Construction
 
-The fastest way to reach me is to call. Tell me what you're seeing on your roof, and we'll set a time for me to look at it. Estimates and roof inspections are free.
+The fastest way to reach me is to call. Tell me what you're seeing on your roof, and we'll set a time to look at it. Estimates and roof inspections are free.
 
 **Buttons:** Call (316) 708-0046 | Get a Free Quote
 
@@ -15,6 +15,11 @@ The fastest way to reach me is to call. Tell me what you're seeing on your roof,
 **Email:** eroofing57@gmail.com
 
 If you want an answer today, call.
+
+Noah works with me on roof estimates, so you may talk with him about yours.
+
+> I spoke with Noah about a roof estimate, and he provided excellent customer service. He was a pleasure to work with and was extremely knowledgeable.
+> — Merissa O.
 
 ## What to Have Ready
 
@@ -40,7 +45,7 @@ A roof inspection before you close can save you from buying a leak. Call me and 
 ## Questions Before You Call
 
 **Is the estimate free?**
-Yes. Both are free.
+Yes. The estimate and the roof inspection are both free.
 
 **Do I need to file an insurance claim before you look?**
 No. Call first if you like. I'll tell you what I see on the roof, and you decide what to do about your policy.

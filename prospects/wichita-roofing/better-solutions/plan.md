@@ -15,12 +15,12 @@ Sources: `facts.md` (including "From reviews") for claims, `reviews.json` for qu
 - **Buttons:** Call (316) 708-0046 | Get a Free Quote ("Get a Free Quote!" is the site's own button, facts.md section 11).
 
 ## The idea (homepage)
-You can't watch your own roof being worked on, so what you need is an owner who tells you what is happening: when the crew comes, what they found, what comes next, and a check-in after. The reviews praise Eric's communication more than anything (about 24 reviews), then cleanup and a fair price.
+You can't watch your own roof being worked on, so Eric, the owner, is the one who calls to tell you what is happening on his jobs: when the crew is coming, what they found and what happens next, and he has checked back after the job. Eric says it in the first person, as what he does, not as a company-wide guarantee. The reviews praise Eric's communication more than anything (about 24 reviews), then cleanup and a fair price.
 
 ## Sections
 **Home**
 1. Top: Eric, first person, call or free quote. Proof: Edna E. (Eric, easy to communicate with, from start to finish).
-2. You deal with the owner. Moment: a roof is the one part of the house you can't watch. Reason: you wait for news. Does: Eric tells you the day, what is found, what is next; Eric born and raised in Wichita and self-taught (About page); Noah works with him. Review: Alex M. (first call to final cleanup).
+2. I tell you what's happening on your roof. Moment: a roof is the one part of the house you can't watch. Reason: you wait for news. Does: Eric tells you the day, what is found, what is next; Eric born and raised in Wichita and self-taught (About page); Noah works with him on roof estimates and roofs (only what reviews show; no title or role). Review: Alex M. (first call to final cleanup).
 3. Roof replacement. Moment: curling shingles, bare patches, leaks in more than one room. Reason: spread damage makes every patch a new seam. Does: free estimate, price before work, tear-off. Link. Review: Jared S. (tear-off, on time and on budget).
 4. Roof repair. Moment: shingles in the yard, a stain. Reason: exposed underlayment, water travels. Does: find where water gets in. Link. Review: Savannah B. (problem inside the house, came out fast).
 5. Insurance. Moment: an adjuster is coming. Does: walk the roof with you, explain the work, be there for the roofing side. Never what insurer pays. Review: Pam W.
@@ -29,12 +29,12 @@ You can't watch your own roof being worked on, so what you need is an owner who 
 
 **Roof replacement:** signs; what a replacement involves (steps); how long (Barbara G.); roof and gutters (Allison A.); weather (Denise C.); insurance (John C.); cost (Bryson D.); comparing quotes; questions; call band.
 
-**Roof repair:** wind (Apache A.); leaks (Nicole G.); small jobs (MI H.); vents and flashing; Kansas weather; repair or replace (links to replacement); repair visit (Makyle K.); after a storm; questions; call band.
+**Roof repair:** wind (Apache A.); leaks (Nicole G.); small jobs (MI H.); vents and flashing; Kansas weather; repair or replace (links to replacement); repair visit (Kaidence A.); after a storm; questions; call band.
 
-**Contact:** call or email, what to have ready, where we work, buying a house (Joseph T.), questions, call band.
+**Contact:** call or email, what to have ready, where we work, Noah on estimates (Merissa O.), buying a house (Joseph T.), questions, call band.
 
 ## Reviews used (five-star, word for word, each on one page only)
-Home: Edna E., Alex M., Jared S., Savannah B., Pam W. Replacement: Barbara G., Allison A., Denise C., John C., Bryson D. Repair: Apache A., Nicole G., MI H., Makyle K. Contact: Joseph T.
+Home: Edna E., Alex M., Jared S., Savannah B., Pam W. Replacement: Barbara G., Allison A., Denise C., John C., Bryson D. Repair: Apache A., Nicole G., MI H., Kaidence A. Contact: Merissa O., Joseph T.
 
 ## Real questions and answers
 - Free? Estimate and roof inspection, yes (site, facts section 11).

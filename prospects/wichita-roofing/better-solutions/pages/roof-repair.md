@@ -45,9 +45,9 @@ Those parts wear out before the shingles do. When one fails, water finds it firs
 
 ## Why Kansas Roofs Need Repairs
 
-Wichita roofs take a lot. Spring storms bring hail and straight-line wind, summer sun bakes the shingles, and a freeze and thaw in winter works water into every small gap.
+Spring storms in Wichita bring hail and straight-line wind, summer sun bakes the shingles, and a freeze and thaw in winter works water into every small gap.
 
-A roof that's a few years old can lose shingles in one gust, and the damage rarely stays small if it's left. A repair done early costs a fraction of what the same leak does after a season of rain.
+A roof that's a few years old can lose shingles in one gust, and the damage rarely stays small if it's left. Caught early, it's a few shingles. After a season of rain, the same leak can mean wet insulation, a stained ceiling and soft decking.
 
 ## Repair or Replace?
 
@@ -63,8 +63,10 @@ We look at more than the spot you pointed to. Older shingles go brittle, and the
 
 Then you hear what we found and what the fix will cost before the work begins. If something bigger is coming, you'll know about it before it turns into an emergency.
 
-> Amazing at what they do. Fast and quick service. They will help with any of your needs and you can trust them.
-> — Makyle K.
+You get a straight answer, including when the answer is that it can wait.
+
+> Eric and Noah were amazing! They were professional and helpful throughout the entire process. They answered everything truthfully and you can tell they genuinely care!
+> — Kaidence A.
 
 ## After a Storm
 
