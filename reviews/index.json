@@ -27,6 +27,18 @@
       "pulledAt": "2026-11-03T04:08:55.017Z"
     },
     {
+      "slug": "alpha-hvac-wichita",
+      "name": "Alpha HVAC and Plumbing LLC",
+      "placeId": "ChIJr0T5uHTfuocRtEZ4JiDm3RE",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 131,
+        "withText": 102,
+        "ratingOnly": 29
+      },
+      "pulledAt": "2026-11-09T12:55:27.894Z"
+    },
+    {
       "slug": "ashs-barber-collective",
       "name": "Ash's Barber Collective",
       "placeId": "ChIJ8bZtIFBxz4cR5BpeENYruuQ",
