@@ -1,0 +1,27 @@
+{
+  "kind": "google-review-pull-receipt",
+  "status": "ok",
+  "slug": "ict-roofing",
+  "request": {
+    "mapsUrl": "place_id:ChIJv_5f9X_juocRcmZiIK3zq90",
+    "maxReviews": 100,
+    "expectedName": "ICT Roofing"
+  },
+  "trigger": "workflow_dispatch",
+  "apify": {
+    "actor": "compass~crawler-google-places",
+    "runId": "IzC2kUuQgIuo2tUPP",
+    "datasetId": "iB01wB9tWb9ZRLDJy",
+    "attempts": 1,
+    "usageUsd": 0.043199999999999995
+  },
+  "counts": {
+    "listingTotal": 74,
+    "withText": 71,
+    "ratingOnly": 3
+  },
+  "detail": null,
+  "startedAt": "2026-11-09T12:52:25.350Z",
+  "finishedAt": "2026-11-09T12:52:57.079Z",
+  "githubRunUrl": "https://github.com/alchemistj/ff-content-demo-factory/actions/runs/42620582413"
+}

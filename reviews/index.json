@@ -195,6 +195,18 @@
       "pulledAt": "2026-11-07T03:20:38.184Z"
     },
     {
+      "slug": "ict-roofing",
+      "name": "ICT Roofing & Exteriors",
+      "placeId": "ChIJv_5f9X_juocRcmZiIK3zq90",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 74,
+        "withText": 71,
+        "ratingOnly": 3
+      },
+      "pulledAt": "2026-11-09T12:52:57.079Z"
+    },
+    {
       "slug": "imperial-landscaping",
       "name": "IMPERIAL LANDSCAPING LLC",
       "placeId": "ChIJG59zWFoVgKMRjzvzfqjRykg",
