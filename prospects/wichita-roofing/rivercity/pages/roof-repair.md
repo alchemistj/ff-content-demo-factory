@@ -12,7 +12,10 @@ A roof that's leaking is already getting worse. Every rain pushes more water thr
 
 A small repair done now is a small bill. The same leak left through a wet spring becomes rotted wood, stained drywall and sometimes mold.
 
-If you can see daylight, a hole or a missing section, call today, and keep the water off your belongings in the meantime.
+If you can see daylight, a hole or a missing section, call as soon as we're open, and keep the water off your belongings in the meantime. We'd rather get to a leak early than late.
+
+> "We found a leak in our roof. River City handled it all very professionally and in a timely manner. I would definitely recommend them for any of your roofing needs."
+> — Lindsey F.
 
 ## What Usually Needs Repairing
 
@@ -25,9 +28,6 @@ Most roof leaks are not a worn-out roof. They come from a short list of small pl
 - **Valleys.** Where two slopes meet, all the water runs through one narrow channel.
 
 Each of these costs far less to fix than a roof. The trick is finding which one it is.
-
-> "We found a leak in our roof. River City handled it all very professionally and in a timely manner. I would definitely recommend them for any of your roofing needs."
-> — Lindsey F.
 
 ## Wind and Storm Damage
 
@@ -42,11 +42,14 @@ We repair storm-damaged roofs, from a few shingles to the larger jobs. If the da
 
 ## How We Find the Leak
 
-The stain on the ceiling is rarely under the hole. Water runs along the decking and framing and drips wherever it finds a low point.
+Your own clues help: whether the stain grows in every rain or only when wind drives it sideways, and whether it sits near a chimney, a bathroom fan or a plumbing vent. They narrow it down, but they don't settle it, because water rarely drips straight down from the opening.
 
 So we start in the attic, where a leak leaves dark streaks, wet insulation and damp wood. Then we go up on the roof and follow the trail to the opening.
 
-That works better than guessing from the ground, and it keeps you from paying to replace something that wasn't leaking. You get a detailed estimate for the repair that stops the water.
+Sometimes the trail ends somewhere other than the shingles. That's the whole point of looking: you pay to fix what's actually letting water in. You get a detailed estimate for the repair that stops it.
+
+> "We had a leak in the kitchen ceiling. We assumed it was from the roof so we called a slew of different contractors. We ended up going with River City Roofing as Anthony crawled into the attic and onto the roof and found that our CHIMNEY CHASE was leaking."
+> — Brant C.
 
 ## Repair or Replace?
 

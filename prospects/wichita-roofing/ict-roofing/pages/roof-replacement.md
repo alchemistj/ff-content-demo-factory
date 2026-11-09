@@ -8,7 +8,7 @@ If hail or age has finished your roof, you shouldn't have to sort out the claim,
 
 ## From Hail Claim to New Roof
 
-The first step is a look at the roof, and it costs you nothing. If the damage is hail, we photograph it and explain what we see, slope by slope.
+After a big storm, half the street gets new roofs and you're left wondering whether yours needs one too. The first step is a look at the roof, and it costs you nothing. If the damage is hail, we photograph it and explain what we see, slope by slope.
 
 If you decide to file, the claim has a rhythm: the inspection, the claim, the adjuster's visit, the scope of work, then the schedule. We're in each of those steps with you.
 
@@ -18,7 +18,7 @@ Replacing the roof is the easy part for us. The part that takes patience is gett
 
 Your adjuster walks the roof, counts hits and decides what the damage covers. You can stand in the yard and nod, or you can have someone next to the adjuster who reads a roof for a living.
 
-Brady or Arturo meets the adjuster at your house, and sometimes I do. We point out what's on the roof, show what the photos show, and ask the questions you wouldn't know to ask.
+Brady or Arturo meets the adjuster at your house, and sometimes Juan does. We point out what's on the roof, show what the photos show, and ask the questions you wouldn't know to ask.
 
 > "Juan got up on the roof with the adjuster in support of our claim. He made the process easy."
 > — Debbie L.
@@ -66,9 +66,9 @@ We work with all roofing systems and brands, so the recommendation comes from yo
 
 ## Install Day and Cleanup
 
-Many of our roofs go on in a single day. A larger roof, a steep one or one with a lot of decking to replace takes longer, and we tell you before we start.
+Plenty of our roofs have gone on in a single day. A larger roof, a steep one or one with a lot of decking to replace takes longer, and we tell you before we start.
 
-Before we leave, we run a magnetic sweeper over the yard, the driveway and the flower beds. Roofing nails are small, they hide in grass, and they find tires.
+A tear-off sends thousands of old nails and shingle scraps off the edge of the roof, and some land in the grass where you'll never spot them. So before we leave, we run a magnetic sweeper over the yard and pick up the debris, and you don't find nails with your bare feet next summer.
 
 > "Cleanup after the new roof and gutters were installed was exceptional."
 > — Peggy S.

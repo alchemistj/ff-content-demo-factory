@@ -34,7 +34,7 @@ Water goes where a roof changes direction or where something pokes through it. T
 
 Flashing is thin metal that has to be shaped and sealed to that exact spot. It ages, loosens and gets sealed with caulk by whoever came before. We rework flashing from eave to rake, around chimneys and around skylights, and replace what has worn out instead of smearing over it.
 
-Valleys carry the most water on the roof, so they wear first. A deteriorating valley is a repair worth doing before it becomes a ceiling.
+Valleys carry the most water on the roof, so they wear first. A worn valley is a repair worth doing before it becomes a ceiling.
 
 > This past year they replaced the outside of my sky tubes that were leaking and repaired the valleys that were deteriorating, using a new type of product that should keep them worry free for years.
 > — Lynda M.
@@ -49,14 +49,18 @@ We replace damaged shakes and fix the flashing around them. If the whole roof is
 
 Metal roofs leak at the places where metal is joined or fastened: seams, penetrations, flashings and exposed screws that have backed out. A standing seam roof hides its fasteners, so a leak there usually means a seam, a flashing or a damaged panel.
 
-We repair metal roof leaks, including odd shapes that other roofers couldn't get to hold.
+Metal also moves. It grows in the summer sun and shrinks on a cold night, so a dab of sealant over a gap cracks loose within a season. Curved and odd-shaped roofs are harder still, because the flashing has to be bent to fit the shape.
+
+We repair metal roof leaks by fixing the joint or flashing that failed, not by caulking over it.
 
 > I have a radius metal roof that I've had other roofers tried to fix for me and finally I found the roofer that that did the repair correctly.
 > — Rhonda P.
 
 ## Shingle and Composition Roof Repair
 
-On asphalt shingle roofs, we replace missing and damaged shingles, redo worn flashing and fix the leaks around vents and valleys. We also repair DaVinci roofs.
+Shingle roofs usually leak at the edges of things. Wind lifts and creases tabs, the rubber boot around a plumbing vent cracks in the sun, and nails back out under the shingle above.
+
+We replace missing and damaged shingles, redo worn flashing and fix the leaks around vents and valleys. We also repair DaVinci roofs.
 
 If hail or wind caused the damage, the repair may be covered. Jason works with your insurance company from the first call to the last nail.
 
@@ -65,6 +69,11 @@ If hail or wind caused the damage, the repair may be covered. Jason works with y
 We always give a written estimate on repairs. It lists the scope of work, the warranty and the price, so you know what you're paying for before we start.
 
 We offer workmanship warranties of 5, 10 and 15 years. The crew cleans up each day, and Jason follows up afterward.
+
+When rain has every roofer in town booked, we tell you honestly how long the wait is, and the price on the estimate is the price you pay.
+
+> He go on the roof to evaluate the cause of the leaks (had 2 leaks on a tile roof) gave me a very reasonable estimate and said that it would be 2 to 4 weeks before the work could be done because of all the recent rains.  Douglas Fry Roofing completed the work within 3 weeks of my initial appointment and for the estimated amount.
+> — Jiml P.
 
 ## Repair Questions
 

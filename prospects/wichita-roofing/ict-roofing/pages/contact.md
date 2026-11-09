@@ -2,7 +2,7 @@
 
 # Contact ICT Roofing & Exteriors
 
-Call and tell us what's going on with your roof. Every inspection is free, so call and we'll set up a time to look at your roof.
+Tell us what's going on with your roof, whether it's a storm that just came through, a leak or shingles in the yard. Every inspection is free, so call and we'll set up a time to come look.
 
 **Buttons:** Call (316) 796-6722 | Get a Free Inspection
 
@@ -13,6 +13,11 @@ Call and tell us what's going on with your roof. Every inspection is free, so ca
 **Arturo Veliz, Project Manager:** (316) 807-8848. Arturo coordinates our jobs, and this line goes straight to him.
 
 **Email:** info@ict-roofing.com. You can also reach Juan at juan@ict-roofing.com or Arturo at arturo@ict-roofing.com.
+
+If we miss your call, leave a message with your name and what you're seeing. We call back, and we'd rather hear about a leak today than after the next rain.
+
+> "These guys have done two jobs for me now and they did a great job on both of them. They were very responsive and easy to work with"
+> — Alex N.
 
 ## Where We Are
 
@@ -30,6 +35,13 @@ You don't need much. It helps to know:
 - What you're seeing: shingles missing, a leak, dents on gutters or vents, or a storm that just came through.
 - If you've already filed a claim, your claim number and adjuster's name, and the date of the adjuster's visit if you have it.
 - Any photos you've taken.
+
+## After You Call
+
+You won't be left guessing. We tell you when we're coming to inspect, what we found, when the adjuster visit is if there's a claim, and when the crew will be there. If the weather pushes a date, you hear it from us.
+
+> "They kept me informed at all times through the process and were extremely knowledgeable about insurance. Brady kept in contact and was amazing the whole process."
+> — Gavin C.
 
 ## Questions Before You Call
 

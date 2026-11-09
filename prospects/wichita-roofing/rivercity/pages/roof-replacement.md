@@ -14,7 +14,10 @@ A roof like that can be patched, but the patch buys you a season, not a decade. 
 
 The opposite is just as true. One failed flashing or a bad vent boot is a [roof repair](/roof-repair-wichita-ks/), and replacing a sound roof because a stain showed up is money you didn't have to spend.
 
-That's why we look before we quote. Our job is to tell you which one you have.
+That's why we look before we quote: in the attic and on the roof, not from the driveway. Our job is to tell you which one you have.
+
+> "We had a leak in the kitchen ceiling. We assumed it was from the roof so we called a slew of different contractors. We ended up going with River City Roofing as Anthony crawled into the attic and onto the roof and found that our CHIMNEY CHASE was leaking."
+> — Brant C.
 
 ## What Comes Off Before Anything Goes On
 
@@ -26,14 +29,11 @@ Underneath the shingles go the parts you'll never look at again: the underlaymen
 
 Ventilation matters more than most people expect. A hot, wet attic cooks shingles from underneath and shortens the life of the roof you just bought.
 
-> "Professional, courteous, and really know what theyre doing. Thank you for taking such good care of me and my home."
-> — Alex C.
-
 ## Choosing the Material
 
 We install composition shingles, metal roofing and tile. They are different roofs for different priorities.
 
-**Composition shingles** are what most Wichita homes wear. They cost the least up front, come in plenty of colors, and any roofer in town can repair them. Expect a lifetime of roughly 20 to 30 years.
+**Composition shingles** are what most Wichita homes wear. They cost the least up front, come in plenty of colors, and any roofer in town can repair them. Asphalt shingles generally last 20 to 30 years, less on a hot slope or after hail.
 
 **Metal** costs more to install and lasts considerably longer. It sheds snow and rain quickly and holds up well in wind. It's also louder in a downpour unless the roof is built with that in mind.
 
@@ -45,9 +45,9 @@ Kansas weather decides some of this too. Hail is hard on every material, and win
 
 Tearing a roof off throws nails, shingle scraps and grit everywhere. How a crew handles that says a lot about the crew.
 
-When we finish, the crew walks the whole property and picks up what came off the roof. You shouldn't find a nail in the yard or the driveway after we leave.
+When the last shingle is on, the crew walks the yard, the beds and the driveway and picks up what came off the roof. That walk is part of the job, not an extra.
 
-Then we follow up with you. A roof is a big purchase, and we'd rather hear if you have a question than not hear from you at all.
+Then we come back to check in with you. A roof is a big purchase, and we'd rather hear your question now than have you wondering about it later.
 
 > "River City did an amazing job putting a new roof on my home. After they finished, they walked around to make sure if anything fell off the roof that everything was picked up. Anthony showed up shortly after they left to make sure I was pleased with the roof."
 > — Kamden B.
@@ -56,7 +56,7 @@ Then we follow up with you. A roof is a big purchase, and we'd rather hear if yo
 
 A new roof sits on top of the gutters, the fascia and the walls. If the edge is rotted or the gutters are pulling away, the best shingles in the world won't keep that water out of the house.
 
-While the old roof is off, we can see these edges better than we ever will from the ground. Because we also do siding, gutters, paint and windows, we can tell you about it and fix it in the same job instead of sending you to another company.
+While the old roof is off, we can see these edges better than we ever will from the ground. Because we also do siding, gutters, paint and windows, we can tell you what we found and handle it ourselves instead of sending you to another company.
 
 > "Anthony and River city roofing did a great job on our house with paint siding and window well covers!"
 > — Julie W.

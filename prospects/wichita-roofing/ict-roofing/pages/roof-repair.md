@@ -2,7 +2,7 @@
 
 # Roof Repair in Wichita, KS — ICT Roofing & Exteriors
 
-A few shingles blew off, or a leak showed up and you can't tell where it starts. We'll find out where the water gets in and fix that, not just the spot on your ceiling. Call me for a free inspection and I'll tell you straight whether it's a repair or something more.
+A few shingles blew off, or a leak showed up and you can't tell where it starts. We'll find out where the water gets in and fix that, not just the spot on your ceiling. Call for a free inspection and we'll tell you straight whether it's a repair or something more.
 
 **Buttons:** Call (316) 796-6722 | Get a Free Inspection
 
@@ -23,10 +23,7 @@ Water runs. It enters the roof in one place, travels along the decking or a raft
 
 The usual culprits are flashing, the metal around chimneys, vents, walls and skylights, along with pipe boots and valleys. A bead of caulk can cover a bad flashing job for a season. It doesn't fix it.
 
-We start at the stain and work upward and outward until we find where the water gets in. Then we fix that.
-
-> "I needed flashing on my porch roof and a small repair and Juan hustled and came out and did it that weekend."
-> — EB B.
+We start at the stain and work upward and outward until we find where the water gets in. Then we fix that, whether it's a flashing that was set wrong, a cracked boot or a valley that was never sealed.
 
 ## When the Leak Comes Back
 
@@ -47,9 +44,14 @@ When replacement is the honest answer, here's what [a full roof replacement](/ro
 
 ## What a Repair Visit Looks Like
 
+A roof problem rarely waits for a good time, so it starts with a call back, not a week of phone tag. We set a time to come out and show up when we said we would.
+
 We get on the roof, or put a drone over it, and look at more than the spot you pointed to. Older shingles go brittle, and the ones next to the damage often tell us how much life the roof has left.
 
-Then we tell you what we found. You get the repair and the reason, and if there's something bigger coming, you hear about it before it becomes an emergency.
+Then we tell you what we found and what the repair will be before we do it. You get the repair and the reason, and if there's something bigger coming, you hear about it before it becomes an emergency.
+
+> "After leaving a voicemail that the wind had blown off some shingles, I was called back the same day!  We set a date and time for the estimate, and again he was punctual, clean, and professional.  The repair was made as agreed upon."
+> — Stephen P.
 
 ## No Upsell
 
@@ -58,7 +60,7 @@ You called about a repair, so that's what you get. If we notice something else o
 > "Brady and his team came out quickly after a wind storm to check out my roof. They were super professional and went above and beyond fixing a few extra things they noticed at no extra cost. … Brady didn't try to upsell me on anything."
 > — Thu K.
 
-## Hail Damage Is Often a Repair Question First
+## Not Sure the Storm Did Any Damage?
 
 If a storm hit and you're not sure whether there's damage, start with an inspection. We'll tell you if what you see is hail or normal wear. If it's a claim, Brady or Arturo can meet your adjuster at the house.
 

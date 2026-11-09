@@ -10,7 +10,19 @@ The fastest way to reach me is to call. Tell me what happened to your roof, or j
 
 **Call (316) 730-0301.** Monday to Friday, 10:00 AM to 6:00 PM. If a storm is on the way and you have a leak, call and say so first.
 
-**Send a request.** Use the Get a Free Estimate form and tell us what's going on. Or email ravi@flawlessroofingcousa.com.
+**Send a request.** Use the Get a Free Estimate form and tell us what's going on. Or email ravi@flawlessroofingcousa.com. Either way, we get back to you to set a time.
+
+## What Happens After You Reach Us
+
+We set a time for the inspection that works for you, so you are not left waiting on someone to show up.
+
+> "Super Nice guy, very prompt and professional. Helped our Aunt get her roof replaced and our neighbor. All excellent experiences and results!"
+> — Joseph I.
+
+After the inspection you get a straight answer: what we found, what it needs, and the price before any work starts. Then we do the job we said we'd do, for the price we said.
+
+> "Being a single woman, finding someone who does what they say & not charge you more $ is extremely limited. … Definitely would not hesitate to hire them on any future projects!"
+> — Diane J.
 
 ## What Helps to Have Ready
 

@@ -2,9 +2,24 @@
 
 # Roof Replacement in Wichita, KS — Douglas Fry Roofing
 
-A new roof is the biggest exterior decision most people make, and the material you pick decides how it looks and how long it lasts. We'll look at your roof ourselves, tell you what it needs, and put it in writing. Call, or ask for a written estimate.
+Most people start thinking about a new roof after a hailstorm, an adjuster's letter or a leak that keeps coming back in new places. Before you choose a material, find out whether you need a whole roof at all. One of us will get on yours, tell you what it needs and put it in writing, so call or ask for a written estimate.
 
 **Buttons:** Call (316) 655-9777 | Get a Written Estimate
+
+## Replace It or Repair It?
+
+A leak at one valley or one flashing is a [roof repair](/roof-repair-wichita-ks/), and we'd rather fix that than sell you a roof. We have no commissioned salespeople, so nobody here earns more if your answer is "replace."
+
+Replacement makes sense when the damage is spread across the roof. Hail or wind has broken or bruised the surface in many places, the shingles are curling and shedding granules everywhere, or the same roof keeps leaking in new spots.
+
+At that point every repair costs you money without ending the problem.
+
+> Due to significant hail damage I had to totally replace my concrete tile roof. Douglas Fry Roofing provided me excellent evaluation, planning, product, installation, workmanship and cleanup services. I love my new roof!
+> — Mary S.
+
+On a tile roof, the answer often sits under the tile. If the tile is sound but the underlayment beneath it has worn out, we lift the tile, put down new underlayment and lay your tile back.
+
+That replaces the part that failed and keeps a roof that would cost far more to start over.
 
 ## Start With the Material
 
@@ -12,45 +27,39 @@ Most roofers quote one product, the one they sell all day. We install five kinds
 
 Here is how they differ, in plain terms.
 
-**Concrete and clay tile.** Heavy, fireproof and long-lived, and the look that suits a lot of Wichita homes. The tile outlasts everything under it, so a good tile replacement is as much about the underlayment as the tile. Sometimes the best plan is to take your existing tile off, put down new underlayment and set the same tile back.
+**Concrete and clay tile.** Heavy, fireproof and long-lived, and the look that suits a lot of older Wichita homes. The tile outlasts everything under it, so a good tile roof is as much about the underlayment as the tile.
 
-**DaVinci.** Molded composite that looks like slate or cedar shake, without the upkeep. We were one of the first roofers in the Wichita area to install it, as early as 2002, so we have put it on roofs that have been through a lot of Kansas weather.
+**DaVinci.** Molded composite that looks like slate or cedar shake, without the upkeep. We were one of the first roofers in the Wichita area to install it, as early as 2002, so we've seen how it holds up through a lot of Kansas weather.
 
-**Brava.** Synthetic tile, shake and slate that reads as the real material from the street. It's a good answer when you love the look of cedar shake but don't want to re-treat and replace it.
+**Brava.** Synthetic tile, shake and slate that reads as the real material from the street. It's a good answer when you love the look of cedar shake but don't want to re-treat and replace split shakes.
 
-**Premium asphalt.** Atlas StormMaster Shake and CertainTeed Presidential Shake give you a thick, dimensional shingle at a shingle price. We recommend Atlas. Some of these carry a class 4 impact rating and wind warranties up to 130 mph, which matters here.
+**Premium asphalt.** Atlas StormMaster Shake and CertainTeed Presidential Shake are thick, dimensional shingles cut to throw the shadow lines of shake. We recommend Atlas.
 
-**Standing seam metal.** The fasteners hide under the seams, so there are no exposed screws to work loose. We typically use the horizon lock panel from Central States Manufacturing.
+Some premium shingle lines carry a Class 4 impact rating and a manufacturer's wind warranty up to 130 mph. Those ratings come from the shingle maker, so in hail country, check them on the exact product you're pricing.
 
-> Due to significant hail damage I had to totally replace my concrete tile roof. Douglas Fry Roofing provided me excellent evaluation, planning, product, installation, workmanship and cleanup services. I love my new roof!
-> — Mary S.
+**Standing seam metal.** The fasteners hide under the raised seams, so there are no exposed screws to work loose and leak. We typically use the horizon lock panel from Central States Manufacturing.
 
-## Replace It or Repair It?
-
-Before we talk material, we want to know if you need a whole roof at all. A leak at one valley or one flashing is a [roof repair](/roof-repair-wichita-ks/), and we'd rather fix that than sell you a roof.
-
-Replacement makes sense when the damage is spread across the roof: hail or wind has broken or bruised the surface in many places, the shingles are curling and shedding granules everywhere, or the same roof keeps leaking in new spots. Repairs then cost you money without ending the problem.
-
-On a tile roof, it often comes down to the underlayment. If the tile is sound but the layer beneath has worn out, we lift the tile, replace the underlayment and lay your tile back. That is a replacement of the part that failed, and it keeps a roof that would cost far more to start over.
+> Jason gave me a lot of imformation on different roofs and was plesant and personable.
+> — Jo B.
 
 ## After Hail or Wind
 
-Hail does its damage in ways you can't see from the yard. Bruised shingles, cracked tile and dented metal can look fine and still leak next spring.
+Hail does its damage in ways you can't see from the yard. A bruised shingle has lost the granules that shield it from the sun, a cracked tile lets water reach the underlayment, and both can look fine and still leak next spring.
 
 If a storm did this, Jason works with your insurance company from the first call to the last nail. He looks at the roof himself and writes our estimate from what is on it, so the scope of work reflects the actual damage and not just a line on the adjuster's sheet.
 
 > Jason with Douglas Fry Roofing did an excellent job working with our insurance to get our claim approved. Though removing a tile roof is messy, at the end of every day it was reasonably clean. The Brava cedar shakes were professionally installed and look great. They did everything Jason said they would and more.
 > — Mike F.
 
-If your policy pays for a roof, we build it to last, and we'll tell you if the paperwork covers less than the roof needs.
+If your policy pays for a roof, we build it to last. If the paperwork covers less than the roof needs, we'll tell you.
 
 ## What a Replacement Involves
 
-The old roofing comes off, and anything soft or rotted gets dealt with before new material goes on. New underlayment and flashing go down, then the roof itself.
+The old roofing comes off, and any decking that's soft or rotted gets replaced before new material goes on. New underlayment and flashing go down, then the roof itself.
 
 A shingle roof often takes a day or two. Tile takes longer, because it is heavy, comes off by hand and goes on the same way. The crew cleans up each day, so you are not living in a debris field for the length of the job.
 
-Weather sets the schedule too. Asphalt shingles seal best in the right temperature range, so a good crew watches it.
+Weather sets the schedule too. Asphalt shingles have a strip of sealant that bonds in the warmth; laid on a cold day, they can sit unsealed and lift in the next wind. So we watch the temperature, not just the calendar.
 
 > Jason answered all my concerns, the 8/12 pitch wasn't an issue, he made sure the shingles were installed when it was just the right temperature to get maximum adhesion. The Atlas shingles look great and the high profile ridge and hip shingles really set the roof off.
 > — Mike D.
@@ -59,12 +68,12 @@ Weather sets the schedule too. Asphalt shingles seal best in the right temperatu
 
 We always give a written estimate on re-roof projects. It lists the scope of work, the warranty and the price, so you can set it next to another bid and see what each one actually covers.
 
-We offer workmanship warranties of 5, 10 and 15 years, and the products that carry lifetime manufacturer warranties come with them. Metal roof workmanship warranties run from 5 up to 15 years.
+Line it up item by item. Underlayment, flashing, ridge and hip, decking and cleanup are where two bids for "a new roof" usually differ.
 
-We have no commissioned salespeople. The person who looks at your roof is the person who tells you what it needs.
+We offer workmanship warranties of 5, 10 and 15 years, and the products that carry lifetime manufacturer warranties come with them. On metal roofs, our workmanship warranties run from 5 up to 15 years.
 
-> Jason was fabulous to work with in replacing my tile roof. He took the initiative to contact my insurance company and work out all the little nuances to get the job accomplished.
-> — Michael E.
+> From the first contact with Jason Fry to the last bit of cleanup at the conclusion of the project, the team is thorough, professional, and exceptionally skilled. Our most recent project involved the full removal and replacement of a concrete barrel tile roof, and the work was completed on schedule, on budget, and with outstanding attention to detail.
+> — Dave N.
 
 ## Questions About Replacing a Roof
 
@@ -72,6 +81,12 @@ We have no commissioned salespeople. The person who looks at your roof is the pe
 Start with what your roof is now and what you want it to look like. A tile roof usually stays tile.
 
 If cedar shake has given out, DaVinci or Brava gets you the same look with less upkeep. Premium asphalt is the practical choice for most homes, and metal suits people who want hidden fasteners.
+
+**Can my old tile go back on?**
+Often, yes. Sound concrete and clay tile can be lifted, set aside and relaid over new underlayment. Tile that hail has broken across the roof is a different story.
+
+**How long does it take?**
+A shingle roof often takes a day or two. Tile takes longer, because every piece is handled by hand.
 
 **Do you handle the insurance side?**
 Yes. Jason works with your insurer from the start of the claim to the finished roof.

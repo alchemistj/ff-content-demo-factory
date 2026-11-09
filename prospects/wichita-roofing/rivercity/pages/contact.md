@@ -2,7 +2,7 @@
 
 # Contact River City Roofing
 
-The fastest way to reach us is to call. Tell us what your roof is doing and we'll set up a free quote.
+The fastest way to reach us is the phone. Call and tell us what your roof is doing, and we'll set up a free quote.
 
 **Buttons:** Call (316) 295-2159 | Get a Free Quote
 
@@ -27,14 +27,14 @@ You don't need to know what's wrong. You just need to tell us what you see.
 
 That's enough for us to get started. We'll look at the roof for ourselves, including the attic if there's a leak, before we write a detailed estimate.
 
-> "His crew showed up when they said they would and were very communicative throughout the whole process! Highly recommend Anthony and his crew!"
+> "We ended up going with River City Roofing as Anthony crawled into the attic and onto the roof and found that our CHIMNEY CHASE was leaking."
 > — Brant C.
 
 ## Call or Use the Form?
 
 Call if you have a leak, storm damage or missing shingles. A phone call is the quickest way to get someone started.
 
-If it's after hours or you'd rather write, use the form to send us your name, phone number and what the roof is doing.
+If it's after hours or you'd rather write, use the form to send us your name, phone number and what the roof is doing, so we can call you back.
 
 > "Anthony is very responsive to calls and text messages. He is great to work with."
 > — Theresa E.
@@ -43,6 +43,12 @@ If it's after hours or you'd rather write, use the form to send us your name, ph
 
 **Is the quote free?**
 Yes. Call (316) 295-2159 for a free quote.
+
+**Is there an email address?**
+We don't list one. Call (316) 295-2159, or use the form.
+
+**What happens after I call?**
+We set up a time to look at the roof. After we've seen it, you get a detailed estimate for what it needs.
 
 **Do you work outside Wichita?**
 We work in Wichita.

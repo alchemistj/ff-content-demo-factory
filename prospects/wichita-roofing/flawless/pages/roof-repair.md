@@ -10,7 +10,7 @@ A stain on the ceiling, a drip in a storm or a few shingles on the lawn means th
 
 The first job is to stop the water getting worse, before anyone talks about the repair. Wet insulation, a stained ceiling and a soaked closet wall all cost more than the roof fix.
 
-If a storm is coming, call me. A tarp over the damaged area holds until the real repair can be done. I've come out the same day and tarped a leak for free before a storm hit.
+If a storm is coming, call and say so first. A tarp over the damaged area holds until the real repair can be done, and getting the water stopped comes before anyone prices anything.
 
 > "Ravi was out same day and offered to patch it for free with the incoming storm so the damage wouldn’t get worse! … I would’ve been happy to pay for the tarp job but he insisted."
 > — Jordan T.
@@ -29,13 +29,17 @@ Most leaks start in the same handful of places:
 
 That's why we get on the roof. A leak you can only see from inside the house has to be traced from outside.
 
-## Storm Damage and Your Insurance
+## Claim It or Just Fix It
 
-Wind and hail damage can be covered by your homeowner's policy, which can change a repair from your expense to a claim.
+After a storm, the question isn't only what's broken. It's whether the damage is worth an insurance claim at all.
 
-We start with the free inspection. If the storm did the damage, we file the claim with you and work with the adjuster. If the damage is small enough that you'd rather fix it than file, we'll tell you what a repair would be so you can decide.
+A claim pays for storm damage above your deductible. If a few shingles blew off and the repair costs less than your deductible, filing gets you nothing back, and paying for the repair yourself is simpler.
 
-Having the damage documented matters either way. Damage written down soon after the storm is better evidence than a memory of a noise in the night.
+If the hail or wind damage runs across the roof, the math changes. That's when a claim can cover far more than a patch, and often a whole new roof.
+
+We'll tell you which side of that line your roof is on after the inspection, with the repair price in hand, so you decide with real numbers. If you file, we file it with you and work with the adjuster.
+
+Have the damage looked at soon either way. Damage written down right after the storm is better evidence than a memory of a noise in the night.
 
 ## Repair or Replace
 
@@ -47,9 +51,6 @@ Replacement makes sense when the damage is spread across the roof, the shingles 
 
 If a repair is all you need, that's what I'll tell you. I'd rather fix a roof right than sell a roof you don't need.
 
-> "Very courteous and professional.. came and jnspected my roof and got it fixed in least then a week!!!!"
-> — Dhaval B.
-
 ## What Happens When You Call
 
 1. **You call.** Tell me what you're seeing: where the stain is, when it showed up, whether a storm came through.
@@ -60,7 +61,10 @@ If a repair is all you need, that's what I'll tell you. I'd rather fix a roof ri
 
 How long a repair takes depends on what's wrong.
 
-A pipe boot is a quick fix. A damaged valley or a section of rotted decking takes longer. One homeowner had the whole job inspected and fixed in under a week, but I won't promise you a date before I've seen the roof.
+A pipe boot is a quick fix. A damaged valley or a section of rotted decking takes longer. Once I've been on the roof, I'll tell you what it needs and when we can do it, so a small leak doesn't sit waiting for weeks.
+
+> "Very courteous and professional.. came and jnspected my roof and got it fixed in least then a week!!!!"
+> — Dhaval B.
 
 ## Before You Call
 
