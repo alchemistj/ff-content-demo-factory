@@ -12,6 +12,9 @@
 10. **Derby address** (BBB only). Live office? Left off.
 11. **928 S Broadway.** Walk-ins welcome? Do the Google hours match Monday to Friday, 10 AM to 6 PM?
 12. **Commercial roofing.** How much of the work, and which project types should we name?
-13. **Roof schedules.** The copy says many roofs are finished in a single day (from reviews, track record only). Typical timing for a house? Is the same-day free leak tarp standard or a one-off?
+13. **Roof schedules.** The copy says "we have finished whole roofs in a single day" (track record from reviews, not a promise). Typical timing for a house? Is the same-day free leak tarp standard or a one-off?
 14. **$200 referral reward.** Current, and may it go on the site?
 15. **Photos** of finished Wichita roofs, and the logo.
+16. **Ravi on the job.** The copy says Ravi works on jobs himself and has met adjusters at the house (from reviews). Is that true of most jobs today?
+17. **Hutchinson.** A review says "Licensed in Hutchinson and Wichita areas." List Hutchinson? Any license to show?
+18. **"Locally owned."** The copy says "Based in Wichita" instead. May we say locally owned?

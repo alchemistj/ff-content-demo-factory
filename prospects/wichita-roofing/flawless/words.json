@@ -147,8 +147,7 @@
           "type": "prose",
           "heading": "Leaks and Storm Damage",
           "body": [
-            "**A leak, lifted shingles or hail damage gets a free inspection and a straight answer: repair or replace.** Ravi has come out the same day to tarp a leak with a storm on the way.",
-            "More on our [roof repair](/roof-repair-wichita-ks/) page."
+            "**A leak, lifted shingles or hail damage gets a free inspection and a straight answer: repair or replace.** See our [roof repair](/roof-repair-wichita-ks/) page."
           ]
         },
         {
@@ -179,10 +178,6 @@
             {
               "q": "Do you work with my insurance company?",
               "a": "Yes. After hail or storm damage, we file your claim and work with your adjuster."
-            },
-            {
-              "q": "Do you do more than roofs?",
-              "a": "Yes. We put on vinyl, fiber cement and wood siding, install and repair gutters and gutter guards, and paint inside and out."
             },
             {
               "q": "Who will I work with?",
@@ -412,6 +407,7 @@
           "heading": "Wind, Hail and Storm Damage",
           "body": [
             "**Wind and hail can damage a roof long before water shows inside.** We inspect for free and repair what is damaged.",
+            "Lifted shingles, cracked shingles and dented vents are easy to miss from the ground.",
             "When the damage calls for an insurance claim, we file it and work with your adjuster, the same way we do on a [roof replacement](/roof-replacement-wichita-ks/)."
           ]
         },
@@ -465,7 +461,7 @@
           "heading": "Catch It Before It Leaks",
           "body": [
             "**A free roof inspection finds small problems before they reach your ceiling.** Call us for a checkup after a storm, or any time your roof looks tired.",
-            "A small repair now costs less than a stained ceiling later."
+            "A small repair now costs less than a stained ceiling, wet insulation and a bigger repair later."
           ]
         },
         {
@@ -577,9 +573,9 @@
   "strategy": {
     "whyHeading": "Why we built this site",
     "why": [
-      "Your Google reviews describe a roofer who inspects the roof for free, files the claim, meets the adjuster and puts a new roof on in a day, with a free upgrade to impact-resistant shingles. Ravi is named in 11 of them.",
-      "Your site shows none of that. The top of your homepage says \"Roofing Redefined for Modern Living\", with no town and no roof work named. The \"Services\" item in your menu goes nowhere, and replacement and repair share one page headed \"Roofing\".",
-      "So we built a site that says roofing company in Wichita at the top, gives roof replacement and roof repair their own pages, and puts your customers' words beside the work they describe."
+      "Your Google reviews describe a roofer who inspects for free, files the claim, meets the adjuster and puts a new roof on in a day, with free impact-resistant shingles. Ravi is named in 11 of them.",
+      "Your site shows none of that. The top of your homepage says \"Roofing Redefined for Modern Living\", with no town and no roof work named, and the \"Services\" item in your menu goes nowhere.",
+      "So we built a site that says roofing company in Wichita at the top, gives replacement and repair their own pages, and puts your customers' words beside their work."
     ],
     "cardsHeading": "Be the Roofing Company People Find on Google",
     "cardsIntro": "Each card is one page: what your site does today and what we changed.",
@@ -591,12 +587,12 @@
         "problems": [
           "The top of the page says \"Roofing Redefined for Modern Living\", so Google can't tell you're a roofing company in Wichita.",
           "Your menu's \"Services\" item goes nowhere, so a visitor looking for your work hits a dead end.",
-          "No customer reviews near the top, so a first-time visitor sees no proof."
+          "No customer reviews near the top, so a new visitor sees no proof."
         ],
         "fixes": [
           "A headline that says roofing company in Wichita, KS, right at the top.",
-          "A menu where every item opens a real page, and all eight of your services listed.",
-          "A review from a happy customer right under the top of the page."
+          "A menu where every item opens a real page, and all eight services listed.",
+          "A customer review right under the top of the page."
         ],
         "alsoAdd": "Every page set up behind the scenes so Google and AI tools like ChatGPT know exactly what you do, where you work, and what your customers say."
       },
@@ -606,24 +602,24 @@
         "why": "New roofs are most of your reviews, and they share one page called \"Roofing\".",
         "problems": [
           "Replacement, repair and inspection sit on one page headed only \"Roofing\", so Google has no page to rank for roof replacement in Wichita.",
-          "Its \"Our Testimonials\" heading shows no reviews under it, so your best proof is missing next to the work."
+          "Its \"Our Testimonials\" heading shows no reviews under it."
         ],
         "fixes": [
           "Its own page for roof replacement in Wichita, KS: the claim, the free upgrade and roof day.",
-          "Four reviews on the claim, the upgrades, a next-day roof and the cleanup, each beside its point."
+          "Four reviews, each beside the point it proves: the claim, the upgrades, a next-day roof and the cleanup."
         ],
         "alsoAdd": "Call and form tracking that shows which pages and towns your leads come from."
       },
       {
         "route": "/roof-repair-wichita-ks/",
         "title": "Roof Repair",
-        "why": "A leaking roof is a call you answer fast, and repair has no page of its own.",
+        "why": "A leaking roof is a call you answer fast, and repair has no page.",
         "problems": [
           "Repair is one line on the \"Roofing\" page, so someone searching roof repair in Wichita finds nothing built for them."
         ],
         "fixes": [
           "A page for roof repair in Wichita, KS: leaks, storm damage and the free inspection.",
-          "The same-day tarp review right under the top of the page."
+          "The same-day tarp review near the top."
         ],
         "alsoAdd": "A check of what your competitors offer, so services you didn’t think to mention still get their own pages."
       },
@@ -632,7 +628,7 @@
         "title": "Contact",
         "why": "Where a ready customer reaches you.",
         "problems": [
-          "The \"Start A Project\" button on your contact page goes nowhere, so a ready customer's tap does nothing."
+          "The \"Start A Project\" button on your contact page goes nowhere."
         ],
         "fixes": [
           "One tap to call at the top of the page, with your hours, address and email.",
@@ -668,7 +664,7 @@
         "status": "Needs work"
       },
       {
-        "label": "No roof price pasted onto painting or gutter pages",
+        "label": "No roof price on painting or gutter pages",
         "status": "Needs work"
       },
       {
