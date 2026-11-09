@@ -14,19 +14,19 @@ import { dirname, join, resolve, sep } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 
 const EXPECTED_MANIFEST =
-  "f4b3a479f127495cb5999df0c3e82f93a28622c9d2a2f1366eb51c9f21d5d005";
+  "6aeb813bc9eefb21cc37f05416ea1e312a0089cc042514368ec299f2621e938f";
 const EXPECTED_GUIDE_SHA256 = Object.freeze({
-  general: "64dff9e21c2f60480dfd5a4b2e43df2667396b47c8106dbed0a51e3fdc0811de",
+  general: "bb134484c1c6adc71487baa8d2c27014c565d815c8b378661c0b4d1529254270",
   service: "92acecf52fd02adb971e3c88094a26f2e2646f9394771cb0f00e43a6b909d7d9",
-  homepage: "417debb94ee2b7db33015dca0e3fdc28496d0957af8c76dd6e7d20772a7f2f0e",
+  homepage: "ef37fa2f56240781fe3821c7127bbf90baff6714ae99cada05444cf610513337",
   contact: "5613e7bb37ae021966da52a59cb0e264bfcec652776debee7bccf277cb3d336d",
   headerFooter: "69f38eb9523805ee5956d6f22f5c53644b4823fe7caac8d2652a37d054bc71ea",
-  readme: "a667ba03bf628b19a089676f19988a3ad74be13a4300ee7ad341d67fa203ccf1",
+  readme: "e7b69ad13318f108059b5705f8074e070554af457e70a9177089f7c1bd33d22c",
 });
 const EXPECTED_SET_HASH = Object.freeze({
-  writer1: "d8397c093b07bc089182dea54a9bbeb40a4d711a542d6d28d21af2cc3047ecf5",
-  writer2: "f4390acba829e3648c7d60afbf2a81d99f3b932a6f8b5acb924e68aad9817024",
-  writer3: "63aa6ef5b23a7ae8a856866346c76f049f663feab7d3dbfeb222ce53c321e0ec",
+  writer1: "bc77bb3ab28a2382494ae20a55f978c95686a36c7f3f79603b879498b486e62d",
+  writer2: "968b2d607fbde4785d1f771c45d196717ac29e2236272933472f0f3a4c0ce381",
+  writer3: "1b12f4e344ba412387129bb9ea14ae5b89431eaa705ffeb3d3e68cf682a9728e",
 });
 
 const scriptDir = dirname(fileURLToPath(import.meta.url));

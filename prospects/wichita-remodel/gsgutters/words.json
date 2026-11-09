@@ -66,7 +66,7 @@
     {
       "name": "Interior and Exterior Painting",
       "route": null,
-      "blurb": "Walls, trim, doors and soffit painted for a house that looks new."
+      "blurb": "Fresh paint inside and out, so the house looks cared for."
     },
     {
       "name": "Deck Installation and Repair",
@@ -142,7 +142,7 @@
           "type": "split",
           "heading": "Fast Work, Fair Prices, a Clean Finish",
           "body": [
-            "We have replaced all the hail-damaged gutters on a house in a single visit, and finished siding, paint, five windows, a garage door and new gutters on one home in a couple of weeks.",
+            "We plan your job so it moves along instead of dragging on, whether it is gutters alone or the whole outside of the house.",
             "You get a fair price on a free estimate, and we clean up before we go."
           ],
           "image": {
@@ -161,7 +161,7 @@
           "type": "prose",
           "heading": "On Time, and You Hear From Us",
           "body": [
-            "We show up on time for your estimate and start work on the day we set."
+            "You should never have to chase us. We tell you when we are coming and keep you posted from estimate to finish."
           ]
         },
         {
@@ -236,13 +236,13 @@
           "type": "split",
           "heading": "New Gutters for Your Whole House",
           "body": [
-            "We hang new gutters and downspouts along the whole roof edge, so rain leaves your roof in the gutters instead of over the edge and down your walls. We have done a whole house and its detached garage in one visit.",
+            "We hang new gutters and downspouts along the whole roof edge, so rain leaves your roof in the gutters instead of over the edge and down your walls. We can do the house and a detached garage as one job.",
             "You get one crew from the estimate to the last downspout, and we make sure you are happy with the job before we leave."
           ],
           "list": [
-            "**Seamless guttering**, like the full set we hung after a hailstorm",
+            "**Seamless guttering** that runs the length of the wall",
             "**Downspouts** placed where the water needs to go",
-            "**Detached garages** done with the house"
+            "**Detached garages** done as part of the same job"
           ],
           "image": {
             "slot": "gutters-install",
@@ -260,7 +260,7 @@
           "type": "split",
           "heading": "Seamless Gutters After a Hailstorm",
           "body": [
-            "Hail dents and splits gutters, and a bent run spills water where it should not. **We replace a hail-damaged set of gutters fast, so your house is not left open to the next storm.** We have replaced all the guttering on a hail-damaged house in just over an hour, and added to that job after it was already scheduled.",
+            "Hail dents and splits gutters, and a bent run spills water where it should not. **We replace a hail-damaged set of gutters fast, so your house is not left open to the next storm.** If you think of something to add, tell us and we will work it in.",
             "Seamless gutters run the length of the wall without joints along the way, so there are fewer places for a leak to start."
           ],
           "image": {
@@ -280,7 +280,7 @@
           "heading": "Downspouts Where the Water Needs to Go",
           "body": [
             "A gutter only works when its downspouts carry the water away from the house. We place each downspout where the water should go.",
-            "When a house turns out to need one more, we add it on the spot instead of sending you a second estimate."
+            "When a house turns out to need one more, we tell you and add it."
           ]
         },
         {
@@ -315,19 +315,19 @@
           "items": [
             {
               "q": "Do you install seamless gutters?",
-              "a": "Yes. We hang seamless guttering, like the full set we put up after a hailstorm."
+              "a": "Yes. We hang seamless guttering."
             },
             {
               "q": "What if my gutters are damaged by hail?",
-              "a": "Call us. We have replaced all the guttering on a hail-damaged house."
+              "a": "Call us. We replace hail-damaged guttering."
             },
             {
               "q": "Can you put gutters on my detached garage too?",
-              "a": "Yes. We have hung gutters on a whole house and its detached garage together."
+              "a": "Yes. We can hang gutters on the main house and on a garage in one job."
             },
             {
               "q": "Can I add to the job after it is scheduled?",
-              "a": "Yes. We have added work to a job after it was scheduled, and added a downspout on the spot when a house needed one."
+              "a": "Yes. Tell us what you would like to add and we will work it in, including another downspout if the house needs one."
             },
             {
               "q": "Do you also repair and clean gutters?",
@@ -384,7 +384,7 @@
           "type": "split",
           "heading": "New Siding and Trim",
           "body": [
-            "New siding and trim change how your whole house looks, and they keep water out of your walls. We have replaced most of a house's siding and trim in a single project.",
+            "New siding and trim change how your whole house looks, and they keep water out of your walls. We replace siding and trim together as one project.",
             "We install the new siding, set fresh trim around it, and clean up the job site before we leave."
           ],
           "image": {
@@ -420,7 +420,7 @@
           "heading": "One Crew, One Estimate",
           "body": [
             "When new siding is part of a bigger list, such as paint, windows or gutters, you do not have to line up three companies. You get one free estimate and one crew, and we keep you posted until the job is done.",
-            "We have replaced siding and trim, painted the house, and put in windows, a garage door and gutters on one home in a couple of weeks."
+            "One estimate covers the whole list, so you see the full cost up front."
           ],
           "image": {
             "slot": "siding-finished",
@@ -433,7 +433,7 @@
           "type": "prose",
           "heading": "A Fair Price on a Big Job",
           "body": [
-            "Siding is one of the biggest jobs on a house, and it gets the same fair pricing as a gutter cleaning. On one siding project we found places to save the owners money along the way.",
+            "Siding is one of the biggest jobs on a house, and it gets the same fair pricing as a gutter cleaning. We price the job your house needs and not more.",
             "Your estimate is free, and the price is for the work you asked for. Veterans and retirees save 10%."
           ]
         },
@@ -469,7 +469,7 @@
             },
             {
               "q": "How long does a siding job take?",
-              "a": "It depends on the size of the house. We finished one whole-house project, with siding, trim, paint, windows and gutters, in about a couple of weeks."
+              "a": "It depends on the size of the house and what else is in the project. We give you the schedule at your estimate."
             },
             {
               "q": "Are you insured?",

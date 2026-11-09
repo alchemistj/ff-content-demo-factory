@@ -42,7 +42,7 @@ Greene Planet’s `/springfield/` redirects to `/`. That root page is the Spring
 Use judgment on order and format. Cover the jobs that matter:
 
 - Identity: who, what, whom they help, where
-- Services: a scannable section showing the **full** confirmed service list (the package's `services`), with built pages linked and the rest as plain cards with a short benefit line. Window Dudes' "All Window, Door & Glass Services" is the model. Do not invent routes so every card can link.
+- Services: every confirmed service appears. For a business with several main services (an exterior remodeler, a remodel contractor, an HVAC company), give each main service its own short section: the homeowner's moment, why it happens, what we do, a link if it has a page, and the review that proves it. Minor services go in a line or a list. Model: [Evolve Exteriors homepage](../../examples/approved-copy/evolve-exteriors/homepage.md), and Greene Planet's per-service sections. A single-trade business can use a card list like Window Dudes' "All Window, Door & Glass Services". Do not invent routes so every service can link (Josh, 2026-11-09).
 - Differentiation from real evidence — not website-quality claims
 - Confirmed service area
 - Ownership, team, or history only when verified and useful
