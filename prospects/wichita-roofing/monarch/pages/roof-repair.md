@@ -62,7 +62,7 @@ Then he schedules the crew. For a small repair, that can mean a short visit. If 
 
 If hail or wind caused the damage, take photos before anyone patches it. The adjuster needs to see what happened, and a patched roof can hide it.
 
-A small repair and a hail claim are two different jobs. A few lifted shingles is a repair. Hail damage across the roof can be a replacement, and that decision is worth making before you spend money on patches.
+A small repair and a hail claim are separate jobs. A few lifted shingles is a repair. Hail damage across the roof can be a replacement, and that decision is worth making before you spend money on patches.
 
 If your insurance company is involved, we inspect the roof, go to the adjuster's inspection and talk with them for you. See [roof replacement](/roof-replacement-wichita-ks/) for how that goes.
 
@@ -82,4 +82,4 @@ Move things out from under the leak, catch the drip and take photos of the stain
 
 ## Call About Your Roof
 
-Call (316) 223-3575, or request an estimate. We're open Monday to Saturday, 8 AM to 6 PM.
+Call (316) 223-3575, or request an estimate. Tell us what you're seeing and when it started.

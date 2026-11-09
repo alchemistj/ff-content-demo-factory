@@ -1,0 +1,749 @@
+{
+  "schema": "words-package/v1",
+  "business": {
+    "name": "Diamond Roof & Gutter",
+    "slug": "diamond",
+    "owners": [],
+    "city": "Wichita",
+    "state": "KS",
+    "companyType": "Roofing Company",
+    "phones": [
+      {
+        "label": "Main",
+        "display": "(316) 640-6056",
+        "tel": "+13166406056"
+      }
+    ],
+    "email": null,
+    "hours": null,
+    "address": "801 E Douglas, 2nd Floor, Wichita, KS 67202",
+    "serviceArea": {
+      "summary": "Wichita, Kansas",
+      "towns": [
+        "Wichita"
+      ]
+    }
+  },
+  "trustBar": [
+    "Roofs and Gutters in One Job",
+    "We Work With Your Adjuster",
+    "Clean Yard Every Day",
+    "Based in Wichita"
+  ],
+  "services": [
+    {
+      "name": "Roof Replacement",
+      "route": "/roof-replacement-wichita-ks/",
+      "blurb": "New roofs from the first look to the daily cleanup, with brand and color choices walked through."
+    },
+    {
+      "name": "Roof Repair",
+      "route": "/roof-repair-wichita-ks/",
+      "blurb": "Wind-blown shingles and leaks traced to where the water gets in, with an honest repair-or-replace answer."
+    },
+    {
+      "name": "Gutters and Downspouts",
+      "route": null,
+      "blurb": "Installation, repair and drainage fixes, done in the same job as your roof when it makes sense."
+    }
+  ],
+  "pages": [
+    {
+      "role": "home",
+      "route": "/home/",
+      "navLabel": "Home",
+      "keyword": "roofing company Wichita KS",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Roofs and gutters in Wichita",
+        "h1": "Roofing Company in Wichita, KS — Diamond Roof & Gutter",
+        "sub": "We replace and repair roofs and gutters in Wichita, and when insurance is part of the job, Stacia works with your adjuster alongside you. Call or request an estimate, and we'll come look at your roof.",
+        "primaryCta": {
+          "label": "Call (316) 640-6056",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Request an Estimate",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "home-hero",
+          "alt": "Wichita house with a new asphalt shingle roof and clean gutters under a clear sky",
+          "brief": "two-story house with a freshly installed shingle roof and new gutters, house on the right half of the frame, front lawn leading off to the left, calm clear sky behind the text side, no readable text, no people"
+        }
+      },
+      "sections": [
+        {
+          "type": "review",
+          "quote": "Looking for a company that not only just does the roofing portion, but also will come out and stand side by side with the insurance adjuster...look no further. … I'm a hard person to impress as there are so many shady contractors out there, but they have surpassed my expectations and made sure the insurance wasn't trying to pull the wool over my eyes.",
+          "name": "Eric J."
+        },
+        {
+          "type": "prose",
+          "heading": "The Roof, the Gutters and the Adjuster in One Call",
+          "body": [
+            "A storm goes through, or a stain shows up on the ceiling, and you're suddenly managing three things at once: the roof, the gutters that took the same beating, and an insurance company you'd rather not argue with.",
+            "Most people end up playing messenger between a roofer, a gutter crew and an adjuster. We'd rather you didn't.",
+            "Roof replacement, roof repair and gutters are all one job here. Stacia is the person you deal with: she looks at your roof, explains what she finds, and works with your insurance company when there's a claim.",
+            "You get one person to call and one crew on the property."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Diamond Roof & Gutter was the best choice for replacing my roof. They are a full service roofing company. From examining the damaged roof to working directly with my insurance adjuster to the installation of the new roof and guttering I couldn't have been in better hands.",
+          "name": "Margaret W."
+        },
+        {
+          "type": "prose",
+          "heading": "When Insurance Is Part of Your Roof",
+          "body": [
+            "The adjuster comes once, walks around, takes photos and leaves. A letter follows. If you've never been through a roof claim, it's hard to know whether what you were offered matches what's on your roof.",
+            "That's the gap a roofer can fill. We spend our days on roofs, so we know what storm damage looks like and what a replacement really involves.",
+            "Stacia is at the adjuster's visit with you and goes through the paperwork with you afterward. Whether to file is your decision, and what gets paid is your insurance company's. We can't promise an outcome, and nobody honest can.",
+            "What we can do is make sure the person deciding has seen your whole roof."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Stacia was the most professional contractor I have worked with in a very long time. … Problems with the insurance company would not have been settled were it not for her calm, knowledge, and experience!",
+          "name": "Michael H."
+        },
+        {
+          "type": "prose",
+          "heading": "Roof Replacement",
+          "body": [
+            "Some roofs are finished. Shingles curl or crack across several slopes, bare patches show, granules pile up at the bottom of the downspouts, or the leaks have moved from one spot to two.",
+            "At that point a patch only buys you a season. A replacement is the honest fix, and it's the job we do most.",
+            "Stacia helps you choose the brand and color, so the new roof suits the house and the street. If your gutters are worn or damaged, we replace them in the same job."
+          ],
+          "link": {
+            "label": "See roof replacement →",
+            "route": "/roof-replacement-wichita-ks/"
+          }
+        },
+        {
+          "type": "prose",
+          "heading": "Roof Repair",
+          "body": [
+            "Shingles in the yard after a windy night, or a leak that only shows up in heavy rain, doesn't always mean a new roof. Sometimes it's a few shingles, a cracked pipe boot or flashing that has let go.",
+            "We look first and tell you straight whether a repair will hold or whether you're paying to patch a roof that's past it."
+          ],
+          "link": {
+            "label": "See roof repair →",
+            "route": "/roof-repair-wichita-ks/"
+          }
+        },
+        {
+          "type": "prose",
+          "heading": "Gutters and Downspouts",
+          "body": [
+            "Gutters get ignored until they overflow at the edge of the roof, sag away from the house or dump water next to the foundation.",
+            "Water that doesn't leave the roof edge soaks the fascia behind it and the soil under it. Gutters that pull away usually mean the fasteners or the board behind them have given out.",
+            "We install gutters, repair them and fix drainage problems. When a roof is being replaced, doing the gutters in the same job means one crew, one cleanup and a matching edge along the whole house."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "We had an excellent experience with Diamond Roof and Gutter. Stacia supported us through the entire experience from her initial review of our roof, engaging with the insurance company and leading us through the process every step of the way including a gorgeous roof, new gutters and additional work on the home.",
+          "name": "Melissa F."
+        },
+        {
+          "type": "prose",
+          "heading": "A Crew That Leaves the Yard Clean",
+          "body": [
+            "Roofing throws off nails, torn shingles and debris, and most of it lands in your yard and driveway.",
+            "We clean up at the end of every work day, not only at the end of the job. It matters most with kids, pets and tires."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Awesome staff. Knowledgeable, honest and they clean up after themselves better than any other contractors I've ever dealt with.",
+          "name": "Robyn N."
+        },
+        {
+          "type": "prose",
+          "heading": "Homes, Rentals and Home Sales",
+          "body": [
+            "Not every roof is on the house you live in. We've worked on homeowners' own roofs, on rental and investment properties, and on roofs that had to be done during a home sale.",
+            "A rental needs a roof done quickly and without drama. A sale needs it finished cleanly so nothing slips in the transaction. In both cases the point is the same: one person who answers the phone."
+          ]
+        },
+        {
+          "type": "steps",
+          "heading": "How a Job Goes",
+          "items": [
+            {
+              "title": "You call.",
+              "text": "Tell us what you're seeing: a leak, missing shingles, storm damage, worn gutters."
+            },
+            {
+              "title": "We look.",
+              "text": "Stacia or Mike comes out, goes over the roof and gives you an estimate."
+            },
+            {
+              "title": "Insurance, if it's involved.",
+              "text": "Stacia meets your adjuster and works through the paperwork with you."
+            },
+            {
+              "title": "You choose.",
+              "text": "Brand, color and, if the gutters need it, the gutters too."
+            },
+            {
+              "title": "The crew does the work.",
+              "text": "We keep you updated on the schedule and clean up each day."
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Where We Are",
+          "body": [
+            "We're based in Wichita, Kansas, at 801 E Douglas, 2nd Floor. Please call before you visit so we can make sure someone is there.",
+            "Call (316) 640-6056 for a roof, a repair, or gutters, anywhere in Wichita."
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Questions Before You Call",
+          "items": [
+            {
+              "q": "Do I have to file an insurance claim before you look at my roof?",
+              "a": "No. You can call about a roof or gutter problem whether or not insurance is involved. Whether to file is your decision, and we'll tell you what we see."
+            },
+            {
+              "q": "Will my insurance pay for a new roof?",
+              "a": "We can't say. Your policy and your insurance company decide that. What we can do is be at the adjuster's visit and make sure the damage on your roof is seen."
+            },
+            {
+              "q": "How do I know if I need a repair or a whole new roof?",
+              "a": "Damage in one place on an otherwise sound roof is a repair. Damage across several slopes, or a roof that keeps leaking after repairs, points to replacement. We'll tell you which one you have."
+            },
+            {
+              "q": "Can you do the roof and the gutters together?",
+              "a": "Yes. Doing both in one job means one crew and one cleanup."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Call Diamond Roof & Gutter",
+          "text": "Call (316) 640-6056, or request an estimate, and we'll set up a time to look at your roof."
+        }
+      ]
+    },
+    {
+      "role": "service",
+      "route": "/roof-replacement-wichita-ks/",
+      "navLabel": "Roof Replacement",
+      "keyword": "roof replacement Wichita KS",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Roof replacement in Wichita",
+        "h1": "Roof Replacement in Wichita, KS — Diamond Roof & Gutter",
+        "sub": "A new roof is a big job, and you're trusting a crew with the top of your house. We handle it from the first look at your roof through the cleanup at the end of each day. Call to set up a time for an estimate.",
+        "primaryCta": {
+          "label": "Call (316) 640-6056",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Request an Estimate",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "replacement-hero",
+          "alt": "Wichita home with a freshly replaced roof and new gutters",
+          "brief": "ranch-style house with a freshly replaced shingle roof and new gutters, house on the right, lawn leading off to the left, calm sky behind the text side, no readable text, no people"
+        }
+      },
+      "sections": [
+        {
+          "type": "prose",
+          "heading": "Is It Time for a New Roof?",
+          "body": [
+            "A roof wears out a little at a time. By the time it leaks, the damage underneath has usually been going on for a while.",
+            "The signs are on the surface. Shingles curl at the edges or crack, bare patches show where the granules have worn off, and the gutters fill with grit from the shingles. Leaks that were one spot become two.",
+            "A roof that has been patched several times, or that took hail or wind damage across more than one slope, is usually past repairing. Patching a worn roof only buys you a season.",
+            "Not every leak means a new roof, though. If the damage is in one place and the rest is sound, we'll say so and point you to [roof repair](/roof-repair-wichita-ks/)."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "After a Storm: the Adjuster and the Paperwork",
+          "body": [
+            "Storm damage turns a roofing job into an insurance job. Someone has to document what happened, meet the adjuster and keep the paperwork moving.",
+            "Stacia does that with you. She looks at the roof first, is there when your adjuster comes, and goes through the paperwork with you.",
+            "We can't say what your insurance company will pay. We can make sure the whole roof has been looked at, and that you aren't explaining roofing to an adjuster by yourself."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "I was supported from her first inspection and throughout the tedious insurance processes. … She guided me through the materials choices and kept me updated as to timelines which were always met.",
+          "name": "Anastasia V."
+        },
+        {
+          "type": "prose",
+          "heading": "Choosing the Brand and the Color",
+          "body": [
+            "The shingle you pick decides how the house looks for the next couple of decades, and it's easy to get lost between brands, lines and colors.",
+            "A few things narrow it down. Darker colors show off a roofline but run hotter in a Kansas summer.",
+            "Heavier architectural shingles cost more than basic ones and tend to wear better. Your neighbors' roofs and your siding matter too.",
+            "Stacia walks you through the options and helps you land on one that fits your house and your budget, so you aren't choosing from a sample board alone."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Quick to inspect and schedule. Assistance with brand and color choice made it possible for us to choose the best product and look for our home.",
+          "name": "Debi S."
+        },
+        {
+          "type": "prose",
+          "heading": "A Roof During a Home Sale, or on a Rental",
+          "body": [
+            "A failing roof can stall a sale. A buyer's inspector flags it, and the roof becomes the thing everyone is waiting on.",
+            "We've replaced roofs while a house was being sold, and on rental properties where the owner wants the job done and the tenants left alone. In both cases the job has to be finished, clean and on time."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Stacia was very professional and timely with everything. The crew was so clean and tidy and made sure it all looked great so there would be no hiccups during the transaction!",
+          "name": "Roann G."
+        },
+        {
+          "type": "prose",
+          "heading": "Roof and Gutters in One Job",
+          "body": [
+            "Your gutters hang off the edge of the roof you're replacing. New roof edge, old gutters is how you end up paying a second crew to come back.",
+            "If your gutters are worn, bent or pulling away, we replace them while we're there. You get one crew, one schedule and one cleanup, and the roofline looks finished instead of mismatched."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Diamond Roof and Gutter did a great job on our new roof and gutters. … They treated our property as it was their own by cleaning up all trash and nails at the end of each work day.",
+          "name": "Jacob L."
+        },
+        {
+          "type": "prose",
+          "heading": "Weather and Your Schedule",
+          "body": [
+            "Roofing depends on the sky. Rain and high wind stop the work, and a roof that's torn off has to be dried in before the weather turns.",
+            "Size, pitch and what the crew finds under the old shingles also change how long a roof takes. A typical shingle roof is a matter of a day or a few, not weeks.",
+            "Our job is to keep you informed. When the schedule moves, you hear it from us. And when you're up against a deadline, tell us on the first call."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "We were on a crazy tight timeline and Stacia got the job done early!",
+          "name": "Jen K."
+        },
+        {
+          "type": "steps",
+          "heading": "How a Replacement Goes",
+          "items": [
+            {
+              "title": "We look at your roof.",
+              "text": "Stacia or Mike goes over the roof and gives you an estimate."
+            },
+            {
+              "title": "Insurance, if there's a claim.",
+              "text": "Stacia meets your adjuster and helps with the paperwork."
+            },
+            {
+              "title": "You choose the materials.",
+              "text": "Brand, color and gutters if they need replacing."
+            },
+            {
+              "title": "The crew installs.",
+              "text": "We tell you when we're coming and keep you updated on the schedule."
+            },
+            {
+              "title": "We clean up.",
+              "text": "Trash and nails are picked up at the end of each work day, not left for the next."
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Where to Start",
+          "body": [
+            "Call (316) 640-6056. Tell us your address and what you're seeing, and we'll set up a time to look."
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Questions About Roof Replacement",
+          "items": [
+            {
+              "q": "How long does a roof replacement take?",
+              "a": "It depends on the size and pitch of the roof, the weather and what's found under the old shingles. We give you the schedule as the job is planned and keep you posted as it moves."
+            },
+            {
+              "q": "Will my insurance cover a new roof?",
+              "a": "That depends on your policy and your insurance company, and we can't promise it. If there's a claim, Stacia works with your adjuster and goes through the paperwork with you."
+            },
+            {
+              "q": "Can you replace my gutters at the same time?",
+              "a": "Yes. Gutters are done in the same job as the roof when they need it."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Ready for a Look at Your Roof?",
+          "text": "Call (316) 640-6056, or request an estimate, and we'll set up a time to come out."
+        }
+      ]
+    },
+    {
+      "role": "service",
+      "route": "/roof-repair-wichita-ks/",
+      "navLabel": "Roof Repair",
+      "keyword": "roof repair Wichita KS",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Roof repair in Wichita",
+        "h1": "Roof Repair in Wichita, KS — Diamond Roof & Gutter",
+        "sub": "Shingles in the yard, a stain on the ceiling, or damage you can't judge from the ground. We'll look at the roof and tell you whether it's a repair or something bigger. Call to set up a time for an estimate.",
+        "primaryCta": {
+          "label": "Call (316) 640-6056",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Request an Estimate",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "repair-hero",
+          "alt": "Shingle roof with a freshly repaired patch beside a chimney",
+          "brief": "shingle roof with a neatly repaired section beside a brick chimney, roof on the right, calm sky on the left behind the text side, no readable text, no people, no tools"
+        }
+      },
+      "sections": [
+        {
+          "type": "prose",
+          "heading": "Shingles Missing After the Wind",
+          "body": [
+            "You come home after a windy night and there are shingles in the yard, or a bare patch shows from the street. A missing shingle exposes the layer underneath, and that layer was never meant to face rain and sun.",
+            "Wind gets under the edge of a shingle whose seal has aged and lifts it. Once one goes, the ones beside it are easier to lift.",
+            "A repair here is usually small, and it's worth doing before the next storm. We replace what blew off and check the shingles around it."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "A Leak Isn't Always Where the Stain Is",
+          "body": [
+            "Water doesn't drip where it gets in. It enters at one spot, runs along the decking or a rafter, and shows up on your ceiling six feet away.",
+            "That's why a patch above the stain so often fails. The usual culprits are flashing around chimneys, vents and walls, cracked pipe boots, and valleys where two slopes meet.",
+            "A bead of caulk can hide bad flashing for a season. It doesn't fix it. A real repair finds where the water gets in and fixes that."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "An Honest Look First",
+          "body": [
+            "A repair estimate is where most people brace for the upsell: a small fix that turns into a full roof.",
+            "We'd rather you trust the estimate. You get an inspection and a price for what the roof needs, and if the answer is a repair, that's the job we quote."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Mike came out to do an inspection. He was on time, communicated well and gave me a great estimate. He walked us through what he saw and didn't try and upsell.",
+          "name": "Dacia T."
+        },
+        {
+          "type": "prose",
+          "heading": "Repair or Replace?",
+          "body": [
+            "A repair makes sense when the damage is in one place and the rest of the roof is sound.",
+            "Replacement makes sense when the trouble is everywhere: shingles curling across several slopes, grit in the gutters, leaks in more than one spot, or a roof that has been patched and keeps leaking.",
+            "We'll tell you which one you have. If it's a replacement, we'll say so plainly and explain why, and you can read how that job goes on our [roof replacement](/roof-replacement-wichita-ks/) page."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Diamond Roofing was honest and up front about repairing our roof and gutters. Their prompt response was so appreciated!",
+          "name": "David G."
+        },
+        {
+          "type": "prose",
+          "heading": "When Time Matters",
+          "body": [
+            "A roof that's leaking right now can't wait for the next available week. Water that gets in keeps soaking insulation and drywall until someone stops it.",
+            "Call us and say it's actively leaking. If a storm caused it, an insurance claim may be part of the repair. Stacia works with your insurance company on the claim."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Stacia is quick to respond and check a roof when time is of the essence and gives an honest evaluation. She works diligently with the client and insurance company to ensure the process moves along smoothly.",
+          "name": "Shannon M."
+        },
+        {
+          "type": "prose",
+          "heading": "Gutters That Overflow, Sag or Pull Away",
+          "body": [
+            "Gutter trouble often looks like a roof problem. Water spills over the edge during a storm, or the gutter hangs loose from the house.",
+            "We repair gutters, fix drainage problems and replace gutters that can't be saved. A gutter that sags is usually pulling on its fasteners or the board behind it, so fixing the real cause matters more than hanging it back up."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Repairs on Rentals and Investment Properties",
+          "body": [
+            "If you own rentals, a leak is a tenant call and a lost evening. You need it fixed and you need to be told what happened.",
+            "We repair roofs on rental and investment properties as well as on homes, and when a roof is beyond repair we'll tell you so."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "We've had nothing but very good experiences with Diamond Roof and Gutter in the last year, both on our own home as well as several investment properties. … All of the staff involved in our repairs and replacements were hard working and prompt.",
+          "name": "Kay J."
+        },
+        {
+          "type": "prose",
+          "heading": "What to Do While You Wait",
+          "body": [
+            "Until someone can get to the roof, a few steps limit the damage:"
+          ],
+          "list": [
+            "Put a bucket under the drip and move furniture and rugs out of the way.",
+            "Take photos of the ceiling, the shingles in the yard, and any damage you can see from the ground. They help if there's a claim.",
+            "Stay off a wet roof. A fall is a bigger problem than a leak."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "When to Call",
+          "body": [
+            "Call as soon as you notice a leak or missing shingles. Small problems cost less the sooner they're looked at."
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Questions About Roof Repair",
+          "items": [
+            {
+              "q": "Do I need a new roof?",
+              "a": "Not necessarily. Damage in one place on an otherwise sound roof is a repair. We'll look and tell you which one you have."
+            },
+            {
+              "q": "Will insurance pay for a repair?",
+              "a": "That depends on your policy and the cause of the damage. If a storm caused it, Stacia can work with your adjuster. We can't promise what an insurance company will pay."
+            },
+            {
+              "q": "Do you repair gutters too?",
+              "a": "Yes, gutters and drainage problems as well as roofs."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Call About Your Roof",
+          "text": "Call (316) 640-6056, or request an estimate, and we'll set up a time to look."
+        }
+      ]
+    },
+    {
+      "role": "contact",
+      "route": "/contact/",
+      "navLabel": "Contact",
+      "keyword": "contact Diamond Roof & Gutter Wichita KS",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Wichita, Kansas",
+        "h1": "Contact Diamond Roof & Gutter",
+        "sub": "Tell us what's going on with your roof or gutters, whether it's storm damage, a leak or shingles in the yard. Call and we'll set up a time to come look.",
+        "primaryCta": {
+          "label": "Call (316) 640-6056",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Request an Estimate",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "contact-hero",
+          "alt": "Wichita home with a new shingle roof and a clear front walk",
+          "brief": "single-story house with a new shingle roof, house on the right, front walk leading off to the left, calm soft sky behind the text side, no readable text, no people"
+        }
+      },
+      "sections": [
+        {
+          "type": "prose",
+          "heading": "Call Us",
+          "body": [
+            "**Phone:** (316) 640-6056. Call about a roof, a repair, gutters or a question.",
+            "When you call, give us your name, your address and what you're seeing, and we'll set up a time to look."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Stacia was great to work with for my new roof! She was very knowledgeable and responsive to all my questions. Highly recommend!!",
+          "name": "Andrea S."
+        },
+        {
+          "type": "prose",
+          "heading": "Where We Are",
+          "body": [
+            "Diamond Roof & Gutter 801 E Douglas, 2nd Floor Wichita, KS 67202",
+            "We work on roofs and gutters in Wichita. Please call before you visit so we can make sure someone is in the office."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "What to Have Ready",
+          "body": [
+            "You don't need much. It helps to know:"
+          ],
+          "list": [
+            "Your address.",
+            "What you're seeing: a leak, missing shingles, sagging or overflowing gutters, or a storm that just came through.",
+            "If you've filed an insurance claim, your claim number and your adjuster's name.",
+            "Any photos you've taken."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "After You Call",
+          "body": [
+            "If there's a claim, Stacia works with your adjuster and goes through the paperwork with you."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Was very impressed how quickly they got to us and did the job!",
+          "name": "Sharde' L."
+        },
+        {
+          "type": "faq",
+          "heading": "Questions Before You Call",
+          "items": [
+            {
+              "q": "Do I need to file a claim first?",
+              "a": "No. Call us first if you like. We'll tell you what we see, and you decide what to do."
+            },
+            {
+              "q": "Do you do repairs or only whole roofs?",
+              "a": "Both, and gutters. See [roof repair](/roof-repair-wichita-ks/) and [roof replacement](/roof-replacement-wichita-ks/)."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "about": "Diamond Roof & Gutter is a Wichita roofing company at 801 E Douglas. We replace and repair roofs, install and repair gutters, and work with your insurance adjuster.",
+    "why": [
+      "Roofs and gutters in one job",
+      "We work with your adjuster",
+      "Daily cleanup of the yard",
+      "Based in Wichita"
+    ]
+  },
+  "strategy": {
+    "whyHeading": "Why we built this site",
+    "why": [
+      "Your Google reviews already make your case: 5.0 stars, with customers naming Stacia and her crews for the roof, the gutters and the insurance adjuster.",
+      "Your website works against all of that. Every phone number and Call button on it dials (781) 739-2688, a Massachusetts number. Your Google profile and the directories list (316) 640-6056, so a homeowner who taps Call on your site never reaches you.",
+      "The site was also returning errors when we checked: the plain address failed three times, and only the www address loaded.",
+      "So we built this site around the work your reviews describe, and every Call button dials the Wichita number."
+    ],
+    "cardsHeading": "Be the Roofing Company People Find on Google",
+    "cardsIntro": "Each card is one page: what your site does today, and what we changed.",
+    "cards": [
+      {
+        "route": "/home/",
+        "title": "Homepage",
+        "why": "The page Google reads to learn who you are and where you work, and the page people call from.",
+        "problems": [
+          "Every Call button and phone number dials (781) 739-2688, a Massachusetts number that isn't on your Google profile, so people tapping Call don't reach you.",
+          "The site was returning errors: the plain address failed three times, and the page only loaded with www.",
+          "The top line says \"Roofing & Gutter Services in Wichita, KS\", not the roofing company in Wichita that people search for.",
+          "None of your reviews appear, and nobody is named as the person to call."
+        ],
+        "fixes": [
+          "Your Wichita number, (316) 640-6056, on every page and every Call button.",
+          "A headline that says roofing company in Wichita, KS, right at the top.",
+          "Real reviews beside the points they prove, with Stacia named as the person who works with you."
+        ],
+        "alsoAdd": "Hourly speed monitoring that keeps your site fast for visitors on phones, and speed is something Google uses to rank you."
+      },
+      {
+        "route": "/roof-replacement-wichita-ks/",
+        "title": "Roof Replacement",
+        "why": "New roofs and storm claims are the heart of your reviews, and they have no page.",
+        "problems": [
+          "Roof replacement is one line on a card with no page, so nobody searching \"roof replacement Wichita KS\" lands on you."
+        ],
+        "fixes": [
+          "A full page for roof replacement in Wichita, KS: the adjuster, brand and color, roof and gutters together, with reviews beside each point."
+        ],
+        "alsoAdd": "Call and form tracking that shows which pages and towns your leads come from."
+      },
+      {
+        "route": "/roof-repair-wichita-ks/",
+        "title": "Roof Repair",
+        "why": "Wind damage and leaks bring calls all year, and they have no page.",
+        "problems": [
+          "Repair is one short card, so nobody searching \"roof repair Wichita KS\" finds a page that answers them."
+        ],
+        "fixes": [
+          "A page for roof repair in Wichita, KS: wind damage, leaks traced to the real cause, and a straight repair-or-replace answer."
+        ],
+        "alsoAdd": "Pages planned from what Google actually shows for each search, so every page targets something people really look for."
+      },
+      {
+        "route": "/contact/",
+        "title": "Contact",
+        "why": "Where a ready customer picks up the phone.",
+        "problems": [
+          "The contact section is the same wrong number, with no email, no form and no hours."
+        ],
+        "fixes": [
+          "Your Wichita number, your address and a short list of what to have ready before you call."
+        ],
+        "alsoAdd": "Every page set up behind the scenes so Google and AI tools like ChatGPT know exactly what you do, where you work, and what your customers say."
+      }
+    ],
+    "reportCardHeading": "What great roofing company websites get right, and how yours measures up.",
+    "reportCard": [
+      {
+        "label": "Every phone number dials your real line",
+        "status": "Missing"
+      },
+      {
+        "label": "Site loads every time",
+        "status": "Needs work"
+      },
+      {
+        "label": "Headline says what you do and where",
+        "status": "Needs work"
+      },
+      {
+        "label": "Each money service has its own page",
+        "status": "Missing"
+      },
+      {
+        "label": "Real reviews shown",
+        "status": "Missing"
+      },
+      {
+        "label": "Real project photos",
+        "status": "Missing"
+      }
+    ],
+    "closing": {
+      "heading": "Want a website like this for your business?",
+      "text": "Your customers already tell people to call you first. Book a strategy call with Fluid Frame and we'll walk you through this demo and plan your new site."
+    }
+  },
+  "onboardingQuestions": [
+    "Which phone is the main line? The site shows (781) 739-2688, Google shows (316) 640-6056, and Facebook shows (316) 640-8413. Why does the site have a 781 number?",
+    "Who is the owner, and what is Stacia's full name and title? Is Mike part of the team, and in what role?",
+    "Which website is yours: diamondroofandgutterks.com or diamondroofandgutter.com? Which Facebook page?",
+    "Years in business and founding year.",
+    "Licence or Kansas roofing registration, insurance, and any manufacturer status (the Owens Corning listing could not be confirmed).",
+    "Warranties, financing, and whether estimates and inspections are free.",
+    "Office hours (Birdeye shows Monday to Friday 9 to 6) and whether there is an email address to publish.",
+    "Service area beyond Wichita.",
+    "Reviews mention painting and deck work. Are those services you want listed?"
+  ]
+}

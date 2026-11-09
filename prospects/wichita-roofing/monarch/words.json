@@ -1,0 +1,758 @@
+{
+  "schema": "words-package/v1",
+  "business": {
+    "name": "Monarch Roofing & Construction",
+    "slug": "monarch",
+    "owners": [],
+    "city": "Wichita",
+    "state": "KS",
+    "companyType": "Roofing Company",
+    "phones": [
+      {
+        "label": "Main",
+        "display": "(316) 223-3575",
+        "tel": "+13162233575"
+      }
+    ],
+    "email": null,
+    "hours": "Monday to Saturday, 8 AM to 6 PM",
+    "address": "200 N Broadway Ave, 6th Floor, Suite 611, Wichita, KS 67202",
+    "serviceArea": {
+      "summary": "Wichita, Kansas",
+      "towns": [
+        "Wichita"
+      ]
+    }
+  },
+  "trustBar": [
+    "Roofs Replaced and Repaired",
+    "Cesar From First Look to Cleanup",
+    "We Go to Your Adjuster's Inspection",
+    "Locally Owned in Wichita"
+  ],
+  "services": [
+    {
+      "name": "Roof Replacement",
+      "route": "/roof-replacement-wichita-ks/",
+      "blurb": "Whole roofs on Wichita houses, with Cesar from the first look to the cleanup. A typical house is often done in a day."
+    },
+    {
+      "name": "Roof Repair",
+      "route": "/roof-repair-wichita-ks/",
+      "blurb": "Blown-off shingles and leaks, traced to where the water really gets in, with an honest repair-or-replace answer."
+    },
+    {
+      "name": "Hail and Wind Damage",
+      "route": null,
+      "blurb": "We inspect the roof, go to the adjuster's inspection and talk with your insurance company."
+    },
+    {
+      "name": "Gutters",
+      "route": null,
+      "blurb": "New gutters in the same job as your new roof when they need replacing."
+    },
+    {
+      "name": "Siding",
+      "route": null,
+      "blurb": "Siding as part of a roof job or as a project of its own."
+    }
+  ],
+  "pages": [
+    {
+      "role": "home",
+      "route": "/home/",
+      "navLabel": "Home",
+      "keyword": "roofing company Wichita KS",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Locally owned in Wichita",
+        "h1": "Roofing Company in Wichita, KS — Monarch Roofing & Construction",
+        "sub": "We replace and repair roofs in Wichita, and Cesar Verdin deals with you from the first look at your roof to the cleanup after the crew leaves. When a storm is behind the damage, we work with your insurance company too. Call us or request an estimate.",
+        "primaryCta": {
+          "label": "Call (316) 223-3575",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Request an Estimate",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "home-hero",
+          "alt": "Wichita house with a new asphalt shingle roof under a clear sky",
+          "brief": "ranch-style house with a freshly installed dark shingle roof, house on the right half of the frame, front lawn leading off to the left, calm clear sky behind the text side, no readable text, no people"
+        }
+      },
+      "sections": [
+        {
+          "type": "review",
+          "quote": "Cesar was very attentive to our needs and the crew was hard working and professional every step of the way. This company followed through with everything it promised. Our new roof looks great and all.leaks are gone.",
+          "name": "Jesse H."
+        },
+        {
+          "type": "split",
+          "heading": "One Person From the First Look to the Last Day",
+          "body": [
+            "A roof is a big job to hand to people you've never met, and most homeowners only do it once or twice.",
+            "It goes wrong when you deal with a salesperson, then an office, then a crew that never heard what the salesperson promised. At Monarch, Cesar is the person who looks at your roof, explains the work and answers when you call.",
+            "He also tells you what the roof actually needs. Sometimes that's a new roof. Sometimes it's a few repairs, and we'd rather say so than sell you a roof you don't need.",
+            "We stay in touch the whole way, not just on the day the crew shows up."
+          ],
+          "image": {
+            "slot": "home-team",
+            "alt": "Dark shingle roof ridge on a two-story Wichita home against an overcast sky",
+            "brief": "two-story house with a new shingle roof and a clean ridge line, house on the right, driveway leading off to the left, soft overcast sky behind the text side, no readable text, no people"
+          }
+        },
+        {
+          "type": "review",
+          "quote": "Cesar was super nice & friendly from the start. He explained everything very well. It took some time for us to get thru it but Cesar kept checking weekly. Monarch crew did a super job @ getting it done in one day for a bigger house!",
+          "name": "Kevin M."
+        },
+        {
+          "type": "prose",
+          "heading": "Roof Replacement",
+          "body": [
+            "Most people call about a replacement after putting it off. Shingles curl at the edges, bare spots show where the granules have worn away, and a stain appears on a ceiling after the first hard rain.",
+            "Asphalt shingles wear out slowly and then quickly. Once they go brittle, patching one spot just moves the leak to the next weak one.",
+            "Cesar looks at the roof, explains the process and the materials, and gives you the price. Then our crew does the work, and many houses are finished in a day."
+          ],
+          "link": {
+            "label": "See roof replacement",
+            "route": "/roof-replacement-wichita-ks/"
+          }
+        },
+        {
+          "type": "review",
+          "quote": "I had put off getting my roof replaced for the longest time because I didn’t want to hassle with it and the process. Caesar made the process very easy, they were out here within the week getting my roof done and did an excellent job!",
+          "name": "Kayla H."
+        },
+        {
+          "type": "split",
+          "heading": "Roof Repair",
+          "body": [
+            "A few shingles in the yard after a windy night, or a drip over the dining room, does not always mean a new roof.",
+            "Water travels. It runs along the deck and drops somewhere far from where it got in, so the stain on your ceiling is rarely under the problem. We find where the water is really coming in, fix that, and tell you honestly if the rest of the roof has years left."
+          ],
+          "link": {
+            "label": "See roof repair",
+            "route": "/roof-repair-wichita-ks/"
+          },
+          "image": {
+            "slot": "home-claims",
+            "alt": "Shingle roof edge with a metal gutter after a Wichita hailstorm",
+            "brief": "close view of a shingle roof edge with a metal gutter, roof on the right, open sky on the left behind the text side, no readable text, no people, no tools"
+          }
+        },
+        {
+          "type": "prose",
+          "heading": "When Hail or Wind Hits",
+          "body": [
+            "After a Kansas storm, the roof often looks fine from the driveway. Hail bruises shingles and loosens their granules, and the damage shows up months later as a leak.",
+            "If your insurance company is involved, the adjuster's visit is the moment the damage gets written down. We look at your roof first, tell you plainly whether there's damage, and go to the adjuster's inspection.",
+            "We talk with your insurance company for you and send the paperwork in. What an insurer pays is between you and them, and nobody honest can promise it. Our part is making sure they see everything that's on your roof."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Once I agreed to Cesar inspecting my roof after a hail storm, which he verified, he took care of everything else, including being on-site during the insurance adjuster's inspection. Cesar and Monarch Roofing made the entire process unbelievably easy and really earned my trust.",
+          "name": "Jim W."
+        },
+        {
+          "type": "prose",
+          "heading": "When You Have a Closing Date",
+          "body": [
+            "A buyer's inspector looks at the roof, and an old one can hold up a sale. If you're selling, a roof that's near the end of its life is better dealt with before you list than after an offer.",
+            "Tell us the date when you call. We plan the job around it."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "They were efficient, stayed on schedule, and got our roof replaced in time for us to list our home.",
+          "name": "Daisy T."
+        },
+        {
+          "type": "prose",
+          "heading": "Gutters and Siding",
+          "body": [
+            "Gutters and the roof edge are one system. Hail that dents a gutter has usually hit the shingles above it, so we look at both at once.",
+            "That's why we put new gutters on in the same job as a new roof when they need it. You get a single crew schedule and a single point of contact.",
+            "We also do siding, as part of a roof job or as a project of its own."
+          ]
+        },
+        {
+          "type": "steps",
+          "heading": "How a Roof Job Goes",
+          "items": [
+            {
+              "title": "Cesar looks at your roof.",
+              "text": "He checks the shingles, the flashing and the edges, and any storm damage if there is some."
+            },
+            {
+              "title": "We go over the work and the materials.",
+              "text": "You hear the process and the options, and you get the price."
+            },
+            {
+              "title": "Our crew does the job.",
+              "text": "They start early. Many houses take about a day, and a bigger or more complicated roof can take longer."
+            },
+            {
+              "title": "We clean up and walk the roof with you.",
+              "text": "You see the finished work before we're done."
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "What Happens After the Last Shingle",
+          "body": [
+            "If something isn't right after the crew leaves, call us at (316) 223-3575 and ask for Cesar. A leak is easier to fix the day it shows up than after the next rain."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Who You'll Deal With",
+          "body": [
+            "We're a Wichita roofing company, locally owned. Cesar Verdin is the person you'll talk to, and he works with Javier and our crews.",
+            "We work in Wichita and we work on roofs, gutters and siding. If you're not sure which one you need, that's a fine reason to call."
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Questions Before You Call",
+          "items": [
+            {
+              "q": "Do you help with insurance claims?",
+              "a": "Yes. We inspect the roof, go to the adjuster's inspection, talk with your insurance company and send in the paperwork. We can't tell you what the insurer will pay."
+            },
+            {
+              "q": "How long does a roof replacement take?",
+              "a": "Many houses are finished in a day, and we've done bigger ones in a day too. Larger or more complicated roofs take longer."
+            },
+            {
+              "q": "Do I need a whole new roof?",
+              "a": "Not always. Cesar tells you whether repairs will do, and if the roof is past repairing, he shows you why."
+            },
+            {
+              "q": "What does a roof cost?",
+              "a": "It depends on the size, the pitch, the shingles you choose and what we find under the old ones. Cesar looks at your roof and gives you a price and the plan for the job."
+            },
+            {
+              "q": "Do you do gutters and siding?",
+              "a": "Yes. Gutters usually go on in the same job as a roof, and siding can be its own project."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Get Your Roof Looked At",
+          "text": "Call Cesar and the Monarch team at (316) 223-3575, or find our office at 200 N Broadway Ave, 6th Floor, Suite 611, Wichita, KS 67202. We're open Monday to Saturday, 8 AM to 6 PM."
+        }
+      ]
+    },
+    {
+      "role": "service",
+      "route": "/roof-replacement-wichita-ks/",
+      "navLabel": "Roof Replacement",
+      "keyword": "roof replacement Wichita KS",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Roof replacement in Wichita",
+        "h1": "Roof Replacement in Wichita, KS — Monarch Roofing & Construction",
+        "sub": "We replace roofs on Wichita houses, and Cesar Verdin handles your job from the first look to the cleanup. That includes the insurance company when hail is behind it. Call us to talk about your roof, or request an estimate.",
+        "primaryCta": {
+          "label": "Call (316) 223-3575",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Request an Estimate",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "replacement-hero",
+          "alt": "Wichita house with a freshly replaced roof and clean new gutters",
+          "brief": "two-story house with a freshly replaced shingle roof and new gutters, house on the right, lawn leading off to the left, calm sky behind the text side, no readable text, no people"
+        }
+      },
+      "sections": [
+        {
+          "type": "split",
+          "heading": "How You Know It's Time",
+          "body": [
+            "Most asphalt shingle roofs last somewhere between 20 and 30 years, less where hail and hot summers are hard on them. The signs are usually easy to spot once you know to look.",
+            "Shingles curl or crack. Bare patches show where the granules have worn off. The gutters fill with grit, a ceiling stains after rain, or shingles keep blowing into the yard.",
+            "One of those isn't always the end of the roof. If it's one slope or a few shingles, [roof repair](/roof-repair-wichita-ks/) may be all you need. Cesar will tell you which it is."
+          ],
+          "image": {
+            "slot": "replacement-inspection",
+            "alt": "Shingle roof surface with hail bruising across the slope",
+            "brief": "wide view of a shingle roof slope with scattered hail marks, roof on the right, open sky on the left behind the text side, no readable text, no people, no tools"
+          }
+        },
+        {
+          "type": "prose",
+          "heading": "After a Storm, Replacement and Your Claim",
+          "body": [
+            "Hail can total a roof you can't see a problem with from the ground. If an insurance claim is part of your replacement, the adjuster's inspection decides a lot.",
+            "Cesar inspects the roof first and tells you whether there's damage. He goes to the adjuster's inspection, talks with your insurance company, and we send in the paperwork.",
+            "We can't tell you what an insurer will pay, and nobody honest can. We can make sure the damage on your roof is seen and written down."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "We had an excellent experience with Monarch replacing our roofs on 2 houses. Cesar, our project manager, was great from start to finish. Always responded to our questions and concerns, plus communicating with the 2 different insurance companies.",
+          "name": "Matthew W."
+        },
+        {
+          "type": "split",
+          "heading": "Choosing Your Shingles",
+          "body": [
+            "The shingle you pick changes how long the roof lasts. A basic three-tab shingle is the cheapest and the thinnest. Architectural shingles are thicker, hold up longer and look better.",
+            "In hail country there's a third option, Class 4 impact-resistant shingles, built to take hail without cracking. We've installed them. Some insurance carriers discount premiums for them, so ask yours.",
+            "Cesar walks you through the choices and the cost of each, and you pick the color you can live with."
+          ],
+          "image": {
+            "slot": "replacement-gutters",
+            "alt": "New seamless gutter running along the edge of a new roof",
+            "brief": "new gutter along the eave of a new shingle roof, roof edge on the right, calm sky on the left behind the text side, no readable text, no people, no tools"
+          }
+        },
+        {
+          "type": "review",
+          "quote": "Cesar explained everything about the replacement process so well I chose a treated shingles that would last longer. They removed the old roof and layer the new one all in one day.",
+          "name": "Diane R."
+        },
+        {
+          "type": "prose",
+          "heading": "Roof and Gutters in One Job",
+          "body": [
+            "Gutters sit right under the roof edge, so they get hit by the same hail and wear out on the same schedule. Putting new gutters on after a new roof means paying a crew to come out twice.",
+            "When yours need replacing, we do both in the same job. You get a single schedule, and the roof edge and gutters are done together."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "This company has been great to work and are always in contact with me about every step and what's being done. They made replacing my roof and gutters extremely easy.",
+          "name": "Hortensia C."
+        },
+        {
+          "type": "prose",
+          "heading": "What a Good Replacement Includes",
+          "body": [
+            "Whoever you hire, a replacement done right has these parts. Ask any roofer to confirm each one before you sign."
+          ],
+          "list": [
+            "The old roofing comes off down to the deck, so the wood underneath can be checked.",
+            "Soft or rotted decking is replaced, not covered over.",
+            "New underlayment goes down, along with flashing at the chimneys, walls and vents.",
+            "Ventilation in the attic is checked, because a hot attic cooks shingles from below.",
+            "New shingles are nailed in the pattern the manufacturer calls for."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Why It Matters What's Under the Shingles",
+          "body": [
+            "Most roof failures start in the details, not in the shingles. A leak at a chimney is usually flashing, and a roof that ages early is often an attic that can't breathe.",
+            "That's why we want to look at the whole roof before we price it."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Install Day",
+          "body": [
+            "Our crew starts early. Many houses are finished in a day, and we've done bigger ones in a day too.",
+            "Larger or more complicated roofs, and any rotted decking found under the old shingles, can add time.",
+            "If you have a closing date, give it to us when you call. We plan the job around it."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "The roofers came in early just before I went in for work and were done by the time I got home!! Everything was cleaned up and the roof looked incredible.",
+          "name": "Noel E."
+        },
+        {
+          "type": "prose",
+          "heading": "Cleanup",
+          "body": [
+            "Tearing off a roof sends old shingles and nails across the yard, so we clean up when the crew finishes.",
+            "Then we walk the finished roof with you, so you see what was done before we leave."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "The crew was very respectful and did an awesome job. I was really surprised at the cleanup after the job. Couldn't even tell they were there.",
+          "name": "Wayne G."
+        },
+        {
+          "type": "faq",
+          "heading": "Questions About Replacement",
+          "items": [
+            {
+              "q": "How much does a roof replacement cost in Wichita?",
+              "a": "It depends on the size of the roof, its pitch, the shingles you choose, how many layers are under them and whether any decking needs replacing. Cesar looks at your roof and gives you a price and the plan for the job."
+            },
+            {
+              "q": "How long will it take?",
+              "a": "Many houses are finished in a day. A bigger or more complicated roof takes longer."
+            },
+            {
+              "q": "Do you deal with my insurance company?",
+              "a": "We inspect the roof, go to the adjuster's inspection, talk with your insurer and send in the paperwork. What the insurer pays is their decision."
+            },
+            {
+              "q": "Do I need to be home?",
+              "a": "You'll want to be there when Cesar looks at the roof and when you walk it with us after. The crew doesn't need you home during the work."
+            },
+            {
+              "q": "Can you replace my gutters at the same time?",
+              "a": "Yes. We do roof and gutters in the same job."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Talk to Cesar About Your Roof",
+          "text": "Call (316) 223-3575 and tell us what you're seeing, or request an estimate. Our hours are Monday to Saturday, 8 AM to 6 PM."
+        }
+      ]
+    },
+    {
+      "role": "service",
+      "route": "/roof-repair-wichita-ks/",
+      "navLabel": "Roof Repair",
+      "keyword": "roof repair Wichita KS",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Roof repair in Wichita",
+        "h1": "Roof Repair in Wichita, KS — Monarch Roofing & Construction",
+        "sub": "A few shingles in the yard or a drip over the dining room doesn't always mean a new roof. Cesar Verdin finds where the water is getting in and tells you whether a repair will do. Call us or request an estimate.",
+        "primaryCta": {
+          "label": "Call (316) 223-3575",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Request an Estimate",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "repair-hero",
+          "alt": "Shingle roof with a freshly repaired patch near a chimney",
+          "brief": "shingle roof with a neatly repaired section beside a brick chimney, roof on the right, calm sky on the left behind the text side, no readable text, no people, no tools"
+        }
+      },
+      "sections": [
+        {
+          "type": "split",
+          "heading": "Shingles Blown Off in the Wind",
+          "body": [
+            "You find them in the grass after a windy night, or you see a bare strip on the roof from the street.",
+            "Shingles hold down with a sealant strip and a few nails. When the strip dries out and lets go, the wind gets under the edge and pulls the shingle up. The next gust takes the one beside it.",
+            "A repair puts new shingles in and seals the ones around them. It's worth doing quickly, because bare felt and exposed nails let water into the deck."
+          ],
+          "image": {
+            "slot": "repair-wind",
+            "alt": "Shingle roof slope with a few shingles newly replaced after wind",
+            "brief": "shingle roof slope with a small section of newer shingles, roof on the right, open sky on the left behind the text side, no readable text, no people, no tools"
+          }
+        },
+        {
+          "type": "prose",
+          "heading": "A Leak Isn't Always Where the Stain Is",
+          "body": [
+            "Water doesn't drip straight down. It runs along the roof deck and the rafters until it finds a gap in the ceiling, so the stain can be many feet from the hole.",
+            "That's why guessing at a leak gets expensive. Patch the wrong spot and the stain comes back the next time it rains.",
+            "Cesar looks for where the water gets in, not where it shows up. That means checking the roof surface, the flashing and the attic side when it matters."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "I had Cesar with Monarch Roofing come out to a project to help identify a water leak. I only had to give him a brief overview of the issue, and he immediately pinpointed the problem. … Cesar was quick to get his crew scheduled, and they completed the work in a timely and professional manner.",
+          "name": "Francisco T."
+        },
+        {
+          "type": "prose",
+          "heading": "Where Roofs Usually Leak",
+          "body": [
+            "Most leaks aren't in the middle of a shingle field. They start at the places where the roof changes direction or something goes through it."
+          ],
+          "list": [
+            "Flashing around chimneys, skylights and the walls where a lower roof meets a higher one.",
+            "Plumbing vents and roof vents, where the rubber collar cracks in the sun.",
+            "Valleys, where two slopes meet and carry the most water.",
+            "Nail heads that have worked loose and lifted a shingle.",
+            "Hail or wind damage that has opened the shingle surface."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Why Repairs Fail",
+          "body": [
+            "Most repairs that come back were fixing the stain. A dab of sealant on the wrong spot hides the problem until the next rain.",
+            "A repair that lasts replaces the failed part: the flashing, the collar or the damaged shingles, not the symptom. If you've patched the same spot twice, the real problem is somewhere else."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Repair or Replace? We'll Tell You Which",
+          "body": [
+            "Repair makes sense when the damage is limited and the rest of the roof is sound. A few missing shingles, one bad flashing and one failed vent are all repairs.",
+            "Replacement makes sense when shingles are cracking across the whole roof, granules are gone from every slope, or the same leak keeps coming back.",
+            "We'd rather give you the honest answer than the bigger job. If your roof needs a few repairs, that's what we'll say."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "The team is knowledgeable, professional, and takes the time to explain the entire process clearly. They’re honest, reliable, and truly care about delivering quality work.",
+          "name": "Rosario V."
+        },
+        {
+          "type": "prose",
+          "heading": "What a Repair Visit Looks Like",
+          "body": [
+            "Cesar comes out, looks at the roof and finds the source. He explains what he found and what it will take to fix it.",
+            "Then he schedules the crew. For a small repair, that can mean a short visit. If the roof turns out to be past repairing, he tells you that, and why."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Repairs After a Storm",
+          "body": [
+            "If hail or wind caused the damage, take photos before anyone patches it. The adjuster needs to see what happened, and a patched roof can hide it.",
+            "A small repair and a hail claim are separate jobs. A few lifted shingles is a repair. Hail damage across the roof can be a replacement, and that decision is worth making before you spend money on patches.",
+            "If your insurance company is involved, we inspect the roof, go to the adjuster's inspection and talk with them for you. See [roof replacement](/roof-replacement-wichita-ks/) for how that goes."
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Questions About Repairs",
+          "items": [
+            {
+              "q": "How much does a roof repair cost?",
+              "a": "It depends on what has failed and how much roof is involved. Cesar looks at it and gives you a price before the work starts."
+            },
+            {
+              "q": "How soon can you get here?",
+              "a": "Call (316) 223-3575 and tell us what you're seeing. We'll set a time to look."
+            },
+            {
+              "q": "Can you tell me over the phone if I need a new roof?",
+              "a": "Not honestly. A stain, a missing shingle and a hail dent can look the same from a description and be very different on the roof."
+            },
+            {
+              "q": "What should I do until the roof is fixed?",
+              "a": "Move things out from under the leak, catch the drip and take photos of the stain and any damage. Don't climb on a wet roof."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Call About Your Roof",
+          "text": "Call (316) 223-3575, or request an estimate. Tell us what you're seeing and when it started."
+        }
+      ]
+    },
+    {
+      "role": "contact",
+      "route": "/contact/",
+      "navLabel": "Contact",
+      "keyword": "contact Monarch Roofing Wichita",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Wichita, Kansas",
+        "h1": "Contact Monarch Roofing & Construction",
+        "sub": "The fastest way to reach us is to call. Tell us what you're seeing on your roof and we'll take it from there.",
+        "primaryCta": {
+          "label": "Call (316) 223-3575",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Request an Estimate",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "contact-hero",
+          "alt": "Wichita home with a new shingle roof and a clear front walk",
+          "brief": "single-story house with a new shingle roof, house on the right, front walk leading off to the left, calm soft sky behind the text side, no readable text, no people"
+        }
+      },
+      "sections": [
+        {
+          "type": "prose",
+          "heading": "Call or Find Us",
+          "body": [
+            "**Phone:** (316) 223-3575. Call about a repair, a replacement, gutters, siding or a storm.",
+            "**Office:** 200 N Broadway Ave, 6th Floor, Suite 611, Wichita, KS 67202.",
+            "**Hours:** Monday to Saturday, 8 AM to 6 PM. Closed Sunday."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Cesar came out and gave me an estimate on my roof. I appreciate the fact that he was honest and straight forward with the pricing and the process of the whole project.",
+          "name": "Alberto G."
+        },
+        {
+          "type": "prose",
+          "heading": "What to Have Ready",
+          "body": [
+            "You don't need much to start. It helps to know:"
+          ],
+          "list": [
+            "Your address.",
+            "What you're seeing: shingles missing, a leak, a stain, or a storm that just came through.",
+            "If you've filed an insurance claim, the adjuster's name and the date of their visit.",
+            "Any photos you've taken."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "After You Call",
+          "body": [
+            "Cesar looks at your roof and tells you what it needs. If an insurance company is involved, we go to the adjuster's inspection with you."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Working with Monarch was quick and easy. Cesar was friendly, knowledgeable, and always kept me informed throughout the process.",
+          "name": "Austin L."
+        },
+        {
+          "type": "faq",
+          "heading": "Questions Before You Call",
+          "items": [
+            {
+              "q": "Where do you work?",
+              "a": "We work on roofs in Wichita."
+            },
+            {
+              "q": "Do I have to know what's wrong?",
+              "a": "No. Tell us what you see and we'll look."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "about": "Monarch Roofing & Construction is a locally owned Wichita roofing company. We replace and repair roofs, work with your insurance company after hail or wind, and do gutters and siding. Cesar Verdin is the person you deal with.",
+    "why": [
+      "Cesar from the first look to the cleanup",
+      "We go to your adjuster's inspection",
+      "Roof and gutters in one job",
+      "Locally owned in Wichita"
+    ]
+  },
+  "strategy": {
+    "whyHeading": "Why we built this site",
+    "why": [
+      "Your Google reviews already make your case: 4.9 stars from 60 reviews, naming Cesar again and again for explaining the job, keeping people informed, and dealing with the insurance company.",
+      "But when we tried to open monarchroofingks.com, the page would not load. Anyone who taps \"Website\" on your Google listing may get an error instead of your business.",
+      "So we built a site that shows the work your reviews describe, with a homepage, a page for roof replacement, a page for roof repair and a contact page."
+    ],
+    "cardsHeading": "Be the Roofing Company People Find on Google",
+    "cardsIntro": "Each card is one page: what we found on your current site, and what we changed.",
+    "cards": [
+      {
+        "route": "/home/",
+        "title": "Homepage",
+        "why": "The page Google reads to learn who you are and where you work.",
+        "problems": [
+          "When we tried monarchroofingks.com, it would not load, so people who click \"Website\" on Google get nothing, and Google has no page to show for \"roofing company Wichita KS\".",
+          "With no site, none of your reviews appear anywhere you control.",
+          "No page says who Cesar is or what he does on a job."
+        ],
+        "fixes": [
+          "A headline that says roofing company in Wichita, KS, right at the top.",
+          "Real reviews from your customers, each beside the point it proves.",
+          "Cesar introduced by name, with how he works with you from the first look to the cleanup."
+        ],
+        "alsoAdd": "Hourly speed monitoring that keeps your site fast for visitors on phones, and speed is something Google uses to rank you."
+      },
+      {
+        "route": "/roof-replacement-wichita-ks/",
+        "title": "Roof Replacement",
+        "why": "Replacement is the job most of your reviews describe, and it has no page.",
+        "problems": [
+          "A homeowner searching \"roof replacement Wichita KS\" cannot land on you, because there is no page to land on.",
+          "Nothing explains how a replacement goes, or how you handle the insurance company after a storm."
+        ],
+        "fixes": [
+          "A full page for roof replacement in Wichita, KS: shingle choices, roof and gutters together, install day and cleanup.",
+          "Reviews on insurance help, one-day installs and cleanup, each beside its point."
+        ],
+        "alsoAdd": "Call and form tracking that shows which pages and towns your leads come from."
+      },
+      {
+        "route": "/roof-repair-wichita-ks/",
+        "title": "Roof Repair",
+        "why": "Wind damage and leaks bring calls all year, and they have no page.",
+        "problems": [
+          "Nobody searching \"roof repair Wichita KS\" can find you."
+        ],
+        "fixes": [
+          "A page for roof repair in Wichita, KS: blown-off shingles, leaks traced to where the water gets in, and an honest repair-or-replace answer."
+        ],
+        "alsoAdd": "Pages planned from what Google actually shows for each search, so every page targets something people really look for."
+      },
+      {
+        "route": "/contact/",
+        "title": "Contact",
+        "why": "Where a ready customer picks up the phone.",
+        "problems": [
+          "Your phone number, address and hours are on directory sites that you have not claimed, not on a page of yours.",
+          "A visitor has no one-tap way to call you."
+        ],
+        "fixes": [
+          "Your number at the top and bottom of every page, one tap to call.",
+          "Your address and hours in one place, and a short list of what to have ready before you call."
+        ],
+        "alsoAdd": "Every page set up behind the scenes so Google and AI tools like ChatGPT know exactly what you do, where you work, and what your customers say."
+      }
+    ],
+    "reportCardHeading": "What great roofing company websites get right, and how yours measures up.",
+    "reportCard": [
+      {
+        "label": "Your website address opens a page",
+        "status": "Missing"
+      },
+      {
+        "label": "Every phone number dials correctly",
+        "status": "Missing"
+      },
+      {
+        "label": "Headline says what you do and where",
+        "status": "Missing"
+      },
+      {
+        "label": "Browser tab names your company",
+        "status": "Missing"
+      },
+      {
+        "label": "Each money service has its own page",
+        "status": "Missing"
+      },
+      {
+        "label": "Real reviews shown",
+        "status": "Missing"
+      }
+    ],
+    "closing": {
+      "heading": "Want a website like this for your business?",
+      "text": "Your customers already tell people to call you first. Book a strategy call with Fluid Frame and we'll walk you through this demo and plan your new site."
+    }
+  },
+  "onboardingQuestions": [
+    "Is monarchroofingks.com live for you? Who hosts it, and what did it say? We could not load it from our side on 2026-11-09.",
+    "Is Cesar the owner? Reviews call him owner once or twice and project manager once; what title does he want on the site? Surname Verdin is from reviews.",
+    "Who is Javier, and are there other people to name?",
+    "Legal name and Kansas Secretary of State entity ID: Monarch Roofing & Construction, or Monarch Roofing Construction LLC?",
+    "Is the estimate or inspection free? Warranties and financing offered or not?",
+    "Insurance-claim help: confirm what Cesar does at the adjuster's inspection and with the insurer.",
+    "Years in business, and any licence, registration, insurance or manufacturer certification we may show.",
+    "Which towns beyond Wichita do you serve?",
+    "Business email address, and whether (316) 240-7613 is yours.",
+    "Hours: Monday to Saturday, 8 to 6, Sunday closed (from a directory)? Is the office at 200 N Broadway Suite 611 the only one?",
+    "Do you offer service in Spanish? Four reviews are written in Spanish.",
+    "Gutters and siding: confirm both, and whether either needs its own page. Fence, deck and painting appear in reviews; do you want them listed?",
+    "Claim your Dispatchcore listing and give us a logo and brand colors."
+  ]
+}

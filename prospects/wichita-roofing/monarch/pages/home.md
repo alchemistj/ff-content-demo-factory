@@ -28,7 +28,7 @@ Most people call about a replacement after putting it off. Shingles curl at the 
 
 Asphalt shingles wear out slowly and then quickly. Once they go brittle, patching one spot just moves the leak to the next weak one.
 
-Cesar looks at the roof, explains the process and the materials, and gives you the price. Then our crew does the work, and a typical house is often finished in a day.
+Cesar looks at the roof, explains the process and the materials, and gives you the price. Then our crew does the work, and many houses are finished in a day.
 
 [See roof replacement](/roof-replacement-wichita-ks/)
 
@@ -67,7 +67,7 @@ Tell us the date when you call. We plan the job around it.
 
 Gutters and the roof edge are one system. Hail that dents a gutter has usually hit the shingles above it, so we look at both at once.
 
-That's why we put new gutters on in the same job as a new roof when they need it. You deal with one company and one schedule.
+That's why we put new gutters on in the same job as a new roof when they need it. You get a single crew schedule and a single point of contact.
 
 We also do siding, as part of a roof job or as a project of its own.
 
@@ -75,7 +75,7 @@ We also do siding, as part of a roof job or as a project of its own.
 
 1. **Cesar looks at your roof.** He checks the shingles, the flashing and the edges, and any storm damage if there is some.
 2. **We go over the work and the materials.** You hear the process and the options, and you get the price.
-3. **Our crew does the job.** They start early. A typical house takes about a day, and a bigger or more complicated roof can take longer.
+3. **Our crew does the job.** They start early. Many houses take about a day, and a bigger or more complicated roof can take longer.
 4. **We clean up and walk the roof with you.** You see the finished work before we're done.
 
 ## What Happens After the Last Shingle
@@ -94,7 +94,7 @@ We work in Wichita and we work on roofs, gutters and siding. If you're not sure 
 Yes. We inspect the roof, go to the adjuster's inspection, talk with your insurance company and send in the paperwork. We can't tell you what the insurer will pay.
 
 **How long does a roof replacement take?**
-A typical house is often a one-day job, and we've done bigger houses in a day. Larger or more complicated roofs take longer.
+Many houses are finished in a day, and we've done bigger ones in a day too. Larger or more complicated roofs take longer.
 
 **Do I need a whole new roof?**
 Not always. Cesar tells you whether repairs will do, and if the roof is past repairing, he shows you why.

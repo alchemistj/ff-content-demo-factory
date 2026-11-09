@@ -23,7 +23,7 @@ A roof is a big job to hand to strangers, so at Monarch one person, Cesar, deals
 1. **Top.** We replace and repair Wichita roofs; Cesar stays with you start to finish. CTA call/estimate. Proof: Jesse H. (attentive, followed through, leaks gone).
 2. **One person from first look to last day.** Moment: handing a roof to a crew you've never met. Reason: sales/office/crew hand-offs lose the details. Does: Cesar looks, explains, picks up, tells the truth about repair vs replace. Proof: Kevin M. (checked weekly, one day on a bigger house).
 3. **Roof replacement** (link). Moment: the roof you've been putting off. Reason: how shingles age. Does: look, explain process and materials, crew. Proof: Kayla H.
-4. **Roof repair** (link). Moment: shingles in the yard, a stain on the ceiling. Reason: water travels. Does: find the source, honest answer. No review (juvenal F., Francisco T., Rosario V. live on the repair page).
+4. **Roof repair** (link). Moment: shingles in the yard, a stain on the ceiling. Reason: water travels. Does: find the source, honest answer. No review (Francisco T. and Rosario V. live on the repair page).
 5. **When hail or wind hits.** Moment: storm, letter, adjuster. Reason: damage hard to see from the ground, adjuster visit is when it is written down. Does: inspect, be at the adjuster's inspection, talk with the insurer, turn paperwork in. Never what an insurer pays. Proof: Jim W.
 6. **When you have a closing date.** Moment: buyer's inspection flags the roof. Does: plan the install around the date. Proof: Daisy T.
 7. **Gutters and siding.** Roof edge and gutters meet; hail dents; siding as a separate project. No review.
@@ -36,13 +36,13 @@ A roof is a big job to hand to strangers, so at Monarch one person, Cesar, deals
 Time for a new roof (signs, age); after a storm (Matthew W.); shingle choice incl. Class 4 (Diane R.); roof and gutters together (Hortensia C.); what a good replacement includes (list) and what to ask; install day (Noel E.); cleanup (Wayne G.); FAQ.
 
 ## Repair page
-Wind-blown shingles; a leak is not where the stain is (Francisco T.); common leak sources (list); repair or replace honestly (juvenal F.); what a visit looks like (Rosario V.); repairs after a storm (photos first); FAQ.
+Wind-blown shingles; a leak is not where the stain is (Francisco T.); common leak sources (list); repair or replace honestly (Rosario V.); what a visit looks like; repairs after a storm (photos first); FAQ.
 
 ## Contact page
 Call, address, hours; what to have ready (list); after you call; Alberto G. (honest estimate) and Austin L. (kept informed).
 
 ## Reviews used (five-star, word for word, English)
-Home: Jesse H., Kevin M., Kayla H., Jim W., Daisy T. Replacement: Matthew W., Diane R., Hortensia C., Noel E., Wayne G. Repair: juvenal F., Francisco T., Rosario V. Contact: Alberto G., Austin L.
+Home: Jesse H., Kevin M., Kayla H., Jim W., Daisy T. Replacement: Matthew W., Diane R., Hortensia C., Noel E., Wayne G. Repair: Francisco T., Rosario V. Contact: Alberto G., Austin L.
 
 ## Do not claim
 Owner title for Cesar; certification or manufacturer status; license or registration numbers; BBB; warranty; financing; founding year or "years in business"; free estimate or free inspection; insurance payouts or claim outcomes; Spanish-language service; service-area towns beyond Wichita; email address; magnetic nail sweep or drone; fence, deck, painting, commercial work as services; emergency or 24-hour service; second phone number (316) 240-7613. Never quote Mike C., Hina P., Tyler R., Ariel F., Spanish reviews, or reviewers with no last initial.

@@ -40,7 +40,7 @@ Cesar walks you through the choices and the cost of each, and you pick the color
 
 Gutters sit right under the roof edge, so they get hit by the same hail and wear out on the same schedule. Putting new gutters on after a new roof means paying a crew to come out twice.
 
-When yours need replacing, we do both in the same job. One company, one schedule, and the roof edge and gutters are done together.
+When yours need replacing, we do both in the same job. You get a single schedule, and the roof edge and gutters are done together.
 
 > This company has been great to work and are always in contact with me about every step and what's being done. They made replacing my roof and gutters extremely easy.
 > — Hortensia C.
@@ -63,7 +63,7 @@ That's why we want to look at the whole roof before we price it.
 
 ## Install Day
 
-Our crew starts early. A typical house is often finished in a day, and we've done bigger houses in a day too.
+Our crew starts early. Many houses are finished in a day, and we've done bigger ones in a day too.
 
 Larger or more complicated roofs, and any rotted decking found under the old shingles, can add time.
 
@@ -87,7 +87,7 @@ Then we walk the finished roof with you, so you see what was done before we leav
 It depends on the size of the roof, its pitch, the shingles you choose, how many layers are under them and whether any decking needs replacing. Cesar looks at your roof and gives you a price and the plan for the job.
 
 **How long will it take?**
-A typical house is often one day. A bigger or more complicated roof takes longer.
+Many houses are finished in a day. A bigger or more complicated roof takes longer.
 
 **Do you deal with my insurance company?**
 We inspect the roof, go to the adjuster's inspection, talk with your insurer and send in the paperwork. What the insurer pays is their decision.
@@ -100,4 +100,4 @@ Yes. We do roof and gutters in the same job.
 
 ## Talk to Cesar About Your Roof
 
-Call (316) 223-3575 and tell us what you're seeing, or request an estimate. We're open Monday to Saturday, 8 AM to 6 PM.
+Call (316) 223-3575 and tell us what you're seeing, or request an estimate. Our hours are Monday to Saturday, 8 AM to 6 PM.

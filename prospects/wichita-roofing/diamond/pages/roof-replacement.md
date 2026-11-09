@@ -44,7 +44,7 @@ Stacia walks you through the options and helps you land on one that fits your ho
 
 A failing roof can stall a sale. A buyer's inspector flags it, and the roof becomes the thing everyone is waiting on.
 
-We've replaced roofs in the middle of a real estate deal, and on rental properties where the owner wants the job done and the tenants left alone. In both cases the job has to be finished, clean and on time.
+We've replaced roofs while a house was being sold, and on rental properties where the owner wants the job done and the tenants left alone. In both cases the job has to be finished, clean and on time.
 
 > Stacia was very professional and timely with everything. The crew was so clean and tidy and made sure it all looked great so there would be no hiccups during the transaction!
 > — Roann G.
