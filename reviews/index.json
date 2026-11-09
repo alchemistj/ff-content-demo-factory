@@ -75,6 +75,18 @@
       "pulledAt": "2026-11-07T03:08:39.073Z"
     },
     {
+      "slug": "dan-dan-the-window-man",
+      "name": "Dan Dan The Window Man",
+      "placeId": "ChIJVVVlgbnguocRBLc193b6xPM",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 44,
+        "withText": 39,
+        "ratingOnly": 5
+      },
+      "pulledAt": "2026-11-09T02:12:17.197Z"
+    },
+    {
       "slug": "evolve-exteriors",
       "name": "Evolve Exteriors",
       "placeId": "ChIJS6lMpo_qZUQRpZzFf2lGyAs",
