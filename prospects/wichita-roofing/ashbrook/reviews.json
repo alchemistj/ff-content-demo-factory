@@ -1,0 +1,459 @@
+{
+  "kind": "google-review-pull",
+  "version": 1,
+  "slug": "ashbrook-roofing",
+  "place": {
+    "name": "Ashbrook Roofing & Contracting",
+    "placeId": "ChIJraTxgPS29wwRd01lLXDuxh4",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Ashbrook%20Roofing%20%26%20Contracting&query_place_id=ChIJraTxgPS29wwRd01lLXDuxh4",
+    "address": "101 S Martinson St, Wichita, KS 67213",
+    "phone": "(316) 402-8470",
+    "rating": 4.9,
+    "totalReviewCount": 44
+  },
+  "pulledAt": "2026-11-09T17:55:04.684Z",
+  "requestedMax": 100,
+  "reviews": [
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2t0a1RsVmFPVEZZVTJaVFJUZDRNMVF4UlZWa1oyYxAB",
+      "reviewer": "Richard M.",
+      "rating": 5,
+      "text": "Andy and his crews were awesome! They went over the top on the installation! Made sure everything was taken care of. Andy’s crew made sure everything was cleaned up and protected all of the landscaping from damage! This was the second time I have used Ashbrook Roofing personally and the third time overall. I will not use any other roofing company!<br>If you are in need of a new roof or gutters, it would be a huge mistake NOT calling Andy first! He is great to work with and the results are fantastic!",
+      "publishedAt": "2026-11-07T14:08:34.708Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2t0a1RsVmFPVEZZVTJaVFJUZDRNMVF4UlZWa1oyYxAB!2m1!1s0x0:0x1ec6ee702d654d77!3m1!1s2@1:CAIQACodChtycF9oOktkTlVaOTFYU2ZTRTd4M1QxRVVkZ2c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tGVFRrTnBNV1poTWpabk9HaHVUMVZNTmxObVRFRRAB",
+      "reviewer": "Chef L.",
+      "rating": 5,
+      "text": "From our first meeting, Andy was  not pushy and very attentive to our questions and requests! He kept us in the know throughout the whole process explained  everything and very knowledgeable and amazing at what he does.  We actually made a friend!! I highly recommend Ashbrook Roofing!!",
+      "publishedAt": "2026-07-28T22:12:11.161Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tGVFRrTnBNV1poTWpabk9HaHVUMVZNTmxObVRFRRAB!2m1!1s0x0:0x1ec6ee702d654d77!3m1!1s2@1:CAIQACodChtycF9oOkFTTkNpMWZhMjZnOGhuT1VMNlNmTEE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tndGVFZzBORzUyU0RCT1REZHlNbVZRTjFoS1lYYxAB",
+      "reviewer": "Zach S.",
+      "rating": 5,
+      "text": "Five-star service from Andy and the team at Ashbrook Roofing! After the hailstorm last year, they took care of everything our insurance had determined needed to be replaced.<br><br>Throughout the entire process, Andy was extremely communicative, professional, and made sure everything was handled from start to finish. Our new roof turned out great, and the siding looks fantastic as well. We are very happy with the results and would highly recommend Ashbrook Roofing!",
+      "publishedAt": "2026-07-23T00:39:17.440Z",
+      "ownerResponse": "Zach. Thank you so much for allowing us to handle your project! The kind words and going out of your way to leave this review means a lot. Can’t thank you enough!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tndGVFZzBORzUyU0RCT1REZHlNbVZRTjFoS1lYYxAB!2m1!1s0x0:0x1ec6ee702d654d77!3m1!1s2@1:CAIQACodChtycF9oOkgteEg0NG52SDBOTDdyMmVQN1hKYXc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25sTFZuZERPRmh4TUUxM1RIUnliWGR1VG5GdU5HYxAB",
+      "reviewer": "Traci N.",
+      "rating": 5,
+      "text": "Andy and his team were great to work with. We were on a short timeline and they monitored the weather and got the roof completely done. And it looks amazing! We were grateful for their professional work and communication throughout the process. Highly recommend!",
+      "publishedAt": "2026-07-08T21:49:17.458Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25sTFZuZERPRmh4TUUxM1RIUnliWGR1VG5GdU5HYxAB!2m1!1s0x0:0x1ec6ee702d654d77!3m1!1s2@1:CAIQACodChtycF9oOnlLVndDOFhxME13THRybXduTnFuNGc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNIdHBqYlJBEAE",
+      "reviewer": "Stella J.",
+      "rating": 5,
+      "text": "Thank you Ashbrook and Co,for a job well done.  You all are great I love the work that you did. Especially the siding and garage door.  Trust me he knows how to work with you.",
+      "publishedAt": "2026-05-18T23:26:41.319Z",
+      "ownerResponse": "It was a pleasure working with you Stella!  we appreciate you having us take care of your project with so many moving parts.  As a GC we can handle all of it and we loved being your one stop shop!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNIdHBqYlJBEAE!2m1!1s0x0:0x1ec6ee702d654d77!3m1!1s2@1:CIHM0ogKEICAgICHtpjbRA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT20xRlgwRldjemswYVZwYVluWmtSMnAxTkVkMVEyYxAB",
+      "reviewer": "Tanner T.",
+      "rating": 5,
+      "text": "Andy is great! Helpful, knowledgeable and willing to work with you get earn your business! Great communication and top notch customer service all around. Would highly recommend giving him a call for your next roofing job!",
+      "publishedAt": "2026-04-27T13:05:00.305Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT20xRlgwRldjemswYVZwYVluWmtSMnAxTkVkMVEyYxAB!2m1!1s0x0:0x1ec6ee702d654d77!3m1!1s2@1:CAIQACodChtycF9oOm1FX0FWczk0aVpaYnZkR2p1NEd1Q2c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21oWGRtVTJaVFEwVlVOUFFXTlFabTF5ZGtocVFuYxAB",
+      "reviewer": "Emmanuel J.",
+      "rating": 1,
+      "text": "Phone is never answered and the one time I got through they never called me back for details on roofing work that was completed.",
+      "publishedAt": "2026-02-01T21:22:48.333Z",
+      "ownerResponse": "Emmanuel, I do not have any records of working with you or what specific work you are referring to. You are welcome to call back and give more information as to the details you require. Please ask for the owners direct cell number and I will confirm the details. <br><br>Based on your other reviews it looks like you have had a common issue with contractors in general.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21oWGRtVTJaVFEwVlVOUFFXTlFabTF5ZGtocVFuYxAB!2m1!1s0x0:0x1ec6ee702d654d77!3m1!1s2@1:CAIQACodChtycF9oOmhXdmU2ZTQ0VUNPQWNQZm1ydkhqQnc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pKVVdXWkxSSE01V0ZKR1NVMDJZakpHZGxsblFrRRAB",
+      "reviewer": "Michael T.",
+      "rating": 5,
+      "text": "Andy was great to work with. Timely quote and service after large hail storm. His guys were in and out in one day, left area clean.<br>I referred a work friend to Ashbrook and he had the same experience, I definitely recommend Ashbrook roofing and will use again.",
+      "publishedAt": "2026-01-09T22:35:42.034Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pKVVdXWkxSSE01V0ZKR1NVMDJZakpHZGxsblFrRRAB!2m1!1s0x0:0x1ec6ee702d654d77!3m1!1s2@1:CAIQACodChtycF9oOjJUWWZLRHM5WFJGSU02YjJGdllnQkE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pGc2JVUTBPVTV0UlZkNVVrOXNkVE4xYjB0bWNXYxAB",
+      "reviewer": "Vera B.",
+      "rating": 5,
+      "text": "Andy and his crew where punctional, honest, polite, professional. They took care of my roofing project like I was a member of their family. Clean-up was as perfect as all parts of tge job. I would recommend Andy Ashbrook completely.",
+      "publishedAt": "2025-11-05T17:01:43.040Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pGc2JVUTBPVTV0UlZkNVVrOXNkVE4xYjB0bWNXYxAB!2m1!1s0x0:0x1ec6ee702d654d77!3m1!1s2@1:CAIQACodChtycF9oOjFsbUQ0OU5tRVd5Uk9sdTN1b0tmcWc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25GUE0xVnBlRTVxZEVWRkxYbDBVMEZUYlZBM1FuYxAB",
+      "reviewer": "Scott O.",
+      "rating": 5,
+      "text": "Loved working with Andy! He gave a great quote and had his guys in and out in one day!<br>I referred a work friend to Ashbrook and he had the same experience, I will definitely  recommend Ashbrook roofing in the future.",
+      "publishedAt": "2025-10-10T17:08:30.647Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25GUE0xVnBlRTVxZEVWRkxYbDBVMEZUYlZBM1FuYxAB!2m1!1s0x0:0x1ec6ee702d654d77!3m1!1s2@1:CAIQACodChtycF9oOnFPM1VpeE5qdEVFLXl0U0FTbVA3Qnc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2paUFpYUlJkWGQ0YWtKTlEwaFlOQzFKTFRCWVEzYxAB",
+      "reviewer": "Beth L.",
+      "rating": 5,
+      "text": "I left town before putting my house on the market, and within a week, a hailstorm took out my roof. Andy and his team worked with me remotely, assisting with insurance information and inspection, then replacing the roof quickly. I highly recommend Ashbrook Roofing for any roofing needs!!!! They helped me work through the process and preformed the work in a highly professional manner!",
+      "publishedAt": "2025-10-02T13:01:55.430Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2paUFpYUlJkWGQ0YWtKTlEwaFlOQzFKTFRCWVEzYxAB!2m1!1s0x0:0x1ec6ee702d654d77!3m1!1s2@1:CAIQACodChtycF9oOjZPZXRRdXd4akJNQ0hYNC1JLTBYQ3c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2poelYwaE1iVGh6Y2tWVWVsUlRTSEEzTm1kV2NrRRAB",
+      "reviewer": "Tyler D.",
+      "rating": 5,
+      "text": "Andy was extremely helpful getting all of the pieces squared away with the insurance company and scheduling the replacement during the sale of our home.",
+      "publishedAt": "2025-08-28T18:40:03.080Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2poelYwaE1iVGh6Y2tWVWVsUlRTSEEzTm1kV2NrRRAB!2m1!1s0x0:0x1ec6ee702d654d77!3m1!1s2@1:CAIQACodChtycF9oOjhzV0hMbThzckVUelRTSHA3NmdWckE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pGc04wcEhaMVk0WDNKbWRUaHNkbU5pUzBveloyYxAB",
+      "reviewer": "Gerald D.",
+      "rating": 5,
+      "text": "Great craftsmanship, quick response, competitive pricing. Everything you can ask from a local roofing company. Andrew and his crew go above and beyond to make sure we have a beautiful and solid roof insulation.",
+      "publishedAt": "2025-07-21T19:32:27.189Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pGc04wcEhaMVk0WDNKbWRUaHNkbU5pUzBveloyYxAB!2m1!1s0x0:0x1ec6ee702d654d77!3m1!1s2@1:CAIQACodChtycF9oOjFsN0pHZ1Y4X3JmdThsdmNiS0ozZ2c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnTUNZcGIzbm13RRAB",
+      "reviewer": "James R.",
+      "rating": 5,
+      "text": "I would leave 100 stars if I could but I’m only allowed 5.<br>From start to finish this was high quality precision work.<br>They got it done in under 7hrs! All the crew was friendly & Andy the owner was very easy to work with & made the whole process seamless & easy. I highly recommend Ashbrook roofing & i’m so happy with my new roof. It’s looks beautiful<br>BEST EVER!!!!!!",
+      "publishedAt": "2025-05-05T20:19:21.618Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTUNZcGIzbm13RRAB!2m1!1s0x0:0x1ec6ee702d654d77!3m1!1s2@1:CIHM0ogKEICAgMCYpb3nmwE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnTUNZaGVuWVVREAE",
+      "reviewer": "Jordan W.",
+      "rating": 5,
+      "text": "We called Ashbrook roofing after we noticed a small leak in our roof following a spring storm. The team was out here the same day to assess the situation. Not only did they find the leak, but they also noticed that our vents were out of code and our gutters were beyond their lifespan. We’ve been in our home for 13 years and really, we have no idea the last time our roof has actually been looked at.<br><br>Once our claim was approved, Ashbrook was ready to go!  They organized all the contractors, kept us in constant communication and got things done super fast. They obviously have great relationships with their subcontractor group too bc every team that came out was amazing.<br><br>It was nice to have a big project not feel overwhelming because we could fully trust the team along the way. I highly recommend Ashbrook not just for roofing repairs but consider giving them a call about your gutters and siding, too!",
+      "publishedAt": "2025-05-05T17:20:59.384Z",
+      "ownerResponse": "Thanks for trusting us Jordan!!! Was great to work with you and Adrian and allowing us to help you through the process from start to finish!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTUNZaGVuWVVREAE!2m1!1s0x0:0x1ec6ee702d654d77!3m1!1s2@1:CIHM0ogKEICAgMCYhenYUQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnTUNZM0lMcVdnEAE",
+      "reviewer": "Kyle W.",
+      "rating": 5,
+      "text": "Andy was able to help get my roof replaced in under a week after reaching out. He was great to work with and has great communication and was able to talk through and explain all the intricacies of getting your roof re-done. We got rained out on the originally scheduled replacement date and he was able to quickly pivot to get my roof replaced in a matter of days. The crew also did great work and cleaned up great leaving no nails or material behind. If you need and roofing done Andy is your guy!!",
+      "publishedAt": "2025-05-02T11:16:07.959Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTUNZM0lMcVdnEAE!2m1!1s0x0:0x1ec6ee702d654d77!3m1!1s2@1:CIHM0ogKEICAgMCY3ILqWg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnTUNZcEtPc3R3RRAB",
+      "reviewer": "Nela B.",
+      "rating": 5,
+      "text": "I have worked with Andy for many years. He is very detailed, timely, and professional. He always goes above and beyond for his clients. I would highly recommend Ashbrook Roofing",
+      "publishedAt": "2025-05-01T13:18:04.553Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTUNZcEtPc3R3RRAB!2m1!1s0x0:0x1ec6ee702d654d77!3m1!1s2@1:CIHM0ogKEICAgMCYpKOstwE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnTUNZcU9YeTNnRRAB",
+      "reviewer": "Derek W.",
+      "rating": 5,
+      "text": "As a local realtor I've had the opportunity to work with Andy both for our personal residence and also for several real estate clients. I can say with confidence that Andy is a quality professional. He is industrious, responsive, helpful, and exceedingly competent. We love our roof and it has been a delight to work with Andy and his team. Highly recommend!",
+      "publishedAt": "2025-04-30T20:44:50.115Z",
+      "ownerResponse": "Thank you Derek!  everything you mentioned we take pride in and am happy to have the professional relationship as well as helping you personally!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTUNZcU9YeTNnRRAB!2m1!1s0x0:0x1ec6ee702d654d77!3m1!1s2@1:CIHM0ogKEICAgMCYqOXy3gE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnTUNJb2VmcEFREAE",
+      "reviewer": "Billy W.",
+      "rating": 5,
+      "text": "Andy, Scott, and company were a pleasure to work with. Extremely honest and helpful, and made everything a breeze. I would recommend these guys over and over again, and will continue to use them for anything in the future. A+ work!",
+      "publishedAt": "2025-04-02T16:38:34.962Z",
+      "ownerResponse": "Thank you Billy, We appreciate your trust in allowing us to handle your project.  Were happy you had a great experience!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTUNJb2VmcEFREAE!2m1!1s0x0:0x1ec6ee702d654d77!3m1!1s2@1:CIHM0ogKEICAgMCIoefpAQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUQzczZTcTlRRRAB",
+      "reviewer": "Maureen S.",
+      "rating": 5,
+      "text": "Andy made replacing our roof as painless as possible! We genuinely felt as though he had our best interests at heart, and he made sure we were well-informed throughout the process. The work itself was quick, efficient, and - as far as we can tell - done well. Highly recommend Ashbrook Roofing!",
+      "publishedAt": "2024-11-18T17:05:09.193Z",
+      "ownerResponse": "Thank you Maureen!  This is exactly how we want our customers to feel with this process that can be very intimating. We appreciate you!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQzczZTcTlRRRAB!2m1!1s0x0:0x1ec6ee702d654d77!3m1!1s2@1:CIHM0ogKEICAgID3s6Sq9QE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURudWZiZGxBRRAB",
+      "reviewer": "Isaac S.",
+      "rating": 5,
+      "text": "Andy is an absolute rock star, he always goes to bat for my clients. He does exceptional work and goes above and beyond for everyone involved. Do yourself a favor and call Andy next time you are replacing your roof or need exterior work done on your property.",
+      "publishedAt": "2024-10-07T16:19:00.829Z",
+      "ownerResponse": "We feel the same way Isaac about you sir!  Relationships like this are valuable to us and taking care of our customers are what its all about.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURudWZiZGxBRRAB!2m1!1s0x0:0x1ec6ee702d654d77!3m1!1s2@1:CIHM0ogKEICAgIDnufbdlAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNueXVtSTR3RRAB",
+      "reviewer": "Justin S.",
+      "rating": 5,
+      "text": "Andy and his crew are awesome! They did a great job replacing my old gutter system!",
+      "publishedAt": "2024-09-24T21:02:42.064Z",
+      "ownerResponse": "Justin, We thank you for allowing us to handle your project!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNueXVtSTR3RRAB!2m1!1s0x0:0x1ec6ee702d654d77!3m1!1s2@1:CIHM0ogKEICAgICnyumI4wE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNIdWNDQllREAE",
+      "reviewer": "Jan S.",
+      "rating": 5,
+      "text": "If I could do a 10 star I would!!<br><br>Andy did a great job for us!  We had a very tight timeframe and had to work with our insurance company.<br><br>Andy offered to come out when the insurance adjuster was there to help us through the insurance process.  I know without a doubt that this helped us not only in the coverage, but with the timeframes as well.<br><br>I would recommend Andy for anyone needing any type of roofing done.  They did a great job, in a short time frame, and got us the best result with our insurance company.  If that wasn't enough, he was also great to work with.",
+      "publishedAt": "2024-09-06T15:37:14.428Z",
+      "ownerResponse": "Thank you Jan!  Reviews like this keep us going.  thanks for taking the time to share your experience with us.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNIdWNDQllREAE!2m1!1s0x0:0x1ec6ee702d654d77!3m1!1s2@1:CIHM0ogKEICAgICHucCBYQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURicjdtdWl3RRAB",
+      "reviewer": "Emily H.",
+      "rating": 5,
+      "text": "We used Andy to help us replace our roof. We had fought with our insurance company for nearly a year without any success. Andy worked with us and guided us through the process of requesting a reevaluation of our claim. He was available and responsive when we had questions throughout the process. And we were able to get the insurance company to approve the claim, and I feel like that was only possible because of Andy’s advocacy and guidance. Andy also worked with us to get our roof and gutters replaced in a timely manner. We are so pleased with our new roof, and we are appreciative of all of Andy’s help and guidance through the process. I would highly recommend Andy for any roofing needs that you may have.",
+      "publishedAt": "2024-08-10T19:10:01.566Z",
+      "ownerResponse": "Thanks Emily.  Insurance can be a pretty daunting experience and frustrating.  We definitely have the experience to help folks lie you navigate the challenges.  Were also glad to do the work and have a happy customer on that end.  thanks again!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURicjdtdWl3RRAB!2m1!1s0x0:0x1ec6ee702d654d77!3m1!1s2@1:CIHM0ogKEICAgIDbr7muiwE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUN6azY3SFBBEAE",
+      "reviewer": "Justin B.",
+      "rating": 5,
+      "text": "Andy and the crew did STELLAR work. They were right on time and got the job done quickly and painlessly at a very fair price. Highly recommended!!",
+      "publishedAt": "2024-06-04T18:12:21.917Z",
+      "ownerResponse": "Thanks Justin!  As you know, reviews like this are how we spread the word and can thank you enough for taking the time to write one.  Glad you had a great experience!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN6azY3SFBBEAE!2m1!1s0x0:0x1ec6ee702d654d77!3m1!1s2@1:CIHM0ogKEICAgICzk67HPA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUN6NDltdFVREAE",
+      "reviewer": "Maria L.",
+      "rating": 5,
+      "text": "Andy and Ashbrook roofing is the most solid roofing company in Wichita. My husband and I purchased our home in 2020 and immediately had major roof issues where we happened to come into contact with Andy which has been the best blessing to us! He has been transparent, kind and just overall incredible to work with. I could NOT recommend him more!! He has been so fantastic and made our roof replacement a seamless process!! You couldn't go wrong with using him/his company.",
+      "publishedAt": "2024-06-04T16:50:59.329Z",
+      "ownerResponse": "Thanks Maria,  you have been one of our favorites!  Always a pleasure to work with you and we appreciate your choosing us!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN6NDltdFVREAE!2m1!1s0x0:0x1ec6ee702d654d77!3m1!1s2@1:CIHM0ogKEICAgICz49mtUQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUREb1otY3F3RRAB",
+      "reviewer": "Jocelyn C.",
+      "rating": 5,
+      "text": "Andy has been great to work with on two of our recent roof improvements: venting and guttering. He and his crew are knowledgable and prompt and did a great job. Highly recommend Ashbrook Roofing!",
+      "publishedAt": "2024-04-10T15:36:49.756Z",
+      "ownerResponse": "Thanks JC!!!  You're the best.  We we happy to see you to the terminus of your project.  Sometimes we can feel like a Roaming Bison of the plains until we find the right person to get us back on the trail.  We appreciate you very much!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUREb1otY3F3RRAB!2m1!1s0x0:0x1ec6ee702d654d77!3m1!1s2@1:CIHM0ogKEICAgIDDoZ-cqwE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNEaWJTMExBEAE",
+      "reviewer": "Ben W.",
+      "rating": 5,
+      "text": "Working with Ashbrook Roofing was effortless and satisfying from start to finish. Andy was a huge help throughout the insurance claim process. His professional team are truly skilled and thorough. They spent extra effort to ensure my aging skylights were well sealed. My roof looks great and I would highly recommend for all jobs!",
+      "publishedAt": "2024-03-29T18:16:20.873Z",
+      "ownerResponse": "Thanks Ben!  it was a pleasure working with you and you gave us a great project to put in the portfolio.  Thanks agian!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNEaWJTMExBEAE!2m1!1s0x0:0x1ec6ee702d654d77!3m1!1s2@1:CIHM0ogKEICAgICDibS0LA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUQ5bl9ENExnEAE",
+      "reviewer": "Dominik O.",
+      "rating": 5,
+      "text": "Andy and his crew was at our house early, the work was spectacular and quick.  The materials arrived the day before the work was done.  I loved the cleanup job, I would recommend them to anyone!!!",
+      "publishedAt": "2024-03-22T17:20:38.846Z",
+      "ownerResponse": "It was a pleasure Dominik.  Thanks for taking the time to leave the great review!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ5bl9ENExnEAE!2m1!1s0x0:0x1ec6ee702d654d77!3m1!1s2@1:CIHM0ogKEICAgID9n_D4Lg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUM5XzQzdDh3RRAB",
+      "reviewer": "jeremiah H.",
+      "rating": 5,
+      "text": "Great honest company. Did a fanastic job replacing my mother's roof. Wonderful, courteous and knowledgeable staff. professional and fast. I highly recommend them<br>for all your roofing needs.",
+      "publishedAt": "2024-03-11T22:57:09.587Z",
+      "ownerResponse": "Thanks Jeremiah.  It was great working with your mother and we knw trusting a contractor with such an important person in your life is not a decision to take lightly.  We were honored to be the ones you selected and ecstatic you all had a great experience!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUM5XzQzdDh3RRAB!2m1!1s0x0:0x1ec6ee702d654d77!3m1!1s2@1:CIHM0ogKEICAgIC9_43t8wE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURkdV96RnJ3RRAB",
+      "reviewer": "Johna F.",
+      "rating": 5,
+      "text": "Andy and his crew were a breathe of fresh air from the start! He was recommended to me by my insurance agent and I am 100% satisfied that I decided to go with Ashbrook Roofing. Andy took his time to explain all the small details that other companies passed over. He noticed the small things and had it fixed without me having to do anything! Thanks for the great work!<br><br>~Johna Ford",
+      "publishedAt": "2024-02-27T17:05:32.617Z",
+      "ownerResponse": "\"Breath of fresh air\", well take that!  We definitely strive to give a personal experience and that's the kind of review that hits home.  Thanks again!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURkdV96RnJ3RRAB!2m1!1s0x0:0x1ec6ee702d654d77!3m1!1s2@1:CIHM0ogKEICAgIDdu_zFrwE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURONmJmUm1RRRAB",
+      "reviewer": "sherrie J.",
+      "rating": 5,
+      "text": "Excellence is demonstrated in every way from customer service to the service provided. I would highly recommend Ashbrook roofing to complete work on your home.",
+      "publishedAt": "2024-01-23T20:44:11.615Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURONmJmUm1RRRAB!2m1!1s0x0:0x1ec6ee702d654d77!3m1!1s2@1:CIHM0ogKEICAgIDN6bfRmQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNObmE3aHRBRRAB",
+      "reviewer": "Duncan T.",
+      "rating": 5,
+      "text": "Prompt and professional. Took care of everything from start to finish and didn’t leave a mess. Will use them again.",
+      "publishedAt": "2024-01-17T00:13:48.116Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNObmE3aHRBRRAB!2m1!1s0x0:0x1ec6ee702d654d77!3m1!1s2@1:CIHM0ogKEICAgICNna7htAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNab3FEWFhBEAE",
+      "reviewer": "Tony R.",
+      "rating": 5,
+      "text": "Andy was recommended by my insurance agent, he was awesome to work with, understood what I wanted and his crew showed up on time and finished the job to an awesome completion. His crew not only did great work, they cleaned up everything and even did little touches like paint the pipes coming out of the roof to make them look great!",
+      "publishedAt": "2023-09-07T01:05:28.366Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNab3FEWFhBEAE!2m1!1s0x0:0x1ec6ee702d654d77!3m1!1s2@1:CIHM0ogKEICAgICZoqDXXA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURwcDg3QV9RRRAB",
+      "reviewer": "Chad D.",
+      "rating": 5,
+      "text": "Andy and his crew handled our roofing replacement and we couldn’t be more impressed. He helped us through the sometimes complicated process of dealing with insurance companies with great customer service. His guys showed up bright and early, worked quickly without cutting corners, were respectful of our landscaping and lawn, cleaned up and finished by 5:30 the same day. I will recommend Ashbrook Roofing & Contracting to everyone I know!",
+      "publishedAt": "2023-08-30T14:02:46.303Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwcDg3QV9RRRAB!2m1!1s0x0:0x1ec6ee702d654d77!3m1!1s2@1:CIHM0ogKEICAgIDpp87A_QE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUR4aDhueEZ3EAE",
+      "reviewer": "Steven A.",
+      "rating": 5,
+      "text": "We were told our roof was totaled on our house 3 HOURS before we were supposed to close. Andy showed up and inspected the roof to confirm and had it marked for the insurance photos within an hour of calling him.  He worked with the adjuster and I had a new roof scheduled for the buyers before we closed that day.  Awesome work and works everything out with the insurance. Turned a stressful situation into a breeze and the roof looks fantastic.",
+      "publishedAt": "2023-06-16T01:32:07.270Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR4aDhueEZ3EAE!2m1!1s0x0:0x1ec6ee702d654d77!3m1!1s2@1:CIHM0ogKEICAgIDxh8nxFw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUN4bGR6YVhnEAE",
+      "reviewer": "Scott B.",
+      "rating": 5,
+      "text": "Andy and his team had great customer service from step one.<br>We had storm damage to our roof in a few places.  They were able to repair it quicky.  Andy was honest about what I needed, and I appreciate that the most. Too many companies try to take advantage of you nowadays.  I fully trust Ashbrook Roofing and Contracting for all my roofing issues!",
+      "publishedAt": "2023-05-22T12:56:15.640Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN4bGR6YVhnEAE!2m1!1s0x0:0x1ec6ee702d654d77!3m1!1s2@1:CIHM0ogKEICAgICxldzaXg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUN4MXRhdTdBRRAB",
+      "reviewer": "A C.",
+      "rating": 5,
+      "text": "We had a large project with lots of detail, and an arduous process with insurance. Andy was patient, thorough, and made the whole experience much less stressful. Highly recommended!",
+      "publishedAt": "2023-05-17T03:20:16.305Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN4MXRhdTdBRRAB!2m1!1s0x0:0x1ec6ee702d654d77!3m1!1s2@1:CIHM0ogKEICAgICx1tau7AE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURSNDRXbGR3EAE",
+      "reviewer": "Autumn H.",
+      "rating": 5,
+      "text": "Andy is a true professional. We have called on his expertise more than once for our roofing/guttering needs, and he delivers. Ashbrook Roofing recently helped us repair a damaged gutter, and we are completely satisfied with the work. Thanks Andy!",
+      "publishedAt": "2023-05-02T19:19:24.419Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURSNDRXbGR3EAE!2m1!1s0x0:0x1ec6ee702d654d77!3m1!1s2@1:CIHM0ogKEICAgIDR44Wldw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURScVp1Vk53EAE",
+      "reviewer": "Denton C.",
+      "rating": 5,
+      "text": "Hassle free roof repair! Andy and his team do great work! They re-roofed our entire house and garage in a single day! Everything was clean and tidy when we got home! Andy was on top of everything, answering every question and concern we had along the way. Ashbrook Roofing is my roofing company from now on!",
+      "publishedAt": "2023-04-28T13:36:50.141Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURScVp1Vk53EAE!2m1!1s0x0:0x1ec6ee702d654d77!3m1!1s2@1:CIHM0ogKEICAgIDRqZuVNw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURSOFlfNTBRRRAB",
+      "reviewer": "Bill C.",
+      "rating": 5,
+      "text": "I couldn't be happier with how Andy Ashbrook handled the installation of my roof.  He took care of the insurance process completely and the results were great!!  The quality of work was excellent and the work was scheduled in a very timely manner. I recommend this company very highly!!",
+      "publishedAt": "2023-04-27T23:34:08.009Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURSOFlfNTBRRRAB!2m1!1s0x0:0x1ec6ee702d654d77!3m1!1s2@1:CIHM0ogKEICAgIDR8Y_50QE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURSOGMzNUNBEAE",
+      "reviewer": "Elite B.",
+      "rating": 5,
+      "text": "Andy and his guys did awesome with our insurance claims on multiple properties. He handled everything for us and had them completed in a timely manner, we will definitely use them again!",
+      "publishedAt": "2023-04-27T22:03:31.232Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURSOGMzNUNBEAE!2m1!1s0x0:0x1ec6ee702d654d77!3m1!1s2@1:CIHM0ogKEICAgIDR8c35CA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURSc2ZmVXJBRRAB",
+      "reviewer": "Bob S.",
+      "rating": 5,
+      "text": "Best roofing service company in Wichita KS! Wouldn’t recommend anyone else…Andy’s customer service is unmatched. Vey professional, timely responses and always on schedule. All my future roofing repairs and installs will be done by Ashbrook Roofing!",
+      "publishedAt": "2023-04-27T18:37:44.559Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURSc2ZmVXJBRRAB!2m1!1s0x0:0x1ec6ee702d654d77!3m1!1s2@1:CIHM0ogKEICAgIDRsffUrAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURSc1pHcjNBRRAB",
+      "reviewer": "Shane K.",
+      "rating": 5,
+      "text": "Andy took care of replacing my roof and gutters without any problems. Very easy to work with! Will use again.",
+      "publishedAt": "2023-04-27T17:08:28.098Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURSc1pHcjNBRRAB!2m1!1s0x0:0x1ec6ee702d654d77!3m1!1s2@1:CIHM0ogKEICAgIDRsZGr3AE%7C%7C?hl=en-US",
+      "language": "en"
+    }
+  ],
+  "ratingOnly": []
+}
