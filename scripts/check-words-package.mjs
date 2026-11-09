@@ -160,7 +160,7 @@ if (reviews) {
   const nameWords = new Set([b.name, ...(b.owners || [])].join(" ").toLowerCase().split(/\W+/).filter(Boolean));
   const toks = (t) => strip(t).toLowerCase().replace(/one-on-one/g, " ").replace(/[^a-z0-9' ]+/g, " ").split(/\s+/).filter((w) => w && !nameWords.has(w)).map((w) => (NUM[w] !== undefined ? String(NUM[w]) : w));
   const stem = (w) => w.replace(/(es|s)$/, "");
-  const numPairs = (ts) => { const out = []; ts.forEach((w, i) => { if (/^\d+(\.\d+)?$/.test(w) && ts[i + 1] && !STOP.has(ts[i + 1]) && !/^(year|yr)s?$/.test(ts[i + 1])) out.push(`${w} ${stem(ts[i + 1])}`); }); return out; };
+  const numPairs = (ts) => { const out = []; ts.forEach((w, i) => { if (/^\d+(\.\d+)?$/.test(w) && ts[i + 1] && !STOP.has(ts[i + 1]) && !/^(year|yr)s?$|^\d+$|^[ap]m$/.test(ts[i + 1])) out.push(`${w} ${stem(ts[i + 1])}`); }); return out; };
   const grams = (ts, n = 4) => { const out = []; for (let i = 0; i + n <= ts.length; i++) { const g = ts.slice(i, i + n); if (g.filter((w) => !STOP.has(w)).length >= 3) out.push(g.join(" ")); } return out; };
   const revNums = new Map(), revGrams = new Map();
   for (const r of reviews) { const ts = toks(r.text); for (const x of numPairs(ts)) revNums.set(x, r.reviewer); for (const g of grams(ts)) revGrams.set(g, r.reviewer); }
