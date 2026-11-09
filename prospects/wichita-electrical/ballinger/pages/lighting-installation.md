@@ -28,7 +28,7 @@ You can bring a fixture you've already picked out, or we'll talk you through cho
 
 A ceiling fan needs more than a light fixture does. It's heavier, it moves, and it has to hang from a box made to hold it. In a ceiling that never had a fixture, there may be no box at all, and nothing in the joists to hold one.
 
-We cut in the box, add the supports, run the wire back to a switch and hang the fan. If you want a light, a fan, or both on separate switches, we plan that before we open the ceiling.
+We put in the supports, run the wire and hang the fan.
 
 > "I had 2 ceiling fans installed and both were where there were no existing lights. They put supports in the ceiling and installed the fans and wired them in. They did a fantastic job and cleaned up when finished."
 > — Ron P.
@@ -37,18 +37,18 @@ We cut in the box, add the supports, run the wire back to a switch and hang the 
 
 Recessed lights, often called can lights, make a room brighter without hanging anything from the ceiling. They work best when the layout is planned so the light covers the room evenly and doesn't create hot spots.
 
-Dimmers change the feel of a room, but the dimmer and the bulb have to be a match, or LED bulbs buzz and flicker. We match them.
+Dimmers change the feel of a room, but the dimmer and the bulb have to be a match, or LED bulbs buzz and flicker.
 
-We also replace existing fixtures: a dated light over the dining table, a bath vanity bar, a porch light. Swapping a fixture sounds easy until you open the box and find old wiring, no ground or a fixture that's heavier than the box can hold.
+We also replace existing fixtures. Swapping one sounds easy until you open the box and find old wiring, no ground or a fixture that's heavier than the box can hold.
 
-> "Ben hung our purchased light from where we had a recessed can light in no time at all. He saved us from our DIY attempt & when the canned light wasn’t as we expected, we called the pro. He is prompt (scheduled in 1day) & always communicates exactly what to expect & then delivers! Wears booties inside & cleans everything up wonderfully!"
+> "Ben hung our purchased light from where we had a recessed can light in no time at all. He saved us from our DIY attempt & when the canned light wasn’t as we expected, we called the pro. He is prompt (scheduled in 1day) & always communicates exactly what to expect & then delivers! Wears booties inside & cleans everything up wonderfully! We will always call Ben first when we need electrical work done."
 > — Nancy C.
 
 ## Outdoor and Under-Cabinet Lighting
 
 Outdoor lighting has to be rated for weather, and the outlets and connections need to be sealed against moisture. Lights around the house also work better with a plan for where the wire runs and how the lights switch on, whether that's a wall switch, a timer or a motion sensor.
 
-Under-cabinet lighting is a favorite for kitchens, because it lights the counter where you actually work. We run the wiring so it's hidden, and you just see the light.
+Under-cabinet lighting is a favorite for kitchens, because it lights the counter where you actually work. We run the wiring so the work doesn't show, and you just see the light.
 
 > "Ben did a great job installing outdoor lighting around my house. He was prompt with scheduling and showing up on time and explained well how he was going to do the job - great communicator."
 > — Steve A.
@@ -57,26 +57,26 @@ Under-cabinet lighting is a favorite for kitchens, because it lights the counter
 
 The fixture is the small part. The cost depends on what's behind the ceiling or wall: whether a switch and power are close by, whether there's an attic above to run wire through, and whether the box can carry the new fixture.
 
-A new light in a room that already has a fixture is a simple swap. A light or fan in a room with none, a finished ceiling and no attic access takes more work. We look first, so the number you get is for your house.
+A new light in a room that already has a fixture is a simple swap. A light or fan in a room with none, a finished ceiling and no attic access takes more work. You get the number before the work starts.
 
 Lights that dim, buzz or flicker after you install them yourself are often a mismatched dimmer or a loose connection in the box. If a fixture you've added is warm or smells hot, switch it off and call us.
 
 ## What We Install
 
 - Ceiling fans, with new supports and wiring where needed
-- Recessed (can) lights and dimmers
-- Replacement fixtures: ceiling, vanity, dining, porch
-- Outdoor, landscape and motion-sensor lighting
+- Recessed (can) lights
+- Replacement fixtures, indoors and out
+- Outdoor and porch lighting
 - Under-cabinet lighting for kitchens
 - New switches and outlets to go with the lights
 
 ## Questions Before You Call
 
 **Do I need to buy the fixtures first?**
-No. You can bring your own or ask us for options before you buy.
+Not necessarily. Some people bring a light they've already picked, and some ask us for options first.
 
 **Can you put a light or fan where there isn't one?**
-Yes. We add the wiring, a box and the supports it needs.
+Yes. We've hung fans in ceilings that had no light, with supports added.
 
 **How much does a lighting job cost?**
 Estimates are free. We price by the completed job, and you'll have the number before we start.

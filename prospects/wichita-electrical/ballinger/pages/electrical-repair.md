@@ -15,6 +15,8 @@ Electrical trouble rarely announces where it started. A dead outlet in the kitch
 
 Replacing the outlet won't fix any of those. So we trace the problem first, test the circuit, and work back to the source. Then we fix that.
 
+Houses that have had other hands in them make this harder, and that's the repair work we get called back for.
+
 We'll tell you what we found in plain words, and we'll tell you what it takes to repair it.
 
 > "Ben was very good at explaining every diagnostic step and found and corrected the problem, a bad breaker"
@@ -66,7 +68,7 @@ Sometimes the fix is small. Sometimes the right fix is to replace a section of o
 
 Sometimes the symptom points somewhere you wouldn't guess. A high electric bill isn't always the air conditioner. A dead dishwasher circuit can have a second problem hiding behind it.
 
-Because we trace the cause, we sometimes find a second one on the same visit. When we do, we tell you.
+That's why we trace the cause instead of swapping parts: it can lead somewhere you didn't expect.
 
 > "We thought it was our AC causing our electric bill to skyrocket but they were able to determine it was our well pump running constantly. Quickly diagnosed and fixed the issue."
 > — Candice S.
@@ -76,19 +78,19 @@ Because we trace the cause, we sometimes find a second one on the same visit. Wh
 - Outlets and switches that are dead, loose or warm
 - Breakers that trip or won't reset
 - Lights and fixtures that flicker or won't light
-- Circuits that lost power, including garages and outbuildings
+- Circuits that lost power, like a garage
 - Wiring left behind by earlier work
-- Doorbells, well pump switches and other small circuits
+- Doorbells, well pumps and other small circuits
 
 If the repair leads to something bigger, like an old panel that can't keep up, we'll say so, and you decide whether to go further. See our [electrician page](/) for panel upgrades.
 
 ## Questions Before You Call
 
 **What does a repair visit cost?**
-Estimates are free. We price by the completed job, not by the hour, so you know the total before we start.
+Estimates are free. We price by the completed job, not by the hour, and you hear the price before we start.
 
 **Do you fix it on the first visit?**
-Often, yes. When a repair needs a part or a bigger fix, we tell you and schedule it.
+That depends on what we find. If it needs a part or a bigger fix, we tell you what it is and schedule it.
 
 **Can you look at one or two other things while you're here?**
 Yes. Mention them when you call, or when we arrive.
