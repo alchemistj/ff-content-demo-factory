@@ -77,6 +77,7 @@ async function looksLike404(page) {
       for (const it of items) {
         if (!it.visible || it.inForm || it.type === 'submit') continue;
         if (it.tag === 'A' && /^(tel:|mailto:)/.test(it.href)) continue; // handled by crawl
+        if (/^https?:\/\//.test(it.href) && !/midasmaidservice\.com/.test(it.href)) continue; // external: status-checked by crawl
         const k = it.text + '|' + it.href + '|' + it.tag;
         if (seenKeys.has(k)) continue;
         seenKeys.add(k);
@@ -108,6 +109,7 @@ async function looksLike404(page) {
           rec.error = String(e.message).split('\n')[0].slice(0, 200);
         }
         out.results.push(rec);
+        console.error('[clicks] ' + vpName + ' ' + key + ' ' + (c.text || c.href).slice(0, 40) + ' -> ' + (rec.landedUrl || rec.error || '?'));
       }
       out.results.push({ vp: vpName, page: key, candidateCount: candidates.length, done: true });
     }
