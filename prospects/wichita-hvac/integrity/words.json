@@ -560,5 +560,96 @@
       "We clean up after the job"
     ]
   },
-  "strategy": {}
+  "strategy": {
+    "whyHeading": "Why we built this site",
+    "why": [
+      "Your heating and AC pages promise “24/7 Emergency Repair Service.” Your contact page says Monday to Friday, 8 to 5, weekends “at additional cost.” Someone with no heat on a Saturday gets two answers, and that is the call you most need to win.",
+      "Your customers already describe the weekend calls you answer. Dayna B.: “Our AC went out called and Sam here in hour on a Saturday morning.” Madison S.: “shoot you straight.” Today those words sit on Google, not on your site.",
+      "So the demo tells one story everywhere: your hours, and what to do when the system quits outside them. It opens with HVAC company in Wichita, KS, and gives AC repair and furnace repair a page each."
+    ],
+    "cardsHeading": "Be the HVAC Company People Find on Google",
+    "cardsIntro": "Each card is one page of the demo.",
+    "cards": [
+      {
+        "route": "/home/",
+        "title": "Homepage",
+        "why": "Where Google learns who you are and where you work.",
+        "problems": [
+          "Your homepage headline says “Heating and Cooling Services,” with no HVAC company and no Wichita, so Google can’t tell what you are or where.",
+          "Heat pump repair, motor replacement and commercial work are a list on your site, so owners of those systems don’t see you do the work."
+        ],
+        "fixes": [
+          "A headline that says HVAC company in Wichita, KS, right at the top.",
+          "A homepage section for heat pumps, motors and commercial buildings."
+        ],
+        "alsoAdd": "Every service you offer listed on both your website and your Google Business Profile, so Google gets the same answer from both."
+      },
+      {
+        "route": "/ac-repair-wichita-ks/",
+        "title": "AC Repair",
+        "why": "When the AC quits in a Wichita summer, people call the first company they find.",
+        "problems": [
+          "Your AC page is titled “Air Conditioning Service,” so “AC repair Wichita KS” has nothing built for it.",
+          "Your AC page promises “24/7” while your contact page prices weekends by phone."
+        ],
+        "fixes": [
+          "A page for AC repair in Wichita, KS, with what usually fails and what happens when you call.",
+          "Hours and after-hours pricing stated the same way, so the caller knows to ask."
+        ],
+        "alsoAdd": "Pages planned from what Google actually shows for each search, so every page targets something people really look for."
+      },
+      {
+        "route": "/furnace-repair-wichita-ks/",
+        "title": "Furnace Repair",
+        "why": "When the heat is out, people call the first company they reach.",
+        "problems": [
+          "Your heating page is titled “Heating Repair,” so “furnace repair Wichita KS” has nothing built for it.",
+          "Your “Heating System Installation” links go to the repair page."
+        ],
+        "fixes": [
+          "A page for furnace repair in Wichita, KS, covering what goes wrong, safety, and when to replace.",
+          "Replacing a furnace answered on the same page."
+        ],
+        "alsoAdd": "A check of what your competitors offer, so services you didn’t think to mention still get their own pages."
+      },
+      {
+        "route": "/contact/",
+        "title": "Contact",
+        "why": "Where a customer with a dead system decides to call.",
+        "problems": [
+          "Your site shows no street address and says Kechi while Google lists Wichita, so a map search can’t match you.",
+          "Your hours say Monday to Friday while two pages say 24/7."
+        ],
+        "fixes": [
+          "Your Wichita address, hours and number together on one page.",
+          "One honest line on after-hours calls: call and ask, priced by phone.",
+          "Your number in the first screen, and what to have ready."
+        ],
+        "alsoAdd": "Call and form tracking that shows which pages and towns your leads come from."
+      }
+    ],
+    "reportCardHeading": "What great HVAC company websites get right, and how yours measures up.",
+    "reportCard": [
+      {
+        "label": "Hours and after-hours calls told one way on every page",
+        "status": "Missing"
+      },
+      {
+        "label": "Headline says what you do and where",
+        "status": "Missing"
+      },
+      {
+        "label": "Each money service has its own page",
+        "status": "Missing"
+      },
+      {
+        "label": "Phone number one tap away",
+        "status": "Good"
+      }
+    ],
+    "closing": {
+      "heading": "Want a website like this for your business?",
+      "text": "Your customers already describe the company you are. Book a strategy call with Fluid Frame and we’ll walk you through this demo and what a full build adds."
+    }
+  }
 }
