@@ -3,6 +3,7 @@
   "business": {
     "name": "ICT Roofing & Exteriors",
     "slug": "ict-roofing",
+    "owners": ["Juan"],
     "city": "Wichita",
     "state": "KS",
     "companyType": "Roofing Company",
@@ -111,7 +112,7 @@
           "type": "split",
           "heading": "Juan, Brady and Arturo Run Your Job",
           "body": [
-            "**Juan owns the company and comes out to check the work himself.** Brady handles insurance claims and meets your adjuster. Arturo, our Project Manager, meets adjusters too and coordinates the work."
+            "**I'm Juan, and I own the company and come out to check the work myself.** Brady handles insurance claims and meets your adjuster. Arturo, our Project Manager, coordinates the work."
           ],
           "image": {
             "slot": "home-team",
@@ -148,7 +149,7 @@
           "type": "prose",
           "heading": "Repairs, With a Straight Answer",
           "body": [
-            "**A few missing shingles or a leak is a repair, and we treat it as one.** We find the cause, fix it, and tell you when the roof doesn't need replacing. [See roof repair.](/roof-repair-wichita-ks/)"
+            "**Missing shingles or a leak is a repair, and we treat it as one.** We find the cause, fix it, and tell you when the roof doesn't need replacing. [See roof repair.](/roof-repair-wichita-ks/)"
           ]
         },
         {
@@ -230,7 +231,7 @@
           "type": "prose",
           "heading": "We Meet Your Adjuster",
           "body": [
-            "**Brady or Arturo meets your adjuster at the house, and Juan has stood on the roof with one.** We show the damage on the roof itself, so the adjuster sees what you see."
+            "**Brady or Arturo meets your adjuster at the house, and I have stood on the roof with one.** We show the damage on the roof itself, so the adjuster sees what you see."
           ]
         },
         {
@@ -551,7 +552,7 @@
     }
   ],
   "footer": {
-    "about": "ICT Roofing & Exteriors is a locally owned Wichita roofing company. Juan, Brady and Arturo replace and repair roofs, meet your insurance adjuster after hail, and handle gutters and siding.",
+    "about": "ICT Roofing & Exteriors is a locally owned Wichita roofing company. We're Juan, Brady and Arturo, and we replace and repair roofs, meet your insurance adjuster after hail, and handle gutters and siding.",
     "why": [
       "Free roof inspections",
       "We meet your insurance adjuster",

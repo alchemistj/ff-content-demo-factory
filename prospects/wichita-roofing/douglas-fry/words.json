@@ -3,6 +3,7 @@
   "business": {
     "name": "Douglas Fry Roofing",
     "slug": "douglas-fry",
+    "owners": ["Doug", "Jason"],
     "city": "Wichita",
     "state": "KS",
     "companyType": "Roofing Company",
@@ -99,7 +100,7 @@
       "hero": {
         "eyebrow": "Family roofers in Wichita since 1981",
         "h1": "Roofing Company in Wichita, KS — Douglas Fry Roofing",
-        "sub": "Doug Fry started this family company in 1981, and you always speak with an owner, Doug or his son Jason. We install and repair tile, DaVinci, Brava, wood shake and metal roofs.",
+        "sub": "We're Doug and Jason Fry, and we own this family company, started in 1981, so you always speak with an owner. We install and repair tile, DaVinci, Brava, wood shake and metal roofs.",
         "primaryCta": {
           "label": "Call (316) 655-9777",
           "action": "call"
@@ -124,8 +125,8 @@
           "type": "split",
           "heading": "You Talk to an Owner, Not a Salesperson",
           "body": [
-            "**When you call, you reach Doug or Jason Fry.** We have no commissioned salespeople or project managers.",
-            "Jason joined his dad in 2001 and handles most inspections, estimates and insurance calls himself."
+            "**When you call, you reach one of us, Doug or Jason Fry.** We have no commissioned salespeople or project managers.",
+            "I'm Jason, and I joined my dad in 2001. I handle inspections, estimates and insurance calls myself."
           ],
           "image": {
             "slot": "home-owners",
@@ -143,7 +144,7 @@
           "type": "split",
           "heading": "Tile Roofs Are Our Specialty",
           "body": [
-            "**Concrete and clay tile is the roof we know best, from a few cracked tiles to a full barrel tile tear-off.** We also install DaVinci, Brava, premium asphalt and standing seam metal.",
+            "**Concrete and clay tile is the roof we know best, from cracked tiles to full tear-offs.** We also install DaVinci, Brava, asphalt and standing seam metal.",
             "Choosing a whole new roof? Start with [roof replacement](/roof-replacement-wichita-ks/). Chasing a leak or a broken tile? See [roof repair](/roof-repair-wichita-ks/)."
           ],
           "image": {
@@ -162,7 +163,7 @@
           "type": "prose",
           "heading": "Hail, Wind and Your Insurance",
           "body": [
-            "**When hail or wind hurts your roof, Jason works with your insurance company from the first inspection to the last nail.**"
+            "**When hail or wind hurts your roof, I work with your insurance company from the first inspection to the last nail.**"
           ]
         },
         {
@@ -179,7 +180,7 @@
           "type": "prose",
           "heading": "Wichita and South-Central Kansas",
           "body": [
-            "We roof homes in Wichita, Andover, Bel Aire, Maize, Haysville, Augusta and Wellington, and across south-central Kansas from Dodge City to Hays."
+            "We work in Wichita, Andover, Bel Aire, Maize, Haysville, Augusta and Wellington, and across south-central Kansas from Dodge City to Hays."
           ]
         },
         {
@@ -242,7 +243,7 @@
           "type": "split",
           "heading": "Hail Damage Without the Runaround",
           "body": [
-            "**Jason works with your insurance company on hail and wind claims, and he has done it on tile, shake and asphalt roofs.** You have one person to call with questions, and he is an owner."
+            "**I'm Jason, and I work with your insurance company on hail and wind claims. I have done it on tile, shake and asphalt roofs.** You have one person to call with questions, and I'm an owner."
           ],
           "image": {
             "slot": "replacement-hail",
@@ -285,8 +286,8 @@
           "heading": "How a Replacement Goes",
           "items": [
             {
-              "title": "Jason inspects your roof",
-              "text": "He gets up on it to see the damage for himself."
+              "title": "I inspect your roof",
+              "text": "I get up on it to see the damage for myself."
             },
             {
               "title": "You choose the material",
@@ -319,7 +320,7 @@
             },
             {
               "q": "Can you work with my insurance company?",
-              "a": "Yes. Jason works with your insurer on hail and wind claims. What the policy covers is decided between you and your insurance company."
+              "a": "Yes. I'm Jason, and I work with your insurer on hail and wind claims. What the policy covers is decided between you and your insurance company."
             },
             {
               "q": "Do you replace tile roofs?",
@@ -438,8 +439,8 @@
           "heading": "How a Repair Goes",
           "items": [
             {
-              "title": "Jason looks at the roof",
-              "text": "He gets up on it to find where the water is getting in."
+              "title": "I look at the roof",
+              "text": "I get up on it to find where the water is getting in."
             },
             {
               "title": "You get the estimate in writing",
@@ -457,7 +458,7 @@
           "items": [
             {
               "q": "Can you repair a tile roof?",
-              "a": "Yes. Concrete and clay tile repair is the work Doug Fry built this company on."
+              "a": "Yes. Concrete and clay tile repair is the work we built this company on."
             },
             {
               "q": "Can you fix a leak another roofer couldn't?",
@@ -469,7 +470,7 @@
             },
             {
               "q": "Will you work with my insurance?",
-              "a": "Yes. Jason works with your insurance company when storm damage needs a repair."
+              "a": "Yes. I'm Jason, and I work with your insurance company when storm damage needs a repair."
             }
           ]
         },
@@ -489,7 +490,7 @@
       "hero": {
         "eyebrow": "Contact",
         "h1": "Contact Douglas Fry Roofing",
-        "sub": "Call (316) 655-9777 and you reach Jason or Doug Fry, the owners. Tell us what your roof is doing and we will set up a time to look at it.",
+        "sub": "Call (316) 655-9777 and you reach one of us, Jason or Doug Fry, the owners. Tell us what your roof is doing and we will set up a time to look at it.",
         "primaryCta": {
           "label": "Call (316) 655-9777",
           "action": "call"
@@ -542,7 +543,7 @@
     }
   ],
   "footer": {
-    "about": "Douglas Fry Roofing is a family roofing company in Wichita. Doug Fry started it in 1981, and his son Jason works beside him. We install and repair tile, DaVinci, Brava, wood shake, asphalt and standing seam metal roofs.",
+    "about": "Douglas Fry Roofing is a family roofing company in Wichita. We're Doug and Jason Fry, and we work side by side; Doug started the company in 1981. We install and repair tile, DaVinci, Brava, wood shake, asphalt and standing seam metal roofs.",
     "why": [
       "You speak with an owner, never a commissioned salesperson",
       "Workmanship warranties of 5, 10 and 15 years",

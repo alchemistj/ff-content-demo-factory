@@ -3,6 +3,7 @@
   "business": {
     "name": "Flawless Roofing Co",
     "slug": "flawless",
+    "owners": ["Ravi"],
     "city": "Wichita",
     "state": "KS",
     "companyType": "Roofing Company",
@@ -106,8 +107,8 @@
           "type": "split",
           "heading": "Work With Ravi, the Owner",
           "body": [
-            "**Ravi owns Flawless Roofing Co and works on our jobs himself.** He has inspected roofs, filed claims and met insurance adjusters at the house.",
-            "Before the work starts, he makes sure you know what will be done to your house."
+            "**I'm Ravi, and I own Flawless Roofing Co and work on our jobs myself.** I have inspected roofs, filed claims and met insurance adjusters at the house.",
+            "Before work starts, I walk you through what we'll do."
           ],
           "image": {
             "slot": "home-owner",
@@ -181,7 +182,7 @@
             },
             {
               "q": "Who will I work with?",
-              "a": "Ravi, the owner, works on our jobs himself. The office answers Monday to Friday, 10:00 AM to 6:00 PM."
+              "a": "I'm Ravi, the owner, and I work on our jobs myself. The office answers Monday to Friday, 10:00 AM to 6:00 PM."
             }
           ]
         },
@@ -227,7 +228,7 @@
           "heading": "We Take the Claim Off Your Plate",
           "body": [
             "**When hail or a storm has damaged your roof, we start with a free inspection and file your insurance claim.** Then we work with your adjuster toward approval for the replacement.",
-            "Ravi has met the adjuster at the house and seen the claim through to a new roof."
+            "I have met the adjuster at the house and seen the claim through to a new roof."
           ],
           "image": {
             "slot": "replacement-claim",
@@ -320,7 +321,7 @@
             },
             {
               "q": "Who will I work with?",
-              "a": "Ravi, the owner, works on our roof jobs himself and answers your questions along the way."
+              "a": "I'm Ravi, the owner, and I work on our roof jobs myself and answer your questions along the way."
             },
             {
               "q": "Do you replace roofs on commercial buildings?",
@@ -348,7 +349,7 @@
       "hero": {
         "eyebrow": "Leaks and storm damage",
         "h1": "Roof Repair in Wichita, KS — Flawless Roofing Co",
-        "sub": "We fix leaks, wind damage and storm damage, starting with a free inspection. Ravi has come out the same day to tarp a leak for free, with a storm on the way.",
+        "sub": "We fix leaks, wind damage and storm damage, starting with a free inspection. I have come out the same day to tarp a leak for free, with a storm on the way.",
         "primaryCta": {
           "label": "Call (316) 730-0301",
           "action": "call"
