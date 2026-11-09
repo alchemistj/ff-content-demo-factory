@@ -1,89 +1,96 @@
-# Evolve Exteriors homepage, hand-written draft (2026-11-09)
+# Evolve Exteriors homepage, hand-written draft v2 (2026-11-09)
 
-Written prose-first, the way the approved examples read. Facts come from facts.md. Every quote is word for word from a five-star review in reviews.json, with "…" marking a trim. Trade knowledge (why windows fog, leak or let noise in) is general knowledge, not a claim about Evolve.
+The homepage sells the whole company (keyword: exterior remodeling company). Each service gets its own section, Greene Planet-style, and links to its page where one exists. The window-only material moved to window-page-draft.md. Facts come from facts.md. Every quote is word for word from a five-star review in reviews.json, with "…" marking a trim. Trade knowledge (what wears out siding, why sliders drag) is general, not a claim about Evolve.
 
 ---
 
-**Eyebrow:** Owner-led window replacement
+**Eyebrow:** Locally owned in Wichita
 
 # Exterior Remodeling Company in Wichita, KS — Evolve Exteriors
 
-We're Colton and Riley. We built Evolve to give you the window quality and guarantees of the big names, with the owners close enough to measure your house, quote it and come back to check the finished job.
+We're Colton and Riley. We replace windows, put up vinyl siding and install sliding patio doors, with the products and guarantees of the big companies and the owners close enough to look at your house ourselves.
 
-[Call (316) 435-8009]  [Get a Free Estimate]
+`[Call (316) 435-8009]` `[Get a Free Estimate]`
 
-> "We have been hesitant due to the sky high pricing of a lot of companies around Wichita, until we were told about Evolve Exteriors. We met with Colton, who sold us the windows at a great price and they were here within about a month and a half's time and at our house a few days after that. … By the time they were done, everything had already been cleaned up and put away and you couldn't even tell anyone had been working inside or outside the house. Colton came by to make sure everything was to our liking and, overall, I'm very happy with the finished product and how much cooler our house feels!"
+> "We have been hesitant due to the sky high pricing of a lot of companies around Wichita, until we were told about Evolve Exteriors. We met with Colton, who sold us the windows at a great price and they were here within about a month and a half's time and at our house a few days after that. … Colton came by to make sure everything was to our liking and, overall, I'm very happy with the finished product and how much cooler our house feels!"
 > — Reagan P.
 
-## Big-Company Windows Without the Big-Company Markup
+## Big-Company Products, Owners on the Job
 
-Shopping for windows in Wichita often goes the same way. A big-name company sends a salesperson for an evening-long pitch, the price drops if you sign tonight, and the number is still more than you planned to spend. A lot of what you're paying for is the advertising, the trucks and the commission, not the window.
+The outside of your house is one system. Windows, siding, doors and the trim around them all meet at the same edges, and a leak or a draft at one shows up as a problem at the others. That's why we do all of it, and why one of us comes out to look before anyone quotes a price.
 
-We run Evolve differently. We don't spend on big ad campaigns. Most of our work comes from neighbors and word of mouth, so that money stays out of your price. One of us comes to your house, measures every opening and shows you the actual window: how it's built, how it opens, how it cleans. You get the price with no pressure to sign that day. Do the whole house now, or a few rooms at a time as your budget allows. And if you bring us a lower price on a comparable window, we'll beat it.
+We run Evolve the way we'd want a contractor to treat our own houses. We don't spend on big ad campaigns, so that cost stays out of your price. You get a real look at what's wrong, the price with no pressure to sign that day, and the choice to do the whole exterior at once or one project at a time. And because we're a small company, the people who quote your job are the people you call if anything isn't right.
 
-## Signs Your Windows Are Costing You
+## Replacement Windows
 
-Most people don't decide to replace windows on a whim. Something tips them off. These are the problems we see most, and what each one usually means:
+Most of our work is windows, and most people call us for the same few reasons: a room that never gets comfortable, curtains that move with the window shut, fog between the panes, or a sash that sticks. Each one points to a window that has stopped sealing, and you're paying to heat and cool the outdoors through it.
 
-- **Curtains move when the window is shut.** Air is getting past worn seals or a frame that has shifted. You're paying to heat and cool the outdoors.
-- **Fog or haze between the panes.** The seal that holds the insulating gas between the panes has failed. The window has lost most of its insulating value, and it won't clear up on its own.
-- **One room is always hotter or colder than the rest.** Old single-pane glass and thin frames let the summer sun and winter cold straight through. West-facing rooms feel it first in a Kansas July.
-- **You can hear the street, the neighbor's dog, the train.** Sound comes in through the same gaps air does. Sealed, multi-pane glass quiets a house more than most people expect.
-- **Sashes that stick, won't lock or won't stay open.** Worn balances and warped frames. In an older house, it's rarely just one window.
+We measure every opening, show you the window up close, and order each one to fit. In older Wichita houses, we'll also show you where two or three small windows could become one larger one. That means more light and fewer windows to buy. Most homes are done in a day. Our energy efficient windows carry a manufacturer's lifetime warranty, from glass breakage to how the window opens and closes.
 
-If it's one or two windows, replace those and stop there. If it's most of the house, we'll show you what doing it all at once costs next to doing it in stages, and you choose.
+Casement, double hung, sliding, awning, hopper, picture, bay and basement windows.
 
-> "The first night after installation, we noticed a dramatic drop in temperature inside the house—perfect timing with this summer heat! We also didn't expect the windows to provide such great noise cancellation. We no longer hear the trains or outside noises like we used to. Now the only thing blowing our curtains is the air from the vents—not the wind sneaking in through old windows!"
+[See window replacement →](/window-replacement-wichita-ks/)
+
+> "Our basement windows were so old and worn out that we could hear the neighbor dog barking like it was in our house. Our new windows were just installed and it is night and day different. We can't hear a PEEP! No dogs, no lawn mowers, no thunderstorms.. NOTHING!"
+> — Ashley K.
+
+## Vinyl Siding
+
+Siding takes the Kansas wind, hail and summer sun before anything else on the house does. When it's worn out, you see it: faded or chalky panels, cracks, warped or melted spots, and pieces the wind keeps loosening. What you don't see is the wall behind it, where gaps let in drafts and water.
+
+We'll tell you which kind of siding you have. Some only needs a few repairs and has years left. Some is failing, or was put up badly in the first place, and patching it only buys time. A siding consultation takes about an hour. We look at the whole house, talk through colors and styles, and give you the price. When the new siding goes up, the old siding goes away with us.
+
+[See vinyl siding →](/vinyl-siding-wichita-ks/)
+
+> "During the install, they pointed out a major issue with our siding—it was worn out, melted in spots, and poorly installed by the original builder. They didn't hesitate to walk us through the problem, explain our options clearly, and help us make the best long-term decision."
 > — Beth W.
 
-## Fewer, Bigger Windows Where They Make Sense
+## Soffit and Fascia
 
-Older Wichita houses were often built with rows of small windows: three narrow units where one wide one would do. When we measure, we look at every opening and ask whether it should stay the way it was built. Combining two or three small windows into one larger one gives you more glass and a cleaner look from the street. It also means fewer windows to buy and install, which can take a real bite out of the price of the job. We show you both versions and you decide.
+Soffit and fascia are the boards under and along the edge of your roof. When they go soft or start pulling away, water gets behind the gutters, and birds and squirrels find a way into the attic. We replace them along with your siding, so the whole edge of the house matches the new walls.
 
-> "Our house originally had 34 windows, and Anthony was able to make it so that we would only need 17 windows to replace the whole house."
-> — Rob R.
+## Sliding Patio Doors
 
-## Made for Old Openings, Not Just New Ones
+An old sliding door is usually the leakiest opening in the house. The rollers wear out, the track bends, and the seal where the two panels meet stops sealing. You end up shoving the door open with your shoulder and feeling the draft all winter. A new slider glides on new rollers and seals tight when it's closed. We install it on its own or alongside your new windows, so the glass and frames match.
 
-A house from the 1940s or '50s rarely has a square opening left. Frames settle, trim gets painted over a dozen times, and a stock-size window won't sit right in a crooked hole. We measure every opening and order each window to fit it, then finish the trim so the new window looks like it was always there. Floors, furniture and painted woodwork get covered before anything comes out.
+> "I now can open my sliding glass door with 1 finger instead of putting my whole body in it."
+> — Karla S.
 
-> "They took their time to be sure to cover things and protect everything they could, they answered all my questions, they put a lot of care into the finishing touches, and they left everything clean and beautiful. I'm serious - these are some beautiful windows! It completely changed our home. They managed to work new windows so quickly into our mangled up 80 year old window openings and trim, and made it look easy."
-> — Dustin M.
+## One Project or One at a Time
 
-## Everything We Do
+Windows and siding meet at the trim around every opening. Do them together, and the trim and caulk get finished once and the colors are chosen together. You also deal with one company for the whole wall. If the budget says windows this year and siding next year, that works too. Plenty of our customers do it in that order, and we'll keep the plan in mind so the second project fits the first.
 
-Windows are most of our work. When we're already at your house, we'll give you a straight read on the siding, doors and trim around them, including when they're fine as they are.
+> "I absolutely love my new windows, the guys were awesome, very professional and courteous. answered all my questions. I still love my windows every time I look at my house, Its beautiful. I have new siding and it really made my home beautiful, it's quieter, and is staying so much cooler."
+> — Melinda D.
 
-*(Service cards render here: Window Replacement, Vinyl Siding, Sliding Patio Doors, Basement Windows, Bay and Picture Windows, Soffit and Fascia.)*
+## How a Project Goes
 
-## What Happens After You Call
-
-1. **A consultation at your house.** It takes about an hour and a half. One of us measures every opening, shows you the window up close and walks you through styles, colors, hardware and grids. Then you get the price.
-2. **Your windows are built to your measurements.** Plan on a few weeks between ordering and install. We give you the date when you order.
-3. **Install day.** The crew shows up in the morning and covers the work area first. Most homes are done in a day. On bigger jobs, the crew comes back a second morning to finish trim and caulk.
-4. **Walkthrough and follow-up.** Before the crew leaves, everything is cleaned up and they show you how your new windows open, tilt and lock. Then one of us checks back to make sure you're happy with the job.
+1. **We look at your house.** One of us comes out, measures and looks over what you want done. A window consultation takes about an hour and a half; siding takes about an hour. You see the products up close and get the price.
+2. **We order your materials.** Windows are built to your measurements, so plan on a few weeks. We give you the install date when you order.
+3. **The crew does the work.** They show up in the morning and cover and protect your house and yard first. They haul away the old windows, siding and trash when they're done.
+4. **We check back.** Before the crew leaves, they walk you through the finished job. Then one of us follows up to make sure everything is right.
 
 ## Wichita, Oklahoma City and 150 Miles Around
 
-We have a hub in each city and work within 150 miles of both: Haysville, Derby, Mulvane, El Dorado, McPherson, Salina and Emporia on the Kansas side, and Edmond, Yukon, Guthrie and Ponca City in Oklahoma. Call the office closest to you.
+We have a hub in each city and work within 150 miles of both. On the Kansas side that includes Haysville, Derby, Mulvane, El Dorado, McPherson, Salina and Emporia. In Oklahoma it includes Edmond, Yukon, Guthrie and Ponca City. Call the office closest to you.
 
 ## Questions Before You Call
 
-**How long does installation take?**
-Most homes are done in one day. If you're replacing a lot of windows or the old openings need extra trim work, the crew may come back a second morning to finish.
+**Are estimates free?**
+Yes, for windows, siding and patio doors.
 
-**What affects the price?**
-How many windows you replace, their size and style, the glass you choose, and how much work the old openings and trim need. Combining small windows into bigger ones can lower the total. You see the full price at your consultation, before you commit to anything.
+**How long does a project take?**
+Most window jobs are finished in a day. Bigger ones may need a second morning for trim and caulk. Siding depends on the size of the house, and you get the schedule at your consultation.
 
-**What does the warranty cover?**
-Our energy efficient windows carry a manufacturer's lifetime warranty, from glass breakage to how the window opens and closes.
+**Should I do windows and siding at the same time?**
+If both need it, doing them together means the trim around each window is finished once and everything matches. If the budget points to one at a time, start with whichever is costing you more in comfort or energy. That's usually the windows.
 
-**Can I replace a few windows now and the rest later?**
-Yes. Plenty of people start with the rooms that bother them most and finish the house later.
+**What if I get a lower quote?**
+Bring it to us. If it's for a comparable product, we'll beat it.
 
 **Do you offer financing?**
 Yes, including low-to-no-interest options. Ask about it at your consultation.
 
-## See the Window Before You Decide
+## Get a Straight Look at Your House
 
-Book a consultation and one of us will measure your house, show you the window and give you a price, with no pressure to sign that day. Wichita: (316) 435-8009. Oklahoma City: (405) 363-2294. Monday to Friday, 9:00 AM to 5:00 PM.
+Call and one of us will come out, look at your windows, siding or doors, and give you a price, with no pressure to sign that day. Wichita: (316) 435-8009. Oklahoma City: (405) 363-2294. Monday to Friday, 9:00 AM to 5:00 PM.
