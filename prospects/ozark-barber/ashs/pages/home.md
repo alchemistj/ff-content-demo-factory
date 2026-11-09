@@ -2,22 +2,26 @@
 
 # Barbershop in Ozark, MO — Ash's Barber Collective
 
-You describe the cut, and it comes out a little different, or right once and never again. At Ash's, the cut you ask for is the cut you get, the same way next time. Call or book a chair.
+Your haircut should get better every time you sit down. Ash starts with the cut you ask for, then learns what works on you and keeps refining it. Call or book a chair.
 
 **Buttons:** Call (417) 380-3078 | Book Your Haircut
 
 > "Ashley is the only person I've found in the area that cuts my hair just the way I like it every time!"
 > — Levi B.
 
-## The Same Cut, Every Time
+## A Cut That Gets Better Every Visit
 
-Most men have a story about the barber who got it right once. Then the next visit someone else was in the chair, or the same barber had moved on to a new idea of your haircut, and you were back to explaining the whole thing.
+Most barbers aim to repeat the last cut. That's the floor here, not the goal.
 
-We'd rather you never have to start over.
+A haircut wears differently than it looks in the chair. It sits one way with a collared shirt and another with a hoodie. It feels different at work, on a weekend and after a week of Missouri humidity.
 
-You tell us the length on top, what you want on the sides and where the neckline sits. Bring a photo if you have one. We cut what you described, and we do it the same way the next time you sit down.
+So each visit starts with how the last one wore.
 
-That is the whole idea of the shop. A haircut is easy to get once. Getting the same one repeatedly is what makes a barber worth keeping.
+What did you like by day ten? What bugged you? Did the top fall the way you wanted with what you actually wear?
+
+Ash takes that in and adjusts. A little more off the crown, a softer line at the neck, a fade that sits lower. Visit by visit, the cut moves toward the one that's really yours.
+
+You get the cut you ask for every time. You also get a barber who keeps working on it with you.
 
 > "Just moved to this Ozark Community from Kansas. Needed a barber to take care of my hair needs...Can't say enough about Ash, fantastic barber and great for conversation."
 > — Gordon W.
@@ -73,7 +77,7 @@ Fast service matters because you have somewhere to be. The conversation matters 
 1. **Book a time.** Pick a slot on the booking page, or call or text.
 2. **Say what you want.** The length on top, the sides, the neckline. A photo is the fastest way to say it.
 3. **Sit back.** The cut gets done the way you described it, and you check it before you get up.
-4. **Come back for the same one.** Next time, tell us "the usual" and mean it.
+4. **Tell us how it wore.** Next visit, start with what you liked and what you'd change. That's how the cut keeps getting better.
 
 ## Find Us on N 22nd St
 

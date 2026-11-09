@@ -34,3 +34,7 @@ reviews.ts gives only text and a name per review, no star ratings or dates. As i
 - Whether beard oil is sold, and which brands.
 - Email address (the old contact form has an Email field but no address is given).
 - The business's own website or Google listing: not reached.
+
+
+## From Josh (a regular client of Ash's), 2026-11-09
+- Ash is creative and customizes each cut. She keeps refining a client's cut from visit to visit based on what the client wants and how it wore (with different outfits and settings), working toward the client's favorite cut. Source: Josh, firsthand.

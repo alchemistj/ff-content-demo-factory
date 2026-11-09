@@ -14,7 +14,7 @@ Evidence: Levi B. ("the only person I've found in the area that cuts my hair jus
 
 ## Home sections
 1. Hero: the moment is a cut that never comes out the way you described. One paragraph, call to book. Proof review: Levi B.
-2. The same cut every time. Reason: barbers who rush or change chairs mean a new interpretation of your cut each visit. What we do: listen, work from your photo or description. Review: Gordon W. (new in town, needed a barber).
+2. (Superseded 2026-11-09, Josh) A cut that gets better every visit: Ash keeps refining it from how the last one wore. Was: The same cut every time. Reason: barbers who rush or change chairs mean a new interpretation of your cut each visit. What we do: listen, work from your photo or description. Review: Gordon W. (new in town, needed a barber).
 3. Haircuts and fades. Moment: the grown-out fade. Reason: a fade is a blend; it shows when it grows out. Review: Austin C.
 4. Kids and teens, link. Moment: a kid who hates the clippers. Reason: kids fight a chair that feels rushed. Review: Sabrina L. (lives on the kids page: not reused; home uses Brady R. for pace and gear).
 5. Beard work, link. Moment: a beard that has grown out of shape. Reason: lines and length are separate problems. Review: none on home (Scott W. is on the beard page).
