@@ -1,0 +1,658 @@
+{
+  "schema": "words-package/v1",
+  "business": {
+    "name": "Douglas Fry Roofing",
+    "slug": "douglas-fry",
+    "city": "Wichita",
+    "state": "KS",
+    "companyType": "Roofing Company",
+    "phones": [
+      {
+        "label": "Main",
+        "display": "(316) 655-9777",
+        "tel": "+13166559777"
+      },
+      {
+        "label": "Office",
+        "display": "(316) 264-1511",
+        "tel": "+13162641511"
+      }
+    ],
+    "email": null,
+    "hours": null,
+    "address": "1835 N. Ohio, Wichita, KS 67214",
+    "serviceArea": {
+      "summary": "Wichita and south-central Kansas",
+      "towns": [
+        "Wichita",
+        "Andover",
+        "Bel Aire",
+        "Maize",
+        "Haysville",
+        "Augusta",
+        "Wellington",
+        "Great Bend",
+        "Hays"
+      ]
+    }
+  },
+  "trustBar": [
+    "Roofing Since 1981",
+    "Family Owned",
+    "Talk to an Owner, Not a Salesperson",
+    "Tile Roof Specialists"
+  ],
+  "services": [
+    {
+      "name": "Roof Replacement",
+      "route": "/roof-replacement-wichita-ks/",
+      "blurb": "A whole new roof in the material that suits your house, with the scope, warranty and price in writing."
+    },
+    {
+      "name": "Roof Repair",
+      "route": "/roof-repair-wichita-ks/",
+      "blurb": "Leaks traced to the real cause and fixed, on tile, shake, asphalt, DaVinci and metal roofs."
+    },
+    {
+      "name": "Tile Roofs",
+      "route": null,
+      "blurb": "Concrete and clay tile installed and repaired, with matching tiles when a section has to be lifted and relaid."
+    },
+    {
+      "name": "DaVinci and Brava Synthetic Roofs",
+      "route": null,
+      "blurb": "Synthetic slate, shake and tile. We have installed DaVinci since 2002."
+    },
+    {
+      "name": "Wood Shake and Wood Shingle Repair",
+      "route": null,
+      "blurb": "Repair and installation on a roof type few roofing companies have the skill to work on."
+    },
+    {
+      "name": "Standing Seam Metal Roofs",
+      "route": null,
+      "blurb": "Horizon lock panels, with workmanship warranties from 5 up to 15 years."
+    },
+    {
+      "name": "New Construction Roofing",
+      "route": null,
+      "blurb": "Roofs for new homes, with workmanship warranties up to 10 years."
+    },
+    {
+      "name": "Commercial Roofing",
+      "route": null,
+      "blurb": "Our commercial projects include a chapel, an old train station and a university's barrel tile roof."
+    },
+    {
+      "name": "Hail and Wind Insurance Claims",
+      "route": null,
+      "blurb": "Jason deals with your insurance company, so you are not sorting out the paperwork alone."
+    }
+  ],
+  "pages": [
+    {
+      "role": "home",
+      "route": "/home/",
+      "navLabel": "Home",
+      "keyword": "roofing company Wichita KS",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Family roofers in Wichita since 1981",
+        "h1": "Roofing Company in Wichita, KS — Douglas Fry Roofing",
+        "sub": "Doug Fry started this company in 1981, and his son Jason works with you on inspections, estimates and insurance. We install and repair tile, DaVinci, Brava, wood shake and metal roofs, and you always speak with an owner.",
+        "primaryCta": {
+          "label": "Call (316) 655-9777",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Get a Written Estimate",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "home-hero",
+          "alt": "Wichita home with a clay tile roof in warm afternoon light",
+          "brief": "two-story house with a clay tile roof on the right half of the frame, mature tree and lawn leading off to the left, calm clear sky behind the text side, no readable text, no people, no tools"
+        }
+      },
+      "sections": [
+        {
+          "type": "review",
+          "quote": "If you are in need of roofing replacement, repair, or just want an expert opinion on what your roof requires to properly protect your home, Douglas Fry Roofing should be your first call.",
+          "name": "Dave N."
+        },
+        {
+          "type": "split",
+          "heading": "You Talk to an Owner, Not a Salesperson",
+          "body": [
+            "**Doug and Jason Fry answer to you, and we have no commissioned salespeople or project managers.** Doug started the company in 1981. Jason joined the family business in 2001 and is the one you will deal with most."
+          ],
+          "image": {
+            "slot": "home-owners",
+            "alt": "Brick Wichita home with a shake-style roof and a pickup parked in the drive",
+            "brief": "brick house with a shake-style roof on the right, driveway leading off to the left, soft overcast sky behind the text side, no readable text, no people, no tools"
+          },
+          "imageSide": "right"
+        },
+        {
+          "type": "review",
+          "quote": "Doug and Jason are wonderful! We have total confidence in their recommendations and execution of projects. We love that they are local and care about their work and reputation.",
+          "name": "Leah D."
+        },
+        {
+          "type": "split",
+          "heading": "Tile Roofs Are Our Specialty",
+          "body": [
+            "**We install and repair concrete and clay tile, and we order matching tiles when a section has to come up.** We also put on DaVinci, Brava, premium asphalt and standing seam metal, and we repair wood shake and wood shingle roofs."
+          ],
+          "image": {
+            "slot": "home-tile",
+            "alt": "Close view of a concrete barrel tile roof edge",
+            "brief": "curved concrete barrel tile roof edge on the right, eave and gutter running off to the left, calm blue-gray sky behind the text side, no readable text, no people, no tools"
+          },
+          "imageSide": "left"
+        },
+        {
+          "type": "review",
+          "quote": "Being a contractor myself I have much appreciation for Fry roofing. Both Doug and Jason Fry are very experience installers themselves. If you have a clay or concrete tile roof you need to contact Fry Roofing.",
+          "name": "Kansas E."
+        },
+        {
+          "type": "prose",
+          "heading": "Hail, Wind and Your Insurance",
+          "body": [
+            "**When a storm hurts your roof, Jason works with your insurance company from the first inspection to the last nail.**"
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Jason with Douglas Fry Roofing did an excellent job working with our insurance to get our claim approved.",
+          "name": "Mike F."
+        },
+        {
+          "type": "services",
+          "heading": "Everything We Do",
+          "intro": "Tile, synthetic and wood shake roofs are where we are strongest."
+        },
+        {
+          "type": "prose",
+          "heading": "Wichita and South-Central Kansas",
+          "body": [
+            "We roof homes in Wichita, Andover, Bel Aire, Maize, Haysville, Augusta and Wellington, and across south-central Kansas from Dodge City to Hays."
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Tell Us What Your Roof Is Doing",
+          "text": "Call (316) 655-9777 and ask for Jason or Doug. Every repair and re-roof estimate comes in writing."
+        }
+      ]
+    },
+    {
+      "role": "service",
+      "route": "/roof-replacement-wichita-ks/",
+      "navLabel": "Roof Replacement",
+      "keyword": "roof replacement Wichita KS",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Tile, DaVinci, Brava, shake, asphalt and metal",
+        "h1": "Roof Replacement in Wichita, KS — Douglas Fry Roofing",
+        "sub": "A new roof starts with choosing the material, and tile, DaVinci, Brava and standing seam metal are where we are strongest. You get a written estimate with the scope of work, the warranty and the price, from a company where you can always reach an owner.",
+        "primaryCta": {
+          "label": "Call (316) 655-9777",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Get a Written Estimate",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "replacement-hero",
+          "alt": "Concrete tile roof on a Wichita home with a new ridge",
+          "brief": "large house with a freshly finished concrete tile roof on the right, lawn and driveway leading off to the left, calm clear sky behind the text side, no readable text, no people, no tools"
+        }
+      },
+      "sections": [
+        {
+          "type": "review",
+          "quote": "Douglas Fry Roofing did an amazing job on the Ludowici tile roof of our National Register home. Jason Fry was instrumental in educating our insurance company on what needed to be done after a catastrophic storm blew part of our roof off.",
+          "name": "Melissa H."
+        },
+        {
+          "type": "prose",
+          "heading": "Pick the Material First",
+          "body": [
+            "**We show you real options, because the material decides how the roof looks and how long it lasts.**"
+          ],
+          "list": [
+            "**Concrete and clay tile**, including barrel tile and Ludowici clay tile on historic homes.",
+            "**DaVinci composite slate and shake**, which we have installed since 2002.",
+            "**Brava synthetic tile, shake and slate.**",
+            "**Premium asphalt**, such as CertainTeed Presidential Shake and Atlas StormMaster Shake. We recommend Atlas.",
+            "**Standing seam metal**, with horizon lock panels and workmanship warranties from 5 up to 15 years."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Jason was fabulous to work with in replacing my tile roof. He took the initiative to contact my insurance company and work out all the little nuances to get the job accomplished.",
+          "name": "Michael E."
+        },
+        {
+          "type": "split",
+          "heading": "Hail Damage Without the Runaround",
+          "body": [
+            "**Jason handles your claim with you, from the first inspection to the last nail.** He works with your insurance company on what the roof needs, so the estimate and the scope match the damage."
+          ],
+          "image": {
+            "slot": "replacement-hail",
+            "alt": "Tile roof section with a few cracked tiles after a hailstorm",
+            "brief": "section of concrete tile roof on the right with a few cracked tiles, rest of the roof sloping away to the left, soft gray sky behind the text side, no readable text, no people, no tools"
+          },
+          "imageSide": "right"
+        },
+        {
+          "type": "review",
+          "quote": "Due to significant hail damage I had to totally replace my concrete tile roof. Douglas Fry Roofing provided me excellent evaluation, planning, product, installation, workmanship and cleanup services.",
+          "name": "Mary S."
+        },
+        {
+          "type": "prose",
+          "heading": "An Estimate You Can Read",
+          "body": [
+            "**Your written estimate lists the scope of work, the warranty information and the price.** We offer workmanship warranties of 5, 10 and 15 years, and your estimate states the warranty that comes with your roof."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Their price was middle of the road but they included everything that was needed and fully explained the bid without overselling.",
+          "name": "Rachel Y."
+        },
+        {
+          "type": "steps",
+          "heading": "How a Replacement Goes",
+          "items": [
+            {
+              "title": "Jason inspects your roof",
+              "text": "He gets on the roof to see the damage and the condition underneath."
+            },
+            {
+              "title": "You choose the material",
+              "text": "We compare tile, synthetic, asphalt and metal for your house and budget."
+            },
+            {
+              "title": "You get the estimate in writing",
+              "text": "Scope, warranty and price are on paper before any work starts."
+            },
+            {
+              "title": "Our crew replaces the roof",
+              "text": "We strip, install and clean up the site as we go."
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Repair or Replace",
+          "body": [
+            "A tile roof with a few cracked tiles often needs a [repair](/roof-repair-wichita-ks/), not a new roof. A roof that leaks in several places, or has damage across a whole slope, is usually a replacement. We tell you which one you need."
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Questions Before You Call",
+          "items": [
+            {
+              "q": "Is the estimate in writing?",
+              "a": "Yes. We always give a written estimate on repair and re-roof projects, with the scope of work, warranty information and price."
+            },
+            {
+              "q": "Can you work with my insurance company?",
+              "a": "Yes. Jason works with your insurance company from the start of your claim to the last nail."
+            },
+            {
+              "q": "Do you replace tile roofs?",
+              "a": "Yes. Concrete and clay tile are what we are known for in Wichita, and we replaced the Ludowici tile roof on a National Register home."
+            },
+            {
+              "q": "Do you install DaVinci?",
+              "a": "Yes. We were one of the first roofers in the Wichita area to install DaVinci roofs, as early as 2002."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Ready for a New Roof?",
+          "text": "Call (316) 655-9777 and talk to an owner about your roof."
+        }
+      ]
+    },
+    {
+      "role": "service",
+      "route": "/roof-repair-wichita-ks/",
+      "navLabel": "Roof Repair",
+      "keyword": "roof repair Wichita KS",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Tile, shake, asphalt, DaVinci and metal",
+        "h1": "Roof Repair in Wichita, KS — Douglas Fry Roofing",
+        "sub": "We find where your roof leaks and fix the cause, whether it is cracked tile, a failing valley, flashing, a skylight or a metal seam. We repair concrete tile, clay tile, wood shake, asphalt, DaVinci and metal roofs, and an owner will talk to you about it.",
+        "primaryCta": {
+          "label": "Call (316) 655-9777",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Get a Written Estimate",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "repair-hero",
+          "alt": "Clay tile roof valley with a few replaced tiles",
+          "brief": "clay tile roof valley on the right with matching tiles in place, roof slope falling away to the left, calm pale sky behind the text side, no readable text, no people, no tools"
+        }
+      },
+      "sections": [
+        {
+          "type": "review",
+          "quote": "I have a good friend that is a professional roofer (local) and he told me to call Fry Roofing for my tile-roof repair. Jason Fry helped me and really knows his stuff. … Jason recognized the botched repair and corrected it before it had a chance to damage the inside of the house.",
+          "name": "Matt M."
+        },
+        {
+          "type": "split",
+          "heading": "Tile Repairs That Match",
+          "body": [
+            "**We repair concrete and clay tile by lifting and relaying the roof, and we order matching tiles for the pieces that are broken.** The roof looks like one roof when we finish."
+          ],
+          "image": {
+            "slot": "repair-tile",
+            "alt": "Clay tiles stacked beside a roof section being relaid",
+            "brief": "clay tile roof section on the right with a neat stack of matching tiles near the eave, slope falling away to the left, soft overcast sky behind the text side, no readable text, no people, no tools"
+          },
+          "imageSide": "right"
+        },
+        {
+          "type": "review",
+          "quote": "Jason Fry and his crew lifted and relaid our clay tile roof damaged during an 80 mph wind and hail storm. Jason successfully negotiated our insurance claim to cover the damage. He ordered matching clay tiles and installed the roof with quality materials.",
+          "name": "Connie P."
+        },
+        {
+          "type": "prose",
+          "heading": "Leaks Fixed at the Source",
+          "body": [
+            "**We trace a leak to the real cause before we fix it.** That is often a valley, flashing, a skylight or a sky tube, or an earlier repair that was done wrong."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "He assessed my leaking roof that was replaced by a different roofer. He had a couple of ideas in which he believed may be the issues. We made another appointment and he came by to make the necessary repairs.",
+          "name": "Hmong T."
+        },
+        {
+          "type": "prose",
+          "heading": "We Look at the Whole Roof",
+          "body": [
+            "**When we are up there for one leak, we check the rest of the roof.** We tell you everything we find."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "They promptly came out, examined my whole roof and found another area with a soon to be serious problem.",
+          "name": "Ann P."
+        },
+        {
+          "type": "list",
+          "heading": "What We Repair",
+          "list": [
+            "**Tile:** concrete and clay, cracked or slipped tiles, valleys and flashing.",
+            "**Wood shake and wood shingle:** work few roofing companies have the skill to do.",
+            "**Asphalt and DaVinci:** leaks, damaged shingles and ridge work.",
+            "**Metal:** leaks on standing seam and radius metal roofs.",
+            "**Skylights and sky tubes:** new flashing around the opening."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "I have a radius metal roof that I've had other roofers tried to fix for me and finally I found the roofer that that did the repair correctly.",
+          "name": "Rhonda P."
+        },
+        {
+          "type": "prose",
+          "heading": "Your Repair Estimate in Writing",
+          "body": [
+            "**We always give a written estimate on repair work, with the scope, the warranty information and the price.** If your roof has run its course, we say so and show you what [replacement](/roof-replacement-wichita-ks/) would involve."
+          ]
+        },
+        {
+          "type": "steps",
+          "heading": "How a Repair Goes",
+          "items": [
+            {
+              "title": "Jason looks at the roof",
+              "text": "He gets up on it to find where the water is getting in."
+            },
+            {
+              "title": "You get the estimate in writing",
+              "text": "Scope, warranty and price are on paper before the repair starts."
+            },
+            {
+              "title": "Our crew makes the repair",
+              "text": "We fix the cause, then clean up the site."
+            }
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Questions Before You Call",
+          "items": [
+            {
+              "q": "Can you repair a tile roof?",
+              "a": "Yes. Concrete and clay tile repair is what Doug Fry is known for in Wichita."
+            },
+            {
+              "q": "Do you repair flat roofs?",
+              "a": "Roofs with a pitch are our work: tile, shake, asphalt, DaVinci and metal. Call us before you book anything on a flat roof."
+            },
+            {
+              "q": "Do you repair wood shake roofs?",
+              "a": "Yes. Wood shake and wood shingle repair takes a skill level few roofing companies have, and we have it."
+            },
+            {
+              "q": "Will you work with my insurance?",
+              "a": "Yes. Jason works with your insurance company on storm damage."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Have a Leak?",
+          "text": "Call (316) 655-9777 and we will talk through what your roof is doing."
+        }
+      ]
+    },
+    {
+      "role": "contact",
+      "route": "/contact/",
+      "navLabel": "Contact",
+      "keyword": "contact Douglas Fry Roofing Wichita",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Contact",
+        "h1": "Contact Douglas Fry Roofing",
+        "sub": "Call (316) 655-9777 and you reach Jason or Doug. Tell us what your roof is doing and we will set up a time to look at it.",
+        "primaryCta": {
+          "label": "Call (316) 655-9777",
+          "action": "call"
+        },
+        "image": {
+          "slot": "contact-hero",
+          "alt": "Wichita home with a tile roof and a front walk",
+          "brief": "single-story house with a tile roof on the right, front walk leading off to the left, calm soft sky behind the text side, no readable text, no people, no tools"
+        }
+      },
+      "sections": [
+        {
+          "type": "prose",
+          "heading": "Call or Stop By",
+          "body": [
+            "Main: (316) 655-9777. Office: (316) 264-1511.",
+            "We are at 1835 N. Ohio, Wichita, KS 67214, in a building we own."
+          ]
+        },
+        {
+          "type": "list",
+          "heading": "Have This Ready",
+          "list": [
+            "What your roof is made of: tile, DaVinci, Brava, shake, asphalt or metal",
+            "Where it leaks, or what the storm did",
+            "Whether you have an insurance claim open",
+            "Your address and town"
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "I had no trouble contacting and communicating with the owner.",
+          "name": "Amber S."
+        },
+        {
+          "type": "faq",
+          "heading": "Before You Call",
+          "items": [
+            {
+              "q": "Do I get an estimate in writing?",
+              "a": "Yes. Every repair and re-roof estimate lists the scope of work, the warranty information and the price."
+            },
+            {
+              "q": "Where do you work?",
+              "a": "Wichita, Andover, Bel Aire, Maize, Haysville, Augusta, Wellington and south-central Kansas, from Dodge City to Hays."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "about": "Douglas Fry Roofing is a family roofing company in Wichita. Doug Fry started it in 1981, and his son Jason works beside him. We install and repair tile, DaVinci, Brava, wood shake, asphalt and standing seam metal roofs.",
+    "why": [
+      "You speak with an owner, never a commissioned salesperson",
+      "Workmanship warranties of 5, 10 and 15 years",
+      "Written estimates with scope, warranty and price"
+    ]
+  },
+  "strategy": {
+    "whyHeading": "Why we built this site",
+    "why": [
+      "You have been roofing Wichita since 1981, and your customers say it better than any slogan could: \"Very honest and friendly service.\" \"Excellent on time service, informative, fair price, and knowledgeable.\" That is 4.8 stars on 79 Google reviews.",
+      "Your website shows none of it. On a phone it runs off the right edge of the screen, so the call buttons and most of the menu can't be seen.",
+      "So we built a site around what your customers already say, with tile, DaVinci and an owner on the phone at the front."
+    ],
+    "cardsHeading": "Be the Roofing Company People Find on Google",
+    "cardsIntro": "Each card is one page: what your site does today and what we changed.",
+    "cards": [
+      {
+        "route": "/home/",
+        "title": "Homepage",
+        "why": "The page Google reads to learn who you are and where you work.",
+        "problems": [
+          "The top of the page says only \"Douglas Fry Roofing, Inc.\", so Google can't tell you are a roofing company in Wichita.",
+          "On a phone the page runs off the right edge, and the \"Get In Touch\" call buttons sit off the screen.",
+          "None of your 4.8-star Google reviews appear on the site."
+        ],
+        "fixes": [
+          "A headline that says roofing company in Wichita, KS, right at the top.",
+          "The page fits a phone, with both numbers one tap away.",
+          "Real customer reviews, each beside the point it proves."
+        ],
+        "alsoAdd": "Every page set up behind the scenes so Google and AI tools like ChatGPT know exactly what you do, where you work, and what your customers say."
+      },
+      {
+        "route": "/roof-replacement-wichita-ks/",
+        "title": "Roof Replacement",
+        "why": "The biggest job you do, and your tile, DaVinci and metal work is scattered across product pages.",
+        "problems": [
+          "Replacement is spread over five product pages with no single page that says \"roof replacement Wichita\".",
+          "Nothing explains the written estimate or the insurance help your reviews praise."
+        ],
+        "fixes": [
+          "One page for roof replacement in Wichita, KS: materials, hail claims, written estimate and warranty.",
+          "Reviews on tile, Brava and hail claims beside the work they describe."
+        ],
+        "alsoAdd": "Pages planned from what Google actually shows for each search, so every page targets something people really look for."
+      },
+      {
+        "route": "/roof-repair-wichita-ks/",
+        "title": "Roof Repair",
+        "why": "Tile repair is what other roofers send people to you for.",
+        "problems": [
+          "The \"Repair Services\" menu link opens a page whose address ends in \"tile-roof-systems-copy\".",
+          "Tile repair is covered on four pages, and two show raw photo file names like \"IMG_0042.heic\" as captions."
+        ],
+        "fixes": [
+          "One roof repair page for Wichita, KS, covering tile, shake, asphalt, DaVinci and metal.",
+          "Clean captions, and tile repair reviews beside each repair."
+        ],
+        "alsoAdd": "A check of what your competitors offer, so services you didn’t think to mention still get their own pages."
+      },
+      {
+        "route": "/contact/",
+        "title": "Contact",
+        "why": "Where a customer with a leaking roof reaches you.",
+        "problems": [
+          "The (316) 264-1511 number is plain text on every page and cannot be tapped.",
+          "The only form sits far down the homepage, and there is no email address anywhere."
+        ],
+        "fixes": [
+          "Both numbers tap to call, with your address and a list of what to have ready."
+        ],
+        "alsoAdd": "Call and form tracking that shows which pages and towns your leads come from."
+      }
+    ],
+    "reportCardHeading": "What great roofing company websites get right, and how yours measures up.",
+    "reportCard": [
+      {
+        "label": "Fits a phone screen",
+        "status": "Missing"
+      },
+      {
+        "label": "Headline says what you do and where",
+        "status": "Missing"
+      },
+      {
+        "label": "Every phone number dials",
+        "status": "Needs work"
+      },
+      {
+        "label": "Each money service has its own page",
+        "status": "Needs work"
+      },
+      {
+        "label": "Real reviews shown",
+        "status": "Missing"
+      },
+      {
+        "label": "Current copyright year and clean photo captions",
+        "status": "Needs work"
+      }
+    ],
+    "closing": {
+      "heading": "Want a website like this for your business?",
+      "text": "Your customers already tell people you are honest and fair. Book a strategy call with Fluid Frame and we'll walk you through this demo and plan your new site."
+    }
+  },
+  "onboardingQuestions": [
+    "What is (316) 264-1511 for (office, sales, an old line, a crew line)? It is shown as \"Office\" and second after (316) 655-9777. Should it be tap-to-call?",
+    "Years in business: the site says \"Roofing Since 1981\" but also \"30-plus years\" and \"over 40 years\". We used \"since 1981\". Confirm.",
+    "Is the estimate free? We say \"written estimate\" only. Is there an email address for quotes?",
+    "Office hours (MapQuest lists Mon to Sat 7 am to 6 pm; the site lists none).",
+    "Financing: offered, and through whom? Nothing is claimed.",
+    "Certifications to verify before we claim any: Brava (the site says \"certified installer\"), DaVinci, GAF, Owens Corning, CertainTeed, Malarkey, IKO. We claim none.",
+    "BBB: the site says \"A plus\"; unverified, not used.",
+    "License and registration numbers (Kansas registration, Attorney General roofing registration) and insurance. None is shown.",
+    "Warranty terms in writing: workmanship 5, 10 and 15 years (which jobs get which), and manufacturer warranties.",
+    "Subcontractors: one 1-star review says a subcontractor did a roof, while the site says no commissioned salespeople. Does the crew include subcontractors?",
+    "Flat and EPDM roofs: the commercial page lists an EPDM job and one review says flat roofs are not their expertise. Do they want flat roofs offered?",
+    "Commercial: only four project names on the site. Which commercial work do they want to promote?",
+    "Names of the two lead foremen, and Jason's title (the owner reviews call him the business manager).",
+    "Legal name \"Douglas Fry Roofing, Inc.\": the pages use \"Douglas Fry Roofing\". Which should lead?",
+    "Service area: confirm Hays and Great Bend (named on the site) and how far they will travel.",
+    "Who receives the homepage form submissions, and does it work?",
+    "The three testimonials on the old site (Amber Snavely, Tony Martinez, Steve Lebeda): where from, and may we use them?",
+    "Logo file, brand colors and real job photos for the build."
+  ]
+}
