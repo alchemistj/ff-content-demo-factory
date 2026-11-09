@@ -1,0 +1,744 @@
+{
+  "schema": "words-package/v1",
+  "business": {
+    "name": "Greenway Exteriors",
+    "slug": "greenway",
+    "city": "Wichita",
+    "state": "KS",
+    "companyType": "Exterior Remodeling Company",
+    "phones": [
+      {
+        "label": "Wichita",
+        "display": "(316) 641-8365",
+        "tel": "+13166418365"
+      }
+    ],
+    "email": null,
+    "hours": null,
+    "address": "2807 W River Park Dr, Wichita, KS 67203",
+    "serviceArea": {
+      "summary": "Wichita and nearby towns",
+      "towns": [
+        "Wichita",
+        "Park City",
+        "Bel Aire",
+        "Andover",
+        "Eastborough",
+        "Rose Hill",
+        "Haysville",
+        "Derby",
+        "Goddard",
+        "Colwich",
+        "Valley Center",
+        "Maize",
+        "Greenwich",
+        "Schulte",
+        "Oaklawn-Sunview"
+      ]
+    }
+  },
+  "trustBar": [
+    "Serving Wichita Since 2012",
+    "Free Estimates",
+    "Locally Owned & Operated",
+    "Owner-Led Estimates"
+  ],
+  "services": [
+    {
+      "name": "Window Replacement",
+      "route": "/window-replacement-wichita-ks/",
+      "blurb": "One window or a whole house of them, measured and installed by our crew."
+    },
+    {
+      "name": "Basement and Egress Windows",
+      "route": "/window-replacement-wichita-ks/",
+      "blurb": "The small openings below grade, replaced and sealed."
+    },
+    {
+      "name": "Sliding Glass and Entry Doors",
+      "route": "/window-replacement-wichita-ks/",
+      "blurb": "A new back door or front door, installed with your windows or on its own."
+    },
+    {
+      "name": "Siding Replacement",
+      "route": "/siding-replacement-wichita-ks/",
+      "blurb": "The whole house or just the walls that need it, with the old siding hauled away."
+    },
+    {
+      "name": "Siding Repair",
+      "route": "/siding-replacement-wichita-ks/",
+      "blurb": "Rotted boards, storm damage and chimney siding fixed without replacing the rest."
+    },
+    {
+      "name": "Fascia, Soffit and Trim",
+      "route": null,
+      "blurb": "Replaced with your siding so the roof edge matches the walls."
+    },
+    {
+      "name": "Gutters and Gutter Protection",
+      "route": null,
+      "blurb": "New gutters that outline the house, installed with your siding or windows."
+    },
+    {
+      "name": "Exterior Painting",
+      "route": null,
+      "blurb": "Fresh paint on the outside, done alongside siding or window work."
+    }
+  ],
+  "pages": [
+    {
+      "role": "home",
+      "route": "/home/",
+      "navLabel": "Home",
+      "keyword": "exterior remodeling company Wichita KS",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Locally owned in Wichita since 2012",
+        "h1": "Exterior Remodeling Company in Wichita, KS — Greenway Exteriors",
+        "sub": "John Dye owns Greenway Exteriors and has lived in Wichita all his life. We replace windows and siding and hang doors across Wichita and nearby towns. John looks at your house and gives you the estimate himself, with no pressure.",
+        "primaryCta": {
+          "label": "Call (316) 641-8365",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Get a Free Estimate",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "home-hero",
+          "alt": "One-story Wichita ranch house with fresh gray lap siding and new white windows in late afternoon light",
+          "brief": "one-story ranch house with fresh gray lap siding and new white replacement windows, house on the right half of the frame, front walk leading off to the left, calm clear sky behind the text side, late-afternoon light, no readable text, no people"
+        }
+      },
+      "sections": [
+        {
+          "type": "review",
+          "quote": "I felt no pressure, just a great conversation with an expert, who was interested in knowing what I really wanted. Oh, and the prices are fantastic!",
+          "name": "Anna S."
+        },
+        {
+          "type": "split",
+          "heading": "You Talk to the Owner",
+          "body": [
+            "John comes to your house, looks at the job and gives you the price. You deal with the owner from the first call to the finished job.",
+            "We have had a crew at work the morning after the bid."
+          ],
+          "image": {
+            "slot": "home-owner",
+            "alt": "Front porch of a Wichita bungalow with new windows beside the door",
+            "brief": "bungalow front porch with new windows beside the front door, house on the right, porch steps leading to the left, soft overcast sky behind the text side, no readable text, no people"
+          },
+          "imageSide": "right"
+        },
+        {
+          "type": "review",
+          "quote": "John came out, gave me a quick bid and had a crew working the next morning. He held his original number and completed the work in the time he stated.",
+          "name": "Mitch B."
+        },
+        {
+          "type": "split",
+          "heading": "A Price for What the Job Needs",
+          "body": [
+            "We quote exactly what needs replacing and nothing more.",
+            "Our bids have come in $10,000 under other quotes on a whole house and 25 to 35% under on a chimney repair. Financing is available, subject to credit approval."
+          ],
+          "image": {
+            "slot": "home-price",
+            "alt": "Corner of a house with new siding, trim and a gutter",
+            "brief": "corner of a house with new gray siding, white trim and a seamless gutter, corner on the right, plain sky on the left, no readable text, no people"
+          },
+          "imageSide": "right"
+        },
+        {
+          "type": "review",
+          "quote": "John quoted exactly what needed to be replaced instead of just trying to run up the bill on me.",
+          "name": "Jason S."
+        },
+        {
+          "type": "split",
+          "heading": "Crews That Finish and Clean Up",
+          "body": [
+            "Our crews start early, work through the day and leave your yard clean.",
+            "We have replaced a home's windows in one day and re-sided a whole house in four."
+          ],
+          "image": {
+            "slot": "home-crew",
+            "alt": "Sunlit living room with two large new picture windows",
+            "brief": "bright living room with two large new picture windows on the right wall, light falling toward the left, calm neutral wall behind the text side, no readable text, no people"
+          },
+          "imageSide": "right"
+        },
+        {
+          "type": "review",
+          "quote": "I just had my house resided, the crew was excellent. They did it in 4 days, these guys didn't waste any daylight.",
+          "name": "Joyce S."
+        },
+        {
+          "type": "services",
+          "heading": "Everything We Do",
+          "intro": "Windows and siding are most of our work. We also replace doors, gutters, fascia and trim and paint the outside, so one crew can finish the whole house."
+        },
+        {
+          "type": "review",
+          "quote": "We had new siding, windows, and doors replaced, and the old home looks great.",
+          "name": "Wayne I."
+        },
+        {
+          "type": "prose",
+          "heading": "Wichita and Nearby Towns",
+          "body": [
+            "We work in Wichita, Park City, Bel Aire, Andover, Eastborough, Rose Hill, Haysville, Derby, Goddard, Colwich, Valley Center and Maize, and out to Greenwich, Schulte and Oaklawn-Sunview.",
+            "Call (316) 641-8365 and we'll set a time to see your house."
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Questions Before You Call",
+          "items": [
+            {
+              "q": "Is the estimate free?",
+              "a": "Yes. John gives free estimates on windows, doors and siding."
+            },
+            {
+              "q": "Can you do windows and siding together?",
+              "a": "Yes. Many of our jobs include both, and John prices them as one project."
+            },
+            {
+              "q": "Is financing available?",
+              "a": "Yes, subject to credit approval. Ask John about the current offer when you call."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Ready for New Windows or Siding?",
+          "text": "Call John at (316) 641-8365 and he'll set up your free estimate."
+        }
+      ]
+    },
+    {
+      "role": "service",
+      "route": "/window-replacement-wichita-ks/",
+      "navLabel": "Window Replacement",
+      "keyword": "window replacement Wichita KS",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Windows and doors",
+        "h1": "Window Replacement in Wichita, KS — Greenway Exteriors",
+        "sub": "We replace one window or every window in your house, and haul the old ones away. John Dye quotes the job himself and our installers finish it clean. Estimates are free.",
+        "primaryCta": {
+          "label": "Call (316) 641-8365",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Get a Free Estimate",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "windows-hero",
+          "alt": "New double-hung window seen from inside a home with morning light coming in",
+          "brief": "new double-hung window seen from inside a modest home, window on the right of the frame, morning light falling toward the left, calm plain wall behind the text side, no readable text, no people"
+        }
+      },
+      "sections": [
+        {
+          "type": "review",
+          "quote": "John and his team replaced our home’s windows, and the entire experience was outstanding from start to finish. Fair pricing, clear communication, punctual installers, and top-tier workmanship.",
+          "name": "Oxlee M."
+        },
+        {
+          "type": "split",
+          "heading": "One Window or the Whole House",
+          "body": [
+            "Start with the window that bothers you most, or replace every one. We have replaced a single bathroom window, 11 windows in one house, and 13 windows plus a glass back door in another.",
+            "We have matched a new window to exterior trim another company put on, so it looks like it was always there."
+          ],
+          "list": [
+            "**One window,** matched to the trim you already have",
+            "**Two big living-room windows** set in for a wider view",
+            "**Every window in the house** in one project",
+            "**Windows plus a door** on the same visit"
+          ],
+          "image": {
+            "slot": "windows-range",
+            "alt": "Gloved hands setting a new window into an opening",
+            "brief": "installer's gloved hands, no face and no lettering, setting a new window into an opening, window on the right, hands reaching in from the left, soft blurred siding behind the text side, no readable text"
+          },
+          "imageSide": "right"
+        },
+        {
+          "type": "review",
+          "quote": "I had a small bathroom window replaced, and the 2 installers were polite, efficient, and matched my exterior trim (from a different company) perfectly.",
+          "name": "Brad K."
+        },
+        {
+          "type": "prose",
+          "heading": "Quieter Rooms and Lower Bills",
+          "body": [
+            "New windows seal out the drafts and street noise your old ones let in.",
+            "Rooms stay warmer, the heater runs less, and the house gets quiet."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "The new windows have made the house much quieter and we noticed a positive step change in our bills this spring.",
+          "name": "Darby M."
+        },
+        {
+          "type": "prose",
+          "heading": "Basement and Storm-Damaged Windows",
+          "body": [
+            "Basement and egress windows are small jobs that matter. We replace and seal them like any other window.",
+            "When a storm blew out a family's egress window, John worked with them to get it replaced quickly."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "He replaced a basement window for me. Not only did they finish the job in a quick time frame but was cheaper than all the other contractors by far.",
+          "name": "Douglas W."
+        },
+        {
+          "type": "split",
+          "heading": "Sliding Glass and Entry Doors",
+          "body": [
+            "A new back door or front door goes in with your windows or on its own. We have replaced a glass back door with 13 windows, and a sliding deck door with a set of windows.",
+            "You choose the door with John, and our crew installs it."
+          ],
+          "image": {
+            "slot": "windows-doors",
+            "alt": "Sliding glass door half open onto a back deck",
+            "brief": "sliding glass patio door half open onto a deck, door on the right, deck extending to the left, calm lawn behind the text side, no readable text, no people"
+          },
+          "imageSide": "right"
+        },
+        {
+          "type": "review",
+          "quote": "He made choosing a sliding glass door easy and affordable.",
+          "name": "Ashley H."
+        },
+        {
+          "type": "steps",
+          "heading": "How Your Window Job Goes",
+          "items": [
+            {
+              "title": "John looks at your windows",
+              "text": "He comes to your house, sees what you have and gives you the price."
+            },
+            {
+              "title": "You choose your windows",
+              "text": "You pick the style and size for each opening, and we schedule the install."
+            },
+            {
+              "title": "Our installers arrive on time",
+              "text": "They replace your windows, and we have finished a home's new windows in one day."
+            },
+            {
+              "title": "We clean up and check back",
+              "text": "We haul off the old windows and clean the yard and the rooms. We have come back the next day to seal windows."
+            }
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "The workers showed up on time the day of installation and were very efficient & friendly. The windows were installed in one day and they cleaned up yard & inside when they were done.",
+          "name": "Becky E."
+        },
+        {
+          "type": "prose",
+          "heading": "Price, Warranty and Financing",
+          "body": [
+            "Our window prices have come in at about half of what the big advertised companies quote, and under six other bids on one house.",
+            "When a new window cracked from a manufacturing error, we replaced it free. Ask John for the warranty terms on the windows you choose. Financing is available, subject to credit approval."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Both times he was about half the price of the bigger companies you see all over media. Both him and his guys have always delivered quality installation and once when a window cracked due to manufacturing error, it was replaced free of charge.",
+          "name": "Aaron P."
+        },
+        {
+          "type": "faq",
+          "heading": "Window Replacement Questions",
+          "items": [
+            {
+              "q": "How long does installation take?",
+              "a": "We have installed a home's new windows in one day. Ask John about the schedule for yours."
+            },
+            {
+              "q": "Do you take the old windows away?",
+              "a": "Yes. We haul the old windows off and clean up when we finish."
+            },
+            {
+              "q": "Can I replace just one window?",
+              "a": "Yes. We have replaced a single bathroom window, a basement window and an egress window."
+            },
+            {
+              "q": "What if a window is defective?",
+              "a": "We stand behind the install and replace a defective window. Ask John about the warranty on the windows you pick."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Get Your Window Estimate",
+          "text": "Call (316) 641-8365 and John will set up your free estimate on windows and doors."
+        }
+      ]
+    },
+    {
+      "role": "service",
+      "route": "/siding-replacement-wichita-ks/",
+      "navLabel": "Siding Replacement",
+      "keyword": "siding replacement Wichita KS",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Siding, trim and repairs",
+        "h1": "Siding Replacement in Wichita, KS — Greenway Exteriors",
+        "sub": "John Dye looks at your house, tells you what needs replacing and what doesn't, and quotes only that. Our crews work long days and leave the yard clean. Estimates are free.",
+        "primaryCta": {
+          "label": "Call (316) 641-8365",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Get a Free Estimate",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "siding-hero",
+          "alt": "Corner of a house with new siding and clean fascia",
+          "brief": "corner of a house with new siding and clean fascia, house on the right, eave line running toward the left, calm sky behind the text side, no readable text, no people"
+        }
+      },
+      "sections": [
+        {
+          "type": "review",
+          "quote": "Greenway Exteriors gets the job done fast! They work from sunrise to sunset. They are efficient and do a great job. The price is fair. It looks like a totally new house.",
+          "name": "Lendon J."
+        },
+        {
+          "type": "split",
+          "heading": "The Whole House or Just the Walls That Need It",
+          "body": [
+            "Some jobs are a full re-side. Others are a single wall, a garage or a chimney. We do both, and John tells you which one yours is.",
+            "We take off the old siding, put up the new and haul the old away."
+          ],
+          "image": {
+            "slot": "siding-main",
+            "alt": "Wichita house with half of its walls re-sided in new gray siding",
+            "brief": "house with new gray siding across the front wall, house on the right, side yard leading off to the left, calm sky behind the text side, no readable text, no people"
+          },
+          "imageSide": "right"
+        },
+        {
+          "type": "review",
+          "quote": "I had a smallish siding project that was rejected by other companies because they couldn’t do just a portion of the siding!",
+          "name": "Stacia S."
+        },
+        {
+          "type": "prose",
+          "heading": "Crews That Work Through the Cold",
+          "body": [
+            "We have re-sided a whole house in four days. We have also kept a crew on a house for 8 to 10 hours a day in a January cold snap.",
+            "Ask John when we can start."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "This job was performed in January during a cold snap and his crew were out there for 8 -10 hours everyday even when the temperature was in the single digits.",
+          "name": "James R."
+        },
+        {
+          "type": "prose",
+          "heading": "Fascia, Soffit and Trim, Done With the Siding",
+          "body": [
+            "Fascia, soffit and trim finish the edges of your house. We replace them with your siding so the roof edge matches the walls.",
+            "When a windstorm tore a long piece of fascia off one house, we fabricated the replacement on site from the same textured aluminum."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Had a long piece of aluminum fascia trim blow off in a severe windstorm. … They were able to come out in 2 days and were able to fabricate a replacement piece on site with the actual textured aluminum material.",
+          "name": "Mark H."
+        },
+        {
+          "type": "split",
+          "heading": "Chimneys, Repairs and Rotted Boards",
+          "body": [
+            "A repair does not need a full re-side. We fix the chimney siding, the rotted boards and the storm damage, and leave the good siding alone.",
+            "John quotes the repair and our crew gets it done. We have had a crew on a chimney job within the week."
+          ],
+          "image": {
+            "slot": "siding-repair",
+            "alt": "Brick chimney with new siding and trim against a clear sky",
+            "brief": "chimney with new siding and trim on the roofline, chimney on the right, plain sky on the left, no readable text, no people"
+          },
+          "imageSide": "right"
+        },
+        {
+          "type": "review",
+          "quote": "I called three different companies out for estimates to repair the siding on our chimney, and Greenway was 25-35% cheaper than both the alternatives.",
+          "name": "Connor G."
+        },
+        {
+          "type": "prose",
+          "heading": "Siding With Windows, Gutters or Paint",
+          "body": [
+            "Windows and siding share the same walls, so we plan them together when you want both. We also hang gutters and paint the exterior with the siding.",
+            "You get one price from John and one crew that finishes the whole outside. On one house, that price came in $10,000 under the other quotes."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "They were 10k less than other quotes I got and John worked hard to get my project done on time and in budget and worked my project in quick! We had new siding, gutters, paint.. my house looks like a totally different house and beautiful!",
+          "name": "Julie B."
+        },
+        {
+          "type": "steps",
+          "heading": "How Your Siding Job Goes",
+          "items": [
+            {
+              "title": "John looks at the house",
+              "text": "He walks the walls, tells you what needs replacing and gives you the price."
+            },
+            {
+              "title": "You choose your siding",
+              "text": "You pick the siding and the colors, and we set a start date."
+            },
+            {
+              "title": "Our crew does the work",
+              "text": "We remove the old siding and install the new. John comes by during the project to check on it."
+            },
+            {
+              "title": "We clean up",
+              "text": "We haul away the old siding and leave your yard clean."
+            }
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "John, the owner came out multiple times during the project to make sure everything was running smooth.",
+          "name": "Katherine R."
+        },
+        {
+          "type": "faq",
+          "heading": "Siding Questions",
+          "items": [
+            {
+              "q": "How long does siding take?",
+              "a": "We have re-sided a whole house in four days. Ask John about the schedule for yours."
+            },
+            {
+              "q": "Can you replace just part of my siding?",
+              "a": "Yes. We replace a wall, a garage or a chimney when that is all the house needs."
+            },
+            {
+              "q": "Do you replace fascia, soffit and trim?",
+              "a": "Yes. We replace them with your siding so the edges match."
+            },
+            {
+              "q": "Do you take the old siding away?",
+              "a": "Yes. We haul it off and clean the yard when we finish."
+            },
+            {
+              "q": "Is financing available?",
+              "a": "Yes, subject to credit approval. Ask John about the current offer."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Get Your Siding Estimate",
+          "text": "Call (316) 641-8365 and John will walk your house and set up your free siding estimate."
+        }
+      ]
+    },
+    {
+      "role": "contact",
+      "route": "/contact/",
+      "navLabel": "Contact",
+      "keyword": "contact Greenway Exteriors Wichita KS",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Contact",
+        "h1": "Contact Greenway Exteriors",
+        "sub": "Call John Dye at (316) 641-8365 and tell him about your windows, doors or siding.",
+        "primaryCta": {
+          "label": "Call (316) 641-8365",
+          "action": "call"
+        },
+        "image": {
+          "slot": "contact-hero",
+          "alt": "Front porch with new windows beside the front door of a Wichita bungalow",
+          "brief": "front porch with new windows beside the front door on a bungalow, house on the right, porch steps toward the left, calm soft sky behind the text side, no readable text, no people"
+        }
+      },
+      "sections": [
+        {
+          "type": "prose",
+          "heading": "Call and Find Us",
+          "body": [
+            "Call (316) 641-8365 to talk with John. He'll set a time to see your house and give you the estimate himself.",
+            "Our address is 2807 W River Park Dr, Wichita, KS 67203. We work in Wichita and the towns around it."
+          ]
+        },
+        {
+          "type": "list",
+          "heading": "Have This Ready",
+          "list": [
+            "Which windows, doors or walls you want done",
+            "Whether you want siding, gutters or paint at the same time",
+            "Whether you want to hear about financing"
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "John always answered my phone calls and answered all my questions!",
+          "name": "Lisa Q."
+        },
+        {
+          "type": "faq",
+          "heading": "Before You Call",
+          "items": [
+            {
+              "q": "Do you charge for an estimate?",
+              "a": "No. Estimates for windows, doors and siding are free."
+            },
+            {
+              "q": "Which towns do you serve?",
+              "a": "Wichita, Park City, Bel Aire, Andover, Eastborough, Rose Hill, Haysville, Derby, Goddard, Colwich, Valley Center, Maize, Greenwich, Schulte and Oaklawn-Sunview."
+            },
+            {
+              "q": "Do you do small jobs?",
+              "a": "Yes. We have replaced a single window and repaired one wall of siding."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "about": "Greenway Exteriors is a locally owned exterior remodeling company in Wichita, serving homeowners since 2012. We replace windows and siding and handle doors, gutters, trim and paint.",
+    "why": [
+      "Owner John Dye on every estimate",
+      "A straight price for what the job needs",
+      "Windows and siding from one crew"
+    ]
+  },
+  "strategy": {
+    "whyHeading": "Why we built this site",
+    "why": [
+      "All 87 of your Google reviews are five stars, and your customers say why in their own words: \"no high pressure sales\", \"about half the price of the bigger companies you see all over media\", and a crew that \"didn't waste any daylight.\"",
+      "Your site has a page for every service and loads fast. But on a phone, the first screen hides what you do and your number, and two claims don't match BBB. So we rebuilt it around what your customers praise."
+    ],
+    "cardsHeading": "Be the Exterior Company People Find on Google",
+    "cardsIntro": "Each card is one page of the demo: what costs you calls today, and how the demo fixes it.",
+    "cards": [
+      {
+        "route": "/home/",
+        "title": "Homepage",
+        "why": "The first page people see, and the one Google reads to learn who you are and where you work.",
+        "problems": [
+          "On a phone, the top of your homepage is a financing bar, your logo and a photo. Your headline and number sit a full screen down, out of sight.",
+          "The headline names two services, not the kind of company you are, so Google can't match you to \"exterior remodeling company Wichita\".",
+          "It says \"over 15 years\", your siding page says \"since 2012\", and BBB shows 14. A homeowner who spots that doubts the rest."
+        ],
+        "fixes": [
+          "Your headline and your number, one tap, at the very top.",
+          "A headline that says exterior remodeling company in Wichita, KS.",
+          "One start date: since 2012."
+        ],
+        "alsoAdd": "Every page set up behind the scenes so Google and AI tools like ChatGPT know exactly what you do, where you work, and what your customers say."
+      },
+      {
+        "route": "/window-replacement-wichita-ks/",
+        "title": "Window Replacement",
+        "why": "Windows and doors are about 44% of your written reviews.",
+        "problems": [
+          "The \"CALL\" line at the top is plain text, so a phone visitor has to type your number by hand.",
+          "The page claims \"BBB accreditation\", but BBB lists you as not accredited, and a careful buyer can check that in a minute."
+        ],
+        "fixes": [
+          "Your number, one tap, at the top of the page.",
+          "Only claims a homeowner can check."
+        ],
+        "alsoAdd": "Pages planned from what Google actually shows for each search, so every page targets something people really look for."
+      },
+      {
+        "route": "/siding-replacement-wichita-ks/",
+        "title": "Siding Replacement",
+        "why": "Siding and trim are about 45% of your written reviews.",
+        "problems": [
+          "Your menu lists nine siding pages by material, and none says you'll do one wall or a chimney, jobs your reviews say others turned down.",
+          "\"Gutters\" in your menu opens the homepage instead of a page."
+        ],
+        "fixes": [
+          "One siding page for a full re-side, a single wall, a chimney, trim and repairs.",
+          "A menu where every link opens the page it names."
+        ],
+        "alsoAdd": "A check of what your competitors offer, so services you didn't think to mention still get their own pages."
+      },
+      {
+        "route": "/contact/",
+        "title": "Contact",
+        "why": "Where interest turns into a call.",
+        "problems": [
+          "Your hours read \"Monday-Sunday, 24 Hours\", which sounds like a template, not a local crew."
+        ],
+        "fixes": [
+          "Your number and address together, with what to have ready.",
+          "No hours claim until you give us your real ones."
+        ],
+        "alsoAdd": "Call and form tracking that shows which pages and towns your leads come from."
+      }
+    ],
+    "reportCardHeading": "What great exterior company websites get right, and how yours measures up.",
+    "reportCard": [
+      {
+        "label": "Headline says what you do and where",
+        "status": "Needs work"
+      },
+      {
+        "label": "Phone number visible on the first phone screen",
+        "status": "Missing"
+      },
+      {
+        "label": "Phone numbers dial correctly",
+        "status": "Looks good"
+      },
+      {
+        "label": "Each money service has its own page",
+        "status": "Looks good"
+      },
+      {
+        "label": "Claims match what BBB shows",
+        "status": "Needs work"
+      },
+      {
+        "label": "Menu links open the right pages",
+        "status": "Needs work"
+      }
+    ],
+    "closing": {
+      "heading": "Want a website like this for your business?",
+      "text": "Your customers already call you honest, fair and fast. Book a strategy call with Fluid Frame and we'll walk you through this demo, confirm every service and detail, and show you what a full build adds."
+    }
+  },
+  "onboardingQuestions": [
+    "John Dye is confirmed as owner (BBB, About page, reviews). Who is Michelle (thanked in one review), and should she be named?",
+    "Phone: (316) 641-8365 matches Google and the site. BBB lists (316) 453-6043 and a directory lists (316) 816-9395; confirm both are old.",
+    "Email: the site shows greenwayvalue@gmail.com on every page, but it is not in our fact sheet. Is it the address to show?",
+    "Address: 2807 W River Park Dr, Wichita 67203 is on Google and the site. Is it a shop customers can visit, or an office only?",
+    "Real hours: the site says \"Monday-Sunday, 24 Hours\", which reads like template text. No hours are shown in the package.",
+    "Years: BBB shows a start of 8/28/2012 (14 years) while the site says both \"since 2012\" and \"over 15 years\". Confirm 2012.",
+    "BBB: the site claims accreditation but BBB lists the business as not accredited (A+ rating, no complaints). Do they want to apply for accreditation, or just have the claim removed? The package shows no BBB claim.",
+    "Licensing and insurance: the site says \"fully licensed and insured Kansas contractor\", but no license number or registry record was found. Provide the number to show.",
+    "Brands: ProVia (three customers name it) and James Hardie (the site claims Preferred Installer) could not be verified on the manufacturers' locators. Which brands do they install and may we name them? Also LP SmartSide, and Chamber of Commerce membership and awards (\"Best of Business Award\", \"Mark of Excellence\").",
+    "Warranty: what do the window and siding warranties cover and for how long? Review mentions of a warranty give no terms, so the package only says to ask John.",
+    "Financing: which lender, what are the current terms, and does \"No Payments Until 2027 + 0% for 18 Months\" end soon? The package says only \"available, subject to credit approval\".",
+    "Full list of services: confirm doors (sliding glass, entry), egress and basement windows, gutters and gutter protection, exterior painting, chimney siding and deck frame repair. Is there any roofing? Do they want door and gutter pages later?",
+    "Typical install times for windows and siding, so the schedule lines can be firmed up.",
+    "Towns: confirm the 15-town list from their homepage, and that Augusta (named in one review) is in range.",
+    "Do they want the 25 Wichita attraction pages on their current site kept? They are unrelated to the work.",
+    "Logo file and brand colors (not sampled; the logo is green and gray on their site)."
+  ]
+}
