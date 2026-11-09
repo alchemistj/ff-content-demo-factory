@@ -1,0 +1,308 @@
+{
+ "slug": "lawn-care-wichita-ks",
+ "run": "2026-11-09",
+ "next_start_rank": 20,
+ "note": "Ranks tie (1-20 for 50 places); all 50 checked. Next run starts with the backlog, then a 'landscaping' search.",
+ "checked": [
+  {
+   "position": 20,
+   "name": "Jr Landscaping & Lawn Services LLC",
+   "status": "qualified-backlog",
+   "reason": "Small, lawn-led 60/40. Site is a working one-page lovable.app template with an H1 and tel links: an upgrade pitch, not a rescue. No owner found."
+  },
+  {
+   "position": 20,
+   "name": "Jakob's Lawn Kare",
+   "status": "disqualified",
+   "reason": "Commercial / HOA / multi-family grounds management, 14-link site. Not a homeowner lawn business."
+  },
+  {
+   "position": 20,
+   "name": "Dragonfly Lawn & Tree Care",
+   "status": "qualified-backlog",
+   "reason": "Lawn maintenance, one-page site with no nav and no H1. But \"30+ years\" and a directory estimate of ~21 staff suggest an established firm; 3.6 rating gives few five-star quotes."
+  },
+  {
+   "position": 19,
+   "name": "Four Star Lawn Care Inc",
+   "status": "disqualified",
+   "reason": "Too big: since 1989, 28-link site."
+  },
+  {
+   "position": 19,
+   "name": "TruGreen Lawn Care",
+   "status": "disqualified",
+   "reason": "National franchise."
+  },
+  {
+   "position": 19,
+   "name": "Turf Etc, LLC",
+   "status": "qualified-backlog",
+   "reason": "Irrigation-led do-everything (irrigation, lawn, landscape, turf, lighting); since 2003, team page. Working Jobber site."
+  },
+  {
+   "position": 19,
+   "name": "Lechner's Landscape & Lawn Services",
+   "status": "disqualified",
+   "reason": "No website, low rating."
+  },
+  {
+   "position": 19,
+   "name": "Clean Cut Lawncare & Fencing",
+   "status": "disqualified",
+   "reason": "Site is fencing-led (\"Wichita's #1 Fencing Contractor\")."
+  },
+  {
+   "position": 18,
+   "name": "Response Lawn Care",
+   "status": "picked",
+   "reason": "Owner-run residential mowing with quiet electric equipment. Weak 5-page Wix site: H1 is just the name, phone not tappable, nav links all point home."
+  },
+  {
+   "position": 18,
+   "name": "Daniels Lawn and Landscaping Service",
+   "status": "qualified-backlog",
+   "reason": "Family-owned since 2000. Site sits behind a SiteGround bot challenge, so it couldn't be qualified; needs a manual look."
+  },
+  {
+   "position": 17,
+   "name": "Western Lawn & Landscape LLC",
+   "status": "qualified-backlog",
+   "reason": "Commercial grounds + landscaping + hardscaping + apparel (Colten Coughlin, since 2016). Do-everything; Squarespace site is decent. Coughlin's Lawn Service (rank 13) is the same business."
+  },
+  {
+   "position": 17,
+   "name": "The Grounds Guys of Wichita",
+   "status": "disqualified",
+   "reason": "National franchise."
+  },
+  {
+   "position": 17,
+   "name": "Ornelas TOTAL Lawn Care",
+   "status": "disqualified",
+   "reason": "No website, 3 reviews."
+  },
+  {
+   "position": 16,
+   "name": "Ryan Lawn & Tree",
+   "status": "disqualified",
+   "reason": "Too big (regional chain)."
+  },
+  {
+   "position": 16,
+   "name": "Midwest Lawn Care",
+   "status": "disqualified",
+   "reason": "No website, 2 reviews."
+  },
+  {
+   "position": 16,
+   "name": "All Star Lawn & Landscape",
+   "status": "disqualified",
+   "reason": "Facebook only, 9 reviews; nothing to qualify from."
+  },
+  {
+   "position": 15,
+   "name": "Wichita Lawn Company LLC",
+   "status": "disqualified",
+   "reason": "36-link SEO-built WordPress site; not weak."
+  },
+  {
+   "position": 15,
+   "name": "Divine Lawns",
+   "status": "disqualified",
+   "reason": "Too big: office, careers page, blog, multi-city pages, agency-built site."
+  },
+  {
+   "position": 14,
+   "name": "Stone Cellar Farms Lawncare and Landscape",
+   "status": "disqualified",
+   "reason": "3 reviews."
+  },
+  {
+   "position": 14,
+   "name": "Lawn Love Lawn Care of Wichita",
+   "status": "disqualified",
+   "reason": "National platform."
+  },
+  {
+   "position": 14,
+   "name": "Duke's Lawn Care",
+   "status": "qualified-backlog",
+   "reason": "No website at all; 28 reviews. Needs a web footprint check."
+  },
+  {
+   "position": 13,
+   "name": "LandscapeKing",
+   "status": "disqualified",
+   "reason": "Turf/fence supplier, site already has a keyword H1."
+  },
+  {
+   "position": 13,
+   "name": "Deano's Lawn Management",
+   "status": "disqualified",
+   "reason": "No reviews, no site."
+  },
+  {
+   "position": 13,
+   "name": "Creation Care LLC",
+   "status": "disqualified",
+   "reason": "Domain redirects to an unrelated personal site; 2 reviews."
+  },
+  {
+   "position": 13,
+   "name": "Coughlin's Lawn Service",
+   "status": "disqualified",
+   "reason": "Same business as Western Lawn & Landscape."
+  },
+  {
+   "position": 12,
+   "name": "Nguyen Lawn Care LLC",
+   "status": "qualified-backlog",
+   "reason": "Site is blank. 11 reviews. Thin web footprint."
+  },
+  {
+   "position": 12,
+   "name": "LawnStarter",
+   "status": "disqualified",
+   "reason": "National platform."
+  },
+  {
+   "position": 12,
+   "name": "Lawler Lawn Care",
+   "status": "disqualified",
+   "reason": "No website, 4 reviews."
+  },
+  {
+   "position": 12,
+   "name": "Ferry Lawnscapes LLC",
+   "status": "picked",
+   "reason": "Family-owned, \"20+ years\", Landscaper category; landscaping first in the menu, with lawn maintenance and tree care. Dated site: no H1, \u00a9 2023, slow. 102 five-star reviews to write from."
+  },
+  {
+   "position": 11,
+   "name": "Yard Guy Lawn Service",
+   "status": "disqualified",
+   "reason": "1 review."
+  },
+  {
+   "position": 11,
+   "name": "Countryside Lawn & Tree Care",
+   "status": "disqualified",
+   "reason": "Too big (corporate office)."
+  },
+  {
+   "position": 11,
+   "name": "Bossy Oak Landscaping",
+   "status": "picked",
+   "reason": "Family-operated since 2014, retaining walls, flagstone, river rock, beds. Wix site whose H1 is \"Our Services\", no city or keyword in the headline."
+  },
+  {
+   "position": 10,
+   "name": "Smith Lawn & Landscape",
+   "status": "disqualified",
+   "reason": "No website, no address."
+  },
+  {
+   "position": 10,
+   "name": "New Frontier Lawn & Tree Care",
+   "status": "disqualified",
+   "reason": "Tree/pest-led, 3.7 rating."
+  },
+  {
+   "position": 10,
+   "name": "Cut Rite Lawncare",
+   "status": "qualified-backlog",
+   "reason": "Small Wix mowing site, no H1. 10 reviews."
+  },
+  {
+   "position": 10,
+   "name": "Air Capital Lawn Service",
+   "status": "disqualified",
+   "reason": "No website."
+  },
+  {
+   "position": 9,
+   "name": "Mowing & More",
+   "status": "disqualified",
+   "reason": "No website, low rating."
+  },
+  {
+   "position": 9,
+   "name": "Greenbelt Lawns",
+   "status": "qualified-backlog",
+   "reason": "Family lawn company (Paul Wells, 2021). 15+ page agency site is already decent; weaknesses are small (no H1, no tel link, \u00a9 2023)."
+  },
+  {
+   "position": 9,
+   "name": "Goodman Lawn & Landscape",
+   "status": "qualified-backlog",
+   "reason": "Do-everything and growing (multiple crews, commercial, HOA, municipal)."
+  },
+  {
+   "position": 9,
+   "name": "Amazing Green Services",
+   "status": "disqualified",
+   "reason": "Too big: 20+ page site, managers, careers."
+  },
+  {
+   "position": 8,
+   "name": "Green Machine Lawn & Landscape",
+   "status": "qualified-backlog",
+   "reason": "Lawn-led, but site was recently rebuilt with a keyword H1 and tel links."
+  },
+  {
+   "position": 8,
+   "name": "AUGI Lawn & Light",
+   "status": "picked",
+   "reason": "Firefighter-owned lawn care plus holiday lighting, 13+ years' experience. Only a one-page Jobber template on a jobbersites.com subdomain, no service pages."
+  },
+  {
+   "position": 7,
+   "name": "Par 4 Landscaping & Lawn Care",
+   "status": "disqualified",
+   "reason": "1 review, no site."
+  },
+  {
+   "position": 6,
+   "name": "NYCE Lawn Care",
+   "status": "disqualified",
+   "reason": "2 reviews; site unreachable."
+  },
+  {
+   "position": 6,
+   "name": "Mighty Lawns and Landscaping",
+   "status": "qualified-backlog",
+   "reason": "Domain shows a cPanel default page and no web footprint was found; confirm it's active first."
+  },
+  {
+   "position": 5,
+   "name": "Wingman Property Care",
+   "status": "disqualified",
+   "reason": "Site offline, out-of-state phone."
+  },
+  {
+   "position": 4,
+   "name": "Backyard Boys",
+   "status": "qualified-backlog",
+   "reason": "Site is a private wordpress.com site. Lawn care and gutters per one review; services otherwise unconfirmed."
+  },
+  {
+   "position": 3,
+   "name": "JK Lawn Care",
+   "status": "qualified-backlog",
+   "reason": "Site is blank."
+  },
+  {
+   "position": 2,
+   "name": "Ballin Lawn Care Services",
+   "status": "qualified-backlog",
+   "reason": "No website; 18 reviews."
+  },
+  {
+   "position": 1,
+   "name": "Prairie Lawn & Landscape",
+   "status": "disqualified",
+   "reason": "4.1 rating, few reviews; not reached."
+  }
+ ]
+}
