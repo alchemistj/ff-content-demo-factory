@@ -2,12 +2,9 @@
 
 # Deep Cleaning in Wichita, KS
 
-I'm Mida. A deep clean is the reset for a house that has gotten ahead of you: a one-time, top-to-bottom clean from the ladies who keep many Wichita homes spotless year after year. Call me and tell me what needs the most attention.
+I'm Mida. A deep clean is the reset for a house that has gotten ahead of you: a one-time, top-to-bottom clean from the company Wichita families have kept for years. Call me and tell me what needs the most attention.
 
 **Buttons:** Call (316) 295-3513 | Request a Quote
-
-> "I hired Mida's Maid Service for a deep clean and it was worth every penny! I'm not sure I have ever seen my house this clean. They were very professional and easy to work with."
-> — Elisabeth W.
 
 ## When a House Needs More Than a Regular Clean
 
@@ -15,7 +12,10 @@ You know the feeling. The counters are wiped and the floors are swept, but the o
 
 Everyday cleaning keeps a house up. Over months, though, dust, grease and soap scum build up in the places everyday cleaning skips, and once they've set in, they stop wiping off and start needing real time.
 
-That is what a deep clean is for. It takes the house back to a starting line.
+That is what a deep clean is for. It takes the whole house back to a starting line.
+
+> "I hired Mida's Maid Service for a deep clean and it was worth every penny! I'm not sure I have ever seen my house this clean. They were very professional and easy to work with."
+> — Elisabeth W.
 
 ## What a Deep Clean Gets To
 
@@ -39,7 +39,7 @@ Deep cleans tend to happen at a turning point.
 
 ## Moving In or Out
 
-A house changing hands is a one-time clean with a deadline. One of our customers had us do a move-out and staging cleanup after their realtor recommended us, and says plainly how it went.
+A house changing hands is a one-time clean with a deadline. A customer's realtor recommended us for a move-out and staging cleanup, and the customer says plainly how it went.
 
 > "Our realtor recommended Mida's Maid service for a move out/staging cleanup, and we will absolutely be repeat customers for our new house. The cleaners were so timely, friendly, professional and extremely diligent. They exceeded every standard and for a fair price."
 > — Ryan W.
@@ -58,7 +58,7 @@ That's why a reset costs more time than a regular visit, and why it's worth doin
 
 A deep clean is the part that's hardest to keep up. Most of the work after it is easier.
 
-If you'd like to keep the house at that level, we can move you onto [recurring house cleaning](/recurring-house-cleaning-wichita-ks/). The same standard carries over, and so do the people you called. You won't need to start over with someone new.
+If you'd like to keep the house at that level, we can move you onto [recurring house cleaning](/recurring-house-cleaning-wichita-ks/). The same standard carries over, and you'll already know who to call. You won't need to start over with someone new.
 
 Plenty of people only want the one clean, and that's fine too.
 
@@ -77,7 +77,7 @@ Yes, interior oven and refrigerator deep cleans are available on request, along 
 No. A deep clean is a one-time, thorough reset. Recurring cleaning keeps the house there.
 
 **Do you do move-out cleaning?**
-Yes. A customer used us for a move-out and staging cleanup. Call and tell me when you need it done.
+We've done move-out and staging cleanups. Call and tell me when you need it done.
 
 ## Book Your Deep Clean
 

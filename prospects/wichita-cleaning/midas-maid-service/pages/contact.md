@@ -10,6 +10,15 @@ The quickest way to reach me is to call. Tell me about your house and what you'r
 
 Call (316) 295-3513 and tell me about your home. Whether you want a recurring plan or a one-time deep clean, I can talk it through with you.
 
+## Who Comes to Your House
+
+You're letting people into your home, so ask whatever you need to before we ever set a date. How the visits work, who you'd call, what the plan would look like.
+
+I'd rather you hear it from me first than wonder about it later.
+
+> "Great service and very kind and responsible people, I would most definitely recommend them to anyone in town !"
+> — Noe T.
+
 ## Email
 
 Prefer to write? Send a note to info@midasmaidservice.com.
