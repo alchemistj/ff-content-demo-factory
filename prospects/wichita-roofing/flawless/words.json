@@ -3,7 +3,9 @@
   "business": {
     "name": "Flawless Roofing Co",
     "slug": "flawless",
-    "owners": ["Ravi"],
+    "owners": [
+      "Ravi"
+    ],
     "city": "Wichita",
     "state": "KS",
     "companyType": "Roofing Company",
@@ -82,7 +84,7 @@
       "hero": {
         "eyebrow": "Based on S Broadway in Wichita",
         "h1": "Roofing Company in Wichita, KS — Flawless Roofing Co",
-        "sub": "We replace and repair roofs in Wichita, starting with a free inspection. After hail or storm damage, we file your insurance claim and work with your adjuster. New roofs come with a free class 4 shingle upgrade.",
+        "sub": "We replace and repair roofs in Wichita, starting with a free inspection. After hail or storm damage, we file your insurance claim and work with your adjuster.",
         "primaryCta": {
           "label": "Call (316) 730-0301",
           "action": "call"
@@ -202,7 +204,7 @@
       "hero": {
         "eyebrow": "New roofs with a free upgrade",
         "h1": "Roof Replacement in Wichita, KS — Flawless Roofing Co",
-        "sub": "We inspect your roof for free, file your insurance claim and work with your adjuster. Your new roof gets a free class 4 upgrade, with downspouts and gutter guards included.",
+        "sub": "We inspect your roof for free, file your insurance claim and work with your adjuster. Then our crew puts on your new roof.",
         "primaryCta": {
           "label": "Call (316) 730-0301",
           "action": "call"
@@ -278,7 +280,7 @@
             },
             {
               "title": "Roof day",
-              "text": "Our crew puts on your new roof with the free class 4 upgrade, plus downspouts and gutter guards."
+              "text": "Our crew puts on your new roof and cleans up before we leave."
             },
             {
               "title": "Cleanup",
@@ -311,10 +313,6 @@
           "type": "faq",
           "heading": "Roof Replacement Questions",
           "items": [
-            {
-              "q": "Is the class 4 upgrade really free?",
-              "a": "Yes. The upgrade to class 4 impact-resistant shingles is free on your new roof, and downspouts and gutter guards are included."
-            },
             {
               "q": "Will you deal with my insurance company?",
               "a": "Yes. We file your claim and work with your adjuster."

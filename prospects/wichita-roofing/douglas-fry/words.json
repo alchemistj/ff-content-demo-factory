@@ -100,7 +100,7 @@
       "hero": {
         "eyebrow": "Family roofers in Wichita since 1981",
         "h1": "Roofing Company in Wichita, KS — Douglas Fry Roofing",
-        "sub": "We're Doug and Jason Fry, and we own this family company, started in 1981, so you always speak with an owner. We install and repair tile, DaVinci, Brava, wood shake and metal roofs.",
+        "sub": "We're Doug and Jason Fry, and we own this family company, so you always speak with an owner. We install and repair tile, DaVinci, Brava, wood shake and metal roofs.",
         "primaryCta": {
           "label": "Call (316) 655-9777",
           "action": "call"
@@ -199,7 +199,7 @@
       "hero": {
         "eyebrow": "Tile, DaVinci, Brava, shake, asphalt and metal",
         "h1": "Roof Replacement in Wichita, KS — Douglas Fry Roofing",
-        "sub": "A new roof starts with the material, and tile, DaVinci, Brava and standing seam metal are where we are strongest. Your written estimate lists the scope, the warranty and the price, and you talk to an owner from the first visit on.",
+        "sub": "A new roof starts with the material, and tile, DaVinci, Brava and standing seam metal are where we are strongest, and you talk to an owner from the first visit on.",
         "primaryCta": {
           "label": "Call (316) 655-9777",
           "action": "call"
@@ -295,7 +295,7 @@
             },
             {
               "title": "You get the estimate in writing",
-              "text": "Scope, warranty and price are on paper before any work starts."
+              "text": "Everything is on paper before any work starts."
             },
             {
               "title": "Our crew replaces the roof",
@@ -316,7 +316,7 @@
           "items": [
             {
               "q": "Is the estimate in writing?",
-              "a": "Yes. We always give a written estimate on re-roof projects, with the scope of work, warranty information and price."
+              "a": "Yes. We always give a written estimate on re-roof projects, before any work starts."
             },
             {
               "q": "Can you work with my insurance company?",
@@ -444,7 +444,7 @@
             },
             {
               "title": "You get the estimate in writing",
-              "text": "Scope, warranty and price are on paper before the repair starts."
+              "text": "Everything is on paper before the repair starts."
             },
             {
               "title": "Our crew makes the repair",
