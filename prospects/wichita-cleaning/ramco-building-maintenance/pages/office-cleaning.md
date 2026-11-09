@@ -15,20 +15,37 @@ A warehouse is empty at night. An office has people's things in it: papers on de
 
 Good office cleaning respects that. Desks are wiped without moving what's on them, and trash goes out.
 
-The break room and restrooms are cleaned, and the entrance looks right when the first person walks in.
-
 When the office is clean, nobody mentions it. When it isn't, the office manager hears about it, and that's the call we'd like you never to have to make.
 
-## What We Clean in an Office
+## What Gets Done Every Night, and What Doesn't
 
-The usual office list: workstations and desks, shared spaces, the kitchen or break room, restrooms, carpet and hard floors, entrances and glass.
+Not every task in an office needs to happen every night, and a good plan doesn't pretend it does.
 
-Carpet matters most. In an office it takes the daily traffic from the door to the desks, and it holds soil and odor long after a vacuum has run over it. We clean carpet as part of the program, and we do nightly carpet cleaning where an office needs it.
+Nightly work is what people touch and see: emptying trash, wiping shared surfaces, vacuuming the walkways, cleaning the restrooms and break room, and making the entrance look right at 8:00 AM.
 
-Chairs and fabric furniture get dirty too, from hands, spills and years of use. Upholstery and office chair cleaning is something Ramco does.
+Weekly or less often is the slower wear: dusting vents and ledges, cleaning glass and door frames, edging corners the vacuum misses, and spot-treating carpet.
+
+Chairs and fabric furniture sit somewhere between. Hands, spills and years of use build up in them, so upholstery and office chair cleaning is work Ramco does, scheduled when it's needed rather than every night.
 
 > "Wonderful staff and consistent operation.  Highly recommend!"
 > — SF P.
+
+## Carpet Does the Most Work
+
+Carpet takes the daily traffic from the door to the desks, and it holds soil and odor long after a vacuum has run over it.
+
+Vacuuming lifts what's on top. Grit that works down into the pile is what wears lanes, and only deeper cleaning removes it. We clean carpet as part of the program, and we do nightly carpet cleaning where an office needs it.
+
+## Restrooms and Break Rooms
+
+These are the two rooms people judge an office by, and they're the ones that go wrong fastest. A break room sink with a film on it or a restroom that wasn't restocked tells your staff and your visitors how the building is run.
+
+A break room is a kitchen, so it needs more than a wipe: the sink, the microwave handle, the table and the floor under it, where crumbs and spills collect. A restroom needs fixtures disinfected, floors mopped and supplies filled, every day.
+
+Tell us what your staff notices first, and that's where we start.
+
+> "Dealing with Ramco for our janitoral needs. amaing people to work with very prompt and care about servise they provide."
+> — Brian H.
 
 ## When Your Office Changes
 
@@ -36,15 +53,9 @@ Offices change often. You hire six people and need a new row of desks.
 
 A lease adds the suite next door. The break room is rebuilt, or the team starts coming in earlier.
 
-The cleaning has to change with it, and that's where many offices end up with a cleaner who never got the message.
+The cleaning has to change with it, and that's where many offices end up with a cleaner who never got the message. The new suite is never added to the route, or a crew still arrives at 7:00 when people now start at 7:00.
 
 With Ramco, you tell us and the plan changes. That's what our longest clients get: a cleaner that keeps pace as the space grows and moves.
-
-## Restrooms and Break Rooms
-
-These are the two rooms people judge an office by, and they're the ones that go wrong fastest. A break room sink with a film on it or a restroom that wasn't restocked tells your staff and your visitors how the building is run.
-
-Tell us what your staff notices first, and that's where we start.
 
 ## What Switching Looks Like
 
@@ -58,16 +69,13 @@ If you lease a suite in a larger building, or run an office inside a plant or a 
 
 One company for the lot, offices, carpet, restrooms and glass, is how Ramco works. Fewer vendors means fewer people to chase.
 
-> "Dealing with Ramco for our janitoral needs. amaing people to work with very prompt and care about servise they provide."
-> — Brian H.
-
 ## Questions Before You Hire an Office Cleaner
 
 **Do I need to be in the office when you clean?**
 No. Our janitorial service is built for after hours, so the office is clean when you arrive.
 
 **Who will be in my office?**
-Ramco employees. The company says its cleaning is done by its own employees, not subcontractors, and that every staff member passes a background check before stepping into your building.
+Ramco employees. Our cleaning is done by our own employees, not subcontractors, and every staff member passes a background check before stepping into your building.
 
 **What if I add space or change my hours?**
 Tell us. A new suite, a new layout or a new schedule is something we adjust.

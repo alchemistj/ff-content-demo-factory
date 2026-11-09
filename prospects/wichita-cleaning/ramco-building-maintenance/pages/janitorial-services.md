@@ -17,11 +17,13 @@ Each of them wears on a different clock. Restrooms are a daily job.
 
 A main hallway shows soil in lanes within weeks, while a conference room carpet can go much longer. Hard floors need regular care too, because grit on vinyl, tile or concrete is what scuffs the finish away.
 
-Split those among several vendors and things fall through. With us it's one program, one company and one number to call.
+Split those among several vendors and things fall through. A carpet crew can undo a floor someone else just finished, and nobody owns the restroom that falls between two contracts.
+
+With us it's one program, one company and one number to call.
 
 ## After Hours, and Between Visits
 
-Our janitorial service is built around the evening. Crews work after hours so the building is ready when your people walk in, and the company describes its evening staff as trained and background-checked.
+Our janitorial service is built around the evening. Crews work after hours so the building is ready when your people walk in, and our evening staff is trained and background-checked.
 
 Some buildings need more than a nightly visit. A school hallway at noon or a lobby on a busy day can't wait until tonight. That's what day porter service is for, on a schedule built to suit the building.
 
@@ -36,7 +38,7 @@ A program for a factory isn't a program for a bank. We write them for the kinds 
 
 **Manufacturing.** Plants carry heavy soil, so regular janitorial work is often paired with deep cleaning of floors and surfaces.
 
-**Banking.** Anyone who works in a financial institution is a security question. Ramco says it keeps strict hiring standards and background checks for every employee who may work in one. Intrust Bank has been with us since 2010.
+**Banking.** Anyone who works in a financial institution is a security question. We keep strict hiring standards and run background checks on every employee who may work in one. Intrust Bank has been with us since 2010.
 
 **Education.** Schools and colleges mean heavy foot traffic, carpet and hard floors in the same building and restrooms that get hard use. WSU Tech has been a client since 2007.
 
@@ -57,14 +59,14 @@ We'd rather hear about a change the day you know about it. The people who answer
 
 Some work doesn't belong in a nightly route. Carpet that has worn into lanes, a hard floor that needs more than a mop, a production area that needs a full reset: we do these as their own jobs, including nightly carpet cleaning where a building needs it.
 
-They go more smoothly when the company that cleans the building every night already knows it. We know which hallway takes the traffic and which floor has been neglected.
+They go more smoothly when the company that cleans the building every night already knows it. The crew already knows which hallway takes the traffic and which floor has been neglected.
 
 If you need only one of them, such as carpet or windows, that's a service we offer, and it's worth telling us what the rest of the building looks like.
 
 ## Questions Before You Hire a Janitorial Company
 
 **Are your cleaners employees or subcontractors?**
-Ramco says its cleaning is done by its own employees, not subcontractors.
+Our cleaning is done by Ramco employees, not subcontractors. That matters when something goes wrong, because the person you call is responsible for the people in your building.
 
 **Can you add an area or change the schedule later?**
 Yes. A new area or a changed schedule is something we expect to hear about. Tell us what changed and we'll change the plan.

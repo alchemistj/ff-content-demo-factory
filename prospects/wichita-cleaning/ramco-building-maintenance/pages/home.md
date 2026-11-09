@@ -17,9 +17,15 @@ A department takes over another floor. A shift starts earlier. A new wing opens,
 
 The cleaning plan that fit last year's building stops fitting, and that's usually where a cleaning company starts to slip.
 
+Most vendors are at their best in the first month, when the scope is fresh and someone is watching. By the second year the scope on paper describes a building that no longer exists, and nobody on either side is checking it against the real one.
+
 The new area never gets added. The schedule change reaches the office but never the crew. Somebody calls twice and gets no answer.
 
-We try to make that the part that never goes wrong. When something changes, you tell us, and we change the plan to match.
+Keeping up is plain work. A new floor means new restrooms, a new route and a new count of what gets restocked.
+
+A shift that starts at 6:00 instead of 8:00 means the crew has to be out of the way earlier. Someone has to write those down and change the plan.
+
+That's the part we try to make sure never goes wrong. When something changes, you tell us, and we change the plan to match.
 
 That's how Intrust Bank has been with us since 2010, The Coleman Company since 2005 and WSU Tech since 2007. A cleaning company is easy to hire and hard to keep, and these clients kept us.
 
@@ -32,7 +38,9 @@ Restrooms, floors, carpet, glass and offices all wear on different clocks.
 
 Restrooms need attention every night. Carpet in a main hallway wears into lanes long before the carpet in a closed office does. Glass shows every fingerprint by Tuesday.
 
-If each one belongs to a different vendor, then a facility manager spends the week sorting out whose job a mess is. We do all of it under one name, so there is one number to call and one company that answers for the result.
+If each one belongs to a different vendor, then a facility manager spends the week sorting out whose job a mess is. The glass crew drips on a floor someone just finished, and the floor company says it wasn't them.
+
+We do all of it under one name, so there is one number to call and one company that answers for the result.
 
 Ramco has also been at this a long time. Our history goes back to Wichita in 1977, and I started here in 2002 as the company's first dedicated sales hire. I became General Manager in 2005, and Maria and I became full owners on January 1, 2026.
 
@@ -73,7 +81,7 @@ They are easier to schedule when the company that cleans your building every nig
 
 When a cleaning company goes quiet, you can't tell whether the work is being done until something shows. We don't want you to wonder.
 
-I check in with the clients I work with, and the rest of the team answers when you call. Ramco's cleaners are Ramco employees, not subcontractors, and the company says every staff member passes a background check before stepping into your building.
+I check in with the clients I work with, and the rest of the team answers when you call. Our cleaners are our own employees, not subcontractors, and every staff member passes a background check before stepping into your building.
 
 > "Amazing company from owner to cleaners. Always willing to take calls and answer any questions."
 > — Patti D.
@@ -94,7 +102,7 @@ We clean for businesses in Wichita and the area around it, in Sedgwick, Butler a
 We don't publish prices, because a plant and a two-room office are not the same job. Ask for a quote and we'll put a number on your building.
 
 **What if our schedule changes?**
-Tell us. Schedule changes, new areas and one-off problems are the things we expect to hear about, and the reviews above come from clients who brought them to us.
+Tell us. Schedule changes, new areas and one-off problems are what we expect to hear about, and we change the plan to match.
 
 **We already have a cleaning company. Where do we start?**
 Tell us what's in the building, when people are in it and what hasn't been working. We'll build the program from there.
