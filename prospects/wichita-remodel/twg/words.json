@@ -101,8 +101,8 @@
           "type": "split",
           "heading": "One Company for Everything the Hail Hit",
           "body": [
-            "Hail rarely stops at the shingles. We replace the roof, then the siding, windows, doors and paint the storm damaged.",
-            "You call one company, not four. We have taken a hail job from the roof to the paint."
+            "Hail rarely stops at the shingles. We replace the roof, then repair the siding, windows, doors and paint the storm damaged.",
+            "You call **one company, not four**. We have taken a single hail job from a new roof through new windows and fresh paint."
           ],
           "image": {
             "slot": "home-hail",
@@ -120,8 +120,8 @@
           "type": "split",
           "heading": "We Work With Your Insurance Company",
           "body": [
-            "We help maximize insurance claims. We work directly with your adjuster, so you are not explaining roof damage alone.",
-            "You get a free estimate first, so you know what the storm did before the claim moves."
+            "We help maximize insurance claims. We **work directly with your adjuster**, so you are not left explaining roof damage on your own.",
+            "We have walked homeowners through hail claims on roofs, siding and windows, and made sure the damage was counted."
           ],
           "image": {
             "slot": "home-claims",
@@ -131,16 +131,21 @@
           "imageSide": "right"
         },
         {
+          "type": "review",
+          "quote": "They were very professional in how they did the overall roof.  They even adjusted my claim to help me out.",
+          "name": "Linda M."
+        },
+        {
           "type": "services",
           "heading": "Everything We Do",
-          "intro": "Roofs and hail damage are our main work. Siding, windows, doors, paint and decks come from the same crew."
+          "intro": "Roofs and hail damage are our main work. We also install siding, windows and doors, paint inside and out, and build decks."
         },
         {
           "type": "prose",
-          "heading": "A Straight Bid",
+          "heading": "Clear Bids, Fair Prices",
           "body": [
-            "We are quick with your bid and clear about the cost, including how it may change as the work goes on.",
-            "Our work comes with a 100% Satisfaction Guarantee."
+            "You get a **bid that spells out the cost**, including what could change it once the old roof or siding comes off.",
+            "We have turned bids around quickly and shown homeowners ways to save money on the project. Our work comes with a 100% Satisfaction Guarantee."
           ]
         },
         {
@@ -215,9 +220,9 @@
           "type": "split",
           "heading": "A New Roof, Start to Finish",
           "body": [
-            "We remove the old roof, replace it and take care of every detail. We have left a yard cleaner than we found it.",
-            "Roofs we have replaced include a hail-damaged metal roof.",
-            "Our crew does the tear-off, the install and the clean-up, so you deal with one team from estimate to finish."
+            "We remove the old roof, put on the new one and **take care of every detail**, down to the yard. We have left a yard cleaner than we found it.",
+            "We replace shingle roofs and metal roofs, including a hail-damaged metal roof.",
+            "Our crew does the tear-off, the install and the clean-up, and we call afterward to make sure you are happy."
           ],
           "list": [
             "**Roof replacement** when the roof is worn out or the storm finished it",
@@ -239,8 +244,8 @@
           "type": "prose",
           "heading": "Hail Damage Is More Than the Roof",
           "body": [
-            "Hail hits roofs, siding, doors and awnings. We look at all of it, not only the shingles, and repair or replace what the storm damaged.",
-            "We replaced one hail-damaged metal roof along with a door, an awning and siding on the same job.",
+            "Hail hits roofs, siding, doors and awnings. We **look at all of it**, not only the shingles, and repair or replace what the storm damaged.",
+            "We have replaced a hail-damaged metal roof along with a door, an awning and siding on the same job.",
             "After a storm, call as soon as you can. We look at the roof, siding, windows and doors and tell you what the hail did."
           ]
         },
@@ -253,8 +258,8 @@
           "type": "prose",
           "heading": "We Work With Your Insurance Company",
           "body": [
-            "We help maximize insurance claims. We work directly with your adjuster and keep you on the phone through every step.",
-            "We were once called for siding repair and found hail damage on the roof too. We coordinated with the adjuster on both."
+            "We help maximize insurance claims. We **work directly with your adjuster** and explain each step, so you always know where your claim stands.",
+            "We have been called for siding repair, found hail damage on the roof too and coordinated with the adjuster on both."
           ]
         },
         {
@@ -286,16 +291,21 @@
         },
         {
           "type": "review",
-          "quote": "The crew at TWG came out and did a top notch job on our roof. After 5 years it still looked so great, we had them do the roof of another (rental) house.",
-          "name": "Phil B."
+          "quote": "Very professional, fast service, and prompt response to all questions and concerns.",
+          "name": "Duane S."
         },
         {
           "type": "prose",
           "heading": "Roofs That Hold Up",
           "body": [
-            "We stand behind our work with a 100% Satisfaction Guarantee.",
-            "We have roofed a house and, five years later, roofed the owner's rental too."
+            "A new roof should **still look right years later**. We have roofed a house and, five years on, roofed the owner's rental too.",
+            "We stand behind our work with a 100% Satisfaction Guarantee."
           ]
+        },
+        {
+          "type": "review",
+          "quote": "The crew at TWG came out and did a top notch job on our roof. After 5 years it still looked so great, we had them do the roof of another (rental) house.",
+          "name": "Phil B."
         },
         {
           "type": "faq",
@@ -360,8 +370,8 @@
           "type": "split",
           "heading": "New Siding After Hail or Wear",
           "body": [
-            "Hail breaks siding. We repair or replace it, and when the storm hit your roof too, we handle both with your insurance company.",
-            "We take away the old siding, and many of our siding options carry lifetime manufacturer warranties."
+            "Hail cracks and dents siding. We **repair or replace it**, and when the storm hit your roof too, we handle both with your insurance company.",
+            "Many of our siding options carry **lifetime manufacturer warranties**."
           ],
           "image": {
             "slot": "siding-main",
@@ -379,14 +389,14 @@
           "type": "split",
           "heading": "Windows With Rot, Bad Seals or Storm Damage",
           "body": [
-            "We replace windows with rotted frames, windows with failed seals and windows the hail damaged.",
-            "We fit each one into the opening you have and trim it out clean."
+            "We replace windows with **rotted frames**, windows with **failed seals** and windows the hail damaged.",
+            "We have replaced a few windows in a home, single rotted windows and windows as part of a full hail repair."
           ],
           "list": [
-            "**Rotted windows** replaced and trimmed out",
+            "**Rotted windows** replaced",
             "**Failed seals** replaced",
             "**Hail-damaged windows** handled with your claim",
-            "**A few windows or the whole house**, one at a time or all at once"
+            "**New windows with new siding**, so the whole house is done at once"
           ],
           "image": {
             "slot": "siding-windows",
@@ -402,9 +412,9 @@
         },
         {
           "type": "prose",
-          "heading": "Our Windows Stand Behind the Sale",
+          "heading": "We Stand Behind Our Windows",
           "body": [
-            "When a seal fails, you call us. We have replaced two windows for a customer at no charge, no questions asked.",
+            "We have replaced two windows with failed seals for a customer **at no charge**, no questions asked.",
             "We stand behind our work with a 100% Satisfaction Guarantee."
           ]
         },
@@ -415,24 +425,16 @@
         },
         {
           "type": "prose",
-          "heading": "Siding and Windows After a Storm",
-          "body": [
-            "Hail damage to siding and windows belongs in the same claim as the roof. We work with your insurance company on all of it.",
-            "We have gotten a homeowner all new siding after a hailstorm, with the claim handled alongside the repair."
-          ]
-        },
-        {
-          "type": "prose",
           "heading": "Entry and Security Doors",
           "body": [
-            "We install vinyl, wood and fiberglass doors, including entry and security doors.",
-            "A door often goes in with the siding or the windows, so the whole front of the house matches."
+            "We install **vinyl, wood and fiberglass doors**, including entry and security doors.",
+            "We have replaced hail-damaged doors along with the siding, and we help you choose a door that suits the rest of the house."
           ]
         },
         {
           "type": "review",
-          "quote": "Scott and his guys replaced a few windows in our home. His team was on time and very professional through the whole process.",
-          "name": "Colin F."
+          "quote": "If you are considering making exterior changes on your home, be sure to talk to the Window Guys.  They have a great selection of windows, siding, doors, etc to give your home the facelift you were looking for!",
+          "name": "Megan B."
         },
         {
           "type": "steps",
@@ -452,16 +454,21 @@
             },
             {
               "title": "We clean up",
-              "text": "We leave the yard clean when we finish."
+              "text": "We leave the yard clean when we finish, so all that is left is a better-looking house."
             }
           ]
+        },
+        {
+          "type": "review",
+          "quote": "Scott and his guys replaced a few windows in our home. His team was on time and very professional through the whole process.",
+          "name": "Colin F."
         },
         {
           "type": "prose",
           "heading": "Paint to Finish the Job",
           "body": [
             "We paint homes, offices and industrial properties, inside and out.",
-            "New siding and trim look best with fresh paint, and one crew can do both."
+            "New siding and trim look best with fresh paint. We have finished a job with new windows, new siding and a new color on the whole house."
           ]
         },
         {
@@ -475,11 +482,11 @@
           "items": [
             {
               "q": "Will my insurance cover hail-damaged siding?",
-              "a": "Often it can. We help maximize insurance claims and work with your adjuster. Call (316) 685-1010 and we will look at the damage."
+              "a": "We help maximize insurance claims and work directly with your adjuster on hail-damaged siding. Call (316) 685-1010 and we will look at the damage."
             },
             {
               "q": "Can I replace only a few windows?",
-              "a": "Yes. We have replaced a few windows in a home, and we have replaced rotted ones one at a time."
+              "a": "Yes. We have replaced a few windows in a home, and single rotted windows too."
             },
             {
               "q": "Do you install doors too?",
@@ -563,7 +570,7 @@
     }
   ],
   "footer": {
-    "about": "TWG Construction is a licensed and insured general contractor in Wichita, KS, known to many customers as The Window Guys. We replace roofs, repair hail damage and install siding, windows and doors.",
+    "about": "TWG Construction is a licensed and insured general contractor in Wichita, KS, known to some customers as The Window Guys. We replace roofs, repair hail damage and install siding, windows and doors.",
     "why": [
       "Hail damage handled with your insurance company",
       "100% Satisfaction Guarantee",
@@ -574,9 +581,9 @@
   "strategy": {
     "whyHeading": "Why we built this site",
     "why": [
-      "When hail hits Wichita, you want one company that replaces the roof, deals with the insurance and leaves the yard clean. Your customers say that is you. One wrote, \"They worked with the insurance company to get the money needed for repairs.\"",
-      "Your website says \"Remodeling & Renovation Contractors\" and never says roofing. It shows 316.776.4748, while Google shows (316) 685-1010. A roofer search may not find you, and two numbers may get you neither call.",
-      "So we built a demo that leads with roofing and hail damage, gives siding, windows and doors a page, shows one phone number everywhere and puts customers' words beside the work."
+      "When hail hits Wichita, homeowners want one company that replaces the roof, handles the insurance and leaves the yard clean. Your Google reviews say that is you: roofs, hail and insurance come up more than anything else. One customer wrote, \"They worked with the insurance company to get the money needed for repairs.\"",
+      "Your website never says roofing. The top of the page says \"Remodeling & Renovation Contractors\", so a homeowner searching for a roofing company in Wichita may never see you. It also shows 316.776.4748 while Google shows (316) 685-1010, and two numbers can cost you both calls.",
+      "So we built a demo that leads with roofing and hail damage, gives siding, windows and doors their own page, shows one phone number everywhere and puts your customers' words beside the work."
     ],
     "cardsHeading": "Be the Roofing Company People Find on Google",
     "cardsIntro": "Each card is one demo page: what costs you calls today, and the fix.",
@@ -602,7 +609,7 @@
         "title": "Roof Replacement & Hail Damage Repair",
         "why": "Roofs, hail and insurance claims are most of what customers write about.",
         "problems": [
-          "Your whole site is one page. Roofing and hail damage share a few lines with five other services, and insurance gets one sentence."
+          "Your whole site is one page. Roofing and hail damage share a few lines with five other services, so Google has no page to show someone searching for hail damage repair, and insurance gets one sentence."
         ],
         "fixes": [
           "A full page for roof replacement and hail damage repair in Wichita, KS.",
@@ -615,10 +622,11 @@
         "title": "Siding, Windows & Doors",
         "why": "Customers write about siding and windows, but your site does not.",
         "problems": [
-          "The Windows & Doors paragraph describes only doors, so nobody searching for windows finds you."
+          "The Windows & Doors paragraph describes only doors, so someone searching for window replacement has nothing to find, even though customers know you as The Window Guys."
         ],
         "fixes": [
-          "A page for siding, windows and doors in Wichita, KS."
+          "A page for siding, windows and doors in Wichita, KS.",
+          "Windows described for what you really fix: rotted frames, failed seals and hail damage."
         ],
         "alsoAdd": "A check of what your competitors offer, so services you didn't think to mention still get their own pages."
       },
@@ -627,11 +635,12 @@
         "title": "Contact",
         "why": "Where interest turns into a call.",
         "problems": [
-          "\"Contact Us\", \"Services\" and \"About\" only scroll down the same page, and /contact, /services and /about say \"Page not found\".",
+          "\"Contact Us\", \"Services\" and \"About\" only scroll down the same page, and /contact, /services and /about say \"Page not found\", so anyone who types them in hits a dead end.",
           "Your site says Suite 102 and Google says #101."
         ],
         "fixes": [
-          "A real contact page, with one number that matches Google."
+          "A real contact page, with one number that matches Google.",
+          "No address until you tell us which suite is right."
         ],
         "alsoAdd": "Call and form tracking that shows which pages and towns your leads come from."
       }
@@ -665,7 +674,7 @@
     ],
     "closing": {
       "heading": "Want a website like this for your business?",
-      "text": "Your customers already say you work with their insurance and get the roof done quickly. You likely do more than we found, so on your onboarding call we confirm the full list of services and every detail with you and your team."
+      "text": "Your customers already say you handle the insurance and get the roof done quickly. Book a strategy call with Fluid Frame: we'll walk you through this demo and settle your phone number, address and full service list with you."
     }
   },
   "onboardingQuestions": [

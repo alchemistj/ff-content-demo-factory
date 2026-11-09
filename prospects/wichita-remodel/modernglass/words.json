@@ -584,17 +584,17 @@
   "strategy": {
     "whyHeading": "Why we built this site",
     "why": [
-      "Your customers already make your case. They call you \"amazingly fast\" and \"very punctual,\" and they write: \"It is hard to find a glass company that takes the time to come or put you as a priority.\" You hold a 4.8 on 25 Google reviews.",
-      "Your website says none of that. The top of the page never says glass company or Wichita, nothing taps to call, and shower doors and windows have no page of their own. Someone ready to hire you has to work to reach you.",
-      "So we rebuilt it around the work your customers praise: shower doors and window glass each get a page, every page says Wichita, and your number is one tap away."
+      "Your customers make your case. They call you \"amazingly fast\" and \"very punctual,\" and write: \"It is hard to find a glass company that takes the time to come or put you as a priority.\" You hold a 4.8 on 25 Google reviews.",
+      "Your website says none of that. The top never says glass company or Wichita, nothing taps to call, and shower doors and windows have no page.",
+      "So we rebuilt it around the work your customers praise, with your number one tap away."
     ],
     "cardsHeading": "Be the Glass Company People Find on Google",
-    "cardsIntro": "Each card is one page of the demo: what costs you calls today, and how the demo fixes it.",
+    "cardsIntro": "Each card is one page of the demo: what costs you calls today, and the fix.",
     "cards": [
       {
         "route": "/home/",
         "title": "Homepage",
-        "why": "The first page people see, and the one Google reads to learn who you are and where you work.",
+        "why": "The page Google reads to learn who you are and where you work.",
         "problems": [
           "The top of the page says \"Custom Residential & Commercial Glass\" with no town, and it is not a real headline, so Google cannot tell you are a glass company in Wichita.",
           "Your phone number is plain text at the very bottom of the page, so someone on a phone cannot tap it to call."
@@ -626,7 +626,7 @@
         "why": "Customers buy windows and glass replacements from you, yet the word \"window\" appears nowhere on your site.",
         "problems": [
           "A search for \"window glass replacement Wichita\" cannot find you, because no page mentions windows.",
-          "Your window and aluminum glass door work is invisible, even though one buyer has ordered over 30 windows."
+          "Your window and aluminum glass door work is invisible, though one buyer has bought over 30 windows."
         ],
         "fixes": [
           "A page for window glass replacement in Wichita, KS.",
@@ -637,9 +637,9 @@
       {
         "route": "/contact/",
         "title": "Contact",
-        "why": "The page where interest turns into a call, and where the next step needs to be obvious.",
+        "why": "Where interest turns into a call.",
         "problems": [
-          "Every \"Click for a Quote\" button sends people off your site to an outside form, so some leave before they reach you.",
+          "Every \"Click for a Quote\" button sends people off your site to an outside form, and some never come back.",
           "Your number and address sit only at the very bottom of the page."
         ],
         "fixes": [
@@ -682,7 +682,7 @@
     ],
     "closing": {
       "heading": "Want a website like this for your business?",
-      "text": "Your customers already say you show up fast and work clean. Book a strategy call with Fluid Frame, and we will walk you through this demo, confirm every service you offer and show you what it takes to put it live."
+      "text": "Book a strategy call with Fluid Frame. We will walk you through this demo, confirm every service you offer and show you what it takes to put it live."
     }
   },
   "onboardingQuestions": [
