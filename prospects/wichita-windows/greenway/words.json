@@ -627,9 +627,8 @@
   "strategy": {
     "whyHeading": "Why we built this site",
     "why": [
-      "Your customers love you: all 87 of your Google reviews are five stars, and they praise an honest price, an owner who answers his phone and crews that clean up.",
-      "Your site already does a lot right: a page for every service, a page for each town and fast loading. But it leads with siding while windows are just as big in your reviews, it hides your number on a phone, and it makes two claims BBB does not back.",
-      "So we rebuilt it around what your customers say, with John up front and a one-tap call at the top."
+      "Your customers love you: all 87 of your Google reviews are five stars. They praise an honest price, an owner who answers his phone and crews that clean up.",
+      "Your site does a lot right, with a page for every service and fast loading. But it hides your number on a phone and makes two claims BBB does not back. So we rebuilt it around what your customers say, with John up front."
     ],
     "cardsHeading": "Be the Exterior Company People Find on Google",
     "cardsIntro": "Each card is one page of the demo: what costs you calls today, and how the demo fixes it.",
@@ -639,13 +638,13 @@
         "title": "Homepage",
         "why": "The first page people see, and the one Google reads to learn who you are and where you work.",
         "problems": [
-          "On a phone, the top of your homepage is a financing bar, your logo and a photo. What you do and your number sit a full screen down, so visitors leave before they call.",
+          "On a phone, the top of your homepage is a financing bar, your logo and a photo. What you do and your number sit a full screen down.",
           "The headline names two services and never says what kind of company you are, and siding comes first while windows and doors are about 44% of your written reviews.",
-          "The page says \"over 15 years\" and your siding page says \"since 2012\". BBB shows 14 years, so anyone who checks sees two answers."
+          "The page says \"over 15 years\", your siding page says \"since 2012\", and BBB shows 14 years."
         ],
         "fixes": [
           "Your number is one tap at the very top.",
-          "A headline that says exterior remodeling company in Wichita, KS, with windows and siding given equal weight.",
+          "A headline that says exterior remodeling company in Wichita, KS.",
           "One start date, since 2012."
         ],
         "alsoAdd": "Every page set up behind the scenes so Google and AI tools like ChatGPT know exactly what you do, where you work, and what your customers say."
@@ -653,40 +652,38 @@
       {
         "route": "/window-replacement-wichita-ks/",
         "title": "Window Replacement",
-        "why": "Windows and doors are about 44% of your written reviews, and this page is where a homeowner decides to trust you.",
+        "why": "Windows and doors are about 44% of your written reviews.",
         "problems": [
           "The \"CALL\" line at the top is plain text, so a visitor on a phone cannot tap it.",
-          "The page says \"BBB accreditation\", but BBB lists you as not accredited. A careful buyer can check that in a minute.",
-          "On a phone your window pages run 11 to 19 screens long."
+          "The page says \"BBB accreditation\", but BBB lists you as not accredited, and a careful buyer can check that in a minute."
         ],
         "fixes": [
           "A page for window replacement in Wichita, KS, with your number one tap away.",
-          "Only claims a homeowner can check.",
-          "One page for one window, a whole house, basement windows and doors, with a review beside each."
+          "Only claims a homeowner can check."
         ],
         "alsoAdd": "Pages planned from what Google actually shows for each search, so every page targets something people really look for."
       },
       {
         "route": "/siding-replacement-wichita-ks/",
         "title": "Siding Replacement",
-        "why": "Siding and trim are about 45% of your written reviews, and your crews finish them in days.",
+        "why": "Siding and trim are about 45% of your written reviews.",
         "problems": [
-          "Nine siding pages sit in your menu, so a visitor picks a material before seeing what the job costs. Your reviews talk about price, crews and clean-up.",
+          "Nine siding pages sit in your menu, so a visitor picks a material before seeing what the job costs.",
           "\"Gutters\" in your menu opens the homepage instead of a page."
         ],
         "fixes": [
           "One siding page for a full re-side, a single wall, chimneys, trim and repairs.",
-          "Reviews on price, long days and clean yards, where a buyer is deciding."
+          "Reviews on price, long days and clean yards."
         ],
         "alsoAdd": "A check of what your competitors offer, so services you didn't think to mention still get their own pages."
       },
       {
         "route": "/contact/",
         "title": "Contact",
-        "why": "The page where interest turns into a call.",
+        "why": "Where interest turns into a call.",
         "problems": [
-          "Your hours read \"Monday-Sunday, 24 Hours\", which sounds like template text, so visitors cannot tell when John picks up.",
-          "Your form is protected only by a hidden field, with no spam blocker."
+          "Your hours read \"Monday-Sunday, 24 Hours\", which sounds like template text.",
+          "Your form has only a hidden field to stop spam."
         ],
         "fixes": [
           "Your number and address together, with what to have ready.",
@@ -720,18 +717,30 @@
       {
         "label": "Menu links open the right pages",
         "status": "Needs work"
-      },
-      {
-        "label": "Real hours shown",
-        "status": "Needs work"
       }
     ],
     "closing": {
       "heading": "Want a website like this for your business?",
-      "text": "Your customers already say you give an honest price, show up and clean up. You likely do more than we found, so on your onboarding call we confirm the full list of services and every detail with you and John."
+      "text": "Your customers already say you give an honest price and clean up. You likely do more than we found, so on your onboarding call we confirm the full list of services and every detail with you and John."
     }
   },
   "onboardingQuestions": [
-    "Business name: Google, BBB and the site say Greenway Exteriors; the request said Greenway Home Services. Which do they want on the site?"
+    "Business name: Google, BBB and the site all say Greenway Exteriors (Greenway Exteriors LLC); the request called it Greenway Home Services. Which name goes on the site?",
+    "John Dye is confirmed as owner (BBB, About page, reviews). Who is Michelle (thanked in one review), and should she be named?",
+    "Phone: (316) 641-8365 matches Google and the site. BBB lists (316) 453-6043 and a directory lists (316) 816-9395; confirm both are old.",
+    "Email: the site shows greenwayvalue@gmail.com on every page, but it is not in our fact sheet. Is it the address to show?",
+    "Address: 2807 W River Park Dr, Wichita 67203 is on Google and the site. Is it a shop customers can visit, or an office only?",
+    "Real hours: the site says \"Monday-Sunday, 24 Hours\", which reads like template text. No hours are shown in the package.",
+    "Years: BBB shows a start of 8/28/2012 (14 years) while the site says both \"since 2012\" and \"over 15 years\". Confirm 2012.",
+    "BBB: the site claims accreditation but BBB lists the business as not accredited (A+ rating, no complaints). Do they want to apply for accreditation, or just have the claim removed? The package shows no BBB claim.",
+    "Licensing and insurance: the site says \"fully licensed and insured Kansas contractor\", but no license number or registry record was found. Provide the number to show.",
+    "Brands: ProVia (three customers name it) and James Hardie (the site claims Preferred Installer) could not be verified on the manufacturers' locators. Which brands do they install and may we name them? Also LP SmartSide, and Chamber of Commerce membership and awards (\"Best of Business Award\", \"Mark of Excellence\").",
+    "Warranty: what do the window and siding warranties cover and for how long? Review mentions of a warranty give no terms, so the package only says to ask John.",
+    "Financing: which lender, what are the current terms, and does \"No Payments Until 2027 + 0% for 18 Months\" end soon? The package says only \"available, subject to credit approval\".",
+    "Full list of services: confirm doors (sliding glass, entry), egress and basement windows, gutters and gutter protection, exterior painting, chimney siding and deck frame repair. Is there any roofing? Do they want door and gutter pages later?",
+    "Typical install times for windows and siding, so the schedule lines can be firmed up.",
+    "Towns: confirm the 15-town list from their homepage, and that Augusta (named in one review) is in range.",
+    "Do they want the 25 Wichita attraction pages on their current site kept? They are unrelated to the work.",
+    "Logo file and brand colors (not sampled; the logo is green and gray on their site)."
   ]
 }
