@@ -26,7 +26,7 @@ Put everything in `prospects/wichita-roofing/` in ff-content-demo-factory, on yo
    - check whether their site and their Google profile match
 4. **Facts and reviews.**
    - Write `facts.md`, with every line cited to a URL.
-   - Pull reviews only for your 8 final picks, using the `review-pull.yml` workflow (inputs `maps_url: place_id:<id>`, slug, max_reviews, expected_name). Results land on the `review-data` branch; copy them into `reviews.json`.
+   - Pull reviews only for your 4 final picks, using the `review-pull.yml` workflow (inputs `maps_url: place_id:<id>`, slug, max_reviews, expected_name). Results land on the `review-data` branch; copy them into `reviews.json`.
    - Find owner names in reviews and in the owner's replies to reviews.
    - Call a business certified (GAF, Owens Corning, CertainTeed, Malarkey and so on) only when the manufacturer's own dealer locator confirms it. If the locator can't be checked, put the question in `facts.md` for the onboarding call. Never put an unconfirmed certification on a page.
 5. **Plan (`plan.md`, Opus).** One page covering:
