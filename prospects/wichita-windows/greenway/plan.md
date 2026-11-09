@@ -1,29 +1,64 @@
-> Pages changed on 2026-11-09 (one service per service page). `words.json` is the current source for routes, H1s and services; this plan is kept for its reasoning.
+# Greenway Exteriors: plan (writer brief v2, 2026-11-09)
 
-# Greenway Exteriors: plan
+Sources: `facts.md`, `reviews.json` (87 five-star, 82 with text), `audit.md`. Decisions carried over from the old plan: company type, the two service pages, routes. All copy below is new.
 
-**Company type:** Exterior Remodeling Company (settled). Broad enough for windows, siding, doors, gutters and trim.
-**Homepage H1:** Exterior Remodeling Company in Wichita, KS — Greenway Exteriors (one city: the Google profile's Wichita).
-**Name:** Greenway Exteriors on Google, BBB and the site. The request said "Greenway Home Services"; no source supports it, so it is flagged in `questions.md`.
+## Decisions
+- **Company type:** Exterior Remodeling Company.
+- **Homepage H1:** Exterior Remodeling Company in Wichita, KS — Greenway Exteriors
+- **Service page 1:** Window Replacement in Wichita, KS — Greenway Exteriors (`/window-replacement-wichita-ks/`, keyword "window replacement Wichita KS"). Basement and egress windows and sliding glass and entry doors live on this page.
+- **Service page 2:** Siding Replacement in Wichita, KS — Greenway Exteriors (`/siding-replacement-wichita-ks/`, keyword "siding replacement Wichita KS"). Siding repair, fascia, soffit and trim live on this page.
+- **Contact:** Contact Greenway Exteriors (`/contact/`).
+- Gutters and exterior painting have no page; they get a homepage section and are named on the siding page as work done with it.
+- Cannibalization: the homepage owns "exterior remodeling company"; windows own "window replacement"; siding owns "siding replacement". Neither service H1 uses the other's phrase.
 
-## Pages and keywords
-| Route | H1 | Keyword |
-| --- | --- | --- |
-| /home/ | Exterior Remodeling Company in Wichita, KS — Greenway Exteriors | exterior remodeling company Wichita KS |
-| /window-replacement-wichita-ks/ | Window Replacement in Wichita, KS — Greenway Exteriors | window replacement Wichita KS |
-| /siding-replacement-wichita-ks/ | Siding Replacement in Wichita, KS — Greenway Exteriors | siding replacement Wichita KS |
-| /contact/ | Contact Greenway Exteriors | contact Greenway Exteriors Wichita KS |
+## The idea
+The owner comes out, looks at the house and prices only what it needs, whether that is one window, one wall or the whole outside. Reviewers keep saying the same three things about it: John himself answers and shows up, the number is for what needed doing (and holds), and the crew finishes and cleans up.
 
-Cannibalization test: neither service H1 contains "exterior remodeling company"; windows own "window replacement" and siding owns "siding replacement". The two services overlap on no phrase. Windows and doors are about 44% of written reviews and siding and trim about 45%, so both get a full page and the homepage gives them equal weight.
+## Homepage sections
+| Section | Homeowner's moment | The reason | What Greenway does | Review (reviewer, line) |
+| --- | --- | --- | --- | --- |
+| Hero | Wants a price from a person, not a phone menu | Exterior work is a big, rare spend; you want who stands behind the number | John Dye, owner, lifelong Wichita resident; call for a free estimate | Anna S.: "I felt no pressure, just a great conversation with an expert, who was interested in knowing what I really wanted." |
+| You get the owner | Got bids that pushed more work than the house needed | Estimators paid to sell more; an owner prices the house | John walks the house, quotes what needs doing, stops by during the job | Jason S.: "John quoted exactly what needed to be replaced instead of just trying to run up the bill on me." |
+| Windows | Room never comfortable, fog between panes, hard to open | Seal fails, sashes wear | Replace one window or the house; basement, egress, sliding and entry doors too; link to the window page | Amber D.: "the heater hardly kicks on now" (and six companies compared) |
+| Siding | Worn, loose, water-stained; one wall bad, rest fine | Siding takes weather first; the wall behind it is what you can't see | Whole house or just the wall; repair, with the old siding hauled away; link to the siding page | Stacia S.: smallish siding project rejected by other companies |
+| Trim, gutters, paint | The edge of the roof and the paint do not match the new walls | Fascia, soffit, gutters and paint meet the siding and windows at the same edges | Done with siding or windows, one crew | Julie B.: siding, gutters, paint, "10k less than other quotes" |
+| How a job goes | Not sure what happens after the call | Fear of surprises | Call, John looks, crew works, yard cleaned | none (steps) |
+| Where we work | Is my town covered | | 15 towns from their homepage | none |
+| Questions | see below | | | none |
 
-## Services (full confirmed list)
-Window Replacement (page); Basement and Egress Windows, Sliding Glass and Entry Doors (both on the windows page); Siding Replacement and Siding Repair (both on the siding page); Fascia, Soffit and Trim; Gutters and Gutter Protection; Exterior Painting. No roofing. No brand named (ProVia and James Hardie unverified).
+## Window page sections
+1. Hero. Review at top: **Leslie B.** (builder-grade windows fogged and lost their gas, 30+ windows, quote in about 20 minutes).
+2. Signs the windows are done (fog, drafts, noise, sticking, bills). Review: **Darby M.** (quieter, step change in bills, easy to clean).
+3. Why windows fail (seal, balance, weatherstripping, builder-grade units) and what replacement fixes.
+4. Basement and egress windows (below-grade openings leak, rot and are the quietest to ignore; egress means you can get out). Review: **Douglas W.** (basement window, quick, cheaper than all the others).
+5. Sliding glass and entry doors (rollers, track, seal). Review: **Ashley H.** (made choosing a sliding glass door easy and affordable).
+6. What install day looks like. Review: **Becky E.** (one day, no hidden fees, cleaned yard and inside).
+7. Questions, close.
 
-## Offices and numbers
-One office: Wichita (316) 641-8365 (matches Google and the site). Address 2807 W River Park Dr, Wichita 67203 (Google and site agree). BBB and directory numbers are stale and not shown. No hours (site's "24 Hours" reads like template text), no email (not in facts). Service area: 15 towns from their own homepage.
+## Siding page sections
+1. Hero. Review at top: **Katherine R.** (replace entire siding, seven bids, John came out several times during the job).
+2. Signs the siding is failing (cracks, warping, chalk, loose pieces, stains inside). Review: **Brendy O.** (water coming into son's room, same-day answer from another contractor's unfinished job).
+3. Whole house or only the walls that need it (when partial works, when it does not). Review: **Connor G.** (chimney siding, 25 to 35% cheaper).
+4. Fascia, soffit and trim. Review: **Mark H.** (aluminum fascia blown off, fabricated on site).
+5. What replacement looks like (tear off, check the wall, install, trim, haul away). Review: **Joyce S.** (house resided in four days, clean up).
+6. Questions, close.
 
-## Claims kept out
-BBB accreditation (false), "over 15 years" (14 per BBB), licensed and insured, factory-trained, awards, Hardie and ProVia dealer status, warranty terms, the "No Payments Until 2027" promo (written as "financing available, subject to credit approval").
+## Contact
+Call first; the form (name, phone, email, message); what to have ready; the area; the address. Review: **Mitch B.** (quick bid, crew next morning, held the number). Hours and email are left out: the site's "24 hours" reads like template text and no email is in facts.
 
-## Strategy page argument
-Their 87 five-star reviews versus their site: on a phone the first screen shows no headline and no number; the window page's "CALL" line is not tappable; two trust claims contradict BBB; the headline names services, not the company; the "Gutters" menu item goes nowhere. Costliest first: phone, headline, claims, then cosmetic. Credit what works: tel links dial correctly, a page for every service, fast loads.
+## Reviews: each once across the site
+Home: Anna S., Jason S., Amber D., Stacia S., Julie B. Windows: Leslie B., Darby M., Douglas W., Ashley H., Becky E. Siding: Katherine R., Brendy O., Connor G., Mark H., Joyce S. Contact: Mitch B. Total 16, no repeats. "tammy J." and "Jeff" were skipped: the checker requires First L. with a capital.
+
+## Questions visitors ask, and the answers we have
+- Is the estimate free? Yes (facts: free estimates).
+- Who comes out? John, the owner (BBB, About page, Katherine R., Joyce S.).
+- How fast do I get a number? Often a day or two: Jeff (single-name reviewer, so not quotable) got a ballpark on the phone and a visit next morning; Ben H. had a price the day after the visit; Leslie B. had hers in about 20 minutes; Mitch B. a crew the next morning.
+- Can you do just part of the house? Yes: Stacia S., Kelly J. (garage), Brad K. (one bathroom window), Connor G. (chimney).
+- Will the number change? Mitch B.: held his original number; Andrew D. got a fair price on extra rot work. Hidden damage is trade fact, so it is stated as how the job works.
+- Price against big companies? Aaron P., Julie B., Connor G., Anna S.; stated through the reviews, not as a statistic.
+- Financing? Available, subject to credit approval (facts).
+- How long does it take? One day for Becky E.'s windows; four days for Joyce S.'s whole house. Stated as examples, not a promise.
+- Where do you work? The 15 towns from their own homepage.
+
+## Not supported, left out
+Warranty terms (only Lindy P. says "the warranty you can't beat"; no terms), brands (ProVia and Hardie unverified), licensed and insured, BBB accreditation, "over 15 years", awards, hours, email, roofing, a pricing figure per window, the promo ("No Payments Until 2027"). Michelle's role is unknown and she is not named.

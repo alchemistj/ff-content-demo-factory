@@ -12,7 +12,7 @@ const reviews = fs.existsSync(revFile) ? (JSON.parse(fs.readFileSync(revFile, "u
 
 const fails = [], warns = [], info = [];
 const fail = (m) => fails.push(m), warn = (m) => warns.push(m);
-const norm = (s) => String(s || "").replace(/[’‘]/g, "'").replace(/[“”]/g, '"').replace(/\s+/g, " ").trim();
+const norm = (s) => String(s || "").replace(/<br\s*\/?>/g, " ").replace(/[’‘]/g, "'").replace(/[“”]/g, '"').replace(/\s+/g, " ").trim();
 const strip = (s) => norm(s).replace(/\*\*/g, "").replace(/\[([^\]]+)\]\([^)]+\)/g, "$1");
 const words = (s) => (strip(s).match(/[A-Za-z0-9][A-Za-z0-9'’&.,:/()-]*/g) || []).filter((w) => /[A-Za-z0-9]/.test(w)).length;
 

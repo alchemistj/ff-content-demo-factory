@@ -40,8 +40,6 @@ Hail and summer storms crack glass, break seals and beat up roofs. Then an adjus
 
 Insurance pays for the approved work, so the company doing the work should be the one working the claim with you. We deal with your adjuster directly, and our own crews do the approved work.
 
-That covers windows, and it covers hail damage to your roof. For roofing, call our roofing line at (833) 972-7663.
-
 > "They worked diligently with me throughout the insurance claim process to secure a full window replacement, making everything smooth and stress-free. The new black window frames completely transformed the look of my home, giving it a stunning, elegant finish. Their professionalism, attention to detail, and consistent communication stood out from start to finish—and I didn’t pay a single penny out of pocket.."
 > — Lakesha B.
 
@@ -73,8 +71,8 @@ We install vinyl siding, new gutters and downspouts, and repair gutters you alre
 
 1. **I come out.** I look at your house, measure the openings and explain what you need and what it costs. You pick your products at the showroom on West Kellogg.
 2. **We order and schedule.** Windows and doors are custom-built, so there's a wait before the crew can install. Plan on a couple of weeks. Our crews stay busy.
-3. **The crew installs.** They tell you what they'll be doing that day and keep you posted as they go.
-4. **They clean up.** The old windows and trim go out with them, and they leave your house tidy.
+3. **Our crew installs.** We tell you what we'll be doing that day and keep you posted as we go.
+4. **We clean up.** The old windows and trim go out with us, and we leave your house tidy.
 
 ## Price and Financing
 
@@ -89,7 +87,7 @@ Our showroom is at 6810 W Kellogg Dr in Wichita, and we work across the Wichita 
 ## Questions Before You Call
 
 **Is the estimate free?**
-Yes, for windows, doors and siding. Roof inspections are free too.
+Yes, for windows, doors and siding.
 
 **Will you push me to buy more than I need?**
 No. I lay out your options, tell you the price and leave the decision to you.
