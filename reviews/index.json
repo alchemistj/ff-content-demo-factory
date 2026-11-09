@@ -195,6 +195,18 @@
       "pulledAt": "2026-11-09T18:36:30.414Z"
     },
     {
+      "slug": "enegren-electric-wichita",
+      "name": "Enegren Electric",
+      "placeId": "ChIJNy6IprnguocRWsLvXkJGvBM",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 93,
+        "withText": 73,
+        "ratingOnly": 20
+      },
+      "pulledAt": "2026-11-09T18:42:41.881Z"
+    },
+    {
       "slug": "epic-hvac-wichita",
       "name": "Epic Heating & Cooling",
       "placeId": "ChIJ__9TvKLjuocRR8IhYzmJ-2w",
