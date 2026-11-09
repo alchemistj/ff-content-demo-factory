@@ -17,7 +17,7 @@ Sources: `facts.md` (incl. "From reviews") for claims, `reviews.json` for quotes
 "We". Cesar Verdin is named inside we-sentences ("Cesar looks at your roof"); never called owner (unconfirmed, facts "From reviews"). Javier named once, no title.
 
 ## The idea (homepage)
-A roof is a big job to hand to strangers, so at Monarch one person, Cesar, deals with you from the first look to the cleanup, tells you honestly what the roof needs (sometimes only repairs), and handles the insurer when a storm is behind it.
+A roof is a big job to hand to strangers, so Cesar looks at your roof and tells you straight what it needs (sometimes only repairs), and we work with your insurer when a storm is behind it. (What he does and has done; never a promise or "owner".)
 
 ## Sections
 1. **Top.** We replace and repair Wichita roofs; Cesar stays with you start to finish. CTA call/estimate. Proof: Jesse H. (attentive, followed through, leaks gone).
