@@ -93,7 +93,9 @@ Some jobs don't fit a nightly schedule. We also offer:
 
 Whoever bids on your building, walk it with them. A price quoted from square footage alone is a guess.
 
-A good walk-through covers the things a checklist leaves out. Where the restrooms and kitchenettes are, and how many people use them. What the floors are made of, because carpet, VCT and sealed concrete each need different care. Who is in the building at night, which doors are locked, and where the supplies go.
+A good walk-through covers the things a checklist leaves out. Where the restrooms and kitchenettes are, and how many people use them.
+
+What the floors are made of, because carpet, VCT and sealed concrete each need different care. Who is in the building at night, which doors are locked, and where the supplies go.
 
 Ask who will be cleaning it, who checks their work, and who you call when something is missed. If the answers are vague, expect the same vagueness at 7 a.m. on a bad Monday.
 
