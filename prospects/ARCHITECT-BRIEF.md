@@ -21,7 +21,7 @@ In short: each page argues one idea, starts from the customer's moment, explains
 2. **Qualify from the site and the web.** Don't pull reviews yet. Sort each business:
    - a small specialist with a weak site: what we want
    - a do-everything contractor: log it for later
-   - an established multi-page company: too big, so skip it
+   - an established multi-page company: too big, so skip it. Quick test: count the pages linked from their homepage. A page per service plus town pages, product pages or a blog means they already have an SEO site, so skip them. Josh, 2026-11-09, on Greenway Exteriors (41 pages, 12 town pages, a blog): "This site should not have gotten into our demo system."
    Pick 4, and write `qualify.md` for each. Keep `ledger.md` in your trade folder listing every business you checked, with the decision and the reason.
 3. **Audit their current site** (`audit.md`, following `docs/runtime/SITE-AUDIT.md`). Use Playwright (Chromium is installed) at 390 and 1440 wide:
    - Click every menu link and button.
