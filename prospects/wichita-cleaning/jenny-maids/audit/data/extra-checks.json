@@ -1,0 +1,315 @@
+{
+  "form": {
+    "captchaContext": "12 + 5 = ",
+    "submitText": [
+      "Submit"
+    ],
+    "formText": "12 + 5 = Submit"
+  },
+  "telCtx": [
+    {
+      "text": "(316) 210-1900",
+      "visible": true,
+      "parentTag": "DIV",
+      "cls": "",
+      "section": null
+    },
+    {
+      "text": "Click To Call !",
+      "visible": true,
+      "parentTag": "DIV",
+      "cls": "et_pb_button et_pb_button_0 et_animated et_pb_bg_layout_ligh",
+      "section": null
+    },
+    {
+      "text": "Contact Us",
+      "visible": true,
+      "parentTag": "DIV",
+      "cls": "et_pb_button et_pb_button_1 et_animated et_pb_bg_layout_ligh",
+      "section": null
+    },
+    {
+      "text": "Get Your Free Quote Today",
+      "visible": true,
+      "parentTag": "DIV",
+      "cls": "et_pb_button et_pb_button_2 et_animated et_pb_bg_layout_ligh",
+      "section": null
+    },
+    {
+      "text": "Get Your Free Quote Today",
+      "visible": true,
+      "parentTag": "DIV",
+      "cls": "et_pb_button et_pb_button_3 et_animated et_pb_bg_layout_ligh",
+      "section": null
+    },
+    {
+      "text": "(316) 210- 1900",
+      "visible": true,
+      "parentTag": "P",
+      "cls": "",
+      "section": null
+    }
+  ],
+  "ctc": [
+    {
+      "tag": "A",
+      "text": "Click To Call !",
+      "inLink": true,
+      "href": "tel:+13162101900"
+    }
+  ],
+  "headerDump": [
+    {
+      "tag": "DIV",
+      "cls": "et_builder_inner_content et_pb_gutters3",
+      "text": "(316) 210-1900\n\nA shining home",
+      "id": null
+    },
+    {
+      "tag": "DIV",
+      "cls": "et_pb_section et_pb_section_0_tb_header et_pb_with_background et_section_regular",
+      "text": "(316) 210-1900\n\nA shining home",
+      "id": null
+    },
+    {
+      "tag": "DIV",
+      "cls": "et_pb_row et_pb_row_0_tb_header",
+      "text": "",
+      "id": null
+    },
+    {
+      "tag": "DIV",
+      "cls": "et_pb_column et_pb_column_1_3 et_pb_column_0_tb_header  et_pb_css_mix_blend_mode",
+      "text": "",
+      "id": null
+    },
+    {
+      "tag": "DIV",
+      "cls": "et_pb_column et_pb_column_1_3 et_pb_column_1_tb_header  et_pb_css_mix_blend_mode",
+      "text": "",
+      "id": null
+    },
+    {
+      "tag": "DIV",
+      "cls": "et_pb_column et_pb_column_1_3 et_pb_column_2_tb_header  et_pb_css_mix_blend_mode",
+      "text": "",
+      "id": null
+    },
+    {
+      "tag": "DIV",
+      "cls": "et_pb_with_border et_pb_row et_pb_row_1_tb_header et_pb_gutters1 et_pb_row--with",
+      "text": "(316) 210-1900",
+      "id": null
+    },
+    {
+      "tag": "DIV",
+      "cls": "et_pb_column et_pb_column_1_4 et_pb_column_3_tb_header  et_pb_css_mix_blend_mode",
+      "text": "",
+      "id": null
+    },
+    {
+      "tag": "DIV",
+      "cls": "et_pb_module et_pb_image et_pb_image_0_tb_header",
+      "text": "",
+      "id": null
+    },
+    {
+      "tag": "SPAN",
+      "cls": "et_pb_image_wrap ",
+      "text": "",
+      "id": null
+    },
+    {
+      "tag": "IMG",
+      "cls": "wp-image-38",
+      "text": "",
+      "id": null
+    },
+    {
+      "tag": "DIV",
+      "cls": "et_pb_column et_pb_column_1_2 et_pb_column_4_tb_header  et_pb_css_mix_blend_mode",
+      "text": "",
+      "id": null
+    },
+    {
+      "tag": "DIV",
+      "cls": "et_pb_module et_pb_menu et_pb_menu_0_tb_header et_pb_bg_layout_light  et_pb_text",
+      "text": "",
+      "id": null
+    },
+    {
+      "tag": "DIV",
+      "cls": "et_pb_menu_inner_container clearfix",
+      "text": "",
+      "id": null
+    },
+    {
+      "tag": "DIV",
+      "cls": "et_pb_menu__wrap",
+      "text": "",
+      "id": null
+    },
+    {
+      "tag": "DIV",
+      "cls": "et_mobile_nav_menu",
+      "text": "",
+      "id": null
+    },
+    {
+      "tag": "DIV",
+      "cls": "mobile_nav closed",
+      "text": "",
+      "id": null
+    },
+    {
+      "tag": "SPAN",
+      "cls": "mobile_menu_bar",
+      "text": "",
+      "id": null
+    },
+    {
+      "tag": "DIV",
+      "cls": "et_pb_column et_pb_column_1_4 et_pb_column_5_tb_header  et_pb_css_mix_blend_mode",
+      "text": "(316) 210-1900",
+      "id": null
+    },
+    {
+      "tag": "DIV",
+      "cls": "et_pb_module et_pb_heading et_pb_heading_0_tb_header et_pb_bg_layout_",
+      "text": "(316) 210-1900",
+      "id": null
+    },
+    {
+      "tag": "DIV",
+      "cls": "et_pb_heading_container",
+      "text": "(316) 210-1900",
+      "id": null
+    },
+    {
+      "tag": "A",
+      "cls": "",
+      "text": "(316) 210-1900",
+      "id": null
+    },
+    {
+      "tag": "H1",
+      "cls": "et_pb_module_heading",
+      "text": "(316) 210-1900",
+      "id": null
+    },
+    {
+      "tag": "DIV",
+      "cls": "et_pb_row et_pb_row_3_tb_header",
+      "text": "A shining home starts with us ",
+      "id": null
+    },
+    {
+      "tag": "DIV",
+      "cls": "et_pb_column et_pb_column_4_4 et_pb_column_8_tb_header  et_pb_css_mix_blend_mode",
+      "text": "A shining home starts with us ",
+      "id": null
+    }
+  ],
+  "mobileMenu": [
+    [
+      "Home",
+      "https://jennymaidsict.com/"
+    ],
+    [
+      "Services",
+      "#"
+    ],
+    [
+      "Basic Cleaning",
+      "https://jennymaidsict.com/basic-cleaning/"
+    ],
+    [
+      "Blinds Hand Wipe Cleaning",
+      "https://jennymaidsict.com/blinds-hand-wipe-cleaning/"
+    ],
+    [
+      "Deep Cleaning",
+      "https://jennymaidsict.com/deep-cleaning/"
+    ],
+    [
+      "Spring Cleaning",
+      "https://jennymaidsict.com/spring-cleaning/"
+    ],
+    [
+      "Fall Cleaning",
+      "https://jennymaidsict.com/fall-cleaning/"
+    ],
+    [
+      "All Occasions & Party Cleaning",
+      "https://jennymaidsict.com/all-occasions-cleaning/"
+    ],
+    [
+      "Office Cleaning",
+      "https://jennymaidsict.com/office-cleaning/"
+    ],
+    [
+      "Packages",
+      "https://jennymaidsict.com/packages/"
+    ],
+    [
+      "Locations",
+      "#"
+    ],
+    [
+      "Wichita, KS",
+      "https://jennymaidsict.com/wichita-ks/"
+    ],
+    [
+      "Andover, KS",
+      "https://jennymaidsict.com/andover-ks/"
+    ],
+    [
+      "Augusta, KS",
+      "https://jennymaidsict.com/augusta-ks/"
+    ],
+    [
+      "Goddard, KS",
+      "https://jennymaidsict.com/goddard-ks/"
+    ],
+    [
+      "Derby, KS",
+      "https://jennymaidsict.com/derby-ks/"
+    ],
+    [
+      "Maize, KS",
+      "https://jennymaidsict.com/maize-ks/"
+    ],
+    [
+      "Park City, KS",
+      "https://jennymaidsict.com/park-city-ks/"
+    ],
+    [
+      "Valley Center, KS",
+      "https://jennymaidsict.com/valley-center-ks/"
+    ],
+    [
+      "Peck, KS",
+      "https://jennymaidsict.com/peck-ks/"
+    ],
+    [
+      "Wellington, KS",
+      "https://jennymaidsict.com/wellington-ks/"
+    ],
+    [
+      "Kechi, KS",
+      "https://jennymaidsict.com/kechi-ks/"
+    ],
+    [
+      "Blog",
+      "https://jennymaidsict.com/blog/"
+    ],
+    [
+      "About Us",
+      "https://jennymaidsict.com/about-us/"
+    ],
+    [
+      "Contact Us",
+      "https://jennymaidsict.com/contact-us/"
+    ]
+  ]
+}

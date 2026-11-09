@@ -1,0 +1,311 @@
+{
+  "mobile": {
+    "contact": {
+      "url": "https://harrisfac.com/contact/",
+      "title": "Contact - Harris Facility Solutions",
+      "forms": [
+        {
+          "action": "https://harrisfac.com/wp-json/ws-form/v1/submit",
+          "id": "ws-form-1",
+          "cls": "wsf-form wsf-form-canvas",
+          "fieldCount": 6,
+          "submit": "Send Message"
+        }
+      ],
+      "fields": [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "field_13",
+          "placeholder": null,
+          "required": true,
+          "label": "First Name *",
+          "visible": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "field_14",
+          "placeholder": null,
+          "required": true,
+          "label": "Last Name *",
+          "visible": true
+        },
+        {
+          "tag": "input",
+          "type": "email",
+          "name": "field_15",
+          "placeholder": null,
+          "required": true,
+          "label": "Email Address *",
+          "visible": true
+        },
+        {
+          "tag": "input",
+          "type": "tel",
+          "name": "field_16",
+          "placeholder": null,
+          "required": true,
+          "label": "Phone Number *",
+          "visible": true
+        },
+        {
+          "tag": "textarea",
+          "type": null,
+          "name": "field_23",
+          "placeholder": null,
+          "required": true,
+          "label": "Message *",
+          "visible": true
+        },
+        {
+          "tag": "input",
+          "type": "hidden",
+          "name": "cf-turnstile-response",
+          "placeholder": null,
+          "required": false,
+          "label": "",
+          "visible": false
+        }
+      ],
+      "frames": [],
+      "captchaEls": [
+        {
+          "tag": "SCRIPT",
+          "cls": "",
+          "visible": false
+        }
+      ],
+      "mentionsCaptcha": false,
+      "bodyHas24": true
+    },
+    "homeClaims": {
+      "within the hour": {
+        "count": 1,
+        "visible": true
+      },
+      "less than 24 hours": {
+        "count": 2,
+        "visible": false
+      },
+      "24/7": {
+        "count": 1,
+        "visible": true
+      },
+      "Rating on Google": {
+        "count": 1,
+        "visible": true
+      },
+      "Out of 5-Star": {
+        "count": 0,
+        "visible": false
+      },
+      "Voted #1": {
+        "count": 0,
+        "visible": false
+      },
+      "started just a few years ago": {
+        "count": 1,
+        "visible": true
+      },
+      "launched in 2015": {
+        "count": 0,
+        "visible": false
+      },
+      "We started our business in 2015": {
+        "count": 1,
+        "visible": true
+      },
+      "U.S. Small Business Person of the Year": {
+        "count": 1,
+        "visible": true
+      },
+      "Recognized In": {
+        "count": 1,
+        "visible": true
+      }
+    },
+    "hashLinks": [
+      {
+        "text": "Menu",
+        "visible": true,
+        "region": "HEADER"
+      },
+      {
+        "text": "",
+        "visible": false,
+        "region": "HEADER"
+      },
+      {
+        "text": "",
+        "visible": true,
+        "region": "SECTION"
+      },
+      {
+        "text": "Maintenance",
+        "visible": false,
+        "region": "NAV"
+      },
+      {
+        "text": "Maintenance",
+        "visible": false,
+        "region": "NAV"
+      }
+    ],
+    "mobileMenuOpened": true
+  },
+  "desktop": {
+    "contact": {
+      "url": "https://harrisfac.com/contact/",
+      "title": "Contact - Harris Facility Solutions",
+      "forms": [
+        {
+          "action": "https://harrisfac.com/wp-json/ws-form/v1/submit",
+          "id": "ws-form-1",
+          "cls": "wsf-form wsf-form-canvas",
+          "fieldCount": 6,
+          "submit": "Send Message"
+        }
+      ],
+      "fields": [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "field_13",
+          "placeholder": null,
+          "required": true,
+          "label": "First Name *",
+          "visible": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "field_14",
+          "placeholder": null,
+          "required": true,
+          "label": "Last Name *",
+          "visible": true
+        },
+        {
+          "tag": "input",
+          "type": "email",
+          "name": "field_15",
+          "placeholder": null,
+          "required": true,
+          "label": "Email Address *",
+          "visible": true
+        },
+        {
+          "tag": "input",
+          "type": "tel",
+          "name": "field_16",
+          "placeholder": null,
+          "required": true,
+          "label": "Phone Number *",
+          "visible": true
+        },
+        {
+          "tag": "textarea",
+          "type": null,
+          "name": "field_23",
+          "placeholder": null,
+          "required": true,
+          "label": "Message *",
+          "visible": true
+        },
+        {
+          "tag": "input",
+          "type": "hidden",
+          "name": "cf-turnstile-response",
+          "placeholder": null,
+          "required": false,
+          "label": "",
+          "visible": false
+        }
+      ],
+      "frames": [],
+      "captchaEls": [
+        {
+          "tag": "SCRIPT",
+          "cls": "",
+          "visible": false
+        }
+      ],
+      "mentionsCaptcha": false,
+      "bodyHas24": true
+    },
+    "homeClaims": {
+      "within the hour": {
+        "count": 1,
+        "visible": true
+      },
+      "less than 24 hours": {
+        "count": 2,
+        "visible": false
+      },
+      "24/7": {
+        "count": 1,
+        "visible": true
+      },
+      "Rating on Google": {
+        "count": 1,
+        "visible": true
+      },
+      "Out of 5-Star": {
+        "count": 0,
+        "visible": false
+      },
+      "Voted #1": {
+        "count": 0,
+        "visible": false
+      },
+      "started just a few years ago": {
+        "count": 1,
+        "visible": true
+      },
+      "launched in 2015": {
+        "count": 0,
+        "visible": false
+      },
+      "We started our business in 2015": {
+        "count": 1,
+        "visible": true
+      },
+      "U.S. Small Business Person of the Year": {
+        "count": 1,
+        "visible": true
+      },
+      "Recognized In": {
+        "count": 1,
+        "visible": true
+      }
+    },
+    "hashLinks": [
+      {
+        "text": "Menu",
+        "visible": false,
+        "region": "HEADER"
+      },
+      {
+        "text": "Menu",
+        "visible": false,
+        "region": "HEADER"
+      },
+      {
+        "text": "Maintenance",
+        "visible": false,
+        "region": "SECTION"
+      },
+      {
+        "text": "Maintenance",
+        "visible": true,
+        "region": "NAV"
+      },
+      {
+        "text": "Maintenance",
+        "visible": false,
+        "region": "NAV"
+      }
+    ]
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "/": [
+    {
+      "ttfbMs": 2389,
+      "domContentLoadedMs": 3133,
+      "loadMs": 3473,
+      "requests": 29,
+      "transferKB": 2682,
+      "imgs": 8
+    },
+    {
+      "ttfbMs": 2292,
+      "domContentLoadedMs": 2972,
+      "loadMs": 3891,
+      "requests": 30,
+      "transferKB": 2705,
+      "imgs": 9
+    },
+    {
+      "ttfbMs": 2159,
+      "domContentLoadedMs": 2870,
+      "loadMs": 3240,
+      "requests": 30,
+      "transferKB": 2705,
+      "imgs": 9
+    }
+  ],
+  "/wichita-ks/": [
+    {
+      "ttfbMs": 1995,
+      "domContentLoadedMs": 2687,
+      "loadMs": 3404,
+      "requests": 30,
+      "transferKB": 1851,
+      "imgs": 5
+    },
+    {
+      "ttfbMs": 2165,
+      "domContentLoadedMs": 2844,
+      "loadMs": 3460,
+      "requests": 30,
+      "transferKB": 1851,
+      "imgs": 5
+    },
+    {
+      "ttfbMs": 2038,
+      "domContentLoadedMs": 2916,
+      "loadMs": 3612,
+      "requests": 30,
+      "transferKB": 1851,
+      "imgs": 5
+    }
+  ],
+  "/packages/": [
+    {
+      "ttfbMs": 1840,
+      "domContentLoadedMs": 2592,
+      "loadMs": 2746,
+      "requests": 23,
+      "transferKB": 1333,
+      "imgs": 4
+    },
+    {
+      "ttfbMs": 1943,
+      "domContentLoadedMs": 2575,
+      "loadMs": 2949,
+      "requests": 23,
+      "transferKB": 1333,
+      "imgs": 4
+    },
+    {
+      "ttfbMs": 1724,
+      "domContentLoadedMs": 2450,
+      "loadMs": 2717,
+      "requests": 23,
+      "transferKB": 1333,
+      "imgs": 4
+    }
+  ]
+}
