@@ -14,7 +14,7 @@ Target mix: about 2 lawn-care-led, 2 landscaping-led. Second query ("landscaping
 | 19 | Turf Etc, LLC | 186 / 4.9 | qualified-backlog (log for later) | Irrigation-led do-everything (irrigation, lawn, landscape, turf, lighting); since 2003, team page. Working Jobber site. |
 | 19 | Lechner's Landscape & Lawn Services | 12 / 3.7 | disqualified | No website, low rating. |
 | 19 | Clean Cut Lawncare & Fencing | 5 / 5.0 | disqualified | Site is fencing-led ("Wichita's #1 Fencing Contractor"). |
-| 18 | **Response Lawn Care** | 9 / 5.0 | **picked (lawn)** | Owner-run residential mowing with quiet electric equipment. Weak 5-page Wix site: H1 is just the name, phone not tappable, nav links all point home. |
+| 18 | **Response Lawn Care** | 9 / 5.0 | **picked (lawn)** | Owner-run residential mowing with quiet electric equipment. Weak 5-page Wix site: H1 is just the name, phone not tappable, not mobile-ready (scrolls sideways on a phone). |
 | 18 | Daniels Lawn and Landscaping Service | 95 / 4.6 | qualified-backlog | Family-owned since 2000. Site sits behind a SiteGround bot challenge, so it couldn't be qualified; needs a manual look. |
 | 17 | Western Lawn & Landscape LLC | 101 / 4.9 | qualified-backlog (log for later) | Commercial grounds + landscaping + hardscaping + apparel (Colten Coughlin, since 2016). Do-everything; Squarespace site is decent. Coughlin's Lawn Service (rank 13) is the same business. |
 | 17 | The Grounds Guys of Wichita | 281 / 4.7 | disqualified | National franchise. |
