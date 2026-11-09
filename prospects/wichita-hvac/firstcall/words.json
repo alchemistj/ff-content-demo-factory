@@ -1,0 +1,663 @@
+{
+  "schema": "words-package/v1",
+  "business": {
+    "name": "1st Call Heating & Cooling",
+    "slug": "firstcall",
+    "city": "Wichita",
+    "state": "KS",
+    "companyType": "HVAC Company",
+    "phones": [
+      {
+        "label": "Wichita",
+        "display": "(316) 371-3815",
+        "tel": "+13163713815"
+      }
+    ],
+    "email": null,
+    "hours": "Monday to Friday, 8:00 AM to 5:00 PM",
+    "address": "937 W 50th St N, Wichita, KS 67204",
+    "serviceArea": {
+      "summary": "Wichita, Kansas",
+      "towns": [
+        "Wichita"
+      ]
+    }
+  },
+  "trustBar": [
+    "AC and Furnace Repair",
+    "Full Systems Installed",
+    "Office on W 50th St N",
+    "Open Monday to Friday"
+  ],
+  "services": [
+    {
+      "name": "AC Repair",
+      "route": "/ac-repair-wichita-ks/",
+      "blurb": "Seized fans, bad capacitors and relays, and AC units that stopped cooling, found and fixed."
+    },
+    {
+      "name": "Furnace Repair",
+      "route": "/furnace-repair-wichita-ks/",
+      "blurb": "Heat that went out or a heater that is not working right, diagnosed and repaired."
+    },
+    {
+      "name": "AC and Furnace Replacement",
+      "route": null,
+      "blurb": "We have replaced a full furnace and AC system in a single day, with the price explained first."
+    },
+    {
+      "name": "Seasonal Checkups",
+      "route": null,
+      "blurb": "A checkup before AC season so your system is ready, and a walk-through of how to look after it."
+    },
+    {
+      "name": "Ductwork",
+      "route": null,
+      "blurb": "Main air supply duct replaced, like the basement job we finished in one day."
+    },
+    {
+      "name": "Geothermal Service",
+      "route": null,
+      "blurb": "Repairs on geothermal systems, done properly."
+    },
+    {
+      "name": "Home Warranty Repairs",
+      "route": null,
+      "blurb": "Heating and cooling repairs on homes covered by a home warranty."
+    }
+  ],
+  "pages": [
+    {
+      "role": "home",
+      "route": "/home/",
+      "navLabel": "Home",
+      "keyword": "hvac company wichita ks",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Heating and cooling in Wichita, Kansas",
+        "h1": "HVAC Company in Wichita, KS — 1st Call Heating & Cooling",
+        "sub": "We repair air conditioners and furnaces, and we replace the whole system when repair is not the answer. Call our office on West 50th Street North and tell us what your system is doing.",
+        "primaryCta": {
+          "label": "Call (316) 371-3815",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Send Us a Message",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "home-hero",
+          "alt": "Brick Wichita ranch house with an outdoor air conditioner beside the wall",
+          "brief": "tan brick ranch house with a clean outdoor AC condenser beside the wall, house on the right of the frame, lawn and soft clear sky on the left behind the text side, no readable text, no people"
+        }
+      },
+      "sections": [
+        {
+          "type": "review",
+          "quote": "It almost seems surprising nowadays to me to have someone make a house call, fix what was needed, and have the kindness to truly explain all of it well. And, not least, the integrity to only charge for the actual work performed.",
+          "name": "Joe L."
+        },
+        {
+          "type": "split",
+          "heading": "Repairs Explained, Then Your Call",
+          "body": [
+            "When we diagnose your AC or furnace, you hear the cost of fixing it and the cost of replacing it. **You make the decision.**",
+            "When replacement is the answer, we have done a full furnace and AC system in a single day."
+          ],
+          "image": {
+            "slot": "home-explain",
+            "alt": "Gas furnace in a Wichita utility closet with its access panel open",
+            "brief": "gas furnace in a tidy utility closet with the access panel open, furnace on the right of the frame, plain neutral wall and soft light on the left behind the text side, no readable text, no people, no tools in hands"
+          },
+          "imageSide": "right"
+        },
+        {
+          "type": "review",
+          "quote": "He did NOT push us into buying a new unit but rather explained everything so we could make our own decision including How he could fix our old unit.",
+          "name": "Alyson N."
+        },
+        {
+          "type": "services",
+          "heading": "Everything We Do",
+          "intro": "Air conditioners and furnaces are our work. Pick what you need and call us."
+        },
+        {
+          "type": "review",
+          "quote": "Very well versed with geothermal. Like me he wants it repaired properly and me happy.",
+          "name": "David P."
+        },
+        {
+          "type": "split",
+          "heading": "Ductwork and Full Systems, Finished in a Day",
+          "body": [
+            "We replaced the main air supply duct for a homeowner renovating a basement, and the install was done in one day.",
+            "We also check your system before AC season and show you how to look after it."
+          ],
+          "image": {
+            "slot": "home-ductwork",
+            "alt": "Silver supply duct running along a basement ceiling",
+            "brief": "silver supply duct running along an unfinished basement ceiling, duct on the right, plain softly lit wall and joists fading out on the left behind the text side, no readable text, no people, no tools in hands"
+          },
+          "imageSide": "left"
+        },
+        {
+          "type": "review",
+          "quote": "They had the most affordable bid for the job, had the install done in one day, and the finished project looked great and met all of our needs.",
+          "name": "Trent A."
+        },
+        {
+          "type": "prose",
+          "heading": "Find Us on West 50th Street North",
+          "body": [
+            "Our office is at 937 W 50th St N, Wichita, KS 67204. We are open Monday to Friday, 8:00 AM to 5:00 PM.",
+            "Call (316) 371-3815 and tell us whether it is your AC, your furnace or both."
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Questions Before You Call",
+          "items": [
+            {
+              "q": "Do you work on both air conditioners and furnaces?",
+              "a": "Yes. We repair both, and we replace the whole system when that makes more sense than another repair."
+            },
+            {
+              "q": "Do you work on geothermal systems?",
+              "a": "Yes. We repair geothermal heating and cooling systems."
+            },
+            {
+              "q": "Do you do home warranty repairs?",
+              "a": "Yes. We repair heating and cooling for homes covered by a home warranty."
+            },
+            {
+              "q": "Where are you?",
+              "a": "937 W 50th St N, Wichita, KS 67204."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Call 1st Call",
+          "text": "Call (316) 371-3815 and tell us what your AC or furnace is doing."
+        }
+      ]
+    },
+    {
+      "role": "service",
+      "route": "/ac-repair-wichita-ks/",
+      "navLabel": "AC Repair",
+      "keyword": "ac repair wichita ks",
+      "seo": null,
+      "hero": {
+        "eyebrow": "AC repair",
+        "h1": "AC Repair in Wichita, KS — 1st Call Heating & Cooling",
+        "sub": "When your AC stops cooling, you want it fixed, not scheduled for next week. We have been out the same day, and at one house in under an hour. We tell you what a repair costs against a replacement.",
+        "primaryCta": {
+          "label": "Call (316) 371-3815",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Send Us a Message",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "ac-hero",
+          "alt": "Outdoor air conditioner unit beside a Wichita home on a sunny day",
+          "brief": "outdoor air conditioner condenser beside a house wall, unit on the right of the frame, sunny lawn and soft sky on the left behind the text side, no readable text, no people, no tools in hands"
+        }
+      },
+      "sections": [
+        {
+          "type": "review",
+          "quote": "I was having problems with my air conditioner and I called Mike. He responded faster than I was expecting and came out in less than an hour which really impressed me! He found that my unit fan had seized and replaced it in a short period of time.",
+          "name": "Clarence D."
+        },
+        {
+          "type": "split",
+          "heading": "We Find the Failed Part and Replace It",
+          "body": [
+            "An AC that stops cooling usually points to one part. We find it and replace it, and you are cooling again.",
+            "We have also diagnosed an upstairs AC that blew no air while the outside unit kept running."
+          ],
+          "list": [
+            "**A seized fan**, replaced in a short period of time",
+            "**A bad capacitor and relay**, replaced when the AC stopped cooling",
+            "**No airflow** while the outside unit still runs"
+          ],
+          "image": {
+            "slot": "ac-diagnose",
+            "alt": "Open outdoor condenser showing the fan and wiring panel",
+            "brief": "outdoor AC condenser with its side panel off showing the fan and wiring, unit on the right, plain fence and soft daylight on the left behind the text side, no readable text, no people, no tools in hands"
+          },
+          "imageSide": "right"
+        },
+        {
+          "type": "review",
+          "quote": "Worked me in on a Friday afternoon when my AC stopped cooling. They replaced bad capacitor and relay. All other service companies were scheduling for following week.",
+          "name": "Ron D."
+        },
+        {
+          "type": "prose",
+          "heading": "When to Call",
+          "body": [
+            "Call when your AC stops cooling, blows no air, leaks, or runs outside while the house stays warm.",
+            "We have come out on the same day an AC went out on a Monday, and worked a Friday afternoon call in before the weekend."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Mike was amazing. Our ac went out on Monday and he made time to come out same day.",
+          "name": "Rebecca S."
+        },
+        {
+          "type": "split",
+          "heading": "Repair or Replace: You Get the Numbers",
+          "body": [
+            "Some air conditioners are worth fixing and some are not. We tell you what fixing your unit will cost and what replacing it will cost.",
+            "**You decide.** On an older unit, we have laid out both numbers so the owner could plan the replacement for next year."
+          ],
+          "image": {
+            "slot": "ac-options",
+            "alt": "Older outdoor air conditioner next to a house foundation",
+            "brief": "older outdoor AC condenser on a concrete pad beside a brick foundation, unit on the right, plain lawn and soft sky on the left behind the text side, no readable text, no people, no tools in hands"
+          },
+          "imageSide": "left"
+        },
+        {
+          "type": "review",
+          "quote": "He didn’t try to get as much money as he could out of us and told us what costs we would be looking at for fixing the unit or replacing the unit.",
+          "name": "Julia K."
+        },
+        {
+          "type": "prose",
+          "heading": "A New Outside Unit, Set Right",
+          "body": [
+            "When replacement is the answer, we install the new system. We have been back to install the day after a diagnosis.",
+            "On one install we raised and leveled the new outside unit so it sits right."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "They went over and beyond to raise and level out my new outside unit!",
+          "name": "Paul F."
+        },
+        {
+          "type": "prose",
+          "heading": "Keep It Running Between Repairs",
+          "body": [
+            "We have shown homeowners how to maintain their AC and offered follow-up appointments to get the unit ready for AC season.",
+            "Ask us about a checkup when you call."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Austin and Mike are first-rate technicians who are responsive and knowledgeable about the details of air conditioner repair. I highly recommend them.",
+          "name": "Peter R."
+        },
+        {
+          "type": "faq",
+          "heading": "AC Repair Questions",
+          "items": [
+            {
+              "q": "Do you repair air conditioners?",
+              "a": "Yes. We find what failed, such as a fan, a capacitor or a relay, and replace it."
+            },
+            {
+              "q": "Can I find out what replacing my AC would cost?",
+              "a": "Yes. When we diagnose a problem, you get the cost of fixing it and the cost of replacing it."
+            },
+            {
+              "q": "Do you replace the whole system?",
+              "a": "Yes. We install new systems, and we have raised and leveled the outside unit on a new install."
+            },
+            {
+              "q": "Do you help me look after my AC?",
+              "a": "Yes. We have shown homeowners how to maintain their unit and offered follow-up appointments before AC season."
+            },
+            {
+              "q": "Do you work on older air conditioners?",
+              "a": "Yes. We have diagnosed older units, and we tell you what fixing one costs against replacing it."
+            },
+            {
+              "q": "When is your office open?",
+              "a": "Monday to Friday, 8:00 AM to 5:00 PM. Call (316) 371-3815."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Call for AC Repair",
+          "text": "Call (316) 371-3815 and tell us what your AC is doing."
+        }
+      ]
+    },
+    {
+      "role": "service",
+      "route": "/furnace-repair-wichita-ks/",
+      "navLabel": "Furnace Repair",
+      "keyword": "furnace repair wichita ks",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Furnace repair",
+        "h1": "Furnace Repair in Wichita, KS — 1st Call Heating & Cooling",
+        "sub": "When your furnace goes out in a Kansas winter, every hour counts. We repair furnaces and heaters, and when yours is too old to fix, we replace the whole system. We have done a full system in a single day.",
+        "primaryCta": {
+          "label": "Call (316) 371-3815",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Send Us a Message",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "furnace-hero",
+          "alt": "Gas furnace in a Wichita basement utility area",
+          "brief": "gas furnace with ducts in a tidy basement utility area, furnace on the right of the frame, plain softly lit wall on the left behind the text side, no readable text, no people, no tools in hands"
+        }
+      },
+      "sections": [
+        {
+          "type": "review",
+          "quote": "When our furnace went out, we received prompt and quick service.  Very knowledgeable, was able to identify and fix quickly.  Very affordable and will definitely use them again.",
+          "name": "Rebecca G."
+        },
+        {
+          "type": "split",
+          "heading": "We Get the Heat Back On",
+          "body": [
+            "When your furnace goes out, we find the cause and fix it. Some fixes are simple.",
+            "We have also talked a customer through the likely problems with a heater before the visit."
+          ],
+          "image": {
+            "slot": "furnace-repair",
+            "alt": "Furnace burner compartment with the panel off in a utility room",
+            "brief": "furnace with its front panel off showing the burner compartment, furnace on the right, plain wall and soft light on the left behind the text side, no readable text, no people, no tools in hands"
+          },
+          "imageSide": "right"
+        },
+        {
+          "type": "review",
+          "quote": "Austin was very helpful when our heater wasn’t functioning properly. He talked through what might be the possible issues and requested the information of our unit ahead of time so he could show up prepared with all the parts he would need.",
+          "name": "Jake A."
+        },
+        {
+          "type": "prose",
+          "heading": "Arriving With the Parts",
+          "body": [
+            "Tell us your unit's information when you call. We have used it to show up with the parts the repair needed.",
+            "A shorter visit means your house is warm sooner."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Had Austin come out and give me a hand! Although it was a \"simple fix\" I was so glad to be able to learn and have heat again!",
+          "name": "Megan B."
+        },
+        {
+          "type": "split",
+          "heading": "Repair or Replace Your Furnace",
+          "body": [
+            "A furnace that is thirty or forty years old may not be worth another repair. We explain the different types of units and the size your home needs, and give you a fair estimate.",
+            "**You choose.** When you replace, our crew has done a full system in a single day."
+          ],
+          "image": {
+            "slot": "furnace-replace",
+            "alt": "New high-efficiency furnace installed in a clean utility closet",
+            "brief": "new furnace installed in a clean utility closet with fresh ductwork, furnace on the right of the frame, plain painted wall on the left behind the text side, no readable text, no people, no tools in hands"
+          },
+          "imageSide": "left"
+        },
+        {
+          "type": "review",
+          "quote": "When I needed to replace my 30 year old furnace, I called 1st Call Heating and Cooling. They were quick to schedule an appointment and their estimate was very fair.",
+          "name": "Mandi A."
+        },
+        {
+          "type": "prose",
+          "heading": "A Full System in One Day",
+          "body": [
+            "We replaced a nearly 40 year old furnace and AC system in a single day.",
+            "On that job we also flagged a problem with the gas company's equipment the homeowner had not known about, and offered follow-up appointments to make sure the unit was ready for AC season."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "1st Call got the full system replaced in a single day for a price that I felt was fair and less what than I had expected for a full unit replacement.",
+          "name": "Courtney B."
+        },
+        {
+          "type": "prose",
+          "heading": "Home Warranty Furnace Repairs",
+          "body": [
+            "We repair furnaces for homes covered by a home warranty. We have gotten the heat back on for a family with a baby after about four days without it, at a price we worked hard to make a great deal.",
+            "Call us with the details of your system."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "After about 4 days without heat we were finally able to get first call out and they worked really hard to get us a great deal and get our heat back up and running.",
+          "name": "Britiany P."
+        },
+        {
+          "type": "faq",
+          "heading": "Furnace Questions",
+          "items": [
+            {
+              "q": "Do you repair furnaces?",
+              "a": "Yes. We find what is wrong and fix it, and when it is a simple fix, we tell you."
+            },
+            {
+              "q": "My furnace is very old. Should I replace it?",
+              "a": "Call us. We explain your options and the size your home needs, and you decide."
+            },
+            {
+              "q": "Will you explain my options before I decide?",
+              "a": "Yes. We explain the different types of units and the size your home needs, and give you a fair estimate."
+            },
+            {
+              "q": "Can you replace a furnace and AC together?",
+              "a": "Yes. We have replaced a full furnace and AC system in a single day."
+            },
+            {
+              "q": "Do you do home warranty work?",
+              "a": "Yes. We repair heating for homes covered by a home warranty."
+            },
+            {
+              "q": "When is your office open?",
+              "a": "Monday to Friday, 8:00 AM to 5:00 PM. Call (316) 371-3815."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Call for Furnace Repair",
+          "text": "Call (316) 371-3815 and tell us what your furnace is doing."
+        }
+      ]
+    },
+    {
+      "role": "contact",
+      "route": "/contact/",
+      "navLabel": "Contact",
+      "keyword": "contact 1st call heating & cooling wichita ks",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Contact",
+        "h1": "Contact 1st Call Heating & Cooling",
+        "sub": "Call our Wichita office and tell us what your AC or furnace is doing.",
+        "primaryCta": {
+          "label": "Call (316) 371-3815",
+          "action": "call"
+        },
+        "secondaryCta": null,
+        "image": {
+          "slot": "contact-hero",
+          "alt": "Quiet Wichita street of brick homes with outdoor AC units",
+          "brief": "quiet street of Wichita brick homes with outdoor AC units beside the walls, houses on the right, the street leading off to the left, calm soft sky behind the text side, no readable text, no people"
+        }
+      },
+      "sections": [
+        {
+          "type": "prose",
+          "heading": "Call Us",
+          "body": [
+            "Call (316) 371-3815. Our office is at 937 W 50th St N, Wichita, KS 67204.",
+            "We are open Monday to Friday, 8:00 AM to 5:00 PM."
+          ]
+        },
+        {
+          "type": "list",
+          "heading": "Have This Ready",
+          "list": [
+            "Whether it is your AC, your furnace or both",
+            "What it is doing: no cooling, no heat, a noise or a leak",
+            "Your unit's information, if you can read it off the unit",
+            "Your address in Wichita"
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Was very happy with Mike the tech that came over. Fixed and running AC in no time. Will definitely recommend services!",
+          "name": "Colleen E."
+        },
+        {
+          "type": "faq",
+          "heading": "Before You Call",
+          "items": [
+            {
+              "q": "What do you work on?",
+              "a": "Air conditioners and furnaces: repairs, full system replacements, ductwork, seasonal checkups and geothermal service."
+            },
+            {
+              "q": "Where are you?",
+              "a": "937 W 50th St N, Wichita, KS 67204."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "about": "1st Call Heating & Cooling repairs and replaces air conditioners and furnaces from an office on West 50th Street North in Wichita, Kansas.",
+    "why": [
+      "AC and furnace repair",
+      "Full systems replaced, even in a single day",
+      "Repair or replace: you get both numbers",
+      "Office on W 50th St N in Wichita"
+    ]
+  },
+  "strategy": {
+    "whyHeading": "Why we built this site",
+    "why": [
+      "Your customers already make your case. Clarence D. wrote that you “came out in less than an hour.” Joe L. wrote about “the integrity to only charge for the actual work performed.”",
+      "Your website can't say any of it. Tap “Website” on your Google listing and you land on a page that says “This domain is for sale.” Nothing about heating, cooling, your number or hours.",
+      "So we built a demo that says HVAC company in Wichita at the very top, gives AC repair and furnace repair their own pages, and puts your customers' words next to the work they describe."
+    ],
+    "cardsHeading": "Be the HVAC Company People Find on Google",
+    "cardsIntro": "Each card is one demo page: what costs you calls, and how we fix it.",
+    "cards": [
+      {
+        "route": "/home/",
+        "title": "Homepage",
+        "why": "The page Google reads to learn who you are and where you work.",
+        "problems": [
+          "Everyone who taps “Website” on your Google listing lands on a page that says “This domain is for sale.”",
+          "Nothing there says you repair air conditioners and furnaces in Wichita, so Google has nothing to match to a search for an HVAC company.",
+          "Your 50 Google reviews appear on no page of yours."
+        ],
+        "fixes": [
+          "A headline that says HVAC company in Wichita, KS, right at the top.",
+          "Your number one tap away, with your address and hours.",
+          "Every service you do, with your customers' words beside it."
+        ],
+        "alsoAdd": "Every page set up behind the scenes so Google and AI tools like ChatGPT know exactly what you do, where you work, and what your customers say."
+      },
+      {
+        "route": "/ac-repair-wichita-ks/",
+        "title": "AC Repair",
+        "why": "Your reviews describe AC calls again and again.",
+        "problems": [
+          "No page exists for AC repair, so a search for “AC repair Wichita KS” has nothing of yours to land on.",
+          "Stories like “came out in less than an hour” live on Google only."
+        ],
+        "fixes": [
+          "A page for AC repair in Wichita, KS, with repair costs against replacement.",
+          "Reviews from these jobs beside each point."
+        ],
+        "alsoAdd": "Pages planned from what Google actually shows for each search, so every page targets something people really look for."
+      },
+      {
+        "route": "/furnace-repair-wichita-ks/",
+        "title": "Furnace Repair",
+        "why": "When the heat is out, people call the first company they can reach.",
+        "problems": [
+          "No page exists for furnace repair, so someone searching “furnace repair Wichita KS” never finds you.",
+          "Your full-system and 30-year-old-furnace replacements have no page that explains them."
+        ],
+        "fixes": [
+          "A page for furnace repair in Wichita, KS, covering repair, replacement and home warranty jobs.",
+          "Reviews from customers who got their heat back, beside each one."
+        ],
+        "alsoAdd": "A check of what your competitors offer, so services you didn’t think to mention still get their own pages."
+      },
+      {
+        "route": "/contact/",
+        "title": "Contact",
+        "why": "The page where a customer with a dead AC decides to call you.",
+        "problems": [
+          "No page of yours has a phone link, a contact form or an email address.",
+          "Your hours, Monday to Friday 8 to 5, appear only on a directory listing nobody has claimed."
+        ],
+        "fixes": [
+          "Your number one tap away, with your address, your hours and a short list of what to have ready."
+        ],
+        "alsoAdd": "Call and form tracking that shows which pages and towns your leads come from."
+      }
+    ],
+    "reportCardHeading": "What great HVAC company websites get right, and how yours measures up.",
+    "reportCard": [
+      {
+        "label": "A working website behind your Google listing",
+        "status": "Missing"
+      },
+      {
+        "label": "Headline says what you do and where",
+        "status": "Missing"
+      },
+      {
+        "label": "Phone number one tap away",
+        "status": "Missing"
+      },
+      {
+        "label": "Each money service has its own page",
+        "status": "Missing"
+      },
+      {
+        "label": "Real reviews shown",
+        "status": "Missing"
+      },
+      {
+        "label": "Contact form that blocks spam",
+        "status": "Missing"
+      }
+    ],
+    "closing": {
+      "heading": "Want a website like this for your business?",
+      "text": "Your customers already call you fast, fair and honest. Book a strategy call with Fluid Frame and we'll walk you through this demo."
+    }
+  },
+  "onboardingQuestions": [
+    "Owner's name and surname, and whether they want it on the site. No source names the owner.",
+    "Founding year. The earliest Google review is from December 2017, but no founding year is confirmed.",
+    "Licensed and insured? Licence number and insurer to show.",
+    "Brands sold and installed, and dealer status. No manufacturer locator confirmed one (Carrier checked, Trane not).",
+    "Warranties on labor and equipment, financing, and whether estimates are free. None are on the site.",
+    "Maintenance plan or tune-up membership: is one sold, or are checkups booked one at a time?",
+    "Service area: which towns around Wichita, and how far from 67204. The site says Wichita only.",
+    "Hours: confirm Monday to Friday, 8 AM to 5 PM, and whether they offer after-hours or weekend service.",
+    "Geothermal: confirm they service it (one review). Commercial or hangar work: is there a line?",
+    "What happened to firstcallheatingcooling.com, and do they want the domain back?",
+    "Email address to show, plus Facebook or other pages and who controls them.",
+    "Logo files, brand colors and job photos."
+  ]
+}
