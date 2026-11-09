@@ -123,7 +123,15 @@ Abbreviations for site pages: HOME = https://www.douglasfryroofing.com/ ; ABOUT 
 - Angi, HomeAdvisor, Thumbtack: no profile found in searches.
 
 ## From reviews
-To be filled by the Architect from reviews.json.
+Source: `reviews.json` (Google, pulled 2026-11-09: 66 reviews with text, 63 five-star; Google address 1835 N Ohio Ave, Wichita, KS 67214, matches the site).
+- **Jason Fry is the face of the business.** Named in about 43 reviews: inspection, quote, insurance, scheduling. Doug named in about 11 ("Both Doug and Jason Fry are very experience installers themselves", Kansas E.; "Doug and Jason are wonderful!", Leah D.).
+- **Tile is the specialty.** About 19 reviews name tile, slate, shake, DaVinci or Brava: Ludowici tile on a National Register home (Melissa H.); clay tile lifted and relaid with matching tiles after an 80 mph wind and hail storm (Connie P.); clay tile removed, new underlayment, original tile returned (Linda G.); concrete tile replaced after hail (Mary S.); tile repair "flawless cleanup" (Matthew O.); a local roofer told a homeowner to call Fry for tile repair (Matt M.); Brava cedar shakes (Mike F.); DaVinci composite shake upgrade after hail (L P.); wood shake to DaVinci (Fred O.).
+- **Insurance work.** About 7 reviews: Jason "successfully negotiated our insurance claim" (Connie P.), "educating our insurance company" (Melissa H.), working with State Farm (Traci G.), contacting the insurer himself (Michael E.).
+- **Repairs and leaks.** About 24 reviews: leaks traced and fixed on roofs other roofers put on (Hmong T., Erika B.), valley leak (Mark K.), radius metal roof on a manufactured home that others couldn't fix (Rhonda P.), sky tube and valley repairs on a 1995 clay tile roof they have serviced since 2015 (Lynda M.), same-day service ahead of weather (Randy F.), found a second problem area during an inspection (Ann P.).
+- **Long relationships.** Customers since 2003 (Gina W.), "four times in the past twenty years" (Fred O.), a roof they installed held 16 years and they came back for a small leak (The P.).
+- **Honest, straight talk.** "simple straight forward communication" (Scott B.); were "clear that their expertise was not wth flat r[oofs]" (Gina W.); "Very honest and friendly service" (Beverly R.); fair prices (Larry W., Kamel K., Mallory H.).
+- **Care on the job:** shingles installed at the right temperature for adhesion on an 8/12 pitch (Mike D.); patient help choosing material, showing existing roofs (S F.); cleanup (about 15 reviews).
+- **Do not quote:** Bobo P. (1★, says a subcontractor did the roof; ask on the call whether they use subcontractors, since the site says no commission salespeople), Kendall C. (1★), third 1★. Reviewer names that are not "First L." (C. M., L P., K W., S F., The P., Trish, kamel L.) cannot be quoted under the checker. Roger D. spells it "Frye" (quote as written if used).
 
 ## Questions for the onboarding call
 1. What is the second number, (316) 264-1511, used for? Should it be a tap-to-call link?
