@@ -333,6 +333,14 @@
               "a": "Yes, for windows, doors and siding."
             },
             {
+              "q": "Is there a warranty on the windows?",
+              "a": "Our warranty covers our installation. Ask us for the details at your estimate."
+            },
+            {
+              "q": "Se habla español?",
+              "a": "Sí. Se habla español."
+            },
+            {
               "q": "Do you replace basement windows?",
               "a": "Yes. We have installed five basement windows in one job."
             }
@@ -417,7 +425,7 @@
           "heading": "Vinyl Siding in the Style You Choose",
           "body": [
             "We install vinyl siding in the Carolina Sands, Crane Board, Parkview, Market Square, Portsmouth, Premium Pointe and Diamond Kote lines. Pick yours at our showroom on West Kellogg.",
-            "We have replaced a detached garage's siding and a rotted window in three days."
+            "Siding comes in a variety of colors and styles, and you can compare them in person. We have replaced a detached garage's siding and a rotted window in three days."
           ],
           "image": {
             "slot": "siding-hero",
@@ -479,6 +487,10 @@
             {
               "q": "Can I do doors, windows and siding together?",
               "a": "Yes. We have replaced windows and doors in one job and added siding and gutters on another."
+            },
+            {
+              "q": "Is there a warranty?",
+              "a": "Our warranty covers our installation. Ask us for the details at your estimate."
             },
             {
               "q": "Can you do siding on a garage?",
@@ -589,31 +601,31 @@
     "why": [
       "Your customers say the same things: Rick is easy to work with, the installers finish fast and clean up, and the price is fair. On Google you hold a 4.7 across 44 reviews.",
       "Your current site splits its top headline between windows and hail roofing, runs its menu off the edge of a phone, and never names Rick.",
-      "So we rebuilt it around what your customers already say: an owner who answers straight, and a crew that leaves the house clean."
+      "So we rebuilt it around what your customers say: an owner who answers straight and a crew that leaves the house clean."
     ],
     "cardsHeading": "Be the Exterior Company People Find on Google",
-    "cardsIntro": "Each card is one page of the demo: what costs you calls today, and how the demo fixes it.",
+    "cardsIntro": "Each card is one page of the demo: what costs you calls, and the fix.",
     "cards": [
       {
         "route": "/home/",
         "title": "Homepage",
-        "why": "The first page people see, and the one Google reads to learn who you are and where you work.",
+        "why": "The page Google reads to learn who you are and where you work.",
         "problems": [
           "On a phone the page is twice as wide as the screen. Your number and the Roofing, Financing, Reviews and Let's Talk buttons sit past the edge.",
           "The top of the page is three headlines: windows and siding, hail roofing claims, and Wichita. Google can't tell whether you are a window company or a roofer.",
           "\"Here's what our customers are saying...\" has no reviews under it, and nothing on the page names Rick."
         ],
         "fixes": [
-          "Your number is one tap from the top of every page, with the whole menu on screen.",
-          "A headline that says exterior remodeling company in Wichita, KS, right at the top.",
-          "Rick named as the owner, with real reviews beside each point."
+          "Your number one tap away, with the whole menu on screen.",
+          "A headline that says exterior remodeling company in Wichita, KS.",
+          "Rick named as owner, with real reviews beside each point."
         ],
         "alsoAdd": "Every page set up behind the scenes so Google and AI tools like ChatGPT know exactly what you do, where you work, and what your customers say."
       },
       {
         "route": "/window-replacement-wichita-ks/",
         "title": "Window Replacement",
-        "why": "Windows are about three quarters of your written reviews, and the page that sells them is short.",
+        "why": "Windows are about three quarters of your written reviews, and their page is short.",
         "problems": [
           "The Windows page is two paragraphs, a feature list and two PDF buttons, with no customer review and nothing on install day, which is what your reviewers praise."
         ],
@@ -685,7 +697,7 @@
     ],
     "closing": {
       "heading": "Want a website like this for your business?",
-      "text": "Your customers already say Rick is easy to work with and your crews leave the house clean. You likely do more than we found, so on your onboarding call we confirm the full list of services and every detail with you and your team."
+      "text": "Your customers already say Rick is easy to work with and your crews leave the house clean. You likely do more than we found, so on your onboarding call we confirm your services with you."
     }
   },
   "onboardingQuestions": []
