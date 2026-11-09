@@ -227,7 +227,7 @@
           "heading": "Clear Quotes, Your Decision",
           "body": [
             "Window quotes can be confusing, and some companies push you to say yes the same day or pay 20% more tomorrow.",
-            "At our estimate we lay out your options and the timeline, so you know what you are signing up for. Then you make the decision."
+            "At our estimate we lay out your options, what we can do for you and the timeline, so you know what you are signing up for. Then you make the decision."
           ]
         },
         {
@@ -239,7 +239,8 @@
           "type": "prose",
           "heading": "Vinyl Windows",
           "body": [
-            "Vinyl windows are what we put in. Our crew orders them for your openings and installs them in your home."
+            "Vinyl windows are what we put in. Our crew orders them for your openings and installs them in your home.",
+            "At your estimate we look at each opening with you, so you know what goes where before anything is ordered."
           ]
         },
         {
@@ -247,7 +248,7 @@
           "heading": "Sooner Than the Quote, Done in a Day",
           "body": [
             "We have had windows arrive in 7 weeks on a job we quoted at 14 to 18, the same wait other companies were quoting.",
-            "Then our crew installed every window in a single day. You get your own timeline at your estimate."
+            "The week after they arrived, our crew installed every window in a single day. You get your own timeline at your estimate."
           ]
         },
         {
@@ -562,8 +563,7 @@
     "whyHeading": "Why we built this site",
     "why": [
       "Today a homeowner who finds your site can't call you. There is no phone number on it, and your Services, About and Contact pages all say \"Page Not Found\".",
-      "Your customers describe a crew that \"explained everything they were going to do before they started working\" and \"left my home as clean as when they arrived.\" 36 of your 48 written Google reviews are insulation and weatherization jobs, yet your site says \"Known for windows\".",
-      "So we built the demo around that work, with your number one tap away on every page."
+      "Your customers describe a crew that \"explained everything they were going to do before they started working\" and \"left my home as clean as when they arrived.\" 36 of your 48 written Google reviews are insulation and weatherization jobs, yet your site says \"Known for windows\"."
     ],
     "cardsHeading": "Be the Insulation Company People Find on Google",
     "cardsIntro": "Each card is one page of the demo: what costs you calls today, and how the demo fixes it.",
@@ -656,7 +656,7 @@
     ],
     "closing": {
       "heading": "Want a website like this for your business?",
-      "text": "Your customers already say your crews explain the work and leave the house clean. Your website should say it too, and put your number in their hand. Book a strategy call with Fluid Frame and we'll walk you through this demo and confirm every service with you."
+      "text": "Your customers already say your crews explain the work and leave the house clean. Book a strategy call with Fluid Frame and we'll walk you through this demo and confirm every service with you."
     }
   },
   "onboardingQuestions": [
