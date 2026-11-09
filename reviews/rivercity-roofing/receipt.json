@@ -1,0 +1,27 @@
+{
+  "kind": "google-review-pull-receipt",
+  "status": "ok",
+  "slug": "rivercity-roofing",
+  "request": {
+    "mapsUrl": "place_id:ChIJvcxKUWYdu4cRSWpXuwCQPPE",
+    "maxReviews": 100,
+    "expectedName": "River City Roofing"
+  },
+  "trigger": "workflow_dispatch",
+  "apify": {
+    "actor": "compass~crawler-google-places",
+    "runId": "wf5H1NGVjCe35fafj",
+    "datasetId": "6eLkAftZ8hUlSyn12",
+    "attempts": 1,
+    "usageUsd": 0.010700000000000001
+  },
+  "counts": {
+    "listingTotal": 9,
+    "withText": 7,
+    "ratingOnly": 2
+  },
+  "detail": null,
+  "startedAt": "2026-11-09T12:48:13.971Z",
+  "finishedAt": "2026-11-09T12:48:34.745Z",
+  "githubRunUrl": "https://github.com/alchemistj/ff-content-demo-factory/actions/runs/42620009357"
+}

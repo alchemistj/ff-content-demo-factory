@@ -243,6 +243,18 @@
       "pulledAt": "2026-11-09T02:09:21.938Z"
     },
     {
+      "slug": "rivercity-roofing",
+      "name": "River City Roofing",
+      "placeId": "ChIJvcxKUWYdu4cRSWpXuwCQPPE",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 9,
+        "withText": 7,
+        "ratingOnly": 2
+      },
+      "pulledAt": "2026-11-09T12:48:34.745Z"
+    },
+    {
       "slug": "sc-marketing-technologies",
       "name": "SC Marketing Technologies LLC",
       "placeId": "ChIJiWeNBQxcq6oRDHLT3Zz3mkY",
