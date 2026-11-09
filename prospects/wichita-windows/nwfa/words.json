@@ -97,8 +97,8 @@
           "type": "split",
           "heading": "A Warmer, Tighter House",
           "body": [
-            "Insulation in your attic, under your floors and in your crawl space keeps the heat where you want it. We seal the air leaks around it.",
-            "Most of our reviews come from these jobs. See [Insulation & Weatherization](/insulation-weatherization-wichita-ks/)."
+            "We insulate attics, floors, exterior walls and crawl spaces, then seal the air leaks around the insulation so the heat stays where you set it.",
+            "We have left house after house as clean as we found it. See [Insulation & Weatherization](/insulation-weatherization-wichita-ks/)."
           ],
           "image": {
             "slot": "home-insulation",
@@ -116,8 +116,8 @@
           "type": "split",
           "heading": "New Windows, Put In by Our Crew",
           "body": [
-            "We go over your options, order your windows and install them with our own crew. One homeowner's windows arrived in 7 weeks, against the 14 to 18 we first quoted.",
-            "See [Window Replacement](/window-replacement-wichita-ks/)."
+            "We go over your options and how long the job will take, then order your windows and install them with our own crew. We have had windows in at 7 weeks on a job quoted at 14 to 18.",
+            "Comparing quotes? We lay out every option so you can weigh ours against the rest. See [Window Replacement](/window-replacement-wichita-ks/)."
           ],
           "image": {
             "slot": "home-windows",
@@ -163,7 +163,7 @@
             },
             {
               "q": "Do you do furnace and AC work too?",
-              "a": "Yes. We install furnaces and air conditioners, and some homeowners have us add insulation the week after."
+              "a": "Yes. We install furnaces and air conditioners, and we have come back the week after a new furnace to insulate the same house."
             },
             {
               "q": "How do I start?",
@@ -187,7 +187,7 @@
       "hero": {
         "eyebrow": "Vinyl windows",
         "h1": "Window Replacement in Wichita, KS — New Windows For America",
-        "sub": "We come to your house and go over your options, what we can do for you and how long the job will take. Our crew has put in a homeowner's windows in a single day.",
+        "sub": "We come to your house and go over your options, what we can do for you and how long the job will take. Our own crew installs your windows, and we have finished a full job in a single day.",
         "primaryCta": {
           "label": "Call (316) 263-0711",
           "action": "call"
@@ -224,36 +224,36 @@
         },
         {
           "type": "prose",
+          "heading": "Clear Quotes, Your Decision",
+          "body": [
+            "Window quotes can be confusing, and some companies push you to say yes the same day or pay 20% more tomorrow.",
+            "At our estimate we lay out your options and the timeline, so you know what you are signing up for. Then you make the decision."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "They were up front, honest, very very professional, and just a joy to work with. Their attention to detail was impeccable!!",
+          "name": "Deanna T."
+        },
+        {
+          "type": "prose",
           "heading": "Vinyl Windows",
           "body": [
             "Vinyl windows are what we put in. Our crew orders them for your openings and installs them in your home."
           ]
         },
         {
+          "type": "prose",
+          "heading": "Sooner Than the Quote, Done in a Day",
+          "body": [
+            "We have had windows arrive in 7 weeks on a job we quoted at 14 to 18, the same wait other companies were quoting.",
+            "Then our crew installed every window in a single day. You get your own timeline at your estimate."
+          ]
+        },
+        {
           "type": "review",
           "quote": "I originally was told 14 to 18 weeks (same as the other companies), but they came in 7 weeks! I was very surprised and happy they would be done before summer. His crew came out the next week and had them done in one day by a very professional crew!",
           "name": "Deric C."
-        },
-        {
-          "type": "prose",
-          "heading": "Sooner Than the Quote",
-          "body": [
-            "We quoted one homeowner 14 to 18 weeks for a full set of windows, and the windows were in at 7.",
-            "You get a timeline at your estimate, and we have beaten one before."
-          ]
-        },
-        {
-          "type": "prose",
-          "heading": "One Day on Site",
-          "body": [
-            "Our crew put in that homeowner's windows in a single day.",
-            "One crew, one day, and the new windows are in."
-          ]
-        },
-        {
-          "type": "review",
-          "quote": "Fast friendly professional installation.",
-          "name": "Sandy M."
         },
         {
           "type": "steps",
@@ -265,34 +265,18 @@
             },
             {
               "title": "Your windows are ordered",
-              "text": "You choose, we order and you get a timeline. One job came in 7 weeks."
+              "text": "You choose, we order and you get a timeline. We have beaten our own quote before."
             },
             {
               "title": "Install day",
-              "text": "Our crew puts in your windows. One full set went in in a day."
+              "text": "Our crew puts in your windows. We have finished a whole job in one day."
             }
           ]
         },
         {
-          "type": "prose",
-          "heading": "Sorting Out Quotes",
-          "body": [
-            "Getting quotes can be confusing. One homeowner had three companies out before us, and two of them said the price would rise 20% the next day unless he said yes that day.",
-            "At our estimate we lay out the options and the timeline, and you make the decision."
-          ]
-        },
-        {
-          "type": "prose",
-          "heading": "Up Front With You",
-          "body": [
-            "At your estimate you hear the options and the timeline, so you know what you are signing up for.",
-            "Then you decide."
-          ]
-        },
-        {
           "type": "review",
-          "quote": "They were up front, honest, very very professional, and just a joy to work with. Their attention to detail was impeccable!!",
-          "name": "Deanna T."
+          "quote": "Fast friendly professional installation.",
+          "name": "Sandy M."
         },
         {
           "type": "prose",
@@ -308,15 +292,15 @@
           "items": [
             {
               "q": "How long does installation take?",
-              "a": "We have installed a homeowner's windows in one day. Ask for the timeline on your windows at your estimate."
+              "a": "We have installed a full window job in one day. Ask for the timeline on your windows at your estimate."
             },
             {
               "q": "Who installs the windows?",
-              "a": "Our own crew puts them in. A homeowner who had a full set done in a day called it a very professional crew."
+              "a": "Our own crew puts them in. We have had a crew out the week after the windows arrived."
             },
             {
               "q": "How long until my windows arrive?",
-              "a": "On one job we quoted 14 to 18 weeks and the windows came in at 7. We give you a timeline at your estimate."
+              "a": "We have had windows arrive in 7 weeks on a 14-to-18-week quote. We give you a timeline at your estimate."
             },
             {
               "q": "What if I am comparing quotes?",
@@ -396,16 +380,16 @@
         },
         {
           "type": "prose",
-          "heading": "One Old House, Top to Bottom",
+          "heading": "Old Houses, Top to Bottom",
           "body": [
-            "On one old Kansas house with no attic access, our crew built an access so we could reach the attic. We also laid a vapor barrier in the crawl space, wrapped the pipes and sealed the duct work at the floor registers.",
-            "We insulated under the floors and in the attic, and flagged every electrical junction box before the attic insulation went in. Smoke detectors went in too."
+            "We have built attic access into an old Kansas house that had none, so we could insulate an attic that had nothing in it. On the same job we laid a vapor barrier in the crawl space, wrapped the pipes and sealed the duct work at the floor registers.",
+            "We insulated under the floors and in the attic, flagged every electrical junction box first, installed smoke detectors and cleaned up so the work area barely showed we had been there."
           ]
         },
         {
           "type": "review",
-          "quote": "The supervisor explained everything they were going to do before they started working. I figured they would take all day but they had the job done in no time.",
-          "name": "Rina B."
+          "quote": "They did excellent work and very polite cleaned up very well was really impressed with everything they did.",
+          "name": "Nancy P."
         },
         {
           "type": "prose",
@@ -416,8 +400,8 @@
         },
         {
           "type": "review",
-          "quote": "They did excellent work and very polite cleaned up very well was really impressed with everything they did.",
-          "name": "Nancy P."
+          "quote": "The supervisor explained everything they were going to do before they started working. I figured they would take all day but they had the job done in no time.",
+          "name": "Rina B."
         },
         {
           "type": "prose",
@@ -436,7 +420,7 @@
           "type": "prose",
           "heading": "Furnace and AC Alongside the Insulation",
           "body": [
-            "We install furnaces and air conditioners as well. One homeowner had a new furnace and air conditioner, a bathroom vent fan, insulation under the house and in the attic, and a smoke alarm, all through the weatherization program.",
+            "We install furnaces and air conditioners as well. On one weatherization program job we put in a new furnace, air conditioner and bathroom vent fan, insulated under the house and in the attic and installed a smoke alarm.",
             "We also install Hitachi mini-split systems."
           ]
         },
@@ -577,8 +561,9 @@
   "strategy": {
     "whyHeading": "Why we built this site",
     "why": [
-      "Your site says \"Known for windows.\" Your customers talk about insulation and weatherization. 36 of your 48 written Google reviews are about attics, floors and crawl spaces. 4 are about windows or doors, and the newest is from 2022.",
-      "Your site also has no phone number and every inner page says \"Page Not Found\". So we rebuilt it around the work your customers describe: crews that explain the job and leave the house clean."
+      "Today a homeowner who finds your site can't call you. There is no phone number on it, and your Services, About and Contact pages all say \"Page Not Found\".",
+      "Your customers describe a crew that \"explained everything they were going to do before they started working\" and \"left my home as clean as when they arrived.\" 36 of your 48 written Google reviews are insulation and weatherization jobs, yet your site says \"Known for windows\".",
+      "So we built the demo around that work, with your number one tap away on every page."
     ],
     "cardsHeading": "Be the Insulation Company People Find on Google",
     "cardsIntro": "Each card is one page of the demo: what costs you calls today, and how the demo fixes it.",
@@ -596,7 +581,7 @@
         "fixes": [
           "Your number, (316) 263-0711, is a one-tap call on every page.",
           "A headline that says insulation and window company in Wichita, KS, right at the top.",
-          "Real reviews from your customers, each beside the point it proves."
+          "Pages sized for a phone, with nothing to pinch or zoom."
         ],
         "alsoAdd": "Hourly speed monitoring that keeps your site fast for visitors on phones, and speed is something Google uses to rank you."
       },
@@ -605,8 +590,8 @@
         "title": "Window Replacement",
         "why": "Windows lead your site, and they have no page of their own.",
         "problems": [
-          "The \"Vinyl Windows\" tile opens a Page Not Found page.",
-          "Nothing explains how a window job goes, including a 7-week install quoted at 14 to 18."
+          "The \"Vinyl Windows\" tile opens Page Not Found, so window shoppers hit a dead end.",
+          "Nothing explains your estimate or timeline, so someone comparing quotes has no reason to pick you."
         ],
         "fixes": [
           "A full page for window replacement in Wichita, KS.",
@@ -620,12 +605,11 @@
         "why": "Insulation and weatherization are three quarters of your written reviews, and your site mentions them only in passing.",
         "problems": [
           "Insulation shows up once in a banner and once in a sentence, with no page, so homeowners searching for it don't find you.",
-          "Your weatherization program jobs and furnace and AC work are not mentioned.",
-          "Siding opens a dead page and Roofing has no link."
+          "Your weatherization program work is never mentioned."
         ],
         "fixes": [
           "A full page for insulation and weatherization in Wichita, KS.",
-          "Program jobs, furnace and AC, and real jobs told in your customers' words."
+          "Program jobs, furnace and AC, each proven by your customers' own reviews."
         ],
         "alsoAdd": "A check of what your competitors offer, so services you didn't think to mention still get their own pages."
       },
@@ -634,7 +618,7 @@
         "title": "Contact",
         "why": "The page where interest turns into a call.",
         "problems": [
-          "The Contact link opens Page Not Found: no form, no number, no address, no hours."
+          "The Contact link opens Page Not Found: no form, number or address, so a ready customer leaves."
         ],
         "fixes": [
           "A real contact page with your number one tap away.",
@@ -672,7 +656,7 @@
     ],
     "closing": {
       "heading": "Want a website like this for your business?",
-      "text": "Your customers already say your crews explain the work and leave the house clean. You likely do more than we found, so on your onboarding call we confirm the full list of services and every detail with you and your team."
+      "text": "Your customers already say your crews explain the work and leave the house clean. Your website should say it too, and put your number in their hand. Book a strategy call with Fluid Frame and we'll walk you through this demo and confirm every service with you."
     }
   },
   "onboardingQuestions": [
