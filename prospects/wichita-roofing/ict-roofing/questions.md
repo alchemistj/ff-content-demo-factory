@@ -16,3 +16,6 @@
 14. Towns beyond Wichita: the site names only Wichita.
 15. Are you related to ICT Home Pros or ICT Roofing and Remodeling?
 16. Logo file and brand colors.
+17. The demo says Juan comes out to check the work, Brady and Arturo meet adjusters, and roof and gutters are replaced in the same job after hail. All come from reviews. Are these true on most jobs?
+18. The demo calls you "locally owned" (from a review: "a locally owned operation with a permanent crew"). Confirm.
+19. One review is signed "EB B." Is that a customer's real first name, or should the caption read "Google review"?

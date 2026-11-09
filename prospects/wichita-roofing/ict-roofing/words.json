@@ -48,7 +48,7 @@
     {
       "name": "Free Roof Inspections",
       "route": null,
-      "blurb": "Juan has flown a drone over a roof the morning after a hailstorm. The inspection costs you nothing."
+      "blurb": "We check your roof and show you the damage, by drone when that's the clearest view. It costs you nothing."
     },
     {
       "name": "Hail and Storm Damage Insurance Claims",
@@ -68,12 +68,12 @@
     {
       "name": "Gutters",
       "route": null,
-      "blurb": "Replaced with your new roof after hail, so one job covers the whole storm."
+      "blurb": "Replaced in the same job as your roof when hail has dented them."
     },
     {
       "name": "Siding",
       "route": null,
-      "blurb": "Siding for your home's exterior, completed promptly and effectively."
+      "blurb": "Siding fixed along with your roof and gutters, or as a project of its own."
     }
   ],
   "pages": [
@@ -86,7 +86,7 @@
       "hero": {
         "eyebrow": "Locally owned in Wichita",
         "h1": "Roofing Company in Wichita, KS — ICT Roofing & Exteriors",
-        "sub": "We're Juan, Brady and Arturo. We replace and repair roofs in Wichita, and after hail we meet your insurance adjuster and push for the full roof the damage calls for. Your roof inspection is free.",
+        "sub": "We're Juan, Brady and Arturo. We replace and repair Wichita roofs, and after hail we meet your insurance adjuster at the house. Your roof inspection is free.",
         "primaryCta": {
           "label": "Call (316) 796-6722",
           "action": "call"
@@ -111,7 +111,7 @@
           "type": "split",
           "heading": "Juan, Brady and Arturo Run Your Job",
           "body": [
-            "**Juan owns the company and walks your roof himself.** Brady handles insurance claims and meets your adjuster. Arturo, our Project Manager, coordinates the work from the first walk-through to the last cleanup."
+            "**Juan owns the company and comes out to check the work himself.** Brady handles insurance claims and meets your adjuster. Arturo, our Project Manager, meets adjusters too and coordinates the work."
           ],
           "image": {
             "slot": "home-team",
@@ -129,12 +129,12 @@
           "type": "split",
           "heading": "After Hail, We Meet Your Adjuster",
           "body": [
-            "**We inspect your roof, document the hail damage and meet your adjuster at the house.** When the offer covers only part of the roof, we push for the full roof the damage calls for.",
-            "Roof and gutters get replaced together, so one crew handles the whole storm. [See how a hail claim goes, from inspection to new roof.](/roof-replacement-wichita-ks/)"
+            "**We inspect your roof, photograph the hail damage and meet your adjuster at the house.** When the insurance company offers only part of the roof, we push for all of it.",
+            "When hail dents your gutters too, we replace them with the roof. [See how a hail claim goes, from inspection to new roof.](/roof-replacement-wichita-ks/)"
           ],
           "image": {
             "slot": "home-claims",
-            "alt": "Roof with scattered hail bruising on the shingles and a gutter along the edge",
+            "alt": "Shingle roof edge with a metal gutter after a Wichita hailstorm",
             "brief": "close view of a shingle roof edge with a metal gutter, roof on the right, open sky on the left behind the text side, no readable text, no people, no tools"
           },
           "imageSide": "left"
@@ -191,7 +191,7 @@
       "hero": {
         "eyebrow": "Hail and storm roofs",
         "h1": "Roof Replacement in Wichita, KS — ICT Roofing & Exteriors",
-        "sub": "After hail we inspect your roof for free, meet your adjuster and replace the whole roof, gutters too when they were hit. We have put on a roof in a single day.",
+        "sub": "After hail, we inspect your roof for free, meet your adjuster and replace the roof, and the gutters too when they were hit. We have put on a whole roof in a single day.",
         "primaryCta": {
           "label": "Call (316) 796-6722",
           "action": "call"
@@ -216,8 +216,8 @@
           "type": "split",
           "heading": "A Free Inspection Comes First",
           "body": [
-            "**The inspection is free, and it tells you whether you need a new roof.** Juan has gone up the morning after a hailstorm and flown a drone over the roof to show the damage.",
-            "We walk you through what we find. If the roof doesn't need replacing, we say so."
+            "**The inspection is free, and it tells you whether you need a new roof at all.** We show you the damage we find, on the shingles and on the gutters.",
+            "If your roof doesn't need replacing, we say so."
           ],
           "image": {
             "slot": "replacement-inspection",
@@ -242,7 +242,7 @@
           "type": "prose",
           "heading": "Offered a Partial Roof? We Push for the Whole One",
           "body": [
-            "**When the insurance company offers to replace only part of your roof, we push for the full roof the damage calls for.** Brady knows the claim side and stays in it with you."
+            "**When the insurance company offers to replace only part of your roof, we push back for the whole roof the damage calls for.** Brady knows how claims work and stays in the fight with you."
           ]
         },
         {
@@ -266,7 +266,7 @@
           "type": "split",
           "heading": "Roof and Gutters in One Job",
           "body": [
-            "**Hail hits gutters too, so we replace roof and gutters together.** One call covers the whole edge of your house."
+            "**Hail dents gutters as well as shingles, so we replace both in the same job.** You make one call for the whole storm."
           ],
           "image": {
             "slot": "replacement-gutters",
@@ -285,16 +285,16 @@
           "heading": "What Install Day Looks Like",
           "items": [
             {
-              "title": "Old roof comes off, hidden problems get fixed",
-              "text": "We pull the old shingles and fix what was under them, not cover it. We have found missing valley seals on a tear-off and sealed them before they leaked."
+              "title": "The old roof comes off",
+              "text": "We tear off the old shingles and fix what we find instead of covering it. On one tear-off the builder had never put down valley seals, so we put them in before the house could leak."
             },
             {
-              "title": "The new roof goes on, often in one day",
-              "text": "We have put on whole roofs in a single day, and one in about seven hours."
+              "title": "The new roof goes on",
+              "text": "We have put whole roofs on in a single day."
             },
             {
-              "title": "A magnetic sweep finishes the yard",
-              "text": "We run a magnetic tool over your yard to catch stray nails."
+              "title": "Cleanup, down to the nails",
+              "text": "We clean up the yard and have run a magnetic tool across it to pick up stray roofing nails."
             }
           ]
         },
@@ -307,7 +307,7 @@
           "type": "prose",
           "heading": "Shingle, Shake, Metal or Composite",
           "body": [
-            "**We work with all roofing systems and brands.** That includes Presidential Shake, wood shake, metal and CeDUR composite shake, and we give you our opinion on which fits your house."
+            "**We work with all roofing systems and brands,** including Presidential Shake, wood shake, metal and CeDUR composite shake. We ask what you want from your roof, then tell you which one we'd choose."
           ]
         },
         {
@@ -321,15 +321,15 @@
           "items": [
             {
               "q": "How long does a roof replacement take?",
-              "a": "We have finished whole roofs in a single day. Your roof's size and the weather set your schedule."
+              "a": "Your roof's size and the weather set the schedule, and we tell you the plan before we start."
             },
             {
               "q": "Will insurance pay for my new roof?",
-              "a": "That is between you, your policy and your insurance company. We document the damage, meet your adjuster and push for the full roof the damage calls for."
+              "a": "That is up to your policy and your insurance company. We document the damage, meet your adjuster and push for the full roof the damage calls for."
             },
             {
               "q": "Do you replace gutters too?",
-              "a": "Yes, and after hail we often do it in the same job as the roof."
+              "a": "Yes. After hail we often replace them in the same job as the roof."
             }
           ]
         },
@@ -367,14 +367,14 @@
       "sections": [
         {
           "type": "review",
-          "quote": "After leaving a voicemail that the wind had blown off some shingles, I was called back the same day! We set a date and time for the estimate, and again he was punctual, clean, and professional. The repair was made as agreed upon.",
+          "quote": "After leaving a voicemail that the wind had blown off some shingles, I was called back the same day!  We set a date and time for the estimate, and again he was punctual, clean, and professional.  The repair was made as agreed upon.",
           "name": "Stephen P."
         },
         {
           "type": "split",
           "heading": "Wind Takes Shingles, We Put Them Back",
           "body": [
-            "**Shingles blown off in a windstorm are a quick fix.** We have replaced a wind-stripped section in two days.",
+            "**A few shingles lost to wind is a repair, not a new roof.** We have replaced a wind-stripped section in two days.",
             "Call or leave a voicemail, and we set a time to look."
           ],
           "image": {
@@ -386,14 +386,14 @@
         },
         {
           "type": "review",
-          "quote": "We lost several shingles from the strong winds last week and I wanted to get them replaced quickly. Juan and his team were quick to respond to our needs and had them replaced in just two days time.",
+          "quote": "We lost several shingles from the strong winds last week and I wanted to get them replaced quickly.  Juan and his team were quick to respond to our needs and had them replaced in just two days time.",
           "name": "Matthew P."
         },
         {
           "type": "prose",
           "heading": "A Leak Has a Cause",
           "body": [
-            "**We trace a leak to what is causing it, not just the spot where it shows.** We have come back to a garage leak that outlasted the first repair, found flashing that was put on wrong and fixed it."
+            "**We trace a leak to what is causing it, not just the spot where it shows.** When a garage leak outlasted our first repair, we came back, found flashing the original roofer had put on wrong, and fixed it."
           ]
         },
         {
@@ -417,7 +417,7 @@
           "type": "prose",
           "heading": "Repair, or Replace? We Tell You Straight",
           "body": [
-            "**If a repair will hold, we do the repair.** If hail has damaged most of the roof, a patch won't hold, and we say that too. Then the better path is a claim and a new roof. [See roof replacement.](/roof-replacement-wichita-ks/)"
+            "**If a repair will hold, we do the repair.** If hail damage runs across the whole roof, we tell you that too, and the next step is a claim and a new roof. [See roof replacement.](/roof-replacement-wichita-ks/)"
           ]
         },
         {
@@ -429,12 +429,12 @@
           "type": "prose",
           "heading": "We Follow Up",
           "body": [
-            "**We check back after the work.** We have called customers months later to ask whether the repair or the new roof is holding, and we have replaced a rain cap that high winds blew off."
+            "**We check back after the work.** We have followed up months after a job to make sure the roof was holding, and replaced a rain cap that high winds had blown off."
           ]
         },
         {
           "type": "review",
-          "quote": "They also followed up months later to verify if there were any issues or concerns with replacement roof and repairs; subsequently it was the same time as high winds and the rain cap blew off and was damaged. They provided a replacement and installed.",
+          "quote": "They also followed up months later to verify if there were any issues or concerns with replacement roof and repairs; subsequently it was the same time as high winds and the rain cap blew off and was damaged.  They provided a replacement and installed.",
           "name": "Edward C."
         },
         {
@@ -526,7 +526,7 @@
         },
         {
           "type": "review",
-          "quote": "When it came time do our roof, I called them first. Juan came out right away to start conversations to get the project started.",
+          "quote": "When it came time do our roof, I called them first.  Juan came out right away to start conversations to get the project started.",
           "name": "Rylie T."
         },
         {
@@ -562,9 +562,9 @@
   "strategy": {
     "whyHeading": "Why we built this site",
     "why": [
-      "Your customers already make your case. You hold a 4.9 on 74 Google reviews. \"Juan and Brady are amazing. They kept me informed at all times through the process and were extremely knowledgeable about insurance.\"",
+      "Your Google reviews already make your case: 4.9 stars from 74 reviews, naming Juan, Brady and Arturo again and again for meeting adjusters and fighting insurance companies for whole roofs.",
       "Your website hides all of it. Every browser tab reads \"Your Site Title\", no page has a headline, and the Roofing button on your homepage opens a hotel page with rooms at $100 to $400 a night.",
-      "So we built this site around what your customers say."
+      "So we built this site around the work your reviews describe."
     ],
     "cardsHeading": "Be the Roofing Company People Find on Google",
     "cardsIntro": "Each card is one page: what your site does today, and what we changed.",
@@ -574,14 +574,14 @@
         "title": "Homepage",
         "why": "The page Google reads to learn who you are and where you work.",
         "problems": [
-          "Every browser tab says \"Your Site Title\", so Google can't tell you're a roofing company in Wichita.",
-          "The big line at the top, \"Built on Integrity, Backed by Experience.\", never says roofing or Wichita.",
-          "None of your Google reviews appear on the page; the few testimonials have no names."
+          "The biggest line on your homepage, \"Built on Integrity, Backed by Experience.\", never says roofing or Wichita, so Google can't tell you're a roofing company in Wichita.",
+          "None of your Google reviews appear on the page; the few testimonials have no names.",
+          "Your \"About\" button opens the insurance page, so no page says who Juan, Brady and Arturo are."
         ],
         "fixes": [
           "A headline that says roofing company in Wichita, KS, right at the top.",
-          "Your name in the browser tab and Juan, Brady and Arturo introduced by name.",
-          "Real reviews from your customers, each beside the point it proves."
+          "Real reviews from your customers, each beside the point it proves.",
+          "Juan, Brady and Arturo introduced by name on your homepage, with who does what."
         ],
         "alsoAdd": "Hourly speed monitoring that keeps your site fast for visitors on phones, and speed is something Google uses to rank you."
       },
@@ -590,7 +590,7 @@
         "title": "Roof Replacement",
         "why": "Replacement and hail claims are the heart of your reviews, and they have no page.",
         "problems": [
-          "The Roofing \"Learn More\" button opens a hotel page with rooms at $100 to $400 a night.",
+          "The Roofing \"Learn More\" button opens that hotel page, so the people most ready to buy a roof hit a dead end.",
           "No page covers roof replacement, hail claims or meeting the adjuster; Services is one short list of shingle types."
         ],
         "fixes": [
@@ -614,12 +614,12 @@
       {
         "route": "/contact/",
         "title": "Contact",
-        "why": "Where a ready customer reaches Juan, Brady or Arturo.",
+        "why": "Where a ready customer picks up the phone.",
         "problems": [
-          "The \"About\" button opens the insurance page, so no page says who Juan, Brady and Arturo are."
+          "Arturo's direct line shows only on your contact page; every other page lists just the main number."
         ],
         "fixes": [
-          "Both numbers one tap away, with your address and your team named.",
+          "Both numbers at the bottom of every page, each one tap to call.",
           "A short list of what to have ready before you call."
         ],
         "alsoAdd": "Every page set up behind the scenes so Google and AI tools like ChatGPT know exactly what you do, where you work, and what your customers say."
