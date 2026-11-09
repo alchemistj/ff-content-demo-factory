@@ -1,0 +1,715 @@
+{
+  "schema": "words-package/v1",
+  "business": {
+    "name": "Cook's Heating and Cooling",
+    "slug": "cooks",
+    "city": "Wichita",
+    "state": "KS",
+    "companyType": "HVAC Company",
+    "phones": [
+      {
+        "label": "Wichita",
+        "display": "(316) 945-2665",
+        "tel": "+13169452665"
+      }
+    ],
+    "email": null,
+    "hours": "Monday to Friday, 8:00 AM to 5:00 PM; emergency service 5:00 PM to 10:00 PM",
+    "address": "2215 S West St, Wichita, KS 67213",
+    "serviceArea": {
+      "summary": "Wichita and surrounding towns",
+      "towns": [
+        "Wichita",
+        "Belle Plaine"
+      ]
+    }
+  },
+  "trustBar": [
+    "Homes and Businesses",
+    "Service for All Brands",
+    "Weekday Emergency Service, 5 to 10 PM",
+    "Second-Generation Family Business"
+  ],
+  "services": [
+    {
+      "name": "AC Repair",
+      "route": "/ac-repair-wichita-ks/",
+      "blurb": "Troubleshooting, diagnosis and Freon leak detection on your existing air conditioner."
+    },
+    {
+      "name": "Furnace Repair",
+      "route": "/furnace-repair-wichita-ks/",
+      "blurb": "Troubleshooting and diagnosis, then repair and servicing of your existing furnace."
+    },
+    {
+      "name": "Air Conditioner Installation",
+      "route": null,
+      "blurb": "New air conditioner units, with a variety of systems and equipment to fit your budget."
+    },
+    {
+      "name": "Furnace Installation",
+      "route": null,
+      "blurb": "Furnaces, unit heaters and electric air handlers, installed and serviced."
+    },
+    {
+      "name": "Annual Maintenance Agreements",
+      "route": null,
+      "blurb": "Residential and commercial service agreements on 1-, 5- or 10-year terms."
+    },
+    {
+      "name": "Air Quality",
+      "route": null,
+      "blurb": "Filters in multiple sizes, whole-system filtration and humidifiers."
+    },
+    {
+      "name": "Carbon Monoxide Detection",
+      "route": null,
+      "blurb": "Detection added to the heating work we do in your home or building."
+    },
+    {
+      "name": "Commercial HVAC and Mechanical Design",
+      "route": null,
+      "blurb": "Advanced mechanical system design for residential and commercial buildings."
+    },
+    {
+      "name": "Custom Sheet Metal",
+      "route": null,
+      "blurb": "Custom pieces fabricated in our own sheet metal shop."
+    }
+  ],
+  "pages": [
+    {
+      "role": "home",
+      "route": "/home/",
+      "navLabel": "Home",
+      "keyword": "hvac company wichita ks",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Heating and cooling for homes and businesses",
+        "h1": "HVAC Company in Wichita, KS — Cook's Heating and Cooling",
+        "sub": "We repair, install and maintain air conditioners and furnaces from our office at 2215 S West St. We have looked after the heating and cooling in two different homes for the same customer.",
+        "primaryCta": {
+          "label": "Call (316) 945-2665",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Contact Us",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "home-hero",
+          "alt": "Outdoor air conditioner beside a brick Wichita home",
+          "brief": "outdoor AC condenser unit beside the brick wall of a Kansas ranch house, house and unit on the right, soft clear sky on the left, no readable text, no tools in hands, no people"
+        }
+      },
+      "sections": [
+        {
+          "type": "review",
+          "quote": "I have had Cooks do my HVAC work and installations for many, many years and the work has always been good, in each of my two homes.",
+          "name": "John E."
+        },
+        {
+          "type": "split",
+          "heading": "Repair First, on Every Brand",
+          "body": [
+            "Our service department works on all brands. When your AC or furnace fails, we start with troubleshooting and diagnosis, then repair what is wrong.",
+            "Each has its own page: [AC repair](/ac-repair-wichita-ks/) and [furnace repair](/furnace-repair-wichita-ks/)."
+          ],
+          "image": {
+            "slot": "home-repair",
+            "alt": "Gas furnace in a clean utility room",
+            "brief": "indoor gas furnace with its panel closed in a tidy utility room, furnace on the right, plain wall and soft light on the left, no readable text, no tools in hands, no people"
+          },
+          "imageSide": "right"
+        },
+        {
+          "type": "services",
+          "heading": "Everything We Do",
+          "intro": "Repair has its own pages. Everything else we do is listed here."
+        },
+        {
+          "type": "split",
+          "heading": "Installation to Fit Your Budget",
+          "body": [
+            "We install air conditioners, furnaces, unit heaters and electric air handlers, with a variety of systems and equipment to fit your budget.",
+            "We have installed a new heater and AC unit for a homeowner who had gathered several estimates."
+          ],
+          "image": {
+            "slot": "home-install",
+            "alt": "New air conditioner condenser on a concrete pad",
+            "brief": "new outdoor AC condenser on a concrete pad beside a light brick wall, unit on the left side of the frame away from the text, open lawn and soft sky behind the text side, no readable text, no tools in hands, no people"
+          },
+          "imageSide": "left"
+        },
+        {
+          "type": "review",
+          "quote": "The price couldn't be beat (had several estimates) on new heater and ac unit. The technicians were great! Super friendly and knowledgeable.",
+          "name": "Christy R."
+        },
+        {
+          "type": "prose",
+          "heading": "Installed Right",
+          "body": [
+            "We have been named one of the top three HVAC companies by someone who used to wire new houses in Wichita."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Cooks has always been one of my top three companies that I suggest or would use to do any work for me or anyone I know. The installation guys work their buts off and they do their best to make everything right.",
+          "name": "Joshua M."
+        },
+        {
+          "type": "prose",
+          "heading": "Maintenance and Air Quality",
+          "body": [
+            "Our annual maintenance agreements cover homes and businesses. The Premium plan brings two servicings a year, priority emergency service within 24 hours and 20% off parts and labor.",
+            "We also install filters, whole-system filtration that removes up to 90% of air contaminants, and humidifiers. We have had the same household call us for 35 years."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "We have used Cook's for the last 35 years couldn't be happier.",
+          "name": "Sandra S."
+        },
+        {
+          "type": "prose",
+          "heading": "Where We Are and When",
+          "body": [
+            "Our office is at 2215 S West St in Wichita. We are open Monday to Friday, 8:00 AM to 5:00 PM, with weekday evening emergency service until 10:00 PM."
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Before You Call",
+          "items": [
+            {
+              "q": "Do you work on businesses as well as homes?",
+              "a": "Yes. We handle residential and commercial heating and cooling, with mechanical design and custom sheet metal from our own shop."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Call Cook's About Your Heating and Cooling",
+          "text": "Call (316) 945-2665, or send us a message from our contact page."
+        }
+      ]
+    },
+    {
+      "role": "service",
+      "route": "/ac-repair-wichita-ks/",
+      "navLabel": "AC Repair",
+      "keyword": "ac repair wichita ks",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Air conditioning repair for homes and businesses",
+        "h1": "AC Repair in Wichita, KS — Cook's Heating and Cooling",
+        "sub": "We troubleshoot your air conditioner, find what failed and repair it, whatever the brand. We have repaired outside AC units and explained everything to the homeowner.",
+        "primaryCta": {
+          "label": "Call (316) 945-2665",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Contact Us",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "ac-hero",
+          "alt": "Outdoor AC condenser beside a Wichita house in summer",
+          "brief": "outdoor AC condenser unit on a pad beside a brick house in bright summer light, unit on the right, lawn and soft blue sky on the left, no readable text, no tools in hands, no people"
+        }
+      },
+      "sections": [
+        {
+          "type": "review",
+          "quote": "Shannon and Jose did our repairs on out outside ac unit and explained everything professionally! Highly recommend this company",
+          "name": "Tom V."
+        },
+        {
+          "type": "split",
+          "heading": "What Our AC Repair Covers",
+          "body": [
+            "A technician comes to you, troubleshoots the system and diagnoses what failed. Our service department is equipped for all brands.",
+            "We repair and service your existing air conditioner, and we are EPA registered and certified."
+          ],
+          "list": [
+            "Expert troubleshooting and diagnosis",
+            "Repair and servicing of existing units",
+            "Freon leak detection",
+            "Preventive maintenance"
+          ],
+          "image": {
+            "slot": "ac-repair",
+            "alt": "AC condenser with its side panel off",
+            "brief": "outdoor AC condenser with the access panel resting on the ground beside it, unit on the right, plain fence and soft light on the left, no readable text, no tools in hands, no people"
+          },
+          "imageSide": "right"
+        },
+        {
+          "type": "prose",
+          "heading": "When It Is Out in the Heat",
+          "body": [
+            "A dead AC on a hot day does not wait. Call (316) 945-2665 and tell us what the system is doing, and we will take it from there.",
+            "We have had a technician at a home the same afternoon the customer called, on a sweltering Friday morning."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Called on a Friday morning, sweltering hot day, and my A/C was out. Got a technician here that afternoon, on time, and they fixed me up! Reasonable price, professional service. Ricky was awesome.",
+          "name": "Vicki V."
+        },
+        {
+          "type": "prose",
+          "heading": "Finding a Freon Leak",
+          "body": [
+            "Freon leak detection is part of our AC work. A system that keeps losing refrigerant has a leak somewhere, and topping it off without finding the leak only puts the problem off.",
+            "We have sent technicians who knew the job and got to work right away."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "The technician was nice, clean and knew his job. Got to work right away, without any issues.",
+          "name": "Lupe N."
+        },
+        {
+          "type": "split",
+          "heading": "Business Cooling Too",
+          "body": [
+            "A hot store loses customers. We repair air conditioning for businesses as well as homes.",
+            "We have fixed a store's cooling quickly and explained the problem in plain terms."
+          ],
+          "image": {
+            "slot": "ac-commercial",
+            "alt": "Rooftop air conditioning unit on a small commercial building",
+            "brief": "rooftop HVAC unit on a flat-roofed brick storefront building, building and unit on the left side of the frame away from the text, open sky and calm background on the right, no readable text, no tools in hands, no people"
+          },
+          "imageSide": "left"
+        },
+        {
+          "type": "review",
+          "quote": "My store was super hot and not only was he able to fix the issue quickly but he was also able to explain it to me in a simple yet efficient manner.",
+          "name": "Gabriel S."
+        },
+        {
+          "type": "prose",
+          "heading": "Checked Before It Is Replaced",
+          "body": [
+            "A cooling problem is not always a failed air conditioner. Diagnosis comes first, so you know what is wrong before anyone talks about replacing anything.",
+            "We have crawled through a customer's crawl space to check the duct work and found it undamaged."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "The tech showed up on time, was friendly, and professional. … He also took the time to crawl in our crawl space and found our duct work isn't damaged.",
+          "name": "Matthew L."
+        },
+        {
+          "type": "steps",
+          "heading": "What Happens When You Call",
+          "items": [
+            {
+              "title": "You call",
+              "text": "Ring (316) 945-2665 and tell us what the air conditioner is doing."
+            },
+            {
+              "title": "We diagnose",
+              "text": "A technician troubleshoots the system, checks for a Freon leak where it applies, and finds what failed."
+            },
+            {
+              "title": "We repair",
+              "text": "We repair the unit you have. If it cannot be saved, we install new equipment to fit your budget."
+            }
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "AC Repair Questions",
+          "items": [
+            {
+              "q": "What hours can I reach you?",
+              "a": "Monday to Friday, 8:00 AM to 5:00 PM, with emergency service on weekday evenings from 5:00 PM to 10:00 PM."
+            },
+            {
+              "q": "Do you repair business air conditioning?",
+              "a": "Yes. We work on homes and businesses, and our commercial work includes mechanical system design."
+            },
+            {
+              "q": "Do you check for a Freon leak?",
+              "a": "Yes. Freon leak detection is part of our AC work, so a low system gets a diagnosis and not just a top-off."
+            },
+            {
+              "q": "What if my air conditioner cannot be repaired?",
+              "a": "We install air conditioner units, with a variety of systems and equipment to fit your budget."
+            },
+            {
+              "q": "Do you offer maintenance for air conditioners?",
+              "a": "Yes. Preventive maintenance is part of our AC work, and annual service agreements cover homes and businesses."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Call Us About Your AC",
+          "text": "Call (316) 945-2665 and we will start with what the system is doing."
+        }
+      ]
+    },
+    {
+      "role": "service",
+      "route": "/furnace-repair-wichita-ks/",
+      "navLabel": "Furnace Repair",
+      "keyword": "furnace repair wichita ks",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Furnace repair for homes and businesses",
+        "h1": "Furnace Repair in Wichita, KS — Cook's Heating and Cooling",
+        "sub": "When the heat goes out, we troubleshoot your furnace, diagnose the failure and repair it. We have fixed a furnace with the part in hand, ahead of a cold snap.",
+        "primaryCta": {
+          "label": "Call (316) 945-2665",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Contact Us",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "furnace-hero",
+          "alt": "Gas furnace in a Wichita home utility room",
+          "brief": "gas furnace in a clean utility room, furnace on the right, plain wall and warm soft light on the left, no readable text, no tools in hands, no people"
+        }
+      },
+      "sections": [
+        {
+          "type": "review",
+          "quote": "Thank you Cooks for the fast response to take care of my 90 year old father. Don was very nice and had the part and got it fixed before this next cold snap.",
+          "name": "Carolyn R."
+        },
+        {
+          "type": "split",
+          "heading": "What Our Furnace Repair Covers",
+          "body": [
+            "We start with troubleshooting and diagnosis, then repair or service the furnace you have. We work on all brands.",
+            "Heat comes in more than one form, and we handle each of them."
+          ],
+          "list": [
+            "Furnaces",
+            "Unit heaters",
+            "Electric air handlers",
+            "Carbon monoxide detection"
+          ],
+          "image": {
+            "slot": "furnace-repair",
+            "alt": "Furnace with its access panel removed",
+            "brief": "indoor furnace with the front panel leaning against the wall beside it, furnace on the right, plain wall and soft light on the left, no readable text, no tools in hands, no people"
+          },
+          "imageSide": "right"
+        },
+        {
+          "type": "prose",
+          "heading": "Finding What Keeps It From Running",
+          "body": [
+            "A furnace that will not start has a cause, and diagnosis finds it before parts are ordered.",
+            "We have traced a heater that would not run to a wiring issue and had it running in 20 minutes."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Technician Ricky got here early at 11:45, checked out the system, found a wiring issue that was preventing it from running, and had my heater running in 20 minutes. He even noticed the housing was labeled with the wrong size air filter and replaced that.",
+          "name": "Ted H."
+        },
+        {
+          "type": "prose",
+          "heading": "Repair Before Replacement",
+          "body": [
+            "Repair is the first answer. If a furnace cannot be saved, we install a replacement furnace, unit heater or electric air handler.",
+            "We have kept a customer from replacing a heater that another company said had to go."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "They saved me thousands that I didn't have to spend. Very honest and reliable.",
+          "name": "LaVona B."
+        },
+        {
+          "type": "split",
+          "heading": "Walked Through the Repair",
+          "body": [
+            "We have walked a homeowner through every step of a furnace repair, from how the furnace works to what to watch out for."
+          ],
+          "image": {
+            "slot": "furnace-explained",
+            "alt": "Furnace filter and housing",
+            "brief": "furnace filter slot and housing in a tidy utility closet, furnace on the left side of the frame away from the text, plain wall and soft light on the right, no readable text, no tools in hands, no people"
+          },
+          "imageSide": "left"
+        },
+        {
+          "type": "review",
+          "quote": "Derek talked me through every step of the process and helped me understand how my furnace worked, what to watch out for, and even offered a few pointers and tricks along the way.",
+          "name": "John H."
+        },
+        {
+          "type": "prose",
+          "heading": "Heat When the Office Is Closed",
+          "body": [
+            "Our emergency service runs weekdays from 5:00 PM to 10:00 PM, for the heat that cannot wait for morning.",
+            "Our Premium maintenance plan adds two servicings a year, priority emergency service within 24 hours and 20% off parts and labor, on 1-, 5- or 10-year terms."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "People You Can Let In",
+          "body": [
+            "You let us into your home when the heat is out. We have earned the word honest from the customers we have helped."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Jose and Shannon have done a fantastic job and these men are honest. You can trust them.",
+          "name": "Charlotte C."
+        },
+        {
+          "type": "steps",
+          "heading": "What Happens When You Call",
+          "items": [
+            {
+              "title": "You call",
+              "text": "Ring (316) 945-2665 and tell us what the heat is doing."
+            },
+            {
+              "title": "We diagnose",
+              "text": "A technician troubleshoots the furnace and finds what is keeping it from running."
+            },
+            {
+              "title": "We repair or replace",
+              "text": "We repair the furnace you have. If it cannot be saved, we install a new furnace, unit heater or electric air handler."
+            }
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Furnace Repair Questions",
+          "items": [
+            {
+              "q": "Which furnaces do you repair?",
+              "a": "All brands, along with unit heaters and electric air handlers."
+            },
+            {
+              "q": "When can I call about a furnace?",
+              "a": "Weekdays 8:00 AM to 5:00 PM, with emergency service from 5:00 PM to 10:00 PM."
+            },
+            {
+              "q": "Do you replace furnaces too?",
+              "a": "Yes. We install furnaces, unit heaters and electric air handlers when a repair is not the answer."
+            },
+            {
+              "q": "Can you check for carbon monoxide?",
+              "a": "Yes. Carbon monoxide detection is part of our heating work, offered alongside furnace and unit heater service."
+            },
+            {
+              "q": "Do you offer maintenance agreements?",
+              "a": "Yes. Annual service agreements cover homes and businesses, with a Premium plan on 1-, 5- or 10-year terms."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Call Us About Your Furnace",
+          "text": "Call (316) 945-2665 and tell us what the heat is doing."
+        }
+      ]
+    },
+    {
+      "role": "contact",
+      "route": "/contact/",
+      "navLabel": "Contact",
+      "keyword": "contact cook's heating and cooling wichita ks",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Contact",
+        "h1": "Contact Cook's Heating and Cooling",
+        "sub": "Call our office and tell us what your air conditioner or furnace is doing.",
+        "primaryCta": {
+          "label": "Call (316) 945-2665",
+          "action": "call"
+        },
+        "secondaryCta": null,
+        "image": {
+          "slot": "contact-hero",
+          "alt": "Quiet Wichita street of brick homes",
+          "brief": "quiet residential street of Wichita brick homes with outdoor AC units beside the walls, houses on the right, street leading off to the left, calm soft sky behind the text side, no readable text, no people"
+        }
+      },
+      "sections": [
+        {
+          "type": "prose",
+          "heading": "Call Our Office",
+          "body": [
+            "Call (316) 945-2665 Monday to Friday, 8:00 AM to 5:00 PM. Emergency service runs weekdays from 5:00 PM to 10:00 PM.",
+            "Our office is at 2215 S West St, Wichita, KS 67213. We serve Wichita and surrounding towns."
+          ]
+        },
+        {
+          "type": "list",
+          "heading": "Have This Ready",
+          "list": [
+            "Whether it is your AC, your furnace or both",
+            "What it is doing",
+            "Whether the work is for your home or your business",
+            "Your address, or the town you are in"
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Great customer service and competitive pricing. Glenn and Tyler are great Techs and Rosa in the office is very helpful.",
+          "name": "Sean S."
+        },
+        {
+          "type": "faq",
+          "heading": "Before You Call",
+          "items": [
+            {
+              "q": "Do you work on businesses?",
+              "a": "Yes. Our work covers residential and commercial heating and cooling."
+            },
+            {
+              "q": "Can I ask about a maintenance agreement?",
+              "a": "Yes. We offer annual service agreements for homes and businesses."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "about": "Cook's Heating and Cooling repairs, installs and maintains air conditioners and furnaces for homes and businesses in Wichita, Kansas, from our office at 2215 S West St.",
+    "why": [
+      "Service for all brands",
+      "Second-generation family business",
+      "Our own sheet metal shop",
+      "Weekday emergency service, 5 to 10 PM"
+    ]
+  },
+  "strategy": {
+    "whyHeading": "Why we built this site",
+    "why": [
+      "The top of your homepage has no headline. The only thing there is your logo, and the name in your browser tab is “Home - Cook's Heating and Cooling.” Nothing tells Google, or a homeowner searching on a hot day, you are an HVAC company in Wichita.",
+      "Your customers already make your case. Brian F.: “They come out ASAP when your Air is not working and fix it right.” None of it is on your site, so a visitor who does not know you has only your word for it.",
+      "So our demo says HVAC company in Wichita, KS at the very top, gives AC repair and furnace repair a page each, and sets your customers' words beside the work they describe."
+    ],
+    "cardsHeading": "Be the HVAC Company People Find on Google",
+    "cardsIntro": "Each card is one demo page: what costs you calls, and the fix.",
+    "cards": [
+      {
+        "route": "/home/",
+        "title": "Homepage",
+        "why": "The page Google reads to learn where you work.",
+        "problems": [
+          "The top of your homepage has no headline, so Google can't tell you're an HVAC company in Wichita.",
+          "At the very bottom of every page your number is plain text, so a visitor has to type it in.",
+          "Your services page names Trane, Goodman and Carrier as top brands. We couldn't confirm that on the manufacturers' dealer finders."
+        ],
+        "fixes": [
+          "A headline that says HVAC company in Wichita, KS, right at the top.",
+          "Your number is one tap at the top and the bottom of every page.",
+          "Brand lines wait until we confirm them together."
+        ],
+        "alsoAdd": "Every page set up behind the scenes so Google and AI tools like ChatGPT know exactly what you do, where you work, and what your customers say."
+      },
+      {
+        "route": "/ac-repair-wichita-ks/",
+        "title": "AC Repair",
+        "why": "Where a hot homeowner decides whom to call.",
+        "problems": [
+          "AC repair shares a page with installation, so “AC repair Wichita KS” has no page built for it.",
+          "The page carries no customer words, so the proof stays on Google."
+        ],
+        "fixes": [
+          "A page for AC repair in Wichita, KS, covering what happens when you call.",
+          "Your customers' words beside each point they prove."
+        ],
+        "alsoAdd": "Pages planned from what Google actually shows for each search, so every page targets something people really look for."
+      },
+      {
+        "route": "/furnace-repair-wichita-ks/",
+        "title": "Furnace Repair",
+        "why": "Where a cold homeowner decides whom to call.",
+        "problems": [
+          "Furnace repair shares a page with heating installation, so the urgent call is buried.",
+          "No reviews appear anywhere on that page."
+        ],
+        "fixes": [
+          "A page for furnace repair in Wichita, KS, with repair and replacement kept apart.",
+          "Reviews matched to what the furnace work involves."
+        ],
+        "alsoAdd": "A check of what your competitors offer, so services you didn't think to mention still get their own pages."
+      },
+      {
+        "route": "/contact/",
+        "title": "Contact",
+        "why": "Where a visitor decides to call.",
+        "problems": [
+          "Your hours sit only at the bottom of the page, with no emergency hours beside your number.",
+          "Visitors see no email address; it is hidden in the page code."
+        ],
+        "fixes": [
+          "Number, address and hours together, emergency hours included.",
+          "A short list of what to have ready when you call."
+        ],
+        "alsoAdd": "Call and form tracking that shows which pages and towns your leads come from."
+      }
+    ],
+    "reportCardHeading": "What great HVAC websites get right, and how yours measures up.",
+    "reportCard": [
+      {
+        "label": "Headline says what you do and where",
+        "status": "Missing"
+      },
+      {
+        "label": "Phone number one tap away",
+        "status": "Needs work"
+      },
+      {
+        "label": "Each money service has its own page",
+        "status": "Needs work"
+      },
+      {
+        "label": "Customer reviews on the site",
+        "status": "Missing"
+      },
+      {
+        "label": "Menu links go to the right page",
+        "status": "Good"
+      },
+      {
+        "label": "Copyright year is current",
+        "status": "Needs work"
+      },
+      {
+        "label": "Form that blocks spam",
+        "status": "Needs work"
+      },
+      {
+        "label": "No leftover sample text",
+        "status": "Needs work"
+      }
+    ],
+    "closing": {
+      "heading": "Want a website like this for your business?",
+      "text": "Your customers already describe the company you are. Book a strategy call with Fluid Frame and we'll walk you through this demo and what a full build adds."
+    }
+  },
+  "onboardingQuestions": [
+    "Who owns Cook's, and who is the second-generation family? One 2009 review says the company was bought out in 2008; the About page says family business.",
+    "What year was the company founded? (The site's copyright line says 2016.)",
+    "Which manufacturers are you authorized dealers for? Trane and Carrier did not list Cook's for ZIP 67213; we did not check Goodman, Lennox, Rheem or American Standard.",
+    "Kansas contractor licence number and liability insurance.",
+    "Saturday or after-10 PM service beyond the weekday 5 PM to 10 PM emergency window.",
+    "Maintenance plans: current prices and terms for Premium and the 5- and 10-year plans.",
+    "How much of the work is commercial?",
+    "Which email address should customers see? service@cookshvac.com is only in a hidden comment in the page code.",
+    "What does the KCAA logo in the footer mean?",
+    "Free estimates, financing and warranty terms: any you want shown?",
+    "Which towns beyond Wichita do you serve? Belle Plaine appears only in a customer review."
+  ]
+}
