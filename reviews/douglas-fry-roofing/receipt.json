@@ -1,0 +1,27 @@
+{
+  "kind": "google-review-pull-receipt",
+  "status": "ok",
+  "slug": "douglas-fry-roofing",
+  "request": {
+    "mapsUrl": "place_id:ChIJSR3w1E7iuocRJXA6D1NM7eI",
+    "maxReviews": 100,
+    "expectedName": "Douglas Fry"
+  },
+  "trigger": "workflow_dispatch",
+  "apify": {
+    "actor": "compass~crawler-google-places",
+    "runId": "9uC1UWcbvrWdQmNPm",
+    "datasetId": "DI33THdRmmFbfRQEZ",
+    "attempts": 1,
+    "usageUsd": 0.0457
+  },
+  "counts": {
+    "listingTotal": 79,
+    "withText": 66,
+    "ratingOnly": 13
+  },
+  "detail": null,
+  "startedAt": "2026-11-09T12:48:47.059Z",
+  "finishedAt": "2026-11-09T12:49:59.144Z",
+  "githubRunUrl": "https://github.com/alchemistj/ff-content-demo-factory/actions/runs/42620021323"
+}
