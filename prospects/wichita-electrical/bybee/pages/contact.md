@@ -2,7 +2,7 @@
 
 # Contact Bybee Electric
 
-Tell us what's happening and we'll come look at it, free estimate. Call during business hours, or send a message and we'll get back to you.
+Tell us what's happening and we'll come look at it, free estimate. Call during business hours, or send a message.
 
 **Buttons:** Call (316) 409-4186 | Get a Free Estimate
 
@@ -14,7 +14,7 @@ Call (316) 409-4186, Monday to Friday, 8:00 AM to 5:00 PM. We're closed Saturday
 
 ## Send a Message
 
-Prefer to write it down? Send your name, phone number and a few lines about the problem, and we'll call you back. You can also email admin@bybeeelectric.com.
+Prefer to write it down? Send your name, phone number and a few lines about the problem. You can also email admin@bybeeelectric.com.
 
 ## What to Tell Us
 
@@ -43,3 +43,5 @@ We accept American Express, Discover, MasterCard, Visa, cash and check.
 ## What Happens Next
 
 We come out, look at the problem, and give you a free estimate. Then you decide.
+
+If it turns out smaller than you feared, or not ours to fix, we'll say so.

@@ -11,7 +11,9 @@ An outlet that's dead, a breaker that keeps tripping, a panel someone told you t
 
 ## We Look First, Then Tell You Straight
 
-Most people call an electrician with a guess already in their head. It's the meter. It's the whole panel. The house needs rewiring.
+Most people call an electrician with a guess already in their head.
+
+It's the meter. It's the whole panel. The house needs rewiring.
 
 Sometimes the guess is right. Often the real problem is smaller, a loose connection, a worn switch, a fault on the utility's side of the meter.
 
@@ -22,7 +24,7 @@ So the first thing we do is find out. If the job is bigger than you thought, we 
 > "I have used them before. So I called when I had an issue. They told me to call Evergy first because they would do a free inspection. They saved me a service call. It was an Evergy issue after all. :) Will highly recommend these guys!"
 > — Jennifer B.
 
-Then we explain the work in plain words, so you decide with the facts in front of you. A quote you understand is the only kind worth signing.
+Then we explain the work in plain words. When a repair has a cheaper option and a better one, you hear both, low to high, and you decide.
 
 ## Electrical Repair
 
@@ -30,7 +32,8 @@ You flip a switch and nothing happens. An outlet in the kitchen has been dead si
 
 Each one has a cause.
 
-A breaker trips because a circuit is overloaded, shorted or leaking current to ground, and a breaker that trips again right after you reset it is telling you something. 
+A breaker trips because a circuit is overloaded, shorted or leaking current to ground, and a breaker that trips again right after you reset it is telling you something.
+
 Lights that flicker in one room are usually the fixture or bulb. Flicker across the house, or when a big appliance starts, points to a loose connection or an overloaded service.
 
 A warm outlet, a discolored switch plate, a buzzing or a burning smell is different. That's a loose or failing connection, and it should be looked at the same day, not next month.
@@ -56,9 +59,9 @@ It may hold a brand of breaker known to fail to trip when it should. You may see
 
 Or it may simply be too small, a 60 or 100 amp service in a house now running central air, a hot tub or an EV charger.
 
-An upgrade means a permit and a city inspection, the power company disconnecting and reconnecting your service, and a new panel, often 200 amps. The power is off for part of the day, and we tell you how long before we start.
+An upgrade means a permit and a city inspection, the power company disconnecting and reconnecting your service, and a new panel, often 200 amps. The power is off for part of the day, so ask for the length of the outage when you get the quote.
 
-When it's done, every circuit is labeled, so the next person who opens the door knows what they're looking at.
+A finished panel has every circuit labeled, so the next person who opens the door knows what they're looking at.
 
 [See electrical panel upgrade →](/electrical-panel-upgrade-wichita-ks/)
 
@@ -69,9 +72,9 @@ When it's done, every circuit is labeled, so the next person who opens the door 
 
 A kitchen remodel, a finished basement, a garage where you want to run real power tools. New rooms and new loads need new circuits, and the electrical work lands in the middle of everyone else's schedule.
 
-We work alongside the general contractor and the other trades, and we plan the wiring so it fits what you're building. We also take on the smaller version of the same job: a new circuit for a microwave, a sub-panel in the garage, outlets where you've been running extension cords.
+Remodel wiring has to fit around the general contractor and the other trades, and it has to be planned before the walls close. The smaller version of the same job is just as real: a new circuit for a microwave, a sub-panel in the garage, outlets where you've been running extension cords.
 
-Houses that are decades old get the same attention. An old house has wiring that was never meant for today's loads, and we'll tell you what has to change and what can stay.
+Older houses are the same story. Old wiring was never meant for today's loads, and some of it can stay while some of it has to go.
 
 > "Installed a 100 amp sub-panel in garage for additional power for large power tools.  My main panel needed some reconfiguring and that went off without a hitch.  They did good work and were courteous throughout the process."
 > — Thomas S.
@@ -80,7 +83,7 @@ Houses that are decades old get the same attention. An old house has wiring that
 
 Ceiling fans, chandeliers, new light fixtures, outdoor lighting. These are easy to do badly. A fan that wobbles, a fixture on a box that can't hold its weight, a switch that doesn't match what it controls.
 
-We hang and wire them, and when the wiring behind them isn't right, we say so before we close the ceiling.
+We hang and wire them, and a ceiling is the best time to look at the wiring behind them, before the new fixture covers it.
 
 ## A Free Safety Inspection
 
@@ -92,9 +95,7 @@ We offer a free 10-point safety inspection, and a free estimate on the work. If 
 
 Electrical quotes can differ by a lot, and that's reason to ask what each one covers. Put ours next to the others and compare the work, not just the number.
 
-We'd rather earn the job by being clear about it. The right fix at an honest price is the whole idea.
-
-We also treat your house like it's ours: work areas are cleaned up when we leave, and the debris goes with us.
+When we find the problem is smaller than the quote you were handed, we say that too. Work areas are cleaned up when we leave, and the debris goes with us.
 
 ## How a Job Goes
 
@@ -121,10 +122,10 @@ No. Stop using it.
 A warm or discolored outlet, a buzzing or a burning smell means a loose or failing connection. Call us the same day.
 
 **How long will the power be off for a panel upgrade?**
-Part of one working day, and we tell you how long before we start. If someone in your home depends on power, such as medical equipment, tell us when you call and we'll plan around it.
+Part of one working day. Ask for the length of the outage when you get the quote, and say so if anyone in your home depends on power, such as medical equipment.
 
 **Do you work on older houses?**
-Yes. Older wiring is common in Wichita, and most of it can be made safe without tearing the house apart.
+Yes. We've updated a farmhouse from 1870, and plenty of newer homes. Old wiring was never meant for today's loads, and we'll tell you what has to change and what can stay.
 
 **Are you licensed and insured?**
 We're licensed and insured.

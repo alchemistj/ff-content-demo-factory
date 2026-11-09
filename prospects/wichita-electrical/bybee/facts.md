@@ -112,3 +112,12 @@ Associations (About page): "IEC of Kansas," "WABA," "Better Business Bureau." Co
 16. Associations: IEC of Kansas, WABA. Ask for membership proof or drop them.
 17. Google reviews text: owner first name appears in reviews or owner replies? (Not pulled; reviews are pulled only for final picks.)
 18. Hibu contract: whether they pay Hibu, and whether the site and reviews can move.
+
+## From reviews
+Practices stated in our voice on the pages, each shown in two or more five-star Google reviews (reviews.json, pulled 2026-11-09).
+- Looks first and says so when the answer is smaller or not theirs to fix: Jennifer B. (call Evergy first), Bruce P. (meter needed nothing), Jackie W. (not the best fit, guided to next steps).
+- Explains in plain words and gives options: Robert C. ("layman's terms"), Jackie S., Michael M. (low-to-high options), Tina T.
+- Cleans up and hauls away debris: Tina T., Robert C., Karin T.
+- Goes to get a missing part and comes back: Noah S., Lauren H., Kayla S., M C.
+- Tests the work before leaving: Daryl D., Lauren H., Kayla S.
+- Not shown in two reviews, so not stated in our voice: who pulls the panel permit; outage length planned before the job (Meredith S. only); labeled panels with a written key (A B. only); calling before arriving (Lauren H. only); 1870 farmhouse (Mark R. only, mentioned as hers).

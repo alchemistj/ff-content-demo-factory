@@ -2,7 +2,7 @@
 
 # Electrical Panel Upgrade in Wichita, KS — Bybee Electric
 
-Your panel is where every circuit in the house starts, and an old or crowded one is easy to ignore until it isn't. We look at yours, tell you whether it needs replacing, and plan the day so you know how long the power is off. Call us for a free estimate.
+Your panel is where every circuit in the house starts, and an old or crowded one is easy to ignore until it isn't. We look at yours and tell you straight whether it needs replacing, even when the answer is no. Call us for a free estimate.
 
 **Buttons:** Call (316) 409-4186 | Get a Free Estimate
 
@@ -35,13 +35,13 @@ Sometimes the answer is a new breaker or a repaired connection. Sometimes the pa
 
 Most people want to know what's going to happen to their day. Here it is.
 
-1. **A permit and an inspection.** Panel work is permitted, and the city inspects it. It's part of the job, and we handle it.
+1. **A permit and an inspection.** A panel upgrade needs a permit, and the city inspects the work before it's signed off.
 2. **The power company.** Evergy disconnects your service so the panel can be swapped, then reconnects it.
 3. **The swap.** The old panel comes out, the new one goes in, and every circuit is connected and tested. A new panel is often 200 amps.
-4. **Sometimes more.** An old meter base or service mast may need replacing at the same time, and we'll tell you at the estimate if yours does.
-5. **Labeling.** Every circuit is labeled, so you know what each breaker controls.
+4. **Sometimes more.** An old meter base or service mast may need replacing at the same time, depending on what's on your house.
+5. **Labeling.** A finished panel has every circuit labeled, so you know what each breaker controls.
 
-It usually takes a day, and the power is off for part of it. We tell you how long before we start, so you can plan around it.
+It usually takes a day, and the power is off for part of it. Ask for the length of the outage when you get the quote, so you can plan around it.
 
 > "Installed a 100 amp sub-panel in garage for additional power for large power tools.  My main panel needed some reconfiguring and that went off without a hitch.  They did good work and were courteous throughout the process."
 > — Thomas S.
@@ -50,33 +50,35 @@ It usually takes a day, and the power is off for part of it. We tell you how lon
 
 You don't always need a whole new main panel. If the problem is that the garage, the workshop or an addition needs more power, a sub-panel feeds a new set of circuits from the main one, as long as the main service can carry the load.
 
-That's what it takes to run a table saw, a welder or a compressor without dimming the lights. We check the main panel first, because the load has to fit.
+That's what it takes to run a table saw, a welder or a compressor without dimming the lights. The main panel has to be checked first, because the load has to fit.
 
 ## Older Houses
 
-Wichita has a lot of houses with wiring and panels from another era. They can be updated, and the panel is usually where the update starts.
+Open the door on an old panel and you may find faded pencil or no labels at all. Every breaker is a guess, and that's when the wrong one gets switched off.
+
+A panel upgrade is the chance to fix that, and to bring an older house's wiring up to what it now has to carry.
 
 > "Bybee electric updated my 1870 farm house . The oldest house in sedwick county . So Bybee can say they work on the oldest to the newest houses."
 > — Mark R.
 
 ## Permits, Inspections and Clean-Up
 
-A city inspector has the last word on panel work, and we plan the job so it passes.
+A city inspector has the last word on panel work. If the inspection finds a problem, it gets fixed before the work passes.
 
 > "We had a problem with a city inspector wich was NOT their fault, and they were so very focused on resolving the issue for me."
 > — Jr R.
 
-The panel is usually in the garage or the basement, and we leave the area as clean as we found it.
+The panel is usually in the garage or the basement, and the area should be left as clean as it was found.
 
 ## Questions Before You Call
 
 **How much does a panel upgrade cost?**
 
-It depends on the size of the panel, what's wrong with the old one and whether the meter base or service mast needs replacing. The estimate is free, and you'll know what's included before we start.
+It depends on the size of the panel, what's wrong with the old one and whether the meter base or service mast needs replacing. The estimate is free. Ask it to spell out what's included.
 
 **How long is the power off?**
 
-For part of one working day. We give you an estimate before we start.
+For part of one working day. Ask for the length of the outage when you get the quote.
 
 **Do I need 200 amps?**
 
@@ -88,7 +90,7 @@ Not necessarily. A fuse box, a Federal Pacific or Zinsco breaker, rust or scorch
 
 **Do I need a permit?**
 
-Yes. We handle the permit and the inspection.
+Yes. In Wichita, panel work needs a permit, and a city inspector checks it before it is signed off.
 
 ## Get Your Panel Looked At
 

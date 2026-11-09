@@ -13,9 +13,13 @@ A dead outlet, a switch that does nothing, a breaker that won't stay on, lights 
 
 Electrical problems feel random. They aren't. Every dead outlet and tripping breaker has a cause, and the cause is usually one of a short list.
 
-A connection has worked loose. A device has worn out. A circuit is carrying more than it was built for. Or a wire was run wrong years ago and the house has been getting by.
+A connection has worked loose. A device has worn out.
+
+A circuit is carrying more than it was built for. Or a wire was run wrong years ago and the house has been getting by.
 
 The fix depends on which one it is, and guessing is how people end up replacing parts that were never the problem. We start by finding the cause.
+
+Sometimes the cause isn't in the house at all. If the trouble is on the utility's side of the meter, the first call is to Evergy, and a good electrician will tell you so.
 
 ## Breakers That Trip
 
@@ -35,7 +39,7 @@ Switches fail the same way. The contacts inside wear out, and eventually the lig
 
 Sometimes the problem is stranger than that. A house that's been remodeled a few times can have circuits that make no sense, with one breaker feeding outlets upstairs and down, inside and out.
 
-Tracing that takes patience. We follow the circuit until we know what's on it, so the fix stays fixed.
+Tracing that takes patience. You follow the circuit until you know what's on it, so the fix stays fixed.
 
 ## Warm Outlets, Buzzing and Burning Smells
 
@@ -51,7 +55,7 @@ Where the flicker happens tells you what it is.
 
 One fixture that flickers is usually the bulb or the fixture. Lights that flicker or dim all over the house, or whenever the air conditioner or dryer starts, point to a loose connection or a service that's carrying too much.
 
-We start with the cheap answer and work toward the expensive one, and we tell you which one we're looking at.
+The cheap answer comes first: the bulb, then the fixture, then the wiring behind it.
 
 > "I was very pleased with the work Bybee Electric did on my basement lighting.  I had them install updated ceiling lites.  They not only did that but fixed some wiring problems they found in the process."
 > — Vivian B.
@@ -60,7 +64,7 @@ We start with the cheap answer and work toward the expensive one, and we tell yo
 
 A repair visit sometimes turns up a second problem: old wiring that isn't up to code, a fan hung wrong, a box with the wrong parts in it.
 
-We show you what we found and what each option costs, from the minimum that makes it safe to the full fix. You decide. Nothing gets added without you knowing.
+We show you what we found and what each option costs, from the minimum that makes it safe to the full fix. You decide.
 
 > "Had some wiring that was not up to code.  Gave me a few different options.  Some low to high options.  Felt like they were being honest with me.  Really enjoyed that."
 > — Michael M.
@@ -76,7 +80,7 @@ We show you what we found and what each option costs, from the minimum that make
 
 ## What You Can Expect
 
-We call before we come, we show up when we said we would, and we explain what we're doing as we do it. If we need a part we don't have on the truck, we go get it and come back.
+We show up when we said we would and explain what we're doing as we do it. If we need a part we don't have on the truck, we go get it and come back.
 
 > "Derek was awesome! He arrived on time,  called before he showed up.  He was professional & made sure all of our concerns were addressed.  He had to go get some replacement parts that we needed,  installed them and made sure everything worked before he left."
 > — Lauren H.
