@@ -99,11 +99,6 @@
       },
       "sections": [
         {
-          "type": "review",
-          "quote": "We had a leak in the kitchen ceiling. We assumed it was from the roof so we called a slew of different contractors. We ended up going with River City Roofing as Anthony crawled into the attic and onto the roof and found that our CHIMNEY CHASE was leaking. His crew showed up when they said they would and were very communicative throughout the whole process!",
-          "name": "Brant C."
-        },
-        {
           "type": "split",
           "heading": "Find the Real Problem First",
           "body": [
@@ -134,11 +129,6 @@
           }
         },
         {
-          "type": "review",
-          "quote": "River City did an amazing job putting a new roof on my home. After they finished, they walked around to make sure if anything fell off the roof that everything was picked up. Anthony showed up shortly after they left to make sure I was pleased with the roof. Anthony handled talking to my insurance agent and getting forms filed out and returned to them.",
-          "name": "Kamden B."
-        },
-        {
           "type": "prose",
           "heading": "Roof Repair",
           "body": [
@@ -153,8 +143,8 @@
         },
         {
           "type": "review",
-          "quote": "My roof got really messed up by a bad wind and River City Roofing made it super quick and easy to get it fixed. Anthony was very friendly and easy to work with and the guys on the crew really worked their tails off to get my roof done quickly!",
-          "name": "Jordan S."
+          "quote": "We found a leak in our roof. River City handled it all very professionally and in a timely manner. I would definitely recommend them for any of your roofing needs.",
+          "name": "Lindsey F."
         },
         {
           "type": "prose",
@@ -185,8 +175,8 @@
         },
         {
           "type": "review",
-          "quote": "Very pleasant experience. This company did a wonderful job replacing my siding and sending painters that did a great job as well. Anthony is very responsive to calls and text messages. He is great to work with.",
-          "name": "Theresa E."
+          "quote": "Very, very pleased with the new siding and paint job. Anothny and Alex do great work! Professional, courteous, and really know what theyre doing.",
+          "name": "Alex C."
         },
         {
           "type": "steps",
@@ -240,7 +230,7 @@
             },
             {
               "q": "Will my insurance pay for it?",
-              "a": "It depends on your policy and what caused the damage. Wind and hail are the usual claims, and an adjuster wants clear photos and the damage tied to a storm. We can't promise what your insurer will do. On one roof, Anthony dealt with the homeowner's insurance agent and filled out and returned the forms."
+              "a": "It depends on your policy and what caused the damage. Wind and hail are the usual claims, and an adjuster wants clear photos and the damage tied to a storm. We can't promise what your insurer will do."
             },
             {
               "q": "Do you work outside Wichita?",
@@ -302,11 +292,6 @@
             "alt": "Close view of a shingle roof surface and ridge line",
             "brief": "close view of a shingle roof surface and ridge line, ridge on the right, soft plain sky on the left, no readable text, no people"
           }
-        },
-        {
-          "type": "review",
-          "quote": "We had a leak in the kitchen ceiling. We assumed it was from the roof so we called a slew of different contractors. We ended up going with River City Roofing as Anthony crawled into the attic and onto the roof and found that our CHIMNEY CHASE was leaking.",
-          "name": "Brant C."
         },
         {
           "type": "prose",
@@ -427,15 +412,10 @@
           }
         },
         {
-          "type": "review",
-          "quote": "We found a leak in our roof. River City handled it all very professionally and in a timely manner. I would definitely recommend them for any of your roofing needs.",
-          "name": "Lindsey F."
-        },
-        {
           "type": "prose",
           "heading": "What Usually Needs Repairing",
           "body": [
-            "Most roof leaks are not a worn-out roof. They come from a short list of small places:"
+            "Most roof leaks are not a worn-out roof. We trace most of them to a short list of small places:"
           ],
           "list": [
             "**Flashing.** The metal around chimneys, walls and skylights that bends, rusts or pulls loose.",
@@ -569,11 +549,6 @@
           ]
         },
         {
-          "type": "review",
-          "quote": "We ended up going with River City Roofing as Anthony crawled into the attic and onto the roof and found that our CHIMNEY CHASE was leaking.",
-          "name": "Brant C."
-        },
-        {
           "type": "prose",
           "heading": "Call or Use the Form?",
           "body": [
@@ -583,7 +558,7 @@
         },
         {
           "type": "review",
-          "quote": "Anthony is very responsive to calls and text messages. He is great to work with.",
+          "quote": "Very pleasant experience. This company did a wonderful job replacing my siding and sending painters that did a great job as well. Anthony is very responsive to calls and text messages. He is great to work with.",
           "name": "Theresa E."
         },
         {

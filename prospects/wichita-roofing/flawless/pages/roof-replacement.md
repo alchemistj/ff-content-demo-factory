@@ -8,7 +8,7 @@ If your roof is at the end of its life, or hail finished it off, the next questi
 
 ## When It's Time for a New Roof, Not Another Patch
 
-Shingles don't fail all at once. They go brittle, curl at the edges, lose their granules and let go of nails, and one day a stain shows up on a ceiling.
+Shingles don't fail all at once. They go brittle, curl at the edges, lose their granules and let go of nails, and eventually a stain shows up on a ceiling.
 
 A patch fixes the spot you can see. It does nothing about the shingle next to it, which is the same age and wearing out the same way.
 
@@ -25,9 +25,6 @@ You call us. We inspect the roof for free and document what we find. We file the
 The adjuster is at your house once, for a short visit. What's been documented before they arrive, and who walks the roof with them, often decides how the claim goes.
 
 You don't have to get on the roof, learn the paperwork or chase anyone down. You tell us when the adjuster is coming, and we take it from there.
-
-> "They helped with every step of the way to get my roof replaced. They answered any questions I had."
-> — Sean P.
 
 ## What You Pay
 
@@ -67,7 +64,7 @@ A crew arrives and the old roof comes off. Then the underlayment, flashing and n
 > "Did excellent job. on our new roof New gutter … Finished in one day highly recommend for other people"
 > — Mahesh R.
 
-A larger roof, or a short winter day, can stretch it to about two days on the roof, and the gutters can take a few more days after that. After the inspection I can tell you what to expect for yours.
+Bigger roofs and short winter days take longer, and the gutters follow after the roof. After the inspection I can tell you what to expect for yours.
 
 Before the crew leaves, the yard gets cleaned up. Old shingles and nails don't belong in your grass or your tires.
 

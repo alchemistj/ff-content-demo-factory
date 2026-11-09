@@ -60,6 +60,14 @@ We're giving the class 4 upgrade away free on your replacement. The downspouts a
 > "They gave me some sweet upgrades that helped me save money on my home insurance."
 > — Sean P.
 
+## Roof Repair
+
+A stain on the ceiling, a drip in a storm or a few shingles on the lawn means the roof needs attention. We inspect it for free, find where the water is getting in and tell you what it needs.
+
+If a storm is coming and the roof is leaking, call first. Getting a tarp on it comes before anything else.
+
+[See roof repair →](/roof-repair-wichita-ks/)
+
 ## What We Do
 
 **[Roof replacement](/roof-replacement-wichita-ks/).** A full new roof, from tear-off to cleanup.
@@ -82,7 +90,7 @@ We're giving the class 4 upgrade away free on your replacement. The downspouts a
 
 On install day, a crew comes to your house and the old roof comes off. We have put whole roofs on in a single day.
 
-Bigger roofs take longer, and so do short winter days: a large roof can take about two days on the roof, and gutters a few more days after that.
+Bigger roofs and short winter days take longer, and the gutters follow after the roof.
 
 What matters when the crew leaves is that your yard looks like it did when they arrived. Nails in the grass are how a roof job goes wrong.
 
@@ -106,13 +114,13 @@ Yes. A free inspection is how every job starts.
 Yes. If you haven't filed one, we'll file it, then work with your adjuster to get the roof approved.
 
 **How long does a roof take?**
-We have put whole roofs on in a single day. Bigger roofs take longer, about two days for a large one, and gutters can take a few more days after the roof. After the inspection we can tell you what to expect for yours.
+We have put whole roofs on in a single day. Bigger roofs and short winter days take longer, and the gutters follow after the roof. After the inspection we can tell you what to expect for yours.
 
 **What does the class 4 upgrade cost?**
 Nothing. It's free on your replacement, with downspouts and gutter guards included.
 
 **What if my roof is leaking right now?**
-Call me. If a storm is coming, getting a tarp on it comes before anything else. I've come out the same day to tarp a leak before a storm hit.
+Call me. If a storm is coming, getting a tarp on it comes before anything else.
 
 **What if the inspection finds no damage?**
 Then you'll know, and you didn't pay to find out. A roof with years left shouldn't be replaced.

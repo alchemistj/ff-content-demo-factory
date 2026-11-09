@@ -70,7 +70,7 @@ We always give a written estimate on re-roof projects. It lists the scope of wor
 
 Line it up item by item. Underlayment, flashing, ridge and hip, decking and cleanup are where two bids for "a new roof" usually differ.
 
-We offer workmanship warranties of 5, 10 and 15 years, and the products that carry lifetime manufacturer warranties come with them. On metal roofs, our workmanship warranties run from 5 up to 15 years.
+We offer workmanship warranties of 5, 10 and 15 years, and the products that carry lifetime manufacturer warranties come with them.
 
 > From the first contact with Jason Fry to the last bit of cleanup at the conclusion of the project, the team is thorough, professional, and exceptionally skilled. Our most recent project involved the full removal and replacement of a concrete barrel tile roof, and the work was completed on schedule, on budget, and with outstanding attention to detail.
 > — Dave N.

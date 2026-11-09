@@ -6,9 +6,6 @@ A stain on the ceiling doesn't tell you where the roof is leaking. We climb up a
 
 **Buttons:** Call (316) 295-2159 | Get a Free Quote
 
-> "We had a leak in the kitchen ceiling. We assumed it was from the roof so we called a slew of different contractors. We ended up going with River City Roofing as Anthony crawled into the attic and onto the roof and found that our CHIMNEY CHASE was leaking. His crew showed up when they said they would and were very communicative throughout the whole process!"
-> — Brant C.
-
 ## Find the Real Problem First
 
 Water is sneaky. It runs along the decking and down a rafter before it ever drips, so the stain on your ceiling is often several feet from the hole.
@@ -33,9 +30,6 @@ Afterward, we come back to make sure you're pleased with the roof.
 
 [See roof replacement →](/roof-replacement-wichita-ks/)
 
-> "River City did an amazing job putting a new roof on my home. After they finished, they walked around to make sure if anything fell off the roof that everything was picked up. Anthony showed up shortly after they left to make sure I was pleased with the roof. Anthony handled talking to my insurance agent and getting forms filed out and returned to them."
-> — Kamden B.
-
 ## Roof Repair
 
 A bad wind comes through overnight and in the morning there are shingles in the yard. Or the first spring storm shows you a drip you didn't know you had.
@@ -46,8 +40,8 @@ We fix everything from a minor leak to storm damage. A repair that finds the rea
 
 [See roof repair →](/roof-repair-wichita-ks/)
 
-> "My roof got really messed up by a bad wind and River City Roofing made it super quick and easy to get it fixed. Anthony was very friendly and easy to work with and the guys on the crew really worked their tails off to get my roof done quickly!"
-> — Jordan S.
+> "We found a leak in our roof. River City handled it all very professionally and in a timely manner. I would definitely recommend them for any of your roofing needs."
+> — Lindsey F.
 
 ## Roof Maintenance
 
@@ -71,8 +65,8 @@ So we also work on the rest of the outside:
 
 Those are all in the same hands as the roof, so when we see a gutter pulling away or a window-well problem while we're up there, we can tell you and fix it.
 
-> "Very pleasant experience. This company did a wonderful job replacing my siding and sending painters that did a great job as well. Anthony is very responsive to calls and text messages. He is great to work with."
-> — Theresa E.
+> "Very, very pleased with the new siding and paint job. Anothny and Alex do great work! Professional, courteous, and really know what theyre doing."
+> — Alex C.
 
 ## How a Job Goes
 
@@ -103,7 +97,7 @@ A typical house with asphalt shingles is usually a one-to-three-day job for a cr
 
 **Will my insurance pay for it?**
 It depends on your policy and what caused the damage. Wind and hail are the usual claims, and an adjuster wants clear photos and the damage tied to a storm.
-We can't promise what your insurer will do. On one roof, Anthony dealt with the homeowner's insurance agent and filled out and returned the forms.
+We can't promise what your insurer will do.
 
 **Do you work outside Wichita?**
 We work in Wichita.

@@ -12,9 +12,6 @@ The first job is to stop the water getting worse, before anyone talks about the 
 
 If a storm is coming, call and say so first. A tarp over the damaged area holds until the real repair can be done, and getting the water stopped comes before anyone prices anything.
 
-> "Ravi was out same day and offered to patch it for free with the incoming storm so the damage wouldn’t get worse! … I would’ve been happy to pay for the tarp job but he insisted."
-> — Jordan T.
-
 ## Where Roofs Leak
 
 The stain on your ceiling is almost never right under the hole. Water runs along the decking and the rafters before it shows, so the leak can be several feet from the stain.

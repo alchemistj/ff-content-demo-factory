@@ -192,8 +192,7 @@
           "heading": "Shingle and Standing Seam Metal Roofs",
           "body": [
             "For asphalt, we install premium shingles like Atlas StormMaster Shake and CertainTeed Presidential Shake, and we recommend Atlas. In hail country, ask about impact ratings before you choose.",
-            "Standing seam metal hides its fasteners under the panel seams, so there are no exposed screws to back out and leak. We typically use the horizon lock panel from Central States Manufacturing, and we've used their metal for more than ten years.",
-            "We offer workmanship warranties on metal roofs from 5 up to 15 years."
+            "Standing seam metal hides its fasteners under the panel seams, so there are no exposed screws to back out and leak. We typically use the horizon lock panel from Central States Manufacturing, and we've used their metal for more than ten years."
           ]
         },
         {
@@ -219,12 +218,25 @@
         },
         {
           "type": "prose",
-          "heading": "Roof Repair and Roof Replacement",
+          "heading": "Roof Replacement",
           "body": [
-            "Roof leaks, valley leaks, skylight and chimney flashing, cracked tile, shake repair and metal roof leaks all go on our [roof repair](/roof-repair-wichita-ks/) page.",
-            "Replacing a whole roof starts with choosing the material. Tile, DaVinci, Brava, premium shingle and standing seam metal each get their own explanation on our [roof replacement](/roof-replacement-wichita-ks/) page.",
-            "We also do new construction roofing and commercial roofing."
-          ]
+            "Replacing a whole roof starts with choosing the material. Tile, DaVinci, Brava, premium shingle and standing seam metal each get their own explanation on our roof replacement page."
+          ],
+          "link": {
+            "label": "See roof replacement →",
+            "route": "/roof-replacement-wichita-ks/"
+          }
+        },
+        {
+          "type": "prose",
+          "heading": "Roof Repair",
+          "body": [
+            "Roof leaks, valley leaks, skylight and chimney flashing, cracked tile, shake repair and metal roof leaks all go on our roof repair page. We also do new construction roofing and commercial roofing."
+          ],
+          "link": {
+            "label": "See roof repair →",
+            "route": "/roof-repair-wichita-ks/"
+          }
         },
         {
           "type": "steps",
@@ -398,7 +410,7 @@
           "body": [
             "We always give a written estimate on re-roof projects. It lists the scope of work, the warranty and the price, so you can set it next to another bid and see what each one actually covers.",
             "Line it up item by item. Underlayment, flashing, ridge and hip, decking and cleanup are where two bids for \"a new roof\" usually differ.",
-            "We offer workmanship warranties of 5, 10 and 15 years, and the products that carry lifetime manufacturer warranties come with them. On metal roofs, our workmanship warranties run from 5 up to 15 years."
+            "We offer workmanship warranties of 5, 10 and 15 years, and the products that carry lifetime manufacturer warranties come with them."
           ]
         },
         {

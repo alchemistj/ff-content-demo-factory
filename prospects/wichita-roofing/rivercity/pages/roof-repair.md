@@ -14,12 +14,9 @@ A small repair done now is a small bill. The same leak left through a wet spring
 
 If you can see daylight, a hole or a missing section, call as soon as we're open, and keep the water off your belongings in the meantime. We'd rather get to a leak early than late.
 
-> "We found a leak in our roof. River City handled it all very professionally and in a timely manner. I would definitely recommend them for any of your roofing needs."
-> — Lindsey F.
-
 ## What Usually Needs Repairing
 
-Most roof leaks are not a worn-out roof. They come from a short list of small places:
+Most roof leaks are not a worn-out roof. We trace most of them to a short list of small places:
 
 - **Flashing.** The metal around chimneys, walls and skylights that bends, rusts or pulls loose.
 - **Vent boots.** The rubber collars around plumbing pipes crack in the sun years before the shingles do.

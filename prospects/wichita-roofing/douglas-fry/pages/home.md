@@ -60,8 +60,6 @@ For asphalt, we install premium shingles like Atlas StormMaster Shake and Certai
 
 Standing seam metal hides its fasteners under the panel seams, so there are no exposed screws to back out and leak. We typically use the horizon lock panel from Central States Manufacturing, and we've used their metal for more than ten years.
 
-We offer workmanship warranties on metal roofs from 5 up to 15 years.
-
 ## Hail, Wind and Your Insurance
 
 After a hailstorm, two things get priced: the paperwork and the roof. They aren't always the same number.
@@ -77,13 +75,17 @@ We offer workmanship warranties of 5, 10 and 15 years, plus lifetime manufacture
 > Their price was middle of the road but they included everything that was needed and fully explained the bid without overselling.
 > — Rachel Y.
 
-## Roof Repair and Roof Replacement
+## Roof Replacement
 
-Roof leaks, valley leaks, skylight and chimney flashing, cracked tile, shake repair and metal roof leaks all go on our [roof repair](/roof-repair-wichita-ks/) page.
+Replacing a whole roof starts with choosing the material. Tile, DaVinci, Brava, premium shingle and standing seam metal each get their own explanation on our roof replacement page.
 
-Replacing a whole roof starts with choosing the material. Tile, DaVinci, Brava, premium shingle and standing seam metal each get their own explanation on our [roof replacement](/roof-replacement-wichita-ks/) page.
+[See roof replacement →](/roof-replacement-wichita-ks/)
 
-We also do new construction roofing and commercial roofing.
+## Roof Repair
+
+Roof leaks, valley leaks, skylight and chimney flashing, cracked tile, shake repair and metal roof leaks all go on our roof repair page. We also do new construction roofing and commercial roofing.
+
+[See roof repair →](/roof-repair-wichita-ks/)
 
 ## How a Job Goes
 

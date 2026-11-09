@@ -16,9 +16,6 @@ The opposite is just as true. One failed flashing or a bad vent boot is a [roof 
 
 That's why we look before we quote: in the attic and on the roof, not from the driveway. Our job is to tell you which one you have.
 
-> "We had a leak in the kitchen ceiling. We assumed it was from the roof so we called a slew of different contractors. We ended up going with River City Roofing as Anthony crawled into the attic and onto the roof and found that our CHIMNEY CHASE was leaking."
-> — Brant C.
-
 ## What Comes Off Before Anything Goes On
 
 Replacement means more than new shingles. The old roof comes down to the decking, and that's where the real condition of the house shows.

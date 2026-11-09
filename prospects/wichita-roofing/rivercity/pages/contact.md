@@ -27,16 +27,13 @@ You don't need to know what's wrong. You just need to tell us what you see.
 
 That's enough for us to get started. We'll look at the roof for ourselves, including the attic if there's a leak, before we write a detailed estimate.
 
-> "We ended up going with River City Roofing as Anthony crawled into the attic and onto the roof and found that our CHIMNEY CHASE was leaking."
-> — Brant C.
-
 ## Call or Use the Form?
 
 Call if you have a leak, storm damage or missing shingles. A phone call is the quickest way to get someone started.
 
 If it's after hours or you'd rather write, use the form to send us your name, phone number and what the roof is doing, so we can call you back.
 
-> "Anthony is very responsive to calls and text messages. He is great to work with."
+> "Very pleasant experience. This company did a wonderful job replacing my siding and sending painters that did a great job as well. Anthony is very responsive to calls and text messages. He is great to work with."
 > — Theresa E.
 
 ## Questions Before You Call
