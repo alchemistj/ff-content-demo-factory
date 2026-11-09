@@ -1,0 +1,27 @@
+{
+  "kind": "google-review-pull-receipt",
+  "status": "ok",
+  "slug": "evolve-exteriors",
+  "request": {
+    "mapsUrl": "place_id:ChIJS6lMpo_qZUQRpZzFf2lGyAs",
+    "maxReviews": 150,
+    "expectedName": "Evolve"
+  },
+  "trigger": "workflow_dispatch",
+  "apify": {
+    "actor": "compass~crawler-google-places",
+    "runId": "QVRbdcXf3vTUhCTX2",
+    "datasetId": "tCvwAWWgx5fmiT2y8",
+    "attempts": 1,
+    "usageUsd": 0.07620000000000002
+  },
+  "counts": {
+    "listingTotal": 140,
+    "withText": 94,
+    "ratingOnly": 46
+  },
+  "detail": null,
+  "startedAt": "2026-11-09T02:10:34.329Z",
+  "finishedAt": "2026-11-09T02:11:16.316Z",
+  "githubRunUrl": "https://github.com/alchemistj/ff-content-demo-factory/actions/runs/42549432074"
+}
