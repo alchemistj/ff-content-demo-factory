@@ -1,0 +1,27 @@
+{
+  "kind": "google-review-pull-receipt",
+  "status": "ok",
+  "slug": "greenway-exteriors",
+  "request": {
+    "mapsUrl": "place_id:ChIJAQC8MrzhuocR5qvlgPmfobc",
+    "maxReviews": 100,
+    "expectedName": "Greenway"
+  },
+  "trigger": "workflow_dispatch",
+  "apify": {
+    "actor": "compass~crawler-google-places",
+    "runId": "yeSYfoZ1KCOYEC9Cc",
+    "datasetId": "Aw3wX28DrUYb0rbHZ",
+    "attempts": 1,
+    "usageUsd": 0.0497
+  },
+  "counts": {
+    "listingTotal": 87,
+    "withText": 82,
+    "ratingOnly": 5
+  },
+  "detail": null,
+  "startedAt": "2026-11-09T02:14:03.434Z",
+  "finishedAt": "2026-11-09T02:15:05.165Z",
+  "githubRunUrl": "https://github.com/alchemistj/ff-content-demo-factory/actions/runs/42549765200"
+}

@@ -99,6 +99,18 @@
       "pulledAt": "2026-11-09T02:11:16.316Z"
     },
     {
+      "slug": "greenway-exteriors",
+      "name": "Greenway Exteriors",
+      "placeId": "ChIJAQC8MrzhuocR5qvlgPmfobc",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 87,
+        "withText": 82,
+        "ratingOnly": 5
+      },
+      "pulledAt": "2026-11-09T02:15:05.165Z"
+    },
+    {
       "slug": "hawkins-tree-service",
       "name": "Hawkins Tree Service LLC",
       "placeId": "ChIJQTgKCf3byIcRqu-rlDPBSko",
