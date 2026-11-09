@@ -81,6 +81,10 @@ for (const s of sections) if (s.body && !s.body.length) delete s.body;
 const words = JSON.parse(fs.readFileSync(path.join(dir, "words.json"), "utf8"));
 const idx = words.pages.findIndex((p) => p.route === route);
 const old = idx >= 0 ? words.pages[idx] : {};
+// Keep the old page's section photos: put them on the new page's 1st and 3rd text sections, as photo-and-text splits.
+const oldImages = (old.sections || []).filter((x) => x.image).map((x) => x.image);
+const proseIdx = sections.map((x, n) => (x.type === "prose" && x.body?.length ? n : -1)).filter((n) => n >= 0);
+oldImages.forEach((img, k) => { const n = proseIdx[k * 2]; if (n !== undefined) { sections[n].type = "split"; sections[n].image = img; } });
 const page = {
   ...old,
   route,
