@@ -97,7 +97,7 @@
       "hero": {
         "eyebrow": "Residential and commercial HVAC",
         "h1": "HVAC Company in Wichita, KS — Epic Heating & Cooling",
-        "sub": "We repair and replace air conditioners and furnaces for Wichita homes and businesses. Preston has been in HVAC since 1999 and Justin since 2000.",
+        "sub": "We repair and replace air conditioners and furnaces for Wichita homes and businesses. We also handle geothermal heat pumps, new construction and ductwork from our own fab shop.",
         "primaryCta": {
           "label": "Call (316) 633-8097",
           "action": "call"
@@ -122,7 +122,7 @@
           "type": "split",
           "heading": "AC and Furnace Repair, Done by Our Own Technicians",
           "body": [
-            "When your air or your heat quits, you want one call and a technician who knows the system. We send our own people.",
+            "When your air or your heat quits, one call brings a technician who finds the cause and explains the fix before the work starts.",
             "Start with the page for your problem."
           ],
           "list": [
@@ -138,8 +138,8 @@
         },
         {
           "type": "review",
-          "quote": "Preston and Aaron did a fantastic job , friendly, polite and very efficient.",
-          "name": "Theresa F."
+          "quote": "This company is great with affordable prices , upfront with great explanation for work needed.",
+          "name": "Rebecca T."
         },
         {
           "type": "services",
@@ -150,7 +150,7 @@
           "type": "split",
           "heading": "Systems Replaced in Days, Not Weeks",
           "body": [
-            "When a unit is finished, we install the new system. We have replaced a full furnace and AC the day after the quote visit.",
+            "When a unit is finished, we quote the new system and install it fast. We have installed a new furnace and AC the day after the quote visit.",
             "We install high-efficiency systems, and our own fab shop builds the ductwork to fit."
           ],
           "image": {
@@ -162,14 +162,14 @@
         },
         {
           "type": "review",
-          "quote": "They went above and beyond with customer service and cleaning up after themselves on the job.",
-          "name": "Zach T."
+          "quote": "We visited with Justin on Monday and the install was Tuesday. Preston and Aaron did a fantastic job , friendly, polite and very efficient.",
+          "name": "Theresa F."
         },
         {
           "type": "split",
           "heading": "Business Customers, Too",
           "body": [
-            "We install and service commercial HVAC, including rooftop units. We installed four for River City Brewing Co.",
+            "We install and service commercial HVAC, including rooftop units. We have installed four rooftop units on a single job.",
             "Your business gets the same technicians, the same explanation and the same guarantee as a home."
           ],
           "image": {
@@ -181,7 +181,7 @@
         },
         {
           "type": "review",
-          "quote": "Easily the most competitive bid, service was great and the job was done on time.",
+          "quote": "Installed four roof top units for me at River City Brewing Co. Easily the most competitive bid, service was great and the job was done on time.",
           "name": "Chris A."
         },
         {
@@ -189,13 +189,13 @@
           "heading": "Who You Call",
           "body": [
             "Preston has been in the HVAC industry since 1999, and Justin since 2000. Epic has served Wichita since 2012, and both families come from this field.",
-            "We guarantee 100% satisfaction with all our work."
+            "We guarantee 100% satisfaction with all our work, down to the clean-up when the job is done."
           ]
         },
         {
           "type": "review",
-          "quote": "The best deal in Wichita! Very professional,  on time and their work is quality.",
-          "name": "Mitchel D."
+          "quote": "They went above and beyond with customer service and cleaning up after themselves on the job.",
+          "name": "Zach T."
         },
         {
           "type": "faq",
@@ -245,15 +245,15 @@
       "sections": [
         {
           "type": "review",
-          "quote": "Called Preston at Epic today around 1:00 pm, within 2 hours Karlee called me and sent Will out 30 minutes later. Everything up and running by 5:30 pm!",
-          "name": "Jeff W."
+          "quote": "Our AC went out last night and we needed a quick repair. … He was very knowledgeable and quick to fix our issue.",
+          "name": "Kenneth E."
         },
         {
           "type": "split",
           "heading": "Your AC Fixed, Whatever the Brand",
           "body": [
             "We service all makes and models. A technician comes to your home or office, finds what failed and tells you what it takes to fix it.",
-            "We have brought an AC back to working within 2 hours of a call."
+            "We fix the problem you called about, without an up-sell. We have had a house cooling again in under an hour after our technician arrived."
           ],
           "list": [
             "Air that is not cold",
@@ -270,7 +270,7 @@
         },
         {
           "type": "review",
-          "quote": "I have used Epic in the past and they have always fixed the problem. … He didn’t try to up-sale either he just fixed the problem.",
+          "quote": "He had us up and cooled in under an hour. He didn’t try to up-sale either he just fixed the problem.",
           "name": "Tyler N."
         },
         {
@@ -278,7 +278,6 @@
           "heading": "Fixed Once, Explained Clearly",
           "body": [
             "You get the cause in plain words. We tell you what failed, what the repair is and what happens if you wait.",
-            "When a repair is the answer, we do the repair.",
             "Our technicians walk you through the repair, so the bill and the work make sense."
           ]
         },
@@ -311,22 +310,26 @@
           "heading": "Offices and Rooftop Units Too",
           "body": [
             "Your business AC gets the same attention as your home. We service commercial HVAC, including rooftop units.",
-            "A dead AC in an office is a workday lost, so we treat it that way."
+            "We have had an office AC running again the same afternoon it was called in."
           ]
         },
         {
           "type": "review",
-          "quote": "He told me how I could prevent future problems and was very easy to work with.",
-          "name": "Kyle B."
+          "quote": "Called Preston at Epic today around 1:00 pm,  within 2 hours Karlee called me and sent Will out 30 minutes later.  Everything up and running by 5:30 pm!",
+          "name": "Jeff W."
         },
         {
           "type": "prose",
           "heading": "Keep It From Happening Again",
           "body": [
             "Seasonal maintenance keeps your AC running efficiently. We also install Nexia smart thermostats you can control from your phone.",
-            "After a repair, ask us what to watch for next summer.",
-            "Seasonal service catches a weak part before the hottest week."
+            "After a repair, we tell you how to keep the same problem from coming back."
           ]
+        },
+        {
+          "type": "review",
+          "quote": "Preston came out to my house and explained to me in detail what was going on with my AC. He told me how I could prevent future problems and was very easy to work with.",
+          "name": "Kyle B."
         },
         {
           "type": "steps",
@@ -388,7 +391,7 @@
         {
           "type": "callBand",
           "heading": "Call About Your AC",
-          "text": "Call (316) 633-8097 and tell us what your air conditioner is doing. We send a technician who knows your unit's make."
+          "text": "Call (316) 633-8097 and tell us what your air conditioner is doing. We work on every make and model."
         }
       ]
     },
@@ -426,8 +429,8 @@
           "type": "split",
           "heading": "Heat Back On, Start to Finish",
           "body": [
-            "All furnace work comes from the same crew, from seasonal maintenance to full system installation. You call us once.",
-            "We have had a furnace running again in under 15 minutes."
+            "We handle every kind of furnace work, from seasonal maintenance to full system installation, so you call one company.",
+            "We have had a furnace diagnosed and running again in under 15 minutes."
           ],
           "list": [
             "A furnace that will not start",
@@ -452,8 +455,7 @@
           "heading": "A Straight Answer on Your Furnace",
           "body": [
             "We check the whole furnace, tell you what we find and show you what we see. You decide what to fix.",
-            "If the furnace is near the end of its life, we tell you so you can plan for the next one.",
-            "You will know the age, the problem and the choices before any work begins."
+            "If the furnace is near the end of its life, we tell you so you can plan for the next one, with no pressure to buy today."
           ]
         },
         {
@@ -466,7 +468,7 @@
           "heading": "When a New Furnace Is the Answer",
           "body": [
             "We install the new furnace. We have replaced one within two days of the first call.",
-            "For a complete system, we install the furnace and the AC together, with high-efficiency models available."
+            "Our installers protect your home and clean up as they work. For a complete system, we install the furnace and the AC together, with high-efficiency models available."
           ],
           "image": {
             "slot": "furnace-replace",
@@ -477,7 +479,7 @@
         },
         {
           "type": "review",
-          "quote": "Replaced our furnace within two days if the initial call.",
+          "quote": "Replaced our furnace within two days if the initial call. Very knowledgeable and friendly staff. Very clean when working and took the time to protect my home from damage.",
           "name": "Pearl A."
         },
         {
@@ -495,17 +497,12 @@
           "imageSide": "left"
         },
         {
-          "type": "review",
-          "quote": "Our heater went out overnight and they were here within 15 minutes of me calling this morning.",
-          "name": "Kelsey A."
-        },
-        {
           "type": "steps",
           "heading": "What Happens When You Call",
           "items": [
             {
               "title": "You call",
-              "text": "Tell us what your furnace is doing."
+              "text": "Tell us what your furnace is doing: no heat, a smell or a noise."
             },
             {
               "title": "A technician comes out",
@@ -517,14 +514,14 @@
             },
             {
               "title": "We fix or replace",
-              "text": "We make the repair, or quote the replacement."
+              "text": "We make the repair, or quote the replacement so you can decide."
             }
           ]
         },
         {
           "type": "review",
-          "quote": "He came right out for a quote and didn't forget about us, he truly did everything in his power to finally get us heat and got the new furnace installed within a couple days.",
-          "name": "Kenneth B."
+          "quote": "Our heater went out overnight and they were here within 15 minutes of me calling this morning.",
+          "name": "Kelsey A."
         },
         {
           "type": "faq",
@@ -637,9 +634,9 @@
   "strategy": {
     "whyHeading": "Why we built this site",
     "why": [
-      "Your customers already make your case. Jeff W. wrote that “within 2 hours Karlee called me and sent Will out 30 minutes later.” Tyler N. wrote that “he didn’t try to up-sale.”",
-      "Your website can’t say any of it. The top of your homepage says “Comfort Solutions Simplified,” with no HVAC and no Wichita, so Google can’t tell what you do or where.",
-      "So we built a demo that says HVAC company in Wichita, KS at the very top, gives AC repair and furnace repair their own pages, and puts your customers’ words beside the work."
+      "The top of your homepage says “Comfort Solutions Simplified.” It never says HVAC or Wichita, so Google can’t match you to someone searching for an HVAC company in Wichita.",
+      "Your “Financing” and “Get Financed” buttons open a page we couldn’t load. AC and furnace repair share one page with everything else.",
+      "Your customers already make your case. Jeff W.: “within 2 hours Karlee called me and sent Will out 30 minutes later.” Tyler N.: “He didn’t try to up-sale either he just fixed the problem.” So our demo says HVAC company in Wichita, KS at the very top, gives each repair its own page, and puts those words beside the work."
     ],
     "cardsHeading": "Be the HVAC Company People Find on Google",
     "cardsIntro": "Each card is one page of the demo: what costs you calls today, and the fix.",
@@ -655,7 +652,7 @@
         ],
         "fixes": [
           "A headline that says HVAC company in Wichita, KS, right at the top.",
-          "Your number one tap away, with every service listed.",
+          "Every button calls you or opens your contact page.",
           "Geothermal and water-source heat pumps listed as their own service."
         ],
         "alsoAdd": "A check of what your competitors offer, so services you didn’t think to mention still get their own pages."
@@ -666,11 +663,11 @@
         "why": "When the AC quits in a Wichita summer, people search and call the first company they find.",
         "problems": [
           "AC repair has no page of its own, so a search for “AC repair Wichita KS” has nothing of yours to land on.",
-          "Your customers’ same-day stories and no-up-sell stories appear on Google only."
+          "Jeff W.’s same-afternoon repair and Tyler N.’s “he just fixed the problem” live only on Google."
         ],
         "fixes": [
           "A page for AC repair in Wichita, KS, with what a visit involves.",
-          "Reviews from these jobs beside each point."
+          "Those reviews beside the point each one proves."
         ],
         "alsoAdd": "Pages planned from what Google actually shows for each search, so every page targets something people really look for."
       },
@@ -684,7 +681,7 @@
         ],
         "fixes": [
           "A page for furnace repair in Wichita, KS, covering repair and replacement.",
-          "Reviews from homeowners who got their heat back."
+          "Seasonal maintenance described as maintenance, beside your furnace work."
         ],
         "alsoAdd": "Every page set up behind the scenes so Google and AI tools like ChatGPT know exactly what you do, where you work, and what your customers say."
       },
@@ -693,12 +690,10 @@
         "title": "Contact",
         "why": "Where a customer with a dead AC decides to call you.",
         "problems": [
-          "Your site says “24/7” above Monday to Friday, 8 to 5 hours, so a Saturday no-heat visitor gets two answers.",
-          "No street address appears anywhere on the site."
+          "Your site says “24/7” above Monday to Friday, 8 to 5 hours, so a Saturday no-heat visitor gets two answers."
         ],
         "fixes": [
-          "Your number one tap away, with your hours and a short list of what to have ready.",
-          "One set of hours that matches how you work."
+          "One set of hours, your number one tap away, and a short list of what to have ready."
         ],
         "alsoAdd": "Call and form tracking that shows which pages and towns your leads come from."
       }
@@ -732,7 +727,7 @@
     ],
     "closing": {
       "heading": "Want a website like this for your business?",
-      "text": "Your customers already call you quick, clean and straight. Book a strategy call with Fluid Frame and we’ll walk you through this demo."
+      "text": "Your customers already describe the company you are. Book a strategy call with Fluid Frame and we’ll walk you through this demo and what a full build adds."
     }
   },
   "onboardingQuestions": [
