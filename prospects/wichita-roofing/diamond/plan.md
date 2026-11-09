@@ -28,7 +28,7 @@ Roof replacement; roof repair; gutters and downspouts (installation, repair, dra
 - The 781 phone number or the 640-8413 number.
 
 ## The idea (homepage)
-One company handles the roof, the gutters and the adjuster visit, so you deal with one person, Stacia, from the first look at your roof until the crew has cleaned the yard.
+The roof, the gutters and the insurance side are one job here, so after a storm you call one company instead of three. (Stacia appears as what she does and has done, never as a promise or as owner.)
 
 ## Homepage sections
 1. **Top.** One company for roof, gutters and the adjuster. Proof: Eric J. ("stand side by side with the insurance adjuster… hard person to impress").

@@ -47,7 +47,7 @@ Repair makes sense when the damage is limited and the rest of the roof is sound.
 
 Replacement makes sense when shingles are cracking across the whole roof, granules are gone from every slope, or the same leak keeps coming back.
 
-We'd rather give you the honest answer than the bigger job. If your roof needs a few repairs, that's what we'll say.
+We'd rather give you the honest answer than the bigger job. If you've been told you need a whole roof and you're not sure, call and have Cesar look before you sign.
 
 > The team is knowledgeable, professional, and takes the time to explain the entire process clearly. They’re honest, reliable, and truly care about delivering quality work.
 > — Rosario V.
@@ -56,7 +56,7 @@ We'd rather give you the honest answer than the bigger job. If your roof needs a
 
 Cesar comes out, looks at the roof and finds the source. He explains what he found and what it will take to fix it.
 
-Then he schedules the crew. For a small repair, that can mean a short visit. If the roof turns out to be past repairing, he tells you that, and why.
+Then he schedules the crew, and you know the price before they start. If the roof turns out to be past repairing, he tells you that, and why.
 
 ## Repairs After a Storm
 
@@ -69,10 +69,10 @@ If your insurance company is involved, we inspect the roof, go to the adjuster's
 ## Questions About Repairs
 
 **How much does a roof repair cost?**
-It depends on what has failed and how much roof is involved. Cesar looks at it and gives you a price before the work starts.
+It depends on what has failed and how much roof is involved. A cracked vent collar or a few blown-off shingles is a small job; re-flashing a chimney or rebuilding a valley is a bigger one. Cesar looks at it and gives you a price before the work starts.
 
 **How soon can you get here?**
-Call (316) 223-3575 and tell us what you're seeing. We'll set a time to look.
+Call (316) 223-3575, Monday to Saturday, 8 AM to 6 PM, and we'll set a time for Cesar to look. If water is coming in now, say so on the call so we know it can't wait.
 
 **Can you tell me over the phone if I need a new roof?**
 Not honestly. A stain, a missing shingle and a hail dent can look the same from a description and be very different on the roof.

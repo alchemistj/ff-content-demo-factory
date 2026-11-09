@@ -2,22 +2,20 @@
 
 # Roofing Company in Wichita, KS — Monarch Roofing & Construction
 
-We replace and repair roofs in Wichita, and Cesar Verdin deals with you from the first look at your roof to the cleanup after the crew leaves. When a storm is behind the damage, we work with your insurance company too. Call us or request an estimate.
+We replace and repair roofs in Wichita. Cesar Verdin looks at your roof and tells you straight what it needs, and when a storm caused the damage, we work with your insurance company too. Call us or request an estimate.
 
 **Buttons:** Call (316) 223-3575 | Request an Estimate
 
 > Cesar was very attentive to our needs and the crew was hard working and professional every step of the way. This company followed through with everything it promised. Our new roof looks great and all.leaks are gone.
 > — Jesse H.
 
-## One Person From the First Look to the Last Day
+## Someone Who Tells You What the Roof Needs
 
 A roof is a big job to hand to people you've never met, and most homeowners only do it once or twice.
 
-It goes wrong when you deal with a salesperson, then an office, then a crew that never heard what the salesperson promised. At Monarch, Cesar is the person who looks at your roof, explains the work and answers when you call.
+It goes wrong when a salesperson promises one thing and the crew that shows up never heard it. At Monarch, Cesar is the one who looks at your roof, explains the work and checks in with you while the job is going.
 
 He also tells you what the roof actually needs. Sometimes that's a new roof. Sometimes it's a few repairs, and we'd rather say so than sell you a roof you don't need.
-
-We stay in touch the whole way, not just on the day the crew shows up.
 
 > Cesar was super nice & friendly from the start. He explained everything very well. It took some time for us to get thru it but Cesar kept checking weekly. Monarch crew did a super job @ getting it done in one day for a bigger house!
 > — Kevin M.
@@ -49,7 +47,7 @@ After a Kansas storm, the roof often looks fine from the driveway. Hail bruises 
 
 If your insurance company is involved, the adjuster's visit is the moment the damage gets written down. We look at your roof first, tell you plainly whether there's damage, and go to the adjuster's inspection.
 
-We talk with your insurance company for you and send the paperwork in. What an insurer pays is between you and them, and nobody honest can promise it. Our part is making sure they see everything that's on your roof.
+We talk with your insurance company for you and send the paperwork in. What an insurer pays is their decision, and nobody honest can promise it. Our part is showing the adjuster the damage we found on your roof.
 
 > Once I agreed to Cesar inspecting my roof after a hail storm, which he verified, he took care of everything else, including being on-site during the insurance adjuster's inspection. Cesar and Monarch Roofing made the entire process unbelievably easy and really earned my trust.
 > — Jim W.
@@ -67,7 +65,7 @@ Tell us the date when you call. We plan the job around it.
 
 Gutters and the roof edge are one system. Hail that dents a gutter has usually hit the shingles above it, so we look at both at once.
 
-That's why we put new gutters on in the same job as a new roof when they need it. You get a single crew schedule and a single point of contact.
+That's why we put new gutters on in the same job as a new roof when they need it. You get one schedule, and the roof edge and gutters are finished together.
 
 We also do siding, as part of a roof job or as a project of its own.
 
@@ -76,7 +74,7 @@ We also do siding, as part of a roof job or as a project of its own.
 1. **Cesar looks at your roof.** He checks the shingles, the flashing and the edges, and any storm damage if there is some.
 2. **We go over the work and the materials.** You hear the process and the options, and you get the price.
 3. **Our crew does the job.** They start early. Many houses take about a day, and a bigger or more complicated roof can take longer.
-4. **We clean up and walk the roof with you.** You see the finished work before we're done.
+4. **We clean up and walk the roof with you.** The crew picks up the old shingles and nails, and you see the finished work before we leave.
 
 ## What Happens After the Last Shingle
 
@@ -84,9 +82,9 @@ If something isn't right after the crew leaves, call us at (316) 223-3575 and as
 
 ## Who You'll Deal With
 
-We're a Wichita roofing company, locally owned. Cesar Verdin is the person you'll talk to, and he works with Javier and our crews.
+We're a Wichita roofing company, locally owned. Cesar Verdin looks at the roofs, prices the jobs and works with Javier and our crews.
 
-We work in Wichita and we work on roofs, gutters and siding. If you're not sure which one you need, that's a fine reason to call.
+We work on roofs, gutters and siding. If you're not sure which one you need, that's a fine reason to call.
 
 ## Questions Before You Call
 

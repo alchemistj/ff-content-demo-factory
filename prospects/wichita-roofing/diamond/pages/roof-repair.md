@@ -46,7 +46,7 @@ We'll tell you which one you have. If it's a replacement, we'll say so plainly a
 
 A roof that's leaking right now can't wait for the next available week. Water that gets in keeps soaking insulation and drywall until someone stops it.
 
-Call us and say it's actively leaking. If a storm caused it, an insurance claim may be part of the repair. Stacia works with your insurance company on the claim.
+Call us and say it's actively leaking. If a storm caused it, an insurance claim may be part of the repair, and we work with your insurance company on it while the roof gets fixed.
 
 > Stacia is quick to respond and check a roof when time is of the essence and gives an honest evaluation. She works diligently with the client and insurance company to ensure the process moves along smoothly.
 > — Shannon M.
@@ -76,7 +76,7 @@ Until someone can get to the roof, a few steps limit the damage:
 
 ## When to Call
 
-Call as soon as you notice a leak or missing shingles. Small problems cost less the sooner they're looked at.
+Call as soon as you notice a leak or missing shingles. A lifted shingle or a cracked pipe boot is a small fix this week and wet decking a few storms from now.
 
 ## Questions About Roof Repair
 
@@ -84,7 +84,7 @@ Call as soon as you notice a leak or missing shingles. Small problems cost less 
 Not necessarily. Damage in one place on an otherwise sound roof is a repair. We'll look and tell you which one you have.
 
 **Will insurance pay for a repair?**
-That depends on your policy and the cause of the damage. If a storm caused it, Stacia can work with your adjuster. We can't promise what an insurance company will pay.
+That depends on your policy and the cause of the damage. If a storm caused it, we can work with your adjuster. We can't promise what an insurance company will pay.
 
 **Do you repair gutters too?**
 Yes, gutters and drainage problems as well as roofs.

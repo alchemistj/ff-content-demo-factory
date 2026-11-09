@@ -34,7 +34,9 @@ You don't need much. It helps to know:
 
 ## After You Call
 
-If there's a claim, Stacia works with your adjuster and goes through the paperwork with you.
+We set up a time to come out. One of us goes over the roof and gutters, walks you through what we found and gives you an estimate.
+
+If there's a claim, we work with your adjuster and go through the paperwork with you. Whether to file is your call.
 
 > Was very impressed how quickly they got to us and did the job!
 > — Sharde' L.

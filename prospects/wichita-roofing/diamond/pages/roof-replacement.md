@@ -2,7 +2,7 @@
 
 # Roof Replacement in Wichita, KS — Diamond Roof & Gutter
 
-A new roof is a big job, and you're trusting a crew with the top of your house. We handle it from the first look at your roof through the cleanup at the end of each day. Call to set up a time for an estimate.
+If your roof is worn out or a storm got to it, we'll look at it, tell you plainly whether it needs replacing, and work with your adjuster if there's a claim. Call to set up a time for an estimate.
 
 **Buttons:** Call (316) 640-6056 | Request an Estimate
 
@@ -20,7 +20,7 @@ Not every leak means a new roof, though. If the damage is in one place and the r
 
 Storm damage turns a roofing job into an insurance job. Someone has to document what happened, meet the adjuster and keep the paperwork moving.
 
-Stacia does that with you. She looks at the roof first, is there when your adjuster comes, and goes through the paperwork with you.
+We do that part with you. We look at the roof first, come out when your adjuster does, and go through the paperwork afterward. Stacia has walked a lot of homeowners through this, so you aren't learning the process alone.
 
 We can't say what your insurance company will pay. We can make sure the whole roof has been looked at, and that you aren't explaining roofing to an adjuster by yourself.
 
@@ -35,7 +35,7 @@ A few things narrow it down. Darker colors show off a roofline but run hotter in
 
 Heavier architectural shingles cost more than basic ones and tend to wear better. Your neighbors' roofs and your siding matter too.
 
-Stacia walks you through the options and helps you land on one that fits your house and your budget, so you aren't choosing from a sample board alone.
+We walk you through the options and help you land on one that fits your house and your budget, so you aren't choosing from a sample board alone.
 
 > Quick to inspect and schedule. Assistance with brand and color choice made it possible for us to choose the best product and look for our home.
 > — Debi S.
@@ -62,7 +62,7 @@ If your gutters are worn, bent or pulling away, we replace them while we're ther
 
 Roofing depends on the sky. Rain and high wind stop the work, and a roof that's torn off has to be dried in before the weather turns.
 
-Size, pitch and what the crew finds under the old shingles also change how long a roof takes. A typical shingle roof is a matter of a day or a few, not weeks.
+Size, pitch and what the crew finds under the old shingles also change how long a roof takes. That's why we don't promise a day count before we've been on your roof.
 
 Our job is to keep you informed. When the schedule moves, you hear it from us. And when you're up against a deadline, tell us on the first call.
 
@@ -71,11 +71,11 @@ Our job is to keep you informed. When the schedule moves, you hear it from us. A
 
 ## How a Replacement Goes
 
-1. **We look at your roof.** Stacia or Mike goes over the roof and gives you an estimate.
-2. **Insurance, if there's a claim.** Stacia meets your adjuster and helps with the paperwork.
+1. **We look at your roof.** One of us goes over the roof, shows you what we found and gives you an estimate.
+2. **Insurance, if there's a claim.** We meet your adjuster and help with the paperwork.
 3. **You choose the materials.** Brand, color and gutters if they need replacing.
 4. **The crew installs.** We tell you when we're coming and keep you updated on the schedule.
-5. **We clean up.** Trash and nails are picked up at the end of each work day, not left for the next.
+5. **We clean up as we go.** The yard and driveway are cleared every work day, not left for the last one.
 
 ## Where to Start
 
@@ -87,7 +87,7 @@ Call (316) 640-6056. Tell us your address and what you're seeing, and we'll set 
 It depends on the size and pitch of the roof, the weather and what's found under the old shingles. We give you the schedule as the job is planned and keep you posted as it moves.
 
 **Will my insurance cover a new roof?**
-That depends on your policy and your insurance company, and we can't promise it. If there's a claim, Stacia works with your adjuster and goes through the paperwork with you.
+That depends on your policy and your insurance company, and we can't promise it. If there's a claim, we work with your adjuster and go through the paperwork with you.
 
 **Can you replace my gutters at the same time?**
 Yes. Gutters are done in the same job as the roof when they need it.

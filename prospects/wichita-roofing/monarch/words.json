@@ -26,7 +26,7 @@
   },
   "trustBar": [
     "Roofs Replaced and Repaired",
-    "Cesar From First Look to Cleanup",
+    "Cesar Looks at Your Roof Himself",
     "We Go to Your Adjuster's Inspection",
     "Locally Owned in Wichita"
   ],
@@ -34,7 +34,7 @@
     {
       "name": "Roof Replacement",
       "route": "/roof-replacement-wichita-ks/",
-      "blurb": "Whole roofs on Wichita houses, with Cesar from the first look to the cleanup. A typical house is often done in a day."
+      "blurb": "Whole roofs on Wichita houses. Cesar looks at the roof and explains the work and the shingles. A typical house is often done in a day."
     },
     {
       "name": "Roof Repair",
@@ -67,7 +67,7 @@
       "hero": {
         "eyebrow": "Locally owned in Wichita",
         "h1": "Roofing Company in Wichita, KS — Monarch Roofing & Construction",
-        "sub": "We replace and repair roofs in Wichita, and Cesar Verdin deals with you from the first look at your roof to the cleanup after the crew leaves. When a storm is behind the damage, we work with your insurance company too. Call us or request an estimate.",
+        "sub": "We replace and repair roofs in Wichita. Cesar Verdin looks at your roof and tells you straight what it needs, and when a storm caused the damage, we work with your insurance company too. Call us or request an estimate.",
         "primaryCta": {
           "label": "Call (316) 223-3575",
           "action": "call"
@@ -90,12 +90,11 @@
         },
         {
           "type": "split",
-          "heading": "One Person From the First Look to the Last Day",
+          "heading": "Someone Who Tells You What the Roof Needs",
           "body": [
             "A roof is a big job to hand to people you've never met, and most homeowners only do it once or twice.",
-            "It goes wrong when you deal with a salesperson, then an office, then a crew that never heard what the salesperson promised. At Monarch, Cesar is the person who looks at your roof, explains the work and answers when you call.",
-            "He also tells you what the roof actually needs. Sometimes that's a new roof. Sometimes it's a few repairs, and we'd rather say so than sell you a roof you don't need.",
-            "We stay in touch the whole way, not just on the day the crew shows up."
+            "It goes wrong when a salesperson promises one thing and the crew that shows up never heard it. At Monarch, Cesar is the one who looks at your roof, explains the work and checks in with you while the job is going.",
+            "He also tells you what the roof actually needs. Sometimes that's a new roof. Sometimes it's a few repairs, and we'd rather say so than sell you a roof you don't need."
           ],
           "image": {
             "slot": "home-team",
@@ -149,7 +148,7 @@
           "body": [
             "After a Kansas storm, the roof often looks fine from the driveway. Hail bruises shingles and loosens their granules, and the damage shows up months later as a leak.",
             "If your insurance company is involved, the adjuster's visit is the moment the damage gets written down. We look at your roof first, tell you plainly whether there's damage, and go to the adjuster's inspection.",
-            "We talk with your insurance company for you and send the paperwork in. What an insurer pays is between you and them, and nobody honest can promise it. Our part is making sure they see everything that's on your roof."
+            "We talk with your insurance company for you and send the paperwork in. What an insurer pays is their decision, and nobody honest can promise it. Our part is showing the adjuster the damage we found on your roof."
           ]
         },
         {
@@ -175,7 +174,7 @@
           "heading": "Gutters and Siding",
           "body": [
             "Gutters and the roof edge are one system. Hail that dents a gutter has usually hit the shingles above it, so we look at both at once.",
-            "That's why we put new gutters on in the same job as a new roof when they need it. You get a single crew schedule and a single point of contact.",
+            "That's why we put new gutters on in the same job as a new roof when they need it. You get one schedule, and the roof edge and gutters are finished together.",
             "We also do siding, as part of a roof job or as a project of its own."
           ]
         },
@@ -197,7 +196,7 @@
             },
             {
               "title": "We clean up and walk the roof with you.",
-              "text": "You see the finished work before we're done."
+              "text": "The crew picks up the old shingles and nails, and you see the finished work before we leave."
             }
           ]
         },
@@ -212,8 +211,8 @@
           "type": "prose",
           "heading": "Who You'll Deal With",
           "body": [
-            "We're a Wichita roofing company, locally owned. Cesar Verdin is the person you'll talk to, and he works with Javier and our crews.",
-            "We work in Wichita and we work on roofs, gutters and siding. If you're not sure which one you need, that's a fine reason to call."
+            "We're a Wichita roofing company, locally owned. Cesar Verdin looks at the roofs, prices the jobs and works with Javier and our crews.",
+            "We work on roofs, gutters and siding. If you're not sure which one you need, that's a fine reason to call."
           ]
         },
         {
@@ -258,7 +257,7 @@
       "hero": {
         "eyebrow": "Roof replacement in Wichita",
         "h1": "Roof Replacement in Wichita, KS — Monarch Roofing & Construction",
-        "sub": "We replace roofs on Wichita houses, and Cesar Verdin handles your job from the first look to the cleanup. That includes the insurance company when hail is behind it. Call us to talk about your roof, or request an estimate.",
+        "sub": "A new roof is a job you do once or twice in a lifetime. Cesar Verdin looks at yours, explains the work and the shingles, and when hail is behind it, we work with your insurance company too. Call us to talk about your roof, or request an estimate.",
         "primaryCta": {
           "label": "Call (316) 223-3575",
           "action": "call"
@@ -292,9 +291,9 @@
           "type": "prose",
           "heading": "After a Storm, Replacement and Your Claim",
           "body": [
-            "Hail can total a roof you can't see a problem with from the ground. If an insurance claim is part of your replacement, the adjuster's inspection decides a lot.",
+            "Hail can ruin a roof that looks fine from the ground. It bruises the shingles and knocks the granules loose, and the leaks come later. If an insurance claim is part of your replacement, the adjuster's inspection is when the damage gets written down.",
             "Cesar inspects the roof first and tells you whether there's damage. He goes to the adjuster's inspection, talks with your insurance company, and we send in the paperwork.",
-            "We can't tell you what an insurer will pay, and nobody honest can. We can make sure the damage on your roof is seen and written down."
+            "We can't tell you what an insurer will pay, and nobody honest can. Our part is showing the adjuster the damage we found."
           ]
         },
         {
@@ -307,7 +306,7 @@
           "heading": "Choosing Your Shingles",
           "body": [
             "The shingle you pick changes how long the roof lasts. A basic three-tab shingle is the cheapest and the thinnest. Architectural shingles are thicker, hold up longer and look better.",
-            "In hail country there's a third option, Class 4 impact-resistant shingles, built to take hail without cracking. We've installed them. Some insurance carriers discount premiums for them, so ask yours.",
+            "In hail country there's a third option: Class 4 impact-resistant shingles, made to pass the toughest impact test shingles are rated on. They cost more than standard shingles, and we've installed them.",
             "Cesar walks you through the choices and the cost of each, and you pick the color you can live with."
           ],
           "image": {
@@ -374,7 +373,7 @@
           "type": "prose",
           "heading": "Cleanup",
           "body": [
-            "Tearing off a roof sends old shingles and nails across the yard, so we clean up when the crew finishes.",
+            "Tearing off a roof sends old shingles and nails into the beds, the grass and the driveway. We clean up the tear-off debris before the crew leaves.",
             "Then we walk the finished roof with you, so you see what was done before we leave."
           ]
         },
@@ -497,7 +496,7 @@
           "body": [
             "Repair makes sense when the damage is limited and the rest of the roof is sound. A few missing shingles, one bad flashing and one failed vent are all repairs.",
             "Replacement makes sense when shingles are cracking across the whole roof, granules are gone from every slope, or the same leak keeps coming back.",
-            "We'd rather give you the honest answer than the bigger job. If your roof needs a few repairs, that's what we'll say."
+            "We'd rather give you the honest answer than the bigger job. If you've been told you need a whole roof and you're not sure, call and have Cesar look before you sign."
           ]
         },
         {
@@ -510,7 +509,7 @@
           "heading": "What a Repair Visit Looks Like",
           "body": [
             "Cesar comes out, looks at the roof and finds the source. He explains what he found and what it will take to fix it.",
-            "Then he schedules the crew. For a small repair, that can mean a short visit. If the roof turns out to be past repairing, he tells you that, and why."
+            "Then he schedules the crew, and you know the price before they start. If the roof turns out to be past repairing, he tells you that, and why."
           ]
         },
         {
@@ -528,11 +527,11 @@
           "items": [
             {
               "q": "How much does a roof repair cost?",
-              "a": "It depends on what has failed and how much roof is involved. Cesar looks at it and gives you a price before the work starts."
+              "a": "It depends on what has failed and how much roof is involved. A cracked vent collar or a few blown-off shingles is a small job; re-flashing a chimney or rebuilding a valley is a bigger one. Cesar looks at it and gives you a price before the work starts."
             },
             {
               "q": "How soon can you get here?",
-              "a": "Call (316) 223-3575 and tell us what you're seeing. We'll set a time to look."
+              "a": "Call (316) 223-3575, Monday to Saturday, 8 AM to 6 PM, and we'll set a time for Cesar to look. If water is coming in now, say so on the call so we know it can't wait."
             },
             {
               "q": "Can you tell me over the phone if I need a new roof?",
@@ -586,11 +585,6 @@
           ]
         },
         {
-          "type": "review",
-          "quote": "Cesar came out and gave me an estimate on my roof. I appreciate the fact that he was honest and straight forward with the pricing and the process of the whole project.",
-          "name": "Alberto G."
-        },
-        {
           "type": "prose",
           "heading": "What to Have Ready",
           "body": [
@@ -607,7 +601,19 @@
           "type": "prose",
           "heading": "After You Call",
           "body": [
-            "Cesar looks at your roof and tells you what it needs. If an insurance company is involved, we go to the adjuster's inspection with you."
+            "Cesar comes out, looks at your roof and tells you what it needs. You get the price and how the job will go before anything is scheduled."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Cesar came out and gave me an estimate on my roof. I appreciate the fact that he was honest and straight forward with the pricing and the process of the whole project.",
+          "name": "Alberto G."
+        },
+        {
+          "type": "prose",
+          "heading": "While the Work Is Going",
+          "body": [
+            "If an insurance company is involved, we go to the adjuster's inspection and talk with the insurer for you. Cesar checks in as the job moves along, so you're not left wondering when the crew is coming."
           ]
         },
         {
@@ -621,7 +627,7 @@
           "items": [
             {
               "q": "Where do you work?",
-              "a": "We work on roofs in Wichita."
+              "a": "We work on roofs, gutters and siding in Wichita."
             },
             {
               "q": "Do I have to know what's wrong?",
@@ -635,7 +641,7 @@
   "footer": {
     "about": "Monarch Roofing & Construction is a locally owned Wichita roofing company. We replace and repair roofs, work with your insurance company after hail or wind, and do gutters and siding. Cesar Verdin is the person you deal with.",
     "why": [
-      "Cesar from the first look to the cleanup",
+      "Cesar looks at your roof and explains the work",
       "We go to your adjuster's inspection",
       "Roof and gutters in one job",
       "Locally owned in Wichita"
@@ -663,7 +669,7 @@
         "fixes": [
           "A headline that says roofing company in Wichita, KS, right at the top.",
           "Real reviews from your customers, each beside the point it proves.",
-          "Cesar introduced by name, with how he works with you from the first look to the cleanup."
+          "Cesar introduced by name, with what he does on a job: looks at the roof, explains the work, keeps in touch."
         ],
         "alsoAdd": "Hourly speed monitoring that keeps your site fast for visitors on phones, and speed is something Google uses to rank you."
       },

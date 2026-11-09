@@ -2,7 +2,7 @@
 
 # Roof Replacement in Wichita, KS — Monarch Roofing & Construction
 
-We replace roofs on Wichita houses, and Cesar Verdin handles your job from the first look to the cleanup. That includes the insurance company when hail is behind it. Call us to talk about your roof, or request an estimate.
+A new roof is a job you do once or twice in a lifetime. Cesar Verdin looks at yours, explains the work and the shingles, and when hail is behind it, we work with your insurance company too. Call us to talk about your roof, or request an estimate.
 
 **Buttons:** Call (316) 223-3575 | Request an Estimate
 
@@ -16,11 +16,11 @@ One of those isn't always the end of the roof. If it's one slope or a few shingl
 
 ## After a Storm, Replacement and Your Claim
 
-Hail can total a roof you can't see a problem with from the ground. If an insurance claim is part of your replacement, the adjuster's inspection decides a lot.
+Hail can ruin a roof that looks fine from the ground. It bruises the shingles and knocks the granules loose, and the leaks come later. If an insurance claim is part of your replacement, the adjuster's inspection is when the damage gets written down.
 
 Cesar inspects the roof first and tells you whether there's damage. He goes to the adjuster's inspection, talks with your insurance company, and we send in the paperwork.
 
-We can't tell you what an insurer will pay, and nobody honest can. We can make sure the damage on your roof is seen and written down.
+We can't tell you what an insurer will pay, and nobody honest can. Our part is showing the adjuster the damage we found.
 
 > We had an excellent experience with Monarch replacing our roofs on 2 houses. Cesar, our project manager, was great from start to finish. Always responded to our questions and concerns, plus communicating with the 2 different insurance companies.
 > — Matthew W.
@@ -29,7 +29,7 @@ We can't tell you what an insurer will pay, and nobody honest can. We can make s
 
 The shingle you pick changes how long the roof lasts. A basic three-tab shingle is the cheapest and the thinnest. Architectural shingles are thicker, hold up longer and look better.
 
-In hail country there's a third option, Class 4 impact-resistant shingles, built to take hail without cracking. We've installed them. Some insurance carriers discount premiums for them, so ask yours.
+In hail country there's a third option: Class 4 impact-resistant shingles, made to pass the toughest impact test shingles are rated on. They cost more than standard shingles, and we've installed them.
 
 Cesar walks you through the choices and the cost of each, and you pick the color you can live with.
 
@@ -74,7 +74,7 @@ If you have a closing date, give it to us when you call. We plan the job around 
 
 ## Cleanup
 
-Tearing off a roof sends old shingles and nails across the yard, so we clean up when the crew finishes.
+Tearing off a roof sends old shingles and nails into the beds, the grass and the driveway. We clean up the tear-off debris before the crew leaves.
 
 Then we walk the finished roof with you, so you see what was done before we leave.
 

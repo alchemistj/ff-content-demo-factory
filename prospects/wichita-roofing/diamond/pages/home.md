@@ -2,11 +2,11 @@
 
 # Roofing Company in Wichita, KS — Diamond Roof & Gutter
 
-We replace and repair roofs and gutters in Wichita, and when insurance is part of the job, Stacia works with your adjuster alongside you. Call or request an estimate, and we'll come look at your roof.
+We replace and repair roofs and gutters in Wichita, and when a storm brings an insurance claim with it, we work with your adjuster alongside you. Call or request an estimate, and we'll come look at your roof.
 
 **Buttons:** Call (316) 640-6056 | Request an Estimate
 
-> Looking for a company that not only just does the roofing portion, but also will come out and stand side by side with the insurance adjuster...look no further. … I'm a hard person to impress as there are so many shady contractors out there, but they have surpassed my expectations and made sure the insurance wasn't trying to pull the wool over my eyes.
+> Looking for a company that not only just does the roofing portion, but also will come out and stand side by side with the insurance adjuster...look no further. … Stacia has not only completed one roof, but three roofs for my family.
 > — Eric J.
 
 ## The Roof, the Gutters and the Adjuster in One Call
@@ -15,9 +15,9 @@ A storm goes through, or a stain shows up on the ceiling, and you're suddenly ma
 
 Most people end up playing messenger between a roofer, a gutter crew and an adjuster. We'd rather you didn't.
 
-Roof replacement, roof repair and gutters are all one job here. Stacia is the person you deal with: she looks at your roof, explains what she finds, and works with your insurance company when there's a claim.
+Roof replacement, roof repair and gutters are all one job here, and so is the insurance side. We look at the roof, explain what we find, and work with your insurance company when there's a claim.
 
-You get one person to call and one crew on the property.
+Stacia does a lot of that work: the first look at the roof, the adjuster's visit, the paperwork after. You call one company for the roof, the gutters and the claim, instead of relaying messages between three.
 
 > Diamond Roof & Gutter was the best choice for replacing my roof. They are a full service roofing company. From examining the damaged roof to working directly with my insurance adjuster to the installation of the new roof and guttering I couldn't have been in better hands.
 > — Margaret W.
@@ -28,7 +28,9 @@ The adjuster comes once, walks around, takes photos and leaves. A letter follows
 
 That's the gap a roofer can fill. We spend our days on roofs, so we know what storm damage looks like and what a replacement really involves.
 
-Stacia is at the adjuster's visit with you and goes through the paperwork with you afterward. Whether to file is your decision, and what gets paid is your insurance company's. We can't promise an outcome, and nobody honest can.
+We meet the adjuster at your roof and go through the paperwork with you afterward. Stacia has stood next to a lot of adjusters, and she knows the difference between damage that was missed and damage that isn't there.
+
+Whether to file is your decision, and what gets paid is your insurance company's. We can't promise an outcome, and nobody honest can.
 
 What we can do is make sure the person deciding has seen your whole roof.
 
@@ -41,7 +43,7 @@ Some roofs are finished. Shingles curl or crack across several slopes, bare patc
 
 At that point a patch only buys you a season. A replacement is the honest fix, and it's the job we do most.
 
-Stacia helps you choose the brand and color, so the new roof suits the house and the street. If your gutters are worn or damaged, we replace them in the same job.
+We help you choose the brand and color, so the new roof suits the house and the street. If your gutters are worn or damaged, we replace them in the same job.
 
 [See roof replacement →](/roof-replacement-wichita-ks/)
 
@@ -77,13 +79,13 @@ We clean up at the end of every work day, not only at the end of the job. It mat
 
 Not every roof is on the house you live in. We've worked on homeowners' own roofs, on rental and investment properties, and on roofs that had to be done during a home sale.
 
-A rental needs a roof done quickly and without drama. A sale needs it finished cleanly so nothing slips in the transaction. In both cases the point is the same: one person who answers the phone.
+A rental needs a roof done quickly and without drama. A sale needs it finished cleanly so nothing slips in the transaction. In both cases you need a straight answer about the roof and a crew that finishes cleanly, so you can get back to the tenant or the closing.
 
 ## How a Job Goes
 
 1. **You call.** Tell us what you're seeing: a leak, missing shingles, storm damage, worn gutters.
-2. **We look.** Stacia or Mike comes out, goes over the roof and gives you an estimate.
-3. **Insurance, if it's involved.** Stacia meets your adjuster and works through the paperwork with you.
+2. **We look.** One of us comes out, goes over the roof, walks you through what we found and gives you an estimate.
+3. **Insurance, if it's involved.** We meet your adjuster and work through the paperwork with you.
 4. **You choose.** Brand, color and, if the gutters need it, the gutters too.
 5. **The crew does the work.** We keep you updated on the schedule and clean up each day.
 
