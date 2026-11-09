@@ -1,0 +1,27 @@
+{
+  "kind": "google-review-pull-receipt",
+  "status": "ok",
+  "slug": "aircapital-hvac-wichita",
+  "request": {
+    "mapsUrl": "place_id:ChIJgTISpJcXliURBzdA3robQik",
+    "maxReviews": 100,
+    "expectedName": "Air Capital"
+  },
+  "trigger": "workflow_dispatch",
+  "apify": {
+    "actor": "compass~crawler-google-places",
+    "runId": "I3dt7QAV5trrNlVwt",
+    "datasetId": "dTe1g2rw9yOGgfuoL",
+    "attempts": 1,
+    "usageUsd": 0.0197
+  },
+  "counts": {
+    "listingTotal": 27,
+    "withText": 26,
+    "ratingOnly": 1
+  },
+  "detail": null,
+  "startedAt": "2026-11-09T18:01:33.527Z",
+  "finishedAt": "2026-11-09T18:02:45.419Z",
+  "githubRunUrl": "https://github.com/alchemistj/ff-content-demo-factory/actions/runs/42670229432"
+}
