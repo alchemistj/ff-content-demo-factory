@@ -13,7 +13,8 @@ Your job is taste, which no checker can judge. Read `docs/writer-guides/HOW_TO_W
 6. **Proof.** Does each review prove the paragraph right above it? Is any review a spacer?
 7. **Short paragraphs.** One to three sentences, broken where the thought turns.
 8. **True.** Is every claim about the business in `facts.md`? Is every quote word for word? Trade knowledge is fine.
-9. **Right page.** Does the page match its keyword? The homepage sells the whole company; service depth belongs on service pages.
+9. **Call to action up top.** Does the first screen end by telling the visitor what to do, with the two buttons right under one short paragraph?
+10. **Right page.** Does the page match its keyword? The homepage sells the whole company; service depth belongs on service pages.
 
 Edit the page directly where a fix is clear. When a page fails questions 1 to 3, it needs a rewrite: say so plainly instead of polishing it.
 

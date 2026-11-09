@@ -30,6 +30,12 @@ If you can't fill a line from the facts and reviews, the section probably doesn'
 ### 2. Write the page as a page
 Write in plain Markdown, the way the examples read: headings, short paragraphs, reviews as block quotes, links where a service has its own page. Don't think in template boxes; the conversion into the site format comes later.
 
+**The top of every page ends in a call to action** (Josh, 2026-11-09). The first screen is the eyebrow, the H1, one short paragraph (two or three sentences) that ends by telling the visitor what to do ("Call me for a free estimate."), then the two buttons on their own line:
+
+`**Buttons:** Call (316) 555-1234 | Get a Free Estimate`
+
+One paragraph only, so the buttons stay on a phone's first screen.
+
 ### 3. Read it as the owner and as the visitor
 Read it aloud in your head as the owner. Would they say this? Is anything invented, hedged or generic? Then read it as someone with a drafty house on their phone. Do they learn something? Do they know what to do next?
 

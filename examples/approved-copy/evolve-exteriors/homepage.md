@@ -5,9 +5,9 @@
 
 # Exterior Remodeling Company in Wichita, KS — Evolve Exteriors
 
-We're Colton and Riley. We replace windows, put up vinyl siding and install sliding patio doors, with the products and guarantees of the big companies and the owners close enough to look at your house ourselves.
+We're Colton and Riley. We replace windows, put up vinyl siding and install sliding patio doors, with the products and guarantees of the big companies and the owners close enough to look at your house ourselves. Call for a free estimate.
 
-`[Call (316) 435-8009]` `[Get a Free Estimate]`
+**Buttons:** Call (316) 435-8009 | Get a Free Estimate
 
 > "We have been hesitant due to the sky high pricing of a lot of companies around Wichita, until we were told about Evolve Exteriors. We met with Colton, who sold us the windows at a great price and they were here within about a month and a half's time and at our house a few days after that. … Colton came by to make sure everything was to our liking and, overall, I'm very happy with the finished product and how much cooler our house feels!"
 > — Reagan P.

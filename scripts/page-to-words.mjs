@@ -35,6 +35,8 @@ for (; i < blocks.length; i++) {
   if (eb) { hero.eyebrow = clean(eb[1]); continue; }
   const h1 = b.match(/^# (.+)$/);
   if (h1) { hero.h1 = clean(h1[1]); continue; }
+  const btn = b.match(/^\*\*Buttons:\*\*\s*(.+)$/);
+  if (btn) { const [a, c] = btn[1].split("|").map((x) => clean(x)); hero.primaryCta = { label: a, action: "call" }; if (c) hero.secondaryCta = { label: c, action: "contact" }; continue; }
   if (/^`\[/.test(b)) continue;
   if (hero.h1 && !hero.sub && !b.startsWith(">") && !b.startsWith("#")) { hero.sub = clean(b); continue; }
   break;

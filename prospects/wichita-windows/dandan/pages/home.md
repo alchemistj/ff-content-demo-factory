@@ -2,11 +2,9 @@
 
 # Exterior Remodeling Company in Wichita, KS — Dan Dan The Window Man
 
-I'm Rick Timsah, and I own Dan Dan The Window Man. We replace windows and doors, put up vinyl siding, hang gutters and handle storm and insurance claims, and our own crews do the work.
+I'm Rick Timsah, and I own Dan Dan The Window Man. You talk to me before the job, and our own crew replaces your windows and doors. Call me for a free estimate.
 
-You talk to me before the job and my crew shows up on the day. Estimates are free.
-
-`[Call (316) 448-4418]` `[Get a Free Estimate]`
+**Buttons:** Call (316) 448-4418 | Get a Free Estimate
 
 > "After getting a few quotes on replacing all my windows and doors in my 75 year home I was a little bit shocked on the various price ranges. Finally got a referral from a friend to call Rick at Dan Dan The Window Man and so glad I did! He explained the process to me and was very down to earth. His team was awesome and kept me informed with their schedule and what they would be doing throughout the day."
 > — Brooke B.

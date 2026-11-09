@@ -52,10 +52,18 @@ for (const f of files) {
     const h1 = (main.match(/^# (.+)$/m) || [])[1] || "";
     if (!/^[A-Z][\w&' -]+ in [A-Z][\w .'-]+, [A-Z]{2} — .+/.test(h1)) fail(`homepage H1 must be "[Company Type] in [City, ST] — [Business]": "${h1}"`);
   }
+  // the top of the page ends in a call to action (Josh, 2026-11-09)
+  {
+    const main = md.includes("\n---\n") ? md.split("\n---\n").slice(1).join("\n") : md;
+    const top = main.split(/\n(?=> |## )/)[0];
+    if (!/^\*\*Buttons:\*\*\s*\S.*\|\s*\S/m.test(top)) fail(`the top of the page needs its two buttons on one line: **Buttons:** Call (xxx) xxx-xxxx | Get a Free Estimate`);
+    const paras = top.split(/\n\s*\n/).map((x) => x.trim()).filter((x) => x && !/^(#|\*\*Eyebrow|\*\*Buttons|`)/.test(x));
+    if (paras.length > 1) warn(`the top of the page has ${paras.length} paragraphs; keep one, so the buttons stay on a phone's first screen`);
+  }
   // copy length: everything except quotes, headings' markup, links and the internal note above "---"
   const body = (md.includes("\n---\n") ? md.split("\n---\n").slice(1).join("\n") : md)
     .split("\n").filter((l) => !l.startsWith(">") && !/^\*\(.*\)\*$/.test(l.trim())).join("\n")
-    .replace(/`\[[^\]]*\]`/g, "").replace(/\[([^\]]+)\]\([^)]*\)/g, "$1");
+    .replace(/`\[[^\]]*\]`/g, "").replace(/^\*\*Buttons:\*\*.*$/gm, "").replace(/\[([^\]]+)\]\([^)]*\)/g, "$1");
   const count = words(body.replace(/^#+\s*/gm, ""));
   if (count < MIN[role]) fail(`about ${count} words of copy, too thin (minimum ${MIN[role]}; reviews, menus and footer don't count)`);
   else console.log(`info  about ${count} words of copy (minimum ${MIN[role]})`);
