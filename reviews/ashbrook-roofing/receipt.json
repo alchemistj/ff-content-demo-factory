@@ -1,0 +1,27 @@
+{
+  "kind": "google-review-pull-receipt",
+  "status": "ok",
+  "slug": "ashbrook-roofing",
+  "request": {
+    "mapsUrl": "place_id:ChIJraTxgPS29wwRd01lLXDuxh4",
+    "maxReviews": 100,
+    "expectedName": "Ashbrook"
+  },
+  "trigger": "workflow_dispatch",
+  "apify": {
+    "actor": "compass~crawler-google-places",
+    "runId": "elEDX3CkhC5CbBVqs",
+    "datasetId": "EXg5SlzWtiehsGC0x",
+    "attempts": 1,
+    "usageUsd": 0.028199999999999996
+  },
+  "counts": {
+    "listingTotal": 44,
+    "withText": 44,
+    "ratingOnly": 0
+  },
+  "detail": null,
+  "startedAt": "2026-11-09T17:54:33.923Z",
+  "finishedAt": "2026-11-09T17:55:04.684Z",
+  "githubRunUrl": "https://github.com/alchemistj/ff-content-demo-factory/actions/runs/42669068695"
+}

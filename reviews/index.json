@@ -39,6 +39,18 @@
       "pulledAt": "2026-11-09T12:55:27.894Z"
     },
     {
+      "slug": "ashbrook-roofing",
+      "name": "Ashbrook Roofing & Contracting",
+      "placeId": "ChIJraTxgPS29wwRd01lLXDuxh4",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 44,
+        "withText": 44,
+        "ratingOnly": 0
+      },
+      "pulledAt": "2026-11-09T17:55:04.684Z"
+    },
+    {
       "slug": "ashs-barber-collective",
       "name": "Ash's Barber Collective",
       "placeId": "ChIJ8bZtIFBxz4cR5BpeENYruuQ",
