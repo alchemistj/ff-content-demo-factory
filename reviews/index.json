@@ -279,6 +279,18 @@
       "pulledAt": "2026-11-07T03:19:35.945Z"
     },
     {
+      "slug": "integrity-hvac-wichita",
+      "name": "Integrity Heating and Cooling",
+      "placeId": "ChIJH1DbjepL0yERZq5JzC80-RQ",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 45,
+        "withText": 38,
+        "ratingOnly": 7
+      },
+      "pulledAt": "2026-11-09T17:54:18.958Z"
+    },
+    {
       "slug": "jons-plumbing",
       "name": "Jon's Plumbing, LLC",
       "placeId": "ChIJVVXxT51kz4cRt_W0muFXJbQ",
