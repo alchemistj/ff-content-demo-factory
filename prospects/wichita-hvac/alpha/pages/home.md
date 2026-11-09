@@ -2,7 +2,7 @@
 
 # HVAC Company in Wichita, KS — Alpha HVAC & Plumbing
 
-We repair and replace air conditioners and furnaces, and we fix plumbing too. When your house is too hot or too cold, we find what actually failed and tell you straight whether it's a repair or a replacement. Call us any hour for emergency service.
+When the house is too hot or too cold, we find the part that actually failed and tell you straight whether it's a repair or a replacement. We fix plumbing and water heaters too, for homes and businesses across Wichita. Call us any hour for emergency service.
 
 **Buttons:** Call (316) 260-5775 | Get a Free Estimate
 
@@ -34,7 +34,7 @@ We repair all makes and models of air conditioning equipment, and our emergency 
 
 A furnace that blows cold air, clicks and never lights, or shuts off every few minutes is usually telling you one thing: something in the ignition or airflow has failed. A dirty filter, a worn igniter, a tired blower motor or a bad control board will each do it.
 
-Heat matters more than comfort when it's 5 degrees out, so call any hour. We repair all makes and models of heating equipment.
+When it's 5 degrees out, heat is about more than comfort: a cold house can mean frozen pipes by morning. Call any hour. We repair all makes and models of heating equipment.
 
 [See furnace repair →](/furnace-repair-wichita-ks/)
 
@@ -55,14 +55,14 @@ Most breakdowns give a warning first: a part that's wearing, a filter that's clo
 
 We service your air conditioner and your heating system so they keep running efficiently year-round.
 
-A visit usually means a new filter if it needs one, a look at the electrical parts that wear out first, a clean outdoor unit and a check of the temperature at the registers. You should leave knowing what's fine and what's wearing.
+Parts like capacitors weaken slowly, so a weak one can be caught in spring instead of failing on the first 100-degree day. You should leave knowing what's fine and what's wearing.
 
 > "Another excellent seasonal "maintenance agreement" visit from Alpha. Tom called to conveniently schedule & Brett was on time, personable, and thorough. Appreciated the report of a low capacitor report so the MFD could be replaced, instead of an emergency call this summer when it predictably would've gone out …"
 > — Molly L.
 
 ## Plumbing
 
-We're a plumbing company as well as an HVAC company, and we serve homes and businesses.
+A leak under the sink, a drain backing up, a water heater gone cold: those go to the same phone number as a dead furnace. We do plumbing for homes and businesses.
 
 **Water heaters.** A water heater usually fails at the tank. You find out when the water goes lukewarm, or when there's water on the floor around it.
 

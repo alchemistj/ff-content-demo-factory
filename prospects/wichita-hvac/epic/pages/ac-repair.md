@@ -2,7 +2,7 @@
 
 # AC Repair in Wichita, KS — Epic Heating & Cooling
 
-When your air conditioner quits in a Kansas summer, you need it fixed and you need to know what it cost to fix it. We repair all makes and models, and we explain what we found before we do anything else. Call us.
+When your air conditioner quits in a Kansas summer, you need it fixed, and you need to know what you're paying for. We repair all makes and models, and we explain what we found before we do anything else. Call us.
 
 **Buttons:** Call (316) 633-8097 | Request Service
 
@@ -27,9 +27,11 @@ Low refrigerant means a leak somewhere, because an air conditioner doesn't use i
 
 Telling these apart takes testing, not guessing. Our technicians check the system, find the failure and then tell you what it is.
 
-## How We Work
+## You'll See What We Found
 
-We start with the problem you called about. The technician looks at the system, explains what's wrong and what it takes to fix it, and then does the repair.
+Most people have never looked inside their outdoor unit, and they shouldn't have to. But a bill for a part you never saw is hard to trust.
+
+So we start with the problem you called about. The technician looks at the system, shows you what's wrong and what it takes to fix it, and then does the repair.
 
 We work on all makes and models, so you don't need to know who made your unit. Tell us what it's doing and we'll take it from there.
 
@@ -43,6 +45,8 @@ Most summer breakdowns start months earlier with a dirty coil, a clogged filter 
 We do preventive maintenance for air conditioners and furnaces, and we can put in a smart WiFi thermostat.
 
 ## No Up-Sell
+
+A hot house in July is the easiest place to sell someone a new air conditioner. You're sweaty, you're tired, and you want it over.
 
 A repair call should end with a repaired air conditioner. We fix what's broken, and we suggest more only when it will actually help you.
 

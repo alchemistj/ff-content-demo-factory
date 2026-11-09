@@ -14,7 +14,7 @@ Monday to Friday, 8:00 AM to 5:00 PM.
 
 ## Request Service
 
-Tell us what your system is doing, and we'll follow up. You can also email us at justin@epichvac.net.
+Use it for anything that can wait a day: a seasonal tune-up, a new thermostat, a quote on replacing an old system. Tell us what your system is doing, and we'll follow up. You can also email us at justin@epichvac.net.
 
 ## What to Have Ready
 

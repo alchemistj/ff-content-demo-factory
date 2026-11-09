@@ -2,7 +2,7 @@
 
 # Contact 1st Call Heating & Cooling
 
-The fastest way to reach us is to call. Tell us what your furnace or AC is doing and we'll go from there. If it's after hours, send a request and we'll see it when the office opens.
+The fastest way to reach us is to call. Tell us what your furnace or AC is doing and we'll go from there. We answer Monday to Friday, 8:00 AM to 5:00 PM.
 
 **Buttons:** Call (316) 371-3815 | Request Service
 
@@ -14,7 +14,7 @@ We answer Monday to Friday, 8:00 AM to 5:00 PM.
 
 ## Request Service
 
-Prefer to write? Send us a message with your name, phone number, address and what the system is doing, and we'll get back to you.
+Prefer to write? Send us a message with your name, phone number, address and what the system is doing. The more you tell us about the system, the better we can plan the visit.
 
 ## What to Have Ready
 

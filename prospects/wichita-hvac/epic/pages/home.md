@@ -11,16 +11,16 @@ We repair and replace air conditioners and furnaces for Wichita homes and busine
 
 ## Fix What's Broken, Tell You the Truth
 
-A heating or cooling system never fails at a good time. It's the hottest week of July or the first cold night, and you're deciding fast with little to go on.
+The air quits in the hottest week of July, or the furnace on the first cold night. Someone comes out, takes a quick look and says you need a whole new system. You're hot or cold, tired, and in no shape to argue.
 
 That's when it matters who shows up. Preston has been in the HVAC industry since 1999 and Justin since 2000, and the way we work comes from those years: find the actual problem, explain it in plain words, and fix that.
 
 We guarantee 100% satisfaction with all our work. We'd rather earn the next call than sell you more than you need.
 
-That's why you'll get a straight answer on the first visit: a repair when a repair will do, and a new system only when it's the better choice.
+That's why you'll get a straight answer: a repair when a repair will do, and a new system only when it's the better choice. Often the fix is smaller than you feared, like a filter and a setting nobody checked.
 
-> "When Aaron arrived I explained the issue to him. He was very pleasant and professional. He had us up and cooled in under an hour. He didn’t try to up-sale either he just fixed the problem."
-> — Tyler N.
+> "Besides answering the panic call he gave us the most honest quote for maintenance we've ever had versus buying all new stuff when it wasn't necessary. He changed our air filter and a setting on the furnace, we have more air flow than we've ever had. … Every other company we have had out over the years said we needed a bigger unit. Turns out our unit is plenty big just, "needs a little love." says Justin."
+> — Amy I.
 
 ## AC Repair
 
@@ -38,12 +38,12 @@ A house that won't warm up, a furnace that clicks and never lights, a blower tha
 
 Furnaces fail for a short list of reasons: an ignition part that has worn out, a clogged filter, a blower motor, a thermostat problem. Most are fixable, and the repair is worth making.
 
-Some furnaces are at the end of their life, and we'll say so plainly. When that's the case, you'll know it's a decision about a 20-year-old machine, not a sales pitch.
+Some furnaces are at the end of their life, and we'll say so plainly. When that's the case, we'll show you what's worn out, so the decision is about the furnace in front of you, not a sales pitch.
 
 [See furnace repair →](/furnace-repair-wichita-ks/)
 
-> "We love Epic Heating and Cooling! They are always quick to help us. Our heater went out overnight and they were here within 15 minutes of me calling this morning."
-> — Kelsey A.
+> "He was very knowledgeable and diagnosed the issue immediately and had my furnace up and running in less than 15 minutes."
+> — Patrick C.
 
 ## AC and Furnace Replacement
 
@@ -97,6 +97,12 @@ Repair it when the problem is a part and the unit has years left. Replace it whe
 
 **Do you work on businesses as well as homes?**
 Yes. We handle residential and commercial heating and cooling, including rooftop units.
+
+**Will you try to sell me a new system?**
+Not unless it's the better choice for your house. If a part has failed and the unit has years left, we fix the part and tell you so.
+
+**Do you guarantee your work?**
+Yes. We guarantee 100% satisfaction with all our work.
 
 **Can you help with a new house?**
 Yes. We install HVAC for residential new construction.

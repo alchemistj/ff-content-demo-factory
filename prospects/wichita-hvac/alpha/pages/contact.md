@@ -16,9 +16,7 @@ Send a message with your name, phone number, email and what's going on.
 
 Tell us what the equipment is doing, what you've already tried and, for plumbing, where the water is showing up. You can also email tomt@alpha-heatair.com.
 
-If you're weighing a new system, say so in your message. That's a free replacement estimate, and the more we know about the house, the better the conversation.
-
-Replacement estimates for heating and cooling equipment are free, and so are water heater replacement estimates.
+If you're weighing a new furnace, air conditioner or water heater, say so in your message. Replacement estimates for all three are free, and knowing the age of the equipment and what it's been doing helps us bring the right options.
 
 > "Last night our AC unit stopped working.. I messaged Tom Tallon with ALPHA Hvac & Plumbing Llc and he messaged me this morning and had a tech at our house by 11. The technician got us up and running within 30 minutes."
 > — Lacy G.

@@ -6,9 +6,6 @@ When the air stops cooling or the furnace won't start, you need someone to look 
 
 **Buttons:** Call (316) 371-3815 | Request Service
 
-> "It almost seems surprising nowadays to me to have someone make a house call, fix what was needed, and have the kindness to truly explain all of it well. And, not least, the integrity to only charge for the actual work performed. Thank you all at 1st call!"
-> — Joe L.
-
 ## Look First, Then Tell You Straight
 
 A heating and cooling system rarely fails all at once. Most calls start with one worn part: a capacitor, a relay, a fan motor, a sensor.
@@ -17,7 +14,10 @@ That matters, because a small part is a small repair. Before anyone talks about 
 
 Then we tell you what it will cost to fix it and, if the system is old enough that replacing it is worth a look, what that would cost too. You decide with both numbers in front of you.
 
-You pay for the work that was done.
+You pay for the work that was done, and nothing that wasn't.
+
+> "It almost seems surprising nowadays to me to have someone make a house call, fix what was needed, and have the kindness to truly explain all of it well. And, not least, the integrity to only charge for the actual work performed. Thank you all at 1st call!"
+> — Joe L.
 
 ## AC Repair
 
@@ -45,9 +45,9 @@ Some systems are finished. A furnace that's 30 years old, an AC that has been re
 
 Replacing the whole system is a big decision, so we don't push it. We explain what you have, what the options are and what size system your house needs, because a unit that's too big or too small never runs right.
 
-Full system replacements are often finished in one day, and we stay to show you how the new system and thermostat work.
+Many full system replacements are finished in one day. Before the crew leaves, ask anything you want about the new system and thermostat.
 
-> "Austin came out and explained everything to us and what our options were. He did NOT push us into buying a new unit but rather explained everything so we could make our own decision including How he could fix our old unit. … A week later Mike, Austin and Derek came to install our units. They were extremely professional and finished all in one day."
+> "Austin came out and explained everything to us and what our options were. He did NOT push us into buying a new unit but rather explained everything so we could make our own decision including How he could fix our old unit. … A week later Mike, Austin and Derek came to install our units. They were extremely professional and finished all in one day. They didn’t rush out even though it was after 5:30 they still stayed and explained our unit and new thermostat."
 > — Alyson N.
 
 ## Seasonal Checkups
@@ -81,9 +81,12 @@ We service geothermal systems. Tell us what you have when you call.
 
 ## Home Warranty Repairs
 
-If your home warranty company sends you to a contractor, the job can drag on or get done badly. We take home warranty repair work.
+When a home warranty company assigns the contractor, you don't get to pick who shows up, and a bad assignment can leave you waiting or with a job done wrong.
 
-Tell the warranty company you'd like 1st Call, or call us to talk through your situation.
+We take home warranty repair work, including jobs another company didn't finish right. Call us and tell us which warranty company you have and where the job stands.
+
+> "These guys were great to work with. They did some home warranty work that another company botched. Took care of the problem right away. I would recommend these guys any day."
+> — Mark S.
 
 ## Wichita, Kansas
 

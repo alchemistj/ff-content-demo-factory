@@ -56,13 +56,13 @@ If the unit is covered in ice, turn the AC off and let it thaw before you call, 
 
 If none of it helps, call us.
 
-## A Repair, Explained
+## Knowing What's Wrong, and What It Costs
 
 When something is wrong, you should know what it is.
 
 We walk you through the problem and the choices, and we say honestly if a choice isn't worth it. If a new system is the better answer, we'll help you size and plan the replacement, and we can install it.
 
-An outside unit also has to sit level and stable, or it wears itself out faster. When we install one, we level it.
+A new outside unit also has to sit level and stable. One that settles and tilts puts strain on the compressor and the refrigerant lines, and wears out sooner.
 
 > "My upstairs AC was failing to blow any air at all, as the outside unit continued to run. I called Mike late in the day. He advised me what to do and he and Austin were out to look at my unit the next afternoon. … The problem was diagnosed and options for a fix were given to me as well as cost. I opted for a new install given the age of my system. The next day, they were prompt and on time. No hidden costs. They went over and beyond to raise and level out my new outside unit!"
 > — Paul F.

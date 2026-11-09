@@ -50,12 +50,15 @@ Some air conditioners can't be saved. A burned-out condenser on an old system ca
 
 When that's the case, we tell you plainly and explain what we saw. You shouldn't pay for a repair that won't last.
 
-If a replacement is the better call, the estimate is free. We install new cooling equipment, and high-efficiency A/C and heating equipment comes with extended warranties. Financing is available through Wisetack.
-
 > "he went beyond to try making something out of nothing but with a burnt up condenser you have to break the bad news which he said was the hardest part of his job.. you could really tell he cares about his job and the quality he puts into it."
 > — Kevin S.
 
-## How to Help Your AC Between Visits
+If a replacement is the better call, the estimate is free. We install new cooling equipment, and high-efficiency A/C and heating equipment comes with extended warranties. Financing is available through Wisetack.
+
+> "Geoff's years of experience in the industry was apparent in how thorough he was and in how he explained the situation and our options. He was patient with us and took the time to ensure we understood."
+> — Jack M.
+
+## What to Check Before You Call
 
 A few checks cost nothing and sometimes solve the problem.
 
@@ -64,10 +67,7 @@ A few checks cost nothing and sometimes solve the problem.
 - **Check the breaker.** A tripped breaker can shut off the outdoor unit.
 - **Look at the outdoor unit.** Clear leaves and debris from around it.
 
-If the AC is still warm after that, turn it off and call. A repair that's a capacitor today can be a compressor next week if the system keeps running hard. Running a frozen or struggling system can turn a small repair into a big one.
-
-> "Geoff's years of experience in the industry was apparent in how thorough he was and in how he explained the situation and our options. He was patient with us and took the time to ensure we understood."
-> — Jack M.
+If the AC is still warm after that, turn it off and call. A system that keeps running hot, frozen or short of refrigerant strains the compressor, the most expensive part in it. A repair that's a capacitor today can be a compressor next week.
 
 ## Questions Before You Call
 

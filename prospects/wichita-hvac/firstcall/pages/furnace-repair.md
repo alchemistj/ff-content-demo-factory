@@ -24,11 +24,11 @@ Each of those is a repair, and most of them are small ones.
 > "Had Austin come out and give me a hand! Although it was a "simple fix" I was so glad to be able to learn and have heat again!"
 > — Megan B.
 
-## How We Come Prepared
+## Helping Us Come Prepared
 
-The first call matters. When you phone us, we ask about the furnace: what it's doing, how old it is and what the nameplate says.
+The first call matters. If you can tell us what the furnace is doing, how old it is and what the nameplate on the unit says, give us those details when you phone.
 
-That lets us think through the likely causes before we arrive, and bring the parts that fit your unit.
+Ignitors, sensors and blower motors differ from one furnace model to the next. Knowing the model before we arrive lets us think through the likely causes and bring parts that fit.
 
 When we get there, we find out what failed, tell you what it is in plain words and tell you what the repair costs before we start. You pay for the work that was done.
 
@@ -65,7 +65,7 @@ We don't push a new system. We give you the cost of the repair and the cost of t
 
 A furnace and an AC share the same ductwork and blower, and they're often the same age. If both are near the end, replacing them together can be one job instead of two.
 
-We replace furnaces on their own and full heating and cooling systems, and many full systems are installed in a single day. Along the way, we tell you about anything else we notice that you should know.
+We replace furnaces on their own and full heating and cooling systems, and many full systems are installed in a single day. A replacement also means looking at what's around the furnace, like the gas line and venting, and anything wrong there is worth knowing about.
 
 > "I finally decided to do a full upgrade on a nearly 40 year old furnace and AC system in my house. … Mike and Austin were helpful and prompt in answering any questions I've had and also alerted me to an issue with the gas company's equipment I hadn't been aware of before."
 > — Courtney B.

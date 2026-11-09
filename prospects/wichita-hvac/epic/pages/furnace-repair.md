@@ -21,7 +21,9 @@ Don't keep restarting a furnace that shuts itself off. It's shutting off for a r
 
 Furnaces start the same way every cycle, so the parts that do the starting wear out first.
 
-An igniter or flame sensor that has gone bad is a common reason a furnace clicks and quits. A clogged filter chokes airflow, and the furnace overheats and shuts down to protect itself. A blower motor can wear out, and a thermostat problem can leave a healthy furnace never getting the call to run.
+An igniter or flame sensor that has gone bad is a common reason a furnace clicks and quits. A clogged filter chokes airflow, and the furnace overheats and shuts down to protect itself.
+
+A blower motor can wear out, and a thermostat problem can leave a healthy furnace never getting the call to run.
 
 Each of these is a different repair with a different cost. We find the real one before we start.
 
@@ -40,7 +42,9 @@ You shouldn't need to know HVAC to follow what's happening in your own basement 
 
 ## Repair or Replace, Said Straight
 
-Plenty of furnaces run for decades, so age alone isn't a reason to replace one. A furnace that needs a cheap part and runs fine is a repair.
+The furnace is old, it just quit, and you're wondering whether to sink more money into it. Plenty of furnaces run for decades, so age alone isn't a reason to replace one.
+
+A furnace that needs a cheap part and runs fine is a repair.
 
 A furnace with a cracked heat exchanger, one that needs repair after repair or can't keep the house warm is a different case. We'll tell you which one you have, and we won't hurry you into the expensive one.
 
@@ -49,7 +53,7 @@ A furnace with a cracked heat exchanger, one that needs repair after repair or c
 
 ## When It's Time for a New Furnace
 
-If the answer is replacement, we install complete furnace systems, along with the air conditioner if it's time for that too. A new high-efficiency furnace heats more of your gas or electricity into the house and less out the flue.
+If the answer is replacement, we install complete furnace systems, along with the air conditioner if it's time for that too. A new high-efficiency gas furnace turns more of the gas you buy into heat for the house and sends less of it up the vent, so the same warm house costs less each month.
 
 We'll go over your options with you and keep the schedule moving, because a house with no heat is not a project you want to stretch out.
 
