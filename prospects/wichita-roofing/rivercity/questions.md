@@ -15,3 +15,7 @@
 13. Hours: Monday to Friday, 8:00 AM to 4:30 PM, no weekend or storm-call hours?
 14. Services to confirm: roof maintenance, gutters and guards, painting, windows, deck staining. Which are the biggest earners, and should any get its own page?
 15. Photos of real jobs, and the owner's okay to use the Google reviews on the site.
+16. Cleanup and the visit after the job: does the crew walk the yard for debris, and does someone come back after every new roof? The demo states cleanup and a final inspection as how a new roof goes, and the return visit only as track record (Kamden B.).
+17. Painters: your own crew or another company you send? The demo avoids saying one crew does everything.
+18. Can customers text (316) 295-2159? A review mentions texting Anthony; the demo says call only.
+19. Routine roof maintenance: what does a visit include, and how is it priced?

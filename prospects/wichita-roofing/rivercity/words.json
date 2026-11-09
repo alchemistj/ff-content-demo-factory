@@ -44,7 +44,7 @@
     {
       "name": "Roof Maintenance",
       "route": null,
-      "blurb": "Routine upkeep that keeps small problems from becoming leaks."
+      "blurb": "Routine upkeep that catches loose and worn spots before they let water in."
     },
     {
       "name": "Siding",
@@ -82,7 +82,7 @@
       "hero": {
         "eyebrow": "Local, family owned in Wichita",
         "h1": "Roofing Company in Wichita, KS — River City Roofing",
-        "sub": "We replace and repair roofs, and we do siding, gutters, paint, windows and decks too. Call for a free quote. Our crew picks up when it finishes, and we come back to make sure you're pleased.",
+        "sub": "We replace and repair roofs in Wichita, and we handle siding, gutters, paint, windows and decks too. Call for a free quote, and we'll tell you what your roof really needs.",
         "primaryCta": {
           "label": "Call (316) 295-2159",
           "action": "call"
@@ -105,10 +105,10 @@
         },
         {
           "type": "split",
-          "heading": "A Wichita Roofer You Can Reach",
+          "heading": "A Local Roofer Who Finds the Real Problem",
           "body": [
-            "**We're a local, family owned company, and our work is in Wichita.** You deal with Anthony, and he answers calls and texts.",
-            "We climb into the attic and onto the roof to find where the water really comes in. When the crew leaves, we come back to make sure you're happy with the roof."
+            "**We're a local, family owned company, and our work is in Wichita.** When you call, you talk with Anthony or one of our team, and that's who stays with you through the job.",
+            "When water shows up on a ceiling, we go into the attic and onto the roof to find where it really gets in. Then we fix that, not the first guess."
           ],
           "image": {
             "slot": "home-roof",
@@ -118,29 +118,22 @@
           "imageSide": "right"
         },
         {
+          "type": "review",
+          "quote": "Very, very pleased with the new siding and paint job. … Professional, courteous, and really know what theyre doing. Thank you for taking such good care of me and my home.",
+          "name": "Alex C."
+        },
+        {
           "type": "prose",
           "heading": "New Roof or Roof Repair",
           "body": [
-            "**If the roof is worn out, you need a [new roof](/roof-replacement-wichita-ks/).** We give you a free quote and a detailed estimate, and install composition shingles, metal or tile.",
-            "**If it's a leak or wind damage, you need a [roof repair](/roof-repair-wichita-ks/).** We find the real source before anyone starts fixing."
+            "**Worn out, or damaged across the whole roof? Start with [roof replacement](/roof-replacement-wichita-ks/).** You get a free quote and a detailed estimate in composition shingles, metal or tile.",
+            "**A leak, wind damage or a few bad spots? Start with [roof repair](/roof-repair-wichita-ks/).** We find the source before anyone starts fixing, and we keep roofs in shape with routine maintenance."
           ]
         },
         {
           "type": "services",
           "heading": "Everything We Do",
-          "intro": "Roofing comes first, and the same crew and the same phone number handle the rest of the outside of your home."
-        },
-        {
-          "type": "review",
-          "quote": "Very, very pleased with the new siding and paint job. … Thank you for taking such good care of me and my home.",
-          "name": "Alex C."
-        },
-        {
-          "type": "prose",
-          "heading": "We've Handled the Insurance Agent Too",
-          "body": [
-            "**On a roof job, we've dealt with the insurance agent and filled out the forms for a customer.** It's one less call for you to make."
-          ]
+          "intro": "Roofing comes first. The same phone number covers your siding, gutters, paint, windows and deck."
         },
         {
           "type": "review",
@@ -151,7 +144,7 @@
           "type": "prose",
           "heading": "Where We Work",
           "body": [
-            "**We work in Wichita, and our office is at 3750 N Topeka St.** Call (316) 295-2159 Monday to Friday, 8:00 AM to 4:30 PM, and you reach us at the same number for every job."
+            "**We work in Wichita, from our office at 3750 N Topeka St.** Call (316) 295-2159 Monday to Friday, 8:00 AM to 4:30 PM, about a roof, siding, paint or any other job on your house."
           ]
         },
         {
@@ -163,8 +156,8 @@
               "a": "Yes. Call (316) 295-2159 for a free quote."
             },
             {
-              "q": "Where do you work?",
-              "a": "Wichita. Our office is at 3750 N Topeka St."
+              "q": "Who will I talk to?",
+              "a": "Anthony or one of our team, from the first look at your roof to the end of the job."
             },
             {
               "q": "When can I reach you?",
@@ -188,7 +181,7 @@
       "hero": {
         "eyebrow": "Roof replacement",
         "h1": "Roof Replacement in Wichita, KS — River City Roofing",
-        "sub": "A new roof is a big decision, and you should know what you're getting before the work starts. We give you a free quote and a detailed estimate, and our crew leaves your yard clean.",
+        "sub": "A new roof in composition shingles, metal or tile, priced in a detailed estimate before any work starts. Call for a free quote, and we'll help you choose the roof that suits your house.",
         "primaryCta": {
           "label": "Call (316) 295-2159",
           "action": "call"
@@ -205,16 +198,24 @@
       },
       "sections": [
         {
+          "type": "prose",
+          "heading": "After the New Roof Goes On",
+          "body": [
+            "**We don't leave when the last shingle goes down.** Our crew walks around your house for anything that fell off the roof, and we've come back after the crew left just to make sure a homeowner was pleased.",
+            "**We've handled the insurance side too.** When a claim was behind one new roof, we talked with the homeowner's insurance agent and got the forms filled out and returned."
+          ]
+        },
+        {
           "type": "review",
-          "quote": "River City did an amazing job putting a new roof on my home. … Anthony showed up shortly after they left to make sure I was pleased with the roof. Anthony handled talking to my insurance agent and getting forms filed out and returned to them.",
+          "quote": "After they finished, they walked around to make sure if anything fell off the roof that everything was picked up.  Anthony showed up shortly after they left to make sure I was pleased with the roof.  Anthony handled talking to my insurance agent and getting forms filed out and returned to them.",
           "name": "Kamden B."
         },
         {
           "type": "split",
           "heading": "Composition Shingles, Metal or Tile",
           "body": [
-            "**We install composition shingles, metal roofing and tile.** Each one gives your house a different look, and each one comes at a different cost.",
-            "Tell us what matters most, whether that's the look, the lifespan or the price. We lay out your choices at the quote, so you decide with the full picture."
+            "**We install composition shingles, metal roofing and tile.** At the quote, we go over which of the three suits your house, how you want it to look and what you want to spend.",
+            "**We help you choose, down to the shingle and the color.** Our job is to give you enough information to make the decision that suits you, not to push one product."
           ],
           "image": {
             "slot": "replacement-materials",
@@ -227,16 +228,26 @@
           "type": "prose",
           "heading": "A Detailed Estimate Before Any Work",
           "body": [
-            "**You get a free quote and a detailed estimate before we start.** The job runs from the first consultation to the final inspection, so you know what happens at each step.",
-            "Ask us anything about the estimate. We'd rather you understand every line than sign something you're unsure of."
+            "**Your free quote becomes a detailed estimate before we start.** You see what the new roof includes and what it costs, and you can ask about any line.",
+            "From the first consultation to the final inspection, you know what happens next and who to call."
           ]
         },
         {
           "type": "prose",
           "heading": "When a New Roof Makes Sense",
           "body": [
-            "**Replace the roof when repairs keep coming back, or when the damage runs across the whole roof.** A single bad spot is a repair, and we say so.",
-            "Call us and we tell you which one you have, before you spend a dollar on the wrong job."
+            "**A new roof makes sense when the trouble isn't in one spot anymore.** Leaks that come back after repairs, damage across several parts of the roof, or worn shingles all over mean more patching is money spent twice.",
+            "**One bad spot is a repair, and we tell you so.** If a [roof repair](/roof-repair-wichita-ks/) solves the problem, that's the job we quote."
+          ]
+        },
+        {
+          "type": "list",
+          "heading": "Signs It's Time to Replace",
+          "list": [
+            "The same leak keeps coming back after it's been fixed",
+            "Damage on several slopes of the roof, not just one",
+            "Shingles worn, cracked or missing across the whole roof",
+            "You want a different material, like metal or tile"
           ]
         },
         {
@@ -244,45 +255,21 @@
           "heading": "How Your New Roof Goes",
           "items": [
             {
-              "title": "Call for your free quote",
-              "text": "Call (316) 295-2159 or send a message. We look at your roof and talk through what you want."
+              "title": "Free quote",
+              "text": "Call (316) 295-2159 or send a message. We look at the roof and talk through what you want."
             },
             {
-              "title": "Choose your roof",
-              "text": "We go over composition shingles, metal and tile, and put the numbers in a detailed estimate."
+              "title": "Detailed estimate",
+              "text": "You choose composition shingles, metal or tile, and see the full job in a detailed estimate."
             },
             {
               "title": "Our crew installs it",
-              "text": "The crew puts on the new roof, then walks around your house to pick up anything that fell."
+              "text": "Our crew puts on the new roof, then walks around the house to pick up anything that fell."
             },
             {
-              "title": "We come back",
-              "text": "After the crew leaves, we come back to make sure you're pleased with the roof."
+              "title": "Final inspection",
+              "text": "We look over the finished roof and make sure you're pleased with it."
             }
-          ]
-        },
-        {
-          "type": "prose",
-          "heading": "Insurance Paperwork",
-          "body": [
-            "**If an insurance claim is behind your new roof, we've been there.** We have talked to a customer's insurance agent and filled out the forms for them.",
-            "Call us and tell us where your claim stands."
-          ]
-        },
-        {
-          "type": "prose",
-          "heading": "The Rest of Your Exterior",
-          "body": [
-            "**A new roof shows every worn edge around it.** We also do gutters and gutter guards, siding and paint, so one call covers the outside of your home.",
-            "Ask about them when you call for your quote."
-          ]
-        },
-        {
-          "type": "prose",
-          "heading": "Is It the Roof, or Something Else?",
-          "body": [
-            "**A ceiling stain doesn't always mean a new roof.** We once traced a leak in a kitchen ceiling to the chimney chase, not the roof. If a [roof repair](/roof-repair-wichita-ks/) solves your problem, we tell you that.",
-            "If the roof is the problem, we quote the replacement."
           ]
         },
         {
@@ -295,23 +282,23 @@
             },
             {
               "q": "Which materials do you install?",
-              "a": "Composition shingles, metal roofing and tile."
+              "a": "Composition shingles, metal roofing and tile. We help you pick the shingle and the color too."
             },
             {
-              "q": "Who cleans up after the crew?",
-              "a": "Our crew does. They walk around your house and pick up anything that fell during the job."
+              "q": "Will I see the price before work starts?",
+              "a": "Yes. You get a detailed estimate before our crew starts."
             },
             {
-              "q": "Who do I deal with?",
-              "a": "You deal with Anthony, from your first call to the follow-up after the crew leaves."
+              "q": "Who will I deal with?",
+              "a": "Anthony or one of our team, from your first call through the final inspection."
             },
             {
-              "q": "Can I get a repair instead?",
-              "a": "If a repair fixes your problem, that's the job we quote. We tell you what we find."
+              "q": "Do I really need a new roof?",
+              "a": "Maybe not. If a repair fixes the problem, we quote the repair."
             },
             {
-              "q": "Have you worked with insurance agents?",
-              "a": "Yes. We have talked to a customer's agent and filled out the forms. Call and tell us where your claim stands."
+              "q": "Can you do the siding or gutters at the same time?",
+              "a": "Yes. We also do siding, gutters and gutter guards, and paint. Ask about them in the same quote."
             }
           ]
         },
@@ -331,7 +318,7 @@
       "hero": {
         "eyebrow": "Roof repair",
         "h1": "Roof Repair in Wichita, KS — River City Roofing",
-        "sub": "From minor leaks to storm damage, we fix your roof. We find the real source of the problem first, and our crew works to get you done quickly.",
+        "sub": "From minor leaks to storm damage, we fix roofs in Wichita. We find where the water really gets in before we fix anything, so you pay for the right repair.",
         "primaryCta": {
           "label": "Call (316) 295-2159",
           "action": "call"
@@ -348,16 +335,11 @@
       },
       "sections": [
         {
-          "type": "review",
-          "quote": "My roof got really messed up by a bad wind and River City Roofing made it super quick and easy to get it fixed. … the guys on the crew really worked their tails off to get my roof done quickly!",
-          "name": "Jordan S."
-        },
-        {
           "type": "split",
           "heading": "Wind and Storm Damage",
           "body": [
-            "**A bad wind can leave your roof messed up in a hurry, and we fix it quickly.** Our crew works hard to get your roof done.",
-            "Call us with what happened. We look at the damage and give you a free quote."
+            "**When a bad wind tears up your roof, call us and we get it fixed.** We look at the damage, give you a free quote and put our crew on it.",
+            "We keep it simple for you from the first call, and our crew works hard once the repair starts."
           ],
           "image": {
             "slot": "repair-storm",
@@ -367,11 +349,16 @@
           "imageSide": "right"
         },
         {
+          "type": "review",
+          "quote": "My roof got really messed up by a bad wind and River City Roofing made it super quick and easy to get it fixed. Anthony was very friendly and easy to work with and the guys on the crew really worked their tails off to get my roof done quickly!",
+          "name": "Jordan S."
+        },
+        {
           "type": "prose",
           "heading": "We Find Where the Water Really Comes In",
           "body": [
-            "**A leak shows up in one spot and starts in another.** Anthony goes into the attic and onto the roof to trace it, and that is how a leak in a kitchen ceiling turned out to be the chimney chase.",
-            "You pay to fix the real problem, not the one that looked likely."
+            "**A leak shows up in one spot and starts in another.** So we go into the attic and onto the roof to trace it before we quote a fix.",
+            "That's how a stain on a kitchen ceiling turned out to be a leaking chimney chase, not the roof. You pay to fix the real problem, not the one that looked likely."
           ]
         },
         {
@@ -385,19 +372,19 @@
           "items": [
             {
               "title": "Call us",
-              "text": "Tell us what you see: a stain on the ceiling, shingles blown loose, damage after a storm."
+              "text": "Tell us what you see: a stain on the ceiling, shingles in the yard, damage after a storm."
             },
             {
               "title": "We find the source",
-              "text": "We go into the attic and onto the roof, because the spot where water shows up is often not where it gets in."
+              "text": "We check the attic and the roof, because water often shows up far from where it gets in."
             },
             {
               "title": "You get a free quote",
-              "text": "We explain what we found and what it takes to fix it."
+              "text": "We show you what we found and what it takes to fix it."
             },
             {
-              "title": "The crew repairs it",
-              "text": "Our crew gets the work done quickly and picks up when they finish."
+              "title": "Our crew repairs it",
+              "text": "We fix the real source and pick up when the work is done."
             }
           ]
         },
@@ -408,33 +395,32 @@
             "Minor leaks",
             "Wind damage after a bad blow",
             "Storm damage",
-            "Worn spots found during routine maintenance"
+            "Leaks that start around the chimney, not the shingles",
+            "Loose or worn spots found during routine maintenance"
           ]
         },
         {
           "type": "prose",
-          "heading": "Before You Call",
+          "heading": "What Helps Us Find It",
           "body": [
-            "**Tell us when the problem shows up.** A stain that grows after rain, a drip you hear in the wind, or shingles in the yard after a storm all help us know where to look.",
-            "A photo of the ceiling or the yard is useful too. You don't need to climb up there yourself."
+            "**Tell us when the problem shows up.** A stain that grows after rain, a drip you hear in the wind, or shingles in the yard after a storm all tell us where to start looking.",
+            "A photo of the ceiling or the yard helps too. You don't need to climb up there yourself."
           ]
         },
         {
           "type": "prose",
           "heading": "Roof Maintenance",
           "body": [
-            "**Routine maintenance keeps a small problem small.** We look over your roof and take care of what we find before it turns into a leak.",
-            "It costs less to catch a loose spot early than to chase a stain through your ceiling later.",
-            "Call to set up a visit."
+            "**Routine maintenance keeps a small problem small.** We look over your roof and take care of loose or worn spots before they let water in.",
+            "Call (316) 295-2159 to set up a visit."
           ]
         },
         {
           "type": "prose",
           "heading": "Repair or Replace",
           "body": [
-            "**Some roofs are past repairing.** When that's true, we tell you, and we quote a [roof replacement](/roof-replacement-wichita-ks/) in composition shingles, metal or tile.",
-            "If your roof has a few bad spots, we fix those spots. You don't pay for a full roof you don't need.",
-            "When a repair does the job, you pay for a repair."
+            "**If your roof has a few bad spots, we fix those spots.** You don't pay for a full roof you don't need.",
+            "When the damage runs across the whole roof, we tell you that too. See [roof replacement](/roof-replacement-wichita-ks/) for how a new roof goes."
           ]
         },
         {
@@ -447,15 +433,15 @@
             },
             {
               "q": "What if the leak isn't the roof?",
-              "a": "We tell you. A leak in a kitchen ceiling we looked at turned out to be the chimney chase."
+              "a": "We tell you what we find, whether it's the shingles, the chimney or something else, and we quote that fix."
             },
             {
               "q": "What kinds of problems do you fix?",
               "a": "Everything from minor leaks to storm damage, plus routine maintenance."
             },
             {
-              "q": "Do you do routine roof maintenance?",
-              "a": "Yes. We look over your roof and take care of small problems before they become leaks."
+              "q": "Do you fix gutters too?",
+              "a": "Yes. We repair gutters and install gutter guards. Ask about them when you call."
             },
             {
               "q": "How do I reach you?",
@@ -479,7 +465,7 @@
       "hero": {
         "eyebrow": "Contact",
         "h1": "Contact River City Roofing",
-        "sub": "Call us for your free quote, or send a message. We're in Monday to Friday, 8:00 AM to 4:30 PM.",
+        "sub": "Call us for a free quote, or send a message. The office is open Monday to Friday, 8:00 AM to 4:30 PM.",
         "primaryCta": {
           "label": "Call (316) 295-2159",
           "action": "call"
@@ -495,9 +481,14 @@
           "type": "prose",
           "heading": "Call or Write",
           "body": [
-            "**Call (316) 295-2159 for the quickest answer.** Or send us a message.",
+            "**Call (316) 295-2159 and you talk with Anthony or one of our team.** Or send us a message with the form.",
             "We're at 3750 N Topeka St, Wichita, KS 67219, and our work is in Wichita."
           ]
+        },
+        {
+          "type": "review",
+          "quote": "Anthony is very responsive to calls and text messages.  He is great to work with.",
+          "name": "Theresa E."
         },
         {
           "type": "list",
@@ -505,13 +496,9 @@
           "list": [
             "The address of the house",
             "What's wrong, whether that's a leak, wind damage or an old roof",
+            "A photo of the ceiling or the roof, if you have one",
             "Whether you want siding, gutters, paint, windows or a deck done as well"
           ]
-        },
-        {
-          "type": "review",
-          "quote": "Anthony is very responsive to calls and text messages. He is great to work with.",
-          "name": "Theresa E."
         },
         {
           "type": "faq",
@@ -524,6 +511,10 @@
             {
               "q": "When is someone in the office?",
               "a": "Monday to Friday, 8:00 AM to 4:30 PM."
+            },
+            {
+              "q": "Do you work outside Wichita?",
+              "a": "Our work is in Wichita. Call and ask about your address."
             }
           ]
         }
@@ -535,14 +526,14 @@
     "why": [
       "Local, family owned",
       "Free quotes",
-      "Crew cleans up, and we come back after"
+      "We find the real source of a leak"
     ]
   },
   "strategy": {
     "whyHeading": "Why we built this site",
     "why": [
-      "Your customers make your case. You hold a 5.0 on 9 Google reviews, and they say it: \"Anthony crawled into the attic and onto the roof and found that our CHIMNEY CHASE was leaking.\" \"Anthony showed up shortly after they left to make sure I was pleased with the roof.\"",
-      "Your website hides all of it. Its tap-to-call buttons dial 123-456-7890, and no page has a headline that says you're a roofing company in Wichita.",
+      "Your customers make your case. All nine of your Google reviews are five stars, and the written ones keep naming Anthony: he climbed into an attic to find a leaking chimney chase, dealt with an insurance agent, and came back after the crew left to check on a new roof.",
+      "Your website shows none of it. Its tap-to-call links dial 123-456-7890, and no page has a headline that says you're a roofing company in Wichita.",
       "So we built this site around their words."
     ],
     "cardsHeading": "Be the Roofing Company People Find on Google",
@@ -553,9 +544,9 @@
         "title": "Homepage",
         "why": "The page Google reads to learn who you are and where you work.",
         "problems": [
-          "The tap-to-call buttons at the bottom of every page dial 123-456-7890, and the number at the top is plain text, so nobody on a phone can call you in one tap.",
-          "No page shows a headline. The one Google reads says \"Home\", so it can't tell you're a roofing company in Wichita.",
-          "None of your Google reviews appear anywhere on the site."
+          "The tap-to-call links at the bottom of every page dial 123-456-7890, and the number at the top can't be tapped, so nobody on a phone can call you in one tap.",
+          "No page shows a headline. The hidden one Google reads says \"Home\", so it can't tell you're a roofing company in Wichita.",
+          "None of your Google reviews appear on the site, so visitors never see what your customers say."
         ],
         "fixes": [
           "Your number is one tap to call, on every page.",
@@ -569,12 +560,12 @@
         "title": "Roof Replacement",
         "why": "A new roof is a big decision, and it has no page of its own.",
         "problems": [
-          "One \"Roofing\" page covers every kind of roof job, so nobody searching for roof replacement in Wichita lands on a page about it.",
-          "Nothing on the page says what a customer gets: the estimate, the cleanup, the follow-up."
+          "One \"Roofing\" page covers every kind of roof job, so someone searching for roof replacement in Wichita doesn't land on a page about it.",
+          "It never shows what your customers praise: the cleanup and the visit after the crew leaves."
         ],
         "fixes": [
           "A full page for roof replacement in Wichita, KS: materials, the detailed estimate and the steps of the job.",
-          "A review from a customer whose crew picked up after the job and who got a visit afterward."
+          "The cleanup and the visit afterward, with the review that proves them."
         ],
         "alsoAdd": "Pages planned from what Google actually shows for each search, so every page targets something people really look for."
       },
@@ -588,19 +579,17 @@
         "fixes": [
           "A full page for roof repair in Wichita, KS, with the chimney chase leak and the wind damage told in your customers' words."
         ],
-        "alsoAdd": "A check of what your competitors offer, so services you didn't think to mention still get their own pages."
+        "alsoAdd": "A check of what your competitors offer, so services you didn’t think to mention still get their own pages."
       },
       {
         "route": "/contact/",
         "title": "Contact",
         "why": "Where a ready customer reaches you.",
         "problems": [
-          "The site shows no email address, so there's nothing to write to.",
-          "The number at the bottom dials a placeholder, and the number on the roofing page is plain text."
+          "The number at the bottom dials a placeholder, and the number on your roofing page can't be tapped."
         ],
         "fixes": [
-          "Your real number one tap away, with your hours and your address.",
-          "A short list of what to have ready."
+          "Your real number one tap away, with your hours, your address and what to have ready."
         ],
         "alsoAdd": "Call and form tracking that shows which pages and towns your leads come from."
       }
@@ -624,38 +613,46 @@
         "status": "Missing"
       },
       {
-        "label": "Email address shown",
+        "label": "Each page written for its own trade (windows page mentions painters)",
+        "status": "Needs work"
+      },
+      {
+        "label": "Logo links to your own web address",
+        "status": "Needs work"
+      },
+      {
+        "label": "Certification badges or numbers shown",
         "status": "Missing"
       },
       {
-        "label": "Copy written for your trade",
-        "status": "Needs work"
-      },
-      {
-        "label": "Claims you can back up",
-        "status": "Needs work"
+        "label": "Email address shown",
+        "status": "Missing"
       }
     ],
     "closing": {
       "heading": "Want a website like this for your business?",
-      "text": "Your customers already tell people you handled it right. Book a strategy call with Fluid Frame and we'll walk you through this demo and plan your new site."
+      "text": "Book a strategy call with Fluid Frame, and we'll walk you through this demo and plan your new site."
     }
   },
   "onboardingQuestions": [
-    "Who is Anthony (owner, partner, manager), and what is his surname? Can the site name him and say how he is introduced?\n",
-    "Who is the owner? BuildZoom lists Wilbur Engel; the site names no one. May we use the name?\n",
-    "Legal name: River City Roofing, LLC (site footer) or Honey Do Homes, LLC dba River City Roofing (logo and BuildZoom)?\n",
-    "Since when? The site says 2011; listings say 13 years, 14 years and 2003. No founding year is on the demo until confirmed.\n",
-    "Certifications: GAF (which level, contractor number), Andersen, Pella and CAPS. Proof for each, or we drop them. None is on the demo.\n",
-    "BBB, Wichita Chamber and WABA: are they members, and can we show it?\n",
-    "Kansas roofing licence CT-13-116090: active or expired?\n",
-    "Phone: (316) 295-2159 is on the demo. Does (316) 312-8657 (BuildZoom, Houzz) go to the office?\n",
-    "Email address for the business? None is shown on the site.\n",
-    "Insurance help: one customer (Kamden B.) had Anthony handle the agent and forms. Do you offer that to every roof customer? The demo calls it track record only.\n",
-    "Warranty, financing and free inspections: do you offer them? None is on the demo (free quote only).\n",
-    "Service area: Wichita only, or do you travel to nearby towns? The site says \"throughout Kansas\" with no towns.\n",
-    "Hours: Monday to Friday, 8:00 AM to 4:30 PM, no weekend or storm-call hours?\n",
-    "Services to confirm: roof maintenance, gutters and guards, painting, windows, deck staining. Which are the biggest earners, and should any get its own page?\n",
-    "Photos of real jobs, and the owner's okay to use the Google reviews on the site.\n"
+    "Who is Anthony (owner, partner, manager), and what is his surname? Can the site name him and say how he is introduced?",
+    "Who is the owner? BuildZoom lists Wilbur Engel; the site names no one. May we use the name?",
+    "Legal name: River City Roofing, LLC (site footer) or Honey Do Homes, LLC dba River City Roofing (logo and BuildZoom)?",
+    "Since when? The site says 2011; listings say 13 years, 14 years and 2003. No founding year is on the demo until confirmed.",
+    "Certifications: GAF (which level, contractor number), Andersen, Pella and CAPS. Proof for each, or we drop them. None is on the demo.",
+    "BBB, Wichita Chamber and WABA: are they members, and can we show it?",
+    "Kansas roofing licence CT-13-116090: active or expired?",
+    "Phone: (316) 295-2159 is on the demo. Does (316) 312-8657 (BuildZoom, Houzz) go to the office?",
+    "Email address for the business? None is shown on the site.",
+    "Insurance help: one customer (Kamden B.) had Anthony handle the agent and forms. Do you offer that to every roof customer? The demo calls it track record only.",
+    "Warranty, financing and free inspections: do you offer them? None is on the demo (free quote only).",
+    "Service area: Wichita only, or do you travel to nearby towns? The site says \"throughout Kansas\" with no towns.",
+    "Hours: Monday to Friday, 8:00 AM to 4:30 PM, no weekend or storm-call hours?",
+    "Services to confirm: roof maintenance, gutters and guards, painting, windows, deck staining. Which are the biggest earners, and should any get its own page?",
+    "Photos of real jobs, and the owner's okay to use the Google reviews on the site.",
+    "Cleanup and the visit after the job: does the crew walk the yard for debris, and does someone come back after every new roof? The demo states cleanup and a final inspection as how a new roof goes, and the return visit only as track record (Kamden B.).",
+    "Painters: your own crew or another company you send? The demo avoids saying one crew does everything.",
+    "Can customers text (316) 295-2159? A review mentions texting Anthony; the demo says call only.",
+    "Routine roof maintenance: what does a visit include, and how is it priced?"
   ]
 }
