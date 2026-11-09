@@ -29,7 +29,7 @@ If you have a particular spot that bothers you every day, tell me on the phone. 
 
 ## Good Times to Book One
 
-Most people call for a deep clean at a turning point.
+Deep cleans tend to happen at a turning point.
 
 - Before family or friends stay with you
 - When a season changes and the house needs a fresh start
@@ -45,6 +45,14 @@ A house changing hands is a one-time clean with a deadline. One of our customers
 > — Ryan W.
 
 If you're listing a house or leaving a rental, call me and we'll talk about what the house needs before the showing or the walk-through.
+
+## Why Some Messes Need a Deep Clean
+
+Not every kind of dirt behaves the same way. Fresh grease wipes up. Baked-on grease on an oven wall has cooked into a hard layer.
+
+Mineral deposits from hard water do the same thing on shower glass and faucets. A little each week is easy. A year of it takes real time and the right product.
+
+That's why a reset costs more time than a regular visit, and why it's worth doing once and then keeping up.
 
 ## After the Deep Clean
 

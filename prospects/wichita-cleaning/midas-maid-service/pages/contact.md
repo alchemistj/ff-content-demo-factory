@@ -22,6 +22,10 @@ Prefer to write? Send a note to info@midasmaidservice.com.
 - Pets or small children at home
 - The days that work best for you
 
+## Not Sure Which Service?
+
+If you're not sure whether you need a recurring plan or a deep clean first, call and ask. It takes a minute to sort out.
+
 ## Where We Are
 
 Mida's Maid Service, 2514 W Douglas Ave., Wichita, KS 67203. We clean in Wichita and the surrounding areas.

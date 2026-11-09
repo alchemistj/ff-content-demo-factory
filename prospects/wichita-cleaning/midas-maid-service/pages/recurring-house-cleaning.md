@@ -2,7 +2,7 @@
 
 # Recurring House Cleaning in Wichita, KS
 
-I'm Mida. Recurring cleaning is most of what we do, and it's why families have stayed with us for 8 and 16 years. Every visit holds the same standard, and I tell you when the ladies will arrive. Call me to set up your plan.
+I'm Mida. Recurring cleaning is most of what we do, and families have stayed with us for 8 and 16 years because every visit holds the same standard. Call me to set up your plan.
 
 **Buttons:** Call (316) 295-3513 | Request a Quote
 
