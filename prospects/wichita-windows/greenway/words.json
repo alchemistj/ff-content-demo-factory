@@ -628,7 +628,7 @@
     "whyHeading": "Why we built this site",
     "why": [
       "All 87 of your Google reviews are five stars, and your customers say why in their own words: \"no high pressure sales\", \"about half the price of the bigger companies you see all over media\", and a crew that \"didn't waste any daylight.\"",
-      "Your site has a page for every service and loads fast. But on a phone, the first screen never says what you do or shows your number, and two claims on it don't match BBB. So we rebuilt it around what your customers praise, with John up front."
+      "Your site has a page for every service and loads fast. But on a phone, the first screen hides what you do and your number, and two claims don't match BBB. So we rebuilt it around what your customers praise."
     ],
     "cardsHeading": "Be the Exterior Company People Find on Google",
     "cardsIntro": "Each card is one page of the demo: what costs you calls today, and how the demo fixes it.",
@@ -638,13 +638,13 @@
         "title": "Homepage",
         "why": "The first page people see, and the one Google reads to learn who you are and where you work.",
         "problems": [
-          "On a phone, the top of your homepage is a financing bar, your logo and a photo. Your headline and number sit a full screen down, so visitors can't see what you do or call without scrolling.",
-          "The headline names two services, never the kind of company you are, so Google can't match you to \"exterior remodeling company Wichita\". Siding comes first, though windows and doors are about 44% of your written reviews.",
-          "It says \"over 15 years\", your siding page says \"since 2012\", and BBB shows 14. A homeowner who spots that starts doubting the rest."
+          "On a phone, the top of your homepage is a financing bar, your logo and a photo. Your headline and number sit a full screen down, out of sight.",
+          "The headline names two services, not the kind of company you are, so Google can't match you to \"exterior remodeling company Wichita\".",
+          "It says \"over 15 years\", your siding page says \"since 2012\", and BBB shows 14. A homeowner who spots that doubts the rest."
         ],
         "fixes": [
           "Your headline and your number, one tap, at the very top.",
-          "A headline that says exterior remodeling company in Wichita, KS, with windows and siding given equal room.",
+          "A headline that says exterior remodeling company in Wichita, KS.",
           "One start date: since 2012."
         ],
         "alsoAdd": "Every page set up behind the scenes so Google and AI tools like ChatGPT know exactly what you do, where you work, and what your customers say."
@@ -652,10 +652,10 @@
       {
         "route": "/window-replacement-wichita-ks/",
         "title": "Window Replacement",
-        "why": "Windows and doors are about 44% of your written reviews, so this page should win \"window replacement Wichita\".",
+        "why": "Windows and doors are about 44% of your written reviews.",
         "problems": [
           "The \"CALL\" line at the top is plain text, so a phone visitor has to type your number by hand.",
-          "The page claims \"BBB accreditation\", but BBB lists you as not accredited. A careful buyer can check that in a minute and walk away."
+          "The page claims \"BBB accreditation\", but BBB lists you as not accredited, and a careful buyer can check that in a minute."
         ],
         "fixes": [
           "Your number, one tap, at the top of the page.",
@@ -668,7 +668,7 @@
         "title": "Siding Replacement",
         "why": "Siding and trim are about 45% of your written reviews.",
         "problems": [
-          "Your menu lists nine siding pages, mostly by material, and none says you'll take on one wall or a chimney, the small jobs your reviews say other companies turned down.",
+          "Your menu lists nine siding pages by material, and none says you'll do one wall or a chimney, jobs your reviews say others turned down.",
           "\"Gutters\" in your menu opens the homepage instead of a page."
         ],
         "fixes": [
@@ -682,7 +682,7 @@
         "title": "Contact",
         "why": "Where interest turns into a call.",
         "problems": [
-          "Your hours read \"Monday-Sunday, 24 Hours\", which sounds like a template, not a local crew a homeowner can trust."
+          "Your hours read \"Monday-Sunday, 24 Hours\", which sounds like a template, not a local crew."
         ],
         "fixes": [
           "Your number and address together, with what to have ready.",

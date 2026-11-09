@@ -581,12 +581,12 @@
   "strategy": {
     "whyHeading": "Why we built this site",
     "why": [
-      "When hail hits Wichita, homeowners want one company for the roof, the insurance and the clean-up. Your Google reviews say that is you: roofs, hail and insurance come up most. One customer wrote, \"They worked with the insurance company to get the money needed for repairs.\"",
+      "When hail hits Wichita, homeowners want one company for the roof, the insurance and the clean-up. Your Google reviews say that is you; roofs, hail and insurance come up most. One wrote, \"They worked with the insurance company to get the money needed for repairs.\"",
       "Your website never says roofing. Its top line says \"Remodeling & Renovation Contractors\", so someone searching for a roofing company in Wichita may never see you. Its phone number also differs from your Google profile, and two numbers can cost you both calls.",
       "So we built a demo that leads with roofing and hail damage, gives siding, windows and doors a page, and shows one number everywhere."
     ],
     "cardsHeading": "Be the Roofing Company People Find on Google",
-    "cardsIntro": "Each card is one demo page: what costs you calls today, and the fix.",
+    "cardsIntro": "Each card is one demo page: what costs you calls, and the fix.",
     "cards": [
       {
         "route": "/home/",
@@ -594,8 +594,8 @@
         "why": "The page Google reads to learn who you are and where you work.",
         "problems": [
           "The top of your homepage says \"Remodeling & Renovation Contractors in Wichita, KS\" and never says roofing, so Google can't tell a homeowner searching for a roofer that you are one.",
-          "The number on your site, 316.776.4748, is not the one on your Google profile, (316) 685-1010, so a customer who finds both may call neither.",
-          "Your three testimonials are reworded, so they read like ad copy, not customers."
+          "Your site's number, 316.776.4748, is not your Google number, (316) 685-1010, so a customer who finds both may call neither.",
+          "Your three testimonials are reworded, so they don't match what customers can read on Google."
         ],
         "fixes": [
           "A headline that says roofing company in Wichita, KS, right at the top.",
@@ -613,7 +613,7 @@
         ],
         "fixes": [
           "A full page for roof replacement and hail damage repair in Wichita, KS.",
-          "A section on working with your adjuster, with a customer's words beside it."
+          "A section on working with your adjuster, proved by a customer."
         ],
         "alsoAdd": "Pages planned from what Google actually shows for each search, so every page targets something people really look for."
       },
