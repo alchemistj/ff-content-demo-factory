@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Checks a words package against docs/words-package.md.
+// Checks a words package against docs/words-package.md. Hard failures FAIL; taste checks only WARN (Josh, 2026-11-09: spirit of the law).
 // Usage: node scripts/check-words-package.mjs prospects/<market>/<slug>
 import fs from "node:fs";
 import path from "node:path";
@@ -102,9 +102,9 @@ for (const p of pages) {
   for (const s of p.sections || []) {
     if (s.type === "review") continue;
     const txt = [s.heading, s.intro, s.text, ...(s.body || []), ...(s.list || []), ...(s.items || []).flatMap((i) => [i.title, i.text, i.q, i.a])].filter(Boolean).join(" ");
-    for (const [re, label] of voiceBad) if (re.test(txt)) fail(`${p.route}: ${label}: "${(txt.match(re) || [""])[0]}" in "${(s.heading || s.type)}"`);
+    for (const [re, label] of voiceBad) if (re.test(txt)) warn(`${p.route}: ${label}: "${(txt.match(re) || [""])[0]}" in "${(s.heading || s.type)}"`);
   }
-  for (const [re, label] of voiceBad) if (re.test([p.hero?.sub].join(" "))) fail(`${p.route} hero: ${label}`);
+  for (const [re, label] of voiceBad) if (re.test([p.hero?.sub].join(" "))) warn(`${p.route} hero: ${label}`);
 }
 
 // 6. Lengths (approximate rendered count)
@@ -118,12 +118,12 @@ const chrome = words("← See why we built this site") + 2 * pages.filter((p) =>
 const footerWords = words(pkg.footer?.about) + pkg.services.reduce((n, s) => n + words(s.name), 0) + words(b.serviceArea?.summary) + (b.phones || []).reduce((n, p) => n + words(p.label) + words(p.display), 0) + words(b.email) + words(b.hours) + (pkg.footer?.why || []).reduce((n, w) => n + words(w), 0);
 const trust = pkg.trustBar.reduce((n, t) => n + words(t), 0);
 // Josh, 2026-11-09: thin copy is the problem, not long copy. Fail below the minimum; above the soft size, only flag it for a look.
-const ranges = { home: [550, 900], service: [700, 1150], contact: [250, 600] };
+const ranges = { home: [900, 1400], service: [700, 1200], contact: [150, 600] }; // copy words only (Josh, 2026-11-09: menus, footer, trust bar and reviews no longer count)
 for (const p of pages) {
-  const n = pageTexts(p).reduce((a, t) => a + words(t), 0) + chrome + footerWords + trust;
+  const n = pageTexts(p).filter((t) => !(p.sections || []).some((x) => x.type === "review" && (x.quote === t || x.name === t))).reduce((a, t) => a + words(t), 0); void chrome; void footerWords; void trust;
   const [lo, hi] = ranges[p.role];
-  if (n < lo) fail(`${p.route}: about ${n} rendered words, too thin (minimum ${lo})`);
-  else if (n > hi) warn(`${p.route}: about ${n} rendered words; long, check for filler (soft size ${hi})`);
+  if (n < lo) fail(`${p.route}: about ${n} words of copy, too thin (minimum ${lo})`);
+  else if (n > hi) warn(`${p.route}: about ${n} words of copy; long, check for filler (soft size ${hi})`);
   else info.push(`${p.route}: about ${n} rendered words (minimum ${lo})`);
   // One fact, said once per page: years in business, a "since" year, the warranty, the price promise. Trust bar and footer don't count.
   const body = [p.hero?.eyebrow, p.hero?.sub, ...(p.sections || []).filter((x) => x.type !== "review").flatMap((x) => [x.heading, x.intro, x.text, ...(x.body || []), ...(x.list || []), ...(x.items || []).flatMap((i) => [i.title, i.text, i.q, i.a])])].filter(Boolean).join(" \n ");
@@ -135,7 +135,7 @@ for (const p of pages) {
   ];
   for (const [re, label] of facts) {
     const hits = (body.match(re) || []).map((h) => h.toLowerCase());
-    if (hits.length > 1) fail(`${p.route}: ${label} is said ${hits.length} times on one page (${[...new Set(hits)].join(", ")}); say it once`);
+    if (hits.length > 1) warn(`${p.route}: ${label} is said ${hits.length} times on one page (${[...new Set(hits)].join(", ")}); say it once`);
   }
 }
 const st = pkg.strategy || {};
@@ -148,7 +148,7 @@ for (const p of pages) {
   const sents = new Set(pageTexts(p).flatMap((t) => strip(t).split(/(?<=[.!?])\s+/)).filter((s) => words(s) >= 8).map((s) => s.toLowerCase()));
   for (const s of sents) { const r = seen.get(s) || []; r.push(p.route); seen.set(s, r); }
 }
-for (const [s, r] of seen) if (r.length > 2) fail(`sentence on ${r.length} pages (${r.join(", ")}): "${s.slice(0, 70)}…"`);
+for (const [s, r] of seen) if (r.length > 2) warn(`sentence on ${r.length} pages (${r.join(", ")}): "${s.slice(0, 70)}…"`);
 
 // 8. Copy must not retell a review (Josh, 2026-11-09). State the benefit in general terms; the review supplies the specifics.
 // Fails when business-page copy (outside review blocks) repeats a review's numbers ("five basement windows in four hours")
@@ -173,7 +173,7 @@ if (reviews) {
     const ts = toks(t);
     const hitN = numPairs(ts).filter((x) => revNums.has(x) && !ownNums.has(x));
     const hitG = grams(ts).filter((g) => revGrams.has(g));
-    if (hitN.length || hitG.length) fail(`${where}: copy retells a review (${[...hitN.map((x) => `"${x}"`), ...hitG.slice(0, 2).map((g) => `"${g}"`)].join(", ")} from ${revNums.get(hitN[0]) || revGrams.get(hitG[0])}); state the benefit, let the review give the details: "${strip(t).slice(0, 80)}…"`);
+    if (hitN.length || hitG.length) warn(`${where}: copy retells a review (${[...hitN.map((x) => `"${x}"`), ...hitG.slice(0, 2).map((g) => `"${g}"`)].join(", ")} from ${revNums.get(hitN[0]) || revGrams.get(hitG[0])}); state the benefit, let the review give the details: "${strip(t).slice(0, 80)}…"`);
   }
 }
 

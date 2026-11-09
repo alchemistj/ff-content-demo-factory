@@ -12,6 +12,7 @@ One writer model completes the package in **one writer run**. The headings below
 
 ## What to read
 
+0. [HOW_TO_WRITE_A_PAGE.md](HOW_TO_WRITE_A_PAGE.md) — **start here:** the method (plan, write the page as a page, read it as owner and visitor) and the approved Evolve before-and-after
 1. [FLUID_FRAME_DEMO_WRITING_GUIDE.md](FLUID_FRAME_DEMO_WRITING_GUIDE.md) — overall job, truth, judgment, quotations, mobile/emphasis, Strategy Overview boundary
 2. The page-role guide for the pages you are writing
 3. [Approved Springfield examples](../../examples/approved-copy/README.md) — finished work from Window Dudes, SRA, and Greene Planet

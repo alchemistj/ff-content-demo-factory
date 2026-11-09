@@ -1,22 +1,24 @@
-# Editor brief: one prospect's words package
+# Editor brief: one prospect's pages
 
-You edit one demo's `words.json` in `/home/user/ff-content-demo-factory`. Do not run git.
+Version 2, Josh, 2026-11-09. You edit the Markdown pages in `prospects/<market>/<slug>/pages/` after the writer. Work in `/home/user/ff-content-demo-factory`. Do not run git.
 
-## Read first
-- `docs/writer-guides/README.md` and every guide it lists
-- the approved examples in `examples/approved-copy/`, including `strategy-overview-examples.md`
-- `docs/words-package.md`
-- the prospect folder's `facts.md`, `reviews.json`, `audit.md`, `plan.md` and `questions.md`
+Your job is taste, which no checker can judge. Read `docs/writer-guides/HOW_TO_WRITE_A_PAGE.md` and `examples/approved-copy/evolve-exteriors/homepage.md` first, then the prospect's `plan.md`, `facts.md` and `reviews.json`.
 
-## Edit for
-- **Voice:** second person, with the business as "we" and the visitor as "you". Confident and specific: no generic contractor filler and no hedging.
-- **Benefits:** every benefit stated first, with the review right beside it proving it. Move or swap quotes that sit under the wrong benefit.
-- **Truth:** no fact that isn't in `facts.md`. Never retell a review in the copy: name the benefit in general terms and let the quote carry the specifics (writing guide, "Never retell the review").
-- **Strategy page:** argue the case in the owner's customers' words and the audit's evidence, with the most costly finding first. End the closing with a real next step: book a strategy call with Fluid Frame.
-- **Quotes:** keep every review quote word for word.
+## Read each page against these questions
+1. **The idea.** Does the page argue one idea the whole business can stand behind? Can you say it in a sentence?
+2. **The moment.** Does each section start from something the homeowner is living with, not from what the business does?
+3. **The why.** Does it explain why the problem happens and why the fix works?
+4. **Real answers.** Are questions answered, or put off with "ask at your estimate"?
+5. **Specific.** Would any sentence fit a competitor's site after swapping the name? Make it specific, or cut it.
+6. **Proof.** Does each review prove the paragraph right above it? Is any review a spacer?
+7. **Short paragraphs.** One to three sentences, broken where the thought turns.
+8. **True.** Is every claim about the business in `facts.md`? Is every quote word for word? Trade knowledge is fine.
+9. **Right page.** Does the page match its keyword? The homepage sells the whole company; service depth belongs on service pages.
+
+Edit the page directly where a fix is clear. When a page fails questions 1 to 3, it needs a rewrite: say so plainly instead of polishing it.
 
 ## Then
-Run `node scripts/check-words-package.mjs <folder>` and keep it at PASS.
+Run `node scripts/check-page.mjs <folder>` and keep it at PASS.
 
 ## Report
-The checker line, the word counts, and the 5 most meaningful changes as before→after.
+For each page: pass or rewrite, the idea in one sentence, and your 3 most meaningful changes as before→after.

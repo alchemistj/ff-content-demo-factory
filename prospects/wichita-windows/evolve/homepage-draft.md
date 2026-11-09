@@ -94,7 +94,9 @@ If the budget says windows this year and siding next year, that works too. Plent
 
 ## Wichita, Oklahoma City and 150 Miles Around
 
-We have a hub in each city and work within 150 miles of both. On the Kansas side that includes Haysville, Derby, Mulvane, El Dorado, McPherson, Salina and Emporia. In Oklahoma it includes Edmond, Yukon, Guthrie and Ponca City. Call the office closest to you.
+We have a hub in each city and work within 150 miles of both.
+
+On the Kansas side that includes Haysville, Derby, Mulvane, El Dorado, McPherson, Salina and Emporia. In Oklahoma it includes Edmond, Yukon, Guthrie and Ponca City. Call the office closest to you.
 
 ## Questions Before You Call
 
@@ -115,4 +117,6 @@ Yes, including low-to-no-interest options. Ask about it at your consultation.
 
 ## Get a Straight Look at Your House
 
-Call and one of us will come out, look at your windows, siding or doors, and give you a price, with no pressure to sign that day. Wichita: (316) 435-8009. Oklahoma City: (405) 363-2294. Monday to Friday, 9:00 AM to 5:00 PM.
+Call and one of us will come out, look at your windows, siding or doors, and give you a price, with no pressure to sign that day.
+
+Wichita: (316) 435-8009. Oklahoma City: (405) 363-2294. Monday to Friday, 9:00 AM to 5:00 PM.

@@ -83,14 +83,16 @@ Check it with `node scripts/check-words-package.mjs prospects/<market>/<slug>`. 
 - The template supplies only fixed chrome. The full chrome list: "← See why we built this site", the nav labels from `pages[].navLabel`, the footer column headings ("Services", "Service area", "Contact", "Why choose us"), the copyright line, and on the strategy page the Fluid Frame header, the SRA Roofing case study, the full-build list from `full-build-lines.md`, and the phone bar.
 
 ## What the checker enforces
+Hard failures only (Josh, 2026-11-09: spirit of the law). Taste lives in `docs/writer-guides/HOW_TO_WRITE_A_PAGE.md` and the editor pass; a passing checker does not mean a page is good.
+
+**FAIL**
 1. **Shape.** Every required field is present, with one home page, at least one service page and one contact page.
 2. **Quotes.** Every `review` quote appears word for word in `reviews.json` from a five-star review, attributed as first name plus last initial, and each review is used once.
-3. **Keywords.** The homepage H1 starts with `business.companyType in <City>, <ST>` and names one city. Service page H1s do not contain the company-type phrase. No two pages share a `keyword`.
-4. **Voice.**
-   - No "customers tell us / customers say / most people notice / one customer / your reviews" sentences on business pages.
-   - No "The crew… They…" narration.
-   - No website-quality claims ("professional website", "mobile-friendly experience", "this mockup").
-5. **Every number.** Every `business.phones` entry has a valid `tel`.
-6. **Lengths (Josh, 2026-11-09: thin is the problem, not long).** Words are counted the way the rendered page will count them: page words plus trust bar, footer and fixed chrome. Below the minimum fails: home 550, service 700, contact 250. Above the soft size it is only flagged for a look: home 900, service 1,150, contact 600. Strategy stays at 1,000 or fewer.
-7. **Repetition.** No sentence of 8 or more words appears on more than two business pages (trust bar and footer excepted). On any one page, years in business, a "since" year, the lifetime warranty and the price-beat promise are each said once in the body (review quotes, trust bar and footer don't count).
-8. **No retold reviews (Josh, 2026-11-09).** Copy outside review blocks (hero, sections, service blurbs, footer) must not repeat a review's numbers ("five basement windows", "four hours") or a phrase of three or more content words from any review in `reviews.json`. Name the benefit; the quote carries the details.
+3. **Keywords.** The homepage H1 starts with `business.companyType in <City>, <ST>` and names one city. Service page H1s do not contain the company-type phrase, and each covers one service. No two pages share a `keyword` and no two services share a route.
+4. **Every number.** Every `business.phones` entry has a valid `tel`.
+5. **Not thin.** Words of copy, not counting reviews, menus, footer or trust bar: home at least 900, service at least 700, contact at least 150. Strategy stays at 1,000 or fewer rendered words.
+
+**WARN (look, then use judgment)**
+- Voice slips: "customers tell us", "The crew… They…", third-person owner sentences, website-quality claims.
+- The same fact said again and again on one page, or a sentence of 8+ words on three or more pages.
+- Copy that repeats a review's numbers or phrases right where the review already says it.
