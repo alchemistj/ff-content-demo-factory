@@ -63,3 +63,14 @@ Canonical craft-guide wording and the Springfield example library live in `docs/
 - Qualified businesses not picked today stay in the backlog for the next run.
 - Never filter the search by Google category. Owners often pick the wrong primary category, so real prospects hide under the wrong one. Judge each business by its name, website and reviews instead.
 - Find the owner's first name in the reviews and the owner's replies to reviews too, not only on the website (reviews named the owner for two of four businesses in the Nov 7 run).
+- Qualify from the business's own website and the web (Sonnet), never from a review pull. Apify review pulls are the scarcer budget: pull reviews only for the final picks, for writing the words (Josh, 2026-11-08).
+- Fit for a trade search means the trade is what they really do: for a window search, windows and doors are the headline of their own site or about half their services (siding usually comes with it). Not filtering by category is about the label; fit is about the work (Josh, 2026-11-08).
+- Three kinds of business, three offers: (1) a small specialist with a weak site gets a 5-page demo; (2) a handyman, general contractor or exterior remodeler that does many things gets a demo built around what their reviews show they really do (homepage H1 broad enough for their main work, separate pages for the money services, and a strategy page that tells the owner "your reviews say X, your site says Y"); (3) an established multi-page exterior remodeler is too big for a 5-page demo: log it as "too big for a demo" and skip for now.
+- A brand certification or dealer status (Pella, Andersen, GAF, Owens Corning, Mitsubishi...) ranks a prospect higher but is not required. Only call it certified on a demo when the manufacturer's own locator confirms it (link in the facts file); if the locator can't be checked, leave it for the onboarding call.
+
+## The offer (Josh, 2026-11-08)
+
+- Most businesses: one-time $300 setup, then $125 a month. It fixes their website design problem for good (no more "© 2021" in the footer) for a small, predictable cost.
+- With custom images of their own work added: about $700 one-time setup.
+- For the few who are hungry for growth: the full SRA system, for far less than they expect, because they are pricing it in WordPress-era terms.
+- Goal: about 30 clients at $125 a month, across trades (handymen, chiropractors and barbers count as much as window companies).
