@@ -89,8 +89,8 @@ If the budget says windows this year and siding next year, that works too. Plent
 
 1. **We look at your house.** One of us comes out, measures and looks over what you want done. A window consultation takes about an hour and a half; siding takes about an hour. You see the products up close and get the price.
 2. **We order your materials.** Windows are built to your measurements, so plan on a few weeks. We give you the install date when you order.
-3. **The crew does the work.** They show up in the morning and cover and protect your house and yard first. They haul away the old windows, siding and trash when they're done.
-4. **We check back.** Before the crew leaves, they walk you through the finished job. Then one of us follows up to make sure everything is right.
+3. **Our crew does the work.** We show up in the morning and cover and protect your house and yard first. When we're done, we haul away the old windows, siding and trash.
+4. **We check back.** Before we leave, we walk you through the finished job. Then one of us follows up to make sure everything is right.
 
 ## Wichita, Oklahoma City and 150 Miles Around
 

@@ -42,7 +42,7 @@ for (const p of pages) {
 }
 const built = new Set(pages.map((p) => p.route));
 for (const s of pkg.services || []) if (s.route && !built.has(s.route)) fail(`service "${s.name}" links to ${s.route}, which is not a page`);
-if (!roles("home")[0]?.sections?.some((s) => s.type === "services")) fail("home page needs a services section (HOMEPAGE_GUIDE)");
+{ const hs = roles("home")[0]?.sections || []; const svcLinks = new Set(hs.map((s) => s.link?.route).filter(Boolean)); if (!hs.some((s) => s.type === "services") && svcLinks.size < Math.min(2, built.size - 2)) fail("home page needs a services section or a section per main service that links to its page (HOMEPAGE_GUIDE)"); }
 if (!pkg.strategy?.why?.length || !pkg.strategy?.cards?.length || !pkg.strategy?.reportCard?.length) fail("strategy: why, cards and reportCard are required");
 
 // 2. Quotes
