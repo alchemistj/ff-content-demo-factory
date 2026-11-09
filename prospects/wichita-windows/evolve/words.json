@@ -126,7 +126,7 @@
           }
         },
         {
-          "type": "split",
+          "type": "prose",
           "heading": "Replacement Windows",
           "body": [
             "Most of our work is windows. People usually call us because of a room that never gets comfortable, curtains that move with the window shut, fog between the panes, or a sash that sticks.",
@@ -138,11 +138,6 @@
           "link": {
             "label": "See window replacement →",
             "route": "/window-replacement-wichita-ks/"
-          },
-          "image": {
-            "slot": "home-windows",
-            "alt": "Sunlit living room with a large picture window and still sheer curtains",
-            "brief": "sunlit living room with a large picture window on the right, sheer curtains hanging still, the room opening toward the left, calm neutral wall behind the text side, no readable text, no people"
           }
         },
         {
@@ -151,7 +146,7 @@
           "name": "Ashley K."
         },
         {
-          "type": "prose",
+          "type": "split",
           "heading": "Vinyl Siding",
           "body": [
             "Siding takes the Kansas wind, hail and summer sun before anything else on the house does.",
@@ -162,6 +157,11 @@
           "link": {
             "label": "See vinyl siding →",
             "route": "/vinyl-siding-wichita-ks/"
+          },
+          "image": {
+            "slot": "home-windows",
+            "alt": "Sunlit living room with a large picture window and still sheer curtains",
+            "brief": "sunlit living room with a large picture window on the right, sheer curtains hanging still, the room opening toward the left, calm neutral wall behind the text side, no readable text, no people"
           }
         },
         {
@@ -276,7 +276,7 @@
       "hero": {
         "eyebrow": "Energy efficient windows",
         "h1": "Window Replacement in Wichita, KS — Evolve Exteriors",
-        "sub": "We measure every opening, install your new windows and haul the old ones away.",
+        "sub": "We're Colton and Riley. We measure your windows, show you the actual window and give you a price with no pressure to sign that day, then our crew installs them, usually in a day. Call for a free estimate.",
         "primaryCta": {
           "label": "Call (316) 435-8009",
           "action": "call"
@@ -294,52 +294,75 @@
       "sections": [
         {
           "type": "review",
-          "quote": "Fast turn around from sale to install. Communication was excellent during entire process. Installation crew was on time, professional and personable.",
-          "name": "Tammy A."
+          "quote": "We have a very old house, I was concerned it might be quite the task to change our windows. These guys made it an absolute breeze!! We had 14 windows replaced and a sliding glass door, they got it done quickly and it looks great!! I can sit in my office and the curtains do not move anymore!!",
+          "name": "Jennifer M."
         },
         {
           "type": "split",
-          "heading": "One Window or the Whole House",
+          "heading": "A Window Quote With No Clock Running",
           "body": [
-            "**Replace the window that bothers you most, or every window you own.** A small job gets the same care as a whole house.",
-            "Pick the style that fits how you use each room:"
-          ],
-          "list": [
-            "**Casement and double hung** for the rooms you open every day",
-            "**Double sliding, center vent and end vent sliding** for wide openings",
-            "**Awning and hopper** for basements and small spaces",
-            "**Picture and bay** for the big views"
+            "Shopping for windows often goes the same way. A salesperson spends an evening at your table, the price drops if you sign tonight, and the number is still more than you planned to spend.",
+            "We do it differently. One of us comes to your house, measures every opening and shows you the window itself: how it's built, how it opens, how it cleans.",
+            "Then you get the price, and you can take your time with it. Do the whole house now, or a few rooms at a time."
           ],
           "image": {
             "slot": "windows-styles",
             "alt": "Bay window seen from inside a dining room",
             "brief": "bay window from inside a dining room, bay on the right, wall and table edge calm and out of focus on the left, no readable text, no people"
-          },
-          "imageSide": "right"
-        },
-        {
-          "type": "review",
-          "quote": "The install crew came out and replaced 5 basement windows in 4 hours. They are sealed and trimmed out and look great.",
-          "name": "Debbie G."
+          }
         },
         {
           "type": "prose",
-          "heading": "Older Homes and Crooked Openings",
+          "heading": "Signs Your Windows Are Costing You",
           "body": [
-            "**Old houses rarely have square openings, and we fit them anyway.** We work each new window into the frame and trim you already have, then finish the edges so the room looks clean.",
-            "That goes for upper floors and storm-damaged openings too, not just the easy ground-floor windows."
+            "Most people don't replace windows on a whim. Something tips them off. These are the problems we hear about most, and what each one usually means:"
+          ],
+          "list": [
+            "**Curtains move when the window is shut.** Air is getting past worn seals or a frame that has shifted. You're paying to heat and cool the outdoors.",
+            "**Fog or haze between the panes.** The seal that holds the insulating gas between the panes has failed. The window has lost most of its insulating value, and it won't clear up on its own.",
+            "**One room is always hotter or colder than the rest.** Old single-pane glass and thin frames let summer sun and winter cold straight through. West-facing rooms feel it first in a Kansas July.",
+            "**You can hear the street, the neighbor's dog, the train.** Sound comes in through the same gaps air does. Sealed, multi-pane glass quiets a house more than most people expect.",
+            "**Sashes that stick, won't lock or won't stay open.** Worn balances and warped frames. In an older house it's rarely just one window."
+          ],
+          "tail": [
+            "If it's one or two windows, replace those and stop there. If it's most of the house, we'll show you what doing it all at once costs next to doing it in stages, and you choose."
           ]
         },
         {
           "type": "review",
-          "quote": "They managed to work new windows so quickly into our mangled up 80 year old window openings and trim, and made it look easy.",
-          "name": "Dustin M."
+          "quote": "The door and windows look phenomenal and I can already tell the difference in the house temperature wise as well as diminished noise from the outside.",
+          "name": "Aaron W."
         },
         {
           "type": "prose",
-          "heading": "Fewer, Larger Windows Where They Fit",
+          "heading": "Window Styles, and Where Each One Earns Its Place",
           "body": [
-            "Older houses often have lots of small windows. When we measure, we look for openings where one larger window can take the place of two or three small ones. The house looks cleaner from the street, and you have fewer windows to buy and install, which can take a real bite out of the cost of the job."
+            "We install casement, double hung, sliding, awning, hopper, picture, bay and basement windows. The right one depends on the opening and how you use the room."
+          ],
+          "list": [
+            "**Double hung** is the familiar up-and-down window, and it fits most older Wichita houses without changing how the front looks.",
+            "**Casement** windows crank out on a hinge. They seal tightly when closed and catch a breeze when open.",
+            "**Sliding** windows suit wide, low openings where there's no room to swing a sash.",
+            "**Awning and hopper** windows hinge at the top or bottom, so you can leave them open a crack without letting rain in.",
+            "**Picture** windows are fixed glass: the most light and the fewest parts to wear out.",
+            "**Bay** windows push out from the wall and give a living or dining room its view."
+          ],
+          "tail": [
+            "At your consultation you also choose colors, hardware and grids, so the windows look like they belong to your house."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Colton helped me find the perfect windows for my 1948 house! Every window in the house was replaced with exactly what I wanted and his quote was less than the three other quotes I had gotten. … I'm VERY picky and he was patient and attentive to all the details that I wanted, from oil rubbed bronze hardware to custom grids on the front windows.",
+          "name": "Kathleen M."
+        },
+        {
+          "type": "prose",
+          "heading": "Fewer, Bigger Windows Where They Make Sense",
+          "body": [
+            "Older Wichita houses were often built with rows of small windows: three narrow units where one wide one would do.",
+            "When we measure, we look at every opening and ask whether it should stay the way it was built. Combining two or three small windows into one larger one gives you more glass and a cleaner look from the street.",
+            "It also means fewer windows to buy and install, which can take a real bite out of the price of the job. We show you both versions and you decide."
           ]
         },
         {
@@ -349,79 +372,106 @@
         },
         {
           "type": "prose",
-          "heading": "Cooler Rooms and Less Noise",
+          "heading": "Made for Old Openings, Not Just New Ones",
           "body": [
-            "**New energy efficient windows seal tight, so rooms hold the temperature you set.** The drafts stop, and most of the noise from outside goes with them.",
-            "You feel the change the first hot afternoon or the first cold night."
+            "A house from the 1940s or '50s rarely has a square opening left. Frames settle, trim gets painted over a dozen times, and a stock-size window won't sit right in a crooked hole.",
+            "So we measure every opening and order each window to fit it. Then we finish the trim so the new window looks like it was always there.",
+            "Before anything comes out, we cover and protect your house and yard."
           ]
         },
         {
           "type": "review",
-          "quote": "The best thing I can say is that these windows really cool down the house.",
-          "name": "Chad L."
+          "quote": "They took their time to be sure to cover things and protect everything they could, they answered all my questions, they put a lot of care into the finishing touches, and they left everything clean and beautiful. I'm serious - these are some beautiful windows! It completely changed our home. They managed to work new windows so quickly into our mangled up 80 year old window openings and trim, and made it look easy.",
+          "name": "Dustin M."
+        },
+        {
+          "type": "prose",
+          "heading": "Basement Windows",
+          "body": [
+            "Basement windows sit low, where dirt, water and cold reach them first. Old ones leak, rattle and let in the sound of every lawn mower on the block.",
+            "We fit and finish them with the same care as the windows upstairs. Each one is measured, built to fit and trimmed out."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "What the Warranty Covers",
+          "body": [
+            "Our energy efficient windows carry a manufacturer's lifetime warranty, from glass breakage to how the window opens and closes.",
+            "That covers the two things that fail first on an old window: the glass and the parts that move."
+          ]
         },
         {
           "type": "steps",
-          "heading": "How Your Window Job Goes",
+          "heading": "What Happens After You Call",
           "items": [
             {
-              "title": "We measure and quote",
-              "text": "Your window consultation runs about an hour and a half. We measure your openings, show you the windows and give you the price."
+              "title": "A consultation at your house.",
+              "text": "It takes about an hour and a half. One of us measures every opening, shows you the window up close and walks you through styles, colors, hardware and grids. Then you get the price."
             },
             {
-              "title": "You choose each window",
-              "text": "Pick the style, color and hardware for each room, down to the grids. Then we schedule your install."
+              "title": "Your windows are built to your measurements.",
+              "text": "Plan on a few weeks between ordering and install. We give you the date when you order."
             },
             {
-              "title": "Install day",
-              "text": "Our crew arrives in the morning and covers the work area before the first window comes out, so dust stays off your floors and furniture."
+              "title": "Install day.",
+              "text": "Our crew shows up in the morning and covers the work area first. Most homes are done in a day. On bigger jobs, we may come back a second morning to finish trim and caulk."
             },
             {
-              "title": "Clean-up and a walkthrough",
-              "text": "We trim, caulk, clean up and haul off the old windows, then show you how your new windows work."
+              "title": "Walkthrough and follow-up.",
+              "text": "Before the crew leaves, everything is cleaned up and they show you how your new windows open and lock. The old windows and the trash go with them. Then one of us checks back to make sure you're happy."
             }
           ]
         },
         {
-          "type": "review",
-          "quote": "They answered all my questions and took their time explaining use of my beautiful new windows.",
-          "name": "Anita B."
-        },
-        {
           "type": "prose",
-          "heading": "Price, Warranty and Financing",
+          "heading": "Windows and Siding Meet at the Trim",
           "body": [
-            "**Our energy efficient windows carry a manufacturer's lifetime warranty,** from glass breakage to how the window works.",
-            "Bring your foreman a lower price on a comparable product and we'll beat it. Financing is available for larger projects; ask about it at your estimate."
+            "If your siding is worn too, it's worth knowing before the windows go in. Windows and siding share the trim around every opening, so doing both together means that trim is finished once and the colors are chosen together.",
+            "If the budget says windows first, that works. We'll plan so the siding fits what's already there. Here's more on [vinyl siding](/vinyl-siding-wichita-ks/)."
           ]
         },
         {
-          "type": "review",
-          "quote": "Colton helped me find the perfect windows for my 1948 house! Every window in the house was replaced with exactly what I wanted and his quote was less than the three other quotes I had gotten.",
-          "name": "Kathleen M."
+          "type": "prose",
+          "heading": "Wichita, Oklahoma City and 150 Miles Around",
+          "body": [
+            "We have a hub in each city and work within 150 miles of both. On the Kansas side that includes Haysville, Derby, Mulvane, El Dorado, McPherson, Salina and Emporia. In Oklahoma it includes Edmond, Yukon, Guthrie and Ponca City.",
+            "Call the office closest to you."
+          ]
         },
         {
           "type": "faq",
-          "heading": "Window Replacement Questions",
+          "heading": "Questions Before You Call",
           "items": [
             {
               "q": "How long does installation take?",
-              "a": "It depends on how many windows you replace and how much trim your openings need. We give you the schedule at your estimate, and on larger homes we may come back a second day for trim and caulk."
+              "a": "Most homes are done in one day. If you're replacing a lot of windows or the old openings need extra trim work, the crew may come back a second morning."
             },
             {
-              "q": "Do you replace basement windows?",
-              "a": "Yes. We seal and trim them out the same as every other window."
+              "q": "What affects the price?",
+              "a": "How many windows you replace, their size and style, the glass you choose, and how much work the old openings and trim need. Combining small windows into bigger ones can lower the total. You get the full price at your consultation, before you commit to anything."
             },
             {
-              "q": "Can I replace a few windows now and more later?",
-              "a": "Yes. Start with the rooms that matter most and add the rest when you're ready."
+              "q": "Can I replace a few windows now and the rest later?",
+              "a": "Yes. Plenty of people start with the rooms that bother them most and finish the house later."
+            },
+            {
+              "q": "What if I already have a lower quote?",
+              "a": "Bring it to us. If it's for a comparable window, we'll beat it."
+            },
+            {
+              "q": "Is the estimate free?",
+              "a": "Yes."
+            },
+            {
+              "q": "Do you offer financing?",
+              "a": "Yes, including low-to-no-interest options. Ask about it at your consultation."
             }
           ]
         },
         {
           "type": "callBand",
-          "heading": "Get Your Window Estimate",
-          "text": "Call (316) 435-8009 in Wichita or (405) 363-2294 in Oklahoma City, and we'll set up your free estimate."
+          "heading": "See the Window Before You Decide",
+          "text": "Call and one of us will come out, measure your windows, show you the product and give you a price, with no pressure to sign that day. Wichita: (316) 435-8009. Oklahoma City: (405) 363-2294. Monday to Friday, 9:00 AM to 5:00 PM."
         }
       ]
     },
@@ -434,7 +484,7 @@
       "hero": {
         "eyebrow": "Vinyl siding",
         "h1": "Vinyl Siding in Wichita, KS — Evolve Exteriors",
-        "sub": "New vinyl siding helps lower your Kansas and Oklahoma energy bills. We survey your house, give you a straight price and take away every piece of the old siding when we finish.",
+        "sub": "We're Colton and Riley. We'll look over your whole house, tell you straight whether your siding has years left, and give you the price, all in about an hour. Call for a free estimate.",
         "primaryCta": {
           "label": "Call (316) 435-8009",
           "action": "call"
@@ -452,52 +502,47 @@
       "sections": [
         {
           "type": "review",
-          "quote": "His crew came and finished the siding in one day. They did a fantastic job and cleaned up the yard.",
+          "quote": "I talked to Colton about the cost of siding our home. He came out and surveyed it and gave me a good price. His crew came and finished the siding in one day. They did a fantastic job and cleaned up the yard.",
           "name": "Larry W."
         },
         {
           "type": "split",
-          "heading": "Vinyl Siding That Lowers Your Energy Bills",
+          "heading": "Siding Takes the Weather First",
           "body": [
-            "**New vinyl siding is a sure way to lower your energy bills.** We survey your house, give you the price and send our crew.",
-            "You won't be picking scraps of old siding out of the grass after we leave."
+            "Before the windows, the doors or the roof edge feel a Kansas storm, the siding has already taken it. Wind, hail and summer sun hit it every year.",
+            "It rarely fails all at once. It fades, loosens and cracks a little at a time, and the real damage happens behind it, where gaps let in drafts and water.",
+            "That's why siding is worth a close look before it's an emergency."
           ],
           "image": {
             "slot": "siding-main",
             "alt": "Close-up of new soffit and fascia under a roof edge",
             "brief": "close-up of new soffit and fascia under a roof edge shot from below, edge on the right, plain sky on the left, no readable text, no people"
-          },
-          "imageSide": "right"
-        },
-        {
-          "type": "review",
-          "quote": "They took away all the old siding. We appreciate their integrity of doing all they said that they would do and more.",
-          "name": "Daylean P."
+          }
         },
         {
           "type": "prose",
-          "heading": "We Tell You What's Wrong With the Old Siding",
+          "heading": "What Worn-Out Siding Looks Like",
           "body": [
-            "**If your siding is worn out, melted or badly installed, we show you.** Then we lay out your options, keep it for now or replace it, and you decide."
-          ]
-        },
-        {
-          "type": "review",
-          "quote": "They didn't hesitate to walk us through the problem, explain our options clearly, and help us make the best long-term decision.",
-          "name": "Beth W."
-        },
-        {
-          "type": "prose",
-          "heading": "Soffit and Fascia, Done With the Siding",
-          "body": [
-            "**Soffit and fascia are the boards under and along the edge of your roof.** When they need it, we replace them with your siding, so the whole outside of the house looks like one finished job."
+            "Here is what to look for, and what each sign usually means:"
+          ],
+          "list": [
+            "**Faded or chalky panels.** The finish has worn off in the sun. Rub a hand across it and the color comes off as powder.",
+            "**Cracks and hail dings.** Vinyl turns brittle with age. A crack lets water behind the panel.",
+            "**Warped or melted spots.** Panels that have buckled or sagged have been pushed past what they can take, often by heat or by being fastened too tight.",
+            "**Pieces the wind keeps loosening.** Panels that rattle or lift in a storm have lost their hold on the wall.",
+            "**Gaps at corners and around windows.** This is where air and water find their way in.",
+            "**Energy bills creeping up.** Siding that no longer seals the wall lets the house leak heat all winter and gain it all summer."
+          ],
+          "tail": [
+            "If you see two or three of these, it's time to have someone look at the whole wall."
           ]
         },
         {
           "type": "prose",
-          "heading": "Siding and Windows Together",
+          "heading": "Does Yours Have Years Left?",
           "body": [
-            "**Windows and siding meet on the same wall, so we can plan them as one project.** Or start with windows and add siding later. If we spot bad siding while we put in your windows, we show you and fix it as part of the same project."
+            "We'll tell you straight. If your siding is sound, we'll say so.",
+            "If it was put up badly in the first place, patching it only buys time. Panels fastened too tight or hung crooked will keep failing, no matter how many you swap out."
           ]
         },
         {
@@ -507,78 +552,119 @@
         },
         {
           "type": "prose",
-          "heading": "A Quieter, Cooler House",
+          "heading": "What New Vinyl Siding Does for the House",
           "body": [
-            "**New siding tightens up the whole outside of your house.** Rooms hold the temperature you set through a Kansas summer, and less of the street noise comes through the walls.",
-            "It also gives the house a clean, new look from the curb."
+            "Vinyl doesn't need painting, and a wash with a hose is most of the upkeep. That makes it a good fit for the part of the house you'd rather not think about.",
+            "It also helps your energy bills. New panels that lock together tight leave fewer gaps for air and water, so the house holds its heat in winter and keeps more of the summer out.",
+            "You choose the colors and styles with us at your consultation, with the trim and windows in mind."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Soffit and Fascia Go On With It",
+          "body": [
+            "Soffit and fascia are the boards under and along the edge of your roof. When they go soft or pull away, water gets behind the gutters and critters find a way into the attic.",
+            "We replace them along with your siding, so the whole edge of the house matches the new walls."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "The Consultation and the Day",
+          "body": [
+            "A siding consultation takes about an hour. One of us walks the whole house, talks through colors and styles, and gives you the price.",
+            "When it's time to install, we show up in the morning and cover and protect your house and yard first. The old siding comes off, and it leaves with us when we go."
           ]
         },
         {
           "type": "review",
-          "quote": "I have new siding and it really made my home beautiful, it's quieter, and is staying so much cooler.",
-          "name": "Melinda D."
+          "quote": "They took away all the old siding. We appreciate their integrity of doing all they said that they would do and more. Also appreciated Colton and Riley communicating with us along the process.",
+          "name": "Daylean P."
         },
         {
           "type": "steps",
-          "heading": "How Your Siding Job Goes",
+          "heading": "How a Siding Project Goes",
           "items": [
             {
-              "title": "We look and quote",
-              "text": "Our siding consultation takes about an hour. We look at your house, talk through what you want and give you the price."
+              "title": "We look at your house.",
+              "text": "One of us comes out and looks over every wall, the trim and the roof edge. About an hour."
             },
             {
-              "title": "You choose",
-              "text": "Pick your siding color and style, and we schedule the crew."
+              "title": "You get the price.",
+              "text": "We go over colors and styles, and you get the price with no pressure to sign that day."
             },
             {
-              "title": "Our crew does the work",
-              "text": "We remove every piece of the old siding and install the new, on the schedule we gave you at your estimate."
+              "title": "We order your materials and set the date.",
+              "text": "You get your install date when you order."
             },
             {
-              "title": "Clean-up",
-              "text": "We haul away the old material and leave your yard clean."
+              "title": "Our crew does the work.",
+              "text": "We protect your house and yard, put up the new siding and haul away the old. Many houses are done in a day; bigger ones take longer, and you get the schedule up front."
+            },
+            {
+              "title": "We check back.",
+              "text": "Before we leave, we walk you through the finished job. Then one of us follows up to make sure everything is right."
             }
           ]
         },
         {
-          "type": "review",
-          "quote": "Evolve Exteriors made our siding replacement very easy. They handled everything professionally, did great work, and finished the job quickly.",
-          "name": "Lucas M."
+          "type": "prose",
+          "heading": "Siding and Windows Meet at the Trim",
+          "body": [
+            "Windows and siding meet at the trim around every opening. If both need work, doing them together means the trim and caulk get finished once and the colors are chosen together.",
+            "If the budget says one at a time, that works too. We'll plan so the second project fits the first. Here's more on [window replacement](/window-replacement-wichita-ks/)."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "What Affects the Price",
+          "body": [
+            "The size of the house and the number of stories. The style and trim you choose.",
+            "How many layers of old siding have to come off, and how much of the wall behind it needs repair. Whether soffit and fascia are part of the job.",
+            "You see the whole price at your consultation, before you commit to anything. If you bring us a lower price on a comparable product, we'll beat it. We also offer financing, including low-to-no-interest options."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Wichita, Oklahoma City and 150 Miles Around",
+          "body": [
+            "We have a hub in each city and work within 150 miles of both. On the Kansas side that includes Haysville, Derby, Mulvane, El Dorado, McPherson, Salina and Emporia. In Oklahoma it includes Edmond, Yukon, Guthrie and Ponca City.",
+            "Call the office closest to you."
+          ]
         },
         {
           "type": "faq",
-          "heading": "Vinyl Siding Questions",
+          "heading": "Questions Before You Call",
           "items": [
             {
-              "q": "How long does siding take?",
-              "a": "It depends on the size of your house and whether soffit and fascia are part of the job. We give you the schedule at your estimate."
-            },
-            {
-              "q": "Can I pair siding with new windows?",
-              "a": "Yes. We can do both in one project, or windows now and siding later."
-            },
-            {
-              "q": "Do you replace soffit and fascia?",
-              "a": "Yes. We replace them with your siding so the edge of your roof matches the walls."
+              "q": "How long does a siding job take?",
+              "a": "Many houses are done in a day. Bigger houses take longer, and you get the schedule for yours at your consultation."
             },
             {
               "q": "Do you take the old siding away?",
-              "a": "Yes. We haul off every piece of the old siding and leave your yard clean."
+              "a": "Yes. The old siding leaves with us."
             },
             {
-              "q": "Is financing available?",
-              "a": "Yes. Ask about financing at your estimate."
+              "q": "Is the estimate free?",
+              "a": "Yes."
             },
             {
-              "q": "How do I start?",
-              "a": "Call (316) 435-8009 in Wichita or (405) 363-2294 in Oklahoma City to book your consultation."
+              "q": "Do I have to replace all of it?",
+              "a": "We'll tell you what your siding needs. If it's sound, we'll say so."
+            },
+            {
+              "q": "Should I do windows at the same time?",
+              "a": "If both are worn, together means the trim around each window is finished once and everything matches. If the budget says one at a time, that works too."
+            },
+            {
+              "q": "Do you offer financing?",
+              "a": "Yes, including low-to-no-interest options. Ask about it at your consultation."
             }
           ]
         },
         {
           "type": "callBand",
-          "heading": "Get Your Vinyl Siding Estimate",
-          "text": "Call (316) 435-8009 in Wichita or (405) 363-2294 in Oklahoma City, and we'll set up your free estimate."
+          "heading": "Get a Straight Look at Your Siding",
+          "text": "Call and one of us will come out, look at your siding and give you a price, with no pressure to sign that day. Wichita: (316) 435-8009. Oklahoma City: (405) 363-2294. Monday to Friday, 9:00 AM to 5:00 PM."
         }
       ]
     },
@@ -598,7 +684,7 @@
         },
         "secondaryCta": {
           "label": "Call Oklahoma City (405) 363-2294",
-          "action": "call"
+          "action": "contact"
         },
         "image": {
           "slot": "contact-hero",
@@ -611,18 +697,22 @@
           "type": "prose",
           "heading": "Call or Write",
           "body": [
-            "Wichita: (316) 435-8009. Oklahoma City: (405) 363-2294. Email info@evolve-exteriors.com.",
-            "We work within 150 miles of both cities."
+            "Wichita: (316) 435-8009. Oklahoma City: (405) 363-2294.",
+            "You can also email info@evolve-exteriors.com. We work within 150 miles of both cities.",
+            "Estimates for windows, siding and patio doors are free. One of us comes out, looks at your house and gives you a price, with no pressure to sign that day."
           ]
         },
         {
-          "type": "list",
+          "type": "prose",
           "heading": "Have This Ready",
           "list": [
             "Your town, so the right office calls you back",
             "How many windows, and which rooms",
             "Whether you want siding or a patio door too",
             "Whether you want to hear about financing"
+          ],
+          "tail": [
+            "You don't need measurements. We measure every opening ourselves."
           ]
         },
         {
@@ -645,6 +735,10 @@
             {
               "q": "When is someone in the office?",
               "a": "Monday to Friday, 9:00 AM to 5:00 PM."
+            },
+            {
+              "q": "Do you work in my town?",
+              "a": "We work within 150 miles of Wichita and of Oklahoma City, including Haysville, Derby, Mulvane, El Dorado, McPherson, Salina and Emporia in Kansas, and Edmond, Yukon, Guthrie and Ponca City in Oklahoma."
             }
           ]
         }
