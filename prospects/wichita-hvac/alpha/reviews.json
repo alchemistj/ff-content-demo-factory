@@ -1,0 +1,1214 @@
+{
+  "kind": "google-review-pull",
+  "version": 1,
+  "slug": "alpha-hvac-wichita",
+  "place": {
+    "name": "Alpha HVAC and Plumbing LLC",
+    "placeId": "ChIJr0T5uHTfuocRtEZ4JiDm3RE",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Alpha%20HVAC%20and%20Plumbing%20LLC&query_place_id=ChIJr0T5uHTfuocRtEZ4JiDm3RE",
+    "address": "3101 W Harry St, Wichita, KS 67213",
+    "phone": "(316) 260-5775",
+    "rating": 5,
+    "totalReviewCount": 131
+  },
+  "pulledAt": "2026-11-09T12:55:27.894Z",
+  "requestedMax": 150,
+  "reviews": [
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xSTGJVMTJaWHBzVUZsd1NqWjBhVEJ6U0RSVVZrRRAB",
+      "reviewer": "Kevin S.",
+      "rating": 5,
+      "text": "I don't know where to start so I guess I will start with top notch service from Hayden he went beyond to try making something out of nothing but with a burnt up condenser you have to break the bad news which he said was the hardest part of his job.. you could really tell he cares about his job and the quality he puts into it. Now for Tom he made me feel like family, both times I talked with him he got things moving in the right direction me thinking our a/c wouldn't get installed till later next week he somehow worked me into tomorrow's schedule and with temperatures in the 100s the rest of this week and into next I am forever grateful for Alpha! Thank you!!",
+      "publishedAt": "2026-10-25T16:04:15.177Z",
+      "ownerResponse": "Thanks for choosing Alpha <br>",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xSTGJVMTJaWHBzVUZsd1NqWjBhVEJ6U0RSVVZrRRAB!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CAIQACodChtycF9oOlRLbU12ZXpsUFlwSjZ0aTBzSDRUVkE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21GNGJXdHpTSEpRTTNwUVJIRm1hakZVTW5WQlRFRRAB",
+      "reviewer": "Christine M.",
+      "rating": 5,
+      "text": "David was very professional, helpful, and knowledgeable. I look forward to working with Alpha HVAC and Plumbing in the future!",
+      "publishedAt": "2026-10-19T22:25:37.098Z",
+      "ownerResponse": "Thank you Christine we look forward to supporting you",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21GNGJXdHpTSEpRTTNwUVJIRm1hakZVTW5WQlRFRRAB!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CAIQACodChtycF9oOmF4bWtzSHJQM3pQRHFmajFUMnVBTEE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2t0d05IWXlRMEkxVWtRMlpqSnFkRkV5YVVGWlJrRRAB",
+      "reviewer": "Greg W.",
+      "rating": 5,
+      "text": "Brett did a GREAT job installing our new A/C unit today with heat index of 105. We’ve used this company for years and always so satisfied with their work",
+      "publishedAt": "2026-10-16T20:18:01.595Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2t0d05IWXlRMEkxVWtRMlpqSnFkRkV5YVVGWlJrRRAB!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CAIQACodChtycF9oOktwNHYyQ0I1UkQ2ZjJqdFEyaUFZRkE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VMNmZzS1NOd05mbUJ3EAE",
+      "reviewer": "Ruth H.",
+      "rating": 5,
+      "text": "Timely and excellant service. Very trustworthy.",
+      "publishedAt": "2026-10-14T19:07:20.210Z",
+      "ownerResponse": "Thank you Ruth, we appreciate your business and you",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VMNmZzS1NOd05mbUJ3EAE!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CIHM0ogKEL6fsKSNwNfmBw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUR0dWFUMEVnEAE",
+      "reviewer": "Brian K.",
+      "rating": 5,
+      "text": "Geoff is amazing! So punctual and answered all my questions, very professional!  I highly recommend Alpha!  They are my go to HVAC company now!",
+      "publishedAt": "2026-10-14T15:40:52.586Z",
+      "ownerResponse": "Thank you Brian",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR0dWFUMEVnEAE!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CIHM0ogKEICAgIDtuaT0Eg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNGMWQzWWdnRRAB",
+      "reviewer": "Jan M.",
+      "rating": 5,
+      "text": "Prompt, courteous, professional",
+      "publishedAt": "2026-10-09T16:19:18.643Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNGMWQzWWdnRRAB!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CIHM0ogKEICAgICF1d3YggE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUMtNmI2a0R3EAE",
+      "reviewer": "Thomas T.",
+      "rating": 5,
+      "text": "David came out on time, flushed our water heater in less than a hour. We appreciate quality service and price",
+      "publishedAt": "2026-09-24T16:51:35.501Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMtNmI2a0R3EAE!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CIHM0ogKEICAgIC-6b6kDw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25ZeE5HTmlVVlJaVGpKNlV6TlBNR3N0YlV4NVkxRRAB",
+      "reviewer": "Divine L.",
+      "rating": 5,
+      "text": "Absolutely fantastic! Michael came out same day and fixed our blower motor. Super knowledgeable and friendly.  Great fast work. I won't go anywhere else for service.  A+++++",
+      "publishedAt": "2026-08-16T18:59:58.986Z",
+      "ownerResponse": "Thanks for choosing Alpha",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25ZeE5HTmlVVlJaVGpKNlV6TlBNR3N0YlV4NVkxRRAB!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CAIQACodChtycF9oOnYxNGNiUVRZTjJ6UzNPMGstbUx5Y1E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2s5T2VUUnFOMVIwU2pGNVZtWlhSbTVHVDI5MGJGRRAB",
+      "reviewer": "Courtney B.",
+      "rating": 5,
+      "text": "Our AC went out on Saturday and we called Alpha Sunday morning and they came out within 2 hours. Very quick response, knowledgeable tech, fast results and reasonable price. Thanks Haden! I will recommend them to a friend for sure.",
+      "publishedAt": "2026-08-02T18:00:21.702Z",
+      "ownerResponse": "Thanks for choosing Alpha",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2s5T2VUUnFOMVIwU2pGNVZtWlhSbTVHVDI5MGJGRRAB!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CAIQACodChtycF9oOk9OeTRqN1R0SjF5VmZXRm5GT290bFE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2sxT1luaEtSbXBEWnpkNFl6Vk5lRU5GVFhGaWVYYxAB",
+      "reviewer": "Bethany C.",
+      "rating": 5,
+      "text": "Working with Alpha was the best experience after having bad luck with other contractors lately.  They provided very clear and constant communication, were on time, and completed the job quickly.",
+      "publishedAt": "2026-07-28T02:47:12.663Z",
+      "ownerResponse": "Thank you Bethany, we appreciate the kind words",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2sxT1luaEtSbXBEWnpkNFl6Vk5lRU5GVFhGaWVYYxAB!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CAIQACodChtycF9oOk1OYnhKRmpDZzd4YzVNeENFTXFieXc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xBNExUWlpiVEZ0U2tSNGJucGhlVzVNYjNKdmEzYxAB",
+      "reviewer": "Sher F.",
+      "rating": 5,
+      "text": "After multiple visits and part replacements, we decided to install an entire new HVAC unit. With temperatures around 100° for a week my house got very hot, but they helped me manage that with a couple portable air conditioners. Install finish today and the house is slowly cooling off. The entire team is very nice, respectful and very helpful.",
+      "publishedAt": "2026-07-28T00:52:44.551Z",
+      "ownerResponse": "Thank you we appreciate your kind words",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xBNExUWlpiVEZ0U2tSNGJucGhlVzVNYjNKdmEzYxAB!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CAIQACodChtycF9oOlA4LTZZbTFtSkR4bnpheW5Mb3Jva3c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21kaVRYWjVSMWxDYlRWU2RUSkphbGhaT1Zsd09GRRAB",
+      "reviewer": "Kevin C.",
+      "rating": 5,
+      "text": "Mike arrived at house on the time. Mike provided pictures of everything he did of he did for maintence that day. He was very professional and did an amazing job. He didn't mind my crazy dogs jumping. I would highly recommend Alpha to anyone looking for a great maintence plan.",
+      "publishedAt": "2026-07-23T16:29:15.930Z",
+      "ownerResponse": "Thank you for choosing Alpha. We appreciate your business.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21kaVRYWjVSMWxDYlRWU2RUSkphbGhaT1Zsd09GRRAB!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CAIQACodChtycF9oOmdiTXZ5R1lCbTVSdTJJalhZOVlwOFE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tZeldsOWtWazVQZUZwTldXY3hVR1pZZG1Ga1NtYxAB",
+      "reviewer": "Nick B.",
+      "rating": 5,
+      "text": "I recently hired Alpha to do a full A/C and furnace replacement. Tom was my primary contact through the quoting and installation process. There were a lot of things I really liked about Tom, and I selected Alpha to do the install out of four contractors. Here is why:<br><br>1. I was not able to be home during the initial meeting due to travel and Tom treated my wife with respect/kindness and offered some specific tips to help us limp along our A/C for a few weeks while I finished the bidding process.<br><br>2. Tom included the City permit as a line item in the quote, unprompted. Several other contractors said \"eh, we can pull a permit if you really want us to\" which is not confidence inspiring when making a major purchase such as a mechanical system. Permitting as a standard process during installation means the contractor has no concerns about their work meeting code. Not surprisingly, the inspection passed with no issues.<br><br>3. I'm a details person. I want to understand the system, the warranties, the mechanical differences between brand/model/system so that I can make the best decision for long term system reliability in a system that should last 15+ years. Tom answered my many questions, was always patient and worked with me as a partner, not just a salesperson. I really appreciate this about Tom. I never felt pressured or rushed during the sales process.<br><br>4. We determined that my specific system was eligible for a Evergy rebate and Tom handled the entire process for me. Sweet! Cash back!<br><br>5. Warranty registration/certificate were sent to me via email immediately following the installation, and the City inspection was scheduled on my behalf.<br><br>6. Tom installs and sells multiple brands, but recommended Amana as it's both engineered and built in America and has good parts availability as the Amana HQ is in Houston. As long as the price is pretty competitive, I'm all for supporting American jobs.<br>Amana has some of the longest warranties in the market and generally uses common parts such as the Copeland scroll compressor for the A/C condenser. Parts availability is a critical part of buying an HVAC system. Wichita summers are hot, winters are cold, and you want to buy a brand with good parts availability so that if something does happen, you can get same-day or next-day service. Amana also uses R32 refrigerant, which I understand is simpler from a service perspective as it can be topped off if a leak happens (after repair) rather than requiring a recharge, as well as having a much longer installation history and easy availability (lower cost). I learned much of this from Tom, by the way, and verified it to the best of my ability when researching systems.<br><br>7. Last, but not least, Alpha was neither the most expensive nor the cheapest bid I got for comparable systems. Good work isn't cheap, and cheap work isn't good. However, no one wants to overpay for services that are relatively similar. Based on the other three quotes I got, I'm confident that I paid a fair price for the installation.<br><br>I'm very happy with the installation quality and the technicians (Brett and Mike) and my house is now cooling wonderfully. If you made it this far into my review, the good news is, the hard work is done for you! You can go ahead and call Alpha - they passed all my tests, and I think they'll pass yours as well.",
+      "publishedAt": "2026-07-10T02:20:51.526Z",
+      "ownerResponse": "Nick,thank you for the time spent on your HVAC System it was much appreciated to get the right system for your family.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tZeldsOWtWazVQZUZwTldXY3hVR1pZZG1Ga1NtYxAB!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CAIQACodChtycF9oOkYzWl9kVk5PeFpNWWcxUGZYdmFkSmc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xVM2RsbHpaMmh5WWt4WU1rVjNlbmxmTjJOdlYzYxAB",
+      "reviewer": "Michael R.",
+      "rating": 5,
+      "text": "Mike did a great job.  He was very thorough and made sure everything was working properly before leaving.  Alpha was also able to get me in on the same day which was a huge relief as well.",
+      "publishedAt": "2026-07-09T23:21:11.459Z",
+      "ownerResponse": "Thank you for your business, we appreciate the kind review<br>",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xVM2RsbHpaMmh5WWt4WU1rVjNlbmxmTjJOdlYzYxAB!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CAIQACodChtycF9oOlU3dllzZ2hyYkxYMkV3enlfN2NvV3c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xWMk1HVkhOMGN0TkU1RFVIRnBUSG95Y1Y4NGFWRRAB",
+      "reviewer": "Mark C.",
+      "rating": 5,
+      "text": "David Railsback with Alpha HVAC and plumbing came to take care of a leak we had with a 2nd floor bathtub. He was extremely thorough, worked cleanly and cleaned up afterwards, and was very respectful. His language and mannerisms were very professional.  He also did great work and refused to make shortcuts or even maybe it will work. He went the extra mile to make sure we wouldn’t have the problem again. Thanks Alpha and thanks David!",
+      "publishedAt": "2026-06-26T19:33:13.019Z",
+      "ownerResponse": "Mark, thank you for the repeat business we enjoy helping your family, the church and friends",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xWMk1HVkhOMGN0TkU1RFVIRnBUSG95Y1Y4NGFWRRAB!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CAIQACodChtycF9oOlV2MGVHN0ctNE5DUHFpTHoycV84aVE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tGT1pUZGZiV2hEVEdGTFFtbG5URzUzTUZoemFXYxAB",
+      "reviewer": "Teri M.",
+      "rating": 5,
+      "text": "Wonderful service, fast, efficient and friendly. Highly recommend!",
+      "publishedAt": "2026-06-25T22:33:59.641Z",
+      "ownerResponse": "Thank you for choosing Alpha",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tGT1pUZGZiV2hEVEdGTFFtbG5URzUzTUZoemFXYxAB!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CAIQACodChtycF9oOkFOZTdfbWhDTGFLQmlnTG53MFhzaWc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2psdlpFVXlkWGRRVFVSMFYzWXhVMFozWlVwalEzYxAB",
+      "reviewer": "Cassie R.",
+      "rating": 5,
+      "text": "David was quick, knowledgeable and very friendly. He fixed my sink in a very professional manner, and I feel very confident that it will be working for years to come! Thank you!",
+      "publishedAt": "2026-06-24T23:45:46.584Z",
+      "ownerResponse": "Thank you for choosing Alpha for your Plumbing needs",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2psdlpFVXlkWGRRVFVSMFYzWXhVMFozWlVwalEzYxAB!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CAIQACodChtycF9oOjlvZEUydXdQTUR0V3YxU0Z3ZUpjQ3c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25kbExXNVBPRE01U1RGQ05Ia3djMGwyTlZseU1sRRAB",
+      "reviewer": "nancy K.",
+      "rating": 5,
+      "text": "David was knowledgeable, fast and fair!",
+      "publishedAt": "2026-06-23T17:06:26.644Z",
+      "ownerResponse": "We appreciate your business Nancy, thanks for choosing Alpha",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25kbExXNVBPRE01U1RGQ05Ia3djMGwyTlZseU1sRRAB!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CAIQACodChtycF9oOndlLW5PODM5STFCNHkwc0l2NVlyMlE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2psT1MxWTVTVEZGVkhSVGRtUnZPVkIzWVRSUFdtYxAB",
+      "reviewer": "J",
+      "rating": 5,
+      "text": "David’s professionalism, knowledge & attention to detail was exceptional as always!",
+      "publishedAt": "2026-06-19T19:29:44.479Z",
+      "ownerResponse": "Thank you for choosing Alpha for your plumbing needs",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2psT1MxWTVTVEZGVkhSVGRtUnZPVkIzWVRSUFdtYxAB!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CAIQACodChtycF9oOjlOS1Y5STFFVHRTdmRvOVB3YTRPWmc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURYMWI3eHFRRRAB",
+      "reviewer": "Jay B.",
+      "rating": 5,
+      "text": "Alpha heating and ac did a great job for us.<br>Haden was very professional and thorough.<br>Highly recommended.",
+      "publishedAt": "2026-06-19T19:01:55.047Z",
+      "ownerResponse": "Thanks for choosing Alpha and taking a minute for your review. Much appreciated",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURYMWI3eHFRRRAB!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CIHM0ogKEICAgIDX1b7xqQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xWaVNYWjRUa054V1RGVGRYQnJOeTFIZEUxR1kwRRAB",
+      "reviewer": "Gabe C.",
+      "rating": 5,
+      "text": "Tom tallon and his team are amazing to work with! Mike the technician is so kind and knowledgeable and explains the situation well. Highly recommend Alpha Hvac and Plumbing.",
+      "publishedAt": "2026-06-18T20:24:53.742Z",
+      "ownerResponse": "Thanks Gabriel for your review, much appreciated",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xWaVNYWjRUa054V1RGVGRYQnJOeTFIZEUxR1kwRRAB!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CAIQACodChtycF9oOlViSXZ4TkNxWTFTdXBrNy1HdE1GY0E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21sVVVFOWtaa2RtY1hGdWVURjFOR1F6VGpaaFNXYxAB",
+      "reviewer": "Janet A.",
+      "rating": 5,
+      "text": "Tom, Brett, Haden and Michael did an awesome job. Great company to work with. We’ll refer you to everyone.",
+      "publishedAt": "2026-06-08T20:23:37.600Z",
+      "ownerResponse": "Thanks Janet we appreciated adding you to our family of service and installation at Alpha",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21sVVVFOWtaa2RtY1hGdWVURjFOR1F6VGpaaFNXYxAB!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CAIQACodChtycF9oOmlUUE9kZkdmcXFueTF1NGQzTjZhSWc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21ablVDMW9WSEpGYkVocFoxSk1Za3hPYzA1SmQxRRAB",
+      "reviewer": "Phillip H.",
+      "rating": 5,
+      "text": "The A/Cl tech was on time, and  very professional.  Service was exceptional.",
+      "publishedAt": "2026-06-08T19:02:34.438Z",
+      "ownerResponse": "Thank you Phillip<br>",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21ablVDMW9WSEpGYkVocFoxSk1Za3hPYzA1SmQxRRAB!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CAIQACodChtycF9oOmZnUC1oVHJFbEhpZ1JMYkxOc05Jd1E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pnd2VsVjBkREZMUkV0blZUSkJZMGhpWlVWQ2JWRRAB",
+      "reviewer": "Candice R.",
+      "rating": 5,
+      "text": "Brett was very professional and nice! Answered all the questions we had!",
+      "publishedAt": "2026-06-05T22:00:59.085Z",
+      "ownerResponse": "Thank you Candice",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pnd2VsVjBkREZMUkV0blZUSkJZMGhpWlVWQ2JWRRAB!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CAIQACodChtycF9oOjgwelV0dDFLREtnVTJBY0hiZUVCbVE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNuMV9qX2xnRRAB",
+      "reviewer": "David C.",
+      "rating": 5,
+      "text": "Amazing service. Explains every step and detail. Exceptional professionalism",
+      "publishedAt": "2026-05-25T21:58:07.093Z",
+      "ownerResponse": "Thank you David",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNuMV9qX2xnRRAB!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CIHM0ogKEICAgICn1_j_lgE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xoMU9WQkNiWGxmY2tVMVRqUnRWVkpQYldOVk1tYxAB",
+      "reviewer": "Peter T.",
+      "rating": 5,
+      "text": "Brett came out on a Saturday, trouble-shot my janky old house, and got my AC running within an hour! Good price too",
+      "publishedAt": "2026-05-16T20:20:21.112Z",
+      "ownerResponse": "Thank you Peter",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xoMU9WQkNiWGxmY2tVMVRqUnRWVkpQYldOVk1tYxAB!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CAIQACodChtycF9oOlh1OVBCbXlfckU1TjRtVVJPbWNVMmc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25rNFdFWTRaMGwzVW1aZlVEUTJSRjlyZUdGS01rRRAB",
+      "reviewer": "DaleL L.",
+      "rating": 5,
+      "text": "Very good job<br>All went very well. Brent is very good at his job and very pleasant and polite. Awesome",
+      "publishedAt": "2026-05-12T16:36:39.384Z",
+      "ownerResponse": "Thank you Dale",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25rNFdFWTRaMGwzVW1aZlVEUTJSRjlyZUdGS01rRRAB!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CAIQACodChtycF9oOnk4WEY4Z0l3UmZfUDQ2RF9reGFKMkE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNSbDc2UlNBEAE",
+      "reviewer": "Molly L.",
+      "rating": 5,
+      "text": "Another excellent seasonal \"maintenance agreement\" visit from Alpha. Tom called to conveniently schedule & Brett was on time, personable, and thorough. Appreciated the report of a low capacitor report so the MFD could be replaced, instead of an emergency call this summer when it predictably would've gone out 😅 Alpha always delivers great service!!",
+      "publishedAt": "2026-04-29T15:30:17.679Z",
+      "ownerResponse": "Thank you Molly",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNSbDc2UlNBEAE!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CIHM0ogKEICAgICRl76RSA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25SR1lrRlNPVVV3YVRNdE5VWlZZM0JvY0ZCc2VHYxAB",
+      "reviewer": "Victor S.",
+      "rating": 5,
+      "text": "I had Alpha HVAC & Plumbing install a complete HVAC system at my house, including a new AC unit, furnace, and all new ductwork. They also replumbed my water lines and relocated the washer drain and water supply lines. The entire job was done professionally and the quality of work was excellent.<br><br>The crew was knowledgeable, showed up on time, and took pride in doing the job right. Everything from the HVAC installation to the plumbing work was clean, well organized, and works perfectly. My heating and cooling system runs great and the plumbing changes turned out exactly how I wanted.<br><br>It’s hard to find contractors that handle both HVAC and plumbing work this well, but Alpha HVAC & Plumbing did an outstanding job. I highly recommend them to anyone needing HVAC installation, furnace or AC replacement, or plumbing work.",
+      "publishedAt": "2026-03-12T19:07:45.476Z",
+      "ownerResponse": "Thank you Victor we appreciate your business",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25SR1lrRlNPVVV3YVRNdE5VWlZZM0JvY0ZCc2VHYxAB!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CAIQACodChtycF9oOnRGYkFSOUUwaTMtNUZVY3BocFBseGc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21OWlEycE5aV0phYVRKRFZ6VnNlRzlNYVVSMlRrRRAB",
+      "reviewer": "Braxton H.",
+      "rating": 5,
+      "text": "Alpha has been servicing out systems for a couple years now.   Their annual service plan has saved me a lot of money.  I was told from previous company that an expensive repair was needed, when it was actually a less expensive part.  The technicians are always great and reliable.  Nice have a service company with integrity.",
+      "publishedAt": "2026-02-16T17:54:40.028Z",
+      "ownerResponse": "Thank you Braxton we appreciate your business",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21OWlEycE5aV0phYVRKRFZ6VnNlRzlNYVVSMlRrRRAB!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CAIQACodChtycF9oOmNZQ2pNZWJaaTJDVzVseG9MaUR2TkE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2kxWWNFWnpRV3gzVlZGb1FrcFFTWHBhVjNkMlowRRAB",
+      "reviewer": "Bill K.",
+      "rating": 4,
+      "text": "Knowlegable technicians and installed the new system in a timely manner.",
+      "publishedAt": "2026-02-01T15:00:53.605Z",
+      "ownerResponse": "Thank you for the kind words",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2kxWWNFWnpRV3gzVlZGb1FrcFFTWHBhVjNkMlowRRAB!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CAIQACodChtycF9oOi1YcEZzQWx3VVFoQkpQSXpaV3d2Z0E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tWSlNreGljbE5OVFhoeFJqRnBNMjVWTW5od00zYxAB",
+      "reviewer": "Brian R.",
+      "rating": 5,
+      "text": "I highly recommend Alpha HVAC. I had Tom out to look at my HVAC system, you can tell he cares about doing the right thing for his customers. He put it the effort to educate me on the plus/minus of a new and high efficiency systems, and ultimately convinced me fixing vs replacing was a better option. Brett, the technician, was on time and courteous. Kept me in the loop on what was going on with my furnace and had it fixed in no time, for a great price.",
+      "publishedAt": "2026-01-23T02:31:26.826Z",
+      "ownerResponse": "Thank you Brian  I do care about our customers and making sure they are taken care of",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tWSlNreGljbE5OVFhoeFJqRnBNMjVWTW5od00zYxAB!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CAIQACodChtycF9oOkVJSkxiclNNTXhxRjFpM25VMnhwM3c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2taSVNUWnFkbkJmTjJ4TmNGUlBUbTlXUVY5R2VXYxAB",
+      "reviewer": "Kimberly F.",
+      "rating": 5,
+      "text": "Chris came out and installed new hot water tank.  Was very pleasant and efficient.",
+      "publishedAt": "2025-12-17T19:25:28.837Z",
+      "ownerResponse": "Thanks for using our Plumbing we appreciate your business",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2taSVNUWnFkbkJmTjJ4TmNGUlBUbTlXUVY5R2VXYxAB!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CAIQACodChtycF9oOkZISTZqdnBfN2xNcFRPTm9WQV9GeWc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2kxaVJrdGpNM1ZNVjNGNUxWRk1ZM1J5UzFKaFRsRRAB",
+      "reviewer": "Claudia W.",
+      "rating": 5,
+      "text": "The tech was amazing!",
+      "publishedAt": "2025-12-09T22:46:30.456Z",
+      "ownerResponse": "Thank you Claudia for the kind words",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2kxaVJrdGpNM1ZNVjNGNUxWRk1ZM1J5UzFKaFRsRRAB!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CAIQACodChtycF9oOi1iRktjM3VMV3F5LVFMY3RyS1JhTlE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xGMGJUZHhOMUYzWjBSSFFUTmpZMFU0WVhOdk1HYxAB",
+      "reviewer": "Nadim A.",
+      "rating": 5,
+      "text": "Steve is always nice as usal. Very excellent service. I do recommend people to use Alpha Heating Service.",
+      "publishedAt": "2025-12-06T18:48:50.075Z",
+      "ownerResponse": "Thanks for the kind words, we do have a referral program for you to earn money for anyone you refer. Have them mention your name so we can apply the credit on your account for you to use for your services",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xGMGJUZHhOMUYzWjBSSFFUTmpZMFU0WVhOdk1HYxAB!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CAIQACodChtycF9oOlF0bTdxN1F3Z0RHQTNjY0U4YXNvMGc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25rdGFqSTFSM1JpY1RKNE4wMXZkbWcyTjFOUWFsRRAB",
+      "reviewer": "gilberto S.",
+      "rating": 5,
+      "text": "Excelente job",
+      "publishedAt": "2025-11-17T16:09:42.402Z",
+      "ownerResponse": "Thanks Gilberto",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25rdGFqSTFSM1JpY1RKNE4wMXZkbWcyTjFOUWFsRRAB!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CAIQACodChtycF9oOnktajI1R3RicTJ4N01vdmg2N1NQalE%7C%7C?hl=en-US",
+      "language": "pt"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xkUFYzUkJOa05FUmxoZlNrTm1iRmRzUVdwUlZsRRAB",
+      "reviewer": "Donnie W.",
+      "rating": 5,
+      "text": "Alpha installed mini splits in our entire home. We love having every room being set at its own temperature and not to mention the great job the crew did installing everything in our house.",
+      "publishedAt": "2025-10-17T17:44:14.106Z",
+      "ownerResponse": "Thank you Donnie we appreciate your support and appreciate your repeat business",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xkUFYzUkJOa05FUmxoZlNrTm1iRmRzUVdwUlZsRRAB!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CAIQACodChtycF9oOldPV3RBNkNERlhfSkNmbFdsQWpRVlE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25SM2JrdDZMVmRGTkZkb2JFeGpWMjl4ZDNsWVZrRRAB",
+      "reviewer": "Darren R.",
+      "rating": 5,
+      "text": "Working with Tom and the ALPHA team was a great experience. Tom made the bid process fast, well communicated and easy, got the job scheduled and they handled everything so efficiently! Install was clean, quick and thorough and the crew was clean, respectful and professional. Never knew having to replace my whole HVAC system unexpectedly would turn out so… easy. Price was good to beat!",
+      "publishedAt": "2025-10-15T20:10:08.767Z",
+      "ownerResponse": "Thank you Darren for the kind words, enjoy working with you each time",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25SM2JrdDZMVmRGTkZkb2JFeGpWMjl4ZDNsWVZrRRAB!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CAIQACodChtycF9oOnR3bkt6LVdFNFdobExjV29xd3lYVkE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tOSmRXMXBiVUpLVUd4WWVGSTBiVGt3ZEZKd1dGRRAB",
+      "reviewer": "Brian L.",
+      "rating": 5,
+      "text": "Chris did an absolute fantastic job. He was on time and communicated everything that was needing to be done/has been done through the whole process. The price was well within reason when compared to other quotes! There was no additional upsell being forced or mentioned along the way. The work was completed very quickly, neatly and returned to working order better than before the repair was needed. I would recommend Chris and alpha plumbing 10/10 times and will be using them in the future!",
+      "publishedAt": "2025-10-14T19:38:17.414Z",
+      "ownerResponse": "Thanks Brian we appreciate your business",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tOSmRXMXBiVUpLVUd4WWVGSTBiVGt3ZEZKd1dGRRAB!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CAIQACodChtycF9oOkNJdW1pbUJKUGxYeFI0bTkwdFJwWFE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2s5bVdFVXhibUozVEV4SVZXVmFRa1JJU1hWaVMwRRAB",
+      "reviewer": "Brandy M.",
+      "rating": 5,
+      "text": "Tom and his team took good care of both of my kiddos, who were brand new homeowners. As a mom who helps them navigate through new things like this, it's been great to work with someone trustworthy. They both needed their A/Cs serviced and were able to take advantage of the summer sale. My daughter's A/C had some issues. Again, the team took great care of her and got it fixed without her having to spend thousands of dollars for a new unit.",
+      "publishedAt": "2025-10-14T02:41:24.530Z",
+      "ownerResponse": "Thank you Brandy enjoy helping you and your family",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2s5bVdFVXhibUozVEV4SVZXVmFRa1JJU1hWaVMwRRAB!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CAIQACodChtycF9oOk9mWEUxbmJ3TExIVWVaQkRISXViS0E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25GeWIwMDJValZPVTBWUmJWbFpUelpFYlRZMVZFRRAB",
+      "reviewer": "Stephen R.",
+      "rating": 5,
+      "text": "I’ve used Alpha for both my business and to send to my clients! Each time clients have made it a point to let me know how great it was to have some one so knowledgeable and quick to service.<br><br>Thank you Alpha!",
+      "publishedAt": "2025-10-14T02:11:55.048Z",
+      "ownerResponse": "Thanks Steven we appreciate your business",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25GeWIwMDJValZPVTBWUmJWbFpUelpFYlRZMVZFRRAB!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CAIQACodChtycF9oOnFyb002UjVOU0VRbVlZTzZEbTY1VEE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21obmRrTmZjMXBXUkZkVVIxUlpZelIyY1RkcVMyYxAB",
+      "reviewer": "Emma S.",
+      "rating": 5,
+      "text": "We have used Alpha for rentals and our personal home. We highly recommend them for your HVAC needs!",
+      "publishedAt": "2025-10-13T16:19:49.263Z",
+      "ownerResponse": "Thank you Emma for your repleat business",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21obmRrTmZjMXBXUkZkVVIxUlpZelIyY1RkcVMyYxAB!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CAIQACodChtycF9oOmhndkNfc1pWRFdUR1RZYzR2cTdqS2c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25GeldraFFWWG8wTmpaR2JEWlZXVlJ4WW5kb2FGRRAB",
+      "reviewer": "JEFF A.",
+      "rating": 5,
+      "text": "Great service",
+      "publishedAt": "2025-10-11T03:09:25.307Z",
+      "ownerResponse": "Thanks Jeff, we appreciate you and your business",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25GeldraFFWWG8wTmpaR2JEWlZXVlJ4WW5kb2FGRRAB!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CAIQACodChtycF9oOnFzWkhQVXo0NjZGbDZVWVRxYndoaFE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25WbWVFczRhMDFtTlVvd09XOWhaVEYzYWpaSU9XYxAB",
+      "reviewer": "Robin S.",
+      "rating": 5,
+      "text": "So grateful for the team at Alpha. They were quick to respond and had excellent service from the initial call to following up after installation. They were knowledgeable,  did a great job and I highly recommend their heating and air conditioning service for existing units and new installs.",
+      "publishedAt": "2025-10-10T05:15:02.287Z",
+      "ownerResponse": "Thank you Robin we appreciate you and the repeat business",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25WbWVFczRhMDFtTlVvd09XOWhaVEYzYWpaSU9XYxAB!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CAIQACodChtycF9oOnVmeEs4a01mNUowOW9hZTF3ajZIOWc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25FelRIWm5OWE5sY0U1RFgwcFhXVGRxU1dWd1VsRRAB",
+      "reviewer": "Heidi H.",
+      "rating": 5,
+      "text": "We had Tom from Alpha Heating come out to look at the temperature differences between the levels of our home—our loft always runs hot, the main level stays warm, and the basement is cool. He was super candid about pricing and the options available to fix it. I really appreciated how honest, forthright, and easy to understand he was when explaining solutions. It’s refreshing to work with someone who is straightforward and genuinely helpful.",
+      "publishedAt": "2025-10-03T15:18:58.102Z",
+      "ownerResponse": "Thank you Heidi we appreciate you",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25FelRIWm5OWE5sY0U1RFgwcFhXVGRxU1dWd1VsRRAB!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CAIQACodChtycF9oOnEzTHZnNXNlcE5DX0pXWTdqSWVwUlE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pKdE5HRnljV1ZCTjA5S016WXRjMnREZDNnMVRIYxAB",
+      "reviewer": "Kasie M.",
+      "rating": 5,
+      "text": "Had a new furnace installed and the team at Alpha did great work and were very neat as they installed the furnace.  Peace of mind buying American made equipment",
+      "publishedAt": "2025-10-03T00:55:15.189Z",
+      "ownerResponse": "Thanks Kasie we appreciate your support",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pKdE5HRnljV1ZCTjA5S016WXRjMnREZDNnMVRIYxAB!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CAIQACodChtycF9oOjJtNGFycWVBN09KMzYtc2tDd3g1THc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25KRmVuQmhXRXBSUzNsMlJtOTVhbFpVWDJoUlFsRRAB",
+      "reviewer": "Tim S.",
+      "rating": 5,
+      "text": "Great company to work with. Everyone I've talked to was kind and respectable. No complaints at all.",
+      "publishedAt": "2025-09-09T22:19:14.922Z",
+      "ownerResponse": "Thank you Tim we appreciate your business",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25KRmVuQmhXRXBSUzNsMlJtOTVhbFpVWDJoUlFsRRAB!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CAIQACodChtycF9oOnJFenBhWEpRS3l2Rm95alZUX2hRQlE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pKME5IbzVOR05EYlV4aVJXSk9SMTlSYlVjd1UxRRAB",
+      "reviewer": "Joshua D.",
+      "rating": 5,
+      "text": "Had some issues with outer unit being loud. Geoff came right out, inspected and secured everything. Sounds much better and in July, I'm definitely reassured it's good to go. Thank you!",
+      "publishedAt": "2025-07-03T20:23:15.658Z",
+      "ownerResponse": "Thank you Joshua appreciate your business",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pKME5IbzVOR05EYlV4aVJXSk9SMTlSYlVjd1UxRRAB!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CAIQACodChtycF9oOjJ0NHo5NGNDbUxiRWJOR19RbUcwU1E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21Zek1YUkRhRk5mYmtkTlJWaGhZbkkzTjNGa1dFRRAB",
+      "reviewer": "Jennifer L.",
+      "rating": 5,
+      "text": "My experience with Alpha Heating & Air as a new customer was exceptional!  When my air conditioner stopped working on a Friday, I called and they were here that same day.  I appreciated the knowledge and customer service that they provided!  I had a question after they left, and my call was returned within minutes.  I highly recommend this company!",
+      "publishedAt": "2025-06-30T00:00:39.183Z",
+      "ownerResponse": "Thank you Jennifer for the kind words",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21Zek1YUkRhRk5mYmtkTlJWaGhZbkkzTjNGa1dFRRAB!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CAIQACodChtycF9oOmYzMXRDaFNfbkdNRVhhYnI3N3FkWEE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tnMk9VTmhkRGxGVkd0bFdXRkliWGM0YW5SbE1FRRAB",
+      "reviewer": "Lacy G.",
+      "rating": 5,
+      "text": "Last night our AC unit stopped working.. I messaged Tom Tallon with ALPHA Hvac & Plumbing Llc and he messaged me this morning and had a tech at our house by 11. The technician got us up and running within 30 minutes.<br><br>Definitely recommend them with the fast response and repair!<br><br>Please make sure you are servicing your units, changing filters. Just like maintenance on your car your units need the same TLC. They do have a yearly maintenance package as well.",
+      "publishedAt": "2025-06-26T23:53:26.715Z",
+      "ownerResponse": "Thanks Lacy for the kind words",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tnMk9VTmhkRGxGVkd0bFdXRkliWGM0YW5SbE1FRRAB!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CAIQACodChtycF9oOkg2OUNhdDlFVGtlWWFIbXc4anRlMEE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2sxbFFrVlBYMGt4YWxJdFVrZE1Ua0pUTWkxUFgxRRAB",
+      "reviewer": "Jarett B.",
+      "rating": 5,
+      "text": "Vincent replaced our hot water heater. He was professional, personnel, and timely. Great company!",
+      "publishedAt": "2025-06-11T15:08:53.257Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2sxbFFrVlBYMGt4YWxJdFVrZE1Ua0pUTWkxUFgxRRAB!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CAIQACodChtycF9oOk1lQkVPX0kxalItUkdMTkJTMi1PX1E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VKU29rTDJSb3J5eWVREAE",
+      "reviewer": "Mickey L.",
+      "rating": 5,
+      "text": "We have been loyal clients for over 5 years,, we take advantage of the yearly service contract and even call on Alpha for filter drop offs they are great and literally have become family. We were quoted some crazy number on a serious plumbing backup not to long ago and I remembered their plumbing devision and we called, that call saved us a lot of money. Thank you Alpha",
+      "publishedAt": "2025-05-30T06:16:35.998Z",
+      "ownerResponse": "thank you Mickey for your continued support",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VKU29rTDJSb3J5eWVREAE!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CIHM0ogKEJSokL2RoryyeQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VPU3A2cGFla083TTF3RRAB",
+      "reviewer": "D M.",
+      "rating": 5,
+      "text": "These guys are amazing. They show up on time, take pictures of the work and have very happy employees. Great company to use!",
+      "publishedAt": "2025-05-30T02:05:08.440Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VPU3A2cGFla083TTF3RRAB!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CIHM0ogKEOSp6paekO7M1wE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VPTEpzOURWMzhuTVVREAE",
+      "reviewer": "Mark C.",
+      "rating": 5,
+      "text": "Geoff did a really good job and was very informative while doing the job. I highly recommend Alpha for any and all  HVAC services. Thank you again Geoff.",
+      "publishedAt": "2025-05-27T14:15:35.394Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VPTEpzOURWMzhuTVVREAE!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CIHM0ogKEOLJs9DV38nMUQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnTUNvall5ZTZRRRAB",
+      "reviewer": "A W.",
+      "rating": 5,
+      "text": "Alpha is my go to for any service. They do what they say they’ll do, show up when they say they will, and are very professional & courteous.",
+      "publishedAt": "2025-04-19T00:12:14.183Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTUNvall5ZTZRRRAB!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CIHM0ogKEICAgMCojYye6QE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnTURJbXB5Z0J3EAE",
+      "reviewer": "Michael B.",
+      "rating": 5,
+      "text": "Great service on my new install at my old house. Had service call at my new house and the tech was very professional. Found a leak in the wall on our mini split head.",
+      "publishedAt": "2025-04-09T00:19:50.635Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTURJbXB5Z0J3EAE!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CIHM0ogKEICAgMDImpygBw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnTUNndVpHLUN3EAE",
+      "reviewer": "Steven M.",
+      "rating": 5,
+      "text": "Air coming out of the vents was nice and cool, system needed little maintenance. Service was quick and hassle free. See you for heater startup in the fall.Thanks.",
+      "publishedAt": "2025-04-03T20:46:17.241Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTUNndVpHLUN3EAE!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CIHM0ogKEICAgMCguZG-Cw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnTUNJb2FPeW9RRRAB",
+      "reviewer": "Steven B.",
+      "rating": 5,
+      "text": "Excellent.",
+      "publishedAt": "2025-04-02T16:26:45.134Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTUNJb2FPeW9RRRAB!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CIHM0ogKEICAgMCIoaOyoQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnTUR3MTZTZy13RRAB",
+      "reviewer": "Jack M.",
+      "rating": 5,
+      "text": "Our AC was having trouble so Geoff came out to take a look after Tom found room to squeeze us into their busy day. This was our first time using Alpha and I couldn’t be happier. Geoff’s years of experience in the industry was apparent in how thorough he was and in how he explained the situation and our options. He was patient with us and took the time to ensure we understood. This is a good company, not the kind that’ll try to screw you over. Highly recommend Alpha.",
+      "publishedAt": "2025-03-28T21:31:47.712Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTUR3MTZTZy13RRAB!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CIHM0ogKEICAgMDw16Sg-wE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnTUR3X1plZ1FBEAE",
+      "reviewer": "Israel M.",
+      "rating": 5,
+      "text": "Had a great first time experience with Alpha. Thank you Vincent for coming out and fixing our plumbing issues.",
+      "publishedAt": "2025-03-27T21:20:03.173Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTUR3X1plZ1FBEAE!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CIHM0ogKEICAgMDw_ZegQA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnTUN3OTZTR21nRRAB",
+      "reviewer": "Lee B.",
+      "rating": 5,
+      "text": "Vincent took time to fix the problem. He did great!",
+      "publishedAt": "2025-03-21T23:14:43.641Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTUN3OTZTR21nRRAB!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CIHM0ogKEICAgMCw96SGmgE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnTUNnOF9mTm1nRRAB",
+      "reviewer": "Jordan L.",
+      "rating": 5,
+      "text": "I use them every year. They are quick informative and I wouldn't want to use anyone else.",
+      "publishedAt": "2025-02-20T18:18:19.997Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTUNnOF9mTm1nRRAB!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CIHM0ogKEICAgMCg8_fNmgE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURfaDVUS01BEAE",
+      "reviewer": "Rob P.",
+      "rating": 5,
+      "text": "The Alpha team is always responsive and in this time of need with ne furnace and little one's at home, they went above and beyond to troubleshoot and find the correct solution to keep my old furnace working properly.<br><br>Thank you,",
+      "publishedAt": "2025-01-27T15:09:06.863Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURfaDVUS01BEAE!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CIHM0ogKEICAgID_h5TKMA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURfbE5QRU9REAE",
+      "reviewer": "Darrin F.",
+      "rating": 5,
+      "text": "Quick service, diagnosed the problem right and had heat back on within an hour. Would highly recommend and will use them in the future.",
+      "publishedAt": "2025-01-21T22:19:20.491Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURfbE5QRU9REAE!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CIHM0ogKEICAgID_lNPEOQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURfNEtMUndBRRAB",
+      "reviewer": "Kim H.",
+      "rating": 5,
+      "text": "Quick to serve and solved the problem immediately. Thank you!",
+      "publishedAt": "2025-01-20T17:49:55.329Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURfNEtMUndBRRAB!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CIHM0ogKEICAgID_4KLRwAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNfZ2JuMjRnRRAB",
+      "reviewer": "Christiane",
+      "rating": 5,
+      "text": "I have used Alpha and am impressed by their friendliness, ease of communication, and professionalism.  Highly recommend!",
+      "publishedAt": "2025-01-16T17:59:41.274Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNfZ2JuMjRnRRAB!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CIHM0ogKEICAgIC_gbn24gE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURmenA2czl3RRAB",
+      "reviewer": "Ryan M.",
+      "rating": 5,
+      "text": "The tech Vincent was on time and did amazing work fixing the issue with my water heater quickly, and on the the coldest day of the year 3°F. He provided us with professional service. Would use this service again in the future.",
+      "publishedAt": "2025-01-06T16:04:59.113Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURmenA2czl3RRAB!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CIHM0ogKEICAgIDfzp6s9wE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURmdkp5Z3ZRRRAB",
+      "reviewer": "Michelle T.",
+      "rating": 5,
+      "text": "Very courteous, helpful, and professional.",
+      "publishedAt": "2025-01-04T18:34:57.940Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURmdkp5Z3ZRRRAB!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CIHM0ogKEICAgIDfvJygvQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNmM1ozNjR3RRAB",
+      "reviewer": "Zachary S.",
+      "rating": 5,
+      "text": "Heater went out in the winter. Geoff and Tom moved heaven and earth to get a new system put in in a couple of days. Our three month old really appreciated it.<br><br>Thank you Alpha Team!",
+      "publishedAt": "2024-12-31T21:08:46.247Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNmM1ozNjR3RRAB!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CIHM0ogKEICAgICf3Z364wE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUMzLS16cl9RRRAB",
+      "reviewer": "Eileen B.",
+      "rating": 5,
+      "text": "Awesome Service.  Friendly and fast.  Will use again when needed.  But I don't expect a need soon.  They took care of everything!",
+      "publishedAt": "2024-11-09T17:13:24.194Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMzLS16cl9RRRAB!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CIHM0ogKEICAgIC3--zr_QE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURYd0xiWVhnEAE",
+      "reviewer": "Christiane S.",
+      "rating": 5,
+      "text": "Thorough and friendly service!",
+      "publishedAt": "2024-10-22T17:32:32.132Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURYd0xiWVhnEAE!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CIHM0ogKEICAgIDXwLbYXg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURibU9teURBEAE",
+      "reviewer": "Jason P.",
+      "rating": 5,
+      "text": "Tech came out the same day and was very knowledgeable. He pinpointed the problem quickly and repaired it quickly. So grateful this company was available for our needs!",
+      "publishedAt": "2024-08-01T18:58:21.326Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURibU9teURBEAE!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CIHM0ogKEICAgIDbmOmyDA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNaOFpQVzNnRRAB",
+      "reviewer": "Mary B.",
+      "rating": 5,
+      "text": "I’ve used Alpha many times, and they are professional, and prompt. Highly recommend.",
+      "publishedAt": "2024-07-11T00:56:26.652Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNaOFpQVzNnRRAB!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CIHM0ogKEICAgICZ8ZPW3gE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNydzZhNE9REAE",
+      "reviewer": "QuilleAsh R.",
+      "rating": 5,
+      "text": "We ended up going with a different provider for complicated reasons (a previous service that was messed up from another company who was giving us a credit.)<br><br>HOWEVER, Alpha would have been our top choice! Tom was VERY professional, knowledgable, and helpful when diagnosing our HVAC issue in our home.<br><br>If we ever encounter other issues outside of our warranty with the other company - we will choose Alpha!",
+      "publishedAt": "2024-07-10T18:14:51.473Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNydzZhNE9REAE!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CIHM0ogKEICAgICrw6a4OQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNMNVpxT1NnEAE",
+      "reviewer": "Rachel H.",
+      "rating": 5,
+      "text": "He explained what was wrong and fixed it and was very friendly coming during nap time for a daycare provider is a nightmare but he was very quiet and in and out and done!!!!!",
+      "publishedAt": "2024-06-21T19:11:34.750Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNMNVpxT1NnEAE!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CIHM0ogKEICAgICL5ZqOSg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURSMVBhbUFnEAE",
+      "reviewer": "Joshua T.",
+      "rating": 5,
+      "text": "Alpha did a great job this morning servicing my HVAC system.  They changed the filter, checked temp at all the registers, and cleaned the exterior unit. They were detail oriented and even wore shoe covers when in the house.",
+      "publishedAt": "2024-05-29T01:56:24.658Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURSMVBhbUFnEAE!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CIHM0ogKEICAgIDR1PamAg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURodnYzWW1nRRAB",
+      "reviewer": "Cathy S.",
+      "rating": 5,
+      "text": "Sean completed the service and walked me through the process.  Answered my questions thoroughly.  Was respectful of my property.  Absolutely pleased with the service!",
+      "publishedAt": "2024-04-16T13:54:14.492Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURodnYzWW1nRRAB!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CIHM0ogKEICAgIDhvv3YmgE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUREXzQtTkF3EAE",
+      "reviewer": "S R.",
+      "rating": 5,
+      "text": "Quick response time, knowledgeable, and very nice technicians.",
+      "publishedAt": "2024-04-16T12:05:04.374Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUREXzQtTkF3EAE!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CIHM0ogKEICAgIDD_4-NAw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUREa0t2Zy1BRRAB",
+      "reviewer": "MoM G.",
+      "rating": 5,
+      "text": "Had my entire system replaced. Excellent Quality work. Very nice technicians. American Made products. Highly recommended.",
+      "publishedAt": "2024-04-04T13:42:30.709Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUREa0t2Zy1BRRAB!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CIHM0ogKEICAgIDDkKvg-AE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUQ5emU2WnVRRRAB",
+      "reviewer": "Joplin E.",
+      "rating": 5,
+      "text": "These guys are top notch.   Superior service at a great price.",
+      "publishedAt": "2024-03-19T20:14:56.513Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ5emU2WnVRRRAB!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CIHM0ogKEICAgID9ze6ZuQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNWako3MUhBEAE",
+      "reviewer": "Brittany C.",
+      "rating": 5,
+      "text": "Tom came out and quoted us to replace our HVAC system. He explained everything thoroughly and gave us a few different options, what they would cost, and explained the differences of each system. He shared with me some pictures of the HVAC in his own home and what he has and why. He also educated us on different options to help extend the life of the system by the way that the furnace pulls air in. The installers were very nice, very helpful, asked us questions about how we wanted things, etc. our home heats evenly now. Before my 10 month olds room would get really cold but we no longer have that problem. We also had them install an air purification system to help with my allergies. I strongly recommend them!",
+      "publishedAt": "2023-12-05T21:24:32.837Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNWako3MUhBEAE!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CIHM0ogKEICAgICVjJ71HA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUQta19tOWdBRRAB",
+      "reviewer": "Monica H.",
+      "rating": 5,
+      "text": "Friendly, helpful and thorough. Thanks again!!",
+      "publishedAt": "2023-11-17T20:01:50.247Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQta19tOWdBRRAB!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CIHM0ogKEICAgID-k_m9gAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUMtNmU3cmFREAE",
+      "reviewer": "Thomas T.",
+      "rating": 5,
+      "text": "Having Alpha out today on my 5 year old furnace and learning thru all the pictures they take about my system, and things to watch and stay alert to some rust on heat exchangers. This was great where other companies charge $150-$200 just for a heat exchanger inspection. Alpha included for $95, Great Value and will always use for my needs",
+      "publishedAt": "2023-11-09T19:45:07.919Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMtNmU3cmFREAE!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CIHM0ogKEICAgIC-6e7raQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURSOGZXZjVnRRAB",
+      "reviewer": "Melissa S.",
+      "rating": 5,
+      "text": "Geoff was great.  Did a great job servicing my HVAC unit and showing me what he was looking at and explaining the process.",
+      "publishedAt": "2023-10-28T00:30:01.718Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURSOGZXZjVnRRAB!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CIHM0ogKEICAgIDR8fWf5gE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNaMDRmVTR3RRAB",
+      "reviewer": "Mark C.",
+      "rating": 5,
+      "text": "I have had good service from Alpha Heating and Air a couple times now. I had an issue with my furnace as it would cycle on and off constantly. They replaced the control board and the blower motor but it still didn't fix it. It was an issue with the thermostat. Tom was able to work with us on the price since it wasn't diagnosed correctly at first. I will continue giving them my business!",
+      "publishedAt": "2023-09-17T15:32:05.638Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNaMDRmVTR3RRAB!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CIHM0ogKEICAgICZ04fU4wE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNwX3VMVU9nEAE",
+      "reviewer": "Desiree F.",
+      "rating": 5,
+      "text": "All sad stories have a happy ending right! Well my AC quit blowing cold air which made for a miserable night. Called Tom at Alpha who was able to fit me in at 5pm. By 10:30am, Geoff calls and says he can fit me in now. Here I was preparing myself to fork out $$$ and melting. Geoff comes in, fixes a small part, educates me on what it does, is polite and respectful and I spent way way less than I was expecting. And in 30 min my AC is fixed and blowing cool air. Now this might be the crisp cool air that's talking but I am over the moon thrilled with this company and the service they provided. Tom even called to check on me when all was completed. Top notch guys, Top notch! My house is cool and now I have a happy ending.",
+      "publishedAt": "2023-08-04T17:37:51.606Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNwX3VMVU9nEAE!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CIHM0ogKEICAgICp_uLUOg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNCMnNYREFnEAE",
+      "reviewer": "Tom S.",
+      "rating": 5,
+      "text": "Have used Alpha Heating and air conditioning for the replacement of my previous R22 heat pump and backup furnace.  They are prompt, courteous, transparent and very understanding.  I highly recommend!!!!  Quick, responsive and great to work with!",
+      "publishedAt": "2023-07-26T16:23:39.259Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNCMnNYREFnEAE!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CIHM0ogKEICAgICB2sXDAg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURKMXZ5VFdnEAE",
+      "reviewer": "Jeff M.",
+      "rating": 5,
+      "text": "I had great service and Lamar was extremely nice, professional and right on time. He was knowledgeable and explained everything very well. Also gave me some good tips on how to take better care of my AC unit.  Due to this great service, I will be calling Alpha with any issues I have in the future.",
+      "publishedAt": "2023-07-16T13:44:15.899Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURKMXZ5VFdnEAE!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CIHM0ogKEICAgIDJ1vyTWg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUQtOFoyRmJnEAE",
+      "reviewer": "Steve P.",
+      "rating": 5,
+      "text": "EVERY TIME WE HAVE NEEDED HELP WITH HEATERS OR  THE MAIN  AC UNIT THEY TOOK CARE OF US WITHIN A WEEK",
+      "publishedAt": "2023-07-12T16:33:04.684Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQtOFoyRmJnEAE!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CIHM0ogKEICAgID-8Z2Fbg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUR4aE9Pa2R3EAE",
+      "reviewer": "shaunda R.",
+      "rating": 5,
+      "text": "I was impressed by the first call in contacting us as a referral. The two guys that showed up were wonderful and also shared pictures just like they said they would. The guys that came out matched how the company was described.",
+      "publishedAt": "2023-06-01T19:14:46.166Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR4aE9Pa2R3EAE!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CIHM0ogKEICAgIDxhOOkdw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUN4aTZXOUFREAE",
+      "reviewer": "Justin G.",
+      "rating": 5,
+      "text": "Great guys, I've used them for small issues and large repairs and full replacements",
+      "publishedAt": "2023-05-26T00:50:08.549Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN4aTZXOUFREAE!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CIHM0ogKEICAgICxi6W9AQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUN4eWVYVktBEAE",
+      "reviewer": "Al's L.",
+      "rating": 5,
+      "text": "Did a fantastic job!",
+      "publishedAt": "2023-05-20T14:58:39.149Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN4eWVYVktBEAE!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CIHM0ogKEICAgICxyeXVKA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURSaV9lb1l3EAE",
+      "reviewer": "Justin G.",
+      "rating": 5,
+      "text": "great guys to deal with. have used them a few times whenever we have something that needs done.",
+      "publishedAt": "2023-05-03T17:55:50.491Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURSaV9lb1l3EAE!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CIHM0ogKEICAgIDRi_eoYw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURSdGZPWGlBRRAB",
+      "reviewer": "Brandon W.",
+      "rating": 5,
+      "text": "Great team very professional and affordable",
+      "publishedAt": "2023-04-30T16:58:42.416Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURSdGZPWGlBRRAB!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CIHM0ogKEICAgIDRtfOXiAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURSa292T21nRRAB",
+      "reviewer": "Tayler L.",
+      "rating": 5,
+      "text": "Alpha Heating & Air is always on time, professional on the phone & in person, & always does great work!",
+      "publishedAt": "2023-04-21T16:03:33.004Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURSa292T21nRRAB!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CIHM0ogKEICAgIDRkovOmgE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNCdF9IT2VnEAE",
+      "reviewer": "Kimberly S.",
+      "rating": 5,
+      "text": "Amazing work and people!",
+      "publishedAt": "2023-01-07T00:29:21.724Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNCdF9IT2VnEAE!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CIHM0ogKEICAgICBt_HOeg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNCc1ltTktBEAE",
+      "reviewer": "Jenae W.",
+      "rating": 5,
+      "text": "Sean with Alpha Heating and Air has done work off and on at my house for years. Sometimes we will call someone a little bit closer to home but that will not be the case any longer! We had 2 other companies out in the couple of months to look at our furnace. One partially fixed the issue and the other told us we needed to replace the the whole unit. Sean and his crew came out twice before a deep freeze and took the time to find the cause of the issue! I will always call Alpha first and would recommend them to everybody!",
+      "publishedAt": "2022-12-28T14:11:52.544Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNCc1ltTktBEAE!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CIHM0ogKEICAgICBsYmNKA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUQteGRiZFBBEAE",
+      "reviewer": "Drew A.",
+      "rating": 5,
+      "text": "We had an emergency situation and asked for recommendations and Tom reached out right away. He was extremely knowledgeable and sent Geoff out right away! he was able to get everything done for us",
+      "publishedAt": "2022-12-04T21:05:31.213Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQteGRiZFBBEAE!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CIHM0ogKEICAgID-xdbdPA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUQtNU5TaElBEAE",
+      "reviewer": "Mike M.",
+      "rating": 5,
+      "text": "I have been using Alpha for over 5 years on a business and personal level. I was referred to them by a colleague to help with some of my HVAC units at my apartment complex. Over the past five years, I have replaced several VTAC’s and also a few split units. By far the best HVAC company in Wichita, Sean is always responsive and on time. His Sales guy Tom is the best and even delivers items I need personally. Best prices in Wichita but the quality of work is top tier. I would highly recommend them to any business or even personal home repair.",
+      "publishedAt": "2022-11-21T21:08:18.366Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQtNU5TaElBEAE!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CIHM0ogKEICAgID-5NShIA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUQtNU5pTzF3RRAB",
+      "reviewer": "ali C.",
+      "rating": 5,
+      "text": "Sean and his crew saved me!  AC went out in a 20 year old house and everyplace I called was tied up for over a week!  We were forecasted for triple digit weather for the next several days.  I have two small children and 3 dogs and we would have had to stay at a hotel.  Sean was able to come out the next day and install and brand new 3 ton unit and the price beat every on of my other quotes!  I will definitely be using Alpha in the future!",
+      "publishedAt": "2022-11-21T20:49:24.841Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQtNU5pTzF3RRAB!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CIHM0ogKEICAgID-5NiO1wE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUQyNnQ2WUxREAE",
+      "reviewer": "Adam G.",
+      "rating": 5,
+      "text": "our AC was acting up.  had a little newborn at the house that needed AC.  they came out same day and got us dialed.  much obliged!",
+      "publishedAt": "2022-05-12T01:26:59.716Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQyNnQ2WUxREAE!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CIHM0ogKEICAgID26t6YLQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUQyc3M3VEJREAE",
+      "reviewer": "THE B.",
+      "rating": 5,
+      "text": "These guys came out and waved that magic hvac wand and poof....2 units up and running again like Rich Strike at the Kentucky Derby. Will definitely be my go to for any future issues. A+ service and professionalism.",
+      "publishedAt": "2022-05-10T23:14:26.510Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQyc3M3VEJREAE!2m1!1s0x0:0x11dde620267846b4!3m1!1s2@1:CIHM0ogKEICAgID2ss7TBQ%7C%7C?hl=en-US",
+      "language": "en"
+    }
+  ],
+  "ratingOnly": [
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNQMUtiQ1ZnEAE",
+      "reviewer": "jessica A.",
+      "rating": 5,
+      "publishedAt": "2026-10-30T17:27:18.358Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xKc1NWVjVMVlJqUkhWMlQxWkhjRzFQTFRoRVIxRRAB",
+      "reviewer": "Vanessa C.",
+      "rating": 5,
+      "publishedAt": "2026-10-03T16:25:09.193Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pJM1IxVkNSbVpHWjFCb1R5MVVTM0J4TlV4bFkwRRAB",
+      "reviewer": "Christi M.",
+      "rating": 5,
+      "publishedAt": "2026-06-20T13:48:54.820Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xCYVdXbEVTamhWVlhaU1dtWXhURFJWU0dwUmVHYxAB",
+      "reviewer": "Mike H.",
+      "rating": 5,
+      "publishedAt": "2026-04-22T21:22:19.330Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tseFVWUTRUWGRRVFdWNWJETk1ZMHh3WkZOa2NGRRAB",
+      "reviewer": "Chuck H.",
+      "rating": 5,
+      "publishedAt": "2026-04-03T21:07:31.600Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pOVFVVTjJTVEpYWTNaVlNHWnBlSGQxY21zd1MxRRAB",
+      "reviewer": "Niamh B.",
+      "rating": 5,
+      "publishedAt": "2026-03-19T20:47:14.798Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2s5blltRk5iM05OWkdsb05sbFlOVmc0VlZkRVJYYxAB",
+      "reviewer": "Steve F.",
+      "rating": 5,
+      "publishedAt": "2025-08-11T17:13:54.604Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VPclp2TXJydFozeFlREAE",
+      "reviewer": "Lester R.",
+      "rating": 5,
+      "publishedAt": "2025-06-06T13:28:44.929Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnTUNZZ3VTX1hnEAE",
+      "reviewer": "Dustin J.",
+      "rating": 5,
+      "publishedAt": "2025-05-02T16:20:30.541Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnTUNvcUxQVlB3EAE",
+      "reviewer": "Erik F.",
+      "rating": 5,
+      "publishedAt": "2025-04-14T19:17:08.107Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnTUR3dk9YdzdRRRAB",
+      "reviewer": "Erika K.",
+      "rating": 5,
+      "publishedAt": "2025-03-24T14:29:45.952Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURmNDY3akJREAE",
+      "reviewer": "Brian E.",
+      "rating": 5,
+      "publishedAt": "2025-03-21T20:22:05.477Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnTUNRZ05TYnRRRRAB",
+      "reviewer": "Nikki R.",
+      "rating": 5,
+      "publishedAt": "2025-03-01T00:01:35.505Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnTURBbUpLdkNnEAE",
+      "reviewer": "Ben E.",
+      "rating": 5,
+      "publishedAt": "2025-02-06T19:04:40.630Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURmamZ6MWhnRRAB",
+      "reviewer": "Miranda K.",
+      "rating": 5,
+      "publishedAt": "2025-01-09T03:25:47.848Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUMzNmZDRlpnEAE",
+      "reviewer": "Nose T.",
+      "rating": 5,
+      "publishedAt": "2024-11-06T22:19:51.953Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURSMVA3aVlBEAE",
+      "reviewer": "Robert K.",
+      "rating": 5,
+      "publishedAt": "2024-04-26T16:32:49.532Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUREal9Xd0hREAE",
+      "reviewer": "Becky K.",
+      "rating": 5,
+      "publishedAt": "2024-04-15T18:46:16.747Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNsbHFYdURREAE",
+      "reviewer": "Tyson T.",
+      "rating": 5,
+      "publishedAt": "2024-04-03T16:48:53.386Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNscWFiT0dBEAE",
+      "reviewer": "Christine J.",
+      "rating": 5,
+      "publishedAt": "2023-11-21T14:55:55.339Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUR4c2VpLXJRRRAB",
+      "reviewer": "avlange1",
+      "rating": 5,
+      "publishedAt": "2023-06-10T11:30:11.709Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNSNVphQ2ZREAE",
+      "reviewer": "Frank G.",
+      "rating": 5,
+      "publishedAt": "2023-04-06T19:11:52.263Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNodklhbHBBRRAB",
+      "reviewer": "Hannah K.",
+      "rating": 5,
+      "publishedAt": "2023-02-07T23:16:01.247Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNoNExDUkF3EAE",
+      "reviewer": "Bridgett S.",
+      "rating": 5,
+      "publishedAt": "2023-02-02T16:30:55.117Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURCcjQzYk53EAE",
+      "reviewer": "Molly A.",
+      "rating": 5,
+      "publishedAt": "2023-02-01T01:57:21.296Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUMtNW95WHRBRRAB",
+      "reviewer": "Ashley W.",
+      "rating": 5,
+      "publishedAt": "2022-11-02T22:17:53.184Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURlaFpLWXFBRRAB",
+      "reviewer": "Anthony W.",
+      "rating": 1,
+      "publishedAt": "2022-10-14T19:31:50.571Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUM2eG95ZzZBRRAB",
+      "reviewer": "soketch",
+      "rating": 5,
+      "publishedAt": "2021-09-03T21:50:38.116Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUM2eHZ1RWZREAE",
+      "reviewer": "Jayden M.",
+      "rating": 5,
+      "publishedAt": "2021-09-03T17:57:53.086Z"
+    }
+  ]
+}
