@@ -327,6 +327,18 @@
       "pulledAt": "2026-11-09T17:54:18.958Z"
     },
     {
+      "slug": "jenny-maids",
+      "name": "Jenny Maid's",
+      "placeId": "ChIJVSupFGvhuocR61W44AIeKkE",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 41,
+        "withText": 34,
+        "ratingOnly": 7
+      },
+      "pulledAt": "2026-11-09T18:31:52.100Z"
+    },
+    {
       "slug": "jons-plumbing",
       "name": "Jon's Plumbing, LLC",
       "placeId": "ChIJVVXxT51kz4cRt_W0muFXJbQ",
