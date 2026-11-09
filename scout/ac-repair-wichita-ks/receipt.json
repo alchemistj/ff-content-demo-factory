@@ -1,0 +1,26 @@
+{
+  "kind": "google-prospect-scout-receipt",
+  "status": "ok",
+  "slug": "ac-repair-wichita-ks",
+  "request": {
+    "query": "AC repair",
+    "location": "Wichita, KS",
+    "maxPlaces": 50
+  },
+  "trigger": "workflow_dispatch",
+  "apify": {
+    "actor": "compass~crawler-google-places",
+    "runId": "JycQbfyQGN3FgS1rT",
+    "datasetId": "dXlPQ48ywuZlwIyZ5",
+    "attempts": 1,
+    "usageUsd": 0.20020000000000002
+  },
+  "counts": {
+    "returned": 50,
+    "advertisements": 1
+  },
+  "detail": null,
+  "startedAt": "2026-11-09T18:29:16.711Z",
+  "finishedAt": "2026-11-09T18:29:58.263Z",
+  "githubRunUrl": "https://github.com/alchemistj/ff-content-demo-factory/actions/runs/42674358916"
+}
