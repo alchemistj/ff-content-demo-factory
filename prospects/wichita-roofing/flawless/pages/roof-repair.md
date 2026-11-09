@@ -59,6 +59,8 @@ If a repair is all you need, that's what I'll tell you. I'd rather fix a roof ri
 4. **You get a straight answer.** Repair, or replacement, and why.
 5. **We do the repair.** You get the price first.
 
+## How Long a Repair Takes
+
 How long a repair takes depends on what's wrong.
 
 A pipe boot is a quick fix. A damaged valley or a section of rotted decking takes longer. Once I've been on the roof, I'll tell you what it needs and when we can do it, so a small leak doesn't sit waiting for weeks.

@@ -79,7 +79,6 @@ We offer workmanship warranties of 5, 10 and 15 years, and the products that car
 
 **Which material should I choose?**
 Start with what your roof is now and what you want it to look like. A tile roof usually stays tile.
-
 If cedar shake has given out, DaVinci or Brava gets you the same look with less upkeep. Premium asphalt is the practical choice for most homes, and metal suits people who want hidden fasteners.
 
 **Can my old tile go back on?**

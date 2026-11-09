@@ -89,7 +89,6 @@ Yes. Call (316) 295-2159 for a free quote.
 
 **How do I know if I need a repair or a new roof?**
 Age, spread and cause decide it. A roof with one failed spot, like a flashing or a boot, is a repair. A roof with curling, bare patches and granules in the gutters across the whole slope is at the end of its life.
-
 If you've already repaired it more than once, a new roof usually costs less than the third repair and the water damage between them.
 
 **How long does a roof last?**
@@ -97,7 +96,6 @@ Asphalt shingles generally give you 20 to 30 years, less on a hot, south-facing 
 
 **What decides the price of a new roof?**
 Size and pitch come first, then the material you pick and how much old decking needs replacing once the old roof is off. Extra layers, chimneys, skylights and valleys add labor.
-
 That's why we write a detailed estimate after we've seen the roof, rather than quoting a per-square-foot number over the phone.
 
 **How long does a replacement take?**
@@ -105,7 +103,6 @@ A typical house with asphalt shingles is usually a one-to-three-day job for a cr
 
 **Will my insurance pay for it?**
 It depends on your policy and what caused the damage. Wind and hail are the usual claims, and an adjuster wants clear photos and the damage tied to a storm.
-
 We can't promise what your insurer will do. On one roof, Anthony dealt with the homeowner's insurance agent and filled out and returned the forms.
 
 **Do you work outside Wichita?**

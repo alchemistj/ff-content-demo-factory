@@ -12,9 +12,7 @@ When you call (316) 655-9777, you reach one of the owners, not a call center or 
 
 **Address:** 1835 N. Ohio, Wichita, KS 67214. We own the building.
 
-The person who answers is Doug or Jason Fry. We have no commissioned sales staff and no project managers, so the owner you talk to on the phone is the one who comes out and climbs onto your roof.
-
-If we miss your call because we're up on someone's roof, we call you back.
+The person who answers is Doug or Jason Fry. We have no commissioned sales staff and no project managers, so the owner you talk to on the phone is usually the one who comes out and climbs onto your roof.
 
 > Had a recent problem (valley leak), called Jason and he came out to look.  Very responsive, timely, and professional with his review of our roof problem.
 > — Mark K.
@@ -30,7 +28,7 @@ A few things help us help you:
 - Where the leak or damage is, and when you noticed it
 - Whether a storm is involved, and whether you've called your insurance company
 
-If you've had a roofer work on it before, tell us. A leak that came back after a repair tells us where not to look.
+If you've had a roofer work on it before, tell us. That tells us where to look.
 
 ## What Happens Next
 
