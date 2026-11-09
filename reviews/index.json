@@ -111,6 +111,18 @@
       "pulledAt": "2026-11-03T04:06:22.696Z"
     },
     {
+      "slug": "bybee-electric-wichita",
+      "name": "Bybee Electric",
+      "placeId": "ChIJIwqBwKLjuocRzW9s8ipI_i8",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 101,
+        "withText": 82,
+        "ratingOnly": 19
+      },
+      "pulledAt": "2026-11-09T18:43:38.837Z"
+    },
+    {
       "slug": "campaignium",
       "name": "Campaignium",
       "placeId": "ChIJo1bxmQFjz4cRBoRVTlu7FZc",
