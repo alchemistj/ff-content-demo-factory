@@ -231,7 +231,7 @@
         {
           "type": "callBand",
           "heading": "Pick a Time and Come In",
-          "text": "Book online or call (417) 380-3078. Tell us the cut you want and we'll cut it. **Buttons:** Call (417) 380-3078 | Book Your Haircut"
+          "text": "Book online or call (417) 380-3078. Tell us the cut you want and we'll cut it."
         }
       ]
     },
@@ -367,7 +367,7 @@
         {
           "type": "callBand",
           "heading": "Book a Beard Appointment",
-          "text": "We're at 5104 N 22nd St in Ozark. Call (417) 380-3078 or book online. **Buttons:** Call (417) 380-3078 | Book Your Beard Appointment [Barbershop in Ozark, MO](/home/) · [Kids and teen haircuts](/kids-teen-haircuts-ozark-mo/) · [Contact](/contact/)"
+          "text": "We're at 5104 N 22nd St in Ozark. Call (417) 380-3078 or book online."
         }
       ]
     },
@@ -516,7 +516,7 @@
         {
           "type": "callBand",
           "heading": "Book Your Child's Haircut",
-          "text": "Pick a time on our online booking page or call (417) 380-3078. The shop is at 5104 N 22nd St in Ozark. **Buttons:** Call (417) 380-3078 | Book a Kids or Teen Haircut [Barbershop in Ozark, MO](/home/) · [Beard trim](/beard-trim-cut-shape-ozark-mo/) · [Contact](/contact/)"
+          "text": "Pick a time on our online booking page or call (417) 380-3078. The shop is at 5104 N 22nd St in Ozark."
         }
       ]
     },
@@ -586,7 +586,7 @@
         {
           "type": "callBand",
           "heading": "Ready to Book?",
-          "text": "**Buttons:** Call (417) 380-3078 | Book Online"
+          "text": ""
         }
       ]
     }

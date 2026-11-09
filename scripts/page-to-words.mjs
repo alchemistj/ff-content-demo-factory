@@ -52,6 +52,7 @@ for (; i < blocks.length; i++) {
     sections.push({ type: "review", quote, name: by.replace(/^[—-]{1,2}\s*/, "").trim() });
     continue;
   }
+  if (/^\*\*Buttons:\*\*/.test(b)) continue; // a closing Buttons line: the call band reuses the hero CTAs
   const h2 = b.match(/^## (.+)$/);
   if (h2) { flush(); cur = { type: "prose", heading: clean(h2[1]), body: [] }; continue; }
   if (!cur) cur = { type: "prose", body: [] };
