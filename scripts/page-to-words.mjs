@@ -70,7 +70,9 @@ for (; i < blocks.length; i++) {
   const link = b.match(/^\*{0,2}\[([^\]]+)\]\(([^)]+)\)\*{0,2}$/);
   if (link) { cur.link = { label: clean(link[1]), route: link[2] }; continue; }
   const txt = clean(b);
-  if (cur.list) (cur.tail = cur.tail || []).push(txt); else cur.body.push(txt);
+  if (cur.type === "faq" && cur.items?.length) { cur.items[cur.items.length - 1].a += " " + txt; continue; } // a two-paragraph FAQ answer
+  if (cur.type === "steps") { (cur.tail = cur.tail || []).push(txt); continue; }
+  if (cur.list) (cur.tail = cur.tail || []).push(txt); else (cur.body = cur.body || []).push(txt);
 }
 flush();
 // last section becomes the call band

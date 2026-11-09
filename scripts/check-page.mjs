@@ -20,6 +20,7 @@ const n = (s) => String(s || "").replace(/<br\s*\/?>/g, " ").replace(/[’‘]/g
 const words = (s) => (n(s).match(/\S+/g) || []).length;
 const MIN = { home: 900, service: 700, contact: 150 };
 let fails = 0, warns = 0;
+const siteUsed = new Map(); // review id -> page, so each review appears once across the site
 const fail = (m) => { fails++; console.log(`FAIL  ${m}`); };
 const warn = (m) => { warns++; console.log(`WARN  ${m}`); };
 
@@ -40,12 +41,18 @@ for (const f of files) {
     const quote = n(lines.map((l) => l.replace(/^>\s?/, "")).filter((l) => !/^[—-]{1,2}\s/.test(l)).join(" ")).replace(/^"|"$/g, "");
     if (!/^[A-Z][a-zA-Z'-]+ [A-Z]\.$/.test(name)) fail(`review name "${name}" must be First L.`);
     const parts = quote.split(/\s*(?:…|\.\.\.)\s*/).filter(Boolean);
-    const hit = reviews.find((r) => r.rating === 5 && n(r.reviewer) === n(name) && parts.every((pt) => n(r.text).includes(pt)));
+    const hit = reviews.find((r) => r.rating === 5 && n(r.reviewer).toLowerCase() === n(name).toLowerCase() && parts.every((pt) => n(r.text).includes(pt)));
     if (!hit) fail(`quote from ${name} is not word for word in a five-star review: "${quote.slice(0, 60)}…"`);
     else if (used.has(hit.id)) fail(`review from ${name} used twice on this page`);
-    else used.add(hit.id);
+    else if (siteUsed.has(hit.id)) fail(`review from ${name} is already used on ${siteUsed.get(hit.id)}; each review appears once across the site`);
+    else { used.add(hit.id); siteUsed.set(hit.id, f); }
   }
   console.log(`info  ${used.size} review quote(s), all word for word`);
+  if (role === "home") {
+    const services = files.filter((x) => !/home|contact/i.test(path.basename(x))).length;
+    const links = new Set([...md.matchAll(/\]\((\/[^)]+\/)\)/g)].map((m) => m[1]).filter((r) => r !== "/contact/"));
+    if (services && links.size < Math.min(2, services)) fail(`the homepage links ${links.size} service page(s); link each main service to its page`);
+  }
   // homepage H1
   if (role === "home") {
     const main = md.includes("\n---\n") ? md.split("\n---\n").slice(1).join("\n") : md;
