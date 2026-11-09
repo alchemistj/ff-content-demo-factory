@@ -42,6 +42,7 @@ A regular visit lifts what built up since the last one: dust, the kitchen, the b
 Some things build slowly and need a longer visit than upkeep has room for. Grease on top of a range hood, dust on the tops of cabinets, the corners of baseboards. A deep clean reaches those, and so do spring and fall cleaning.
 
 So if a certain spot bothers you, say so at the start. That is how I know what to look for each time.
+
 > "Jenny Maids, has been cleaning my home since 2017. Jenny is a professional cleaner yet personable. Just love the way she takes care of my home. She is thorough in removing dust and making my kitchen and bathrooms shine. She uses her own products unless I request something special that I provide like for my leather sofa."
 > — Shelly M.
 
