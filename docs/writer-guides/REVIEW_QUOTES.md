@@ -10,6 +10,7 @@ How to quote and place real Google reviews on a demo. Josh approved these rules 
 2. **Whole sentences, in their order.** When you skip sentences between two picked ones, mark the gap with " … " so it is honest that something was left out.
 3. **Never change the meaning.** Don't cut a "not" or a "but," and don't lift the one kind line out of a mixed review. Only 5-star reviews with words are quoted.
 4. **Pick the sentences that fit the page.** Commercial lines go on the commercial page, move-in cleaning lines on the residential page.
+4b. **Names: first name plus last initial, capitalized.** A reviewer who typed "tammy J." is shown as "Tammy J."; that is formatting, not rewording. A one-word name with no last initial ("Jeff") can't be attributed and isn't quoted (Josh, 2026-11-09).
 5. **Long enough to tell its story.** Most quotes run one to four sentences. A review with a real story can run longer, about 100 words, when the story is the proof (Josh, 2026-11-09; see the Evolve and Window Dudes homepages).
 6. **Keep the full review in the data file.** The site's data keeps the whole pulled review, and a test checks that each quoted piece appears in it word for word.
 

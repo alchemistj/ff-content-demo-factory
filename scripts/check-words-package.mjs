@@ -53,7 +53,7 @@ for (const s of allSections.filter((s) => s.type === "review")) {
   if (!reviews) { warn("no reviews.json beside words.json; quotes not verified"); continue; }
   const q = norm(s.quote).replace(/^"|"$/g, "");
   const parts = q.split(/\s*(?:\.\.\.|…)\s*/).filter(Boolean);
-  const hit = reviews.find((r) => r.rating === 5 && norm(r.reviewer) === norm(s.name) && parts.every((pt) => norm(r.text).includes(pt)));
+  const hit = reviews.find((r) => r.rating === 5 && norm(r.reviewer).toLowerCase() === norm(s.name).toLowerCase() && parts.every((pt) => norm(r.text).includes(pt)));
   if (!hit) fail(`${s.route}: quote from ${s.name} not found word for word in a five-star review: "${q.slice(0, 70)}…"`);
   else { if (used.has(hit.id)) fail(`${s.route}: review from ${s.name} already used on ${used.get(hit.id)}`); used.set(hit.id, s.route); }
 }
