@@ -53,7 +53,7 @@
     {
       "name": "Ductwork",
       "route": null,
-      "blurb": "Main air supply duct replaced, like the basement job we finished in one day."
+      "blurb": "We have replaced a main air supply duct, start to finish, in one day."
     },
     {
       "name": "Geothermal Service",
@@ -76,7 +76,7 @@
       "hero": {
         "eyebrow": "Heating and cooling in Wichita, Kansas",
         "h1": "HVAC Company in Wichita, KS — 1st Call Heating & Cooling",
-        "sub": "We repair air conditioners and furnaces, and we replace the whole system when repair is not the answer. Call our office on West 50th Street North and tell us what your system is doing.",
+        "sub": "We repair and replace air conditioners and furnaces in Wichita. We explain what we found, give you the cost of fixing against replacing, and charge for the work we did.",
         "primaryCta": {
           "label": "Call (316) 371-3815",
           "action": "call"
@@ -102,7 +102,7 @@
           "heading": "Repairs Explained, Then Your Call",
           "body": [
             "When we diagnose your AC or furnace, you hear the cost of fixing it and the cost of replacing it. **You make the decision.**",
-            "When replacement is the answer, we have done a full furnace and AC system in a single day."
+            "We fix your old unit when it is worth fixing, and we say so when it is not."
           ],
           "image": {
             "slot": "home-explain",
@@ -117,6 +117,18 @@
           "name": "Alyson N."
         },
         {
+          "type": "prose",
+          "heading": "When the AC Quits, We Work You In",
+          "body": [
+            "A dead AC in a Wichita summer can't wait for next week. **We have come out the same day it quit.**"
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Our ac went out on Monday and he made time to come out same day.",
+          "name": "Rebecca S."
+        },
+        {
           "type": "services",
           "heading": "Everything We Do",
           "intro": "Air conditioners and furnaces are our work. Pick what you need and call us."
@@ -128,10 +140,10 @@
         },
         {
           "type": "split",
-          "heading": "Ductwork and Full Systems, Finished in a Day",
+          "heading": "New Systems and Ductwork, Installed in a Day",
           "body": [
-            "We replaced the main air supply duct for a homeowner renovating a basement, and the install was done in one day.",
-            "We also check your system before AC season and show you how to look after it."
+            "When replacement is the answer, **we have replaced a full furnace and AC system in a single day.**",
+            "Ductwork too: we have replaced a main air supply duct in one day, for a basement renovation."
           ],
           "image": {
             "slot": "home-ductwork",
@@ -168,10 +180,6 @@
             {
               "q": "Do you do home warranty repairs?",
               "a": "Yes. We repair heating and cooling for homes covered by a home warranty."
-            },
-            {
-              "q": "Where are you?",
-              "a": "937 W 50th St N, Wichita, KS 67204."
             }
           ]
         },
@@ -191,7 +199,7 @@
       "hero": {
         "eyebrow": "AC repair",
         "h1": "AC Repair in Wichita, KS — 1st Call Heating & Cooling",
-        "sub": "When your AC stops cooling, you want it fixed, not scheduled for next week. We have been out the same day, and at one house in under an hour. We tell you what a repair costs against a replacement.",
+        "sub": "When your AC stops cooling, we work you in. We have been out the same day, and after one call we were there in under an hour. Then you hear what a repair costs against a replacement.",
         "primaryCta": {
           "label": "Call (316) 371-3815",
           "action": "call"
@@ -216,7 +224,7 @@
           "type": "split",
           "heading": "We Find the Failed Part and Replace It",
           "body": [
-            "An AC that stops cooling usually points to one part. We find it and replace it, and you are cooling again.",
+            "We find what failed on your AC and replace it, and we explain what we found.",
             "We have also diagnosed an upstairs AC that blew no air while the outside unit kept running."
           ],
           "list": [
@@ -233,28 +241,28 @@
         },
         {
           "type": "review",
-          "quote": "Worked me in on a Friday afternoon when my AC stopped cooling. They replaced bad capacitor and relay. All other service companies were scheduling for following week.",
-          "name": "Ron D."
+          "quote": "Austin and Mike are first-rate technicians who are responsive and knowledgeable about the details of air conditioner repair. I highly recommend them.",
+          "name": "Peter R."
         },
         {
           "type": "prose",
           "heading": "When to Call",
           "body": [
             "Call when your AC stops cooling, blows no air, leaks, or runs outside while the house stays warm.",
-            "We have come out on the same day an AC went out on a Monday, and worked a Friday afternoon call in before the weekend."
+            "**We have worked a Friday afternoon call in** while other companies were booking the following week. Call us the morning it quits."
           ]
         },
         {
           "type": "review",
-          "quote": "Mike was amazing. Our ac went out on Monday and he made time to come out same day.",
-          "name": "Rebecca S."
+          "quote": "Worked me in on a Friday afternoon when my AC stopped cooling. They replaced bad capacitor and relay. All other service companies were scheduling for following week.",
+          "name": "Ron D."
         },
         {
           "type": "split",
           "heading": "Repair or Replace: You Get the Numbers",
           "body": [
             "Some air conditioners are worth fixing and some are not. We tell you what fixing your unit will cost and what replacing it will cost.",
-            "**You decide.** On an older unit, we have laid out both numbers so the owner could plan the replacement for next year."
+            "**You decide.** On an older unit, we have laid out both numbers so the homeowner could plan the replacement for next year."
           ],
           "image": {
             "slot": "ac-options",
@@ -273,7 +281,7 @@
           "heading": "A New Outside Unit, Set Right",
           "body": [
             "When replacement is the answer, we install the new system. We have been back to install the day after a diagnosis.",
-            "On one install we raised and leveled the new outside unit so it sits right."
+            "We have raised and leveled a new outside unit so it sits right on its pad."
           ]
         },
         {
@@ -291,8 +299,8 @@
         },
         {
           "type": "review",
-          "quote": "Austin and Mike are first-rate technicians who are responsive and knowledgeable about the details of air conditioner repair. I highly recommend them.",
-          "name": "Peter R."
+          "quote": "They did a great job! Showed me how to maintain my a.c. unit and how to take care of it from now on!",
+          "name": "Devin H."
         },
         {
           "type": "faq",
@@ -340,7 +348,7 @@
       "hero": {
         "eyebrow": "Furnace repair",
         "h1": "Furnace Repair in Wichita, KS — 1st Call Heating & Cooling",
-        "sub": "When your furnace goes out in a Kansas winter, every hour counts. We repair furnaces and heaters, and when yours is too old to fix, we replace the whole system. We have done a full system in a single day.",
+        "sub": "When your furnace or heater quits, we find the cause and get your heat back on. When it is too old to repair, we replace it, and we have replaced a full furnace and AC system in a single day.",
         "primaryCta": {
           "label": "Call (316) 371-3815",
           "action": "call"
@@ -363,10 +371,10 @@
         },
         {
           "type": "split",
-          "heading": "We Get the Heat Back On",
+          "heading": "We Arrive Ready to Fix It",
           "body": [
-            "When your furnace goes out, we find the cause and fix it. Some fixes are simple.",
-            "We have also talked a customer through the likely problems with a heater before the visit."
+            "We have talked through the likely causes on the phone and asked for the unit's information before the visit.",
+            "**That way we have shown up with the parts the repair needed**, and the house was warm sooner."
           ],
           "image": {
             "slot": "furnace-repair",
@@ -382,10 +390,10 @@
         },
         {
           "type": "prose",
-          "heading": "Arriving With the Parts",
+          "heading": "Simple Fixes, Explained",
           "body": [
-            "Tell us your unit's information when you call. We have used it to show up with the parts the repair needed.",
-            "A shorter visit means your house is warm sooner."
+            "Not every outage needs a big repair. **When it is a simple fix, we tell you so.**",
+            "We show you what we did and why, so you know what to look for next time."
           ]
         },
         {
@@ -397,7 +405,7 @@
           "type": "split",
           "heading": "Repair or Replace Your Furnace",
           "body": [
-            "A furnace that is thirty or forty years old may not be worth another repair. We explain the different types of units and the size your home needs, and give you a fair estimate.",
+            "Some furnaces are past another repair. We explain the different types of units and the size your home needs, and give you a fair estimate.",
             "**You choose.** When you replace, our crew has done a full system in a single day."
           ],
           "image": {
@@ -429,8 +437,8 @@
           "type": "prose",
           "heading": "Home Warranty Furnace Repairs",
           "body": [
-            "We repair furnaces for homes covered by a home warranty. We have gotten the heat back on for a family with a baby after about four days without it, at a price we worked hard to make a great deal.",
-            "Call us with the details of your system."
+            "When your home warranty company sends you to us, we get your heat back on and work to keep the cost down.",
+            "We have restored heat for a family with a baby after four days without it. Call us with the details of your system."
           ]
         },
         {
@@ -549,8 +557,8 @@
   "strategy": {
     "whyHeading": "Why we built this site",
     "why": [
-      "Your customers already make your case. Clarence D. wrote that you “came out in less than an hour.” Joe L. wrote about “the integrity to only charge for the actual work performed.”",
-      "Your website can't say any of it. Tap “Website” on your Google listing and you land on a page that says “This domain is for sale.” Nothing about heating, cooling, your number or hours.",
+      "Tap “Website” on your Google listing and you land on a page that says “This domain is for sale.” Nothing about heating, cooling, your number or your hours. Every customer who checks you out that way leaves with nothing.",
+      "Your customers already make your case on Google. Clarence D. wrote that you “came out in less than an hour.” Joe L. wrote about “the integrity to only charge for the actual work performed.”",
       "So we built a demo that says HVAC company in Wichita at the very top, gives AC repair and furnace repair their own pages, and puts your customers' words next to the work they describe."
     ],
     "cardsHeading": "Be the HVAC Company People Find on Google",
@@ -643,7 +651,7 @@
     ],
     "closing": {
       "heading": "Want a website like this for your business?",
-      "text": "Your customers already call you fast, fair and honest. Book a strategy call with Fluid Frame and we'll walk you through this demo."
+      "text": "Your customers already call you fast, fair and honest. Book a strategy call with Fluid Frame, and we'll walk you through this demo and how to put it behind your Google listing."
     }
   },
   "onboardingQuestions": [

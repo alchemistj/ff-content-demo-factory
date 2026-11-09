@@ -107,7 +107,7 @@
           "heading": "One Company for Heating, Cooling and Plumbing",
           "body": [
             "**You call one number for the furnace, the air conditioner and the water heater.** We repair all makes and models of heating and cooling equipment, and we handle residential and commercial plumbing.",
-            "We have replumbed the water lines in the same job as a new heating and cooling system."
+            "We have installed a complete heating and cooling system and replumbed the water lines in the same job."
           ],
           "image": {
             "slot": "home-one-company",
@@ -118,14 +118,14 @@
         },
         {
           "type": "review",
-          "quote": "It’s hard to find contractors that handle both HVAC and plumbing work this well, but Alpha HVAC & Plumbing did an outstanding job. I highly recommend them to anyone needing HVAC installation, furnace or AC replacement, or plumbing work.",
+          "quote": "They also replumbed my water lines and relocated the washer drain and water supply lines. … It’s hard to find contractors that handle both HVAC and plumbing work this well, but Alpha HVAC & Plumbing did an outstanding job.",
           "name": "Victor S."
         },
         {
           "type": "prose",
           "heading": "Fast When Your System Quits",
           "body": [
-            "**We run 24-hour emergency service, and we move quickly.** We have been at a house within two hours of a Sunday-morning call.",
+            "**We run 24-hour emergency service.** We have had a technician out the same day, pinpoint the problem and repair it.",
             "Our office is open Monday to Friday, 7:30 AM to 5:00 PM."
           ]
         },
@@ -143,7 +143,7 @@
           "type": "prose",
           "heading": "Service That Saves You Money",
           "body": [
-            "**Scheduled service keeps your heating, cooling and water heater running efficiently year-round.** We offer an annual service plan."
+            "**Scheduled service keeps your heating, cooling and water heater running efficiently year-round.** On an annual service plan, we have found a less expensive part where another company called for an expensive repair."
           ]
         },
         {
@@ -167,7 +167,7 @@
           "type": "prose",
           "heading": "Wichita and the Area Around It",
           "body": [
-            "**We serve Wichita and the surrounding areas.** Homeowners, landlords and businesses call us for heating, cooling and plumbing."
+            "**We serve Wichita and the surrounding areas.** Homes and businesses call us for heating, cooling and plumbing."
           ]
         },
         {
@@ -209,7 +209,7 @@
       "hero": {
         "eyebrow": "AC repair, every make and model",
         "h1": "AC Repair in Wichita, KS — Alpha HVAC & Plumbing",
-        "sub": "We repair all makes and models of air conditioning equipment. We run 24-hour emergency service, and a technician explains what is wrong before you decide what to do.",
+        "sub": "We repair all makes and models of air conditioning equipment. We run 24-hour emergency service, and when a new AC makes more sense, the replacement estimate is free.",
         "primaryCta": {
           "label": "Call (316) 260-5775",
           "action": "call"
@@ -234,8 +234,8 @@
           "type": "split",
           "heading": "When Your AC Quits",
           "body": [
-            "**Call us the hour it stops cooling.** We run 24-hour emergency service and repair all makes and models of air conditioning equipment.",
-            "We have been out on a Saturday, and at a house within two hours of a Sunday-morning call."
+            "**Call us when it stops cooling, any hour.** We run 24-hour emergency service and repair all makes and models of air conditioning equipment.",
+            "We have been at a house within two hours of a Sunday-morning call."
           ],
           "image": {
             "slot": "ac-quits",
@@ -253,8 +253,7 @@
           "type": "prose",
           "heading": "Fixed, Not Replaced by Default",
           "body": [
-            "**We look for the part that failed before we talk about a new system.** We have traced an AC that quit blowing cold to one small part and had it fixed in 30 minutes.",
-            "We have fixed a blower motor the same day we were called."
+            "**A small failed part should not cost you a new system.** We have fixed an AC with one small part, explained what that part does, and left the bill far under what the customer expected."
           ]
         },
         {
@@ -266,7 +265,7 @@
           "type": "prose",
           "heading": "We Show You What We Find",
           "body": [
-            "**Our technicians explain the problem at your unit and answer your questions.** On a service visit we take pictures of your system, so you see what we see."
+            "**You get straight answers about your own AC.** We have answered every question a family had, right at the unit."
           ]
         },
         {
@@ -276,9 +275,9 @@
         },
         {
           "type": "prose",
-          "heading": "Mini Splits Too",
+          "heading": "Every Room at Its Own Temperature",
           "body": [
-            "**Your cooling equipment is our job, mini splits included.** We have installed mini splits through a whole house, so every room holds its own temperature, and found a leak at a mini split head."
+            "**We have installed mini splits through a whole house, so every room holds its own temperature.**"
           ]
         },
         {
@@ -290,8 +289,7 @@
           "type": "prose",
           "heading": "A Tune-Up That Checks Everything",
           "body": [
-            "**A maintenance visit means real work on your AC.** We have changed the filter, checked the temperature at every register and cleaned the outdoor unit.",
-            "We have worn shoe covers inside customers' homes."
+            "**Scheduled service keeps your AC running efficiently year-round.** We have changed the filter, checked the temperature at every register, cleaned the outdoor unit and worn shoe covers inside the house, all on one service visit."
           ]
         },
         {
@@ -328,7 +326,7 @@
             },
             {
               "title": "We find the cause",
-              "text": "A technician looks over your system and shows you what the problem is."
+              "text": "A technician looks over your system and tells you what is wrong."
             },
             {
               "title": "You choose",
@@ -336,7 +334,7 @@
             },
             {
               "title": "We check it",
-              "text": "We make sure everything works before we leave."
+              "text": "We run your AC to check the repair before we go."
             }
           ]
         },
@@ -383,7 +381,7 @@
       "hero": {
         "eyebrow": "Furnace repair, every make and model",
         "h1": "Furnace Repair in Wichita, KS — Alpha HVAC & Plumbing",
-        "sub": "We repair all makes and models of heating equipment. We run 24-hour emergency service, and we find the cause before we talk about replacing anything.",
+        "sub": "We repair all makes and models of heating equipment. We run 24-hour emergency service, and when a new furnace makes more sense, the replacement estimate is free.",
         "primaryCta": {
           "label": "Call (316) 260-5775",
           "action": "call"
@@ -409,7 +407,7 @@
           "heading": "When Your Heat Goes Out",
           "body": [
             "**Call us when the furnace stops, any hour.** We run 24-hour emergency service and repair all makes and models of heating equipment.",
-            "We have had heat back on within the hour, and put in a whole new system within a couple of days in winter."
+            "We have put in a whole new system within a couple of days, in the middle of winter."
           ],
           "image": {
             "slot": "furnace-out",
@@ -425,9 +423,9 @@
         },
         {
           "type": "prose",
-          "heading": "Find the Cause First",
+          "heading": "The Cause Found Before the Freeze",
           "body": [
-            "**We chase a furnace problem down to the cause.** We have come back twice to one furnace, ahead of a deep freeze, to find what was wrong."
+            "**A furnace that keeps acting up needs its cause found before the cold hits.** We have come out twice to one furnace, ahead of a deep freeze, and taken the time to find it."
           ]
         },
         {
@@ -439,7 +437,7 @@
           "type": "prose",
           "heading": "Repair or Replace, You Decide",
           "body": [
-            "**We explain what repair costs you and what replacement gets you.** We have talked a customer through high-efficiency systems and agreed that repair was the better choice.",
+            "**You choose between repair and replacement with the trade-offs in front of you.** We have walked a customer through the plus and minus of a new high-efficiency system, and fixing it won.",
             "When replacement is right, the estimate is free."
           ]
         },
@@ -452,8 +450,8 @@
           "type": "split",
           "heading": "A New Furnace, Installed Neatly",
           "body": [
-            "**We install new heating equipment and keep your house clean while we do.** High-efficiency heating equipment carries an extended warranty, and financing is available through Wisetack.",
-            "We have written the City permit into the quote as its own line."
+            "**We install new heating equipment, and high-efficiency equipment carries an extended warranty.** Financing is available through Wisetack.",
+            "We have installed a new furnace and kept the job neat from start to finish."
           ],
           "image": {
             "slot": "furnace-install",
@@ -469,9 +467,9 @@
         },
         {
           "type": "prose",
-          "heading": "Permits and Paperwork Handled",
+          "heading": "The Permit, Right in the Quote",
           "body": [
-            "**We put the City permit in the quote.** On one install we emailed the warranty paperwork right after the work and scheduled the City inspection for the customer."
+            "**We have listed the City permit in the quote as its own line, without being asked,** on a full A/C and furnace replacement. That cost was on paper before any work started."
           ]
         },
         {
@@ -483,8 +481,7 @@
           "type": "prose",
           "heading": "A Furnace Check You Can Follow",
           "body": [
-            "**On a service visit we take pictures of your system and walk you through them.** We show you what to watch, like rust on a heat exchanger.",
-            "Scheduled service keeps your furnace running efficiently year-round."
+            "**Scheduled service keeps your furnace running efficiently year-round.** We have photographed a five-year-old furnace on a service visit and shown the homeowner what to watch, like some rust on the heat exchanger."
           ]
         },
         {
@@ -510,7 +507,7 @@
             },
             {
               "title": "We confirm it works",
-              "text": "Your heat is on before we leave."
+              "text": "We run the furnace to check the repair before we go."
             }
           ]
         },
@@ -650,21 +647,21 @@
         "why": "Your customers call when the AC quits, and this page gives them little.",
         "problems": [
           "Cooling is one short block and three bullets, so someone whose AC quit today finds no page about it.",
-          "No photos of your work and no list of towns."
+          "No questions answered, and nothing on what happens after they call."
         ],
         "fixes": [
           "A full page for AC repair in Wichita, KS, with your 24-hour emergency line.",
-          "Reviews on fast response and clear explanations, each beside its point."
+          "Common questions answered, and the call laid out step by step."
         ],
         "alsoAdd": "Pages planned from what Google actually shows for each search, so every page targets something people really look for."
       },
       {
         "route": "/furnace-repair-wichita-ks/",
         "title": "Furnace Repair",
-        "why": "Heating is half of what you do, and it shares one thin page.",
+        "why": "Every cold night brings furnace calls, and heating gets one thin page.",
         "problems": [
           "Heating is one short block and three bullets, with nothing for a furnace that stopped on a cold night.",
-          "No photos of your work and no questions answered."
+          "No reviews from the customers whose heat you got back on."
         ],
         "fixes": [
           "A full page for furnace repair in Wichita, KS, from the cold-night call to the new install.",
@@ -720,7 +717,7 @@
     ],
     "closing": {
       "heading": "Want a website like this for your business?",
-      "text": "Your customers already call you their go-to. Book a strategy call with Fluid Frame and we'll walk you through this demo and plan your new site."
+      "text": "Book a strategy call with Fluid Frame. We'll walk you through this demo, answer your questions and plan your new site."
     }
   },
   "onboardingQuestions": [
