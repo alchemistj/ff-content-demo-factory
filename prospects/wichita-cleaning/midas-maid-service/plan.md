@@ -11,7 +11,7 @@ Not argued: that the owner cleans the house herself.
 - Hero: letting someone into your home; one call to Mida. Review: Amy P. "16 years".
 - Why families stay (the idea): first clean easy, fifth is where services slip. Review: Jennifer N. (crew line + price/responsive).
 - One person to call: Brad H. (communicating the time ladies show up).
-- Recurring section (links to page); Deep section (links, Elisabeth lives on deep page, so home uses Ryan W. for one-time/move-out). Hmm: Ryan W. on home, Elisabeth W. on deep page.
+- Recurring and deep sections link out. Final allocation: home Amy P., Jennifer N., Brad H., Carla B.; recurring Ericka C., Angel J.; deep Elisabeth W., Ryan W.; contact none.
 - Carla B. on home (coming home to the smell).
 - What's covered (site task lists, add-ons by request), commercial line, area, questions, final CTA.
 

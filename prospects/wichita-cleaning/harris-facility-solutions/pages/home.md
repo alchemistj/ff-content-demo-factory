@@ -57,7 +57,7 @@ An office is judged in small places. The restroom, the entry, the kitchenette, t
 
 We clean offices on a regular schedule, so the building looks the same on Friday as it did on Monday.
 
-The work is only as good as the crew's habits, so a steady crew and a supervisor who checks matter more than any checklist. When a plan isn't working, we change the plan.
+The work is only as good as the crew's habits, so who cleans your building and who checks behind them matter more than any checklist.
 
 Read how an office plan works on our [office cleaning page](/office-cleaning-wichita-ks/).
 
@@ -88,6 +88,16 @@ Some jobs don't fit a nightly schedule. We also offer:
 - **Carpet cleaning** for offices and commercial spaces.
 - **Federal government contracting.**
 - **Painting** and **lawn care**, also on our services list.
+
+## Walking Your Building Before You Hire
+
+Whoever bids on your building, walk it with them. A price quoted from square footage alone is a guess.
+
+A good walk-through covers the things a checklist leaves out. Where the restrooms and kitchenettes are, and how many people use them. What the floors are made of, because carpet, VCT and sealed concrete each need different care. Who is in the building at night, which doors are locked, and where the supplies go.
+
+Ask who will be cleaning it, who checks their work, and who you call when something is missed. If the answers are vague, expect the same vagueness at 7 a.m. on a bad Monday.
+
+That is also what we need from you. Tell us about the building and we'll quote it.
 
 ## Already Have a Cleaner?
 
