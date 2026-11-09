@@ -135,6 +135,18 @@
       "pulledAt": "2026-11-09T02:11:16.316Z"
     },
     {
+      "slug": "firstcall-hvac-wichita",
+      "name": "1st Call Heating & Cooling",
+      "placeId": "ChIJd1fOTd8du4cRMhuh4B7FhI8",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 50,
+        "withText": 37,
+        "ratingOnly": 13
+      },
+      "pulledAt": "2026-11-09T12:53:49.700Z"
+    },
+    {
       "slug": "flawless-roofing",
       "name": "Flawless Roofing Co",
       "placeId": "ChIJTzDCYPrxuocRXr_-RD-j0cM",

@@ -1,0 +1,27 @@
+{
+  "kind": "google-review-pull-receipt",
+  "status": "ok",
+  "slug": "firstcall-hvac-wichita",
+  "request": {
+    "mapsUrl": "place_id:ChIJd1fOTd8du4cRMhuh4B7FhI8",
+    "maxReviews": 100,
+    "expectedName": "1st Call"
+  },
+  "trigger": "workflow_dispatch",
+  "apify": {
+    "actor": "compass~crawler-google-places",
+    "runId": "xw79RBt1bnDw65pIK",
+    "datasetId": "Y2UgJMpRbLoxJky7k",
+    "attempts": 1,
+    "usageUsd": 0.0312
+  },
+  "counts": {
+    "listingTotal": 50,
+    "withText": 37,
+    "ratingOnly": 13
+  },
+  "detail": null,
+  "startedAt": "2026-11-09T12:53:29.001Z",
+  "finishedAt": "2026-11-09T12:53:49.700Z",
+  "githubRunUrl": "https://github.com/alchemistj/ff-content-demo-factory/actions/runs/42620728061"
+}
