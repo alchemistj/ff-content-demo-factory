@@ -2,11 +2,13 @@
 
 Site: https://integrityheatingandcooling.net/ (http redirects to https). Checked 2026-11-09 with Playwright (headless Chromium through the agent proxy) at 390x844 (mobile, touch) and 1440x900 (desktop). Method per `docs/runtime/SITE-AUDIT.md`. Screenshots are in `audit/`. Raw crawl data is in the scratchpad (not in this folder).
 
+**Reviews:** `reviews.json` is in this folder (38 with text, 7 rating-only, all five stars). No owner replies on any. Used below only as evidence of what customers describe; the reviews do not change any finding.
+
 **Pages crawled (both sizes, all HTTP 200):** /, /services/, /heating-repair/, /air-conditioning-service/, /faq/, /integrity-hvac-blog/, /contact/. Plus the one blog post linked from the blog page (HTTP 200).
 
 **Click test:** every visible link and button on every page was clicked at 1440x900 (Playwright, destination recorded). At 390x844 the clicks were unreliable: the open mobile menu overlay intercepted clicks on in-page and footer links, so those rows show the page itself rather than a destination. For phone width, destinations come from the DOM `href` list and an HTTP status check of every internal link (all 200). The desktop click run stopped on the last two items of /air-conditioning-service (browser closed), so those two were not clicked.
 
-**Not checked:** page-speed score (no PageSpeed run), Sitebulb export (none supplied), Google Business Profile hours (not opened), form submission (not submitted, by rule), whether the contact form sends and where notifications go. Google reviews are pending (`reviews.json`).
+**Not checked:** page-speed score (no PageSpeed run), Sitebulb export (none supplied), Google Business Profile hours (not opened), form submission (not submitted, by rule), whether the contact form sends and where notifications go. Google Business Profile itself was not opened (review data comes from `reviews.json`).
 
 ## What works
 
@@ -27,6 +29,7 @@ Site: https://integrityheatingandcooling.net/ (http redirects to https). Checked
 - **What it says:** /heating-repair/: "24/7 Emergency Repair Service" and "With 24/7 availability". /air-conditioning-service/: "24/7 Emergency Repair Service". Homepage: "Hour cooling repair technicians are available on weekdays and weekends" (likely a typo for "24-hour").
 - **What the contact page says:** "Monday – Friday: 8am to 5pm. After hours (Saturday and Sunday) available at additional cost. Please call for quote." The same hours appear in the sidebar. Screenshot: `audit/contact-1440x900-full.png` and `audit/contact-390x844-full.png`.
 - **Why it costs most:** a no-heat or no-AC call on a Saturday gets two answers: "24/7" on the service page and "call for quote" on the contact page. This is the call a heating company most needs to win.
+- **Customers already describe weekend calls.** Five reviews describe Saturday, Sunday or holiday repairs (Jessica H., 2023-07-31; Colton K., 2025-09-01; Dayna B., 2025-06-21; Tyler J., 2025-07-07; Madison S., 2023-08-17). The site's "call for quote" framing does not match what they describe (`reviews.json`).
 
 ### 2. No address, and the site and Google disagree on where the business is
 - **Site:** no street address on any page. Location is "Greater Wichita Area" (contact page) and "a family-owned business based in Kechi, KS" (homepage About block). Kechi is a separate city.

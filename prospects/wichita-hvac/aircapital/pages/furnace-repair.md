@@ -24,7 +24,7 @@ Most furnace calls come down to a few parts:
 - **Igniter or flame sensor.** If the burner lights and then goes out, a dirty flame sensor is a frequent cause. A cracked igniter means the burner never lights at all.
 - **Blower motor.** The motor that pushes warm air through your ducts wears out. When it fails you get heat in the furnace and none in the house.
 - **Thermostat.** A dead battery or bad setting can look like a failed furnace.
-- **Pilot or gas supply problems** on older units.
+- **Pilot or gas supply.** On older furnaces, a pilot light that won't stay lit or a closed gas valve stops the heat before it starts.
 
 A furnace repair should end with you knowing which part failed and why. That is how we work.
 
@@ -38,17 +38,17 @@ If a carbon monoxide alarm goes off, get everyone out and call 911. Furnaces wit
 
 Never run a furnace you suspect is unsafe. Call us once everyone is safe.
 
-> Really happy with the service. They were friendly, showed up when they said they would, and got everything taken care of without any hassle. You can tell they know what they're doing and actually care about doing a good job. Definitely recommend them if you need any heating or AC work
->
-> — Daniel Q.
-
 ## What Happens When You Call
 
 You tell us what the furnace is doing, and we book a visit. We offer same-day and next-day appointments, and emergency calls are available.
 
 The technician checks the furnace and finds the cause. You get an explanation of what failed and your options for fixing it.
 
-Then you decide what to fix first. We repair furnaces, and we also work on boilers and heat pumps, so the same call covers whatever heats your home.
+Then you decide what to fix first, and we get it done on the day we said we would. We repair furnaces, and we also work on boilers and heat pumps, so the same call covers whatever heats your home.
+
+> Really happy with the service. They were friendly, showed up when they said they would, and got everything taken care of without any hassle. You can tell they know what they're doing and actually care about doing a good job. Definitely recommend them if you need any heating or AC work
+>
+> — Daniel Q.
 
 ## Repair or Replace?
 
@@ -56,9 +56,9 @@ A furnace with one failed part, like an igniter or a blower motor, is usually wo
 
 Replacement becomes the better choice when the furnace is old, has repeated failures, or heats unevenly even when it's running properly. We'll tell you where yours stands.
 
-If you do replace it, financing is available through Enhancify.
+Repair or replacement, the goal is the same: work done right the first time, at a price that fits your budget. If you do replace it, financing is available through Enhancify, so the cost doesn't land all at once.
 
-> We were thoroughly impressed with the exceptional service we received. The team arrived on time, demonstrated a high level of professionalism throughout their visit. Their work was completed efficiently and effectively. … We highly recommend their company for any heating and air conditioning issues. A top tier company for sure.
+> We were thoroughly impressed with the exceptional service we received. The team arrived on time, demonstrated a high level of professionalism throughout their visit. Their work was completed efficiently and effectively. We also found their services to be very affordable and they will work around your needs. We highly recommend their company for any heating and air conditioning issues. A top tier company for sure.
 >
 > — Absalon B.
 

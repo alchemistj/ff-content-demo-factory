@@ -2,7 +2,7 @@
 
 # Contact Air Capital Heating and Air
 
-The fastest way to reach us is to call. Tell us what your system is doing and we'll set up a visit, with same-day and next-day appointments available.
+Same-day and next-day appointments are available. Tell us what your system is doing and we'll set up a visit. Call us, or send a request below.
 
 **Buttons:** Call (316) 990-1911 | Request Service
 

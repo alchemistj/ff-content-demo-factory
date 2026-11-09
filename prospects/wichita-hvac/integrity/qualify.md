@@ -2,7 +2,7 @@
 
 **Verdict: qualifies as a small HVAC specialist with a weak site (kind 1, 5-page demo).**
 
-Checked 2026-11-09. Site: https://integrityheatingandcooling.net/ (redirects http to https). Google: 5.0 stars, 45 reviews, phone (316) 932-9559, 801 S Fabrique Dr, Wichita KS 67218, place_id ChIJH1DbjepL0yERZq5JzC80-RQ (from the brief; not re-opened on Google). Reviews pending (`reviews.json` not yet in this folder).
+Checked 2026-11-09. Site: https://integrityheatingandcooling.net/ (redirects http to https). Google: 5.0 stars, 45 reviews, phone (316) 932-9559, 801 S Fabrique Dr, Wichita KS 67218, place_id ChIJH1DbjepL0yERZq5JzC80-RQ (from the brief; not re-opened on Google). Reviews: `reviews.json` pulled 2026-11-09: 38 with text plus 7 rating-only, all five stars. Owner appears to be "Sam" (see `facts.md`, section 1).
 
 ## HVAC share of services
 - The services page lists six services: Heater Repair, Motor Replacement, AC Repair, System Installation, Heat Pump Repair, Commercial HVAC (https://integrityheatingandcooling.net/services/). All six are HVAC work.

@@ -16,11 +16,15 @@ You know the moment. The thermostat says 74, the house says 85, and the air from
 
 Or the outdoor unit hums and never starts the fan. Or it runs all afternoon and the house never catches up.
 
-Each of those has a short list of likely causes, and most of them are repairs, not replacements.
+Each of those has a short list of likely causes. Most of them are repairs, not replacements: one failed part, swapped the same visit, and the house starts cooling again.
+
+> My system was giving me issues and the hottest days of the month. And Juan W/ air capital showed up and resolved issue within a couple hours at a very reasonable price. Highly recommended
+>
+> — Maria F.
 
 ## What Usually Fails, and Why
 
-Air conditioners fail in heat because heat is when they work hardest. Here is what we find most often:
+Air conditioners fail in heat because heat is when they work hardest. Here is what fails most often:
 
 - **Capacitors.** A small part that gives the motors the jolt to start. It weakens with heat and age, then the fan or compressor won't start. It is one of the cheapest and most common failures.
 - **Fan and compressor motors.** Hours of Kansas heat wear bearings and windings until the motor stalls or quits.
@@ -64,10 +68,6 @@ Before you call, a quick check can save you a visit:
 - Check for ice on the refrigerant lines or the indoor coil. If you see ice, turn the system off and let it thaw before calling.
 
 If those don't fix it, give us a call. Tell us what you see and hear, and that helps us arrive with the right parts.
-
-> My system was giving me issues and the hottest days of the month. And Juan W/ air capital showed up and resolved issue within a couple hours at a very reasonable price. Highly recommended
->
-> — Maria F.
 
 ## Where We Repair Air Conditioners
 

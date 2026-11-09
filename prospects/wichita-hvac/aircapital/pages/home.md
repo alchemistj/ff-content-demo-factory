@@ -2,7 +2,7 @@
 
 # HVAC Company in Wichita, KS — Air Capital Heating and Air
 
-When the air conditioner quits in July or the furnace quits in January, you need someone at your door today who tells you straight what's wrong. We repair, replace and maintain heating and cooling systems across Wichita and the towns around it. Call us for a free estimate.
+When the air conditioner quits in July or the furnace quits in January, you need someone at your door fast who tells you straight what's wrong. We repair, replace and maintain heating and cooling systems across Wichita and the towns around it. Call us for a free estimate.
 
 **Buttons:** Call (316) 990-1911 | Get a Free Estimate
 
@@ -22,7 +22,7 @@ When we get there, we find the failed part, explain what it is and lay out your 
 
 We are new to the Wichita market, and we say so. Hiring a company you have never heard of is a fair thing to hesitate over.
 
-What sits behind the name is years of hands-on HVAC experience between our owners and technicians. We started Air Capital to do the work the way we would want it done in our own homes: fast, explained and fairly priced.
+What sits behind the name is years of hands-on HVAC experience between our owners and technicians. So you get technicians who have seen your problem many times before, at a company still building its name one house at a time.
 
 > This is an amazing company! They're new to market but years of experience between the owners. Very fast, responsive and very fair prices!
 >
@@ -74,7 +74,7 @@ We install and replace air conditioning and heating systems, and we'll tell you 
 
 ## Maintenance Plans, Ductless and Light Commercial
 
-Most breakdowns start as small problems an annual tune-up would have caught. We offer preventative maintenance plans for homes and light commercial buildings, so your system gets looked at before the hot or cold weather arrives.
+Many breakdowns start as small problems a tune-up would have caught: a weak capacitor, a dirty coil, a drain line starting to clog. We offer preventative maintenance plans for homes and light commercial buildings, so your system gets looked at before the hot or cold weather arrives.
 
 > They came out quickly and did a tune up on our AC. They were very professional and had great communication about what they could do and what they would recommend! Highly recommend them.
 >
@@ -99,7 +99,7 @@ Not sure whether we cover your street? Call and ask. We would rather tell you th
 We offer same-day and next-day appointments, seven days a week between 8am and 5pm. Emergency calls are available.
 
 ### Do you charge for an estimate?
-Call us for a free estimate.
+No. Estimates are free. Call and tell us what your system is doing.
 
 ### Do you only do repairs?
 No. We repair, install and replace heating and cooling systems, install ductless mini splits and run maintenance plans.
