@@ -131,3 +131,22 @@ No Better Business Bureau profile for Ballinger Electric appeared in search resu
 - Facebook: who runs the page, and when was it created? Confirm the Facebook link is theirs.
 - Google profile: confirm hours, categories, and the address pin (Maps scout data only).
 - BBB: any accreditation or complaints on file?
+
+## From reviews
+
+Practices stated in our voice on the pages, each shown by two or more five-star reviews in reviews.json (read 2026-11-09, 129 reviews with text). Owner replies are signed "our team"; none names the owner, so no owner name is used.
+
+- **Team names the reviews use:** Ben (most reviews; Alan B. and Debbie M. write "Ben Ballinger"), Kenny (Tom G., Linda M., Mary K., Lita M.), Jayse (Joshua D., Ryan P., Mary K.; spelled Jayce/Jase/Jay by Lita M., Jay B., lady T.; owner replies write "Jayse"). Whether Ben is the owner is not stated.
+- **Gets you on the schedule within days, sometimes the next day:** Todd C. (called Friday, work Monday), Taygen A. (offered next day), C T. (came the next day), Nancy C. (scheduled in 1 day), Joshua D. (installer two days later), Elena W. (on the schedule quickly), Dusten M. (on his schedule quickly), Mindy B. (fit her in during an emergency).
+- **Calls or texts ahead, keeps you posted:** Elena W. (reminder the day before, update when headed over), Mary G. (phone call first), Ryan P. (showed up at the time they said, communicated clearly), Rebecca W. (arrived when he said or let her know if delayed).
+- **Explains the problem and gives options:** Mary K. (a couple of different options), Chris B. (multiple options), Daniel F., Bonnie T., Rudy P., Kenetta M., Natalie O. (options and a detailed estimate), Lita M., Mark N. (every diagnostic step).
+- **Quotes the price up front:** Lan N. (upfront with his fees), Jaclyn M. (explains the process and cost up front), Alan B. (gave a bid and did what he said), Tony H. (detailed bid), Natalie O. (detailed estimate).
+- **Cleans up and keeps the house tidy:** Ron P., Nancy C. (booties, cleans up), Michael A., D L., Shelly B. (you can't tell anything was done), Alex K., Ryan P. (hardly noticed they were there).
+- **Looks over the rest of the electrical while there:** Jay B. (safety check of the house), Belinda R. (inspection, spotted a missing smoke detector), Larry S. (checked all the outlets), kenny W. (inspection with things to be aware of for code), John B. (thorough check), Candice S. (diagnosed a second problem during the visit).
+- **Takes on the hard-to-diagnose and older-house problems:** Rajeeb H. (50 year old house), Kelley D. (older home, complicated wiring), Che J. (previous owner's DIY work), Candice S. (well pump), Freddy R. (cramped attic), Cherie K. (attic and crawlspace), Elena W. and Wayne R. (others wouldn't take it on or address it).
+- **Does panel and service work:** Aaron W. (200 amp service upgrade, a couple of days, about 5-6 hours without power), Wayne R. (Federal Pacific panel, photos, checked with the city inspector), Bill H. (sub-panel); Darryk L. (work passed inspection the first time).
+- **Installs EV chargers:** Joshua D., Jennifer L.
+- **Wires appliances and adds outlets:** Larry S. (stove), jack D. (oven outlet and wire), Kim L. (hood and outlet), Linda M., Dusten M., Robert N., Jason R. (new outlets).
+- **Installs lights, fans, fixtures:** Ron P., Nancy C., Alex K., Steve A., Kenetta M., Ariana B., C T., Jeff D., Dusten M.
+- **Customers come back:** Robert R. (4 jobs), Blake (5+ times), Stephanie S. (since 2019), Terri G. (several jobs), Rudy P. (multiple jobs over the years), Terri H., Jason R., Cathy H., Misti C., Linda M., Spencer L.
+- **Prices by the completed job, not by the hour:** owner's reply to Jack C. (4 stars, not quoted): "Ballinger Electric prices work by the completed task rather than by the amount of time spent on site." One source, stated as the owner's own words.
