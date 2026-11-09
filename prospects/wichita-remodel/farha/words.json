@@ -125,8 +125,7 @@
           "type": "split",
           "heading": "A Clean House at the End of Every Day",
           "body": [
-            "We cover your floors and clean up before we leave each day, and again when the project wraps.",
-            "On one repair job we laid paper over the floors, sealed off the work area with plastic and ran a vacuum system to keep sheetrock dust out of the house."
+            "We cover your floors and clean up before we leave each day, and again when the project wraps."
           ],
           "image": {
             "slot": "home-clean",

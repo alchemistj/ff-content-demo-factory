@@ -120,8 +120,7 @@
           "type": "split",
           "heading": "You Talk to the Owner",
           "body": [
-            "John comes to your house, looks at the job and gives you the price. You deal with the owner from the first call to the finished job.",
-            "We have had a crew at work the morning after the bid."
+            "John comes to your house, looks at the job and gives you the price. You deal with the owner from the first call to the finished job."
           ],
           "image": {
             "slot": "home-owner",
@@ -158,8 +157,7 @@
           "type": "split",
           "heading": "Crews That Finish and Clean Up",
           "body": [
-            "Our crews start early, work through the day and leave your yard clean.",
-            "We have replaced a home's windows in one day and re-sided a whole house in four."
+            "Our crews start early, work through the day and leave your yard clean."
           ],
           "image": {
             "slot": "home-crew",
