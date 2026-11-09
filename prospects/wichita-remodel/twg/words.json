@@ -1,0 +1,651 @@
+{
+  "schema": "words-package/v1",
+  "business": {
+    "name": "TWG Construction",
+    "slug": "twg",
+    "city": "Wichita",
+    "state": "KS",
+    "companyType": "Roofing Company",
+    "phones": [
+      {
+        "label": "Wichita",
+        "display": "(316) 685-1010",
+        "tel": "+13166851010"
+      }
+    ],
+    "email": null,
+    "hours": null,
+    "address": null,
+    "serviceArea": {
+      "summary": "Wichita, KS",
+      "towns": [
+        "Wichita"
+      ]
+    }
+  },
+  "trustBar": [
+    "Licensed & Insured General Contractors",
+    "Serving Wichita Since 1986",
+    "100% Satisfaction Guarantee",
+    "Free Estimates"
+  ],
+  "services": [
+    {
+      "name": "Roof Replacement",
+      "route": "/roof-replacement-hail-damage-wichita-ks/",
+      "blurb": "A full tear-off and a new roof, with the yard left clean."
+    },
+    {
+      "name": "Hail and Storm Damage Repair",
+      "route": "/roof-replacement-hail-damage-wichita-ks/",
+      "blurb": "Roof, siding and door damage from the storm, handled with your insurance adjuster."
+    },
+    {
+      "name": "Siding",
+      "route": "/siding-windows-doors-wichita-ks/",
+      "blurb": "New siding after hail or years of weather, many options with lifetime manufacturer warranties."
+    },
+    {
+      "name": "Windows",
+      "route": "/siding-windows-doors-wichita-ks/",
+      "blurb": "Replacement for rotted frames, failed seals and storm damage."
+    },
+    {
+      "name": "Entry and Security Doors",
+      "route": "/siding-windows-doors-wichita-ks/",
+      "blurb": "Vinyl, wood and fiberglass doors, installed by our crew."
+    },
+    {
+      "name": "Painting",
+      "route": null,
+      "blurb": "Interior and exterior painting for homes, offices and industrial properties."
+    },
+    {
+      "name": "Decking and Outdoor Renovations",
+      "route": null,
+      "blurb": "Custom decks, fences and exterior updates."
+    }
+  ],
+  "pages": [
+    {
+      "role": "home",
+      "route": "/home/",
+      "navLabel": "Home",
+      "keyword": "roofing company Wichita KS",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Licensed and insured in Wichita",
+        "h1": "Roofing Company in Wichita, KS — TWG Construction",
+        "sub": "When hail hits, call one company for the roof, the siding, the windows and the insurance claim. We replace roofs, repair storm damage and work directly with your adjuster.",
+        "primaryCta": {
+          "label": "Call (316) 685-1010",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Get a Free Estimate",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "home-hero",
+          "alt": "Two-story Wichita-style house with a new dark roof under a clear sky after a storm",
+          "brief": "two-story suburban house with a new dark roof, house on the right third of the frame, front corner angled left, calm clear sky behind the text side, no readable text, no people"
+        }
+      },
+      "sections": [
+        {
+          "type": "review",
+          "quote": "TWG did a great job on my house that had hail damage. They worked with the insurance company to get the money needed for repairs. They fixed my roof, replaced windows and painted the house.",
+          "name": "Mike C."
+        },
+        {
+          "type": "split",
+          "heading": "One Company for Everything the Hail Hit",
+          "body": [
+            "Hail rarely stops at the shingles. We replace the roof, then the siding, windows, doors and paint the storm damaged.",
+            "You call one company, not four. We have taken a hail job from the roof to the paint."
+          ],
+          "image": {
+            "slot": "home-hail",
+            "alt": "Close view of hail-dented siding beside a roof edge",
+            "brief": "close view of hail-dented siding under a roof edge, damage on the right, soft light falling from the left, plain calm background behind the text side, no readable text, no people"
+          },
+          "imageSide": "right"
+        },
+        {
+          "type": "review",
+          "quote": "We used TWG for a new roof and to repaint our house after the hail storms and could not be happier with the results. They were out quickly and did the work in a professional, efficient manner.",
+          "name": "Andy B."
+        },
+        {
+          "type": "split",
+          "heading": "We Work With Your Insurance Company",
+          "body": [
+            "We help maximize insurance claims. We work directly with your adjuster, so you are not explaining roof damage alone.",
+            "You get a free estimate first, so you know what the storm did before the claim moves."
+          ],
+          "image": {
+            "slot": "home-claims",
+            "alt": "New siding and a new roof on a two-story house in soft afternoon light",
+            "brief": "corner of a house with new lap siding and a new roof edge, house on the right, calm sky behind the text side, no readable text, no people"
+          },
+          "imageSide": "right"
+        },
+        {
+          "type": "services",
+          "heading": "Everything We Do",
+          "intro": "Roofs and hail damage are our main work. Siding, windows, doors, paint and decks come from the same crew."
+        },
+        {
+          "type": "prose",
+          "heading": "A Straight Bid",
+          "body": [
+            "We are quick with your bid and clear about the cost, including how it may change as the work goes on.",
+            "Our work comes with a 100% Satisfaction Guarantee."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "They were very quick with providing a bid for our job and were extremely transparent about the costs and how they may change.",
+          "name": "Justin R."
+        },
+        {
+          "type": "prose",
+          "heading": "Wichita, KS",
+          "body": [
+            "We are licensed and insured general contractors, serving Wichita homes since 1986.",
+            "Call and tell us where your home is, and we will set up your estimate."
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Questions Before You Call",
+          "items": [
+            {
+              "q": "Do you work with my insurance company?",
+              "a": "Yes. We help maximize insurance claims and work directly with your adjuster."
+            },
+            {
+              "q": "Is the estimate free?",
+              "a": "Yes. We come out, look at the job and give you the price."
+            },
+            {
+              "q": "Do you do more than roofs?",
+              "a": "Yes. We install siding, windows and doors, and we paint. See [siding, windows and doors](/siding-windows-doors-wichita-ks/)."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Hail Damage or a Roof That Is Done?",
+          "text": "Call (316) 685-1010 for a free estimate on your roof, siding, windows or doors."
+        }
+      ]
+    },
+    {
+      "role": "service",
+      "route": "/roof-replacement-hail-damage-wichita-ks/",
+      "navLabel": "Roof Replacement & Hail Repair",
+      "keyword": "roof replacement hail damage repair Wichita KS",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Roof replacement and hail damage repair",
+        "h1": "Roof Replacement & Hail Damage Repair in Wichita, KS — TWG Construction",
+        "sub": "We tear off the old roof, put on the new one and leave your yard clean. After a storm, we look at everything the hail hit and work with your insurance company.",
+        "primaryCta": {
+          "label": "Call (316) 685-1010",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Get a Free Estimate",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "roof-hero",
+          "alt": "Pitched roof half covered in new dark roofing, ladder at the eave",
+          "brief": "pitched roof being re-covered, roof on the right half of the frame, ladder at the eave, calm clear sky behind the text side, no readable text, no tools in hands, no faces"
+        }
+      },
+      "sections": [
+        {
+          "type": "review",
+          "quote": "TWG did a great job replacing our roof. Quick and efficient service from beginning to end.",
+          "name": "Sheila H."
+        },
+        {
+          "type": "split",
+          "heading": "A New Roof, Start to Finish",
+          "body": [
+            "We remove the old roof, replace it and take care of every detail. We have left a yard cleaner than we found it.",
+            "Roofs we have replaced include a hail-damaged metal roof."
+          ],
+          "list": [
+            "**Roof replacement** when the roof is worn out or the storm finished it",
+            "**Roof repair** when a repair is all you need"
+          ],
+          "image": {
+            "slot": "roof-new",
+            "alt": "New roof on a ranch house seen from the yard",
+            "brief": "ranch house with a freshly finished roof, house on the right, clean front yard leading off to the left, calm sky behind the text side, no readable text, no people"
+          },
+          "imageSide": "right"
+        },
+        {
+          "type": "review",
+          "quote": "When the crew came out to remove the old roof and replace it they were very courteous and took care of every detail, our yard was cleaner when they left than it was before they came. … No leaks, no tabs blown off and a follow up call to make sure we were happy!",
+          "name": "Michael S."
+        },
+        {
+          "type": "prose",
+          "heading": "Hail Damage Is More Than the Roof",
+          "body": [
+            "Hail hits roofs, siding, doors and awnings. We look at all of it, not only the shingles, and repair or replace what the storm damaged.",
+            "We replaced one hail-damaged metal roof along with a door, an awning and siding on the same job."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "TWG Construction worked with my Insurance company and replaced my metal hail damaged roof. They also replaced a hail damaged door, awning and siding. They did a fantastic job!",
+          "name": "Mark B."
+        },
+        {
+          "type": "prose",
+          "heading": "We Work With Your Insurance Company",
+          "body": [
+            "We help maximize insurance claims. We work directly with your adjuster and keep you on the phone through every step.",
+            "We were once called for siding repair and found hail damage on the roof too. We coordinated with the adjuster on both."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Scott was amazing to work with. He was on the phone with me for every step of the process, including working with my insurance, and he made sure I understood everything that was going on.",
+          "name": "Dan M."
+        },
+        {
+          "type": "steps",
+          "heading": "How a Roof Job Goes",
+          "items": [
+            {
+              "title": "We look at your roof",
+              "text": "We come out, look at the roof and give you an estimate. Estimates are free."
+            },
+            {
+              "title": "We explain every detail",
+              "text": "We walk you through what we found and what the bid covers, including how the cost may change."
+            },
+            {
+              "title": "Tear-off and new roof",
+              "text": "Our crew removes the old roof and puts on the new one."
+            },
+            {
+              "title": "Clean-up",
+              "text": "We clean the yard when we finish, so it looks the way it did before we came."
+            }
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "The crew at TWG came out and did a top notch job on our roof. After 5 years it still looked so great, we had them do the roof of another (rental) house.",
+          "name": "Phil B."
+        },
+        {
+          "type": "prose",
+          "heading": "Roofs That Hold Up",
+          "body": [
+            "We stand behind our work with a 100% Satisfaction Guarantee.",
+            "We have roofed a house and, five years later, roofed the owner's rental too."
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Roofing Questions",
+          "items": [
+            {
+              "q": "Can you work with my insurance adjuster?",
+              "a": "Yes. We help maximize insurance claims and work directly with your adjuster. Call (316) 685-1010 and tell us what the storm did."
+            },
+            {
+              "q": "Do you repair roofs as well as replace them?",
+              "a": "Yes. We do roof repair and roof replacement, and we tell you which one your roof needs."
+            },
+            {
+              "q": "Where do you work?",
+              "a": "We work in Wichita, KS. Call and tell us where your home is."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Ready for a New Roof?",
+          "text": "Call (316) 685-1010 and we will come look at your roof and give you a free estimate."
+        }
+      ]
+    },
+    {
+      "role": "service",
+      "route": "/siding-windows-doors-wichita-ks/",
+      "navLabel": "Siding, Windows & Doors",
+      "keyword": "siding windows doors Wichita KS",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Siding, windows and doors",
+        "h1": "Siding, Windows & Doors in Wichita, KS — TWG Construction",
+        "sub": "Hail, rot or years of weather: we replace your siding, windows and doors and leave the job clean. Many of our siding options carry lifetime manufacturer warranties.",
+        "primaryCta": {
+          "label": "Call (316) 685-1010",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Get a Free Estimate",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "siding-hero",
+          "alt": "Side of a house with new lap siding and a row of new windows",
+          "brief": "side of a house with new lap siding and a row of new windows, wall on the right receding to the left, calm sky behind the text side, no readable text, no people"
+        }
+      },
+      "sections": [
+        {
+          "type": "review",
+          "quote": "We now have new windows, siding and a fantastic new color on our house. All the guys were nice and respectful.",
+          "name": "Jessica H."
+        },
+        {
+          "type": "split",
+          "heading": "New Siding After Hail or Wear",
+          "body": [
+            "Hail breaks siding. We repair or replace it, and when the storm hit your roof too, we handle both with your insurance company.",
+            "We take care of the old siding, and many of our siding options carry lifetime manufacturer warranties."
+          ],
+          "image": {
+            "slot": "siding-main",
+            "alt": "New siding on the corner of a house",
+            "brief": "corner of a house with new lap siding, wall on the right, plain calm sky on the left, no readable text, no people"
+          },
+          "imageSide": "right"
+        },
+        {
+          "type": "review",
+          "quote": "After a giant hailstorm TWG took care of everything we needed. They even worked with our insurance company and got us all new siding.",
+          "name": "Linden M."
+        },
+        {
+          "type": "split",
+          "heading": "Windows With Rot, Bad Seals or Storm Damage",
+          "body": [
+            "We replace windows with rotted frames, windows with failed seals and windows the hail damaged.",
+            "We have replaced two windows with faulty seals at no charge."
+          ],
+          "list": [
+            "**Rotted windows** replaced and trimmed out",
+            "**Failed seals** fixed, not argued about",
+            "**Hail-damaged windows** handled with your claim"
+          ],
+          "image": {
+            "slot": "siding-windows",
+            "alt": "Replacement window seen from outside in new siding",
+            "brief": "a single new white replacement window set in fresh siding seen from outside, window on the right, calm wall on the left, no readable text, no people"
+          },
+          "imageSide": "right"
+        },
+        {
+          "type": "review",
+          "quote": "The Window Guys helped me fix some rotted windows. They were professional, on time and showed me ways to save money in the project.",
+          "name": "Doug B."
+        },
+        {
+          "type": "prose",
+          "heading": "Our Windows Stand Behind the Sale",
+          "body": [
+            "When a seal fails, you call us. We have replaced two windows for a customer at no charge, no questions asked.",
+            "We stand behind our work with a 100% Satisfaction Guarantee."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "They recently replaced two windows with faulty seals and did not charge me for the replacement, no questions asked. So I know they stand behind their products.",
+          "name": "Jeff N."
+        },
+        {
+          "type": "prose",
+          "heading": "Entry and Security Doors",
+          "body": [
+            "We install vinyl, wood and fiberglass doors, including entry and security doors.",
+            "A door often goes in with the siding or the windows, so the whole front of the house matches."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Scott and his guys replaced a few windows in our home. His team was on time and very professional through the whole process.",
+          "name": "Colin F."
+        },
+        {
+          "type": "prose",
+          "heading": "Paint to Finish the Job",
+          "body": [
+            "We paint homes, offices and industrial properties, inside and out.",
+            "New siding and trim look best with fresh paint, and one crew can do both."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "We recently had our exterior, and garage reworked by TWG. The workmanship is excellent. Everyone that came to our house was kind, communicative and tidy.",
+          "name": "Ryan B."
+        },
+        {
+          "type": "faq",
+          "heading": "Siding, Window and Door Questions",
+          "items": [
+            {
+              "q": "Will my insurance cover hail-damaged siding?",
+              "a": "Often it can. We help maximize insurance claims and work with your adjuster. Call (316) 685-1010 and we will look at the damage."
+            },
+            {
+              "q": "Can I replace only a few windows?",
+              "a": "Yes. We have replaced a few windows in a home, and we have replaced rotted ones one at a time."
+            },
+            {
+              "q": "Is the estimate free?",
+              "a": "Yes. Call and we will come look and give you the price."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Siding, Windows or a New Door?",
+          "text": "Call (316) 685-1010 and tell us what you need. We will come out and give you a free estimate."
+        }
+      ]
+    },
+    {
+      "role": "contact",
+      "route": "/contact/",
+      "navLabel": "Contact",
+      "keyword": "contact TWG Construction Wichita KS",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Contact",
+        "h1": "Contact TWG Construction",
+        "sub": "Call us and tell us what you need. We will set up your free estimate.",
+        "primaryCta": {
+          "label": "Call (316) 685-1010",
+          "action": "call"
+        },
+        "image": {
+          "slot": "contact-hero",
+          "alt": "Finished house with a clean yard and new roof in warm evening light",
+          "brief": "finished two-story house with a new roof and clean yard, house on the right, front angled left, calm soft sky behind the text side, no readable text, no people"
+        }
+      },
+      "sections": [
+        {
+          "type": "prose",
+          "heading": "Call Us",
+          "body": [
+            "Call (316) 685-1010 for a free estimate on your roof, siding, windows or doors.",
+            "Tell us what happened: hail, a leak, worn siding or a rotted window. We work in Wichita, KS."
+          ]
+        },
+        {
+          "type": "list",
+          "heading": "Have This Ready",
+          "list": [
+            "What the damage looks like and when the storm hit",
+            "Whether you have filed an insurance claim",
+            "Which parts of the house you want us to look at: roof, siding, windows or doors"
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "It's so hard to find great, trustworthy contractors. Finding these folks has really made my life easier, and my home better.",
+          "name": "Russell C."
+        },
+        {
+          "type": "faq",
+          "heading": "Before You Call",
+          "items": [
+            {
+              "q": "Do you charge for an estimate?",
+              "a": "No. Estimates are free."
+            },
+            {
+              "q": "Will you work with my insurance company?",
+              "a": "Yes. We help maximize insurance claims and work directly with your adjuster."
+            },
+            {
+              "q": "Where do you work?",
+              "a": "We work in Wichita, KS."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "about": "TWG Construction is a licensed and insured general contractor in Wichita, KS, known to many customers as The Window Guys. We replace roofs, repair hail damage and install siding, windows and doors.",
+    "why": [
+      "Hail damage handled with your insurance company",
+      "100% Satisfaction Guarantee",
+      "Licensed and insured general contractors",
+      "Serving Wichita since 1986"
+    ]
+  },
+  "strategy": {
+    "whyHeading": "Why we built this site",
+    "why": [
+      "When hail hits Wichita, you want one company that replaces the roof, deals with the insurance and leaves the yard clean. Your customers say that is you. One wrote, \"They worked with the insurance company to get the money needed for repairs.\"",
+      "Your website says \"Remodeling & Renovation Contractors\" and never says roofing in its main headline. It shows 316.776.4748, while your Google profile shows (316) 685-1010. Someone searching for a roofer may not find you, and someone who finds both numbers may call neither.",
+      "So we built a demo that leads with roofing and hail damage, gives siding, windows and doors their own page, shows one phone number everywhere and puts your customers' words beside the work they describe."
+    ],
+    "cardsHeading": "Be the Roofing Company People Find on Google",
+    "cardsIntro": "Each card is one page of the demo: what costs you calls today, and how the demo fixes it.",
+    "cards": [
+      {
+        "route": "/home/",
+        "title": "Homepage",
+        "why": "The first page people see, and the one Google reads to learn who you are and where you work.",
+        "problems": [
+          "The top of your homepage says \"Remodeling & Renovation Contractors in Wichita, KS\" and never says roofing, so Google can't tell a homeowner searching for a roofer that you are one.",
+          "The number on your site, 316.776.4748, is not the one on your Google profile, (316) 685-1010, so a customer who finds both may call neither.",
+          "Your three testimonials don't match your Google reviews word for word, and we could not find Diana W.'s."
+        ],
+        "fixes": [
+          "A headline that says roofing company in Wichita, KS, right at the top.",
+          "One number, the one on your Google profile, on every page, one tap to call.",
+          "Real reviews, word for word, each beside the point it proves."
+        ],
+        "alsoAdd": "Every page set up behind the scenes so Google and AI tools like ChatGPT know exactly what you do, where you work, and what your customers say."
+      },
+      {
+        "route": "/roof-replacement-hail-damage-wichita-ks/",
+        "title": "Roof Replacement & Hail Damage Repair",
+        "why": "Roofs, hail and insurance claims are most of what your customers write about, and they have no page of their own.",
+        "problems": [
+          "Your whole site is one page, so roofing and hail damage share a few lines with five other services.",
+          "Insurance, the thing customers praise most, gets one sentence at the bottom of the services list."
+        ],
+        "fixes": [
+          "A full page for roof replacement and hail damage repair in Wichita, KS.",
+          "A section on working with your adjuster, with a customer's words beside it."
+        ],
+        "alsoAdd": "Pages planned from what Google actually shows for each search, so every page targets something people really look for."
+      },
+      {
+        "route": "/siding-windows-doors-wichita-ks/",
+        "title": "Siding, Windows & Doors",
+        "why": "Your name says windows and your customers write about siding and windows, but your site does not.",
+        "problems": [
+          "The Windows & Doors paragraph describes only doors, so nobody searching for windows finds you.",
+          "Siding is a few lines of brand names with no page behind it."
+        ],
+        "fixes": [
+          "A page for siding, windows and doors in Wichita, KS.",
+          "Jobs your crews have done, with a review beside each."
+        ],
+        "alsoAdd": "A check of what your competitors offer, so services you didn't think to mention still get their own pages."
+      },
+      {
+        "route": "/contact/",
+        "title": "Contact",
+        "why": "The page where interest turns into a call, and the one that has to match your Google profile.",
+        "problems": [
+          "\"Contact Us\", \"Services\" and \"About\" only scroll down the same page, and twgconstruction.biz/contact, /services and /about all say \"Page not found\".",
+          "Your site says Suite 102 and Google says #101, and a leftover WordPress sample page is still live."
+        ],
+        "fixes": [
+          "A real contact page, with one number that matches Google.",
+          "Nothing left over from the template."
+        ],
+        "alsoAdd": "Call and form tracking that shows which pages and towns your leads come from."
+      }
+    ],
+    "reportCardHeading": "What great roofing company websites get right, and how yours measures up.",
+    "reportCard": [
+      {
+        "label": "Headline says what you do and where",
+        "status": "Needs work"
+      },
+      {
+        "label": "Phone number matches your Google profile",
+        "status": "Needs work"
+      },
+      {
+        "label": "Each money service has its own page",
+        "status": "Missing"
+      },
+      {
+        "label": "Real reviews, word for word",
+        "status": "Needs work"
+      },
+      {
+        "label": "Contact and about pages exist",
+        "status": "Missing"
+      },
+      {
+        "label": "No leftover sample text",
+        "status": "Needs work"
+      },
+      {
+        "label": "Address matches your Google profile",
+        "status": "Needs work"
+      }
+    ],
+    "closing": {
+      "heading": "Want a website like this for your business?",
+      "text": "Your customers already say you work with their insurance and get the roof done quickly. You likely do more than we found, so on your onboarding call we confirm the full list of services and every detail with you and your team."
+    }
+  },
+  "onboardingQuestions": [
+    "Who owns TWG Construction, and may we name the owner? Owner replies are signed \"Scott\" and reviewers name Scott and Brad Randall, but no source says either one owns it.",
+    "Phone: which number do we publish? Google shows (316) 685-1010 and the site shows 316.776.4748. We used the Google number. What is the other line?",
+    "Address: Suite 102 (the site) or #101 (Google, GuildQuality, MapQuest), and the ZIP? None is shown on the demo.",
+    "Years: the site says \"since 1986\", \"30+ years\" and \"nearly four decades\". Is 1986 right?",
+    "Full list of services: decks and fences, gutters (one review mentions them), interior work, metal roofing, and windows (the site describes only doors).",
+    "Licensing, insurance and the 100% Satisfaction Guarantee: what are the license numbers and the guarantee terms?",
+    "Siding warranty: which siding lines carry lifetime manufacturer warranties?",
+    "Hours and an email address to show on the contact page.",
+    "Towns beyond Wichita you serve.",
+    "Is the BBB rating real? A web summary said A+ for The Window Guys, but the BBB page did not load.",
+    "Are TWG Construction and The Window Guys the same company? Suite numbers differ on some listings (#102 and #103)."
+  ]
+}
