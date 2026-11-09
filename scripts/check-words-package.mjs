@@ -150,6 +150,30 @@ for (const p of pages) {
 }
 for (const [s, r] of seen) if (r.length > 2) fail(`sentence on ${r.length} pages (${r.join(", ")}): "${s.slice(0, 70)}…"`);
 
+// 8. Copy must not retell a review (Josh, 2026-11-09). State the benefit in general terms; the review supplies the specifics.
+// Fails when business-page copy (outside review blocks) repeats a review's numbers ("five basement windows in four hours")
+// or a 4-word phrase from any review ("sealed and trimmed out").
+if (reviews) {
+  const NUM = { one: 1, two: 2, three: 3, four: 4, five: 5, six: 6, seven: 7, eight: 8, nine: 9, ten: 10, eleven: 11, twelve: 12, thirteen: 13, fourteen: 14, fifteen: 15, sixteen: 16, seventeen: 17, eighteen: 18, nineteen: 19, twenty: 20, thirty: 30, forty: 40, fifty: 50, half: 0.5 };
+  const STOP = new Set("a an the and or but of to in on for with at by from it its it's is was were are be been we our us you your they them their he she his her i my me this that these those so very just all as up out had has have do did not no how what can will would could get got make made sure well good great job work off old new over into".split(" "));
+  // Names are not details: drop the business name and owners before comparing.
+  const nameWords = new Set([b.name, ...(b.owners || [])].join(" ").toLowerCase().split(/\W+/).filter(Boolean));
+  const toks = (t) => strip(t).toLowerCase().replace(/one-on-one/g, " ").replace(/[^a-z0-9' ]+/g, " ").split(/\s+/).filter((w) => w && !nameWords.has(w)).map((w) => (NUM[w] !== undefined ? String(NUM[w]) : w));
+  const stem = (w) => w.replace(/(es|s)$/, "");
+  const numPairs = (ts) => { const out = []; ts.forEach((w, i) => { if (/^\d+(\.\d+)?$/.test(w) && ts[i + 1] && !STOP.has(ts[i + 1]) && !/^(year|yr)s?$/.test(ts[i + 1])) out.push(`${w} ${stem(ts[i + 1])}`); }); return out; };
+  const grams = (ts, n = 4) => { const out = []; for (let i = 0; i + n <= ts.length; i++) { const g = ts.slice(i, i + n); if (g.filter((w) => !STOP.has(w)).length >= 3) out.push(g.join(" ")); } return out; };
+  const revNums = new Map(), revGrams = new Map();
+  for (const r of reviews) { const ts = toks(r.text); for (const x of numPairs(ts)) revNums.set(x, r.reviewer); for (const g of grams(ts)) revGrams.set(g, r.reviewer); }
+  const copyOf = (p) => [p.hero?.eyebrow, p.hero?.sub, ...(p.sections || []).filter((x) => x.type !== "review").flatMap((x) => [x.heading, x.intro, x.text, ...(x.body || []), ...(x.list || []), ...(x.items || []).flatMap((i) => [i.title, i.text, i.a])])].filter(Boolean); // FAQ questions are the visitor's words
+  const strings = [...pages.flatMap((p) => copyOf(p).map((t) => [p.route, t])), ...(pkg.services || []).map((sv) => [`services[${sv.name}]`, sv.blurb]), ["footer.about", pkg.footer?.about], ...(pkg.footer?.why || []).map((w) => ["footer.why", w])].filter(([, t]) => t);
+  for (const [where, t] of strings) {
+    const ts = toks(t);
+    const hitN = numPairs(ts).filter((x) => revNums.has(x));
+    const hitG = grams(ts).filter((g) => revGrams.has(g));
+    if (hitN.length || hitG.length) fail(`${where}: copy retells a review (${[...hitN.map((x) => `"${x}"`), ...hitG.slice(0, 2).map((g) => `"${g}"`)].join(", ")} from ${revNums.get(hitN[0]) || revGrams.get(hitG[0])}); state the benefit, let the review give the details: "${strip(t).slice(0, 80)}…"`);
+  }
+}
+
 console.log(`# Words package check: ${dir}\n`);
 for (const m of info) console.log(`info  ${m}`);
 for (const m of warns) console.log(`WARN  ${m}`);

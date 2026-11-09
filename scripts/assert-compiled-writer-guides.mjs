@@ -14,9 +14,9 @@ import { dirname, join, resolve, sep } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 
 const EXPECTED_MANIFEST =
-  "e1d7bc635cf8b7a29d08259d6ff57c4680b10fb25e76f4dd8ac15836ee6828ae";
+  "f4b3a479f127495cb5999df0c3e82f93a28622c9d2a2f1366eb51c9f21d5d005";
 const EXPECTED_GUIDE_SHA256 = Object.freeze({
-  general: "80d0fcb85e1d8315ebbcfb8c91bd245d7bae37c4b796fdebfa41907c82c4e936",
+  general: "64dff9e21c2f60480dfd5a4b2e43df2667396b47c8106dbed0a51e3fdc0811de",
   service: "92acecf52fd02adb971e3c88094a26f2e2646f9394771cb0f00e43a6b909d7d9",
   homepage: "417debb94ee2b7db33015dca0e3fdc28496d0957af8c76dd6e7d20772a7f2f0e",
   contact: "5613e7bb37ae021966da52a59cb0e264bfcec652776debee7bccf277cb3d336d",
@@ -24,9 +24,9 @@ const EXPECTED_GUIDE_SHA256 = Object.freeze({
   readme: "a667ba03bf628b19a089676f19988a3ad74be13a4300ee7ad341d67fa203ccf1",
 });
 const EXPECTED_SET_HASH = Object.freeze({
-  writer1: "7a35ce860e1f8ce2f009b7218c499525ba7b029999739cf3c0a5b6d34e8000d3",
-  writer2: "6f4e1be8af2a7387a60b29302868fb9e1296a006e46cb3a1b0305c75c6912f78",
-  writer3: "861164c966f05dfdb9a5d00977b47d7a4e928d08d5ac02e63872e73f511f9040",
+  writer1: "d8397c093b07bc089182dea54a9bbeb40a4d711a542d6d28d21af2cc3047ecf5",
+  writer2: "f4390acba829e3648c7d60afbf2a81d99f3b932a6f8b5acb924e68aad9817024",
+  writer3: "63aa6ef5b23a7ae8a856866346c76f049f663feab7d3dbfeb222ce53c321e0ec",
 });
 
 const scriptDir = dirname(fileURLToPath(import.meta.url));

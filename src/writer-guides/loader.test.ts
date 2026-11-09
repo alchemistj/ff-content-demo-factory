@@ -67,11 +67,11 @@ test("loadCanonicalGuideCatalog reads exact on-disk Markdown and hashes determin
   const second = loadCanonicalGuideCatalog();
   assert.equal(first.guides.length, 6);
   assert.equal(first.manifestHash, second.manifestHash);
-  assert.equal(first.manifestHash, "e1d7bc635cf8b7a29d08259d6ff57c4680b10fb25e76f4dd8ac15836ee6828ae");
+  assert.equal(first.manifestHash, "f4b3a479f127495cb5999df0c3e82f93a28622c9d2a2f1366eb51c9f21d5d005");
   assert.deepEqual(
     Object.fromEntries(first.guides.map((guide) => [guide.id, guide.sha256])),
     {
-      general: "80d0fcb85e1d8315ebbcfb8c91bd245d7bae37c4b796fdebfa41907c82c4e936",
+      general: "64dff9e21c2f60480dfd5a4b2e43df2667396b47c8106dbed0a51e3fdc0811de",
       service: "92acecf52fd02adb971e3c88094a26f2e2646f9394771cb0f00e43a6b909d7d9",
       homepage: "417debb94ee2b7db33015dca0e3fdc28496d0957af8c76dd6e7d20772a7f2f0e",
       contact: "5613e7bb37ae021966da52a59cb0e264bfcec652776debee7bccf277cb3d336d",
@@ -130,9 +130,9 @@ test("Writer 1/2/3 sets load from repo files with no provider and preserve raw M
   assert.equal(writer1.catalogManifestHash, catalog.manifestHash);
   assert.equal(writer2.catalogManifestHash, catalog.manifestHash);
   assert.equal(writer3.catalogManifestHash, catalog.manifestHash);
-  assert.equal(writer1.setHash, "7a35ce860e1f8ce2f009b7218c499525ba7b029999739cf3c0a5b6d34e8000d3");
-  assert.equal(writer2.setHash, "6f4e1be8af2a7387a60b29302868fb9e1296a006e46cb3a1b0305c75c6912f78");
-  assert.equal(writer3.setHash, "861164c966f05dfdb9a5d00977b47d7a4e928d08d5ac02e63872e73f511f9040");
+  assert.equal(writer1.setHash, "d8397c093b07bc089182dea54a9bbeb40a4d711a542d6d28d21af2cc3047ecf5");
+  assert.equal(writer2.setHash, "f4390acba829e3648c7d60afbf2a81d99f3b932a6f8b5acb924e68aad9817024");
+  assert.equal(writer3.setHash, "63aa6ef5b23a7ae8a856866346c76f049f663feab7d3dbfeb222ce53c321e0ec");
   assert.notEqual(writer1.setHash, writer2.setHash);
   assert.notEqual(writer1.setHash, writer3.setHash);
   assert.notEqual(writer2.setHash, writer3.setHash);
