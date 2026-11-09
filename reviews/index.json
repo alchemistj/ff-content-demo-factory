@@ -135,6 +135,18 @@
       "pulledAt": "2026-11-09T02:11:16.316Z"
     },
     {
+      "slug": "flawless-roofing",
+      "name": "Flawless Roofing Co",
+      "placeId": "ChIJTzDCYPrxuocRXr_-RD-j0cM",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 26,
+        "withText": 21,
+        "ratingOnly": 5
+      },
+      "pulledAt": "2026-11-09T12:51:51.325Z"
+    },
+    {
       "slug": "greenway-exteriors",
       "name": "Greenway Exteriors",
       "placeId": "ChIJAQC8MrzhuocR5qvlgPmfobc",

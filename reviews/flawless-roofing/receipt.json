@@ -1,0 +1,27 @@
+{
+  "kind": "google-review-pull-receipt",
+  "status": "ok",
+  "slug": "flawless-roofing",
+  "request": {
+    "mapsUrl": "place_id:ChIJTzDCYPrxuocRXr_-RD-j0cM",
+    "maxReviews": 100,
+    "expectedName": "Flawless"
+  },
+  "trigger": "workflow_dispatch",
+  "apify": {
+    "actor": "compass~crawler-google-places",
+    "runId": "FSLqaligggPiCpfY4",
+    "datasetId": "id6J5saz2VReCed2G",
+    "attempts": 1,
+    "usageUsd": 0.0002
+  },
+  "counts": {
+    "listingTotal": 26,
+    "withText": 21,
+    "ratingOnly": 5
+  },
+  "detail": null,
+  "startedAt": "2026-11-09T12:50:40.338Z",
+  "finishedAt": "2026-11-09T12:51:51.325Z",
+  "githubRunUrl": "https://github.com/alchemistj/ff-content-demo-factory/actions/runs/42620349848"
+}
