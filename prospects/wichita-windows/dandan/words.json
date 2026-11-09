@@ -126,7 +126,7 @@
           "heading": "Windows Are What We Do Best",
           "body": [
             "We replace double-hung, sliding, casement, picture, awning and shaped windows in houses across the Wichita metro area.",
-            "New windows keep your rooms comfortable all year and keep the street noise outside. [See how a window job goes.](/window-replacement-wichita-ks/)"
+            "From five basement windows to the whole house, our crew does the work and Rick answers your questions. [See how a window job goes.](/window-replacement-wichita-ks/)"
           ],
           "image": {
             "slot": "home-windows",
@@ -137,8 +137,8 @@
         },
         {
           "type": "review",
-          "quote": "Since the installation our house is much quieter, I should have done this sooner.",
-          "name": "Greg S."
+          "quote": "we purchased 5 basement windows couldn’t be happier excellent quality windows, Rick’s customer service A+.",
+          "name": "Tonya A."
         },
         {
           "type": "services",
@@ -168,7 +168,7 @@
           "type": "prose",
           "heading": "Financing",
           "body": [
-            "Synchrony Bank financing is open to every purchase with approved credit, with no monthly interest if you pay in full within 18 months."
+            "Synchrony Bank financing means no monthly interest if you pay in full within 18 months."
           ]
         },
         {
@@ -307,7 +307,7 @@
           "type": "prose",
           "heading": "Price, Warranty and Payment",
           "body": [
-            "Our warranty covers our installation. Synchrony Bank financing is open to every purchase with approved credit, with no monthly interest if you pay in full within 18 months.",
+            "Our warranty covers our installation. Financing through Synchrony Bank is open to every window purchase with approved credit, and you pay no monthly interest if you pay in full within 18 months.",
             "You can pay by personal check, American Express, Discover, MasterCard or Visa."
           ]
         },
@@ -380,7 +380,8 @@
           "heading": "Entry, Patio and French Doors",
           "body": [
             "We install new entry, patio and French doors, custom-manufactured in a wide range of colors and configurations.",
-            "We have replaced a patio door, a side door and two doors alongside three windows, all on separate jobs."
+            "We have replaced a patio door, a side door and two doors alongside three windows, all on separate jobs.",
+            "Bring us the opening you have. We fit the new door to it and set it so it closes the way it should."
           ],
           "list": [
             "**Entry doors** for the front of your house",
@@ -431,6 +432,24 @@
           "name": "Joni M."
         },
         {
+          "type": "steps",
+          "heading": "How Your Door or Siding Job Goes",
+          "items": [
+            {
+              "title": "We measure and quote",
+              "text": "We come out, look at the doors or walls you want replaced and give you a price. It's free."
+            },
+            {
+              "title": "You pick the look",
+              "text": "Choose your door or siding at our showroom, with the colors and styles in front of you."
+            },
+            {
+              "title": "Our crew does the work",
+              "text": "Our own crew installs your new door or siding and cleans up the site when it's done."
+            }
+          ]
+        },
+        {
           "type": "prose",
           "heading": "Gutters and Downspouts",
           "body": [
@@ -446,7 +465,7 @@
           "type": "prose",
           "heading": "Price and Financing",
           "body": [
-            "Estimates for doors and siding are free. Synchrony Bank financing is open to every purchase with approved credit, with no monthly interest if you pay in full within 18 months."
+            "Estimates for doors and siding are free. Ask us about Synchrony Bank financing: 18 months with no monthly interest when you pay in full, with approved credit."
           ]
         },
         {
@@ -460,6 +479,14 @@
             {
               "q": "Can I do doors, windows and siding together?",
               "a": "Yes. We have replaced windows and doors in one job and added siding and gutters on another."
+            },
+            {
+              "q": "Can you do siding on a garage?",
+              "a": "Yes. We have replaced the siding on a detached garage along with its old window."
+            },
+            {
+              "q": "Can I choose my colors and styles?",
+              "a": "Yes. You pick them at our showroom on West Kellogg."
             },
             {
               "q": "Do you do roofing too?",
@@ -560,7 +587,7 @@
   "strategy": {
     "whyHeading": "Why we built this site",
     "why": [
-      "Your customers say the same things again and again: Rick is easy to work with, the installers finish fast and clean up, and the price is fair. On Google you hold a 4.7 across 44 reviews.",
+      "Your customers say the same things: Rick is easy to work with, the installers finish fast and clean up, and the price is fair. On Google you hold a 4.7 across 44 reviews.",
       "Your current site splits its top headline between windows and hail roofing, runs its menu off the edge of a phone, and never names Rick.",
       "So we rebuilt it around what your customers already say: an owner who answers straight, and a crew that leaves the house clean."
     ],
@@ -572,8 +599,8 @@
         "title": "Homepage",
         "why": "The first page people see, and the one Google reads to learn who you are and where you work.",
         "problems": [
-          "On a phone the page is twice as wide as the screen. The number in the top corner and the Roofing, Financing, Reviews and Let's Talk buttons sit past the edge, so a caller has to hunt for them.",
-          "The top of the page is three headlines: windows, doors and siding; hail damage claims for roofing and metal buildings; and Wichita. Google can't tell whether you are a window company or a roofer.",
+          "On a phone the page is twice as wide as the screen. Your number and the Roofing, Financing, Reviews and Let's Talk buttons sit past the edge.",
+          "The top of the page is three headlines: windows and siding, hail roofing claims, and Wichita. Google can't tell whether you are a window company or a roofer.",
           "\"Here's what our customers are saying...\" has no reviews under it, and nothing on the page names Rick."
         ],
         "fixes": [
@@ -588,36 +615,35 @@
         "title": "Window Replacement",
         "why": "Windows are about three quarters of your written reviews, and the page that sells them is short.",
         "problems": [
-          "The Windows page is one paragraph, a list of features and two PDF buttons, with no look at how a job goes and no customer review beside it.",
-          "Nothing says what happens on install day, which is what your reviewers praise."
+          "The Windows page is two paragraphs, a feature list and two PDF buttons, with no customer review and nothing on install day, which is what your reviewers praise."
         ],
         "fixes": [
           "A full page for window replacement in Wichita, KS.",
-          "Styles, glass, install steps, insurance claims and payment explained, each beside a real review."
+          "Styles, glass, install steps and payment, each beside a real review."
         ],
         "alsoAdd": "Pages planned from what Google actually shows for each search, so every page targets something people really look for."
       },
       {
         "route": "/doors-siding-wichita-ks/",
         "title": "Doors & Siding",
-        "why": "Doors and siding are jobs your reviewers describe, and your site gives them one paragraph and a list of names.",
+        "why": "Your reviewers describe door and siding jobs, and your site gives them a paragraph and a list of names.",
         "problems": [
           "The Siding page lists eight product names with no description under any of them.",
-          "Gutters, which your customers ask for, have no page and no mention outside the contact form."
+          "Gutters, which customers ask for, appear only as a box on the contact form."
         ],
         "fixes": [
-          "One page for doors and siding in Wichita, with the siding lines in one place.",
-          "Gutters named, with reviews from your own customers."
+          "One page for doors and siding in Wichita.",
+          "Gutters named, with a review from your own customers."
         ],
         "alsoAdd": "A check of what your competitors offer, so services you didn't think to mention still get their own pages."
       },
       {
         "route": "/contact/",
         "title": "Contact",
-        "why": "The page where interest turns into a call, and the one that has to agree with everything else.",
+        "why": "The page where interest turns into a call.",
         "problems": [
           "Your site says 10 to 5 and your Birdeye profile says 8 to 5, so a customer can't tell when to call.",
-          "Roofing has its own number, and nothing says which number to use for what."
+          "Nothing says which number is for roofing and which is for windows."
         ],
         "fixes": [
           "Both numbers one tap, each labeled with what it is for.",
