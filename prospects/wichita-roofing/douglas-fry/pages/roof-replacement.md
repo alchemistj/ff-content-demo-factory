@@ -2,7 +2,7 @@
 
 # Roof Replacement in Wichita, KS — Douglas Fry Roofing
 
-Most people start thinking about a new roof after a hailstorm, an adjuster's letter or a leak that keeps coming back in new places. Before you choose a material, find out whether you need a whole roof at all. One of us will get on yours, tell you what it needs and put it in writing, so call or ask for a written estimate.
+A hailstorm, an adjuster's letter or a leak that keeps moving is usually what starts the search for a new roof. Before you pick a material, find out whether you need a whole roof at all. Call, or ask for a written estimate, and one of us will get on your roof and tell you in writing.
 
 **Buttons:** Call (316) 655-9777 | Get a Written Estimate
 
