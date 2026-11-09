@@ -70,6 +70,8 @@ A move is the moment you most need the house clean and have the least time to do
 
 An empty house shows everything: the inside of cabinets, the floors under where the couch sat, the grime nobody could see behind furniture.
 
+Moving out, that is what a landlord walks through before your deposit comes back. Moving in, it is everything the last people left behind, cleaned before your boxes cover it up.
+
 If your move is coming up fast, call and tell me the date.
 
 > "I had already moved out. While I was checking other providers Jenny Maid's came up so I called. Jenny was so sympathetic and made special accommodations to come early the next morning! Jenny.and her assistant did an absolutely amazing job! I have never seen someone work as hard as Jenny did, and the job was done impeccably!"
