@@ -13,7 +13,7 @@ I'm Juan. My crew replaces and repairs roofs in Wichita, and when hail hits, Bra
 
 The storm passes, the roof looks fine from the driveway, and your phone fills up with door-knockers. Then comes the part nobody explains: finding the damage, filing the claim, meeting the adjuster, getting the paperwork in on time.
 
-That's the part we do with you, and we try to start early. I met Carl W. at his house the morning after the September 2025 hailstorm. A drone over his roof showed severe hail damage, and I pointed out that his gutters had taken it too.
+That's the part we do with you, and we try to get to your roof soon after the storm, before the damage gets harder to prove.
 
 The inspection is free. We photograph what we find, and we tell you plainly whether there's a claim worth filing.
 
