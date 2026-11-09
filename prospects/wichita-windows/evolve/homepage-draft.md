@@ -17,15 +17,25 @@ We're Colton and Riley. We replace windows, put up vinyl siding and install slid
 
 ## Big-Company Products, Owners on the Job
 
-The outside of your house is one system. Windows, siding, doors and the trim around them all meet at the same edges, and a leak or a draft at one shows up as a problem at the others. That's why we do all of it, and why one of us comes out to look before anyone quotes a price.
+The outside of your house is one system. Windows, siding, doors and trim all meet at the same edges.
 
-We run Evolve the way we'd want a contractor to treat our own houses. We don't spend on big ad campaigns, so that cost stays out of your price. You get a real look at what's wrong, the price with no pressure to sign that day, and the choice to do the whole exterior at once or one project at a time. And because we're a small company, the people who quote your job are the people you call if anything isn't right.
+A leak or a draft at one shows up as a problem at the others. That's why we do all of it, and why one of us comes out to look before anyone quotes a price.
+
+We don't spend on big ad campaigns, so that cost stays out of your price.
+
+You get a real look at what's wrong and a price with no pressure to sign that day. Do the whole exterior at once, or one project at a time.
+
+And because we're a small company, the people who quote your job are the people you call if anything isn't right.
 
 ## Replacement Windows
 
-Most of our work is windows, and most people call us for the same few reasons: a room that never gets comfortable, curtains that move with the window shut, fog between the panes, or a sash that sticks. Each one points to a window that has stopped sealing, and you're paying to heat and cool the outdoors through it.
+Most of our work is windows. People usually call us because of a room that never gets comfortable, curtains that move with the window shut, fog between the panes, or a sash that sticks.
 
-We measure every opening, show you the window up close, and order each one to fit. In older Wichita houses, we'll also show you where two or three small windows could become one larger one. That means more light and fewer windows to buy. Most homes are done in a day. Our energy efficient windows carry a manufacturer's lifetime warranty, from glass breakage to how the window opens and closes.
+Each one points to a window that has stopped sealing. You're paying to heat and cool the outdoors through it.
+
+We measure every opening, show you the window up close and order each one to fit. In older Wichita houses, we'll show you where two or three small windows could become one larger one: more light, fewer windows to buy.
+
+Most homes are done in a day. Our energy efficient windows carry a manufacturer's lifetime warranty, from glass breakage to how the window opens and closes.
 
 Casement, double hung, sliding, awning, hopper, picture, bay and basement windows.
 
@@ -36,9 +46,13 @@ Casement, double hung, sliding, awning, hopper, picture, bay and basement window
 
 ## Vinyl Siding
 
-Siding takes the Kansas wind, hail and summer sun before anything else on the house does. When it's worn out, you see it: faded or chalky panels, cracks, warped or melted spots, and pieces the wind keeps loosening. What you don't see is the wall behind it, where gaps let in drafts and water.
+Siding takes the Kansas wind, hail and summer sun before anything else on the house does.
 
-We'll tell you which kind of siding you have. Some only needs a few repairs and has years left. Some is failing, or was put up badly in the first place, and patching it only buys time. A siding consultation takes about an hour. We look at the whole house, talk through colors and styles, and give you the price. When the new siding goes up, the old siding goes away with us.
+When it's worn out, you see it: faded or chalky panels, cracks, warped or melted spots, pieces the wind keeps loosening. What you don't see is the wall behind it, where gaps let in drafts and water.
+
+We'll tell you straight whether yours has years left or is failing. If it was put up badly in the first place, patching it only buys time.
+
+A siding consultation takes about an hour. We look at the whole house, talk through colors and styles, and give you the price. When the new siding goes up, the old siding leaves with us.
 
 [See vinyl siding →](/vinyl-siding-wichita-ks/)
 
@@ -47,18 +61,26 @@ We'll tell you which kind of siding you have. Some only needs a few repairs and 
 
 ## Soffit and Fascia
 
-Soffit and fascia are the boards under and along the edge of your roof. When they go soft or start pulling away, water gets behind the gutters, and birds and squirrels find a way into the attic. We replace them along with your siding, so the whole edge of the house matches the new walls.
+Soffit and fascia are the boards under and along the edge of your roof. When they go soft or pull away, water gets behind the gutters and critters find a way into the attic.
+
+We replace them along with your siding, so the whole edge of the house matches the new walls.
 
 ## Sliding Patio Doors
 
-An old sliding door is usually the leakiest opening in the house. The rollers wear out, the track bends, and the seal where the two panels meet stops sealing. You end up shoving the door open with your shoulder and feeling the draft all winter. A new slider glides on new rollers and seals tight when it's closed. We install it on its own or alongside your new windows, so the glass and frames match.
+An old sliding door is usually the leakiest opening in the house. The rollers wear out, the track bends, and the seal where the panels meet stops sealing.
+
+You end up shoving it open with your shoulder and feeling the draft all winter. A new slider glides on new rollers and seals tight when it's closed.
+
+We install it on its own or with your new windows, so the glass and frames match.
 
 > "I now can open my sliding glass door with 1 finger instead of putting my whole body in it."
 > — Karla S.
 
 ## One Project or One at a Time
 
-Windows and siding meet at the trim around every opening. Do them together, and the trim and caulk get finished once and the colors are chosen together. You also deal with one company for the whole wall. If the budget says windows this year and siding next year, that works too. Plenty of our customers do it in that order, and we'll keep the plan in mind so the second project fits the first.
+Windows and siding meet at the trim around every opening. Do them together and the trim and caulk get finished once, the colors are chosen together, and one company handles the whole wall.
+
+If the budget says windows this year and siding next year, that works too. Plenty of our customers do it in that order, and we'll plan so the second project fits the first.
 
 > "I absolutely love my new windows, the guys were awesome, very professional and courteous. answered all my questions. I still love my windows every time I look at my house, Its beautiful. I have new siding and it really made my home beautiful, it's quieter, and is staying so much cooler."
 > — Melinda D.
