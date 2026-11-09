@@ -1,0 +1,260 @@
+{
+  "kind": "google-review-pull",
+  "version": 1,
+  "slug": "flawless-roofing",
+  "place": {
+    "name": "Flawless Roofing Co",
+    "placeId": "ChIJTzDCYPrxuocRXr_-RD-j0cM",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Flawless%20Roofing%20Co&query_place_id=ChIJTzDCYPrxuocRXr_-RD-j0cM",
+    "address": "928 S Broadway, Wichita, KS 67211",
+    "phone": "(316) 730-0301",
+    "rating": 4.6,
+    "totalReviewCount": 26
+  },
+  "pulledAt": "2026-11-09T12:51:51.325Z",
+  "requestedMax": 100,
+  "reviews": [
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21Ga1NsQkhXWGxKVFdsamFYbEpOakpwTFVKaFJVRRAB",
+      "reviewer": "Fernando E.",
+      "rating": 5,
+      "text": "Thank you for your service, amazing job",
+      "publishedAt": "2026-10-20T19:01:46.631Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21Ga1NsQkhXWGxKVFdsamFYbEpOakpwTFVKaFJVRRAB!2m1!1s0x0:0xc3d1a33f44febf5e!3m1!1s2@1:CAIQACodChtycF9oOmFkSlBHWXlJTWljaXlJNjJpLUJhRUE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pSTVQydGlSbVY0TTFOalNHbFhlVGRmY0d4WU0wRRAB",
+      "reviewer": "Jamie S.",
+      "rating": 2,
+      "text": "No follow through, lack of communication, mediocre work",
+      "publishedAt": "2026-06-17T16:14:25.513Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pSTVQydGlSbVY0TTFOalNHbFhlVGRmY0d4WU0wRRAB!2m1!1s0x0:0xc3d1a33f44febf5e!3m1!1s2@1:CAIQACodChtycF9oOjRMT2tiRmV4M1NjSGlXeTdfcGxYM0E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tobExVMXNMVWhwZFdobmFYbGZOM05LVG5WMVJsRRAB",
+      "reviewer": "Matt S.",
+      "rating": 1,
+      "text": "Rude \"sales professionals\" that won't quit calling. Would love under a tarp before I let an unprofessional business like this near my house",
+      "publishedAt": "2026-05-29T18:57:28.794Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tobExVMXNMVWhwZFdobmFYbGZOM05LVG5WMVJsRRAB!2m1!1s0x0:0xc3d1a33f44febf5e!3m1!1s2@1:CAIQACodChtycF9oOkhlLU1sLUhpdWhnaXlfN3NKTnV1RlE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xaUVJtTjFRVFJaYm10cGJuUlVkbFpZZFZOM1pYYxAB",
+      "reviewer": "Whitney",
+      "rating": 1,
+      "text": "Repeated spam phone calls",
+      "publishedAt": "2026-05-19T20:58:51.871Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xaUVJtTjFRVFJaYm10cGJuUlVkbFpZZFZOM1pYYxAB!2m1!1s0x0:0xc3d1a33f44febf5e!3m1!1s2@1:CAIQACodChtycF9oOlZQRmN1QTRZbmtpbnRUdlZYdVN3ZXc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pab05WZElaa1p0U2xWSGNUVkVkekpOV0ZwWFFtYxAB",
+      "reviewer": "Jamie W.",
+      "rating": 5,
+      "text": "Amazing job start to finish! Ravi is great to work with! Very professional! We have the nicest looking roof on the block and it completely transformed the look of our house!",
+      "publishedAt": "2026-05-16T02:09:20.104Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pab05WZElaa1p0U2xWSGNUVkVkekpOV0ZwWFFtYxAB!2m1!1s0x0:0xc3d1a33f44febf5e!3m1!1s2@1:CAIQACodChtycF9oOjZoNVdIZkZtSlVHcTVEdzJNWFpXQmc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT214TVlrbE1WM0p4ZUZWdFVXRTRXbXh6UzB4VGQzYxAB",
+      "reviewer": "Sean P.",
+      "rating": 5,
+      "text": "Flawless roofing and construction was awesome! They helped with every step of the way to get my roof replaced. They answered any questions I had. They were easy to talk to and get ahold of. They gave me some sweet upgrades that helped me save money on my home insurance. I highly recommend them!",
+      "publishedAt": "2025-08-30T22:15:27.052Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT214TVlrbE1WM0p4ZUZWdFVXRTRXbXh6UzB4VGQzYxAB!2m1!1s0x0:0xc3d1a33f44febf5e!3m1!1s2@1:CAIQACodChtycF9oOmxMYklMV3JxeFVtUWE4WmxzS0xTd3c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21wUmVYZ3lVbTVzZVc1RVEzbGFjMUY2V0VvellWRRAB",
+      "reviewer": "Deanna",
+      "rating": 5,
+      "text": "Great job!! Easy to work with and completed in a day!!",
+      "publishedAt": "2025-08-28T01:41:16.437Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21wUmVYZ3lVbTVzZVc1RVEzbGFjMUY2V0VvellWRRAB!2m1!1s0x0:0xc3d1a33f44febf5e!3m1!1s2@1:CAIQACodChtycF9oOmpReXgyUm5seW5EQ3lac1F6WEozYVE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2kxeU0wWkpWbWMyUm5rMWJYVkZkRm8yTTJkd1NVRRAB",
+      "reviewer": "Mariela B.",
+      "rating": 5,
+      "text": "We upgraded to fiber cement siding, and the difference is incredible. Flawless did an amazing job from start to finish—Frisco neighbors already asking who did it!",
+      "publishedAt": "2025-08-02T13:36:03.809Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2kxeU0wWkpWbWMyUm5rMWJYVkZkRm8yTTJkd1NVRRAB!2m1!1s0x0:0xc3d1a33f44febf5e!3m1!1s2@1:CAIQACodChtycF9oOi1yM0ZJVmc2Rnk1bXVFdFo2M2dwSUE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VOLUtoZVhfOC11N0V3EAE",
+      "reviewer": "Jordan T.",
+      "rating": 5,
+      "text": "I had a roof leak that was going into my daughter’s closet. Ravi was out same day and offered to patch it for free with the incoming storm so the damage wouldn’t get worse! So helpful and informative. I would’ve been happy to pay for the tarp job but he insisted. Highly recommend!",
+      "publishedAt": "2025-05-28T23:41:34.165Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VOLUtoZVhfOC11N0V3EAE!2m1!1s0x0:0xc3d1a33f44febf5e!3m1!1s2@1:CIHM0ogKEN-KheX_8-u7Ew%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VLNjZsTDZ0aDVpYm9nRRAB",
+      "reviewer": "Joseph I.",
+      "rating": 5,
+      "text": "Super Nice guy, very prompt and professional. Helped our Aunt get her roof replaced and our neighbor. All excellent experiences and results!",
+      "publishedAt": "2025-05-27T14:56:02.584Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VLNjZsTDZ0aDVpYm9nRRAB!2m1!1s0x0:0xc3d1a33f44febf5e!3m1!1s2@1:CIHM0ogKEK66lL6th5ibogE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VOYXE4TjNia0tpQ0JBEAE",
+      "reviewer": "Bren C.",
+      "rating": 5,
+      "text": "What a experience.  So happy with our roof. His crew were top notch. Cleaned up everything before they left. You could not  tell they had been here.  Our roof is beautiful more than we expected. You need a new roof Flawless is the people to call. Licensed in Hutchinson and Wichita areas.",
+      "publishedAt": "2025-05-19T21:29:22.163Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VOYXE4TjNia0tpQ0JBEAE!2m1!1s0x0:0xc3d1a33f44febf5e!3m1!1s2@1:CIHM0ogKENaq8N3bkKiCBA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VNREh2by13MkstYTBnRRAB",
+      "reviewer": "Diane J.",
+      "rating": 5,
+      "text": "Being a single woman, finding someone who does what they say & not charge you more $ is extremely limited. I hired Ravi to replace my siding on my house & a detached garage & they showed up on time daily & didn’t take a day off till the job was done & it looks amazing! Definitely would not hesitate to hire them on any future projects! Thanks Ravi for an amazing experience‼️",
+      "publishedAt": "2025-05-19T14:58:11.036Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VNREh2by13MkstYTBnRRAB!2m1!1s0x0:0xc3d1a33f44febf5e!3m1!1s2@1:CIHM0ogKEMDHvo-w2K-a0gE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnTURvdnRQbVd3EAE",
+      "reviewer": "JayWalk",
+      "rating": 5,
+      "text": "I had a great experience with Flawless Roofing. Ravi went above and beyond for me. He made sure that I was informed of what was going to be done to my house and even helped with the insurance claim. Flawless Roofing was also very fast. They had my roof completely done in 1 day. It looks amazing! I'd recommend Flawless Roofing to anyone looking to replace their roof. Fast and affordable!",
+      "publishedAt": "2025-04-25T11:00:28.654Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTURvdnRQbVd3EAE!2m1!1s0x0:0xc3d1a33f44febf5e!3m1!1s2@1:CIHM0ogKEICAgMDovtPmWw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnTUNBbkpHa0FnEAE",
+      "reviewer": "Matt S.",
+      "rating": 5,
+      "text": "Amazing experience from free estimate to project completion. Ravi has been a pleasure to work with. Flawless is top notch! If you want quality products and workmanship, give them a call. Best decision I’ve made! Highly recommend this company if you want a knowledgable and professional service. I love my new Roof and gutters!",
+      "publishedAt": "2025-01-30T05:06:50.277Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTUNBbkpHa0FnEAE!2m1!1s0x0:0xc3d1a33f44febf5e!3m1!1s2@1:CIHM0ogKEICAgMCAnJGkAg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUR2X3VycXZ3RRAB",
+      "reviewer": "Kiet H.",
+      "rating": 5,
+      "text": "Flawless roofing co is the best we called them out to look at our roof and they gave us the best option  and right after that they came delivered materials and roofed it the following day. Ravi the owner is a superstar",
+      "publishedAt": "2024-12-21T00:02:26.085Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR2X3VycXZ3RRAB!2m1!1s0x0:0xc3d1a33f44febf5e!3m1!1s2@1:CIHM0ogKEICAgIDv_urqvwE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUN2MXZldTJBRRAB",
+      "reviewer": "Dhaval B.",
+      "rating": 5,
+      "text": "Very courteous and professional.. came and jnspected my roof and got it fixed in least then a week!!!!<br>Definitely recommended!!!!",
+      "publishedAt": "2024-12-10T20:15:54.961Z",
+      "ownerResponse": "Thank you so much sir it was our pleasure we got a chance to work on your home and could make your home look flawless, appreciate it. Thank you",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN2MXZldTJBRRAB!2m1!1s0x0:0xc3d1a33f44febf5e!3m1!1s2@1:CIHM0ogKEICAgICv1veu2AE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUN2cHNHS2RREAE",
+      "reviewer": "DIYNINJAGUY",
+      "rating": 5,
+      "text": "Ravi and his team did a phenomenal job on our roof and gutters, greatly improving the look of our home!  He knows his stuff when it comes to roofing, including how to navigate the insurance claim process to get the maximum amount possible.  Due to the size of our roof and the shorter daylight hours, it did end up taking about two days on the roof and a few extra days to have the gutters installed, but this is to be expected and the end product is well worth it.  Ravi doesn't skimp by using cheap materials either; instead, he went the extra mile to install quality underlayment, a beautiful 50-year shingle, and even wider gutter downspouts for better water runoff management.  If you're looking for a roofing contractor who you can trust to deliver, Ravi and his guys at Flawless Roofing and Construction will get you taken care of.",
+      "publishedAt": "2024-12-10T15:33:50.926Z",
+      "ownerResponse": "Thank you sir I appreciate your kind we always love to take care of our home owners and provide them with the best roofing system possible so your house looks the best from the neighborhood. Thank you.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN2cHNHS2RREAE!2m1!1s0x0:0xc3d1a33f44febf5e!3m1!1s2@1:CIHM0ogKEICAgICvpsGKdQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUN2eXJMSnF3RRAB",
+      "reviewer": "Robert H.",
+      "rating": 5,
+      "text": "Ravi is the best in the business! Makes every accommodation and goes the extra mile to make sure everything goes right and fights for you!! Highly recommend Flawless Roofing Co!! Cant say enough good things!",
+      "publishedAt": "2024-12-09T23:29:25.540Z",
+      "ownerResponse": "Then your sir appreciate you’re great words, was our pleasure to work on your home i am glad we could help you in every single way, thanks for positive comments.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN2eXJMSnF3RRAB!2m1!1s0x0:0xc3d1a33f44febf5e!3m1!1s2@1:CIHM0ogKEICAgICvyrLJqwE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUN2eXJUVmJBEAE",
+      "reviewer": "Stephanie",
+      "rating": 5,
+      "text": "Ravi was amazing, he helped me inspect our roof then after helped me file a claim on our roof and met the insurance adjuster and got it approved and they came and roofed our house in one day, highly recommend flawless roofing co and his team our roof looks excellent, also gave us free upgrade to 50 year impact resistant shingles.",
+      "publishedAt": "2024-12-09T22:48:51.101Z",
+      "ownerResponse": "Thank you so much, I’m glad we could full fill all your roofing needs and make your home look flawless again.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN2eXJUVmJBEAE!2m1!1s0x0:0xc3d1a33f44febf5e!3m1!1s2@1:CIHM0ogKEICAgICvyrTVbA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUN2eXVTX2N3EAE",
+      "reviewer": "Mahesh R.",
+      "rating": 5,
+      "text": "Great Company & person to work with . Did excellent job. on our new roof New gutter<br>Finished in one day highly recommend for other people",
+      "publishedAt": "2024-12-09T22:42:00.746Z",
+      "ownerResponse": "Thank you sir appreciate your comment I’m glad we could make your home look flawless again",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN2eXVTX2N3EAE!2m1!1s0x0:0xc3d1a33f44febf5e!3m1!1s2@1:CIHM0ogKEICAgICvyuS_cw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUN2eW9pOUJ3EAE",
+      "reviewer": "David C.",
+      "rating": 5,
+      "text": "They have done a few roofs. For me will keep using them high end work always on time",
+      "publishedAt": "2024-12-09T22:21:31.791Z",
+      "ownerResponse": "Thank you sir I highly appreciate all the work and for choosing us doing your roofs and making them look flawless again",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN2eW9pOUJ3EAE!2m1!1s0x0:0xc3d1a33f44febf5e!3m1!1s2@1:CIHM0ogKEICAgICvyoi9Bw%7C%7C?hl=en-US",
+      "language": "en"
+    }
+  ],
+  "ratingOnly": [
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT214M2NsVTRSamRCWjBGMExVbHRSRzV4UWpkMmJIYxAB",
+      "reviewer": "Mike M.",
+      "rating": 5,
+      "publishedAt": "2026-04-15T17:26:22.067Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2w5M2VIbFFhRFl6WjFjNVVtUmFWelZaYW1zMWIwRRAB",
+      "reviewer": "Flawless C.",
+      "rating": 5,
+      "publishedAt": "2025-08-31T23:47:53.438Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUN2eXZLRHZBRRAB",
+      "reviewer": "Rob",
+      "rating": 5,
+      "publishedAt": "2024-12-09T23:32:19.120Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUN2eXNTLW53RRAB",
+      "reviewer": "Jignesh B.",
+      "rating": 5,
+      "publishedAt": "2024-12-09T22:36:12.101Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUN2eXNTazdBRRAB",
+      "reviewer": "Marcus B.",
+      "rating": 5,
+      "publishedAt": "2024-12-09T22:35:33.990Z"
+    }
+  ]
+}
