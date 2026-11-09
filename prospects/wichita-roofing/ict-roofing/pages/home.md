@@ -2,7 +2,7 @@
 
 # Roofing Company in Wichita, KS — ICT Roofing & Exteriors
 
-I'm Juan. My crew replaces and repairs roofs in Wichita, and when hail hits, Brady and I deal with the insurance company alongside you. Call or book a free inspection and we'll look at your roof before you decide anything.
+I'm Juan. My crew replaces and repairs roofs in Wichita, and when hail hits, Brady, Arturo and I deal with the insurance company alongside you. Call or book a free inspection and we'll look at your roof before you decide anything.
 
 **Buttons:** Call (316) 796-6722 | Get a Free Inspection
 
@@ -13,7 +13,9 @@ I'm Juan. My crew replaces and repairs roofs in Wichita, and when hail hits, Bra
 
 The storm passes, the roof looks fine from the driveway, and your phone fills up with door-knockers. Then comes the part nobody explains: finding the damage, filing the claim, meeting the adjuster, getting the paperwork in on time.
 
-That's the part we do with you. The inspection is free. We photograph what we find, and we tell you plainly whether there's a claim worth filing.
+That's the part we do with you, and we try to start early. I met Carl W. at his house the morning after the September 2025 hailstorm. A drone over his roof showed severe hail damage, and I pointed out that his gutters had taken it too.
+
+The inspection is free. We photograph what we find, and we tell you plainly whether there's a claim worth filing.
 
 If there is, Brady or Arturo meets your adjuster at the house. You don't stand on the lawn trying to argue roofing with a stranger.
 
@@ -76,21 +78,21 @@ The trick with a leak is that the stain on your ceiling is rarely where the wate
 ## Gutters, Siding and More
 
 - **Gutters:** replaced along with your roof when hail damaged both.
-- **Siding:** exterior work beyond the roof.
+- **Siding:** the same storm that dents gutters can crack siding, and we fix that too.
 - **Shake, metal and composite roofs:** we work with every roofing system.
 - **Commercial roofing:** maintenance, repair and replacement for commercial buildings.
-- **Free roof inspections:** for any roof, any time.
+- **Free roof inspections:** for any roof, whether or not you end up filing a claim.
 
 ## Who You'll Deal With
 
 I started this company, and I'm on your roof. Brady is my right-hand man, and he handles insurance claims and meets your adjuster. Arturo is our Project Manager and coordinates the work.
 
-We're a local company serving Wichita homeowners. Call the main line and ask for whoever you need.
+We're a local company serving Wichita homeowners. Call the main line at (316) 796-6722, or reach Arturo directly at (316) 807-8848.
 
 ## Questions Before You Call
 
 **Is the inspection really free?**
-Yes. We offer free inspections.
+Yes. We get on the roof or put a drone over it, photograph what's there and walk you through it. If what you thought was damage is just normal wear, we'll tell you that and you owe nothing.
 
 **Do I have to file an insurance claim?**
 No. It's your policy and your decision. We'll tell you what we find, and if the damage doesn't justify a claim, we'll say so.

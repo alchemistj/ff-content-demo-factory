@@ -15,7 +15,7 @@ Water is sneaky. It runs along the decking and down a rafter before it ever drip
 
 That's why one roofer says you need a new roof, the next says a patch, and a third blames the flashing. They're guessing from the ground.
 
-We look first. We get into the attic and up on the roof, find where the water is really coming in, and tell you what it will take to stop it. That's how Anthony found Brant C.'s leak at the chimney chase, not the shingles.
+We look first. We get into the attic and up on the roof, find where the water is really coming in, and tell you what it will take to stop it. Often the water is not coming from where the stain is.
 
 Sometimes that's a whole new roof. Sometimes it's a chimney chase, a vent boot or a strip of flashing that costs a fraction as much.
 
