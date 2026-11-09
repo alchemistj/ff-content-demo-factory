@@ -2,7 +2,7 @@
 
 # Recurring House Cleaning in Wichita, KS
 
-I'm Mida. Recurring cleaning is most of what we do, and it's the reason families have stayed with us for 8 and 16 years. We keep your house at the same standard every visit, and I tell you when the ladies will arrive. Call me to set up your plan.
+I'm Mida. Recurring cleaning is most of what we do, and it's why families have stayed with us for 8 and 16 years. Every visit holds the same standard, and I tell you when the ladies will arrive. Call me to set up your plan.
 
 **Buttons:** Call (316) 295-3513 | Request a Quote
 
@@ -39,9 +39,9 @@ Extras such as an oven or refrigerator interior can be added on request.
 
 This is where a recurring service wins or loses. Everyone does a good first visit. The test is whether visit thirty looks like visit one.
 
-Crews aren't identical from week to week, because people have days off and schedules change. At Mida's the standard doesn't change with the crew, and that's the part we work on.
+Crews aren't identical from week to week, because people have days off and schedules change. The standard is what we hold constant, so the kitchen and bathrooms are done the same way no matter who walks in.
 
-One of our long-time families says it plainly, and I'm glad they do. Their review of us is on the [home page](/), and it's worth reading before you call.
+A family that has been with us since the early years doesn't get one crew for life. They get a house that looks right whichever crew comes. See [why families stay](/) for what some of them say.
 
 ## You Know When We're Coming
 
@@ -56,9 +56,9 @@ That is what you're paying for as much as the scrubbing: a clean house, and no r
 
 ## What Staying Looks Like
 
-Some of our families are in their eighth year with us. One has been with us 16 years. They didn't sign a contract that kept them. They stayed because it kept working.
+Some of our families are in their eighth year with us. One has been with us 16.
 
-I'd rather earn your next year than lock you into it, and I don't think a cleaning service you're stuck with is worth much.
+Years like that don't come from a clever offer. They come from a house that was clean last month and the month before, and a person who answers when you call.
 
 ## Questions Before You Start
 
@@ -66,7 +66,7 @@ I'd rather earn your next year than lock you into it, and I don't think a cleani
 We offer weekly service and plans built around your schedule. Tell me what you have in mind and we'll work out what fits.
 
 **What does it cost?**
-It depends on the size of the house and how often we come. I don't post a price list because a house isn't a menu item. Call and I'll give you a real number for yours.
+It depends on the size of the house and how often we come. There's no price list on our site, so call and I'll give you a real number for your house.
 
 **Will it be the same ladies each time?**
 Crews can change over the years, and the standard stays put. Ask me about your own household and I'll tell you what to expect.
