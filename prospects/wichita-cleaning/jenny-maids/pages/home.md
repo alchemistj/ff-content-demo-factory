@@ -37,13 +37,15 @@ My deep clean is the most popular thing I do, and it is where I recommend new cl
 
 There is a practical reason. A regular clean keeps a house where it is. A deep clean gets it to the place worth keeping, so every visit after that starts from clean instead of catching up.
 
-It takes time, and I take it. You see the difference in the places a quick clean skips.
+It takes time, and I take it. You see the difference in the places a quick clean skips, like door frames, woodwork and the tops of cabinets.
 
 [See deep cleaning →](/deep-cleaning-wichita-ks/)
 
 ## Then Keep It That Way
 
-Once the house is where you want it, a schedule keeps it there. Weekly is the most thorough upkeep. Bi-weekly is the most popular. Monthly is light maintenance between bigger cleans.
+Once the house is where you want it, a schedule keeps it there.
+
+Weekly is the most thorough upkeep. Bi-weekly is the most popular. Monthly is light maintenance between bigger cleans.
 
 Every recurring plan includes a discount as a thank-you for staying with me, and weekly gets the biggest one. There are no contracts.
 
@@ -70,6 +72,14 @@ If your move is coming up fast, call and tell me the date.
 
 > "I had already moved out. While I was checking other providers Jenny Maid's came up so I called. Jenny was so sympathetic and made special accommodations to come early the next morning! Jenny.and her assistant did an absolutely amazing job! I have never seen someone work as hard as Jenny did, and the job was done impeccably!"
 > — Glenda T.
+
+## Cleaning When You Are Busy
+
+Most people who call me are not behind because they don't care. They are working, raising kids, caring for a parent, or can't do the work anymore.
+
+A clean house is one less thing on your mind. You come home and it is done.
+
+Whether you want a single clean before guests arrive or a standing schedule, tell me which and we'll start there.
 
 ## Other Cleaning I Do
 

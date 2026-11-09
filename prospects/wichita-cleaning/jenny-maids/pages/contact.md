@@ -21,7 +21,7 @@ Jenny Maid's, 325 N Meridian Ave, Wichita, KS 67203.
 - Pets in the house
 - Your move date, if it is a move
 
-New customers can ask about the new customer discount.
+New customers can ask about the new customer discount. If you aren't sure what you need, tell me about your house and we'll work it out.
 
 > "Jenny Maids was able to fit me right into their schedule. They did an absolute lovely job. My house looks amazing."
 > — Leighann D.

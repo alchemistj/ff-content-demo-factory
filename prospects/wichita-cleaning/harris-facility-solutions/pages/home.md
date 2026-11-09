@@ -17,10 +17,20 @@ The trash cans weren't emptied. The crew changed again and nobody knows where th
 
 Big vendors have the people but hand you to a manager you've never met. Small ones answer the phone but run out of staff the week someone is out. We set out to be neither.
 
-You get supervisors who know your building and a sales manager who has spent more than twelve years in janitorial work. And if something is wrong, you call the same two brothers who run the company.
+You get supervisors, project managers and a sales manager, Casey Coates, who has spent more than twelve years in janitorial work. And if something is wrong, the people at the top of the company are two brothers, Jordan and Lance Harris.
 
 > "Very capable, careful family run business. Love doing business with them. I have recommended them in the past & will in the future."
 > — Cheri H.
+
+## Why a Changing Crew Misses Rooms
+
+Most missed rooms aren't laziness. They happen when a new person walks into a building nobody told them about.
+
+A checklist says "restrooms, trash, floors." It doesn't say that the small conference room is used every Thursday, that the restroom by the lobby is the one clients use, or that the back office has to be locked when you leave.
+
+That knowledge lives in people, and every time the crew turns over it walks out the door. A building that gets a new crew every month is learning its cleaners from scratch every month.
+
+Cleaning companies lose people. What matters is whether someone in charge notices a gap and fills it before you do. That is the job of a supervisor, and it is the reason we staff supervisors at all.
 
 ## One Building, One Vacuum, One Employee
 
@@ -28,12 +38,18 @@ How we got here explains how we work.
 
 We started in 2015 with one building. Jordan bought a vacuum cleaner for $45 with money from his unemployment check, and he was the only employee.
 
-That is why we still run the company the way we did on day one. Lance, who is Jordan's brother and our director of operations, and Jordan were both born and raised in Wichita. Both of us still answer the phone and still show up.
+When you are the only employee, there is nobody to blame. If a room is missed, you missed it, and you go back. That is how we still think about every account, even though the company is a lot larger now, with supervisors, project managers, an office team and crews.
 
-The company is a lot larger now, with supervisors, project managers, an office team and crews. Being the owner just means the problem lands on us first.
+Lance, who is Jordan's brother and our director of operations, and Jordan were both born and raised in Wichita. Being the owner just means the problem lands on us first.
 
-> "He came out on short notice to do a move-out clean for me for my apartment. Since he was short-staffed at the time (his employees were on other jobs) he came out and did it himself. He did it very well."
+Why that matters to you: a vendor with no owner nearby passes a complaint from the crew to the supervisor to the office and back, and nobody holds it. When the owners' names are on the company, the complaint has somewhere to stop.
+
+Here is what that looks like from one of our earliest reviews. In 2015 a customer needed a move-out clean on short notice. The crew was on other jobs, so Jordan did it himself.
+
+> "Since he was short-staffed at the time (his employees were on other jobs) he came out and did it himself. He did it very well."
 > — Tamara L.
+
+That was an apartment, not an office, and it was years ago. The point is what the owner does when there aren't enough hands.
 
 ## Office Cleaning
 
