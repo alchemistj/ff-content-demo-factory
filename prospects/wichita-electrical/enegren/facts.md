@@ -108,6 +108,20 @@ Homepage, service cards: "Commercial Electrical Services" and "Residential Elect
 - Gallery intro: "We have completed a wide variety of projects from new construction to renovations, service upgrades, indoor and outdoor lighting, repairs and maintenance." (homepage gallery text). Company's words.
 - Copyright: "Copyright © 2026 Enegren Electric – OnePress theme by FameThemes" (footer, all pages).
 
+## Quote button
+- "Get a Free Quote" button: the site's hero button reads "Get a Free Quote" (hidden on the live homepage, see audit.md problem 1), and the residential and commercial pages have a "FREE QUOTE" button linking to https://enegrenelectric.com/#contact (audit.md problem 3, checked 2026-11-09). Their own label, used as our button label only. Nothing is said anywhere about estimates being free beyond that label, so page copy does not promise free estimates in prose.
+
+## From reviews
+Practices that two or more five-star reviews describe (reviews.json, 93-review Google pull). These are customers' words, not confirmed by the company.
+- Sends the electrician's name and a photo ahead of the visit: Catie M. ("sent me the name of the technician along with a picture"), Brenda B. ("getting a picture of him ahead of time so I knew who would be at my door").
+- Cleans up after the job: Sean C. ("cleaned up after their work"), John D. ("cleaning up the mess after the job was done"), Tina A. ("clean up was great"), Nico C. ("superbly clean work").
+- Finds the cause quickly: Courtney S. ("identified the problem immediately"), Jeffrey F. ("quick to locate the problem"), Save T. (found the short and corrected the wiring), Doug B. ("quickly diagnosed the problem").
+- Explains the work in plain words: Kodjo E., Steve L., Michael K., Christina C., Maricar H., Rosalie G.
+- Gives options and lets the customer choose: Michael K. ("gave me options, and let me choose"), Nathan R. ("multiple options to choose from"), Joshua H. ("walked through different ideas on how to proceed").
+- Customers name Marcus, Trevor, Tyler and Derek in dozens of reviews, so "you will hear their names" is supported.
+
+Single-review items, NOT claimed in our voice (only inside that review's quote): asking for an electrician by name (Patricia J.), explaining how they charge (Brenda B.), labeling the panel and patching the wall (Nathan R.), showing the work (Darwin R.), warranty (Kevin S.), "Marcus, the owner" (Andres M., not used; owner unconfirmed).
+
 ## Open questions for the onboarding call
 1. **License number:** The site title says "Licensed Electrician" and the van photo shows "LIC.#10825". No public MABCD lookup was found. Ask Marcus Saucedo or the office for the license holder name, type (electrical contractor), number and status. Verify with MABCD (316-660-1840) or the license card.
 2. **Owner names:** Who owns the business? The site says "family-owned" but names no owner. Check the Kansas Secretary of State entity record (sos.ks.gov could not be reached from this session) and ask Josh to confirm the owners' names for the demo.

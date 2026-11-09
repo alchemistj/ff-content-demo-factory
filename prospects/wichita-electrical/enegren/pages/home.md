@@ -2,35 +2,35 @@
 
 # Electrical Contractor in Wichita, KS — Enegren Electric
 
-We're a licensed, family-owned electrical company serving homes and businesses across the Wichita area. When you call, a named electrician comes out, finds the problem, shows you what they found and tells you your options. Call us or ask for a free quote.
+We're a family-owned electrical company in West Wichita, doing business in Kansas since 1989. You'll know who's coming to your door: Marcus, Trevor or Tyler finds the cause, walks you through it and gives you your options. Call us, or send a quote request.
 
 **Buttons:** Call (316) 613-4400 | Get a Free Quote
 
 > "As a woman home alone, I especially loved that they sent me the name of the technician along with a picture. They didn't give me a 6 hour time frame, literally had a scheduled time which was amazing! Tyler was incredibly respectful, knowledgeable and friendly. He explained things to me and was able to fix day off."
 > — Catie M.
 
-## An Electrician You Can Ask for by Name
+## You Know Who's Coming to Your Door
 
 Most of your wiring is behind the walls. You can't see it, so you're trusting whoever walks in the door.
 
-That's why we put a name on the work.
+That's why we put a name on the work. Before the visit, we send you the electrician's name and a photo, so you know who to expect.
 
 Marcus Saucedo is our master electrician. Trevor Bradley is a residential journeyman electrician, and Tyler Powell is an electrician. They're the people who come to your house.
 
-Enegren has been doing business in Kansas since 1989, and we're still a family-owned company. Our customers know our electricians by first name, and some ask for one specifically.
+Enegren has been doing business in Kansas since 1989, and we're still a family-owned company. The names above turn up all through our reviews, because the people who've had them in their homes remember who came.
 
 > "Our second round with Trevor.  We asked for him specifically. He is so friendly and helpful and knows what he is doing.  He is on our "Definitely ask for list!''"
 > — Patricia J.
 
-## We Show You What We Found
+## We Find the Cause and Walk You Through It
 
 A flickering light or a dead outlet tells you something is wrong. It doesn't tell you what, and a lot of electrical work is a guess until somebody opens the box.
 
-So we find the cause first, then show you what it is, explain it in plain words and give you options before anything gets fixed. You decide how to go.
+So we find the cause first, then walk you through what it is in plain words and give you options before anything gets fixed. You decide how to go.
 
 You should leave the conversation understanding your own house a little better than when we arrived. A good electrician makes the wiring less of a mystery, not more.
 
-If we find something that needs a bigger fix, we tell you what it is and why, and we leave the decision to you.
+If we find something that needs a bigger fix, we tell you what it is and why, and the decision stays yours.
 
 > "I couldn’t be happier! Marcus was professional, fast and on task! Everything was done to perfection and I was shown the work in detail!"
 > — Darwin R.
@@ -41,11 +41,9 @@ People call us about what a house does that doesn't feel right. A breaker trips 
 
 Lights flicker, or a room where the power just quit.
 
-
-
 A breaker trips for one of three reasons: too much load on the circuit, a short, or a ground fault. A warm outlet is usually a loose connection, which is how electrical fires start. These are the signs we take seriously, and we find the cause instead of resetting and hoping.
 
-We troubleshoot the problem, fix it and clean up after ourselves. If the repair turns up something bigger, we show you that too.
+We troubleshoot the problem, fix it and clean up after ourselves. If the repair turns up something bigger, we tell you that too.
 
 It also helps to call early. A warm outlet or a breaker that trips every few days is easier and cheaper to deal with before it turns into a dead circuit.
 
@@ -57,17 +55,15 @@ An old breaker box is easy to ignore until something asks too much of it. A new 
 
 Some old panels are a safety problem on their own: fuse boxes, panels with rust or scorch marks, and brands known for breakers that fail to trip. We'll tell you straight whether yours is one of them or whether it has years left.
 
-When a panel does need to go, we replace it with a larger one and label every circuit so you can find the breaker you want.
+When a panel does need to go, we replace it with a larger one, usually with a permit, an inspection and the power company's help on the day.
 
 [See electrical panel upgrades →](/electrical-panel-upgrade-wichita-ks/)
 
 ## Lighting, Surge Protection and More
 
-A lot of our work makes a house nicer to live in: pendant lights, cabinet lighting, better light in the living room and bedroom, inside and out.
+Not every call is a problem. Some are a new pendant light, cabinet lighting, or better light in the living room, bedroom and kitchen, inside and out.
 
-Kansas storms are hard on wiring.
-
-We install whole house surge protection, so a lightning strike doesn't take your electronics with it.
+Kansas storms are hard on wiring. After a lightning strike, a whole house surge protector at the panel keeps the next one from taking your electronics with it. We install them.
 
 > "Marcus, Derek, and Tyler were a pleasure to work with!  We updated our living room, bedroom, and kitchen with new, and better, lighting.  I hunted down 5 different businesses, 3 returned quotes, and ultimately we went with Enegren Electric."
 > — Brad J.
@@ -101,10 +97,10 @@ We also serve Derby, Haysville, Newton, Goddard, Andover, Cheney, Garden Plain, 
 ## Questions Before You Call
 
 **Who will come to my house?**
-One of our electricians, and you'll know who. Marcus, Trevor and Tyler are the people you'll deal with, and you can ask for one by name.
+One of our electricians, and you'll know who before they arrive: we send the electrician's name and a photo ahead. Marcus Saucedo, Trevor Bradley and Tyler Powell are the people you'll deal with.
 
 **Will you explain what's wrong?**
-Yes. That's the point of the visit. We find the cause, show you, and walk you through the options in plain words.
+Yes. That's the point of the visit. We find the cause, walk you through it and lay out the options in plain words.
 
 **Do you work on businesses too?**
 Yes. We do commercial and residential electrical, from a single outlet to new construction.
@@ -119,4 +115,4 @@ Call (316) 613-4400, book online, or send us a quote request. Tell us what's hap
 
 Call and we'll talk through what you're seeing, then send one of our electricians out to look at it. Don't wait on a breaker that keeps tripping or an outlet that's warm to the touch.
 
-Call (316) 613-4400, or ask for a free quote.
+Call (316) 613-4400, or send a quote request.

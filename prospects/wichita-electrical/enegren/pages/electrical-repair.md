@@ -2,7 +2,7 @@
 
 # Electrical Repair in Wichita, KS — Enegren Electric
 
-A breaker that won't stay on, an outlet that's warm, a room with no power: you want the cause found, not the symptom reset. Enegren's electricians troubleshoot the problem, show you what it is and fix it. Call us and tell us what's happening.
+A breaker that won't stay on, an outlet that's warm, a room with no power: you want the cause found, not the symptom reset. Enegren's electricians troubleshoot the problem, explain what it is and fix it. Call us and tell us what's happening.
 
 **Buttons:** Call (316) 613-4400 | Get a Free Quote
 
@@ -33,12 +33,15 @@ We look at all of it, and we tell you which one you have.
 
 We find the cause first. Some of the problems we're called to are simple and fixed the same visit. Others turn up something bigger underneath, like old or damaged wiring that was never the real problem until now.
 
-When we find something bigger, we say so, show it to you and give you your options. You choose how far to go.
+When we find something bigger, we say so and give you your options. You choose how far to go.
 
 > "Enegrwn came out the same day and fixed my immediate problem and is scheduled to come out on Monday to bid the larger systemic issue. I was thrilled they came out the same day. I did not request that and certainly did not expect it."
 > — Shannon R.
 
-We explain how we charge before the work, so there are no surprises when it's done. When we're finished, we clean up.
+When we're finished, we clean up.
+
+> "They were earlier with the arrival time for the repairs and had let me know that. I appreciated getting a picture of him ahead of time so I knew who would be at my door. Trevor was friendly and professional and explained the way they charge for services, no surprises at the end."
+> — Brenda B.
 
 ## Power Out in One Room, or Half the House
 
@@ -85,4 +88,4 @@ If a repair shows that your panel is the problem, we also do [electrical panel u
 
 Tell us what you're seeing: what trips, what's warm, what's gone dark. We'll send one of our electricians to find the cause.
 
-Call (316) 613-4400, or ask for a free quote. If anything is hot, smells burnt or crackles, stop using it and call right away.
+Call (316) 613-4400, or send a quote request. If anything is hot, smells burnt or crackles, stop using it and call right away.

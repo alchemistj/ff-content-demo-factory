@@ -48,7 +48,6 @@ Here's the process in general terms, so you know what you're agreeing to.
 2. **A permit and an inspection.** Panel work is permitted and inspected by the city or county.
 3. **The power company.** The utility disconnects service at the start and reconnects it when the work passes.
 4. **The swap.** We install a new panel, often 200 amps. Sometimes the meter base or the service mast has to be replaced too.
-5. **Labels.** Every circuit is labeled, so the next person knows which breaker is which.
 
 Plan on the power being off for part of the day. It's usually one day of work.
 
@@ -81,4 +80,4 @@ The same goes for any circuit you know you want next, such as a dedicated line f
 
 Tell us what your panel looks like, what you want to add and what's been going wrong. We'll send an electrician to look.
 
-Call (316) 613-4400, or ask for a free quote. If you see scorch marks, smell burning or the panel is hot to the touch, call right away.
+Call (316) 613-4400, or send a quote request. If you see scorch marks, smell burning or the panel is hot to the touch, call right away.
