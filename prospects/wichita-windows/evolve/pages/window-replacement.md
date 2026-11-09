@@ -125,4 +125,4 @@ Yes, including low-to-no-interest options. Ask about it at your consultation.
 
 Call and one of us will come out, measure your windows, show you the product and give you a price, with no pressure to sign that day.
 
-Wichita: (316) 435-8009. Oklahoma City: (405) 363-2294. Monday to Friday, 9:00 AM to 5:00 PM.
+Wichita: (316) 435-8009. Oklahoma City: (405) 363-2294.
