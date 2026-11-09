@@ -1,6 +1,6 @@
 **Eyebrow:** Independent and local in Wichita
 
-# Insulation and Window Company in Wichita, KS — New Windows For America
+# Energy Efficiency Experts in Wichita, KS — New Windows For America
 
 We insulate Wichita houses, seal the air leaks, replace windows and install furnaces and air conditioners. Our crews tell you what they're doing while they do it, and they leave the house clean. Call us and tell us what's going on in yours.
 
@@ -15,7 +15,7 @@ A cold floor in January. An upstairs that never cools off in August. A furnace t
 
 Most people blame the windows, because the windows are the part you can see. But heat leaves a house through whatever part of it has the least in the way, and that is more often the attic, the floor or a gap around a pipe.
 
-That's why we're an insulation company and a window company, not one or the other. We can look at the whole house, tell you where it's losing comfort and fix that, whether it turns out to be the attic or the window.
+That's why we look at the whole house, not just one part of it. We tell you where it's losing comfort and fix what's actually leaking, whether it turns out to be the attic, the floor, an air leak, the windows or the furnace.
 
 ## Insulation
 

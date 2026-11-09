@@ -54,3 +54,4 @@ Home: Cary W., Shannon Z., Deanna T., Diana P., Virginia W. Insulation: Bruce F.
 
 ## Not supported, left out
 Free estimates, financing, any warranty (a 2019 one-star says one was not honored), window brand, licensing, owner name, crew names in our own voice, hours, address, email, response-time promises, price figures, sliding patio doors, whether insulation is offered outside the program (asked on the onboarding list, question 10).
+- 2026-11-09: Home H1 reframed from "Insulation and Window Company" to "Energy Efficiency Experts" (home owns the company-level keyword; service pages own Insulation and Window Replacement). Josh asked for it on 2026-11-09.
