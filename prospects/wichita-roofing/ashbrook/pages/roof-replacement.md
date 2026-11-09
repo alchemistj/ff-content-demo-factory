@@ -2,7 +2,7 @@
 
 # Roof Replacement in Wichita, KS — Ashbrook Roofing & Contracting
 
-When a roof is finished, you shouldn't have to sort out the claim, the crew and the schedule by yourself. I'm Andy, and I handle all three. Call me or request an estimate, and I'll tell you honestly whether the roof needs replacing.
+A roof that's worn across every slope, or beaten up by one storm, needs to come off. I'm Andy: I look at the roof myself, write the quote, work through the claim with you when there is one, and send the crew. Call me or request an estimate, and I'll tell you honestly whether yours needs replacing.
 
 **Buttons:** Call (316) 402-8470 | Request an Estimate
 
@@ -35,7 +35,7 @@ Before the crew leaves, the yard gets checked for nails and material.
 
 Roofs depend on the weather, and Kansas weather doesn't keep a schedule. A roof shouldn't be torn off ahead of rain.
 
-I watch the forecast. If the date has to move, I move it and let you know.
+I watch the forecast. If rain is coming, the date moves rather than the tear-off going ahead.
 
 > "We got rained out on the originally scheduled replacement date and he was able to quickly pivot to get my roof replaced in a matter of days. The crew also did great work and cleaned up great leaving no nails or material behind."
 > — Kyle W.
@@ -44,9 +44,11 @@ I watch the forecast. If the date has to move, I move it and let you know.
 
 When a storm is what finished your roof, a replacement comes with a claim. That means photos, an adjuster's visit and a scope of work, with paperwork in between.
 
-I document the roof and explain what I find in plain words. When the adjuster comes out, I'll be there if you want me there.
+I document the roof and explain what I find in plain words. I can meet the adjuster at the roof if you'd like.
 
-If the first answer looks short, I'll help you ask the insurance company to take a second look. It's your policy and your decision. I don't promise what an insurance company will pay, because no roofer can.
+A claim that comes back short of what the roof shows isn't always the last word.
+
+There's a process for asking the insurance company to look again, and I'll walk you through it. It's your policy and your decision. I don't promise what an insurance company will pay, because no roofer can.
 
 > "We had fought with our insurance company for nearly a year without any success. Andy worked with us and guided us through the process of requesting a reevaluation of our claim. He was available and responsive when we had questions throughout the process."
 > — Emily H.
@@ -55,7 +57,7 @@ If the first answer looks short, I'll help you ask the insurance company to take
 
 Sometimes the roof is the thing standing between you and a closing. An inspection turns it up, and suddenly you have days, not months.
 
-Call me with the date. I'll tell you what's realistic, and I'll work with your agent and the insurance company so the roof isn't the reason a sale falls apart.
+Call me with the date, and I'll tell you what's realistic before anything is scheduled. I work with agents and adjusters on these jobs, so the roof fits around the closing instead of the other way round.
 
 > "Andy showed up and inspected the roof to confirm and had it marked for the insurance photos within an hour of calling him. He worked with the adjuster and I had a new roof scheduled for the buyers before we closed that day."
 > — Steven A.
@@ -87,12 +89,8 @@ I look at the roof, then give you a price. You'll know what's in it and why.
 2. **You get a quote.** If there's a claim, we talk about how to start it and who does what.
 3. **We set a date.** I watch the weather so the job doesn't start ahead of rain.
 4. **The crew tears off the old roof.** The yard is protected first, and the deck gets checked.
-5. **The new roof goes on.** Many roofs are finished in a day. A big or complicated roof can take longer.
+5. **The new roof goes on.** A big or complicated roof takes longer than a simple one.
 6. **We clean up.** Nails and material are picked up before we go.
-
-## What Happens After Your Roof Is Done
-
-You'll have a clean yard and a roof you can walk out and look at. If something doesn't look right, call me, because I'm the one who answers for the job.
 
 ## Questions About Replacement
 

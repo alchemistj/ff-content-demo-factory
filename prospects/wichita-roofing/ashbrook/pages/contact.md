@@ -10,7 +10,7 @@ Tell me what's going on with your roof, whether it's a leak, a storm that just c
 
 **Phone:** (316) 402-8470. Call for an estimate, a repair or a question about your roof or your insurance claim.
 
-If I'm up on a roof and miss your call, leave a message with your name, your address and what you're seeing. That helps me call you back ready to help.
+If you'd rather put it in writing, use Request an Estimate and include your address and what you're seeing on the roof.
 
 > "Great communication and top notch customer service all around. Would highly recommend giving him a call for your next roofing job!"
 > — Tanner T.
@@ -23,7 +23,7 @@ Wichita, KS 67213
 
 I work on Wichita roofs. If you're outside the city, call and tell me where you are.
 
-If you're out of town, call anyway. I've handled roof jobs and the insurance side for owners who weren't home.
+If the house is here but you aren't, that doesn't have to hold up the roof. The look at the roof, the insurance paperwork and the work itself can go ahead while you're away.
 
 > "Andy and his team worked with me remotely, assisting with insurance information and inspection, then replacing the roof quickly."
 > — Beth L.

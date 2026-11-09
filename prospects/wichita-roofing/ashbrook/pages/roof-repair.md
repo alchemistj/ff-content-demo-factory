@@ -2,7 +2,7 @@
 
 # Roof Repair in Wichita, KS — Ashbrook Roofing & Contracting
 
-A few shingles blew off, or a leak showed up and you can't tell where it starts. I'm Andy, and I'll find where the water gets in and fix that, not just the spot on your ceiling. Call me or request an estimate, and I'll tell you straight whether it's a repair or something bigger.
+A few shingles blew off, or a leak showed up and you can't tell where it starts. I'm Andy, and I look for where the water gets in and fix that, not just the spot on your ceiling. Call me or request an estimate, and I'll tell you straight whether it's a repair or something bigger.
 
 **Buttons:** Call (316) 402-8470 | Request an Estimate
 
@@ -62,7 +62,7 @@ When replacement is the honest answer, here's how [a full roof replacement](/roo
 
 ## Storm Damage and Insurance
 
-If a storm caused the damage, the repair may be part of a claim. I'll tell you what I see on the roof and explain how the process works.
+If a storm caused the damage, the repair may be part of a claim. I'll tell you what I see on the roof, document it, and explain how the process works.
 
 I don't promise what an insurance company will pay, and I won't tell you to file a claim you don't need. It's your policy and your decision.
 
