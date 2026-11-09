@@ -43,12 +43,12 @@ Worked from the bottom of the list up. Site sizes come from a homepage snapshot 
 | 20 | Mike's & Sappio's | too big | Since 1967, established company |
 | 19 | Wichita HVAC Training Center | skip | A school |
 | 18 | HVAC Service Master | skip | Commercial kitchens only |
-| 17 | **Rods Cooling & Heating** | **picked** | One-page site; its tap-to-call dials (316) 776-4088 while Google lists (316) 516-0406. 190 reviews at 4.8 |
+| 17 | Rods Cooling & Heating | dropped | Looked like the best pick, but it appears closed: no reviews since late 2023, a 2023-10-30 review says "the business is closed up and shut down… phone number is out of order", and the site is now hacked gambling spam (31 spam pages in the sitemap). Research kept in rods/ |
 | 16 | **Integrity Heating and Cooling** | **picked** | 7-page site, H1 "Heating and Cooling Services" (no town). 45 reviews at 5.0 |
 | 15 | **Air Capital Heating and Air** | **picked** | 10-page site, H1 "Expert Heating & Air Services" (no town). 27 reviews at 5.0 |
 | 14 | **Dream Makers Heating and Cooling** | **picked** | 21 pages but no H1 at all; 43 reviews at 5.0 |
 
-**Next run starts at row 13** (Compass Plumbing Heating and Cooling), working up.
+Rows 13 to 1 checked for a 4th pick: Compass leads with plumbing on a site rebuilt in 2026; Larry Cook, Roth, Winsel, Wright Way and Action have full multi-page sites; Aire Serv is a franchise; Wheatland is commercial; Honest HVAC has no Google reviews; the rest are suppliers or have no site. **This HVAC Wichita list is used up.** A second scout ("AC repair", Wichita) runs for the 4th pick (`scout/ac-repair-wichita-ks/`).
 
 ## Backlog worth a look first next time (checked early, rows 1 to 23)
 - Rods Cooling & Heating (row 17): one-page site; its tap-to-call dials (316) 776-4088 while Google lists (316) 516-0406. 190 reviews. **Strongest next pick.**
