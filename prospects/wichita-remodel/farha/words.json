@@ -106,8 +106,8 @@
           "type": "split",
           "heading": "One Company for Every Trade",
           "body": [
-            "A remodel needs carpentry, tile, plumbing, electrical and paint, all in the right order. We handle every one of them under one name.",
-            "That is why clients hire us back. One has hired us for three projects, and one for almost 20 years."
+            "A remodel needs carpentry, tile, plumbing, electrical and paint, all in the right order. We run every one of them, so you call one company, not five.",
+            "That makes the next project easy too. For one family we have tiled a room, remodeled a master bedroom and bathroom, and built an addition with a bedroom, bathroom and living area."
           ],
           "image": {
             "slot": "home-trades",
@@ -118,15 +118,15 @@
         },
         {
           "type": "review",
-          "quote": "We have used the team at Farha Home Trends for three home renovation projects. Every time they have exceeded expectations.",
-          "name": "Cody F."
+          "quote": "Their work is absolutely incredible, their vision and their ability to transform my vision into actuality is beyond comparison. I’ll never use anyone else. Ever.",
+          "name": "Larry R."
         },
         {
           "type": "split",
           "heading": "A Clean House at the End of Every Day",
           "body": [
-            "We cover your floors, close off the work area and clean up before we leave each day.",
-            "When the project wraps, we clean up again."
+            "We cover your floors and clean up before we leave each day, and again when the project wraps.",
+            "On one repair job we laid paper over the floors, sealed off the work area with plastic and ran a vacuum system to keep sheetrock dust out of the house."
           ],
           "image": {
             "slot": "home-clean",
@@ -147,8 +147,8 @@
         },
         {
           "type": "review",
-          "quote": "The Farha HomeTrends crew was delightful to work with & their work exceeded our expectations. Details & professionalism really matter to this team. There was no problem they couldn't solve.",
-          "name": "Jennifer S."
+          "quote": "We used Farha Home Trends for our kitchen and guest bath remodel. The quality of work is fantastic and the people are a joy to work with.",
+          "name": "Kristen W."
         },
         {
           "type": "prose",
@@ -192,7 +192,7 @@
       "hero": {
         "eyebrow": "Walk-in showers, tile and vanities",
         "h1": "Bathroom Remodeling in Wichita, KS — Farha HomeTrends",
-        "sub": "Geremy Farha began as a tile installer, and tile is still where our bathroom work starts. We remodel showers, floors, vanities and whole bathrooms in Wichita with licensed, insured crews.",
+        "sub": "Geremy Farha began as a tile installer, and he can tell you how your shower will be waterproofed before the first tile goes up. We remodel showers, floors, vanities and whole bathrooms in Wichita with licensed, insured crews.",
         "primaryCta": {
           "label": "Call (316) 680-7514",
           "action": "call"
@@ -217,8 +217,8 @@
           "type": "split",
           "heading": "A Shower Starts Behind the Tile",
           "body": [
-            "A leaking shower can ruin the ceiling below it, so we begin with what you will never see again. Ask Geremy how your shower will be waterproofed.",
-            "Then comes the tile on walls and floors, set so the lines run straight and level."
+            "A leaking shower can ruin the ceiling below it, so we start with the layer you will never see again: the waterproofing behind the tile.",
+            "Then the tile goes on the walls and floors. We tiled one master bath for an owner who checked every line for level, and years later it has no cracked grout or uneven floor tiles."
           ],
           "image": {
             "slot": "bath-shower",
@@ -229,8 +229,8 @@
         },
         {
           "type": "review",
-          "quote": "We had a relatively small-scale master bathroom walk-in shower remodel, and the team treated us, and our home, like royalty.",
-          "name": "Amy B."
+          "quote": "Jesse did his usual beautiful tile work even though my choice was difficult to work with.",
+          "name": "Ruth C."
         },
         {
           "type": "prose",
@@ -239,6 +239,11 @@
             "Start with a single walk-in shower, or redo the whole room. We have remodeled a master shower, and we have remodeled two bathrooms in one project with new tile on the walls and floors.",
             "We have also built a new bathroom as part of an addition."
           ]
+        },
+        {
+          "type": "review",
+          "quote": "We had a relatively small-scale master bathroom walk-in shower remodel, and the team treated us, and our home, like royalty.",
+          "name": "Amy B."
         },
         {
           "type": "prose",
@@ -264,7 +269,7 @@
           "type": "split",
           "heading": "Vanities Made for Your Space",
           "body": [
-            "We build custom vanities, and we can turn a piece you already own into one. An estate-sale armoire has become a bathroom sink cabinet.",
+            "We build custom vanities sized to your room, and we can turn a piece you already own into one.",
             "The designer on our team works with you one-on-one, from the tile to the vanity."
           ],
           "image": {
@@ -276,8 +281,8 @@
         },
         {
           "type": "review",
-          "quote": "The custom vanity Trenton designed and created for our master bath was perfect. He's truly a master craftsman.",
-          "name": "Ruth C."
+          "quote": "By far the most professional, courteous, responsible, and personable team of craftsmen. Our last project utilized estate sale finds including an old armoire that was refinished and turned into a bathroom sink cabinet.",
+          "name": "Cody F."
         },
         {
           "type": "steps",
@@ -392,42 +397,47 @@
         },
         {
           "type": "review",
-          "quote": "Geremy was also helpful at the beginning when we were picking the granite, stone and other materials we wanted. He gave us great guidance and had everything ordered so there were no delays.",
-          "name": "Carol W."
+          "quote": "FHT did a full re-model on our kitchen and their work is incredible. From their \"in house staff\" to the contractors working in their name, The Farha team did an outstanding job for us.",
+          "name": "Rob F."
         },
         {
           "type": "prose",
           "heading": "Choosing Materials With Help",
           "body": [
             "Counters, cabinets and flooring are the big choices in a kitchen. The designer on our team works with you on them.",
-            "Geremy has guided clients through picking granite and stone, and we order your materials ahead so the work keeps moving."
+            "Geremy has guided clients through picking granite and stone, then had everything ordered ahead so the job ran without delays."
           ]
         },
         {
           "type": "review",
-          "quote": "FHT did a full re-model on our kitchen and their work is incredible. From their \"in house staff\" to the contractors working in their name, The Farha team did an outstanding job for us.",
-          "name": "Rob F."
+          "quote": "Geremy was also helpful at the beginning when we were picking the granite, stone and other materials we wanted. He gave us great guidance and had everything ordered so there were no delays.",
+          "name": "Carol W."
         },
         {
           "type": "prose",
           "heading": "Cabinets Built to Fit",
           "body": [
-            "We make custom cabinetry and woodworking. A cabinet or built-in made for your wall fits the way a stock one cannot.",
-            "Ask about custom pieces when you call, and we'll talk through what your kitchen has room for."
+            "We make custom cabinetry and woodworking, so a cabinet or built-in is made for your wall instead of picked from stock.",
+            "We have built rollout drawers into bottom cabinets, floating shelves and a computer center with a raised monitor shelf. Ask about custom pieces when you call."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "I am super picky and they are amazingly creative.",
+          "name": "Sheryl D."
+        },
+        {
+          "type": "prose",
+          "heading": "On Time, With Your Home Protected",
+          "body": [
+            "Our crews show up on time and keep you posted. Paper goes down over your floors and the work area is closed off, so the rest of your house keeps working while the kitchen doesn't.",
+            "At the end of each day we let you know we're leaving, and we clean up."
           ]
         },
         {
           "type": "review",
           "quote": "Geremy and his crew have done a couple jobs for us, last one being our kitchen. Craftsmanship is top notch. On time every day and very responsive.",
           "name": "Kyle L."
-        },
-        {
-          "type": "prose",
-          "heading": "Your Home Stays Protected",
-          "body": [
-            "Cooking is not the only thing that stops during a remodel, so we protect the rest of your house. Paper goes down over your floors and the work area is closed off.",
-            "At the end of each day we let you know when we're leaving and we clean up."
-          ]
         },
         {
           "type": "steps",
@@ -446,8 +456,8 @@
               "text": "Cabinets, counters and flooring, chosen with our designer beside you."
             },
             {
-              "title": "Everything happens under one name",
-              "text": "Carpentry, plumbing, electrical, tile and paint are all handled by our crews."
+              "title": "One company runs it all",
+              "text": "We run the carpentry, plumbing, electrical, tile and paint, so you have one company to call."
             }
           ]
         },
@@ -569,20 +579,21 @@
   "strategy": {
     "whyHeading": "Why we built this site",
     "why": [
-      "Your customers love you: 25 of your 26 Google reviews are five stars, and they write about work that is \"top notch\" and a house left clean. Your website sets your number in plain type, so someone on a phone has to copy it or call the next remodeler.",
-      "So we rebuilt it around what your customers already say: Geremy has \"handled all of our renovations for almost 20 years\". Bathrooms and kitchens now each have a page of their own."
+      "Your customers already make your case: 25 of your 26 Google reviews are five stars, and they call the craftsmanship \"top notch\" and say your crew \"cleaned up after each day\". But your number sits at the bottom of every page in plain type, so someone on a phone has to copy it or call the next remodeler.",
+      "Your bathroom and kitchen work lives on photo gallery pages. One reviewer hired you because Geremy knew how to waterproof a shower, and your bathroom page never says so.",
+      "So the demo puts your number one tap away on every page and gives bathrooms and kitchens their own pages."
     ],
     "cardsHeading": "Be the Home Remodeling Company People Find on Google",
-    "cardsIntro": "Each card is one page of the demo: what costs you calls, and the fix.",
+    "cardsIntro": "Each card is one demo page: what costs you calls, and the fix.",
     "cards": [
       {
         "route": "/home/",
         "title": "Homepage",
-        "why": "The first page people see, and the one Google reads to learn what you do.",
+        "why": "The page Google reads to learn what you do, and the first one people see.",
         "problems": [
           "Your number sits at the very bottom as plain text. Nothing at the top lets someone tap to call.",
-          "The top of the page is a large logo with no photo of finished work, so a visitor can't see what you build.",
-          "The headline says \"Contractors\" and never names you as a home remodeling company."
+          "The top of the page is a big logo with no photo of finished work, so visitors can't see what you build.",
+          "The headline is a slogan, \"Wichita's Trusted Home Remodeling Contractors\", and \"trusted\" is a claim nothing on the page backs up."
         ],
         "fixes": [
           "Your number is one tap to call on every page.",
@@ -594,7 +605,7 @@
       {
         "route": "/bathroom-remodeling-wichita-ks/",
         "title": "Bathroom Remodeling",
-        "why": "Showers and tile run through your reviews, and the page people land on is a photo gallery.",
+        "why": "Showers and tile run through your reviews, yet this page is a photo gallery.",
         "problems": [
           "The page address says \"gallery\", and under two short paragraphs it is mostly photos.",
           "Nothing says how you waterproof a shower, the question one reviewer used to screen contractors."
@@ -610,8 +621,7 @@
         "title": "Kitchen Remodeling",
         "why": "Kitchens are your other big room, with the same gallery setup.",
         "problems": [
-          "The page opens with cabinet-dealer wording, then photos. It never says you do floors, counters and layouts.",
-          "There is no tap-to-call link here either."
+          "The page opens with brand names, then photos. It never says you do floors, counters and layouts."
         ],
         "fixes": [
           "A full page for kitchen remodeling in Wichita, KS.",
@@ -624,8 +634,7 @@
         "title": "Contact",
         "why": "The page where interest turns into a call.",
         "problems": [
-          "The menu on a phone has four items and no Contact link. The way in is a small \"Request a Consultation!\" line above the logo.",
-          "Only this page makes your number tappable."
+          "The menu on a phone has four items and no Contact link. The way in is a small \"Request a Consultation!\" line above the logo."
         ],
         "fixes": [
           "Your number in the menu bar on every page, one tap away.",
@@ -663,7 +672,7 @@
     ],
     "closing": {
       "heading": "Want a website like this for your business?",
-      "text": "Your customers already call your crews professional, on time and top notch. You likely do more than we found, so on your onboarding call we confirm the full list of services and every detail with you and your team."
+      "text": "Your customers call your work \"top notch\" and say Geremy \"has touched every room in the house\". Book a strategy call with Fluid Frame to walk through this demo and confirm your full list of services."
     }
   },
   "onboardingQuestions": [
@@ -672,7 +681,7 @@
     "Address: Google and the site show 1300 E Central Ave. Expertise.com and MapQuest list 1004 E 2nd St N, with MapQuest showing Closed. Which is current?",
     "Hours: the contact page says Monday to Friday, 8 AM to 5 PM and closed weekends. Confirm they are current and match Google.",
     "Years: the site says more than 20 years on the home and About pages and over 25 on the Our Staff page. Which do they want to say?",
-    "Certifications to verify before we use them: Certified Onyx Dealer, ShowPlace Cabinetry dealer, NAHB Green Building and Lead Safe Certified (the About page lists the last two). Ask for the certificates or locator pages.",
+    "Brand and trade-group credentials named on the current site (Our Services, the kitchen page and the About page; full list in questions.md): ask for certificates or locator pages before we use any of them.",
     "Licensing: the About page says crews are licensed and insured in five trades. Which license numbers and insurer can we show?",
     "Service towns beyond Wichita: none are listed anywhere. Do they work in Derby, Andover, Maize or elsewhere?",
     "Services to confirm: living spaces, outdoor and decks, custom spaces, additions, custom cabinetry, flooring, exterior doors, and whether they want flooring or decks on their own pages in a full build.",

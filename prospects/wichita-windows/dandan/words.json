@@ -38,7 +38,7 @@
     {
       "name": "Window Replacement",
       "route": "/window-replacement-wichita-ks/",
-      "blurb": "Custom-built replacement windows, measured and installed by our crew."
+      "blurb": "Custom-built replacement windows, measured and installed by our own crew."
     },
     {
       "name": "Basement Windows",
@@ -81,7 +81,7 @@
       "hero": {
         "eyebrow": "Owner-run on West Kellogg",
         "h1": "Exterior Remodeling Company in Wichita, KS — Dan Dan The Window Man",
-        "sub": "Rick Timsah owns the company and takes you from estimate to install date. We replace windows and doors, put up siding and handle hail damage claims, and our crews leave the work site clean.",
+        "sub": "Rick Timsah owns the company and works with you from estimate to install date. We replace windows and doors, put up siding and handle hail damage claims, and our crews leave the work site clean.",
         "primaryCta": {
           "label": "Call (316) 448-4418",
           "action": "call"
@@ -106,8 +106,8 @@
           "type": "split",
           "heading": "You Deal With the Owner",
           "body": [
-            "Rick Timsah owns Dan Dan The Window Man. He lays out your options, explains the process and keeps you posted on your order and your install date.",
-            "You get one person who knows your job from the first estimate to the last day on site."
+            "Rick Timsah owns Dan Dan The Window Man and works your job himself. He lays out your options straight and keeps you posted on your order and your install date.",
+            "Got an awkward opening? Rick has solved a difficult window installation before, and he tells you plainly what yours needs."
           ],
           "image": {
             "slot": "home-owner",
@@ -118,15 +118,15 @@
         },
         {
           "type": "review",
-          "quote": "Rick and his crew are nothing but stellar in being professional, courteous and providing a high quality product. Installation was 2 weeks before promised and a beautiful installation.",
-          "name": "Dwight S."
+          "quote": "Rick provided a solution to a difficult window installation and was great to work with.",
+          "name": "Andy H."
         },
         {
           "type": "split",
           "heading": "Windows Are What We Do Best",
           "body": [
             "We replace double-hung, sliding, casement, picture, awning and shaped windows in houses across the Wichita metro area.",
-            "From five basement windows to the whole house, our crew does the work and Rick answers your questions. [See how a window job goes.](/window-replacement-wichita-ks/)"
+            "Five basement windows or every window in the house, our crew does the work. [See how a window job goes.](/window-replacement-wichita-ks/)"
           ],
           "image": {
             "slot": "home-windows",
@@ -141,32 +141,39 @@
           "name": "Tonya A."
         },
         {
+          "type": "prose",
+          "heading": "Installs That Finish Fast and Clean",
+          "body": [
+            "Our install crews work quickly and clean up every step of the way. We have finished an installation two weeks before the promised date."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Rick and his crew are nothing but stellar in being professional, courteous and providing a high quality product. Installation was 2 weeks before promised and a beautiful installation.",
+          "name": "Dwight S."
+        },
+        {
           "type": "services",
           "heading": "Everything We Do",
-          "intro": "Windows come first, and the same crew handles your doors, siding, gutters and hail repairs."
+          "intro": "Windows come first, and our own crews handle your doors, siding, gutters and hail repairs too."
         },
         {
           "type": "prose",
           "heading": "Doors, Siding and Gutters on One Job",
           "body": [
-            "Replace your windows and doors together, or add siding and gutters to the same project. You work with one company from start to finish. [Doors and siding here.](/doors-siding-wichita-ks/)"
+            "Replace your windows and doors together, or add siding and gutters to the same project, and you work with one company from estimate to cleanup. [See doors and siding.](/doors-siding-wichita-ks/)"
           ]
-        },
-        {
-          "type": "review",
-          "quote": "Rick provided a solution to a difficult window installation and was great to work with.",
-          "name": "Andy H."
         },
         {
           "type": "prose",
           "heading": "Hail and Storm Damage",
           "body": [
-            "After a hailstorm, we work directly with your insurance adjuster on your claim, and our own crews do the approved work. Free roof inspections are available, and our roofing line is (833) 972-7663."
+            "After a hailstorm, we work directly with your insurance adjuster on your claim, and our own crews do the approved work. Roof inspections are free. Our roofing line is (833) 972-7663."
           ]
         },
         {
           "type": "prose",
-          "heading": "Financing",
+          "heading": "Pay Over 18 Months",
           "body": [
             "Synchrony Bank financing means no monthly interest if you pay in full within 18 months."
           ]
@@ -182,10 +189,6 @@
             {
               "q": "Where do you work?",
               "a": "All across the Wichita metro area, from our showroom at 6810 W Kellogg Dr."
-            },
-            {
-              "q": "Se habla español?",
-              "a": "Sí. Se habla español."
             }
           ]
         },
@@ -230,13 +233,13 @@
           "type": "split",
           "heading": "One Window or the Whole House",
           "body": [
-            "Replace the window that bothers you most, or every window you own. We have replaced two large picture windows and a garage window, five basement windows, and seven windows and a patio door in one job."
+            "Replace the window that bothers you most, or every window you own. We have replaced two large picture windows and a garage window on one job, five basement windows on another, and seven windows and a patio door on a third."
           ],
           "list": [
-            "**Double-hung and casement** for the rooms you open most",
+            "**Double-hung and casement** for rooms you open often",
             "**Sliding** for wide openings",
             "**Picture** for the big views",
-            "**Awning** for small openings",
+            "**Awning** for small openings up high",
             "**Shaped** for openings that are not rectangles"
           ],
           "image": {
@@ -253,10 +256,10 @@
         },
         {
           "type": "prose",
-          "heading": "Glass Built for Comfort and Quiet",
+          "heading": "A Quieter, More Comfortable House",
           "body": [
-            "Our windows have double-pane, double-strength glass, a Low-E coating and argon gas between the panes. They exceed ENERGY STAR qualification criteria.",
-            "That keeps your rooms comfortable all year and the traffic noise outside."
+            "New windows quiet the street and hold the temperature you set.",
+            "Ours have double-pane, double-strength glass, a Low-E coating and argon gas between the panes, and they exceed ENERGY STAR qualification criteria."
           ]
         },
         {
@@ -293,9 +296,9 @@
         },
         {
           "type": "prose",
-          "heading": "Storm Damage and Insurance Claims",
+          "heading": "We Work the Insurance Claim With You",
           "body": [
-            "A storm that damages your windows can mean an insurance claim. We have worked with a homeowner through the claim to a full window replacement."
+            "When a storm breaks your windows, we stay with you through the insurance claim. We have taken a homeowner from claim to a full window replacement that cost nothing out of pocket."
           ]
         },
         {
@@ -305,9 +308,9 @@
         },
         {
           "type": "prose",
-          "heading": "Price, Warranty and Payment",
+          "heading": "Fair Prices and Time to Pay",
           "body": [
-            "Our warranty covers our installation. Financing through Synchrony Bank is open to every window purchase with approved credit, and you pay no monthly interest if you pay in full within 18 months.",
+            "Our prices are competitive, and our warranty covers our installation. Synchrony Bank financing means no monthly interest if you pay in full within 18 months.",
             "You can pay by personal check, American Express, Discover, MasterCard or Visa."
           ]
         },
@@ -322,11 +325,11 @@
           "items": [
             {
               "q": "Can you replace just one window?",
-              "a": "Yes. Replace one or replace them all. We have done a new window upstairs and seven windows in one job."
+              "a": "Yes. We have put in a single new window upstairs, and we have replaced seven windows in one job."
             },
             {
               "q": "How soon can you install?",
-              "a": "Your windows are built to order, and we give you a delivery date when you order. We are busy, so call early."
+              "a": "Your windows are built to order, and we give you a delivery date when you order. We stay busy, so call early."
             },
             {
               "q": "Is the estimate free?",
@@ -353,7 +356,7 @@
         {
           "type": "callBand",
           "heading": "Get Your Window Estimate",
-          "text": "Call (316) 448-4418 or stop by our showroom at 6810 W Kellogg Dr, and we'll set up your free estimate."
+          "text": "Call (316) 448-4418 to set up your free estimate, and pick your windows at our showroom at 6810 W Kellogg Dr."
         }
       ]
     },
@@ -391,14 +394,13 @@
           "type": "split",
           "heading": "Entry, Patio and French Doors",
           "body": [
-            "We install new entry, patio and French doors, custom-manufactured in a wide range of colors and configurations.",
-            "We have replaced a patio door, a side door and two doors alongside three windows, all on separate jobs.",
-            "We fit each new door to the opening you have."
+            "We install new entry, patio and French doors, custom-manufactured to fit the opening you have, so they open, close and seal the way they should.",
+            "We have replaced a patio door, a garage side door, and two doors along with three windows in one job."
           ],
           "list": [
             "**Entry doors** for the front of your house",
             "**Patio doors** for the back",
-            "**French doors** for rooms that open onto each other"
+            "**French doors** for a wide, two-door opening"
           ],
           "image": {
             "slot": "doors-styles",
@@ -428,8 +430,8 @@
           "type": "split",
           "heading": "Vinyl Siding in the Style You Choose",
           "body": [
-            "We install vinyl siding in the Carolina Sands, Crane Board, Parkview, Market Square, Portsmouth, Premium Pointe and Diamond Kote lines. Pick yours at our showroom on West Kellogg.",
-            "Siding comes in a variety of colors and styles, and you can compare them in person. We have replaced a detached garage's siding and a rotted window in three days."
+            "Pick your siding in person at our showroom on West Kellogg, with the colors and styles in front of you. We install vinyl siding from the Carolina Sands, Crane Board, Parkview, Market Square, Portsmouth, Premium Pointe and Diamond Kote lines.",
+            "We have re-sided a detached garage and replaced its old window and rotted trim in three days."
           ],
           "image": {
             "slot": "siding-hero",
@@ -477,7 +479,7 @@
           "type": "prose",
           "heading": "Price and Financing",
           "body": [
-            "Estimates for doors and siding are free. Ask us about Synchrony Bank financing: 18 months with no monthly interest when you pay in full, with approved credit."
+            "Estimates for doors and siding are free. Synchrony Bank financing gives you 18 months with no monthly interest when you pay in full."
           ]
         },
         {
@@ -517,7 +519,7 @@
         {
           "type": "callBand",
           "heading": "Get Your Door or Siding Estimate",
-          "text": "Call (316) 448-4418 or stop by our showroom at 6810 W Kellogg Dr, and we'll set up your free estimate."
+          "text": "Call (316) 448-4418 to set up your free estimate, then choose your door or siding at our showroom at 6810 W Kellogg Dr."
         }
       ]
     },
@@ -530,7 +532,7 @@
       "hero": {
         "eyebrow": "Contact",
         "h1": "Contact Dan Dan The Window Man",
-        "sub": "Call (316) 448-4418 to talk with Rick's team, or stop by our showroom on West Kellogg. The estimate is free.",
+        "sub": "Call (316) 448-4418 to talk with Rick's team about windows, doors or siding. The estimate is free.",
         "primaryCta": {
           "label": "Call (316) 448-4418",
           "action": "call"
@@ -548,7 +550,7 @@
       "sections": [
         {
           "type": "prose",
-          "heading": "Call or Stop By",
+          "heading": "How to Reach Us",
           "body": [
             "Main line: (316) 448-4418. Roofing and hail damage claims: (833) 972-7663.",
             "Our showroom is at 6810 W Kellogg Dr, Wichita, KS 67209. We work all across the Wichita metro area."
@@ -607,9 +609,9 @@
   "strategy": {
     "whyHeading": "Why we built this site",
     "why": [
-      "Your customers say the same things: Rick is easy to work with, the installers finish fast and clean up, and the price is fair. On Google you hold a 4.7 across 44 reviews.",
-      "Your current site splits its top headline between windows and hail roofing, runs its menu off the edge of a phone, and never names Rick.",
-      "So we rebuilt it around what your customers say: an owner who answers straight and a crew that leaves the house clean."
+      "Your customers say it plainly: Rick is \"straightforward\" with \"zero upselling or pressure,\" the installers \"left the job site clean,\" and the price is fair. You hold a 4.7 on 44 Google reviews.",
+      "Your site shows none of it. On a phone your number sits past the edge of the screen, the top of the homepage splits between windows and hail roofing, and Rick is never named.",
+      "So we rebuilt it around an owner who answers straight and a crew that leaves the house clean."
     ],
     "cardsHeading": "Be the Exterior Company People Find on Google",
     "cardsIntro": "Each card is one page of the demo: what costs you calls, and the fix.",
@@ -617,25 +619,25 @@
       {
         "route": "/home/",
         "title": "Homepage",
-        "why": "The page Google reads to learn who you are and where you work.",
+        "why": "The page Google reads to learn what you do and where.",
         "problems": [
-          "On a phone the page is twice as wide as the screen. Your number and the Roofing, Financing, Reviews and Let's Talk buttons sit at or past the edge.",
-          "The top of the page is three headlines: windows, doors and siding, hail roofing claims, and Wichita. Google can't tell whether you are a window company or a roofer.",
-          "\"Here's what our customers are saying...\" has no reviews under it, and nothing on the page names Rick."
+          "On a phone the page is twice as wide as the screen. Your number and half your menu sit past the edge, so callers scroll sideways to find you.",
+          "The top of the page is three headlines: windows, hail roofing claims, and Wichita. Google can't tell whether you're a window company or a roofer.",
+          "\"Here's what our customers are saying...\" has nothing under it and Rick is never named, so visitors miss the praise that wins you jobs."
         ],
         "fixes": [
           "Your number one tap away, with the whole menu on screen.",
           "A headline that says exterior remodeling company in Wichita, KS.",
-          "Rick named as owner, with real reviews beside each point."
+          "Rick named as owner, with a real review beside each point."
         ],
         "alsoAdd": "Every page set up behind the scenes so Google and AI tools like ChatGPT know exactly what you do, where you work, and what your customers say."
       },
       {
         "route": "/window-replacement-wichita-ks/",
         "title": "Window Replacement",
-        "why": "Windows are about three quarters of your written reviews, and their page is short.",
+        "why": "Windows are about three quarters of your written reviews, yet their page is short.",
         "problems": [
-          "The Windows page is two paragraphs, a feature list and two PDF buttons, with no review and nothing on install day, which customers praise."
+          "The Windows page is two paragraphs, a feature list and two PDF buttons: no review, nothing on install day, and little for Google to rank."
         ],
         "fixes": [
           "A full page for window replacement in Wichita, KS.",
@@ -646,28 +648,27 @@
       {
         "route": "/doors-siding-wichita-ks/",
         "title": "Doors & Siding",
-        "why": "Your reviewers describe door and siding jobs, and your site gives them a paragraph and a list of names.",
+        "why": "Door jobs come up in six of your reviews, and your site gives doors and siding a few lines.",
         "problems": [
-          "The Siding page lists eight product names with no description under any of them.",
-          "Gutters, which customers ask for, appear only as a box on the contact form."
+          "The Doors page is two short paragraphs with no reviews.",
+          "The Siding page lists eight product names with nothing under any of them, so a visitor can't tell what they'd get."
         ],
         "fixes": [
-          "One page for doors and siding in Wichita.",
-          "Gutters named, with a review from your own customers."
+          "One full page for doors and siding in Wichita, with reviews from door, siding and gutter jobs."
         ],
         "alsoAdd": "A check of what your competitors offer, so services you didn't think to mention still get their own pages."
       },
       {
         "route": "/contact/",
         "title": "Contact",
-        "why": "The page where interest turns into a call.",
+        "why": "Where interest turns into a call.",
         "problems": [
           "Your site says 10 to 5 and your Birdeye profile says 8 to 5, so a customer can't tell when to call.",
-          "Nothing says which number is for roofing and which is for windows."
+          "Your contact page promises a reply in 24 to 48 hours, and your siding page says you return calls on weekends."
         ],
         "fixes": [
-          "Both numbers one tap, each labeled with what it is for.",
-          "A page that says what to have ready before you call."
+          "Both numbers one tap, each labeled.",
+          "One set of hours and promises, once you confirm them."
         ],
         "alsoAdd": "Call and form tracking that shows which pages and towns your leads come from."
       }
@@ -701,7 +702,7 @@
     ],
     "closing": {
       "heading": "Want a website like this for your business?",
-      "text": "Your customers already say Rick is easy to work with and your crews leave the house clean. You likely do more than we found, so on your onboarding call we confirm your services with you."
+      "text": "Your customers already make the case. Book a strategy call with Fluid Frame, and we'll walk through this demo with you and confirm every service you offer."
     }
   },
   "onboardingQuestions": [
