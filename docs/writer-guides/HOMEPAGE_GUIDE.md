@@ -16,7 +16,9 @@ Do not reopen their strategy or rewrite them inside the homepage.
 
 The homepage owns the **company type** in the primary market, never a service or procedure. H1 format: `[Company Type] in [City, ST] — [Business Name]`, for example "Exterior Remodeling Company in Wichita, KS — Evolve Exteriors", "HVAC Company in Wichita, KS — …", "Commercial Cleaning Company in Springfield, MO — Brown Professional Services" (the approved Brown demo).
 
-Each service page owns one different service keyword ("Window Replacement in Wichita, KS"). Before you write, run the cannibalization test: does the homepage H1 already use the phrase a service page targets? If yes, change one. Pick a company type broad enough to cover the business's main services, so a window company that also does siding and doors is an exterior remodeling company. Source: `KEYWORD_GUIDE.md`.
+Each service page owns one different service keyword ("Window Replacement in Wichita, KS"). **One service per service page (Josh, 2026-11-09).** Never combine two services on one page ("Siding & Patio Doors", "Doors & Siding", "Siding, Painting & Decks"). Pick the single service with the most demand and review evidence for each service page; every other service is a card in the homepage services section and a line in the footer, linking nowhere until it has its own page. No two services may link to the same page.
+
+Before you write, run the cannibalization test: does the homepage H1 already use the phrase a service page targets? If yes, change one. Pick a company type broad enough to cover the business's main services, so a window company that also does siding and doors is an exterior remodeling company. Source: `KEYWORD_GUIDE.md`.
 
 One market in the H1: the city of the Google profile. A business with a second office (Evolve: Wichita and Oklahoma City) still names one city; the second office gets its number and a service-area line, and a full build gives it its own page (Josh, 2026-11-09).
 

@@ -6,6 +6,9 @@
     "city": "Wichita",
     "state": "KS",
     "companyType": "Home Remodeling Company",
+    "owners": [
+      "Geremy"
+    ],
     "phones": [
       {
         "label": "Wichita",
@@ -81,7 +84,7 @@
       "hero": {
         "eyebrow": "Remodeling Wichita homes room by room",
         "h1": "Home Remodeling Company in Wichita, KS — Farha HomeTrends",
-        "sub": "Geremy Farha started as a tile installer in Wichita more than 20 years ago. Our crews, licensed and insured in carpentry, tile and flooring, plumbing, electrical and painting, remodel your bathroom, your kitchen and the rooms between.",
+        "sub": "I'm Geremy Farha, and I started as a tile installer in Wichita more than 20 years ago. Today our crews, licensed and insured in carpentry, tile and flooring, plumbing, electrical and painting, remodel your bathroom, your kitchen and the rooms between.",
         "primaryCta": {
           "label": "Call (316) 680-7514",
           "action": "call"
@@ -125,8 +128,7 @@
           "type": "split",
           "heading": "A Clean House at the End of Every Day",
           "body": [
-            "We cover your floors and clean up before we leave each day, and again when the project wraps.",
-            "On one repair job we laid paper over the floors, sealed off the work area with plastic and ran a vacuum system to keep sheetrock dust out of the house."
+            "We cover your floors and clean up before we leave each day, and again when the project wraps."
           ],
           "image": {
             "slot": "home-clean",
@@ -192,7 +194,7 @@
       "hero": {
         "eyebrow": "Walk-in showers, tile and vanities",
         "h1": "Bathroom Remodeling in Wichita, KS — Farha HomeTrends",
-        "sub": "Geremy Farha began as a tile installer, and he can tell you how your shower will be waterproofed before the first tile goes up. We remodel showers, floors, vanities and whole bathrooms in Wichita with licensed, insured crews.",
+        "sub": "I'm Geremy Farha. I began as a tile installer, and I can tell you how your shower will be waterproofed before the first tile goes up. We remodel showers, floors, vanities and whole bathrooms in Wichita with licensed, insured crews.",
         "primaryCta": {
           "label": "Call (316) 680-7514",
           "action": "call"
@@ -293,8 +295,8 @@
               "text": "Tell us which bathroom you want changed and what is not working about it. Estimates are free."
             },
             {
-              "title": "Geremy prices the work",
-              "text": "He looks at the space and gives you an estimate."
+              "title": "We price the work",
+              "text": "We look at the space and give you an estimate."
             },
             {
               "title": "You choose the look",
@@ -405,7 +407,7 @@
           "heading": "Choosing Materials With Help",
           "body": [
             "Counters, cabinets and flooring are the big choices in a kitchen. The designer on our team works with you on them.",
-            "Geremy has guided clients through picking granite and stone, then had everything ordered ahead so the job ran without delays."
+            "We have guided clients through picking granite and stone, then had everything ordered ahead so the job ran without delays."
           ]
         },
         {
@@ -448,8 +450,8 @@
               "text": "Tell us what you want changed. The estimate is free."
             },
             {
-              "title": "Geremy gives you the price",
-              "text": "He looks at your kitchen and puts the work into an estimate, so you know the cost before anything starts."
+              "title": "We give you the price",
+              "text": "We look at your kitchen and put the work into an estimate, so you know the cost before anything starts."
             },
             {
               "title": "You pick materials",
@@ -480,7 +482,7 @@
             },
             {
               "q": "Who helps me choose finishes?",
-              "a": "The designer on our team works with you one-on-one, and Geremy helps with the harder choices like stone."
+              "a": "The designer on our team works with you one-on-one, and we help with the harder choices like stone."
             },
             {
               "q": "Do you remodel other rooms too?",
@@ -492,7 +494,7 @@
             },
             {
               "q": "Is the estimate free?",
-              "a": "Yes. Call (316) 680-7514 and we'll set it up, and Geremy will look at your kitchen and talk through what you want."
+              "a": "Yes. Call (316) 680-7514 and we'll come look at your kitchen and talk through what you want."
             }
           ]
         },
@@ -569,9 +571,9 @@
     }
   ],
   "footer": {
-    "about": "Founder Geremy Farha began as a tile installer in Wichita more than 20 years ago. We remodel bathrooms, kitchens and every other room in your house.",
+    "about": "I'm Geremy Farha, and I began as a tile installer in Wichita more than 20 years ago. We remodel bathrooms, kitchens and every other room in your house.",
     "why": [
-      "Founder Geremy Farha started as a tile installer",
+      "An owner who started as a tile installer",
       "Crews licensed and insured in five trades",
       "An interior designer on our own team"
     ]
@@ -580,7 +582,7 @@
     "whyHeading": "Why we built this site",
     "why": [
       "Your customers already make your case: 25 of your 26 Google reviews are five stars, and they call the craftsmanship \"top notch\" and say your crew \"cleaned up after each day\". But your number sits at the bottom of every page in plain type, so someone on a phone has to copy it or call the next remodeler.",
-      "Your bathroom and kitchen work lives on photo gallery pages. One reviewer hired you because Geremy knew how to waterproof a shower, and your bathroom page never says so.",
+      "Your bathroom and kitchen work lives on photo gallery pages. One reviewer hired you because you knew how to waterproof a shower, and your bathroom page never says so.",
       "So the demo puts your number one tap away on every page and gives bathrooms and kitchens their own pages."
     ],
     "cardsHeading": "Be the Home Remodeling Company People Find on Google",
@@ -672,7 +674,7 @@
     ],
     "closing": {
       "heading": "Want a website like this for your business?",
-      "text": "Your customers call your work \"top notch\" and say Geremy \"has touched every room in the house\". Book a strategy call with Fluid Frame to walk through this demo and confirm your full list of services."
+      "text": "Your customers call your work \"top notch\" and say you have \"touched every room in the house\". Book a strategy call with Fluid Frame to walk through this demo and confirm your full list of services."
     }
   },
   "onboardingQuestions": [

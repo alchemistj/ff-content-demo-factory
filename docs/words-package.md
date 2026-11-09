@@ -16,6 +16,7 @@ Check it with `node scripts/check-words-package.mjs prospects/<market>/<slug>`. 
     "slug": "evolve",
     "city": "Wichita", "state": "KS",
     "companyType": "Exterior Remodeling Company",        // the homepage keyword: company type, never a service
+    "owners": ["Colton", "Riley"],                       // first names; the checker flags third-person owner sentences
     "phones": [                                          // every office's number; first is the main one (matches Google)
       { "label": "Wichita", "display": "(316) 435-8009", "tel": "+13164358009" },
       { "label": "Oklahoma City", "display": "(405) 363-2294", "tel": "+14053632294" }
@@ -91,5 +92,5 @@ Check it with `node scripts/check-words-package.mjs prospects/<market>/<slug>`. 
    - No "The crew… They…" narration.
    - No website-quality claims ("professional website", "mobile-friendly experience", "this mockup").
 5. **Every number.** Every `business.phones` entry has a valid `tel`.
-6. **Lengths.** Words are counted the way the rendered page will count them: page words plus trust bar, footer and fixed chrome. The ranges are home 580–700, service 750–900, contact 250–450 and strategy 1,000 or fewer. The rendered `qa/demo-check.mjs` in ff-astro-demos stays the final gate.
-7. **Repetition.** No sentence of 8 or more words appears on more than two business pages (trust bar and footer excepted).
+6. **Lengths (Josh, 2026-11-09: thin is the problem, not long).** Words are counted the way the rendered page will count them: page words plus trust bar, footer and fixed chrome. Below the minimum fails: home 550, service 700, contact 250. Above the soft size it is only flagged for a look: home 900, service 1,150, contact 600. Strategy stays at 1,000 or fewer.
+7. **Repetition.** No sentence of 8 or more words appears on more than two business pages (trust bar and footer excepted). On any one page, years in business, a "since" year, the lifetime warranty and the price-beat promise are each said once in the body (review quotes, trust bar and footer don't count).

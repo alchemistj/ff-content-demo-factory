@@ -1,3 +1,5 @@
+> Pages changed on 2026-11-09 (one service per service page). `words.json` is the current source for routes, H1s and services; this plan is kept for its reasoning.
+
 # New Windows For America: plan
 
 **Company type:** Insulation and Window Company (settled). **Homepage H1:** Insulation and Window Company in Wichita, KS — New Windows For America (one city, the Google profile's Wichita).

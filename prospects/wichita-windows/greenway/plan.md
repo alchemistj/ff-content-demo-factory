@@ -1,3 +1,5 @@
+> Pages changed on 2026-11-09 (one service per service page). `words.json` is the current source for routes, H1s and services; this plan is kept for its reasoning.
+
 # Greenway Exteriors: plan
 
 **Company type:** Exterior Remodeling Company (settled). Broad enough for windows, siding, doors, gutters and trim.

@@ -6,6 +6,7 @@
     "city": "Wichita",
     "state": "KS",
     "companyType": "Insulation and Window Company",
+    "owners": [],
     "phones": [
       {
         "label": "Wichita",
@@ -32,14 +33,19 @@
   ],
   "services": [
     {
-      "name": "Insulation & Weatherization",
-      "route": "/insulation-weatherization-wichita-ks/",
-      "blurb": "Attics, floors, crawl spaces and air leaks, finished by a crew that explains the work first."
+      "name": "Insulation",
+      "route": "/insulation-wichita-ks/",
+      "blurb": "Attics, floors, walls and crawl spaces, finished by a crew that explains the work first."
     },
     {
       "name": "Window Replacement",
       "route": "/window-replacement-wichita-ks/",
       "blurb": "Vinyl windows measured, ordered and put in by our crew."
+    },
+    {
+      "name": "Weatherization",
+      "route": null,
+      "blurb": "Air sealing, door sweeps and weatherization program work."
     },
     {
       "name": "Furnace and AC",
@@ -98,7 +104,7 @@
           "heading": "A Warmer, Tighter House",
           "body": [
             "We insulate attics, floors, exterior walls and crawl spaces, then seal the air leaks around the insulation so the heat stays where you set it.",
-            "We have left house after house as clean as we found it. See [Insulation & Weatherization](/insulation-weatherization-wichita-ks/)."
+            "We have left house after house as clean as we found it. See [Insulation](/insulation-wichita-ks/)."
           ],
           "image": {
             "slot": "home-insulation",
@@ -284,7 +290,7 @@
           "heading": "Windows and Insulation Together",
           "body": [
             "New windows close the gaps at the glass. Insulation and air sealing close the gaps around the house, in the attic and under the floors.",
-            "We do both, so one company can look at the whole house with you. See [Insulation & Weatherization](/insulation-weatherization-wichita-ks/)."
+            "We do both, so one company can look at the whole house with you. See [Insulation](/insulation-wichita-ks/)."
           ]
         },
         {
@@ -326,14 +332,14 @@
     },
     {
       "role": "service",
-      "route": "/insulation-weatherization-wichita-ks/",
-      "navLabel": "Insulation & Weatherization",
-      "keyword": "insulation and weatherization Wichita KS",
+      "route": "/insulation-wichita-ks/",
+      "navLabel": "Insulation",
+      "keyword": "insulation Wichita KS",
       "seo": null,
       "hero": {
-        "eyebrow": "Attics, floors and crawl spaces",
-        "h1": "Insulation & Weatherization in Wichita, KS — New Windows For America",
-        "sub": "We add insulation to your attic, floors, walls and crawl space, and we seal the air leaks around it. Our crew explains the work before starting and leaves your house clean.",
+        "eyebrow": "Attics, floors, walls and crawl spaces",
+        "h1": "Insulation in Wichita, KS — New Windows For America",
+        "sub": "We add insulation to your attic, floors, exterior walls and crawl space, in old houses and mobile homes alike. Our crew explains the work before starting and leaves your house clean.",
         "primaryCta": {
           "label": "Call (316) 263-0711",
           "action": "call"
@@ -358,13 +364,13 @@
           "type": "split",
           "heading": "Attics, Floors, Walls and Crawl Spaces",
           "body": [
-            "We work through the whole house, from the attic down to the ground under it.",
-            "Tell us where it is cold or drafty and we start there."
+            "We insulate the whole house, from the attic down to the ground under it.",
+            "Tell us which rooms are cold or drafty and we start there."
           ],
           "list": [
-            "**Attics:** fresh insulation, plus sealing the air leaks up there",
+            "**Attics:** fresh insulation where there was little or none",
             "**Floors and crawl spaces:** insulation under the floor and around the foundation",
-            "**Exterior walls:** insulation added to the walls",
+            "**Exterior walls:** insulation added inside the walls",
             "**Mobile homes:** the underside wrapped, with insulation behind the wrap"
           ],
           "image": {
@@ -383,8 +389,8 @@
           "type": "prose",
           "heading": "Old Houses, Top to Bottom",
           "body": [
-            "We have built attic access into an old Kansas house that had none, so we could insulate an attic that had nothing in it. On the same job we laid a vapor barrier in the crawl space, wrapped the pipes and sealed the duct work at the floor registers.",
-            "We insulated under the floors and in the attic, flagged every electrical junction box first, installed smoke detectors and cleaned up so the work area barely showed we had been there."
+            "We have built attic access into an old Kansas house that had none, so we could insulate an attic that had nothing in it. The new access is barely noticeable in the room.",
+            "On the same house we insulated below the floors, laid a vapor barrier on the ground in the crawl space and flagged every electrical junction box before the insulation went in. Then we cleaned up so the work area barely showed we had been there."
           ]
         },
         {
@@ -396,20 +402,34 @@
           "type": "prose",
           "heading": "We Explain It Before We Start",
           "body": [
-            "You know what is going into your house before it goes in. Our crew walks you through the work and answers your questions as the job moves."
+            "You know what is going into your house before it goes in. Our crew walks you through where the insulation goes and why, and answers your questions as the job moves.",
+            "Ask us anything along the way. We would rather you understand your attic than wonder about it."
           ]
         },
         {
           "type": "review",
-          "quote": "The supervisor explained everything they were going to do before they started working. I figured they would take all day but they had the job done in no time.",
-          "name": "Rina B."
+          "quote": "They insulated it and they explained the process while doing so.",
+          "name": "Virginia W."
         },
         {
           "type": "prose",
-          "heading": "Weatherization Program Jobs",
+          "heading": "Under Mobile Homes",
           "body": [
-            "We do weatherization work under the SCKEDD Weatherization program, run by the South Central Kansas Economic Development District. You apply to the program to see if your home qualifies, and the program sets the schedule.",
-            "When your home comes up, our crews insulate, seal and finish the job."
+            "Mobile homes lose heat through the floor. We wrap the underside of the home and install insulation behind the wrap, so the cold air under the home stays out of your rooms.",
+            "We have shown up on time and finished mobile home jobs on schedule."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "They wrapped the underside of our mobile home and installed insulation behind the wrap.",
+          "name": "Judy N."
+        },
+        {
+          "type": "prose",
+          "heading": "Cold Snaps and Summer Heat",
+          "body": [
+            "We have insulated attics and crawl spaces through a bitter Kansas cold snap and exterior walls in 100° heat, and kept working until the job was complete.",
+            "Some insulation jobs finish in a day. On longer jobs we leave your house clean at the end of every day, not only on the last one."
           ]
         },
         {
@@ -418,17 +438,9 @@
           "name": "Connie H."
         },
         {
-          "type": "prose",
-          "heading": "Furnace and AC Alongside the Insulation",
-          "body": [
-            "We install furnaces and air conditioners as well. On one weatherization program job we put in a new furnace, air conditioner and bathroom vent fan, insulated under the house and in the attic and installed a smoke alarm.",
-            "We also install Hitachi mini-split systems."
-          ]
-        },
-        {
           "type": "review",
-          "quote": "I had a new furnace and AC compressor put in and the crew was marvelous- friendly, courteous, and professional. The next week a different crew came to add insulation and do other weatherization projects and they also were terrific.",
-          "name": "Diana P."
+          "quote": "Made sure everything was spotless each day when they finished.",
+          "name": "Douglas B."
         },
         {
           "type": "steps",
@@ -440,11 +452,11 @@
             },
             {
               "title": "We explain the plan",
-              "text": "Before work starts, we tell you what we will do in the attic, floors and crawl space."
+              "text": "Before work starts, we tell you what we will insulate in the attic, walls, floors and crawl space."
             },
             {
               "title": "Our crew does the work",
-              "text": "We insulate and seal. Some jobs finish in a day."
+              "text": "We insulate from the top of the house to the bottom. Some jobs finish in a day."
             },
             {
               "title": "Clean-up",
@@ -454,23 +466,23 @@
         },
         {
           "type": "faq",
-          "heading": "Insulation and Weatherization Questions",
+          "heading": "Insulation Questions",
           "items": [
             {
               "q": "Do you insulate mobile homes?",
-              "a": "Yes. We have wrapped the underside of mobile homes and installed insulation behind the wrap."
+              "a": "Yes. We wrap the underside of mobile homes and install insulation behind the wrap."
             },
             {
               "q": "Can you insulate an attic with no way in?",
               "a": "Yes. On one old house we built an access to reach it."
             },
             {
-              "q": "Do you do weatherization program jobs?",
-              "a": "Yes. We work under the SCKEDD Weatherization program. You apply to see if you qualify."
+              "q": "Do you insulate exterior walls?",
+              "a": "Yes. We add insulation to exterior walls as well as attics, floors and crawl spaces."
             },
             {
-              "q": "Do you also do furnace and AC?",
-              "a": "Yes. We install furnaces and air conditioners."
+              "q": "How long does an insulation job take?",
+              "a": "Some jobs finish in a day. We tell you what to expect before we start."
             },
             {
               "q": "How do I start?",
@@ -481,7 +493,7 @@
         {
           "type": "callBand",
           "heading": "Get Your Insulation Estimate",
-          "text": "Call (316) 263-0711 and tell us what is going on in your attic, floors or crawl space."
+          "text": "Call (316) 263-0711 and tell us what is going on in your attic, walls, floors or crawl space."
         }
       ]
     },
@@ -600,16 +612,16 @@
         "alsoAdd": "Pages planned from what Google actually shows for each search, so every page targets something people really look for."
       },
       {
-        "route": "/insulation-weatherization-wichita-ks/",
-        "title": "Insulation & Weatherization",
-        "why": "Insulation and weatherization are three quarters of your written reviews, and your site mentions them only in passing.",
+        "route": "/insulation-wichita-ks/",
+        "title": "Insulation",
+        "why": "Insulation and weatherization are three quarters of your written reviews, and your site mentions insulation only in passing.",
         "problems": [
           "Insulation shows up once in a banner and once in a sentence, with no page, so homeowners searching for it don't find you.",
-          "Your weatherization program work is never mentioned."
+          "Nothing shows the attics, crawl spaces and mobile homes your crews insulate."
         ],
         "fixes": [
-          "A full page for insulation and weatherization in Wichita, KS.",
-          "Program jobs, furnace and AC, each proven by your customers' own reviews."
+          "A full page for insulation in Wichita, KS.",
+          "Attics, walls, crawl spaces and mobile homes, each proven by your customers' own reviews."
         ],
         "alsoAdd": "A check of what your competitors offer, so services you didn't think to mention still get their own pages."
       },
