@@ -15,7 +15,7 @@ First re-read `docs/writer-guides/HOMEPAGE_GUIDE.md` (the "One service per servi
 - **Rewrite third-person owner sentences** ("Colton and Riley own Evolve and stay close to every job", "Rick Timsah owns…", "Geremy handles…") as "we" sentences, for example "We're Colton and Riley, and we own Evolve." Names inside review quotes stay as they are.
 
 ## 3. Odd numbers
-Remove any line that reads like a mistake even if a review supports it, such as "replaced 34 old windows with 17".
+Superseded: do not remove a review-backed detail that sounds odd. State the benefit it shows, then the review as proof (see the writing guide).
 
 ## Check
 Run `node scripts/check-words-package.mjs <folder>` and get PASS. Keep every review quote word for word, each used once.

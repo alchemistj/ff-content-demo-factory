@@ -67,13 +67,13 @@ test("loadCanonicalGuideCatalog reads exact on-disk Markdown and hashes determin
   const second = loadCanonicalGuideCatalog();
   assert.equal(first.guides.length, 6);
   assert.equal(first.manifestHash, second.manifestHash);
-  assert.equal(first.manifestHash, "fcb3b58b88eeb384ddabb45f94f148ba37fcfa5353f9a4588c0b980a63f4df75");
+  assert.equal(first.manifestHash, "e1d7bc635cf8b7a29d08259d6ff57c4680b10fb25e76f4dd8ac15836ee6828ae");
   assert.deepEqual(
     Object.fromEntries(first.guides.map((guide) => [guide.id, guide.sha256])),
     {
-      general: "158c69a8ef7cca2611a21f4a8500f9eb0644233dc21fe9290ddcead523eaa0b8",
+      general: "80d0fcb85e1d8315ebbcfb8c91bd245d7bae37c4b796fdebfa41907c82c4e936",
       service: "92acecf52fd02adb971e3c88094a26f2e2646f9394771cb0f00e43a6b909d7d9",
-      homepage: "dcec43a5dec07485cb130438ea3e0296cbf547423486e3d9362d6c4a7fae9374",
+      homepage: "417debb94ee2b7db33015dca0e3fdc28496d0957af8c76dd6e7d20772a7f2f0e",
       contact: "5613e7bb37ae021966da52a59cb0e264bfcec652776debee7bccf277cb3d336d",
       headerFooter: "69f38eb9523805ee5956d6f22f5c53644b4823fe7caac8d2652a37d054bc71ea",
       readme: "a667ba03bf628b19a089676f19988a3ad74be13a4300ee7ad341d67fa203ccf1",
@@ -130,9 +130,9 @@ test("Writer 1/2/3 sets load from repo files with no provider and preserve raw M
   assert.equal(writer1.catalogManifestHash, catalog.manifestHash);
   assert.equal(writer2.catalogManifestHash, catalog.manifestHash);
   assert.equal(writer3.catalogManifestHash, catalog.manifestHash);
-  assert.equal(writer1.setHash, "f04d468847edb6ca5307ae5a642eca942a0268e1e3cf59cc1977a0811a603c6f");
-  assert.equal(writer2.setHash, "71e9115c70bc852c85e8bf25970155d501a9a79b5463af784a60a2262a4d3fae");
-  assert.equal(writer3.setHash, "5bbc190a9cdbecb5ebc25852f7b27f575a73c0d17d012186fb78c7a4b8c0d773");
+  assert.equal(writer1.setHash, "7a35ce860e1f8ce2f009b7218c499525ba7b029999739cf3c0a5b6d34e8000d3");
+  assert.equal(writer2.setHash, "6f4e1be8af2a7387a60b29302868fb9e1296a006e46cb3a1b0305c75c6912f78");
+  assert.equal(writer3.setHash, "861164c966f05dfdb9a5d00977b47d7a4e928d08d5ac02e63872e73f511f9040");
   assert.notEqual(writer1.setHash, writer2.setHash);
   assert.notEqual(writer1.setHash, writer3.setHash);
   assert.notEqual(writer2.setHash, writer3.setHash);
