@@ -17,4 +17,6 @@
 15. Service area: confirm Hays and Great Bend (named on the site) and how far they will travel.
 16. Who receives the homepage form submissions, and does it work?
 17. The three testimonials on the old site (Amber Snavely, Tony Martinez, Steve Lebeda): where from, and may we use them?
-18. Logo file, brand colors and real job photos for the build.
+18. Jason's role: the pages say he handles most inspections, estimates and insurance calls himself (from about 43 reviews). Confirm that is accurate, and whether a lead foreman ever does the inspection.
+19. Tile track record: the pages say you have lifted and relaid clay tile roofs, reused original tile over new underlayment and ordered matching tile (from reviews by Connie P. and Linda G.), and list a barrel concrete tile project at Newman University. Confirm the Newman job was your install.
+20. Logo file, brand colors and real job photos for the build.
