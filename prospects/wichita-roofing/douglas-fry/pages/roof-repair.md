@@ -70,9 +70,9 @@ We always give a written estimate on repairs. It lists the scope of work, the wa
 
 We offer workmanship warranties of 5, 10 and 15 years. The crew cleans up each day, and Jason follows up afterward.
 
-When rain has every roofer in town booked, we tell you honestly how long the wait is, and the price on the estimate is the price you pay.
+After a run of storms, every roofer's schedule fills up. When you call, we'll give you a straight answer on when we can get to yours.
 
-> He go on the roof to evaluate the cause of the leaks (had 2 leaks on a tile roof) gave me a very reasonable estimate and said that it would be 2 to 4 weeks before the work could be done because of all the recent rains.  Douglas Fry Roofing completed the work within 3 weeks of my initial appointment and for the estimated amount.
+> Jason set up an appointment within 2 days of my call. He go on the roof to evaluate the cause of the leaks (had 2 leaks on a tile roof) gave me a very reasonable estimate and said that it would be 2 to 4 weeks before the work could be done because of all the recent rains.  Douglas Fry Roofing completed the work within 3 weeks of my initial appointment and for the estimated amount.
 > — Jiml P.
 
 ## Repair Questions
