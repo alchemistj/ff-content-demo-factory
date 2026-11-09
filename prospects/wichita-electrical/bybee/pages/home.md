@@ -90,7 +90,7 @@ We offer a free 10-point safety inspection, and a free estimate on the work. If 
 
 ## What You Pay For
 
-Electrical quotes can differ by a lot, and that's reason to ask what each one covers. Get ours in writing, put it next to the others, and compare the work, not just the number.
+Electrical quotes can differ by a lot, and that's reason to ask what each one covers. Put ours next to the others and compare the work, not just the number.
 
 We'd rather earn the job by being clear about it. The right fix at an honest price is the whole idea.
 
