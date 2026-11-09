@@ -81,7 +81,7 @@
       "hero": {
         "eyebrow": "Owner-led in Wichita, Kansas",
         "h1": "Exterior Remodeling Company in Wichita, KS — GS Gutters LLC",
-        "sub": "Nelson Galdamez leads our crew through gutters, siding, painting, decks, windows and doors across Wichita and 90 miles around. You call one owner-led crew for the whole outside of your house, and you get a free estimate.",
+        "sub": "Nelson Galdamez leads our crew through gutters, siding, painting, decks, windows and doors across Wichita and 90 miles around. One owner-led crew covers the whole outside of your house, and your estimate is free.",
         "primaryCta": {
           "label": "Call (316) 210-0063",
           "action": "call"
@@ -181,10 +181,6 @@
             {
               "q": "Are you insured?",
               "a": "Yes. GS Gutters LLC is an insured company."
-            },
-            {
-              "q": "Is there a discount for veterans and retirees?",
-              "a": "Yes. Veterans and retirees get 10% off."
             }
           ]
         },
@@ -586,25 +582,25 @@
   "strategy": {
     "whyHeading": "Why we built this site",
     "why": [
-      "Your customers hire you for the whole outside of the house. Lane P. wrote that you did “2/3 of our siding and trim,” painted the house, put in five new windows and a garage door, and hung new gutters. Luis R. came back for a deck because you did his siding, paint and gutters.",
-      "Your website says gutters. The top of your homepage promises “Superior Gutter Solutions” with no headline, and siding, paint, decks, floors, windows and doors share one short page. Google files you as a gutter company, so people searching for siding or a deck in Wichita don't find you. None of your 52 reviews is on your site.",
+      "Your customers hire you for the whole outside of the house. Lane P. wrote that you did “2/3 of our siding and trim,” the paint, five windows, a garage door and new gutters. Luis R. came back for a deck after you did his siding, paint and gutters.",
+      "Your website says gutters. The top of your homepage promises “Superior Gutter Solutions” with no headline, so Google files you as a gutter company, and people searching for siding or a deck in Wichita don't find you.",
       "So we built a demo that says exterior remodeling company in Wichita at the very top, gives your bigger jobs their own page, and puts your reviews next to the work they describe."
     ],
     "cardsHeading": "Be the Exterior Company People Find on Google",
-    "cardsIntro": "Each card is one page of the demo: what costs you calls today, and how we fix it.",
+    "cardsIntro": "Each card is one page of the demo: what costs you calls, and how we fix it.",
     "cards": [
       {
         "route": "/home/",
         "title": "Homepage",
         "why": "The first page people see, and the one Google reads to learn what you do.",
         "problems": [
-          "The top of your homepage says “Superior Gutter Solutions” and has no main headline, so siding, paint, decks, windows and doors never come up.",
-          "On a phone, the top of your homepage sits blank for about two and a half seconds, so some visitors leave before your name appears.",
+          "The top of your homepage says “Superior Gutter Solutions” and has no main headline, so Google never sees siding, paint or decks.",
+          "On a phone, your homepage sits blank for about two and a half seconds before your name appears.",
           "None of your 52 reviews is shown anywhere."
         ],
         "fixes": [
           "A headline that says exterior remodeling company in Wichita, KS, right at the top.",
-          "Your name, your work and your number on screen the moment the page opens.",
+          "Your name and number on screen the moment the page opens.",
           "Every service listed, and real reviews beside the work they describe."
         ],
         "alsoAdd": "Every page set up behind the scenes so Google and AI tools like ChatGPT know exactly what you do, where you work, and what your customers say."
@@ -628,7 +624,7 @@
         "title": "Siding, Painting & Decks",
         "why": "Siding, painting and decks are some of your biggest home jobs.",
         "problems": [
-          "Siding, painting, floors, decks, and windows and doors share one short page, so someone searching for a deck or siding in Wichita finds a single line.",
+          "These jobs share one short page with floors, windows and doors, so a Wichita search for siding or a deck finds a single line.",
           "Your gallery page is a heading and about 100 photos with no words, so Google reads nothing."
         ],
         "fixes": [
@@ -666,17 +662,13 @@
         "status": "Missing"
       },
       {
-        "label": "Email link opens the address shown",
-        "status": "Needs work"
-      },
-      {
         "label": "Form blocks spam",
         "status": "Missing"
       }
     ],
     "closing": {
       "heading": "Want a website like this for your business?",
-      "text": "Your customers already call you fair, fast and professional, and they come back for the next job. Book a strategy call with Fluid Frame, and we'll walk you through this demo and confirm your full list of services."
+      "text": "Your customers already call you fair, fast and professional. Book a strategy call with Fluid Frame, and we'll walk you through this demo and confirm your full list of services."
     }
   },
   "onboardingQuestions": [

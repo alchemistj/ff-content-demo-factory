@@ -77,7 +77,7 @@
     {
       "name": "Gutters and Gutter Protection",
       "route": null,
-      "blurb": "New gutters that outline the house, installed by their own crew."
+      "blurb": "New gutters that outline the house, installed with your siding or windows."
     },
     {
       "name": "Exterior Painting",
@@ -140,7 +140,7 @@
           "heading": "A Price for What the Job Needs",
           "body": [
             "We quote exactly what needs replacing and nothing more.",
-            "We have come in under other bids on windows, siding and chimney repairs. Financing is available, subject to credit approval."
+            "Our bids have come in $10,000 under other quotes on a whole house and 25 to 35% under on a chimney repair. Financing is available, subject to credit approval."
           ],
           "image": {
             "slot": "home-price",
@@ -176,7 +176,12 @@
         {
           "type": "services",
           "heading": "Everything We Do",
-          "intro": "Windows and siding are our two main jobs. Doors, gutters, trim and paint follow the same way: John quotes it and our crew finishes it."
+          "intro": "Windows and siding are most of our work. We also replace doors, gutters, fascia and trim and paint the outside, so one crew can finish the whole house."
+        },
+        {
+          "type": "review",
+          "quote": "We had new siding, windows, and doors replaced, and the old home looks great.",
+          "name": "Wayne I."
         },
         {
           "type": "prose",
@@ -185,11 +190,6 @@
             "We work in Wichita, Park City, Bel Aire, Andover, Eastborough, Rose Hill, Haysville, Derby, Goddard, Colwich, Valley Center and Maize, and out to Greenwich, Schulte and Oaklawn-Sunview.",
             "Call (316) 641-8365 and we'll set a time to see your house."
           ]
-        },
-        {
-          "type": "review",
-          "quote": "We had new siding, windows, and doors replaced, and the old home looks great.",
-          "name": "Wayne I."
         },
         {
           "type": "faq",
@@ -250,14 +250,14 @@
           "type": "split",
           "heading": "One Window or the Whole House",
           "body": [
-            "Start with the window that bothers you most, or replace every one. We have done a single bathroom window and eleven or thirteen at a time, and we have quoted a home with more than 30.",
-            "Our installers match your exterior trim, so the new window looks like it belongs."
+            "Start with the window that bothers you most, or replace every one. We have replaced a single bathroom window, 11 windows in one house, and 13 windows plus a glass back door in another.",
+            "We have matched a new window to exterior trim another company put on, so it looks like it was always there."
           ],
           "list": [
-            "**One window** matched to the trim you already have",
-            "**A handful of windows** in the rooms you use most",
-            "**Eleven or thirteen windows** in one project",
-            "**A big house** with more than 30 windows to quote"
+            "**One window,** matched to the trim you already have",
+            "**Two big living-room windows** set in for a wider view",
+            "**Every window in the house** in one project",
+            "**Windows plus a door** on the same visit"
           ],
           "image": {
             "slot": "windows-range",
@@ -275,8 +275,8 @@
           "type": "prose",
           "heading": "Quieter Rooms and Lower Bills",
           "body": [
-            "New windows seal the opening tight. Rooms hold the temperature you set, and the street gets quieter.",
-            "You notice it the first hot afternoon, and again when the heating bill arrives."
+            "New windows seal out the drafts and street noise your old ones let in.",
+            "Rooms stay warmer, the heater runs less, and the house gets quiet."
           ]
         },
         {
@@ -288,8 +288,8 @@
           "type": "prose",
           "heading": "Basement and Storm-Damaged Windows",
           "body": [
-            "Basement windows and egress windows are small jobs that matter. We replace them like any other window and seal them.",
-            "When a storm blows out a window, call us and John works with you to get it replaced quickly."
+            "Basement and egress windows are small jobs that matter. We replace and seal them like any other window.",
+            "When a storm blew out a family's egress window, John worked with them to get it replaced quickly."
           ]
         },
         {
@@ -347,14 +347,14 @@
           "type": "prose",
           "heading": "Price, Warranty and Financing",
           "body": [
-            "We have come in under other quotes on windows, and John prices the job in front of him. Ask him for the warranty terms on the windows you choose.",
-            "Financing is available, subject to credit approval. Ask about it at your estimate."
+            "Our window prices have come in at about half of what the big advertised companies quote, and under six other bids on one house.",
+            "When a new window cracked from a manufacturing error, we replaced it free. Ask John for the warranty terms on the windows you choose. Financing is available, subject to credit approval."
           ]
         },
         {
           "type": "review",
-          "quote": "Had guys come out the day after installation and seal the windows with no hesitation.",
-          "name": "Christopher B."
+          "quote": "Both times he was about half the price of the bigger companies you see all over media. Both him and his guys have always delivered quality installation and once when a window cracked due to manufacturing error, it was replaced free of charge.",
+          "name": "Aaron P."
         },
         {
           "type": "faq",
@@ -374,7 +374,7 @@
             },
             {
               "q": "What if a window is defective?",
-              "a": "We replaced a window that cracked from a manufacturing error at no charge. Ask John about the warranty on the windows you pick."
+              "a": "We stand behind the install and replace a defective window. Ask John about the warranty on the windows you pick."
             }
           ]
         },
@@ -452,12 +452,12 @@
           "heading": "Fascia, Soffit and Trim, Done With the Siding",
           "body": [
             "Fascia, soffit and trim finish the edges of your house. We replace them with your siding so the roof edge matches the walls.",
-            "When a windstorm tears off a piece of fascia, we have fabricated the replacement on site from matching textured aluminum."
+            "When a windstorm tore a long piece of fascia off one house, we fabricated the replacement on site from the same textured aluminum."
           ]
         },
         {
           "type": "review",
-          "quote": "Left a message with Greenway Exteriors and John called same day.",
+          "quote": "Had a long piece of aluminum fascia trim blow off in a severe windstorm. … They were able to come out in 2 days and were able to fabricate a replacement piece on site with the actual textured aluminum material.",
           "name": "Mark H."
         },
         {
@@ -484,12 +484,12 @@
           "heading": "Siding With Windows, Gutters or Paint",
           "body": [
             "Windows and siding share the same walls, so we plan them together when you want both. We also hang gutters and paint the exterior with the siding.",
-            "You get one price from John and one crew that finishes the whole outside."
+            "You get one price from John and one crew that finishes the whole outside. On one house, that price came in $10,000 under the other quotes."
           ]
         },
         {
           "type": "review",
-          "quote": "John and his crew did an amazing job! They were 10k less than other quotes I got and John worked hard to get my project done on time and in budget and worked my project in quick!",
+          "quote": "They were 10k less than other quotes I got and John worked hard to get my project done on time and in budget and worked my project in quick! We had new siding, gutters, paint.. my house looks like a totally different house and beautiful!",
           "name": "Julie B."
         },
         {
@@ -577,7 +577,7 @@
           "type": "prose",
           "heading": "Call and Find Us",
           "body": [
-            "Call (316) 641-8365. You'll reach John, and he'll set a time to see your house.",
+            "Call (316) 641-8365 to talk with John. He'll set a time to see your house and give you the estimate himself.",
             "Our address is 2807 W River Park Dr, Wichita, KS 67203. We work in Wichita and the towns around it."
           ]
         },
@@ -627,8 +627,8 @@
   "strategy": {
     "whyHeading": "Why we built this site",
     "why": [
-      "Your customers love you: all 87 of your Google reviews are five stars. They praise an honest price, an owner who answers his phone and crews that clean up.",
-      "Your site does a lot right, with a page for every service and fast loading. But it hides your number on a phone and makes two claims BBB does not back. So we rebuilt it around what your customers say, with John up front."
+      "All 87 of your Google reviews are five stars, and your customers say why in their own words: \"no high pressure sales\", \"about half the price of the bigger companies you see all over media\", and a crew that \"didn't waste any daylight.\"",
+      "Your site has a page for every service and loads fast. But on a phone, the first screen never says what you do or shows your number, and two claims on it don't match BBB. So we rebuilt it around what your customers praise, with John up front."
     ],
     "cardsHeading": "Be the Exterior Company People Find on Google",
     "cardsIntro": "Each card is one page of the demo: what costs you calls today, and how the demo fixes it.",
@@ -638,27 +638,27 @@
         "title": "Homepage",
         "why": "The first page people see, and the one Google reads to learn who you are and where you work.",
         "problems": [
-          "On a phone, the top of your homepage is a financing bar, your logo and a photo. What you do and your number sit a full screen down.",
-          "The headline names two services and never says what kind of company you are, and siding comes first while windows and doors are about 44% of your written reviews.",
-          "The page says \"over 15 years\", your siding page says \"since 2012\", and BBB shows 14 years."
+          "On a phone, the top of your homepage is a financing bar, your logo and a photo. Your headline and number sit a full screen down, so visitors can't see what you do or call without scrolling.",
+          "The headline names two services, never the kind of company you are, so Google can't match you to \"exterior remodeling company Wichita\". Siding comes first, though windows and doors are about 44% of your written reviews.",
+          "It says \"over 15 years\", your siding page says \"since 2012\", and BBB shows 14. A homeowner who spots that starts doubting the rest."
         ],
         "fixes": [
-          "Your number is one tap at the very top.",
-          "A headline that says exterior remodeling company in Wichita, KS.",
-          "One start date, since 2012."
+          "Your headline and your number, one tap, at the very top.",
+          "A headline that says exterior remodeling company in Wichita, KS, with windows and siding given equal room.",
+          "One start date: since 2012."
         ],
         "alsoAdd": "Every page set up behind the scenes so Google and AI tools like ChatGPT know exactly what you do, where you work, and what your customers say."
       },
       {
         "route": "/window-replacement-wichita-ks/",
         "title": "Window Replacement",
-        "why": "Windows and doors are about 44% of your written reviews.",
+        "why": "Windows and doors are about 44% of your written reviews, so this page should win \"window replacement Wichita\".",
         "problems": [
-          "The \"CALL\" line at the top is plain text, so a visitor on a phone cannot tap it.",
-          "The page says \"BBB accreditation\", but BBB lists you as not accredited, and a careful buyer can check that in a minute."
+          "The \"CALL\" line at the top is plain text, so a phone visitor has to type your number by hand.",
+          "The page claims \"BBB accreditation\", but BBB lists you as not accredited. A careful buyer can check that in a minute and walk away."
         ],
         "fixes": [
-          "A page for window replacement in Wichita, KS, with your number one tap away.",
+          "Your number, one tap, at the top of the page.",
           "Only claims a homeowner can check."
         ],
         "alsoAdd": "Pages planned from what Google actually shows for each search, so every page targets something people really look for."
@@ -668,12 +668,12 @@
         "title": "Siding Replacement",
         "why": "Siding and trim are about 45% of your written reviews.",
         "problems": [
-          "Nine siding pages sit in your menu, so a visitor picks a material before seeing what the job costs.",
+          "Your menu lists nine siding pages, mostly by material, and none says you'll take on one wall or a chimney, the small jobs your reviews say other companies turned down.",
           "\"Gutters\" in your menu opens the homepage instead of a page."
         ],
         "fixes": [
-          "One siding page for a full re-side, a single wall, chimneys, trim and repairs.",
-          "Reviews on price, long days and clean yards."
+          "One siding page for a full re-side, a single wall, a chimney, trim and repairs.",
+          "A menu where every link opens the page it names."
         ],
         "alsoAdd": "A check of what your competitors offer, so services you didn't think to mention still get their own pages."
       },
@@ -682,8 +682,7 @@
         "title": "Contact",
         "why": "Where interest turns into a call.",
         "problems": [
-          "Your hours read \"Monday-Sunday, 24 Hours\", which sounds like template text.",
-          "Your form has only a hidden field to stop spam."
+          "Your hours read \"Monday-Sunday, 24 Hours\", which sounds like a template, not a local crew a homeowner can trust."
         ],
         "fixes": [
           "Your number and address together, with what to have ready.",
@@ -721,11 +720,10 @@
     ],
     "closing": {
       "heading": "Want a website like this for your business?",
-      "text": "Your customers already say you give an honest price and clean up. You likely do more than we found, so on your onboarding call we confirm the full list of services and every detail with you and John."
+      "text": "Your customers already call you honest, fair and fast. Book a strategy call with Fluid Frame and we'll walk you through this demo, confirm every service and detail, and show you what a full build adds."
     }
   },
   "onboardingQuestions": [
-    "Business name: Google, BBB and the site all say Greenway Exteriors (Greenway Exteriors LLC); the request called it Greenway Home Services. Which name goes on the site?",
     "John Dye is confirmed as owner (BBB, About page, reviews). Who is Michelle (thanked in one review), and should she be named?",
     "Phone: (316) 641-8365 matches Google and the site. BBB lists (316) 453-6043 and a directory lists (316) 816-9395; confirm both are old.",
     "Email: the site shows greenwayvalue@gmail.com on every page, but it is not in our fact sheet. Is it the address to show?",

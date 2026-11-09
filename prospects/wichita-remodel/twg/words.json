@@ -144,7 +144,7 @@
           "type": "prose",
           "heading": "Clear Bids, Fair Prices",
           "body": [
-            "You get a **bid that spells out the cost**, including what could change it once the old roof or siding comes off.",
+            "You get a **bid that spells out the cost**, including how it may change as the work goes on.",
             "We have turned bids around quickly and shown homeowners ways to save money on the project. Our work comes with a 100% Satisfaction Guarantee."
           ]
         },
@@ -221,8 +221,8 @@
           "heading": "A New Roof, Start to Finish",
           "body": [
             "We remove the old roof, put on the new one and **take care of every detail**, down to the yard. We have left a yard cleaner than we found it.",
-            "We replace shingle roofs and metal roofs, including a hail-damaged metal roof.",
-            "Our crew does the tear-off, the install and the clean-up, and we call afterward to make sure you are happy."
+            "We replace worn-out and storm-damaged roofs, including a hail-damaged metal roof.",
+            "Our crew does the tear-off, the install and the clean-up, so the job is finished when we leave."
           ],
           "list": [
             "**Roof replacement** when the roof is worn out or the storm finished it",
@@ -428,7 +428,7 @@
           "heading": "Entry and Security Doors",
           "body": [
             "We install **vinyl, wood and fiberglass doors**, including entry and security doors.",
-            "We have replaced hail-damaged doors along with the siding, and we help you choose a door that suits the rest of the house."
+            "We have replaced hail-damaged doors along with the siding, so the front of the house is done in one job."
           ]
         },
         {
@@ -581,9 +581,9 @@
   "strategy": {
     "whyHeading": "Why we built this site",
     "why": [
-      "When hail hits Wichita, homeowners want one company that replaces the roof, handles the insurance and leaves the yard clean. Your Google reviews say that is you: roofs, hail and insurance come up more than anything else. One customer wrote, \"They worked with the insurance company to get the money needed for repairs.\"",
-      "Your website never says roofing. The top of the page says \"Remodeling & Renovation Contractors\", so a homeowner searching for a roofing company in Wichita may never see you. It also shows 316.776.4748 while Google shows (316) 685-1010, and two numbers can cost you both calls.",
-      "So we built a demo that leads with roofing and hail damage, gives siding, windows and doors their own page, shows one phone number everywhere and puts your customers' words beside the work."
+      "When hail hits Wichita, homeowners want one company for the roof, the insurance and the clean-up. Your Google reviews say that is you: roofs, hail and insurance come up most. One customer wrote, \"They worked with the insurance company to get the money needed for repairs.\"",
+      "Your website never says roofing. Its top line says \"Remodeling & Renovation Contractors\", so someone searching for a roofing company in Wichita may never see you. Its phone number also differs from your Google profile, and two numbers can cost you both calls.",
+      "So we built a demo that leads with roofing and hail damage, gives siding, windows and doors a page, and shows one number everywhere."
     ],
     "cardsHeading": "Be the Roofing Company People Find on Google",
     "cardsIntro": "Each card is one demo page: what costs you calls today, and the fix.",
@@ -595,7 +595,7 @@
         "problems": [
           "The top of your homepage says \"Remodeling & Renovation Contractors in Wichita, KS\" and never says roofing, so Google can't tell a homeowner searching for a roofer that you are one.",
           "The number on your site, 316.776.4748, is not the one on your Google profile, (316) 685-1010, so a customer who finds both may call neither.",
-          "Your three testimonials are reworded, and we could not find one of them on Google."
+          "Your three testimonials are reworded, so they read like ad copy, not customers."
         ],
         "fixes": [
           "A headline that says roofing company in Wichita, KS, right at the top.",
@@ -609,7 +609,7 @@
         "title": "Roof Replacement & Hail Damage Repair",
         "why": "Roofs, hail and insurance claims are most of what customers write about.",
         "problems": [
-          "Your whole site is one page. Roofing and hail damage share a few lines with five other services, so Google has no page to show someone searching for hail damage repair, and insurance gets one sentence."
+          "Your whole site is one page. Roofing and hail damage share a few lines with five other services, so Google has no page to show someone searching for hail damage repair."
         ],
         "fixes": [
           "A full page for roof replacement and hail damage repair in Wichita, KS.",
@@ -620,13 +620,12 @@
       {
         "route": "/siding-windows-doors-wichita-ks/",
         "title": "Siding, Windows & Doors",
-        "why": "Customers write about siding and windows, but your site does not.",
+        "why": "Customers write about siding and windows; your site barely does.",
         "problems": [
-          "The Windows & Doors paragraph describes only doors, so someone searching for window replacement has nothing to find, even though customers know you as The Window Guys."
+          "The Windows & Doors paragraph describes only doors, so someone searching for windows finds nothing, though customers call you The Window Guys."
         ],
         "fixes": [
-          "A page for siding, windows and doors in Wichita, KS.",
-          "Windows described for what you really fix: rotted frames, failed seals and hail damage."
+          "A page for siding, windows and doors in Wichita, KS, that names rotted frames, failed seals and hail damage."
         ],
         "alsoAdd": "A check of what your competitors offer, so services you didn't think to mention still get their own pages."
       },
@@ -635,12 +634,11 @@
         "title": "Contact",
         "why": "Where interest turns into a call.",
         "problems": [
-          "\"Contact Us\", \"Services\" and \"About\" only scroll down the same page, and /contact, /services and /about say \"Page not found\", so anyone who types them in hits a dead end.",
+          "\"Contact Us\", \"Services\" and \"About\" only scroll down the same page, and /contact, /services and /about say \"Page not found\".",
           "Your site says Suite 102 and Google says #101."
         ],
         "fixes": [
-          "A real contact page, with one number that matches Google.",
-          "No address until you tell us which suite is right."
+          "A real contact page, with one number that matches Google, and no address until you confirm the suite."
         ],
         "alsoAdd": "Call and form tracking that shows which pages and towns your leads come from."
       }
@@ -674,7 +672,7 @@
     ],
     "closing": {
       "heading": "Want a website like this for your business?",
-      "text": "Your customers already say you handle the insurance and get the roof done quickly. Book a strategy call with Fluid Frame: we'll walk you through this demo and settle your phone number, address and full service list with you."
+      "text": "Your customers already say you handle the insurance and finish the roof fast. Book a strategy call with Fluid Frame to walk through this demo and settle your phone number, address and services."
     }
   },
   "onboardingQuestions": [
