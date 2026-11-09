@@ -315,6 +315,18 @@
       "pulledAt": "2026-11-09T12:48:34.745Z"
     },
     {
+      "slug": "rods-hvac-wichita",
+      "name": "Rods Cooling & Heating LLC",
+      "placeId": "ChIJB3foALnmuocROUUPbmyBVgI",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 190,
+        "withText": 156,
+        "ratingOnly": 34
+      },
+      "pulledAt": "2026-11-09T17:52:55.112Z"
+    },
+    {
       "slug": "sc-marketing-technologies",
       "name": "SC Marketing Technologies LLC",
       "placeId": "ChIJiWeNBQxcq6oRDHLT3Zz3mkY",
