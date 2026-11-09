@@ -35,12 +35,12 @@ If a technician finds one, you'll hear it from us straight, with what it means a
 
 ## How We Handle a Furnace Call
 
-We diagnose the problem first. A technician finds the actual cause and tells you what failed, and you hear the price before the work begins.
+We diagnose the problem first. A technician finds the actual cause and shows you what failed.
 
-You get a breakdown of what the repair costs, with no surprise charges at the end.
+You get a full breakdown of what the repair costs, with no surprise charges at the end. And when the work is done, we clean up after ourselves, because a furnace closet full of dust and old parts is not your job.
 
-> "Sam and his team installed a new furnace for me. They were timely, worked efficiently and cleaned up the mess afterwards. I highly recommend Integrity Heating and Cooling and will use them again."
-> — Karen E.
+> "Sam and his team are outstanding in every way. They are dependable and accountable, best prices around, courteous and respectful, and always leave the place exactly as they found it (i.e., they never leave a mess)."
+> — Brett J.
 
 ## Repair or New Furnace?
 
@@ -50,8 +50,8 @@ A new furnace starts to make sense when the furnace is old, the repairs keep com
 
 We tell you which side of that line you're on. If it's time to replace, we install new furnaces and heating systems too.
 
-> "Sam and his team are outstanding in every way. They are dependable and accountable, best prices around, courteous and respectful, and always leave the place exactly as they found it (i.e., they never leave a mess)."
-> — Brett J.
+> "Sam and his team installed a new furnace for me. They were timely, worked efficiently and cleaned up the mess afterwards. I highly recommend Integrity Heating and Cooling and will use them again."
+> — Karen E.
 
 ## Keeping a Furnace Healthy
 
@@ -73,8 +73,8 @@ No. We offer a free phone consultation. Tell us what the furnace is doing and we
 **Do you work on my brand of furnace?**
 We work on all the major brands.
 
-**Will I know the price before you start?**
-Yes. We're upfront about pricing and give you a breakdown of the work, with no surprise charges.
+**Will the bill surprise me?**
+No. We're upfront about pricing and give you a full breakdown of the costs, with no surprise charges.
 
 **Can you help after hours?**
 Our office hours are Monday to Friday, 8 AM to 5 PM. After-hours work is priced by phone, so call and ask.

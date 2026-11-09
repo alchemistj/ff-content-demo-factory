@@ -13,7 +13,9 @@ I'm Sam, and my team and I repair air conditioners and furnaces, replace worn-ou
 
 A heating or cooling system never fails at a convenient time. It fails on the hottest afternoon of the summer or the coldest morning of the winter, and the last thing you want is a call center and a ticket number.
 
-We're a family-owned company, and I stay in the work myself. You call, you talk to someone who knows the job, and a technician comes to look.
+We're a family-owned company, and I stay in the work myself. When you call, you talk to someone who knows the job.
+
+Sometimes we can walk you through a fix over the phone. If not, a technician comes out to look.
 
 That's the whole idea behind the name. We tell you what is wrong, what it will cost and what your options are, and then we do what we said we'd do.
 
@@ -78,7 +80,7 @@ It also helps to change your filter on a schedule. A clean filter is the cheapes
 
 **A clean house when we leave.** We pick up after ourselves, because a repair shouldn't leave you a second job.
 
-**One call.** Heating, cooling, repair and replacement are all handled by the same people.
+**Help on the phone first.** Some problems are a setting, a switch or a filter. The free phone consultation tells you that before anyone drives out.
 
 ## Serving Greater Wichita
 
@@ -96,6 +98,9 @@ We're upfront about pricing and give you a full breakdown, so you know what you'
 
 **Do you work on my brand?**
 We work on all the major heating and cooling brands, so a name on the side of the unit isn't a reason to hold off calling.
+
+**How soon can someone come out?**
+It depends on the day's schedule. Plenty of our repairs happen the same day or the next morning, and when you call we'll tell you when a technician can get there.
 
 **Should I repair it or replace it?**
 That depends on the age of the unit, what failed and what the repair costs. We'll go through it with you and give you an honest opinion.

@@ -2,7 +2,7 @@
 
 # AC Repair in Wichita, KS — Integrity Heating and Cooling
 
-When your air conditioner quits in a Kansas summer, the house gets uncomfortable fast. We find out what failed, explain it in plain words and fix it at a fair price. Call me for a free phone consultation.
+The house is climbing past 80 and the vents are blowing warm. We find out what failed, explain it in plain words and fix it at a fair price. Call me for a free phone consultation.
 
 **Buttons:** Call (316) 932-9559 | Request Service
 
@@ -31,7 +31,7 @@ Most AC failures come from a short list of parts, and knowing the list helps you
 
 We start with the diagnosis. A technician looks at the system, finds the actual cause and tells you what he found, in words you can follow.
 
-Then you hear the price before the work starts. We're open about what each part of the repair costs, so there are no surprise charges at the end.
+Then you see what you're paying for. We give you a full breakdown of the costs, so there are no surprise charges at the end.
 
 > "Clayton came to our house and was quick to inspect our our AC, educate us on what was wrong and fix it within two hours. We had another company come out that “couldn’t figure it out” and needed another salesman to come."
 > — Justus K.
@@ -70,8 +70,11 @@ No. We offer a free phone consultation. Describe what the unit is doing and we'l
 **Do you work on my brand of air conditioner?**
 We work on all the major brands.
 
-**Will I know the price before you start?**
-Yes. We're upfront about pricing and give you a breakdown of the work, with no surprise charges.
+**How soon can someone come out?**
+It depends on the day's schedule. Plenty of our AC repairs happen the same day or the next morning, and when you call we'll tell you when a technician can get there.
+
+**Will the bill surprise me?**
+No. We're upfront about pricing and give you a full breakdown of the costs, with no surprise charges.
 
 **What about a home or a commercial building?**
 Both. We repair air conditioning in homes and in commercial buildings around Wichita.
