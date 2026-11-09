@@ -100,4 +100,17 @@ Site service cards (https://www.diamondroofandgutterks.com/):
 - Service area beyond Wichita? Does the site's 781 line route to the office?
 
 ## From reviews
-To be filled by the Architect from reviews.json.
+Source: `reviews.json` (Google, 19 reviews with text, all five-star, 2020-07 to 2024-08; the Google listing shows 20). Reviews date from 2020 to 2024, so nothing here is recent; say nothing about "this year".
+- **Stacia is the person customers deal with.** Named in 12 reviews: first inspection, estimates, insurance, materials, timelines ("Stacia and her team", "her crews", "her company", Eric J. 2024-08). No review or source calls her the owner, and the site names no one, so the pages speak as "we" and name her as the person who works with you. Owner: not established.
+- **Mike** does inspections and estimates, "didn't try and upsell" (Dacia T. 2022-07); "a stand up, honest guy" (Jessica S. 2022-07). Role not stated.
+- **Insurance work is the main thread (9 reviews mention insurance or the adjuster).** Meets or stands with the adjuster (Eric J., Kay J. "met with our insurance adjuster in our stead", Margaret W.), works the paperwork (David G., Anastasia V., Melissa F., Shannon M.), patience with the insurer (CtheWorld), settled a dispute (Michael H.). Do not promise what an insurer pays: Eric J. and Michael H. mention "refusals to pay" and settlement trouble, but outcomes are theirs.
+- **Jobs: roofs first, gutters alongside.** New or replaced roofs in about 11 reviews; gutters mentioned in 6 (Anastasia V., Margaret W., Melissa F., Jacob L., David G., Jessica S.), always in the same job as a roof. Repairs: David G. (repairing roof and gutters), Kay J. ("repairs and replacements"), Shannon M. (checks a roof fast), Dacia T. (inspection and estimate). Roofs are the bulk, so gutters do not outweigh repairs and the second service page is Roof Repair.
+- **Other work in reviews, not on the site's service list (do not list as services):** painting and deck work (Anastasia V.).
+- **Kinds of customers:** own homes, rentals and investment properties (Kay J., Sharde' L.), a roof replaced during a home sale (Roann G.), a realtor who also uses the company (Eric J.), repeat customers (Eric J., three roofs; Kay J.), neighbors who hired them after seeing the work (Margaret W., Sharde' L., David G.).
+- **Cleanup:** cleans up trash and nails at the end of each work day (Jacob L.); daily cleanup (Anastasia V.); "better than any other contractors" (Robyn N.); "Clean up was done as well" (David G.); crew mindful of landscaping (Debi S.).
+- **Communication:** responsive to questions (Andrea S.), kept customers updated on timelines (Anastasia V., David G.), quick to respond and inspect (Debi S., David G., Shannon M.), "always accessible" (Melissa F.).
+- **Materials:** helped choose brand and color (Debi S.); guided through materials choices (Anastasia V.).
+- **Speed:** a tight timeline met early (Jen K.); a roof going on in a rain storm so water would not get into a new garage (Jenny R.). No review states a standard job length; do not quote a number of days.
+- **Price:** Kay J. says "pricing beat competitors" and "estimates faster than her competitors"; CtheWorld says "affordable". These are customer opinions. Do not state prices or "lowest price", and do not repeat them as our claims. No source says estimates are free.
+- **Do not quote or claim:** CtheWorld (not a First L. name). Eric J.'s "better than Farmers" and "shady contractors" lines (insult to an insurer and to others). Michael H.'s "adding maximum value to our home" (a value claim). Kay J.'s pricing sentence. No review mentions licence, insurance coverage, certification, warranty, financing, a founding year or free estimates.
+

@@ -1,0 +1,843 @@
+{
+  "schema": "words-package/v1",
+  "business": {
+    "name": "Ashbrook Roofing & Contracting",
+    "slug": "ashbrook",
+    "owners": [
+      "Andy"
+    ],
+    "city": "Wichita",
+    "state": "KS",
+    "companyType": "Roofing Company",
+    "phones": [
+      {
+        "label": "Main",
+        "display": "(316) 402-8470",
+        "tel": "+13164028470"
+      }
+    ],
+    "email": null,
+    "hours": null,
+    "address": "101 S Martinson St, Wichita, KS 67213",
+    "serviceArea": {
+      "summary": "Wichita, Kansas",
+      "towns": [
+        "Wichita"
+      ]
+    }
+  },
+  "trustBar": [
+    "Insurance Claim Help",
+    "Locally Owned in Wichita",
+    "Roof and Gutters in One Job",
+    "Yard Cleaned Up When We Leave"
+  ],
+  "services": [
+    {
+      "name": "Roof Replacement",
+      "route": "/roof-replacement-wichita-ks/",
+      "blurb": "Whole roofs, torn off, checked down to the deck and put back on, many in a single day."
+    },
+    {
+      "name": "Roof Repair",
+      "route": "/roof-repair-wichita-ks/",
+      "blurb": "Blown-off shingles and leaks, traced to where the water really gets in and fixed there."
+    },
+    {
+      "name": "Insurance Claim Help",
+      "route": null,
+      "blurb": "I document your roof, come out when the adjuster is there and help you ask for a second look if the first answer looks short."
+    },
+    {
+      "name": "Gutters",
+      "route": null,
+      "blurb": "Replaced in the same job as your roof, or repaired and replaced on their own."
+    },
+    {
+      "name": "Siding",
+      "route": null,
+      "blurb": "Siding repaired or replaced, often after the same storm that hit your roof."
+    },
+    {
+      "name": "Soffit and Fascia",
+      "route": null,
+      "blurb": "The boards under and along the roof edge, done along with the roof and gutters."
+    },
+    {
+      "name": "Windows and Doors",
+      "route": null,
+      "blurb": "Window and door installation for the outside of your house."
+    },
+    {
+      "name": "Interior Remodeling",
+      "route": null,
+      "blurb": "Some interior remodeling, when it goes with the work on your house."
+    }
+  ],
+  "pages": [
+    {
+      "role": "home",
+      "route": "/home/",
+      "navLabel": "Home",
+      "keyword": "roofing company Wichita KS",
+      "seo": null,
+      "hero": {
+        "image": {
+          "slot": "home-hero",
+          "alt": "Wichita ranch house with a new dark asphalt shingle roof under a clear sky",
+          "brief": "ranch-style house with a freshly installed dark shingle roof, house on the right half of the frame, front lawn leading off to the left, calm clear sky behind the text side, no readable text, no people"
+        },
+        "eyebrow": "Locally owned in Wichita",
+        "h1": "Roofing Company in Wichita, KS \u2014 Ashbrook Roofing & Contracting",
+        "sub": "I'm Andy Ashbrook. I replace and repair roofs in Wichita, and when insurance is part of the job I work through the claim with you. Call me or request an estimate, and I'll look at your roof before you decide anything.",
+        "primaryCta": {
+          "label": "Call (316) 402-8470",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Request an Estimate",
+          "action": "contact"
+        }
+      },
+      "sections": [
+        {
+          "type": "review",
+          "quote": "From our first meeting, Andy was not pushy and very attentive to our questions and requests!",
+          "name": "Chef L."
+        },
+        {
+          "type": "prose",
+          "heading": "One Person Answers for Your Roof",
+          "body": [
+            "A roof job has a lot of pieces: the first look, the quote, the insurance, the crew, the cleanup. Too often you end up carrying the details from one person to the next.",
+            "With us it's me. I come out and look at the roof, write the quote, and send the crew that does the work. If a claim is involved, I'm in that conversation too.",
+            "You don't need to learn roofing to get this right. You need one person who explains what's on your roof and stays in the job until it's finished."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Andy made replacing our roof as painless as possible! We genuinely felt as though he had our best interests at heart, and he made sure we were well-informed throughout the process.",
+          "name": "Maureen S."
+        },
+        {
+          "type": "prose",
+          "heading": "When Insurance Is Part of the Job",
+          "body": [
+            "A storm goes through. Maybe there's a stain on the ceiling, maybe the roof looks fine from the driveway, and you've never filed a claim in your life.",
+            "An adjuster walks your roof for a short visit, and what goes in the report shapes the whole job. The photos, the notes and the list of what's damaged all matter.",
+            "That's the part I do with you. I look at the roof, document what I find, and explain it in plain words. When your adjuster comes out, I'll be there if you want me there.",
+            "If the first answer from the insurance company looks short, I'll help you ask for a second look. Your policy and your decisions stay yours, and no roofer can tell you what an insurance company will pay."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Andy offered to come out when the insurance adjuster was there to help us through the insurance process.",
+          "name": "Jan S."
+        },
+        {
+          "type": "prose",
+          "heading": "Roof Replacement",
+          "body": [
+            "Some roofs are done. Shingles curl at the edges, granules pile up at the bottom of your downspouts, and leaks show up in more than one place. At that point, patching only buys you a season.",
+            "We tear off the old roof and look at the deck underneath before anything new goes down. Many of our roofs go on in a single day, so you're not living under a tarp for a week.",
+            "If your gutters are worn out or took the same storm, we can replace them in the same job. That's one crew and one schedule."
+          ],
+          "link": {
+            "label": "See roof replacement",
+            "route": "/roof-replacement-wichita-ks/"
+          }
+        },
+        {
+          "type": "review",
+          "quote": "They re-roofed our entire house and garage in a single day! Everything was clean and tidy when we got home!",
+          "name": "Denton C."
+        },
+        {
+          "type": "prose",
+          "heading": "Roof Repair",
+          "body": [
+            "Plenty of roofs don't need replacing. A few shingles blew off in the wind, a vent leaks, or there's a spot on the ceiling that comes back after every rain.",
+            "Water rarely comes through the roof right above the stain. It runs along the deck and drops somewhere else, so I look for where it gets in, not just where you see it.",
+            "When a repair is enough, I'll tell you that. When it isn't, I'll show you why."
+          ],
+          "link": {
+            "label": "See roof repair",
+            "route": "/roof-repair-wichita-ks/"
+          }
+        },
+        {
+          "type": "prose",
+          "heading": "Clean When We Leave",
+          "body": [
+            "A new roof means a crew walking your yard, dropping old shingles and nails. Where your car parks and your kids play matters as much as the roof.",
+            "We protect the landscaping before the work starts, and we pick up nails and material before we go."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Andy's crew made sure everything was cleaned up and protected all of the landscaping from damage!",
+          "name": "Richard M."
+        },
+        {
+          "type": "prose",
+          "heading": "Gutters, Siding and the Rest of the Exterior",
+          "body": [
+            "The roof is the biggest job, but it isn't the only one. The work around it is often what finishes the house."
+          ],
+          "list": [
+            "**Gutters:** replaced along with the roof, or on their own when they're worn out or damaged.",
+            "**Siding:** repaired or replaced, often after the same storm that hit the roof.",
+            "**Soffit and fascia:** the boards under and along the roof edge.",
+            "**Windows and doors:** we install them.",
+            "**Interior remodeling:** some, when it goes with the work on your house."
+          ],
+          "tail": [
+            "If it's part of the outside of your house, ask. I'll tell you if it's something we do."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Selling Your House on a Deadline",
+          "body": [
+            "A roof can turn up in an inspection a week before closing. I've handled roofs for people selling houses, and I know the schedule can't slip.",
+            "If that's you, call me with the closing date. I'll look at the roof quickly and tell you what's realistic.",
+            "I also work with real estate agents who send me clients. If you're an agent with a house that has a roof problem, call me directly."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Where We Work",
+          "body": [
+            "I'm in Wichita and I work on Wichita roofs. If you're outside the city, call and tell me where you are."
+          ]
+        },
+        {
+          "type": "steps",
+          "heading": "How a Job Goes",
+          "items": [
+            {
+              "title": "You call.",
+              "text": "Tell me what you're seeing: a leak, missing shingles, a storm that just went through, or a roof you know is old."
+            },
+            {
+              "title": "I look at your roof.",
+              "text": "I come out, go over it and explain what's there. If a claim makes sense, we talk about how to start it."
+            },
+            {
+              "title": "You get a quote.",
+              "text": "It's for the work your roof needs, with the reasons behind it."
+            },
+            {
+              "title": "We set the date.",
+              "text": "I watch the weather, because a roof shouldn't come off ahead of rain."
+            },
+            {
+              "title": "The crew does the work.",
+              "text": "Many roofs are finished in a day. A larger roof or a lot of deck repair can take longer."
+            },
+            {
+              "title": "We clean up.",
+              "text": "The yard gets checked for nails and material before we leave."
+            }
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Questions Before You Call",
+          "items": [
+            {
+              "q": "Do you help with insurance claims?",
+              "a": "Yes. I document the roof, come out when the adjuster is there, and help you ask for a second look if the first answer looks short. What the insurance company pays is between you and them."
+            },
+            {
+              "q": "Will insurance pay for a new roof?",
+              "a": "It depends on your policy and on what the adjuster finds. I can't promise an outcome, and anyone who does is guessing."
+            },
+            {
+              "q": "How long does a roof take?",
+              "a": "Many of our roofs go on in a single day. Weather, size and any rotted decking can change that, and I'll tell you what to expect once I've seen the roof."
+            },
+            {
+              "q": "What will it cost?",
+              "a": "It depends on the size and pitch of the roof, the layers on it, the condition of the deck and what you want on it. I give you a price after I've looked, not before."
+            },
+            {
+              "q": "Do you do repairs or only whole roofs?",
+              "a": "Both. A few shingles or a leak is a repair job, and I'll say so."
+            },
+            {
+              "q": "What if I'm out of town?",
+              "a": "I've handled roofs for owners who weren't home, including the insurance side. Call and we'll work out how."
+            },
+            {
+              "q": "Do you do more than roofs?",
+              "a": "Yes: gutters, siding, soffit and fascia, windows, doors, and some interior remodeling."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Call Andy",
+          "text": "Tell me what's going on with your roof, and I'll come out and look. No pressure to decide that day. Call (316) 402-8470."
+        }
+      ]
+    },
+    {
+      "role": "service",
+      "route": "/roof-replacement-wichita-ks/",
+      "navLabel": "Roof Replacement",
+      "keyword": "roof replacement Wichita KS",
+      "seo": null,
+      "hero": {
+        "image": {
+          "slot": "replacement-hero",
+          "alt": "Wichita house with a freshly replaced roof and clean new gutters",
+          "brief": "two-story house with a freshly replaced shingle roof and new gutters, house on the right, lawn leading off to the left, calm sky behind the text side, no readable text, no people"
+        },
+        "eyebrow": "Roof replacement in Wichita",
+        "h1": "Roof Replacement in Wichita, KS \u2014 Ashbrook Roofing & Contracting",
+        "sub": "When a roof is finished, you shouldn't have to sort out the claim, the crew and the schedule by yourself. I'm Andy, and I handle all three. Call me or request an estimate, and I'll tell you honestly whether the roof needs replacing.",
+        "primaryCta": {
+          "label": "Call (316) 402-8470",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Request an Estimate",
+          "action": "contact"
+        }
+      },
+      "sections": [
+        {
+          "type": "prose",
+          "heading": "How You Know It's Time",
+          "body": [
+            "A roof doesn't fail all at once. It gives you signs, and most of them can be seen from the yard.",
+            "Shingles curl up at the edges or crack across the middle. Granules, the rough gritty coating, wash down into your gutters and collect at the bottom of the downspouts. Leaks show up in more than one place.",
+            "One bad spot is a repair. Wear across the whole roof is a replacement, and patching it just means paying twice.",
+            "Hail changes the picture. It bruises shingles where you can't see it from the ground, and a roof that looks fine can leak a couple of years later.",
+            "If you're not sure which one you have, I'll go up and look. If it's only a repair, I'll tell you, and you can read about [roof repair](/roof-repair-wichita-ks/)."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "What Replacement Day Looks Like",
+          "body": [
+            "The crew shows up early. Landscaping gets protected first, and then the old roof comes off.",
+            "With the old shingles gone, we look at the deck underneath. Soft or stained wood needs replacing, not covering, because a new roof on a weak surface hides the problem until it fails.",
+            "Then the underlayment, flashing and vents go in, and the new shingles go on. Many of our roofs are finished in a single day.",
+            "Before the crew leaves, the yard gets checked for nails and material."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "They got it done in under 7hrs! All the crew was friendly & Andy the owner was very easy to work with & made the whole process seamless & easy.",
+          "name": "James R."
+        },
+        {
+          "type": "prose",
+          "heading": "When the Weather Changes the Plan",
+          "body": [
+            "Roofs depend on the weather, and Kansas weather doesn't keep a schedule. A roof shouldn't be torn off ahead of rain.",
+            "I watch the forecast. If the date has to move, I move it and let you know."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "We got rained out on the originally scheduled replacement date and he was able to quickly pivot to get my roof replaced in a matter of days. The crew also did great work and cleaned up great leaving no nails or material behind.",
+          "name": "Kyle W."
+        },
+        {
+          "type": "prose",
+          "heading": "Replacement With an Insurance Claim",
+          "body": [
+            "When a storm is what finished your roof, a replacement comes with a claim. That means photos, an adjuster's visit and a scope of work, with paperwork in between.",
+            "I document the roof and explain what I find in plain words. When the adjuster comes out, I'll be there if you want me there.",
+            "If the first answer looks short, I'll help you ask the insurance company to take a second look. It's your policy and your decision. I don't promise what an insurance company will pay, because no roofer can."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "We had fought with our insurance company for nearly a year without any success. Andy worked with us and guided us through the process of requesting a reevaluation of our claim. He was available and responsive when we had questions throughout the process.",
+          "name": "Emily H."
+        },
+        {
+          "type": "prose",
+          "heading": "A Roof on a Deadline",
+          "body": [
+            "Sometimes the roof is the thing standing between you and a closing. An inspection turns it up, and suddenly you have days, not months.",
+            "Call me with the date. I'll tell you what's realistic, and I'll work with your agent and the insurance company so the roof isn't the reason a sale falls apart."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Andy showed up and inspected the roof to confirm and had it marked for the insurance photos within an hour of calling him. He worked with the adjuster and I had a new roof scheduled for the buyers before we closed that day.",
+          "name": "Steven A."
+        },
+        {
+          "type": "prose",
+          "heading": "Roof and Gutters Together",
+          "body": [
+            "The gutters sit right at the roof edge, so they take the same storm the shingles do. They also wear out on the same schedule.",
+            "If yours are worn, dented or pulling away, replacing them in the same job saves a second crew and a second schedule. It also keeps a ladder off your brand-new roof edge."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Andy took care of replacing my roof and gutters without any problems. Very easy to work with! Will use again.",
+          "name": "Shane K."
+        },
+        {
+          "type": "prose",
+          "heading": "What Drives the Price",
+          "body": [
+            "I can't give you a price over the phone, and no honest roofer can. Several things set it."
+          ],
+          "list": [
+            "The size of the roof, and how steep it is.",
+            "How many layers of old shingles are on it.",
+            "The condition of the deck once the old roof is off.",
+            "Flashing, vents and anything that has to be redone around chimneys or skylights.",
+            "Whether the gutters come along."
+          ],
+          "tail": [
+            "I look at the roof, then give you a price. You'll know what's in it and why."
+          ]
+        },
+        {
+          "type": "steps",
+          "heading": "What a Replacement Looks Like",
+          "items": [
+            {
+              "title": "I look at your roof.",
+              "text": "I go over it, explain what I see and whether it needs replacing."
+            },
+            {
+              "title": "You get a quote.",
+              "text": "If there's a claim, we talk about how to start it and who does what."
+            },
+            {
+              "title": "We set a date.",
+              "text": "I watch the weather so the job doesn't start ahead of rain."
+            },
+            {
+              "title": "The crew tears off the old roof.",
+              "text": "The yard is protected first, and the deck gets checked."
+            },
+            {
+              "title": "The new roof goes on.",
+              "text": "Many roofs are finished in a day. A big or complicated roof can take longer."
+            },
+            {
+              "title": "We clean up.",
+              "text": "Nails and material are picked up before we go."
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "What Happens After Your Roof Is Done",
+          "body": [
+            "You'll have a clean yard and a roof you can walk out and look at. If something doesn't look right, call me, because I'm the one who answers for the job."
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Questions About Replacement",
+          "items": [
+            {
+              "q": "How long does a roof replacement take?",
+              "a": "Many of our roofs are done in a single day. Weather, size and rotted decking can change that, and I'll tell you what to expect once I've seen the roof."
+            },
+            {
+              "q": "Do I have to file an insurance claim?",
+              "a": "No. It's your policy and your decision. I'll tell you what I see on the roof, and you decide whether a claim makes sense."
+            },
+            {
+              "q": "Will insurance pay for the whole roof?",
+              "a": "It depends on your policy and on what the adjuster finds. I can't promise an outcome. What I can do is document the roof and help you ask for a second look if the first answer looks short."
+            },
+            {
+              "q": "Can you replace the gutters at the same time?",
+              "a": "Yes. Roof and gutters together is one crew and one schedule."
+            },
+            {
+              "q": "What if I'm selling my house?",
+              "a": "Call me with your closing date. I've handled roofs on a deadline, and I'll tell you what's realistic."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Ready to Talk About Your Roof?",
+          "text": "Call me and tell me what's going on. I'll come out, look at the roof and tell you what it needs. Call (316) 402-8470."
+        }
+      ]
+    },
+    {
+      "role": "service",
+      "route": "/roof-repair-wichita-ks/",
+      "navLabel": "Roof Repair",
+      "keyword": "roof repair Wichita KS",
+      "seo": null,
+      "hero": {
+        "image": {
+          "slot": "repair-hero",
+          "alt": "Shingle roof with a freshly repaired patch near a chimney",
+          "brief": "shingle roof with a neatly repaired section beside a brick chimney, roof on the right, calm sky on the left behind the text side, no readable text, no people, no tools"
+        },
+        "eyebrow": "Roof repair in Wichita",
+        "h1": "Roof Repair in Wichita, KS \u2014 Ashbrook Roofing & Contracting",
+        "sub": "A few shingles blew off, or a leak showed up and you can't tell where it starts. I'm Andy, and I'll find where the water gets in and fix that, not just the spot on your ceiling. Call me or request an estimate, and I'll tell you straight whether it's a repair or something bigger.",
+        "primaryCta": {
+          "label": "Call (316) 402-8470",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Request an Estimate",
+          "action": "contact"
+        }
+      },
+      "sections": [
+        {
+          "type": "prose",
+          "heading": "Shingles Blown Off in the Wind",
+          "body": [
+            "You come home after a windy night and there are shingles in the yard, or you spot a bare patch from the street. A missing shingle exposes the layer under it, and that layer was never made to sit in the sun and rain.",
+            "Wind gets under the edge of a shingle whose seal has aged, and lifts it. Once one goes, the shingles next to it are easier to lift.",
+            "We replace what blew off, look over the shingles around it and make sure the new ones seal down. That's usually a small job, and it's best done before the next storm."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "A Leak Isn't Always Where the Stain Is",
+          "body": [
+            "Water doesn't drop straight down. It enters the roof in one place, runs along the deck or a rafter, and shows up as a stain a few feet away.",
+            "That's why patching right above the stain so often fails. The leak is still there, and the stain comes back.",
+            "The usual entry points are flashing, the metal around chimneys, walls and vents, along with pipe boots and valleys. A bead of caulk can hide a bad flashing job for a season, but it doesn't fix one.",
+            "I start at the stain and work up and out until I find where the water gets in. Then I fix that."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "We called Ashbrook roofing after we noticed a small leak in our roof following a spring storm. The team was out here the same day to assess the situation. Not only did they find the leak, but they also noticed that our vents were out of code and our gutters were beyond their lifespan.",
+          "name": "Jordan W."
+        },
+        {
+          "type": "prose",
+          "heading": "Skylights, Vents and Other Places Roofs Leak",
+          "body": [
+            "Anything that goes through a roof is a place for water to get in. That's skylights, vent pipes, chimneys and the joints where one roof meets a wall.",
+            "Skylights age out. The seal around the frame dries, cracks or pulls loose, and the leak looks like a roof problem when it isn't.",
+            "When one of these is the cause, that's where the fix goes, not in the shingles around it."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "His professional team are truly skilled and thorough. They spent extra effort to ensure my aging skylights were well sealed.",
+          "name": "Ben W."
+        },
+        {
+          "type": "prose",
+          "heading": "Looking Past the Spot You Pointed To",
+          "body": [
+            "You called about one thing. A roof rarely has just one thing.",
+            "While I'm up there, I look at the shingles around the damage, the vents, the flashing and the gutter edge. Older shingles go brittle, and the ones next to a problem tell me how much life the roof has left.",
+            "If I see something else, I show you and explain it. Then you decide."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Andy took his time to explain all the small details that other companies passed over. He noticed the small things and had it fixed without me having to do anything!",
+          "name": "Johna F."
+        },
+        {
+          "type": "prose",
+          "heading": "Repair or Replace? I'll Tell You Honestly",
+          "body": [
+            "A repair makes sense when the damage is in one place and the rest of the roof is sound. Replacement makes sense when the trouble is everywhere: shingles curling across several slopes, granules piling up in the gutters, leaks in more than one spot.",
+            "If your roof is just old and worn, I'll say so. I'd rather tell you a repair will hold than sell you a roof you don't need."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "We had storm damage to our roof in a few places. They were able to repair it quicky. Andy was honest about what I needed, and I appreciate that the most.",
+          "name": "Scott B."
+        },
+        {
+          "type": "prose",
+          "body": [
+            "When replacement is the honest answer, here's how [a full roof replacement](/roof-replacement-wichita-ks/) goes."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Storm Damage and Insurance",
+          "body": [
+            "If a storm caused the damage, the repair may be part of a claim. I'll tell you what I see on the roof and explain how the process works.",
+            "I don't promise what an insurance company will pay, and I won't tell you to file a claim you don't need. It's your policy and your decision."
+          ]
+        },
+        {
+          "type": "steps",
+          "heading": "What a Repair Visit Looks Like",
+          "items": [
+            {
+              "title": "You call.",
+              "text": "Tell me what you're seeing: shingles in the yard, a stain, a drip during rain."
+            },
+            {
+              "title": "I come out.",
+              "text": "I go up on the roof and look at more than the spot you pointed to."
+            },
+            {
+              "title": "I tell you what I found.",
+              "text": "You get the repair and the reason for it before any work starts."
+            },
+            {
+              "title": "The work gets done.",
+              "text": "A small repair is usually quick."
+            },
+            {
+              "title": "We clean up.",
+              "text": "Nothing gets left in your yard."
+            }
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Questions About Repairs",
+          "items": [
+            {
+              "q": "How soon should I fix missing shingles?",
+              "a": "As soon as you reasonably can. The layer underneath isn't made to face the weather, and the next wind or rain makes it worse."
+            },
+            {
+              "q": "Why is my ceiling stained when the roof looks fine?",
+              "a": "Water often travels from where it enters. Flashing, vent boots, skylights and valleys are the first places I check."
+            },
+            {
+              "q": "Will a repair match my old shingles?",
+              "a": "Close, usually, but not perfectly. Sun fades shingles, so new ones can look a shade different at first."
+            },
+            {
+              "q": "Do you repair gutters too?",
+              "a": "Yes. Gutters are part of the roof edge, and I'll look at them while I'm there."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Call About Your Roof",
+          "text": "Call me and tell me what you're seeing, whether it's shingles in the yard or a stain on the ceiling. I'll come look. Call (316) 402-8470."
+        }
+      ]
+    },
+    {
+      "role": "contact",
+      "route": "/contact/",
+      "navLabel": "Contact",
+      "keyword": "contact Ashbrook Roofing Wichita",
+      "seo": null,
+      "hero": {
+        "image": {
+          "slot": "contact-hero",
+          "alt": "Wichita home with a new shingle roof and a clear front walk",
+          "brief": "single-story house with a new shingle roof, house on the right, front walk leading off to the left, calm soft sky behind the text side, no readable text, no people"
+        },
+        "eyebrow": "Wichita, Kansas",
+        "h1": "Contact Ashbrook Roofing & Contracting",
+        "sub": "Tell me what's going on with your roof, whether it's a leak, a storm that just came through or shingles in the yard. Call me or request an estimate.",
+        "primaryCta": {
+          "label": "Call (316) 402-8470",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Request an Estimate",
+          "action": "contact"
+        }
+      },
+      "sections": [
+        {
+          "type": "prose",
+          "heading": "Call Me",
+          "body": [
+            "**Phone:** (316) 402-8470. Call for an estimate, a repair or a question about your roof or your insurance claim.",
+            "If I'm up on a roof and miss your call, leave a message with your name, your address and what you're seeing. That helps me call you back ready to help."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Great communication and top notch customer service all around. Would highly recommend giving him a call for your next roofing job!",
+          "name": "Tanner T."
+        },
+        {
+          "type": "prose",
+          "heading": "Where We Are",
+          "body": [
+            "Ashbrook Roofing & Contracting 101 S Martinson St Wichita, KS 67213",
+            "I work on Wichita roofs. If you're outside the city, call and tell me where you are.",
+            "If you're out of town, call anyway. I've handled roof jobs and the insurance side for owners who weren't home."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Andy and his team worked with me remotely, assisting with insurance information and inspection, then replacing the roof quickly.",
+          "name": "Beth L."
+        },
+        {
+          "type": "prose",
+          "heading": "What to Have Ready",
+          "body": [
+            "You don't need much. It helps to know:"
+          ],
+          "list": [
+            "Your address.",
+            "What you're seeing: missing shingles, a leak, a stain or a storm that just went through.",
+            "If you've filed a claim, your claim number and the date of the adjuster's visit.",
+            "Any photos you've taken."
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Questions Before You Call",
+          "items": [
+            {
+              "q": "Do I need to have filed a claim first?",
+              "a": "No. Call me first if you like. I'll tell you what I see, and you decide whether a claim makes sense."
+            },
+            {
+              "q": "Do you do repairs or only whole roofs?",
+              "a": "Both. See [roof repair](/roof-repair-wichita-ks/) and [roof replacement](/roof-replacement-wichita-ks/)."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "about": "Ashbrook Roofing & Contracting is a locally owned Wichita roofing company. We replace and repair roofs, help with insurance claims, and do gutters and siding.",
+    "why": [
+      "Insurance claim help",
+      "You deal with Andy, the owner",
+      "Roof and gutters in one job",
+      "Locally owned in Wichita"
+    ]
+  },
+  "strategy": {
+    "whyHeading": "Why we built this site",
+    "why": [
+      "Your Google reviews already make your case: 4.9 stars from 44 reviews, naming Andy again and again for handling the insurance claim, the crew and the cleanup.",
+      "Your website can't back that up right now. When someone taps \"Website\" on your Google listing, they get an error page that says \"upstream request failed\" instead of your company.",
+      "So we built this site around the work your reviews describe."
+    ],
+    "cardsHeading": "Be the Roofing Company People Find on Google",
+    "cardsIntro": "Each card is one page: what your site does today, and what we changed.",
+    "cards": [
+      {
+        "route": "/home/",
+        "title": "Homepage",
+        "why": "The page Google reads to learn who you are and where you work.",
+        "problems": [
+          "Anyone who taps \"Website\" on your Google listing gets an error page, so the people most ready to call you hit a dead end.",
+          "With no page loading, Google has no headline to read that says you're a roofing company in Wichita.",
+          "None of your 44 Google reviews can show, because there is no page to show them on."
+        ],
+        "fixes": [
+          "A headline that says roofing company in Wichita, KS, right at the top.",
+          "Real reviews from your customers, each beside the point it proves.",
+          "You, Andy, introduced by name, with what you do on a job from the first look to the cleanup."
+        ],
+        "alsoAdd": "Hourly speed monitoring that keeps your site fast for visitors on phones, and speed is something Google uses to rank you."
+      },
+      {
+        "route": "/roof-replacement-wichita-ks/",
+        "title": "Roof Replacement",
+        "why": "Replacement and insurance claims are the heart of your reviews, and with the site down they have no page.",
+        "problems": [
+          "Nobody searching \"roof replacement Wichita KS\" can land on you, because no page loads to be found.",
+          "Nothing explains how you work through a claim or how a roof goes on in a day."
+        ],
+        "fixes": [
+          "A full page for roof replacement in Wichita, KS: how you know it's time, replacement day, working with the insurance company, selling on a deadline, roof and gutters together.",
+          "Reviews on weather, claims and closing dates, each beside its point."
+        ],
+        "alsoAdd": "Call and form tracking that shows which pages and towns your leads come from."
+      },
+      {
+        "route": "/roof-repair-wichita-ks/",
+        "title": "Roof Repair",
+        "why": "Wind damage and leaks bring calls all year, and they have no page.",
+        "problems": [
+          "Nobody searching \"roof repair Wichita KS\" can find you while the site is down."
+        ],
+        "fixes": [
+          "A page for roof repair in Wichita, KS: blown-off shingles, leaks traced to flashing, vents and skylights, and a straight repair-or-replace answer."
+        ],
+        "alsoAdd": "A check of what your competitors offer, so services you didn't think to mention still get their own pages."
+      },
+      {
+        "route": "/contact/",
+        "title": "Contact",
+        "why": "Where a ready customer picks up the phone.",
+        "problems": [
+          "Your phone number works on Google, but the website itself gives a visitor no way to reach you.",
+          "A visitor who wants to call you from your site has nowhere to tap."
+        ],
+        "fixes": [
+          "Your number at the top and bottom of every page, one tap to call.",
+          "A short list of what to have ready before you call."
+        ],
+        "alsoAdd": "Every page set up behind the scenes so Google and AI tools like ChatGPT know exactly what you do, where you work, and what your customers say."
+      }
+    ],
+    "reportCardHeading": "What great roofing company websites get right, and how yours measures up.",
+    "reportCard": [
+      {
+        "label": "Phone and address on your Google listing",
+        "status": "Looks good"
+      },
+      {
+        "label": "Website opens when someone taps it",
+        "status": "Missing"
+      },
+      {
+        "label": "Headline says what you do and where",
+        "status": "Missing"
+      },
+      {
+        "label": "Browser tab names your company",
+        "status": "Missing"
+      },
+      {
+        "label": "Each money service has its own page",
+        "status": "Missing"
+      },
+      {
+        "label": "Real reviews shown",
+        "status": "Missing"
+      },
+      {
+        "label": "One tap to call from every page",
+        "status": "Missing"
+      }
+    ],
+    "closing": {
+      "heading": "Want a website like this for your business?",
+      "text": "Your customers already tell people to call Andy first. Book a strategy call with Fluid Frame and we'll walk you through this demo and plan your new site."
+    }
+  },
+  "onboardingQuestions": [
+    "Which office is real: 101 S Martinson St, Wichita (Google) or Clearwater, KS (BBB)?",
+    "Is ashbrookroofs.com still owned and paid for, and where is it hosted?",
+    "Do you offer free estimates or inspections? None is on any source, so the buttons say Request an Estimate.",
+    "Kansas roofing registration, licence and bond numbers: which may we publish?",
+    "Manufacturer certification (GAF, Owens Corning, CertainTeed): any?",
+    "Warranty and financing: do you offer either?",
+    "Email address for forms and the site.",
+    "Office hours.",
+    "Service area: Wichita only, or the 100-mile radius BBB mentions?",
+    "Is roofing the main work, and are siding, windows, doors and interior remodeling real services to list?",
+    "Does the phone get answered, and who calls back? One Google review (1 star) says it was never answered.",
+    "Founding year: BBB says 2023; a reviewer says many years."
+  ]
+}
