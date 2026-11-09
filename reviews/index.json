@@ -495,6 +495,18 @@
       "pulledAt": "2026-11-08T22:02:04.609Z"
     },
     {
+      "slug": "wichita-garage-door-pros",
+      "name": "The Door Pros, LLC",
+      "placeId": "ChIJGU6fg60g6Q8RrMTGlNDi40U",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 84,
+        "withText": 76,
+        "ratingOnly": 8
+      },
+      "pulledAt": "2026-11-09T18:19:53.843Z"
+    },
+    {
       "slug": "wichita-gs-gutters",
       "name": "GS Gutters LLC",
       "placeId": "ChIJdSs-9d3juocRiudGu11QlVA",
