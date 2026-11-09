@@ -4,6 +4,8 @@ Site: https://integrityheatingandcooling.net/ (http redirects to https). Checked
 
 **Pages crawled (both sizes, all HTTP 200):** /, /services/, /heating-repair/, /air-conditioning-service/, /faq/, /integrity-hvac-blog/, /contact/. Plus the one blog post linked from the blog page (HTTP 200).
 
+**Click test:** every visible link and button on every page was clicked at 1440x900 (Playwright, destination recorded). At 390x844 the clicks were unreliable: the open mobile menu overlay intercepted clicks on in-page and footer links, so those rows show the page itself rather than a destination. For phone width, destinations come from the DOM `href` list and an HTTP status check of every internal link (all 200). The desktop click run stopped on the last two items of /air-conditioning-service (browser closed), so those two were not clicked.
+
 **Not checked:** page-speed score (no PageSpeed run), Sitebulb export (none supplied), Google Business Profile hours (not opened), form submission (not submitted, by rule), whether the contact form sends and where notifications go. Google reviews are pending (`reviews.json`).
 
 ## What works
@@ -11,7 +13,7 @@ Site: https://integrityheatingandcooling.net/ (http redirects to https). Checked
 - **Phone links dial the shown number.** Every visible number is `tel:+1-316-932-9559`, which is 316-932-9559. The header, hero, service blocks, contact sidebar and footer each carry one. Google lists (316) 932-9559, the same number. The only number on the site is this one.
 - **"Get Help NOW!" button** (header) goes to /contact/ (desktop link list; click test below).
 - **Learn More** under "Your Heating Systems Experts" goes to /heating-repair/ and under the cooling block to /air-conditioning-service/ (link list; click test below).
-- **Top menu links** (Services, FAQs, Blog, Contact) go to the right pages (both sizes, from the link list; the click test below confirms).
+- **Top menu links** (Services, FAQs, Blog, Contact) go to the right pages (desktop click test confirms; phone-width from the href list).
 - **Contact form present.** Formidable Forms with an Akismet honeypot; no visible captcha (see Forms).
 - **No horizontal scroll** at phone width (scroll width 390 = viewport 390; desktop 1440 = 1440).
 - **Copyright is current:** "©2026 Integrity Heating and Cooling. All rights reserved."
@@ -31,9 +33,9 @@ Site: https://integrityheatingandcooling.net/ (http redirects to https). Checked
 - **Google (from brief):** 801 S Fabrique Dr, Wichita KS 67218.
 - **Why it matters:** local visitors and map searches can't match the site to a place. A "based in Kechi" claim beside a Wichita listing will confuse a customer or a directory. Which is right is an open question for the owner.
 
-### 3. Only two service pages; the footer sends "Heating System Installation" to the repair page
+### 3. Only two service pages; installation links go to the repair page
 - **Pages:** /heating-repair/ and /air-conditioning-service/ are the only service URLs. Services page lists six services (Heater Repair, Motor Replacement, AC Repair, System Installation, Heat Pump Repair, Commercial HVAC) with no page of their own.
-- **Wrong page:** the footer "Heating System Installation" link goes to https://integrityheatingandcooling.net/heating-repair/, which is a repair page. There is no installation page. (From the link list on the homepage, footer block, both sizes.)
+- **Wrong page, confirmed by click (1440x900):** on /services/, the "System Installation" card goes to https://integrityheatingandcooling.net/heating-repair/ (H1 "Heating Repair"). The footer "Heating System Installation" also goes to /heating-repair/ on every page. There is no installation page. Screenshot: `audit/services-1440x900-full.png`.
 - **Maintenance plans:** "HVAC Maintenance Plans" is listed in the footer and the homepage has a "HVAC Service and Maintenance Plans" block, but no plan page exists. The $150 plan is described only in the FAQ (https://integrityheatingandcooling.net/faq/).
 
 ### 4. Headline and titles name no trade-plus-town
