@@ -8,7 +8,7 @@ If your heat or air has stopped, call. A phone call gets you the fastest answer,
 
 ## Call (316) 945-2665
 
-Our office is open Monday to Friday, 8:00 AM to 5:00 PM. Emergency service runs from 5:00 PM to 10:00 PM.
+Our office is open Monday to Friday, 8:00 AM to 5:00 PM. Emergency service runs from 5:00 PM to 10:00 PM, so if the heat goes out at suppertime, call that evening instead of waiting for morning.
 
 ## Request Service
 

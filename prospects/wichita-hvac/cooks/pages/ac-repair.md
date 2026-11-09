@@ -6,8 +6,8 @@ When the house won't cool down and it's 95 outside, you don't want a sales pitch
 
 **Buttons:** Call (316) 945-2665 | Request Service
 
-> "Shannon and Jose did our repairs on out outside ac unit and explained everything professionally! Highly recommend this company"
-> — Tom V.
+> "Brad fixed my ac today during covid during humid as hell."
+> — James B.
 
 ## What "My AC Is Broken" Usually Means
 
@@ -15,7 +15,10 @@ An air conditioner has a few jobs: move refrigerant, push air across a cold coil
 
 The usual signs are warm air from the vents, a system that runs and runs without catching up, ice on the lines or the indoor coil, a unit outside that hums but won't start, or water pooling near the indoor unit.
 
-Each one points somewhere different. That's why a good repair starts with finding out which job failed.
+Each one points somewhere different. That's why a good repair starts with finding out which job failed, and why we show you which one it was before we fix it.
+
+> "Shannon and Jose did our repairs on out outside ac unit and explained everything professionally! Highly recommend this company"
+> — Tom V.
 
 ## Why It Runs All Day and Never Catches Up
 
@@ -31,18 +34,15 @@ Refrigerant isn't used up like gas in a car. If your system is low, it leaked.
 
 Adding more without finding the leak gets you cool air for a few weeks and then the same problem again. We do Freon leak detection so the repair fixes the leak, not just the symptom.
 
-Our work is EPA registered and certified.
-
-> "The technician was nice, clean and knew his job. Got to work right away, without any issues."
-> — Lupe N.
+Refrigerant can only be handled by certified technicians, and we're EPA registered and certified.
 
 ## Troubleshooting That Starts With the Cause
 
 A system can fail at the outdoor unit, the indoor coil, the thermostat or the ductwork, and the symptoms overlap. A tired capacitor and a failing compressor can both leave you with a silent outdoor fan.
 
-We troubleshoot and diagnose before we recommend anything. That's how you find out whether you need a small part or something bigger.
+We troubleshoot and diagnose before we recommend anything. That's how you find out whether you need a small part, something bigger, or nothing at all.
 
-> "The tech showed up on time, was friendly, and professional. … He also took the time to crawl in our crawl space and found our duct work isn't damaged."
+> "We contacted Cooks because we were told by a different HVAC company that we needed a return installed and duct work repaired in our crawl space. … The tech showed up on time, was friendly, and professional. He also found that we DO have a return hooked up already … He also took the time to crawl in our crawl space and found our duct work isn’t damaged."
 > — Matthew L.
 
 ## Ice on the Lines
@@ -59,12 +59,11 @@ We handle residential and commercial air conditioning.
 
 ## Repair or Replace?
 
-Most AC problems are repairs. A system that's still in decent shape is usually worth fixing.
+Most AC problems are repairs. A capacitor, a contactor or a fan motor is a small part, and a system that's still in decent shape is usually worth fixing.
+
+A failed compressor on an older unit is where the math turns.
 
 Replacement starts to make sense when the unit is old, repairs keep stacking up, or the repair would cost close to a new system. We'll tell you which situation you're in, and if it's a replacement, we install new air conditioners with equipment to fit your budget.
-
-> "Brad fixed my ac today during covid during humid as hell."
-> — James B.
 
 ## Keep It From Happening Again
 

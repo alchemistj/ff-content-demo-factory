@@ -71,7 +71,7 @@ We work on commercial heating and cooling as well as homes, and we design mechan
 
 We also run our own sheet metal fabrication shop. When a building needs a duct or fitting that no stock part matches, we make it in-house to the measurements instead of forcing something close.
 
-## Customers Who Stay for Decades
+## Customers Who Keep Calling Back
 
 A heating and cooling company earns repeat calls one visit at a time: show up when we said, fix what's actually wrong, and explain it so you know what happened.
 

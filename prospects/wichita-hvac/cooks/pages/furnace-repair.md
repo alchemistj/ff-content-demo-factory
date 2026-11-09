@@ -17,7 +17,10 @@ That's why symptoms are so specific.
 
 A furnace that clicks and never lights often has a worn ignitor. One that lights and shuts off a few minutes later may have a dirty flame sensor or poor airflow. A blower that won't start can be wiring or a failed part.
 
-Telling these apart is the job. It's the difference between a quick repair and a guess.
+Telling these apart is the job. It's the difference between a quick repair and a guess, and we'll walk you through what we found.
+
+> "Derek talked me through every step of the process and helped me understand how my furnace worked, what to watch out for, and even offered a few pointers and tricks along the way."
+> — John H.
 
 ## Troubleshooting and Diagnosis
 
@@ -48,23 +51,22 @@ A furnace that's burning gas poorly can put carbon monoxide into the house. You 
 
 We do carbon monoxide detection as part of our heating work. If you have a gas furnace and no working detector, ask us about it.
 
+If you smell gas, don't stop to check the furnace. Leave the house and call the gas company from outside.
+
 ## Any Brand, Home or Business
 
 Our service department is equipped to service and maintain all brands. Call us whatever's on the nameplate.
 
 We handle residential and commercial heating.
 
-> "Jose and Shannon have done a fantastic job and these men are honest. You can trust them. Thank you! I would highly recommend!"
-> — Charlotte C.
-
 ## Repair or Replace?
 
 If the furnace is old and the repair bills keep coming, a new furnace can be the better call. If the problem is one part, repair is the better one.
 
-We'll tell you which it is. When replacement makes sense, we install new furnaces with equipment to fit your budget.
+We'll tell you which it is, even when the answer is the smaller bill. When replacement makes sense, we install new furnaces with equipment to fit your budget.
 
-> "Derek talked me through every step of the process and helped me understand how my furnace worked, what to watch out for, and even offered a few pointers and tricks along the way."
-> — John H.
+> "Jose and Shannon have done a fantastic job and these men are honest. You can trust them. Thank you! I would highly recommend!"
+> — Charlotte C.
 
 ## Get Ahead of the Cold
 
@@ -81,6 +83,9 @@ Make sure the thermostat is set to heat and the batteries are fresh, and look at
 
 **Do you work on my brand?**
 Yes. We service all brands.
+
+**Is a burning smell normal?**
+A dusty burning smell the first time you turn the heat on in the fall is dust on the burners, and it fades within the hour. A smell that keeps coming back, or smells electrical, is not normal. Turn the furnace off and call us.
 
 **What if it goes out after hours?**
 Our emergency service runs from 5:00 PM to 10:00 PM. The office is open Monday to Friday, 8:00 AM to 5:00 PM.
