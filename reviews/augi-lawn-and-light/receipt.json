@@ -1,0 +1,27 @@
+{
+  "kind": "google-review-pull-receipt",
+  "status": "apify_error",
+  "slug": "augi-lawn-and-light",
+  "request": {
+    "mapsUrl": "place_id:ChIJtX8AnOz9uocReo9PMu59eSQ",
+    "maxReviews": 100,
+    "expectedName": "AUGI"
+  },
+  "trigger": "workflow_dispatch",
+  "apify": {
+    "actor": "compass~crawler-google-places",
+    "runId": null,
+    "datasetId": null,
+    "attempts": 1,
+    "usageUsd": null
+  },
+  "counts": {
+    "listingTotal": null,
+    "withText": 0,
+    "ratingOnly": 0
+  },
+  "detail": "Apify returned HTTP 402: Your remaining usage of $0.435205 this billing cycle isn't enough for this run. Increase your limit by upgrading to a paid plan at https://console.apify.com/billing/subscription.",
+  "startedAt": "2026-11-09T18:50:28.541Z",
+  "finishedAt": "2026-11-09T18:50:28.966Z",
+  "githubRunUrl": "https://github.com/alchemistj/ff-content-demo-factory/actions/runs/42677576420"
+}
