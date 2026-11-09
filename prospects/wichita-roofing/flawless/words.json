@@ -157,7 +157,7 @@
           "type": "prose",
           "heading": "Wichita Roofs, a Wichita Office",
           "body": [
-            "**We work in Wichita from our office at 928 S Broadway.** Call us Monday to Friday, 10:00 AM to 6:00 PM, or stop in."
+            "**We work in Wichita from our office at 928 S Broadway.** Call us Monday to Friday, 10:00 AM to 6:00 PM."
           ]
         },
         {
@@ -171,6 +171,10 @@
             {
               "q": "Do you work with my insurance company?",
               "a": "Yes. We file your claim and work with your adjuster to get your roof approved."
+            },
+            {
+              "q": "Who will I deal with?",
+              "a": "Ravi, the owner, stays with your job and answers your questions, and you can call the office Monday to Friday."
             },
             {
               "q": "How long does a new roof take?",
@@ -282,7 +286,22 @@
           "heading": "Does Your Roof Need Replacing?",
           "body": [
             "**Our free inspection tells you whether you need a new roof or a [repair](/roof-repair-wichita-ks/) will do.** You decide with the facts in hand.",
-            "If your roof is past repair, you already know the next step: your free upgrade and your claim are waiting."
+            "If the roof is past repair, your free class 4 upgrade and your claim are the next step."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Ravi Stays on Your Job",
+          "body": [
+            "**Ravi, the owner, walks you through the work and answers your questions.** Call the office Monday to Friday, 10:00 AM to 6:00 PM and you reach the person who knows your roof.",
+            "That is how a roof job stays simple for you, from the first inspection to the last shingle."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Gutters Go On With the Roof",
+          "body": [
+            "**New gutters can go on as part of the same project.** Downspouts and gutter guards come with your new roof, and we also install, repair and clean gutters on their own."
           ]
         },
         {
@@ -298,12 +317,16 @@
               "a": "We file your claim and work with your adjuster to get the roof approved."
             },
             {
+              "q": "Who will I deal with?",
+              "a": "Ravi, the owner, walks you through your roof and answers your questions. Call the office Monday to Friday, 10:00 AM to 6:00 PM."
+            },
+            {
               "q": "Do you replace roofs on commercial buildings?",
               "a": "Yes. We install new roofs on homes and commercial buildings."
             },
             {
-              "q": "Do you take the old roof away?",
-              "a": "Yes. We clean up before we leave."
+              "q": "How long does a new roof take?",
+              "a": "Many of our roofs are finished in a single day. A large roof can take about two days, and we give you the schedule before we start."
             }
           ]
         },
@@ -349,7 +372,8 @@
           "heading": "Leaks Get Stopped Before the Storm",
           "body": [
             "**A leak gets worse every time it rains, so we move fast.** We have gone out the same day and covered a leaking roof for free when a storm was coming.",
-            "Then we repair it, so the next rain doesn't find the same spot."
+            "Then we repair it, so the next rain doesn't find the same spot.",
+            "A tarp buys time. The repair is what fixes the roof."
           ],
           "image": {
             "slot": "repair-leak",
@@ -362,9 +386,28 @@
           "type": "prose",
           "heading": "Wind, Hail and Storm Damage",
           "body": [
-            "**Shingles torn off by wind or bruised by hail let water in long before you see it inside.** We inspect for free, repair what is damaged and file your insurance claim when the damage calls for one.",
-            "Worn flashing and aging shingles get the same attention."
+            "**Wind and hail damage can let water in long before you see it inside.** We inspect for free, repair what is damaged and file your insurance claim when the damage calls for one.",
+            "Wear and tear on an older roof gets the same attention."
           ]
+        },
+        {
+          "type": "split",
+          "heading": "What We Repair",
+          "body": [
+            "**Call us when something looks wrong on your roof.** We repair:"
+          ],
+          "list": [
+            "**Leaks** that stain your ceiling or run into a closet",
+            "**Wind damage** from shingles lifted or torn away",
+            "**Hail and storm damage** across the roof",
+            "**Structural wear** on a roof that has seen better years"
+          ],
+          "image": {
+            "slot": "repair-types",
+            "alt": "Gray shingles lifted along a roof edge after wind",
+            "brief": "roof edge with a few lifted gray shingles along the eave, roof on the right, plain sky on the left, no readable text, no people, no tools"
+          },
+          "imageSide": "left"
         },
         {
           "type": "steps",
@@ -384,7 +427,7 @@
             },
             {
               "title": "We make the repair",
-              "text": "Our crew fixes the damage and checks it."
+              "text": "Our crew makes the repair."
             }
           ]
         },
@@ -398,14 +441,23 @@
           "heading": "Repair or Replace? We Tell You Which",
           "body": [
             "**A repair is the right answer when the damage is limited, and we say so.** When the whole roof is worn out, we say that too, and show you what a [new roof](/roof-replacement-wichita-ks/) includes.",
-            "You never pay for a replacement to fix one leak."
+            "One leak does not mean a new roof."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Storm Damage and Your Insurance",
+          "body": [
+            "**If your roof has storm damage, we start with a free inspection and file your claim.** We work with your adjuster the way we do on a full replacement.",
+            "Ravi, the owner, stays involved, so you have one person to call about the repair and the claim."
           ]
         },
         {
           "type": "prose",
           "heading": "Catch It Before It Leaks",
           "body": [
-            "**A free roof inspection finds small problems before they reach your ceiling.** Call us for a checkup after a storm, or any time your roof looks tired."
+            "**A free roof inspection finds small problems before they reach your ceiling.** Call us for a checkup after a storm, or any time your roof looks tired.",
+            "A small repair now costs less than a stained ceiling later, and a free inspection tells you where your roof stands."
           ]
         },
         {
@@ -423,6 +475,14 @@
             {
               "q": "Will you handle my insurance claim?",
               "a": "When storm damage needs a claim, we file it and work with your adjuster."
+            },
+            {
+              "q": "How soon can you come out?",
+              "a": "We have gone out the same day. Call us and we'll tell you when we can be there."
+            },
+            {
+              "q": "Do you repair gutters and siding too?",
+              "a": "Yes. We install, repair and clean gutters, and we repair siding."
             },
             {
               "q": "What if the roof needs replacing?",
@@ -460,7 +520,7 @@
       "sections": [
         {
           "type": "prose",
-          "heading": "Call, Write or Stop In",
+          "heading": "Call or Write",
           "body": [
             "Phone: (316) 730-0301. Email: ravi@flawlessroofingcousa.com.",
             "Our office is at 928 S Broadway, Wichita, KS 67211, and we work in Wichita."
@@ -513,7 +573,7 @@
   "strategy": {
     "whyHeading": "Why we built this site",
     "why": [
-      "Your customers already make your case. \"Super Nice guy, very prompt and professional.\" \"Thank you for your service, amazing job.\" They describe a roofer who inspects, files the claim, meets the adjuster and puts a new roof on in a day.",
+      "Your customers already make your case. \"Super Nice guy, very prompt and professional.\" \"Thank you for your service, amazing job\" They describe a roofer who inspects, files the claim, meets the adjuster and puts a new roof on in a day.",
       "Your site says \"Roofing Redefined for Modern Living\" with no town, and none of those reviews. Its Services menu goes nowhere.",
       "So we built this site around your customers' words."
     ],
@@ -613,5 +673,21 @@
       "text": "Your customers already say you're the one to call. Book a strategy call with Fluid Frame and we'll walk you through this demo and plan your new site."
     }
   },
-  "onboardingQuestions": []
+  "onboardingQuestions": [
+    "Owner's full name and how he wants to be introduced: BBB lists Yagnesh Zinzuwadia, customers say Ravi.",
+    "Is ravi@flawlessroofingcousa.com the address to publish?",
+    "Manufacturer certifications (GAF, Owens Corning, CertainTeed): which, and where are you listed? None is claimed in this copy.",
+    "Kansas roofing contractor registration number, license and insurance details to show.",
+    "Free class 4 upgrade, downspouts and gutter guards: current, and any terms or limits? Does it apply to every new roof?",
+    "Is NEW ROOFS STARTS AT 99$ a real offer, and what does it cover? It is left out.",
+    "Warranty on workmanship or materials, and any financing partner: none found, so none claimed.",
+    "Years in business: BBB shows March 2023; the site shows no number.",
+    "Service area: BBB lists Butler, Harvey, Kingman, Reno, Sedgwick and Sumner Counties; the site names only Wichita. Which towns should be listed?",
+    "Derby address on BBB: is it a live office?",
+    "Does the 928 S Broadway office take walk-ins, and do the Google hours match Monday to Friday, 10 to 6?",
+    "Commercial roofing: how much of the work, and any project types to name?",
+    "Typical roof schedules, and whether the free tarp for a leak is standard or was a one-off.",
+    "The $200 referral reward: current, and may it go on the site?",
+    "How should the crew be named, and are there photos of finished Wichita roofs we can use?"
+  ]
 }
