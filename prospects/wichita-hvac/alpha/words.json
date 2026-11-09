@@ -108,7 +108,7 @@
           "heading": "One Company for Heating, Cooling and Plumbing",
           "body": [
             "**You call one number for the furnace, the air conditioner and the water heater.** We repair all makes and models of heating and cooling equipment, and we handle residential and commercial plumbing.",
-            "When a new system and plumbing work are on the same list, one crew can handle both, so you are not coordinating two companies."
+            "When a new system and plumbing work are on the same list, one company can handle both, so you are not coordinating two."
           ],
           "image": {
             "slot": "home-one-company",
@@ -236,7 +236,7 @@
           "heading": "When Your AC Quits",
           "body": [
             "**Call us when it stops cooling, any hour.** We run 24-hour emergency service and repair all makes and models of air conditioning equipment.",
-            "Waiting on a dead AC is miserable, so we move fast on every call, weekends included."
+            "Waiting on a dead AC is miserable, so we move fast, and our emergency service runs 24 hours a day."
           ],
           "image": {
             "slot": "ac-quits",

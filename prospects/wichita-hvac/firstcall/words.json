@@ -44,7 +44,7 @@
     {
       "name": "AC and Furnace Replacement",
       "route": null,
-      "blurb": "We have replaced a full furnace and AC system in a single day, with the price explained first."
+      "blurb": "A new heating and cooling system shouldn't take over your week, and you hear the price before we start."
     },
     {
       "name": "Seasonal Checkups",
@@ -54,7 +54,7 @@
     {
       "name": "Ductwork",
       "route": null,
-      "blurb": "We have replaced a main air supply duct, start to finish, in one day."
+      "blurb": "Ductwork work that keeps your project moving instead of holding it up."
     },
     {
       "name": "Geothermal Service",
@@ -141,10 +141,10 @@
         },
         {
           "type": "split",
-          "heading": "New Systems and Ductwork, Installed in a Day",
+          "heading": "New Systems and Ductwork, Without the Wait",
           "body": [
-            "When replacement is the answer, **we have replaced a full furnace and AC system in a single day.**",
-            "Ductwork too: we have replaced a main air supply duct in one day, for a basement renovation."
+            "When replacement is the answer, **a new system shouldn't take over your week.** We plan the work so you are back to normal quickly.",
+            "Ductwork too: we work so a renovation or remodel keeps its schedule, and you hear the price first."
           ],
           "image": {
             "slot": "home-ductwork",
@@ -200,7 +200,7 @@
       "hero": {
         "eyebrow": "AC repair",
         "h1": "AC Repair in Wichita, KS — 1st Call Heating & Cooling",
-        "sub": "When your AC stops cooling, we work you in. We have been out the same day, and after one call we were there in under an hour. Then you hear what a repair costs against a replacement.",
+        "sub": "When your AC stops cooling, we work you in. We move fast, and you don't wait days for an answer. Then you hear what a repair costs against a replacement.",
         "primaryCta": {
           "label": "Call (316) 371-3815",
           "action": "call"
@@ -229,8 +229,8 @@
             "We have also diagnosed an upstairs AC that blew no air while the outside unit kept running."
           ],
           "list": [
-            "**A seized fan**, replaced in a short period of time",
-            "**A bad capacitor and relay**, replaced when the AC stopped cooling",
+            "**A seized fan**, replaced without a long wait",
+            "**A failed part**, replaced so your AC cools again",
             "**No airflow** while the outside unit still runs"
           ],
           "image": {
@@ -250,7 +250,7 @@
           "heading": "When to Call",
           "body": [
             "Call when your AC stops cooling, blows no air, leaks, or runs outside while the house stays warm.",
-            "**We have worked a Friday afternoon call in** while other companies were booking the following week. Call us the morning it quits."
+            "**We work urgent calls in** instead of making you wait for an opening. Call us the morning it quits."
           ]
         },
         {
@@ -294,7 +294,7 @@
           "type": "prose",
           "heading": "Keep It Running Between Repairs",
           "body": [
-            "We have shown homeowners how to maintain their AC and offered follow-up appointments to get the unit ready for AC season.",
+            "We show you how to look after your AC, and we can set a checkup to get the unit ready for AC season.",
             "Ask us about a checkup when you call."
           ]
         },
@@ -321,7 +321,7 @@
             },
             {
               "q": "Do you help me look after my AC?",
-              "a": "Yes. We have shown homeowners how to maintain their unit and offered follow-up appointments before AC season."
+              "a": "Yes. We show you how to look after your unit, and we can book a checkup before AC season."
             },
             {
               "q": "Do you work on older air conditioners?",
@@ -349,7 +349,7 @@
       "hero": {
         "eyebrow": "Furnace repair",
         "h1": "Furnace Repair in Wichita, KS — 1st Call Heating & Cooling",
-        "sub": "When your furnace or heater quits, we find the cause and get your heat back on. When it is too old to repair, we replace it, and we have replaced a full furnace and AC system in a single day.",
+        "sub": "When your furnace or heater quits, we find the cause and get your heat back on. When it is too old to repair, we replace it, and we explain the price first.",
         "primaryCta": {
           "label": "Call (316) 371-3815",
           "action": "call"
@@ -406,8 +406,8 @@
           "type": "split",
           "heading": "Repair or Replace Your Furnace",
           "body": [
-            "Some furnaces are past another repair. We explain the different types of units and the size your home needs, and give you a fair estimate.",
-            "**You choose.** When you replace, our crew has done a full system in a single day."
+            "Some furnaces are past another repair. We explain your options and the size your home needs, and give you a fair estimate.",
+            "**You choose.** When you replace, our crew works so the job doesn't take over your week."
           ],
           "image": {
             "slot": "furnace-replace",
@@ -423,10 +423,10 @@
         },
         {
           "type": "prose",
-          "heading": "A Full System in One Day",
+          "heading": "Replacement That Respects Your Time",
           "body": [
-            "We replaced a nearly 40 year old furnace and AC system in a single day.",
-            "On that job we also flagged a problem with the gas company's equipment the homeowner had not known about, and offered follow-up appointments to make sure the unit was ready for AC season."
+            "A new system shouldn't take over your week, and an old one shouldn't leave you guessing.",
+            "If we spot a problem you had not known about, we tell you, and we can set a checkup to make sure the unit is ready for the season."
           ]
         },
         {
@@ -439,7 +439,7 @@
           "heading": "Home Warranty Furnace Repairs",
           "body": [
             "When your home warranty company sends you to us, we get your heat back on and work to keep the cost down.",
-            "We have restored heat for a family with a baby after four days without it. Call us with the details of your system."
+            "When the heat is out, we work hard to get it back on and keep the cost down. Call us with the details of your system."
           ]
         },
         {
@@ -461,11 +461,11 @@
             },
             {
               "q": "Will you explain my options before I decide?",
-              "a": "Yes. We explain the different types of units and the size your home needs, and give you a fair estimate."
+              "a": "Yes. We explain your options and the size your home needs, and give you a fair estimate."
             },
             {
               "q": "Can you replace a furnace and AC together?",
-              "a": "Yes. We have replaced a full furnace and AC system in a single day."
+              "a": "Yes. We replace both together, and a new system shouldn't take over your week."
             },
             {
               "q": "Do you do home warranty work?",
@@ -550,7 +550,7 @@
     "about": "1st Call Heating & Cooling repairs and replaces air conditioners and furnaces from an office on West 50th Street North in Wichita, Kansas.",
     "why": [
       "AC and furnace repair",
-      "Full systems replaced, even in a single day",
+      "Full systems replaced, with the price explained first",
       "Repair or replace: you get both numbers",
       "Office on W 50th St N in Wichita"
     ]
