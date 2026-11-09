@@ -1,0 +1,218 @@
+{
+  "kind": "google-review-pull",
+  "version": 1,
+  "slug": "ramco-building-maintenance",
+  "place": {
+    "name": "Ramco Building Maintenance",
+    "placeId": "ChIJC16wA73juocRWG69v-0Gx04",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Ramco%20Building%20Maintenance&query_place_id=ChIJC16wA73juocRWG69v-0Gx04",
+    "address": "330 N Cleveland, Wichita, KS 67214",
+    "phone": "(316) 262-7900",
+    "rating": 4.5,
+    "totalReviewCount": 25
+  },
+  "pulledAt": "2026-11-09T18:32:54.584Z",
+  "requestedMax": 75,
+  "reviews": [
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUN0M3EtT0ZREAE",
+      "reviewer": "Laura P.",
+      "rating": 5,
+      "text": "Ramco does a great job cleaning for our business; very reliable and responsive.",
+      "publishedAt": "2024-01-30T12:41:50.125Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN0M3EtT0ZREAE!2m1!1s0x0:0x4ec706edbfbd6e58!3m1!1s2@1:CIHM0ogKEICAgICt3q-OFQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUN0a3ItUEZ3EAE",
+      "reviewer": "Brian H.",
+      "rating": 5,
+      "text": "Dealing with Ramco for our janitoral needs. amaing people to work with very prompt and care about servise they provide.",
+      "publishedAt": "2024-01-29T22:06:33.914Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN0a3ItUEZ3EAE!2m1!1s0x0:0x4ec706edbfbd6e58!3m1!1s2@1:CIHM0ogKEICAgICtkr-PFw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUN0b3NYV0FREAE",
+      "reviewer": "Jeff T.",
+      "rating": 5,
+      "text": "We've used Ramco for a number of years and found them to be an excellent janitorial service! They are very responsive when there is an issue or a new area needing cleaned or a change in our schedule that affects them. I'd highly recommend them!",
+      "publishedAt": "2024-01-29T20:52:00.364Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN0b3NYV0FREAE!2m1!1s0x0:0x4ec706edbfbd6e58!3m1!1s2@1:CIHM0ogKEICAgICtosXWAQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNxbDdteHhBRRAB",
+      "reviewer": "Tyler F.",
+      "rating": 5,
+      "text": "Matt has been great to work with. He is attentive, responsive, and consistently checks-in. RAMCO has been a great solution for our janitorial needs. Carpet, tile, glass, restrooms, office cleaning; it all falls under RAMCO. It's great to have a one-stop-shop for all things custodial services. Would highly recommend.",
+      "publishedAt": "2021-06-21T18:45:26.230Z",
+      "ownerResponse": "Thank you Tyler, we Greatly appreciate our Partnership!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNxbDdteHhBRRAB!2m1!1s0x0:0x4ec706edbfbd6e58!3m1!1s2@1:CIHM0ogKEICAgICql7mxxAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNLdnN5R1pnEAE",
+      "reviewer": "SF P.",
+      "rating": 5,
+      "text": "Wonderful staff and consistent operation.  Highly recommend!",
+      "publishedAt": "2021-04-07T01:36:41.535Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNLdnN5R1pnEAE!2m1!1s0x0:0x4ec706edbfbd6e58!3m1!1s2@1:CIHM0ogKEICAgICKvsyGZg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNLbnVYWmh3RRAB",
+      "reviewer": "Giannina",
+      "rating": 5,
+      "text": "Amazing crew & the attention to detail is amazing! I would recommend them to everyone.",
+      "publishedAt": "2021-04-06T16:17:59.098Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNLbnVYWmh3RRAB!2m1!1s0x0:0x4ec706edbfbd6e58!3m1!1s2@1:CIHM0ogKEICAgICKnuXZhwE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNLbnVYcDhBRRAB",
+      "reviewer": "Patti D.",
+      "rating": 5,
+      "text": "Amazing company from owner to cleaners. Always willing to take calls and answer any questions. Excellent sanitation skills which are needed in this pandemic.",
+      "publishedAt": "2021-04-06T16:14:56.221Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNLbnVYcDhBRRAB!2m1!1s0x0:0x4ec706edbfbd6e58!3m1!1s2@1:CIHM0ogKEICAgICKnuXp8AE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNLc09mSjN3RRAB",
+      "reviewer": "Lisa N.",
+      "rating": 5,
+      "text": "We have a 10 year relationship with Ramco and they have done a great job cleaning both of our commercial locations. We really appreciate the consistent quality!",
+      "publishedAt": "2021-03-25T16:59:07.172Z",
+      "ownerResponse": "Thank You Lisa, we Greatly appreciate our partnership with Murphy Tractor as well.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNLc09mSjN3RRAB!2m1!1s0x0:0x4ec706edbfbd6e58!3m1!1s2@1:CIHM0ogKEICAgICKsOfJ3wE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNLc05QVDB3RRAB",
+      "reviewer": "Kevin L.",
+      "rating": 4,
+      "text": "n/a",
+      "publishedAt": "2021-03-25T16:26:53.455Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNLc05QVDB3RRAB!2m1!1s0x0:0x4ec706edbfbd6e58!3m1!1s2@1:CIHM0ogKEICAgICKsNPT0wE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNvenRiVVRnEAE",
+      "reviewer": "Mike R.",
+      "rating": 5,
+      "text": "I have worked with this company for many years, You won’t find a better company !! First class .",
+      "publishedAt": "2019-02-15T19:40:38.728Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNvenRiVVRnEAE!2m1!1s0x0:0x4ec706edbfbd6e58!3m1!1s2@1:CIHM0ogKEICAgICoztbUTg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURRbWYtZ0RREAE",
+      "reviewer": "Sara C.",
+      "rating": 5,
+      "text": "Love love love them.    Will never hire anyone else to clean my company offices",
+      "publishedAt": "2018-04-08T16:51:04.699Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURRbWYtZ0RREAE!2m1!1s0x0:0x4ec706edbfbd6e58!3m1!1s2@1:CIHM0ogKEICAgIDQmf-gDQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURBZzdqZGNnEAE",
+      "reviewer": "Richard S.",
+      "rating": 5,
+      "text": "Great people to work for",
+      "publishedAt": "2018-02-20T11:35:26.698Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURBZzdqZGNnEAE!2m1!1s0x0:0x4ec706edbfbd6e58!3m1!1s2@1:CIHM0ogKEICAgIDAg7jdcg%7C%7C?hl=en-US",
+      "language": "en"
+    }
+  ],
+  "ratingOnly": [
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2s5RWJFRnFNWFppVkZaaGR6SmZUM1JRVTBWTVIyYxAB",
+      "reviewer": "Edgar M.",
+      "rating": 1,
+      "publishedAt": "2025-08-25T19:56:18.142Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUROdDVQM1ZnEAE",
+      "reviewer": "Landon U.",
+      "rating": 5,
+      "publishedAt": "2024-01-27T04:04:20.230Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURlOEtiV2xnRRAB",
+      "reviewer": "Randa G.",
+      "rating": 5,
+      "publishedAt": "2022-09-30T05:14:55.965Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNLMllUZzFnRRAB",
+      "reviewer": "Aryn R.",
+      "rating": 5,
+      "publishedAt": "2021-04-11T02:14:37.215Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNLOFBXeUFnEAE",
+      "reviewer": "bobby W.",
+      "rating": 5,
+      "publishedAt": "2021-03-25T21:19:11.796Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNLOEtHU0dREAE",
+      "reviewer": "Jace D.",
+      "rating": 5,
+      "publishedAt": "2021-03-25T20:16:40.403Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNLOE43YzFRRRAB",
+      "reviewer": "Mike W.",
+      "rating": 5,
+      "publishedAt": "2021-03-25T20:04:27.460Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNLa0lDXzh3RRAB",
+      "reviewer": "Chad D.",
+      "rating": 5,
+      "publishedAt": "2021-03-24T22:05:46.648Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUN5aE5fVTd3RRAB",
+      "reviewer": "Linda L.",
+      "rating": 5,
+      "publishedAt": "2021-01-19T19:26:09.211Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURTbnBYVXR3RRAB",
+      "reviewer": "TAMBORAZO S.",
+      "rating": 1,
+      "publishedAt": "2020-12-27T04:30:39.900Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNjdWZPYW1RRRAB",
+      "reviewer": "Maria T.",
+      "rating": 5,
+      "publishedAt": "2020-03-16T08:58:46.377Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNzdExxcjN3RRAB",
+      "reviewer": "D M.",
+      "rating": 1,
+      "publishedAt": "2020-01-23T15:54:12.438Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURVcTRMNkxREAE",
+      "reviewer": "Carlos C.",
+      "rating": 5,
+      "publishedAt": "2019-09-04T15:01:44.303Z"
+    }
+  ]
+}
