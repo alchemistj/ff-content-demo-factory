@@ -264,6 +264,18 @@
         },
         {
           "type": "prose",
+          "heading": "Fewer, Larger Windows Where They Fit",
+          "body": [
+            "Older houses often have lots of small windows. When we measure, we look for openings where one larger window can take the place of two or three small ones. The house looks cleaner from the street, and you have fewer windows to buy and install, which can take a real bite out of the cost of the job."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Our house originally had 34 windows, and Anthony was able to make it so that we would only need 17 windows to replace the whole house.",
+          "name": "Rob R."
+        },
+        {
+          "type": "prose",
           "heading": "Cooler Rooms and Less Noise",
           "body": [
             "**New energy efficient windows seal tight, so rooms hold the temperature you set.** The drafts stop, and most of the noise from outside goes with them.",
@@ -322,10 +334,6 @@
             {
               "q": "How long does installation take?",
               "a": "We have installed all of a home's windows in under four hours, and eleven windows in one day. On larger homes we have come back a second day for trim and caulk."
-            },
-            {
-              "q": "Do you take the old windows away?",
-              "a": "Yes. We clean up and haul the old windows off with us."
             },
             {
               "q": "Do you replace basement windows?",
