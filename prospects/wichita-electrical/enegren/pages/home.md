@@ -37,7 +37,9 @@ If we find something that needs a bigger fix, we tell you what it is and why, an
 
 ## Electrical Repair
 
-People call us about the things a house does that don't feel right. A breaker that trips again right after you reset it. An outlet or switch plate that's warm to the touch. Lights that flicker, or a room where the power just quit.
+People call us about what a house does that doesn't feel right. A breaker trips again right after you reset it. An outlet or switch plate is warm to the touch.
+
+Lights flicker, or a room where the power just quit.
 
 
 
@@ -61,7 +63,7 @@ When a panel does need to go, we replace it with a larger one and label every ci
 
 ## Lighting, Surge Protection and More
 
-A lot of our work is the kind that makes a house nicer to live in. New pendant lights over the kitchen island. Cabinet lighting. Better light in the living room and bedroom, inside and out.
+A lot of our work makes a house nicer to live in: pendant lights, cabinet lighting, better light in the living room and bedroom, inside and out.
 
 Kansas storms are hard on wiring.
 

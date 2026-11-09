@@ -44,7 +44,7 @@ We explain how we charge before the work, so there are no surprises when it's do
 
 Part of a house losing power is usually a tripped breaker, a failed GFCI outlet, or a connection that has let go somewhere along the circuit. Finding which means testing it, not guessing.
 
-We've traced power losses down to the wiring and fixed them, from a pair of bathrooms with no power to a whole house after a storm.
+We've traced power losses down to the wiring and fixed them, from a pair of bathrooms with no power to a house hit by lightning.
 
 > "We had an electric issue and our power went out in both of our bathrooms. Engreen showed up and trouble shot all the electrical issues. And fixed the problem and cleaned up after their work!"
 > — Sean C.
