@@ -2,7 +2,7 @@
 
 # AC Repair in Wichita, KS — Alpha HVAC & Plumbing
 
-When your air conditioner quits, the house gets hot fast. We repair all makes and models, find the part that failed and tell you what the fix costs before we start. Call any hour for emergency service.
+When your air conditioner quits, the house gets hot fast. We repair all makes and models, find the part that failed and explain what it takes to fix. Call any hour for emergency service.
 
 **Buttons:** Call (316) 260-5775 | Get a Free Estimate
 
@@ -37,7 +37,7 @@ Many of these are a single part, not a new air conditioner.
 
 You tell us what the AC is doing: warm air, no start, noise, ice, a water leak. That tells us where to look before we arrive.
 
-The technician checks the system, finds the failed part and explains what they found. You get the price before the repair begins.
+The technician checks the system, finds the failed part and explains what they found and what the repair involves.
 
 Then we fix it. We repair all makes and models of air conditioning equipment, so the brand on your outdoor unit doesn't matter.
 
@@ -64,7 +64,7 @@ A few checks cost nothing and sometimes solve the problem.
 - **Check the breaker.** A tripped breaker can shut off the outdoor unit.
 - **Look at the outdoor unit.** Clear leaves and debris from around it.
 
-If the AC is still warm after that, turn it off and call. Running a frozen or struggling system can turn a small repair into a big one.
+If the AC is still warm after that, turn it off and call. A repair that's a capacitor today can be a compressor next week if the system keeps running hard. Running a frozen or struggling system can turn a small repair into a big one.
 
 > "Geoff's years of experience in the industry was apparent in how thorough he was and in how he explained the situation and our options. He was patient with us and took the time to ensure we understood."
 > — Jack M.
@@ -78,7 +78,7 @@ All makes and models of air conditioning equipment.
 Yes. Our emergency service runs 24 hours a day. The office is open Monday to Friday, 7:30 AM to 5:00 PM.
 
 **What will the repair cost?**
-It depends on the part that failed. You get the price before the repair starts, and nothing begins without your okay.
+It depends on the part that failed. A capacitor and a condenser are very different repairs, so the technician tells you what failed and what it will take to fix.
 
 **Is it worth repairing, or should I replace it?**
 We find the failed part first. If the repair makes sense, we make it. If the system is at the end of its life, we tell you and give you a free replacement estimate.

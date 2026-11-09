@@ -2,7 +2,7 @@
 
 # Contact Alpha HVAC & Plumbing
 
-Call us first. Emergency service runs 24 hours a day, and we'll tell you what to expect.
+Call us first. Emergency service runs 24 hours a day, and whoever answers will tell you what happens next.
 
 **Buttons:** Call (316) 260-5775 | Get a Free Estimate
 
@@ -12,7 +12,7 @@ If your AC or furnace is out, or something is leaking, call (316) 260-5775. Don'
 
 ## If It Can Wait
 
-Send a message with your name, phone number, email and what's going on. Tell us what the equipment is doing, and what you've already tried. You can also email tomt@alpha-heatair.com.
+Send a message with your name, phone number, email and what's going on. Tell us what the equipment is doing, what you've already tried and, for plumbing, where the water is showing up. We'll follow up on weekdays during office hours. You can also email tomt@alpha-heatair.com.
 
 Replacement estimates for heating and cooling equipment are free, and so are water heater replacement estimates.
 

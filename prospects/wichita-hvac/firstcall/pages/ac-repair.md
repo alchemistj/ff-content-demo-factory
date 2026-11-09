@@ -28,9 +28,9 @@ Most of these are repairs, not replacements.
 
 We start by finding out why it stopped, not by guessing. We check the thermostat, the power, the capacitor, the contactor and relay, the fan motors, the coils, the airflow and the drain.
 
-Once we know what failed, we tell you in plain words, show you the part and tell you what the repair costs. You get the cost before we replace anything.
+Once we know what failed, we tell you in plain words what it is and what the repair costs. You get the cost before we replace anything.
 
-If the part is on the truck, we replace it and test the system before we go. If it isn't, we tell you what we need and when we can be back.
+Then we replace the part and check that the system is running.
 
 ## Repair or Replace: What We'll Tell You
 
@@ -62,7 +62,7 @@ When something is wrong, you should know what it is.
 
 We walk you through the problem and the choices, and we say honestly if a choice isn't worth it. If a new system is the better answer, we'll help you size and plan the replacement, and we can install it.
 
-An outside unit also has to sit level and stable, or it wears itself out faster. When we install one, we check that too.
+An outside unit also has to sit level and stable, or it wears itself out faster. When we install one, we level it.
 
 > "My upstairs AC was failing to blow any air at all, as the outside unit continued to run. I called Mike late in the day. He advised me what to do and he and Austin were out to look at my unit the next afternoon. … The problem was diagnosed and options for a fix were given to me as well as cost. I opted for a new install given the age of my system. The next day, they were prompt and on time. No hidden costs. They went over and beyond to raise and level out my new outside unit!"
 > — Paul F.
@@ -82,7 +82,7 @@ Yes, and also if you don't. If it's a repair, we repair it.
 Often we can tell you what's likely from what you describe, but we won't know until we see the unit. Call and describe it.
 
 **Do you also replace air conditioners?**
-Yes. We replace AC units and full heating and cooling systems, and many full systems are installed in one day. See [our full list of services](/home/).
+Yes. We replace AC units and full heating and cooling systems, and many full systems are installed in one day. See [everything we do](/home/).
 
 ## Call About Your AC
 

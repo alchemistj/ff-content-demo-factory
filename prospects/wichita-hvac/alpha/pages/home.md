@@ -13,7 +13,7 @@ We repair and replace air conditioners and furnaces, and we fix plumbing too. Wh
 
 When the AC quits in July or the furnace quits in January, the worry is the same. Is this a small part, or a four-figure bill?
 
-Most of the time it's a part: a capacitor, a motor, an igniter, a control board. We find the one that failed, show you what we found and give you the price before we start.
+Most of the time it's a part: a capacitor, a motor, an igniter, a control board. We find the one that failed, show you what we found and tell you what it takes to fix it.
 
 Sometimes the unit really is finished. When it is, we say so and explain why. When it isn't, we don't sell you a new one.
 
@@ -55,6 +55,8 @@ Most breakdowns give a warning first: a part that's wearing, a filter that's clo
 
 We service your air conditioner and your heating system so they keep running efficiently year-round.
 
+A visit usually means a new filter if it needs one, a look at the electrical parts that wear out first, a clean outdoor unit and a check of the temperature at the registers. You should leave knowing what's fine and what's wearing.
+
 > "Another excellent seasonal "maintenance agreement" visit from Alpha. Tom called to conveniently schedule & Brett was on time, personable, and thorough. Appreciated the report of a low capacitor report so the MFD could be replaced, instead of an emergency call this summer when it predictably would've gone out …"
 > — Molly L.
 
@@ -62,7 +64,11 @@ We service your air conditioner and your heating system so they keep running eff
 
 We're a plumbing company as well as an HVAC company, and we serve homes and businesses.
 
-**Water heaters.** A water heater usually fails at the tank. You find out when the water goes lukewarm, or when there's water on the floor around it. We replace and install new water heaters and give you a free estimate. We also service existing ones to keep them running.
+**Water heaters.** A water heater usually fails at the tank. You find out when the water goes lukewarm, or when there's water on the floor around it.
+
+Sediment builds up in the bottom of the tank over the years and the tank wears out. Servicing it before then is cheaper than replacing it in a hurry. We replace and install new water heaters and give you a free estimate.
+
+We also service existing ones to keep them running.
 
 **Plumbing repairs.** Leaks, clogs, backups and failed fixtures get repaired by the same company that answers your heating and cooling calls.
 
@@ -70,6 +76,14 @@ We're a plumbing company as well as an HVAC company, and we serve homes and busi
 
 > "We were quoted some crazy number on a serious plumbing backup not to long ago and I remembered their plumbing devision and we called, that call saved us a lot of money."
 > — Mickey L.
+
+## One Company for the Whole House
+
+Your furnace, your air conditioner and your water heater are the three machines that make a house livable. They wear out on their own schedules, and they often sit within a few feet of each other.
+
+Having one company for all three means one phone number, one office that knows your house and no hunting for a second contractor when the water heater goes the week after the furnace.
+
+We work on homes and businesses across Wichita and the surrounding areas.
 
 ## Questions Before You Call
 
@@ -96,6 +110,6 @@ Wichita and the surrounding areas.
 
 ## When It Quits, Call
 
-Call and tell us what the house is doing. We'll get a technician headed your way, and you'll know what failed and what it costs before the work starts.
+Call and tell us what the house is doing. We'll get a technician headed your way, and you'll know what failed and what the fix involves before the work starts.
 
 Call (316) 260-5775, any hour for emergencies. Office hours are Monday to Friday, 7:30 AM to 5:00 PM. You can also email tomt@alpha-heatair.com or visit us at 3101 W Harry St, Wichita, KS 67213.

@@ -2,7 +2,7 @@
 
 # Furnace Repair in Wichita, KS — Alpha HVAC & Plumbing
 
-When your furnace stops, the house gets cold quickly. We repair all makes and models of heating equipment, find the part that failed and tell you what the fix costs before we start. Call any hour for emergency service.
+When your furnace stops, the house gets cold quickly. We repair all makes and models of heating equipment, find the part that failed and explain what it takes to fix. Call any hour for emergency service.
 
 **Buttons:** Call (316) 260-5775 | Get a Free Estimate
 
@@ -45,7 +45,7 @@ Replacing parts until the problem goes away costs you money. We find the cause f
 
 Furnaces that cycle on and off, or never reach the temperature on the thermostat, often have a cause that isn't the first thing you'd guess. That's why the diagnosis comes first.
 
-You hear what we found, and you get the price before the repair begins.
+You hear what we found and what the repair involves.
 
 > "We had 2 other companies out in the couple of months to look at our furnace. One partially fixed the issue and the other told us we needed to replace the the whole unit. Sean and his crew came out twice before a deep freeze and took the time to find the cause of the issue!"
 > — Jenae W.
@@ -63,9 +63,9 @@ We install new heating equipment, and high-efficiency heating equipment comes wi
 
 ## What a New Install Looks Like
 
-A new furnace is a big job in your home. Where it goes in and how it's cleaned up matters as much as the equipment.
+A new furnace is a big job in your home. How it goes in and how the space is left matters as much as the equipment.
 
-We install it, check it and leave the space clean.
+We install it, check that it's running right and leave the space clean. Before the work starts, you'll see the estimate and your options, with no charge for the replacement estimate.
 
 > "Had a new furnace installed and the team at Alpha did great work and were very neat as they installed the furnace."
 > — Kasie M.
@@ -79,7 +79,7 @@ All makes and models of heating equipment.
 Yes. Our emergency service runs 24 hours a day. The office is open Monday to Friday, 7:30 AM to 5:00 PM.
 
 **What will the repair cost?**
-It depends on the part that failed. You get the price before the repair starts.
+It depends on the part that failed. An igniter and a control board are very different repairs, so the technician tells you what failed and what it will take to fix.
 
 **Should I repair or replace my furnace?**
 We find what failed first. If a repair makes sense, we make it. If the furnace is at the end of its life, we tell you and give you a free replacement estimate.
