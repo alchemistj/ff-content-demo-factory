@@ -84,6 +84,6 @@ Most aren't. That's why the glass is cut after we measure, to the shower you act
 
 Call and tell us about your shower, and we'll come out and measure.
 
-Call (316) 712-8147 or send a quote request. Modern Glass Structures, 1301 E Harry St, Wichita, KS 67211.
+Call (316) 712-8147 or ask for a quote online. Modern Glass Structures, 1301 E Harry St, Wichita, KS 67211.
 
 See also: [Window Glass Replacement](/window-glass-replacement-wichita-ks/)

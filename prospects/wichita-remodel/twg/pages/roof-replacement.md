@@ -95,4 +95,4 @@ Our work carries a 100% Satisfaction Guarantee. Call (316) 685-1010.
 
 Call and we'll look at the roof and tell you what it needs. If there's a claim, we'll work with your adjuster.
 
-Call TWG Construction at (316) 685-1010 for a free estimate.
+Call TWG Construction at (316) 685-1010 to set up a free roof estimate.

@@ -62,7 +62,7 @@ We also install entry and security doors in vinyl, wood and fiberglass.
 
 After a big storm, a lot of roofing companies show up on the same streets. Some are here for the season and gone before the first leak.
 
-We're a Wichita company with an office you can drive to, and we've been working on local houses since 1986. Ask any contractor for their license and proof of insurance. Ours are in order.
+We're a Wichita company with an office you can drive to. Ask any contractor for their license and proof of insurance. Ours are in order.
 
 Then read our Google reviews. The same few things come up again and again: a quick crew, a clean yard and someone who explained the insurance.
 
@@ -84,7 +84,7 @@ One crew that already knows your house is easier than finding a painter after th
 
 ## Licensed, Insured and Local Since 1986
 
-We're fully licensed and insured general contractors with one office, in Wichita. We've worked on Wichita houses since 1986.
+We're fully licensed and insured general contractors with one office, in Wichita. We know local houses, local weather and local codes.
 
 Our work carries a 100% Satisfaction Guarantee. If something isn't right, you call the office that quoted it.
 
@@ -114,4 +114,4 @@ The same office, (316) 685-1010. Our work carries a 100% Satisfaction Guarantee.
 
 Call and we'll look at the roof, the siding, the windows and the doors, and give you a price. If there's an insurance claim, we'll work with your adjuster.
 
-Call TWG Construction at (316) 685-1010 for a free estimate.
+Call TWG Construction at (316) 685-1010 and tell us what the storm left behind.

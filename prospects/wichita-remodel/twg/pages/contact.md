@@ -25,4 +25,4 @@ If you're not sure whether the damage is from hail or from age, that's a fine re
 
 We serve Wichita, Kansas, from our one office in Wichita. We're licensed and insured general contractors, and every estimate is free.
 
-Call us at (316) 685-1010. Tell us what you're seeing and we'll set up a time.
+Call us at (316) 685-1010. Tell us what you're seeing and we'll set up a time that works for you. If you reach voicemail, leave your name, your address and a short note about the problem, and we'll call you back. We'd rather hear about a small problem early than a big one after the next storm.

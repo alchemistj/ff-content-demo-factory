@@ -94,4 +94,4 @@ Wichita and nearby areas. Our crews have worked in Newton and Parsons.
 
 Call and tell us what's going on in your house, and we'll tell you where to look first.
 
-Call (316) 263-0711. We serve Wichita and nearby areas.
+Call (316) 263-0711. Our crews cover Wichita, Newton and Parsons.

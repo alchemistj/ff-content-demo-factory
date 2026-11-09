@@ -98,7 +98,7 @@
       "hero": {
         "eyebrow": "Locally owned in Wichita since 2012",
         "h1": "Exterior Remodeling Company in Wichita, KS — Greenway Exteriors",
-        "sub": "I'm John Dye. I own Greenway Exteriors and have lived in Wichita all my life. We replace windows and siding and hang doors across Wichita and nearby towns, and I look at your house and give you the estimate myself, with no pressure.",
+        "sub": "I'm John Dye, and I've lived in Wichita all my life. We replace windows and siding, hang doors, and do the gutters, trim and paint that go with them, and I look at your house and write the price myself. Call me for a free estimate.",
         "primaryCta": {
           "label": "Call (316) 641-8365",
           "action": "call"
@@ -116,80 +116,127 @@
       "sections": [
         {
           "type": "review",
-          "quote": "I felt no pressure, just a great conversation with an expert, who was interested in knowing what I really wanted. Oh, and the prices are fantastic!",
+          "quote": "I shopped several window installers and they all had the same sales pitch and applied high pressure sales tactics … with the accompanying high prices. When I met with John from Greenway Exteriors, I knew right away that this was the right fit. I felt no pressure, just a great conversation with an expert, who was interested in knowing what I really wanted. Oh, and the prices are fantastic!",
           "name": "Anna S."
         },
         {
           "type": "split",
-          "heading": "You Talk to the Owner",
+          "heading": "The Owner Looks at Your House and Prices It",
           "body": [
-            "I'm John, and I come to your house, look at the job and give you the price. You deal with me, the owner, from the first call to the finished job."
+            "Redoing the outside of a house is a big spend, and most of us only do it once or twice. You want the person who writes the number to be the person who stands behind it.",
+            "That's me. I come out, walk around the house with you, and tell you what needs doing and what doesn't. Then I write the price for that work and nothing else.",
+            "The crew finishes the job, and I stop by while it's going on to make sure it's right.",
+            "That is the whole idea of Greenway. A price for the house in front of us, from the person who looked at it."
           ],
           "image": {
             "slot": "home-owner",
             "alt": "Front porch of a Wichita bungalow with new windows beside the door",
             "brief": "bungalow front porch with new windows beside the front door, house on the right, porch steps leading to the left, soft overcast sky behind the text side, no readable text, no people"
-          },
-          "imageSide": "right"
+          }
         },
         {
           "type": "review",
-          "quote": "John came out, gave me a quick bid and had a crew working the next morning. He held his original number and completed the work in the time he stated.",
-          "name": "Mitch B."
+          "quote": "I shopped a few different siding companies in town before selecting Greenway and I can tell you John was the only one whose primary concern was what was in my best interests. The other companies were pushing to replace siding that did not need replaced and they were also much more expensive in their quotes. John quoted exactly what needed to be replaced instead of just trying to run up the bill on me.",
+          "name": "Jason S."
+        },
+        {
+          "type": "prose",
+          "heading": "Window Replacement",
+          "body": [
+            "Most people call about windows because of a room that never gets comfortable. Maybe there's fog between the panes, a draft at the sill, or a sash that fights you every time you open it.",
+            "Each of those means the window has stopped doing its job. The seal around the glass has failed or the frame has worn out, and you're heating and cooling the outdoors through it.",
+            "We replace one window or every window in the house. We also do basement and egress windows, sliding glass doors and entry doors, so the glass and frames on the house match."
+          ],
+          "link": {
+            "label": "See window replacement →",
+            "route": "/window-replacement-wichita-ks/"
+          }
+        },
+        {
+          "type": "review",
+          "quote": "And the windows are SO BEAUTIFUL!!!!!! The difference in the house staying warm is amazing too, the heater hardly kicks on now lol and the price, we compared 6 other companies and he blew them out of the water with the same quality and way better price.",
+          "name": "Amber D."
         },
         {
           "type": "split",
-          "heading": "A Price for What the Job Needs",
+          "heading": "Siding Replacement and Repair",
           "body": [
-            "We quote exactly what needs replacing and nothing more.",
-            "Our bids have come in $10,000 under other quotes on a whole house and 25 to 35% under on a chimney repair. Financing is available, subject to credit approval."
+            "Siding takes the Kansas wind, hail and summer sun before anything else on the house does. When it wears out you can see it: cracks, warped or loose pieces, faded panels, a stain on the ceiling inside.",
+            "What you can't see is the wall behind it, which is where the water goes when siding stops shedding it.",
+            "You don't always need the whole house done. If three walls are fine and one is shot, we'll tell you so and price the one. When the whole house does need it, the old siding leaves with us.",
+            "We also repair siding: rotted boards, storm damage and chimney siding."
           ],
+          "link": {
+            "label": "See siding replacement →",
+            "route": "/siding-replacement-wichita-ks/"
+          },
           "image": {
             "slot": "home-price",
             "alt": "Corner of a house with new siding, trim and a gutter",
             "brief": "corner of a house with new gray siding, white trim and a seamless gutter, corner on the right, plain sky on the left, no readable text, no people"
-          },
-          "imageSide": "right"
+          }
         },
         {
           "type": "review",
-          "quote": "John quoted exactly what needed to be replaced instead of just trying to run up the bill on me.",
-          "name": "Jason S."
+          "quote": "I had a smallish siding project that was rejected by other companies because they couldn't do just a portion of the siding! John and his team rose to the challenge with remarkable efficiency and outstanding work while underbidding others their communication skills were excellent and I will definitely hire them again.",
+          "name": "Stacia S."
+        },
+        {
+          "type": "prose",
+          "heading": "Trim, Gutters and Paint",
+          "body": [
+            "Windows and siding meet the roof edge, the gutters and the paint at the same lines. If you replace one and leave the rest, the old pieces stand out next to the new ones.",
+            "So we do fascia, soffit and trim along with your siding, put up new gutters and gutter protection, and paint the exterior as part of the same job. One crew, one schedule, one set of colors chosen together.",
+            "None of it has to be done at once. If the budget says windows now and siding next year, plan it that way and we'll make the second job fit the first."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "John and his crew did an amazing job! They were 10k less than other quotes I got and John worked hard to get my project done on time and in budget and worked my project in quick! We had new siding, gutters, paint.. my house looks like a totally different house and beautiful!",
+          "name": "Julie B."
         },
         {
           "type": "split",
-          "heading": "Crews That Finish and Clean Up",
+          "heading": "One Company for the Whole Outside",
           "body": [
-            "Our crews start early, work through the day and leave your yard clean."
+            "Water doesn't care which part of the house it gets past. A gap at a window, a loose piece of siding and a sagging gutter can all send it to the same wall.",
+            "That's why we do all of it, and why I look at the whole house even when you call about one window. A leak at a window sill is often a siding or flashing problem, and you should know that before you pay to replace the window.",
+            "Do the whole exterior at once or one project at a time. Either way, you get one company to call."
           ],
           "image": {
             "slot": "home-crew",
             "alt": "Sunlit living room with two large new picture windows",
             "brief": "bright living room with two large new picture windows on the right wall, light falling toward the left, calm neutral wall behind the text side, no readable text, no people"
-          },
-          "imageSide": "right"
+          }
         },
         {
-          "type": "review",
-          "quote": "I just had my house resided, the crew was excellent. They did it in 4 days, these guys didn't waste any daylight.",
-          "name": "Joyce S."
-        },
-        {
-          "type": "services",
-          "heading": "Everything We Do",
-          "intro": "Windows and siding are most of our work. We also replace doors, gutters, fascia and trim and paint the outside, so one crew can finish the whole house."
-        },
-        {
-          "type": "review",
-          "quote": "We had new siding, windows, and doors replaced, and the old home looks great.",
-          "name": "Wayne I."
+          "type": "steps",
+          "heading": "How a Job Goes",
+          "items": [
+            {
+              "title": "You call.",
+              "text": "I answer the phone myself, and I'll give you a rough idea over the phone if you describe what you need."
+            },
+            {
+              "title": "I come out.",
+              "text": "I look at the house, measure, and talk through what you want. The estimate is free."
+            },
+            {
+              "title": "Our crew does the work.",
+              "text": "We start early and work through the day. When we leave, the yard is clean and the old windows, siding and trash go with us."
+            },
+            {
+              "title": "I check back.",
+              "text": "If something isn't right, you call me and we make it right."
+            }
+          ]
         },
         {
           "type": "prose",
-          "heading": "Wichita and Nearby Towns",
+          "heading": "Where We Work",
           "body": [
-            "We work in Wichita, Park City, Bel Aire, Andover, Eastborough, Rose Hill, Haysville, Derby, Goddard, Colwich, Valley Center and Maize, and out to Greenwich, Schulte and Oaklawn-Sunview.",
-            "Call (316) 641-8365 and we'll set a time to see your house."
+            "Wichita, Park City, Bel Aire, Andover, Eastborough, Rose Hill, Haysville, Derby, Goddard, Colwich, Valley Center, Maize, Greenwich, Schulte and Oaklawn-Sunview.",
+            "Our office is at 2807 W River Park Dr in Wichita."
           ]
         },
         {
@@ -198,22 +245,38 @@
           "items": [
             {
               "q": "Is the estimate free?",
-              "a": "Yes. Estimates on windows, doors and siding are free."
+              "a": "Yes. I come to the house, look at the job and give you the price at no charge."
             },
             {
-              "q": "Can you do windows and siding together?",
-              "a": "Yes. Many of our jobs include both, and we price them as one project."
+              "q": "Do you do small jobs?",
+              "a": "Yes. One bathroom window, a garage wall, a chimney or a single section of siding are all jobs we take."
             },
             {
-              "q": "Is financing available?",
-              "a": "Yes, subject to credit approval. Ask about the current offer when you call."
+              "q": "Will the price change after you start?",
+              "a": "The price is for the work I saw. If we open a wall and find rot or damage nobody could see from outside, that is extra work, and it gets its own price."
+            },
+            {
+              "q": "How does your price compare?",
+              "a": "Get other bids and compare them line by line. We've come in under other quotes again and again, because we price the work your house needs and not a package."
+            },
+            {
+              "q": "Do you offer financing?",
+              "a": "Financing is available, subject to credit approval."
+            },
+            {
+              "q": "How fast can you get started?",
+              "a": "Quick. A bid often comes within a day or two of your call, and for some jobs a crew has started the morning after the bid. It depends on the size of the job and what's on the schedule, and I'll tell you when I give you the price."
+            },
+            {
+              "q": "Do I have to do windows and siding together?",
+              "a": "No. Doing them together means the trim gets finished once, but it's your call and your budget."
             }
           ]
         },
         {
           "type": "callBand",
-          "heading": "Ready for New Windows or Siding?",
-          "text": "Call (316) 641-8365 and we'll set up your free estimate."
+          "heading": "Call for a Straight Look at Your House",
+          "text": "Call and I'll come out, look at your windows, siding or doors, and give you a price, with no pressure to sign that day. Greenway Exteriors, (316) 641-8365. 2807 W River Park Dr, Wichita, KS 67203."
         }
       ]
     },
@@ -224,9 +287,9 @@
       "keyword": "window replacement Wichita KS",
       "seo": null,
       "hero": {
-        "eyebrow": "Window replacement",
+        "eyebrow": "Window replacement across Wichita and nearby towns",
         "h1": "Window Replacement in Wichita, KS — Greenway Exteriors",
-        "sub": "We replace one window or every window in your house, and haul the old ones away. I'm John Dye, the owner, and I quote your windows myself. Our installers finish the job clean, and estimates are free.",
+        "sub": "I'm John Dye. I measure your windows myself, tell you which ones really need replacing, and my crew installs them. Call me for a free estimate.",
         "primaryCta": {
           "label": "Call (316) 641-8365",
           "action": "call"
@@ -244,145 +307,114 @@
       "sections": [
         {
           "type": "review",
-          "quote": "John and his team replaced our home’s windows, and the entire experience was outstanding from start to finish. Fair pricing, clear communication, punctual installers, and top-tier workmanship.",
-          "name": "Oxlee M."
+          "quote": "We have been getting window quotes for about 3 years! All our builder grade windows started losing their gas and fogging about 5 years ago. We have over 30 windows in our home, so this was a huge disappointment & going to be quite expensive. John came by and gave us quote within about 20 min. He is honest, easy to deal with.",
+          "name": "Leslie B."
         },
         {
           "type": "split",
-          "heading": "One Window or the Whole House",
+          "heading": "Fog, Drafts, Noise and Windows That Stick",
           "body": [
-            "Start with the window that bothers you most, or replace every one. A small job gets the same attention as a whole house.",
-            "We set each new window so it looks like it was always there, and we work with the trim you already have."
-          ],
-          "list": [
-            "**One window,** set in to look like it belongs",
-            "**A big window** set in for a wider view",
-            "**Every window in the house** in one project",
-            "**A house with many windows,** priced as one job"
+            "You usually know a window is finished before you can say why. A room that never gets comfortable. Curtains that move with the window shut.",
+            "A sash you have to bang to open, or one that won't stay up.",
+            "Fog or a haze between the two panes is the clearest sign. Modern windows are sealed double panes with gas between the glass, and when the seal fails the gas leaks out and moist air gets in. The glass can't be cleaned from the inside, and it no longer insulates the way it did.",
+            "Drafts and noise mean the same thing from another direction. The frame, the weatherstripping or the seal around the glass has worn out, so air and sound come straight through.",
+            "You end up paying to heat and cool the outdoors."
           ],
           "image": {
             "slot": "windows-range",
             "alt": "Gloved hands setting a new window into an opening",
             "brief": "installer's gloved hands, no face and no lettering, setting a new window into an opening, window on the right, hands reaching in from the left, soft blurred siding behind the text side, no readable text"
-          },
-          "imageSide": "right"
+          }
         },
         {
           "type": "review",
-          "quote": "I had a small bathroom window replaced, and the 2 installers were polite, efficient, and matched my exterior trim (from a different company) perfectly.",
-          "name": "Brad K."
-        },
-        {
-          "type": "prose",
-          "heading": "Quieter Rooms and Lower Bills",
-          "body": [
-            "New windows seal out the drafts and street noise your old ones let in.",
-            "Rooms stay warmer, the heater runs less, and the house gets quiet."
-          ]
-        },
-        {
-          "type": "review",
-          "quote": "The new windows have made the house much quieter and we noticed a positive step change in our bills this spring.",
+          "quote": "John took great care of us and our window replacement project. Our old windows were 17 years old and new when the house was built. The new windows have made the house much quieter and we noticed a positive step change in our bills this spring. Plus they are easy to clean.",
           "name": "Darby M."
         },
         {
-          "type": "split",
-          "heading": "Foggy, Stuck or Tired Windows",
+          "type": "prose",
+          "heading": "Why Old Windows Quit",
           "body": [
-            "Builder-grade windows lose their seal and fog between the panes. Older ones stick shut and let drafts in.",
-            "New windows open easily, clean easily and change the look of your house from the street. We look at yours and give you a price."
-          ],
-          "image": {
-            "slot": "windows-fog",
-            "alt": "Bedroom with a new white double-hung window open a few inches",
-            "brief": "bedroom with a new white double-hung window raised a few inches, window on the right, soft daylight falling toward the left, calm plain wall behind the text side, no readable text, no people"
-          },
-          "imageSide": "right"
-        },
-        {
-          "type": "review",
-          "quote": "All our builder grade windows started losing their gas and fogging about 5 years ago. We have over 30 windows in our home, so this was a huge disappointment & going to be quite expensive. John came by and gave us quote within about 20 min.",
-          "name": "Leslie B."
+            "Builder-grade windows are made to a price. The glass seals, the balances that hold a sash up and the plastic or aluminum frames wear out, often after fifteen or twenty years, sometimes sooner on the south and west sides of a Wichita house that take the sun and wind.",
+            "Repainting or re-caulking can slow a leak, but it can't fix a seal inside a sealed glass unit or a frame that has warped. Once the glass has fogged, the unit is done.",
+            "That is why the fix is usually a new window and not a repair. You don't have to replace every window at once. If only the bedroom windows are failing, I'll tell you so, and we do those."
+          ]
         },
         {
           "type": "prose",
-          "heading": "A Window Estimate Without the Sales Pitch",
+          "heading": "Basement and Egress Windows",
           "body": [
-            "You get a price, not a pitch. I look at every opening, answer your questions and give you a number with no hidden fees.",
-            "Take the time you need to decide. Nobody will call you over and over."
+            "The small windows below grade get ignored, and they take a beating: ground moisture, lawn mowers, dirt packed against the frame. Old ones leak, rot the framing around them and let in cold air all winter.",
+            "We replace basement windows and egress windows and seal them in. An egress window is the one a person has to be able to climb out of, so it matters that it opens properly."
           ]
         },
         {
           "type": "review",
-          "quote": "I chose this company because of the pricing and no harassing on purchasing new windows. The installers were very prompt and knowledgeable on the windows.",
-          "name": "Jason F."
+          "quote": "John was very knowledgeable in his work. He replaced a basement window for me. Not only did they finish the job in a quick time frame but was cheaper than all the other contractors by far. I highly recommend them and will be using them again.",
+          "name": "Douglas W."
         },
         {
-          "type": "steps",
-          "heading": "How Your Window Job Goes",
-          "items": [
-            {
-              "title": "We look at your windows",
-              "text": "We come to your house, see what you have and give you the price."
-            },
-            {
-              "title": "You choose your windows",
-              "text": "You pick the style and size for each opening, and we schedule the install."
-            },
-            {
-              "title": "Our installers arrive on time",
-              "text": "They replace your windows and keep to the schedule we set with you."
-            },
-            {
-              "title": "We clean up and check back",
-              "text": "We haul off the old windows and clean the yard and the rooms. If something needs a second look after the install, call us."
-            }
+          "type": "prose",
+          "heading": "Sliding Glass and Entry Doors",
+          "body": [
+            "An old sliding glass door is usually the leakiest opening in the house. The rollers wear down, the track bends, and the seal where the panels meet stops sealing.",
+            "You end up shoving it open with your shoulder and feeling the draft all winter. A new slider glides and shuts tight.",
+            "We install sliding glass doors and entry doors by themselves or with your windows, so the glass, frames and trim all match."
           ]
         },
         {
           "type": "review",
-          "quote": "The workers showed up on time the day of installation and were very efficient & friendly. The windows were installed in one day and they cleaned up yard & inside when they were done.",
+          "quote": "Working with John was simple, fast and friendly. He made choosing a sliding glass door easy and affordable. Really happy with his crew too.",
+          "name": "Ashley H."
+        },
+        {
+          "type": "prose",
+          "heading": "What Install Day Looks Like",
+          "body": [
+            "Before anything is ordered, every opening gets measured, because a replacement window has to fit the opening that's actually there, not the one on the plans. Older Wichita houses often have openings that are slightly out of square.",
+            "On install day the crew takes out the old window, checks the opening, sets the new one level, seals it and trims it so it matches your exterior. The old windows and the trash leave with them.",
+            "A set of windows is typically a one-day job. John tells you how long yours will take when he gives you the price."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "We are extremely happy with our new windows. The original estimate had no hidden fees. The workers showed up on time the day of installation and were very efficient & friendly. The windows were installed in one day and they cleaned up yard & inside when they were done.",
           "name": "Becky E."
         },
         {
-          "type": "prose",
-          "heading": "Price, Warranty and Financing",
-          "body": [
-            "We price your windows fairly and give you the number before the job starts.",
-            "If a window has a defect, we deal with it. Ask us for the warranty terms on the windows you choose. Financing is available, subject to credit approval."
-          ]
-        },
-        {
-          "type": "review",
-          "quote": "Both times he was about half the price of the bigger companies you see all over media. Both him and his guys have always delivered quality installation and once when a window cracked due to manufacturing error, it was replaced free of charge.",
-          "name": "Aaron P."
-        },
-        {
           "type": "faq",
-          "heading": "Window Replacement Questions",
+          "heading": "Questions Before You Call",
           "items": [
             {
-              "q": "How long does installation take?",
-              "a": "It depends on how many windows you replace. We give you the schedule at your estimate."
+              "q": "Do I have to replace every window?",
+              "a": "No. Some houses need all of them, some need two or three. I'll look at each and tell you which are worth replacing."
             },
             {
-              "q": "Do you take the old windows away?",
-              "a": "Yes. We haul the old windows off and clean up when we finish."
+              "q": "What does a window replacement cost?",
+              "a": "It depends on how many windows, their sizes and the style you choose. I give you the price in writing after I see the house, and the estimate is free."
             },
             {
-              "q": "Can I replace just one window?",
-              "a": "Yes. We replace one window, a few or the whole house."
+              "q": "Will new windows lower my energy bills?",
+              "a": "A tight window stops the draft and the air leaking around it, so the house holds its temperature. How much you save depends on how bad the old ones were. Darby M. noticed a difference in her bills that first spring."
             },
             {
-              "q": "What if a window is defective?",
-              "a": "We stand behind the install and replace a defective window. Ask us about the warranty on the windows you pick."
+              "q": "What if there's rot around a window?",
+              "a": "Soft wood at the sill or frame is common behind old, leaking windows. If we find it, that's extra work, it gets its own price, and the new window goes into sound wood."
+            },
+            {
+              "q": "Do you offer financing?",
+              "a": "Financing is available, subject to credit approval."
+            },
+            {
+              "q": "Which towns do you cover?",
+              "a": "Wichita, Park City, Bel Aire, Andover, Eastborough, Rose Hill, Haysville, Derby, Goddard, Colwich, Valley Center, Maize, Greenwich, Schulte and Oaklawn-Sunview."
             }
           ]
         },
         {
           "type": "callBand",
-          "heading": "Get Your Window Estimate",
-          "text": "Call (316) 641-8365 and we'll set up your free window estimate."
+          "heading": "Get a Price on Your Windows",
+          "text": "Call me, tell me what the windows are doing, and I'll come look at them. You get the price from the owner, with no pressure to sign that day. Call (316) 641-8365, or [send us a message](/contact/). Looking at siding too? See [siding replacement](/siding-replacement-wichita-ks/)."
         }
       ]
     },
@@ -393,9 +425,9 @@
       "keyword": "siding replacement Wichita KS",
       "seo": null,
       "hero": {
-        "eyebrow": "Siding replacement",
+        "eyebrow": "Siding replacement and repair in Wichita",
         "h1": "Siding Replacement in Wichita, KS — Greenway Exteriors",
-        "sub": "I'm John Dye, and I own Greenway Exteriors. I look at your house, tell you what siding needs replacing and what doesn't, and quote only that. Our crews work long days and leave the yard clean.",
+        "sub": "I'm John Dye. I come out, look at every wall, and tell you whether your siding needs replacing, repair or nothing yet. Call me for a free estimate.",
         "primaryCta": {
           "label": "Call (316) 641-8365",
           "action": "call"
@@ -413,139 +445,107 @@
       "sections": [
         {
           "type": "review",
-          "quote": "Greenway Exteriors gets the job done fast! They work from sunrise to sunset. They are efficient and do a great job. The price is fair. It looks like a totally new house.",
-          "name": "Lendon J."
+          "quote": "My husband and I needed to replace the entire siding on our home. We wanted to make sure we hired a company that cared about us and our home. We had no less than 7 companies come out and give us bids. … John, the owner came out multiple times during the project to make sure everything was running smooth. His crew were professional, extremely hard working and very knowledgeable about the project.",
+          "name": "Katherine R."
         },
         {
           "type": "split",
-          "heading": "The Whole House or Just the Walls That Need It",
+          "heading": "Signs Your Siding Is Done",
           "body": [
-            "Some jobs are a full re-side. Others are a single wall, a garage or a chimney. We replace both, and we tell you which one your house needs.",
-            "We take off the old siding, put up the new and haul the old away."
+            "Siding takes the Kansas wind, hail and summer sun before anything else on the house does. After enough years it shows.",
+            "Look for cracked or warped panels, boards that have rotted at the bottom edge, chalky or badly faded color, and pieces the wind keeps loosening. Look inside, too. A stain on a ceiling or a damp corner in a room along an outside wall means water is getting behind the siding.",
+            "That is the part that costs money. Siding is the outer layer that sheds water, and the wall behind it, the sheathing and the framing, is what rots when the siding stops doing that."
           ],
           "image": {
             "slot": "siding-main",
             "alt": "Wichita house with half of its walls re-sided in new gray siding",
             "brief": "house with new gray siding across the front wall, house on the right, side yard leading off to the left, calm sky behind the text side, no readable text, no people"
-          },
-          "imageSide": "right"
+          }
         },
         {
           "type": "review",
-          "quote": "I had a smallish siding project that was rejected by other companies because they couldn’t do just a portion of the siding!",
-          "name": "Stacia S."
+          "quote": "Another contractor left the job unfinished and the same day I called this company they came out and finished repairing my siding. Water was coming in to my son's room and the workers made sure everything was sealed and done correctly. There was a great sense of urgency to finish the siding and they stepped up.",
+          "name": "Brendy O."
         },
         {
           "type": "prose",
-          "heading": "A Crew That Stays on Your House",
+          "heading": "The Whole House, or Just the Walls That Need It",
           "body": [
-            "A siding job should not drag on. Our crew works your house until the job is done.",
-            "Call and ask when we can start."
+            "A lot of people assume siding is an all-or-nothing job. It isn't.",
+            "If the siding on three sides is sound and one side was hit by hail or damaged by a leak, we can replace that side. Fixing a chimney or a garage wall is the same idea.",
+            "The trade-off is color and age: new panels next to siding that has weathered for twenty years can look different, and I'll tell you if that's going to bother you.",
+            "When the whole house needs it, we replace the whole house, and the old siding is hauled away. We work in vinyl and fiber cement, and I'll show you what each costs and how each wears before you choose."
           ]
         },
         {
           "type": "review",
-          "quote": "This job was performed in January during a cold snap and his crew were out there for 8 -10 hours everyday even when the temperature was in the single digits.",
-          "name": "James R."
+          "quote": "I called three different companies out for estimates to repair the siding on our chimney, and Greenway was 25-35% cheaper than both the alternatives. John was able to get his crew out to work on the job within the week and got it finished up that day, and chimney looks great!",
+          "name": "Connor G."
         },
         {
           "type": "prose",
-          "heading": "Details That Make the House Look New",
+          "heading": "Siding Repair",
           "body": [
-            "Old siding that cracks, warps or pulls loose comes off, and new siding goes up straight and tight.",
-            "We take time on the corners, seams and edges, the small details that make a re-sided house look finished from the street."
+            "Not every problem is a replacement. Rotted boards, a section the wind took, storm damage, siding around a chimney or a window that has pulled loose: these are repairs, and they're priced as repairs.",
+            "A repair makes sense when the rest of the siding still has years left. If it's failing everywhere, patching only buys time, and I'll say so."
           ]
-        },
-        {
-          "type": "review",
-          "quote": "Greenway Exteriors exceeded my expectations with my Home Siding project. The tedious “added touches” made my house stand out on the block.",
-          "name": "Barbara C."
-        },
-        {
-          "type": "split",
-          "heading": "When We Find Damage Underneath",
-          "body": [
-            "Sometimes the old siding comes off and the boards under it are soft or broken. We tell you what we found and what it costs before we fix it.",
-            "We replace the damaged sheathing and trim first, so the new siding goes onto a solid wall."
-          ],
-          "image": {
-            "slot": "siding-damage",
-            "alt": "Wall of a house with old siding removed and new sheathing going up",
-            "brief": "side wall of a house with the old siding stripped and fresh sheathing boards in place, wall on the right, ladder leaning toward the left, calm sky behind the text side, no readable text, no people"
-          },
-          "imageSide": "right"
-        },
-        {
-          "type": "review",
-          "quote": "Ended up having to do additional trim/osb work then planned due to unexpected damage, and was very fair on additional pricing for that work.",
-          "name": "Andrew D."
         },
         {
           "type": "prose",
-          "heading": "A Straight Price for Your Siding",
+          "heading": "Fascia, Soffit and Trim",
           "body": [
-            "We price the siding your house needs as one job and hold that number. When windows go in at the same time, we plan both around the same walls.",
-            "Get other bids if you like, and compare them against ours."
+            "The fascia is the board along the edge of your roof, the soffit is the underside of the overhang, and trim goes around the windows, doors and corners. When they go soft or pull away, water gets behind the gutters and animals find a way into the attic.",
+            "We replace them along with your siding, so the roof edge matches the new walls. We also repair single pieces. Gutters and exterior painting are done the same way, alongside the siding or windows."
           ]
         },
         {
           "type": "review",
-          "quote": "I had my house siding removed and replaced, I loved my experience with this company from start to finish! They are very straight forward, reasonably priced, and very professional.",
-          "name": "Cody K."
+          "quote": "Had a long piece of aluminum fascia trim blow off in a severe windstorm. Left a message with Greenway Exteriors and John called same day. They were able to come out in 2 days and were able to fabricate a replacement piece on site with the actual textured aluminum material. The price was very reasonable.",
+          "name": "Mark H."
         },
         {
-          "type": "steps",
-          "heading": "How Your Siding Job Goes",
-          "items": [
-            {
-              "title": "We look at the house",
-              "text": "We walk the walls, tell you what needs replacing and give you the price."
-            },
-            {
-              "title": "You choose your siding",
-              "text": "You pick the siding and the colors, and we set a start date."
-            },
-            {
-              "title": "Our crew does the work",
-              "text": "We remove the old siding and install the new. I'm John, and I come by during the project to check on it."
-            },
-            {
-              "title": "We clean up",
-              "text": "We haul away the old siding and leave your yard clean."
-            }
+          "type": "prose",
+          "heading": "What Replacement Looks Like",
+          "body": [
+            "The crew takes off the old siding and looks at the wall underneath before anything new goes on. Damaged sheathing gets fixed. Then the new siding goes up, the trim is finished and the old material goes into the truck.",
+            "Crews start early and work until the light is gone. A whole house takes days, not weeks, and you get the schedule when I give you the price."
           ]
         },
         {
           "type": "review",
-          "quote": "John, the owner came out multiple times during the project to make sure everything was running smooth.",
-          "name": "Katherine R."
+          "quote": "I just had my house resided, the crew was excellent. They did it in 4 days, these guys didn't waste any daylight. They worked from morning to dark. They were very professional, very respectful of my property, answered any questions, and asked questions. When they were finished, their clean up was so good, the only way you knew they had been here, was the beautiful job they did with the siding.",
+          "name": "Joyce S."
         },
         {
           "type": "faq",
-          "heading": "Siding Questions",
+          "heading": "Questions Before You Call",
           "items": [
             {
-              "q": "How long does siding take?",
-              "a": "It depends on how many walls need new siding. We give you the schedule at your estimate."
+              "q": "How do I know if I need new siding or just a repair?",
+              "a": "If the damage is on one wall or one spot and the rest is sound, it's a repair. If it's cracking, warping or fading across the house, or water has been getting in, replacement is the better money. I look at the whole house before I tell you which."
             },
             {
-              "q": "Can you replace just part of my siding?",
-              "a": "Yes. We replace a wall, a garage or a chimney when that is all the house needs."
+              "q": "Can you replace just one side of the house?",
+              "a": "Yes. Color match is the one thing to talk through, and I'll tell you what I think when I see it."
             },
             {
-              "q": "Do you take the old siding away?",
-              "a": "Yes. We haul it off and clean the yard when we finish."
+              "q": "What does it cost?",
+              "a": "It depends on the size of the house, the material and what's behind the old siding. I give you the price after I see it, and the estimate is free."
             },
             {
-              "q": "Is financing available?",
-              "a": "Yes, subject to credit approval. Ask about the current offer when you call."
+              "q": "What if you find rot once the old siding is off?",
+              "a": "That's extra work, and it gets its own price. It's the one thing nobody can see until the siding comes off."
+            },
+            {
+              "q": "Do you offer financing?",
+              "a": "Financing is available, subject to credit approval."
             }
           ]
         },
         {
           "type": "callBand",
-          "heading": "Get Your Siding Estimate",
-          "text": "Call (316) 641-8365 and we'll walk your house and set up your free siding estimate."
+          "heading": "Get a Price on Your Siding",
+          "text": "Call me and tell me what the siding is doing. I'll come look at it and give you the price, with no pressure to sign that day. Call (316) 641-8365, or [send us a message](/contact/). Windows next? See [window replacement](/window-replacement-wichita-ks/)."
         }
       ]
     },
@@ -556,9 +556,9 @@
       "keyword": "contact Greenway Exteriors Wichita KS",
       "seo": null,
       "hero": {
-        "eyebrow": "Contact",
+        "eyebrow": "Wichita, Kansas",
         "h1": "Contact Greenway Exteriors",
-        "sub": "I'm John Dye, the owner. Call me at (316) 641-8365 and tell me about your windows, doors or siding.",
+        "sub": "The fastest way to reach me is to call. I'm John Dye, I answer the phone myself, and I'll come out to your house for a free estimate.",
         "primaryCta": {
           "label": "Call (316) 641-8365",
           "action": "call"
@@ -567,48 +567,46 @@
           "slot": "contact-hero",
           "alt": "Front porch with new windows beside the front door of a Wichita bungalow",
           "brief": "front porch with new windows beside the front door on a bungalow, house on the right, porch steps toward the left, calm soft sky behind the text side, no readable text, no people"
+        },
+        "secondaryCta": {
+          "label": "Send a Message",
+          "action": "contact"
         }
       },
       "sections": [
         {
           "type": "prose",
-          "heading": "Call and Find Us",
+          "heading": "Call Me",
           "body": [
-            "Call (316) 641-8365 and you'll talk with me. I'll set a time to see your house and give you the estimate myself.",
-            "Our address is 2807 W River Park Dr, Wichita, KS 67203. We work in Wichita and the towns around it."
+            "(316) 641-8365. Tell me what the windows, siding or doors are doing and I can usually give you a ballpark right then."
           ]
         },
         {
-          "type": "list",
+          "type": "prose",
+          "heading": "Send a Message",
+          "body": [
+            "Prefer to write? Send your name, phone number, email and a few lines about the job. Photos of the problem help if you have them."
+          ]
+        },
+        {
+          "type": "prose",
           "heading": "Have This Ready",
           "list": [
-            "Which windows, doors or walls you want done",
-            "Whether you want siding, gutters or paint at the same time",
-            "Whether you want to hear about financing"
+            "What you want done: windows, siding, doors, gutters, trim or paint",
+            "Roughly how many windows or which walls",
+            "What's wrong: fog, drafts, leaks, rot, storm damage",
+            "The street or town, so I know you're in our area"
           ]
         },
         {
           "type": "review",
-          "quote": "John always answered my phone calls and answered all my questions!",
-          "name": "Lisa Q."
+          "quote": "John came out, gave me a quick bid and had a crew working the next morning. He held his original number and completed the work in the time he stated. We were very happy with the quality and communication!",
+          "name": "Mitch B."
         },
         {
-          "type": "faq",
-          "heading": "Before You Call",
-          "items": [
-            {
-              "q": "Do you charge for an estimate?",
-              "a": "No. Estimates for windows, doors and siding are free."
-            },
-            {
-              "q": "Which towns do you serve?",
-              "a": "Wichita, Park City, Bel Aire, Andover, Eastborough, Rose Hill, Haysville, Derby, Goddard, Colwich, Valley Center, Maize, Greenwich, Schulte and Oaklawn-Sunview."
-            },
-            {
-              "q": "Do you do small jobs?",
-              "a": "Yes. We have replaced a single window and repaired one wall of siding."
-            }
-          ]
+          "type": "callBand",
+          "heading": "Where We Work",
+          "text": "Wichita, Park City, Bel Aire, Andover, Eastborough, Rose Hill, Haysville, Derby, Goddard, Colwich, Valley Center, Maize, Greenwich, Schulte and Oaklawn-Sunview. Our office is at 2807 W River Park Dr, Wichita, KS 67203."
         }
       ]
     }

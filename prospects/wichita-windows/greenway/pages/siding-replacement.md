@@ -1,4 +1,4 @@
-**Eyebrow:** Siding replacement and repair across Wichita and nearby towns
+**Eyebrow:** Siding replacement and repair in Wichita
 
 # Siding Replacement in Wichita, KS — Greenway Exteriors
 

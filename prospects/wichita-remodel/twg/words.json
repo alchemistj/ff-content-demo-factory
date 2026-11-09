@@ -77,7 +77,7 @@
       "hero": {
         "eyebrow": "Licensed and insured in Wichita",
         "h1": "Roofing Company in Wichita, KS — TWG Construction",
-        "sub": "When hail hits, call one company for the roof, the siding, the windows and the insurance claim. We replace roofs, repair storm damage and work directly with your adjuster.",
+        "sub": "The hail has passed and now you have a roof to deal with, and probably more than the roof. We replace roofs, repair the rest of the storm damage and work with your insurance adjuster through the whole claim. Call for a free estimate.",
         "primaryCta": {
           "label": "Call (316) 685-1010",
           "action": "call"
@@ -95,71 +95,131 @@
       "sections": [
         {
           "type": "review",
-          "quote": "TWG did a great job on my house that had hail damage. They worked with the insurance company to get the money needed for repairs. They fixed my roof, replaced windows and painted the house.",
-          "name": "Mike C."
+          "quote": "After a giant hailstorm TWG took care of everything we needed. They even worked with our insurance company and got us all new siding.",
+          "name": "Linden M."
         },
         {
           "type": "split",
-          "heading": "One Company for Everything the Hail Hit",
+          "heading": "Hail Doesn't Stop at the Roof",
           "body": [
-            "Hail rarely stops at the shingles. We replace the roof, then repair the siding, windows, doors and paint the storm damaged.",
-            "You call **one company, not four**, and deal with one crew from the first look to the finish."
+            "After a storm, the roofer looks at the roof, the siding company looks at the siding, and nobody looks at the whole house. Then the claim gets filed for one thing and you find the rest later.",
+            "Hail hits everything that faces the storm: shingles, siding, window seals, doors, awnings, gutters. We look at all of it before we talk about a price, so the claim and the repair cover what actually happened.",
+            "We're a general contractor, so the same company does the roof, the siding, the windows and the paint. You make one call, not four."
           ],
           "image": {
             "slot": "home-hail",
-            "alt": "Close view of hail-dented siding beside a roof edge",
-            "brief": "close view of hail-dented siding under a roof edge, damage on the right, soft light falling from the left, plain calm background behind the text side, no readable text, no people"
-          },
-          "imageSide": "right"
+            "alt": "Close view of hail dents in dark asphalt shingles",
+            "brief": "close view of hail-dented asphalt shingles, soft light, no readable text, no people"
+          }
         },
         {
           "type": "review",
-          "quote": "We used TWG for a new roof and to repaint our house after the hail storms and could not be happier with the results. They were out quickly and did the work in a professional, efficient manner.",
+          "quote": "They worked with the insurance company to get the money needed for repairs. They fixed my roof, replaced windows and painted the house. I was completely satisfied with the work done.",
+          "name": "Mike C."
+        },
+        {
+          "type": "prose",
+          "heading": "Roof Replacement",
+          "body": [
+            "Hail can ruin a roof you can't see from the driveway. It bruises the shingle and knocks the protective granules loose, and the leaks show up months later.",
+            "Other signs are shingles that curl or crack, tabs the wind keeps lifting, and gutters full of grit from the shingles. If your adjuster's report says replace, or you can see daylight in the attic, it's time.",
+            "We tear off the old roof, put on the new one and leave the yard clean. We've replaced metal roofs as well as shingle."
+          ],
+          "link": {
+            "label": "See roof replacement →",
+            "route": "/roof-replacement-wichita-ks/"
+          }
+        },
+        {
+          "type": "review",
+          "quote": "We used TWG for a new roof and to repaint our house after the hail storms and could not be happier with the results. They were out quickly and did the work in a professional, efficient manner. … There were many roofing companies working in our area and I can say without hesitation that I think TWG was the best.",
           "name": "Andy B."
         },
         {
           "type": "split",
-          "heading": "We Work With Your Insurance Company",
+          "heading": "Your Insurance Claim, Step by Step",
           "body": [
-            "We help maximize insurance claims. We **work directly with your adjuster**, so you are not left explaining roof damage on your own.",
-            "Hail claims can feel confusing. We walk you through yours and make sure the hail damage gets counted."
+            "A claim letter is hard to read when you're also looking at a damaged house. You shouldn't have to learn the process on your own roof.",
+            "We work directly with your adjuster to maximize your coverage. You hear from us at each step, and we explain what the claim means for your repair.",
+            "That matters most when the first estimate seems low. You have someone who has looked at your roof talking to the adjuster for you."
           ],
           "image": {
             "slot": "home-claims",
             "alt": "New siding and a new roof on a two-story house in soft afternoon light",
             "brief": "corner of a house with new lap siding and a new roof edge, house on the right, calm sky behind the text side, no readable text, no people"
-          },
-          "imageSide": "right"
+          }
         },
         {
           "type": "review",
-          "quote": "They were very professional in how they did the overall roof.  They even adjusted my claim to help me out.",
-          "name": "Linda M."
-        },
-        {
-          "type": "services",
-          "heading": "Everything We Do",
-          "intro": "Roofs and hail damage are our main work. We also install siding, windows and doors, paint inside and out, and build decks."
+          "quote": "He was on the phone with me for every step of the process, including working with my insurance, and he made sure I understood everything that was going on.",
+          "name": "Dan M."
         },
         {
           "type": "prose",
-          "heading": "Clear Bids, Fair Prices",
+          "heading": "Siding, Windows and Doors",
           "body": [
-            "You get a **bid that spells out the cost**, including how it may change as the work goes on.",
-            "We bid what the job really needs, so you are not paying for more than the job calls for. Our work comes with a 100% Satisfaction Guarantee."
+            "Siding takes the same hail the roof does, and it dents, cracks and splits. Old siding that was never storm damaged still wears out, and we'll tell you which one you have.",
+            "When we install new siding, many of the options carry lifetime manufacturer warranties.",
+            "Windows are the other place hail does damage you don't see.",
+            "Cracked glass is obvious. A failed seal, with fog between the panes, is easier to miss. We replace windows with rotted frames, failed seals or storm damage, and the window page has the details.",
+            "We also install entry and security doors in vinyl, wood and fiberglass."
+          ],
+          "link": {
+            "label": "See window replacement →",
+            "route": "/window-replacement-wichita-ks/"
+          }
+        },
+        {
+          "type": "prose",
+          "heading": "Choosing Who Fixes Your Roof",
+          "body": [
+            "After a big storm, a lot of roofing companies show up on the same streets. Some are here for the season and gone before the first leak.",
+            "We're a Wichita company with an office you can drive to. Ask any contractor for their license and proof of insurance. Ours are in order.",
+            "Then read our Google reviews. The same few things come up again and again: a quick crew, a clean yard and someone who explained the insurance."
+          ]
+        },
+        {
+          "type": "steps",
+          "heading": "How a Project Goes",
+          "items": [
+            {
+              "title": "We look at your house.",
+              "text": "We go over the roof and the other places the storm hit, and give you a price. The estimate is free."
+            },
+            {
+              "title": "We deal with the claim.",
+              "text": "If insurance is involved, we work directly with your adjuster and keep you posted."
+            },
+            {
+              "title": "Our crew does the work.",
+              "text": "We replace what needs replacing and clean up when we finish."
+            },
+            {
+              "title": "We check in.",
+              "text": "After the job, we call to make sure you're happy with the work."
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Painting, Decking and Outdoor Renovations",
+          "body": [
+            "New siding and trim need a finish, and an old deck or fence looks worse next to a new roof. So we do interior and exterior painting for homes, offices and industrial properties, and we build custom decks, fences and other exterior updates.",
+            "One crew that already knows your house is easier than finding a painter after the roof is done."
           ]
         },
         {
           "type": "review",
-          "quote": "They were very quick with providing a bid for our job and were extremely transparent about the costs and how they may change.",
-          "name": "Justin R."
+          "quote": "We recently had our exterior, and garage reworked by TWG. The workmanship is excellent. Everyone that came to our house was kind, communicative and tidy. There was no clean-up after they left, the only left behind a great looking house.",
+          "name": "Ryan B."
         },
         {
           "type": "prose",
-          "heading": "Wichita, KS",
+          "heading": "Licensed, Insured and Local Since 1986",
           "body": [
-            "We are licensed and insured general contractors, serving Wichita homes since 1986.",
-            "Call and tell us where your home is, and we will set up your estimate."
+            "We're fully licensed and insured general contractors with one office, in Wichita. We know local houses, local weather and local codes.",
+            "Our work carries a 100% Satisfaction Guarantee. If something isn't right, you call the office that quoted it.",
+            "We serve Wichita homeowners. That's the only area we work in."
           ]
         },
         {
@@ -167,23 +227,35 @@
           "heading": "Questions Before You Call",
           "items": [
             {
+              "q": "Are estimates free?",
+              "a": "Yes. Call or send a request and we'll set up a free estimate."
+            },
+            {
               "q": "Do you work with my insurance company?",
-              "a": "Yes. We help maximize claims, and we deal with your adjuster directly. See [roof replacement](/roof-replacement-wichita-ks/)."
+              "a": "Yes. We work directly with your adjuster, and we explain each step to you as it happens."
             },
             {
-              "q": "Is the estimate free?",
-              "a": "Yes. We come out, look at the job and give you the price."
+              "q": "What if only some of my house was damaged?",
+              "a": "That's common. A roof may need replacing while the siding needs a repair, or the windows are fine and a door isn't. We look at all of it and tell you which is which."
             },
             {
-              "q": "Do you do more than roofs?",
-              "a": "Yes. We install siding, windows and doors, and we paint. See [window replacement](/window-replacement-wichita-ks/)."
+              "q": "Do you install metal roofs?",
+              "a": "Yes. We've replaced metal roofs after hail, and shingle roofs as well."
+            },
+            {
+              "q": "What should I do right after a hailstorm?",
+              "a": "Take photos of what you can see from the ground, and call your insurance company to open a claim. Then call us to look at the whole house before the adjuster visits, if you can, so nothing gets missed."
+            },
+            {
+              "q": "Who do I call if something goes wrong after the job?",
+              "a": "The same office, (316) 685-1010. Our work carries a 100% Satisfaction Guarantee."
             }
           ]
         },
         {
           "type": "callBand",
-          "heading": "Hail Damage or a Roof That Is Done?",
-          "text": "Call (316) 685-1010 for a free estimate on your roof, siding, windows or doors."
+          "heading": "Get Your Whole House Looked At",
+          "text": "Call and we'll look at the roof, the siding, the windows and the doors, and give you a price. If there's an insurance claim, we'll work with your adjuster. Call TWG Construction at (316) 685-1010 and tell us what the storm left behind."
         }
       ]
     },
@@ -194,9 +266,9 @@
       "keyword": "roof replacement Wichita KS",
       "seo": null,
       "hero": {
-        "eyebrow": "Roof replacement",
+        "eyebrow": "Roofing in Wichita",
         "h1": "Roof Replacement in Wichita, KS — TWG Construction",
-        "sub": "We tear off the old roof, put on the new one and leave your yard clean. When hail ruins a roof, we work directly with your insurance company.",
+        "sub": "When a roof is done, you want a crew that tears off the old one, builds the new one right and leaves your yard clean. We replace roofs in Wichita, and when hail is the reason we work with your insurance adjuster. Call for a free estimate.",
         "primaryCta": {
           "label": "Call (316) 685-1010",
           "action": "call"
@@ -213,128 +285,129 @@
       },
       "sections": [
         {
-          "type": "review",
-          "quote": "TWG did a great job replacing our roof. Quick and efficient service from beginning to end.",
-          "name": "Sheila H."
-        },
-        {
           "type": "split",
-          "heading": "A New Roof, Start to Finish",
+          "heading": "When a Roof Is Finished",
           "body": [
-            "We remove the old roof and put on the new one, so **you are not managing the pieces in between**.",
-            "We replace worn-out and storm-damaged roofs, shingle or metal.",
-            "Our crew does the tear-off, the install and the clean-up, so the job is finished when we leave."
-          ],
-          "list": [
-            "**Worn-out roofs** replaced before they start to leak",
-            "**Hail-damaged roofs** replaced with your insurance claim",
-            "**Metal roofs** replaced too"
+            "Some roofs fail loudly, with a leak over the bed. Most fail quietly: shingles that curl at the edges, cracks, bare patches where the granules wore off, and tabs the wind keeps lifting.",
+            "Check the gutters after a storm. Gritty granules in the downspout mean the shingles are shedding the layer that protects them from sun and rain.",
+            "If you've had a leak in two places or more, patching rarely holds. The roof is wearing out everywhere, and you're paying to chase it."
           ],
           "image": {
             "slot": "roof-new",
             "alt": "New roof on a ranch house seen from the yard",
             "brief": "ranch house with a freshly finished roof, house on the right, clean front yard leading off to the left, calm sky behind the text side, no readable text, no people"
-          },
-          "imageSide": "right"
-        },
-        {
-          "type": "review",
-          "quote": "When the crew came out to remove the old roof and replace it they were very courteous and took care of every detail, our yard was cleaner when they left than it was before they came. … No leaks, no tabs blown off and a follow up call to make sure we were happy!",
-          "name": "Michael S."
+          }
         },
         {
           "type": "prose",
-          "heading": "When Hail Ruins the Roof",
+          "heading": "What Hail Does",
           "body": [
-            "Hail cracks shingles and dents metal. We **look at the whole roof** and tell you plainly whether it needs replacing.",
-            "If the storm damaged your roof, we handle the claim side with your insurance company too.",
-            "After a storm, call as soon as you can, and we will come out and look at your roof."
+            "Hail doesn't have to punch a hole to ruin a roof. It bruises the shingle and cracks the mat under the granules, and the damage stays quiet until the first hard rain.",
+            "That's why a roof can look fine from the driveway and still need replacing. It takes someone on the roof to see it.",
+            "Metal roofs take hail differently. They dent, and a bad storm can damage them enough to replace."
           ]
         },
         {
           "type": "review",
-          "quote": "TWG Construction worked with my Insurance company and replaced my metal hail damaged roof.",
+          "quote": "TWG Construction worked with my Insurance company and replaced my metal hail damaged roof. They also replaced a hail damaged door, awning and siding. They did a fantastic job!",
           "name": "Mark B."
         },
         {
           "type": "prose",
-          "heading": "We Work With Your Insurance Company",
+          "heading": "Repair or Replace",
           "body": [
-            "We help maximize insurance claims. We **work directly with your adjuster** and explain each step, so you always know where your claim stands.",
-            "We make sure the adjuster sees all of the hail damage on your roof, so your claim covers the roof you need."
+            "A small repair makes sense when the damage is limited and the rest of the roof is sound. A replacement makes sense when the damage is widespread, the roof is worn through, or your adjuster has already called it.",
+            "We look at the roof first, then give you a price for what it needs."
           ]
-        },
-        {
-          "type": "review",
-          "quote": "Scott was amazing to work with. He was on the phone with me for every step of the process, including working with my insurance, and he made sure I understood everything that was going on.",
-          "name": "Dan M."
-        },
-        {
-          "type": "steps",
-          "heading": "How a Roof Job Goes",
-          "items": [
-            {
-              "title": "We look at your roof",
-              "text": "We come out, look at the roof and give you an estimate. Estimates are free."
-            },
-            {
-              "title": "We explain every detail",
-              "text": "We walk you through what we found and what the bid covers, including how the cost may change."
-            },
-            {
-              "title": "Tear-off and new roof",
-              "text": "Our crew removes the old roof and puts on the new one."
-            },
-            {
-              "title": "Clean-up",
-              "text": "We clean the yard when we finish, so it looks the way it did before we came."
-            }
-          ]
-        },
-        {
-          "type": "review",
-          "quote": "Very professional, fast service, and prompt response to all questions and concerns.",
-          "name": "Duane S."
         },
         {
           "type": "prose",
-          "heading": "Roofs That Hold Up",
+          "heading": "What a Roof Replacement Looks Like",
           "body": [
-            "A new roof should **still look right years later**. That is the standard we work to.",
-            "We stand behind our work with a 100% Satisfaction Guarantee."
+            "The old roof comes off all the way. Soft wood underneath has to be dealt with, because a new roof over a bad deck won't last.",
+            "Then the new roof goes on, with the edges and the spots around anything that goes through the roof done carefully. Those are the places that leak first.",
+            "When the crew is done, they clean up. That's what a roof job should leave behind: a good roof and a clean yard."
           ]
         },
         {
           "type": "review",
-          "quote": "The crew at TWG came out and did a top notch job on our roof. After 5 years it still looked so great, we had them do the roof of another (rental) house.",
+          "quote": "TWG came out and looked at our roof, gave us an estimate and we were impressed. Brad was very though and explained every detail. When the crew came out to remove the old roof and replace it they were very courteous and took care of every detail, our yard was cleaner when they left than it was before they came. The roof looks great and has been up long enough to go through several rain storms. No leaks, no tabs blown off and a follow up call to make sure we were happy!",
+          "name": "Michael S."
+        },
+        {
+          "type": "prose",
+          "heading": "Working With Your Insurance Company",
+          "body": [
+            "If hail did it, there's a claim, and the claim has a process. The adjuster comes, writes up what they find and sets a number.",
+            "We work directly with your adjuster to maximize your coverage. We explain what the report means for your roof, so you aren't left reading a letter on your own.",
+            "Hail damage is easy to miss from the ground, so it helps to have the person who looked at your roof in the conversation."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "They were very professional in how they did the overall roof. They even adjusted my claim to help me out. The finished job looks fantastic!!",
+          "name": "Linda M."
+        },
+        {
+          "type": "prose",
+          "heading": "Roofs That Last",
+          "body": [
+            "A roof is one of the biggest purchases on a house, and you only want to buy it once. The best proof is a roof that's still good years later.",
+            "We use quality materials and we do the job so it holds. A roof that fails in five years is expensive for everyone."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "The crew at TWG came out and did a top notch job on our roof. After 5 years it still looked so great, we had them do the roof of another (rental) house. Both times, they went above and beyond to the the best job possible with top quality materials, and did it quickly to boot!",
           "name": "Phil B."
         },
         {
+          "type": "prose",
+          "heading": "Roof, Gutters and the Rest of the House",
+          "body": [
+            "A new roof meets the gutters, and the gutters meet the siding. If any of those are damaged too, it's cheaper to fix them in one visit.",
+            "We've changed gutters along with roofs, and we replace siding, windows and doors. If you've had storm damage, we'll look at all of it."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "His team roofed my house changed gutters and offered invaluable advice. Very competitive prices, would definetly use services again!",
+          "name": "Duane S."
+        },
+        {
           "type": "faq",
-          "heading": "Roofing Questions",
+          "heading": "Questions Before You Call",
           "items": [
             {
-              "q": "Can you work with my insurance adjuster?",
-              "a": "Yes. Our job is to help maximize your claim, so call (316) 685-1010 and tell us what the storm did."
-            },
-            {
-              "q": "Do you replace metal roofs?",
-              "a": "Yes. We replace metal roofs and work with your insurance company on the claim."
-            },
-            {
               "q": "Is the estimate free?",
-              "a": "Yes. We come out, look at the roof and give you the price."
+              "a": "Yes."
             },
             {
-              "q": "Where do you work?",
-              "a": "We work in Wichita, KS. Call and tell us where your home is."
+              "q": "Do I need an insurance claim to replace my roof?",
+              "a": "No. If the roof has simply worn out, you can replace it without a claim. If hail did the damage, call your insurance company, and we'll work with your adjuster."
+            },
+            {
+              "q": "How long does a roof replacement take?",
+              "a": "It depends on the size and shape of the roof, and we'll give you the schedule with your estimate. Our reviews keep saying the same thing about the crew: quick and efficient."
+            },
+            {
+              "q": "Can you install a metal roof?",
+              "a": "Yes. We've replaced metal roofs as well as shingle roofs."
+            },
+            {
+              "q": "Will you clean up?",
+              "a": "Yes. The old roof goes with us and the yard gets cleaned."
+            },
+            {
+              "q": "What if I'm not happy?",
+              "a": "Our work carries a 100% Satisfaction Guarantee. Call (316) 685-1010."
             }
           ]
         },
         {
           "type": "callBand",
-          "heading": "Ready for a New Roof?",
-          "text": "Call (316) 685-1010 and we will come look at your roof and give you a free estimate."
+          "heading": "Get a Straight Look at Your Roof",
+          "text": "Call and we'll look at the roof and tell you what it needs. If there's a claim, we'll work with your adjuster. Call TWG Construction at (316) 685-1010 to set up a free roof estimate."
         }
       ]
     },
@@ -345,9 +418,9 @@
       "keyword": "window replacement Wichita KS",
       "seo": null,
       "hero": {
-        "eyebrow": "Window replacement",
+        "eyebrow": "The Window Guys, in Wichita",
         "h1": "Window Replacement in Wichita, KS — TWG Construction",
-        "sub": "Rotted frames, failed seals or hail damage: we replace one window or a houseful and leave the job clean. Some of our customers still call us The Window Guys.",
+        "sub": "If a window has fogged up, rotted at the frame or been cracked by hail, we replace it. Some Wichita homeowners still know us as the Window Guys, and windows are part of what we've done since 1986. Call for a free estimate.",
         "primaryCta": {
           "label": "Call (316) 685-1010",
           "action": "call"
@@ -364,54 +437,24 @@
       },
       "sections": [
         {
-          "type": "review",
-          "quote": "We now have new windows, siding and a fantastic new color on our house. All the guys were nice and respectful.",
-          "name": "Jessica H."
-        },
-        {
           "type": "split",
-          "heading": "Windows With Rot, Bad Seals or Storm Damage",
+          "heading": "Why Windows Fail",
           "body": [
-            "We replace windows with **rotted frames**, windows with **failed seals** and windows the hail damaged.",
-            "One window or many, a small job gets the same care as a big one, and our crew does the work."
-          ],
-          "list": [
-            "**Rotted windows** replaced",
-            "**Failed seals** replaced",
-            "**Hail-damaged windows** handled with your claim",
-            "**One window or several**, measured and installed by our crew"
+            "Fog between the panes means the seal around the glass has failed. Air and moisture get in, the insulating space between the panes is gone, and the fog never clears.",
+            "A window that is soft or stained at the frame has had water behind it, and a rotted frame doesn't get better. A sash that sticks, a draft you can feel with the window shut or a room that never gets comfortable all point the same way. The window has stopped doing its job.",
+            "Hail adds one more cause. It cracks glass outright, and it can break the seal on a window that looks fine."
           ],
           "image": {
             "slot": "window-main",
             "alt": "Replacement window seen from outside in a clean wall",
             "brief": "a single new white replacement window seen from outside, window on the right, calm wall on the left, no readable text, no people"
-          },
-          "imageSide": "right"
-        },
-        {
-          "type": "review",
-          "quote": "The Window Guys helped me fix some rotted windows. They were professional, on time and showed me ways to save money in the project.",
-          "name": "Doug B."
+          }
         },
         {
           "type": "prose",
-          "heading": "A Price That Makes Sense",
+          "heading": "Seals, Rot and Warranty Work",
           "body": [
-            "Before we start, we look at what your windows really need, so **you pay for the work the house calls for**.",
-            "Your bid lists the windows we will replace and what the work costs, and we explain anything that could change it. Estimates are free."
-          ]
-        },
-        {
-          "type": "review",
-          "quote": "Scott and his guys replaced a few windows in our home. His team was on time and very professional through the whole process.",
-          "name": "Colin F."
-        },
-        {
-          "type": "prose",
-          "heading": "We Stand Behind Our Windows",
-          "body": [
-            "A window should last, and **when one does not, we want to hear about it**.",
-            "We stand behind our work with a 100% Satisfaction Guarantee, and we are licensed and insured general contractors."
+            "A failed seal is the most common reason people call us about a window that still opens and closes. You can't fix it by cleaning the glass."
           ]
         },
         {
@@ -421,73 +464,98 @@
         },
         {
           "type": "prose",
-          "heading": "Hail-Damaged Windows and Your Insurance",
           "body": [
-            "Hail cracks glass and dents frames. We look at every window the storm hit and **work directly with your adjuster**, so each damaged window is counted.",
-            "We help maximize insurance claims, and we handle your windows alongside the rest of the storm repair."
+            "Our work carries a 100% Satisfaction Guarantee. If a window isn't right, we want to hear about it, and we'll deal with it."
           ]
         },
         {
           "type": "prose",
-          "heading": "A Wide Selection of Windows",
+          "heading": "Repair or Replace",
           "body": [
-            "We carry **a wide selection of windows**, so the new ones can match the look of your home or give it a fresh one.",
-            "We help you pick windows that suit the house and the budget, then our crew installs them."
+            "Not every window problem needs a new window. A stuck sash or a loose lock may be a hardware fix, and a rotted frame usually isn't.",
+            "We look at the window, the frame and the wall around it, then tell you what makes sense. When the frame is rotted, replacing it is how the problem gets fixed.",
+            "If there is a cheaper way to do the job right, we'll say so."
           ]
         },
         {
           "type": "review",
-          "quote": "If you are considering making exterior changes on your home, be sure to talk to the Window Guys.  They have a great selection of windows, siding, doors, etc to give your home the facelift you were looking for!",
-          "name": "Megan B."
+          "quote": "The Window Guys helped me fix some rotted windows. They were professional, on time and showed me ways to save money in the project. Well done!",
+          "name": "Doug B."
         },
         {
-          "type": "steps",
-          "heading": "How a Window Job Goes",
-          "items": [
-            {
-              "title": "We come look",
-              "text": "We come out, look at your windows and give you an estimate. Estimates are free."
-            },
-            {
-              "title": "We explain the bid",
-              "text": "We go through which windows we will replace and the cost, including how the cost may change."
-            },
-            {
-              "title": "Our crew does the work",
-              "text": "Our crew removes the old windows and installs the new ones."
-            },
-            {
-              "title": "We clean up",
-              "text": "We leave the house and yard clean when we finish, so all that is left is your new windows."
-            }
+          "type": "prose",
+          "heading": "A Few Windows or the Whole House",
+          "body": [
+            "Some people replace the one window that failed. Others do the whole house at once so every window matches.",
+            "Either works. Replacing them all at once gets every window on the house the same age, with the same look."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Scott and his guys replaced a few windows in our home. His team was on time and very professional through the whole process. We highly recommend",
+          "name": "Colin F."
+        },
+        {
+          "type": "prose",
+          "heading": "Choosing a Replacement Window",
+          "body": [
+            "Replacement windows come in a few basic styles.",
+            "A double-hung window slides up and down and is common in older houses. A casement swings out on a crank. A slider moves side to side, and a picture window doesn't open at all.",
+            "The right one depends on the room. A bedroom may need a window that opens wide enough to climb out of in an emergency. A big living-room window might be fixed glass.",
+            "Which windows bother you most, and why? Bring photos if you can. We'll look at the opening and the room, and talk through what fits."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Windows With Siding and Paint",
+          "body": [
+            "Windows sit in the wall, so the work around them matters as much as the glass. The siding meets the trim, and the trim meets the window.",
+            "That's why we do all of it. When you replace windows with siding, the trim, the siding and the finish come from the same company and match."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "We now have new windows, siding and a fantastic new color on our house. All the guys were nice and respectful. We will definitely call TWG when we need another project done! I love my house!",
+          "name": "Jessica H."
+        },
+        {
+          "type": "prose",
+          "heading": "Windows After a Hailstorm",
+          "body": [
+            "When hail damages windows, it often damages the siding and the roof too. That usually means an insurance claim, with an adjuster who needs to see all of it.",
+            "We work directly with your adjuster. We look at the windows, the roof, the siding and the doors, so the claim covers everything the storm did."
           ]
         },
         {
           "type": "faq",
-          "heading": "Window Replacement Questions",
+          "heading": "Questions Before You Call",
           "items": [
             {
-              "q": "Can I replace only a few windows?",
-              "a": "Yes. We replace a single window, a few windows or many."
-            },
-            {
-              "q": "One of my windows fogs up. Can you fix that?",
-              "a": "A fogged window usually has a failed seal. We replace windows with failed seals; call and we will come look."
-            },
-            {
-              "q": "Will my insurance cover hail-damaged windows?",
-              "a": "We help maximize insurance claims and work directly with your adjuster. Call (316) 685-1010 and we will look at the damage."
-            },
-            {
               "q": "Is the estimate free?",
-              "a": "Yes. Call and we will come look and give you the price."
+              "a": "Yes."
+            },
+            {
+              "q": "Will insurance pay for new windows?",
+              "a": "It depends on your policy and on what caused the damage. Hail damage is commonly part of a storm claim, and we'll work with your adjuster. Worn-out windows usually are not covered."
+            },
+            {
+              "q": "Can you replace just one window?",
+              "a": "Yes. You can replace one window, a few, or all of them."
+            },
+            {
+              "q": "Do you do doors too?",
+              "a": "Yes. We install entry and security doors in vinyl, wood and fiberglass, along with windows."
+            },
+            {
+              "q": "What if there's a problem after the install?",
+              "a": "Call (316) 685-1010. Our work carries a 100% Satisfaction Guarantee."
             }
           ]
         },
         {
           "type": "callBand",
-          "heading": "Ready for New Windows?",
-          "text": "Call (316) 685-1010 and tell us which windows need replacing. We will come out and give you a free estimate."
+          "heading": "Get a Straight Look at Your Windows",
+          "text": "Call and we'll look at your windows and tell you what they need. If hail was the cause, we'll work with your adjuster. Call TWG Construction at (316) 685-1010 and we will come look at your windows."
         }
       ]
     },
@@ -500,7 +568,7 @@
       "hero": {
         "eyebrow": "Contact",
         "h1": "Contact TWG Construction",
-        "sub": "Call us and tell us what you need. We will set up your free estimate.",
+        "sub": "The fastest way to reach us is to call. Tell us what happened, and we'll set up a free estimate for your roof, siding, windows or doors.",
         "primaryCta": {
           "label": "Call (316) 685-1010",
           "action": "call"
@@ -509,48 +577,38 @@
           "slot": "contact-hero",
           "alt": "Finished house with a clean yard and new roof in warm evening light",
           "brief": "finished two-story house with a new roof and clean yard, house on the right, front angled left, calm soft sky behind the text side, no readable text, no people"
+        },
+        "secondaryCta": {
+          "label": "Get a Free Estimate",
+          "action": "contact"
         }
       },
       "sections": [
         {
           "type": "prose",
-          "heading": "Call Us",
+          "heading": "What to Have Ready",
           "body": [
-            "Call (316) 685-1010 for a free estimate on your roof, siding, windows or doors.",
-            "Tell us what happened: hail, a leak, worn siding or a rotted window. We work in Wichita, KS."
-          ]
-        },
-        {
-          "type": "list",
-          "heading": "Have This Ready",
+            "You don't need much. A few details help us start in the right place:"
+          ],
           "list": [
-            "What the damage looks like and when the storm hit",
-            "Whether you have filed an insurance claim",
-            "Which parts of the house you want us to look at: roof, siding, windows or doors"
+            "What you noticed: a leak, fogged windows, damaged siding, or hail",
+            "Photos of the damage, if you have them",
+            "Your insurance claim number or the adjuster's report, if you've already filed"
+          ],
+          "tail": [
+            "If you haven't filed a claim yet, call us anyway. We can look at the house and explain where you stand.",
+            "If you're not sure whether the damage is from hail or from age, that's a fine reason to call. We'll look at the roof, siding or windows and tell you what we see."
           ]
         },
         {
           "type": "review",
-          "quote": "It's so hard to find great, trustworthy contractors. Finding these folks has really made my life easier, and my home better.",
-          "name": "Russell C."
+          "quote": "They were very quick with providing a bid for our job and were extremely transparent about the costs and how they may change.",
+          "name": "Justin R."
         },
         {
-          "type": "faq",
-          "heading": "Before You Call",
-          "items": [
-            {
-              "q": "Do you charge for an estimate?",
-              "a": "No. Estimates are free."
-            },
-            {
-              "q": "Will you work with my insurance company?",
-              "a": "Yes. We work with your adjuster on storm damage."
-            },
-            {
-              "q": "Where do you work?",
-              "a": "We work in Wichita, KS."
-            }
-          ]
+          "type": "callBand",
+          "heading": "Where We Work",
+          "text": "We serve Wichita, Kansas, from our one office in Wichita. We're licensed and insured general contractors, and every estimate is free. Call us at (316) 685-1010. Tell us what you're seeing and we'll set up a time that works for you. If you reach voicemail, leave your name, your address and a short note about the problem, and we'll call you back. We'd rather hear about a small problem early than a big one after the next storm."
         }
       ]
     }

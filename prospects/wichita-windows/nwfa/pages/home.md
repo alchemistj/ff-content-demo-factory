@@ -1,4 +1,4 @@
-**Eyebrow:** Independent and local, serving Wichita since 2014
+**Eyebrow:** Independent and local in Wichita
 
 # Insulation and Window Company in Wichita, KS — New Windows For America
 

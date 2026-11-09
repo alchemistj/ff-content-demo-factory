@@ -29,7 +29,7 @@ Not every window problem needs a new window. A stuck sash or a loose lock may be
 
 We look at the window, the frame and the wall around it, then tell you what makes sense. When the frame is rotted, replacing it is how the problem gets fixed.
 
-Some jobs have ways to save money, and we'll point them out.
+If there is a cheaper way to do the job right, we'll say so.
 
 > The Window Guys helped me fix some rotted windows. They were professional, on time and showed me ways to save money in the project. Well done!
 > — Doug B.
@@ -89,4 +89,4 @@ Call (316) 685-1010. Our work carries a 100% Satisfaction Guarantee.
 
 Call and we'll look at your windows and tell you what they need. If hail was the cause, we'll work with your adjuster.
 
-Call TWG Construction at (316) 685-1010 for a free estimate.
+Call TWG Construction at (316) 685-1010 and we will come look at your windows.

@@ -74,4 +74,4 @@ Wichita and nearby areas.
 
 Call and tell us which windows are giving you trouble. Someone will come out, look at them, go over your options and tell you how long it will take.
 
-Call (316) 263-0711. We serve Wichita and nearby areas.
+Call (316) 263-0711. We install windows across Wichita and nearby towns.
