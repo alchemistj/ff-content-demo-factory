@@ -2,20 +2,20 @@
 
 # Roofing Company in Wichita, KS — Douglas Fry Roofing
 
-We're Doug and Jason Fry. We install and repair tile, DaVinci, Brava, shake, shingle and standing seam metal roofs, and when you call, you talk to one of us. Call, or ask for a written estimate.
+We're Doug and Jason Fry. Tile, DaVinci, Brava, shake and metal roofs go wrong when the wrong person works on them, so when you call, you talk to an owner, and an owner gets on your roof. Call, or ask for a written estimate.
 
 **Buttons:** Call (316) 655-9777 | Get a Written Estimate
 
-> From the first contact with Jason Fry to the last bit of cleanup at the conclusion of the project, the team is thorough, professional, and exceptionally skilled. Our most recent project involved the full removal and replacement of a concrete barrel tile roof, and the work was completed on schedule, on budget, and with outstanding attention to detail.
-> — Dave N.
-
 ## You Talk to an Owner, Not a Salesperson
 
-Doug started this company, and his son Jason runs most of what you'll see: the call, the inspection, the quote and the insurance paperwork.
+Call a lot of roofing companies and the person who shows up is a salesperson. Some never climb a ladder; they price your roof from the ground or from the insurance paperwork.
 
 We have no commissioned salespeople and no project managers. That matters on a roof, because a person paid by the sale has a reason to find you a new roof, and we'd rather tell you what yours actually needs.
 
-You'll know who is on your roof, and who to call if something isn't right.
+Doug started this company, and his son Jason handles most of what you'll see: the call, the inspection, the quote and the insurance paperwork. You can always speak with an owner, and most of the time it is Jason who climbs up and looks at your roof himself.
+
+> Of the three contractors I contacted Jason was the only one that actually got on the roof to look at the damage.
+> — Erika B.
 
 ## Tile Roofs, Concrete and Clay
 
@@ -72,7 +72,7 @@ Jason works with your insurance company from the first call to the last nail. We
 
 We always give a written estimate on repair and re-roof projects. It lists the scope of work, the warranty and the price, so you can compare it line by line with any other bid.
 
-Our workmanship warranties run 5, 10 or 15 years, and the products we use carry lifetime manufacturer warranties where the manufacturer offers one.
+We offer workmanship warranties of 5, 10 and 15 years, plus lifetime manufacturer warranties on the products that carry them.
 
 > Their price was middle of the road but they included everything that was needed and fully explained the bid without overselling.
 > — Rachel Y.
@@ -87,7 +87,7 @@ We also do new construction roofing and commercial roofing.
 
 ## How a Job Goes
 
-1. **We look at your roof.** One of us looks over your roof, finds the problem and tells you what we found.
+1. **We look at your roof.** One of us gets up on your roof, finds the problem and tells you what we found.
 2. **You get it in writing.** Scope, warranty and price, so there are no surprises on the day.
 3. **The crew does the work.** A shingle roof often takes a day or two. Tile takes longer, because it comes off by hand and goes back the same way.
 4. **We clean up.** The crew picks up debris each day, and Jason follows up afterward.
@@ -105,9 +105,6 @@ The tile itself lasts decades. The underlayment beneath it usually gives out fir
 
 **Can my tile roof be repaired, or do I need a new one?**
 If the tile is sound and the leak is at a valley, flashing or underlayment, it can usually be repaired. If hail or wind has broken tile across the roof, a replacement may make more sense.
-
-**Do you work on flat roofs?**
-Flat roofs are not our specialty, and we'll say so. We do tile, shake, shingle, DaVinci, Brava and metal.
 
 **Do you work with insurance companies?**
 Yes. Jason works with your insurer from the start of the claim to the finished roof.
