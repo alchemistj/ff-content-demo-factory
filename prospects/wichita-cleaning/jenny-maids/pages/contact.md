@@ -26,6 +26,12 @@ New customers can ask about the new customer discount. If you aren't sure what y
 > "Jenny Maids was able to fit me right into their schedule. They did an absolute lovely job. My house looks amazing."
 > — Leighann D.
 
+## Before You Call
+
+**Do I need to be home?** No. You don't have to be home during your cleaning appointment.
+
+**Do I need supplies?** No. I bring the supplies and tools.
+
 ## Where I Clean
 
 Wichita, Andover, Augusta, Derby, Goddard, Haysville, Kechi, Maize, Mulvane, Park City, Peck, Valley Center and Wellington.

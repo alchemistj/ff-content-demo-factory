@@ -2,7 +2,7 @@
 
 # Recurring House Cleaning in Wichita, KS
 
-If your weekends go to catching up on the house, a regular schedule gives them back. Jenny Maid's cleans on a schedule you choose, and I'm the one who comes each time. Call me to set one up.
+If your weekends go to catching up on the house, a regular schedule gives them back. Jenny Maid's cleans on a schedule you choose, and I come myself. Call me to set one up.
 
 **Buttons:** Call (316) 210-1900 | Request a Quote
 
@@ -27,7 +27,7 @@ When the same person comes every time, the house gets better over time instead o
 
 ## Weekly, Bi-Weekly or Monthly
 
-**Weekly.** The most thorough upkeep, and it carries the biggest discount. A good fit for homes with kids or pets, where the mess comes back every few days.
+**Weekly.** It carries the biggest discount, and it is the schedule for a house where the mess comes back every few days, like one with kids or pets.
 
 **Bi-weekly.** The most popular. Two weeks is long enough to notice the house, and short enough that nothing builds up.
 
@@ -35,20 +35,27 @@ When the same person comes every time, the house gets better over time instead o
 
 If you aren't sure, start with bi-weekly. There are no contracts, so you aren't locked into the choice.
 
+## What a Regular Visit Covers, and What Waits
+
+A regular visit lifts what built up since the last one: dust, the kitchen, the bathrooms, the floors. It is timed upkeep, and it does that job well.
+
+Some things build slowly and need a longer visit than upkeep has room for. Grease on top of a range hood, dust on the tops of cabinets, the corners of baseboards. A deep clean reaches those, and so do spring and fall cleaning.
+
+So if a certain spot bothers you, say so at the start. That is how I know what to look for each time.
 > "Jenny Maids, has been cleaning my home since 2017. Jenny is a professional cleaner yet personable. Just love the way she takes care of my home. She is thorough in removing dust and making my kitchen and bathrooms shine. She uses her own products unless I request something special that I provide like for my leather sofa."
 > — Shelly M.
 
 ## How to Choose
 
-Think about how fast your house gets messy. A family with kids and a dog is back to hair and fingerprints in days, so weekly keeps up with it. A couple who are out all day may only need the bathrooms and floors refreshed every other week.
+Think about how fast your house gets messy. A family with kids and a dog is back to hair, paw prints and fingerprints in days, so weekly keeps up with it. Hair that sits for two weeks gets ground into the corners, and a floor that has to be mopped around a week of crumbs takes longer to clean.
 
-Monthly suits a house that stays tidy on its own and needs a deeper reset now and then. Spring and fall cleaning are there too, when you want a seasonal reset on top of your schedule.
+A couple who are out all day may only need the bathrooms and floors refreshed every other week. Monthly suits a house that stays tidy on its own.
 
-If you can't decide, tell me about your house and who lives in it. I'll tell you what I would do.
+If you can't decide, tell me about your house and who lives in it. That is enough to choose from.
 
 ## It Starts With a Deep Clean
 
-Before a weekly, bi-weekly or monthly schedule begins, a deep clean is typically required. In most cases, yes.
+Before a weekly, bi-weekly or monthly schedule begins, a deep clean is typically required. In most cases you should expect to start with one.
 
 That first visit gets the house to the standard I keep after that. Then every regular visit is about upkeep, not catching up.
 
@@ -83,8 +90,8 @@ Tell me. If you want a specific product used on a floor or a piece of furniture,
 **What about blinds?**
 Blinds hand wipe cleaning is available as an add-on, or as part of a more detailed service.
 
-**Can I switch between weekly, bi-weekly and monthly?**
-Ask me when you call. There are no contracts, so the schedule is yours to talk through.
+**Is there a contract?**
+No contracts, no hassle.
 
 ## Where I Clean
 

@@ -2,7 +2,7 @@
 
 # Contact Harris Facility Solutions
 
-The fastest way to reach us is to call. Tell us about your building and what isn't working, and we'll quote the job.
+Whether you're choosing a first cleaner or tired of the one you have, the fastest way to reach us is to call. Tell us about your building and what isn't working, and we'll quote the job.
 
 **Buttons:** Call (316) 364-1888 | Send a Message
 
@@ -14,15 +14,12 @@ Prefer to write? Use the form and tell us about your building. We don't publish 
 
 ## Have This Ready
 
-You don't need a contract or a budget to call. It helps to know:
+You don't need a contract or a budget to call. A facility manager who has the details handy gets a quote that fits the building, because size, floors and traffic all change the price. It helps to know:
 
 - The address and what kind of building it is: an office, a school, a church, a medical office or a plant.
 - Roughly how big it is and how many people use it.
 - What you want: nightly cleaning, floor stripping, carpet cleaning or a day porter.
 - What isn't working with your current cleaner, if you have one.
-
-> "Top notch management, who care about quality and being reliable. If you are considering these services, call here first. You likely will find that its the last call you need to make."
-> — Ishmael M.
 
 ## Where We Are
 

@@ -6,9 +6,6 @@ We clean offices in Wichita the way an owner would want his own cleaned: on sche
 
 **Buttons:** Call (316) 364-1888 | Get a Quote
 
-> "Professional, hardworking and trustworthy!"
-> — Lisa B.
-
 ## What Goes Wrong With Office Cleaning
 
 Most office cleaning problems aren't dramatic.
@@ -33,12 +30,24 @@ An office cleaning plan usually covers the same core jobs:
 - Wiping desks, counters, kitchenettes and break rooms
 - Cleaning glass at entries and doors
 
-How often depends on your building. A busy front office with clients walking through needs more than a back office with six desks. We build the plan around your traffic, not a standard package.
+How often depends on your building. A busy front office with clients walking through needs more than a back office with six desks.
 
 > "Had a great experience with this company, they offer efficient, professional, dependable cleaning for an affordable price.  It was a pleasure doing business with them!"
 > — Epatt K.
 
 Dependable is the word that matters in that review. An office manager has enough to do without checking on the cleaner.
+
+## Nightly, Weekly and Occasional Work
+
+Not every task belongs on every visit, and a plan that treats them all the same either wastes time or misses things.
+
+Nightly work is what people touch and see: trash, restrooms, kitchenette counters, entry glass, the floors people walk. If it is skipped for a few days, someone notices.
+
+Weekly work is slower to show. Dusting ledges and vents, wiping door frames and light switches, spot-cleaning carpet, and detailing the break room. Skip it for a month and the office feels grimy without anyone being able to say why.
+
+Occasional work is the deep end of the plan: carpet extraction, stripping and refinishing hard floors, and the high dust nobody reaches. Put these on a calendar, or they never happen until a client visit forces them.
+
+When you get a quote, ask to see which tasks fall in which group. That list is the plan, and it is what you can hold the cleaner to.
 
 ## Consistency Comes From Structure
 
@@ -46,10 +55,10 @@ A steady result takes more than a good night. We have supervisors on staff, and 
 
 That is the difference between a building that stays clean and one that is clean the week you hire us.
 
-Above all of them are Jordan and Lance Harris. When a building isn't right, you don't fill out a ticket and wait. You call us.
+Above all of them are Jordan and Lance Harris, the owners. When a building isn't right, you have people at the top of the company to take it to.
 
-> "Very respectful hardworking and professional"
-> — Pistol-Pete H.
+> "Top notch management, who care about quality and being reliable. If you are considering these services, call here first. You likely will find that its the last call you need to make."
+> — Ishmael M.
 
 ## Floors, Carpet and Day Porter Work
 
@@ -72,7 +81,7 @@ When you compare cleaning companies, the price is the least useful number. Ask t
 - What happens if something is missed?
 - Who owns the company, and will they answer?
 
-You can ask us all four. The answer to the last one is Jordan and Lance Harris, and yes.
+You can ask us all four. The answer to the last one is Jordan and Lance Harris.
 
 ## Questions Before You Call
 
@@ -80,10 +89,10 @@ You can ask us all four. The answer to the last one is Jordan and Lance Harris, 
 It depends on the size of the space, how often you want it cleaned and what's in the building. We don't post prices, because a number without the building behind it would be a guess. Call us and we'll quote it.
 
 **How often will you clean?**
-That's your call. Some offices want a clean every night and some a few times a week. We set the schedule around how your office is used.
+That's your call. Some offices want a clean every night and some a few times a week. Tell us how your office is used and we'll quote that schedule.
 
 **What if something is missed?**
-Call us. This is a family-run company, and the owners answer for the work.
+Call us. Jordan and Lance Harris own the company, and the work is theirs to answer for.
 
 **Do you clean buildings other than offices?**
 Yes. Churches, schools, medical facilities, retail stores, industrial plants and others. See our [homepage](/) for the list.

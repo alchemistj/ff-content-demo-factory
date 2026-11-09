@@ -6,20 +6,23 @@ We strip, refinish, scrub and burnish hard floors for Wichita businesses, and on
 
 **Buttons:** Call (316) 364-1888 | Get a Quote
 
-> "Jorge has performed a Strip & Wax Floor Care Service on our Tile  about once per year, and the Floors look incredible every time! Have used Harris for many years now and will continue to do so"
-> — Jonah P.
-
 ## When Floors Look Tired
 
 You can mop a lobby floor every night and it still looks dull by spring. There are gray lanes where people walk, scuffs that won't lift and corners with yellow buildup that the mop only pushes around.
 
 That is the finish on the floor wearing out, not dirt you can wipe away. Once it's gone, nightly cleaning only works on a surface that has nothing left to protect.
 
-## Why Floors Wear Down
+## What Wears Finish Away
 
 Vinyl composition tile, known as VCT, is protected by layers of floor finish. Foot traffic, grit and cleaning chemicals wear those layers thin, and the worn spots collect dirt.
 
 Wax or finish that is simply added on top of old buildup traps that dirt and turns yellow. That's why a floor that's been recoated over and over looks worse each time.
+
+The biggest wear isn't footsteps. It's grit. Sand, salt and gravel tracked in from the parking lot act like sandpaper under every shoe, which is why the entry and the first twenty feet inside go first.
+
+Rolling traffic and chemicals do their share. Carts and chair wheels cut lanes into the finish, and a cleaner that's too harsh or a mop that's too wet dulls it and can lift the edges.
+
+Walk-off mats at the doors and a floor that gets dust-mopped before it is wet-mopped slow all of this down. Neither one replaces refinishing, but both stretch the time between strippings.
 
 ## What We Do
 
@@ -33,14 +36,16 @@ Hard-floor maintenance comes in a few levels, and the right one depends on the s
 
 We'll tell you which one your floor needs. Stripping a floor that only needs a top scrub is money wasted, and recoating a floor that needs stripping is the same.
 
-> "Fantastic work and exceptional professional service."
-> — Air C.
-
 ## Strip and Wax on a Schedule
 
 Floors that are cared for on a schedule cost less than floors that are rescued. A regular top scrub and refinish keeps the finish from wearing through, so strippings are further apart.
 
-A tile floor we care for gets stripped and waxed about once a year, and it looks incredible every time. How often you need it depends on your traffic: a school hallway wears faster than a private office.
+A scrub and recoat takes off the dirty top layer and puts a fresh one down, and it works while the finish underneath is still sound. A strip is for when it isn't: yellowed buildup, layers that are peeling or a floor that has been recoated too many times.
+
+As a rough guide, a busy entry or hallway may need a top scrub and refinish several times a year, while a quiet private office can go much longer. Stripping is the rarer job, often once a year on a floor that is maintained and sometimes less. It depends on traffic.
+
+> "Jorge has performed a Strip & Wax Floor Care Service on our Tile  about once per year, and the Floors look incredible every time! Have used Harris for many years now and will continue to do so"
+> — Jonah P.
 
 ## Planning Around Your Building
 
@@ -61,7 +66,7 @@ If you already use us for [office cleaning](/office-cleaning-wichita-ks/), your 
 **How often should floors be stripped?**
 It depends on traffic and how well the finish is maintained.
 
-A busy entry wears the finish through long before a quiet hallway does. A tile floor we care for has it done about once a year. A floor that gets regular top scrubs can go longer.
+A busy entry wears the finish through long before a quiet hallway does. A floor that gets regular top scrubs can go longer between strippings.
 
 **What does it cost?**
 It depends on the square footage and the condition of the floor, so we don't post a number. Call us with the size and type of floor and we'll quote it.

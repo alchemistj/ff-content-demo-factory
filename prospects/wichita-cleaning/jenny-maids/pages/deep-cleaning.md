@@ -75,7 +75,7 @@ A deep clean resets all of it. If your house is the kind that never quite stays 
 
 ## Spring and Fall Cleaning
 
-Some people book a deep clean when the seasons change. I offer spring cleaning to refresh your home for a new season, and fall cleaning to prepare it for the holidays and colder months.
+A deep clean is not only for a first visit. I also offer spring cleaning to refresh your home for a new season, and fall cleaning to prepare it for the holidays and colder months.
 
 Spring cleaning is especially helpful for homes with kids, pets or busy households.
 
