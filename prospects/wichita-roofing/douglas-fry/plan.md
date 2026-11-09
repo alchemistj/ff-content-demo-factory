@@ -1,59 +1,56 @@
-# Plan: Douglas Fry Roofing, Inc.
+# Plan: Douglas Fry Roofing, Inc. (v2 format)
 
-## Company type and homepage
+Locked decisions carried over from the earlier plan: company type, homepage H1, the two service pages and routes, services list, phones, service area, do-not-claim list.
+
+## Company type, H1s and routes
 - **Company type:** Roofing Company. Roofing only, family-owned (Doug and his son Jason), one office they own at 1835 N. Ohio.
-- **Homepage** `/home/`, keyword `roofing company Wichita KS`.
-  H1: **Roofing Company in Wichita, KS — Douglas Fry Roofing**
-  (Use "Douglas Fry Roofing" in H1s; legal name "Douglas Fry Roofing, Inc." can go in `business.name` if the checker wants it to match. Keep it consistent across all H1s.)
+- **Homepage** `/home/`, keyword "roofing company Wichita KS". H1: **Roofing Company in Wichita, KS — Douglas Fry Roofing**
 
-## Service pages (cannibalization test run)
 | Page | Route | Keyword | H1 |
 |---|---|---|---|
 | Roof replacement | `/roof-replacement-wichita-ks/` | roof replacement Wichita KS | Roof Replacement in Wichita, KS — Douglas Fry Roofing |
 | Roof repair | `/roof-repair-wichita-ks/` | roof repair Wichita KS | Roof Repair in Wichita, KS — Douglas Fry Roofing |
 | Contact | `/contact/` | contact Douglas Fry Roofing Wichita | Contact Douglas Fry Roofing |
 
-Test: homepage H1 says "Roofing Company"; neither service H1 contains it. Replacement owns choosing and installing a whole roof (material choice, hail claims, tear-off, warranties); repair owns leaks, tile repair, shake/wood repair, flashing, valleys, metal leaks. No overlap.
+Cannibalization test: the homepage H1 says "Roofing Company"; neither service H1 does. Replacement owns choosing and installing a whole roof (material, hail claims, tear-off, warranty). Repair owns leaks, tile repair, shake repair, flashing, valleys, metal leaks.
 
-- **Replacement page job:** the material decision is their edge: concrete and clay tile, DaVinci (installing since 2002), Brava synthetic tile and shake, premium asphalt (CertainTeed Presidential Shake, Atlas StormMaster Shake named as products, not certifications), standing seam metal. Hail and wind insurance claims handled by Jason. Written estimates with scope, warranty and price. Workmanship warranties 5, 10 or 15 years (site). Talk to an owner, no commissioned salespeople. Historic and tile roofs (Ludowici, National Register home) as track record.
-- **Repair page job:** tile repair (concrete and clay; lift-and-relay with matching tile), leaks traced to the real cause (often another roofer's work), valleys, flashing, skylights/sky tubes, wood shake and wood shingle repair, metal roof leaks. Honest about what they don't do (flat roofs per one review — don't advertise flat/EPDM as a strength).
+## Services list (every one appears on the homepage)
+1. Roof Replacement (page)  2. Roof Repair (page)  3. Tile roofs, concrete and clay (install and repair)  4. DaVinci and Brava synthetic roofs  5. Wood shake and wood shingle repair  6. Standing seam metal  7. New construction roofing  8. Commercial roofing  9. Hail and wind insurance help. Premium asphalt (Atlas StormMaster Shake, CertainTeed Presidential Shake) is named as products only.
 
-## Full confirmed services list (`services[]`)
-1. Roof Replacement → `/roof-replacement-wichita-ks/`
-2. Roof Repair → `/roof-repair-wichita-ks/`
-3. Tile Roofs (concrete and clay): install and repair
-4. DaVinci and Brava Synthetic Roofs
-5. Wood Shake and Wood Shingle Repair
-6. Standing Seam Metal Roofs
-7. New Construction Roofing
-8. Commercial Roofing (site shows chapel, train station, university tile and EPDM projects)
-9. Hail and Wind Insurance Claims
-
-## Offices and numbers
-- Main: (316) 655-9777 (`+13166559777`), Google and all site call buttons.
-- Second: (316) 264-1511 (`+13162641511`), shown on every page, purpose unknown. Put it in `business.phones` second, labelled "Office". Flag on the call.
-- Address: 1835 N. Ohio, Wichita, KS 67214 (they own the building, per FAQ).
-- Email: none (null). Hours: none on site (null; MapQuest is third-party).
-- Service area: "Wichita and south-central Kansas" with towns named on their homepage: Wichita, Andover, Bel Aire, Maize, Haysville, Augusta, Wellington (plus Hays, Great Bend; site also says "from Dodge City to Hays").
-
-## Facts usable
-- Roofing since 1981 (homepage banner and About; "started in Wichita 1981 by Doug Fry"). Use "since 1981". Don't use "over 40 years" or "30 years" (conflicting).
-- "You can always speak with an owner"; no commissioned salespeople or project managers.
-- Two lead foremen (unnamed).
-- Workmanship warranties 5/10/15 years (site, in their words; keep wording close).
-- Insurance: "we can work with your insurance" (site) + reviews.
+## Phones, address, area
+- Main (316) 655-9777 (all CTAs). Second (316) 264-1511 labelled Office, shown in the footer only; purpose unknown.
+- 1835 N. Ohio, Wichita, KS 67214; they own the building. No email, no hours.
+- Area: Wichita and south-central Kansas: Andover, Bel Aire, Maize, Haysville, Augusta, Wellington, Hays, Great Bend.
 
 ## Do not claim
-Manufacturer certifications (Brava "certified installer" is their site claim; locator blocked — don't state it), BBB A+, licensing numbers, free estimates (site says written estimates, not free), financing, hours, flat roofs as a strength.
+Manufacturer certifications (incl. Brava "certified"), BBB rating, license numbers, free estimates, financing, hours, flat roofs as a strength, "over 40 years" or "30 years" (say 1981, once per page).
 
-## Trust bar candidates
-Roofing Since 1981 · Family Owned · Talk to an Owner, Not a Salesperson · Tile Roof Specialists
+## The idea (homepage)
+Tile, DaVinci, Brava, shake and standing seam roofs are the ones that go wrong when the wrong person works on them, so you should deal with the two people who know them: Doug and Jason look at your roof themselves, no commissioned salespeople, and put scope, warranty and price in writing.
+Proof in the reviews: roofer friend sends a tile repair to Fry (Matt M.); Jason spots the botched repair (Matt M.); matching clay tile ordered (Connie P.); owner contact (Dave N.); fully explained bid, no overselling (Rachel Y.); wood shake to DaVinci over 20 years (Fred O.).
 
-## What the strategy page argues
-For 45 years Doug and Jason Fry have been the roofers other roofers send people to for tile, and 63 five-star reviews say so (Ludowici tile on a National Register home, clay tile relaid with matching tiles). On a phone, their site is a desktop page shrunk sideways: the call buttons and half the menu sit off the right edge, the "Repair Services" link opens a page whose address says "tile-roof-systems-copy", the second number can't be tapped, and the copyright still says 2017.
-Costliest first:
-1. Top of the homepage says only "Douglas Fry Roofing, Inc." — no "roofing company", no Wichita.
-2. On a phone the page runs off the right edge; "Get In Touch" call buttons are off-screen; (316) 264-1511 never tappable.
-3. No real repair or replacement page: "Repair Services" lands on a "-copy" page; services scattered across product pages.
-4. None of their 63 five-star Google reviews on the site (three old testimonials).
-5. Report card: ©2017, raw image file names as captions, blog last post March 2023.
+## Homepage sections (moment / reason / what we do / review)
+1. **Top.** Moment: a roof that is more than a shingle job. We are Doug and Jason; call or ask for a written estimate. Review: Dave N. (first contact with Jason to last cleanup; barrel tile replacement).
+2. **You talk to an owner.** Moment: calling a roofer and getting a salesperson. Reason: commission pays for a new roof. Do: no commissioned salespeople or project managers; Jason handles most contact and insurance, Doug available. Review: none (Dave N. above).
+3. **Tile roofs.** Moment: ceiling stain, tile looks fine. Reason: tile sheds water, underlayment beneath stops it; underlayment wears out first; valleys, flashing, skylights, cracked tile. Do: trace, repair, or lift, re-underlay and relay (Linda G., Lynda M. in facts). Review: Matt M. (friend roofer sent him; botched repair corrected).
+4. **Why matching tile matters.** Moment: storm breaks part of a tile roof. Reason: profile and weathered colour; patch with wrong tile shows and can leak. Do: order matching tile; Jason deals with the insurer. Review: Connie P. (insurance, matching clay tile).
+5. **DaVinci, Brava and wood shake.** Moment: cedar roof splitting, or want the look without upkeep. Reason: synthetic shake and slate, wood shake skill is rare. Do: DaVinci since 2002, Brava, shake repair. Review: Fred O. (wood shake to DaVinci).
+6. **Shingle and standing seam metal.** Reason: where fasteners and seams leak; Atlas, CertainTeed; horizon lock panel, Central States; warranties 5 to 15 on metal. Review: none.
+7. **Hail, wind and insurance.** Reason: paperwork prices from numbers, we price from the roof (FAQ). Do: Jason works with your insurer. Review: none (Connie above).
+8. **Written estimate.** Scope, warranty, price (FAQ); workmanship 5, 10 or 15 years. Review: Rachel Y. (bid fully explained without overselling).
+9. **Repair / replace routes.** Links to both pages. Where leaks really start.
+10. **How a job goes.** Clean-up daily (about 15 reviews); one or two days shingle, longer tile.
+11. **Where we work.** Towns above; 1835 N. Ohio.
+12. **Questions.** Tile life; repair or replace; flat roofs (honest: not our specialty, per Gina W.); insurance; what the estimate includes; how long; who calls back.
+13. **Final CTA.** Call (316) 655-9777.
+
+## Questions and real answers (from facts)
+- Do you do insurance work? Yes, Jason works with your insurer from the start to the last nail.
+- What is in the estimate? Written: scope, warranty, price (FAQ). Not stated as free, so never say free.
+- Warranty? Workmanship 5, 10 or 15 years; lifetime manufacturer warranties on the products that carry them.
+- Flat roofs? Not our specialty (Gina W.); we say so.
+- Who do I talk to? An owner.
+- Do you use salespeople? No commissioned sales or project managers.
+
+## Could not support
+Free estimates, financing, hours, email, certifications, BBB, licence numbers, second-number purpose, price ranges, job lengths for tile (only from reviews: shingle one or two days).
