@@ -34,7 +34,21 @@ Worked from the bottom of the list up. Site sizes come from a homepage snapshot 
 | 25 | HVAC Wichita: AC & Heating | skip | No website |
 | 24 | **Epic Heating & Cooling** | **picked** | 4-page site, H1 "Comfort Solutions Simplified" (no work, no town). 87 reviews at 4.6. HVAC only |
 
-**Next run starts at row 23** (Crockett Heating & Air), working up.
+## Batch 2 (2026-11-09, Josh asked for a new batch of 4)
+| Row | Business | Decision | Reason |
+| --- | --- | --- | --- |
+| 23 | Crockett Heating & Air | too big | 26 pages, strong title and H1 ("Wichita Same-Day AC & Furnace Repair") |
+| 22 | Phil Hamilton Heating & AC | skip | No website; unclaimed listing |
+| 21 | Azteca HVAC Pros | backlog | 6-page site, no tap-to-call link, but only 7 reviews: too few to quote across four pages |
+| 20 | Mike's & Sappio's | too big | Since 1967, established company |
+| 19 | Wichita HVAC Training Center | skip | A school |
+| 18 | HVAC Service Master | skip | Commercial kitchens only |
+| 17 | **Rods Cooling & Heating** | **picked** | One-page site; its tap-to-call dials (316) 776-4088 while Google lists (316) 516-0406. 190 reviews at 4.8 |
+| 16 | **Integrity Heating and Cooling** | **picked** | 7-page site, H1 "Heating and Cooling Services" (no town). 45 reviews at 5.0 |
+| 15 | **Air Capital Heating and Air** | **picked** | 10-page site, H1 "Expert Heating & Air Services" (no town). 27 reviews at 5.0 |
+| 14 | **Dream Makers Heating and Cooling** | **picked** | 21 pages but no H1 at all; 43 reviews at 5.0 |
+
+**Next run starts at row 13** (Compass Plumbing Heating and Cooling), working up.
 
 ## Backlog worth a look first next time (checked early, rows 1 to 23)
 - Rods Cooling & Heating (row 17): one-page site; its tap-to-call dials (316) 776-4088 while Google lists (316) 516-0406. 190 reviews. **Strongest next pick.**
