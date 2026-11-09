@@ -27,7 +27,7 @@ Leaks also start where the roof changes direction: valleys, flashing around chim
 
 We find where the water is really getting in, and fix that. If the underlayment has failed, we lift the tile, put down new underlayment and lay your existing tile back. It's slow, hard work, and it is how a tile roof gets another few decades.
 
-Doug is the name other Wichita roofers send people to for tile, and we've worked on everything from concrete barrel tile to Ludowici tile on a National Register home.
+We've worked on everything from concrete barrel tile to Ludowici tile on a National Register home, and a working Wichita roofer sent the homeowner below to us for his tile repair.
 
 > I have a good friend that is a professional roofer (local) and he told me to call Fry Roofing for my tile-roof repair. Jason Fry helped me and really knows his stuff. … We purchased a pre-owned home and the previous roof "repair" was performed improperly. Jason recognized the botched repair and corrected it before it had a chance to damage the inside of the house.
 > — Matt M.
@@ -38,7 +38,7 @@ A storm breaks part of your tile roof. The easy fix is to replace the broken til
 
 But tile comes in different shapes, profiles and colors, and a tile that has weathered for twenty years never matches a new one. A near match looks like a patch, and if the shape is a little off, it doesn't sit or seal like the original.
 
-So we track down matching tile, and when it can't be matched exactly we'll tell you that and show you what the choices are.
+So we order matching tile, and Jason takes it up with your insurer when a storm did the damage.
 
 > Jason successfully negotiated our insurance claim to cover the damage. He ordered matching clay tiles and installed the roof with quality materials.
 > — Connie P.
@@ -68,8 +68,6 @@ After a hailstorm, two things get priced: the paperwork and the roof. They aren'
 
 Jason works with your insurance company from the first call to the last nail. We write our estimate from what's on your roof, not from what the adjuster's sheet says.
 
-If your insurer approves less than the roof needs, you'll know exactly where the difference is and why.
-
 ## A Written Estimate With Scope, Warranty and Price
 
 We always give a written estimate on repair and re-roof projects. It lists the scope of work, the warranty and the price, so you can compare it line by line with any other bid.
@@ -89,10 +87,10 @@ We also do new construction roofing and commercial roofing.
 
 ## How a Job Goes
 
-1. **We look at your roof.** One of us climbs up, finds the problem and tells you what we found.
+1. **We look at your roof.** One of us looks over your roof, finds the problem and tells you what we found.
 2. **You get it in writing.** Scope, warranty and price, so there are no surprises on the day.
 3. **The crew does the work.** A shingle roof often takes a day or two. Tile takes longer, because it comes off by hand and goes back the same way.
-4. **We clean up.** The crew picks up debris each day, and we call if you have questions afterward.
+4. **We clean up.** The crew picks up debris each day, and Jason follows up afterward.
 
 ## Wichita and South-Central Kansas
 
@@ -114,7 +112,7 @@ Flat roofs are not our specialty, and we'll say so. We do tile, shake, shingle, 
 **Do you work with insurance companies?**
 Yes. Jason works with your insurer from the start of the claim to the finished roof.
 
-**Is the estimate free?**
+**What does an estimate include?**
 We always give a written estimate on repairs and re-roofs, with the scope of work, warranty and price.
 
 **Who will I talk to?**

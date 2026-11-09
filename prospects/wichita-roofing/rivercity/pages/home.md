@@ -15,7 +15,7 @@ Water is sneaky. It runs along the decking and down a rafter before it ever drip
 
 That's why one roofer says you need a new roof, the next says a patch, and a third blames the flashing. They're guessing from the ground.
 
-We look first. Anthony gets into the attic and up on the roof, finds where the water is really coming in, and tells you what it will take to stop it.
+We look first. We get into the attic and up on the roof, find where the water is really coming in, and tell you what it will take to stop it. That's how Anthony found Brant C.'s leak at the chimney chase, not the shingles.
 
 Sometimes that's a whole new roof. Sometimes it's a chimney chase, a vent boot or a strip of flashing that costs a fraction as much.
 
@@ -29,7 +29,7 @@ Asphalt shingles wear out from the sun first, then from Kansas wind and hail. On
 
 We install composition shingles, metal and tile roofs. When the work is done, the crew walks the property and picks up what fell off the roof, so you aren't finding nails in the yard weeks later.
 
-Then Anthony stops by to make sure you're pleased.
+Afterward, we come back to make sure you're pleased with the roof.
 
 [See roof replacement →](/roof-replacement-wichita-ks/)
 
@@ -61,9 +61,13 @@ We do routine roof maintenance, and a look after a hard storm is a good time to 
 
 The roof is only the top of the house. The roof edge, the gutters and the siding meet, and water that gets past one usually shows up at the next.
 
-So we also work on the rest of the outside.
+So we also work on the rest of the outside:
 
-Siding repair, replacement and maintenance in wood, fiber cement or composite. Gutter repair and gutter guards. Interior and exterior painting. Window repair and replacement. Deck restoration and staining.
+- Siding repair, replacement and maintenance in wood, fiber cement or composite
+- Gutter repair and gutter guards
+- Interior and exterior painting
+- Window repair and replacement
+- Deck restoration and staining
 
 Those are all in the same hands as the roof, so when we see a gutter pulling away or a window-well problem while we're up there, we can tell you and fix it.
 
@@ -73,10 +77,10 @@ Those are all in the same hands as the roof, so when we see a gutter pulling awa
 ## How a Job Goes
 
 1. **You call for a free quote.** Tell us what you're seeing, whether that's a stain, missing shingles or an old roof.
-2. **We look.** From the first consultation to the final inspection, someone from River City looks at the real roof, attic included when there's a leak.
+2. **We look.** Someone from River City gets up on the real roof, and into the attic when there's a leak, before any price is written.
 3. **You get a detailed estimate.** It covers what the job needs.
 4. **The crew does the work.** When the crew says they'll be there, they're there.
-5. **Cleanup and follow-up.** The crew walks the property for debris, and Anthony checks back with you afterward.
+5. **Cleanup and follow-up.** The crew walks the property for debris, and we check back with you afterward.
 
 ## Questions Before You Call
 
@@ -111,7 +115,7 @@ We work in Wichita.
 
 We're a local, family owned business at 3750 N Topeka St, Wichita, KS 67219.
 
-Call Monday to Friday, 8:00 AM to 4:30 PM, at (316) 295-2159. Anthony answers calls and texts, and he's quick about it.
+Call Monday to Friday, 8:00 AM to 4:30 PM, at (316) 295-2159.
 
 ## Get Someone Up on Your Roof
 
