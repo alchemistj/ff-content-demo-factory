@@ -1,0 +1,277 @@
+{
+ "slug": "electrician-wichita-ks",
+ "run": "2026-11-09",
+ "next_start_rank": 7,
+ "checked": [
+  {
+   "position": 4,
+   "name": "Graf Electric",
+   "status": "disqualified",
+   "reason": "see ledger.md"
+  },
+  {
+   "position": 5,
+   "name": "Electricraft",
+   "status": "qualified-backlog",
+   "reason": "see ledger.md"
+  },
+  {
+   "position": 8,
+   "name": "Bybee Electric",
+   "status": "picked",
+   "reason": "see ledger.md"
+  },
+  {
+   "position": 9,
+   "name": "Young Electric, Inc.",
+   "status": "disqualified",
+   "reason": "see ledger.md"
+  },
+  {
+   "position": 10,
+   "name": "Decker Electric",
+   "status": "disqualified",
+   "reason": "see ledger.md"
+  },
+  {
+   "position": 11,
+   "name": "Elite Electric Company LLC",
+   "status": "disqualified",
+   "reason": "see ledger.md"
+  },
+  {
+   "position": 12,
+   "name": "Ballinger Electric",
+   "status": "picked",
+   "reason": "see ledger.md"
+  },
+  {
+   "position": 13,
+   "name": "Bandits Construction",
+   "status": "qualified-backlog",
+   "reason": "see ledger.md"
+  },
+  {
+   "position": 14,
+   "name": "Enegren Electric",
+   "status": "picked",
+   "reason": "see ledger.md"
+  },
+  {
+   "position": 15,
+   "name": "M&J Electric of Wichita LLC",
+   "status": "disqualified",
+   "reason": "see ledger.md"
+  },
+  {
+   "position": 16,
+   "name": "Central States Electric",
+   "status": "disqualified",
+   "reason": "see ledger.md"
+  },
+  {
+   "position": 17,
+   "name": "Absolute Electric",
+   "status": "disqualified",
+   "reason": "see ledger.md"
+  },
+  {
+   "position": 18,
+   "name": "Electrical Systems Inc",
+   "status": "disqualified",
+   "reason": "see ledger.md"
+  },
+  {
+   "position": 19,
+   "name": "Reddi Electric",
+   "status": "disqualified",
+   "reason": "see ledger.md"
+  },
+  {
+   "position": 20,
+   "name": "Mister Sparky of Wichita",
+   "status": "disqualified",
+   "reason": "see ledger.md"
+  },
+  {
+   "position": 21,
+   "name": "Nave Electric",
+   "status": "qualified-backlog",
+   "reason": "see ledger.md"
+  },
+  {
+   "position": 22,
+   "name": "Linnebur Electric",
+   "status": "picked",
+   "reason": "see ledger.md"
+  },
+  {
+   "position": 23,
+   "name": "Shelley Electric Inc",
+   "status": "disqualified",
+   "reason": "see ledger.md"
+  },
+  {
+   "position": 24,
+   "name": "Innovative Electric",
+   "status": "disqualified",
+   "reason": "see ledger.md"
+  },
+  {
+   "position": 25,
+   "name": "Eck Services",
+   "status": "disqualified",
+   "reason": "see ledger.md"
+  },
+  {
+   "position": 26,
+   "name": "APPLE ELECTRIC",
+   "status": "disqualified",
+   "reason": "see ledger.md"
+  },
+  {
+   "position": 27,
+   "name": "Fahnestock Plumbing, HVAC & Electric",
+   "status": "disqualified",
+   "reason": "see ledger.md"
+  },
+  {
+   "position": 28,
+   "name": "Ray's & Lowry Electric, Inc.",
+   "status": "disqualified",
+   "reason": "see ledger.md"
+  },
+  {
+   "position": 29,
+   "name": "Trinity Electric",
+   "status": "disqualified",
+   "reason": "see ledger.md"
+  },
+  {
+   "position": 30,
+   "name": "Southwestern Electrical Co",
+   "status": "disqualified",
+   "reason": "see ledger.md"
+  },
+  {
+   "position": 31,
+   "name": "All Pro Electrical Co",
+   "status": "disqualified",
+   "reason": "see ledger.md"
+  },
+  {
+   "position": 32,
+   "name": "A&H Electric",
+   "status": "disqualified",
+   "reason": "see ledger.md"
+  },
+  {
+   "position": 33,
+   "name": "M & J Electric",
+   "status": "disqualified",
+   "reason": "see ledger.md"
+  },
+  {
+   "position": 34,
+   "name": "Kansas Tri-Service LLC",
+   "status": "disqualified",
+   "reason": "see ledger.md"
+  },
+  {
+   "position": 35,
+   "name": "Advance Electric Inc",
+   "status": "disqualified",
+   "reason": "see ledger.md"
+  },
+  {
+   "position": 36,
+   "name": "Atlas Electric LLC",
+   "status": "disqualified",
+   "reason": "see ledger.md"
+  },
+  {
+   "position": 37,
+   "name": "Belford Electric Inc.",
+   "status": "disqualified",
+   "reason": "see ledger.md"
+  },
+  {
+   "position": 38,
+   "name": "LT Solutions",
+   "status": "disqualified",
+   "reason": "see ledger.md"
+  },
+  {
+   "position": 39,
+   "name": "D & R Electric",
+   "status": "disqualified",
+   "reason": "see ledger.md"
+  },
+  {
+   "position": 40,
+   "name": "Reddi Industries",
+   "status": "disqualified",
+   "reason": "see ledger.md"
+  },
+  {
+   "position": 41,
+   "name": "Area Wide Electric",
+   "status": "disqualified",
+   "reason": "see ledger.md"
+  },
+  {
+   "position": 42,
+   "name": "ICT Electric Corp",
+   "status": "disqualified",
+   "reason": "see ledger.md"
+  },
+  {
+   "position": 43,
+   "name": "Dan's Heating and Cooling",
+   "status": "disqualified",
+   "reason": "see ledger.md"
+  },
+  {
+   "position": 44,
+   "name": "Bowers Plumbing Company",
+   "status": "disqualified",
+   "reason": "see ledger.md"
+  },
+  {
+   "position": 45,
+   "name": "Azeris Electrical Contracting",
+   "status": "disqualified",
+   "reason": "see ledger.md"
+  },
+  {
+   "position": 46,
+   "name": "Willfish Construction",
+   "status": "disqualified",
+   "reason": "see ledger.md"
+  },
+  {
+   "position": 47,
+   "name": "Ryan Blaine Construction LLC",
+   "status": "disqualified",
+   "reason": "see ledger.md"
+  },
+  {
+   "position": 48,
+   "name": "ICT Wire Works LLC",
+   "status": "disqualified",
+   "reason": "see ledger.md"
+  },
+  {
+   "position": 49,
+   "name": "All Seasons Construction Inc.",
+   "status": "disqualified",
+   "reason": "see ledger.md"
+  },
+  {
+   "position": 50,
+   "name": "BlackTie Electric",
+   "status": "disqualified",
+   "reason": "see ledger.md"
+  }
+ ]
+}
