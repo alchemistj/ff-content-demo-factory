@@ -21,7 +21,7 @@
     "ratingOnly": 0
   },
   "detail": "Apify returned HTTP 402: Your remaining usage of $0.435205 this billing cycle isn't enough for this run. Increase your limit by upgrading to a paid plan at https://console.apify.com/billing/subscription.",
-  "startedAt": "2026-11-09T18:44:26.360Z",
-  "finishedAt": "2026-11-09T18:44:26.737Z",
-  "githubRunUrl": "https://github.com/alchemistj/ff-content-demo-factory/actions/runs/42676627406"
+  "startedAt": "2026-11-09T19:09:30.107Z",
+  "finishedAt": "2026-11-09T19:09:30.388Z",
+  "githubRunUrl": "https://github.com/alchemistj/ff-content-demo-factory/actions/runs/42680591715"
 }
