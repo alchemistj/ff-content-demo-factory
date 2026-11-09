@@ -15,6 +15,14 @@ One writer model completes the package in **one writer run**. The headings below
 3. [Approved Springfield examples](../../examples/approved-copy/README.md) — finished work from Window Dudes, SRA, and Greene Planet
 4. The approved prescription and evidence packet for the **current** prospect
 
+### Rules that apply across pages
+
+- [KEYWORD_GUIDE.md](KEYWORD_GUIDE.md): homepage H1 is the company type, each service page owns one keyword, plus the cannibalization test
+- [REVIEW_QUOTES.md](REVIEW_QUOTES.md): which reviews, how to trim, how to attribute
+- [STRATEGY_PAGE_GUIDE.md](STRATEGY_PAGE_GUIDE.md) and [FULL_BUILD_LINES.md](FULL_BUILD_LINES.md): the owner-facing Strategy Overview
+- [../words-package.md](../words-package.md): the file you deliver, and the checks it must pass (`node scripts/check-words-package.mjs prospects/<market>/<slug>`)
+- [../runtime/SITE-AUDIT.md](../runtime/SITE-AUDIT.md): the audit of the prospect's current site, done before the plan
+
 ### Page-role guides
 
 - [SERVICE_PAGE_GUIDE.md](SERVICE_PAGE_GUIDE.md) — internal service-page pass, two service pages

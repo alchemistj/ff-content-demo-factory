@@ -8,6 +8,7 @@ Read `ASSIGNMENT.md` and `docs/runtime/AUTHORITY.md`. Then inspect the prospect 
 
 1. An **evidence packet**: business identity, NAP, source-backed facts (each marked `confirmed` or `inference`), site evidence, image refs, and the **complete** retrieved review inventory with exact text, attribution, and provenance.
 2. An **advisory recommendation set** for later stages.
+3. A **current-site audit** (`audit.md`) by `docs/runtime/SITE-AUDIT.md`: click every link, button, phone number and form on their current site.
 
 Do not withhold a source-backed review because classification is unfinished. Classification, when you offer it, is advice.
 

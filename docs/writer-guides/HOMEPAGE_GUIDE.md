@@ -14,7 +14,9 @@ Do not reopen their strategy or rewrite them inside the homepage.
 
 ## Intent
 
-The homepage normally owns the broad company/category + primary market intent. Do not make the H1 compete with a dedicated service page unless the prescription says otherwise.
+The homepage owns the **company type** in the primary market, never a service or procedure. H1 format: `[Company Type] in [City, ST] — [Business Name]`, for example "Exterior Remodeling Company in Wichita, KS — Evolve Exteriors", "HVAC Company in Wichita, KS — …", "Commercial Cleaning Company in Springfield, MO — Brown Professional Services" (the approved Brown demo).
+
+Each service page owns one different service keyword ("Window Replacement in Wichita, KS"). Before you write, run the cannibalization test: does the homepage H1 already use the phrase a service page targets? If yes, change one. Pick a company type broad enough to cover the business's main services, so a window company that also does siding and doors is an exterior remodeling company. Source: `KEYWORD_GUIDE.md`.
 
 One market in the H1: the city of the Google profile. A business with a second office (Evolve: Wichita and Oklahoma City) still names one city; the second office gets its number and a service-area line, and a full build gives it its own page (Josh, 2026-11-09).
 
@@ -38,7 +40,7 @@ Greene Planet’s `/springfield/` redirects to `/`. That root page is the Spring
 Use judgment on order and format. Cover the jobs that matter:
 
 - Identity: who, what, whom they help, where
-- Services: the confirmed set, with built pages easy to find
+- Services: a scannable section showing the **full** confirmed service list (the package's `services`), with built pages linked and the rest as plain cards with a short benefit line. Window Dudes' "All Window, Door & Glass Services" is the model. Do not invent routes so every card can link.
 - Differentiation from real evidence — not website-quality claims
 - Confirmed service area
 - Ownership, team, or history only when verified and useful
@@ -62,4 +64,4 @@ Make the path to call or contact obvious. Use the same offer and contact hierarc
 
 ## SEO metadata
 
-Write the final SEO title and meta description for this homepage route as part of the page. Follow the general guide. The website builder will consume those words rather than inventing them.
+Optional for demos. See the general guide.
