@@ -1,0 +1,564 @@
+{
+  "schema": "words-package/v1",
+  "business": {
+    "name": "Integrity Heating and Cooling",
+    "slug": "integrity",
+    "city": "Wichita",
+    "state": "KS",
+    "companyType": "HVAC Company",
+    "owners": [
+      "Sam"
+    ],
+    "phones": [
+      {
+        "label": "Wichita",
+        "display": "(316) 932-9559",
+        "tel": "+13169329559"
+      }
+    ],
+    "email": null,
+    "hours": "Monday to Friday, 8 a.m. to 5 p.m.",
+    "address": "801 S Fabrique Dr, Wichita, KS 67218",
+    "serviceArea": {
+      "summary": "Greater Wichita",
+      "towns": [
+        "Wichita"
+      ]
+    }
+  },
+  "trustBar": [
+    "Family-Owned",
+    "Owner on the Phone",
+    "Free Phone Consultation",
+    "No Surprise Charges",
+    "All Major Brands"
+  ],
+  "services": [
+    {
+      "name": "AC Repair",
+      "route": "/ac-repair-wichita-ks/",
+      "blurb": "Cool air back, with the failed part found and explained first."
+    },
+    {
+      "name": "Furnace Repair",
+      "route": "/furnace-repair-wichita-ks/",
+      "blurb": "Heat back on, with the cause explained in plain words."
+    },
+    {
+      "name": "Heat Pump Repair",
+      "route": null,
+      "blurb": "Repairs for heat pumps that heat and cool your home."
+    },
+    {
+      "name": "Motor Replacement",
+      "route": null,
+      "blurb": "A noisy motor found and replaced before it becomes a bigger repair."
+    },
+    {
+      "name": "System Installation",
+      "route": null,
+      "blurb": "A new heating or cooling system when repair no longer makes sense."
+    },
+    {
+      "name": "HVAC Maintenance",
+      "route": null,
+      "blurb": "Seasonal service that catches small problems before they quit."
+    },
+    {
+      "name": "Commercial HVAC",
+      "route": null,
+      "blurb": "Installation and repair for businesses and commercial buildings."
+    }
+  ],
+  "pages": [
+    {
+      "role": "home",
+      "route": "/home/",
+      "navLabel": "Home",
+      "keyword": "hvac company wichita ks",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Family-owned heating and cooling",
+        "h1": "HVAC Company in Wichita, KS — Integrity Heating and Cooling",
+        "sub": "I'm Sam, and my team and I repair air conditioners and furnaces, replace worn-out systems and look after heating and cooling for homes and commercial buildings around Wichita. When your system quits, you get a straight answer and a fair price. Call for a free phone consultation.",
+        "primaryCta": {
+          "label": "Call (316) 932-9559",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Request Service",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "home-hero",
+          "alt": "Outdoor air conditioner beside a brick home in Wichita",
+          "brief": "outdoor AC condenser beside the brick wall of a Kansas ranch house, house and unit on the right, soft clear sky on the left, no readable text, no people"
+        }
+      },
+      "sections": [
+        {
+          "type": "review",
+          "quote": "I was referred to Integrity by another local investor. I had an issue with my unit in a short term rental after 8pm, and Sam (the owner) personally took care of it himself. He was very efficient, great with communication, and fair in his pricing after hours.",
+          "name": "Hunter M."
+        },
+        {
+          "type": "prose",
+          "heading": "An Owner Who Takes the Call",
+          "body": [
+            "A heating or cooling system never fails at a convenient time. It fails on the hottest afternoon of the summer or the coldest morning of the winter, and the last thing you want is a call center and a ticket number.",
+            "We're a family-owned company, and I stay in the work myself. When you call, you talk to someone who knows the job.",
+            "Sometimes we can walk you through a fix over the phone. If not, a technician comes out to look.",
+            "That's the whole idea behind the name. We tell you what is wrong, what it will cost and what your options are, and then we do what we said we'd do."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Best prices, best service. I have used this company for the last 7+ years and won't go anywhere else. Sam and Cory have taken care of our family each and every time.",
+          "name": "Chris W."
+        },
+        {
+          "type": "prose",
+          "heading": "AC Repair",
+          "body": [
+            "The house is crawling past 80, the air coming out of the vents is lukewarm, or the unit outside runs and runs without cooling anything. Sometimes it just won't start at all.",
+            "Air conditioners usually fail in a few predictable places. A weak capacitor keeps the compressor or fan from starting.",
+            "A dirty coil or a clogged filter chokes the airflow until the coil ices over. Low refrigerant means there is a leak somewhere, and topping it off without finding the leak only buys a few weeks.",
+            "We find the actual cause first, explain it in plain words and fix it. If the repair isn't worth it on an old unit, we say so."
+          ],
+          "link": {
+            "label": "See AC repair in Wichita →",
+            "route": "/ac-repair-wichita-ks/"
+          }
+        },
+        {
+          "type": "prose",
+          "heading": "Furnace Repair",
+          "body": [
+            "A furnace that quits doesn't always say why. It clicks and never lights, it runs for two minutes and shuts down, or it blows cold air while the house gets colder.",
+            "The cause is often small. A worn igniter, a dirty flame sensor, a clogged filter or a failing blower motor can each stop the heat, and each is a much smaller job than a new furnace.",
+            "We diagnose it, show you what failed and fix it. A cracked heat exchanger is the one problem that is a safety matter, and we'll tell you plainly if that is what we find."
+          ],
+          "link": {
+            "label": "See furnace repair in Wichita →",
+            "route": "/furnace-repair-wichita-ks/"
+          }
+        },
+        {
+          "type": "prose",
+          "heading": "When a Repair Stops Making Sense",
+          "body": [
+            "Some systems are past saving. If you've paid for two or three repairs in a couple of years, the equipment is old and the bills keep stacking up, a new system is usually the cheaper road.",
+            "We also install new heating and cooling equipment, and we'll give you an honest opinion before you spend that kind of money. Sometimes the answer is one more repair. Sometimes it's a new system, and we'll say so.",
+            "When you do replace, the installation matters as much as the equipment. A system that is sized and set up badly runs hard and wears out early."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Integrity Heating and Cooling replaced my whole HVAC system and left me with full confidence that everything was installed to last with no problems. They were very thorough and efficient and got the job done. I wasn’t sure I could get a fair quote along with great work ethic but these guys proved me wrong!",
+          "name": "Maddie R."
+        },
+        {
+          "type": "prose",
+          "heading": "Heat Pumps, Motors and Commercial Buildings",
+          "body": [
+            "Beyond the two repairs above, we repair heat pumps, replace blower and condenser motors that have started to make noise, and handle commercial heating and cooling for businesses and landlords.",
+            "Landlords and property managers have a particular problem: the tenant is the one without heat or air, and every hour counts."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Integrity Heating and Cooling was fantastic to work with. They came out so quickly, fixed the problem and the bill was so reasonable. We own a lot of commercial buildings, and really appreciate being able to work with vendors like Integrity. They made our tenant happy, and that makes us happy!",
+          "name": "Lynne L."
+        },
+        {
+          "type": "prose",
+          "heading": "Keeping It From Breaking Again",
+          "body": [
+            "Most breakdowns start long before the day the system quits. A dirty filter, a coil caked with dust and a motor running dry all wear a system out a little more each season.",
+            "A yearly check before the heavy season catches those things while they're still cheap to fix. We offer HVAC maintenance plans for homeowners who would rather pay for a tune-up than for an emergency, so ask about one when you call.",
+            "It also helps to change your filter on a schedule. A clean filter is the cheapest thing you can do for either your furnace or your air conditioner."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "What You Can Count On",
+          "body": [
+            "**A price that makes sense.** We break down the cost of the work, with no surprise charges.",
+            "**Answers you can follow.** We explain what failed and why, so you decide with the facts in front of you.",
+            "**A clean house when we leave.** We pick up after ourselves, because a repair shouldn't leave you a second job.",
+            "**Help on the phone first.** Some problems are a setting, a switch or a filter. The free phone consultation tells you that before anyone drives out."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Serving Greater Wichita",
+          "body": [
+            "We serve the Greater Wichita area from 801 S Fabrique Dr in Wichita. Call us and tell us where you are, and we'll tell you what we can do.",
+            "Our office hours are Monday to Friday, 8 AM to 5 PM. If your system quits outside those hours, call anyway and ask. After-hours work is priced by phone, so you know the number before anyone comes."
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Questions Before You Call",
+          "items": [
+            {
+              "q": "Does it cost anything to call?",
+              "a": "No. We offer a free phone consultation, so you can describe the problem and hear what we think before you decide anything."
+            },
+            {
+              "q": "Will I get a surprise on the bill?",
+              "a": "We're upfront about pricing and give you a full breakdown, so you know what you're paying for."
+            },
+            {
+              "q": "Do you work on my brand?",
+              "a": "We work on all the major heating and cooling brands, so a name on the side of the unit isn't a reason to hold off calling."
+            },
+            {
+              "q": "How soon can someone come out?",
+              "a": "It depends on the day's schedule. Plenty of our repairs happen the same day or the next morning, and when you call we'll tell you when a technician can get there."
+            },
+            {
+              "q": "Should I repair it or replace it?",
+              "a": "That depends on the age of the unit, what failed and what the repair costs. We'll go through it with you and give you an honest opinion."
+            },
+            {
+              "q": "Do you take commercial work?",
+              "a": "Yes. We work on commercial heating and cooling for businesses and landlords as well as homes."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Call Today",
+          "text": "If your heat or air has quit, or you're tired of a system that never keeps up, call us. Tell us what's happening and we'll tell you what we think. Integrity Heating and Cooling: (316) 932-9559."
+        }
+      ]
+    },
+    {
+      "role": "service",
+      "route": "/ac-repair-wichita-ks/",
+      "navLabel": "AC Repair",
+      "keyword": "ac repair wichita ks",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Air conditioning, Wichita",
+        "h1": "AC Repair in Wichita, KS — Integrity Heating and Cooling",
+        "sub": "The house is climbing past 80 and the vents are blowing warm. We find out what failed, explain it in plain words and fix it at a fair price. Call me for a free phone consultation.",
+        "primaryCta": {
+          "label": "Call (316) 932-9559",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Request Service",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "ac-hero",
+          "alt": "Outdoor AC unit beside a Wichita home",
+          "brief": "outdoor air conditioner condenser beside a brick house in summer, unit on the right, bright soft sky and lawn on the left, no readable text, no people"
+        }
+      },
+      "sections": [
+        {
+          "type": "review",
+          "quote": "AC went out on a SATURDAY around 2pm. I contacted Sam and he had his guy Clayton there within a couple hours. Clayton quickly diagnosed the issue and ordered the parts. Came back on Monday and had me up and running in no time.",
+          "name": "Jessica H."
+        },
+        {
+          "type": "prose",
+          "heading": "When to Call",
+          "body": [
+            "The house won't cool below 80 no matter how long the unit runs. The air from the vents is lukewarm. The outdoor unit hums but the fan isn't spinning, or the breaker trips every time it starts.",
+            "Ice on the copper line outside, water around the indoor unit and a system that cycles on and off every few minutes are all signs to turn it off and call. Running a struggling air conditioner makes a small repair bigger."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "What Usually Goes Wrong",
+          "body": [
+            "Most AC failures come from a short list of parts, and knowing the list helps you follow what a technician tells you.",
+            "**Capacitor.** This small part gives the compressor and fan motor the jolt they need to start. When it weakens, the unit hums and won't run. It's one of the most common and cheapest repairs.",
+            "**Dirty coil or clogged filter.** Dust on the coil and a choked filter cut the airflow until the coil freezes into a block of ice. The fix is cleaning and finding out why it got that way.",
+            "**Low refrigerant.** An air conditioner doesn't use up refrigerant. If it's low, there's a leak, and adding more without fixing the leak is money that drains away again.",
+            "**Fan or compressor motor.** Motors wear, and a noisy or slow-spinning motor is a warning. Replacing it early is a far smaller job than waiting for it to fail."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "How We Work a Repair",
+          "body": [
+            "We start with the diagnosis. A technician looks at the system, finds the actual cause and tells you what he found, in words you can follow.",
+            "Then you see what you're paying for. We give you a full breakdown of the costs, so there are no surprise charges at the end."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Clayton came to our house and was quick to inspect our our AC, educate us on what was wrong and fix it within two hours. We had another company come out that “couldn’t figure it out” and needed another salesman to come.",
+          "name": "Justus K."
+        },
+        {
+          "type": "review",
+          "quote": "Sam and his employee came out to fix our air conditioning last minute and were able to get it running again the same day. He explained everything they did to fix it and gave us some helpful advice on how to keep it running.",
+          "name": "Scott C."
+        },
+        {
+          "type": "prose",
+          "heading": "When Your Air Conditioner Quits at a Bad Time",
+          "body": [
+            "Air conditioners don't pick their moment. They fail on weekends, on holidays and in the heat of the afternoon.",
+            "Our office hours are Monday to Friday, 8 AM to 5 PM, and after-hours work is priced by phone, so call and ask what's possible. One holiday call went like this."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Had my AC go out on a holiday and it only took an hour and a half from initial phone call to job completion. Highly recommend.",
+          "name": "Colton K."
+        },
+        {
+          "type": "prose",
+          "heading": "Repair or Replace?",
+          "body": [
+            "Most of the time a repair is the right call. A capacitor, a motor or a cleaned coil gets you back to cool air for a fraction of the cost of a new system.",
+            "Replacement starts to make sense when the unit is old, repairs are piling up, or the problem is something like a failed compressor on a system that's already near the end of its life. A big repair bill on an old unit is often money you'd rather put toward a new one.",
+            "We tell you which situation you're in, and we'll tell you if the answer is to repair. We also install new air conditioning equipment when it's time."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Keeping Your AC Running",
+          "body": [
+            "A few habits stretch a system's life. Change the filter on a schedule, keep the outdoor unit clear of grass, leaves and anything stacked against it, and don't ignore a new noise.",
+            "A spring check before the first hot week catches weak parts before they fail on you. We offer maintenance plans, so ask about one when you call."
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Questions Before You Call",
+          "items": [
+            {
+              "q": "Does it cost anything to call?",
+              "a": "No. We offer a free phone consultation. Describe what the unit is doing and we'll tell you what we think it is."
+            },
+            {
+              "q": "Do you work on my brand of air conditioner?",
+              "a": "We work on all the major brands."
+            },
+            {
+              "q": "How soon can someone come out?",
+              "a": "It depends on the day's schedule. Plenty of our AC repairs happen the same day or the next morning, and when you call we'll tell you when a technician can get there."
+            },
+            {
+              "q": "Will the bill surprise me?",
+              "a": "No. We're upfront about pricing and give you a full breakdown of the costs, with no surprise charges."
+            },
+            {
+              "q": "What about a home or a commercial building?",
+              "a": "Both. We repair air conditioning in homes and in commercial buildings around Wichita."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Call Integrity",
+          "text": "If your AC isn't cooling, call (316) 932-9559. Tell us what it's doing, and we'll tell you what we think and what to do next."
+        }
+      ]
+    },
+    {
+      "role": "service",
+      "route": "/furnace-repair-wichita-ks/",
+      "navLabel": "Furnace Repair",
+      "keyword": "furnace repair wichita ks",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Heating, Wichita",
+        "h1": "Furnace Repair in Wichita, KS — Integrity Heating and Cooling",
+        "sub": "A furnace that won't light on a cold Kansas morning can't wait for next week. We find what failed, explain it plainly and repair it for a fair price. Call me for a free phone consultation.",
+        "primaryCta": {
+          "label": "Call (316) 932-9559",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Request Service",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "furnace-hero",
+          "alt": "Gas furnace in a home utility room",
+          "brief": "gas furnace in a tidy basement utility room, furnace on the right, plain painted wall and soft warm light on the left, no readable text, no tools in hands, no people"
+        }
+      },
+      "sections": [
+        {
+          "type": "review",
+          "quote": "Called yesterday with furnace was not working and they came the next morning to fix the furnace. Integrity Heating and Cooling were quick and efficient getting the repair done. We were very pleased with their service.",
+          "name": "Joyce A."
+        },
+        {
+          "type": "prose",
+          "heading": "Signs Your Furnace Needs a Technician",
+          "body": [
+            "The thermostat is calling for heat and nothing happens. You hear clicking but the burners never light. The furnace starts, runs a couple of minutes and shuts off, over and over.",
+            "Other signs are quieter. Some rooms stay cold, the blower screams or rattles, or the air coming out isn't warm. Any of these is worth a call before the coldest week of the year."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "What Usually Stops the Heat",
+          "body": [
+            "A furnace has several steps to go through before it heats your house, and a failure at any one stops the whole thing. That's why most no-heat calls turn out to be a small part and not a new furnace.",
+            "**Igniter.** The part that lights the burner wears out with use. A cracked or weak igniter means the furnace tries to start and can't.",
+            "**Flame sensor.** This small rod tells the furnace that the burner lit. When it gets coated with residue, the furnace shuts down after a few seconds as a safety measure. Cleaning or replacing it is a simple repair.",
+            "**Filter and airflow.** A clogged filter makes the furnace overheat and shut itself off. It's the cheapest fix there is, and the reason some furnaces cycle on and off.",
+            "**Blower motor.** The blower moves the warm air through the house. When it fails, the furnace can run and heat and you still get little or no warmth in the rooms."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "The Problem That Isn't Small",
+          "body": [
+            "A cracked heat exchanger is different. It's the metal chamber that keeps burner exhaust apart from the air you breathe, and a crack in it is a safety problem, not an inconvenience.",
+            "If a technician finds one, you'll hear it from us straight, with what it means and what your options are. Whatever your furnace is doing, a working carbon monoxide detector on every floor is worth having."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "How We Handle a Furnace Call",
+          "body": [
+            "We diagnose the problem first. A technician finds the actual cause and shows you what failed.",
+            "You get a full breakdown of what the repair costs, with no surprise charges at the end. And when the work is done, we clean up after ourselves, because a furnace closet full of dust and old parts is not your job."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Sam and his team are outstanding in every way. They are dependable and accountable, best prices around, courteous and respectful, and always leave the place exactly as they found it (i.e., they never leave a mess).",
+          "name": "Brett J."
+        },
+        {
+          "type": "prose",
+          "heading": "Repair or New Furnace?",
+          "body": [
+            "Repair is the right answer most of the time. An igniter, a sensor or a motor costs far less than a furnace, and the furnace goes on heating your house.",
+            "A new furnace starts to make sense when the furnace is old, the repairs keep coming, or the heat exchanger has failed. Spending a lot on an old furnace is often money better put toward a new one.",
+            "We tell you which side of that line you're on. If it's time to replace, we install new furnaces and heating systems too."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Sam and his team installed a new furnace for me. They were timely, worked efficiently and cleaned up the mess afterwards. I highly recommend Integrity Heating and Cooling and will use them again.",
+          "name": "Karen E."
+        },
+        {
+          "type": "prose",
+          "heading": "Keeping a Furnace Healthy",
+          "body": [
+            "Furnaces fail hardest in the first cold snap, after sitting idle all summer. Dust builds up, parts stiffen and a weak igniter finally gives out.",
+            "A check before heating season catches those things while it's still warm outside. We offer maintenance plans, so ask about one when you call. Changing the filter on a schedule helps too."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Before You Call",
+          "body": [
+            "If you can do it safely, check a few things first. Make sure the thermostat is set to heat and the batteries are fresh. Check that the furnace switch is on, and that the filter isn't packed with dust.",
+            "If you smell gas, leave the house and call your gas company before anything else. Otherwise, if the furnace still won't run, call us."
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Questions Before You Call",
+          "items": [
+            {
+              "q": "Does it cost anything to call?",
+              "a": "No. We offer a free phone consultation. Tell us what the furnace is doing and we'll tell you what we think."
+            },
+            {
+              "q": "Do you work on my brand of furnace?",
+              "a": "We work on all the major brands."
+            },
+            {
+              "q": "Will the bill surprise me?",
+              "a": "No. We're upfront about pricing and give you a full breakdown of the costs, with no surprise charges."
+            },
+            {
+              "q": "Can you help after hours?",
+              "a": "Our office hours are Monday to Friday, 8 AM to 5 PM. After-hours work is priced by phone, so call and ask."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Call Integrity",
+          "text": "If your furnace isn't heating, call (316) 932-9559. Tell us what it's doing, and we'll tell you what we think and what to do next."
+        }
+      ]
+    },
+    {
+      "role": "contact",
+      "route": "/contact/",
+      "navLabel": "Contact",
+      "keyword": "contact integrity heating and cooling wichita ks",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Contact Integrity Heating and Cooling",
+        "h1": "Contact Integrity Heating and Cooling",
+        "sub": "If your heat or air has quit, the fastest way to reach us is to call. Tell us what the system is doing and we'll tell you what we think.",
+        "primaryCta": {
+          "label": "Call (316) 932-9559",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Request Service",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "contact-hero",
+          "alt": "Quiet Wichita street of brick homes",
+          "brief": "quiet residential street of Wichita brick homes with outdoor AC units beside the walls, houses on the right, street leading off to the left, calm soft sky behind the text side, no readable text, no people"
+        }
+      },
+      "sections": [
+        {
+          "type": "prose",
+          "heading": "Call Us",
+          "body": [
+            "(316) 932-9559",
+            "We offer a free phone consultation, so you can describe the problem and hear what we think before you decide anything."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Send a Request",
+          "body": [
+            "Not a good time to talk? Use Request Service and tell us what's going on. Include your name, a phone number and the address of the house or building."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "What to Have Ready",
+          "list": [
+            "What the system is doing: no heat, no cooling, noise, a smell, ice, a tripped breaker.",
+            "Whether it's a furnace, an air conditioner or a heat pump, and the brand if you can see it on the unit.",
+            "Roughly how old the system is, and any repairs you remember.",
+            "Whether it's a home or a commercial building."
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Hours and Area",
+          "text": "Monday to Friday, 8 AM to 5 PM. If your system quits outside those hours, call and ask. After-hours work is priced by phone. We serve the Greater Wichita area. Our address is 801 S Fabrique Dr, Wichita, KS 67218."
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "about": "Integrity Heating and Cooling is a family-owned HVAC company in Wichita. Sam and the team repair and replace heating and cooling systems for homes and commercial buildings.",
+    "why": [
+      "Owner in the work himself",
+      "Free phone consultation",
+      "Full cost breakdown, no surprise charges",
+      "We clean up after the job"
+    ]
+  },
+  "strategy": {}
+}
