@@ -35,22 +35,22 @@
     {
       "name": "AC Repair",
       "route": "/ac-repair-wichita-ks/",
-      "blurb": "All makes and models, repaired by our technicians."
+      "blurb": "Cool air back, with the failed part found and explained first."
     },
     {
       "name": "Furnace Repair",
       "route": "/furnace-repair-wichita-ks/",
-      "blurb": "Heat back on, from a failed part to a full furnace."
+      "blurb": "Heat back on, with the cause explained in plain words."
     },
     {
       "name": "AC and Furnace Replacement",
       "route": null,
-      "blurb": "Full systems installed, including high-efficiency models."
+      "blurb": "A new high-efficiency system, only when repair no longer makes sense."
     },
     {
       "name": "Geothermal and Water-Source Heat Pumps",
       "route": null,
-      "blurb": "Repair and replacement of ground and water-source systems."
+      "blurb": "Repair and replacement for ground and water-source systems."
     },
     {
       "name": "Mini Split Systems",
@@ -60,22 +60,22 @@
     {
       "name": "Preventive Maintenance",
       "route": null,
-      "blurb": "Seasonal service that keeps your system running."
+      "blurb": "A seasonal look that catches small problems before they quit."
     },
     {
       "name": "Smart WiFi Thermostats",
       "route": null,
-      "blurb": "Nexia smart thermostats you control from your phone."
+      "blurb": "Nexia smart thermostats you can control from your phone."
     },
     {
       "name": "Bathroom Ventilation",
       "route": null,
-      "blurb": "Ventilation for the bathroom, installed right."
+      "blurb": "Bathroom ventilation installed to fit the room."
     },
     {
       "name": "Custom Sheet Metal and Ductwork",
       "route": null,
-      "blurb": "Ducts made to fit in our own fab shop."
+      "blurb": "Custom ductwork built in our own shop, so odd jobs don't wait."
     },
     {
       "name": "New Construction HVAC",
@@ -85,7 +85,7 @@
     {
       "name": "Commercial HVAC",
       "route": null,
-      "blurb": "Rooftop units and systems for your business."
+      "blurb": "Rooftop units and systems for your shop, office or restaurant."
     }
   ],
   "pages": [
@@ -96,15 +96,15 @@
       "keyword": "hvac company wichita ks",
       "seo": null,
       "hero": {
-        "eyebrow": "Residential and commercial HVAC",
+        "eyebrow": "Residential and commercial HVAC in Wichita",
         "h1": "HVAC Company in Wichita, KS — Epic Heating & Cooling",
-        "sub": "We repair and replace air conditioners and furnaces for Wichita homes and businesses. We also handle geothermal heat pumps, new construction and ductwork from our own fab shop.",
+        "sub": "We repair and replace air conditioners and furnaces for Wichita homes and businesses, and we tell you what's wrong before we talk about anything bigger. Call us when your system quits.",
         "primaryCta": {
           "label": "Call (316) 633-8097",
           "action": "call"
         },
         "secondaryCta": {
-          "label": "Contact Us",
+          "label": "Request Service",
           "action": "contact"
         },
         "image": {
@@ -116,106 +116,161 @@
       "sections": [
         {
           "type": "review",
-          "quote": "I always have great service from Justin and all employees.",
-          "name": "Jane V."
+          "quote": "What a great company! Had a/c problems at my office this week. Called Preston at Epic today around 1:00 pm, within 2 hours Karlee called me and sent Will out 30 minutes later. Everything up and running by 5:30 pm! I highly recommend!",
+          "name": "Jeff W."
         },
         {
           "type": "split",
-          "heading": "AC and Furnace Repair, Done by Our Own Technicians",
+          "heading": "Fix What's Broken, Tell You the Truth",
           "body": [
-            "When your air or your heat quits, one call brings a technician who finds the cause and explains the fix before the work starts.",
-            "Start with the page for your problem."
-          ],
-          "list": [
-            "[AC repair](/ac-repair-wichita-ks/) for every make and model",
-            "[Furnace repair](/furnace-repair-wichita-ks/) from a failed part to a full replacement"
+            "The air quits in the hottest week of July, or the furnace on the first cold night. Someone comes out, takes a quick look and says you need a whole new system. You're hot or cold, tired, and in no shape to argue.",
+            "That's when it matters who shows up. Preston has been in the HVAC industry since 1999 and Justin since 2000, and the way we work comes from those years: find the actual problem, explain it in plain words, and fix that.",
+            "We guarantee 100% satisfaction with all our work. We'd rather earn the next call than sell you more than you need.",
+            "That's why you'll get a straight answer: a repair when a repair will do, and a new system only when it's the better choice. Often the fix is smaller than you feared, like a filter and a setting nobody checked."
           ],
           "image": {
             "slot": "home-repair",
             "alt": "Technician's van parked outside a Wichita home",
             "brief": "plain white service van parked on a suburban Wichita street in front of a brick house, van on the left, clear calm sky on the right, no readable text, no people"
-          },
-          "imageSide": "left"
+          }
         },
         {
           "type": "review",
-          "quote": "This company is great with affordable prices , upfront with great explanation for work needed.",
-          "name": "Rebecca T."
+          "quote": "Besides answering the panic call he gave us the most honest quote for maintenance we've ever had versus buying all new stuff when it wasn't necessary. He changed our air filter and a setting on the furnace, we have more air flow than we've ever had. … Every other company we have had out over the years said we needed a bigger unit. Turns out our unit is plenty big just, \"needs a little love.\" says Justin.",
+          "name": "Amy I."
         },
         {
-          "type": "services",
-          "heading": "Everything We Do",
-          "intro": "One company for repair, replacement, ductwork and new builds."
+          "type": "prose",
+          "heading": "AC Repair",
+          "body": [
+            "Warm air from the vents, a unit that runs all afternoon and never catches up, an outdoor fan that won't start. Those are the usual signs of a system that has lost a part or lost its charge.",
+            "Most of the time it's something small: a capacitor that has worn out, a coil caked with dirt, a refrigerant leak, or a thermostat that has stopped talking to the unit. Finding which one takes a technician who has seen it before.",
+            "We work on all makes and models. We diagnose the problem, show you what we found and fix it. If the unit is beyond saving, we'll tell you that too, and why."
+          ],
+          "link": {
+            "label": "See AC repair →",
+            "route": "/ac-repair-wichita-ks/"
+          }
         },
         {
           "type": "split",
-          "heading": "Systems Replaced in Days, Not Weeks",
+          "heading": "Furnace Repair",
           "body": [
-            "When a unit is finished, we quote the new system and install it fast. We have installed a new furnace and AC the day after the quote visit.",
-            "We install high-efficiency systems, and our own fab shop builds the ductwork to fit."
+            "A house that won't warm up, a furnace that clicks and never lights, a blower that rattles or a smell you can't place. In a Kansas winter, none of that can wait.",
+            "Furnaces fail for a short list of reasons: an ignition part that has worn out, a clogged filter, a blower motor, a thermostat problem. Most are fixable, and the repair is worth making.",
+            "Some furnaces are at the end of their life, and we'll say so plainly. When that's the case, we'll show you what's worn out, so the decision is about the furnace in front of you, not a sales pitch."
           ],
+          "link": {
+            "label": "See furnace repair →",
+            "route": "/furnace-repair-wichita-ks/"
+          },
           "image": {
             "slot": "home-install",
             "alt": "New furnace in a clean utility room",
             "brief": "new gas furnace with fresh ductwork in a tidy utility room, furnace on the right, plain wall behind the text side on the left, no readable text, no tools in hands"
-          },
-          "imageSide": "right"
+          }
         },
         {
           "type": "review",
-          "quote": "We visited with Justin on Monday and the install was Tuesday. Preston and Aaron did a fantastic job , friendly, polite and very efficient.",
+          "quote": "He was very knowledgeable and diagnosed the issue immediately and had my furnace up and running in less than 15 minutes.",
+          "name": "Patrick C."
+        },
+        {
+          "type": "prose",
+          "heading": "AC and Furnace Replacement",
+          "body": [
+            "Sometimes the honest answer is a new system. You've paid for repair after repair, the unit is decades old, or the compressor has died.",
+            "A new high-efficiency system costs less to run, filters the air better and holds humidity down in a Wichita summer. We install complete systems, furnace and AC together or one at a time.",
+            "Before you decide, you get the options and what each one means for your house. The choice stays with you."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Our daughter was having furnace troubles and the unit was 20 years old and the AC was a 48 year old carrier. Will came out for a service call and did his best to identify the problem but being its age we decided to get a new AC and furnace. We visited with Justin on Monday and the install was Tuesday. Preston and Aaron did a fantastic job , friendly, polite and very efficient.",
           "name": "Theresa F."
         },
         {
           "type": "split",
-          "heading": "Business Customers, Too",
+          "heading": "Geothermal and Water-Source Heat Pumps",
           "body": [
-            "We install and service commercial HVAC, including rooftop units. We have installed four rooftop units on a single job.",
-            "Your business gets the same technicians, the same explanation and the same guarantee as a home."
+            "A geothermal or water-source heat pump is a different machine from a furnace and air conditioner. It moves heat through water or the ground, and it needs a technician who knows how it works.",
+            "We repair and replace geothermal and water-source heat pump systems, and mini split systems as well."
           ],
           "image": {
             "slot": "home-commercial",
             "alt": "Rooftop HVAC units on a commercial building",
             "brief": "row of rooftop HVAC units on a flat commercial roof in Wichita, units on the right, open sky on the left, no readable text, no people"
-          },
-          "imageSide": "left"
-        },
-        {
-          "type": "review",
-          "quote": "Installed four roof top units for me at River City Brewing Co. Easily the most competitive bid, service was great and the job was done on time.",
-          "name": "Chris A."
+          }
         },
         {
           "type": "prose",
-          "heading": "Who You Call",
+          "heading": "Maintenance, Thermostats, Ventilation and Ductwork",
           "body": [
-            "Preston and Justin, who lead our crew, have each worked in HVAC for more than 25 years, and both of their families come from this field. Epic has served Wichita since 2012.",
-            "We guarantee 100% satisfaction with all our work, down to the clean-up when the job is done."
+            "A system that gets looked at before the season starts is less likely to quit during it. A dirty coil, a worn belt or a clogged filter is cheap to catch in April and expensive to find in July.",
+            "We do seasonal preventive maintenance for furnaces and air conditioners.",
+            "We also install Nexia smart WiFi thermostats and bathroom ventilation. And because we have our own sheet metal fab shop, we build custom ductwork and ventilation pieces ourselves, so odd-shaped jobs don't wait on someone else's parts.",
+            "Building a new home? We put in HVAC systems for residential new construction."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Commercial HVAC",
+          "body": [
+            "A shop, an office or a restaurant can't wait out a dead rooftop unit. Customers get uncomfortable, staff go home, and the bill grows with every hour.",
+            "We service commercial buildings and install rooftop units, with the same approach as in homes: look first, explain, then fix."
           ]
         },
         {
           "type": "review",
-          "quote": "They went above and beyond with customer service and cleaning up after themselves on the job.",
-          "name": "Zach T."
+          "quote": "Installed four roof top units for me at River City Brewing Co. Easily the most competitive bid, service was great and the job was done on time. I highly recommend them.",
+          "name": "Chris A."
+        },
+        {
+          "type": "prose",
+          "heading": "Serving Wichita and the Surrounding Area",
+          "body": [
+            "We've served Wichita since 2012, and we work in the surrounding area as well, including Haysville.",
+            "Our office is open Monday to Friday, 8:00 AM to 5:00 PM. Call (316) 633-8097 or email justin@epichvac.net."
+          ]
         },
         {
           "type": "faq",
-          "heading": "Before You Call",
+          "heading": "Questions Before You Call",
           "items": [
             {
-              "q": "Where do you work?",
-              "a": "Wichita and surrounding areas, including Haysville."
+              "q": "Do you work on any brand of air conditioner?",
+              "a": "Yes. We service all makes and models."
             },
             {
-              "q": "Do you work on more than AC and furnaces?",
-              "a": "Yes. We also do geothermal and water-source heat pumps, mini splits, smart thermostats, ductwork and new construction HVAC."
+              "q": "Should I repair my system or replace it?",
+              "a": "Repair it when the problem is a part and the unit has years left. Replace it when you keep paying for repairs on an old system or a major part, like the compressor, has failed. We'll tell you which one it is after we look at it."
+            },
+            {
+              "q": "Do you work on businesses as well as homes?",
+              "a": "Yes. We handle residential and commercial heating and cooling, including rooftop units."
+            },
+            {
+              "q": "Will you try to sell me a new system?",
+              "a": "Not unless it's the better choice for your house. If a part has failed and the unit has years left, we fix the part and tell you so."
+            },
+            {
+              "q": "Do you guarantee your work?",
+              "a": "Yes. We guarantee 100% satisfaction with all our work."
+            },
+            {
+              "q": "Can you help with a new house?",
+              "a": "Yes. We install HVAC for residential new construction."
+            },
+            {
+              "q": "When can I reach you?",
+              "a": "Monday to Friday, 8:00 AM to 5:00 PM, at (316) 633-8097."
             }
           ]
         },
         {
           "type": "callBand",
-          "heading": "Tell Us What Your System Is Doing",
-          "text": "Call (316) 633-8097 and we will send a technician who knows your kind of system."
+          "heading": "When Your System Quits, Call",
+          "text": "Tell us what it's doing and where you are. We'll work out what's wrong and what it takes to fix it. If you're not sure whether it's a repair or a replacement, call anyway. That's the question we answer most. Call (316) 633-8097, Monday to Friday, 8:00 AM to 5:00 PM, or request service online."
         }
       ]
     },
@@ -226,15 +281,15 @@
       "keyword": "ac repair wichita ks",
       "seo": null,
       "hero": {
-        "eyebrow": "Air conditioning",
+        "eyebrow": "Air conditioner repair for Wichita homes and businesses",
         "h1": "AC Repair in Wichita, KS — Epic Heating & Cooling",
-        "sub": "We repair air conditioners of all makes and models in Wichita. Tell us what your AC is doing and we send a technician who finds the cause.",
+        "sub": "When your air conditioner quits in a Kansas summer, you need it fixed, and you need to know what you're paying for. We repair all makes and models, and we explain what we found before we do anything else. Call us.",
         "primaryCta": {
           "label": "Call (316) 633-8097",
           "action": "call"
         },
         "secondaryCta": {
-          "label": "Contact Us",
+          "label": "Request Service",
           "action": "contact"
         },
         "image": {
@@ -246,153 +301,125 @@
       "sections": [
         {
           "type": "review",
-          "quote": "Our AC went out last night and we needed a quick repair. … He was very knowledgeable and quick to fix our issue.",
+          "quote": "Our AC went out last night and we needed a quick repair. Epic was referred to us by my sister-in-law. Christen was our service tech and he was very friendly and professional. He was very knowledgeable and quick to fix our issue.",
           "name": "Kenneth E."
         },
         {
           "type": "split",
-          "heading": "Your AC Fixed, Whatever the Brand",
+          "heading": "Signs Your AC Needs Repair",
           "body": [
-            "We service all makes and models. A technician comes to your home or office, finds what failed and tells you what it takes to fix it.",
-            "We fix the problem you called about, without an up-sell. We have had a house cooling again in under an hour after our technician arrived."
-          ],
-          "list": [
-            "Air that is not cold",
-            "A house that will not cool down",
-            "A unit that quit running",
-            "A part that needs replacing, from a small one to a compressor"
+            "The house won't get below 80 even though the unit is running. The vents blow warm air.",
+            "The outdoor fan sits still, or the unit starts, stops and starts again. Ice shows up on the lines, or water pools around the indoor unit.",
+            "Each of those points to a specific failure, and some of them get worse every hour the unit keeps running. If you see ice, turn the system off and call us."
           ],
           "image": {
             "slot": "ac-repair",
             "alt": "AC condenser with its side panel off",
             "brief": "outdoor AC condenser unit with the access panel resting beside it on a patio, unit on the right, plain fence and soft light on the left, no readable text, no tools in hands, no people"
-          },
-          "imageSide": "right"
-        },
-        {
-          "type": "review",
-          "quote": "He had us up and cooled in under an hour. He didn’t try to up-sale either he just fixed the problem.",
-          "name": "Tyler N."
+          }
         },
         {
           "type": "prose",
-          "heading": "Fixed Once, Explained Clearly",
+          "heading": "What Usually Goes Wrong",
           "body": [
-            "You get the cause in plain words. We tell you what failed, what the repair is and what happens if you wait.",
-            "Our technicians walk you through the repair, so the bill and the work make sense."
+            "Air conditioners work hard in a Wichita summer, and the same few parts wear out first.",
+            "A capacitor helps the compressor and fan motor start, and when it weakens the outdoor unit hums and does nothing. A dirty condenser coil can't shed heat, so the system runs long and cools poorly.",
+            "Low refrigerant means a leak somewhere, because an air conditioner doesn't use it up. And a restricted filter or a failed thermostat can make a healthy system look broken.",
+            "Telling these apart takes testing, not guessing. Our technicians check the system, find the failure and then tell you what it is."
           ]
         },
         {
-          "type": "review",
-          "quote": "The service man was nice and professional. He explained things to me he didn't have to.",
-          "name": "Luqueeda P."
-        },
-        {
           "type": "split",
-          "heading": "Repair or Replace",
+          "heading": "You'll See What We Found",
           "body": [
-            "Some units are worth fixing. Some are finished. We tell you which, and we install the new system ourselves.",
-            "We have replaced a failed AC within days of the repair call."
+            "Most people have never looked inside their outdoor unit, and they shouldn't have to. But a bill for a part you never saw is hard to trust.",
+            "So we start with the problem you called about. The technician looks at the system, shows you what's wrong and what it takes to fix it, and then does the repair.",
+            "We work on all makes and models, so you don't need to know who made your unit. Tell us what it's doing and we'll take it from there."
           ],
           "image": {
             "slot": "ac-replace",
             "alt": "New AC condenser installed beside a house",
             "brief": "new outdoor AC condenser on a level pad beside a tan brick house, unit on the left side away from the text, calm clear sky behind the text on the right, no readable text, no people"
-          },
-          "imageSide": "left"
+          }
         },
         {
           "type": "review",
-          "quote": "AC went out on Memorial Day weekend of all times! … Very efficient professional and friendly.",
-          "name": "Ruth O."
-        },
-        {
-          "type": "prose",
-          "heading": "Offices and Rooftop Units Too",
-          "body": [
-            "Your business AC gets the same attention as your home. We service commercial HVAC, including rooftop units.",
-            "We have had an office AC running again the same afternoon it was called in."
-          ]
-        },
-        {
-          "type": "review",
-          "quote": "Called Preston at Epic today around 1:00 pm,  within 2 hours Karlee called me and sent Will out 30 minutes later.  Everything up and running by 5:30 pm!",
-          "name": "Jeff W."
+          "quote": "Wonderful experience! I had Will come over and he was polite, respectful, and worked quickly while explaining everything he did to me. He is a life saver and a fantastic worker! … My AC was back to working within 2 hours! He cleaned it for me and made sure all was well before leaving!",
+          "name": "Molly B."
         },
         {
           "type": "prose",
           "heading": "Keep It From Happening Again",
           "body": [
-            "Seasonal maintenance keeps your AC running efficiently. We also install Nexia smart thermostats you can control from your phone.",
-            "After a repair, we tell you how to keep the same problem from coming back."
+            "Most summer breakdowns start months earlier with a dirty coil, a clogged filter or a worn part nobody checked. A seasonal tune-up in the spring catches those while they're still cheap.",
+            "We do preventive maintenance for air conditioners and furnaces, and we can put in a smart WiFi thermostat."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "No Up-Sell",
+          "body": [
+            "A hot house in July is the easiest place to sell someone a new air conditioner. You're sweaty, you're tired, and you want it over.",
+            "A repair call should end with a repaired air conditioner. We fix what's broken, and we suggest more only when it will actually help you.",
+            "If your system has a bad part and plenty of life left, that's a repair. We'd rather you call us again next summer because we got it right than because we sold you something you didn't need."
           ]
         },
         {
           "type": "review",
-          "quote": "Preston came out to my house and explained to me in detail what was going on with my AC. He told me how I could prevent future problems and was very easy to work with.",
-          "name": "Kyle B."
+          "quote": "When Aaron arrived I explained the issue to him. He was very pleasant and professional. He had us up and cooled in under an hour. He didn’t try to up-sale either he just fixed the problem.",
+          "name": "Tyler N."
         },
         {
-          "type": "steps",
-          "heading": "What Happens When You Call",
-          "items": [
-            {
-              "title": "You call",
-              "text": "Tell us what your AC is doing and where you are in Wichita."
-            },
-            {
-              "title": "We send a technician",
-              "text": "Our technician comes to your home or business and checks the system."
-            },
-            {
-              "title": "We explain what failed",
-              "text": "You hear the cause and the fix before we start."
-            },
-            {
-              "title": "We fix it and clean up",
-              "text": "The repair is done and the work area is left tidy."
-            }
+          "type": "prose",
+          "heading": "When Repair Isn't the Answer",
+          "body": [
+            "Some air conditioners are past repairing. The compressor is the most expensive part, and when it fails in an old unit, the repair rarely makes sense. The same goes for a unit that needs a major part every summer.",
+            "When that's the case, we tell you straight and lay out your options. We install complete high-efficiency air conditioning and furnace systems, so you can replace the AC alone or both together.",
+            "You may find out it's a repair, and you may find out it's time for a new unit. Either way, you'll know before you decide."
           ]
         },
         {
           "type": "review",
-          "quote": "He cleaned it for me and made sure all was well before leaving!",
-          "name": "Molly B."
+          "quote": "AC went out on Memorial Day weekend of all times! They came out and fixed what we thought was the peoblen, turns out the unit was going bad. They came out and put a new unit in within days.",
+          "name": "Ruth O."
+        },
+        {
+          "type": "prose",
+          "heading": "Homes and Businesses",
+          "body": [
+            "We repair air conditioners in houses, rentals and commercial buildings, including rooftop units. We've served Wichita since 2012 and work in the surrounding area too, including Haysville."
+          ]
         },
         {
           "type": "faq",
-          "heading": "Questions About AC Repair",
+          "heading": "Questions Before You Call",
           "items": [
             {
-              "q": "Which brands do you repair?",
-              "a": "All makes and models."
+              "q": "What should I check before I call?",
+              "a": "Make sure the thermostat is set to cool and the air filter isn't clogged. Check that the breaker hasn't tripped. If none of that fixes it, or if you see ice on the lines, call us."
             },
             {
-              "q": "Do you repair business air conditioning?",
-              "a": "Yes. We service commercial HVAC, including rooftop units, as well as homes."
+              "q": "Do you work on my brand?",
+              "a": "Yes. We repair all makes and models."
             },
             {
-              "q": "Do you service mini splits and heat pumps?",
-              "a": "Yes. We repair and replace mini split systems and geothermal and water-source heat pumps."
+              "q": "What should I tell you when I call?",
+              "a": "What the unit is doing, whether the outdoor fan is running, how old the system is if you know, and any noise or ice you've seen. That helps us arrive ready."
             },
             {
-              "q": "Can I call if I am not sure what is wrong?",
-              "a": "Yes. Describe what you see and hear, and we send a technician who finds the cause."
+              "q": "Will you tell me if I need a new unit?",
+              "a": "Yes, and we'll tell you why. If a repair is the better choice, we'll say that instead."
             },
             {
-              "q": "What if my AC needs replacing?",
-              "a": "We install new air conditioners, including high-efficiency systems, and replace furnaces too."
-            },
-            {
-              "q": "When can I reach you?",
-              "a": "Call (316) 633-8097. Our hours are Monday to Friday, 8 a.m. to 5 p.m.."
+              "q": "When is your office open?",
+              "a": "Monday to Friday, 8:00 AM to 5:00 PM."
             }
           ]
         },
         {
           "type": "callBand",
-          "heading": "Call About Your AC",
-          "text": "Call (316) 633-8097 and tell us what your air conditioner is doing. We work on every make and model."
+          "heading": "Get Your AC Running Again",
+          "text": "Call (316) 633-8097, Monday to Friday, 8:00 AM to 5:00 PM, or request service online. Tell us what it's doing and we'll work out what to do about it."
         }
       ]
     },
@@ -403,15 +430,15 @@
       "keyword": "furnace repair wichita ks",
       "seo": null,
       "hero": {
-        "eyebrow": "Heating",
+        "eyebrow": "Furnace repair for Wichita homes and businesses",
         "h1": "Furnace Repair in Wichita, KS — Epic Heating & Cooling",
-        "sub": "We repair furnaces in Wichita and replace them when a repair is not enough. Call us and a technician comes to find out why your heat quit.",
+        "sub": "When your furnace quits, the house cools fast. We repair furnaces, tell you what's wrong in plain words, and say so honestly when it's time for a new one. Call us.",
         "primaryCta": {
           "label": "Call (316) 633-8097",
           "action": "call"
         },
         "secondaryCta": {
-          "label": "Contact Us",
+          "label": "Request Service",
           "action": "contact"
         },
         "image": {
@@ -423,141 +450,135 @@
       "sections": [
         {
           "type": "review",
-          "quote": "Our Furnace quit on  Cold Snowy Night. A call to Epic, and a quick call back from Preston. And he was on his way. Got us going thru the Night, and then Will came the next Morning to do the permanent fix.",
+          "quote": "Our Furnace quit on Cold Snowy Night. A call to Epic, and a quick call back from Preston. And he was on his way. Got us going thru the Night, and then Will came the next Morning to do the permanent fix. We have had nothing but the highest quality Service from Epic.",
           "name": "Cathie M."
         },
         {
           "type": "split",
-          "heading": "Heat Back On, Start to Finish",
+          "heading": "When a Furnace Needs a Technician",
           "body": [
-            "We handle every kind of furnace work, from seasonal maintenance to full system installation, so you call one company.",
-            "A furnace problem should be found fast and fixed without a long wait."
-          ],
-          "list": [
-            "A furnace that will not start",
-            "A house that stays cold",
-            "A smell or noise you cannot place",
-            "A furnace that is old enough to be on your mind"
+            "The house won't warm up. The furnace clicks and never lights, or it lights and shuts off a minute later.",
+            "The blower rattles, squeals or never starts. You smell something burning that isn't a candle.",
+            "Don't keep restarting a furnace that shuts itself off. It's shutting off for a reason, and the reason is easier to fix before you've run it ten more times."
           ],
           "image": {
             "slot": "furnace-repair",
             "alt": "Furnace with its panel open in a utility room",
             "brief": "furnace with the front panel resting against a wall in a basement utility room, furnace on the left, clean empty wall and soft light on the right behind the text, no readable text, no tools in hands, no people"
-          },
-          "imageSide": "left"
-        },
-        {
-          "type": "review",
-          "quote": "He was very knowledgeable and diagnosed the issue immediately and had my furnace up and running in less than 15 minutes.",
-          "name": "Patrick C."
+          }
         },
         {
           "type": "prose",
-          "heading": "A Straight Answer on Your Furnace",
+          "heading": "What Usually Goes Wrong",
           "body": [
-            "We check the whole furnace, tell you what we find and show you what we see. You decide what to fix.",
-            "If the furnace is near the end of its life, we tell you so you can plan for the next one, with no pressure to buy today."
+            "Furnaces start the same way every cycle, so the parts that do the starting wear out first.",
+            "An igniter or flame sensor that has gone bad is a common reason a furnace clicks and quits. A clogged filter chokes airflow, and the furnace overheats and shuts down to protect itself.",
+            "A blower motor can wear out, and a thermostat problem can leave a healthy furnace never getting the call to run.",
+            "Each of these is a different repair with a different cost. We find the real one before we start."
           ]
         },
         {
-          "type": "review",
-          "quote": "He showed me some pictures of the inside of the furnace to help give me an idea of how old the furnace is and let me know to start budgeting for a new one. He was not pushy at all, more realistic than anything.",
-          "name": "Chad S."
-        },
-        {
           "type": "split",
-          "heading": "When a New Furnace Is the Answer",
+          "heading": "A Word on Safety",
           "body": [
-            "We install the new furnace and keep the gap between the first call and a warm house short.",
-            "Our installers protect your home and clean up as they work. For a complete system, we install the furnace and the AC together, with high-efficiency models available."
+            "If you smell gas, leave the house and call your gas utility from outside before you call anyone else. If a carbon monoxide alarm goes off, get everyone out and call 911.",
+            "A furnace that makes a burning smell or soot around the vents also needs to be shut off until a technician has looked at it."
           ],
           "image": {
             "slot": "furnace-replace",
             "alt": "New furnace installed in a utility room",
             "brief": "new high-efficiency furnace with neat ductwork in a clean utility room, furnace on the right, plain wall behind the text on the left, no readable text, no tools in hands, no people"
-          },
-          "imageSide": "right"
+          }
+        },
+        {
+          "type": "prose",
+          "heading": "Explained Before It's Fixed",
+          "body": [
+            "You shouldn't need to know HVAC to follow what's happening in your own basement or closet. We tell you what failed, what it takes to fix and what happens if you wait."
+          ]
         },
         {
           "type": "review",
-          "quote": "Replaced our furnace within two days if the initial call. Very knowledgeable and friendly staff. Very clean when working and took the time to protect my home from damage.",
-          "name": "Pearl A."
+          "quote": "Epic did a great job identifying the issue with our furnace quickly and I appreciated how they took the time to really explain what was wrong and what it would take to fix it. We will be using them again.",
+          "name": "Seth B."
         },
         {
           "type": "split",
-          "heading": "Before the Cold Hits",
+          "heading": "Repair or Replace, Said Straight",
           "body": [
-            "Seasonal maintenance is part of our furnace work. We clean the furnace and check it before the heating season.",
-            "We also install Nexia smart thermostats so you can set the heat from your phone."
+            "The furnace is old, it just quit, and you're wondering whether to sink more money into it. Plenty of furnaces run for decades, so age alone isn't a reason to replace one.",
+            "A furnace that needs a cheap part and runs fine is a repair.",
+            "A furnace with a cracked heat exchanger, one that needs repair after repair or can't keep the house warm is a different case. We'll tell you which one you have, and we won't hurry you into the expensive one."
           ],
           "image": {
             "slot": "furnace-maintenance",
             "alt": "Smart thermostat on a living room wall",
             "brief": "smart thermostat mounted on a plain painted wall in a warm living room, thermostat on the left side, soft empty wall and window light on the right behind the text, no readable text, no people"
-          },
-          "imageSide": "left"
+          }
         },
         {
-          "type": "steps",
-          "heading": "What Happens When You Call",
-          "items": [
-            {
-              "title": "You call",
-              "text": "Tell us what your furnace is doing: no heat, a smell or a noise."
-            },
-            {
-              "title": "A technician comes out",
-              "text": "We check the furnace at your home or business in Wichita."
-            },
-            {
-              "title": "You hear what we find",
-              "text": "We explain the problem and the options before the work starts."
-            },
-            {
-              "title": "We fix or replace",
-              "text": "We make the repair, or quote the replacement so you can decide."
-            }
+          "type": "review",
+          "quote": "He checked everything in the furnace and around the house, just to be sure. … He showed me some pictures of the inside of the furnace to help give me an idea of how old the furnace is and let me know to start budgeting for a new one. He was not pushy at all, more realistic than anything.",
+          "name": "Chad S."
+        },
+        {
+          "type": "prose",
+          "heading": "When It's Time for a New Furnace",
+          "body": [
+            "If the answer is replacement, we install complete furnace systems, along with the air conditioner if it's time for that too. A new high-efficiency gas furnace turns more of the gas you buy into heat for the house and sends less of it up the vent, so the same warm house costs less each month.",
+            "We'll go over your options with you and keep the schedule moving, because a house with no heat is not a project you want to stretch out."
           ]
         },
         {
           "type": "review",
-          "quote": "Our heater went out overnight and they were here within 15 minutes of me calling this morning.",
-          "name": "Kelsey A."
+          "quote": "Five star customer service!!! Replaced our furnace within two days if the initial call. Very knowledgeable and friendly staff. Very clean when working and took the time to protect my home from damage.",
+          "name": "Pearl A."
+        },
+        {
+          "type": "prose",
+          "heading": "Before Next Winter",
+          "body": [
+            "The best time to fix a furnace is before the first cold night. A fall check of the igniter, the blower and the filter catches what would otherwise fail in January.",
+            "We do seasonal maintenance for furnaces and air conditioners, and we install Nexia smart WiFi thermostats if you'd like more control over the heat."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Homes and Businesses",
+          "body": [
+            "We repair furnaces in homes, rentals and commercial buildings. We've served Wichita since 2012 and work in the surrounding area as well, including Haysville."
+          ]
         },
         {
           "type": "faq",
-          "heading": "Questions About Furnace Repair",
+          "heading": "Questions Before You Call",
           "items": [
             {
-              "q": "Do you only repair furnaces?",
-              "a": "No. We also install new furnaces and complete systems, and we do seasonal maintenance."
+              "q": "What should I check before I call?",
+              "a": "Make sure the thermostat is set to heat and turned above room temperature, and that the filter isn't clogged. Check that the furnace switch and breaker are on. If it still won't run, call us."
             },
             {
-              "q": "Do you work on heat pumps?",
-              "a": "Yes. We repair and replace geothermal and water-source heat pumps and mini split systems."
+              "q": "Does my furnace's age matter?",
+              "a": "It matters, but it isn't the whole story. A well-kept furnace can run a long time. We'll look at the condition, not just the number."
             },
             {
-              "q": "Can you replace my furnace and AC together?",
-              "a": "Yes. We install full systems, and our fab shop builds custom ductwork to fit your home."
+              "q": "Do you also replace furnaces?",
+              "a": "Yes, and we can replace the air conditioner at the same time if both are near the end."
             },
             {
-              "q": "Do you repair a furnace that is very old?",
-              "a": "We look at it first and tell you whether a repair or a new furnace makes sense."
+              "q": "What should I tell you when I call?",
+              "a": "What the furnace does when it tries to start, any noises or smells, and how old it is if you know. We'll ask a few questions from there."
             },
             {
-              "q": "Do you serve businesses?",
-              "a": "Yes. We handle residential and commercial HVAC."
-            },
-            {
-              "q": "When can I reach you?",
-              "a": "Call (316) 633-8097. We answer Monday to Friday, 8 a.m. to 5 p.m.."
+              "q": "When is your office open?",
+              "a": "Monday to Friday, 8:00 AM to 5:00 PM."
             }
           ]
         },
         {
           "type": "callBand",
-          "heading": "Call About Your Furnace",
-          "text": "Call (316) 633-8097 and tell us what your furnace is doing. We send a technician to find out why."
+          "heading": "Get the Heat Back On",
+          "text": "Call (316) 633-8097, Monday to Friday, 8:00 AM to 5:00 PM, or request service online. Tell us what the furnace is doing."
         }
       ]
     },
@@ -570,12 +591,15 @@
       "hero": {
         "eyebrow": "Contact",
         "h1": "Contact Epic Heating & Cooling",
-        "sub": "Call us and tell us what your AC or furnace is doing.",
+        "sub": "The fastest way to reach us is to call. If it can wait, send a service request and tell us what's going on.",
         "primaryCta": {
           "label": "Call (316) 633-8097",
           "action": "call"
         },
-        "secondaryCta": null,
+        "secondaryCta": {
+          "label": "Request Service",
+          "action": "contact"
+        },
         "image": {
           "slot": "contact-hero",
           "alt": "Quiet Wichita street of brick homes",
@@ -585,40 +609,43 @@
       "sections": [
         {
           "type": "prose",
-          "heading": "Call or Email",
+          "heading": "Call Us",
           "body": [
-            "Call (316) 633-8097. You can also email justin@epichvac.net.",
-            "We are open Monday to Friday, 8 a.m. to 5 p.m., and we serve Wichita and surrounding areas."
+            "Monday to Friday, 8:00 AM to 5:00 PM."
+          ],
+          "link": {
+            "label": "Call (316) 633-8097",
+            "route": "tel:+13166338097"
+          }
+        },
+        {
+          "type": "prose",
+          "heading": "Request Service",
+          "body": [
+            "Use it for anything that can wait a day: a seasonal tune-up, a new thermostat, a quote on replacing an old system. Tell us what your system is doing, and we'll follow up. You can also email us at justin@epichvac.net."
           ]
         },
         {
-          "type": "list",
-          "heading": "Have This Ready",
+          "type": "prose",
+          "heading": "What to Have Ready",
           "list": [
-            "Whether it is your AC, your furnace or both",
-            "What it is doing: no cooling, no heat, a noise or a leak",
-            "Whether the work is for your home or your business",
-            "Your address in Wichita or the town you are in"
+            "Whether it's your air conditioner, furnace or something else",
+            "What it's doing: warm air, no heat, a noise, a smell, ice",
+            "Roughly how old the system is, if you know",
+            "Whether it's a home or a business"
           ]
         },
         {
-          "type": "review",
-          "quote": "They have a real person answering the phone, sent someone out right away, and James was quick and friendly!",
-          "name": "Rebecca C."
+          "type": "prose",
+          "heading": "Why Calling Is Faster",
+          "body": [
+            "A short call lets us ask the questions that matter, like whether the outdoor fan is spinning or whether the furnace is trying to light. You get the next step while you're still on the line."
+          ]
         },
         {
-          "type": "faq",
-          "heading": "Before You Call",
-          "items": [
-            {
-              "q": "What do you work on?",
-              "a": "Air conditioners and furnaces, geothermal and water-source heat pumps, mini splits, ductwork, thermostats, ventilation and commercial HVAC."
-            },
-            {
-              "q": "Do you serve businesses?",
-              "a": "Yes. We work on homes and businesses."
-            }
-          ]
+          "type": "callBand",
+          "heading": "Where We Work",
+          "text": "Wichita and the surrounding area, including Haysville. We handle homes and commercial buildings."
         }
       ]
     }
@@ -626,18 +653,18 @@
   "footer": {
     "about": "Epic Heating & Cooling repairs and replaces air conditioners and furnaces for homes and businesses in Wichita, Kansas, and has served Wichita since 2012.",
     "why": [
-      "Preston in HVAC since 1999, Justin since 2000",
+      "We explain the problem before we fix it",
       "Our own sheet metal fab shop",
-      "Residential and commercial HVAC",
+      "Homes and businesses",
       "100% satisfaction guarantee"
     ]
   },
   "strategy": {
     "whyHeading": "Why we built this site",
     "why": [
-      "The top of your homepage says “Comfort Solutions Simplified.” It never says HVAC or Wichita, so Google can’t match you to someone searching for an HVAC company in Wichita.",
-      "Your “Financing” and “Get Financed” buttons open a page we couldn’t load. AC and furnace repair share one page with everything else.",
-      "Your customers already make your case. Jeff W.: “within 2 hours Karlee called me and sent Will out 30 minutes later.” Tyler N.: “He didn’t try to up-sale either he just fixed the problem.” So our demo says HVAC company in Wichita, KS at the very top, gives each repair its own page, and puts those words beside the work."
+      "The top of your homepage says “Comfort Solutions Simplified.” It never says HVAC or Wichita, so Google can’t match you to someone searching for an HVAC company in Wichita. That one line costs you the most calls.",
+      "Your customers already describe the company you are. Jeff W.: “within 2 hours Karlee called me and sent Will out 30 minutes later.” Amy I.: “the most honest quote for maintenance we’ve ever had versus buying all new stuff when it wasn’t necessary.” Today those words sit on Google, not on your site.",
+      "So the demo opens with HVAC company in Wichita, KS, gives AC repair and furnace repair a page each, and puts your customers’ words beside the work they prove."
     ],
     "cardsHeading": "Be the HVAC Company People Find on Google",
     "cardsIntro": "Each card is one page of the demo: what costs you calls today, and the fix.",
@@ -647,16 +674,16 @@
         "title": "Homepage",
         "why": "The page Google reads to learn who you are and where you work.",
         "problems": [
-          "The top of your homepage says “Comfort Solutions Simplified.” Google can’t tell you’re an HVAC company in Wichita.",
-          "The “Financing” and “Get Financed” buttons open a page we couldn’t load.",
-          "Geothermal heat pumps, a real specialty, share one short paragraph with every other service."
+          "The top of your homepage says “Comfort Solutions Simplified,” so Google can’t tell you’re an HVAC company in Wichita.",
+          "Geothermal heat pumps, a real specialty, share one short paragraph with every other service.",
+          "Your “maintenance plans” page talks about replacing an air conditioner, so visitors who click it get a replacement pitch."
         ],
         "fixes": [
           "A headline that says HVAC company in Wichita, KS, right at the top.",
-          "Every button calls you or opens your contact page.",
-          "Geothermal and water-source heat pumps listed as their own service."
+          "Geothermal and water-source heat pumps get their own section.",
+          "Seasonal maintenance described as maintenance, with the rest of your services."
         ],
-        "alsoAdd": "A check of what your competitors offer, so services you didn’t think to mention still get their own pages."
+        "alsoAdd": "Pages planned from what Google actually shows for each search, so every page targets something people really look for."
       },
       {
         "route": "/ac-repair-wichita-ks/",
@@ -664,25 +691,23 @@
         "why": "When the AC quits in a Wichita summer, people search and call the first company they find.",
         "problems": [
           "AC repair has no page of its own, so a search for “AC repair Wichita KS” has nothing of yours to land on.",
-          "Jeff W.’s same-afternoon repair and Tyler N.’s “he just fixed the problem” live only on Google."
+          "Your customers’ praise for fast, honest repairs lives only on Google."
         ],
         "fixes": [
-          "A page for AC repair in Wichita, KS, with what a visit involves.",
-          "Those reviews beside the point each one proves."
+          "A page for AC repair in Wichita, KS, with what usually goes wrong and what a visit involves.",
+          "Customer reviews beside the point each one proves."
         ],
-        "alsoAdd": "Pages planned from what Google actually shows for each search, so every page targets something people really look for."
+        "alsoAdd": "A check of what your competitors offer, so services you didn’t think to mention still get their own pages."
       },
       {
         "route": "/furnace-repair-wichita-ks/",
         "title": "Furnace Repair",
         "why": "When the heat is out, a homeowner calls the first company they can reach.",
         "problems": [
-          "Furnace repair has no page of its own, only one paragraph on a shared services page.",
-          "Your maintenance-plans page talks about replacing an air conditioner. Visitors who click it get a replacement pitch and no plan."
+          "Furnace repair has no page of its own, only one paragraph on a shared services page."
         ],
         "fixes": [
-          "A page for furnace repair in Wichita, KS, covering repair and replacement.",
-          "Seasonal maintenance described as maintenance, beside your furnace work."
+          "A page for furnace repair in Wichita, KS, covering repair and when a new furnace makes sense."
         ],
         "alsoAdd": "Every page set up behind the scenes so Google and AI tools like ChatGPT know exactly what you do, where you work, and what your customers say."
       },
@@ -714,35 +739,17 @@
         "status": "Missing"
       },
       {
-        "label": "Every button leads somewhere that works",
+        "label": "Maintenance page matches its name",
         "status": "Needs work"
       },
       {
         "label": "Hours that agree with each other",
         "status": "Needs work"
-      },
-      {
-        "label": "Street address shown",
-        "status": "Missing"
       }
     ],
     "closing": {
       "heading": "Want a website like this for your business?",
       "text": "Your customers already describe the company you are. Book a strategy call with Fluid Frame and we’ll walk you through this demo and what a full build adds."
     }
-  },
-  "onboardingQuestions": [
-    "Who owns Epic: Justin or Preston? Full name of the owner.",
-    "Legal entity name and the date behind \"since 2012\".",
-    "Current address: 339 N West St or 224 N Pennsylvania Ave?",
-    "Does the Synchrony financing link work for a customer, and what is the current merchant ID?",
-    "Bosch and any other brand dealer status, with proof for ZIP 67203.",
-    "Licence numbers behind \"Licensed Master Mechanical technicians\", and insurance.",
-    "Written warranty terms, and the terms of the 100% satisfaction guarantee.",
-    "Is there a real 24/7 line? Saturday hours?",
-    "Maintenance plan: what is included, the price and how to sign up.",
-    "Commercial share of the work and the kinds of jobs.",
-    "Towns served beyond Wichita and Haysville.",
-    "Free estimates: are they free?"
-  ]
+  }
 }

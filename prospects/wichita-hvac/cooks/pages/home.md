@@ -53,7 +53,7 @@ When that's the case, we install a new air conditioner or furnace, with a range 
 
 Most breakdowns come on the hottest or coldest day of the year, when a system nobody has looked at in twelve months finally gives out. A check before the season catches the worn part while it's still cheap.
 
-Our Premium maintenance plan covers two servicings a year, priority emergency service within 24 hours, and 20% off parts and labor. You can sign up year to year, or for 5 or 10 years. Agreements are available for homes and for businesses.
+Our Premium maintenance plan covers two servicings a year, priority emergency service within 24 hours, and 20% off parts and labor, year to year or on longer terms. Agreements are available for homes and for businesses.
 
 ## Air Quality and Carbon Monoxide Detection
 

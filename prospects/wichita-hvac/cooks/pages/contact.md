@@ -29,7 +29,7 @@ Wichita, KS 67213
 
 We work in Wichita and the surrounding towns.
 
-> "Thank you Cooks for the fast response to take care of my 90 year old father. Don was very nice and had the part and got it fixed before this next cold snap."
-> — Carolyn R.
+> "The technician was nice, clean and knew his job. Got to work right away, without any issues."
+> — Lupe N.
 
 Not sure what to say? Call and describe what you see and hear. We'll sort out the rest.

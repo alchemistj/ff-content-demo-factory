@@ -55,7 +55,7 @@ If you smell gas, don't stop to check the furnace. Leave the house and call the 
 
 ## Any Brand, Home or Business
 
-Our service department is equipped to service and maintain all brands. Call us whatever's on the nameplate.
+Call us whatever's on the nameplate.
 
 We handle residential and commercial heating.
 
@@ -95,6 +95,6 @@ Yes. We install and service both, along with furnaces.
 
 ## Call About Your Furnace
 
-Call (316) 945-2665 and tell us what the furnace is doing, or request service. We'll get a technician out to find the problem.
+Call (316) 945-2665 and tell us what the furnace is doing, or request service. A technician will find out why it stopped.
 
 Cook's Heating and Cooling, 2215 S West St, Wichita, KS 67213.

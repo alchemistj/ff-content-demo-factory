@@ -32,7 +32,7 @@ If the outdoor unit is blocked by grass clippings or a fence of weeds, clear the
 
 Refrigerant isn't used up like gas in a car. If your system is low, it leaked.
 
-Adding more without finding the leak gets you cool air for a few weeks and then the same problem again. We do Freon leak detection so the repair fixes the leak, not just the symptom.
+Adding more without finding the leak brings the same problem back. We do Freon leak detection so the repair fixes the leak, not just the symptom.
 
 Refrigerant can only be handled by certified technicians, and we're EPA registered and certified.
 
@@ -53,7 +53,7 @@ Turn the system off and let it thaw, running just the fan if you can. If you kee
 
 ## Any Brand, Home or Business
 
-Our service department is equipped to service and maintain all brands. You don't need to have bought your system from us.
+We service all brands. You don't need to have bought your system from us.
 
 We handle residential and commercial air conditioning.
 
@@ -89,6 +89,6 @@ Yes, residential and commercial.
 
 ## Call About Your AC
 
-Call (316) 945-2665 and tell us what the system is doing, or request service. We'll get a technician out to find the problem.
+Call (316) 945-2665 and tell us what the system is doing, or request service. A technician will track down what's wrong.
 
 Cook's Heating and Cooling, 2215 S West St, Wichita, KS 67213.

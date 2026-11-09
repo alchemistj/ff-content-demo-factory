@@ -30,6 +30,8 @@ Most AC failures come down to a short list.
 
 Many of these are a single part, not a new air conditioner.
 
+The symptoms overlap, which is why guessing costs money. Warm air can mean a weak capacitor, a dead blower or a low charge, and each one is a different repair.
+
 > "Michael came out same day and fixed our blower motor. Super knowledgeable and friendly. Great fast work."
 > — Divine L.
 
@@ -82,6 +84,9 @@ It depends on the part that failed. A capacitor and a condenser are very differe
 
 **Is it worth repairing, or should I replace it?**
 We find the failed part first. If the repair makes sense, we make it. If the system is at the end of its life, we tell you and give you a free replacement estimate.
+
+**My AC runs but the house stays warm. What does that mean?**
+The system is running but not moving or making cold air. A failed blower motor, low refrigerant or a frozen coil can each cause it, so turn it off, check the filter and call us.
 
 **Do you offer financing for a new unit?**
 Yes, through Wisetack.

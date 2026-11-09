@@ -26,45 +26,45 @@
   },
   "trustBar": [
     "AC and Furnace Repair",
+    "Repair or Replace: You Get Both Prices",
     "Full Systems Installed",
-    "Office on W 50th St N",
-    "Open Monday to Friday"
+    "Office on W 50th St N, Wichita"
   ],
   "services": [
     {
       "name": "AC Repair",
       "route": "/ac-repair-wichita-ks/",
-      "blurb": "Seized fans, bad capacitors and relays, and AC units that stopped cooling, found and fixed."
+      "blurb": "When the AC runs but the house won't cool, we find the worn part and fix it."
     },
     {
       "name": "Furnace Repair",
       "route": "/furnace-repair-wichita-ks/",
-      "blurb": "Heat that went out or a heater that is not working right, diagnosed and repaired."
+      "blurb": "When the heat won't come on, we find what failed and get your house warm again."
     },
     {
       "name": "AC and Furnace Replacement",
       "route": null,
-      "blurb": "A new heating and cooling system shouldn't take over your week, and you hear the price before we start."
+      "blurb": "When a system is past fixing, you see the repair cost and the replacement cost and choose."
     },
     {
       "name": "Seasonal Checkups",
       "route": null,
-      "blurb": "A checkup before AC season so your system is ready, and a walk-through of how to look after it."
+      "blurb": "A checkup before each season catches worn parts while they are still cheap to fix."
     },
     {
       "name": "Ductwork",
       "route": null,
-      "blurb": "Ductwork work that keeps your project moving instead of holding it up."
+      "blurb": "Main supply ducts replaced so every room gets the air your system makes."
     },
     {
       "name": "Geothermal Service",
       "route": null,
-      "blurb": "Repairs on geothermal systems, done properly."
+      "blurb": "Service for geothermal systems, which fewer companies know how to work on."
     },
     {
       "name": "Home Warranty Repairs",
       "route": null,
-      "blurb": "Heating and cooling repairs on homes covered by a home warranty."
+      "blurb": "Home warranty repair jobs, including ones another company did not finish right."
     }
   ],
   "pages": [
@@ -75,15 +75,15 @@
       "keyword": "hvac company wichita ks",
       "seo": null,
       "hero": {
-        "eyebrow": "Heating and cooling in Wichita, Kansas",
+        "eyebrow": "Heating and cooling in Wichita",
         "h1": "HVAC Company in Wichita, KS — 1st Call Heating & Cooling",
-        "sub": "We repair and replace air conditioners and furnaces in Wichita. We explain what we found, give you the cost of fixing against replacing, and charge for the work we did.",
+        "sub": "When the air stops cooling or the furnace won't start, you need someone to look at it, tell you what's wrong and what it will cost, and fix it. That's what we do for Wichita homes, from a small part to a whole system. Call us and tell us what your system is doing.",
         "primaryCta": {
           "label": "Call (316) 371-3815",
           "action": "call"
         },
         "secondaryCta": {
-          "label": "Send Us a Message",
+          "label": "Request Service",
           "action": "contact"
         },
         "image": {
@@ -94,76 +94,129 @@
       },
       "sections": [
         {
-          "type": "review",
-          "quote": "It almost seems surprising nowadays to me to have someone make a house call, fix what was needed, and have the kindness to truly explain all of it well. And, not least, the integrity to only charge for the actual work performed.",
-          "name": "Joe L."
-        },
-        {
           "type": "split",
-          "heading": "Repairs Explained, Then Your Call",
+          "heading": "Look First, Then Tell You Straight",
           "body": [
-            "When we diagnose your AC or furnace, you hear the cost of fixing it and the cost of replacing it. **You make the decision.**",
-            "We fix your old unit when it is worth fixing, and we say so when it is not."
+            "A heating and cooling system rarely fails all at once. Most calls start with one worn part: a capacitor, a relay, a fan motor, a sensor.",
+            "That matters, because a small part is a small repair. Before anyone talks about replacing a system, we find out what actually failed.",
+            "Then we tell you what it will cost to fix it and, if the system is old enough that replacing it is worth a look, what that would cost too. You decide with both numbers in front of you.",
+            "You pay for the work that was done, and nothing that wasn't."
           ],
           "image": {
             "slot": "home-explain",
             "alt": "Gas furnace in a Wichita utility closet with its access panel open",
             "brief": "gas furnace in a tidy utility closet with the access panel open, furnace on the right of the frame, plain neutral wall and soft light on the left behind the text side, no readable text, no people, no tools in hands"
-          },
-          "imageSide": "right"
+          }
         },
         {
           "type": "review",
-          "quote": "He did NOT push us into buying a new unit but rather explained everything so we could make our own decision including How he could fix our old unit.",
-          "name": "Alyson N."
+          "quote": "It almost seems surprising nowadays to me to have someone make a house call, fix what was needed, and have the kindness to truly explain all of it well. And, not least, the integrity to only charge for the actual work performed. Thank you all at 1st call!",
+          "name": "Joe L."
         },
         {
           "type": "prose",
-          "heading": "When the AC Quits, We Work You In",
+          "heading": "AC Repair",
           "body": [
-            "A dead AC in a Wichita summer can't wait for next week. **We have come out the same day it quit.**"
-          ]
-        },
-        {
-          "type": "review",
-          "quote": "Our ac went out on Monday and he made time to come out same day.",
-          "name": "Rebecca S."
-        },
-        {
-          "type": "services",
-          "heading": "Everything We Do",
-          "intro": "Air conditioners and furnaces are our work. Pick what you need and call us."
-        },
-        {
-          "type": "review",
-          "quote": "Very well versed with geothermal. Like me he wants it repaired properly and me happy.",
-          "name": "David P."
+            "The outside unit is running, but the house won't cool. Or it cools for an hour and quits. Or the fan has stopped and the air coming out of the vents is warm.",
+            "In Wichita summers, the AC runs most of the day for months. Capacitors, contactors and fan motors wear out under that load, and a part that costs little can take the whole system down.",
+            "We find the part that failed, replace it and get the system running again. If the real trouble is bigger, we say so before we do anything."
+          ],
+          "link": {
+            "label": "See AC repair →",
+            "route": "/ac-repair-wichita-ks/"
+          }
         },
         {
           "type": "split",
-          "heading": "New Systems and Ductwork, Without the Wait",
+          "heading": "Furnace Repair",
           "body": [
-            "When replacement is the answer, **a new system shouldn't take over your week.** We plan the work so you are back to normal quickly.",
-            "Ductwork too: we work so a renovation or remodel keeps its schedule, and you hear the price first."
+            "A cold house in January is not something to wait on. A furnace that won't light or won't stay on is usually a failed ignitor, a dirty flame sensor, a worn blower motor or a clogged filter.",
+            "Many of those are quick fixes, and we'll show you what we found so you know what you're paying for.",
+            "A furnace that's failing because of its age is a different conversation, and we'll have that one with you honestly too."
           ],
+          "link": {
+            "label": "See furnace repair →",
+            "route": "/furnace-repair-wichita-ks/"
+          },
           "image": {
             "slot": "home-ductwork",
             "alt": "Silver supply duct running along a basement ceiling",
             "brief": "silver supply duct running along an unfinished basement ceiling, duct on the right, plain softly lit wall and joists fading out on the left behind the text side, no readable text, no people, no tools in hands"
-          },
-          "imageSide": "left"
+          }
+        },
+        {
+          "type": "prose",
+          "heading": "AC and Furnace Replacement",
+          "body": [
+            "Some systems are finished. A furnace that's 30 years old, an AC that has been repaired twice in two summers, a unit running an older refrigerant that's getting harder and more expensive to service.",
+            "Replacing the whole system is a big decision, so we don't push it. We explain what you have, what the options are and what size system your house needs, because a unit that's too big or too small never runs right.",
+            "Many full system replacements are finished in one day. Before the crew leaves, ask anything you want about the new system and thermostat."
+          ]
         },
         {
           "type": "review",
-          "quote": "They had the most affordable bid for the job, had the install done in one day, and the finished project looked great and met all of our needs.",
+          "quote": "Austin came out and explained everything to us and what our options were. He did NOT push us into buying a new unit but rather explained everything so we could make our own decision including How he could fix our old unit. … A week later Mike, Austin and Derek came to install our units. They were extremely professional and finished all in one day. They didn’t rush out even though it was after 5:30 they still stayed and explained our unit and new thermostat.",
+          "name": "Alyson N."
+        },
+        {
+          "type": "prose",
+          "heading": "Seasonal Checkups",
+          "body": [
+            "Most people don't think about their system until it fails, usually on the hottest or coldest day of the year.",
+            "Dirt, loose wiring and worn parts show up before a breakdown, if someone is looking. A checkup before the cooling season, and another before the heating season, finds them while they're still cheap to fix.",
+            "We'll also show you what you can do yourself between visits, like changing the filter and keeping the outdoor unit clear."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "They did a great job! Showed me how to maintain my a.c. unit and how to take care of it from now on!",
+          "name": "Devin H."
+        },
+        {
+          "type": "prose",
+          "heading": "Ductwork",
+          "body": [
+            "The ducts are the part of the system you never see, until a remodel opens a wall. A main supply duct that's damaged, undersized or poorly connected leaves rooms too hot or too cold, no matter how good the equipment is.",
+            "We replace ductwork, including the main supply duct, and make sure it fits what your system actually needs."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "My wife and I are renovating our basement and we had First Call replace the main air supply duct. They had the most affordable bid for the job, had the install done in one day, and the finished project looked great and met all of our needs.",
           "name": "Trent A."
         },
         {
           "type": "prose",
-          "heading": "Find Us on West 50th Street North",
+          "heading": "Geothermal Service",
           "body": [
-            "Our office is at 937 W 50th St N, Wichita, KS 67204. We are open Monday to Friday, 8:00 AM to 5:00 PM.",
-            "Call (316) 371-3815 and tell us whether it is your AC, your furnace or both."
+            "A geothermal system heats and cools with a loop buried in your yard, and it isn't like the furnace and AC next door. Fewer companies know how to work on one.",
+            "We service geothermal systems. Tell us what you have when you call."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Enjoyed the technicians professional service. Very well versed with geothermal.",
+          "name": "David P."
+        },
+        {
+          "type": "prose",
+          "heading": "Home Warranty Repairs",
+          "body": [
+            "When a home warranty company assigns the contractor, you don't get to pick who shows up, and a bad assignment can leave you waiting or with a job done wrong.",
+            "We take home warranty repair work, including jobs another company didn't finish right. Call us and tell us which warranty company you have and where the job stands."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "These guys were great to work with. They did some home warranty work that another company botched. Took care of the problem right away. I would recommend these guys any day.",
+          "name": "Mark S."
+        },
+        {
+          "type": "prose",
+          "heading": "Wichita, Kansas",
+          "body": [
+            "Our office is at 937 W 50th St N, Wichita, KS 67204. We work on homes in Wichita.",
+            "We answer the phone Monday to Friday, 8:00 AM to 5:00 PM. Call, tell us what the system is doing, and we'll tell you when we can be there."
           ]
         },
         {
@@ -172,22 +225,34 @@
           "items": [
             {
               "q": "Do you work on both air conditioners and furnaces?",
-              "a": "Yes. We repair both, and we replace the whole system when that makes more sense than another repair."
+              "a": "Yes. We repair both and replace both, as separate units or as a full system. We also do seasonal checkups, ductwork and geothermal service."
             },
             {
-              "q": "Do you work on geothermal systems?",
-              "a": "Yes. We repair geothermal heating and cooling systems."
+              "q": "Will you try to sell me a new system?",
+              "a": "No. If a repair will do, we repair it. If the system is at the end of its life, we show you the options and the cost of each, and you decide."
             },
             {
-              "q": "Do you do home warranty repairs?",
-              "a": "Yes. We repair heating and cooling for homes covered by a home warranty."
+              "q": "How fast can you get here?",
+              "a": "It depends on the day's schedule. Call during office hours and tell us what the system is doing. We'll give you a time."
+            },
+            {
+              "q": "What will it cost?",
+              "a": "It depends on what has failed. You get the cost of the repair, or of a replacement, before we do the work, and you pay for the work that was done."
+            },
+            {
+              "q": "How long does a replacement take?",
+              "a": "Many full systems are installed in one day. Bring up your timing when you call."
+            },
+            {
+              "q": "What should I tell you when I call?",
+              "a": "What the system is doing, how old it is, and whether it's the furnace, the AC or both. If you can read the model number on the unit, that helps."
             }
           ]
         },
         {
           "type": "callBand",
           "heading": "Call 1st Call",
-          "text": "Call (316) 371-3815 and tell us what your AC or furnace is doing."
+          "text": "Something not working, or a system you're not sure is worth fixing? Call and tell us what you're hearing and feeling. Call (316) 371-3815, Monday to Friday, 8:00 AM to 5:00 PM, or [request service](/contact/)."
         }
       ]
     },
@@ -198,15 +263,15 @@
       "keyword": "ac repair wichita ks",
       "seo": null,
       "hero": {
-        "eyebrow": "AC repair",
+        "eyebrow": "AC repair in Wichita",
         "h1": "AC Repair in Wichita, KS — 1st Call Heating & Cooling",
-        "sub": "When your AC stops cooling, we work you in. We move fast, and you don't wait days for an answer. Then you hear what a repair costs against a replacement.",
+        "sub": "When your AC stops cooling, the problem is usually one worn part, and it can often be fixed without replacing the system. We find the part, tell you what the repair costs and get it running. Call us and tell us what the AC is doing.",
         "primaryCta": {
           "label": "Call (316) 371-3815",
           "action": "call"
         },
         "secondaryCta": {
-          "label": "Send Us a Message",
+          "label": "Request Service",
           "action": "contact"
         },
         "image": {
@@ -218,125 +283,119 @@
       "sections": [
         {
           "type": "review",
-          "quote": "I was having problems with my air conditioner and I called Mike. He responded faster than I was expecting and came out in less than an hour which really impressed me! He found that my unit fan had seized and replaced it in a short period of time.",
+          "quote": "I was having problems with my air conditioner and I called Mike. He responded faster than I was expecting and came out in less than an hour which really impressed me! He found that my unit fan had seized and replaced it in a short period of time. He was personable and informative.",
           "name": "Clarence D."
         },
         {
           "type": "split",
-          "heading": "We Find the Failed Part and Replace It",
+          "heading": "When the AC Runs but the House Won't Cool",
           "body": [
-            "We find what failed on your AC and replace it, and we explain what we found.",
-            "We have also diagnosed an upstairs AC that blew no air while the outside unit kept running."
-          ],
-          "list": [
-            "**A seized fan**, replaced without a long wait",
-            "**A failed part**, replaced so your AC cools again",
-            "**No airflow** while the outside unit still runs"
+            "You walk by the outside unit and it's humming, or the fan isn't spinning at all. Inside, the air from the vents is warm, or it's cool for a while and then it isn't.",
+            "Those are the usual signs of a failed part. Wichita summers keep an AC running hard for months, and the parts that start and run the motors wear out first.",
+            "The capacitor gives the compressor and fan motors the jolt they need to start. A relay or contactor switches them on. When either one fails, the unit may hum without starting, or not run at all, even though the rest of the system is fine.",
+            "Fan motors seize. Drains clog and shut the system down. Dirty coils and filters choke the airflow until the evaporator freezes into a block of ice.",
+            "Most of these are repairs, not replacements."
           ],
           "image": {
             "slot": "ac-diagnose",
             "alt": "Open outdoor condenser showing the fan and wiring panel",
             "brief": "outdoor AC condenser with its side panel off showing the fan and wiring, unit on the right, plain fence and soft daylight on the left behind the text side, no readable text, no people, no tools in hands"
-          },
-          "imageSide": "right"
+          }
         },
         {
           "type": "review",
-          "quote": "Austin and Mike are first-rate technicians who are responsive and knowledgeable about the details of air conditioner repair. I highly recommend them.",
-          "name": "Peter R."
-        },
-        {
-          "type": "prose",
-          "heading": "When to Call",
-          "body": [
-            "Call when your AC stops cooling, blows no air, leaks, or runs outside while the house stays warm.",
-            "**We work urgent calls in** instead of making you wait for an opening. Call us the morning it quits."
-          ]
-        },
-        {
-          "type": "review",
-          "quote": "Worked me in on a Friday afternoon when my AC stopped cooling. They replaced bad capacitor and relay. All other service companies were scheduling for following week.",
+          "quote": "Worked me in on a Friday afternoon when my AC stopped cooling. They replaced bad capacitor and relay. All other service companies were scheduling for following week. They are very professional and were on time as promised.",
           "name": "Ron D."
         },
         {
-          "type": "split",
-          "heading": "Repair or Replace: You Get the Numbers",
+          "type": "prose",
+          "heading": "What We Do When We Come Out",
           "body": [
-            "Some air conditioners are worth fixing and some are not. We tell you what fixing your unit will cost and what replacing it will cost.",
-            "**You decide.** On an older unit, we have laid out both numbers so the homeowner could plan the replacement for next year."
+            "We start by finding out why it stopped, not by guessing. We check the thermostat, the power, the capacitor, the contactor and relay, the fan motors, the coils, the airflow and the drain.",
+            "Once we know what failed, we tell you in plain words what it is and what the repair costs. You get the cost before we replace anything.",
+            "Then we replace the part and check that the system is running."
+          ]
+        },
+        {
+          "type": "split",
+          "heading": "Repair or Replace: What We'll Tell You",
+          "body": [
+            "Age matters more than anything else. An AC usually lasts 12 to 15 years, and one that's older than that, and breaking down every summer, may not be worth another repair.",
+            "Refrigerant matters too. Systems built to run R-22 refrigerant, which is no longer made, get more expensive to service every year, so a major repair on one is a harder choice.",
+            "If the repair is small and the system is sound, we repair it. If a replacement is coming, we tell you roughly when and what the options are, so you can plan for it instead of being surprised on the hottest day."
           ],
           "image": {
             "slot": "ac-options",
             "alt": "Older outdoor air conditioner next to a house foundation",
             "brief": "older outdoor AC condenser on a concrete pad beside a brick foundation, unit on the right, plain lawn and soft sky on the left behind the text side, no readable text, no people, no tools in hands"
-          },
-          "imageSide": "left"
+          }
         },
         {
           "type": "review",
-          "quote": "He didn’t try to get as much money as he could out of us and told us what costs we would be looking at for fixing the unit or replacing the unit.",
+          "quote": "He didn’t try to get as much money as he could out of us and told us what costs we would be looking at for fixing the unit or replacing the unit. We have an older model combined heating and ac unit running R22 which is becoming obsolete and costs a fortune to replace, so we are looking at replacing the whole unit next year since the heating part of it still works for now.",
           "name": "Julia K."
         },
         {
           "type": "prose",
-          "heading": "A New Outside Unit, Set Right",
+          "heading": "Check These Before You Call",
           "body": [
-            "When replacement is the answer, we install the new system. We have been back to install the day after a diagnosis.",
-            "We have raised and leveled a new outside unit so it sits right on its pad."
+            "A few things take two minutes and sometimes solve it."
+          ],
+          "list": [
+            "Check that the thermostat is set to cool and the temperature is below the room temperature.",
+            "Check that the breaker for the AC hasn't tripped.",
+            "Replace a clogged filter. A filter that's full of dust can freeze the coil.",
+            "Make sure the outside unit isn't buried in leaves, grass clippings or a fence's worth of weeds."
+          ],
+          "tail": [
+            "If the unit is covered in ice, turn the AC off and let it thaw before you call, so the ice doesn't keep damaging the system.",
+            "If none of it helps, call us."
           ]
-        },
-        {
-          "type": "review",
-          "quote": "They went over and beyond to raise and level out my new outside unit!",
-          "name": "Paul F."
         },
         {
           "type": "prose",
-          "heading": "Keep It Running Between Repairs",
+          "heading": "Knowing What's Wrong, and What It Costs",
           "body": [
-            "We show you how to look after your AC, and we can set a checkup to get the unit ready for AC season.",
-            "Ask us about a checkup when you call."
+            "When something is wrong, you should know what it is.",
+            "We walk you through the problem and the choices, and we say honestly if a choice isn't worth it. If a new system is the better answer, we'll help you size and plan the replacement, and we can install it.",
+            "A new outside unit also has to sit level and stable. One that settles and tilts puts strain on the compressor and the refrigerant lines, and wears out sooner."
           ]
         },
         {
           "type": "review",
-          "quote": "They did a great job! Showed me how to maintain my a.c. unit and how to take care of it from now on!",
-          "name": "Devin H."
+          "quote": "My upstairs AC was failing to blow any air at all, as the outside unit continued to run. I called Mike late in the day. He advised me what to do and he and Austin were out to look at my unit the next afternoon. … The problem was diagnosed and options for a fix were given to me as well as cost. I opted for a new install given the age of my system. The next day, they were prompt and on time. No hidden costs. They went over and beyond to raise and level out my new outside unit!",
+          "name": "Paul F."
         },
         {
           "type": "faq",
-          "heading": "AC Repair Questions",
+          "heading": "Questions About AC Repair",
           "items": [
             {
-              "q": "Do you repair air conditioners?",
-              "a": "Yes. We find what failed, such as a fan, a capacitor or a relay, and replace it."
+              "q": "How fast can you get here?",
+              "a": "It depends on the day's schedule. Call Monday to Friday, 8:00 AM to 5:00 PM, tell us what the AC is doing, and we'll give you a time."
             },
             {
-              "q": "Can I find out what replacing my AC would cost?",
-              "a": "Yes. When we diagnose a problem, you get the cost of fixing it and the cost of replacing it."
+              "q": "What will an AC repair cost?",
+              "a": "It depends on what has failed. A bad capacitor or a seized fan is a different bill than a failed compressor, and you hear the cost before we do the work."
             },
             {
-              "q": "Do you replace the whole system?",
-              "a": "Yes. We install new systems, and we have raised and leveled the outside unit on a new install."
+              "q": "Will you tell me if I need a new system?",
+              "a": "Yes, and also if you don't. If it's a repair, we repair it."
             },
             {
-              "q": "Do you help me look after my AC?",
-              "a": "Yes. We show you how to look after your unit, and we can book a checkup before AC season."
+              "q": "Can you tell me what's wrong over the phone?",
+              "a": "Often we can tell you what's likely from what you describe, but we won't know until we see the unit. Call and describe it."
             },
             {
-              "q": "Do you work on older air conditioners?",
-              "a": "Yes. We have diagnosed older units, and we tell you what fixing one costs against replacing it."
-            },
-            {
-              "q": "When is your office open?",
-              "a": "Monday to Friday, 8:00 AM to 5:00 PM. Call (316) 371-3815."
+              "q": "Do you also replace air conditioners?",
+              "a": "Yes. We replace AC units and full heating and cooling systems, and many full systems are installed in one day. See [everything we do](/home/)."
             }
           ]
         },
         {
           "type": "callBand",
-          "heading": "Call for AC Repair",
-          "text": "Call (316) 371-3815 and tell us what your AC is doing."
+          "heading": "Call About Your AC",
+          "text": "Tell us what the AC is doing and how old it is. We serve Wichita. Call (316) 371-3815, Monday to Friday, 8:00 AM to 5:00 PM, or [request service](/contact/)."
         }
       ]
     },
@@ -347,15 +406,15 @@
       "keyword": "furnace repair wichita ks",
       "seo": null,
       "hero": {
-        "eyebrow": "Furnace repair",
+        "eyebrow": "Furnace repair in Wichita",
         "h1": "Furnace Repair in Wichita, KS — 1st Call Heating & Cooling",
-        "sub": "When your furnace or heater quits, we find the cause and get your heat back on. When it is too old to repair, we replace it, and we explain the price first.",
+        "sub": "When the furnace won't start or the house won't warm up, the cause is often a small failed part. We find it, tell you what the repair costs and get your heat back. Call us and tell us what the furnace is doing.",
         "primaryCta": {
           "label": "Call (316) 371-3815",
           "action": "call"
         },
         "secondaryCta": {
-          "label": "Send Us a Message",
+          "label": "Request Service",
           "action": "contact"
         },
         "image": {
@@ -367,35 +426,24 @@
       "sections": [
         {
           "type": "review",
-          "quote": "When our furnace went out, we received prompt and quick service.  Very knowledgeable, was able to identify and fix quickly.  Very affordable and will definitely use them again.",
+          "quote": "When our furnace went out, we received prompt and quick service. Very knowledgeable, was able to identify and fix quickly. Very affordable and will definitely use them again.",
           "name": "Rebecca G."
         },
         {
           "type": "split",
-          "heading": "We Arrive Ready to Fix It",
+          "heading": "When the House Is Cold and the Furnace Isn't Working",
           "body": [
-            "We have talked through the likely causes on the phone and asked for the unit's information before the visit.",
-            "**That way we have shown up with the parts the repair needed**, and the house was warm sooner."
+            "The thermostat is calling for heat and nothing happens. Or the furnace clicks, runs for a minute and shuts off. Or the blower runs and the air coming out is cold.",
+            "It feels like the whole system has died, but a furnace has a short list of parts that cause most no-heat calls.",
+            "The ignitor lights the burner, and ignitors crack with age.",
+            "The flame sensor tells the furnace the burner is lit, and when it gets coated with soot, the furnace shuts the gas off as a safety step. A worn blower motor or a clogged filter keeps the heat from reaching the house, and can make the furnace overheat and shut itself down.",
+            "Each of those is a repair, and most of them are small ones."
           ],
           "image": {
             "slot": "furnace-repair",
             "alt": "Furnace burner compartment with the panel off in a utility room",
             "brief": "furnace with its front panel off showing the burner compartment, furnace on the right, plain wall and soft light on the left behind the text side, no readable text, no people, no tools in hands"
-          },
-          "imageSide": "right"
-        },
-        {
-          "type": "review",
-          "quote": "Austin was very helpful when our heater wasn’t functioning properly. He talked through what might be the possible issues and requested the information of our unit ahead of time so he could show up prepared with all the parts he would need.",
-          "name": "Jake A."
-        },
-        {
-          "type": "prose",
-          "heading": "Simple Fixes, Explained",
-          "body": [
-            "Not every outage needs a big repair. **When it is a simple fix, we tell you so.**",
-            "We show you what we did and why, so you know what to look for next time."
-          ]
+          }
         },
         {
           "type": "review",
@@ -403,84 +451,107 @@
           "name": "Megan B."
         },
         {
-          "type": "split",
-          "heading": "Repair or Replace Your Furnace",
+          "type": "prose",
+          "heading": "Helping Us Come Prepared",
           "body": [
-            "Some furnaces are past another repair. We explain your options and the size your home needs, and give you a fair estimate.",
-            "**You choose.** When you replace, our crew works so the job doesn't take over your week."
+            "The first call matters. If you can tell us what the furnace is doing, how old it is and what the nameplate on the unit says, give us those details when you phone.",
+            "Ignitors, sensors and blower motors differ from one furnace model to the next. Knowing the model before we arrive lets us think through the likely causes and bring parts that fit.",
+            "When we get there, we find out what failed, tell you what it is in plain words and tell you what the repair costs before we start. You pay for the work that was done."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Austin was very helpful when our heater wasn’t functioning properly. He talked through what might be the possible issues and requested the information of our unit ahead of time so he could show up prepared with all the parts he would need. He was punctual, friendly, and answered all my questions thoroughly.",
+          "name": "Jake A."
+        },
+        {
+          "type": "split",
+          "heading": "Check These Before You Call",
+          "body": [
+            "Two minutes can save you a trip."
+          ],
+          "list": [
+            "Make sure the thermostat is set to heat and the temperature is above the room temperature. Replace the batteries if it has them.",
+            "Check the furnace's power switch, which looks like a light switch on or near the furnace, and the breaker.",
+            "Replace a clogged filter. A furnace that can't pull in air will overheat and shut down.",
+            "Make sure the vents in the house are open and nothing is blocking them."
+          ],
+          "tail": [
+            "If you smell gas, leave the house and call the gas company from outside. Don't try to relight anything.",
+            "If none of it helps, call us."
           ],
           "image": {
             "slot": "furnace-replace",
             "alt": "New high-efficiency furnace installed in a clean utility closet",
             "brief": "new furnace installed in a clean utility closet with fresh ductwork, furnace on the right of the frame, plain painted wall on the left behind the text side, no readable text, no people, no tools in hands"
-          },
-          "imageSide": "left"
+          }
+        },
+        {
+          "type": "prose",
+          "heading": "Repair or Replace",
+          "body": [
+            "A furnace usually lasts 15 to 20 years, sometimes more. When it's older than that, or it needs a major part, the repair bill can be money better put toward a new system.",
+            "If your furnace is in good shape and the problem is small, we repair it.",
+            "If it's failing, we show you what's wrong, what a replacement involves and what size your home needs. A furnace that's too big short-cycles. One that's too small can't keep up in January.",
+            "We don't push a new system. We give you the cost of the repair and the cost of the replacement, and you decide."
+          ]
         },
         {
           "type": "review",
-          "quote": "When I needed to replace my 30 year old furnace, I called 1st Call Heating and Cooling. They were quick to schedule an appointment and their estimate was very fair.",
+          "quote": "When I needed to replace my 30 year old furnace, I called 1st Call Heating and Cooling. They were quick to schedule an appointment and their estimate was very fair. The staff was extremely helpful in explaining the different types of units available and the size needed for my home.",
           "name": "Mandi A."
         },
         {
           "type": "prose",
-          "heading": "Replacement That Respects Your Time",
+          "heading": "Replacing a Furnace, and the Whole System",
           "body": [
-            "A new system shouldn't take over your week, and an old one shouldn't leave you guessing.",
-            "If we spot a problem you had not known about, we tell you, and we can set a checkup to make sure the unit is ready for the season."
+            "A furnace and an AC share the same ductwork and blower, and they're often the same age. If both are near the end, replacing them together can be one job instead of two.",
+            "We replace furnaces on their own and full heating and cooling systems, and many full systems are installed in a single day. A replacement also means looking at what's around the furnace, like the gas line and venting, and anything wrong there is worth knowing about."
           ]
         },
         {
           "type": "review",
-          "quote": "1st Call got the full system replaced in a single day for a price that I felt was fair and less what than I had expected for a full unit replacement.",
+          "quote": "I finally decided to do a full upgrade on a nearly 40 year old furnace and AC system in my house. … Mike and Austin were helpful and prompt in answering any questions I've had and also alerted me to an issue with the gas company's equipment I hadn't been aware of before.",
           "name": "Courtney B."
         },
         {
           "type": "prose",
-          "heading": "Home Warranty Furnace Repairs",
+          "heading": "Heating Systems We Work On",
           "body": [
-            "When your home warranty company sends you to us, we get your heat back on and work to keep the cost down.",
-            "When the heat is out, we work hard to get it back on and keep the cost down. Call us with the details of your system."
+            "We repair furnaces and replace them, and we service geothermal systems. If you're not sure what kind of heating you have, call and describe it.",
+            "If the heat went out and a home warranty company is involved, we take home warranty repair jobs."
           ]
         },
         {
-          "type": "review",
-          "quote": "After about 4 days without heat we were finally able to get first call out and they worked really hard to get us a great deal and get our heat back up and running.",
-          "name": "Britiany P."
-        },
-        {
           "type": "faq",
-          "heading": "Furnace Questions",
+          "heading": "Questions About Furnace Repair",
           "items": [
             {
-              "q": "Do you repair furnaces?",
-              "a": "Yes. We find what is wrong and fix it, and when it is a simple fix, we tell you."
+              "q": "How fast can you get here?",
+              "a": "It depends on the day's schedule. Call Monday to Friday, 8:00 AM to 5:00 PM, tell us what the furnace is doing and we'll give you a time."
             },
             {
-              "q": "My furnace is very old. Should I replace it?",
-              "a": "Call us. We explain your options and the size your home needs, and you decide."
+              "q": "What will a furnace repair cost?",
+              "a": "It depends on what has failed. A dirty flame sensor is a smaller bill than a failed blower motor, and you hear the cost before we do the work."
             },
             {
-              "q": "Will you explain my options before I decide?",
-              "a": "Yes. We explain your options and the size your home needs, and give you a fair estimate."
+              "q": "How do I know it's time to replace the furnace?",
+              "a": "Age, repair history and what failed. A furnace over 15 years old that needs a major part, or one that keeps breaking, may be worth replacing. We'll tell you either way."
             },
             {
-              "q": "Can you replace a furnace and AC together?",
-              "a": "Yes. We replace both together, and a new system shouldn't take over your week."
+              "q": "Can you fix it if I'm not sure what's wrong?",
+              "a": "Yes. Call and describe what you see and hear, and we'll go from there."
             },
             {
-              "q": "Do you do home warranty work?",
-              "a": "Yes. We repair heating for homes covered by a home warranty."
-            },
-            {
-              "q": "When is your office open?",
-              "a": "Monday to Friday, 8:00 AM to 5:00 PM. Call (316) 371-3815."
+              "q": "Do you also repair air conditioners?",
+              "a": "Yes. See [AC repair](/ac-repair-wichita-ks/)."
             }
           ]
         },
         {
           "type": "callBand",
-          "heading": "Call for Furnace Repair",
-          "text": "Call (316) 371-3815 and tell us what your furnace is doing."
+          "heading": "Call About Your Furnace",
+          "text": "Tell us what the furnace is doing and how old it is. We serve Wichita. Call (316) 371-3815, Monday to Friday, 8:00 AM to 5:00 PM, or [request service](/contact/)."
         }
       ]
     },
@@ -493,12 +564,15 @@
       "hero": {
         "eyebrow": "Contact",
         "h1": "Contact 1st Call Heating & Cooling",
-        "sub": "Call our Wichita office and tell us what your AC or furnace is doing.",
+        "sub": "The fastest way to reach us is to call. Tell us what your furnace or AC is doing and we'll go from there. We answer Monday to Friday, 8:00 AM to 5:00 PM.",
         "primaryCta": {
           "label": "Call (316) 371-3815",
           "action": "call"
         },
-        "secondaryCta": null,
+        "secondaryCta": {
+          "label": "Request Service",
+          "action": "contact"
+        },
         "image": {
           "slot": "contact-hero",
           "alt": "Quiet Wichita street of brick homes with outdoor AC units",
@@ -510,74 +584,81 @@
           "type": "prose",
           "heading": "Call Us",
           "body": [
-            "Call (316) 371-3815. Our office is at 937 W 50th St N, Wichita, KS 67204.",
-            "We are open Monday to Friday, 8:00 AM to 5:00 PM."
+            "We answer Monday to Friday, 8:00 AM to 5:00 PM."
+          ],
+          "link": {
+            "label": "Call (316) 371-3815",
+            "route": "tel:+13163713815"
+          }
+        },
+        {
+          "type": "prose",
+          "heading": "Request Service",
+          "body": [
+            "Prefer to write? Send us a message with your name, phone number, address and what the system is doing. The more you tell us about the system, the better we can plan the visit."
           ]
         },
         {
-          "type": "list",
-          "heading": "Have This Ready",
+          "type": "prose",
+          "heading": "What to Have Ready",
           "list": [
-            "Whether it is your AC, your furnace or both",
-            "What it is doing: no cooling, no heat, a noise or a leak",
-            "Your unit's information, if you can read it off the unit",
-            "Your address in Wichita"
+            "Whether it's the furnace, the AC or both",
+            "What it's doing: no heat, no cooling, noises, a smell, a shutoff",
+            "About how old the system is",
+            "The model number on the unit, if you can read it",
+            "The address of the house"
           ]
         },
         {
-          "type": "review",
-          "quote": "Was very happy with Mike the tech that came over. Fixed and running AC in no time. Will definitely recommend services!",
-          "name": "Colleen E."
+          "type": "prose",
+          "heading": "Where We Are",
+          "body": [
+            "1st Call Heating & Cooling 937 W 50th St N, Wichita, KS 67204",
+            "We serve Wichita."
+          ],
+          "link": {
+            "label": "Get Directions",
+            "route": "https://www.google.com/maps/search/?api=1&query=937%20W%2050th%20St%20N%2C%20Wichita%2C%20KS%2067204"
+          }
         },
         {
-          "type": "faq",
-          "heading": "Before You Call",
-          "items": [
-            {
-              "q": "What do you work on?",
-              "a": "Air conditioners and furnaces: repairs, full system replacements, ductwork, seasonal checkups and geothermal service."
-            },
-            {
-              "q": "Where are you?",
-              "a": "937 W 50th St N, Wichita, KS 67204."
-            }
-          ]
+          "type": "callBand",
+          "heading": "Hours",
+          "text": "Monday to Friday, 8:00 AM to 5:00 PM."
         }
       ]
     }
   ],
   "footer": {
-    "about": "1st Call Heating & Cooling repairs and replaces air conditioners and furnaces from an office on West 50th Street North in Wichita, Kansas.",
+    "about": "1st Call Heating & Cooling repairs and replaces air conditioners and furnaces for Wichita homes, from an office at 937 W 50th St N.",
     "why": [
-      "AC and furnace repair",
-      "Full systems replaced, with the price explained first",
-      "Repair or replace: you get both numbers",
-      "Office on W 50th St N in Wichita"
+      "You hear the cost before the work starts",
+      "Repair first, replace only when it makes sense",
+      "AC, furnace, ductwork and geothermal in one call"
     ]
   },
   "strategy": {
     "whyHeading": "Why we built this site",
     "why": [
-      "Tap “Website” on your Google listing and you land on a page that says “This domain is for sale.” Nothing about heating, cooling, your number or your hours. Every customer who checks you out that way leaves with nothing.",
-      "Your customers already make your case on Google. Clarence D. wrote that you “came out in less than an hour.” Joe L. wrote about “the integrity to only charge for the actual work performed.”",
-      "So we built a demo that says HVAC company in Wichita at the very top, gives AC repair and furnace repair their own pages, and puts your customers' words next to the work they describe."
+      "Tap “Website” on your Google listing and you land on a page that says “This domain is for sale.” No heating, no cooling, no phone number, no hours. Right now your business has no working website.",
+      "Your customers already make your case on Google. Clarence D. wrote that Mike “came out in less than an hour.” Joe L. wrote about “the integrity to only charge for the actual work performed.”",
+      "So we built a demo that says HVAC company in Wichita, KS at the very top, gives AC repair and furnace repair their own pages, and puts your customers’ words beside the work they describe."
     ],
     "cardsHeading": "Be the HVAC Company People Find on Google",
-    "cardsIntro": "Each card is one demo page: what costs you calls, and how we fix it.",
+    "cardsIntro": "Each card is one demo page: what costs you calls, and the fix.",
     "cards": [
       {
         "route": "/home/",
         "title": "Homepage",
         "why": "The page Google reads to learn who you are and where you work.",
         "problems": [
-          "Everyone who taps “Website” on your Google listing lands on a page that says “This domain is for sale.”",
-          "Nothing there says you repair air conditioners and furnaces in Wichita, so Google has nothing to match to a search for an HVAC company.",
-          "Your 50 Google reviews appear on no page of yours."
+          "Everyone who taps “Website” on your Google listing sees a domain for sale, not an HVAC company.",
+          "Nothing says you repair air conditioners and furnaces in Wichita, so Google has nothing to show for “HVAC company Wichita KS.”",
+          "Your 4.9-star Google reviews appear on no page of yours."
         ],
         "fixes": [
-          "A headline that says HVAC company in Wichita, KS, right at the top.",
-          "Your number one tap away, with your address and hours.",
-          "Every service you do, with your customers' words beside it."
+          "A headline that says HVAC company in Wichita, KS, right at the top, with your number one tap away.",
+          "Every service in its own short section, with reviews beside the work they describe."
         ],
         "alsoAdd": "Every page set up behind the scenes so Google and AI tools like ChatGPT know exactly what you do, where you work, and what your customers say."
       },
@@ -587,11 +668,11 @@
         "why": "Your reviews describe AC calls again and again.",
         "problems": [
           "No page exists for AC repair, so a search for “AC repair Wichita KS” has nothing of yours to land on.",
-          "Stories like “came out in less than an hour” live on Google only."
+          "Nothing helps someone deciding whether to repair or replace an old AC."
         ],
         "fixes": [
-          "A page for AC repair in Wichita, KS, with repair costs against replacement.",
-          "Reviews from these jobs beside each point."
+          "A page for AC repair in Wichita, KS, with what usually fails and a repair-or-replace section.",
+          "Four customer reviews beside the points they prove."
         ],
         "alsoAdd": "Pages planned from what Google actually shows for each search, so every page targets something people really look for."
       },
@@ -601,24 +682,24 @@
         "why": "When the heat is out, people call the first company they can reach.",
         "problems": [
           "No page exists for furnace repair, so someone searching “furnace repair Wichita KS” never finds you.",
-          "Your full-system and 30-year-old-furnace replacements have no page that explains them."
+          "Your full-system and 30-year-old-furnace replacements have no page."
         ],
         "fixes": [
-          "A page for furnace repair in Wichita, KS, covering repair, replacement and home warranty jobs.",
-          "Reviews from customers who got their heat back, beside each one."
+          "A page for furnace repair in Wichita, KS, with the parts that usually fail and a repair-or-replace section.",
+          "A replacement section, a line on geothermal and home warranty work, and five reviews."
         ],
         "alsoAdd": "A check of what your competitors offer, so services you didn’t think to mention still get their own pages."
       },
       {
         "route": "/contact/",
         "title": "Contact",
-        "why": "The page where a customer with a dead AC decides to call you.",
+        "why": "Where a customer with a dead AC decides to call you.",
         "problems": [
-          "No page of yours has a phone link, a contact form or an email address.",
-          "Your hours, Monday to Friday 8 to 5, appear only on a directory listing nobody has claimed."
+          "No page of yours has a phone link or a contact form.",
+          "Your hours appear only on a directory listing nobody has claimed."
         ],
         "fixes": [
-          "Your number one tap away, with your address, your hours and a short list of what to have ready."
+          "Your number one tap away, with your address, your hours and what to have ready when they call."
         ],
         "alsoAdd": "Call and form tracking that shows which pages and towns your leads come from."
       }
@@ -652,21 +733,7 @@
     ],
     "closing": {
       "heading": "Want a website like this for your business?",
-      "text": "Your customers already call you fast, fair and honest. Book a strategy call with Fluid Frame, and we'll walk you through this demo and how to put it behind your Google listing."
+      "text": "Your customers already say you are quick, fair and honest. Book a strategy call with Fluid Frame and we’ll walk you through this demo and how to put it behind your Google listing."
     }
-  },
-  "onboardingQuestions": [
-    "Owner's name and surname, and whether they want it on the site. No source names the owner.",
-    "Founding year. The earliest Google review is from December 2017, but no founding year is confirmed.",
-    "Licensed and insured? Licence number and insurer to show.",
-    "Brands sold and installed, and dealer status. No manufacturer locator confirmed one (Carrier checked, Trane not).",
-    "Warranties on labor and equipment, financing, and whether estimates are free. None are on the site.",
-    "Maintenance plan or tune-up membership: is one sold, or are checkups booked one at a time?",
-    "Service area: which towns around Wichita, and how far from 67204. The site says Wichita only.",
-    "Hours: confirm Monday to Friday, 8 AM to 5 PM, and whether they offer after-hours or weekend service.",
-    "Geothermal: confirm they service it (one review). Commercial or hangar work: is there a line?",
-    "What happened to firstcallheatingcooling.com, and do they want the domain back?",
-    "Email address to show, plus Facebook or other pages and who controls them.",
-    "Logo files, brand colors and job photos."
-  ]
+  }
 }
