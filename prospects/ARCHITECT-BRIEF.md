@@ -39,8 +39,8 @@ In short: each page argues one idea, starts from the customer's moment, explains
 6. **Edit.** Run one editor per business with `prospects/EDITOR-BRIEF.md`.
    - Then run `node scripts/check-page.mjs <folder>` until it passes.
    - **Check that your 4 homepages argue 4 different ideas.** If two could swap names and still read true, find what is actually different about each business in its own reviews and facts.
-7. **Stop and report homepages.** Josh reads every homepage before anything else happens. Send him, for each business: the idea in one sentence, the H1, the `check-page` line, and where the file is.
-8. **After Josh approves:** convert each page with `node scripts/page-to-words.mjs <folder> pages/<page>.md <route> --write`. Write the strategy page last, from the audit and the finished pages (`docs/writer-guides/STRATEGY_PAGE_GUIDE.md`). Then run `node scripts/check-words-package.mjs <folder>`.
+7. **Convert and finish** (no approval stop, Josh 2026-11-09). Pages that pass the editor and `check-page` go straight on: convert each page with `node scripts/page-to-words.mjs <folder> pages/<page>.md <route> --write`, write the strategy page last from the audit and the finished pages (`docs/writer-guides/STRATEGY_PAGE_GUIDE.md`), and run `node scripts/check-words-package.mjs <folder>` until it passes.
+8. **Report finished packages**, not drafts: per business, the idea in one sentence, the H1 and the check lines. Message Josh mid-run only for money, a borderline business or a fact you can't confirm.
 
 ## Git
 Commit and push each business's folder to your branch as it finishes. End every commit message with:
@@ -55,4 +55,4 @@ Scout and qualify first. Then run the 4 audits and fact files in parallel, then 
 ## Report to Josh
 Send two reports:
 1. When the 4 picks are chosen: names, a one-line reason for each, and who you skipped and why.
-2. When the homepages are ready (step 7).
+2. When the packages are finished (step 8).
