@@ -110,7 +110,7 @@
           "heading": "One Company for Every Trade",
           "body": [
             "A remodel needs carpentry, tile, plumbing, electrical and paint, all in the right order. We run every one of them, so you call one company, not five.",
-            "That makes the next project easy too. For one family we have tiled a room, remodeled a master bedroom and bathroom, and built an addition with a bedroom, bathroom and living area."
+            "That makes the next project easy too, because the crew that knows your house is the crew that does the next room."
           ],
           "image": {
             "slot": "home-trades",
@@ -220,7 +220,7 @@
           "heading": "A Shower Starts Behind the Tile",
           "body": [
             "A leaking shower can ruin the ceiling below it, so we start with the layer you will never see again: the waterproofing behind the tile.",
-            "Then the tile goes on the walls and floors. We tiled one master bath for an owner who checked every line for level, and years later it has no cracked grout or uneven floor tiles."
+            "Then the tile goes on the walls and floors, laid straight and level so it holds up year after year."
           ],
           "image": {
             "slot": "bath-shower",
@@ -238,8 +238,8 @@
           "type": "prose",
           "heading": "One Shower or the Whole Bathroom",
           "body": [
-            "Start with a single walk-in shower, or redo the whole room. We have remodeled a master shower, and we have remodeled two bathrooms in one project with new tile on the walls and floors.",
-            "We have also built a new bathroom as part of an addition."
+            "Start with a single walk-in shower, or redo the whole room. A small remodel gets the same care as a big one.",
+            "We can build a new bathroom as part of an addition, too."
           ]
         },
         {
@@ -251,7 +251,7 @@
           "type": "prose",
           "heading": "Old Bathrooms Hide Things",
           "body": [
-            "Behind a tired shower there can be damage nobody could see. We have found floor rot and termite damage under a master shower and repaired it as part of the remodel."
+            "Behind a tired shower there can be damage nobody could see. When we find it, we tell you and repair it as part of the remodel."
           ]
         },
         {
@@ -263,7 +263,7 @@
           "type": "prose",
           "heading": "The Rest of the Room",
           "body": [
-            "A bathroom remodel rarely stops at the shower. We have also installed new lighting, mirrors, pulls and towel racks, painted the room and retiled a laundry room with new plumbing.",
+            "A bathroom remodel rarely stops at the shower. Lighting, mirrors, hardware and paint finish the room, and we handle all of it.",
             "Carpentry, tile, plumbing and paint all come from one company, so you deal with one team from the first call to the last coat of paint."
           ]
         },
@@ -381,7 +381,7 @@
           "heading": "The Whole Kitchen, Not Just the Cabinets",
           "body": [
             "A kitchen remodel touches every trade, so we send crews licensed and insured in carpentry, plumbing, electrical, tile and flooring and painting.",
-            "We have moved a kitchen's floor plan and replaced the floor, cabinets, counters and appliances in the same remodel."
+            "You plan the whole room once, instead of in pieces."
           ],
           "list": [
             "**Cabinets**, including custom cabinetry built for your room",
@@ -407,7 +407,7 @@
           "heading": "Choosing Materials With Help",
           "body": [
             "Counters, cabinets and flooring are the big choices in a kitchen. The designer on our team works with you on them.",
-            "We have guided clients through picking granite and stone, then had everything ordered ahead so the job ran without delays."
+            "We help you settle the choices early, so materials are not what holds your job up."
           ]
         },
         {
@@ -432,8 +432,8 @@
           "type": "prose",
           "heading": "On Time, With Your Home Protected",
           "body": [
-            "Our crews show up on time and keep you posted. Paper goes down over your floors and the work area is closed off, so the rest of your house keeps working while the kitchen doesn't.",
-            "At the end of each day we let you know we're leaving, and we clean up."
+            "We plan the job so the rest of your house keeps working while the kitchen doesn't. Paper goes down over your floors and the work area is closed off.",
+            "We keep you posted and clean up at the end of each day."
           ]
         },
         {
@@ -474,7 +474,7 @@
           "items": [
             {
               "q": "Can you change my kitchen layout?",
-              "a": "Yes. We have rearranged a kitchen floor plan as part of a full remodel."
+              "a": "Yes. Moving the layout can be part of a full remodel."
             },
             {
               "q": "Do you do the floors and paint too?",

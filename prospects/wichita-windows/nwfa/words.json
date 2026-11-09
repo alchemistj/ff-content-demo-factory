@@ -104,7 +104,7 @@
           "heading": "A Warmer, Tighter House",
           "body": [
             "We insulate attics, floors, exterior walls and crawl spaces, then seal the air leaks around the insulation so the heat stays where you set it.",
-            "We have left house after house as clean as we found it. See [Insulation](/insulation-wichita-ks/)."
+            "We leave your house tidy when the crew leaves. See [Insulation](/insulation-wichita-ks/)."
           ],
           "image": {
             "slot": "home-insulation",
@@ -122,7 +122,7 @@
           "type": "split",
           "heading": "New Windows, Put In by Our Crew",
           "body": [
-            "We go over your options and how long the job will take, then order your windows and install them with our own crew. We have had windows in at 7 weeks on a job quoted at 14 to 18.",
+            "We go over your options and how long the job will take, then order your windows and install them with our own crew. You should not wait on windows any longer than you have to.",
             "Comparing quotes? We lay out every option so you can weigh ours against the rest. See [Window Replacement](/window-replacement-wichita-ks/)."
           ],
           "image": {
@@ -146,7 +146,7 @@
           "type": "prose",
           "heading": "Wichita and Nearby Areas",
           "body": [
-            "We work in Wichita and the towns around it. Our crews have also worked in Newton and Parsons.",
+            "We work in Wichita and the towns around it. Ask us whether your town is in range.",
             "Call (316) 263-0711 and tell us about your attic, your floors, your windows or your furnace."
           ]
         },
@@ -161,7 +161,7 @@
           "items": [
             {
               "q": "Do you do weatherization program work?",
-              "a": "Yes. We do weatherization work under the SCKEDD Weatherization program. You apply to the program to see if you qualify."
+              "a": "Yes. We take weatherization program work through SCKEDD. You apply to the program to see if you qualify."
             },
             {
               "q": "Do you replace windows?",
@@ -169,7 +169,7 @@
             },
             {
               "q": "Do you do furnace and AC work too?",
-              "a": "Yes. We install furnaces and air conditioners, and we have come back the week after a new furnace to insulate the same house."
+              "a": "Yes. We install furnaces and air conditioners, and we can insulate the same house."
             },
             {
               "q": "How do I start?",
@@ -251,10 +251,10 @@
         },
         {
           "type": "prose",
-          "heading": "Sooner Than the Quote, Done in a Day",
+          "heading": "A Timeline You Can Plan Around",
           "body": [
-            "We have had windows arrive in 7 weeks on a job we quoted at 14 to 18, the same wait other companies were quoting.",
-            "The week after they arrived, our crew installed every window in a single day. You get your own timeline at your estimate."
+            "Waiting on windows is the part most people dread. At your estimate we go over how long your order will take, so you can plan around it.",
+            "Our own crew installs your windows, so the company that ordered them stands behind the fit."
           ]
         },
         {
@@ -272,11 +272,11 @@
             },
             {
               "title": "Your windows are ordered",
-              "text": "You choose, we order and you get a timeline. We have beaten our own quote before."
+              "text": "You choose, we order and you get a timeline."
             },
             {
               "title": "Install day",
-              "text": "Our crew puts in your windows. We have finished a whole job in one day."
+              "text": "Our crew puts in your windows and cleans up when the work is done."
             }
           ]
         },
@@ -299,15 +299,15 @@
           "items": [
             {
               "q": "How long does installation take?",
-              "a": "We have installed a full window job in one day. Ask for the timeline on your windows at your estimate."
+              "a": "It depends on how many windows you replace. Ask for the timeline on your windows at your estimate."
             },
             {
               "q": "Who installs the windows?",
-              "a": "Our own crew puts them in. We have had a crew out the week after the windows arrived."
+              "a": "Our own crew puts them in, so you deal with one company from order to install."
             },
             {
               "q": "How long until my windows arrive?",
-              "a": "We have had windows arrive in 7 weeks on a 14-to-18-week quote. We give you a timeline at your estimate."
+              "a": "Your windows are ordered for your openings. We give you a timeline at your estimate."
             },
             {
               "q": "What if I am comparing quotes?",
@@ -371,7 +371,7 @@
             "**Attics:** fresh insulation where there was little or none",
             "**Floors and crawl spaces:** insulation under the floor and around the foundation",
             "**Exterior walls:** insulation added inside the walls",
-            "**Mobile homes:** the underside wrapped, with insulation behind the wrap"
+            "**Mobile homes:** insulation for the underside of the home"
           ],
           "image": {
             "slot": "insulation-main",
@@ -390,7 +390,7 @@
           "heading": "Old Houses, Top to Bottom",
           "body": [
             "We have built attic access into an old Kansas house that had none, so we could insulate an attic that had nothing in it. The new access is barely noticeable in the room.",
-            "On the same house we insulated below the floors, laid a vapor barrier on the ground in the crawl space and flagged every electrical junction box before the insulation went in. Then we cleaned up so the work area barely showed we had been there."
+            "On the same house we insulated below the floors, laid a vapor barrier on the ground in the crawl space and flagged every electrical junction box before the insulation went in."
           ]
         },
         {
@@ -415,8 +415,8 @@
           "type": "prose",
           "heading": "Under Mobile Homes",
           "body": [
-            "Mobile homes lose heat through the floor. We wrap the underside of the home and install insulation behind the wrap, so the cold air under the home stays out of your rooms.",
-            "We have shown up on time and finished mobile home jobs on schedule."
+            "Mobile homes lose heat through the floor. We insulate the underside of the home, so the cold air under it stays out of your rooms.",
+            "If your floors feel cold, tell us and we start there."
           ]
         },
         {
@@ -426,10 +426,10 @@
         },
         {
           "type": "prose",
-          "heading": "Cold Snaps and Summer Heat",
+          "heading": "Insulation Is Not Only a Winter Job",
           "body": [
-            "We have insulated attics and crawl spaces through a bitter Kansas cold snap and exterior walls in 100° heat, and kept working until the job was complete.",
-            "Some insulation jobs finish in a day. On longer jobs we leave your house clean at the end of every day, not only on the last one."
+            "A house that is too cold in January is often too hot in July. Call whenever your rooms are uncomfortable and we will tell you where to start.",
+            "A longer job should still feel orderly. We tell you the plan before we start, and we keep your house tidy while we work."
           ]
         },
         {
@@ -470,7 +470,7 @@
           "items": [
             {
               "q": "Do you insulate mobile homes?",
-              "a": "Yes. We wrap the underside of mobile homes and install insulation behind the wrap."
+              "a": "Yes. We insulate the underside of mobile homes."
             },
             {
               "q": "Can you insulate an attic with no way in?",
@@ -551,7 +551,7 @@
             },
             {
               "q": "Do you work on weatherization program homes?",
-              "a": "Yes. We do weatherization work under the SCKEDD Weatherization program."
+              "a": "Yes. We take weatherization work through the SCKEDD program."
             },
             {
               "q": "Do you do windows as well as insulation?",

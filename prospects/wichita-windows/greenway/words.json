@@ -251,14 +251,14 @@
           "type": "split",
           "heading": "One Window or the Whole House",
           "body": [
-            "Start with the window that bothers you most, or replace every one. We have replaced a single bathroom window, 11 windows in one house and 13 in another.",
-            "We have matched a new window to exterior trim another company put on, so it looks like it was always there."
+            "Start with the window that bothers you most, or replace every one. A small job gets the same attention as a whole house.",
+            "We set each new window so it looks like it was always there, and we work with the trim you already have."
           ],
           "list": [
-            "**One window,** matched to the trim you already have",
-            "**Two big living-room windows** set in for a wider view",
+            "**One window,** set in to look like it belongs",
+            "**A big window** set in for a wider view",
             "**Every window in the house** in one project",
-            "**A house with more than 30 windows,** quoted in about 20 minutes"
+            "**A house with many windows,** priced as one job"
           ],
           "image": {
             "slot": "windows-range",
@@ -290,7 +290,7 @@
           "heading": "Foggy, Stuck or Tired Windows",
           "body": [
             "Builder-grade windows lose their seal and fog between the panes. Older ones stick shut and let drafts in.",
-            "New windows open easily, clean easily and change the look of your house from the street. We have measured and quoted a house with more than 30 windows in about 20 minutes."
+            "New windows open easily, clean easily and change the look of your house from the street. We look at yours and give you a price."
           ],
           "image": {
             "slot": "windows-fog",
@@ -331,11 +331,11 @@
             },
             {
               "title": "Our installers arrive on time",
-              "text": "They replace your windows, and we have finished a home's new windows in one day."
+              "text": "They replace your windows and keep to the schedule we set with you."
             },
             {
               "title": "We clean up and check back",
-              "text": "We haul off the old windows and clean the yard and the rooms. We have come back the next day to seal windows."
+              "text": "We haul off the old windows and clean the yard and the rooms. If something needs a second look after the install, call us."
             }
           ]
         },
@@ -348,8 +348,8 @@
           "type": "prose",
           "heading": "Price, Warranty and Financing",
           "body": [
-            "Our window prices have come in at about half of what the big advertised companies quote, and under six other bids on one house.",
-            "When a new window cracked from a manufacturing error, we replaced it free. Ask us for the warranty terms on the windows you choose. Financing is available, subject to credit approval."
+            "We price your windows fairly and give you the number before the job starts.",
+            "If a window has a defect, we deal with it. Ask us for the warranty terms on the windows you choose. Financing is available, subject to credit approval."
           ]
         },
         {
@@ -363,7 +363,7 @@
           "items": [
             {
               "q": "How long does installation take?",
-              "a": "We have installed a home's new windows in one day. Ask us about the schedule for yours."
+              "a": "It depends on how many windows you replace. We give you the schedule at your estimate."
             },
             {
               "q": "Do you take the old windows away?",
@@ -371,7 +371,7 @@
             },
             {
               "q": "Can I replace just one window?",
-              "a": "Yes. We have replaced a single bathroom window."
+              "a": "Yes. We replace one window, a few or the whole house."
             },
             {
               "q": "What if a window is defective?",
@@ -437,9 +437,9 @@
         },
         {
           "type": "prose",
-          "heading": "Crews That Work Through the Cold",
+          "heading": "A Crew That Stays on Your House",
           "body": [
-            "We have re-sided a whole house in four days. We have also kept a crew on a house for 8 to 10 hours a day in a January cold snap.",
+            "A siding job should not drag on. Our crew works your house until the job is done.",
             "Call and ask when we can start."
           ]
         },
@@ -485,7 +485,7 @@
           "heading": "A Straight Price for Your Siding",
           "body": [
             "We price the siding your house needs as one job and hold that number. When windows go in at the same time, we plan both around the same walls.",
-            "One family had seven companies bid their whole-house re-side, and ours was the most affordable."
+            "Get other bids if you like, and compare them against ours."
           ]
         },
         {
@@ -526,7 +526,7 @@
           "items": [
             {
               "q": "How long does siding take?",
-              "a": "We have re-sided a whole house in four days. Ask us about the schedule for yours."
+              "a": "It depends on how many walls need new siding. We give you the schedule at your estimate."
             },
             {
               "q": "Can you replace just part of my siding?",

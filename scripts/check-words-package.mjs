@@ -162,13 +162,16 @@ if (reviews) {
   const stem = (w) => w.replace(/(es|s)$/, "");
   const numPairs = (ts) => { const out = []; ts.forEach((w, i) => { if (/^\d+(\.\d+)?$/.test(w) && ts[i + 1] && !STOP.has(ts[i + 1]) && !/^(year|yr)s?$|^\d+$|^[ap]m$/.test(ts[i + 1])) out.push(`${w} ${stem(ts[i + 1])}`); }); return out; };
   const grams = (ts, n = 4) => { const out = []; for (let i = 0; i + n <= ts.length; i++) { const g = ts.slice(i, i + n); if (g.filter((w) => !STOP.has(w)).length >= 3) out.push(g.join(" ")); } return out; };
+  // Numbers the business itself publishes (facts.md lines citing its own site, with no review on the line) are its offers, not review details.
+  const factsFile = path.join(dir, "facts.md");
+  const ownNums = new Set(fs.existsSync(factsFile) ? fs.readFileSync(factsFile, "utf8").split("\n").filter((l) => /https?:|\s\/[a-z0-9-]+/i.test(l) && !/review|[A-Z][a-z]+ [A-Z]\.|"\s*-\s*[A-Z]/.test(l)).flatMap((l) => numPairs(toks(l))) : []);
   const revNums = new Map(), revGrams = new Map();
   for (const r of reviews) { const ts = toks(r.text); for (const x of numPairs(ts)) revNums.set(x, r.reviewer); for (const g of grams(ts)) revGrams.set(g, r.reviewer); }
   const copyOf = (p) => [p.hero?.eyebrow, p.hero?.sub, ...(p.sections || []).filter((x) => x.type !== "review").flatMap((x) => [x.heading, x.intro, x.text, ...(x.body || []), ...(x.list || []), ...(x.items || []).flatMap((i) => [i.title, i.text, i.a])])].filter(Boolean); // FAQ questions are the visitor's words
   const strings = [...pages.flatMap((p) => copyOf(p).map((t) => [p.route, t])), ...(pkg.services || []).map((sv) => [`services[${sv.name}]`, sv.blurb]), ["footer.about", pkg.footer?.about], ...(pkg.footer?.why || []).map((w) => ["footer.why", w])].filter(([, t]) => t);
   for (const [where, t] of strings) {
     const ts = toks(t);
-    const hitN = numPairs(ts).filter((x) => revNums.has(x));
+    const hitN = numPairs(ts).filter((x) => revNums.has(x) && !ownNums.has(x));
     const hitG = grams(ts).filter((g) => revGrams.has(g));
     if (hitN.length || hitG.length) fail(`${where}: copy retells a review (${[...hitN.map((x) => `"${x}"`), ...hitG.slice(0, 2).map((g) => `"${g}"`)].join(", ")} from ${revNums.get(hitN[0]) || revGrams.get(hitG[0])}); state the benefit, let the review give the details: "${strip(t).slice(0, 80)}…"`);
   }

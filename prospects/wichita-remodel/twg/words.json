@@ -103,7 +103,7 @@
           "heading": "One Company for Everything the Hail Hit",
           "body": [
             "Hail rarely stops at the shingles. We replace the roof, then repair the siding, windows, doors and paint the storm damaged.",
-            "You call **one company, not four**. We have taken a single hail job from a new roof through new windows and fresh paint."
+            "You call **one company, not four**, and deal with one crew from the first look to the finish."
           ],
           "image": {
             "slot": "home-hail",
@@ -122,7 +122,7 @@
           "heading": "We Work With Your Insurance Company",
           "body": [
             "We help maximize insurance claims. We **work directly with your adjuster**, so you are not left explaining roof damage on your own.",
-            "We have walked homeowners through hail claims on roofs, siding and windows, and made sure the damage was counted."
+            "Hail claims can feel confusing. We walk you through yours and make sure the hail damage gets counted."
           ],
           "image": {
             "slot": "home-claims",
@@ -146,7 +146,7 @@
           "heading": "Clear Bids, Fair Prices",
           "body": [
             "You get a **bid that spells out the cost**, including how it may change as the work goes on.",
-            "We have turned bids around quickly and shown homeowners ways to save money on the project. Our work comes with a 100% Satisfaction Guarantee."
+            "We bid what the job really needs, so you are not paying for more than the job calls for. Our work comes with a 100% Satisfaction Guarantee."
           ]
         },
         {
@@ -221,8 +221,8 @@
           "type": "split",
           "heading": "A New Roof, Start to Finish",
           "body": [
-            "We remove the old roof, put on the new one and **take care of every detail**, down to the yard. We have left a yard cleaner than we found it.",
-            "We replace worn-out and storm-damaged roofs, including a hail-damaged metal roof.",
+            "We remove the old roof and put on the new one, so **you are not managing the pieces in between**.",
+            "We replace worn-out and storm-damaged roofs, shingle or metal.",
             "Our crew does the tear-off, the install and the clean-up, so the job is finished when we leave."
           ],
           "list": [
@@ -247,7 +247,7 @@
           "heading": "When Hail Ruins the Roof",
           "body": [
             "Hail cracks shingles and dents metal. We **look at the whole roof** and tell you plainly whether it needs replacing.",
-            "We have replaced a hail-damaged metal roof and handled the claim with the owner's insurance company.",
+            "If the storm damaged your roof, we handle the claim side with your insurance company too.",
             "After a storm, call as soon as you can, and we will come out and look at your roof."
           ]
         },
@@ -300,7 +300,7 @@
           "type": "prose",
           "heading": "Roofs That Hold Up",
           "body": [
-            "A new roof should **still look right years later**. We have roofed a house and, five years on, roofed the owner's rental too.",
+            "A new roof should **still look right years later**. That is the standard we work to.",
             "We stand behind our work with a 100% Satisfaction Guarantee."
           ]
         },
@@ -319,7 +319,7 @@
             },
             {
               "q": "Do you replace metal roofs?",
-              "a": "Yes. We have replaced a hail-damaged metal roof and worked with the owner's insurance company on the claim."
+              "a": "Yes. We replace metal roofs and work with your insurance company on the claim."
             },
             {
               "q": "Is the estimate free?",
@@ -373,7 +373,7 @@
           "heading": "Windows With Rot, Bad Seals or Storm Damage",
           "body": [
             "We replace windows with **rotted frames**, windows with **failed seals** and windows the hail damaged.",
-            "We have replaced a few windows in one home, single rotted windows, and windows as part of a full hail repair. One window or many, our crew does the work."
+            "One window or many, a small job gets the same care as a big one, and our crew does the work."
           ],
           "list": [
             "**Rotted windows** replaced",
@@ -397,7 +397,7 @@
           "type": "prose",
           "heading": "A Price That Makes Sense",
           "body": [
-            "Before we start, we look at what your windows really need and **show you ways to save money** on the project.",
+            "Before we start, we look at what your windows really need, so **you pay for the work the house calls for**.",
             "Your bid lists the windows we will replace and what the work costs, and we explain anything that could change it. Estimates are free."
           ]
         },
@@ -410,7 +410,7 @@
           "type": "prose",
           "heading": "We Stand Behind Our Windows",
           "body": [
-            "We have replaced two windows with failed seals for a customer **at no charge**, no questions asked.",
+            "A window should last, and **when one does not, we want to hear about it**.",
             "We stand behind our work with a 100% Satisfaction Guarantee, and we are licensed and insured general contractors."
           ]
         },
@@ -424,7 +424,7 @@
           "heading": "Hail-Damaged Windows and Your Insurance",
           "body": [
             "Hail cracks glass and dents frames. We look at every window the storm hit and **work directly with your adjuster**, so each damaged window is counted.",
-            "We help maximize insurance claims, and we have replaced hail-damaged windows as part of a larger storm repair."
+            "We help maximize insurance claims, and we handle your windows alongside the rest of the storm repair."
           ]
         },
         {
@@ -468,7 +468,7 @@
           "items": [
             {
               "q": "Can I replace only a few windows?",
-              "a": "Yes. We have replaced a few windows in a home, and single rotted windows too."
+              "a": "Yes. We replace a single window, a few windows or many."
             },
             {
               "q": "One of my windows fogs up. Can you fix that?",
