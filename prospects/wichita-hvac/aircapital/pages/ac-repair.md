@@ -78,7 +78,7 @@ If you're outside those towns, call and ask. We'll tell you whether we can get t
 ## Common Questions
 
 ### How fast can you get here?
-We offer same-day and next-day appointments. Call early in the day and tell us it's an AC that's not cooling.
+We offer same-day and next-day appointments. Call early in the day and tell us it's an AC that's not cooling. Give us your town and we'll tell you when we can be there.
 
 ### What does an AC repair cost?
 It depends on what failed: a capacitor is a small repair, a compressor is not. Call us for a free estimate and describe what the system is doing.
