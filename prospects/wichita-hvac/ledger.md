@@ -58,3 +58,19 @@ Rows 13 to 1 checked for a 4th pick: Compass leads with plumbing on a site rebui
 - Dream Makers Heating and Cooling (row 14): no H1, 43 reviews.
 - Honest HVAC (row 2): Wix, copyright year 2035, but no Google reviews yet. Skip until it has reviews.
 - Wheatland Mechanical, HVAC Service Master: commercial only, skip.
+
+## Second scout: "AC repair", Wichita (scout/ac-repair-wichita-ks/), for the 4th batch-2 pick
+Only places not already on the HVAC list, bottom-up:
+| Row | Business | Decision | Reason |
+| --- | --- | --- | --- |
+| 50 | Rolox Home Service | skip | Do-everything remodeler (windows, baths, roofs, siding, HVAC), 800 number |
+| 49 | ABR Mechanical | skip | No website, no reviews |
+| 38 | Logan's Heating and Air | unchecked | Site sits behind a bot check; could not audit. 14 reviews. Ask Josh before retrying by hand |
+| 25 | Affordable AC Repair and Furnace Repair Wichita East | skip | No reviews; site unreachable (looks like a lead-gen listing) |
+| 18 | Harris Heating & Air | skip | No website, 16 reviews |
+| 16 | Comfort Tech LLC | skip | No website |
+| 11 | O'Connor Company | too big | Established mechanical contractor |
+| 10 | Slater Heating and Cooling | too big | 37-page SEO site with city service pages |
+| 9 | Frank Wille Service | skip | 3 reviews |
+| 5 | All About Heating and Cooling | skip | 6 reviews |
+Result: no clean 4th pick in Wichita. Azteca (7 reviews) is still the only weak-site HVAC company left.
