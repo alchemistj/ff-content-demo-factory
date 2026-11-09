@@ -1,0 +1,26 @@
+{
+  "kind": "google-prospect-scout-receipt",
+  "status": "ok",
+  "slug": "lawn-care-wichita-ks",
+  "request": {
+    "query": "lawn care",
+    "location": "Wichita, KS",
+    "maxPlaces": 50
+  },
+  "trigger": "workflow_dispatch",
+  "apify": {
+    "actor": "compass~crawler-google-places",
+    "runId": "PCaYpnRZUH0LU8RLA",
+    "datasetId": "hLhbygz0FlHa8nazP",
+    "attempts": 1,
+    "usageUsd": 0.20020000000000002
+  },
+  "counts": {
+    "returned": 50,
+    "advertisements": 0
+  },
+  "detail": null,
+  "startedAt": "2026-11-09T18:41:50.899Z",
+  "finishedAt": "2026-11-09T18:42:22.109Z",
+  "githubRunUrl": "https://github.com/alchemistj/ff-content-demo-factory/actions/runs/42676260665"
+}
