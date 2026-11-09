@@ -1,3 +1,5 @@
+> Pages changed on 2026-11-09 (one service per service page). `words.json` is the current source for routes, H1s and services; this plan is kept for its reasoning.
+
 # Modern Glass Structures: plan
 
 **Company type:** Glass Company (settled). Covers shower doors, mirrors, window glass and storefronts.

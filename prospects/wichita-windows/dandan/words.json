@@ -6,6 +6,9 @@
     "city": "Wichita",
     "state": "KS",
     "companyType": "Exterior Remodeling Company",
+    "owners": [
+      "Rick"
+    ],
     "phones": [
       {
         "label": "Wichita",
@@ -51,13 +54,13 @@
       "blurb": "Large picture windows replaced so the view stays the best part of the room."
     },
     {
-      "name": "Entry, Patio and French Doors",
-      "route": "/doors-siding-wichita-ks/",
-      "blurb": "New doors that fit the opening and open and close the way they should."
+      "name": "Door Replacement",
+      "route": "/door-replacement-wichita-ks/",
+      "blurb": "Entry, patio, side and French doors, custom-made to fit your opening and installed by our crew."
     },
     {
       "name": "Vinyl Siding",
-      "route": "/doors-siding-wichita-ks/",
+      "route": null,
       "blurb": "New siding in the style you choose at our showroom."
     },
     {
@@ -81,7 +84,7 @@
       "hero": {
         "eyebrow": "Owner-run on West Kellogg",
         "h1": "Exterior Remodeling Company in Wichita, KS — Dan Dan The Window Man",
-        "sub": "Rick Timsah owns the company and works with you from estimate to install date. We replace windows and doors, put up siding and handle hail damage claims, and our crews leave the work site clean.",
+        "sub": "I'm Rick Timsah, and I own Dan Dan The Window Man. We replace windows and doors, put up siding and handle hail damage claims, and our crews leave the work site clean.",
         "primaryCta": {
           "label": "Call (316) 448-4418",
           "action": "call"
@@ -106,7 +109,7 @@
           "type": "split",
           "heading": "You Deal With the Owner",
           "body": [
-            "Rick Timsah owns Dan Dan The Window Man and works your job himself. He lays out your options straight, solves the tricky openings and keeps you posted on your install date."
+            "We're an owner-run company, and I work your job myself. I lay out your options straight, solve the tricky openings and keep you posted on your install date."
           ],
           "image": {
             "slot": "home-owner",
@@ -160,7 +163,7 @@
           "type": "prose",
           "heading": "Doors, Siding and Gutters on One Job",
           "body": [
-            "Replace your windows and doors together, or add siding and gutters to the same project, and you work with one company from estimate to cleanup. [See doors and siding.](/doors-siding-wichita-ks/)"
+            "Replace your windows and doors together, or add siding and gutters to the same project, and you work with one company from estimate to cleanup. [See door replacement.](/door-replacement-wichita-ks/)"
           ]
         },
         {
@@ -207,7 +210,7 @@
       "hero": {
         "eyebrow": "Custom-built replacement windows",
         "h1": "Window Replacement in Wichita, KS — Dan Dan The Window Man",
-        "sub": "We install custom-built replacement windows and our crew leaves the job site clean. Rick Timsah works with you himself, and the estimate is free.",
+        "sub": "We install custom-built replacement windows and our crew leaves the job site clean. You work with the owner from first visit to final cleanup, and the estimate is free.",
         "primaryCta": {
           "label": "Call (316) 448-4418",
           "action": "call"
@@ -361,14 +364,14 @@
     },
     {
       "role": "service",
-      "route": "/doors-siding-wichita-ks/",
-      "navLabel": "Doors & Siding",
-      "keyword": "door and siding installation Wichita KS",
+      "route": "/door-replacement-wichita-ks/",
+      "navLabel": "Door Replacement",
+      "keyword": "door replacement Wichita KS",
       "seo": null,
       "hero": {
-        "eyebrow": "Doors, siding and gutters",
-        "h1": "Doors & Siding in Wichita, KS — Dan Dan The Window Man",
-        "sub": "We install entry, patio and French doors and vinyl siding, and our crew cleans the work site when the job is done. Rick Timsah works with you himself, and the estimate is free.",
+        "eyebrow": "Entry, patio and French doors",
+        "h1": "Door Replacement in Wichita, KS — Dan Dan The Window Man",
+        "sub": "We replace entry, patio, side and French doors with doors made to fit your opening, and our crew cleans the work site when the job is done. The estimate is free, and you deal with the owner from start to finish.",
         "primaryCta": {
           "label": "Call (316) 448-4418",
           "action": "call"
@@ -379,11 +382,34 @@
         },
         "image": {
           "slot": "doors-hero",
-          "alt": "New entry door and fresh siding on a Wichita house",
-          "brief": "new entry door beside fresh vinyl siding on a house front, door and siding on the right, porch steps and soft sky on the left, calm background behind the text side, no readable text, no people, no tools"
+          "alt": "New sliding patio door opening onto a Wichita back patio",
+          "brief": "back patio with a new sliding patio door, door on the right, patio and soft lawn on the left, calm background behind the text side, no readable text, no people, no tools"
         }
       },
       "sections": [
+        {
+          "type": "review",
+          "quote": "The installation team was professional, efficient, and cleaned up the work site upon completion of my new patio door install.",
+          "name": "Tim D."
+        },
+        {
+          "type": "split",
+          "heading": "Entry and Side Doors",
+          "body": [
+            "Your front door gets opened and closed every day. We replace it with an entry door custom-manufactured for the opening you have, so it swings, latches and seals the way it should.",
+            "We put in side doors too, on houses and on detached garages. We have set a new garage side door and an upstairs window on the same visit."
+          ],
+          "list": [
+            "**Entry doors** for the front of your house",
+            "**Side doors** for the house or the garage"
+          ],
+          "image": {
+            "slot": "doors-entry",
+            "alt": "New entry door with sidelights on a Wichita front porch",
+            "brief": "new entry door with sidelights on a front porch, door on the right, porch posts and soft sky on the left, calm background behind the text side, no readable text, no people"
+          },
+          "imageSide": "right"
+        },
         {
           "type": "review",
           "quote": "Bill came out and did a excellent job on my garage. Put in a new side door and a new window upstairs. Looks Great very happy.",
@@ -391,14 +417,13 @@
         },
         {
           "type": "split",
-          "heading": "Entry, Patio and French Doors",
+          "heading": "Patio and French Doors",
           "body": [
-            "We install new entry, patio and French doors, custom-manufactured to fit the opening you have, so they open, close and seal the way they should.",
-            "We have replaced a patio door, a garage side door, and two doors along with three windows in one job."
+            "A patio door or a pair of French doors opens the house to your yard and lets light into the room. We install new patio and French door systems built to the size of your opening, then check the fit and clean up before we leave.",
+            "We have replaced a patio door after summer storms, and a patio door along with seven windows in one house."
           ],
           "list": [
-            "**Entry doors** for the front of your house",
-            "**Patio doors** for the back",
+            "**Patio doors** for the back of the house",
             "**French doors** for a wide, two-door opening"
           ],
           "image": {
@@ -406,18 +431,18 @@
             "alt": "Glass patio door opening onto a back deck",
             "brief": "glass patio door opening onto a wooden deck, door on the right, deck rail and soft lawn on the left, calm background behind the text side, no readable text, no people"
           },
-          "imageSide": "right"
+          "imageSide": "left"
         },
         {
           "type": "review",
-          "quote": "The installation team was professional, efficient, and cleaned up the work site upon completion of my new patio door install.",
-          "name": "Tim D."
+          "quote": "Rick was great to work with. The installation team was easy to work with and they did an excellent job.",
+          "name": "John B."
         },
         {
           "type": "prose",
           "heading": "Doors and Windows on One Job",
           "body": [
-            "Replace your doors and windows together and you deal with one company, one estimate and one crew. [See our window work.](/window-replacement-wichita-ks/)"
+            "Replace your doors and windows together and you deal with one company, one estimate and one crew. We have replaced two doors and three windows in a single job, and every window and door in a 75-year-old house on another. [See our window replacement work.](/window-replacement-wichita-ks/)"
           ]
         },
         {
@@ -426,99 +451,79 @@
           "name": "Trevelyn G."
         },
         {
-          "type": "split",
-          "heading": "Vinyl Siding in the Style You Choose",
-          "body": [
-            "Pick your siding in person at our showroom on West Kellogg, with the colors and styles in front of you. We install vinyl siding from the Carolina Sands, Crane Board, Parkview, Market Square, Portsmouth, Premium Pointe and Diamond Kote lines.",
-            "We have re-sided a detached garage and replaced its old window and rotted trim in three days."
-          ],
-          "image": {
-            "slot": "siding-hero",
-            "alt": "Vinyl siding on a detached garage with a new window",
-            "brief": "detached garage with new vinyl siding and a new window, garage on the right, driveway and soft sky on the left, calm background behind the text side, no readable text, no people, no tools"
-          },
-          "imageSide": "left"
-        },
-        {
-          "type": "review",
-          "quote": "Very respectful and tidy throughout the 3 days of work. … They swiftly removed the old window & rotted trim, cleaning up every step of the way.",
-          "name": "Joni M."
-        },
-        {
           "type": "steps",
-          "heading": "How Your Door or Siding Job Goes",
+          "heading": "How Your Door Job Goes",
           "items": [
             {
               "title": "We measure and quote",
-              "text": "We come out, look at the doors or walls you want replaced and give you a price. It's free."
+              "text": "We come out, measure the opening and go over your door options. The estimate is free."
             },
             {
-              "title": "You pick the look",
-              "text": "Choose your door or siding at our showroom, with the colors and styles in front of you."
+              "title": "You choose your door",
+              "text": "Pick your door at our showroom on West Kellogg, with the styles in front of you. We order it built for your opening."
             },
             {
-              "title": "Our crew does the work",
-              "text": "Our own crew installs your new door or siding and cleans up the site when it's done."
+              "title": "We set your date",
+              "text": "We give you a delivery date when you order and keep you posted on the schedule."
+            },
+            {
+              "title": "Install day",
+              "text": "Our crew takes out the old door, sets the new one, checks that it opens and closes right and cleans up the work site."
             }
           ]
         },
         {
-          "type": "prose",
-          "heading": "Gutters and Downspouts",
-          "body": [
-            "We install new guttering and downspouts, and repair the guttering you have, alongside your siding or windows."
-          ]
-        },
-        {
           "type": "review",
-          "quote": "They have now completed 4 projects for us, 2 at our residence (picture window and repair guttering) and 2 at a rental (window replacement and guttering).",
-          "name": "Dean S."
+          "quote": "Great customer service, people that come out to measure was a pleasure to meet. Great pricing... VERY WORTH IT!",
+          "name": "Debbie S."
         },
         {
           "type": "prose",
           "heading": "Price and Financing",
           "body": [
-            "Estimates for doors and siding are free. Synchrony Bank financing gives you 18 months with no monthly interest when you pay in full."
+            "Door estimates are free, and our prices are competitive. Synchrony Bank financing gives you 18 months with no monthly interest when you pay in full.",
+            "We take personal checks, American Express, Discover, MasterCard and Visa."
           ]
         },
         {
+          "type": "review",
+          "quote": "Rick was great to work with, making the process easy. His installers came out and did A+ level installs very quickly!",
+          "name": "Stephen H."
+        },
+        {
           "type": "faq",
-          "heading": "Door and Siding Questions",
+          "heading": "Door Replacement Questions",
           "items": [
             {
               "q": "Do you install the doors yourselves?",
-              "a": "Yes. Our own crew installs your new door."
+              "a": "Yes. Our own crew takes out your old door and installs the new one."
             },
             {
-              "q": "Can I do doors, windows and siding together?",
-              "a": "Yes. We have replaced windows and doors in one job and added siding and gutters on another."
+              "q": "Will the new door fit my opening?",
+              "a": "Yes. Each door is custom-manufactured for the opening you have."
+            },
+            {
+              "q": "Can you replace a door on a garage?",
+              "a": "Yes. We have put in a new side door on a detached garage."
+            },
+            {
+              "q": "Can I replace doors and windows together?",
+              "a": "Yes. One estimate and one crew cover both."
             },
             {
               "q": "Is there a warranty?",
               "a": "Our warranty covers our installation. Ask us for the details at your estimate."
             },
             {
-              "q": "Can you do siding on a garage?",
-              "a": "Yes. We have replaced the siding on a detached garage along with its old window."
-            },
-            {
-              "q": "Can I choose my colors and styles?",
-              "a": "Yes. You pick them at our showroom on West Kellogg."
-            },
-            {
-              "q": "Where is your showroom?",
-              "a": "At 6810 W Kellogg Dr in Wichita, where you can see colors and styles in person."
-            },
-            {
-              "q": "Do you do roofing too?",
-              "a": "Yes. We work with your insurance adjuster on hail damage, and our roofing line is (833) 972-7663."
+              "q": "Where can I see door styles?",
+              "a": "At our showroom, 6810 W Kellogg Dr in Wichita."
             }
           ]
         },
         {
           "type": "callBand",
-          "heading": "Get Your Door or Siding Estimate",
-          "text": "Call (316) 448-4418 to set up your free estimate, then choose your door or siding at our showroom at 6810 W Kellogg Dr."
+          "heading": "Get Your Door Estimate",
+          "text": "Call (316) 448-4418 to set up your free estimate, then choose your door at our showroom at 6810 W Kellogg Dr."
         }
       ]
     },
@@ -531,7 +536,7 @@
       "hero": {
         "eyebrow": "Contact",
         "h1": "Contact Dan Dan The Window Man",
-        "sub": "Call (316) 448-4418 to talk with Rick's team about windows, doors or siding. The estimate is free.",
+        "sub": "Call (316) 448-4418 to talk with us about windows, doors or siding. The estimate is free.",
         "primaryCta": {
           "label": "Call (316) 448-4418",
           "action": "call"
@@ -597,9 +602,9 @@
     }
   ],
   "footer": {
-    "about": "Dan Dan The Window Man is an owner-run exterior remodeling company on West Kellogg Drive in Wichita. We replace windows and doors, install vinyl siding and gutters, and handle hail damage claims.",
+    "about": "We're Dan Dan The Window Man, an owner-run exterior remodeling company on West Kellogg Drive in Wichita. We replace windows and doors, install vinyl siding and gutters, and handle hail damage claims.",
     "why": [
-      "Owner Rick Timsah works with you himself",
+      "You work with the owner, Rick Timsah",
       "Free estimates on windows, doors and siding",
       "Warranty on our installation",
       "Financing through Synchrony Bank"
@@ -608,8 +613,8 @@
   "strategy": {
     "whyHeading": "Why we built this site",
     "why": [
-      "Your customers say it plainly: Rick is \"straightforward\" with \"zero upselling or pressure,\" the installers \"left the job site clean,\" and the price is fair. You hold a 4.7 on 44 Google reviews.",
-      "Your site shows none of it. On a phone your number sits past the edge of the screen, the top of the homepage splits between windows and hail roofing, and Rick is never named.",
+      "Your customers say it plainly: you're \"straightforward\" with \"zero upselling or pressure,\" the installers \"left the job site clean,\" and the price is fair. You hold a 4.7 on 44 Google reviews.",
+      "Your site shows none of it. On a phone your number sits past the edge of the screen, the top of the homepage splits between windows and hail roofing, and you're never named.",
       "So we rebuilt it around an owner who answers straight and a crew that leaves the house clean."
     ],
     "cardsHeading": "Be the Exterior Company People Find on Google",
@@ -622,12 +627,12 @@
         "problems": [
           "On a phone the page is twice as wide as the screen. Your number and half your menu sit past the edge, so callers scroll sideways to find you.",
           "The top of the page is three headlines: windows, hail roofing claims, and Wichita. Google can't tell whether you're a window company or a roofer.",
-          "\"Here's what our customers are saying...\" has nothing under it and Rick is never named, so visitors miss the praise that wins you jobs."
+          "\"Here's what our customers are saying...\" has nothing under it and you're never named, so visitors miss the praise that wins you jobs."
         ],
         "fixes": [
           "Your number one tap away, with the whole menu on screen.",
           "A headline that says exterior remodeling company in Wichita, KS.",
-          "Rick named as owner, with a real review beside each point."
+          "You introduced as the owner, in your own voice, with a real review beside each point."
         ],
         "alsoAdd": "Every page set up behind the scenes so Google and AI tools like ChatGPT know exactly what you do, where you work, and what your customers say."
       },
@@ -645,15 +650,16 @@
         "alsoAdd": "Pages planned from what Google actually shows for each search, so every page targets something people really look for."
       },
       {
-        "route": "/doors-siding-wichita-ks/",
-        "title": "Doors & Siding",
-        "why": "Door jobs come up in six of your reviews, and your site gives doors and siding a few lines.",
+        "route": "/door-replacement-wichita-ks/",
+        "title": "Door Replacement",
+        "why": "Door jobs come up in six of your reviews, and your Doors page is two short paragraphs.",
         "problems": [
-          "The Doors page is two short paragraphs with no reviews.",
-          "The Siding page lists eight product names with nothing under any of them, so a visitor can't tell what they'd get."
+          "The Doors page has no reviews and nothing on how a door job goes.",
+          "Doors share a page with siding, so neither one ranks on its own."
         ],
         "fixes": [
-          "One full page for doors and siding in Wichita, with reviews from door, siding and gutter jobs."
+          "One full page for door replacement in Wichita, KS, with reviews from your door jobs.",
+          "Siding and gutters stay as service cards for now."
         ],
         "alsoAdd": "A check of what your competitors offer, so services you didn't think to mention still get their own pages."
       },
@@ -713,7 +719,7 @@
     "Licenses and certifications to verify, with numbers: Kansas lead-based renovator (KDHE), Class B building contractor, Kansas licensed roofer, and Owens Corning. Is the company insured? None of it appears on the demo.",
     "Years in business: the earliest Google review is 2018 and Rick's reply to a 2025 review says over 12 years. What founding year can we use?",
     "Full list of services to confirm: gutters, basement and picture windows, roofing and hail claims, metal buildings, Smart Lap and concrete siding, aluminum window and door wraps, garage doors, storm doors, window repair.",
-    "Do they want roofing and hail damage claims on the new site, and should the (833) 972-ROOF number show? The demo shows it as the roofing line on the homepage, doors and siding page and contact page.",
+    "Do they want roofing and hail damage claims on the new site, and should the (833) 972-ROOF number show? The demo shows it as the roofing line on the homepage and contact page.",
     "Service area: which towns beyond Wichita should be named? The old site says only the Wichita metro area. Hillsboro appears in one review.",
     "Electronic payments: one reviewer asked for them. The old site lists checks, Amex, Discover, MasterCard and Visa. Can they take payment by link or online?",
     "Do they want to keep the Synchrony Bank financing offer (no monthly interest if paid in full within 18 months) exactly as worded?",

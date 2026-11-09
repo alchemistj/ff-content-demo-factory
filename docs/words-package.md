@@ -16,6 +16,7 @@ Check it with `node scripts/check-words-package.mjs prospects/<market>/<slug>`. 
     "slug": "evolve",
     "city": "Wichita", "state": "KS",
     "companyType": "Exterior Remodeling Company",        // the homepage keyword: company type, never a service
+    "owners": ["Colton", "Riley"],                       // first names; the checker flags third-person owner sentences
     "phones": [                                          // every office's number; first is the main one (matches Google)
       { "label": "Wichita", "display": "(316) 435-8009", "tel": "+13164358009" },
       { "label": "Oklahoma City", "display": "(405) 363-2294", "tel": "+14053632294" }

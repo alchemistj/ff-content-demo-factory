@@ -68,6 +68,12 @@ if (home) {
   if (otherCities.length) fail(`home H1 names a second city: ${otherCities.join(", ")}`);
 }
 for (const p of roles("service")) if (norm(p.hero?.h1).toLowerCase().includes(ct)) fail(`${p.route}: service H1 repeats the homepage keyword "${b.companyType}"`);
+for (const p of roles("service")) {
+  const head = norm(p.hero?.h1).split(/ in [A-Z]/)[0];
+  if (/ & | and |, /.test(head)) fail(`${p.route}: one service per service page; "${head}" combines services`);
+}
+const svcRoutes = new Map();
+for (const s of pkg.services || []) if (s.route) { if (svcRoutes.has(s.route)) fail(`services "${svcRoutes.get(s.route)}" and "${s.name}" both link to ${s.route}`); svcRoutes.set(s.route, s.name); }
 const kw = new Map();
 for (const p of pages) { const k = norm(p.keyword).toLowerCase(); if (kw.has(k)) fail(`${p.route} and ${kw.get(k)} share keyword "${p.keyword}"`); kw.set(k, p.route); }
 
@@ -80,6 +86,7 @@ const voiceBad = [
   [/\bhomeowners (tell|say)\b/i, "homeowners-tell-us sentence"],
   [/(^|[.!?]\s)(The crew|Crews|The installers|They) (shows?|cover|set|take|come|arrive|clean|haul|have)\b/, "third-person crew narration (use our crew / we)"],
   [/professional website|mobile[- ]friendly experience|this (mockup|demo)|website experience/i, "website-quality claim"],
+  ...(pkg.business?.owners || []).map((o) => [new RegExp(`\\b${o}( and [A-Z][a-z]+)? (own|owns|stay|stays|quote|quotes|check|checks|run|runs|lead|leads)\\b`), `third-person owner sentence about ${o} (owners speak as "we")`]),
 ];
 function pageTexts(p) {
   const t = [p.hero?.eyebrow, p.hero?.h1, p.hero?.sub, p.hero?.primaryCta?.label, p.hero?.secondaryCta?.label];

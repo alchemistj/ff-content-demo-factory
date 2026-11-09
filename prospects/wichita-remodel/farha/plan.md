@@ -1,3 +1,5 @@
+> Pages changed on 2026-11-09 (one service per service page). `words.json` is the current source for routes, H1s and services; this plan is kept for its reasoning.
+
 # Farha HomeTrends: plan
 
 **Company type:** Home Remodeling Company (settled). Broad enough for bathrooms, kitchens, living spaces, outdoor work, additions and cabinetry.
