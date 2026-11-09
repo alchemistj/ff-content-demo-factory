@@ -1,61 +1,45 @@
-# Plan: Epic Heating & Cooling (Wichita, KS)
+# Plan: Epic Heating & Cooling (Wichita, KS) — writer brief v2
 
-Sources: `facts.md`, `audit.md`, `reviews.json` in this folder. Only those facts.
+Sources: `facts.md`, `reviews.json`, `audit.md`. Only those.
 
-## Company type and homepage H1
-- Company type: **HVAC Company** (HVAC only; residential and commercial per the site).
-- Homepage H1: **HVAC Company in Wichita, KS — Epic Heating & Cooling**
-- Homepage keyword: `hvac company wichita ks`
+## Company type, H1s, keywords
+| Page | H1 | Keyword |
+| --- | --- | --- |
+| Home | HVAC Company in Wichita, KS — Epic Heating & Cooling | hvac company wichita ks |
+| AC Repair | AC Repair in Wichita, KS — Epic Heating & Cooling | ac repair wichita ks |
+| Furnace Repair | Furnace Repair in Wichita, KS — Epic Heating & Cooling | furnace repair wichita ks |
+| Contact | Contact Epic Heating & Cooling | (contact) |
 
-## Pages
-| Page | Route | H1 | Keyword |
-| --- | --- | --- | --- |
-| Home | `/home/` | HVAC Company in Wichita, KS — Epic Heating & Cooling | hvac company wichita ks |
-| Service 1 | `/ac-repair-wichita-ks/` | AC Repair in Wichita, KS — Epic Heating & Cooling | ac repair wichita ks |
-| Service 2 | `/furnace-repair-wichita-ks/` | Furnace Repair in Wichita, KS — Epic Heating & Cooling | furnace repair wichita ks |
-| Contact | `/contact/` | Contact Epic Heating & Cooling | (contact) |
+Cannibalization: the homepage owns "HVAC company"; the service pages own one repair keyword each. Pass.
 
-Cannibalization test: homepage owns "HVAC company"; service H1s don't use it; AC repair and furnace repair are distinct, year-round money calls. Pass. Geothermal and water-source heat pumps are a real specialty; put them in the services list and the homepage, and name a geothermal page as something a full build adds (FULL_BUILD_LINES.md wording only).
+## Carried-over decisions
+- Phone (316) 633-8097, email justin@epichvac.net, hours Monday to Friday 8:00 AM to 5:00 PM, area "Wichita and surrounding areas" (Haysville named in a review). No street address on pages.
+- Top buttons line everywhere: `**Buttons:** Call (316) 633-8097 | Request Service` (free estimates not confirmed).
+- Services (11): AC repair; furnace repair; AC and furnace replacement (high-efficiency); geothermal and water-source heat pumps; mini splits; preventive maintenance (no plan terms); Nexia smart WiFi thermostats; bathroom ventilation; custom sheet metal and ductwork (own fab shop); new construction (residential); commercial (rooftop units).
+- Never call Justin or Preston the owner. Preston since 1999 and Justin since 2000, and Epic in Wichita since 2012: each once per page, at most.
+- Do NOT use: 24/7, Bosch dealer, financing, licence or insurance claims, free estimates, maintenance plan terms or prices, any LLC or Benton address, response-time promises. Quote five-star reviews only; never allude to the negative ones.
 
-Where the reviews fit (five-star only, word for word, First L., each once):
-- AC repair: Ruth O. (Memorial Day weekend AC), Jeff W. (Karlee called, Will out 30 minutes later), Tyler N. (didn't up-sell, fixed the problem), Molly B. (cleaned it, made sure all was well), Luqueeda P. (explained things).
-- Furnace repair: Pearl A. (furnace replaced within two days), heating repair reviews in `reviews.json`, Chad S. (not pushy, realistic), Cathie M. (Preston and Will, Haysville).
-- Home: Jane V. (great service from Justin and all employees), Jacob B. (Justin running Epic) only if it reads well, Theresa F. (Preston and Aaron), Zach T. (clean-up), Mitchel D. (best deal in Wichita, on time), Chris A. (four rooftop units, River City Brewing Co.) as commercial proof, Jennifer D. or Kenneth B. (Justin explained the process).
+## The idea
+When the heat or air quits, you need someone who tells you what is actually wrong and fixes that, not a bigger system than you need. The reviews keep saying the same three things: they come out fast, they explain it, and they don't up-sell.
 
-## Full confirmed services list (`services[]`)
-1. AC Repair → `/ac-repair-wichita-ks/` (all makes and models)
-2. Furnace Repair → `/furnace-repair-wichita-ks/`
-3. AC and Furnace Replacement (full system installation; high-efficiency systems)
-4. Geothermal and Water-Source Heat Pumps (repair and replacement)
-5. Mini Split Systems (repair and replacement; listed with water source on the services page)
-6. Preventive Maintenance (seasonal maintenance; no plan details confirmed, so no plan terms)
-7. Smart WiFi Thermostats (Nexia)
-8. Bathroom Ventilation
-9. Custom Sheet Metal and Ductwork (own fab shop)
-10. New Construction HVAC (residential)
-11. Commercial HVAC (rooftop units; one review)
+## Homepage sections (moment / reason / what we do / proof)
+1. Top: a dead system and a phone call. Epic does residential and commercial HVAC. Proof: Jeff W. (called at 1:00, tech out in 2 hours, running by 5:30).
+2. "We Tell You What's Wrong": quoted for a repair that turns into a replacement. Explain, then decide. Proof: Tyler N. (didn't up-sell).
+3. AC Repair: house warm, unit running. Reason: failed part vs. worn-out unit. All makes and models. Link. Proof: Molly B. is on the service page; home uses Tyler N.
+4. Furnace Repair: cold house, no heat. Link. Proof: Kelsey A. (heater out overnight, here in 15 minutes).
+5. Replacement: repair after repair on an old system. High-efficiency. Proof: Theresa F. (furnace and AC, Justin Monday, install Tuesday).
+6. Geothermal, water-source heat pumps, mini splits: repair and replacement; a specialty. No proof quote (none in reviews).
+7. Maintenance, thermostats, ventilation, sheet metal shop, new construction: short list.
+8. Commercial: rooftop units. Proof: Chris A. (four rooftop units).
+9. Area and hours, questions, final call.
 
-Confirmed copy claims: since 2012 (site states it); Preston in HVAC since 1999 and Justin since 2000 (site); "Licensed Master Mechanical technicians" is a site claim without a number — **leave it out** (licensing is on the call list); 100% satisfaction guarantee (site); residential and commercial.
+Questions answered: do you work on any brand (AC: all makes and models); repair or replace; homes and businesses; what hours; new construction; what is the guarantee (100% satisfaction, site claim).
 
-Do NOT use: "24/7" (conflicts with posted hours; on the call list), Bosch dealer (unverified per rule), financing (link broken; on the call list), maintenance plan terms or prices, free estimates, owner title for Justin or Preston, the Benton LLC address.
+## AC repair page
+Moment: warm air, unit never stops, house won't cool in July. Reason: capacitor, low refrigerant from a leak, dirty coil, frozen evaporator, thermostat (general trade knowledge). What we do: diagnose, explain, fix; replacement only when the unit is done. Proof: Kenneth E. (top), Molly B. (explained, cleaned, back in 2 hours), Tyler N. (no up-sell), Ruth O. (repair turned into replacement within days). Questions: what to check first, repair vs replace, what to tell us on the phone.
 
-## Offices and numbers
-- Office: 339 N West St, Wichita, KS 67203 (Google). Birdeye shows 224 N Pennsylvania Ave (unclaimed, unverified). Address: `null` on the page until confirmed; use "Wichita, KS" in copy.
-- Number: (316) 633-8097, `tel:+13166338097`. It matches Google.
-- Email: justin@epichvac.net.
-- Hours: "Monday to Friday, 8:00 AM to 5:00 PM".
-- Service area: "Wichita and surrounding areas"; towns: Wichita, Haysville (review).
+## Furnace repair page
+Moment: cold house, no heat, a noise or smell. Reason: igniter, flame sensor, blower, filter, thermostat (general). What we do: fix the part; tell you straight when the furnace is near the end. Proof: Cathie M. (top, cold snowy night), Seth B. (explained what was wrong), Chad S. (realistic about age), Pearl A. (furnace replaced within two days). Questions: what to check first, repair vs replace, when to call.
 
-## People
-- Justin and Preston, by their site-stated experience ("Preston has been in the HVAC industry since 1999, and Justin since 2000"), may be named in body copy as the people with that experience. Don't call either the owner. Other staff names appear only inside quotes.
-
-## What the strategy page argues (costliest first)
-1. **The top of your homepage says "Comfort Solutions Simplified."** No "HVAC", no "Wichita". Google and a hurried homeowner can't tell what you do or where. Your demo's homepage says HVAC company in Wichita, KS, right at the top.
-2. **Your financing button opens a page that doesn't load.** Both "Financing" and "Get Financed" open Synchrony in a new tab: "Access Denied" in our browser, and a "page not found" naming "Epic heatingcooling" in a second check. Say we couldn't open it, not that it's broken for everyone.
-3. **AC repair and furnace repair have no page of their own.** All your services share one page, a heading and a paragraph each.
-4. **Your maintenance-plans page talks about replacing an AC.** Visitors who click "maintenance plans" get a replacement pitch and no plan.
-5. **Your reviews say what your site doesn't:** same-day help (Jeff W.), no up-selling (Tyler N.), clean work (Zach T.).
-6. Report card (cosmetic and trust): "24/7" next to Monday-to-Friday hours; no street address on the site; typo on the services page ("We offer for residential new construction"); unfinished sentence on the maintenance page.
-
-## Onboarding questions (carry into `onboardingQuestions`)
-Owner (Justin or Preston) and full name; legal entity and the "since 2012" date; current address (West St or Pennsylvania Ave); financing link and merchant ID; Bosch and other dealer status with proof; licence numbers and insurance; written warranty terms; real 24/7 line and Saturday hours; maintenance plan contents and price; commercial share; towns served; free estimates.
+## Contact page
+Call is the fastest path; Request Service for non-urgent. What to have ready. Hours, area, email. No response-time promises. No reviews.

@@ -1,59 +1,54 @@
-# Plan: Cook's Heating and Cooling (Wichita, KS)
+# Plan (v2): Cook's Heating and Cooling, Wichita KS
 
-Sources: `facts.md`, `audit.md`, `reviews.json` in this folder. Only those facts.
+Sources: `facts.md`, `reviews.json`, `audit.md`. Only those. Carried over from the research round: H1s, phone, confirmed services, "Do NOT use" list.
 
-## Company type and homepage H1
-- Company type: **HVAC Company** (heating and cooling only; residential and commercial per the About page).
-- Business name on pages: **Cook's Heating and Cooling** (Google, site title).
-- Homepage H1: **HVAC Company in Wichita, KS — Cook's Heating and Cooling**
-- Homepage keyword: `hvac company wichita ks`
+## Company type, H1s, keywords
+| Page | H1 | Owns |
+| --- | --- | --- |
+| Home | HVAC Company in Wichita, KS — Cook's Heating and Cooling | hvac company wichita ks |
+| `pages/ac-repair.md` | AC Repair in Wichita, KS — Cook's Heating and Cooling | ac repair wichita ks |
+| `pages/furnace-repair.md` | Furnace Repair in Wichita, KS — Cook's Heating and Cooling | furnace repair wichita ks |
+| `pages/contact.md` | Contact Cook's Heating and Cooling | (contact) |
 
-## Pages
-| Page | Route | H1 | Keyword |
-| --- | --- | --- | --- |
-| Home | `/home/` | HVAC Company in Wichita, KS — Cook's Heating and Cooling | hvac company wichita ks |
-| Service 1 | `/ac-repair-wichita-ks/` | AC Repair in Wichita, KS — Cook's Heating and Cooling | ac repair wichita ks |
-| Service 2 | `/furnace-repair-wichita-ks/` | Furnace Repair in Wichita, KS — Cook's Heating and Cooling | furnace repair wichita ks |
-| Contact | `/contact/` | Contact Cook's Heating and Cooling | (contact) |
+Cannibalization: homepage owns "HVAC company"; service pages never use it in H1. AC repair and furnace repair are the two urgent, year-round calls and are distinct.
 
-Cannibalization test: homepage owns "HVAC company"; service H1s don't use it; AC repair and furnace repair are distinct year-round money calls, and the site already groups repair under each. Pass. (Their current service pages pair installation with repair; the demo splits repair out because that's the urgent call.)
+Top buttons on every page: `**Buttons:** Call (316) 945-2665 | Request Service` (free estimates are not confirmed).
 
-Where the reviews fit (five-star only, word for word, First L., each once):
-- AC repair: Tom V. (Shannon and Jose, outside AC unit), Vicki V. (technician that afternoon, Ricky), James B. (Brad fixed my ac), Lupe N. (clean, knew his job), Matthew L. (on time).
-- Furnace repair: Carolyn R. (Don had the part, before the cold snap), Charlotte C. (honest, you can trust them), LaVona B. (saved me thousands), Diana N. (Charlie, knowledgeable) and other heating reviews in `reviews.json`.
-- Home: John E. (many years, two homes), Sandra S. (35 years), Christy R. (new heater and AC, price), Joshua M. (installation guys), Sean S. (Glenn, Tyler, Rosa in the office), Ted H. (Ricky, prompt).
+## The idea
+When the air or the heat quits, the call that matters is the one that gets a technician out who finds the real problem and tells you straight what it needs. Reviews: fast, on time, explains it, honest ("saved me thousands"), and customers who stay for decades.
 
-## Full confirmed services list (`services[]`)
-1. AC Repair → `/ac-repair-wichita-ks/` (troubleshooting, Freon leak detection)
-2. Furnace Repair → `/furnace-repair-wichita-ks/` (troubleshooting and diagnosis)
-3. Air Conditioner Installation (equipment to fit your budget)
-4. Furnace Installation (furnaces, unit heaters, electric air handlers)
-5. Annual Maintenance Agreements (residential and commercial)
-6. Air Quality: filters, whole-system filtration that the site says removes up to 90% of air contaminants, humidifiers (leave the filtration brand name out; the site spells it "ULTRVATION")
-7. Carbon Monoxide Detection
-8. Commercial HVAC and Mechanical Design
-9. Custom Sheet Metal (in-house fabrication shop)
+## Fixed limits
+- Owner unknown: never named. Staff names only inside quotes.
+- No dealer status or "top brands", licence, founding year, financing, warranty, free-estimate, "second generation" or "35 years" claims. No filtration brand name.
+- Rating is 4.0 with real one-star reviews: quote five-star only, never allude to the negatives.
+- Confirmed and usable: all brands serviced; EPA registered and certified (AC); Freon leak detection; troubleshooting and diagnosis; installs (AC, furnaces, unit heaters, electric air handlers); Premium maintenance plan (2 servicings a year, priority emergency service within 24 hours, 20% off parts and labor, 1-, 5- or 10-year terms); filters, whole-system filtration (up to 90% of contaminants), humidifiers; carbon monoxide detection; commercial and mechanical design; in-house sheet metal shop; Mon-Fri 8-5, emergency service 5-10 PM; 2215 S West St, Wichita 67213; fax left out.
 
-Confirmed copy claims: service all brands ("Our service department is equipped to service and maintain all brands"); EPA registered and certified (AC page); emergency service 5 PM to 10 PM on weekdays; Premium maintenance plan with two servicings a year, priority emergency service within 24 hours and 20% off parts and labor, on 1-, 5- or 10-year terms; second-generation family business (About page).
+## Home
+1. **Top**: the moment (AC out in July, no heat in January), who we are, call. Proof: Vicki V., "Got a technician here that afternoon, on time...".
+2. **We find the problem and say it straight**: a failed part vs a failed system; we diagnose before we sell. Proof: LaVona B., "They saved me thousands...".
+3. **AC repair** (link): warm air, short cycling, ice, leaks, Freon leak detection, EPA certified. Review sits on the AC page.
+4. **Furnace repair** (link): no heat, cycling, noises, ignitor/wiring causes; reviews on the furnace page.
+5. **New systems**: when repair stops making sense; equipment to fit a budget. Proof: Christy R., "The price couldn't be beat...".
+6. **Maintenance agreements**: Premium plan terms. Reason: most breakdowns start on the hottest or coldest day for a system nobody looked at.
+7. **Air quality and CO detection**.
+8. **Commercial and sheet metal**.
+9. **Customers for decades**: John E., "many, many years... two homes"; Sean S. naming office and techs.
+10. **Hours, emergency, area**. 11. **Questions**. 12. Call.
 
-Do NOT use: dealer status or "top brands" lines for Trane, Goodman or Carrier (locators don't list Cook's; on the call list); licensed/insured; founding year or "since"; free estimates; financing; warranty terms; KCAA; owner name; "35 years" as a company claim (it's one customer's history, OK inside Sandra S.'s quote).
+## AC Repair
+Moment: house won't cool, 95 degrees out. Why: low refrigerant (a leak, not "needs a top-off"), dirty coil, failed capacitor, frozen coil. What we do: troubleshooting, Freon leak detection, EPA certified, all brands. Proof: Tom V. (repairs on outside unit, explained everything), Lupe N. (clean, knew his job), Matthew L. (on time, found ductwork fine), James B. (Brad fixed my ac). Questions: what to do before calling; repair or replace; do you service my brand; after hours.
 
-## Offices and numbers
-- Office: 2215 S West St, Wichita, KS 67213 (site and Google match). Show it.
-- Phone: (316) 945-2665, `tel:+13169452665`. It matches Google. Fax 316-945-7944 is not a phone line; leave it out of `phones`.
-- Email: service@cookshvac.com exists only in a hidden HTML comment. Use `null` and put it on the call list.
-- Hours: "Monday to Friday, 8:00 AM to 5:00 PM; emergency service 5:00 PM to 10:00 PM".
-- Service area: "Wichita and surrounding towns"; towns: Wichita, Belle Plaine (review).
+## Furnace Repair
+Moment: cold house, furnace running but no heat or won't start. Why: ignitor, wiring, filter airflow, thermostat. What we do: troubleshooting and diagnosis, carbon monoxide detection, furnaces, unit heaters, electric air handlers. Proof: Ted H. (Ricky, wiring issue, 20 minutes), Carolyn R. (Don had the part), Charlotte C. (honest), John H. (Derek explained furnace). Questions: furnace smell/CO, repair or replace, brand, after hours.
 
-## People
-- Owner unknown; never name one. Staff names (Shannon, Jose, Ricky, Charlie, Don, Glenn, Tyler, Rosa, Wayne Rau, Gerry) appear only inside quotes.
+## Contact
+Call first, form second. What to have ready. Hours, emergency window, address, area. One review (Carolyn R. is on furnace; use Diana N. or none).
 
-## What the strategy page argues (costliest first)
-1. **The top of your homepage has no headline at all.** The only headline is your logo, with no text behind it, and the browser tab says "Home - Cook's Heating and Cooling". Nothing tells Google or a homeowner you're an HVAC company in Wichita. The demo says it right at the top.
-2. **Your number can't be tapped at the bottom of any page.** The top bar works; the footer phone is plain text. Someone who reads to the end has to type it in.
-3. **Your repair pages bury the urgent call.** AC and heating each have a page, but they pair installation with repair and carry no reviews. The demo gives AC repair and furnace repair their own pages with customers' words beside each claim.
-4. **None of your customers' words are on your site.** Reviewers name your techs and say "honest", "fast response", "saved me thousands"; your site shows none of it.
-5. Report card: copyright 2016; email address hidden in the page code, so visitors see no email; contact form with no spam protection; hidden "Site Desc" template text; brand claims ("top brands … Trane, Goodman and Carrier") that the Trane and Carrier dealer finders don't back up. Phrase the last one gently: "we couldn't confirm it on the manufacturers' dealer finders; let's confirm it so it can go on your site."
-
-## Onboarding questions (carry into `onboardingQuestions`)
-Owner and the second-generation family (vs the 2008 buy-out a 2009 review mentions); founding year; dealer agreements for Trane, Carrier, Goodman; licence and insurance; Saturday or after-10 PM service; maintenance plan prices; commercial share; email address to show; KCAA logo meaning; free estimates, financing, warranty terms; recent reviews about repeat visits and unreturned quotes.
+## Visitor questions and real answers
+- Do you service my brand? Yes, all brands (site).
+- Open nights? Emergency service 5-10 PM; office Mon-Fri 8-5; no weekend hours confirmed, so none stated.
+- Repair or replace? Trade knowledge plus LaVona B.
+- Maintenance? Premium plan terms. Price not confirmed, so not stated.
+- Where do you work? Wichita and surrounding towns; office 2215 S West St.
+- Homes or businesses? Both (About page).
+Not answered because unsupported: free estimates, diagnostic fees, financing, warranty, licence, response-time promises.
