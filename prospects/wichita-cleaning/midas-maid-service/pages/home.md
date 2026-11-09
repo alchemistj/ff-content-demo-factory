@@ -15,15 +15,17 @@ You're letting someone into your home while you're at work, at practice or at th
 
 What you want is not a perfect first clean. Almost anyone can manage one. You want the fifth clean, the fortieth, the one after a new person joins the crew, to look like the first.
 
-That's the only way hiring a cleaner gives you time back. The day you find yourself checking the bathroom or wondering who is coming, you're doing the cleaning's mental work again.
+That's the only way hiring a cleaner gives you time back. The day you find yourself checking the bathroom, re-confirming the day or wondering who is coming, you're doing the cleaning's mental work again.
+
+That low-level worry wears people out on a cleaning service faster than a streaky floor does.
 
 ## Why Families Stay for Years
 
-I started Mida's Maid Service after eight years as a teacher, right here in Wichita. A schoolroom taught me that a routine only works when it holds on the hard days, not just the easy ones.
+I started Mida's Maid Service here in Wichita after eight years as a teacher, and I built it on one idea: the standard belongs to the company, not to one person on it.
 
-So we build the work around a standard rather than around a person. Every home gets the same kitchen, the same bathrooms and the same living areas done the same way, whichever of the ladies is in your house that day.
+People get sick, schedules change and crews are not always the same. If the quality only lives in one cleaner, it leaves the day that cleaner does.
 
-Our customers have noticed. People tell me they've been with us 8 years, 16 years, and when they say it, it's because they stopped looking for anything better.
+So the kitchen, the bathrooms and the living areas get done to the same standard whichever of the ladies is in your house that day. Families who have been with us 8 years and 16 years are the proof that it holds.
 
 > "I discovered Mida and her girls 7 or 8 years ago and no matter what crew comes to my home they are professional, efficient and do an excellent job each time. The price is fair, Mida is easy to work with and she is very responsive when I reach out with questions."
 > — Jennifer N.
@@ -34,7 +36,9 @@ Cleaning goes wrong less often because of the mopping than because of the logist
 
 At Mida's, that's me. I tell you when the ladies will show up, and when you have a question or something changes, you reach me, not a call center.
 
-You'll know who is responsible for your house. For many of our families, that matters as much as the clean itself.
+You'll know who is responsible for your house. For a family that has stayed with one service for years, that matters as much as the clean itself.
+
+It also means you can ask a plain question and get a plain answer, such as which day this week, or whether we can add the oven this time.
 
 > "We have been using Mida for past 8 years. They were Recommended to us from a trusted family friend. We are very happy with their service. Mida is very professional, does a great job of communicating the time ladies will show up, and they do a great job cleaning our house."
 > — Brad H.
@@ -43,7 +47,9 @@ You'll know who is responsible for your house. For many of our families, that ma
 
 This is most of what we do. A weekly refresh or a plan that fits your schedule and your budget, so the house stays at a baseline you don't have to rebuild every weekend.
 
-Recurring cleaning works because of what it prevents. A kitchen cleaned regularly never gets to the stage where the stove top needs a scraper. Bathrooms stay quick work instead of becoming a Saturday project.
+Recurring cleaning works because of what it prevents. Grease on a stove top is wipe-off work in week one and scraper work by month three. Soap scum does the same thing in a shower.
+
+A regular visit keeps every room in the wipe-off stage, so bathrooms stay quick work instead of becoming a Saturday project.
 
 We build the plan around your household: how often, which days and what you want the ladies to focus on.
 
@@ -56,7 +62,7 @@ We build the plan around your household: how often, which days and what you want
 
 Sometimes a house needs more than upkeep. Maybe you're having family over, the season changed, or it's been a while and you can't catch up on your own.
 
-A deep clean is a one-time, top-to-bottom clean that resets the house. A lot of our regular families began with one, then moved to a recurring plan once they saw how long a reset lasts.
+A deep clean is a one-time, top-to-bottom clean that resets the house. It also makes a good starting point if you're thinking about a recurring plan, because everything after it is maintenance instead of rescue.
 
 Oven and refrigerator interiors, porch and pool house deep cleans and exterior windows are available on request.
 
@@ -66,7 +72,7 @@ Oven and refrigerator interiors, porch and pool house deep cleans and exterior w
 
 Every home we clean gets work in the kitchen, the bathrooms and the living areas and rooms throughout the house.
 
-If you want something beyond the usual, tell me when you call and I'll tell you whether it fits. Anything outside the standard visit is quoted as an add-on, not slipped onto your bill.
+If you want something beyond the usual, tell me when you call and I'll tell you whether it fits. Oven and refrigerator interiors, porches, pool houses and exterior windows are the extras people ask about.
 
 We also clean offices and other commercial spaces in Wichita. This page is about your home, so if you're asking about a business, call and ask for me.
 

@@ -15,7 +15,9 @@ If you have hired a cleaning service before, you may know how it goes. A differe
 
 A house gets clean when someone learns it. They find out which cabinet front shows every fingerprint, which floor needs the gentler cleaner, which room you care about most.
 
-That is why I come myself. You deal with me from the first call, and the person in your kitchen is the person you spoke to.
+A new person spends the first visit finding all that out, and the next new person starts over. A note left on the counter does not carry what a person remembers.
+
+That is why I come myself. You deal with me from the first call, and what you tell me about your house stays with me.
 
 > "Our lady of 30 plus years had retired, we tried two other cleaning companies that were very unreliable. They sent different girls out most times that were never trained to clean, spent most of their time on their cell phones, and left early. … I like the fact that Jenny and Jessica show up when scheduled and get the job done in the amount of time that was agreed upon. They are very thorough and extremely detail oriented, friendly & professional."
 > — Linda L.
@@ -35,9 +37,11 @@ If you are particular about something, tell me. That is how I learn the house.
 
 My deep clean is the most popular thing I do, and it is where I recommend new clients start. In most cases it comes before a weekly, bi-weekly or monthly schedule.
 
-There is a practical reason. A regular clean keeps a house where it is. A deep clean gets it to the place worth keeping, so every visit after that starts from clean instead of catching up.
+There is a practical reason. A regular visit is built to keep a clean house clean: kitchen, bathrooms, floors, the surfaces you touch.
 
-It takes time, and I take it. You see the difference in the places a quick clean skips, like door frames, woodwork and the tops of cabinets.
+It does not stop for the places that quietly collect a layer, like door frames, woodwork, the tops of cabinets and the corners behind furniture. A wipe over that layer mostly moves it around.
+
+A first deep clean goes through all of it once, slowly, and takes the time it takes. After that, each visit only has to lift a week or two of dust, so the time goes to details instead of catching up.
 
 [See deep cleaning →](/deep-cleaning-wichita-ks/)
 
@@ -45,11 +49,9 @@ It takes time, and I take it. You see the difference in the places a quick clean
 
 Once the house is where you want it, a schedule keeps it there.
 
-Weekly is the most thorough upkeep. Bi-weekly is the most popular. Monthly is light maintenance between bigger cleans.
+Weekly keeps the house from ever slipping. Bi-weekly is the most popular. Monthly is light maintenance.
 
 Every recurring plan includes a discount as a thank-you for staying with me, and weekly gets the biggest one. There are no contracts.
-
-You also get to keep the same person, which is the whole point.
 
 [See recurring house cleaning →](/recurring-house-cleaning-wichita-ks/)
 
@@ -57,7 +59,7 @@ You also get to keep the same person, which is the whole point.
 
 Dogs and cats mean hair in the corners and paw prints across the floor, all week long. A clean that looks good on Monday can be gone by Wednesday.
 
-I bring my own supplies and tools, and I'll use the product you prefer if your floors or furniture need something specific.
+Hair settles into corners and along baseboards, and a quick pass with the vacuum leaves it there. Getting it out takes going back over the edges, not just the middle of the floor.
 
 > "We have multiple pets and pet hair is a constant battle, along with paw prints on our floors. Jenny Maid's staff (somehow) manages to get the hair out of every corner and polishes the floors to shine."
 > — Heather P.
@@ -68,18 +70,10 @@ A move is the moment you most need the house clean and have the least time to do
 
 An empty house shows everything: the inside of cabinets, the floors under where the couch sat, the grime nobody could see behind furniture.
 
-If your move is coming up fast, call and tell me the date.
+If your move is coming up fast, call and tell me the date, and I'll tell you honestly whether I can fit it in before then.
 
 > "I had already moved out. While I was checking other providers Jenny Maid's came up so I called. Jenny was so sympathetic and made special accommodations to come early the next morning! Jenny.and her assistant did an absolutely amazing job! I have never seen someone work as hard as Jenny did, and the job was done impeccably!"
 > — Glenda T.
-
-## Cleaning When You Are Busy
-
-Most people who call me are not behind because they don't care. They are working, raising kids, caring for a parent, or can't do the work anymore.
-
-A clean house is one less thing on your mind. You come home and it is done.
-
-Whether you want a single clean before guests arrive or a standing schedule, tell me which and we'll start there.
 
 ## Other Cleaning I Do
 
@@ -91,8 +85,6 @@ Whether you want a single clean before guests arrive or a standing schedule, tel
 ## How It Starts
 
 Call me, or send a message through the contact page. Tell me about your house and what you want done.
-
-You don't have to be home when I clean. I bring the supplies and tools.
 
 If you are a new customer, ask about the new customer discount when you get in touch.
 

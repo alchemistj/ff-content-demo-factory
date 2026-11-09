@@ -30,7 +30,9 @@ A checklist says "restrooms, trash, floors." It doesn't say that the small confe
 
 That knowledge lives in people, and every time the crew turns over it walks out the door. A building that gets a new crew every month is learning its cleaners from scratch every month.
 
-Cleaning companies lose people. What matters is whether someone in charge notices a gap and fills it before you do. That is the job of a supervisor, and it is the reason we staff supervisors at all.
+Cleaning companies lose people. What matters is whether someone in charge notices a gap and fills it before you do.
+
+That is a supervisor's job. Mark Walker, our janitorial supervisor and project manager, has more than fourteen years in the work.
 
 ## One Building, One Vacuum, One Employee
 
@@ -44,12 +46,12 @@ Lance, who is Jordan's brother and our director of operations, and Jordan were b
 
 Why that matters to you: a vendor with no owner nearby passes a complaint from the crew to the supervisor to the office and back, and nobody holds it. When the owners' names are on the company, the complaint has somewhere to stop.
 
-Here is what that looks like from one of our earliest reviews. In 2015 a customer needed a move-out clean on short notice. The crew was on other jobs, so Jordan did it himself.
+One of our earliest reviews shows it.
+
+A customer needed a move-out clean on short notice, and every crew was already on another job. Jordan didn't reschedule her. He did it himself.
 
 > "Since he was short-staffed at the time (his employees were on other jobs) he came out and did it himself. He did it very well."
 > — Tamara L.
-
-That was an apartment, not an office, and it was years ago. The point is what the owner does when there aren't enough hands.
 
 ## Office Cleaning
 
@@ -77,7 +79,7 @@ A school has gym floors and heavy restroom traffic. A medical office has differe
 
 We list office space, churches, schools, industrial plants, medical facilities and multi-family properties among the buildings we maintain. We also clean retail stores, auto dealerships, fitness centers, daycares, credit unions, call centers, government buildings and property management sites.
 
-> "Harris Dream Clean are the best in the industry.  The professionalism and dedication of their ownership and staff are unmatched."
+> "The professionalism and dedication of their ownership and staff are unmatched."
 > — Shawne B.
 
 ## Beyond Daily Cleaning
@@ -119,7 +121,7 @@ That includes Derby, Haysville, Andover, Maize, Goddard, Park City, Bel Aire, Va
 Offices, churches, schools, medical facilities, industrial plants, multi-family properties, retail, gyms, dealerships and more. If it's a commercial building in the Wichita area, call and ask.
 
 **Will I deal with the owners?**
-Yes. Jordan and Lance Harris run the company, and we answer for the work. You'll also work with a supervisor and our sales manager, Casey Coates.
+Jordan and Lance Harris own and run the company, and the work is ours to answer for. You'll also work with a supervisor and our sales manager, Casey Coates.
 
 **Do you only do nightly cleaning?**
 No. We also do floor stripping and refinishing, carpet cleaning, day porter service and more.
