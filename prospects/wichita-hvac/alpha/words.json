@@ -6,6 +6,7 @@
     "city": "Wichita",
     "state": "KS",
     "companyType": "HVAC Company",
+    "owners": [],
     "phones": [
       {
         "label": "Wichita",

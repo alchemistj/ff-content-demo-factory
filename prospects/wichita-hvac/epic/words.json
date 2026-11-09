@@ -6,6 +6,7 @@
     "city": "Wichita",
     "state": "KS",
     "companyType": "HVAC Company",
+    "owners": [],
     "phones": [
       {
         "label": "Wichita",
@@ -188,7 +189,7 @@
           "type": "prose",
           "heading": "Who You Call",
           "body": [
-            "Preston has been in the HVAC industry since 1999, and Justin since 2000. Epic has served Wichita since 2012, and both families come from this field.",
+            "Preston and Justin, who lead our crew, have each worked in HVAC for more than 25 years, and both of their families come from this field. Epic has served Wichita since 2012.",
             "We guarantee 100% satisfaction with all our work, down to the clean-up when the job is done."
           ]
         },
