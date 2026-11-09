@@ -28,7 +28,7 @@
     "Homes and Businesses",
     "Service for All Brands",
     "Weekday Emergency Service, 5 to 10 PM",
-    "Second-Generation Family Business"
+    "Our Own Sheet Metal Shop"
   ],
   "services": [
     {
@@ -87,7 +87,7 @@
       "hero": {
         "eyebrow": "Heating and cooling for homes and businesses",
         "h1": "HVAC Company in Wichita, KS — Cook's Heating and Cooling",
-        "sub": "We repair, install and maintain air conditioners and furnaces from our office at 2215 S West St. We have looked after the heating and cooling in two different homes for the same customer.",
+        "sub": "We repair, install and maintain air conditioners and furnaces from our office at 2215 S West St. We have done the HVAC work in both homes of a customer of many years.",
         "primaryCta": {
           "label": "Call (316) 945-2665",
           "action": "call"
@@ -125,14 +125,14 @@
         {
           "type": "services",
           "heading": "Everything We Do",
-          "intro": "Repair has its own pages. Everything else we do is listed here."
+          "intro": "Everything we do, with repair on its own pages."
         },
         {
           "type": "split",
           "heading": "Installation to Fit Your Budget",
           "body": [
             "We install air conditioners, furnaces, unit heaters and electric air handlers, with a variety of systems and equipment to fit your budget.",
-            "We have installed a new heater and AC unit for a homeowner who had gathered several estimates."
+            "We have come in under several other estimates on a new heater and AC unit."
           ],
           "image": {
             "slot": "home-install",
@@ -150,12 +150,12 @@
           "type": "prose",
           "heading": "Installed Right",
           "body": [
-            "We have been named one of the top three HVAC companies by someone who used to wire new houses in Wichita."
+            "We have been a top-three pick for an electrician who wired new houses around Wichita, and our installers work to make everything right."
           ]
         },
         {
           "type": "review",
-          "quote": "Cooks has always been one of my top three companies that I suggest or would use to do any work for me or anyone I know. The installation guys work their buts off and they do their best to make everything right.",
+          "quote": "I used to wire new houses in Wichita and the surrounding area. … Cooks has always been one of my top three companies that I suggest or would use to do any work for me or anyone I know. The installation guys work their buts off and they do their best to make everything right.",
           "name": "Joshua M."
         },
         {
@@ -163,20 +163,21 @@
           "heading": "Maintenance and Air Quality",
           "body": [
             "Our annual maintenance agreements cover homes and businesses. The Premium plan brings two servicings a year, priority emergency service within 24 hours and 20% off parts and labor.",
-            "We also install filters, whole-system filtration that removes up to 90% of air contaminants, and humidifiers. We have had the same household call us for 35 years."
+            "We also install filters, whole-system filtration that removes up to 90% of air contaminants, and humidifiers."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Where We Are and When",
+          "body": [
+            "Our office is at 2215 S West St in Wichita. We are open Monday to Friday, 8:00 AM to 5:00 PM, with weekday evening emergency service until 10:00 PM.",
+            "We have served one household for 35 years."
           ]
         },
         {
           "type": "review",
           "quote": "We have used Cook's for the last 35 years couldn't be happier.",
           "name": "Sandra S."
-        },
-        {
-          "type": "prose",
-          "heading": "Where We Are and When",
-          "body": [
-            "Our office is at 2215 S West St in Wichita. We are open Monday to Friday, 8:00 AM to 5:00 PM, with weekday evening emergency service until 10:00 PM."
-          ]
         },
         {
           "type": "faq",
@@ -204,7 +205,7 @@
       "hero": {
         "eyebrow": "Air conditioning repair for homes and businesses",
         "h1": "AC Repair in Wichita, KS — Cook's Heating and Cooling",
-        "sub": "We troubleshoot your air conditioner, find what failed and repair it, whatever the brand. We have repaired outside AC units and explained everything to the homeowner.",
+        "sub": "We troubleshoot your air conditioner, find what failed and repair it, whatever the brand. We have repaired outside AC units and explained everything along the way.",
         "primaryCta": {
           "label": "Call (316) 945-2665",
           "action": "call"
@@ -250,7 +251,7 @@
           "heading": "When It Is Out in the Heat",
           "body": [
             "A dead AC on a hot day does not wait. Call (316) 945-2665 and tell us what the system is doing, and we will take it from there.",
-            "We have had a technician at a home the same afternoon the customer called, on a sweltering Friday morning."
+            "We have had a technician at the door the same afternoon a customer called on a sweltering Friday."
           ]
         },
         {
@@ -260,10 +261,9 @@
         },
         {
           "type": "prose",
-          "heading": "Finding a Freon Leak",
+          "heading": "Clean, Capable Technicians",
           "body": [
-            "Freon leak detection is part of our AC work. A system that keeps losing refrigerant has a leak somewhere, and topping it off without finding the leak only puts the problem off.",
-            "We have sent technicians who knew the job and got to work right away."
+            "We have sent technicians who arrived clean, knew the job and got straight to work."
           ]
         },
         {
@@ -294,13 +294,14 @@
           "type": "prose",
           "heading": "Checked Before It Is Replaced",
           "body": [
-            "A cooling problem is not always a failed air conditioner. Diagnosis comes first, so you know what is wrong before anyone talks about replacing anything.",
-            "We have crawled through a customer's crawl space to check the duct work and found it undamaged."
+            "A cooling problem is not always a failed air conditioner. Diagnosis comes first, Freon leak detection included, so you know what is wrong before anyone talks about replacing anything.",
+            "A system that keeps losing refrigerant has a leak somewhere, and topping it off without finding the leak only puts the problem off.",
+            "We have checked a crawl space another company said needed duct repairs and found the duct work undamaged."
           ]
         },
         {
           "type": "review",
-          "quote": "The tech showed up on time, was friendly, and professional. … He also took the time to crawl in our crawl space and found our duct work isn't damaged.",
+          "quote": "We contacted Cooks because we were told by a different HVAC company that we needed a return installed and duct work repaired in our crawl space. … He also took the time to crawl in our crawl space and found our duct work isn't damaged.",
           "name": "Matthew L."
         },
         {
@@ -363,7 +364,7 @@
       "hero": {
         "eyebrow": "Furnace repair for homes and businesses",
         "h1": "Furnace Repair in Wichita, KS — Cook's Heating and Cooling",
-        "sub": "When the heat goes out, we troubleshoot your furnace, diagnose the failure and repair it. We have fixed a furnace with the part in hand, ahead of a cold snap.",
+        "sub": "When the heat goes out, we troubleshoot your furnace, diagnose the failure and repair it. We have arrived with the part in hand and fixed the heat before a cold snap.",
         "primaryCta": {
           "label": "Call (316) 945-2665",
           "action": "call"
@@ -422,19 +423,19 @@
           "heading": "Repair Before Replacement",
           "body": [
             "Repair is the first answer. If a furnace cannot be saved, we install a replacement furnace, unit heater or electric air handler.",
-            "We have kept a customer from replacing a heater that another company said had to go."
+            "We have kept a customer from replacing a heater and AC that another company said had to go."
           ]
         },
         {
           "type": "review",
-          "quote": "They saved me thousands that I didn't have to spend. Very honest and reliable.",
+          "quote": "Another HVAC company told me I would have to replace my heater and ac and then gave me an estimate that was insane. … They saved me thousands that I didn't have to spend. Very honest and reliable.",
           "name": "LaVona B."
         },
         {
           "type": "split",
-          "heading": "Walked Through the Repair",
+          "heading": "Walked Through Every Step",
           "body": [
-            "We have walked a homeowner through every step of a furnace repair, from how the furnace works to what to watch out for."
+            "We have walked a homeowner through every step, from how the furnace works to what to watch out for."
           ],
           "image": {
             "slot": "furnace-explained",
@@ -460,7 +461,7 @@
           "type": "prose",
           "heading": "People You Can Let In",
           "body": [
-            "You let us into your home when the heat is out. We have earned the word honest from the customers we have helped."
+            "You let us into your home when the heat is out. We have had our technicians called honest men you can trust."
           ]
         },
         {
@@ -585,7 +586,7 @@
     "about": "Cook's Heating and Cooling repairs, installs and maintains air conditioners and furnaces for homes and businesses in Wichita, Kansas, from our office at 2215 S West St.",
     "why": [
       "Service for all brands",
-      "Second-generation family business",
+      "Annual maintenance agreements",
       "Our own sheet metal shop",
       "Weekday emergency service, 5 to 10 PM"
     ]
