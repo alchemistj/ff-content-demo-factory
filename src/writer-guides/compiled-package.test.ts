@@ -9,7 +9,7 @@ import { defaultRepoRoot } from "./index.js";
 const REPO_ROOT = defaultRepoRoot();
 const SCRIPT = resolve(REPO_ROOT, "scripts/assert-compiled-writer-guides.mjs");
 const EXPECTED_MANIFEST =
-  "f4b3a479f127495cb5999df0c3e82f93a28622c9d2a2f1366eb51c9f21d5d005";
+  "3fed79970c67cfa357356fcc446477df6764aa8a9c3698111521d022e8bf2d97";
 
 test("compiled dist export loads Writer 1/2/3 from repo-root Markdown", () => {
   const childEnv = { ...process.env };

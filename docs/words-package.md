@@ -73,8 +73,7 @@ Check it with `node scripts/check-words-package.mjs prospects/<market>/<slug>`. 
     "reportCardHeading": "What great window company websites get right, and how yours measures up.",
     "reportCard": [{ "label": "Headline says what you do and where", "status": "Needs work" }],
     "closing": { "heading": "Want a website like this for your business?", "text": "…" }
-  },
-  "onboardingQuestions": ["…"]
+  }
 }
 ```
 

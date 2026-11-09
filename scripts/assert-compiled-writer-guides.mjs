@@ -14,14 +14,14 @@ import { dirname, join, resolve, sep } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 
 const EXPECTED_MANIFEST =
-  "f4b3a479f127495cb5999df0c3e82f93a28622c9d2a2f1366eb51c9f21d5d005";
+  "3fed79970c67cfa357356fcc446477df6764aa8a9c3698111521d022e8bf2d97";
 const EXPECTED_GUIDE_SHA256 = Object.freeze({
   general: "64dff9e21c2f60480dfd5a4b2e43df2667396b47c8106dbed0a51e3fdc0811de",
   service: "92acecf52fd02adb971e3c88094a26f2e2646f9394771cb0f00e43a6b909d7d9",
   homepage: "417debb94ee2b7db33015dca0e3fdc28496d0957af8c76dd6e7d20772a7f2f0e",
   contact: "5613e7bb37ae021966da52a59cb0e264bfcec652776debee7bccf277cb3d336d",
   headerFooter: "69f38eb9523805ee5956d6f22f5c53644b4823fe7caac8d2652a37d054bc71ea",
-  readme: "a667ba03bf628b19a089676f19988a3ad74be13a4300ee7ad341d67fa203ccf1",
+  readme: "4cfa961b9a74a4814b7a680e3da7dfd592143ef11fa1fb346d1c00090ae033c5",
 });
 const EXPECTED_SET_HASH = Object.freeze({
   writer1: "d8397c093b07bc089182dea54a9bbeb40a4d711a542d6d28d21af2cc3047ecf5",

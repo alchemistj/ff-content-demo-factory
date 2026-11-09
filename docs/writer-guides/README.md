@@ -1,5 +1,7 @@
 # FF Content Demo Factory — Writer Guide Set
 
+**Spirit of the law, not letter of the law (Josh, 2026-11-09).** No guide can list every "don't". Guides explain what good copy does and why, with examples; writers use judgment. Checkers catch only hard, objective failures (fake quotes, wrong phone numbers, missing pages, a second city in the homepage H1). They never stand in for taste, and passing a checker does not mean a page is good. Onboarding questions are no longer part of the package (Josh, 2026-11-09).
+
 These documents, plus the Springfield examples, are the writer-facing authority for FF Content Demo Factory.
 
 The goal is confident, specific, customer-facing business copy, with customer quotations supporting the business’s benefits and a clear path to action.

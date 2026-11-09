@@ -11,7 +11,7 @@ You write one demo's complete words package in the content factory. Work in `/ho
    - `facts.md` (cited facts; the only source of business facts)
    - `reviews.json` (the only source of quotes)
    - `reviews.md` (if present)
-   - `old-WORDS.md`: last night's version. Use it **only** for its notes (owner names, phone numbers, decisions, onboarding questions). Do not reuse its sentences: its voice and its H1 broke the guides.
+   - `old-WORDS.md`: last night's version. Use it **only** for its notes (owner names, phone numbers, decisions). Do not reuse its sentences: its voice and its H1 broke the guides.
 
 ## Steps
 1. **Audit their current site** (`audit.md`) by `docs/runtime/SITE-AUDIT.md`.
@@ -36,7 +36,6 @@ You write one demo's complete words package in the content factory. Work in `/ho
    - Write the strategy page last, from the audit and your finished pages, using only lines from FULL_BUILD_LINES.md for `alsoAdd`.
    - Hero and section `image` fields need `alt` and a short `brief` (the subject on the side away from the text, calm background behind the text, no readable text, no tools in hands).
 4. **Check:** run `node scripts/check-words-package.mjs prospects/<market>/<slug>` and fix every FAIL. Then reread every page aloud in your head as the business owner would hear it, and fix anything that sounds generic, hedged or invented.
-5. **`questions.md`:** the onboarding-call questions (certifications to verify, owner surname, phone numbers, years, services to confirm).
 
 ## Report back (short)
 - the checker summary and the rendered word counts
