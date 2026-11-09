@@ -1,4 +1,4 @@
-**Eyebrow:** Entry, patio and French doors from Rick Timsah's crew
+**Eyebrow:** Entry, patio and French doors, installed
 
 # Door Replacement in Wichita, KS — Dan Dan The Window Man
 
@@ -88,4 +88,4 @@ Our warranty covers our installation. Ask us for the paperwork on the door you'r
 
 Call Rick and he'll come out, measure your door and give you a price with no pressure to sign that day.
 
-Dan Dan The Window Man, 6810 W Kellogg Dr, Wichita, KS 67209. Call (316) 448-4418. Se habla español.
+Call (316) 448-4418. Se habla español.

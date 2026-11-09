@@ -1,4 +1,4 @@
-**Eyebrow:** Window replacement from the owner's showroom on West Kellogg
+**Eyebrow:** Window replacement from the owner's showroom
 
 # Window Replacement in Wichita, KS — Dan Dan The Window Man
 
@@ -94,4 +94,4 @@ Our warranty covers our installation. Ask us for the paperwork on the windows yo
 
 Call Rick and he'll come out, measure your windows and give you a price with no pressure to sign that day.
 
-Dan Dan The Window Man, 6810 W Kellogg Dr, Wichita, KS 67209. Call (316) 448-4418. Se habla español.
+Call (316) 448-4418. Se habla español.
