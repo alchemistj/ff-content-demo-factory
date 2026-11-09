@@ -135,6 +135,18 @@
       "pulledAt": "2026-11-09T02:12:17.197Z"
     },
     {
+      "slug": "diamond-roof-gutter",
+      "name": "Diamond Roof & Gutter",
+      "placeId": "ChIJI8VGi-zjuocRWmkUjeUIABg",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 20,
+        "withText": 19,
+        "ratingOnly": 1
+      },
+      "pulledAt": "2026-11-09T17:56:30.736Z"
+    },
+    {
       "slug": "douglas-fry-roofing",
       "name": "Douglas Fry Roofing, Inc",
       "placeId": "ChIJSR3w1E7iuocRJXA6D1NM7eI",
