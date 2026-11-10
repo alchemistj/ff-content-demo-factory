@@ -26,8 +26,10 @@ Tagged `demo-prospect` and `wichita`, source "Fluid Frame demo outreach".
 | Business | Result |
 |---|---|
 | GS Gutters LLC | SENT via http://gsguttersllc.com/contact/. Site replied "Thanks for contacting us". Blank lines kept. |
-| Dan Dan The Window Man | BLOCKED: a reCAPTCHA challenge appeared on submit. Not sent. Hand-send. |
+| Dan Dan The Window Man | Auto-send blocked by reCAPTCHA. SENT BY JOSH by hand, Tue Nov 10, 2026, about 12:30 PM Central. Site replied "We appreciate you contacting us". |
 | TWG Construction | BLOCKED: reCAPTCHA v3 "suspected as abusive usage". Not sent. Hand-send. |
 | Farha HomeTrends | BLOCKED: Contact Form 7 marked it spam. Not sent. Hand-send. |
 
 Hand-send list (Josh): Dan Dan, TWG, Farha, Evolve (no contact form; info@evolve-exteriors.com is on the site), New Windows For America (no form; phone only), Modern Glass (Typeform quote form).
+
+GoHighLevel: each sent prospect gets the `demo-sent` tag plus a "Demo sent" note with the date, time (Central), channel and demo link.
