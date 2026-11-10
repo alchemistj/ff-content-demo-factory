@@ -8,3 +8,16 @@
 | TWG Construction | Auto-send (reCAPTCHA v3 invisible) | https://twgconstruction.biz/#contact | Headline never says roofing |
 | Farha HomeTrends | Auto-send (reCAPTCHA v3 invisible) | https://farhahometrends.com/contact-us/ | Phone is plain text in the footer, nothing taps to call |
 | Modern Glass Structures | Hand-send | https://7a9hkhe9ecc.typeform.com/to/W75HoHCZ (outside Typeform) | Top of page never says Wichita or what kind of glass company |
+
+## GoHighLevel contacts (Fluid Frame Legacy, 2026-11-10)
+Tagged `demo-prospect` and `wichita`, source "Fluid Frame demo outreach".
+
+| Business | Contact | GHL contact id |
+|---|---|---|
+| GS Gutters LLC | Nelson | MLQifT4euiZdjChRF3Vr |
+| Evolve Exteriors | Colton & Riley | eg30Z76PHfjT5ZW2o1Ij |
+| Dan Dan The Window Man | Rick | vBnBaWaBao8lJV9GSBmO |
+| New Windows For America | (company only) | NzEC8EORMFbQ7tNs3KJx |
+| TWG Construction | (company only) | z1ZSQ0r0VOek87LzVG0i |
+| Farha HomeTrends | Geremy Farha | TLFTqkMiJbFaMF4TJVCr |
+| Modern Glass Structures | (company only) | pbG1165dYzEBpBv86YMq |
