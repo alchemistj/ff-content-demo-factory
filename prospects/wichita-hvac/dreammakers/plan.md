@@ -41,7 +41,7 @@ Heater installation covers furnaces and water heaters: the live site's heater pa
 - Moment: the unit hums, doesn't start, or blows warm; the fix is one part.
 - Why: capacitors, motors, igniters, refrigerant leaks; a small part failing is cheaper than a whole unit; maintenance catches it.
 - What we do: replace parts (live site, BBB "HVAC parts maintenance"), stop leaks, temporary improvements while the part is on order (Almeta W.), maintenance (D.M. M.).
-- Reviews: Almeta W. (long), William L., David M., D.M. M.
+- Reviews: William L., David M., Almeta W., Ashley N.
 
 ## Contact page
 Phone (316) 871-5085, address 5720 1/2 S Broadway, Wichita, KS 67216 (facts). Hours omitted: BBB says Mon to Fri 8 to 5, the live site says "Open 24/7 with office staff". Review: Matthew V.
@@ -56,5 +56,5 @@ Phone (316) 871-5085, address 5720 1/2 S Broadway, Wichita, KS 67216 (facts). Ho
 ## Review allocation (each once across the site)
 Home: Mashaela W., Carolyn S., Bailey L., Ady G., Allen B.
 Heater: Aaron S., Gary V., Sarah W.
-Parts: Almeta W., William L., David M., D.M. M.
+Parts: William L., David M., Almeta W., Ashley N. (D.M. M. dropped: reviewer name is not First L. form)
 Contact: Matthew V.
