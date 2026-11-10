@@ -8,7 +8,7 @@ https://dreammakers.websitepreview.fluidframemarketing.com/
 
 Note: It'll look a lot better with your logo and images on it! Lol
 
-The preview opens with a recent case study, then explains why we built each page and how it helps more people find you and call. For example, on a phone your current site shows nothing for about 14 seconds and takes nearly 30 seconds to finish loading, so most people leave before they ever see your name.
+The preview opens with a recent case study, then explains why we built each page and how it helps more people find you and call. For example, on a phone your current site shows nothing for about 14 seconds. And on a computer, the number at the top of every page shows yours but dials 817-333-7310, a Fort Worth number.
 
 Another cool thing about our system: our contact form would have recognized this as a solicitation, and you wouldn't have even seen it!
 

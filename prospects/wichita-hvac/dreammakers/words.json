@@ -618,7 +618,8 @@
     "whyHeading": "Why we built this site",
     "why": [
       "Your customers text you, and you answer. Over and over, your reviews say they got Nate himself, and that he remembered their house.",
-      "Your website doesn't say any of that, and on a phone it takes about 14 seconds before anything shows up at all. Most people are gone long before then. So we built a fast demo that puts your name, your number and your customers' words on the first screen."
+      "Your website works against that. On a computer, the phone number at the top of every page shows your number but dials 817-333-7310, a Fort Worth number. Your service cards send people to Fort Worth pages, two of them under another company's name. And on a phone, nothing shows for about 14 seconds.",
+      "So we built a fast demo that puts your name, your real number and your customers' words on the first screen."
     ],
     "cardsHeading": "Be the Heating and Air Company People Find on Google",
     "cardsIntro": "Each card is one demo page: the problem, and the fix.",
@@ -628,12 +629,13 @@
         "title": "Homepage",
         "why": "The first page people see, and the one Google reads to learn what you do.",
         "problems": [
-          "On a phone, your homepage takes about 14 seconds to show anything, and almost 30 seconds to finish loading.",
-          "No page on your site has a main headline, so Google can't tell you're a heating and air company in Wichita."
+          "The phone number at the top of every page shows (316) 871-5085 but dials 817-333-7310, a Fort Worth number.",
+          "Your five service cards link to Fort Worth and North Richland Hills pages, two of them titled with another company's name.",
+          "On a phone, your homepage takes about 14 seconds to show anything, and no page has a main headline Google can read."
         ],
         "fixes": [
-          "A page that loads in about a second, with your name and number on the first screen.",
-          "A headline that says heating and air conditioning company in Wichita, KS.",
+          "Every phone link dials your number, (316) 871-5085.",
+          "A page that loads in about a second, with a headline that says heating and air conditioning company in Wichita, KS.",
           "Your customers' words beside the work they describe."
         ],
         "alsoAdd": "On day one, we sit down with you to get what makes you the obvious choice, every service you offer and every town you work in. That becomes the prescription: how many pages, in how many towns, so Google and AI tools can find you for every service."
@@ -643,7 +645,8 @@
         "title": "Heater Installation",
         "why": "The page for homeowners replacing a furnace or water heater.",
         "problems": [
-          "Your heater page has no headline Google can read, so \"heater installation Wichita\" has nothing to match."
+          "Your homepage's heater card sends people to a North Richland Hills, TX page.",
+          "Your Wichita heater page has no headline Google can read."
         ],
         "fixes": [
           "A page about heater installation in Wichita, KS, with plain answers and the reviews that prove them."
@@ -655,7 +658,8 @@
         "title": "HVAC Parts Replacement",
         "why": "The page for people hoping a part, not a whole system, will fix it.",
         "problems": [
-          "Your parts page has no headline, and the page address misspells \"maintenance\"."
+          "Your homepage's parts card sends people to a Fort Worth, TX page titled with another company's name.",
+          "Your Wichita parts page has no headline, and its menu label misspells \"maintenance\"."
         ],
         "fixes": [
           "A page about HVAC parts replacement in Wichita, KS, explaining when a part is the right fix."
@@ -667,7 +671,8 @@
         "title": "Contact",
         "why": "Where interest turns into a call or a text.",
         "problems": [
-          "People who want to reach you wait about 14 seconds for your site to load first."
+          "The number in your contact box dials 817-333-7310, a Fort Worth number, not yours.",
+          "People wait about 14 seconds on a phone before the page shows anything."
         ],
         "fixes": [
           "A contact page that loads fast, with call and text one tap away."
@@ -678,16 +683,16 @@
     "reportCardHeading": "What great heating and air websites get right, and how yours measures up.",
     "reportCard": [
       {
+        "label": "Phone links dial your number",
+        "status": "Missing"
+      },
+      {
         "label": "Loads fast on a phone",
         "status": "Missing"
       },
       {
         "label": "Headline says what you do and where",
         "status": "Missing"
-      },
-      {
-        "label": "Each money service has its own page",
-        "status": "Needs work"
       },
       {
         "label": "Customer reviews on the site",
