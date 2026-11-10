@@ -2,7 +2,7 @@
 
 # Contact Integrity Heating and Cooling
 
-If your heat or air has quit, the fastest way to reach us is to call. Tell us what the system is doing and we'll tell you what we think.
+If your heat or air has quit, the fastest way to reach us is to call. Tell us what the system is doing and we'll tell you what we think, what it costs and what we'd do. We chose the name Integrity, so hold us to it.
 
 **Buttons:** Call (316) 932-9559 | Request Service
 
@@ -25,6 +25,6 @@ Not a good time to talk? Use Request Service and tell us what's going on. Includ
 
 ## Hours and Area
 
-Monday to Friday, 8 AM to 5 PM. If your system quits outside those hours, call and ask. After-hours work is priced by phone.
+Monday to Friday, 8 AM to 5 PM. If your system quits outside those hours, call and ask. After-hours work costs more, and you hear the price on the phone before anyone comes out.
 
 We serve the Greater Wichita area. Our address is 801 S Fabrique Dr, Wichita, KS 67218.

@@ -2,38 +2,40 @@
 
 ## Company type, H1s, keywords
 - Homepage H1: `HVAC Company in Wichita, KS — Integrity Heating and Cooling` (owns "HVAC company Wichita").
-- Service page 1: `AC Repair in Wichita, KS — Integrity Heating and Cooling` (owns "AC repair Wichita").
-- Service page 2: `Furnace Repair in Wichita, KS — Integrity Heating and Cooling` (owns "furnace repair Wichita").
-- Everything else (system installation, heat pump repair, motor replacement, commercial, maintenance) is a short section or line on the homepage with no link.
+- Service page 1: `AC Repair in Wichita, KS — Integrity Heating and Cooling` (`/ac-repair-wichita-ks/`).
+- Service page 2: `Furnace Repair in Wichita, KS — Integrity Heating and Cooling` (`/furnace-repair-wichita-ks/`).
+- Commercial, heat pumps, motors, replacement and maintenance are short sections on the homepage with no link. Routes match `words.json`.
 
 ## The idea
-When the system quits, you need a real person who answers, shows up fast, tells you straight what is wrong and charges a fair price. Sam, the owner, is in the work himself, and the reviews say the same thing over and over: quick, honest, fair, clean.
+Accountability: a company that lives up to its name. Property owners and people who compare vendors say Sam, the owner, takes the inconvenient call himself, the price stays fair when it is after hours, and the work is left clean. The homepage argues accountability, not speed.
 
-## Homepage
-1. Top: Sam's first-person intro, call for a free phone consultation. Proof: Hunter M. ("Sam (the owner) personally took care of it himself", after 8pm).
-2. Why the owner on the phone matters (the moment: a dead system, a stranger's call centre). Proof: Chris W. (7+ years, Sam and Cory).
-3. AC repair (moment: house climbing past 80; why: capacitor, coil, refrigerant). Link to AC page. No quote here (Jessica H., Colton K., Justus K., Scott C. are on the AC page).
-4. Furnace repair (moment: cold house; why: igniter, flame sensor, blower). Link. No quote (Joyce A., Karen E., Brett J. are on the furnace page).
-5. New systems (moment: repair bills stacking up; why: age, efficiency; what: replacement). Proof: Maddie R. (replaced whole system, fair quote).
-6. Other work in a line: heat pump repair, motor replacement, commercial. Proof: Lynne L. (landlord with commercial buildings).
-7. Honest pricing, clean work, area: Greater Wichita. Questions section. Final call.
+## Homepage sections
+1. **Top.** Sam, first person: "We chose the name Integrity, so hold us to it." Call for a free phone consultation. Proof: Hunter M. (investor's rental, 8pm, Sam took care of it himself, fair after hours).
+2. **A Name You Can Hold Us To.** Moment: a dead system and a stranger telling you what failed. Why: you can't see inside the unit, so the company's word is the product. Do: say what we found, the price, the options, then do it; the site's "we stand by our work". Proof: Rita P. ("they live by their name, Integrity", punctual, clean, price comparable).
+3. **The Inconvenient Call.** Moment: Saturday, holiday, 8pm with a guest in a rental. Do: office hours Mon-Fri 8-5 (site); after hours costs more and is quoted by phone first (site: "additional cost, call for quote"). No 24/7. Proof: Jennifer J. (Sam hardest working, "epitome of integrity-based service").
+4. **For Landlords, Hosts and Property Owners.** Moment: tenant without heat, rental empty. Why: owners judge vendors by invoice, mess, callbacks. Do: itemized bill, clean work. Proof: Lynne L.
+5. **After Trying the Others.** Moment: repairs that did not hold, bills that did not match. Proof: Brett J. (worked with many companies, dependable and accountable, never leave a mess).
+6. **AC Repair** and **Furnace Repair.** Short: moment, why (capacitor, coil, igniter, flame sensor), what we do, link. No reviews (they sit on the service pages).
+7. **When a Repair Stops Making Sense.** Honest repair-or-replace opinion. No review.
+8. **Heat pumps, motors and maintenance**, commercial in a line.
+9. **What You Can Count On**, **Serving Greater Wichita**, **Questions**, **Call Today**.
+
+Reviews on the homepage: Hunter M., Rita P., Jennifer J., Lynne L., Brett J.
 
 ## AC repair page
-Moments: AC runs but house will not cool; ice on the lines; warm air; breaker trips; it quit on a weekend. Reasons: capacitor, fan motor, dirty coil, low refrigerant (leak), airflow. Doing: diagnose first, explain, repair or tell you straight if replacing is smarter. Proof: Jessica H. (Saturday, Clayton, parts ordered, back Monday), Colton K. (holiday, hour and a half), Justus K. (Clayton explained; other company could not figure it out), Scott C. (explained the fix, advice to keep it running).
+Moments: house will not cool, ice, breaker trips, quit on a weekend. Reasons: capacitor, coil, refrigerant leak, motor. Doing: diagnose, explain, repair or say replace. Proof: Jessica H., Justus K., Scott C., Colton K.
 
 ## Furnace repair page
-Moments: no heat, a furnace that clicks and quits, cold rooms, noise. Reasons: igniter, flame sensor, filter and airflow, blower motor, thermostat, cracked heat exchanger (safety). Doing: diagnose, explain, repair or replace. Proof: Joyce A. (called yesterday, next morning), Karen E. (new furnace, cleaned up), Brett J. (dependable, never leave a mess; replaced furnace and AC at his mother's house).
+Moments: no heat, clicking, short cycling, cold rooms. Reasons: igniter, flame sensor, filter, blower, heat exchanger safety. Doing: diagnose, show what failed, itemized bill, clean up, repair or replace. Proof: Joyce A., Karen E., Maddie R.
 
 ## Contact
-Call first (316) 932-9559. What to have ready. Hours Mon-Fri 8 to 5 (site's contact page). After hours: call and ask, priced by phone (site: "call for quote"). Area: Greater Wichita. Address 801 S Fabrique Dr, Wichita KS 67218. No quote (none earns its spot).
+Call first. What to have ready. Hours Mon-Fri 8-5; after hours priced by phone. Greater Wichita, 801 S Fabrique Dr. No review.
 
-## Questions a visitor asks, and the answers
-- Is it free to call? Yes, free phone consultation (site). Not claiming free on-site estimates.
-- Do you come out the same day? Reviews show same day or next morning on repairs (Scott C., Joyce A.); we do not promise it.
-- Will I be surprised by the bill? Site: full breakdown, no surprise charges; reviews: reasonable, fair, shoot you straight.
-- Do you work on my brand? Site: all major brands.
-- Weekends / after hours? Not stated as a promise; contact page says after-hours is quoted by phone.
-- Repair or replace? General trade knowledge; Sam tells you which (reviews: honest opinion).
+## No review appears twice
+Home: Hunter M., Rita P., Jennifer J., Lynne L., Brett J. AC: Jessica H., Justus K., Scott C., Colton K. Furnace: Joyce A., Karen E., Maddie R.
 
-## Left out (not supported by facts)
-24/7; licence and insurance; years in business; Kechi office; financing provider; dealer or brand status; maintenance plan price; Sam's surname; free on-site estimates; towns served beyond Greater Wichita.
+## Questions and answers (all from facts)
+Free to call: yes, free phone consultation. Weekend: call, after-hours priced by phone. Surprise bill: full breakdown, no surprise charges (site). Brand: all major brands (site). Repair or replace: depends, honest opinion. Commercial: yes (site services page).
+
+## Left out (not supported)
+24/7; owner surname; years in business; licence and insurance; Kechi office; financing provider; dealer or brand status; maintenance plan price; free on-site estimates; towns beyond Greater Wichita; any owner reply; any promise of same-day service.

@@ -2,88 +2,82 @@
 
 # HVAC Company in Wichita, KS — Cook's Heating and Cooling
 
-When the air conditioner quits in July or the furnace won't start in January, you need someone who comes out, finds the real problem and tells you straight what it takes to fix. That's what we do for Wichita homes and businesses. Call (316) 945-2665 or request service.
+A furnace or air conditioner stays in your house for many years, so the company you pick for it is one you'll be calling for a long time. We install new systems, service them twice a year if you want, and fix them when they quit. Call us once and you have a number to keep.
 
 **Buttons:** Call (316) 945-2665 | Request Service
 
-> "Called on a Friday morning, sweltering hot day, and my A/C was out. Got a technician here that afternoon, on time, and they fixed me up! Reasonable price, professional service. Ricky was awesome. Now I can enjoy my weekend!!"
-> — Vicki V.
+> "We have used Cook's for the last 35 years couldn't be happier. Thank you Sheldon you are amazing"
+> — Sandra S.
 
-## Find the Problem, Then Say It Straight
+## The Company You Call Once and Keep
 
-A house that won't cool or heat is usually one failed part, not a dead system. A bad capacitor, a worn ignitor, a wiring fault, a leak in the refrigerant line.
+The system in your basement or on the side of your house has probably been there longer than you remember buying it. Someone installed it, someone has looked at it since, and someone will be called when it finally stops.
 
-But it can look the same as a system that's truly finished, and that's where people get talked into spending more than they had to.
+It makes sense for those to be the same company. A system that has been installed, serviced and repaired by one outfit has a history, and the people who know that history don't have to start over every time.
 
-A guess costs you twice: once for the part that didn't fix it, and again for the one that would have.
+That's how we work. We put in the system, we look after it, and we're the ones you call when something goes wrong with it.
 
-So we diagnose first. We tell you what failed, what it takes to fix, and whether the repair is worth making. If the answer is a repair, you get a repair.
+> "When my ac went out 2 years ago I called Cook because that's who my grandparents always called. They had a new system in place within 48 hours."
+> — Richard R.
 
-> "Another HVAC company told me I would have to replace my heater and ac and then gave me an estimate that was insane. … They were very reasonable and took great care of me. They saved me thousands that I didn't have to spend. Very honest and reliable."
-> — LaVona B.
+## New Heating and Cooling Systems
 
-## AC Repair
+An old system tells you when it's finished. The repair bills start to stack up, one room is always too hot or too cold, and the unit runs all day to keep up.
 
-Warm air from the vents, a unit that runs all day and never catches up, ice on the lines, water where it shouldn't be. Each of those points to something specific, and most of them get worse the longer the system keeps running.
+We install new furnaces, air conditioners, unit heaters and electric air handlers, and we offer a variety of systems and equipment to fit your budget. Humidification and filtration go in with it, so you aren't opening the house up twice.
 
-We troubleshoot and diagnose your system, and we find refrigerant leaks. Low refrigerant means a leak somewhere, and topping it off without finding the leak only buys you a few weeks. We're EPA registered and certified to handle refrigerant.
+Because we also service what we install, we're thinking about the next fifteen years of that system, not just the day it goes in.
 
-We service all brands, so you don't have to be buying from us to call us.
+[See HVAC installation in Wichita →](/hvac-installation-wichita-ks/)
 
-[See AC repair in Wichita →](/ac-repair-wichita-ks/)
-
-## Furnace Repair
-
-A furnace that blows cold air, clicks and never lights, shuts off after a few minutes, or fills the house with a burning smell is telling you where to look. Ignitors wear out, flame sensors get dirty, wiring fails and filters choke off airflow.
-
-We troubleshoot and diagnose, and we check for carbon monoxide, because a furnace that burns gas poorly can put it into the house without a smell or a warning. We repair furnaces, unit heaters and electric air handlers.
-
-[See furnace repair in Wichita →](/furnace-repair-wichita-ks/)
-
-## New Air Conditioners and Furnaces
-
-Sometimes the repair isn't the answer. The system is old, the fixes keep stacking up, or the part costs more than the unit is worth.
-
-When that's the case, we install a new air conditioner or furnace, with a range of equipment to fit your budget. We'll lay out what the repair would cost against what replacing would, and you decide.
-
-> "The price couldn't be beat (had several estimates) on new heater and ac unit. The technicians were great! Super friendly and knowledgeable."
-> — Christy R.
-
-## Annual Maintenance Agreements
-
-Most breakdowns come on the hottest or coldest day of the year, when a system nobody has looked at in twelve months finally gives out. A check before the season catches the worn part while it's still cheap.
-
-Our Premium maintenance plan covers two servicings a year, priority emergency service within 24 hours, and 20% off parts and labor, year to year or on longer terms. Agreements are available for homes and for businesses.
-
-## Air Quality and Carbon Monoxide Detection
-
-Air in a closed house carries dust, pet dander and whatever your filter misses, and your system moves it through every room several times an hour.
-
-We install filters in a range of sizes, and whole-system filtration that goes on any existing system and removes up to 90% of air contaminants.
-
-Winter heat dries the air out, which is where the static shocks, cracked lips and gaps in the wood floors come from. A humidifier on the furnace puts that moisture back.
-
-We also do carbon monoxide detection. If you burn gas for heat, it's worth having checked.
-
-## Commercial Work and Custom Sheet Metal
-
-We work on commercial heating and cooling as well as homes, and we design mechanical systems for both.
-
-We also run our own sheet metal fabrication shop. When a building needs a duct or fitting that no stock part matches, we make it in-house to the measurements instead of forcing something close.
-
-## Customers Who Keep Calling Back
-
-A heating and cooling company earns repeat calls one visit at a time: show up when we said, fix what's actually wrong, and explain it so you know what happened.
-
-Do that for years and the same family calls when the next house needs a system.
-
-> "I have had Cooks do my HVAC work and installations for many, many years and the work has always been good, in each of my two homes. … I always use Cook's for service also. I appreciate Cook's work."
+> "I have had Cooks do my HVAC work and installations for many, many years and the work has always been good, in each of my two homes. The first system in Belle Plaine, a Carrier, still runs good after almost 40 years. … I always use Cook's for service also. I appreciate Cook's work."
 > — John E.
 
-That starts before the technician arrives, with the person who answers the phone.
+## Maintenance Plans
+
+Most systems quit on the hottest or coldest day of the year. That's when they work hardest, and it's when a worn part or a clogged filter that nobody checked finally gives out.
+
+Our Premium maintenance plan sends us out twice a year, before each season. It also gets you priority emergency service within 24 hours, and 20% off parts and labor.
+
+You can sign up year to year, or for 5 or 10 years. Plans are available for homes and for businesses.
+
+[See HVAC maintenance plans in Wichita →](/maintenance-plans-wichita-ks/)
+
+## When Something Breaks
+
+When the air stops or the heat won't come on, you want the people who already know your system. We troubleshoot and diagnose first, so you hear what actually failed before you hear what it costs.
+
+Often it's one part: an ignitor, a wiring fault, a leak. Sometimes it's the whole system. A repair that makes sense, we repair. A system that's finished, we'll say so, and show you the options.
+
+For air conditioners, we find refrigerant leaks and we're EPA registered and certified. For furnaces, we do carbon monoxide detection, because a furnace that burns gas poorly can put it into the house with no smell.
+
+We service all brands, so you don't have to have bought from us to call us.
+
+> "I have known Gerry for 30+ years. I have always used him for all my HVAC needs, always great pricing, and the workmanship is second to none."
+> — Jeff W.
+
+## People You Get to Know
+
+Calling the same company year after year only works if there's someone to call. When you phone Cook's, the office answers, and the technicians who come out are the same ones your neighbors have had.
+
+You start to know who's who. That makes a service call easier: nobody has to explain your house from scratch.
 
 > "Great customer service and competitive pricing. Glenn and Tyler are great Techs and Rosa in the office is very helpful."
 > — Sean S.
+
+## Air Quality and Humidity
+
+The air in a closed house carries dust, pet dander and whatever your filter misses, and the system moves it through every room several times an hour.
+
+We install filters in a range of sizes, and whole-system filtration that goes on any existing system and removes up to 90% of air contaminants.
+
+Winter heat also dries the air out, which is where the static shocks and cracked lips come from. A humidifier on the furnace puts that moisture back.
+
+## Commercial Work and Custom Sheet Metal
+
+We work on heating and cooling for businesses as well as homes, and we design mechanical systems for both.
+
+We also run our own sheet metal fabrication shop. When a building needs a duct or fitting that no stock part matches, we make it in-house to the measurements instead of forcing something close.
 
 ## Hours and Where We Work
 
@@ -103,13 +97,16 @@ No. We handle residential and commercial heating and cooling.
 Emergency service runs from 5:00 PM to 10:00 PM. Call (316) 945-2665.
 
 **Should I repair it or replace it?**
-Start with the repair question. A diagnosis tells you what failed and what it costs. If the system is worn out, we'll say so and show you your options.
+Start with a diagnosis. It tells you what failed and what it takes to fix. If the system is worn out, we'll say so and lay out what a new one involves.
 
 **Do you offer maintenance plans?**
 Yes, for homes and businesses. The Premium plan includes two servicings a year, priority emergency service within 24 hours and 20% off parts and labor, year to year or for 5 or 10 years.
 
-## No Heat? No Cooling? Call Us
+**Do I have to buy my system from you to call you?**
+No. Call for service on any brand.
 
-Call (316) 945-2665 and tell us what the system is doing. We'll get a technician out to find the problem.
+## Call Cook's
+
+Whether it's a new system, a plan for the one you have or a unit that just stopped, call (316) 945-2665 and tell us what's going on.
 
 Cook's Heating and Cooling, 2215 S West St, Wichita, KS 67213. Monday to Friday, 8:00 AM to 5:00 PM; emergency service 5:00 PM to 10:00 PM.

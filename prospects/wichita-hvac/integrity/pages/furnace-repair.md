@@ -2,7 +2,7 @@
 
 # Furnace Repair in Wichita, KS — Integrity Heating and Cooling
 
-A furnace that won't light on a cold Kansas morning can't wait for next week. We find what failed, explain it plainly and repair it for a fair price. Call me for a free phone consultation.
+A furnace that won't light on a cold Kansas morning can't wait for next week. We find what failed, explain it plainly and repair it for a fair price. Call for a free phone consultation.
 
 **Buttons:** Call (316) 932-9559 | Request Service
 
@@ -35,12 +35,12 @@ If a technician finds one, you'll hear it from us straight, with what it means a
 
 ## How We Handle a Furnace Call
 
-We diagnose the problem first. A technician finds the actual cause and shows you what failed.
+We diagnose first. A technician finds the actual cause and shows you what failed.
 
-You get a full breakdown of what the repair costs, with no surprise charges at the end. And when the work is done, we clean up after ourselves, because a furnace closet full of dust and old parts is not your job.
+Then you get a full breakdown of what the repair costs, with no surprise charges at the end. When the work is done, we clean up after ourselves, because a furnace closet full of dust and old parts is not your job.
 
-> "Sam and his team are outstanding in every way. They are dependable and accountable, best prices around, courteous and respectful, and always leave the place exactly as they found it (i.e., they never leave a mess)."
-> — Brett J.
+> "Sam and his team installed a new furnace for me. They were timely, worked efficiently and cleaned up the mess afterwards. I highly recommend Integrity Heating and Cooling and will use them again."
+> — Karen E.
 
 ## Repair or New Furnace?
 
@@ -48,10 +48,10 @@ Repair is the right answer most of the time. An igniter, a sensor or a motor cos
 
 A new furnace starts to make sense when the furnace is old, the repairs keep coming, or the heat exchanger has failed. Spending a lot on an old furnace is often money better put toward a new one.
 
-We tell you which side of that line you're on. If it's time to replace, we install new furnaces and heating systems too.
+We tell you which side of that line you're on. If it's time to replace, we install new furnaces and heating systems too, and we stand by that work.
 
-> "Sam and his team installed a new furnace for me. They were timely, worked efficiently and cleaned up the mess afterwards. I highly recommend Integrity Heating and Cooling and will use them again."
-> — Karen E.
+> "Integrity Heating and Cooling replaced my whole HVAC system and left me with full confidence that everything was installed to last with no problems. They were very thorough and efficient and got the job done. I wasn’t sure I could get a fair quote along with great work ethic but these guys proved me wrong!"
+> — Maddie R.
 
 ## Keeping a Furnace Healthy
 

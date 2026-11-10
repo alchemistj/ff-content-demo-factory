@@ -2,7 +2,7 @@
 
 # AC Repair in Wichita, KS — Integrity Heating and Cooling
 
-The house is climbing past 80 and the vents are blowing warm. We find out what failed, explain it in plain words and fix it at a fair price. Call me for a free phone consultation.
+The house is climbing past 80 and the vents are blowing warm. We find out what failed, explain it in plain words and fix it at a fair price. Call for a free phone consultation.
 
 **Buttons:** Call (316) 932-9559 | Request Service
 

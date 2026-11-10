@@ -1,41 +1,49 @@
 # Plan: Air Capital Heating and Air (Wichita, KS)
 
-Phone (316) 990-1911. No street address ("Wichita, KS"). No dealer status, licence, founding year or owner name. Free estimates: the site says "Call us for a free estimate" (residential AC page), so the buttons line uses "Get a Free Estimate".
+Sources: `facts.md` (claims), `reviews.json` (quotes; 27 Google reviews, 5.0, pulled 2026-11-09), `IDEAS.md` section 3 (idea decided). `facts.md` still says reviews are "pending"; that is stale.
 
-## Company type, H1s, pages
-- Home H1: HVAC Company in Wichita, KS — Air Capital Heating and Air
-- Service 1: AC Repair in Wichita, KS (`pages/ac-repair.md`): the strongest review evidence (heat waves, same-day, capacitor, motor).
-- Service 2: Furnace Repair in Wichita, KS (`pages/furnace-repair.md`): the facts list furnace repair; no review names a furnace, so this page leans on reviews about honesty and communication and teaches the furnace side from trade knowledge.
-- No cannibalization: home owns "HVAC company"; the pages own "AC repair" and "furnace repair". Installation, ductless, maintenance and commercial stay as home cards with no links.
+## Company type and H1s
+- Company type: HVAC Company.
+- Homepage H1: `HVAC Company in Wichita, KS — Air Capital Heating and Air`
+- Service page 1: `AC Repair in Wichita, KS — Air Capital Heating and Air` (keyword: AC repair Wichita KS), `/ac-repair-wichita-ks/`
+- Service page 2: `AC Replacement in Wichita, KS — Air Capital Heating and Air` (keyword: AC replacement Wichita KS), `/ac-replacement-wichita-ks/`
+- Furnace repair page is retired to `pages-old/`; furnace and heating work is mentioned on the homepage without a link.
 
 ## The idea
-When the system quits on the hottest or coldest day, you need a Wichita company that shows up fast, tells you exactly what is wrong, and prices it fairly. We are a new company with experienced techs, and reviews from the first months prove it: same-day, explained, no upsell.
+We are a new Wichita company run by people with years of hands-on HVAC experience, and we are proving it in the open: this summer's 104 and 106 degree calls answered, and what those first customers wrote is on the page for anyone who has never heard of us.
+
+## What we will not say
+No founding year, no owner name, no dealer or "authorized" claim (Ruud unverified), no licence number, no warranty, no "seven days a week" or Sunday claim (Sunday is an open question), no Spanish-language claim, no named technicians, no prices, no response-time guarantee. Hours are given only as 8am to 5pm with emergency calls available.
+
+## Review allocation (each review once across the site)
+- Home: Mai D., Jayci G., Wichita B., Elizabeth H. (J D. was an IDEAS pick but the checker's name rule needs a first name of two letters or more; see report.)
+- AC Repair: Tammy S., Maria F., Hannah M., Carlos F. (excerpt), Oscar M.
+- AC Replacement: Sabrina F., Victor V.
+- Contact: Aaron S.
 
 ## Homepage sections
-1. Hero (Carlos F. first review): AC dead in July. Reason: Wichita summers run past 100. We: same-day and next-day appointments, 8am-5pm seven days, emergency calls available.
-2. Why Air Capital (new company, experienced team). Moment: choosing a company you've never heard of. Reason: "new" is not "green"; site says years of hands-on experience between owners and technicians. Proof: Mai D. "new to market but years of experience between the owners".
-3. AC Repair (link). Moment: warm air from the vents. Reason: capacitors, motors, refrigerant, drainage. We: look, explain, offer options. Proof: Jayci G. (arrived within an hour).
-4. Heating Repair (link to Furnace Repair). Moment: cold house in January. Reason: igniter, sensor, filter, blower. Furnaces, boilers, heat pumps. No review proof needed here; links on.
-5. AC and furnace replacement. Moment: repair bill vs new system. Reason: age, repeat failures. We: tell you the choice straight; financing through Enhancify. Proof: Sabrina F. (full system, timely, competitive pricing).
-6. Ductless mini splits, maintenance plans, light commercial: short list, no links. Proof for maintenance: Elizabeth H. (tune-up, communication).
-7. Service area (nine towns), hours, FAQ, final CTA.
+1. **Top.** Moment: a company you have never heard of. We are new, we say so, owners have years of experience. CTA: call for a free estimate. Proof: Mai D. ("They're new to market but years of experience between the owners.").
+2. **A New Company, and We Say So.** Moment: hesitating over hiring someone with no name yet. Reason: a new company has only its work to show, so we put that work where you can read it: 27 Google reviews, 5.0, written since August. Does: owners and technicians with years of hands-on experience. Proof: (the hero review).
+3. **When It Quits in the Heat.** Moment: 100+ degrees, house warming up. Reason: heat is when worn parts fail, so calls bunch up and waiting is costly. Does: same-day and next-day appointments, emergency calls. Proof: Jayci G. (4 hours to get a call back elsewhere, within an hour here).
+4. **AC Repair.** Moment: warm air, silent outdoor unit. Reason: usually one small part. Does: find it, explain it, fix it. Link to repair page. No review (proved on its own page).
+5. **AC Replacement.** Moment: the repeat breakdown on an old system. Reason: age and repeat repairs. Does: tell you if it is worth fixing first; financing through Enhancify. Link to replacement page.
+6. **We Explain Before We Fix.** Moment: feeling pushed on a hot day. Reason: unexplained diagnosis is how upselling happens. Does: explain what failed and all options. Proof: Wichita B. ("explained all of the options").
+7. **Heating, Maintenance, Ductless, Light Commercial.** Moment: small problems a tune-up catches. Does: heating repair for furnaces, boilers, heat pumps; plans; mini splits; light commercial. Proof: Elizabeth H. (tune-up).
+8. **Where We Work**, **Questions Before You Call**, **Call**.
 
-## AC repair page
-Moment: house is 85 and the vents blow warm. Reason: capacitor/motor/refrigerant/drain/thermostat; why heat kills weak parts. We: same-day, explain, options, no upsell. Proof: Tammy S. (106 degrees), Hannah M. (motor, within an hour), Oscar M. (explained what was wrong), Maria F. (price). Repair-vs-replace, what to check before calling, hours, towns, financing, FAQ.
+## AC Repair sections
+Warm air or silent unit (Maria F., fast and fair) / What usually fails (Hannah M., motor within an hour) / What happens when you call (Oscar M., same day, honest explanation) / Repair or replace (Carlos F., "didn't try to upsell") / Not sure it's the AC checklist / Where / Questions. Top proof: Tammy S. (106 degrees).
 
-## Furnace repair page
-Moment: no heat, or heat that quits. Reason: thermostat, filter airflow, igniter, flame sensor, blower; safety (gas smell, CO). We: diagnose and explain; furnaces, boilers, heat pumps. Proof (general service, not furnace-specific; used only for the explanation/communication point): Sophia L., Daniel Q., Absalon B. Repair vs replace, tune-ups, FAQ.
+## AC Replacement sections
+Signs the system is done / Why old systems cost more (trade: age, refrigerant, efficiency) / Whole system vs part of it / What a good replacement quote shows / Financing through Enhancify / Questions. Proof: Sabrina F. (full system, timely, competitive price), Victor V. (first call to installation).
 
-## Contact
-Call first (hours Mon-Sun 8-5, emergency calls available), or send a message. What to have ready. Towns. Email (site's only listed address) on this page only. Proof: Aaron S. (communication).
-
-## Questions visitors ask, and answers
-- Can you come today? Site: same-day and next-day appointments; reviews: same day, within an hour, within 12 hours.
-- Do you charge to look? Site: call for a free estimate. Repair pricing: reviews say fair/affordable; no prices invented.
-- Do you only do repairs? No: installs, replacement, ductless, maintenance plans, light commercial.
-- Financing? Site: through Enhancify, flexible options (no rates).
-- Where do you work? Nine towns from the site.
-- Weekends/emergencies? Site: Mon-Sun 8am-5pm, emergency calls available.
+## Questions a visitor asks, with answers from facts
+- Can you come today? Site: same-day and next-day appointments; reviews: same day, within an hour, under 12 hours.
+- Do you charge to look? Site: call for a free estimate. Prices: none invented; reviews say fair and affordable.
+- Do you only repair? No: installation, replacement, mini splits, maintenance plans, light commercial.
+- Financing? Through Enhancify; promotional 0% periods may be available depending on the financing partner (site wording).
+- Are you established? New to market (site and Mai D.); owners and technicians have years of experience.
+- Where? Nine towns from the site.
 
 ## Left out (unsupported)
-Ruud or any dealer status, licence number, "licensed and insured" (claim only, no proof), founding year, owner name, warranty, Spanish-language service, named technicians, prices, response-time guarantees.
+Dealer status, licence, insurance wording, founding year, owner name, warranty, Spanish service, technician names, prices, install durations, Sunday hours.
