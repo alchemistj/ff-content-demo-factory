@@ -82,8 +82,8 @@
         },
         "image": {
           "slot": "home-hero",
-          "alt": "Technician beside an outdoor air conditioner at a Wichita home",
-          "brief": "HVAC pool image"
+          "alt": "Technician checking an outdoor air conditioner at a Wichita home",
+          "brief": "HVAC pool: ac-repair-hero"
         },
         "sub": "When the air conditioner quits or the furnace won't light, you don't want a call center. You want a person who picks up. Call or text Nate at (316) 871-5085."
       },
@@ -103,13 +103,17 @@
           ]
         },
         {
-          "type": "prose",
+          "type": "split",
           "heading": "Text Us What's Wrong",
           "body": [
             "Sometimes you'd rather type than talk. The house is hot, the kids are in bed, and you don't want a phone call at the end of a long day.",
             "So text us. Say what the unit is doing, whether it's blowing warm, not starting, or making a noise it never made before. A written message gives us the details before we ever call back, and it gives you something to point to when we arrive.",
             "You can do it from your phone or from the text button on our website."
-          ]
+          ],
+          "image": {
+            "slot": "service-van",
+            "alt": "Service van parked in the driveway of a Wichita home"
+          }
         },
         {
           "type": "review",
@@ -187,12 +191,16 @@
           ]
         },
         {
-          "type": "prose",
+          "type": "split",
           "heading": "Every Reply, and a Clean House",
           "body": [
             "A repair isn't finished until you've heard back and the work area is clean. Nobody wants to find filters, boxes and dust left in the hallway.",
             "We clean up before we go. It's a small thing, and the people at home notice it."
-          ]
+          ],
+          "image": {
+            "slot": "tech-at-door",
+            "alt": "Technician with a clipboard at a customer's front door"
+          }
         },
         {
           "type": "review",
@@ -275,8 +283,8 @@
         },
         "image": {
           "slot": "furnace-hero",
-          "alt": "Technician working on a furnace in a Wichita home",
-          "brief": "HVAC pool image"
+          "alt": "Technician opening a furnace cabinet in a home utility room",
+          "brief": "HVAC pool: furnace-hero"
         },
         "sub": "When a furnace dies in a Kansas winter or the shower runs cold, you need a new heater put in right, by someone who answers when you call. Call or text Nate at (316) 871-5085."
       },
@@ -315,7 +323,7 @@
           "name": "Aaron S."
         },
         {
-          "type": "prose",
+          "type": "split",
           "heading": "What We Install",
           "list": [
             "**Furnaces,** as replacements for units that have failed or aged out.",
@@ -324,7 +332,11 @@
           ],
           "tail": [
             "We also repair what's already in your house, so if the answer is a repair instead of a new unit, you'll hear that from us."
-          ]
+          ],
+          "image": {
+            "slot": "thermostat",
+            "alt": "Hand adjusting a wall thermostat"
+          }
         },
         {
           "type": "prose",
@@ -416,8 +428,8 @@
         },
         "image": {
           "slot": "ac-repair-hero",
-          "alt": "Technician checking an outdoor air conditioner",
-          "brief": "HVAC pool image"
+          "alt": "Gas furnace burners lit with a steady blue flame",
+          "brief": "HVAC pool: furnace-detail"
         },
         "sub": "When your air conditioner hums but won't start, or the furnace blows cold, the fix is often one part, not a new system. Call or text Nate at (316) 871-5085."
       },
@@ -437,7 +449,7 @@
           "name": "William L."
         },
         {
-          "type": "prose",
+          "type": "split",
           "heading": "The Parts That Fail Most",
           "body": [
             "Moving parts wear out first, and the ones that work hardest wear fastest."
@@ -450,7 +462,11 @@
           ],
           "tail": [
             "Repairing the right part costs far less than replacing a system. Repairing the wrong part is how you pay twice."
-          ]
+          ],
+          "image": {
+            "slot": "airflow-vent",
+            "alt": "Ceiling air vent in a quiet Wichita home"
+          }
         },
         {
           "type": "prose",
@@ -568,8 +584,8 @@
         },
         "image": {
           "slot": "contact-hero",
-          "alt": "A Wichita home with an outdoor air conditioner",
-          "brief": "HVAC pool image"
+          "alt": "Brick ranch home with a wide lawn in the Wichita area",
+          "brief": "HVAC pool: contact-hero"
         },
         "sub": "The fastest way to reach us is to call or text (316) 871-5085. You'll get Nate."
       },

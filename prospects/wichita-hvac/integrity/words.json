@@ -91,8 +91,8 @@
         },
         "image": {
           "slot": "home-hero",
-          "alt": "Outdoor air conditioner beside a brick home in Wichita",
-          "brief": "outdoor AC condenser beside the brick wall of a Kansas ranch house, house and unit on the right, soft clear sky on the left, no readable text, no people"
+          "alt": "Technician checking an outdoor air conditioner beside a Wichita home",
+          "brief": "HVAC pool: home-hero"
         }
       },
       "sections": [
@@ -116,13 +116,17 @@
           "name": "Rita P."
         },
         {
-          "type": "prose",
+          "type": "split",
           "heading": "The Inconvenient Call",
           "body": [
             "A system never quits at a good time. It quits on a Saturday afternoon, on a holiday, or at 8pm when you've just found out the guests in your rental have no air.",
             "Our office hours are Monday to Friday, 8 AM to 5 PM. Outside those hours, call anyway. After-hours work costs more, and you hear the price on the phone before anyone comes out.",
             "I take those calls myself when I can. A fair price at an hour when you have no other choice is the test of a company, and we mean to pass it."
-          ]
+          ],
+          "image": {
+            "slot": "tech-at-door",
+            "alt": "Technician with a clipboard at a customer's front door"
+          }
         },
         {
           "type": "review",
@@ -275,8 +279,8 @@
         },
         "image": {
           "slot": "ac-hero",
-          "alt": "Outdoor AC unit beside a Wichita home",
-          "brief": "outdoor air conditioner condenser beside a brick house in summer, unit on the right, bright soft sky and lawn on the left, no readable text, no people"
+          "alt": "Technician checking an outdoor air conditioner at a Wichita home",
+          "brief": "HVAC pool: ac-repair-hero"
         }
       },
       "sections": [
@@ -305,12 +309,16 @@
           ]
         },
         {
-          "type": "prose",
+          "type": "split",
           "heading": "How We Work a Repair",
           "body": [
             "We start with the diagnosis. A technician looks at the system, finds the actual cause and tells you what he found, in words you can follow.",
             "Then you see what you're paying for. We give you a full breakdown of the costs, so there are no surprise charges at the end."
-          ]
+          ],
+          "image": {
+            "slot": "airflow-vent",
+            "alt": "Ceiling air vent in a quiet Wichita home"
+          }
         },
         {
           "type": "review",
@@ -405,8 +413,8 @@
         },
         "image": {
           "slot": "furnace-hero",
-          "alt": "Gas furnace in a home utility room",
-          "brief": "gas furnace in a tidy basement utility room, furnace on the right, plain painted wall and soft warm light on the left, no readable text, no tools in hands, no people"
+          "alt": "Gas furnace burners lit with a steady blue flame",
+          "brief": "HVAC pool: furnace-detail"
         }
       },
       "sections": [
@@ -443,12 +451,16 @@
           ]
         },
         {
-          "type": "prose",
+          "type": "split",
           "heading": "How We Handle a Furnace Call",
           "body": [
             "We diagnose first. A technician finds the actual cause and shows you what failed.",
             "Then you get a full breakdown of what the repair costs, with no surprise charges at the end. When the work is done, we clean up after ourselves, because a furnace closet full of dust and old parts is not your job."
-          ]
+          ],
+          "image": {
+            "slot": "furnace-hero",
+            "alt": "Technician opening a furnace cabinet in a home utility room"
+          }
         },
         {
           "type": "review",
@@ -534,8 +546,8 @@
         },
         "image": {
           "slot": "contact-hero",
-          "alt": "Quiet Wichita street of brick homes",
-          "brief": "quiet residential street of Wichita brick homes with outdoor AC units beside the walls, houses on the right, street leading off to the left, calm soft sky behind the text side, no readable text, no people"
+          "alt": "Service van parked in the driveway of a Wichita home",
+          "brief": "HVAC pool: service-van"
         }
       },
       "sections": [
@@ -555,14 +567,18 @@
           ]
         },
         {
-          "type": "prose",
+          "type": "split",
           "heading": "What to Have Ready",
           "list": [
             "What the system is doing: no heat, no cooling, noise, a smell, ice, a tripped breaker.",
             "Whether it's a furnace, an air conditioner or a heat pump, and the brand if you can see it on the unit.",
             "Roughly how old the system is, and any repairs you remember.",
             "Whether it's a home or a commercial building."
-          ]
+          ],
+          "image": {
+            "slot": "thermostat",
+            "alt": "Hand adjusting a wall thermostat"
+          }
         },
         {
           "type": "callBand",

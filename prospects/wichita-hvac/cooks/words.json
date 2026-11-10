@@ -99,8 +99,8 @@
         },
         "image": {
           "slot": "home-hero",
-          "alt": "Outdoor air conditioner beside a brick Wichita home",
-          "brief": "outdoor AC condenser unit beside the brick wall of a Kansas ranch house, house and unit on the right, soft clear sky on the left, no readable text, no tools in hands, no people"
+          "alt": "Outdoor air conditioner beside a Wichita home",
+          "brief": "HVAC pool: home-hero-alt"
         }
       },
       "sections": [
@@ -118,9 +118,8 @@
             "That's how we work. We put in the system, we look after it, and we're the ones you call when something goes wrong with it."
           ],
           "image": {
-            "slot": "home-repair",
-            "alt": "Gas furnace in a clean utility room",
-            "brief": "indoor gas furnace with its panel closed in a tidy utility room, furnace on the right, plain wall and soft light on the left, no readable text, no tools in hands, no people"
+            "slot": "tech-at-door",
+            "alt": "Technician with a clipboard at a customer's front door"
           }
         },
         {
@@ -159,9 +158,8 @@
             "route": "/maintenance-plans-wichita-ks/"
           },
           "image": {
-            "slot": "home-install",
-            "alt": "New air conditioner condenser on a concrete pad",
-            "brief": "new outdoor AC condenser on a concrete pad beside a light brick wall, unit on the left side of the frame away from the text, open lawn and soft sky behind the text side, no readable text, no tools in hands, no people"
+            "slot": "airflow-vent",
+            "alt": "Ceiling air vent in a quiet Wichita home"
           }
         },
         {
@@ -283,8 +281,8 @@
         },
         "image": {
           "slot": "install-hero",
-          "alt": "HVAC Installation in Wichita, KS",
-          "brief": "HVAC pool image for HVAC Installation"
+          "alt": "Technician opening a furnace cabinet in a home utility room",
+          "brief": "HVAC pool: furnace-hero"
         }
       },
       "sections": [
@@ -318,14 +316,18 @@
           "name": "Christy R."
         },
         {
-          "type": "prose",
+          "type": "split",
           "heading": "What We Install",
           "body": [
             "We install new heating units and new air conditioners, and we offer a variety of systems and equipment to fit your budget.",
             "For heat, that means furnaces, unit heaters and electric air handlers. For cooling, it means new air conditioners.",
             "We also install humidification and filtration systems, so the air in the house improves at the same time as the equipment. Whole-system filtration adds to an existing system and removes up to 90% of air contaminants, and a humidifier on the furnace gives moisture back to dry winter air.",
             "We work on homes and businesses, and we handle mechanical system design for both."
-          ]
+          ],
+          "image": {
+            "slot": "furnace-detail",
+            "alt": "Gas furnace burners lit with a steady blue flame"
+          }
         },
         {
           "type": "prose",
@@ -425,8 +427,8 @@
         },
         "image": {
           "slot": "maint-hero",
-          "alt": "Maintenance Plans in Wichita, KS",
-          "brief": "HVAC pool image for Maintenance Plans"
+          "alt": "Hand adjusting a wall thermostat",
+          "brief": "HVAC pool: thermostat"
         }
       },
       "sections": [
@@ -446,13 +448,17 @@
           ]
         },
         {
-          "type": "prose",
+          "type": "split",
           "heading": "What a Seasonal Check Is For",
           "body": [
             "A service visit before the season is when a worn part is found while it is still cheap and the weather is still mild.",
             "A good check looks at the filter, because the wrong size or a clogged one chokes airflow. It looks at wiring and connections, where small faults hide. It catches a system that is running poorly before you're depending on it.",
             "It also gives someone who knows your system a chance to look at it before something fails. That's how the wiring fault and the wrong filter in Ted H.'s review were caught."
-          ]
+          ],
+          "image": {
+            "slot": "ac-repair-hero",
+            "alt": "Technician checking an outdoor air conditioner at a Wichita home"
+          }
         },
         {
           "type": "prose",
@@ -564,8 +570,8 @@
         },
         "image": {
           "slot": "contact-hero",
-          "alt": "Quiet Wichita street of brick homes",
-          "brief": "quiet residential street of Wichita brick homes with outdoor AC units beside the walls, houses on the right, street leading off to the left, calm soft sky behind the text side, no readable text, no people"
+          "alt": "Brick ranch home with a wide lawn in the Wichita area",
+          "brief": "HVAC pool: contact-hero"
         }
       },
       "sections": [
@@ -595,12 +601,16 @@
           ]
         },
         {
-          "type": "prose",
+          "type": "split",
           "heading": "Where We Are",
           "body": [
             "Cook's Heating and Cooling 2215 S West St Wichita, KS 67213",
             "We work in Wichita and the surrounding towns."
-          ]
+          ],
+          "image": {
+            "slot": "service-van",
+            "alt": "Service van parked in the driveway of a Wichita home"
+          }
         },
         {
           "type": "review",

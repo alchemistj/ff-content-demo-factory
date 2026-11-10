@@ -101,8 +101,8 @@
         },
         "image": {
           "slot": "home-hero",
-          "alt": "Air conditioner condenser beside a brick Wichita home",
-          "brief": "outdoor AC condenser unit beside the brick wall of a Kansas ranch house, house and unit on the right, soft clear sky on the left, no readable text, no people"
+          "alt": "Technician checking an outdoor air conditioner at a Wichita home",
+          "brief": "HVAC pool: ac-repair-hero"
         }
       },
       "sections": [
@@ -167,12 +167,16 @@
           }
         },
         {
-          "type": "prose",
+          "type": "split",
           "heading": "No Upsell From a Name You Don't Know",
           "body": [
             "A company people haven't heard of can't lean on a reputation, and it shouldn't lean on a sales pitch either. The cheapest way for us to earn the next call is to fix what's broken and stop there.",
             "So when the problem is a capacitor, you pay for a capacitor, and the estimate is free. You decide what happens next."
-          ]
+          ],
+          "image": {
+            "slot": "tech-at-door",
+            "alt": "Technician with a clipboard at a customer's front door"
+          }
         },
         {
           "type": "review",
@@ -263,8 +267,8 @@
         },
         "image": {
           "slot": "ac-hero",
-          "alt": "Outdoor AC unit on a Wichita home",
-          "brief": "outdoor air conditioner condenser beside a brick house in summer, unit on the right, bright soft sky and lawn on the left, no readable text, no people"
+          "alt": "Technician checking an outdoor air conditioner beside a Wichita home",
+          "brief": "HVAC pool: home-hero"
         }
       },
       "sections": [
@@ -310,13 +314,17 @@
           "name": "Hannah M."
         },
         {
-          "type": "prose",
+          "type": "split",
           "heading": "What Happens When You Call",
           "body": [
             "You tell us what the system is doing, and we book you in. Same-day and next-day appointments are available, and so are emergency calls.",
             "We're a new company, and a repair call is how most people meet us. So we make it easy to judge: the technician checks the system, finds the failed part and explains what failed in plain words. Then we lay out your options.",
             "You decide. If a repair makes sense, we do it. If it doesn't, we say so and talk through replacement."
-          ]
+          ],
+          "image": {
+            "slot": "service-van",
+            "alt": "Service van parked in the driveway of a Wichita home"
+          }
         },
         {
           "type": "review",
@@ -401,8 +409,8 @@
         },
         "image": {
           "slot": "acreplace-hero",
-          "alt": "New outdoor air conditioner beside a Wichita home",
-          "brief": "new outdoor AC condenser beside a Kansas house, unit on the right, calm left side, no people, no text"
+          "alt": "Outdoor air conditioner beside a Wichita home",
+          "brief": "HVAC pool: home-hero-alt"
         }
       },
       "sections": [
@@ -439,13 +447,17 @@
           ]
         },
         {
-          "type": "prose",
+          "type": "split",
           "heading": "What We Install",
           "body": [
             "We install energy-efficient air conditioning systems for homes, matched to your house and your needs. The goal is a system that is the right size for your home, not the biggest one on the truck.",
             "Size matters more than most people expect. A system that is too large cools the air quickly, shuts off and never pulls much moisture out, so the house feels clammy. One that is too small runs without stopping and still can't keep up on a 100-degree day.",
             "If your furnace is also near the end of its life, we install and replace furnaces too. Replacing both together means the two pieces of equipment are matched."
-          ]
+          ],
+          "image": {
+            "slot": "thermostat",
+            "alt": "Hand adjusting a wall thermostat"
+          }
         },
         {
           "type": "review",
@@ -521,8 +533,8 @@
         },
         "image": {
           "slot": "contact-hero",
-          "alt": "Quiet Wichita street of brick homes",
-          "brief": "quiet residential street of Wichita brick homes with outdoor AC units beside the walls, houses on the right, street leading off to the left, calm soft sky behind the text side, no readable text, no people"
+          "alt": "Brick ranch home with a wide lawn in the Wichita area",
+          "brief": "HVAC pool: contact-hero"
         }
       },
       "sections": [
@@ -546,14 +558,18 @@
           ]
         },
         {
-          "type": "prose",
+          "type": "split",
           "heading": "What to Have Ready",
           "list": [
             "Whether it's your AC, furnace, boiler or heat pump",
             "What it's doing: no cooling, no heat, odd noises, a smell or ice on the lines",
             "The age of the system, if you know it",
             "Your town, so we can confirm we cover you"
-          ]
+          ],
+          "image": {
+            "slot": "airflow-vent",
+            "alt": "Ceiling air vent in a quiet Wichita home"
+          }
         },
         {
           "type": "prose",
