@@ -21,3 +21,13 @@ Tagged `demo-prospect` and `wichita`, source "Fluid Frame demo outreach".
 | TWG Construction | (company only) | z1ZSQ0r0VOek87LzVG0i |
 | Farha HomeTrends | Geremy Farha | TLFTqkMiJbFaMF4TJVCr |
 | Modern Glass Structures | (company only) | pbG1165dYzEBpBv86YMq |
+
+## Send log (2026-11-10, about 12:15 PM Central)
+| Business | Result |
+|---|---|
+| GS Gutters LLC | SENT via http://gsguttersllc.com/contact/. Site replied "Thanks for contacting us". Blank lines kept. |
+| Dan Dan The Window Man | BLOCKED: a reCAPTCHA challenge appeared on submit. Not sent. Hand-send. |
+| TWG Construction | BLOCKED: reCAPTCHA v3 "suspected as abusive usage". Not sent. Hand-send. |
+| Farha HomeTrends | BLOCKED: Contact Form 7 marked it spam. Not sent. Hand-send. |
+
+Hand-send list (Josh): Dan Dan, TWG, Farha, Evolve (no contact form; info@evolve-exteriors.com is on the site), New Windows For America (no form; phone only), Modern Glass (Typeform quote form).
