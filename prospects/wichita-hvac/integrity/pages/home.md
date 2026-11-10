@@ -1,4 +1,4 @@
-**Eyebrow:** Family-owned heating and cooling
+**Eyebrow:** Wichita heating and cooling, held to its name
 
 # HVAC Company in Wichita, KS — Integrity Heating and Cooling
 
@@ -28,8 +28,8 @@ Our office hours are Monday to Friday, 8 AM to 5 PM. Outside those hours, call a
 
 I take those calls myself when I can. A fair price at an hour when you have no other choice is the test of a company, and we mean to pass it.
 
-> "Sam is one of the hardest working people I know.  He and his team are the epitome of integrity-based service.  Highly recommend!"
-> — Jennifer J.
+> "Had another issue that Sam was able to walk me through over the phone and back in running within an hour on a Sunday.  Very responsive and reliable customer service."
+> — Tyler J.
 
 ## For Landlords, Hosts and Property Owners
 
@@ -67,9 +67,11 @@ The cause is often small: an igniter, a flame sensor, a clogged filter or a fail
 
 ## When a Repair Stops Making Sense
 
-If you've paid for two or three repairs in a couple of years and the equipment is old, a new system is usually the cheaper road. Sometimes the honest answer is one more repair instead.
+A company that also sells systems has a reason to call yours finished. So we show you what failed and what it would cost to fix, and you can weigh that against a new system.
 
-We install new heating and cooling equipment too, and we'll give you our real opinion before you spend that kind of money. A system that is sized and set up badly runs hard and wears out early, so the installation matters as much as the equipment.
+If you've paid for two or three repairs in a couple of years and the equipment is old, a new system is usually the cheaper road. Sometimes the honest answer is one more repair.
+
+We install heating and cooling equipment too. A system that is sized and set up badly runs hard and wears out early, so the installation has to be right.
 
 ## Heat Pumps, Motors and Maintenance
 
@@ -77,15 +79,18 @@ We also repair heat pumps and replace blower and condenser motors that have star
 
 A dirty filter, a coil caked with dust and a motor running dry wear a system out a little more each season. A check before the heavy season catches them while they're cheap. We offer maintenance plans, so ask about one when you call.
 
-## What You Can Count On
+## What the Name Covers
 
-**A price you can follow.** We break down the cost of the work, with no surprise charges.
+**The price, itemized.** You get a full breakdown of the cost, with no surprise charges.
 
-**Answers in plain words.** We explain what failed and why, so you decide with the facts in front of you.
+**The after-hours price, on the phone.** You hear it before anyone drives out.
 
 **A clean house when we leave.** A repair shouldn't leave you a second job.
 
-**Work we stand behind.** We do the job right the first time, and we stand by it.
+**Work we stand behind.** We aim to do the job right the first time, and if it isn't right, you call us.
+
+> "Sam is one of the hardest working people I know.  He and his team are the epitome of integrity-based service.  Highly recommend!"
+> — Jennifer J.
 
 ## Serving Greater Wichita
 
@@ -102,17 +107,17 @@ Call anyway. After-hours work is priced by phone, so you know the number before 
 **Will I get a surprise on the bill?**
 We give you a full breakdown of the costs, with no surprise charges.
 
-**Do you work on my brand?**
-We work on all the major heating and cooling brands.
+**Who will I be dealing with?**
+I'm Sam. I take calls myself when I can, and a technician comes out to your house. Customers have met Clayton and Cory.
 
-**Should I repair it or replace it?**
-That depends on the age of the unit, what failed and what the repair costs. We'll go through it with you and give you an honest opinion.
+**What if something isn't right after you leave?**
+Call the same number. We stand by our work, and we'd rather hear about it from you than find out another way.
 
 **Do you work on commercial buildings?**
 Yes, for businesses and landlords as well as homes.
 
 ## Call Today
 
-If your heat or air has quit, call and tell us what's happening. You'll hear what we think, what it costs and what we'd do.
+Hold us to the name. Call (316) 932-9559 and you'll hear what we found, what it costs and what we'd do, and then you decide.
 
-Integrity Heating and Cooling: (316) 932-9559.
+Integrity Heating and Cooling, 801 S Fabrique Dr, Wichita.

@@ -45,9 +45,9 @@ You can sign up year to year, or for 5 or 10 years. Plans are available for home
 
 ## When Something Breaks
 
-When the air stops or the heat won't come on, you want the people who already know your system. We troubleshoot and diagnose first, so you hear what actually failed before you hear what it costs.
+A furnace or air conditioner that has run for fifteen years or more is going to break at some point. What matters then is whether the person looking at it knows what they're looking at.
 
-Often it's one part: an ignitor, a wiring fault, a leak.
+We troubleshoot and diagnose first, so you hear what failed before you hear what it costs. Often it's one part: an ignitor, a wiring fault, a leak.
 
 Sometimes it's the whole system. A repair that makes sense, we repair. A system that's finished, we'll say so and show you the options.
 
@@ -55,17 +55,20 @@ For air conditioners, we find refrigerant leaks and we're EPA registered and cer
 
 We service all brands, so you don't have to have bought from us to call us.
 
-> "I have known Gerry for 30+ years. I have always used him for all my HVAC needs, always great pricing, and the workmanship is second to none."
-> — Jeff W.
+> "Thank you Cook's! Called on a Friday morning, sweltering hot day, and my A/C was out. Got a technician here that afternoon, on time, and they fixed me up! Reasonable price, professional service. Ricky was awesome."
+> — Vicki V.
 
 ## People You Get to Know
 
-Calling the same company year after year only works if there's someone to call. When you phone Cook's, you reach the office. A technician comes out and looks at your system, and the next call builds on the last one.
+Staying with one company for decades only works if there's a person at the other end each time. Cook's is a crew, not one name on a truck: an office that answers and technicians customers learn by name.
 
-That makes a service call easier: nobody has to explain your house from scratch.
+That makes a service call easier. Nobody explains your house from scratch, and the next visit builds on the last.
 
-> "Great customer service and competitive pricing. Glenn and Tyler are great Techs and Rosa in the office is very helpful."
-> — Sean S.
+> "I have known Gerry for 30+ years. I have always used him for all my HVAC needs, always great pricing, and the workmanship is second to none."
+> — Jeff W.
+
+> "Charlie was our technician, he was absolutely awesome, very knowledgeable on what he was doing ! If and when I need to use them again, I hope I get Charlie again !"
+> — Diana N.
 
 ## Air Quality and Humidity
 
@@ -98,17 +101,17 @@ No. We handle residential and commercial heating and cooling.
 **What if it breaks after the office closes?**
 Emergency service runs from 5:00 PM to 10:00 PM. Call (316) 945-2665.
 
-**Should I repair it or replace it?**
-Start with a diagnosis. It tells you what failed and what it takes to fix. If the system is worn out, we'll say so and lay out what a new one involves.
+**How long should a furnace or air conditioner last?**
+Furnaces commonly run 15 to 20 years and air conditioners 10 to 15, depending on how hard they work and how often someone services them. A system near the end of that range is the one to keep an eye on. When it gets there, we diagnose first and lay out what another repair buys you against what a new system involves.
 
-**Do you offer maintenance plans?**
-Yes, for homes and businesses. The Premium plan includes two servicings a year, priority emergency service within 24 hours and 20% off parts and labor, year to year or for 5 or 10 years.
+**Why would I sign up for a 5- or 10-year plan?**
+Because the system you're looking after lasts that long. The Premium plan is two servicings a year, priority emergency service within 24 hours and 20% off parts and labor, on terms of 1, 5 or 10 years. It's available for homes and for businesses.
 
-**Do I have to buy my system from you to call you?**
-No. Call for service on any brand.
+**Can you take over a system someone else installed?**
+Yes. We service all brands, whoever put the system in. After our first visit, the next call builds on it.
 
 ## Call Cook's
 
-Whether it's a new system, a plan for the one you have or a unit that just stopped, call (316) 945-2665 and tell us what's going on.
+Save this number: (316) 945-2665. Call when you need a new system, a plan for the one you have, or when a unit has just stopped, and you'll be talking to the company that stays.
 
 Cook's Heating and Cooling, 2215 S West St, Wichita, KS 67213. Monday to Friday, 8:00 AM to 5:00 PM; emergency service 5:00 PM to 10:00 PM.
