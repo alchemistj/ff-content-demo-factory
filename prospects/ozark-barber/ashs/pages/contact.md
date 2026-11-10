@@ -36,4 +36,6 @@ A photo of the cut you want is the fastest way to get it right. If you can't fin
 
 ## Ready to Book?
 
+Pick a time on the booking page, or call the shop. Tell us the cut you want, and we'll take it from there.
+
 **Buttons:** Call (417) 380-3078 | Book Online
