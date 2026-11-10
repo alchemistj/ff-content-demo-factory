@@ -1,0 +1,703 @@
+{
+  "schema": "words-package/v1",
+  "business": {
+    "name": "Dream Makers LLC Heating and Cooling",
+    "slug": "dreammakers",
+    "city": "Wichita",
+    "state": "KS",
+    "companyType": "Heating and Air Conditioning Company",
+    "owners": [
+      "Nate"
+    ],
+    "phones": [
+      {
+        "label": "Wichita",
+        "display": "(316) 871-5085",
+        "tel": "+13168715085"
+      }
+    ],
+    "email": null,
+    "hours": null,
+    "address": "5720 1/2 S Broadway, Wichita, KS 67216",
+    "serviceArea": {
+      "summary": "Wichita and the surrounding communities",
+      "towns": [
+        "Wichita"
+      ]
+    }
+  },
+  "trustBar": [
+    "Owner answers the phone",
+    "Call or text Nate",
+    "Heating and air conditioning",
+    "Wichita, KS"
+  ],
+  "services": [
+    {
+      "name": "Heater Installation",
+      "route": "/heater-installation-wichita-ks/",
+      "blurb": "Furnaces and water heaters installed by people you can text."
+    },
+    {
+      "name": "HVAC Parts Replacement",
+      "route": "/hvac-parts-replacement-wichita-ks/",
+      "blurb": "Fix the failed part instead of replacing the whole system."
+    },
+    {
+      "name": "Air Conditioner Installation",
+      "route": null,
+      "blurb": "New air conditioners for Wichita homes."
+    },
+    {
+      "name": "Air Conditioner Repair",
+      "route": null,
+      "blurb": "AC repair from the owner's own crew."
+    },
+    {
+      "name": "Furnace Repair and Replacement",
+      "route": null,
+      "blurb": "Furnace repair, or replacement when it's time."
+    }
+  ],
+  "pages": [
+    {
+      "role": "home",
+      "route": "/home/",
+      "navLabel": "Home",
+      "keyword": "heating and air conditioning company Wichita KS",
+      "seo": {
+        "title": "Heating and Air Conditioning Company in Wichita, KS | Dream Makers LLC Heating and Cooling",
+        "description": "Heating and air conditioning company in Wichita, KS where you get the owner's number. Call or text Dream Makers for repairs, installs and parts."
+      },
+      "hero": {
+        "eyebrow": "Wichita heating and cooling, owner on the phone",
+        "h1": "Heating and Air Conditioning Company in Wichita, KS — Dream Makers LLC Heating and Cooling",
+        "primaryCta": {
+          "label": "Call (316) 871-5085",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Request a Quote",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "home-hero",
+          "alt": "Technician beside an outdoor air conditioner at a Wichita home",
+          "brief": "HVAC pool image"
+        },
+        "sub": "When the air conditioner quits or the furnace won't light, you don't want a call center. You want a person who picks up. Call or text Nate at (316) 871-5085."
+      },
+      "sections": [
+        {
+          "type": "review",
+          "quote": "Nathan is amazing always answers when I text or call him and has fixed any issue I have had. Very reasonably priced as well!",
+          "name": "Mashaela W."
+        },
+        {
+          "type": "prose",
+          "heading": "You Get Nate's Number",
+          "body": [
+            "Most heating and cooling companies hand you a dispatcher, a ticket and a window of time. We hand you Nate's number.",
+            "Dream Makers is a Wichita company where the owner is the person on the other end of the call. You tell him what the system is doing, and he tells you what he thinks it is and when he can be there.",
+            "That matters most on the worst day for it: an air conditioner that dies on a July evening, a heater that quits in a February snow storm. You shouldn't have to explain your house to someone new every time."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Text Us What's Wrong",
+          "body": [
+            "Sometimes you'd rather type than talk. The house is hot, the kids are in bed, and you don't want a phone call at the end of a long day.",
+            "So text us. Say what the unit is doing, whether it's blowing warm, not starting, or making a noise it never made before. A written message gives us the details before we ever call back, and it gives you something to point to when we arrive.",
+            "You can do it from your phone or from the text button on our website."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Lifesavers! I was able to text my issue from their website (very convenient) with what I consider a timely response (given the winter season). They had someone at my house the same day to fix the issue!",
+          "name": "Carolyn S."
+        },
+        {
+          "type": "prose",
+          "heading": "He Knows Your System",
+          "body": [
+            "Heating and cooling equipment is not a one-visit relationship. The same house needs a repair this year, a part next year and a replacement eventually.",
+            "When the same person keeps coming back, he remembers which unit is in the attic, which one is in the closet, and what he already fixed. He doesn't start from zero. You don't pay for a stranger to rediscover your house.",
+            "That's why we want to be your company for the long haul, not just for the emergency."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "We have had Nate come out several times and every single encounter he is punctual, knowledgeable, and finds and fixes the problem as fast as he can! Not to mention he usually is there within hours of us calling!",
+          "name": "Bailey L."
+        },
+        {
+          "type": "prose",
+          "heading": "Renters and Landlords Welcome",
+          "body": [
+            "You don't have to own the house to be treated like a customer. When the air goes out in a rental, the tenant is the one sweating, and the landlord needs it fixed too.",
+            "We come out for renters and for the people who own the rentals. If your landlord hires us, you'll still deal with a person who wants to know how you're doing."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "I rent, and Nate has come out to take care of both my AC and my heater. The first time, he came out after 9pm to help make sure we had AC in the middle of July, another time in the middle of snow storms in February to ensure my heater was up and running for us.",
+          "name": "Ady G."
+        },
+        {
+          "type": "prose",
+          "heading": "Heater Installation",
+          "body": [
+            "A furnace doesn't fail all at once. It starts short-cycling, or the house heats unevenly, or you pay for fuel that goes up the flue. When the repair bills start to add up, the question becomes whether to keep fixing it.",
+            "We install furnaces and water heaters. A new unit only helps if it's sized for the house and set up right, because a bad install means poor heat, wasted fuel and, with gas, real safety risks.",
+            "We'll tell you what failed on yours. If it's time for a new one, we'll install it and clean up behind us."
+          ],
+          "link": {
+            "label": "See heater installation →",
+            "route": "/heater-installation-wichita-ks/"
+          }
+        },
+        {
+          "type": "prose",
+          "heading": "HVAC Parts Replacement",
+          "body": [
+            "Many \"dead\" systems are really one dead part. A capacitor, a fan motor, an igniter or a leaking line can stop a whole unit that has years of life left in it.",
+            "Replacing the part is usually a fraction of what a new system costs. It only works if someone finds the real cause the first time, so we explain what we found and what it will take to fix.",
+            "Parts work is also where the relationship shows up: the leak that comes back, the part on order, the maintenance that keeps small problems from becoming a bad night."
+          ],
+          "link": {
+            "label": "See HVAC parts replacement →",
+            "route": "/hvac-parts-replacement-wichita-ks/"
+          }
+        },
+        {
+          "type": "prose",
+          "heading": "The Rest of the System",
+          "body": [
+            "Heater installation and parts replacement are where many of our calls start, but they aren't all we do."
+          ],
+          "list": [
+            "**Air conditioner repair.** The service we get called for in the middle of a heat wave.",
+            "**Air conditioner installation,** including mini split systems for rooms the main system doesn't reach.",
+            "**Furnace repair and replacement.**",
+            "**Water heaters and heat pumps,** installed, serviced and repaired.",
+            "**Ductwork,** and the cleaner air that comes with it."
+          ],
+          "tail": [
+            "Residential and commercial. If it heats, cools or moves air in your building, call and ask."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Fixed, and Cleaned Up",
+          "body": [
+            "A good repair isn't finished until the work area is. Nobody wants to find filters, boxes and dust left in the hallway.",
+            "We clean up before we go. It's a small thing, and the people at home notice it."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Nate I want to start this with a huge, \"Thank You, man!\". Your relationship with your customers is really top class because you are on top of every reply, every question and every texts and you just don't get that kind of customer service anymore. If I could give you 10 stars I would because you made the wife very happy by cleaning up EVERYTHING.",
+          "name": "Allen B."
+        },
+        {
+          "type": "steps",
+          "heading": "How It Goes",
+          "items": [
+            {
+              "title": "You call or text.",
+              "text": "Tell us what the system is doing. Nate answers."
+            },
+            {
+              "title": "We come look.",
+              "text": "We find the problem and explain what it is, in plain words."
+            },
+            {
+              "title": "You decide.",
+              "text": "With the problem explained, you choose whether to repair, replace or wait."
+            },
+            {
+              "title": "We fix it and clean up.",
+              "text": "Then you have our number for next time."
+            }
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Questions Before You Call",
+          "items": [
+            {
+              "q": "Can I just text?",
+              "a": "Yes. Text us what the unit is doing, or use the text button on our website. Call if it's urgent."
+            },
+            {
+              "q": "Do you work on rentals?",
+              "a": "Yes. We've come out for tenants and landlords, at night and in winter."
+            },
+            {
+              "q": "Do you only do emergencies?",
+              "a": "No. We install furnaces, water heaters, air conditioners and mini splits, and we do maintenance and ductwork too."
+            },
+            {
+              "q": "Will I deal with the owner?",
+              "a": "Nate is the person who answers the phone and comes to the house."
+            },
+            {
+              "q": "Where do you work?",
+              "a": "Wichita and the surrounding communities."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Call Nate",
+          "text": "If something in your house isn't heating or cooling, call or text and you'll get a person. Dream Makers LLC Heating and Cooling, 5720 1/2 S Broadway, Wichita, KS 67216. Phone (316) 871-5085."
+        }
+      ]
+    },
+    {
+      "role": "service",
+      "route": "/heater-installation-wichita-ks/",
+      "navLabel": "Heater Installation",
+      "keyword": "heater installation Wichita KS",
+      "seo": {
+        "title": "Heater Installation in Wichita, KS | Dream Makers LLC Heating and Cooling",
+        "description": "Furnace and water heater installation in Wichita, KS from a company where the owner answers. Call or text for a quote."
+      },
+      "hero": {
+        "eyebrow": "Furnaces and water heaters, installed by people you can text",
+        "h1": "Heater Installation in Wichita, KS — Dream Makers LLC Heating and Cooling",
+        "primaryCta": {
+          "label": "Call (316) 871-5085",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Request a Quote",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "furnace-hero",
+          "alt": "Technician working on a furnace in a Wichita home",
+          "brief": "HVAC pool image"
+        },
+        "sub": "When a furnace dies in a Kansas winter or the shower runs cold, you need a new heater put in right, by someone who answers when you call. Call or text Nate at (316) 871-5085."
+      },
+      "sections": [
+        {
+          "type": "prose",
+          "heading": "When It's Time to Stop Repairing",
+          "body": [
+            "You've paid for a repair, and then another. The house heats unevenly, the furnace starts and stops, or the water heater leaves you with a cold shower halfway through.",
+            "An old heater doesn't fail in one dramatic moment. Parts wear, efficiency drops, and the repair bills begin to look like a down payment on a new one.",
+            "That's the point to ask for an install quote. We put in new furnaces and water heaters for Wichita homes, and we'll tell you what failed on yours so you can decide with the facts in front of you."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Furnace or Water Heater",
+          "body": [
+            "Both are \"heaters,\" and both are in our line of work.",
+            "**A furnace** warms the air that moves through your house. Gas furnaces carry a burner, an igniter, a blower and a heat exchanger. When the heat exchanger cracks, replacing the furnace is usually the answer, because that part can't be fixed safely.",
+            "**A water heater** keeps a tank of hot water ready, or heats it on demand. Tanks rust from the inside and collect sediment, especially in hard water, and a tank that has started to leak can't be repaired.",
+            "If you're not sure which one you need, call and tell us what's happening. Cold rooms point to the furnace, and cold showers point to the water heater."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Why the Install Matters as Much as the Unit",
+          "body": [
+            "A good heater installed badly is still a bad heater. A furnace that's too big short-cycles and wears out early. One that's too small never catches up on a January night.",
+            "Venting is the part people don't see. A gas furnace or water heater has to send combustion gases outside, and a poor connection can put them in the house. A water heater that isn't connected and drained correctly can leak into a floor.",
+            "This is why installation shouldn't be a rush job. The unit has to match the house, and the work around it has to be done correctly."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Very professional super nice people and was told it would a 4 hour install for new ac and furnace it was around 2 hours works great highly recommend",
+          "name": "Aaron S."
+        },
+        {
+          "type": "prose",
+          "heading": "What We Install",
+          "list": [
+            "**Furnaces,** as replacements for units that have failed or aged out.",
+            "**Water heaters,** including heat pump (hybrid) models, which pull heat from the surrounding air to heat the water and cost less to run than a standard electric tank.",
+            "**Heat pumps,** for homes that want heating and cooling from one system."
+          ],
+          "tail": [
+            "We also repair what's already in your house, so if the answer is a repair instead of a new unit, you'll hear that from us."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Someone Who Stays Your Contact",
+          "body": [
+            "A heater is installed once and serviced for years. The person who installs it should be the person you call when something about it seems off.",
+            "That's how Dream Makers works. When you call about the same unit later, you get Nate, not a stranger who has to start from scratch."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Nathan is very professional and courteous, makes his services available in a timely manner with his busy schedule.",
+          "name": "Gary V."
+        },
+        {
+          "type": "prose",
+          "heading": "What You Pay For",
+          "body": [
+            "We can't hand you a number without knowing what's in your house. Furnace size, the venting you already have, the kind of water heater and where it sits all change the price.",
+            "Call and describe the unit, and you'll get an answer from the person who'll be at your house."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Staff was friendly and professional arrived promptly and completed work as scheduled and price was fair market value, would use again.",
+          "name": "Sarah W."
+        },
+        {
+          "type": "prose",
+          "heading": "Before the Install",
+          "body": [
+            "A few things help the job go smoothly."
+          ],
+          "list": [
+            "Tell us whether it's a furnace or a water heater, and what it's doing.",
+            "Know roughly how old the current unit is, if you can.",
+            "Clear a path to the unit, whether it sits in a closet, a basement or the garage.",
+            "Say if anyone in the house needs heat or hot water urgently, such as kids or someone with health issues."
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Questions Before You Call",
+          "items": [
+            {
+              "q": "Should I repair or replace?",
+              "a": "If the unit is old and the repairs are stacking up, a new one is usually the better money. A cracked heat exchanger or a leaking water heater tank means replacement. A single failed part often means repair, and our parts page covers that."
+            },
+            {
+              "q": "How long does an install take?",
+              "a": "It depends on the unit and the house. Aaron S. was told four hours for a new furnace and air conditioner and it took about two. Yours will depend on the unit and the house, so ask when you call."
+            },
+            {
+              "q": "Do you install in rentals?",
+              "a": "Landlords call us, and so do tenants who need heat back on."
+            },
+            {
+              "q": "Can I text you about it?",
+              "a": "Yes. Text what the heater is doing, and Nate will answer."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Get a Heater Quote",
+          "text": "Call or text Nate at (316) 871-5085, or request a quote from the website. Dream Makers LLC Heating and Cooling, 5720 1/2 S Broadway, Wichita, KS 67216."
+        }
+      ]
+    },
+    {
+      "role": "service",
+      "route": "/hvac-parts-replacement-wichita-ks/",
+      "navLabel": "Parts Replacement",
+      "keyword": "HVAC parts replacement Wichita KS",
+      "seo": {
+        "title": "HVAC Parts Replacement in Wichita, KS | Dream Makers LLC Heating and Cooling",
+        "description": "HVAC parts replacement in Wichita, KS: fix the failed part, not the whole system. Call or text Dream Makers."
+      },
+      "hero": {
+        "eyebrow": "Fix the part, not the whole system",
+        "h1": "HVAC Parts Replacement in Wichita, KS — Dream Makers LLC Heating and Cooling",
+        "primaryCta": {
+          "label": "Call (316) 871-5085",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Request a Quote",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "ac-repair-hero",
+          "alt": "Technician checking an outdoor air conditioner",
+          "brief": "HVAC pool image"
+        },
+        "sub": "When your air conditioner hums but won't start, or the furnace blows cold, the fix is often one part, not a new system. Call or text Nate at (316) 871-5085."
+      },
+      "sections": [
+        {
+          "type": "prose",
+          "heading": "When One Part Stops the Whole House",
+          "body": [
+            "The fan outside has stopped. The unit hums and nothing moves. Or the furnace clicks, tries to light and gives up.",
+            "These failures feel like the end of a system. Often they're a single worn part: a capacitor, a fan motor, an igniter, a blower motor.",
+            "A system that has years left in it shouldn't be replaced because one component quit. That's what parts replacement is for."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "My condenser fan motor went out on my A/C last night , I called my landlord this morning by 11:30am. My A/C was fixed and running better than ever. The technician was polite and very knowledgeable of the task he was doing.",
+          "name": "William L."
+        },
+        {
+          "type": "prose",
+          "heading": "The Parts That Fail Most",
+          "body": [
+            "Moving parts wear out first, and the ones that work hardest wear fastest."
+          ],
+          "list": [
+            "**Motors and fans.** The condenser fan outside and the blower inside run every time the system does. Bearings wear, and they stall.",
+            "**Capacitors and contactors.** These give motors their start-up jolt. A weak one makes a unit hum but not start.",
+            "**Igniters and sensors.** A furnace that clicks and quits is often failing here.",
+            "**Refrigerant lines and coils.** A leak lets refrigerant out, and cooling slowly fades. Topping it off without finding the leak just starts the clock again."
+          ],
+          "tail": [
+            "Repairing the right part costs far less than replacing a system. Repairing the wrong part is how you pay twice."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Heater or Air Conditioner, Same Approach",
+          "body": [
+            "A furnace motor and an AC fan motor are different parts, but the job is the same. Find what failed, get the part, put it in, and make sure the system runs the way it should.",
+            "We replace parts on both heating and cooling equipment, in homes and in commercial buildings.",
+            "If you're not sure which part it is, you don't need to guess. Call or text what the unit is doing: humming, clicking, blowing warm, not starting."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Was very surprised when Nathan said he would be able to make it over to repair furnace motor just a few hours after contacting him. He had it done in no time and will now be my go to on any hvac needs.",
+          "name": "David M."
+        },
+        {
+          "type": "prose",
+          "heading": "When the Part Isn't on the Truck",
+          "body": [
+            "Sometimes the part has to be ordered. That's where a good repair can still go wrong: you're left waiting in a house that's too hot or too cold.",
+            "We explain what's failed and what's needed, and we do what we can to keep the system running in the meantime."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Nathan has been out to our house a few times to refill and stop our Freon leak over the past year in half, we have just about come to know each other on first name bases and that's something in today's world. … Even making temp improvements until the new part comes in to replace the pump.",
+          "name": "Almeta W."
+        },
+        {
+          "type": "prose",
+          "heading": "Finding the Real Problem",
+          "body": [
+            "Anyone can swap a part. The skill is knowing which one failed, and why.",
+            "We find the problem and explain it in plain terms, so you understand what broke, whether it can happen again and what the repair involves. A technician who knows the equipment can often name the cause with little digging."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "2 years in a row has saved us from cooking after our AC went out in the middle of summer. Both times was quick, he knew exactly the issue with little investigation and got it resolved. Absolute necessity with toddlers inside.",
+          "name": "Ashley N."
+        },
+        {
+          "type": "prose",
+          "heading": "Why a Leak Needs Repeat Attention",
+          "body": [
+            "Refrigerant doesn't burn off like gasoline. If the level is low, there is a leak somewhere, and a slow leak can take more than one visit to chase down.",
+            "That's an honest reason to want the same person every time. He knows what's already been tried, what was refilled and where he suspects the leak is.",
+            "It's also why the call is to Nate's own number, not a dispatcher who doesn't know your history."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Maintenance That Catches It Early",
+          "body": [
+            "Most parts don't fail without warning. Filters clog, belts and bearings get noisy, coils collect dirt, and the system works harder until something gives.",
+            "We do maintenance on heating and cooling equipment, so small problems are found before they become a dead system on the hottest or coldest day of the year."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Repair or Replace",
+          "body": [
+            "A part is the right answer when the rest of the system is in decent shape. It's the wrong answer when the unit is old and failing in several places, or when the compressor or heat exchanger has gone.",
+            "We'll tell you which you're facing. If replacement makes sense, we install furnaces, water heaters and air conditioners too, and our [heater installation page](/heater-installation-wichita-ks/) explains how that goes."
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Questions Before You Call",
+          "items": [
+            {
+              "q": "Do I need a whole new system?",
+              "a": "Not always. Many failures come down to one part. Call and describe what it's doing, and Nate can tell you whether it sounds like a part or something bigger."
+            },
+            {
+              "q": "Do you fix furnaces and air conditioners?",
+              "a": "Yes, both, and heat pumps and water heaters."
+            },
+            {
+              "q": "Do you work on rentals?",
+              "a": "Yes. Tenants and landlords both call."
+            },
+            {
+              "q": "Can I text?",
+              "a": "Yes. Text what the unit is doing, or use the text button on our website."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Call or Text Nate",
+          "text": "Dream Makers LLC Heating and Cooling, 5720 1/2 S Broadway, Wichita, KS 67216. Phone (316) 871-5085."
+        }
+      ]
+    },
+    {
+      "role": "contact",
+      "route": "/contact/",
+      "navLabel": "Contact",
+      "keyword": "contact Dream Makers Heating and Cooling Wichita",
+      "seo": {
+        "title": "Contact | Dream Makers LLC Heating and Cooling",
+        "description": "Call or text (316) 871-5085. 5720 1/2 S Broadway, Wichita, KS 67216."
+      },
+      "hero": {
+        "eyebrow": "Contact",
+        "h1": "Contact Dream Makers LLC Heating and Cooling",
+        "primaryCta": {
+          "label": "Call (316) 871-5085",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Request a Quote",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "contact-hero",
+          "alt": "A Wichita home with an outdoor air conditioner",
+          "brief": "HVAC pool image"
+        },
+        "sub": "The fastest way to reach us is to call or text (316) 871-5085. You'll get Nate."
+      },
+      "sections": [
+        {
+          "type": "prose",
+          "heading": "Call or Text",
+          "body": [
+            "Call if the system is down and you need a person now. Text if you'd rather describe it in writing.",
+            "If it's heating or cooling in a Wichita home or business, we're the right call. You can also use the text button or the quote request on our website."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Excellent, prompt service Our AC went out and everyone was booked for the next few weeks. Nathan came out within just a couple hours and got our AC working again.",
+          "name": "Matthew V."
+        },
+        {
+          "type": "prose",
+          "heading": "What to Tell Us",
+          "list": [
+            "Heating or cooling, and what the unit is doing: not starting, blowing warm, humming, clicking.",
+            "Where it is: furnace, air conditioner, water heater, heat pump or mini split.",
+            "Whether you own or rent, so we know who else to talk to.",
+            "The best number to reach you, in case we need to call back after we read your text."
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Where We Are",
+          "text": "Dream Makers LLC Heating and Cooling, 5720 1/2 S Broadway, Wichita, KS 67216. We serve Wichita and the surrounding communities."
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "about": "Dream Makers LLC Heating and Cooling installs, repairs and replaces heating and air conditioning systems for homes in Wichita, Kansas. Customers call or text the owner directly.",
+    "why": [
+      "The owner answers",
+      "Call or text",
+      "Furnaces, AC and water heaters",
+      "Parts replaced, not whole systems"
+    ]
+  },
+  "strategy": {
+    "whyHeading": "Why we built this site",
+    "why": [
+      "Your customers text you, and you answer. Over and over, your reviews say they got Nate himself, and that he remembered their house.",
+      "Your website doesn't say any of that, and on a phone it takes about 14 seconds before anything shows up at all. Most people are gone long before then. So we built a fast demo that puts your name, your number and your customers' words on the first screen."
+    ],
+    "cardsHeading": "Be the Heating and Air Company People Find on Google",
+    "cardsIntro": "Each card is one demo page: the problem, and the fix.",
+    "cards": [
+      {
+        "route": "/home/",
+        "title": "Homepage",
+        "why": "The first page people see, and the one Google reads to learn what you do.",
+        "problems": [
+          "On a phone, your homepage takes about 14 seconds to show anything, and almost 30 seconds to finish loading.",
+          "No page on your site has a main headline, so Google can't tell you're a heating and air company in Wichita."
+        ],
+        "fixes": [
+          "A page that loads in about a second, with your name and number on the first screen.",
+          "A headline that says heating and air conditioning company in Wichita, KS.",
+          "Your customers' words beside the work they describe."
+        ],
+        "alsoAdd": "On day one, we sit down with you to get what makes you the obvious choice, every service you offer and every town you work in. That becomes the prescription: how many pages, in how many towns, so Google and AI tools can find you for every service."
+      },
+      {
+        "route": "/heater-installation-wichita-ks/",
+        "title": "Heater Installation",
+        "why": "The page for homeowners replacing a furnace or water heater.",
+        "problems": [
+          "Your heater page has no headline Google can read, so \"heater installation Wichita\" has nothing to match."
+        ],
+        "fixes": [
+          "A page about heater installation in Wichita, KS, with plain answers and the reviews that prove them."
+        ],
+        "alsoAdd": "Pages planned from what Google actually shows for each search, so every page targets something people really look for."
+      },
+      {
+        "route": "/hvac-parts-replacement-wichita-ks/",
+        "title": "HVAC Parts Replacement",
+        "why": "The page for people hoping a part, not a whole system, will fix it.",
+        "problems": [
+          "Your parts page has no headline, and the page address misspells \"maintenance\"."
+        ],
+        "fixes": [
+          "A page about HVAC parts replacement in Wichita, KS, explaining when a part is the right fix."
+        ],
+        "alsoAdd": "A check of what your competitors offer, so services you didn't think to mention still get their own pages."
+      },
+      {
+        "route": "/contact/",
+        "title": "Contact",
+        "why": "Where interest turns into a call or a text.",
+        "problems": [
+          "People who want to reach you wait about 14 seconds for your site to load first."
+        ],
+        "fixes": [
+          "A contact page that loads fast, with call and text one tap away."
+        ],
+        "alsoAdd": "Call and form tracking that shows which pages your calls come from."
+      }
+    ],
+    "reportCardHeading": "What great heating and air websites get right, and how yours measures up.",
+    "reportCard": [
+      {
+        "label": "Loads fast on a phone",
+        "status": "Missing"
+      },
+      {
+        "label": "Headline says what you do and where",
+        "status": "Missing"
+      },
+      {
+        "label": "Each money service has its own page",
+        "status": "Needs work"
+      },
+      {
+        "label": "Customer reviews on the site",
+        "status": "Missing"
+      }
+    ],
+    "closing": {
+      "heading": "Want a website like this for your business?",
+      "text": "Your customers already say they get Nate on the phone. Book a strategy call with Fluid Frame and we'll walk you through this demo and what a full build adds."
+    }
+  }
+}
