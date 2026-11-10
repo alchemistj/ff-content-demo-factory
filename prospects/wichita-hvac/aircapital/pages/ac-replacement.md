@@ -19,7 +19,9 @@ None of those alone means replace. Together they usually do. A system that keeps
 
 Most central air conditioners are built to last somewhere around 10 to 15 years. Kansas summers sit at the hard end of that range, because the system runs for months at a stretch.
 
-As a system ages, three things happen. Parts wear out faster, so repair calls come closer together. It uses more electricity to deliver less cooling, because the motors and coils are worn and efficiency standards were lower when it was built. And a system that uses the older R-22 refrigerant is getting costly to service, because that refrigerant is no longer produced.
+As a system ages, three things happen.
+
+Parts wear out faster, so repair calls come closer together. It uses more electricity to deliver less cooling, because the motors and coils are worn and efficiency standards were lower when it was built. And a system that uses the older R-22 refrigerant is getting costly to service, because that refrigerant is no longer produced.
 
 A new system fixes all three at once.
 
@@ -29,7 +31,7 @@ Replacement is not where we start. A young system with one failed part should be
 
 When we come out, the technician finds what failed and explains your options in plain words: repair the part, replace a major component, or replace the system. You get the reasoning and the numbers on each, and you decide.
 
-We're a new company, so we know our reputation depends on advice you'd give a friend. If your system has years left, you'll hear that from us.
+We're a new company, and our reputation rests on advice like this. If your system has years left, you'll hear that from us.
 
 ## What We Install
 
@@ -37,7 +39,7 @@ We install energy-efficient air conditioning systems for homes, matched to your 
 
 Size matters more than most people expect. A system that is too large cools the air quickly, shuts off and never pulls much moisture out, so the house feels clammy. One that is too small runs without stopping and still can't keep up on a 100-degree day.
 
-If your furnace is also near the end of its life, we install and replace furnaces too. Doing both at once means one visit and equipment that matches.
+If your furnace is also near the end of its life, we install and replace furnaces too. Replacing both together means the two pieces of equipment are matched.
 
 > "Outstanding service throughout the whole process from the first call, appointment, and installation. Installers are very professional and friendly. I highly recommend using Air Capital heating and air!"
 > — Victor V.
@@ -51,13 +53,13 @@ A replacement price should be something you can read and compare. Ask any compan
 - Whether your existing ductwork and thermostat are staying or changing
 - Who stands behind the work after the crew leaves
 
-If a quote leaves those out, you're comparing a number, not a system. We'll walk through each one with you at your free estimate.
+If a quote leaves those out, you're comparing a number, not a system. Ask us for each of them at your free estimate.
 
 ## Paying for It
 
 Replacing a system rarely comes at a convenient time. Financing is available through Enhancify, a partner we work with to offer flexible financing options.
 
-Promotional 0% interest periods may be available, depending on the financing partner. You can see the options and apply on Enhancify's page for Air Capital Heating and Air, linked from our financing page, before you commit to anything.
+Promotional 0% interest periods may be available, depending on the financing partner. You can see the options and apply on Enhancify's page for Air Capital Heating and Air, linked from our financing page.
 
 ## Where We Install
 

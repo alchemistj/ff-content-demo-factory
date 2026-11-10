@@ -34,7 +34,7 @@ Heating and cooling equipment is not a one-visit relationship. The same house ne
 
 When the same person keeps coming back, he remembers which unit is in the attic, which one is in the closet, and what he already fixed. He doesn't start from zero. You don't pay for a stranger to rediscover your house.
 
-That's the reason we want to be your company for the long haul, not just for the emergency. We would rather fix the right thing once and see you at the next problem than sell you something you didn't need.
+That's why we want to be your company for the long haul, not just for the emergency.
 
 > "We have had Nate come out several times and every single encounter he is punctual, knowledgeable, and finds and fixes the problem as fast as he can! Not to mention he usually is there within hours of us calling!"
 > — Bailey L.
@@ -54,7 +54,7 @@ A furnace doesn't fail all at once. It starts short-cycling, or the house heats 
 
 We install furnaces and water heaters. A new unit only helps if it's sized for the house and set up right, because a bad install means poor heat, wasted fuel and, with gas, real safety risks.
 
-We'll tell you what failed on yours and whether it's worth repairing. If it's time, we'll install the new one and clean up behind us.
+We'll tell you what failed on yours. If it's time for a new one, we'll install it and clean up behind us.
 
 [See heater installation →](/heater-installation-wichita-ks/)
 
@@ -92,8 +92,8 @@ We clean up before we go. It's a small thing, and the people at home notice it.
 ## How It Goes
 
 1. **You call or text.** Tell us what the system is doing. Nate answers.
-2. **We come look.** We find the problem and explain what it is, in plain words, before any work starts.
-3. **You decide.** Repair, replace or wait. We tell you which we'd pick and why.
+2. **We come look.** We find the problem and explain what it is, in plain words.
+3. **You decide.** With the problem explained, you choose whether to repair, replace or wait.
 4. **We fix it and clean up.** Then you have our number for next time.
 
 ## Questions Before You Call

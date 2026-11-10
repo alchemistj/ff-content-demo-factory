@@ -2,7 +2,7 @@
 
 # Contact Cook's Heating and Cooling
 
-If your heat or air has stopped, call. A phone call gets you the fastest answer, and you can tell us what the system is doing. If it can wait, use the request form.
+If your heat or air has stopped, call, and tell us what the system is doing. A new system or a maintenance plan? Call for that too, or use the request form.
 
 **Buttons:** Call (316) 945-2665 | Request Service
 
@@ -17,6 +17,7 @@ Prefer to write? Send your name, phone number, address and what's happening with
 ## What to Have Ready
 
 - What the system is doing: no heat, no cooling, noises, a smell, ice or water.
+- Or what you're planning: a new system to replace an old one, or a maintenance plan for the one you have.
 - The brand, if it's easy to find on the unit. We service all brands, so you don't need it.
 - Whether it's a home or a business.
 - The best number to reach you.

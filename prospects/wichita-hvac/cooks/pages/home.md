@@ -24,9 +24,9 @@ That's how we work. We put in the system, we look after it, and we're the ones y
 
 An old system tells you when it's finished. The repair bills start to stack up, one room is always too hot or too cold, and the unit runs all day to keep up.
 
-We install new furnaces, air conditioners, unit heaters and electric air handlers, and we offer a variety of systems and equipment to fit your budget. Humidification and filtration go in with it, so you aren't opening the house up twice.
+We install new furnaces, air conditioners, unit heaters and electric air handlers, and we offer a variety of systems and equipment to fit your budget. Filtration and humidification can go in with it.
 
-Because we also service what we install, we're thinking about the next fifteen years of that system, not just the day it goes in.
+Because we also service what we install, the people who put it in are the people you call about it later.
 
 [See HVAC installation in Wichita →](/hvac-installation-wichita-ks/)
 
@@ -37,7 +37,7 @@ Because we also service what we install, we're thinking about the next fifteen y
 
 Most systems quit on the hottest or coldest day of the year. That's when they work hardest, and it's when a worn part or a clogged filter that nobody checked finally gives out.
 
-Our Premium maintenance plan sends us out twice a year, before each season. It also gets you priority emergency service within 24 hours, and 20% off parts and labor.
+Our Premium maintenance plan has us out to service your system twice a year. It also gets you priority emergency service within 24 hours, and 20% off parts and labor.
 
 You can sign up year to year, or for 5 or 10 years. Plans are available for homes and for businesses.
 
@@ -47,7 +47,9 @@ You can sign up year to year, or for 5 or 10 years. Plans are available for home
 
 When the air stops or the heat won't come on, you want the people who already know your system. We troubleshoot and diagnose first, so you hear what actually failed before you hear what it costs.
 
-Often it's one part: an ignitor, a wiring fault, a leak. Sometimes it's the whole system. A repair that makes sense, we repair. A system that's finished, we'll say so, and show you the options.
+Often it's one part: an ignitor, a wiring fault, a leak.
+
+Sometimes it's the whole system. A repair that makes sense, we repair. A system that's finished, we'll say so and show you the options.
 
 For air conditioners, we find refrigerant leaks and we're EPA registered and certified. For furnaces, we do carbon monoxide detection, because a furnace that burns gas poorly can put it into the house with no smell.
 
@@ -58,9 +60,9 @@ We service all brands, so you don't have to have bought from us to call us.
 
 ## People You Get to Know
 
-Calling the same company year after year only works if there's someone to call. When you phone Cook's, the office answers, and the technicians who come out are the same ones your neighbors have had.
+Calling the same company year after year only works if there's someone to call. When you phone Cook's, you reach the office. A technician comes out and looks at your system, and the next call builds on the last one.
 
-You start to know who's who. That makes a service call easier: nobody has to explain your house from scratch.
+That makes a service call easier: nobody has to explain your house from scratch.
 
 > "Great customer service and competitive pricing. Glenn and Tyler are great Techs and Rosa in the office is very helpful."
 > — Sean S.

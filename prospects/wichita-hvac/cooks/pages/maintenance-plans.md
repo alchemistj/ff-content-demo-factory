@@ -2,7 +2,7 @@
 
 # HVAC Maintenance Plans in Wichita, KS — Cook's Heating and Cooling
 
-The furnace you haven't looked at in a year is the one that quits on the coldest night. A maintenance plan puts a technician at your system twice a year, before each season. Call (316) 945-2665 to start one.
+The furnace you haven't looked at in a year is the one that quits on the coldest night. A maintenance plan has us out to service your system twice a year. Call (316) 945-2665 to start one.
 
 **Buttons:** Call (316) 945-2665 | Request Service
 
@@ -13,6 +13,8 @@ The furnace you haven't looked at in a year is the one that quits on the coldest
 
 Heating and cooling systems work hardest when it's coldest or hottest outside. That's when a small problem becomes a failure.
 
+A system also gets quietly worse over the seasons. It takes a little longer to cool the house, or a little longer to start, and you stop noticing.
+
 A clogged filter makes the blower strain. Dirty coils make an air conditioner work harder for less cooling. A loose wire or a worn ignitor holds on until the first hard freeze and then doesn't.
 
 Nobody sees any of it from the living room. A system that ran fine in May can be one cold morning from a no-heat call in November.
@@ -21,7 +23,7 @@ Nobody sees any of it from the living room. A system that ran fine in May can be
 
 A service visit before the season is when a worn part is found while it is still cheap and the weather is still mild.
 
-Filters get checked and changed, because the wrong size or a clogged one chokes airflow. Wiring and connections are looked over. A system that is running poorly gets caught before you're depending on it.
+A good check looks at the filter, because the wrong size or a clogged one chokes airflow. It looks at wiring and connections, where small faults hide. It catches a system that is running poorly before you're depending on it.
 
 It also gives someone who knows your system a chance to look at it before something fails. That's how the wiring fault and the wrong filter in Ted H.'s review were caught.
 
@@ -29,23 +31,25 @@ It also gives someone who knows your system a chance to look at it before someth
 
 Our Premium maintenance plan includes:
 
-- **Two servicings a year**, one for heating and one for cooling.
+- **Two servicings a year.**
 - **Priority emergency service within 24 hours.**
 - **20% off parts and labor.**
 
-Cook's offers annual service agreements for both residential and commercial customers, so the same plan structure works for a house or a building.
+We offer annual service agreements for both residential and commercial customers, so the same plan works for a house or a building.
 
 ## Year to Year, or for the Long Haul
 
 You choose how long to commit. Plans run year to year, or on a 5-year or 10-year basis.
 
-Year to year suits a newer system or a first try. A longer term suits a home you plan to stay in. It also fits a system you've just had installed, since the plan starts the care from day one.
+Year to year suits a newer system or a first try. A longer term suits a home you plan to stay in. It also fits a system you've just had installed, since the care starts from the first season.
 
 We don't list a price on this page. Call, tell us about your system and whether it's a home or a business, and we'll walk you through the terms.
 
 ## Someone Who Explains What They Find
 
 A service visit is also a chance to learn how your system works and what to watch for. That's worth as much as the check itself.
+
+Most people never see inside their furnace until it breaks. A visit is a chance to ask what you're looking at and what to watch for.
 
 > "Derek talked me through every step of the process and helped me understand how my furnace worked, what to watch out for, and even offered a few pointers and tricks along the way. You can't ask for better service than this!"
 > — John H.
@@ -54,7 +58,7 @@ A service visit is also a chance to learn how your system works and what to watc
 
 You don't need to have bought your system from us. We service all brands, so you can start a plan on the equipment you have now.
 
-If it's a new system, ask us about adding a plan at the install. [See HVAC installation in Wichita →](/hvac-installation-wichita-ks/)
+Putting in a new system? [See HVAC installation in Wichita →](/hvac-installation-wichita-ks/)
 
 ## What Else We Do
 

@@ -8,7 +8,7 @@ Same-day and next-day appointments are available. Tell us what your system is do
 
 ## Call
 
-(316) 990-1911, Monday through Sunday, 8am to 5pm. Emergency calls are available.
+(316) 990-1911, between 8am and 5pm. Emergency calls are available. We're a new Wichita company with years of hands-on HVAC experience behind it, and the person who answers will tell you plainly what to expect.
 
 > Amazing communication through the whole process. Quick to respond, great prices and great service. Customer for life!
 >

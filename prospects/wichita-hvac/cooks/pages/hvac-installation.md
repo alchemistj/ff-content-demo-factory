@@ -6,14 +6,16 @@ When the repairs on an old furnace or air conditioner keep coming, a new system 
 
 **Buttons:** Call (316) 945-2665 | Request Service
 
-> "I have had Cooks do my HVAC work and installations for many, many years and the work has always been good, in each of my two homes. The first system in Belle Plaine, a Carrier, still runs good after almost 40 years. My new system at my Wichita home, a Carrier, was installed today by David and Lalo, and they were very courteous as well as competent. I always use Cook's for service also."
-> — John E.
+> "Did a great job on mine and my son’s air conditioner/heater installation"
+> — Christi G.
 
 ## When the Old System Is Done
 
 Nobody wants to replace a furnace or air conditioner. The signs usually arrive over a few seasons.
 
-The repairs get more frequent, and each one costs more than you hoped. The unit runs nearly all day and never quite catches up. One room is always the hot one, or the cold one. The energy bill creeps up with nothing else changed.
+The repairs get more frequent, and each one costs more than you hoped.
+
+The unit runs nearly all day and never quite catches up. One room is always the hot one, or the cold one. The energy bill creeps up with nothing else changed.
 
 Parts wear, and old equipment loses efficiency. At some point you are paying to keep a system alive that you would be better off replacing, and the honest answer is to say so.
 
@@ -32,7 +34,7 @@ If you've been told you need a whole new system and aren't sure, call us for a s
 
 We install new heating units and new air conditioners, and we offer a variety of systems and equipment to fit your budget.
 
-For heat, that means furnaces, unit heaters and electric air handlers. For cooling, it means air conditioning systems sized to the house.
+For heat, that means furnaces, unit heaters and electric air handlers. For cooling, it means new air conditioners.
 
 We also install humidification and filtration systems, so the air in the house improves at the same time as the equipment. Whole-system filtration adds to an existing system and removes up to 90% of air contaminants, and a humidifier on the furnace gives moisture back to dry winter air.
 
@@ -50,7 +52,7 @@ That's one reason we keep a sheet metal fabrication shop of our own. When a fitt
 
 A new system is a day or more of work inside your house. Who shows up matters.
 
-Our installers are the same people who go on to service these systems, and they see what happens to their work over the years.
+We install systems, and we service them afterward, so the work we put in is the work we see again.
 
 > "I used to wire new houses in Wichita and the surrounding area. Which means I worked around many HVAC companies over the years that I did that line of work. Cooks has always been one of my top three companies that I suggest or would use to do any work for me or anyone I know. The installation guys work their buts off and they do their best to make everything right."
 > — Joshua M.
@@ -59,7 +61,7 @@ Our installers are the same people who go on to service these systems, and they 
 
 A system that's put in right can run for many years, and it runs longer when someone looks at it twice a year.
 
-Our Premium maintenance plan covers two servicings a year, priority emergency service within 24 hours and 20% off parts and labor. You can start it on the day the new system goes in.
+Our Premium maintenance plan covers two servicings a year, priority emergency service within 24 hours and 20% off parts and labor. It's built for a system you plan to keep.
 
 [See HVAC maintenance plans in Wichita →](/maintenance-plans-wichita-ks/)
 
@@ -72,7 +74,7 @@ Look at the pattern. If the repairs are frequent, the unit runs constantly or on
 A well-kept furnace or air conditioner commonly runs 15 years or more. Regular servicing is a big part of how.
 
 **Can you replace heating and cooling together?**
-Yes. We install both, and doing them together means one visit and equipment that works as a pair. If the budget says one now and one later, we install whichever you need.
+Yes. We install both heating and cooling. If the budget says one now and one later, we install whichever you need.
 
 **How long does the install take?**
 It depends on the system and the ducts. Swapping a unit in the same spot is shorter than a job that changes ductwork. We give you the schedule when we price the job.
