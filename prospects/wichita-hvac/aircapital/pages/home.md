@@ -15,7 +15,7 @@ Hiring a heating and cooling company you've never heard of is a fair thing to he
 
 So we point to the work.
 
-Our Google page shows a 5.0 rating across 27 reviews, all written since August by customers we fixed or replaced something for. We quote them on this site word for word, so you can read what they said.
+Our Google page shows a 5.0 rating, and the reviews on it start this August. We quote them on this site word for word, so you can read the first jobs in their own words.
 
 What sits behind the name is years of hands-on HVAC experience between our owners and technicians. The company is new. The people doing the work have been in this trade for a long time.
 
@@ -40,6 +40,9 @@ We find what failed, show you what it is and get the cold air back.
 
 [See AC repair in Wichita →](/ac-repair-wichita-ks/)
 
+> "Juan was great! He explained everything that he was doing, what parts needed to be repaired or replaced, and explained all of the options. He cleaned the unit thoroughly and everything's working great!"
+> — Wichita B.
+
 ## AC Replacement
 
 Sometimes the system is telling you it's finished. It's old, it keeps breaking, or it runs all day and the house never catches up.
@@ -50,16 +53,14 @@ If it's time, we install energy-efficient air conditioning systems matched to yo
 
 [See AC replacement in Wichita →](/ac-replacement-wichita-ks/)
 
-## We Explain Before We Fix
+## No Upsell From a Name You Don't Know
 
-A dead system on a hot day makes it easy to say yes to anything. That's the moment people feel pushed.
+A company people haven't heard of can't lean on a reputation, and it shouldn't lean on a sales pitch either. The cheapest way for us to earn the next call is to fix what's broken and stop there.
 
-We slow that part down. The technician finds the problem, explains what failed and what each option means: repair the part, replace a larger component, or replace the system. You get the reasoning, not just a number.
+So when the problem is a capacitor, you pay for a capacitor, and the estimate is free. You decide what happens next.
 
-If the fix is a small part, we don't sell you a whole new unit.
-
-> "Juan was great! He explained everything that he was doing, what parts needed to be repaired or replaced, and explained all of the options. He cleaned the unit thoroughly and everything's working great!"
-> — Wichita B.
+> "They were friendly, showed up when they said they would, and got everything taken care of without any hassle. You can tell they know what they're doing and actually care about doing a good job."
+> — Daniel Q.
 
 ## Heating, Maintenance, Ductless and Light Commercial
 
@@ -100,6 +101,6 @@ Yes. We partner with Enhancify to offer flexible financing options, and promotio
 
 ## Call Air Capital Today
 
-Tell us what your system is doing and we'll tell you what to expect. Call for a free estimate, or send a request and we'll get back to you.
+If you've never heard of us, that's fine. Call for a free estimate, or send a request, and judge us on the first conversation.
 
 **Buttons:** Call (316) 990-1911 | Request Service

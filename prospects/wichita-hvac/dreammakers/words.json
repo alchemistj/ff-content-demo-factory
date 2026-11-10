@@ -132,10 +132,10 @@
         },
         {
           "type": "prose",
-          "heading": "Renters and Landlords Welcome",
+          "heading": "If You Rent, You Still Get the Number",
           "body": [
-            "You don't have to own the house to be treated like a customer. When the air goes out in a rental, the tenant is the one sweating, and the landlord needs it fixed too.",
-            "We come out for renters and for the people who own the rentals. If your landlord hires us, you'll still deal with a person who wants to know how you're doing."
+            "When the air goes out in a rental, you're the one sweating, and you're the one who has to chase it. Most tenants never meet the person who fixes the unit.",
+            "You don't have to own the house to call or text Nate. He came out for one renter at 9pm in July and again in a February snow storm."
           ]
         },
         {
@@ -188,9 +188,9 @@
         },
         {
           "type": "prose",
-          "heading": "Fixed, and Cleaned Up",
+          "heading": "Every Reply, and a Clean House",
           "body": [
-            "A good repair isn't finished until the work area is. Nobody wants to find filters, boxes and dust left in the hallway.",
+            "A repair isn't finished until you've heard back and the work area is clean. Nobody wants to find filters, boxes and dust left in the hallway.",
             "We clean up before we go. It's a small thing, and the people at home notice it."
           ]
         },
@@ -200,26 +200,17 @@
           "name": "Allen B."
         },
         {
-          "type": "steps",
-          "heading": "How It Goes",
-          "items": [
-            {
-              "title": "You call or text.",
-              "text": "Tell us what the system is doing. Nate answers."
-            },
-            {
-              "title": "We come look.",
-              "text": "We find the problem and explain what it is, in plain words."
-            },
-            {
-              "title": "You decide.",
-              "text": "With the problem explained, you choose whether to repair, replace or wait."
-            },
-            {
-              "title": "We fix it and clean up.",
-              "text": "Then you have our number for next time."
-            }
+          "type": "prose",
+          "heading": "When It Takes More Than One Visit",
+          "body": [
+            "Not every problem ends in one trip. A leak that keeps coming back, a part on order, a unit that's past saving.",
+            "Those are the jobs where it matters who calls you back. You get the explanation of what's wrong, and you get it from the person who'll be there for the next visit."
           ]
+        },
+        {
+          "type": "review",
+          "quote": "Our tech Cody, despite not being able to fix the problem right away since our unit died, was an absolute BLAST! Very knowledgeable and friendly, explained his troubleshooting process as he went through it, and thoroughly explained what the problem was that ended up with our unit being fried.",
+          "name": "Jimmy M."
         },
         {
           "type": "faq",
@@ -230,20 +221,28 @@
               "a": "Yes. Text us what the unit is doing, or use the text button on our website. Call if it's urgent."
             },
             {
+              "q": "What if I text late at night?",
+              "a": "Text anyway. A message sent late has been answered early the next morning, and Nate has come out after 9pm for a tenant in July."
+            },
+            {
               "q": "Do you work on rentals?",
-              "a": "Yes. We've come out for tenants and landlords, at night and in winter."
+              "a": "Yes. We've come out for tenants as well as the people who own the rentals."
+            },
+            {
+              "q": "Will I deal with the owner?",
+              "a": "Nate answers the phone and the texts, and he comes to the house. On bigger jobs, like installing mini splits, his team comes with him."
+            },
+            {
+              "q": "Will you remember my house next year?",
+              "a": "That's the idea. The same person keeps coming back, so he knows which unit is where and what was fixed last time."
             },
             {
               "q": "Do you only do emergencies?",
               "a": "No. We install furnaces, water heaters, air conditioners and mini splits, and we do maintenance and ductwork too."
             },
             {
-              "q": "Will I deal with the owner?",
-              "a": "Nate is the person who answers the phone and comes to the house."
-            },
-            {
               "q": "Where do you work?",
-              "a": "Wichita and the surrounding communities."
+              "a": "Wichita is home base. Text your address and we'll tell you whether we can get to you."
             }
           ]
         },

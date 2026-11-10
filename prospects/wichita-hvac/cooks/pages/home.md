@@ -102,7 +102,9 @@ No. We handle residential and commercial heating and cooling.
 Emergency service runs from 5:00 PM to 10:00 PM. Call (316) 945-2665.
 
 **How long should a furnace or air conditioner last?**
-Furnaces commonly run 15 to 20 years and air conditioners 10 to 15, depending on how hard they work and how often someone services them. A system near the end of that range is the one to keep an eye on. When it gets there, we diagnose first and lay out what another repair buys you against what a new system involves.
+Furnaces commonly run 15 to 20 years and air conditioners 10 to 15, depending on how hard they work and how often someone services them. A system near the end of that range is the one to keep an eye on.
+
+When it gets there, we diagnose first and lay out what another repair buys you against what a new system involves.
 
 **Why would I sign up for a 5- or 10-year plan?**
 Because the system you're looking after lasts that long. The Premium plan is two servicings a year, priority emergency service within 24 hours and 20% off parts and labor, on terms of 1, 5 or 10 years. It's available for homes and for businesses.

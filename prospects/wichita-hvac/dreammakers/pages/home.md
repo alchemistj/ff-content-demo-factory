@@ -39,11 +39,11 @@ That's why we want to be your company for the long haul, not just for the emerge
 > "We have had Nate come out several times and every single encounter he is punctual, knowledgeable, and finds and fixes the problem as fast as he can! Not to mention he usually is there within hours of us calling!"
 > — Bailey L.
 
-## Renters and Landlords Welcome
+## If You Rent, You Still Get the Number
 
-You don't have to own the house to be treated like a customer. When the air goes out in a rental, the tenant is the one sweating, and the landlord needs it fixed too.
+When the air goes out in a rental, you're the one sweating, and you're the one who has to chase it. Most tenants never meet the person who fixes the unit.
 
-We come out for renters and for the people who own the rentals. If your landlord hires us, you'll still deal with a person who wants to know how you're doing.
+You don't have to own the house to call or text Nate. He came out for one renter at 9pm in July and again in a February snow storm.
 
 > "I rent, and Nate has come out to take care of both my AC and my heater. The first time, he came out after 9pm to help make sure we had AC in the middle of July, another time in the middle of snow storms in February to ensure my heater was up and running for us."
 > — Ady G.
@@ -80,38 +80,46 @@ Heater installation and parts replacement are where many of our calls start, but
 
 Residential and commercial. If it heats, cools or moves air in your building, call and ask.
 
-## Fixed, and Cleaned Up
+## Every Reply, and a Clean House
 
-A good repair isn't finished until the work area is. Nobody wants to find filters, boxes and dust left in the hallway.
+A repair isn't finished until you've heard back and the work area is clean. Nobody wants to find filters, boxes and dust left in the hallway.
 
 We clean up before we go. It's a small thing, and the people at home notice it.
 
 > "Nate I want to start this with a huge, "Thank You, man!". Your relationship with your customers is really top class because you are on top of every reply, every question and every texts and you just don't get that kind of customer service anymore. If I could give you 10 stars I would because you made the wife very happy by cleaning up EVERYTHING."
 > — Allen B.
 
-## How It Goes
+## When It Takes More Than One Visit
 
-1. **You call or text.** Tell us what the system is doing. Nate answers.
-2. **We come look.** We find the problem and explain what it is, in plain words.
-3. **You decide.** With the problem explained, you choose whether to repair, replace or wait.
-4. **We fix it and clean up.** Then you have our number for next time.
+Not every problem ends in one trip. A leak that keeps coming back, a part on order, a unit that's past saving.
+
+Those are the jobs where it matters who calls you back. You get the explanation of what's wrong, and you get it from the person who'll be there for the next visit.
+
+> "Our tech Cody, despite not being able to fix the problem right away since our unit died, was an absolute BLAST! Very knowledgeable and friendly, explained his troubleshooting process as he went through it, and thoroughly explained what the problem was that ended up with our unit being fried."
+> — Jimmy M.
 
 ## Questions Before You Call
 
 **Can I just text?**
 Yes. Text us what the unit is doing, or use the text button on our website. Call if it's urgent.
 
+**What if I text late at night?**
+Text anyway. A message sent late has been answered early the next morning, and Nate has come out after 9pm for a tenant in July.
+
 **Do you work on rentals?**
-Yes. We've come out for tenants and landlords, at night and in winter.
+Yes. We've come out for tenants as well as the people who own the rentals.
+
+**Will I deal with the owner?**
+Nate answers the phone and the texts, and he comes to the house. On bigger jobs, like installing mini splits, his team comes with him.
+
+**Will you remember my house next year?**
+That's the idea. The same person keeps coming back, so he knows which unit is where and what was fixed last time.
 
 **Do you only do emergencies?**
 No. We install furnaces, water heaters, air conditioners and mini splits, and we do maintenance and ductwork too.
 
-**Will I deal with the owner?**
-Nate is the person who answers the phone and comes to the house.
-
 **Where do you work?**
-Wichita and the surrounding communities.
+Wichita is home base. Text your address and we'll tell you whether we can get to you.
 
 ## Call Nate
 
