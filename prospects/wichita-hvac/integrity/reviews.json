@@ -1,0 +1,442 @@
+{
+  "kind": "google-review-pull",
+  "version": 1,
+  "slug": "integrity-hvac-wichita",
+  "place": {
+    "name": "Integrity Heating and Cooling",
+    "placeId": "ChIJH1DbjepL0yERZq5JzC80-RQ",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Integrity%20Heating%20and%20Cooling&query_place_id=ChIJH1DbjepL0yERZq5JzC80-RQ",
+    "address": "801 S Fabrique Dr, Wichita, KS 67218",
+    "phone": "(316) 932-9559",
+    "rating": 5,
+    "totalReviewCount": 45
+  },
+  "pulledAt": "2026-11-09T17:54:18.958Z",
+  "requestedMax": 100,
+  "reviews": [
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pSR1VHdFVkMjl0YkVoaUxYTnhlVlowZG5acGIyYxAB",
+      "reviewer": "Maddie R.",
+      "rating": 5,
+      "text": "Integrity Heating and Cooling replaced my whole HVAC system and left me with full confidence that everything was installed to last with no problems. They were very thorough and efficient and got the job done. I wasn’t sure I could get a fair quote along with great work ethic but these guys proved me wrong!",
+      "publishedAt": "2026-10-28T22:43:23.106Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pSR1VHdFVkMjl0YkVoaUxYTnhlVlowZG5acGIyYxAB!2m1!1s0x0:0x14f9342fcc49ae66!3m1!1s2@1:CAIQACodChtycF9oOjRGUGtUd29tbEhiLXNxeVZ0dnZpb2c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21OblVVazNUREp5VkRCMVJVRnFTRGhJYVV4VE1sRRAB",
+      "reviewer": "Chris W.",
+      "rating": 5,
+      "text": "Best prices, best service.  I have used this company for the last 7+ years and won't go anywhere else. Sam and Cory have taken care of our family each and every time.",
+      "publishedAt": "2026-09-03T18:40:30.183Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21OblVVazNUREp5VkRCMVJVRnFTRGhJYVV4VE1sRRAB!2m1!1s0x0:0x14f9342fcc49ae66!3m1!1s2@1:CAIQACodChtycF9oOmNnUUk3TDJyVDB1RUFqSDhIaUxTMlE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21wVWJqTklOVVU1YjJ0eFJWbEJVMFl4TVdoUlMxRRAB",
+      "reviewer": "Scott C.",
+      "rating": 5,
+      "text": "Sam and his employee came out to fix our air conditioning last minute and were able to get it running again the same day.  He explained everything they did to fix it and gave us some helpful advice on how to keep it running.   Very polite and dependable.   The charges were reasonable as well!  Thank you, Sam!",
+      "publishedAt": "2026-08-24T21:06:10.693Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21wVWJqTklOVVU1YjJ0eFJWbEJVMFl4TVdoUlMxRRAB!2m1!1s0x0:0x14f9342fcc49ae66!3m1!1s2@1:CAIQACodChtycF9oOmpUbjNINUU5b2txRVlBU0YxMWhRS1E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2taMk9GQm5UR2x4TVRsNFFtYzBXWGxsZGpsRlgzYxAB",
+      "reviewer": "Lorena S.",
+      "rating": 5,
+      "text": "Good and fast service",
+      "publishedAt": "2026-07-16T05:25:49.834Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2taMk9GQm5UR2x4TVRsNFFtYzBXWGxsZGpsRlgzYxAB!2m1!1s0x0:0x14f9342fcc49ae66!3m1!1s2@1:CAIQACodChtycF9oOkZ2OFBnTGlxMTl4Qmc0WXlldjlFX3c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21GR2VHUnlURzlCVlhOeVJIcHZZa2hNVlRKNlNuYxAB",
+      "reviewer": "Karen E.",
+      "rating": 5,
+      "text": "Sam and his team installed a new furnace for me.  They were timely, worked efficiently and cleaned up the mess afterwards.  I highly recommend Integrity Heating and Cooling and will use them again.",
+      "publishedAt": "2026-04-03T20:35:10.631Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21GR2VHUnlURzlCVlhOeVJIcHZZa2hNVlRKNlNuYxAB!2m1!1s0x0:0x14f9342fcc49ae66!3m1!1s2@1:CAIQACodChtycF9oOmFGeGRyTG9BVXNyRHpvYkhMVTJ6Snc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUQ3eG9hb0FnEAE",
+      "reviewer": "James T.",
+      "rating": 5,
+      "text": "As usual Integrity Heating and Cooling did a great job!",
+      "publishedAt": "2025-09-09T14:17:54.963Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ3eG9hb0FnEAE!2m1!1s0x0:0x14f9342fcc49ae66!3m1!1s2@1:CIHM0ogKEICAgID7xoaoAg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2kxS2RtSXRNRkp5UjFWaVMxcFZhR1p2VVhGeWFrRRAB",
+      "reviewer": "Colton K.",
+      "rating": 5,
+      "text": "Had my AC go out on a holiday and it only took an hour and a half from initial phone call to job completion. Highly recommend.",
+      "publishedAt": "2025-09-01T18:37:12.724Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2kxS2RtSXRNRkp5UjFWaVMxcFZhR1p2VVhGeWFrRRAB!2m1!1s0x0:0x14f9342fcc49ae66!3m1!1s2@1:CAIQACodChtycF9oOi1KdmItMFJyR1ViS1pVaGZvUXFyakE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21rMmIyOXdNMmhzWjNoSVdsVmFZVGhCYWxab2RGRRAB",
+      "reviewer": "Holly R.",
+      "rating": 5,
+      "text": "They will go above and beyond to help you!",
+      "publishedAt": "2025-08-22T00:59:25.639Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21rMmIyOXdNMmhzWjNoSVdsVmFZVGhCYWxab2RGRRAB!2m1!1s0x0:0x14f9342fcc49ae66!3m1!1s2@1:CAIQACodChtycF9oOmk2b29wM2hsZ3hIWlVaYThBalZodFE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tSS1J6TmZTM1JVVWtONVdWaHZWa2RwWVhaWlIyYxAB",
+      "reviewer": "Tyler J.",
+      "rating": 5,
+      "text": "Highly recommend Integrity.  Called them earlier in the year when the AC unit was running and they were out the next day and had us back up and running in no time.  Had another issue that Sam was able to walk me through over the phone and back in running within an hour on a Sunday.  Very responsive and reliable customer service.",
+      "publishedAt": "2025-07-07T12:16:48.278Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tSS1J6TmZTM1JVVWtONVdWaHZWa2RwWVhaWlIyYxAB!2m1!1s0x0:0x14f9342fcc49ae66!3m1!1s2@1:CAIQACodChtycF9oOkRKRzNfS3RUUkN5WVhvVkdpYXZZR2c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2kxSVVVSjNTMFZRZVdReFEwaHZaMDV4U1VGYWVXYxAB",
+      "reviewer": "Dayna B.",
+      "rating": 5,
+      "text": "Our AC went out called and Sam here in hour on a Saturday morning and fixed our unit and very reasonable prices ! I highly recommend Sam @ Integrity Heating and Cooling !",
+      "publishedAt": "2025-06-21T14:18:10.652Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2kxSVVVSjNTMFZRZVdReFEwaHZaMDV4U1VGYWVXYxAB!2m1!1s0x0:0x14f9342fcc49ae66!3m1!1s2@1:CAIQACodChtycF9oOi1IUUJ3S0VQeWQxQ0hvZ05xSUFaeWc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pWVlNIUjBOWFJrUm5CRGRtMW1OM05WZHpSNWIwRRAB",
+      "reviewer": "DeAnn N.",
+      "rating": 5,
+      "text": "We are highly satisfied with their work, they was on time, got the job done in a quick manner, was very knowledgeable about what they was doing, Very affordable too! They also kept the whole area very clean. They are very nice guys too! We totally appreciate everything they did and we highly recommend them! Thanks Sam and guys!",
+      "publishedAt": "2025-06-20T04:59:52.925Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pWVlNIUjBOWFJrUm5CRGRtMW1OM05WZHpSNWIwRRAB!2m1!1s0x0:0x14f9342fcc49ae66!3m1!1s2@1:CAIQACodChtycF9oOjVVSHR0NXRkRnBDdm1mN3NVdzR5b0E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURfdk9PZWx3RRAB",
+      "reviewer": "Dade R.",
+      "rating": 5,
+      "text": "Great service, great guys. Always willing to come out and fix whatever is broken. I highly recommend them.",
+      "publishedAt": "2025-01-22T15:06:06.485Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURfdk9PZWx3RRAB!2m1!1s0x0:0x14f9342fcc49ae66!3m1!1s2@1:CIHM0ogKEICAgID_vOOelwE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURQdjRmeVVBEAE",
+      "reviewer": "Todd K.",
+      "rating": 5,
+      "text": "Great prices and services. Would definitely recommend  Justin is great at explaining any and all questions.",
+      "publishedAt": "2024-12-06T21:31:46.422Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURQdjRmeVVBEAE!2m1!1s0x0:0x14f9342fcc49ae66!3m1!1s2@1:CIHM0ogKEICAgIDPv4fyUA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURQdWZubTN3RRAB",
+      "reviewer": "TheDaendric",
+      "rating": 5,
+      "text": "Called after 8 AM for my faulty furnace and they worked me into their schedule for early afternoon. First time using Integrity but definitely not my last!",
+      "publishedAt": "2024-12-03T22:46:13.132Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURQdWZubTN3RRAB!2m1!1s0x0:0x14f9342fcc49ae66!3m1!1s2@1:CIHM0ogKEICAgIDPufnm3wE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNYcHFUbUN3EAE",
+      "reviewer": "Joyce A.",
+      "rating": 5,
+      "text": "Called yesterday with furnace was not working and they came the next morning to fix the furnace. Integrity Heating and Cooling were quick and efficient getting the repair done.  We were very pleased with their service.",
+      "publishedAt": "2024-10-16T00:34:38.480Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNYcHFUbUN3EAE!2m1!1s0x0:0x14f9342fcc49ae66!3m1!1s2@1:CIHM0ogKEICAgICXpqTmCw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNucVlPNkNnEAE",
+      "reviewer": "Rita P.",
+      "rating": 5,
+      "text": "The service was expedient,  thorough and reliable. I especially appreciated they live by their name, Integrity. They were punctual so l could plan around their arrival. They left the area clean. The price was comparable. Their service was professional .   I highly recommend them.",
+      "publishedAt": "2024-09-27T10:57:35.690Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNucVlPNkNnEAE!2m1!1s0x0:0x14f9342fcc49ae66!3m1!1s2@1:CIHM0ogKEICAgICnqYO6Cg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURiOVBxdlB3EAE",
+      "reviewer": "Jennifer J.",
+      "rating": 5,
+      "text": "Sam is one of the hardest working people I know.  He and his team are the epitome of integrity-based service.  Highly recommend!",
+      "publishedAt": "2024-08-02T13:53:32.342Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURiOVBxdlB3EAE!2m1!1s0x0:0x14f9342fcc49ae66!3m1!1s2@1:CIHM0ogKEICAgIDb9PqvPw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNic3FPSDFnRRAB",
+      "reviewer": "Patricia S.",
+      "rating": 5,
+      "text": "They are very prompt, courteous, efficient, and very affordable. I would, and will, highly recommend them.<br>Art Smith",
+      "publishedAt": "2024-07-25T12:45:13.214Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNic3FPSDFnRRAB!2m1!1s0x0:0x14f9342fcc49ae66!3m1!1s2@1:CIHM0ogKEICAgICbsqOH1gE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNUeFp5ZkhREAE",
+      "reviewer": "Hunter M.",
+      "rating": 5,
+      "text": "I was referred to Integrity by another local investor. I had an issue with my unit in a short term rental after 8pm, and Sam (the owner) personally took care of it himself. He was very efficient, great with communication, and fair in his pricing after hours. Amazing leadership example and world class service.",
+      "publishedAt": "2024-05-17T02:31:42.931Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNUeFp5ZkhREAE!2m1!1s0x0:0x14f9342fcc49ae66!3m1!1s2@1:CIHM0ogKEICAgICTxZyfHQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNUd2ZISzJBRRAB",
+      "reviewer": "Shannon S.",
+      "rating": 5,
+      "text": "We used Integrity Heating and Cooling for routine maintenance on our air conditioner. They were responsive, professional and friendly. We would definitely use them again.",
+      "publishedAt": "2024-05-15T14:52:08.369Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNUd2ZISzJBRRAB!2m1!1s0x0:0x14f9342fcc49ae66!3m1!1s2@1:CIHM0ogKEICAgICTwfHK2AE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURqMkpEREdBEAE",
+      "reviewer": "Lynne L.",
+      "rating": 5,
+      "text": "Integrity Heating and Cooling was fantastic to work with. They came out so quickly, fixed the problem and the bill was so reasonable. We own a lot of commercial buildings, and really appreciate being able to work with vendors like Integrity. They made our tenant happy, and that makes us happy!",
+      "publishedAt": "2024-04-29T02:19:23.278Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURqMkpEREdBEAE!2m1!1s0x0:0x14f9342fcc49ae66!3m1!1s2@1:CIHM0ogKEICAgIDj2JDDGA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUREeFluNmtBRRAB",
+      "reviewer": "Daniel J.",
+      "rating": 5,
+      "text": "Great trustworthy company!",
+      "publishedAt": "2024-04-12T02:13:23.709Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUREeFluNmtBRRAB!2m1!1s0x0:0x14f9342fcc49ae66!3m1!1s2@1:CIHM0ogKEICAgIDDxYn6kAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUREdWFQQ3B3RRAB",
+      "reviewer": "Phil D.",
+      "rating": 5,
+      "text": "I’ve know Sam Chaney for almost a year now. Every customer I send his way are always praising the efficiency and customer service. If you need or have any questions about AC, HVAC is the company for you",
+      "publishedAt": "2024-04-11T17:38:01.342Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUREdWFQQ3B3RRAB!2m1!1s0x0:0x14f9342fcc49ae66!3m1!1s2@1:CIHM0ogKEICAgIDDuaPCpwE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUREdWNPWHNRRRAB",
+      "reviewer": "Emily R.",
+      "rating": 5,
+      "text": "Sam and his team at Integrity Heating and Cooling. Truly, make the process of getting things fixed simple.",
+      "publishedAt": "2024-04-11T17:37:39.313Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUREdWNPWHNRRRAB!2m1!1s0x0:0x14f9342fcc49ae66!3m1!1s2@1:CIHM0ogKEICAgIDDucOXsQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUREdVlPV1FBEAE",
+      "reviewer": "Justus K.",
+      "rating": 5,
+      "text": "Clayton came to our house and was quick to inspect our our AC, educate us on what was wrong and fix it within two hours. We had another company come out that “couldn’t figure it out” and needed another salesman to come.<br><br>Will forever be my first and only call for all my HVAC needs.",
+      "publishedAt": "2024-04-11T17:36:05.578Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUREdVlPV1FBEAE!2m1!1s0x0:0x14f9342fcc49ae66!3m1!1s2@1:CIHM0ogKEICAgIDDuYOWQA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUQ5enJUaDZRRRAB",
+      "reviewer": "Brett J.",
+      "rating": 5,
+      "text": "After having worked with many HVAC companies over the years in Wichita, Integrity Heating and Cooling has become the only company I work with.  Sam and his team are outstanding in every way.  They are dependable and accountable, best prices around, courteous and respectful, and always leave the place exactly as they found it (i.e., they never leave a mess).  They completely replaced the furnace and A/C unit at my mother's house, and they way the treater her, her house and the entire project really made an impression on me.  Integrity will be my HVAC company as long as I'm in Wichita.  You cannot go wrong with the Integrity team.",
+      "publishedAt": "2024-03-16T20:22:44.316Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ5enJUaDZRRRAB!2m1!1s0x0:0x14f9342fcc49ae66!3m1!1s2@1:CIHM0ogKEICAgID9zrTh6QE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNGazdxVWZnEAE",
+      "reviewer": "Debra D.",
+      "rating": 5,
+      "text": "I genuinely appreciate their responsiveness to the Heating and Air-conditioning repairs we needed over the last 6 months. The Integrity team got us up and running within two days, or less, from the day we called for services.<br>Their professionalism and courtesy is far above the norm for the industry and their time and materials costs are in-line with others in the Wichita area.<br>I am confident that they are a trustworthy business and I have no concerns recommending them for residential repairs and maintenance.<br>Sincerely, Steve Decker",
+      "publishedAt": "2023-11-01T16:35:05.291Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNGazdxVWZnEAE!2m1!1s0x0:0x14f9342fcc49ae66!3m1!1s2@1:CIHM0ogKEICAgICFk7qUfg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURaeHVhQmRREAE",
+      "reviewer": "Jose",
+      "rating": 5,
+      "text": "After 2 other companies could not figure our system out, integrity came and got us running.. 100% recommend",
+      "publishedAt": "2023-09-29T19:10:10.406Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURaeHVhQmRREAE!2m1!1s0x0:0x14f9342fcc49ae66!3m1!1s2@1:CIHM0ogKEICAgIDZxuaBdQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURwN0ktbUtREAE",
+      "reviewer": "Madison S.",
+      "rating": 5,
+      "text": "I will highly recommend Integrity Heating and Cooling! I've used them in an emergency situation on a weekend, as well as during the week. Their customer service is top notch, offering their services in a timely manner. On the weekend, they had one of their service men out within hours. We had to replace our AC unit and they had the unit ordered and repaired the very next day. They offer competitive pricing and shoot you straight. We will continue to use them for our HVAC needs!",
+      "publishedAt": "2023-08-17T19:11:45.577Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwN0ktbUtREAE!2m1!1s0x0:0x14f9342fcc49ae66!3m1!1s2@1:CIHM0ogKEICAgIDp7I-mKQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNwX2VLMWFBEAE",
+      "reviewer": "Chris J.",
+      "rating": 5,
+      "text": "Great response and fair prices!",
+      "publishedAt": "2023-08-09T02:05:59.162Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNwX2VLMWFBEAE!2m1!1s0x0:0x14f9342fcc49ae66!3m1!1s2@1:CIHM0ogKEICAgICp_eK1aA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNwa3RfSWxnRRAB",
+      "reviewer": "Jessica H.",
+      "rating": 5,
+      "text": "AC went out on a SATURDAY around 2pm. I contacted Sam and he had his guy Clayton there within a couple hours. Clayton quickly diagnosed the issue and ordered the parts. Came back on Monday and had me up and running in no time. Would strongly recommend giving them a call.",
+      "publishedAt": "2023-07-31T20:26:06.435Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNwa3RfSWxnRRAB!2m1!1s0x0:0x14f9342fcc49ae66!3m1!1s2@1:CIHM0ogKEICAgICpkt_IlgE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURKa3EtdzhnRRAB",
+      "reviewer": "Paul S.",
+      "rating": 5,
+      "text": "Sam is great to work with! Gives his honest opinion and shows he cares about his clients.",
+      "publishedAt": "2023-07-14T00:27:40.104Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURKa3EtdzhnRRAB!2m1!1s0x0:0x14f9342fcc49ae66!3m1!1s2@1:CIHM0ogKEICAgIDJkq-w8gE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUR4dV9qcjh3RRAB",
+      "reviewer": "Julie M.",
+      "rating": 5,
+      "text": "Sam is an amazing person and businessman.  Nothing but good things about Integrity!",
+      "publishedAt": "2023-06-15T17:44:50.603Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR4dV9qcjh3RRAB!2m1!1s0x0:0x14f9342fcc49ae66!3m1!1s2@1:CIHM0ogKEICAgIDxu_jr8wE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUR4dTlpWmRnEAE",
+      "reviewer": "Destiney W.",
+      "rating": 5,
+      "text": "Wonderful team of people ! They are here for you !",
+      "publishedAt": "2023-06-15T17:43:00.176Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR4dTlpWmRnEAE!2m1!1s0x0:0x14f9342fcc49ae66!3m1!1s2@1:CIHM0ogKEICAgIDxu9iZdg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURSd09ia1JREAE",
+      "reviewer": "Ryan S.",
+      "rating": 5,
+      "text": "Sam with Integrity is just that. A company with integrity",
+      "publishedAt": "2023-04-15T01:18:35.546Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURSd09ia1JREAE!2m1!1s0x0:0x14f9342fcc49ae66!3m1!1s2@1:CIHM0ogKEICAgIDRwObkRQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURCMmNiT2N3EAE",
+      "reviewer": "Charles M.",
+      "rating": 5,
+      "text": "Prompt timely response to AC malfunction during sweltering summer heat is like a divine intervention. Recommend them beyond highly!",
+      "publishedAt": "2023-01-23T16:20:25.537Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURCMmNiT2N3EAE!2m1!1s0x0:0x14f9342fcc49ae66!3m1!1s2@1:CIHM0ogKEICAgIDB2cbOcw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUQyd3ZMSHRRRRAB",
+      "reviewer": "Scott B.",
+      "rating": 5,
+      "text": "Samuel did a great job of servicing my A/C unit. Dependable and easy to work with.",
+      "publishedAt": "2022-05-09T22:38:35.509Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQyd3ZMSHRRRRAB!2m1!1s0x0:0x14f9342fcc49ae66!3m1!1s2@1:CIHM0ogKEICAgID2wvLHtQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURXbWZldUh3EAE",
+      "reviewer": "Jesse B.",
+      "rating": 5,
+      "text": "Awesome HVAC company! Sam was great to work with and got our cooling system maintained for the summer!",
+      "publishedAt": "2022-03-28T19:36:33.778Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURXbWZldUh3EAE!2m1!1s0x0:0x14f9342fcc49ae66!3m1!1s2@1:CIHM0ogKEICAgIDWmfeuHw%7C%7C?hl=en-US",
+      "language": "en"
+    }
+  ],
+  "ratingOnly": [
+    {
+      "id": "ChZDSUhNMG9nS0VNaUwzN1dQOEpfN2F3EAE",
+      "reviewer": "Sheree B.",
+      "rating": 5,
+      "publishedAt": "2025-05-17T16:48:25.436Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURydmRhZ1V3EAE",
+      "reviewer": "Nick G.",
+      "rating": 5,
+      "publishedAt": "2024-07-19T12:41:51.567Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUM5Nl9Ed193RRAB",
+      "reviewer": "Cassie S.",
+      "rating": 5,
+      "publishedAt": "2024-03-09T23:38:19.173Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNacmZ5dlJ3EAE",
+      "reviewer": "Brian A.",
+      "rating": 5,
+      "publishedAt": "2023-09-15T17:21:54.152Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUR4dS1URWRnEAE",
+      "reviewer": "Chris M.",
+      "rating": 5,
+      "publishedAt": "2023-06-15T17:48:12.849Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUQyMVlucUJnEAE",
+      "reviewer": "Steve S.",
+      "rating": 5,
+      "publishedAt": "2022-05-20T21:29:02.342Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUQyb2RiN19RRRAB",
+      "reviewer": "Ashlee F.",
+      "rating": 5,
+      "publishedAt": "2022-05-16T22:12:21.414Z"
+    }
+  ]
+}
