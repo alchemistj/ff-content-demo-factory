@@ -8,7 +8,7 @@ Hey Geremy and the Farha HomeTrends team,
 
 My daughter and I build websites for service businesses. Reading your reviews, people keep saying your team is professional, shows up on time, keeps them posted so there are no surprises, and that they come back to you for the next room. That's what our method is built around, so we made you a website mockup:
 
-https://farha-template.websitepreview.fluidframemarketing.com/
+https://farha.websitepreview.fluidframemarketing.com/
 
 Note: It'll look a lot better with your logo and images on it! Lol
 

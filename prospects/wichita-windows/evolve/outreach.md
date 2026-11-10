@@ -8,7 +8,7 @@ Hey Colton, Riley and the Evolve Exteriors team,
 
 My daughter and I build websites for service businesses. Reading your reviews, people keep saying your crews are polite and professional, get the windows in fast, and leave the house spotless. That's the kind of company our method is built for, so we made you a website mockup:
 
-https://evolve-template.websitepreview.fluidframemarketing.com/
+https://evolve.websitepreview.fluidframemarketing.com/
 
 Note: It'll look a lot better with your logo and images on it! Lol
 

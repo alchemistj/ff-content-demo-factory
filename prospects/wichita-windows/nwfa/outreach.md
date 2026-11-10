@@ -8,7 +8,7 @@ Hey New Windows For America team,
 
 My daughter and I build websites for service businesses. Reading your reviews, most of them are about insulating and sealing up older houses, and people say your crews are professional, friendly and tidy about it. That's what our method is built around, so we made you a website mockup:
 
-https://nwfa-template.websitepreview.fluidframemarketing.com/
+https://nwfa.websitepreview.fluidframemarketing.com/
 
 Note: It'll look a lot better with your logo and images on it! Lol
 

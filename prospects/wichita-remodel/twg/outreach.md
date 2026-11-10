@@ -8,7 +8,7 @@ Hey TWG Construction team,
 
 My daughter and I build websites for service businesses. Reading your reviews, people keep saying you were quick, you worked with their insurance company after the hail, and one crew took care of the roof, siding, windows and paint. That's what our method is built around, so we made you a website mockup:
 
-https://twg-template.websitepreview.fluidframemarketing.com/
+https://twg.websitepreview.fluidframemarketing.com/
 
 Note: It'll look a lot better with your logo and images on it! Lol
 

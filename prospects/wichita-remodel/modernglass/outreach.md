@@ -8,7 +8,7 @@ Hey Modern Glass Structures team,
 
 My daughter and I build websites for service businesses. Reading your reviews, people keep saying you're fast, on time and easy to work with, and that you take the time to make them a priority. That's what our method is built around, so we made you a website mockup:
 
-https://modernglass-template.websitepreview.fluidframemarketing.com/
+https://modernglass.websitepreview.fluidframemarketing.com/
 
 Note: It'll look a lot better with your logo and images on it! Lol
 
