@@ -15,6 +15,19 @@ The four ideas, in one line each:
 
 ---
 
+## The ideas, v2 (Josh, 2026-11-11): a way of working, not a trait
+
+The first ideas below were traits pulled from reviews ("staying power", "accountability", "new and proven", "Nate's number"). Arguing a trait turned each homepage into an essay about the company. Per the writer guide, the idea is now a way of working a customer can see, written as "We ___", taken from `facts.md`; the reviews prove it. Each idea lives in the hero and one section; the rest of the homepage is the customer's problems, one per service, each ending in what the company does about it.
+
+| Company | The idea ("We ___") | From the facts | Reviews that prove it |
+| --- | --- | --- | --- |
+| Cook's | We put your system on a twice-a-year schedule and keep looking after it: the Premium plan (two servicings a year, priority emergency service within 24 hours, 20% off parts and labor), and emergency calls until 10 PM when something quits anyway. | `facts.md` sections 6-7 (cookshvac.com/maintenance, hours table) | Sandra S. (35 years), John E. (40-year-old Carrier still running), Ted H. (caught the wrong filter) |
+| Integrity | We tell you the price before we do the work: a free phone consultation first, a full itemized breakdown with no surprise charges, and after hours, the price on the phone before anyone drives out. | `facts.md` sections 6 and 8 (homepage pricing claim, contact page after-hours line, "FREE over-the-phone consultations") | Hunter M. (fair after-hours pricing), Rita P. ("live by their name"), Brett J. ("best prices around") |
+| Air Capital | We come out the same day or the next, and the estimate is free, so you hear what failed before you pay for anything. | `facts.md` sections 6-7 ("Same-day and next-day appointments", "Call us for a free estimate") | Carlos F. (same day at 104 degrees, "didn't try to upsell me"), Jayci G. (within an hour), Hannah M. |
+| Dream Makers | You text or call Nate directly, and the person who answers is the person who comes out and remembers your system. | BBB owner listing; the site's text option (Carolyn S. texted "from their website"); the site itself is down (502), so this one leans on the pattern across many reviews | Mashaela W. ("always answers when I text or call him"), Almeta W. (first-name basis), Allen B. ("every reply… every texts") |
+
+---
+
 ## The spirit (read this first)
 
 The idea is what a page argues. The spirit is who is talking. A page can argue the right idea and still sound like marketing: claims about the company instead of the way the owner would actually say it to a customer on the porch. When in doubt, write it the way that person would say it, not the way an ad would.
