@@ -15,7 +15,7 @@ You can't see inside your furnace or your condenser. When one quits, you're trus
 
 That's why heating and cooling is a trade where a company's word has to be worth something. We tell you what we found, what the repair costs and what your options are. Then we do what we said.
 
-The work carries our name, and we stand behind it. If something isn't right, you call us, and we deal with it.
+The work carries our name, and we stand behind it. If something isn't right, call us and we'll make it right.
 
 > "The service was expedient,  thorough and reliable. I especially appreciated they live by their name, Integrity. They were punctual so l could plan around their arrival. They left the area clean. The price was comparable."
 > — Rita P.
