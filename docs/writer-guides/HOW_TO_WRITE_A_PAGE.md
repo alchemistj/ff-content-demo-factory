@@ -7,6 +7,8 @@ The finished model for a multi-service homepage is [examples/approved-copy/evolv
 ## What good pages do
 
 1. **They argue one idea.** The page has a point of view the whole business can stand behind, and every section serves it. Window Dudes: "Inspect First. Fix Right." Evolve: the outside of a house is one system, so one company does all of it and an owner looks first. Find the idea in the reviews and the facts, not in a slogan list.
+   - **The idea is a way of working a customer can see, not a trait** (Josh, 2026-11-11). Write it as "We ___": "We inspect first, then tell you whether it needs repair or replacement." Not "staying power", "integrity" or "a company you keep." A trait turns every section into an essay about the company; a way of working gives each section something to show.
+   - **The facts supply the idea; the reviews prove it.** Reviews tell you how customers feel. What the business actually does (a plan, a policy, who answers the phone, what happens before the price) comes from `facts.md`.
 2. **They start from the homeowner's moment.** A room that never gets comfortable. Curtains that move with the window shut. Shoving a patio door open with your shoulder. Name the thing the visitor is living with before you name the service.
 3. **They explain why.** Fog between the panes means the seal failed. Siding takes the wind and hail first. Sliders leak because rollers wear and the track bends. General trade knowledge like this is allowed and expected; it is not a claim about the business. Claims about the business (warranty, years, services, people, prices) still come only from `facts.md`.
 4. **They give real answers.** "Most window jobs are finished in a day" beats "We give you the schedule at your estimate." Answer the question the visitor actually has, from the facts and the pattern in the reviews. Defer only what truly depends on their house.
@@ -38,6 +40,12 @@ One paragraph only, so the buttons stay on a phone's first screen.
 
 ### 3. Read it as the owner and as the visitor
 Read it aloud in your head as the owner. Would they say this? Is anything invented, hedged or generic? Then read it as someone with a drafty house on their phone. Do they learn something? Do they know what to do next?
+
+### 4. Read it beside the best pages we have (the last gate)
+Checks catch broken rules. They can't tell you a page reads like a blog. Before anything goes to Josh, read the page as a homeowner beside the best demo we've sent in a similar trade and one model page from `examples/approved-copy/`. Ask: would Josh feel this is as good? Where not? Fix it before he sees it.
+
+### 5. When a page feels off, go back to the step that caused it
+Don't keep editing the page. If a page needs a second fix-up pass, stop and find the step that went wrong (usually the idea or the plan) and rewrite from there. Patching the words on a wrong idea fixes what you can see and leaves the cause.
 
 ## One real before-and-after (Evolve Exteriors homepage)
 
