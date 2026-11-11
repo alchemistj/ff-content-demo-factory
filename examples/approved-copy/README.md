@@ -11,11 +11,27 @@ The guides in `docs/writer-guides/` name the job. These pages show how that job 
 3. Notice rhythm, proof placement, decision help, and how claims stay inside the evidence — not sentence patterns to reuse.
 4. Write the current prospect’s pages from the current prospect packet. Window Dudes, SRA, and Greene Planet facts stay with those businesses.
 
-Different pages here reach the same quality by different routes. Do not outline a new page to match one of these outlines. Do not score a draft against these pages.
+Different pages here reach the same quality by different routes. Don't copy their facts or exact wording. Do hold every new homepage to the shared fundamentals below, and read the finished page beside them before Josh sees it.
 
 The lengths you see are the lengths of these sites. They are demonstrations, not ceilings or required word counts.
 
 The twelve rows below are the primary craft corpus. Shared `_chrome.md` files are supplemental header/footer examples for the site/chrome phase; they are not a thirteenth page.
+
+## What all three model sites share (Josh, 2026-11-11)
+
+Window Dudes, SRA and Greene Planet differ, but the same fundamentals carry across. Josh named Window Dudes as the most human-tested. Use these as the bar for every homepage, not just "read for feel":
+
+1. **A fact line above the headline.** Where, how long, who: "Springfield, MO · Since 2005", "BBB A+ Rating · Veteran-Owned", "AMRT-Certified".
+2. **The top names who leads and the method, then the offer.** "Owner David is on every job personally. Diagnosis before treatment. Free inspections."
+3. **A point of view against the industry.** "Most companies sell replacement before they look…" / "Most roofers wait for the storm. SRA doesn't." / "Most mold companies start with a salesperson." Name the common bad practice, then what this business does instead.
+4. **A short method line people remember.** "Inspect First. Fix Right." / "Diagnosis before treatment."
+5. **Proof you can scan.** A checkmark list of credentials and promises, not proof buried in paragraphs.
+6. **Expertise shown problem by problem.** A short heading per problem and a two-line diagnosis and fix ("Fogged glass: the seal failed; we replace only the glass unit").
+7. **A services list, one line each.**
+8. **Few reviews, each proving something.** Window Dudes runs two on its homepage.
+9. **FAQ answers with real substance:** what it depends on, ranges where the facts allow, how to check.
+
+Facts still come only from the prospect's facts and reviews. Where a model has an owner credential we don't have, use the strongest fact we do have; never invent one. The demo template has the blocks for 5, 6 and 7: a `list` with `"listStyle": "checks"`, a prose section's `items: [{title, text}]`, and the `services` section.
 
 ## Owner-facing Strategy Overview examples
 
