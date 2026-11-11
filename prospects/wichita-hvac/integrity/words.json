@@ -28,10 +28,10 @@
   },
   "trustBar": [
     "Free Phone Consultation",
-    "Full Cost Breakdown",
-    "No Surprise Charges",
-    "After-Hours Price on the Phone",
-    "Owner on the Phone"
+    "Full Cost Breakdown Before Work",
+    "After-Hours Price by Phone",
+    "Licensed and Insured",
+    "All Major Brands"
   ],
   "services": [
     {
@@ -78,9 +78,9 @@
       "keyword": "hvac company wichita ks",
       "seo": null,
       "hero": {
-        "eyebrow": "Wichita heating and cooling, with the price first",
+        "eyebrow": "Wichita, KS · Family-Owned · Licensed and Insured",
         "h1": "HVAC Company in Wichita, KS — Integrity Heating and Cooling",
-        "sub": "I'm Sam. We repair furnaces and air conditioners, replace worn-out systems and work on homes and commercial buildings around Wichita, and you hear the price before we do the work. Call for a free phone consultation.",
+        "sub": "I'm Sam. Integrity repairs and replaces furnaces and air conditioners for homes, rentals and businesses across Greater Wichita, and you hear the price before we touch anything. Call for a free phone consultation.",
         "primaryCta": {
           "label": "Call (316) 932-9559",
           "action": "call"
@@ -98,69 +98,69 @@
       "sections": [
         {
           "type": "review",
-          "quote": "Integrity Heating and Cooling replaced my whole HVAC system and left me with full confidence that everything was installed to last with no problems. They were very thorough and efficient and got the job done. I wasn’t sure I could get a fair quote along with great work ethic but these guys proved me wrong!",
-          "name": "Maddie R."
-        },
-        {
-          "type": "split",
-          "heading": "You Hear the Price Before We Do the Work",
-          "body": [
-            "You can't see inside your furnace or your condenser, so the price is the part you can check. We start with a free phone consultation: tell us what the system is doing and hear what we think before you decide anything.",
-            "Then a technician comes to the house and finds the actual cause. You get a full breakdown of the cost, with no surprise charges, before the work starts.",
-            "Our office hours are Monday to Friday, 8 AM to 5 PM. If it quits outside them, call anyway. After-hours work does cost more, so we give you the price on the phone before anyone drives out.",
-            "I take those calls myself when I can."
-          ],
-          "image": {
-            "slot": "price-talk",
-            "alt": "Technician with a clipboard talking with a homeowner"
-          }
-        },
-        {
-          "type": "review",
           "quote": "I was referred to Integrity by another local investor. I had an issue with my unit in a short term rental after 8pm, and Sam (the owner) personally took care of it himself. He was very efficient, great with communication, and fair in his pricing after hours.",
           "name": "Hunter M."
         },
         {
-          "type": "prose",
-          "heading": "The House Won't Get Below 80",
+          "type": "split",
+          "heading": "The Price Comes Before the Work",
+          "image": {
+            "slot": "gauges-check",
+            "alt": "Technician checking an outdoor air conditioner with gauges"
+          },
           "body": [
-            "The vents blow lukewarm air, or the unit outside runs and runs without cooling anything.",
-            "Air conditioners fail in a few predictable places: a weak capacitor, a dirty coil, a tired motor or a refrigerant leak. A capacitor is a small, cheap part. A leak is a bigger problem, and topping off refrigerant without fixing it just drains away again.",
-            "Kansas summers make it worse. An air conditioner that runs nearly nonstop through a string of 100-degree days has no rest, and a part that was already tired gives out first.",
-            "Before you call, check the thermostat is set to cool and the breaker hasn't tripped. Look at the outdoor unit: if the fan isn't turning, or the filter inside is gray with dust, tell us when you call.",
-            "The fix is usually one part. A capacitor swap, a cleaned coil or a new motor gets most units cooling again, and a leak has to be found and sealed before any refrigerant goes back in.",
-            "We find the real cause, show you the breakdown and fix it. If an old unit isn't worth repairing, we'll tell you straight and let you decide."
+            "Most heating and cooling calls go the same way. Someone comes out, works on it, and you find out what it cost when the bill shows up. You can't see inside a furnace or a condenser, so you take their word for it.",
+            "We do it the other way around. You describe the problem on a free phone consultation and hear what we think. A technician finds the actual cause. Then you get a full breakdown of the cost, with no surprise charges, before any work starts.",
+            "After hours, the price comes over the phone before anyone drives out. It costs more on a Saturday night, and you'll know how much before you say yes."
+          ],
+          "list": [
+            "Free phone consultation before anything else",
+            "Full cost breakdown before the work starts",
+            "After-hours price quoted on the phone",
+            "Owner on the phone: I take calls myself when I can",
+            "Licensed and insured, all major brands"
+          ],
+          "listStyle": "checks"
+        },
+        {
+          "type": "prose",
+          "heading": "Furnace and AC Repair in Wichita: Find the Cause, Then Fix It",
+          "body": [
+            "Most no-heat and no-cooling calls come down to one part. Too many companies quote the whole system before they've found it. Here's what we look for, and what it usually takes."
+          ],
+          "items": [
+            {
+              "title": "The furnace clicks but never lights",
+              "text": "Usually a worn igniter or a dirty flame sensor. Both are small parts, and it's a short repair once we've confirmed which one."
+            },
+            {
+              "title": "It lights, then shuts off after a few minutes",
+              "text": "Often a clogged filter making the furnace overheat, or a sensor that can't prove the flame. We check airflow first, because a new part won't fix a choked filter."
+            },
+            {
+              "title": "The AC hums but won't start",
+              "text": "A weak capacitor is the most common cause. It's one of the smallest and cheapest repairs in the trade."
+            },
+            {
+              "title": "The house won't cool below 80",
+              "text": "A refrigerant leak or a frozen coil. Adding refrigerant without finding the leak is money that leaks out again, so we find the leak first."
+            },
+            {
+              "title": "A motor that squeals, rattles or runs hot",
+              "text": "Blower and condenser motors warn you before they fail. Replacing one early is a smaller job than replacing it after it quits."
+            },
+            {
+              "title": "A cracked heat exchanger",
+              "text": "This one isn't small. It keeps burner exhaust out of the air you breathe. If we find a crack, you'll hear it straight, with your options."
+            }
+          ],
+          "tail": [
+            "Every one of these starts the same way: a free phone consultation, then the price before the work."
           ],
           "link": {
-            "label": "See AC repair in Wichita →",
+            "label": "See AC repair in Wichita",
             "route": "/ac-repair-wichita-ks/"
           }
-        },
-        {
-          "type": "prose",
-          "heading": "The Furnace Clicks but Never Lights",
-          "body": [
-            "Or it runs two minutes and shuts down, or it blows cold air while the house gets colder.",
-            "The cause is often small: an igniter, a flame sensor, a clogged filter or a failing blower motor. A furnace goes through several steps before it heats, and a failure at any one of them stops the whole thing.",
-            "It tends to happen on the first cold night. The furnace has sat idle since spring, dust has settled on the igniter and sensor, and a part that was weak in March finally quits.",
-            "Check first that the thermostat is set to heat with fresh batteries, the furnace switch is on and the filter isn't packed with dust. If you smell gas, leave the house and call your gas company before anything else.",
-            "The fix is usually quick: clean or replace a flame sensor, swap an igniter, put in a new blower motor. Those are repairs, not a new furnace.",
-            "We show you what failed, give you the cost, then fix it. A cracked heat exchanger is a safety matter, and we'll tell you plainly if that's what we find."
-          ],
-          "link": {
-            "label": "See furnace repair in Wichita →",
-            "route": "/furnace-repair-wichita-ks/"
-          }
-        },
-        {
-          "type": "prose",
-          "heading": "When a Repair Stops Making Sense",
-          "body": [
-            "When a company that also sells systems tells you yours is finished, it's fair to wonder. So we put the repair next to a new system, and you decide.",
-            "If you've paid for two or three repairs in a couple of years and the equipment is old, a new system is usually the cheaper road. Sometimes the honest answer is one more repair.",
-            "Age matters because parts wear together. A fifteen-year-old system with a new motor still has an old compressor or heat exchanger behind it, and the next failure is rarely far off.",
-            "We install heating and cooling equipment too. A system that is sized and set up badly runs hard and wears out early, so the installation has to be right."
-          ]
         },
         {
           "type": "review",
@@ -168,21 +168,25 @@
           "name": "Brett J."
         },
         {
+          "type": "services",
+          "heading": "Heating and Cooling Services",
+          "intro": "One call covers the furnace, the air conditioner and what's in between, for homes, rentals and commercial buildings."
+        },
+        {
           "type": "prose",
-          "heading": "A Noisy Motor, a Heat Pump, a Maintenance Check",
+          "heading": "When a Repair Stops Making Sense",
           "body": [
-            "A motor that has started making noise is a warning. Replacing a blower or condenser motor early is a smaller job than replacing it after it fails, and we repair heat pumps too.",
-            "A dirty filter and a coil caked with dust wear a system out a little more each season. A motor that runs hot and dry, with a hum or a squeal, is the usual sign.",
-            "A check before the heavy season catches those things while they're cheap: clean the coil, change the filter, look at the motor. You can do the filter yourself between visits. We offer maintenance plans, so ask about one when you call."
+            "A company that also sells new systems has a reason to call yours finished. We put the repair price next to the price of a new system, and you decide.",
+            "Here's a rule you can check yourself. If it's a capacitor, an igniter or a motor, repair it. If the system is old and the repairs keep coming, or the compressor or heat exchanger has failed, that's when to price a new one.",
+            "When it is time, we install new furnaces and air conditioners, and financing is available."
           ]
         },
         {
           "type": "prose",
-          "heading": "Rentals and Commercial Buildings",
+          "heading": "For Landlords, Hosts and Property Owners",
           "body": [
-            "A tenant without heat can't wait for a busy contractor, and a short-term rental with a broken unit costs you every night it sits empty.",
-            "We work on commercial buildings as well as homes, and the rule is the same: you see the price before we do the work.",
-            "Commercial systems run longer hours than a house, so small faults add up faster. A rooftop unit that short-cycles or a space that never reaches temperature is worth a call before the busy season, not after it."
+            "If you own rentals or commercial buildings, you know a vendor by the invoice, the mess left behind and whether the tenant calls you back unhappy.",
+            "A tenant without heat can't wait for a busy contractor, and a short-term rental with a broken unit costs you every night it sits empty. So the bill is itemized, the work is clean, and the price comes before the work, at 8pm the same as at 8am."
           ]
         },
         {
@@ -193,16 +197,25 @@
         {
           "type": "prose",
           "heading": "What We Owe You",
-          "body": [
-            "**A clean house when we leave.** A repair shouldn't leave you a second job.",
-            "**Work we stand behind.** We aim to do the job right the first time. If something isn't right, call us and we'll make it right.",
-            "**A name to live up to.** The name is Integrity, and I have to live up to it on every job."
-          ]
+          "list": [
+            "A clean house when we leave. A repair shouldn't leave you a second job.",
+            "Work we stand behind. If something isn't right, call us and we'll make it right.",
+            "A name to live up to. The name is Integrity, and I have to live up to it on every job."
+          ],
+          "listStyle": "checks"
         },
         {
           "type": "review",
           "quote": "The service was expedient, thorough and reliable. I especially appreciated they live by their name, Integrity. They were punctual so l could plan around their arrival. They left the area clean. The price was comparable.",
           "name": "Rita P."
+        },
+        {
+          "type": "prose",
+          "heading": "Maintenance Plan",
+          "body": [
+            "A dirty coil, a clogged filter and a motor running dry wear a system out a little more each season. A check before the heavy season catches them while they're cheap.",
+            "Our maintenance plan is $150 a year and includes up to 15% off most equipment and labor costs."
+          ]
         },
         {
           "type": "prose",
@@ -217,19 +230,23 @@
           "items": [
             {
               "q": "Does it cost anything to call?",
-              "a": "No, the phone consultation is free. Describe the problem and hear what we think before you decide anything."
+              "a": "No. The phone consultation is free. Describe the problem and hear what we think before you decide anything."
             },
             {
               "q": "What will the repair cost?",
-              "a": "After a technician finds the cause, you get a full breakdown of the costs, with no surprise charges. You decide from there."
+              "a": "It depends on what failed. A capacitor or an igniter is a small repair; a compressor is not. Either way, you get a full breakdown of the cost before the work starts."
             },
             {
               "q": "What if it quits at night or on a weekend?",
-              "a": "Call anyway. After-hours work does cost more, so we give you the price on the phone before anyone drives out."
+              "a": "Call anyway. Our office hours are Monday to Friday, 8 AM to 5 PM. After-hours work costs more, and you get that price on the phone before anyone drives out."
             },
             {
-              "q": "Who will I talk to, and who comes to the house?",
+              "q": "Who will I talk to?",
               "a": "I'm Sam. I take calls myself when I can, and a technician comes out to your house."
+            },
+            {
+              "q": "Do you have a maintenance plan?",
+              "a": "Yes. It's $150 a year and includes up to 15% off most equipment and labor costs."
             },
             {
               "q": "Do you work on commercial buildings?",
@@ -239,8 +256,8 @@
         },
         {
           "type": "callBand",
-          "heading": "Call Today",
-          "text": "Call (316) 932-9559, tell us what the system is doing and hear the price before we do the work. Integrity Heating and Cooling, 801 S Fabrique Dr, Wichita."
+          "heading": "Hear the Price First",
+          "text": "Call (316) 932-9559 for a free phone consultation. You'll hear what we think it is, what it costs and what we'd do, and then you decide. Integrity Heating and Cooling, 801 S Fabrique Dr, Wichita."
         }
       ]
     },
@@ -297,11 +314,25 @@
           "heading": "What Usually Goes Wrong",
           "body": [
             "The house won't cool below 80, the vent air is lukewarm, the outdoor fan isn't spinning, or the breaker trips every time it starts. Most of the time it's one of a short list of parts.",
-            "Ice on the copper line, water around the indoor unit and a system that cycles on and off every few minutes mean turn it off and call. Running a struggling air conditioner makes a small repair bigger.",
-            "**Capacitor.** Gives the compressor and fan motor the jolt they need to start. When it weakens, the unit hums and won't run. It's one of the most common and cheapest repairs.",
-            "**Dirty coil or clogged filter.** Dust and a choked filter cut airflow until the coil freezes into a block of ice. The fix is cleaning, and finding out why it got that way.",
-            "**Low refrigerant.** An air conditioner doesn't use it up, so low means a leak. Adding more without fixing the leak is money that drains away again.",
-            "**Fan or compressor motor.** A noisy or slow-spinning motor is a warning. Replacing it early is a far smaller job than waiting for it to fail."
+            "Ice on the copper line, water around the indoor unit and a system that cycles on and off every few minutes mean turn it off and call. Running a struggling air conditioner makes a small repair bigger."
+          ],
+          "items": [
+            {
+              "title": "Capacitor",
+              "text": "Gives the compressor and fan motor the jolt they need to start. When it weakens, the unit hums and won't run. It's one of the most common and cheapest repairs."
+            },
+            {
+              "title": "Dirty coil or clogged filter",
+              "text": "Dust and a choked filter cut airflow until the coil freezes into a block of ice. The fix is cleaning, and finding out why it got that way."
+            },
+            {
+              "title": "Low refrigerant",
+              "text": "An air conditioner doesn't use it up, so low means a leak. Adding more without fixing the leak is money that drains away again."
+            },
+            {
+              "title": "Fan or compressor motor",
+              "text": "A noisy or slow-spinning motor is a warning. Replacing it early is a far smaller job than waiting for it to fail."
+            }
           ]
         },
         {
@@ -413,11 +444,25 @@
           "heading": "What Usually Stops the Heat",
           "body": [
             "The thermostat calls for heat and nothing happens, you hear clicking but the burners never light, or the furnace runs a couple of minutes and shuts off, over and over. Cold rooms, a screaming blower and air that isn't warm are worth a call too.",
-            "A furnace goes through several steps before it heats your house, and a failure at any one stops the whole thing. That's why most no-heat calls turn out to be a small part and not a new furnace.",
-            "**Igniter.** Lights the burner and wears out with use. A cracked or weak igniter means the furnace tries to start and can't.",
-            "**Flame sensor.** This small rod tells the furnace the burner lit. When residue coats it, the furnace shuts down after a few seconds as a safety measure. Cleaning or replacing it is a simple repair.",
-            "**Filter and airflow.** A clogged filter makes the furnace overheat and shut itself off. It's the cheapest fix there is, and the reason some furnaces cycle on and off.",
-            "**Blower motor.** Moves the warm air through the house. When it fails, the furnace can run and you still get little or no warmth in the rooms."
+            "A furnace goes through several steps before it heats your house, and a failure at any one stops the whole thing. That's why most no-heat calls turn out to be a small part and not a new furnace."
+          ],
+          "items": [
+            {
+              "title": "Igniter",
+              "text": "Lights the burner and wears out with use. A cracked or weak igniter means the furnace tries to start and can't."
+            },
+            {
+              "title": "Flame sensor",
+              "text": "This small rod tells the furnace the burner lit. When residue coats it, the furnace shuts down after a few seconds as a safety measure. Cleaning or replacing it is a simple repair."
+            },
+            {
+              "title": "Filter and airflow",
+              "text": "A clogged filter makes the furnace overheat and shut itself off. It's the cheapest fix there is, and the reason some furnaces cycle on and off."
+            },
+            {
+              "title": "Blower motor",
+              "text": "Moves the warm air through the house. When it fails, the furnace can run and you still get little or no warmth in the rooms."
+            }
           ]
         },
         {
