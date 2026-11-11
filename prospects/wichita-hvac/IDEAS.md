@@ -15,6 +15,17 @@ The four ideas, in one line each:
 
 ---
 
+## The spirit (read this first)
+
+The idea is what a page argues. The spirit is who is talking. A page can argue the right idea and still sound like marketing: claims about the company instead of the way the owner would actually say it to a customer on the porch. When in doubt, write it the way that person would say it, not the way an ad would.
+
+- **Cook's.** A crew that has looked after the same Wichita houses for decades. They talk like people who expect to see you again next fall, not people closing a sale.
+- **Integrity.** The name is something Sam has to live up to, not something he advertises. He talks like it's a weight he carries on every job, not a dare to the customer.
+- **Air Capital.** New and honest about it. They don't ask to be trusted; they talk like people who know they have to earn it, one hot afternoon at a time.
+- **Dream Makers.** Nate, talking to a customer he already knows by first name. Plain, friendly, a little personal, like a text from someone who has been in your attic.
+
+---
+
 ## 1. Cook's Heating and Cooling
 
 **The idea.** Wichita households stay with Cook's for decades. Customers describe the same company installing the system, fixing it, and getting called again by the next generation, so the homepage argues that this is the company you call once and keep.
