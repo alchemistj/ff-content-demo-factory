@@ -17,13 +17,13 @@ The repairs get more frequent, and each one costs more than you hoped.
 
 The unit runs nearly all day and never quite catches up. One room is always the hot one, or the cold one. The energy bill creeps up with nothing else changed.
 
-Parts wear, and old equipment loses efficiency. At some point you are paying to keep a system alive that you would be better off replacing, and the honest answer is to say so.
+Parts wear, and old equipment loses efficiency. At some point you are paying to keep a system alive that you would be better off replacing, and we'll tell you so when we see it.
 
 ## Repair First, Replace When It Makes Sense
 
 We don't start from a new system. We start from a diagnosis, because a failed ignitor or a bad capacitor is a repair, not a replacement.
 
-When the system is old and the failures are piling up, or the fix costs more than the unit is worth, we lay out both numbers side by side. You decide.
+When the system is old and the failures are piling up, or the fix costs more than the unit is worth, we lay out both numbers side by side, and the decision is yours.
 
 If you've been told you need a whole new system and aren't sure, call us for a second look.
 

@@ -2,7 +2,7 @@
 
 # Contact Integrity Heating and Cooling
 
-If your heat or air has quit, the fastest way to reach us is to call. Tell us what the system is doing and we'll tell you what we think, what it costs and what we'd do. We chose the name Integrity, so hold us to it.
+If your heat or air has quit, the fastest way to reach us is to call. Tell us what the system is doing and we'll tell you what we think, what it costs and what we'd do.
 
 **Buttons:** Call (316) 932-9559 | Request Service
 

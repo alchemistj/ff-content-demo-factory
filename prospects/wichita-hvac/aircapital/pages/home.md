@@ -55,7 +55,7 @@ If it's time, we install energy-efficient air conditioning systems matched to yo
 
 ## No Upsell From a Name You Don't Know
 
-A company people haven't heard of can't lean on a reputation, and it shouldn't lean on a sales pitch either. The cheapest way for us to earn the next call is to fix what's broken and stop there.
+A company nobody has heard of can't lean on a reputation, and it shouldn't lean on a sales pitch either. We'd rather fix what's broken, stop there, and earn the next call that way.
 
 So when the problem is a capacitor, you pay for a capacitor, and the estimate is free. You decide what happens next.
 
@@ -85,10 +85,10 @@ Not sure whether we cover your street? Call and ask. We'd rather tell you than l
 We offer same-day and next-day appointments between 8am and 5pm, and emergency calls are available. Call early and tell us what the system is doing.
 
 **Do you charge to come look?**
-Call us for a free estimate. Tell us what your system is doing and we'll set up a visit.
+The estimate is free. Call us, tell us what your system is doing, and we'll set up a visit.
 
 **You're a new company. Who am I getting?**
-Owners and technicians with years of hands-on HVAC experience. We're new to the Wichita market, and our reviews are the record to judge us by.
+Owners and technicians with years of hands-on HVAC experience. We're new to the Wichita market, so we'd point you to our reviews and let our first customers tell you how it went.
 
 **Do you only do repairs?**
 No. We repair, install and replace heating and cooling systems, install ductless mini splits and run maintenance plans.
@@ -101,6 +101,6 @@ Yes. We partner with Enhancify to offer flexible financing options, and promotio
 
 ## Call Air Capital Today
 
-If you've never heard of us, that's fine. Call for a free estimate, or send a request, and judge us on the first conversation.
+If you've never heard of us, that's fine. Call for a free estimate or send a request, and see how the first conversation goes.
 
 **Buttons:** Call (316) 990-1911 | Request Service

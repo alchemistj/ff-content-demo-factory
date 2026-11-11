@@ -30,7 +30,7 @@ Air conditioners fail in the heat because heat is when they work hardest. Here i
 - **Clogged drain line.** Algae blocks the condensate drain and a safety switch shuts the system down.
 - **Frozen coil.** Restricted airflow, usually from a dirty filter, lets the coil ice over and stops cooling.
 
-A technician who finds the real cause fixes it once. One who guesses sends you a second bill.
+We'd rather find the real cause and fix it once than guess and have to come back.
 
 > "My AC motor stopped working and they were able to make it out within an hour of calling and get my unit fixed. The communication, service and price were great! 10/10 recommend."
 > — Hannah M.
@@ -39,7 +39,7 @@ A technician who finds the real cause fixes it once. One who guesses sends you a
 
 You tell us what the system is doing, and we book you in. Same-day and next-day appointments are available, and so are emergency calls.
 
-We're a new company, and a repair call is how most people meet us. So we make it easy to judge: the technician checks the system, finds the failed part and explains what failed in plain words. Then we lay out your options.
+We're a new company, and a repair call is how most people meet us. So here's what to expect: the technician checks the system, finds the failed part and explains what failed in plain words. Then we lay out your options.
 
 You decide. If a repair makes sense, we do it. If it doesn't, we say so and talk through replacement.
 

@@ -170,7 +170,7 @@
           "type": "split",
           "heading": "No Upsell From a Name You Don't Know",
           "body": [
-            "A company people haven't heard of can't lean on a reputation, and it shouldn't lean on a sales pitch either. The cheapest way for us to earn the next call is to fix what's broken and stop there.",
+            "A company nobody has heard of can't lean on a reputation, and it shouldn't lean on a sales pitch either. We'd rather fix what's broken, stop there, and earn the next call that way.",
             "So when the problem is a capacitor, you pay for a capacitor, and the estimate is free. You decide what happens next."
           ],
           "image": {
@@ -220,11 +220,11 @@
             },
             {
               "q": "Do you charge to come look?",
-              "a": "Call us for a free estimate. Tell us what your system is doing and we'll set up a visit."
+              "a": "The estimate is free. Call us, tell us what your system is doing, and we'll set up a visit."
             },
             {
               "q": "You're a new company. Who am I getting?",
-              "a": "Owners and technicians with years of hands-on HVAC experience. We're new to the Wichita market, and our reviews are the record to judge us by."
+              "a": "Owners and technicians with years of hands-on HVAC experience. We're new to the Wichita market, so we'd point you to our reviews and let our first customers tell you how it went."
             },
             {
               "q": "Do you only do repairs?",
@@ -243,7 +243,7 @@
         {
           "type": "callBand",
           "heading": "Call Air Capital Today",
-          "text": "If you've never heard of us, that's fine. Call for a free estimate, or send a request, and judge us on the first conversation."
+          "text": "If you've never heard of us, that's fine. Call for a free estimate or send a request, and see how the first conversation goes."
         }
       ]
     },
@@ -305,7 +305,7 @@
             "**Frozen coil.** Restricted airflow, usually from a dirty filter, lets the coil ice over and stops cooling."
           ],
           "tail": [
-            "A technician who finds the real cause fixes it once. One who guesses sends you a second bill."
+            "We'd rather find the real cause and fix it once than guess and have to come back."
           ]
         },
         {
@@ -318,7 +318,7 @@
           "heading": "What Happens When You Call",
           "body": [
             "You tell us what the system is doing, and we book you in. Same-day and next-day appointments are available, and so are emergency calls.",
-            "We're a new company, and a repair call is how most people meet us. So we make it easy to judge: the technician checks the system, finds the failed part and explains what failed in plain words. Then we lay out your options.",
+            "We're a new company, and a repair call is how most people meet us. So here's what to expect: the technician checks the system, finds the failed part and explains what failed in plain words. Then we lay out your options.",
             "You decide. If a repair makes sense, we do it. If it doesn't, we say so and talk through replacement."
           ],
           "image": {
@@ -375,7 +375,7 @@
           "body": [
             "### How fast can you get here? We offer same-day and next-day appointments. Call early in the day and tell us it's an AC that's not cooling. Give us your town and we'll tell you when we can be there.",
             "### What does an AC repair cost? It depends on what failed: a capacitor is a small repair, a compressor is not. Call us for a free estimate and describe what the system is doing.",
-            "### You're new. Should I trust you with my AC? Our owners and technicians have years of hands-on HVAC experience, and the company has a 5.0 rating across 27 Google reviews. Judge us by the reviews on this page.",
+            "### You're new. Should I trust you with my AC? Our owners and technicians have years of hands-on HVAC experience, and the company has a 5.0 rating across 27 Google reviews. You don't have to take our word for it. Read the reviews on this page.",
             "### Can you maintain my AC so this doesn't happen again? Yes. We offer preventative maintenance plans, including annual tune-ups."
           ]
         },
@@ -443,7 +443,7 @@
           "body": [
             "Replacement is not where we start. A young system with one failed part should be repaired, and we'll tell you so.",
             "When we come out, the technician finds what failed and explains your options in plain words: repair the part, replace a major component, or replace the system. You get the reasoning and the numbers on each, and you decide.",
-            "We're a new company, and our reputation rests on advice like this. If your system has years left, you'll hear that from us."
+            "We're a new company, still earning our reputation, and honest advice like this is part of that. If your system has years left, you'll hear that from us."
           ]
         },
         {
@@ -500,7 +500,7 @@
           "heading": "Common Questions",
           "body": [
             "### How do I know whether to repair or replace? Look at the age and the repair history. An older system that has needed repeated repairs, or can't keep up even with every part working, is a replacement candidate. A newer system with one failed part usually isn't. Our [AC repair page](/ac-repair-wichita-ks/) covers what usually fails.",
-            "### What does a new AC cost? The price depends on the size of your home, the efficiency of the system and whether your ductwork needs work. We don't quote a number without seeing the house. Call for a free estimate.",
+            "### What does a new AC cost? The price depends on the size of your home, the efficiency of the system and whether your ductwork needs work. We don't quote a number without seeing the house, so call us for a free estimate.",
             "### Can I finance it? Yes. We partner with Enhancify to offer flexible financing options, and promotional 0% interest periods may be available depending on the financing partner.",
             "### Do you replace AC systems in the middle of summer? Yes. We offer same-day and next-day appointments, and emergency calls are available.",
             "### You're a new company. Can I trust you with a whole system? Our owners and technicians have years of hands-on HVAC experience, and we hold a 5.0 rating across 27 Google reviews. That includes customers who had a full system replaced."
@@ -542,7 +542,7 @@
           "type": "prose",
           "heading": "Call",
           "body": [
-            "(316) 990-1911, between 8am and 5pm. Emergency calls are available. We're a new Wichita company with years of hands-on HVAC experience behind it, and the person who answers will tell you plainly what to expect."
+            "(316) 990-1911, between 8am and 5pm. Emergency calls are available. We're a new Wichita company, and the people behind it have years of hands-on HVAC experience. When you call, we'll tell you plainly what to expect."
           ]
         },
         {
@@ -575,13 +575,13 @@
           "type": "prose",
           "heading": "Where We Work",
           "body": [
-            "Wichita, Derby, Andover, Maize, Goddard, Haysville, Valley Center, Park City and Bel Aire. Not sure about your area? Call and ask."
+            "Wichita, Derby, Andover, Maize, Goddard, Haysville, Valley Center, Park City and Bel Aire. Not sure about your area? Call and ask, and we'll tell you."
           ]
         },
         {
           "type": "callBand",
           "heading": "Email",
-          "text": "You can also write to us at aircapitalheatingnair@gmail.com. For anything urgent, calling is faster."
+          "text": "You can also write to us at aircapitalheatingnair@gmail.com. If it's urgent, please call, since that's the fastest way to reach us."
         }
       ]
     }

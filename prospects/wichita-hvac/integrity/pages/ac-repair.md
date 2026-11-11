@@ -65,7 +65,7 @@ A spring check before the first hot week catches weak parts before they fail on 
 ## Questions Before You Call
 
 **Does it cost anything to call?**
-No. We offer a free phone consultation. Describe what the unit is doing and we'll tell you what we think it is.
+No, the phone consultation is free. Describe what the unit is doing and we'll tell you what we think it is.
 
 **Do you work on my brand of air conditioner?**
 We work on all the major brands.

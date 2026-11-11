@@ -50,7 +50,7 @@ We explain what's failed and what's needed, and we do what we can to keep the sy
 
 ## Finding the Real Problem
 
-Anyone can swap a part. The skill is knowing which one failed, and why.
+Swapping a part is the easy bit. What matters is knowing which one failed, and why.
 
 We find the problem and explain it in plain terms, so you understand what broke, whether it can happen again and what the repair involves. A technician who knows the equipment can often name the cause with little digging.
 
@@ -61,7 +61,7 @@ We find the problem and explain it in plain terms, so you understand what broke,
 
 Refrigerant doesn't burn off like gasoline. If the level is low, there is a leak somewhere, and a slow leak can take more than one visit to chase down.
 
-That's an honest reason to want the same person every time. He knows what's already been tried, what was refilled and where he suspects the leak is.
+That's why it helps to have the same person every time. He knows what's already been tried, what was refilled and where he suspects the leak is.
 
 It's also why the call is to Nate's own number, not a dispatcher who doesn't know your history.
 

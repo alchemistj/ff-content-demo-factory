@@ -43,18 +43,18 @@ This is why installation shouldn't be a rush job. The unit has to match the hous
 
 We also repair what's already in your house, so if the answer is a repair instead of a new unit, you'll hear that from us.
 
-## Someone Who Stays Your Contact
+## The Same Person Next Time
 
 A heater is installed once and serviced for years. The person who installs it should be the person you call when something about it seems off.
 
-That's how Dream Makers works. When you call about the same unit later, you get Nate, not a stranger who has to start from scratch.
+That's how we work. When you call about the same unit later, you get Nate, not a stranger who has to start from scratch.
 
 > "Nathan is very professional and courteous, makes his services available in a timely manner with his busy schedule."
 > — Gary V.
 
 ## What You Pay For
 
-We can't hand you a number without knowing what's in your house. Furnace size, the venting you already have, the kind of water heater and where it sits all change the price.
+We'd need to know what's in your house before we can give you a number. Furnace size, the venting you already have, the kind of water heater and where it sits all change the price.
 
 Call and describe the unit, and you'll get an answer from the person who'll be at your house.
 

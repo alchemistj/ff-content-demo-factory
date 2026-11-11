@@ -98,7 +98,7 @@
           "heading": "You Get Nate's Number",
           "body": [
             "Most heating and cooling companies hand you a dispatcher, a ticket and a window of time. We hand you Nate's number.",
-            "Dream Makers is a Wichita company where the owner is the person on the other end of the call. You tell him what the system is doing, and he tells you what he thinks it is and when he can be there.",
+            "When you call Dream Makers, Nate picks up. You tell him what the system is doing, and he tells you what he thinks it is and when he can be there.",
             "That matters most on the worst day for it: an air conditioner that dies on a July evening, a heater that quits in a February snow storm. You shouldn't have to explain your house to someone new every time."
           ]
         },
@@ -166,7 +166,7 @@
           "body": [
             "Many \"dead\" systems are really one dead part. A capacitor, a fan motor, an igniter or a leaking line can stop a whole unit that has years of life left in it.",
             "Replacing the part is usually a fraction of what a new system costs. It only works if someone finds the real cause the first time, so we explain what we found and what it will take to fix.",
-            "Parts work is also where the relationship shows up: the leak that comes back, the part on order, the maintenance that keeps small problems from becoming a bad night."
+            "Parts work is also where we get to know your house: the leak that comes back, the part on order, the maintenance that keeps small problems from becoming a bad night."
           ],
           "link": {
             "label": "See HVAC parts replacement →",
@@ -246,7 +246,7 @@
             },
             {
               "q": "Do you only do emergencies?",
-              "a": "No. We install furnaces, water heaters, air conditioners and mini splits, and we do maintenance and ductwork too."
+              "a": "Not at all. We install furnaces, water heaters, air conditioners and mini splits, and we do maintenance and ductwork too."
             },
             {
               "q": "Where do you work?",
@@ -257,7 +257,7 @@
         {
           "type": "callBand",
           "heading": "Call Nate",
-          "text": "If something in your house isn't heating or cooling, call or text and you'll get a person. Dream Makers LLC Heating and Cooling, 5720 1/2 S Broadway, Wichita, KS 67216. Phone (316) 871-5085."
+          "text": "If something in your house isn't heating or cooling, call or text and you'll get Nate. Dream Makers LLC Heating and Cooling, 5720 1/2 S Broadway, Wichita, KS 67216. Phone (316) 871-5085."
         }
       ]
     },
@@ -340,10 +340,10 @@
         },
         {
           "type": "prose",
-          "heading": "Someone Who Stays Your Contact",
+          "heading": "The Same Person Next Time",
           "body": [
             "A heater is installed once and serviced for years. The person who installs it should be the person you call when something about it seems off.",
-            "That's how Dream Makers works. When you call about the same unit later, you get Nate, not a stranger who has to start from scratch."
+            "That's how we work. When you call about the same unit later, you get Nate, not a stranger who has to start from scratch."
           ]
         },
         {
@@ -355,7 +355,7 @@
           "type": "prose",
           "heading": "What You Pay For",
           "body": [
-            "We can't hand you a number without knowing what's in your house. Furnace size, the venting you already have, the kind of water heater and where it sits all change the price.",
+            "We'd need to know what's in your house before we can give you a number. Furnace size, the venting you already have, the kind of water heater and where it sits all change the price.",
             "Call and describe the unit, and you'll get an answer from the person who'll be at your house."
           ]
         },
@@ -499,7 +499,7 @@
           "type": "prose",
           "heading": "Finding the Real Problem",
           "body": [
-            "Anyone can swap a part. The skill is knowing which one failed, and why.",
+            "Swapping a part is the easy bit. What matters is knowing which one failed, and why.",
             "We find the problem and explain it in plain terms, so you understand what broke, whether it can happen again and what the repair involves. A technician who knows the equipment can often name the cause with little digging."
           ]
         },
@@ -513,7 +513,7 @@
           "heading": "Why a Leak Needs Repeat Attention",
           "body": [
             "Refrigerant doesn't burn off like gasoline. If the level is low, there is a leak somewhere, and a slow leak can take more than one visit to chase down.",
-            "That's an honest reason to want the same person every time. He knows what's already been tried, what was refilled and where he suspects the leak is.",
+            "That's why it helps to have the same person every time. He knows what's already been tried, what was refilled and where he suspects the leak is.",
             "It's also why the call is to Nate's own number, not a dispatcher who doesn't know your history."
           ]
         },
@@ -595,7 +595,7 @@
           "heading": "Call or Text",
           "body": [
             "Call if the system is down and you need a person now. Text if you'd rather describe it in writing.",
-            "If it's heating or cooling in a Wichita home or business, we're the right call. You can also use the text button or the quote request on our website."
+            "If it's heating or cooling in a Wichita home or business, just reach out. You can also use the text button or the quote request on our website."
           ]
         },
         {
@@ -609,7 +609,7 @@
           "list": [
             "Heating or cooling, and what the unit is doing: not starting, blowing warm, humming, clicking.",
             "Where it is: furnace, air conditioner, water heater, heat pump or mini split.",
-            "Whether you own or rent, so we know who else to talk to.",
+            "Whether you own or rent, in case we need to talk to your landlord too.",
             "The best number to reach you, in case we need to call back after we read your text."
           ]
         },
@@ -622,7 +622,7 @@
     }
   ],
   "footer": {
-    "about": "Dream Makers LLC Heating and Cooling installs, repairs and replaces heating and air conditioning systems for homes in Wichita, Kansas. Customers call or text the owner directly.",
+    "about": "Dream Makers LLC Heating and Cooling installs, repairs and replaces heating and air conditioning systems for homes in Wichita, Kansas. You call or text Nate directly.",
     "why": [
       "The owner answers",
       "Call or text",

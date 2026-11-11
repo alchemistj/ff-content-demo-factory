@@ -35,12 +35,12 @@
     {
       "name": "AC Repair",
       "route": null,
-      "blurb": "We find what failed and fix it, on any brand."
+      "blurb": "We'll find what failed and fix it, whatever the brand."
     },
     {
       "name": "Furnace Repair",
       "route": null,
-      "blurb": "No heat, cold air or a furnace that won't stay lit, fixed."
+      "blurb": "No heat, cold air or a furnace that won't stay lit? Call us and we'll sort it out."
     },
     {
       "name": "Air Conditioner Installation",
@@ -65,7 +65,7 @@
     {
       "name": "Carbon Monoxide Detection",
       "route": null,
-      "blurb": "Peace of mind if you burn gas for heat."
+      "blurb": "A carbon monoxide check if you burn gas for heat."
     },
     {
       "name": "Commercial HVAC and Mechanical Design",
@@ -168,7 +168,7 @@
           "body": [
             "A furnace or air conditioner that has run for fifteen years or more is going to break at some point. What matters then is whether the person looking at it knows what they're looking at.",
             "We troubleshoot and diagnose first, so you hear what failed before you hear what it costs. Often it's one part: an ignitor, a wiring fault, a leak.",
-            "Sometimes it's the whole system. A repair that makes sense, we repair. A system that's finished, we'll say so and show you the options.",
+            "Sometimes it's the whole system. If a repair makes sense, we'll repair it. If the system is finished, we'll tell you so and go over your options with you.",
             "For air conditioners, we find refrigerant leaks and we're EPA registered and certified. For furnaces, we do carbon monoxide detection, because a furnace that burns gas poorly can put it into the house with no smell.",
             "We service all brands, so you don't have to have bought from us to call us."
           ]
@@ -231,7 +231,7 @@
             },
             {
               "q": "Do you only do homes?",
-              "a": "No. We handle residential and commercial heating and cooling."
+              "a": "No, we work on homes and businesses both."
             },
             {
               "q": "What if it breaks after the office closes?",
@@ -254,7 +254,7 @@
         {
           "type": "callBand",
           "heading": "Call Cook's",
-          "text": "Save this number: (316) 945-2665. Call when you need a new system, a plan for the one you have, or when a unit has just stopped, and you'll be talking to the company that stays. Cook's Heating and Cooling, 2215 S West St, Wichita, KS 67213. Monday to Friday, 8:00 AM to 5:00 PM; emergency service 5:00 PM to 10:00 PM."
+          "text": "Save this number: (316) 945-2665. Call when you need a new system, a plan for the one you have, or when a unit has just stopped, and we'll be glad to help, this time and the next. Cook's Heating and Cooling, 2215 S West St, Wichita, KS 67213. Monday to Friday, 8:00 AM to 5:00 PM; emergency service 5:00 PM to 10:00 PM."
         }
       ]
     },
@@ -298,7 +298,7 @@
             "Nobody wants to replace a furnace or air conditioner. The signs usually arrive over a few seasons.",
             "The repairs get more frequent, and each one costs more than you hoped.",
             "The unit runs nearly all day and never quite catches up. One room is always the hot one, or the cold one. The energy bill creeps up with nothing else changed.",
-            "Parts wear, and old equipment loses efficiency. At some point you are paying to keep a system alive that you would be better off replacing, and the honest answer is to say so."
+            "Parts wear, and old equipment loses efficiency. At some point you are paying to keep a system alive that you would be better off replacing, and we'll tell you so when we see it."
           ]
         },
         {
@@ -306,7 +306,7 @@
           "heading": "Repair First, Replace When It Makes Sense",
           "body": [
             "We don't start from a new system. We start from a diagnosis, because a failed ignitor or a bad capacitor is a repair, not a replacement.",
-            "When the system is old and the failures are piling up, or the fix costs more than the unit is worth, we lay out both numbers side by side. You decide.",
+            "When the system is old and the failures are piling up, or the fix costs more than the unit is worth, we lay out both numbers side by side, and the decision is yours.",
             "If you've been told you need a whole new system and aren't sure, call us for a second look."
           ]
         },
@@ -481,7 +481,7 @@
           "body": [
             "You choose how long to commit. Plans run year to year, or on a 5-year or 10-year basis.",
             "Year to year suits a newer system or a first try. A longer term suits a home you plan to stay in. It also fits a system you've just had installed, since the care starts from the first season.",
-            "We don't list a price on this page. Call, tell us about your system and whether it's a home or a business, and we'll walk you through the terms."
+            "We haven't put a price on this page. Call and tell us about your system and whether it's a home or a business, and we'll walk you through the terms."
           ]
         },
         {
@@ -535,7 +535,7 @@
             },
             {
               "q": "Do I need the plan to call you for a repair?",
-              "a": "No. Call any time, on any brand. The plan gives you priority emergency service within 24 hours and 20% off parts and labor."
+              "a": "Not at all. Call us any time, on any brand. The plan gives you priority emergency service within 24 hours and 20% off parts and labor."
             },
             {
               "q": "What if it fails after the office closes?",
@@ -559,7 +559,7 @@
       "hero": {
         "eyebrow": "Contact",
         "h1": "Contact Cook's Heating and Cooling",
-        "sub": "If your heat or air has stopped, call, and tell us what the system is doing. A new system or a maintenance plan? Call for that too, or use the request form.",
+        "sub": "If your heat or air has stopped, give us a call and tell us what the system is doing. Looking at a new system or a maintenance plan? Call about that too, or use the request form.",
         "primaryCta": {
           "label": "Call (316) 945-2665",
           "action": "call"
@@ -595,7 +595,7 @@
           "list": [
             "What the system is doing: no heat, no cooling, noises, a smell, ice or water.",
             "Or what you're planning: a new system to replace an old one, or a maintenance plan for the one you have.",
-            "The brand, if it's easy to find on the unit. We service all brands, so you don't need it.",
+            "The brand, if it's easy to find on the unit. We service all brands, so don't worry if you can't find it.",
             "Whether it's a home or a business.",
             "The best number to reach you."
           ]

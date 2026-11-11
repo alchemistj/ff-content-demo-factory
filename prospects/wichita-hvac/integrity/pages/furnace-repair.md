@@ -68,7 +68,7 @@ If you smell gas, leave the house and call your gas company before anything else
 ## Questions Before You Call
 
 **Does it cost anything to call?**
-No. We offer a free phone consultation. Tell us what the furnace is doing and we'll tell you what we think.
+No, the phone consultation is free. Tell us what the furnace is doing and we'll tell you what we think.
 
 **Do you work on my brand of furnace?**
 We work on all the major brands.

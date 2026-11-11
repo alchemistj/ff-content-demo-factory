@@ -13,7 +13,7 @@ When the air conditioner quits or the furnace won't light, you don't want a call
 
 Most heating and cooling companies hand you a dispatcher, a ticket and a window of time. We hand you Nate's number.
 
-Dream Makers is a Wichita company where the owner is the person on the other end of the call. You tell him what the system is doing, and he tells you what he thinks it is and when he can be there.
+When you call Dream Makers, Nate picks up. You tell him what the system is doing, and he tells you what he thinks it is and when he can be there.
 
 That matters most on the worst day for it: an air conditioner that dies on a July evening, a heater that quits in a February snow storm. You shouldn't have to explain your house to someone new every time.
 
@@ -64,7 +64,7 @@ Many "dead" systems are really one dead part. A capacitor, a fan motor, an ignit
 
 Replacing the part is usually a fraction of what a new system costs. It only works if someone finds the real cause the first time, so we explain what we found and what it will take to fix.
 
-Parts work is also where the relationship shows up: the leak that comes back, the part on order, the maintenance that keeps small problems from becoming a bad night.
+Parts work is also where we get to know your house: the leak that comes back, the part on order, the maintenance that keeps small problems from becoming a bad night.
 
 [See HVAC parts replacement →](/hvac-parts-replacement-wichita-ks/)
 
@@ -116,7 +116,7 @@ Nate answers the phone and the texts, and he comes to the house. On bigger jobs,
 That's the idea. The same person keeps coming back, so he knows which unit is where and what was fixed last time.
 
 **Do you only do emergencies?**
-No. We install furnaces, water heaters, air conditioners and mini splits, and we do maintenance and ductwork too.
+Not at all. We install furnaces, water heaters, air conditioners and mini splits, and we do maintenance and ductwork too.
 
 **Where do you work?**
 Wichita is home base. Text your address and we'll tell you whether we can get to you.

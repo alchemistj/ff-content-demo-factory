@@ -43,7 +43,7 @@ You choose how long to commit. Plans run year to year, or on a 5-year or 10-year
 
 Year to year suits a newer system or a first try. A longer term suits a home you plan to stay in. It also fits a system you've just had installed, since the care starts from the first season.
 
-We don't list a price on this page. Call, tell us about your system and whether it's a home or a business, and we'll walk you through the terms.
+We haven't put a price on this page. Call and tell us about your system and whether it's a home or a business, and we'll walk you through the terms.
 
 ## Someone Who Explains What They Find
 
@@ -81,7 +81,7 @@ Call (316) 945-2665 and we'll go over the terms for your system.
 Both. We offer annual service agreements for residential and commercial customers.
 
 **Do I need the plan to call you for a repair?**
-No. Call any time, on any brand. The plan gives you priority emergency service within 24 hours and 20% off parts and labor.
+Not at all. Call us any time, on any brand. The plan gives you priority emergency service within 24 hours and 20% off parts and labor.
 
 **What if it fails after the office closes?**
 Emergency service runs from 5:00 PM to 10:00 PM. Call (316) 945-2665.

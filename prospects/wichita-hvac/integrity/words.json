@@ -78,9 +78,9 @@
       "keyword": "hvac company wichita ks",
       "seo": null,
       "hero": {
-        "eyebrow": "Wichita heating and cooling, held to its name",
+        "eyebrow": "Wichita heating and cooling, and a name to live up to",
         "h1": "HVAC Company in Wichita, KS — Integrity Heating and Cooling",
-        "sub": "I'm Sam. We repair furnaces and air conditioners, replace worn-out systems and work on homes and commercial buildings around Wichita. We chose the name Integrity, so hold us to it, and call for a free phone consultation.",
+        "sub": "I'm Sam. We repair furnaces and air conditioners, replace worn-out systems and work on homes and commercial buildings around Wichita. The name Integrity is one I have to live up to on every job. Call for a free phone consultation.",
         "primaryCta": {
           "label": "Call (316) 932-9559",
           "action": "call"
@@ -103,7 +103,7 @@
         },
         {
           "type": "prose",
-          "heading": "A Name You Can Hold Us To",
+          "heading": "A Name I Have to Live Up To",
           "body": [
             "You can't see inside your furnace or your condenser. When one quits, you're trusting a stranger to tell you what failed, what it costs and whether it needs fixing at all.",
             "That's why heating and cooling is a trade where a company's word has to be worth something. We tell you what we found, what the repair costs and what your options are. Then we do what we said.",
@@ -120,7 +120,7 @@
           "heading": "The Inconvenient Call",
           "body": [
             "A system never quits at a good time. It quits on a Saturday afternoon, on a holiday, or at 8pm when you've just found out the guests in your rental have no air.",
-            "Our office hours are Monday to Friday, 8 AM to 5 PM. Outside those hours, call anyway. After-hours work costs more, and you hear the price on the phone before anyone comes out.",
+            "Our office hours are Monday to Friday, 8 AM to 5 PM. Outside those hours, call anyway. After-hours work does cost more, so we give you the price on the phone before anyone comes out.",
             "I take those calls myself when I can. A fair price at an hour when you have no other choice is the test of a company, and we mean to pass it."
           ],
           "image": {
@@ -164,7 +164,7 @@
           "heading": "AC Repair",
           "body": [
             "The house is crawling past 80, the vents blow lukewarm air, or the unit outside runs and runs without cooling anything.",
-            "Air conditioners fail in a few predictable places: a weak capacitor, a dirty coil, a tired motor, or a refrigerant leak. We find the real cause, explain it plainly and fix it. If an old unit isn't worth repairing, we say so."
+            "Air conditioners fail in a few predictable places: a weak capacitor, a dirty coil, a tired motor, or a refrigerant leak. We find the real cause, explain it plainly and fix it. If an old unit isn't worth repairing, we'll tell you straight and let you decide."
           ],
           "link": {
             "label": "See AC repair in Wichita →",
@@ -187,7 +187,7 @@
           "type": "prose",
           "heading": "When a Repair Stops Making Sense",
           "body": [
-            "A company that also sells systems has a reason to call yours finished. So we show you what failed and what it would cost to fix, and you can weigh that against a new system.",
+            "When a company that also sells systems tells you yours is finished, it's fair to wonder. So we show you what failed and what it would cost to fix, and you can weigh that against a new system.",
             "If you've paid for two or three repairs in a couple of years and the equipment is old, a new system is usually the cheaper road. Sometimes the honest answer is one more repair.",
             "We install heating and cooling equipment too. A system that is sized and set up badly runs hard and wears out early, so the installation has to be right."
           ]
@@ -202,12 +202,12 @@
         },
         {
           "type": "prose",
-          "heading": "What the Name Covers",
+          "heading": "What We Owe You",
           "body": [
             "**The price, itemized.** You get a full breakdown of the cost, with no surprise charges.",
             "**The after-hours price, on the phone.** You hear it before anyone drives out.",
             "**A clean house when we leave.** A repair shouldn't leave you a second job.",
-            "**Work we stand behind.** We aim to do the job right the first time, and if it isn't right, you call us."
+            "**Work we stand behind.** We aim to do the job right the first time, and if it isn't right, call us and we'll make it right."
           ]
         },
         {
@@ -228,7 +228,7 @@
           "items": [
             {
               "q": "Does it cost anything to call?",
-              "a": "No. We offer a free phone consultation. Describe the problem and hear what we think before you decide anything."
+              "a": "No, the phone consultation is free. Describe the problem and hear what we think before you decide anything."
             },
             {
               "q": "What if my system quits on a weekend?",
@@ -239,12 +239,12 @@
               "a": "We give you a full breakdown of the costs, with no surprise charges."
             },
             {
-              "q": "Who will I be dealing with?",
+              "q": "Who will I talk to, and who comes to the house?",
               "a": "I'm Sam. I take calls myself when I can, and a technician comes out to your house. Customers have met Clayton and Cory."
             },
             {
               "q": "What if something isn't right after you leave?",
-              "a": "Call the same number. We stand by our work, and we'd rather hear about it from you than find out another way."
+              "a": "Call the same number and tell us. We stand by our work, and we'll make it right."
             },
             {
               "q": "Do you work on commercial buildings?",
@@ -255,7 +255,7 @@
         {
           "type": "callBand",
           "heading": "Call Today",
-          "text": "Hold us to the name. Call (316) 932-9559 and you'll hear what we found, what it costs and what we'd do, and then you decide. Integrity Heating and Cooling, 801 S Fabrique Dr, Wichita."
+          "text": "Call (316) 932-9559 and you'll hear what we found, what it costs and what we'd do, and then you decide. Integrity Heating and Cooling, 801 S Fabrique Dr, Wichita."
         }
       ]
     },
@@ -366,7 +366,7 @@
           "items": [
             {
               "q": "Does it cost anything to call?",
-              "a": "No. We offer a free phone consultation. Describe what the unit is doing and we'll tell you what we think it is."
+              "a": "No, the phone consultation is free. Describe what the unit is doing and we'll tell you what we think it is."
             },
             {
               "q": "Do you work on my brand of air conditioner?",
@@ -503,7 +503,7 @@
           "items": [
             {
               "q": "Does it cost anything to call?",
-              "a": "No. We offer a free phone consultation. Tell us what the furnace is doing and we'll tell you what we think."
+              "a": "No, the phone consultation is free. Tell us what the furnace is doing and we'll tell you what we think."
             },
             {
               "q": "Do you work on my brand of furnace?",
@@ -535,7 +535,7 @@
       "hero": {
         "eyebrow": "Contact Integrity Heating and Cooling",
         "h1": "Contact Integrity Heating and Cooling",
-        "sub": "If your heat or air has quit, the fastest way to reach us is to call. Tell us what the system is doing and we'll tell you what we think, what it costs and what we'd do. We chose the name Integrity, so hold us to it.",
+        "sub": "If your heat or air has quit, the fastest way to reach us is to call. Tell us what the system is doing and we'll tell you what we think, what it costs and what we'd do.",
         "primaryCta": {
           "label": "Call (316) 932-9559",
           "action": "call"
@@ -583,7 +583,7 @@
         {
           "type": "callBand",
           "heading": "Hours and Area",
-          "text": "Monday to Friday, 8 AM to 5 PM. If your system quits outside those hours, call and ask. After-hours work costs more, and you hear the price on the phone before anyone comes out. We serve the Greater Wichita area. Our address is 801 S Fabrique Dr, Wichita, KS 67218."
+          "text": "Monday to Friday, 8 AM to 5 PM. If your system quits outside those hours, call and ask. After-hours work does cost more, so we give you the price on the phone before anyone comes out. We serve the Greater Wichita area. Our address is 801 S Fabrique Dr, Wichita, KS 67218."
         }
       ]
     }

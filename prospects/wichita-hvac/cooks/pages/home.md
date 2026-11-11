@@ -49,7 +49,7 @@ A furnace or air conditioner that has run for fifteen years or more is going to 
 
 We troubleshoot and diagnose first, so you hear what failed before you hear what it costs. Often it's one part: an ignitor, a wiring fault, a leak.
 
-Sometimes it's the whole system. A repair that makes sense, we repair. A system that's finished, we'll say so and show you the options.
+Sometimes it's the whole system. If a repair makes sense, we'll repair it. If the system is finished, we'll tell you so and go over your options with you.
 
 For air conditioners, we find refrigerant leaks and we're EPA registered and certified. For furnaces, we do carbon monoxide detection, because a furnace that burns gas poorly can put it into the house with no smell.
 
@@ -96,7 +96,7 @@ We work in Wichita and the surrounding towns.
 Yes. Our service department is equipped to service and maintain all brands.
 
 **Do you only do homes?**
-No. We handle residential and commercial heating and cooling.
+No, we work on homes and businesses both.
 
 **What if it breaks after the office closes?**
 Emergency service runs from 5:00 PM to 10:00 PM. Call (316) 945-2665.

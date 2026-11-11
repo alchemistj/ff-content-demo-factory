@@ -1,15 +1,15 @@
-**Eyebrow:** Wichita heating and cooling, held to its name
+**Eyebrow:** Wichita heating and cooling, and a name to live up to
 
 # HVAC Company in Wichita, KS — Integrity Heating and Cooling
 
-I'm Sam. We repair furnaces and air conditioners, replace worn-out systems and work on homes and commercial buildings around Wichita. We chose the name Integrity, so hold us to it, and call for a free phone consultation.
+I'm Sam. We repair furnaces and air conditioners, replace worn-out systems and work on homes and commercial buildings around Wichita. The name Integrity is one I have to live up to on every job. Call for a free phone consultation.
 
 **Buttons:** Call (316) 932-9559 | Request Service
 
 > "I was referred to Integrity by another local investor. I had an issue with my unit in a short term rental after 8pm, and Sam (the owner) personally took care of it himself. He was very efficient, great with communication, and fair in his pricing after hours."
 > — Hunter M.
 
-## A Name You Can Hold Us To
+## A Name I Have to Live Up To
 
 You can't see inside your furnace or your condenser. When one quits, you're trusting a stranger to tell you what failed, what it costs and whether it needs fixing at all.
 
@@ -24,7 +24,7 @@ The work carries our name, and we stand behind it. If something isn't right, cal
 
 A system never quits at a good time. It quits on a Saturday afternoon, on a holiday, or at 8pm when you've just found out the guests in your rental have no air.
 
-Our office hours are Monday to Friday, 8 AM to 5 PM. Outside those hours, call anyway. After-hours work costs more, and you hear the price on the phone before anyone comes out.
+Our office hours are Monday to Friday, 8 AM to 5 PM. Outside those hours, call anyway. After-hours work does cost more, so we give you the price on the phone before anyone comes out.
 
 I take those calls myself when I can. A fair price at an hour when you have no other choice is the test of a company, and we mean to pass it.
 
@@ -53,7 +53,7 @@ We'd like to be the last company you call. That means a clear diagnosis, a price
 
 The house is crawling past 80, the vents blow lukewarm air, or the unit outside runs and runs without cooling anything.
 
-Air conditioners fail in a few predictable places: a weak capacitor, a dirty coil, a tired motor, or a refrigerant leak. We find the real cause, explain it plainly and fix it. If an old unit isn't worth repairing, we say so.
+Air conditioners fail in a few predictable places: a weak capacitor, a dirty coil, a tired motor, or a refrigerant leak. We find the real cause, explain it plainly and fix it. If an old unit isn't worth repairing, we'll tell you straight and let you decide.
 
 [See AC repair in Wichita →](/ac-repair-wichita-ks/)
 
@@ -67,7 +67,7 @@ The cause is often small: an igniter, a flame sensor, a clogged filter or a fail
 
 ## When a Repair Stops Making Sense
 
-A company that also sells systems has a reason to call yours finished. So we show you what failed and what it would cost to fix, and you can weigh that against a new system.
+When a company that also sells systems tells you yours is finished, it's fair to wonder. So we show you what failed and what it would cost to fix, and you can weigh that against a new system.
 
 If you've paid for two or three repairs in a couple of years and the equipment is old, a new system is usually the cheaper road. Sometimes the honest answer is one more repair.
 
@@ -79,7 +79,7 @@ We also repair heat pumps and replace blower and condenser motors that have star
 
 A dirty filter, a coil caked with dust and a motor running dry wear a system out a little more each season. A check before the heavy season catches them while they're cheap. We offer maintenance plans, so ask about one when you call.
 
-## What the Name Covers
+## What We Owe You
 
 **The price, itemized.** You get a full breakdown of the cost, with no surprise charges.
 
@@ -87,7 +87,7 @@ A dirty filter, a coil caked with dust and a motor running dry wear a system out
 
 **A clean house when we leave.** A repair shouldn't leave you a second job.
 
-**Work we stand behind.** We aim to do the job right the first time, and if it isn't right, you call us.
+**Work we stand behind.** We aim to do the job right the first time, and if it isn't right, call us and we'll make it right.
 
 > "Sam is one of the hardest working people I know.  He and his team are the epitome of integrity-based service.  Highly recommend!"
 > — Jennifer J.
@@ -99,7 +99,7 @@ We serve the Greater Wichita area from 801 S Fabrique Dr in Wichita. Call and te
 ## Questions Before You Call
 
 **Does it cost anything to call?**
-No. We offer a free phone consultation. Describe the problem and hear what we think before you decide anything.
+No, the phone consultation is free. Describe the problem and hear what we think before you decide anything.
 
 **What if my system quits on a weekend?**
 Call anyway. After-hours work is priced by phone, so you know the number before anyone comes out.
@@ -107,11 +107,11 @@ Call anyway. After-hours work is priced by phone, so you know the number before 
 **Will I get a surprise on the bill?**
 We give you a full breakdown of the costs, with no surprise charges.
 
-**Who will I be dealing with?**
+**Who will I talk to, and who comes to the house?**
 I'm Sam. I take calls myself when I can, and a technician comes out to your house. Customers have met Clayton and Cory.
 
 **What if something isn't right after you leave?**
-Call the same number. We stand by our work, and we'd rather hear about it from you than find out another way.
+Call the same number and tell us. We stand by our work, and we'll make it right.
 
 **Do you work on commercial buildings?**
 Yes, for businesses and landlords as well as homes.

@@ -8,7 +8,7 @@ Same-day and next-day appointments are available. Tell us what your system is do
 
 ## Call
 
-(316) 990-1911, between 8am and 5pm. Emergency calls are available. We're a new Wichita company with years of hands-on HVAC experience behind it, and the person who answers will tell you plainly what to expect.
+(316) 990-1911, between 8am and 5pm. Emergency calls are available. We're a new Wichita company, and the people behind it have years of hands-on HVAC experience. When you call, we'll tell you plainly what to expect.
 
 > Amazing communication through the whole process. Quick to respond, great prices and great service. Customer for life!
 >
@@ -27,8 +27,8 @@ Not ready to call? Send a request with your name, phone number and a few words a
 
 ## Where We Work
 
-Wichita, Derby, Andover, Maize, Goddard, Haysville, Valley Center, Park City and Bel Aire. Not sure about your area? Call and ask.
+Wichita, Derby, Andover, Maize, Goddard, Haysville, Valley Center, Park City and Bel Aire. Not sure about your area? Call and ask, and we'll tell you.
 
 ## Email
 
-You can also write to us at aircapitalheatingnair@gmail.com. For anything urgent, calling is faster.
+You can also write to us at aircapitalheatingnair@gmail.com. If it's urgent, please call, since that's the fastest way to reach us.

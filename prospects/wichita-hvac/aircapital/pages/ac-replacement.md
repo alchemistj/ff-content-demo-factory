@@ -31,7 +31,7 @@ Replacement is not where we start. A young system with one failed part should be
 
 When we come out, the technician finds what failed and explains your options in plain words: repair the part, replace a major component, or replace the system. You get the reasoning and the numbers on each, and you decide.
 
-We're a new company, and our reputation rests on advice like this. If your system has years left, you'll hear that from us.
+We're a new company, still earning our reputation, and honest advice like this is part of that. If your system has years left, you'll hear that from us.
 
 ## What We Install
 
