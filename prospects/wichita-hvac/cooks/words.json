@@ -45,7 +45,7 @@
     {
       "name": "Air Conditioner Installation",
       "route": "/hvac-installation-wichita-ks/",
-      "blurb": "A new air conditioner to fit your budget when repair no longer makes sense."
+      "blurb": "A new air conditioner when repair no longer makes sense."
     },
     {
       "name": "Furnace Installation",
@@ -132,8 +132,7 @@
           "heading": "New Heating and Cooling Systems",
           "body": [
             "An old system tells you when it's finished. The repair bills start to stack up, one room is always too hot or too cold, and the unit runs all day to keep up.",
-            "We install new furnaces, air conditioners, unit heaters and electric air handlers, and we offer a variety of systems and equipment to fit your budget. Filtration and humidification can go in with it.",
-            "Because we also service what we install, the people who put it in are the people you call about it later."
+            "We install new furnaces, air conditioners, unit heaters and electric air handlers. Filtration and humidification can go in with it."
           ],
           "link": {
             "label": "See HVAC installation in Wichita →",
@@ -166,7 +165,7 @@
           "type": "prose",
           "heading": "When Something Breaks",
           "body": [
-            "A furnace or air conditioner that has run for fifteen years or more is going to break at some point. What matters then is whether the person looking at it knows what they're looking at.",
+            "An older furnace or air conditioner is going to break at some point. What matters then is whether the person looking at it knows what they're looking at.",
             "We troubleshoot and diagnose first, so you hear what failed before you hear what it costs. Often it's one part: an ignitor, a wiring fault, a leak.",
             "Sometimes it's the whole system. If a repair makes sense, we'll repair it. If the system is finished, we'll tell you so and go over your options with you.",
             "For air conditioners, we find refrigerant leaks and we're EPA registered and certified. For furnaces, we do carbon monoxide detection, because a furnace that burns gas poorly can put it into the house with no smell.",
@@ -270,7 +269,7 @@
       "hero": {
         "eyebrow": "New systems in Wichita",
         "h1": "HVAC Installation in Wichita, KS — Cook's Heating and Cooling",
-        "sub": "When the repairs on an old furnace or air conditioner keep coming, a new system stops being a luxury and becomes the cheaper choice. We install heating and cooling systems for Wichita homes and businesses, and we stay on to service them. Call (316) 945-2665 to talk about yours.",
+        "sub": "We start from a diagnosis, not a new system. If a repair will do, we'll say so, and if the system is finished, we lay out the numbers side by side and the decision is yours. We install heating and cooling systems for Wichita homes and businesses. Call (316) 945-2665 to talk about yours.",
         "primaryCta": {
           "label": "Call (316) 945-2665",
           "action": "call"
@@ -293,27 +292,12 @@
         },
         {
           "type": "prose",
-          "heading": "When the Old System Is Done",
-          "body": [
-            "Nobody wants to replace a furnace or air conditioner. The signs usually arrive over a few seasons.",
-            "The repairs get more frequent, and each one costs more than you hoped.",
-            "The unit runs nearly all day and never quite catches up. One room is always the hot one, or the cold one. The energy bill creeps up with nothing else changed.",
-            "Parts wear, and old equipment loses efficiency. At some point you are paying to keep a system alive that you would be better off replacing, and we'll tell you so when we see it."
-          ]
-        },
-        {
-          "type": "prose",
           "heading": "Repair First, Replace When It Makes Sense",
           "body": [
             "We don't start from a new system. We start from a diagnosis, because a failed ignitor or a bad capacitor is a repair, not a replacement.",
             "When the system is old and the failures are piling up, or the fix costs more than the unit is worth, we lay out both numbers side by side, and the decision is yours.",
             "If you've been told you need a whole new system and aren't sure, call us for a second look."
           ]
-        },
-        {
-          "type": "review",
-          "quote": "The price couldn't be beat (had several estimates) on new heater and ac unit. The technicians were great! Super friendly and knowledgeable.",
-          "name": "Christy R."
         },
         {
           "type": "split",
@@ -330,12 +314,25 @@
           }
         },
         {
+          "type": "review",
+          "quote": "The price couldn't be beat (had several estimates) on new heater and ac unit. The technicians were great! Super friendly and knowledgeable.",
+          "name": "Christy R."
+        },
+        {
           "type": "prose",
           "heading": "Sized to the House, Connected to the Ducts",
           "body": [
             "A new unit only works as well as the house around it. A system that is too big turns on and off in short bursts and leaves the air clammy. One that is too small runs all day.",
             "The ducts matter just as much. Leaky or crushed ductwork wastes what the new unit makes, and no unit can fix a room it can't reach.",
             "That's one reason we keep a sheet metal fabrication shop of our own. When a fitting or a duct run has to fit an odd space, we make it to the measurements instead of forcing a stock part close enough."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "When the Old System Is Done",
+          "body": [
+            "Nobody wants to replace a furnace or air conditioner. The signs usually arrive over a few seasons: repairs that come more often and cost more, a unit that runs nearly all day, one room that is always too hot or too cold, an energy bill that creeps up.",
+            "At some point you are paying to keep a system alive that you would be better off replacing, and we'll tell you so when we see it."
           ]
         },
         {
@@ -373,7 +370,7 @@
             },
             {
               "q": "How long does a new system last?",
-              "a": "A well-kept furnace or air conditioner commonly runs 15 years or more. Regular servicing is a big part of how."
+              "a": "Furnaces commonly run 15 to 20 years and air conditioners 10 to 15, depending on how hard they work and how often someone services them. Regular servicing is a big part of how."
             },
             {
               "q": "Can you replace heating and cooling together?",
@@ -439,12 +436,17 @@
         },
         {
           "type": "prose",
-          "heading": "Why Systems Quit on the Worst Day",
+          "heading": "The Premium Plan",
           "body": [
-            "Heating and cooling systems work hardest when it's coldest or hottest outside. That's when a small problem becomes a failure.",
-            "A system also gets quietly worse over the seasons. It takes a little longer to cool the house, or a little longer to start, and you stop noticing.",
-            "A clogged filter makes the blower strain. Dirty coils make an air conditioner work harder for less cooling. A loose wire or a worn ignitor holds on until the first hard freeze and then doesn't.",
-            "Nobody sees any of it from the living room. A system that ran fine in May can be one cold morning from a no-heat call in November."
+            "Our Premium maintenance plan includes:"
+          ],
+          "list": [
+            "**Two servicings a year.**",
+            "**Priority emergency service within 24 hours.**",
+            "**20% off parts and labor.**"
+          ],
+          "tail": [
+            "We offer annual service agreements for both residential and commercial customers, so the same plan works for a house or a building."
           ]
         },
         {
@@ -462,30 +464,6 @@
         },
         {
           "type": "prose",
-          "heading": "The Premium Plan",
-          "body": [
-            "Our Premium maintenance plan includes:"
-          ],
-          "list": [
-            "**Two servicings a year.**",
-            "**Priority emergency service within 24 hours.**",
-            "**20% off parts and labor.**"
-          ],
-          "tail": [
-            "We offer annual service agreements for both residential and commercial customers, so the same plan works for a house or a building."
-          ]
-        },
-        {
-          "type": "prose",
-          "heading": "Year to Year, or for the Long Haul",
-          "body": [
-            "You choose how long to commit. Plans run year to year, or on a 5-year or 10-year basis.",
-            "Year to year suits a newer system or a first try. A longer term suits a home you plan to stay in. It also fits a system you've just had installed, since the care starts from the first season.",
-            "We haven't put a price on this page. Call and tell us about your system and whether it's a home or a business, and we'll walk you through the terms."
-          ]
-        },
-        {
-          "type": "prose",
           "heading": "Someone Who Explains What They Find",
           "body": [
             "A service visit is also a chance to learn how your system works and what to watch for. That's worth as much as the check itself.",
@@ -496,6 +474,23 @@
           "type": "review",
           "quote": "Derek talked me through every step of the process and helped me understand how my furnace worked, what to watch out for, and even offered a few pointers and tricks along the way. You can't ask for better service than this!",
           "name": "John H."
+        },
+        {
+          "type": "prose",
+          "heading": "Year to Year, or for the Long Haul",
+          "body": [
+            "You choose how long to commit. Plans run year to year, or on a 5-year or 10-year basis.",
+            "Year to year suits a newer system or a first try. A longer term suits a home you plan to stay in. It also fits a system you've just had installed, since the care starts from the first season.",
+            "Call and tell us about your system and whether it's a home or a business, and we'll walk you through the terms."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Why Systems Quit on the Worst Day",
+          "body": [
+            "Heating and cooling systems work hardest when it's coldest or hottest outside, and that's when a small problem becomes a failure. A system also gets quietly worse over the seasons, and you stop noticing.",
+            "A clogged filter makes the blower strain. Dirty coils make an air conditioner work harder for less cooling. A loose wire or a worn ignitor holds on until the first hard freeze and then doesn't."
+          ]
         },
         {
           "type": "prose",
@@ -510,7 +505,7 @@
           "heading": "What Else We Do",
           "body": [
             "Our technicians also handle repairs, with troubleshooting and diagnosis, refrigerant leak detection on air conditioners and carbon monoxide detection on furnaces. Filters, whole-system filtration and humidifiers can be added to a plan visit or installed separately.",
-            "Plans are available for homes and for businesses, and we handle commercial heating and cooling as well."
+            "We handle commercial heating and cooling as well."
           ]
         },
         {
@@ -527,7 +522,7 @@
             },
             {
               "q": "What does it cost?",
-              "a": "Call (316) 945-2665 and we'll go over the terms for your system."
+              "a": "It depends on your system and on how long you sign up for: year to year, or 5 or 10 years. Call (316) 945-2665, tell us what you have, and we'll go over the terms."
             },
             {
               "q": "Is it for homes or businesses?",

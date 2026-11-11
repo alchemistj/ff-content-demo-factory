@@ -106,8 +106,7 @@
           "heading": "A Name I Have to Live Up To",
           "body": [
             "You can't see inside your furnace or your condenser. When one quits, you're trusting a stranger to tell you what failed, what it costs and whether it needs fixing at all.",
-            "That's why heating and cooling is a trade where a company's word has to be worth something. We tell you what we found, what the repair costs and what your options are. Then we do what we said.",
-            "The work carries our name, and we stand behind it. If something isn't right, call us and we'll make it right."
+            "We tell you what we found, what the repair costs and what your options are. Then we do what we said."
           ]
         },
         {
@@ -121,7 +120,7 @@
           "body": [
             "A system never quits at a good time. It quits on a Saturday afternoon, on a holiday, or at 8pm when you've just found out the guests in your rental have no air.",
             "Our office hours are Monday to Friday, 8 AM to 5 PM. Outside those hours, call anyway. After-hours work does cost more, so we give you the price on the phone before anyone comes out.",
-            "I take those calls myself when I can. A fair price at an hour when you have no other choice is the test of a company, and we mean to pass it."
+            "I take those calls myself when I can."
           ],
           "image": {
             "slot": "tech-at-door",
@@ -138,7 +137,7 @@
           "heading": "For Landlords, Hosts and Property Owners",
           "body": [
             "If you own rentals or commercial buildings, you hire vendors again and again. You know a vendor by the invoice, the mess left behind and whether the tenant calls you back unhappy.",
-            "A tenant without heat can't wait for a busy contractor, and a short-term rental with a broken unit costs you every night it sits empty. So we keep the bill itemized, the work clean and the follow-through simple."
+            "A tenant without heat can't wait for a busy contractor, and a short-term rental with a broken unit costs you every night it sits empty. So we keep the follow-through simple."
           ]
         },
         {
@@ -151,7 +150,7 @@
           "heading": "After Trying the Others",
           "body": [
             "Some people come to us after a run of other companies. They've paid for a repair that didn't hold, or a bill that didn't match the quote, or a mess that was theirs to clean.",
-            "We'd like to be the last company you call. That means a clear diagnosis, a price that holds and a house left the way we found it."
+            "We'd like to be the last company you call. That means a clear diagnosis and a price that holds."
           ]
         },
         {
@@ -187,7 +186,7 @@
           "type": "prose",
           "heading": "When a Repair Stops Making Sense",
           "body": [
-            "When a company that also sells systems tells you yours is finished, it's fair to wonder. So we show you what failed and what it would cost to fix, and you can weigh that against a new system.",
+            "When a company that also sells systems tells you yours is finished, it's fair to wonder. So we put the repair next to a new system, and you decide.",
             "If you've paid for two or three repairs in a couple of years and the equipment is old, a new system is usually the cheaper road. Sometimes the honest answer is one more repair.",
             "We install heating and cooling equipment too. A system that is sized and set up badly runs hard and wears out early, so the installation has to be right."
           ]
@@ -204,8 +203,7 @@
           "type": "prose",
           "heading": "What We Owe You",
           "body": [
-            "**The price, itemized.** You get a full breakdown of the cost, with no surprise charges.",
-            "**The after-hours price, on the phone.** You hear it before anyone drives out.",
+            "**The price, itemized.** A full breakdown of the cost.",
             "**A clean house when we leave.** A repair shouldn't leave you a second job.",
             "**Work we stand behind.** We aim to do the job right the first time, and if it isn't right, call us and we'll make it right."
           ]
@@ -231,20 +229,8 @@
               "a": "No, the phone consultation is free. Describe the problem and hear what we think before you decide anything."
             },
             {
-              "q": "What if my system quits on a weekend?",
-              "a": "Call anyway. After-hours work is priced by phone, so you know the number before anyone comes out."
-            },
-            {
-              "q": "Will I get a surprise on the bill?",
-              "a": "We give you a full breakdown of the costs, with no surprise charges."
-            },
-            {
               "q": "Who will I talk to, and who comes to the house?",
               "a": "I'm Sam. I take calls myself when I can, and a technician comes out to your house."
-            },
-            {
-              "q": "What if something isn't right after you leave?",
-              "a": "Call the same number and tell us. We stand by our work, and we'll make it right."
             },
             {
               "q": "Do you work on commercial buildings?",
@@ -290,30 +276,11 @@
           "name": "Jessica H."
         },
         {
-          "type": "prose",
-          "heading": "When to Call",
-          "body": [
-            "The house won't cool below 80 no matter how long the unit runs. The air from the vents is lukewarm. The outdoor unit hums but the fan isn't spinning, or the breaker trips every time it starts.",
-            "Ice on the copper line outside, water around the indoor unit and a system that cycles on and off every few minutes are all signs to turn it off and call. Running a struggling air conditioner makes a small repair bigger."
-          ]
-        },
-        {
-          "type": "prose",
-          "heading": "What Usually Goes Wrong",
-          "body": [
-            "Most AC failures come from a short list of parts, and knowing the list helps you follow what a technician tells you.",
-            "**Capacitor.** This small part gives the compressor and fan motor the jolt they need to start. When it weakens, the unit hums and won't run. It's one of the most common and cheapest repairs.",
-            "**Dirty coil or clogged filter.** Dust on the coil and a choked filter cut the airflow until the coil freezes into a block of ice. The fix is cleaning and finding out why it got that way.",
-            "**Low refrigerant.** An air conditioner doesn't use up refrigerant. If it's low, there's a leak, and adding more without fixing the leak is money that drains away again.",
-            "**Fan or compressor motor.** Motors wear, and a noisy or slow-spinning motor is a warning. Replacing it early is a far smaller job than waiting for it to fail."
-          ]
-        },
-        {
           "type": "split",
           "heading": "How We Work a Repair",
           "body": [
             "We start with the diagnosis. A technician looks at the system, finds the actual cause and tells you what he found, in words you can follow.",
-            "Then you see what you're paying for. We give you a full breakdown of the costs, so there are no surprise charges at the end."
+            "Then you see what you're paying for: a full breakdown of the costs."
           ],
           "image": {
             "slot": "airflow-vent",
@@ -326,9 +293,16 @@
           "name": "Justus K."
         },
         {
-          "type": "review",
-          "quote": "Sam and his employee came out to fix our air conditioning last minute and were able to get it running again the same day. He explained everything they did to fix it and gave us some helpful advice on how to keep it running.",
-          "name": "Scott C."
+          "type": "prose",
+          "heading": "What Usually Goes Wrong",
+          "body": [
+            "The house won't cool below 80, the vent air is lukewarm, the outdoor fan isn't spinning, or the breaker trips every time it starts. Most of the time it's one of a short list of parts.",
+            "Ice on the copper line, water around the indoor unit and a system that cycles on and off every few minutes mean turn it off and call. Running a struggling air conditioner makes a small repair bigger.",
+            "**Capacitor.** Gives the compressor and fan motor the jolt they need to start. When it weakens, the unit hums and won't run. It's one of the most common and cheapest repairs.",
+            "**Dirty coil or clogged filter.** Dust and a choked filter cut airflow until the coil freezes into a block of ice. The fix is cleaning, and finding out why it got that way.",
+            "**Low refrigerant.** An air conditioner doesn't use it up, so low means a leak. Adding more without fixing the leak is money that drains away again.",
+            "**Fan or compressor motor.** A noisy or slow-spinning motor is a warning. Replacing it early is a far smaller job than waiting for it to fail."
+          ]
         },
         {
           "type": "prose",
@@ -347,10 +321,15 @@
           "type": "prose",
           "heading": "Repair or Replace?",
           "body": [
-            "Most of the time a repair is the right call. A capacitor, a motor or a cleaned coil gets you back to cool air for a fraction of the cost of a new system.",
-            "Replacement starts to make sense when the unit is old, repairs are piling up, or the problem is something like a failed compressor on a system that's already near the end of its life. A big repair bill on an old unit is often money you'd rather put toward a new one.",
-            "We tell you which situation you're in, and we'll tell you if the answer is to repair. We also install new air conditioning equipment when it's time."
+            "Here's a rule you can check. If it's a capacitor, a motor or a cleaned coil, repair is the answer, for a fraction of the cost of a new system.",
+            "If the unit is old, repairs keep piling up, or the compressor has failed, that's when to price a new one. A big repair bill on an old unit is often money better put toward replacement.",
+            "We tell you which side you're on, including when the answer is to repair. We also install new air conditioning equipment when it's time."
           ]
+        },
+        {
+          "type": "review",
+          "quote": "Sam and his employee came out to fix our air conditioning last minute and were able to get it running again the same day. He explained everything they did to fix it and gave us some helpful advice on how to keep it running.",
+          "name": "Scott C."
         },
         {
           "type": "prose",
@@ -375,10 +354,6 @@
             {
               "q": "How soon can someone come out?",
               "a": "It depends on the day's schedule. Plenty of our AC repairs happen the same day or the next morning, and when you call we'll tell you when a technician can get there."
-            },
-            {
-              "q": "Will the bill surprise me?",
-              "a": "No. We're upfront about pricing and give you a full breakdown of the costs, with no surprise charges."
             },
             {
               "q": "What about a home or a commercial building?",
@@ -424,43 +399,28 @@
           "name": "Joyce A."
         },
         {
-          "type": "prose",
-          "heading": "Signs Your Furnace Needs a Technician",
-          "body": [
-            "The thermostat is calling for heat and nothing happens. You hear clicking but the burners never light. The furnace starts, runs a couple of minutes and shuts off, over and over.",
-            "Other signs are quieter. Some rooms stay cold, the blower screams or rattles, or the air coming out isn't warm. Any of these is worth a call before the coldest week of the year."
-          ]
-        },
-        {
-          "type": "prose",
-          "heading": "What Usually Stops the Heat",
-          "body": [
-            "A furnace has several steps to go through before it heats your house, and a failure at any one stops the whole thing. That's why most no-heat calls turn out to be a small part and not a new furnace.",
-            "**Igniter.** The part that lights the burner wears out with use. A cracked or weak igniter means the furnace tries to start and can't.",
-            "**Flame sensor.** This small rod tells the furnace that the burner lit. When it gets coated with residue, the furnace shuts down after a few seconds as a safety measure. Cleaning or replacing it is a simple repair.",
-            "**Filter and airflow.** A clogged filter makes the furnace overheat and shut itself off. It's the cheapest fix there is, and the reason some furnaces cycle on and off.",
-            "**Blower motor.** The blower moves the warm air through the house. When it fails, the furnace can run and heat and you still get little or no warmth in the rooms."
-          ]
-        },
-        {
-          "type": "prose",
-          "heading": "The Problem That Isn't Small",
-          "body": [
-            "A cracked heat exchanger is different. It's the metal chamber that keeps burner exhaust apart from the air you breathe, and a crack in it is a safety problem, not an inconvenience.",
-            "If a technician finds one, you'll hear it from us straight, with what it means and what your options are. Whatever your furnace is doing, a working carbon monoxide detector on every floor is worth having."
-          ]
-        },
-        {
           "type": "split",
           "heading": "How We Handle a Furnace Call",
           "body": [
             "We diagnose first. A technician finds the actual cause and shows you what failed.",
-            "Then you get a full breakdown of what the repair costs, with no surprise charges at the end. When the work is done, we clean up after ourselves, because a furnace closet full of dust and old parts is not your job."
+            "Then you get a full breakdown of what the repair costs. When the work is done, we clean up after ourselves, because a furnace closet full of dust and old parts is not your job."
           ],
           "image": {
             "slot": "furnace-hero",
             "alt": "Technician opening a furnace cabinet in a home utility room"
           }
+        },
+        {
+          "type": "prose",
+          "heading": "What Usually Stops the Heat",
+          "body": [
+            "The thermostat calls for heat and nothing happens, you hear clicking but the burners never light, or the furnace runs a couple of minutes and shuts off, over and over. Cold rooms, a screaming blower and air that isn't warm are worth a call too.",
+            "A furnace goes through several steps before it heats your house, and a failure at any one stops the whole thing. That's why most no-heat calls turn out to be a small part and not a new furnace.",
+            "**Igniter.** Lights the burner and wears out with use. A cracked or weak igniter means the furnace tries to start and can't.",
+            "**Flame sensor.** This small rod tells the furnace the burner lit. When residue coats it, the furnace shuts down after a few seconds as a safety measure. Cleaning or replacing it is a simple repair.",
+            "**Filter and airflow.** A clogged filter makes the furnace overheat and shut itself off. It's the cheapest fix there is, and the reason some furnaces cycle on and off.",
+            "**Blower motor.** Moves the warm air through the house. When it fails, the furnace can run and you still get little or no warmth in the rooms."
+          ]
         },
         {
           "type": "review",
@@ -471,15 +431,11 @@
           "type": "prose",
           "heading": "Repair or New Furnace?",
           "body": [
-            "Repair is the right answer most of the time. An igniter, a sensor or a motor costs far less than a furnace, and the furnace goes on heating your house.",
-            "A new furnace starts to make sense when the furnace is old, the repairs keep coming, or the heat exchanger has failed. Spending a lot on an old furnace is often money better put toward a new one.",
-            "We tell you which side of that line you're on. If it's time to replace, we install new furnaces and heating systems too, and we stand by that work."
+            "Here's a rule you can check. If it's an igniter, a sensor or a motor, repair is the answer. It costs far less than a furnace, and the furnace goes on heating your house.",
+            "If the furnace is old, the repairs keep coming, or the heat exchanger has failed, that's when to price a new one. Spending a lot on an old furnace is often money better put toward a new one.",
+            "The heat exchanger is the metal chamber that keeps burner exhaust apart from the air you breathe. A crack in it is a safety problem, not an inconvenience. If we find one, you'll hear it straight, with what it means and what your options are. A working carbon monoxide detector on every floor is worth having either way.",
+            "We tell you which side of the line you're on. If it's time to replace, we install new furnaces and heating systems too."
           ]
-        },
-        {
-          "type": "review",
-          "quote": "Integrity Heating and Cooling replaced my whole HVAC system and left me with full confidence that everything was installed to last with no problems. They were very thorough and efficient and got the job done. I wasn’t sure I could get a fair quote along with great work ethic but these guys proved me wrong!",
-          "name": "Maddie R."
         },
         {
           "type": "prose",
@@ -488,6 +444,11 @@
             "Furnaces fail hardest in the first cold snap, after sitting idle all summer. Dust builds up, parts stiffen and a weak igniter finally gives out.",
             "A check before heating season catches those things while it's still warm outside. We offer maintenance plans, so ask about one when you call. Changing the filter on a schedule helps too."
           ]
+        },
+        {
+          "type": "review",
+          "quote": "Integrity Heating and Cooling replaced my whole HVAC system and left me with full confidence that everything was installed to last with no problems. They were very thorough and efficient and got the job done. I wasn’t sure I could get a fair quote along with great work ethic but these guys proved me wrong!",
+          "name": "Maddie R."
         },
         {
           "type": "prose",
@@ -508,10 +469,6 @@
             {
               "q": "Do you work on my brand of furnace?",
               "a": "We work on all the major brands."
-            },
-            {
-              "q": "Will the bill surprise me?",
-              "a": "No. We're upfront about pricing and give you a full breakdown of the costs, with no surprise charges."
             },
             {
               "q": "Can you help after hours?",
@@ -581,9 +538,18 @@
           }
         },
         {
-          "type": "callBand",
+          "type": "prose",
           "heading": "Hours and Area",
-          "text": "Monday to Friday, 8 AM to 5 PM. If your system quits outside those hours, call and ask. After-hours work does cost more, so we give you the price on the phone before anyone comes out. We serve the Greater Wichita area. Our address is 801 S Fabrique Dr, Wichita, KS 67218."
+          "body": [
+            "**Hours.** Monday to Friday, 8 AM to 5 PM.",
+            "**After hours.** If your system quits outside those hours, call and ask. After-hours work does cost more, so we give you the price on the phone before anyone comes out.",
+            "**Area and address.** We serve the Greater Wichita area from 801 S Fabrique Dr, Wichita, KS 67218."
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Call Integrity",
+          "text": "Tell us what the system is doing, and we'll tell you what we think and what to do next."
         }
       ]
     }
@@ -593,7 +559,7 @@
     "why": [
       "Owner in the work himself",
       "Free phone consultation",
-      "Full cost breakdown, no surprise charges",
+      "Full cost breakdown",
       "We clean up after the job"
     ]
   },

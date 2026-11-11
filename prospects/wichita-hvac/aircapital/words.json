@@ -116,9 +116,7 @@
           "heading": "A New Company, and We Say So",
           "body": [
             "Hiring a heating and cooling company you've never heard of is a fair thing to hesitate over. A new name has no history to point to.",
-            "So we point to the work.",
-            "Our Google reviews start this August. We quote them on this site word for word, so you can read the first jobs in their own words.",
-            "What sits behind the name is years of hands-on HVAC experience between our owners and technicians. The company is new. The people doing the work have been in this trade for a long time."
+            "So we point to the work: this summer's first customers, in their own words."
           ]
         },
         {
@@ -139,8 +137,8 @@
           "type": "prose",
           "heading": "AC Repair",
           "body": [
-            "Most calls start the same way. The thermostat says 74, the house says 85, and the vents are blowing warm air. Or the outdoor unit hums and the fan never turns.",
-            "The cause is usually one small part: a capacitor that can't start the motor, a tired fan motor, a drain line clogged with algae. Heat wears all of them out, which is why they quit on the worst days. A repair that swaps one part costs far less than a new system.",
+            "Most calls start the same way: warm air from the vents, or an outdoor unit that hums while the fan never turns.",
+            "The cause is usually one small part: a capacitor that can't start the motor, a tired fan motor, a drain line clogged with algae. A repair that swaps one part costs far less than a new system.",
             "We find what failed, show you what it is and get the cold air back."
           ],
           "link": {
@@ -159,7 +157,7 @@
           "body": [
             "Sometimes the system is telling you it's finished. It's old, it keeps breaking, or it runs all day and the house never catches up.",
             "At that point each repair buys a few months, and the bills add up to a good part of a new system. We'll tell you straight whether yours is worth one more repair before we talk about replacing it.",
-            "If it's time, we install energy-efficient air conditioning systems matched to your home. Financing is available through Enhancify, so a replacement doesn't have to land all at once."
+            "If it's time, we install energy-efficient air conditioning systems matched to your home."
           ],
           "link": {
             "label": "See AC replacement in Wichita →",
@@ -168,9 +166,9 @@
         },
         {
           "type": "split",
-          "heading": "No Upsell From a Name You Don't Know",
+          "heading": "Fix What's Broken, and Stop There",
           "body": [
-            "A company nobody has heard of can't lean on a reputation, and it shouldn't lean on a sales pitch either. We'd rather fix what's broken, stop there, and earn the next call that way.",
+            "We'd rather fix what's broken, stop there, and earn the next call that way.",
             "So when the problem is a capacitor, you pay for a capacitor, and the estimate is free. You decide what happens next."
           ],
           "image": {
@@ -216,7 +214,7 @@
           "items": [
             {
               "q": "Can you come today?",
-              "a": "We offer same-day and next-day appointments between 8am and 5pm, and emergency calls are available. Call early and tell us what the system is doing."
+              "a": "Yes, call early and tell us what the system is doing. We're open 8am to 5pm, and emergency calls are available."
             },
             {
               "q": "Do you charge to come look?",
@@ -224,7 +222,7 @@
             },
             {
               "q": "You're a new company. Who am I getting?",
-              "a": "Owners and technicians with years of hands-on HVAC experience. We're new to the Wichita market, so we'd point you to our reviews and let our first customers tell you how it went."
+              "a": "We're new to the Wichita market, and we'd rather say so. Mai D. put it this way: \"They're new to market but years of experience between the owners.\""
             },
             {
               "q": "Do you only do repairs?",
@@ -243,7 +241,7 @@
         {
           "type": "callBand",
           "heading": "Call Air Capital Today",
-          "text": "If you've never heard of us, that's fine. Call for a free estimate or send a request, and see how the first conversation goes."
+          "text": "Call for a free estimate or send a request, and see how the first conversation goes."
         }
       ]
     },
@@ -278,47 +276,11 @@
           "name": "Tammy S."
         },
         {
-          "type": "prose",
-          "heading": "Warm Air, Silent Outdoor Unit, or Both",
-          "body": [
-            "You know the moment. The thermostat says 74, the house says 85, and the air from the vents feels like a hair dryer on low.",
-            "Or the outdoor unit hums and never starts the fan. Or it runs all afternoon and the house never catches up.",
-            "Each of those has a short list of likely causes. Most are repairs, not replacements: one failed part, swapped the same visit, and the house starts cooling again."
-          ]
-        },
-        {
-          "type": "review",
-          "quote": "My system was giving me issues and the hottest days of the month. And Juan W/ air capital showed up and resolved issue within a couple hours at a very reasonable price.",
-          "name": "Maria F."
-        },
-        {
-          "type": "prose",
-          "heading": "What Usually Fails, and Why",
-          "body": [
-            "Air conditioners fail in the heat because heat is when they work hardest. Here is what fails most often:"
-          ],
-          "list": [
-            "**Capacitors.** A small part that gives the motors the jolt to start. It weakens with heat and age, then the fan or compressor won't start. It is one of the cheapest and most common failures.",
-            "**Fan and compressor motors.** Hours of Kansas heat wear bearings and windings until the motor stalls or quits.",
-            "**Low refrigerant.** A system doesn't use up refrigerant, so low levels mean a leak somewhere that needs finding, not just topping off.",
-            "**Clogged drain line.** Algae blocks the condensate drain and a safety switch shuts the system down.",
-            "**Frozen coil.** Restricted airflow, usually from a dirty filter, lets the coil ice over and stops cooling."
-          ],
-          "tail": [
-            "We'd rather find the real cause and fix it once than guess and have to come back."
-          ]
-        },
-        {
-          "type": "review",
-          "quote": "My AC motor stopped working and they were able to make it out within an hour of calling and get my unit fixed. The communication, service and price were great! 10/10 recommend.",
-          "name": "Hannah M."
-        },
-        {
           "type": "split",
           "heading": "What Happens When You Call",
           "body": [
-            "You tell us what the system is doing, and we book you in. Same-day and next-day appointments are available, and so are emergency calls.",
-            "We're a new company, and a repair call is how most people meet us. So here's what to expect: the technician checks the system, finds the failed part and explains what failed in plain words. Then we lay out your options.",
+            "You tell us what the system is doing, and we book you in. Emergency calls are available.",
+            "The technician checks the system, finds the failed part and explains what failed in plain words. Then we lay out your options.",
             "You decide. If a repair makes sense, we do it. If it doesn't, we say so and talk through replacement."
           ],
           "image": {
@@ -337,13 +299,36 @@
           "body": [
             "A repair is usually the right call when the system is fairly young and one part has failed. A new capacitor or motor on a system that otherwise runs well is money well spent.",
             "Replacement starts to make sense when the system is old, keeps breaking, or can't keep the house cool even when every part works. Spending repeatedly on a system near the end of its life rarely pays.",
-            "We give you the numbers on both and let you choose. If you go with a new system, financing is available through Enhancify. Our [AC replacement page](/ac-replacement-wichita-ks/) explains what to expect."
+            "We give you the reasoning and the numbers on both, and you choose. If a repair is the honest answer, that's what we'll tell you. If it does come to replacement, we'll walk you through [what a new system involves](/ac-replacement-wichita-ks/)."
           ]
         },
         {
           "type": "review",
           "quote": "My AC died on the hottest day of the Kansas summer, and Air Capital Heating and Air showed up like the cavalry. … they showed up SAME DAY. The tech was friendly, explained exactly what was wrong (RIP capacitor, you served us well), didn't try to upsell me on a whole new unit like some places do, and had cold air blasting through my vents faster than I could finish my iced coffee.",
           "name": "Carlos F."
+        },
+        {
+          "type": "prose",
+          "heading": "Warm Air, Silent Unit: What Usually Fails",
+          "body": [
+            "The thermostat says 74, the house says 85, and the vents blow warm air. Or the outdoor unit hums and never starts the fan. Or it runs all afternoon and the house never catches up.",
+            "Most of the time it's one failed part, not a dead system. Heat is when an air conditioner works hardest, so heat is when parts quit:"
+          ],
+          "list": [
+            "**Capacitors.** A small part that gives the motors the jolt to start. It weakens with heat and age, then the fan or compressor won't start. It is one of the cheapest and most common failures.",
+            "**Fan and compressor motors.** Hours of Kansas heat wear bearings and windings until the motor stalls or quits.",
+            "**Low refrigerant.** A system doesn't use up refrigerant, so low levels mean a leak somewhere that needs finding, not just topping off.",
+            "**Clogged drain line.** Algae blocks the condensate drain and a safety switch shuts the system down.",
+            "**Frozen coil.** Restricted airflow, usually from a dirty filter, lets the coil ice over and stops cooling."
+          ],
+          "tail": [
+            "We'd rather find the real cause and fix it once than guess and have to come back."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "My AC motor stopped working and they were able to make it out within an hour of calling and get my unit fixed. The communication, service and price were great! 10/10 recommend.",
+          "name": "Hannah M."
         },
         {
           "type": "prose",
@@ -362,6 +347,11 @@
           ]
         },
         {
+          "type": "review",
+          "quote": "My system was giving me issues and the hottest days of the month. And Juan W/ air capital showed up and resolved issue within a couple hours at a very reasonable price.",
+          "name": "Maria F."
+        },
+        {
           "type": "prose",
           "heading": "Where We Repair Air Conditioners",
           "body": [
@@ -375,7 +365,7 @@
           "items": [
             {
               "q": "How fast can you get here?",
-              "a": "We offer same-day and next-day appointments. Call early in the day and tell us it's an AC that's not cooling. Give us your town and we'll tell you when we can be there."
+              "a": "Call early in the day and tell us it's an AC that's not cooling. Give us your town and we'll tell you when we can be there."
             },
             {
               "q": "What does an AC repair cost?",
@@ -383,7 +373,7 @@
             },
             {
               "q": "You're new. Should I trust you with my AC?",
-              "a": "Our owners and technicians have years of hands-on HVAC experience. You don't have to take our word for it. Read the reviews on this page."
+              "a": "Our owners and technicians have years of hands-on HVAC experience, and we're new to the Wichita market. Tammy S. called on a 106-degree day and wrote: \"they were out quickly to fix our AC. Great service! Kind and honest!\""
             },
             {
               "q": "Can you maintain my AC so this doesn't happen again?",
@@ -394,7 +384,7 @@
         {
           "type": "callBand",
           "heading": "Get Your AC Running Again",
-          "text": "Call Air Capital Heating and Air and tell us what your air conditioner is doing. We offer same-day and next-day appointments."
+          "text": "Call Air Capital Heating and Air and tell us what your air conditioner is doing."
         }
       ]
     },
@@ -410,7 +400,7 @@
       "hero": {
         "eyebrow": "Air conditioning, Wichita",
         "h1": "AC Replacement in Wichita, KS — Air Capital Heating and Air",
-        "sub": "A new air conditioner is a big decision, and you shouldn't have to make it in a hot house with a stranger pushing you. We tell you whether your system is worth another repair, and if it isn't, we install a new one and offer financing through Enhancify. Call for a free estimate.",
+        "sub": "A new air conditioner is a big decision, and you shouldn't have to make it in a hot house with a stranger pushing you. We tell you whether your system is worth another repair, and if it isn't, we install a new one. Call for a free estimate.",
         "primaryCta": {
           "label": "Call (316) 990-1911",
           "action": "call"
@@ -433,20 +423,18 @@
         },
         {
           "type": "prose",
-          "heading": "When the System Is Telling You It's Done",
+          "heading": "What a Good Replacement Quote Shows You",
           "body": [
-            "You've paid for the same system three summers running. It runs all afternoon and the house still sits at 82. The outdoor unit rattles, the vents are weak, or the electric bill climbs while the comfort drops.",
-            "None of those alone means replace. Together they usually do. A system that keeps failing has parts wearing out one after another, and each repair buys a few months, not years."
-          ]
-        },
-        {
-          "type": "prose",
-          "heading": "Why Old Systems Cost More Every Year",
-          "body": [
-            "Most central air conditioners are built to last somewhere around 10 to 15 years. Kansas summers sit at the hard end of that range, because the system runs for months at a stretch.",
-            "As a system ages, three things happen.",
-            "Parts wear out faster, so repair calls come closer together. It uses more electricity to deliver less cooling, because the motors and coils are worn and efficiency standards were lower when it was built. And a system that uses the older R-22 refrigerant is getting costly to service, because that refrigerant is no longer produced.",
-            "A new system fixes all three at once."
+            "A replacement price should be something you can read and compare. Ask any company, including us, for these:"
+          ],
+          "list": [
+            "What equipment is being installed, and its efficiency rating",
+            "What's included in the install, and what the old system's removal covers",
+            "Whether your existing ductwork and thermostat are staying or changing",
+            "Who stands behind the work after the crew leaves"
+          ],
+          "tail": [
+            "If a quote leaves those out, you're comparing a number, not a system. Ask us for each of them at your free estimate."
           ]
         },
         {
@@ -455,7 +443,7 @@
           "body": [
             "Replacement is not where we start. A young system with one failed part should be repaired, and we'll tell you so.",
             "When we come out, the technician finds what failed and explains your options in plain words: repair the part, replace a major component, or replace the system. You get the reasoning and the numbers on each, and you decide.",
-            "We're a new company, still earning our reputation, and honest advice like this is part of that. If your system has years left, you'll hear that from us."
+            "If your system has years left, you'll hear that from us."
           ]
         },
         {
@@ -478,18 +466,13 @@
         },
         {
           "type": "prose",
-          "heading": "What a Good Replacement Quote Shows You",
+          "heading": "When the System Is Telling You It's Done",
           "body": [
-            "A replacement price should be something you can read and compare. Ask any company, including us, for these:"
-          ],
-          "list": [
-            "What equipment is being installed, and its efficiency rating",
-            "What's included in the install, and what the old system's removal covers",
-            "Whether your existing ductwork and thermostat are staying or changing",
-            "Who stands behind the work after the crew leaves"
-          ],
-          "tail": [
-            "If a quote leaves those out, you're comparing a number, not a system. Ask us for each of them at your free estimate."
+            "You've paid for the same system three summers running. It runs all afternoon and the house still sits at 82. The outdoor unit rattles, the vents are weak, or the electric bill climbs while the comfort drops.",
+            "None of those alone means replace. Together they usually do. Each repair buys a few months, not years.",
+            "Most central air conditioners are built to last around 10 to 15 years. Kansas summers sit at the hard end of that range, because the system runs for months at a stretch.",
+            "As a system ages, parts wear out faster, so repair calls come closer together. It uses more electricity to deliver less cooling, because the motors and coils are worn and efficiency standards were lower when it was built. And a system on the older R-22 refrigerant is getting costly to service, because that refrigerant is no longer produced.",
+            "A new system fixes all three at once."
           ]
         },
         {
@@ -497,7 +480,7 @@
           "heading": "Paying for It",
           "body": [
             "Replacing a system rarely comes at a convenient time. Financing is available through Enhancify, a partner we work with to offer flexible financing options.",
-            "Promotional 0% interest periods may be available, depending on the financing partner. You can see the options and apply on Enhancify's page for Air Capital Heating and Air, linked from our financing page."
+            "Promotional 0% interest periods may be available, depending on the financing partner. Enhancify has a page for Air Capital Heating and Air where you can see the options and apply."
           ]
         },
         {
@@ -513,15 +496,11 @@
           "items": [
             {
               "q": "How do I know whether to repair or replace?",
-              "a": "Look at the age and the repair history. An older system that has needed repeated repairs, or can't keep up even with every part working, is a replacement candidate. A newer system with one failed part usually isn't. Our [AC repair page](/ac-repair-wichita-ks/) covers what usually fails."
+              "a": "Look at the age and the repair history. An older system that has needed repeated repairs, or can't keep up even with every part working, is a replacement candidate. A newer system with one failed part usually isn't. If one part has failed, [AC repair](/ac-repair-wichita-ks/) is usually the better answer."
             },
             {
               "q": "What does a new AC cost?",
               "a": "The price depends on the size of your home, the efficiency of the system and whether your ductwork needs work. We don't quote a number without seeing the house, so call us for a free estimate."
-            },
-            {
-              "q": "Can I finance it?",
-              "a": "Yes. We partner with Enhancify to offer flexible financing options, and promotional 0% interest periods may be available depending on the financing partner."
             },
             {
               "q": "Do you replace AC systems in the middle of summer?",
@@ -529,7 +508,7 @@
             },
             {
               "q": "You're a new company. Can I trust you with a whole system?",
-              "a": "Our owners and technicians have years of hands-on HVAC experience, and our reviews include customers who had a full system replaced."
+              "a": "Our owners and technicians have years of hands-on HVAC experience. Victor V. wrote: \"Outstanding service throughout the whole process from the first call, appointment, and installation.\""
             }
           ]
         },
@@ -569,7 +548,7 @@
           "type": "prose",
           "heading": "Call",
           "body": [
-            "(316) 990-1911, between 8am and 5pm. Emergency calls are available. We're a new Wichita company, and the people behind it have years of hands-on HVAC experience. When you call, we'll tell you plainly what to expect."
+            "(316) 990-1911, between 8am and 5pm. Emergency calls are available. Tell us what the system is doing and which town you're in, and we'll tell you plainly what to expect."
           ]
         },
         {
