@@ -108,7 +108,7 @@ Call anyway. After-hours work is priced by phone, so you know the number before 
 We give you a full breakdown of the costs, with no surprise charges.
 
 **Who will I talk to, and who comes to the house?**
-I'm Sam. I take calls myself when I can, and a technician comes out to your house. Customers have met Clayton and Cory.
+I'm Sam. I take calls myself when I can, and a technician comes out to your house.
 
 **What if something isn't right after you leave?**
 Call the same number and tell us. We stand by our work, and we'll make it right.
