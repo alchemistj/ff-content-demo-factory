@@ -117,7 +117,7 @@
           "body": [
             "Hiring a heating and cooling company you've never heard of is a fair thing to hesitate over. A new name has no history to point to.",
             "So we point to the work.",
-            "Our Google page shows a 5.0 rating, and the reviews on it start this August. We quote them on this site word for word, so you can read the first jobs in their own words.",
+            "Our Google reviews start this August. We quote them on this site word for word, so you can read the first jobs in their own words.",
             "What sits behind the name is years of hands-on HVAC experience between our owners and technicians. The company is new. The people doing the work have been in this trade for a long time."
           ]
         },
@@ -370,13 +370,25 @@
           ]
         },
         {
-          "type": "prose",
+          "type": "faq",
           "heading": "Common Questions",
-          "body": [
-            "### How fast can you get here? We offer same-day and next-day appointments. Call early in the day and tell us it's an AC that's not cooling. Give us your town and we'll tell you when we can be there.",
-            "### What does an AC repair cost? It depends on what failed: a capacitor is a small repair, a compressor is not. Call us for a free estimate and describe what the system is doing.",
-            "### You're new. Should I trust you with my AC? Our owners and technicians have years of hands-on HVAC experience, and the company has a 5.0 rating across 27 Google reviews. You don't have to take our word for it. Read the reviews on this page.",
-            "### Can you maintain my AC so this doesn't happen again? Yes. We offer preventative maintenance plans, including annual tune-ups."
+          "items": [
+            {
+              "q": "How fast can you get here?",
+              "a": "We offer same-day and next-day appointments. Call early in the day and tell us it's an AC that's not cooling. Give us your town and we'll tell you when we can be there."
+            },
+            {
+              "q": "What does an AC repair cost?",
+              "a": "It depends on what failed: a capacitor is a small repair, a compressor is not. Call us for a free estimate and describe what the system is doing."
+            },
+            {
+              "q": "You're new. Should I trust you with my AC?",
+              "a": "Our owners and technicians have years of hands-on HVAC experience. You don't have to take our word for it. Read the reviews on this page."
+            },
+            {
+              "q": "Can you maintain my AC so this doesn't happen again?",
+              "a": "Yes. We offer preventative maintenance plans, including annual tune-ups."
+            }
           ]
         },
         {
@@ -496,14 +508,29 @@
           ]
         },
         {
-          "type": "prose",
+          "type": "faq",
           "heading": "Common Questions",
-          "body": [
-            "### How do I know whether to repair or replace? Look at the age and the repair history. An older system that has needed repeated repairs, or can't keep up even with every part working, is a replacement candidate. A newer system with one failed part usually isn't. Our [AC repair page](/ac-repair-wichita-ks/) covers what usually fails.",
-            "### What does a new AC cost? The price depends on the size of your home, the efficiency of the system and whether your ductwork needs work. We don't quote a number without seeing the house, so call us for a free estimate.",
-            "### Can I finance it? Yes. We partner with Enhancify to offer flexible financing options, and promotional 0% interest periods may be available depending on the financing partner.",
-            "### Do you replace AC systems in the middle of summer? Yes. We offer same-day and next-day appointments, and emergency calls are available.",
-            "### You're a new company. Can I trust you with a whole system? Our owners and technicians have years of hands-on HVAC experience, and we hold a 5.0 rating across 27 Google reviews. That includes customers who had a full system replaced."
+          "items": [
+            {
+              "q": "How do I know whether to repair or replace?",
+              "a": "Look at the age and the repair history. An older system that has needed repeated repairs, or can't keep up even with every part working, is a replacement candidate. A newer system with one failed part usually isn't. Our [AC repair page](/ac-repair-wichita-ks/) covers what usually fails."
+            },
+            {
+              "q": "What does a new AC cost?",
+              "a": "The price depends on the size of your home, the efficiency of the system and whether your ductwork needs work. We don't quote a number without seeing the house, so call us for a free estimate."
+            },
+            {
+              "q": "Can I finance it?",
+              "a": "Yes. We partner with Enhancify to offer flexible financing options, and promotional 0% interest periods may be available depending on the financing partner."
+            },
+            {
+              "q": "Do you replace AC systems in the middle of summer?",
+              "a": "Yes. We offer same-day and next-day appointments, and emergency calls are available."
+            },
+            {
+              "q": "You're a new company. Can I trust you with a whole system?",
+              "a": "Our owners and technicians have years of hands-on HVAC experience, and our reviews include customers who had a full system replaced."
+            }
           ]
         },
         {
