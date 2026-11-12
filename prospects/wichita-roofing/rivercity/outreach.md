@@ -16,3 +16,22 @@ How'd we do on your company vibe?
 
 Josh
 Fluid Frame Marketing
+
+## Short message (their form takes 600 characters)
+
+Hey River City team,
+
+My daughter and I build websites for service businesses. Your reviews keep saying Anthony found the real problem, answered every call and text, and came back after the job. So we made you a website mockup:
+
+https://rivercity.websitepreview.fluidframemarketing.com/
+
+It'll look a lot better with your logo and images on it! Lol
+
+One example: the tap-to-call links in your site's footer dial 123-456-7890.
+
+Our contact form system would have recognized this as a solicitation, and you wouldn't have even seen it.
+
+How'd we do on your company vibe?
+
+Josh
+Fluid Frame Marketing
