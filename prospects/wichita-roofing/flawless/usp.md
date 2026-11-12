@@ -10,18 +10,18 @@ A Wichita roofing and exterior company at 928 S Broadway, run by Ravi (BBB lists
 | Claim | Appeal | Exclusivity | Score | Evidence |
 |---|---|---|---|---|
 | Free class 4 upgrade, downspouts and gutter guards all included on the replacement | 4 | 5 | **20** | Appeal: fear #1 (paying out of pocket, then the next storm) and the reviewers' premium-savings line. Excl: free class 4 and included guards found at 0 of 5 (Dingers sells Class 4 but not as free; Premier "impact-rated" only). Source: facts.md §13 (site hero, "only company" unchecked), Stephanie and Sean P. reviews, DIYNINJAGUY (wider downspouts). |
-| Braid: "Tougher roof back on in a day" (free class 4 upgrade plus a one-day install) | 4 | 4 | **16** | Both halves true: Stephanie ("free upgrade to 50 year impact resistant shingles", "roofed our house in one day"). Appeal: fears #1 and #3 (water in, damage spreading). Excl: Premier and Dingers claim fast installs, none pairs it with a free upgrade. |
-| Ravi, the owner, is on your job and answers himself | 4 | 4 | **16** | Appeal: fear #2 (taken by a chaser) and fear #5 (silence); want "one person who answers the phone". Excl: owner named or on the roof at 0 of 5. Source: 11 reviews name Ravi, e.g. Kiet H. "Ravi the owner is a superstar", Jordan T. The site names no owner (facts.md §1). |
+| Braid: "Tougher roof back on in a day" (free class 4 upgrade plus a one-day install) | 4 | 5 | **20** | Braid scored as its strongest part (the free class 4 upgrade row, A 4, E 5); the one-day half alone scores 6, so the braid adds nothing beyond the upgrade. Both halves true: Stephanie ("free upgrade to 50 year impact resistant shingles", "roofed our house in one day"). Appeal: fears #1 and #3. |
+| Ravi, the owner, is on your job and answers himself | 4 | 3 | 12 | Appeal: fear #2 (taken by a chaser) and fear #5 (silence); want "one person who answers the phone". Excl: no competitor names its owner, but any owner-run shop can say this. E capped at 3 (owner-access claims, QA 11/12). Source: 11 reviews name Ravi, e.g. Kiet H. "Ravi the owner is a superstar", Jordan T. The site names no owner (facts.md §1). |
 | Free same-day leak tarp before a storm | 4 | 3 | 12 | Appeal: fear #3 (water getting in). Excl: Premier lists emergency tarping; none found as free. Source: Jordan T. review. One case, not a promise. |
 | Files the claim and works it with your adjuster | 5 | 2 | 10 | Appeal: fear #1 and the "meet the adjuster" want. Excl: Dingers and Premier also meet adjusters; Air Capital, Tailored, Mid-Kansas offer claim help. Source: site home and about, Stephanie, JayWalk, Sean P. |
+| $200 for every referral | 2 | 4 | 8 | Rarely weighed by a buyer; none of the 5 shows one. Terms unchecked. Source: facts.md §13. |
 | One-day roof replacements | 3 | 2 | 6 | Appeal: nice to have. Excl: Dingers (1 to 2 days) and Premier ("under a day") say it. Source: Deanna, JayWalk, Stephanie, Mahesh R. (larger roof took 2 days, DIYNINJAGUY). |
 | Roof, siding, gutters and painting from one crew | 2 | 2 | 4 | Rarely considered at the roof decision. Dingers, Tailored and Mid-Kansas also list exteriors. Source: facts.md §3; Diane J., Matt S. reviews. |
 | Free inspection | 3 | 1 | 3 | Table stakes: Dingers, Premier, Tailored, Mid-Kansas all offer it. Source: site. |
 | Cleaned up so "you could not tell they had been here" | 3 | 1 | 3 | Clean-yard want. Dingers, Premier, Mid-Kansas all claim cleanup. Source: Bren C. |
-| $200 for every referral | 2 | 4 | 8 | Rarely weighed by a buyer; none of the 5 shows one. Terms unchecked. Source: facts.md §13. |
 
 ## Gate result
-Top claim: free class 4 upgrade, downspouts and gutter guards included, **20**. **Passes gate (16+).** Caveat: the offer is the site's own words ("only company" unchecked) and its current terms need Ravi's confirmation before it leads anything.
+Top claim: free class 4 upgrade, downspouts and gutter guards included, **20** (unchanged after QA calibration; the braid ties it at 20). **Passes gate (16+).** Caveat: the offer is the site's own words ("only company" unchecked) and its current terms need Ravi's confirmation before it leads anything.
 
 ## Three USP statements
 - **A, pain point.** For Wichita homeowners who just had hail take their roof and don't want the same shingle back, Flawless is the roofer that includes a free class 4 impact-resistant upgrade, downspouts and gutter guards, so the new roof is tougher than the old one at no extra line on the bill.

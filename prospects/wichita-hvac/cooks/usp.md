@@ -8,9 +8,9 @@ Score = Appeal x Exclusivity. Competitors: Midwest Mechanical, Moody, Wichita He
 
 | Claim | Appeal | Exclusivity | Score | Evidence |
 | --- | --- | --- | --- | --- |
-| **Braid: "Here fast. Straight about the fix."** Quick arrival and a repair-first diagnosis together | 5 | 3 | 15 | Fears #2 (sold a new system) and #3 (nobody comes). Midwest holds the diagnosis half in writing and Moody the same-day half ("strive"); none of the 5 shows both. Source: Brian F. "come out ASAP... fix it right. The price is fair."; Vicki V. (Friday call, tech that afternoon, reasonable price). |
+| **Braid: "Here fast. Straight about the fix."** Quick arrival and a repair-first diagnosis together | 5 | 3 | 15 | Fears #2 (sold a new system) and #3 (nobody comes). Midwest holds the diagnosis half in writing and Moody the same-day half ("strive"); none of the 5 shows both. Source: Brian F. "come out ASAP... fix it right. The price is fair."; Vicki V. (Friday call, tech that afternoon, reasonable price). Braid scored as its strongest part (repair-before-replace, A 5, E 3); the fast half alone scores 10. |
 | Repair before replace, told straight | 5 | 3 | 15 | Fear #2. Midwest: "diagnoses the root cause before replacing anything"; Moody has an "Honest Service" slogan only. Source: LaVona B. (another company's replace quote was "insane"; Cook's fixed it); Matthew L. (other company "was lying"); site copy "show you the repair and the replacement side by side". |
-| Techs by name who explain the problem | 4 | 3 | 12 | Want: explained, not talked down to. Competitor sites name no techs in company copy; only reviewers name them. Source: Tom V. and Charlotte C. (Shannon and Jose), Diana N. (Charlie), Ted H. and Vicki V. (Ricky), Sean S. (Tyler, Glenn, Rosa). |
+| Techs by name who explain the problem | 4 | 3 | 12 | Want: explained, not talked down to. Competitor sites name no techs in company copy; only reviewers name them. Source: Tom V. and Charlotte C. (Shannon and Jose), Diana N. (Charlie), Ted H. and Vicki V. (Ricky), Sean S. (Tyler, Glenn, Rosa). Named-person claim, E already 3 (owner-access cap, QA 11/12, not needed). |
 | Households that have called us for decades | 4 | 3 | 12 | Want: "having a guy again". Moody and Midwest claim years in business; none shows customers' own history. Source: Sandra S. (35 years); John E. (two homes, "many, many years"); Jeff W. (30+ years); Richard R., 2009 ("who my grandparents always called"; the same review mentions a 2008 buyout). |
 | Maintenance plan: two visits, priority emergency service within 24 hours, 20% off parts and labor | 3 | 4 | 12 | Nice to have. Midwest plan gives 10% off repairs, Moody 10%; Wichita Heating & Air shows no terms. Source: facts.md section 7, /maintenance/. |
 | Fast response (stated alone) | 5 | 2 | 10 | Fear #3. Moody "strive to offer same-day"; reviewers say same-day for Wichita Heating & Air and Crockett. Source: Carolyn R. (fast response, 90-year-old father); James B. (AC fixed same day, humid). |
@@ -19,7 +19,7 @@ Score = Appeal x Exclusivity. Competitors: Midwest Mechanical, Moody, Wichita He
 | Evening emergency service, 5 to 10 PM | 4 | 2 | 8 | Fear #3 at night. Midwest, Wichita Heating & Air and Air Source (directory) say 24/7, which beats 10 PM. Source: site hours table. |
 
 ## Gate result
-Top claim: the braid "Here fast. Straight about the fix.", 15. **Below gate** (16+ needed). Cook's 1-star reviews (repeat visits, unreturned quote, fees) also keep the "straight" half from scoring higher.
+Top claim: the braid "Here fast. Straight about the fix.", 15 (unchanged after QA calibration; it equals its strongest part). **Below gate** (16+ needed). Cook's 1-star reviews (repeat visits, unreturned quote, fees) also keep the "straight" half from scoring higher.
 
 ## Three USP statements
 - **A, pain point:** For Wichita homeowners who dread hearing "replace the whole thing" on a hot day, Cook's is the crew that comes out fast and finds what actually failed, so you decide with the facts in front of you.

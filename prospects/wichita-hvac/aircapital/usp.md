@@ -8,7 +8,7 @@ Score = Appeal x Exclusivity. Competitors: Midwest Mechanical, Moody, Wichita He
 
 | Claim | Appeal | Exclusivity | Score | Evidence |
 | --- | --- | --- | --- | --- |
-| **Braid: Same Day. Explained First.** We arrive the same day and explain the cause and every option before the work starts | 5 | 4 | **20** | Appeal: F1, F3 and F2 together. Exclusivity: Moody only "strives" for same-day and Midwest explains "options and the cost", but none of the 5 pairs the two. Source: reviews Oscar M. ("same day within hours... explaining what was wrong"), Wichita B. (Juan "explained all of the options"), Carlos F. |
+| **Braid: Same Day. Explained First.** We arrive the same day and explain the cause and every option before the work starts | 5 | 4 | **20** | Appeal: F1, F3 and F2 together. Exclusivity: Moody only "strives" for same-day and Midwest explains "options and the cost", but none of the 5 pairs the two. Source: reviews Oscar M. ("same day within hours... explaining what was wrong"), Wichita B. (Juan "explained all of the options"), Carlos F. Braid scored as its strongest part (same-day arrival, A 5, E 4); it ties that row and does not outscore it. |
 | Same-day arrival, often within an hour or two of the call | 5 | 4 | **20** | Appeal: F3, F1 (reviewers call at 104 to 106 degrees). Exclusivity: Moody "strive[s] to offer same-day" (a hedge); reviewers mention same-day at Wichita Heating and Crockett, neither a company claim; Midwest does not claim it. Source: reviews Jayci G., Hannah M., Tammy S., Dulce G., Briton B. ("less than 12hrs"); site trust bar |
 | Cause explained in plain words, every option laid out | 5 | 3 | **15** | Appeal: F2 and the "explained everything" want. Exclusivity: Midwest and Moody say honest and options; few prove it. Source: reviews Wichita B. (Juan), Sophia L., Elizabeth H., Oscar M. |
 | Repair first, no upsell to a new unit | 5 | 2 | **10** | Appeal: F2, the #2 fear. Exclusivity: Midwest says it "diagnoses the root cause before replacing anything"; Moody has an "honest service" slogan. Source: review Carlos F. ("didn't try to upsell me on a whole new unit") |
@@ -20,7 +20,7 @@ Score = Appeal x Exclusivity. Competitors: Midwest Mechanical, Moody, Wichita He
 | Maintenance plan | 3 | 2 | **6** | Appeal: nice to have. Exclusivity: Midwest ($180/yr) and Moody hold plans; ours has no stated contents or price. Source: facts.md section 7 |
 
 ## Gate result
-Top claim: "Same Day. Explained First." and plain same-day arrival, both **20**. **Passes gate (16+).**
+Top claim: "Same Day. Explained First." and plain same-day arrival, both **20** (braid scored as its strongest part). **Passes gate (16+).** Unchanged after QA calibration; no row here is an owner-access claim (no owner is named).
 
 ## Three USP statements
 - **A, pain point:** For Wichita homeowners whose AC or furnace quit and who dread a week of waiting or a pitch for a new unit, Air Capital is the heating and air company that shows up the same day and explains the cause and every option first, so you decide with the facts.
