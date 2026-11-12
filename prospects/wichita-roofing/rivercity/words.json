@@ -34,42 +34,42 @@
     {
       "name": "Roof Replacement",
       "route": "/roof-replacement-wichita-ks/",
-      "blurb": "A new roof in composition shingles, metal or tile, with a detailed estimate first."
+      "blurb": "The old roof off to the decking and a new one on, in composition shingles, metal or tile, priced on a detailed estimate after we've seen it."
     },
     {
       "name": "Roof Repair",
       "route": "/roof-repair-wichita-ks/",
-      "blurb": "From minor leaks to storm damage, with the real source found first."
+      "blurb": "Leaks, lifted or missing shingles, loose flashing and cracked vent boots, from a minor leak to storm damage."
     },
     {
       "name": "Roof Maintenance",
       "route": null,
-      "blurb": "Routine upkeep that catches loose and worn spots before they let water in."
+      "blurb": "Routine upkeep that catches loose flashing, cracked vent boots and worn spots while they're still small jobs."
     },
     {
       "name": "Siding",
       "route": null,
-      "blurb": "Wood, fiber cement or composite siding, repaired or replaced."
+      "blurb": "Siding repair, replacement and maintenance in wood, fiber cement or composite."
     },
     {
       "name": "Gutters and Gutter Guards",
       "route": null,
-      "blurb": "Gutter repairs and gutter guard installation."
+      "blurb": "Gutter repairs and gutter guards, so water leaves the roof edge instead of soaking the fascia."
     },
     {
       "name": "Interior and Exterior Painting",
       "route": null,
-      "blurb": "Premium paints inside your home and out."
+      "blurb": "Interior and exterior painting with premium paints."
     },
     {
       "name": "Window Repair and Replacement",
       "route": null,
-      "blurb": "Repair the window you have or replace it."
+      "blurb": "Repair the window you have, or replace it when it can't be saved."
     },
     {
       "name": "Deck Staining and Restoration",
       "route": null,
-      "blurb": "Bring a worn deck back with restoration and fresh stain."
+      "blurb": "Deck restoration and fresh stain for weathered, graying boards."
     }
   ],
   "pages": [
@@ -80,9 +80,9 @@
       "keyword": "roofing company Wichita KS",
       "seo": null,
       "hero": {
-        "eyebrow": "Local, family owned in Wichita",
+        "eyebrow": "Wichita, KS · Local, Family-Owned",
         "h1": "Roofing Company in Wichita, KS — River City Roofing",
-        "sub": "A stain on the ceiling doesn't tell you where the roof is leaking. We climb up and find out before anyone talks about replacing anything. Call us for a free quote.",
+        "sub": "River City Roofing is a local, family-owned roofing company, and Anthony is the person you deal with from the first look to the final inspection. You get a detailed estimate before any work starts, and he comes back after the crew leaves to make sure the roof is right. Call for a free quote.",
         "primaryCta": {
           "label": "Call (316) 295-2159",
           "action": "call"
@@ -99,15 +99,28 @@
       },
       "sections": [
         {
+          "type": "review",
+          "quote": "Very pleasant experience. … Anthony is very responsive to calls and text messages. He is great to work with.",
+          "name": "Theresa E."
+        },
+        {
           "type": "split",
-          "heading": "Find the Real Problem First",
+          "heading": "First Look. Final Inspection. Same Person.",
           "body": [
-            "Water is sneaky. It runs along the decking and down a rafter before it ever drips, so the stain on your ceiling is often several feet from the hole.",
-            "That's why one roofer says you need a new roof, the next says a patch, and a third blames the flashing. They're guessing from the ground.",
-            "We look first. We get into the attic and up on the roof, find where the water is really coming in, and tell you what it will take to stop it. Often the water is not coming from where the stain is.",
-            "Sometimes that's a whole new roof. Sometimes it's a chimney chase, a vent boot or a strip of flashing that costs a fraction as much.",
-            "You get a detailed estimate for what's actually wrong, not a number built for a roof we never looked at."
+            "Most roofing jobs change hands along the way. One person writes the price, a crew you've never met tears off the roof, and once the last nail is in, nobody comes back to look.",
+            "If something isn't right a month later, you're the one chasing them down.",
+            "We stay with your roof from the first look to the final inspection. Anthony gets into the attic and up on the roof to find out what's really wrong, and you get a detailed estimate for that, not for a roof nobody looked at.",
+            "When the work is done, the crew walks the yard for anything that came off the roof. Then Anthony comes back to check the job, so the person who looked at your roof first is the one who signs off on it."
           ],
+          "list": [
+            "Local, family-owned, based at 3750 N Topeka St in Wichita",
+            "Free quote: call (316) 295-2159",
+            "Attic and roof checked before any price is written, when there's a leak",
+            "A detailed estimate for what the roof actually needs",
+            "Crew walks the yard for nails and scraps when the job is done",
+            "A final inspection after the work"
+          ],
+          "listStyle": "checks",
           "image": {
             "slot": "home-roof",
             "alt": "Roof edge and gutter line of a Wichita house",
@@ -115,13 +128,54 @@
           }
         },
         {
+          "type": "review",
+          "quote": "River City did an amazing job putting a new roof on my home. After they finished, they walked around to make sure if anything fell off the roof that everything was picked up. Anthony showed up shortly after they left to make sure I was pleased with the roof. Anthony handled talking to my insurance agent and getting forms filed out and returned to them. We will use them again.",
+          "name": "Kamden B."
+        },
+        {
+          "type": "prose",
+          "heading": "What Your Roof Is Telling You",
+          "body": [
+            "Most roof calls start with something you can see. Here's what usually causes it, and what we do about it."
+          ],
+          "items": [
+            {
+              "title": "A stain on the ceiling after a rain",
+              "text": "Water runs along the decking and down a rafter before it drips, so the stain is often several feet from the opening. We start in the attic, follow the trail up to the roof, and fix where the water gets in, which isn't always the shingles."
+            },
+            {
+              "title": "Shingles in the yard after a wind storm",
+              "text": "Wind breaks the seal strip under a shingle, then peels it off the next time it blows, and the felt underneath soaks up every rain after that. We replace what's missing and check the shingles around it, because a broken seal can look fine from the ground."
+            },
+            {
+              "title": "A drip near the chimney or a plumbing pipe",
+              "text": "Flashing around chimneys pulls loose, and the rubber boots around pipes crack in the sun years before the shingles wear out. Either one is a small repair that costs a fraction of a roof, once someone finds it."
+            },
+            {
+              "title": "Curling shingles and grit in the gutters",
+              "text": "Sun, wind and hail have worn the granules off, and the shingles underneath are giving out across the slope. Patches only buy a season at that point, so we write a detailed estimate for a new roof in composition shingles, metal or tile."
+            },
+            {
+              "title": "Bare spots or dents after hail",
+              "text": "Hail bruises shingles and knocks the granules loose, and those spots often start leaking a year later. After a bad storm it's worth having someone on the roof even when nothing looks wrong from the driveway."
+            },
+            {
+              "title": "Water spilling over the gutters",
+              "text": "Clogged or sagging gutters push water back under the roof edge and into the fascia boards. We repair gutters and install gutter guards, and we'll tell you if the roof edge behind them has started to rot."
+            }
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "We found a leak in our roof. River City handled it all very professionally and in a timely manner. I would definitely recommend them for any of your roofing needs.",
+          "name": "Lindsey F."
+        },
+        {
           "type": "prose",
           "heading": "Roof Replacement",
           "body": [
-            "Some roofs are done. The shingles curl at the edges or lie flat and bare in patches, and the gutters fill with the gritty granules that used to protect them. You've patched it twice and it still leaks.",
             "Asphalt shingles wear out from the sun first, then from Kansas wind and hail. Once the granules are gone, every repair only buys a season or two.",
-            "We install composition shingles, metal and tile roofs. When the work is done, the crew walks the property and picks up what fell off the roof, so you aren't finding nails in the yard weeks later.",
-            "Afterward, we come back to make sure you're pleased with the roof."
+            "We install composition shingles, metal and tile roofs. The detailed estimate comes after we've seen your roof, so it's built for your house and not for an average one."
           ],
           "link": {
             "label": "See roof replacement →",
@@ -132,9 +186,8 @@
           "type": "prose",
           "heading": "Roof Repair",
           "body": [
-            "A bad wind comes through overnight and in the morning there are shingles in the yard. Or the first spring storm shows you a drip you didn't know you had.",
-            "Don't wait on either one. A missing shingle exposes the felt and the decking underneath, and every rain after that soaks a little more of the roof you still have.",
-            "We fix everything from a minor leak to storm damage. A repair that finds the real cause costs far less than the water damage that follows when it's ignored."
+            "Most leaks aren't a worn-out roof. They're one failed spot, and every rain after it opens soaks a little more of the decking, the insulation and the ceiling.",
+            "We fix everything from a minor leak to storm damage. Finding the real cause costs far less than the water damage that follows when it's ignored."
           ],
           "link": {
             "label": "See roof repair →",
@@ -142,41 +195,9 @@
           }
         },
         {
-          "type": "review",
-          "quote": "We found a leak in our roof. River City handled it all very professionally and in a timely manner. I would definitely recommend them for any of your roofing needs.",
-          "name": "Lindsey F."
-        },
-        {
-          "type": "prose",
-          "heading": "Roof Maintenance",
-          "body": [
-            "Most roofs don't fail all at once. They fail at the flashing around a chimney, at a cracked vent boot, or under a limb that has been rubbing for years.",
-            "A routine check catches those while they're a small job. It's the cheapest roof work there is, and it's how a roof gets to the end of its life instead of dying early.",
-            "We do routine roof maintenance, and a look after a hard storm is a good time to book it."
-          ]
-        },
-        {
-          "type": "prose",
-          "heading": "Siding, Gutters, Paint, Windows and Decks",
-          "body": [
-            "The roof is only the top of the house. The roof edge, the gutters and the siding meet, and water that gets past one usually shows up at the next.",
-            "So we also work on the rest of the outside:"
-          ],
-          "list": [
-            "Siding repair, replacement and maintenance in wood, fiber cement or composite",
-            "Gutter repair and gutter guards",
-            "Interior and exterior painting",
-            "Window repair and replacement",
-            "Deck restoration and staining"
-          ],
-          "tail": [
-            "Those are all in the same hands as the roof, so when we see a gutter pulling away or a window-well problem while we're up there, we can tell you and fix it."
-          ]
-        },
-        {
-          "type": "review",
-          "quote": "Very, very pleased with the new siding and paint job. Anothny and Alex do great work! Professional, courteous, and really know what theyre doing.",
-          "name": "Alex C."
+          "type": "services",
+          "heading": "Roofing and Exterior Services",
+          "intro": "The roof edge, the gutters and the siding all meet, and water that gets past one shows up at the next. So one call covers the roof and the rest of the outside of the house."
         },
         {
           "type": "steps",
@@ -184,23 +205,23 @@
           "items": [
             {
               "title": "You call for a free quote.",
-              "text": "Tell us what you're seeing, whether that's a stain, missing shingles or an old roof."
+              "text": "Tell us what you're seeing: a stain, missing shingles, a storm that just came through or a roof that's getting old."
             },
             {
               "title": "We look.",
-              "text": "Someone from River City gets up on the real roof, and into the attic when there's a leak, before any price is written."
+              "text": "Someone from River City gets up on the roof, and into the attic when there's a leak, before any price is written."
             },
             {
               "title": "You get a detailed estimate.",
-              "text": "It covers what the job needs."
+              "text": "It covers what the roof actually needs, whether that's a repair or a new roof."
             },
             {
               "title": "The crew does the work.",
               "text": "When the crew says they'll be there, they're there."
             },
             {
-              "title": "Cleanup and follow-up.",
-              "text": "The crew walks the property for debris, and we check back with you afterward."
+              "title": "Cleanup and final inspection.",
+              "text": "The crew walks the property for debris, and we come back to check the job with you."
             }
           ]
         },
@@ -210,11 +231,19 @@
           "items": [
             {
               "q": "Is the quote really free?",
-              "a": "Yes. Call (316) 295-2159 for a free quote."
+              "a": "Yes. Call (316) 295-2159 and tell us what the roof is doing. We set a time to look at it, and the detailed estimate you get afterward costs you nothing."
+            },
+            {
+              "q": "Who will I deal with?",
+              "a": "Anthony. He's the one who looks at your roof, answers your questions while the work is going on, and comes back after the crew leaves to check the job. You don't get handed from a salesperson to a stranger."
             },
             {
               "q": "How do I know if I need a repair or a new roof?",
-              "a": "Age, spread and cause decide it. A roof with one failed spot, like a flashing or a boot, is a repair. A roof with curling, bare patches and granules in the gutters across the whole slope is at the end of its life. If you've already repaired it more than once, a new roof usually costs less than the third repair and the water damage between them."
+              "a": "Age, spread and cause decide it. A roof with one failed spot, like a flashing or a vent boot, is a repair. A roof with curling, bare patches and granules in the gutters across the whole slope is at the end of its life. If you've already repaired it more than once, a new roof usually costs less than the third repair and the water damage between them."
+            },
+            {
+              "q": "Can I check my roof myself?",
+              "a": "From the ground, yes. Look for missing or lifted shingles, granules collecting at the downspouts, and stains or damp insulation in the attic with a flashlight after a rain. Don't climb a wet or steep roof; call and we'll go up."
             },
             {
               "q": "How long does a roof last?",
@@ -226,15 +255,15 @@
             },
             {
               "q": "How long does a replacement take?",
-              "a": "A typical house with asphalt shingles is usually a one-to-three-day job for a crew. A big, steep or cut-up roof, or one with rotted decking, takes longer."
+              "a": "A typical house with asphalt shingles is usually a one-to-three-day job for a crew. A big, steep or cut-up roof, or one with rotted decking, takes longer, and rain can push the start date."
             },
             {
               "q": "Will my insurance pay for it?",
-              "a": "It depends on your policy and what caused the damage. Wind and hail are the usual claims, and an adjuster wants clear photos and the damage tied to a storm. We can't promise what your insurer will do."
+              "a": "It depends on your policy, your deductible and what caused the damage. Wind and hail are the usual claims. Check your policy for a separate wind and hail deductible, take dated photos of the damage, and keep receipts for any temporary fixes. We can't promise what your insurer will do."
             },
             {
               "q": "Do you work outside Wichita?",
-              "a": "We work in Wichita."
+              "a": "We're based on N Topeka St and work in Wichita. Call (316) 295-2159 with your address and we'll tell you."
             }
           ]
         },
@@ -249,7 +278,7 @@
         {
           "type": "callBand",
           "heading": "Get Someone Up on Your Roof",
-          "text": "Call for a free quote and we'll find out what your roof needs before we tell you what it costs. Call (316) 295-2159. Monday to Friday, 8:00 AM to 4:30 PM."
+          "text": "Call (316) 295-2159 for a free quote, Monday to Friday, 8:00 AM to 4:30 PM. Anthony will look at your roof, you'll get a detailed estimate, and after the work he comes back to make sure it's right."
         }
       ]
     },
@@ -295,6 +324,28 @@
         },
         {
           "type": "prose",
+          "heading": "Where the Roof Meets the Rest of the House",
+          "body": [
+            "A new roof sits on top of the gutters, the fascia and the walls. If the edge is rotted or the gutters are pulling away, the best shingles in the world won't keep that water out of the house.",
+            "While the old roof is off, we can see these edges better than we ever will from the ground. Because we also do siding, gutters, paint and windows, we can tell you what we found and handle it ourselves instead of sending you to another company."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Anthony and River city roofing did a great job on our house with paint siding and window well covers!",
+          "name": "Julie W."
+        },
+        {
+          "type": "prose",
+          "heading": "What Happens When You Call About a New Roof",
+          "body": [
+            "Call (316) 295-2159 and tell us how old the roof is and what you're seeing. We set a time to come out.",
+            "Someone from River City goes up on the roof, and into the attic if there's a leak, to see whether the roof is worn out or just damaged in one place.",
+            "Then you get a detailed estimate for whichever one it is. If it's a new roof, the estimate covers the material you choose and what has to come off first."
+          ]
+        },
+        {
+          "type": "prose",
           "heading": "What Comes Off Before Anything Goes On",
           "body": [
             "Replacement means more than new shingles. The old roof comes down to the decking, and that's where the real condition of the house shows.",
@@ -324,37 +375,31 @@
           ]
         },
         {
-          "type": "review",
-          "quote": "River City did an amazing job putting a new roof on my home. After they finished, they walked around to make sure if anything fell off the roof that everything was picked up. Anthony showed up shortly after they left to make sure I was pleased with the roof.",
-          "name": "Kamden B."
-        },
-        {
-          "type": "prose",
-          "heading": "Where the Roof Meets the Rest of the House",
-          "body": [
-            "A new roof sits on top of the gutters, the fascia and the walls. If the edge is rotted or the gutters are pulling away, the best shingles in the world won't keep that water out of the house.",
-            "While the old roof is off, we can see these edges better than we ever will from the ground. Because we also do siding, gutters, paint and windows, we can tell you what we found and handle it ourselves instead of sending you to another company."
-          ]
-        },
-        {
-          "type": "review",
-          "quote": "Anthony and River city roofing did a great job on our house with paint siding and window well covers!",
-          "name": "Julie W."
-        },
-        {
           "type": "prose",
           "heading": "What Decides the Price",
           "body": [
             "Every roof quote is built from the same few things. Understanding them helps you compare quotes fairly."
           ],
-          "list": [
-            "**Size and pitch.** More squares of roof means more material and labor, and a steep roof is slower and costlier to work on.",
-            "**Material.** Composition, metal and tile run at very different prices.",
-            "**Decking repair.** Rotted wood can only be found once the old roof is off, so a good estimate explains how that's handled.",
-            "**Layers and details.** Old layers to remove, chimneys, skylights and valleys all add labor."
-          ],
           "tail": [
             "We give you a detailed estimate after we've seen the roof. A number given over the phone, before anyone has looked, is a guess."
+          ],
+          "items": [
+            {
+              "title": "Size and pitch",
+              "text": "More squares of roof means more material and labor. A steep roof is slower and costlier to work on safely."
+            },
+            {
+              "title": "Material",
+              "text": "Composition shingles, metal and tile run at very different prices. Shingles cost the least up front; metal and tile cost more and last longer."
+            },
+            {
+              "title": "Decking repair",
+              "text": "Rotted wood can only be found once the old roof is off. A good estimate explains how that's handled before the work starts."
+            },
+            {
+              "title": "Layers and details",
+              "text": "Old layers to tear off, chimneys, skylights and valleys all add labor. A simple, single-layer roof costs less to replace than a cut-up one."
+            }
           ]
         },
         {
@@ -417,15 +462,30 @@
           "body": [
             "Most roof leaks are not a worn-out roof. We trace most of them to a short list of small places:"
           ],
-          "list": [
-            "**Flashing.** The metal around chimneys, walls and skylights that bends, rusts or pulls loose.",
-            "**Vent boots.** The rubber collars around plumbing pipes crack in the sun years before the shingles do.",
-            "**Chimney chases and caps.** The framed box around a chimney leaks at the joints and the siding where it meets the roof.",
-            "**Missing or lifted shingles.** Wind breaks the seal on a shingle and then rips it off the next time it blows.",
-            "**Valleys.** Where two slopes meet, all the water runs through one narrow channel."
-          ],
           "tail": [
             "Each of these costs far less to fix than a roof. The trick is finding which one it is."
+          ],
+          "items": [
+            {
+              "title": "Flashing",
+              "text": "The metal around chimneys, walls and skylights bends, rusts or pulls loose. Water slips behind it and runs down inside the wall or onto the ceiling."
+            },
+            {
+              "title": "Vent boots",
+              "text": "The rubber collars around plumbing pipes crack in the sun years before the shingles do. Replacing one is a short job."
+            },
+            {
+              "title": "Chimney chases and caps",
+              "text": "The framed box around a chimney leaks at its joints and where its siding meets the roof. The stain shows up inside and looks like a roof leak."
+            },
+            {
+              "title": "Missing or lifted shingles",
+              "text": "Wind breaks the seal on a shingle and rips it off the next time it blows. The felt underneath can't keep out rain for long."
+            },
+            {
+              "title": "Valleys",
+              "text": "Where two slopes meet, all the water runs through one narrow channel. Worn or badly cut valleys are a common leak point."
+            }
           ]
         },
         {
@@ -441,6 +501,14 @@
           "type": "review",
           "quote": "My roof got really messed up by a bad wind and River City Roofing made it super quick and easy to get it fixed. Anthony was very friendly and easy to work with and the guys on the crew really worked their tails off to get my roof done quickly!",
           "name": "Jordan S."
+        },
+        {
+          "type": "prose",
+          "heading": "What Happens When You Call About a Leak",
+          "body": [
+            "Call (316) 295-2159 and tell us where the water shows up, when it started and whether a storm came first. We set a time to come look.",
+            "Someone from River City checks the attic, then the roof, and finds the opening. You get a detailed estimate for the repair that stops it before we start."
+          ]
         },
         {
           "type": "prose",
@@ -463,14 +531,26 @@
             "We'd rather fix a roof that can be fixed. If most of the roof is sound and the damage is in one place, repair is the right answer.",
             "Here's when we'll tell you it's time to stop repairing:"
           ],
-          "list": [
-            "Shingles are curling, cracking or bare across the whole slope.",
-            "The roof has been repaired several times and still leaks.",
-            "The decking is soft or sagging in more than a small spot.",
-            "Granules are collecting in your gutters."
-          ],
           "tail": [
             "In that case the next step is a [roof replacement](/roof-replacement-wichita-ks/), and we'll show you why. If it's a repair, we'll say that too."
+          ],
+          "items": [
+            {
+              "title": "Shingles curling, cracking or bare across the whole slope",
+              "text": "The roof is worn out, not damaged in one spot. A patch holds a season, not years."
+            },
+            {
+              "title": "Repaired several times and still leaking",
+              "text": "New leaks keep opening in old shingles. The repairs start to add up to the price of a roof."
+            },
+            {
+              "title": "Soft or sagging decking",
+              "text": "If more than a small spot of wood is soft, water has been getting in for a while. That wood has to be replaced, and so does the roof over it."
+            },
+            {
+              "title": "Granules collecting in your gutters",
+              "text": "Shingles shed their grit as they age. A lot of it in the gutters means the surface protecting them is nearly gone."
+            }
           ]
         },
         {
@@ -558,8 +638,8 @@
         },
         {
           "type": "review",
-          "quote": "Very pleasant experience. This company did a wonderful job replacing my siding and sending painters that did a great job as well. Anthony is very responsive to calls and text messages. He is great to work with.",
-          "name": "Theresa E."
+          "quote": "Very, very pleased with the new siding and paint job. Anothny and Alex do great work! Professional, courteous, and really know what theyre doing. Thank you for taking such good care of me and my home.",
+          "name": "Alex C."
         },
         {
           "type": "faq",

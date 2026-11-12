@@ -41,42 +41,42 @@
     {
       "name": "Roof Replacement",
       "route": "/roof-replacement-wichita-ks/",
-      "blurb": "Whole roofs from inspection to magnetic nail sweep. We have put on a roof in a single day."
+      "blurb": "Tear-off, a look at the deck, a new roof and a magnetic nail sweep. Plenty of ours go on in a single day."
     },
     {
       "name": "Roof Repair",
       "route": "/roof-repair-wichita-ks/",
-      "blurb": "Wind-blown shingles, leaks and flashing, traced to the real cause and fixed."
+      "blurb": "Wind-blown shingles replaced, and leaks traced to the flashing, pipe boot or valley that's letting water in."
     },
     {
       "name": "Free Roof Inspections",
       "route": null,
-      "blurb": "We check your roof and show you the damage, by drone when that's the clearest view. It costs you nothing."
+      "blurb": "We get on the roof or put a drone over it, photograph the damage and show you. It costs you nothing."
     },
     {
       "name": "Hail and Storm Damage Insurance Claims",
       "route": null,
-      "blurb": "Brady or Arturo meets your adjuster, and we push for the full roof the damage calls for."
+      "blurb": "We document the damage, Brady or Arturo meets your adjuster, and we push back on partial or denied claims."
     },
     {
       "name": "Commercial Roofing",
       "route": null,
-      "blurb": "Roof repair and replacement for commercial properties as well as homes."
+      "blurb": "Maintenance, repair and replacement on commercial buildings as well as homes."
     },
     {
       "name": "Shake, Metal and Composite Roofs",
       "route": null,
-      "blurb": "We work with all roofing systems and brands, from wood shake and metal to CeDUR composite shake."
+      "blurb": "Wood shake, metal, CeDUR composite shake and Presidential Shake shingles. We work with all roofing systems and brands."
     },
     {
       "name": "Gutters",
       "route": null,
-      "blurb": "Replaced in the same job as your roof when hail has dented them."
+      "blurb": "Hail-dented gutters replaced in the same job as your roof, so one claim and one crew cover both."
     },
     {
       "name": "Siding",
       "route": null,
-      "blurb": "Siding fixed along with your roof and gutters, or as a project of its own."
+      "blurb": "Siding repaired along with your roof and gutters, or as a project of its own."
     }
   ],
   "pages": [
@@ -87,9 +87,9 @@
       "keyword": "roofing company Wichita KS",
       "seo": null,
       "hero": {
-        "eyebrow": "Locally owned in Wichita",
+        "eyebrow": "Wichita, KS · Local Roofing Company · Free Roof Inspections",
         "h1": "Roofing Company in Wichita, KS — ICT Roofing & Exteriors",
-        "sub": "I'm Juan. My crew replaces and repairs roofs in Wichita, and when hail hits, Brady, Arturo and I deal with the insurance company alongside you. Call or book a free inspection and we'll look at your roof before you decide anything.",
+        "sub": "I'm Juan, founder of ICT Roofing & Exteriors. We inspect your roof for free, document what the storm did, and meet your adjuster on the roof so the claim covers the whole job. Call for your free inspection.",
         "primaryCta": {
           "label": "Call (316) 796-6722",
           "action": "call"
@@ -112,36 +112,50 @@
         },
         {
           "type": "split",
-          "heading": "After a Hailstorm, the Claim Is Half the Job",
+          "heading": "Inspect Free. Stay With Your Claim.",
           "body": [
-            "The storm passes, the roof looks fine from the driveway, and your phone fills up with door-knockers. Then comes the part nobody explains: finding the damage, filing the claim, meeting the adjuster, getting the paperwork in on time.",
-            "That's the part we do with you, and we try to get to your roof soon after the storm, before the damage gets harder to prove.",
-            "The inspection is free. We photograph what we find, and we tell you plainly whether there's a claim worth filing.",
-            "If there is, Brady or Arturo meets your adjuster at the house. You don't stand on the lawn trying to argue roofing with a stranger.",
+            "After a big hailstorm, the door-knockers show up. Storm chasers sign you up, take whatever the insurance paperwork says, and replace only what the adjuster wrote down. If that's two slopes of a roof that took hail everywhere, you're left with the rest.",
+            "We work the other way. We inspect for free, then stay with your claim until it covers what the storm actually did to your roof.",
+            "We get on the roof, or put a drone over it, and photograph what we find. Then we tell you plainly whether there's a claim worth filing.",
+            "If there is, Brady or Arturo meets your adjuster at the house and walks the roof with them. If the offer covers part of a roof that's damaged all over, we push back.",
             "We can't tell you what your insurance company will pay, and nobody honest can. We can make sure they see everything that's on your roof."
           ],
           "image": {
             "slot": "home-team",
             "alt": "Dark shingle roof ridge on a two-story Wichita home against an overcast sky",
             "brief": "two-story house with a new shingle roof and a clean ridge line, house on the right, driveway leading off to the left, soft overcast sky behind the text side, no readable text, no people"
-          }
+          },
+          "list": [
+            "Free roof inspections, on any roof",
+            "Drone photos when that's the clearest view of the damage",
+            "Brady or Arturo meets your adjuster at the house",
+            "We push back on partial and denied claims",
+            "Juan, our founder, checks roofs himself",
+            "A local Wichita company, at 3500 N Rock Rd"
+          ],
+          "listStyle": "checks"
+        },
+        {
+          "type": "review",
+          "quote": "Brady Potter was an excellent representative to work with. He did his diligence to make sure when the insurance only wanted to replace part of the roof and with his extensive knowledge knew that was not correct he helped us fight to get it all replaced. The crew was unbelievably fast and professional.",
+          "name": "Kristi I."
         },
         {
           "type": "prose",
           "heading": "What Hail Actually Does to a Shingle",
           "body": [
-            "Most of it you can't see from the ground. Hail bruises a shingle: it knocks the protective granules loose and cracks the asphalt mat underneath.",
-            "The shingle still looks like a shingle. But the bare spot ages fast in the sun, and the crack opens up over the next few winters. That's how a roof that \"looked fine\" after the storm leaks two years later.",
-            "The ground gives you clues. Dented gutters, dented vents and flashing, and piles of granules at the bottom of your downspouts all mean hail hit hard enough to matter. A person on the roof, or a drone overhead, confirms it."
+            "Most hail damage can't be seen from the ground. Hail bruises a shingle: it knocks the protective granules loose and cracks the asphalt mat underneath.",
+            "The shingle still looks like a shingle. But the bare spot ages fast in the sun, and the crack opens up over the next few winters. That's how a roof that \"looked fine\" after the storm leaks two years later."
           ]
         },
         {
           "type": "split",
-          "heading": "Why Insurance Offers You Part of a Roof",
+          "heading": "When Insurance Offers Part of a Roof, or Nothing",
           "body": [
             "You get the letter and it covers a slope or two. The adjuster counted hail hits in a test area, decided some slopes didn't have enough, and called the rest \"repairable.\"",
             "But shingles don't repair like drywall. An older shingle goes brittle and cracks when you lift it, and a patched roof is a roof full of seams that the next storm finds.",
-            "Brady knows how this scope gets written and where it can be wrong. When the insurer offers a partial roof, he checks it against what's on your roof and pushes back."
+            "Brady knows how this scope gets written and where it can be wrong. He checks the offer against what's on your roof, slope by slope, and pushes back where it falls short.",
+            "A denial doesn't always mean your roof is fine either. Sometimes the adjuster missed what was there, so we document the damage again and help you appeal. If your roof really is fine, we'll tell you that too."
           ],
           "image": {
             "slot": "home-claims",
@@ -151,52 +165,41 @@
         },
         {
           "type": "review",
-          "quote": "Brady Potter was an excellent representative to work with. He did his diligence to make sure when the insurance only wanted to replace part of the roof and with his extensive knowledge knew that was not correct he helped us fight to get it all replaced. The crew was unbelievably fast and professional.",
-          "name": "Kristi I."
-        },
-        {
-          "type": "prose",
-          "heading": "When the Claim Is Denied",
-          "body": [
-            "A denial doesn't always mean your roof is fine. Sometimes it means the adjuster didn't see what was there, or the claim didn't show it clearly enough.",
-            "We look at the roof again, document the damage, and help you appeal. If your roof really is fine, we'll tell you that too."
-          ]
-        },
-        {
-          "type": "review",
-          "quote": "I'm so happy that my insurance broker sent me to this company after my roof insurance claim got denied when clearly we saw hail damage WITH a leaking roof. … We were about to give up but these guys helped to assure that insurance saw the damage, had to do an appeal on insurances decision and YEP i got it approved.",
+          "quote": "I’m so happy that my insurance broker sent me to this company after my roof insurance claim got denied when clearly we saw hail damage WITH a leaking roof. We had THREE  other roofers which one tried its hardest to help, one basically said well sorry and last said just wait… We were about to give up but these guys helped to assure that insurance saw the damage, had to do an appeal on insurances decision and YEP i got it approved. … Juan and Brady really have your back so you won’t be disappointed plus they are HONEST… meaning if roof is good they will say so instead of TRY to get a new roof out of the deal when not needed.",
           "name": "Crystal E."
         },
         {
           "type": "prose",
-          "heading": "Roof Replacement",
+          "heading": "What You're Seeing, and What It Usually Means",
           "body": [
-            "When the roof is done, it's done: hail-bruised across every slope, shingles curling, leaks you've stopped counting. A full replacement is the honest fix.",
-            "We tear off the old roof and look at the deck underneath. Then we put the new roof on, and plenty of ours go on in a single day. If your gutters took the same hail, we do the roof and gutters together, so you deal with one crew once.",
-            "We work with all roofing systems and brands: asphalt shingle, wood shake, metal and composite shake.",
-            "When the job's finished, we sweep the yard with a magnetic tool so nails don't end up in your tires."
+            "Most roof calls start with something a homeowner noticed from the yard or the hallway. Here's what usually causes each one, and what we do about it."
           ],
-          "link": {
-            "label": "See roof replacement →",
-            "route": "/roof-replacement-wichita-ks/"
-          }
-        },
-        {
-          "type": "review",
-          "quote": "I loved the magnetic tool they used in my yard to make sure there were no roofing nails left behind. I have found zero remnants.",
-          "name": "Shelly T."
-        },
-        {
-          "type": "prose",
-          "heading": "Roof Repair",
-          "body": [
-            "Some roofs don't need replacing. A few shingles blew off in the wind, a boot cracked, a leak showed up over the garage.",
-            "The trick with a leak is that the stain on your ceiling is rarely where the water gets in. We trace it to the source, and when it's a bad flashing job from the last roofer, we fix that instead of caulking the symptom."
-          ],
-          "link": {
-            "label": "See roof repair →",
-            "route": "/roof-repair-wichita-ks/"
-          }
+          "items": [
+            {
+              "title": "Shingles in the yard after a wind storm",
+              "text": "Wind got under shingles whose seal strip had aged and tore them loose, and the ones beside them are easier to lift now. We replace what blew off, check the shingles around it and make sure the new ones seal down."
+            },
+            {
+              "title": "Dented gutters and granules piled at the downspouts",
+              "text": "Hail hit hard enough to dent metal, so it almost certainly bruised the shingles too, even if the roof looks fine from the driveway. We inspect for free and photograph the hits so you can see them yourself."
+            },
+            {
+              "title": "Neighbors getting new roofs, and yours looks fine",
+              "text": "Hail damage is easy to miss from the ground, and the same storm usually hits the whole block. A free inspection tells you whether yours took damage; if it didn't, we say so and you owe nothing."
+            },
+            {
+              "title": "A water stain on the ceiling",
+              "text": "Water enters at one spot and runs along the decking before it drips, so the stain is rarely under the leak. We start at the stain and work up the roof to the flashing, pipe boot or valley that's letting it in."
+            },
+            {
+              "title": "A leak that came back after a repair",
+              "text": "The first repair fixed something that wasn't the problem, often because flashing from the original roof was set wrong. We go back, look again and fix the cause instead of caulking over it."
+            },
+            {
+              "title": "Shingles curling or cracking on every slope",
+              "text": "That's age and sun, and patching one spot won't stop the next. A full replacement is the honest fix, and we'll tell you if it's still a few years off."
+            }
+          ]
         },
         {
           "type": "review",
@@ -205,14 +208,21 @@
         },
         {
           "type": "prose",
-          "heading": "Gutters, Siding and More",
-          "list": [
-            "**Gutters:** replaced along with your roof when hail damaged both.",
-            "**Siding:** the same storm that dents gutters can crack siding, and we fix that too.",
-            "**Shake, metal and composite roofs:** we work with every roofing system.",
-            "**Commercial roofing:** maintenance, repair and replacement for commercial buildings.",
-            "**Free roof inspections:** for any roof, whether or not you end up filing a claim."
-          ]
+          "heading": "Roof Replacement",
+          "body": [
+            "When the roof is done, it's done: hail-bruised across every slope, shingles curling, leaks you've stopped counting.",
+            "We tear off the old roof and look at the deck underneath. Then we put the new roof on, and plenty of ours go on in a single day. If your gutters took the same hail, we do the roof and gutters together, so you deal with one crew once.",
+            "When the job's finished, we sweep the yard with a magnetic tool so nails don't end up in your tires."
+          ],
+          "link": {
+            "label": "See roof replacement →",
+            "route": "/roof-replacement-wichita-ks/"
+          }
+        },
+        {
+          "type": "services",
+          "heading": "Roofing Services in Wichita",
+          "intro": "One call covers the roof, the claim, the gutters and the siding, for homes and commercial buildings."
         },
         {
           "type": "prose",
@@ -231,31 +241,39 @@
               "a": "Yes. We get on the roof or put a drone over it, photograph what's there and walk you through it. If what you thought was damage is just normal wear, we'll tell you that and you owe nothing."
             },
             {
+              "q": "How can I tell if hail damaged my roof?",
+              "a": "Look at the soft metal first: dents in gutters, downspouts, vents and flashing mean hail hit hard enough to bruise shingles. Granules piled at the bottom of your downspouts are another sign. Then have someone get on the roof, because the shingle damage itself rarely shows from the ground."
+            },
+            {
               "q": "Do I have to file an insurance claim?",
-              "a": "No. It's your policy and your decision. We'll tell you what we find, and if the damage doesn't justify a claim, we'll say so."
+              "a": "No. It's your policy and your decision. We'll show you what we found, and if the damage doesn't justify a claim, we'll say so."
             },
             {
               "q": "Will insurance pay for a whole new roof?",
-              "a": "It depends on your policy and on what the adjuster finds, and no roofer can promise an outcome. What we do is document the damage, meet the adjuster, and push back if the offer covers only part of a roof that's damaged all over."
+              "a": "It depends on your policy and on how much damage the adjuster agrees is there. You can check the offer yourself: the scope lists which slopes and how many squares it covers, so compare that to the slopes that took hail. If it's short, we document what's missing and push back."
             },
             {
               "q": "What's my share of the cost?",
-              "a": "Your deductible. Many policies set a separate, higher deductible for hail and wind, so check your policy for that number before the adjuster visits."
+              "a": "Your deductible. Many policies set a separate hail and wind deductible, often a percentage of your home's insured value rather than a flat amount. Find that number on your declarations page before the adjuster visits."
+            },
+            {
+              "q": "How long do I have to file after a storm?",
+              "a": "It depends on your policy, and the time limit is written in it, usually in the section on what to do after a loss. Don't wait to find out: hail damage is easiest to prove soon after the storm."
             },
             {
               "q": "How long does a roof replacement take?",
-              "a": "A lot of our roofs are done in a single day. A big or complicated roof can take longer."
+              "a": "A lot of our roofs are done in a single day. A big or steep roof, or one with a lot of decking to replace, takes longer, and we tell you before we start."
             },
             {
               "q": "Do you do commercial roofs?",
-              "a": "Yes. We work on residential and commercial roofs."
+              "a": "Yes. We maintain, repair and replace roofs on commercial buildings as well as homes."
             }
           ]
         },
         {
           "type": "callBand",
           "heading": "Get Your Roof Looked At",
-          "text": "Call and one of us will come out, get on the roof and tell you what's there. No pressure, and no cost for the inspection. Call (316) 796-6722."
+          "text": "Call and one of us will come out, get on the roof and tell you what's there. The inspection is free, and if there's a claim, we stay with your claim until it's settled. Call (316) 796-6722."
         }
       ]
     },
@@ -312,6 +330,15 @@
           "name": "Debbie L."
         },
         {
+          "type": "prose",
+          "heading": "What Happens When You Call",
+          "body": [
+            "We set a time and come out for a free inspection. One of us gets on the roof, or puts a drone over it, and photographs what's there.",
+            "Then we sit down with you and go through it slope by slope: what's damaged, whether it's a repair or a new roof, and whether there's a claim worth filing.",
+            "If you file, Brady or Arturo meets your adjuster at the house. Once the scope is settled, we put you on the schedule and tell you how long your roof will take."
+          ]
+        },
+        {
           "type": "split",
           "heading": "If the Claim Comes Back Partial or Denied",
           "body": [
@@ -355,11 +382,29 @@
           "type": "prose",
           "heading": "Choosing Your Roofing Material",
           "body": [
-            "Most roofs are asphalt shingles. They're the most common choice and a good one, and a hail-rated shingle can be worth asking about.",
-            "We also work with wood shake, metal and composite shake.",
-            "Wood shake gives you the cedar look and takes more care. Metal sheds rain and snow and lasts. Composite shake, like the CeDUR line, is made to look like cedar without the upkeep.",
-            "If you love the cedar look but want an asphalt shingle, Presidential Shake is the luxury shingle made to replicate it.",
             "We work with all roofing systems and brands, so the recommendation comes from your house, not from what we happen to stock. We ask what you want from the roof, then tell you what we'd do."
+          ],
+          "items": [
+            {
+              "title": "Asphalt shingle",
+              "text": "The most common roof in Wichita and a good one. A hail-rated shingle can be worth asking about."
+            },
+            {
+              "title": "Presidential Shake",
+              "text": "The luxury shingle made to replicate the look of cedar shakes. It gives you the cedar look on an asphalt roof."
+            },
+            {
+              "title": "Wood shake",
+              "text": "Real cedar, with the look that goes with it. It takes more care than shingles."
+            },
+            {
+              "title": "Metal",
+              "text": "Sheds rain and snow and lasts. A good fit when you want a roof you won't think about for a long time."
+            },
+            {
+              "title": "Composite shake",
+              "text": "Made to look like cedar without the upkeep. The CeDUR line is one we work with."
+            }
           ]
         },
         {
@@ -459,12 +504,43 @@
         },
         {
           "type": "prose",
+          "heading": "What Happens When You Call",
+          "body": [
+            "A roof problem rarely waits for a good time, so it starts with a call back, not a week of phone tag. We set a time to come out and show up when we said we would.",
+            "We get on the roof, or put a drone over it, and look at more than the spot you pointed to. Older shingles go brittle, and the ones next to the damage often tell us how much life the roof has left.",
+            "Then we tell you what we found and what the repair will be before we do it. You get the repair and the reason, and if there's something bigger coming, you hear about it before it becomes an emergency."
+          ]
+        },
+        {
+          "type": "prose",
           "heading": "A Leak Isn't Always Where the Stain Is",
           "body": [
             "Water runs. It enters the roof in one place, travels along the decking or a rafter, and drips from a spot six feet away. That's why patching above the stain so often fails.",
-            "The usual culprits are flashing, the metal around chimneys, vents, walls and skylights, along with pipe boots and valleys. A bead of caulk can cover a bad flashing job for a season. It doesn't fix it.",
-            "We start at the stain and work upward and outward until we find where the water gets in. Then we fix that, whether it's a flashing that was set wrong, a cracked boot or a valley that was never sealed."
+            "We start at the stain and work upward and outward until we find where the water gets in. These are the usual places."
+          ],
+          "items": [
+            {
+              "title": "A stain near the chimney or an outside wall",
+              "text": "Usually flashing, the metal where the roof meets brick or siding, that was set wrong or has pulled loose. A bead of caulk covers it for a season; we reset or replace the flashing."
+            },
+            {
+              "title": "A drip below a bathroom or kitchen vent",
+              "text": "The rubber boot around the vent pipe dries out in the sun and cracks. We replace the boot and the shingles around it."
+            },
+            {
+              "title": "A leak where two roof slopes meet",
+              "text": "Valleys carry more water than any other part of the roof, and some were never sealed properly. We open the valley and seal it the way it should have been."
+            },
+            {
+              "title": "A wet spot around a skylight",
+              "text": "Skylights leak at their flashing more often than through the glass. We check the flashing first and fix what we find."
+            }
           ]
+        },
+        {
+          "type": "review",
+          "quote": "After leaving a voicemail that the wind had blown off some shingles, I was called back the same day! We set a date and time for the estimate, and again he was punctual, clean, and professional. The repair was made as agreed upon.",
+          "name": "Stephen P."
         },
         {
           "type": "prose",
@@ -492,20 +568,6 @@
           "body": [
             "When replacement is the honest answer, here's what [a full roof replacement](/roof-replacement-wichita-ks/) looks like."
           ]
-        },
-        {
-          "type": "prose",
-          "heading": "What a Repair Visit Looks Like",
-          "body": [
-            "A roof problem rarely waits for a good time, so it starts with a call back, not a week of phone tag. We set a time to come out and show up when we said we would.",
-            "We get on the roof, or put a drone over it, and look at more than the spot you pointed to. Older shingles go brittle, and the ones next to the damage often tell us how much life the roof has left.",
-            "Then we tell you what we found and what the repair will be before we do it. You get the repair and the reason, and if there's something bigger coming, you hear about it before it becomes an emergency."
-          ]
-        },
-        {
-          "type": "review",
-          "quote": "After leaving a voicemail that the wind had blown off some shingles, I was called back the same day! We set a date and time for the estimate, and again he was punctual, clean, and professional. The repair was made as agreed upon.",
-          "name": "Stephen P."
         },
         {
           "type": "prose",

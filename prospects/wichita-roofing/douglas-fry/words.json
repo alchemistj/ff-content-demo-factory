@@ -60,7 +60,7 @@
     {
       "name": "Tile Roofs",
       "route": null,
-      "blurb": "Concrete and clay tile installed and repaired, including whole roofs lifted and relaid."
+      "blurb": "Concrete and clay tile installed and repaired, with matching tile ordered and whole roofs lifted and relaid on new underlayment."
     },
     {
       "name": "DaVinci and Brava Synthetic Roofs",
@@ -70,12 +70,12 @@
     {
       "name": "Wood Shake and Wood Shingle Repair",
       "route": null,
-      "blurb": "Repair and installation on a roof type few roofing companies have the skill to work on."
+      "blurb": "Split, curled and missing shakes replaced and the flashing around them fixed, on a roof few roofers will touch."
     },
     {
       "name": "Standing Seam Metal Roofs",
       "route": null,
-      "blurb": "Central States horizon lock panels, with workmanship warranties from 5 up to 15 years."
+      "blurb": "Hidden-fastener Central States horizon lock panels, with workmanship warranties from 5 up to 15 years."
     },
     {
       "name": "New Construction Roofing",
@@ -90,7 +90,7 @@
     {
       "name": "Hail and Wind Insurance Claims",
       "route": null,
-      "blurb": "Jason works with your insurance company on hail and wind damage to your roof."
+      "blurb": "Jason works with your insurer from the first call to the last nail, and we price from the roof, not the paperwork."
     }
   ],
   "pages": [
@@ -101,9 +101,9 @@
       "keyword": "roofing company Wichita KS",
       "seo": null,
       "hero": {
-        "eyebrow": "Family-owned in Wichita since 1981",
+        "eyebrow": "Wichita, KS · Family-Owned Since 1981",
         "h1": "Roofing Company in Wichita, KS — Douglas Fry Roofing",
-        "sub": "We're Doug and Jason Fry. Tile, DaVinci, Brava, shake and metal roofs go wrong when the wrong person works on them, so when you call, you talk to an owner, and an owner gets on your roof. Call, or ask for a written estimate.",
+        "sub": "We're Doug and Jason Fry. When you call, one of us looks at your roof, not a commissioned salesperson, and you get the scope, the warranty and the price in writing before any work starts. Call us for a written estimate.",
         "primaryCta": {
           "label": "Call (316) 655-9777",
           "action": "call"
@@ -120,47 +120,85 @@
       },
       "sections": [
         {
-          "type": "split",
-          "heading": "You Talk to an Owner, Not a Salesperson",
-          "body": [
-            "Call a lot of roofing companies and the person who shows up is a salesperson. Some never climb a ladder; they price your roof from the ground or from the insurance paperwork.",
-            "We have no commissioned salespeople and no project managers. That matters on a roof, because a person paid by the sale has a reason to find you a new roof, and we'd rather tell you what yours actually needs.",
-            "Doug started this company, and his son Jason handles most of what you'll see: the call, the inspection, the quote and the insurance paperwork. You can always speak with an owner, and most of the time it is Jason who climbs up and looks at your roof himself."
-          ],
-          "image": {
-            "slot": "home-owners",
-            "alt": "Brick Wichita home with a cedar shake roof",
-            "brief": "brick two-story house with a weathered cedar shake roof on the right of the frame, front lawn and driveway leading off to the left, soft overcast sky behind the text side, no readable text, no people"
-          }
-        },
-        {
           "type": "review",
           "quote": "Of the three contractors I contacted Jason was the only one that actually got on the roof to look at the damage.",
           "name": "Erika B."
         },
         {
-          "type": "prose",
-          "heading": "Tile Roofs, Concrete and Clay",
+          "type": "split",
+          "heading": "We Put an Owner on Your Roof",
           "body": [
-            "Most tile roof leaks start with a brown stain on the ceiling and a roof that looks fine from the street. Every tile is still there and none are broken.",
-            "That's because tile sheds water but doesn't stop it. The layer under the tile, the underlayment, is what keeps your house dry, and it wears out long before the tile does.",
-            "Leaks also start where the roof changes direction: valleys, flashing around chimneys and skylights, and the spots where a cracked tile lets water in.",
-            "We find where the water is really getting in, and fix that. If the underlayment has failed, we lift the tile, put down new underlayment and lay your existing tile back. It's slow, hard work, and it is how a tile roof gets another few decades.",
-            "We've worked on everything from concrete barrel tile to Ludowici tile on a National Register home, and a working Wichita roofer sent the homeowner below to us for his tile repair."
-          ]
+            "Most roofing companies send a commissioned salesperson. Plenty never climb a ladder, and many price your roof straight off the insurance paperwork.",
+            "A person paid by the sale has a reason to find you a new roof. We have no commissioned salespeople and no project managers, so nobody here earns more if the answer is \"replace.\"",
+            "Doug started this company, and his son Jason handles most of what you'll see: the call, the inspection, the quote and the insurance. You can always speak with an owner, and most of the time it's Jason who climbs up and looks at your roof himself.",
+            "Owner on the roof. Scope, warranty and price in writing. That's the whole method."
+          ],
+          "image": {
+            "slot": "home-owners",
+            "alt": "Brick Wichita home with a cedar shake roof",
+            "brief": "brick two-story house with a weathered cedar shake roof on the right of the frame, front lawn and driveway leading off to the left, soft overcast sky behind the text side, no readable text, no people"
+          },
+          "list": [
+            "You can always speak with an owner: Doug or Jason",
+            "No commissioned salespeople or project managers",
+            "A written estimate with the scope of work, warranty and price",
+            "Workmanship warranties from 5 to 15 years",
+            "Installing DaVinci roofs in Wichita since 2002",
+            "Family-owned and operated"
+          ],
+          "listStyle": "checks"
+        },
+        {
+          "type": "prose",
+          "heading": "What We Find When We Get Up There",
+          "body": [
+            "Most roof calls start with something you see on the ceiling or in the yard. Here is what usually causes it, and what we do about it."
+          ],
+          "items": [
+            {
+              "title": "A brown stain on the ceiling under a tile roof that looks fine",
+              "text": "Tile sheds water, but the underlayment beneath it is what keeps the house dry, and it wears out long before the tile does. If the underlayment has failed, we lift the tile, put down new underlayment and lay your same tile back."
+            },
+            {
+              "title": "Cracked or slipped tiles after hail or wind",
+              "text": "A broken tile lets water reach the underlayment, and a near-match replacement looks like a patch and may not seal like the original. We order tile that matches, and Jason takes it up with your insurer when a storm did the damage."
+            },
+            {
+              "title": "A leak that came back after someone else fixed it",
+              "text": "The last repair probably patched the spot above the stain, while the water got in several feet uphill and ran along the deck. We check the whole roof, find where the water really enters and fix that."
+            },
+            {
+              "title": "Water around a chimney, skylight or sky tube",
+              "text": "Flashing is thin metal shaped to that exact spot, and it loosens with age or gets smeared with caulk. We rework the flashing instead of sealing over it."
+            },
+            {
+              "title": "Shingles in the yard after a wind storm",
+              "text": "Wind gets under shingles whose sealant strip never bonded or has aged out, and once a tab lifts, the next gust tears it off. We replace what's missing and check the rest for creased tabs and hail bruising."
+            },
+            {
+              "title": "Cedar shakes split, curled or missing",
+              "text": "Wood shake dries, splits and rots, and a loose shake lets water straight through. Very few roofers have the skill to repair wood shake, and we do."
+            }
+          ],
+          "tail": [
+            "A working Wichita roofer sent the homeowner below to us for his tile repair."
+          ],
+          "link": {
+            "label": "See roof repair →",
+            "route": "/roof-repair-wichita-ks/"
+          }
         },
         {
           "type": "review",
-          "quote": "I have a good friend that is a professional roofer (local) and he told me to call Fry Roofing for my tile-roof repair. Jason Fry helped me and really knows his stuff. … We purchased a pre-owned home and the previous roof \"repair\" was performed improperly. Jason recognized the botched repair and corrected it before it had a chance to damage the inside of the house.",
+          "quote": "I have a good friend that is a professional roofer (local) and he told me to call Fry Roofing for my tile-roof repair.  Jason Fry helped me and really knows his stuff. … We purchased a pre-owned home and the previous roof \"repair\" was performed improperly.  Jason recognized the botched repair and corrected it before it had a chance to damage the inside of the house.  It pays to have it done-right the first time.",
           "name": "Matt M."
         },
         {
           "type": "split",
-          "heading": "Why Matching Tile Matters",
+          "heading": "Tile Is Our Specialty, and Matching It Matters",
           "body": [
-            "A storm breaks part of your tile roof. The easy fix is to replace the broken tiles with whatever is close.",
-            "But tile comes in different shapes, profiles and colors, and a tile that has weathered for twenty years never matches a new one. A near match looks like a patch, and if the shape is a little off, it doesn't sit or seal like the original.",
-            "So we order matching tile, and Jason takes it up with your insurer when a storm did the damage."
+            "Concrete and clay tile come in different shapes, profiles and colors, and a tile that has weathered for twenty years never matches a new one. A near match looks like a patch, and if the profile is off, it doesn't seal like the original.",
+            "So we order matching tile. We've worked on everything from concrete barrel tile to Ludowici tile on a National Register home."
           ],
           "image": {
             "slot": "home-tile",
@@ -170,7 +208,7 @@
         },
         {
           "type": "review",
-          "quote": "Jason successfully negotiated our insurance claim to cover the damage. He ordered matching clay tiles and installed the roof with quality materials.",
+          "quote": "Jason Fry and his crew lifted and relaid our clay tile roof damaged during an 80 mph wind and hail storm. Jason successfully negotiated our insurance claim to cover the damage. He ordered matching clay tiles and installed the roof with quality materials.",
           "name": "Connie P."
         },
         {
@@ -178,8 +216,7 @@
           "heading": "DaVinci, Brava and Wood Shake",
           "body": [
             "Some roofs are cedar shake that has split, curled or rotted, and some homeowners just want the look of slate or shake without the upkeep.",
-            "DaVinci and Brava are made to look like the real thing, in shake, slate and tile profiles. We were one of the first roofers in the Wichita area to install DaVinci, back in 2002, and we install Brava synthetic tile and shake too.",
-            "We also repair wood shake and wood shingle roofs, which very few roofers have the skill to do."
+            "DaVinci and Brava are made to look like the real thing, in shake, slate and tile profiles. We were one of the first roofers in the Wichita area to install DaVinci, back in 2002, and we install Brava synthetic tile and shake too."
           ]
         },
         {
@@ -191,16 +228,21 @@
           "type": "prose",
           "heading": "Shingle and Standing Seam Metal Roofs",
           "body": [
-            "For asphalt, we install premium shingles like Atlas StormMaster Shake and CertainTeed Presidential Shake, and we recommend Atlas. In hail country, ask about impact ratings before you choose.",
-            "Standing seam metal hides its fasteners under the panel seams, so there are no exposed screws to back out and leak. We typically use the horizon lock panel from Central States Manufacturing, and we've used their metal for more than ten years."
+            "For asphalt, we install premium shingles like Atlas StormMaster Shake and CertainTeed Presidential Shake, and we recommend Atlas. In hail country, ask about the impact rating on the exact shingle.",
+            "Standing seam metal hides its fasteners under the seams, so there are no exposed screws to back out and leak. We typically use the Central States horizon lock panel."
           ]
+        },
+        {
+          "type": "services",
+          "heading": "Roofing Services in Wichita",
+          "intro": "Repairs, whole roofs and the specialty materials that take experience: tile, shake, DaVinci, Brava and standing seam metal."
         },
         {
           "type": "prose",
           "heading": "Hail, Wind and Your Insurance",
           "body": [
             "After a hailstorm, two things get priced: the paperwork and the roof. They aren't always the same number.",
-            "Jason works with your insurance company from the first call to the last nail. We write our estimate from what's on your roof, not from what the adjuster's sheet says."
+            "Jason works with your insurance company from the first call to the last nail. We write our estimate from what's on your roof, not from the adjuster's sheet, and if the paperwork covers less than the roof needs, we'll tell you."
           ]
         },
         {
@@ -208,35 +250,14 @@
           "heading": "A Written Estimate With Scope, Warranty and Price",
           "body": [
             "We always give a written estimate on repair and re-roof projects. It lists the scope of work, the warranty and the price, so you can compare it line by line with any other bid.",
-            "We offer workmanship warranties of 5, 10 and 15 years, plus lifetime manufacturer warranties on the products that carry them."
+            "Underlayment, flashing, ridge and hip, decking and cleanup are where two bids for \"a new roof\" usually differ. Check that each one is written down.",
+            "We offer workmanship warranties from 5 to 15 years, plus lifetime manufacturer warranties on the products that carry them."
           ]
         },
         {
           "type": "review",
-          "quote": "Their price was middle of the road but they included everything that was needed and fully explained the bid without overselling.",
+          "quote": "He had his crew out the first solid day without rain and they had it done in a day. The roof looks great and the next day when it rained again we had no leaks. … Their price was middle of the road but they included everything that was needed and fully explained the bid without overselling.",
           "name": "Rachel Y."
-        },
-        {
-          "type": "prose",
-          "heading": "Roof Replacement",
-          "body": [
-            "Replacing a whole roof starts with choosing the material. Tile, DaVinci, Brava, premium shingle and standing seam metal each get their own explanation on our roof replacement page."
-          ],
-          "link": {
-            "label": "See roof replacement →",
-            "route": "/roof-replacement-wichita-ks/"
-          }
-        },
-        {
-          "type": "prose",
-          "heading": "Roof Repair",
-          "body": [
-            "Roof leaks, valley leaks, skylight and chimney flashing, cracked tile, shake repair and metal roof leaks all go on our roof repair page. We also do new construction roofing and commercial roofing."
-          ],
-          "link": {
-            "label": "See roof repair →",
-            "route": "/roof-repair-wichita-ks/"
-          }
         },
         {
           "type": "steps",
@@ -265,7 +286,7 @@
           "heading": "Wichita and South-Central Kansas",
           "body": [
             "We work in Wichita, Andover, Bel Aire, Maize, Haysville, Augusta and Wellington, and as far out as Hays and Great Bend.",
-            "Our office is at 1835 N. Ohio in Wichita, a building we own."
+            "Our office is at 1835 N. Ohio in Wichita."
           ]
         },
         {
@@ -273,31 +294,35 @@
           "heading": "Questions Before You Call",
           "items": [
             {
-              "q": "How long does a tile roof last?",
-              "a": "The tile itself lasts decades. The underlayment beneath it usually gives out first, and that is why most tile roof repairs involve lifting tile and putting it back."
-            },
-            {
-              "q": "Can my tile roof be repaired, or do I need a new one?",
-              "a": "If the tile is sound and the leak is at a valley, flashing or underlayment, it can usually be repaired. If hail or wind has broken tile across the roof, a replacement may make more sense."
+              "q": "Can my roof be repaired, or do I need a new one?",
+              "a": "It depends on how far the damage spreads. A leak at one valley, one flashing or one patch of underlayment is a repair. Broken tile or bruised shingles across most of the roof, or leaks showing up in more than one room, point to replacement. From the ground, look for granules piling up at the downspouts and cracked tile in more than one area."
             },
             {
               "q": "Do you work with insurance companies?",
-              "a": "Yes. Jason works with your insurer from the start of the claim to the finished roof."
+              "a": "Yes. Jason works with your insurer from the first call to the finished roof. We price from what's on your roof, not just from the paperwork, and we'll tell you if the claim covers less than the roof needs."
             },
             {
-              "q": "What does an estimate include?",
-              "a": "We always give a written estimate on repairs and re-roofs, with the scope of work, warranty and price."
+              "q": "What does the estimate include?",
+              "a": "Every repair and re-roof estimate is written and lists the scope of work, the warranty and the price. Set it beside any other bid and check underlayment, flashing, ridge and hip, decking and cleanup item by item."
+            },
+            {
+              "q": "What warranty do I get?",
+              "a": "Workmanship warranties run from 5 to 15 years, depending on the roof and the job, and products that carry lifetime manufacturer warranties come with them. The term for your job is written on your estimate."
+            },
+            {
+              "q": "Do you work on flat roofs?",
+              "a": "Flat roofs aren't our specialty, and we'll say so up front. Tile, shake, DaVinci, Brava, shingle and standing seam metal are where we're strongest."
             },
             {
               "q": "Who will I talk to?",
-              "a": "Doug or Jason. We have no commissioned salespeople."
+              "a": "Doug or Jason. We have no commissioned salespeople, and our crews are led by our two lead foremen."
             }
           ]
         },
         {
           "type": "callBand",
           "heading": "Call Doug and Jason",
-          "text": "Call and tell us what your roof is doing. One of us will come out, look, and give you a written estimate. (316) 655-9777"
+          "text": "Call and tell us what your roof is doing. Doug or Jason will come out, get on the roof and give you a written estimate with the scope, warranty and price. (316) 655-9777"
         }
       ]
     },
@@ -347,6 +372,14 @@
         },
         {
           "type": "prose",
+          "heading": "What Happens When You Call",
+          "body": [
+            "You talk to Doug or Jason, not a salesperson. One of us comes out, gets on the roof and looks at the whole thing, including whether it needs replacing at all.",
+            "Then you get a written estimate with the scope of work, the warranty and the price. If a storm did the damage, Jason works with your insurer from the first call."
+          ]
+        },
+        {
+          "type": "prose",
           "body": [
             "On a tile roof, the answer often sits under the tile. If the tile is sound but the underlayment beneath it has worn out, we lift the tile, put down new underlayment and lay your tile back.",
             "That replaces the part that failed and keeps a roof that would cost far more to start over."
@@ -357,13 +390,29 @@
           "heading": "Start With the Material",
           "body": [
             "Most roofers quote one product, the one they sell all day. We install five kinds of roof, so we can tell you which one fits your house instead of which one fits our truck.",
-            "Here is how they differ, in plain terms.",
-            "**Concrete and clay tile.** Heavy, fireproof and long-lived, and the look that suits a lot of older Wichita homes. The tile outlasts everything under it, so a good tile roof is as much about the underlayment as the tile.",
-            "**DaVinci.** Molded composite that looks like slate or cedar shake, without the upkeep. We were one of the first roofers in the Wichita area to install it, as early as 2002, so we've seen how it holds up through a lot of Kansas weather.",
-            "**Brava.** Synthetic tile, shake and slate that reads as the real material from the street. It's a good answer when you love the look of cedar shake but don't want to re-treat and replace split shakes.",
-            "**Premium asphalt.** Atlas StormMaster Shake and CertainTeed Presidential Shake are thick, dimensional shingles cut to throw the shadow lines of shake. We recommend Atlas.",
-            "Some premium shingle lines carry a Class 4 impact rating and a manufacturer's wind warranty up to 130 mph. Those ratings come from the shingle maker, so in hail country, check them on the exact product you're pricing.",
-            "**Standing seam metal.** The fasteners hide under the raised seams, so there are no exposed screws to work loose and leak. We typically use the horizon lock panel from Central States Manufacturing."
+            "Here is how they differ, in plain terms."
+          ],
+          "items": [
+            {
+              "title": "Concrete and clay tile",
+              "text": "Heavy, fireproof and long-lived, and the look that suits a lot of older Wichita homes. The tile outlasts everything under it, so a good tile roof is as much about the underlayment as the tile."
+            },
+            {
+              "title": "DaVinci",
+              "text": "Molded composite that looks like slate or cedar shake, without the upkeep. We were one of the first roofers in the Wichita area to install it, as early as 2002, so we've seen how it holds up through a lot of Kansas weather."
+            },
+            {
+              "title": "Brava",
+              "text": "Synthetic tile, shake and slate that reads as the real material from the street. It's a good answer when you love the look of cedar shake but don't want to re-treat and replace split shakes."
+            },
+            {
+              "title": "Premium asphalt",
+              "text": "Atlas StormMaster Shake and CertainTeed Presidential Shake are thick, dimensional shingles cut to throw the shadow lines of shake, and we recommend Atlas. Some premium lines carry a Class 4 impact rating and a manufacturer's wind warranty up to 130 mph, so in hail country, check those on the exact product you're pricing."
+            },
+            {
+              "title": "Standing seam metal",
+              "text": "The fasteners hide under the raised seams, so there are no exposed screws to work loose and leak. We typically use the horizon lock panel from Central States Manufacturing."
+            }
           ]
         },
         {
@@ -401,7 +450,7 @@
         },
         {
           "type": "review",
-          "quote": "Jason answered all my concerns, the 8/12 pitch wasn't an issue, he made sure the shingles were installed when it was just the right temperature to get maximum adhesion. The Atlas shingles look great and the high profile ridge and hip shingles really set the roof off.",
+          "quote": "Jason answered all my concerns, the 8/12 pitch wasn’t an issue, he made sure the shingles were installed when it was just the right temperature to get maximum adhesion. The Atlas shingles look great and the high profile ridge and hip shingles really set the roof off.",
           "name": "Mike D."
         },
         {
@@ -447,7 +496,7 @@
         {
           "type": "callBand",
           "heading": "Ready for a New Roof",
-          "text": "Tell us what your roof looks like and what you've been seeing inside. One of us will come out, get on the roof and give you a written estimate. Call (316) 655-9777. Not sure it needs replacing? Start with our [roof repair](/roof-repair-wichita-ks/) page."
+          "text": "Tell us what your roof looks like and what you've been seeing inside. One of us will come out, get on the roof and give you a written estimate. Call (316) 655-9777. Not sure it needs replacing? It may be a [roof repair](/roof-repair-wichita-ks/)."
         }
       ]
     },
@@ -494,6 +543,14 @@
           "type": "review",
           "quote": "I called them to look at a couple of areas of our tile roof that had problems. They promptly came out, examined my whole roof and found another area with a soon to be serious problem. … Jason has a knowledgeable eye for roofing issues and he prevented serious leaks in our eaves area.",
           "name": "Ann P."
+        },
+        {
+          "type": "prose",
+          "heading": "What Happens When You Call About a Leak",
+          "body": [
+            "Tell Doug or Jason what you're seeing and where. One of us gets on the roof, traces the water to where it really gets in and tells you what we found.",
+            "Before we fix anything, you get a written estimate with the scope of work, the warranty and the price."
+          ]
         },
         {
           "type": "prose",
@@ -672,7 +729,7 @@
           "heading": "Where We Work",
           "body": [
             "We work in Wichita, Andover, Bel Aire, Maize, Haysville, Augusta and Wellington, and as far out as Hays and Great Bend.",
-            "Not sure which page fits your problem? A leak, a cracked tile or bad flashing is a [roof repair](/roof-repair-wichita-ks/). A whole new roof is [roof replacement](/roof-replacement-wichita-ks/)."
+            "Not sure what you need? A leak, a cracked tile or bad flashing is a [roof repair](/roof-repair-wichita-ks/). A whole new roof is [roof replacement](/roof-replacement-wichita-ks/)."
           ]
         },
         {
