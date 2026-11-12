@@ -2,7 +2,7 @@
 
 Hey Air Capital team,
 
-My daughter and I build websites for service businesses. Your reviews say you showed up fast on the hottest days and explained what was wrong before fixing it. That's exactly what our method is built around, so we made you a website mockup:
+My daughter and I build websites for service businesses. Your reviews read like rescue stories: 104 degrees, 106 degrees, and Air Capital at the door within an hour, explaining what was wrong and charging a fair price. For a company that's new to market, that's the reputation everybody else wants. That's exactly what our method is built around, so we made you a website mockup:
 
 https://aircapital.websitepreview.fluidframemarketing.com/
 

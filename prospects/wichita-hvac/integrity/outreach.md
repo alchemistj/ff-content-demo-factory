@@ -2,7 +2,7 @@
 
 Hey Sam and the Integrity team,
 
-My daughter and I build websites for service businesses. Reading your reviews, people keep saying you live up to your name, you handle after-hours calls yourself, the price stays fair after hours, and the crew leaves the place clean. That's exactly what our method is built around, so we made you a website mockup:
+My daughter and I build websites for service businesses. Your reviews say you live up to the name: people get Sam himself on a Saturday or Sunday, someone is at the door within an hour or two even on a holiday, the price stays fair after hours, and the crew leaves the place clean. That's exactly what our method is built around, so we made you a website mockup:
 
 https://integrity.websitepreview.fluidframemarketing.com/
 

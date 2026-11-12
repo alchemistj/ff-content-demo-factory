@@ -2,7 +2,7 @@
 
 Hey River City team,
 
-My daughter and I build websites for service businesses. Your reviews say Anthony found the real leak, stayed easy to reach by call and text, and came back after the job. That's exactly what our method is built around, so we made you a website mockup:
+My daughter and I build websites for service businesses. Your reviews say Anthony crawled into the attic to find the real leak, answers calls and texts fast, and came back after the crew left to make sure the roof was right. That's exactly what our method is built around, so we made you a website mockup:
 
 https://rivercity.websitepreview.fluidframemarketing.com/
 
@@ -21,7 +21,7 @@ Fluid Frame Marketing
 
 Hey River City team,
 
-My daughter and I build websites for service businesses. Your reviews say Anthony found the real problem, answered every call and text, and came back after the job. So we made you a website mockup:
+My daughter and I build websites for service businesses. Your reviews say Anthony found the real leak, answers calls and texts fast, and came back after the job. So we made you a website mockup:
 
 https://rivercity.websitepreview.fluidframemarketing.com/
 

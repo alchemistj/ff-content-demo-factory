@@ -614,7 +614,7 @@
     "whyHeading": "Why we built this site",
     "why": [
       "Your heating and AC pages promise “24/7 Emergency Repair Service.” Your contact page says Monday to Friday, 8 to 5, weekends “at additional cost.” Someone with no heat on a Saturday gets two answers, and that is the call you most need to win.",
-      "Your customers already describe the weekend calls you answer. Dayna B. says you were there within an hour on a Saturday morning, and Madison S. says you shoot straight with people. Today those words sit on Google, not on your site.",
+      "Your customers already describe the weekend calls you answer. Dayna B.: “Our AC went out called and Sam here in hour on a Saturday morning.” Madison S.: “They offer competitive pricing and shoot you straight.” Today those words sit on Google, not on your site.",
       "So the demo tells one story everywhere: your hours, and what to do when the system quits outside them. It opens with HVAC company in Wichita, KS, and gives AC repair and furnace repair a page each."
     ],
     "cardsHeading": "Be the HVAC Company People Find on Google",
@@ -700,6 +700,15 @@
     "closing": {
       "heading": "Want a website like this for your business?",
       "text": "Your customers already describe the company you are. Book a strategy call with Fluid Frame and we’ll walk you through this demo and what a full build adds."
+    },
+    "confirm": {
+      "heading": "What we'd confirm with you",
+      "intro": "Google and AI tools see different answers about your business in different places. We wrote this demo from your reviews and your site. On a short onboarding call, we'd confirm these so everything says the same thing.",
+      "items": [
+        "Your site says you're based in Kechi, while your Google listing puts you at 801 S Fabrique Dr in Wichita, so which address should every listing use?",
+        "Your homepage says over 15 years and over two decades, and your AC page says over 30 years, so which number should every listing use?",
+        "Your heating and AC pages promise 24/7 emergency repair, while your contact page says Monday to Friday, 8 to 5, with weekends by quote, so which hours should Google show?"
+      ]
     }
   }
 }

@@ -723,9 +723,9 @@
   "strategy": {
     "whyHeading": "Why we built this site",
     "why": [
-      "Your Google reviews already make your case, naming Juan, Brady and Arturo again and again for meeting adjusters and staying with the claim.",
+      "Your Google reviews already make your case. They name Juan, Brady and Arturo again and again for meeting the adjuster, staying in the long fight when insurance pushes back, and telling people straight when a roof doesn't need replacing.",
       "Your website hides all of it. Every browser tab reads \"Your Site Title\", no headline says roofing or Wichita, and the Roofing button on your homepage opens a hotel page with rooms at $100 to $400 a night.",
-      "So we built this site around the work your reviews describe."
+      "So we built this site around the work your reviews describe, with your team front and center."
     ],
     "cardsHeading": "Be the Roofing Company People Find on Google",
     "cardsIntro": "Each card is one page: what your site does today, and what we changed.",
@@ -828,6 +828,15 @@
     "closing": {
       "heading": "Want a website like this for your business?",
       "text": "Your customers already tell people to call you first. Book a strategy call with Fluid Frame and we'll walk you through this demo and plan your new site."
+    },
+    "confirm": {
+      "heading": "What we'd confirm with you",
+      "intro": "Google and AI tools see different answers about your business in different places. We wrote this demo from your reviews and your site. On a short onboarding call, we'd confirm these so everything says the same thing.",
+      "items": [
+        "Your site and Google show 3500 N Rock Rd, Bldg. 1800, while a roofer directory still lists 421 E 3rd St N, so can we confirm Rock Road and clear out the old one?",
+        "Your site shows no hours and a roofer directory lists Monday to Friday, 8 to 5, so what hours should Google and every listing show?",
+        "A company called ICT Home Pros also comes up in Wichita roofing searches, so is it connected to you, or should we make sure Google keeps the two apart?"
+      ]
     }
   },
   "onboardingQuestions": [

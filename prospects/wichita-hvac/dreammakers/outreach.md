@@ -2,7 +2,7 @@
 
 Hey Nate and the Dream Makers team,
 
-My daughter and I build websites for service businesses. Reading your reviews, people keep saying you answer when they text or call, and that after a few visits you know them by first name. That's exactly what our method is built around, so we made you a website mockup:
+My daughter and I build websites for service businesses. Your reviews say Nate answers every text and call, shows up within hours when everyone else is booked for weeks, and has come out after 9pm in July and in a February snowstorm. That's exactly what our method is built around, so we made you a website mockup:
 
 https://dreammakers.websitepreview.fluidframemarketing.com/
 

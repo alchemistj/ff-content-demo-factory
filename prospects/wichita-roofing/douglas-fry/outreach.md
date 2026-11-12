@@ -2,7 +2,7 @@
 
 Hey Doug and Jason,
 
-My daughter and I build websites for service businesses. Reading your reviews, people keep saying an owner comes out and looks at the roof himself, and that you two know tile and DaVinci, and one local roofer even sends people to you for tile repair. That's exactly what our method is built around, so we made you a website mockup:
+My daughter and I build websites for service businesses. Reading your reviews, people keep saying an owner gets up on the roof himself, you fix roofs other roofers couldn't, and if you have clay or concrete tile, Fry is who you call. One local roofer even sends people to you for tile repair. That's exactly what our method is built around, so we made you a website mockup:
 
 https://douglasfry.websitepreview.fluidframemarketing.com/
 

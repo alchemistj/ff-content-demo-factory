@@ -676,7 +676,7 @@
         "title": "Homepage",
         "why": "The page Google reads first to learn what you do.",
         "problems": [
-          "The top of your homepage has no headline, so Google can't tell you're an HVAC company in Wichita.",
+          "The top of your homepage has no headline, so Google can't tell you're an HVAC company in Wichita and searchers pass you by.",
           "The page is about 160 words with no customer words, so a new visitor has no reason to choose you."
         ],
         "fixes": [
@@ -758,6 +758,15 @@
     "closing": {
       "heading": "Want a website like this for your business?",
       "text": "Book a strategy call with Fluid Frame and we'll walk you through this demo and what a full build adds."
+    },
+    "confirm": {
+      "heading": "What we'd confirm with you",
+      "intro": "Google and AI tools see different answers about your business in different places. We wrote this demo from your reviews and your site. On a short onboarding call, we'd confirm these so everything says the same thing.",
+      "items": [
+        "Your site never gives a founding year, the copyright line says 2016, and customers mention 35 years with you, so what year and family story should every listing use?",
+        "Your site footer lists weekday hours plus a 5 to 10 pm emergency window and no weekend hours; is that the schedule Google should show everywhere?",
+        "Your site names only Wichita, while customers write in from places like Belle Plaine, so which towns should Google list as your service area?"
+      ]
     }
   }
 }

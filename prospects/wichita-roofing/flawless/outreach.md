@@ -2,7 +2,7 @@
 
 Hey Ravi and the Flawless team,
 
-My daughter and I build websites for service businesses. Reading your reviews, people keep saying you inspected the roof, worked the insurance claim with them, and had the new roof on in about a day. That's exactly what our method is built around, so we made you a website mockup:
+My daughter and I build websites for service businesses. Reading your reviews, people keep saying you came out the same day, worked the insurance claim right alongside them, met the adjuster, and had the new roof on in a day. That's exactly what our method is built around, so we made you a website mockup:
 
 https://flawless.websitepreview.fluidframemarketing.com/
 

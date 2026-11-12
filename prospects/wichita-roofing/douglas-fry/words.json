@@ -751,8 +751,8 @@
   "strategy": {
     "whyHeading": "Why we built this site",
     "why": [
-      "Your site says you've been roofing Wichita since 1981, and your customers say it best: \"Very honest and friendly service.\" \"Excellent on time service, informative, fair price, and knowledgeable.\" A local roofer even sends people to you for tile repair.",
-      "Your website shows none of it. On a phone it runs off the right edge of the screen, so the call buttons and most of the menu can't be seen.",
+      "\"Roofing Since 1981\" is on your banner, and your customers say the rest: \"Very honest and friendly service.\" \"Excellent on time service, informative, fair price, and knowledgeable.\" They say you fixed roofs other roofers couldn't, and a local roofer even sends people to you for tile repair.",
+      "Your website hides all of it. On a phone it runs off the right edge of the screen, so the call buttons and most of the menu can't be seen.",
       "So we built a site around what your customers already say, with tile, DaVinci and an owner on the phone at the front."
     ],
     "cardsHeading": "Be the Roofing Company People Find on Google",
@@ -847,6 +847,15 @@
     "closing": {
       "heading": "Want a website like this for your business?",
       "text": "Your customers already tell people you are honest and fair. Book a strategy call with Fluid Frame and we'll walk you through this demo and plan your new site."
+    },
+    "confirm": {
+      "heading": "What we'd confirm with you",
+      "intro": "Google and AI tools see different answers about your business in different places. We wrote this demo from your reviews and your site. On a short onboarding call, we'd confirm these so everything says the same thing.",
+      "items": [
+        "Google and your call buttons use (316) 655-9777, while your header also shows (316) 264-1511 and a Claims Pages listing gives only that one, so which number should every listing lead with?",
+        "Your banner says Roofing Since 1981, your About page says 30-plus years and your homepage says over 40, so which line should every listing use?",
+        "Your site shows no hours, while MapQuest lists Monday to Saturday, 7 am to 6 pm, so are those the hours Google and every listing should show?"
+      ]
     }
   },
   "onboardingQuestions": [

@@ -626,7 +626,7 @@
   "strategy": {
     "whyHeading": "Why we built this site",
     "why": [
-      "The top of your homepage says “Expert Heating & Air Services.” It never says HVAC company, and the town only appears in small print below. Google can’t match you to someone searching for an HVAC company in Wichita.",
+      "The top of your homepage says “Expert Heating & Air Services.” It never says HVAC company, and the town only appears in small print below. Google can’t match you to someone searching for an HVAC company in Wichita, and that line costs you the most calls.",
       "Your customers already describe the company you are. Carlos F.: “showed up SAME DAY” and “didn’t try to upsell me on a whole new unit like some places do.” Mai D.: “They’re new to market but years of experience between the owners.” Today those words sit on Google, not on your site.",
       "So the demo opens with HVAC company in Wichita, KS, gives AC repair and AC replacement a page each, and sets your customers’ words beside the work they prove."
     ],
@@ -714,6 +714,15 @@
     "closing": {
       "heading": "Want a website like this for your business?",
       "text": "Your customers already describe the company you are. Book a strategy call with Fluid Frame and we’ll walk you through this demo and what a full build adds."
+    },
+    "confirm": {
+      "heading": "What we'd confirm with you",
+      "intro": "Google and AI tools see different answers about your business in different places. We wrote this demo from your reviews and your site. On a short onboarding call, we'd confirm these so everything says the same thing.",
+      "items": [
+        "Your About page talks about “our owners” but never names them, so whose names should Google and AI tools connect to Air Capital?",
+        "Your contact page lists Monday to Sunday, 8 to 5, with emergency calls available, so is Sunday right, and how should after-hours callers reach you?",
+        "Your About page names nine towns from Derby to Bel Aire, while your Google listing shows no address, so which towns should Google list as your service area?"
+      ]
     }
   }
 }

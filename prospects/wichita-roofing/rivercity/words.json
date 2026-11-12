@@ -678,9 +678,9 @@
   "strategy": {
     "whyHeading": "Why we built this site",
     "why": [
-      "Your customers make your case. Your written Google reviews keep naming Anthony: he climbed into an attic to find a leaking chimney chase, dealt with an insurance agent, and came back after the crew left to check on a new roof.",
+      "Your customers make your case, and they keep naming Anthony. Brant called a slew of contractors, and Anthony was the one who crawled into the attic and found the leaking chimney chase. Theresa says he's quick on calls and texts. Kamden says he handled the insurance agent and came back after the crew left to check on the new roof.",
       "Your website shows none of it. Its tap-to-call links dial 123-456-7890, and no page has a headline that says you're a roofing company in Wichita.",
-      "So we built this site around their words."
+      "So we built a site that says roofing company in Wichita at the top and lets your customers do the talking."
     ],
     "cardsHeading": "Be the Roofing Company People Find on Google",
     "cardsIntro": "Each card is one page: what your site does today, and what we changed.",
@@ -778,6 +778,15 @@
     "closing": {
       "heading": "Want a website like this for your business?",
       "text": "Book a strategy call with Fluid Frame, and we'll walk you through this demo and plan your new site."
+    },
+    "confirm": {
+      "heading": "What we'd confirm with you",
+      "intro": "Google and AI tools see different answers about your business in different places. We wrote this demo from your reviews and your site. On a short onboarding call, we'd confirm these so everything says the same thing.",
+      "items": [
+        "Your site and Google list (316) 295-2159, while your BuildZoom and Houzz listings show (316) 312-8657, so which number should every listing use?",
+        "Your About page says since 2011, Angi says 13 years and a Houzz profile for Honey Do Homes says 2003, so which start year should every listing use?",
+        "Your site footer says River City Roofing, LLC, while your logo and BuildZoom say Honey Do Homes, so which name should Google and AI tools lead with?"
+      ]
     }
   },
   "onboardingQuestions": [

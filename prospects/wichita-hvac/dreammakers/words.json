@@ -639,7 +639,7 @@
   "strategy": {
     "whyHeading": "Why we built this site",
     "why": [
-      "Your customers text you, and you answer. Over and over, your reviews say they got Nate himself, and one says you're now on a first-name basis.",
+      "Your customers text you, and you answer. Over and over, your reviews say they got Nate himself: after 9pm in July, in a February snowstorm, and so often that one customer says you're now on a first-name basis.",
       "Your website works against that. On a computer, the phone number at the top of every page shows your number but dials 817-333-7310, a Fort Worth number. Your service cards send people to Fort Worth pages, two of them under another company's name. And on a phone, nothing shows for about 14 seconds.",
       "So we built a fast demo that puts your name, your real number and your customers' words on the first screen."
     ],
@@ -724,6 +724,15 @@
     "closing": {
       "heading": "Want a website like this for your business?",
       "text": "Your customers already say they get Nate on the phone. Book a strategy call with Fluid Frame and we'll walk you through this demo and what a full build adds."
+    },
+    "confirm": {
+      "heading": "What we'd confirm with you",
+      "intro": "Google and AI tools see different answers about your business in different places. We wrote this demo from your reviews and your site. On a short onboarding call, we'd confirm these so everything says the same thing.",
+      "items": [
+        "The number at the top of your site shows (316) 871-5085 but dials 817-333-7310, so is 871-5085 the one number every listing should use?",
+        "BBB has your Dream Makers profile and a second Dream Makers profile at the same S Broadway building with a different owner, phone and start date, so which details are yours?",
+        "Your BBB profile lists six counties from Butler to Sumner, while your site's service cards point to Fort Worth pages, so which Kansas towns should Google list as your service area?"
+      ]
     }
   }
 }
