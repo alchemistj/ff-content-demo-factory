@@ -176,7 +176,7 @@
           ],
           "items": [
             {
-              "title": "Shingles in the yard after a wind storm",
+              "title": "Shingles in the yard after high wind",
               "text": "Wind got under shingles whose seal strip had aged and tore them loose, and the ones beside them are easier to lift now. We replace what blew off, check the shingles around it and make sure the new ones seal down."
             },
             {
@@ -228,7 +228,7 @@
           "type": "prose",
           "heading": "Who You'll Deal With",
           "body": [
-            "I started this company, and I'm on your roof. Brady is my right-hand man, and he handles insurance claims and meets your adjuster. Arturo is our Project Manager and coordinates the work.",
+            "I started this company, and I'm on your roof. Brady handles insurance claims and meets your adjuster. Arturo is our Project Manager and coordinates the work.",
             "We're a local company serving Wichita homeowners. Call the main line at (316) 796-6722, or reach Arturo directly at (316) 807-8848."
           ]
         },
@@ -489,7 +489,7 @@
           "body": [
             "You come home after a windy night and there are shingles in the yard, or you spot a bare patch from the street. A missing shingle exposes the layer underneath, and that layer was never meant to face the sun and rain.",
             "Wind gets under the edge of a shingle whose seal has aged, and lifts it. Once one goes, its neighbors are easier to lift.",
-            "We replace what blew off, check the shingles around it and make sure the new ones seal down. That's usually a small job, and it should be done before the next storm."
+            "We replace what blew off, check the shingles around it and make sure the new ones seal down. That's usually a small job, and it's best done soon, while the damage is still small."
           ],
           "image": {
             "slot": "repair-wind",
