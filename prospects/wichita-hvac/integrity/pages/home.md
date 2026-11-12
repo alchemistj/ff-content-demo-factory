@@ -1,33 +1,42 @@
-**Eyebrow:** Wichita, KS · Family-Owned · All Major Brands
+**Eyebrow:** Wichita, KS · Family-Owned · Weekend and Holiday Calls
 
 # HVAC Company in Wichita, KS — Integrity Heating and Cooling
 
-I'm Sam. Integrity repairs and replaces furnaces and air conditioners for homes, rentals and businesses across Greater Wichita, and I take the calls myself, weekends and holidays included. Call for a free phone consultation.
+I'm Sam. Call me on a weekend or a holiday and I'll tell you the after-hours price on the phone before anyone drives out. You decide first, then we send a tech. You're not stuck in a hot house wondering what this will cost. Call (316) 932-9559.
 
 **Buttons:** Call (316) 932-9559 | Request Service
 
 > "I was referred to Integrity by another local investor. I had an issue with my unit in a short term rental after 8pm, and Sam (the owner) personally took care of it himself. He was very efficient, great with communication, and fair in his pricing after hours."
 > — Hunter M.
 
-## The Price Comes Before the Work
+## When It Quits on a Saturday Night
 
-Most heating and cooling calls go the same way. Someone comes out, works on it, and you find out what it cost when the bill shows up. You can't see inside a furnace or a condenser, so you take their word for it.
+It's 9:40 on a July night. The thermostat says 86 and it's still climbing. The baby finally fell asleep, your mom is fanning herself on the couch and saying she's fine, and the first two places you called went to voicemail.
 
-We do it the other way around. You describe the problem on a free phone consultation and hear what we think. A technician finds the actual cause. Then you get a full breakdown of the cost, with no surprise charges, before any work starts.
+You don't care who's cheapest right now. You want somebody to pick up. Underneath that is one more worry: what is this going to cost at this hour, and will you still be hot when you've paid it?
 
-After hours, the price comes over the phone before anyone drives out. It costs more on a Saturday night, and you'll know how much before you say yes.
+The same night happens in January, when a cold snap pulls the house into the 50s and your dad across town keeps saying not to make a fuss. Either way, the call you make first is the one that matters.
+
+## What Happens When You Call After Hours
+
+Most after-hours calls go one way. Somebody drives out on a Saturday night, works on it, and you find out what the night cost when the bill shows up. By then you're already committed.
+
+We do it in order. First, you call and tell me what the system is doing. Second, I tell you what I think it is and what the after-hours visit costs, on the phone, before anyone drives out. Third, you decide. If you say yes, a technician comes, finds the actual cause and tells you what he found. Fourth, you get the full cost breakdown before any work starts.
+
+After-hours work costs more than a weekday visit. What matters is that you know how much before you say yes.
 
 - Free phone consultation before anything else
+- The after-hours price on the phone, before anyone drives out
 - Full cost breakdown before the work starts
 - Weekend and holiday calls answered
-- Sam on the phone: I take calls myself when I can
+- Sam on the phone when he can
 - All major brands, and a clean job site when we leave
 
 ## Furnace and AC Repair in Wichita: Find the Cause, Then Fix It
 
-Most no-heat and no-cooling calls come down to one part. Too many companies quote the whole system before they've found it. Here's what we look for, and what it usually takes.
+Most no-heat and no-cooling calls come down to one part. Too many companies quote the whole system before they find it. Here's what we look for.
 
-**The furnace clicks but never lights** Usually a worn igniter or a dirty flame sensor. Both are small parts, and it's a short repair once we've confirmed which one.
+**The furnace clicks but never lights** Usually a worn igniter or a dirty flame sensor. Both are small parts, and it's a short repair once we confirm which one.
 
 **It lights, then shuts off after a few minutes** Often a clogged filter making the furnace overheat, or a sensor that can't prove the flame. We check airflow first, because a new part won't fix a choked filter.
 
@@ -37,14 +46,14 @@ Most no-heat and no-cooling calls come down to one part. Too many companies quot
 
 **A motor that squeals, rattles or runs hot** Blower and condenser motors warn you before they fail. Replacing one early is a smaller job than replacing it after it quits.
 
-**A cracked heat exchanger** This one isn't small. It keeps burner exhaust out of the air you breathe. If we find a crack, you'll hear it straight, with your options.
+**A cracked heat exchanger** This one isn't small. If we find a crack, you'll hear it straight, with your options.
 
-Every one of these starts the same way: a free phone consultation, then the price before the work.
+Every one of these starts the same way: a free phone consultation, and a technician who finds the cause before anyone talks about replacing anything.
 
 [See AC repair in Wichita →](/ac-repair-wichita-ks/)
 
-> "After having worked with many HVAC companies over the years in Wichita, Integrity Heating and Cooling has become the only company I work with. Sam and his team are outstanding in every way. They are dependable and accountable, best prices around, courteous and respectful, and always leave the place exactly as they found it (i.e., they never leave a mess). They completely replaced the furnace and A/C unit at my mother's house …"
-> — Brett J.
+> "AC went out on a SATURDAY around 2pm. I contacted Sam and he had his guy Clayton there within a couple hours. Clayton quickly diagnosed the issue and ordered the parts. Came back on Monday and had me up and running in no time."
+> — Jessica H.
 
 ## Heating and Cooling Services
 
@@ -58,7 +67,7 @@ Every one of these starts the same way: a free phone consultation, then the pric
 
 ## When a Repair Stops Making Sense
 
-A company that also sells new systems has a reason to call yours finished. We lay the repair next to a new system, and you decide.
+A company that also sells new systems has a reason to call yours finished. We put the repair next to a new system, with the cost of each, and you decide.
 
 Here's a rule you can check yourself. If it's a capacitor, an igniter or a motor, repair it. If the system is old and the repairs keep coming, or the compressor or heat exchanger has failed, that's when to look at a new one.
 
@@ -68,19 +77,10 @@ When it is time, we install new furnaces and air conditioners, and financing is 
 
 If you own rentals or commercial buildings, you know a vendor by the invoice, the mess left behind and whether the tenant calls you back unhappy.
 
-A tenant without heat can't wait for a busy contractor, and a short-term rental with a broken unit costs you every night it sits empty. So the bill is itemized and the work is clean, at 8pm the same as at 8am.
+A tenant without heat can't wait for a busy contractor, and a rental with a broken unit costs you every night it sits empty. You can call from wherever you are, the bill is itemized and the work is clean, at 8pm the same as at 8am.
 
 > "Integrity Heating and Cooling was fantastic to work with. They came out so quickly, fixed the problem and the bill was so reasonable. We own a lot of commercial buildings, and really appreciate being able to work with vendors like Integrity. They made our tenant happy, and that makes us happy!"
 > — Lynne L.
-
-## What We Owe You
-
-- A clean house when we leave. A repair shouldn't leave you a second job.
-- A call back from me. I take calls myself when I can, Saturdays, Sundays and holidays included.
-- A name to live up to. The name is Integrity, and I have to live up to it on every job.
-
-> "The service was expedient, thorough and reliable. I especially appreciated they live by their name, Integrity. They were punctual so l could plan around their arrival. They left the area clean. The price was comparable."
-> — Rita P.
 
 ## Maintenance Plan
 
@@ -92,27 +92,30 @@ Our maintenance plan is $150 a year and includes up to 15% off most equipment an
 
 We serve the Greater Wichita area from 801 S Fabrique Dr in Wichita. Call and tell us where you are, and we'll tell you what we can do.
 
+> "After having worked with many HVAC companies over the years in Wichita, Integrity Heating and Cooling has become the only company I work with. Sam and his team are outstanding in every way. They are dependable and accountable, best prices around, courteous and respectful, and always leave the place exactly as they found it (i.e., they never leave a mess). They completely replaced the furnace and A/C unit at my mother's house …"
+> — Brett J.
+
 ## Questions Before You Call
 
-**Does it cost anything to call?**
+**Can you come today if it quits on a weekend or a holiday?**
 
-No. The phone consultation is free. Describe the problem and hear what we think before you decide anything.
+Call and ask. Our office hours are Monday to Friday, 8 AM to 5 PM, but customers have reached me on a Saturday, a Sunday and a holiday. I'll tell you when we can be there while we're on the phone.
 
-**What will the repair cost?**
+**Will you try to sell me a new system?**
 
-It depends on what failed. A capacitor or an igniter is a small repair; a compressor is not. Either way, you get a full breakdown of the cost before the work starts.
+Not before we find what failed. If it's a capacitor, an igniter or a motor, we fix the part. If the system is old and the repairs keep coming, we'll lay the repair next to a new system, with the cost of each, and you decide.
 
-**What if it quits at night or on a weekend?**
+**What will the after-hours visit cost?**
 
-Call anyway. Our office hours are Monday to Friday, 8 AM to 5 PM, but customers have reached me on a Saturday morning, a Sunday and a holiday.
+More than a weekday visit. I won't guess at a number here, because it depends on the call. Call me and I'll give you the price on the phone before anyone drives out, so you can say no and nobody makes the trip. The phone consultation itself is free.
 
-**Who will I talk to?**
+**Will you come back if it acts up again?**
 
-I'm Sam. I take calls myself when I can, and a technician comes out to your house.
+Call the same number and ask for me. I'd rather hear from you the next day than have you wonder, and we'll look at it and tell you what we find.
 
-**Do you work on commercial buildings?**
+**Can you deal with my tenant or my mom without me there?**
 
-Yes, for businesses and landlords as well as homes.
+Yes. Call me from wherever you are, tell me who's at the house and how to reach them, and a technician goes out. We'll tell you what we found and what it costs, and leave the place clean. We work on rentals and commercial buildings as well as homes.
 
 ## Call Sam at Integrity
 

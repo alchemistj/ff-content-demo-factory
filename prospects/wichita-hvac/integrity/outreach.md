@@ -2,13 +2,13 @@
 
 Hey Sam and the Integrity team,
 
-My daughter and I build websites for service businesses. Your reviews say you live up to the name: people get Sam himself on a Saturday or Sunday, someone is at the door within an hour or two even on a holiday, the price stays fair after hours, and the crew leaves the place clean. That's exactly what our method is built around, so we made you a website mockup:
+Your reviews show you answer on a Saturday, a Sunday, even a holiday, and that your after-hours prices stay fair. None of the Wichita competitors we checked says what an after-hours call costs. My daughter and I build websites for service businesses, so we made you a mockup that leads with it: you hear the price on the phone before anyone drives out.
 
 https://integrity.websitepreview.fluidframemarketing.com/
 
 Note: It'll look a lot better with your logo and images on it! Lol
 
-The preview opens with a recent case study, then breaks down why each page is built the way it is and how that helps more people find you and call. For example, on a phone your current site takes about 6 seconds to show its main content, over twice Google's "good" mark of 2.5 seconds, and your homepage headline never says Wichita, so Google and AI have to guess where you work.
+The preview opens with a recent case study, then breaks down why each page is built the way it is. One thing we'd fix: on a phone your current site takes about 6 seconds to show its main content, over twice Google's "good" mark of 2.5 seconds.
 
 By the way, our contact form system would have recognized this as a solicitation, and you wouldn't have even seen it.
 
