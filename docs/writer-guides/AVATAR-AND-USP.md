@@ -64,4 +64,4 @@ The Window Dudes short form, "Inspect First. Fix Right.", is the model for the 3
 - **Method section:** shows how the USP works.
 - **FAQ:** answers the avatar's top objections.
 - **Outreach message:** leads with the USP. It keeps the form's limits, the plain link and the solicitation line.
-- **Strategy page:** adds a plain "Why we led with X", with the top 3 rows of the score table.
+- **Strategy page:** adds a plain "Why we led with X" paragraph. Never show the score table or any numbers to the prospect (Josh 2026-11-12: scores mean nothing to them). The table stays internal, in `usp.md`.

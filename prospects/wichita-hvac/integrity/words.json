@@ -108,14 +108,14 @@
         },
         {
           "type": "split",
-          "heading": "When It Quits on a Saturday Night",
+          "heading": "When It Quits on a Tuesday Night",
           "image": {
             "slot": "tech-condenser",
             "alt": "Technician working on an outdoor air conditioner beside a brick home",
             "brief": "HVAC pool photo: Technician working on an outdoor air conditioner beside a brick home"
           },
           "body": [
-            "It's 9:40 on a July night. The thermostat says 86 and climbing, the baby finally fell asleep, and the first two places you called went to voicemail. You want somebody to pick up, and you want to know what tonight will cost.",
+            "It's 9:40 on a Tuesday in July. The thermostat says 86 and climbing, the baby finally fell asleep, and the first two places you called went to voicemail. You want somebody to pick up, and you want to know what tonight will cost.",
             "Most after-hours calls, you find out the price when the bill shows up. With us, you hear it on the phone before anyone drives out. Then you decide."
           ],
           "list": [
@@ -602,7 +602,7 @@
   "strategy": {
     "whyHeading": "Why we built this site",
     "why": [
-      "Your heating and AC pages promise “24/7 Emergency Repair Service.” Your contact page says Monday to Friday, 8 to 5, weekends “at additional cost.” Someone with no heat on a Saturday gets two answers, and that is the call you most need to win.",
+      "Your heating and AC pages promise “24/7 Emergency Repair Service.” Your contact page says Monday to Friday, 8 to 5, and weekends “at additional cost.” It says nothing about a Tuesday night after 5. Someone with no heat at 9 on a weeknight can't tell whether anyone will answer, and that is the call you most need to win.",
       "Your customers already describe the weekend calls you answer. Dayna B.: “Our AC went out called and Sam here in hour on a Saturday morning.” Madison S.: “They offer competitive pricing and shoot you straight.” Today those words sit on Google, not on your site.",
       "So the demo tells one story everywhere: your hours, and what to do when the system quits outside them. It opens with HVAC company in Wichita, KS, and gives AC repair and furnace repair a page each."
     ],
@@ -629,7 +629,7 @@
         "why": "When the AC quits in a Wichita summer, people call the first company they find.",
         "problems": [
           "Your AC page is titled “Air Conditioning Service,” so “AC repair Wichita KS” has nothing built for it.",
-          "Your AC page promises “24/7” while your contact page prices weekends by phone."
+          "Your AC page promises “24/7” while your contact page stops at 5 on weeknights."
         ],
         "fixes": [
           "A page for AC repair in Wichita, KS, with what usually fails and what happens when you call.",
@@ -696,32 +696,12 @@
       "items": [
         "Your site says you're based in Kechi, while your Google listing puts you at 801 S Fabrique Dr in Wichita, so which address should every listing use?",
         "Your homepage says over 15 years and over two decades, and your AC page says over 30 years, so which number should every listing use?",
-        "Your heating and AC pages promise 24/7 emergency repair, while your contact page says Monday to Friday, 8 to 5, with weekends by quote, so which hours should Google show?"
+        "Your heating and AC pages promise 24/7 emergency repair, while your contact page says Monday to Friday, 8 to 5, with weekends by quote and nothing about weeknights after 5, so which hours should Google show?"
       ]
     },
     "lead": {
       "heading": "Why we led with the after-hours price",
-      "text": "The scariest moment for a Wichita homeowner is a Saturday night with the AC dead and someone at home in the heat, and right behind it is paying and still being hot. Telling people the after-hours price on the phone before anyone drives out answers both. We checked the five top Wichita competitors, and none of them states what an after-hours call costs. Your contact page says \"call for quote,\" so please tell us if that isn't how you work.",
-      "rows": [
-        {
-          "claim": "We tell you the after-hours price on the phone before anyone drives out",
-          "appeal": 4,
-          "exclusivity": 4,
-          "score": 16
-        },
-        {
-          "claim": "A weekend or holiday visit within hours",
-          "appeal": 5,
-          "exclusivity": 3,
-          "score": 15
-        },
-        {
-          "claim": "Sam answers the phone and sends the tech himself",
-          "appeal": 4,
-          "exclusivity": 3,
-          "score": 12
-        }
-      ]
+      "text": "The scariest moment for a Wichita homeowner is a weeknight after 5 with the AC dead and someone at home in the heat, and right behind it is paying and still being hot. Telling people the after-hours price on the phone before anyone drives out answers both. We checked the five top Wichita competitors, and none of them states what an after-hours call costs. Your contact page says \"call for quote,\" so please tell us if that isn't how you work."
     }
   }
 }
