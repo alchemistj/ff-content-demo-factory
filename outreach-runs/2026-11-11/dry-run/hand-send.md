@@ -5,12 +5,13 @@ Josh sends these himself. Paste each value into the form, then the message.
 ## Flawless Roofing Co
 
 Form: https://flawlessroofingcousa.com/contact/
-Why it's a hand send: visible CAPTCHA (never automated); required field "zipcode enter subject" has no value of ours
+Why it's a hand send: visible CAPTCHA (never automated)
 
 - First name: Josh
-- Last name: Fluid Frame Marketing
+- Last name: Lenz
 - Email: josh@fluidframemarketing.com
 - Phone: 4173732773
+- Zip code (if asked): 65804
 - Subject (if asked): A website mockup for Flawless Roofing Co
 
 Message:

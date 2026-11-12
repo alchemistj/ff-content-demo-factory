@@ -21,4 +21,4 @@ node scripts/send-outreach.mjs outreach/<queue>.json --send --only rivercity,ict
   - `hand-send.md` (Josh's copy-paste pack: form URL, each field's value, the message)
 - **After a `--send` run**, log each sent entry in GoHighLevel: the `demo-sent` tag and a "Demo sent" note (Josh's working rules).
 
-Form fields come from the queue's `sender` block: name Josh, email josh@fluidframemarketing.com, phone 4173732773. The last name is "Fluid Frame Marketing" because Josh's own last name isn't in the working rules.
+Form fields come from the queue's `sender` block: Josh Lenz, josh@fluidframemarketing.com, 4173732773, and zip 65804 (Fluid Frame's office, Springfield, MO, from the site footer) when a form asks for one.

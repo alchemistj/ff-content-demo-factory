@@ -53,7 +53,8 @@ function readMessage(prospect, heading = "Message") {
 function keyFor(desc, type, tag) {
   if (type === "email" || /e-?mail/.test(desc)) return "email";
   if (type === "tel" || /phone|tel\b|mobile|cell/.test(desc)) return "phone";
-  if (/zip|postal|address|city|street/.test(desc)) return null; // we don't give an address: flag it
+  if (/zip|postal/.test(desc)) return "zip";
+  if (/address|city|street/.test(desc)) return null; // we don't give a street address: flag it
   if (tag === "textarea" || /message|comment|details|question|how can we|describe|project|inquiry|enquiry/.test(desc)) return "message";
   if (/first|fname|given/.test(desc)) return "firstName";
   if (/last|lname|surname|family/.test(desc)) return "lastName";
@@ -135,7 +136,7 @@ for (const entry of queue.entries) {
   try { message = readMessage(entry.prospect); shortMessage = readMessage(entry.prospect, "Short message"); } catch (e) { r.status = "not sent"; r.reason = e.message; continue; }
   const values = {
     firstName: sender.firstName, lastName: sender.lastName, fullName: sender.fullName || sender.firstName,
-    email: sender.email, phone: sender.phone, company: sender.company, message, shortMessage,
+    email: sender.email, phone: sender.phone, company: sender.company, zip: sender.zip || "", message, shortMessage,
     subject: entry.subject || `A website mockup for ${entry.company}`,
   };
   r.values = values;
@@ -156,7 +157,7 @@ for (const entry of queue.entries) {
         r.fields.push({ label: f.label || f.desc, value: "(left alone)" });
         continue;
       }
-      if (!key) {
+      if (!key || !values[key]) {
         if (f.required) problems.push(`required field "${f.label || f.desc}" has no value of ours`);
         r.fields.push({ label: f.label || f.desc, value: "(left blank)" });
         continue;
@@ -220,7 +221,7 @@ const pack = [`# Hand-send pack, ${day}`, "", "Josh sends these himself. Paste e
 for (const r of hand) {
   pack.push(`## ${r.company}`, "", `Form: ${r.formUrl}`, `Why it's a hand send: ${r.reason}`, "");
   if (r.values) {
-    pack.push(`- First name: ${r.values.firstName}`, `- Last name: ${r.values.lastName}`, `- Email: ${r.values.email}`, `- Phone: ${r.values.phone}`, `- Subject (if asked): ${r.values.subject}`, "", "Message:", "", "```", r.usedShort || (r.values.shortMessage && /characters/.test(r.reason)) ? r.values.shortMessage : r.values.message, "```", "");
+    pack.push(`- First name: ${r.values.firstName}`, `- Last name: ${r.values.lastName}`, `- Email: ${r.values.email}`, `- Phone: ${r.values.phone}`, `- Zip code (if asked): ${r.values.zip}`, `- Subject (if asked): ${r.values.subject}`, "", "Message:", "", "```", r.usedShort || (r.values.shortMessage && /characters/.test(r.reason)) ? r.values.shortMessage : r.values.message, "```", "");
   }
 }
 fs.writeFileSync(path.join(outDir, "hand-send.md"), pack.join("\n") + "\n");

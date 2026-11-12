@@ -1,11 +1,12 @@
 {
   "sender": {
     "firstName": "Josh",
-    "lastName": "Fluid Frame Marketing",
-    "fullName": "Josh",
+    "lastName": "Lenz",
+    "fullName": "Josh Lenz",
     "email": "josh@fluidframemarketing.com",
     "phone": "4173732773",
-    "company": "Fluid Frame Marketing"
+    "company": "Fluid Frame Marketing",
+    "zip": "65804"
   },
   "entries": [
     { "slug": "rivercity", "company": "River City Roofing", "prospect": "prospects/wichita-roofing/rivercity", "formUrl": "https://rivercity-roofing.com/contact/", "approved": false },
