@@ -126,7 +126,8 @@
           ],
           "image": {
             "slot": "sameday-gauges",
-            "alt": "Technician checking an outdoor air conditioner with gauges"
+            "alt": "Technician checking an outdoor air conditioner with gauges",
+            "brief": "HVAC pool photo: Technician checking an outdoor air conditioner with gauges"
           }
         },
         {
@@ -196,7 +197,7 @@
         },
         {
           "type": "review",
-          "quote": "Will recommend this company to everyone. I called Reddi Industries originally and it took them 4 hours to have someone reach out to me just to get on their schedule. When I reached out to Air Capital Heating and Air they showed up within an hour and fixed the issue. They were very informative and reasonable priced!",
+          "quote": "Will recommend this company to everyone. … When I reached out to Air Capital Heating and Air they showed up within an hour and fixed the issue. They were very informative and reasonable priced!",
           "name": "Jayci G."
         },
         {
@@ -298,7 +299,8 @@
           ],
           "image": {
             "slot": "service-van",
-            "alt": "Service van parked in the driveway of a Wichita home"
+            "alt": "Service van parked in the driveway of a Wichita home",
+            "brief": "HVAC pool photo: Service van parked in the driveway of a Wichita home"
           }
         },
         {
@@ -474,7 +476,8 @@
           ],
           "image": {
             "slot": "thermostat",
-            "alt": "Hand adjusting a wall thermostat"
+            "alt": "Hand adjusting a wall thermostat",
+            "brief": "HVAC pool photo: Hand adjusting a wall thermostat"
           }
         },
         {
@@ -592,7 +595,8 @@
           ],
           "image": {
             "slot": "airflow-vent",
-            "alt": "Ceiling air vent in a quiet Wichita home"
+            "alt": "Ceiling air vent in a quiet Wichita home",
+            "brief": "HVAC pool photo: Ceiling air vent in a quiet Wichita home"
           }
         },
         {

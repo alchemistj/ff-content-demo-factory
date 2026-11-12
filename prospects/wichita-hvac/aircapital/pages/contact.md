@@ -2,16 +2,15 @@
 
 # Contact Air Capital Heating and Air
 
-Same-day and next-day appointments are available. Tell us what your system is doing and we'll set up a visit. Call us, or send a request below.
+Tell us what your system is doing and we'll book a visit, same day or next. The estimate is free. Call us, or send a request below.
 
 **Buttons:** Call (316) 990-1911 | Request Service
 
 ## Call
 
-(316) 990-1911, between 8am and 5pm. Emergency calls are available. We're a new Wichita company, and the people behind it have years of hands-on HVAC experience. When you call, we'll tell you plainly what to expect.
+(316) 990-1911, between 8am and 5pm. Emergency calls are available. Tell us what the system is doing and which town you're in, and we'll tell you when we can be there.
 
-> Amazing communication through the whole process. Quick to respond, great prices and great service. Customer for life!
->
+> "Amazing communication through the whole process. Quick to respond, great prices and great service. Customer for life!"
 > — Aaron S.
 
 ## Send a Message

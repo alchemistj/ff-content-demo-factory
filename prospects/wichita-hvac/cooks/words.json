@@ -128,7 +128,8 @@
           "listStyle": "checks",
           "image": {
             "slot": "plan-visit-furnace",
-            "alt": "Technician opening a furnace cabinet for a seasonal check"
+            "alt": "Technician opening a furnace cabinet for a seasonal check",
+            "brief": "HVAC pool photo: Technician opening a furnace cabinet for a seasonal check"
           }
         },
         {
@@ -173,7 +174,7 @@
           "heading": "When a Repair Stops Making Sense",
           "body": [
             "Here's a rule you can check yourself. A capacitor, an ignitor or a motor is a repair on a system that still has years in it. The age is on the label on the unit.",
-            "A failed compressor or a cracked heat exchanger on an old system, or repairs that keep stacking up, is when to price a new one. Look for the age on the label on the unit, and ask any company to tell you in plain words what failed.",
+            "A failed compressor or a cracked heat exchanger on an old system, or repairs that keep stacking up, is when to price a new one. Ask any company to tell you in plain words what failed.",
             "Told you need a whole new system? Call us for a second look before you spend that money."
           ]
         },
@@ -213,7 +214,8 @@
           ],
           "image": {
             "slot": "airflow-vent",
-            "alt": "Ceiling air vent in a quiet Wichita home"
+            "alt": "Ceiling air vent in a quiet Wichita home",
+            "brief": "HVAC pool photo: Ceiling air vent in a quiet Wichita home"
           }
         },
         {
@@ -337,7 +339,8 @@
           ],
           "image": {
             "slot": "furnace-detail",
-            "alt": "Gas furnace burners lit with a steady blue flame"
+            "alt": "Gas furnace burners lit with a steady blue flame",
+            "brief": "HVAC pool photo: Gas furnace burners lit with a steady blue flame"
           }
         },
         {
@@ -507,7 +510,8 @@
           ],
           "image": {
             "slot": "ac-repair-hero",
-            "alt": "Technician checking an outdoor air conditioner at a Wichita home"
+            "alt": "Technician checking an outdoor air conditioner at a Wichita home",
+            "brief": "HVAC pool photo: Technician checking an outdoor air conditioner at a Wichita home"
           }
         },
         {
@@ -638,7 +642,8 @@
           ],
           "image": {
             "slot": "service-van",
-            "alt": "Service van parked in the driveway of a Wichita home"
+            "alt": "Service van parked in the driveway of a Wichita home",
+            "brief": "HVAC pool photo: Service van parked in the driveway of a Wichita home"
           }
         },
         {

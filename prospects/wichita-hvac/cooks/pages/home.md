@@ -1,119 +1,126 @@
-**Eyebrow:** Heating and cooling in Wichita
+**Eyebrow:** Wichita, KS · All Brands Serviced · Emergency Service Until 10 PM
 
 # HVAC Company in Wichita, KS — Cook's Heating and Cooling
 
-A furnace or air conditioner stays in your house for many years, so the company you pick for it is one you'll be calling for a long time. We install new systems, service them twice a year if you want, and fix them when they quit. Call us once and you have a number to keep.
+We're the crew at Cook's Heating and Cooling in Wichita. We keep your furnace or air conditioner running as long as it honestly can, and we tell you straight when it can't. We service all brands, and emergency service runs until 10 PM. Call (316) 945-2665.
 
 **Buttons:** Call (316) 945-2665 | Request Service
 
 > "We have used Cook's for the last 35 years couldn't be happier. Thank you Sheldon you are amazing"
 > — Sandra S.
 
-## The Company You Call Once and Keep
+## Keep It Running. Tell You When It Can't.
 
-The system in your basement or on the side of your house has probably been there longer than you remember buying it. Someone installed it, someone has looked at it since, and someone will be called when it finally stops.
+Most companies push a new system at the first big repair. The quote shows up before anyone has found what failed, and a worn part turns into a whole new furnace.
 
-It makes sense for those to be the same company. A system that has been installed, serviced and repaired by one outfit has a history, and the people who know that history don't have to start over every time.
+We do it the other way around. We find out what failed, fix it if fixing makes sense, and keep your system running as long as it honestly can. When it can't, we say so and show you the repair and the replacement side by side.
 
-That's how we work. We put in the system, we look after it, and we're the ones you call when something goes wrong with it.
+The decision stays yours, and it's made with the facts in front of you.
 
-> "When my ac went out 2 years ago I called Cook because that's who my grandparents always called. They had a new system in place within 48 hours."
-> — Richard R.
+- We troubleshoot and diagnose before we recommend anything
+- We service all brands, so you don't have to have bought from us
+- EPA registered and certified, with Freon leak detection on air conditioners
+- Carbon monoxide detection if you burn gas for heat
+- Emergency service from 5 PM to 10 PM
+- Premium plan: two servicings a year, priority emergency service within 24 hours, 20% off parts and labor
 
-## New Heating and Cooling Systems
+## What You Notice, and What We Do About It
 
-An old system tells you when it's finished. The repair bills start to stack up, one room is always too hot or too cold, and the unit runs all day to keep up.
+Most breakdowns start with something small you can see or hear. Here's what we usually find behind it, and what we do.
 
-We install new furnaces, air conditioners, unit heaters and electric air handlers, and we offer a variety of systems and equipment to fit your budget. Filtration and humidification can go in with it.
+**The house won't get below 80** Dirty coils make a unit work harder for less cooling, and a refrigerant leak leaves it running without cooling at all. We run leak detection and fix the leak instead of just topping off the refrigerant.
 
-Because we also service what we install, the people who put it in are the people you call about it later.
+**The outdoor unit hums and never starts** A weak capacitor is a common cause, and it's a small part. We test it and replace the part, not the unit.
 
-[See HVAC installation in Wichita →](/hvac-installation-wichita-ks/)
+**The furnace clicks but never lights** Often a worn ignitor or a wiring fault, and sometimes a filter so clogged the furnace can't breathe. We find which one it is and repair that.
+
+**The furnace lights, then shuts off** Airflow is the first thing to check, because a choked filter makes a furnace shut itself down. We check airflow and the burner side, then fix what we find.
+
+**One room is always too hot or too cold** A duct that leaks, is crushed or doesn't reach the room can leave a good unit looking like a bad one. We make fittings to your measurements in our own sheet metal shop.
+
+**The repair bills keep coming** On an old system, the repairs can start to cost more than they're worth. We put the repair next to a new system and show you both.
+
+[See HVAC installation in Wichita → →](/hvac-installation-wichita-ks/)
+
+## When a Repair Stops Making Sense
+
+Here's a rule you can check yourself. A capacitor, an ignitor or a motor is a repair on a system that still has years in it. The age is on the label on the unit.
+
+A failed compressor or a cracked heat exchanger on an old system, or repairs that keep stacking up, is when to price a new one. Ask any company to tell you in plain words what failed.
+
+Told you need a whole new system? Call us for a second look before you spend that money.
+
+> "Another HVAC company told me I would have to replace my heater and ac and then gave me an estimate that was insane. Cooks came out, worked on the heater, it worked for a few weeks and then started doing the same thing. They came back out 3 more times . 2 of those just to check on it and insure it was still working. … They saved me thousands that I didn't have to spend."
+> — LaVona B.
+
+## Heating and Cooling Services
+
+- **AC Repair.** We find what failed, fix that part, and keep the unit running, whatever the brand.
+- **Furnace Repair.** No heat, a furnace that won't light or one that shuts off: we find the part and repair it.
+- **Air Conditioner Installation.** A new air conditioner, priced beside the repair, when repair no longer makes sense.
+- **Furnace Installation.** A new furnace, unit heater or electric air handler once yours is truly finished.
+- **Annual Maintenance Agreements.** Two servicings a year, priority emergency service and 20% off parts and labor.
+- **Air Quality.** Cleaner air from filters, whole-system filtration and humidifiers.
+- **Carbon Monoxide Detection.** A carbon monoxide check if you burn gas for heat.
+- **Commercial HVAC and Mechanical Design.** Heating, cooling and system design for your building.
+- **Custom Sheet Metal.** Ducts and fittings made to your measurements in our own shop.
+
+## Looking After It Between Repairs
+
+A system that gets looked at before it fails tends to last. A clogged filter, a loose wire and dirty coils are cheap to catch in mild weather and expensive after the first freeze.
+
+Our Premium plan has us out twice a year, with priority emergency service within 24 hours and 20% off parts and labor. You can sign up year to year, or for 5 or 10 years, for a home or a business.
+
+[See HVAC maintenance plans in Wichita → →](/maintenance-plans-wichita-ks/)
 
 > "I have had Cooks do my HVAC work and installations for many, many years and the work has always been good, in each of my two homes. The first system in Belle Plaine, a Carrier, still runs good after almost 40 years. … I always use Cook's for service also. I appreciate Cook's work."
 > — John E.
 
-## Maintenance Plans
+## Dry Air, Dust and Stuffy Rooms
 
-Most systems quit on the hottest or coldest day of the year. That's when they work hardest, and it's when a worn part or a clogged filter that nobody checked finally gives out.
+A closed house carries dust, pet dander and whatever your filter misses, and the system moves it through every room several times an hour. In winter the heat dries the air out, and you get static shocks and cracked lips.
 
-Our Premium maintenance plan has us out to service your system twice a year. It also gets you priority emergency service within 24 hours, and 20% off parts and labor.
+We install filters in a range of sizes. Whole-system filtration goes on any existing system and removes up to 90% of air contaminants, and a humidifier on the furnace puts the moisture back.
 
-You can sign up year to year, or for 5 or 10 years. Plans are available for homes and for businesses.
+## When It Quits After Five
 
-[See HVAC maintenance plans in Wichita →](/maintenance-plans-wichita-ks/)
+Systems have a way of quitting at suppertime. Emergency service runs from 5 PM to 10 PM, so you can call that evening instead of waiting for morning.
 
-## When Something Breaks
-
-A furnace or air conditioner that has run for fifteen years or more is going to break at some point. What matters then is whether the person looking at it knows what they're looking at.
-
-We troubleshoot and diagnose first, so you hear what failed before you hear what it costs. Often it's one part: an ignitor, a wiring fault, a leak.
-
-Sometimes it's the whole system. If a repair makes sense, we'll repair it. If the system is finished, we'll tell you so and go over your options with you.
-
-For air conditioners, we find refrigerant leaks and we're EPA registered and certified. For furnaces, we do carbon monoxide detection, because a furnace that burns gas poorly can put it into the house with no smell.
-
-We service all brands, so you don't have to have bought from us to call us.
+We also work on businesses as well as homes, and we design mechanical systems for both.
 
 > "Thank you Cook's! Called on a Friday morning, sweltering hot day, and my A/C was out. Got a technician here that afternoon, on time, and they fixed me up! Reasonable price, professional service. Ricky was awesome."
 > — Vicki V.
 
-## People You Get to Know
-
-Staying with one company for decades only works if there's a person at the other end each time. Cook's is a crew, not one name on a truck: an office that answers and technicians customers learn by name.
-
-That makes a service call easier. Nobody explains your house from scratch, and the next visit builds on the last.
-
-> "I have known Gerry for 30+ years. I have always used him for all my HVAC needs, always great pricing, and the workmanship is second to none."
-> — Jeff W.
-
-> "Charlie was our technician, he was absolutely awesome, very knowledgeable on what he was doing ! If and when I need to use them again, I hope I get Charlie again !"
-> — Diana N.
-
-## Air Quality and Humidity
-
-The air in a closed house carries dust, pet dander and whatever your filter misses, and the system moves it through every room several times an hour.
-
-We install filters in a range of sizes, and whole-system filtration that goes on any existing system and removes up to 90% of air contaminants.
-
-Winter heat also dries the air out, which is where the static shocks and cracked lips come from. A humidifier on the furnace puts that moisture back.
-
-## Commercial Work and Custom Sheet Metal
-
-We work on heating and cooling for businesses as well as homes, and we design mechanical systems for both.
-
-We also run our own sheet metal fabrication shop. When a building needs a duct or fitting that no stock part matches, we make it in-house to the measurements instead of forcing something close.
-
-## Hours and Where We Work
-
-Our office at 2215 S West St, Wichita, KS 67213, is open Monday to Friday, 8:00 AM to 5:00 PM. Emergency service runs from 5:00 PM to 10:00 PM.
-
-We work in Wichita and the surrounding towns.
-
 ## Questions Before You Call
 
-**Do you work on my brand of furnace or air conditioner?**
-Yes. Our service department is equipped to service and maintain all brands.
+**How do I know whether to repair or replace?**
 
-**Do you only do homes?**
-No, we work on homes and businesses both.
+It depends on the age of the system and what failed. The age is on the label on the unit, and most furnaces and air conditioners give you well over ten years. One failed part on a system with years left is a repair. An old system with repairs piling up, or a failed compressor or heat exchanger, is worth pricing a replacement.
+
+**Another company says I need a whole new system. Should I get a second look?**
+
+Yes. Ask that company to write down what failed. If the answer is the whole system and not a part, call us and we'll look at it ourselves.
+
+**Do you work on my brand of furnace or air conditioner?**
+
+Yes. Our service department is equipped to service and maintain all brands, so you don't need to have bought yours from us.
 
 **What if it breaks after the office closes?**
-Emergency service runs from 5:00 PM to 10:00 PM. Call (316) 945-2665.
 
-**How long should a furnace or air conditioner last?**
-Furnaces commonly run 15 to 20 years and air conditioners 10 to 15, depending on how hard they work and how often someone services them. A system near the end of that range is the one to keep an eye on.
+Emergency service runs from 5:00 PM to 10:00 PM. Call (316) 945-2665. Our office hours are Monday to Friday, 8:00 AM to 5:00 PM.
 
-When it gets there, we diagnose first and lay out what another repair buys you against what a new system involves.
+**Do I need the plan to call you for a repair?**
 
-**Why would I sign up for a 5- or 10-year plan?**
-Because the system you're looking after lasts that long. The Premium plan is two servicings a year, priority emergency service within 24 hours and 20% off parts and labor, on terms of 1, 5 or 10 years. It's available for homes and for businesses.
+No. Call any time, on any brand. The plan adds two servicings a year, priority emergency service within 24 hours and 20% off parts and labor.
 
-**Can you take over a system someone else installed?**
-Yes. We service all brands, whoever put the system in. After our first visit, the next call builds on it.
+**Do you only do homes?**
+
+No, we work on homes and businesses both.
+
+**Where do you work?**
+
+In Wichita and the surrounding towns. We're at 2215 S West St.
 
 ## Call Cook's
 
-Save this number: (316) 945-2665. Call when you need a new system, a plan for the one you have, or when a unit has just stopped, and you'll be talking to the company that stays.
-
-Cook's Heating and Cooling, 2215 S West St, Wichita, KS 67213. Monday to Friday, 8:00 AM to 5:00 PM; emergency service 5:00 PM to 10:00 PM.
+Call (316) 945-2665 when a unit has just stopped, when you've been told you need a new one, or when you want to know how much life yours has left. We'll keep it running as long as it honestly can. Monday to Friday, 8:00 AM to 5:00 PM; emergency service 5:00 PM to 10:00 PM.
