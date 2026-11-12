@@ -2,7 +2,7 @@
 
 | Prospect | Result | Why | Screenshots |
 |---|---|---|---|
-| River City Roofing | dry run: filled, not submitted | invisible reCAPTCHA: will submit normally, hand send if blocked | rivercity-filled.png |
-| Flawless Roofing Co | hand send | visible CAPTCHA (never automated) | flawless-filled.png |
-| ICT Roofing & Exteriors | dry run: filled, not submitted | invisible reCAPTCHA: will submit normally, hand send if blocked | ict-roofing-filled.png |
-| Douglas Fry Roofing | dry run: filled, not submitted | invisible reCAPTCHA: will submit normally, hand send if blocked | douglas-fry-filled.png |
+| Cook's Heating and Cooling | dry run: filled, not submitted |  | cooks-filled.png |
+| Integrity Heating and Cooling | hand send | could not fill the form: no message box found on the form | integrity-error.png |
+| Air Capital Heating and Air | dry run: filled, not submitted |  | aircapital-filled.png |
+| Dream Makers LLC Heating and Cooling | dry run: filled, not submitted |  | dreammakers-filled.png |

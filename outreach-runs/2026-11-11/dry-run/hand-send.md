@@ -2,36 +2,38 @@
 
 Josh sends these himself. Paste each value into the form, then the message.
 
-## Flawless Roofing Co
+## Integrity Heating and Cooling
 
-Form: https://flawlessroofingcousa.com/contact/
-Why it's a hand send: visible CAPTCHA (never automated)
+Form: https://integrityheatingandcooling.net/contact/
+Why it's a hand send: could not fill the form: no message box found on the form
 
 - First name: Josh
 - Last name: Lenz
 - Email: josh@fluidframemarketing.com
 - Phone: 4173732773
 - Zip code (if asked): 65804
-- Subject (if asked): A website mockup for Flawless Roofing Co
+- Subject (if asked): A website mockup for Integrity Heating and Cooling
 
 Message:
 
 ```
-Hey Ravi and the Flawless team,
+Hey Sam and the Integrity team,
 
-My daughter and I build websites for service businesses. Reading your reviews, people keep saying you inspected the roof, worked the insurance claim with them, and had the new roof on in about a day. That's exactly what our method is built around, so we made you a website mockup:
+My daughter and I build websites for service businesses. Reading your reviews, people keep saying you live up to your name, the owner picks up himself, the price stays fair after hours, and the crew leaves the place clean. That's exactly what our method is built around, so we made you a website mockup:
 
-https://flawless.websitepreview.fluidframemarketing.com/
+https://integrity.websitepreview.fluidframemarketing.com/
 
 Note: It'll look a lot better with your logo and images on it! Lol
 
-The preview opens with a recent case study, then explains the thinking behind every page and how it gets more people to find you and pick up the phone. For example, your current homepage headline says "Roofing Redefined for Modern Living" but never says roofing in Wichita, and on the contact page the "Start A Project" button goes nowhere.
+The preview opens with a recent case study, then breaks down why each page is built the way it is and how that helps more people find you and call. For example, on a phone your current site takes about 6 seconds to show its main content, over twice Google's "good" mark of 2.5 seconds, and your homepage headline never says Wichita, so Google and AI have to guess where you work.
 
-By the way, our contact form system would have recognized this as a solicitation, and you wouldn't have even seen it.
+Another cool thing about our system: our contact form would have recognized this as a solicitation, and you wouldn't have even seen it!
 
 How'd we do on your company vibe?
 
 Josh
 Fluid Frame Marketing
+
+---
 ```
 
