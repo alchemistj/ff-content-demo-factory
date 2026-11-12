@@ -11,17 +11,9 @@ I'm Sam. Call me on a weekend or a holiday and I'll tell you the after-hours pri
 
 ## When It Quits on a Saturday Night
 
-It's 9:40 on a July night. The thermostat says 86 and it's still climbing. The baby finally fell asleep, your mom is fanning herself on the couch and saying she's fine, and the first two places you called went to voicemail.
+It's 9:40 on a July night. The thermostat says 86 and it's still climbing. The baby finally fell asleep, and the first two places you called went to voicemail. You don't care who's cheapest right now. You want somebody to pick up, and you want to know what it will cost at this hour.
 
-You don't care who's cheapest right now. You want somebody to pick up. Underneath that is one more worry: what is this going to cost at this hour, and will you still be hot when you've paid it?
-
-The same night happens in January, when a cold snap pulls the house into the 50s and your dad across town keeps saying not to make a fuss. Either way, the call you make first is the one that matters.
-
-## What Happens When You Call After Hours
-
-Most after-hours calls go one way. Somebody drives out on a Saturday night, works on it, and you find out what the night cost when the bill shows up. By then you're already committed.
-
-We do it in order. First, you call and tell me what the system is doing. Second, I tell you what I think it is and what the after-hours visit costs, on the phone, before anyone drives out. Third, you decide. If you say yes, a technician comes, finds the actual cause and tells you what he found. Fourth, you get the full cost breakdown before any work starts.
+Most after-hours calls go one way. Somebody drives out, works on it, and you find out what the night cost when the bill shows up. We do it in order. First, you call and tell me what the system is doing. Second, I tell you what I think it is and what the after-hours visit costs, on the phone, before anyone drives out. Third, you decide. If you say yes, a technician comes, finds the actual cause and tells you what he found. Fourth, you get the full cost breakdown before any work starts.
 
 After-hours work costs more than a weekday visit. What matters is that you know how much before you say yes.
 
@@ -61,7 +53,8 @@ Every one of these starts the same way: a free phone consultation, and a technic
 - **Furnace Repair.** Heat back on, with the cause explained in plain words.
 - **Heat Pump Repair.** Repairs for heat pumps that heat and cool your home.
 - **Motor Replacement.** A noisy motor found and replaced before it becomes a bigger repair.
-- **System Installation.** A new heating or cooling system when repair no longer makes sense.
+- **New AC Installation.** A new air conditioner when repairs stop making sense, with the full cost in front of you before the work starts. All major brands.
+- **New Furnace Installation.** A new furnace when the old one is done, installed clean and left the way we found the room. All major brands, and financing is available.
 - **HVAC Maintenance.** Seasonal service that catches small problems before they quit.
 - **Commercial HVAC.** Installation and repair for businesses and commercial buildings.
 
