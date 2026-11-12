@@ -156,3 +156,7 @@ Counts are based only on the wording found on the pages read.
 - Tailored: not found
 - Mid-Kansas: not found
 - Air Capital: not found
+
+## Caveat on "not found"
+
+"Not found" for a directory-only competitor means it was not checked, not that it is absent. Score exclusivity against those competitors conservatively.

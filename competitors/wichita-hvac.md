@@ -117,3 +117,7 @@ Limits:
 - Strongest matches with the summary claims: Midwest Mechanical (price approval, repair-before-replace, membership with perks) and Moody (same-day "strive", honest service slogan).
 - Owner-led claims are absent from all five sites fetched. Owner names appear only in directories (Air Source: Felkins; Crockett: Doug Crockett), not confirmed on company sites.
 - Next steps not done: Google local results, Crockett and Air Source site access, Midwest /customer-pricing and Moody financing and emergency pages.
+
+## Caveat on "not found"
+
+"Not found" for a directory-only competitor means it was not checked, not that it is absent. Score exclusivity against those competitors conservatively.
