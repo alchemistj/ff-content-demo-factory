@@ -14,8 +14,14 @@ We start by looking at the whole roof, not just the stain. We check the flashing
 
 Sometimes the answer is a small repair. Sometimes it is the first sign of something bigger, and we'll say so. If the roof is past fixing, we'll tell you that too, and show you what a [roof replacement](/roof-replacement-wichita-ks/) would involve.
 
-> I called them to look at a couple of areas of our tile roof that had problems. They promptly came out, examined my whole roof and found another area with a soon to be serious problem. … Jason has a knowledgeable eye for roofing issues and he prevented serious leaks in our eaves area.
+> "I called them to look at a couple of areas of our tile roof that had problems. They promptly came out, examined my whole roof and found another area with a soon to be serious problem. … Jason has a knowledgeable eye for roofing issues and he prevented serious leaks in our eaves area."
 > — Ann P.
+
+## What Happens When You Call About a Leak
+
+Tell Doug or Jason what you're seeing and where. One of us gets on the roof, traces the water to where it really gets in and tells you what we found.
+
+Before we fix anything, you get a written estimate with the scope of work, the warranty and the price.
 
 ## Tile Roof Repair
 
@@ -25,7 +31,7 @@ For a cracked or broken tile, we replace it with a tile that matches. For a fail
 
 That lift-and-relay work is slow and takes a crew that has done it many times, because tile that's walked on wrong cracks. It's also what keeps an old tile roof out of the dumpster.
 
-> Removed every piece of our roof clay tile, discarded the old underlayment with a new improved product and then returned the existing clay tile. Very labor intensive and time consuming. The crew of four did everything stated and were wonderful to work with.
+> "Removed every piece of our roof clay tile, discarded the old underlayment with a new improved product and then returned the existing clay tile. Very labor intensive and time consuming. The crew of four did everything stated and were wonderful to work with."
 > — Linda G.
 
 ## Valleys, Flashing and Sky Tubes
@@ -36,7 +42,7 @@ Flashing is thin metal that has to be shaped and sealed to that exact spot. It a
 
 Valleys carry the most water on the roof, so they wear first. A worn valley is a repair worth doing before it becomes a ceiling.
 
-> This past year they replaced the outside of my sky tubes that were leaking and repaired the valleys that were deteriorating, using a new type of product that should keep them worry free for years.
+> "This past year they replaced the outside of my sky tubes that were leaking and repaired the valleys that were deteriorating, using a new type of product that should keep them worry free for years."
 > — Lynda M.
 
 ## Wood Shake and Shingle Repair
@@ -53,7 +59,7 @@ Metal also moves. It grows in the summer sun and shrinks on a cold night, so a d
 
 We repair metal roof leaks by fixing the joint or flashing that failed, not by caulking over it.
 
-> I have a radius metal roof that I've had other roofers tried to fix for me and finally I found the roofer that that did the repair correctly.
+> "I have a radius metal roof that I've had other roofers tried to fix for me and finally I found the roofer that that did the repair correctly."
 > — Rhonda P.
 
 ## Shingle and Composition Roof Repair
@@ -72,25 +78,27 @@ We offer workmanship warranties of 5, 10 and 15 years. The crew cleans up each d
 
 After a run of storms, every roofer's schedule fills up. When you call, we'll give you a straight answer on when we can get to yours.
 
-> Jason set up an appointment within 2 days of my call. He go on the roof to evaluate the cause of the leaks (had 2 leaks on a tile roof) gave me a very reasonable estimate and said that it would be 2 to 4 weeks before the work could be done because of all the recent rains.  Douglas Fry Roofing completed the work within 3 weeks of my initial appointment and for the estimated amount.
+> "Jason set up an appointment within 2 days of my call. He go on the roof to evaluate the cause of the leaks (had 2 leaks on a tile roof) gave me a very reasonable estimate and said that it would be 2 to 4 weeks before the work could be done because of all the recent rains. Douglas Fry Roofing completed the work within 3 weeks of my initial appointment and for the estimated amount."
 > — Jiml P.
 
 ## Repair Questions
 
 **How do I know if I need a repair or a new roof?**
+
 If the leak is at one valley, flashing or underlayment and the rest of the roof is sound, it can usually be repaired. If damage is spread across the roof, a replacement may make more sense.
 
 **Why did my roof leak after someone else fixed it?**
+
 Because the repair addressed where the water showed up, not where it got in. It's the most common reason a repair doesn't hold.
 
 **Can you work on a roof another contractor installed?**
+
 Yes. We've traced and fixed leaks on roofs other roofers put on.
 
 **Who will I talk to?**
+
 Doug or Jason. We have no commissioned salespeople.
 
 ## Call About Your Leak
 
-Tell us what you're seeing and where. One of us will come out, climb up and give you a written estimate.
-
-Call (316) 655-9777. If it turns out the roof needs more than a repair, we'll walk you through [replacement](/roof-replacement-wichita-ks/) too.
+Tell us what you're seeing and where. One of us will come out, climb up and give you a written estimate. Call (316) 655-9777. If it turns out the roof needs more than a repair, we'll walk you through [replacement](/roof-replacement-wichita-ks/) too.

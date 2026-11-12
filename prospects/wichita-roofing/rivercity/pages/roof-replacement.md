@@ -16,6 +16,23 @@ The opposite is just as true. One failed flashing or a bad vent boot is a [roof 
 
 That's why we look before we quote: in the attic and on the roof, not from the driveway. Our job is to tell you which one you have.
 
+## Where the Roof Meets the Rest of the House
+
+A new roof sits on top of the gutters, the fascia and the walls. If the edge is rotted or the gutters are pulling away, the best shingles in the world won't keep that water out of the house.
+
+While the old roof is off, we can see these edges better than we ever will from the ground. Because we also do siding, gutters, paint and windows, we can tell you what we found and handle it ourselves instead of sending you to another company.
+
+> "Anthony and River city roofing did a great job on our house with paint siding and window well covers!"
+> — Julie W.
+
+## What Happens When You Call About a New Roof
+
+Call (316) 295-2159 and tell us how old the roof is and what you're seeing. We set a time to come out.
+
+Someone from River City goes up on the roof, and into the attic if there's a leak, to see whether the roof is worn out or just damaged in one place.
+
+Then you get a detailed estimate for whichever one it is. If it's a new roof, the estimate covers the material you choose and what has to come off first.
+
 ## What Comes Off Before Anything Goes On
 
 Replacement means more than new shingles. The old roof comes down to the decking, and that's where the real condition of the house shows.
@@ -46,26 +63,17 @@ When the last shingle is on, the crew walks the yard, the beds and the driveway 
 
 Then we come back to check in with you. A roof is a big purchase, and we'd rather hear your question now than have you wondering about it later.
 
-> "River City did an amazing job putting a new roof on my home. After they finished, they walked around to make sure if anything fell off the roof that everything was picked up. Anthony showed up shortly after they left to make sure I was pleased with the roof."
-> — Kamden B.
-
-## Where the Roof Meets the Rest of the House
-
-A new roof sits on top of the gutters, the fascia and the walls. If the edge is rotted or the gutters are pulling away, the best shingles in the world won't keep that water out of the house.
-
-While the old roof is off, we can see these edges better than we ever will from the ground. Because we also do siding, gutters, paint and windows, we can tell you what we found and handle it ourselves instead of sending you to another company.
-
-> "Anthony and River city roofing did a great job on our house with paint siding and window well covers!"
-> — Julie W.
-
 ## What Decides the Price
 
 Every roof quote is built from the same few things. Understanding them helps you compare quotes fairly.
 
-- **Size and pitch.** More squares of roof means more material and labor, and a steep roof is slower and costlier to work on.
-- **Material.** Composition, metal and tile run at very different prices.
-- **Decking repair.** Rotted wood can only be found once the old roof is off, so a good estimate explains how that's handled.
-- **Layers and details.** Old layers to remove, chimneys, skylights and valleys all add labor.
+**Size and pitch** More squares of roof means more material and labor. A steep roof is slower and costlier to work on safely.
+
+**Material** Composition shingles, metal and tile run at very different prices. Shingles cost the least up front; metal and tile cost more and last longer.
+
+**Decking repair** Rotted wood can only be found once the old roof is off. A good estimate explains how that's handled before the work starts.
+
+**Layers and details** Old layers to tear off, chimneys, skylights and valleys all add labor. A simple, single-layer roof costs less to replace than a cut-up one.
 
 We give you a detailed estimate after we've seen the roof. A number given over the phone, before anyone has looked, is a guess.
 
@@ -77,6 +85,4 @@ Our part is the roof. We can tell you what the damage is and what it will take t
 
 ## What to Do Next
 
-Call (316) 295-2159 for a free quote, Monday to Friday, 8:00 AM to 4:30 PM. Tell us how old the roof is and what you're seeing, and we'll set up a look at it.
-
-If you're not sure it needs replacing, say so. If it turns out to be a leak and not a worn-out roof, that's a [roof repair](/roof-repair-wichita-ks/), and finding that out is what the visit is for.
+Call (316) 295-2159 for a free quote, Monday to Friday, 8:00 AM to 4:30 PM. Tell us how old the roof is and what you're seeing, and we'll set up a look at it. If you're not sure it needs replacing, say so. If it turns out to be a leak and not a worn-out roof, that's a [roof repair](/roof-repair-wichita-ks/), and finding that out is what the visit is for.

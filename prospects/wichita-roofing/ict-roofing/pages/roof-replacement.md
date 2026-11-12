@@ -23,6 +23,14 @@ Brady or Arturo meets the adjuster at your house, and sometimes Juan does. We po
 > "Juan got up on the roof with the adjuster in support of our claim. He made the process easy."
 > — Debbie L.
 
+## What Happens When You Call
+
+We set a time and come out for a free inspection. One of us gets on the roof, or puts a drone over it, and photographs what's there.
+
+Then we sit down with you and go through it slope by slope: what's damaged, whether it's a repair or a new roof, and whether there's a claim worth filing.
+
+If you file, Brady or Arturo meets your adjuster at the house. Once the scope is settled, we put you on the schedule and tell you how long your roof will take.
+
 ## If the Claim Comes Back Partial or Denied
 
 A partial offer usually means the adjuster treated some slopes as repairable. A denial can mean the damage wasn't shown clearly. Neither one is automatically the last word.
@@ -51,15 +59,17 @@ Bad decking gets replaced rather than covered. A new roof over a weak surface ju
 
 ## Choosing Your Roofing Material
 
-Most roofs are asphalt shingles. They're the most common choice and a good one, and a hail-rated shingle can be worth asking about.
-
-We also work with wood shake, metal and composite shake.
-
-Wood shake gives you the cedar look and takes more care. Metal sheds rain and snow and lasts. Composite shake, like the CeDUR line, is made to look like cedar without the upkeep.
-
-If you love the cedar look but want an asphalt shingle, Presidential Shake is the luxury shingle made to replicate it.
-
 We work with all roofing systems and brands, so the recommendation comes from your house, not from what we happen to stock. We ask what you want from the roof, then tell you what we'd do.
+
+**Asphalt shingle** The most common roof in Wichita and a good one. A hail-rated shingle can be worth asking about.
+
+**Presidential Shake** The luxury shingle made to replicate the look of cedar shakes. It gives you the cedar look on an asphalt roof.
+
+**Wood shake** Real cedar, with the look that goes with it. It takes more care than shingles.
+
+**Metal** Sheds rain and snow and lasts. A good fit when you want a roof you won't think about for a long time.
+
+**Composite shake** Made to look like cedar without the upkeep. The CeDUR line is one we work with.
 
 > "Then after asking questions to understand what I was looking for in my roof, they offered their professional opinion on what direction I should go."
 > — Alex M.
@@ -82,12 +92,15 @@ We'll say so. See [roof repair](/roof-repair-wichita-ks/) for how we handle thos
 ## Questions About Replacement
 
 **How do I know my roof needs replacing and not just repairing?**
+
 Damage spread across several slopes, shingles that curl or crack, leaks in more than one spot and a roof that's had repair after repair all point toward replacement. Damage in one place usually doesn't.
 
 **Do you handle the insurance paperwork?**
+
 We help you document the damage, meet your adjuster and get invoices to the insurer on time. The claim is yours, and the final say belongs to you and your insurance company.
 
 **Can I replace the roof without a claim?**
+
 Yes. A claim is only one way a roof gets replaced. Call and we'll inspect it either way.
 
 ## Get a Free Inspection

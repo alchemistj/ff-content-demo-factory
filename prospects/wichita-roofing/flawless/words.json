@@ -175,7 +175,7 @@
           "heading": "Roof Replacement and the Insurance Claim",
           "body": [
             "If hail or wind did the damage, your homeowner's policy may pay for the roof. Whether it does depends on what gets documented and how the claim is filed.",
-            "The adjuster looks at your roof once. Having someone there who knows what hail damage looks like, and what to point out, can be the difference between a claim that's approved and one that gets argued.",
+            "The adjuster looks at your roof once. Having someone there who knows what hail damage looks like, and what to point out, can change what the claim ends up covering.",
             "Age and wear aren't storm damage, and most policies won't pay for them. If your roof is simply old, we'll tell you at the inspection rather than file a claim that won't stand.",
             "You don't need to learn insurance language. You need to call and tell us when the adjuster is coming."
           ],
@@ -238,7 +238,7 @@
             },
             {
               "title": "We put the roof on.",
-              "text": "After approval, we schedule the crew. The upgraded shingle goes on with it."
+              "text": "Once the claim is settled, we schedule the crew. The upgraded shingle goes on with it."
             },
             {
               "title": "We clean up.",
@@ -332,7 +332,7 @@
         },
         {
           "type": "prose",
-          "heading": "From Storm Claim to Approved Roof",
+          "heading": "From Storm Claim to New Roof",
           "body": [
             "In Wichita, hail ends a lot of roofs years before age would. When it does, your homeowner's policy may pay for the replacement, so the claim is usually the first decision, not the last.",
             "Here's the path.",

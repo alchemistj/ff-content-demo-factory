@@ -12,17 +12,32 @@ The first job is to stop the water getting worse, before anyone talks about the 
 
 If a storm is coming, call and say so first. A tarp over the damaged area holds until the real repair can be done, and getting the water stopped comes before anyone prices anything.
 
+> "I had a roof leak that was going into my daughter’s closet. Ravi was out same day and offered to patch it for free with the incoming storm so the damage wouldn’t get worse! So helpful and informative. I would’ve been happy to pay for the tarp job but he insisted."
+> — Jordan T.
+
+## What Happens When You Call
+
+1. **You call.** Tell me what you're seeing: where the stain is, when it showed up, whether a storm came through.
+2. **We tarp if we need to.** If rain is coming, stopping the water goes first.
+3. **We inspect the roof.** Free. We find the source of the leak and look at the rest of the roof while we're up there.
+4. **You get a straight answer.** Repair, or replacement, and why.
+5. **We do the repair.** You get the price first.
+
 ## Where Roofs Leak
 
 The stain on your ceiling is almost never right under the hole. Water runs along the decking and the rafters before it shows, so the leak can be several feet from the stain.
 
 Most leaks start in the same handful of places:
 
-- **Flashing.** The metal around chimneys, walls and skylights gets bent and pulls loose, and water goes in behind it.
-- **Pipe boots.** The rubber collar around a vent pipe cracks in the sun long before the shingles wear out.
-- **Missing or lifted shingles.** Wind breaks the seal and lifts them, and the next rain gets under.
-- **Hail bruises.** A shingle hit by hail loses granules and cracks, and it leaks months later.
-- **Valleys.** Where two slopes meet, a lot of water runs through a small seam.
+**Flashing pulled loose** The metal around chimneys, walls and skylights gets bent and pulls loose, and water goes in behind it.
+
+**A cracked pipe boot** The rubber collar around a vent pipe cracks in the sun long before the shingles wear out.
+
+**Missing or lifted shingles** Wind breaks the seal and lifts them, and the next rain gets under.
+
+**Hail-bruised shingles** A shingle hit by hail loses granules and cracks, and it leaks months later.
+
+**Valleys** Where two slopes meet, a lot of water runs through a small seam.
 
 That's why we get on the roof. A leak you can only see from inside the house has to be traced from outside.
 
@@ -47,14 +62,6 @@ A repair makes sense when the damage is in one place and the rest of the roof ha
 Replacement makes sense when the damage is spread across the roof, the shingles are old and brittle, or the same roof keeps leaking in different places. At that point you'd be paying for repair after repair on a roof that's finished. See [roof replacement](/roof-replacement-wichita-ks/) for how that works, including the insurance claim and the free class 4 upgrade.
 
 If a repair is all you need, that's what I'll tell you. I'd rather fix a roof right than sell a roof you don't need.
-
-## What Happens When You Call
-
-1. **You call.** Tell me what you're seeing: where the stain is, when it showed up, whether a storm came through.
-2. **We tarp if we need to.** If rain is coming, stopping the water goes first.
-3. **We inspect the roof.** Free. We find the source of the leak and look at the rest of the roof while we're up there.
-4. **You get a straight answer.** Repair, or replacement, and why.
-5. **We do the repair.** You get the price first.
 
 ## How Long a Repair Takes
 

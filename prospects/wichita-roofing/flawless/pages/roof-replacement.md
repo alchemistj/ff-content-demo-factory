@@ -14,13 +14,13 @@ A patch fixes the spot you can see. It does nothing about the shingle next to it
 
 When the damage is across the whole roof, or the roof is simply old, replacing it costs less over time than patching it every spring. If the problem is one leak in one place, that's a [roof repair](/roof-repair-wichita-ks/), and I'll tell you so.
 
-## From Storm Claim to Approved Roof
+## From Storm Claim to New Roof
 
 In Wichita, hail ends a lot of roofs years before age would. When it does, your homeowner's policy may pay for the replacement, so the claim is usually the first decision, not the last.
 
 Here's the path.
 
-You call us. We inspect the roof for free and document what we find. We file the claim with your insurance company, and we work with your adjuster to get the roof approved.
+You call us. We inspect the roof for free and document what we find. We file the claim with your insurance company, and we work the claim with your adjuster.
 
 The adjuster is at your house once, for a short visit. What's been documented before they arrive, and who walks the roof with them, often decides how the claim goes.
 
@@ -32,10 +32,13 @@ On an insurance replacement, your policy decides what the claim pays, and your d
 
 If there's no claim, you pay for the roof, and the price comes from your roof, not a number off a chart. These are the things that move it:
 
-- **Size and pitch.** More squares of roof means more material, and a steep roof is slower and harder to work on.
-- **Layers.** Every old layer has to come off before the new roof goes on.
-- **Decking.** Wet or rotted boards under the shingles get replaced, and nobody knows how many until the old roof is off.
-- **The shingle.** Which one you pick changes both the price and the look.
+**Size and pitch** More squares of roof means more material, and a steep roof is slower and harder to work on.
+
+**Layers** Every old layer has to come off before the new roof goes on.
+
+**Decking** Wet or rotted boards under the shingles get replaced, and nobody knows how many until the old roof is off.
+
+**The shingle** Which one you pick changes both the price and the look.
 
 Anyone who quotes a roof over the phone hasn't seen yours. You get the number after the inspection, with each of those things explained.
 
@@ -43,6 +46,14 @@ Downspouts and gutter guards come with the replacement. Hail beats up gutters as
 
 > "Amazing experience from free estimate to project completion. Ravi has been a pleasure to work with. Flawless is top notch! If you want quality products and workmanship, give them a call."
 > — Matt S.
+
+## What Happens When You Call About a New Roof
+
+1. **You call.** Tell me how old the roof is or what the storm did. The inspection is free.
+2. **We inspect the roof.** On the roof, not from the driveway. You hear whether it's time to replace and why.
+3. **We file the claim.** If a storm did the damage, we file it and work it with your adjuster.
+4. **You get the price.** On a claim, you know what the policy pays and what your deductible is. Without one, you get a price for your roof.
+5. **The crew puts the roof on.** The free class 4 upgrade, downspouts and gutter guards go on with it, and the yard is cleaned before they leave.
 
 ## Choosing the Shingle
 

@@ -33,19 +33,23 @@ Call if you have a leak, storm damage or missing shingles. A phone call is the q
 
 If it's after hours or you'd rather write, use the form to send us your name, phone number and what the roof is doing, so we can call you back.
 
-> "Very pleasant experience. This company did a wonderful job replacing my siding and sending painters that did a great job as well. Anthony is very responsive to calls and text messages. He is great to work with."
-> — Theresa E.
+> "Very, very pleased with the new siding and paint job. Anothny and Alex do great work! Professional, courteous, and really know what theyre doing. Thank you for taking such good care of me and my home."
+> — Alex C.
 
 ## Questions Before You Call
 
 **Is the quote free?**
+
 Yes. Call (316) 295-2159 for a free quote.
 
 **Is there an email address?**
+
 We don't list one. Call (316) 295-2159, or use the form.
 
 **What happens after I call?**
+
 We set up a time to look at the roof. After we've seen it, you get a detailed estimate for what it needs.
 
 **Do you work outside Wichita?**
+
 We work in Wichita.

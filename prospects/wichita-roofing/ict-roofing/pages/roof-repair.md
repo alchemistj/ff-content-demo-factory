@@ -12,18 +12,35 @@ You come home after a windy night and there are shingles in the yard, or you spo
 
 Wind gets under the edge of a shingle whose seal has aged, and lifts it. Once one goes, its neighbors are easier to lift.
 
-We replace what blew off, check the shingles around it and make sure the new ones seal down. That's usually a small job, and it should be done before the next storm.
+We replace what blew off, check the shingles around it and make sure the new ones seal down. That's usually a small job, and it's best done soon, while the damage is still small.
 
 > "We lost several shingles from the strong winds last week and I wanted to get them replaced quickly. Juan and his team were quick to respond to our needs and had them replaced in just two days time."
 > — Matthew P.
+
+## What Happens When You Call
+
+A roof problem rarely waits for a good time, so it starts with a call back, not a week of phone tag. We set a time to come out and show up when we said we would.
+
+We get on the roof, or put a drone over it, and look at more than the spot you pointed to. Older shingles go brittle, and the ones next to the damage often tell us how much life the roof has left.
+
+Then we tell you what we found and what the repair will be before we do it. You get the repair and the reason, and if there's something bigger coming, you hear about it before it becomes an emergency.
 
 ## A Leak Isn't Always Where the Stain Is
 
 Water runs. It enters the roof in one place, travels along the decking or a rafter, and drips from a spot six feet away. That's why patching above the stain so often fails.
 
-The usual culprits are flashing, the metal around chimneys, vents, walls and skylights, along with pipe boots and valleys. A bead of caulk can cover a bad flashing job for a season. It doesn't fix it.
+We start at the stain and work upward and outward until we find where the water gets in. These are the usual places.
 
-We start at the stain and work upward and outward until we find where the water gets in. Then we fix that, whether it's a flashing that was set wrong, a cracked boot or a valley that was never sealed.
+**A stain near the chimney or an outside wall** Usually flashing, the metal where the roof meets brick or siding, that was set wrong or has pulled loose. A bead of caulk covers it for a season; we reset or replace the flashing.
+
+**A drip below a bathroom or kitchen vent** The rubber boot around the vent pipe dries out in the sun and cracks. We replace the boot and the shingles around it.
+
+**A leak where two roof slopes meet** Valleys carry more water than any other part of the roof, and some were never sealed properly. We open the valley and seal it the way it should have been.
+
+**A wet spot around a skylight** Skylights leak at their flashing more often than through the glass. We check the flashing first and fix what we find.
+
+> "After leaving a voicemail that the wind had blown off some shingles, I was called back the same day! We set a date and time for the estimate, and again he was punctual, clean, and professional. The repair was made as agreed upon."
+> — Stephen P.
 
 ## When the Leak Comes Back
 
@@ -42,17 +59,6 @@ If your roof is simply old and worn, we'll say that too. We'd rather tell you a 
 
 When replacement is the honest answer, here's what [a full roof replacement](/roof-replacement-wichita-ks/) looks like.
 
-## What a Repair Visit Looks Like
-
-A roof problem rarely waits for a good time, so it starts with a call back, not a week of phone tag. We set a time to come out and show up when we said we would.
-
-We get on the roof, or put a drone over it, and look at more than the spot you pointed to. Older shingles go brittle, and the ones next to the damage often tell us how much life the roof has left.
-
-Then we tell you what we found and what the repair will be before we do it. You get the repair and the reason, and if there's something bigger coming, you hear about it before it becomes an emergency.
-
-> "After leaving a voicemail that the wind had blown off some shingles, I was called back the same day!  We set a date and time for the estimate, and again he was punctual, clean, and professional.  The repair was made as agreed upon."
-> — Stephen P.
-
 ## No Upsell
 
 You called about a repair, so that's what you get. If we notice something else on the roof, we show you and let you decide.
@@ -67,15 +73,19 @@ If a storm hit and you're not sure whether there's damage, start with an inspect
 ## Questions About Repairs
 
 **How soon should I fix missing shingles?**
+
 As soon as you reasonably can. Exposed underlayment can let water in, and the next wind or storm makes it worse.
 
 **Why is my ceiling stained but the roof looks fine?**
+
 Water often travels from the entry point before it shows. Flashing, vent boots and valleys are the first places we check.
 
 **Will a repair match my old shingles?**
+
 Close, usually, but not perfectly. Sun fades shingles, so new ones can look a shade different at first. If the old roof is discontinued or too brittle to work on, we'll tell you.
 
 **Does an inspection cost anything?**
+
 No. Inspections are free.
 
 ## Call for a Free Inspection

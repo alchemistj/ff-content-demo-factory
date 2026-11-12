@@ -38,8 +38,4 @@ If you've already filed a claim, tell me when the adjuster is coming.
 
 ## Where We Are
 
-Flawless Roofing Co, 928 S Broadway, Wichita, Kansas 67211.
-
-Monday to Friday, 10:00 AM to 6:00 PM. We serve Wichita.
-
-The inspection is free. See [roof replacement](/roof-replacement-wichita-ks/) or [roof repair](/roof-repair-wichita-ks/) for what each involves.
+Flawless Roofing Co, 928 S Broadway, Wichita, Kansas 67211. Monday to Friday, 10:00 AM to 6:00 PM. We serve Wichita. The inspection is free. See [roof replacement](/roof-replacement-wichita-ks/) or [roof repair](/roof-repair-wichita-ks/) for what each involves.

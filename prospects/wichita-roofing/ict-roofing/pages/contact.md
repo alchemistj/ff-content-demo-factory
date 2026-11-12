@@ -21,9 +21,7 @@ If we miss your call, leave a message with your name and what you're seeing. We 
 
 ## Where We Are
 
-ICT Roofing & Exteriors
-3500 N Rock Rd, Bldg. 1800
-Wichita, KS 67226
+ICT Roofing & Exteriors 3500 N Rock Rd, Bldg. 1800 Wichita, KS 67226
 
 We serve Wichita homeowners. It's a free inspection, so you don't need to be sure you have a problem before you call.
 
@@ -46,10 +44,13 @@ You won't be left guessing. We tell you when we're coming to inspect, what we fo
 ## Questions Before You Call
 
 **Is the inspection free?**
+
 Yes.
 
 **Do I need to file a claim first?**
+
 No. Call us first if you like. We'll tell you what we find, and you decide whether a claim makes sense.
 
 **Do you do repairs or only whole roofs?**
+
 Both. See [roof repair](/roof-repair-wichita-ks/) and [roof replacement](/roof-replacement-wichita-ks/).

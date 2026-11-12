@@ -18,11 +18,15 @@ If you can see daylight, a hole or a missing section, call as soon as we're open
 
 Most roof leaks are not a worn-out roof. We trace most of them to a short list of small places:
 
-- **Flashing.** The metal around chimneys, walls and skylights that bends, rusts or pulls loose.
-- **Vent boots.** The rubber collars around plumbing pipes crack in the sun years before the shingles do.
-- **Chimney chases and caps.** The framed box around a chimney leaks at the joints and the siding where it meets the roof.
-- **Missing or lifted shingles.** Wind breaks the seal on a shingle and then rips it off the next time it blows.
-- **Valleys.** Where two slopes meet, all the water runs through one narrow channel.
+**Flashing** The metal around chimneys, walls and skylights bends, rusts or pulls loose. Water slips behind it and runs down inside the wall or onto the ceiling.
+
+**Vent boots** The rubber collars around plumbing pipes crack in the sun years before the shingles do. Replacing one is a short job.
+
+**Chimney chases and caps** The framed box around a chimney leaks at its joints and where its siding meets the roof. The stain shows up inside and looks like a roof leak.
+
+**Missing or lifted shingles** Wind breaks the seal on a shingle and rips it off the next time it blows. The felt underneath can't keep out rain for long.
+
+**Valleys** Where two slopes meet, all the water runs through one narrow channel. Worn or badly cut valleys are a common leak point.
 
 Each of these costs far less to fix than a roof. The trick is finding which one it is.
 
@@ -36,6 +40,12 @@ We repair storm-damaged roofs, from a few shingles to the larger jobs. If the da
 
 > "My roof got really messed up by a bad wind and River City Roofing made it super quick and easy to get it fixed. Anthony was very friendly and easy to work with and the guys on the crew really worked their tails off to get my roof done quickly!"
 > — Jordan S.
+
+## What Happens When You Call About a Leak
+
+Call (316) 295-2159 and tell us where the water shows up, when it started and whether a storm came first. We set a time to come look.
+
+Someone from River City checks the attic, then the roof, and finds the opening. You get a detailed estimate for the repair that stops it before we start.
 
 ## How We Find the Leak
 
@@ -54,10 +64,13 @@ We'd rather fix a roof that can be fixed. If most of the roof is sound and the d
 
 Here's when we'll tell you it's time to stop repairing:
 
-- Shingles are curling, cracking or bare across the whole slope.
-- The roof has been repaired several times and still leaks.
-- The decking is soft or sagging in more than a small spot.
-- Granules are collecting in your gutters.
+**Shingles curling, cracking or bare across the whole slope** The roof is worn out, not damaged in one spot. A patch holds a season, not years.
+
+**Repaired several times and still leaking** New leaks keep opening in old shingles. The repairs start to add up to the price of a roof.
+
+**Soft or sagging decking** If more than a small spot of wood is soft, water has been getting in for a while. That wood has to be replaced, and so does the roof over it.
+
+**Granules collecting in your gutters** Shingles shed their grit as they age. A lot of it in the gutters means the surface protecting them is nearly gone.
 
 In that case the next step is a [roof replacement](/roof-replacement-wichita-ks/), and we'll show you why. If it's a repair, we'll say that too.
 
@@ -77,6 +90,4 @@ Take photos of the damage and the date of the storm, and keep any receipts for t
 
 ## Call Before It Rains Again
 
-Call (316) 295-2159 for a free quote, Monday to Friday, 8:00 AM to 4:30 PM. Tell us what you're seeing and when it started.
-
-If the leak turns out to be a worn-out roof, we'll tell you. If it's a small fix, we'll tell you that too. See [roof replacement](/roof-replacement-wichita-ks/) for how we handle a full new roof.
+Call (316) 295-2159 for a free quote, Monday to Friday, 8:00 AM to 4:30 PM. Tell us what you're seeing and when it started. If the leak turns out to be a worn-out roof, we'll tell you. If it's a small fix, we'll tell you that too. See [roof replacement](/roof-replacement-wichita-ks/) for how we handle a full new roof.
