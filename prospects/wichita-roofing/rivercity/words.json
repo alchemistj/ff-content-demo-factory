@@ -82,7 +82,7 @@
       "hero": {
         "eyebrow": "Wichita, KS · Local, Family-Owned",
         "h1": "Roofing Company in Wichita, KS — River City Roofing",
-        "sub": "River City Roofing is a local, family-owned roofing company, and Anthony is the person you deal with from the first look to the final inspection. You get a detailed estimate before any work starts, and he comes back after the crew leaves to make sure the roof is right. Call for a free quote.",
+        "sub": "River City Roofing is a local, family-owned roofing company, and Anthony looks at your roof before any price is written. After the crew leaves, we come back and check the job ourselves. Call for a free quote.",
         "primaryCta": {
           "label": "Call (316) 295-2159",
           "action": "call"
@@ -105,11 +105,12 @@
         },
         {
           "type": "split",
-          "heading": "First Look. Final Inspection. Same Person.",
+          "heading": "The Job Isn't Done Until We've Checked It.",
           "body": [
             "Most roofing jobs change hands along the way. One person writes the price, a crew you've never met tears off the roof, and once the last nail is in, nobody comes back to look.",
             "If something isn't right a month later, you're the one chasing them down.",
-            "We stay with your roof from the first look to the final inspection. Anthony gets into the attic and up on the roof to find out what's really wrong, and you get a detailed estimate for that, not for a roof nobody looked at.",
+            "We come back after the job and check it ourselves.",
+            "It starts with Anthony getting into the attic and up on the roof to find out what's really wrong, so the price is for your roof, not for one nobody looked at.",
             "When the work is done, the crew walks the yard for anything that came off the roof. Then Anthony comes back to check the job, so the person who looked at your roof first is the one who signs off on it."
           ],
           "list": [
@@ -118,7 +119,7 @@
             "Roofing, gutters, siding, windows and paint from one local company",
             "A detailed estimate for what the roof actually needs",
             "Crew walks the yard for nails and scraps when the job is done",
-            "A final inspection after the work"
+            "Anthony comes back to check the job after the crew leaves"
           ],
           "listStyle": "checks",
           "image": {

@@ -89,7 +89,7 @@
       "hero": {
         "eyebrow": "Wichita, KS · Local Roofing Company · Free Roof Inspections",
         "h1": "Roofing Company in Wichita, KS — ICT Roofing & Exteriors",
-        "sub": "I'm Juan, founder of ICT Roofing & Exteriors. We inspect your roof for free, document what the storm did, and meet your adjuster on the roof so the claim covers the whole job. Call for your free inspection.",
+        "sub": "I'm Juan, founder of ICT Roofing & Exteriors. We meet your adjuster on your roof, so the claim covers what the storm actually did. The inspection before that is free. Call for your free inspection.",
         "primaryCta": {
           "label": "Call (316) 796-6722",
           "action": "call"
@@ -112,10 +112,10 @@
         },
         {
           "type": "split",
-          "heading": "Inspect Free. Stay With Your Claim.",
+          "heading": "On the Roof When the Adjuster Is.",
           "body": [
             "After a big hailstorm, the door-knockers show up. Storm chasers sign you up, take whatever the insurance paperwork says, and replace only what the adjuster wrote down. If that's two slopes of a roof that took hail everywhere, you're left with the rest.",
-            "We work the other way. We inspect for free, then stay with your claim until it covers what the storm actually did to your roof.",
+            "We work the other way. We meet your adjuster on your roof, so the claim covers what the storm actually did.",
             "We get on the roof, or put a drone over it, and photograph what we find. Then we tell you plainly whether there's a claim worth filing.",
             "If there is, Brady or Arturo meets your adjuster at the house and walks the roof with them. If the offer covers part of a roof that's damaged all over, we push back.",
             "We can't tell you what your insurance company will pay, and nobody honest can. We can make sure they see everything that's on your roof."
@@ -126,9 +126,9 @@
             "brief": "two-story house with a new shingle roof and a clean ridge line, house on the right, driveway leading off to the left, soft overcast sky behind the text side, no readable text, no people"
           },
           "list": [
-            "Free roof inspections, on any roof",
+            "Free roof inspection before any claim",
             "Drone photos when that's the clearest view of the damage",
-            "Brady or Arturo meets your adjuster at the house",
+            "Brady or Arturo walks the roof with your adjuster",
             "We push back on partial and denied claims",
             "Juan, our founder, checks roofs himself",
             "A local Wichita company, at 3500 N Rock Rd"
@@ -273,7 +273,7 @@
         {
           "type": "callBand",
           "heading": "Get Your Roof Looked At",
-          "text": "Call and one of us will come out, get on the roof and tell you what's there. The inspection is free, and if there's a claim, we stay with your claim until it's settled. Call (316) 796-6722."
+          "text": "Call and one of us will come out, get on the roof and tell you what's there. The inspection is free, and if there's a claim, we'll be up there when your adjuster is. Call (316) 796-6722."
         }
       ]
     },
