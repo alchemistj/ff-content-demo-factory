@@ -2,7 +2,7 @@
 
 Hey Juan and the ICT team,
 
-My daughter and I build websites for service businesses. Reading your reviews, people keep saying you inspected for free, met their adjuster on the roof and fought until the claim covered the whole roof. That's exactly what our method is built around, so we made you a website mockup:
+My daughter and I build websites for service businesses. Your reviews keep naming you, Brady and Arturo for free inspections and for being on the roof with the adjuster. That's exactly what our method is built around, so we made you a website mockup:
 
 https://ictroofing.websitepreview.fluidframemarketing.com/
 

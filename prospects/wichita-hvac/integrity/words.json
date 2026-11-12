@@ -614,7 +614,7 @@
     "whyHeading": "Why we built this site",
     "why": [
       "Your heating and AC pages promise “24/7 Emergency Repair Service.” Your contact page says Monday to Friday, 8 to 5, weekends “at additional cost.” Someone with no heat on a Saturday gets two answers, and that is the call you most need to win.",
-      "Your customers already describe the weekend calls you answer. Dayna B.: “Our AC went out called and Sam here in hour on a Saturday morning.” Madison S.: “shoot you straight.” Today those words sit on Google, not on your site.",
+      "Your customers already describe the weekend calls you answer. Dayna B. says you were there within an hour on a Saturday morning, and Madison S. says you shoot straight with people. Today those words sit on Google, not on your site.",
       "So the demo tells one story everywhere: your hours, and what to do when the system quits outside them. It opens with HVAC company in Wichita, KS, and gives AC repair and furnace repair a page each."
     ],
     "cardsHeading": "Be the HVAC Company People Find on Google",
@@ -632,7 +632,7 @@
           "A headline that says HVAC company in Wichita, KS, right at the top.",
           "A homepage section for heat pumps, motors and commercial buildings."
         ],
-        "alsoAdd": "On day one, we sit down with you to get what makes you the obvious choice, every service you offer and every town you work in. That becomes the prescription: how many pages, in how many towns, so Google and AI tools can find you for every service."
+        "alsoAdd": "On day one, we sit down with you to get what makes you the obvious choice, every service you offer and every town you work in. From that we plan how many pages, in how many towns, so Google and AI tools can find you for every service."
       },
       {
         "route": "/ac-repair-wichita-ks/",
@@ -690,7 +690,7 @@
       },
       {
         "label": "Each money service has its own page",
-        "status": "Missing"
+        "status": "Needs work"
       },
       {
         "label": "Phone number one tap away",

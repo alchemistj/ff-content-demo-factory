@@ -723,8 +723,8 @@
   "strategy": {
     "whyHeading": "Why we built this site",
     "why": [
-      "Your Google reviews already make your case, naming Juan, Brady and Arturo again and again for meeting adjusters and fighting insurance companies for whole roofs.",
-      "Your website hides all of it. Every browser tab reads \"Your Site Title\", no page has a headline, and the Roofing button on your homepage opens a hotel page with rooms at $100 to $400 a night.",
+      "Your Google reviews already make your case, naming Juan, Brady and Arturo again and again for meeting adjusters and staying with the claim.",
+      "Your website hides all of it. Every browser tab reads \"Your Site Title\", no headline says roofing or Wichita, and the Roofing button on your homepage opens a hotel page with rooms at $100 to $400 a night.",
       "So we built this site around the work your reviews describe."
     ],
     "cardsHeading": "Be the Roofing Company People Find on Google",
@@ -736,8 +736,8 @@
         "why": "The page Google reads to learn who you are and where you work.",
         "problems": [
           "The biggest line on your homepage, \"Built on Integrity, Backed by Experience.\", never says roofing or Wichita, so Google can't tell you're a roofing company in Wichita.",
-          "None of your Google reviews appear on the page; the few testimonials have no names.",
-          "Your \"About\" button opens the insurance page, so no page says who Juan, Brady and Arturo are."
+          "None of your Google reviews appear on the page.",
+          "Your \"About\" button opens the insurance page, so the only team info is two names on your contact page."
         ],
         "fixes": [
           "A headline that says roofing company in Wichita, KS, right at the top.",

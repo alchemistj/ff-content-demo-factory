@@ -691,7 +691,7 @@
         "why": "The page Google reads to learn who you are and where you work.",
         "problems": [
           "The tap-to-call links at the bottom of every page dial 123-456-7890, and the number at the top can't be tapped, so nobody on a phone can call you in one tap.",
-          "No page shows a headline. The hidden one Google reads says \"Home\", so it can't tell you're a roofing company in Wichita.",
+          "Every page's real headline is hidden, and the one Google reads says \"Home\", so it can't tell you're a roofing company in Wichita.",
           "None of your Google reviews appear on the site, so visitors never see what your customers say."
         ],
         "fixes": [
