@@ -1,0 +1,55 @@
+# Avatar and scored USP (Ted's method, Josh 2026-11-12)
+
+Brief: ff-architect issue #651. This method comes from Ted, Josh's copywriter, and is modeled on his SRA Positioning Brief. **Copy the structure of Ted's documents, never their facts.** His drafts were chatbot-assisted and include invented stats and guarantees. Josh's hard nos still apply: no invented licenses, certifications, awards, years, family history, prices, guarantees or warranties, and nothing about legal or insurance outcomes.
+
+## 1. Trade avatar (`avatars/<trade>.md`, built once and reused across prospects)
+Format adapted from Ted's Ben Davis avatar analysis and the SRA brief.
+- **The buyers.** Usually 2 or 3: the primary homeowner, a landlord or property manager, and a referrer such as an insurance agent or realtor. Each one is messaged differently.
+- **The primary avatar.** Give them a name and a short description: age, home, situation, and how they found you.
+- **The identity iceberg.** What they say publicly, what they admit privately, and what they won't admit to anyone.
+- **Parking-lot moments.** One short scene for each trigger, the moment they decide to call. Use plain, specific, local details.
+- **Top 5 fears, ranked by emotional intensity.** Each has a one-line explanation.
+- **Top 5 objections.** Write each as the surface objection, then the underlying fear.
+- **Top 5 wants.** Practical and emotional.
+- **Past bad experiences.** What happened with the last contractor.
+- **Their words.** A voice-of-customer table: what customers say vs. how marketers wrongly put it. Quote real reviews word for word and cite the source: `prospect/reviews.json, Reviewer X.`.
+- **Phrases to use and phrases to avoid.**
+- **Tone and triggers.**
+- **What's thin.** Where the sourcing is weak, and what an owner call would sharpen.
+
+## 2. USP table (`prospects/<trade>/<slug>/usp.md`)
+Ted's SRA table: **Claim | Appeal | Exclusivity | Score | Evidence**. Score = Appeal × Exclusivity, and **16 or more = primary USP**.
+
+- **Claims.** List 8 to 10 claims drawn from facts.md, the reviews and the prospect's own site. Each claim must be true for this business. Bold inference from reviews is fine, for example "came out on a holiday" supports "weekend and holiday calls".
+- **Appeal** is tied to the trade avatar's ranked fears and wants:
+  - 5 = hits the #1 or #2 fear or want directly.
+  - 4 = a top-5 fear or want.
+  - 3 = nice to have.
+  - 2 = rarely considered.
+  - 1 = they don't care.
+- **Exclusivity** is checked against the top 5 local competitors in `competitors/wichita-<trade>.md`. Name them in Evidence.
+  - 5 = no competitor offers it.
+  - 4 = competitors claim it, but not this specifically or this strongly.
+  - 3 = some claim it, few prove it.
+  - 2 = one or two named competitors also hold it.
+  - 1 = every competitor offers it (table stakes).
+- **Braids.** A claim can braid two true things into one ownable position, as SRA did with "Documented Before. Defended After." Score the braid as its own row only if both halves are true.
+
+**The gate.** The hero, the method section and the outreach message may lead only with a claim scoring 16 or more. If no honest claim reaches 16:
+- Lead with the best honest claim.
+- Mark the demo "below gate".
+- Propose one offer the business could adopt, scored the same way. It appears on the strategy page only, in a card titled "The offer we'd build with you", never in the hero.
+
+Each `usp.md` also includes:
+- Three USP statements, written as Option A (pain point), Option B (method) and Option C (emotional outcome).
+- The pick and why.
+- A brand short form of 3 to 6 words.
+- A promise ladder: General > Specific > Cinematic > Emotional > Core transformation. The ladder sets the hero subline and the section order.
+
+## 3. How the copy uses it
+- **Hero:** says the USP.
+- **Problem section:** the avatar's #1 fear, in their words.
+- **Method section:** shows how the USP works.
+- **FAQ:** answers the avatar's top objections.
+- **Outreach message:** leads with the USP. It keeps the form's limits, the plain link and the solicitation line.
+- **Strategy page:** adds a plain "Why we led with X", with the top 3 rows of the score table.
