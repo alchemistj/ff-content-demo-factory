@@ -1,6 +1,6 @@
 **Eyebrow:** Furnaces and water heaters, installed by people you can text
 
-# Heater Installation in Wichita, KS — Dream Makers LLC Heating and Cooling
+# Heater Installation in Wichita, KS — Dream Makers Heating and Cooling
 
 When a furnace dies in a Kansas winter or the shower runs cold, you need a new heater put in right, by someone who answers when you call. Call or text Nate at (316) 871-5085.
 
@@ -94,4 +94,4 @@ Yes. Text what the heater is doing, and Nate will answer.
 
 ## Call or Text Nate About Your Heater
 
-Call or text Nate at (316) 871-5085. Dream Makers LLC Heating and Cooling, 5720 1/2 S Broadway, Wichita, KS 67216.
+Call or text Nate at (316) 871-5085. Dream Makers Heating and Cooling, 5720 1/2 S Broadway, Wichita, KS 67216.

@@ -1,8 +1,8 @@
 **Eyebrow:** Wichita, KS · Heating, Cooling and Water Heaters
 
-# Heating and Air Conditioning Company in Wichita, KS — Dream Makers LLC Heating and Cooling
+# Heating and Air Conditioning Company in Wichita, KS — Dream Makers Heating and Cooling
 
-Text or call Nate, and the person who answers is the person who comes out. Dream Makers LLC Heating and Cooling repairs and installs furnaces, air conditioners, heat pumps and water heaters in Wichita, for homes and businesses, renters included. Call or text (316) 871-5085.
+Text or call Nate, and the person who answers is the person who comes out. Dream Makers Heating and Cooling repairs and installs furnaces, air conditioners, heat pumps and water heaters in Wichita, for homes and businesses, renters included. Call or text (316) 871-5085.
 
 **Buttons:** Call (316) 871-5085 | Request a Quote
 
@@ -81,7 +81,7 @@ Yes. Text what the unit is doing and what you've already checked: the thermostat
 
 **Will Nate be the one who comes to the house?**
 
-On repairs, yes: Nate answers and comes out. On bigger jobs, like installing mini splits, his team comes with him. You can ask who is coming when you book.
+That's how reviewers describe it: Nate answers and comes out on repairs. On bigger jobs, like installing mini splits, his team comes with him. You can ask who is coming when you book.
 
 **Will you remember my system next year?**
 
@@ -105,4 +105,4 @@ Wichita is home base. Text your address and we'll tell you whether we can get to
 
 ## Call or Text Nate
 
-Tell Nate what isn't heating or cooling. Dream Makers LLC Heating and Cooling, 5720 1/2 S Broadway, Wichita, KS 67216. Phone (316) 871-5085.
+Tell Nate what isn't heating or cooling. Dream Makers Heating and Cooling, 5720 1/2 S Broadway, Wichita, KS 67216. Phone (316) 871-5085.

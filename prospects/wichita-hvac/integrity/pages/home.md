@@ -1,8 +1,8 @@
-**Eyebrow:** Wichita, KS · Family-Owned · Licensed and Insured
+**Eyebrow:** Wichita, KS · Family-Owned · All Major Brands
 
 # HVAC Company in Wichita, KS — Integrity Heating and Cooling
 
-I'm Sam. Integrity repairs and replaces furnaces and air conditioners for homes, rentals and businesses across Greater Wichita, and you hear the price before we touch anything. Call for a free phone consultation.
+I'm Sam. Integrity repairs and replaces furnaces and air conditioners for homes, rentals and businesses across Greater Wichita, and I take the calls myself, weekends and holidays included. Call for a free phone consultation.
 
 **Buttons:** Call (316) 932-9559 | Request Service
 
@@ -19,9 +19,9 @@ After hours, the price comes over the phone before anyone drives out. It costs m
 
 - Free phone consultation before anything else
 - Full cost breakdown before the work starts
-- After-hours price quoted on the phone
-- Owner on the phone: I take calls myself when I can
-- Licensed and insured, all major brands
+- Weekend and holiday calls answered
+- Sam on the phone: I take calls myself when I can
+- All major brands, and a clean job site when we leave
 
 ## Furnace and AC Repair in Wichita: Find the Cause, Then Fix It
 
@@ -43,7 +43,7 @@ Every one of these starts the same way: a free phone consultation, then the pric
 
 [See AC repair in Wichita →](/ac-repair-wichita-ks/)
 
-> "After having worked with many HVAC companies over the years in Wichita, Integrity Heating and Cooling has become the only company I work with. Sam and his team are outstanding in every way. They are dependable and accountable, best prices around, courteous and respectful, and always leave the place exactly as they found it (i.e., they never leave a mess). They completely replaced the furnace and A/C unit at my mother's house, and they way the treater her, her house and the entire project really made an impression on me."
+> "After having worked with many HVAC companies over the years in Wichita, Integrity Heating and Cooling has become the only company I work with. Sam and his team are outstanding in every way. They are dependable and accountable, best prices around, courteous and respectful, and always leave the place exactly as they found it (i.e., they never leave a mess). They completely replaced the furnace and A/C unit at my mother's house …"
 > — Brett J.
 
 ## Heating and Cooling Services
@@ -58,9 +58,9 @@ Every one of these starts the same way: a free phone consultation, then the pric
 
 ## When a Repair Stops Making Sense
 
-A company that also sells new systems has a reason to call yours finished. We put the repair price next to the price of a new system, and you decide.
+A company that also sells new systems has a reason to call yours finished. We lay the repair next to a new system, and you decide.
 
-Here's a rule you can check yourself. If it's a capacitor, an igniter or a motor, repair it. If the system is old and the repairs keep coming, or the compressor or heat exchanger has failed, that's when to price a new one.
+Here's a rule you can check yourself. If it's a capacitor, an igniter or a motor, repair it. If the system is old and the repairs keep coming, or the compressor or heat exchanger has failed, that's when to look at a new one.
 
 When it is time, we install new furnaces and air conditioners, and financing is available.
 
@@ -76,7 +76,7 @@ A tenant without heat can't wait for a busy contractor, and a short-term rental 
 ## What We Owe You
 
 - A clean house when we leave. A repair shouldn't leave you a second job.
-- Work we stand behind. If something isn't right, call us and we'll make it right.
+- A call back from me. I take calls myself when I can, Saturdays, Sundays and holidays included.
 - A name to live up to. The name is Integrity, and I have to live up to it on every job.
 
 > "The service was expedient, thorough and reliable. I especially appreciated they live by their name, Integrity. They were punctual so l could plan around their arrival. They left the area clean. The price was comparable."
@@ -104,15 +104,11 @@ It depends on what failed. A capacitor or an igniter is a small repair; a compre
 
 **What if it quits at night or on a weekend?**
 
-Call anyway. Our office hours are Monday to Friday, 8 AM to 5 PM. After-hours work costs more, and you get that price on the phone before anyone drives out.
+Call anyway. Our office hours are Monday to Friday, 8 AM to 5 PM, but customers have reached me on a Saturday morning, a Sunday and a holiday.
 
 **Who will I talk to?**
 
 I'm Sam. I take calls myself when I can, and a technician comes out to your house.
-
-**Do you have a maintenance plan?**
-
-Yes. It's $150 a year and includes up to 15% off most equipment and labor costs.
 
 **Do you work on commercial buildings?**
 
@@ -120,4 +116,4 @@ Yes, for businesses and landlords as well as homes.
 
 ## Call Sam at Integrity
 
-Call (316) 932-9559 for a free phone consultation. You'll hear what we think it is, what it costs and what we'd do, and then you decide. Integrity Heating and Cooling, 801 S Fabrique Dr, Wichita.
+Call (316) 932-9559 for a free phone consultation. You'll hear what we think it is and what we'd do, and then you decide. Integrity Heating and Cooling, 801 S Fabrique Dr, Wichita.

@@ -1,6 +1,6 @@
 **Eyebrow:** Contact
 
-# Contact Dream Makers LLC Heating and Cooling
+# Contact Dream Makers Heating and Cooling
 
 The fastest way to reach us is to call or text (316) 871-5085. You'll get Nate.
 
@@ -24,4 +24,4 @@ If it's heating or cooling in a Wichita home or business, just reach out.
 
 ## Where We Are
 
-Dream Makers LLC Heating and Cooling, 5720 1/2 S Broadway, Wichita, KS 67216. We serve Wichita and the surrounding communities.
+Dream Makers Heating and Cooling, 5720 1/2 S Broadway, Wichita, KS 67216. We serve Wichita and the surrounding communities.

@@ -1,6 +1,6 @@
 **Eyebrow:** Fix the part, not the whole system
 
-# HVAC Parts Replacement in Wichita, KS — Dream Makers LLC Heating and Cooling
+# HVAC Parts Replacement in Wichita, KS — Dream Makers Heating and Cooling
 
 When your air conditioner hums but won't start, or the furnace blows cold, the fix is often one part, not a new system. Call or text Nate at (316) 871-5085.
 
@@ -102,4 +102,4 @@ A new part in a worn-out system can. That's why the repair-or-replace question c
 
 ## Call or Text Nate
 
-Dream Makers LLC Heating and Cooling, 5720 1/2 S Broadway, Wichita, KS 67216. Phone (316) 871-5085.
+Dream Makers Heating and Cooling, 5720 1/2 S Broadway, Wichita, KS 67216. Phone (316) 871-5085.

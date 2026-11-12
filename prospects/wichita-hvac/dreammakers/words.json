@@ -1,7 +1,7 @@
 {
   "schema": "words-package/v1",
   "business": {
-    "name": "Dream Makers LLC Heating and Cooling",
+    "name": "Dream Makers Heating and Cooling",
     "slug": "dreammakers",
     "city": "Wichita",
     "state": "KS",
@@ -76,12 +76,12 @@
       "navLabel": "Home",
       "keyword": "heating and air conditioning company Wichita KS",
       "seo": {
-        "title": "Heating and Air Conditioning Company in Wichita, KS | Dream Makers LLC Heating and Cooling",
+        "title": "Heating and Air Conditioning Company in Wichita, KS | Dream Makers Heating and Cooling",
         "description": "Heating and air conditioning company in Wichita, KS where you text or call Nate and he comes out. Repairs, installs and parts. Call (316) 871-5085."
       },
       "hero": {
         "eyebrow": "Wichita, KS · Heating, Cooling and Water Heaters",
-        "h1": "Heating and Air Conditioning Company in Wichita, KS — Dream Makers LLC Heating and Cooling",
+        "h1": "Heating and Air Conditioning Company in Wichita, KS — Dream Makers Heating and Cooling",
         "primaryCta": {
           "label": "Call (316) 871-5085",
           "action": "call"
@@ -95,7 +95,7 @@
           "alt": "Technician opening a furnace cabinet in a home utility room",
           "brief": "HVAC pool r1: furnace-hero"
         },
-        "sub": "Text or call Nate, and the person who answers is the person who comes out. Dream Makers LLC Heating and Cooling repairs and installs furnaces, air conditioners, heat pumps and water heaters in Wichita, for homes and businesses, renters included. Call or text (316) 871-5085."
+        "sub": "Text or call Nate, and the person who answers is the person who comes out. Dream Makers Heating and Cooling repairs and installs furnaces, air conditioners, heat pumps and water heaters in Wichita, for homes and businesses, renters included. Call or text (316) 871-5085."
       },
       "sections": [
         {
@@ -214,7 +214,7 @@
             },
             {
               "q": "Will Nate be the one who comes to the house?",
-              "a": "On repairs, yes: Nate answers and comes out. On bigger jobs, like installing mini splits, his team comes with him. You can ask who is coming when you book."
+              "a": "That's how reviewers describe it: Nate answers and comes out on repairs. On bigger jobs, like installing mini splits, his team comes with him. You can ask who is coming when you book."
             },
             {
               "q": "Will you remember my system next year?",
@@ -241,7 +241,7 @@
         {
           "type": "callBand",
           "heading": "Call or Text Nate",
-          "text": "Tell Nate what isn't heating or cooling. Dream Makers LLC Heating and Cooling, 5720 1/2 S Broadway, Wichita, KS 67216. Phone (316) 871-5085."
+          "text": "Tell Nate what isn't heating or cooling. Dream Makers Heating and Cooling, 5720 1/2 S Broadway, Wichita, KS 67216. Phone (316) 871-5085."
         }
       ]
     },
@@ -251,12 +251,12 @@
       "navLabel": "Heater Installation",
       "keyword": "heater installation Wichita KS",
       "seo": {
-        "title": "Heater Installation in Wichita, KS | Dream Makers LLC Heating and Cooling",
+        "title": "Heater Installation in Wichita, KS | Dream Makers Heating and Cooling",
         "description": "Furnace and water heater installation in Wichita, KS from a company where you text or call Nate and he comes out. Call or text for a quote."
       },
       "hero": {
         "eyebrow": "Furnaces and water heaters, installed by people you can text",
-        "h1": "Heater Installation in Wichita, KS — Dream Makers LLC Heating and Cooling",
+        "h1": "Heater Installation in Wichita, KS — Dream Makers Heating and Cooling",
         "primaryCta": {
           "label": "Call (316) 871-5085",
           "action": "call"
@@ -400,7 +400,7 @@
         {
           "type": "callBand",
           "heading": "Call or Text Nate About Your Heater",
-          "text": "Call or text Nate at (316) 871-5085. Dream Makers LLC Heating and Cooling, 5720 1/2 S Broadway, Wichita, KS 67216."
+          "text": "Call or text Nate at (316) 871-5085. Dream Makers Heating and Cooling, 5720 1/2 S Broadway, Wichita, KS 67216."
         }
       ]
     },
@@ -410,12 +410,12 @@
       "navLabel": "Parts Replacement",
       "keyword": "HVAC parts replacement Wichita KS",
       "seo": {
-        "title": "HVAC Parts Replacement in Wichita, KS | Dream Makers LLC Heating and Cooling",
+        "title": "HVAC Parts Replacement in Wichita, KS | Dream Makers Heating and Cooling",
         "description": "HVAC parts replacement in Wichita, KS: fix the failed part, not the whole system. Call or text Dream Makers."
       },
       "hero": {
         "eyebrow": "Fix the part, not the whole system",
-        "h1": "HVAC Parts Replacement in Wichita, KS — Dream Makers LLC Heating and Cooling",
+        "h1": "HVAC Parts Replacement in Wichita, KS — Dream Makers Heating and Cooling",
         "primaryCta": {
           "label": "Call (316) 871-5085",
           "action": "call"
@@ -564,7 +564,7 @@
         {
           "type": "callBand",
           "heading": "Call or Text Nate",
-          "text": "Dream Makers LLC Heating and Cooling, 5720 1/2 S Broadway, Wichita, KS 67216. Phone (316) 871-5085."
+          "text": "Dream Makers Heating and Cooling, 5720 1/2 S Broadway, Wichita, KS 67216. Phone (316) 871-5085."
         }
       ]
     },
@@ -574,12 +574,12 @@
       "navLabel": "Contact",
       "keyword": "contact Dream Makers Heating and Cooling Wichita",
       "seo": {
-        "title": "Contact | Dream Makers LLC Heating and Cooling",
+        "title": "Contact | Dream Makers Heating and Cooling",
         "description": "Call or text (316) 871-5085. 5720 1/2 S Broadway, Wichita, KS 67216."
       },
       "hero": {
         "eyebrow": "Contact",
-        "h1": "Contact Dream Makers LLC Heating and Cooling",
+        "h1": "Contact Dream Makers Heating and Cooling",
         "primaryCta": {
           "label": "Call (316) 871-5085",
           "action": "call"
@@ -622,13 +622,13 @@
         {
           "type": "callBand",
           "heading": "Where We Are",
-          "text": "Dream Makers LLC Heating and Cooling, 5720 1/2 S Broadway, Wichita, KS 67216. We serve Wichita and the surrounding communities."
+          "text": "Dream Makers Heating and Cooling, 5720 1/2 S Broadway, Wichita, KS 67216. We serve Wichita and the surrounding communities."
         }
       ]
     }
   ],
   "footer": {
-    "about": "Dream Makers LLC Heating and Cooling installs, repairs and replaces heating and air conditioning systems for homes in Wichita, Kansas. You call or text Nate directly.",
+    "about": "Dream Makers Heating and Cooling installs, repairs and replaces heating and air conditioning systems for homes in Wichita, Kansas. You call or text Nate directly.",
     "why": [
       "Nate answers",
       "Call or text",
@@ -730,7 +730,7 @@
       "intro": "Google and AI tools see different answers about your business in different places. We wrote this demo from your reviews and your site. On a short onboarding call, we'd confirm these so everything says the same thing.",
       "items": [
         "The number at the top of your site shows (316) 871-5085 but dials 817-333-7310, so is 871-5085 the one number every listing should use?",
-        "BBB has your Dream Makers profile and a second Dream Makers profile at the same S Broadway building with a different owner, phone and start date, so which details are yours?",
+        "Your Google listing and your BBB profile show different details about the business, so which name, phone and address should every listing use?",
         "Your BBB profile lists six counties from Butler to Sumner, while your site's service cards point to Fort Worth pages, so which Kansas towns should Google list as your service area?"
       ]
     }

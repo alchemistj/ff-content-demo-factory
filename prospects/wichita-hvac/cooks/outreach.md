@@ -2,7 +2,7 @@
 
 Hey Cook's team,
 
-My daughter and I build websites for service businesses. Your reviews read like a family tradition: one household has called you for 35 years, one customer called you because his grandparents always did, and people ask for techs like Ricky and Charlie by name. That's exactly what our method is built around, so we made you a website mockup:
+My daughter and I build websites for service businesses. Your reviews read like a family tradition: one household has called you for 35 years, one customer called you because their grandparents always did, and people ask for techs like Ricky and Charlie by name. That's exactly what our method is built around, so we made you a website mockup:
 
 https://cooks.websitepreview.fluidframemarketing.com/
 
