@@ -22,7 +22,7 @@ Owner on the roof. Scope, warranty and price in writing. That's the whole method
 - You can always speak with an owner: Doug or Jason
 - No commissioned salespeople or project managers
 - A written estimate with the scope of work, warranty and price
-- Workmanship warranties from 5 to 15 years
+- Workmanship warranties up to 15 years
 - Installing DaVinci roofs in Wichita since 2002
 - Family-owned and operated
 
@@ -97,7 +97,7 @@ We always give a written estimate on repair and re-roof projects. It lists the s
 
 Underlayment, flashing, ridge and hip, decking and cleanup are where two bids for "a new roof" usually differ. Check that each one is written down.
 
-We offer workmanship warranties from 5 to 15 years, plus lifetime manufacturer warranties on the products that carry them.
+We offer workmanship warranties of up to 15 years, plus lifetime manufacturer warranties on the products that carry them.
 
 > "He had his crew out the first solid day without rain and they had it done in a day. The roof looks great and the next day when it rained again we had no leaks. … Their price was middle of the road but they included everything that was needed and fully explained the bid without overselling."
 > — Rachel Y.
@@ -131,11 +131,11 @@ Every repair and re-roof estimate is written and lists the scope of work, the wa
 
 **What warranty do I get?**
 
-Workmanship warranties run from 5 to 15 years, depending on the roof and the job, and products that carry lifetime manufacturer warranties come with them. The term for your job is written on your estimate.
+Workmanship warranties run up to 15 years, depending on the roof and the job, and products that carry lifetime manufacturer warranties come with them. The term for your job is written on your estimate.
 
 **Do you work on flat roofs?**
 
-Flat roofs aren't our specialty, and we'll say so up front. Tile, shake, DaVinci, Brava, shingle and standing seam metal are where we're strongest.
+We do flat roofs too, but they're a smaller part of our work. Tile, shake, DaVinci, Brava, shingle and standing seam metal are where we're strongest.
 
 **Who will I talk to?**
 

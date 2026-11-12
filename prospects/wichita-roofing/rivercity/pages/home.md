@@ -2,7 +2,7 @@
 
 # Roofing Company in Wichita, KS — River City Roofing
 
-River City Roofing is a local, family-owned roofing company, and we find the real problem before anyone talks about replacing anything. Anthony gets into the attic and onto the roof first, and after the crew leaves, he comes back to check the job. Call for a free quote.
+River City Roofing is a local, family-owned roofing company, and we find the real problem before anyone talks about replacing anything. Anthony gets into the attic and onto the roof first, and after the crew leaves, he usually comes back to check the job. Call for a free quote.
 
 **Buttons:** Call (316) 295-2159 | Get a Free Quote
 
@@ -19,7 +19,7 @@ We find the real problem before anyone talks about replacing anything.
 
 Anthony gets into the attic and up on the roof until he knows where the water is coming from. Sometimes it isn't the roof at all, and then you hear that too. The price is for your roof, not for one nobody looked at.
 
-When the work is done, the crew walks the yard for anything that came off the roof. Then Anthony comes back to check the job, so the person who looked at your roof first is the one who signs off on it.
+When the work is done, the crew walks the yard for anything that came off the roof. Then Anthony usually comes back to check the job, so the person who looked at your roof first is the one who signs off on it.
 
 - Local, family-owned, based at 3750 N Topeka St in Wichita
 - Free quote: call (316) 295-2159
@@ -93,7 +93,7 @@ Yes. Call (316) 295-2159 and tell us what the roof is doing. We set a time to lo
 
 **Who will I deal with?**
 
-Anthony. He's the one who looks at your roof, answers your questions while the work is going on, and comes back after the crew leaves to check the job. You don't get handed from a salesperson to a stranger.
+Usually Anthony, the name you'll see in most of our reviews. He looks at the roof, answers questions while the work is going on, and often comes back after the crew leaves to check the job. You don't get handed from a salesperson to a stranger.
 
 **How do I know if I need a repair or a new roof?**
 

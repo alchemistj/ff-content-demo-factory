@@ -2,7 +2,7 @@
 
 # Roofing Company in Wichita, KS — ICT Roofing & Exteriors
 
-I'm Juan, founder of ICT Roofing & Exteriors. We meet your adjuster on your roof, so the claim covers what the storm actually did. The inspection before that is free. Call for your free inspection.
+I'm Juan, founder of ICT Roofing & Exteriors. We meet your adjuster on your roof, so the adjuster sees everything the storm did to your roof. The inspection before that is free. Call for your free inspection.
 
 **Buttons:** Call (316) 796-6722 | Get a Free Inspection
 
@@ -13,7 +13,7 @@ I'm Juan, founder of ICT Roofing & Exteriors. We meet your adjuster on your roof
 
 After a big hailstorm, the door-knockers show up. Storm chasers sign you up, take whatever the insurance paperwork says, and replace only what the adjuster wrote down. If that's two slopes of a roof that took hail everywhere, you're left with the rest.
 
-We work the other way. We meet your adjuster on your roof, so the claim covers what the storm actually did.
+We work the other way. We meet your adjuster on your roof, so the adjuster sees everything the storm did to your roof.
 
 We get on the roof, or put a drone over it, and photograph what we find. Then we tell you plainly whether there's a claim worth filing.
 
