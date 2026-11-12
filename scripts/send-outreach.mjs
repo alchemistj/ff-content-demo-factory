@@ -38,7 +38,8 @@ const root = path.resolve(path.dirname(new URL(import.meta.url).pathname), "..")
 const queue = JSON.parse(fs.readFileSync(queuePath, "utf8"));
 const sender = queue.sender;
 const day = new Intl.DateTimeFormat("en-CA", { timeZone: "America/Chicago" }).format(new Date());
-const outDir = path.join(root, "outreach-runs", day, SEND ? "send" : "dry-run");
+const queueName = path.basename(queuePath, ".json").replace(/^queue-/, "");
+const outDir = path.join(root, "outreach-runs", day, queueName, SEND ? "send" : "dry-run");
 fs.mkdirSync(outDir, { recursive: true });
 
 function readMessage(prospect, heading = "Message") {
@@ -144,6 +145,12 @@ for (const entry of queue.entries) {
   try {
     await page.goto(entry.formUrl, { waitUntil: "domcontentloaded", timeout: 45000 });
     await page.waitForLoadState("networkidle", { timeout: 15000 }).catch(() => {});
+    // Some hosts show an automatic "Checking your browser" page first. A real browser just waits for it; so do we.
+    // If it doesn't clear by itself, that's a bot check: hand send, never a workaround.
+    const challenged = () => page.evaluate(() => /checking your browser|just a moment|verify you are human/i.test(document.body?.innerText || "")).catch(() => false);
+    for (let i = 0; i < 10 && (await challenged()); i++) await page.waitForTimeout(2000);
+    if (await challenged()) throw new Error("the site shows a bot check before the form (never bypassed)");
+    await page.waitForLoadState("networkidle", { timeout: 10000 }).catch(() => {});
     const { scope, frameEl, error } = await findFormScope(page, entry);
     if (error) throw new Error(error);
     const { fields, formIndex } = await describeFields(scope);
