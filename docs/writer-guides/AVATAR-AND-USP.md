@@ -46,6 +46,18 @@ Each `usp.md` also includes:
 - A brand short form of 3 to 6 words.
 - A promise ladder: General > Specific > Cinematic > Emotional > Core transformation. The ladder sets the hero subline and the section order.
 
+## 2b. Three patterns from Ted's Window Dudes USP (gold-standard site)
+Source: Google Drive folder `1gcScBTJ5d6Y96ch1ak-Ov2FeYAeG6qGn`, "Window Dudes USP". Its final copy is in Webpage Content.
+1. **Write the core customer insight first, in three lines, before the USP statement.**
+   - What the buyer doesn't know.
+   - What most companies do.
+   - What this one does instead.
+   Window Dudes: "Most customers do not actually know what is causing their window issue. Most companies sell replacement. Window Dudes can diagnose root cause first."
+2. **A two-sided moat line,** where the business stands between two kinds of competitor and beats each on the other's ground. Window Dudes: "We know homes better than window companies, and windows better than inspectors."
+3. **A real credential beats a trait, every time.** When scanning facts.md, look first for something the owner can name: a credential, a program or a method. Examples: Window Dudes has Vince, a certified home inspector; SRA has its pre-storm documentation program; LRE has its Efficiency Maine Qualified Partner status. A named, checkable thing scores higher on exclusivity than any adjective. Use only credentials facts.md confirms (Josh's hard nos).
+
+The Window Dudes short form, "Inspect First. Fix Right.", is the model for the 3-to-6-word brand line.
+
 ## 3. How the copy uses it
 - **Hero:** says the USP.
 - **Problem section:** the avatar's #1 fear, in their words.
