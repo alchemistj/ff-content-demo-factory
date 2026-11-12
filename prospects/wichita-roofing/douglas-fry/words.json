@@ -751,7 +751,7 @@
   "strategy": {
     "whyHeading": "Why we built this site",
     "why": [
-      "You have been roofing Wichita since 1981, and your customers say it best: \"Very honest and friendly service.\" \"Excellent on time service, informative, fair price, and knowledgeable.\" That is 4.8 stars on 79 Google reviews, and a local roofer even sends people to you for tile repair.",
+      "You have been roofing Wichita since 1981, and your customers say it best: \"Very honest and friendly service.\" \"Excellent on time service, informative, fair price, and knowledgeable.\" A local roofer even sends people to you for tile repair.",
       "Your website shows none of it. On a phone it runs off the right edge of the screen, so the call buttons and most of the menu can't be seen.",
       "So we built a site around what your customers already say, with tile, DaVinci and an owner on the phone at the front."
     ],
@@ -765,7 +765,7 @@
         "problems": [
           "The top of the page says only \"Douglas Fry Roofing, Inc.\", so Google can't tell you are a roofing company in Wichita.",
           "On a phone the page runs off the right edge, and the \"Get In Touch\" call buttons sit off the screen.",
-          "None of your 63 five-star Google reviews appear on the site."
+          "None of your Google reviews appear on the site."
         ],
         "fixes": [
           "A headline that says roofing company in Wichita, KS, right at the top.",
