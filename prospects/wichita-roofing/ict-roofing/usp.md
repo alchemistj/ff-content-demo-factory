@@ -9,7 +9,7 @@ Juan Avila-Lopez is the founder of ICT Roofing & Exteriors, a Wichita roofing an
 
 | Claim | Appeal | Exclusivity | Score | Evidence |
 |---|---|---|---|---|
-| **Braid: The founder is on your roof with your adjuster.** | 5 | 4 | **20** | Appeal: fear #1 (claim cut short) and fear #2 (getting taken). Exclusivity: Dingers and Premier say they meet adjusters, none of the 5 says on the roof, and none of the 5 names its owner. Source: Debbie L. "Juan got up on the roof with the adjuster"; Ryan K. "owner Juan came personally to double check work"; facts.md §1. |
+| **Braid: The founder climbs your roof himself, and his team meets your adjuster on it.** | 5 | 4 | **20** | Appeal: fear #1 (claim cut short) and fear #2 (getting taken). Exclusivity: Dingers and Premier say they meet adjusters, none of the 5 says on the roof, and none of the 5 names its owner. Source: Debbie L. "Juan got up on the roof with the adjuster"; Ryan K. "owner Juan came personally to double check work"; facts.md §1. |
 | We stay in it when insurance offers less (photos, paperwork, talking to the adjuster) | 5 | 4 | **20** | Appeal: fear #1. Exclusivity: Dingers says it "can't guarantee" approval, Premier says "we do" the chasing, 0 of 5 describe pushing back. Source: Kristi I. (insurer "only wanted to replace part"), Crystal E. (denied claim), facts.md "Insurance claims are the core". |
 | Finds where the water really gets in | 4 | 4 | **16** | Appeal: fear #3 (water spreading). 0 of 5 claim leak-finding. Source: Vicky S. (traced a leak to the first roofer's flashing), Mike B. Thin: two reviews. |
 | We meet your adjuster | 5 | 3 | **15** | Appeal: fear #1. Dingers (arrives 30 minutes early) and Premier (adjuster meetings) both claim it. Source: Louise P., Dani C., Samantha S. |
@@ -23,14 +23,14 @@ Juan Avila-Lopez is the founder of ICT Roofing & Exteriors, a Wichita roofing an
 (Sorted by score.)
 
 ## Gate result
-Top claim: "The founder is on your roof with your adjuster" and "We stay in it when insurance offers less", both **20**. Passes gate (16+). Describe actions only, never a claim outcome.
+Top claim: "The founder climbs your roof himself, and his team meets your adjuster on it" and "We stay in it when insurance offers less", both **20**. Passes gate (16+). Describe actions only, never a claim outcome.
 
 ## Three USP statements
-- **A, pain point:** For Wichita homeowners who fear the adjuster will say "wear and tear" and leave them paying, ICT is the roofer whose founder climbs up with the adjuster, so nothing the storm did goes unseen.
-- **B, method:** Unlike roofers who send a salesperson or say they "assist" with claims, ICT puts Juan on your roof with the adjuster and keeps working with you if the offer comes back short, so you aren't doing it alone.
+- **A, pain point:** For Wichita homeowners who fear the adjuster will say "wear and tear" and leave them paying, ICT is the roofer whose founder climbs your roof himself and whose team meets your adjuster up there, so nothing the storm did goes unseen.
+- **B, method:** Unlike roofers who send a salesperson or say they "assist" with claims, ICT puts Juan on your roof and Arturo or Brady up there with your adjuster and keeps working with you if the offer comes back short, so you aren't doing it alone.
 - **C, emotional outcome:** When the hail comes, you want one name to call: Juan, who shows up, climbs up and doesn't leave you in the dark.
 
-**Pick: A.** It names the avatar's #1 fear in their own words and the proof (Juan on the roof) is a review fact no competitor states. B is true but reads as a comparison before trust is built.
+**Pick: A.** It names the avatar's #1 fear in their own words and the proof (Juan inspecting, Arturo meeting the adjuster: Carl W., Debbie L., Dani C.) is a review fact no competitor states. B is true but reads as a comparison before trust is built.
 
 ## Brand short form
 **Juan's on the roof with you.**
@@ -40,7 +40,7 @@ Top claim: "The founder is on your roof with your adjuster" and "We stay in it w
 |---|---|
 | General | A Wichita roofer who looks out for you after a storm. |
 | Specific | We meet your adjuster on your roof and stay with you through the claim. |
-| Cinematic | The morning after the hail, Juan is on your roof with a drone and a ladder, and your adjuster sees everything. |
+| Cinematic | The morning after the hail, Juan is on your roof with a drone and a ladder, and when the adjuster comes, one of us is up there too. |
 | Emotional | You never feel in the dark; someone has this. |
 | Core transformation | From alone with an insurance letter to having a local crew on your side. |
 
