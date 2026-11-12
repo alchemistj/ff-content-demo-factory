@@ -72,10 +72,13 @@ Check it with `node scripts/check-words-package.mjs prospects/<market>/<slug>`. 
     ],
     "reportCardHeading": "What great window company websites get right, and how yours measures up.",
     "reportCard": [{ "label": "Headline says what you do and where", "status": "Needs work" }],
+    "confirm": { "heading": "What we'd confirm with you", "intro": "Google and AI tools see different answers about your business in different places. …", "items": ["one sentence per conflict found in facts.md, naming both places", "…", "…"] },
     "closing": { "heading": "Want a website like this for your business?", "text": "…" }
   }
 }
 ```
+
+`confirm` is optional (Josh, 2026-11-11: "his strongest selling point"). It holds 3 items drawn from real conflicts or open questions in `facts.md`, such as two phone numbers, founding years that disagree, or services listed differently. Each item names both places, framed as helpful homework, never scolding.
 
 ### Text rules inside the file
 - Body strings may use `**bold**` and `[link text](/route/)`. Write phone numbers as plain text; the template turns every `business.phones` number into a tap-to-call link wherever it appears.
