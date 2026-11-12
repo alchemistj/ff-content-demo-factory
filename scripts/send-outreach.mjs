@@ -147,9 +147,11 @@ for (const entry of queue.entries) {
     await page.waitForLoadState("networkidle", { timeout: 15000 }).catch(() => {});
     // Some hosts show an automatic "Checking your browser" page first. A real browser just waits for it; so do we.
     // If it doesn't clear by itself, that's a bot check: hand send, never a workaround.
-    const challenged = () => page.evaluate(() => /checking your browser|just a moment|verify you are human/i.test(document.body?.innerText || "")).catch(() => false);
+    const challenged = () => page.evaluate(() => /checking your browser|just a moment|verify you are human|confirm you are human|i am human/i.test(document.body?.innerText || "")).catch(() => false);
     for (let i = 0; i < 10 && (await challenged()); i++) await page.waitForTimeout(2000);
     if (await challenged()) throw new Error("the site shows a bot check before the form (never bypassed)");
+    const down = await page.evaluate(() => { const t = (document.body?.innerText || "").trim(); return t.length < 200 && /upstream|bad gateway|502|503|504|service unavailable|error/i.test(t) ? t.slice(0, 60) : ""; }).catch(() => "");
+    if (down) throw new Error(`the site didn't load ("${down}"); try again later`);
     await page.waitForLoadState("networkidle", { timeout: 10000 }).catch(() => {});
     const { scope, frameEl, error } = await findFormScope(page, entry);
     if (error) throw new Error(error);

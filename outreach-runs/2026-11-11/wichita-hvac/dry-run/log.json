@@ -1,0 +1,164 @@
+{
+  "day": "2026-11-11",
+  "mode": "dry-run",
+  "results": [
+    {
+      "slug": "cooks",
+      "company": "Cook's Heating and Cooling",
+      "formUrl": "https://www.cookshvac.com/contact/",
+      "mode": "dry-run",
+      "approved": false,
+      "status": "dry run: filled, not submitted",
+      "reason": "",
+      "fields": [
+        {
+          "label": "name name name *",
+          "value": "Josh Lenz"
+        },
+        {
+          "label": "email email email *",
+          "value": "josh@fluidframemarketing.com"
+        },
+        {
+          "label": "comment comment message*",
+          "value": "(the message)"
+        }
+      ],
+      "shots": [
+        "outreach-runs/2026-11-11/wichita-hvac/dry-run/cooks-filled.png"
+      ],
+      "values": {
+        "firstName": "Josh",
+        "lastName": "Lenz",
+        "fullName": "Josh Lenz",
+        "email": "josh@fluidframemarketing.com",
+        "phone": "4173732773",
+        "company": "Fluid Frame Marketing",
+        "zip": "65804",
+        "message": "Hey Cook's team,\n\nMy daughter and I build websites for service businesses. Reading your reviews, people keep saying they've called you for decades, and one called you because his grandparents always did. That's exactly what our method is built around, so we made you a website mockup:\n\nhttps://cooks.websitepreview.fluidframemarketing.com/\n\nNote: It'll look a lot better with your logo and images on it! Lol\n\nThe preview opens with a recent case study, then explains the thinking behind every page and how it gets more people to find you and pick up the phone. For example, on a phone your current site takes 6 to 7 seconds to show its main content, about 2 to 3 times Google's \"good\" mark of 2.5 seconds, and your homepage has no main headline, so Google and AI never learn what you do or where.\n\nBy the way, our contact form system would have recognized this as a solicitation, and you wouldn't have even seen it.\n\nHow'd we do on your company vibe?\n\nJosh\nFluid Frame Marketing",
+        "shortMessage": null,
+        "subject": "A website mockup for Cook's Heating and Cooling"
+      },
+      "captcha": "none"
+    },
+    {
+      "slug": "integrity",
+      "company": "Integrity Heating and Cooling",
+      "formUrl": "https://integrityheatingandcooling.net/contact/",
+      "mode": "dry-run",
+      "approved": false,
+      "status": "hand send",
+      "reason": "could not fill the form: the site shows a bot check before the form (never bypassed)",
+      "fields": [],
+      "shots": [
+        "outreach-runs/2026-11-11/wichita-hvac/dry-run/integrity-error.png"
+      ],
+      "values": {
+        "firstName": "Josh",
+        "lastName": "Lenz",
+        "fullName": "Josh Lenz",
+        "email": "josh@fluidframemarketing.com",
+        "phone": "4173732773",
+        "company": "Fluid Frame Marketing",
+        "zip": "65804",
+        "message": "Hey Sam and the Integrity team,\n\nMy daughter and I build websites for service businesses. Reading your reviews, people keep saying you live up to your name, you handle after-hours calls yourself, the price stays fair after hours, and the crew leaves the place clean. That's exactly what our method is built around, so we made you a website mockup:\n\nhttps://integrity.websitepreview.fluidframemarketing.com/\n\nNote: It'll look a lot better with your logo and images on it! Lol\n\nThe preview opens with a recent case study, then breaks down why each page is built the way it is and how that helps more people find you and call. For example, on a phone your current site takes about 6 seconds to show its main content, over twice Google's \"good\" mark of 2.5 seconds, and your homepage headline never says Wichita, so Google and AI have to guess where you work.\n\nBy the way, our contact form system would have recognized this as a solicitation, and you wouldn't have even seen it.\n\nHow'd we do on your company vibe?\n\nJosh\nFluid Frame Marketing",
+        "shortMessage": null,
+        "subject": "A website mockup for Integrity Heating and Cooling"
+      }
+    },
+    {
+      "slug": "aircapital",
+      "company": "Air Capital Heating and Air",
+      "formUrl": "https://aircapitalheatingandair.com/contact-us",
+      "mode": "dry-run",
+      "approved": false,
+      "status": "dry run: filled, not submitted",
+      "reason": "",
+      "fields": [
+        {
+          "label": "Name *",
+          "value": "Josh Lenz"
+        },
+        {
+          "label": "Phone *",
+          "value": "4173732773"
+        },
+        {
+          "label": "Email",
+          "value": "josh@fluidframemarketing.com"
+        },
+        {
+          "label": "Service Address",
+          "value": "(left blank)"
+        },
+        {
+          "label": "Service Needed",
+          "value": "(left alone)"
+        },
+        {
+          "label": "Message",
+          "value": "(the message)"
+        }
+      ],
+      "shots": [
+        "outreach-runs/2026-11-11/wichita-hvac/dry-run/aircapital-filled.png"
+      ],
+      "values": {
+        "firstName": "Josh",
+        "lastName": "Lenz",
+        "fullName": "Josh Lenz",
+        "email": "josh@fluidframemarketing.com",
+        "phone": "4173732773",
+        "company": "Fluid Frame Marketing",
+        "zip": "65804",
+        "message": "Hey Air Capital team,\n\nMy daughter and I build websites for service businesses. Your reviews say you showed up fast on the hottest days and explained what was wrong before fixing it. That's exactly what our method is built around, so we made you a website mockup:\n\nhttps://aircapital.websitepreview.fluidframemarketing.com/\n\nNote: It'll look a lot better with your logo and images on it! Lol\n\nThe preview opens with a recent case study, then walks through the reasoning behind each page and how it helps more people find you and call. For example, on a phone your current site takes almost 7 seconds to show its main content, nearly 3 times Google's \"good\" mark of 2.5 seconds, and your homepage headline doesn't say Wichita, so Google and AI never connect you to the town.\n\nBy the way, our contact form system would have recognized this as a solicitation, and you wouldn't have even seen it.\n\nHow'd we do on your company vibe?\n\nJosh\nFluid Frame Marketing",
+        "shortMessage": null,
+        "subject": "A website mockup for Air Capital Heating and Air"
+      },
+      "captcha": "none"
+    },
+    {
+      "slug": "dreammakers",
+      "company": "Dream Makers LLC Heating and Cooling",
+      "formUrl": "https://heatingandcooling.online/contact-us/",
+      "mode": "dry-run",
+      "approved": false,
+      "status": "dry run: filled, not submitted",
+      "reason": "",
+      "fields": [
+        {
+          "label": "your-name your name",
+          "value": "Josh Lenz"
+        },
+        {
+          "label": "your-email your email",
+          "value": "josh@fluidframemarketing.com"
+        },
+        {
+          "label": "text-723 phone",
+          "value": "4173732773"
+        },
+        {
+          "label": "your-message your message",
+          "value": "(the message)"
+        }
+      ],
+      "shots": [
+        "outreach-runs/2026-11-11/wichita-hvac/dry-run/dreammakers-filled.png"
+      ],
+      "values": {
+        "firstName": "Josh",
+        "lastName": "Lenz",
+        "fullName": "Josh Lenz",
+        "email": "josh@fluidframemarketing.com",
+        "phone": "4173732773",
+        "company": "Fluid Frame Marketing",
+        "zip": "65804",
+        "message": "Hey Nate and the Dream Makers team,\n\nMy daughter and I build websites for service businesses. Reading your reviews, people keep saying you answer when they text or call, and that after a few visits you know them by first name. That's exactly what our method is built around, so we made you a website mockup:\n\nhttps://dreammakers.websitepreview.fluidframemarketing.com/\n\nNote: It'll look a lot better with your logo and images on it! Lol\n\nThe preview opens with a recent case study, then explains why we built each page and how it helps more people find you and call. For example, on a phone your current site shows nothing for about 14 seconds. And on a computer, the number at the top of every page shows yours but dials 817-333-7310, a Fort Worth number.\n\nBy the way, our contact form system would have recognized this as a solicitation, and you wouldn't have even seen it.\n\nHow'd we do on your company vibe?\n\nJosh\nFluid Frame Marketing",
+        "shortMessage": null,
+        "subject": "A website mockup for Dream Makers LLC Heating and Cooling"
+      },
+      "captcha": "none"
+    }
+  ]
+}

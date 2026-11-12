@@ -1,0 +1,37 @@
+# Hand-send pack, 2026-11-11
+
+Josh sends these himself. Paste each value into the form, then the message.
+
+## Flawless Roofing Co
+
+Form: https://flawlessroofingcousa.com/contact/
+Why it's a hand send: visible CAPTCHA (never automated)
+
+- First name: Josh
+- Last name: Lenz
+- Email: josh@fluidframemarketing.com
+- Phone: 4173732773
+- Zip code (if asked): 65804
+- Subject (if asked): A website mockup for Flawless Roofing Co
+
+Message:
+
+```
+Hey Ravi and the Flawless team,
+
+My daughter and I build websites for service businesses. Reading your reviews, people keep saying you inspected the roof, worked the insurance claim with them, and had the new roof on in about a day. That's exactly what our method is built around, so we made you a website mockup:
+
+https://flawless.websitepreview.fluidframemarketing.com/
+
+Note: It'll look a lot better with your logo and images on it! Lol
+
+The preview opens with a recent case study, then explains the thinking behind every page and how it gets more people to find you and pick up the phone. For example, your current homepage headline says "Roofing Redefined for Modern Living" but never says roofing in Wichita, and on the contact page the "Start A Project" button goes nowhere.
+
+By the way, our contact form system would have recognized this as a solicitation, and you wouldn't have even seen it.
+
+How'd we do on your company vibe?
+
+Josh
+Fluid Frame Marketing
+```
+
