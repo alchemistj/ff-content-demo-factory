@@ -1,128 +1,108 @@
-**Eyebrow:** Wichita heating and cooling, owner on the phone
+**Eyebrow:** Wichita, KS · Heating, Cooling and Water Heaters
 
 # Heating and Air Conditioning Company in Wichita, KS — Dream Makers LLC Heating and Cooling
 
-When the air conditioner quits or the furnace won't light, you don't want a call center. You want a person who picks up. Call or text Nate at (316) 871-5085.
+Text or call Nate, and the person who answers is the person who comes out. Dream Makers LLC Heating and Cooling repairs and installs furnaces, air conditioners, heat pumps and water heaters in Wichita, for homes and businesses, renters included. Call or text (316) 871-5085.
 
 **Buttons:** Call (316) 871-5085 | Request a Quote
 
 > "Nathan is amazing always answers when I text or call him and has fixed any issue I have had. Very reasonably priced as well!"
 > — Mashaela W.
 
-## You Get Nate's Number
+## The Person Who Answers Is the Person Who Comes Out
 
-Most heating and cooling companies hand you a dispatcher, a ticket and a window of time. We hand you Nate's number.
+Most heating and cooling companies put you through a call center or a dispatcher. You explain the problem to one stranger, and a different stranger shows up at your door.
 
-When you call Dream Makers, Nate picks up. You tell him what the system is doing, and he tells you what he thinks it is and when he can be there.
+Dream Makers works the other way around. You text or call Nate, he asks what the unit is doing, and he is the one who comes out. On bigger jobs, like installing mini splits, his team comes with him.
 
-That matters most on the worst day for it: an air conditioner that dies on a July evening, a heater that quits in a February snow storm. You shouldn't have to explain your house to someone new every time.
+Tell him what you see and hear. Does the outdoor unit run while the house stays warm? Does the furnace click, hum or stay silent? A few lines tell him a lot before he's in your driveway.
 
-## Text Us What's Wrong
+- Call or text (316) 871-5085 and Nate answers
+- Furnaces, air conditioners, heat pumps and water heaters, repaired and installed
+- Mini split systems and ductwork for rooms the main system doesn't reach
+- Residential and commercial work
+- Renters welcome, and landlords too
+- We clean up before we leave
 
-Sometimes you'd rather type than talk. The house is hot, the kids are in bed, and you don't want a phone call at the end of a long day.
+> "Nathan has been out to our house a few times to refill and stop our Freon leak over the past year in half, we have just about come to know each other on first name bases and that's something in today's world. … Yesterday was our wedding reception at our house and of course after I got my hair and make up done and got home I quickly noticed the temperature climbing in our house and by the time it hit 78 I was in a panic as we had about 150 people arriving in an hour and by time I reached 82 I had Nathan on the phone and he was on his way to come save our big special day. By 84°f he was there to help!"
+> — Almeta W.
 
-So text us. Say what the unit is doing, whether it's blowing warm, not starting, or making a noise it never made before. A written message gives us the details before we ever call back, and it gives you something to point to when we arrive.
+## What's Wrong, and What We Do About It
 
-You can do it from your phone or from the text button on our website.
+Here is what Wichita homeowners call about, the likely cause, and what we do.
 
-> "Lifesavers! I was able to text my issue from their website (very convenient) with what I consider a timely response (given the winter season). They had someone at my house the same day to fix the issue!"
-> — Carolyn S.
+**The house won't get below 80** A Wichita summer works an air conditioner hard, and the usual causes are a failed capacitor or fan motor, a clogged coil or a refrigerant leak. Nate finds the part that failed and replaces it, or finds the leak instead of just adding more refrigerant.
 
-## He Knows Your System
+**The outdoor unit hums and never starts** A weak capacitor or contactor gives the motor no start-up jolt, and the motor itself may be fine. We swap the small part and test the system through a full cycle.
 
-Heating and cooling equipment is not a one-visit relationship. The same house needs a repair this year, a part next year and a replacement eventually.
+**The furnace clicks but never lights** Usually a worn igniter or a sensor coated in soot or dust, and both are small parts. We replace the one that failed, and we tell you if what we find is bigger than a part.
 
-When the same person keeps coming back, he remembers which unit is in the attic, which one is in the closet, and what he already fixed. He doesn't start from zero. You don't pay for a stranger to rediscover your house.
+**Cooling fades a little more every week** That points to a slow refrigerant leak, which can take more than one visit to chase down. We stop the leak, explain which part has to be ordered, and keep the system running in the meantime where we can.
 
-That's why we want to be your company for the long haul, not just for the emergency.
+**One room never gets comfortable** Either the main system was never sized for that room, or the ducts leak or run through an unheated space. We install mini splits for rooms the system doesn't reach, and we do ductwork.
 
-> "We have had Nate come out several times and every single encounter he is punctual, knowledgeable, and finds and fixes the problem as fast as he can! Not to mention he usually is there within hours of us calling!"
-> — Bailey L.
+**The furnace is old and the repairs keep stacking up** A part replaced two winters running, or a water heater tank rusted at the base, means the unit is wearing out. Nate tells you when a repair still makes sense and when a new furnace or water heater is the better spend.
 
-## If You Rent, You Still Get the Number
+[See HVAC parts replacement → →](/hvac-parts-replacement-wichita-ks/)
 
-When the air goes out in a rental, you're the one sweating, and you're the one who has to chase it. Most tenants never meet the person who fixes the unit.
+## Heating and Cooling Services
 
-You don't have to own the house to call or text Nate. He came out for one renter at 9pm in July and again in a February snow storm.
+- **Heater Installation.** Furnaces and water heaters replaced and installed, vented and connected right.
+- **HVAC Parts Replacement.** The failed capacitor, motor, igniter or sensor replaced, not the whole system.
+- **Air Conditioner Installation.** New air conditioners and mini split systems for Wichita homes.
+- **Air Conditioner Repair.** AC repair for dead fan motors, hard starts and refrigerant leaks.
+- **Furnace Repair and Replacement.** Furnace repair, or a new furnace when the repairs keep stacking up.
+- **Ductwork.** Ductwork for rooms that never get comfortable.
+- **Maintenance.** Upkeep visits that catch a failing part before the hottest or coldest day.
+
+## You Rent, and the Air Is Out
+
+You're the one sweating, and the landlord isn't the one who answers your text.
+
+You don't have to own the house to call or text Nate. Tenants and landlords both do, and he tells you what the unit is doing so everyone knows what the repair involves.
 
 > "I rent, and Nate has come out to take care of both my AC and my heater. The first time, he came out after 9pm to help make sure we had AC in the middle of July, another time in the middle of snow storms in February to ensure my heater was up and running for us."
 > — Ady G.
 
-## Heater Installation
+## A Clean House When We Leave
 
-A furnace doesn't fail all at once. It starts short-cycling, or the house heats unevenly, or you pay for fuel that goes up the flue. When the repair bills start to add up, the question becomes whether to keep fixing it.
+A repair isn't finished until the work area is clean. Nobody wants to find filters, boxes and dust left in the hallway.
 
-We install furnaces and water heaters. A new unit only helps if it's sized for the house and set up right, because a bad install means poor heat, wasted fuel and, with gas, real safety risks.
-
-We'll tell you what failed on yours. If it's time for a new one, we'll install it and clean up behind us.
-
-[See heater installation →](/heater-installation-wichita-ks/)
-
-## HVAC Parts Replacement
-
-Many "dead" systems are really one dead part. A capacitor, a fan motor, an igniter or a leaking line can stop a whole unit that has years of life left in it.
-
-Replacing the part is usually a fraction of what a new system costs. It only works if someone finds the real cause the first time, so we explain what we found and what it will take to fix.
-
-Parts work is also where we get to know your house: the leak that comes back, the part on order, the maintenance that keeps small problems from becoming a bad night.
-
-[See HVAC parts replacement →](/hvac-parts-replacement-wichita-ks/)
-
-## The Rest of the System
-
-Heater installation and parts replacement are where many of our calls start, but they aren't all we do.
-
-- **Air conditioner repair.** The service we get called for in the middle of a heat wave.
-- **Air conditioner installation,** including mini split systems for rooms the main system doesn't reach.
-- **Furnace repair and replacement.**
-- **Water heaters and heat pumps,** installed, serviced and repaired.
-- **Ductwork,** and the cleaner air that comes with it.
-
-Residential and commercial. If it heats, cools or moves air in your building, call and ask.
-
-## Every Reply, and a Clean House
-
-A repair isn't finished until you've heard back and the work area is clean. Nobody wants to find filters, boxes and dust left in the hallway.
-
-We clean up before we go. It's a small thing, and the people at home notice it.
+We clean up before we go, and the people at home notice it.
 
 > "Nate I want to start this with a huge, "Thank You, man!". Your relationship with your customers is really top class because you are on top of every reply, every question and every texts and you just don't get that kind of customer service anymore. If I could give you 10 stars I would because you made the wife very happy by cleaning up EVERYTHING."
 > — Allen B.
 
-## When It Takes More Than One Visit
-
-Not every problem ends in one trip. A leak that keeps coming back, a part on order, a unit that's past saving.
-
-Those are the jobs where it matters who calls you back. You get the explanation of what's wrong, and you get it from the person who'll be there for the next visit.
-
-> "Our tech Cody, despite not being able to fix the problem right away since our unit died, was an absolute BLAST! Very knowledgeable and friendly, explained his troubleshooting process as he went through it, and thoroughly explained what the problem was that ended up with our unit being fried."
-> — Jimmy M.
-
 ## Questions Before You Call
 
 **Can I just text?**
-Yes. Text us what the unit is doing, or use the text button on our website. Call if it's urgent.
 
-**What if I text late at night?**
-Text anyway. A message sent late has been answered early the next morning, and Nate has come out after 9pm for a tenant in July.
+Yes. Text what the unit is doing and what you've already checked: the thermostat setting, the breaker and the filter. Nate answers texts and calls, and a message sent late at night has been answered early the next morning. If the system is down and you need someone now, call.
+
+**Will Nate be the one who comes to the house?**
+
+On repairs, yes: Nate answers and comes out. On bigger jobs, like installing mini splits, his team comes with him. You can ask who is coming when you book.
+
+**Will you remember my system next year?**
+
+That depends on the same person coming back, which is the point of how we work. Reviewers describe Nate coming out several times over a year or two for the same unit. Ask what was replaced before he leaves, and write the date on the unit.
+
+**Should I repair it or replace it?**
+
+It depends on the age of the unit and what failed. A capacitor, igniter or motor is a repair. A cracked heat exchanger, a leaking water heater tank, or a second or third failure in a short span points to replacement. You can check by counting the repairs from the last two years.
 
 **Do you work on rentals?**
-Yes. We've come out for tenants as well as the people who own the rentals.
 
-**Will I deal with the owner?**
-Nate answers the phone and the texts, and he comes to the house. On bigger jobs, like installing mini splits, his team comes with him.
+Yes. Tenants and landlords both call. Tell Nate whether you own or rent, so he knows who to talk to about the repair.
 
-**Will you remember my house next year?**
-That's the idea. The same person keeps coming back, so he knows which unit is where and what was fixed last time.
+**Residential or commercial?**
 
-**Do you only do emergencies?**
-Not at all. We install furnaces, water heaters, air conditioners and mini splits, and we do maintenance and ductwork too.
+Both. Homes and businesses call us for heating and cooling work.
 
 **Where do you work?**
+
 Wichita is home base. Text your address and we'll tell you whether we can get to you.
 
-## Call Nate
+## Call or Text Nate
 
-If something in your house isn't heating or cooling, call or text and you'll get a person.
-
-Dream Makers LLC Heating and Cooling, 5720 1/2 S Broadway, Wichita, KS 67216. Phone (316) 871-5085.
+Tell Nate what isn't heating or cooling. Dream Makers LLC Heating and Cooling, 5720 1/2 S Broadway, Wichita, KS 67216. Phone (316) 871-5085.

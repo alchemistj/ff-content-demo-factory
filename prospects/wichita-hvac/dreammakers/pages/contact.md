@@ -10,9 +10,9 @@ The fastest way to reach us is to call or text (316) 871-5085. You'll get Nate.
 
 Call if the system is down and you need a person now. Text if you'd rather describe it in writing.
 
-If it's heating or cooling in a Wichita home or business, just reach out. You can also use the text button or the quote request on our website.
+If it's heating or cooling in a Wichita home or business, just reach out.
 
-> "Excellent, prompt service  Our AC went out and everyone was booked for the next few weeks. Nathan came out within just a couple hours and got our AC working again."
+> "Excellent, prompt service Our AC went out and everyone was booked for the next few weeks. Nathan came out within just a couple hours and got our AC working again."
 > — Matthew V.
 
 ## What to Tell Us
@@ -24,6 +24,4 @@ If it's heating or cooling in a Wichita home or business, just reach out. You ca
 
 ## Where We Are
 
-Dream Makers LLC Heating and Cooling, 5720 1/2 S Broadway, Wichita, KS 67216.
-
-We serve Wichita and the surrounding communities.
+Dream Makers LLC Heating and Cooling, 5720 1/2 S Broadway, Wichita, KS 67216. We serve Wichita and the surrounding communities.
