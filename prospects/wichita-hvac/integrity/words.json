@@ -410,8 +410,8 @@
         },
         "image": {
           "slot": "furnace-hero",
-          "alt": "Technician opening a furnace cabinet in a home utility room",
-          "brief": "HVAC pool r1: furnace-hero"
+          "alt": "Gas furnace burners lit with a steady blue flame",
+          "brief": "HVAC pool reuse: r1 furnace-detail (white-polo photo retired per Josh)"
         }
       },
       "sections": [
@@ -430,8 +430,8 @@
           ],
           "image": {
             "slot": "furnace-hero",
-            "alt": "Technician opening a furnace cabinet in a home utility room",
-            "brief": "HVAC pool photo: Technician opening a furnace cabinet in a home utility room"
+            "alt": "A gas furnace and water heater side by side in a basement utility corner, with pipes overhead and a window letting in daylight",
+            "brief": "HVAC pool reuse: dreammakers/clean-utility.webp"
           }
         },
         {
