@@ -91,8 +91,8 @@
         },
         "image": {
           "slot": "home-hero",
-          "alt": "Technician working on an outdoor air conditioner in a side yard",
-          "brief": "HVAC pool r2: ext-tech-sideyard"
+          "alt": "Technician checking an outdoor air conditioner with gauges at a Wichita home",
+          "brief": "HVAC pool r1: ac-repair-hero (one photo, desktop and phone crops)"
         }
       },
       "sections": [
@@ -105,8 +105,9 @@
           "type": "split",
           "heading": "The Price Comes Before the Work",
           "image": {
-            "slot": "gauges-check",
-            "alt": "Technician checking an outdoor air conditioner with gauges"
+            "slot": "tech-condenser",
+            "alt": "Technician working on an outdoor air conditioner beside a brick home",
+            "brief": "HVAC pool photo: Technician working on an outdoor air conditioner beside a brick home"
           },
           "body": [
             "Most heating and cooling calls go the same way. Someone comes out, works on it, and you find out what it cost when the bill shows up. You can't see inside a furnace or a condenser, so you take their word for it.",
@@ -301,7 +302,8 @@
           ],
           "image": {
             "slot": "airflow-vent",
-            "alt": "Ceiling air vent in a quiet Wichita home"
+            "alt": "Ceiling air vent in a quiet Wichita home",
+            "brief": "HVAC pool photo: Ceiling air vent in a quiet Wichita home"
           }
         },
         {
@@ -359,7 +361,8 @@
           "heading": "Keeping Your AC Running",
           "body": [
             "A few habits stretch a system's life. Change the filter on a schedule, keep the outdoor unit clear of grass, leaves and anything stacked against it, and don't ignore a new noise.",
-            "A spring check before the first hot week catches weak parts before they fail on you. We offer maintenance plans, so ask about one when you call."
+            "A spring check before the first hot week catches weak parts before they fail on you, when every company in town is booked.",
+            "Our maintenance plan is $150 a year and includes up to 15% off most equipment and labor costs. Ask about it when you call."
           ]
         },
         {
@@ -381,6 +384,10 @@
             {
               "q": "What about a home or a commercial building?",
               "a": "Both. We repair air conditioning in homes and in commercial buildings around Wichita."
+            },
+            {
+              "q": "What should I check before I call?",
+              "a": "Look at the thermostat setting and batteries, the breaker for the outdoor unit, and the filter. If the filter is gray and clogged, change it and give the system an hour. If none of that helps, call and describe what it's doing."
             }
           ]
         },
@@ -431,13 +438,14 @@
           ],
           "image": {
             "slot": "furnace-hero",
-            "alt": "Technician opening a furnace cabinet in a home utility room"
+            "alt": "Technician opening a furnace cabinet in a home utility room",
+            "brief": "HVAC pool photo: Technician opening a furnace cabinet in a home utility room"
           }
         },
         {
           "type": "review",
-          "quote": "Called after 8 AM for my faulty furnace and they worked me into their schedule for early afternoon. First time using Integrity but definitely not my last!",
-          "name": "TheDaendric"
+          "quote": "I genuinely appreciate their responsiveness to the Heating and Air-conditioning repairs we needed over the last 6 months. The Integrity team got us up and running within two days, or less, from the day we called for services.",
+          "name": "Debra D."
         },
         {
           "type": "prose",
@@ -572,7 +580,8 @@
           ],
           "image": {
             "slot": "thermostat",
-            "alt": "Hand adjusting a wall thermostat"
+            "alt": "Hand adjusting a wall thermostat",
+            "brief": "HVAC pool photo: Hand adjusting a wall thermostat"
           }
         },
         {

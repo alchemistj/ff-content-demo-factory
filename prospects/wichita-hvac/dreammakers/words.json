@@ -82,8 +82,8 @@
         },
         "image": {
           "slot": "home-hero",
-          "alt": "Technician holding a new furnace filter in a utility room",
-          "brief": "HVAC pool r2: int-filter-change"
+          "alt": "Technician opening a furnace cabinet in a home utility room",
+          "brief": "HVAC pool r1: furnace-hero"
         },
         "sub": "Dream Makers LLC Heating and Cooling repairs and installs heating and air conditioning in Wichita, and the person who answers is Nate, the owner. He's the one who comes out, and he remembers your system. Call or text Nate at (316) 871-5085."
       },
@@ -186,8 +186,8 @@
             "We clean up before we go, and the people at home notice it."
           ],
           "image": {
-            "slot": "tech-at-door",
-            "alt": "Technician with a clipboard at a customer's front door"
+            "slot": "clean-utility",
+            "alt": "Furnace and water heater in a clean basement utility room"
           }
         },
         {

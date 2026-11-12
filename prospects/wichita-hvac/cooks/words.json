@@ -122,8 +122,8 @@
             "route": "/maintenance-plans-wichita-ks/"
           },
           "image": {
-            "slot": "tech-at-door",
-            "alt": "Technician with a clipboard at a customer's front door"
+            "slot": "plan-visit-furnace",
+            "alt": "Technician opening a furnace cabinet for a seasonal check"
           }
         },
         {
@@ -519,8 +519,8 @@
         },
         "image": {
           "slot": "contact-hero",
-          "alt": "Technician with a clipboard talking with a homeowner outside",
-          "brief": "HVAC pool r2: arrive-door-talk"
+          "alt": "Brick ranch home with a wide lawn in the Wichita area",
+          "brief": "HVAC pool r1: contact-hero"
         }
       },
       "sections": [
