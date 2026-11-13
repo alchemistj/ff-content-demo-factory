@@ -1,0 +1,27 @@
+{
+  "kind": "google-review-pull-receipt",
+  "status": "ok",
+  "slug": "uptocode-plumbing-wichita",
+  "request": {
+    "mapsUrl": "place_id:ChIJ8YkG7sxy7qwR2_HRL5JY77c",
+    "maxReviews": 60,
+    "expectedName": "Up To Code"
+  },
+  "trigger": "workflow_dispatch",
+  "apify": {
+    "actor": "compass~crawler-google-places",
+    "runId": "L5QQ0pmKOWkLcWegN",
+    "datasetId": "ZVX1cqf70JkMsChj6",
+    "attempts": 1,
+    "usageUsd": 0.0317
+  },
+  "counts": {
+    "listingTotal": 53,
+    "withText": 50,
+    "ratingOnly": 3
+  },
+  "detail": null,
+  "startedAt": "2026-11-13T21:09:33.203Z",
+  "finishedAt": "2026-11-13T21:09:57.932Z",
+  "githubRunUrl": "https://github.com/alchemistj/ff-content-demo-factory/actions/runs/43508095070"
+}

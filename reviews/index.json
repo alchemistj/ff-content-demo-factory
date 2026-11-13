@@ -639,6 +639,18 @@
       "pulledAt": "2026-10-25T02:02:27.141Z"
     },
     {
+      "slug": "uptocode-plumbing-wichita",
+      "name": "Up To Code Plumbing",
+      "placeId": "ChIJ8YkG7sxy7qwR2_HRL5JY77c",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 53,
+        "withText": 50,
+        "ratingOnly": 3
+      },
+      "pulledAt": "2026-11-13T21:09:57.932Z"
+    },
+    {
       "slug": "wheatland-plumbing-wichita",
       "name": "Wheatland Plumbing",
       "placeId": "ChIJr1ACQyhlKo0R-d5mXamsSME",
