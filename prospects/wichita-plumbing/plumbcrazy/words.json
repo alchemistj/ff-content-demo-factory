@@ -103,7 +103,8 @@
         "image": {
           "slot": "home-hero",
           "alt": "Plumber checking the pipes under a kitchen sink in a Wichita home",
-          "brief": "plumbing pool: home-hero"
+          "brief": "plumbing pool: home-hero",
+          "desktopPosition": "right 18%"
         }
       },
       "sections": [
@@ -320,9 +321,9 @@
           "type": "split",
           "heading": "What Happens When You Call About Your Water Heater",
           "image": {
-            "slot": "leak",
-            "alt": "Wet floor around the base of a water heater",
-            "brief": "plumbing pool: leak"
+            "slot": "contact-hero",
+            "alt": "Front door of a Wichita home, where the visit starts",
+            "brief": "plumbing pool: contact-hero"
           },
           "imageSide": "right",
           "body": [
@@ -771,7 +772,7 @@
         "Your site says you serve Wichita and a 30 mile radius around Sedgwick County, your Google listing puts you at 836 S Broadview St in Wichita, and a Birdeye listing and one Google review say Cheney, so which address should every listing use?",
         "Your page titles say Plumb Crazy, LLC while your footer says Plumb Crazy Kansas, LLC, so which name should every listing use?",
         "Your drain cleaning page says 17 years of experience and your sewer cleaning page says over 16 years, with no founding year anywhere, so which number should every listing use?",
-      "Your reviews describe a smaller fix found before a big quote, and this demo leads with that, so is that how your team works, and how would you put it?"
+        "Your reviews describe a smaller fix found before a big quote, and this demo leads with that, so is that how your team works, and how would you put it?"
       ]
     },
     "lead": {

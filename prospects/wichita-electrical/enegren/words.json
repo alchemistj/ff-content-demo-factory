@@ -158,7 +158,8 @@
         "image": {
           "slot": "home-hero",
           "alt": "Enegren electrician with a tool bag at the front door of a Wichita home",
-          "brief": "electrical pool: home-hero"
+          "brief": "electrical pool: home-hero",
+          "desktopPosition": "right 15%"
         }
       },
       "sections": [

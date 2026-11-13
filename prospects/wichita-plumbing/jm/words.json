@@ -2,7 +2,7 @@
   "schema": "words-package/v1",
   "business": {
     "name": "JM Plumbing",
-    "slug": "jm",
+    "slug": "jmplumbing",
     "city": "Wichita",
     "state": "KS",
     "companyType": "Plumber",
@@ -97,7 +97,8 @@
         "image": {
           "slot": "home-hero",
           "alt": "Plumber kneeling beside a pipe under a kitchen sink in a Wichita home",
-          "brief": "plumbing pool: home-hero"
+          "brief": "plumbing pool: home-hero",
+          "desktopPosition": "right 18%"
         }
       },
       "sections": [
@@ -474,9 +475,9 @@
           ],
           "listStyle": "checks",
           "image": {
-            "slot": "leak",
-            "alt": "Water on the floor around the base of a water heater",
-            "brief": "plumbing pool: leak"
+            "slot": "contact-hero",
+            "alt": "Front door of a Wichita home, where the visit starts",
+            "brief": "plumbing pool: contact-hero"
           },
           "imageSide": "right"
         },

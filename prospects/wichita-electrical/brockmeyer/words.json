@@ -122,7 +122,8 @@
         "image": {
           "slot": "home-hero",
           "alt": "Electrician checking a panel in a Wichita home while the homeowner looks on",
-          "brief": "electrical pool: home-hero"
+          "brief": "electrical pool: home-hero",
+          "desktopPosition": "right 15%"
         }
       },
       "sections": [

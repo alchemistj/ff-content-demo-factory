@@ -114,7 +114,8 @@
         "image": {
           "slot": "home-hero",
           "alt": "Electrician checking an outdoor electric meter at a Wichita home",
-          "brief": "electrical pool: home-hero"
+          "brief": "electrical pool: home-hero",
+          "desktopPosition": "right 15%"
         }
       },
       "sections": [

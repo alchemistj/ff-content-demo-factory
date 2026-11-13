@@ -99,7 +99,8 @@
         "image": {
           "slot": "home-hero",
           "alt": "Plumber working under a kitchen sink in a Wichita home",
-          "brief": "plumbing pool: home-hero"
+          "brief": "plumbing pool: home-hero",
+          "desktopPosition": "right 18%"
         }
       },
       "sections": [
@@ -495,9 +496,9 @@
             "We tell you what we think it needs, whether that's a repair or a new one."
           ],
           "image": {
-            "slot": "leak",
-            "alt": "Dripping kitchen faucet over a sink",
-            "brief": "plumbing pool: leak"
+            "slot": "contact-hero",
+            "alt": "Front door of a Wichita home, where the visit starts",
+            "brief": "plumbing pool: contact-hero"
           },
           "imageSide": "left"
         },

@@ -4,7 +4,7 @@ Hey JM Plumbing team,
 
 My daughter and I build websites for service businesses. Your reviews keep saying the same thing: you explain what's wrong and why, and show people what you're doing while you do it. So we made you a website mockup built around it, "Explain It. Show It. Fix It.":
 
-https://jm.websitepreview.fluidframemarketing.com/
+https://jmplumbing.websitepreview.fluidframemarketing.com/
 
 Note: It'll look a lot better with your logo and images on it! Lol
 

@@ -98,7 +98,8 @@
         "image": {
           "slot": "home-hero",
           "alt": "Plumber working on pipes at a Wichita home",
-          "brief": "plumbing pool: home-hero"
+          "brief": "plumbing pool: home-hero",
+          "desktopPosition": "right 18%"
         }
       },
       "sections": [
@@ -318,9 +319,9 @@
           "type": "split",
           "heading": "What Happens When You Call About a Leak",
           "image": {
-            "slot": "home-hero-alt",
-            "alt": "Plumber checking a shutoff valve with a wrench",
-            "brief": "plumbing pool: home-hero-alt"
+            "slot": "contact-hero",
+            "alt": "Front door of a Wichita home, where the visit starts",
+            "brief": "plumbing pool: contact-hero"
           },
           "body": [
             "Tell us what you've noticed and where: a stain, a drip, a meter that keeps moving, a bill that jumped. If you can, tell us where your main shutoff is.",
@@ -508,9 +509,9 @@
           "type": "split",
           "heading": "What Happens When You Call About a Water Heater",
           "image": {
-            "slot": "home-hero-alt",
-            "alt": "Plumber checking a shutoff valve with a wrench",
-            "brief": "plumbing pool: home-hero-alt"
+            "slot": "contact-hero",
+            "alt": "Front door of a Wichita home, where the visit starts",
+            "brief": "plumbing pool: contact-hero"
           },
           "body": [
             "Tell us what the heater is doing: no hot water, a leak, a noise, rusty water. If you know, tell us whether it runs on gas or electric, and whether it's a tank or tankless.",
@@ -696,9 +697,9 @@
           "type": "split",
           "heading": "What to Tell Us",
           "image": {
-            "slot": "home-hero-alt",
-            "alt": "Plumber checking a shutoff valve with a wrench",
-            "brief": "plumbing pool: home-hero-alt"
+            "slot": "fixture",
+            "alt": "A clean bathroom vanity and faucet",
+            "brief": "plumbing pool: fixture"
           },
           "list": [
             "What's happening, and where in the building",
@@ -839,7 +840,7 @@
         "Your site and logo say “Yokes Master Plumbing,” your Google listing says “Yoke's master plumbing and remodeling,” and your email is yokesplumbingnremodeling@gmail.com, so which spelling and name should every listing use?",
         "Your site shows no street address, while your Google listing puts you at 718 N Milstead St, so which address should every listing use?",
         "Your site names no one, while your Google reviews name Dan, Tammy, Jake and Brandon, so who should the site introduce, and in what role?",
-      "Your reviews describe leaks that others couldn't find, and the site says you go after the source, so how does your team find a hidden leak, and what should we say about it?"
+        "Your reviews describe leaks that others couldn't find, and the site says you go after the source, so how does your team find a hidden leak, and what should we say about it?"
       ]
     },
     "lead": {

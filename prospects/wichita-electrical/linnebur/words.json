@@ -148,7 +148,8 @@
         "image": {
           "slot": "home-hero",
           "alt": "Electrician working at an open electrical panel in a Wichita home",
-          "brief": "electrical pool: home-hero"
+          "brief": "electrical pool: home-hero",
+          "desktopPosition": "right 15%"
         }
       },
       "sections": [

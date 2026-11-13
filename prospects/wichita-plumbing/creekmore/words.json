@@ -98,7 +98,8 @@
         "image": {
           "slot": "home-hero",
           "alt": "Plumber kneeling beside a water heater in a Wichita home, checking the pipes",
-          "brief": "plumbing pool: home-hero"
+          "brief": "plumbing pool: home-hero",
+          "desktopPosition": "right 18%"
         }
       },
       "sections": [
@@ -319,9 +320,9 @@
           ],
           "imageSide": "right",
           "image": {
-            "slot": "leak",
-            "alt": "Water pooled on a basement floor beside a water heater",
-            "brief": "plumbing pool: leak"
+            "slot": "contact-hero",
+            "alt": "Front door of a Wichita home, where the visit starts",
+            "brief": "plumbing pool: contact-hero"
           }
         },
         {
@@ -468,9 +469,9 @@
           ],
           "imageSide": "right",
           "image": {
-            "slot": "leak",
-            "alt": "Water on a bathroom floor around the base of a toilet",
-            "brief": "plumbing pool: leak"
+            "slot": "contact-hero",
+            "alt": "Front door of a Wichita home, where the visit starts",
+            "brief": "plumbing pool: contact-hero"
           }
         },
         {

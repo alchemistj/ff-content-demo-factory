@@ -129,7 +129,8 @@
         "image": {
           "slot": "home-hero",
           "alt": "Plumber kneeling beside a water heater in a Wichita home",
-          "brief": "plumbing pool: home-hero"
+          "brief": "plumbing pool: home-hero",
+          "desktopPosition": "right 18%"
         }
       },
       "sections": [
@@ -315,9 +316,9 @@
           "type": "split",
           "heading": "What Happens When You Call About Your Water Heater",
           "image": {
-            "slot": "leak",
-            "alt": "Water pooling on a floor beneath a water heater tank",
-            "brief": "plumbing pool: leak"
+            "slot": "contact-hero",
+            "alt": "Front door of a Wichita home, where the visit starts",
+            "brief": "plumbing pool: contact-hero"
           },
           "body": [
             "Tell us what the tank is doing: no hot water, lukewarm water, water on the floor, a noise you haven't heard before. Tell us whether it runs on gas, electric or propane, and how old it is if you know.",
