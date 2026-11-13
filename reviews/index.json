@@ -687,6 +687,18 @@
       "pulledAt": "2026-11-08T22:04:58.917Z"
     },
     {
+      "slug": "young-electric-wichita",
+      "name": "Young Electric, Inc.",
+      "placeId": "ChIJqSKiffrkuocRtpg_iqzBwZc",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 42,
+        "withText": 31,
+        "ratingOnly": 11
+      },
+      "pulledAt": "2026-11-13T20:56:42.261Z"
+    },
+    {
       "slug": "your-choice-lawncare",
       "name": "Your Choice Lawncare",
       "placeId": "ChIJK5THSLphz4cRYzH1z8Wp88s",
