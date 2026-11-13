@@ -1,0 +1,954 @@
+{
+  "kind": "google-review-pull",
+  "version": 1,
+  "slug": "bybee-electric-wichita",
+  "place": {
+    "name": "Bybee Electric",
+    "placeId": "ChIJIwqBwKLjuocRzW9s8ipI_i8",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Bybee%20Electric&query_place_id=ChIJIwqBwKLjuocRzW9s8ipI_i8",
+    "address": "232 N Pennsylvania Ave, Wichita, KS 67214",
+    "phone": "(316) 409-4186",
+    "rating": 4.7,
+    "totalReviewCount": 101
+  },
+  "pulledAt": "2026-11-09T18:43:38.837Z",
+  "requestedMax": 110,
+  "reviews": [
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2poTWRIQXhaVXR1YzFRMFNXZE9jV0ZtY1hrMk0xRRAB",
+      "reviewer": "Jennifer B.",
+      "rating": 5,
+      "text": "I have used them before. So I called when I had an issue. They told me to call Evergy first because they would do a free inspection. They saved me a service call. It was an Evergy issue after all. :) Will highly recommend these guys!",
+      "publishedAt": "2026-05-12T23:15:55.752Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2poTWRIQXhaVXR1YzFRMFNXZE9jV0ZtY1hrMk0xRRAB!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CAIQACodChtycF9oOjhMdHAxZUtuc1Q0SWdOcWFmcXk2M1E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2prM1ZGWnVjMVUxVmpaQ2IwUlpSRmR5VDI1T1FYYxAB",
+      "reviewer": "Tina T.",
+      "rating": 5,
+      "text": "I recently received three quotes for electrical work at our house, and Bybee Electric was not only the most competitive but also one of the most reputable companies in Wichita. From start to finish, KC (sp?),Jon and Edger were incredibly professional and communicative. They took great care to clean up each work area—parts of our home were literally cleaner after they finished than before they started! They patiently answered all our questions and provided solutions to what we thought were major issues, ultimately saving us a lot of money. I couldn't be more pleased with Bybee Electric and already plan to call them back for another project in 2026! Highly recommended.",
+      "publishedAt": "2025-12-17T22:05:10.646Z",
+      "ownerResponse": "Thank you Tina!  We appreciate your review and you were very flexible with us on our schedule!  Merry Christmas",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2prM1ZGWnVjMVUxVmpaQ2IwUlpSRmR5VDI1T1FYYxAB!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CAIQACodChtycF9oOjk3VFZuc1U1VjZCb0RZRFdyT25OQXc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2taUVVYTjBZM2R5VTNCT2Fua3dRVzh3UjFwcFpIYxAB",
+      "reviewer": "Karin W.",
+      "rating": 5,
+      "text": "Dannie and Sam were the best!  Professional, friendly and incredibly knowledgeable. They went above and beyond my expectations and I would recommend them to everyone.",
+      "publishedAt": "2025-11-18T20:12:04.394Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2taUVVYTjBZM2R5VTNCT2Fua3dRVzh3UjFwcFpIYxAB!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CAIQACodChtycF9oOkZQUXN0Y3dyU3BOankwQW8wR1ppZHc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2w4elVtSjJjRXhNWW1OMWFrbDBhelJaWm5OcVRVRRAB",
+      "reviewer": "Brittani A.",
+      "rating": 5,
+      "text": "This is actually my second time working with Bybee. The first time in 2023 I had a new outlet for my microwave installed and they did an excellent job. This time I needed a damaged power line to my shed replaced, and the service was excellent yet again. My electricians were punctual, polite, and were able to quickly replace the damaged line. The new installation is a huge upgrade and looks great! We look forward to working with Bybee again in the near future when we begin our interior remodeling. Thank you!",
+      "publishedAt": "2025-07-03T03:13:38.108Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2w4elVtSjJjRXhNWW1OMWFrbDBhelJaWm5OcVRVRRAB!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CAIQACodChtycF9oOl8zUmJ2cExMYmN1akl0azRZZnNqTUE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VNckVuZnFDNzgyWWJBEAE",
+      "reviewer": "Amanda M.",
+      "rating": 5,
+      "text": "Saved us thousands of dollars. Fast and very friendly.",
+      "publishedAt": "2025-06-06T14:02:11.748Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VNckVuZnFDNzgyWWJBEAE!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CIHM0ogKEMrEnfqC782YbA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURQbmFIMTJRRRAB",
+      "reviewer": "Robert C.",
+      "rating": 5,
+      "text": "I’ve used Bybee Electric on at least 3 occasions. They’re ALWAYS very professional and on time. Their technicians are also very friendly and explain everything in layman’s terms. They are also very reasonably priced and clean up after themselves. I will continue using Bybee for all my electrical needs.",
+      "publishedAt": "2024-12-04T21:42:23.614Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURQbmFIMTJRRRAB!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CIHM0ogKEICAgIDPnaH12QE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUQzcmQzLTZRRRAB",
+      "reviewer": "Tyler M.",
+      "rating": 1,
+      "text": "Crooks. Technician sent to the property completely disrespected my wife. Utterly disgusting that payment was still requested after the job was incorrectly done. Work order not completed and when we requested someone come by to explain what was done my wife gets disrespected and degraded so bad to the point she had to ask him to remove himself from the property. We asked to only pay for work that was completed and we're returned and incorrect invoice time and time again. Ended up paying to just be done with this ordeal but will absolutely never use this company or anyone associated with them on any of our properties ever again.",
+      "publishedAt": "2024-11-17T17:36:31.337Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQzcmQzLTZRRRAB!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CIHM0ogKEICAgID3rd3-6QE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNMd2VDZFlnEAE",
+      "reviewer": "Karin T.",
+      "rating": 5,
+      "text": "Wonderful experience. Bybee was able to get me on the books fast, the price was reasonable and the electricians (Danny & Alec) were amazing! They completed the job faster than estimated, cleaned up my home and took away the debris. Very nice and professional.",
+      "publishedAt": "2024-06-19T21:05:43.514Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNMd2VDZFlnEAE!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CIHM0ogKEICAgICLweCdYg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURObWFXLV9nRRAB",
+      "reviewer": "Russell P.",
+      "rating": 4,
+      "text": "As always the company was prompt, curtious, quick and very professional. I have nothing to base an opinion on price.",
+      "publishedAt": "2024-01-23T22:13:08.972Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURObWFXLV9nRRAB!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CIHM0ogKEICAgIDNmaW-_gE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNOcU0zaEdnEAE",
+      "reviewer": "Jackie W.",
+      "rating": 5,
+      "text": "Bybee is a professional and honest operation. My good experience with them says a lot about why you should want to work with them. My project was unusual and they recognized that they weren't the best solution so they informed me about my situation and guided me to next steps. I appreciate you Bybee Electric.",
+      "publishedAt": "2024-01-11T18:21:33.364Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNOcU0zaEdnEAE!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CIHM0ogKEICAgICNqM3hGg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUMxcG9DTERREAE",
+      "reviewer": "Meredith S.",
+      "rating": 5,
+      "text": "This will likely be my go-to for electrical needs from now on!<br><br>I got four quotes, and they were by far the most reasonable. The person who provided the quote answered all my questions thoroughly and provided an estimate of the length of time the power would be off (important because my father is on continuous oxygen and we needed to prepare).<br><br>The person (Derek) who did the work was friendly, communicative, and efficient. He did forget his hoodie, so I guess it's free advertising until they pick it up! Lol!<br><br>I did call with a couple of additional questions, and the young female who answered the phone was kind and helpful (maybe Katie).<br><br>We got breaker box completely replaced, the outside collar repaired, some outlet upgrading done in the garage (which also made our outside backyard light functional again), some inside outlets changed to 3-way, and an inside switch replace.",
+      "publishedAt": "2023-12-28T20:28:02.015Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMxcG9DTERREAE!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CIHM0ogKEICAgIC1poCLDQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUMxLUstWDdRRRAB",
+      "reviewer": "olsonowskiswj",
+      "rating": 4,
+      "text": "Had the do a residential basement for us. Good price, good project manager, electrician that came on site seemed annoyed when I corrected him on things that were on the work order. Overall very happy!",
+      "publishedAt": "2023-12-22T16:12:13.423Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMxLUstWDdRRRAB!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CIHM0ogKEICAgIC1-K-X7QE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURWejRmWG9BRRAB",
+      "reviewer": "Kimberly C.",
+      "rating": 1,
+      "text": "No idea about their services. But their drivers could definitely use a refresher on road safety. After disregarding his yield sign merging onto Kellogg he proceeded to attempt running me off the road.",
+      "publishedAt": "2023-12-18T22:25:58.082Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURWejRmWG9BRRAB!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CIHM0ogKEICAgIDVz4fXoAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNac3FtQS1nRRAB",
+      "reviewer": "Jessica R.",
+      "rating": 5,
+      "text": "Very professional and up front. Came got the job done as asked.",
+      "publishedAt": "2023-09-07T17:42:20.971Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNac3FtQS1nRRAB!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CIHM0ogKEICAgICZsqmA-gE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUN4eHNmcmV3EAE",
+      "reviewer": "vincent M.",
+      "rating": 5,
+      "text": "This place was amazing. They were prompt and very nice. I'm so glad I found them. They are my go to for any electrical work.",
+      "publishedAt": "2023-05-16T13:48:52.964Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN4eHNmcmV3EAE!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CIHM0ogKEICAgICxxsfrew%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNSdXZIYnFRRRAB",
+      "reviewer": "TSX00",
+      "rating": 5,
+      "text": "Matt was awesome. He knew what to look for and was able to get our outlets working again within an hour. We bought our house in the fall last year, and the circuits didn't make any sense. Our outlets were inside and outside, upstairs and downstairs, but Matt was able to take care of it without too much hassle. Highly recommend and would call them again. Thank you!",
+      "publishedAt": "2023-03-30T22:50:50.619Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNSdXZIYnFRRRAB!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CIHM0ogKEICAgICRuvHbqQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNobWQ3UGRREAE",
+      "reviewer": "Marcene C.",
+      "rating": 1,
+      "text": "It took several trips to get the service at a brand new garage that we had put in. Finally after almost 2 months we got service. Very unprofessional the owner promised a 300.00 dollar credit that I have yet to see  I used bybee electric twice before and was satisfied but after this I will never use or recommend them",
+      "publishedAt": "2023-02-16T19:12:48.996Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNobWQ3UGRREAE!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CIHM0ogKEICAgIChmd7PdQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNoZ3Izd1R3EAE",
+      "reviewer": "316 R.",
+      "rating": 5,
+      "text": "Excellent work great price couldn't be more happier",
+      "publishedAt": "2023-02-08T11:44:59.210Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNoZ3Izd1R3EAE!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CIHM0ogKEICAgIChgr3wTw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUMtdGJ6TnNnRRAB",
+      "reviewer": "Justin H.",
+      "rating": 5,
+      "text": "Highly affordable, fast and professional. This company is great!!",
+      "publishedAt": "2022-11-09T17:40:06.086Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMtdGJ6TnNnRRAB!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CIHM0ogKEICAgIC-tbzNsgE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURla0ozaXVRRRAB",
+      "reviewer": "Thomas S.",
+      "rating": 5,
+      "text": "Installed a 100 amp sub-panel in garage for additional power for large power tools.  My main panel needed some reconfiguring and that went off without a hitch.  They did good work and were courteous throughout the process.  The price was fair - I had 3 bids and Bybee was in the middle.",
+      "publishedAt": "2022-09-29T14:33:19.434Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURla0ozaXVRRRAB!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CIHM0ogKEICAgIDekJ3iuQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUR1MmZUcnZnRRAB",
+      "reviewer": "J",
+      "rating": 1,
+      "text": "Unprofessional and starred atmr with a rude look the lady manager, I never look at her until I seen her turn and stare at me.",
+      "publishedAt": "2022-08-24T12:51:51.902Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR1MmZUcnZnRRAB!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CIHM0ogKEICAgIDu2fTrvgE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURXZ3BlQU5nEAE",
+      "reviewer": "Richard G.",
+      "rating": 5,
+      "text": "Fantastic job. Great experience.",
+      "publishedAt": "2022-03-18T20:27:24.197Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURXZ3BlQU5nEAE!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CIHM0ogKEICAgIDWgpeANg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURHZ2R2SWZ3EAE",
+      "reviewer": "Bruce P.",
+      "rating": 5,
+      "text": "I was asking Bybee for estimate to replace meter and probably more, but John took time to examine the problem and determined that current set up was safe and nothing was needed.  Wow. Thank you",
+      "publishedAt": "2021-11-30T04:52:15.889Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURHZ2R2SWZ3EAE!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CIHM0ogKEICAgIDGgdvIfw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNhNnMzMEZBEAE",
+      "reviewer": "Jackie S.",
+      "rating": 5,
+      "text": "Bybee does excellent work. I recommend them to all of my friends. They are always on time and explain the work they are doing in a way I can understand. Very professional company.",
+      "publishedAt": "2021-07-28T19:21:50.628Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNhNnMzMEZBEAE!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CIHM0ogKEICAgICa6s30FA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNLNnFHbXFRRRAB",
+      "reviewer": "J S.",
+      "rating": 5,
+      "text": "Very professional and fair prices. Very responsive in scheduling work. I would use Bybee Electric again.",
+      "publishedAt": "2021-04-01T21:17:56.043Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNLNnFHbXFRRRAB!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CIHM0ogKEICAgICK6qGmqQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURTZzdIbjFRRRAB",
+      "reviewer": "bjetson",
+      "rating": 5,
+      "text": "These people are great!  Very professional and do great work.  Their services were very reasonably priced compared to other bids I received.  We purchased a house 5 years ago and they came in when we first bought and did some upgrades.  We just had them back to do our basement remodel and again are very satisfied.  We would highly recommend them",
+      "publishedAt": "2021-01-06T17:08:31.340Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURTZzdIbjFRRRAB!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CIHM0ogKEICAgIDSg7Hn1QE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURDd0stSFh3EAE",
+      "reviewer": "Lauren H.",
+      "rating": 5,
+      "text": "Derek was awesome! He arrived on time,  called before he showed up.  He was professional & made sure all of our concerns were addressed.  He had to go get some replacement parts that we needed,  installed them and made sure everything worked before he left.<br>Super happy with the service,  thank you.",
+      "publishedAt": "2020-09-10T17:23:52.006Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURDd0stSFh3EAE!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CIHM0ogKEICAgIDCwK-HXw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNDcGV5cHhBRRAB",
+      "reviewer": "Sherry K.",
+      "rating": 5,
+      "text": "On time and very professional.  Have used company before and will again.  Would highly recommend",
+      "publishedAt": "2020-08-30T05:43:12.014Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNDcGV5cHhBRRAB!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CIHM0ogKEICAgICCpeypxAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNDcVlUcFh3EAE",
+      "reviewer": "Seth",
+      "rating": 5,
+      "text": "Great crew, fast to estimate, fast to schedule/install, knowledgeable and friendly.",
+      "publishedAt": "2020-08-27T19:05:57.925Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNDcVlUcFh3EAE!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CIHM0ogKEICAgICCqYTpXw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUM4aTltNWl3RRAB",
+      "reviewer": "Aaron F.",
+      "rating": 5,
+      "text": "Friendly and helpful service",
+      "publishedAt": "2020-07-14T14:15:30.925Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUM4aTltNWl3RRAB!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CIHM0ogKEICAgIC8i9m5iwE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURjMXUtUHpnRRAB",
+      "reviewer": "Arthur G.",
+      "rating": 5,
+      "text": "Quick, professional, reasonably priced",
+      "publishedAt": "2020-06-11T03:49:11.034Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURjMXUtUHpnRRAB!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CIHM0ogKEICAgIDc1u-PzgE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURjb0xUWHJ3RRAB",
+      "reviewer": "M T.",
+      "rating": 5,
+      "text": "They did very good work and were very reasonable",
+      "publishedAt": "2020-05-11T21:07:13.528Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURjb0xUWHJ3RRAB!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CIHM0ogKEICAgIDcoLTXrwE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNjdjh1QnFRRRAB",
+      "reviewer": "Mark B.",
+      "rating": 5,
+      "text": "They did quality work for me, I would use them again and highly recommend.",
+      "publishedAt": "2020-05-08T01:53:24.438Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNjdjh1QnFRRRAB!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CIHM0ogKEICAgICcv8uBqQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNjN19tX1BnEAE",
+      "reviewer": "Trenna H.",
+      "rating": 5,
+      "text": "Got an estimate by them, a week later we scheduled them to come out and do some work for us in our sons home. He was on time, professional and got the job done.",
+      "publishedAt": "2020-05-04T13:54:56.431Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNjN19tX1BnEAE!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CIHM0ogKEICAgICc7_m_Pg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNjazdEQnhRRRAB",
+      "reviewer": "M C.",
+      "rating": 5,
+      "text": "Bybee was quick to respond to the Home Adviser request to bid a Chandelier installation.   Their bid was right inline with what I thought it should cost, unlike the one other company that eventually called.  Derek spent the time to do the installation correctly even when he needed to go get additional materials.  Communication was top notch. Bybee was good with answering my questions and working with me on some deviations to the original plan.",
+      "publishedAt": "2020-03-31T23:49:49.711Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNjazdEQnhRRRAB!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CIHM0ogKEICAgICck7DBxQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNjX2FyYmdRRRAB",
+      "reviewer": "L&A P.",
+      "rating": 5,
+      "text": "Fast and efficient!",
+      "publishedAt": "2020-03-25T13:45:13.305Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNjX2FyYmdRRRAB!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CIHM0ogKEICAgICc_arbgQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNjM2F2SHRRRRAB",
+      "reviewer": "Roberts O.",
+      "rating": 5,
+      "text": "I have used Bybee Electric several times personally and professionally. I run a service company myself and have enjoyed working with them each and every time. I refer them regularly and hear nothing but the same from those I sent them to work. Good products, Good service and competitive pricing. It is really what you want out of your service company.",
+      "publishedAt": "2020-03-23T16:23:17.975Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNjM2F2SHRRRRAB!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CIHM0ogKEICAgICc3avHtQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNjaXZIWVVBEAE",
+      "reviewer": "Janice H.",
+      "rating": 4,
+      "text": "Good work!  The latest and greatest! Good communication!",
+      "publishedAt": "2020-03-11T16:03:07.916Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNjaXZIWVVBEAE!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CIHM0ogKEICAgICcivHYUA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURzLWIzMDF3RRAB",
+      "reviewer": "Peggy E.",
+      "rating": 5,
+      "text": "Bybee got the job done on time and with  little disruption to my business.",
+      "publishedAt": "2020-03-09T13:28:00.964Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURzLWIzMDF3RRAB!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CIHM0ogKEICAgIDs-b301wE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURza2ZUUlVREAE",
+      "reviewer": "Daniel",
+      "rating": 1,
+      "text": "Received an email requesting a review for serviced rendered by Bybee Electric on google reviews. I have not had any services by this company. I asked for a quote from them back in June of 2018. If you give them your email, you will end up on the email list 2 years later out of the blue saying thanks for services and asking for a review. Users beware your data might bleed over into other sections of this company. Makes me wonder what else have they done with my information.",
+      "publishedAt": "2020-03-07T00:35:55.473Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURza2ZUUlVREAE!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CIHM0ogKEICAgIDskfTRUQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURzZ2R5czJ3RRAB",
+      "reviewer": "Vivian B.",
+      "rating": 5,
+      "text": "I was very pleased with the work Bybee Electric did on my basement lighting.  I had them install updated ceiling lites.  They not only did that but fixed some wiring problems they found in the process. They knew what they were doing and I could trust them to do the job in a efficient and timely manner. I recommend them and would use them again.",
+      "publishedAt": "2020-03-06T01:09:37.547Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURzZ2R5czJ3RRAB!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CIHM0ogKEICAgIDsgdys2wE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURzbm82T2R3EAE",
+      "reviewer": "Tom H.",
+      "rating": 5,
+      "text": "The install experience was excellent. The work went smoothly and was done well and professionally. I plan to use them in the future.",
+      "publishedAt": "2020-03-05T01:57:06.531Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURzbm82T2R3EAE!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CIHM0ogKEICAgIDsno6Odw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURzc3BpTmlRRRAB",
+      "reviewer": "Debra J.",
+      "rating": 5,
+      "text": "We have used Bybee Electric twice: for a house addition and for smaller updates. We have been pleased with the professionalism and the fair pricing.",
+      "publishedAt": "2020-02-28T20:51:07.004Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURzc3BpTmlRRRAB!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CIHM0ogKEICAgIDsspiNiQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURzb295RDF3RRAB",
+      "reviewer": "Noah S.",
+      "rating": 5,
+      "text": "Martin at Bybee is exceptional. Went out of his way to help with finding parts for our fan after he took care of the original service order for an outlet not working. Couldn't recommend a better electrician, thanks Martin and Bybee!",
+      "publishedAt": "2020-02-27T20:52:48.014Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURzb295RDF3RRAB!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CIHM0ogKEICAgIDsooyD1wE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURzX0xDS1hREAE",
+      "reviewer": "Sharon C.",
+      "rating": 5,
+      "text": "Very respectable of your time and property.",
+      "publishedAt": "2020-02-27T02:01:51.621Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURzX0xDS1hREAE!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CIHM0ogKEICAgIDs_LCKXQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURzdlBUbmFnEAE",
+      "reviewer": "Kayla S.",
+      "rating": 5,
+      "text": "Bybee Electric has helped us with our new home on a few occasions. Both times, Martin, has been our technician. He is prompt, knowledgeable and very personable. Today, we had a tricky issue with the connection of our lighting. Martin went above and beyond to get everything fixed and spent an ample amount of time making sure everything was fixed appropriately. He even made 2 trips to leave in order to get a couple of small pieces that were missing on our ceiling fans. The appointment was not intended for him to help us with the ceiling fans but he noticed that a couple parts were not installed correctly. Martin didn’t have to help us with this at all and he truly went above and beyond our expectations! I highly recommend Martin with Bybee. You will not be disappointed!",
+      "publishedAt": "2020-02-26T20:55:47.751Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURzdlBUbmFnEAE!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CIHM0ogKEICAgIDsvPTnag%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURzdEtLaWFnEAE",
+      "reviewer": "Rick E.",
+      "rating": 5,
+      "text": "Good service, friendly, on time. They are my go to electrical guys. I will use them for any future electrical problems. Thanks guys, good job",
+      "publishedAt": "2020-02-25T00:23:26.048Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURzdEtLaWFnEAE!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CIHM0ogKEICAgIDstKKiag%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURzNkxiTlZBEAE",
+      "reviewer": "Jr R.",
+      "rating": 5,
+      "text": "They are very good at producing quality work. We had a problem with a city inspector wich was NOT their fault, and they were so very focused on resolving the issue for me. Great guys, great customer service, and great pricing. Highly recomend them.",
+      "publishedAt": "2020-02-22T14:52:37.502Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURzNkxiTlZBEAE!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CIHM0ogKEICAgIDs6LbNVA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURzaU9ENXRnRRAB",
+      "reviewer": "Lorraine H.",
+      "rating": 5,
+      "text": "I have used Bybee for many years. They have always been a great company to work with. I tried others but the professional care and quality service can't compare. 👍",
+      "publishedAt": "2020-02-21T19:12:20.931Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURzaU9ENXRnRRAB!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CIHM0ogKEICAgIDsiOD5tgE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURzb042d3pRRRAB",
+      "reviewer": "Christina S.",
+      "rating": 5,
+      "text": "Great team!",
+      "publishedAt": "2020-02-20T14:43:06.055Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURzb042d3pRRRAB!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CIHM0ogKEICAgIDsoN6wzQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNzcjVQNVZBEAE",
+      "reviewer": "Teddy J.",
+      "rating": 5,
+      "text": "They do good work!",
+      "publishedAt": "2020-02-18T14:34:43.037Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNzcjVQNVZBEAE!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CIHM0ogKEICAgICsr5P5VA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNzcC1tS1ZBEAE",
+      "reviewer": "Terry P.",
+      "rating": 5,
+      "text": "Bybee is a great company to work with. Knowledgeable and honest. They do great work.",
+      "publishedAt": "2020-02-16T16:01:26.744Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNzcC1tS1ZBEAE!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CIHM0ogKEICAgICsp-mKVA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNzdS1lWl9BRRAB",
+      "reviewer": "Kelly B.",
+      "rating": 5,
+      "text": "Had a large project for my home and shop, these guys saved me a ton of money over every other bid I got. The guys showed up and got the job done in just a few days when everyone else said it would take at least a week. I was very happy and impressed with the work and service. The follow up was also greatly appreciated and honestly unexpected 👍👍👍👍👍 five thumbs up !!",
+      "publishedAt": "2020-02-15T19:51:04.459Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNzdS1lWl9BRRAB!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CIHM0ogKEICAgICsu-eZ_AE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNzcTkyWjFnRRAB",
+      "reviewer": "Susan M.",
+      "rating": 5,
+      "text": "Martin was our electrician, he was very knowledgeable and friendly. We would definitely have him help us again if we have electrical problems.",
+      "publishedAt": "2020-02-14T20:50:19.821Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNzcTkyWjFnRRAB!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CIHM0ogKEICAgICsq92Z1gE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNzdlplaXJnRRAB",
+      "reviewer": "Chris A.",
+      "rating": 5,
+      "text": "These guys are the Best!",
+      "publishedAt": "2020-02-11T18:01:50.350Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNzdlplaXJnRRAB!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CIHM0ogKEICAgICsvZeirgE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURVeDlueThnRRAB",
+      "reviewer": "Mark R.",
+      "rating": 5,
+      "text": "Bybee electric updated my 1870 farm house . The oldest house in sedwick county . So Bybee can say they work on the oldest to the newest houses. They have also updated countless houses for my clients and always do overly professional jobs . There bids seem to outpace there competition.  Would recommend calling them for any electrical work be a builder or home owner.",
+      "publishedAt": "2020-01-15T00:54:42.719Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURVeDlueThnRRAB!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CIHM0ogKEICAgIDUx9ny8gE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURNN0x2MTVnRRAB",
+      "reviewer": "Adrianne P.",
+      "rating": 5,
+      "text": "Prompt and enjoyable company to work with! Corey was helpful and answered all of our questions!",
+      "publishedAt": "2019-12-20T14:42:36.303Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURNN0x2MTVnRRAB!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CIHM0ogKEICAgIDM7Lv15gE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNNemFpbjFnRRAB",
+      "reviewer": "Debbie H.",
+      "rating": 5,
+      "text": "Bybee Electric is great to work with. They are always punctually and do quality work.",
+      "publishedAt": "2019-11-30T13:14:21.607Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNNemFpbjFnRRAB!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CIHM0ogKEICAgICMzain1gE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUQwNXRhd1Z3EAE",
+      "reviewer": "BOB D.",
+      "rating": 5,
+      "text": "Worked on a commercial lighting project with Bybee.  Quality work.  I recommend for electrical work in SE Kansas.",
+      "publishedAt": "2019-11-03T15:14:04.651Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQwNXRhd1Z3EAE!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CIHM0ogKEICAgID05tawVw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURZNnV5MWpRRRAB",
+      "reviewer": "Jessica P.",
+      "rating": 5,
+      "text": "Best electrician in Kansas!!!",
+      "publishedAt": "2019-10-08T14:11:01.885Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURZNnV5MWpRRRAB!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CIHM0ogKEICAgIDY6uy1jQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUMwdmFlUUZBEAE",
+      "reviewer": "Michael M.",
+      "rating": 5,
+      "text": "Bybee electric was great to work with.  Had some wiring that was not up to code.  Gave me a few different options.  Some low to high options.  Felt like they were being honest with me.  Really enjoyed that. Thanks guys!!",
+      "publishedAt": "2019-10-07T20:21:53.082Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMwdmFlUUZBEAE!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CIHM0ogKEICAgIC0vaeQFA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUMwcHJhcGx3RRAB",
+      "reviewer": "Daryl D.",
+      "rating": 5,
+      "text": "Bybee Electric was great!  Electrician named Martin was exceptional with his promptness, skills and knowledge.  He diagnosed and repaired the issue with ease regarding indoor lights/switches and an outdoor photo cell problem.  Martin has a good personality and was very easy to work with.   I would strongly recommend him for any electrical work.",
+      "publishedAt": "2019-09-24T15:34:02.839Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMwcHJhcGx3RRAB!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CIHM0ogKEICAgIC0praplwE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUMwcHVTNGVnEAE",
+      "reviewer": "Rita C.",
+      "rating": 5,
+      "text": "Always pleased with their work, and recommend them at every opportunity.",
+      "publishedAt": "2019-09-24T13:55:30.155Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMwcHVTNGVnEAE!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CIHM0ogKEICAgIC0puS4eg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUMwaUx6UHpBRRAB",
+      "reviewer": "Denise J.",
+      "rating": 5,
+      "text": "Bybee Electric is a local company that has served us well.  The rates are reasonable and the staff is courteous and friendly.  They take their time in doing the job right.",
+      "publishedAt": "2019-09-12T14:18:36.054Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMwaUx6UHpBRRAB!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CIHM0ogKEICAgIC0iLzPzAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURVdjdEYWVREAE",
+      "reviewer": "Tim R.",
+      "rating": 5,
+      "text": "Great company to work with ... Really enjoy each time DJ comes in.",
+      "publishedAt": "2019-09-09T18:25:14.419Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURVdjdEYWVREAE!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CIHM0ogKEICAgIDUv7DaeQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURVbi1lZ01nEAE",
+      "reviewer": "Daniel G.",
+      "rating": 5,
+      "text": "I have used Bybee Eletric on a couple of occasions and they do excellent work and deliver services in a kind, competent and professional manner.  I would highly recommend using Bybee.",
+      "publishedAt": "2019-09-09T13:12:15.870Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURVbi1lZ01nEAE!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CIHM0ogKEICAgIDUn-egMg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNVeGZyeGdRRRAB",
+      "reviewer": "Monica R.",
+      "rating": 5,
+      "text": "We have worked with Bybee Electric for several years and they are very prompt and courteous. Really appreciate the work they do for us.",
+      "publishedAt": "2019-07-29T20:50:26.964Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNVeGZyeGdRRRAB!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CIHM0ogKEICAgICUxfrxgQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNVaVB5WHB3RRAB",
+      "reviewer": "John H.",
+      "rating": 5,
+      "text": "We could not be happier with our experience with Bybee Electric.  The technician that we met with initially had great suggestions for solutions to our particular situation.  And the installing technician was very knowledgeable and efficient.  Both were very courteous and friendly.  Great experience all around. We are glad our kitchen remodelers suggested them.",
+      "publishedAt": "2019-07-15T13:38:22.884Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNVaVB5WHB3RRAB!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CIHM0ogKEICAgICUiPyXpwE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURrLS0tSHhRRRAB",
+      "reviewer": "A B.",
+      "rating": 5,
+      "text": "I was introduced to Bybee Electric during a very large main floor and kitchen remodel, by our contractor.  The electrical work was a HUGE part of the remodel and Bybee did a FANTASTIC job.  They took time every step of the way to make sure everything was the way we wanted it, worked seamlessly with us, our contractor, and the other subs.  They went above and beyond to include relabeling both our breaker boxes and provided us with a written \"key\".  Tom, and all the guys we worked with were top notch, knowledgable electricians.  I have used them for other electrical needs since our remodel.   John, the estimator is very thorough, thoughtful and timely.   Susan in the office is very easy to work with, and very responsive, with scheduling and other requests.   I highly recommend Bybee Electric.",
+      "publishedAt": "2019-07-09T18:54:03.485Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURrLS0tSHhRRRAB!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CIHM0ogKEICAgIDk---HxQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUM0dE4ySFRBEAE",
+      "reviewer": "jack S.",
+      "rating": 5,
+      "text": "Bybee Electric has worked on my home and worked with the pool company to install all of our pool and spa equipment and completed all of the electrical work on our pool house.  I would recommend Bybee Electric to anyone that is in need of an electrician that goes the extra mile to assure safety and a quality finish.  My company works with electrical companies all over the nation and internationally.  There is only one electrical company for me - Bybee Electric.  I trust Bybee Electric with the well being and safety of my family.",
+      "publishedAt": "2019-06-03T22:38:05.149Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM0dE4ySFRBEAE!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CIHM0ogKEICAgIC4tN2HTA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUM0cVBUNjBnRRAB",
+      "reviewer": "Amanda J.",
+      "rating": 5,
+      "text": "Martin is awsome removed shorts fixed nox",
+      "publishedAt": "2019-05-31T17:58:31.743Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUM0cVBUNjBnRRAB!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CIHM0ogKEICAgIC4qPT60gE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURZejdLaC1nRRAB",
+      "reviewer": "Kraig S.",
+      "rating": 5,
+      "text": "Bybee Electric did our electric for our pool cover and lights. They did a professional and quality job. Very dependable and good to work with. Kraig Segelm",
+      "publishedAt": "2019-05-27T14:30:36.946Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURZejdLaC1nRRAB!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CIHM0ogKEICAgIDYz7Kh-gE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURZNXVxMC1nRRAB",
+      "reviewer": "Wade S.",
+      "rating": 5,
+      "text": "Great company, always reccomend to family, friends, and my customers.",
+      "publishedAt": "2019-05-10T19:25:27.567Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURZNXVxMC1nRRAB!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CIHM0ogKEICAgIDY5uq0-gE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNvMnBMeU1REAE",
+      "reviewer": "jon W.",
+      "rating": 5,
+      "text": "Professional, courteous and knowledgeable. Martin was great, finished the job quickly and even taught me a few things about electricity.",
+      "publishedAt": "2019-02-11T16:26:11.173Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNvMnBMeU1REAE!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CIHM0ogKEICAgICo2pLyMQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURJLS1ETjdRRRAB",
+      "reviewer": "Rhonda C.",
+      "rating": 5,
+      "text": "Excellent service, fair pricing, shows up when scheduled.  Martin went above and beyond to properly install some rather tricky under counter lighting.  Very courteous and professional !",
+      "publishedAt": "2019-01-23T17:05:12.492Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURJLS1ETjdRRRAB!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CIHM0ogKEICAgIDI--DN7QE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURJOGVHSXV3RRAB",
+      "reviewer": "Andy R.",
+      "rating": 5,
+      "text": "Great people, excellent service!",
+      "publishedAt": "2019-01-09T22:14:36.728Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURJOGVHSXV3RRAB!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CIHM0ogKEICAgIDI8eGIuwE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNBeFktMnJnRRAB",
+      "reviewer": "Clay D.",
+      "rating": 5,
+      "text": "Thanks for the good work you did on the addition to our house. Everyone at Bybee was great to work with.",
+      "publishedAt": "2018-05-03T13:37:05.085Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNBeFktMnJnRRAB!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CIHM0ogKEICAgICAxY-2rgE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNRNC1Ua3dBRRAB",
+      "reviewer": "Matt M.",
+      "rating": 5,
+      "text": "Great company and great service ! I recommend them personally and professionally! Only electrical company we use!",
+      "publishedAt": "2018-02-17T17:27:19.074Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNRNC1Ua3dBRRAB!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CIHM0ogKEICAgICQ4-TkwAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURRZ0t5NUJnEAE",
+      "reviewer": "Dan L.",
+      "rating": 3,
+      "text": "They helped set up our electric for our pool about 2 years ago. However, they ran into issues and had to come back out and fix what they did wrong. But charged us for their mistake. They also broke a light we had by our pool and never fixed it. Other than that it's a decent company.",
+      "publishedAt": "2017-06-26T15:20:56.177Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURRZ0t5NUJnEAE!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CIHM0ogKEICAgIDQgKy5Bg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUN3c052b213RRAB",
+      "reviewer": "Susan B.",
+      "rating": 5,
+      "text": "We have had work done several times by this Great team. They have alway been very  professional. The work has always been done in a timely manner and at a very fair rate.  Would recommend this team to everyone.",
+      "publishedAt": "2017-05-10T18:08:11.613Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN3c052b213RRAB!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CIHM0ogKEICAgICwsNvomwE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNRcl82NjRBRRAB",
+      "reviewer": "Rachel S.",
+      "rating": 5,
+      "text": "Love Bybee Electric!  Great work and prices.  They saved my house from a potential fire because of a hidden birds nest they found while doing electrical work for us.",
+      "publishedAt": "2016-07-12T17:13:18.074Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNRcl82NjRBRRAB!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CIHM0ogKEICAgICQr_664AE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURBck1TN1JREAE",
+      "reviewer": "Chris M.",
+      "rating": 5,
+      "text": "I have used Bybee Electric on several occasions. Some on my shop and some for my own customers for their electrical needs. They are on time and do a great job. It is nice to have a service company that you can depend on.",
+      "publishedAt": "2016-02-17T21:26:10.376Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURBck1TN1JREAE!2m1!1s0x0:0x2ffe482af26c6fcd!3m1!1s2@1:CIHM0ogKEICAgIDArMS7RQ%7C%7C?hl=en-US",
+      "language": "en"
+    }
+  ],
+  "ratingOnly": [
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNwenRyN1NREAE",
+      "reviewer": "Chris C.",
+      "rating": 1,
+      "publishedAt": "2023-08-03T20:37:26.144Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUM4cHVUNnNBRRAB",
+      "reviewer": "Charles S.",
+      "rating": 5,
+      "publishedAt": "2020-07-05T02:26:24.060Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURjb09pU293RRAB",
+      "reviewer": "terry D.",
+      "rating": 5,
+      "publishedAt": "2020-05-11T18:56:07.455Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNjM2N6MHdBRRAB",
+      "reviewer": "Calvin F.",
+      "rating": 5,
+      "publishedAt": "2020-03-22T21:34:47.304Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNjN2F5b1dREAE",
+      "reviewer": "Mike U.",
+      "rating": 5,
+      "publishedAt": "2020-03-20T20:11:24.033Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNjN2JEc25BRRAB",
+      "reviewer": "Robert G.",
+      "rating": 4,
+      "publishedAt": "2020-03-20T17:24:43.746Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNjNmRPQW9nRRAB",
+      "reviewer": "Tammy G.",
+      "rating": 5,
+      "publishedAt": "2020-03-15T11:03:23.694Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNjMHRQZFhnEAE",
+      "reviewer": "Gregg D.",
+      "rating": 5,
+      "publishedAt": "2020-03-11T14:30:24.700Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURzeGFqV1F3EAE",
+      "reviewer": "Nikki F.",
+      "rating": 5,
+      "publishedAt": "2020-03-09T19:46:44.906Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURzNGM3blhnEAE",
+      "reviewer": "Alberto H.",
+      "rating": 5,
+      "publishedAt": "2020-03-06T19:54:17.079Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURzNnZuYjl3RRAB",
+      "reviewer": "Linda R.",
+      "rating": 5,
+      "publishedAt": "2020-03-01T04:28:25.886Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURzak9YTzVBRRAB",
+      "reviewer": "Kevin S.",
+      "rating": 5,
+      "publishedAt": "2020-02-25T14:13:52.299Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNzNzRXWkN3EAE",
+      "reviewer": "D K.",
+      "rating": 4,
+      "publishedAt": "2020-02-18T18:15:14.177Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURVazZMZU5REAE",
+      "reviewer": "Jon A.",
+      "rating": 5,
+      "publishedAt": "2019-09-03T03:33:04.760Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURVNG91UFlBEAE",
+      "reviewer": "Sylvie B.",
+      "rating": 5,
+      "publishedAt": "2019-08-18T15:07:57.059Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURVNkozZmFnEAE",
+      "reviewer": "Betty M.",
+      "rating": 3,
+      "publishedAt": "2019-08-13T03:24:23.597Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURZXy1PcndnRRAB",
+      "reviewer": "Becky A.",
+      "rating": 5,
+      "publishedAt": "2019-05-29T15:59:28.824Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNZMTlpbElREAE",
+      "reviewer": "Trevor B.",
+      "rating": 5,
+      "publishedAt": "2019-04-23T16:58:49.963Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNBd1AteGxBRRAB",
+      "reviewer": "Sean S.",
+      "rating": 5,
+      "publishedAt": "2018-01-02T22:48:26.075Z"
+    }
+  ]
+}
