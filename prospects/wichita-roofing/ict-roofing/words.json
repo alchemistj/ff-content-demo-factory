@@ -115,7 +115,8 @@
           "heading": "The Letter Covers Two Slopes",
           "body": [
             "The hail came through in the afternoon. By the next morning, half your street had roofer signs in the yard, and a man in a company polo had knocked and left a card. You're not signing with the guy who knocked, but you don't know who else to call.",
-            "So you filed. Then the letter comes, and it covers a slope or two. The rest of your roof, it says, is \"repairable.\" You don't know what the adjuster counted or where, and your deductible is a number you never looked up. Do you argue with a company that reads these every day, or pay for the other slopes yourself?",
+            "So you filed. Then the letter comes, and it covers a slope or two. The rest of your roof, it says, is \"repairable.\" You don't know what the adjuster counted or where, and your deductible is a number you never looked up.",
+            "Do you argue with a company that reads these every day, or pay for the other slopes yourself?",
             "That's the moment most people feel alone with a piece of paper they can't read. And a shingle isn't drywall: an older one goes brittle and cracks when it's lifted, so \"repairable\" can leave you a roof full of seams."
           ],
           "image": {
@@ -134,8 +135,9 @@
           "heading": "Offer Short? We Stay In It.",
           "body": [
             "Storm chasers sign you up, take whatever the insurance paperwork says and replace only what the adjuster wrote down. We work the other way.",
-            "First, a free inspection. We get on the roof, or put a drone over it, and photograph what we find. Second, we document every slope, so what the storm did doesn't depend on anyone's memory. Third, Brady or Arturo meets your adjuster at the house and walks the roof with them.",
-            "Fourth, when the offer arrives, we check it against the roof, slope by slope. Fifth, if it falls short, we push back with the photos and paperwork. If the answer is a denial, we document the damage again and help you appeal. We can't tell you what your insurance company will pay, and nobody honest can.",
+            "First, a free inspection. We get on the roof, or put a drone over it, and photograph what we find. Second, we document every slope, so what the storm did doesn't depend on anyone's memory. Third, Brady or Arturo walks the roof with your adjuster.",
+            "Fourth, when the offer arrives, we check it against the roof, slope by slope. Fifth, if it falls short, we push back with the photos and paperwork.",
+            "If the answer is a denial, we document the damage again and help you appeal. We can't tell you what your insurance company will pay, and nobody honest can.",
             "And if your roof is fine, we'll say so plainly."
           ],
           "image": {
@@ -149,10 +151,22 @@
             "Brady or Arturo on the roof with your adjuster",
             "The offer checked against your roof, slope by slope",
             "Pushback and appeals, with more documentation",
-            "A plain answer when the roof is fine",
-            "A local Wichita company, at 3500 N Rock Rd"
+            "A plain answer when the roof is fine"
           ],
           "listStyle": "checks"
+        },
+        {
+          "type": "review",
+          "quote": "This is a locally owned operation with a permanent crew. He required no upfront money and no sign contracts. All this together tells me that he's here to stay and weill be back to do any sort of call backs, if necessary.",
+          "name": "Tom B."
+        },
+        {
+          "type": "prose",
+          "heading": "A Local Crew That's Here to Stay",
+          "body": [
+            "A permanent crew, a local office at 3500 N Rock Rd and no money up front. When something needs a second look next spring, you're calling people who are still in Wichita.",
+            "Juan started the company and gets on your roof. Brady works your claim and meets your adjuster. Arturo, our Project Manager, coordinates the work. Call (316) 796-6722, or reach Arturo directly at (316) 807-8848."
+          ]
         },
         {
           "type": "review",
@@ -206,7 +220,8 @@
           "heading": "Roof Replacement",
           "body": [
             "When the roof is done, it's done: hail-bruised across every slope, shingles curling, leaks you've stopped counting.",
-            "We tear off the old roof and look at the deck underneath. Then we put the new roof on, and plenty of ours go on in a single day. If your gutters took the same hail, we do both together, so you deal with one crew once. Then we sweep the yard with a magnetic tool so nails don't end up in your tires."
+            "We tear off the old roof, look at the deck underneath and put the new roof on. Plenty of ours go on in a single day.",
+            "If your gutters took the same hail, we do both together, so you deal with one crew once. Then we sweep the yard with a magnetic tool so nails don't end up in your tires."
           ],
           "link": {
             "label": "See roof replacement →",
@@ -219,25 +234,12 @@
           "intro": "One call covers the roof, the claim, the gutters and the siding, for homes and commercial buildings."
         },
         {
-          "type": "prose",
-          "heading": "Who You'll Deal With",
-          "body": [
-            "I started this company, and I'm on your roof. Brady works your claim with you and meets your adjuster. Arturo is our Project Manager and coordinates the work.",
-            "We're a local company serving Wichita homeowners. Call the main line at (316) 796-6722, or reach Arturo directly at (316) 807-8848."
-          ]
-        },
-        {
-          "type": "review",
-          "quote": "This is a locally owned operation with a permanent crew. He required no upfront money and no sign contracts. All this together tells me that he's here to stay and weill be back to do any sort of call backs, if necessary.",
-          "name": "Tom B."
-        },
-        {
           "type": "faq",
           "heading": "Questions Before You Call",
           "items": [
             {
               "q": "Will insurance cover my roof?",
-              "a": "It depends on your policy and on how much damage the adjuster agrees is there, and nobody honest can promise it. The scope lists which slopes and how many squares it covers, so compare that to the slopes that took hail. If the offer is short, we stay in it with you: we document what's missing and push back with the insurer."
+              "a": "It depends on your policy and on how much damage the adjuster agrees is there, and nobody honest can promise it. Compare the scope's slopes to the slopes that took hail. If the offer is short, we stay in it with you: we document what's missing and push back."
             },
             {
               "q": "Are you storm chasers?",
@@ -253,11 +255,11 @@
             },
             {
               "q": "What does it cost me?",
-              "a": "On an insurance job, your share is your deductible. Many policies set a separate hail and wind deductible, often a percentage of your home's insured value. Find it on your declarations page and ask your agent what it means in dollars. If you aren't filing a claim, we tell you the price before any work begins."
+              "a": "On an insurance job, your share is your deductible. Many policies set a separate hail and wind deductible, often a percentage of your home's insured value, so ask your agent what it means in dollars. If you aren't filing a claim, we tell you the price before any work begins."
             },
             {
               "q": "How can I tell if hail damaged my roof?",
-              "a": "Look at the soft metal first: dents in gutters, downspouts and vents mean hail hit hard enough to bruise shingles, and granules piled at the downspouts are another sign. Then have someone get on the roof, because shingle damage rarely shows from the ground."
+              "a": "Look at the soft metal first: dents in gutters, downspouts and vents mean hail hit hard enough to bruise shingles. Granules piled at the downspouts are another sign. Then have someone get on the roof, because shingle damage rarely shows from the ground."
             },
             {
               "q": "Do you do commercial roofs?",
@@ -412,7 +414,8 @@
           "heading": "Install Day and Cleanup",
           "body": [
             "Plenty of our roofs have gone on in a single day. A larger roof, a steep one or one with a lot of decking to replace takes longer, and we tell you before we start.",
-            "A tear-off sends thousands of old nails and shingle scraps off the edge of the roof, and some land in the grass where you'll never spot them. So before we leave, we run a magnetic sweeper over the yard and pick up the debris, and you don't find nails with your bare feet next summer."
+            "A tear-off sends thousands of old nails and shingle scraps off the edge of the roof, and some land in the grass where you'll never spot them.",
+            "So before we leave, we run a magnetic sweeper over the yard and pick up the debris. You don't find nails with your bare feet next summer."
           ]
         },
         {
@@ -462,7 +465,7 @@
       "hero": {
         "eyebrow": "Roof repair in Wichita",
         "h1": "Roof Repair in Wichita, KS — ICT Roofing & Exteriors",
-        "sub": "A few shingles blew off, or a leak showed up and you can't tell where it starts. We'll find out where the water gets in and fix that, not just the spot on your ceiling. Call for a free inspection and we'll tell you straight whether it's a repair or something more.",
+        "sub": "A few shingles blew off, or a leak showed up and you can't tell where it starts. We'll find where the water gets in and fix that, not just the spot on your ceiling. Call for a free inspection and we'll tell you straight if it's a repair or more.",
         "primaryCta": {
           "label": "Call (316) 796-6722",
           "action": "call"
@@ -765,7 +768,7 @@
         "fixes": [
           "A page for roof repair in Wichita, KS: wind-blown shingles, leaks traced to flashing, and a straight repair-or-replace answer."
         ],
-        "alsoAdd": "A full build would also add pages for storm damage and insurance claims, gutters and siding, each planned from what Google actually shows for that search."
+        "alsoAdd": "Pages for storm damage and insurance claims, gutters and siding, each planned from what Google actually shows for that search."
       },
       {
         "route": "/contact/",
@@ -835,7 +838,22 @@
     },
     "lead": {
       "heading": "Why we led with staying in it when insurance offers less",
-      "text": "After hail, the scariest moment is the letter that covers two slopes of a roof that took hail on every slope. Most people can't tell what the adjuster counted, and most roofers take the paperwork as written. We checked the top five Wichita roofers, and none describes pushing back when the offer comes back short. Please tell us if that isn't how you work."
+      "text": "After hail, the scariest moment is the letter that covers two slopes of a roof that took hail on every slope. Most people can't tell what the adjuster counted, and most roofers take the paperwork as written. We checked the top five Wichita roofers, and none describes pushing back when the offer comes back short. Please tell us if that isn't how you work.",
+      "showScores": false,
+      "rows": [
+        {
+          "claim": "We stay in it when insurance offers less",
+          "score": 20
+        },
+        {
+          "claim": "We find where the water really gets in",
+          "score": 16
+        },
+        {
+          "claim": "A drone check the morning after a hailstorm",
+          "score": 15
+        }
+      ]
     }
   },
   "onboardingQuestions": [
