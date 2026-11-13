@@ -2,6 +2,10 @@
 
 Seven Wichita demos are rebuilt on the avatar and scored-USP method, with Josh's pilot notes applied. Each one went through three independent QA passes. Integrity v5 was already done. Nothing has been sent: the sender is idle and the factory branch is unmerged.
 
+**Verified live at about 8:00pm Central Thursday:** all 8 subdomains serve the new copy. Demo-check on the live sites gives 149 pass / 0 fail on all 8. No strategy page shows score numbers. Cook's and Dream Makers show the offer card; the other 6 show "Why we led with".
+
+PRs (all merged): ff-astro-demos #65 (score switch and offer card), #73 (offer-card inset), and #66–#72 (one per demo; each has its QA table).
+
 ## The 8 demos
 
 | Demo | Strategy page | Homepage | Lead claim | Score | Score box | Offer card | QA (final) |
