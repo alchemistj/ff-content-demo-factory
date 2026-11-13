@@ -31,7 +31,7 @@
     }
   },
   "trustBar": [
-    "Text a Photo, Ask the Price",
+    "Text Us a Photo",
     "Saturday and Sunday Visits",
     "Homes and Businesses",
     "Online Booking and Payment",
@@ -82,12 +82,12 @@
       "keyword": "plumber wichita ks",
       "seo": {
         "title": "Plumber in Wichita, KS | Up To Code Plumbing",
-        "description": "Wichita plumber for drains, leaks, sewer lines, water heaters, fixtures and gas lines. Text a photo and ask what it'll cost."
+        "description": "Wichita plumber for drains, leaks, sewer lines, water heaters, fixtures and gas lines. Text us a photo of the problem."
       },
       "hero": {
         "eyebrow": "Wichita, KS · Homes and Businesses · Weekend Visits",
         "h1": "Plumber in Wichita, KS — Up To Code Plumbing",
-        "sub": "I'm Ken. Text a photo of the leak or the clog to (316) 333-5434 and ask what it'll cost. You're not left standing in a wet basement waiting to find out how bad the number is. Or call (316) 400-7586.",
+        "sub": "I'm Ken. One customer texted a photo and got a fair quote right away. Text a photo of the leak or the clog to (316) 333-5434, or call (316) 400-7586, and tell us what's happening.",
         "primaryCta": {
           "label": "Call (316) 400-7586",
           "action": "call"
@@ -112,7 +112,7 @@
           "type": "split",
           "heading": "Water on the Floor and No Number to Go With It",
           "body": [
-            "It's Saturday morning. There's water on the basement floor, you've found the main and shut it off, and you're standing there with your phone. The first plumber you call can look at it next week, and will give you a price after that.",
+            "It's Saturday morning. There's water on the basement floor, you've found the main and shut it off, and you're standing there with your phone.",
             "So you wait with the water off. No dishwasher, no shower, and no idea whether this is a small valve or a big job.",
             "The wait is bad. Not knowing what it'll cost is worse."
           ],
@@ -125,15 +125,15 @@
         },
         {
           "type": "split",
-          "heading": "Text a Photo. Ask What It'll Cost.",
+          "heading": "Start With a Photo",
           "body": [
-            "Most plumbers want to see the problem before they'll say a number. We start with what you can show us.",
-            "A photo won't always replace a look at the pipes, and when we need to see it in person, we'll say so. But you get a real answer first, instead of waiting for a visit just to start a quote."
+            "Send a photo and we'll tell you what we think it is.",
+            "A photo won't always replace a look at the pipes. When we need to see it in person, we'll say so. [[confirm: Licensed plumber, license #[XXXX]]]"
           ],
           "list": [
             "Text a photo of the problem to (316) 333-5434, or call (316) 400-7586",
             "Tell us what it's doing and where your shutoff is",
-            "Ask what we think it is and what it'll cost",
+            "Tell us what it's doing and we'll tell you what we think it is",
             "You decide, and then we set the visit"
           ],
           "listStyle": "checks",
@@ -146,10 +146,10 @@
         },
         {
           "type": "prose",
-          "heading": "Got a Scary Quote? Get a Second Price.",
+          "heading": "Got a Scary Quote? Get a Second Opinion.",
           "body": [
             "A big number and a bigger job can make you stop asking questions. You nod, you worry about the budget, and you say yes because the water is still on the floor.",
-            "You're allowed a second price. Text us the photo or call, tell us what the first plumber said, and we'll tell you what we see. Then you decide who gets the job."
+            "Tell us what the first plumber said and what you were quoted, and we'll tell you what we see. Then you decide who gets the job."
           ]
         },
         {
@@ -199,7 +199,7 @@
           "type": "prose",
           "heading": "Saturday and Sunday Calls",
           "body": [
-            "Pipes don't wait for Monday. We've come out on Saturdays and on Sundays, and we'll tell you when we can be there while you're on the phone or texting.",
+            "Pipes don't wait for Monday. We've come out on Saturdays and on Sundays. Call or text us what's happening. [[confirm: Open [days and hours]]]",
             "Start your message with what's happening and where your shutoff is. If the water is still running, shut it off first and then call."
           ]
         },
@@ -233,7 +233,7 @@
           "type": "prose",
           "heading": "Where We Work",
           "body": [
-            "We work in Wichita and the towns around it, including Derby, Haysville, Augusta and El Dorado. Call or text and tell us where you are, and we'll tell you whether we can get there."
+            "We work in Wichita and the towns around it, including Derby, Haysville, Augusta and El Dorado. Call or text and tell us where you are. [[confirm: [XX] years serving Wichita]]"
           ]
         },
         {
@@ -250,15 +250,15 @@
           "items": [
             {
               "q": "Can you come today?",
-              "a": "Call (316) 400-7586 or text (316) 333-5434 and tell us what's happening. We'll tell you when we can be there. We've come out on Saturdays and Sundays, so don't wait for Monday if water is running."
+              "a": "Call (316) 400-7586 or text (316) 333-5434 and tell us what's happening, and we'll tell you what we can do. We've come out on Saturdays and Sundays, so don't wait for Monday if water is running."
             },
             {
               "q": "Will you actually show up?",
-              "a": "When you reach us, you get a time. If you want to check on it, call or text the same numbers and ask. A visit shouldn't be a guess."
+              "a": "Call (316) 400-7586 or text (316) 333-5434, and we'll tell you what we can do. We've come out on Saturdays and Sundays."
             },
             {
               "q": "What will this cost, and do I need all of it?",
-              "a": "Send a photo and ask. We'll tell you what we think it is and what it should cost before you agree to a visit. If we need to see it first, we'll tell you that too. Whatever the number is, you decide."
+              "a": "We won't guess at a number here, because it depends on the job. Send a photo and we'll tell you what we think it is, and whether we need to see it first. Whatever the number is, you decide."
             },
             {
               "q": "Do I need a whole new water heater?",
@@ -273,7 +273,7 @@
         {
           "type": "callBand",
           "heading": "Text a Photo or Call Ken",
-          "text": "Text a photo to (316) 333-5434 or call (316) 400-7586. Tell us what it's doing and ask what it'll cost. You decide before anyone drives out."
+          "text": "Text a photo to (316) 333-5434 or call (316) 400-7586. Tell us what it's doing and we'll tell you what we think."
         }
       ]
     },
@@ -284,12 +284,12 @@
       "keyword": "sewer line repair wichita ks",
       "seo": {
         "title": "Sewer Line Repair in Wichita, KS | Up To Code Plumbing",
-        "description": "Sewer line repair and camera inspections in Wichita. Text a photo and ask what it'll cost before anyone drives out."
+        "description": "Sewer line repair and camera inspections in Wichita. Send a photo and we'll tell you what we think it is."
       },
       "hero": {
         "eyebrow": "Sewer lines, Wichita",
         "h1": "Sewer Line Repair in Wichita, KS — Up To Code Plumbing",
-        "sub": "Gurgling drains or water backing up in the basement can mean a clog or a broken line. Text a photo to (316) 333-5434 or call (316) 400-7586 and ask what it'll cost.",
+        "sub": "Gurgling drains or water backing up in the basement can mean a clog or a broken line. Text a photo to (316) 333-5434 or call (316) 400-7586. We'll tell you what we think it is, and whether we need to look inside the pipe.",
         "primaryCta": {
           "label": "Call (316) 400-7586",
           "action": "call"
@@ -316,7 +316,7 @@
           "body": [
             "Tell us what the drains are doing and which ones. Text a photo to (316) 333-5434 if you can, or call (316) 400-7586. We tell you what we think is going on.",
             "From there we work out whether it's a clog we can clear or a line that needs repair. If we need to look inside the pipe, we say so and explain why.",
-            "You hear what we think and what it should cost before you agree to the visit. Then you decide."
+            "You hear what we think before you agree to the visit. Then you decide."
           ],
           "image": {
             "slot": "drain",
@@ -439,7 +439,7 @@
             },
             {
               "q": "Can you come on a weekend?",
-              "a": "We've come out on Saturdays and Sundays. Call or text and we'll tell you when we can be there."
+              "a": "We've come out on Saturdays and Sundays. Call or text us what's happening."
             },
             {
               "q": "Do you work on commercial buildings?",
@@ -450,7 +450,7 @@
         {
           "type": "callBand",
           "heading": "Call Up To Code Plumbing",
-          "text": "If a drain is backing up, call (316) 400-7586 or text a photo to (316) 333-5434. Ask what it's likely to be and what it'll cost before anyone drives out."
+          "text": "If a drain is backing up, call (316) 400-7586 or text a photo to (316) 333-5434. We'll tell you what we think it is, and whether we need to look inside the pipe."
         }
       ]
     },
@@ -461,12 +461,12 @@
       "keyword": "plumbing fixture installation wichita ks",
       "seo": {
         "title": "Plumbing Fixture Installation in Wichita, KS | Up To Code Plumbing",
-        "description": "Faucet, toilet, shower and sink installation and replacement in Wichita. Text a photo and ask what it'll cost."
+        "description": "Faucet, toilet, shower and sink installation and replacement in Wichita. Text us a photo and tell us what it needs."
       },
       "hero": {
         "eyebrow": "Faucets, toilets and showers, Wichita",
         "h1": "Plumbing Fixture Installation in Wichita, KS — Up To Code Plumbing",
-        "sub": "A dripping faucet, a toilet that won't stop running, a shower that needs replacing. Text a photo to (316) 333-5434 or call (316) 400-7586 and ask what it'll cost.",
+        "sub": "A dripping faucet, a toilet that won't stop running, a shower that needs replacing. Text a photo to (316) 333-5434 or call (316) 400-7586 and tell us what it is.",
         "primaryCta": {
           "label": "Call (316) 400-7586",
           "action": "call"
@@ -492,7 +492,7 @@
           "heading": "What Happens When You Call About a Fixture",
           "body": [
             "Tell us which fixture it is and what's wrong. A drip, a crack, a toilet that won't stop running, a showerhead with no pressure. Text a photo to (316) 333-5434 or call (316) 400-7586.",
-            "We tell you what we think it needs, whether that's a repair or a new one, and what it should cost. You decide before we set the visit."
+            "We tell you what we think it needs, whether that's a repair or a new one."
           ],
           "image": {
             "slot": "leak",
@@ -537,7 +537,7 @@
           "body": [
             "A worn washer or a bad cartridge is a small repair, and the faucet keeps going. A fixture with a cracked body, heavy corrosion or parts that can't be found is another story.",
             "Here's a rule you can check yourself. If the fixture works most of the time and one part is failing, repair it. If it's leaking from the body or you're fixing it every few months, replace it.",
-            "We tell you which side you're on, and what each costs, before we start."
+            "We tell you which side you're on before we start."
           ]
         },
         {
@@ -619,7 +619,7 @@
         {
           "type": "callBand",
           "heading": "Call Up To Code Plumbing",
-          "text": "If a faucet, toilet or shower needs help, call (316) 400-7586 or text a photo to (316) 333-5434. Ask what it'll cost before anyone drives out."
+          "text": "If a faucet, toilet or shower needs help, call (316) 400-7586 or text a photo to (316) 333-5434. Tell us what it is and we'll tell you what we think it needs."
         }
       ]
     },
@@ -630,12 +630,12 @@
       "keyword": "contact up to code plumbing wichita ks",
       "seo": {
         "title": "Contact Up To Code Plumbing | Wichita, KS",
-        "description": "Call or text Up To Code Plumbing in Wichita. Send a photo and ask what it'll cost."
+        "description": "Call or text Up To Code Plumbing in Wichita. Send a photo and tell us what's happening."
       },
       "hero": {
         "eyebrow": "Contact Up To Code Plumbing",
         "h1": "Contact Up To Code Plumbing",
-        "sub": "If water is running or a drain is backing up, call or text. Tell us what it's doing and ask what it'll cost before you decide anything.",
+        "sub": "If water is running or a drain is backing up, call or text. Tell us what it's doing and we'll tell you what we think.",
         "primaryCta": {
           "label": "Call (316) 400-7586",
           "action": "call"
@@ -656,7 +656,7 @@
           "heading": "Call or Text",
           "body": [
             "Call (316) 400-7586 to talk to us. To send a photo or a quick message, text (316) 333-5434.",
-            "Tell us what the problem is doing and where, and ask what it'll cost. Phone and text get answered the same way: you hear what we think before you decide anything."
+            "Tell us what the problem is doing and where, and we'll tell you what we think."
           ]
         },
         {
@@ -687,14 +687,14 @@
           "type": "prose",
           "heading": "Hours and Area",
           "body": [
-            "**Hours.** Call or text and ask when we can be there. We've come out on Saturdays and Sundays.",
+            "**Hours.** We've come out on Saturdays and Sundays. Call or text us to ask about a visit.",
             "**Area.** We work in Wichita and the towns around it, including Derby, Haysville, Augusta and El Dorado."
           ]
         },
         {
           "type": "callBand",
           "heading": "Call Up To Code Plumbing",
-          "text": "Tell us what it's doing and ask what it'll cost. Call (316) 400-7586 or text (316) 333-5434."
+          "text": "Tell us what it's doing and we'll tell you what we think. Call (316) 400-7586 or text (316) 333-5434."
         }
       ]
     }
@@ -702,7 +702,7 @@
   "footer": {
     "about": "Up To Code Plumbing is a Wichita plumbing company run by Ken Carrick. It handles drains, leaks, sewer lines, water heaters, fixtures and gas lines for homes and businesses.",
     "why": [
-      "Text a photo and ask the price",
+      "Text us a photo",
       "Saturday and Sunday visits",
       "Guarantee on our plumbing work",
       "Free VIP membership"
@@ -711,9 +711,9 @@
   "strategy": {
     "whyHeading": "Why we built this site",
     "why": [
-      "On a phone, your current site is laid out about 980 pixels wide on a 390 pixel screen. The header buttons print over each other and the hero text is cut off at the edge. Most people searching for a plumber are on a phone, and they have to scroll sideways to read you.",
-      "Your reviews describe a plumber who will price a job from a text. George A. texted you a photo and got a fair quote right away, when another local company wanted a visit first. Today those words sit on Google, not on your site, and the text line is mentioned only on your booking and Augusta pages.",
-      "So the demo tells one story everywhere: send a photo, ask the price, decide. It opens with plumber in Wichita, KS, and gives sewer line repair and fixture installation a page each."
+      "On a phone, your current site is laid out about 980 pixels wide on a 390 pixel screen. The header buttons print over each other and the hero text is cut off at the edge. A visitor on a phone has to scroll sideways to read you.",
+      "One of your reviews describes a plumber who gave a price from a text. George A. texted you a photo and got a fair quote right away, when another local company wanted a visit first. Today those words sit on Google, not on your site, and the text line is mentioned only on your booking and Augusta pages.",
+      "So the demo tells one story everywhere: send a photo, hear what we think, decide. It opens with plumber in Wichita, KS, and gives sewer line repair and fixture installation a page each."
     ],
     "cardsHeading": "Be the Plumber People Find on Google",
     "cardsIntro": "Each card is one page of the demo.",
@@ -805,16 +805,17 @@
       "items": [
         "Your site says Up To Code was established in 2025, while the BBB lists a start date of 11/25/2024, so which founding year should every listing use?",
         "Your Augusta page says weekdays 7:30 AM to 7 PM and weekends 9 AM to 4 PM, while your Thumbtack listing shows Sunday opening at 7 AM and Monday at 7 AM, so which hours should Google show?",
-        "Your homepage header lists towns from Goddard to Garden Plain, while your footer and About page list Wichita, Augusta, Haysville, Derby, El Dorado and nearby towns, so which list should every listing use?"
+        "Your homepage header lists towns from Goddard to Garden Plain, while your footer and About page list Wichita, Augusta, Haysville, Derby, El Dorado and nearby towns, so which list should every listing use?",
+        "Your About page says to text (316) 400-7586, while your other page lists (316) 333-5434 as the text line, so which number should take photos?"
       ]
     },
     "lead": {
       "heading": "Why we led with the photo quote",
-      "text": "The scariest moment for a Wichita homeowner is water on the floor and nobody who can say what it'll cost, and right behind it is being told a big number and wondering if it's real. Texting a photo and asking the price answers both. We checked the five top Wichita competitors, and none of them says you can do that. Your text line is on your site, so please tell us if quoting from a photo isn't how you work.",
+      "text": "The scariest moment for a Wichita homeowner is water on the floor and nobody who can say what it'll cost, and right behind it is being told a big number and wondering if it's real. One customer, George A., texted a photo and had a fair quote right away. We checked the Wichita competitors we could read; none says you can do that. This rests on one review, so please tell us if quoting from a photo isn't how you work.",
       "showScores": false,
       "rows": [
         {
-          "claim": "Text a photo and hear the price before anyone drives out",
+          "claim": "One customer texted a photo and got a fair quote right away",
           "score": 16
         },
         {
@@ -826,6 +827,25 @@
           "score": 12
         }
       ]
+    },
+    "unverified": {
+      "heading": "What we couldn't verify, and why it matters",
+      "intro": "We marked these on the demo as yellow \"to confirm\" tags instead of guessing, because we won't put a claim on your site we can't back up. Your site and your online listings disagree on a few of them, and the license number isn't printed anywhere.",
+      "items": [
+        {
+          "fact": "License number",
+          "why": "Someone holding a big quote wants to look up the plumber's license before they trust a second opinion."
+        },
+        {
+          "fact": "Years in business",
+          "why": "Your site, BBB and Thumbtack give different start dates, and a homeowner weighing a second opinion will notice."
+        },
+        {
+          "fact": "Hours",
+          "why": "Your site and Thumbtack list different weekend and weekday hours, and someone with water on the floor needs to know whether you'll answer."
+        }
+      ],
+      "closing": "This is what our onboarding call nails down. Fifteen minutes, and every tag becomes a real, true line."
     }
   }
 }

@@ -2,7 +2,7 @@
 
 Hey Creekmore team,
 
-Your reviews show families passing your number down, and customers saying you explain the problem and the most cost-effective fix. None of the Wichita competitors we checked says third generation. My daughter and I build websites for service businesses, so we made you a mockup that leads with it, "Family Plumbers. Honest Fix First.":
+Your reviews show families passing your number down, and customers saying you explain the problem clearly. None of the Wichita competitors we could read says third generation. My daughter and I build websites for service businesses, so we made you a mockup that leads with it, "Family Plumbers. Honest Fix First.":
 
 https://creekmore.websitepreview.fluidframemarketing.com/
 

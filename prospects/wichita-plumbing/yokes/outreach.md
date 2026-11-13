@@ -2,7 +2,7 @@
 
 Hey Yokes team,
 
-Your reviews tell the same story: a leak nobody could find, and then you found it. One was a gas leak the gas company couldn't locate, repaired the same day. Another was a leak in pipes leaving the house that no one had identified. None of the Wichita plumbers we checked says that on their site. My daughter and I build websites for service businesses, so we made you a mockup built around it, "Found It. Fixed It.":
+Three of your reviews describe a leak nobody could find, and then you found it. One was a gas leak the gas company couldn't locate, repaired the same day. Another was a leak in pipes leaving the house that no one had identified. None of the Wichita plumbers we could read says that on their site. My daughter and I build websites for service businesses, so we made you a mockup built around it, "Found It. Fixed It.":
 
 https://yokes.websitepreview.fluidframemarketing.com/
 

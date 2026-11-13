@@ -35,7 +35,7 @@
     {
       "name": "Electrical Repair",
       "route": "/electrical-repair-wichita-ks/",
-      "blurb": "Outlets, breakers and lights that quit or act up, traced to the cause and fixed."
+      "blurb": "Outlets, breakers and lights that quit or act up."
     },
     {
       "name": "Outdoor Lighting Installation",
@@ -136,7 +136,7 @@
       "hero": {
         "eyebrow": "Wichita, KS · Family-Owned · Homes, Businesses and Industrial",
         "h1": "Electrician in Wichita, KS — Linnebur Electric",
-        "sub": "An outlet that keeps dying, a breaker that won't stay on, a fix that didn't hold. Linnebur Electric finds the cause and fixes it, and tells you straight what it was. You stop wondering what's behind the wall. Call (316) 943-6616.",
+        "sub": "An outlet that keeps dying, a breaker that won't stay on, a fix that didn't hold. Dod I. said these were the only electricians who could find the problem and get it fixed. You stop wondering what's behind the wall. Call (316) 943-6616.",
         "primaryCta": {
           "label": "Call (316) 943-6616",
           "action": "call"
@@ -166,7 +166,7 @@
             "brief": "electrical pool: outlet-repair"
           },
           "body": [
-            "The garage outlets quit in August. An electrician came, changed a part and left. Tonight they're dead again. You're sitting in the driveway with a new estimate that says to rewire the whole thing, and you can't tell if that's the answer or the next guess.",
+            "If the garage outlets quit and an electrician changes a part and leaves, they can be dead again by night. Then you're sitting in the driveway with a new estimate that says to rewire the whole thing, and you can't tell if that's the answer or the next guess.",
             "You don't need a bigger bill. You need somebody to find what's actually wrong, tell you in plain words and fix that."
           ]
         },
@@ -179,12 +179,12 @@
             "brief": "electrical pool: inspection"
           },
           "body": [
-            "Most electrical calls end the same way: someone replaces the part that's easiest to reach. If the real cause is a loose connection, an overloaded circuit or an old splice behind a wall, the problem comes right back.",
-            "We work backward from what you're seeing until we find the cause. Then we tell you what it is and what fixing it takes, and you decide."
+            "If the real cause is a loose connection, an overloaded circuit or an old splice behind a wall, the problem comes right back.",
+            "Dod I. said these were the only electricians who could find the problem and get it fixed."
           ],
           "list": [
             "Start with what you've seen: where it trips, dies, flickers or runs warm",
-            "Trace the circuit to the cause, not the nearest part",
+            "Find the problem and get it fixed",
             "Tell you what we found in plain words",
             "Fix the cause, then check the work"
           ],
@@ -315,7 +315,7 @@
       "hero": {
         "eyebrow": "Electrical repair, Wichita",
         "h1": "Electrical Repair in Wichita, KS — Linnebur Electric",
-        "sub": "Dead outlets, a breaker that keeps tripping, lights that flicker. Call us and tell us what it's doing, and we'll trace it to the cause. Call (316) 943-6616.",
+        "sub": "Dead outlets, a breaker that keeps tripping, lights that flicker. Call us and tell us what it's doing. Call (316) 943-6616.",
         "primaryCta": {
           "label": "Call (316) 943-6616",
           "action": "call"
@@ -346,7 +346,7 @@
           },
           "body": [
             "Tell us what you're seeing: which outlets, which breaker, when it started and what was plugged in. The details are how we narrow down where to look.",
-            "Then we trace the circuit to the cause and tell you what we found and what it means. If it's a small repair, you'll hear that. If it's bigger, you'll hear why.",
+            "Rachael R. said Linnebur helped her work through electrical issues. If it's a small repair, you'll hear that. If it's bigger, you'll hear why.",
             "You decide what happens next, and the price is part of that conversation."
           ]
         },
@@ -792,7 +792,7 @@
     },
     "lead": {
       "heading": "Why we led with finding the problem",
-      "text": "The scariest moment for a Wichita homeowner is a breaker or outlet that keeps failing with nobody able to say why, and right behind it is paying again for a guess. Finding the cause and fixing that answers both. We checked the top Wichita competitors, and none of them states it. Your reviews already say it, so please tell us the kinds of problems you get called in on.",
+      "text": "The scariest moment for a Wichita homeowner is a breaker or outlet that keeps failing with nobody able to say why, and right behind it is paying again for a guess. Finding the cause and fixing that answers both. Of the Wichita competitor sites we could read, none states it. Your reviews already say it, so please tell us the kinds of problems you get called in on.",
       "showScores": false,
       "rows": [
         {

@@ -131,8 +131,8 @@
           },
           "imageSide": "left",
           "body": [
-            "Too many leak calls end with a patch on whatever shows. A stain gets painted, a drip gets a new washer, and the water keeps going somewhere else.",
-            "We start with what you've noticed, then look for the source instead of the stain. Leak detection and camera inspections are part of the work, so we're not guessing. Then we fix it and tell you what it was."
+            "A leak you can see is easy to point at. One you can't see is a search, and we do that search.",
+            "We start with what you've noticed, then look for the source instead of the stain. Leak detection and camera inspections are part of the work, so we're not guessing. Then we fix it and tell you what it was. [[confirm: Licensed plumber, license #[XXXX]]]"
           ],
           "list": [
             "We look for the source, not just the stain",
@@ -147,12 +147,12 @@
           "heading": "Stuck With a Problem Nobody Can Find",
           "body": [
             "You made the call you thought would settle it, and it came back as a shrug. The problem is still running, the house is still waiting, and now you're calling around.",
-            "That is the worst place to be: out of options with the problem still going. Call us that day. If we can fit you in, we will, and if we can't, we'll say so right then."
+            "That is the worst place to be: out of options with the problem still going. Call us, and we'll tell you what we can do."
           ]
         },
         {
           "type": "review",
-          "quote": "We had a gas leak situation … they were unable to locate the leak and had to shut our service down until resolved. We contacted Yoke Plumbing and Remodeling, and they went the extra mile to adjust their schedule to get out the same day of the incident. They identified the leak areas that the gas company could not, and repaired them on the spot.",
+          "quote": "We had a gas leak situation that we had called Black Hills on, and they were unable to locate the leak and had to shut our service down until resolved. We contacted Yoke Plumbing and Remodeling, and they went the extra mile to adjust their schedule to get out the same day of the incident. They identified the leak areas that the gas company could not, and repaired them on the spot.",
           "name": "Jeff S."
         },
         {
@@ -182,7 +182,7 @@
           "heading": "Water Heater Replacement",
           "body": [
             "When the water heater is rusted, leaking or just quit, the question is repair or replace. We'll tell you which, and we work on tank and tankless.",
-            "A cold shower on a work morning can't wait for a long runaround. Call, tell us what you're seeing, and we'll tell you when we can be there."
+            "A cold shower on a work morning can't wait for a long runaround. Call, tell us what you're seeing, and we'll tell you what we think it is."
           ],
           "link": {
             "label": "See water heater replacement in Wichita",
@@ -220,7 +220,7 @@
             },
             {
               "title": "We tell you what we think it is",
-              "text": "You hear our best read on the phone, and when we can be there."
+              "text": "You hear our best read on the phone."
             },
             {
               "title": "We look and find the cause",
@@ -237,7 +237,7 @@
           "heading": "Hours and Area",
           "body": [
             "**Emergency calls.** Monday to Saturday, 7 a.m. to 10 p.m., based on availability. Call and ask about other times.",
-            "**Where we work.** Wichita and the surrounding area. Jobs outside Wichita are subject to a trip charge, so ask when you call."
+            "**Where we work.** Wichita and the surrounding area. Jobs outside Wichita are subject to a trip charge, so ask when you call. [[confirm: Serving [towns] and nearby]]"
           ]
         },
         {
@@ -246,11 +246,11 @@
           "items": [
             {
               "q": "Can you come today?",
-              "a": "Call and ask. Emergency calls run Monday to Saturday, 7 a.m. to 10 p.m., based on availability, so we'll tell you what's possible while you're on the phone. If we can't get there soon, we'll say so right then, so you can keep calling around."
+              "a": "Call and ask. Emergency calls run Monday to Saturday, 7 a.m. to 10 p.m., based on availability, so we'll tell you what's possible while you're on the phone."
             },
             {
               "q": "Will you show up when you say you will?",
-              "a": "Ask for a time when you call, and give us a number that picks up. We'll let you know when we're on the way."
+              "a": "Call and tell us what you're seeing. Our emergency hours are Monday to Saturday, 7 a.m. to 10 p.m., based on availability."
             },
             {
               "q": "What will it cost, and is it really needed?",
@@ -277,7 +277,7 @@
         {
           "type": "callBand",
           "heading": "Call Yokes Master Plumbing",
-          "text": "Call (316) 372-8210 and tell us what you're seeing. We'll tell you what we think it is and when we can be there."
+          "text": "Call (316) 372-8210 and tell us what you're seeing. We'll tell you what we think it is."
         }
       ]
     },
@@ -324,7 +324,7 @@
           },
           "body": [
             "Tell us what you've noticed and where: a stain, a drip, a meter that keeps moving, a bill that jumped. If you can, tell us where your main shutoff is.",
-            "If water is running right now, shut it off at the main first, then call. We'll tell you what we think is going on and when we can get there.",
+            "If water is running right now, shut it off at the main first, then call. We'll tell you what we think is going on.",
             "Then we look for the source, not just the stain. Leak detection and camera inspections are part of the work. When we find it, we explain what it is and what it takes to fix."
           ]
         },
@@ -483,7 +483,7 @@
       "hero": {
         "eyebrow": "Water heaters · Wichita, KS",
         "h1": "Water Heater Replacement in Wichita, KS — Yokes Master Plumbing",
-        "sub": "A cold shower, rusty water or a puddle around the tank. Call and tell us what you're seeing. We'll tell you whether it's a repair or a new water heater, and when we can be there. Call (316) 372-8210.",
+        "sub": "A cold shower, rusty water or a puddle around the tank. Call and tell us what you're seeing. We'll tell you whether it's a repair or a new water heater. Call (316) 372-8210.",
         "primaryCta": {
           "label": "Call (316) 372-8210",
           "action": "call"
@@ -515,7 +515,7 @@
           "body": [
             "Tell us what the heater is doing: no hot water, a leak, a noise, rusty water. If you know, tell us whether it runs on gas or electric, and whether it's a tank or tankless.",
             "We tell you what we think it is. Sometimes it's a part. Sometimes the tank is done. Either way, you hear it before you decide.",
-            "We take emergency calls from 7 a.m. to 10 p.m., Monday through Saturday, based on availability. Hot water can't wait, so call early and ask when we can get there."
+            "We take emergency calls from 7 a.m. to 10 p.m., Monday through Saturday, based on availability. Hot water can't wait, so call early and tell us what you're seeing."
           ]
         },
         {
@@ -558,7 +558,7 @@
           "body": [
             "Not every water heater problem means a new one. A failed part on an otherwise sound heater is a repair, and we'll say so.",
             "A leaking tank, a rusted-out bottom or a heater that keeps needing work is where replacing starts to make sense. We lay out what we found and what each choice means, and you decide.",
-            "If you're replacing it, we'll go over size and fuel type and what fits your house."
+            "If you're replacing it, we'll go over size and fuel type and what fits your house. [[confirm: [X]-year warranty on our work]]"
           ]
         },
         {
@@ -661,7 +661,7 @@
       "hero": {
         "eyebrow": "Contact Yokes Master Plumbing",
         "h1": "Contact Yokes Master Plumbing",
-        "sub": "Water running, no hot water, a leak you can't find? The fastest way to reach us is to call. Tell us what you're seeing and we'll tell you what we think it is and when we can be there. Call (316) 372-8210.",
+        "sub": "Water running, no hot water, a leak you can't find? The fastest way to reach us is to call. Tell us what you're seeing and we'll tell you what we think it is. Call (316) 372-8210.",
         "primaryCta": {
           "label": "Call (316) 372-8210",
           "action": "call"
@@ -731,7 +731,7 @@
         {
           "type": "callBand",
           "heading": "Call Yokes Master Plumbing",
-          "text": "Tell us what you're seeing, and we'll tell you what we think it is and when we can be there."
+          "text": "Tell us what you're seeing, and we'll tell you what we think it is."
         }
       ]
     }
@@ -838,12 +838,13 @@
       "items": [
         "Your site and logo say “Yokes Master Plumbing,” your Google listing says “Yoke's master plumbing and remodeling,” and your email is yokesplumbingnremodeling@gmail.com, so which spelling and name should every listing use?",
         "Your site shows no street address, while your Google listing puts you at 718 N Milstead St, so which address should every listing use?",
-        "Your site names no one, while your Google reviews name Dan, Tammy, Jake and Brandon, so who should the site introduce, and in what role?"
+        "Your site names no one, while your Google reviews name Dan, Tammy, Jake and Brandon, so who should the site introduce, and in what role?",
+      "Your reviews describe leaks that others couldn't find, and the site says you go after the source, so how does your team find a hidden leak, and what should we say about it?"
       ]
     },
     "lead": {
       "heading": "Why we led with finding the leak",
-      "text": "The scariest moment for a Wichita homeowner is water coming from somewhere nobody can find, and right behind it is paying for a fix that doesn't hold. Going after the source, fixing it and explaining it answers both. We checked the five top Wichita competitors, and none of them states it.",
+      "text": "The scariest moment for a Wichita homeowner is water coming from somewhere nobody can find, and right behind it is paying for a fix that doesn't hold. Going after the source, fixing it and explaining it answers both. We checked the Wichita competitors we could read, and none states it.",
       "showScores": true,
       "rows": [
         {
@@ -851,7 +852,7 @@
           "score": 16
         },
         {
-          "claim": "Worked into a full schedule when it can't wait",
+          "claim": "Reviews describe Yokes working customers into a busy schedule",
           "score": 15
         },
         {
@@ -859,6 +860,25 @@
           "score": 12
         }
       ]
+    },
+    "unverified": {
+      "heading": "What we couldn't verify, and why it matters",
+      "intro": "We marked these on the demo as yellow \"to confirm\" tags instead of guessing, because we won't put a claim on your site we can't back up. Your current site says \"licensed and insured\" and \"surrounding area\" but gives no number and no towns.",
+      "items": [
+        {
+          "fact": "License number",
+          "why": "Your site says \"licensed and insured\" with no number, and someone who has already been given a shrug on a leak will want to check before they hire again."
+        },
+        {
+          "fact": "Warranty on the work",
+          "why": "A homeowner who paid to have a leak found wants to know what you stand behind if it comes back."
+        },
+        {
+          "fact": "Service area towns",
+          "why": "\"The surrounding area\" with a trip charge leaves a homeowner outside Wichita guessing whether you'll come and what it costs."
+        }
+      ],
+      "closing": "This is what our onboarding call nails down. Fifteen minutes, and every tag becomes a real, true line."
     }
   }
 }

@@ -2,7 +2,7 @@
 
 Hey Plumb Crazy team,
 
-Your reviews keep telling the same story: someone got a big quote somewhere else, then Brandon found a smaller fix. None of the Wichita competitors we checked says that. My daughter and I build websites for service businesses, so we made you a mockup that leads with it: before you pay for the big fix, you hear about the smaller one.
+Several of your reviews tell the same story: someone got a big quote somewhere else, then Brandon found a smaller fix. None of the Wichita competitors we could read says that. My daughter and I build websites for service businesses, so we made you a mockup that leads with it: before you pay for the big fix, you hear about the smaller one.
 
 https://plumbcrazy.websitepreview.fluidframemarketing.com/
 

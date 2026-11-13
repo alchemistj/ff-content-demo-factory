@@ -2,7 +2,7 @@
 
 Hey Brockmeyer team,
 
-Your reviews show people sending you to their mom's house. One said your tech treated her elderly mother with a lot of respect, and another called you in an emergency for her mom. None of the Wichita competitors we checked says anything like that. My daughter and I build websites for service businesses, so we made you a mockup that leads with it: the electrician you can send to your mom's house.
+Two of your reviews show people sending you to their mom's house. One said your tech treated her elderly mother with a lot of respect, and another called you in an emergency for her mom. None of the Wichita competitor sites we could open says anything like that. My daughter and I build websites for service businesses, so we made you a mockup that leads with it: the electrician you can send to your mom's house.
 
 https://brockmeyer.websitepreview.fluidframemarketing.com/
 

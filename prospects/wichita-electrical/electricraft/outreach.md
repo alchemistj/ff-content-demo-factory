@@ -4,7 +4,7 @@ STATUS: HOLD (Josh decides whether and when to pitch; see facts.md)
 
 Hey ElectriCraft team,
 
-Your reviews tell the same story: you fix the problem, then point out what else you see, like unprotected wires or something an inspector missed. None of the Wichita electricians we checked says that. My daughter and I build websites for service businesses, so we made you a mockup built around it, "We Find It. We Tell You.":
+Your reviews tell the same story: you fix the problem, then point out what else you see, like unprotected wires or something an inspector missed. None of the Wichita electrician sites we could read says that. My daughter and I build websites for service businesses, so we made you a mockup built around it, "We Find It. We Tell You.":
 
 https://electricraft.websitepreview.fluidframemarketing.com/
 

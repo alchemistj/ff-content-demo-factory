@@ -29,7 +29,8 @@
     "Free 10-Point Safety Inspection",
     "We Look First, Tell You Straight",
     "We Clean Up After the Job",
-    "Licensed and Insured"
+    "Licensed and Insured",
+    "[[confirm: [XX] years serving Wichita]]"
   ],
   "services": [
     {
@@ -237,7 +238,7 @@
           "heading": "A Free Safety Inspection",
           "body": [
             "Wiring problems don't announce themselves. They sit behind a wall or up in an attic until something warms up.",
-            "We offer a free 10-point safety inspection and a free estimate on the work. If you just moved into an older house and the outlets make no sense, that look is worth having."
+            "We offer a free 10-point safety inspection and a free estimate on the work. If you just moved into an older house and the outlets make no sense, that look is worth having. [[confirm: [X]-year warranty on our work]]."
           ]
         },
         {
@@ -305,7 +306,7 @@
           "type": "prose",
           "heading": "Wichita and the Area Around It",
           "body": [
-            "We're at 232 N Pennsylvania Ave in Wichita, and we serve Wichita and the surrounding area."
+            "We're at 232 N Pennsylvania Ave in Wichita. [[confirm: Serving [towns] and nearby]]."
           ]
         },
         {
@@ -625,7 +626,7 @@
           "heading": "Permits, Inspections and Clean-Up",
           "body": [
             "A city inspector has the last word on panel work. If an inspection finds a problem, it gets fixed before the work passes.",
-            "The panel is usually in the garage or the basement, and the area should be left as clean as it was found."
+            "The panel is usually in the garage or the basement, and the area should be left as clean as it was found. [[confirm: Licensed electrician, KS license #[XXXX]]]."
           ]
         },
         {
@@ -768,6 +769,29 @@
     ]
   },
   "strategy": {
+    "unverified": {
+      "heading": "What we couldn't verify, and why it matters",
+      "intro": "We marked these on the demo as yellow \"to confirm\" tags instead of guessing, because we won't put a claim on your site we can't back up. Your current pages disagree with each other on some of them, and a few have no number at all.",
+      "items": [
+        {
+          "fact": "Years in business",
+          "why": "Your site says both \"over 25 years\" and \"established 2011,\" and a homeowner who has been quoted three big jobs will notice a number that doesn't add up."
+        },
+        {
+          "fact": "License number",
+          "why": "Someone who was told they need a new panel wants to look up the license before trusting the second opinion."
+        },
+        {
+          "fact": "Service area towns",
+          "why": "\"Kansas and surrounding areas\" doesn't tell a homeowner outside Wichita whether you'll come look."
+        },
+        {
+          "fact": "Warranty on the work",
+          "why": "Your site says a one-year warranty is available, but not what it covers, and a wary homeowner will ask."
+        }
+      ],
+      "closing": "This is what our onboarding call nails down. Fifteen minutes, and every tag becomes a real, true line."
+    },
     "whyHeading": "Why we built this site",
     "why": [
       "Your header says “Serving the State of Kansas” on every page, and your homepage headline is “Electrician Services.” A Wichita homeowner with a dead outlet, and Google, can't tell that you're the electrician on N Pennsylvania Ave.",

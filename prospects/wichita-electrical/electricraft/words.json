@@ -39,7 +39,7 @@
     {
       "name": "Electrical Repair",
       "route": "/electrical-repair-wichita-ks/",
-      "blurb": "Dead outlets, tripping breakers and lights that act up, with the cause found and explained first."
+      "blurb": "Dead outlets, tripping breakers and lights that act up."
     },
     {
       "name": "Lighting Installation",
@@ -64,7 +64,7 @@
     {
       "name": "Generator Service",
       "route": null,
-      "blurb": "Troubleshooting and repair for home generators, from error codes to a unit that won't run."
+      "blurb": "Troubleshooting and repair for home generators, including error codes."
     },
     {
       "name": "Commercial Electrical",
@@ -86,7 +86,7 @@
       "hero": {
         "eyebrow": "Wichita, KS · Residential, Commercial and Industrial",
         "h1": "Electrician in Wichita, KS — ElectriCraft",
-        "sub": "We fix the problem you called about, then tell you in plain words what else we see, so you're never guessing what's in your walls. You decide what happens next. Call (316) 264-3359.",
+        "sub": "Cynthia G. said Nell fixed the problem and pointed out what else she saw. You decide what happens next. Call (316) 264-3359.",
         "primaryCta": {
           "label": "Call (316) 264-3359",
           "action": "call"
@@ -112,7 +112,7 @@
           "heading": "The Outlet Plate Is Warm and It's Almost Bedtime",
           "body": [
             "You're plugging in the vacuum and the plate feels warm. There's a faint smell you can't place, and it's been a little warm for a week. Is it nothing, or are you the person who ignored it?",
-            "Most electricians fix the one thing you called about and leave. You're left wondering what else is behind that wall, and whether the next quote is real. You shouldn't have to guess."
+            "If you're left wondering what else is behind that wall, and whether the next quote is real, you shouldn't have to guess."
           ],
           "list": [
             "A warm outlet or switch plate",
@@ -131,13 +131,12 @@
           "type": "split",
           "heading": "We Fix It, Then We Look Around",
           "body": [
-            "On every repair call we find the cause first and show you what failed. Then we look at what's around it, the wiring, the connections, the panel, and tell you in plain words what we see.",
+            "Nick B. said a technician tracked down an odd problem that kept coming back and fixed it.",
             "Some of it will be fine, and we'll tell you that too. Some of it you'll want to fix, and we'll give you options. You decide what gets done."
           ],
           "list": [
-            "We find the cause and show you what failed",
-            "We look past it and tell you what else we see",
-            "You get your options and a price before we start",
+            "Track down a problem that keeps coming back",
+            "Mention what else we notice",
             "We clean up when we're done"
           ],
           "image": {
@@ -152,7 +151,7 @@
           "heading": "When Storm Damage Leaves You Waiting on the Utility",
           "body": [
             "A tree comes down, the meter box is torn loose, and the utility won't reconnect until the electrical side is fixed. Now you're stuck between two companies, with the power still off.",
-            "We repair the meter box, the mast or the service line, and we work through what the utility needs with you. You shouldn't have to carry messages back and forth."
+            "We repair the meter box, the mast or the service line,. You shouldn't have to carry messages back and forth."
           ]
         },
         {
@@ -253,7 +252,7 @@
             },
             {
               "q": "What's it going to cost?",
-              "a": "You get your options and the price before we start, so you can say yes, say no, or do a big job in steps. Describe the work when you call and we'll tell you how we'd price it."
+              "a": "Describe the work when you call, and ask how it would be priced."
             },
             {
               "q": "Will it pass inspection, and what if something's off later?",
@@ -261,7 +260,7 @@
             },
             {
               "q": "Who is coming into my house?",
-              "a": "One of our technicians, scheduled by our office. We call ahead before we arrive, and you can ask who is coming when you book. If you won't be home, tell us who we'll meet."
+              "a": "One of our technicians, scheduled by our office. You can ask who is coming when you book. If you won't be home, tell us who we'll meet."
             }
           ]
         },
@@ -280,7 +279,7 @@
       "hero": {
         "eyebrow": "Electrical repair, Wichita",
         "h1": "Electrical Repair in Wichita, KS — ElectriCraft",
-        "sub": "An outlet that quit, a breaker that keeps tripping, lights that flicker. Call us: we find the cause, explain it in plain words and tell you what else we see. Call (316) 264-3359.",
+        "sub": "An outlet that quit, a breaker that keeps tripping, lights that flicker. Call us and tell us what it's doing. Call (316) 264-3359.",
         "primaryCta": {
           "label": "Call (316) 264-3359",
           "action": "call"
@@ -305,9 +304,9 @@
           "type": "split",
           "heading": "What Happens When You Call About a Repair",
           "body": [
-            "You tell us what's happening: which outlets, which rooms, when it started. Our office schedules a visit, and we call ahead before we arrive.",
-            "Our technician finds the cause and shows you what failed. Then they look at the wiring around it and tell you what else they see, in words you can follow.",
-            "You get your options and the price before the work starts. Then you choose."
+            "You tell us what's happening: which outlets, which rooms, when it started. Our office schedules a visit.",
+            "Nick B. said a technician tracked down an odd problem that kept coming back and fixed it.",
+            "You decide what happens next. Describe the work when you call, and ask how it would be priced before you agree to anything."
           ],
           "list": [
             "Dead outlets and switches",
@@ -422,7 +421,7 @@
         {
           "type": "callBand",
           "heading": "Call ElectriCraft",
-          "text": "If something electrical is acting up, call (316) 264-3359. Tell us what it's doing, and we'll find the cause and tell you what else we see."
+          "text": "If something electrical is acting up, call (316) 264-3359. Tell us what it's doing, and we'll take it from there."
         }
       ]
     },
@@ -459,13 +458,13 @@
           "type": "split",
           "heading": "What Happens When You Call About Lighting",
           "body": [
-            "Tell us what you want: more light in a dark room, a ceiling fan, new sconces, a dimmer. Our office schedules the visit, and we call ahead before we arrive.",
-            "We look at where the wiring runs, where the switch will go and what the ceiling can hold. Then you get your options and the price before we start."
+            "Tell us what you want: more light in a dark room, a ceiling fan, new sconces, a dimmer. Our office schedules the visit.",
+            "We look at where the wiring runs, where the switch will go and what the ceiling can hold."
           ],
           "list": [
             "Recessed and wafer lights",
             "Ceiling fans",
-            "Sconces and pendants",
+            "Sconces",
             "Dimmers and switches",
             "Rebuilt or reinstalled fixtures"
           ],

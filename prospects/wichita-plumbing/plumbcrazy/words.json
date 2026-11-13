@@ -91,7 +91,7 @@
       "hero": {
         "eyebrow": "Wichita, KS · Homes, Rentals and Businesses · Seven Days a Week",
         "h1": "Plumber in Wichita, KS — Plumb Crazy",
-        "sub": "Before you pay for the big fix, we look for the smaller one, then tell you plainly which one the problem needs. We work seven days a week and don't charge emergency rates. Call (316) 871-3006.",
+        "sub": "Got a big quote? Tell us what it was for. We work seven days a week and don't charge emergency rates. Call (316) 871-3006.",
         "primaryCta": {
           "label": "Call (316) 871-3006",
           "action": "call"
@@ -131,12 +131,12 @@
           },
           "imageSide": "right",
           "body": [
-            "Some companies hand you the biggest number on the table and call it the only option. We start the other way. We find what actually failed, then look for the smallest fix that will hold.",
-            "Then we tell you both: the small fix, the big one, and which one we'd do. You decide with the whole picture in front of you."
+            "Several customers came to us holding a big quote from somewhere else.",
+            "They told us we found a smaller fix. Call, and we'll tell you what we find."
           ],
           "list": [
-            "We find what actually failed before anything is quoted",
-            "The smaller fix gets looked at first, not last",
+            "Customers describe the problem found before the quote",
+            "Six reviews describe a smaller fix found first",
             "You hear both options in plain words",
             "No funny business, no fake code upgrades"
           ],
@@ -153,7 +153,7 @@
           "imageSide": "left",
           "body": [
             "A big quote lands hard. It lands harder when the other company says the work has to be done and nobody offers another way to look at it.",
-            "Before you sign, get a second look. Call us, tell us what you were quoted and what's actually going wrong, and we'll come take a look."
+            "Before you sign, get a second look. Call us and tell us what you were quoted."
           ]
         },
         {
@@ -204,7 +204,7 @@
             }
           ],
           "tail": [
-            "Every one of these starts the same way: find the cause, look for the smaller fix, then lay out your options."
+            "Start with a call, and we'll tell you what we find and what the options are."
           ],
           "link": {
             "label": "See water heater repair in Wichita",
@@ -260,7 +260,7 @@
           "items": [
             {
               "q": "Can you come on a weekend?",
-              "a": "We work seven days a week, and we don't charge emergency rates. Call and tell us what's happening, and we'll tell you when we can be there."
+              "a": "We work seven days a week, and we don't charge emergency rates. Call and tell us what's happening."
             },
             {
               "q": "What will it cost, and does all of it need doing?",
@@ -328,7 +328,7 @@
           "body": [
             "Tell us what the heater is doing: no hot water, not enough of it, a puddle, a noise. We'll tell you what we think it is.",
             "Then we look at the heater and find what actually failed. If it's a small part or a setting, we fix that. If it's the tank, you'll hear that too, with your options.",
-            "A cold shower on a Saturday is a normal call for us, at the same rates as any other day."
+            "A cold shower on a Saturday is a normal call for us. We work seven days a week and don't charge emergency rates."
           ]
         },
         {
@@ -416,7 +416,7 @@
             },
             {
               "q": "Can you come on a weekend?",
-              "a": "We work seven days a week and don't charge emergency rates. Call and tell us what the heater is doing, and we'll tell you when we can get there."
+              "a": "We work seven days a week and don't charge emergency rates. Call and tell us what the heater is doing."
             },
             {
               "q": "What will it cost?",
@@ -587,7 +587,7 @@
         {
           "type": "callBand",
           "heading": "Call Plumb Crazy",
-          "text": "If you've been told you need a new sewer line, call (316) 871-3006. Tell us what you were quoted and what's going wrong, and we'll come take a look."
+          "text": "If you've been told you need a new sewer line, call (316) 871-3006. Tell us what you were quoted and what's going wrong."
         }
       ]
     },
@@ -620,7 +620,7 @@
           "heading": "Call Us",
           "body": [
             "(316) 871-3006",
-            "We work seven days a week. Call and tell us what's going on, and we'll tell you when we can be there. We don't charge emergency rates."
+            "We work seven days a week. Call and tell us what's going on. We don't charge emergency rates."
           ]
         },
         {
@@ -702,7 +702,7 @@
         "why": "When the hot water quits, people call the first plumber they find.",
         "problems": [
           "Water heater replacement is one line on your Plumbing Services page, so “water heater repair Wichita KS” has no page built for it.",
-          "Your only post on water heaters is dated March 2016."
+          "Your water heater blog post is dated March 2016."
         ],
         "fixes": [
           "A page for water heater repair in Wichita, KS, with what usually fails.",
@@ -770,7 +770,8 @@
       "items": [
         "Your site says you serve Wichita and a 30 mile radius around Sedgwick County, your Google listing puts you at 836 S Broadview St in Wichita, and a Birdeye listing and one Google review say Cheney, so which address should every listing use?",
         "Your page titles say Plumb Crazy, LLC while your footer says Plumb Crazy Kansas, LLC, so which name should every listing use?",
-        "Your drain cleaning page says 17 years of experience and your sewer cleaning page says over 16 years, with no founding year anywhere, so which number should every listing use?"
+        "Your drain cleaning page says 17 years of experience and your sewer cleaning page says over 16 years, with no founding year anywhere, so which number should every listing use?",
+      "Your reviews describe a smaller fix found before a big quote, and this demo leads with that, so is that how your team works, and how would you put it?"
       ]
     },
     "lead": {
@@ -787,7 +788,7 @@
           "score": 16
         },
         {
-          "claim": "Same-day or next-morning visits",
+          "claim": "Reviews describe same-day or next-morning visits, not stated as policy",
           "score": 15
         }
       ]

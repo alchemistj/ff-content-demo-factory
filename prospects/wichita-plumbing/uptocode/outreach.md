@@ -2,7 +2,7 @@
 
 Hey Ken,
 
-Your reviews show a customer texting you a photo and getting a fair quote right away, while another local company wanted a visit first and a week to get there. None of the Wichita competitors we checked says you can do that. My daughter and I build websites for service businesses, so we made you a mockup that leads with it: text a photo, hear the price.
+One of your Google reviews describes a customer texting you a photo and getting a fair quote right away, while another local company wanted a visit first and a week to get there. None of the Wichita competitors we could read says you can do that. My daughter and I build websites for service businesses, so we made you a mockup that starts there: text us a photo.
 
 https://uptocode.websitepreview.fluidframemarketing.com/
 

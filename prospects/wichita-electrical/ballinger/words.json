@@ -29,7 +29,8 @@
     "Older Homes and Messy Wiring Welcome",
     "Options and a Price Before We Start",
     "Homes and Businesses",
-    "Locally Owned and Operated"
+    "Locally Owned and Operated",
+    "[[confirm: [XX] years serving Wichita]]"
   ],
   "services": [
     {
@@ -236,7 +237,7 @@
           "type": "prose",
           "heading": "Someone You're Glad to Have in the House",
           "body": [
-            "If you're going to call the same electrician for years, you want one who's easy to have at home. We show up when we said we would, do the work and clean up when we finish. Ben, Kenny and Jayse do the work.",
+            "If you're going to call the same electrician for years, you want one who's easy to have at home. We show up when we said we would, do the work and clean up when we finish. Ben, Kenny and Jayse do the work. [[confirm: Licensed electrician, KS license #[XXXX]]].",
             "While we're there, we look over the outlets and other things in plain sight, such as a smoke detector that should be there, and tell you if something needs attention. You decide what to do about it."
           ]
         },
@@ -266,7 +267,7 @@
           "type": "prose",
           "heading": "Wichita and the Areas Around It",
           "body": [
-            "We serve Wichita, Kansas and the surrounding areas, homes first and some commercial properties. Call and tell us where the job is."
+            "[[confirm: Serving [towns] and nearby]], homes first and some commercial properties. Call and tell us where the job is."
           ]
         },
         {
@@ -414,7 +415,7 @@
           "heading": "Why We Don't Just Swap the Outlet",
           "body": [
             "A new outlet on a bad circuit stops working again. So we test first, find where the power stops and fix that, not the symptom.",
-            "It takes a little longer than a swap, and you don't pay twice. If the answer is a cheap part, you hear that too."
+            "It takes a little longer than a swap, and you don't pay twice. If the answer is a cheap part, you hear that too. [[confirm: [X]-year warranty on our work]]."
           ]
         },
         {
@@ -740,6 +741,29 @@
     ]
   },
   "strategy": {
+    "unverified": {
+      "heading": "What we couldn't verify, and why it matters",
+      "intro": "We marked these on the demo as yellow \"to confirm\" tags instead of guessing, because we won't put a claim on your site we can't back up. Your current site says \"years of experience\" with no number, and shows no license number, warranty or list of towns.",
+      "items": [
+        {
+          "fact": "Years in business",
+          "why": "A homeowner letting someone into an older house wants to know you've been doing this a while, and a made-up number is worse than none."
+        },
+        {
+          "fact": "License number",
+          "why": "Someone with a panel or messy wiring wants to look up the license before they let you open the wall."
+        },
+        {
+          "fact": "Service area towns",
+          "why": "\"Surrounding areas\" doesn't tell a homeowner in a town outside Wichita whether you'll come look."
+        },
+        {
+          "fact": "Warranty on the work",
+          "why": "If a repair fails again, the homeowner who already made three calls wants to know you'll stand behind it."
+        }
+      ],
+      "closing": "This is what our onboarding call nails down. Fifteen minutes, and every tag becomes a real, true line."
+    },
     "whyHeading": "Why we built this site",
     "why": [
       "Your site says “With years of experience” and “integrity, expertise, and exceptional customer service,” and it shows the same four reviews on every page. Your reviews say something different: Ben came to look at an electrical mess when other electricians wouldn’t, and got the job on the schedule quickly. Today that sits on Google, not on your site.",

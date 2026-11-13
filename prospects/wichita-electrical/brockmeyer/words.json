@@ -110,7 +110,7 @@
       "hero": {
         "eyebrow": "Wichita, KS · Homes and Businesses · Free Estimates",
         "h1": "Electrician in Wichita, KS — Brockmeyer Inc.",
-        "sub": "Sending someone to your mom's house is hard when you can't be there. Call Brockmeyer: we look at the job in person, explain it in plain words and treat whoever is home with respect. You stop wondering who's in her kitchen. Call (316) 262-1440.",
+        "sub": "Sending someone to your mom's house is hard when you can't be there. Katherine A. said the tech treated her elderly mother with a lot of respect. You stop wondering who's in her kitchen. Call (316) 262-1440.",
         "primaryCta": {
           "label": "Call (316) 262-1440",
           "action": "call"
@@ -155,14 +155,12 @@
           },
           "imageSide": "left",
           "body": [
-            "A number made up over the phone is a guess. We'd rather come see the job, tell you what we found in plain words, and let you decide.",
+            "Olivia V. said the bill came in below the original quote after the job was seen in person.",
             "If it's your mom's house, call us from work. Tell us who's home and what's going on, and we'll take it from there."
           ],
           "list": [
             "A free estimate",
-            "The job looked at in person",
-            "What we find explained in plain words",
-            "Respect for whoever is home"
+            "What we find explained in plain words"
           ],
           "listStyle": "checks"
         },
@@ -171,7 +169,7 @@
           "heading": "The Bill You Can't Check",
           "body": [
             "The worst part of an emergency call is the number. You can't check it, and you can't tell if it's padded.",
-            "What you're hoping for is a company that goes and sees the real job and is straight with you about the bill. Then you keep its number in your phone."
+            "What you're hoping for is a company that goes and sees the real job and is straight with you about the bill. Then you keep its number in your phone. [[confirm: [X]-year warranty on our work]]"
           ]
         },
         {
@@ -253,8 +251,8 @@
           "type": "prose",
           "heading": "Serving the Greater Wichita Area",
           "body": [
-            "Brockmeyer Inc. is at 408 S Ida in Wichita, and we serve homeowners across the greater Wichita area. Call and tell us where you are.",
-            "The office is open Monday to Friday, 7:30 AM to 4:00 PM."
+            "Brockmeyer Inc. is at 408 S Ida in Wichita, and we serve homeowners across the greater Wichita area. Call and tell us where you are. [[confirm: Serving [towns] and nearby]]",
+            "The office is open Monday to Friday, 7:30 AM to 4:00 PM. [[confirm: [XX] years serving Wichita]]"
           ]
         },
         {
@@ -276,7 +274,7 @@
             },
             {
               "q": "What will it cost?",
-              "a": "It depends on the job, so we don't post a number here. Ask for a free estimate, and we'll go over what the work involves and what it costs before you decide."
+              "a": "It depends on the job, so we don't post a number here. Ask for a free estimate."
             },
             {
               "q": "Will it pass inspection?",
@@ -284,7 +282,7 @@
             },
             {
               "q": "Can you handle it at my mom's house if I can't be there?",
-              "a": "Call us from work. Tell us who's home, what's happening and what you'd like done, and we'll go from there. We want her to be comfortable with whoever knocks, and you to hear what was found."
+              "a": "Call us from work. Tell us who's home, what's happening and what you'd like done, and we'll go from there."
             },
             {
               "q": "Do you work on rentals and businesses?",
@@ -342,7 +340,7 @@
           },
           "imageSide": "right",
           "body": [
-            "Tell us what the outlet is doing and which room it's in. We come look at it in person, find the cause and explain what we found in plain words.",
+            "Tell us what the outlet is doing and which room it's in. Laurie O. said Will arrived early, diagnosed all the issues and fixed them.",
             "Then you decide what gets fixed. A free estimate comes first."
           ]
         },
@@ -568,7 +566,7 @@
           "heading": "Is Your Panel Ready?",
           "body": [
             "A charger is a big, steady load. If the panel is full, old or already near what it can carry, it may need work before a charger goes in.",
-            "Panel replacements are part of what we do. We look at the panel in person and tell you what it needs, before you spend anything on the charger."
+            "Panel replacements are part of what we do."
           ]
         },
         {
@@ -720,9 +718,9 @@
   "strategy": {
     "whyHeading": "Why we built this site",
     "why": [
-      "Your site is stronger than most small electricians' sites: a real page for homes, one for businesses, a blog, and a phone number one tap away. So this isn't a rescue. It's what a full build adds, from our audit.",
+      "Your site has a real page for homes, one for businesses, a blog, and a phone number one tap away. So this isn't a rescue. It's what a full build adds, from our audit.",
       "Your headlines are slogans. The homepage says “From Dim to Dazzling – We've Got the Wiring Right.” The residential page says “Powering Homes, One Wire at a Time!” The contact page has no headline at all. On a phone, every page is laid out 768 pixels wide inside a 390-pixel screen, so it scrolls sideways. And 58 of the 61 images on your homepage have no alt text.",
-      "Your Google reviews say what you do best: electricians people trust in a parent's house. The review block on your site showed no text when we checked. The demo opens with electrician in Wichita, KS, gives outlet repair and EV charger installation a page each, and puts your customers' words on the page."
+      "Two of your Google reviews describe a tech treating a parent's house with care. The review block on your site showed no text when we checked. The demo opens with electrician in Wichita, KS, gives outlet repair and EV charger installation a page each, and puts your customers' words on the page."
     ],
     "cardsHeading": "Be the Electrician People Find on Google",
     "cardsIntro": "One card per page.",
@@ -822,12 +820,13 @@
       "items": [
         "Your site says “Since 2005,” while a Wichita State alumni list says the company was founded in 1988, so which year should every listing use?",
         "Your site and Google list (316) 262-1440, while two BBB listings show 316-771-0064 and 316-308-4488, so which number should every listing use, and are the others still yours?",
-        "Your site and Google list 408 S Ida, while another listing shows 225 S Ida St #102, so which address should every listing use?"
+        "Your site and Google list 408 S Ida, while another listing shows 225 S Ida St #102, so which address should every listing use?",
+        "Your demo has an EV charger page and an electrical trenching service, and each rests on one review, so do you offer both?"
       ]
     },
     "lead": {
       "heading": "Why we led with the electrician you can send to your mom's house",
-      "text": "The call a grown child dreads is the one for a parent's house: you can't see what's behind the outlet, and you don't know who you're sending in. Katherine A. hired you for her elderly mom's house, and Olivia V. called in an emergency for her mom. We checked the five top Wichita competitors, and none of them says anything like it.",
+      "text": "The call a grown child dreads is the one for a parent's house: you can't see what's behind the outlet, and you don't know who you're sending in. Katherine A. hired you for her elderly mom's house, and Olivia V. called in an emergency for her mom. We checked the Wichita competitor sites we could open, and none of them says anything like it.",
       "showScores": false,
       "rows": [
         {
@@ -843,6 +842,25 @@
           "score": 12
         }
       ]
+    },
+    "unverified": {
+      "heading": "What we couldn't verify, and why it matters",
+      "intro": "We marked these on the demo as yellow \"to confirm\" tags instead of guessing, because we won't put a claim on your site we can't back up. Your pages and the listings online don't agree on a few of them, and others have no answer at all.",
+      "items": [
+        {
+          "fact": "Years in business",
+          "why": "Your site says \"Since 2005\" and another listing says 1988, and a son or daughter handing a parent's house to a stranger wants a number that holds up."
+        },
+        {
+          "fact": "Service area towns",
+          "why": "\"Greater Wichita area\" doesn't tell someone across town whether you'll come to their mom's street."
+        },
+        {
+          "fact": "Warranty on the work",
+          "why": "Your site doesn't mention one, and a person who can't be at the house will ask what happens if the fix doesn't hold."
+        }
+      ],
+      "closing": "This is what our onboarding call nails down. Fifteen minutes, and every tag becomes a real, true line."
     }
   }
 }

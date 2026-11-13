@@ -1,0 +1,798 @@
+{
+  "schema": "words-package/v1",
+  "business": {
+    "name": "JM Plumbing",
+    "slug": "jm",
+    "city": "Wichita",
+    "state": "KS",
+    "companyType": "Plumber",
+    "owners": [],
+    "phones": [
+      {
+        "label": "Wichita",
+        "display": "(316) 491-3612",
+        "tel": "+13164913612"
+      }
+    ],
+    "email": null,
+    "hours": null,
+    "address": "1902 N Waco Ave, Wichita, KS 67203",
+    "serviceArea": {
+      "summary": "Wichita and surrounding areas",
+      "towns": [
+        "Wichita"
+      ]
+    }
+  },
+  "trustBar": [
+    "Problem Explained, Not Just Fixed",
+    "Options Before the Work Starts",
+    "Sewer, Water Line and Water Heater Work",
+    "Wichita and Surrounding Areas"
+  ],
+  "services": [
+    {
+      "name": "Sewer Line Repair",
+      "route": "/sewer-line-repair-wichita-ks/",
+      "blurb": "Backups and failed lines found and explained, from a clog to a replaced section."
+    },
+    {
+      "name": "Water Heater Replacement",
+      "route": "/water-heater-replacement-wichita-ks/",
+      "blurb": "A new tank when yours is done, with repair weighed first."
+    },
+    {
+      "name": "Water Line Replacement",
+      "route": null,
+      "blurb": "A broken or failing water line found and replaced, so the water comes back on."
+    },
+    {
+      "name": "Leak and Pipe Repair",
+      "route": null,
+      "blurb": "Leaks traced to the source and pipes repaired, with the cause shown to you."
+    },
+    {
+      "name": "Drain Cleaning and Floor Drains",
+      "route": null,
+      "blurb": "Slow tubs, sinks and floor drains cleared, and the reason explained."
+    },
+    {
+      "name": "Sump Pump Replacement",
+      "route": null,
+      "blurb": "A failing pump swapped out before the next hard rain."
+    },
+    {
+      "name": "Water Heater Repair",
+      "route": null,
+      "blurb": "Repair when repair makes sense, and a straight answer when it doesn't."
+    },
+    {
+      "name": "Faucet and Toilet Work",
+      "route": null,
+      "blurb": "Faucets, outside spigots and toilets repaired or installed."
+    }
+  ],
+  "pages": [
+    {
+      "role": "home",
+      "route": "/home/",
+      "navLabel": "Home",
+      "keyword": "plumber wichita ks",
+      "seo": {
+        "title": "Plumber in Wichita, KS | JM Plumbing",
+        "description": "JM Plumbing, a Wichita plumber for sewer lines, water lines and water heaters. We explain what's wrong and why, and show you as we work. Call (316) 491-3612."
+      },
+      "hero": {
+        "eyebrow": "Wichita, KS · Sewer lines, water lines and water heaters",
+        "h1": "Plumber in Wichita, KS — JM Plumbing",
+        "sub": "Water off, floor wet, and no idea what you're being told? We find what's wrong, tell you why, and show you as we work. You won't be nodding along to words you don't know. Call (316) 491-3612.",
+        "primaryCta": {
+          "label": "Call (316) 491-3612",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Contact Us",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "home-hero",
+          "alt": "Plumber kneeling beside a pipe under a kitchen sink in a Wichita home",
+          "brief": "plumbing pool: home-hero"
+        }
+      },
+      "sections": [
+        {
+          "type": "review",
+          "quote": "He was fast, professional, and incredibly nice from start to finish. … He took the time to explain everything to me in detail and showed me what he was doing along the way, which I really appreciated.",
+          "name": "Kittkat W."
+        },
+        {
+          "type": "split",
+          "heading": "The Water's Off and the Phone's in Your Hand",
+          "body": [
+            "You've found the shutoff. The floor is wet, or the tap has gone dry, and you're calling the first number you can find. You want a person, a time, and no speech about how busy they are.",
+            "Then comes the second worry. Someone shows up, names a price, and you can't tell a real repair from a sales pitch. You can't check it, so you nod and hope.",
+            "When you call us, tell us where the water is coming from and where your shutoff is. We'll tell you when we can get there."
+          ],
+          "image": {
+            "slot": "leak",
+            "alt": "Water pooling on a basement floor beside a pipe",
+            "brief": "plumbing pool: leak"
+          },
+          "imageSide": "right"
+        },
+        {
+          "type": "split",
+          "heading": "We Tell You What's Wrong, and Why",
+          "body": [
+            "Plenty of plumbing visits go the same way: a price, a nod and a bill, and you take it on faith. You shouldn't have to. You're the one paying, so you should understand the job.",
+            "So we find the cause first, tell you what it is and why it happened, and show you as we work. Then you hear your options and the price, and you decide."
+          ],
+          "list": [
+            "The cause found and explained, not just fixed",
+            "Why it happened, not only what failed",
+            "You see what we're doing as we go",
+            "Your options and the price before the work starts"
+          ],
+          "listStyle": "checks",
+          "image": {
+            "slot": "fixture",
+            "alt": "Plumber showing a homeowner a faucet and its supply line",
+            "brief": "plumbing pool: fixture"
+          },
+          "imageSide": "left"
+        },
+        {
+          "type": "prose",
+          "heading": "Feeling Safe With a Plumber in Your House",
+          "body": [
+            "A stranger in your home, your water off, your guard up. You want someone respectful who tells you the truth and never makes you feel foolish for asking.",
+            "That's the standard we hold ourselves to in your house."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "We got the recommendation for JM from a friend who's a single woman and all I can say is that referrals that come from single women tend to be HIGHLY valuable. Meaning they felt safe, they were respectful, they didn't make anyone feel uncomfortable and - most of all - prices are reasonable and FAIR! … We were able to isolate the leak and determine it was actually the appliance leaking rather than our plumbing. Despite that, he still explained everything carefully and shut off the water line that runs to it, giving us recommendations for our next step and advice on how to go forward from here.",
+          "name": "Kari M."
+        },
+        {
+          "type": "services",
+          "heading": "Plumbing Services in Wichita",
+          "intro": "Start with the big jobs, sewer lines, water lines and water heaters, then the drains, pipes and fixtures around them. Each one starts the same way: we find the cause and explain it before the work begins."
+        },
+        {
+          "type": "review",
+          "quote": "They are very nice and I appreciated that they were willing to explain the issue, not just what is wrong but why it is wrong.",
+          "name": "Alex G."
+        },
+        {
+          "type": "prose",
+          "heading": "Sewer Lines, Water Lines and Water Heaters",
+          "body": [
+            "These are the jobs that put the water off or the basement under, so they're the ones we explain most carefully."
+          ],
+          "items": [
+            {
+              "title": "Sewer line trouble",
+              "text": "A backup in a basement floor drain can mean a clog, roots or a failed section of line. We find which, explain it, and tell you whether it needs clearing or replacing."
+            },
+            {
+              "title": "A broken water line",
+              "text": "When the water is off to the whole house, the line is usually why. We find where it failed and walk you through repair versus replacement."
+            },
+            {
+              "title": "A water heater at the end",
+              "text": "No hot water, or a tank leaking at the bottom. We tell you whether it's worth repairing or time for a new one, and why."
+            },
+            {
+              "title": "Drains and floor drains",
+              "text": "A tub or sink that drains slowly, or a floor drain that backs up. We find what's blocking it and explain what we did."
+            },
+            {
+              "title": "Sump pumps",
+              "text": "A pump that struggles when the rain is hard. We check it and tell you if it can be repaired or needs replacing."
+            },
+            {
+              "title": "Leaks and pipes",
+              "text": "A drip you can't trace, a wet wall, a pipe that won't hold. We find the source and show you."
+            }
+          ],
+          "link": {
+            "label": "See sewer line repair in Wichita",
+            "route": "/sewer-line-repair-wichita-ks/"
+          }
+        },
+        {
+          "type": "review",
+          "quote": "JM Plumbing arrived when he said he would, professionally assessed the situation which involved 70 year old galvanized pipe, and gave us several options.",
+          "name": "Suzanne H."
+        },
+        {
+          "type": "prose",
+          "heading": "Repair or Replace? You Should Hear Both Sides",
+          "body": [
+            "Fix it or replace it is the question that costs the most, and the one you can't judge for yourself. The word “replace” should always come with a reason.",
+            "We lay out your options in plain words, explain what each one means, and leave the decision with you.",
+            "That goes for a water heater, a water line or a sewer line. Need a new tank? See [water heater replacement](/water-heater-replacement-wichita-ks/)."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Don't Have a Plumber Yet?",
+          "body": [
+            "Most people find a plumber the hard way: water off, no time to compare, scrolling for a number. Save ours now, while nothing is wrong: (316) 491-3612.",
+            "If you've just bought an older house, tell us how old it is when you call. Old pipe fails in its own ways, and we'll tell you what we see."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Serving Wichita",
+          "body": [
+            "We're at 1902 N Waco Ave in Wichita, KS, and we serve Wichita and the surrounding areas.",
+            "Not sure we reach your street? Call (316) 491-3612 and ask."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Make JM your first and final call. So happy with the service. Professional, kind, timely. Cost was fair. The only company to put booties over shoes when entering for estimates and during service. Quick turnaround time. Overall satisfied with service!!",
+          "name": "Rachel B."
+        },
+        {
+          "type": "faq",
+          "heading": "Questions Before You Call",
+          "items": [
+            {
+              "q": "Can you come today?",
+              "a": "Call (316) 491-3612 and tell us where the water is coming from and where your shutoff is. We'll tell you on the phone when we can be there. If water is running, shut it off at the main while you wait."
+            },
+            {
+              "q": "Will you actually show up when you say?",
+              "a": "Pick a time with us on the phone, and give us the best number to reach you. If you'd like a call when we're on our way, ask for it."
+            },
+            {
+              "q": "What's this going to cost, and do I really need it?",
+              "a": "We find the cause first, then explain what's wrong, why it happened and what your options are, and we show you as we work. You hear your options and the price before the work starts, so you decide with the facts."
+            },
+            {
+              "q": "Do I need a whole new water heater?",
+              "a": "Maybe not. We'll tell you whether yours can be repaired or is better replaced, and why. If it's time for a new one, we replace water heaters."
+            },
+            {
+              "q": "What if the problem comes back?",
+              "a": "Call us and tell us what it's doing. We'll look at it and explain why. How a return visit is handled is something we'll tell you before we start."
+            },
+            {
+              "q": "Do you do sewer line work?",
+              "a": "Yes. We repair and replace sewer lines, from clearing a backup to replacing a failed section. See [sewer line repair in Wichita](/sewer-line-repair-wichita-ks/)."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Call JM Plumbing",
+          "text": "Tell us where the water is coming from and where your shutoff is, and hear what we think before we do the work. Call (316) 491-3612. JM Plumbing, 1902 N Waco Ave, Wichita."
+        }
+      ]
+    },
+    {
+      "role": "service",
+      "route": "/sewer-line-repair-wichita-ks/",
+      "navLabel": "Sewer Line Repair",
+      "keyword": "sewer line repair wichita ks",
+      "seo": {
+        "title": "Sewer Line Repair in Wichita, KS | JM Plumbing",
+        "description": "Sewer line repair in Wichita from JM Plumbing. We find what's blocking or broken, explain why, and give you your options before the work starts. Call (316) 491-3612."
+      },
+      "hero": {
+        "eyebrow": "Sewer lines, Wichita",
+        "h1": "Sewer Line Repair in Wichita, KS — JM Plumbing",
+        "sub": "Water backing up in the basement drain is a bad sign and a worse smell. Call (316) 491-3612. We find what's blocking or broken, tell you why, and give you your options before the work starts.",
+        "primaryCta": {
+          "label": "Call (316) 491-3612",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Contact Us",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "sewer",
+          "alt": "Plumber at a basement floor drain with a drain cleaning machine",
+          "brief": "plumbing pool: sewer"
+        }
+      },
+      "sections": [
+        {
+          "type": "review",
+          "quote": "They were very friendly and knowledgeable. I had a sewer backup and my basement and they explained detail by detail of why it was happening.",
+          "name": "Michelle A."
+        },
+        {
+          "type": "split",
+          "heading": "What Happens When You Call About a Sewer Problem",
+          "body": [
+            "Tell us what you're seeing: a floor drain backing up, a tub that gurgles when the washer runs, a smell, or water that won't leave the lowest drain in the house. We'll tell you when we can come.",
+            "Then we look at the line, find what's wrong, and tell you what it is and why it happened. You see what we see, because a sewer problem shouldn't be a mystery.",
+            "You hear your options, and what each one means, before anything is cleared, cut or replaced."
+          ],
+          "list": [
+            "The cause found and explained",
+            "Why it happened, not only what failed",
+            "Your options before the work starts",
+            "A clear next step, whatever the answer is"
+          ],
+          "listStyle": "checks",
+          "image": {
+            "slot": "drain",
+            "alt": "Floor drain in a basement",
+            "brief": "plumbing pool: drain"
+          },
+          "imageSide": "right"
+        },
+        {
+          "type": "prose",
+          "heading": "What Usually Causes a Sewer Backup",
+          "body": [
+            "Most sewer backups come down to a short list of causes. Here is what we look for."
+          ],
+          "items": [
+            {
+              "title": "A clog in the line",
+              "text": "Grease, wipes, something flushed that shouldn't have been. Often it can be cleared, and we'll tell you if clearing is all it needs."
+            },
+            {
+              "title": "Roots in the line",
+              "text": "Tree roots find a small gap in an older line and grow into it. Clearing helps for a while. If the line is damaged, we'll tell you what a lasting fix looks like."
+            },
+            {
+              "title": "A collapsed or broken section",
+              "text": "An old line can crack, sag or collapse. Water has nowhere to go, and clearing won't hold. This is when replacing a section, or the line, comes up."
+            },
+            {
+              "title": "No cleanout",
+              "text": "A cleanout is the access point that lets a line be cleared. Without one, every job is harder, and adding one can make the next backup easier to deal with."
+            }
+          ],
+          "tail": [
+            "Which one you have decides everything that follows, so we name it before we talk about the job."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Jaime and his crew were practically immediate in their response to my sewer line needing to be cleared and partially replaced. They were friendly, completely professional, and what I appreciated most was their excellent communication and keeping me apprised of the work and my options every step of the way.",
+          "name": "Jay P."
+        },
+        {
+          "type": "prose",
+          "heading": "Clear It, Repair It or Replace It?",
+          "body": [
+            "Clearing a line is the smaller job and replacing it is the bigger one. You should hear which one the problem calls for, and why, before you hear a price.",
+            "A clog is a clearing. A line that has cracked, sagged or collapsed won't stay clear, so replacing the damaged section, or the line, is the honest answer.",
+            "Either way, we tell you what we found and what we'd do, and you decide."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "they were incredibly nice & respectful about everything the entire time. they talked to me & my husband about what was going on, explained what they would be doing. … they even managed to put back together our concrete patio to the best of their abilities, after it had to be broken up to get underneath for the pipe.",
+          "name": "Katherine B."
+        },
+        {
+          "type": "prose",
+          "heading": "When the Line Runs Under Your Patio or Driveway",
+          "body": [
+            "Some sewer lines run under concrete, a driveway or a patio. If reaching the line means opening one up, you'll hear that before we start, not after.",
+            "Tell us what's above the line when you call: a patio, a tree, a flowerbed. All of it changes the job, and we'd rather plan for it than be surprised."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "While You Wait for Us",
+          "body": [
+            "Stop running water into the drains. That means the washer, the dishwasher and the showers. More water has nowhere to go, and the backup gets worse.",
+            "If you can, note which drains are backing up and when it started. It helps us find the line quickly."
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Questions Before You Call",
+          "items": [
+            {
+              "q": "How do I know it's the sewer line and not just a drain?",
+              "a": "If one sink drains slowly, it's usually that drain. If the lowest drain in the house backs up, or several fixtures gurgle or back up together, the main sewer line is the likely cause. Call and describe it, and we'll tell you what we think."
+            },
+            {
+              "q": "Can the line be cleared, or does it have to be replaced?",
+              "a": "It depends on what's wrong. A clog can be cleared. A broken or collapsed section can't. We find which it is, and show you, before we talk about replacing anything."
+            },
+            {
+              "q": "Will you dig up my yard?",
+              "a": "Not unless the job calls for it. If it does, you'll hear where and why before we start."
+            },
+            {
+              "q": "Can a cleanout be added to my line?",
+              "a": "Often, yes. A cleanout makes the line easier to clear next time. Ask when you call and we'll tell you if it makes sense on your line."
+            },
+            {
+              "q": "How long will a sewer job take?",
+              "a": "It depends on the line, what's wrong and what's above it. We'll give you a realistic idea once we've seen it, not a guess over the phone."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Call JM Plumbing",
+          "text": "If a drain is backing up, call (316) 491-3612. Tell us what you're seeing, and hear what we think before we do the work."
+        }
+      ]
+    },
+    {
+      "role": "service",
+      "route": "/water-heater-replacement-wichita-ks/",
+      "navLabel": "Water Heater Replacement",
+      "keyword": "water heater replacement wichita ks",
+      "seo": {
+        "title": "Water Heater Replacement in Wichita, KS | JM Plumbing",
+        "description": "Water heater replacement in Wichita from JM Plumbing. We tell you whether yours can be repaired or needs replacing, and why. Call (316) 491-3612."
+      },
+      "hero": {
+        "eyebrow": "Water heaters, Wichita",
+        "h1": "Water Heater Replacement in Wichita, KS — JM Plumbing",
+        "sub": "Cold shower, or a puddle around the tank? Call (316) 491-3612. We tell you whether the heater can be repaired or should be replaced, and why, before any work starts.",
+        "primaryCta": {
+          "label": "Call (316) 491-3612",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Contact Us",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "water-heater",
+          "alt": "Tank water heater in a utility room",
+          "brief": "plumbing pool: water-heater"
+        }
+      },
+      "sections": [
+        {
+          "type": "review",
+          "quote": "Saved our weekend! Water heater went out Friday night. Jaime came on Saturday, within two hours after we called. Had it installed and working — and the install work was better than the original installation — within 4 hours of our call.",
+          "name": "David C."
+        },
+        {
+          "type": "split",
+          "heading": "What Happens When You Call About a Water Heater",
+          "body": [
+            "Tell us what it's doing: no hot water, lukewarm water, water around the base, a rumble, or a tank that's seen better days. If water is pooling, shut off the supply to the heater while you wait.",
+            "We look at the heater, tell you what's wrong and why, and say whether a repair makes sense. If it doesn't, we tell you that too.",
+            "You hear your options and the price before we start, and you decide. Then we do the work."
+          ],
+          "list": [
+            "Repair or replace, answered plainly",
+            "The reason, not just the verdict",
+            "Options and the price before the work starts",
+            "The new heater installed and tested"
+          ],
+          "listStyle": "checks",
+          "image": {
+            "slot": "leak",
+            "alt": "Water on the floor around the base of a water heater",
+            "brief": "plumbing pool: leak"
+          },
+          "imageSide": "right"
+        },
+        {
+          "type": "prose",
+          "heading": "Signs a Water Heater Is Done",
+          "body": [
+            "Heaters rarely quit without warning. Here is what the warning looks like."
+          ],
+          "items": [
+            {
+              "title": "No hot water at all",
+              "text": "Sometimes it's a small part, sometimes it's the tank itself. We check, and we tell you which, before anyone talks about replacing it."
+            },
+            {
+              "title": "Water around the base",
+              "text": "A leak at the bottom of the tank usually means the tank has failed, and a repair won't fix that. We'll show you where it's coming from."
+            },
+            {
+              "title": "Rusty or cloudy hot water",
+              "text": "Rust in the hot water can point to a tank wearing out. We'll tell you what we see and what it means."
+            },
+            {
+              "title": "Rumbling or popping",
+              "text": "Sediment builds up in the bottom of a tank over time. Sometimes it's a maintenance issue and sometimes a sign the tank is tired."
+            },
+            {
+              "title": "Repairs that keep coming",
+              "text": "A heater that has needed fix after fix is telling you something. We'll tell you where we think yours stands."
+            }
+          ],
+          "tail": [
+            "Every one of these starts with finding out what's actually wrong."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "They replaced my hot water tank !!! Very polite, quoted the price upfront. And they were very efficient!!!",
+          "name": "Rachel M."
+        },
+        {
+          "type": "prose",
+          "heading": "Repair or Replace?",
+          "body": [
+            "Here's the question that costs you the most. A repair on a heater near the end of its life can be money spent twice.",
+            "If the problem is a small part and the tank is sound, repair is the answer. If the tank has failed, or repairs keep coming, replacement is the honest one.",
+            "We'll tell you which side you're on and why, and the decision stays yours."
+          ]
+        },
+        {
+          "type": "steps",
+          "heading": "How a Replacement Goes",
+          "items": [
+            {
+              "title": "We confirm replacement is right",
+              "text": "We find the problem and explain it first. Replacement happens when it makes sense, not by default."
+            },
+            {
+              "title": "You choose",
+              "text": "You hear your options and the price before we start."
+            },
+            {
+              "title": "The old heater comes out",
+              "text": "The old heater is taken out."
+            },
+            {
+              "title": "The new one goes in",
+              "text": "The new heater is set, connected and filled, and the connections are checked for leaks."
+            },
+            {
+              "title": "We test it and show you",
+              "text": "We check that it's heating and show you what we did."
+            }
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Needed help with some repairs and a water heater installed in a newly leased property my church got and Jaime was very helpful and considerate and helped make suggestions on what work needed to be done in the building.",
+          "name": "Melpha S."
+        },
+        {
+          "type": "prose",
+          "heading": "When It Quits at the Worst Time",
+          "body": [
+            "A water heater has a way of going out right before something important. Call, and tell us when it went out and whether water is leaking.",
+            "We'll tell you on the phone when we can come, and what to do until then."
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Questions Before You Call",
+          "items": [
+            {
+              "q": "Should I repair or replace my water heater?",
+              "a": "It depends on what failed. A small part on a sound tank can be repaired. A leaking tank can't. We find the cause, tell you which it is and why, and you decide."
+            },
+            {
+              "q": "Do you repair water heaters too?",
+              "a": "Yes. Repair comes first when repair makes sense."
+            },
+            {
+              "q": "What should I do if my water heater is leaking?",
+              "a": "Shut off the water supply to the heater, and the power or gas if you can reach them safely, then call us. Don't wait for it to drain on its own."
+            },
+            {
+              "q": "Will you tell me the price before you start?",
+              "a": "Yes. You hear your options and the price before the work begins."
+            },
+            {
+              "q": "How long will it take?",
+              "a": "We'll tell you once we've seen the heater. Some jobs are simple and others involve old connections, and a guess over the phone isn't worth much."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Call JM Plumbing",
+          "text": "If your water heater has quit or is leaking, call (316) 491-3612. Tell us what it's doing, and hear what we think before we do the work."
+        }
+      ]
+    },
+    {
+      "role": "contact",
+      "route": "/contact/",
+      "navLabel": "Contact",
+      "keyword": "contact jm plumbing wichita ks",
+      "seo": {
+        "title": "Contact JM Plumbing | Wichita, KS",
+        "description": "Call JM Plumbing at (316) 491-3612. Tell us where the water is coming from and where your shutoff is, and we'll tell you when we can be there."
+      },
+      "hero": {
+        "eyebrow": "Contact JM Plumbing",
+        "h1": "Contact JM Plumbing",
+        "sub": "If water is coming in or won't come out, the fastest way to reach us is to call. Tell us what it's doing, and hear what we think before we do the work.",
+        "primaryCta": {
+          "label": "Call (316) 491-3612",
+          "action": "call"
+        },
+        "image": {
+          "slot": "contact-hero",
+          "alt": "Plumber's van parked in the driveway of a Wichita home",
+          "brief": "plumbing pool: contact-hero"
+        }
+      },
+      "sections": [
+        {
+          "type": "prose",
+          "heading": "Call Us",
+          "body": [
+            "(316) 491-3612",
+            "Tell us where the water is coming from and where your shutoff is. We'll tell you when we can be there."
+          ]
+        },
+        {
+          "type": "split",
+          "heading": "What to Have Ready",
+          "list": [
+            "What's happening: a leak, a backup, no hot water, a slow drain, no water at all.",
+            "Where the water is coming from, and where your shutoff is.",
+            "How old the house is, if you know. Older houses have older pipe.",
+            "The best number to reach you, and the address."
+          ],
+          "image": {
+            "slot": "fixture",
+            "alt": "Hand turning a shutoff valve under a sink",
+            "brief": "plumbing pool: fixture"
+          },
+          "imageSide": "right"
+        },
+        {
+          "type": "review",
+          "quote": "JM was easy and quick to schedule with.",
+          "name": "Libby O."
+        },
+        {
+          "type": "prose",
+          "heading": "Where We Are",
+          "body": [
+            "**Address.** 1902 N Waco Ave, Wichita, KS 67203.",
+            "**Area.** Wichita and the surrounding areas. Not sure we reach you? Call and ask.",
+            "**When.** Call and ask when we can come. We'll tell you on the phone."
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Call JM Plumbing",
+          "text": "Tell us what's happening, and hear what we think before we do the work."
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "about": "JM Plumbing is a plumber in Wichita, KS. We repair and replace sewer lines, water lines, water heaters, drains, pipes and fixtures for Wichita homes.",
+    "why": [
+      "We explain what's wrong and why",
+      "We show you as we work",
+      "Options and the price before the work starts",
+      "Sewer, water line and water heater work"
+    ]
+  },
+  "strategy": {
+    "whyHeading": "Why we built this site",
+    "why": [
+      "Your web address, jmplumbingict.com, currently opens a news site that has nothing to do with plumbing. Anyone who taps Website on your Google listing lands on headlines and ads, and no page says plumber, Wichita or JM.",
+      "Your customers already describe how you work. Miranda M.: “explained everything very well.” Hunter M.: “providing us options for a fix and explaining the scenarios.” Today those words sit on Google, not on a site of yours.",
+      "So the demo opens with Plumber in Wichita, KS, leads with explaining the problem as you work, and gives sewer line repair and water heater replacement a page each."
+    ],
+    "cardsHeading": "Be the Plumber People Find on Google",
+    "cardsIntro": "Each card is one page of the demo: what costs you calls, and the fix.",
+    "cards": [
+      {
+        "route": "/home/",
+        "title": "Homepage",
+        "why": "The page Google reads to learn who you are and where you work.",
+        "problems": [
+          "Your web address opens a news portal, so someone who taps Website on Google never sees JM Plumbing.",
+          "No page says plumber in Wichita, KS, so Google has nothing to match you to."
+        ],
+        "fixes": [
+          "A headline that says plumber in Wichita, KS, right at the top.",
+          "Your customers’ words beside the work they prove."
+        ]
+      },
+      {
+        "route": "/sewer-line-repair-wichita-ks/",
+        "title": "Sewer Line Repair",
+        "why": "Customers have called JM for sewer line replacement and repair.",
+        "problems": [
+          "Sewer work has no page of its own, so “sewer line repair Wichita KS” has nothing built for it.",
+          "Your customers’ praise for sewer jobs sits on review sites, not on a page of yours."
+        ],
+        "fixes": [
+          "A page for sewer line repair in Wichita, KS, with what usually goes wrong and what happens when you call.",
+          "Reviews beside the point each one proves."
+        ]
+      },
+      {
+        "route": "/water-heater-replacement-wichita-ks/",
+        "title": "Water Heater Replacement",
+        "why": "The page for homeowners with no hot water who need a straight answer on repair or replace.",
+        "problems": [
+          "Water heaters have no page of their own, so “water heater replacement Wichita” has nothing built for it."
+        ],
+        "fixes": [
+          "A page about water heater replacement in Wichita, KS, with plain answers on repair versus replace."
+        ],
+        "alsoAdd": "Water Line Replacement, Drain Cleaning, Leak Repair and Sump Pump pages, each built for its own search."
+      },
+      {
+        "route": "/contact/",
+        "title": "Contact",
+        "why": "Where a customer with water on the floor decides to call.",
+        "problems": [
+          "Your phone number sits on your Google listing and directories, not on a site of yours.",
+          "There is no contact page and no form, so a customer who wants to write has nowhere to go."
+        ],
+        "fixes": [
+          "Your number one tap away, and what to have ready when you call.",
+          "Your Wichita address and service area on one page."
+        ]
+      }
+    ],
+    "reportCardHeading": "What great plumber websites get right, and how yours measures up.",
+    "reportCard": [
+      {
+        "label": "A web address that opens your own site",
+        "status": "Missing"
+      },
+      {
+        "label": "Headline says what you do and where",
+        "status": "Missing"
+      },
+      {
+        "label": "Each money service has its own page",
+        "status": "Missing"
+      },
+      {
+        "label": "Phone number one tap away",
+        "status": "Missing"
+      },
+      {
+        "label": "Customer reviews beside the work they prove",
+        "status": "Needs work"
+      }
+    ],
+    "closing": {
+      "heading": "Want a website like this for your business?",
+      "text": "Your customers already describe the company you are. Book a strategy call with Fluid Frame and we’ll walk you through this demo and what a full build adds."
+    },
+    "confirm": {
+      "heading": "What we'd confirm with you",
+      "intro": "We wrote this demo from your reviews and your Google listing. On a short onboarding call, we'd confirm these so everything says the same thing.",
+      "items": [
+        "Your Google listing and ServiceAgent show open 24 hours with 24/7 service, while Recommended.app lists Monday to Friday, 9 to 6, and Saturday, 10 to 4, so which hours should every listing show?",
+        "Recommended.app says 5 years in business, while a search summary of another profile says established in 2017, so which year should every listing use?",
+        "Your Google listing shows 127 reviews, while ServiceAgent shows 123, so which count should the directories show?"
+      ]
+    },
+    "lead": {
+      "heading": "Why we led with explaining it as we go",
+      "text": "The scariest moment for a Wichita homeowner is the water off and a stranger at the door, and right behind it is not knowing whether the repair is real. Explaining what's wrong and why, and showing you as the work goes, answers both. None of the Wichita plumbers' sites we could read says it.",
+      "showScores": false,
+      "rows": [
+        {
+          "claim": "Explains what's wrong and why, and shows you as the work goes",
+          "score": 16
+        },
+        {
+          "claim": "Same-day visits",
+          "score": 15
+        },
+        {
+          "claim": "Second visits made right",
+          "score": 12
+        }
+      ]
+    }
+  }
+}

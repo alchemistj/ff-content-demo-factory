@@ -117,7 +117,7 @@
       "hero": {
         "eyebrow": "Wichita, KS · Weekday Water Heater Calls · Homes and Commercial",
         "h1": "Plumber in Wichita, KS — Brand Plumbing, Inc.",
-        "sub": "The water heater quit and the shower ran cold. Call us on a weekday and we'll tell you on the phone when we can be there. A new water heater can go in the same day or the next morning. Call (316) 942-2306.",
+        "sub": "The water heater quit and the shower ran cold. Two customers got a new water heater the same day or the next morning. Call (316) 942-2306 on a weekday.",
         "primaryCta": {
           "label": "Call (316) 942-2306",
           "action": "call"
@@ -148,7 +148,7 @@
           },
           "body": [
             "It's 6:45 on a weekday. The shower runs cold, there's a puddle at the base of the tank, and the kids need to be out the door by 8. You're holding your phone, wondering if anybody can come today and whether this is a small fix or a whole new tank.",
-            "A lot of calls like this end with a window next week and days of heating pots on the stove. You shouldn't have to wait on a cold house for that."
+            "Hot water shouldn't wait a week, and you shouldn't have to heat pots on the stove."
           ]
         },
         {
@@ -160,14 +160,14 @@
             "brief": "plumbing pool: home-hero-alt"
           },
           "body": [
-            "We don't push a water heater call into next week's schedule. You call on a weekday and tell us what the tank is doing, and we tell you when we can be there.",
+            "You call on a weekday and tell us what the tank is doing.",
             "Then we look, tell you whether it's a repair or a replacement, and put in the new one when it's time. Gas, electric and propane tanks are all work we do."
           ],
           "list": [
-            "Call on a weekday and hear when we can come",
+            "Call on a weekday and tell us what the tank is doing",
             "Repair or replacement, said plainly",
             "Gas, electric and propane water heaters",
-            "A new water heater in the same day or the next morning"
+            "Recent customers have had a new tank the same day or the next morning"
           ],
           "listStyle": "checks"
         },
@@ -250,7 +250,7 @@
           "items": [
             {
               "q": "Can you come today?",
-              "a": "Call and ask. For a water heater that quit on a weekday, a new one can go in the same day or the next morning, and we'll tell you which when we're on the phone. We do same-day repairs on faucets, disposals, toilets and sinks too."
+              "a": "Call and ask. We do same-day repairs on faucets, disposals, toilets, sinks and water heaters."
             },
             {
               "q": "Will you actually show up?",
@@ -266,7 +266,7 @@
             },
             {
               "q": "What if it leaks again?",
-              "a": "Call the same number and tell us it's the same problem. We'll come look, and we'll explain what we find and how the visit is handled."
+              "a": "Call the same number and tell us it's the same problem."
             },
             {
               "q": "What should I do before you get there?",
@@ -277,7 +277,7 @@
         {
           "type": "callBand",
           "heading": "Call Brand Plumbing",
-          "text": "Call (316) 942-2306 on a weekday and tell us what the water is doing. We'll tell you what we think it is and when we can be there."
+          "text": "Call (316) 942-2306 on a weekday and tell us what the water is doing."
         }
       ]
     },
@@ -290,7 +290,7 @@
       "hero": {
         "eyebrow": "Water heaters, Wichita",
         "h1": "Water Heater Replacement in Wichita, KS — Brand Plumbing, Inc.",
-        "sub": "No hot water, or a tank leaking at the base? Call us on a weekday and we'll tell you when we can be there. We repair and replace gas, electric and propane water heaters. Call (316) 942-2306.",
+        "sub": "No hot water, or a tank leaking at the base? Call us on a weekday and tell us what the tank is doing. We repair and replace gas, electric and propane water heaters. Call (316) 942-2306.",
         "primaryCta": {
           "label": "Call (316) 942-2306",
           "action": "call"
@@ -321,8 +321,8 @@
           },
           "body": [
             "Tell us what the tank is doing: no hot water, lukewarm water, water on the floor, a noise you haven't heard before. Tell us whether it runs on gas, electric or propane, and how old it is if you know.",
-            "We tell you when we can come. A technician looks at the heater and says whether it's a repair or a replacement before anything else happens.",
-            "If it's time for a new one, we install it. A weekday call gets the fastest answer, because our office hours are Monday to Friday, 7:30 a.m. to 4:30 p.m."
+            "A technician looks at the heater and says whether it's a repair or a replacement before anything else happens.",
+            "If it's time for a new one, we install it. Our office hours are Monday to Friday, 7:30 a.m. to 4:30 p.m."
           ]
         },
         {
@@ -402,7 +402,7 @@
           "items": [
             {
               "q": "Can you replace it the same day?",
-              "a": "A new water heater can go in the same day or the next morning, and we'll tell you which when you call. Our office hours are Monday to Friday, 7:30 a.m. to 4:30 p.m."
+              "a": "We do same-day repairs on water heaters. Call (316) 942-2306 and tell us what the tank is doing. Our office hours are Monday to Friday, 7:30 a.m. to 4:30 p.m."
             },
             {
               "q": "How do I know if it's a repair or a replacement?",
@@ -418,14 +418,14 @@
             },
             {
               "q": "What if it quits after 4:30?",
-              "a": "Our office hours end at 4:30 on weekdays. Call anyway and tell us what's happening, or email us at the addresses on our contact page."
+              "a": "Our office hours end at 4:30 on weekdays. Email us at the addresses on our contact page and tell us what's happening."
             }
           ]
         },
         {
           "type": "callBand",
           "heading": "Call Brand Plumbing",
-          "text": "If your water heater isn't working, call (316) 942-2306. Tell us what the tank is doing and we'll tell you what we think and when we can come."
+          "text": "If your water heater isn't working, call (316) 942-2306. Tell us what the tank is doing and we'll tell you what we think."
         }
       ]
     },
@@ -607,7 +607,7 @@
           "heading": "Call Us",
           "body": [
             "(316) 942-2306",
-            "Call first when water is leaking, the water heater has quit or a drain is backing up. Tell us what the water is doing and we'll tell you what we think and when we can come. Our fax is (316) 942-3119."
+            "Call first when water is leaking, the water heater has quit or a drain is backing up. Tell us what the water is doing and we'll tell you what we think. Our fax is (316) 942-3119."
           ]
         },
         {
@@ -648,7 +648,7 @@
         {
           "type": "callBand",
           "heading": "Call Brand Plumbing",
-          "text": "Tell us what the water is doing, and we'll tell you what we think and when we can come."
+          "text": "Tell us what the water is doing, and we'll tell you what we think."
         }
       ]
     }
@@ -658,7 +658,7 @@
     "why": [
       "Every page on your current site carries the same headline: “Brand Plumbing, Inc. Wichita, KS.” No page is built for a water heater or a drain. Someone with a cold shower on a weekday morning searches “water heater replacement Wichita KS” and finds nothing made for it.",
       "Your Google reviews already say what you do well. Kathy B.: “They were so very responsive and able to replace it same day!” Teresa F.: “they were here Friday morning.” Today those words sit on Google, not on your site, and your phone number isn't a tap-to-call link on any page.",
-      "So the demo tells one story everywhere: call on a weekday, hear when we can come, and get hot water back. It opens with plumber in Wichita, KS, and gives water heater replacement and drain cleaning a page each. You list phone and email only, so the contact page leads with both."
+      "So the demo tells one story everywhere: call on a weekday, tell us what the tank is doing, and get the repair or replacement scoped. It opens with plumber in Wichita, KS, and gives water heater replacement and drain cleaning a page each. You list phone and email only, so the contact page leads with both."
     ],
     "cardsHeading": "Be the Plumber People Find on Google",
     "cardsIntro": "Each card is one page of the demo.",
@@ -755,11 +755,11 @@
     },
     "lead": {
       "heading": "Why we led with the water heater call",
-      "text": "The scariest moment for a Wichita homeowner is a cold shower on a weekday morning, with a dead water heater and nobody who can come until next week. Telling people a new one can go in the same day or the next morning answers it. We checked the five top Wichita competitors, and none of them states a water heater time. Your customers describe it, so please tell us if that isn't how you work.",
+      "text": "The scariest moment for a Wichita homeowner is a cold shower on a weekday morning, with a dead water heater and nobody who can come until next week. Two of your customers had a new one the same day or the next morning, and that answers it. We checked the Wichita competitors we could reach, and none states a water heater time. Two reviews carry this, so please tell us if that isn't how you work.",
       "showScores": true,
       "rows": [
         {
-          "claim": "A new water heater the same day or the next morning",
+          "claim": "Two customers got a new water heater the same day or the next morning",
           "score": 20
         },
         {

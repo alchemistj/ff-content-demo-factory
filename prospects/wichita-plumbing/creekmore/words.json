@@ -86,7 +86,7 @@
       "hero": {
         "eyebrow": "Wichita, KS · Third Generation Family Owned · Free Quotes",
         "h1": "Plumber in Wichita, KS — Creekmore Plumbing",
-        "sub": "We're a third generation family plumbing business. Some Wichita families have called us for their parents' houses, then their own, and now their kids'. Tell us what's wrong and we'll tell you the most cost-effective way to fix it. Call (316) 264-1342.",
+        "sub": "We're a third generation family plumbing business. Some Wichita families have called us for their parents' houses, then their own, and now their kids'. Tell us what's wrong and we'll explain it in plain words. Call (316) 264-1342.",
         "primaryCta": {
           "label": "Call (316) 264-1342",
           "action": "call"
@@ -120,13 +120,13 @@
           "type": "split",
           "heading": "Family Plumbers. Honest Fix First.",
           "body": [
-            "Most plumbers you find on a search are strangers. You don't know what they'll say until they're standing in your kitchen, and by then you're already committed.",
-            "We're a third generation family business, and we work the other way around. We find what failed, explain it in plain words, and give you the most cost-effective way to fix it. Then you decide."
+            "When something breaks, you want a name you can call again.",
+            "We're a third generation family business. We find what failed and explain it in plain words. Then you decide. [[confirm: Licensed plumber, license #[XXXX]]]"
           ],
           "list": [
             "A free quote on the work",
             "The problem explained in plain words",
-            "The right-sized fix, not the biggest one",
+            "The choice stays with you",
             "A Wichita office at 440 South Pattie Street"
           ],
           "listStyle": "checks",
@@ -141,8 +141,8 @@
           "type": "prose",
           "heading": "A Plumber Worth Passing Down",
           "body": [
-            "Some jobs are a test. A part is failing, the cheap fix would hold for a while, and the better fix takes more explaining. A plumber who's only passing through takes the cheap one.",
-            "A family business can't. The next call comes from your neighbor, your parents or your grown kids. We'd rather earn those calls one honest job at a time."
+            "Some jobs are a test. A part is failing, the cheap fix would hold for a while, and the better fix takes more explaining.",
+            "The next call comes from your neighbor, your parents or your grown kids. We'd rather earn those calls one honest job at a time."
           ]
         },
         {
@@ -239,7 +239,7 @@
           "type": "prose",
           "heading": "Serving Wichita",
           "body": [
-            "We work in Wichita from our office at 440 South Pattie Street. Our hours are Monday to Friday, 7:30 AM to 4:30 PM.",
+            "We work in Wichita from our office at 440 South Pattie Street. Our hours are Monday to Friday, 7:30 AM to 4:30 PM. [[confirm: Serving [towns] and nearby]]",
             "Call and tell us where you are and what's going on, and we'll tell you what we can do."
           ]
         },
@@ -249,7 +249,7 @@
           "items": [
             {
               "q": "Can you come today?",
-              "a": "Call and ask. Our hours are Monday to Friday, 7:30 AM to 4:30 PM, and we'll tell you on the phone when we can be there. If water is running, shut off the main valve first, then call and tell us where it's coming from."
+              "a": "Call and ask. Our hours are Monday to Friday, 7:30 AM to 4:30 PM. If water is running, shut off the main valve first, then call and tell us where it's coming from."
             },
             {
               "q": "Will you actually show up?",
@@ -257,7 +257,7 @@
             },
             {
               "q": "What's it going to cost, and do I need all of it?",
-              "a": "A quote is free. We tell you what we think is wrong and the most cost-effective way to fix it, and you decide. We don't print prices on a web page, because they depend on your house."
+              "a": "A quote is free. We tell you what we think is wrong and what it takes to fix it, and you decide. We don't print prices on a web page, because they depend on your house."
             },
             {
               "q": "Do I need a whole new water heater?",
@@ -265,7 +265,7 @@
             },
             {
               "q": "What if it leaks again?",
-              "a": "Call us and tell us what happened. We don't print warranty terms on this page, because they depend on the job. Ask what's covered when you get your quote."
+              "a": "Call us and tell us what happened. Ask when you call what, if anything, is covered on your job."
             }
           ]
         },
@@ -367,7 +367,7 @@
           "type": "prose",
           "heading": "Tank-Type or Tankless",
           "body": [
-            "We install both. Which one fits depends on your house, your family and what you want to spend."
+            "We install both. Which one fits depends on your house, your family and what you want to spend. [[confirm: [X]-year warranty on our work]]"
           ],
           "items": [
             {
@@ -677,7 +677,7 @@
     "why": [
       "Your site is two pages, and every service sits in one long column on the homepage. The headline, “Reliable local plumbers you can trust,” doesn't say Wichita or name a service, so Google can't tell what you want to be found for. Water heaters, toilets, water lines and backflow all share it.",
       "Your reviews are your best asset, and your site shows none. “See What Our Customers Are Saying About Creekmore Plumbing!” sits over a blank space. On Google, Richard W. wrote that “it is family owned and has been around Wichita for years.” That belongs on your homepage.",
-      "So the demo tells one story on every page: a third generation family plumber who explains the problem and the most cost-effective fix. It opens with plumber in Wichita, KS, and gives water heater replacement and toilet repair a page each."
+      "So the demo tells one story on every page: a third generation family plumber who explains the problem in plain words. It opens with plumber in Wichita, KS, and gives water heater replacement and toilet repair a page each."
     ],
     "cardsHeading": "Be the Plumber People Find on Google",
     "cardsIntro": "Each card is one page of the demo.",
@@ -774,7 +774,7 @@
     },
     "lead": {
       "heading": "Why we led with the family plumber, honest fix first",
-      "text": "The scariest moment for a Wichita homeowner is a failing water heater or a leak when they don't know a plumber, and right behind it is being sold the biggest fix. A third generation family business that explains the problem and the most cost-effective fix first answers both. We checked the top Wichita plumbing competitors, and none of them says third generation. Your site says it, so please tell us if we have the family story right.",
+      "text": "The scariest moment for a Wichita homeowner is a failing water heater or a leak when they don't know a plumber, and right behind it is being sold the biggest fix. A third generation family business that explains the problem in plain words answers both. We checked the Wichita plumbing competitors we could read, and none says third generation. Your site says it, so please tell us if we have the family story right.",
       "showScores": true,
       "rows": [
         {
@@ -782,7 +782,7 @@
           "score": 16
         },
         {
-          "claim": "Explains the problem and the most cost-effective fix",
+          "claim": "Explains the problem in plain words",
           "score": 12
         },
         {
@@ -790,6 +790,25 @@
           "score": 12
         }
       ]
+    },
+    "unverified": {
+      "heading": "What we couldn't verify, and why it matters",
+      "intro": "We marked these on the demo as yellow \"to confirm\" tags instead of guessing, because we won't put a claim on your site we can't back up. Your current site has no license number, no warranty terms and no list of towns.",
+      "items": [
+        {
+          "fact": "License number",
+          "why": "A family handing you their parents' house, then their own, wants to be able to look the license up before the plumber comes through the door."
+        },
+        {
+          "fact": "Warranty on the work",
+          "why": "Your site states no warranty, and someone paying for a water heater will ask what happens if it fails."
+        },
+        {
+          "fact": "Service area towns",
+          "why": "\"Wichita\" alone doesn't tell a family in the next town over whether you'll come."
+        }
+      ],
+      "closing": "This is what our onboarding call nails down. Fifteen minutes, and every tag becomes a real, true line."
     }
   }
 }
