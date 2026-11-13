@@ -159,6 +159,18 @@
       "pulledAt": "2026-11-09T12:44:09.449Z"
     },
     {
+      "slug": "creekmore-plumbing-wichita",
+      "name": "Creekmore Plumbing-Heating Inc",
+      "placeId": "ChIJD3pHq5HjuocRiso8yH-QrS0",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 56,
+        "withText": 47,
+        "ratingOnly": 9
+      },
+      "pulledAt": "2026-11-13T20:58:23.850Z"
+    },
+    {
       "slug": "crossroads-windows",
       "name": "Crossroads Windows",
       "placeId": "ChIJQ8YPLqy8G0IRawHWQFHeWoY",
