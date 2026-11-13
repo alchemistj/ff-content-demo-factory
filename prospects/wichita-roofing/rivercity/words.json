@@ -34,7 +34,7 @@
     {
       "name": "Roof Replacement",
       "route": "/roof-replacement-wichita-ks/",
-      "blurb": "The old roof off to the decking and a new one on, in composition shingles, metal or tile, priced on a detailed estimate after we've seen it."
+      "blurb": "Our featured job: the old roof off to the decking and a new one on, in composition shingles, metal or tile. We confirm you need one first, then write a detailed estimate."
     },
     {
       "name": "Roof Repair",
@@ -80,9 +80,9 @@
       "keyword": "roofing company Wichita KS",
       "seo": null,
       "hero": {
-        "eyebrow": "Wichita, KS · Local, Family-Owned",
+        "eyebrow": "3750 N Topeka St, Wichita · Local, Family-Owned",
         "h1": "Roofing Company in Wichita, KS — River City Roofing",
-        "sub": "River City Roofing is a local, family-owned roofing company, and we find the real problem before anyone talks about replacing anything. Anthony gets into the attic and onto the roof first, and after the crew leaves, he usually comes back to check the job. Call for a free quote.",
+        "sub": "When a ceiling leaks, we find where the water is really coming in before anyone talks about replacing a roof. Anthony gets into the attic and onto the roof first, and he's the one who came back after the crew left to check the work. Call for a free quote.",
         "primaryCta": {
           "label": "Call (316) 295-2159",
           "action": "call"
@@ -104,22 +104,27 @@
           "name": "Theresa E."
         },
         {
+          "type": "prose",
+          "heading": "The Stain Is Here. The Leak Is Somewhere Else.",
+          "body": [
+            "A week of rain, and the brown ring on the ceiling is bigger than it was Tuesday. The roof came with the house, so you wonder if the whole thing is going. You dread two calls: the roofer who says \"whole new roof, sign today,\" and the one who never calls back.",
+            "You just want someone to get up there and tell you the truth. Water doesn't drip where it gets in. It runs along the decking first, so the stain can sit feet from the real opening, and nobody can read that from the driveway."
+          ]
+        },
+        {
           "type": "split",
-          "heading": "Find the Real Problem First.",
+          "heading": "Find It First. Check It After.",
           "body": [
             "Plenty of roofers look at a ceiling stain and quote a new roof. It's the bigger ticket, and nobody has to crawl through a hot attic to sell it.",
             "If the water was really coming in at a chimney or a pipe boot, you've paid for a roof and you still have the leak.",
-            "We find the real problem before anyone talks about replacing anything.",
-            "Anthony gets into the attic and up on the roof until he knows where the water is coming from. Sometimes it isn't the roof at all, and then you hear that too. The price is for your roof, not for one nobody looked at.",
-            "When the work is done, the crew walks the yard for anything that came off the roof. Then Anthony usually comes back to check the job, so the person who looked at your roof first is the one who signs off on it."
+            "We go in order. Anthony gets into the attic and up on the roof until he knows where the water is coming from. Sometimes it isn't the roof at all, and then you hear that too.",
+            "Then you get a detailed estimate for what's really wrong, so the price is for your roof and not for one nobody looked at."
           ],
           "list": [
-            "Local, family-owned, based at 3750 N Topeka St in Wichita",
-            "Free quote: call (316) 295-2159",
-            "Roofing, gutters, siding, windows and paint from one local company",
+            "The attic and the roof checked before a price is written",
+            "The real source of the water found, even when it isn't the roof",
             "A detailed estimate for what the roof actually needs",
-            "Crew walks the yard for nails and scraps when the job is done",
-            "Anthony comes back to check the job after the crew leaves"
+            "A check-in after the crew leaves, as customers have seen"
           ],
           "listStyle": "checks",
           "image": {
@@ -129,8 +134,16 @@
           }
         },
         {
+          "type": "prose",
+          "heading": "Not Left Alone With Your New Roof",
+          "body": [
+            "A new roof is a big purchase, and the quiet after the crew drives away is when people start to wonder. Did they get it all? Who do I call if something's off?",
+            "We're local and family owned, at 3750 N Topeka St in Wichita. Here's what Kamden B. saw after the crew finished."
+          ]
+        },
+        {
           "type": "review",
-          "quote": "River City did an amazing job putting a new roof on my home. After they finished, they walked around to make sure if anything fell off the roof that everything was picked up. Anthony showed up shortly after they left to make sure I was pleased with the roof. Anthony handled talking to my insurance agent and getting forms filed out and returned to them. We will use them again.",
+          "quote": "River City did an amazing job putting a new roof on my home. After they finished, they walked around to make sure if anything fell off the roof that everything was picked up. Anthony showed up shortly after they left to make sure I was pleased with the roof. … We will use them again.",
           "name": "Kamden B."
         },
         {
@@ -155,14 +168,6 @@
             {
               "title": "Curling shingles and grit in the gutters",
               "text": "Sun, wind and hail have worn the granules off, and the shingles underneath are giving out across the slope. Patches only buy a season at that point, so we write a detailed estimate for a new roof in composition shingles, metal or tile."
-            },
-            {
-              "title": "Bare spots or dents after hail",
-              "text": "Hail bruises shingles and knocks the granules loose, and those spots often start leaking a year later. After a bad storm it's worth having someone on the roof even when nothing looks wrong from the driveway."
-            },
-            {
-              "title": "Water spilling over the gutters",
-              "text": "Clogged or sagging gutters push water back under the roof edge and into the fascia boards. We repair gutters and install gutter guards, and we'll tell you if the roof edge behind them has started to rot."
             }
           ]
         },
@@ -176,7 +181,8 @@
           "heading": "Roof Replacement",
           "body": [
             "Asphalt shingles wear out from the sun first, then from Kansas wind and hail. Once the granules are gone, every repair only buys a season or two.",
-            "We install composition shingles, metal and tile roofs. The detailed estimate comes after we've seen your roof, so it's built for your house and not for an average one."
+            "When a roof is at the end of its life, replacement is the job we put first. The old roof comes off to the decking, and a new one goes on in composition shingles, metal or tile.",
+            "We confirm you need one before we quote. The detailed estimate comes after we've seen your roof, so it's built for your house and not for an average one."
           ],
           "link": {
             "label": "See roof replacement →",
@@ -201,66 +207,32 @@
           "intro": "The roof edge, the gutters and the siding all meet, and water that gets past one shows up at the next. So one call covers the roof and the rest of the outside of the house."
         },
         {
-          "type": "steps",
-          "heading": "How a Job Goes",
-          "items": [
-            {
-              "title": "You call for a free quote.",
-              "text": "Tell us what you're seeing: a stain, missing shingles, a storm that just came through or a roof that's getting old."
-            },
-            {
-              "title": "We look.",
-              "text": "Someone from River City gets up on the roof, and into the attic when there's a leak, before any price is written."
-            },
-            {
-              "title": "You get a detailed estimate.",
-              "text": "It covers what the roof actually needs, whether that's a repair or a new roof."
-            },
-            {
-              "title": "The crew does the work.",
-              "text": "When the crew says they'll be there, they're there."
-            },
-            {
-              "title": "Cleanup and final inspection.",
-              "text": "The crew walks the property for debris, and we come back to check the job with you."
-            }
-          ]
-        },
-        {
           "type": "faq",
           "heading": "Questions Before You Call",
           "items": [
+            {
+              "q": "Will my insurance pay for it?",
+              "a": "It depends on your policy, your deductible and what caused the damage. Wind and hail are the usual claims. Check your policy for a separate wind and hail deductible, take dated photos, and keep receipts for temporary fixes. Anthony has talked to an insurance agent and filled out forms for a customer. We can't promise what your insurer will do."
+            },
+            {
+              "q": "Are you a local company?",
+              "a": "Yes. We're local and family owned, at 3750 N Topeka St in Wichita, and customers deal with Anthony. Call (316) 295-2159 or stop by during office hours."
+            },
+            {
+              "q": "How do I know if I need a repair or a new roof?",
+              "a": "We find out first. Anthony goes into the attic and up on the roof before any price is written. As a rule, one failed spot, like a flashing or a vent boot, is a repair. Curling, bare patches and granules in the gutters across the whole slope means the roof is at the end of its life. If you've already repaired it more than once, a new roof usually costs less than the third repair and the water damage between them."
+            },
+            {
+              "q": "Who will I deal with?",
+              "a": "Usually Anthony, the name you'll see in most of our reviews. He looks at the roof and answers calls and texts. You don't get handed from a salesperson to a stranger."
+            },
             {
               "q": "Is the quote really free?",
               "a": "Yes. Call (316) 295-2159 and tell us what the roof is doing. We set a time to look at it, and the detailed estimate you get afterward costs you nothing."
             },
             {
-              "q": "Who will I deal with?",
-              "a": "Usually Anthony, the name you'll see in most of our reviews. He looks at the roof, answers questions while the work is going on, and often comes back after the crew leaves to check the job. You don't get handed from a salesperson to a stranger."
-            },
-            {
-              "q": "How do I know if I need a repair or a new roof?",
-              "a": "Age, spread and cause decide it. A roof with one failed spot, like a flashing or a vent boot, is a repair. A roof with curling, bare patches and granules in the gutters across the whole slope is at the end of its life. If you've already repaired it more than once, a new roof usually costs less than the third repair and the water damage between them."
-            },
-            {
-              "q": "Can I check my roof myself?",
-              "a": "From the ground, yes. Look for missing or lifted shingles, granules collecting at the downspouts, and stains or damp insulation in the attic with a flashlight after a rain. Don't climb a wet or steep roof; call and we'll go up."
-            },
-            {
-              "q": "How long does a roof last?",
-              "a": "Asphalt shingles generally give you 20 to 30 years, less on a hot, south-facing slope or after hail. Metal and tile run longer. Good attic ventilation and clean gutters add years to any of them."
-            },
-            {
               "q": "What decides the price of a new roof?",
               "a": "Size and pitch come first, then the material you pick and how much old decking needs replacing once the old roof is off. Extra layers, chimneys, skylights and valleys add labor. That's why we write a detailed estimate after we've seen the roof, rather than quoting a per-square-foot number over the phone."
-            },
-            {
-              "q": "How long does a replacement take?",
-              "a": "A typical house with asphalt shingles is usually a one-to-three-day job for a crew. A big, steep or cut-up roof, or one with rotted decking, takes longer, and rain can push the start date."
-            },
-            {
-              "q": "Will my insurance pay for it?",
-              "a": "It depends on your policy, your deductible and what caused the damage. Wind and hail are the usual claims. Check your policy for a separate wind and hail deductible, take dated photos of the damage, and keep receipts for any temporary fixes. We can't promise what your insurer will do."
             },
             {
               "q": "Do you work outside Wichita?",
@@ -279,7 +251,7 @@
         {
           "type": "callBand",
           "heading": "Get Someone Up on Your Roof",
-          "text": "Call (316) 295-2159 for a free quote, Monday to Friday, 8:00 AM to 4:30 PM. Anthony will look at your roof, you'll get a detailed estimate, and after the work he comes back to make sure it's right."
+          "text": "Call (316) 295-2159 for a free quote. Anthony will look at your roof and you'll get a detailed estimate, with a check-in after the work to make sure it's right."
         }
       ]
     },
@@ -372,7 +344,7 @@
           "body": [
             "Tearing a roof off throws nails, shingle scraps and grit everywhere. How a crew handles that says a lot about the crew.",
             "When the last shingle is on, the crew walks the yard, the beds and the driveway and picks up what came off the roof. That walk is part of the job, not an extra.",
-            "Then we come back to check in with you. A roof is a big purchase, and we'd rather hear your question now than have you wondering about it later."
+            "Anthony then comes back to check on the roof. A roof is a big purchase, and we'd rather hear your question now than have you wondering about it later."
           ]
         },
         {
@@ -713,7 +685,7 @@
           "A full page for roof replacement in Wichita, KS: materials, the detailed estimate and the steps of the job.",
           "The cleanup and the visit afterward, with the review that proves them."
         ],
-        "alsoAdd": "Pages planned from what Google actually shows for each search, so every page targets something people really look for."
+        "alsoAdd": "Pages for storm damage and insurance paperwork, plus gutters and siding, each planned from what Google actually shows for that search."
       },
       {
         "route": "/roof-repair-wichita-ks/",
@@ -786,6 +758,25 @@
         "Your site and Google list (316) 295-2159, while your BuildZoom and Houzz listings show (316) 312-8657, so which number should every listing use?",
         "Your About page says since 2011, Angi says 13 years and a Houzz profile for Honey Do Homes says 2003, so which start year should every listing use?",
         "Your site footer says River City Roofing, LLC, while your logo and BuildZoom say Honey Do Homes, so which name should Google and AI tools lead with?"
+      ]
+    },
+    "lead": {
+      "heading": "Why we led with finding the leak first and checking after",
+      "text": "When a ceiling leaks, the scary part is not knowing whether you need a repair or a whole roof. Most roofers quote from the driveway. Your customers describe Anthony in the attic finding the real source and coming back after the job, and none of the top five Wichita roofers states both.",
+      "showScores": false,
+      "rows": [
+        {
+          "claim": "Finds the real cause before anyone talks replacement, and comes back after the crew leaves",
+          "score": 20
+        },
+        {
+          "claim": "Anthony comes back after the job to make sure you're pleased",
+          "score": 16
+        },
+        {
+          "claim": "One named person answers calls and texts, and the crew shows up when said",
+          "score": 12
+        }
       ]
     }
   },
