@@ -95,8 +95,8 @@
         },
         "image": {
           "slot": "home-hero",
-          "alt": "Wichita house with a new dark gray shingle roof under a clear sky",
-          "brief": "two-story house with a freshly installed dark gray architectural shingle roof, house on the right half of the frame, lawn and driveway leading off to the left, calm clear sky behind the text side, no readable text, no people"
+          "alt": "Close-up of impact-resistant architectural shingles",
+          "brief": "roofing pool: class4-shingle-closeup"
         }
       },
       "sections": [
@@ -128,8 +128,8 @@
           ],
           "image": {
             "slot": "home-owner",
-            "alt": "Ladder against the eave of a brick house with a partly new roof",
-            "brief": "ladder resting against the eave of a one-story brick house with half the roof newly shingled, house on the right, side yard on the left, soft overcast sky behind the text side, no readable text, no people"
+            "alt": "Close-up of the ridge line on a gray shingle roof",
+            "brief": "roofing pool: sec-ridge-cap"
           }
         },
         {
