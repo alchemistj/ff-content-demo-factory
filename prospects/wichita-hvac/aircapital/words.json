@@ -134,7 +134,7 @@
           "heading": "Same Day. Explained First.",
           "body": [
             "Most companies book you out for days, then show up and hand you a number. You're left guessing whether it's one small part or a whole new system.",
-            "We do it in a different order. We're out the same day, and nothing starts until you've heard the cause and every option in plain words."
+            "We do it in a different order. We book you the same day or the next, and nothing starts until you've heard the cause and every option in plain words."
           ],
           "image": {
             "slot": "sameday-gauges",
@@ -153,13 +153,12 @@
           "type": "prose",
           "heading": "No Games, Just Honest Work",
           "body": [
-            "Nobody wants to spend a hot afternoon wondering if they're being played. You've heard the stories: the tech who pushes a whole new unit, the runaround of \"let me talk to my manager.\"",
             "Our job is to leave you sure of what was wrong and what you paid for. Here's how that went on the hottest day of the Kansas summer."
           ]
         },
         {
           "type": "review",
-          "quote": "My AC died on the hottest day of the Kansas summer, and Air Capital Heating and Air showed up like the cavalry. … Instead, they showed up SAME DAY. The tech was friendly, explained exactly what was wrong (RIP capacitor, you served us well), didn’t try to upsell me on a whole new unit like some places do, and had cold air blasting through my vents faster than I could finish my iced coffee. … Fair pricing. No games. No “let me talk to my manager” nonsense. Just honest work from people who clearly know HVAC inside and out.",
+          "quote": "My AC died on the hottest day of the Kansas summer, and Air Capital Heating and Air showed up like the cavalry. … Instead, they showed up SAME DAY. The tech was friendly, explained exactly what was wrong (RIP capacitor, you served us well), didn’t try to upsell me on a whole new unit like some places do, and had cold air blasting through my vents faster than I could finish my iced coffee.",
           "name": "Carlos F."
         },
         {
@@ -181,7 +180,7 @@
           "items": [
             {
               "title": "The house won't get below 80",
-              "text": "The vents blow warm, and the cause is often a failed part such as a weak capacitor, a worn fan motor or low refrigerant from a leak. We find which one and fix that part instead of guessing at the whole system."
+              "text": "The vents blow warm. A weak capacitor, a worn fan motor or a refrigerant leak is usually the cause, and we fix that part."
             },
             {
               "title": "The outdoor unit hums and the fan never spins",
@@ -240,8 +239,8 @@
               "a": "Not if one part has failed. A young system with one failed part is a repair, and we'll tell you so. An older system that keeps breaking is worth pricing a new one. We lay out both, and you choose."
             },
             {
-              "q": "Do I pay anything before I know what failed?",
-              "a": "No. The estimate is free. The technician finds the cause and explains it first, so you hear the options before you agree to any work."
+              "q": "Is the estimate free?",
+              "a": "Yes, we offer free estimates. The technician finds the cause and explains it first, so you hear the options before you agree to any work."
             },
             {
               "q": "What does a repair cost?",
@@ -273,7 +272,7 @@
       "hero": {
         "eyebrow": "Air conditioning, Wichita",
         "h1": "AC Repair in Wichita, KS — Air Capital Heating and Air",
-        "sub": "When your AC stops cooling in a Wichita summer, every hour in the heat counts. We book same-day and next-day appointments, find the failed part, and explain it and your options before we fix it. Call for a free estimate.",
+        "sub": "When your AC stops cooling in a Wichita summer, every hour in the heat counts. We book same-day and next-day appointments, find the failed part, and explain it and your options before we fix it.",
         "primaryCta": {
           "label": "Call (316) 990-1911",
           "action": "call"
@@ -299,7 +298,7 @@
           "heading": "What Happens When You Call",
           "body": [
             "You tell us what the system is doing and which town you're in, and we book you the same day or the next. Emergency calls are available.",
-            "The technician checks the system, finds the failed part and explains what's wrong before anything gets fixed. The estimate is free, so you know the cause before you pay for anything.",
+            "The technician checks the system, finds the failed part and explains what's wrong before anything gets fixed. The estimate is free.",
             "Then you decide. If a repair makes sense, we do it. If it doesn't, we say so and talk through replacement."
           ],
           "image": {
@@ -425,7 +424,7 @@
       "hero": {
         "eyebrow": "Air conditioning, Wichita",
         "h1": "AC Replacement in Wichita, KS — Air Capital Heating and Air",
-        "sub": "A new air conditioner is a big decision, and you shouldn't have to make it in a hot house with a stranger pushing you. We tell you whether your system is worth another repair, and if it isn't, we install a new one. Call for a free estimate.",
+        "sub": "A new air conditioner is a big decision, and you shouldn't have to make it in a hot house with a stranger pushing you. We tell you whether your system is worth another repair, and if it isn't, we install a new one.",
         "primaryCta": {
           "label": "Call (316) 990-1911",
           "action": "call"
@@ -477,12 +476,12 @@
           "body": [
             "We install energy-efficient air conditioning systems for homes, matched to your house and your needs. The goal is a system that is the right size for your home, not the biggest one on the truck.",
             "Size matters. A system that's too large cools fast, shuts off and leaves the house clammy. One that's too small runs nonstop and can't keep up on a 100-degree day.",
-            "If your furnace is also near the end of its life, we install and replace furnaces too. Replacing both together means the two pieces of equipment are matched."
+            "Financing is available through Enhancify. Ask about it when you call, and we'll tell you how it applies to your replacement. The estimate comes first, so you can compare repair and replacement before you decide anything."
           ],
           "image": {
             "slot": "thermostat",
-            "alt": "Hand adjusting a wall thermostat",
-            "brief": "HVAC pool photo: Hand adjusting a wall thermostat"
+            "alt": "Outdoor air conditioner beside a brick Wichita home",
+            "brief": "HVAC pool: ac-hero (reused from Integrity; replaces the blank-screen thermostat)"
           }
         },
         {
@@ -554,7 +553,7 @@
       "hero": {
         "eyebrow": "Contact",
         "h1": "Contact Air Capital Heating and Air",
-        "sub": "Tell us what your system is doing and we'll book a visit, same day or next. The estimate is free. Call us, or send a request below.",
+        "sub": "Tell us what your system is doing and we'll book a visit, same day or next. The estimate is free. Call or text us.",
         "primaryCta": {
           "label": "Call (316) 990-1911",
           "action": "call"
@@ -586,7 +585,7 @@
           "type": "prose",
           "heading": "Send a Message",
           "body": [
-            "Not ready to call? Send a request with your name, phone number and a few words about what's wrong. Include the town you're in."
+            "Not ready to call? Text us your name, a few words about what's wrong and the town you're in."
           ]
         },
         {
@@ -620,7 +619,7 @@
     }
   ],
   "footer": {
-    "about": "Air Capital Heating and Air repairs, replaces and maintains heating and cooling systems for homes and light commercial buildings in Wichita, Kansas, and the towns around it.",
+    "about": "Air Capital Heating and Air repairs and replaces heating and cooling systems for homes and light commercial buildings in Wichita, Kansas.",
     "why": [
       "Free estimates",
       "Same-day and next-day appointments",

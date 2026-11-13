@@ -84,7 +84,10 @@
       "route": "/home/",
       "navLabel": "Home",
       "keyword": "hvac company wichita ks",
-      "seo": null,
+      "seo": {
+        "title": "HVAC Company in Wichita, KS | Cook's Heating and Cooling",
+        "description": "Cook's Heating and Cooling in Wichita, KS comes out fast, finds what failed and tells you straight whether it's a repair or a replacement. All brands serviced."
+      },
       "hero": {
         "eyebrow": "Wichita, KS · All Brands Serviced · Emergency Service Until 10 PM",
         "h1": "HVAC Company in Wichita, KS — Cook's Heating and Cooling",
@@ -147,7 +150,7 @@
         },
         {
           "type": "review",
-          "quote": "We contacted Cooks because we were told by a different HVAC company that we needed a return installed and duct work repaired in our crawl space. … He also found that we DO have a return hooked up already and that the other company was lying to us. He also took the time to crawl in our crawl space and found our duct work isn’t damaged. Basically they didn’t charge for doing all of this …",
+          "quote": "We contacted Cooks because we were told by a different HVAC company that we needed a return installed and duct work repaired in our crawl space. … He also found that we DO have a return hooked up already and that the other company was lying to us. … Basically they didn’t charge for doing all of this …",
           "name": "Matthew L."
         },
         {
@@ -169,7 +172,7 @@
           "items": [
             {
               "title": "The house won't get below 80",
-              "text": "Dirty coils make a unit work harder for less cooling, and a refrigerant leak leaves it running without cooling at all. We run leak detection and fix the leak instead of just topping off the refrigerant."
+              "text": "Dirty coils make a unit work harder for less cooling, and a refrigerant leak leaves it running without cooling at all. We run leak detection."
             },
             {
               "title": "The outdoor unit hums and never starts",
@@ -226,7 +229,7 @@
           "type": "split",
           "heading": "Dry Air, Dust and Stuffy Rooms",
           "body": [
-            "A closed house carries dust, pet dander and whatever your filter misses, and the system moves it through every room several times an hour. In winter the heat dries the air out, and you get static shocks and cracked lips.",
+            "A closed house carries dust and pet dander, and the system moves it through every room. In winter the heat dries the air out, and you get static shocks and cracked lips.",
             "We install filters in a range of sizes. Whole-system filtration goes on any existing system and removes up to 90% of air contaminants, and a humidifier on the furnace puts the moisture back."
           ],
           "image": {
@@ -327,15 +330,15 @@
           "heading": "What Happens When You Call About a New System",
           "body": [
             "You tell us what you have and what it's doing. We start from a diagnosis, not a new system, because a failed ignitor or a bad capacitor is a repair, not a replacement.",
-            "If the system is finished, we lay out the repair and the replacement side by side, and the decision is yours. Already been told you need a whole new system? Ask that company to write down what failed."
+            "If the system is finished, we show you the repair and the replacement, and the decision is yours."
           ]
         },
         {
           "type": "prose",
           "heading": "Repair or Replace",
           "body": [
-            "Here's a rule you can check yourself. Furnaces commonly run 15 to 20 years and air conditioners 10 to 15. If yours is near the end of that range and a single repair costs about half of what a new unit would, price the replacement.",
-            "If the unit is well inside that range and the problem is one part, repair it. We'll tell you which one you're looking at."
+            "Here's a rule you can check yourself. A failed ignitor or a bad capacitor is a repair. Repairs that keep stacking up on an old system are the time to price the replacement.",
+            "If the problem is one part, repair it. We'll tell you which one you're looking at."
           ]
         },
         {
@@ -371,7 +374,8 @@
           "body": [
             "For heat, we install furnaces, unit heaters and electric air handlers. For cooling, we install new air conditioners. We offer a variety of systems and equipment to fit your budget.",
             "Humidification and filtration go in with them. Whole-system filtration adds to an existing system and removes up to 90% of air contaminants, and a humidifier on the furnace gives moisture back to dry winter air.",
-            "We work on homes and businesses, and we handle mechanical system design for both."
+            "We work on homes and businesses, and we handle mechanical system design for both.",
+            "Our service department is equipped to service and maintain all brands, so the system you have now doesn't need to have come from us. Call (316) 945-2665 and describe what you have, and we'll talk through what fits your house."
           ]
         },
         {
@@ -383,8 +387,7 @@
           "type": "prose",
           "heading": "After It's Installed",
           "body": [
-            "We service the systems we install, so the work we put in is the work we see again.",
-            "Our Premium plan covers two servicings a year, priority emergency service within 24 hours and 20% off parts and labor. Emergency service runs from 5 PM to 10 PM."
+            "Our Premium plan covers two servicings a year and priority emergency service, which runs from 5 PM to 10 PM. The details are on the maintenance page. Joshua M., who wired new houses around Wichita, wrote that our installation guys work hard to make everything right."
           ],
           "link": {
             "label": "See HVAC maintenance plans in Wichita →",
@@ -400,8 +403,8 @@
               "a": "Look at the pattern. If repairs are frequent, the unit runs constantly or one room never evens out, a replacement is worth pricing. A diagnosis tells you what has actually failed, and we'll tell you whether repairing it is worth it."
             },
             {
-              "q": "How long does a new system last?",
-              "a": "Furnaces commonly run 15 to 20 years and air conditioners 10 to 15, depending on how hard they work and how often someone services them."
+              "q": "Is a new system worth servicing?",
+              "a": "A system that gets looked at before it fails tends to last. Our maintenance plans page covers how servicing works."
             },
             {
               "q": "Can you replace heating and cooling together?",
@@ -440,7 +443,7 @@
       "hero": {
         "eyebrow": "Maintenance plans in Wichita",
         "h1": "HVAC Maintenance Plans in Wichita, KS — Cook's Heating and Cooling",
-        "sub": "You call, we look at your system, and you hear what it needs and what it doesn't. Our Premium plan has us out twice a year to catch small problems while they're cheap, with priority emergency service within 24 hours if it quits in between. Call (316) 945-2665 to start one.",
+        "sub": "You call, we look at your system, and you hear what it needs. Our Premium plan has us out twice a year, with priority emergency service within 24 hours. Call (316) 945-2665 to start one.",
         "primaryCta": {
           "label": "Call (316) 945-2665",
           "action": "call"
@@ -451,14 +454,14 @@
         },
         "image": {
           "slot": "maint-hero",
-          "alt": "Wall thermostat on a living room wall",
-          "brief": "HVAC pool r2: detail-thermostat"
+          "alt": "Outdoor air conditioner beside a brick Wichita home",
+          "brief": "HVAC pool: ac-hero (reused from Integrity; replaces the blank-screen thermostat)"
         }
       },
       "sections": [
         {
           "type": "review",
-          "quote": "I called Monday for an appointment, and Friday was the earliest they had so I took it. They called today (Wednesday) with a cancellation, so they told me 12 to 3:00. Technician Ricky got here early at 11:45, checked out the system, found a wiring issue that was preventing it from running, and had my heater running in 20 minutes. He even noticed the housing was labeled with the wrong size air filter and replaced that.",
+          "quote": "I called Monday for an appointment, and Friday was the earliest they had so I took it. … Technician Ricky got here early at 11:45, checked out the system, found a wiring issue that was preventing it from running, and had my heater running in 20 minutes. He even noticed the housing was labeled with the wrong size air filter and replaced that.",
           "name": "Ted H."
         },
         {
@@ -467,7 +470,7 @@
           "body": [
             "You tell us what system you have and whether it's a home or a business. We set up the first visit, and you pick how long to sign up for.",
             "You don't need to have bought your system from us. We service all brands, so a plan can start on the equipment you have now.",
-            "At each servicing a technician looks the system over and tells you what he finds, including what doesn't need doing. We want the system you have to keep working."
+            "At each servicing a technician looks the system over and tells you what he finds. We want the system you have to keep working."
           ]
         },
         {
@@ -523,7 +526,7 @@
           "heading": "What a Servicing Catches",
           "body": [
             "A filter that's the wrong size or clogged makes the blower strain and chokes airflow. A loose wire or a worn ignitor holds on until the first hard freeze and then doesn't.",
-            "Careful servicing is also how a system gets old. Ted H.'s technician found a wiring fault that kept the heater from running and noticed the housing was labeled for the wrong size filter, and he fixed both on the spot."
+            "Careful servicing is how a system gets old and keeps working. Ted H.'s technician found a wiring fault that kept the heater from running, and fixed it on the spot."
           ],
           "image": {
             "slot": "ac-repair-hero",
@@ -540,7 +543,7 @@
           "type": "prose",
           "heading": "Plan or New System?",
           "body": [
-            "A plan fits a system that still has years in it, and it keeps repair the sensible answer for longer. Furnaces commonly run 15 to 20 years and air conditioners 10 to 15, so that's the range to check yours against.",
+            "A plan fits a system that's still running well, and it keeps repair the sensible answer for longer. Our Premium plan is built for that, with two servicings a year.",
             "If yours is near the end and the repairs are piling up, price a replacement first. If it's newly installed, the care starts from the first season.",
             "Either way, you'll hear what we see. If a repair is still worth it, we'll say so, and if it isn't, you'll hear that from us too."
           ],
