@@ -1,0 +1,884 @@
+{
+  "schema": "words-package/v1",
+  "business": {
+    "name": "ICT Roofing & Exteriors",
+    "slug": "ict-roofing",
+    "owners": [
+      "Juan"
+    ],
+    "city": "Wichita",
+    "state": "KS",
+    "companyType": "Roofing Company",
+    "phones": [
+      {
+        "label": "Main",
+        "display": "(316) 796-6722",
+        "tel": "+13167966722"
+      },
+      {
+        "label": "Project Manager (Arturo)",
+        "display": "(316) 807-8848",
+        "tel": "+13168078848"
+      }
+    ],
+    "email": "info@ict-roofing.com",
+    "hours": null,
+    "address": "3500 N Rock Rd, Bldg. 1800, Wichita, KS 67226",
+    "serviceArea": {
+      "summary": "Wichita, Kansas",
+      "towns": [
+        "Wichita"
+      ]
+    }
+  },
+  "trustBar": [
+    "Free Roof Inspections",
+    "We Meet Your Adjuster",
+    "Local Wichita Company",
+    "Roof and Gutters in One Job"
+  ],
+  "services": [
+    {
+      "name": "Roof Replacement",
+      "route": "/roof-replacement-wichita-ks/",
+      "blurb": "Tear-off, a look at the deck, a new roof and a magnetic nail sweep. Plenty of ours go on in a single day."
+    },
+    {
+      "name": "Roof Repair",
+      "route": "/roof-repair-wichita-ks/",
+      "blurb": "Wind-blown shingles replaced, and leaks traced to the flashing, pipe boot or valley that's letting water in."
+    },
+    {
+      "name": "Free Roof Inspections",
+      "route": null,
+      "blurb": "We get on the roof or put a drone over it, photograph the damage and show you. It costs you nothing."
+    },
+    {
+      "name": "Hail and Storm Damage Insurance Claims",
+      "route": null,
+      "blurb": "We document the damage, meet your adjuster, and push back on partial or denied claims."
+    },
+    {
+      "name": "Commercial Roofing",
+      "route": null,
+      "blurb": "Maintenance, repair and replacement on commercial buildings as well as homes."
+    },
+    {
+      "name": "Shake, Metal and Composite Roofs",
+      "route": null,
+      "blurb": "Wood shake, metal, CeDUR composite shake and Presidential Shake shingles. We work with all roofing systems and brands."
+    },
+    {
+      "name": "Gutters",
+      "route": null,
+      "blurb": "Hail-dented gutters replaced in the same job as your roof, so one claim and one crew cover both."
+    },
+    {
+      "name": "Siding",
+      "route": null,
+      "blurb": "Siding repaired along with your roof and gutters, or as a project of its own."
+    }
+  ],
+  "pages": [
+    {
+      "role": "home",
+      "route": "/home/",
+      "navLabel": "Home",
+      "keyword": "roofing company Wichita KS",
+      "seo": {
+        "title": "Roofing Company in Wichita, KS | ICT Roofing & Exteriors"
+      },
+      "hero": {
+        "eyebrow": "Wichita, KS · Locally Owned · Free Roof Inspections",
+        "h1": "Roofing Company in Wichita, KS — ICT Roofing & Exteriors",
+        "sub": "I'm Juan, founder of ICT Roofing & Exteriors. When the insurance offer comes back short, we stay in it with you: the photos, the paperwork and the adjuster. The inspection is free. Call (316) 796-6722 and we'll get on your roof.",
+        "primaryCta": {
+          "label": "Call (316) 796-6722",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Get a Free Inspection",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "home-hero",
+          "alt": "Wichita ranch house with a new dark asphalt shingle roof under a clear sky",
+          "brief": "ranch-style house with a freshly installed dark shingle roof, house on the right half of the frame, front lawn leading off to the left, calm clear sky behind the text side, no readable text, no people"
+        }
+      },
+      "sections": [
+        {
+          "type": "review",
+          "quote": "I met Juan the morning after a severe hailstorm on 9-3-25. He offered to inspect my roof with a drone. It showed severe hail damage. He pointed out that my gutters were damaged as well. ICT roofing and exteriors replaced my roof & gutters. … Juan also managed my claim with State Farm.",
+          "name": "Carl W."
+        },
+        {
+          "type": "split",
+          "heading": "The Letter Covers Two Slopes",
+          "body": [
+            "The hail came through in the afternoon. By morning, half your street had roofer signs in the yard and a man in a company polo had left a card. You don't know who else to call.",
+            "So you filed. Then the letter comes, and it covers a slope or two. The rest of your roof, it says, is \"repairable.\"",
+            "You don't know what the adjuster counted, and your deductible is a number you never looked up.",
+            "Do you argue with a company that reads these every day, or pay for the other slopes yourself? That's the moment most people feel alone with a piece of paper they can't read."
+          ],
+          "image": {
+            "slot": "home-claims",
+            "alt": "Shingle roof edge with a metal gutter after a Wichita hailstorm",
+            "brief": "close view of a shingle roof edge with a metal gutter, roof on the right, open sky on the left behind the text side, no readable text, no people, no tools"
+          }
+        },
+        {
+          "type": "review",
+          "quote": "I’m so happy that my insurance broker sent me to this company after my roof insurance claim got denied when clearly we saw hail damage WITH a leaking roof. … We were about to give up but these guys helped to assure that insurance saw the damage, had to do an appeal on insurances decision … Juan and Brady really have your back so you won’t be disappointed plus they are HONEST…",
+          "name": "Crystal E."
+        },
+        {
+          "type": "split",
+          "heading": "Offer Short? We Stay In It.",
+          "body": [
+            "Storm chasers sign you up, take whatever the insurance paperwork says and replace only what the adjuster wrote down. We work the other way.",
+            "If the offer falls short, we push back with the photos and paperwork. If it's a denial, we document the damage again and help you appeal.",
+            "We can't tell you what your insurance company will pay, and nobody honest can.",
+            "And if your roof is fine, we'll say so plainly."
+          ],
+          "image": {
+            "slot": "home-team",
+            "alt": "Roofer on a ladder checking the roof edge of a brick Wichita home",
+            "brief": "roofing pool: sec-ladder-edge (replaces the removed drone photo)"
+          },
+          "list": [
+            "Free roof inspection, with drone photos when that's the clearest view",
+            "Every slope documented",
+            "Juan, Brady or Arturo on the roof with your adjuster",
+            "The offer checked against your roof, slope by slope",
+            "Pushback and appeals, with more documentation",
+            "A plain answer when the roof is fine"
+          ],
+          "listStyle": "checks"
+        },
+        {
+          "type": "review",
+          "quote": "This is a locally owned operation with a permanent crew. He required no upfront money and no sign contracts. All this together tells me that he's here to stay and weill be back to do any sort of call backs, if necessary.",
+          "name": "Tom B."
+        },
+        {
+          "type": "prose",
+          "heading": "A Local Crew That's Here to Stay",
+          "body": [
+            "A permanent crew and a local office at 3500 N Rock Rd. Customers like Tom B. noticed there was no upfront money and no contract to sign. When something needs a second look next spring, you're calling people who are still in Wichita.",
+            "Juan started the company and gets on your roof. Brady works your claim and meets your adjuster. Arturo, our Project Manager, coordinates the work. Call (316) 796-6722, or reach Arturo directly at (316) 807-8848."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Our house was a hit by a pretty bad storm and we kept getting money hungry companies trying to do business but I am glad we went with Arturo at ICT Roofing. He explained what the process would be like step by step and we never felt like we were going in blind.",
+          "name": "Samantha S."
+        },
+        {
+          "type": "prose",
+          "heading": "What Hail Actually Does to a Shingle",
+          "body": [
+            "Most hail damage can't be seen from the ground. Hail bruises a shingle: it knocks the protective granules loose and cracks the asphalt mat underneath.",
+            "The shingle still looks like a shingle. But the bare spot wears faster in the sun, which is how a roof that \"looked fine\" can leak later."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "What You're Seeing, and What It Usually Means",
+          "body": [
+            "Most roof calls start with something a homeowner noticed from the yard or the hallway. Here's what usually causes each one, and what we do about it."
+          ],
+          "items": [
+            {
+              "title": "Shingles in the yard after high wind",
+              "text": "Wind gets under shingles whose seal strip has aged and tears them loose. We replace what blew off, check the ones beside it and make sure the new ones seal down."
+            },
+            {
+              "title": "Dented gutters and granules piled at the downspouts",
+              "text": "Hail that dents metal very likely bruised the shingles too, even if the roof looks fine from the driveway. We inspect for free and photograph the hits so you can see them."
+            },
+            {
+              "title": "A water stain on the ceiling",
+              "text": "Water enters at one spot and runs along the decking before it drips, so the stain is rarely under the leak. We start at the stain and work up to the flashing, pipe boot or valley."
+            },
+            {
+              "title": "A leak that came back after a repair",
+              "text": "The first repair fixed something that wasn't the problem, often flashing from the original roof that was set wrong. We go back and fix the cause instead of caulking over it."
+            },
+            {
+              "title": "Shingles curling or cracking on every slope",
+              "text": "That's usually age and sun, and patching one spot won't stop the next. If the whole roof is like this, replacement is the honest fix, and we'll say so."
+            }
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "They completed the repair that was thought to be the problem but still had leakage. They returned and did a thorough investigation of the area and found the original roofer didn't install the flashing correctly so they returned with material to fix that and we haven't had anymore leaks.",
+          "name": "Vicky S."
+        },
+        {
+          "type": "prose",
+          "heading": "Roof Replacement",
+          "body": [
+            "When the roof is done, it's done: hail-bruised across every slope, shingles curling, leaks you've stopped counting.",
+            "We tear off the old roof, look at the deck underneath and put the new roof on. Plenty of ours go on in a single day.",
+            "If your gutters took the same hail, we do both together, so you deal with one crew once. Then we sweep the yard with a magnetic tool so nails don't end up in your tires."
+          ],
+          "link": {
+            "label": "See roof replacement →",
+            "route": "/roof-replacement-wichita-ks/"
+          }
+        },
+        {
+          "type": "services",
+          "heading": "Roofing Services in Wichita",
+          "intro": "One call covers the roof, the claim, the gutters and the siding, for homes and commercial buildings."
+        },
+        {
+          "type": "faq",
+          "heading": "Questions Before You Call",
+          "items": [
+            {
+              "q": "Will insurance cover my roof?",
+              "a": "It depends on your policy and on how much damage the adjuster agrees is there, and nobody honest can promise it. Compare the scope's slopes to the slopes that took hail. If the offer is short, we stay in it with you: we document what's missing and push back."
+            },
+            {
+              "q": "Are you storm chasers?",
+              "a": "No. We're a local Wichita company at 3500 N Rock Rd, and you can call the main line or reach Arturo directly. If something goes wrong next spring, you know where to find us."
+            },
+            {
+              "q": "Do I need a whole new roof?",
+              "a": "Not always. We get on the roof, photograph what's there and go through it with you. If a repair will hold, we'll say so. If the problem is everywhere, we'll say that too."
+            },
+            {
+              "q": "Do I have to sign today?",
+              "a": "No. The inspection is free, and we show you what we found and let you decide. Take the time to read your policy and talk to your agent."
+            },
+            {
+              "q": "What does it cost me?",
+              "a": "On an insurance job, your share is your deductible. Many policies set a separate hail and wind deductible, so ask your agent what yours is in dollars."
+            },
+            {
+              "q": "How can I tell if hail damaged my roof?",
+              "a": "Look at the soft metal first: dents in gutters, downspouts and vents mean hail hit hard enough to bruise shingles. Granules piled at the downspouts are another sign. Then have someone get on the roof, because shingle damage rarely shows from the ground."
+            },
+            {
+              "q": "Do you do commercial roofs?",
+              "a": "Yes. We maintain, repair and replace roofs on commercial buildings as well as homes."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Get Your Roof Looked At",
+          "text": "Call and one of us will come out, get on the roof and tell you what's there. The inspection is free. Call (316) 796-6722."
+        }
+      ]
+    },
+    {
+      "role": "service",
+      "route": "/roof-replacement-wichita-ks/",
+      "navLabel": "Roof Replacement",
+      "keyword": "roof replacement Wichita KS",
+      "seo": {
+        "title": "Roof Replacement in Wichita, KS | ICT Roofing & Exteriors"
+      },
+      "hero": {
+        "eyebrow": "Roof replacement, start to finish",
+        "h1": "Roof Replacement in Wichita, KS — ICT Roofing & Exteriors",
+        "sub": "If hail or age has finished your roof, you shouldn't have to sort out the claim, the crew and the materials alone. Call for a free inspection and we'll tell you if the roof needs replacing.",
+        "primaryCta": {
+          "label": "Call (316) 796-6722",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Get a Free Inspection",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "replacement-hero",
+          "alt": "Wichita house with a freshly replaced roof and clean new gutters",
+          "brief": "two-story house with a freshly replaced shingle roof and new gutters, house on the right, lawn leading off to the left, calm sky behind the text side, no readable text, no people"
+        }
+      },
+      "sections": [
+        {
+          "type": "split",
+          "heading": "From Hail Claim to New Roof",
+          "body": [
+            "After a big storm, half the street gets new roofs and you wonder whether yours needs one too. The first step is a free look at the roof. If it's hail, we photograph it and explain what we see.",
+            "If you decide to file, the claim has a rhythm: the inspection, the claim, the adjuster's visit, the scope of work, then the schedule. We're in each of those steps with you.",
+            "Replacing the roof is the easy part for us. The part that takes patience is getting everyone to agree on what's actually damaged."
+          ],
+          "image": {
+            "slot": "replacement-inspection",
+            "alt": "Shingle roof surface with hail bruising across the slope",
+            "brief": "wide view of a shingle roof slope with scattered hail marks, roof on the right, open sky on the left behind the text side, no readable text, no people, no tools"
+          }
+        },
+        {
+          "type": "prose",
+          "heading": "The Adjuster Visit",
+          "body": [
+            "Your adjuster walks the roof, counts hits and decides what the damage covers. You can stand in the yard and nod, or you can have someone next to the adjuster who reads a roof for a living.",
+            "Brady, Arturo or sometimes Juan meets the adjuster at your house. We point out what's on the roof, show what the photos show, and ask the questions you wouldn't know to ask."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Juan got up on the roof with the adjuster in support of our claim. He made the process easy.",
+          "name": "Debbie L."
+        },
+        {
+          "type": "prose",
+          "heading": "What Happens When You Call",
+          "body": [
+            "We set a time and come out for a free inspection. One of us gets on the roof, or puts a drone over it, and photographs what's there.",
+            "Then we sit down with you and go through it: what's damaged, whether it's a repair or a new roof, and whether there's a claim worth filing.",
+            "If you file, we set the adjuster visit next. Once the scope is settled, we put you on the schedule and tell you how long your roof will take."
+          ]
+        },
+        {
+          "type": "split",
+          "heading": "If the Claim Comes Back Partial or Denied",
+          "body": [
+            "A partial offer can mean the adjuster treated some slopes as repairable. A denial can mean the damage wasn't shown clearly. Neither one is automatically the last word.",
+            "We compare the offer to the roof, document what's missing and push back. We can't promise how an insurer will answer, but we won't tell you to accept a short offer just to get a job.",
+            "Your policy, your deductible and your decision stay yours. We tell you what we see so that decision is an informed one."
+          ],
+          "image": {
+            "slot": "replacement-gutters",
+            "alt": "New seamless gutter running along the edge of a new roof",
+            "brief": "new gutter along the eave of a new shingle roof, roof edge on the right, calm sky on the left behind the text side, no readable text, no people, no tools"
+          }
+        },
+        {
+          "type": "prose",
+          "heading": "Roof and Gutters Together",
+          "body": [
+            "Hail that bruises your shingles often dents your gutters, too. The gutters are right there at the eave, taking the same hits.",
+            "Replacing them in the same project means one set of photos, one conversation with the adjuster and one schedule. It also means you don't pay a second crew to put a ladder against a brand-new roof edge."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "We had our roof and gutters damaged in a hail storm and ICT made our house look better than when it was new.",
+          "name": "Ryan R."
+        },
+        {
+          "type": "prose",
+          "heading": "What We Find Under the Old Roof",
+          "body": [
+            "A tear-off shows what the inspection can't. Once the old shingles are off, we look at the deck and the flashing underneath."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "After they pulled old shingles off, they pointed out how the original builders had not put down valley seals on the house. I'm glad they fixed that before house developed a leak.",
+          "name": "Mike B."
+        },
+        {
+          "type": "prose",
+          "heading": "Choosing Your Roofing Material",
+          "body": [
+            "We work with all roofing systems and brands, so the recommendation comes from your house, not from what we happen to stock. We ask what you want from the roof, then tell you what we'd do."
+          ],
+          "items": [
+            {
+              "title": "Asphalt shingle",
+              "text": "The most common roof in Wichita and a good one. A hail-rated shingle can be worth asking about."
+            },
+            {
+              "title": "Presidential Shake",
+              "text": "The luxury shingle made to replicate the look of cedar shakes. It gives you the cedar look on an asphalt roof."
+            },
+            {
+              "title": "Wood shake",
+              "text": "Real cedar, with the look that goes with it."
+            },
+            {
+              "title": "Metal",
+              "text": "Sheds rain and snow. A good fit when you want a roof you won't think about often."
+            },
+            {
+              "title": "Composite shake",
+              "text": "Made to look like cedar. The CeDUR line is one we work with."
+            }
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Then after asking questions to understand what I was looking for in my roof, they offered their professional opinion on what direction I should go.",
+          "name": "Alex M."
+        },
+        {
+          "type": "prose",
+          "heading": "Install Day and Cleanup",
+          "body": [
+            "Several customers have told us their new roof went on in a single day. Bigger jobs take longer.",
+            "A tear-off sends old nails and shingle scraps off the edge of the roof, and some land in the grass where you'll never spot them.",
+            "So before we leave, we run a magnetic sweeper over the yard and pick up the debris. You don't find nails with your bare feet next summer."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Cleanup after the new roof and gutters were installed was exceptional.",
+          "name": "Peggy S."
+        },
+        {
+          "type": "prose",
+          "heading": "Not Sure It's Time for a New Roof?",
+          "body": [
+            "Sometimes a repair is the better answer. A few blown-off shingles or a single leak doesn't need a whole new roof.",
+            "We'll say so. See [roof repair](/roof-repair-wichita-ks/) for how we handle those, or just call and we'll look."
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Questions About Replacement",
+          "items": [
+            {
+              "q": "How do I know my roof needs replacing and not just repairing?",
+              "a": "Damage spread across several slopes, shingles that curl or crack, leaks in more than one spot and a roof that's had repair after repair all point toward replacement. Damage in one place usually doesn't."
+            },
+            {
+              "q": "Do you handle the insurance paperwork?",
+              "a": "We help you document the damage, meet your adjuster and get invoices to the insurer on time. The claim is yours, and the final say belongs to you and your insurance company."
+            },
+            {
+              "q": "Can I replace the roof without a claim?",
+              "a": "Yes. A claim is only one way a roof gets replaced. Call and we'll inspect it either way."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Get a Free Inspection",
+          "text": "Call (316) 796-6722 and one of us will come look at your roof. Or call Arturo directly at (316) 807-8848."
+        }
+      ]
+    },
+    {
+      "role": "service",
+      "route": "/roof-repair-wichita-ks/",
+      "navLabel": "Roof Repair",
+      "keyword": "roof repair Wichita KS",
+      "seo": {
+        "title": "Roof Repair in Wichita, KS | ICT Roofing & Exteriors"
+      },
+      "hero": {
+        "eyebrow": "Roof repair in Wichita",
+        "h1": "Roof Repair in Wichita, KS — ICT Roofing & Exteriors",
+        "sub": "A few shingles blew off, or a leak showed up and you can't tell where it starts. We'll find where the water gets in and fix that, not just the spot on your ceiling. Call for a free inspection and we'll tell you straight if it's a repair or more.",
+        "primaryCta": {
+          "label": "Call (316) 796-6722",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Get a Free Inspection",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "repair-hero",
+          "alt": "Shingle roof with a freshly repaired patch near a chimney",
+          "brief": "shingle roof with a neatly repaired section beside a brick chimney, roof on the right, calm sky on the left behind the text side, no readable text, no people, no tools"
+        }
+      },
+      "sections": [
+        {
+          "type": "split",
+          "heading": "Shingles Blown Off in the Wind",
+          "body": [
+            "You come home after a windy night and there are shingles in the yard, or a bare patch from the street. A missing shingle exposes the layer underneath, which was never meant to face sun and rain.",
+            "Wind gets under the edge of a shingle whose seal has aged, and lifts it. Once one goes, its neighbors are easier to lift.",
+            "We replace what blew off, check the shingles around it and make sure the new ones seal down. That's usually a small job, and it's best done soon, while the damage is still small."
+          ],
+          "image": {
+            "slot": "repair-wind",
+            "alt": "Shingle roof slope with a few shingles newly replaced after wind",
+            "brief": "shingle roof slope with a small section of newer shingles, roof on the right, open sky on the left behind the text side, no readable text, no people, no tools"
+          }
+        },
+        {
+          "type": "review",
+          "quote": "We lost several shingles from the strong winds last week and I wanted to get them replaced quickly. Juan and his team were quick to respond to our needs and had them replaced in just two days time.",
+          "name": "Matthew P."
+        },
+        {
+          "type": "prose",
+          "heading": "What Happens When You Call",
+          "body": [
+            "A roof problem rarely waits for a good time, so it starts with a call back, not a week of phone tag. We set a time to come out and show up when we said we would.",
+            "We get on the roof, or put a drone over it, and look at more than the spot you pointed to, because the damage often runs past it.",
+            "Then we tell you what we found and what the repair will be before we do it. You get the repair and the reason, and if there's something bigger coming, you hear about it before it becomes an emergency."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "A Leak Isn't Always Where the Stain Is",
+          "body": [
+            "Water runs. It enters the roof in one place, travels along the decking or a rafter, and drips from a spot six feet away. That's why patching above the stain so often fails.",
+            "We start at the stain and work upward and outward until we find where the water gets in. These are the usual places."
+          ],
+          "items": [
+            {
+              "title": "A stain near the chimney or an outside wall",
+              "text": "Usually flashing, the metal where the roof meets brick or siding, that was set wrong or has pulled loose. Caulk only hides it; we reset or replace the flashing."
+            },
+            {
+              "title": "A drip below a bathroom or kitchen vent",
+              "text": "The rubber boot around the vent pipe dries out in the sun and cracks. We replace the boot and the shingles around it."
+            },
+            {
+              "title": "A leak where two roof slopes meet",
+              "text": "Valleys carry more water than any other part of the roof, and some were never sealed properly. We open the valley and seal it the way it should have been."
+            },
+            {
+              "title": "A wet spot around a skylight",
+              "text": "Skylights often leak at the flashing rather than the glass. We check the flashing first and fix what we find."
+            }
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "After leaving a voicemail that the wind had blown off some shingles, I was called back the same day! We set a date and time for the estimate, and again he was punctual, clean, and professional. The repair was made as agreed upon.",
+          "name": "Stephen P."
+        },
+        {
+          "type": "prose",
+          "heading": "When the Leak Comes Back",
+          "body": [
+            "If a repair didn't stop the leak, it fixed something that wasn't the problem. It's frustrating, and it's common.",
+            "When that happens, we go back and look again, because the second look is where the real cause tends to show up. A roof that's been repaired by someone before can hide old mistakes, like flashing that was never set right."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Repair or Replace? We'll Tell You Honestly",
+          "body": [
+            "Repair makes sense when the damage is in one place and the rest of the roof is sound. Replacement makes sense when the problem is everywhere: shingles curling across several slopes, granules piling up in the gutters, leaks in more than one spot, or hail damage on the whole roof.",
+            "If your roof is simply old and worn, we'll say that too. We'd rather tell you a repair will hold than sell you a roof you don't need."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "They take the time to inspect, assist with the claims process if necessary, and insure the work is completed to perfection. They give you the information and allow you to make your decisions, it refreshing to not have pressure during the process.",
+          "name": "Ramona C."
+        },
+        {
+          "type": "prose",
+          "body": [
+            "When replacement is the honest answer, here's what [a full roof replacement](/roof-replacement-wichita-ks/) looks like."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "No Upsell",
+          "body": [
+            "You called about a repair, so that's what you get. If we notice something else on the roof, we show you and let you decide."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Brady and his team came out quickly after a wind storm to check out my roof. They were super professional and went above and beyond fixing a few extra things they noticed at no extra cost. … Brady didn't try to upsell me on anything.",
+          "name": "Thu K."
+        },
+        {
+          "type": "prose",
+          "heading": "Not Sure the Storm Did Any Damage?",
+          "body": [
+            "If a storm hit and you're not sure whether there's damage, start with an inspection. We'll tell you if what you see is hail or normal wear. If it's a claim, Brady or Arturo can meet your adjuster at the house."
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Questions About Repairs",
+          "items": [
+            {
+              "q": "How soon should I fix missing shingles?",
+              "a": "As soon as you reasonably can. Exposed underlayment can let water in, and the next wind or storm makes it worse."
+            },
+            {
+              "q": "Why is my ceiling stained but the roof looks fine?",
+              "a": "Water often travels from the entry point before it shows. Flashing, vent boots and valleys are the first places we check."
+            },
+            {
+              "q": "Will a repair match my old shingles?",
+              "a": "Close, usually, but not perfectly. Sun fades shingles, so new ones can look a shade different at first. If the old roof is discontinued or too brittle to work on, we'll tell you."
+            },
+            {
+              "q": "Does an inspection cost anything?",
+              "a": "No. Inspections are free."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Call for a Free Inspection",
+          "text": "Call (316) 796-6722 and tell us what you're seeing, whether it's shingles in the yard or a stain on the ceiling. We'll come look."
+        }
+      ]
+    },
+    {
+      "role": "contact",
+      "route": "/contact/",
+      "navLabel": "Contact",
+      "keyword": "contact ICT Roofing Wichita",
+      "seo": {
+        "title": "Contact ICT Roofing & Exteriors | Wichita, KS"
+      },
+      "hero": {
+        "eyebrow": "Wichita, Kansas",
+        "h1": "Contact ICT Roofing & Exteriors",
+        "sub": "Tell us what's going on with your roof, whether it's a storm that just came through, a leak or shingles in the yard. Every inspection is free, so call and we'll set up a time to come look.",
+        "primaryCta": {
+          "label": "Call (316) 796-6722",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Get a Free Inspection",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "contact-hero",
+          "alt": "Wichita home with a new shingle roof and a clear front walk",
+          "brief": "single-story house with a new shingle roof, house on the right, front walk leading off to the left, calm soft sky behind the text side, no readable text, no people"
+        }
+      },
+      "sections": [
+        {
+          "type": "prose",
+          "heading": "Call or Email",
+          "body": [
+            "**Main line:** (316) 796-6722. Call for a free inspection, a repair or a question about your roof.",
+            "**Arturo Veliz, Project Manager:** (316) 807-8848. Arturo coordinates our jobs, and this line goes straight to him.",
+            "**Email:** info@ict-roofing.com. You can also reach Juan at juan@ict-roofing.com or Arturo at arturo@ict-roofing.com.",
+            "If we miss your call, leave a message with your name and what you're seeing. We call back, and we'd rather hear about a leak today than after the next rain."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "These guys have done two jobs for me now and they did a great job on both of them. They were very responsive and easy to work with",
+          "name": "Alex N."
+        },
+        {
+          "type": "prose",
+          "heading": "Where We Are",
+          "body": [
+            "ICT Roofing & Exteriors 3500 N Rock Rd, Bldg. 1800 Wichita, KS 67226",
+            "We serve Wichita homeowners. It's a free inspection, so you don't need to be sure you have a problem before you call."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "What to Have Ready",
+          "body": [
+            "You don't need much. It helps to know:"
+          ],
+          "list": [
+            "Your address.",
+            "What you're seeing: shingles missing, a leak, dents on gutters or vents, or a storm that just came through.",
+            "If you've already filed a claim, your claim number and adjuster's name, and the date of the adjuster's visit if you have it.",
+            "Any photos you've taken."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "After You Call",
+          "body": [
+            "You won't be left guessing. We tell you when we're coming to inspect, what we found and, if there's a claim, when the adjuster visit is."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "They kept me informed at all times through the process and were extremely knowledgeable about insurance. Brady kept in contact and was amazing the whole process.",
+          "name": "Gavin C."
+        },
+        {
+          "type": "faq",
+          "heading": "Questions Before You Call",
+          "items": [
+            {
+              "q": "Is the inspection free?",
+              "a": "Yes."
+            },
+            {
+              "q": "Do I need to file a claim first?",
+              "a": "No. Call us first if you like. We'll tell you what we find, and you decide whether a claim makes sense."
+            },
+            {
+              "q": "Do you do repairs or only whole roofs?",
+              "a": "Both. See [roof repair](/roof-repair-wichita-ks/) and [roof replacement](/roof-replacement-wichita-ks/)."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "about": "ICT Roofing & Exteriors is a locally owned Wichita roofing company. We're Juan, Brady and Arturo, and we replace and repair roofs, meet your insurance adjuster after hail, and handle gutters and siding.",
+    "why": [
+      "Free roof inspections",
+      "We meet your insurance adjuster",
+      "Roof and gutters in one job",
+      "Locally owned in Wichita"
+    ]
+  },
+  "strategy": {
+    "whyHeading": "Why we built this site",
+    "why": [
+      "Your Google reviews already make your case. They name Juan, Brady and Arturo again and again for meeting the adjuster, staying in the long fight when insurance pushes back, and telling people straight when a roof doesn't need replacing.",
+      "Your website hides all of it. Every browser tab reads \"Your Site Title\", no headline says roofing or Wichita, and the Roofing button on your homepage opens a hotel page with rooms at $100 to $400 a night.",
+      "So we built this site around the work your reviews describe, with your team front and center."
+    ],
+    "cardsHeading": "Be the Roofing Company People Find on Google",
+    "cardsIntro": "Each card is one page: what your site does today, and what we changed.",
+    "cards": [
+      {
+        "route": "/home/",
+        "title": "Homepage",
+        "why": "The page Google reads to learn who you are and where you work.",
+        "problems": [
+          "The biggest line on your homepage, \"Built on Integrity, Backed by Experience.\", never says roofing or Wichita, so Google can't tell you're a roofing company in Wichita.",
+          "None of your Google reviews appear on the page.",
+          "Your \"About\" button opens the insurance page, so the only team info is two names on your contact page."
+        ],
+        "fixes": [
+          "A headline that says roofing company in Wichita, KS, right at the top.",
+          "Real reviews from your customers, each beside the point it proves.",
+          "Juan, Brady and Arturo introduced by name on your homepage, with who does what."
+        ],
+        "alsoAdd": "Hourly speed monitoring that keeps your site fast for visitors on phones, and speed is something Google uses to rank you."
+      },
+      {
+        "route": "/roof-replacement-wichita-ks/",
+        "title": "Roof Replacement",
+        "why": "Replacement and hail claims are the heart of your reviews, and they have no page.",
+        "problems": [
+          "The Roofing \"Learn More\" button opens that hotel page, so the people most ready to buy a roof hit a dead end.",
+          "No page covers roof replacement, hail claims or meeting the adjuster; Services is one short list of shingle types."
+        ],
+        "fixes": [
+          "A full page for roof replacement in Wichita, KS: free inspection, meeting the adjuster, partial and denied claims, roof and gutters together.",
+          "Reviews on adjuster visits, valley seals and the nail sweep, each beside its point."
+        ],
+        "alsoAdd": "Call and form tracking that shows which pages and towns your leads come from."
+      },
+      {
+        "route": "/roof-repair-wichita-ks/",
+        "title": "Roof Repair",
+        "why": "Wind damage and leaks bring calls all year, and they have no page.",
+        "problems": [
+          "Repair is one line on the Services page, so nobody searching \"roof repair Wichita KS\" lands on you."
+        ],
+        "fixes": [
+          "A page for roof repair in Wichita, KS: wind-blown shingles, leaks traced to flashing, and a straight repair-or-replace answer."
+        ],
+        "alsoAdd": "Pages for storm damage and insurance claims, gutters and siding, each planned from what Google actually shows for that search."
+      },
+      {
+        "route": "/contact/",
+        "title": "Contact",
+        "why": "Where a ready customer picks up the phone.",
+        "problems": [
+          "Arturo's direct line shows only on your contact page; every other page lists just the main number."
+        ],
+        "fixes": [
+          "Both numbers at the bottom of every page, each one tap to call.",
+          "A short list of what to have ready before you call."
+        ],
+        "alsoAdd": "Every page set up behind the scenes so Google and AI tools like ChatGPT know exactly what you do, where you work, and what your customers say."
+      }
+    ],
+    "reportCardHeading": "What great roofing company websites get right, and how yours measures up.",
+    "reportCard": [
+      {
+        "label": "Every phone number dials correctly",
+        "status": "Looks good"
+      },
+      {
+        "label": "Email links open your address",
+        "status": "Looks good"
+      },
+      {
+        "label": "Headline says what you do and where",
+        "status": "Missing"
+      },
+      {
+        "label": "Browser tab names your company",
+        "status": "Missing"
+      },
+      {
+        "label": "Each money service has its own page",
+        "status": "Missing"
+      },
+      {
+        "label": "Real reviews shown",
+        "status": "Missing"
+      },
+      {
+        "label": "Buttons open the right pages",
+        "status": "Needs work"
+      },
+      {
+        "label": "Contact form fields are labeled",
+        "status": "Needs work"
+      },
+      {
+        "label": "No leftover template pages",
+        "status": "Needs work"
+      }
+    ],
+    "closing": {
+      "heading": "Want a website like this for your business?",
+      "text": "Your customers already tell people to call you first. Book a strategy call with Fluid Frame and we'll walk you through this demo and plan your new site."
+    },
+    "confirm": {
+      "heading": "What we'd confirm with you",
+      "intro": "Google and AI tools see different answers about your business in different places. We wrote this demo from your reviews and your site. On a short onboarding call, we'd confirm these so everything says the same thing.",
+      "items": [
+        "Your site and Google show 3500 N Rock Rd, Bldg. 1800, while a roofer directory still lists 421 E 3rd St N, so can we confirm Rock Road and clear out the old one?",
+        "Your site shows no hours and a roofer directory lists Monday to Friday, 8 to 5, so what hours should Google and every listing show?",
+        "A company called ICT Home Pros also comes up in Wichita roofing searches, so is it connected to you, or should we make sure Google keeps the two apart?"
+      ]
+    },
+    "lead": {
+      "heading": "Why we led with staying in it when insurance offers less",
+      "text": "After hail, the scariest moment is the letter that covers two slopes of a roof that took hail on every slope. Most people can't tell what the adjuster counted, and most roofers take the paperwork as written. We checked the top five Wichita roofers, and none describes pushing back when the offer comes back short. Please tell us if that isn't how you work.",
+      "showScores": true,
+      "rows": [
+        {
+          "claim": "We stay in it when insurance offers less",
+          "score": 20
+        },
+        {
+          "claim": "We find where the water really gets in",
+          "score": 16
+        },
+        {
+          "claim": "A drone check the morning after a hailstorm",
+          "score": 15
+        }
+      ]
+    }
+  },
+  "onboardingQuestions": [
+    "Juan's surname and how he wants to be introduced (the site says \"Founder\"; Juan Avila-Lopez appears on the contact page). Brady's surname (reviews say Potter) and title.",
+    "Which phone number should lead, and does Arturo's (316) 807-8848 stay on the site as a second number?",
+    "Address to show: 3500 N Rock Rd, Bldg. 1800 matches Google and the site; a directory lists 421 E 3rd St N. Which is current?",
+    "Office hours (none on the site).",
+    "Is Juan the owner of record, and are there other owners? Independent or franchise?",
+    "Manufacturer status: Owens Corning lists you with no tier, and GAF, CertainTeed, IKO, Malarkey and Atlas could not be checked. Which are you certified or preferred with?",
+    "BBB: the site says accredited but no profile was found. Accredited? Rating?",
+    "License and registration numbers in the site footer (State License #23-008038, Registration #11405): current, and may we show them?",
+    "Warranty and financing: do you offer either, and on what terms? (Neither is on the site, so neither is on this demo.)",
+    "Founding year and years in business (the site says \"more than a decade\" about exteriors).",
+    "Commercial roofing: what kinds of buildings, and is it a page of its own?",
+    "Gutters and siding: confirm both, and whether gutters get their own page.",
+    "Reviews mention a cedar deck restain, a fence put back up and painting. Are any of these services you want listed?",
+    "Do you want the drone inspection and magnetic nail sweep shown as standard practice?",
+    "Which towns beyond Wichita do you serve? The site names only Wichita.",
+    "Are you related to ICT Home Pros or ICT Roofing and Remodeling?",
+    "Logo file and brand colors."
+  ]
+}

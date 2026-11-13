@@ -67,16 +67,16 @@ test("loadCanonicalGuideCatalog reads exact on-disk Markdown and hashes determin
   const second = loadCanonicalGuideCatalog();
   assert.equal(first.guides.length, 6);
   assert.equal(first.manifestHash, second.manifestHash);
-  assert.equal(first.manifestHash, "0a360d43f873a47d94788472694e8e30ceb5ab8c5e33d3e12bb6725ecf7db1b1");
+  assert.equal(first.manifestHash, "6aeb813bc9eefb21cc37f05416ea1e312a0089cc042514368ec299f2621e938f");
   assert.deepEqual(
     Object.fromEntries(first.guides.map((guide) => [guide.id, guide.sha256])),
     {
-      general: "136744acf8591b7d5fae6343f0da4502ea6890f954fc7a25dedf797496e4bbe9",
-      service: "972bd08d862ee8df655b2c495de31286ce6dd8f9962a068c8ec8588fc08b3bd7",
-      homepage: "407e55b87719e9476ace07d61d3143421a2be3465b509fab5d86dd6115d5176b",
-      contact: "07b8e35e68e68fadb93f5e194fef5c6580b5eac0a97ab1749b5603fb38aa2a02",
-      headerFooter: "fdb9d43b593bbcf6a0b1de4d7f1d88e87b701e51231e96ac6fed4e879706c22c",
-      readme: "34d572bd5602d6a03e8d207439f0c4a49cd3218c6568341d8d23f529af355383",
+      general: "bb134484c1c6adc71487baa8d2c27014c565d815c8b378661c0b4d1529254270",
+      service: "92acecf52fd02adb971e3c88094a26f2e2646f9394771cb0f00e43a6b909d7d9",
+      homepage: "ef37fa2f56240781fe3821c7127bbf90baff6714ae99cada05444cf610513337",
+      contact: "5613e7bb37ae021966da52a59cb0e264bfcec652776debee7bccf277cb3d336d",
+      headerFooter: "69f38eb9523805ee5956d6f22f5c53644b4823fe7caac8d2652a37d054bc71ea",
+      readme: "e7b69ad13318f108059b5705f8074e070554af457e70a9177089f7c1bd33d22c",
     },
   );
   assert.match(first.manifestHash, /^[0-9a-f]{64}$/);
@@ -130,9 +130,9 @@ test("Writer 1/2/3 sets load from repo files with no provider and preserve raw M
   assert.equal(writer1.catalogManifestHash, catalog.manifestHash);
   assert.equal(writer2.catalogManifestHash, catalog.manifestHash);
   assert.equal(writer3.catalogManifestHash, catalog.manifestHash);
-  assert.equal(writer1.setHash, "fc99fd77d3931c4a3f413337844c5b309f9d3f2215ffedfb10a4db18323ef4de");
-  assert.equal(writer2.setHash, "c1dd23c52627da14036c70bea588e026c0c4ce457c694b78070fd4e062b33ef0");
-  assert.equal(writer3.setHash, "4898d43999afce020c7fb476d6cfd0efcfd5e5750b793e22bc90ebaed6f04e0e");
+  assert.equal(writer1.setHash, "bc77bb3ab28a2382494ae20a55f978c95686a36c7f3f79603b879498b486e62d");
+  assert.equal(writer2.setHash, "968b2d607fbde4785d1f771c45d196717ac29e2236272933472f0f3a4c0ce381");
+  assert.equal(writer3.setHash, "1b12f4e344ba412387129bb9ea14ae5b89431eaa705ffeb3d3e68cf682a9728e");
   assert.notEqual(writer1.setHash, writer2.setHash);
   assert.notEqual(writer1.setHash, writer3.setHash);
   assert.notEqual(writer2.setHash, writer3.setHash);

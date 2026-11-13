@@ -14,7 +14,13 @@ Do not reopen their strategy or rewrite them inside the homepage.
 
 ## Intent
 
-The homepage normally owns the broad company/category + primary market intent. Do not make the H1 compete with a dedicated service page unless the prescription says otherwise.
+The homepage owns the **company type** in the primary market, never a service or procedure. H1 format: `[Company Type] in [City, ST] — [Business Name]`, for example "Exterior Remodeling Company in Wichita, KS — Evolve Exteriors", "HVAC Company in Wichita, KS — …", "Commercial Cleaning Company in Springfield, MO — Brown Professional Services" (the approved Brown demo).
+
+Each service page owns one different service keyword ("Window Replacement in Wichita, KS"). **One service per service page (Josh, 2026-11-09).** Never combine two services on one page ("Siding & Patio Doors", "Doors & Siding", "Siding, Painting & Decks"). Pick the single service with the most demand and review evidence for each service page; every other service is a card in the homepage services section and a line in the footer, linking nowhere until it has its own page. No two services may link to the same page.
+
+Before you write, run the cannibalization test: does the homepage H1 already use the phrase a service page targets? If yes, change one. Pick a company type broad enough to cover the business's main services, so a window company that also does siding and doors is an exterior remodeling company. Source: `KEYWORD_GUIDE.md`.
+
+One market in the H1: the city of the Google profile. A business with a second office (Evolve: Wichita and Oklahoma City) still names one city; the second office gets its number and a service-area line, and a full build gives it its own page (Josh, 2026-11-09).
 
 Window Dudes is a useful exception to study: Springfield window-repair writing lives on `/` because that is the canonical homepage job on that site. Do not copy that routing onto a prospect whose repair work belongs on a service page.
 
@@ -36,7 +42,7 @@ Greene Planet’s `/springfield/` redirects to `/`. That root page is the Spring
 Use judgment on order and format. Cover the jobs that matter:
 
 - Identity: who, what, whom they help, where
-- Services: the confirmed set, with built pages easy to find
+- Services: every confirmed service appears. For a business with several main services (an exterior remodeler, a remodel contractor, an HVAC company), give each main service its own short section: the homeowner's moment, why it happens, what we do, a link if it has a page, and the review that proves it. Minor services go in a line or a list. Model: [Evolve Exteriors homepage](../../examples/approved-copy/evolve-exteriors/homepage.md), and Greene Planet's per-service sections. A single-trade business can use a card list like Window Dudes' "All Window, Door & Glass Services". Do not invent routes so every service can link (Josh, 2026-11-09).
 - Differentiation from real evidence — not website-quality claims
 - Confirmed service area
 - Ownership, team, or history only when verified and useful
@@ -60,4 +66,4 @@ Make the path to call or contact obvious. Use the same offer and contact hierarc
 
 ## SEO metadata
 
-Write the final SEO title and meta description for this homepage route as part of the page. Follow the general guide. The website builder will consume those words rather than inventing them.
+Optional for demos. See the general guide.

@@ -1,0 +1,695 @@
+{
+  "schema": "words-package/v1",
+  "business": {
+    "name": "Farha HomeTrends",
+    "slug": "farha",
+    "city": "Wichita",
+    "state": "KS",
+    "companyType": "Home Remodeling Company",
+    "owners": [
+      "Geremy"
+    ],
+    "phones": [
+      {
+        "label": "Wichita",
+        "display": "(316) 680-7514",
+        "tel": "+13166807514"
+      }
+    ],
+    "email": "info@farhahometrends.com",
+    "hours": "Monday to Friday, 8:00 AM to 5:00 PM",
+    "address": "1300 E Central Ave, Wichita, KS 67214",
+    "serviceArea": {
+      "summary": "Wichita, Kansas",
+      "towns": [
+        "Wichita"
+      ]
+    }
+  },
+  "trustBar": [
+    "More Than 20 Years of Remodeling",
+    "Crews Licensed & Insured",
+    "Free Estimates",
+    "Founded by a Wichita Tile Installer"
+  ],
+  "services": [
+    {
+      "name": "Bathroom Remodeling",
+      "route": "/bathroom-remodeling-wichita-ks/",
+      "blurb": "Walk-in showers, tile and custom vanities, built by licensed trades."
+    },
+    {
+      "name": "Kitchen Remodeling",
+      "route": "/kitchen-remodeling-wichita-ks/",
+      "blurb": "New floors, cabinets, counters and layouts from one company."
+    },
+    {
+      "name": "Living Space Remodeling",
+      "route": null,
+      "blurb": "Whole rooms redone with new flooring, trim and paint."
+    },
+    {
+      "name": "Outdoor Living",
+      "route": null,
+      "blurb": "Decks and outdoor spaces built by the people who remodel your kitchen."
+    },
+    {
+      "name": "Custom Cabinetry & Woodworking",
+      "route": null,
+      "blurb": "Cabinets and built-ins made to fit your room."
+    },
+    {
+      "name": "Custom Spaces",
+      "route": null,
+      "blurb": "A room that needs its own plan, designed and built for how you use it."
+    },
+    {
+      "name": "Additions",
+      "route": null,
+      "blurb": "New bedrooms, bathrooms and living space added to the house you have."
+    },
+    {
+      "name": "In-House Interior Design",
+      "route": null,
+      "blurb": "A designer on our team works one-on-one with you on your remodel."
+    }
+  ],
+  "pages": [
+    {
+      "role": "home",
+      "route": "/home/",
+      "navLabel": "Home",
+      "keyword": "home remodeling company Wichita KS",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Founder-run in Wichita",
+        "h1": "Home Remodeling Company in Wichita, KS — Farha HomeTrends",
+        "sub": "I'm Geremy Farha. I started as a tile installer in Wichita more than 20 years ago, and today our crews, licensed and insured in carpentry, tile and flooring, plumbing, electrical and painting, remodel your bathroom, your kitchen and the rooms in between. Call me for a free estimate.",
+        "primaryCta": {
+          "label": "Call (316) 680-7514",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Get a Free Estimate",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "home-hero",
+          "alt": "Finished Wichita kitchen with white cabinets and a tile backsplash in warm morning light",
+          "brief": "finished kitchen with white cabinets and a tile backsplash, kitchen on the right half of the frame, open floor leading off to the left, calm plain wall behind the text side, no readable text, no people"
+        }
+      },
+      "sections": [
+        {
+          "type": "review",
+          "quote": "Geremy has handled all of our renovations for almost 20 years now. In that time he has touched every room in the house!",
+          "name": "Julie W."
+        },
+        {
+          "type": "split",
+          "heading": "One Company for Every Trade",
+          "body": [
+            "A remodel is never one job. It's carpentry, plumbing, wiring, tile and paint, and each one has to finish before the next can start.",
+            "Hire them separately and you become the project manager. You're the one calling the tile setter because the plumber ran late, or finding out the electrician was never told the wall moved.",
+            "We run every one of those trades ourselves. Our crews are licensed and insured in carpentry, tile and flooring, plumbing, electrical and painting, so you make one call and get one plan.",
+            "It also makes the next project easier. The crew that already knows your house is the crew that does your next room."
+          ],
+          "image": {
+            "slot": "home-trades",
+            "alt": "Tile samples and a bathroom layout drawing on a wooden table",
+            "brief": "table with tile samples and a bathroom layout drawing, table on the right, window and plain wall on the left, no readable text, no people"
+          }
+        },
+        {
+          "type": "prose",
+          "heading": "Bathroom Remodeling",
+          "body": [
+            "Most people call us about a bathroom for the same few reasons. The shower is a builder-grade box that's been there for decades, the grout keeps cracking, or a leak showed up in the ceiling below.",
+            "Almost every shower problem is a water problem. Tile looks waterproof, but what keeps water out of your walls and floor is what sits behind the tile.",
+            "That's where I started. I began as a tile installer, so I know where showers fail.",
+            "We build walk-in showers, tile walls and floors, and make vanities to fit the room.",
+            "A designer on our own team works with you one-on-one on the layout and the materials."
+          ],
+          "link": {
+            "label": "See bathroom remodeling →",
+            "route": "/bathroom-remodeling-wichita-ks/"
+          }
+        },
+        {
+          "type": "review",
+          "quote": "We had a relatively small-scale master bathroom walk-in shower remodel, and the team treated us, and our home, like royalty. … From working one-on-one with their in house designer, to the tradesmen, to the owners themselves, we had nothing but a smooth and pleasant remodel experience.",
+          "name": "Amy B."
+        },
+        {
+          "type": "split",
+          "heading": "Kitchen Remodeling",
+          "body": [
+            "A kitchen that doesn't work usually isn't one bad thing. It's worn flooring, cabinets that don't hold what you own, counters with nowhere to set a hot pan, and a layout that makes two people trip over each other.",
+            "Those pieces all meet in the same room, so they're best planned together. Move a sink and the plumbing, the cabinets and the floor all change with it.",
+            "We do the floors, cabinets, counters and layout as one project, with one crew and one schedule. If the best fix is to rearrange the room, we'll show you how."
+          ],
+          "link": {
+            "label": "See kitchen remodeling →",
+            "route": "/kitchen-remodeling-wichita-ks/"
+          },
+          "image": {
+            "slot": "home-clean",
+            "alt": "Hardwood floor covered by a neat drop cloth in front of a new built-in shelf",
+            "brief": "hardwood floor covered by a neat drop cloth in front of a new built-in shelf, shelf on the right, floor leading off to the left, calm wall behind the text side, no readable text, no people"
+          }
+        },
+        {
+          "type": "review",
+          "quote": "Farha Home Trends did a fabulous job for us on a brand new kitchen and new flooring, trim, paint, etc on near all of our upstairs. They were easy to work with. All their employees and subcontractors were knowledgeable and patient with my questions.",
+          "name": "Joyce M."
+        },
+        {
+          "type": "prose",
+          "heading": "The Rest of the House",
+          "body": [
+            "Bathrooms and kitchens are our main work, but they're not our only work. Every other room gets the same licensed crews and the same free estimate."
+          ],
+          "list": [
+            "**Living space remodeling.** Whole rooms redone with new flooring, trim and paint.",
+            "**Custom cabinetry and woodworking.** Built-ins, shelving and cabinets made to fit the room, instead of a stock size with filler strips.",
+            "**Custom spaces.** An office, a laundry room or any room that needs its own plan, designed around how you use it.",
+            "**Outdoor living.** Decks and outdoor spaces, built by the crew that remodels your kitchen.",
+            "**In-house interior design.** A designer on our team to help with layouts, finishes and materials on any of the above."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Choosing Materials Without Stalling the Job",
+          "body": [
+            "Tile, counters and cabinets are the part of a remodel that ends up on the calendar. When a material arrives late, the crew waits and the room sits torn up.",
+            "So we help you choose early and get everything ordered before the work starts. If you've already found the tile or fixtures you want somewhere else, bring them in. They're your bathroom and your kitchen."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Additions",
+          "body": [
+            "When a house has run out of room, an addition has to line up with what's already there: floors that meet, a roofline that makes sense, plumbing and wiring tied in correctly.",
+            "That's easier when the same company does the old rooms and the new one. We add bedrooms, bathrooms and living space to the house you have."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Have used 3 times now, once to tile a room, once to remodel a master bedroom and bathroom, and one time to build an additional bathroom, bedroom and living area. Their work is absolutely incredible, their vision and their ability to transform my vision into actuality is beyond comparison. I’ll never use anyone else. Ever.",
+          "name": "Larry R."
+        },
+        {
+          "type": "prose",
+          "heading": "A Clean House at the End of Every Day",
+          "body": [
+            "Remodeling is dusty, and the dust goes where the work isn't. Strangers walking through your house all day is the other part people dread.",
+            "We cover your floors and close off the work area with plastic. We use a vacuum system to hold down drywall and plaster dust.",
+            "You'll know when the crew is coming and when they're leaving, and we clean up at the end of each day and again when the project wraps."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "His employees and/or sub contractors upon entering our house laid down paper to protect our floors and put up plastic to isolate the area and a vaccum system to control sheetrock/plaster dust. Geremy and the whole crew were respectful of our home; showed up as promised; let us know when they were leaving at the end of their day; cleaned up after each day and at the completion of the project and did a wonderful job.",
+          "name": "Norma M."
+        },
+        {
+          "type": "faq",
+          "heading": "Questions Before You Call",
+          "items": [
+            {
+              "q": "Is the estimate free?",
+              "a": "Yes. Call or send the form and we'll set up a free estimate."
+            },
+            {
+              "q": "Do you only do big projects?",
+              "a": "No. We remodel whole bathrooms and kitchens, and we also take on repairs and single-room work, like tiling one room."
+            },
+            {
+              "q": "Who will be at my house?",
+              "a": "Crews licensed and insured in the trades the job needs. I check in on the work myself, and you'll know who's coming each day."
+            },
+            {
+              "q": "Can I do one room now and another later?",
+              "a": "Yes. Plenty of our work is that way, a room at a time over the years. You don't have to plan the whole house up front."
+            },
+            {
+              "q": "Where do you work?",
+              "a": "We remodel homes in Wichita. Our office is at 1300 E Central Ave."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Call Me About Your Remodel",
+          "text": "Tell me what's wrong with the room and what you'd like it to be. We'll come look, and you get a free estimate. Call (316) 680-7514, Monday to Friday, 8:00 AM to 5:00 PM, or send us a message from the [contact page](/contact/)."
+        }
+      ]
+    },
+    {
+      "role": "service",
+      "route": "/bathroom-remodeling-wichita-ks/",
+      "navLabel": "Bathroom Remodeling",
+      "keyword": "bathroom remodeling Wichita KS",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Bathrooms built by a tile installer",
+        "h1": "Bathroom Remodeling in Wichita, KS — Farha HomeTrends",
+        "sub": "I'm Geremy Farha, and I started in Wichita as a tile installer more than 20 years ago. Our licensed, insured crews build walk-in showers, tile walls and floors, and make vanities to fit your room, with every trade in the bathroom on one team. Call me for a free estimate.",
+        "primaryCta": {
+          "label": "Call (316) 680-7514",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Get a Free Estimate",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "bath-hero",
+          "alt": "Bright bathroom with a walk-in tile shower and a glass door",
+          "brief": "bathroom with a walk-in tile shower and glass door, shower on the right, floor and vanity edge leading off to the left, calm light wall behind the text side, no readable text, no people"
+        }
+      },
+      "sections": [
+        {
+          "type": "split",
+          "heading": "Why a Shower Fails",
+          "body": [
+            "A shower rarely fails where you can see it. Grout cracks, caulk peels and a tile comes loose, but those are signs, not the cause.",
+            "The cause is water getting behind the tile. Tile and grout don't make a shower waterproof. A membrane or liner behind them does, and so does the way the floor of the shower is sloped and sealed.",
+            "When that layer is wrong, water soaks the wall and the floor underneath for years. The first sign can be a stain on the ceiling below.",
+            "That's why the first question to ask any contractor is how they'll waterproof your shower."
+          ],
+          "image": {
+            "slot": "bath-shower",
+            "alt": "Tiled shower wall with straight grout lines and a recessed niche",
+            "brief": "tiled shower wall with straight grout lines, wall on the right, frosted window and plain wall on the left, no readable text, no people"
+          }
+        },
+        {
+          "type": "review",
+          "quote": "In 2017 we had FHT remodel our master bath. One of the most important criteria we were after was a contractor that had experience with one of two shower waterproofing methods. … When we asked Geremy at FHT this question, his first answer was one of the methods and it was clear immediately that he knew what he was talking about. … My wife and I often comment that the bathroom looks exactly today like it did the day Geremy finished the project. No cracking grout, no uneven floor tiles, no peeling shower caulk, no cracking walls, on and on.",
+          "name": "Eric B."
+        },
+        {
+          "type": "prose",
+          "heading": "Showers and Tile",
+          "body": [
+            "I began my career setting tile, so tile is where I look first. A good tile job is level and plumb, the lines meet where they should, and the grout holds up after years of steam and cleaning.",
+            "We build walk-in showers, and we tile walls and floors. Swapping a builder-grade shower for a walk-in is one of the most common bathroom projects.",
+            "Our crews are licensed and insured in tile and flooring, plumbing, carpentry, electrical and painting. So the person who moves the drain is on the same team as the person who sets the tile on top of it.",
+            "A bathroom remodel is more than the shower. New lighting, outlets, a mirror, towel bars and fresh paint finish the room, and electrical and painting are two more of our own trades.",
+            "That keeps the end of the job from stalling. Nobody is waiting on a different contractor to hang a light or paint the wall."
+          ]
+        },
+        {
+          "type": "split",
+          "heading": "When the Walls Come Open",
+          "body": [
+            "Bathrooms hide their problems. A leak that has run for years looks fine until the old tile comes out.",
+            "If that happens in your bathroom, the job doesn't stop while you find a carpenter. Carpentry is one of our own trades, so rotted framing and floor get repaired as part of the same project."
+          ],
+          "image": {
+            "slot": "bath-vanity",
+            "alt": "Wood bathroom vanity with a stone top and a framed mirror",
+            "brief": "wood bathroom vanity with a stone top and framed mirror, vanity on the right, plain painted wall on the left, no readable text, no people"
+          }
+        },
+        {
+          "type": "review",
+          "quote": "FHT remodeled two bathrooms, added tile to walls and floors. During the remodel, they found floor rot and termite damage under our master shower, and repaired everything like new. They also updated our kitchen counters with quartz stone, replaced our sink and faucets, and added custom tile back splashes.",
+          "name": "Roger H."
+        },
+        {
+          "type": "prose",
+          "heading": "Vanities Made to Fit",
+          "body": [
+            "A stock vanity comes in standard widths, and a bathroom is rarely a standard width. Gaps, filler strips and an awkward door swing come from forcing one in.",
+            "We make custom vanities for the room. Each one is built for the room it goes in and matched to the rest of the bathroom.",
+            "We'll also work with what you already own. If there's a piece of furniture you love, we can look at turning it into the vanity."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Our last project utilized estate sale finds including an old armoire that was refinished and turned into a bathroom sink cabinet. They even went above and beyond to ensure the safety of our new kittens running around while they worked.",
+          "name": "Cody F."
+        },
+        {
+          "type": "prose",
+          "heading": "Design Help and Your Own Materials",
+          "body": [
+            "An interior designer on our team works with you one-on-one on the layout, the tile, the fixtures and the finish.",
+            "If you have your own ideas, we'll build them. You can pick materials with us or source them yourself."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "The custom vanity Trenton designed and created for our master bath was perfect. He’s truly a master craftsman.",
+          "name": "Ruth C."
+        },
+        {
+          "type": "faq",
+          "heading": "Questions Before You Call",
+          "items": [
+            {
+              "q": "How will you waterproof my shower?",
+              "a": "Ask it of every contractor you talk to, us included, and get the answer before you sign anything. A contractor who says he'll figure it out later isn't ready to build your shower."
+            },
+            {
+              "q": "What if you find damage once the old shower is out?",
+              "a": "It happens in older bathrooms. Because carpentry and plumbing are our own trades, we repair the framing and floor in the same project."
+            },
+            {
+              "q": "Can I buy my own tile or fixtures?",
+              "a": "Yes. Choose with us, or bring what you've found. We've let homeowners source their own material when the supply house didn't have exactly what they wanted."
+            },
+            {
+              "q": "Do you only do full bathrooms?",
+              "a": "No. We've done a walk-in shower on its own, a master bath and a guest bath. Tell us what you're replacing and we'll price that."
+            },
+            {
+              "q": "Is the estimate free?",
+              "a": "Yes."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Start With a Free Estimate",
+          "text": "Call me, tell me what's wrong with your bathroom, and we'll come take a look. Call (316) 680-7514, Monday to Friday, 8:00 AM to 5:00 PM, or [send us a message](/contact/)."
+        }
+      ]
+    },
+    {
+      "role": "service",
+      "route": "/kitchen-remodeling-wichita-ks/",
+      "navLabel": "Kitchen Remodeling",
+      "keyword": "kitchen remodeling Wichita KS",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Whole kitchens, one company",
+        "h1": "Kitchen Remodeling in Wichita, KS — Farha HomeTrends",
+        "sub": "I'm Geremy Farha. We replace floors, cabinets and counters, and when the room calls for it we rearrange the whole layout, with licensed, insured crews in every trade the kitchen needs. Call me for a free estimate.",
+        "primaryCta": {
+          "label": "Call (316) 680-7514",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Get a Free Estimate",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "kitchen-hero",
+          "alt": "Remodeled kitchen with an island, stone counters and wood cabinets",
+          "brief": "remodeled kitchen with an island, stone counters and wood cabinets, island on the right, open floor leading off to the left, calm plain wall behind the text side, no readable text, no people"
+        }
+      },
+      "sections": [
+        {
+          "type": "split",
+          "heading": "A Kitchen That Works Against You",
+          "body": [
+            "You know the kitchen that fights you. The floor is worn through at the sink, the cabinets can't hold what you own, the counters are chipped or stained, and two people can't cook at once.",
+            "Sometimes new finishes fix it. Often the real problem is the layout: the sink is too far from the stove, the fridge door blocks the walkway, or a wall closes the room off from the rest of the house.",
+            "We'll tell you which one you have before you spend money on the wrong fix."
+          ],
+          "image": {
+            "slot": "kitchen-main",
+            "alt": "Kitchen with wood cabinets, a tile backsplash and a stone countertop",
+            "brief": "kitchen with wood cabinets, tile backsplash and stone countertop, cabinets on the right, window and plain wall on the left, no readable text, no people"
+          }
+        },
+        {
+          "type": "review",
+          "quote": "Geremy and crew completely remodeled my kitchen, new floor, new cabinets, new counter tops, new appliances, and rearranged my kitchen floor plan. They did an awesome job. Every part of the work was done perfectly.",
+          "name": "Detha K."
+        },
+        {
+          "type": "prose",
+          "heading": "Why a Kitchen Is Planned as One Project",
+          "body": [
+            "Floor, cabinets, counters, plumbing and wiring all meet in the same room, and each one depends on the others. Cabinets can't be set until the floor and walls are ready.",
+            "Counters can't be measured until the cabinets are in. The sink and the stove need their plumbing and power where the new layout puts them.",
+            "Change the order and something gets torn out twice.",
+            "We run carpentry, flooring, plumbing, electrical, tile and paint ourselves, so the schedule is one schedule. Nobody waits on a different company to show up before the next step can start."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "What Goes Into a Kitchen Remodel",
+          "body": [
+            "A full kitchen remodel replaces the floor, the cabinets, the counters and often the sink and faucet, then finishes with tile backsplash, trim and paint. If the layout changes, the plumbing and wiring change with it.",
+            "Because those are all trades we run, the work isn't split between a kitchen company and a separate company for each trade.",
+            "A good layout starts with how you cook. Where you prep, where the trash goes and who walks through the room while you're at the stove decide where things belong, more than any catalog does."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Choosing Counters, Cabinets and Tile",
+          "body": [
+            "Most of what makes a kitchen take longer than planned is material that isn't ready. Cabinets and stone are ordered to your measurements, and a late delivery leaves the room empty.",
+            "We help you choose early and get everything ordered before the work begins. Counters can be granite, stone or quartz, and we tile backsplashes to match.",
+            "Custom cabinetry and woodworking is one of our services too, so a kitchen can have cabinets made to fit an odd wall instead of a stock size that almost fits."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Geremy was also helpful at the beginning when we were picking the granite, stone and other materials we wanted. He gave us great guidance and had everything ordered so there were no delays.",
+          "name": "Carol W."
+        },
+        {
+          "type": "prose",
+          "heading": "Floors, Trim and Paint",
+          "body": [
+            "A new kitchen next to a tired hallway looks worse than the old one did. When the room is open anyway, it's the easiest time to carry new flooring, trim and paint past the kitchen door.",
+            "We do that work too. People have hired us for a kitchen and then had us redo most of the floor above it."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Your House While We Work",
+          "body": [
+            "The kitchen is where you eat, and you'll be without it for part of the project. Dust and strangers in the house all day are the other part.",
+            "We cover your floors, remove the covers and vacuum when the day is done, and you know who's coming and when. A small table in another room, a coffee maker and a microwave get most families through it."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "FHT did a full re-model on our kitchen and their work is incredible. From their “in house staff” to the contractors working in their name, The Farha team did an outstanding job for us.",
+          "name": "Rob F."
+        },
+        {
+          "type": "faq",
+          "heading": "Questions Before You Call",
+          "items": [
+            {
+              "q": "Can you change the layout?",
+              "a": "Yes. We've moved the floor plan around in complete kitchen remodels. We'll look at the room and tell you what moving a sink or a wall would involve."
+            },
+            {
+              "q": "Who picks the materials?",
+              "a": "You do, with help. We give guidance on stone, tile and cabinet choices, and an interior designer on our team can work with you one-on-one."
+            },
+            {
+              "q": "Do you do the rest of the house too?",
+              "a": "Yes. Living spaces, bathrooms, built-ins, decks and additions are all work we do. Many of our customers come back for the next room."
+            },
+            {
+              "q": "Is the estimate free?",
+              "a": "Yes."
+            }
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Geremy and his crew have done a couple jobs for us, last one being our kitchen. Craftsmanship is top notch. On time every day and very responsive. Would recommend to anybody.",
+          "name": "Kyle L."
+        },
+        {
+          "type": "callBand",
+          "heading": "Start With a Free Estimate",
+          "text": "Call me, tell me what the kitchen is like to live in, and we'll come take a look. Call (316) 680-7514, Monday to Friday, 8:00 AM to 5:00 PM, or [send us a message](/contact/)."
+        }
+      ]
+    },
+    {
+      "role": "contact",
+      "route": "/contact/",
+      "navLabel": "Contact",
+      "keyword": "contact Farha HomeTrends Wichita KS",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Wichita, Kansas",
+        "h1": "Contact Farha HomeTrends",
+        "sub": "The fastest way to reach us is to call. Tell us which room you want remodeled and what's wrong with it now, and we'll set up a free estimate.",
+        "primaryCta": {
+          "label": "Call (316) 680-7514",
+          "action": "call"
+        },
+        "image": {
+          "slot": "contact-hero",
+          "alt": "Front door of a Wichita house with a new porch and landscaped walk",
+          "brief": "house front door with a new porch and a landscaped walk, house on the right, walk leading off to the left, calm soft sky behind the text side, no readable text, no people"
+        },
+        "secondaryCta": {
+          "label": "Send a Message",
+          "action": "contact"
+        }
+      },
+      "sections": [
+        {
+          "type": "prose",
+          "heading": "Call or Send a Message",
+          "body": [
+            "Call (316) 680-7514, Monday to Friday, 8:00 AM to 5:00 PM.",
+            "Prefer to write? Use the form and tell us about your project. You can also email info@farhahometrends.com."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Have This Ready",
+          "body": [
+            "You don't need plans or a budget to call. It helps to know:"
+          ],
+          "list": [
+            "Which room or rooms you're thinking about, such as a bathroom, a kitchen or an addition.",
+            "What isn't working today: a leak, a layout, worn finishes or not enough room.",
+            "Anything you've already picked out, like tile, cabinets or fixtures.",
+            "The address of the house, so we know where we're going."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Not only do Geremy and his team turn over an amazing finished product, the process is also very professional. I knew what was going on every step of the way with no surprises.",
+          "name": "Mary P."
+        },
+        {
+          "type": "callBand",
+          "heading": "Where We Are",
+          "text": "Farha HomeTrends, 1300 E Central Ave, Wichita, KS 67214. Hours: Monday to Friday, 8:00 AM to 5:00 PM. Closed weekends. We remodel homes in Wichita. Free estimates."
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "about": "I'm Geremy Farha, and I began as a tile installer in Wichita more than 20 years ago. We remodel bathrooms, kitchens and every other room in your house.",
+    "why": [
+      "An owner who started as a tile installer",
+      "Crews licensed and insured in five trades",
+      "An interior designer on our own team"
+    ]
+  },
+  "strategy": {
+    "whyHeading": "Why we built this site",
+    "why": [
+      "Your customers already make your case: 25 of your 26 Google reviews are five stars, and they call the craftsmanship \"top notch\" and say your crew \"cleaned up after each day\". But your number sits at the bottom of every page in plain type, so someone on a phone has to copy it or call the next remodeler.",
+      "Your bathroom and kitchen work lives on photo gallery pages. One reviewer hired you because you knew how to waterproof a shower, and your bathroom page never says so.",
+      "So the demo puts your number one tap away on every page and gives bathrooms and kitchens their own pages."
+    ],
+    "cardsHeading": "Be the Home Remodeling Company People Find on Google",
+    "cardsIntro": "Each card is one demo page: what costs you calls, and the fix.",
+    "cards": [
+      {
+        "route": "/home/",
+        "title": "Homepage",
+        "why": "The page Google reads to learn what you do, and the first one people see.",
+        "problems": [
+          "Your number sits at the very bottom as plain text. Nothing at the top lets someone tap to call.",
+          "The top of the page is a big logo with no photo of finished work, so visitors can't see what you build.",
+          "The headline is a slogan, \"Wichita's Trusted Home Remodeling Contractors\", and \"trusted\" is a claim nothing on the page backs up."
+        ],
+        "fixes": [
+          "Your number is one tap to call on every page.",
+          "A photo of a finished kitchen at the top.",
+          "A headline that says home remodeling company in Wichita, KS, right at the top."
+        ],
+        "alsoAdd": "On day one, we sit down with you to get what makes you the obvious choice, every service you offer and every town you work in. That becomes the prescription: how many pages, in how many towns, so Google and AI tools can find you for every service."
+      },
+      {
+        "route": "/bathroom-remodeling-wichita-ks/",
+        "title": "Bathroom Remodeling",
+        "why": "Showers and tile run through your reviews, yet this page is a photo gallery.",
+        "problems": [
+          "The page address says \"gallery\", and under two short paragraphs it is mostly photos.",
+          "Nothing says how you waterproof a shower, the question one reviewer used to screen contractors."
+        ],
+        "fixes": [
+          "A page for bathroom remodeling in Wichita, KS, with the address to match.",
+          "Showers, tile and vanities explained, with reviews beside each."
+        ],
+        "alsoAdd": "Pages planned from what Google actually shows for each search, so every page targets something people really look for."
+      },
+      {
+        "route": "/kitchen-remodeling-wichita-ks/",
+        "title": "Kitchen Remodeling",
+        "why": "Kitchens are your other big room, with the same gallery setup.",
+        "problems": [
+          "The page opens with brand names, then photos. It never says you do floors, counters and layouts."
+        ],
+        "fixes": [
+          "A full page for kitchen remodeling in Wichita, KS.",
+          "Cabinets, counters, floors and layouts, with reviews beside each."
+        ],
+        "alsoAdd": "A check of what your competitors offer, so services you didn't think to mention still get their own pages."
+      },
+      {
+        "route": "/contact/",
+        "title": "Contact",
+        "why": "The page where interest turns into a call.",
+        "problems": [
+          "The menu on a phone has four items and no Contact link. The way in is a small \"Request a Consultation!\" line above the logo."
+        ],
+        "fixes": [
+          "Your number in the menu bar on every page, one tap away.",
+          "A plain contact page with hours and what to have ready."
+        ],
+        "alsoAdd": "Call and form tracking that shows which pages and towns your leads come from."
+      }
+    ],
+    "reportCardHeading": "What great home remodeling websites get right, and how yours measures up.",
+    "reportCard": [
+      {
+        "label": "Headline says what you do and where",
+        "status": "Needs work"
+      },
+      {
+        "label": "Every phone number is one tap to call",
+        "status": "Needs work"
+      },
+      {
+        "label": "Each money service has its own page",
+        "status": "Needs work"
+      },
+      {
+        "label": "Contact link in the phone menu",
+        "status": "Missing"
+      },
+      {
+        "label": "Photo of finished work at the top",
+        "status": "Missing"
+      },
+      {
+        "label": "Years in business match on every page",
+        "status": "Needs work"
+      }
+    ],
+    "closing": {
+      "heading": "Want a website like this for your business?",
+      "text": "Your customers call your work \"top notch\" and say you have \"touched every room in the house\". Book a strategy call with Fluid Frame to walk through this demo and confirm your full list of services."
+    }
+  },
+  "onboardingQuestions": [
+    "Geremy's surname is Farha on the site and in reviews; confirm how he wants to be introduced and who else to name (for example Kristen on the office side).",
+    "Phone: (316) 680-7514 is on the Google profile and the site. Confirm it is the number to lead with, and whether there is a second line.",
+    "Address: Google and the site show 1300 E Central Ave. Expertise.com and MapQuest list 1004 E 2nd St N, with MapQuest showing Closed. Which is current?",
+    "Hours: the contact page says Monday to Friday, 8 AM to 5 PM and closed weekends. Confirm they are current and match Google.",
+    "Years: the site says more than 20 years on the home and About pages and over 25 on the Our Staff page. Which do they want to say?",
+    "Brand and trade-group credentials named on the current site (Our Services, the kitchen page and the About page; full list in questions.md): ask for certificates or locator pages before we use any of them.",
+    "Licensing: the About page says crews are licensed and insured in five trades. Which license numbers and insurer can we show?",
+    "Service towns beyond Wichita: none are listed anywhere. Do they work in Derby, Andover, Maize or elsewhere?",
+    "Services to confirm: living spaces, outdoor and decks, custom spaces, additions, custom cabinetry, flooring, exterior doors, and whether they want flooring or decks on their own pages in a full build.",
+    "Shower waterproofing: which method does Geremy use, and does he want it named on the bathroom page?",
+    "Warranty and financing: a review mentions warranty work, but no terms are published. Is there a written warranty, and is financing offered?",
+    "Process: how an estimate visit works, typical project lengths, and who the day-to-day contact is, so the job steps on the service pages can be firmed up.",
+    "Logo files and brand colors (the demo uses placeholders until we have the real logo)."
+  ]
+}

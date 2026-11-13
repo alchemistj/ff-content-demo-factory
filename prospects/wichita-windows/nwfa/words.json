@@ -1,0 +1,707 @@
+{
+  "schema": "words-package/v1",
+  "business": {
+    "name": "New Windows For America",
+    "slug": "nwfa",
+    "city": "Wichita",
+    "state": "KS",
+    "companyType": "Energy Efficiency Experts",
+    "owners": [],
+    "phones": [
+      {
+        "label": "Wichita",
+        "display": "(316) 263-0711",
+        "tel": "+13162630711"
+      }
+    ],
+    "email": null,
+    "hours": null,
+    "address": null,
+    "serviceArea": {
+      "summary": "Wichita and nearby areas",
+      "towns": [
+        "Wichita",
+        "Newton",
+        "Parsons"
+      ]
+    }
+  },
+  "trustBar": [
+    "Serving Wichita Since 2014",
+    "Insulation, Weatherization and Windows",
+    "BBB Accredited Business"
+  ],
+  "services": [
+    {
+      "name": "Insulation",
+      "route": "/insulation-wichita-ks/",
+      "blurb": "Attics, floors, walls and crawl spaces, finished by a crew that explains the work first."
+    },
+    {
+      "name": "Window Replacement",
+      "route": "/window-replacement-wichita-ks/",
+      "blurb": "Vinyl windows measured, ordered and put in by our crew."
+    },
+    {
+      "name": "Weatherization",
+      "route": null,
+      "blurb": "Air sealing, door sweeps and weatherization program work."
+    },
+    {
+      "name": "Furnace and AC",
+      "route": null,
+      "blurb": "New furnaces and air conditioners, plus Hitachi mini-split systems."
+    },
+    {
+      "name": "Siding",
+      "route": null,
+      "blurb": "New siding for the outside of your house."
+    },
+    {
+      "name": "Roofing",
+      "route": null,
+      "blurb": "Roofing from the same company that insulates under it."
+    },
+    {
+      "name": "Remodeling",
+      "route": null,
+      "blurb": "Bathrooms and opened-up walls, finished clean."
+    }
+  ],
+  "pages": [
+    {
+      "role": "home",
+      "route": "/home/",
+      "navLabel": "Home",
+      "keyword": "energy efficiency experts Wichita KS",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Independent and local in Wichita",
+        "h1": "Energy Efficiency Experts in Wichita, KS — New Windows For America",
+        "sub": "We insulate Wichita houses, seal the air leaks, replace windows and install furnaces and air conditioners. Our crews tell you what they're doing while they do it, and they leave the house clean. Call us and tell us what's going on in yours.",
+        "primaryCta": {
+          "label": "Call (316) 263-0711",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Get an Estimate",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "home-hero",
+          "alt": "Bright living room in a one-story Kansas home with new white windows letting in morning light",
+          "brief": "bright warm living room in a modest one-story Kansas home, new white vinyl windows on the right wall, soft light falling toward the left, calm plain wall behind the text side, no readable text, no people"
+        }
+      },
+      "sections": [
+        {
+          "type": "review",
+          "quote": "There was no attic access so they ingeniously manufactured one and it is barely noticeable in the room it is in. … There was literally no insulation in the attic as well as below the flooring of this old house. When all was said and done I had a completely weatherized house. … A lot of work was done, and they cleaned up the work area’s so well there was nearly no traces of them ever being here.",
+          "name": "Cary W."
+        },
+        {
+          "type": "prose",
+          "heading": "Start With the Parts of the House You Can't See",
+          "body": [
+            "A cold floor in January. An upstairs that never cools off in August. A furnace that runs and runs and never quite catches up.",
+            "Most people blame the windows, because the windows are the part you can see. But heat leaves a house through whatever part of it has the least in the way, and that is more often the attic, the floor or a gap around a pipe.",
+            "That's why we look at the whole house, not just one part of it. We tell you where it's losing comfort and fix what's actually leaking, whether it turns out to be the attic, the floor, an air leak, the windows or the furnace."
+          ]
+        },
+        {
+          "type": "split",
+          "heading": "Insulation",
+          "body": [
+            "An attic that's too hot to climb into by July is a house that's paying to cool the roof. A floor that's cold under your feet usually has a crawl space under it with nothing between you and the ground.",
+            "Heat moves toward cold, so in winter your warmth heads up and out, and in summer the attic heat comes down. Insulation is what slows that down.",
+            "We insulate attics, floors, crawl spaces and exterior walls, and we wrap and insulate the underside of mobile homes. Before attic insulation goes down, our crews flag the electrical junction boxes so they can be found again. If a house has no way into the attic, we make one."
+          ],
+          "link": {
+            "label": "See insulation in Wichita →",
+            "route": "/insulation-wichita-ks/"
+          },
+          "image": {
+            "slot": "home-insulation",
+            "alt": "Attic between the joists filled with fresh even insulation",
+            "brief": "attic between the joists filled with fresh even insulation, open hatch on the right with light falling toward the left, calm shadowed rafters behind the text side, no readable text, no people"
+          }
+        },
+        {
+          "type": "prose",
+          "heading": "Air Sealing and Weatherization",
+          "body": [
+            "Some drafts aren't about insulation at all. They come in around a back door, under a sink where the pipes go through the wall, at the fireplace, or at the duct work by a floor register.",
+            "Sealing those gaps is the other half of a weatherized house. We install door sweeps and weatherstripping, seal around plumbing, seal duct work at the registers, wrap pipes and put in smoke alarms, and we'll seal a fireplace if you ask.",
+            "A lot of this work happens through the weatherization program run by the South Central Kansas Economic Development District (SCKEDD). We work under that program, and the work is the same insulation and sealing."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "They put insulation in my attic area, fixed the front door sweep, snd fixed my floor in the kitchen.",
+          "name": "Shannon Z."
+        },
+        {
+          "type": "split",
+          "heading": "Window Replacement",
+          "body": [
+            "Windows wear out in ways you can feel before you can see them.",
+            "The curtains move with the window shut. The glass is cold to the touch. There's fog between the panes, a sash that won't stay up, or street noise that comes straight through.",
+            "Each one means a window that has stopped sealing, and you're heating and cooling the outdoors through it.",
+            "We replace them with vinyl windows, and our own crew puts them in.",
+            "Windows are built to the size of your openings, so there is a wait between the estimate and the install day. The install itself is a day's work."
+          ],
+          "link": {
+            "label": "See window replacement in Wichita →",
+            "route": "/window-replacement-wichita-ks/"
+          },
+          "image": {
+            "slot": "home-windows",
+            "alt": "New double-hung window seen from inside a room in morning light",
+            "brief": "new white double-hung window seen from inside a room, window on the right of the frame, morning light falling toward the left, calm plain wall behind the text side, no readable text, no people"
+          }
+        },
+        {
+          "type": "review",
+          "quote": "I highly recommend New Windows for America for new windows or any construction work! They were up front, honest, very very professional, and just a joy to work with. Their attention to detail was impeccable!!",
+          "name": "Deanna T."
+        },
+        {
+          "type": "prose",
+          "heading": "Furnace and AC",
+          "body": [
+            "A furnace that can't keep up is often fighting a house that leaks. Put a new one in a house with an empty attic and you've bought a bigger engine for a car with the windows down.",
+            "We install new furnaces and air conditioners, and we install Hitachi mini-split systems. Hitachi's own contractor page lists us as an authorized manufacturer's rep. Because we insulate too, the same company can fix the equipment and the house around it."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "I had a new furnace and AC compressor put in and the crew was marvelous- friendly, courteous, and professional. The next week a different crew came to add insulation and do other weatherization projects and they also were terrific.",
+          "name": "Diana P."
+        },
+        {
+          "type": "prose",
+          "heading": "Siding, Roofing and Remodeling",
+          "body": [
+            "We also do siding, roofing and remodeling. These are smaller parts of our work than insulation and windows, so call and tell us what you have in mind and we'll tell you what we can do."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "A Crew That Explains the Work",
+          "body": [
+            "Having strangers in your house for a day is easier when you know what they're doing and why. Our crews walk you through the job before they start and keep you posted as they go.",
+            "When they finish, they clean up after themselves. Old materials leave with them, and you shouldn't be able to tell where they worked."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "They insulated it and they explained the process while doing so. … i learned a lot.",
+          "name": "Virginia W."
+        },
+        {
+          "type": "prose",
+          "heading": "An Independent Wichita Company",
+          "body": [
+            "We're independent and locally owned, not a franchise, and we've served Wichita since 2014. We're a BBB Accredited Business with an A+ rating.",
+            "Our crews have worked in Wichita, Newton and Parsons. If you're outside Wichita, call and ask about your town."
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Questions Before You Call",
+          "items": [
+            {
+              "q": "Should I replace my windows or add insulation first?",
+              "a": "If the windows aren't fogged, broken or hard to use, and a room is still hot or cold, start with the attic and floor. They are the likelier cause, and it's usually the cheaper fix. We do both, so we can tell you which one your house needs."
+            },
+            {
+              "q": "How long does a job take?",
+              "a": "Many insulation jobs are done in a day. A whole-house job can bring in more than one crew. Window installs take a day, but the windows are built to order first, so allow weeks between the estimate and install day."
+            },
+            {
+              "q": "Do you do weatherization program work?",
+              "a": "Yes. We work under the SCKEDD Weatherization program. The program decides who qualifies and when your home comes up, and the wait can be long."
+            },
+            {
+              "q": "Will you make a mess?",
+              "a": "Our crews clean up before they leave, and they haul off what they take out."
+            },
+            {
+              "q": "How do I start?",
+              "a": "Call (316) 263-0711 and tell us what's going on in your house: which rooms are cold or hot, where the draft is, what you want done."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Tell Us What's Going On in Your House",
+          "text": "Call and tell us which rooms never get comfortable. We'll tell you whether it's the attic, the floor, the windows or the furnace. Call (316) 263-0711. We serve Wichita and nearby areas."
+        }
+      ]
+    },
+    {
+      "role": "service",
+      "route": "/window-replacement-wichita-ks/",
+      "navLabel": "Window Replacement",
+      "keyword": "window replacement Wichita KS",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Vinyl windows",
+        "h1": "Window Replacement in Wichita, KS — New Windows For America",
+        "sub": "We replace windows for Wichita homeowners with vinyl windows, installed by our own crew. Someone comes to your house, goes over your options and tells you how long it will take. Call us for an estimate.",
+        "primaryCta": {
+          "label": "Call (316) 263-0711",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Get an Estimate",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "windows-hero",
+          "alt": "Front of a one-story ranch house with new white vinyl windows and fresh siding",
+          "brief": "front of a one-story ranch house with new white vinyl windows, house on the right and angled toward the left, calm clear sky behind the text side, no readable text, no people"
+        }
+      },
+      "sections": [
+        {
+          "type": "split",
+          "heading": "When a Window Stops Doing Its Job",
+          "body": [
+            "Windows wear out in ways you can feel before you can see them. The curtains move with the window shut. The glass is cold to the touch in January and hot in July.",
+            "Fog between the panes means the seal around the glass has failed and the air space has filled with moisture. A sash that sticks or won't stay up means the parts that carry it have worn or the frame has shifted.",
+            "Street noise coming straight through is the same story. Every one of these is a window that has stopped sealing, and you are heating and cooling the outdoors through it."
+          ],
+          "image": {
+            "slot": "windows-estimate",
+            "alt": "Double-hung window seen from inside a dining room",
+            "brief": "double-hung window seen from inside a dining room, window on the right, calm plain wall and soft table edge on the left, no readable text, no people"
+          }
+        },
+        {
+          "type": "prose",
+          "heading": "Rule Out the Rest of the House First",
+          "body": [
+            "A drafty room is not always a drafty window. Air leaking in through an empty attic, a bare floor or a gap in a wall can feel just like a window problem.",
+            "New windows will not fix a room that is cold because there's nothing in the wall behind it. That's a job for [insulation](/insulation-wichita-ks/), and insulation is most of what we do.",
+            "So when we come out, we can tell you whether the windows are what's costing you, whether the house is, or whether it's both. If your windows are the problem, replace them. If they're not, we'll say so."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "What the Estimate Is For",
+          "body": [
+            "Replacing windows is a big decision, and the estimate is where you make it. You should leave knowing your options, what we can do for you and how long it will take.",
+            "That's all an estimate should be. It's a conversation about your house, and you shouldn't have to sign the same day."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "I had three different companies come out for estimates, and all of them told me 14 to 18 weeks. Two of the companies told me if I didn't say yes that day they will go up 20% the next day. Heath with New Windows For America was the last company that came out for my estimate, and I'm so glad he did. He went over all my options, what he could do for me, and how long it would take. … I originally was told 14 to 18 weeks (same as the other companies), but they came in 7 weeks! … His crew came out the next week and had them done in one day by a very professional crew!",
+          "name": "Deric C."
+        },
+        {
+          "type": "prose",
+          "heading": "Made to Order, Installed in a Day",
+          "body": [
+            "Replacement windows are built to the size of your openings. That's why there is a wait between the estimate and the day the crew shows up, and it's the part of the job people don't expect.",
+            "The install itself doesn't take long. A crew can put in a whole house of windows in a day, as the review above shows.",
+            "When the windows arrive, our crew installs them, and the date you were given is a date you can plan around."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Service was great. My windows showed up on time like the salesperson said they would. I love the look of the product. Good quality. I would definitely use this company again.",
+          "name": "Lisa W."
+        },
+        {
+          "type": "prose",
+          "heading": "Comparing Window Quotes",
+          "body": [
+            "If you're getting more than one estimate, compare the same things on each. Ask how many windows are in the quote, how long until they're installed, and what the price covers.",
+            "Ask whether the install is part of the price, and who does it: the company's own crew or someone hired for the job. A low number means little if the install date is five months out.",
+            "And if anyone tells you the price goes up tomorrow unless you sign today, you can take that as a reason to slow down. A window is something you'll look at every day for years."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Why Vinyl",
+          "body": [
+            "We replace windows with vinyl windows. Vinyl frames don't rot, don't need painting and don't swell shut in the humid months the way an old wood frame can.",
+            "A vinyl window has a sealed glass unit and weatherstripping that presses against the sash, so it closes tight and stays closed. In a house that's lost its seals, you can feel that on the first cold day."
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Questions Before You Call",
+          "items": [
+            {
+              "q": "How long until my windows are installed?",
+              "a": "Plan on weeks between the estimate and install day, because the windows are built to order. In the review above, other companies quoted 14 to 18 weeks and ours came in at 7. The install is a day."
+            },
+            {
+              "q": "Should I do windows or insulation first?",
+              "a": "If a window is fogged, broken or hard to open, replace it. If your windows are fine and a room is still hot or cold, the attic or floor is the likelier cause, and we do that work too."
+            },
+            {
+              "q": "Do you do anything besides windows?",
+              "a": "Yes. Insulation is most of our work, and we also do air sealing, furnaces and air conditioners, siding, roofing and remodeling."
+            },
+            {
+              "q": "Where do you work?",
+              "a": "Wichita and nearby areas."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Get an Estimate on Your Windows",
+          "text": "Call and tell us which windows are giving you trouble. Someone will come out, look at them, go over your options and tell you how long it will take. Call (316) 263-0711. We install windows across Wichita and nearby towns."
+        }
+      ]
+    },
+    {
+      "role": "service",
+      "route": "/insulation-wichita-ks/",
+      "navLabel": "Insulation",
+      "keyword": "insulation Wichita KS",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Attics, floors, walls and crawl spaces",
+        "h1": "Insulation in Wichita, KS — New Windows For America",
+        "sub": "Most of what we do is insulate Wichita houses: attics, floors, crawl spaces, walls and the undersides of mobile homes. Our crews explain the work before they start and clean up when they finish. Call us and tell us which rooms never get comfortable.",
+        "primaryCta": {
+          "label": "Call (316) 263-0711",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Get an Estimate",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "insulation-hero",
+          "alt": "Attic with deep fresh insulation between the rafters",
+          "brief": "attic with deep fresh insulation between the rafters running toward the left, light from an open hatch on the right, calm shadowed rafters behind the text side, no readable text, no people"
+        }
+      },
+      "sections": [
+        {
+          "type": "split",
+          "heading": "Where Your House Loses Its Comfort",
+          "body": [
+            "In July, the attic is the hottest place in the house, and that heat works its way down into the rooms below. In January, the cold comes up through the floor and the warmth you paid for goes out through the ceiling.",
+            "Insulation slows that movement. A house with little or none works against its own furnace and air conditioner all year.",
+            "You usually notice it before you understand it: a bedroom that never gets right, a floor you won't walk on barefoot, a utility bill that doesn't match the size of the house. Those often point to insulation before they point to windows."
+          ],
+          "image": {
+            "slot": "insulation-main",
+            "alt": "Crawl space with a clean vapor barrier laid on the ground",
+            "brief": "crawl space with a clean vapor barrier laid over the ground, opening on the right with light falling toward the left, calm dark floor behind the text side, no readable text, no people"
+          }
+        },
+        {
+          "type": "review",
+          "quote": "New windows for America came out and put insulation in my exterior walls, and then sealed some air leaks in my attic. They did an outstanding job in the 100° Heat.",
+          "name": "Bruce F."
+        },
+        {
+          "type": "prose",
+          "heading": "Attics",
+          "body": [
+            "The attic is where a house gains the most heat in summer and loses the most in winter, so it's the first place to look.",
+            "A lot of old attics have thin insulation or none at all.",
+            "Before the attic insulation goes in, our crews flag the electrical junction boxes, so the boxes can be found again later and don't get buried.",
+            "Some older houses have no way into the attic at all. When that happens, we build an access panel so the crew can get in."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Floors and Crawl Spaces",
+          "body": [
+            "If your floors are cold, look underneath. A house over a crawl space often has bare joists with nothing between your feet and the ground, and the pipes run through that same cold air.",
+            "Our crews insulate under the floors and lay a vapor barrier on the ground in the crawl space. They wrap exposed pipes and seal duct work where it meets the floor registers. They also seal the gaps where plumbing comes through, like under a sink."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "I am part of a grant project, the crew that was sent to put in weatherization, insulate attic and crawl space, the crew, Zach, Damion and Shorty were amazing!! It was during the bitter cold snap and they just kept working till everything was completed.",
+          "name": "Connie H."
+        },
+        {
+          "type": "prose",
+          "heading": "Walls",
+          "body": [
+            "Walls are the hardest part of an old house to improve, because you can't see inside them. In an older Wichita house, an exterior wall can have little or no insulation in it.",
+            "We insulate exterior walls too, and we'll seal air leaks in the attic on the same visit."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Mobile Homes",
+          "body": [
+            "A mobile home loses much of its heat through the underside. The belly is thin, and the wind gets under it.",
+            "We wrap the underside and install insulation behind the wrap. That keeps the cold and the wind from pulling heat out of the floor."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "They showed up on time! They were very professional. … They wrapped the underside of our mobile home and installed insulation behind the wrap.",
+          "name": "Judy N."
+        },
+        {
+          "type": "prose",
+          "heading": "The Weatherization Program",
+          "body": [
+            "A lot of our insulation work happens through the weatherization program run by the South Central Kansas Economic Development District (SCKEDD). We work under that program.",
+            "You apply to the program to see if you qualify. The program decides who qualifies and when your home comes up, and the wait can be long. When your home comes up, our crews do the insulation, the air sealing and the other weatherization work.",
+            "If you're not sure whether you're in the program, or you want to know where to start, call us."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "How a Job Goes",
+          "body": [
+            "Before the work begins, the crew tells you what they're going to do. You aren't left guessing what's going on in your attic or under your floor.",
+            "Many insulation jobs are finished in a day. A whole-house job with an attic, a crawl space and air sealing can bring in more than one crew.",
+            "When they leave, the work area is clean and the old material is gone."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "The supervisor explained everything they were going to do before they started working. I figured they would take all day but they had the job done in no time.",
+          "name": "Rina B."
+        },
+        {
+          "type": "review",
+          "quote": "Congenial, professional and timely, they excelled at their jobs and left my home as clean as when they arrived.",
+          "name": "Dell J."
+        },
+        {
+          "type": "faq",
+          "heading": "Questions Before You Call",
+          "items": [
+            {
+              "q": "Will insulation lower my bills?",
+              "a": "It slows the heat moving through your attic, floor and walls, so your furnace and air conditioner run less to hold the same temperature. The comfort shows up first. We don't promise a percentage, because it depends on how little you have now."
+            },
+            {
+              "q": "Is my house too old or too small?",
+              "a": "Older houses often gain the most, since they were built with little or no insulation. We've insulated mobile homes and an old house with no way into the attic."
+            },
+            {
+              "q": "Do I have to be in the weatherization program?",
+              "a": "Call and tell us about your house. Let us know whether you're already in the program or you just want your attic done, and we'll tell you how we can help."
+            },
+            {
+              "q": "Should I do windows instead?",
+              "a": "If a window is fogged, broken or hard to use, replace it. If your windows are fine and a room is still hot or cold, start here. We do [window replacement](/window-replacement-wichita-ks/) too, so you'll hear which one your house needs."
+            },
+            {
+              "q": "Where do you work?",
+              "a": "Wichita and nearby areas. Our crews have worked in Newton and Parsons."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Tell Us Which Rooms Never Get Comfortable",
+          "text": "Call and tell us what's going on in your house, and we'll tell you where to look first. Call (316) 263-0711. Our crews cover Wichita, Newton and Parsons."
+        }
+      ]
+    },
+    {
+      "role": "contact",
+      "route": "/contact/",
+      "navLabel": "Contact",
+      "keyword": "contact New Windows For America Wichita KS",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Contact",
+        "h1": "Contact New Windows For America",
+        "sub": "Call us and tell us what is going on in your house. We serve Wichita and nearby areas.",
+        "primaryCta": {
+          "label": "Call (316) 263-0711",
+          "action": "call"
+        },
+        "image": {
+          "slot": "contact-hero",
+          "alt": "Front porch of a Kansas home at dusk with warm light in the windows",
+          "brief": "front porch of a Kansas home at dusk, warm light in the windows, front door on the right, porch steps toward the left, calm soft sky behind the text side, no readable text, no people"
+        },
+        "secondaryCta": {
+          "label": "What to Have Ready",
+          "action": "contact"
+        }
+      },
+      "sections": [
+        {
+          "type": "prose",
+          "heading": "Call Us",
+          "body": [
+            "Call (316) 263-0711.",
+            "Tell us whether it's the attic, the floors, the windows or the furnace, and we'll take it from there."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "What to Have Ready",
+          "body": [
+            "You don't need to know the answer to any of these. It just helps to have a few things in mind when you call."
+          ],
+          "list": [
+            "Which rooms are cold, hot, drafty or loud",
+            "Whether you want insulation, windows or both",
+            "Whether your furnace or air conditioner needs a look",
+            "Whether you are already part of the SCKEDD weatherization program"
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Where We Work",
+          "body": [
+            "We serve Wichita and nearby areas, and our crews have worked in Newton and Parsons. If you're in a town not on that list, call and ask."
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Before You Call",
+          "items": [
+            {
+              "q": "Do you work on weatherization program homes?",
+              "a": "Yes. We work under the SCKEDD Weatherization program. If you're not in the program, call and tell us what you're after."
+            },
+            {
+              "q": "Do you do windows as well as insulation?",
+              "a": "Yes. We replace windows and insulate, and we install furnaces and air conditioners."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "about": "New Windows For America is an independent Wichita company that insulates and weatherizes homes and replaces windows. We have served Wichita since 2014.",
+    "why": [
+      "Crews that explain the work first",
+      "A clean house when we leave",
+      "Insulation, windows, furnace and AC from one company",
+      "BBB Accredited Business"
+    ]
+  },
+  "strategy": {
+    "whyHeading": "Why we built this site",
+    "why": [
+      "Today a homeowner who finds your site can't call you. There is no phone number on it, and your Services, About and Contact pages all say \"Page Not Found\".",
+      "Your customers describe a crew that \"explained everything they were going to do before they started working\" and \"left my home as clean as when they arrived.\" 36 of your 48 written Google reviews are insulation and weatherization jobs, yet your site says \"Known for windows\"."
+    ],
+    "cardsHeading": "Be the Insulation Company People Find on Google",
+    "cardsIntro": "Each card is one page of the demo: what costs you calls today, and how the demo fixes it.",
+    "cards": [
+      {
+        "route": "/home/",
+        "title": "Homepage",
+        "why": "The first page people see, and the one Google reads to learn who you are and where you work.",
+        "problems": [
+          "There is no phone number anywhere on the page, so someone on a phone ready to call has nothing to tap.",
+          "The word \"Wichita\" appears nowhere on the page, so Google can't tell you serve Wichita.",
+          "The headline says \"Known for windows\" while most of your reviews are about insulation, so people searching for insulation never see you.",
+          "The page is set to a desktop width, so phones show it shrunken."
+        ],
+        "fixes": [
+          "Your number, (316) 263-0711, is a one-tap call on every page.",
+          "A headline that says insulation and window company in Wichita, KS, right at the top.",
+          "Pages sized for a phone, with nothing to pinch or zoom."
+        ],
+        "alsoAdd": "On day one, we sit down with you to get what makes you the obvious choice, every service you offer and every town you work in. That becomes the prescription: how many pages, in how many towns, so Google and AI tools can find you for every service."
+      },
+      {
+        "route": "/window-replacement-wichita-ks/",
+        "title": "Window Replacement",
+        "why": "Windows lead your site, and they have no page of their own.",
+        "problems": [
+          "The \"Vinyl Windows\" tile opens Page Not Found, so window shoppers hit a dead end.",
+          "Nothing explains your estimate or timeline, so someone comparing quotes has no reason to pick you."
+        ],
+        "fixes": [
+          "A full page for window replacement in Wichita, KS.",
+          "The estimate, the timeline and install day explained, with a review beside each."
+        ],
+        "alsoAdd": "Pages planned from what Google actually shows for each search, so every page targets something people really look for."
+      },
+      {
+        "route": "/insulation-wichita-ks/",
+        "title": "Insulation",
+        "why": "Insulation and weatherization are three quarters of your written reviews, and your site mentions insulation only in passing.",
+        "problems": [
+          "Insulation shows up once in a banner and once in a sentence, with no page, so homeowners searching for it don't find you.",
+          "Nothing shows the attics, crawl spaces and mobile homes your crews insulate."
+        ],
+        "fixes": [
+          "A full page for insulation in Wichita, KS.",
+          "Attics, walls, crawl spaces and mobile homes, each proven by your customers' own reviews."
+        ],
+        "alsoAdd": "A check of what your competitors offer, so services you didn't think to mention still get their own pages."
+      },
+      {
+        "route": "/contact/",
+        "title": "Contact",
+        "why": "The page where interest turns into a call.",
+        "problems": [
+          "The Contact link opens Page Not Found: no form, number or address, so a ready customer leaves."
+        ],
+        "fixes": [
+          "A real contact page with your number one tap away.",
+          "A short list of what to have ready when you call."
+        ],
+        "alsoAdd": "Call and form tracking that shows which pages and towns your leads come from."
+      }
+    ],
+    "reportCardHeading": "What great insulation company websites get right, and how yours measures up.",
+    "reportCard": [
+      {
+        "label": "Headline says what you do and where",
+        "status": "Needs work"
+      },
+      {
+        "label": "Phone number shows and dials",
+        "status": "Missing"
+      },
+      {
+        "label": "Each money service has its own page",
+        "status": "Missing"
+      },
+      {
+        "label": "Real reviews shown",
+        "status": "Missing"
+      },
+      {
+        "label": "Menu and buttons open real pages",
+        "status": "Missing"
+      },
+      {
+        "label": "Easy to read on a phone",
+        "status": "Needs work"
+      }
+    ],
+    "closing": {
+      "heading": "Want a website like this for your business?",
+      "text": "Your customers already say your crews explain the work and leave the house clean. Book a strategy call with Fluid Frame and we'll walk you through this demo and confirm every service with you."
+    }
+  },
+  "onboardingQuestions": [
+    "Owner: BBB says Heath Marx, one review has Heath doing a window estimate, and an older record may say Kirby Stucky. Who owns the company, and how should the owner be introduced?",
+    "Founding year: the site says since 2014, BBB says founded 1998. Which do you want shown?",
+    "Phone: (316) 263-0711 matches Google, BBB and Hitachi. Is (316) 832-1004 a second line or old?",
+    "Street address, hours and an email to show: 3949 N Bridgeport Cir, Wichita is on Google and BBB; other listings show Park City and S Laura St.",
+    "Full list of services: roofing, siding, remodeling and sliding patio doors have little or no review evidence.",
+    "Hitachi: authorized dealer of mini-split and VRF systems? Any tier or certification?",
+    "Window brand and warranty in writing. A 2019 review says a lifetime warranty was not honored, so no warranty is claimed.",
+    "Are estimates free? Is financing offered?",
+    "How far do crews travel? Reviews place work in Newton and Parsons.",
+    "Licensing, insurance, roofing license and BBB details to verify and show.",
+    "Typical window timelines: the 7-week job is one review.",
+    "May we name crew leads on the site? Reviewers praise them by name.",
+    "Who answers the phone and returns voicemails? Two reviews (2019, 2025) report unanswered calls.",
+    "Logo file and brand colors."
+  ]
+}

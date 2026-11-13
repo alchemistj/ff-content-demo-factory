@@ -1,0 +1,695 @@
+{
+  "schema": "words-package/v1",
+  "business": {
+    "name": "Ash's Barber Collective",
+    "slug": "ashs",
+    "city": "Ozark",
+    "state": "MO",
+    "companyType": "Barbershop",
+    "owners": [
+      "Ash"
+    ],
+    "phones": [
+      {
+        "label": "Ozark",
+        "display": "(417) 380-3078",
+        "tel": "+14173803078"
+      }
+    ],
+    "email": null,
+    "hours": null,
+    "address": "5104 N 22nd St, Ozark, MO 65721",
+    "bookingUrl": "https://book.squareup.com/appointments/77swrfww28wf0y/location/L7RTB2NJBH1F8/services",
+    "serviceArea": {
+      "summary": "Ozark, MO",
+      "towns": [
+        "Ozark"
+      ]
+    }
+  },
+  "trustBar": [
+    "Highly rated on Google",
+    "Book online any time",
+    "Wheelchair accessible",
+    "Ozark, MO"
+  ],
+  "services": [
+    {
+      "name": "Barber Haircuts",
+      "route": null,
+      "blurb": "Classic barber cuts, refined visit by visit until the cut is really yours."
+    },
+    {
+      "name": "Fades and Tapers",
+      "route": null,
+      "blurb": "Low, mid, high and skin fades with a clean blend and neckline."
+    },
+    {
+      "name": "Kids and Teen Haircuts",
+      "route": "/kids-teen-haircuts-ozark-mo/",
+      "blurb": "First haircuts, cowlicks and teen fades, with the kid asked what they want."
+    },
+    {
+      "name": "Beard Trim, Cut and Shaping",
+      "route": "/beard-trim-cut-shape-ozark-mo/",
+      "blurb": "Beard work matched to your face and the haircut, in the same visit if you like."
+    }
+  ],
+  "pages": [
+    {
+      "role": "home",
+      "route": "/home/",
+      "navLabel": "Home",
+      "keyword": "barbershop Ozark MO",
+      "seo": {
+        "title": "Barbershop in Ozark, MO | Ash's Barber Collective",
+        "description": "A barbershop in Ozark, MO where the cut gets better every visit. Haircuts, fades, kids and teen cuts and beard work. Call or book online."
+      },
+      "hero": {
+        "eyebrow": "Haircuts, fades, kids and beards in Ozark",
+        "h1": "Barbershop in Ozark, MO — Ash's Barber Collective",
+        "primaryCta": {
+          "label": "Call (417) 380-3078",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Book Your Haircut",
+          "action": "contact"
+        },
+        "sub": "Your haircut should get better every time you sit down. Ash starts with the cut you ask for, then learns what works on you and keeps refining it. Call or book a chair.",
+        "image": {
+          "slot": "home-hero",
+          "alt": "Ash smiling at her barber station at Ash's Barber Collective in Ozark, MO",
+          "brief": "Real shop photo, no AI image: use barber-ozark-mo-haircut-chair.webp from Ash's current demo (ff-astro-demos branch claude/ashs-photo-placeholders, clients/ashs-barber-collective/public/images/). Crop so Ash's face stays clear of the text side."
+        }
+      },
+      "sections": [
+        {
+          "type": "review",
+          "quote": "Ashley is the only person I've found in the area that cuts my hair just the way I like it every time!",
+          "name": "Levi B."
+        },
+        {
+          "type": "prose",
+          "heading": "A Cut That Gets Better Every Visit",
+          "body": [
+            "Most barbers aim to repeat the last cut. That's the floor here, not the goal.",
+            "A haircut wears differently than it looks in the chair. It sits one way with a collared shirt and another with a hoodie. It feels different at work, on a weekend and after a week of Missouri humidity.",
+            "So each visit starts with how the last one wore.",
+            "What did you like by day ten? What bugged you? Did the top fall the way you wanted with what you actually wear?",
+            "Ash takes that in and adjusts. A little more off the crown, a softer line at the neck, a fade that sits lower. Visit by visit, the cut moves toward the one that's really yours.",
+            "You get the cut you ask for every time. You also get a barber who keeps working on it with you."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Just moved to this Ozark Community from Kansas. Needed a barber to take care of my hair needs...Can't say enough about Ash, fantastic barber and great for conversation.",
+          "name": "Gordon W."
+        },
+        {
+          "type": "prose",
+          "heading": "Haircuts and Fades",
+          "body": [
+            "The grown-out fade is the haircut moment everyone knows. A week after the cut, the sides have lost their shape and you're looking at the calendar.",
+            "A fade is a blend. The hair goes from short at the bottom to longer on top with no line where one length stops and the next begins.",
+            "That is why a bad fade is so obvious. A rushed blend shows a step, and as it grows out the shape falls apart faster than it should. A clean one grows out evenly, and you can keep the look for weeks.",
+            "We cut classic barber haircuts, tapers, and fades low, mid and high. Skin fades and clean necklines are part of the same work. Show us the photo and we'll match the guard lengths and the line."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Best haircut I've gotten, the fade she does is crazy good, I will definitely be going back",
+          "name": "Austin C."
+        },
+        {
+          "type": "prose",
+          "heading": "Kids and Teens",
+          "body": [
+            "Some kids dread the chair. They squirm, they hate the sound of clippers, or the last haircut left them with something they never asked for.",
+            "We ask the kid what they want, not just the parent, and we cut it. A kid who sees the barber listening sits still longer, and a kid who likes the result asks to come back. Teens get the same fades and tapers as the adults in the next chair.",
+            "Cowlicks, a first haircut and a toddler who won't hold still are all normal for us. The kids' page covers how a visit goes and what to do before you come in."
+          ],
+          "link": {
+            "label": "See kids and teen haircuts →",
+            "route": "/kids-teen-haircuts-ozark-mo/"
+          }
+        },
+        {
+          "type": "prose",
+          "heading": "Beard Trim, Cut and Shaping",
+          "body": [
+            "A beard grows out of shape slowly, so you don't notice until the cheek line has drifted, the neck has gone fuzzy and one side is longer than the other.",
+            "Trimming, cutting and shaping are three different jobs.",
+            "A trim keeps your length and tidies it.",
+            "A cut takes the beard shorter. Shaping sets the cheek line and neckline so the edges look deliberate. We do all three, and we can do them in the same visit as your haircut so the lines on your head and your face match."
+          ],
+          "link": {
+            "label": "See beard trim, cut and shaping →",
+            "route": "/beard-trim-cut-shape-ozark-mo/"
+          }
+        },
+        {
+          "type": "prose",
+          "heading": "Easy to Book, Easy to Come Back To",
+          "body": [
+            "A barber you can't get on the calendar doesn't help you. A barber you can't reach doesn't either.",
+            "You book a time on our online Square page, or call the shop at (417) 380-3078. Booking a haircut and a beard trim together works the same way: say you want both and we set aside the time.",
+            "Fast service matters because you have somewhere to be. The conversation matters because you're sitting in the chair for a while."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Absolutely love going to visit Ash she does an amazing job with my hair and is extremely quick with it always good conversation! She's got all sorts of gear to do exactly what you need done I would recommend her to anyone you will not be disappointed!",
+          "name": "Brady R."
+        },
+        {
+          "type": "steps",
+          "heading": "What a Visit Looks Like",
+          "items": [
+            {
+              "title": "Book a time.",
+              "text": "Pick a slot on the booking page, or call or text."
+            },
+            {
+              "title": "Say what you want.",
+              "text": "The length on top, the sides, the neckline. A photo is the fastest way to say it."
+            },
+            {
+              "title": "Sit back.",
+              "text": "The cut gets done the way you described it, and you check it before you get up."
+            },
+            {
+              "title": "Tell us how it wore.",
+              "text": "Next visit, start with what you liked and what you'd change. That's how the cut keeps getting better."
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Find Us on N 22nd St",
+          "body": [
+            "A haircut is a small errand that shouldn't take a lot of figuring out. Here is where to go.",
+            "We're at 5104 N 22nd St in Ozark, MO 65721. The entrance is wheelchair accessible.",
+            "If you want to be sure you have the right place, call (417) 380-3078 and we'll point you in."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "The place has a lovely environment and is relaxing",
+          "name": "Takota S."
+        },
+        {
+          "type": "faq",
+          "heading": "Questions Before You Book",
+          "items": [
+            {
+              "q": "How do I book?",
+              "a": "Use the Book Your Haircut button on this page to pick a time on our Square booking page. You can also call (417) 380-3078."
+            },
+            {
+              "q": "Can I get a haircut and a beard trim in the same visit?",
+              "a": "Yes. Tell us when you book that you want both and we'll set aside the time."
+            },
+            {
+              "q": "Do you cut kids' and teens' hair?",
+              "a": "Yes, from first haircuts to teen fades. [Kids and teen haircuts](/kids-teen-haircuts-ozark-mo/) has the details."
+            },
+            {
+              "q": "What should I bring?",
+              "a": "A photo of the cut you want. If you don't have one, describe it in plain words: how short on the sides, how much on top, where the neckline sits."
+            },
+            {
+              "q": "Is the shop wheelchair accessible?",
+              "a": "Yes. The entrance is wheelchair accessible."
+            },
+            {
+              "q": "Where are you?",
+              "a": "5104 N 22nd St, Ozark, MO 65721."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Pick a Time and Come In",
+          "text": "Book online or call (417) 380-3078. Tell us the cut you want and we'll cut it."
+        }
+      ]
+    },
+    {
+      "role": "service",
+      "route": "/beard-trim-cut-shape-ozark-mo/",
+      "navLabel": "Beard Trim",
+      "keyword": "beard trim Ozark MO",
+      "seo": {
+        "title": "Beard Trim in Ozark, MO | Ash's Barber Collective",
+        "description": "Beard trims, cuts and shaping in Ozark, MO, matched to your face and your haircut. Call or book online."
+      },
+      "hero": {
+        "eyebrow": "Beard barber in Ozark",
+        "h1": "Beard Trim in Ozark, MO — Ash's Barber Collective",
+        "primaryCta": {
+          "label": "Call (417) 380-3078",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Book Your Beard Appointment",
+          "action": "contact"
+        },
+        "sub": "A beard grows out of shape a little at a time, until the cheek line has drifted and the neck has gone fuzzy. A beard trim at Ash's brings it back to a shape that looks chosen. Book online or call.",
+        "image": {
+          "slot": "beard-hero",
+          "alt": "Ash at her barber station in Ozark, MO",
+          "brief": "Real shop photo, no AI image: use beard-trim-cut-shape-ozark-mo-barber.webp from Ash's current demo (ff-astro-demos branch claude/ashs-photo-placeholders, clients/ashs-barber-collective/public/images/). Crop so Ash's face stays clear of the text side."
+        }
+      },
+      "sections": [
+        {
+          "type": "review",
+          "quote": "Ashley always does an amazing job. Would recommend for anyone looking for a hair cut and/or a beard trim.",
+          "name": "Scott W."
+        },
+        {
+          "type": "prose",
+          "heading": "When a Beard Needs a Trim",
+          "body": [
+            "You can usually tell. One side is longer than the other, stray hairs run down the neck and the edge along your cheek has blurred.",
+            "Hair grows at different speeds on different parts of the face, so a beard loses its shape faster than the hair on your head. A beard that is the right length can still look unfinished.",
+            "A trim fixes that without changing how your beard looks. The length stays, the surface evens out, and the edges come back."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Trim, Cut and Shaping: Which One Do You Need?",
+          "body": [
+            "These three terms get mixed up, so here is how we use them.",
+            "**Beard trim.** Maintenance. Your beard keeps about the same length. We even out the surface, clean up stray hairs and tidy the edges.",
+            "**Beard cut.** A change in length. If the beard has grown past where you like it, or you want to go from full to short, a cut takes real length off and gives you a new starting point.",
+            "**Beard shaping.** The lines. We set the cheek line and the neckline so the beard has clear edges.",
+            "Most men want a mix.",
+            "A long beard may need a cut and then shaping. A short one may only need a trim. Tell us what you're after when you sit down and we'll build the right combination."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Which One to Book",
+          "list": [
+            "The length is right but it looks messy: a beard trim.",
+            "It's longer than you want, or you want a new length: a beard cut.",
+            "The length is fine but the edges aren't clean: beard shaping.",
+            "You want a different look overall: a cut with shaping."
+          ],
+          "tail": [
+            "If you can't tell which is which, show up and say so. We'll look at the beard and tell you what it needs."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Haircut and Beard in One Visit",
+          "body": [
+            "Book a haircut and beard work together and the same barber cuts both, so the lines match. The sides of your haircut can blend into the beard, a fade into the beard with no hard break at the sideburn.",
+            "Tell us you want both when you book, and we'll set aside the time."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Ashley did a wonderful job on my hair cut, looked exactly how I wanted it to be.",
+          "name": "Zach P."
+        },
+        {
+          "type": "prose",
+          "heading": "Getting Ready for Your Appointment",
+          "body": [
+            "Come in with the beard you have. You don't need to comb it into shape or trim it first. A beard trimmed at home the night before is harder to shape, because the uneven spots hide the way it naturally grows.",
+            "A photo of the look you want helps a lot. Point out any cowlick, patchy spot or thin side so we can work around it."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Patchy and Thin Spots",
+          "body": [
+            "Many beards run thick at the chin and thin out on the cheeks. A beard like that looks best with a length and a line chosen around the patches, not in spite of them.",
+            "We look at where the beard is full and where it's sparse, then pick a shape that makes it look full."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Beard Oil",
+          "body": [
+            "Ash keeps a collection of beard oils at her station in the shop. Ask about them when you're in the chair."
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Questions About Beard Work",
+          "items": [
+            {
+              "q": "Can I get a beard trim without a haircut?",
+              "a": "Yes. Book it on its own or add it to a haircut."
+            },
+            {
+              "q": "What's the difference between a trim and a cut?",
+              "a": "A trim keeps your length and cleans up. A cut takes the beard shorter."
+            },
+            {
+              "q": "Can you shape a beard that has grown out?",
+              "a": "Yes. If it has also grown past the length you like, we cut it down and then shape it."
+            },
+            {
+              "q": "How often should I come in?",
+              "a": "It depends on how fast you grow and how sharp you like the edges. Many men with a shaped beard come every few weeks, and you can plan your schedule with us after your first visit."
+            },
+            {
+              "q": "How do I book beard work?",
+              "a": "Tap Book Your Beard Appointment, pick a time and tell us what you want when you sit down. You can also call (417) 380-3078."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Book a Beard Appointment",
+          "text": "We're at 5104 N 22nd St in Ozark. Call (417) 380-3078 or book online."
+        }
+      ]
+    },
+    {
+      "role": "service",
+      "route": "/kids-teen-haircuts-ozark-mo/",
+      "navLabel": "Kids and Teens",
+      "keyword": "kids haircuts Ozark MO",
+      "seo": {
+        "title": "Kids and Teen Haircuts in Ozark, MO | Ash's Barber Collective",
+        "description": "Kids and teen haircuts in Ozark, MO: first haircuts, cowlicks and teen fades. Call or book online."
+      },
+      "hero": {
+        "eyebrow": "Kids and teen barber in Ozark",
+        "h1": "Kids and Teen Haircuts in Ozark, MO — Ash's Barber Collective",
+        "primaryCta": {
+          "label": "Call (417) 380-3078",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Book a Kids or Teen Haircut",
+          "action": "contact"
+        },
+        "sub": "A kid who hates haircuts usually hates being rushed, held still and handed something they didn't ask for. We take the time, ask your child what they want and cut it. Book a chair for your son or daughter, or call to talk it through first.",
+        "image": {
+          "slot": "kids-hero",
+          "alt": "Ash at her barber station, ready for a kids' haircut in Ozark, MO",
+          "brief": "Real shop photo, no AI image: use kids-teen-haircuts-ozark-mo-fade.webp from Ash's current demo (ff-astro-demos branch claude/ashs-photo-placeholders, clients/ashs-barber-collective/public/images/). Crop so Ash's face stays clear of the text side."
+        }
+      },
+      "sections": [
+        {
+          "type": "review",
+          "quote": "I just give her an idea of what I'm wanting for my kids and she always blows it out of the park! The kids finally look forward to haircuts because they are getting what they want, not just a quick cut. She's very detailed with every cut!",
+          "name": "Sabrina L."
+        },
+        {
+          "type": "prose",
+          "heading": "Why Kids Fight the Chair",
+          "body": [
+            "A haircut is odd for a child. Someone they don't know stands behind them with buzzing clippers near their ears and tells them not to move.",
+            "Add a quick cut that skips what they asked for and you get a kid who dreads next time. It isn't stubbornness. It's a reasonable reaction to a bad few minutes.",
+            "The fix is a barber who slows down, talks to the kid instead of over them and works with the head they actually have."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "What We Do Differently",
+          "body": [
+            "We ask your child what they want. A five-year-old can tell us \"short on the sides\" or \"like my dad's,\" and a teen can show us a photo. Then we cut that.",
+            "We stay engaged with the kid through the whole cut. Talking while we work keeps small kids calm, and it lets us check that the haircut is going the way they pictured it.",
+            "The result is a child who sits in the chair because they know what's coming and they like how they look when it's done."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Excellent customer service. She did a great job on my son's hair. Very engaged with him during his appointment.",
+          "name": "Brandy C."
+        },
+        {
+          "type": "prose",
+          "heading": "Cowlicks, Part Lines and Hair That Won't Behave",
+          "body": [
+            "Cowlicks are patches of hair that grow in a different direction from the rest. Kids have them at the crown, at the front hairline and behind the ears, and they decide how a cut lies.",
+            "Cut against a cowlick without noticing and the hair sticks up all week. A barber who sees it first leaves the hair longer there, or cuts with the direction it grows, so the style sits flat.",
+            "A hard part is a shaved line that separates the top from the side. On a child with several cowlicks it takes patience to get straight."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "My son is 5 and Ash did such a good job on his hair. He's got multiple cowlicks. She did his hard-part expertly and blended everything beautifully. Very thorough, with awesome attention to detail.",
+          "name": "Josie M."
+        },
+        {
+          "type": "prose",
+          "heading": "Toddlers and First Haircuts",
+          "body": [
+            "Toddlers don't know what a haircut is. They know the chair is high, the cape is strange and the clippers are loud.",
+            "We cut toddlers' hair, and a first haircut is a normal visit for us. Tell us it's a first when you book or when you sit down so we can go at the pace your child sets.",
+            "A few things help any small child.",
+            "Tell them ahead of time that they'll sit in a big chair and the barber will trim their hair, and that it doesn't hurt. Bring them when they're rested and fed. Stay where they can see you."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "I bring my toddlers here too, and she's amazing with them.",
+          "name": "Mark B."
+        },
+        {
+          "type": "prose",
+          "heading": "Teen Cuts: Fades, Tapers and Photos",
+          "body": [
+            "Teens have opinions about their hair, and they should. Let them pick the cut. A teenager who chose the style wears it better than one who got whatever a parent picked.",
+            "Most teen styles are a taper or a fade.",
+            "A taper gets gradually shorter toward the neck and around the ears. A fade blends the sides from longer down to very short, and a skin fade takes the bottom down to the skin. The top can stay longer and textured so it holds a style.",
+            "If your teen doesn't know what the cut is called, a photo works. We turn it into the right guard lengths and the right blend, and finish with a clean neckline."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Booking for More Than One Kid",
+          "body": [
+            "Book each child a separate time, back to back, and tell us you're coming together. A parent can book a haircut or a beard trim in the same stretch, so you get everyone done in one trip. Say what you want when you book and we'll set aside the time."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "What to Do Before You Come In",
+          "list": [
+            "Tell your child where you're going and what happens: a chair, a cape, clippers or scissors, no pain.",
+            "Let a teen choose the cut and save a photo on your phone.",
+            "Tell us about cowlicks, sensitive ears or a past bad haircut. It changes how we cut.",
+            "Mention a first haircut when you book."
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Questions Parents Ask",
+          "items": [
+            {
+              "q": "Do you cut kids' hair?",
+              "a": "Yes. Kids' haircuts are a regular part of what we do, and so are teen cuts."
+            },
+            {
+              "q": "Do you do fades for teens?",
+              "a": "Yes: tapers, fades and skin fades, with a clean line at the neckline and forehead."
+            },
+            {
+              "q": "Can my child get a first haircut with you?",
+              "a": "Yes. Let us know when you book and we'll go at your child's pace."
+            },
+            {
+              "q": "What if my child won't sit still?",
+              "a": "It happens with little ones. Tell us up front. Explaining what we're doing and keeping the parent nearby usually helps."
+            },
+            {
+              "q": "Can I bring a photo?",
+              "a": "Please do. It's the fastest way to get the length on top, the sides and the neckline right."
+            },
+            {
+              "q": "Can siblings or a parent and child book together?",
+              "a": "Book separate times back to back and say you're coming together."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Book Your Child's Haircut",
+          "text": "Pick a time on our online booking page or call (417) 380-3078. The shop is at 5104 N 22nd St in Ozark."
+        }
+      ]
+    },
+    {
+      "role": "contact",
+      "route": "/contact/",
+      "navLabel": "Contact",
+      "keyword": "contact Ash's Barber Collective Ozark MO",
+      "seo": {
+        "title": "Contact Ash's Barber Collective in Ozark, MO",
+        "description": "Call (417) 380-3078 or book online. 5104 N 22nd St, Ozark, MO 65721."
+      },
+      "hero": {
+        "eyebrow": "Contact",
+        "h1": "Contact Ash's Barber Collective in Ozark, MO",
+        "primaryCta": {
+          "label": "Call (417) 380-3078",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Book Online",
+          "action": "contact"
+        },
+        "sub": "Call the shop or book a time online. Whichever is easiest, we'll get you a chair.",
+        "image": {
+          "slot": "contact-hero",
+          "alt": "Inside Ash's Barber Collective at 5104 N 22nd St in Ozark, MO",
+          "brief": "Real shop photo, no AI image: use contact-ozark-mo-barber-shop-interior.webp from Ash's current demo (ff-astro-demos branch claude/ashs-photo-placeholders, clients/ashs-barber-collective/public/images/). Crop so Ash's face stays clear of the text side."
+        }
+      },
+      "sections": [
+        {
+          "type": "prose",
+          "heading": "Two Ways to Reach Us",
+          "body": [
+            "**Call:** (417) 380-3078",
+            "**Book online:** pick a time on our Square booking page."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Easy to contact and schedule and love the conversations!",
+          "name": "Matt M."
+        },
+        {
+          "type": "prose",
+          "heading": "Find the Shop",
+          "body": [
+            "We're on N 22nd St in Ozark. Plug the address into your phone and you're set.",
+            "Ash's Barber Collective 5104 N 22nd St Ozark, MO 65721",
+            "The entrance is wheelchair accessible."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "When You Book, Tell Us",
+          "list": [
+            "The cut or service you want: haircut, fade, kids' or teen cut, beard trim.",
+            "If you want a haircut and a beard trim, say both so we set aside the time.",
+            "If it's a child's first haircut, say so.",
+            "If you're bringing more than one person, book back to back times and let us know."
+          ],
+          "tail": [
+            "A photo of the cut you want is the fastest way to get it right. If you can't find the shop, call and we'll point you in."
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Ready to Book?",
+          "text": "Pick a time on the booking page, or call the shop. Tell us the cut you want, and we'll take it from there."
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "about": "Ash's Barber Collective is a barbershop at 5104 N 22nd St in Ozark, Missouri: haircuts, fades, kids and teen cuts and beard work.",
+    "why": [
+      "Highly rated on Google",
+      "Cuts for kids, teens and adults",
+      "Beard trim, cut and shaping",
+      "Wheelchair accessible",
+      "Online booking"
+    ]
+  },
+  "strategy": {
+    "whyHeading": "Why we built this site",
+    "why": [
+      "However customers find you, a Google search, a friend's recommendation or a quick look before booking a chair, it all ends in the same place.",
+      "Right now people find Ash's Barber Collective through the Google listing and the Square booking link. There's no website yet, so there's nowhere to see the work, read what makes your cuts different, or find the kids and beard services.",
+      "So we built the pages a customer looks for first, around what your regulars already say: the cut gets better every visit."
+    ],
+    "cardsHeading": "Be the Barbershop People Find on Google",
+    "cardsIntro": "Each card is one page of the demo: what's missing today, and what the page does about it.",
+    "cards": [
+      {
+        "route": "/home/",
+        "title": "Homepage",
+        "why": "The first page people see, and the one Google reads to learn who you are and where you are.",
+        "problems": [
+          "There's no website, so a search for a barber in Ozark only shows your Google listing.",
+          "Nothing explains why people stick with Ash: the cut keeps improving visit to visit.",
+          "Your reviews live only on Google."
+        ],
+        "fixes": [
+          "A headline that says barbershop in Ozark, MO, right at the top.",
+          "Call and Book buttons on the first screen of a phone.",
+          "Every service, with a review beside each."
+        ],
+        "alsoAdd": "On day one, we sit down with you to get what makes you the obvious choice, every service you offer and every town you work in. That becomes the prescription: how many pages, in how many towns, so Google and AI tools can find you for every service."
+      },
+      {
+        "route": "/beard-trim-cut-shape-ozark-mo/",
+        "title": "Beard Trim, Cut and Shape",
+        "why": "The page that should show up when someone searches for beard work in Ozark.",
+        "problems": [
+          "Beard work has no page anywhere, so Google can't connect you to beard searches.",
+          "Nothing explains the difference between a trim, a cut and shaping."
+        ],
+        "fixes": [
+          "A page for beard work in Ozark, MO, and nothing else.",
+          "Plain answers on trim versus cut versus shaping, so people book the right thing."
+        ],
+        "alsoAdd": "Service and FAQ details set up behind the scenes, so Google and AI tools like ChatGPT can read the page and recommend the shop."
+      },
+      {
+        "route": "/kids-teen-haircuts-ozark-mo/",
+        "title": "Kids and Teen Haircuts",
+        "why": "The page for parents searching for a kid's or teen's haircut in Ozark.",
+        "problems": [
+          "Parents can't see that you handle first haircuts, cowlicks and toddlers until they're in the chair.",
+          "Teen fades and kids' cuts aren't listed anywhere."
+        ],
+        "fixes": [
+          "What a kid's visit looks like, so a nervous kid and a parent both know what happens.",
+          "A link to the beard page, so a dad can book beard work in the same trip."
+        ],
+        "alsoAdd": "A tap-to-call and booking bar that follows parents down the page on their phone."
+      },
+      {
+        "route": "/contact/",
+        "title": "Contact",
+        "why": "Where interest turns into a booking or a call.",
+        "problems": [
+          "The only way in today is the Google listing or the booking link."
+        ],
+        "fixes": [
+          "The phone number and booking button as the biggest things on the page, next to the address."
+        ],
+        "alsoAdd": "Your name, address and phone set up the same way everywhere Google looks, and a monthly snapshot of how often Google showed your site."
+      }
+    ],
+    "reportCardHeading": "What great barbershop websites get right, and how yours measures up.",
+    "reportCard": [
+      {
+        "label": "Headline says what you do and where",
+        "status": "Missing"
+      },
+      {
+        "label": "Each service has its own page",
+        "status": "Missing"
+      },
+      {
+        "label": "Real reviews shown",
+        "status": "Missing"
+      },
+      {
+        "label": "Book online from any page",
+        "status": "Missing"
+      }
+    ],
+    "closing": {
+      "heading": "Want a website like this for your shop?",
+      "text": "Your regulars already say the cut gets better every visit. Book a strategy call with Fluid Frame, and we'll walk you through this demo and confirm your full list of services."
+    }
+  }
+}

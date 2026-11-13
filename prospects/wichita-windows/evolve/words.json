@@ -1,0 +1,875 @@
+{
+  "schema": "words-package/v1",
+  "business": {
+    "name": "Evolve Exteriors",
+    "slug": "evolve",
+    "city": "Wichita",
+    "state": "KS",
+    "companyType": "Exterior Remodeling Company",
+    "owners": [
+      "Colton",
+      "Riley"
+    ],
+    "phones": [
+      {
+        "label": "Wichita",
+        "display": "(316) 435-8009",
+        "tel": "+13164358009"
+      },
+      {
+        "label": "Oklahoma City",
+        "display": "(405) 363-2294",
+        "tel": "+14053632294"
+      }
+    ],
+    "email": "info@evolve-exteriors.com",
+    "hours": "Monday to Friday, 9:00 AM to 5:00 PM",
+    "address": null,
+    "serviceArea": {
+      "summary": "Within 150 miles of Wichita and within 150 miles of Oklahoma City",
+      "towns": [
+        "Wichita",
+        "Haysville",
+        "Derby",
+        "Mulvane",
+        "El Dorado",
+        "McPherson",
+        "Salina",
+        "Emporia",
+        "Oklahoma City"
+      ]
+    }
+  },
+  "trustBar": [
+    "Lifetime Warranty on Energy Efficient Windows",
+    "We Beat a Lower Price on a Comparable Product",
+    "Free Estimates",
+    "Locally Owned & Operated"
+  ],
+  "services": [
+    {
+      "name": "Window Replacement",
+      "route": "/window-replacement-wichita-ks/",
+      "blurb": "Energy efficient windows measured and installed by our crew, from one window to the whole house."
+    },
+    {
+      "name": "Basement Windows",
+      "route": null,
+      "blurb": "Basement windows fitted and finished with the same care as the windows upstairs."
+    },
+    {
+      "name": "Bay and Picture Windows",
+      "route": null,
+      "blurb": "The big views in your living and dining rooms, fitted to the opening you already have."
+    },
+    {
+      "name": "Vinyl Siding",
+      "route": "/vinyl-siding-wichita-ks/",
+      "blurb": "A new outside for your house that helps lower your energy bills."
+    },
+    {
+      "name": "Sliding Patio Doors",
+      "route": null,
+      "blurb": "Put in on their own or with your windows, by the same crew."
+    },
+    {
+      "name": "Soffit and Fascia",
+      "route": null,
+      "blurb": "The boards along the edge of your roof, replaced so the outside of your house looks finished."
+    }
+  ],
+  "pages": [
+    {
+      "role": "home",
+      "route": "/home/",
+      "navLabel": "Home",
+      "keyword": "exterior remodeling company Wichita KS",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Locally owned in Wichita",
+        "h1": "Exterior Remodeling Company in Wichita, KS — Evolve Exteriors",
+        "sub": "We're Colton and Riley. We replace windows, put up vinyl siding and install sliding patio doors, with the products and guarantees of the big companies and the owners close enough to look at your house ourselves. Call for a free estimate.",
+        "primaryCta": {
+          "label": "Call (316) 435-8009",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Get a Free Estimate",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "home-hero",
+          "alt": "Kansas ranch-style house with new white double-hung windows in late afternoon light",
+          "brief": "ranch-style house front with new white double-hung windows, house on the right half of the frame, front walk leading off to the left, calm clear sky behind the text side, late-afternoon light, no readable text, no people"
+        }
+      },
+      "sections": [
+        {
+          "type": "review",
+          "quote": "We have been hesitant due to the sky high pricing of a lot of companies around Wichita, until we were told about Evolve Exteriors. We met with Colton, who sold us the windows at a great price and they were here within about a month and a half's time and at our house a few days after that. … Colton came by to make sure everything was to our liking and, overall, I'm very happy with the finished product and how much cooler our house feels!",
+          "name": "Reagan P."
+        },
+        {
+          "type": "split",
+          "heading": "Big-Company Products, Owners on the Job",
+          "body": [
+            "The outside of your house is one system. Windows, siding, doors and trim all meet at the same edges.",
+            "A leak or a draft at one shows up as a problem at the others. That's why we do all of it, and why one of us comes out to look before anyone quotes a price.",
+            "We don't spend on big ad campaigns, so that cost stays out of your price.",
+            "You get a real look at what's wrong and a price with no pressure to sign that day. Do the whole exterior at once, or one project at a time.",
+            "And because we're a small company, the people who quote your job are the people you call if anything isn't right."
+          ],
+          "image": {
+            "slot": "home-owners",
+            "alt": "Front porch of a Wichita bungalow with new windows beside the door",
+            "brief": "bungalow front porch with new windows beside the front door, house on the right, porch steps leading to the left, soft overcast sky behind the text side, no readable text, no people"
+          }
+        },
+        {
+          "type": "prose",
+          "heading": "Replacement Windows",
+          "body": [
+            "Most of our work is windows. People usually call us because of a room that never gets comfortable, curtains that move with the window shut, fog between the panes, or a sash that sticks.",
+            "Each one points to a window that has stopped sealing. You're paying to heat and cool the outdoors through it.",
+            "We measure every opening, show you the window up close and order each one to fit. In older Wichita houses, we'll show you where two or three small windows could become one larger one: more light, fewer windows to buy.",
+            "Most homes are done in a day. Our energy efficient windows carry a manufacturer's lifetime warranty, from glass breakage to how the window opens and closes.",
+            "Casement, double hung, sliding, awning, hopper, picture, bay and basement windows."
+          ],
+          "link": {
+            "label": "See window replacement →",
+            "route": "/window-replacement-wichita-ks/"
+          }
+        },
+        {
+          "type": "review",
+          "quote": "Our basement windows were so old and worn out that we could hear the neighbor dog barking like it was in our house. Our new windows were just installed and it is night and day different. We can't hear a PEEP! No dogs, no lawn mowers, no thunderstorms.. NOTHING!",
+          "name": "Ashley K."
+        },
+        {
+          "type": "split",
+          "heading": "Vinyl Siding",
+          "body": [
+            "Siding takes the Kansas wind, hail and summer sun before anything else on the house does.",
+            "When it's worn out, you see it: faded or chalky panels, cracks, warped or melted spots, pieces the wind keeps loosening. What you don't see is the wall behind it, where gaps let in drafts and water.",
+            "We'll tell you straight whether yours has years left or is failing. If it was put up badly in the first place, patching it only buys time.",
+            "A siding consultation takes about an hour. We look at the whole house, talk through colors and styles, and give you the price. When the new siding goes up, the old siding leaves with us."
+          ],
+          "link": {
+            "label": "See vinyl siding →",
+            "route": "/vinyl-siding-wichita-ks/"
+          },
+          "image": {
+            "slot": "home-windows",
+            "alt": "Sunlit living room with a large picture window and still sheer curtains",
+            "brief": "sunlit living room with a large picture window on the right, sheer curtains hanging still, the room opening toward the left, calm neutral wall behind the text side, no readable text, no people"
+          }
+        },
+        {
+          "type": "review",
+          "quote": "During the install, they pointed out a major issue with our siding—it was worn out, melted in spots, and poorly installed by the original builder. They didn't hesitate to walk us through the problem, explain our options clearly, and help us make the best long-term decision.",
+          "name": "Beth W."
+        },
+        {
+          "type": "prose",
+          "heading": "Soffit and Fascia",
+          "body": [
+            "Soffit and fascia are the boards under and along the edge of your roof. When they go soft or pull away, water gets behind the gutters and critters find a way into the attic.",
+            "We replace them along with your siding, so the whole edge of the house matches the new walls."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Sliding Patio Doors",
+          "body": [
+            "An old sliding door is usually the leakiest opening in the house. The rollers wear out, the track bends, and the seal where the panels meet stops sealing.",
+            "You end up shoving it open with your shoulder and feeling the draft all winter. A new slider glides on new rollers and seals tight when it's closed.",
+            "We install it on its own or with your new windows, so the glass and frames match."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "I now can open my sliding glass door with 1 finger instead of putting my whole body in it.",
+          "name": "Karla S."
+        },
+        {
+          "type": "prose",
+          "heading": "One Project or One at a Time",
+          "body": [
+            "Windows and siding meet at the trim around every opening. Do them together and the trim and caulk get finished once, the colors are chosen together, and one company handles the whole wall.",
+            "If the budget says windows this year and siding next year, that works too. Plenty of our customers do it in that order, and we'll plan so the second project fits the first."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "I absolutely love my new windows, the guys were awesome, very professional and courteous. answered all my questions. I still love my windows every time I look at my house, Its beautiful. I have new siding and it really made my home beautiful, it's quieter, and is staying so much cooler.",
+          "name": "Melinda D."
+        },
+        {
+          "type": "steps",
+          "heading": "How a Project Goes",
+          "items": [
+            {
+              "title": "We look at your house.",
+              "text": "One of us comes out, measures and looks over what you want done. A window consultation takes about an hour and a half; siding takes about an hour. You see the products up close and get the price."
+            },
+            {
+              "title": "We order your materials.",
+              "text": "Windows are built to your measurements, so plan on a few weeks. We give you the install date when you order."
+            },
+            {
+              "title": "Our crew does the work.",
+              "text": "We show up in the morning and cover and protect your house and yard first. When we're done, we haul away the old windows, siding and trash."
+            },
+            {
+              "title": "We check back.",
+              "text": "Before we leave, we walk you through the finished job. Then one of us follows up to make sure everything is right."
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Wichita, Oklahoma City and 150 Miles Around",
+          "body": [
+            "We have a hub in each city and work within 150 miles of both.",
+            "On the Kansas side that includes Haysville, Derby, Mulvane, El Dorado, McPherson, Salina and Emporia. In Oklahoma it includes Edmond, Yukon, Guthrie and Ponca City. Call the office closest to you."
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Questions Before You Call",
+          "items": [
+            {
+              "q": "Are estimates free?",
+              "a": "Yes, for windows, siding and patio doors."
+            },
+            {
+              "q": "How long does a project take?",
+              "a": "Most window jobs are finished in a day. Bigger ones may need a second morning for trim and caulk. Siding depends on the size of the house, and you get the schedule at your consultation."
+            },
+            {
+              "q": "Should I do windows and siding at the same time?",
+              "a": "If both need it, doing them together means the trim around each window is finished once and everything matches. If the budget points to one at a time, start with whichever is costing you more in comfort or energy. That's usually the windows."
+            },
+            {
+              "q": "What if I get a lower quote?",
+              "a": "Bring it to us. If it's for a comparable product, we'll beat it."
+            },
+            {
+              "q": "Do you offer financing?",
+              "a": "Yes, including low-to-no-interest options. Ask about it at your consultation."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Get a Straight Look at Your House",
+          "text": "Call and one of us will come out, look at your windows, siding or doors, and give you a price, with no pressure to sign that day. Wichita: (316) 435-8009. Oklahoma City: (405) 363-2294. Monday to Friday, 9:00 AM to 5:00 PM."
+        }
+      ]
+    },
+    {
+      "role": "service",
+      "route": "/window-replacement-wichita-ks/",
+      "navLabel": "Window Replacement",
+      "keyword": "window replacement Wichita KS",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Energy efficient windows",
+        "h1": "Window Replacement in Wichita, KS — Evolve Exteriors",
+        "sub": "We're Colton and Riley. We measure your windows, show you the actual window and give you a price with no pressure to sign that day, then our crew installs them, usually in a day. Call for a free estimate.",
+        "primaryCta": {
+          "label": "Call (316) 435-8009",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Get a Free Estimate",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "windows-hero",
+          "alt": "Gloved hands setting a new double-hung window into an opening",
+          "brief": "installer's gloved hands, no face and no lettering, setting a new double-hung window into an opening, window on the right, hands reaching in from the left, soft blurred siding behind the text side, no readable text"
+        }
+      },
+      "sections": [
+        {
+          "type": "review",
+          "quote": "We have a very old house, I was concerned it might be quite the task to change our windows. These guys made it an absolute breeze!! We had 14 windows replaced and a sliding glass door, they got it done quickly and it looks great!! I can sit in my office and the curtains do not move anymore!!",
+          "name": "Jennifer M."
+        },
+        {
+          "type": "split",
+          "heading": "A Window Quote With No Clock Running",
+          "body": [
+            "Shopping for windows often goes the same way. A salesperson spends an evening at your table, the price drops if you sign tonight, and the number is still more than you planned to spend.",
+            "We do it differently. One of us comes to your house, measures every opening and shows you the window itself: how it's built, how it opens, how it cleans.",
+            "Then you get the price, and you can take your time with it. Do the whole house now, or a few rooms at a time."
+          ],
+          "image": {
+            "slot": "windows-styles",
+            "alt": "Bay window seen from inside a dining room",
+            "brief": "bay window from inside a dining room, bay on the right, wall and table edge calm and out of focus on the left, no readable text, no people"
+          }
+        },
+        {
+          "type": "prose",
+          "heading": "Signs Your Windows Are Costing You",
+          "body": [
+            "Most people don't replace windows on a whim. Something tips them off. These are the problems we hear about most, and what each one usually means:"
+          ],
+          "list": [
+            "**Curtains move when the window is shut.** Air is getting past worn seals or a frame that has shifted. You're paying to heat and cool the outdoors.",
+            "**Fog or haze between the panes.** The seal that holds the insulating gas between the panes has failed. The window has lost most of its insulating value, and it won't clear up on its own.",
+            "**One room is always hotter or colder than the rest.** Old single-pane glass and thin frames let summer sun and winter cold straight through. West-facing rooms feel it first in a Kansas July.",
+            "**You can hear the street, the neighbor's dog, the train.** Sound comes in through the same gaps air does. Sealed, multi-pane glass quiets a house more than most people expect.",
+            "**Sashes that stick, won't lock or won't stay open.** Worn balances and warped frames. In an older house it's rarely just one window."
+          ],
+          "tail": [
+            "If it's one or two windows, replace those and stop there. If it's most of the house, we'll show you what doing it all at once costs next to doing it in stages, and you choose."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "The door and windows look phenomenal and I can already tell the difference in the house temperature wise as well as diminished noise from the outside.",
+          "name": "Aaron W."
+        },
+        {
+          "type": "prose",
+          "heading": "Window Styles, and Where Each One Earns Its Place",
+          "body": [
+            "We install casement, double hung, sliding, awning, hopper, picture, bay and basement windows. The right one depends on the opening and how you use the room."
+          ],
+          "list": [
+            "**Double hung** is the familiar up-and-down window, and it fits most older Wichita houses without changing how the front looks.",
+            "**Casement** windows crank out on a hinge. They seal tightly when closed and catch a breeze when open.",
+            "**Sliding** windows suit wide, low openings where there's no room to swing a sash.",
+            "**Awning and hopper** windows hinge at the top or bottom, so you can leave them open a crack without letting rain in.",
+            "**Picture** windows are fixed glass: the most light and the fewest parts to wear out.",
+            "**Bay** windows push out from the wall and give a living or dining room its view."
+          ],
+          "tail": [
+            "At your consultation you also choose colors, hardware and grids, so the windows look like they belong to your house."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Colton helped me find the perfect windows for my 1948 house! Every window in the house was replaced with exactly what I wanted and his quote was less than the three other quotes I had gotten. … I'm VERY picky and he was patient and attentive to all the details that I wanted, from oil rubbed bronze hardware to custom grids on the front windows.",
+          "name": "Kathleen M."
+        },
+        {
+          "type": "prose",
+          "heading": "Fewer, Bigger Windows Where They Make Sense",
+          "body": [
+            "Older Wichita houses were often built with rows of small windows: three narrow units where one wide one would do.",
+            "When we measure, we look at every opening and ask whether it should stay the way it was built. Combining two or three small windows into one larger one gives you more glass and a cleaner look from the street.",
+            "It also means fewer windows to buy and install, which can take a real bite out of the price of the job. We show you both versions and you decide."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Our house originally had 34 windows, and Anthony was able to make it so that we would only need 17 windows to replace the whole house.",
+          "name": "Rob R."
+        },
+        {
+          "type": "prose",
+          "heading": "Made for Old Openings, Not Just New Ones",
+          "body": [
+            "A house from the 1940s or '50s rarely has a square opening left. Frames settle, trim gets painted over a dozen times, and a stock-size window won't sit right in a crooked hole.",
+            "So we measure every opening and order each window to fit it. Then we finish the trim so the new window looks like it was always there.",
+            "Before anything comes out, we cover and protect your house and yard."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "They took their time to be sure to cover things and protect everything they could, they answered all my questions, they put a lot of care into the finishing touches, and they left everything clean and beautiful. I'm serious - these are some beautiful windows! It completely changed our home. They managed to work new windows so quickly into our mangled up 80 year old window openings and trim, and made it look easy.",
+          "name": "Dustin M."
+        },
+        {
+          "type": "prose",
+          "heading": "Basement Windows",
+          "body": [
+            "Basement windows sit low, where dirt, water and cold reach them first. Old ones leak, rattle and let in the sound of every lawn mower on the block.",
+            "We fit and finish them with the same care as the windows upstairs. Each one is measured, built to fit and trimmed out."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "What the Warranty Covers",
+          "body": [
+            "Our energy efficient windows carry a manufacturer's lifetime warranty, from glass breakage to how the window opens and closes.",
+            "That covers the two things that fail first on an old window: the glass and the parts that move."
+          ]
+        },
+        {
+          "type": "steps",
+          "heading": "What Happens After You Call",
+          "items": [
+            {
+              "title": "A consultation at your house.",
+              "text": "It takes about an hour and a half. One of us measures every opening, shows you the window up close and walks you through styles, colors, hardware and grids. Then you get the price."
+            },
+            {
+              "title": "Your windows are built to your measurements.",
+              "text": "Plan on a few weeks between ordering and install. We give you the date when you order."
+            },
+            {
+              "title": "Install day.",
+              "text": "Our crew shows up in the morning and covers the work area first. Most homes are done in a day. On bigger jobs, we may come back a second morning to finish trim and caulk."
+            },
+            {
+              "title": "Walkthrough and follow-up.",
+              "text": "Before the crew leaves, everything is cleaned up and they show you how your new windows open and lock. The old windows and the trash go with them. Then one of us checks back to make sure you're happy."
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Windows and Siding Meet at the Trim",
+          "body": [
+            "If your siding is worn too, it's worth knowing before the windows go in. Windows and siding share the trim around every opening, so doing both together means that trim is finished once and the colors are chosen together.",
+            "If the budget says windows first, that works. We'll plan so the siding fits what's already there. Here's more on [vinyl siding](/vinyl-siding-wichita-ks/)."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Wichita, Oklahoma City and 150 Miles Around",
+          "body": [
+            "We have a hub in each city and work within 150 miles of both. On the Kansas side that includes Haysville, Derby, Mulvane, El Dorado, McPherson, Salina and Emporia. In Oklahoma it includes Edmond, Yukon, Guthrie and Ponca City.",
+            "Call the office closest to you."
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Questions Before You Call",
+          "items": [
+            {
+              "q": "How long does installation take?",
+              "a": "Most homes are done in one day. If you're replacing a lot of windows or the old openings need extra trim work, the crew may come back a second morning."
+            },
+            {
+              "q": "What affects the price?",
+              "a": "How many windows you replace, their size and style, the glass you choose, and how much work the old openings and trim need. Combining small windows into bigger ones can lower the total. You get the full price at your consultation, before you commit to anything."
+            },
+            {
+              "q": "Can I replace a few windows now and the rest later?",
+              "a": "Yes. Plenty of people start with the rooms that bother them most and finish the house later."
+            },
+            {
+              "q": "What if I already have a lower quote?",
+              "a": "Bring it to us. If it's for a comparable window, we'll beat it."
+            },
+            {
+              "q": "Is the estimate free?",
+              "a": "Yes."
+            },
+            {
+              "q": "Do you offer financing?",
+              "a": "Yes, including low-to-no-interest options. Ask about it at your consultation."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "See the Window Before You Decide",
+          "text": "Call and one of us will come out, measure your windows, show you the product and give you a price, with no pressure to sign that day. Wichita: (316) 435-8009. Oklahoma City: (405) 363-2294."
+        }
+      ]
+    },
+    {
+      "role": "service",
+      "route": "/vinyl-siding-wichita-ks/",
+      "navLabel": "Vinyl Siding",
+      "keyword": "vinyl siding Wichita KS",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Vinyl siding",
+        "h1": "Vinyl Siding in Wichita, KS — Evolve Exteriors",
+        "sub": "We're Colton and Riley. We'll look over your whole house, tell you straight whether your siding has years left, and give you the price, all in about an hour. Call for a free estimate.",
+        "primaryCta": {
+          "label": "Call (316) 435-8009",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Get a Free Estimate",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "siding-hero",
+          "alt": "Corner of a house with new vinyl siding and clean soffit and fascia",
+          "brief": "corner of a house with new vinyl siding and clean soffit and fascia, house on the right, eave line running toward the left, calm sky behind the text side, no readable text, no people"
+        }
+      },
+      "sections": [
+        {
+          "type": "review",
+          "quote": "I talked to Colton about the cost of siding our home. He came out and surveyed it and gave me a good price. His crew came and finished the siding in one day. They did a fantastic job and cleaned up the yard.",
+          "name": "Larry W."
+        },
+        {
+          "type": "split",
+          "heading": "Siding Takes the Weather First",
+          "body": [
+            "Before the windows, the doors or the roof edge feel a Kansas storm, the siding has already taken it. Wind, hail and summer sun hit it every year.",
+            "It rarely fails all at once. It fades, loosens and cracks a little at a time, and the real damage happens behind it, where gaps let in drafts and water.",
+            "That's why siding is worth a close look before it's an emergency."
+          ],
+          "image": {
+            "slot": "siding-main",
+            "alt": "Close-up of new soffit and fascia under a roof edge",
+            "brief": "close-up of new soffit and fascia under a roof edge shot from below, edge on the right, plain sky on the left, no readable text, no people"
+          }
+        },
+        {
+          "type": "prose",
+          "heading": "What Worn-Out Siding Looks Like",
+          "body": [
+            "Here is what to look for, and what each sign usually means:"
+          ],
+          "list": [
+            "**Faded or chalky panels.** The finish has worn off in the sun. Rub a hand across it and the color comes off as powder.",
+            "**Cracks and hail dings.** Vinyl turns brittle with age. A crack lets water behind the panel.",
+            "**Warped or melted spots.** Panels that have buckled or sagged have been pushed past what they can take, often by heat or by being fastened too tight.",
+            "**Pieces the wind keeps loosening.** Panels that rattle or lift in a storm have lost their hold on the wall.",
+            "**Gaps at corners and around windows.** This is where air and water find their way in.",
+            "**Energy bills creeping up.** Siding that no longer seals the wall lets the house leak heat all winter and gain it all summer."
+          ],
+          "tail": [
+            "If you see two or three of these, it's time to have someone look at the whole wall."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Does Yours Have Years Left?",
+          "body": [
+            "We'll tell you straight. If your siding is sound, we'll say so.",
+            "If it was put up badly in the first place, patching it only buys time. Panels fastened too tight or hung crooked will keep failing, no matter how many you swap out."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Colton also went above and beyond by replacing siding that was bad.",
+          "name": "Debbie M."
+        },
+        {
+          "type": "prose",
+          "heading": "What New Vinyl Siding Does for the House",
+          "body": [
+            "Vinyl doesn't need painting, and a wash with a hose is most of the upkeep. That makes it a good fit for the part of the house you'd rather not think about.",
+            "It also helps your energy bills. New panels that lock together tight leave fewer gaps for air and water, so the house holds its heat in winter and keeps more of the summer out.",
+            "You choose the colors and styles with us at your consultation, with the trim and windows in mind."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Soffit and Fascia Go On With It",
+          "body": [
+            "Soffit and fascia are the boards under and along the edge of your roof. When they go soft or pull away, water gets behind the gutters and critters find a way into the attic.",
+            "We replace them along with your siding, so the whole edge of the house matches the new walls."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "The Consultation and the Day",
+          "body": [
+            "A siding consultation takes about an hour. One of us walks the whole house, talks through colors and styles, and gives you the price.",
+            "When it's time to install, we show up in the morning and cover and protect your house and yard first. The old siding comes off, and it leaves with us when we go."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "They took away all the old siding. We appreciate their integrity of doing all they said that they would do and more. Also appreciated Colton and Riley communicating with us along the process.",
+          "name": "Daylean P."
+        },
+        {
+          "type": "steps",
+          "heading": "How a Siding Project Goes",
+          "items": [
+            {
+              "title": "We look at your house.",
+              "text": "One of us comes out and looks over every wall, the trim and the roof edge. About an hour."
+            },
+            {
+              "title": "You get the price.",
+              "text": "We go over colors and styles, and you get the price with no pressure to sign that day."
+            },
+            {
+              "title": "We order your materials and set the date.",
+              "text": "You get your install date when you order."
+            },
+            {
+              "title": "Our crew does the work.",
+              "text": "We protect your house and yard, put up the new siding and haul away the old. Many houses are done in a day; bigger ones take longer, and you get the schedule up front."
+            },
+            {
+              "title": "We check back.",
+              "text": "Before we leave, we walk you through the finished job. Then one of us follows up to make sure everything is right."
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Siding and Windows Meet at the Trim",
+          "body": [
+            "Windows and siding meet at the trim around every opening. If both need work, doing them together means the trim and caulk get finished once and the colors are chosen together.",
+            "If the budget says one at a time, that works too. We'll plan so the second project fits the first. Here's more on [window replacement](/window-replacement-wichita-ks/)."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "What Affects the Price",
+          "body": [
+            "The size of the house and the number of stories. The style and trim you choose.",
+            "How many layers of old siding have to come off, and how much of the wall behind it needs repair. Whether soffit and fascia are part of the job.",
+            "You see the whole price at your consultation, before you commit to anything. If you bring us a lower price on a comparable product, we'll beat it. We also offer financing, including low-to-no-interest options."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Wichita, Oklahoma City and 150 Miles Around",
+          "body": [
+            "We have a hub in each city and work within 150 miles of both. On the Kansas side that includes Haysville, Derby, Mulvane, El Dorado, McPherson, Salina and Emporia. In Oklahoma it includes Edmond, Yukon, Guthrie and Ponca City.",
+            "Call the office closest to you."
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Questions Before You Call",
+          "items": [
+            {
+              "q": "How long does a siding job take?",
+              "a": "Many houses are done in a day. Bigger houses take longer, and you get the schedule for yours at your consultation."
+            },
+            {
+              "q": "Do you take the old siding away?",
+              "a": "Yes. The old siding leaves with us."
+            },
+            {
+              "q": "Is the estimate free?",
+              "a": "Yes."
+            },
+            {
+              "q": "Do I have to replace all of it?",
+              "a": "We'll tell you what your siding needs. If it's sound, we'll say so."
+            },
+            {
+              "q": "Should I do windows at the same time?",
+              "a": "If both are worn, together means the trim around each window is finished once and everything matches. If the budget says one at a time, that works too."
+            },
+            {
+              "q": "Do you offer financing?",
+              "a": "Yes, including low-to-no-interest options. Ask about it at your consultation."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Get a Straight Look at Your Siding",
+          "text": "Call and one of us will come out, look at your siding and give you a price, with no pressure to sign that day. Wichita: (316) 435-8009. Oklahoma City: (405) 363-2294."
+        }
+      ]
+    },
+    {
+      "role": "contact",
+      "route": "/contact/",
+      "navLabel": "Contact",
+      "keyword": "contact Evolve Exteriors Wichita KS",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Contact",
+        "h1": "Contact Evolve Exteriors",
+        "sub": "Call the office for your side of the state and we'll set up your free estimate. We're in Monday to Friday, 9:00 AM to 5:00 PM.",
+        "primaryCta": {
+          "label": "Call (316) 435-8009",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Call Oklahoma City (405) 363-2294",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "contact-hero",
+          "alt": "Front porch with new windows beside the front door of a Wichita-style bungalow",
+          "brief": "front porch with new windows beside the front door on a bungalow, house on the right, porch steps toward the left, calm soft sky behind the text side, no readable text, no people"
+        }
+      },
+      "sections": [
+        {
+          "type": "prose",
+          "heading": "Call or Write",
+          "body": [
+            "Wichita: (316) 435-8009. Oklahoma City: (405) 363-2294.",
+            "You can also email info@evolve-exteriors.com. We work within 150 miles of both cities.",
+            "Estimates for windows, siding and patio doors are free. One of us comes out, looks at your house and gives you a price, with no pressure to sign that day."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Have This Ready",
+          "list": [
+            "Your town, so the right office calls you back",
+            "How many windows, and which rooms",
+            "Whether you want siding or a patio door too",
+            "Whether you want to hear about financing"
+          ],
+          "tail": [
+            "You don't need measurements. We measure every opening ourselves."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "If you are looking into getting new windows call Evolve Exteriors first!",
+          "name": "Greg C."
+        },
+        {
+          "type": "faq",
+          "heading": "Before You Call",
+          "items": [
+            {
+              "q": "Which number do I call?",
+              "a": "Call Wichita at (316) 435-8009 or Oklahoma City at (405) 363-2294, whichever is closer to your home."
+            },
+            {
+              "q": "Do you charge for an estimate?",
+              "a": "No. Estimates for windows, siding and patio doors are free."
+            },
+            {
+              "q": "When is someone in the office?",
+              "a": "Monday to Friday, 9:00 AM to 5:00 PM."
+            },
+            {
+              "q": "Do you work in my town?",
+              "a": "We work within 150 miles of Wichita and of Oklahoma City, including Haysville, Derby, Mulvane, El Dorado, McPherson, Salina and Emporia in Kansas, and Edmond, Yukon, Guthrie and Ponca City in Oklahoma."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "about": "We're a locally owned and operated exterior remodeling company with hubs in Wichita and Oklahoma City. We replace windows, install vinyl siding and put in sliding patio doors.",
+    "why": [
+      "Owner-run by Colton and Riley",
+      "Manufacturer's lifetime warranty on energy efficient windows",
+      "We beat a lower price on a comparable product"
+    ]
+  },
+  "strategy": {
+    "whyHeading": "Why we built this site",
+    "why": [
+      "Your customers already make your case. You hold a 5.0 on 140 Google reviews, and they say it plainly: \"Small company with owner involvement.\" \"My house is much quieter and cooler now.\" \"If you are looking into getting new windows call Evolve Exteriors first!\"",
+      "Your website hides all of it behind sample text, and its phone buttons reach neither office.",
+      "So we built this site around their words."
+    ],
+    "cardsHeading": "Be the Exterior Company People Find on Google",
+    "cardsIntro": "Each card is one page: what your site does today and what we changed.",
+    "cards": [
+      {
+        "route": "/home/",
+        "title": "Homepage",
+        "why": "The page Google reads to learn who you are and where you work.",
+        "problems": [
+          "Every call button dials 1234567890, so a visitor who taps your Wichita number reaches nothing.",
+          "The Oklahoma City number is plain text with no button, so your second office can't be reached by tap.",
+          "The top of the page says \"Best Professional Window Installation\" with no town, so Google can't tell you work in Wichita.",
+          "Your 140 reviews are missing; the only quote is sample text from \"Samantha Johnson\"."
+        ],
+        "fixes": [
+          "Wichita and Oklahoma City are each one tap to call, on every page.",
+          "A headline that says exterior remodeling company in Wichita, KS, right at the top.",
+          "Real reviews from your customers, each beside the point it proves."
+        ],
+        "alsoAdd": "On day one, we sit down with you to get what makes you the obvious choice, every service you offer and every town you work in. That becomes the prescription: how many pages, in how many towns, so Google and AI tools can find you for every service."
+      },
+      {
+        "route": "/window-replacement-wichita-ks/",
+        "title": "Window Replacement",
+        "why": "Windows are about three quarters of your written reviews, and they have no real page.",
+        "problems": [
+          "\"Our Windows\" is eight style names with nothing on warranty, price or install, so Google has little to rank and shoppers little reason to call."
+        ],
+        "fixes": [
+          "A full page for window replacement in Wichita, KS: styles, warranty, price match and install day.",
+          "Reviews on basement windows, old houses and cooler rooms, each beside its point."
+        ],
+        "alsoAdd": "Pages planned from what Google actually shows for each search, so every page targets something people really look for."
+      },
+      {
+        "route": "/vinyl-siding-wichita-ks/",
+        "title": "Vinyl Siding",
+        "why": "Your crews finish siding in a day, and siding has no real page.",
+        "problems": [
+          "\"Vinyl Siding\" opens a leftover page called \"copy-of-our-windows\": one siding paragraph, then window text ending mid-sentence on \"that fit your.\""
+        ],
+        "fixes": [
+          "A full page for vinyl siding in Wichita, KS, and the siding button opens it.",
+          "Your siding reviews beside the work they describe."
+        ],
+        "alsoAdd": "A check of what your competitors offer, so services you didn't think to mention still get their own pages."
+      },
+      {
+        "route": "/contact/",
+        "title": "Contact",
+        "why": "Where a ready customer reaches you, at either office.",
+        "problems": [
+          "\"Get a Free Estimate\", \"Get a Quote\" and \"About Us\" all lead back to the homepage.",
+          "The email link writes to info@mysite.com, a stranger's address."
+        ],
+        "fixes": [
+          "Both numbers one tap away, with your hours and your real email.",
+          "A short list of what to have ready before you call."
+        ],
+        "alsoAdd": "Call and form tracking that shows which pages and towns your leads come from."
+      }
+    ],
+    "reportCardHeading": "What great exterior company websites get right, and how yours measures up.",
+    "reportCard": [
+      {
+        "label": "Every phone number dials correctly",
+        "status": "Missing"
+      },
+      {
+        "label": "Headline says what you do and where",
+        "status": "Needs work"
+      },
+      {
+        "label": "Each money service has its own page",
+        "status": "Needs work"
+      },
+      {
+        "label": "Real reviews shown",
+        "status": "Missing"
+      },
+      {
+        "label": "Buttons open the right pages",
+        "status": "Needs work"
+      },
+      {
+        "label": "Email link opens your address",
+        "status": "Missing"
+      },
+      {
+        "label": "No leftover sample text",
+        "status": "Needs work"
+      }
+    ],
+    "closing": {
+      "heading": "Want a website like this for your business?",
+      "text": "Your customers already tell people to call you first. Book a strategy call with Fluid Frame and we'll walk you through this demo and plan your new site."
+    }
+  },
+  "onboardingQuestions": [
+    "Colton's and Riley's surnames, and how they want to be introduced on the site (the Thumbtack name \"Helton\" is unconfirmed).",
+    "Which phone number should lead on the site for Oklahoma City customers, and do they want the OKC number shown in the header as well as the footer and contact page?",
+    "Is there a street address to show? Only an unopened Angi snippet gives 2733 E. Kite Ct., Wichita; the Google profile shows 7804 E Funston St #208, Wichita. Which is current, and is there an OKC address?",
+    "Full list of services: entry doors, egress windows, basement windows beyond two reviews, bay and picture windows, soffit and fascia (one owner reply and a few reviews). Triple-pane windows (the blog and one review mention them)?",
+    "Window brand they install. \"Wallside's Awning Windows\" is the only name on the site and we could not confirm a dealer relationship, so no brand is named.",
+    "Does the manufacturer's lifetime warranty transfer to the next owner, and are the windows made in the USA? Only one review says so.",
+    "Years in business: the site says 5+ years in the industry, reviews start March 2025. What can we say?",
+    "Licensing, insurance, BBB or any certification to verify and show. None is stated anywhere we found.",
+    "Is financing through a named lender, and may we say \"low-to-no interest\"? The financing page also names the wrong city (Addison).",
+    "Should the 15% off sign-up offer on the current homepage be honored on the new site?",
+    "Typical install times for windows and siding, and what is included in the window, siding and patio door consultations, so the steps can be firmed up.",
+    "Logo file and brand colors (not sampled; none held in our files).",
+    "Is Evolve Egress and Exteriors (named in one review and on Angi) the same company?"
+  ]
+}
