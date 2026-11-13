@@ -192,16 +192,16 @@
         },
         {
           "type": "prose",
-          "heading": "The Same Care From the First Visit to the Last",
+          "heading": "Open, Honest and Still Answering the Phone",
           "body": [
-            "The worst part of hiring an electrician isn't the first visit. It's after the check clears: a friendly estimate, then a crew that goes quiet when the work is wrong or doesn't hold.",
+            "The worst part of hiring an electrician isn't the first visit. It's after the check clears: a friendly estimate, then a crew that goes quiet when the work is wrong or doesn't hold. You want a company that's still there when something goes wrong.",
             "Linnebur Electric is family owned and operated. We keep a smaller staff on purpose, for continuity from one project to the next, so you're dealing with the same local company the whole way through."
           ]
         },
         {
           "type": "review",
-          "quote": "Upfront, honest, and great pricing. Prompt and professional when they come out for the initial review and that continues all the way through to the end.",
-          "name": "J M."
+          "quote": "Rod and his crew are absolutely a pleasure to work with. Open, honest and responsive for all your needs. They’ve went above and beyond for me in every aspect. I HIGHLY recommend them for all your needs. Commercial or residential",
+          "name": "Danny D."
         },
         {
           "type": "services",
@@ -267,8 +267,8 @@
         },
         {
           "type": "review",
-          "quote": "Rod and his crew are absolutely a pleasure to work with. Open, honest and responsive for all your needs. They’ve went above and beyond for me in every aspect. I HIGHLY recommend them for all your needs. Commercial or residential",
-          "name": "Danny D."
+          "quote": "Linnebur Electric's quality of work and professionalism are exceptional. Having worked with a number of electricians across the state, this experience has been by far the best. I highly recommend them!",
+          "name": "Frank B."
         },
         {
           "type": "faq",
@@ -414,7 +414,7 @@
           "heading": "Houses, Rentals and Businesses",
           "body": [
             "We do electrical repair for homes first, and for offices, shops and other commercial buildings too. If you manage a rental or a family member's house, tell us who will be there and how to reach them, and we'll plan around it.",
-            "Residential and commercial work both come through the same number."
+            "Residential and commercial work both come through the same number, and a call is the quickest way to get on the schedule."
           ]
         },
         {
@@ -528,8 +528,8 @@
         },
         {
           "type": "review",
-          "quote": "Linnebur Electric's quality of work and professionalism are exceptional. Having worked with a number of electricians across the state, this experience has been by far the best. I highly recommend them!",
-          "name": "Frank B."
+          "quote": "Great quality people providing a great quality service",
+          "name": "Alex O."
         },
         {
           "type": "prose",
@@ -557,7 +557,15 @@
           "heading": "Add Outlets While We're There",
           "body": [
             "If you're running power outside, it's a good time to ask for what you've been missing: an outlet on the patio for a string of lights or a grill, one at the shed, one on the back of the garage.",
-            "We install additional outlets in houses, garages and sheds as part of the same visit, when it makes sense for the job."
+            "Extra outlets can go in on the same visit, at the house, the garage or the shed, when it makes sense for the job."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Lights Around the House, Rentals and Businesses",
+          "body": [
+            "Outdoor lighting isn't only for backyards. A dark side yard, a back door and a parking area all call for the same planning: where people walk, what needs to be seen and where the power comes from.",
+            "We work on homes first, and on businesses, shops and churches too. If you manage a property, tell us when someone can let us in and who to call."
           ]
         },
         {
@@ -574,7 +582,7 @@
           "items": [
             {
               "q": "Can you add lights to a pool area?",
-              "a": "We install outdoor lights around pools and backyards. Pools carry their own safety rules, so tell us what's there when you call."
+              "a": "Pool and backyard lights are on our list. Pools carry their own safety rules, so tell us what's there when you call."
             },
             {
               "q": "Do I need new wiring?",
@@ -586,7 +594,7 @@
             },
             {
               "q": "Will you add an outlet at the same time?",
-              "a": "Ask. We install extra outlets in houses, garages and sheds."
+              "a": "Ask. Extra outlets for the patio, garage or shed can often go in on the same visit."
             },
             {
               "q": "What does it cost?",
@@ -685,7 +693,7 @@
     "whyHeading": "Why we built this site",
     "why": [
       "Your current site is four pages. The homepage headline is just “LINNEBUR ELECTRIC,” with no electrician and no Wichita, and every service sits on one page with the commercial and industrial lists hidden until someone taps. On a phone, the first screen has no phone number, and the Call button is inside the menu.",
-      "Your reviews say more than your site does. Dod I.: “These were the only guys how could find the problem and get it fixed.” Danny D.: “Open, honest and responsive for all your needs.” Today those words sit on Google, not on your site.",
+      "Your reviews say more than your site does. Dod I.: “These were the only guys how could find the problem and get it fixed.” Danny D.: “Open, honest and responsive for all your needs.” Those words sit on Google, not on your site.",
       "So the demo tells one story: when a problem has been hard to find, you find it. It opens with electrician in Wichita, KS, and gives electrical repair and outdoor lighting a page each. Your site prints License #1353 in the footer, so we kept it."
     ],
     "cardsHeading": "Be the Electrician People Find on Google",
