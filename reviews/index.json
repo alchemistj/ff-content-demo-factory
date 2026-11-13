@@ -759,6 +759,18 @@
       "pulledAt": "2026-11-08T22:04:58.917Z"
     },
     {
+      "slug": "yokes-plumbing-wichita",
+      "name": "Yoke's master plumbing and remodeling",
+      "placeId": "ChIJO85FIOjfuocRi4Cd9_JgJtk",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 131,
+        "withText": 60,
+        "ratingOnly": 15
+      },
+      "pulledAt": "2026-11-13T21:11:17.351Z"
+    },
+    {
       "slug": "young-electric-wichita",
       "name": "Young Electric, Inc.",
       "placeId": "ChIJqSKiffrkuocRtpg_iqzBwZc",
