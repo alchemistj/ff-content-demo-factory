@@ -1,6 +1,6 @@
 # Fluid Frame Marketing: USP table (in-house)
 
-Method: `docs/writer-guides/AVATAR-AND-USP.md` sections 2 and 2b. Fears and wants are from `avatars/fluid-frame.md`. Facts are from `scratchpad/ff/INPUTS.md` (Central Forms, Split Testing, FF Reports; Nov 13), Ted's FF web copy and the live site. Calibration: named-person or owner-access claims are capped at E 3; a braid scores as its strongest single part. Competitors were read from their own homepages on 2026-11-13; "not stated" means not found on the homepage, not confirmed absent. `docs/plans/fluid-frame.md` is missing in this checkout, so it was not used.
+Method: `docs/writer-guides/AVATAR-AND-USP.md` sections 2 and 2b. Fears and wants are from `avatars/fluid-frame.md`. Facts are from `scratchpad/ff/INPUTS.md` (Central Forms, Split Testing, FF Reports; Nov 13), Ted's FF web copy and the live site. Calibration: named-person or owner-access claims are capped at E 3; a braid scores as its strongest single part. Competitors were read from their own homepages on 2026-11-13; "not stated" means not found on the homepage, not confirmed absent. `docs/plans/fluid-frame.md` was read (main, Nov 13). The plan adds no new client proof, so scores are unchanged.
 
 ## Business in one line
 Fluid Frame Marketing is Josh Lenz's Springfield MO agency for local service businesses: websites, Google (search, map, Local Service Ads), ads and follow-up, with client-site reporting that ties calls and bookings to marketing source (FF Reports).
@@ -41,6 +41,11 @@ Fluid Frame Marketing is Josh Lenz's Springfield MO agency for local service bus
 
 ## Gate result
 Top claim: "Real leads, counted honestly" (braid, scored as its strongest part) and its halves tie at **20**. Passes the gate (16 or more). The hero, method section and outreach may lead with it. Describe the counting, never promise a result, price or guarantee. The 16s (ads tracking audit, the Fluid Frame way) support the method section; the audit is in-house only.
+
+## Keywords and pages
+- **Homepage ("marketing agency", Springfield MO; live, H1 matches):** lead with "Real leads, counted honestly" and Statement A. Method B supports it.
+- **SEO page (/seo-services/, "SEO services", Springfield MO; live):** "Customers, not just rankings" fits the real-leads claim. Use the spam filter and booked-job tie here; keep the ads tracking audit in-house.
+- **Not live yet:** Google Ads and other recipe pages are proposals, so no claim goes on them.
 
 ## Three USP statements
 - **A, pain point:** For Springfield service-business owners who can't tell how many of the agency's leads were real, Fluid Frame counts real leads and booked jobs, not traffic and spam, and shows you the same number we see.
