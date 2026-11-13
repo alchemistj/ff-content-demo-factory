@@ -299,8 +299,7 @@
           "body": [
             "You tell us what the system is doing and which town you're in, and we book you the same day or the next. Emergency calls are available.",
             "The technician checks the system, finds the failed part and explains what's wrong before anything gets fixed.",
-            "Then you decide. If a repair makes sense, we do it. If it doesn't, we say so and talk through replacement.",
-            "Same-day and next-day appointments are available, so you are not left waiting."
+            "Then you decide. If a repair makes sense, we do it. If it doesn't, we say so and talk through replacement."
           ],
           "image": {
             "slot": "service-van",
@@ -361,7 +360,8 @@
           "body": [
             "Repair when the system is fairly young and one part has failed. A new capacitor or motor on a system that otherwise runs well is money well spent.",
             "Replace when most of these are true: the system is 10 to 15 years old or more, it has broken down repeatedly, it runs on the older R-22 refrigerant, or it can't keep the house cool even with every part working.",
-            "We give you the reasoning and the numbers on both, and you choose. If it does come to replacement, here is [what a new system involves](/ac-replacement-wichita-ks/)."
+            "We give you the reasoning and the numbers on both, and you choose. If it does come to replacement, here is [what a new system involves](/ac-replacement-wichita-ks/).",
+            "Annual tune-ups are part of what we offer, so a weak part gets caught on a mild day instead of failing on the hottest one."
           ]
         },
         {
@@ -477,7 +477,7 @@
           "body": [
             "We install energy-efficient air conditioning systems for homes, matched to your house and your needs. The goal is a system that is the right size for your home, not the biggest one on the truck.",
             "Size matters. A system that's too large cools fast, shuts off and leaves the house clammy. One that's too small runs nonstop and can't keep up on a 100-degree day.",
-            "We install energy-efficient air conditioning systems tailored to your home. If part of your space has no ductwork, ask us about a ductless mini split.",
+            "If part of your space has no ductwork, ask us about a ductless mini split.",
             "Same-day and next-day appointments are available, and the estimate is free."
           ],
           "image": {
@@ -511,7 +511,8 @@
           "heading": "Paying for It",
           "body": [
             "Replacing a system rarely comes at a convenient time. Financing is available through Enhancify, a partner we work with to offer flexible financing options.",
-            "Promotional 0% interest periods may be available, depending on the financing partner. Enhancify has a page for Air Capital Heating and Air where you can see the options and apply."
+            "Promotional 0% interest periods may be available, depending on the financing partner. Enhancify has a page for Air Capital Heating and Air where you can see the options and apply.",
+            "You can see your financing offers before you decide anything, through the same lender link on our site."
           ]
         },
         {
@@ -615,7 +616,7 @@
         {
           "type": "callBand",
           "heading": "Email",
-          "text": "You can also write to us at aircapitalheatingnair@gmail.com. If it's urgent, please call, since that's the fastest way to reach us."
+          "text": "You can also write to us at aircapitalheatingnair@gmail.com. If it's urgent, please call."
         }
       ]
     }

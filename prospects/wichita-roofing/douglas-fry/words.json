@@ -50,7 +50,7 @@
     {
       "name": "Roof Replacement",
       "route": "/roof-replacement-wichita-ks/",
-      "blurb": "A whole new roof in tile, DaVinci, Brava, shake, asphalt shingle or standing seam metal, with the scope, warranty and price in writing. One of us looks at your roof first."
+      "blurb": "A whole new roof in tile, DaVinci, Brava, shake, asphalt shingle or standing seam metal. One of us looks at your roof first."
     },
     {
       "name": "Roof Repair",
@@ -106,7 +106,7 @@
       "hero": {
         "eyebrow": "Wichita, KS · Family-Owned · 1835 N. Ohio",
         "h1": "Roofing Company in Wichita, KS — Douglas Fry Roofing",
-        "sub": "We're Doug and Jason Fry. We have no commissioned salespeople, so nobody is working a commission on your roof. Call, and one of us answers and comes to look at it, then you get the scope, warranty and price in writing. Call (316) 655-9777.",
+        "sub": "We're Doug and Jason Fry. We have no commissioned salespeople, so nobody is working a commission on your roof. Call, and one of us comes to look at it.",
         "primaryCta": {
           "label": "Call (316) 655-9777",
           "action": "call"
@@ -305,7 +305,7 @@
           "items": [
             {
               "q": "Do you work with insurance companies?",
-              "a": "Yes. Jason works with your insurer from the first call to the finished roof. We price from what's on your roof, not just from the paperwork, and we'll tell you if the claim covers less than the roof needs."
+              "a": "Yes. Jason works with your insurer from the first call to the finished roof."
             },
             {
               "q": "Are you storm chasers?",
@@ -317,7 +317,7 @@
             },
             {
               "q": "Do I have to sign today?",
-              "a": "No. Every repair and re-roof estimate is in writing, so you can read it and set it beside any other bid."
+              "a": "No. Take the written estimate home and read it first."
             },
             {
               "q": "Who will I talk to, and who does the work?",
