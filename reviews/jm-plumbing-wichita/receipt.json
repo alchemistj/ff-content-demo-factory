@@ -1,0 +1,27 @@
+{
+  "kind": "google-review-pull-receipt",
+  "status": "ok",
+  "slug": "jm-plumbing-wichita",
+  "request": {
+    "mapsUrl": "place_id:ChIJV-VZZm7kuocR53ahCpWYLbg",
+    "maxReviews": 75,
+    "expectedName": "JM Plumbing"
+  },
+  "trigger": "workflow_dispatch",
+  "apify": {
+    "actor": "compass~crawler-google-places",
+    "runId": "azemoEiCCEETKdEvJ",
+    "datasetId": "nQ1Oh3sePAeaud7Sz",
+    "attempts": 1,
+    "usageUsd": 0.042699999999999995
+  },
+  "counts": {
+    "listingTotal": 127,
+    "withText": 67,
+    "ratingOnly": 7
+  },
+  "detail": null,
+  "startedAt": "2026-11-13T21:13:41.671Z",
+  "finishedAt": "2026-11-13T21:14:13.033Z",
+  "githubRunUrl": "https://github.com/alchemistj/ff-content-demo-factory/actions/runs/43508749052"
+}

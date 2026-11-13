@@ -459,6 +459,18 @@
       "pulledAt": "2026-11-09T18:31:52.100Z"
     },
     {
+      "slug": "jm-plumbing-wichita",
+      "name": "JM Plumbing, LLC",
+      "placeId": "ChIJV-VZZm7kuocR53ahCpWYLbg",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 127,
+        "withText": 67,
+        "ratingOnly": 7
+      },
+      "pulledAt": "2026-11-13T21:14:13.033Z"
+    },
+    {
       "slug": "jons-plumbing",
       "name": "Jon's Plumbing, LLC",
       "placeId": "ChIJVVXxT51kz4cRt_W0muFXJbQ",
