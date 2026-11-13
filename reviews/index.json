@@ -531,6 +531,18 @@
       "pulledAt": "2026-11-09T02:09:21.938Z"
     },
     {
+      "slug": "plumbcrazy-wichita",
+      "name": "Plumb Crazy",
+      "placeId": "ChIJ7ye8perhuocRcx4ydI15DXk",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 75,
+        "withText": 65,
+        "ratingOnly": 10
+      },
+      "pulledAt": "2026-11-13T21:12:22.995Z"
+    },
+    {
       "slug": "ramco-building-maintenance",
       "name": "Ramco Building Maintenance",
       "placeId": "ChIJC16wA73juocRWG69v-0Gx04",

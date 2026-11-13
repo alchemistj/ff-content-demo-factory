@@ -1,0 +1,27 @@
+{
+  "kind": "google-review-pull-receipt",
+  "status": "ok",
+  "slug": "plumbcrazy-wichita",
+  "request": {
+    "mapsUrl": "place_id:ChIJ7ye8perhuocRcx4ydI15DXk",
+    "maxReviews": 75,
+    "expectedName": "Plumb Crazy"
+  },
+  "trigger": "workflow_dispatch",
+  "apify": {
+    "actor": "compass~crawler-google-places",
+    "runId": "3n5Oh0sLHYxFsoeRS",
+    "datasetId": "hPgbCSIBOQdjY965b",
+    "attempts": 1,
+    "usageUsd": 0.042699999999999995
+  },
+  "counts": {
+    "listingTotal": 75,
+    "withText": 65,
+    "ratingOnly": 10
+  },
+  "detail": null,
+  "startedAt": "2026-11-13T21:11:51.799Z",
+  "finishedAt": "2026-11-13T21:12:22.995Z",
+  "githubRunUrl": "https://github.com/alchemistj/ff-content-demo-factory/actions/runs/43508467489"
+}
