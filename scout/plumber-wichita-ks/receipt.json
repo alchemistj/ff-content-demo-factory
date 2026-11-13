@@ -1,0 +1,26 @@
+{
+  "kind": "google-prospect-scout-receipt",
+  "status": "ok",
+  "slug": "plumber-wichita-ks",
+  "request": {
+    "query": "plumber",
+    "location": "Wichita, KS",
+    "maxPlaces": 60
+  },
+  "trigger": "workflow_dispatch",
+  "apify": {
+    "actor": "compass~crawler-google-places",
+    "runId": "YPY4wpMJc4bmnf6cz",
+    "datasetId": "XGEuS2Y147OLcbE2Z",
+    "attempts": 1,
+    "usageUsd": 0.1802
+  },
+  "counts": {
+    "returned": 60,
+    "advertisements": 1
+  },
+  "detail": null,
+  "startedAt": "2026-11-13T20:55:31.739Z",
+  "finishedAt": "2026-11-13T20:56:34.302Z",
+  "githubRunUrl": "https://github.com/alchemistj/ff-content-demo-factory/actions/runs/43505946129"
+}
