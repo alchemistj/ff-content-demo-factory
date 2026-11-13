@@ -96,10 +96,6 @@
           "label": "Call (316) 871-3006",
           "action": "call"
         },
-        "secondaryCta": {
-          "label": "Request Service",
-          "action": "contact"
-        },
         "image": {
           "slot": "home-hero",
           "alt": "Plumber checking the pipes under a kitchen sink in a Wichita home",
@@ -124,7 +120,7 @@
         },
         {
           "type": "split",
-          "heading": "Smaller Fix First",
+          "heading": "A Big Quote, Then a Smaller Fix",
           "image": {
             "slot": "leak",
             "alt": "Water dripping from a pipe joint under a kitchen sink",
@@ -132,13 +128,13 @@
           },
           "imageSide": "right",
           "body": [
-            "Several customers came to us holding a big quote from somewhere else.",
-            "They told us we found a smaller fix. Call, and we'll tell you what we find."
+            "Big quote in hand? Customers have been in your spot.",
+            "Call, and tell us what you were quoted."
           ],
           "list": [
-            "Customers describe the problem found before the quote",
-            "Six reviews describe a smaller fix found first",
-            "You hear both options in plain words",
+            "One customer expected to replace a water heater, and Brandon fixed it \"for a fraction of the cost\"",
+            "One customer was told a sewer line \"had to be done.\" Brandon \"found an alternative solution that was affordable.\"",
+            "One customer's gas valve was reset by text instructions, saving the cost of a visit",
             "No funny business, no fake code upgrades"
           ],
           "listStyle": "checks"
@@ -153,7 +149,7 @@
           },
           "imageSide": "left",
           "body": [
-            "A big quote lands hard. It lands harder when the other company says the work has to be done and nobody offers another way to look at it.",
+            "A big quote lands hard, and it lands harder when the answer is that the work has to be done.",
             "Before you sign, get a second look. Call us and tell us what you were quoted."
           ]
         },
@@ -174,22 +170,22 @@
         },
         {
           "type": "prose",
-          "heading": "What We Look For First",
+          "heading": "Six Calls and the Small Part Often Behind Them",
           "body": [
-            "Most plumbing calls come down to one worn part, a clog or a bad seal. Here is what we check before anyone talks about replacing anything."
+            "Most plumbing calls come down to one worn part, a clog or a bad seal. Here is what's often behind them."
           ],
           "items": [
             {
               "title": "A water heater that's gone cold",
-              "text": "A thermostat, a heating element or a gas valve can be the whole problem, and any of them is a smaller job than a new tank. If the tank itself has failed, you'll hear that too."
+              "text": "A thermostat, a heating element or a gas valve can be the whole problem, and any of them is a smaller job than a new tank."
             },
             {
               "title": "A drain that's slow or backing up",
-              "text": "A clog is a clearing job, not a replacement job. We clear it, then look at why it formed, whether that's grease, roots or a pipe that's failing."
+              "text": "A clog is a clearing job, not a replacement job. Grease, roots or a failing pipe can all cause one."
             },
             {
               "title": "A leak under a sink or in a wall",
-              "text": "Often a worn seal, a bad valve or a cracked fitting. We find the real source before anyone opens a wall."
+              "text": "Often a worn seal, a bad valve or a cracked fitting."
             },
             {
               "title": "A faucet or tub that won't stop dripping",
@@ -197,7 +193,7 @@
             },
             {
               "title": "A sewer line that keeps backing up",
-              "text": "A backup doesn't always mean a new line. We look for where it's blocked or broken first, and when the pipe has really failed, we say so."
+              "text": "A backup doesn't always mean a new line. A clog or a bad joint can look the same as a failed pipe."
             },
             {
               "title": "A water line that's broken or leaking",
@@ -205,7 +201,7 @@
             }
           ],
           "tail": [
-            "Start with a call, and we'll tell you what we find and what the options are."
+            "Start with a call, and tell us what you're seeing."
           ],
           "link": {
             "label": "See water heater repair in Wichita",
@@ -217,7 +213,7 @@
           "heading": "When a Repair Stops Making Sense",
           "body": [
             "Smaller fix first doesn't mean never replace. Some things are done: a tank leaking from its body, a sewer line that has collapsed, a pipe that keeps failing in a new spot.",
-            "When it's time, we do the replacement and tell you why. We replace water heaters, water service lines and [sewer lines](/sewer-line-replacement-wichita-ks/).",
+            "We replace water heaters, water service lines and [sewer lines](/sewer-line-replacement-wichita-ks/).",
             "Here's a rule you can check yourself. If the same repair keeps coming back, or the thing that failed is the whole unit and not a piece of it, price the replacement."
           ]
         },
@@ -225,7 +221,7 @@
           "type": "prose",
           "heading": "Funny Name, Serious Plumbing",
           "body": [
-            "Yes, Plumb Crazy is a funny name. It gets remembered, which helps when a pipe lets go on a Sunday and you need a number.",
+            "Yes, Plumb Crazy is a funny name.",
             "The plumbing is serious. We treat every customer fairly, with no funny business."
           ]
         },
@@ -234,7 +230,7 @@
           "heading": "For Landlords, Property Managers and Realtors",
           "body": [
             "We work on homes, rentals and commercial buildings. A plumbing problem at a rental, or in the middle of a sale, can't sit around.",
-            "Tell us the address and what's wrong. You get the problem found and explained, with the smaller fix looked at first."
+            "Tell us the address and what's wrong."
           ]
         },
         {
@@ -244,10 +240,10 @@
         },
         {
           "type": "prose",
-          "heading": "Serving Wichita and the Area",
+          "heading": "30 Miles Around Sedgwick County",
           "body": [
             "We work in Wichita, Kansas and the surrounding area, including a 30 mile radius around Sedgwick County.",
-            "Call and tell us where you are. If it's inside that radius, we'll set up a time."
+            "Call and tell us where you are."
           ]
         },
         {
@@ -257,7 +253,7 @@
         },
         {
           "type": "faq",
-          "heading": "Questions Before You Call",
+          "heading": "Weekends, Cost and a Heater That Won't Heat",
           "items": [
             {
               "q": "Can you come on a weekend?",
@@ -265,11 +261,11 @@
             },
             {
               "q": "What will it cost, and does all of it need doing?",
-              "a": "We can't price a problem we haven't seen, so we won't guess a number here. We find the cause, look for the smaller fix first, and tell you your options before the work starts."
+              "a": "We can't price a problem we haven't seen, so we won't guess a number here. Call, tell us what you were quoted, and tell us what's going on."
             },
             {
               "q": "Do I need a whole new water heater?",
-              "a": "Sometimes the answer is a thermostat, an element or a gas valve. When the tank itself has failed, we'll tell you that and replace it. Either way, you hear which one it is before you decide."
+              "a": "Sometimes the answer is a thermostat, an element or a gas valve. When the tank itself has failed, it needs replacing, and we replace water heaters too."
             },
             {
               "q": "What if it acts up again?",
@@ -283,8 +279,8 @@
         },
         {
           "type": "callBand",
-          "heading": "Call Plumb Crazy",
-          "text": "Call (316) 871-3006. Tell us what's wrong, and we'll tell you the smaller fix, the bigger one, and which one we'd do."
+          "heading": "Got a Big Quote? Call Before You Sign",
+          "text": "Call (316) 871-3006 and tell us what you were quoted."
         }
       ]
     },
@@ -296,14 +292,10 @@
       "hero": {
         "eyebrow": "Water heaters, Wichita",
         "h1": "Water Heater Repair in Wichita, KS — Plumb Crazy",
-        "sub": "A cold shower doesn't always mean a new tank. We find what failed, look at the smaller fix first, and tell you straight when the heater really is done. Call (316) 871-3006.",
+        "sub": "A cold shower doesn't always mean a new tank. A thermostat, an element or a gas valve can be the whole problem. Call (316) 871-3006.",
         "primaryCta": {
           "label": "Call (316) 871-3006",
           "action": "call"
-        },
-        "secondaryCta": {
-          "label": "Request Service",
-          "action": "contact"
         },
         "image": {
           "slot": "water-heater",
@@ -319,7 +311,7 @@
         },
         {
           "type": "split",
-          "heading": "What Happens When You Call About Your Water Heater",
+          "heading": "Tell Us What the Heater Is Doing",
           "image": {
             "slot": "contact-hero",
             "alt": "Front door of a Wichita home, where the visit starts",
@@ -328,16 +320,15 @@
           "imageSide": "right",
           "body": [
             "Tell us what the heater is doing: no hot water, not enough of it, a puddle, a noise. We'll tell you what we think it is.",
-            "Then we look at the heater and find what actually failed. If it's a small part or a setting, we fix that. If it's the tank, you'll hear that too, with your options.",
-            "A cold shower on a Saturday is a normal call for us. We work seven days a week and don't charge emergency rates."
+            "Sometimes it's a small part or a setting. Sometimes it's the tank. Either way, you hear it before you decide."
           ]
         },
         {
           "type": "prose",
-          "heading": "What Usually Goes Wrong",
+          "heading": "Six Ways a Water Heater Goes Cold",
           "body": [
             "A water heater is a tank, a heat source, a thermostat and a few valves. When one piece fails, the whole thing feels dead, even when the rest of it is fine.",
-            "Here's what we check first."
+            "Here's what to look at first."
           ],
           "items": [
             {
@@ -346,7 +337,7 @@
             },
             {
               "title": "Hot water that runs out fast",
-              "text": "A failed element or a thermostat set too low can cut the supply. So can sediment built up in the bottom of the tank. We check these before anyone suggests a bigger heater."
+              "text": "A failed element or a thermostat set too low can cut the supply. So can sediment built up in the bottom of the tank."
             },
             {
               "title": "Water that's only lukewarm",
@@ -354,7 +345,7 @@
             },
             {
               "title": "A puddle around the tank",
-              "text": "Water at a fitting or a valve can be repaired. Water coming from the body of the tank means the tank has failed, and no repair will hold. We'll tell you which one you have."
+              "text": "Water at a fitting or a valve can be repaired. Water coming from the body of the tank means the tank has failed, and no repair will hold."
             },
             {
               "title": "Rumbling or popping from the tank",
@@ -373,7 +364,7 @@
         },
         {
           "type": "split",
-          "heading": "Repair or Replace?",
+          "heading": "A Part or a Tank: How to Tell",
           "image": {
             "slot": "fixture",
             "alt": "Hand turning on a bathroom faucet with steam rising",
@@ -382,8 +373,7 @@
           "imageSide": "left",
           "body": [
             "Here's a rule you can check. If it's a thermostat, an element, a valve or a fitting, repair it. That's a smaller job than a new heater, and the heater goes on working.",
-            "If the tank is leaking from its body, the heater is old and the repairs are stacking up, or the same part keeps failing, price a new one. Money spent on a tank that's finished doesn't come back.",
-            "We lay the two side by side and tell you which side you're on, including when the answer is repair."
+            "If the tank is leaking from its body, the heater is old and the repairs are stacking up, or the same part keeps failing, price a new one. Money spent on a tank that's finished doesn't come back."
           ]
         },
         {
@@ -395,13 +385,21 @@
           "type": "prose",
           "heading": "When You Do Need a New One",
           "body": [
-            "When the tank is done, we replace it. We'll walk through your choices, including the downsides of each, so you pick the heater and nobody picks it for you.",
+            "When the tank is done, we replace it.",
             "A water heater is worth having a plumber install. It's tied into your water and your gas or electric, and a mistake there is the kind you find out about later."
           ]
         },
         {
           "type": "prose",
-          "heading": "Before You Call",
+          "heading": "Gas or Electric: Check This Before You Call",
+          "body": [
+            "On a gas heater, check the pilot and the gas valve. On an electric one, check the breaker and the thermostat setting. A tripped breaker or a thermostat turned down can look like a dead heater.",
+            "Carl F. had a gas valve reset by text and saved the cost of a visit."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Water Coming From the Tank? Do This First",
           "body": [
             "If you can do it safely, check a few things first. Is the breaker on? Is the thermostat set where you want it? Is there water around the base of the tank?",
             "If you smell gas, leave the house and call your gas company before anything else. If water is coming from the tank, turn off the cold water supply to the heater. Then call us."
@@ -409,19 +407,19 @@
         },
         {
           "type": "faq",
-          "heading": "Questions Before You Call",
+          "heading": "Hot Water Questions, Plainly",
           "items": [
             {
               "q": "Do I need a whole new water heater?",
-              "a": "Not always. A thermostat, an element or a gas valve can be the whole problem. If the tank itself has failed, we'll tell you so, and we replace water heaters too."
+              "a": "Not always. A thermostat, an element or a gas valve can be the whole problem. If the tank itself has failed, it needs replacing, and we replace water heaters too."
             },
             {
-              "q": "Can you come on a weekend?",
-              "a": "We work seven days a week and don't charge emergency rates. Call and tell us what the heater is doing."
+              "q": "How do I tell a bad part from a dead tank?",
+              "a": "Water coming from the body of the tank means the tank has failed. A heater that's gone cold with no leak may only need a part."
             },
             {
               "q": "What will it cost?",
-              "a": "We can't name a number for a heater we haven't looked at, and we won't guess here. We'll tell you what it needs and what that costs before the work starts."
+              "a": "We can't name a number for a heater we haven't looked at, and we won't guess here. Call and tell us what it's doing."
             },
             {
               "q": "Do you work on homes, rentals and businesses?",
@@ -431,7 +429,7 @@
         },
         {
           "type": "callBand",
-          "heading": "Call Plumb Crazy",
+          "heading": "Cold Shower? Call",
           "text": "If your water heater has gone cold, call (316) 871-3006. Tell us what it's doing, and we'll tell you whether it's a repair or a replacement."
         }
       ]
@@ -444,14 +442,10 @@
       "hero": {
         "eyebrow": "Sewer lines, Wichita",
         "h1": "Sewer Line Replacement in Wichita, KS — Plumb Crazy",
-        "sub": "Replacing a sewer line is one of the biggest jobs a house can face, so the first question is whether you need one. We find out before anything gets dug. Call (316) 871-3006.",
+        "sub": "Replacing a sewer line is one of the biggest jobs a house can face, so the first question is whether you need one. Call (316) 871-3006.",
         "primaryCta": {
           "label": "Call (316) 871-3006",
           "action": "call"
-        },
-        "secondaryCta": {
-          "label": "Request Service",
-          "action": "contact"
         },
         "image": {
           "slot": "sewer",
@@ -467,7 +461,7 @@
         },
         {
           "type": "split",
-          "heading": "What Happens Before Anything Gets Dug",
+          "heading": "A Clog Can Look Like a Failed Pipe",
           "image": {
             "slot": "drain",
             "alt": "Basement floor drain beside a washer and utility sink",
@@ -476,12 +470,12 @@
           "imageSide": "right",
           "body": [
             "A sewer problem and a sewer replacement are not the same thing. A clog, a root in a joint or a bad connection can look just like a failed pipe from the basement.",
-            "So we start by finding out what's actually wrong with the line. If clearing it or a smaller repair will solve the problem, we'll say so. If the pipe has really failed, we'll say that too, and tell you what replacing it takes."
+            "Clearing it may solve the problem. If the pipe has really failed, replacing it is the answer, and replacing a buried line means digging."
           ],
           "list": [
-            "What's wrong with the line, found before it's quoted",
-            "The smaller fix looked at first",
-            "What replacement involves, if it comes to that"
+            "A clog, a root or a bad joint can look like a failed pipe",
+            "Clearing the line may solve it",
+            "A line that has really failed needs replacing"
           ],
           "listStyle": "checks"
         },
@@ -521,11 +515,9 @@
         },
         {
           "type": "prose",
-          "heading": "Clear, Repair or Replace?",
+          "heading": "Clog, Bad Joint or Collapsed Line",
           "body": [
-            "Here's how to think about it. A blockage gets cleared. A single bad section or joint may be a repair. A line that's cracked, collapsed, sagging or failing in several places is a replacement.",
-            "Ask any company that quotes you a new line how they know the old one has failed. If the answer is a guess, get a second look. If they looked and can show you, that's a better conversation.",
-            "We can't tell you from here which one you have. What we can tell you is that nothing gets decided until somebody has looked."
+            "Here's how to think about it. A blockage gets cleared. A single bad section or joint may be a repair. A line that's cracked, collapsed, sagging or failing in several places is a replacement."
           ]
         },
         {
@@ -543,15 +535,30 @@
           },
           "imageSide": "left",
           "body": [
-            "When replacement is the answer, the old line comes out and a new one goes in, and that means digging. A sewer line carries everything out of the house toward the city main, so it isn't a job for guessing.",
-            "Before the work starts, we'll tell you where the line runs, what has to be opened up and what that means for your yard."
+            "When replacement is the answer, the old line comes out and a new one goes in, and that means digging. A sewer line carries everything out of the house toward the city main, so it isn't a job for guessing."
           ]
         },
         {
           "type": "prose",
-          "heading": "The Price Question",
+          "heading": "Sewer Cleaning Sits Next to Replacement",
           "body": [
-            "We can't give you a number for a line we haven't looked at, and we won't print one here. Once we've seen the job, you'll have the price in front of you before you decide.",
+            "Brandon has been cleaning sewer lines for over 16 years. Sewer cleaning is on our list right beside replacement, so clearing a line is a real option for a backup.",
+            "Yoon R. had a main line in the basement clogged with tree roots and called. The drain was unclogged within the hour."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Water Lines From the City Main to the House",
+          "body": [
+            "Replacement work isn't only sewer. We repair and replace the water service line between the city main and the house.",
+            "Water service work is on the same list as sewer work, and it covers homes, rentals and commercial buildings alike. If the line between the main and the house is leaking or broken, call and tell us what you see."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Quoted Thousands? Tell Us What For",
+          "body": [
+            "We can't give you a number for a line we haven't looked at, and we won't print one here.",
             "If you already have quotes, tell us what they said and what they found. We'd like to hear it."
           ]
         },
@@ -559,17 +566,16 @@
           "type": "prose",
           "heading": "If Sewage Is Backing Up Now",
           "body": [
-            "Stop running water and don't flush. Whatever you send down has nowhere to go. Then call us and tell us where it's backing up.",
-            "We work seven days a week and don't charge emergency rates, so a backup on a weekend is a normal call."
+            "Stop running water and don't flush. Whatever you send down has nowhere to go. Then call us and tell us where it's backing up."
           ]
         },
         {
           "type": "faq",
-          "heading": "Questions Before You Call",
+          "heading": "Sewer Questions, Plainly",
           "items": [
             {
               "q": "How do I know I need a new sewer line?",
-              "a": "You may not. A clog, a root or a bad joint can look the same as a failed pipe. Finding the real problem comes first, and we'll tell you what we find."
+              "a": "You may not. A clog, a root or a bad joint can look the same as a failed pipe, so the real problem comes first."
             },
             {
               "q": "Can't the clog just be cleared?",
@@ -577,7 +583,7 @@
             },
             {
               "q": "Will replacement tear up my yard?",
-              "a": "Replacing a buried line means digging. We'll tell you what has to be opened up before the work starts."
+              "a": "Replacing a buried line means digging. Ask what has to be opened up when you call."
             },
             {
               "q": "Do you replace water lines too?",
@@ -587,7 +593,7 @@
         },
         {
           "type": "callBand",
-          "heading": "Call Plumb Crazy",
+          "heading": "Told You Need a New Sewer Line?",
           "text": "If you've been told you need a new sewer line, call (316) 871-3006. Tell us what you were quoted and what's going wrong."
         }
       ]
@@ -605,10 +611,6 @@
           "label": "Call (316) 871-3006",
           "action": "call"
         },
-        "secondaryCta": {
-          "label": "Request Service",
-          "action": "contact"
-        },
         "image": {
           "slot": "contact-hero",
           "alt": "Plumbing service van parked in the driveway of a Wichita home",
@@ -618,22 +620,15 @@
       "sections": [
         {
           "type": "prose",
-          "heading": "Call Us",
+          "heading": "Call, Any Day of the Week",
           "body": [
             "(316) 871-3006",
-            "We work seven days a week. Call and tell us what's going on. We don't charge emergency rates."
-          ]
-        },
-        {
-          "type": "prose",
-          "heading": "Send a Request",
-          "body": [
-            "Not a good time to talk? Use Request Service and tell us what's going on. Add your name, your email, a phone number if you'd like a call back, and what you need done."
+            "Call and tell us what's going on. We work seven days a week, and we don't charge emergency rates."
           ]
         },
         {
           "type": "split",
-          "heading": "What to Have Ready",
+          "heading": "Got a Quote in Hand? Bring It.",
           "image": {
             "slot": "fixture",
             "alt": "Shutoff valve under a bathroom sink",
@@ -649,7 +644,7 @@
         },
         {
           "type": "prose",
-          "heading": "Service Area",
+          "heading": "30 Miles Around Sedgwick County",
           "body": [
             "We work in Wichita, Kansas and the surrounding area, including a 30 mile radius around Sedgwick County.",
             "Not sure you're inside it? Call and ask."
@@ -657,7 +652,7 @@
         },
         {
           "type": "callBand",
-          "heading": "Call Plumb Crazy",
+          "heading": "Water Where It Shouldn't Be?",
           "text": "Tell us what's wrong and where you are. We'll tell you what we can do."
         }
       ]
@@ -666,7 +661,7 @@
   "footer": {
     "about": "Plumb Crazy is a plumbing company serving Wichita, Kansas and the area around it, for homes, rentals and commercial buildings. Funny name, serious plumbing.",
     "why": [
-      "Smaller fix looked at first",
+      "Customers describe a smaller fix found first",
       "Seven days a week",
       "No emergency rates",
       "No funny business"
@@ -675,7 +670,7 @@
   "strategy": {
     "whyHeading": "Why we built this site",
     "why": [
-      "Your About page returns a “page missing” message, so a visitor can't find out who you are. On a desktop, the heading on each service page is hidden, so the page opens on a blank band before the first line of text.",
+      "Your About page returns a “page missing” message, so a visitor can't find out who you are.",
       "Your customers already describe the plumber you are. Vanessa F.: “Another company told me I had to pay thousand of dollars to fix the sewer line… Brandon to the rescue.” Today those words sit on Google, not on your site.",
       "So the demo tells one story everywhere: look for the smaller fix first. It opens with plumber in Wichita, KS, and gives water heater repair and sewer line replacement a page each."
     ],
@@ -777,20 +772,26 @@
     },
     "lead": {
       "heading": "Why we led with the smaller fix first",
-      "text": "The scariest moment for a Wichita homeowner is being handed a big quote and told it has to be done, with no way to tell if that's true. Looking for the smaller fix first, and telling you both options, answers it. We checked the five top Wichita competitors, and none of the sites we could read states it. Please tell us if that isn't how you work.",
+      "text": "The scariest moment for a Wichita homeowner is being handed a big quote and told it has to be done. We led with the smaller fix because it rests on things Google can't find anywhere else: your customers' own accounts, your seven days a week with no emergency rates, and the Wichita-area details on your pages. That is also why it can help you rank, and please tell us if it isn't how you work.",
       "showScores": false,
       "rows": [
         {
           "claim": "Looks for the smaller fix before the big quote",
-          "score": 16
+          "score": 16,
+          "appeal": 4,
+          "exclusivity": 4
         },
         {
           "claim": "Seven days a week, no emergency rates",
-          "score": 16
+          "score": 16,
+          "appeal": 4,
+          "exclusivity": 4
         },
         {
           "claim": "Reviews describe same-day or next-morning visits, not stated as policy",
-          "score": 15
+          "score": 15,
+          "appeal": 5,
+          "exclusivity": 3
         }
       ]
     }

@@ -2,13 +2,13 @@
 
 Hey Creekmore team,
 
-Your reviews show families passing your number down, and customers saying you explain the problem clearly. None of the Wichita competitors we could read says third generation. My daughter and I build websites for service businesses, so we made you a mockup that leads with it, "Family Plumbers. Honest Fix First.":
+Your Google reviews show families passing your number down, like Jane K., whose son told her about you and who now calls you for her three grown sons. Your site says third generation. My daughter and I build websites for service businesses, so we made you a mockup that leads with it, "Family Plumbers. Honest Fix First.":
 
 https://creekmore.websitepreview.fluidframemarketing.com/
 
 Note: It'll look a lot better with your logo and images on it! Lol
 
-The preview opens with a recent case study, then walks through why each page is built the way it is. One thing we'd fix: the "See What Our Customers Are Saying" section on your homepage shows a heading and no reviews, so your best proof isn't on the page.
+The preview opens with Richard W.'s review, then walks through why each page is built the way it is. One thing we'd fix: the "See What Our Customers Are Saying" section on your homepage shows a heading and no reviews, so your best proof isn't on the page.
 
 We built your water heater replacement and toilet repair pages as examples, and we'd love to build the rest. Which brands or manufacturers are you certified with?
 

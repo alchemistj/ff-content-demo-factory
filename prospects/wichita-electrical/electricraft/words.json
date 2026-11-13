@@ -33,7 +33,7 @@
     "Licensed and Insured",
     "One-Year Warranty on Residential Work",
     "Residential, Commercial and Industrial",
-    "Plain-Words Explanations"
+    "Weekdays 7 to 5"
   ],
   "services": [
     {
@@ -44,7 +44,7 @@
     {
       "name": "Lighting Installation",
       "route": "/lighting-installation-wichita-ks/",
-      "blurb": "New lights, ceiling fans, sconces and dimmers, installed clean and left tidy."
+      "blurb": "Ceiling fans, sconces, wafer lights and dimmers, as customers have had them installed."
     },
     {
       "name": "Electrical Panel Upgrade",
@@ -59,12 +59,12 @@
     {
       "name": "Meter Box and Service Line Repair",
       "route": null,
-      "blurb": "Storm damage to the meter box, mast or service line, repaired so the utility can reconnect."
+      "blurb": "A meter box fixed after a tree came down, a service drop line rebuilt after a storm."
     },
     {
       "name": "Generator Service",
       "route": null,
-      "blurb": "Troubleshooting and repair for home generators, including error codes."
+      "blurb": "Customers have had home generators troubleshot and repaired."
     },
     {
       "name": "Commercial Electrical",
@@ -86,13 +86,13 @@
       "hero": {
         "eyebrow": "Wichita, KS · Residential, Commercial and Industrial",
         "h1": "Electrician in Wichita, KS — ElectriCraft",
-        "sub": "Cynthia G. said Nell fixed the problem and pointed out what else she saw. You decide what happens next. Call (316) 264-3359.",
+        "sub": "A warm outlet plate, a faint smell and a wall you can't see into. Call (316) 264-3359.",
         "primaryCta": {
           "label": "Call (316) 264-3359",
           "action": "call"
         },
         "secondaryCta": {
-          "label": "Request Service",
+          "label": "Phone and Email",
           "action": "contact"
         },
         "image": {
@@ -130,30 +130,36 @@
         },
         {
           "type": "split",
-          "heading": "We Fix It, Then We Look Around",
+          "heading": "They Fixed It, Then Pointed Out More",
           "body": [
-            "Nick B. said a technician tracked down an odd problem that kept coming back and fixed it.",
-            "Some of it will be fine, and we'll tell you that too. Some of it you'll want to fix, and we'll give you options. You decide what gets done."
+            "Mike D., who had power run to a new shed, and Martin N. both wrote about being offered options before the work started.",
+            "Rebecca said the company helped her plan a large job as smaller items she could schedule and mark off as she went."
           ],
           "list": [
-            "Track down a problem that keeps coming back",
-            "Mention what else we notice",
-            "We clean up when we're done"
+            "Options laid out before the work starts",
+            "A big job broken into steps you can budget",
+            "Cleanup afterward: Kelley N., Vera W. and Robert B. all mention it"
           ],
           "image": {
-            "slot": "inspection",
-            "alt": "Electrician checking wiring at an open electrical panel",
-            "brief": "electrical pool: inspection"
+            "slot": "panel-upgrade",
+            "alt": "Electrical panel with breakers and labeled circuits",
+            "brief": "electrical pool: panel-upgrade"
           },
           "imageSide": "left"
         },
         {
-          "type": "prose",
+          "type": "split",
           "heading": "When Storm Damage Leaves You Waiting on the Utility",
           "body": [
             "A tree comes down, the meter box is torn loose, and the utility won't reconnect until the electrical side is fixed. Now you're stuck between two companies, with the power still off.",
-            "We repair the meter box, the mast or the service line. You shouldn't have to carry messages back and forth."
-          ]
+            "Jim H. had a storm-damaged service drop line rebuilt, riser and weatherhead included."
+          ],
+          "image": {
+            "slot": "inspection",
+            "alt": "Electrician working at a meter box on a brick wall",
+            "brief": "electrical pool: inspection"
+          },
+          "imageSide": "right"
         },
         {
           "type": "review",
@@ -172,26 +178,34 @@
         },
         {
           "type": "prose",
-          "heading": "What a Repair Call Usually Turns Up",
+          "heading": "Jobs Customers Have Written About",
           "body": [
-            "Most repair calls come down to a short list of causes. Here is what the signs usually mean, and what we do about each."
+            "A few of the jobs customers have written about, from a GFCI at a wet bar to a new panel."
           ],
           "items": [
             {
-              "title": "A breaker that keeps tripping",
-              "text": "An overloaded circuit, a short or a ground fault. One that trips again right after you reset it is telling you something, so we find out what."
+              "title": "A panel update and a new garage",
+              "text": "Billie V. had her panel updated and a new garage and well wired."
             },
             {
-              "title": "A warm outlet or switch plate",
-              "text": "A loose connection heats up. We open it, fix the connection and check the others on the same circuit."
+              "title": "A panel upgrade and an exhaust fan",
+              "text": "Kassandra B. had a bathroom exhaust fan put in and the panel upgraded."
             },
             {
-              "title": "Lights that flicker",
-              "text": "One fixture is often the bulb or the fixture. Flicker in several rooms points to a loose connection or an overloaded service."
+              "title": "A vaulted ceiling and an outdoor TV outlet",
+              "text": "Jennifer D. had ceiling lights added to a vaulted ceiling and dimmer switches put in."
             },
             {
-              "title": "Part of the house is dead",
-              "text": "A tripped breaker, a failed connection or storm damage. We trace it and tell you where it stopped."
+              "title": "Power to a new shed",
+              "text": "Mike D. had power extended to a shed, with the conduit trench backfilled."
+            },
+            {
+              "title": "A bungalow restoration",
+              "text": "Danny L. has had an electrician out several times on a 1910 bungalow."
+            },
+            {
+              "title": "A plant shop buildout",
+              "text": "Eva T. had outlets installed while building out her plant shop."
             }
           ],
           "link": {
@@ -204,7 +218,7 @@
           "heading": "Panel Upgrades and Breaker Boxes",
           "body": [
             "An old panel, a breaker box with no room left, or a house that has added a new appliance can outgrow what's on the wall. We upgrade and relocate panels.",
-            "A panel change usually means a city permit, an inspection and the power company disconnecting service for part of the day. We walk you through each step before we begin."
+            "Kassandra B. said the inspector for her property recommended ElectriCraft over anyone in town."
           ]
         },
         {
@@ -216,8 +230,8 @@
           "type": "prose",
           "heading": "Lighting, Fans and Fixtures",
           "body": [
-            "New lights, ceiling fans, sconces, dimmers and rebuilt fixtures. We run the wiring, mount the fixture and leave the room tidy.",
-            "Tell us what you want lit and how you use the room. We'll tell you what it takes and what your options are."
+            "New lights, ceiling fans, sconces, dimmers and rebuilt fixtures.",
+            "Lynn W. had sconces installed. Kathy G. had a bathroom exhaust fan put in."
           ],
           "link": {
             "label": "See lighting installation in Wichita",
@@ -226,22 +240,22 @@
         },
         {
           "type": "prose",
-          "heading": "For Landlords, Parents and Anyone Who Can't Be Home",
+          "heading": "When You're Calling for a Parent's House",
           "body": [
-            "If you manage a rental, or you're calling for a parent, you can't be there when we are. Tell us who we'll meet and how to reach them.",
-            "We explain what we found to whoever is home, and to you. We also work in commercial buildings and industrial sites, so one call covers more than the house."
+            "Jeffrey P. had ElectriCraft install a new outlet and repair damaged wiring outside at his parents' house. If you can't be there either, tell us who we'll meet and how to reach them.",
+            "We also work in commercial buildings and industrial sites."
           ]
         },
         {
           "type": "prose",
-          "heading": "Serving Wichita",
+          "heading": "Weekdays 7 to 5 at 1218 E 18th St North",
           "body": [
-            "We work from 1218 E 18th St North in Wichita, KS 67214. Call and tell us where you are, and we'll tell you whether we can help."
+            "Our office is at 1218 E 18th St North in Wichita, KS 67214, open Monday to Friday, 7 AM to 5 PM, and closed weekends. Call (316) 264-3359 or (316) 491-2910."
           ]
         },
         {
           "type": "faq",
-          "heading": "Questions Before You Call",
+          "heading": "Warm Plate, Bigger Job, Price, Warranty",
           "items": [
             {
               "q": "Can you come today?",
@@ -249,26 +263,30 @@
             },
             {
               "q": "Is this actually dangerous, or are you selling me something?",
-              "a": "We fix what you called about first. Then we show you what else we see and what it means, and you choose what to do. You get the whole picture, not a sales pitch."
+              "a": "A warm plate, a burning smell or a breaker that trips again after you reset it is worth a call. Cynthia G. and Catherine S. each wrote that the electrician pointed out something beyond the problem they called about."
             },
             {
               "q": "What's it going to cost?",
               "a": "Describe the work when you call, and ask how it would be priced."
             },
             {
-              "q": "Will it pass inspection, and what if something's off later?",
-              "a": "Some jobs, like a panel change, need a city permit and inspection. Ask when you call and we'll tell you whether yours does. Our residential electrical services carry a one-year warranty, and if something isn't right, call the same number."
+              "q": "Will it pass inspection, and is there a warranty?",
+              "a": "Ask when you call whether your job needs a permit and inspection. Residential electrical services come with a one-year warranty."
             },
             {
-              "q": "Who is coming into my house?",
-              "a": "One of our technicians, scheduled by our office. You can ask who is coming when you book. If you won't be home, tell us who we'll meet."
+              "q": "Do you only work on houses?",
+              "a": "No. We also do commercial electrical installation, including emergency lighting, and industrial electrical repairs."
+            },
+            {
+              "q": "Do you come out on weekends?",
+              "a": "The office is open Monday to Friday, 7 AM to 5 PM, and closed weekends. Julie K. wrote that ElectriCraft came right out on a Sunday, so call and ask."
             }
           ]
         },
         {
           "type": "callBand",
-          "heading": "Call ElectriCraft",
-          "text": "Call (316) 264-3359 and tell us what's going on. We fix it, tell you what else we see, and you decide. ElectriCraft, 1218 E 18th St North, Wichita."
+          "heading": "Call Before You Keep Resetting That Breaker",
+          "text": "Call (316) 264-3359 and tell us what's going on. ElectriCraft, 1218 E 18th St North, Wichita."
         }
       ]
     },
@@ -286,7 +304,7 @@
           "action": "call"
         },
         "secondaryCta": {
-          "label": "Request Service",
+          "label": "Phone and Email",
           "action": "contact"
         },
         "image": {
@@ -303,11 +321,10 @@
         },
         {
           "type": "split",
-          "heading": "What Happens When You Call About a Repair",
+          "heading": "Tell Us Which Outlets, Which Rooms, and When It Started",
           "body": [
             "You tell us what's happening: which outlets, which rooms, when it started. Our office schedules a visit.",
-            "Nick B. said a technician tracked down an odd problem that kept coming back and fixed it.",
-            "You decide what happens next. Describe the work when you call, and ask how it would be priced before you agree to anything."
+            "Describe the work when you call, and ask how it would be priced."
           ],
           "list": [
             "Dead outlets and switches",
@@ -329,9 +346,9 @@
         },
         {
           "type": "prose",
-          "heading": "What Usually Goes Wrong",
+          "heading": "Five Signs Worth a Same-Day Call",
           "body": [
-            "Most repair calls come down to a short list of causes. Here is what the signs usually mean."
+            "These signs are worth a call before anything else goes wrong."
           ],
           "items": [
             {
@@ -344,7 +361,7 @@
             },
             {
               "title": "Outlets that stopped working",
-              "text": "Often a tripped GFCI outlet somewhere else on the circuit, or a loose or failed connection. We check both."
+              "text": "Often a tripped GFCI outlet somewhere else on the circuit, or a loose or failed connection."
             },
             {
               "title": "Lights that flicker",
@@ -352,11 +369,7 @@
             },
             {
               "title": "Part of the house is dead",
-              "text": "A tripped breaker, a failed connection or storm damage. If the meter box or the line from the pole is damaged, the utility has to be part of the fix."
-            },
-            {
-              "title": "Old wiring or earlier DIY work",
-              "text": "Older homes and earlier DIY work hide surprises. We show you what we find and what your options are."
+              "text": "A tripped breaker, a failed connection or storm damage."
             }
           ]
         },
@@ -367,10 +380,26 @@
         },
         {
           "type": "prose",
-          "heading": "A Repair, or Something Bigger?",
+          "heading": "A Big Job in Smaller Budget Items",
           "body": [
-            "A lot of repairs are small: a worn outlet, a loose connection, a bad switch. We fix those and say so.",
-            "Sometimes a repair points to something bigger, like an overloaded circuit or an old panel. When it does, you hear it straight, with your options and what each involves. Doing a bigger job in steps is one of them."
+            "Sometimes a repair points to something bigger, like an overloaded circuit or an old panel.",
+            "Rebecca had a large job and said the company helped her plan it as smaller items she could schedule and mark off as she went."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "After a Storm: the Meter Box and the Line From the Pole",
+          "body": [
+            "If the meter box or the line from the pole is damaged, the utility has to be part of the fix. Taryn S. and Jim H. both called ElectriCraft after storm damage, and Taryn wrote that the crew phoned the utility for her.",
+            "Both are in the reviews, and so is the one thing they have in common: they needed someone to move fast."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Who Answers the Phone",
+          "body": [
+            "Customers mention the office by first name. Kari R. and Cynthia G. both name Kathy, who set up their appointments.",
+            "Call (316) 264-3359, or the second line, (316) 491-2910, and tell Kathy or whoever picks up what it's doing."
           ]
         },
         {
@@ -383,7 +412,7 @@
         },
         {
           "type": "prose",
-          "heading": "Before You Call",
+          "heading": "Note What's Tripping First",
           "body": [
             "If you can do it safely, note which outlets or rooms are affected, when it started and what was running. Check whether a breaker has tripped, and look for a GFCI outlet that needs resetting.",
             "Don't open the panel cover or touch anything that's scorched, wet or buzzing. If you see smoke or sparks, or smell burning, get everyone out and call 911."
@@ -391,27 +420,27 @@
         },
         {
           "type": "faq",
-          "heading": "Questions Before You Call",
+          "heading": "Slow Problems, Old Wiring, Warranty",
           "items": [
             {
               "q": "How soon can someone come out?",
               "a": "It depends on the day's schedule. Our office hours are Monday to Friday, 7 AM to 5 PM. Call and we'll tell you when a technician can get there."
             },
             {
-              "q": "Will you tell me if it needs a bigger job?",
-              "a": "Yes. We fix what you called about, tell you what else we see, and you decide what happens next."
+              "q": "Will you point out anything else you see?",
+              "a": "Two reviewers say the electrician did: Cynthia G. about unprotected wires, and Catherine S. about an issue the home inspector missed. Ask on the call what your visit will cover."
             },
             {
               "q": "What if the problem comes and goes?",
-              "a": "Tell us when it happens and what's running at the time. A problem that comes and goes is harder to catch, and we'd rather see it happen than guess."
+              "a": "Tell us when it happens and what's running at the time. A problem that comes and goes is harder to catch."
             },
             {
               "q": "Do you work on older homes?",
-              "a": "Yes. Tell us how old the house is and what you know about earlier work, and we'll plan around it."
+              "a": "Yes. Tell us how old the house is and what you know about earlier work."
             },
             {
               "q": "Do you work on commercial buildings?",
-              "a": "Yes. We also do commercial electrical installation and industrial electrical repairs."
+              "a": "Yes. We also do commercial electrical installation and industrial electrical repairs. Jerry W. has used ElectriCraft at a facility, and Thomas M. at both his home and his place of business."
             },
             {
               "q": "Is the repair covered by a warranty?",
@@ -421,8 +450,8 @@
         },
         {
           "type": "callBand",
-          "heading": "Call ElectriCraft",
-          "text": "If something electrical is acting up, call (316) 264-3359. Tell us what it's doing, and we'll take it from there."
+          "heading": "An Outlet, a Breaker or a Light Acting Up?",
+          "text": "Call (316) 264-3359. Tell us what it's doing, and we'll tell you what we see."
         }
       ]
     },
@@ -434,13 +463,13 @@
       "hero": {
         "eyebrow": "Lighting, Wichita",
         "h1": "Lighting Installation in Wichita, KS — ElectriCraft",
-        "sub": "New lights, ceiling fans, sconces and dimmers, installed clean and left tidy. Call us, tell us what you want lit, and hear what it takes before we start. Call (316) 264-3359.",
+        "sub": "Ceiling fans, sconces, wafer lights, dimmers and rebuilt fixtures. Call (316) 264-3359 and tell us what you want lit.",
         "primaryCta": {
           "label": "Call (316) 264-3359",
           "action": "call"
         },
         "secondaryCta": {
-          "label": "Request Service",
+          "label": "Phone and Email",
           "action": "contact"
         },
         "image": {
@@ -457,10 +486,10 @@
         },
         {
           "type": "split",
-          "heading": "What Happens When You Call About Lighting",
+          "heading": "Tell Us What You Want: a Fan, Sconces, a Dimmer",
           "body": [
             "Tell us what you want: more light in a dark room, a ceiling fan, new sconces, a dimmer. Our office schedules the visit.",
-            "We look at where the wiring runs, where the switch will go and what the ceiling can hold."
+            "Elizabeth said the electrician called ahead and talked the lights through with her before the work."
           ],
           "list": [
             "Recessed and wafer lights",
@@ -483,30 +512,30 @@
         },
         {
           "type": "prose",
-          "heading": "What Goes Into a Lighting Job",
+          "heading": "Lighting Jobs Customers Have Called About",
           "body": [
-            "A light looks simple once it's up. Getting there takes a few decisions, and we make them with you."
+            "A few of the jobs behind the reviews."
           ],
           "items": [
             {
-              "title": "Where the wiring runs",
-              "text": "A new light needs power and a switch to control it. In a finished ceiling or wall, we plan the route before we cut anything."
+              "title": "Vaulted ceilings",
+              "text": "Jennifer D. had ceiling lights added to a vaulted ceiling. Tell us the ceiling height when you call."
             },
             {
               "title": "Recessed lights",
-              "text": "They need room above the ceiling and have to be rated for the spot. We check what's up there first."
+              "text": "They need room above the ceiling and have to be rated for the spot. Tell us what kind of ceiling you have."
             },
             {
-              "title": "Ceiling fans",
-              "text": "A fan needs a box rated to hold its weight and its motion, not just a light. We check that the box you have can take it."
+              "title": "Sconces",
+              "text": "Lynn W. had sconces installed."
             },
             {
-              "title": "Vaulted ceilings",
-              "text": "These are harder to reach and plan. Tell us the ceiling height when you call so we arrive ready."
+              "title": "Exhaust fans",
+              "text": "Kathy G. and Kassandra B. each had a bathroom exhaust fan put in."
             },
             {
-              "title": "Dimmers",
-              "text": "Not every dimmer works with every bulb, and a mismatch causes buzzing or flicker. We match the dimmer to your fixtures."
+              "title": "Dimmers and outlets",
+              "text": "Jennifer D. had multiple dimmer switches and indoor outlets added."
             },
             {
               "title": "Damp and outdoor spots",
@@ -523,8 +552,8 @@
           "type": "prose",
           "heading": "Ceiling Fans",
           "body": [
-            "A ceiling fan is a light that moves, and the box it hangs from matters. A fan pulls and swings on its mount every day, so the box has to be rated to carry it.",
-            "We check the box, the wiring and the switch. If you want the fan and the light on separate controls, tell us. That can mean an extra wire run, and we'll say so up front."
+            "A ceiling fan is a light that moves, and the box it hangs from matters. A fan pulls and swings on its mount every day, so the box has to be rated to carry it. Ask about that when you call.",
+            "If you want the fan and the light on separate controls, say so. That can mean an extra wire run."
           ]
         },
         {
@@ -532,28 +561,36 @@
           "heading": "Switches and Dimmers",
           "body": [
             "A new light is a good moment to look at the switches. Three-way switches, dimmers and separate controls for a fan and a light all change what has to be run behind the wall.",
-            "Tell us how you'd like to control each light. We'll tell you what that takes, and show you the simpler way if there is one."
+            "Tell us how you'd like to control each light."
           ]
         },
         {
           "type": "prose",
-          "heading": "Light That Looks Right",
+          "heading": "On Time, Called Ahead, Cleaned Up",
           "body": [
-            "Lighting is easy to get wrong. Too few lights leave dark corners, and one switch for a whole room means it's all or nothing.",
-            "Tell us how you use the room. We'll talk through where lights, switches and dimmers could go, and you pick what suits the space and your budget."
+            "Elizabeth said the electrician called ahead and was willing to work with her unexpected schedule. Kelley N. had an extra bathroom receptacle added and said the crew showed up on time and cleaned up.",
+            "Kirk K. said his electrician arrived at the exact time promised. Those are three different customers on three different jobs."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Lighting for Businesses Too",
+          "body": [
+            "ElectriCraft also does commercial electrical installation, including emergency lighting. Past commercial projects listed on our site include Fox & Hound Restaurant and Ultimate Electronics.",
+            "Eva T. had outlets installed while building out a plant shop."
           ]
         },
         {
           "type": "prose",
           "heading": "Fixing or Replacing an Old Fixture",
           "body": [
-            "If a fixture flickers, hums or has a cracked socket, it isn't always the bulb. We check the fixture and the wiring behind it.",
-            "Some fixtures are worth keeping and rebuilding, and some are worth replacing. We tell you which we think it is, and you decide."
+            "If a fixture flickers, hums or has a cracked socket, it isn't always the bulb. The trouble can be in the fixture or in the wiring behind it.",
+            "Some fixtures are worth keeping and rebuilding, and some are worth replacing. Ask about yours on the call."
           ]
         },
         {
           "type": "prose",
-          "heading": "Before You Call",
+          "heading": "Note the Ceiling Height and Type First",
           "body": [
             "Note the ceiling height and what kind of ceiling you have, finished or open to an attic. Tell us what you want installed and whether you already have the fixtures.",
             "If a fixture is sparking, smoking or smells like burning, turn off its breaker if you can do it safely, and call us."
@@ -561,34 +598,42 @@
         },
         {
           "type": "faq",
-          "heading": "Questions Before You Call",
+          "heading": "Fans, Dimmers and Cleanup",
           "items": [
             {
               "q": "Do you install ceiling fans?",
-              "a": "Yes. We check that the box in your ceiling can carry a fan, and replace it if it can't."
+              "a": "Yes. A ceiling fan needs a box rated to carry it, so ask about the box in your ceiling when you call."
             },
             {
               "q": "Can you add a light where there isn't one now?",
-              "a": "Often, yes. It depends on what's behind the walls and ceiling. We look and give you your options."
+              "a": "Jennifer D. had ceiling lights added to a vaulted ceiling. Whether it works at your house depends on what's behind the walls and ceiling."
             },
             {
               "q": "Can you put in a dimmer?",
-              "a": "Yes. We match the dimmer to your bulbs and fixtures so it doesn't buzz or flicker."
+              "a": "Yes. Jennifer D. had multiple dimmer switches added."
             },
             {
               "q": "Do you clean up when you're done?",
-              "a": "Yes. We leave the room tidy."
+              "a": "Kelley N. and Vera W. both wrote about the cleanup after the job."
             },
             {
               "q": "What if the wiring needs more than lighting work?",
-              "a": "We tell you what we see and what it means. You decide whether to do it now, later or in steps."
+              "a": "Say so on the call. Panels, outlets and exhaust fans are all work customers have hired ElectriCraft for."
+            },
+            {
+              "q": "Is there a warranty on lighting work?",
+              "a": "Residential electrical work carries a one-year warranty. Ask what it covers when you call."
+            },
+            {
+              "q": "Do you do lighting for businesses?",
+              "a": "We do commercial electrical installation, including emergency lighting. Call (316) 264-3359 and tell us about the building."
             }
           ]
         },
         {
           "type": "callBand",
-          "heading": "Call ElectriCraft",
-          "text": "Ready for new lights, a fan or a dimmer? Call (316) 264-3359, tell us what you want, and hear what it takes before we start."
+          "heading": "Fans, Sconces, Dimmers: Call",
+          "text": "Call (316) 264-3359 and tell us what you want lit."
         }
       ]
     },
@@ -600,13 +645,13 @@
       "hero": {
         "eyebrow": "Contact ElectriCraft",
         "h1": "Contact ElectriCraft",
-        "sub": "If something electrical is wrong, the fastest way to reach us is to call. Tell us what's happening, and we'll tell you what we think and when we can come.",
+        "sub": "If something electrical is wrong, the fastest way to reach us is to call (316) 264-3359. You can also email info@electricraft-ks.com.",
         "primaryCta": {
           "label": "Call (316) 264-3359",
           "action": "call"
         },
         "secondaryCta": {
-          "label": "Request Service",
+          "label": "Phone and Email",
           "action": "contact"
         },
         "image": {
@@ -618,22 +663,22 @@
       "sections": [
         {
           "type": "prose",
-          "heading": "Call Us",
+          "heading": "Call, and Tell Us What It's Doing",
           "body": [
             "(316) 264-3359",
-            "Our second line is (316) 491-2910. Tell us what's happening and which part of the house is affected, and we'll tell you what we think and when we can come. You can also email info@electricraft-ks.com."
+            "Our second line is (316) 491-2910. Tell us what's happening and which part of the house is affected. You can also email info@electricraft-ks.com."
           ]
         },
         {
           "type": "prose",
-          "heading": "Send a Request",
+          "heading": "Not a Good Time to Talk? Email",
           "body": [
-            "Not a good time to talk? Use Request Service and tell us what's going on. Include your name, a phone number and the address of the house or building."
+            "Email info@electricraft-ks.com with your name, a phone number, the address of the house or building and what's going on."
           ]
         },
         {
           "type": "split",
-          "heading": "What to Have Ready",
+          "heading": "Tell Us What's Warm, Tripping or Dead, and Who Will Meet Us",
           "list": [
             "What's happening: dead outlets, a tripping breaker, flickering lights, a warm plate or a smell.",
             "Which rooms or outlets are affected, and when it started.",
@@ -650,35 +695,34 @@
         },
         {
           "type": "prose",
-          "heading": "Hours and Area",
+          "heading": "Weekdays 7 to 5 at 1218 E 18th St North",
           "body": [
             "**Office hours.** Monday to Friday, 7 AM to 5 PM.",
             "**After hours.** If something is wrong outside those hours, call and ask. If you see smoke or sparks, or smell burning, get everyone out and call 911.",
-            "**Area and address.** We serve Wichita, KS from 1218 E 18th St North, Wichita, KS 67214.",
-            "**License.** Kansas Contractor Lic# 1399."
+            "**Area and address.** We serve Wichita, KS from 1218 E 18th St North, Wichita, KS 67214."
           ]
         },
         {
           "type": "callBand",
-          "heading": "Call ElectriCraft",
-          "text": "Tell us what's happening, and hear what we'll look at and when we can come."
+          "heading": "Tell Us What's Happening",
+          "text": "Call (316) 264-3359, or write to info@electricraft-ks.com."
         }
       ]
     }
   ],
   "footer": {
-    "about": "ElectriCraft is a Wichita electrical company serving homes, commercial buildings and industrial sites. We repair, install and upgrade, and we explain what we find in plain words.",
+    "about": "ElectriCraft is a Wichita electrical company serving homes, commercial buildings and industrial sites. We repair, install and upgrade.",
     "why": [
       "Licensed and insured",
       "One-year warranty on residential work",
-      "We explain what we find in plain words",
-      "We clean up after the job"
+      "Weekdays 7 to 5 at 1218 E 18th St North",
+      "Customers mention the cleanup"
     ]
   },
   "strategy": {
     "whyHeading": "Why we built this site",
     "why": [
-      "Your site is laid out at desktop width, so on a phone a visitor scrolls sideways to read it, and your homepage has an empty main headline. Someone standing at a warm outlet with a phone in hand has a hard time seeing what you do.",
+      "Your site is laid out at desktop width, so on a phone a visitor scrolls sideways to read it, and your homepage has an empty main headline. Someone at a warm outlet with a phone in hand can't see what you do.",
       "Your reviews describe an electrician who tells people what else they found: wiring that needed protecting, something an inspector missed, what to know about an older house. Today those words sit on Google, not on your site.",
       "So the demo tells one story on every page. It opens with Electrician in Wichita, KS, and gives electrical repair and lighting installation a page each, because your site has no page for either."
     ],
@@ -769,25 +813,32 @@
       "items": [
         "Your homepage description says over 30 years, your residential FAQ says over 20 years and your panel page says since 1984, so which number should every listing use?",
         "Your residential FAQ promises 24/7 emergency service, while every page footer says Monday to Friday, 7 to 5 with weekends closed, so which hours should Google show, and how should after-hours callers reach you?",
-        "Your site lists 1218 E 18th St North in Wichita, while a BBB listing we found shows a Haysville headquarters, so which address should every listing use?"
+        "Your site lists 1218 E 18th St North in Wichita, while a BBB listing we found shows a Haysville headquarters, so which address should every listing use?",
+        "Your footer prints Kansas Contractor Lic# 1399, but we couldn't check it against a Kansas or Wichita lookup, so what is the license type, and whose name is it under?"
       ]
     },
     "lead": {
-      "heading": "Why we led with finding what else is wrong",
-      "text": "The scariest moment for a Wichita homeowner is a warm outlet or a panel they don't trust, and right behind it is not knowing whether the electrician is selling something. Fixing the problem, then telling you plainly what else we see, answers both. We checked the Wichita competitors' sites we could open, and none of them states it.",
+      "heading": "Why we led with what your electricians point out",
+      "text": "We led with what customers say happens after the fix because it's built on things Google can't find anywhere else: your real reviews. Cynthia G. and Catherine S. each wrote that the electrician found more than the job they called about. Those stories live only in your reviews, and a Wichita page built on them can't be copied by a generic electrician site.",
       "showScores": true,
       "rows": [
         {
           "claim": "Fix the problem, then tell you plainly what else we see",
-          "score": 20
+          "score": 20,
+          "appeal": 5,
+          "exclusivity": 4
         },
         {
           "claim": "Storm damage to the meter box or service line, handled with you and the utility",
-          "score": 15
+          "score": 15,
+          "appeal": 5,
+          "exclusivity": 3
         },
         {
           "claim": "Clean work and a tidy house when we leave",
-          "score": 12
+          "score": 12,
+          "appeal": 3,
+          "exclusivity": 4
         }
       ]
     }

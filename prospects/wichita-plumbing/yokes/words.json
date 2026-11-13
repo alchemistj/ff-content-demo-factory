@@ -14,7 +14,7 @@
         "tel": "+13163728210"
       }
     ],
-    "email": null,
+    "email": "yokesplumbingnremodeling@gmail.com",
     "hours": "Emergency calls Monday to Saturday, 7 a.m. to 10 p.m., based on availability",
     "address": null,
     "serviceArea": {
@@ -92,7 +92,7 @@
           "action": "call"
         },
         "secondaryCta": {
-          "label": "Request Service",
+          "label": "Email or Call",
           "action": "contact"
         },
         "image": {
@@ -124,7 +124,7 @@
         },
         {
           "type": "split",
-          "heading": "We Go After the Source. Then We Tell You What We Found.",
+          "heading": "Two Customers Had a Leak Nobody Else Could Find",
           "image": {
             "slot": "home-hero-alt",
             "alt": "Plumber checking a shutoff valve with a wrench",
@@ -132,24 +132,16 @@
           },
           "imageSide": "left",
           "body": [
-            "A leak you can see is easy to point at. One you can't see is a search, and we do that search.",
-            "We start with what you've noticed, then look for the source instead of the stain. Leak detection and camera inspections are part of the work, so we're not guessing. Then we fix it and tell you what it was. [[confirm: Licensed plumber, license #[XXXX]]]"
+            "A leak you can see is easy to point at. One you can't see is a search.",
+            "Jenifer P. had an unidentified leak in the pipes leaving her house. Jeff S. had a gas leak the gas company couldn't locate. Both got it found and taken care of. [[confirm: Licensed plumber, license #[XXXX]]]"
           ],
           "list": [
-            "We look for the source, not just the stain",
+            "A customer's words: \"They found it and they took care of it.\"",
             "Leak detection and camera inspections",
             "Fixed once it's found",
             "Explained in plain words"
           ],
           "listStyle": "checks"
-        },
-        {
-          "type": "prose",
-          "heading": "Stuck With a Problem Nobody Can Find",
-          "body": [
-            "You made the call you thought would settle it, and it came back as a shrug. The problem is still running, the house is still waiting, and now you're calling around.",
-            "That is the worst place to be: out of options with the problem still going. Call us, and we'll tell you what we can do."
-          ]
         },
         {
           "type": "review",
@@ -168,10 +160,10 @@
         },
         {
           "type": "prose",
-          "heading": "Leak Detection and Repair",
+          "heading": "A Leak in the Supply Line, the Fixture or the Gas Line",
           "body": [
-            "A leak you can see is a repair. A leak you can't see is a search. We handle both, in supply lines, fixtures, hose bibs and gas lines.",
-            "Tell us what you've noticed and where. We'll tell you what we think it is and what happens next."
+            "Supply lines, fixtures, hose bibs and gas lines are all on our list, and so is the leak that shows up with no warning.",
+            "Tell us what you've noticed and where."
           ],
           "link": {
             "label": "See leak detection in Wichita",
@@ -180,10 +172,10 @@
         },
         {
           "type": "prose",
-          "heading": "Water Heater Replacement",
+          "heading": "The Water Heater Quit on a Work Morning",
           "body": [
-            "When the water heater is rusted, leaking or just quit, the question is repair or replace. We'll tell you which, and we work on tank and tankless.",
-            "A cold shower on a work morning can't wait for a long runaround. Call, tell us what you're seeing, and we'll tell you what we think it is."
+            "When the water heater is rusted, leaking or just quit, the question is repair or replace. We work on tank and tankless.",
+            "Rusted tank, failed part or a heater that just went cold, call and tell us which."
           ],
           "link": {
             "label": "See water heater replacement in Wichita",
@@ -206,21 +198,21 @@
         },
         {
           "type": "prose",
-          "heading": "Homes and Commercial Buildings",
+          "heading": "Managing a Building? Tell Us Where the Shutoff Is",
           "body": [
             "We do residential and commercial plumbing. If you manage a building, tell us what's going on, where the shutoff is and who to ask for when we get there."
           ]
         },
         {
           "type": "steps",
-          "heading": "How a Call Goes",
+          "heading": "What You Tell Us, What We Tell You",
           "items": [
             {
               "title": "You call",
               "text": "Tell us what you're seeing and where. Tell us where your water shutoff is, too, and shut it off if water is running."
             },
             {
-              "title": "We tell you what we think it is",
+              "title": "We say what we think it is",
               "text": "You hear our best read on the phone."
             },
             {
@@ -235,23 +227,19 @@
         },
         {
           "type": "prose",
-          "heading": "Hours and Area",
+          "heading": "Emergency Calls Monday to Saturday, 7 to 10",
           "body": [
-            "**Emergency calls.** Monday to Saturday, 7 a.m. to 10 p.m., based on availability. Call and ask about other times.",
+            "**Emergency calls.** Monday to Saturday, 7 a.m. to 10 p.m., based on availability.",
             "**Where we work.** Wichita and the surrounding area. Jobs outside Wichita are subject to a trip charge, so ask when you call. [[confirm: Serving [towns] and nearby]]"
           ]
         },
         {
           "type": "faq",
-          "heading": "Questions Before You Call",
+          "heading": "Today, the Price and a Leak That Comes Back",
           "items": [
             {
               "q": "Can you come today?",
-              "a": "Call and ask. Emergency calls run Monday to Saturday, 7 a.m. to 10 p.m., based on availability, so we'll tell you what's possible while you're on the phone."
-            },
-            {
-              "q": "Will you show up when you say you will?",
-              "a": "Call and tell us what you're seeing. Our emergency hours are Monday to Saturday, 7 a.m. to 10 p.m., based on availability."
+              "a": "Call and ask. Emergency calls run Monday to Saturday, 7 a.m. to 10 p.m., based on availability, so we'll tell you what's possible on the phone."
             },
             {
               "q": "What will it cost, and is it really needed?",
@@ -259,7 +247,7 @@
             },
             {
               "q": "Can you find a leak that's hard to find?",
-              "a": "That's the job we want. Tell us what you've seen and we'll go after the source, then fix it and tell you what it was. We can't say what we'll find before we look."
+              "a": "Tell us what you've seen and we'll go after the source, then fix it and tell you what it was. We can't say what we'll find before we look."
             },
             {
               "q": "Do I need a whole new water heater?",
@@ -271,14 +259,14 @@
             },
             {
               "q": "Do you work on commercial buildings, and outside Wichita?",
-              "a": "Yes to both. We do residential and commercial plumbing in Wichita and the surrounding area. Jobs outside Wichita carry a trip charge."
+              "a": "Yes to both. Jobs outside Wichita carry a trip charge."
             }
           ]
         },
         {
           "type": "callBand",
-          "heading": "Call Yokes Master Plumbing",
-          "text": "Call (316) 372-8210 and tell us what you're seeing. We'll tell you what we think it is."
+          "heading": "Bring Us the Leak Nobody Can Find",
+          "text": "Call (316) 372-8210 and tell us what you're seeing."
         }
       ]
     },
@@ -300,7 +288,7 @@
           "action": "call"
         },
         "secondaryCta": {
-          "label": "Request Service",
+          "label": "Email or Call",
           "action": "contact"
         },
         "image": {
@@ -317,7 +305,7 @@
         },
         {
           "type": "split",
-          "heading": "What Happens When You Call About a Leak",
+          "heading": "Start With the Stain, the Bill or the Sound",
           "image": {
             "slot": "contact-hero",
             "alt": "Front door of a Wichita home, where the visit starts",
@@ -326,7 +314,7 @@
           "body": [
             "Tell us what you've noticed and where: a stain, a drip, a meter that keeps moving, a bill that jumped. If you can, tell us where your main shutoff is.",
             "If water is running right now, shut it off at the main first, then call. We'll tell you what we think is going on.",
-            "Then we look for the source, not just the stain. Leak detection and camera inspections are part of the work. When we find it, we explain what it is and what it takes to fix."
+            "Leak detection and camera inspections are part of the work. When we find it, we tell you what it is and what it takes to fix."
           ]
         },
         {
@@ -366,10 +354,10 @@
         },
         {
           "type": "prose",
-          "heading": "Where Leaks Hide",
+          "heading": "The Leak Inside the Wall or Under the Slab",
           "body": [
             "Some leaks are easy to reach: a supply line under a sink, a fitting at the water heater, an outdoor faucet. Others run inside a wall, under a slab or in the pipes leaving the house.",
-            "The hard ones are where we earn the call. We look at the whole line, not only the part that's showing, and we tell you what we found."
+            "The hard ones are where we earn the call, and pipes leaving the house are one place they hide."
           ]
         },
         {
@@ -383,7 +371,7 @@
           },
           "body": [
             "Not every leak is a mystery. A dripping faucet, a running toilet, a bad hose bib or a hydrant that won't shut off can waste water for a long time.",
-            "We repair them, and we tell you when a fixture is worth saving and when it's time to replace it."
+            "We repair them, and a laundry room faucet is the kind of job that gets you back to your week."
           ],
           "list": [
             "Faucets and sinks",
@@ -400,7 +388,7 @@
         },
         {
           "type": "prose",
-          "heading": "Gas Leaks Are Different",
+          "heading": "Smell Gas? Leave First",
           "body": [
             "If you smell gas, don't go looking for the leak. Leave the house and call your gas company first.",
             "Gas line leak detection, repair and replacement are part of our work, and we can look at the gas lines in your home."
@@ -408,7 +396,7 @@
         },
         {
           "type": "steps",
-          "heading": "How a Leak Repair Goes",
+          "heading": "From Your Call to the Fix",
           "items": [
             {
               "title": "You call and describe it",
@@ -423,21 +411,21 @@
               "text": "We tell you what we found and what it takes to fix, in plain words."
             },
             {
-              "title": "We fix it and check it",
-              "text": "Once you say go, we make the repair and look it over."
+              "title": "We fix it",
+              "text": "Once you say go, we make the repair."
             }
           ]
         },
         {
           "type": "prose",
-          "heading": "Homes and Commercial Buildings",
+          "heading": "Commercial Buildings and Jobs Outside Wichita",
           "body": [
             "We find and fix leaks in homes and in commercial buildings in Wichita and the surrounding area. Work outside Wichita is subject to a trip charge. If you manage a building, tell us who to ask for and where the shutoff is."
           ]
         },
         {
           "type": "faq",
-          "heading": "Questions Before You Call",
+          "heading": "Leak Questions, Answered Plainly",
           "items": [
             {
               "q": "How do I know if I have a leak?",
@@ -467,7 +455,7 @@
         },
         {
           "type": "callBand",
-          "heading": "Call Yokes Master Plumbing",
+          "heading": "Water Where It Shouldn't Be?",
           "text": "Call (316) 372-8210 and tell us what you've noticed. We'll go after the source."
         }
       ]
@@ -490,7 +478,7 @@
           "action": "call"
         },
         "secondaryCta": {
-          "label": "Request Service",
+          "label": "Email or Call",
           "action": "contact"
         },
         "image": {
@@ -507,7 +495,7 @@
         },
         {
           "type": "split",
-          "heading": "What Happens When You Call About a Water Heater",
+          "heading": "Tell Us What the Heater Is Doing",
           "image": {
             "slot": "contact-hero",
             "alt": "Front door of a Wichita home, where the visit starts",
@@ -516,14 +504,14 @@
           "body": [
             "Tell us what the heater is doing: no hot water, a leak, a noise, rusty water. If you know, tell us whether it runs on gas or electric, and whether it's a tank or tankless.",
             "We tell you what we think it is. Sometimes it's a part. Sometimes the tank is done. Either way, you hear it before you decide.",
-            "We take emergency calls from 7 a.m. to 10 p.m., Monday through Saturday, based on availability. Hot water can't wait, so call early and tell us what you're seeing."
+            "Hot water can't wait, so call early. Emergency calls run 7 a.m. to 10 p.m., Monday through Saturday, based on availability."
           ]
         },
         {
           "type": "prose",
-          "heading": "Signs a Water Heater Is Done",
+          "heading": "A Puddle, Rust or a Rumble",
           "body": [
-            "Most water heaters give warning first. A puddle, rust or a rumble is the heater telling you something."
+            "Most water heaters give warning first."
           ],
           "items": [
             {
@@ -555,19 +543,18 @@
         },
         {
           "type": "prose",
-          "heading": "Repair or Replace?",
+          "heading": "A Failed Part or a Finished Tank",
           "body": [
-            "Not every water heater problem means a new one. A failed part on an otherwise sound heater is a repair, and we'll say so.",
-            "A leaking tank, a rusted-out bottom or a heater that keeps needing work is where replacing starts to make sense. We lay out what we found and what each choice means, and you decide.",
-            "If you're replacing it, we'll go over size and fuel type and what fits your house. [[confirm: [X]-year warranty on our work]]"
+            "Not every water heater problem means a new one. A failed part on an otherwise sound heater is a repair. A leaking tank, a rusted-out bottom or a heater that keeps needing work is where replacing starts to make sense.",
+            "One customer had a rusty bolt on a heater installed a year earlier, and the crew replaced it. [[confirm: [X]-year warranty on our work]]"
           ]
         },
         {
           "type": "prose",
-          "heading": "Tank or Tankless",
+          "heading": "Tank or Tankless: We Work on Both",
           "body": [
-            "A tank water heater stores hot water and keeps it ready. A tankless heater heats water as you use it. We work on both.",
-            "Which one fits depends on your house, your gas line or power supply, and how much hot water you use. We'll go through it with you instead of pushing one."
+            "A tank water heater stores hot water and keeps it ready. A tankless heater heats water as you use it.",
+            "Which one fits depends on your house, your gas line or power supply, and how much hot water you use."
           ]
         },
         {
@@ -580,42 +567,29 @@
         },
         {
           "type": "prose",
-          "heading": "Before You Call",
+          "heading": "Tank Leaking? Do This First",
           "body": [
             "If the tank is leaking, shut off the water supply to the heater if you can reach the valve. Keep people and pets away from standing water around a gas or electric unit.",
-            "Then call and tell us what you see: where the water is, how much, and how old the heater is if you know. The more you can tell us, the better our read on the phone.",
-            "A heater that has gone cold may only need a part. Don't assume the worst until someone has looked."
+            "Then call and tell us where the water is, how much, and how old the heater is if you know."
           ]
         },
         {
           "type": "steps",
-          "heading": "How a Replacement Goes",
+          "heading": "Two Steps Before Anything Comes Out",
           "items": [
             {
-              "title": "We confirm what you have",
+              "title": "You tell us what you have",
               "text": "Tank or tankless, gas or electric, and where it sits."
             },
             {
-              "title": "We shut it down",
-              "text": "The water and the fuel or power to the old heater go off first."
-            },
-            {
-              "title": "The old one comes out",
-              "text": "The new heater is set in place and connected."
-            },
-            {
-              "title": "We check it",
-              "text": "We look over the connections for leaks and fire it up."
-            },
-            {
-              "title": "We walk you through it",
-              "text": "You see what was done, and we leave the area neat."
+              "title": "We tell you what we think it is",
+              "text": "A part or the whole heater. You hear it, and you decide."
             }
           ]
         },
         {
           "type": "faq",
-          "heading": "Questions Before You Call",
+          "heading": "Hot Water Questions, Straight Answers",
           "items": [
             {
               "q": "Do I need a whole new water heater?",
@@ -645,7 +619,7 @@
         },
         {
           "type": "callBand",
-          "heading": "Call Yokes Master Plumbing",
+          "heading": "Cold Shower This Morning?",
           "text": "No hot water? Call (316) 372-8210 and tell us what you're seeing."
         }
       ]
@@ -657,7 +631,7 @@
       "keyword": "contact yokes master plumbing wichita ks",
       "seo": {
         "title": "Contact Yokes Master Plumbing in Wichita, KS",
-        "description": "Call (316) 372-8210 for emergency plumbing calls Monday to Saturday, 7 a.m. to 10 p.m., based on availability, or send a message."
+        "description": "Call (316) 372-8210 for emergency plumbing calls Monday to Saturday, 7 a.m. to 10 p.m., based on availability, or email."
       },
       "hero": {
         "eyebrow": "Contact Yokes Master Plumbing",
@@ -666,10 +640,6 @@
         "primaryCta": {
           "label": "Call (316) 372-8210",
           "action": "call"
-        },
-        "secondaryCta": {
-          "label": "Request Service",
-          "action": "contact"
         },
         "image": {
           "slot": "contact-hero",
@@ -680,22 +650,22 @@
       "sections": [
         {
           "type": "prose",
-          "heading": "Call Us",
+          "heading": "Call About the Water You Can't Explain",
           "body": [
             "(316) 372-8210",
-            "Tell us what's going on, where the water is coming from and where your shutoff is. If water is running, shut it off at the main first."
+            "Tell us where the water is coming from and where your shutoff is. If water is running, shut it off at the main first."
           ]
         },
         {
           "type": "prose",
-          "heading": "Send a Message",
+          "heading": "Not a Good Time to Talk?",
           "body": [
-            "Not a good time to talk? Use the form: first and last name, email, a subject and a few lines on what's going on. Add the address and the best number to reach you. If it's urgent, call."
+            "Email yokesplumbingnremodeling@gmail.com with what's going on, the address and the best number to reach you. If it's urgent, call."
           ]
         },
         {
           "type": "split",
-          "heading": "What to Tell Us",
+          "heading": "What Helps Us Picture It",
           "image": {
             "slot": "fixture",
             "alt": "A clean bathroom vanity and faucet",
@@ -711,7 +681,7 @@
         },
         {
           "type": "prose",
-          "heading": "Hours and Area",
+          "heading": "Emergency Calls Monday to Saturday, 7 to 10",
           "body": [
             "**Emergency calls.** Monday to Saturday, 7 a.m. to 10 p.m., based on availability.",
             "**Where we work.** Wichita and the surrounding area. Jobs outside Wichita are subject to a trip charge, so ask when you call."
@@ -719,7 +689,7 @@
         },
         {
           "type": "prose",
-          "heading": "Safety First",
+          "heading": "Smell Gas? Leave First",
           "body": [
             "If you smell gas, leave the house and call your gas company before anything else. Then call us."
           ]
@@ -731,8 +701,8 @@
         },
         {
           "type": "callBand",
-          "heading": "Call Yokes Master Plumbing",
-          "text": "Tell us what you're seeing, and we'll tell you what we think it is."
+          "heading": "Bring Us the Leak Nobody Can Find",
+          "text": "Call (316) 372-8210."
         }
       ]
     }
@@ -749,7 +719,7 @@
   "strategy": {
     "whyHeading": "Why we built this site",
     "why": [
-      "Your homepage lists about 35 services on one page, and all five “MORE” buttons go to your contact page. Someone searching “leak detection Wichita” or “water heater replacement Wichita” has no page of yours to land on. Your page title leads with a tagline, “We'll get it within a foot!”, and your headline is only your company name.",
+      "Your homepage lists about 35 services on one page, and all five “MORE” buttons go to your contact page. Someone searching “leak detection Wichita” or “water heater replacement Wichita” has no page of yours to land on, and your headline is only your company name.",
       "Your customers already describe the company you are. Jenifer P.: “They found it and they took care of it.” Jeff S.: “They identified the leak areas that the gas company could not.” Today those words sit on Google, not on your site.",
       "So the demo tells one story everywhere: a leak nobody could find, found and fixed. It opens with plumber in Wichita, KS, and gives leak detection and water heater replacement a page each."
     ],
@@ -805,8 +775,8 @@
           "One optional form field is labeled “may * you?” on desktop and “Name * may” on a phone."
         ],
         "fixes": [
-          "Your number, your emergency hours and what to tell us, all in the first screen.",
-          "A form that asks plainly for your name, email and what's going on."
+          "Your number, your emergency hours and your email, all in the first screen.",
+          "A short list of what to tell us when you call."
         ]
       }
     ],
@@ -845,20 +815,26 @@
     },
     "lead": {
       "heading": "Why we led with finding the leak",
-      "text": "The scariest moment for a Wichita homeowner is water coming from somewhere nobody can find, and right behind it is paying for a fix that doesn't hold. Going after the source, fixing it and explaining it answers both. We checked the Wichita competitors we could read, and none states it.",
+      "text": "The scariest moment for a Wichita homeowner is water coming from somewhere nobody can find. We led with that because it is built on things Google can't find anywhere else: two customers' real accounts of a leak others couldn't locate, the way your reviews describe your work, and Wichita details like the warm floor and the doubled water bill. That is also what helps you rank.",
       "showScores": true,
       "rows": [
         {
           "claim": "A leak other people couldn't find, found and fixed",
-          "score": 16
+          "score": 16,
+          "appeal": 4,
+          "exclusivity": 4
         },
         {
           "claim": "Reviews describe Yokes working customers into a busy schedule",
-          "score": 15
+          "score": 15,
+          "appeal": 5,
+          "exclusivity": 3
         },
         {
           "claim": "Explains the repair and the next step in plain words",
-          "score": 12
+          "score": 12,
+          "appeal": 4,
+          "exclusivity": 3
         }
       ]
     },

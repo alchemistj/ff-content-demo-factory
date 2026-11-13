@@ -29,7 +29,7 @@
     "Free 10-Point Safety Inspection",
     "We Look First, Tell You Straight",
     "We Clean Up After the Job",
-    "Licensed and Insured",
+    "Plain-Words Explanations",
     "[[confirm: [XX] years serving Wichita]]"
   ],
   "services": [
@@ -41,7 +41,7 @@
     {
       "name": "Electrical Panel Upgrade",
       "route": "/electrical-panel-upgrade-wichita-ks/",
-      "blurb": "Fuse boxes, crowded panels and sub-panels for the garage or shop, explained before anything is swapped."
+      "blurb": "Fuse boxes, crowded panels and sub-panels for the garage or shop, looked at before anything is swapped."
     },
     {
       "name": "Home Electrical Inspections",
@@ -51,12 +51,12 @@
     {
       "name": "Remodel and Addition Wiring",
       "route": null,
-      "blurb": "Circuits for kitchens, basements and additions, planned with your contractor and the other trades before the walls close."
+      "blurb": "Wiring for a kitchen remodel or a house addition, worked out with your contractor."
     },
     {
       "name": "Lights, Fans and Fixtures",
       "route": null,
-      "blurb": "Ceiling fans, chandeliers and light fixtures hung and wired, with a look at the wiring behind them."
+      "blurb": "Ceiling fans, chandeliers and light fixtures hung and wired."
     },
     {
       "name": "Outlet Installation",
@@ -66,7 +66,7 @@
     {
       "name": "Outdoor Lighting",
       "route": null,
-      "blurb": "Landscape and outdoor lighting, and the power line out to a shed or backyard."
+      "blurb": "Landscape and outdoor lighting, and the power line out to a shed."
     },
     {
       "name": "Electric Car Charger Installation",
@@ -102,7 +102,7 @@
       "hero": {
         "eyebrow": "Wichita, KS · Free Estimates · Monday to Friday, 8 to 5",
         "h1": "Electrician in Wichita, KS — Bybee Electric",
-        "sub": "Been told you need a new meter, a new panel, a rewire? We come out and look at what's actually wrong before we sell you anything. It may be smaller than you feared, or not ours to fix, and we'll tell you either way. You won't be left wondering if you're being sold. Call (316) 409-4186.",
+        "sub": "Been told you need a new meter, a new panel, a rewire? We look at what's actually wrong before we sell you anything. It may be smaller than you feared, or not ours to fix, and we'll tell you either way. Call (316) 409-4186.",
         "primaryCta": {
           "label": "Call (316) 409-4186",
           "action": "call"
@@ -129,7 +129,7 @@
           "heading": "Somebody Quoted You the Meter, Then the Panel, Then the Wiring",
           "body": [
             "You're in the driveway with a number on your phone that has a comma in it. The quote says the meter, probably the panel, maybe some of the wiring. You can't see inside the wall, and you can't tell whether any of it is real.",
-            "A warm outlet. A breaker that won't stay on. An inspector's note. You don't know a small fix from an expensive one, and the person quoting you knows that.",
+            "A warm outlet. A breaker that won't stay on. An inspector's note. You can't tell a small fix from an expensive one.",
             "So you wait, or you sign. Neither feels good."
           ],
           "image": {
@@ -142,8 +142,8 @@
           "type": "split",
           "heading": "We Look First. Then We Tell You Straight.",
           "body": [
-            "Plenty of companies quote the fix before they've found the cause. We start the other way around. We look at the meter, the panel, the circuit and the connection, and we trace the problem to its source.",
-            "If the job is bigger than you thought, we show you why. If it's smaller, we say so. If it isn't ours to fix, we tell you who to call."
+            "Tina T. collected three quotes before she chose Bybee. We start by looking at the meter, the panel, the circuit and the connection, and we trace the problem to its source.",
+            "Jackie W. wrote that her project was unusual and Bybee \"informed me about my situation and guided me to next steps.\""
           ],
           "list": [
             "We look at the problem before we price the fix",
@@ -168,8 +168,7 @@
           "heading": "You Shouldn't Have to Wonder Whether You're Getting the Whole Truth",
           "body": [
             "The hardest time to trust an electrician is when the news is bad. The wiring isn't up to code. The panel is old. The repair costs more than you hoped.",
-            "That's when you need the real picture, not the scariest version of it. We lay out the choices from the smallest fix up to the full job, and you pick.",
-            "It's your house, and you're the one living with the wiring."
+            "That's when you need the real picture, not the scariest version of it. We lay out the choices from the smallest fix up to the full job, and you pick."
           ],
           "imageSide": "left",
           "image": {
@@ -206,7 +205,7 @@
           "heading": "Panel Upgrades for Older and Crowded Panels",
           "body": [
             "The panel is the box where every circuit in the house starts. A fuse box, rust or scorch marks, two wires under one breaker, no open slots, or a service too small for central air or an EV charger are the signs it needs attention.",
-            "An upgrade needs a permit and a city inspection, and Evergy disconnects and reconnects your service. The power is off for part of the day, so ask for the length of the outage when you get the quote."
+            "Ask how long the power will be off when you get the quote. Meredith S. needed to know because her father is on continuous oxygen, and the quote came with that estimate."
           ],
           "link": {
             "label": "See electrical panel upgrades in Wichita",
@@ -223,23 +222,23 @@
           "heading": "Remodels, Additions and New Circuits",
           "body": [
             "A kitchen remodel, a finished basement, a house addition, a garage where you want to run real power tools. New rooms and new loads need new circuits, and the electrical work lands in the middle of everyone else's schedule.",
-            "We work alongside your contractor and the other trades, so the wiring is planned before the walls close. The small version is just as real: a circuit for a microwave, a shed or the backyard light."
+            "A B. wrote that Bybee \"worked seamlessly with us, our contractor, and the other subs\" on a large kitchen remodel. The small version is just as real: an outlet for a microwave, or the power line to a shed."
           ]
         },
         {
           "type": "prose",
-          "heading": "Lights, Fans and Fixtures",
+          "heading": "A Chandelier, Two Ceiling Fans and the Wiring Behind Them",
           "body": [
-            "Ceiling fans, chandeliers, new fixtures and outdoor lighting are easy to do badly. A fan that wobbles, or a fixture hung on a box that can't hold it, shows up later.",
-            "Hanging a new one is also the best chance to look at the wiring behind it, before the fixture covers it up."
+            "M C. had a chandelier installed, and Derek \"spent the time to do the installation correctly even when he needed to go get additional materials.\" Kayla S. wrote that Martin noticed ceiling fan parts weren't installed correctly and made two trips for the missing pieces.",
+            "Hanging a new fixture is also the best chance to look at the wiring behind it, before the fixture covers it up."
           ]
         },
         {
           "type": "prose",
           "heading": "A Free Safety Inspection",
           "body": [
-            "Wiring problems don't announce themselves. They sit behind a wall or up in an attic until something warms up.",
-            "We offer a free 10-point safety inspection and a free estimate on the work. If you just moved into an older house and the outlets make no sense, that look is worth having. [[confirm: [X]-year warranty on our work]]."
+            "We offer a free 10-point safety inspection and a free estimate on the work. If you just moved into an older house and the outlets make no sense, that look is worth having.",
+            "[[confirm: [X]-year warranty on our work]]"
           ]
         },
         {
@@ -249,7 +248,7 @@
         },
         {
           "type": "steps",
-          "heading": "How a Job Goes",
+          "heading": "You Call, We Look, You Hear the Estimate",
           "items": [
             {
               "title": "You call",
@@ -271,7 +270,7 @@
         },
         {
           "type": "faq",
-          "heading": "Questions Before You Call",
+          "heading": "Quotes, Power Outages and Who Comes to Your House",
           "items": [
             {
               "q": "Can you come today?",
@@ -279,40 +278,37 @@
             },
             {
               "q": "Is it dangerous, or are you just selling me something?",
-              "a": "We look at the problem first. If it's smaller than the quote you were handed, we say so, and if it isn't ours to fix, we tell you who to call. A warm outlet, buzzing or a burning smell is a loose or failing connection, so stop using it and call."
+              "a": "We look at the problem first. If it's smaller than the quote you were handed, we say so, and if it isn't ours to fix, we tell you who to call."
             },
             {
               "q": "What will it cost?",
               "a": "The estimate is free. We explain the work and the options before we start, so you know what you're paying for. Ask us to spell out what's included."
             },
             {
-              "q": "What if an inspector flags something?",
-              "a": "Panel work needs a permit and a city inspection. If an inspection finds a problem, call the same number and tell us. We'll look at it."
-            },
-            {
               "q": "Who's coming into my house?",
-              "a": "Our technicians explain the work as they go, in plain words, and they clean up before they leave, debris included. If you want to know more before we come, ask when you call."
+              "a": "Customers name Martin and Derek, among others. They explain the work in plain words and clean up before they leave, debris included."
             },
             {
-              "q": "Are you licensed and insured?",
-              "a": "We're licensed and insured."
+              "q": "How do I pay?",
+              "a": "We accept American Express, Discover, MasterCard, Visa, cash and check."
             },
             {
               "q": "How long is the power off for a panel upgrade?",
-              "a": "For part of one working day. Ask for the length of the outage when you get the quote, and tell us if anyone in your home depends on power, such as medical equipment."
+              "a": "Ask for the length of the outage when you get the quote, and tell us if anyone in your home depends on power, such as medical equipment."
             }
           ]
         },
         {
           "type": "prose",
-          "heading": "Wichita and the Area Around It",
+          "heading": "Find Us at 232 N Pennsylvania Ave",
           "body": [
-            "We're at 232 N Pennsylvania Ave in Wichita. [[confirm: Serving [towns] and nearby]]."
+            "We're at 232 N Pennsylvania Ave in Wichita.",
+            "[[confirm: Serving [towns] and nearby]]"
           ]
         },
         {
           "type": "callBand",
-          "heading": "Call Bybee Electric",
+          "heading": "A Quote With a Comma in It? Call (316) 409-4186",
           "text": "Tell us what's going on. The estimate is free, and you'll know what it needs and why before anything gets done. Call (316) 409-4186, Monday to Friday, 8 AM to 5 PM."
         }
       ]
@@ -352,7 +348,7 @@
         },
         {
           "type": "split",
-          "heading": "What Happens When You Call About a Repair",
+          "heading": "Tell Us the Room, the Breaker and the Smell",
           "body": [
             "Tell us the room, what you see, what you heard or smelled, and whether a breaker is involved. We come out and find the cause.",
             "You get the estimate, free, and you know what the repair is before we start. If it turns out smaller than you feared, or isn't ours to fix, we say so.",
@@ -366,11 +362,10 @@
         },
         {
           "type": "prose",
-          "heading": "Why Things Stop Working",
+          "heading": "A Photo Cell, a Fan and a Dead Outlet",
           "body": [
-            "Electrical problems feel random. They aren't. Every dead outlet and tripping breaker has a cause, and it's usually one of a short list.",
-            "A connection has worked loose. A device has worn out. A circuit is carrying more than it was built for. Or a wire was run wrong years ago and the house has been getting by.",
-            "The fix depends on which one it is. Sometimes the cause isn't in the house at all. If the trouble is on the utility's side of the meter, the first call is to Evergy."
+            "Daryl D. called about indoor lights and switches and an outdoor photo cell problem, and Martin \"diagnosed and repaired the issue with ease.\" Noah S. called about an outlet that wasn't working, and Martin also helped find parts for his fan.",
+            "Sometimes the cause isn't in the house at all. If the trouble is on the utility's side of the meter, the first call is to Evergy."
           ]
         },
         {
@@ -391,7 +386,7 @@
           "type": "prose",
           "heading": "Outlets and Switches That Don't Work",
           "body": [
-            "These are the usual causes when something goes dead, and what we do about each."
+            "The usual causes when something goes dead."
           ],
           "items": [
             {
@@ -441,7 +436,7 @@
         },
         {
           "type": "steps",
-          "heading": "How a Repair Goes",
+          "heading": "Describe It, Trace It, Decide, Fix It",
           "items": [
             {
               "title": "You describe it",
@@ -463,7 +458,7 @@
         },
         {
           "type": "faq",
-          "heading": "Questions Before You Call",
+          "heading": "Breakers, Light Switches and the Power Company",
           "items": [
             {
               "q": "Is the estimate free?",
@@ -472,10 +467,6 @@
             {
               "q": "My breaker keeps tripping. What should I do?",
               "a": "Unplug what was running on that circuit and reset the breaker once. If it trips again right away, or feels warm, or won't reset, stop and call us."
-            },
-            {
-              "q": "An outlet feels warm. Is that normal?",
-              "a": "No. Stop using it and call. A warm outlet is a loose or failing connection."
             },
             {
               "q": "Do you fix light switches and ceiling fans?",
@@ -489,7 +480,7 @@
         },
         {
           "type": "callBand",
-          "heading": "Call Bybee Electric",
+          "heading": "Tell Us What Stopped Working",
           "text": "Tell us what stopped working. The estimate is free. Call (316) 409-4186."
         }
       ]
@@ -506,7 +497,7 @@
       "hero": {
         "eyebrow": "Electrical panels for Wichita homes",
         "h1": "Electrical Panel Upgrade in Wichita, KS — Bybee Electric",
-        "sub": "Your panel is where every circuit in the house starts, and an old or crowded one is easy to ignore until it isn't. We look at yours and tell you whether it needs replacing, even when the answer is no. Call (316) 409-4186 for a free estimate.",
+        "sub": "Your panel is where every circuit in the house starts, and an old or crowded one is easy to ignore until it isn't. We look at yours first and tell you what it needs. Call (316) 409-4186 for a free estimate.",
         "primaryCta": {
           "label": "Call (316) 409-4186",
           "action": "call"
@@ -535,7 +526,6 @@
           ],
           "list": [
             "A fuse box. Fuses are older technology and often mean a small service and old wiring.",
-            "Federal Pacific Stab-Lok or Zinsco breakers, two brands known to fail to trip.",
             "Rust, scorch marks or a burning smell at the panel.",
             "Two wires under one breaker, when most are built for one.",
             "No open slots, so the next circuit gets squeezed in where it shouldn't.",
@@ -550,27 +540,19 @@
         },
         {
           "type": "prose",
-          "heading": "We Start by Looking at What You Have",
+          "heading": "A Panel Replacement Is a Real Expense, So We Look First",
           "body": [
-            "A panel replacement is a real expense, so we look at what you have first. Sometimes the answer is a new breaker or a repaired connection. Sometimes the panel is fine and the problem is on the utility's side of the meter.",
-            "If none of the signs above describes your panel, it may be fine as it is, and we'll say so."
+            "Sometimes the answer is a new breaker or a repaired connection. Sometimes the panel is fine and the problem is on the utility's side of the meter.",
+            "Tina T. wrote that Bybee \"provided solutions to what we thought were major issues, ultimately saving us a lot of money.\""
           ]
         },
         {
           "type": "steps",
-          "heading": "What a Panel Upgrade Involves",
+          "heading": "Out Comes the Old Panel, In Goes the New One",
           "items": [
             {
-              "title": "A permit and an inspection",
-              "text": "A panel upgrade needs a permit, and the city inspects the work before it's signed off."
-            },
-            {
-              "title": "The power company",
-              "text": "Evergy disconnects your service so the panel can be swapped, then reconnects it."
-            },
-            {
               "title": "The swap",
-              "text": "The old panel comes out, the new one goes in, and every circuit is connected and tested. A new panel is often 200 amps."
+              "text": "The old panel comes out, the new one goes in, and every circuit is connected and tested."
             },
             {
               "title": "Sometimes more",
@@ -578,16 +560,16 @@
             },
             {
               "title": "Labeling",
-              "text": "A finished panel should have every circuit labeled, so you know what each breaker controls."
+              "text": "A finished panel should have every circuit labeled. A B. got both breaker boxes relabeled, with a written key."
             }
           ]
         },
         {
           "type": "prose",
-          "heading": "How Long the Power Is Off",
+          "heading": "Ask How Long the Power Will Be Off",
           "body": [
-            "A panel upgrade usually takes a day, with the power off for part of it.",
-            "Ask for the length of the outage when you get the quote, so you can plan around it. Tell us if anyone in the house depends on power for medical equipment."
+            "Ask for the length of the outage when you get the quote, so you can plan around it. Meredith S. needed it because her father is on continuous oxygen, and the quote came with that estimate.",
+            "Tell us if anyone in the house depends on power for medical equipment."
           ]
         },
         {
@@ -599,7 +581,7 @@
           "type": "split",
           "heading": "A Sub-Panel for the Garage, Shop or a New Load",
           "body": [
-            "You don't always need a whole new main panel. If the garage, the workshop or an addition needs more power, a sub-panel feeds a new set of circuits from the main one, as long as the main service can carry the load.",
+            "You don't always need a whole new main panel. If the garage, the workshop or an addition needs more power, a sub-panel feeds a new set of circuits from the main one, as long as the main service can carry the load. Thomas S. had one installed in his garage for large power tools.",
             "An EV charger, a welder or a compressor adds load, so the main panel gets checked first."
           ],
           "imageSide": "left",
@@ -624,10 +606,11 @@
         },
         {
           "type": "prose",
-          "heading": "Permits, Inspections and Clean-Up",
+          "heading": "When a City Inspector Gets Involved",
           "body": [
-            "A city inspector has the last word on panel work. If an inspection finds a problem, it gets fixed before the work passes.",
-            "The panel is usually in the garage or the basement, and the area should be left as clean as it was found. [[confirm: Licensed electrician, KS license #[XXXX]]]."
+            "Jr R. had a problem with a city inspector that was not Bybee's fault, and wrote that they were \"so very focused on resolving the issue for me.\"",
+            "The panel is usually in the garage or the basement, and the area should be left as clean as it was found.",
+            "[[confirm: Licensed electrician, KS license #[XXXX]]]"
           ]
         },
         {
@@ -637,7 +620,7 @@
         },
         {
           "type": "faq",
-          "heading": "Questions Before You Call",
+          "heading": "Cost, Outage Length and Old Panels",
           "items": [
             {
               "q": "How much does a panel upgrade cost?",
@@ -645,19 +628,15 @@
             },
             {
               "q": "How long is the power off?",
-              "a": "For part of one working day. Ask for the length of the outage when you get the quote."
+              "a": "Ask for the length of the outage when you get the quote. Meredith S.'s quote came with an estimate."
             },
             {
-              "q": "Do I need 200 amps?",
-              "a": "If you have central air or an electric range or dryer, and you want to add an EV charger or hot tub, probably. Tell us what your house runs and we'll tell you."
+              "q": "Can you add power for the garage?",
+              "a": "Thomas S. had Bybee install \"a 100 amp sub-panel in garage for additional power for large power tools.\""
             },
             {
               "q": "Is my old panel dangerous?",
-              "a": "Not necessarily. A fuse box, a Federal Pacific or Zinsco breaker, rust or scorch marks, or no open slots are the signs. Call and tell us what you see."
-            },
-            {
-              "q": "Do I need a permit?",
-              "a": "Yes. Panel work needs a permit, and a city inspector checks it before it's signed off."
+              "a": "Not necessarily. A fuse box, rust or scorch marks, two wires under one breaker or no open slots are the signs. Call and tell us what you see."
             }
           ]
         },
@@ -680,14 +659,10 @@
       "hero": {
         "eyebrow": "Contact Bybee Electric",
         "h1": "Contact Bybee Electric",
-        "sub": "Tell us what's happening and we'll come look at it. The estimate is free. Call during business hours, or send a message.",
+        "sub": "Tell us what's happening and we'll come look at it. The estimate is free. Call during business hours, or email.",
         "primaryCta": {
           "label": "Call (316) 409-4186",
           "action": "call"
-        },
-        "secondaryCta": {
-          "label": "Get a Free Estimate",
-          "action": "contact"
         },
         "image": {
           "slot": "contact-hero",
@@ -698,7 +673,7 @@
       "sections": [
         {
           "type": "prose",
-          "heading": "Call Us",
+          "heading": "Call (316) 409-4186",
           "body": [
             "(316) 409-4186",
             "The quickest way is to call. Tell us the room, what you see, what you heard or smelled, and whether a breaker is involved. We're open Monday to Friday, 8:00 AM to 5:00 PM, and closed Saturday and Sunday."
@@ -706,14 +681,14 @@
         },
         {
           "type": "prose",
-          "heading": "Send a Message",
+          "heading": "Rather Write It Down?",
           "body": [
-            "Prefer to write it down? Send your name, phone number and a few lines about the problem, or email admin@bybeeelectric.com."
+            "Email admin@bybeeelectric.com with your name, phone number and a few lines about the problem."
           ]
         },
         {
           "type": "split",
-          "heading": "What to Tell Us",
+          "heading": "Which Room, Which Breaker, What You Smelled",
           "list": [
             "Where it's happening: which room, which outlet or breaker",
             "When it started, and whether anything changed first, like a new appliance",
@@ -728,21 +703,21 @@
         },
         {
           "type": "prose",
-          "heading": "Safety First",
+          "heading": "Smoke or Sparks? Call 911 Before You Call Us",
           "body": [
             "If there's smoke, sparks or any sign of fire, get everyone out and call 911 before you call us."
           ]
         },
         {
           "type": "prose",
-          "heading": "Where We Are",
+          "heading": "232 N Pennsylvania Ave, Wichita",
           "body": [
             "232 N Pennsylvania Ave, Wichita, KS 67214. We serve Wichita and the surrounding area."
           ]
         },
         {
           "type": "prose",
-          "heading": "Payment",
+          "heading": "We Take Cards, Cash and Checks",
           "body": [
             "We accept American Express, Discover, MasterCard, Visa, cash and check."
           ]
@@ -754,14 +729,14 @@
         },
         {
           "type": "callBand",
-          "heading": "Call Bybee Electric",
+          "heading": "Call (316) 409-4186",
           "text": "Tell us what's going on. We'll come look at it, the estimate is free, and you decide."
         }
       ]
     }
   ],
   "footer": {
-    "about": "Bybee Electric is a Wichita electrical contractor for homes. We handle repairs, panel upgrades, remodel and addition wiring, lighting and more.",
+    "about": "Bybee Electric is a Wichita electrical contractor for homes. We repair outlets, switches and breakers, upgrade panels, wire remodels and additions, and hang lights and fans.",
     "why": [
       "We look first, then tell you straight",
       "Free estimates",
@@ -796,7 +771,7 @@
     "whyHeading": "Why we built this site",
     "why": [
       "Your header says “Serving the State of Kansas” on every page, and your homepage headline is “Electrician Services.” A Wichita homeowner with a dead outlet, and Google, can't tell that you're the electrician on N Pennsylvania Ave.",
-      "Your customers already describe the electrician you are. Bruce P.: “John took time to examine the problem and determined that current set up was safe and nothing was needed.” Jennifer B.: “They saved me a service call.” Today those words sit on Google, and your site's “Write a Review” button opens a private Hibu survey instead.",
+      "Your customers already describe the electrician you are. Bruce P.: “John took time to examine the problem and determined that current set up was safe and nothing was needed.” Jennifer B.: “They saved me a service call.” Today those words sit on Google, while your site's “Write a Review” button opens a private Hibu survey.",
       "So the demo tells one story everywhere: you look first and say so. It opens with Electrician in Wichita, KS, and gives electrical repair and panel upgrades a page each."
     ],
     "cardsHeading": "Be the Electrician People Find on Google",
@@ -808,7 +783,7 @@
         "why": "Where Google learns who you are and where you work.",
         "problems": [
           "Your headline says “Electrician Services,” with Wichita only in a smaller line, and your header and footer say “the State of Kansas.”",
-          "Your “Write a Review” button opens a private Hibu survey, not your Google profile, so new reviews don't reach Google."
+          "Your “Write a Review” button opens a private Hibu survey, so a customer who clicks it never lands on your Google profile."
         ],
         "fixes": [
           "A headline that says Electrician in Wichita, KS, right at the top.",
@@ -892,20 +867,26 @@
     },
     "lead": {
       "heading": "Why we led with looking first",
-      "text": "The scariest moment for a Wichita homeowner is a dead outlet or a warm panel, and right behind it is a quote you can't judge. Looking at the problem first, and saying so when it's smaller than feared or not ours to fix, answers both. We checked the five top Wichita competitors, and none of them states it.",
+      "text": "Google can find “fast, friendly, licensed” on any electrician’s site. It can’t find what your customers wrote: Bruce P. was told his meter needed nothing, and Jennifer B. was sent to Evergy first. A lead built on real reviews like those gives Google something only Bybee has.",
       "showScores": false,
       "rows": [
         {
           "claim": "We look first and tell you when it's smaller than you feared or not ours to fix",
-          "score": 16
+          "score": 16,
+          "appeal": 4,
+          "exclusivity": 4
         },
         {
           "claim": "We explain the work in plain words",
-          "score": 12
+          "score": 12,
+          "appeal": 4,
+          "exclusivity": 3
         },
         {
           "claim": "We clean up and take the debris with us",
-          "score": 12
+          "score": 12,
+          "appeal": 3,
+          "exclusivity": 4
         }
       ]
     }

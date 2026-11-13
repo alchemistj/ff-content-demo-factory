@@ -65,7 +65,7 @@
     {
       "name": "Home Electrical Inspections",
       "route": null,
-      "blurb": "A look at the wiring and panel when you buy, remodel or just want to know."
+      "blurb": "A look at the wiring and panel."
     },
     {
       "name": "Residential Re-Wiring",
@@ -179,7 +179,7 @@
           },
           "body": [
             "You're plugging in the vacuum and the cover plate is warm. Maybe it has been for a week. You can't see the wires, and you can't tell whether this is a ten-minute fix or a job with a comma in the price.",
-            "So you call someone, and they say it needs to be redone. No cause, no other choice, one number. Now you're deciding whether to trust an answer about something you can't check."
+            "Now you're deciding whether to trust an answer about something you can't check."
           ]
         },
         {
@@ -192,16 +192,9 @@
             "brief": "electrical pool: inspection"
           },
           "body": [
-            "Most electrical calls end in one number. Ours start with the cause. We test the circuit, find what is actually wrong and explain it in plain words, so the fix is about the problem and not a guess.",
+            "We start with the cause. We test the circuit, find what is actually wrong and explain it in plain words, so the fix is about the problem and not a guess.",
             "Then we lay out your options. Sometimes that is a small repair. Sometimes it is a bigger job with more than one way to do it. Either way, the call is yours."
-          ],
-          "list": [
-            "We find the cause before anything is replaced",
-            "We explain it in plain words",
-            "You get options, and you choose how far to go",
-            "We clean up when we're done"
-          ],
-          "listStyle": "checks"
+          ]
         },
         {
           "type": "split",
@@ -224,7 +217,7 @@
         },
         {
           "type": "services",
-          "heading": "Everything We Do",
+          "heading": "From One Outlet to a New Building",
           "intro": "From one outlet to a new building, for homes and businesses across Wichita."
         },
         {
@@ -235,7 +228,7 @@
             "route": "/electrical-repair-wichita-ks/"
           },
           "body": [
-            "Most repair calls start with something the house is doing. A breaker trips again after you reset it. A switch plate is warm. A room goes dark while the rest of the house has power.",
+            "A breaker trips again after you reset it. A switch plate is warm. A room goes dark while the rest of the house has power.",
             "A breaker trips for one of three reasons: too much on the circuit, a short, or a ground fault. A warm outlet is usually a loose connection. We find which one you have, and tell you what it means."
           ]
         },
@@ -248,14 +241,14 @@
           },
           "body": [
             "A breaker box is easy to ignore until you ask more of it: a new air conditioner, an EV charger, a hot tub, or a circuit with no open slot left.",
-            "Some old panels are a safety problem by themselves, like fuse boxes or panels with rust or scorch marks. We look at yours and tell you whether it needs to go or has years left."
+            "Some old panels are a safety problem by themselves, like fuse boxes or panels with rust or scorch marks. We look at yours and explain what we see."
           ]
         },
         {
           "type": "prose",
           "heading": "Lighting, Surge Protection, EV Chargers and Generators",
           "body": [
-            "The rest of the home list is just as hands-on. We install interior, exterior and landscape lighting, whole house surge protection, EV chargers and backup generators, and we wire hot tubs.",
+            "We install interior, exterior and landscape lighting, whole house surge protection, EV chargers and backup generators, and we wire hot tubs.",
             "If you're planning a remodel or adding something that draws power, tell us before the drywall goes up. It is simpler to run the circuit once than to open the wall twice."
           ]
         },
@@ -266,10 +259,10 @@
         },
         {
           "type": "prose",
-          "heading": "Homes and Businesses",
+          "heading": "Zac K. Called Us for Both His Business and His Home",
           "body": [
-            "We do the same careful work in a house and in a commercial building. Business owners call us for new construction, troubleshooting, maintenance, inspections, LED lighting and equipment wiring.",
-            "If you manage properties or send work to an electrician for your clients, you get the same plain answers a homeowner does."
+            "Business owners can call us for new construction, troubleshooting, maintenance, inspections, LED lighting and equipment wiring.",
+            "Commercial work also includes parking lot, security and exterior lighting, and backup generators."
           ]
         },
         {
@@ -279,7 +272,7 @@
         },
         {
           "type": "prose",
-          "heading": "Serving Wichita and the Towns Around It",
+          "heading": "From West Wichita to Derby, Newton and Andale",
           "body": [
             "We're based in West Wichita, at 3815 S Midco St. We also serve Derby, Haysville, Newton, Goddard, Andover, Cheney, Garden Plain, Maize, Valley Center, Park City, Kechi, Bel Aire, Clearwater, Colwich, Andale and the communities nearby.",
             "Tell us where you are when you call and we'll tell you whether we can get to you."
@@ -287,19 +280,19 @@
         },
         {
           "type": "faq",
-          "heading": "Questions Before You Call",
+          "heading": "Same-Day Calls, Cost and Who Shows Up",
           "items": [
             {
               "q": "Can you come today?",
-              "a": "Call (316) 613-4400 and tell us what's going on and where you are. We'll tell you when we can get someone there. Some calls are same-day, but that depends on the schedule, so ask when you call."
+              "a": "Call (316) 613-4400, tell us what's going on and where you are, and we'll tell you when we can get someone there."
             },
             {
               "q": "Is this actually dangerous, or are you selling me something?",
-              "a": "We find the cause first and explain it in plain words. Then we lay out your options and you choose. A warm outlet, a breaker that won't stay on and a burning smell are signs to take seriously. Stop using it and call."
+              "a": "We find the cause first and explain it in plain words. A warm outlet, a breaker that won't stay on and a burning smell are signs to take seriously. Stop using it and call."
             },
             {
               "q": "What will it cost?",
-              "a": "We lay out your options before the work starts, so you can weigh them. We won't guess at a number here, because it depends on what we find. Call, or send a quote request, and tell us what's happening."
+              "a": "We lay out your options before the work starts, so you can weigh them. We won't guess at a number here, because it depends on what we find. Call and tell us what's happening."
             },
             {
               "q": "Who exactly is coming into my house?",
@@ -317,8 +310,8 @@
         },
         {
           "type": "callBand",
-          "heading": "Call Enegren Electric",
-          "text": "Call (316) 613-4400, or send a quote request. Tell us what's happening and where you are, and we'll send one of our electricians to find the cause. Enegren Electric, 3815 S Midco St, Wichita."
+          "heading": "Warm Outlet? Call (316) 613-4400",
+          "text": "Tell us what's happening and where you are, and we'll send one of our electricians to find the cause. Enegren Electric, 3815 S Midco St, Wichita."
         }
       ]
     },
@@ -357,7 +350,7 @@
         },
         {
           "type": "split",
-          "heading": "What Happens When You Call About a Repair",
+          "heading": "A Visit That Starts With Testing the Circuit",
           "imageSide": "right",
           "image": {
             "slot": "inspection",
@@ -367,42 +360,14 @@
           "body": [
             "Tell us what's happening and where. One of our electricians comes out and tests the circuit to find the cause, not just the symptom.",
             "Then you hear what we found in plain words and what your options are. Some fixes are small. Some turn up something bigger underneath. You decide how far to go."
-          ],
-          "list": [
-            "The cause found before anything is replaced",
-            "What it means, explained simply",
-            "Options laid out, and the choice is yours",
-            "The work area cleaned up when we finish"
-          ],
-          "listStyle": "checks"
-        },
-        {
-          "type": "prose",
-          "heading": "Why Your Breaker Keeps Tripping",
-          "body": [
-            "A breaker is a safety switch. It trips when a circuit carries more than it should, and there are three usual reasons."
-          ],
-          "items": [
-            {
-              "title": "An overloaded circuit",
-              "text": "Too many things are plugged into one circuit. If it trips when the microwave and toaster run together, that may just be load."
-            },
-            {
-              "title": "A short",
-              "text": "A hot wire is touching something it shouldn't. The breaker trips again right after you reset it."
-            },
-            {
-              "title": "A ground fault",
-              "text": "Current is leaking where it doesn't belong, often from a damaged wire or moisture."
-            }
           ]
         },
         {
           "type": "prose",
-          "heading": "When It Trips Again After a Reset",
+          "heading": "A Breaker That Trips Again, and a Short Tylor Found",
           "body": [
-            "Resetting a breaker over and over doesn't fix anything. If it trips again right away, something in that circuit is wrong.",
-            "A breaker that feels warm, or one that won't reset at all, needs an electrician."
+            "A breaker trips when a circuit carries more than it should, when there's a short, or when current leaks to ground. If it trips again right after you reset it, stop resetting it and call. A breaker that feels warm, or won't reset at all, needs an electrician.",
+            "Save T.'s breaker kept tripping. Tylor traced it to a short in the wiring."
           ]
         },
         {
@@ -412,11 +377,18 @@
         },
         {
           "type": "prose",
-          "heading": "Warm Outlets, Buzzing and Flickering Lights",
+          "heading": "Warm Plates, Buzzing and Burning Smells",
           "body": [
             "Loose connections heat up. A wire that isn't tight in an outlet, a switch or the panel creates resistance, and resistance makes heat.",
-            "A warm or discolored plate, a burning smell or a buzz means a loose or failing connection. Stop using it and call. It only gets worse.",
-            "Flicker is a different question. One fixture flickering is often the bulb. Flicker in several rooms, or lights that dim when the air conditioner starts, points to a loose connection or a service carrying too much."
+            "A warm or discolored plate, a burning smell or a buzz means a loose or failing connection. Stop using it and call."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "One Light Flickers, or Every Room Does",
+          "body": [
+            "One fixture flickering is often the bulb. Flicker in several rooms, or lights that dim when the air conditioner starts, points to a loose connection or a service carrying too much.",
+            "Tell us which rooms flicker and when it happens, such as when the AC kicks on, so the visit starts with the right circuit."
           ]
         },
         {
@@ -424,7 +396,8 @@
           "heading": "Power Out in One Room, or Half the House",
           "body": [
             "Part of a house losing power is usually a tripped breaker, a failed GFCI outlet, or a connection that has let go somewhere along the circuit. Finding which one means testing it, not guessing.",
-            "We trace the loss back through the wiring to where it starts, then fix that spot instead of the outlet you happened to notice."
+            "We trace the loss back through the wiring to where it starts, then fix that spot instead of the outlet you happened to notice.",
+            "Tell us which rooms are dark and what was running when the power went out."
           ]
         },
         {
@@ -449,8 +422,8 @@
           "type": "prose",
           "heading": "The Small Problem You've Lived With",
           "body": [
-            "Not every repair is urgent. Plenty of calls are about the thing you've put up with: a doorbell that never works right, a switch that does the wrong thing, an outlet that won't hold a plug.",
-            "Those are often quick fixes. If you have two or three small ones, tell us all of them when you call so we can look at them in one visit."
+            "Not every repair is urgent. A doorbell that never works right, a switch that does the wrong thing or an outlet that won't hold a plug can all be quick fixes.",
+            "If you've lived with other small problems, mention them when you call."
           ]
         },
         {
@@ -460,38 +433,26 @@
         },
         {
           "type": "prose",
-          "heading": "Other Repairs We Do",
+          "heading": "Outlets, Switches, Appliance Circuits and Alarms",
           "body": [
-            "We handle residential electrical repairs and maintenance, and for businesses, troubleshooting, repairs and maintenance. That includes:"
-          ],
-          "list": [
-            "Outlet and switch repair and replacement",
-            "New appliance circuits, and air conditioner and furnace circuits",
-            "Smoke detector and carbon monoxide alarm installation",
-            "Surge protection",
-            "Lighting repair and installation, inside and out"
-          ],
-          "listStyle": "checks"
+            "We repair and replace outlets and switches, wire appliance and air conditioner circuits, repair lighting inside and out, and install smoke and CO alarms and surge protection."
+          ]
         },
         {
           "type": "prose",
           "heading": "When a Repair Points to the Panel",
           "body": [
             "Sometimes the repair shows that the breaker box is the real problem: it's full, it's old, or its breakers don't act like they should.",
-            "When that happens we tell you, and we explain what a replacement involves. See [electrical panel upgrades](/electrical-panel-upgrade-wichita-ks/) for how that goes."
+            "When that happens we tell you what a replacement involves. See [electrical panel upgrades](/electrical-panel-upgrade-wichita-ks/) for how that goes."
           ]
         },
         {
           "type": "faq",
-          "heading": "Questions Before You Call",
+          "heading": "Resetting Breakers and What to Tell Us",
           "items": [
             {
               "q": "My breaker trips. Can I just keep resetting it?",
               "a": "If it trips once under a heavy load, that may be all it is. If it trips again right after you reset it, something in the circuit is wrong. Stop resetting it and call."
-            },
-            {
-              "q": "Is a warm outlet an emergency?",
-              "a": "It's a sign to stop using that outlet. A warm plate, a burning smell or a buzz usually means a loose or failing connection. Call and tell us what you're seeing."
             },
             {
               "q": "What do I need to tell you when I call?",
@@ -506,7 +467,7 @@
         {
           "type": "callBand",
           "heading": "Tell Us What You're Seeing",
-          "text": "Call (316) 613-4400 or send a quote request. Tell us what trips, what's warm and what's gone dark. If anything is hot, smells burnt or crackles, stop using it and call right away."
+          "text": "Call (316) 613-4400. Tell us what trips, what's warm and what's gone dark. If anything is hot, smells burnt or crackles, stop using it and call right away."
         }
       ]
     },
@@ -522,7 +483,7 @@
       "hero": {
         "eyebrow": "Electrical service upgrades · Homes and businesses",
         "h1": "Electrical Panel Upgrade in Wichita, KS — Enegren Electric",
-        "sub": "If your breaker box is old, full or too small for what the house runs now, we look at it, explain what we see and give you options. You choose. Call (316) 613-4400.",
+        "sub": "If your breaker box is old, full or too small for what the house runs now, we look at it and explain what we see. Call (316) 613-4400.",
         "primaryCta": {
           "label": "Call (316) 613-4400",
           "action": "call"
@@ -553,7 +514,7 @@
             "brief": "electrical pool: ev-charger"
           },
           "body": [
-            "Many homes run on a panel that was sized for a smaller house. Then a central air unit goes in, or an EV charger, or a hot tub, and the box has nothing left to give.",
+            "A panel sized for a smaller house runs out when a central air unit goes in, or an EV charger, or a hot tub, and the box has nothing left to give.",
             "Before we recommend a bigger one, we look at what you have and what you plan to add. Then you hear your options."
           ]
         },
@@ -567,10 +528,6 @@
             {
               "title": "A fuse box",
               "text": "A fuse box instead of breakers is a reason to have it looked at."
-            },
-            {
-              "title": "Brands with a history",
-              "text": "Some older panel brands, including Federal Pacific and Zinsco, are known for breakers that fail to trip."
             },
             {
               "title": "Rust, moisture or scorch marks",
@@ -595,13 +552,13 @@
           "heading": "Do You Need a New Panel, or Do You Have Years Left?",
           "body": [
             "You may not need a new panel at all. A panel that is simply old, or a breaker that trips now and then, can be fine.",
-            "We look at yours and explain what we see. If it's sound, you'll hear that. If it's a risk, we explain why, and you choose what to do about it.",
+            "We look at yours and explain what we see, and you choose what to do about it.",
             "Tell us what you plan to add in the next few years. A panel that is fine today can be too small after an addition, and it's easier to size it right once."
           ]
         },
         {
           "type": "steps",
-          "heading": "What a Panel Upgrade Involves",
+          "heading": "A Look, a Plan, a Swap",
           "intro": "This is the general shape of the job, so you know what you're agreeing to. Your house may differ.",
           "items": [
             {
@@ -609,16 +566,12 @@
               "text": "We check the panel, the service coming into the house and what you want to run. You hear your options."
             },
             {
-              "title": "A permit and an inspection",
-              "text": "Panel work is normally permitted and inspected. We explain what yours needs."
-            },
-            {
-              "title": "The power company",
-              "text": "The utility disconnects service at the start and reconnects it when the work is done."
-            },
-            {
               "title": "The swap",
               "text": "We install the new panel. Sometimes the meter base or the service mast has to be replaced too."
+            },
+            {
+              "title": "How long it took for two customers",
+              "text": "Shaun M.'s panel and meter were changed out by end of day, and Kyle P.'s box in one afternoon."
             }
           ]
         },
@@ -650,9 +603,9 @@
         },
         {
           "type": "prose",
-          "heading": "Homes and Businesses",
+          "heading": "Panel Service Upgrades for Businesses Too",
           "body": [
-            "We do electrical service upgrades for homes and electrical panel service upgrades for businesses. The work is the same in principle, with a bigger service in a commercial building."
+            "Enegren does electrical service upgrades for homes and electrical panel service upgrades for businesses."
           ]
         },
         {
@@ -670,7 +623,7 @@
         },
         {
           "type": "faq",
-          "heading": "Questions Before You Call",
+          "heading": "Warning Signs, Chargers and the Power Outage",
           "items": [
             {
               "q": "How do I know if my panel is a problem?",
@@ -682,7 +635,7 @@
             },
             {
               "q": "Will the power be off?",
-              "a": "Yes, for part of the job. The utility disconnects service and reconnects it, so plan for that. We'll go over the day with you."
+              "a": "Ask us before the day. Shaun M.'s panel and meter were changed out by end of day, and Kyle P.'s box in one afternoon."
             },
             {
               "q": "Do you replace panels for businesses?",
@@ -692,8 +645,8 @@
         },
         {
           "type": "callBand",
-          "heading": "Ready When You Are",
-          "text": "Call (316) 613-4400, or ask for a quote online. Tell us what your panel looks like and what you want to add. If you see scorch marks, smell burning or the panel feels hot, call right away."
+          "heading": "Tell Us What Your Panel Looks Like",
+          "text": "Call (316) 613-4400. Tell us what your panel looks like and what you want to add. If you see scorch marks, smell burning or the panel feels hot, call right away."
         }
       ]
     },
@@ -714,10 +667,6 @@
           "label": "Call (316) 613-4400",
           "action": "call"
         },
-        "secondaryCta": {
-          "label": "Get a Free Quote",
-          "action": "contact"
-        },
         "image": {
           "slot": "contact-hero",
           "alt": "Enegren Electric service van parked outside a Wichita home",
@@ -727,7 +676,7 @@
       "sections": [
         {
           "type": "prose",
-          "heading": "Call Us",
+          "heading": "Call (316) 613-4400",
           "body": [
             "(316) 613-4400",
             "The fastest way to reach us is to call. Tell us what's going on and where you are, and one of our electricians will take it from there."
@@ -735,14 +684,14 @@
         },
         {
           "type": "prose",
-          "heading": "Book Online or Request a Quote",
+          "heading": "Not a Good Time to Talk?",
           "body": [
-            "Not a good time to talk? You can book a time through our online booking, or use Get a Free Quote and tell us about the job. Include your name, phone number, address, whether it's a home or a business, and a short description."
+            "[Book a time online](https://book.housecallpro.com/book/Enegren-Electric/64d6b72fb3114112871444e220f167be?v2=true), or email msaucedo@enegrenelectric.com with your name, phone number, address, whether it's a home or a business, and a short description."
           ]
         },
         {
           "type": "split",
-          "heading": "What to Have Ready",
+          "heading": "What Tripped, What's Warm, Where It Is",
           "imageSide": "right",
           "image": {
             "slot": "outlet-repair",
@@ -758,7 +707,7 @@
         },
         {
           "type": "prose",
-          "heading": "Where We Work",
+          "heading": "3815 S Midco St, and 15 Towns Around It",
           "body": [
             "**Address.** 3815 S Midco St, Wichita, KS 67215, in West Wichita.",
             "**Area.** We serve Wichita, Derby, Haysville, Newton, Goddard, Andover, Cheney, Garden Plain, Maize, Valley Center, Park City, Kechi, Bel Aire, Clearwater, Colwich, Andale and the communities nearby.",
@@ -885,20 +834,26 @@
     },
     "lead": {
       "heading": "Why we led with cause first, then your choice",
-      "text": "The scariest part of an electrical problem is that you can't see it: you can't tell a small fix from a big one, or a real hazard from a sales pitch. Finding the cause, explaining it in plain words and letting you choose from the options answers that. We checked the five top Wichita competitors, and none of the sites we could read states it.",
+      "text": "Google can find “licensed, honest, family-owned” on any electrician’s site. It can’t find what your customers wrote: Michael K. said Trevor “explained every step of his work, gave me options, and let me choose.” A lead built on real reviews like that gives Google something only Enegren has.",
       "showScores": true,
       "rows": [
         {
           "claim": "Finds the cause, explains it in plain words, gives options and lets you choose",
-          "score": 16
+          "score": 16,
+          "appeal": 4,
+          "exclusivity": 4
         },
         {
           "claim": "Sends the electrician's name and photo before the visit",
-          "score": 12
+          "score": 12,
+          "appeal": 4,
+          "exclusivity": 3
         },
         {
           "claim": "Explains the cause of a lightning strike and how to prevent the next one",
-          "score": 12
+          "score": 12,
+          "appeal": 4,
+          "exclusivity": 3
         }
       ]
     }

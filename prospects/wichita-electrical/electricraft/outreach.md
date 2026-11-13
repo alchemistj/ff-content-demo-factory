@@ -4,7 +4,7 @@ STATUS: HOLD (Josh decides whether and when to pitch; see facts.md)
 
 Hey ElectriCraft team,
 
-Your reviews tell the same story: you fix the problem, then point out what else you see, like unprotected wires or something an inspector missed. None of the Wichita electrician sites we could read says that. My daughter and I build websites for service businesses, so we made you a mockup built around it, "We Find It. We Tell You.":
+A few of your reviews tell the same story: the electrician fixes the problem, then points out what else they see, like unprotected wires or something an inspector missed. My daughter and I build websites for service businesses, so we made you a mockup built around it, "We Find It. We Tell You.":
 
 https://electricraft.websitepreview.fluidframemarketing.com/
 
@@ -12,7 +12,7 @@ Note: It'll look a lot better with your logo and images on it! Lol
 
 The preview opens with a recent case study, then walks through why each page is built the way it is. One thing we'd fix: on a phone your current site is laid out at desktop width, so visitors have to scroll sideways to read it.
 
-We built your electrical repair and lighting installation pages as examples, and we'd love to build the rest. Which brands or manufacturers are you certified with?
+We built your electrical repair and lighting installation pages as examples, and we'd love to build the rest. What's the hardest problem you've ever tracked down?
 
 By the way, our contact form system would have recognized this as a solicitation, and you wouldn't have even seen it.
 

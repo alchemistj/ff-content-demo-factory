@@ -30,7 +30,7 @@ Top claim: "Explains what's wrong and why, and shows you as the work goes," 4 x 
 **Pick: A.** It names the avatar's fear (a repair you can't check) in the buyer's own words. B reads like a dig at competitors we haven't named.
 
 ## Brand short form
-Explain It. Show It. Fix It.
+Explain It. Fix It.
 
 ## Promise ladder
 | Level | Line |

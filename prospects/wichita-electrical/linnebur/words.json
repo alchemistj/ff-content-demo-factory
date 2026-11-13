@@ -131,18 +131,18 @@
       "keyword": "electrician wichita ks",
       "seo": {
         "title": "Electrician in Wichita, KS | Linnebur Electric",
-        "description": "Electrician in Wichita, KS. Linnebur Electric finds the cause of hard-to-trace electrical problems and fixes it. Homes, businesses and farms. Call (316) 943-6616."
+        "description": "Electrician in Wichita, KS. Linnebur Electric is family owned and operated, for homes, businesses and farms. Call (316) 943-6616."
       },
       "hero": {
         "eyebrow": "Wichita, KS · Family-Owned · Homes, Businesses and Industrial",
         "h1": "Electrician in Wichita, KS — Linnebur Electric",
-        "sub": "An outlet that keeps dying, a breaker that won't stay on, a fix that didn't hold. Dod I. said these were the only electricians who could find the problem and get it fixed. You stop wondering what's behind the wall. Call (316) 943-6616.",
+        "sub": "An outlet that keeps dying, a breaker that won't stay on, a fix that didn't hold. Call (316) 943-6616.",
         "primaryCta": {
           "label": "Call (316) 943-6616",
           "action": "call"
         },
         "secondaryCta": {
-          "label": "Request Service",
+          "label": "Phone and Email",
           "action": "contact"
         },
         "image": {
@@ -167,36 +167,35 @@
             "brief": "electrical pool: outlet-repair"
           },
           "body": [
-            "If the garage outlets quit and an electrician changes a part and leaves, they can be dead again by night. Then you're sitting in the driveway with a new estimate that says to rewire the whole thing, and you can't tell if that's the answer or the next guess.",
-            "You don't need a bigger bill. You need somebody to find what's actually wrong, tell you in plain words and fix that."
+            "Say the garage outlets quit, somebody fixes them, and they're dead again by night. Now you're sitting in the driveway with an estimate to rewire the whole thing, and you can't tell if that's the answer or the next guess.",
+            "You don't need a bigger bill. You need the problem found, and then fixed."
           ]
         },
         {
           "type": "split",
-          "heading": "Find the Cause First. Then Fix It.",
+          "heading": "Tell Us Where It Trips, Dies or Flickers",
           "image": {
             "slot": "inspection",
             "alt": "Electrician tracing a circuit inside a Wichita home",
             "brief": "electrical pool: inspection"
           },
           "body": [
-            "If the real cause is a loose connection, an overloaded circuit or an old splice behind a wall, the problem comes right back.",
-            "Dod I. said these were the only electricians who could find the problem and get it fixed."
+            "A loose connection, an overloaded circuit or an old splice behind a wall will bring the problem right back if only the symptom gets fixed.",
+            "Tell us where it happens and what was running when it did."
           ],
           "list": [
             "Start with what you've seen: where it trips, dies, flickers or runs warm",
             "Find the problem and get it fixed",
-            "Tell you what we found in plain words",
-            "Fix the cause, then check the work"
+            "Tell us the problem in plain words and we'll start there"
           ],
           "listStyle": "checks"
         },
         {
           "type": "prose",
-          "heading": "Open, Honest and Still Answering the Phone",
+          "heading": "Upfront, Honest and Family Owned",
           "body": [
-            "The worst part of hiring an electrician isn't the first visit. It's after the check clears: a friendly estimate, then a crew that goes quiet when the work is wrong or doesn't hold. You want a company that's still there when something goes wrong.",
-            "Linnebur Electric is family owned and operated. We keep a smaller staff on purpose, for continuity from one project to the next, so you're dealing with the same local company the whole way through."
+            "J M. called Linnebur “Upfront, honest, and great pricing,” and said it “continues all the way through to the end.” That's the part of hiring an electrician people worry about most: what happens after the first visit.",
+            "Linnebur Electric is family owned and operated. We keep a smaller staff for continuity between projects, and all of our employees routinely attend continuing education classes. Three of them are Master Electricians."
           ]
         },
         {
@@ -211,9 +210,9 @@
         },
         {
           "type": "prose",
-          "heading": "Electrical Repair in Wichita: Start With What You're Seeing",
+          "heading": "Electrical Repair in Wichita: Four Things Worth a Phone Call",
           "body": [
-            "Most electrical problems give a warning long before anything fails. Here's what the common signs usually point to."
+            "These are the signs that something on the circuit needs a look."
           ],
           "items": [
             {
@@ -225,12 +224,8 @@
               "text": "A loose connection can heat up behind the plate. Stop using it and have it looked at."
             },
             {
-              "title": "Lights that flicker or dim",
-              "text": "Often a loose connection somewhere on the circuit, or a large appliance starting up on the same line."
-            },
-            {
               "title": "Outlets that quit working",
-              "text": "A tripped GFCI somewhere else, a loose wire or a failed device. The cause isn't always at the dead outlet."
+              "text": "The part may have been replaced without the cause being found. Tell us what was done, and we start from there."
             },
             {
               "title": "Something fixed before is acting up again",
@@ -252,18 +247,18 @@
         },
         {
           "type": "prose",
-          "heading": "Homes, Businesses and Farms",
+          "heading": "From a Kitchen Circuit to a Grain Elevator",
           "body": [
-            "We wire houses, and we also wire office buildings, restaurants, churches, dental and medical clinics, machine shops and grain elevators. Residential is the work we list first.",
-            "Whether it's a kitchen circuit or a three-phase motor, it gets the same approach: find out what's really going on, then fix that."
+            "Our residential list covers new homes, remodels, ceiling fans, LED retro-fits and phone and TV cabling. On the commercial side we wire offices, restaurants, churches and dental and medical clinics. Industrial is machine shops, metal buildings, CNC mills and grain elevators.",
+            "Andale Farmers Coop, Axiom Engineers, Hentzen Contractors, Morton Buildings and Simpson Construction are among the companies we've worked for. Danny D. wrote “Commercial or residential,” and he meant both."
           ]
         },
         {
           "type": "prose",
-          "heading": "Where We Work",
+          "heading": "Wichita and the Areas Around It",
           "body": [
-            "Our shop is at 234 S Colorado St in Wichita. We work across the Wichita area, and we've done jobs in many of the areas around it, including agricultural projects outside town.",
-            "Call and tell us where the job is. We'll tell you if we can get there."
+            "We're at 234 S Colorado St in Wichita. We work across the Wichita area, and we've done jobs in many of the areas around it, including agricultural projects outside town.",
+            "Call and tell us where the job is."
           ]
         },
         {
@@ -273,23 +268,23 @@
         },
         {
           "type": "faq",
-          "heading": "Questions Before You Call",
+          "heading": "Can It Wait, Who Comes In, What Will It Cost",
           "items": [
             {
               "q": "Can you come today?",
-              "a": "Call (316) 943-6616 and tell us what's happening. We'll tell you when we can be there."
+              "a": "Call (316) 943-6616 and tell us what's happening. We don't list hours online yet, so the phone is the quickest way to find out."
             },
             {
               "q": "Is this dangerous, or are you selling me something?",
-              "a": "We don't know until we find the cause, so we trace the problem first and then tell you what it is. A small fix is a small fix, and a bigger job comes with the reason it's bigger. Then you decide."
+              "a": "A warm plate or a burning smell isn't wait-and-see. Switch off the circuit if you can do it safely, and call. For anything else, tell us what you've seen and we'll work out the next step on the call."
             },
             {
               "q": "What will it cost?",
-              "a": "It depends on what we find, so we won't print a number here. Ask what the work will cost when you call, and decide before anything starts."
+              "a": "It depends on what the job turns out to be, so we won't print a number. J M. called Linnebur “Upfront, honest, and great pricing.” Ask on the call."
             },
             {
               "q": "Who's coming into my house?",
-              "a": "A crew from a family-owned company with a smaller staff, not a call center. Tell us who will be home, and whether there's a tenant, pets or a shed we'll be working in, and we'll plan around it."
+              "a": "A crew from a family-owned company with a smaller staff. Emily S. said they were “very friendly and respectful of our property.”"
             },
             {
               "q": "Do you only do big commercial jobs?",
@@ -299,8 +294,8 @@
         },
         {
           "type": "callBand",
-          "heading": "Call Linnebur Electric",
-          "text": "Call (316) 943-6616 and tell us what your wiring is doing. Linnebur Electric, 234 S Colorado St, Wichita."
+          "heading": "Tell Us What the Wiring Is Doing",
+          "text": "Call (316) 943-6616. Linnebur Electric, 234 S Colorado St, Wichita."
         }
       ]
     },
@@ -311,7 +306,7 @@
       "keyword": "electrical repair wichita ks",
       "seo": {
         "title": "Electrical Repair in Wichita, KS | Linnebur Electric",
-        "description": "Electrical repair in Wichita, KS from Linnebur Electric. Dead outlets, tripping breakers and flickering lights, traced to the cause. Call (316) 943-6616."
+        "description": "Electrical repair in Wichita, KS from Linnebur Electric. Dead outlets, tripping breakers and flickering lights. Call (316) 943-6616."
       },
       "hero": {
         "eyebrow": "Electrical repair, Wichita",
@@ -322,7 +317,7 @@
           "action": "call"
         },
         "secondaryCta": {
-          "label": "Request Service",
+          "label": "Phone and Email",
           "action": "contact"
         },
         "image": {
@@ -339,7 +334,7 @@
         },
         {
           "type": "split",
-          "heading": "What Happens When You Call About an Electrical Problem",
+          "heading": "Which Outlets, Which Breaker, and When It Started",
           "image": {
             "slot": "inspection",
             "alt": "Electrician checking wiring at a Wichita home",
@@ -347,8 +342,7 @@
           },
           "body": [
             "Tell us what you're seeing: which outlets, which breaker, when it started and what was plugged in. The details are how we narrow down where to look.",
-            "Rachael R. said Linnebur helped her work through electrical issues. If it's a small repair, you'll hear that. If it's bigger, you'll hear why.",
-            "You decide what happens next, and the price is part of that conversation."
+            "J M. called Linnebur “Upfront, honest, and great pricing.” Ask about the price on the call."
           ]
         },
         {
@@ -358,9 +352,9 @@
         },
         {
           "type": "prose",
-          "heading": "What Usually Causes It",
+          "heading": "Stop Signs and Common Causes",
           "body": [
-            "The same handful of causes sit behind most calls. Knowing them helps you describe the problem, and tells you when to stop using something."
+            "Some signs mean stop using it first and call second. The rest are the usual suspects."
           ],
           "items": [
             {
@@ -396,15 +390,15 @@
         },
         {
           "type": "prose",
-          "heading": "Repair, or Something Bigger?",
+          "heading": "An Older House and What It Might Be Hiding",
           "body": [
-            "Many electrical repairs are small: a device, a connection, a breaker. Older homes sometimes show more. Wiring laid out for far fewer appliances than a house has today can run out of room, and a house that's been added onto may have wiring from several eras.",
-            "When what we find is bigger than a repair, we say so, explain what we saw and lay out your options. You'll never need to guess whether the answer is a repair or a rewire."
+            "Older homes can have wiring laid out for far fewer appliances than a house has today, and a house that's been added onto may have wiring from several eras.",
+            "Tell us how old the house is when you call, and whether it's been added onto."
           ]
         },
         {
           "type": "prose",
-          "heading": "Before You Call",
+          "heading": "Write It Down Before You Dial",
           "body": [
             "A few minutes of notes make the call faster. Write down which outlets or rooms are affected, whether a breaker tripped, what was running at the time, and whether anyone has worked on it before.",
             "If you can do it safely, leave the affected circuit off and unplug what was on it. Don't keep resetting a breaker that keeps tripping. If a plate is hot or something smells burnt, switch the circuit off and call."
@@ -412,15 +406,23 @@
         },
         {
           "type": "prose",
-          "heading": "Houses, Rentals and Businesses",
+          "heading": "Service Work, Fans, LEDs and Cabling",
           "body": [
-            "We do electrical repair for homes first, and for offices, shops and other commercial buildings too. If you manage a rental or a family member's house, tell us who will be there and how to reach them, and we'll plan around it.",
+            "Service Work is on our residential list, next to ceiling fan installation, LED lighting retro-fits and phone and TV cabling. Ask about any of them on the same call.",
+            "Linnebur Electric, Inc. is family owned and operated, with License #1353 printed on every page of our site. We keep a smaller staff for continuity between projects, and three of our employees are Master Electricians."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Homes First, Offices and Shops Too",
+          "body": [
+            "We do electrical repair for homes first, and for offices, shops and other commercial buildings too.",
             "Residential and commercial work both come through the same number, and a call is the quickest way to get on the schedule."
           ]
         },
         {
           "type": "faq",
-          "heading": "Questions Before You Call",
+          "heading": "Dead Outlets, Warm Plates and What to Say",
           "items": [
             {
               "q": "What should I tell you when I call?",
@@ -440,14 +442,14 @@
             },
             {
               "q": "What will a repair cost?",
-              "a": "It depends on the cause, so we won't print a number. Ask on the call, and decide before the work starts."
+              "a": "It depends on the cause, so we won't print a number. Ask when you call."
             }
           ]
         },
         {
           "type": "callBand",
-          "heading": "Call Linnebur Electric",
-          "text": "If an outlet, a breaker or a light won't behave, call (316) 943-6616. Tell us what it's doing, and we'll start there."
+          "heading": "If an Outlet, a Breaker or a Light Won't Behave",
+          "text": "Call (316) 943-6616 and tell us what it's doing."
         }
       ]
     },
@@ -458,18 +460,18 @@
       "keyword": "outdoor lighting installation wichita ks",
       "seo": {
         "title": "Outdoor Lighting Installation in Wichita, KS | Linnebur Electric",
-        "description": "Outdoor lighting installation in Wichita, KS from Linnebur Electric. Patio, pool, backyard and entry lights, wired for the weather. Call (316) 943-6616."
+        "description": "Outdoor lighting installation in Wichita, KS from Linnebur Electric. Patio, pool and backyard lights. Call (316) 943-6616."
       },
       "hero": {
         "eyebrow": "Outdoor lighting, Wichita",
         "h1": "Outdoor Lighting Installation in Wichita, KS — Linnebur Electric",
-        "sub": "Backyard, patio, steps and pool area, lit the way you want them. Call us, tell us what you'd like to see at night, and we'll recommend and wire it. Call (316) 943-6616.",
+        "sub": "Backyard, patio, steps and pool area. Donna S. had Linnebur install lights around her pool and backyard. Call (316) 943-6616 and tell us what you'd like to see at night.",
         "primaryCta": {
           "label": "Call (316) 943-6616",
           "action": "call"
         },
         "secondaryCta": {
-          "label": "Request Service",
+          "label": "Phone and Email",
           "action": "contact"
         },
         "image": {
@@ -486,23 +488,23 @@
         },
         {
           "type": "split",
-          "heading": "What Happens When You Call About Outdoor Lights",
+          "heading": "Pool, Patio, Steps: Tell Us What You'd Like to See",
           "image": {
             "slot": "home-hero-alt",
             "alt": "Wichita backyard and patio with warm lights at dusk",
             "brief": "electrical pool: home-hero-alt"
           },
           "body": [
-            "Tell us what you want to see at night: the patio, the steps, the pool, the driveway, the back fence. We talk it through and make recommendations, and you decide.",
-            "Then we run the wiring for it, with fixtures and connections made for the weather, and put the controls where you'll actually use them."
+            "Tell us what you want to see at night: the patio, the steps, the pool, the driveway, the back fence.",
+            "Pool and backyard lights are on our list, and so are LED retro-fits for the fixtures you already have."
           ]
         },
         {
           "type": "prose",
-          "heading": "Planning the Lights",
+          "heading": "Where the Lights Go",
           "body": [
             "Good outdoor lighting starts with where you walk and where you sit. A few well-placed lights beat a lot of bright ones.",
-            "Think about what you want to see, and what you don't want lit. A light that floods the neighbor's window is a problem you'll hear about."
+            "Think about what you want to see, and what you don't want lit."
           ],
           "items": [
             {
@@ -545,7 +547,7 @@
           "heading": "LED and Controls",
           "body": [
             "LED fixtures use less power and run cool, which lets you light more of the yard without loading up a circuit. We also handle LED retro-fits for fixtures you already have.",
-            "Controls matter as much as fixtures. A timer, a photocell or a switch inside the house means the lights come on when you want them, and not every night until someone remembers."
+            "A timer, a photocell or a switch inside the house means the lights come on when you want them, and not every night until someone remembers."
           ]
         },
         {
@@ -557,29 +559,36 @@
           "type": "prose",
           "heading": "Add Outlets While We're There",
           "body": [
-            "If you're running power outside, it's a good time to ask for what you've been missing: an outlet on the patio for a string of lights or a grill, one at the shed, one on the back of the garage.",
-            "Extra outlets can go in on the same visit, at the house, the garage or the shed, when it makes sense for the job."
+            "If you're running power outside, ask about one on the patio for a string of lights or a grill, one at the shed, or one on the back of the garage."
           ]
         },
         {
           "type": "prose",
-          "heading": "Lights Around the House, Rentals and Businesses",
+          "heading": "Beyond the Backyard: Homes First, Businesses Too",
           "body": [
-            "Outdoor lighting isn't only for backyards. A dark side yard, a back door and a parking area all call for the same planning: where people walk, what needs to be seen and where the power comes from.",
-            "We work on homes first, and on businesses, shops and churches too. If you manage a property, tell us when someone can let us in and who to call."
+            "A dark side yard and a back door call for the same planning as a patio: where people walk, what needs to be seen and where the power comes from.",
+            "We work on homes first, and on businesses, shops and churches too. Our commercial work covers exterior electrical work as well as interior."
           ]
         },
         {
           "type": "prose",
-          "heading": "Before You Call",
+          "heading": "Same Company, Indoors and Out",
           "body": [
-            "Walk the yard at dusk with your phone. Take a few photos of the areas you want lit, and note where the closest outlet or panel is.",
-            "Tell us what's out there now: existing lights, a pool, a deck, a shed. The more you can describe, the better our recommendations."
+            "Linnebur Electric, Inc. is family owned and operated, with License #1353 printed on every page of our site. Our residential list includes ceiling fan installation, LED lighting retro-fits and phone and TV cabling.",
+            "We keep a smaller staff for continuity between projects, and three of our employees are Master Electricians."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Walk the Yard at Dusk First",
+          "body": [
+            "Take your phone out at dusk and photograph the areas you want lit, and note where the closest outlet or panel is.",
+            "Tell us what's out there now: existing lights, a pool, a deck, a shed."
           ]
         },
         {
           "type": "faq",
-          "heading": "Questions Before You Call",
+          "heading": "Pools, Fixtures and Extra Outlets",
           "items": [
             {
               "q": "Can you add lights to a pool area?",
@@ -587,7 +596,7 @@
             },
             {
               "q": "Do I need new wiring?",
-              "a": "Sometimes. It depends on what's there and how much you want to light. We'll look and tell you."
+              "a": "Sometimes. It depends on what's already there and how much you want to light. Tell us what's out there when you call."
             },
             {
               "q": "Can you replace the fixtures I already have?",
@@ -595,17 +604,21 @@
             },
             {
               "q": "Will you add an outlet at the same time?",
-              "a": "Ask. Extra outlets for the patio, garage or shed can often go in on the same visit."
+              "a": "Ask. Outlets at the house, the garage and the shed are part of our residential work."
+            },
+            {
+              "q": "Do you light up a business, a shop or a church?",
+              "a": "Yes. We work on businesses, shops and churches, and our commercial work covers exterior electrical work as well as interior. Call (316) 943-6616 and tell us about the building."
             },
             {
               "q": "What does it cost?",
-              "a": "It depends on the design, so we won't print a number. Ask on the call, and decide before the work starts."
+              "a": "It depends on the design, so we won't print a number. Ask on the call."
             }
           ]
         },
         {
           "type": "callBand",
-          "heading": "Call Linnebur Electric",
+          "heading": "Thinking About Lights for the Yard?",
           "text": "Thinking about lights for the yard? Call (316) 943-6616 and tell us what you want to see at night."
         }
       ]
@@ -624,7 +637,7 @@
           "action": "call"
         },
         "secondaryCta": {
-          "label": "Request Service",
+          "label": "Phone and Email",
           "action": "contact"
         },
         "image": {
@@ -636,22 +649,21 @@
       "sections": [
         {
           "type": "prose",
-          "heading": "Call Us",
+          "heading": "Call (316) 943-6616",
           "body": [
-            "(316) 943-6616",
-            "The fastest way to reach us is to call. Tell us what your wiring is doing and where you are, and we'll tell you what we think and when we can come."
+            "The phone is the fastest way to reach us. Tell us what your wiring is doing and where you are."
           ]
         },
         {
           "type": "prose",
-          "heading": "Email",
+          "heading": "Email kent@linneburelectric.com",
           "body": [
-            "You can also write to kent@linneburelectric.com. Include your name, a phone number, the address of the house or building and what's going on."
+            "Write to us, and include your name, a phone number, the address of the house or building and what's going on."
           ]
         },
         {
           "type": "split",
-          "heading": "What to Have Ready",
+          "heading": "Which Breaker, Which Outlets, What Was Running",
           "list": [
             "What's happening: a breaker tripping, outlets dead, lights flickering, a warm plate, a smell.",
             "Where it is: which rooms, the garage, the shed or outside.",
@@ -666,7 +678,7 @@
         },
         {
           "type": "prose",
-          "heading": "Address and Area",
+          "heading": "234 S Colorado St, Wichita",
           "body": [
             "**Address.** Linnebur Electric, 234 S Colorado St, Wichita, KS 67209.",
             "**Fax.** 316.943.2547.",
@@ -675,8 +687,8 @@
         },
         {
           "type": "callBand",
-          "heading": "Call Linnebur Electric",
-          "text": "Tell us what the wiring is doing, and we'll start there."
+          "heading": "Tell Us What the Wiring Is Doing",
+          "text": "Call (316) 943-6616, or write to kent@linneburelectric.com."
         }
       ]
     }
@@ -793,20 +805,26 @@
     },
     "lead": {
       "heading": "Why we led with finding the problem",
-      "text": "The scariest moment for a Wichita homeowner is a breaker or outlet that keeps failing with nobody able to say why, and right behind it is paying again for a guess. Finding the cause and fixing that answers both. Of the Wichita competitor sites we could read, none states it. Your reviews already say it, so please tell us the kinds of problems you get called in on.",
+      "text": "We led with finding the cause because it's built on things Google can't find anywhere else: your real reviews, in your customers' own words. Dod I. said you were the only electricians who could find a problem that several others couldn't, and that story lives nowhere else on the web. The jobs your customers name, like a 44-year-old home or a pool and backyard, are Wichita specifics no generic electrician page can copy.",
       "showScores": false,
       "rows": [
         {
           "claim": "Finds the cause when other electricians couldn't",
-          "score": 16
+          "score": 16,
+          "appeal": 4,
+          "exclusivity": 4
         },
         {
           "claim": "Family-owned crew with a smaller staff",
-          "score": 12
+          "score": 12,
+          "appeal": 4,
+          "exclusivity": 3
         },
         {
           "claim": "Respectful, friendly crew in your home",
-          "score": 12
+          "score": 12,
+          "appeal": 4,
+          "exclusivity": 3
         }
       ]
     }
