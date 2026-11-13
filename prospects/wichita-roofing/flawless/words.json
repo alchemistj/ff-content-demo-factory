@@ -36,7 +36,7 @@
     {
       "name": "Roof Replacement",
       "route": "/roof-replacement-wichita-ks/",
-      "blurb": "Tear-off to cleanup, with a free class 4 impact-resistant upgrade, downspouts and gutter guards included."
+      "blurb": "Tear-off to cleanup, with a free class 4 impact-resistant upgrade, downspouts and gutter guards included. Most roofs go on in a day. Our featured service, and the one the upgrade rides on."
     },
     {
       "name": "Roof Repair",
@@ -84,7 +84,7 @@
       "hero": {
         "eyebrow": "Wichita, KS · Free Roof Inspections · Insurance Claim Help",
         "h1": "Roofing Company in Wichita, KS — Flawless Roofing Co",
-        "sub": "I'm Ravi. We replace storm-damaged roofs with a free class 4 impact-resistant upgrade, downspouts and gutter guards included, and work the claim with your adjuster. Call me for a free inspection.",
+        "sub": "I'm Ravi. Our roof replacements come with a free class 4 impact-resistant upgrade, downspouts and gutter guards included, so the new roof is tougher than the one the storm took. I work the claim with your adjuster, so you're not in the dark. Call me for a free inspection.",
         "primaryCta": {
           "label": "Call (316) 730-0301",
           "action": "call"
@@ -107,12 +107,24 @@
         },
         {
           "type": "split",
+          "heading": "The Claim Moves Forward. The Same Shingle Goes Back On.",
+          "body": [
+            "The hail came through Tuesday. By Thursday there's a roofer's card on the door, a deductible you never looked up, and a feeling you're one phone call from getting this wrong.",
+            "Then the quote comes, and it's for the same shingle the hail just broke. You go through all of this to put back the roof that couldn't take it, and the next storm starts it over.",
+            "Nobody tells you the shingle is a choice."
+          ],
+          "image": {
+            "slot": "home-claim",
+            "alt": "Hail marks on gray shingles in afternoon light",
+            "brief": "close view of a roof slope with scattered hail marks on gray shingles, roof filling the right of the frame, plain soft sky on the left, no readable text, no people, no tools"
+          }
+        },
+        {
+          "type": "split",
           "heading": "Put Back a Tougher Roof Than the Storm Took.",
           "body": [
-            "After a hailstorm, most roofers put back the same ordinary shingle the hail just broke. The claim pays, the roof goes on, and the next big storm starts it over.",
-            "We work the other way. We replace storm-damaged roofs with a free class 4 impact-resistant upgrade, and work the claim with your adjuster.",
-            "It starts with a free inspection and filing of your insurance claim. Then we work the claim with your adjuster and put the new roof on. The downspouts and gutter guards come with it at no charge.",
-            "I'm out on jobs myself. I've gotten up on roofs to inspect them, helped homeowners file their claims and met adjusters at the house."
+            "Most roofers put back what was there. Our replacements include a free class 4 impact-resistant upgrade, with downspouts and gutter guards, so the upgrade isn't an extra line you have to ask for.",
+            "It starts with a free inspection and filing of your insurance claim. Then I work the claim with your adjuster, and the crew puts the new roof on."
           ],
           "image": {
             "slot": "home-owner",
@@ -121,17 +133,42 @@
           },
           "list": [
             "Free class 4 impact-resistant shingle upgrade",
-            "Free roof inspection to start every job",
-            "Your insurance claim filed for you",
-            "We work the claim with your adjuster",
             "Downspouts and gutter guards included",
-            "Ravi, the owner, on your job"
+            "Free inspection, and your claim filed for you",
+            "I work the claim with your adjuster"
           ],
           "listStyle": "checks"
         },
         {
+          "type": "prose",
+          "heading": "You Shouldn't Have to Wonder What You'll Be Charged",
+          "body": [
+            "Many homeowners brace for the roofer who says one thing and bills another. You should know what's happening on your roof, and what it costs, before the work starts.",
+            "You hear the price after the inspection and before any work starts. That's the standard we hold every job to."
+          ]
+        },
+        {
           "type": "review",
-          "quote": "Flawless roofing and construction was awesome! They helped with every step of the way to get my roof replaced. They answered any questions I had. They were easy to talk to and get ahold of. They gave me some sweet upgrades that helped me save money on my home insurance.",
+          "quote": "Being a single woman, finding someone who does what they say & not charge you more $ is extremely limited. I hired Ravi to replace my siding on my house & a detached garage & they showed up on time daily & didn’t take a day off till the job was done & it looks amazing!",
+          "name": "Diane J."
+        },
+        {
+          "type": "services",
+          "heading": "What We Do",
+          "intro": "Roof replacement first, because the upgrade rides on it. Then repair, inspection and the exteriors around the roof, from one company on S Broadway in Wichita."
+        },
+        {
+          "type": "prose",
+          "heading": "What a Class 4 Shingle Is",
+          "body": [
+            "Class 4 is the highest impact rating a shingle can earn. To get it, a shingle has to survive a standard test where steel balls are dropped on it without cracking through.",
+            "An ordinary shingle that takes a hailstorm is the one you end up replacing again. An impact-resistant shingle is built to hold up better when the next one comes.",
+            "The downspouts and gutter guards give the water coming off the new roof somewhere good to go."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Flawless roofing and construction was awesome! They helped with every step of the way to get my roof replaced. They answered any questions I had. They were easy to talk to and get ahold of.",
           "name": "Sean P."
         },
         {
@@ -171,48 +208,12 @@
           }
         },
         {
-          "type": "split",
-          "heading": "Roof Replacement and the Insurance Claim",
-          "body": [
-            "If hail or wind did the damage, your homeowner's policy may pay for the roof. Whether it does depends on what gets documented and how the claim is filed.",
-            "The adjuster looks at your roof once. Having someone there who knows what hail damage looks like, and what to point out, can change what the claim ends up covering.",
-            "Age and wear aren't storm damage, and most policies won't pay for them. If your roof is simply old, we'll tell you at the inspection rather than file a claim that won't stand.",
-            "You don't need to learn insurance language. You need to call and tell us when the adjuster is coming."
-          ],
-          "image": {
-            "slot": "home-claim",
-            "alt": "Hail marks on gray shingles in afternoon light",
-            "brief": "close view of a roof slope with scattered hail marks on gray shingles, roof filling the right of the frame, plain soft sky on the left, no readable text, no people, no tools"
-          }
-        },
-        {
-          "type": "prose",
-          "heading": "What a Class 4 Shingle Is",
-          "body": [
-            "Class 4 is the highest impact rating a shingle can earn. To get it, a shingle has to survive a standard test where steel balls are dropped on it, and still not crack through.",
-            "An ordinary shingle that takes a hailstorm is the one you end up replacing again. An impact-resistant shingle is built to hold up better when the next one comes.",
-            "Some insurance companies also lower the premium for a class 4 roof. Ask yours.",
-            "That's the shingle we put back on your replacement, free. The downspouts and gutter guards give the water coming off your new roof somewhere good to go."
-          ]
-        },
-        {
-          "type": "review",
-          "quote": "Ravi is the best in the business! Makes every accommodation and goes the extra mile to make sure everything goes right and fights for you!! Highly recommend Flawless Roofing Co!! Cant say enough good things!",
-          "name": "Robert H."
-        },
-        {
-          "type": "services",
-          "heading": "What We Do",
-          "intro": "Roofs first, and the siding, gutters and paint around them, from one company on S Broadway in Wichita."
-        },
-        {
           "type": "prose",
           "heading": "Install Day",
           "body": [
             "On install day, a crew comes to your house and the old roof comes off. Then the underlayment, flashing and new shingles go on.",
-            "Most roofs go on in a single day. A bigger roof, or short winter daylight, can stretch it to two, and gutters can follow a few days later.",
-            "Your roof's size and the season decide yours, and we'll tell you what to expect after the inspection.",
-            "What matters when the crew leaves is that your yard looks like it did when they arrived. Nails in the grass are how a roof job goes wrong."
+            "Most roofs go on in a single day. A bigger roof, or short winter daylight, can stretch it to two, and gutters can follow a few days later. After the inspection, we'll tell you what to expect for yours.",
+            "When the crew leaves, your yard should look like it did when they arrived."
           ]
         },
         {
@@ -251,12 +252,28 @@
           "heading": "Questions Before You Call",
           "items": [
             {
-              "q": "Is the inspection really free?",
-              "a": "Yes. Every job starts with one, and it costs nothing whether we find damage or not. We check the shingles, flashing and vents and tell you what we saw."
+              "q": "Do you handle the insurance claim?",
+              "a": "Yes. We file it, and we work it with your adjuster. Whether it pays depends on your policy and on the damage coming from a storm, not age. Your deductible is on your policy's declarations page, so look it up before the inspection."
             },
             {
-              "q": "Do you handle the insurance claim?",
-              "a": "Yes. We file it and work it with your adjuster. Whether it pays depends on your policy and on the damage coming from a storm, not age. Your deductible is on your policy's declarations page, so look it up before the inspection."
+              "q": "Are you one of the storm chasers?",
+              "a": "We're a local roofing company with an office at 928 S Broadway in Wichita. You can call (316) 730-0301 or stop by, Monday to Friday, 10:00 AM to 6:00 PM."
+            },
+            {
+              "q": "What if the inspection finds no damage?",
+              "a": "Then you'll know, and you didn't pay to find out. The inspection is free either way, and a roof with years left shouldn't be replaced."
+            },
+            {
+              "q": "Do I have to sign or pay before you inspect?",
+              "a": "No. The inspection is free. You get the price for your roof after it, with each part explained, before any work starts."
+            },
+            {
+              "q": "Who will be on my job?",
+              "a": "Ravi comes to the inspection, and the roof goes on with his crew. If you want to know who's coming, ask when you call."
+            },
+            {
+              "q": "What does the class 4 upgrade cost?",
+              "a": "Our offer is a free class 4 impact-resistant upgrade, with downspouts and gutter guards, on a roof replacement. Ask me how it applies to your roof when you call."
             },
             {
               "q": "How soon after a storm should I call?",
@@ -267,27 +284,15 @@
               "a": "Most roofs go on in a single day. A bigger roof, or short winter daylight, can stretch it to two. After the inspection we can tell you what to expect for yours."
             },
             {
-              "q": "What does the class 4 upgrade cost?",
-              "a": "Nothing. It's included on your new roof, with downspouts and gutter guards. Some insurance companies lower the premium for a class 4 roof, so call your agent and ask before the roof goes on."
-            },
-            {
               "q": "What if my roof is leaking right now?",
               "a": "Call me. If a storm is coming, getting the leak covered comes before anything else."
-            },
-            {
-              "q": "What if the inspection finds no damage?",
-              "a": "Then you'll know, and you didn't pay to find out. A roof with years left shouldn't be replaced."
-            },
-            {
-              "q": "What decides the price of a roof?",
-              "a": "The size and pitch of the roof, how many layers have to come off, the shingle and how much of the decking is rotted. On an insurance claim, your policy decides what's paid and your deductible is yours. You get the number after the inspection, not before it."
             }
           ]
         },
         {
           "type": "callBand",
           "heading": "Call Ravi for a Free Roof Inspection",
-          "text": "If a storm has gone through, or the ceiling has a stain you can't explain, call. We'll inspect the roof free, tell you what's there, and if a storm did the damage, put back a tougher roof with the upgrade free. Call (316) 730-0301. We're at 928 S Broadway in Wichita, open Monday to Friday, 10:00 AM to 6:00 PM, or email ravi@flawlessroofingcousa.com."
+          "text": "If a storm has gone through, or the ceiling has a stain you can't explain, call. We'll inspect the roof free and tell you what's there. Call (316) 730-0301. We're at 928 S Broadway in Wichita, open Monday to Friday, 10:00 AM to 6:00 PM, or email ravi@flawlessroofingcousa.com."
         }
       ]
     },
@@ -337,7 +342,7 @@
             "In Wichita, hail ends a lot of roofs years before age would. When it does, your homeowner's policy may pay for the replacement, so the claim is usually the first decision, not the last.",
             "Here's the path.",
             "You call us. We inspect the roof for free and document what we find. We file the claim with your insurance company, and we work the claim with your adjuster.",
-            "The adjuster is at your house once, for a short visit. What's been documented before they arrive, and who walks the roof with them, often decides how the claim goes.",
+            "The adjuster is at your house once, for a short visit. What's documented before they arrive, and who walks the roof with them, matters.",
             "You don't have to get on the roof, learn the paperwork or chase anyone down. You tell us when the adjuster is coming, and we take it from there."
           ]
         },
@@ -407,8 +412,7 @@
           "heading": "Choosing the Shingle",
           "body": [
             "The roof is the biggest single piece of your house you can see from the street. Color and style are the part of this job you'll live with every time you pull into the driveway, so take your time with them.",
-            "What the shingle is made to survive matters as much as how it looks. We put a class 4 impact-resistant shingle on your replacement as a free upgrade, so you're not choosing between the look you want and a roof that stands up to the next storm.",
-            "If your insurance company discounts class 4 roofs, that savings is yours too. Ask them before the roof goes on."
+            "What the shingle is made to survive matters as much as how it looks. We put a class 4 impact-resistant shingle on your replacement as a free upgrade, so you're not choosing between the look you want and a roof that stands up to the next storm."
           ]
         },
         {
@@ -562,7 +566,7 @@
           "body": [
             "After a storm, the question isn't only what's broken. It's whether the damage is worth an insurance claim at all.",
             "A claim pays for storm damage above your deductible. If a few shingles blew off and the repair costs less than your deductible, filing gets you nothing back, and paying for the repair yourself is simpler.",
-            "If the hail or wind damage runs across the roof, the math changes. That's when a claim can cover far more than a patch, and often a whole new roof.",
+            "If the hail or wind damage runs across the roof, the math changes. That's when a claim is worth a closer look, and when a replacement may make more sense than a patch.",
             "We'll tell you which side of that line your roof is on after the inspection, with the repair price in hand, so you decide with real numbers. If you file, we file it with you and work with the adjuster.",
             "Have the damage looked at soon either way. Damage written down right after the storm is better evidence than a memory of a noise in the night."
           ],
@@ -578,7 +582,7 @@
           "body": [
             "This is the question most homeowners have. We'll answer it on the roof, with you.",
             "A repair makes sense when the damage is in one place and the rest of the roof has years left. A flashing, a pipe boot or a handful of shingles can be fixed without touching anything else.",
-            "Replacement makes sense when the damage is spread across the roof, the shingles are old and brittle, or the same roof keeps leaking in different places. At that point you'd be paying for repair after repair on a roof that's finished. See [roof replacement](/roof-replacement-wichita-ks/) for how that works, including the insurance claim and the free class 4 upgrade.",
+            "Replacement makes sense when the damage is spread across the roof, the shingles are old and brittle, or the same roof keeps leaking in different places. Then you'd be paying for repair after repair on a roof that's finished. See [roof replacement](/roof-replacement-wichita-ks/) for how that works.",
             "If a repair is all you need, that's what I'll tell you. I'd rather fix a roof right than sell a roof you don't need."
           ]
         },
@@ -665,8 +669,8 @@
         },
         {
           "type": "review",
-          "quote": "Being a single woman, finding someone who does what they say & not charge you more $ is extremely limited. … Definitely would not hesitate to hire them on any future projects!",
-          "name": "Diane J."
+          "quote": "Ravi is the best in the business! Makes every accommodation and goes the extra mile to make sure everything goes right and fights for you!! Highly recommend Flawless Roofing Co!!",
+          "name": "Robert H."
         },
         {
           "type": "prose",
@@ -737,7 +741,7 @@
         ],
         "fixes": [
           "Its own page for roof replacement in Wichita, KS: the claim, the free upgrade and roof day.",
-          "Four reviews, each beside the point it proves: the claim, the upgrades, a next-day roof and the cleanup."
+          "Three reviews, each beside the point it proves: the upgrade, the claim and a one-day roof."
         ],
         "alsoAdd": "Call and form tracking that shows which pages and towns your leads come from."
       },
@@ -752,7 +756,7 @@
           "A page for roof repair in Wichita, KS: leaks, storm damage and the free inspection.",
           "The same-day tarp review near the top."
         ],
-        "alsoAdd": "A check of what your competitors offer, so services you didn’t think to mention still get their own pages."
+        "alsoAdd": "Pages for storm damage and insurance claims, then gutters and siding, each planned from what Google actually shows for that search."
       },
       {
         "route": "/contact/",
@@ -814,6 +818,25 @@
         "Your customers call you Ravi, while your BBB profile lists the owner as Yagnesh Zinzuwadia, so how would you like to be named everywhere?",
         "Your site names only Wichita, while your BBB profile lists Butler, Harvey, Kingman, Reno, Sedgwick and Sumner Counties, so which towns should every listing say you serve?",
         "Your site offers a free class 4 upgrade with downspouts and gutter guards included. Is that offer still current, and are there terms we should show next to it?"
+      ]
+    },
+    "lead": {
+      "heading": "Why we led with the free class 4 upgrade",
+      "text": "After a hailstorm, the fear is paying to put back the same roof, then watching the next storm start it over. A free class 4 upgrade, with downspouts and gutter guards included, answers that directly. We checked the top five Wichita roofers, and none states it as free and included. Please tell us if the terms have changed.",
+      "showScores": false,
+      "rows": [
+        {
+          "claim": "Free class 4 upgrade, downspouts and gutter guards included",
+          "score": 20
+        },
+        {
+          "claim": "Ravi on your job, answering himself",
+          "score": 12
+        },
+        {
+          "claim": "Free same-day leak tarp before a storm",
+          "score": 12
+        }
       ]
     }
   },
