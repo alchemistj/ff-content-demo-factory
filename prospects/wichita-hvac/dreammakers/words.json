@@ -110,9 +110,9 @@
         },
         {
           "type": "prose",
-          "heading": "It's 9:40 on a July Night, and the AC Just Quit",
+          "heading": "Sunday Afternoon, and the Vents Are Blowing Warm",
           "body": [
-            "The thermostat says 86 and climbing. The baby finally fell asleep, and your mom, staying with you this week, says she's fine. You've called three companies. Two went to voicemail, and one said next Tuesday.",
+            "It's 3 on a Sunday in August. Your mom is staying with you this week and says she's fine, but she's been fanning herself for an hour. You've called three companies. Two went to voicemail, and one said Tuesday.",
             "You don't need the cheapest. You need one person who writes back."
           ]
         },
@@ -759,11 +759,11 @@
     },
     "offer": {
       "heading": "The offer we'd build with you",
-      "text": "This is a proposal for Nate to decide on, not something you offer today: text a photo or short video of the unit and get Nate's plain-words read back, with what it likely is and the repair and replace options, before a truck rolls. None of the Wichita competitors we checked offers a text-in photo diagnosis.",
+      "text": "This is a proposal for you to decide on, not something you offer today: a homeowner texts a photo or short video of the unit and gets your plain-words read back, with what it likely is and the repair and replace options, before a truck rolls. None of the Wichita competitors we checked offers a text-in photo diagnosis.",
       "points": [
-        "You text a photo or short video of the unit and what it's doing.",
-        "Nate writes back what it likely is, and the repair and replace options, in plain words.",
-        "Terms, timing and price are yours to set, and only if you can do it."
+        "A homeowner texts a photo or short video of the unit and what it's doing.",
+        "You write back what it likely is, and the repair and replace options, in plain words.",
+        "Terms, timing and price are yours to set, and only if it fits how you work."
       ]
     }
   }
