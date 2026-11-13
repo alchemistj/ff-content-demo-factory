@@ -65,3 +65,15 @@ The Window Dudes short form, "Inspect First. Fix Right.", is the model for the 3
 - **FAQ:** answers the avatar's top objections.
 - **Outreach message:** leads with the USP. It keeps the form's limits, the plain link and the solicitation line.
 - **Strategy page:** adds a plain "Why we led with X" paragraph. Never show the score table or any numbers to the prospect (Josh 2026-11-12: scores mean nothing to them). The table stays internal, in `usp.md`.
+
+## 4. Words step: voice reference, then a fact-check (Josh, 2026-11-13)
+A copy test (ICT, Nov 13) found that Sonnet working with full live model copy wrote with better voice and rhythm, but invented facts. The factory pipeline was safer. From now on, every new demo's words step uses both:
+1. **Voice reference.** Before writing, the writer reads these approved pages IN FULL. They are **voice reference only; never use their facts.**
+   - `examples/approved-copy/sra/springfield-homepage.md`
+   - `examples/approved-copy/sra/springfield-roof-replacement.md`
+   - `examples/approved-copy/sra/springfield-roof-maintenance.md` (SRA's repair-type page)
+   - `examples/approved-copy/window-dudes/homepage.md`
+
+   Match their rhythm, plain confidence and specificity, not their claims.
+2. **Every factory rule still applies:** facts only from the business's own folder (facts.md, reviews.json, audit.md), the keyword H1, Josh's hard nos, and the USP's "What's thin" limits. A claim that rests on one review is written as what that customer saw, not as a standing practice.
+3. **Fact-check before build.** A separate Haiku pass checks every line of `words.json` and `outreach.md` against the folder's facts and reviews. It lists each claim that is unsupported, overstated (one review stated as routine), a years, response-time or crew claim, or a hard no. The writer fixes them, and only then does the demo get built.
