@@ -84,7 +84,7 @@
       "hero": {
         "eyebrow": "Wichita, KS · Free Roof Inspections · Insurance Claim Help",
         "h1": "Roofing Company in Wichita, KS — Flawless Roofing Co",
-        "sub": "I'm Ravi. Our roof replacements come with a free class 4 impact-resistant upgrade, downspouts and gutter guards included, so the new roof is tougher than the one the storm took. I work the claim with your adjuster. Call me for a free inspection.",
+        "sub": "I'm Ravi. Our roof replacements come with a free class 4 impact-resistant upgrade, downspouts and gutter guards included. I work the claim with your adjuster. Call me for a free inspection.",
         "primaryCta": {
           "label": "Call (316) 730-0301",
           "action": "call"
@@ -102,8 +102,8 @@
       "sections": [
         {
           "type": "review",
-          "quote": "Amazing experience from free estimate to project completion. Ravi has been a pleasure to work with. … I love my new Roof and gutters!",
-          "name": "Matt S."
+          "quote": "Flawless roofing and construction was awesome! They helped with every step of the way to get my roof replaced. They answered any questions I had.",
+          "name": "Sean P."
         },
         {
           "type": "split",
@@ -160,11 +160,6 @@
           ]
         },
         {
-          "type": "review",
-          "quote": "Flawless roofing and construction was awesome! They helped with every step of the way to get my roof replaced. They answered any questions I had. They were easy to talk to and get ahold of.",
-          "name": "Sean P."
-        },
-        {
           "type": "prose",
           "heading": "What You Can See From the Ground, and What It Means",
           "body": [
@@ -173,7 +168,7 @@
           "items": [
             {
               "title": "Granules piling up at the downspouts",
-              "text": "Hail knocks the gritty granules off asphalt shingles, and the roof can wear out early without leaking yet. A free inspection tells you whether it's hail damage worth a claim or ordinary age."
+              "text": "Hail knocks the gritty granules off asphalt shingles. A free inspection tells you whether it's hail damage worth a claim or ordinary age."
             },
             {
               "title": "Dents in the gutters, vents or AC unit after hail",
@@ -342,7 +337,7 @@
           "type": "prose",
           "heading": "What You Pay",
           "body": [
-            "On an insurance replacement, your policy decides what the claim pays, and your deductible is yours. We'll tell you where the claim stands as it goes, so the amount you owe isn't a surprise at the end.",
+            "On an insurance replacement, your policy decides what the claim pays, and your deductible is yours. We'll tell you where the claim stands as it goes.",
             "If there's no claim, you pay for the roof, and the price comes from your roof, not a number off a chart. These are the things that move it:"
           ],
           "tail": [
@@ -515,7 +510,7 @@
             },
             {
               "title": "We do the repair.",
-              "text": "You get the price first."
+              "text": "After the inspection, we do the work."
             }
           ]
         },
@@ -656,7 +651,7 @@
         {
           "type": "prose",
           "body": [
-            "After the inspection you get a straight answer: what we found, what it needs, and the price before any work starts. Then we do the job we said we'd do, for the price we said."
+            "After the inspection you get a straight answer: what we found and what it needs."
           ]
         },
         {

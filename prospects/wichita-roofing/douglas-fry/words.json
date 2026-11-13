@@ -90,7 +90,7 @@
     {
       "name": "Hail and Wind Insurance Claims",
       "route": null,
-      "blurb": "Jason works with your insurer from the first call to the last nail, and we price from the roof, not the paperwork."
+      "blurb": "Hail and wind damage, with Jason working with your insurer."
     }
   ],
   "pages": [
@@ -101,7 +101,7 @@
       "keyword": "roofing company Wichita KS",
       "seo": {
         "title": "Roofing Company in Wichita, KS | Douglas Fry Roofing",
-        "description": "A family roofing company in Wichita, KS with no commissioned salespeople. Tile, DaVinci, Brava, shake, shingle and metal roofs. Call Doug or Jason."
+        "description": "A family roofing company in Wichita, KS with no commissioned salespeople. Tile, DaVinci, Brava, shake, shingle and metal roofs. Call (316) 655-9777."
       },
       "hero": {
         "eyebrow": "Wichita, KS · Family-Owned · 1835 N. Ohio",
@@ -132,7 +132,7 @@
           "heading": "Who Is Selling Me This Roof?",
           "body": [
             "It's the day after the hail. Half your street has roofer signs in the yard, and a man in a company polo knocked at noon and offered a free inspection. Your sister's claim just came back partial, and you haven't read your own policy.",
-            "You're not signing with the guy who knocked. But you can't tell which roofer is looking at your roof and which one is looking at a commission, and you don't want to be sold a roof you don't need."
+            "You're not signing with the guy who knocked. But you can't tell which roofer is looking at your roof and which one is looking at a sale, and you don't want to be sold a roof you don't need."
           ]
         },
         {
@@ -140,7 +140,7 @@
           "heading": "No Commission on Your Roof",
           "body": [
             "Many roofers send a salesperson who is paid when you sign, and a person paid by the sale has a reason to find you a new roof.",
-            "We have no commissioned salespeople, so nobody here earns more if the answer is \"replace.\" Doug or Jason answers your call, and one of us looks at your roof and tells you what we found."
+            "We have no commissioned salespeople, so nobody here earns more if the answer is \"replace.\" One of the owners answers your call and looks at your roof."
           ],
           "image": {
             "slot": "home-owners",
@@ -148,9 +148,9 @@
             "brief": "brick two-story house with a weathered cedar shake roof on the right of the frame, front lawn and driveway leading off to the left, soft overcast sky behind the text side, no readable text, no people"
           },
           "list": [
-            "Doug or Jason answers the phone",
-            "One of us looks at your roof and tells you what we found",
-            "Scope, warranty and price in writing before work starts"
+            "Scope, warranty and price in writing before work starts",
+            "Two lead foremen run the crews",
+            "Roofing in Wichita since 1981"
           ],
           "listStyle": "checks"
         },
@@ -159,7 +159,7 @@
           "heading": "Burned by a Roofer Before? Here's Who Picks Up.",
           "body": [
             "A bad roofer teaches you to read every estimate looking for the catch, and to take every unreturned call as proof.",
-            "Our office is at 1835 N. Ohio in Wichita, in a building we own. Call, and Doug or Jason answers."
+            "Our office is at 1835 N. Ohio in Wichita, in a building we own."
           ]
         },
         {
@@ -232,7 +232,7 @@
             },
             {
               "title": "Shingles in the yard after a wind storm",
-              "text": "Wind gets under shingles whose sealant strip never bonded or has aged out, and once a tab lifts, the next gust takes it. We replace what's missing and check the rest for creased tabs and hail bruising."
+              "text": "Once a tab lifts, the next gust takes it. We replace what's missing and check the rest for creased tabs and hail bruising."
             }
           ],
           "tail": [
@@ -245,7 +245,7 @@
         },
         {
           "type": "review",
-          "quote": "I have a good friend that is a professional roofer (local) and he told me to call Fry Roofing for my tile-roof repair.  Jason Fry helped me and really knows his stuff. … We purchased a pre-owned home and the previous roof \"repair\" was performed improperly.  Jason recognized the botched repair and corrected it before it had a chance to damage the inside of the house.  It pays to have it done-right the first time.",
+          "quote": "I have a good friend that is a professional roofer (local) and he told me to call Fry Roofing for my tile-roof repair.  Jason Fry helped me and really knows his stuff. …Jason recognized the botched repair and corrected it before it had a chance to damage the inside of the house.  It pays to have it done-right the first time.",
           "name": "Matt M."
         },
         {
@@ -253,7 +253,7 @@
           "heading": "Hail, Wind and Your Insurance",
           "body": [
             "After a hailstorm, two things get priced: the paperwork and the roof. They aren't always the same number.",
-            "Jason works with your insurance company from the first call to the last nail. We write our estimate from what's on your roof, not from the adjuster's sheet, and if the paperwork covers less than the roof needs, we'll tell you."
+            "Jason works with your insurance company. We write our estimate from what's on your roof, not from the adjuster's sheet, and if the paperwork covers less than the roof needs, we'll tell you."
           ]
         },
         {
@@ -275,7 +275,7 @@
           "items": [
             {
               "title": "We look at your roof.",
-              "text": "One of us gets up on your roof, finds the problem and tells you what we found."
+              "text": "We get up on your roof, finds the problem and tells you what we found."
             },
             {
               "title": "You get it in writing.",
@@ -321,7 +321,7 @@
             },
             {
               "q": "Who will I talk to, and who does the work?",
-              "a": "You talk to Doug or Jason, and we have no commissioned salespeople. Ask who will be on your job when you get your estimate."
+              "a": "You talk to one of the owners, and we have no commissioned salespeople. Ask who will be on your job when you get your estimate."
             },
             {
               "q": "What warranty do I get?",
@@ -336,7 +336,7 @@
         {
           "type": "callBand",
           "heading": "Call Doug and Jason",
-          "text": "Call and tell us what your roof is doing. Doug or Jason will come out, get on the roof and put the estimate in writing. (316) 655-9777"
+          "text": "Call and tell us what your roof is doing. We'll come out, get on the roof and put the estimate in writing. (316) 655-9777"
         }
       ]
     },
@@ -424,7 +424,7 @@
             },
             {
               "title": "Premium asphalt",
-              "text": "Atlas StormMaster Shake and CertainTeed Presidential Shake are thick, dimensional shingles cut to throw the shadow lines of shake, and we recommend Atlas. Ask for the impact rating of the exact product you're pricing."
+              "text": "Atlas StormMaster Shake and CertainTeed Presidential Shake are thick, dimensional shingles cut to throw the shadow lines of shake, and we recommend Atlas."
             },
             {
               "title": "Standing seam metal",
@@ -766,7 +766,7 @@
   "footer": {
     "about": "A family roofer in Wichita. Doug and Jason Fry. Doug started the company in 1981.",
     "why": [
-      "You speak with an owner, never a commissioned salesperson",
+      "You speak with an owner when you call",
       "Workmanship warranties of 5, 10 and 15 years",
       "Written estimates with scope, warranty and price"
     ]

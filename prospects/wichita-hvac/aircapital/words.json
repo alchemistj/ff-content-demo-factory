@@ -298,8 +298,9 @@
           "heading": "What Happens When You Call",
           "body": [
             "You tell us what the system is doing and which town you're in, and we book you the same day or the next. Emergency calls are available.",
-            "The technician checks the system, finds the failed part and explains what's wrong before anything gets fixed. The estimate is free.",
-            "Then you decide. If a repair makes sense, we do it. If it doesn't, we say so and talk through replacement."
+            "The technician checks the system, finds the failed part and explains what's wrong before anything gets fixed.",
+            "Then you decide. If a repair makes sense, we do it. If it doesn't, we say so and talk through replacement.",
+            "Same-day and next-day appointments are available, so you are not left waiting."
           ],
           "image": {
             "slot": "service-van",
@@ -408,7 +409,7 @@
         {
           "type": "callBand",
           "heading": "Get Your AC Running Again",
-          "text": "Call Air Capital Heating and Air and tell us what your air conditioner is doing. The estimate is free."
+          "text": "Call Air Capital Heating and Air and tell us what your air conditioner is doing."
         }
       ]
     },
@@ -450,7 +451,7 @@
           "heading": "What Happens When You Call",
           "body": [
             "Tell us how old the system is and what it's doing, and we book you the same day or the next. Emergency calls are available, summer included.",
-            "The estimate is free. The technician finds what failed and explains your options in plain words: repair the part, replace a major component, or replace the system. You get the reasoning and the numbers on each, and you decide."
+            "The technician finds what failed and explains your options in plain words: repair the part, replace a major component, or replace the system. You get the reasoning and the numbers on each, and you decide."
           ]
         },
         {
@@ -476,7 +477,8 @@
           "body": [
             "We install energy-efficient air conditioning systems for homes, matched to your house and your needs. The goal is a system that is the right size for your home, not the biggest one on the truck.",
             "Size matters. A system that's too large cools fast, shuts off and leaves the house clammy. One that's too small runs nonstop and can't keep up on a 100-degree day.",
-            "Financing is available through Enhancify. Ask about it when you call, and we'll tell you how it applies to your replacement. The estimate comes first, so you can compare repair and replacement before you decide anything."
+            "We install energy-efficient air conditioning systems tailored to your home. If part of your space has no ductwork, ask us about a ductless mini split.",
+            "Same-day and next-day appointments are available, and the estimate is free."
           ],
           "image": {
             "slot": "thermostat",
@@ -553,7 +555,7 @@
       "hero": {
         "eyebrow": "Contact",
         "h1": "Contact Air Capital Heating and Air",
-        "sub": "Tell us what your system is doing and we'll book a visit, same day or next. The estimate is free. Call or text us.",
+        "sub": "Tell us what your system is doing and we'll book a visit, same day or next. Call or email us.",
         "primaryCta": {
           "label": "Call (316) 990-1911",
           "action": "call"
@@ -585,7 +587,7 @@
           "type": "prose",
           "heading": "Send a Message",
           "body": [
-            "Not ready to call? Text us your name, a few words about what's wrong and the town you're in."
+            "Not ready to call? Email us your name, a few words about what's wrong and the town you're in."
           ]
         },
         {
@@ -619,7 +621,7 @@
     }
   ],
   "footer": {
-    "about": "Air Capital Heating and Air repairs and replaces heating and cooling systems for homes and light commercial buildings in Wichita, Kansas.",
+    "about": "Heating and cooling repair and replacement for Wichita homes and light commercial buildings.",
     "why": [
       "Free estimates",
       "Same-day and next-day appointments",

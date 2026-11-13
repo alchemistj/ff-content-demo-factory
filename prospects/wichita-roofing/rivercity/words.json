@@ -84,7 +84,7 @@
       "hero": {
         "eyebrow": "3750 N Topeka St, Wichita · Local, Family-Owned",
         "h1": "Roofing Company in Wichita, KS — River City Roofing",
-        "sub": "When a ceiling leaks, we find where the water is really coming in before anyone talks about replacing a roof. Anthony gets into the attic and onto the roof first, and he's the one who came back after the crew left to check the work.",
+        "sub": "When a ceiling leaks, we find where the water is really coming in before anyone talks about replacing a roof. Anthony gets into the attic first and checks back after the crew leaves.",
         "primaryCta": {
           "label": "Call (316) 295-2159",
           "action": "call"
@@ -119,8 +119,7 @@
           "body": [
             "Plenty of roofers look at a ceiling stain and quote a new roof. It's the bigger ticket, and nobody has to crawl through a hot attic to sell it.",
             "If the water was really coming in at a chimney or a pipe boot, you've paid for a roof and you still have the leak.",
-            "We go in order. Anthony gets into the attic and up on the roof until he knows where the water is coming from. Sometimes it isn't the roof at all, and then you hear that too.",
-            "Then you get a detailed estimate for what's really wrong, so the price is for your roof and not for one nobody looked at."
+            "We go in order. Anthony gets into the attic and up on the roof until he knows where the water is coming from. Sometimes it isn't the roof at all, and then you hear that too."
           ],
           "list": [
             "The attic and the roof checked before a price is written",
@@ -131,8 +130,8 @@
           "listStyle": "checks",
           "image": {
             "slot": "home-roof",
-            "alt": "Roof edge and gutter line of a Wichita house",
-            "brief": "roof edge with clean gutter line seen from the yard, roof on the right, plain sky on the left, calm background behind the text side, no readable text, no people"
+            "alt": "Water stain on attic roof decking around a rafter",
+            "brief": "roofing pool: sec-attic-leak (matches the Find It First section; replaces the yard sweeper)"
           }
         },
         {
@@ -168,7 +167,7 @@
             },
             {
               "title": "Curling shingles and grit in the gutters",
-              "text": "Granules in the gutters and curling shingles across the slope point to a worn-out roof. Patches may only hold a short while, so we'd look at a new roof in composition shingles, metal or tile."
+              "text": "Granules in the gutters and curling shingles point to a worn-out roof. Patches may only hold a short while, so we'd look at a new roof."
             }
           ]
         },
@@ -492,7 +491,7 @@
           "body": [
             "Your own clues help: whether the stain grows in every rain or only when wind drives it sideways, and whether it sits near a chimney, a bathroom fan or a plumbing vent. They narrow it down, but they don't settle it, because water rarely drips straight down from the opening.",
             "So we start in the attic, where a leak leaves dark streaks, wet insulation and damp wood. Then we go up on the roof and follow the trail to the opening.",
-            "Sometimes the trail ends somewhere other than the shingles. That's the whole point of looking: you pay to fix what's actually letting water in. You get a detailed estimate for the repair that stops it."
+            "Sometimes the trail ends somewhere other than the shingles. That's the whole point of looking: you pay to fix what's actually letting water in."
           ]
         },
         {
