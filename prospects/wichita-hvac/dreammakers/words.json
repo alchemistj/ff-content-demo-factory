@@ -44,9 +44,14 @@
       "blurb": "The failed capacitor, motor, igniter or sensor replaced, not the whole system."
     },
     {
-      "name": "Air Conditioner Installation",
+      "name": "New AC Installation",
       "route": null,
-      "blurb": "New air conditioners and mini split systems for Wichita homes."
+      "blurb": "A new air conditioner, or a mini split for the room your main system never reaches."
+    },
+    {
+      "name": "New Furnace Installation",
+      "route": null,
+      "blurb": "A new furnace put in, vented and connected, when the old one has failed or aged out."
     },
     {
       "name": "Air Conditioner Repair",
@@ -54,9 +59,9 @@
       "blurb": "AC repair for dead fan motors, hard starts and refrigerant leaks."
     },
     {
-      "name": "Furnace Repair and Replacement",
+      "name": "Furnace Repair",
       "route": null,
-      "blurb": "Furnace repair, or a new furnace when the repairs keep stacking up."
+      "blurb": "Furnace repair for a worn igniter, a dirty sensor or a failing blower motor."
     },
     {
       "name": "Ductwork",
@@ -77,10 +82,10 @@
       "keyword": "heating and air conditioning company Wichita KS",
       "seo": {
         "title": "Heating and Air Conditioning Company in Wichita, KS | Dream Makers Heating and Cooling",
-        "description": "Heating and air conditioning company in Wichita, KS where you text or call Nate and he comes out. Repairs, installs and parts. Call (316) 871-5085."
+        "description": "Heating and air conditioning company in Wichita, KS where you text Nate and he answers. Repairs, installs and parts. Text or call (316) 871-5085."
       },
       "hero": {
-        "eyebrow": "Wichita, KS · Heating, Cooling and Water Heaters",
+        "eyebrow": "Wichita, KS · Furnaces, AC and Water Heaters · Renters Welcome",
         "h1": "Heating and Air Conditioning Company in Wichita, KS — Dream Makers Heating and Cooling",
         "primaryCta": {
           "label": "Call (316) 871-5085",
@@ -95,7 +100,7 @@
           "alt": "Technician opening a furnace cabinet in a home utility room",
           "brief": "HVAC pool r1: furnace-hero"
         },
-        "sub": "Text or call Nate, and the person who answers is the person who comes out. Dream Makers Heating and Cooling repairs and installs furnaces, air conditioners, heat pumps and water heaters in Wichita, for homes and businesses, renters included. Call or text (316) 871-5085."
+        "sub": "I'm Nate. Text me what your AC or furnace is doing and I write back, often with someone at your door within hours. You aren't alone with a broken unit and a hot house. Text or call (316) 871-5085."
       },
       "sections": [
         {
@@ -104,20 +109,25 @@
           "name": "Mashaela W."
         },
         {
+          "type": "prose",
+          "heading": "It's 9:40 on a July Night, and the AC Just Quit",
+          "body": [
+            "The thermostat says 86 and climbing. The baby finally fell asleep, and your mom, staying with you this week, says she's fine. You've called three companies. Two went to voicemail, and one said next Tuesday.",
+            "You don't need the cheapest. You need one person who writes back."
+          ]
+        },
+        {
           "type": "split",
-          "heading": "The Person Who Answers Is the Person Who Comes Out",
+          "heading": "Text Nate, and He Writes Back",
           "body": [
             "Most heating and cooling companies put you through a call center or a dispatcher. You explain the problem to one stranger, and a different stranger shows up at your door.",
-            "Dream Makers works the other way around. You text or call Nate, he asks what the unit is doing, and he is the one who comes out. On bigger jobs, like installing mini splits, his team comes with him.",
-            "Tell him what you see and hear. Does the outdoor unit run while the house stays warm? Does the furnace click, hum or stay silent? A few lines tell him a lot before he's in your driveway."
+            "Here you text or call Nate. Tell him what you see and hear: does the outdoor unit run while the house stays warm, does the furnace click, hum or stay silent? He writes back, and he or a tech from his team comes out. Reviewers say it's often within hours."
           ],
           "list": [
-            "Call or text (316) 871-5085 and Nate answers",
-            "Furnaces, air conditioners, heat pumps and water heaters, repaired and installed",
-            "Mini split systems and ductwork for rooms the main system doesn't reach",
-            "Residential and commercial work",
-            "Renters welcome, and landlords too",
-            "We clean up before we leave"
+            "Text or call (316) 871-5085 and Nate answers",
+            "Furnaces, air conditioners, heat pumps and water heaters",
+            "Mini splits and ductwork for rooms the main system doesn't reach",
+            "Homes, businesses and renters"
           ],
           "listStyle": "checks",
           "image": {
@@ -127,9 +137,27 @@
           }
         },
         {
+          "type": "prose",
+          "heading": "A Company That Knows Your Name",
+          "body": [
+            "Nobody wants to find a company at 9:40 at night. You want to text someone who already knows your name and your unit.",
+            "That's what a few visits with Nate turn into. You stop looking things up, and you just text."
+          ]
+        },
+        {
           "type": "review",
-          "quote": "Nathan has been out to our house a few times to refill and stop our Freon leak over the past year in half, we have just about come to know each other on first name bases and that's something in today's world. … Yesterday was our wedding reception at our house and of course after I got my hair and make up done and got home I quickly noticed the temperature climbing in our house and by the time it hit 78 I was in a panic as we had about 150 people arriving in an hour and by time I reached 82 I had Nathan on the phone and he was on his way to come save our big special day. By 84°f he was there to help!",
+          "quote": "Nathan has been out to our house a few times … we have just about come to know each other on first name bases and that's something in today's world. … I know Nathan and his company/techs will do whatever in there power to get out to my ASAP to fix whatever issues we maybe having.",
           "name": "Almeta W."
+        },
+        {
+          "type": "services",
+          "heading": "Heating and Cooling Services",
+          "intro": "Repairs and installs for the furnace, the air conditioner, the water heater and the ducts, for homes and businesses."
+        },
+        {
+          "type": "review",
+          "quote": "Called last night when air-conditioner went out. He was here before 11 this morning and he fixed it and thankfully I have cold air again.",
+          "name": "Aimee S."
         },
         {
           "type": "prose",
@@ -169,11 +197,6 @@
           }
         },
         {
-          "type": "services",
-          "heading": "Heating and Cooling Services",
-          "intro": "Repairs and installs for the furnace, the air conditioner, the water heater and the ducts, for homes and businesses."
-        },
-        {
           "type": "prose",
           "heading": "You Rent, and the Air Is Out",
           "body": [
@@ -209,20 +232,20 @@
           "heading": "Questions Before You Call",
           "items": [
             {
-              "q": "Can I just text?",
-              "a": "Yes. Text what the unit is doing and what you've already checked: the thermostat setting, the breaker and the filter. Nate answers texts and calls, and a message sent late at night has been answered early the next morning. If the system is down and you need someone now, call."
+              "q": "Can you come today?",
+              "a": "Text or call and ask. Reviewers describe Nate coming out within hours, and one got a reply early the next morning to a message sent late at night. If the system is down and you need someone now, call."
             },
             {
-              "q": "Will Nate be the one who comes to the house?",
-              "a": "That's how reviewers describe it: Nate answers and comes out on repairs. On bigger jobs, like installing mini splits, his team comes with him. You can ask who is coming when you book."
+              "q": "Do I need a whole new system?",
+              "a": "Not always. A capacitor, igniter or motor is a repair. A cracked heat exchanger, a leaking water heater tank, or a second or third failure in a short span points to replacement. Nate explains what he found in plain words."
             },
             {
-              "q": "Will you remember my system next year?",
-              "a": "That depends on the same person coming back, which is the point of how we work. Reviewers describe Nate coming out several times over a year or two for the same unit. Ask what was replaced before he leaves, and write the date on the unit."
+              "q": "What will it cost to have you look?",
+              "a": "We won't guess at a number here. Text what the unit is doing and ask what the visit costs before anyone drives out. Reviewers call the prices fair."
             },
             {
-              "q": "Should I repair it or replace it?",
-              "a": "It depends on the age of the unit and what failed. A capacitor, igniter or motor is a repair. A cracked heat exchanger, a leaking water heater tank, or a second or third failure in a short span points to replacement. You can check by counting the repairs from the last two years."
+              "q": "Will you come back if it acts up again?",
+              "a": "Reviewers describe Nate coming out several times over a year or two for the same unit. Ask what was replaced before he leaves, write the date on the unit, and text him if it acts up."
             },
             {
               "q": "Do you work on rentals?",
@@ -283,7 +306,7 @@
           "heading": "When You Call About a Heater",
           "body": [
             "Nate answers. You tell him what you have and what it's doing, and he tells you whether it sounds like a repair or a new unit.",
-            "The same person comes to look at it, and the same person installs it if it's time. Text works too if you'd rather write it down.",
+            "Nate or his team comes to look at it, and installs it if it's time. Text works too if you'd rather write it down.",
             "Know where the unit lives, what fuel it burns and roughly how big the house is. That's most of what he needs to talk it through."
           ],
           "image": {
@@ -385,7 +408,7 @@
             },
             {
               "q": "Who does the install?",
-              "a": "Nate answers the phone and comes to the house. On bigger jobs, his team comes with him."
+              "a": "Nate answers the phone, and he or his team comes to the house. On bigger jobs, like mini splits, the team comes with him."
             },
             {
               "q": "Do you install in rentals?",
@@ -673,7 +696,7 @@
         "fixes": [
           "A page about heater installation in Wichita, KS, with plain answers and the reviews that prove them."
         ],
-        "alsoAdd": "Pages planned from what Google actually shows for each search, so every page targets something people really look for."
+        "alsoAdd": "New AC Installation and New Furnace Installation pages, each built for its own search."
       },
       {
         "route": "/hvac-parts-replacement-wichita-ks/",
@@ -732,6 +755,15 @@
         "The number at the top of your site shows (316) 871-5085 but dials 817-333-7310, so is 871-5085 the one number every listing should use?",
         "Your Google listing and your BBB profile show different details about the business, so which name, phone and address should every listing use?",
         "Your BBB profile lists six counties from Butler to Sumner, while your site's service cards point to Fort Worth pages, so which Kansas towns should Google list as your service area?"
+      ]
+    },
+    "offer": {
+      "heading": "The offer we'd build with you",
+      "text": "This is a proposal for Nate to decide on, not something you offer today: text a photo or short video of the unit and get Nate's plain-words read back, with what it likely is and the repair and replace options, before a truck rolls. None of the Wichita competitors we checked offers a text-in photo diagnosis.",
+      "points": [
+        "You text a photo or short video of the unit and what it's doing.",
+        "Nate writes back what it likely is, and the repair and replace options, in plain words.",
+        "Terms, timing and price are yours to set, and only if you can do it."
       ]
     }
   }
