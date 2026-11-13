@@ -111,6 +111,18 @@
       "pulledAt": "2026-11-09T17:53:39.817Z"
     },
     {
+      "slug": "brand-plumbing-wichita",
+      "name": "Brand Plumbing, Inc.",
+      "placeId": "ChIJNRPYBzDnuocREE2GtSqw8iU",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 51,
+        "withText": 35,
+        "ratingOnly": 16
+      },
+      "pulledAt": "2026-11-13T21:09:01.355Z"
+    },
+    {
       "slug": "brockmeyer-electric-wichita",
       "name": "Brockmeyer Inc. Electrical Contractor",
       "placeId": "ChIJsWcGYpHjuocRGEOB-6sdA_E",
