@@ -603,6 +603,18 @@
       "pulledAt": "2026-10-25T02:02:27.141Z"
     },
     {
+      "slug": "wheatland-plumbing-wichita",
+      "name": "Wheatland Plumbing",
+      "placeId": "ChIJr1ACQyhlKo0R-d5mXamsSME",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 92,
+        "withText": 62,
+        "ratingOnly": 13
+      },
+      "pulledAt": "2026-11-13T20:59:30.754Z"
+    },
+    {
       "slug": "wichita-apex-remodeling-and-contracting",
       "name": "Apex Remodeling and Contracting LLC",
       "placeId": "ChIJuz5eUqzXuocRk2oNzeafPic",
