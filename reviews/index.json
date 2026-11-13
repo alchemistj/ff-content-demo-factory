@@ -436,15 +436,15 @@
     },
     {
       "slug": "linnebur-electric-wichita",
-      "name": null,
-      "placeId": null,
-      "status": "apify_error",
+      "name": "Linnebur Electric",
+      "placeId": "ChIJOSlEmSHhuocR8V4pPhYYQTw",
+      "status": "ok",
       "counts": {
-        "listingTotal": null,
-        "withText": 0,
-        "ratingOnly": 0
+        "listingTotal": 23,
+        "withText": 16,
+        "ratingOnly": 7
       },
-      "pulledAt": "2026-11-09T19:09:30.388Z"
+      "pulledAt": "2026-11-13T20:55:56.841Z"
     },
     {
       "slug": "midas-maid-service",
