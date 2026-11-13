@@ -1,0 +1,795 @@
+{
+  "schema": "words-package/v1",
+  "business": {
+    "name": "Creekmore Plumbing",
+    "slug": "creekmore",
+    "city": "Wichita",
+    "state": "KS",
+    "companyType": "Plumber",
+    "owners": [],
+    "phones": [
+      {
+        "label": "Wichita",
+        "display": "(316) 264-1342",
+        "tel": "+13162641342"
+      }
+    ],
+    "email": null,
+    "hours": "Monday to Friday, 7:30 AM to 4:30 PM",
+    "address": "440 South Pattie Street, Wichita, KS 67211",
+    "serviceArea": {
+      "summary": "Wichita, KS",
+      "towns": [
+        "Wichita"
+      ]
+    }
+  },
+  "trustBar": [
+    "Free Quotes",
+    "Third Generation Family Owned",
+    "Tank and Tankless Water Heaters",
+    "Hand Digging at the Foundation",
+    "PHCC Certified Backflow Testing"
+  ],
+  "services": [
+    {
+      "name": "Water Heater Replacement",
+      "route": "/water-heater-replacement-wichita-ks/",
+      "blurb": "Tank-type and tankless water heaters installed. Bradford White is our preferred brand."
+    },
+    {
+      "name": "Water Heater Repair",
+      "route": null,
+      "blurb": "Repair and maintenance for most brands of water heaters."
+    },
+    {
+      "name": "Water Service Lines",
+      "route": null,
+      "blurb": "From the house to the meter, using directional drilling to lessen the damage to your yard."
+    },
+    {
+      "name": "Foundation Leak Repair",
+      "route": null,
+      "blurb": "Hand digging at the foundation when the leak is coming through the wall."
+    },
+    {
+      "name": "Toilet Repair",
+      "route": "/toilet-repair-wichita-ks/",
+      "blurb": "Repair or install, any brand, old or new, including ADA toilets."
+    },
+    {
+      "name": "Backflow Testing",
+      "route": null,
+      "blurb": "Testing, repair and new installation. Our PHCC certified tech tests your backflow and reports to the city."
+    },
+    {
+      "name": "Water Softeners and Filters",
+      "route": null,
+      "blurb": "A water softener that needs no salt, or a reverse osmosis system that fits under your kitchen sink."
+    },
+    {
+      "name": "Bathroom and Kitchen Remodel Plumbing",
+      "route": null,
+      "blurb": "Tub to shower, new faucets, and a cast iron sink swapped for stainless."
+    }
+  ],
+  "pages": [
+    {
+      "role": "home",
+      "route": "/home/",
+      "navLabel": "Home",
+      "keyword": "plumber wichita ks",
+      "seo": {
+        "title": "Plumber in Wichita, KS | Creekmore Plumbing",
+        "description": "Third generation family plumber in Wichita, KS. Water heaters, toilets, water lines and backflow testing. Free quotes. Call (316) 264-1342."
+      },
+      "hero": {
+        "eyebrow": "Wichita, KS · Third Generation Family Owned · Free Quotes",
+        "h1": "Plumber in Wichita, KS — Creekmore Plumbing",
+        "sub": "We're a third generation family plumbing business. Some Wichita families have called us for their parents' houses, then their own, and now their kids'. Tell us what's wrong and we'll tell you the most cost-effective way to fix it. Call (316) 264-1342.",
+        "primaryCta": {
+          "label": "Call (316) 264-1342",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Get a Free Quote",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "home-hero",
+          "alt": "Plumber kneeling beside a water heater in a Wichita home, checking the pipes",
+          "brief": "plumbing pool: home-hero"
+        }
+      },
+      "sections": [
+        {
+          "type": "review",
+          "quote": "I've relied on Creekmore Plumbing for years on all of my properties and private residence. They've always been great at being responsive and explaining what the problem is and the most cost effective route to take. … What's best about this company is that it is family owned and has been around Wichita for years.",
+          "name": "Richard W."
+        },
+        {
+          "type": "prose",
+          "heading": "When the Water Heater Quits and You Don't Have a Plumber",
+          "body": [
+            "It's 6:50 on a weekday morning. There's a puddle around the water heater, the shower runs cold, and the kids need to be out the door. You're standing in the driveway with your phone, and there are six plumbers on the screen. You don't know a single one.",
+            "You're not afraid of the plumber. You're afraid of the bill. Is this a small fix or a big one? Will somebody tell you the truth, or sell you the biggest job on the truck?",
+            "You want one thing: somebody who looks at it, says what's wrong in plain words, and doesn't make you feel stupid for asking."
+          ]
+        },
+        {
+          "type": "split",
+          "heading": "Family Plumbers. Honest Fix First.",
+          "body": [
+            "Most plumbers you find on a search are strangers. You don't know what they'll say until they're standing in your kitchen, and by then you're already committed.",
+            "We're a third generation family business, and we work the other way around. We find what failed, explain it in plain words, and give you the most cost-effective way to fix it. Then you decide."
+          ],
+          "list": [
+            "A free quote on the work",
+            "The problem explained in plain words",
+            "The right-sized fix, not the biggest one",
+            "A Wichita office at 440 South Pattie Street"
+          ],
+          "listStyle": "checks",
+          "imageSide": "right",
+          "image": {
+            "slot": "home-hero-alt",
+            "alt": "Plumber explaining a repair to a homeowner at a kitchen sink",
+            "brief": "plumbing pool: home-hero-alt"
+          }
+        },
+        {
+          "type": "prose",
+          "heading": "A Plumber Worth Passing Down",
+          "body": [
+            "Some jobs are a test. A part is failing, the cheap fix would hold for a while, and the better fix takes more explaining. A plumber who's only passing through takes the cheap one.",
+            "A family business can't. The next call comes from your neighbor, your parents or your grown kids. We'd rather earn those calls one honest job at a time."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Our son told us about Creekmore about five years ago. Since then they've become “the only company we'd call” plumbers for us and each of our three grown sons. … Creekmore's plumber explained the issue … and went to work to efficiently do the job as it should have been done the first time, with copper. It would've been the easiest thing in the world for him to replace those hoses with the same thing again, knowing that I'd be calling again in six years when those deteriorated too, not knowing there was a better solution. Instead he did the job right, charged an extremely fair price for the time involved...and we weren't surprised by this at all. … I'm just sorry I've lived here all my life and never knew what a local gem we have in this company!",
+          "name": "Jane K."
+        },
+        {
+          "type": "services",
+          "heading": "Plumbing Services in Wichita",
+          "intro": "Water heaters, water lines, toilets, backflow testing and more, from our office on South Pattie Street in Wichita."
+        },
+        {
+          "type": "split",
+          "heading": "Water Heaters: Tank-Type or Tankless",
+          "body": [
+            "When the water heater is done, we install tank-type and tankless models. Bradford White is our preferred brand, and we also install AO Smith and Navien tankless heaters.",
+            "If it's something smaller, we repair and maintain most brands, and we'll tell you which side of the line you're on."
+          ],
+          "imageSide": "left",
+          "image": {
+            "slot": "water-heater",
+            "alt": "Tank-type water heater with copper supply lines in a utility room",
+            "brief": "plumbing pool: water-heater"
+          },
+          "link": {
+            "label": "See water heater replacement in Wichita",
+            "route": "/water-heater-replacement-wichita-ks/"
+          }
+        },
+        {
+          "type": "review",
+          "quote": "I've had them do work for my grandmother and myself several times. Absolutely wonderful, knowledgeable, and trustworthy technicians. Office staff is great with communication too.",
+          "name": "Laura B."
+        },
+        {
+          "type": "split",
+          "heading": "Leaks at the Foundation and Under the Yard",
+          "body": [
+            "A leak that shows up as a wet wall or a soft spot in the yard means digging, and digging can wreck a yard. We handle water service from the house to the meter.",
+            "For water service lines, we use directional drilling to lessen the damage to your yard. When the leak is coming through the wall, we hand dig at the foundation."
+          ],
+          "imageSide": "right",
+          "image": {
+            "slot": "leak",
+            "alt": "Water seeping from a pipe where a service line enters a foundation wall",
+            "brief": "plumbing pool: leak"
+          }
+        },
+        {
+          "type": "prose",
+          "heading": "Toilets, Backflow Testing and Water Softeners",
+          "body": [
+            "Three smaller jobs we do every day around Wichita homes."
+          ],
+          "items": [
+            {
+              "title": "Toilets",
+              "text": "We repair and install toilets of any brand, old or new, including ADA toilets."
+            },
+            {
+              "title": "Backflow testing",
+              "text": "We test, repair and install backflow devices. Our PHCC certified tech tests yours and reports to the city."
+            },
+            {
+              "title": "Water softeners and filters",
+              "text": "A water softener that needs no salt, or a reverse osmosis system that fits under your kitchen sink."
+            }
+          ],
+          "link": {
+            "label": "See toilet repair in Wichita",
+            "route": "/toilet-repair-wichita-ks/"
+          }
+        },
+        {
+          "type": "review",
+          "quote": "Gabe came out to look at our shower which was leaking. Gabe identified the issue and advised he could repair it with no issues. Gabe was asked to look at our kitchen plumbing as well while he was on site. Gabe quoted out the price to do all repairs and this was reasonable cost in total. Gabe was clean, quick, and respectful. Gabe explained what all he did to complete the job. I will suggest family and friends use Creekmore in the future.",
+          "name": "Dillon D."
+        },
+        {
+          "type": "prose",
+          "heading": "Bathroom and Kitchen Remodel Plumbing",
+          "body": [
+            "Tub to shower, new faucets, a cast iron sink swapped for stainless. A remodel is mostly decisions, and the plumbing behind it needs to be right.",
+            "We do the plumbing side of bathroom and kitchen remodels. Tell us what you're changing and we'll quote it."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Creekmore Plumbing was the last plumbing company we contacted for a quote out of six. We could not believe the pricing and the timelines we were getting to redo the plumbing for her bathroom. After speaking with Steve at Creekmore, I had a gut feeling they were going to be the right crew for the job. Steve came out the next day, quoted us within 24 hours and had his crew here on-time to start the job. His team was patient, professional, clean, highly-skilled and extremely good at their job.",
+          "name": "Catherine E."
+        },
+        {
+          "type": "prose",
+          "heading": "Serving Wichita",
+          "body": [
+            "We work in Wichita from our office at 440 South Pattie Street. Our hours are Monday to Friday, 7:30 AM to 4:30 PM.",
+            "Call and tell us where you are and what's going on, and we'll tell you what we can do."
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Questions Before You Call",
+          "items": [
+            {
+              "q": "Can you come today?",
+              "a": "Call and ask. Our hours are Monday to Friday, 7:30 AM to 4:30 PM, and we'll tell you on the phone when we can be there. If water is running, shut off the main valve first, then call and tell us where it's coming from."
+            },
+            {
+              "q": "Will you actually show up?",
+              "a": "Ask any plumber that. When you call, ask for the day and the time window, and ask who's coming. A plumber who can't answer that on the phone is telling you something."
+            },
+            {
+              "q": "What's it going to cost, and do I need all of it?",
+              "a": "A quote is free. We tell you what we think is wrong and the most cost-effective way to fix it, and you decide. We don't print prices on a web page, because they depend on your house."
+            },
+            {
+              "q": "Do I need a whole new water heater?",
+              "a": "Not always. If the tank itself is leaking, it has to be replaced. If it's a smaller problem, we repair most brands. Tell us what you see and how old the heater is, and we'll tell you which."
+            },
+            {
+              "q": "What if it leaks again?",
+              "a": "Call us and tell us what happened. We don't print warranty terms on this page, because they depend on the job. Ask what's covered when you get your quote."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Call Creekmore Plumbing",
+          "text": "Call (316) 264-1342 for a free quote. Tell us what's wrong and hear what we'd do before you decide anything. Creekmore Plumbing, 440 South Pattie Street, Wichita."
+        }
+      ]
+    },
+    {
+      "role": "service",
+      "route": "/water-heater-replacement-wichita-ks/",
+      "navLabel": "Water Heater Replacement",
+      "keyword": "water heater replacement wichita ks",
+      "seo": {
+        "title": "Water Heater Replacement in Wichita, KS | Creekmore Plumbing",
+        "description": "Tank-type and tankless water heater replacement in Wichita, KS. Bradford White, AO Smith and Navien. Free quotes. Call (316) 264-1342."
+      },
+      "hero": {
+        "eyebrow": "Water heaters, Wichita",
+        "h1": "Water Heater Replacement in Wichita, KS — Creekmore Plumbing",
+        "sub": "A puddle under the tank, or no hot water this morning. Call us and tell us what you see. We'll tell you whether it needs replacing or a repair is enough, and the quote is free. Call (316) 264-1342.",
+        "primaryCta": {
+          "label": "Call (316) 264-1342",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Get a Free Quote",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "water-heater",
+          "alt": "Tank-type water heater installed in a utility room with copper supply lines",
+          "brief": "plumbing pool: water-heater"
+        }
+      },
+      "sections": [
+        {
+          "type": "review",
+          "quote": "I was referred to this company by church members because my hot water tank was leaking. I called and was given an appointment the same day. … the service person (Mark) was on time and with his assistant, very efficient in the installation. They removed the old heater following the installation. … The price was fair and less than another quote I received, I definitely recommend this company and will call them when I have future plumbing needs.",
+          "name": "Mary V."
+        },
+        {
+          "type": "split",
+          "heading": "What Happens When You Call About Your Water Heater",
+          "body": [
+            "Tell us what you see: water around the base, no hot water, rusty water, a rumbling noise. We tell you what we think it is, and what to do until we get there.",
+            "A technician looks at the heater and tells you what's wrong in plain words. You get a free quote on your options, and if it's a replacement, you choose between tank-type and tankless.",
+            "Nothing starts until you've heard the options. You decide, and then we schedule the work."
+          ],
+          "imageSide": "right",
+          "image": {
+            "slot": "leak",
+            "alt": "Water pooled on a basement floor beside a water heater",
+            "brief": "plumbing pool: leak"
+          }
+        },
+        {
+          "type": "review",
+          "quote": "Our water heater went out and we called Creekmore based on a recommendation from family. Before I knew about them, I had called two other plumbing companies (both of which have never returned my calls). No games, just great service. … Then, he said, \"I'll tell you what we charge and you can let me know.\" The price was MORE than reasonable and included removing the old and the cost of the new tank. … What would have taken us 4 hours and a lot of Google research, he did in about 30 minutes. Very impressive.",
+          "name": "Hollie B."
+        },
+        {
+          "type": "prose",
+          "heading": "Signs It's Time to Look at Your Water Heater",
+          "body": [
+            "Water heaters usually give a warning before they quit. Here's what to look for."
+          ],
+          "items": [
+            {
+              "title": "Water around the base",
+              "text": "A puddle can come from a loose fitting or from the tank itself. If the tank is leaking, it can't be repaired and has to be replaced. Shut off the cold water to the heater and call."
+            },
+            {
+              "title": "No hot water, or not enough",
+              "text": "A failed part is often a repair. A tank that can't keep up, after serving the house for a long time, may be ready to replace. We look at it before we say which."
+            },
+            {
+              "title": "Rusty or cloudy hot water",
+              "text": "If the cold side runs clear and the hot side runs rusty, the problem is the heater. The inside of the tank may be corroding."
+            },
+            {
+              "title": "Rumbling or popping",
+              "text": "Sediment settles at the bottom of the tank, and the heater makes noise as it heats. It can be a sign the tank is wearing out."
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Repair or Replace?",
+          "body": [
+            "Here's a rule you can check. If a part has failed and the tank is sound, repair makes sense. We repair and maintain most brands of water heaters.",
+            "If the tank itself is leaking, repair isn't an option. If the heater is old and the repairs keep coming, replacing it is usually the better use of your money.",
+            "We tell you which side of the line you're on. The quote is free either way."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Tank-Type or Tankless",
+          "body": [
+            "We install both. Which one fits depends on your house, your family and what you want to spend."
+          ],
+          "items": [
+            {
+              "title": "Tank-type",
+              "text": "Stores and heats a tank of water so it's ready when you turn on the tap. It's the familiar choice, and it fits the setup most homes already have."
+            },
+            {
+              "title": "Tankless",
+              "text": "Heats water as you use it instead of storing it. It can cost more to install, and your home may need venting or gas line changes, so we look at the house first."
+            },
+            {
+              "title": "Brands",
+              "text": "Bradford White is our preferred brand. We also install AO Smith and Navien tankless water heaters."
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Before You Call",
+          "body": [
+            "If you can do it safely, shut off the cold water supply to the heater. Look around the base and the pipes for where the water is coming from, and take a photo or two.",
+            "Check the label for the brand and age, and tell us when you call. If you smell gas, leave the house and call your gas company before anything else."
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Questions Before You Call",
+          "items": [
+            {
+              "q": "Does it cost anything to get a quote?",
+              "a": "No, quotes are free. Tell us what you see and we'll tell you what we think."
+            },
+            {
+              "q": "Which brands do you install?",
+              "a": "Bradford White is our preferred brand. We also install AO Smith and Navien tankless water heaters, and we repair and maintain most brands."
+            },
+            {
+              "q": "Do you remove the old water heater?",
+              "a": "Ask when you call, and ask for it to be written into the quote. You should know what the price covers before the work starts."
+            },
+            {
+              "q": "How long does a replacement take?",
+              "a": "It depends on the heater and the house. Tell us what you have and we'll tell you what to expect, and ask for the time window on the phone."
+            },
+            {
+              "q": "Can you come today?",
+              "a": "Call and ask. The office is open Monday to Friday, 7:30 AM to 4:30 PM, so call early in the day and we'll work out a time."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Call Creekmore Plumbing",
+          "text": "If your water heater is leaking or not heating, call (316) 264-1342. Tell us what you see, and hear what we think and what the quote covers before you decide anything."
+        }
+      ]
+    },
+    {
+      "role": "service",
+      "route": "/toilet-repair-wichita-ks/",
+      "navLabel": "Toilet Repair",
+      "keyword": "toilet repair wichita ks",
+      "seo": {
+        "title": "Toilet Repair in Wichita, KS | Creekmore Plumbing",
+        "description": "Toilet repair and installation in Wichita, KS. Any brand, old or new, including ADA toilets. Free quotes. Call (316) 264-1342."
+      },
+      "hero": {
+        "eyebrow": "Toilets, Wichita",
+        "h1": "Toilet Repair in Wichita, KS — Creekmore Plumbing",
+        "sub": "A toilet that runs, leaks at the base or won't flush right. Call us. We repair and install toilets of any brand, old or new, and the quote is free. Call (316) 264-1342.",
+        "primaryCta": {
+          "label": "Call (316) 264-1342",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Get a Free Quote",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "fixture",
+          "alt": "White toilet in a clean Wichita bathroom with a tile floor",
+          "brief": "plumbing pool: fixture"
+        }
+      },
+      "sections": [
+        {
+          "type": "review",
+          "quote": "Creekmore is beyond excellent. When I was having a commode replaced, Creekmore unboxed it and found a small flaw in the base. I would have never noticed it, but he did. He wouldn't install it. Boxed it back up and drove to get a new one. … I got the feeling that this plumber was extraordinarily detailed and precise about the entire installation.",
+          "name": "Blake B."
+        },
+        {
+          "type": "split",
+          "heading": "What Happens When You Call About Your Toilet",
+          "body": [
+            "Tell us what the toilet is doing: running, leaking at the base, rocking, clogging, slow to fill or not flushing right. We tell you what we think it is.",
+            "A technician looks at the toilet, finds what's wrong and tells you in plain words. You get a free quote, and you know whether it's a repair or a replacement before the work starts.",
+            "If you'd rather not guess, a photo of the base and the tank helps when you call."
+          ],
+          "imageSide": "right",
+          "image": {
+            "slot": "leak",
+            "alt": "Water on a bathroom floor around the base of a toilet",
+            "brief": "plumbing pool: leak"
+          }
+        },
+        {
+          "type": "prose",
+          "heading": "What Usually Goes Wrong With a Toilet",
+          "body": [
+            "Most toilet problems come down to a short list of parts."
+          ],
+          "items": [
+            {
+              "title": "A toilet that keeps running",
+              "text": "Usually the flapper or the fill valve inside the tank. They're small parts, and a running toilet wastes water all day."
+            },
+            {
+              "title": "Water at the base",
+              "text": "A worn wax ring or loose bolts can let water out at the floor. It can leak slowly and damage the floor before you see it, so don't wait."
+            },
+            {
+              "title": "A weak or incomplete flush",
+              "text": "Often a partial clog, or a tank that isn't filling the way it should."
+            },
+            {
+              "title": "A toilet that rocks",
+              "text": "A loose toilet is a seal problem waiting to happen. It should sit solid on the floor."
+            },
+            {
+              "title": "A crack in the bowl or tank",
+              "text": "A cracked fixture leaks, and it isn't something to patch. That one is a replacement."
+            }
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "They came out replaced my toilet and did the plumbing on my copper farmstye sink! Super professional!",
+          "name": "Louis S."
+        },
+        {
+          "type": "split",
+          "heading": "Clogs and Slow Drains",
+          "body": [
+            "A toilet that clogs once is a plunger problem. A toilet that clogs again and again may have a blockage further down the line, and plunging harder won't fix that.",
+            "Tell us how often it happens and whether other drains in the house are slow. That tells us where to look."
+          ],
+          "imageSide": "left",
+          "image": {
+            "slot": "drain",
+            "alt": "Floor drain and plumbing cleanout in a basement",
+            "brief": "plumbing pool: drain"
+          }
+        },
+        {
+          "type": "prose",
+          "heading": "Repair or Replace?",
+          "body": [
+            "Here's a rule you can check. If it's a flapper, a fill valve or a wax ring, repair is the answer, and it costs far less than a new toilet.",
+            "If the bowl or tank is cracked, or the toilet has needed repair after repair, a new one is usually the better use of your money.",
+            "We tell you which side of the line you're on, and the quote is free either way."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Installing a New Toilet",
+          "body": [
+            "We install toilets of any brand, old or new, so you can pick the one you want, or have us work on the one you've got.",
+            "ADA toilets sit higher, which helps if getting up and down is hard. We install those too."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Toilets in Older Wichita Homes",
+          "body": [
+            "Older toilets and older bathrooms come with older parts: shutoff valves that won't turn, supply lines that have hardened, a floor that needs a look once the toilet comes up.",
+            "We work on any brand, old or new. If we find something behind the toilet that changes the job, you'll hear about it before the work goes further."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Before You Call",
+          "body": [
+            "If a toilet is overflowing or leaking, close the shutoff valve on the wall behind it by turning it clockwise. Mop up so water doesn't reach the floor underneath.",
+            "If you can't find the valve, shut off the main water to the house and call us."
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Questions Before You Call",
+          "items": [
+            {
+              "q": "Does it cost anything to get a quote?",
+              "a": "No, quotes are free. Tell us what the toilet is doing and we'll tell you what we think."
+            },
+            {
+              "q": "Do you work on older toilets?",
+              "a": "Yes. We can work on any brand, old or new."
+            },
+            {
+              "q": "Do you install ADA toilets?",
+              "a": "Yes. We repair and install toilets, ADA toilets included."
+            },
+            {
+              "q": "What will it cost?",
+              "a": "A quote is free. We don't print prices on this page, because they depend on the toilet and the floor under it. Call and describe what you see."
+            },
+            {
+              "q": "Can you come today?",
+              "a": "Call and ask. We're open Monday to Friday, 7:30 AM to 4:30 PM, and we'll say when a technician can get to you."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Call Creekmore Plumbing",
+          "text": "If your toilet is running, leaking or not flushing, call (316) 264-1342. Tell us what it's doing, and hear what we think and what the quote covers before you decide anything."
+        }
+      ]
+    },
+    {
+      "role": "contact",
+      "route": "/contact/",
+      "navLabel": "Contact",
+      "keyword": "contact creekmore plumbing wichita ks",
+      "seo": {
+        "title": "Contact Creekmore Plumbing | Wichita, KS",
+        "description": "Call Creekmore Plumbing at (316) 264-1342 or ask for a free quote. 440 South Pattie Street, Wichita, KS 67211."
+      },
+      "hero": {
+        "eyebrow": "Contact Creekmore Plumbing",
+        "h1": "Contact Creekmore Plumbing",
+        "sub": "If water is running, call. Tell us what you see and where your shutoff is, and we'll tell you what we think. Quotes are free.",
+        "primaryCta": {
+          "label": "Call (316) 264-1342",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Get a Free Quote",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "contact-hero",
+          "alt": "Creekmore Plumbing service truck parked outside a Wichita home",
+          "brief": "plumbing pool: contact-hero"
+        }
+      },
+      "sections": [
+        {
+          "type": "prose",
+          "heading": "Call Us",
+          "body": [
+            "(316) 264-1342",
+            "Call and describe what's going on. The quote is free, and you can ask us anything before you decide."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Send a Request",
+          "body": [
+            "Not a good time to talk? Use Get a Free Quote and tell us what you need. Include your name, a phone number, the address of the house and a few words about what's wrong."
+          ]
+        },
+        {
+          "type": "split",
+          "heading": "What to Have Ready",
+          "list": [
+            "Where the water is coming from, or what the fixture is doing.",
+            "Where your main shutoff is, and whether you've closed it.",
+            "What it is: a water heater, a toilet, a faucet, a line outside. Add the brand and age if you know.",
+            "A photo or two, if you can take them safely."
+          ],
+          "imageSide": "right",
+          "image": {
+            "slot": "fixture",
+            "alt": "Homeowner pointing out a leaking fixture to a plumber",
+            "brief": "plumbing pool: fixture"
+          }
+        },
+        {
+          "type": "prose",
+          "heading": "Hours and Address",
+          "body": [
+            "**Hours.** Monday to Friday, 7:30 AM to 4:30 PM.",
+            "**Address.** 440 South Pattie Street, Wichita, KS 67211.",
+            "**Area.** We work in Wichita. Call and tell us where you are."
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Call Creekmore Plumbing",
+          "text": "Tell us what's wrong, and hear what we think and what the quote covers before you decide anything."
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "about": "Creekmore Plumbing is a third generation, family owned and operated plumbing business at 440 South Pattie Street in Wichita. We repair and replace water heaters and toilets, work on water lines, test backflow devices and fit water softeners.",
+    "why": [
+      "Third generation family owned",
+      "Free quotes",
+      "Hand digging at the foundation",
+      "Tank and tankless water heaters"
+    ]
+  },
+  "strategy": {
+    "whyHeading": "Why we built this site",
+    "why": [
+      "Your site is two pages, and every service sits in one long column on the homepage. The headline, “Reliable local plumbers you can trust,” doesn't say Wichita or name a service, so Google can't tell what you want to be found for. Water heaters, toilets, water lines and backflow all share it.",
+      "Your reviews are your best asset, and your site shows none. “See What Our Customers Are Saying About Creekmore Plumbing!” sits over a blank space. On Google, Richard W. wrote that “it is family owned and has been around Wichita for years.” That belongs on your homepage.",
+      "So the demo tells one story on every page: a third generation family plumber who explains the problem and the most cost-effective fix. It opens with plumber in Wichita, KS, and gives water heater replacement and toilet repair a page each."
+    ],
+    "cardsHeading": "Be the Plumber People Find on Google",
+    "cardsIntro": "Each card is one page of the demo.",
+    "cards": [
+      {
+        "route": "/home/",
+        "title": "Homepage",
+        "why": "Where Google learns who you are and where you work.",
+        "problems": [
+          "Your headline says “Reliable local plumbers you can trust,” with no Wichita, so Google can't place you.",
+          "Your reviews section shows a heading and no reviews, and the gallery's Video and Instagram sections are blank too."
+        ],
+        "fixes": [
+          "A headline that says plumber in Wichita, KS, right at the top.",
+          "Real customer reviews on the page, beside the story they prove."
+        ]
+      },
+      {
+        "route": "/water-heater-replacement-wichita-ks/",
+        "title": "Water Heater Replacement",
+        "why": "When the water heater quits, people call the first plumber they find.",
+        "problems": [
+          "Water heaters are one block of text on your homepage, so “water heater replacement Wichita KS” has no page built for it.",
+          "Tank-type, tankless and your brands (Bradford White, AO Smith, Navien) share a single paragraph."
+        ],
+        "fixes": [
+          "A page for water heater replacement in Wichita, KS, covering the signs, repair or replace, and tank or tankless.",
+          "Your brands and what you repair stated plainly."
+        ],
+        "alsoAdd": "Pages for Water Heater Repair, Water Service Lines, Backflow Testing and Water Softeners, each built for its own search."
+      },
+      {
+        "route": "/toilet-repair-wichita-ks/",
+        "title": "Toilet Repair",
+        "why": "A running or leaking toilet is a call people make fast.",
+        "problems": [
+          "Toilets get one line on your homepage, so “toilet repair Wichita KS” has nothing built for it.",
+          "ADA toilets and “any brand old or new” are buried in that line."
+        ],
+        "fixes": [
+          "A page for toilet repair in Wichita, KS, with what usually fails and what happens when you call.",
+          "Repair or replace answered on the same page."
+        ]
+      },
+      {
+        "route": "/contact/",
+        "title": "Contact",
+        "why": "Where someone with water on the floor decides to call.",
+        "problems": [
+          "Your form lives on the homepage, so there is no page for “contact Creekmore Plumbing Wichita.”",
+          "On a phone, a cookie banner covers the first screen and your number shows twice at the top."
+        ],
+        "fixes": [
+          "Your address, hours and number together on one page, with what to have ready.",
+          "A request option beside the call button."
+        ]
+      }
+    ],
+    "reportCardHeading": "What great plumbing websites get right, and how yours measures up.",
+    "reportCard": [
+      {
+        "label": "Headline says what you do and where",
+        "status": "Missing"
+      },
+      {
+        "label": "Each money service has its own page",
+        "status": "Missing"
+      },
+      {
+        "label": "Customer reviews shown on the page",
+        "status": "Missing"
+      },
+      {
+        "label": "Site loads every time",
+        "status": "Needs work"
+      },
+      {
+        "label": "Phone number one tap away",
+        "status": "Good"
+      }
+    ],
+    "closing": {
+      "heading": "Want a website like this for your business?",
+      "text": "Your customers already describe the company you are. Book a strategy call with Fluid Frame and we’ll walk you through this demo and what a full build adds."
+    },
+    "confirm": {
+      "heading": "What we'd confirm with you",
+      "intro": "Google and AI tools see different answers about your business in different places. We wrote this demo from your reviews and your site. On a short onboarding call, we'd confirm these so everything says the same thing.",
+      "items": [
+        "Your site says you've served the community since 1948, while a Better Business Bureau listing we saw shows 1962, so which year should every listing use?",
+        "Google lists you as “Creekmore Plumbing-Heating Inc,” while your website says only “Creekmore Plumbing” and lists no heating, so which name and which services should every listing use?",
+        "Your header and contact block use creekmoreph@att.net, while your Get a Free Estimate button uses stevecoleman@creekmoreplumbing.com, so which email should every listing use?"
+      ]
+    },
+    "lead": {
+      "heading": "Why we led with the family plumber, honest fix first",
+      "text": "The scariest moment for a Wichita homeowner is a failing water heater or a leak when they don't know a plumber, and right behind it is being sold the biggest fix. A third generation family business that explains the problem and the most cost-effective fix first answers both. We checked the top Wichita plumbing competitors, and none of them says third generation. Your site says it, so please tell us if we have the family story right.",
+      "showScores": true,
+      "rows": [
+        {
+          "claim": "A third generation family plumber that Wichita families pass down",
+          "score": 16
+        },
+        {
+          "claim": "Explains the problem and the most cost-effective fix",
+          "score": 12
+        },
+        {
+          "claim": "Directional drilling and hand digging to limit yard damage",
+          "score": 12
+        }
+      ]
+    }
+  }
+}
