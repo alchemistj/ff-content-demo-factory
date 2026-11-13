@@ -111,6 +111,18 @@
       "pulledAt": "2026-11-09T17:53:39.817Z"
     },
     {
+      "slug": "brockmeyer-electric-wichita",
+      "name": "Brockmeyer Inc. Electrical Contractor",
+      "placeId": "ChIJsWcGYpHjuocRGEOB-6sdA_E",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 24,
+        "withText": 22,
+        "ratingOnly": 2
+      },
+      "pulledAt": "2026-11-13T21:03:41.845Z"
+    },
+    {
       "slug": "brown-professional-services",
       "name": "Brown Professional Services, LLC",
       "placeId": "ChIJPfCJaSdkz4cR-vIBd1Enuw4",
