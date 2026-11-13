@@ -1,0 +1,466 @@
+{
+  "kind": "google-review-pull",
+  "version": 1,
+  "slug": "brand-plumbing-wichita",
+  "place": {
+    "name": "Brand Plumbing, Inc.",
+    "placeId": "ChIJNRPYBzDnuocREE2GtSqw8iU",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Brand%20Plumbing%2C%20Inc.&query_place_id=ChIJNRPYBzDnuocREE2GtSqw8iU",
+    "address": "2418 S Hoover Rd, Wichita, KS 67215",
+    "phone": "(316) 942-2306",
+    "rating": 4.5,
+    "totalReviewCount": 51
+  },
+  "pulledAt": "2026-11-13T21:09:01.355Z",
+  "requestedMax": 60,
+  "reviews": [
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2poak5XYzNRVEZ3UmtRMlEwSnZabGhFWkdrdFRGRRAB",
+      "reviewer": "Ann T.",
+      "rating": 1,
+      "text": "Unacceptable response time: Called after-hours for emergency  at 6:15 pm.  Received a text 14 hours later asking about the call.",
+      "publishedAt": "2026-09-19T14:00:50.762Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2poak5XYzNRVEZ3UmtRMlEwSnZabGhFWkdrdFRGRRAB!2m1!1s0x0:0x25f2b02ab5864d10!3m1!1s2@1:CAIQACodChtycF9oOjhjNWc3QTFwRkQ2Q0JvZlhEZGktTFE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21rdFIybG5aazVLWmxjd09USm1MWEozTmxkSmNsRRAB",
+      "reviewer": "Alireza T.",
+      "rating": 5,
+      "text": "They were courteous and fast. They did great work.",
+      "publishedAt": "2026-05-08T00:14:18.997Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21rdFIybG5aazVLWmxjd09USm1MWEozTmxkSmNsRRAB!2m1!1s0x0:0x25f2b02ab5864d10!3m1!1s2@1:CAIQACodChtycF9oOmktR2lnZk5KZlcwOTJmLXJ3NldJclE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pCTFRISjNhWEJvZHpGUlZrNURVVFZUVGpOWGNHYxAB",
+      "reviewer": "Alan H.",
+      "rating": 5,
+      "text": "Jeff and Nick came out and installed  a new faucet at our office, and they did a great job, were very professional, and pleasant to talk with.  I appreciate their prompt service.  Brand Plumbing is highly recommended. Thanks!",
+      "publishedAt": "2026-03-13T15:44:08.421Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pCTFRISjNhWEJvZHpGUlZrNURVVFZUVGpOWGNHYxAB!2m1!1s0x0:0x25f2b02ab5864d10!3m1!1s2@1:CAIQACodChtycF9oOjBLTHJ3aXBodzFRVk5DUTVTTjNXcGc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21KRFJHUmpOMVJuT0hObU9TMUJhWFZRWlhSaU9FRRAB",
+      "reviewer": "Kathy B.",
+      "rating": 5,
+      "text": "We had our hot water heater go out on a Friday, with a guest arriving that day to spend the night. They were so very responsive and able to replace it same day!  I considered their price as fair and reasonable too. Thanks for great service!",
+      "publishedAt": "2026-02-23T03:02:06.812Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21KRFJHUmpOMVJuT0hObU9TMUJhWFZRWlhSaU9FRRAB!2m1!1s0x0:0x25f2b02ab5864d10!3m1!1s2@1:CAIQACodChtycF9oOmJDRGRjN1RnOHNmOS1BaXVQZXRiOEE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnTUR3cHJ6aUZREAE",
+      "reviewer": "Dubz D.",
+      "rating": 1,
+      "text": "Company about getting over on the elderly. Unnecessary charges. Backhoe to find clean out. Leaking spicket won't warranty or fix",
+      "publishedAt": "2025-03-25T15:24:18.628Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTUR3cHJ6aUZREAE!2m1!1s0x0:0x25f2b02ab5864d10!3m1!1s2@1:CIHM0ogKEICAgMDwprziFQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnTURRbV9hczFBRRAB",
+      "reviewer": "Leah P.",
+      "rating": 4,
+      "text": "I had Adam and Justin at my  home. Had a leak related to my washer drain.  It was snaked one morning. I came home from work did a load of laundry and it was still leaking.  They came back the next morning and had to do some plumbing rework. I was charged 2 service calls and that would be the only reason I did not give 5 stars.  My thought?  It was alllll the same issue. I could same more however in speaking with the office 50% was knocked off and I paid in full.  I did not feel I should be charged for a second service call re: same issue.  I will end in positivity:  Adam and Justin were a great crew.  They cleaned up after themselves. Were respectful. Also, resolved a shower plumbing issue for me 2 days later, at my request. Loved the result of their shower work!!!! I was referred by a friend to use Brand Plumbing.  Would I use them again? Sure!  They were prompt, on time, easy to schedule with my crazy work hours....I would definitely recommend.",
+      "publishedAt": "2025-03-14T13:13:29.021Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTURRbV9hczFBRRAB!2m1!1s0x0:0x25f2b02ab5864d10!3m1!1s2@1:CIHM0ogKEICAgMDQm_as1AE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnTURBdTU2aG1BRRAB",
+      "reviewer": "gavin M.",
+      "rating": 5,
+      "text": "This is by far the best plumbing company to use here in Wichita. They are booked up for a reason: they do a great job for a great price. They took the initiative to keep in touch with me on availability because I had a slighty urgent problem and we were able to have service way sooner than expected. They truly work for you!",
+      "publishedAt": "2025-02-12T05:04:15.260Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTURBdTU2aG1BRRAB!2m1!1s0x0:0x25f2b02ab5864d10!3m1!1s2@1:CIHM0ogKEICAgMDAu56hmAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURYXy1uNl9nRRAB",
+      "reviewer": "Jennifer L.",
+      "rating": 5,
+      "text": "We had to have them come out for two separate issues in a short span of time. Each time they were courteous and efficient. The second trip was a more puzzling issue and I felt they took the time to figure out the problem, went through their own troubleshooting steps and resolved it.",
+      "publishedAt": "2024-11-01T15:36:46.087Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURYXy1uNl9nRRAB!2m1!1s0x0:0x25f2b02ab5864d10!3m1!1s2@1:CIHM0ogKEICAgIDX_-n6_gE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURYNW9pZkZBEAE",
+      "reviewer": "Alex L.",
+      "rating": 5,
+      "text": "Brand Plumbing is trustworthy, and I can always count on them for honest service.",
+      "publishedAt": "2024-10-26T20:35:47.977Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURYNW9pZkZBEAE!2m1!1s0x0:0x25f2b02ab5864d10!3m1!1s2@1:CIHM0ogKEICAgIDX5oifFA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURuMHRpM1dBEAE",
+      "reviewer": "Teresa F.",
+      "rating": 5,
+      "text": "Called on Thursday as our hot water heater was broken down and they were here Friday morning<br>Awesome!! We are so happy to have this company for all of our plumbing needs👏🏼",
+      "publishedAt": "2024-10-04T17:43:52.170Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURuMHRpM1dBEAE!2m1!1s0x0:0x25f2b02ab5864d10!3m1!1s2@1:CIHM0ogKEICAgIDn0ti3WA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURMdHIzS0R3EAE",
+      "reviewer": "ICT J.",
+      "rating": 5,
+      "text": "It isn’t often that you are in an emergency situation. But I was in an emergency. I spoke with Mark around 9 o’clock this morning and his people came and left and it’s now 11 o’clock. The professionalism of this company and its people has been one of the best experiences from the week with losing my refrigeration.",
+      "publishedAt": "2024-06-27T16:12:35.750Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURMdHIzS0R3EAE!2m1!1s0x0:0x25f2b02ab5864d10!3m1!1s2@1:CIHM0ogKEICAgIDLtr3KDw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUREMHRHYmVBEAE",
+      "reviewer": "Donna M.",
+      "rating": 5,
+      "text": "Both the guys who came were so nice, especially since we tried to fix it first with Liquid Plumber! Excellent service!",
+      "publishedAt": "2024-04-07T14:51:25.632Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUREMHRHYmVBEAE!2m1!1s0x0:0x25f2b02ab5864d10!3m1!1s2@1:CIHM0ogKEICAgIDD0tGbeA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNkMEtHNTh3RRAB",
+      "reviewer": "kacy D.",
+      "rating": 5,
+      "text": "Very trust worthy and does an amazing job and gets things done in a timely manner! Always our go to for our plumbing needs!",
+      "publishedAt": "2024-02-10T01:52:52.567Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNkMEtHNTh3RRAB!2m1!1s0x0:0x25f2b02ab5864d10!3m1!1s2@1:CIHM0ogKEICAgICd0KG58wE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUR4X2REVzZnRRAB",
+      "reviewer": "Tammy D.",
+      "rating": 5,
+      "text": "Excellent plumbing company gets the job done reasonable rates and is there when you need them",
+      "publishedAt": "2023-06-14T06:19:15.025Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR4X2REVzZnRRAB!2m1!1s0x0:0x25f2b02ab5864d10!3m1!1s2@1:CIHM0ogKEICAgIDx_dDW6gE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNCMmJpTG9nRRAB",
+      "reviewer": "Julie L.",
+      "rating": 5,
+      "text": "Great service!  I have used them for years.  Very kind and knowledgeable.",
+      "publishedAt": "2022-12-29T19:08:06.299Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNCMmJpTG9nRRAB!2m1!1s0x0:0x25f2b02ab5864d10!3m1!1s2@1:CIHM0ogKEICAgICB2biLogE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUQteS1PTUhnEAE",
+      "reviewer": "Jerry S.",
+      "rating": 5,
+      "text": "Great company, excellent service.",
+      "publishedAt": "2022-12-09T17:10:38.983Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQteS1PTUhnEAE!2m1!1s0x0:0x25f2b02ab5864d10!3m1!1s2@1:CIHM0ogKEICAgID-y-OMHg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURlMjZYal9nRRAB",
+      "reviewer": "Amy K.",
+      "rating": 5,
+      "text": "These guys are great! They show up on time! Friendly, knowledgeable and efficient. Never disappointed!",
+      "publishedAt": "2022-10-20T10:56:45.797Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURlMjZYal9nRRAB!2m1!1s0x0:0x25f2b02ab5864d10!3m1!1s2@1:CIHM0ogKEICAgIDe26Xj_gE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUMyMjUzRGJ3EAE",
+      "reviewer": "Alex O.",
+      "rating": 5,
+      "text": "Great company i deliver supplies to them on a weekly basis and would recommend this company to take care of any of you plumbing needs.",
+      "publishedAt": "2022-04-28T17:52:55.161Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMyMjUzRGJ3EAE!2m1!1s0x0:0x25f2b02ab5864d10!3m1!1s2@1:CIHM0ogKEICAgIC2253Dbw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURHdF9HUm5RRRAB",
+      "reviewer": "Mark L.",
+      "rating": 4,
+      "text": "Quick service",
+      "publishedAt": "2021-12-12T15:39:02.268Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURHdF9HUm5RRRAB!2m1!1s0x0:0x25f2b02ab5864d10!3m1!1s2@1:CIHM0ogKEICAgIDGt_GRnQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNhLUw3UEhnEAE",
+      "reviewer": "Janet R.",
+      "rating": 4,
+      "text": "They took care of the front spicket after the terrible winter we had.  So kind and got her quickly.",
+      "publishedAt": "2021-07-23T19:19:34.392Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNhLUw3UEhnEAE!2m1!1s0x0:0x25f2b02ab5864d10!3m1!1s2@1:CIHM0ogKEICAgICa-L7PHg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNxMnRYTm5nRRAB",
+      "reviewer": "Rhonda D.",
+      "rating": 5,
+      "text": "These guys really know their stuff!",
+      "publishedAt": "2021-06-03T19:24:56.047Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNxMnRYTm5nRRAB!2m1!1s0x0:0x25f2b02ab5864d10!3m1!1s2@1:CIHM0ogKEICAgICq2tXNngE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURTbDhHRHp3RRAB",
+      "reviewer": "Melissa T.",
+      "rating": 5,
+      "text": "They came out and gave me a estimate very friendly and professional",
+      "publishedAt": "2021-01-12T11:22:31.065Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURTbDhHRHp3RRAB!2m1!1s0x0:0x25f2b02ab5864d10!3m1!1s2@1:CIHM0ogKEICAgIDSl8GDzwE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNpeWRhNG9RRRAB",
+      "reviewer": "Tina A.",
+      "rating": 2,
+      "text": "They were asked to install a gas line, hook up washer and dryer and repair toilet tank plumbing. They stated my sewer line was clogged only after they walked thru my home with wet shoes and a shovel.<br>They also forget to light my water heater. Unable to reach anyone to light my hot water tank.<br>Thank God it had an igniter.<br>Very disappointed.",
+      "publishedAt": "2020-11-07T01:32:39.944Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNpeWRhNG9RRRAB!2m1!1s0x0:0x25f2b02ab5864d10!3m1!1s2@1:CIHM0ogKEICAgICiyda4oQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNjMGV2VlZBEAE",
+      "reviewer": "Shawn B.",
+      "rating": 5,
+      "text": "Great place for all your plumbing needs.",
+      "publishedAt": "2020-05-21T12:50:47.071Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNjMGV2VlZBEAE!2m1!1s0x0:0x25f2b02ab5864d10!3m1!1s2@1:CIHM0ogKEICAgICc0evVVA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNjazhubFFnEAE",
+      "reviewer": "Nancy S.",
+      "rating": 1,
+      "text": "When installing the water into the new house, they were off measurements by a foot.  This messed up the placement of the walls, and the shower placement. Cannot be fixed because of the concrete floor.",
+      "publishedAt": "2020-04-01T18:03:49.094Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNjazhubFFnEAE!2m1!1s0x0:0x25f2b02ab5864d10!3m1!1s2@1:CIHM0ogKEICAgICck8nlQg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURzdW9LXzdBRRAB",
+      "reviewer": "Justin R.",
+      "rating": 5,
+      "text": "Super cool guy very friendly and 100% honest! Would definitely recommend and will us them again",
+      "publishedAt": "2020-03-01T18:09:19.526Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURzdW9LXzdBRRAB!2m1!1s0x0:0x25f2b02ab5864d10!3m1!1s2@1:CIHM0ogKEICAgIDsuoK_7AE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNVMWVfTnB3RRAB",
+      "reviewer": "Mary C.",
+      "rating": 5,
+      "text": "We remodeled our master shower and it was a mess. Called Brand Plumbing and they came immediately and fixed another's screw up and even came up with solutions we did not know to ask.  Honest company would 100% recommend.",
+      "publishedAt": "2019-07-31T02:13:05.751Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNVMWVfTnB3RRAB!2m1!1s0x0:0x25f2b02ab5864d10!3m1!1s2@1:CIHM0ogKEICAgICU1e_NpwE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNvanFmS1NREAE",
+      "reviewer": "michelle H.",
+      "rating": 5,
+      "text": "They have been doing my plumbing since moving here 12 years ago.  They are very friendly, knowledgeable, and reasonably priced.  They stand by their work.",
+      "publishedAt": "2019-02-15T17:14:09.161Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNvanFmS1NREAE!2m1!1s0x0:0x25f2b02ab5864d10!3m1!1s2@1:CIHM0ogKEICAgICojqfKSQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNBb09xNmF3EAE",
+      "reviewer": "Clint D.",
+      "rating": 5,
+      "text": "Brand plumbing is amazing.  Just had what I thought was a complex job, busted outdoor faucet, two running and leaking toilets...they had it done in less than two hours, but it all looks like new.  This is the latest in many good experiences with these guys.  Worth every penny. Super courteous and professional, every time.",
+      "publishedAt": "2018-06-15T15:17:49.538Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBb09xNmF3EAE!2m1!1s0x0:0x25f2b02ab5864d10!3m1!1s2@1:CIHM0ogKEICAgICAoOq6aw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURndGJlSkpBEAE",
+      "reviewer": "Sherri P.",
+      "rating": 5,
+      "text": "Treated us great! Staff was so friendly and professional.",
+      "publishedAt": "2018-04-21T13:29:50.815Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURndGJlSkpBEAE!2m1!1s0x0:0x25f2b02ab5864d10!3m1!1s2@1:CIHM0ogKEICAgIDgtbeJJA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNBMXF1WHlnRRAB",
+      "reviewer": "Samantha M.",
+      "rating": 5,
+      "text": "Best plumbing company I've ever used!",
+      "publishedAt": "2018-03-28T17:12:37.483Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNBMXF1WHlnRRAB!2m1!1s0x0:0x25f2b02ab5864d10!3m1!1s2@1:CIHM0ogKEICAgICA1quXygE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNRLVp6ZWJnEAE",
+      "reviewer": "Gabriel G.",
+      "rating": 5,
+      "text": "Have used brand for new construction on my property. Very happy with their service and professionalism. Will definitely be a return customer if I need anything again!",
+      "publishedAt": "2018-03-16T15:57:29.615Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNRLVp6ZWJnEAE!2m1!1s0x0:0x25f2b02ab5864d10!3m1!1s2@1:CIHM0ogKEICAgICQ-Zzebg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNROE9paG5BRRAB",
+      "reviewer": "Joyce S.",
+      "rating": 5,
+      "text": "They are the best of the best.  We have used them for years and we have always been pleased.  It's always nice to have someone you can trust.",
+      "publishedAt": "2017-11-16T19:06:15.291Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNROE9paG5BRRAB!2m1!1s0x0:0x25f2b02ab5864d10!3m1!1s2@1:CIHM0ogKEICAgICQ8OihnAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURBN1AzV3JBRRAB",
+      "reviewer": "joe L.",
+      "rating": 5,
+      "text": "Good people",
+      "publishedAt": "2016-07-30T21:02:51.123Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURBN1AzV3JBRRAB!2m1!1s0x0:0x25f2b02ab5864d10!3m1!1s2@1:CIHM0ogKEICAgIDA7P3WrAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURnM1BEeGFREAE",
+      "reviewer": "Ryan B.",
+      "rating": 5,
+      "text": "I have had several toilet issues mostly due to my young kids.   It's frustrating how well toys and hair clips plug it up.   I called Brand Plumbing.  They were on time, professional, and a joy to work with.",
+      "publishedAt": "2016-04-29T14:24:01.336Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURnM1BEeGFREAE!2m1!1s0x0:0x25f2b02ab5864d10!3m1!1s2@1:CIHM0ogKEICAgIDg3PDxaQ%7C%7C?hl=en-US",
+      "language": "en"
+    }
+  ],
+  "ratingOnly": [
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURvN0tyR0J3EAE",
+      "reviewer": "Robert F.",
+      "rating": 5,
+      "publishedAt": "2025-06-04T19:17:04.122Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURkem9qaXJBRRAB",
+      "reviewer": "DAWN K.",
+      "rating": 5,
+      "publishedAt": "2024-02-23T18:44:11.922Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURadVB6Zm1nRRAB",
+      "reviewer": "John S.",
+      "rating": 5,
+      "publishedAt": "2023-09-24T02:53:03.112Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURwdElmT3l3RRAB",
+      "reviewer": "D. O.",
+      "rating": 5,
+      "publishedAt": "2023-08-17T03:12:12.710Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURlN1BlOGhRRRAB",
+      "reviewer": "Kyle G.",
+      "rating": 5,
+      "publishedAt": "2022-10-04T14:48:07.874Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUQ4bTRUbUZnEAE",
+      "reviewer": "Deb F.",
+      "rating": 3,
+      "publishedAt": "2021-12-19T18:41:38.806Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNtdU9pYzh3RRAB",
+      "reviewer": "Joe S.",
+      "rating": 5,
+      "publishedAt": "2021-12-17T21:14:40.317Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURxdWVxOGtBRRAB",
+      "reviewer": "Janice K.",
+      "rating": 5,
+      "publishedAt": "2021-07-13T17:47:48.972Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUR5LXJua3RBRRAB",
+      "reviewer": "Tanner M.",
+      "rating": 5,
+      "publishedAt": "2021-03-04T22:16:24.010Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNpeEpQU0dBEAE",
+      "reviewer": "Michael L.",
+      "rating": 1,
+      "publishedAt": "2020-10-21T23:24:23.683Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUM4M1lDdERREAE",
+      "reviewer": "Mike S.",
+      "rating": 5,
+      "publishedAt": "2020-07-12T03:24:55.463Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNjbGFER0Z3EAE",
+      "reviewer": "Douglas S.",
+      "rating": 5,
+      "publishedAt": "2020-03-17T21:11:51.613Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURzb3NhbDFBRRAB",
+      "reviewer": "Daniel M.",
+      "rating": 5,
+      "publishedAt": "2020-02-27T22:00:13.198Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUQwdnFualhREAE",
+      "reviewer": "brandon H.",
+      "rating": 5,
+      "publishedAt": "2019-11-06T23:37:19.058Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUQwcU5QMUVBEAE",
+      "reviewer": "Adam",
+      "rating": 5,
+      "publishedAt": "2019-10-20T19:46:56.684Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNvOU1qWDJnRRAB",
+      "reviewer": "Codie D.",
+      "rating": 5,
+      "publishedAt": "2019-02-06T14:12:11.555Z"
+    }
+  ]
+}
