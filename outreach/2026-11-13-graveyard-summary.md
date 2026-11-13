@@ -10,16 +10,16 @@ PRs (all merged): ff-astro-demos #65 (score switch and offer card), #73 (offer-c
 
 | Demo | Strategy page | Homepage | Lead claim | Score | Score box | Offer card | QA (final) |
 |---|---|---|---|---|---|---|---|
-| ICT Roofing v2 | https://ictroofing.websitepreview.fluidframemarketing.com/ | …/home/ | We stay in it when insurance offers less | 20 | off* | no | 12/12 PASS |
-| River City | https://rivercity.websitepreview.fluidframemarketing.com/ | …/home/ | Finds the real cause before quoting, and checks after the crew leaves | 20 | off* | no | 12/12 PASS |
-| Flawless | https://flawless.websitepreview.fluidframemarketing.com/ | …/home/ | Free class 4 upgrade, downspouts and gutter guards included | 20 | off* | no | 12/12 PASS |
-| Douglas Fry | https://douglasfry.websitepreview.fluidframemarketing.com/ | …/home/ | No commissioned salespeople | 20 | off* | no | 12/12 PASS |
-| Air Capital | https://aircapital.websitepreview.fluidframemarketing.com/ | …/home/ | Same day, with the cause and every option explained first | 20 | off* | no | 12/12 PASS |
+| ICT Roofing v2 | https://ictroofing.websitepreview.fluidframemarketing.com/ | …/home/ | We stay in it when insurance offers less | 20 | off | no | 12/12 PASS |
+| River City | https://rivercity.websitepreview.fluidframemarketing.com/ | …/home/ | Finds the real cause before quoting, and checks after the crew leaves | 20 | off | no | 12/12 PASS |
+| Flawless | https://flawless.websitepreview.fluidframemarketing.com/ | …/home/ | Free class 4 upgrade, downspouts and gutter guards included | 20 | off | no | 12/12 PASS |
+| Douglas Fry | https://douglasfry.websitepreview.fluidframemarketing.com/ | …/home/ | No commissioned salespeople | 20 | off | no | 12/12 PASS |
+| Air Capital | https://aircapital.websitepreview.fluidframemarketing.com/ | …/home/ | Same day, with the cause and every option explained first | 20 | off | no | 12/12 PASS |
 | Cook's | https://cooks.websitepreview.fluidframemarketing.com/ | …/home/ | Here fast, and straight about the fix | 15 (below gate) | off | yes: a second opinion before you replace | 12/12 PASS |
 | Dream Makers | https://dreammakers.websitepreview.fluidframemarketing.com/ | …/home/ | Text Nate, and he's there in hours | 15 (below gate) | off | yes: text a photo, get a read before a truck rolls | 12/12 PASS |
-| Integrity v5 (done before tonight) | https://integrity.websitepreview.fluidframemarketing.com/ | …/home/ | The after-hours price, by phone, before anyone drives out | 16 | off* | no | (pilot) |
+| Integrity v5 (done before tonight) | https://integrity.websitepreview.fluidframemarketing.com/ | …/home/ | The after-hours price, by phone, before anyone drives out | 16 | off | no | (pilot) |
 
-\* **The score box is OFF everywhere, which goes against the brief.** The brief asked for it ON for leads of 16 or more. On 11/12, in the build session, the score numbers were removed from the strategy page because they mean nothing to a prospect. The per-demo switch is built (`strategy.lead.showScores`, with the rows already filled in), so turning it on is a one-line change per demo once Josh picks. The pack's variant log has the GHL tags.
+**Score box test (updated about 8:15pm):** Josh reversed "no scores" and asked for a test. The box is ON for ICT, Flawless and Air Capital, and OFF for River City, Douglas Fry and Integrity. Cook's and Dream Makers keep the offer card. (Earlier note: The brief asked for it ON for leads of 16 or more. On 11/12, in the build session, the score numbers were removed from the strategy page because they mean nothing to a prospect. The per-demo switch is built (`strategy.lead.showScores`, with the rows already filled in), so turning it on is a one-line change per demo once Josh picks. The pack's variant log has the GHL tags.)
 
 ## What changed on every demo
 - **A sentiment section:** each demo has a section built on its strongest-feeling review, placed early.

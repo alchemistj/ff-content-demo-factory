@@ -809,7 +809,7 @@
     "lead": {
       "heading": "Why we led with the free class 4 upgrade",
       "text": "After a hailstorm, the fear is paying to put back the same roof, then watching the next storm start it over. A free class 4 upgrade, with downspouts and gutter guards included, answers that directly. We checked the top five Wichita roofers, and none states it as free and included. Please tell us if the terms have changed.",
-      "showScores": false,
+      "showScores": true,
       "rows": [
         {
           "claim": "Free class 4 upgrade, downspouts and gutter guards included",

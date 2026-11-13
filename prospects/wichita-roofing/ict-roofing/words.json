@@ -845,7 +845,7 @@
     "lead": {
       "heading": "Why we led with staying in it when insurance offers less",
       "text": "After hail, the scariest moment is the letter that covers two slopes of a roof that took hail on every slope. Most people can't tell what the adjuster counted, and most roofers take the paperwork as written. We checked the top five Wichita roofers, and none describes pushing back when the offer comes back short. Please tell us if that isn't how you work.",
-      "showScores": false,
+      "showScores": true,
       "rows": [
         {
           "claim": "We stay in it when insurance offers less",

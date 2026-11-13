@@ -734,7 +734,7 @@
     "lead": {
       "heading": "Why we led with same day, explained first",
       "text": "The scariest moment for a Wichita homeowner is a dead AC with someone at home in the heat, and right behind it is being sold a new system they didn't need. Arriving the same day and explaining the cause and every option before any work answers both. We checked the five top Wichita competitors, and none of them states both.",
-      "showScores": false,
+      "showScores": true,
       "rows": [
         {
           "claim": "Same day, with the cause and every option explained before any work",
