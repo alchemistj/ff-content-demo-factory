@@ -4,18 +4,34 @@
     "company": "Stone Electric LLC",
     "demoUrl": "https://stone-electric-llc.lovable.app",
     "previewUrl": "https://stone-electric-llc.demos.fluidframemarketing.com",
-    "realSite": null,
-    "formUrl": null,
+    "realSite": "https://stoneelectricllc.com/",
+    "formUrl": "https://stoneelectricllc.com/contact",
     "frame": null,
-    "builder": null,
-    "fields": [],
-    "captcha": null,
+    "builder": "GoDaddy Website Builder 8",
+    "fields": [
+      {
+        "label": "Name or organization",
+        "type": "text",
+        "required": false
+      },
+      {
+        "label": "Email",
+        "type": "text",
+        "required": true
+      },
+      {
+        "label": "Message",
+        "type": "textarea",
+        "required": false
+      }
+    ],
+    "captcha": "invisible reCAPTCHA (badge hidden; 'This site is protected by reCAPTCHA')",
     "maxLength": null,
-    "blockingFields": [],
+    "blockingFields": null,
     "email": null,
-    "fallback": "Phone (417) 207-8328 (matches the demo and the directory listings). No website found to contact.",
-    "verdict": null,
-    "notes": "Local repo /home/user/stone-electric-llc has no current-site URL: docs/demo-standard/words.md gives the Google Business Profile address only (3595 N 21st St Suite C, Ozark, MO 65721). Web searches (two queries) found no official website. Directory listings (BBB, naicslist, Birdeye) give 3501 N 21st St Ste C, Ozark, MO 65721, phone (417) 207-8328. The owner name Joshua Stone comes only from a third-party data site, unverified. The address differs by one digit between the repo and the directories. No site was visited, so no form was inspected. Needs Josh or a manual check for the real site, e.g. the BBB profile or a Missouri SOS filing."
+    "fallback": "phone (417) 207-8328",
+    "verdict": "auto-maybe",
+    "notes": "Site given by Josh 2026-11-13. The form fields were read from the server HTML (curl). A headless browser got 'upstream request failed' on this site, so the sender's browser may be blocked: confirm in the dry run, and treat it as a hand send if blocked. The same GoDaddy builder as Take A Break, but this form has no required property fields."
   },
   {
     "slug": "stokes-fence-co",
