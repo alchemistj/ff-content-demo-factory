@@ -2,7 +2,7 @@
 
 Hey Doug and Jason,
 
-My daughter and I build websites for service businesses. Your site says you have no commissioned salespeople or project managers, and none of the Wichita roofers we looked at says that. Your reviews show what it means: Jason gets on the roof himself, and one customer wrote that she trusts you after roofers who had taken advantage of her. So we made you a website mockup around it:
+My daughter and I build websites for service businesses. Your site says you have no commissioned salespeople, and none of the Wichita roofers we looked at says that. Your reviews show what it means: Jason gets on the roof himself, and one customer wrote that she trusts you after roofers who had taken advantage of her. So we made you a website mockup around it:
 
 https://douglasfry.websitepreview.fluidframemarketing.com/
 

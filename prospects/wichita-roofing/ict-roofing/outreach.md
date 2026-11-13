@@ -2,7 +2,7 @@
 
 Hey Juan and the ICT team,
 
-My daughter and I build websites for service businesses. Your reviews keep saying you didn't let it go when insurance offered part of a roof: Brady on the roof with the adjuster, the photos and paperwork, an appeal when the first answer was no. Your current site doesn't say any of that, so we made you a website mockup around it:
+My daughter and I build websites for service businesses. Your reviews keep saying you didn't let it go when insurance offered part of a roof: Brady meeting the adjuster, the photos and paperwork, an appeal when the first answer was no. Your current site doesn't say any of that, so we made you a website mockup around it:
 
 https://ictroofing.websitepreview.fluidframemarketing.com/
 

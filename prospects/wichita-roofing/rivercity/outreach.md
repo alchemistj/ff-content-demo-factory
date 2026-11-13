@@ -23,11 +23,11 @@ Fluid Frame Marketing
 
 Hey River City team,
 
-Your reviews say Anthony finds the real leak first, then comes back after the crew leaves. So we made you a website mockup:
+Your reviews say Anthony finds the real leak first, then checks back after the job. So we made you a mockup:
 
 https://rivercity.websitepreview.fluidframemarketing.com/
 
-Note: It'll look better with your logo and images! Lol
+Note: It'll look better with your logo and images.
 
 Your tap-to-call links dial 123-456-7890.
 

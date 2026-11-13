@@ -104,16 +104,22 @@
       },
       "sections": [
         {
+          "type": "prose",
+          "heading": "At 84 Degrees, With 150 Guests Coming",
+          "body": [
+            "Almeta had a wedding reception at her house, and the air conditioner was failing an hour before the guests arrived. She called Nate."
+          ]
+        },
+        {
           "type": "review",
-          "quote": "Nathan is amazing always answers when I text or call him and has fixed any issue I have had. Very reasonably priced as well!",
-          "name": "Mashaela W."
+          "quote": "Yesterday was our wedding reception at our house … by the time it hit 78 I was in a panic as we had about 150 people arriving in an hour and by time I reached 82 I had Nathan on the phone and he was on his way to come save our big special day. By 84°f he was there to help! … They made our night like a dream with nice cold … air blowing again in mins. … The Dream Makers saved the night! Thank you so much!!",
+          "name": "Almeta W."
         },
         {
           "type": "prose",
           "heading": "Sunday Afternoon, and the Vents Are Blowing Warm",
           "body": [
-            "It's 3 on a Sunday in August. Your mom is staying with you this week and says she's fine, but she's been fanning herself for an hour. You've called three companies. Two went to voicemail, and one said Tuesday.",
-            "You don't need the cheapest. You need one person who writes back."
+            "It's 3 on a Sunday in August. Your mom is staying with you this week and says she's fine, but she's been fanning herself for an hour. You've called three companies. Two went to voicemail, and one said Tuesday."
           ]
         },
         {
@@ -121,7 +127,7 @@
           "heading": "Text Nate, and He Writes Back",
           "body": [
             "Most heating and cooling companies put you through a call center or a dispatcher. You explain the problem to one stranger, and a different stranger shows up at your door.",
-            "Here you text or call Nate. Tell him what you see and hear: does the outdoor unit run while the house stays warm, does the furnace click, hum or stay silent? He writes back, and he or a tech from his team comes out. Reviewers say it's often within hours."
+            "Here you text or call Nate. Tell him what you hear: does the outdoor unit run while the house stays warm, does the furnace click or stay silent? He writes back, and he or a tech comes out."
           ],
           "list": [
             "Text or call (316) 871-5085 and Nate answers",
@@ -137,17 +143,9 @@
           }
         },
         {
-          "type": "prose",
-          "heading": "A Company That Knows Your Name",
-          "body": [
-            "Nobody wants to start calling around on a Sunday afternoon. You want to text someone who already knows your name and your unit.",
-            "That's what a few visits with Nate turn into. You stop looking things up, and you just text."
-          ]
-        },
-        {
           "type": "review",
-          "quote": "Nathan has been out to our house a few times … we have just about come to know each other on first name bases and that's something in today's world. … I know Nathan and his company/techs will do whatever in there power to get out to my ASAP to fix whatever issues we maybe having.",
-          "name": "Almeta W."
+          "quote": "Nathan is amazing always answers when I text or call him and has fixed any issue I have had. Very reasonably priced as well!",
+          "name": "Mashaela W."
         },
         {
           "type": "services",
@@ -168,7 +166,7 @@
           "items": [
             {
               "title": "The house won't get below 80",
-              "text": "A Wichita summer works an air conditioner hard, and the usual causes are a failed capacitor or fan motor, a clogged coil or a refrigerant leak. Nate finds the part that failed and replaces it, or finds the leak instead of just adding more refrigerant."
+              "text": "Often a failed capacitor or fan motor, a clogged coil or a refrigerant leak. Nate finds the part that failed and replaces it, or finds the leak instead of just adding more refrigerant."
             },
             {
               "title": "The outdoor unit hums and never starts",
@@ -180,7 +178,7 @@
             },
             {
               "title": "Cooling fades a little more every week",
-              "text": "That points to a slow refrigerant leak, which can take more than one visit to chase down. We stop the leak, explain which part has to be ordered, and keep the system running in the meantime where we can."
+              "text": "That points to a slow refrigerant leak, which can take more than one visit. We explain which part has to be ordered and keep the system running meanwhile where we can."
             },
             {
               "title": "One room never gets comfortable",
@@ -188,7 +186,7 @@
             },
             {
               "title": "The furnace is old and the repairs keep stacking up",
-              "text": "A part replaced two winters running, or a water heater tank rusted at the base, means the unit is wearing out. Nate tells you when a repair still makes sense and when a new furnace or water heater is the better spend."
+              "text": "When a part has been replaced two winters running, Nate tells you whether another repair makes sense or a new furnace is the better spend."
             }
           ],
           "link": {
@@ -224,7 +222,7 @@
         },
         {
           "type": "review",
-          "quote": "Nate I want to start this with a huge, \"Thank You, man!\". Your relationship with your customers is really top class because you are on top of every reply, every question and every texts and you just don't get that kind of customer service anymore. If I could give you 10 stars I would because you made the wife very happy by cleaning up EVERYTHING.",
+          "quote": "Nate I want to start this with a huge, \"Thank You, man!\". Your relationship with your customers is really top class because you are on top of every reply, every question and every texts and you just don't get that kind of customer service anymore. … you made the wife very happy by cleaning up EVERYTHING.",
           "name": "Allen B."
         },
         {
@@ -237,7 +235,7 @@
             },
             {
               "q": "Do I need a whole new system?",
-              "a": "Not always. A capacitor, igniter or motor is a repair. A cracked heat exchanger, a leaking water heater tank, or a second or third failure in a short span points to replacement. Nate explains what he found in plain words."
+              "a": "Not always. A capacitor, igniter or motor is a repair. A second or third failure in a short span may point to replacement. Nate explains what he found in plain words."
             },
             {
               "q": "What will it cost to have you look?",
@@ -311,8 +309,8 @@
           ],
           "image": {
             "slot": "thermostat",
-            "alt": "Hand adjusting a wall thermostat",
-            "brief": "HVAC pool photo: Hand adjusting a wall thermostat"
+            "alt": "Ceiling air vent in a quiet Wichita home",
+            "brief": "HVAC pool: airflow-vent (replaces the blank-screen thermostat)"
           }
         },
         {
@@ -324,38 +322,28 @@
           "type": "prose",
           "heading": "What You Notice, and What It Means",
           "body": [
-            "Wichita houses run a heater hard from November to March, and a cold snap is when a worn one finally quits. Before you call, check the filter and the thermostat, and look at the base of the water heater for water."
+            "Wichita houses run a heater hard from November to March. Before you call, check the filter and the thermostat."
           ],
           "items": [
             {
               "title": "Cold rooms and uneven heat",
-              "text": "A blower that's wearing out, a clogged filter or leaking ducts can cause it, and so can a furnace that can't keep up any more. We look at the blower, the filter and the ducts first, and tell you which one it is."
+              "text": "A wearing blower, a clogged filter or leaking ducts can cause it. We look at the blower, the filter and the ducts first, and tell you which one it is."
             },
             {
               "title": "A furnace that starts and stops",
-              "text": "It's short-cycling: often too big for the house, so it heats fast and shuts off, or it's overheating from a dirty filter or a failing part. We find which, and replace the part or size a new furnace to the house."
-            },
-            {
-              "title": "A cold shower halfway through",
-              "text": "Tanks collect sediment, especially in hard water, and it covers the bottom of the tank and the heating element or burner. We tell you whether it's the element, the burner or the tank itself."
-            },
-            {
-              "title": "Water around the base of the tank",
-              "text": "The tank is leaking from the inside, and a leaking tank can't be repaired. We install a new water heater and take the old one out."
+              "text": "Often the furnace is too big for the house, or overheating from a dirty filter or a failing part. We find which."
             }
           ],
           "tail": [
-            "If you're not sure which unit is the problem, call and tell us what's happening."
+            "If you're not sure what's wrong, call and tell us what's happening."
           ]
         },
         {
           "type": "prose",
           "heading": "Repair or Replace",
           "body": [
-            "Replace when the heat exchanger has cracked, because that part can't be fixed safely. Replace when a water heater tank is leaking.",
-            "Replace when the unit is old and the repairs are stacking up. A rule of thumb: if a repair costs a big share of a new unit, the money is better spent on the new one.",
-            "Repair when one part has failed and the rest of the unit is in decent shape. An igniter, a blower motor or a thermostat can all be swapped without replacing the furnace.",
-            "Nate will tell you which one yours is. We also repair what's in your house, so a repair is an answer you can hear from us."
+            "Replace when the unit is old and the repairs are stacking up, or when a part like the heat exchanger has failed. Repair when one part has failed and the rest is in decent shape.",
+            "An igniter, a blower motor or a thermostat can all be swapped without replacing the furnace. Nate will tell you which one yours is, and we repair what's in your house too, so a repair is an answer you can hear from us."
           ]
         },
         {
@@ -363,8 +351,7 @@
           "heading": "What We Install",
           "list": [
             "**Furnaces,** as replacements for units that have failed or aged out.",
-            "**Water heaters,** including heat pump (hybrid) models, which pull heat from the surrounding air to heat the water and cost less to run than a standard electric tank.",
-            "**Heat pumps,** for homes that want heating and cooling from one system."
+            "**Water heaters,** replaced and installed."
           ],
           "body": [
             "The job starts with what's in the house now: where the old unit sits, how it's vented and what it's connected to."
@@ -372,12 +359,10 @@
         },
         {
           "type": "prose",
-          "heading": "Why the Install Matters",
+          "heading": "After the Install",
           "body": [
-            "A good heater installed badly is still a bad heater. A furnace that's too big short-cycles and wears out early. One that's too small never catches up on a January night.",
-            "Sizing comes from the house: its square footage, its insulation, its windows and its ducts. The old unit's size is only a starting point, because the house may have changed since it went in.",
-            "Venting is the part people don't see. A gas furnace or water heater has to send combustion gases outside, and a poor connection can put them in the house.",
-            "That's why a gas appliance is worth getting installed by someone you can call back. If something smells or sounds wrong afterward, you want to reach the person who set it up."
+            "A furnace is only as good as its install. We look at where the old unit sits, how it's vented and what it's connected to, then set the new one in.",
+            "If something smells or sounds wrong afterward, you want to reach the person who set it up. Here that's Nate: call or text and he answers."
           ]
         },
         {
@@ -417,6 +402,22 @@
             {
               "q": "Can I text you about it?",
               "a": "Yes. Text what the heater is doing, and Nate will answer."
+            },
+            {
+              "q": "Can I get a new furnace if the old one just died?",
+              "a": "Call and say so. Tell Nate if anyone at home needs heat urgently, such as kids or someone with health issues, and he'll plan around it."
+            },
+            {
+              "q": "Do I need to be home?",
+              "a": "Someone should be there to show where the unit is and clear a path to it. Text Nate your schedule and he'll tell you what works."
+            },
+            {
+              "q": "What if I'm not sure it needs replacing?",
+              "a": "Call or text and describe what the furnace is doing. Nate will tell you whether it sounds like a repair or a new unit before anyone commits to anything."
+            },
+            {
+              "q": "Can you take the old unit out?",
+              "a": "Text Nate what's in the house now and ask. The job starts with the old unit, so tell him where it sits and what it's connected to."
             }
           ]
         },
@@ -541,16 +542,6 @@
           "name": "David M."
         },
         {
-          "type": "prose",
-          "heading": "Maintenance That Catches It Early",
-          "body": [
-            "Most parts don't fail without warning. Filters clog, bearings get noisy, coils collect dirt, and the system works harder until something gives.",
-            "Cottonwood fluff and yard dust can coat the outdoor coil by midsummer, and a dirty coil makes the system run longer and hotter. A clean filter, a clear space around the outdoor unit and an ear for new noises catch most trouble early.",
-            "We do maintenance on heating and cooling equipment, so small problems are found before they become a dead system on the hottest or coldest day of the year.",
-            "In winter, the same goes for the furnace: a clean filter, clear vents and a look at the flame. A steady blue flame is what you want to see. Yellow or flickering is worth a call."
-          ]
-        },
-        {
           "type": "faq",
           "heading": "Questions Before You Call",
           "items": [
@@ -613,8 +604,8 @@
         },
         "image": {
           "slot": "contact-hero",
-          "alt": "Hand adjusting a wall thermostat",
-          "brief": "HVAC pool r1: thermostat"
+          "alt": "Brick ranch home in Wichita",
+          "brief": "HVAC pool r1: contact-hero (reused from Cook's; replaces the blank-screen thermostat)"
         },
         "sub": "The fastest way to reach us is to call or text (316) 871-5085. You'll get Nate."
       },
@@ -651,7 +642,7 @@
     }
   ],
   "footer": {
-    "about": "Dream Makers Heating and Cooling installs, repairs and replaces heating and air conditioning systems for homes in Wichita, Kansas. You call or text Nate directly.",
+    "about": "You call or text Nate directly.",
     "why": [
       "Nate answers",
       "Call or text",
