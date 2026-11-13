@@ -1,5 +1,7 @@
 # Outreach sender
 
+**Tracker:** the "FF Outreach Tracker" Google Sheet (https://docs.google.com/spreadsheets/d/1CMdrsr4mJZC46t4xCVs3hJnwJ67mkrYjtVvzZQT22Fg) has one row per prospect: demo link, form URL, send type, variant, status, Josh's approval, sent time, GHL tag, reply and notes. Update its row after every dry run, send or reply. The queue files here stay the source for the sender itself.
+
 One command sends approved outreach messages through each prospect's own website contact form, with a real browser.
 
 ```
