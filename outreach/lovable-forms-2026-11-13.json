@@ -1,0 +1,597 @@
+[
+  {
+    "slug": "stone-electric",
+    "company": "Stone Electric LLC",
+    "demoUrl": "https://stone-electric-llc.lovable.app",
+    "previewUrl": "https://stone-electric-llc.demos.fluidframemarketing.com",
+    "realSite": null,
+    "formUrl": null,
+    "frame": null,
+    "builder": null,
+    "fields": [],
+    "captcha": null,
+    "maxLength": null,
+    "blockingFields": [],
+    "email": null,
+    "fallback": "Phone (417) 207-8328 (matches the demo and the directory listings). No website found to contact.",
+    "verdict": null,
+    "notes": "Local repo /home/user/stone-electric-llc has no current-site URL: docs/demo-standard/words.md gives the Google Business Profile address only (3595 N 21st St Suite C, Ozark, MO 65721). Web searches (two queries) found no official website. Directory listings (BBB, naicslist, Birdeye) give 3501 N 21st St Ste C, Ozark, MO 65721, phone (417) 207-8328. The owner name Joshua Stone comes only from a third-party data site, unverified. The address differs by one digit between the repo and the directories. No site was visited, so no form was inspected. Needs Josh or a manual check for the real site, e.g. the BBB profile or a Missouri SOS filing."
+  },
+  {
+    "slug": "stokes-fence-co",
+    "company": "Stokes Fence Co. LLC",
+    "demoUrl": "https://stokes-fence-co.lovable.app",
+    "previewUrl": "https://stokes-fence-co.demos.fluidframemarketing.com",
+    "realSite": "https://stokesfence.com/",
+    "formUrl": "https://stokesfence.com/quote/",
+    "frame": null,
+    "builder": "WordPress (Jetpack contact form)",
+    "fields": [
+      {
+        "label": "Name",
+        "type": "text",
+        "required": true
+      },
+      {
+        "label": "Email",
+        "type": "email",
+        "required": true
+      },
+      {
+        "label": "Phone Number",
+        "type": "tel",
+        "required": false
+      },
+      {
+        "label": "Message",
+        "type": "textarea",
+        "required": false
+      }
+    ],
+    "captcha": "none",
+    "maxLength": null,
+    "blockingFields": [],
+    "email": "stokesfenceco@yahoo.com",
+    "fallback": "Phone (417) 353-8501",
+    "verdict": "auto",
+    "notes": "Checked homepage (its 'Get a Free Quote' button links to /quote) and /quote via WebFetch, then read the rendered DOM with Playwright (read only, nothing clicked or typed). Quote form is a native Jetpack form, no iframe, no reCAPTCHA/hCaptcha/Turnstile. The same DOM also has a comment form (Name/Email/Website/comment, not a quote form) and an unlabelled textarea labelled 'Δ' with maxlength 100, plus a 'Search countries' input. These look like hidden or spam-trap fields inside the Jetpack form. I did not confirm they are hidden in the rendered page. Verify before sending. Phone (417) 353-8501 matches the demo. Repo words.md says current site stokesfence.com."
+  },
+  {
+    "slug": "ad-mechanical-services",
+    "company": "A & D Mechanical Services LLC",
+    "demoUrl": "https://ad-mechanical-services.lovable.app",
+    "previewUrl": "https://ad-mechanical-services.demos.fluidframemarketing.com",
+    "realSite": "https://www.admechanical.com/",
+    "formUrl": null,
+    "frame": null,
+    "builder": "WordPress (inferred from wp-content paths)",
+    "fields": [],
+    "captcha": null,
+    "maxLength": null,
+    "blockingFields": [],
+    "email": "service@admechanical.com",
+    "fallback": "Email service@admechanical.com or phone 417.866.8257 (the Contact page lists both, plus P.O. Box 9466, Springfield, MO 65801)",
+    "verdict": "no-form",
+    "notes": "Checked homepage and /contact/ (linked as 'Contact' in the nav), via WebFetch and read-only Playwright DOM. /contact/ has no form: the only input is the header site search ('Search for:'), whose form posts to the homepage. No iframe, no CAPTCHA. Phone 417.866.8257 matches the demo. Repo words.md says current site admechanical.com. Did not check other pages for a request form, only nav-linked pages."
+  },
+  {
+    "slug": "swmo-lawn",
+    "company": "SWMO Services Inc.",
+    "demoUrl": "https://swmo-lawn-mockup.lovable.app",
+    "previewUrl": "https://swmo-lawn-mockup.demos.fluidframemarketing.com",
+    "realSite": "https://swmoservices.com/",
+    "formUrl": null,
+    "frame": null,
+    "builder": null,
+    "fields": [],
+    "captcha": null,
+    "maxLength": null,
+    "blockingFields": [],
+    "email": null,
+    "fallback": "Phone (417) 849-7966 (matches the Google profile, per repo words.md)",
+    "verdict": null,
+    "notes": "Real site not inspected. Repo words.md names current site swmoservices.com. Every attempt failed: WebFetch returned HTTP 503 on the homepage, /contact and /contact-us, and HTTP 503 on http://. curl and Playwright on https:// hit a self-signed certificate error, and I did not disable TLS verification. Retry later to check the form. Nothing was submitted."
+  },
+  {
+    "slug": "take-a-break-cleaning",
+    "company": "Take A Break Cleaning Service, LLC",
+    "demoUrl": "https://take-a-break-cleaning.lovable.app",
+    "previewUrl": "https://take-a-break-cleaning.demos.fluidframemarketing.com",
+    "realSite": "https://tabcleaning.com/",
+    "formUrl": "https://tabcleaning.com/contact-us",
+    "frame": null,
+    "builder": "GoDaddy Website Builder",
+    "fields": [
+      {
+        "label": "Name",
+        "type": "text",
+        "required": true
+      },
+      {
+        "label": "Company Name",
+        "type": "text",
+        "required": false
+      },
+      {
+        "label": "Email",
+        "type": "text",
+        "required": true
+      },
+      {
+        "label": "Phone",
+        "type": "text",
+        "required": true
+      },
+      {
+        "label": "Address (Street, City, Zip Code)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "label": "Residential: Number of Bedrooms and Bathrooms / Commercial: Number of Offices and Conference or Break Rooms",
+        "type": "text",
+        "required": true
+      },
+      {
+        "label": "Estimated Square Footage of the property",
+        "type": "text",
+        "required": true
+      },
+      {
+        "label": "Special Cleaning Needs?",
+        "type": "textarea",
+        "required": false
+      }
+    ],
+    "captcha": "invisible reCAPTCHA (size=invisible, loaded in a Google iframe; page text also says the site is protected by reCAPTCHA)",
+    "maxLength": null,
+    "blockingFields": [
+      "Address (Street, City, Zip Code)",
+      "Residential: Number of Bedrooms and Bathrooms / Commercial: Number of Offices",
+      "Estimated Square Footage of the property"
+    ],
+    "email": "admin@TABcleaning.com",
+    "fallback": "Residential (417) 396-0768; Commercial (417) 631-1601",
+    "verdict": "hand",
+    "notes": "Read the rendered DOM with Playwright (read only). Required markers are asterisks in the labels, not HTML required attributes. Required property details (address, bedrooms/bathrooms or offices, square footage) describe the prospect's own property, so we cannot honestly fill them. Verdict hand. The reCAPTCHA is invisible, which would otherwise be auto-maybe. Homepage has no form, only a link to /contact-us. Repo words.md says current site tabcleaning.com. Phone (417) 396-0768 matches the demo."
+  },
+  {
+    "slug": "your-choice-lawncare",
+    "company": "Your Choice Lawncare",
+    "demoUrl": "https://your-choice-lawncare.lovable.app",
+    "previewUrl": "https://your-choice-lawncare.demos.fluidframemarketing.com",
+    "realSite": "https://springfieldlawncare.com/",
+    "formUrl": "https://springfieldlawncare.com/contact-us",
+    "frame": null,
+    "builder": "Wix",
+    "fields": [
+      {
+        "label": "Name *",
+        "type": "text",
+        "required": true
+      },
+      {
+        "label": "Email *",
+        "type": "email",
+        "required": true
+      },
+      {
+        "label": "Subject",
+        "type": "text",
+        "required": false
+      },
+      {
+        "label": "Phone",
+        "type": "tel",
+        "required": false
+      },
+      {
+        "label": "Address",
+        "type": "text",
+        "required": false
+      },
+      {
+        "label": "Message",
+        "type": "textarea",
+        "required": false
+      }
+    ],
+    "captcha": "none found in markup",
+    "maxLength": null,
+    "blockingFields": [],
+    "email": "yourchoice@springfieldlawncare.com",
+    "fallback": null,
+    "verdict": "auto",
+    "notes": "Local repo has no real-site facts; the real site is named in words.md (springfieldlawncare.com). Checked with Playwright, read-only: /contact-us has one plain Wix form in the main document (no iframe), with a Send button. No reCAPTCHA, hCaptcha or Turnstile strings in the markup. Message textarea has no maxlength or visible counter. Wix Chat, visitor-analytics and iPlayerHD iframes are not forms. /contact, /get-a-quote, /request-a-quote and /free-estimate return 404 on Wix; /contact.html returns 400. Phone on the contact page: (417) 799-1790. Address shown: 1111 N Farm Rd 123, Springfield, MO 65802. Facebook: https://www.facebook.com/Your-Choice-Lawncare-178101705537266/. Nothing submitted or typed. A CAPTCHA could still appear at submit time, which a markup check cannot show."
+  },
+  {
+    "slug": "imperial-landscaping",
+    "company": "Imperial Landscaping",
+    "demoUrl": "https://imperial-landscaping.lovable.app",
+    "previewUrl": "https://imperial-landscaping.demos.fluidframemarketing.com",
+    "realSite": "https://imperiallandscaping.info/",
+    "formUrl": "https://imperiallandscaping.info/",
+    "frame": null,
+    "builder": null,
+    "fields": [
+      {
+        "label": "Full Name *",
+        "type": "text",
+        "required": true
+      },
+      {
+        "label": "Email *",
+        "type": "email",
+        "required": true
+      },
+      {
+        "label": "Phone *",
+        "type": "tel",
+        "required": true
+      },
+      {
+        "label": "Service Interested In *",
+        "type": "select",
+        "required": true
+      },
+      {
+        "label": "Project Details",
+        "type": "textarea",
+        "required": false
+      }
+    ],
+    "captcha": "none found in markup",
+    "maxLength": null,
+    "blockingFields": [
+      "Service Interested In * (select, required; the only non-service option is Other / Not Sure)",
+      "Project Type * (select, required, on the GET MY FREE ESTIMATE form on the same page)"
+    ],
+    "email": "info@imperiallandscaping.info",
+    "fallback": null,
+    "verdict": "hand",
+    "notes": "Two live sites, per words.md: imperiallandscaping.info (multi-page) and imperiallandscaping.org (one page). Both are checked; .info is listed as the main site. Verdict is hand because of the required service dropdown, which the brief names as a field we can't honestly fill. Other / Not Sure is the only honest option. The .info homepage has two forms: a quote form (GET MY FREE ESTIMATE: Full Name*, Phone Number*, Email, Project Type* select) and a contact form (SEND MESSAGE: Full Name*, Email*, Phone*, Service Interested In* select, Project Details textarea). Both are in the main document, with no iframe and no CAPTCHA strings. Both have a hidden honeypot text field named website (on .org it is named company): do not fill. .org homepage form: action /api/lead, Full Name*, Phone*, Email, Project Type* select, GET YOUR FREE QUOTE. Its builder is not identified: no generator meta and no provider hints. /contact, /contact-us, /get-a-quote, /request-a-quote and /free-estimate are empty on both .info and .org (bodyLen 0); the forms only appear on the homepages. Phone (417) 210-0020. Google Maps iframe is not a form. Verdict is for the .info contact form; the .org form has the same blocking dropdown."
+  },
+  {
+    "slug": "jons-plumbing",
+    "company": "Jon's Plumbing LLC",
+    "demoUrl": "https://jons-plumbing.lovable.app",
+    "previewUrl": "https://jons-plumbing.demos.fluidframemarketing.com",
+    "realSite": "https://jonsplumbingllc.com/",
+    "formUrl": "https://jonsplumbingllc.com/contact/",
+    "frame": null,
+    "builder": "WordPress (Total theme 4.6.1); form is Contact Form 7",
+    "fields": [
+      {
+        "label": "Your Name (required)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "label": "Your Phone (required)",
+        "type": "tel",
+        "required": true
+      },
+      {
+        "label": "Your Email (required)",
+        "type": "email",
+        "required": true
+      },
+      {
+        "label": "Residential / Commercial",
+        "type": "select",
+        "required": false
+      },
+      {
+        "label": "File upload",
+        "type": "file",
+        "required": false
+      },
+      {
+        "label": "Message",
+        "type": "textarea",
+        "required": false
+      }
+    ],
+    "captcha": "none found in markup",
+    "maxLength": 2000,
+    "blockingFields": [],
+    "email": "contactus@jonsplumbingllc.com",
+    "fallback": null,
+    "verdict": "auto",
+    "notes": "Checked with Playwright, read-only. /contact/ has one Contact Form 7 form in the main document, with a Submit Request button. No reCAPTCHA, hCaptcha or Turnstile strings in the markup. Message maxlength is 2000, which is above the 600 threshold. The optional file upload is not filled. The real-site words.md claims \"Your contact form never appears. A blank gray box sits where it should be.\" The markup does contain the full form, so that claim may depend on rendering or styling. I did not take a screenshot to check it, so verify before reusing that line. /contact-us, /contact.html, /get-a-quote, /request-a-quote and /free-estimate are 404 pages. Phone 417-755-3257. Facebook: https://www.facebook.com/jonsplumbingllc/. Nothing submitted or typed."
+  },
+  {
+    "slug": "all-phase-electric",
+    "company": "All Phase Electric",
+    "demoUrl": null,
+    "previewUrl": "https://all-phase-electric.demos.fluidframemarketing.com",
+    "realSite": null,
+    "formUrl": null,
+    "frame": null,
+    "builder": null,
+    "fields": [],
+    "captcha": null,
+    "maxLength": null,
+    "blockingFields": [],
+    "email": "all.phase.electric1@gmail.com",
+    "fallback": "Phone 417-725-0808 and email all.phase.electric1@gmail.com, both from the directory listing. No Facebook link found. Own site is gone, so no form to use.",
+    "verdict": "no-form",
+    "notes": "No working own website. allphaseelectricmo.com does not resolve: getent hosts returns not found, and Playwright gets ERR_TUNNEL_CONNECTION_FAILED through the proxy. words.md (checked 2026-11-06) also says the domain returns no such domain. The only copy is the directory-hosted page at allphaseelectricmo.localsearch.com. Its homepage has no form, and its /contact, /contact-us, /contact.html, /get-a-quote, /request-a-quote and /free-estimate paths show the same homepage with no form. Its iframes are Adobe ID sync, Twitter and an analytics frame, none of them forms. The address on the directory page is 1024 S Nicholas Rd, Nixa, MO 65714. The local repo's README and docs use the Lovable demo, and nothing else in the repo names a current site beyond words.md."
+  },
+  {
+    "slug": "brown-professional-services",
+    "company": "Brown Professional Services LLC",
+    "demoUrl": null,
+    "previewUrl": null,
+    "realSite": "https://brownprofessionalservicesllc.com/",
+    "formUrl": null,
+    "frame": null,
+    "builder": null,
+    "fields": [],
+    "captcha": null,
+    "maxLength": null,
+    "blockingFields": [],
+    "email": null,
+    "fallback": "Phone (417) 429-5709 or (417) 590-3902 (the /contact page says \"FOR A FREE ESTIMATE CALL\"). Facebook: https://www.facebook.com/sgfcleanoffice",
+    "verdict": "no-form",
+    "notes": "Checked with Playwright, read-only. The homepage has no form and no iframe. /contact (titled Contact Us) has no form, only a phone call prompt, a PO Box #4432, Springfield, Missouri 65808 address and a Facebook link. /contact-us, /contact.html, /get-a-quote, /request-a-quote and /free-estimate are 404 pages. No mailto on any page. words.md (checked 2026-11-02) says the site had gambling spam on every page except the homepage. The pages I loaded now show normal content, so that note is stale. The brief's demo number (417) 590-3902 also appears on the site. No Lovable demo URL and no preview URL, per the brief."
+  },
+  {
+    "slug": "gold-mechanical",
+    "company": "Gold Mechanical",
+    "demoUrl": "https://gold-mechanical.lovable.app",
+    "previewUrl": null,
+    "realSite": "https://goldmechanical.com/",
+    "formUrl": "https://goldmechanical.com/contact/",
+    "frame": null,
+    "builder": "WordPress (Astra theme, Elementor, Gravity Forms)",
+    "fields": [
+      {
+        "label": "Name (First, Last)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "label": "Email",
+        "type": "email",
+        "required": true
+      },
+      {
+        "label": "Phone",
+        "type": "tel",
+        "required": true
+      },
+      {
+        "label": "Type of Request",
+        "type": "select",
+        "required": true
+      },
+      {
+        "label": "Resume",
+        "type": "file",
+        "required": false
+      },
+      {
+        "label": "Message",
+        "type": "textarea",
+        "required": true
+      }
+    ],
+    "captcha": "Invisible reCAPTCHA (Gravity Forms, data-size=invisible, badge inline). No visible checkbox.",
+    "maxLength": 600,
+    "blockingFields": [],
+    "email": "office@goldmechanical.com",
+    "fallback": null,
+    "verdict": "auto-maybe",
+    "notes": "Demo business name, city (Springfield MO) and phone (417) 873-9770 from the Lovable demo's meta tags, then matched to goldmechanical.com (WordPress, pages fetched with curl, DOM checked with the Gravity Forms markup). Form is native on /contact/ (no iframe). Message has maxlength=600 with a visible counter '{current} of 600 max characters', so it is not under 600 and does not trigger hand. Type of Request is required: 'General Inquiries' is the honest pick. Resume is optional; do not upload. The form has a honeypot text input labelled 'Phone' (input_12) that is visually shown with the note 'should be left unchanged': do not fill it; the real phone is input_7. Akismet hidden textarea also present, leave empty. Submit not clicked. Second source for the address: 4735 W Division St, Springfield MO 65802. Phone 417-873-9770 is the office line per several listings; fax 417-873-9771."
+  },
+  {
+    "slug": "second-to-none-exteriors",
+    "company": "Second To None Exteriors, LLC",
+    "demoUrl": "https://second-to-none-exteriors.lovable.app",
+    "previewUrl": null,
+    "realSite": "https://www.secondtononeexteriors.com/",
+    "formUrl": "https://www.secondtononeexteriors.com/contact",
+    "frame": null,
+    "builder": "Duda (dmform widgets)",
+    "fields": [
+      {
+        "label": "Name",
+        "type": "text",
+        "required": true
+      },
+      {
+        "label": "Email",
+        "type": "email",
+        "required": true
+      },
+      {
+        "label": "Phone",
+        "type": "tel",
+        "required": true
+      },
+      {
+        "label": "Message",
+        "type": "textarea",
+        "required": false
+      }
+    ],
+    "captcha": "Invisible reCAPTCHA is configured in the page (captcha type g_recaptcha with an invisible site key), but no visible widget or .grecaptcha-badge rendered on load. A Friendly Captcha key also appears in the page config; it is unclear which is active until a submit attempt, which we did not make.",
+    "maxLength": null,
+    "blockingFields": [],
+    "email": "mike@secondtononeexteriorsllc.com",
+    "fallback": null,
+    "verdict": "auto-maybe",
+    "notes": "Real site found from the search results and the repo's lander copy (it names the current site). Rendered with Playwright, no clicks or typing. Form is native on /contact, no iframe. Textarea has no maxlength and no counter. Repo local data: 703 North Main Street, O'Fallon MO 63366. Phone on the site is (636) 200-2006, the same number the demo uses; several directories (BBB, Yelp, IKO, Facebook, My Local Services) list (636) 699-0449 instead, so call to confirm before relying on either number. Also the homepage has a hidden 'Services' text field in a form (dmform-3), not on the contact form. Homepage-level form is not used."
+  },
+  {
+    "slug": "bb-towing",
+    "company": "B&B Towing",
+    "demoUrl": "https://b-and-b-towing.lovable.app",
+    "previewUrl": null,
+    "realSite": "https://bbtowing.net/",
+    "formUrl": null,
+    "frame": null,
+    "builder": "WordPress (Nicepage theme)",
+    "fields": [],
+    "captcha": null,
+    "maxLength": null,
+    "blockingFields": [],
+    "email": "vicki.bbtowing@gmail.com",
+    "fallback": "No form on bbtowing.net/contact/ (page title 'Contact'). The page lists the phone lines (207) 856-7200 and (207) 772-4236 and the email vicki.bbtowing@gmail.com. Phone is the stated way to reach them.",
+    "verdict": "no-form",
+    "notes": "Demo name, Westbrook Maine address (40 Terminal Street, Westbrook ME 04092) and phone lines taken from the local repo's src/lib/site.ts and README; the real site was confirmed at bbtowing.net. /contact/ returned 200 and the rendered DOM (Playwright, no clicks) contains no form, no iframe and no captcha. Earlier curl of /contact-us/ returned 404. The raw HTML contains only the Nicepage/WordPress footer and the mailto/tel links. Email is shown on the contact page, so this is the fallback if Josh wants a non-phone channel."
+  },
+  {
+    "slug": "davis-chiro",
+    "company": "Davis Chiropractic",
+    "demoUrl": "https://ozark-chiropractic-mockup.lovable.app",
+    "previewUrl": null,
+    "realSite": null,
+    "formUrl": null,
+    "frame": null,
+    "builder": null,
+    "fields": [],
+    "captcha": null,
+    "maxLength": null,
+    "blockingFields": [],
+    "email": null,
+    "fallback": "No working own website found. Phone (417) 582-5200 (751 N 20th St, Ozark MO 65721, per the local repo's Home.tsx and several directories). Facebook page https://www.facebook.com/p/Davis-Chiropractic-100069082734052/ was found in search results but not opened.",
+    "verdict": "no-form",
+    "notes": "The local repo (README and src) has no real site; it says there is no existing website. The Yellow Pages listing gives davischiropractic.com; curl of http://www.davischiropractic.com/ returned a parked page titled ProfessionalPlanets.com, not a chiropractic site. A later https attempt failed at the proxy (connection reset / 502), so that domain was not confirmed as dead, but it is not a usable site. Could not confirm any real contact form. One search summary showed an email on the Facebook page (peddoc12@gmail.com); not verified, so it is left out of the email field. Directory hours and the second phone (417) 485-2522 conflict; call to confirm."
+  },
+  {
+    "slug": "lisa-sims",
+    "company": "The Law Office of Lisa M. Sims, LLC",
+    "demoUrl": "https://sims-law-blueprint.lovable.app",
+    "previewUrl": null,
+    "realSite": "https://www.sims-law.com/",
+    "formUrl": null,
+    "frame": null,
+    "builder": "None (static HTML with Bootstrap)",
+    "fields": [],
+    "captcha": null,
+    "maxLength": null,
+    "blockingFields": [],
+    "email": null,
+    "fallback": "Phone (417) 883-4848 (shown on sims-law.com, 'By Appointment Only'). Office: 1350 E. Kingsley St., Ste. D, Springfield MO 65804.",
+    "verdict": "no-form",
+    "notes": "Law office, so this is a lawyer's site. Real site at https://www.sims-law.com/ (single page, 200). The page has a logo, name, title, phone, address and 'By Appointment Only' and nothing else. /contact, /contact-us and /contact.html all return 404. No form, no email and no iframe in the HTML. The Lovable demo's form is marked 'visual only' and does not exist on the real site. Repo facts match the real site (phone and address). Not contacted, nothing sent."
+  },
+  {
+    "slug": "shanna-powell",
+    "company": "Shanna Powell Wellness (life coach, health coach, peptide guide, Springfield MO)",
+    "demoUrl": "https://shanna-powell-glow.lovable.app",
+    "previewUrl": null,
+    "realSite": null,
+    "formUrl": null,
+    "frame": null,
+    "builder": null,
+    "fields": null,
+    "captcha": null,
+    "maxLength": null,
+    "blockingFields": null,
+    "email": null,
+    "fallback": "Phone 417.894.5859 (shown on the demo and in the local repo; not confirmed as a live business line)",
+    "verdict": null,
+    "notes": "Local repo /home/user/shanna-powell-glow checked: README calls this a 'New business mockup' with no reviews, and the repo has no docs/facts file or current-site mention. Web searches (Shanna Powell Springfield MO, plus a peptide/nurse-coach variant) found no real website or listing for her. The demo's peptide CTA goes to elliemd.com/shanapowell, a third-party EllieMD brand-partner page that is not hers (fetched; no form, no Powell name). Demo /contact (read only, Playwright) has name (text, required), phone (tel, required), email (email, required), a service select (required), and a message textarea (optional). No CAPTCHA, iframe or maxlength. The demo form is marked as a mockup, not connected to a backend. The demo also shows a personal-looking Gmail address; left out of the record. Verdict left null: I could not identify her real site, so I cannot inspect its form. If she has no live site, this is a no-form case and the fallback is the phone line."
+  },
+  {
+    "slug": "brenda-bauer-coaching",
+    "company": "Becoming Transformation Coaching (coach Brenda Bauer, Springfield MO)",
+    "demoUrl": "https://warm-earth-journey.lovable.app",
+    "previewUrl": null,
+    "realSite": null,
+    "formUrl": null,
+    "frame": null,
+    "builder": null,
+    "fields": null,
+    "captcha": null,
+    "maxLength": null,
+    "blockingFields": null,
+    "email": null,
+    "fallback": "Phone (417) 409-2010 (shown on the demo; not confirmed as a live business line)",
+    "verdict": null,
+    "notes": "Not cloned. Demo title: 'Life Coach for Women in Springfield MO | Becoming Transformation Coaching'. Demo /contact (read only, Playwright) has name (text), email, phone (tel), and 'What brings you here?' (textarea). None is marked required. No CAPTCHA, iframe or maxlength. A WebFetch of the demo's home page said there was no form; Playwright found one on /contact, so Playwright is the reliable read. Web searches for Becoming Transformation Coaching and Brenda Bauer in Springfield returned nothing matching, only a Thumbtack profile in Georgia and a similarly named counselor, Brenda Lauer. The demo's own URL is the only web presence I found. Verdict left null because the real site is unidentified; the demo form is plain, which would suggest auto if her live site matches it. Josh should confirm the business name and website with her."
+  },
+  {
+    "slug": "jenna-rhae",
+    "company": "JennaRhae (Jenna Rhae White, Freedom Life Coach). Personal brand, not a local service business; serves online nationwide plus in-person in Kansas City",
+    "demoUrl": "https://jenna-rhae-web-spark.lovable.app",
+    "previewUrl": null,
+    "realSite": "https://jennarhae.com/",
+    "formUrl": "https://jennarhae.com/contact/",
+    "frame": "iframe from link.springboardcrm.com (Springboard CRM form widget, https://link.springboardcrm.com/widget/form/A5zf4tEJIUQ4mRWoSxYG). A booking-calendar iframe from the same host is also on the page.",
+    "builder": "WordPress (inferred from /wp-content/uploads/ paths; Site Kit by Google meta tag). Not confirmed.",
+    "fields": [
+      {
+        "label": "First name",
+        "type": "text",
+        "required": false
+      },
+      {
+        "label": "Last name",
+        "type": "text",
+        "required": false
+      },
+      {
+        "label": "Email",
+        "type": "email",
+        "required": true
+      },
+      {
+        "label": "Phone",
+        "type": "tel",
+        "required": true
+      },
+      {
+        "label": "Message",
+        "type": "textarea",
+        "required": false
+      }
+    ],
+    "captcha": "Cloudflare Turnstile (hidden cf-turnstile-response field in the widget). Visibility not confirmed in a headless read; treat as an invisible challenge until checked.",
+    "maxLength": null,
+    "blockingFields": null,
+    "email": "info@jennarhae.com",
+    "fallback": "Email info@jennarhae.com",
+    "verdict": "auto-maybe",
+    "notes": "Real site found and read (jennarhae.com/contact/, read only, Playwright). The page has no native form; the form is the Springboard iframe above. Required status comes from the visible '*' markers (EMAIL *, PHONE *), since the widget has no required attribute. A parent-page reCAPTCHA string appears but no reCAPTCHA is in the widget; not verified further. Name discrepancy on the site: the title says 'Jenna Rhae White' and the breadcrumb and image alt text say 'Jenna Barbosa'; confirm with Josh before outreach. Demo /contact has no form, only booking links. Nothing was typed or submitted."
+  },
+  {
+    "slug": "legacy-forge",
+    "company": "Legacy Forge ('Three Feet From Gold'; coaching for trades and service business owners). Looks like a personal or coaching brand; founder bio on the demo mentions Mr. Electric",
+    "demoUrl": "https://forge-ignite-flow.lovable.app",
+    "previewUrl": null,
+    "realSite": null,
+    "formUrl": null,
+    "frame": null,
+    "builder": null,
+    "fields": null,
+    "captcha": null,
+    "maxLength": null,
+    "blockingFields": null,
+    "email": null,
+    "fallback": "Skool community https://www.skool.com/legacyforge (found in search; not confirmed as the same business)",
+    "verdict": null,
+    "notes": "Not cloned. Demo /contact (read only, Playwright) has name, business, phone (tel), email, industry (text), revenue (select), block (textarea), and source (text). None is marked required. No CAPTCHA, iframe or maxlength. The demo shows no phone or email. Searches for 'Legacy Forge' with 'Three Feet From Gold', '3-Feet Audit', and Springfield MO found only a prelaunch private Skool community named Legacy Forge (founder J.D. Sokol, no location, 106 members) and an unrelated New Hampshire 'The Forge'. I could not confirm that the Skool group is the same business. No real site identified, so the verdict is null. Josh should confirm the business name and website."
+  },
+  {
+    "slug": "leo",
+    "company": "Leadership Education of the Ozarks (LEO). Community project: a Christian homeschool co-op in Ozark, MO. Not a service business",
+    "demoUrl": "https://ozarks-community-showcase.lovable.app",
+    "previewUrl": null,
+    "realSite": null,
+    "formUrl": null,
+    "frame": null,
+    "builder": null,
+    "fields": null,
+    "captcha": null,
+    "maxLength": null,
+    "blockingFields": null,
+    "email": "leoparentrep@gmail.com (shown on the demo as a mailto link)",
+    "fallback": "Email leoparentrep@gmail.com (from the demo; no live site confirmed)",
+    "verdict": null,
+    "notes": "Not cloned. Demo /contact (read only, Playwright) has an unlabeled text input, an email input, and two textareas. None is marked required. No CAPTCHA, iframe or maxlength. The demo's own text says class details come only in an enrollment conversation. Web searches for Leadership Education of the Ozarks and Thomas Jefferson Education in Ozark or Springfield found no listing, only general homeschool co-op directories. No real site identified, so the verdict is null. This is a community project, so it may not need outreach as a business. Josh should decide whether to contact it at all."
+  }
+]
