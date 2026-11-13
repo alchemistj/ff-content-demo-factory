@@ -243,6 +243,18 @@
       "pulledAt": "2026-11-09T18:36:30.414Z"
     },
     {
+      "slug": "electricraft-wichita",
+      "name": "Electricraft",
+      "placeId": "ChIJlzhVPU_iuocRonbcweZg6mQ",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 63,
+        "withText": 57,
+        "ratingOnly": 6
+      },
+      "pulledAt": "2026-11-13T21:07:51.838Z"
+    },
+    {
       "slug": "enegren-electric-wichita",
       "name": "Enegren Electric",
       "placeId": "ChIJNy6IprnguocRWsLvXkJGvBM",
