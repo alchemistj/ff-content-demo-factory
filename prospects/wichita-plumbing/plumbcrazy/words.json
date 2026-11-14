@@ -545,13 +545,6 @@
           ]
         },
         {
-          "type": "prose",
-          "heading": "Prefer to Write?",
-          "body": [
-            "Send your name, email, phone number and what you need, and Brandon will see it. [[confirm: contact form delivers email]]"
-          ]
-        },
-        {
           "type": "split",
           "heading": "Got a Quote in Hand? Bring It.",
           "image": {
