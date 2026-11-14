@@ -336,9 +336,9 @@
             "Power out in part of the house"
           ],
           "image": {
-            "slot": "inspection",
-            "alt": "Electrician checking wiring at an open electrical panel",
-            "brief": "electrical pool: inspection"
+            "slot": "panel-upgrade",
+            "alt": "Open modern electrical panel with breakers and labeled circuits",
+            "brief": "electrical pool: panel-upgrade"
           },
           "imageSide": "right"
         },
@@ -505,9 +505,9 @@
             "Rebuilt or reinstalled fixtures"
           ],
           "image": {
-            "slot": "outlet-repair",
-            "alt": "Electrician fitting a dimmer switch into a wall box",
-            "brief": "electrical pool: outlet-repair"
+            "slot": "outdoor-lighting",
+            "alt": "Brick ranch house at dusk with porch and path lights on",
+            "brief": "electrical pool: outdoor-lighting"
           },
           "imageSide": "right"
         },

@@ -303,9 +303,9 @@
           "type": "split",
           "heading": "Tell Us What the Heater Is Doing",
           "image": {
-            "slot": "contact-hero",
-            "alt": "Front door of a Wichita home, where the visit starts",
-            "brief": "plumbing pool: contact-hero"
+            "slot": "water-heater-close",
+            "alt": "Base of a water heater tank with a drain valve and a small puddle on the floor",
+            "brief": "plumbing pool: water-heater-close"
           },
           "imageSide": "right",
           "body": [
@@ -480,9 +480,9 @@
           "type": "split",
           "heading": "When the Old Line Comes Out",
           "image": {
-            "slot": "leak",
-            "alt": "Damp ground in a yard where a buried line may be leaking",
-            "brief": "plumbing pool: leak"
+            "slot": "yard-dig",
+            "alt": "Open trench with sewer pipe in a front yard",
+            "brief": "plumbing pool: yard-dig"
           },
           "imageSide": "left",
           "body": [
