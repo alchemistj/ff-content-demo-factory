@@ -1,0 +1,774 @@
+{
+  "schema": "words-package/v1",
+  "business": {
+    "name": "Up To Code Plumbing",
+    "slug": "uptocode",
+    "city": "Wichita",
+    "state": "KS",
+    "companyType": "Plumber",
+    "owners": [
+      "Ken"
+    ],
+    "phones": [
+      {
+        "label": "Wichita",
+        "display": "(316) 400-7586",
+        "tel": "+13164007586"
+      }
+    ],
+    "email": "contactus@utcwichita.com",
+    "hours": null,
+    "address": null,
+    "serviceArea": {
+      "summary": "Wichita, Derby, Haysville, Augusta, El Dorado and nearby towns",
+      "towns": [
+        "Wichita",
+        "Derby",
+        "Haysville",
+        "Augusta",
+        "El Dorado"
+      ]
+    }
+  },
+  "trustBar": [
+    "Free VIP Membership",
+    "Homes and Businesses",
+    "One-Year Guarantee on Residential Plumbing Work",
+    "BBB Accredited"
+  ],
+  "services": [
+    {
+      "name": "Drain Cleaning",
+      "route": null,
+      "blurb": "Drain cleaning and unclogging for kitchens, bathrooms and main lines."
+    },
+    {
+      "name": "Sewer Line Repair",
+      "route": "/sewer-line-repair-wichita-ks/",
+      "blurb": "Sewer repair and camera inspections, plus drain cleaning when a clog is the problem."
+    },
+    {
+      "name": "Leak Detection and Water Line Repair",
+      "route": null,
+      "blurb": "Leaks and water line repairs, from a basement leak to a failed shutoff valve."
+    },
+    {
+      "name": "Water Heater Repair and Installation",
+      "route": null,
+      "blurb": "Tank or tankless, gas or electric, repaired or installed."
+    },
+    {
+      "name": "Plumbing Fixture Installation",
+      "route": "/fixture-installation-wichita-ks/",
+      "blurb": "Faucets, toilets, showers and sinks, installed or replaced in kitchens and bathrooms."
+    },
+    {
+      "name": "Gas Line Installation and Repair",
+      "route": null,
+      "blurb": "Gas lines installed and repaired for homes and for businesses."
+    },
+    {
+      "name": "Commercial Plumbing",
+      "route": null,
+      "blurb": "Drain cleaning, water heaters, public restroom plumbing, backflow testing and gas lines for businesses."
+    }
+  ],
+  "pages": [
+    {
+      "role": "home",
+      "route": "/home/",
+      "navLabel": "Home",
+      "keyword": "plumber wichita ks",
+      "seo": {
+        "title": "Plumber in Wichita, KS | Up To Code Plumbing",
+        "description": "Wichita plumber for drains, leaks, sewer lines, water heaters, fixtures and gas lines. Text or call Up To Code Plumbing."
+      },
+      "hero": {
+        "eyebrow": "Wichita, KS · Weekdays and Weekends",
+        "h1": "Plumber in Wichita, KS — Up To Code Plumbing",
+        "sub": "Water on the floor and a number you're not sure about? Text (316) 333-5434 or call (316) 400-7586 and tell Ken what's happening.",
+        "primaryCta": {
+          "label": "Call (316) 400-7586",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Email Us",
+          "action": "email"
+        },
+        "image": {
+          "slot": "home-hero",
+          "alt": "Plumber working under a kitchen sink in a Wichita home",
+          "brief": "plumbing pool: home-hero",
+          "desktopPosition": "right 0%"
+        }
+      },
+      "sections": [
+        {
+          "type": "review",
+          "quote": "Ken came out out within an hour on a Saturday. He cleared my clog. I was happy with what I paid. Thank you.",
+          "name": "Kenny S."
+        },
+        {
+          "type": "split",
+          "heading": "Water on the Floor and No Number to Go With It",
+          "body": [
+            "It's Saturday morning. There's water on the basement floor, you've found the main and shut it off, and you're standing there with your phone.",
+            "So you wait with the water off. No dishwasher, no shower, and no idea whether this is a small valve or a big job.",
+            "The wait is bad. Not knowing what it'll cost is worse."
+          ],
+          "image": {
+            "slot": "leak",
+            "alt": "Hand holding a phone to photograph a pipe under a sink",
+            "brief": "plumbing pool: leak"
+          },
+          "imageSide": "right"
+        },
+        {
+          "type": "split",
+          "heading": "Ken Carrick, Owner and Master Plumber",
+          "body": [
+            "Ken Carrick is the owner and master plumber. He has been plumbing since 2013, and Roto-Rooter and T-Mark Plumbing, Heating, Cooling & Electric are among his earlier employers. [[confirm: Licensed plumber, license #[XXXX]]]",
+            "The text line is (316) 333-5434, and the phone is (316) 400-7586."
+          ],
+          "image": {
+            "slot": "diagnose",
+            "alt": "Plumber's hands with a flashlight checking pipes inside an open cabinet",
+            "brief": "plumbing pool: diagnose"
+          },
+          "imageSide": "left"
+        },
+        {
+          "type": "prose",
+          "heading": "Told to Tear Up the Ceiling?",
+          "body": [
+            "Angela's gas leak came from a faulty log lighter valve. One company quoted her twice Ken's price, and another said they'd have to tear up the ceiling and floor, for thousands of dollars.",
+            "She wrote that Ken was very affordable, and that she will never call another company."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "I had a great experience with Ken. Another local company quoted me more than three times his price and wanted an in-person visit before scheduling a week out. Ken let me text him a photo, gave me a fair quote right away, and replaced my faulty irrigation valve the same day.",
+          "name": "George A."
+        },
+        {
+          "type": "services",
+          "heading": "Drains, Leaks, Sewers, Water Heaters and Gas Lines",
+          "intro": "Drains, leaks, sewer lines, water heaters, fixtures and gas lines, for homes and businesses. Sewer line repair and fixture installation have pages of their own."
+        },
+        {
+          "type": "prose",
+          "heading": "A Basement Leak, Quoted the Same Day",
+          "body": [
+            "A leak showed up in Shandi D.'s basement on a Saturday. Ken came out that day to assess it and gave her a quote that day too.",
+            "She wrote that he had it fixed in no time, and called him professional and down to earth."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "A Soft Water System, Talked Through",
+          "body": [
+            "Ken installed a soft water system for Jennifer F. and talked her through everything, which she says gave her peace of mind. She calls him very knowledgeable.",
+            "Now he's her go-to guy for any future plumbing."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Ben M. Called Ken for Many Projects; Anjelica L. Saw Him Within 24 Hours",
+          "body": [
+            "Ken has helped Ben M. on many different projects, and got to him extremely quickly. Anjelica L. has hired Up To Code a few times, and says every time they showed up within 24 hours.",
+            "Both wrote about honest, reasonable pricing."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "A Year on the Work",
+          "body": [
+            "Our residential plumbing work comes with a one-year guarantee, and residential drain cleaning with six months.",
+            "A call from the company a week after the job, to ask how the work was holding up, is what Stazia G. noticed."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Reliable and professional. How many people do you know that actually call and verify how their work is performing a week after it was done? I will always call this plumbing company before anyone else!",
+          "name": "Stazia G."
+        },
+        {
+          "type": "prose",
+          "heading": "A Valve Failure in a Public Facility",
+          "body": [
+            "A valve failed in a customer's public facilities, and they called Up To Code for an emergency repair. We made it out the same day with a very reasonable quote, and everything was fixed in less than 24 hours.",
+            "A side project is already planned with us."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Public Restrooms, Backflow Testing and Commercial Gas Lines",
+          "body": [
+            "For businesses, we handle commercial drain cleaning, water heaters, public restroom plumbing, backflow testing and repair, gas line services, and leak detection and pipe repair.",
+            "Commercial plumbing work has a 90-day guarantee, and commercial drain cleaning has 30 days."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Emergency drain clog in my commercial building. Up to Code handled it quickly and communicated the problem and solution well.",
+          "name": "Brandon P."
+        },
+        {
+          "type": "review",
+          "quote": "We used Up to Code Plumbing for a remodel for a client of ours. They went out of their way to accommodate our timeline and completed the job on-time, on-budget, and provided high quality, clean, professional service! We will absolutely use them again.",
+          "name": "James M."
+        },
+        {
+          "type": "prose",
+          "heading": "Tank or Tankless, Gas or Electric",
+          "body": [
+            "We repair and install water heaters, tank or tankless, gas or electric. Gas lines are installed and repaired too, for homes and for businesses.",
+            "Andy B. needed gas line work done, and wrote that it was great."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Wichita, Derby, Haysville, Augusta and El Dorado",
+          "body": [
+            "We work in Wichita and the towns around it, including Derby, Haysville, Augusta and El Dorado. [[confirm: [XX] years serving Wichita]]",
+            "Hours: [[confirm: Open [days and hours]]]"
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Card, Cash, Venmo, 10% Off and a Free VIP Membership",
+          "body": [
+            "You can pay by card, cash, check, Apple Pay, Google Pay, Venmo, Cash App or PayPal. We also offer financing, so ask about it when you call.",
+            "Seniors, military personnel and first responders get 10% off, up to $200 a job. Our VIP membership is free, and after ten uses it brings a permanent 5% discount on later visits."
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Can You Come Today? What Will It Cost? What If It Leaks Again?",
+          "items": [
+            {
+              "q": "Can you come today?",
+              "a": "Adelaide L. was helped within the hour after she called, and Kenny S. had Ken out within an hour on a Saturday. Call (316) 400-7586 and ask for the first opening."
+            },
+            {
+              "q": "Will you actually show up?",
+              "a": "Larry W. wrote that we showed up right away, friendly and professional."
+            },
+            {
+              "q": "What will this cost, and do I need all of it?",
+              "a": "It depends on the job, so we won't guess at a number here. Daniel T. wrote about good communication and fair pricing."
+            },
+            {
+              "q": "Do I need a whole new water heater?",
+              "a": "Maybe not. We repair water heaters as well as replace them. Tell us what it's doing and how old it is when you call."
+            },
+            {
+              "q": "What if it leaks again?",
+              "a": "Call (316) 400-7586 or text (316) 333-5434 and say which fixture or pipe."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Water Off, Phone in Hand?",
+          "text": "Text (316) 333-5434 or call (316) 400-7586, and tell Ken what it's doing."
+        }
+      ]
+    },
+    {
+      "role": "service",
+      "route": "/sewer-line-repair-wichita-ks/",
+      "navLabel": "Sewer Line Repair",
+      "keyword": "sewer line repair wichita ks",
+      "seo": {
+        "title": "Sewer Line Repair in Wichita, KS | Up To Code Plumbing",
+        "description": "Sewer line repair and camera inspections in Wichita. Text a photo of what's backing up and we'll tell you what we think it is."
+      },
+      "hero": {
+        "eyebrow": "Sewer lines, Wichita",
+        "h1": "Sewer Line Repair in Wichita, KS — Up To Code Plumbing",
+        "sub": "A broken pipe under a driveway and a sidewalk, fixed without digging up the concrete. Call (316) 400-7586. Camera inspections are part of our sewer service.",
+        "primaryCta": {
+          "label": "Call (316) 400-7586",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Email Us",
+          "action": "email"
+        },
+        "image": {
+          "slot": "sewer",
+          "alt": "Opened sewer cleanout in a Wichita yard",
+          "brief": "plumbing pool: sewer"
+        }
+      },
+      "sections": [
+        {
+          "type": "review",
+          "quote": "Came out prompt and on a Sunday to unclog our sewer line and drain! They were friendly and had us back in operation quick and at a very fair price.",
+          "name": "Jim M."
+        },
+        {
+          "type": "split",
+          "heading": "Repair, Camera Inspection, Drain Cleaning and Unclogging",
+          "body": [
+            "We do sewer repair and camera inspections, and drain cleaning and unclogging. Residential drain cleaning carries a six-month guarantee, and residential plumbing work a one-year guarantee.",
+            "A camera on a flexible cable goes down the line, so you can see a break, roots or a sag that holds water before anyone digs. That picture is what separates clearing a clog from repairing a line."
+          ],
+          "image": {
+            "slot": "drain",
+            "alt": "Floor drain in a basement utility room",
+            "brief": "plumbing pool: drain"
+          },
+          "imageSide": "right"
+        },
+        {
+          "type": "prose",
+          "heading": "Clog or Broken Line? How to Tell",
+          "body": [
+            "A clog is something in the pipe, like grease, paper or roots, and a cable can clear it. A broken or collapsed line is the pipe itself failing, and clearing it only buys time.",
+            "Signs of the second: backups that keep coming back, more than one drain acting up at once, and soggy ground over the line.",
+            "Roots get in through the smallest crack in an older line, and once they do, the clogs come back faster each time."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "A House Bought, Every Drain Replaced",
+          "body": [
+            "Just after buying his house, Jacob G. had Ken replace all of the drain plumbing in it. He wrote that Ken was very cordial and communicated very well, and that he couldn't talk this guy up more."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "A Pipe Under a Driveway and a Sidewalk",
+          "body": [
+            "A broken sump pump drain pipe was buried under a driveway and a sidewalk, with roots in the way. Ken explained that digging up all the concrete would only be a band-aid fix.",
+            "He found a secondary route that took care of the break and the roots, and the homeowner wrote that he “did not charge exorbitant prices.”"
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "A Kitchen Drain That Keeps Building Up Oil",
+          "body": [
+            "Kathy wrote that Up To Code fit them in on a busy day and gave helpful information on keeping a kitchen drain from building up oil."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "What a Cleanout Does for the Next Backup",
+          "body": [
+            "A cleanout is a capped opening on the sewer line that lets a plumber reach the pipe directly. The line can be cleared or inspected through it without pulling a toilet.",
+            "If a house doesn't have one, that's worth asking about when a backup has you on the phone."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Paying for a Bigger Sewer Job",
+          "body": [
+            "You can pay by card, cash, check, Apple Pay, Google Pay, Venmo, Cash App or PayPal, and we also offer financing, which helps when a line has to be replaced and not just cleared.",
+            "Seniors, military personnel and first responders save 10%, up to $200 a job. Ask about either one when you call."
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Is It a Clog or a Broken Line? Do You Have a Camera?",
+          "items": [
+            {
+              "q": "Can I text you about a drain?",
+              "a": "Yes. Text (316) 333-5434 and add a line about which drains are acting up."
+            },
+            {
+              "q": "Do you do camera inspections?",
+              "a": "Yes. Camera inspections are part of our sewer service, so you see what's down there before choosing between clearing the line and repairing it."
+            },
+            {
+              "q": "Do you clear drains too?",
+              "a": "Yes. Drain cleaning is one of our main services."
+            },
+            {
+              "q": "What will a sewer repair cost?",
+              "a": "It depends on the line and what it takes to reach it. Call (316) 400-7586 and describe what the drains are doing."
+            },
+            {
+              "q": "Which towns do you cover?",
+              "a": "Wichita, Derby, Haysville, Augusta, El Dorado and nearby towns."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Backing Up Right Now? Call or Text",
+          "text": "Call (316) 400-7586, or text (316) 333-5434, and tell Ken which drains are backing up and what they're doing."
+        }
+      ]
+    },
+    {
+      "role": "service",
+      "route": "/fixture-installation-wichita-ks/",
+      "navLabel": "Fixture Installation",
+      "keyword": "plumbing fixture installation wichita ks",
+      "seo": {
+        "title": "Plumbing Fixture Installation in Wichita, KS | Up To Code Plumbing",
+        "description": "Faucet, toilet, shower and sink installation and replacement in Wichita. Text us a photo and tell us what it needs."
+      },
+      "hero": {
+        "eyebrow": "Faucets, toilets and showers, Wichita",
+        "h1": "Plumbing Fixture Installation in Wichita, KS — Up To Code Plumbing",
+        "sub": "A shower enclosure and corroded pipes done together, two frozen outdoor faucets in a crawlspace in under two hours. Call (316) 400-7586 or text (316) 333-5434.",
+        "primaryCta": {
+          "label": "Call (316) 400-7586",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Email Us",
+          "action": "email"
+        },
+        "image": {
+          "slot": "fixture",
+          "alt": "New kitchen faucet installed on a clean sink",
+          "brief": "plumbing pool: fixture"
+        }
+      },
+      "sections": [
+        {
+          "type": "review",
+          "quote": "I was very happy with the plumber that repaired my faucet.",
+          "name": "Linda F."
+        },
+        {
+          "type": "split",
+          "heading": "A Dripping Faucet, a Cracked Toilet, a Showerhead With No Pressure",
+          "body": [
+            "We work on faucets, toilets, showers and sinks in kitchens and bathrooms, for installs and for replacements.",
+            "The text line is (316) 333-5434, if a photo will say it faster."
+          ],
+          "image": {
+            "slot": "toilet",
+            "alt": "Toilet with the tank lid off, tank parts visible in a clean bathroom",
+            "brief": "plumbing pool: toilet"
+          },
+          "imageSide": "left"
+        },
+        {
+          "type": "prose",
+          "heading": "A Shower Enclosure, and Corroded Pipes Fixed Along With It",
+          "body": [
+            "When Marla W. called, she could always talk to Ken, and he was the one who did the service. He installed her shower enclosure and fixed her old corroded pipes.",
+            "She called it an outstanding job for a much needed update."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Up To Code Plumbing added a new shut off incredibly quickly at a great rate.",
+          "name": "Walker S."
+        },
+        {
+          "type": "prose",
+          "heading": "Frozen Outdoor Faucets in a Crawlspace",
+          "body": [
+            "Two outdoor faucets had frozen over the winter, and Tom O.'s were in a crawlspace with limited access. Ken replaced them in under two hours.",
+            "He wrote that the price was great and that Ken earned a new customer for his future plumbing needs."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "A Washer Valve, Fit In Within 30 Minutes",
+          "body": [
+            "Help replacing a washer valve came within 30 minutes for Leah G., who wrote that the price was reasonable and the service fast.",
+            "Dennis P. had a leaky washer shutoff valve replaced, and wrote that Ken was there on time and had it done in no time."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Two Toilets, Booked Online",
+          "body": [
+            "Scheduling was very easy online for S. B., and two toilets got fixed. S. B. called it great small business ownership, with attention to detail and customer service."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Repair the Faucet or Replace It?",
+          "body": [
+            "A faucet that drips is often a worn part inside, and repairing it costs less than a new one. A faucet with corroded parts, or one you're tired of, is a replacement.",
+            "Either way, tell us the brand and what it's doing, and send a photo if that's easier."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "A Toilet That Runs or Rocks, a Shower With No Pressure",
+          "body": [
+            "A toilet that runs on is usually a worn part in the tank, and one that rocks isn't seated firmly. A shower that has lost pressure can be the showerhead or the line behind it.",
+            "Those are different jobs with different prices, so describe what you see."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "The Shutoff Valve Behind the Fixture",
+          "body": [
+            "Every sink, toilet and washer has a shutoff valve behind it. When one drips, sticks or won't close, replacing it is a small job that makes every later repair easier."
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Repair or Replace? New Fixture Leaking?",
+          "items": [
+            {
+              "q": "Can I text you about a fixture?",
+              "a": "Yes. Text (316) 333-5434 and say what's wrong with the fixture."
+            },
+            {
+              "q": "What will a fixture job cost?",
+              "a": "It depends on the fixture and the job, so we don't have a price to give you here. Call (316) 400-7586 and describe it."
+            },
+            {
+              "q": "Can you repair a faucet instead of replacing it?",
+              "a": "Linda F. was very happy with the plumber who repaired her faucet. Tell us what yours is doing when you call."
+            },
+            {
+              "q": "Do you do bathroom and kitchen fixtures both?",
+              "a": "Yes. We work on faucets, toilets, showers and sinks in kitchens and bathrooms."
+            },
+            {
+              "q": "What if the new fixture leaks?",
+              "a": "Call (316) 400-7586 and say which fixture. Residential plumbing work carries a one-year guarantee, and we'll look at it under that."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Faucet, Toilet or Shower Giving You Trouble?",
+          "text": "Call (316) 400-7586, or text a photo to (316) 333-5434."
+        }
+      ]
+    },
+    {
+      "role": "contact",
+      "route": "/contact/",
+      "navLabel": "Contact",
+      "keyword": "contact up to code plumbing wichita ks",
+      "seo": {
+        "title": "Contact Up To Code Plumbing | Wichita, KS",
+        "description": "Call or text Up To Code Plumbing in Wichita. Send a photo and tell us what's happening."
+      },
+      "hero": {
+        "eyebrow": "Contact Up To Code Plumbing",
+        "h1": "Contact Up To Code Plumbing",
+        "sub": "If water is running or a drain is backing up, call or text. Tell us what it's doing and where the shutoff is.",
+        "primaryCta": {
+          "label": "Call (316) 400-7586",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Email Us",
+          "action": "email"
+        },
+        "image": {
+          "slot": "contact-hero",
+          "alt": "Plumbing service van parked in front of a Wichita home",
+          "brief": "plumbing pool: contact-hero"
+        }
+      },
+      "sections": [
+        {
+          "type": "prose",
+          "heading": "Call Ken or Text Him",
+          "body": [
+            "Call (316) 400-7586 to talk to us. To send a message, text (316) 333-5434.",
+            "Tell us what the problem is doing and where it is."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Not a Good Time to Talk? Email Instead",
+          "body": [
+            "Email contactus@utcwichita.com with your name, a phone number and the address of the house or building."
+          ]
+        },
+        {
+          "type": "split",
+          "heading": "Where Is the Shutoff? Where Is the Water?",
+          "list": [
+            "What it's doing: dripping, backing up, no hot water, a smell, a wet spot.",
+            "Where it is, and where the shutoff valve is.",
+            "A photo, if you can take one safely.",
+            "Whether it's a home or a business."
+          ],
+          "image": {
+            "slot": "leak",
+            "alt": "Hand holding a phone to photograph a pipe under a sink",
+            "brief": "plumbing pool: leak"
+          },
+          "imageSide": "right"
+        },
+        {
+          "type": "prose",
+          "heading": "Derby, Haysville, Augusta and El Dorado: Text Us Your Street",
+          "body": [
+            "Derby, Haysville, Augusta and El Dorado are all in the area we work.",
+            "Text your street and nearest town to (316) 333-5434."
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Water on the Floor? Call or Text Now",
+          "text": "Call (316) 400-7586, text (316) 333-5434 or email contactus@utcwichita.com."
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "about": "Up To Code Plumbing is a Wichita plumbing company run by Ken Carrick. It handles drains, leaks, sewer lines, water heaters, fixtures and gas lines for homes and businesses.",
+    "why": [
+      "Text line (316) 333-5434",
+      "Ken Carrick, plumbing since 2013",
+      "Guarantee on our plumbing work",
+      "Free VIP membership"
+    ]
+  },
+  "strategy": {
+    "whyHeading": "Why we built this site",
+    "why": [
+      "On a phone, your current site is laid out about 980 pixels wide on a 390 pixel screen. The header buttons print over each other and the hero text is cut off. A visitor has to scroll sideways to read you.",
+      "George A. texted you a photo and got a fair quote right away. Today those words sit on Google, not on your site, and the text line is mentioned only on your booking and Augusta pages.",
+      "So the demo tells one story: send a photo, hear the price, decide. It opens with plumber in Wichita, KS, and gives sewer line repair and fixture installation a page each."
+    ],
+    "cardsHeading": "Be the Plumber People Find on Google",
+    "cardsIntro": "Each card is one page of the demo.",
+    "cards": [
+      {
+        "route": "/home/",
+        "title": "Homepage",
+        "why": "Where Google learns who you are and where you work.",
+        "problems": [
+          "Your homepage headline says “Expert Plumbers,” with no Wichita and no plumber in Wichita, so Google can't tell where you work.",
+          "Your text line and your reviews are not on the homepage."
+        ],
+        "fixes": [
+          "A headline that says plumber in Wichita, KS, right at the top.",
+          "Text a photo and ask the price, in the first screen."
+        ],
+        "alsoAdd": "Water heater replacement and tankless pages, each built for its own search, then a page for each town you serve."
+      },
+      {
+        "route": "/sewer-line-repair-wichita-ks/",
+        "title": "Sewer Line Repair",
+        "why": "When a drain backs up, people call the first plumber they find.",
+        "problems": [
+          "Sewer repair and camera inspections are one line in your services list, so “sewer line repair Wichita KS” has no page built for it.",
+          "Your drain and sewer cleaning page covers cleaning, not repair."
+        ],
+        "fixes": [
+          "A page for sewer line repair in Wichita, KS, with camera inspections explained.",
+          "A real job from your reviews: a buried pipe fixed without digging up the concrete."
+        ]
+      },
+      {
+        "route": "/fixture-installation-wichita-ks/",
+        "title": "Fixture Installation",
+        "why": "A failing faucet or toilet is a call people make from the bathroom floor.",
+        "problems": [
+          "Faucets, toilets, showers and sinks are one line on your residential page, with no page of their own.",
+          "Nothing on the site says whether you repair or replace."
+        ],
+        "fixes": [
+          "A page for plumbing fixture installation in Wichita, KS.",
+          "Real jobs from your reviews, from a shower enclosure to two frozen outdoor faucets."
+        ]
+      },
+      {
+        "route": "/contact/",
+        "title": "Contact",
+        "why": "Where someone with water on the floor decides to call.",
+        "problems": [
+          "Your booking request opens a security check page before the form shows, so some visitors never see it.",
+          "Your text number is plain text on two pages, with no line saying it's the one for messages and photos."
+        ],
+        "fixes": [
+          "Call, text and email together on one page, with a line on which is which.",
+          "What to have ready, so the first message has what we need."
+        ]
+      }
+    ],
+    "reportCardHeading": "What great plumbing websites get right, and how yours measures up.",
+    "reportCard": [
+      {
+        "label": "Site fits a phone screen",
+        "status": "Missing"
+      },
+      {
+        "label": "Headline says what you do and where",
+        "status": "Missing"
+      },
+      {
+        "label": "Each money service has its own page",
+        "status": "Needs work"
+      },
+      {
+        "label": "Booking opens straight to the form",
+        "status": "Needs work"
+      },
+      {
+        "label": "Phone number one tap away",
+        "status": "Good"
+      }
+    ],
+    "closing": {
+      "heading": "Want a website like this for your business?",
+      "text": "Your customers already describe the company you are. Book a strategy call with Fluid Frame and we’ll walk you through this demo and what a full build adds."
+    },
+    "confirm": {
+      "heading": "What we'd confirm with you",
+      "intro": "Google and AI tools see different answers about your business in different places. We wrote this demo from your reviews and your site. On a short onboarding call, we'd confirm these so everything says the same thing.",
+      "items": [
+        "Your site says Up To Code was established in 2025, while the BBB lists a start date of 11/25/2024, so which founding year should every listing use?",
+        "Your Augusta page says weekdays 7:30 AM to 7 PM and weekends 9 AM to 4 PM, while your Thumbtack listing shows Sunday opening at 7 AM and Monday at 7 AM, so which hours should Google show?",
+        "Your homepage header lists towns from Goddard to Garden Plain, while your footer and About page list Wichita, Augusta, Haysville, Derby, El Dorado and nearby towns, so which list should every listing use?",
+        "Your About page says to text (316) 400-7586, while your other page lists (316) 333-5434 as the text line, so which number should take photos?"
+      ]
+    },
+    "lead": {
+      "heading": "Why we led with the photo quote",
+      "text": "A page that says what every plumber says gives Google nothing to rank, so we built this one on things it can't find anywhere else. George A.'s photo quote and the Saturday and Sunday visits live in your Google reviews, alongside your own text line and towns. One review carries the photo quote, so tell us if that isn't how you work.",
+      "showScores": false,
+      "rows": [
+        {
+          "claim": "One customer texted a photo and got a fair quote right away",
+          "appeal": 4,
+          "exclusivity": 4,
+          "score": 16
+        },
+        {
+          "claim": "Weekend visits when something lets go",
+          "appeal": 5,
+          "exclusivity": 3,
+          "score": 15
+        },
+        {
+          "claim": "Ken takes the call and does the work himself",
+          "appeal": 4,
+          "exclusivity": 3,
+          "score": 12
+        }
+      ]
+    },
+    "unverified": {
+      "heading": "What we couldn't verify, and why it matters",
+      "intro": "We marked these on the demo as yellow \"to confirm\" tags instead of guessing, because we won't put a claim on your site we can't back up. Your site and your online listings disagree on a few of them, and the license number isn't printed anywhere.",
+      "items": [
+        {
+          "fact": "License number",
+          "why": "Someone holding a big quote wants to look up the plumber's license before they trust a second opinion."
+        },
+        {
+          "fact": "Years in business",
+          "why": "Your site, BBB and Thumbtack give different start dates, and a homeowner weighing a second opinion will notice."
+        },
+        {
+          "fact": "Hours",
+          "why": "Your site and Thumbtack list different weekend and weekday hours, and someone with water on the floor needs to know whether you'll answer."
+        }
+      ],
+      "closing": "This is what our onboarding call nails down. Fifteen minutes, and every tag becomes a real, true line."
+    }
+  }
+}

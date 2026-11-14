@@ -1,0 +1,1484 @@
+{
+  "kind": "google-review-pull",
+  "version": 1,
+  "slug": "ballinger-electric-wichita",
+  "place": {
+    "name": "Ballinger Electric",
+    "placeId": "ChIJH_JPc5-2IEYRWuyV3hyDN30",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Ballinger%20Electric&query_place_id=ChIJH_JPc5-2IEYRWuyV3hyDN30",
+    "address": "1711 S Eisenhower Ave Suite B, Wichita, KS 67209",
+    "phone": "(316) 213-4513",
+    "rating": 5,
+    "totalReviewCount": 158
+  },
+  "pulledAt": "2026-11-09T18:41:30.747Z",
+  "requestedMax": 160,
+  "reviews": [
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2s5RFlsOHplbTFFUlVRM2NtZzFTVzh5ZUhCcWMyYxAB",
+      "reviewer": "Tom G.",
+      "rating": 5,
+      "text": "Outstanding work by Kenny.",
+      "publishedAt": "2026-10-30T05:09:51.023Z",
+      "ownerResponse": "Thanks so much for the awesome review! Kenny and our team really appreciate your support.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2s5RFlsOHplbTFFUlVRM2NtZzFTVzh5ZUhCcWMyYxAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOk9DYl8zem1ERUQ3cmg1SW8yeHBqc2c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2kxelpuTlpjM3BrWkZsUlRsWjVPVlJPY3pZNGEzYxAB",
+      "reviewer": "Robby J.",
+      "rating": 5,
+      "text": "Excellent service!  Will definitely use again!",
+      "publishedAt": "2026-10-26T19:32:50.221Z",
+      "ownerResponse": "Thank you so much for your wonderful words! Our team is absolutely delighted to hear you had a fantastic experience. We can't wait to serve you again!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2kxelpuTlpjM3BrWkZsUlRsWjVPVlJPY3pZNGEzYxAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOi1zZnNZc3pkZFlRTlZ5OVROczY4a3c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21KaFVVNWZXVmhLUmpkUVoyOUJZbVZuU0dwaVVHYxAB",
+      "reviewer": "Scott W.",
+      "rating": 5,
+      "text": "Ben came out and did a great job. We spent a lot of time trying to troubleshoot and get to the problem we were experiencing. Would definitely recommend Ballinger Electric!",
+      "publishedAt": "2026-10-10T18:28:59.931Z",
+      "ownerResponse": "Thanks so much for the awesome review! Ben and our team really appreciate your recommendation and support.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21KaFVVNWZXVmhLUmpkUVoyOUJZbVZuU0dwaVVHYxAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOmJhUU5fWVhKRjdQZ29BYmVnSGpiUGc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pVeGVGTnJWV1ZEUzBwSU4zVmFlR1J3U21Vd1JVRRAB",
+      "reviewer": "John B.",
+      "rating": 5,
+      "text": "Very professional.  Performed a thorough check of my electrical system.  Highly recommend Ballinger Electric!",
+      "publishedAt": "2026-10-05T15:11:31.453Z",
+      "ownerResponse": "Thanks so much for your kind words! Our team is thrilled to hear you had a great experience with us.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pVeGVGTnJWV1ZEUzBwSU4zVmFlR1J3U21Vd1JVRRAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOjUxeFNrVWVDS0pIN3VaeGRwSmUwRUE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2s0dFgzaHRUek5VVkc5T2VuTjFXRUZqZG5nNFkzYxAB",
+      "reviewer": "Rajeeb H.",
+      "rating": 5,
+      "text": "Fair priced and knows really well what he is doing. Did a fantastic job figuring out the problem in my 50 year old house and the fix. Highly recommend.",
+      "publishedAt": "2026-09-30T23:29:11.369Z",
+      "ownerResponse": "Thanks so much for your kind words! Our team is thrilled to help with your home’s needs anytime.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2s0dFgzaHRUek5VVkc5T2VuTjFXRUZqZG5nNFkzYxAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOk4tX3htTzNUVG9OenN1WEFjdng4Y3c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xreWRuZGFTVVpyTVRSNmNHdE1ZMXBMVW5GT2JIYxAB",
+      "reviewer": "Linda M.",
+      "rating": 5,
+      "text": "Ken and his co worker did a great job running extra electrical for a new outlet. We’ve had Ken previously. He is knowledgeable, thorough and a pleasure to work with.",
+      "publishedAt": "2026-09-28T22:54:08.751Z",
+      "ownerResponse": "Thanks so much for your kind words! Our team is thrilled Kenny could help again and make everything smooth for you.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xreWRuZGFTVVpyTVRSNmNHdE1ZMXBMVW5GT2JIYxAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOlkydndaSUZrMTR6cGtMY1pLUnFObHc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT210SkxYZDRiMGh5V1RKNFNIVjBjVFl3Y1ZOa2JFRRAB",
+      "reviewer": "Terri G.",
+      "rating": 5,
+      "text": "This company is fantastic. They have done several jobs for us and their suggestions have improved our projects emensely. We highly recommend them.",
+      "publishedAt": "2026-09-27T19:17:42.919Z",
+      "ownerResponse": "Thank you so much for your kind words! Our team is thrilled to hear that our suggestions helped improve your projects.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT210SkxYZDRiMGh5V1RKNFNIVjBjVFl3Y1ZOa2JFRRAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOmtJLXd4b0hyWTJ4SHV0cTYwcVNkbEE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21Wb2ExcHFTM2xNTmtOVFptMUxWRVJ6WlhkVWQzYxAB",
+      "reviewer": "Marilyn R.",
+      "rating": 5,
+      "text": "I couldn’t be more pleased with the work I had done by this company. I chose Ben because he has the best reviews and they are very well deserved. I had 4 separate jobs and they were all completed in about 3 hours on the same day. I could not recommend this company enough.",
+      "publishedAt": "2026-09-22T21:21:24.863Z",
+      "ownerResponse": "Thanks so much for the awesome review! Our team is thrilled to hear you’re happy with Ben’s work and the quick turnaround!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21Wb2ExcHFTM2xNTmtOVFptMUxWRVJ6WlhkVWQzYxAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOmVoa1pqS3lMNkNTZm1LVERzZXdUd3c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tsa05YaDJPSFZLUXpCUloyazRkVEJKV21zNE0wRRAB",
+      "reviewer": "Ron P.",
+      "rating": 5,
+      "text": "I had 2 ceiling fans installed and both were where there were no existing lights. They put supports in the ceiling and installed the fans and wired them in. They did a fantastic job and cleaned up when finished.",
+      "publishedAt": "2026-09-19T20:55:35.539Z",
+      "ownerResponse": "Thanks so much for your kind words! Our team is thrilled you’re happy with the installation and cleanup.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tsa05YaDJPSFZLUXpCUloyazRkVEJKV21zNE0wRRAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOklkNXh2OHVKQzBRZ2k4dTBJWms4M0E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tSNFdtbHRMVmhtYUZCNWQydHVWV1pKVXpjeU1YYxAB",
+      "reviewer": "Ellen Q.",
+      "rating": 5,
+      "text": "Very nice, explained the issue well.",
+      "publishedAt": "2026-09-19T01:48:10.900Z",
+      "ownerResponse": "Thanks so much for the five star review! Our team is glad we could help and explain everything clearly.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tSNFdtbHRMVmhtYUZCNWQydHVWV1pKVXpjeU1YYxAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOkR4WmltLVhmaFB5d2tuVWZJUzcyMXc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tob2FXbHRVemwwVFZsc2JHNTVSMVZyVm5SS1RuYxAB",
+      "reviewer": "jack D.",
+      "rating": 5,
+      "text": "Meant to write this a while ago but Ballinger Electric came out to fix my oven, the previous owner had set it up all wrong and he put in a brand new outlet and wire and saved me a bunch of money from having to get a new oven, will recommend to everyone and use them for any electrical issues from now on",
+      "publishedAt": "2026-09-18T00:36:32.994Z",
+      "ownerResponse": "Thanks so much for the awesome review! Our team is thrilled we could help and save you money. We appreciate your recommendations!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tob2FXbHRVemwwVFZsc2JHNTVSMVZyVm5SS1RuYxAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOkhoaWltUzl0TVlsbG55R1VrVnRKTnc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25VM1MwbHBRakJJU1hCVVF6ZEZWRlpPTUhsNlIwRRAB",
+      "reviewer": "Maryann G.",
+      "rating": 5,
+      "text": "Very pleased with Mr. Ballinger‘s work. Amazing customer service, very timely fix two our electrical issue, explained what was going on very well. Definitely will be calling them for any future electrical issues",
+      "publishedAt": "2026-09-10T17:38:09.163Z",
+      "ownerResponse": "Thank you so much for your kind words! Our team is thrilled to hear you’re happy with the service and we’re here anytime you need us.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25VM1MwbHBRakJJU1hCVVF6ZEZWRlpPTUhsNlIwRRAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOnU3S0lpQjBISXBUQzdFVFZOMHl6R0E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25OZlVHZHpkMGhYVW1GemIzaFJOVzlRZGs1NmRuYxAB",
+      "reviewer": "Darin D.",
+      "rating": 5,
+      "text": "Ben and the team did a fantastic job! I will definitely be using them again.",
+      "publishedAt": "2026-09-04T01:24:35.934Z",
+      "ownerResponse": "Thanks so much for the awesome review! Ben and our team really appreciate your support and can’t wait to help again!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25OZlVHZHpkMGhYVW1GemIzaFJOVzlRZGs1NmRuYxAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOnNfUGdzd0hXUmFzb3hRNW9Qdk56dnc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tKd1JqUk1VWGs1YXkwM1VXZFdRVkYzWjA1T2RIYxAB",
+      "reviewer": "Cathy H.",
+      "rating": 5,
+      "text": "We are repeat customers and Ballinger Electric always exceed our expectations!",
+      "publishedAt": "2026-09-03T20:08:10.535Z",
+      "ownerResponse": "Thank you so much for your continued support! Our team is thrilled to keep exceeding your expectations!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tKd1JqUk1VWGs1YXkwM1VXZFdRVkYzWjA1T2RIYxAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOkJwRjRMUXk5ay03UWdWQVF3Z05OdHc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xCSFVuWnVjVjlaTUd3MlVucHJYekF5VFdOSGRGRRAB",
+      "reviewer": "Lita M.",
+      "rating": 5,
+      "text": "Ballinger Electric is a very reasonable company. Jayce and Kenny did a great job, and I even got to pay for 3 months at 0% APR. Ben is also great at explaining the work that needs to be done.<br>Will use them again if needed.",
+      "publishedAt": "2026-08-29T20:29:39.225Z",
+      "ownerResponse": "Thanks so much for the awesome review! Jayce, Kenny, and Ben will be thrilled to hear your kind words.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xCSFVuWnVjVjlaTUd3MlVucHJYekF5VFdOSGRGRRAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOlBHUnZucV9ZMGw2UnprXzAyTWNHdFE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xaTFIyTTRaVTgwZFhZek5HRkxZekZhVGxoWGEzYxAB",
+      "reviewer": "Wayne R.",
+      "rating": 5,
+      "text": "I just wanted to reach out and share what a wonderful experience I had working with your company! I really appreciate the excellent communication and how you took the time to explain the specific safety concerns regarding my Federal Pacific panel that other companies wouldn't address. It was incredibly helpful that you took photos and proactively checked in with the city inspector to ensure every detail of the project went smoothly.<br><br>Thank you for being so upfront about the process and for completing the work at such a fair price. I look forward to working with you again for any future electrical needs!",
+      "publishedAt": "2026-08-29T18:28:22.924Z",
+      "ownerResponse": "Thank you so much for your kind words! Our team is thrilled to hear you had a great experience and felt well-informed throughout the process.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xaTFIyTTRaVTgwZFhZek5HRkxZekZhVGxoWGEzYxAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOlZLR2M4ZU80dXYzNGFLYzFaTlhXa3c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tWa1oxYzRVMUUyWjNodWJpMXNVRWhUUjBoNGNWRRAB",
+      "reviewer": "Chris C.",
+      "rating": 5,
+      "text": "Ben and his team where top notch. Professional and courteous. They will definitely be who I call for all my electrical needs from now on",
+      "publishedAt": "2026-08-28T08:51:39.592Z",
+      "ownerResponse": "Thanks so much for your kind words! Ben and our team are thrilled to help anytime you need electrical work.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tWa1oxYzRVMUUyWjNodWJpMXNVRWhUUjBoNGNWRRAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOkVkZ1c4U1E2Z3hubi1sUEhTR0h4cVE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tKb1JWVk1YMlJWTW5CYWMxQmFWREp4TldGUVoxRRAB",
+      "reviewer": "Lan N.",
+      "rating": 5,
+      "text": "Ben came by and was super thorough and targeted in finding the solution to our problem (multiple outlets not working throughout the house).  He was on time, fast, and professional.  He was upfront with his fees and when I asked him to look at a few other items, was happy to do so.  I would not hesitate to recommend him to others.",
+      "publishedAt": "2026-08-27T18:24:26.210Z",
+      "ownerResponse": "Thanks so much for your kind words! Our team is thrilled Ben could help quickly and professionally. We appreciate your recommendation!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tKb1JWVk1YMlJWTW5CYWMxQmFWREp4TldGUVoxRRAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOkJoRVVMX2RVMnBac1BaVDJxNWFQZ1E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25BM2NqazFjVVZFYkZGemJsbFBPV296VmtRMFJrRRAB",
+      "reviewer": "Mary K.",
+      "rating": 5,
+      "text": "We had a great experience with Ballinger Electric. They provided an estimate very quickly and it was very fair, giving us a couple of different options. The work was completed very timely and efficiently. Kenny and Jayse were both very polite and did a great job. I would highly recommend them for your electrical needs!",
+      "publishedAt": "2026-08-24T20:43:44.666Z",
+      "ownerResponse": "Thanks so much for your kind words! Our team loved helping you and really appreciate your recommendation.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25BM2NqazFjVVZFYkZGemJsbFBPV296VmtRMFJrRRAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOnA3cjk1cUVEbFFzbllPOWozVkQ0RkE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25KMGNGY3pjSGxXU1RSU1ZEZGtORlp1ZVdWUWExRRAB",
+      "reviewer": "kenny W.",
+      "rating": 5,
+      "text": "Great work and efficient! He did a complementary inspection on my electrical system and gave me a couple of things to be aware about to be up to code. Highly recommended Ballinger Electric!",
+      "publishedAt": "2026-08-19T15:32:48.398Z",
+      "ownerResponse": "Thanks so much for the awesome review! Our team loves helping out and keeping things safe and efficient.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25KMGNGY3pjSGxXU1RSU1ZEZGtORlp1ZVdWUWExRRAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOnJ0cFczcHlWSTRSVDdkNFZueWVQa1E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2psWlVWUlhjSFZTVWs1cmRUaEZUMnh5TUhkeWJuYxAB",
+      "reviewer": "Che J.",
+      "rating": 5,
+      "text": "Quick, efficient, and professional. Lost power to my garage and they fixed it up. Pointed out the previous home owners diy mess and pointed out where we go from there. Definitely recommend them and will be using them again.",
+      "publishedAt": "2026-08-12T15:02:57.255Z",
+      "ownerResponse": "Thanks so much for the awesome review! Our team is glad we could help and look forward to assisting you again.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2psWlVWUlhjSFZTVWs1cmRUaEZUMnh5TUhkeWJuYxAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOjlZUVRXcHVSUk5rdThFT2xyMHdybnc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xsTmJFVmhSakJrTW1SbmJEZFVXakYxTTIxM09GRRAB",
+      "reviewer": "Jennifer L.",
+      "rating": 5,
+      "text": "Wonderful company. For 9 weeks I waited for someone to pick up my job through QMerritt to have a car charger installed. This company is thru ICT. They were willing to come out due to a previous job close to me. The gentleman who came and installed ir was the sweetest guy. He loved his job, he loved what he did. So rare anymore to find someone like this. That love for job oozed out on his commitment to service to the customer and his pride in a job well done. Very happy with this company!",
+      "publishedAt": "2026-08-09T09:06:19.613Z",
+      "ownerResponse": "Thank you so much for your kind words! Our team is thrilled to hear about your great experience and the dedication you noticed.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xsTmJFVmhSakJrTW1SbmJEZFVXakYxTTIxM09GRRAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOllNbEVhRjBkMmRnbDdUWjF1M213OFE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25Nd1RXMWhTMkZXWWxrMGFVWktNV1pLY1dSa2NFRRAB",
+      "reviewer": "Larry S.",
+      "rating": 5,
+      "text": "They was very prompt and did a amazing job wiring in our new stove and checking all our outlets very happy will use again",
+      "publishedAt": "2026-08-05T16:28:12.048Z",
+      "ownerResponse": "Thanks so much for the awesome review! Our team is thrilled to hear you’re happy with the stove wiring and outlet check.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25Nd1RXMWhTMkZXWWxrMGFVWktNV1pLY1dSa2NFRRAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOnMwTW1hS2FWYlk0aUZKMWZKcWRkcEE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tVMU5YRlVkVGg1UlVKU2FtVjBiMW93UmxwdGNWRRAB",
+      "reviewer": "Elena W.",
+      "rating": 5,
+      "text": "First off Ben was willing to come take a look at our electrical mess when others wouldn’t give us the time of day. Secondly his quote was fair and his guys were able to get on us on the schedule quickly. Lastly, they were beyond professional! I got a reminder the day before we were scheduled, another update when they were headed our way, and the guys let me know updates throughout the whole process.",
+      "publishedAt": "2026-07-30T15:16:27.612Z",
+      "ownerResponse": "Thanks so much for your kind words! Our team is thrilled to hear you appreciated the communication and professionalism.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tVMU5YRlVkVGg1UlVKU2FtVjBiMW93UmxwdGNWRRAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOkU1NXFUdTh5RUJSamV0b1owRlptcVE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pkYWFIcG9NbkZhWW5vM1NFMDRWbEoxUVcxalptYxAB",
+      "reviewer": "Jack C.",
+      "rating": 4,
+      "text": "Very friendly people and professional.  I'm a little perplexed at the price I was charged, but I haven't had an electrical do any work for several years. They changed out 3 can lights in about 20 minutes and charged over $300.00. I know things have increased in price and I'm probably a few years behind times. I was confused as to why they wouldn't put the type of light they used. The invoice just said replaced 3 lights. I sent a text but to my surprise I didn't get an answer. Would I use them again probably.",
+      "publishedAt": "2026-07-15T12:00:46.985Z",
+      "ownerResponse": "Thank you for your honest feedback and for recognizing our team as friendly and professional. We apologize for not responding to your text sooner—that was an oversight on our part. We also agree that the invoice should have included a clearer description of the products installed.<br><br>Ballinger Electric prices work by the completed task rather than by the amount of time spent on site. This pricing includes the products, installation, business operating costs, and our ability to stand behind both the workmanship and the fixtures after the job is complete.<br><br>We appreciate your business, your feedback, and your willingness to consider using us again.<br>",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pkYWFIcG9NbkZhWW5vM1NFMDRWbEoxUVcxalptYxAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOjdaaHpoMnFaYno3SE04VlJ1QW1jZmc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xFeU1UbGhOM1pNU1hoT1pISnJjeTExWkRJeE4zYxAB",
+      "reviewer": "Shelly B.",
+      "rating": 5,
+      "text": "These guys were great to work with, on time, polite and knowledgeable.  We had them remove electrical from an area it was no longer needed and you can't even tell anything was done. Looks great.",
+      "publishedAt": "2026-07-08T18:32:27.398Z",
+      "ownerResponse": "Thanks so much for the awesome feedback! Our team is thrilled you’re happy with the work and the clean finish.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xFeU1UbGhOM1pNU1hoT1pISnJjeTExWkRJeE4zYxAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOlEyMTlhN3ZMSXhOZHJrcy11ZDIxN3c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2sxc2RFUjVSRUZhUmtsTVJqVnFlWEphWW1SdE5WRRAB",
+      "reviewer": "C T.",
+      "rating": 5,
+      "text": "Came out the next day after phone call and installed light fixtures.  Great price, professional/friendly crew, will use for all my electrical needs going forward.",
+      "publishedAt": "2026-06-25T19:11:12.035Z",
+      "ownerResponse": "Thanks so much for the awesome review! Our team is thrilled to help and looks forward to your future projects.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2sxc2RFUjVSRUZhUmtsTVJqVnFlWEphWW1SdE5WRRAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOk1sdER5REFaRklMRjVqeXJaYmRtNVE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25wbE1GbEhaVzFOUzJ0cmJHRnBUSFZ5U2tkYVVFRRAB",
+      "reviewer": "Katie M.",
+      "rating": 5,
+      "text": "Ben was amazing! Very knowledgeable and great work! I would definitely recommend him!",
+      "publishedAt": "2026-06-24T20:57:17.898Z",
+      "ownerResponse": "Thank you for your generous feedback. Our team is pleased to learn of your positive experience. We sincerely appreciate your recommendation.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25wbE1GbEhaVzFOUzJ0cmJHRnBUSFZ5U2tkYVVFRRAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOnplMFlHZW1NS2trbGFpTHVySkdaUEE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21oMVFUVnRhak5aVUY5c2MyeFdYelpIWjA0MVlXYxAB",
+      "reviewer": "Don F.",
+      "rating": 5,
+      "text": "Outstanding service and at the lower end of the quote. Highly recommend Ben and his crew",
+      "publishedAt": "2026-05-29T00:29:19.349Z",
+      "ownerResponse": "Thanks so much for the awesome review! Our team really appreciates your recommendation and kind words.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21oMVFUVnRhak5aVUY5c2MyeFdYelpIWjA0MVlXYxAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOmh1QTVtajNZUF9sc2xWXzZHZ041YWc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tRelRFTndkRlp4YTFOSFJEVjNja2cxYUdwR2JWRRAB",
+      "reviewer": "colter L.",
+      "rating": 5,
+      "text": "Incredibly happy with the work done by Ballinger electric. Very professional, excellent at explaining the work being done. Fast and friendly. Moving forward, I will always go to them for electrical work.",
+      "publishedAt": "2026-05-26T19:51:08.602Z",
+      "ownerResponse": "Thank you so much for your kind words! Our team is thrilled to hear you had a great experience.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tRelRFTndkRlp4YTFOSFJEVjNja2cxYUdwR2JWRRAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOkQzTENwdFZxa1NHRDV3ckg1aGpGbVE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2sxZmFFNXFjblpoYjNkS1VUTXlUM2huUmpCSU5VRRAB",
+      "reviewer": "Gary P.",
+      "rating": 5,
+      "text": "Amazing experience. Ben was super responsive and professional. I will use them anytime I need electrical work.",
+      "publishedAt": "2026-05-20T18:46:52.797Z",
+      "ownerResponse": "Thanks so much for the awesome review! Ben and our team really appreciate your kind words and look forward to helping you again.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2sxZmFFNXFjblpoYjNkS1VUTXlUM2huUmpCSU5VRRAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOk1faE5qcnZhb3dKUTMyT3hnRjBINUE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURuMGFHb1JBEAE",
+      "reviewer": "Misti C.",
+      "rating": 5,
+      "text": "We are repeat customers. Always explains the job and is professional.",
+      "publishedAt": "2026-05-20T15:17:32.689Z",
+      "ownerResponse": "Thank you for your kind words! Our team is glad we could help out quickly and explain everything. We appreciate your recommendation and are here whenever you need us.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURuMGFHb1JBEAE!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CIHM0ogKEICAgIDn0aGoRA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xScE5GbHdWV3B1ZDJsRFNVTmljMloyTXpaNVNWRRAB",
+      "reviewer": "Joshua D.",
+      "rating": 5,
+      "text": "Met with Ben to get a quote for a level 2 ev charger install and Jayse was able to come out two days later to do the installation. Both were great to work with and the quote for the work performed was fair in my opinion. I would refer anyone I know that needs electrical work to call Ballinger Electric!",
+      "publishedAt": "2026-05-16T22:06:07.622Z",
+      "ownerResponse": "Thanks so much for your awesome review! Our team is thrilled Ben and Jayse made your EV charger install smooth.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xScE5GbHdWV3B1ZDJsRFNVTmljMloyTXpaNVNWRRAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOlRpNFlwVWpud2lDSUNic2Z2MzZ5SVE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xKVU5rcFVaM2R0UWtKb09HbGlWMEZRWld4WVdFRRAB",
+      "reviewer": "Kim L.",
+      "rating": 5,
+      "text": "Ben was prompt and professional. He installed a stove hood, added electrical outlet and vented it outside. This was completed nicely. I recommend Ben and this company. Very professional and reasonable price.",
+      "publishedAt": "2026-05-05T02:19:54.821Z",
+      "ownerResponse": "Thank you so much for your wonderful feedback! Our team is thrilled that Ben could help you, and we truly appreciate your recommendation.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xKVU5rcFVaM2R0UWtKb09HbGlWMEZRWld4WVdFRRAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOlJUNkpUZ3dtQkJoOGliV0FQZWxYWEE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xSelQwdzVUa0p5ZG1WVFRsbGxhVVJHZWkxSFJsRRAB",
+      "reviewer": "Sonja B.",
+      "rating": 5,
+      "text": "Excellent work.  Will use again",
+      "publishedAt": "2026-04-29T20:52:06.059Z",
+      "ownerResponse": "Thank you for your positive feedback! Our team eagerly anticipates the opportunity to assist you again in the near future.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xSelQwdzVUa0p5ZG1WVFRsbGxhVVJHZWkxSFJsRRAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOlRzT0w5TkJydmVTTlllaURGei1HRlE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xWVVRVcENNR05LVkdwaFpIQkljSE0zTjNOWVZsRRAB",
+      "reviewer": "LB L.",
+      "rating": 5,
+      "text": "Ben was knowledgeable and professional. Fixed our issue same day. Highly recommend.",
+      "publishedAt": "2026-04-28T23:31:41.120Z",
+      "ownerResponse": "Thanks a bunch for the awesome review! Ben and the team are super excited to help whenever you need us.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xWVVRVcENNR05LVkdwaFpIQkljSE0zTjNOWVZsRRAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOlVUTUpCMGNKVGphZHBIcHM3N3NYVlE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tzMVVVNHRTSEoyUld4TGJVUkVVMU5ZTTBOcmFsRRAB",
+      "reviewer": "Dan U.",
+      "rating": 5,
+      "text": "Very knowledgeable and friendly.",
+      "publishedAt": "2026-04-21T17:52:22.935Z",
+      "ownerResponse": "Thank you for your positive feedback. We are pleased to hear that you had a satisfactory experience.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tzMVVVNHRTSEoyUld4TGJVUkVVMU5ZTTBOcmFsRRAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOks1UU4tSHJ2RWxLbUREU1NYM0NralE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xoblNEWXlZMmhEVTFNeVRFazBjakYwYkhKWGRuYxAB",
+      "reviewer": "Laura B.",
+      "rating": 5,
+      "text": "Excellent work, speedy, and prices were fair. Highly recommend!",
+      "publishedAt": "2026-04-18T14:42:24.526Z",
+      "ownerResponse": "We sincerely appreciate your positive feedback. Our team is delighted to know that you had an excellent experience.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xoblNEWXlZMmhEVTFNeVRFazBjakYwYkhKWGRuYxAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOlhnSDYyY2hDU1MyTEk0cjF0bHJXdnc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tGaU1XOVJMV2RYUXpWa1FteFpPVkkxVURWcGQxRRAB",
+      "reviewer": "Ryan P.",
+      "rating": 5,
+      "text": "Ben and Jayse showed up at the time they said the would, came prepared to do the job, and communicated with me clearly throughout the process. It was comfortable having them work in my home - I hardly noticed they were there. Highly recommend!",
+      "publishedAt": "2026-04-16T21:11:20.720Z",
+      "ownerResponse": "Thanks so much for the kind words! Ben and Jayse will be thrilled to hear this. We appreciate your recommendation!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tGaU1XOVJMV2RYUXpWa1FteFpPVkkxVURWcGQxRRAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOkFiMW9RLWdXQzVkQmxZOVI1UDVpd1E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pKWGEzVkNTRWxEUTBkNFVGUmtkWEZoVW5ST2VXYxAB",
+      "reviewer": "Blake",
+      "rating": 5,
+      "text": "Ben and his team at Ballinger Electric are amazing. Have used him over 5 times now on several properties and nothing short of impressive every time. Highly recommend.",
+      "publishedAt": "2026-04-13T20:49:41.627Z",
+      "ownerResponse": "Thanks so much for the kind words! Our team loves helping you and looks forward to the next project.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pKWGEzVkNTRWxEUTBkNFVGUmtkWEZoVW5ST2VXYxAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOjJXa3VCSElDQ0d4UFRkdXFhUnROeWc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pRd2RIWkxSblZWZEVoVlJWTm9OV05NVm1oaFNVRRAB",
+      "reviewer": "Daniel F.",
+      "rating": 5,
+      "text": "Fast response,  friendly to work with and informative about things needed and different options.",
+      "publishedAt": "2026-04-06T19:42:49.366Z",
+      "ownerResponse": "Thanks so much for the awesome review! Our team loves helping out and sharing all the options with you.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pRd2RIWkxSblZWZEVoVlJWTm9OV05NVm1oaFNVRRAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOjQwdHZLRnVVdEhVRVNoNWNMVmhhSUE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tFdFZuSnJjbE5TY1dSbFEwTm5hWGhVT1hScE5GRRAB",
+      "reviewer": "Todd C.",
+      "rating": 5,
+      "text": "We had a great experience with Ben as we called on Friday and he was able to get us in for work to be done on Monday.  He called and explained everything that needed to be done.  Very personable and easy to work with.  Will definitely be calling him for any other needs.",
+      "publishedAt": "2026-04-02T18:35:17.611Z",
+      "ownerResponse": "Thanks so much for sharing your experience! We're thrilled Ben could help quickly and made everything clear. Looking forward to assisting you again!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tFdFZuSnJjbE5TY1dSbFEwTm5hWGhVT1hScE5GRRAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOkEtVnJrclNScWRlQ0NnaXhUOXRpNFE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT201SFRWZHFieloxYjBGdVJYSkdPV3RPY25CMWFuYxAB",
+      "reviewer": "Taygen A.",
+      "rating": 5,
+      "text": "I loved having Ballinger in our house! They were polite, informed, and got the job done quickly. We had to change our water heater from gas to electric and they offered to do it the next day after we called them. Provided explanations for everything they did and made sure I had no questions before leaving. Will definitely be using them again if the need arises.",
+      "publishedAt": "2026-03-24T16:09:56.609Z",
+      "ownerResponse": "Thank you for your positive review. Our team is delighted to learn that you had a satisfactory experience. Please know that we are here to assist you whenever you need our services.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT201SFRWZHFieloxYjBGdVJYSkdPV3RPY25CMWFuYxAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOm5HTVdqbzZ1b0FuRXJGOWtOcnB1anc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2s0NGJtUlRjMnhoY2tsVWJWVjVUWGxSYmtacVNsRRAB",
+      "reviewer": "Jay B.",
+      "rating": 5,
+      "text": "Ben and Jase were very thorough, and knowledgeable, and they readily answered questions, and were easy to talk with. In addition to installing the ceiling fan they performed a safety check of the house and updated a couple of things at our request. We were very pleased with their service",
+      "publishedAt": "2026-03-17T00:26:13.149Z",
+      "ownerResponse": "Thanks so much for the kind words! Ben and Jayse are thrilled to hear you’re happy with their work.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2s0NGJtUlRjMnhoY2tsVWJWVjVUWGxSYmtacVNsRRAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOk44bmRTc2xhcklUbVV5TXlRbkZqSlE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2sxT1VrOWhOMWRXTUdOeVMyUmZZVkpRVEdFeVJtYxAB",
+      "reviewer": "Mindy B.",
+      "rating": 5,
+      "text": "Cannot say enough good things about Ben. He fit me in during an emergency situation, showed up quickly, and took the time to explain everything very thoroughly so I actually understood what was going on. He really went out of his way to help and made a stressful situation so much easier. On top of that, he’s just a genuinely nice guy. I would absolutely recommend Ben to anyone who needs electrical work.",
+      "publishedAt": "2026-03-16T22:25:13.638Z",
+      "ownerResponse": "Thanks so much for your kind words! Our team is thrilled Ben could help and make things easier for you.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2sxT1VrOWhOMWRXTUdOeVMyUmZZVkpRVEdFeVJtYxAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOk1OUk9hN1dWMGNyS2RfYVJQTGEyRmc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21WWmJ6UkdRa1l3YzBGVFMwVTJjVmN5ZWt0VVRsRRAB",
+      "reviewer": "Dusten M.",
+      "rating": 5,
+      "text": "Great company to work with.  Needed a new outlet and a few light fixtures for a bathroom remodel.  Excellent communication, explained everything up front and did the work for a fair price.  Was able to get me on his schedule quickly which I very much appreciated.  Will definitely work with them again on any future electrical work.",
+      "publishedAt": "2026-03-12T19:04:53.951Z",
+      "ownerResponse": "Thanks so much for your kind words! Our team is thrilled to hear you had a great experience. Looking forward to helping you again!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21WWmJ6UkdRa1l3YzBGVFMwVTJjVmN5ZWt0VVRsRRAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOmVZbzRGQkYwc0FTS0U2cVcyektUTlE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25sa1JDMVlVM04zVlVnMkxXTmpXbVJ0VjFKVlRWRRAB",
+      "reviewer": "Bryce J.",
+      "rating": 5,
+      "text": "Ben is the most kind and knowledgeable electrician in Wichita!",
+      "publishedAt": "2026-03-09T23:29:45.275Z",
+      "ownerResponse": "Thanks so much for your kind words! Our team is thrilled Ben could help and we appreciate your support!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25sa1JDMVlVM04zVlVnMkxXTmpXbVJ0VjFKVlRWRRAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOnlkRC1YU3N3VUg2LWNjWmRtV1JVTVE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21kNGMxOUxYMlZVVURCRVNFWlNaMUU1YW5oeVFYYxAB",
+      "reviewer": "Ariana B.",
+      "rating": 5,
+      "text": "Very good at installing our light they were also very timely! And very nice. Would definitely use again and recommend them to all the people needing service.",
+      "publishedAt": "2026-03-07T19:35:28.631Z",
+      "ownerResponse": "Thank you so much for your kind words! Our team is thrilled to hear you’re happy with the service and timing.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21kNGMxOUxYMlZVVURCRVNFWlNaMUU1YW5oeVFYYxAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOmd4c19LX2VUUDBESEZSZ1E5anhyQXc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21rNFMxOTRNRU5tZDBoMGFYZElVekZFV0hGdWRHYxAB",
+      "reviewer": "Mark N.",
+      "rating": 5,
+      "text": "Ben was very good at explaining every diagnostic step and found and corrected the problem, a bad breaker",
+      "publishedAt": "2026-03-05T19:56:25.234Z",
+      "ownerResponse": "Thanks so much for the great review! Ben and our team are glad to help and fix the issue quickly.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21rNFMxOTRNRU5tZDBoMGFYZElVekZFV0hGdWRHYxAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOmk4S194MENmd0h0aXdIUzFEWHFudGc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnTUR3a0xLUHFBRRAB",
+      "reviewer": "Terri H.",
+      "rating": 5,
+      "text": "I would without a doubt recommend Ballinger Electric.  Once again Ben helped us out quickly and efficiently.  Always friendly and knowledgeable and answers all our questions.",
+      "publishedAt": "2026-03-02T21:19:18.689Z",
+      "ownerResponse": "Thank you for recommending our team! We're thrilled to hear Ben provided friendly, professional, and knowledgeable service. We're here for all your electrical needs and look forward to assisting you in the future.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTUR3a0xLUHFBRRAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CIHM0ogKEICAgMDwkLKPqAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tGZlJHOVhSRnA0VUZkUE1HOUlhRGt5VmtSbVZWRRAB",
+      "reviewer": "Steve A.",
+      "rating": 5,
+      "text": "Ben did a great job installing outdoor lighting around my house. He was prompt with scheduling and showing up on time and explained well how he was going to do the job - great communicator.  I would highly recommend him for any of your electrical needs.",
+      "publishedAt": "2026-02-25T21:54:11.443Z",
+      "ownerResponse": "Thank you for your kind feedback. Our team is delighted to hear that Ben was able to deliver excellent service and effective communication.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tGZlJHOVhSRnA0VUZkUE1HOUlhRGt5VmtSbVZWRRAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOkFfRG9XRFp4UFdPMG9IaDkyVkRmVVE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pseWRFSmFabWRTTUZNeFRtSTVVbWQyYUY4dGFHYxAB",
+      "reviewer": "Mary G.",
+      "rating": 5,
+      "text": "I am very pleased with their work. They showed up promptly with a phone call first. Work was very professional and the electricians were friendly and finished my projects within a short amount of time. I would highly recommend Ballinger Electric Company.",
+      "publishedAt": "2026-02-23T17:58:54.720Z",
+      "ownerResponse": "Thank you so much for your kind words! Our team is thrilled to hear you had a great experience.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pseWRFSmFabWRTTUZNeFRtSTVVbWQyYUY4dGFHYxAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOjlydEJaZmdSMFMxTmI5Umd2aF8taGc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2kxMlUwMDFjR0YyZFVkM05XNU5jekZDY0RGVllrRRAB",
+      "reviewer": "D L.",
+      "rating": 5,
+      "text": "Did a good job fast and clean.",
+      "publishedAt": "2026-02-10T22:27:32.593Z",
+      "ownerResponse": "Thanks so much for the awesome review! Our team is thrilled to hear you’re happy with the fast and clean work.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2kxMlUwMDFjR0YyZFVkM05XNU5jekZDY0RGVllrRRAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOi12U001cGF2dUd3NW5NczFCcDFVYkE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21kaWNFTkdkMnR5UjA0eFkyaGxiM1JIVFZGR2JXYxAB",
+      "reviewer": "Dorothy L.",
+      "rating": 5,
+      "text": "Ballinger Electric is a great company. They have integrity, promptness, friendliness, and do awesome work. I don't think you could find a better electric company to do multiple different tasks. When it's done by Ballinger, you know it's done right!!",
+      "publishedAt": "2026-01-28T21:34:45.131Z",
+      "ownerResponse": "Thank you for your valuable feedback. Our team sincerely appreciates your kind words and continued support.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21kaWNFTkdkMnR5UjA0eFkyaGxiM1JIVFZGR2JXYxAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOmdicENGd2tyR04xY2hlb3RHTVFGbWc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2kxclUzcHhWM0ZSVlZJNVRXRnROMjVYYVhseGJsRRAB",
+      "reviewer": "Brenda M.",
+      "rating": 5,
+      "text": "Great people to work with! Ben was able to come to my business within an hour of calling! Luckily our problem was fairly easy and quick for them to fix. Will definitely call them for anything else we need!",
+      "publishedAt": "2026-01-26T00:38:01.323Z",
+      "ownerResponse": "Thanks so much for your kind words! We're thrilled Ben could help quickly and look forward to assisting you again!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2kxclUzcHhWM0ZSVlZJNVRXRnROMjVYYVhseGJsRRAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOi1rU3pxV3FRVVI5TWFtN25XaXlxblE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pWSVkySjZiMnMwUW1SMlRVdGFMVzAyUzJWbVgzYxAB",
+      "reviewer": "Chris B.",
+      "rating": 5,
+      "text": "This team was great. Ben picked up the phone right away, was quick to come out and assess the situation, gave me multiple options for resolving my issue, and then took care of everything in a timely manner with a fair price. I felt he was honest, and I will be calling them back if more work is needed.",
+      "publishedAt": "2026-01-13T19:06:28.389Z",
+      "ownerResponse": "Thanks so much for your kind words! Our team is always here to help and we appreciate your trust.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pWSVkySjZiMnMwUW1SMlRVdGFMVzAyUzJWbVgzYxAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOjVIY2J6b2s0QmR2TUtaLW02S2VmX3c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT213elZITldjbXREUkV0NGNERkhibVZJVDJOcVowRRAB",
+      "reviewer": "Dawn P.",
+      "rating": 5,
+      "text": "Excellent!  From the initial consult through the completed job very courteous and professional.",
+      "publishedAt": "2025-12-20T19:41:53.219Z",
+      "ownerResponse": "We sincerely appreciate your positive feedback. Our team is pleased to learn that you had an exceptional experience throughout the entire process.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT213elZITldjbXREUkV0NGNERkhibVZJVDJOcVowRRAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOmwzVHNWcmtDREt4cDFHbmVIT2NqZ0E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25sTFNrSjBWVlptV0RBNVR6SnBYMEpDUzBKak1XYxAB",
+      "reviewer": "damanieves1",
+      "rating": 5,
+      "text": "Very professional, efficient and went out of their way to male everything happen!",
+      "publishedAt": "2025-12-11T21:25:16.097Z",
+      "ownerResponse": "Thank you so much for your kind words! Our team is thrilled to hear you had a great experience.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25sTFNrSjBWVlptV0RBNVR6SnBYMEpDUzBKak1XYxAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOnlLSkJ0VVZmWDA5TzJpX0JCS0JjMWc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pBMFJ6WkJZaTE1VUUxeFkwVlhZbUpvTm13MGRWRRAB",
+      "reviewer": "Liz B.",
+      "rating": 5,
+      "text": "They both were very professional. Researched all the outlets and wires. Found the problem and fixed it.",
+      "publishedAt": "2025-12-09T23:08:46.285Z",
+      "ownerResponse": "Thanks so much for your kind words! Our team is glad we could help fix the issue quickly and professionally.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pBMFJ6WkJZaTE1VUUxeFkwVlhZbUpvTm13MGRWRRAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOjA0RzZBYi15UE1xY0VXYmJoNmw0dVE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21KM1VFMHRNMTkzVDFKUGVqQmljV2h1YUVKNmMyYxAB",
+      "reviewer": "Matthew R.",
+      "rating": 5,
+      "text": "Will be my go to for my electrical needs going forward! Top notch service and communication!",
+      "publishedAt": "2025-12-08T21:38:15.875Z",
+      "ownerResponse": "Thank you so much! Our team is thrilled to be your go-to for all your electrical needs. We appreciate your kind words!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21KM1VFMHRNMTkzVDFKUGVqQmljV2h1YUVKNmMyYxAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOmJ3UE0tM193T1JPejBicWhuaEJ6c2c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21wUGQwZHpiRlpsTkZKRVIya3diMUpJTWtwUWVWRRAB",
+      "reviewer": "Terry P.",
+      "rating": 5,
+      "text": "Tremendous!!!",
+      "publishedAt": "2025-11-16T00:06:59.019Z",
+      "ownerResponse": "Thank you so much for the amazing rating! Our team is thrilled you had a tremendous experience!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21wUGQwZHpiRlpsTkZKRVIya3diMUpJTWtwUWVWRRAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOmpPd0dzbFZlNFJER2kwb1JIMkpQeVE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21RdE4yWmtaVFUzTTBjMFlqQlFia0U1TUU1SWIzYxAB",
+      "reviewer": "Anna L.",
+      "rating": 5,
+      "text": "Ballinger Electric provided me with 10/10 service. Ben was honest, reliable, and very informative, answering all my questions with care. I would 100% hire him again for any future projects!",
+      "publishedAt": "2025-11-15T19:33:14.068Z",
+      "ownerResponse": "Thanks so much for the awesome review! Our team, especially Ben, really appreciates your kind words and looks forward to helping you again!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21RdE4yWmtaVFUzTTBjMFlqQlFia0U1TUU1SWIzYxAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOmQtN2ZkZTU3M0c0YjBQbkE5ME5Ib3c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pSQloxQmlUelZCVkVJNVJXUkliQzE0UkdNMVRIYxAB",
+      "reviewer": "Belinda R.",
+      "rating": 5,
+      "text": "Nice guys.  Did an inspection and made note of a missing smoke detector I had forgotten about.  I will be using them to replace my smoke detectors and for lighting in the future.  Replaced kitchen outlets very quickly.",
+      "publishedAt": "2025-11-13T13:50:12.904Z",
+      "ownerResponse": "Thanks so much for the great review! Our team is glad to help and looks forward to assisting you again soon!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pSQloxQmlUelZCVkVJNVJXUkliQzE0UkdNMVRIYxAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOjRBZ1BiTzVBVEI5RWRIbC14RGM1THc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xneVlXVXhWV1pQUlhsV1lucHVaMTlTTFhOTlVYYxAB",
+      "reviewer": "Freddy R.",
+      "rating": 5,
+      "text": "Your service  men did a wonderful job  of diagnosis  of my electrical  problems, they were on time and worked hard ,climbing  into a  very cramped  small attic space to find and fix my system, I would  recommend  them to anyone, price was great considering  all the work they provided",
+      "publishedAt": "2025-11-12T12:02:58.078Z",
+      "ownerResponse": "Thanks so much for your kind words! Our team is thrilled to hear you’re happy with the service and price. We appreciate your recommendation!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xneVlXVXhWV1pQUlhsV1lucHVaMTlTTFhOTlVYYxAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOlgyYWUxVWZPRXlWYnpuZ19SLXNNUXc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xScE0yMWhRMWRmVEdaclVUSjBhbEY2VDFwQmQwRRAB",
+      "reviewer": "lady T.",
+      "rating": 5,
+      "text": "Ben and Jay are the nicest most efficient workers ever. Super great. I'll be calling them next time I  need an electrician. They worked so fast I couldn't believed it. I'm black and i never feel uncomfortable. They didn't try to jack up my price. I'm also a single retired grandma with 3 grandkids to raise. They gained a new customer for this old wacky shack. Call them. You'll be glad you did.",
+      "publishedAt": "2025-10-29T15:32:24.835Z",
+      "ownerResponse": "Thank you for your kind feedback. Our team is pleased to hear that you felt comfortable and valued during your experience with us. We look forward to the opportunity to assist you again in the near future.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xScE0yMWhRMWRmVEdaclVUSjBhbEY2VDFwQmQwRRAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOlRpM21hQ1dfTGZrUTJ0alF6T1pBd0E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tsSVJtRTFZVzE2Y0VNelVXODJWWEoyV2w5R1ZrRRAB",
+      "reviewer": "kyle W.",
+      "rating": 5,
+      "text": "Ben upgraded our family room with new energy efficient lighting with dimmers and recessed. Makes it so much more of a livable space for my family! He explained in detail and followed up with me week later for any questions!!",
+      "publishedAt": "2025-10-23T15:04:10.045Z",
+      "ownerResponse": "Thank you for your generous feedback. Our team is delighted to know that you are enjoying your upgraded family room.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tsSVJtRTFZVzE2Y0VNelVXODJWWEoyV2w5R1ZrRRAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOklIRmE1YW16cEMzUW82VXJ2Wl9GVkE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tkSVl6VnlXR1UxTFRaSlJ6UnJkRXA2ZVRWbWVFRRAB",
+      "reviewer": "Ashley S.",
+      "rating": 5,
+      "text": "Ben is phenomenal! So knowledgeable, and helpful. I could never say enough about the great work he does.",
+      "publishedAt": "2025-10-23T15:03:40.022Z",
+      "ownerResponse": "Our team really appreciate your support and are here whenever you need us. Thanks so much for your kind words!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tkSVl6VnlXR1UxTFRaSlJ6UnJkRXA2ZVRWbWVFRRAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOkdIYzVyWGU1LTZJRzRrdEp6eTVmeEE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25BdE5UWjVNa1JIWVcxSk1XZzFjMFp6Ym1abFgzYxAB",
+      "reviewer": "Brandon M.",
+      "rating": 5,
+      "text": "Ben is incredibly honest and professional.",
+      "publishedAt": "2025-10-23T15:03:31.328Z",
+      "ownerResponse": "Thanks so much for your kind words! Our team is thrilled to hear about your great experience with Ben and our team.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25BdE5UWjVNa1JIWVcxSk1XZzFjMFp6Ym1abFgzYxAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOnAtNTZ5MkRHYW1JMWg1c0ZzbmZlX3c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21WblJTMXRSSG94YzNSM2NIZFhjM0l4TlZGTlVIYxAB",
+      "reviewer": "Jenny R.",
+      "rating": 5,
+      "text": "Great honest work!",
+      "publishedAt": "2025-10-23T15:03:28.056Z",
+      "ownerResponse": "Thanks so much for the awesome review! Our team really appreciates your support and kind words.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21WblJTMXRSSG94YzNSM2NIZFhjM0l4TlZGTlVIYxAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOmVnRS1tRHoxc3R3cHdXc3IxNVFNUHc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2taT2FreDBSRlpRUkhsR2FFZHNVVkpqWmxvNFJsRRAB",
+      "reviewer": "Alan B.",
+      "rating": 5,
+      "text": "What a pleasure, having someone with a professional disposition and pleasant that does a very good job.  No surprises.  He reviewed and gave a bid of what we wanted completed and he did what he said.  Ben will be our go to person.   Definitely, recommend Ben Ballinger.",
+      "publishedAt": "2025-10-16T12:56:34.853Z",
+      "ownerResponse": "Thanks so much for your kind words! Our team is thrilled Ben could help, and we look forward to assisting you again!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2taT2FreDBSRlpRUkhsR2FFZHNVVkpqWmxvNFJsRRAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOkZOakx0RFZQRHlGaEdsUVJjZlo4RlE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2twZk5FSnRlVkJHZWt0VlJFMTBjREJ5WW05WFozYxAB",
+      "reviewer": "Michael A.",
+      "rating": 5,
+      "text": "The personality of the workers was respectful and the did the job as quoted.  They cleaned up after themselves as well. My only wish was that it was a little cheaper. But, the sevice was exemplary.",
+      "publishedAt": "2025-09-29T18:33:52.320Z",
+      "ownerResponse": "Thanks so much for your kind words! We're glad our team met your expectations and appreciate your feedback on pricing.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2twZk5FSnRlVkJHZWt0VlJFMTBjREJ5WW05WFozYxAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOkpfNEJteVBGektVRE10cDByYm9XZ3c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2swMGIzVnJhWEpMVTBzNU9IcHFZVTlmWjFac2VtYxAB",
+      "reviewer": "Debbie M.",
+      "rating": 5,
+      "text": "Ballinger Electric trenched in electric line to our new greenhouse.  Ben Ballinger arrived on time  and completed job on time for a reasonable price.  We will definitely contact Ballinger for any future  electrical needs.  Highly recommend.",
+      "publishedAt": "2025-09-13T13:52:41.828Z",
+      "ownerResponse": "Thanks so much for your kind words! Our team is thrilled to hear you’re happy with the service. Looking forward to helping again!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2swMGIzVnJhWEpMVTBzNU9IcHFZVTlmWjFac2VtYxAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOk00b3VraXJLU0s5OHpqYU9fZ1Zsemc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2t0cGIyUkhPSFZuTWpsUGIyRjRhM1Z6TVVsM04xRRAB",
+      "reviewer": "Candice S.",
+      "rating": 5,
+      "text": "Prompt appointment, great customer service. Their team explained our issues and got them handled quickly and for a fair price. We had issues with power to a dishwasher. While there they were also able to troubleshoot & diagnose a separate issue we had. We thought it was our AC causing our electric bill to skyrocket but they were able to determine it was our well pump running constantly. Quickly diagnosed and fixed the issue. We will use them again in the future!",
+      "publishedAt": "2025-09-02T19:28:02.304Z",
+      "ownerResponse": "Thanks so much for your kind words! Our team is glad we could quickly fix everything and help you out. Looking forward to assisting you again!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2t0cGIyUkhPSFZuTWpsUGIyRjRhM1Z6TVVsM04xRRAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOktpb2RHOHVnMjlPb2F4a3VzMUl3N1E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25kS2JrODNlR0pLWDJwQlVUazBTVmhGUm5obFdVRRAB",
+      "reviewer": "Lydia M.",
+      "rating": 5,
+      "text": "Ben was really great to work with! We had gotten bids from two other electricians for the work we needed and he came through with a significantly lower bid! He did great work and got everything done exactly when he said he would. We will 100% work with Ballinger again!",
+      "publishedAt": "2025-08-27T18:49:31.995Z",
+      "ownerResponse": "Thank you for your kind feedback. We are pleased to hear that Ben was able to assist you, and we look forward to the opportunity to work with you again in the near future.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25kS2JrODNlR0pLWDJwQlVUazBTVmhGUm5obFdVRRAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOndKbk83eGJKX2pBUTk0SVhFRnhlWUE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT205VVJYbDROazQ0VlROVGFYZDVTalF4U214bE1tYxAB",
+      "reviewer": "Joanna K.",
+      "rating": 5,
+      "text": "I was quite impressed with Ben and his knowledge. He explained clearly to me what was wrong and what needed to be done, then quickly did the work. I would absolutely hire him again!",
+      "publishedAt": "2025-08-27T17:42:25.263Z",
+      "ownerResponse": "Thanks so much for your kind words! Our team is thrilled Ben could help and we look forward to assisting you again soon!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT205VVJYbDROazQ0VlROVGFYZDVTalF4U214bE1tYxAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOm9URXl4Nk44VTNTaXd5SjQxSmxlMmc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25GSk1uSkxiWGRxZURseU5qRnFRM2hCYjIxNVEwRRAB",
+      "reviewer": "Ryan F.",
+      "rating": 5,
+      "text": "They replaced a rusty outdoor well switch for us. Easy to get a quote, easy to get the work scheduled, and a quality job completed.",
+      "publishedAt": "2025-08-15T14:35:11.397Z",
+      "ownerResponse": "Thanks so much for your kind words! Our team is thrilled to hear you had a smooth experience and are happy with the work.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25GSk1uSkxiWGRxZURseU5qRnFRM2hCYjIxNVEwRRAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOnFJMnJLbXdqeDlyNjFqQ3hBb215Q0E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xGcE9FbGZlV0pzVkY5TWVHUkxjV3hMVEdGUU1VRRAB",
+      "reviewer": "David S.",
+      "rating": 5,
+      "text": "Ben was able to diagnose our problem quickly and make the necessary repairs right then on the spot. I’m very pleased with the service we received!",
+      "publishedAt": "2025-08-07T14:52:58.112Z",
+      "ownerResponse": "Thank you for your generous feedback. Ben and our team are delighted to know that you are satisfied with the prompt service provided.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xGcE9FbGZlV0pzVkY5TWVHUkxjV3hMVEdGUU1VRRAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOlFpOElfeWJsVF9MeGRLcWxLTGFQMUE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25Zd1lsbEtRakU1Ym5FMFpUSjJkMGxvWkVZM1EwRRAB",
+      "reviewer": "Jaclyn M.",
+      "rating": 5,
+      "text": "Ballinger Electric is the best! Ben came out and fixed our doorbell quickly and efficiently! He is knowledgeable and explains the process and cost up front. We will be using him for all our electrical needs. Great work!",
+      "publishedAt": "2025-08-06T14:17:36.283Z",
+      "ownerResponse": "Thanks so much for the kind words! Ben and our team are thrilled to help anytime with your electrical needs.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25Zd1lsbEtRakU1Ym5FMFpUSjJkMGxvWkVZM1EwRRAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOnYwYllKQjE5bnE0ZTJ2d0loZEY3Q0E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xKemVqaFFRVkZDUlVFd04zZGhNM2Q1YlVOYWVVRRAB",
+      "reviewer": "Kenetta M.",
+      "rating": 5,
+      "text": "Prompt, honest and reliable. I will use them again for my electric needs! Ben advised me on options for my motion detector light. The end result was excellent!",
+      "publishedAt": "2025-07-24T20:59:45.411Z",
+      "ownerResponse": "Thanks so much for the awesome review! We're thrilled Ben could help and look forward to assisting you again soon!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xKemVqaFFRVkZDUlVFd04zZGhNM2Q1YlVOYWVVRRAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOlJzejhQQVFCRUEwN3dhM3d5bUNaeUE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnTUNZb3QyTl9RRRAB",
+      "reviewer": "Tony H.",
+      "rating": 5,
+      "text": "Ben was VERY knowledgeable, and, patient with ALL my questions!!!<br>He is VERY detail oriented. From his original bid to his actual work!!!!!!!<br>I had several bids and not one of them showed the detail and customer relation skills that Ben did!!!!!<br>I wish everyone could know they need to use BALLINGER ELECTRIC instead of any other company!!!!!",
+      "publishedAt": "2025-07-21T01:15:35.549Z",
+      "ownerResponse": "Thank you so much for your kind words! Our team is thrilled to hear about your positive experience with us. We always strive to provide excellent service and attention to detail. If you ever need electrical work in the future, don't hesitate to contact us!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTUNZb3QyTl9RRRAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CIHM0ogKEICAgMCYot2N_QE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25JMGFFOVdjRk0wY1hoeFgwdDJaM1pOVjFWSVkwRRAB",
+      "reviewer": "Larry H.",
+      "rating": 5,
+      "text": "Ben was top notch and prompt in coming out. his communication was second to none and paid attention to the details which most people don't now a days!",
+      "publishedAt": "2025-07-13T02:29:24.351Z",
+      "ownerResponse": "Thank you for your valuable feedback. Our team is delighted to learn that our responsiveness and meticulous attention to detail have made a positive impact.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25JMGFFOVdjRk0wY1hoeFgwdDJaM1pOVjFWSVkwRRAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOnI0aE9WcFM0cXhxX0t2Z3ZNV1VIY0E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xNMFJuZHNOV0ZrWkV4VWVFbHRVbFJLVm5kUGVrRRAB",
+      "reviewer": "Suzanne H.",
+      "rating": 5,
+      "text": "Ballinger Electric is the best. Ben is professional, reliable, and provides high quality expertise/service.",
+      "publishedAt": "2025-07-08T17:00:32.537Z",
+      "ownerResponse": "Thanks so much for your kind words! Our team, especially Ben, really appreciates your support and trust.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xNMFJuZHNOV0ZrWkV4VWVFbHRVbFJLVm5kUGVrRRAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOlM0RndsNWFkZExUeEltUlRKVndPekE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2psa2JUQjRVSE56U1Y4MVgzcE5kVWR1WldkUFozYxAB",
+      "reviewer": "Jeff D.",
+      "rating": 5,
+      "text": "Ben did an excellent job with our light and outlet replacement.",
+      "publishedAt": "2025-07-02T18:34:08.728Z",
+      "ownerResponse": "We're thrilled to hear that! Our team is always here to help with any electrical needs you may have. Thank you for sharing your experience!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2psa2JUQjRVSE56U1Y4MVgzcE5kVWR1WldkUFozYxAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOjlkbTB4UHNzSV81X3pNdUduZWdPZ3c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2kxc1JXRlVWR1pZWld4b1FXSkVRWGx1V1hKblZIYxAB",
+      "reviewer": "Susan K.",
+      "rating": 5,
+      "text": "On time, courteous, professional and reasonable. Will definitely call again if I need electrical services!",
+      "publishedAt": "2025-06-30T00:08:05.905Z",
+      "ownerResponse": "Thank you for your kind words! Our team is glad to hear that you had a positive experience with us. We look forward to helping you again in the future.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2kxc1JXRlVWR1pZWld4b1FXSkVRWGx1V1hKblZIYxAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOi1sRWFUVGZYZWxoQWJEQXluWXJnVHc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25aamJtVmhWSGxsTjJWelkwTjFVR3h5YWkxb2VYYxAB",
+      "reviewer": "Bill H.",
+      "rating": 5,
+      "text": "Had Ben install a sub-panel and rewire a 220V circuit & well circuit. Excellent Professional Service! On time, on schedule. Highly recommend. I will definitely call him again for future electrical work!",
+      "publishedAt": "2025-06-22T12:16:45.290Z",
+      "ownerResponse": "Thank you for your kind feedback. Our team is pleased to learn about your positive experience. We are committed to delivering exceptional service for your electrical needs. Please remember that you can rely on us for any future projects you may require.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25aamJtVmhWSGxsTjJWelkwTjFVR3h5YWkxb2VYYxAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CAIQACodChtycF9oOnZjbmVhVHllN2VzY0N1UGxyai1oeXc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VQZjNuYmlKeS1EcmtBRRAB",
+      "reviewer": "Joseph C.",
+      "rating": 5,
+      "text": "Great work at a fair price. Will definitely use again",
+      "publishedAt": "2025-05-27T21:12:22.990Z",
+      "ownerResponse": "Thank you for the positive feedback! We are thrilled to hear that you were satisfied with our services. Our team looks forward to working with you again in the future!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VQZjNuYmlKeS1EcmtBRRAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CIHM0ogKEPf3nbiJy-DrkAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VMYjhtdjdYOHBDM2xRRRAB",
+      "reviewer": "Andrea H.",
+      "rating": 5,
+      "text": "Excellent work, professional and courteous. Will use Ballinger Electric again!",
+      "publishedAt": "2025-05-24T18:36:43.728Z",
+      "ownerResponse": "Thank you for your positive feedback. Our team is pleased to learn that you had a satisfactory experience with our services. We look forward to the opportunity to work with you again in the future.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VMYjhtdjdYOHBDM2xRRRAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CIHM0ogKELb8mv7X8pC3lQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VMenl4NURuX1lmczdRRRAB",
+      "reviewer": "Julie",
+      "rating": 5,
+      "text": "We added lights in a new kitchen remodel.  Work was fast and looks amazing.  Will keep name and number for the future! Thank you.",
+      "publishedAt": "2025-05-21T17:45:24.451Z",
+      "ownerResponse": "Thank you for your positive feedback. Our team is pleased to learn that you are satisfied with the new lighting in your kitchen remodel. We would be delighted to assist you with any future projects. Please do not hesitate to contact us at your convenience.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VMenl4NURuX1lmczdRRRAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CIHM0ogKELzyx5Dn_Yfs7QE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VOYS1fZktVbWN6TjNnRRAB",
+      "reviewer": "Darryk L.",
+      "rating": 5,
+      "text": "Ben did an awesome job, delivered quality work that passed inspection first time 👍. Highly recommend!",
+      "publishedAt": "2025-05-17T19:38:05.285Z",
+      "ownerResponse": "Thank you so much for your kind words! We're thrilled to hear that Ben exceeded your expectations. Our team is always here to deliver top-notch service. We truly appreciate your recommendation!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VOYS1fZktVbWN6TjNnRRAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CIHM0ogKENa-_fKUmczN3gE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VPalUtOWlmcWR5TDVBRRAB",
+      "reviewer": "Alyssa M.",
+      "rating": 5,
+      "text": "Hands down the most professional and friendly company!!!!  They went above and beyond my expectations.  Highly recommend!!!  Will be using them ASAP as I have huge projects to be done! So pleased!!!!!!",
+      "publishedAt": "2025-05-17T00:43:03.506Z",
+      "ownerResponse": "We're thrilled to hear that you had such a positive experience with our team! We always strive to go above and beyond for our customers. Looking forward to helping you with your upcoming projects soon. Thank you for the recommendation!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VPalUtOWlmcWR5TDVBRRAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CIHM0ogKEOjU-9ifqdyL5AE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VMalN2TWlJeWQzY0tBEAE",
+      "reviewer": "Ann K.",
+      "rating": 5,
+      "text": "Thus company is great! Excellent customer service, fast efficient!",
+      "publishedAt": "2025-05-16T16:18:11.682Z",
+      "ownerResponse": "Thank you so much for your kind words! We're thrilled to hear that you had a great experience with our team. We appreciate your feedback and look forward to serving you again soon!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VMalN2TWlJeWQzY0tBEAE!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CIHM0ogKELjSvMiIyd3cKA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnTURvMk5iVHpRRRAB",
+      "reviewer": "Rebecca W.",
+      "rating": 5,
+      "text": "Ben with Ballinger Electric does excellent work. Conscientious to detail, communicated well in explaining why the job needed to be done for safety reasons, etc. Showed up when he said he would arrive or if delayed, let me know.",
+      "publishedAt": "2025-04-21T20:23:53.402Z",
+      "ownerResponse": "Thank you for the fantastic feedback! Our team at Ballinger Electric always strives to provide top-notch service. We're thrilled to hear about your positive experience with Ben. Clear communication and attention to detail are key priorities for us. Please don't hesitate to reach out if you need any electrical assistance in the future.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTURvMk5iVHpRRRAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CIHM0ogKEICAgMDo2NbTzQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnTURvbVBPSW5nRRAB",
+      "reviewer": "Aaron W.",
+      "rating": 5,
+      "text": "Ben was exceptional, and his expertise was evident! We had a 200amp service upgrade, took him only a couple of days to do the upgrade and run some new power to areas we asked for. A very accommodating experience and we were only without power for about 5-6 hours total during to process. HIGHLY recommend Ballinger if you are needing anything electrical done.",
+      "publishedAt": "2025-04-21T18:52:23.281Z",
+      "ownerResponse": "We're thrilled to hear about your positive experience with Ben! Our team is grateful for your kind words and are pleased to know that the service upgrade went smoothly. It's great to hear that you were only without power for a short time. Thanks for recommending us for any electrical needs you may have in the future!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTURvbVBPSW5nRRAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CIHM0ogKEICAgMDomPOIngE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnTUNvdXNqODlnRRAB",
+      "reviewer": "Katherine S.",
+      "rating": 5,
+      "text": "Ben stopped by and looked at my commercial light to see why it wasn't lighting up. Turns out it was an easy fix, just needed hooked up. lol However, he stopped by and took care of it when I was out of the office. No muss, no fuss. Highly recommend Ballinger Electric.",
+      "publishedAt": "2025-04-16T13:36:38.911Z",
+      "ownerResponse": "We're thrilled to hear about your experience with our team! It's great that Ben could quickly solve the issue with your commercial light. We always strive to provide efficient and hassle-free service. Thank you for recommending Ballinger Electric!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTUNvdXNqODlnRRAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CIHM0ogKEICAgMCousj89gE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnTURJMDdpRFlnEAE",
+      "reviewer": "Charlie W.",
+      "rating": 5,
+      "text": "Very knowledgeable and listened to the problem before working on it. Thanks",
+      "publishedAt": "2025-04-12T20:23:41.732Z",
+      "ownerResponse": "We're glad to hear that! Our team always aims to understand your concerns before finding solutions. Thank you!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTURJMDdpRFlnEAE!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CIHM0ogKEICAgMDI07iDYg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnTUNJbjRPXzlBRRAB",
+      "reviewer": "Laila J.",
+      "rating": 5,
+      "text": "Ben is very thorough , hardworking and personable. We will definitely be using him for our future projects.",
+      "publishedAt": "2025-04-05T19:23:41.207Z",
+      "ownerResponse": "Thank you for the kind words! Our team is thrilled to hear that you had a positive experience with Ben. We look forward to working with you on future projects.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTUNJbjRPXzlBRRAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CIHM0ogKEICAgMCIn4O_9AE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnTUNJa2NueXNRRRAB",
+      "reviewer": "Troy M.",
+      "rating": 5,
+      "text": "Very positive experience with very reasonable rates!  I will use them again for sure when needed!",
+      "publishedAt": "2025-04-02T19:01:44.031Z",
+      "ownerResponse": "We're thrilled to hear that you had a great experience! Our team is always here to help at affordable prices. Looking forward to assisting you again in the future!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTUNJa2NueXNRRRAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CIHM0ogKEICAgMCIkcnysQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnTUR3dDVEOE53EAE",
+      "reviewer": "Nathan B.",
+      "rating": 5,
+      "text": "Good quality work i do recommend",
+      "publishedAt": "2025-03-28T22:32:01.231Z",
+      "ownerResponse": "Thank you! We appreciate your kind words and recommendation. Our team is glad to hear that you were satisfied with the quality of our work.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTUR3dDVEOE53EAE!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CIHM0ogKEICAgMDwt5D8Nw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnTUN3bmRlWXN3RRAB",
+      "reviewer": "Bonnie T.",
+      "rating": 5,
+      "text": "We had a great experience with Ballinger Electric! Ben was professional, knowledgeable, on time, and very pleasant. He answered all our questions, gave us options, worked quickly and efficiently, and was competitively priced. We will definitely use Ballinger Electric again and highly recommend them!",
+      "publishedAt": "2025-03-20T15:43:15.595Z",
+      "ownerResponse": "Thank you so much for the fantastic feedback! Our team is thrilled to hear that Ben provided you with excellent service. We appreciate your kind words and look forward to assisting you again in the future.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTUN3bmRlWXN3RRAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CIHM0ogKEICAgMCwndeYswE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnTURRalpxSDV3RRAB",
+      "reviewer": "Spencer L.",
+      "rating": 5,
+      "text": "Ben was quick to reply and schedule my project. He arrived on time and provided a free estimate. Completed the work in a timely manor and did an overall fantastic job. I already have him scheduled for my other properties. I would highly recommend him!",
+      "publishedAt": "2025-03-12T23:26:44.473Z",
+      "ownerResponse": "Thank you for the kind words! We're thrilled to hear about your positive experience with our team. Looking forward to working on your other properties as well. Your recommendation means a lot to us!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTURRalpxSDV3RRAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CIHM0ogKEICAgMDQjZqH5wE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnTURRNWVTWnJnRRAB",
+      "reviewer": "Kelley D.",
+      "rating": 5,
+      "text": "Did an awesome job on my older home with rather complicated wiring. Very professional. Highly recommend!",
+      "publishedAt": "2025-03-12T14:24:24.753Z",
+      "ownerResponse": "Thank you for your kind words! Our team is thrilled to hear that you had a great experience with us. If you ever need any help in the future, feel free to reach out. We appreciate your recommendation!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTURRNWVTWnJnRRAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CIHM0ogKEICAgMDQ5eSZrgE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnTURRcWNmejR3RRAB",
+      "reviewer": "Dave B.",
+      "rating": 5,
+      "text": "Great service. Price below estimate. Ben was great to work with.",
+      "publishedAt": "2025-03-12T02:40:07.137Z",
+      "ownerResponse": "We are pleased to learn that you had a positive experience with our team. It is gratifying to know that the project was completed under budget, as we take pride in our commitment to integrity and exceptional customer service. Thank you for your kind feedback.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTURRcWNmejR3RRAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CIHM0ogKEICAgMDQqcfz4wE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnTURRd2RmOGR3EAE",
+      "reviewer": "Cathy B.",
+      "rating": 5,
+      "text": "Friendly, prompt service. Pride in his work. Will use this company for all my electrical needs. Thank you Ben",
+      "publishedAt": "2025-03-11T13:54:42.039Z",
+      "ownerResponse": "Thank you for your kind words! Our team takes pride in providing friendly and prompt service. We look forward to helping you with all your electrical needs in the future. Thank you for choosing us, and we appreciate your support!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTURRd2RmOGR3EAE!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CIHM0ogKEICAgMDQwdf8dw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnTUNRMmVudzR3RRAB",
+      "reviewer": "D M.",
+      "rating": 5,
+      "text": "Great resonse time, great work, and reasonable priced.",
+      "publishedAt": "2025-03-05T22:00:43.529Z",
+      "ownerResponse": "We're thrilled to hear about your positive experience! Our team is always here to provide quick responses, quality work, and fair prices. Thank you for taking the time to share your feedback with us!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTUNRMmVudzR3RRAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CIHM0ogKEICAgMCQ2enw4wE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnTURBamVPSmp3RRAB",
+      "reviewer": "Cherie K.",
+      "rating": 5,
+      "text": "The house becomes more of a home when it works correctly. Ben was up in the attic down in the crawlspace, and most places in between.<br><br>He replaced receptacles that were no longer up to code. I needed a switch plate, moved several inches higher so that I could get a new vanity in the bathroom. He replaced A light in the bathroom that didn’t work correctly. He added an outlet in the bedroom that was needed for my watch and hearing aids. I needed to be able to turn the lights out that I used to go downstairs when I got downstairs. The thing that has made the most difference for me is to have coffee and a coffee bar and that required a new outlet to the electrical box that would carry more electricity.<br>I am planning to ask  Ben to come back very soon to do more work. I am extremely satisfied with the work he has already done.",
+      "publishedAt": "2025-02-11T00:48:50.916Z",
+      "ownerResponse": "Our team is thrilled to hear about your positive experience, and we are so glad to have helped make your house feel more like a home. It's wonderful to know that the electrical upgrades have made a difference in your daily life. We appreciate your kind words and look forward to working with you again soon!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTURBamVPSmp3RRAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CIHM0ogKEICAgMDAjeOJjwE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnTURBNWJXQXd3RRAB",
+      "reviewer": "Robert N.",
+      "rating": 5,
+      "text": "We are very pleased with our service. We had outlets installed and a back porch light installed.  Mr. Ballinger was on time, communicated well with us, and did a great job. It is refreshing to  see a small business that believes  in doing quality work for a fair price. We would absolutely use this company again.",
+      "publishedAt": "2025-02-10T16:22:00.972Z",
+      "ownerResponse": "Thank you so much for your kind words! Our team is thrilled to hear about your positive experience. We take pride in delivering high-quality work. Looking forward to serving you again in the future!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTURBNWJXQXd3RRAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CIHM0ogKEICAgMDA5bWAwwE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURfeHJ6LUN3EAE",
+      "reviewer": "Melissa F.",
+      "rating": 5,
+      "text": "Figured out the issue and fixed it quickly!",
+      "publishedAt": "2025-01-23T19:32:57.190Z",
+      "ownerResponse": "So glad we could help fix the issue swiftly! Our team is here to ensure everything runs smoothly for you. Thank you for the opportunity!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURfeHJ6LUN3EAE!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CIHM0ogKEICAgID_xrz-Cw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURfLW83aUVBEAE",
+      "reviewer": "Nancy C.",
+      "rating": 5,
+      "text": "Ben hung our purchased light from where we had a recessed can light in no time at all. He saved us from our DIY attempt & when the canned light wasn’t as we expected, we called the pro. He is prompt (scheduled in 1day) & always communicates exactly what to expect & then delivers! Wears booties inside & cleans everything up wonderfully! We will always call Ben first when we need electrical work done. 👍🏻👍🏻",
+      "publishedAt": "2025-01-23T17:01:00.251Z",
+      "ownerResponse": "We're so glad Ben could help you out quickly and efficiently! It's great to hear that he was able to exceed your expectations and provide such excellent service. We truly appreciate your feedback and will be sure to pass on your kind words to our team. Let us know anytime you need help with electrical work - we'll be here for you! 👍🏻👍🏻",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURfLW83aUVBEAE!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CIHM0ogKEICAgID_-o7iEA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNfcXZTT2JnEAE",
+      "reviewer": "Rick R.",
+      "rating": 5,
+      "text": "They were amazing to work with. Very responsive to get the work scheduled and prices were very valuable.",
+      "publishedAt": "2025-01-15T01:47:27.548Z",
+      "ownerResponse": "We're thrilled to hear that! Our team always aims to be responsive and provide great value for our services. Thank you for choosing us!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNfcXZTT2JnEAE!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CIHM0ogKEICAgIC_qvSObg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURmNTdfRGlBRRAB",
+      "reviewer": "Lindsey B.",
+      "rating": 5,
+      "text": "We appreciated that Ben was prompt, honest, knowledgeable and affordable.  We will certainly use him again in the future.",
+      "publishedAt": "2025-01-10T19:55:12.549Z",
+      "ownerResponse": "Thank you for the kind words! Our team is thrilled to hear that you had a positive experience with Ben. We look forward to helping you again in the future!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURmNTdfRGlBRRAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CIHM0ogKEICAgIDf57_DiAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURmenZfbGhnRRAB",
+      "reviewer": "myron R.",
+      "rating": 5,
+      "text": "High quality work in a professional manner.",
+      "publishedAt": "2025-01-06T17:15:49.521Z",
+      "ownerResponse": "Thank you for recognizing our team's dedication to delivering top-notch services. We strive to always maintain a high standard of professionalism in everything we do. Your feedback is truly appreciated!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURmenZfbGhnRRAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CIHM0ogKEICAgIDfzv_lhgE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURmdXZ2UTN3RRAB",
+      "reviewer": "Jason R.",
+      "rating": 5,
+      "text": "Ben did a great job fixing my issue and adding an additional plug for me.  He arrived at the time of my appointment and handled everything as expected.  I have had him out for other electrical needs and will certainly be calling him as other needs come up.  100% recommend Ben for any electrical problems or additions.",
+      "publishedAt": "2025-01-05T19:56:48.314Z",
+      "ownerResponse": "Thank you so much for your kind words! We are thrilled to hear that Ben was able to help you with your electrical needs. Our team appreciates your feedback and we look forward to assisting you with any future needs. Ben is always here to help with any electrical problems or additions you may have. Your recommendation means a lot to us!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURmdXZ2UTN3RRAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CIHM0ogKEICAgIDfuvvQ3wE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNmbHMzSzBBRRAB",
+      "reviewer": "Barb",
+      "rating": 5,
+      "text": "Great Work and Professional!!",
+      "publishedAt": "2024-12-28T19:10:31.948Z",
+      "ownerResponse": "Thank you so much for your kind words! Our team is thrilled to hear that you had a positive experience with us. We appreciate your support!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNmbHMzSzBBRRAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CIHM0ogKEICAgICfls3K0AE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUQzMUl1R3RnRRAB",
+      "reviewer": "Naveed N.",
+      "rating": 5,
+      "text": "Reasonable pricing, came as a recommendation  I was very happy with the results. Professional setup with confirming the appointments. Was cognizant of my requests and obliged accordingly. Highly recommend",
+      "publishedAt": "2024-11-15T20:00:21.820Z",
+      "ownerResponse": "We're thrilled to hear that you were pleased with our service! Our team always aims to provide a professional and accommodating experience for all our customers. Thank you for recommending us!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQzMUl1R3RnRRAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CIHM0ogKEICAgID31IuGtgE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUQzNk9ES2hnRRAB",
+      "reviewer": "Dan K.",
+      "rating": 5,
+      "text": "Incredibly responsive, quality work, and a fair price. Will definitely work with Ben again in the future.",
+      "publishedAt": "2024-11-11T19:39:38.396Z",
+      "ownerResponse": "Thank you for the kind words! Our team is thrilled to hear that you had a great experience. We look forward to assisting you again in the future.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQzNk9ES2hnRRAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CIHM0ogKEICAgID36ODKhgE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUMzNDZfcFh3EAE",
+      "reviewer": "Tyler H.",
+      "rating": 5,
+      "text": "Ballinger Electric was prompt in timing and knowledgeable of the situation we were facing with one of our properties. The problem was fixed and electricity was back on quickly!",
+      "publishedAt": "2024-11-08T20:09:27.625Z",
+      "ownerResponse": "We're so glad to hear that our team could help you promptly and get your electricity back on quickly! Thank you for sharing your experience with us.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMzNDZfcFh3EAE!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CIHM0ogKEICAgIC346_pXw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUMzdFotcXF3RRAB",
+      "reviewer": "Steve M.",
+      "rating": 5,
+      "text": "Ben did a great job on the electrical work at our home.",
+      "publishedAt": "2024-11-07T20:03:07.395Z",
+      "ownerResponse": "We're thrilled to hear that Ben exceeded your expectations with the electrical work at your home! Our team appreciates your kind words and we're here for you if you need anything else. Thank you for sharing your positive experience!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMzdFotcXF3RRAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CIHM0ogKEICAgIC3tZ-qqwE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNYcGRxQ0N3EAE",
+      "reviewer": "Rhonda L.",
+      "rating": 5,
+      "text": "My 1st experience with Ballinger Electric…the services were professional, timely, reasonable! As a realtor, I’m always looking for reliable contractors - and I would use them again!",
+      "publishedAt": "2024-10-18T18:12:31.290Z",
+      "ownerResponse": "We're thrilled to hear about your positive experience with our team! It's great to know that our services were professional, timely, and reasonable. Thank you for considering us as reliable contractors; we look forward to working with you again in the future!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNYcGRxQ0N3EAE!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CIHM0ogKEICAgICXpdqCCw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNYaHBibEp3EAE",
+      "reviewer": "Virginia B.",
+      "rating": 5,
+      "text": "Ben was very nice & understanding. He wanted me to be happy with the outcome of changing under cabinet lighting. Very pleased & will call again for my lighting in the future & give recommendations.",
+      "publishedAt": "2024-10-15T19:51:37.558Z",
+      "ownerResponse": "We're so glad to hear that you had a great experience with our team! It's important to us that you're happy with the outcome. Feel free to reach out anytime for your lighting needs. Thanks for the kind words and recommendations!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNYaHBibEp3EAE!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CIHM0ogKEICAgICXhpblJw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURuN3ZidW53RRAB",
+      "reviewer": "Rudy P.",
+      "rating": 5,
+      "text": "Ben is very knowledgeable, honest, super creative  does what's promised and reasonably priced!   Ben has done multiple jobs for me over the years.<br>After letting him know what I want, he always gives me a few options on how to move forward with my projects.  The most recent job, Ben added a 30-amp plug-in for my camper and a transfer switch that directly powers selected circuits in my house that can be powered by my generator or Ford F150 Powerboost!<br>HIGHLY RECOMMENDED!!",
+      "publishedAt": "2024-10-06T02:52:50.836Z",
+      "ownerResponse": "Rudy, we are thrilled to have the opportunity to work with you and appreciate your fantastic review!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURuN3ZidW53RRAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CIHM0ogKEICAgIDn7vbunwE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURuN0p2NldnEAE",
+      "reviewer": "Doug S.",
+      "rating": 5,
+      "text": "Ben was super, on time, courteous snd very<br>Knowledgeable, i would recommend him for your electrical needs!",
+      "publishedAt": "2024-10-04T01:27:40.892Z",
+      "ownerResponse": "Doug, thank you so much for your fantastic review! I truly enjoyed troubleshooting and enhancing the wiring in your basement.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURuN0p2NldnEAE!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CIHM0ogKEICAgIDn7Jv6Wg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNuamFHRVZnEAE",
+      "reviewer": "Natalie O.",
+      "rating": 5,
+      "text": "My elderly parents were having a few issues at their 60+ year old home. Ben provided a thorough walk through, explaining options & a detailed estimate. Plus, it was a quick turnaround to do the work. My parents were impressed with the efficiency and how personable he was.",
+      "publishedAt": "2024-09-28T12:04:02.590Z",
+      "ownerResponse": "Natalie, we are thrilled to have had the chance to enhance your parents' home with new LED lights, making it a safer and brighter space. Meeting your parents was a delight! I can't wait to collaborate again in the future.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNuamFHRVZnEAE!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CIHM0ogKEICAgICnjaGEVg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUQ3NjRqQm9nRRAB",
+      "reviewer": "mark S.",
+      "rating": 5,
+      "text": "Arrived early, did a great job. I will use them again!",
+      "publishedAt": "2024-08-28T16:57:00.910Z",
+      "ownerResponse": "Mark, Thank you for the great review!  I look forward to working together on the next projects.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ3NjRqQm9nRRAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CIHM0ogKEICAgID764jBogE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUQ3NC0tNzJ3RRAB",
+      "reviewer": "Debbie B.",
+      "rating": 5,
+      "text": "Ben arrived on time and was very professional. He explained the process and completed it in a timely manner. I would recommend Ballinger Electric to anyone needing service.",
+      "publishedAt": "2024-08-28T02:59:22.050Z",
+      "ownerResponse": "Debbie, thank you for the great review.  It was great working for you and on your beautiful home.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ3NC0tNzJ3RRAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CIHM0ogKEICAgID74--72wE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUQ3bFlTYjNRRRAB",
+      "reviewer": "Francis E.",
+      "rating": 5,
+      "text": "Ben was on time. Explained protection from surge prevention he installed. Price was good and affordable. Very neat work and knowledgeable about all. Thanks a bunch",
+      "publishedAt": "2024-08-26T15:50:51.683Z",
+      "ownerResponse": "Frank, we are thrilled to have had the chance to enhance the safety of your electrical system! It brings us great joy to know that your home is now equipped with surge protection, safeguarding all the valuable electrical components within your household.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ3bFlTYjNRRRAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CIHM0ogKEICAgID7lYSb3QE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUQ3MmRUTTl3RRAB",
+      "reviewer": "Stephanie S.",
+      "rating": 5,
+      "text": "Iv been using Ben as our Electrician since we moved here in 2019. He has always done great work and I trust his opinion on all things electric. He will be our go to electrician as long as he’s in the business!",
+      "publishedAt": "2024-08-26T00:41:28.494Z",
+      "ownerResponse": "Stephanie, it has been an absolute delight working with your family throughout the years! Thank you so much for sharing your feedback with us. We are excited about the opportunity to continue working together in the future.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ3MmRUTTl3RRAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CIHM0ogKEICAgID72dTM9wE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUQ3NHMzcWxBRRAB",
+      "reviewer": "Robert R.",
+      "rating": 5,
+      "text": "Great prices and quality work.  They have done 4 different jobs for me.  If I have electrical needs I use Ballinger Electric",
+      "publishedAt": "2024-08-22T20:06:24.373Z",
+      "ownerResponse": "Robert, thank you for taking the time to leave a review!  I appreciate the opportunities and look forward to the future projects.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ3NHMzcWxBRRAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CIHM0ogKEICAgID74s3qlAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUM3bWY3cnJ3RRAB",
+      "reviewer": "Alex K.",
+      "rating": 5,
+      "text": "Ben Ballinger electric did an amazing job for us.  He took his time.  Insured a seamless professional install. We wanted below our kitchen cabinets lighting.  We were not even sure what to buy or where to start. After the install you couldn't even see work was done in our kitchen besides the extra bright lights. I will never use another electrician",
+      "publishedAt": "2024-08-17T02:21:33.571Z",
+      "ownerResponse": "Alex, thank you for the review!   We look forward to working together in the future.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUM3bWY3cnJ3RRAB!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CIHM0ogKEICAgIC7mf7rrwE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURiNy1iNVZ3EAE",
+      "reviewer": "Bethany B.",
+      "rating": 5,
+      "text": "Super fast, great price, and professional work.  So glad I had Ben's service.  Would definitely recommend and will use again.",
+      "publishedAt": "2024-08-10T20:34:16.587Z",
+      "ownerResponse": "Bethany, Thank you for the kind words and valuable feed back.  We sincerely appreciate your business and look forward to working together in the future!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURiNy1iNVZ3EAE!2m1!1s0x0:0x7d37831cde95ec5a!3m1!1s2@1:CIHM0ogKEICAgIDb7-b5Vw%7C%7C?hl=en-US",
+      "language": "en"
+    }
+  ],
+  "ratingOnly": [
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2w5NmFISXpRVjlKY1ZNdFNrWnZMWEJGUW1wVk5YYxAB",
+      "reviewer": "Jamie B.",
+      "rating": 5,
+      "publishedAt": "2026-10-21T01:32:01.742Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xGWlFUSkxibWxtY21sbVluYzRXRFZRY3pSSGExRRAB",
+      "reviewer": "Sherry M.",
+      "rating": 5,
+      "publishedAt": "2026-09-30T13:23:39.243Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tGTVdUTTBlVVJ0YVVkU2QxcHJWa1JrVFY5VWFGRRAB",
+      "reviewer": "Jeff D.",
+      "rating": 5,
+      "publishedAt": "2026-09-28T13:52:47.031Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25KaExVNUhPRXRoUlUxd04zQlpRVkp5YVRVNE5sRRAB",
+      "reviewer": "Gary S.",
+      "rating": 5,
+      "publishedAt": "2026-09-09T14:40:35.829Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21vMVYyaENNV3RQZEVsVlRXTXRja1F4TmtndGRtYxAB",
+      "reviewer": "Robert W.",
+      "rating": 5,
+      "publishedAt": "2026-08-01T02:10:15.104Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pabloyVmpZamcxY3pSV1duaGxYMll6VVVoSU0zYxAB",
+      "reviewer": "verlyn R.",
+      "rating": 5,
+      "publishedAt": "2026-07-26T01:01:47.166Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25OWWMxaHJkbUZWYmtOUVNVTjBRemxrY0Zkd01XYxAB",
+      "reviewer": "Wayne S.",
+      "rating": 5,
+      "publishedAt": "2026-07-24T23:24:33.938Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25SeVEwbGxTMnQyY1dSTVprUnRNWFI0WmpkSk5uYxAB",
+      "reviewer": "Jessica C.",
+      "rating": 5,
+      "publishedAt": "2026-07-21T20:38:17.425Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xJMVNHMXBZbmhUVm5Wa2VHaGZSMjE0YVhNNGNXYxAB",
+      "reviewer": "Isabel P.",
+      "rating": 5,
+      "publishedAt": "2026-07-21T13:51:58.654Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xkYWRuUlFhSFI2WDJVdGJXcGxPVmw1WTJKRFFuYxAB",
+      "reviewer": "David J.",
+      "rating": 5,
+      "publishedAt": "2026-07-15T14:57:34.631Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pKamFXUmpUR28yZGpkSmQzaElhbTl5V0VkQ2EzYxAB",
+      "reviewer": "David P.",
+      "rating": 5,
+      "publishedAt": "2026-07-02T23:15:39.061Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xsV2JGSmFXREJaYm5aamNVOWpTek5rWldJd2NFRRAB",
+      "reviewer": "Daniel B.",
+      "rating": 5,
+      "publishedAt": "2026-05-06T19:00:12.448Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT204MU1GaHZaMGN0UWpaSFlqSmtlRmR4VkdSaE1XYxAB",
+      "reviewer": "Ticey G.",
+      "rating": 5,
+      "publishedAt": "2026-03-09T21:02:32.514Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pSbFJVUlVUM1JZZUcxUVdFNXBOMWRqZUhkNU5IYxAB",
+      "reviewer": "Frank K.",
+      "rating": 5,
+      "publishedAt": "2026-01-26T20:25:05.285Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25RMGJITlJibXRhZDNoUk5IbGlZa2hXZG1vNGQzYxAB",
+      "reviewer": "Johnisha N.",
+      "rating": 5,
+      "publishedAt": "2025-12-24T00:11:29.936Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tabWQzaFZWMlZSVUhaSlMzQm9TMkpwVEdOSmNGRRAB",
+      "reviewer": "amy B.",
+      "rating": 5,
+      "publishedAt": "2025-12-15T15:58:14.721Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT201WWFIQjRiRzEwV2pGb2RVUktaVUU0VkdzNGVFRRAB",
+      "reviewer": "Mark B.",
+      "rating": 5,
+      "publishedAt": "2025-11-26T20:03:59.732Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21aa1ZsWlRTbWxUT0dwSGJURkVSelZUTFVwT1pXYxAB",
+      "reviewer": "Jenny M.",
+      "rating": 5,
+      "publishedAt": "2025-11-12T21:27:56.274Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2t0YVpWOUJSSG8yYlRSMFpVMDBXbkJVWlhFdFRtYxAB",
+      "reviewer": "Julie L.",
+      "rating": 5,
+      "publishedAt": "2025-11-10T19:35:00.297Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25BeVF6WnZOWE0yYVVJd01XaGtPRzl1YmtkZmJrRRAB",
+      "reviewer": "Eddie S.",
+      "rating": 5,
+      "publishedAt": "2025-09-22T23:01:25.359Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2s0d1NtdEJObnBzWHpOVFRYRlVUVWRwYTBkNU4wRRAB",
+      "reviewer": "Barbara P.",
+      "rating": 5,
+      "publishedAt": "2025-07-08T20:26:13.782Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25GNlVEbDVNRGR4TUZaU2NIRTFSMGhYV0VoRmMxRRAB",
+      "reviewer": "Denise W.",
+      "rating": 5,
+      "publishedAt": "2025-06-17T17:30:38.296Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VPaXFuYUhmdjVmak9nEAE",
+      "reviewer": "Michael W.",
+      "rating": 5,
+      "publishedAt": "2025-05-22T14:11:48.066Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnTURvMnNtMGlRRRAB",
+      "reviewer": "Mary M.",
+      "rating": 5,
+      "publishedAt": "2025-04-24T01:19:07.659Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnTUNJNXVMX0ZnEAE",
+      "reviewer": "Brad S.",
+      "rating": 5,
+      "publishedAt": "2025-04-01T14:29:32.800Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURYak15V1RREAE",
+      "reviewer": "Darla S.",
+      "rating": 5,
+      "publishedAt": "2024-10-24T19:51:40.273Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNYOTZDN0JnEAE",
+      "reviewer": "William T.",
+      "rating": 5,
+      "publishedAt": "2024-10-21T19:25:25.746Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURuNVpuUVJREAE",
+      "reviewer": "Margaret K.",
+      "rating": 5,
+      "publishedAt": "2024-10-08T02:46:57.771Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNuMmNQaEx3EAE",
+      "reviewer": "shockerpa",
+      "rating": 5,
+      "publishedAt": "2024-09-27T15:13:24.676Z"
+    }
+  ]
+}

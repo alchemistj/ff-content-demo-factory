@@ -42,7 +42,7 @@ Check it with `node scripts/check-words-package.mjs prospects/<market>/<slug>`. 
         "eyebrow": "Locally owned in Wichita",           // optional
         "h1": "Exterior Remodeling Company in Wichita, KS — Evolve Exteriors",
         "sub": "Two or three specific trust sentences.",
-        "primaryCta": { "label": "Call (316) 435-8009", "action": "call" },        // call | contact
+        "primaryCta": { "label": "Call (316) 435-8009", "action": "call" },        // call | contact | email (mailto business.email) | text (sms to the phone labeled "Text")
         "secondaryCta": { "label": "Get a Free Estimate", "action": "contact" },
         "image": { "slot": "home-hero", "alt": "…", "brief": "new black-framed windows on a tan brick ranch house, house on the right, clear sky on the left" }
       },
