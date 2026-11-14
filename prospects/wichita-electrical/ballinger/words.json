@@ -114,9 +114,9 @@
             "You don't need a miracle. You need a person to come look and tell you the truth about what's behind the wall."
           ],
           "image": {
-            "slot": "home-hero-alt",
-            "alt": "Homeowner standing in a kitchen checking a dead wall outlet with a phone in hand",
-            "brief": "electrical pool: home-hero-alt"
+            "slot": "outlet-repair",
+            "alt": "Hands at a wall outlet",
+            "brief": "electrical pool: outlet-repair"
           },
           "imageSide": "right"
         },
@@ -135,7 +135,7 @@
           "listStyle": "checks",
           "image": {
             "slot": "inspection",
-            "alt": "Electrician with a flashlight inspecting an open electrical panel in a Wichita home",
+            "alt": "Man crouched at an outdoor meter beside a brick house",
             "brief": "electrical pool: inspection"
           },
           "imageSide": "left"
@@ -180,9 +180,9 @@
             "Bill H. had a sub-panel installed, and Francis E. had surge protection put in."
           ],
           "image": {
-            "slot": "panel-upgrade",
-            "alt": "Open electrical panel with labeled breakers in a garage",
-            "brief": "electrical pool: panel-upgrade"
+            "slot": "old-panel",
+            "alt": "Aging electrical panel with the cover off",
+            "brief": "electrical pool: old-panel"
           },
           "imageSide": "right"
         },
@@ -331,9 +331,9 @@
             "Ben comes out, finds the cause and explains it in plain words, with your options and the price, before he fixes anything."
           ],
           "image": {
-            "slot": "inspection",
-            "alt": "Electrician testing a wall outlet with a meter in a Wichita home",
-            "brief": "electrical pool: inspection"
+            "slot": "panel-upgrade",
+            "alt": "Open modern electrical panel",
+            "brief": "electrical pool: panel-upgrade"
           },
           "imageSide": "right"
         },
@@ -485,7 +485,7 @@
         },
         "image": {
           "slot": "lighting",
-          "alt": "Kitchen with recessed ceiling lights and under-cabinet lighting turned on",
+          "alt": "A kitchen with recessed ceiling lights and pendant lights switched on",
           "brief": "electrical pool: lighting"
         }
       },
@@ -503,9 +503,9 @@
             "Some people bring a fixture, and some ask for options first. Ben comes to look, and you have a price before the work starts."
           ],
           "image": {
-            "slot": "lighting",
-            "alt": "Kitchen with recessed ceiling lights and under-cabinet lighting turned on",
-            "brief": "electrical pool: lighting"
+            "slot": "arrival",
+            "alt": "Electrician seen from behind at a front door with a tool bag",
+            "brief": "electrical pool: arrival"
           },
           "imageSide": "right"
         },
@@ -708,9 +708,9 @@
             "Whether it's a home or a commercial property."
           ],
           "image": {
-            "slot": "inspection",
-            "alt": "Homeowner pointing out a dead outlet to an electrician in a Wichita kitchen",
-            "brief": "electrical pool: inspection"
+            "slot": "outlet-repair",
+            "alt": "Hands at a wall outlet",
+            "brief": "electrical pool: outlet-repair"
           },
           "imageSide": "right"
         },

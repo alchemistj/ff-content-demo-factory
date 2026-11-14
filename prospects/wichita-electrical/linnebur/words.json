@@ -113,7 +113,7 @@
           "heading": "When the Second Electrician Didn't Fix It",
           "image": {
             "slot": "outlet-repair",
-            "alt": "Dead outlet and a tripped breaker in a Wichita garage",
+            "alt": "Hands at a wall outlet",
             "brief": "electrical pool: outlet-repair"
           },
           "body": [
@@ -126,7 +126,7 @@
           "heading": "Tell Us Where It Trips, Dies or Flickers",
           "image": {
             "slot": "inspection",
-            "alt": "Electrician tracing a circuit inside a Wichita home",
+            "alt": "Man crouched at an outdoor meter",
             "brief": "electrical pool: inspection"
           },
           "body": [
@@ -271,7 +271,7 @@
         },
         "image": {
           "slot": "outlet-repair",
-          "alt": "Wall outlet with a scorched edge and a tripped breaker nearby",
+          "alt": "Hands at a wall outlet",
           "brief": "electrical pool: outlet-repair"
         }
       },
@@ -285,9 +285,9 @@
           "type": "split",
           "heading": "Which Outlets, Which Breaker, and When It Started",
           "image": {
-            "slot": "inspection",
-            "alt": "Electrician checking wiring at a Wichita home",
-            "brief": "electrical pool: inspection"
+            "slot": "panel-upgrade",
+            "alt": "Open modern electrical panel",
+            "brief": "electrical pool: panel-upgrade"
           },
           "body": [
             "Tell us which outlets, which breaker and when it started, and we start there. It also helps to say what was plugged in and whether anyone has worked on it before.",
@@ -412,9 +412,9 @@
           "action": "contact"
         },
         "image": {
-          "slot": "lighting",
-          "alt": "Backyard patio and pool area with installed outdoor lights at dusk",
-          "brief": "electrical pool: lighting"
+          "slot": "outdoor-lighting",
+          "alt": "Ranch house at dusk with porch and path lights on",
+          "brief": "electrical pool: outdoor-lighting"
         }
       },
       "sections": [
@@ -428,7 +428,7 @@
           "heading": "Lights Around a Pool and Backyard",
           "image": {
             "slot": "home-hero-alt",
-            "alt": "Wichita backyard and patio with warm lights at dusk",
+            "alt": "Brick ranch house exterior",
             "brief": "electrical pool: home-hero-alt"
           },
           "body": [
