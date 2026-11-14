@@ -127,3 +127,13 @@ Checked 2026-11-14. Only lines not already above are listed. Service pages cover
 - Google Business Profile: not read this session.
 - Facebook, Angi, Houzz, Nextdoor: none found in search.
 - New sourced items this pass: 11 (own site 10, MapQuest 1). Conflicts: 4.
+
+## Source pass 2 (11/14)
+Checked 2026-11-14 with WebSearch and WebFetch. Nothing from facts.md, reviews.json or audit.md is repeated. Service pages: outlet repair; lighting installation.
+
+- Excluded: [google listing] https://business.google.com/v/_/AKsrIN1PuCRFm6pOGoFqG0r4PiHzNOlHhp1eXXKJZpAVZN8eXS28eN6uWeN9/2ee5/_ was returned as a Google Business link. The page is for Kansas Tri-Service LLC, not Brockmeyer, so nothing on it is used. A search summary had attributed "outlet and switch installation and relocation" to this company from that link. Unconfirmed, not used.
+- Conflict: review count and rating. Search summaries (not opened, unverified) give Birdeye 5.0 from 21 reviews, Google 5.0 from 18 and Yelp 5 from 6: https://reviews.birdeye.com/d/electricians/wichita-ks and https://d7leadfinder.com/app/prospector/2210320/474706ab0b97954d3e666336f49ae5b6/. reviews.json and facts.md give Google 24 reviews and 4.8.
+- Not found: no Facebook or Instagram post about outlets or lighting in search (2026-11-14).
+- Not found: no outlet-repair or lighting-installation review text outside reviews.json.
+
+Enough for a rebuild: no. 0 new on-topic items for outlet repair; 0 new on-topic items for lighting installation.

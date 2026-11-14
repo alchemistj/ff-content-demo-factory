@@ -130,3 +130,13 @@ Quoted word for word. Reviewer shown as in the pull (first name, last initial). 
 ### Best per thin page (for the writer)
 - Water heater replacement: David C. 2024 (within 4 hours of call; install "better than the original installation"); Dustin C. 2026 (replacement plus sticker on the new tank); Rachel M. 2024 (price quoted upfront); MELPHA S. 2021 (church property water heater, done before opening day). Hours and warranty claims are conflicting across sources (see above).
 - Toilet repair: Libby O. 2022 (toilet fixed quickly, explained issue); William W. 2023 (wax ring put back on toilet, after an emergency main-line clear). Cristina M. 2022 is a toilet-line clog, not a toilet repair.
+
+## Source pass 2 (11/14)
+Checked 2026-11-14 with WebSearch and WebFetch. Nothing from facts.md, reviews.json or audit.md is repeated. Service pages: sewer line repair; water heater replacement.
+
+- Blocked (403): Bestpros https://www.bestprosintown.com/ks/wichita/jm-plumbing-llc-/ and HomeAdvisor https://www.homeadvisor.com/write-a-review/75580779/. Search summaries from them (a water heater replaced "in about an hour"; a new water service line, repipe and water heater; a HomeAdvisor review of a water line repair) are unverified and not quoted.
+- Excluded: a sewer review rated 1.0 star that a search summary links to Wichita Sewer and Drain (https://directory.yext.com/en/wichita-sewer-and-drain-service-192513699). That is a different company, so it is not used for JM.
+- Conflict: [search summary] hours, weekday 9:00 AM to 6:00 PM against 24 hours. Already in section 5 above.
+- Not found: no sewer-line review or job photo for JM in search (2026-11-14). No Facebook page found.
+
+Enough for a rebuild: no. 0 new on-topic items for sewer line repair; 0 new on-topic items for water heater replacement.

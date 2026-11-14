@@ -146,3 +146,13 @@ Checked 2026-11-14. Only lines not already above are listed. Service pages cover
 - [google] The profile https://www.google.com/maps/place/?q=place_id:ChIJOSlEmSHhuocR8V4pPhYYQTw loaded only its title. No "from the business" text, Q&A or service list was read.
 - BBB re-check (https://www.bbb.org/us/ks/wichita/profile/electrician/linnebur-electric-inc-0714-14187) matches the BBB lines above (Years in Business 44; BBB Accreditation: None; Kent Linnebur, President; no complaints in last 3 years; 0 BBB reviews). No new items.
 - New sourced items this pass: 9 (own site). Other listings added 2 conflicts and 1 exclusion.
+
+## Source pass 2 (11/14)
+Checked 2026-11-14 with WebSearch and WebFetch. Nothing from facts.md, reviews.json or audit.md is repeated. Service pages: electrical repair; outdoor/landscape lighting.
+
+- Conflict: [expertise] https://www.expertise.com/home-improvement/electricians/kansas/wichita (fetched through a summary) shows the tag "Lighting Installation" for Linnebur. A search summary of the same page attributed that tag to a different provider. Not used as a Linnebur service claim until confirmed. The same listing also shows "Google 5.0 (19 reviews)", which the 11/14 section above already records as a conflict.
+- Not found: no Linnebur outdoor or landscape lighting page, post, job photo or review in search. Facebook not found (search 2026-11-14). Results were competitor pages only.
+- Not found: no electrical-repair item beyond the reviews already in reviews.json.
+- Not used: Birdeye and ServiceAgent summaries repeat items already above.
+
+Enough for a rebuild: no. 0 new on-topic items for electrical repair; 0 new on-topic items for outdoor/landscape lighting.

@@ -155,3 +155,15 @@ Quoted word for word. Reviewer shown as in the pull (first name, last initial). 
 ### Best per thin page (for the writer)
 - Water heater replacement: Hollie B. 2015 (includes removing the old tank; price compared to Home Depot tank price); Mary V. 2017 (removed old heater; 1 hour 40 minutes); Jane K. 2020 (copper vs rubber hoses explanation); Nextdoor B. H. 2023 (new hot water heater installed). Brands from the site: Bradford White preferred, AO Smith and Navien tankless.
 - Toilet repair: Blake B. 2024 (commode flaw found on unboxing); Sherry M. 2021 (fixed a toilet problem another plumber caused); Louis S. 2025 (replaced toilet). The site names no toilet brand.
+
+## Source pass 2 (11/14)
+Checked 2026-11-14 with WebSearch and WebFetch. Nothing from facts.md, reviews.json or audit.md is repeated. Service pages: water heater replacement; toilet repair.
+
+- Superpages, opened: https://www.superpages.com/wichita-ks/bpp/creekmore-plumbing-heating-inc-4099391. The two reviews on it (2008 and 2012) are already in facts.md above. The 2012 review is about a gas line and is off topic. The fetched text came through a summary, so no quotes were taken from it.
+- Conflict: [superpages search summary] lists phone 316-512-2397 and "440 S Pattie Ave." The site gives (316) 264-1342 and Nextdoor gives (316) 553-5749.
+- Search summary only, unverified: Superpages lists "Bradford white water heaters, Zoller sump pumps" (https://www.superpages.com/wichita-ks/bpp/creekmore-plumbing-heating-inc-4099391). This supports the brand already on the site. It is not a dealer status.
+- Not found: PHCC membership and Bradford White dealer status. Search returned only the manufacturer's own PHCC press items, not a member listing (search 2026-11-14). Not claimed.
+- Not used: ThisOldHouse roundup shows "User Reviews: 4.5/5" with no review text (https://www.thisoldhouse.com/near-me/kansas/wichita/plumbing).
+- Not found: no water heater or toilet item beyond what is already above.
+
+Enough for a rebuild: no. 0 new on-topic items for water heater replacement; 0 new on-topic items for toilet repair.
