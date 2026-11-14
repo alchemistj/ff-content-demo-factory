@@ -649,8 +649,8 @@
           "action": "call"
         },
         "secondaryCta": {
-          "label": "Ask for a Free Estimate",
-          "action": "contact"
+          "label": "Email for a Free Estimate",
+          "action": "email"
         },
         "image": {
           "slot": "contact-hero",

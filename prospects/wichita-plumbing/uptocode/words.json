@@ -94,7 +94,7 @@
         },
         "secondaryCta": {
           "label": "Email Us",
-          "action": "contact"
+          "action": "email"
         },
         "image": {
           "slot": "home-hero",
@@ -293,7 +293,7 @@
         },
         "secondaryCta": {
           "label": "Email Us",
-          "action": "contact"
+          "action": "email"
         },
         "image": {
           "slot": "sewer",
@@ -448,7 +448,7 @@
         },
         "secondaryCta": {
           "label": "Email Us",
-          "action": "contact"
+          "action": "email"
         },
         "image": {
           "slot": "fixture",
@@ -647,7 +647,7 @@
         },
         "secondaryCta": {
           "label": "Email Us",
-          "action": "contact"
+          "action": "email"
         },
         "image": {
           "slot": "contact-hero",
