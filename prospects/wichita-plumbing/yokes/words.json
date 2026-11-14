@@ -86,7 +86,7 @@
       "hero": {
         "eyebrow": "Wichita, KS · Leaks, Gas Lines, Water Heaters, Drains",
         "h1": "Plumber in Wichita, KS — Yokes Master Plumbing",
-        "sub": "Bring us the leak nobody can find. We go after it, fix it, and tell you what we found, so you can stop guessing at the walls and the water bill. Call (316) 372-8210.",
+        "sub": "Bring us the leak nobody can find. We go after it and fix it, so you can stop guessing at the walls and the water bill. Call (316) 372-8210.",
         "primaryCta": {
           "label": "Call (316) 372-8210",
           "action": "call"
@@ -110,16 +110,15 @@
         },
         {
           "type": "split",
-          "heading": "The Water Bill Doubled and Nothing Changed",
+          "heading": "Called Today, Fixed Within the Hour",
           "image": {
             "slot": "leak",
             "alt": "Water dripping from a copper pipe joint",
             "brief": "plumbing pool: leak"
           },
           "body": [
-            "A floor feels warm under your feet. A wall has a soft spot. You hear water running somewhere with every tap off, and you've looked under the sink and found nothing.",
-            "Maybe somebody already came out and couldn't say where it's coming from. Now you're standing there wondering how much of the house has to come apart, and whether this is a small problem or a big one.",
-            "What you need is a plumber who goes after the source and tells you what it is."
+            "Dakota W. wrote that Dan and his team came as soon as he called and fixed his issue within an hour. Lara F. called the service very fast, friendly and affordable.",
+            "Tammy B. thanked us for getting to her so quickly. A leak that has the water running is not a job to put off for a week."
           ]
         },
         {
@@ -132,14 +131,12 @@
           },
           "imageSide": "left",
           "body": [
-            "A leak you can see is easy to point at. One you can't see is a search.",
-            "Jeff S. had a gas leak the gas company couldn't locate. Jenifer P. had an unidentified leak in the pipes leaving her house. Both got it found and taken care of. [[confirm: Licensed plumber, license #[XXXX]]]"
+            "Gas line leak detection, repair and replacement are on our list, next to new gas lines for cooktops, furnaces and any gas appliance. [[confirm: Licensed plumber, license #[XXXX]]]"
           ],
           "list": [
-            "A customer's words: \"They found it and they took care of it.\"",
             "Leak detection and camera inspections",
-            "Fixed once it's found",
-            "Explained in plain words"
+            "Gas leak detection, repair and replacement",
+            "Fixed once it's found"
           ],
           "listStyle": "checks"
         },
@@ -162,8 +159,7 @@
           "type": "prose",
           "heading": "A Leak in the Supply Line, the Fixture or the Gas Line",
           "body": [
-            "Supply lines, fixtures, hose bibs and gas lines are all on our list, and so is the leak that shows up with no warning.",
-            "Say where you've seen the water and we'll go from there."
+            "Supply lines, fixtures, hose bibs and gas lines are all on our list, and so is the leak that shows up with no warning."
           ],
           "link": {
             "label": "See leak detection in Wichita",
@@ -172,10 +168,9 @@
         },
         {
           "type": "prose",
-          "heading": "The Water Heater Quit on a Work Morning",
+          "heading": "Water Heaters, Tank and Tankless",
           "body": [
-            "When the water heater is rusted, leaking or just quit, the question is repair or replace. We work on tank and tankless.",
-            "Jeff R. called to have his hot water heater replaced and wrote that the crew answered within a few hours."
+            "When the water heater is rusted, leaking or has just quit, the question is repair or replace. Water heaters and tankless water are both on our plumbing list."
           ],
           "link": {
             "label": "See water heater replacement in Wichita",
@@ -198,25 +193,49 @@
         },
         {
           "type": "prose",
-          "heading": "Managing a Building? Tell Us Where the Shutoff Is",
+          "heading": "A Toilet Unboxed and Installed in About an Hour",
           "body": [
-            "We do residential and commercial plumbing. James L. wrote that he calls Dan and Tammy for all of his jobs needing plumbing that he estimates at a property restoration company."
+            "Michael J. and Kelly P. each had Brandon install a toilet. Both wrote that it was unboxed and installed in about an hour, and that Brandon offered to come back and show them tips so they could learn too.",
+            "Michael J. found our rates much lower than other places he looked at. Kelly P. said we were the best priced they found, by quite a bit."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Rough Plumbing for a New Garage and Shop",
+          "body": [
+            "jesse G. was adding a detached garage and shop in his back yard and needed rough plumbing for a future bathroom and utility sink, tied into his existing waste pipe. Dan came out and explained what would need to be done.",
+            "He wrote that Dan got the appropriate permit and came as scheduled and on time. The team used sonar to find the best place to tie in, then dug and made the new waste connection."
           ]
         },
         {
           "type": "prose",
           "heading": "A Hose Bib, a Sprinkler Repair and a Main Water Line",
           "body": [
-            "Brandon H. had a hose bib replaced and a small repair made to his sprinkler system. Kelly B. wrote that she has used us before to fix a main water line.",
-            "Neal M. calls us his go-to plumbing company, “whether it's snaking a drain or replacing a spigot.”"
+            "Brandon H. had a hose bib replaced and a small repair made to his sprinkler system. Kelly B. had used us before to fix a main water line, and wrote that Dan is knowledgeable, honest and does what he says.",
+            "Neal M. calls us his go-to plumbing company, whether it's snaking a drain or replacing a spigot."
           ]
         },
         {
           "type": "prose",
           "heading": "A Shower, a Vanity and a Bathroom Remodel",
           "body": [
-            "Jason F. had a shower and vanity installed. Andria C. wrote that Dan was patient and answered all of her questions while fixing issues with a recent bathroom remodel.",
-            "Tub and shower conversions, vanities and fixtures are on our remodeling list."
+            "Jason F. had a shower and vanity installed, and wrote that we were willing to work with his situation. Andria C. wrote that Dan was patient and answered all of her questions while fixing issues with a recent bathroom remodel.",
+            "A S. had Dan add a faucet to a new laundry room. Tub and shower conversions, vanities and fixtures are on our remodeling list."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "A Home Inspector's List, Checked Again",
+          "body": [
+            "Steve S. had Dan come out to verify plumbing issues that a home inspector had squawked about. He wrote that when Dan left there was absolutely no doubt everything was working properly."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Property Managers and Restoration Work",
+          "body": [
+            "We do residential and commercial plumbing. James L. wrote that he calls Dan and Tammy for all of his jobs needing plumbing that he estimates at a property restoration company.",
+            "Justin S. calls Dan and his crew his go-to for all plumbing needs, and says they have helped him on multiple projects."
           ]
         },
         {
@@ -225,27 +244,15 @@
           "items": [
             {
               "q": "Can you come today?",
-              "a": "Call (316) 372-8210 and ask. Dakota W. wrote that “Dan and his team came as soon as I called and fixed my issue within an hour!”"
+              "a": "Call (316) 372-8210 and ask. Emergency calls run Monday to Saturday, 7 a.m. to 10 p.m., based on availability."
             },
             {
               "q": "What will it cost?",
-              "a": "It depends on the job, so we won't print a number on a web page. Lara F. described the service as “Very fast and friendly and affordable.”"
+              "a": "It depends on the job, so we won't print a number on a web page."
             },
             {
               "q": "Can you find a leak that's hard to find?",
-              "a": "Jenifer P. had one in pipes leaving her house, and she wrote, “They found it and they took care of it.” We won't promise what we'll find before we look."
-            },
-            {
-              "q": "Do you work on tank and tankless water heaters?",
-              "a": "Yes. Water heaters and tankless water are both on our services list."
-            },
-            {
-              "q": "Can you check what a home inspector flagged?",
-              "a": "Steve S. had Dan come out to verify plumbing issues a home inspector squawked about, and wrote there was “absolutely no doubt that everything was working properly!”"
-            },
-            {
-              "q": "Do you work on commercial buildings?",
-              "a": "Yes. We do residential and commercial plumbing."
+              "a": "Leak detection and camera inspections are on our list. We won't promise what we'll find before we look."
             }
           ]
         },
@@ -268,7 +275,7 @@
       "hero": {
         "eyebrow": "Leak detection and repair · Wichita, KS",
         "h1": "Leak Detection in Wichita, KS — Yokes Master Plumbing",
-        "sub": "A wet spot, a warm floor, a bill that doesn't make sense. Tell us what you've noticed and we'll go after the source, fix it and tell you what it was. Call (316) 372-8210.",
+        "sub": "A wet spot, a warm floor, a bill that doesn't make sense. Tell us what you've noticed and we'll go after the source and fix it. Call (316) 372-8210.",
         "primaryCta": {
           "label": "Call (316) 372-8210",
           "action": "call"
@@ -299,7 +306,7 @@
           },
           "body": [
             "Tell us what you've noticed and where: a stain, a drip, a meter that keeps moving, a bill that jumped. If you can, tell us where your main shutoff is.",
-            "Leak detection and camera inspections are part of the work."
+            "Leak detection and camera inspections are part of the work, and so are drain repair and replacement."
           ]
         },
         {
@@ -325,8 +332,7 @@
             "brief": "plumbing pool: fixture"
           },
           "body": [
-            "Not every leak is a mystery. A dripping faucet, a running toilet, a bad hose bib or a hydrant that won't shut off is on our list too.",
-            "Say which fixture it is and where it sits."
+            "A dripping faucet, a running toilet, a bad hose bib or a hydrant that won't shut off is on our list too."
           ],
           "list": [
             "Faucets and sinks",
@@ -342,16 +348,19 @@
           "name": "Debbie T."
         },
         {
-          "type": "review",
-          "quote": "Very happy about the timely response we had to a water emergency.",
-          "name": "Jane S."
+          "type": "prose",
+          "heading": "A Water Emergency, and a Plan for Cold Weather",
+          "body": [
+            "Jane S. was happy with the timely response she got to a water emergency. Loren M. called in cold weather, and wrote that we found a temporary resolution and made a game plan together for a long-term one.",
+            "George E. called the service great, friendly but professional, with a very quick response time, and wrote that he will put us on his future service list."
+          ]
         },
         {
           "type": "prose",
-          "heading": "A Water Emergency Doesn't Wait for a Web Page",
+          "heading": "What Needs Doing Next, and Who Else to Call",
           "body": [
-            "Jane S. was happy with the timely response she got to a water emergency. Loren M. called in cold weather, and wrote that we found a temporary resolution and made a game plan together for a long-term one.",
-            "If the leak can't be fixed in one visit, ask what the plan is."
+            "Jessica D. wrote that the guys who came out were very helpful on what needs done next and how to fix some other small issues she had.",
+            "Shay R. thanked us for the quick response, for fixing the issue and for the communication, and wrote that we had taken care of clients once again."
           ]
         },
         {
@@ -361,35 +370,17 @@
         },
         {
           "type": "prose",
-          "heading": "What Needs Doing Next, and Who Else to Call",
+          "heading": "A Sink and a Disposal, Fixed by Dan",
           "body": [
-            "Jessica D. wrote that the guys who came out were very helpful on what needs done next and how to fix some other small issues she had. Patricia J. wrote that we also recommended other service providers she might need in the future.",
-            "Shay R. thanked us for the quick response, for fixing the issue and for the communication. Shay wrote that we had taken care of clients once again.",
-            "When a leak turns up something else, ask what's next."
-          ]
-        },
-        {
-          "type": "prose",
-          "heading": "The Spigot, the Sink and the Disposal",
-          "body": [
-            "Patricia J. had a spigot she called weird, and wrote that it was fixed within an hour. Collette C. thanked Dan for fixing her sink, and Casey W. wrote that Dan helped her mother with a disposal.",
-            "Small leaks and small repairs get the same phone call as the big ones."
+            "Collette C. thanked Dan for fixing her sink, and loved the quick service. Casey W. wrote that Dan helped her mother with a disposal, worked quickly and was very helpful and professional.",
+            "Duane N. called it a messy job, and wrote that the crews were friendly and polite and cleaned up everything."
           ]
         },
         {
           "type": "prose",
           "heading": "Gas Line Leaks Are on the List",
           "body": [
-            "Gas line leak detection, repair and replacement are part of our work, along with new gas lines for cooktops, furnaces and any gas appliance.",
-            "Kyle W. wrote that we ran a new propane line to his house, among several jobs, and he's a customer for life."
-          ]
-        },
-        {
-          "type": "prose",
-          "heading": "Offices, Rentals and Restoration Jobs",
-          "body": [
-            "Janice T. wrote that her office's restrooms were fixed up well. We do residential and commercial plumbing, so a leak in a building you manage is the same call.",
-            "If you manage a building, tell us who to ask for when we get there."
+            "Gas line leak detection, repair and replacement are part of our work, along with new gas lines for cooktops, furnaces and any gas appliance. Garbage disposals and R.O. systems are on our list too, and so is hose bib and wall and yard hydrant install and repair."
           ]
         },
         {
@@ -398,15 +389,15 @@
           "items": [
             {
               "q": "Do you fix the leak, or only find it?",
-              "a": "Both. Dylan M. wrote that the leak was identified within minutes and fixed within a half hour."
+              "a": "Both. We go after the source and fix it."
             },
             {
               "q": "Can you find a leak you can't see?",
-              "a": "Leak detection and camera inspections are on our list, and Marcia H. had us find a drainage problem. Nobody can promise what's behind a wall before looking."
+              "a": "Camera inspections and leak detection are part of what we do. Nobody can promise what's behind a wall before looking."
             },
             {
               "q": "How soon can you come?",
-              "a": "Dylan M. had a crew out within hours of the call, and Debbie T. wrote that they were out the same day. Call (316) 372-8210 and ask what's possible."
+              "a": "Call (316) 372-8210 and ask what's possible. The emergency hours are listed on our contact page."
             },
             {
               "q": "Do you repair a dripping faucet or a hose bib?",
@@ -455,8 +446,8 @@
       "sections": [
         {
           "type": "review",
-          "quote": "Dan, and crew, answered my call to replace my hot water heater within a few hours by rearranging their work load to accommodate my needs. Did the job neatly, and professionally. Two thumbs up!",
-          "name": "Jeff R."
+          "quote": "Daniel and his crew were great to work with and they did an excellent job . They were great about keeping the carpet and floors clean and they cleaned up everything before they left. I would highly recommend them for all your plumbing needs!",
+          "name": "Mark M."
         },
         {
           "type": "split",
@@ -467,26 +458,22 @@
             "brief": "plumbing pool: water-heater-close"
           },
           "body": [
-            "Tell us what the heater is doing. If you know, tell us whether it runs on gas or electric, and whether it's a tank or tankless.",
-            "Jeff R. wrote that Dan and crew rearranged their work load to fit in his hot water heater replacement."
+            "Tell us what the heater is doing. If you know, tell us whether it runs on gas or electric, and whether it's a tank or tankless."
           ]
         },
         {
-          "type": "review",
-          "quote": "Dan and Jake were wonderful and replaced a rusty bolt on my hot water heater that was apparently defective after installation a year ago. Definitely live up to their high standards",
-          "name": "Susan D."
-        },
-        {
-          "type": "review",
-          "quote": "Daniel and his crew were great to work with and they did an excellent job . They were great about keeping the carpet and floors clean and they cleaned up everything before they left. I would highly recommend them for all your plumbing needs!",
-          "name": "Mark M."
+          "type": "prose",
+          "heading": "Replaced Within a Few Hours by Moving the Work Around",
+          "body": [
+            "Jeff R. called to have his hot water heater replaced. He wrote that Dan and crew answered within a few hours by rearranging their work load to fit his needs, and that the job was done neatly and professionally."
+          ]
         },
         {
           "type": "prose",
-          "heading": "Floors Clean, Everything Cleaned Up",
+          "heading": "A Rusty Bolt on a Heater Installed a Year Earlier",
           "body": [
-            "Mark M. wrote that Daniel and his crew were great about keeping the carpet and floors clean, and that they cleaned up everything before they left.",
-            "If a heater has to come out through a finished part of the house, tell us about the stairs, the hallway or the carpet when you call."
+            "Susan D. had a rusty bolt on her hot water heater that was apparently defective after an installation a year earlier. She wrote that Dan and Jake replaced it, and that they live up to their high standards.",
+            "A small part on a heater you already have is its own kind of call. [[confirm: [X]-year warranty on our work]]"
           ]
         },
         {
@@ -495,56 +482,39 @@
           "name": "Carolyn M."
         },
         {
-          "type": "prose",
-          "heading": "A Call Ahead, and On Time",
-          "body": [
-            "Kathy P. wrote, “Notified were coming early.” Tamara S. wrote “On time, fast, and friendly.”",
-            "A heater job means someone has to be home. Ask when you call what the arrival window looks like, and tell us who will answer the door."
-          ]
-        },
-        {
           "type": "review",
           "quote": "Did a good job. Notified were coming early. Took care of the issues. Very pleased.",
           "name": "Kathy P."
         },
         {
           "type": "prose",
-          "heading": "Tell Us Where the Heater Sits and What's Around It",
+          "heading": "On Time, and Everything Explained",
           "body": [
-            "Tell us if the heater is in a basement, a garage or a closet, and whether there are stairs, a tight hallway or carpet on the way to it. Mark M. wrote that the crew was great about keeping carpet and floors clean, and it helps to know the path before anyone arrives.",
-            "Jeff R. and Susan D. each started with a phone call. Say whether yours is gas or electric, tank or tankless, and how old it is if you know."
+            "Tamara S. called us on time, fast and friendly. Honey S. wrote that the experience was great from the first phone call to the completion of work, and that we explained everything and did a recap when we finished the job.",
+            "AJ called us timely, considerate and polite, and wrote that we took the time to explain the repair needs and the steps taken to fix the issues."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Dan, Tammy, Jake and Brandon",
+          "body": [
+            "Jonathan G. wrote that Dan really is the best at what he does, knowledgeable and professional. Scott W. called Dan timely, with top-notch communication. Vicki V. wrote that it is always a great experience with us, and Lynde C. found everyone very friendly and very professional.",
+            "Will G. called us steadfast and efficient, always professional from start to finish, and Mike J. called our service always fast and professional. Reviews name Dan, Tammy, Jake and Brandon. We're family owned and operated, and licensed and insured."
           ]
         },
         {
           "type": "prose",
           "heading": "Twelve Years in Plumbing, Pipe Fitting and Carpentry",
           "body": [
-            "Our site says 12 years of experience in plumbing, pipe fitting and carpentry, in new construction and maintenance, commercial and residential.",
-            "We're family owned and operated, and licensed and insured. Tank, tankless, gas or electric, the person who answers the phone can take the details."
-          ]
-        },
-        {
-          "type": "prose",
-          "heading": "A Rusty Bolt on a Heater Installed a Year Earlier",
-          "body": [
-            "Susan D. had a rusty bolt on her hot water heater that was apparently defective after an installation a year earlier. She wrote that Dan and Jake replaced it.",
-            "A small part on a heater you already have is its own kind of call. [[confirm: [X]-year warranty on our work]]"
+            "Our site says 12 years of experience in plumbing, pipe fitting and carpentry, in new construction and maintenance, commercial and residential. It also names sump pumps, gas pipes, and sewer and water main repair and replacement."
           ]
         },
         {
           "type": "prose",
           "heading": "Tank or Tankless, Gas or Electric",
           "body": [
-            "Water heaters and tankless water are both on our plumbing list. When you call, say which kind you have and where it sits.",
-            "Our services also include gas line work, so a gas heater doesn't mean a second plumber."
-          ]
-        },
-        {
-          "type": "prose",
-          "heading": "Gas Water Heaters and the Gas Line",
-          "body": [
-            "A gas water heater needs a sound gas line. Gas line installation, repair and replacement are part of what we do, so the heater and the line can be looked at together.",
-            "If you smell gas, leave the house and call your gas company before anything else."
+            "Water heaters and tankless water are both on our plumbing list, along with furnace work. When you call, say which kind you have and where it sits.",
+            "Gas line installation, repair and replacement are on our services list too. Ask about both when you call."
           ]
         },
         {
@@ -553,19 +523,15 @@
           "items": [
             {
               "q": "Do I need a whole new water heater?",
-              "a": "Susan D. needed only a replacement bolt, and Jeff R. had his heater replaced. Tell us what yours is doing when you call."
+              "a": "Not always. Tell us what yours is doing when you call, and we'll tell you whether it needs a repair or a new heater."
             },
             {
               "q": "How soon can you replace it?",
-              "a": "Jeff R. wrote that Dan and crew answered his call within a few hours. Call and ask what's possible today."
+              "a": "Call and ask what's possible today. Emergency hours are on our contact page."
             },
             {
               "q": "Do you install tankless water heaters?",
               "a": "Tankless water is on our plumbing list, and so are tank heaters."
-            },
-            {
-              "q": "Can you handle the gas line?",
-              "a": "Gas line installation, repair and replacement are part of our work."
             },
             {
               "q": "What will a new heater cost?",
@@ -574,14 +540,6 @@
             {
               "q": "Do you replace water heaters in commercial buildings?",
               "a": "We do residential and commercial plumbing."
-            },
-            {
-              "q": "Can you work around the house?",
-              "a": "Mark M. wrote that the crew kept the carpet and floors clean. Tell us what the path to your heater looks like."
-            },
-            {
-              "q": "Will you call before you come?",
-              "a": "Kathy P. wrote, “Notified were coming early.” Ask for the arrival window when you book."
             }
           ]
         },
@@ -630,7 +588,7 @@
         },
         {
           "type": "prose",
-          "heading": "Email Us: yokesplumbingnremodeling@gmail.com",
+          "heading": "No Time to Call? Email Us",
           "body": [
             "Email yokesplumbingnremodeling@gmail.com with what's going on, the address and the best number to reach you. If it's urgent, call."
           ]
@@ -657,13 +615,6 @@
           "body": [
             "**Emergency calls.** Monday to Saturday, 7 a.m. to 10 p.m., based on availability.",
             "**Where we work.** Wichita and the surrounding area. Jobs outside Wichita are subject to a trip charge, so ask when you call."
-          ]
-        },
-        {
-          "type": "prose",
-          "heading": "Smell Gas? Leave First",
-          "body": [
-            "Smell gas? Get out of the house, call your gas company, and then call us."
           ]
         },
         {

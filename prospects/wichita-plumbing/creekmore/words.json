@@ -40,7 +40,7 @@
     {
       "name": "Water Heater Repair",
       "route": null,
-      "blurb": "Repair and maintenance for most brands of water heaters."
+      "blurb": "Water heater repair and maintenance."
     },
     {
       "name": "Water Service Lines",
@@ -110,11 +110,10 @@
         },
         {
           "type": "prose",
-          "heading": "When the Water Heater Quits and You Don't Have a Plumber",
+          "heading": "A Sump Pump Dies in Heavy Rain, and a Plumber Is There Within Hours",
           "body": [
-            "It's 6:50 on a weekday morning. There's a puddle around the water heater, the shower runs cold, and the kids need to be out the door. You're standing in the driveway with your phone, and there are six plumbers on the screen. You don't know a single one.",
-            "You're not afraid of the plumber. You're afraid of the bill. Is this a small fix or a big one? Will somebody tell you the truth, or sell you the biggest job on the truck?",
-            "You want one thing: somebody who looks at it, says what's wrong in plain words, and doesn't make you feel stupid for asking."
+            "Dan B. needed a new sump pump during the heavy rains, and Creekmore sent Heath within a few hours. Martha B. called with an emergency, got a very prompt response, and had a quick repair.",
+            "The office on South Pattie Street opens Monday to Friday at 7:30 AM. Laura B. has had us work for her grandmother and herself several times, and says the office staff communicate well."
           ]
         },
         {
@@ -122,7 +121,7 @@
           "heading": "Family Plumbers. Honest Fix First.",
           "body": [
             "When something breaks, you want a name you can call again.",
-            "We're a third generation family business, founded by our grandfather, Hadley Creekmore. [[confirm: Licensed plumber, license #[XXXX]]]"
+            "We're a third generation family business, founded by our grandfather, Hadley Creekmore, and we've served the community since 1948. [[confirm: Licensed plumber, license #[XXXX]]]"
           ],
           "list": [
             "A free quote on the work",
@@ -131,27 +130,25 @@
             "Third generation, family owned and operated"
           ],
           "listStyle": "checks",
-          "imageSide": "right",
           "image": {
             "slot": "home-hero-alt",
             "alt": "Ranch house on a lawn under a gray sky",
             "brief": "plumbing pool: home-hero-alt"
-          }
+          },
+          "imageSide": "right"
         },
         {
           "type": "prose",
           "heading": "A Plumber Worth Passing Down",
           "body": [
-            "Kevin O. wrote that he has used Creekmore for 30 years and “never had any issues.”",
-            "Jennifer C. wrote that we have helped her family with “multiple projects and issues over the years.”",
-            "Mark A. wrote, “Super family owned service place for all plumbing needs. Give them a call. They are small but super good.”",
-            "Allie G. wrote, “Handsdown the best service by experts who care.”"
+            "Kevin O. has used Creekmore for 30 years and never had any issues. Jennifer C. says we have helped her family with multiple projects and issues over the years.",
+            "Mark A. calls us a family owned service place for all plumbing needs: small, but super good."
           ]
         },
         {
           "type": "review",
-          "quote": "Our son told us about Creekmore about five years ago. Since then they've become “the only company we'd call” plumbers for us and each of our three grown sons. … Creekmore's plumber explained the issue … and went to work to efficiently do the job as it should have been done the first time, with copper. It would've been the easiest thing in the world for him to replace those hoses with the same thing again, knowing that I'd be calling again in six years when those deteriorated too, not knowing there was a better solution. Instead he did the job right, charged an extremely fair price for the time involved...and we weren't surprised by this at all. … I'm just sorry I've lived here all my life and never knew what a local gem we have in this company!",
-          "name": "Jane K."
+          "quote": "Another company quoted me $18,000!! They quoted me $1,800-$2,000 and charged me even LESS than their quote!",
+          "name": "Kara D."
         },
         {
           "type": "services",
@@ -165,56 +162,43 @@
             "When the water heater is done, we install tank-type and tankless models. Bradford White is our preferred brand, and we also install AO Smith and Navien tankless heaters.",
             "Smaller problems are repairs, and we repair and maintain most brands of water heaters."
           ],
-          "imageSide": "left",
+          "link": {
+            "label": "See water heater replacement in Wichita",
+            "route": "/water-heater-replacement-wichita-ks/"
+          },
           "image": {
             "slot": "water-heater",
             "alt": "Tank-type water heater with copper supply lines in a utility room",
             "brief": "plumbing pool: water-heater"
           },
-          "link": {
-            "label": "See water heater replacement in Wichita",
-            "route": "/water-heater-replacement-wichita-ks/"
-          }
-        },
-        {
-          "type": "review",
-          "quote": "I've had them do work for my grandmother and myself several times. Absolutely wonderful, knowledgeable, and trustworthy technicians. Office staff is great with communication too.",
-          "name": "Laura B."
+          "imageSide": "left"
         },
         {
           "type": "split",
-          "heading": "Leaks at the Foundation and Under the Yard",
+          "heading": "Water Lines, Yards and Foundations",
           "body": [
             "Water service runs from the house to the meter, and we handle all of it.",
-            "For water service lines, we use directional drilling to lessen the damage to your yard. When the leak is coming through the wall, we hand dig at the foundation.",
-            "Kayla S. had a leaky pipe in her new house repaired in about an hour."
+            "For water service lines, we use directional drilling to lessen the damage to your yard. When the leak is coming through the wall, we hand dig at the foundation."
           ],
-          "imageSide": "right",
           "image": {
             "slot": "yard-dig",
             "alt": "Open trench with pipe in a front yard",
             "brief": "plumbing pool: yard-dig"
-          }
+          },
+          "imageSide": "right"
         },
         {
           "type": "prose",
-          "heading": "Toilets, Backflow Testing and Water Softeners",
+          "heading": "Small Jobs and Large Ones",
           "body": [
-            "Three more things we do."
-          ],
-          "items": [
-            {
-              "title": "Toilets",
-              "text": "We repair and install toilets of any brand, old or new, including ADA toilets."
-            },
-            {
-              "title": "Backflow testing",
-              "text": "We test, repair and install backflow devices. Our PHCC certified tech tests yours and reports to the city."
-            },
-            {
-              "title": "Water softeners and filters",
-              "text": "A water softener that needs no salt, or a reverse osmosis system that fits under your kitchen sink."
-            }
+            "Jennie S. has used us for large and small jobs and calls us honest and always willing to work with her. Kayla S. had a leaky pipe in a new house, and we showed up on time and repaired it in about an hour."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Toilets, Repaired or Installed",
+          "body": [
+            "Any brand, old or new, ADA toilets included. We repair the one you have or install the one you picked."
           ],
           "link": {
             "label": "See toilet repair in Wichita",
@@ -222,16 +206,11 @@
           }
         },
         {
-          "type": "review",
-          "quote": "Gabe came out to look at our shower which was leaking. Gabe identified the issue and advised he could repair it with no issues. Gabe was asked to look at our kitchen plumbing as well while he was on site. Gabe quoted out the price to do all repairs and this was reasonable cost in total. Gabe was clean, quick, and respectful. Gabe explained what all he did to complete the job. I will suggest family and friends use Creekmore in the future.",
-          "name": "Dillon D."
-        },
-        {
           "type": "prose",
-          "heading": "Bathroom and Kitchen Remodel Plumbing",
+          "heading": "A Remodel on a Concrete Slab",
           "body": [
-            "Tub to shower, new faucets, a cast iron sink swapped for stainless.",
-            "Donna R. re-plumbed her kitchen and bathroom, moved her washer and dryer and added a spigot in the garage, in a house on a concrete slab. Tell us what you're changing and we'll quote it."
+            "Donna R.'s family has used Creekmore since the 1960s, for her parents' house, her own and the rentals. Last year she remodeled her home. We moved the washer and dryer, re-plumbed the kitchen and bathroom, and added a spigot in the garage, in a house with a concrete slab foundation.",
+            "When a pipe burst after a tenant used a hose in freezing weather, she expected a huge bill. It was $147."
           ]
         },
         {
@@ -249,27 +228,23 @@
         },
         {
           "type": "faq",
-          "heading": "Puddle, Price and Parts: Your Questions",
+          "heading": "Do I Need a Whole New Water Heater?",
           "items": [
             {
               "q": "Can you come today?",
-              "a": "Call the office and ask for the first opening. Doreen H. wrote that a technician came out first and gave her a free quote, and a second technician, Mark, came a couple of hours later."
+              "a": "Call the office and ask for the first opening. We are open Monday to Friday, 7:30 AM to 4:30 PM."
             },
             {
               "q": "Will you actually show up?",
-              "a": "Dan S. wrote that we're “always on time,” and Susan M. wrote that we “arrived promptly.” Call (316) 264-1342 and ask when we can be there."
+              "a": "Dan S. wrote that we are always on time."
             },
             {
               "q": "What's it going to cost, and do I need all of it?",
-              "a": "A quote is free. Richard W. wrote, “Prices are fair,” and Phyllis B. wrote, “Not overpriced.”"
+              "a": "A quote is free. Ethan K. felt our rates were very reasonable compared to other plumbers in the area."
             },
             {
               "q": "Do I need a whole new water heater?",
-              "a": "Not always. We repair and maintain most brands of water heaters, so tell us what you see and how old the heater is."
-            },
-            {
-              "q": "What if it leaks again?",
-              "a": "Call (316) 264-1342 and tell us what happened. Donna R. wrote that when there were glitches, “Creekmore always works with me to make it right.”"
+              "a": "Not always. Tell us what you see and how old the heater is."
             }
           ]
         },
@@ -315,64 +290,32 @@
         },
         {
           "type": "split",
-          "heading": "Free Quote, Old Tank Out the Door",
+          "heading": "Thinking of Doing It Yourself? Hollie B. Was",
           "body": [
-            "The quote is free. Hollie B.'s price included removing the old tank along with the cost of the new one, and Mary V. wrote that her old heater was removed after the installation."
+            "Hollie B.'s water heater went out. Two other plumbing companies never returned her calls, so she called us on a family recommendation. She told Duane the family was considering replacing it themselves, and he said to call if they had any questions.",
+            "Then he named the price. It included removing the old tank along with the new one, and it was about what she expected to pay at Home Depot for the tank alone. The job took about 30 minutes, not the 4 hours and Google research she had planned on."
           ],
-          "imageSide": "right",
           "image": {
             "slot": "water-heater-close",
             "alt": "Base of a water heater with a drain valve and a small puddle on the floor",
             "brief": "plumbing pool: water-heater-close"
-          }
-        },
-        {
-          "type": "prose",
-          "heading": "Thinking of Doing It Yourself? Hollie B. Was",
-          "body": [
-            "Hollie B.'s water heater “went out,” and she called us “based on a recommendation from family.” She told Duane the family was “considering replacing it ourselves.” He said to call him if they had any questions, then told her, “I'll tell you what we charge and you can let me know.”",
-            "The price, she wrote, “was MORE than reasonable and included removing the old and the cost of the new tank.” And “what would have taken us 4 hours and a lot of Google research, he did in about 30 minutes.”",
-            "Her summary: “I don't write many reviews but I rely on them when making decisions. This company is well worth my time.”"
-          ]
+          },
+          "imageSide": "right"
         },
         {
           "type": "prose",
           "heading": "Bradford White First, AO Smith and Navien Tankless",
           "body": [
             "We install tank-type and tankless water heaters. [[confirm: [X]-year warranty on our work]]",
-            "Bradford White is our preferred brand. Our tankless installs include AO Smith and Navien, and our repair and maintenance work covers most brands."
+            "Bradford White is our preferred brand. AO Smith and Navien are among our tankless installs."
           ]
         },
         {
           "type": "prose",
-          "heading": "Hoses on a Six-Year-Old Heater",
+          "heading": "Rubber Hoses on a Six-Year-Old Heater",
           "body": [
-            "Jane K. called us about deteriorating rubber hoses on a 6-year-old water heater. She wrote that the plumber explained that rubber hoses “deteriorate from the heat and start leaving black stuff in your hot water.”",
-            "He replaced them with copper. In her words, he “did the job right, charged an extremely fair price for the time involved.”"
-          ]
-        },
-        {
-          "type": "prose",
-          "heading": "A Leaking Tank, a Same-Day Appointment",
-          "body": [
-            "Mary V. was sent to us by church members because her hot water tank was leaking. She wrote, “I called and was given an appointment the same day.”",
-            "She also wrote that the service person, Mark, “was on time and with his assistant, very efficient in the installation,” and that the price “was fair and less than another quote I received.” She closed with, “I definitely recommend this company and will call them when I have future plumbing needs.”"
-          ]
-        },
-        {
-          "type": "prose",
-          "heading": "Large and Small Jobs, the Same Crew",
-          "body": [
-            "Jennie S. wrote that she has used us “for large and small jobs” and that we are “extremely nice and fast on the job.” She added, “They are honest and always willing to work with us!”",
-            "Gary C. wrote, “Locally owned business, and they know what they're doing. Staff is awesome.” Jane K. said what the hose job taught her family: “This is what Creekmore has taught us to expect from them.”"
-          ]
-        },
-        {
-          "type": "prose",
-          "heading": "Trusted Inside the House, Home or Not",
-          "body": [
-            "Donna R. wrote, “We trust them in our homes whether we're there or not. Never had a reason not to.”",
-            "John S. wrote, “Great people and get the job done right the 1st time.” Craig H. wrote, “Would not consider another plumber service,” and mary B. called us “dependable, respectful and professional.”"
+            "Jane K. called us about deteriorating rubber hoses on a six-year-old water heater that a competitor had installed. The plumber explained that rubber hoses deteriorate from the heat and start leaving black stuff in the hot water.",
+            "He did the job with copper instead of putting the same hoses back, and charged what she calls an extremely fair price for the time involved. Her son told her about us five years ago, and now we are the plumbers for her and her three grown sons."
           ]
         },
         {
@@ -389,15 +332,19 @@
             },
             {
               "q": "Do you repair a heater instead of replacing it?",
-              "a": "We repair and maintain most brands of water heaters. Jane K.'s heater needed new hoses, not a new tank."
+              "a": "Yes. We repair and maintain most brands of water heaters, so tell us what you see and how old the heater is."
             },
             {
-              "q": "Do you remove the old water heater?",
-              "a": "Mary V. and Hollie B. both had the old heater taken out. Hollie B. wrote that the price included it, so ask what your quote covers."
+              "q": "Is there a discount for new customers?",
+              "a": "Our site offers 10% off labor for new customers. Ask about it when you call."
             },
             {
-              "q": "How long does a replacement take?",
-              "a": "Mary V. wrote that hers took an hour and 40 minutes, and Hollie B. wrote that hers took about 30 minutes. Call and ask about yours."
+              "q": "Who owns the company?",
+              "a": "Creekmore Plumbing is a third generation family business. Our grandfather, Hadley Creekmore, founded it."
+            },
+            {
+              "q": "Where is the office, and when is it open?",
+              "a": "440 South Pattie Street in Wichita, Monday to Friday, 7:30 AM to 4:30 PM."
             }
           ]
         },
@@ -446,82 +393,49 @@
           "heading": "Repair the Old One or Install the New One",
           "body": [
             "We repair and install toilets of any brand, old or new, so you can have us work on the one you've got or install the one you picked. ADA toilets are included.",
-            "The quote is free, and a call to the office is the place to start.",
-            "Blake B. closed his review with, “Everything about this experience was incredible.”"
+            "The quote is free, and a call to the office is the place to start."
           ],
-          "imageSide": "right",
           "image": {
             "slot": "fixture",
             "alt": "New bathroom vanity and faucet",
             "brief": "plumbing pool: fixture"
-          }
+          },
+          "imageSide": "right"
         },
         {
           "type": "prose",
           "heading": "A Toilet and a Copper Sink in One Visit",
           "body": [
-            "Louis S. wrote that we “came out replaced my toilet and did the plumbing on my copper farmstye sink.” He thanked Mark, Steve, North and the whole crew.",
-            "Sherry M. wrote that we “did a great job fixing a toilet problem.”",
-            "Sherry M. gets a second mention here only because her review is short: she wrote that we “did a great job fixing a toilet problem.”"
+            "Louis S. had us replace a toilet and do the plumbing on a copper farmhouse sink, and thanked Mark, Steve, North and the whole crew.",
+            "Sherry M. called us about a toilet problem that another plumbing company had messed up, and says we did a great job fixing it."
           ]
         },
         {
           "type": "prose",
-          "heading": "A Kitchen Drain Rerouted, a Basement Clean-Out",
+          "heading": "A Kitchen Drain Rerouted, a Basement Clean-Out, a Gas Line",
           "body": [
-            "Tom M. wrote, “These guys came in and rerouted my kitchen sink drain pipe, real professional. Beautiful job.”",
-            "Susan M. wrote, “They cleaned up after themselves. The charges were reasonable.” Rebecca A. had a clean-out installed in her basement. She wrote, “Mark arrived on time, and worked quickly, efficient and was very nice.”"
+            "Tom M. had his kitchen sink drain rerouted. Rebecca A. had a clean-out installed in the basement. Rebecca H. had us run a new gas line, and says we responded quickly and showed up when we said we would.",
+            "Susan M. called about a sump pump, and we came out the next morning."
           ]
         },
         {
           "type": "prose",
           "heading": "A Plumber Who Showed Richard E. What to Do Next",
           "body": [
-            "Richard E. wrote that the plumber “helped show me some various maintenance tasks I can do to prevent further incidents in the future.”",
-            "Phyllis B. wrote that the plumber is “friendly and will explain if asked.” Dillon D. wrote, “Gabe was clean, quick, and respectful. Gabe explained what all he did to complete the job.”"
+            "Richard E. says the plumber showed him maintenance tasks he can do himself to prevent further incidents. Phyllis B. calls the plumber friendly and willing to explain if asked."
           ]
         },
         {
           "type": "prose",
-          "heading": "Mark, Gabe and Heath, Named by Customers",
+          "heading": "Always Mark, Gabe or Heath",
           "body": [
-            "John F. wrote, “I am 100% confident that Mark will get it done professionally and competently.”",
-            "Kelly M. wrote, “Absolutely honest. I highly recommend Creekmoor. I rarely take the time to leave reviews but Heath and Creekmore deserve it.”",
-            "Joleen T. wrote, “Gabriel is honest, professional, and prompt.”"
-          ]
-        },
-        {
-          "type": "prose",
-          "heading": "Quick, Prompt and Back for More",
-          "body": [
-            "Rebecca H. wrote that we “responded quickly and when they said they would be here.” Clay W. wrote, “These guys always do an awesome job !!!”",
-            "Ramona L. wrote, “Love these guys!!”"
-          ]
-        },
-        {
-          "type": "prose",
-          "heading": "Three or Four Calls, and Still on the List",
-          "body": [
-            "Susan M. wrote that she has called us “the 3 or 4 times I've called them with a plumbing issue,” and that she is “very happy.” John F. “used Creekmore Plumbing repeatedly.”",
-            "Stephanie S. wrote, “Fast friendly and affordable prices and service!”"
-          ]
-        },
-        {
-          "type": "prose",
-          "heading": "Free Quotes, Fair Rates in Their Words",
-          "body": [
-            "The quote is free. Josephine P. wrote, “Quality work. Very affordable and reasonable price. Punctual in delivering service.”",
-            "Ethan K. wrote, “Not only did they complete the job quickly and do it well, I felt their rates were very reasonable compared to other plumbers in the area.” Nicholas W. called the service “Great, quick, and professional.”"
+            "John F. is 100% confident that Mark will get it done professionally and competently. Joleen T. calls Gabriel honest, professional and prompt. Kelly M. says Heath and Creekmore deserve a review, which is rare for her."
           ]
         },
         {
           "type": "faq",
           "heading": "Old Toilets, ADA and Cost: Your Questions",
           "items": [
-            {
-              "q": "What does the quote cost?",
-              "a": "Nothing. A quote is free."
-            },
             {
               "q": "Do you work on older toilets?",
               "a": "Yes. We can work on any brand, old or new."
@@ -536,15 +450,11 @@
             },
             {
               "q": "Can you do more than the toilet in one visit?",
-              "a": "Our remodel plumbing covers bathrooms and kitchens: tub to shower, new faucets, a cast iron sink swapped for stainless. Tell us everything you need done when you call."
-            },
-            {
-              "q": "Do you work on rental properties?",
-              "a": "Donna R. gives her tenants our number, and wrote, “My tenants think they're awesome.” When a pipe burst after a tenant used a hose in below freezing conditions, she wrote, “I braced for a huge bill. It was only $147!” and “They only charged what needed fixed.”"
+              "a": "Our remodel plumbing covers bathrooms and kitchens: a tub swapped for a shower, new faucets, a cast iron sink changed to stainless. Tell us everything you need done when you call. Dillon D. had Gabe look at a leaking shower and, while he was on site, the kitchen plumbing too. Gabe quoted the price for all the repairs and explained what he did."
             },
             {
               "q": "Can you come today?",
-              "a": "Call the office and ask."
+              "a": "Doreen H. had a free quote from one technician and a second, Mark, a couple of hours later for the fix. Call (316) 264-1342 weekdays, 7:30 to 4:30, and ask for the first opening."
             }
           ]
         },
