@@ -2,7 +2,7 @@
 
 Hey Ben and the Ballinger team,
 
-Your reviews say you'll come look at an electrical mess when others won't give people the time of day (Elena W. and Wayne R. both say it). My daughter and I build websites for service businesses, so we made you a mockup that leads with it: the electrician who comes to look at the hard ones.
+Your reviews say you'll come look at an electrical mess when others won't give people the time of day (Elena W. says it in her review). My daughter and I build websites for service businesses, so we made you a mockup that leads with it: the electrician who comes to look at the hard ones.
 
 https://ballinger.websitepreview.fluidframemarketing.com/
 

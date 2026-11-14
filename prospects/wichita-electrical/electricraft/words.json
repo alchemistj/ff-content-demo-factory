@@ -84,7 +84,7 @@
       "navLabel": "Home",
       "keyword": "electrician wichita ks",
       "hero": {
-        "eyebrow": "Wichita, KS · Residential, Commercial and Industrial",
+        "eyebrow": "Wichita, KS · 1218 E 18th St North",
         "h1": "Electrician in Wichita, KS — ElectriCraft",
         "sub": "A warm outlet plate, a faint smell and a wall you can't see into. Call (316) 264-3359.",
         "primaryCta": {
@@ -132,12 +132,10 @@
           "type": "split",
           "heading": "They Fixed It, Then Pointed Out More",
           "body": [
-            "Mike D., who had power run to a new shed, and Martin N. both wrote about being offered options before the work started.",
-            "Rebecca said the company helped her plan a large job as smaller items she could schedule and mark off as she went."
+            "Mike D., who had power run to a new shed, and Martin N. both wrote about being offered options before the work started."
           ],
           "list": [
             "Options laid out before the work starts",
-            "A big job broken into steps you can budget",
             "Cleanup afterward: Kelley N., Vera W. and Robert B. all mention it"
           ],
           "image": {
@@ -152,7 +150,7 @@
           "heading": "When Storm Damage Leaves You Waiting on the Utility",
           "body": [
             "A tree comes down, the meter box is torn loose, and the utility won't reconnect until the electrical side is fixed. Now you're stuck between two companies, with the power still off.",
-            "Jim H. had a storm-damaged service drop line rebuilt, riser and weatherhead included."
+            "Jim H. had a storm-damaged service drop line rebuilt, riser and weatherhead included, along with new conductors and a new weatherhead and mast kit."
           ],
           "image": {
             "slot": "inspection",
@@ -163,13 +161,13 @@
         },
         {
           "type": "review",
-          "quote": "They came to fix our meter box when a huge tree landed in our yard and knocked out power lines down! … They heard that we asked for urgency and they quickly and efficiently made it happen. … They did everything necessary to help us ensure our power would be back on- including calling evergy to make sure that replacing the meter box was all Evergy needed to replace the power lines.",
-          "name": "Taryn S."
+          "quote": "Jimmy and his crew were very efficient and knowledgeable. Everything looks so much nicer. They don't leave a huge mess, they are very cleanly. They are polite and will make good on a job! We appreciate them so much. We are highly satisfied with our new breaker box.",
+          "name": "Vera W."
         },
         {
           "type": "services",
-          "heading": "Everything We Do",
-          "intro": "From a dead outlet to a new panel, for homes, businesses and industrial sites."
+          "heading": "From a Dead Outlet to a New Panel",
+          "intro": "From a dead outlet to a new panel, for homes, businesses and industrial sites. Customers have written about panels, lights, exhaust fans, a new shed and a plant shop buildout."
         },
         {
           "type": "review",
@@ -180,32 +178,12 @@
           "type": "prose",
           "heading": "Jobs Customers Have Written About",
           "body": [
-            "A few of the jobs customers have written about, from a GFCI at a wet bar to a new panel."
+            "A few of the jobs customers have written about."
           ],
           "items": [
             {
-              "title": "A panel update and a new garage",
-              "text": "Billie V. had her panel updated and a new garage and well wired."
-            },
-            {
-              "title": "A panel upgrade and an exhaust fan",
-              "text": "Kassandra B. had a bathroom exhaust fan put in and the panel upgraded."
-            },
-            {
               "title": "A vaulted ceiling and an outdoor TV outlet",
               "text": "Jennifer D. had ceiling lights added to a vaulted ceiling and dimmer switches put in."
-            },
-            {
-              "title": "Power to a new shed",
-              "text": "Mike D. had power extended to a shed, with the conduit trench backfilled."
-            },
-            {
-              "title": "A bungalow restoration",
-              "text": "Danny L. has had an electrician out several times on a 1910 bungalow."
-            },
-            {
-              "title": "A plant shop buildout",
-              "text": "Eva T. had outlets installed while building out her plant shop."
             }
           ],
           "link": {
@@ -215,10 +193,10 @@
         },
         {
           "type": "prose",
-          "heading": "Panel Upgrades and Breaker Boxes",
+          "heading": "An Inspector Sent Her to Them for the Panel",
           "body": [
-            "An old panel, a breaker box with no room left, or a house that has added a new appliance can outgrow what's on the wall. We upgrade and relocate panels.",
-            "Kassandra B. said the inspector for her property recommended ElectriCraft over anyone in town."
+            "Kassandra B. had an exhaust fan put in and her panel upgraded, and wrote that the inspector for her property recommended ElectriCraft over anyone in town.",
+            "Vera W. wrote that the crew doesn't leave a huge mess and that she is highly satisfied with her new breaker box."
           ]
         },
         {
@@ -228,15 +206,42 @@
         },
         {
           "type": "prose",
-          "heading": "Lighting, Fans and Fixtures",
+          "heading": "Sconces, Exhaust Fans and a Rebuilt Fixture",
           "body": [
-            "New lights, ceiling fans, sconces, dimmers and rebuilt fixtures.",
-            "Lynn W. had sconces installed. Kathy G. had a bathroom exhaust fan put in."
+            "Lynn W. had sconces installed. Kathy G. had a bathroom exhaust fan put in. Taylor G. had a favorite light fixture rebuilt."
           ],
           "link": {
             "label": "See lighting installation in Wichita",
             "route": "/lighting-installation-wichita-ks/"
           }
+        },
+        {
+          "type": "prose",
+          "heading": "A New Shed and Two Ways to Route the Wires",
+          "body": [
+            "Mike D. asked ElectriCraft to extend power to a new shed. He wrote that the electrician showed a strong interest in what he needed, asked questions and offered options that would save him money.",
+            "When there was more than one way to route wires and place outlets, he was offered options and suggestions. The trench for the conduit was backfilled and the work areas were cleaned up."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "When Jimmy came to estimate the cost of extending power to a new shed he showed a strong interest in what my requirements were. He asked questions and offered options that would fulfill my needs and save me money. I called and scheduled the job a day later. He and his crew arrived and started on time. He made sure I understood what was being done and kept me informed of his progress. When there was more than one way to route wires and place outlets he offered me options and made suggestions. The installation was excellent. Damage to the yard was kept to a minimum. The trench for the conduit was backfilled. All the work areas were cleaned up. Everything works perfectly. All done on time and on budget. The city inspection was almost a formality. I couldn't ask for a better electrician. I will definitely call ElectriCraft for the next work I need done.",
+          "name": "Mike D."
+        },
+        {
+          "type": "prose",
+          "heading": "A Home Inspection Gave Them a List",
+          "body": [
+            "Catherine S. called ElectriCraft to address issues from her home inspection. The electrician showed up a few hours after her call because she was on a time crunch, and the job took 2 hours.",
+            "She wrote that he addressed everything the buyers requested and the price was very reasonable."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "A Garage, a Well and a New Panel",
+          "body": [
+            "Billie V. had her panel updated and a new garage and well wired. She wrote that this was not her first call to ElectriCraft and would not be her last."
+          ]
         },
         {
           "type": "prose",
@@ -248,45 +253,43 @@
         },
         {
           "type": "prose",
-          "heading": "Weekdays 7 to 5 at 1218 E 18th St North",
+          "heading": "Outlets for a Plant Shop Buildout",
           "body": [
-            "Our office is at 1218 E 18th St North in Wichita, KS 67214, open Monday to Friday, 7 AM to 5 PM, and closed weekends. Call (316) 264-3359 or (316) 491-2910."
+            "Eva T. had ElectriCraft install outlets during the buildout of her plant shop. She wrote that the electrician paid attention to detail and took pride in his work.",
+            "With many moving parts in a buildout, they wanted someone reliable on the project."
           ]
         },
         {
+          "type": "review",
+          "quote": "Jimmy with Electricraft has been absolutely incredible to work with during the buildout of Verdant Coven Plant Co. From installing outlets to helping bring our vision to life, he consistently went above and beyond in every way possible. What really sets Jimmy apart is his attention to detail and the pride he takes in his work. He doesn’t just “get the job done” — he makes sure every single thing is done correctly, safely, and thoughtfully. As business owners juggling a million moving parts, having someone reliable, knowledgeable, and genuinely invested in the project made such a difference for us. You can tell he truly cares about the quality of his craftsmanship and the people he works with. We are beyond grateful for all of his hard work and highly recommend him to anyone needing electrical work done. Honest, professional, dependable, and meticulous — exactly the kind of person you want on your team when building something special.",
+          "name": "Eva T."
+        },
+        {
           "type": "faq",
-          "heading": "Warm Plate, Bigger Job, Price, Warranty",
+          "heading": "Today, Cost, Inspection, Warranty",
           "items": [
             {
               "q": "Can you come today?",
-              "a": "Call and ask. Our office hours are Monday to Friday, 7 AM to 5 PM, and we'll tell you on the phone when we can get there. If you see smoke or sparks, or smell burning, get everyone out and call 911 first."
-            },
-            {
-              "q": "Is this actually dangerous, or are you selling me something?",
-              "a": "A warm plate, a burning smell or a breaker that trips again after you reset it is worth a call. Cynthia G. and Catherine S. each wrote that the electrician pointed out something beyond the problem they called about."
+              "a": "Call (316) 264-3359 and say how urgent it is. If you see smoke or sparks, or smell burning, get everyone out and call 911 first."
             },
             {
               "q": "What's it going to cost?",
-              "a": "Describe the work when you call, and ask how it would be priced."
+              "a": "Taylor R. wrote that the pricing seemed reasonable, and Matt S. wrote that the job came in under budget."
             },
             {
               "q": "Will it pass inspection, and is there a warranty?",
-              "a": "Ask when you call whether your job needs a permit and inspection. Residential electrical services come with a one-year warranty."
+              "a": "Aaron G. wrote that his job was completed at the price quoted and passed inspection with no issues. Residential electrical services come with a one-year warranty."
             },
             {
               "q": "Do you only work on houses?",
               "a": "No. We also do commercial electrical installation, including emergency lighting, and industrial electrical repairs."
-            },
-            {
-              "q": "Do you come out on weekends?",
-              "a": "The office is open Monday to Friday, 7 AM to 5 PM, and closed weekends. Julie K. wrote that ElectriCraft came right out on a Sunday, so call and ask."
             }
           ]
         },
         {
           "type": "callBand",
           "heading": "Call Before You Keep Resetting That Breaker",
-          "text": "Call (316) 264-3359 and tell us what's going on. ElectriCraft, 1218 E 18th St North, Wichita."
+          "text": "Call (316) 264-3359 and tell us what's going on."
         }
       ]
     },
@@ -298,7 +301,7 @@
       "hero": {
         "eyebrow": "Electrical repair, Wichita",
         "h1": "Electrical Repair in Wichita, KS — ElectriCraft",
-        "sub": "An outlet that quit, a breaker that keeps tripping, lights that flicker. Call us and tell us what it's doing. Call (316) 264-3359.",
+        "sub": "An outlet that quit, a breaker that keeps tripping, lights that flicker. Call (316) 264-3359 and tell us what it's doing.",
         "primaryCta": {
           "label": "Call (316) 264-3359",
           "action": "call"
@@ -316,15 +319,15 @@
       "sections": [
         {
           "type": "review",
-          "quote": "Working with Electricraft was so easy. From scheduling to service completion, they were informative, polite, and professional. The technician explained why certain things had stopped working, what needed to be done, some things we needed to be aware of in an older house, and finished the job in no time.",
+          "quote": "Working with Electricraft was so easy. From scheduling to service completion, they were informative, polite, and professional. The technician explained why certain things had stopped working, what needed to be done, some things we needed to be aware of in an older house, and finished the job in no time. They'll be our first call if another problem arises. Also: AFFORDABLE.",
           "name": "Lauren D."
         },
         {
           "type": "split",
           "heading": "Tell Us Which Outlets, Which Rooms, and When It Started",
           "body": [
-            "You tell us what's happening: which outlets, which rooms, when it started. Our office schedules a visit.",
-            "Describe the work when you call, and ask how it would be priced."
+            "Lauren D. wrote about the whole visit, from scheduling to the finished job. The technician explained why certain things had stopped working, what needed to be done and what to know about an older house.",
+            "Tell us the same things when you call: which outlets, which rooms and when it started."
           ],
           "list": [
             "Dead outlets and switches",
@@ -346,112 +349,115 @@
         },
         {
           "type": "prose",
-          "heading": "Five Signs Worth a Same-Day Call",
+          "heading": "He Showed Up and the Problem Stopped",
           "body": [
-            "These signs are worth a call before anything else goes wrong."
-          ],
-          "items": [
-            {
-              "title": "A breaker that keeps tripping",
-              "text": "An overloaded circuit, a short or a ground fault. A breaker that trips again right after you reset it is telling you something, so don't keep flipping it back on."
-            },
-            {
-              "title": "An outlet or switch plate that's warm",
-              "text": "A loose connection heats up. A warm or discolored plate, a burning smell or a buzz is worth a call the same day."
-            },
-            {
-              "title": "Outlets that stopped working",
-              "text": "Often a tripped GFCI outlet somewhere else on the circuit, or a loose or failed connection."
-            },
-            {
-              "title": "Lights that flicker",
-              "text": "One fixture is often the bulb or the fixture itself. Flicker across several rooms, or when a big appliance starts, points to a loose connection or an overloaded service."
-            },
-            {
-              "title": "Part of the house is dead",
-              "text": "A tripped breaker, a failed connection or storm damage."
-            }
+            "Nick B. had an odd issue that was difficult to track down. Every time the electrician came, the problem went quiet.",
+            "Eventually they got him there at the same moment it was happening, and he tracked it down and fixed it. If yours comes and goes, say so when you call."
           ]
         },
         {
           "type": "review",
-          "quote": "I've had Julian from ElectriCraft out several times since starting the restoration of my 1910 Bungalow. He has done nothing but excellent work and knows a lot of the how they \"used to do things\" back in the day.",
+          "quote": "I've had Julian from ElectriCraft out several times since starting the restoration of my 1910 Bungalow. He has done nothing but excellent work and knows a lot of the how they \"used to do things\" back in the day. I plan on having him back out again in the future as my restoration continues to progress along. I would 100% recommend him and the company. Thank you.",
           "name": "Danny L."
         },
         {
           "type": "prose",
-          "heading": "A Big Job in Smaller Budget Items",
+          "heading": "Several Visits to a 1910 Bungalow",
           "body": [
-            "Sometimes a repair points to something bigger, like an overloaded circuit or an old panel.",
-            "Rebecca had a large job and said the company helped her plan it as smaller items she could schedule and mark off as she went."
+            "Danny L. has had an electrician out several times since starting to restore his 1910 bungalow. He wrote that Julian knows a lot about how they used to do things back in the day.",
+            "Lauren D. also came away knowing what to be aware of in her older house. If your house is old, tell us how old when you call."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "What an awesome company! Kathy was so personable and efficient on the phone and got me on the schedule super fast. Jimmy is clearly a jovial, knowledgeable guy and fixed up our issues in no time at all. Prices were extremely reasonable. Highly recommend!",
+          "name": "Kari R."
+        },
+        {
+          "type": "prose",
+          "heading": "Fixed in No Time, and the Price Matched",
+          "body": [
+            "Kari R. wrote that her issues were fixed in no time at all and that prices were extremely reasonable. Aaron G. had a job done at the price quoted that passed inspection with no issues.",
+            "Matt S. wrote that his job came in under budget and that he would use ElectriCraft again."
           ]
         },
         {
           "type": "prose",
-          "heading": "After a Storm: the Meter Box and the Line From the Pole",
+          "heading": "A Large Job Split Into Smaller Budget Items",
           "body": [
-            "If the meter box or the line from the pole is damaged, the utility has to be part of the fix. Taryn S. and Jim H. both called ElectriCraft after storm damage, and Taryn wrote that the crew phoned the utility for her.",
-            "Both are in the reviews, and so is the one thing they have in common: they needed someone to move fast."
+            "Rebecca's job was large and the weather was in the single digits. The crew worked in the uninsulated attic, the basement and every spot in between, and she wrote that they communicated from an ETA of 20 minutes through the whole process.",
+            "She also wrote that the company helped her plan the work as smaller budget items she could schedule out and mark off, so she felt she was progressing."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "I can’t say enough good things about Jimmy and the exceptional quality of his work. He has completed multiple jobs at both my personal residence and my place of business, and every time, he has gone above and beyond to exceed my expectations. Not only is Jimmy highly skilled and thorough in his work, but his personable and professional demeanor makes the entire process smooth and enjoyable. He is a true asset to Electricraft, and I highly recommend him to anyone in need of top-notch electrical work. Electricraft is fortunate to have someone of his caliber on their team!",
+          "name": "Thomas M."
+        },
+        {
+          "type": "prose",
+          "heading": "A Home, a Business and a Facility",
+          "body": [
+            "Thomas M. has had multiple jobs done at both his residence and his place of business. Jerry W. has used ElectriCraft at his facility and wrote that the communication is excellent and the work is good and affordable.",
+            "ElectriCraft lists commercial electrical installation and industrial electrical repairs alongside the residential work."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Jimmy and his son were an excellent team. They came to fix our meter box when a huge tree landed in our yard and knocked out power lines down! We told them evergy was coming back in the evening and wouldn’t restore our power unless the meter was fixed. They heard that we asked for urgency and they quickly and efficiently made it happen. I would recommend them 10/10. Super friendly, professional, and kind. They did everything necessary to help us ensure our power would be back on- including calling evergy to make sure that replacing the meter box was all Evergy needed to replace the power lines. Again- Jimmy and his son were a stellar team with amazing customer service!",
+          "name": "Taryn S."
+        },
+        {
+          "type": "prose",
+          "heading": "A Tree in the Yard and a Torn Meter Box",
+          "body": [
+            "A huge tree landed in Taryn S.'s yard and knocked out power lines. The utility wouldn't restore power unless the meter was fixed, and she told the crew she needed urgency.",
+            "She wrote that they made it happen, and that they called the utility to confirm replacing the meter box was all it needed to replace the power lines."
           ]
         },
         {
           "type": "prose",
-          "heading": "Who Answers the Phone",
+          "heading": "A Sunday Visit",
           "body": [
-            "Customers mention the office by first name. Kari R. and Cynthia G. both name Kathy, who set up their appointments.",
-            "Call (316) 264-3359, or the second line, (316) 491-2910, and tell Kathy or whoever picks up what it's doing."
+            "Julie K. had many issues and appreciated ElectriCraft coming right out on a Sunday. She wrote that Jimmy fixed them all."
           ]
         },
         {
           "type": "prose",
-          "heading": "Older Homes",
+          "heading": "Lights Out, an On-Time Visit",
           "body": [
-            "Houses built decades ago have often been added to over the years. You can find outlets with no ground, boxes that were never meant for today's loads and wiring from several different eras.",
-            "Tell us how old your house is when you call, and what you know has been changed. It helps us come ready."
+            "Anna J. had some lights go out and called ElectriCraft. The electrician came by to check things out and was on time for the appointment, and she wrote that it was a relief to have things up and working again."
           ]
         },
         {
           "type": "prose",
-          "heading": "Note What's Tripping First",
+          "heading": "Two Generator Stories",
           "body": [
-            "If you can do it safely, note which outlets or rooms are affected, when it started and what was running. Check whether a breaker has tripped, and look for a GFCI outlet that needs resetting.",
-            "Don't open the panel cover or touch anything that's scorched, wet or buzzing. If you see smoke or sparks, or smell burning, get everyone out and call 911."
+            "Matt B. had an error code on a Kohler generator troubleshot, and wrote that after a storm knocked out power the office scheduled them for next-day service. Edwin Z. had a Briggs & Stratton home generator worked on and wrote that, a year later, he has had no problems with it."
           ]
         },
         {
           "type": "faq",
-          "heading": "Slow Problems, Old Wiring, Warranty",
+          "heading": "Intermittent, Older, Something Else",
           "items": [
             {
-              "q": "How soon can someone come out?",
-              "a": "It depends on the day's schedule. Our office hours are Monday to Friday, 7 AM to 5 PM. Call and we'll tell you when a technician can get there."
+              "q": "What if the problem comes and goes?",
+              "a": "Nick B. had one that stopped whenever the electrician arrived. He wrote that it was tracked down and fixed once the two lined up."
+            },
+            {
+              "q": "Do you work on older houses?",
+              "a": "Danny L. has had an electrician out several times on a 1910 bungalow, and Lauren D. wrote about what she learned for her older house."
             },
             {
               "q": "Will you point out anything else you see?",
-              "a": "Two reviewers say the electrician did: Cynthia G. about unprotected wires, and Catherine S. about an issue the home inspector missed. Ask on the call what your visit will cover."
-            },
-            {
-              "q": "What if the problem comes and goes?",
-              "a": "Tell us when it happens and what's running at the time. A problem that comes and goes is harder to catch."
-            },
-            {
-              "q": "Do you work on older homes?",
-              "a": "Yes. Tell us how old the house is and what you know about earlier work."
-            },
-            {
-              "q": "Do you work on commercial buildings?",
-              "a": "Yes. We also do commercial electrical installation and industrial electrical repairs. Jerry W. has used ElectriCraft at a facility, and Thomas M. at both his home and his place of business."
-            },
-            {
-              "q": "Is the repair covered by a warranty?",
-              "a": "Our residential electrical services carry a one-year warranty. Ask us what it covers when you call."
+              "a": "Cynthia G. wrote that the electrician pointed out unprotected wires. Catherine S. wrote that he found another issue the inspector didn't catch."
             }
           ]
         },
         {
           "type": "callBand",
           "heading": "An Outlet, a Breaker or a Light Acting Up?",
-          "text": "Call (316) 264-3359. Tell us what it's doing, and we'll tell you what we see."
+          "text": "Call (316) 264-3359, or the second line, (316) 491-2910."
         }
       ]
     },
@@ -481,15 +487,15 @@
       "sections": [
         {
           "type": "review",
-          "quote": "We hired Electricraft to install a couple of ceiling fans. Jimmy was here promptly at the exact time they said he would be here, he was very professional and very nice and answered all of our questions. The installation and work were top notch and we are very happy with it.",
+          "quote": "We hired Electricraft to install a couple of ceiling fans. Jimmy was here promptly at the exact time they said he would be here, he was very professional and very nice and answered all of our questions. The installation and work were top notch and we are very happy with it. We were also very pleased with the cost of the installation. We are doing additional remodeling and will definitely use Electricraft for that work. Highly recommend using them for your electrical work.",
           "name": "Kirk K."
         },
         {
           "type": "split",
           "heading": "Tell Us What You Want: a Fan, Sconces, a Dimmer",
           "body": [
-            "Tell us what you want: more light in a dark room, a ceiling fan, new sconces, a dimmer. Our office schedules the visit.",
-            "Elizabeth said the electrician called ahead and talked the lights through with her before the work."
+            "More light in a dark room, a ceiling fan, new sconces, a dimmer: these are the jobs customers have written about.",
+            "Kirk K. hired ElectriCraft to install a couple of ceiling fans and wrote that the electrician arrived at the exact time promised and answered all of their questions. He was also pleased with the cost, and said he is doing more remodeling and will use ElectriCraft for it."
           ],
           "list": [
             "Recessed and wafer lights",
@@ -507,133 +513,128 @@
         },
         {
           "type": "review",
-          "quote": "Jimmy is the absolute BEST!! He totally went above and beyond to rebuild a light fixture I loved. He is responsive, on time, personable and always gets the job done right.",
+          "quote": "Jimmy is the absolute BEST!! He totally went above and beyond to rebuild a light fixture I loved. He is responsive, on time, personable and always gets the job done right. Best electrician in town. I send all my friends and family to him! Fantastic experience!",
           "name": "Taylor G."
         },
         {
           "type": "prose",
-          "heading": "Lighting Jobs Customers Have Called About",
+          "heading": "A Fixture She Loved, Rebuilt",
           "body": [
-            "A few of the jobs behind the reviews."
-          ],
-          "items": [
-            {
-              "title": "Vaulted ceilings",
-              "text": "Jennifer D. had ceiling lights added to a vaulted ceiling. Tell us the ceiling height when you call."
-            },
-            {
-              "title": "Recessed lights",
-              "text": "They need room above the ceiling and have to be rated for the spot. Tell us what kind of ceiling you have."
-            },
-            {
-              "title": "Sconces",
-              "text": "Lynn W. had sconces installed."
-            },
-            {
-              "title": "Exhaust fans",
-              "text": "Kathy G. and Kassandra B. each had a bathroom exhaust fan put in."
-            },
-            {
-              "title": "Dimmers and outlets",
-              "text": "Jennifer D. had multiple dimmer switches and indoor outlets added."
-            },
-            {
-              "title": "Damp and outdoor spots",
-              "text": "Lights outside, in a bathroom or over a tub need fixtures and wiring rated for damp or wet locations. Tell us where you want them."
-            }
+            "Taylor G. had a light fixture she loved, and the electrician went above and beyond to rebuild it. She wrote that he is responsive, on time and personable.",
+            "If you have a fixture you don't want to lose, tell us which one when you call."
           ]
         },
         {
           "type": "review",
-          "quote": "We had Jimmy and Ben install 4 more wafer lights in our basement, a light under the stairs in storage area and install a GFCI on the wet bar. They were very professional and did a great job. They worked very fast and cleaned up the mess too.",
+          "quote": "We had Jimmy and Ben install 4 more wafer lights in our basement, a light under the stairs in storage area and install a GFCI on the wet bar. They were very professional and did a great job. They worked very fast and cleaned up the mess too. Kathy at the office was very professional and friendly as well. If you want a job done right definitely give them a call.",
           "name": "Robert B."
         },
         {
           "type": "prose",
-          "heading": "Ceiling Fans",
+          "heading": "Wafer Lights, a Stair Light and a Wet Bar",
           "body": [
-            "A ceiling fan is a light that moves, and the box it hangs from matters. A fan pulls and swings on its mount every day, so the box has to be rated to carry it. Ask about that when you call.",
-            "If you want the fan and the light on separate controls, say so. That can mean an extra wire run."
+            "Robert B. had four more wafer lights put in his basement, a light installed under the stairs in a storage area and a GFCI added at the wet bar. He wrote that the crew worked very fast and cleaned up the mess.",
+            "Kathy at the office was friendly too, and he said to call if you want a job done right."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "I've hired Electricraft three times in less than a year for various electrical needs in my home. They added ceiling lights to a vaulted ceiling, installed an elevated outdoor TV outlet, and added multiple indoor outlets and dimmer switches. Every employee I've interacted with has been kind, professional, and customer-focused. Travis is thorough and transparent with scheduling, often exceeding expectations. Jimmy, the electrician, is exceptional—skilled, knowledgeable, and detail-oriented. He ensures installations look great and function perfectly. Across four states in five years, he's the best electrician I've encountered. Five stars for Electricraft, Jimmy, and Travis!",
+          "name": "Jennifer D."
+        },
+        {
+          "type": "prose",
+          "heading": "Three Jobs in Less Than a Year",
+          "body": [
+            "Jennifer D. called ElectriCraft three times in less than a year. The work included ceiling lights in a vaulted ceiling, an elevated outdoor TV outlet, and multiple indoor outlets and dimmer switches.",
+            "She wrote that every employee she dealt with was kind, professional and customer-focused, that scheduling was thorough and transparent, and that the installations look great and function perfectly."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Jimmy came to our home and installed sconces for us. He was friendly and efficient and did a great job. I would highly recommend him and ElectriCraft.",
+          "name": "Lynn W."
+        },
+        {
+          "type": "prose",
+          "heading": "Sconces and Bathroom Exhaust Fans",
+          "body": [
+            "Lynn W. had sconces installed and wrote that the electrician was friendly and efficient. Kathy G. had a bathroom exhaust fan put in by two electricians who were quick, and she plans to call them back.",
+            "Kassandra B. also had an exhaust fan put in, along with a panel upgrade."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "I had an addition receptacle put in my bathroom and the work was great. They showed up on time, cleaned up when they were finished and just did a fabulous job all around. Will definitely use them for any upcoming electrical work.",
+          "name": "Kelley N."
+        },
+        {
+          "type": "prose",
+          "heading": "A Call Ahead and a Talk About the Lights",
+          "body": [
+            "Elizabeth wrote that the electrician called ahead and was willing to work with her unexpected schedule. She also wrote that the communication was clear when they discussed the installation of the lights.",
+            "When the job was done he cleaned up, and she found the price very reasonable."
           ]
         },
         {
           "type": "prose",
-          "heading": "Switches and Dimmers",
+          "heading": "Options You May Not Have Thought Of",
           "body": [
-            "A new light is a good moment to look at the switches. Three-way switches, dimmers and separate controls for a fan and a light all change what has to be run behind the wall.",
-            "Tell us how you'd like to control each light."
+            "Martin N. wrote that the electrician takes the time to understand what you need and offers options you may not have thought of. He also explained his completed work.",
+            "Tell us what you want lit and what you're unsure about."
           ]
         },
         {
           "type": "prose",
-          "heading": "On Time, Called Ahead, Cleaned Up",
+          "heading": "One More Receptacle in the Bathroom",
           "body": [
-            "Elizabeth said the electrician called ahead and was willing to work with her unexpected schedule. Kelley N. had an extra bathroom receptacle added and said the crew showed up on time and cleaned up.",
-            "Kirk K. said his electrician arrived at the exact time promised. Those are three different customers on three different jobs."
+            "Kelley N. had an additional receptacle put in her bathroom. She wrote that the crew showed up on time and cleaned up when they were finished.",
+            "She wrote that she will use them for any upcoming electrical work."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Lights Installed and Reinstalled With a Breaker Box",
+          "body": [
+            "Taylor R. had a breaker box relocated and updated, and some lights installed or reinstalled in the same job. Taylor wrote that everyone was kind and knowledgeable and super easy to get ahold of."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Installed Cleanly, and for All Her Lighting Needs",
+          "body": [
+            "Justin C. wrote that everything was installed cleanly and professionally. dena R. called ElectriCraft a great company for all her lighting needs."
           ]
         },
         {
           "type": "prose",
           "heading": "Lighting for Businesses Too",
           "body": [
-            "ElectriCraft also does commercial electrical installation, including emergency lighting. Past commercial projects listed on our site include Fox & Hound Restaurant and Ultimate Electronics.",
-            "Eva T. had outlets installed while building out a plant shop."
-          ]
-        },
-        {
-          "type": "prose",
-          "heading": "Fixing or Replacing an Old Fixture",
-          "body": [
-            "If a fixture flickers, hums or has a cracked socket, it isn't always the bulb. The trouble can be in the fixture or in the wiring behind it.",
-            "Some fixtures are worth keeping and rebuilding, and some are worth replacing. Ask about yours on the call."
-          ]
-        },
-        {
-          "type": "prose",
-          "heading": "Note the Ceiling Height and Type First",
-          "body": [
-            "Note the ceiling height and what kind of ceiling you have, finished or open to an attic. Tell us what you want installed and whether you already have the fixtures.",
-            "If a fixture is sparking, smoking or smells like burning, turn off its breaker if you can do it safely, and call us."
+            "ElectriCraft also does commercial electrical installation, including emergency lighting. Past commercial projects listed on our site include Fox & Hound Restaurant and Ultimate Electronics."
           ]
         },
         {
           "type": "faq",
-          "heading": "Fans, Dimmers and Cleanup",
+          "heading": "Fans, Fixtures and Dimmers",
           "items": [
             {
               "q": "Do you install ceiling fans?",
-              "a": "Yes. A ceiling fan needs a box rated to carry it, so ask about the box in your ceiling when you call."
+              "a": "Kirk K. had a couple of ceiling fans installed and wrote that the work was \"top notch.\" Tell us what's in your ceiling when you call."
             },
             {
-              "q": "Can you add a light where there isn't one now?",
-              "a": "Jennifer D. had ceiling lights added to a vaulted ceiling. Whether it works at your house depends on what's behind the walls and ceiling."
+              "q": "Can you work on a fixture I already own?",
+              "a": "Taylor G. had a fixture she loved rebuilt, as her review above says."
             },
             {
               "q": "Can you put in a dimmer?",
-              "a": "Yes. Jennifer D. had multiple dimmer switches added."
-            },
-            {
-              "q": "Do you clean up when you're done?",
-              "a": "Kelley N. and Vera W. both wrote about the cleanup after the job."
-            },
-            {
-              "q": "What if the wiring needs more than lighting work?",
-              "a": "Say so on the call. Panels, outlets and exhaust fans are all work customers have hired ElectriCraft for."
-            },
-            {
-              "q": "Is there a warranty on lighting work?",
-              "a": "Residential electrical work carries a one-year warranty. Ask what it covers when you call."
-            },
-            {
-              "q": "Do you do lighting for businesses?",
-              "a": "We do commercial electrical installation, including emergency lighting. Call (316) 264-3359 and tell us about the building."
+              "a": "Jennifer D. had dimmer switches added. Tell us what you want to control."
             }
           ]
         },
         {
           "type": "callBand",
           "heading": "Fans, Sconces, Dimmers: Call",
-          "text": "Call (316) 264-3359 and tell us what you want lit."
+          "text": "Call (316) 264-3359 with the room and the fixture you have in mind."
         }
       ]
     },
@@ -651,8 +652,8 @@
           "action": "call"
         },
         "secondaryCta": {
-          "label": "Phone and Email",
-          "action": "contact"
+          "label": "Email info@electricraft-ks.com",
+          "action": "email"
         },
         "image": {
           "slot": "contact-hero",
@@ -666,7 +667,14 @@
           "heading": "Call, and Tell Us What It's Doing",
           "body": [
             "(316) 264-3359",
-            "Our second line is (316) 491-2910. Tell us what's happening and which part of the house is affected. You can also email info@electricraft-ks.com."
+            "The second line is (316) 491-2910. Tell us what's happening and which part of the house is affected."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Kathy at the Office",
+          "body": [
+            "Cynthia G. and Robert B. both wrote about Kathy at the office, who set up appointments and was professional and friendly. Call and ask for her, or whoever picks up."
           ]
         },
         {
@@ -695,16 +703,16 @@
         },
         {
           "type": "prose",
-          "heading": "Weekdays 7 to 5 at 1218 E 18th St North",
+          "heading": "Our Door Is at 1218 E 18th St North",
           "body": [
-            "**Office hours.** Monday to Friday, 7 AM to 5 PM.",
-            "**After hours.** If something is wrong outside those hours, call and ask. If you see smoke or sparks, or smell burning, get everyone out and call 911.",
-            "**Area and address.** We serve Wichita, KS from 1218 E 18th St North, Wichita, KS 67214."
+            "**Office hours.** Monday to Friday, 7 AM to 5 PM, closed weekends.",
+            "**Address.** 1218 E 18th St North, Wichita, KS 67214.",
+            "**Emergencies.** If you see smoke or sparks, or smell burning, get everyone out and call 911."
           ]
         },
         {
           "type": "callBand",
-          "heading": "Tell Us What's Happening",
+          "heading": "The Phone Is the Fastest Way In",
           "text": "Call (316) 264-3359, or write to info@electricraft-ks.com."
         }
       ]

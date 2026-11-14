@@ -205,16 +205,16 @@
         {
           "type": "split",
           "heading": "Homes and Businesses, One Phone Number",
-          "image": {
-            "slot": "lighting",
-            "alt": "Recessed lights in the ceiling of a bright commercial space",
-            "brief": "electrical pool: lighting"
-          },
           "imageSide": "right",
           "body": [
             "The same company does commercial work: lighting installation and repair, emergency and security lighting, breakers, panels and switches, and high and low voltage systems.",
             "That includes DC power plants and conduit, data, telephone and cable wiring, backup generators and lighting retrofits."
-          ]
+          ],
+          "image": {
+            "slot": "panel-upgrade",
+            "alt": "Open electrical panel with labeled breakers and wiring",
+            "brief": "electrical pool: panel-upgrade"
+          }
         },
         {
           "type": "review",
@@ -364,14 +364,8 @@
           "name": "Josh B."
         },
         {
-          "type": "split",
+          "type": "prose",
           "heading": "Replacing a Worn Outlet",
-          "image": {
-            "slot": "lighting",
-            "alt": "A dimmer switch and wall plate on a living room wall",
-            "brief": "electrical pool: lighting"
-          },
-          "imageSide": "left",
           "body": [
             "Most bad outlets are fixed by replacing the outlet itself, not by rewiring the room. A new one grips plugs again and carries its load without heating up.",
             "If the trouble is in the wiring behind it, the repair is bigger.",

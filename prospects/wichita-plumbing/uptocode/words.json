@@ -100,7 +100,7 @@
           "slot": "home-hero",
           "alt": "Plumber working under a kitchen sink in a Wichita home",
           "brief": "plumbing pool: home-hero",
-          "desktopPosition": "right 18%"
+          "desktopPosition": "right 0%"
         }
       },
       "sections": [
@@ -119,7 +119,7 @@
           ],
           "image": {
             "slot": "leak",
-            "alt": "Water pooling on a basement floor beside a shut-off valve",
+            "alt": "Copper pipe joint under a sink with a drip of water",
             "brief": "plumbing pool: leak"
           },
           "imageSide": "right"
@@ -138,9 +138,9 @@
           ],
           "listStyle": "checks",
           "image": {
-            "slot": "home-hero-alt",
-            "alt": "Plumber's hands on a pipe fitting under a kitchen sink",
-            "brief": "plumbing pool: home-hero-alt"
+            "slot": "diagnose",
+            "alt": "Plumber's hands with a flashlight checking pipes inside an open cabinet",
+            "brief": "plumbing pool: diagnose"
           },
           "imageSide": "left"
         },
@@ -470,9 +470,9 @@
             "A photo of the old faucet, with the brand if you can see it, helps. For a phone call, use (316) 400-7586."
           ],
           "image": {
-            "slot": "contact-hero",
-            "alt": "Front door of a Wichita home, where the visit starts",
-            "brief": "plumbing pool: contact-hero"
+            "slot": "toilet",
+            "alt": "Toilet with the tank lid off, tank parts visible in a clean bathroom",
+            "brief": "plumbing pool: toilet"
           },
           "imageSide": "left"
         },

@@ -136,9 +136,9 @@
           ],
           "listStyle": "checks",
           "image": {
-            "slot": "fixture",
-            "alt": "Plumber showing a homeowner a faucet and its supply line",
-            "brief": "plumbing pool: fixture"
+            "slot": "diagnose",
+            "alt": "Hands with a flashlight checking pipes in a cabinet",
+            "brief": "plumbing pool: diagnose"
           },
           "imageSide": "left"
         },
@@ -442,9 +442,9 @@
             "Water heater repair and water heater installation are both on our list. Call (316) 491-3612 and tell us what you have."
           ],
           "image": {
-            "slot": "contact-hero",
-            "alt": "Front door of a Wichita home, where the visit starts",
-            "brief": "plumbing pool: contact-hero"
+            "slot": "water-heater-close",
+            "alt": "Base of a water heater with a drain valve and a small puddle on the floor",
+            "brief": "plumbing pool: water-heater-close"
           },
           "imageSide": "right"
         },
@@ -577,9 +577,9 @@
             "The best number to reach you, and the address."
           ],
           "image": {
-            "slot": "fixture",
-            "alt": "Hand turning a shutoff valve under a sink",
-            "brief": "plumbing pool: fixture"
+            "slot": "diagnose",
+            "alt": "Hands with a flashlight checking pipes in a cabinet",
+            "brief": "plumbing pool: diagnose"
           },
           "imageSide": "right"
         },

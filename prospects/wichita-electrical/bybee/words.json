@@ -103,7 +103,7 @@
         },
         "image": {
           "slot": "home-hero",
-          "alt": "Electrician checking an outdoor electric meter at a Wichita home",
+          "alt": "Electrician at an open electrical panel in a garage",
           "brief": "electrical pool: home-hero",
           "desktopPosition": "right 15%"
         }
@@ -123,9 +123,9 @@
             "So you wait, or you sign. Neither feels good."
           ],
           "image": {
-            "slot": "outlet-repair",
-            "alt": "Wall outlet with a faceplate removed and a screwdriver on the counter beside it",
-            "brief": "electrical pool: outlet-repair"
+            "slot": "panel-upgrade",
+            "alt": "Open modern electrical panel with neat wiring",
+            "brief": "electrical pool: panel-upgrade"
           }
         },
         {
@@ -161,9 +161,9 @@
           ],
           "imageSide": "left",
           "image": {
-            "slot": "home-hero-alt",
-            "alt": "Electrician talking with a homeowner beside a kitchen counter",
-            "brief": "electrical pool: home-hero-alt"
+            "slot": "old-panel",
+            "alt": "Aging electrical panel with the cover off and dusty breakers",
+            "brief": "electrical pool: old-panel"
           }
         },
         {
@@ -488,17 +488,11 @@
           ]
         },
         {
-          "type": "split",
+          "type": "prose",
           "heading": "A 100 Amp Sub-Panel for the Garage",
           "body": [
             "Thomas S. had a 100 amp sub-panel put in his garage \"for additional power for large power tools.\" His main panel \"needed some reconfiguring and that went off without a hitch.\" He wrote that Bybee \"did good work and were courteous throughout the process,\" and that \"the price was fair.\""
-          ],
-          "imageSide": "left",
-          "image": {
-            "slot": "ev-charger",
-            "alt": "Electric car charger mounted on a garage wall",
-            "brief": "electrical pool: ev-charger"
-          }
+          ]
         },
         {
           "type": "prose",

@@ -155,9 +155,9 @@
           "type": "split",
           "heading": "Friday Morning, a Guest Coming, a Dead Tank",
           "image": {
-            "slot": "home-hero-alt",
-            "alt": "Plumber talking with a homeowner next to a new water heater",
-            "brief": "plumbing pool: home-hero-alt"
+            "slot": "water-heater-close",
+            "alt": "Base of a water heater with a drain valve and a small puddle on the floor",
+            "brief": "plumbing pool: water-heater-close"
           },
           "body": [
             "Kathy B.'s water heater went out on a Friday, with a guest arriving that night. It was replaced the same day.",
@@ -328,9 +328,9 @@
           "type": "split",
           "heading": "A Thursday Call, a Friday-Morning Visit",
           "image": {
-            "slot": "contact-hero",
-            "alt": "Front door of a Wichita home, where the visit starts",
-            "brief": "plumbing pool: contact-hero"
+            "slot": "water-heater-close",
+            "alt": "Base of a water heater with a drain valve and a small puddle on the floor",
+            "brief": "plumbing pool: water-heater-close"
           },
           "body": [
             "Teresa F. called on Thursday and “they were here Friday morning.” She also wrote that she is happy to have Brand for all of her plumbing needs.",
@@ -499,9 +499,9 @@
           "type": "split",
           "heading": "Liquid Plumber First, Then a Call to Brand",
           "image": {
-            "slot": "fixture",
-            "alt": "Bathroom sink and faucet in a Wichita home",
-            "brief": "plumbing pool: fixture"
+            "slot": "diagnose",
+            "alt": "Hands with a flashlight checking pipes in a cabinet",
+            "brief": "plumbing pool: diagnose"
           },
           "body": [
             "Tell us which drain is giving you trouble and what it's doing: slow, gurgling, standing water, a smell. Is it one sink, one toilet or the whole house?",

@@ -40,27 +40,17 @@
     {
       "name": "Outdoor Lighting Installation",
       "route": "/outdoor-lighting-installation-wichita-ks/",
-      "blurb": "Lights for the backyard, patio and pool area, wired for the outdoors."
+      "blurb": "Donna S. had lights put in around her pool and backyard."
     },
     {
       "name": "Outlet Installation",
       "route": null,
-      "blurb": "More outlets in the house, the garage or the shed, where you need them."
-    },
-    {
-      "name": "New Residential",
-      "route": null,
-      "blurb": "Wiring for a new home, from the ground up."
-    },
-    {
-      "name": "Residential Remodel",
-      "route": null,
-      "blurb": "Electrical work for a renovation of an existing home."
+      "blurb": "Emily S. had outlets added in her home, garage and shed."
     },
     {
       "name": "Ceiling Fan Installation",
       "route": null,
-      "blurb": "A ceiling fan hung and wired where you want one."
+      "blurb": "On the residential list on our services page."
     },
     {
       "name": "LED Lighting Retro-Fits",
@@ -68,59 +58,19 @@
       "blurb": "Older fixtures and lighting converted over to LED."
     },
     {
-      "name": "Phone/TV Cabling",
+      "name": "Service Work",
       "route": null,
-      "blurb": "Phone and TV cable run to the rooms that need it."
-    },
-    {
-      "name": "New Commercial",
-      "route": null,
-      "blurb": "Interior and exterior electrical work for new commercial buildings."
-    },
-    {
-      "name": "Commercial Remodel",
-      "route": null,
-      "blurb": "Electrical work for offices, restaurants and clinics being remodeled."
-    },
-    {
-      "name": "Office Building Wiring",
-      "route": null,
-      "blurb": "Wiring for office buildings."
+      "blurb": "Listed under residential on our services page."
     },
     {
       "name": "Church Wiring",
       "route": null,
-      "blurb": "Electrical work for churches."
-    },
-    {
-      "name": "Metal Building Wiring",
-      "route": null,
-      "blurb": "Wiring for metal buildings, shops and facilities."
-    },
-    {
-      "name": "3-Phase Motor Control",
-      "route": null,
-      "blurb": "Motor control wiring for industrial equipment."
+      "blurb": "On our commercial list, next to office building wiring."
     },
     {
       "name": "Grain Handling Facilities",
       "route": null,
-      "blurb": "Electrical work for grain elevators and handling facilities."
-    },
-    {
-      "name": "CNC Mill Machine Wiring",
-      "route": null,
-      "blurb": "Wiring for CNC mills and machine shops."
-    },
-    {
-      "name": "Design/Build Work",
-      "route": null,
-      "blurb": "Design and build electrical work on larger jobs."
-    },
-    {
-      "name": "Bucket Truck Overhead Services",
-      "route": null,
-      "blurb": "Overhead work from a bucket truck."
+      "blurb": "On our industrial list, with grain elevators and machine shops."
     }
   ],
   "pages": [
@@ -134,7 +84,7 @@
         "description": "Electrician in Wichita, KS. Linnebur Electric is family owned and operated, for homes, businesses and farms. Call (316) 943-6616."
       },
       "hero": {
-        "eyebrow": "Wichita, KS · Family-Owned · Homes, Businesses and Industrial",
+        "eyebrow": "234 S Colorado St · Wichita, KS",
         "h1": "Electrician in Wichita, KS — Linnebur Electric",
         "sub": "An outlet that keeps dying, a breaker that won't stay on, a fix that didn't hold. Call (316) 943-6616.",
         "primaryCta": {
@@ -180,22 +130,16 @@
             "brief": "electrical pool: inspection"
           },
           "body": [
-            "A loose connection, an overloaded circuit or an old splice behind a wall will bring the problem right back if only the symptom gets fixed.",
+            "Dod I. had several electric contractors look at one problem, and Linnebur was the ones who could find it and get it fixed.",
             "Tell us where it happens and what was running when it did."
-          ],
-          "list": [
-            "Start with what you've seen: where it trips, dies, flickers or runs warm",
-            "Find the problem and get it fixed",
-            "Tell us the problem in plain words and we'll start there"
-          ],
-          "listStyle": "checks"
+          ]
         },
         {
           "type": "prose",
           "heading": "Upfront, Honest and Family Owned",
           "body": [
             "J M. called Linnebur “Upfront, honest, and great pricing,” and said it “continues all the way through to the end.” That's the part of hiring an electrician people worry about most: what happens after the first visit.",
-            "Linnebur Electric is family owned and operated. We keep a smaller staff for continuity between projects, and all of our employees routinely attend continuing education classes. Three of them are Master Electricians."
+            "Linnebur Electric is family owned and operated, with License #1353 printed on every page of our site. We keep a smaller staff for continuity between projects, and all of our employees routinely attend continuing education classes. Three of them are Master Electricians with at least 25 years of experience, according to our about page."
           ]
         },
         {
@@ -206,34 +150,14 @@
         {
           "type": "services",
           "heading": "What We Wire and Repair",
-          "intro": "Homes first, then the offices, churches, clinics, shops and grain elevators around Wichita."
+          "intro": "Homes, offices, churches, clinics, shops and grain elevators around Wichita."
         },
         {
           "type": "prose",
-          "heading": "Electrical Repair in Wichita: Four Things Worth a Phone Call",
+          "heading": "A Breaker, an Outlet, a Fix That Didn't Hold",
           "body": [
-            "These are the signs that something on the circuit needs a look."
-          ],
-          "items": [
-            {
-              "title": "A breaker that keeps tripping",
-              "text": "Usually an overloaded circuit, a short or a ground fault. Resetting it over and over doesn't fix any of the three."
-            },
-            {
-              "title": "An outlet or switch plate that feels warm",
-              "text": "A loose connection can heat up behind the plate. Stop using it and have it looked at."
-            },
-            {
-              "title": "Outlets that quit working",
-              "text": "The part may have been replaced without the cause being found. Tell us what was done, and we start from there."
-            },
-            {
-              "title": "Something fixed before is acting up again",
-              "text": "The part may have been replaced without the cause being found. Tell us what was done, and we start from there."
-            }
-          ],
-          "tail": [
-            "Each of these starts with a phone call about what you're seeing."
+            "Outlets that quit, a breaker that won't stay on, a fix that didn't hold: those are the calls that start the repair page. Tell us what was done before and when it came back, and we start there.",
+            "Dod I. had several contractors look at one problem before Linnebur found it, so a second opinion on a repair that keeps failing is a normal call."
           ],
           "link": {
             "label": "See electrical repair in Wichita",
@@ -247,18 +171,35 @@
         },
         {
           "type": "prose",
-          "heading": "From a Kitchen Circuit to a Grain Elevator",
+          "heading": "A Happy Customer Is a Lifetime Customer",
           "body": [
-            "Our residential list covers new homes, remodels, ceiling fans, LED retro-fits and phone and TV cabling. On the commercial side we wire offices, restaurants, churches and dental and medical clinics. Industrial is machine shops, metal buildings, CNC mills and grain elevators.",
-            "Andale Farmers Coop, Axiom Engineers, Hentzen Contractors, Morton Buildings and Simpson Construction are among the companies we've worked for. Danny D. wrote “Commercial or residential,” and he meant both."
+            "That line is on Linnebur's own site, next to two more: \"We believe in doing the job right the first time,\" and \"We believe you don't have to sacrifice quality for a fair price.\"",
+            "Ken M. wrote that the job was finished \"way before I expected it to happen.\" The reviews are where you can check the slogans."
           ]
         },
         {
           "type": "prose",
-          "heading": "Wichita and the Areas Around It",
+          "heading": "What Danny D. and Frank B. Wrote",
           "body": [
-            "We're at 234 S Colorado St in Wichita. We work across the Wichita area, and we've done jobs in many of the areas around it, including agricultural projects outside town.",
-            "Call and tell us where the job is."
+            "Danny D. wrote that \"Rod and his crew are absolutely a pleasure to work with,\" and called them \"Open, honest and responsive for all your needs.\"",
+            "Frank B. had \"worked with a number of electricians across the state\" and wrote that this experience was \"by far the best.\""
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "From a Kitchen Circuit to a Grain Elevator",
+          "body": [
+            "The services page opens the residential list with \"Whether you're starting from the ground up or looking to renovate an existing structure.\" That list covers new homes, remodels, ceiling fans, LED retro-fits and phone and TV cabling.",
+            "On the commercial side we wire offices, restaurants, churches and dental and medical clinics. Industrial runs to \"grain elevators and machine shops to truck repair facilities,\" and the list includes metal building wiring, 3-phase motor control, CNC mill machine wiring and design/build work.",
+            "Andale Farmers Coop, Axiom Engineers, Hentzen Contractors, Morton Buildings and Simpson Construction are among the companies we've worked for. Danny D. wrote “Commercial or residential” in his review."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Out of Town for Agricultural Projects",
+          "body": [
+            "We're at 234 S Colorado St in Wichita, and we work across the Wichita area. Linnebur's site says \"We've done work in many of the areas around Wichita,\" and that they enjoy getting out of town for agricultural projects.",
+            "If the job is outside the city, call and tell us where it is, and we'll go from there."
           ]
         },
         {
@@ -275,27 +216,35 @@
               "a": "Call (316) 943-6616 and tell us what's happening. We don't list hours online yet, so the phone is the quickest way to find out."
             },
             {
-              "q": "Is this dangerous, or are you selling me something?",
-              "a": "A warm plate or a burning smell isn't wait-and-see. Switch off the circuit if you can do it safely, and call. For anything else, tell us what you've seen and we'll work out the next step on the call."
+              "q": "Are you licensed?",
+              "a": "License #1353 is printed on every page of our site, and the site says Linnebur is licensed and insured."
             },
             {
               "q": "What will it cost?",
-              "a": "It depends on what the job turns out to be, so we won't print a number. J M. called Linnebur “Upfront, honest, and great pricing.” Ask on the call."
+              "a": "It depends on what the job turns out to be, so we won't print a number. Ask on the call."
+            },
+            {
+              "q": "Do you work on farms?",
+              "a": "The services page says \"We enjoy the opportunity to get out of town and work on agricultural projects.\" Call and tell us where the job is."
             },
             {
               "q": "Who's coming into my house?",
-              "a": "A crew from a family-owned company with a smaller staff. Emily S. said they were “very friendly and respectful of our property.”"
+              "a": "A crew from a family-owned company with a smaller staff. Three of our employees are Master Electricians."
             },
             {
               "q": "Do you only do big commercial jobs?",
-              "a": "No. Our residential list covers new homes, remodels, outlets, ceiling fans, lighting and phone and TV cabling, next to our commercial and industrial work."
+              "a": "No. Our residential list covers new homes, remodels, ceiling fans, LED retro-fits and phone and TV cabling, next to our commercial and industrial work."
+            },
+            {
+              "q": "Do you wire new buildings?",
+              "a": "New Residential and New Commercial are both on our services list. New Residential starts from the ground up."
             }
           ]
         },
         {
           "type": "callBand",
-          "heading": "Tell Us What the Wiring Is Doing",
-          "text": "Call (316) 943-6616. Linnebur Electric, 234 S Colorado St, Wichita."
+          "heading": "An Outlet That Keeps Dying? Call (316) 943-6616",
+          "text": "Linnebur Electric, 234 S Colorado St, Wichita."
         }
       ]
     },
@@ -341,8 +290,8 @@
             "brief": "electrical pool: inspection"
           },
           "body": [
-            "Tell us what you're seeing: which outlets, which breaker, when it started and what was plugged in. The details are how we narrow down where to look.",
-            "J M. called Linnebur “Upfront, honest, and great pricing.” Ask about the price on the call."
+            "Tell us which outlets, which breaker and when it started, and we start there. It also helps to say what was plugged in and whether anyone has worked on it before.",
+            "If a repair was made and the problem came back, tell us what was done and when. That is where the call starts."
           ]
         },
         {
@@ -352,35 +301,26 @@
         },
         {
           "type": "prose",
-          "heading": "Stop Signs and Common Causes",
+          "heading": "Outlets in the House, the Garage and the Shed",
           "body": [
-            "Some signs mean stop using it first and call second. The rest are the usual suspects."
-          ],
-          "items": [
-            {
-              "title": "A breaker that trips again and again",
-              "text": "An overloaded circuit, a short or a ground fault. A breaker is doing its job when it trips. Resetting it repeatedly hides the reason."
-            },
-            {
-              "title": "A dead outlet",
-              "text": "Often a tripped GFCI on another outlet, a loose wire behind the plate or a failed receptacle. A garage, bathroom or outdoor outlet may be fed from a different spot than you'd guess."
-            },
-            {
-              "title": "A plate that feels warm",
-              "text": "Heat at an outlet or switch usually means a loose or worn connection. Stop using it, keep things unplugged and have it looked at soon."
-            },
-            {
-              "title": "Flickering or dimming lights",
-              "text": "A loose connection on the circuit, or a big load such as a compressor starting on the same line. A single room points one direction, the whole house another."
-            },
-            {
-              "title": "Buzzing, crackling or a burnt smell",
-              "text": "These are stop signs. Switch off the circuit if you can do it safely and call. If you see smoke or flames, leave and call 911."
-            },
-            {
-              "title": "A repair that didn't hold",
-              "text": "Usually the part was replaced and the cause stayed. Tell us what was done and when it came back."
-            }
+            "Emily S. called Linnebur to add outlets in her home, garage and shed. She wrote that the crew \"arrived promptly when they said they would and all work was completed to our satisfaction and in a timely manner.\" She also wrote that they were \"very friendly and respectful of our property.\"",
+            "Outlet installation is on the residential list, so a garage or a shed is a normal thing to ask about. Tell us what you need when you call."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Right the First Time, Even on a Second Call",
+          "body": [
+            "Linnebur's own site says \"We believe in doing the job right the first time.\" On a repair call, that matters most when an earlier fix didn't hold.",
+            "If someone has already worked on it, tell us what was done and when the problem came back. We start from there, and from what you've seen: which breaker, which outlets, what was plugged in."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "A 44-Year-Old House and What It Needed",
+          "body": [
+            "Rachael R. wrote that Linnebur \"helped me navigate through some electrical issues I had in my 44 year old home,\" and that they are \"Very thorough in the work they do.\"",
+            "Tell us how old your house is when you call, and what has already been done to it. That is where the conversation starts."
           ]
         },
         {
@@ -390,55 +330,52 @@
         },
         {
           "type": "prose",
-          "heading": "An Older House and What It Might Be Hiding",
-          "body": [
-            "Older homes can have wiring laid out for far fewer appliances than a house has today, and a house that's been added onto may have wiring from several eras.",
-            "Tell us how old the house is when you call, and whether it's been added onto."
-          ]
-        },
-        {
-          "type": "prose",
-          "heading": "Write It Down Before You Dial",
-          "body": [
-            "A few minutes of notes make the call faster. Write down which outlets or rooms are affected, whether a breaker tripped, what was running at the time, and whether anyone has worked on it before.",
-            "If you can do it safely, leave the affected circuit off and unplug what was on it. Don't keep resetting a breaker that keeps tripping. If a plate is hot or something smells burnt, switch the circuit off and call."
-          ]
-        },
-        {
-          "type": "prose",
           "heading": "Service Work, Fans, LEDs and Cabling",
           "body": [
             "Service Work is on our residential list, next to ceiling fan installation, LED lighting retro-fits and phone and TV cabling. Ask about any of them on the same call.",
-            "Linnebur Electric, Inc. is family owned and operated, with License #1353 printed on every page of our site. We keep a smaller staff for continuity between projects, and three of our employees are Master Electricians."
+            "Phone and TV cabling is on the same list, so a repair visit and a cable question can go in one phone call.",
+            "Mark B. wrote \"Awesome people and true professionals.\" CE U. wrote \"Quick response. Excellent knowledge and service.\""
           ]
         },
         {
           "type": "prose",
-          "heading": "Homes First, Offices and Shops Too",
+          "heading": "Offices and Churches Too",
           "body": [
-            "We do electrical repair for homes first, and for offices, shops and other commercial buildings too.",
-            "Residential and commercial work both come through the same number, and a call is the quickest way to get on the schedule."
+            "Linnebur's commercial list is new construction, remodels, office building wiring and church wiring. The commercial examples on the site are offices, restaurants, churches and dental and medical clinics.",
+            "The services page says the company has \"the tools and experience to complete not only interior electrical work, but also exterior electrical work.\" Repair isn't named on the commercial list, so if a building is acting up, call and tell us about it."
           ]
         },
         {
           "type": "faq",
-          "heading": "Dead Outlets, Warm Plates and What to Say",
+          "heading": "What Should I Tell You When I Call?",
           "items": [
             {
-              "q": "What should I tell you when I call?",
-              "a": "What it's doing, where, and since when. Which breaker trips, which outlets are dead, whether a plate is warm. Mention anything someone already tried."
+              "q": "Can you come today?",
+              "a": "Call (316) 943-6616. Hours aren't posted on our site yet, so ask on the call when someone can come out."
             },
             {
-              "q": "Is a warm outlet an emergency?",
-              "a": "Treat it as one until it's looked at. Stop using it and unplug what's on it. If you see smoke, smell burning or see scorch marks, leave and call 911."
+              "q": "What should I tell you when I call?",
+              "a": "What it's doing, where, and since when. Mention anything someone already tried."
             },
             {
               "q": "Can you work in a garage or a shed?",
-              "a": "Yes. Outlets and wiring in a garage or outbuilding are part of residential service work."
+              "a": "Emily S. had outlets added in her home, garage and shed. Call and tell us what you need."
+            },
+            {
+              "q": "Is an older house a problem?",
+              "a": "Rachael R.'s house was 44 years old when she called Linnebur about its electrical issues."
+            },
+            {
+              "q": "Can you hang a ceiling fan or convert fixtures to LED?",
+              "a": "Both are on the residential list: ceiling fan installation, and LED lighting retro-fits that convert older fixtures over to LED."
             },
             {
               "q": "Do you repair commercial buildings too?",
-              "a": "Yes. We work on offices, restaurants, churches and clinics, as well as homes."
+              "a": "Call and tell us about the building. The commercial list on our site is new construction, remodels, office building wiring and church wiring."
+            },
+            {
+              "q": "Do you work on farms or industrial sites?",
+              "a": "Yes. The industrial list runs from grain elevators and machine shops to truck repair facilities, and the site says the company enjoys agricultural projects."
             },
             {
               "q": "What will a repair cost?",
@@ -465,7 +402,7 @@
       "hero": {
         "eyebrow": "Outdoor lighting, Wichita",
         "h1": "Outdoor Lighting Installation in Wichita, KS — Linnebur Electric",
-        "sub": "Backyard, patio, steps and pool area. Donna S. had Linnebur install lights around her pool and backyard. Call (316) 943-6616 and tell us what you'd like to see at night.",
+        "sub": "Backyard and pool area. Donna S. had Linnebur install lights around her pool and backyard. Call (316) 943-6616 and tell us what you'd like to see at night.",
         "primaryCta": {
           "label": "Call (316) 943-6616",
           "action": "call"
@@ -488,45 +425,25 @@
         },
         {
           "type": "split",
-          "heading": "Pool, Patio, Steps: Tell Us What You'd Like to See",
+          "heading": "Lights Around a Pool and Backyard",
           "image": {
             "slot": "home-hero-alt",
             "alt": "Wichita backyard and patio with warm lights at dusk",
             "brief": "electrical pool: home-hero-alt"
           },
           "body": [
-            "Tell us what you want to see at night: the patio, the steps, the pool, the driveway, the back fence.",
-            "Pool and backyard lights are on our list, and so are LED retro-fits for the fixtures you already have."
+            "Donna S. wrote \"We had them install outdoor lights around our pool and backyard.\" She said Linnebur had \"excellent recommendations and prompt friendly service,\" and that she would recommend them and use them again.",
+            "Donna S.'s review is the one we have for outdoor lights, so we won't promise more than it says. What she says is that Linnebur had excellent recommendations and prompt friendly service.",
+            "Tell us what you want to see at night when you call, and we start there.",
+            "[[confirm: Outdoor lighting is not on the current services list at linneburelectric.com; confirm it is offered]]"
           ]
         },
         {
           "type": "prose",
-          "heading": "Where the Lights Go",
+          "heading": "LED Retro-Fits for the Fixtures You Already Have",
           "body": [
-            "Good outdoor lighting starts with where you walk and where you sit. A few well-placed lights beat a lot of bright ones.",
-            "Think about what you want to see, and what you don't want lit."
-          ],
-          "items": [
-            {
-              "title": "Steps and walkways",
-              "text": "Low, shielded light that shows the edge of a step without glare."
-            },
-            {
-              "title": "Patio and seating",
-              "text": "Warm, softer light you can sit in, on its own switch or dimmer."
-            },
-            {
-              "title": "Entries and driveways",
-              "text": "Enough light to see a key lock and a face, aimed down, not into the street."
-            },
-            {
-              "title": "Pool and backyard",
-              "text": "Lights near water have their own safety rules, which is one reason to have an electrician do this work."
-            },
-            {
-              "title": "Trees and accents",
-              "text": "Spots that pick out one thing, kept to a few."
-            }
+            "LED lighting retro-fits are on Linnebur's residential list: older fixtures and lighting converted over to LED. If your outdoor fixtures are already up, ask about a retro-fit when you call.",
+            "Ceiling fan installation is on the same residential list, along with Service Work and phone and TV cabling."
           ]
         },
         {
@@ -536,90 +453,87 @@
         },
         {
           "type": "prose",
-          "heading": "How Outdoor Wiring Is Different",
+          "heading": "Exterior Work Runs Past the Backyard",
           "body": [
-            "Outdoor electrical gets rain, ice and a Kansas summer. Fixtures need to be rated for outdoor use, connections need to be sealed, and outdoor outlets and circuits call for ground-fault protection.",
-            "Cable that runs underground or along a fence needs the right type, buried or fastened the right way. These are the details that decide whether lights still work after the third winter."
+            "Linnebur's commercial work isn't only interior. The services page says the company has \"the tools and experience to complete not only interior electrical work, but also exterior electrical work.\"",
+            "Bucket Truck Overhead Services is on the industrial list, and the industrial list also includes metal building wiring. A business, a shop or a church with exterior electrical work can call the same number, (316) 943-6616, and tell us about the building."
           ]
         },
         {
           "type": "prose",
-          "heading": "LED and Controls",
+          "heading": "A Business With Lights Outside",
           "body": [
-            "LED fixtures use less power and run cool, which lets you light more of the yard without loading up a circuit. We also handle LED retro-fits for fixtures you already have.",
-            "A timer, a photocell or a switch inside the house means the lights come on when you want them, and not every night until someone remembers."
+            "On the commercial side, the site names offices, restaurants, churches and dental and medical clinics as the kinds of buildings Linnebur wires, and the commercial work covers exterior electrical work as well as interior.",
+            "Call (316) 943-6616 and tell us about the building and what needs light."
           ]
         },
         {
           "type": "review",
-          "quote": "Great quick service. No complaints",
-          "name": "Blake S."
+          "quote": "Always prompt and do thorough work.  I highly recommend!",
+          "name": "Matthew M."
         },
         {
           "type": "prose",
-          "heading": "Add Outlets While We're There",
+          "heading": "Prompt, Thorough, No Complaints",
           "body": [
-            "If you're running power outside, ask about one on the patio for a string of lights or a grill, one at the shed, or one on the back of the garage."
+            "Matthew M. wrote that Linnebur is \"Always prompt and do thorough work.\" Blake S. wrote \"Great quick service. No complaints.\"",
+            "Donna S. said the same about the pool lights, in her own words: \"prompt friendly service.\" Alex O. wrote \"Great quality people providing a great quality service.\""
           ]
         },
         {
           "type": "prose",
-          "heading": "Beyond the Backyard: Homes First, Businesses Too",
+          "heading": "Your Switch to a Brighter Future",
           "body": [
-            "A dark side yard and a back door call for the same planning as a patio: where people walk, what needs to be seen and where the power comes from.",
-            "We work on homes first, and on businesses, shops and churches too. Our commercial work covers exterior electrical work as well as interior."
-          ]
-        },
-        {
-          "type": "prose",
-          "heading": "Same Company, Indoors and Out",
-          "body": [
-            "Linnebur Electric, Inc. is family owned and operated, with License #1353 printed on every page of our site. Our residential list includes ceiling fan installation, LED lighting retro-fits and phone and TV cabling.",
-            "We keep a smaller staff for continuity between projects, and three of our employees are Master Electricians."
-          ]
-        },
-        {
-          "type": "prose",
-          "heading": "Walk the Yard at Dusk First",
-          "body": [
-            "Take your phone out at dusk and photograph the areas you want lit, and note where the closest outlet or panel is.",
-            "Tell us what's out there now: existing lights, a pool, a deck, a shed."
+            "That is the slogan on Linnebur's own site. For a backyard it can be read plainly: a switch, and lights where there were none.",
+            "Call (316) 943-6616 and tell us what the yard looks like now: existing lights, a pool, a deck, a shed. Tell us what you'd like to see at night, and which part of the yard you use after dark."
           ]
         },
         {
           "type": "faq",
-          "heading": "Pools, Fixtures and Extra Outlets",
+          "heading": "Can You Light the Pool Area?",
           "items": [
             {
               "q": "Can you add lights to a pool area?",
-              "a": "Pool and backyard lights are on our list. Pools carry their own safety rules, so tell us what's there when you call."
-            },
-            {
-              "q": "Do I need new wiring?",
-              "a": "Sometimes. It depends on what's already there and how much you want to light. Tell us what's out there when you call."
+              "a": "Donna S. had lights installed around her pool and backyard. Call and tell us what is there."
             },
             {
               "q": "Can you replace the fixtures I already have?",
-              "a": "Yes. LED lighting retro-fits are on our residential list."
+              "a": "LED lighting retro-fits are on our residential list, which converts older fixtures over to LED."
             },
             {
-              "q": "Will you add an outlet at the same time?",
-              "a": "Ask. Outlets at the house, the garage and the shed are part of our residential work."
+              "q": "Do you hang ceiling fans?",
+              "a": "Ceiling fan installation is on our residential list. Call and tell us where you want one."
             },
             {
               "q": "Do you light up a business, a shop or a church?",
-              "a": "Yes. We work on businesses, shops and churches, and our commercial work covers exterior electrical work as well as interior. Call (316) 943-6616 and tell us about the building."
+              "a": "Our commercial work includes exterior electrical work. Call (316) 943-6616 and tell us about the building."
             },
             {
               "q": "What does it cost?",
               "a": "It depends on the design, so we won't print a number. Ask on the call."
+            },
+            {
+              "q": "Is outdoor lighting on your services list?",
+              "a": "Not by name. The services page lists LED retro-fits, ceiling fans and Service Work for homes, and exterior electrical work for commercial jobs. Donna S. had outdoor lights installed around her pool and backyard."
+            },
+            {
+              "q": "Is it only the yard?",
+              "a": "No. Linnebur's site covers homes, businesses and industrial jobs, and the residential list includes ceiling fan installation, LED lighting retro-fits and phone and TV cabling."
+            },
+            {
+              "q": "Do I call or write?",
+              "a": "Either. Call (316) 943-6616, or email kent@linneburelectric.com with your name, a phone number and the address of the job."
+            },
+            {
+              "q": "Who wrote the reviews on this page?",
+              "a": "Donna S., Alex O., Matthew M. and Blake S. are customers who left reviews for Linnebur Electric, and their words are quoted as they wrote them."
             }
           ]
         },
         {
           "type": "callBand",
           "heading": "Thinking About Lights for the Yard?",
-          "text": "Thinking about lights for the yard? Call (316) 943-6616 and tell us what you want to see at night."
+          "text": "Call (316) 943-6616 and tell us what you want to see at night."
         }
       ]
     },
@@ -631,14 +545,14 @@
       "hero": {
         "eyebrow": "Contact Linnebur Electric",
         "h1": "Contact Linnebur Electric",
-        "sub": "If something electrical has quit or is acting up, the fastest way to reach us is to call (316) 943-6616. Tell us what it's doing, and we'll start there.",
+        "sub": "If something electrical has quit or is acting up, call (316) 943-6616. Tell us what it's doing, and we'll start there.",
         "primaryCta": {
           "label": "Call (316) 943-6616",
           "action": "call"
         },
         "secondaryCta": {
-          "label": "Phone and Email",
-          "action": "contact"
+          "label": "Email Kent",
+          "action": "email"
         },
         "image": {
           "slot": "contact-hero",
@@ -649,9 +563,9 @@
       "sections": [
         {
           "type": "prose",
-          "heading": "Call (316) 943-6616",
+          "heading": "Tell Us What It's Doing: (316) 943-6616",
           "body": [
-            "The phone is the fastest way to reach us. Tell us what your wiring is doing and where you are."
+            "Call and tell us what your wiring is doing and where you are. We don't list hours online yet, so a call is how you find out when we can come."
           ]
         },
         {
@@ -687,7 +601,7 @@
         },
         {
           "type": "callBand",
-          "heading": "Tell Us What the Wiring Is Doing",
+          "heading": "Outlet, Breaker or Light Acting Up?",
           "text": "Call (316) 943-6616, or write to kent@linneburelectric.com."
         }
       ]
@@ -735,8 +649,8 @@
           "The site doesn't say what you do when someone else's fix didn't hold."
         ],
         "fixes": [
-          "A page for electrical repair in Wichita, KS, with what usually causes each problem and what happens when you call.",
-          "Safety signs in plain words: when to stop using an outlet and call."
+          "A page for electrical repair in Wichita, KS, built on what customers wrote and what Linnebur's site lists.",
+          "Garage and shed outlets, older houses and commercial buildings answered on the page."
         ],
         "alsoAdd": "Outlet Installation, Ceiling Fan Installation and LED Lighting Retro-Fits pages, plus commercial and industrial pages, each built for its own search."
       },
@@ -749,8 +663,8 @@
           "“LED Lighting Retro-Fits” is a line in a list."
         ],
         "fixes": [
-          "A page for outdoor lighting installation in Wichita, KS, covering planning, wiring and controls.",
-          "Extra outlets offered in the same visit."
+          "A page for outdoor lighting installation in Wichita, KS, built on one customer's pool and backyard job, with a tag to confirm it's offered.",
+          "LED retro-fits and exterior commercial work on the same page."
         ]
       },
       {

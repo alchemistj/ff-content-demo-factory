@@ -117,7 +117,7 @@
         },
         "image": {
           "slot": "home-hero",
-          "alt": "Enegren electrician with a tool bag at the front door of a Wichita home",
+          "alt": "Electrician at an open electrical panel in a garage",
           "brief": "electrical pool: home-hero",
           "desktopPosition": "right 15%"
         }
@@ -161,9 +161,9 @@
           "heading": "You Should Know Who Is Coming Into Your House",
           "imageSide": "right",
           "image": {
-            "slot": "home-hero-alt",
-            "alt": "Electrician in a work shirt standing at a front door, ready to be let in",
-            "brief": "electrical pool: home-hero-alt"
+            "slot": "arrival",
+            "alt": "Electrician seen from behind at a brick house front door, tool bag in hand",
+            "brief": "electrical pool: arrival"
           },
           "body": [
             "When you're home alone, or can't be there at all, the person at the door matters as much as the repair. Before the visit, we send you the electrician's name and a photo.",

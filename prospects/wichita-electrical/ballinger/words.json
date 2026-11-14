@@ -14,7 +14,7 @@
         "tel": "+13162134513"
       }
     ],
-    "email": null,
+    "email": "benjaminballinger87@gmail.com",
     "hours": "Monday to Friday, 8:00 AM to 5:00 PM",
     "address": null,
     "serviceArea": {
@@ -26,10 +26,10 @@
   },
   "trustBar": [
     "Free Estimates",
-    "Older Homes and Messy Wiring Welcome",
-    "Options and a Price Before We Start",
+    "Ben, Kenny and Jayse",
+    "Booties On, Cleaned Up After",
+    "Scheduled in a Day or Two",
     "Homes and Businesses",
-    "Locally Owned and Operated",
     "[[confirm: [XX] years serving Wichita]]"
   ],
   "services": [
@@ -82,7 +82,7 @@
       "keyword": "electrician Wichita KS",
       "seo": null,
       "hero": {
-        "eyebrow": "Wichita, KS · Locally Owned · Homes and Businesses",
+        "eyebrow": "Dead outlets · old panels · other people's wiring",
         "h1": "Electrician in Wichita, KS — Ballinger Electric",
         "sub": "Dead outlets, an old panel, wiring a previous owner left behind: we'll come look. We trace the cause, tell you what we found and give you your options and a price before any work starts. Call (316) 213-4513.",
         "primaryCta": {
@@ -124,14 +124,13 @@
           "type": "split",
           "heading": "We Look First, Then Follow the Wire",
           "body": [
-            "Older houses collect added circuits, spliced wires and breakers that were never the right size, and finding the cause means opening things up and following the wire.",
-            "Then we tell you what we found in plain words, with your options and the price, before any work starts."
+            "Older houses are the calls Ben takes: a 50-year-old house, a garage with the last owner's DIY behind it, an electrical mess other companies wouldn't look at.",
+            "You get a person who comes out, looks and tells you what he found in plain words."
           ],
           "list": [
             "We come look at older houses and other people's wiring",
             "We trace the cause before we talk about fixes",
-            "You hear what we found, in plain words",
-            "Options and a price before any work starts"
+            "You hear what we found, in plain words"
           ],
           "listStyle": "checks",
           "image": {
@@ -153,10 +152,9 @@
         },
         {
           "type": "prose",
-          "heading": "Electrical Repair in Wichita",
+          "heading": "Outlets Dead Across the House, a Garage With No Power",
           "body": [
-            "A breaker that trips again right after you reset it is telling you something. So is an outlet that's warm, a discolored switch plate, a buzz or a burning smell. Loose connections heat up, so stop using that outlet and call us.",
-            "Outlets dead across half the house, a garage with no power or lights that flicker in several rooms each have a cause. We trace it."
+            "Lan N. had multiple outlets not working throughout the house. Che J. lost power to the garage. Mark N.'s problem turned out to be a bad breaker. Each of them called, and Ben came out and found the cause."
           ],
           "link": {
             "label": "See electrical repair in Wichita",
@@ -165,10 +163,9 @@
         },
         {
           "type": "prose",
-          "heading": "Lights, Fans and Fixtures",
+          "heading": "A Fan Where There Was No Light",
           "body": [
-            "A ceiling fan where there's no wiring, lights for the back steps, a strip under the kitchen cabinets. Ron P. had two fans put in rooms with no existing lights, and the crew put supports in the ceiling and wired them in.",
-            "We also wire new fixtures and put in recessed lights."
+            "Ron P. had two ceiling fans put into rooms with no existing lights. Alex K. didn't know what to buy for under-cabinet lights or where to start. Kyle W. had recessed lights and dimmers put into a family room."
           ],
           "link": {
             "label": "See lighting installation in Wichita",
@@ -179,8 +176,8 @@
           "type": "split",
           "heading": "An Old Panel, a Full Panel, a Service That Can't Keep Up",
           "body": [
-            "Fuse boxes, rust or scorch marks and double-tapped breakers are all reasons to have a panel looked at. Wayne R. had a Federal Pacific panel other companies wouldn't address.",
-            "So is a panel with no room left, or a small service in a house that now runs central air or an EV charger. Aaron W.'s 200-amp service upgrade, plus new power to the areas he asked for, took a couple of days."
+            "Wayne R. had a Federal Pacific panel, and Ben took photos and checked in with the city inspector. Aaron W. had a 200-amp service upgrade plus new power to the areas he asked for, and it took a couple of days.",
+            "Bill H. had a sub-panel installed, and Francis E. had surge protection put in."
           ],
           "image": {
             "slot": "panel-upgrade",
@@ -196,10 +193,10 @@
         },
         {
           "type": "split",
-          "heading": "New Outlets, New Circuits and Bigger Projects",
+          "heading": "A Coffee Bar, a Stove Hood, a Level 2 Charger",
           "body": [
-            "You want an outlet where the coffee bar is going, power for a new stove or oven, a Level 2 charger in the garage. We run the circuit and put in the outlet.",
-            "We also handle sub-panels, surge protection and generator hookups. Rudy P. had a 30-amp plug for his camper and a transfer switch that powers selected circuits from his generator. When a job can go more than one way, we lay out the options and you choose."
+            "Cherie K. wanted a coffee bar, and it needed a new outlet on a box that could carry more. Kim L. had a stove hood put in with a new outlet, vented outside. Joshua D. met Ben for a quote on a Level 2 EV charger, and Jayse did the install two days later.",
+            "When a job can go more than one way, Ben lays out the options and you choose."
           ],
           "image": {
             "slot": "ev-charger",
@@ -217,7 +214,7 @@
           "type": "prose",
           "heading": "Customers Got on the Schedule in a Day or Two",
           "body": [
-            "Nancy C. was scheduled in one day. Taygen A. was offered the next day. Todd C. called Friday and had the work done Monday. When something is wrong right now, say so when you call.",
+            "Nancy C. was scheduled in one day. Taygen A. was offered the next day. Todd C. called Friday and had the work done Monday. Mindy B. says Ben fit her in during an emergency situation.",
             "Elena W. got a reminder the day before and an update when the crew was headed her way."
           ]
         },
@@ -231,7 +228,7 @@
           "heading": "Ben, Kenny and Jayse Are the Ones in Your House",
           "body": [
             "Ryan P. wrote that they showed up at the time they said and that he hardly noticed they were there. Nancy C. wrote that they wear booties inside and clean everything up. Ben, Kenny and Jayse do the work. [[confirm: Licensed electrician, KS license #[XXXX]]]",
-            "Belinda R.'s inspection \"made note of a missing smoke detector I had forgotten about.\" If we see something that needs attention, we tell you, and you decide."
+            "Belinda R.'s inspection \"made note of a missing smoke detector I had forgotten about.\""
           ]
         },
         {
@@ -239,37 +236,37 @@
           "heading": "You Call, We Look, You Get Options and a Price",
           "items": [
             {
-              "title": "You call or send a message",
-              "text": "Tell us what's happening and where, and we'll get you on the schedule."
+              "title": "You call",
+              "text": "Tell us what's happening and where."
             },
             {
-              "title": "We look and find the cause",
-              "text": "For a repair, we troubleshoot first. For a new project, we look at the space and talk through what you want."
+              "title": "Ben comes to look",
+              "text": "He looks at the problem, or at the space you want to change."
             },
             {
               "title": "You get options and a price",
-              "text": "Estimates are free. We price the completed job, not the hours, and you hear the number before we start."
+              "text": "Estimates are free. The price is for the completed job, and you hear the number before work starts."
             },
             {
-              "title": "We do the work and clean up",
-              "text": "We clean up and answer your questions before we leave."
+              "title": "The crew does the work and cleans up",
+              "text": "Ben, Kenny and Jayse do the work and tidy up after themselves."
             }
           ]
         },
         {
           "type": "prose",
-          "heading": "Wichita and the Areas Around It",
+          "heading": "Call and Tell Us Where the Job Is",
           "body": [
-            "[[confirm: Serving [towns] and nearby]], homes and commercial properties. Call and tell us where the job is."
+            "[[confirm: Serving [towns] and nearby]], homes and commercial properties."
           ]
         },
         {
           "type": "faq",
-          "heading": "Old Wiring, Warm Outlets and What It Costs",
+          "heading": "Old Wiring, Odd Jobs and What It Costs",
           "items": [
             {
               "q": "Will you look at an older house with strange wiring?",
-              "a": "Yes. Tell us what the house has been through, and we start by finding the cause. Rajeeb H.'s house is 50 years old. Che J.'s garage had a previous owner's DIY work."
+              "a": "Yes. Rajeeb H.'s house is 50 years old, and Che J.'s garage had a previous owner's DIY work."
             },
             {
               "q": "Do you charge for an estimate?",
@@ -277,25 +274,21 @@
             },
             {
               "q": "How do you price a job?",
-              "a": "By the completed job, not by the hour, and you hear the price before we start."
+              "a": "By the completed job, not by the hour. Dave B. wrote \"Price below estimate.\""
             },
             {
-              "q": "Is it dangerous, or are you selling me something?",
-              "a": "We tell you what we see, and you decide. Belinda R.'s inspection \"made note of a missing smoke detector I had forgotten about.\""
-            },
-            {
-              "q": "How soon can you come out?",
-              "a": "Several customers were on the schedule within a day or two. Call and we'll give you a time."
+              "q": "Can you come out in an emergency?",
+              "a": "Mindy B. wrote that Ben \"fit me in during an emergency situation.\" Call and tell us what is going on."
             },
             {
               "q": "Do you work on businesses?",
-              "a": "Yes. Homes and commercial properties."
+              "a": "Yes. Brenda M. wrote that Ben \"was able to come to my business within an hour of calling.\""
             }
           ]
         },
         {
           "type": "callBand",
-          "heading": "Dead Outlets? Call (316) 213-4513",
+          "heading": "An Electrical Mess? Call (316) 213-4513",
           "text": "Tell us what's going on and we'll find a time to come look. You'll have your options and a price before any work starts."
         }
       ]
@@ -335,7 +328,7 @@
           "heading": "Which Outlets, Which Rooms, What Changed",
           "body": [
             "You tell us what's happening: which outlets, which rooms, what changed. We get you on the schedule.",
-            "Then we trace it. We test, follow the circuit and find the failed part or the loose connection. You hear what we found in plain words, with your options and the price, before we fix anything."
+            "Ben comes out, finds the cause and explains it in plain words, with your options and the price, before he fixes anything."
           ],
           "image": {
             "slot": "inspection",
@@ -346,35 +339,44 @@
         },
         {
           "type": "prose",
-          "heading": "What the Signs Usually Mean",
+          "heading": "A Bad Breaker, a Rusty Well Switch, a Doorbell",
           "body": [
-            "Here's what each sign usually points to."
+            "Here is what customers called about."
           ],
           "items": [
             {
-              "title": "A breaker that trips again right after you reset it",
-              "text": "An overloaded circuit, a short or a ground fault. A breaker that's warm or won't reset needs an electrician."
+              "title": "An oven set up wrong",
+              "text": "Ben put in a new outlet and wire, and Jack D. didn't have to buy a new oven."
             },
             {
-              "title": "An outlet or switch plate that's warm or discolored",
-              "text": "A loose connection, which heats up. Stop using it and call us."
+              "title": "An electric bill that skyrocketed",
+              "text": "Candice S. thought it was her AC. The cause was a well pump running constantly."
             },
             {
-              "title": "Dead outlets in several rooms",
-              "text": "Often one failed connection upstream, sometimes a breaker. We follow the circuit instead of replacing outlets one by one."
+              "title": "A rusty outdoor well switch",
+              "text": "Ryan F. had it replaced and wrote that it was easy to get a quote and easy to get the work scheduled."
             },
             {
-              "title": "Lights that flicker in more than one room",
-              "text": "One fixture is usually a bulb. Several rooms points to a loose connection or an overloaded service."
+              "title": "A doorbell",
+              "text": "Jaclyn M. had Ben fix it quickly, and he explained the cost up front."
             },
             {
-              "title": "A garage or outbuilding with no power",
-              "text": "A tripped ground-fault outlet, a bad breaker or a wire that has been cut or pulled loose."
-            },
-            {
-              "title": "A buzz, a crackle or a burning smell",
-              "text": "Switch that circuit off and call us. Don't wait for the weekend."
+              "title": "A commercial light that wouldn't come on",
+              "text": "Katherine S. wasn't in the office. Ben stopped by and took care of it, and it was an easy fix."
             }
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Meant to write this a while ago but Ballinger Electric came out to fix my oven, the previous owner had set it up all wrong and he put in a brand new outlet and wire and saved me a bunch of money from having to get a new oven",
+          "name": "Jack D."
+        },
+        {
+          "type": "prose",
+          "heading": "Two Problems in One Visit",
+          "body": [
+            "Candice S. called about a dishwasher with no power. While Ben was there he was \"also able to troubleshoot & diagnose a separate issue we had,\" and that was the well pump.",
+            "Lan N. asked Ben to look at a few other items while he was there, and he was happy to."
           ]
         },
         {
@@ -386,8 +388,8 @@
           "type": "prose",
           "heading": "Older Houses and Other People's Wiring",
           "body": [
-            "Older houses pile up changes: added circuits, spliced wires, a breaker that was never the right size, work done by a previous owner. The wiring doesn't match any drawing.",
-            "That's work we take on. We open it up, follow the wire and tell you what's wrong and where it goes from there."
+            "Rajeeb H.'s house is 50 years old. Kelley D. has an older home with rather complicated wiring. Che J.'s garage lost power, and the electrician pointed out the previous owner's DIY work.",
+            "Those are calls we take."
           ]
         },
         {
@@ -396,51 +398,46 @@
           "name": "Che J."
         },
         {
-          "type": "prose",
-          "heading": "Repair, or Something Bigger?",
-          "body": [
-            "Most repairs are small: a breaker, an outlet, a connection. Sometimes the cause is bigger, like an old panel that has no room left or a service that can't carry the house.",
-            "When that's the case, we lay out your options and the price of each. You decide.",
-            "The cause isn't always where you'd guess. Candice S. blamed her AC for a skyrocketing electric bill, and the problem was a well pump running constantly."
-          ]
+          "type": "review",
+          "quote": "My elderly parents were having a few issues at their 60+ year old home. Ben provided a thorough walk through, explaining options & a detailed estimate.",
+          "name": "Natalie O."
         },
         {
           "type": "prose",
-          "heading": "Why We Don't Just Swap the Outlet",
+          "heading": "A Repair Call That Turned Into a Coffee Bar",
           "body": [
-            "A new outlet on a bad circuit stops working again. So we test first, find where the power stops and fix that, not the symptom. Mark N. wrote that Ben explained every diagnostic step and found a bad breaker.",
-            "It takes a little longer than a swap.",
+            "Cherie K. had Ben up in the attic and down in the crawlspace. He replaced receptacles that were no longer up to code, moved a switch plate several inches higher for a new vanity and added an outlet by the bed.",
+            "The coffee bar needed a new outlet to an electrical box that could carry more. She is planning to ask Ben back for more.",
             "[[confirm: [X]-year warranty on our work]]"
           ]
         },
         {
-          "type": "steps",
-          "heading": "Call, Trace, Options, Fix",
-          "items": [
-            {
-              "title": "You call and describe it",
-              "text": "Which outlets, which rooms, what changed. We'll get you on the schedule and call before we arrive."
-            },
-            {
-              "title": "We test and trace",
-              "text": "We test and follow the circuit until we know where the power stops and why."
-            },
-            {
-              "title": "You hear the options and the price",
-              "text": "We explain what we found and what it takes to fix it, before we start."
-            },
-            {
-              "title": "We fix it, check it and clean up",
-              "text": "We confirm the circuit works and leave the place tidy."
-            }
+          "type": "review",
+          "quote": "Your service  men did a wonderful job  of diagnosis  of my electrical  problems, they were on time and worked hard ,climbing  into a  very cramped  small attic space to find and fix my system",
+          "name": "Freddy R."
+        },
+        {
+          "type": "prose",
+          "heading": "Kitchen Outlets, a New Stove and an Emergency",
+          "body": [
+            "Belinda R. had her kitchen outlets replaced, and wrote that it was done very quickly. Larry S. had a new stove wired in and the outlets checked, and wrote that the crew was \"very prompt.\"",
+            "Mindy B. called in an emergency. She wrote that Ben \"fit me in during an emergency situation, showed up quickly, and took the time to explain everything very thoroughly.\" He made a stressful situation easier for her."
           ]
         },
         {
           "type": "prose",
-          "heading": "Switch It Off Before You Dial",
+          "heading": "What the Bill Looked Like Afterward",
           "body": [
-            "Switch off the breaker for a circuit that smells hot or has scorch marks, and leave it off.",
-            "Note which outlets or rooms have no power and what happened right before. A new appliance, a storm or a recent project all help us find it faster."
+            "Dave B. wrote \"Price below estimate.\" Lan N. wrote that Ben \"was upfront with his fees.\" Both reviews are about the number, not just the work, and that matters when you are deciding whether to call.",
+            "Ben prices the completed job, and the number comes before the work starts. Ask for it when you call."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "No Muss, No Fuss at the Office",
+          "body": [
+            "Katherine S. wasn't in the office when her commercial light wouldn't come on. Ben stopped by and took care of it, and she wrote \"No muss, no fuss.\"",
+            "Brenda M.'s business had a problem too. Ben came within an hour of her call, and it turned out to be quick for the crew to fix."
           ]
         },
         {
@@ -449,15 +446,15 @@
           "items": [
             {
               "q": "Do you charge to come look at a repair?",
-              "a": "We offer free estimates. We price the completed job, and you hear the number before we start."
+              "a": "Estimates are free. Ben prices the completed job, and you hear the number before work starts."
             },
             {
-              "q": "Can you come the same day?",
-              "a": "Customers have been on the schedule within a day or two. If something is wrong right now, say so when you call."
+              "q": "Can you fix it the same day?",
+              "a": "LB L. wrote that Ben \"fixed our issue same day.\""
             },
             {
               "q": "Will you look at wiring a previous owner did?",
-              "a": "Yes. Che J.'s garage lost power and the electrician \"pointed out the previous home owners diy mess and pointed out where we go from there.\""
+              "a": "Yes. Che J.'s garage and Jack D.'s oven both had a previous owner's work behind them, and both called Ben."
             }
           ]
         },
@@ -502,8 +499,8 @@
           "type": "split",
           "heading": "Tell Us the Room and What You Want to See",
           "body": [
-            "Tell us the room and what you want to see: a fan, recessed lights, a fixture you've already picked, or lights outside. Some people bring a fixture, and some ask for options first.",
-            "We come look at the space, work out where the wiring can go and give you your options and a price before we start."
+            "Tell us the room and what you want to see: a fan, recessed lights, a fixture you've already picked, or lights outside.",
+            "Some people bring a fixture, and some ask for options first. Ben comes to look, and you have a price before the work starts."
           ],
           "image": {
             "slot": "lighting",
@@ -516,16 +513,16 @@
           "type": "prose",
           "heading": "Fans, Fixtures, Recessed and Outdoor Lights",
           "body": [
-            "Here's what we install."
+            "Here is what customers had put in."
           ],
           "items": [
             {
               "title": "Ceiling fans",
-              "text": "With supports added in the ceiling, including rooms that never had a light."
+              "text": "Supports went into the ceiling, including in rooms that never had a light."
             },
             {
               "title": "Recessed lights",
-              "text": "Kyle W. had recessed lights and dimmers put into a family room."
+              "text": "Kyle W.'s family room got energy efficient lights, dimmers and recessed cans."
             },
             {
               "title": "Replacement fixtures",
@@ -540,8 +537,8 @@
               "text": "Alex K. wasn't sure what to buy or where to start, and the lights went in without a trace of the work."
             },
             {
-              "title": "New switches and outlets",
-              "text": "Added alongside the lights where the room needs them."
+              "title": "Fixtures for a remodel",
+              "text": "Dusten M.'s bathroom remodel got a new outlet and a few light fixtures."
             }
           ]
         },
@@ -554,8 +551,7 @@
           "type": "prose",
           "heading": "A Fan in a Ceiling That Never Had a Light",
           "body": [
-            "A new light in a room that already has a fixture is a simple swap. A light or fan in a room with none, behind a finished ceiling, takes more work.",
-            "We look at the ceiling and the attic access first, and you get the price before the work starts."
+            "Ron P.'s two fans went into rooms with no existing lights, and the crew put supports in the ceiling. You get the price before the work starts."
           ]
         },
         {
@@ -565,55 +561,66 @@
         },
         {
           "type": "prose",
-          "heading": "Why a Dimmer Buzzes",
+          "heading": "Booties on at the Door, a Clean House After",
           "body": [
-            "A dimmer has to match the bulbs it runs, or the light buzzes and flickers. Tell us whether you use LED or older bulbs when you call.",
-            "A second switch at the other door, or one moved, can go in with the lights."
+            "Nancy C. wrote that Ben \"wears booties inside & cleans everything up wonderfully!\" She also wrote that he \"always communicates exactly what to expect & then delivers.\" She had a light hung that she bought herself, and she says she will always call Ben first for electrical work."
           ]
         },
         {
           "type": "prose",
-          "heading": "Weatherproof Wiring for the Back Steps",
+          "heading": "Outdoor Lights, Booked and Done on Time",
           "body": [
-            "Outdoor fixtures need wiring made for the weather and a switch inside that you'll actually use. Back steps, a patio, the walk to the door and the corner of the garage are the usual spots."
+            "Robert N. had outlets and a back porch light put in. He wrote that Mr. Ballinger \"was on time, communicated well with us, and did a great job.\""
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Ben did a great job installing outdoor lighting around my house. He was prompt with scheduling and showing up on time and explained well how he was going to do the job - great communicator.",
+          "name": "Steve A."
+        },
+        {
+          "type": "review",
+          "quote": "Ben upgraded our family room with new energy efficient lighting with dimmers and recessed. Makes it so much more of a livable space for my family! He explained in detail and followed up with me week later for any questions!!",
+          "name": "Kyle W."
+        },
+        {
+          "type": "prose",
+          "heading": "Next Day, and a Follow-Up a Week Later",
+          "body": [
+            "C T. called, and Ben came out the next day to install light fixtures. Kyle W. had family room lighting put in and wrote that Ben \"followed up with me week later for any questions.\""
           ]
         },
         {
           "type": "prose",
-          "heading": "Light on the Counter, Fixture Out of Sight",
+          "heading": "A Motion Light, With Options",
           "body": [
-            "Under-cabinet lights can sit behind the cabinet edge, so you see the light and not the fixture. Tell us where you stand at the counter, so the light lands where you work."
-          ]
-        },
-        {
-          "type": "steps",
-          "heading": "From Your Call to a Clean Room",
-          "items": [
-            {
-              "title": "You call or send a message",
-              "text": "Tell us the room and what you'd like to see."
-            },
-            {
-              "title": "We come look",
-              "text": "We check the ceiling, the attic access and where the wire can go."
-            },
-            {
-              "title": "You get options and a price",
-              "text": "Estimates are free, and you have the number before we start."
-            },
-            {
-              "title": "We install and clean up",
-              "text": "We hang, wire and test everything, then clean up."
-            }
+            "Kenetta M. wrote that Ben \"advised me on options for my motion detector light,\" and that the end result was excellent. She called him prompt, honest and reliable."
           ]
         },
         {
           "type": "prose",
-          "heading": "Nancy C. Tried It Herself First",
+          "heading": "Lights Added in the Middle of a Remodel",
           "body": [
-            "Nancy C. wrote that Ben \"saved us from our DIY attempt\" when her recessed light wasn't what she expected. If a fixture you added dims, buzzes or flickers, call us and we'll find which.",
-            "If a fixture you added is warm or smells hot, switch it off and call us."
+            "Dusten M. needed a new outlet and a few light fixtures for a bathroom remodel. Virginia B. had her under cabinet lighting changed, and wrote that Ben \"wanted me to be happy with the outcome.\"",
+            "Dusten M. also wrote that Ben explained everything up front and did the work for a fair price."
           ]
+        },
+        {
+          "type": "review",
+          "quote": "Great company to work with. Needed a new outlet and a few light fixtures for a bathroom remodel. Excellent communication, explained everything up front and did the work for a fair price. Was able to get me on his schedule quickly which I very much appreciated.",
+          "name": "Dusten M."
+        },
+        {
+          "type": "prose",
+          "heading": "A Ceiling Fan and a Safety Check",
+          "body": [
+            "Jay B. had a ceiling fan installed, and the crew did more than that. They checked the house for safety and updated a couple of things Jay asked for, and Jay wrote that they \"readily answered questions.\""
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Ben and Jase were very thorough, and knowledgeable, and they readily answered questions, and were easy to talk with. In addition to installing the ceiling fan they performed a safety check of the house and updated a couple of things at our request. We were very pleased with their service",
+          "name": "Jay B."
         },
         {
           "type": "faq",
@@ -625,19 +632,23 @@
             },
             {
               "q": "Can you put a light or fan where there isn't one?",
-              "a": "Ron P.'s two ceiling fans went into rooms with no existing lights. The crew put in supports and wired them."
+              "a": "Ron P. had two fans installed where there were no existing lights."
             },
             {
               "q": "How much does a lighting job cost?",
-              "a": "Estimates are free. We price the completed job, and you'll have the number before we start."
+              "a": "Estimates are free. The price is for the completed job, and you have the number before work starts."
             },
             {
               "q": "How soon can you do it?",
-              "a": "Nancy C. was scheduled in one day. Call and we'll give you a time."
+              "a": "Nancy C. was scheduled in one day."
             },
             {
               "q": "Will you leave a mess?",
-              "a": "Ron P. wrote that they \"cleaned up when finished.\""
+              "a": "Ron P. wrote that they \"cleaned up when finished.\" Nancy C. wrote that Ben wears booties inside."
+            },
+            {
+              "q": "Will anyone check in after the job?",
+              "a": "Kyle W. wrote that Ben followed up a week later to ask whether he had any questions."
             }
           ]
         },
@@ -666,14 +677,18 @@
           "slot": "contact-hero",
           "alt": "Electrician's van parked in the driveway of a Wichita home",
           "brief": "electrical pool: contact-hero"
+        },
+        "secondaryCta": {
+          "label": "Email Us",
+          "action": "email"
         }
       },
       "sections": [
         {
           "type": "prose",
-          "heading": "Call (316) 213-4513",
+          "heading": "Tell Us What Broke: (316) 213-4513",
           "body": [
-            "Tell us what's going on and where, and we'll find a time to come look. Estimates are free."
+            "Call (316) 213-4513 and tell us what's going on and where. We'll find a time to come look. Estimates are free."
           ]
         },
         {
@@ -709,7 +724,7 @@
         },
         {
           "type": "callBand",
-          "heading": "Dead Outlets? Call (316) 213-4513",
+          "heading": "Ready When You Are: (316) 213-4513",
           "text": "Tell us what the house is doing, and we'll find a time to come look."
         }
       ]
@@ -720,7 +735,7 @@
     "why": [
       "Older homes and messy wiring welcome",
       "Free estimates",
-      "Options and a price before we start",
+      "Ben, Kenny and Jayse do the work",
       "We clean up after the job"
     ]
   },
@@ -780,7 +795,7 @@
           "The same “Why Choose Us” block and the same four reviews repeat on every page."
         ],
         "fixes": [
-          "A page for electrical repair in Wichita, KS, with what the signs mean and what happens when you call.",
+          "A page for electrical repair in Wichita, KS, built on real customer repairs and what happens when you call.",
           "Older houses and previous-owner wiring answered on the page."
         ]
       },
