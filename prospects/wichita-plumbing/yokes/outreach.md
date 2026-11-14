@@ -2,7 +2,7 @@
 
 Hey Yokes team,
 
-Two of your reviews describe a leak nobody else could find, and then you found it. One was a gas leak the gas company couldn't locate, repaired the same day. The other was a leak in pipes leaving the house that no one had identified. That's the story we built a mockup around, "Found It. Fixed It.":
+Two of your reviews describe a leak that was hard to find, and then you found it. One was a gas leak the gas company couldn't locate. The other was an unidentified leak in the pipes leaving the house. That's the story we built a mockup around, "Found It. Fixed It.":
 
 https://yokes.websitepreview.fluidframemarketing.com/
 

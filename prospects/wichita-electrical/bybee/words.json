@@ -46,7 +46,7 @@
     {
       "name": "Home Electrical Inspections",
       "route": null,
-      "blurb": "A free 10-point safety inspection, and a look at the wiring in an older house before problems announce themselves."
+      "blurb": "A free 10-point safety inspection."
     },
     {
       "name": "Remodel and Addition Wiring",
@@ -74,19 +74,9 @@
       "blurb": "A dedicated circuit for an electric car charger at your home."
     },
     {
-      "name": "Generator Installation",
-      "route": null,
-      "blurb": "Generator installation for your home's electrical system."
-    },
-    {
       "name": "Pool and Spa Wiring",
       "route": null,
       "blurb": "Power for pool equipment, pool covers, lights and pool houses, worked out with the pool company."
-    },
-    {
-      "name": "Home Automation",
-      "route": null,
-      "blurb": "Smart switches and home automation wired into the house."
     }
   ],
   "pages": [
@@ -100,7 +90,7 @@
         "description": "Bybee Electric looks at what's actually wrong first and tells you straight, even when it's smaller than you feared. Free estimates. Call (316) 409-4186."
       },
       "hero": {
-        "eyebrow": "Wichita, KS · Free Estimates · Monday to Friday, 8 to 5",
+        "eyebrow": "Wichita, KS · Electrical repair and panels",
         "h1": "Electrician in Wichita, KS — Bybee Electric",
         "sub": "Been told you need a new meter, a new panel, a rewire? We look at what's actually wrong before we sell you anything. It may be smaller than you feared, or not ours to fix, and we'll tell you either way. Call (316) 409-4186.",
         "primaryCta": {
@@ -142,8 +132,7 @@
           "type": "split",
           "heading": "We Look First. Then We Tell You Straight.",
           "body": [
-            "Tina T. collected three quotes before she chose Bybee. We start by looking at the meter, the panel, the circuit and the connection, and we trace the problem to its source.",
-            "Jackie W. wrote that her project was unusual and Bybee \"informed me about my situation and guided me to next steps.\""
+            "We look at the problem before we put a price on it. Jackie W. wrote that her project was unusual and Bybee \"informed me about my situation and guided me to next steps.\""
           ],
           "list": [
             "We look at the problem before we price the fix",
@@ -184,16 +173,15 @@
         },
         {
           "type": "services",
-          "heading": "Electrical Services for Wichita Homes",
+          "heading": "From a Dead Outlet to a Pool House",
           "intro": "From a dead outlet to a house addition, the work is the same: find the cause, explain it, then fix it."
         },
         {
           "type": "prose",
           "heading": "Electrical Repair: Find the Cause, Fix That",
           "body": [
-            "A dead outlet. A switch that does nothing. A breaker that trips again as soon as you reset it. Each one has a cause, and guessing is how people end up replacing parts that were never the problem.",
-            "We trace it to the source, fix that and test the work before we leave. If we find a second problem on the way, we show you and you decide.",
-            "A warm outlet, a buzzing sound or a burning smell is a different story. That's a loose or failing connection. Stop using it and call us."
+            "A dead outlet. A switch that does nothing. A breaker that trips again as soon as you reset it. We trace it to the source, fix that and test the work before we leave.",
+            "A warm outlet, a buzzing sound or a burning smell is a different story. Stop using it and call us."
           ],
           "link": {
             "label": "See electrical repair in Wichita",
@@ -204,8 +192,7 @@
           "type": "prose",
           "heading": "Panel Upgrades for Older and Crowded Panels",
           "body": [
-            "The panel is the box where every circuit in the house starts. A fuse box, rust or scorch marks, two wires under one breaker, no open slots, or a service too small for central air or an EV charger are the signs it needs attention.",
-            "Ask how long the power will be off when you get the quote. Meredith S. needed to know because her father is on continuous oxygen, and the quote came with that estimate."
+            "Fuse boxes, crowded panels, a sub-panel for the garage or the shop. We look at what you have before anything is swapped, and we tell you what it needs."
           ],
           "link": {
             "label": "See electrical panel upgrades in Wichita",
@@ -221,23 +208,23 @@
           "type": "prose",
           "heading": "Remodels, Additions and New Circuits",
           "body": [
-            "A kitchen remodel, a finished basement, a house addition, a garage where you want to run real power tools. New rooms and new loads need new circuits, and the electrical work lands in the middle of everyone else's schedule.",
-            "A B. wrote that Bybee \"worked seamlessly with us, our contractor, and the other subs\" on a large kitchen remodel. The small version is just as real: an outlet for a microwave, or the power line to a shed."
+            "A kitchen remodel, a finished basement, a house addition, a garage where you want to run real power tools. New rooms and new loads need new circuits.",
+            "Debra J. used Bybee for a house addition and for smaller updates, and wrote that she was \"pleased with the professionalism and the fair pricing.\" jack S. had Bybee work with the pool company on his pool and spa equipment and the electrical for his pool house.",
+            "The small version is just as real: an outlet for a microwave, or the power line to a shed."
           ]
         },
         {
           "type": "prose",
-          "heading": "A Chandelier, Two Ceiling Fans and the Wiring Behind Them",
+          "heading": "A Chandelier Bid That Matched What She Expected",
           "body": [
-            "M C. had a chandelier installed, and Derek \"spent the time to do the installation correctly even when he needed to go get additional materials.\" Kayla S. wrote that Martin noticed ceiling fan parts weren't installed correctly and made two trips for the missing pieces.",
-            "Hanging a new fixture is also the best chance to look at the wiring behind it, before the fixture covers it up."
+            "M C. found Bybee through a request for a chandelier installation. She wrote that the bid was \"right inline with what I thought it should cost,\" that \"communication was top notch,\" and that Derek \"spent the time to do the installation correctly even when he needed to go get additional materials.\""
           ]
         },
         {
           "type": "prose",
-          "heading": "A Free Safety Inspection",
+          "heading": "A Free 10-Point Look at the House",
           "body": [
-            "We offer a free 10-point safety inspection and a free estimate on the work. If you just moved into an older house and the outlets make no sense, that look is worth having.",
+            "We offer a free 10-point safety inspection with our service.",
             "[[confirm: [X]-year warranty on our work]]"
           ]
         },
@@ -252,15 +239,15 @@
           "items": [
             {
               "title": "You call",
-              "text": "Tell us the room, what you saw, heard or smelled, and whether a breaker is involved. We're open Monday to Friday, 8 AM to 5 PM."
+              "text": "Tell us the room, what you saw, heard or smelled, and whether a breaker is involved."
             },
             {
               "title": "We look",
-              "text": "We find the cause and explain it in plain words. The estimate is free."
+              "text": "We find the cause and explain it in plain words."
             },
             {
               "title": "We do the work",
-              "text": "You know what we're doing and what it costs before we start. We test the work before we go."
+              "text": "You hear the options and the price before we start, and we test the work before we go."
             },
             {
               "title": "We clean up",
@@ -270,11 +257,11 @@
         },
         {
           "type": "faq",
-          "heading": "Quotes, Power Outages and Who Comes to Your House",
+          "heading": "Questions From Someone Who Has Already Been Quoted",
           "items": [
             {
               "q": "Can you come today?",
-              "a": "Call us and tell us what you're seeing, and we'll tell you when we can be there. We're open Monday to Friday, 8 AM to 5 PM. If there's smoke, sparks or a burning smell, get everyone out and call 911 first."
+              "a": "Call us and tell us what you're seeing, and we'll tell you when we can be there. If there's smoke or sparks, get everyone out and call 911 first."
             },
             {
               "q": "Is it dangerous, or are you just selling me something?",
@@ -287,14 +274,6 @@
             {
               "q": "Who's coming into my house?",
               "a": "Customers name Martin and Derek, among others. They explain the work in plain words and clean up before they leave, debris included."
-            },
-            {
-              "q": "How do I pay?",
-              "a": "We accept American Express, Discover, MasterCard, Visa, cash and check."
-            },
-            {
-              "q": "How long is the power off for a panel upgrade?",
-              "a": "Ask for the length of the outage when you get the quote, and tell us if anyone in your home depends on power, such as medical equipment."
             }
           ]
         },
@@ -303,13 +282,14 @@
           "heading": "Find Us at 232 N Pennsylvania Ave",
           "body": [
             "We're at 232 N Pennsylvania Ave in Wichita.",
+            "[[confirm: 232 N Pennsylvania Ave is the public shop address]]",
             "[[confirm: Serving [towns] and nearby]]"
           ]
         },
         {
           "type": "callBand",
           "heading": "A Quote With a Comma in It? Call (316) 409-4186",
-          "text": "Tell us what's going on. The estimate is free, and you'll know what it needs and why before anything gets done. Call (316) 409-4186, Monday to Friday, 8 AM to 5 PM."
+          "text": "Tell us what's going on. You'll know what it needs and why before anything gets done."
         }
       ]
     },
@@ -325,7 +305,7 @@
       "hero": {
         "eyebrow": "Home electrical repair · Wichita, KS",
         "h1": "Electrical Repair in Wichita, KS — Bybee Electric",
-        "sub": "A dead outlet, a switch that does nothing, a breaker that won't stay on, lights that flicker. We find what's actually wrong, fix it and test it before we leave. Call (316) 409-4186 for a free estimate.",
+        "sub": "A dead outlet, a switch that does nothing, a breaker that won't stay on, lights that flicker. We find what's actually wrong, fix it and test it before we leave. Call (316) 409-4186.",
         "primaryCta": {
           "label": "Call (316) 409-4186",
           "action": "call"
@@ -343,7 +323,7 @@
       "sections": [
         {
           "type": "review",
-          "quote": "Bybee Electric was great! Electrician named Martin was exceptional with his promptness, skills and knowledge. He diagnosed and repaired the issue with ease regarding indoor lights/switches and an outdoor photo cell problem. Martin has a good personality and was very easy to work with. I would strongly recommend him for any electrical work.",
+          "quote": "Bybee Electric was great!  Electrician named Martin was exceptional with his promptness, skills and knowledge.  He diagnosed and repaired the issue with ease regarding indoor lights/switches and an outdoor photo cell problem.  Martin has a good personality and was very easy to work with.   I would strongly recommend him for any electrical work.",
           "name": "Daryl D."
         },
         {
@@ -351,7 +331,7 @@
           "heading": "Tell Us the Room, the Breaker and the Smell",
           "body": [
             "Tell us the room, what you see, what you heard or smelled, and whether a breaker is involved. We come out and find the cause.",
-            "You get the estimate, free, and you know what the repair is before we start. If it turns out smaller than you feared, or isn't ours to fix, we say so.",
+            "If it turns out smaller than you feared, or isn't ours to fix, we say so.",
             "Then we fix it and test it before we leave."
           ],
           "image": {
@@ -365,7 +345,7 @@
           "heading": "A Photo Cell, a Fan and a Dead Outlet",
           "body": [
             "Daryl D. called about indoor lights and switches and an outdoor photo cell problem, and Martin \"diagnosed and repaired the issue with ease.\" Noah S. called about an outlet that wasn't working, and Martin also helped find parts for his fan.",
-            "Sometimes the cause isn't in the house at all. If the trouble is on the utility's side of the meter, the first call is to Evergy."
+            "Jennifer B. called with an issue and was told to call Evergy first, which saved her a service call."
           ]
         },
         {
@@ -375,49 +355,32 @@
         },
         {
           "type": "prose",
-          "heading": "Breakers That Trip",
+          "heading": "A Breaker That Trips Again Is Telling You Something",
           "body": [
-            "A breaker is a safety device. It trips to stop a circuit from overheating, and it trips for one of three reasons: the circuit is overloaded, there's a short, or current is leaking to ground.",
-            "Overload is the common one, like a space heater and a hair dryer on the same circuit. Unplug what was running, reset the breaker once, and if it holds, you've probably found your overload.",
-            "If it trips again right away, or feels warm, or won't reset at all, stop and call us. Don't keep flipping it."
+            "Unplug what was running and reset it once. If it trips again right away, or feels warm, stop and call."
           ]
         },
         {
           "type": "prose",
-          "heading": "Outlets and Switches That Don't Work",
+          "heading": "Two Ceiling Fan Parts, Two Trips",
           "body": [
-            "The usual causes when something goes dead."
-          ],
-          "items": [
-            {
-              "title": "The outlet itself has worn out",
-              "text": "The device inside wears with use, and a loose wire behind it can stop it working. We replace the device and check the connection."
-            },
-            {
-              "title": "A ground-fault outlet tripped somewhere else",
-              "text": "Bathroom, garage and outdoor outlets are the usual places. One tripped outlet can cut power to everything downstream of it."
-            },
-            {
-              "title": "A switch has worn out",
-              "text": "The contacts inside wear, and eventually the light works when it wants to. A new switch fixes it."
-            },
-            {
-              "title": "A wire has come loose",
-              "text": "Loose connections cause dead outlets, flicker and heat. We find which one and tighten or replace it."
-            }
+            "Kayla S. had Martin out to her new home for a tricky issue with the connection of her lighting. He \"spent an ample amount of time making sure everything was fixed appropriately,\" and when he noticed that a couple of ceiling fan parts \"were not installed correctly,\" he \"made 2 trips to leave in order to get a couple of small pieces that were missing.\" She wrote that the appointment \"was not intended for him to help us with the ceiling fans.\""
           ]
         },
         {
-          "type": "review",
-          "quote": "Bybee Electric has helped us with our new home on a few occasions. Both times, Martin, has been our technician. He is prompt, knowledgeable and very personable. Today, we had a tricky issue with the connection of our lighting. Martin went above and beyond to get everything fixed and spent an ample amount of time making sure everything was fixed appropriately. He even made 2 trips to leave in order to get a couple of small pieces that were missing on our ceiling fans. The appointment was not intended for him to help us with the ceiling fans but he noticed that a couple parts were not installed correctly. Martin didn’t have to help us with this at all and he truly went above and beyond our expectations! I highly recommend Martin with Bybee. You will not be disappointed!",
-          "name": "Kayla S."
+          "type": "prose",
+          "heading": "A Basement Wiring Fault and a Hidden Birds Nest",
+          "body": [
+            "Vivian B. had updated ceiling lights installed in her basement, and Bybee \"fixed some wiring problems they found in the process.\" She wrote that she could \"trust them to do the job in a efficient and timely manner.\"",
+            "Rachel S. wrote that Bybee \"saved my house from a potential fire because of a hidden birds nest they found while doing electrical work for us.\""
+          ]
         },
         {
           "type": "split",
-          "heading": "Lights That Flicker, and What They Mean",
+          "heading": "Under-Counter Lighting, Installed Properly",
           "body": [
-            "A flicker in one room is usually the fixture or the bulb. Flicker across the house, or when a big appliance starts, points to a loose connection or an overloaded service.",
-            "We start with the easy checks and work toward the cause, so you don't pay for a new fixture when the fault is in the wiring."
+            "Rhonda C. brought Bybee a tricky under-counter lighting job. She wrote that Martin \"went above and beyond to properly install some rather tricky under counter lighting,\" and that the service was \"excellent\" with \"fair pricing\" from a crew that \"shows up when scheduled.\"",
+            "Jon W. wrote that Martin \"finished the job quickly and even taught me a few things about electricity.\""
           ],
           "imageSide": "left",
           "image": {
@@ -428,32 +391,16 @@
         },
         {
           "type": "prose",
-          "heading": "Warm Outlets, Buzzing and Burning Smells",
+          "heading": "He Called Before He Came and Tested It Before He Left",
           "body": [
-            "A warm outlet, a discolored switch plate, a buzzing sound or a burning smell means a loose or failing connection. That's a fire risk, so stop using it and call.",
-            "If there's smoke, sparks or any sign of fire, get everyone out and call 911 first. Our office hours are Monday to Friday, 8 AM to 5 PM."
+            "Lauren H. wrote that Derek \"arrived on time\" and \"called before he showed up.\" He \"had to go get some replacement parts that we needed,\" and he \"installed them and made sure everything worked before he left.\" She was \"super happy with the service.\""
           ]
         },
         {
-          "type": "steps",
-          "heading": "Describe It, Trace It, Decide, Fix It",
-          "items": [
-            {
-              "title": "You describe it",
-              "text": "The room, the outlet or breaker, what you noticed and when it started."
-            },
-            {
-              "title": "We find the cause",
-              "text": "We trace it to the source and tell you what we found."
-            },
-            {
-              "title": "You decide",
-              "text": "You hear the estimate and any options before we start."
-            },
-            {
-              "title": "We fix it and test it",
-              "text": "We test the work before we go and clean up when we leave."
-            }
+          "type": "prose",
+          "heading": "A Microwave Outlet in 2023, a Shed Power Line Later",
+          "body": [
+            "Brittani A. had a new outlet installed for her microwave in 2023 and called Bybee back to replace a damaged power line to her shed. She wrote that the electricians \"were punctual, polite, and were able to quickly replace the damaged line,\" and that \"the new installation is a huge upgrade and looks great.\""
           ]
         },
         {
@@ -473,15 +420,19 @@
               "a": "Yes. We repair light switches, outlets, circuit breakers and wiring, and we fix lights and fans that have stopped working."
             },
             {
+              "q": "Who will be at my door?",
+              "a": "Customers name Martin more than anyone. Daryl D., Noah S., Kayla S., Rhonda C. and Jon W. all wrote about him, and Derek and Matt come up too."
+            },
+            {
               "q": "What if the problem is the power company's?",
-              "a": "If the trouble is on the utility's side of the meter, we'll say so and tell you to call Evergy."
+              "a": "If it isn't ours to fix, we say so and tell you who to call. Jennifer B. was told to call Evergy first."
             }
           ]
         },
         {
           "type": "callBand",
           "heading": "Tell Us What Stopped Working",
-          "text": "Tell us what stopped working. The estimate is free. Call (316) 409-4186."
+          "text": "Tell us what stopped working. Call (316) 409-4186."
         }
       ]
     },
@@ -514,75 +465,33 @@
       },
       "sections": [
         {
-          "type": "review",
-          "quote": "The person who provided the quote answered all my questions thoroughly and provided an estimate of the length of time the power would be off (important because my father is on continuous oxygen and we needed to prepare).",
-          "name": "Meredith S."
-        },
-        {
-          "type": "split",
-          "heading": "When an Old Panel Is a Safety Problem",
-          "body": [
-            "A panel that works isn't always a panel that's safe. These are the signs to look for."
-          ],
-          "list": [
-            "A fuse box. Fuses are older technology and often mean a small service and old wiring.",
-            "Rust, scorch marks or a burning smell at the panel.",
-            "Two wires under one breaker, when most are built for one.",
-            "No open slots, so the next circuit gets squeezed in where it shouldn't.",
-            "A service too small for the house, now running central air, an electric range or an EV charger."
-          ],
-          "listStyle": "bullets",
-          "image": {
-            "slot": "inspection",
-            "alt": "Open home electrical panel with rows of breakers",
-            "brief": "electrical pool: inspection"
-          }
-        },
-        {
           "type": "prose",
-          "heading": "A Panel Replacement Is a Real Expense, So We Look First",
+          "heading": "The Quote Came With an Outage Estimate",
           "body": [
-            "Sometimes the answer is a new breaker or a repaired connection. Sometimes the panel is fine and the problem is on the utility's side of the meter.",
-            "Tina T. wrote that Bybee \"provided solutions to what we thought were major issues, ultimately saving us a lot of money.\""
-          ]
-        },
-        {
-          "type": "steps",
-          "heading": "Out Comes the Old Panel, In Goes the New One",
-          "items": [
-            {
-              "title": "The swap",
-              "text": "The old panel comes out, the new one goes in, and every circuit is connected and tested."
-            },
-            {
-              "title": "Sometimes more",
-              "text": "An old meter base or service mast may need replacing at the same time, depending on your house."
-            },
-            {
-              "title": "Labeling",
-              "text": "A finished panel should have every circuit labeled. A B. got both breaker boxes relabeled, with a written key."
-            }
+            "Meredith S. called Bybee her \"go-to for electrical needs from now on.\" She wrote that the person who gave the quote \"answered all my questions thoroughly and provided an estimate of the length of time the power would be off,\" which mattered because her father is on continuous oxygen and the family needed to prepare."
           ]
         },
         {
           "type": "prose",
-          "heading": "Ask How Long the Power Will Be Off",
+          "heading": "A New Panel, a Repaired Collar and a Backyard Light That Works Again",
           "body": [
-            "Ask for the length of the outage when you get the quote, so you can plan around it. Meredith S. needed it because her father is on continuous oxygen, and the quote came with that estimate.",
-            "Tell us if anyone in the house depends on power for medical equipment."
+            "Meredith S. had her breaker box completely replaced and the outside collar repaired. The outlet upgrades in the garage \"also made our outside backyard light functional again,\" and some inside outlets were changed to 3-way, with an inside switch replaced.",
+            "She wrote that Derek, who did the work, \"was friendly, communicative, and efficient.\" When she called with a couple of extra questions, the person who answered the phone \"was kind and helpful.\""
           ]
         },
         {
-          "type": "review",
-          "quote": "Installed a 100 amp sub-panel in garage for additional power for large power tools. My main panel needed some reconfiguring and that went off without a hitch. They did good work and were courteous throughout the process. The price was fair - I had 3 bids and Bybee was in the middle.",
-          "name": "Thomas S."
+          "type": "prose",
+          "heading": "Both Breaker Boxes Relabeled, With a Written Key",
+          "body": [
+            "A B. met Bybee during \"a very large main floor and kitchen remodel,\" introduced by the contractor. Bybee \"took time every step of the way to make sure everything was the way we wanted it\" and \"went above and beyond to include relabeling both our breaker boxes and provided us with a written 'key.'\"",
+            "A B. has used Bybee for other electrical needs since. She wrote that John, the estimator, \"is very thorough, thoughtful and timely,\" and that Susan in the office \"is very easy to work with, and very responsive, with scheduling and other requests.\""
+          ]
         },
         {
           "type": "split",
-          "heading": "A Sub-Panel for the Garage, Shop or a New Load",
+          "heading": "A 100 Amp Sub-Panel for the Garage",
           "body": [
-            "You don't always need a whole new main panel. If the garage, the workshop or an addition needs more power, a sub-panel feeds a new set of circuits from the main one, as long as the main service can carry the load. Thomas S. had one installed in his garage for large power tools.",
-            "An EV charger, a welder or a compressor adds load, so the main panel gets checked first."
+            "Thomas S. had a 100 amp sub-panel put in his garage \"for additional power for large power tools.\" His main panel \"needed some reconfiguring and that went off without a hitch.\" He wrote that Bybee \"did good work and were courteous throughout the process,\" and that \"the price was fair.\""
           ],
           "imageSide": "left",
           "image": {
@@ -593,23 +502,36 @@
         },
         {
           "type": "prose",
-          "heading": "Older Houses",
+          "heading": "Two Technicians, One Kitchen Remodel",
           "body": [
-            "Open the door on an old panel and you may find faded pencil, or no labels at all. Every breaker is a guess, and that's when the wrong one gets switched off.",
-            "A panel upgrade is the chance to fix that, and to bring an older house's wiring up to what it now has to carry."
+            "John H. was sent to Bybee by his kitchen remodelers. He wrote that \"the technician that we met with initially had great suggestions for solutions to our particular situation,\" and that \"the installing technician was very knowledgeable and efficient.\" Both were \"very courteous and friendly.\""
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Four Quotes, Three Bids and Where Bybee Landed",
+          "body": [
+            "Price is the question that comes before any panel job, and two customers answered it in their own reviews. Meredith S. collected four quotes for her breaker box and wrote that Bybee's were \"by far the most reasonable.\"",
+            "Thomas S. had three bids for his garage sub-panel and wrote that \"Bybee was in the middle,\" adding that \"the price was fair.\" Both of them went on to hire Bybee for the job: Meredith S. for a complete breaker box replacement, Thomas S. for the 100 amp sub-panel and some reconfiguring of his main panel."
           ]
         },
         {
           "type": "review",
-          "quote": "Bybee electric updated my 1870 farm house . The oldest house in sedwick county . So Bybee can say they work on the oldest to the newest houses. They have also updated countless houses for my clients and always do overly professional jobs . There bids seem to outpace there competition. Would recommend calling them for any electrical work be a builder or home owner.",
+          "quote": "Bybee electric updated my 1870 farm house . The oldest house in sedwick county . So Bybee can say they work on the oldest to the newest houses. They have also updated countless houses for my clients and always do overly professional jobs . There bids seem to outpace there competition.  Would recommend calling them for any electrical work be a builder or home owner.",
           "name": "Mark R."
         },
         {
           "type": "prose",
-          "heading": "When a City Inspector Gets Involved",
+          "heading": "Mark R. Called the 1870 Farmhouse the Oldest in the County",
           "body": [
-            "Jr R. had a problem with a city inspector that was not Bybee's fault, and wrote that they were \"so very focused on resolving the issue for me.\"",
-            "The panel is usually in the garage or the basement, and the area should be left as clean as it was found.",
+            "Mark R. had Bybee update his 1870 farmhouse, which he wrote is \"the oldest house in sedwick county.\" He added that Bybee has \"updated countless houses for my clients\" and wrote that he would recommend \"calling them for any electrical work be a builder or home owner.\""
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Jr R. Had an Inspector Problem That Wasn't Bybee's Fault",
+          "body": [
+            "Jr R. wrote that Bybee was \"so very focused on resolving the issue for me,\" with \"great customer service, and great pricing.\"",
             "[[confirm: Licensed electrician, KS license #[XXXX]]]"
           ]
         },
@@ -620,30 +542,22 @@
         },
         {
           "type": "faq",
-          "heading": "Cost, Outage Length and Old Panels",
+          "heading": "Cost, Outage Length and What to Ask",
           "items": [
             {
               "q": "How much does a panel upgrade cost?",
-              "a": "It depends on the size of the panel, what's wrong with the old one and whether the meter base or service mast needs replacing. The estimate is free. Ask it to spell out what's included."
+              "a": "Call and tell us what you have, and we'll look at it and give you the estimate. Ask it to spell out what's included, so you can lay it next to the other bids you collect."
             },
             {
               "q": "How long is the power off?",
-              "a": "Ask for the length of the outage when you get the quote. Meredith S.'s quote came with an estimate."
-            },
-            {
-              "q": "Can you add power for the garage?",
-              "a": "Thomas S. had Bybee install \"a 100 amp sub-panel in garage for additional power for large power tools.\""
-            },
-            {
-              "q": "Is my old panel dangerous?",
-              "a": "Not necessarily. A fuse box, rust or scorch marks, two wires under one breaker or no open slots are the signs. Call and tell us what you see."
+              "a": "Ask for the outage length when you get the quote."
             }
           ]
         },
         {
           "type": "callBand",
           "heading": "Get Your Panel Looked At",
-          "text": "Tell us what you're seeing: breakers that trip, a fuse box, a panel that's full. The estimate is free. Call (316) 409-4186 to get it looked at."
+          "text": "Tell us what you're seeing: breakers that trip, a fuse box, a panel that's full. Call (316) 409-4186 to get it looked at."
         }
       ]
     },
@@ -659,7 +573,7 @@
       "hero": {
         "eyebrow": "Contact Bybee Electric",
         "h1": "Contact Bybee Electric",
-        "sub": "Tell us what's happening and we'll come look at it. The estimate is free. Call during business hours, or email.",
+        "sub": "Tell us what's happening and we'll come look at it. Call during business hours, or email.",
         "primaryCta": {
           "label": "Call (316) 409-4186",
           "action": "call"
@@ -673,10 +587,10 @@
       "sections": [
         {
           "type": "prose",
-          "heading": "Call (316) 409-4186",
+          "heading": "Pick Up the Phone",
           "body": [
             "(316) 409-4186",
-            "The quickest way is to call. Tell us the room, what you see, what you heard or smelled, and whether a breaker is involved. We're open Monday to Friday, 8:00 AM to 5:00 PM, and closed Saturday and Sunday."
+            "We're open Monday to Friday, 8:00 AM to 5:00 PM, and closed Saturday and Sunday."
           ]
         },
         {
@@ -729,8 +643,8 @@
         },
         {
           "type": "callBand",
-          "heading": "Call (316) 409-4186",
-          "text": "Tell us what's going on. We'll come look at it, the estimate is free, and you decide."
+          "heading": "Whatever It Is, Start With a Phone Call",
+          "text": "Call (316) 409-4186, or email admin@bybeeelectric.com. We'll come look at it, and you decide."
         }
       ]
     }
@@ -799,8 +713,8 @@
           "Circuit breaker, outlet, switch and wiring repair are each a short stock page, so none says what you actually do."
         ],
         "fixes": [
-          "One page for electrical repair in Wichita, KS, with what usually goes wrong and what happens when you call.",
-          "Warm outlets and tripping breakers explained plainly, with when to stop and call."
+          "One page for electrical repair in Wichita, KS, built on what your customers say happens when you come out.",
+          "When to stop and call, kept short."
         ]
       },
       {
@@ -811,7 +725,7 @@
           "Your site calls it “Electrical Panel Installation,” so a search for “electrical panel upgrade Wichita KS” has nothing built for it."
         ],
         "fixes": [
-          "A page for panel upgrades in Wichita, KS, covering the signs of a bad panel, what the day involves and how long the power is off."
+          "A page for panel upgrades in Wichita, KS, built on your customers' panel and sub-panel jobs and the outage-length question."
         ],
         "alsoAdd": "Pages for EV charger installation, generator installation, ceiling fans and fixtures, and home electrical inspections, each built for its own search."
       },

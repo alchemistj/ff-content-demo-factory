@@ -14,7 +14,7 @@
         "tel": "+13166134400"
       }
     ],
-    "email": null,
+    "email": "msaucedo@enegrenelectric.com",
     "hours": null,
     "address": "3815 S Midco St, Wichita, KS 67215",
     "serviceArea": {
@@ -58,64 +58,29 @@
       "blurb": "An old or full breaker box replaced with a service that fits what the house runs."
     },
     {
-      "name": "Electrical Troubleshooting",
-      "route": null,
-      "blurb": "For the problem you can't pin down, we test the circuit until we know where it starts."
-    },
-    {
-      "name": "Home Electrical Inspections",
-      "route": null,
-      "blurb": "A look at the wiring and panel."
-    },
-    {
-      "name": "Residential Re-Wiring",
-      "route": null,
-      "blurb": "Older wiring replaced where the house has outgrown it."
-    },
-    {
-      "name": "New Construction and Remodel Electrical",
-      "route": null,
-      "blurb": "Electrical design and installation for new homes, renovations and relocations."
-    },
-    {
       "name": "Lighting, Inside and Out",
       "route": null,
-      "blurb": "Interior, exterior and landscape lighting, plus timers and dimmers."
+      "blurb": "Pendant lights, cabinet lighting, and new lighting for a living room, bedroom and kitchen."
     },
     {
       "name": "Whole House Surge Protection",
       "route": null,
-      "blurb": "A protector at the panel that guards every circuit in the house."
+      "blurb": "Installed the day after lightning struck Robin A.'s house."
     },
     {
       "name": "EV Charger Installation",
       "route": null,
-      "blurb": "A circuit and charger for your garage or driveway."
-    },
-    {
-      "name": "Backup Generators",
-      "route": null,
-      "blurb": "Backup generator installation and repair."
+      "blurb": "Electric vehicle chargers for homes."
     },
     {
       "name": "Hot Tub Wiring",
       "route": null,
-      "blurb": "The dedicated circuit a hot tub needs, wired and connected."
-    },
-    {
-      "name": "Smoke and CO Alarms",
-      "route": null,
-      "blurb": "Smoke detectors and carbon monoxide alarms installed."
-    },
-    {
-      "name": "New Appliance Circuits",
-      "route": null,
-      "blurb": "Dedicated circuits for appliances, air conditioners and furnaces."
+      "blurb": "Wiring for a hot tub at your home."
     },
     {
       "name": "Outlets and Switches",
       "route": null,
-      "blurb": "New outlets and light switches fitted, and old ones retrofitted."
+      "blurb": "New outlets and switches, and old ones replaced. Jacob J. called the outlet work quick."
     },
     {
       "name": "Commercial Electrical",
@@ -125,12 +90,7 @@
     {
       "name": "Commercial Lighting",
       "route": null,
-      "blurb": "LED upgrades, parking lot, security and exterior lighting."
-    },
-    {
-      "name": "Equipment and Machine Wiring",
-      "route": null,
-      "blurb": "Wiring for equipment and machines at your business."
+      "blurb": "LED upgrades, parking lot, security and exterior lighting for businesses."
     }
   ],
   "pages": [
@@ -144,7 +104,7 @@
         "description": "Enegren Electric, a family-owned Wichita electrician. We find the cause, explain it in plain words and give you options. Call (316) 613-4400."
       },
       "hero": {
-        "eyebrow": "West Wichita · Family-Owned · Homes and Businesses",
+        "eyebrow": "West Wichita and 15 towns around it",
         "h1": "Electrician in Wichita, KS — Enegren Electric",
         "sub": "Behind a wall, you can't tell a small fix from a big one. We find the cause, explain it in plain words and give you options, and you choose what gets done. We send the electrician's name and photo ahead, so you know who's at the door. Call (316) 613-4400.",
         "primaryCta": {
@@ -207,7 +167,7 @@
           },
           "body": [
             "When you're home alone, or can't be there at all, the person at the door matters as much as the repair. Before the visit, we send you the electrician's name and a photo.",
-            "Marcus Saucedo is our Master Electrician. Trevor Bradley is a Residential Journeyman Electrician, and Tyler Powell is an electrician. Those are the people who come to your home."
+            "Marcus Saucedo is our Master Electrician, Trevor Bradley is a Residential Journeyman Electrician and Tyler Powell is an electrician. Customers also name Derek in their reviews."
           ]
         },
         {
@@ -229,7 +189,7 @@
           },
           "body": [
             "A breaker trips again after you reset it. A switch plate is warm. A room goes dark while the rest of the house has power.",
-            "A breaker trips for one of three reasons: too much on the circuit, a short, or a ground fault. A warm outlet is usually a loose connection. We find which one you have, and tell you what it means."
+            "Shannon R. called with an immediate problem and wrote that Enegren \"came out the same day and fixed\" it, with a bid scheduled for the larger issue behind it."
           ]
         },
         {
@@ -246,10 +206,10 @@
         },
         {
           "type": "prose",
-          "heading": "Lighting, Surge Protection, EV Chargers and Generators",
+          "heading": "Lighting a Living Room, Bedroom and Kitchen",
           "body": [
-            "We install interior, exterior and landscape lighting, whole house surge protection, EV chargers and backup generators, and we wire hot tubs.",
-            "If you're planning a remodel or adding something that draws power, tell us before the drywall goes up. It is simpler to run the circuit once than to open the wall twice."
+            "Brad J. hunted down five businesses, got three quotes and went with Enegren to update the lighting in his living room, bedroom and kitchen. We also install whole house surge protection and EV chargers, and we wire hot tubs.",
+            "Carson M. hired us to bring electricity to an outdoor shed about 100 feet from his house."
           ]
         },
         {
@@ -288,7 +248,7 @@
             },
             {
               "q": "Is this actually dangerous, or are you selling me something?",
-              "a": "We find the cause first and explain it in plain words. A warm outlet, a breaker that won't stay on and a burning smell are signs to take seriously. Stop using it and call."
+              "a": "Call and tell us what you're seeing, and we'll tell you what we think it needs. If something smells burnt or is hot to the touch, stop using it and call."
             },
             {
               "q": "What will it cost?",
@@ -296,15 +256,15 @@
             },
             {
               "q": "Who exactly is coming into my house?",
-              "a": "One of our electricians, and you'll know who before they arrive: we send the electrician's name and a photo ahead. Marcus Saucedo, Trevor Bradley and Tyler Powell are the people you'll deal with."
+              "a": "One of our electricians, and you'll know who before they arrive: we send the electrician's name and a photo ahead. Customer reviews name Marcus, Trevor, Tyler and Derek."
             },
             {
               "q": "Do you work on businesses too?",
               "a": "Yes. We do commercial and residential electrical, from a single outlet to new construction."
             },
             {
-              "q": "Can you do a panel upgrade, an EV charger or a generator?",
-              "a": "Yes. All three are things we install. If you're not sure what your house needs, call and tell us what you're running into."
+              "q": "Can you do a panel upgrade, an EV charger or a hot tub circuit?",
+              "a": "Yes. All three are on our residential service list. If you're not sure what your house needs, call and tell us what you're running into."
             }
           ]
         },
@@ -349,8 +309,15 @@
           "name": "Todd K."
         },
         {
+          "type": "prose",
+          "heading": "Services Restored in a Flash",
+          "body": [
+            "Todd K. called when his services were out. He wrote that the crew \"came to the rescue,\" got everything running again in a flash, and he gave them 15 out of 10 stars."
+          ]
+        },
+        {
           "type": "split",
-          "heading": "A Visit That Starts With Testing the Circuit",
+          "heading": "Identified the Problem Immediately",
           "imageSide": "right",
           "image": {
             "slot": "inspection",
@@ -358,16 +325,25 @@
             "brief": "electrical pool: inspection"
           },
           "body": [
-            "Tell us what's happening and where. One of our electricians comes out and tests the circuit to find the cause, not just the symptom.",
-            "Then you hear what we found in plain words and what your options are. Some fixes are small. Some turn up something bigger underneath. You decide how far to go."
+            "Courtney S. wrote that Derek \"identified the problem immediately, and was polite and efficient,\" and that the price was also very reasonable.",
+            "Doug B. called while in the middle of a move. He wrote that Enegren \"accommodated my schedule\" and that Elias and the team \"quickly diagnosed the problem and provided an efficient solution.\""
           ]
         },
         {
+          "type": "review",
+          "quote": "Derek identified the problem immediately, and was polite and efficient! We will absolutely be using Enegren in the future (the price was also very reasonable).",
+          "name": "Courtney S."
+        },
+        {
+          "type": "review",
+          "quote": "They accommodated my schedule as I was in the middle of a move. Elias and team quickly diagnosed the problem and provided an efficient solution.",
+          "name": "Doug B."
+        },
+        {
           "type": "prose",
-          "heading": "A Breaker That Trips Again, and a Short Tylor Found",
+          "heading": "A Breaker That Kept Tripping, and the Short Behind It",
           "body": [
-            "A breaker trips when a circuit carries more than it should, when there's a short, or when current leaks to ground. If it trips again right after you reset it, stop resetting it and call. A breaker that feels warm, or won't reset at all, needs an electrician.",
-            "Save T.'s breaker kept tripping. Tylor traced it to a short in the wiring."
+            "Save T.'s circuit breaker kept tripping. The electrician did a detailed inspection, found the short circuit and corrected the faulty wiring. If a breaker of yours trips again right after you reset it, stop resetting it and call."
           ]
         },
         {
@@ -377,27 +353,22 @@
         },
         {
           "type": "prose",
-          "heading": "Warm Plates, Buzzing and Burning Smells",
+          "heading": "Quick to Find, Quick to Fix",
           "body": [
-            "Loose connections heat up. A wire that isn't tight in an outlet, a switch or the panel creates resistance, and resistance makes heat.",
-            "A warm or discolored plate, a burning smell or a buzz means a loose or failing connection. Stop using it and call."
+            "Jeffrey F. called about a problem and wrote that Marcus was quick to locate it and quick to fix it. He called the cost very fair, and he plans to call Enegren again."
           ]
         },
         {
-          "type": "prose",
-          "heading": "One Light Flickers, or Every Room Does",
-          "body": [
-            "One fixture flickering is often the bulb. Flicker in several rooms, or lights that dim when the air conditioner starts, points to a loose connection or a service carrying too much.",
-            "Tell us which rooms flicker and when it happens, such as when the AC kicks on, so the visit starts with the right circuit."
-          ]
+          "type": "review",
+          "quote": "Marcus was quick to locate the problem and was quick to fix the problem. He was very professional and the cost was very fair.",
+          "name": "Jeffrey F."
         },
         {
           "type": "prose",
-          "heading": "Power Out in One Room, or Half the House",
+          "heading": "Power Out in Both Bathrooms",
           "body": [
-            "Part of a house losing power is usually a tripped breaker, a failed GFCI outlet, or a connection that has let go somewhere along the circuit. Finding which one means testing it, not guessing.",
-            "We trace the loss back through the wiring to where it starts, then fix that spot instead of the outlet you happened to notice.",
-            "Tell us which rooms are dark and what was running when the power went out."
+            "Sean C. lost power in both of his bathrooms. Enegren showed up, troubleshot the electrical issues, fixed the problem and cleaned up afterward, as Sean writes below.",
+            "Dennis L. had a different kind of call. He wrote that service was prompt, and that Trevor did a great job fixing his problem."
           ]
         },
         {
@@ -409,8 +380,8 @@
           "type": "prose",
           "heading": "After a Lightning Strike",
           "body": [
-            "A strike can send a surge through every wire in the house. Electronics fail, and outlets or breakers can be damaged.",
-            "We work out what happened and fix the damage. Then we talk about prevention. Whole-house surge protection sits at the panel and guards every circuit, and we install it."
+            "Robin A. called the morning after lightning struck her house. Trevor and Brock let her know when they were on their way and were at her house before noon.",
+            "Trevor came back the next day to install a new whole house surge protector."
           ]
         },
         {
@@ -420,10 +391,46 @@
         },
         {
           "type": "prose",
+          "heading": "The Wrong Equipment for a Bathroom Heater",
+          "body": [
+            "Tina A. had a bathroom heater and exhaust that needed work. She wrote that Marcus was the one who worked out the equipment problem, and that the installation and clean up were thorough."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Marcus was the only one to figure out that we didn't have the right equipment for our bathroom heater and exhaust. … Installation was thorough and clean up was great.",
+          "name": "Tina A."
+        },
+        {
+          "type": "prose",
+          "heading": "A Delicate Issue, Handled Professionally",
+          "body": [
+            "Marybeth L. and her family were having trouble with what she called a delicate issue. Marcus came out to look at it, and she wrote that when he left, everything was taken care of."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "We were having trouble with a delicate issue and Marcus was exceptionally intelligent with our problem. When he left everything was taken care of very professionally.",
+          "name": "Marybeth L."
+        },
+        {
+          "type": "prose",
+          "heading": "A Tenant Called, and Understood Every Fix",
+          "body": [
+            "Rosalie G. was the tenant at her address, not the owner, and had the repair visit herself. She wrote that the technician explained everything that needed fixing, and that the service was very efficient."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "My experience with the tech was extremely good. He explained everything that needed fixing and was very efficient with the service.",
+          "name": "Rosalie G."
+        },
+        {
+          "type": "prose",
           "heading": "The Small Problem You've Lived With",
           "body": [
-            "Not every repair is urgent. A doorbell that never works right, a switch that does the wrong thing or an outlet that won't hold a plug can all be quick fixes.",
-            "If you've lived with other small problems, mention them when you call."
+            "Not every repair is urgent. Vanessa B. wanted a local company to work on her doorbell transformer, found Enegren online and was impressed by the reviews.",
+            "She wrote that Marcus replaced the transformer and troubleshot her existing chimes and old doorbell. If you've lived with a small problem for years, mention it when you call."
           ]
         },
         {
@@ -433,26 +440,24 @@
         },
         {
           "type": "prose",
-          "heading": "Outlets, Switches, Appliance Circuits and Alarms",
+          "heading": "Same Day, Then a Bid for the Bigger Problem",
           "body": [
-            "We repair and replace outlets and switches, wire appliance and air conditioner circuits, repair lighting inside and out, and install smoke and CO alarms and surge protection."
+            "Shannon R. had Enegren out the same day for an immediate problem, and a visit was scheduled to bid the larger systemic issue behind it. JD H. wrote that the crew \"got right to work\" and \"also checked another problem for me without hesitation.\"",
+            "If a repair points at your breaker box, see [electrical panel upgrades](/electrical-panel-upgrade-wichita-ks/)."
           ]
         },
         {
-          "type": "prose",
-          "heading": "When a Repair Points to the Panel",
-          "body": [
-            "Sometimes the repair shows that the breaker box is the real problem: it's full, it's old, or its breakers don't act like they should.",
-            "When that happens we tell you what a replacement involves. See [electrical panel upgrades](/electrical-panel-upgrade-wichita-ks/) for how that goes."
-          ]
+          "type": "review",
+          "quote": "Enegrwn came out the same day and fixed my immediate problem and is scheduled to come out on Monday to bid the larger systemic issue. I was thrilled they came out the same day.",
+          "name": "Shannon R."
         },
         {
           "type": "faq",
-          "heading": "Resetting Breakers and What to Tell Us",
+          "heading": "Can I Keep Resetting It?",
           "items": [
             {
               "q": "My breaker trips. Can I just keep resetting it?",
-              "a": "If it trips once under a heavy load, that may be all it is. If it trips again right after you reset it, something in the circuit is wrong. Stop resetting it and call."
+              "a": "If it trips again right after you reset it, stop resetting it and call."
             },
             {
               "q": "What do I need to tell you when I call?",
@@ -505,8 +510,15 @@
           "name": "Bryan J."
         },
         {
+          "type": "prose",
+          "heading": "From an Old Small Box to a Much Bigger One",
+          "body": [
+            "Bryan J. had Marcus and his team change out an old small breaker box. He wrote that he got a much bigger, much safer box installed, and he highly recommends them."
+          ]
+        },
+        {
           "type": "split",
-          "heading": "A New AC, a New Charger, an Old Panel",
+          "heading": "A Kitchen Circuit, a Charger, a Hot Tub",
           "imageSide": "right",
           "image": {
             "slot": "ev-charger",
@@ -514,65 +526,28 @@
             "brief": "electrical pool: ev-charger"
           },
           "body": [
-            "A panel sized for a smaller house runs out when a central air unit goes in, or an EV charger, or a hot tub, and the box has nothing left to give.",
-            "Before we recommend a bigger one, we look at what you have and what you plan to add. Then you hear your options."
+            "Andres M. had Broc and Steven come to his home to replace several standard circuit breakers with GFCI breakers, add a circuit to better distribute the electrical load in his kitchen and install a couple of GFCI outlets.",
+            "We also install EV chargers and wire hot tubs, and both are on our residential service list. Tell us what you want to run when you call."
           ]
         },
         {
           "type": "prose",
-          "heading": "Signs an Old Panel Needs Attention",
+          "heading": "Neat, Courteous and Kept Informed",
           "body": [
-            "Age alone isn't the problem. These are the signs worth a call, and any one of them is enough."
-          ],
-          "items": [
-            {
-              "title": "A fuse box",
-              "text": "A fuse box instead of breakers is a reason to have it looked at."
-            },
-            {
-              "title": "Rust, moisture or scorch marks",
-              "text": "Any of these inside or around the panel needs an electrician."
-            },
-            {
-              "title": "Two wires under one breaker",
-              "text": "That's called double-tapping, and it's worth correcting."
-            },
-            {
-              "title": "No open slots",
-              "text": "If there's no room for the circuit you need, the panel is full."
-            },
-            {
-              "title": "Small service, big loads",
-              "text": "A small service in a house that now runs central air, a charger or a hot tub."
-            }
+            "Andres M. described Broc and Steven as friendly, courteous, neat and professional. He wrote that they kept him informed of the challenges they ran into and explained what they were doing while they worked."
           ]
+        },
+        {
+          "type": "review",
+          "quote": "Both young men were friendly, courteous, neat, and professional throughout the entire visit. They kept me informed of the challenges they encountered, explained what they were doing, and made sure the job was completed properly.",
+          "name": "Andres M."
         },
         {
           "type": "prose",
-          "heading": "Do You Need a New Panel, or Do You Have Years Left?",
+          "heading": "A Panel and Meter Changed Out by End of Day",
           "body": [
-            "You may not need a new panel at all. A panel that is simply old, or a breaker that trips now and then, can be fine.",
-            "We look at yours and explain what we see, and you choose what to do about it.",
-            "Tell us what you plan to add in the next few years. A panel that is fine today can be too small after an addition, and it's easier to size it right once."
-          ]
-        },
-        {
-          "type": "steps",
-          "heading": "A Look, a Plan, a Swap",
-          "intro": "This is the general shape of the job, so you know what you're agreeing to. Your house may differ.",
-          "items": [
-            {
-              "title": "A look and a plan",
-              "text": "We check the panel, the service coming into the house and what you want to run. You hear your options."
-            },
-            {
-              "title": "The swap",
-              "text": "We install the new panel. Sometimes the meter base or the service mast has to be replaced too."
-            },
-            {
-              "title": "How long it took for two customers",
-              "text": "Shaun M.'s panel and meter were changed out by end of day, and Kyle P.'s box in one afternoon."
-            }
+            "Shaun M.'s job came with obstacles, and Enegren still finished a complete panel and meter change out by the end of a Friday. His family could be back in the house that night.",
+            "Shaun M. also wrote that the quality of the work looks great, and that everyone on the job was professional and pleasant to be around."
           ]
         },
         {
@@ -582,10 +557,21 @@
         },
         {
           "type": "prose",
-          "heading": "Options, Not One Price",
+          "heading": "No Surprises at the End",
           "body": [
-            "There's often more than one way to do a panel job. You can replace the panel, add a subpanel, or fold the service upgrade into a larger remodel.",
-            "We lay the choices out in plain words and you pick. If you're remodeling anyway, say so when you call."
+            "Brenda B. wrote that Trevor \"explained the way they charge for services, no surprises at the end.\" Her visit was a repair, but it's the kind of thing to ask about when you call for a panel."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "They were earlier with the arrival time for the repairs and had let me know that. I appreciated getting a picture of him ahead of time so I knew who would be at my door. Trevor was friendly and professional and explained the way they charge for services, no surprises at the end.",
+          "name": "Brenda B."
+        },
+        {
+          "type": "prose",
+          "heading": "Multiple Options, a Patched Wall and a Labeled Panel",
+          "body": [
+            "Nathan R. asked for an estimate and was given more than one option to choose from. When the work was done, the wall was patched and the panel labeled."
           ]
         },
         {
@@ -595,17 +581,34 @@
         },
         {
           "type": "prose",
-          "heading": "Adding Circuits Without Replacing Everything",
+          "heading": "Affordable, and the Mess Cleaned Up",
           "body": [
-            "Sometimes the panel is fine and the load is the problem. A kitchen with too many appliances on one circuit trips the breaker again and again.",
-            "We add circuits to spread the load. New appliance circuits, air conditioner and furnace circuits, hot tub wiring, EV chargers and backup generators all start at the panel."
+            "John D. wrote that Marcus and his team were efficient and affordable, and that they did a great job cleaning up the mess after the job was done."
           ]
+        },
+        {
+          "type": "review",
+          "quote": "Marcus is fantastic to work with. His team is very efficient and affordable. They also did a great job cleaning up the mess after the job was done.",
+          "name": "John D."
         },
         {
           "type": "prose",
           "heading": "Panel Service Upgrades for Businesses Too",
           "body": [
-            "Enegren does electrical service upgrades for homes and electrical panel service upgrades for businesses."
+            "Enegren does electrical service upgrades for homes and electrical panel service upgrades for businesses.",
+            "Tyler H. manages properties and has called on Enegren more than once. He wrote that they \"continue to show up on time and perform extremely great electrical work.\""
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Marcus and Enegren Electric continue to show up on time and perform extremely great electrical work for the properties that I manage.",
+          "name": "Tyler H."
+        },
+        {
+          "type": "prose",
+          "heading": "One Afternoon for an Electrical Box",
+          "body": [
+            "Kyle P. wrote that Marcus was prompt and efficient. His electrical box was changed out in one afternoon, and he plans to call Enegren for any electrical work he needs in the future."
           ]
         },
         {
@@ -615,27 +618,30 @@
         },
         {
           "type": "prose",
-          "heading": "Surge Protection While the Panel Is Open",
+          "heading": "Marcus Saucedo, Derek and the Panel Jobs",
           "body": [
-            "Surge protection for the whole house connects at the panel. If we're already replacing it, that is the easy time to add it, so a strike or a utility surge doesn't reach what's plugged in.",
-            "The same goes for any circuit you know you'll want, like a dedicated line for a charger. Ask about it when you call."
+            "Marcus Saucedo is Enegren's Master Electrician. Bryan J. and Kyle P. both named Marcus in their reviews of box changes, and Shaun M. wrote that \"Derek and Marcus communicated clearly and effectively.\""
           ]
         },
         {
           "type": "faq",
-          "heading": "Warning Signs, Chargers and the Power Outage",
+          "heading": "Is My Panel the Problem?",
           "items": [
             {
-              "q": "How do I know if my panel is a problem?",
-              "a": "Look for a fuse box, rust, scorch marks, two wires under one breaker, or no open slots. Any of them is worth a call. Tell us what you see."
+              "q": "Is my panel the problem?",
+              "a": "Call and tell us what you're seeing: a fuse box, a full panel, breakers that trip. We'll look at it and tell you what we find."
             },
             {
-              "q": "Do I need a new panel for an EV charger or a hot tub?",
-              "a": "Not always. It depends on what your panel and service can carry. We check, and tell you whether you need an upgrade or just a new circuit."
+              "q": "Do you install EV chargers and hot tub circuits?",
+              "a": "Yes, both are on our residential service list. Call and tell us what you want to run."
+            },
+            {
+              "q": "What will a panel upgrade cost?",
+              "a": "It depends on what we find, so we won't guess at a number here. Nathan R. asked for an estimate and was given multiple options to choose from. Call and tell us what you have."
             },
             {
               "q": "Will the power be off?",
-              "a": "Ask us before the day. Shaun M.'s panel and meter were changed out by end of day, and Kyle P.'s box in one afternoon."
+              "a": "Ask us when you book. Customers have written about panel changes finished in a day, and we can tell you what to expect for yours."
             },
             {
               "q": "Do you replace panels for businesses?",
@@ -676,10 +682,10 @@
       "sections": [
         {
           "type": "prose",
-          "heading": "Call (316) 613-4400",
+          "heading": "Tell Us What's Going On and Where You Are",
           "body": [
             "(316) 613-4400",
-            "The fastest way to reach us is to call. Tell us what's going on and where you are, and one of our electricians will take it from there."
+            "We'll ask where you are and what's happening, then tell you when we can get someone there."
           ]
         },
         {
