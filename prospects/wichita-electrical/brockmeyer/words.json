@@ -28,7 +28,7 @@
     "Free Estimates",
     "408 S Ida, Wichita",
     "Weekdays 7:30 to 4:00",
-    "Homes and Businesses"
+    "Licensed Electricians"
   ],
   "services": [
     {
@@ -44,17 +44,7 @@
     {
       "name": "EV Charger Installation",
       "route": "/ev-charger-installation-wichita-ks/",
-      "blurb": "Ben W. had a car charger installed in his garage."
-    },
-    {
-      "name": "Panel Replacement",
-      "route": null,
-      "blurb": "An old electrical panel taken out and a new one put in."
-    },
-    {
-      "name": "Wiring Replacement and Circuit Grounding",
-      "route": null,
-      "blurb": "Old wiring replaced and circuits grounded."
+      "blurb": "Ben W. had a car charger installed in his garage. [[confirm: EV charger installation offered]]"
     },
     {
       "name": "Remodel and Addition Wiring",
@@ -67,24 +57,9 @@
       "blurb": "Dimmers, fixtures and lights installed and repaired, including a pool table light for Chris C."
     },
     {
-      "name": "Surge Protection and Ceiling Fans",
+      "name": "Also on the list",
       "route": null,
-      "blurb": "Surge protection and ceiling fan installation are on the residential list."
-    },
-    {
-      "name": "Electrical Trenching",
-      "route": null,
-      "blurb": "Kathy S. had electrical trenching done for power outside her house."
-    },
-    {
-      "name": "Pool, Hot Tub and Spa Electrical Repair",
-      "route": null,
-      "blurb": "Electrical repairs for pools, hot tubs and spas."
-    },
-    {
-      "name": "Code Violation Corrections",
-      "route": null,
-      "blurb": "The items on a code violation notice, corrected."
+      "blurb": "Wiring replacement and circuit grounding, panel replacement, surge protection, ceiling fans, pool and hot tub repairs, code violation corrections."
     },
     {
       "name": "Commercial Electrical",
@@ -103,7 +78,7 @@
         "description": "Brockmeyer Inc. is an electrician in Wichita, KS for homes and businesses. Call (316) 262-1440 or ask for a free estimate."
       },
       "hero": {
-        "eyebrow": "Wichita, KS · Homes and Businesses · Free Estimates",
+        "eyebrow": "Wichita, KS · Residential and Commercial",
         "h1": "Electrician in Wichita, KS — Brockmeyer Inc.",
         "sub": "Sending someone to your mom's house is hard when you can't be there. Two customers did it, Katherine A. and Olivia V. Call (316) 262-1440.",
         "primaryCta": {
@@ -151,11 +126,10 @@
           },
           "imageSide": "left",
           "body": [
-            "Katherine A. hired us for general repairs at her elderly mom's house. Olivia V. called us in an emergency for her mom.",
-            "If it's your mom's house, call us from work and tell us who's home and what's going on."
+            "Katherine A. hired us for general repairs at her elderly mom's house. Olivia V. called us in an emergency for her mom."
           ],
           "list": [
-            "Call from work and tell us who's home",
+            "Tell us what the outlet is doing",
             "Ask for a free estimate"
           ],
           "listStyle": "checks"
@@ -175,14 +149,14 @@
         },
         {
           "type": "services",
-          "heading": "Electrical Work We Do",
+          "heading": "From a Warm Outlet to a New Panel",
           "intro": "Repairs, upgrades and new wiring for homes and businesses across the greater Wichita area."
         },
         {
           "type": "prose",
-          "heading": "Outlets, Breakers and Lights That Act Up",
+          "heading": "A Warm Plate, a Tripping Breaker, a Flickering Light",
           "body": [
-            "A warm plate, a buzzing switch or a light that flickers is a loose or failing connection until someone proves otherwise. A loose connection heats up, and that's how a small problem becomes a fire risk."
+            "A buzzing switch or a light that flickers is a loose or failing connection until someone proves otherwise."
           ],
           "items": [
             {
@@ -210,18 +184,18 @@
         },
         {
           "type": "prose",
-          "heading": "Old Wiring, Pool Equipment and Code Notices",
+          "heading": "Old Wiring and a Notice From the Inspector",
           "body": [
-            "Our residential list includes wiring replacement and circuit grounding, and electrical repairs for pools, hot tubs and spas. Andrew P. had old wiring that needed an upgrade.",
+            "Andrew P. had old wiring that needed an upgrade and called the price “incredible.”",
             "If an inspector wrote something up, correcting code violations is part of the work."
           ]
         },
         {
           "type": "prose",
-          "heading": "Remodels, a Garage Charger, a Trench Across the Yard",
+          "heading": "A Remodel, a Garage Charger and a Trench",
           "body": [
-            "Remodels, additions and new circuits are on our residential list, along with panel replacements, surge protection and ceiling fans.",
-            "Ben W. had a car charger installed in his garage, and Kathy S. had electrical trenching done."
+            "Remodels, additions and new circuits are on our residential list.",
+            "Ben W. had a car charger installed in his garage, and Kathy S. wrote that they “did electrical trenching for me and did a great job.”"
           ],
           "link": {
             "label": "See EV charger installation in Wichita",
@@ -251,12 +225,28 @@
           "type": "prose",
           "heading": "Names Customers Remember",
           "body": [
-            "Customers name the people who came out. Laurie O. wrote about Shawn and Will, Douglas S. about Jeremy, and Shiro about Adam. Chris C. thanked Shawn and Adam."
+            "Customers name the people who came out. Laurie O. wrote about Shawn and Will, Douglas S. about Jeremy, and Shiro about Adam. Chris C. thanked Shawn and Adam.",
+            "The residential work is done by licensed journeymen electricians, and the commercial work by licensed electricians."
           ]
         },
         {
           "type": "prose",
-          "heading": "Weekdays 7:30 to 4:00 at 408 S Ida",
+          "heading": "The Word in Their Reviews Is Fair",
+          "body": [
+            "Josh B. wrote “very fair prices,” Collin V. said they “were fair on the price,” Andrew T. praised the “pricing,” and Thomas G. called the prices “very affordable.”"
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Back for a Second Job",
+          "body": [
+            "tony H. hired Brockmeyer a second time. Amfyoyo D. used the company twice, and Josephine S. wrote that “our electrical jobs are done by them.”",
+            "Those are the customers who came back, and they didn't have to."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "The Office Is at 408 S Ida",
           "body": [
             "Brockmeyer Inc. is at 408 S Ida in Wichita, and we serve homeowners across the greater Wichita area. Call and tell us where you are. [[confirm: Serving [towns] and nearby]]",
             "The office is open Monday to Friday, 7:30 AM to 4:00 PM. [[confirm: [XX] years serving Wichita]]"
@@ -273,11 +263,7 @@
           "items": [
             {
               "q": "Can you come today?",
-              "a": "Call (316) 262-1440 and tell us what's going on. The office is open Monday to Friday, 7:30 AM to 4:00 PM, and we'll tell you when we can get someone out. If anything is smoking, hot to the touch or smells like burning, call 911 first."
-            },
-            {
-              "q": "Is this actually dangerous, or are you selling me something?",
-              "a": "That's the right question. A warm outlet, a burning smell, scorch marks, or a breaker that trips again right after you reset it are all worth a call. If anything is smoking or hot to the touch, call 911 first."
+              "a": "Call (316) 262-1440 and tell us what's going on. If anything is smoking, hot to the touch or smells like burning, call 911 first."
             },
             {
               "q": "What will it cost?",
@@ -285,17 +271,17 @@
             },
             {
               "q": "Will it pass inspection?",
-              "a": "Call (316) 262-1440 and tell us what the inspector wrote up. Correcting code violations is part of the work we do."
+              "a": "Call (316) 262-1440 and tell us what the inspector wrote up."
             },
             {
-              "q": "Do you work on rentals and businesses?",
+              "q": "Do you work on businesses?",
               "a": "Yes. We do commercial work as well as residential, from lighting and panels to data cabling."
             }
           ]
         },
         {
           "type": "callBand",
-          "heading": "Call From Work. Tell Us Who's Home.",
+          "heading": "A Warm Plate at Mom's and You're Stuck at Work",
           "text": "Call (316) 262-1440 and tell us what's going on, or ask for a free estimate. Brockmeyer Inc., 408 S Ida, Wichita."
         }
       ]
@@ -312,7 +298,7 @@
       "hero": {
         "eyebrow": "Outlets and switches, Wichita",
         "h1": "Outlet Repair in Wichita, KS — Brockmeyer Inc.",
-        "sub": "An outlet that's warm, loose or dead is telling you something. Call us, get it looked at in person and hear what's wrong in plain words. Call (316) 262-1440.",
+        "sub": "An outlet that's warm, loose or dead is telling you something. Call (316) 262-1440 and tell us which room it's in.",
         "primaryCta": {
           "label": "Call (316) 262-1440",
           "action": "call"
@@ -343,13 +329,13 @@
           },
           "imageSide": "right",
           "body": [
-            "Tell us what the outlet is doing and which room it's in, and whether you've tried a reset or a different plug.",
+            "Tell us what the outlet is doing, and whether you've tried a reset or a different plug.",
             "A free estimate comes first."
           ]
         },
         {
           "type": "prose",
-          "heading": "What a Bad Outlet Is Telling You",
+          "heading": "Why a Warm Plate Is Worth a Call",
           "body": [
             "Outlets wear out. Plugs get pulled in and out for years, and the metal inside stops gripping. Most of what goes wrong is one of a short list of things."
           ],
@@ -408,8 +394,21 @@
           ]
         },
         {
+          "type": "review",
+          "quote": "Fantastic Electrical contractor!  Fast Quality service at very affordable prices.  The tech really did a great job explaining the work and what was going on.  Highly recommend them for doing work for your next project / repair!!",
+          "name": "Thomas G."
+        },
+        {
           "type": "prose",
-          "heading": "Outlets Near Water",
+          "heading": "Worn Outlets, Added Plugs, a Pool Table Light",
+          "body": [
+            "Laurie O.'s list was several worn-out outlets and a dimmer. tony H. added plugs on his second job with us. Chris C. wanted a pool table light.",
+            "Laurie O. heard from Shawn the same day she asked, and Will arrived earlier than she expected."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Kitchen and Bath Outlets That Keep Tripping",
           "body": [
             "Outlets in kitchens, bathrooms, garages and outdoors are usually GFCI protected. A GFCI cuts the power fast when current goes where it shouldn't.",
             "One that trips over and over, or won't reset, is either doing its job or has failed. Either way it's worth a look."
@@ -417,7 +416,7 @@
         },
         {
           "type": "prose",
-          "heading": "Outlets in Older Homes",
+          "heading": "Why an Old Bedroom Outlet Runs Warm",
           "body": [
             "Older houses were wired when a room needed a lamp and a radio. Now it's a TV, a game console, chargers and a space heater, all on circuits sized for less.",
             "A warm outlet in an older room is often carrying more than the circuit was built for."
@@ -425,10 +424,10 @@
         },
         {
           "type": "prose",
-          "heading": "Check the Breaker and GFCI First",
+          "heading": "Before You Call, Look at the Breaker Panel",
           "body": [
             "If you can do it safely, unplug what's on the outlet and look for a tripped breaker. Check the GFCI buttons on outlets in the kitchen, bath, garage or outside, and press reset.",
-            "If the outlet is warm, scorched or smells like burning, stop using it. If you see smoke or flames, leave the house and call 911."
+            "If the outlet is scorched or smells like burning, stop using it."
           ]
         },
         {
@@ -440,20 +439,16 @@
               "a": "No. Call (316) 262-1440 and describe what the outlet is doing, or ask for a free estimate."
             },
             {
-              "q": "Is a warm outlet an emergency?",
-              "a": "Treat it as urgent. A warm outlet means a loose or failing connection. Stop using it, and call us. If there's smoke, a burning smell or scorch marks, get out and call 911."
-            },
-            {
               "q": "Do you replace switches and dimmers too?",
               "a": "Yes. Switch, outlet and fixture repairs are part of the work, and a worn dimmer is a common one."
             },
             {
               "q": "What if only one outlet in the room is dead?",
-              "a": "Check the breaker and any GFCI first. One dead outlet in a room that otherwise works often has a loose wire behind it. Call, and we'll look."
+              "a": "Check the breaker and any GFCI first. One dead outlet in a room that otherwise works often has a loose wire behind it. Call and tell us which room."
             },
             {
-              "q": "Do you work on rentals and businesses?",
-              "a": "Yes. We do commercial work as well as residential."
+              "q": "Can you add outlets to a room?",
+              "a": "tony H. had plugs added. Tell us the room and how many outlets it's short."
             }
           ]
         },
@@ -476,7 +471,7 @@
       "hero": {
         "eyebrow": "Home car chargers, Wichita",
         "h1": "EV Charger Installation in Wichita, KS — Brockmeyer Inc.",
-        "sub": "Ben W. had a car charger installed in his garage. Call (316) 262-1440 and tell us about your car, your garage and your panel.",
+        "sub": "Ben W. had a car charger installed in his garage. [[confirm: EV charger installation offered]] Call (316) 262-1440 and tell us about your car, your garage and your panel.",
         "primaryCta": {
           "label": "Call (316) 262-1440",
           "action": "call"
@@ -499,7 +494,7 @@
         },
         {
           "type": "split",
-          "heading": "Tell Us the Car, the Charger and Where It Parks",
+          "heading": "A Charger You Already Bought, a Car You Haven't",
           "image": {
             "slot": "panel-upgrade",
             "alt": "Electrical panel with breakers and labeled circuits",
@@ -507,7 +502,7 @@
           },
           "imageSide": "right",
           "body": [
-            "Tell us the car, the charger you have or want, and where it parks.",
+            "Tell us the charger you have or want, the car, and where it parks.",
             "A free estimate comes first."
           ]
         },
@@ -536,7 +531,7 @@
             },
             {
               "title": "The right size for the car",
-              "text": "Your car can only accept so much power. A bigger charger doesn't charge it faster than the car allows, so check the manual before you buy."
+              "text": "Your car can only accept so much power. A bigger charger doesn't charge it faster than the car allows."
             }
           ]
         },
@@ -556,7 +551,7 @@
           "imageSide": "left",
           "body": [
             "A garage across the yard means the wire has to cross the yard. Underground, that means a trench for the conduit.",
-            "Kathy S. hired Brockmeyer for electrical trenching, so ask about the run to the garage when you call."
+            "Kathy S. hired Brockmeyer for electrical trenching."
           ]
         },
         {
@@ -569,14 +564,15 @@
         },
         {
           "type": "prose",
-          "heading": "Outdoors or in the Garage",
+          "heading": "On the Garage Wall or the Outside Wall?",
           "body": [
-            "A charger can go inside the garage or on an outside wall. One mounted outside has to be made for weather, and the wiring to it has to be protected too."
+            "A charger can go inside the garage or on an outside wall. One mounted outside has to be made for weather, and the wiring to it has to be protected too.",
+            "Tell us which wall you have in mind."
           ]
         },
         {
           "type": "prose",
-          "heading": "Panel, Grounding and Surge Protection",
+          "heading": "A Charger Is a Good Time to Ask About the Panel",
           "body": [
             "Panel replacements, wiring replacement and circuit grounding, and surge protection are all on Brockmeyer's residential list. A charger is a good time to ask about them.",
             "Code violation corrections are on the list too, if an inspector has already written something up."
@@ -591,10 +587,9 @@
         },
         {
           "type": "prose",
-          "heading": "Before You Buy a Charger",
+          "heading": "Look Up Two Things Before You Buy",
           "body": [
-            "Check your car's manual for the most power it accepts at home. Note where the car parks and how close that is to the panel.",
-            "Tell us the charger you're looking at when you call. The office is open Monday to Friday, 7:30 AM to 4:00 PM."
+            "Check your car's manual for the most power it accepts at home. Note how far the car parks from the panel."
           ]
         },
         {
@@ -610,8 +605,12 @@
               "a": "It depends on the panel and what else it's running. Panel replacement is on our residential list."
             },
             {
+              "q": "What will a charger install cost?",
+              "a": "It depends on the car, the charger, the panel and the run to the garage, so we don't post a number. Ask for a free estimate."
+            },
+            {
               "q": "Do I need a permit?",
-              "a": "Depending on the job, a permit and an inspection may be part of a charger install. Ask when you call, and we'll tell you what yours involves."
+              "a": "Depending on the job, a permit and an inspection may be part of a charger install. Tell us the address and we'll say what yours involves."
             },
             {
               "q": "Can you install the charger I already bought?",
@@ -623,11 +622,11 @@
             },
             {
               "q": "What if my garage is detached?",
-              "a": "The wire has to cross the yard, usually through a trench. Kathy S. had electrical trenching done by Brockmeyer, so ask about it on the call."
+              "a": "Kathy S. had electrical trenching done by Brockmeyer. Tell us how far the garage sits from the house."
             },
             {
               "q": "Are you open on weekends?",
-              "a": "The office is closed Saturday and Sunday. Call Monday to Friday, 7:30 AM to 4:00 PM."
+              "a": "The office is closed on weekends, so call on a weekday."
             }
           ]
         },
@@ -683,7 +682,7 @@
         },
         {
           "type": "split",
-          "heading": "Tell Us What's Going On, and Who Will Be There",
+          "heading": "A Warm Plate, a Dead Outlet, a Tripped Breaker",
           "image": {
             "slot": "inspection",
             "alt": "Homeowner pointing out a wall outlet to an electrician",
@@ -699,17 +698,12 @@
         },
         {
           "type": "prose",
-          "heading": "Weekdays 7:30 to 4:00 at 408 S Ida",
+          "heading": "Office Hours and the Address on S Ida",
           "body": [
             "**Hours.** Monday to Friday, 7:30 AM to 4:00 PM. The office is closed Saturday and Sunday.",
             "**Address.** Brockmeyer Inc., 408 S Ida, Wichita, KS 67211. We serve homeowners across the greater Wichita area.",
             "If you see smoke or flames, leave the building and call 911 before anything else."
           ]
-        },
-        {
-          "type": "callBand",
-          "heading": "Tell Us What's Going On and Where",
-          "text": "Call (316) 262-1440 and tell us who will be there."
         }
       ]
     }
@@ -772,8 +766,7 @@
           "Nobody searching for a charger install can find that you do it."
         ],
         "fixes": [
-          "A page for EV charger installation in Wichita, KS, covering what the install needs.",
-          "Trenching to a detached garage answered on the same page."
+          "A page for EV charger installation in Wichita, KS, covering what the install needs."
         ]
       },
       {
@@ -830,12 +823,12 @@
         "Your site says “Since 2005,” while a Wichita State alumni list says the company was founded in 1988, so which year should every listing use?",
         "Your site and Google list (316) 262-1440, while two BBB listings show 316-771-0064 and 316-308-4488, so which number should every listing use, and are the others still yours?",
         "Your site and Google list 408 S Ida, while another listing shows 225 S Ida St #102, so which address should every listing use?",
-        "Your demo has an EV charger page and an electrical trenching service, and each rests on one review, so do you offer both?"
+        "Your demo has an EV charger page that rests on one review, and Kathy S. mentions electrical trenching in another, so do you offer both?"
       ]
     },
     "lead": {
       "heading": "Why we led with the electrician you can send to your mom's house",
-      "text": "We led with the mom's-house call because it's built on things Google can't find anywhere else: your own customers' words about their mothers' homes. Katherine A. and Olivia V. wrote them, and nobody else on the web has those reviews. Add Wichita specifics like 408 S Ida and your weekday hours, and Google has a reason to show you for a search a generic electrician page can't answer.",
+      "text": "We led with the mom's-house call because Katherine A. and Olivia V. wrote about their mothers' homes, and nobody else on the web has those reviews. Add 408 S Ida and your weekday hours, and Google has a reason to show you for a search a generic electrician page can't answer.",
       "showScores": false,
       "rows": [
         {

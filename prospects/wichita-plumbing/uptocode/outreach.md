@@ -8,7 +8,7 @@ https://uptocode.websitepreview.fluidframemarketing.com/
 
 Note: It'll look a lot better with your logo and images on it! Lol
 
-The preview opens with George's review, then breaks down why each page is built the way it is. One thing we'd fix: on a phone your current site is laid out more than twice as wide as the screen, so people have to scroll sideways to read it.
+The preview opens with George's photo quote in the first screen, then breaks down why each page is built the way it is. One thing we'd fix: on a phone your current site is laid out more than twice as wide as the screen, so people have to scroll sideways to read it.
 
 We built your sewer line repair and plumbing fixture installation pages as examples, and we'd love to build the rest. Which brands or manufacturers are you certified with?
 

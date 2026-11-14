@@ -31,17 +31,17 @@
     }
   },
   "trustBar": [
-    "Text Us a Photo",
+    "Text Line (316) 333-5434",
     "Free VIP Membership",
     "Homes and Businesses",
-    "One-Year Guarantee on Plumbing Work",
+    "One-Year Guarantee on Residential Plumbing Work",
     "BBB Accredited"
   ],
   "services": [
     {
       "name": "Drain Cleaning",
       "route": null,
-      "blurb": "Kitchen, bathroom and floor drains cleared, with a six-month guarantee on residential drain cleaning."
+      "blurb": "Drain cleaning and unclogging, with a six-month guarantee on residential drain cleaning."
     },
     {
       "name": "Sewer Line Repair",
@@ -82,10 +82,10 @@
       "keyword": "plumber wichita ks",
       "seo": {
         "title": "Plumber in Wichita, KS | Up To Code Plumbing",
-        "description": "Wichita plumber for drains, leaks, sewer lines, water heaters, fixtures and gas lines. Text us a photo of the problem."
+        "description": "Wichita plumber for drains, leaks, sewer lines, water heaters, fixtures and gas lines. Text or call Up To Code Plumbing."
       },
       "hero": {
-        "eyebrow": "Wichita, KS · Homes and Businesses · Weekend Visits",
+        "eyebrow": "Wichita, KS · Saturday and Sunday Visits",
         "h1": "Plumber in Wichita, KS — Up To Code Plumbing",
         "sub": "I'm Ken. One customer texted a photo and got a fair quote right away. Text yours to (316) 333-5434, or call (316) 400-7586, and tell us what's happening.",
         "primaryCta": {
@@ -128,7 +128,7 @@
           "type": "split",
           "heading": "Start With a Photo",
           "body": [
-            "George A. texted Ken a photo of a faulty irrigation valve. He had a fair quote right away. Text yours to (316) 333-5434.",
+            "George A. texted Ken a photo of a faulty irrigation valve. He had a fair quote right away. Ken's text line is (316) 333-5434.",
             "Ken Carrick has been plumbing since 2013. [[confirm: Licensed plumber, license #[XXXX]]]"
           ],
           "list": [
@@ -159,19 +159,19 @@
         },
         {
           "type": "services",
-          "heading": "Plumbing Services in Wichita",
-          "intro": "Drains, leaks, sewer lines, water heaters, fixtures and gas lines, for homes, rentals and businesses."
+          "heading": "Drains, Leaks, Sewers, Water Heaters and Gas Lines",
+          "intro": "Drains, leaks, sewer lines, water heaters, fixtures and gas lines, for homes and businesses. Sewer line repair and fixture installation have pages of their own."
         },
         {
           "type": "prose",
-          "heading": "What We Get Called For",
+          "heading": "Saturday Clogs, Sunday Sewers, a Basement Leak",
           "body": [
-            "Here is what customers have called Ken about."
+            "Here is what customers have called Ken about. [[confirm: Open [days and hours]]]"
           ],
           "items": [
             {
               "title": "A drain that won't clear",
-              "text": "Kenny S. had a clog cleared on a Saturday. Jim M. had a sewer line and drain cleared on a Sunday."
+              "text": "Jim M. had a sewer line and drain cleared on a Sunday. We do drain cleaning and unclogging for homes and businesses."
             },
             {
               "title": "A leak you can't find",
@@ -190,17 +190,9 @@
               "text": "Andy B. needed gas line work done. We install and repair gas lines for homes and for businesses."
             },
             {
-              "title": "A sewer line",
-              "text": "One customer had a broken sump pump drain pipe under a driveway and a sidewalk. Ken found a secondary route and the concrete stayed."
+              "title": "A new house with old drains",
+              "text": "Jacob G. had all the drain plumbing replaced in a house he had just bought."
             }
-          ]
-        },
-        {
-          "type": "prose",
-          "heading": "Saturday and Sunday Calls",
-          "body": [
-            "Kenny S. had Ken out within an hour on a Saturday. Jim M. had a Sunday visit for a clogged sewer line. Greg W. and Shandi D. wrote about Saturdays too. [[confirm: Open [days and hours]]]",
-            "Start your message with what's happening and where your shutoff is. If the water is still running, shut it off first and then call."
           ]
         },
         {
@@ -218,11 +210,16 @@
         },
         {
           "type": "prose",
-          "heading": "Homes, Rentals and Businesses",
+          "heading": "An Emergency Clog in a Commercial Building",
           "body": [
-            "Leah N. called Ken “Perfect for rentals.” Brandon P. had an emergency drain clog in his commercial building.",
-            "We do residential and commercial plumbing, from kitchen drains to public restrooms and backflow testing. Commercial work carries its own guarantee terms, so ask when you call."
+            "Brandon P. had an emergency drain clog in his commercial building. James M. had Up To Code do the plumbing on a client's remodel.",
+            "We do residential and commercial plumbing, from kitchen drains to public restrooms and backflow testing. Commercial work carries its own guarantee terms, ask about them when you call."
           ]
+        },
+        {
+          "type": "review",
+          "quote": "We used Up to Code Plumbing for a remodel for a client of ours. They went out of their way to accommodate our timeline and completed the job on-time, on-budget, and provided high quality, clean, professional service! We will absolutely use them again.",
+          "name": "James M."
         },
         {
           "type": "review",
@@ -231,14 +228,14 @@
         },
         {
           "type": "prose",
-          "heading": "Where We Work",
+          "heading": "Wichita, Derby, Haysville, Augusta and El Dorado",
           "body": [
-            "We work in Wichita and the towns around it, including Derby, Haysville, Augusta and El Dorado. Call or text and tell us where you are. [[confirm: [XX] years serving Wichita]]"
+            "We work in Wichita and the towns around it, including Derby, Haysville, Augusta and El Dorado. Text (316) 333-5434 your street and nearest town. [[confirm: [XX] years serving Wichita]]"
           ]
         },
         {
           "type": "prose",
-          "heading": "Paying and Saving",
+          "heading": "Card, Cash, Venmo, 10% Off and a Free VIP Membership",
           "body": [
             "You can pay by card, cash, check, Apple Pay, Google Pay, Venmo, Cash App or PayPal. We also offer financing, so ask about it when you call.",
             "Seniors, military personnel and first responders get 10% off, up to $200 a job. Our VIP membership is free, and after ten uses it brings a permanent 5% discount on later visits."
@@ -246,7 +243,7 @@
         },
         {
           "type": "faq",
-          "heading": "Questions Before You Call",
+          "heading": "Can You Come Today? What Will It Cost? What If It Leaks Again?",
           "items": [
             {
               "q": "Can you come today?",
@@ -272,8 +269,8 @@
         },
         {
           "type": "callBand",
-          "heading": "Text a Photo or Call Ken",
-          "text": "Text a photo to (316) 333-5434 or call (316) 400-7586. Tell us what it's doing and where the shutoff is."
+          "heading": "Water Off, Phone in Hand? Text Ken",
+          "text": "Text a photo to (316) 333-5434 or call (316) 400-7586. Say what it's doing and where the shutoff is."
         }
       ]
     },
@@ -289,7 +286,7 @@
       "hero": {
         "eyebrow": "Sewer lines, Wichita",
         "h1": "Sewer Line Repair in Wichita, KS — Up To Code Plumbing",
-        "sub": "Gurgling drains or water backing up in the basement can mean a clog or a broken line. Text a photo to (316) 333-5434 or call (316) 400-7586. Camera inspections are part of our sewer service.",
+        "sub": "Gurgling drains or water backing up in the basement can mean a clog or a broken line. Text a photo to (316) 333-5434, or call (316) 400-7586. Camera inspections are part of our sewer service.",
         "primaryCta": {
           "label": "Call (316) 400-7586",
           "action": "call"
@@ -314,8 +311,8 @@
           "type": "split",
           "heading": "A Sunday Clog, a New House, a Buried Pipe",
           "body": [
-            "Tell us which drains are acting up and what they're doing. Text a photo to (316) 333-5434 if you can, or call (316) 400-7586.",
-            "Jacob G. had all the drain plumbing replaced in a house he had just bought. One customer had a broken sump pump drain pipe buried under a driveway and a sidewalk, and Ken found a secondary route."
+            "Tell us which drains are acting up and what they're doing. Ken's text line is (316) 333-5434, and the phone is (316) 400-7586.",
+            "One customer called about a drain pipe under concrete, and another had a house full of drains to replace. Both stories are below."
           ],
           "image": {
             "slot": "drain",
@@ -331,51 +328,26 @@
         },
         {
           "type": "prose",
-          "heading": "Camera Inspections Are Part of the Sewer Service",
+          "heading": "A House Bought, Every Drain Replaced",
           "body": [
-            "Our services list names sewer repair and camera inspections together. A camera shows what is inside the line, so a repair can be based on what is actually there.",
-            "Drain cleaning is its own service, with a six-month guarantee on residential work."
+            "Jacob G. had just bought his house when he had Ken replace all of the drain plumbing in it. He wrote that Ken was very cordial and communicated very well.",
+            "He added that he couldn't talk this guy up more."
           ]
         },
         {
           "type": "prose",
-          "heading": "More Than a Clog: A Pipe Under a Driveway",
+          "heading": "Sewer Repair and Camera Inspections Sit Together",
+          "body": [
+            "Up To Code's own services list names sewer repair and camera inspections as one service, and drain cleaning as another. Residential drain cleaning carries a six-month guarantee.",
+            "If water is backing up at more than one drain, say so when you call. If it is one sink, say that instead."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "A Pipe Under a Driveway and a Sidewalk",
           "body": [
             "One customer had a broken sump pump drain pipe buried under a driveway and a sidewalk, with roots in the way. Ken explained that digging up all the concrete would only be a band-aid fix.",
             "He found a secondary route that took care of the break and the roots. The customer wrote that he “did not charge exorbitant prices.”"
-          ]
-        },
-        {
-          "type": "prose",
-          "heading": "While You Wait for Us",
-          "body": [
-            "A few things help if the line is backing up. None of them replace a plumber, and all of them keep a bad day from getting worse."
-          ],
-          "items": [
-            {
-              "title": "Stop running water",
-              "text": "Skip the dishwasher, the washer and long showers until we've looked at it."
-            },
-            {
-              "title": "Don't keep flushing",
-              "text": "If the toilets are slow or bubbling, flushing again can push more water into the lowest drain."
-            },
-            {
-              "title": "Note which drains are affected",
-              "text": "It tells us whether the trouble is at one fixture or in the main line."
-            },
-            {
-              "title": "Send a photo",
-              "text": "A floor drain, a wet spot or whatever you're seeing. Text it to (316) 333-5434 with a line about what's happening."
-            }
-          ]
-        },
-        {
-          "type": "prose",
-          "heading": "Houses, Rentals and Buildings",
-          "body": [
-            "Brandon P. had an emergency drain clog in his commercial building. Leah N. called Ken “Perfect for rentals.”",
-            "Our services list covers commercial drain cleaning and backflow testing as well as residential sewer work."
           ]
         },
         {
@@ -385,26 +357,34 @@
         },
         {
           "type": "prose",
-          "heading": "Who Answers the Phone",
+          "heading": "A Clog Cleared on a Saturday",
           "body": [
-            "Ken Carrick owns Up To Code Plumbing and has been plumbing since 2013.",
-            "Marla W. wrote that when she called, she could always talk to Ken, and he was the one who did the service."
+            "Kenny S. wrote that Ken came out within an hour on a Saturday and cleared his clog. He was happy with what he paid.",
+            "Jim M. had the same kind of call on a Sunday, for a clogged sewer line and drain. He called his price very fair, and wrote that they'll be calling again."
           ]
         },
         {
           "type": "prose",
-          "heading": "Discounts and Payment",
+          "heading": "A Kitchen Drain That Keeps Building Up Oil",
           "body": [
-            "Seniors, military personnel and first responders get 10% off, up to $200 a job. Our VIP membership is free, and after ten uses it brings a permanent 5% discount on later visits.",
-            "Pay by card, cash, check, Apple Pay, Google Pay, Venmo, Cash App or PayPal. We also offer financing, so ask about it when you call."
+            "Kathy wrote that Ken fit them in on a busy day, and that he also gave helpful information on keeping a kitchen drain from building up oil.",
+            "Drain cleaning and unclogging is the first service on Up To Code's residential list, with a six-month guarantee on residential drain cleaning."
           ]
         },
         {
           "type": "prose",
-          "heading": "Where We Drive",
+          "heading": "Onsite in 30 Minutes, and Straight to the Root of It",
           "body": [
-            "We work in Wichita and the towns around it, including Derby, Haysville, Augusta and El Dorado. Call or text and tell us where you are.",
-            "Our Augusta page says we drive out from the Wichita area to work there."
+            "Jeremy T. wrote that a plumber was onsite within 30 minutes, and that the job was completed quickly and thoroughly. He plans to use Up To Code for all of his business needs.",
+            "Tori D. wrote that Ken showed up on time, was super friendly and got to the root of the problem."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "A Clogged Drain in a Commercial Building",
+          "body": [
+            "Brandon P. wrote about an emergency drain clog in his commercial building. He said Up To Code handled it quickly and communicated the problem and solution well.",
+            "The commercial list on Up To Code's site names drain cleaning and backflow testing, and commercial drain cleaning carries a thirty-day guarantee."
           ]
         },
         {
@@ -414,11 +394,11 @@
         },
         {
           "type": "faq",
-          "heading": "Questions Before You Call",
+          "heading": "Is It a Clog or a Broken Line? Do You Have a Camera?",
           "items": [
             {
-              "q": "Can I text you a photo of the problem?",
-              "a": "Yes. Text it to (316) 333-5434 and add a line about what's happening. Or call (316) 400-7586 and tell us."
+              "q": "How do I send Ken a photo of the drain?",
+              "a": "Ken's text line is (316) 333-5434. Add a line about which drains are acting up. George A. texted him a photo of a faulty irrigation valve and had a quote right away."
             },
             {
               "q": "Do you do camera inspections?",
@@ -430,7 +410,7 @@
             },
             {
               "q": "Can you come on a weekend?",
-              "a": "Jim M. had a visit on a Sunday for a clogged sewer line. Call or text and tell us what's happening."
+              "a": "Jim M. had a visit on a Sunday for a clogged sewer line. Call (316) 400-7586 and tell us what's happening."
             },
             {
               "q": "What will a sewer repair cost?",
@@ -444,8 +424,8 @@
         },
         {
           "type": "callBand",
-          "heading": "Text a Photo or Call Ken",
-          "text": "If a drain is backing up, call (316) 400-7586 or text a photo to (316) 333-5434. Tell us which drains and what they're doing."
+          "heading": "Backing Up Right Now? Text a Photo of the Drain",
+          "text": "Call (316) 400-7586 or text a photo to (316) 333-5434. Tell us which drains and what they're doing."
         }
       ]
     },
@@ -484,10 +464,10 @@
         },
         {
           "type": "split",
-          "heading": "Faucet, Toilet, Shower or Sink: Send a Photo",
+          "heading": "A Dripping Faucet, a Cracked Toilet, a Showerhead With No Pressure",
           "body": [
-            "Tell us which fixture it is and what's wrong. A drip, a crack, a toilet that won't stop running, a showerhead with no pressure. Text a photo to (316) 333-5434 or call (316) 400-7586.",
-            "A photo of the old faucet, with the brand if you can see it, helps."
+            "Tell us which fixture it is and what's wrong. Ken's text line is (316) 333-5434.",
+            "A photo of the old faucet, with the brand if you can see it, helps. For a phone call, use (316) 400-7586."
           ],
           "image": {
             "slot": "contact-hero",
@@ -498,9 +478,9 @@
         },
         {
           "type": "prose",
-          "heading": "What We Install and Replace",
+          "heading": "Two Toilets, Two Outdoor Faucets, One Shower Enclosure",
           "body": [
-            "Our site lists kitchen and bathroom fixtures, and names faucets, toilets, showers and sinks."
+            "Up To Code's site lists kitchen and bathroom fixtures, and names faucets, toilets, showers and sinks."
           ],
           "items": [
             {
@@ -517,7 +497,7 @@
             },
             {
               "title": "Sinks",
-              "text": "Kitchen and bathroom sinks. Kathy wrote that Ken gave helpful information on keeping a kitchen drain from building up oil."
+              "text": "Kitchen and bathroom sinks are on the same list."
             }
           ]
         },
@@ -528,10 +508,20 @@
         },
         {
           "type": "prose",
+          "heading": "A Shower Enclosure, and Corroded Pipes Fixed Along With It",
+          "body": [
+            "Marla W. wrote that when she called, she could always talk to Ken, and he was the one who did the service.",
+            "Her review calls the job “an outstanding job for a much needed update!”"
+          ]
+        },
+        {
+          "type": "prose",
           "heading": "Shutoff Valves That Wouldn't Shut Off",
           "body": [
             "Three customers had a valve replaced. Dennis P. had a leaky washer shutoff valve replaced, Walker S. had a new basement shutoff put in, and Leah G. had a washer valve replaced.",
-            "Leah G. was fit in within 30 minutes."
+            "Walker S.'s basement water shutoff wasn't shutting off the water. He wrote that Up To Code added a new one incredibly quickly at a great rate.",
+            "Leah G. called for help replacing a washer valve and was fit in within 30 minutes. She wrote that the price was reasonable and the service fast.",
+            "Dennis P. had a leaky washer shutoff valve replaced. He wrote that Ken was there on time and replaced it in no time."
           ]
         },
         {
@@ -545,25 +535,25 @@
           "name": "Leah G."
         },
         {
+          "type": "prose",
+          "heading": "Two Toilets Fixed, With Attention to Detail",
+          "body": [
+            "S. B. wrote that scheduling was very easy online and that two toilets got fixed. S. B. called it great small business ownership, with attention to detail and customer service.",
+            "Toilets are one of the four fixtures named on the residential list, alongside faucets, showers and sinks."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Frozen Outdoor Faucets in a Crawlspace",
+          "body": [
+            "Tom O.'s two outdoor faucets had frozen during the winter, and they were in a crawlspace with limited access. The job took under two hours.",
+            "He wrote that the price was great and that Ken earned a new customer for his future plumbing needs."
+          ]
+        },
+        {
           "type": "review",
           "quote": "Ken replaced two outdoor faucets that had frozen during the winter. The access was limited and inside a crawlspace. He was friendly, professional and had the whole job knocked out in under two hours. The price was great and he earned a new customer for any of our future plumbing needs.",
           "name": "Tom O."
-        },
-        {
-          "type": "prose",
-          "heading": "Small Jobs, Done Fast",
-          "body": [
-            "Tom O.'s two outdoor faucets were in a crawlspace with limited access, and the job took under two hours.",
-            "Linda F. wrote that she was “very happy with the plumber that repaired my faucet.”"
-          ]
-        },
-        {
-          "type": "prose",
-          "heading": "Before You Call",
-          "body": [
-            "If you can do it safely, find the small shutoff valve under the fixture and turn it off. For a toilet, the valve is on the wall or floor behind it.",
-            "If water is spraying and you can't stop it, shut off the main water valve for the house, then call. A photo of the fixture and the shutoff is the fastest way to start."
-          ]
         },
         {
           "type": "review",
@@ -572,25 +562,10 @@
         },
         {
           "type": "prose",
-          "heading": "Who Answers the Phone",
+          "heading": "A Faucet Repaired, Not Replaced",
           "body": [
-            "Ken Carrick owns Up To Code Plumbing and has been plumbing since 2013.",
-            "Marla W. wrote that when she called, she could always talk to Ken, and he was the one who did the service."
-          ]
-        },
-        {
-          "type": "prose",
-          "heading": "Discounts and Payment",
-          "body": [
-            "Seniors, military personnel and first responders get 10% off, up to $200 a job. Our VIP membership is free, and after ten uses it brings a permanent 5% discount on later visits.",
-            "Pay by card, cash, check, Apple Pay, Google Pay, Venmo, Cash App or PayPal. We also offer financing, so ask about it when you call."
-          ]
-        },
-        {
-          "type": "prose",
-          "heading": "Where We Drive",
-          "body": [
-            "We work in Wichita and the towns around it, including Derby, Haysville, Augusta and El Dorado. Call or text and tell us where you are."
+            "Linda F. wrote that she was “very happy with the plumber that repaired my faucet.”",
+            "If yours drips, tell us what the faucet is doing when you call, and whether the brand is on it."
           ]
         },
         {
@@ -610,39 +585,27 @@
         },
         {
           "type": "prose",
-          "heading": "A Year on the Work",
+          "heading": "Restrooms in a Commercial Building",
           "body": [
-            "Our residential plumbing work comes with a one-year guarantee. Commercial plumbing work carries a ninety-day guarantee, so ask when you call.",
-            "If a fixture we installed starts leaking, call (316) 400-7586 and say which one."
-          ]
-        },
-        {
-          "type": "prose",
-          "heading": "Rentals, Restrooms and Offices",
-          "body": [
-            "Our commercial list includes public restroom plumbing, water heaters and leak detection. Leah N. called Ken “Perfect for rentals.”",
+            "Up To Code's commercial list includes public restroom plumbing, water heaters and leak detection.",
             "Tell us what kind of building it is when you call."
           ]
         },
         {
-          "type": "prose",
-          "heading": "More Than One Thing Dripping?",
-          "body": [
-            "Our services list also names water heaters, gas lines, leak detection and drain cleaning, so a fixture visit can sit next to a bigger job.",
-            "Mention the other jobs when you text the photo."
-          ]
-        },
-        {
           "type": "faq",
-          "heading": "Questions Before You Call",
+          "heading": "Repair or Replace? New Fixture Leaking?",
           "items": [
             {
-              "q": "Can I text you a photo of the fixture?",
-              "a": "Yes. Text it to (316) 333-5434 with a line about what's wrong, or call (316) 400-7586."
+              "q": "How do I send a photo of the fixture?",
+              "a": "Ken's text line is (316) 333-5434. Say what's wrong with the fixture in the same message."
             },
             {
-              "q": "Do you install fixtures I bought myself?",
-              "a": "Ask when you call. Tell us what it is and where it's going."
+              "q": "What will a fixture job cost?",
+              "a": "We don't have a price to give you here, because it depends on the fixture and the job. Tom O. wrote that the price was great, Leah G. called hers reasonable, and Walker S. wrote that he got a great rate."
+            },
+            {
+              "q": "How fast does a fixture job go?",
+              "a": "Tom O.'s two outdoor faucets, in a crawlspace with limited access, took under two hours. Walker S. wrote that a new shutoff went in incredibly quickly. Tell us what you have when you call."
             },
             {
               "q": "Can you repair a faucet instead of replacing it?",
@@ -654,14 +617,14 @@
             },
             {
               "q": "What if the new fixture leaks?",
-              "a": "Call us. Our residential plumbing work comes with a one-year guarantee."
+              "a": "Call (316) 400-7586 and say which fixture. Residential plumbing work comes with a one-year guarantee, and commercial plumbing work with ninety days."
             }
           ]
         },
         {
           "type": "callBand",
-          "heading": "Text a Photo or Call Ken",
-          "text": "If a faucet, toilet or shower needs help, call (316) 400-7586 or text a photo to (316) 333-5434."
+          "heading": "Faucet, Toilet or Shower Giving You Trouble?",
+          "text": "Call (316) 400-7586, or text a photo of the fixture to (316) 333-5434."
         }
       ]
     },
@@ -695,7 +658,7 @@
       "sections": [
         {
           "type": "prose",
-          "heading": "Call Ken or Text a Photo",
+          "heading": "Call Ken, or Text a Photo of What You're Looking At",
           "body": [
             "Call (316) 400-7586 to talk to us. To send a photo or a quick message, text (316) 333-5434.",
             "Tell us what the problem is doing and where it is."
@@ -703,10 +666,10 @@
         },
         {
           "type": "prose",
-          "heading": "Not a Good Time to Talk?",
+          "heading": "Not a Good Time to Talk? Email Instead",
           "body": [
             "Email contactus@utcwichita.com with your name, a phone number and the address of the house or building. A photo helps.",
-            "You can pay by card, cash, check, Apple Pay, Google Pay, Venmo, Cash App or PayPal."
+            "A photo of the problem helps, whether you send it by text or by email."
           ]
         },
         {
@@ -716,7 +679,7 @@
             "What it's doing: dripping, backing up, no hot water, a smell, a wet spot.",
             "Where it is, and where the shutoff valve is.",
             "A photo, if you can take one safely.",
-            "Whether it's a home, a rental or a business."
+            "Whether it's a home or a business."
           ],
           "image": {
             "slot": "leak",
@@ -727,16 +690,16 @@
         },
         {
           "type": "prose",
-          "heading": "Saturdays, Sundays and Where We Drive",
+          "heading": "Weekend Calls, and the Towns Around Wichita",
           "body": [
-            "**Hours.** Kenny S. had Ken out within an hour on a Saturday, and Jim M. had a Sunday visit. Call or text to ask about a visit.",
-            "**Area.** We work in Wichita and the towns around it, including Derby, Haysville, Augusta and El Dorado."
+            "Kenny S. had Ken out within an hour on a Saturday, and Jim M. had a Sunday visit. Call or text to ask about a visit.",
+            "Derby, Haysville, Augusta and El Dorado are all in the area. Text your street and nearest town."
           ]
         },
         {
           "type": "callBand",
-          "heading": "Text a Photo or Call Ken",
-          "text": "Call (316) 400-7586 or text (316) 333-5434, or email contactus@utcwichita.com."
+          "heading": "Water on the Floor? Call or Text Now",
+          "text": "Call (316) 400-7586, text (316) 333-5434 or email contactus@utcwichita.com."
         }
       ]
     }
@@ -744,7 +707,7 @@
   "footer": {
     "about": "Up To Code Plumbing is a Wichita plumbing company run by Ken Carrick. It handles drains, leaks, sewer lines, water heaters, fixtures and gas lines for homes and businesses.",
     "why": [
-      "Text us a photo",
+      "Text line (316) 333-5434",
       "Ken Carrick, plumbing since 2013",
       "Guarantee on our plumbing work",
       "Free VIP membership"
