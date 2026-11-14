@@ -30,6 +30,11 @@ for (const page of w.pages) {
 }
 for (const [h, routes] of headings) if (routes.length > 1) issues.push(`heading used ${routes.length}x (${routes.join(", ")}): "${h}"`);
 for (const [s, routes] of sentences) if (routes.length > 1) issues.push(`sentence used ${routes.length}x (${[...new Set(routes)].join(", ")}): "${s.slice(0, 90)}"`);
+// A customer story told more than twice (quote caption + one retelling) reads as padding.
+const nameHits = new Map();
+const allText = JSON.stringify(w.pages);
+for (const m of allText.matchAll(/\b([A-Z][a-z]+ [A-Z]\.)/g)) nameHits.set(m[1], (nameHits.get(m[1]) ?? 0) + 1);
+for (const [n, c] of nameHits) if (c > 2) issues.push(`reviewer "${n}" appears ${c}x across pages (tell each story once)`);
 const trust = JSON.stringify(w.trustBar ?? "").toLowerCase();
 for (const page of w.pages) {
   const eb = (page.hero?.eyebrow ?? "").toLowerCase();
