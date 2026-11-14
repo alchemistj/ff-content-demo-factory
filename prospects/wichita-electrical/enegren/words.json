@@ -43,7 +43,7 @@
     "Family-Owned",
     "Homes and Businesses",
     "Name and Photo Sent Ahead",
-    "Options Before the Work",
+    "Serving 15 Towns Around Wichita",
     "Online Booking"
   ],
   "services": [
@@ -65,12 +65,7 @@
     {
       "name": "Whole House Surge Protection",
       "route": null,
-      "blurb": "Surge protection for the whole house, and calls after a lightning strike."
-    },
-    {
-      "name": "EV Chargers and Hot Tubs",
-      "route": null,
-      "blurb": "Electric vehicle charger installation and hot tub wiring, both on our residential list."
+      "blurb": "A whole house surge protector, and the call you make after lightning hits the house."
     },
     {
       "name": "Outlets and Switches",
@@ -78,19 +73,14 @@
       "blurb": "Work on outlets, and new switches explained before we leave."
     },
     {
-      "name": "Generators, Alarms and Appliance Circuits",
+      "name": "Generators, EV Chargers and Appliance Circuits",
       "route": null,
-      "blurb": "Backup generator installation and repair, smoke detector and carbon monoxide alarm installation, and circuits for new appliances, air conditioners and furnaces."
+      "blurb": "Backup generators, EV chargers, hot tub wiring, smoke detector and carbon monoxide alarms, and circuits for new appliances, air conditioners and furnaces."
     },
     {
       "name": "Commercial Electrical",
       "route": null,
-      "blurb": "New construction, troubleshooting, maintenance and inspections for businesses and churches."
-    },
-    {
-      "name": "Commercial Lighting",
-      "route": null,
-      "blurb": "LED upgrades, parking lot, security and exterior lighting for businesses."
+      "blurb": "New construction, troubleshooting, maintenance, inspections and LED, parking lot and security lighting for businesses and churches."
     }
   ],
   "pages": [
@@ -106,7 +96,7 @@
       "hero": {
         "eyebrow": "West Wichita and 15 towns around it",
         "h1": "Electrician in Wichita, KS — Enegren Electric",
-        "sub": "Repairs, panels, lighting, surge protection, EV chargers and hot tub wiring for Wichita homes, and electrical work for businesses. Call (316) 613-4400.",
+        "sub": "A tripped breaker, a lightning strike, a room that went dark. Marcus, Trevor and Tyler find the cause, explain it, give you options and let you choose. Call (316) 613-4400.",
         "primaryCta": {
           "label": "Call (316) 613-4400",
           "action": "call"
@@ -134,7 +124,7 @@
           "imageSide": "right",
           "body": [
             "Maricar H. had new switches installed, and the electrician made sure she knew how to use them before he left. She would call again for future needs. Jacob J. had us work on his outlets and called the job quick and very professional.",
-            "Our residential list also covers new appliance circuits, plus air conditioner and furnace circuits. If you are adding one, call and tell us what it is."
+            "Circuits for new appliances, air conditioners and furnaces go in too. If you are adding one, call and tell us what it is."
           ],
           "image": {
             "slot": "outlet-repair",
@@ -192,7 +182,7 @@
           "type": "prose",
           "heading": "When the Power Is Out in One Room",
           "body": [
-            "Troubleshooting electrical issues and residential repairs are both on our service list. The repair page has the stories from customers who called with a tripped breaker, a dead room or a problem they had lived with for years."
+            "Tripped breakers, rooms with no power and problems people have lived with for years. The repair page has the customers' own stories."
           ],
           "link": {
             "label": "See electrical repair in Wichita",
@@ -203,7 +193,7 @@
           "type": "prose",
           "heading": "Old Boxes, Meter Changes and Bigger Panels",
           "body": [
-            "Electrical service upgrades are on our residential list, and electrical panel service upgrades are on our commercial list. The panel page is where customers describe a box swapped out, and what the day looked like."
+            "An old small box swapped for a bigger one, a panel and meter changed out in a day. The panel page tells how those jobs went."
           ],
           "link": {
             "label": "See electrical panel upgrades in Wichita",
@@ -214,8 +204,7 @@
           "type": "prose",
           "heading": "Pendants Hung, Cabinets Lit",
           "body": [
-            "Kim S. had Tyler hang her new pendant lights, and wrote that he was on time, professional and did a great job. Jack J. had Trevor install cabinet lighting, and wrote that Trevor stayed in constant communication with him and his wife as he worked.",
-            "Interior, exterior and landscape lighting are all on our residential list."
+            "Kim S. had Tyler hang her new pendant lights, and wrote that he was on time, professional and did a great job. Jack J. had Trevor install cabinet lighting, and wrote that Trevor stayed in constant communication with him and his wife as he worked."
           ]
         },
         {
@@ -234,7 +223,7 @@
           "type": "prose",
           "heading": "New Construction, First Homes and Remodels",
           "body": [
-            "New residential construction and home renovation or remodel electrical are on our list. Easton had us on a first home project, and wrote that we walked him through the electrical work he would need and suggested options he did not know existed.",
+            "Easton had us on a first home project, and wrote that we walked him through the electrical work he would need and suggested options he did not know existed.",
             "John G. has used us for several client projects, and wrote that his clients have been happy with our staff at all levels. He plans to keep using us for his remodels."
           ]
         },
@@ -249,7 +238,7 @@
           "type": "prose",
           "heading": "One Company for the Business and the House",
           "body": [
-            "Our commercial list covers new construction, troubleshooting and repairs, inspections, remodel and relocation work, LED lighting, equipment and machine wiring, parking lot, security and exterior lighting, backup generators, surge protection and maintenance.",
+            "For businesses: new construction, troubleshooting and repairs, inspections, remodel and relocation work, LED lighting, equipment and machine wiring, parking lot, security and exterior lighting, backup generators, surge protection and maintenance.",
             "Joseph S. wrote that his business uses Enegren for its electrical. Deven P. called us for service for a customer of his, and wrote that his client's feedback was extremely exceptional."
           ]
         },
@@ -276,7 +265,7 @@
             },
             {
               "q": "What will it cost?",
-              "a": "We lay out your options before the work starts, so you can weigh them. We won't guess at a number here, because it depends on what we find. Call and tell us what's happening."
+              "a": "The number depends on what we find. Call and tell us what's happening."
             },
             {
               "q": "Can I book without calling?",
@@ -329,8 +318,7 @@
           "heading": "Lights Out in Both Bathrooms",
           "imageSide": "right",
           "body": [
-            "Sean C. lost power in both of his bathrooms. Enegren showed up, troubleshot all of the electrical issues, fixed the problem and cleaned up after the work.",
-            "Troubleshooting electrical issues, residential electrical repairs and maintenance, and home electrical inspections are all on our residential list."
+            "Sean C. lost power in both of his bathrooms. Enegren showed up, troubleshot all of the electrical issues, fixed the problem and cleaned up after the work."
           ],
           "image": {
             "slot": "inspection",
@@ -348,7 +336,7 @@
           "heading": "A Lightning Strike Call, and the Surge Protector After It",
           "body": [
             "Shawn C. called about a lightning strike and the electrical damage it did. He wrote that the price was fair and that Marcus does a great job with the work.",
-            "Whole house surge protection is on our residential list. It is what Trevor installed for the customer who wrote below."
+            "Trevor installed a whole house surge protector for the customer who wrote below."
           ]
         },
         {
@@ -373,8 +361,7 @@
           "type": "prose",
           "heading": "Right to the Problem, and the Next One Too",
           "body": [
-            "Bob G. wrote that our guys always get right to the problem and fix it. JD H. wrote that we got right to work, finished very quickly and checked another problem without hesitation.",
-            "Dennis L. wrote that the service was prompt and that Trevor did a great job fixing his problem. Ryan U. wrote that we were on time, super professional and super fast. Kenneth N. called Tyler a great resource, and Tobi W. named Daniel and Elias as professional."
+            "Bob G. wrote that our guys always get right to the problem and fix it. JD H. wrote that we got right to work, finished very quickly and checked another problem without hesitation."
           ]
         },
         {
@@ -384,10 +371,9 @@
         },
         {
           "type": "prose",
-          "heading": "A Tenant, and a Customer With Several Issues",
+          "heading": "A Tenant Who Had the Repair Visit Herself",
           "body": [
-            "Rosalie G. was the tenant at her address and had the repair visit herself. She wrote that the tech explained everything that needed fixing and was very efficient.",
-            "Marcus B. has called us about multiple issues and wrote that Marcus Saucedo is the absolute best. Sadie B. wrote that we were quick to come out and get the job done, at fair prices."
+            "Rosalie G. was the tenant at her address and had the repair visit herself. She wrote that the tech explained everything that needed fixing and was very efficient. Sadie B. wrote that we were quick to come out and get the job done, at fair prices."
           ]
         },
         {
@@ -409,35 +395,32 @@
           "type": "prose",
           "heading": "Holly D. Saw Two Electricians Come and Go Politely",
           "body": [
-            "Holly D. wrote that Marcus and Trevor were kind, respectful and polite, and that they did their job and left. Alex Z. wrote that Marcus is quick and efficient. Everetta A. called us fast, friendly and affordable. Residential re-wiring, smoke detector and carbon monoxide alarm installation, and backup generator installation and repair are also on our residential list."
+            "Holly D. wrote that Marcus and Trevor were kind, respectful and polite, and that they did their job and left.",
+            "Alex Z. wrote that Marcus is quick and efficient. Anita W. called Derek polite, knowledgeable and efficient, and Everetta A. called us fast, friendly and affordable."
           ]
         },
         {
           "type": "prose",
           "heading": "If the Repair Points at Your Breaker Box",
           "body": [
-            "Some repairs lead to the panel. Electrical service upgrades are on our residential list, and the [electrical panel upgrade](/electrical-panel-upgrade-wichita-ks/) page covers those jobs."
+            "Some repairs lead to the panel. The [electrical panel upgrade](/electrical-panel-upgrade-wichita-ks/) page covers those jobs."
           ]
         },
         {
           "type": "faq",
-          "heading": "What Should I Tell You When I Call?",
+          "heading": "What Do I Say if It's One Dead Room or a Tripped Breaker?",
           "items": [
             {
               "q": "What do I need to tell you when I call?",
               "a": "What is tripping or dark, and where in the house it is. If you have lived with other small problems, mention them too."
             },
             {
-              "q": "Will you explain what you found?",
-              "a": "Yes. We find the cause and walk you through it before anything is fixed."
-            },
-            {
               "q": "Can you inspect the wiring before I decide on a repair?",
-              "a": "Home electrical inspections are on our residential list. Call and tell us what you want looked at."
+              "a": "Yes. Home electrical inspections are part of what we do. Call and tell us what you want looked at."
             },
             {
               "q": "Do you handle repairs for businesses?",
-              "a": "Yes. Commercial electrical troubleshooting and repairs, and electrical maintenance, are on our commercial list."
+              "a": "Yes. Commercial electrical troubleshooting and repairs, and electrical maintenance, are part of the work."
             }
           ]
         },
@@ -460,7 +443,7 @@
       "hero": {
         "eyebrow": "Electrical service upgrades · Homes and businesses",
         "h1": "Electrical Panel Upgrade in Wichita, KS — Enegren Electric",
-        "sub": "If your breaker box is old, full or too small for what the house runs now, we look at it and explain what we see. Call (316) 613-4400.",
+        "sub": "Bryan J. had an old small breaker box swapped for a much bigger one, and Kyle P.'s was changed out in one afternoon. We look at yours, explain what we see and give you options. Call (316) 613-4400.",
         "primaryCta": {
           "label": "Call (316) 613-4400",
           "action": "call"
@@ -487,7 +470,7 @@
           "imageSide": "right",
           "body": [
             "Andres M. had Broc and Steven come to his home to replace several standard circuit breakers with GFCI breakers, add a circuit to better distribute the load in his kitchen, and install a couple of GFCI outlets in other areas of the house.",
-            "He described both as friendly, courteous, neat and professional. They kept him informed of the challenges they ran into, explained what they were doing and made sure the job was completed properly."
+            "He described both as friendly, courteous, neat and professional. They kept him informed of the challenges they ran into, explained what they were doing and made sure the job was completed properly. What impressed him most was their attitude and work ethic, and he wrote that Marcus, the owner, conducts himself with great professionalism."
           ],
           "image": {
             "slot": "ev-charger",
@@ -500,7 +483,7 @@
           "heading": "A Panel and Meter Changed Out in a Day",
           "body": [
             "Shaun M.'s job came with obstacles. Derek and the crew came in on a Friday and still did a complete panel and meter change out by the end of the day, getting his family back in the house.",
-            "He wrote that Derek and Marcus communicated clearly and that everyone on the job was professional and pleasant. He plans to call Enegren again for new RV electrical."
+            "He wrote that Derek and Marcus communicated clearly, that everyone on the job was professional and pleasant, and that the quality of the work looks great. He plans to call Enegren again for new RV electrical."
           ]
         },
         {
@@ -525,7 +508,7 @@
           "type": "prose",
           "heading": "Panel Service Upgrades for Businesses Too",
           "body": [
-            "Electrical service upgrades for homes and electrical panel service upgrades for businesses are both on our list. Tyler H. manages properties and has called on us more than once, and the quote that follows is his."
+            "Tyler H. manages properties and has called on us more than once, and the quote that follows is his."
           ]
         },
         {
@@ -535,7 +518,7 @@
         },
         {
           "type": "review",
-          "quote": "They were earlier with the arrival time for the repairs and had let me know that. I appreciated getting a picture of him ahead of time so I knew who would be at my door. Trevor was friendly and professional and explained the way they charge for services, no surprises at the end.",
+          "quote": "Trevor was friendly and professional and explained the way they charge for services, no surprises at the end.",
           "name": "Brenda B."
         },
         {
@@ -543,19 +526,12 @@
           "heading": "Information and Guidance Along the Way",
           "body": [
             "Diane H. wrote that she received the work promised plus extra, and appreciated all the information and guidance. Dennis R. wrote that Trevor knew what to do, how to get it done, and completed the job efficiently.",
-            "Linda H. called our people very professional and knowledgeable, and said she will call again when she has an electrical need. Lora P. called us very efficient, friendly and knowledgeable. Rosemary C. and Paula B. each called us very professional, and Paula added that the work is excellent."
-          ]
-        },
-        {
-          "type": "prose",
-          "heading": "An EV Charger or a Hot Tub on the Same Panel",
-          "body": [
-            "EV charger installation and hot tub wiring are both on our residential list, and both draw on the panel. When you call, tell us what you want to add and we will look at what your box has now."
+            "Linda H. called our people very professional and knowledgeable, and said she will call again when she has an electrical need. Lora P. called us very efficient, friendly and knowledgeable. Rosemary C. and Paula B. each called us very professional, and Paula added that the work is excellent. Tyler S. wrote that Marcus and his team are truly experts and that he fully trusts them to provide excellent work."
           ]
         },
         {
           "type": "faq",
-          "heading": "What Will a Panel Upgrade Involve?",
+          "heading": "A Panel and Meter in One Day: What Will Yours Take?",
           "items": [
             {
               "q": "What will a panel upgrade cost?",
@@ -567,7 +543,7 @@
             },
             {
               "q": "Can you inspect my electrical before I decide?",
-              "a": "Our residential list includes home electrical inspections, so your panel and wiring can be looked at before you decide anything. Tell us what you would like checked."
+              "a": "Yes. Home electrical inspections are part of what we do, so your panel and wiring can be looked at before you decide anything. Tell us what you would like checked."
             },
             {
               "q": "Do you replace panels for businesses?",
@@ -656,9 +632,8 @@
   "footer": {
     "about": "Enegren Electric is a family-owned electrical company in West Wichita. Marcus, Trevor, Tyler and the team do residential and commercial electrical work, from repairs and lighting to panel upgrades and new construction.",
     "why": [
-      "Name and photo sent ahead",
+      "Family-owned, based in West Wichita",
       "Cause found and explained first",
-      "Options, and you choose",
       "We clean up after the job"
     ]
   },

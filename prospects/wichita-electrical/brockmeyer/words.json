@@ -52,7 +52,7 @@
       "blurb": "New lines and circuits for remodels, additions and construction."
     },
     {
-      "name": "Also on the list",
+      "name": "More Home Electrical Work",
       "route": null,
       "blurb": "Wiring replacement and circuit grounding, panel replacement, surge protection, ceiling fans, pool and hot tub repairs, code violation corrections."
     },
@@ -94,15 +94,15 @@
       "sections": [
         {
           "type": "review",
-          "quote": "I hired Brockmeyer to do some general electrical repairs. It was for my elderly moms house and they did an amazing job! The tech that came out was very professional and very knowledgeable! He treated my mother with a lot of respect which I appreciate! I will definitely recommend them and use them again in the future!",
+          "quote": "I hired Brockmeyer to do some general electrical repairs. It was for my elderly moms house and they did an amazing job! The tech that came out was very professional and very knowledgeable! He treated my mother with a lot of respect which I appreciate! …",
           "name": "Katherine A."
         },
         {
           "type": "split",
           "heading": "Repairs and Maintenance, Down to the Pool and Hot Tub",
           "body": [
-            "Our residential repair and maintenance list covers power restoration and troubleshooting, wiring replacement and circuit grounding, switch, outlet and fixture repairs, pool, hot tub and spa electrical repairs, and code violation corrections.",
-            "The list also includes surge protection, ceiling fan installations, panel replacements and wiring for a new addition. The residential work is done by licensed journeymen electricians."
+            "We handle power restoration and troubleshooting, wiring replacement and circuit grounding, switch, outlet and fixture repairs, pool, hot tub and spa electrical repairs, and code violation corrections.",
+            "Surge protection, ceiling fan installations, panel replacements and wiring for a new addition are part of the work too, all done by licensed journeymen electricians here in Wichita."
           ],
           "image": {
             "slot": "outlet-repair",
@@ -120,8 +120,8 @@
           "type": "prose",
           "heading": "A Remodel Needing New Lines, Old Wiring Needing an Upgrade",
           "body": [
-            "Rebecca H. needed new electrical lines run for a remodel. She wrote that we responded quickly with a visit and did a wonderful job just as she requested, and that we are now on her to-call list for further electrical work.",
-            "Andrew P. had old wiring that needed an upgrade. He wrote that the price was incredible compared with the quality of work and customer service he received, and that he will forever recommend Brockmeyer."
+            "Rebecca H. needed new electrical lines run for a remodel. We responded quickly with a visit and did a wonderful job just as she requested, she wrote, and we are now on her to-call list for further electrical work.",
+            "Old wiring needed an upgrade at Andrew P.'s house. He found the price incredible compared with the quality of work and customer service he received, and he will forever recommend Brockmeyer."
           ],
           "link": {
             "label": "See outlet repair in Wichita",
@@ -132,8 +132,8 @@
           "type": "split",
           "heading": "Jeremy Did the House, and the Same Company Does the Business",
           "body": [
-            "Douglas S. wrote that Brockmeyer professionals handle both commercial and residential jobs. Jeremy took care of his residential tasks quickly and treated the details as if they were being completed on his own home.",
-            "Our commercial list covers new electrical installations, lighting installation and repairs, emergency and security lighting, breakers, panels and switches, high and low voltage systems, DC power plants and conduit systems, and data, telephone and cable wiring. Backup generators, lighting retrofits and transformers are on it too."
+            "Douglas S. found that Brockmeyer professionals handle both commercial and residential jobs. Jeremy took care of his residential tasks quickly and treated the details as if they were being completed on his own home.",
+            "On the commercial side: new electrical installations, lighting installation and repairs, emergency and security lighting, breakers, panels and switches, high and low voltage systems, DC power plants and conduit systems, and data, telephone and cable wiring. Backup generators, lighting retrofits and transformers too."
           ],
           "image": {
             "slot": "panel-upgrade",
@@ -151,8 +151,8 @@
           "type": "split",
           "heading": "A Friend's Recommendation, and Follow-Up That Went Further",
           "body": [
-            "Scott R. came to Brockmeyer on a friend's recommendation. He wrote that we met all their expectations and exceeded them in the follow-up required, explained the issues and were always friendly and professional.",
-            "He wrote that they will use us for their future electrical needs."
+            "A friend's recommendation brought Scott R. to Brockmeyer. We met all their expectations, he wrote, and exceeded them in the follow-up required, explained the issues and were always friendly and professional.",
+            "They will use us for their future electrical needs, he wrote."
           ],
           "image": {
             "slot": "inspection",
@@ -170,17 +170,17 @@
           "type": "prose",
           "heading": "Adam Was Great and the Cost Was Beyond Reasonable",
           "body": [
-            "Shiro wrote that Adam was great and super professional, and that the cost was beyond reasonable. Shiro will use us from here on out.",
-            "Collin V. had some electrical work done around his home and wrote that we were professional and fair on the price. Andrew T., who has worked with dozens of electricians, wrote about great communication and pricing."
+            "Adam was great and super professional, Shiro wrote, and the cost was beyond reasonable. Shiro will use us from here on out.",
+            "Collin V. called us professional and fair on the price after some electrical work around his home. Andrew T., who has worked with dozens of electricians, singled out great communication and pricing."
           ]
         },
         {
           "type": "prose",
           "heading": "Two Jobs, and Crews That Keep You in the Loop",
           "body": [
-            "Amfyoyo D. used Brockmeyer twice. He wrote that the crews are courteous and thorough and keep the homeowner in the loop with changes, and that they get the job done right the first time.",
-            "Josephine S. wrote that their electrical jobs are done by Brockmeyer and are always done satisfactorily.",
-            "Kathy S. hired Brockmeyer for electrical trenching. She wrote that the young men who came out were able to answer her questions and were good with her dogs."
+            "Twice now, Amfyoyo D. has hired Brockmeyer. The crews are courteous and thorough and keep the homeowner in the loop with changes, he wrote, and they get the job done right the first time.",
+            "Josephine S. said their electrical jobs are done by Brockmeyer and are always done satisfactorily.",
+            "Kathy S. hired Brockmeyer for electrical trenching, and the young men who came out were able to answer her questions and were good with her dogs."
           ]
         },
         {
@@ -202,11 +202,11 @@
             },
             {
               "q": "Can you fix what the inspector wrote up?",
-              "a": "Code violation corrections are on our residential repair list. Call and tell us what the inspector wrote up."
+              "a": "Yes. Code violation corrections are part of our repair work. Call and tell us what the inspector wrote up."
             },
             {
               "q": "What will it cost?",
-              "a": "It depends on the job, so we don't post a number here. Ask for a free estimate."
+              "a": "It depends on the job. Ask for a free estimate."
             }
           ]
         },
@@ -249,8 +249,8 @@
           "type": "split",
           "heading": "Several Worn Outlets and a Dimmer, Diagnosed in One Visit",
           "body": [
-            "Laurie O. needed several worn-out outlets and a dimmer switch replaced. She had never heard of Brockmeyer before that day, and wrote that she wished she had known about us sooner.",
-            "Shawn contacted her the same day she requested service. Will arrived earlier than anticipated and diagnosed all the issues. She called him polite, knowledgeable and experienced, and wrote that he went over and above."
+            "Laurie O. needed several worn-out outlets and a dimmer switch replaced. She had never heard of Brockmeyer before that day and wished she had known about us sooner.",
+            "Shawn contacted her the same day she requested service. Will arrived earlier than anticipated and diagnosed all the issues. Polite, knowledgeable and experienced, she called him, and he went over and above."
           ],
           "image": {
             "slot": "inspection",
@@ -260,37 +260,27 @@
           "imageSide": "right"
         },
         {
-          "type": "review",
-          "quote": "If you need any electrical work done you have to call them. Very professional and clean work in a timely manner, with very fair prices.",
-          "name": "Josh B."
-        },
-        {
           "type": "prose",
-          "heading": "What Our Own Summer Safety Post Tells Wichita Homeowners",
+          "heading": "Flickering Lights, Frequent Breaker Trips",
           "body": [
-            "Our summer electrical safety post says not to overload extension cords or outlets. Plugging too many devices into the same circuit can overheat wiring and increase the risk of electrical fires, so it says to spread your appliances out and to use heavy-duty surge protectors when needed.",
-            "The same post says to watch for flickering lights or frequent breaker trips. If an outlet or a breaker is doing either, call us and tell us which one it is."
+            "Flickering lights and frequent breaker trips are the signs to watch for. If an outlet or a breaker is doing either, call and tell us which one it is.",
+            "Plugging too many devices into the same circuit can overheat wiring and raise the risk of electrical fires, so spread appliances out and use heavy-duty surge protectors when needed."
           ]
         },
         {
           "type": "prose",
           "heading": "Added Plugs on a Second Job",
           "body": [
-            "tony H. hired Brockmeyer for the second time and had plugs added. He wrote that we did everything we said we would, on time.",
-            "Dimmer, socket and switch installations and repairs have their own line on our residential list. Switch, outlet and fixture repairs have another, so a repair and an added plug can be one conversation."
+            "For the second time, tony H. hired Brockmeyer, this time to have plugs added. We did everything we said we would, on time, he wrote.",
+            "Dimmer, socket and switch installations and repairs, plus switch, outlet and fixture repairs, are all part of the work, so a repair and an added plug can be one conversation."
           ]
-        },
-        {
-          "type": "review",
-          "quote": "Fantastic Electrical contractor!  Fast Quality service at very affordable prices.  The tech really did a great job explaining the work and what was going on.  Highly recommend them for doing work for your next project / repair!!",
-          "name": "Thomas G."
         },
         {
           "type": "split",
           "heading": "Outdoor Outlets and Weatherproof Covers",
           "body": [
-            "Our blog post on planning a backyard oasis says outdoor outlets must be weatherproof and up to code, with weatherproof covers on all of them. If the outlet by your patio or pool has no cover, tell us when you call.",
-            "Pool, hot tub and spa electrical repairs are on our residential list, and so are wiring replacement and circuit grounding."
+            "Outdoor outlets must be weatherproof and up to code, with weatherproof covers on all of them. If the outlet by your patio or pool has no cover, tell us when you call.",
+            "Pool, hot tub and spa electrical repairs are part of our work, and so are wiring replacement and circuit grounding."
           ],
           "image": {
             "slot": "old-panel",
@@ -300,27 +290,20 @@
           "imageSide": "left"
         },
         {
-          "type": "prose",
-          "heading": "Friendly, Honest and Hard-Working",
-          "body": [
-            "Holly V. called Brockmeyer amazing and wrote that they are friendly, honest, hard-working people. Kathie H. wrote about excellent work and customer service, and Justin S. about awesome customer service and knowledge."
-          ]
-        },
-        {
           "type": "faq",
-          "heading": "Switches, Dimmers, Pools and Hot Tubs",
+          "heading": "Do You Replace Switches and Dimmers Too?",
           "items": [
             {
               "q": "Do you replace switches and dimmers too?",
-              "a": "Yes. Switch, outlet and fixture repairs are on our residential list."
+              "a": "Yes. Switch, outlet and fixture repairs are part of our residential work."
             },
             {
               "q": "Do you work on pool and hot tub electrical?",
-              "a": "Electrical repairs for pools, hot tubs and spas are on our residential list."
+              "a": "Yes. We repair electrical for pools, hot tubs and spas."
             },
             {
               "q": "What if an inspector wrote up an outlet?",
-              "a": "Code violation corrections are on our residential list. Call and tell us what was written up."
+              "a": "We do code violation corrections. Call and tell us what was written up."
             },
             {
               "q": "What does an estimate cost?",
@@ -332,7 +315,7 @@
             },
             {
               "q": "Do you do outlets and panels in a business?",
-              "a": "Our commercial list includes breakers, panels and switches, and new electrical installations. Call and describe the building."
+              "a": "Yes. Commercial work includes breakers, panels and switches, and new electrical installations. Call and describe the building."
             }
           ]
         },
@@ -380,8 +363,8 @@
           "type": "split",
           "heading": "Dimmers, Sockets and Switches, Installed and Repaired",
           "body": [
-            "Our residential list has its own line for dimmer, socket and switch installations and repairs, next to switch, outlet and fixture repairs.",
-            "Ceiling fan installations are on the same list, so mention the fan when you call about the light. Our summer safety post names flickering lights as one of the things to watch for."
+            "Dimmer, socket and switch installations and repairs are part of the residential work, next to switch, outlet and fixture repairs.",
+            "Ceiling fan installations too, so mention the fan when you call about the light."
           ],
           "image": {
             "slot": "inspection",
@@ -394,16 +377,16 @@
           "type": "prose",
           "heading": "Backyard Lights, Pools and Spas",
           "body": [
-            "Our blog post on planning a backyard oasis says outdoor lighting must be weatherproof and up to code, and that all lighting should be rated for outdoor use to prevent corrosion and electrical hazards.",
-            "The same post runs from a simple outlet addition for your string lights to complete electrical wiring for pools, spas or outdoor kitchens, and it says professional installation is key to protecting your family and property."
+            "Outdoor lighting must be weatherproof and up to code, and all lighting should be rated for outdoor use to prevent corrosion and electrical hazards.",
+            "The job can be as simple as an outlet addition for your string lights or as large as complete wiring for pools, spas or outdoor kitchens. Professional installation is key to protecting your family and property."
           ]
         },
         {
           "type": "split",
           "heading": "Emergency, Security and Retrofit Lighting for Businesses",
           "body": [
-            "Our commercial list names lighting installation and repairs and emergency and security lighting. Lighting retrofits are on our homepage list for businesses.",
-            "They sit beside breakers, panels and switches, high and low voltage systems, and data, telephone and cable wiring. The commercial maintenance list adds preventative maintenance, electrical troubleshooting and repairs, backup power and generator installations, lightning protection and environmental controls, and power quality studies and electrical system audits."
+            "For businesses we do lighting installation and repairs, emergency and security lighting, and lighting retrofits.",
+            "They sit beside breakers, panels and switches, high and low voltage systems, and data, telephone and cable wiring. Maintenance covers preventative maintenance, electrical troubleshooting and repairs, backup power and generator installations, lightning protection and environmental controls, and power quality studies and electrical system audits."
           ],
           "image": {
             "slot": "generator",
@@ -421,28 +404,20 @@
           ]
         },
         {
-          "type": "prose",
-          "heading": "A Light and a Ceiling Fan in One Room",
-          "body": [
-            "Residential lighting and ceiling fan installations both sit on the list our licensed journeymen electricians work from, along with panel replacements and surge protection. If a room needs a new fixture and a fan, say so when you call.",
-            "We can also look at the dimmer or switch on the wall while we are there, since dimmer and switch work is on the same list."
-          ]
-        },
-        {
           "type": "faq",
-          "heading": "Dimmers, Fixtures and Business Lighting",
+          "heading": "Do You Install Dimmers and Light Businesses?",
           "items": [
             {
               "q": "Do you install dimmers?",
-              "a": "Dimmer, socket and switch installations and repairs are on our residential list."
+              "a": "Yes. Dimmer, socket and switch installations and repairs are part of our residential work."
             },
             {
               "q": "Do you light a business?",
-              "a": "Lighting installation and repairs and emergency and security lighting are on our commercial list. Call and tell us about the building."
+              "a": "Yes: lighting installation and repairs, plus emergency and security lighting. Call and tell us about the building."
             },
             {
               "q": "Do you work on pool and spa electrical?",
-              "a": "Pool, hot tub and spa electrical repairs are on our residential list, and our backyard blog post covers wiring for pools, spas and outdoor kitchens."
+              "a": "Yes. We repair pool, hot tub and spa electrical, and can wire pools, spas and outdoor kitchens."
             },
             {
               "q": "What does an estimate cost?",

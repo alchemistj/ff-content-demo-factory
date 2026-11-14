@@ -50,7 +50,7 @@
     {
       "name": "Ceiling Fan Installation",
       "route": null,
-      "blurb": "Ceiling fans for homes, listed with our residential services next to phone and TV cabling and service work."
+      "blurb": "Ceiling fan installation for homes, alongside phone and TV cabling and service work."
     },
     {
       "name": "LED Lighting Retro-Fits",
@@ -112,7 +112,7 @@
           "type": "split",
           "heading": "Wiring Added to a Home So It Looks Like It Was Always There",
           "body": [
-            "If your existing home needs additional electrical wiring, our aim is to make it look as if it was always there. That is how our services page describes residential work, and it covers added outlets in a house, a garage or a shed.",
+            "If your existing home needs additional electrical wiring, our aim is to make it look as if it was always there. That covers added outlets in a house, a garage or a shed.",
             "We know your home is more than just a house. Whether you're starting over or adding to your current residence, we'll make sure it's still home sweet home."
           ],
           "image": {
@@ -144,7 +144,7 @@
           "heading": "Right the First Time, at a Fair Price",
           "body": [
             "We believe in doing the job right the first time. We also believe you don't have to sacrifice quality for a fair price.",
-            "J M. wrote that Linnebur was upfront, honest and had great pricing, and that the crew was prompt and professional at the initial review. J M. wrote that this continued all the way through to the end."
+            "According to J M., Linnebur was upfront, honest and had great pricing, and the crew was prompt and professional at the initial review. That held all the way through to the end."
           ],
           "link": {
             "label": "See electrical repair in Wichita",
@@ -160,14 +160,14 @@
           "type": "prose",
           "heading": "A Job Finished Way Before He Expected",
           "body": [
-            "Ken M. wrote that Linnebur completed his job way before he expected it to happen, and that the technician showed great confidence and expertise in what he was doing."
+            "Ken M.'s job was finished way before he expected it to be, and the technician showed great confidence and expertise in what he was doing."
           ]
         },
         {
           "type": "prose",
-          "heading": "Ground Up or Remodel: The Residential List",
+          "heading": "Starting From the Ground Up or Renovating What's There",
           "body": [
-            "Whether you're starting from the ground up or looking to renovate an existing structure, we do New Residential and Residential Remodel work. The list also covers phone and TV cabling, ceiling fan installation, service work and LED lighting retro-fits.",
+            "New residential and residential remodel work are both part of what we do, along with phone and TV cabling, ceiling fan installation, service work and LED lighting retro-fits.",
             "LED retro-fits convert older fixtures and lighting over to LED."
           ]
         },
@@ -184,7 +184,7 @@
           "type": "prose",
           "heading": "Grain Elevators, Machine Shops and Truck Repair Facilities",
           "body": [
-            "Industrial jobs range from grain elevators and machine shops to truck repair facilities. Our industrial list includes metal building wiring, 3-phase motor control, grain handling facilities, CNC mill machine wiring and design/build work.",
+            "Industrial jobs range from grain elevators and machine shops to truck repair facilities, and include metal building wiring, 3-phase motor control, grain handling facilities, CNC mill machine wiring and design/build work.",
             "We enjoy getting out of town to work on agricultural projects, and we have done work in many of the areas around Wichita.",
             "Our industrial staff is committed to communicating with customers to complete jobs in a timely manner, without sacrificing quality. If you're worried about distance, give us a call and see what we can do for you."
           ]
@@ -198,20 +198,20 @@
           "type": "prose",
           "heading": "Any Project, Small or Large",
           "body": [
-            "No matter how small or large your project is, feel free to contact us and find out how we can be your switch to a brighter future. The services page ends the same way, with an invitation to contact Linnebur Electric with any project you may have."
+            "No matter how small or large your project is, feel free to contact us and find out how we can be your switch to a brighter future."
           ]
         },
         {
           "type": "faq",
-          "heading": "Can You Come Today? Who's at My Door?",
+          "heading": "Can You Come Today? Do You Take Small Jobs?",
           "items": [
             {
               "q": "Can you come today?",
-              "a": "Call (316) 943-6616 and tell us what's happening. Hours aren't posted online yet, so the phone is the quickest way to find out when someone can come out."
+              "a": "Call (316) 943-6616 and tell us what's happening. The phone is the quickest way to find out when someone can come out."
             },
             {
-              "q": "Who's coming into my house?",
-              "a": "A crew from a family-owned and operated company. Three of us are Master Electricians."
+              "q": "Do you take small jobs?",
+              "a": "Yes. Small or large, contact us and tell us what the project is."
             },
             {
               "q": "Do you work on farms?",
@@ -219,7 +219,7 @@
             },
             {
               "q": "Do you wire new buildings?",
-              "a": "Yes. New Residential and New Commercial are both on our list."
+              "a": "Yes. New residential and new commercial wiring are both part of our work."
             }
           ]
         },
@@ -265,10 +265,10 @@
         },
         {
           "type": "split",
-          "heading": "Service Work, Ceiling Fans, LED Retro-Fits and Cabling",
+          "heading": "Ceiling Fans, LED Retro-Fits and Cabling Can Ride Along",
           "body": [
-            "Service Work is on our residential list, next to ceiling fan installation, LED lighting retro-fits and phone and TV cabling. If one visit can cover two of them, say so on the call.",
-            "We know your home is more than just a house, so a repair should leave it still home sweet home."
+            "A repair call can cover more than the repair. We also install ceiling fans, convert older fixtures to LED and run phone and TV cabling, so if one visit can cover two jobs, say so on the call.",
+            "Older fixtures from another decade are a natural time to ask about LED. Lighting that was converted over to LED is one less thing to revisit later."
           ],
           "image": {
             "slot": "panel-upgrade",
@@ -278,37 +278,11 @@
           "imageSide": "right"
         },
         {
-          "type": "review",
-          "quote": "Quick response. Excellent knowledge and service.",
-          "name": "CE U."
-        },
-        {
-          "type": "prose",
-          "heading": "Awesome People and True Professionals",
-          "body": [
-            "Mark B. called the people at Linnebur awesome and true professionals. Alex O. wrote about great quality people providing a great quality service."
-          ]
-        },
-        {
-          "type": "prose",
-          "heading": "Prompt, Thorough, No Complaints",
-          "body": [
-            "Matthew M. wrote that Linnebur is always prompt and does thorough work. Blake S. wrote about great quick service and no complaints."
-          ]
-        },
-        {
-          "type": "prose",
-          "heading": "Older Fixtures Converted Over to LED",
-          "body": [
-            "LED lighting retro-fits convert older fixtures and lighting over to LED. A repair call at a house with fixtures from another decade is a natural time to ask about it, and the retro-fit is a named line on our residential services list."
-          ]
-        },
-        {
           "type": "split",
           "heading": "The Same Crew Works on Churches and Clinics",
           "body": [
-            "Our commercial list includes office building wiring and church wiring, and the homes work comes from the same company. Larger projects don't change how we work.",
-            "Three of our Master Electricians have at least 25 years of experience, and we keep a smaller staff for continuity between projects."
+            "Churches, offices and clinics are on the commercial side of the same company, and larger projects don't change how we work.",
+            "We keep a smaller staff for continuity between projects, so the people who come to a house are used to jobs of every size."
           ],
           "image": {
             "slot": "inspection",
@@ -319,11 +293,11 @@
         },
         {
           "type": "faq",
-          "heading": "Repairs, Retro-Fits and Who Does the Work",
+          "heading": "Do You Repair Older Homes? Is There a Form?",
           "items": [
             {
-              "q": "Is repair on your list?",
-              "a": "Yes. Service work is one of the named lines on our residential services page."
+              "q": "Do you repair older homes?",
+              "a": "Rachael R. had electrical issues in her 44-year-old home and wrote that Linnebur was very thorough in the work. Call and tell us how old yours is."
             },
             {
               "q": "Who comes to the house?",
@@ -338,7 +312,7 @@
         {
           "type": "callBand",
           "heading": "An Older House Acting Up? Call (316) 943-6616",
-          "text": "Tell us how old the house is and what it's doing."
+          "text": "Tell us how old the house is."
         }
       ]
     },
@@ -379,7 +353,7 @@
           "type": "split",
           "heading": "Lighting Indoors and Out, for the Business Behind It",
           "body": [
-            "The outside of your building should reflect the quality of business you offer inside. We'll make sure the lighting, both indoors and outdoors, allows your business to shine. That is how our services page puts it for commercial work.",
+            "The outside of your building should reflect the quality of business you offer inside. We'll make sure the lighting, both indoors and outdoors, allows your business to shine.",
             "[[confirm: Outdoor lighting is not on the current services list at linneburelectric.com; confirm it is offered]]"
           ],
           "image": {
@@ -392,8 +366,7 @@
           "type": "prose",
           "heading": "LED Retro-Fits for Fixtures Already Up",
           "body": [
-            "Older outdoor fixtures are a candidate for the LED lighting retro-fits on our residential list, which convert older fixtures and lighting over to LED. Ceiling fan installation is on the same list for the porch or patio.",
-            "Whether you're starting from the ground up or looking to renovate an existing structure, that list also covers new residential and residential remodel work."
+            "Older outdoor fixtures are a candidate for LED lighting retro-fits, which convert older fixtures and lighting over to LED."
           ]
         },
         {
@@ -401,31 +374,16 @@
           "heading": "Exterior Work for Businesses, From Bucket Trucks to Metal Buildings",
           "body": [
             "Our commercial work is not only interior. We have the tools and experience to complete exterior electrical work too, for offices, restaurants, churches and dental and medical clinics.",
-            "Bucket Truck Overhead Services and metal building wiring are on our industrial list, and we have done work in many of the areas around Wichita."
-          ]
-        },
-        {
-          "type": "prose",
-          "heading": "Jobs Out of Town",
-          "body": [
-            "Agricultural projects are work we enjoy, and they are a reason we get out of town. Our industrial list includes grain handling facilities and CNC mill machine wiring.",
-            "Our employees are committed to communicating with customers so jobs finish on time and quality doesn't slip."
-          ]
-        },
-        {
-          "type": "prose",
-          "heading": "Contact Linnebur With Any Project",
-          "body": [
-            "Contact Linnebur Electric with any project you may have. Call (316) 943-6616 or write to kent@linneburelectric.com, and tell us whether it's a yard, a church, a shop or a house."
+            "Bucket truck overhead services and metal building wiring are part of the industrial work, and we have done jobs in many of the areas around Wichita."
           ]
         },
         {
           "type": "faq",
-          "heading": "Calling About Outdoor Lights?",
+          "heading": "Can You Swap the Fixtures I Already Have?",
           "items": [
             {
               "q": "Can you replace the fixtures I already have?",
-              "a": "LED lighting retro-fits are on our residential list and convert older fixtures over to LED."
+              "a": "LED lighting retro-fits convert older fixtures over to LED."
             },
             {
               "q": "Do you light a business, a shop or a church?",
@@ -440,7 +398,7 @@
         {
           "type": "callBand",
           "heading": "Thinking About Lights for the Yard?",
-          "text": "Call (316) 943-6616 and tell us what you want to see at night."
+          "text": "Contact Linnebur Electric with any project you may have. Call (316) 943-6616 and tell us what you want to see at night."
         }
       ]
     },
@@ -470,9 +428,9 @@
       "sections": [
         {
           "type": "prose",
-          "heading": "Tell Us What It's Doing: (316) 943-6616",
+          "heading": "Call Us: (316) 943-6616",
           "body": [
-            "Call and tell us what your wiring is doing and where you are. We don't list hours online yet, so a call is how you find out when we can come."
+            "Tell us what your wiring is doing and where you are, and ask when we can come out."
           ]
         },
         {

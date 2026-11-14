@@ -112,8 +112,8 @@
           "type": "prose",
           "heading": "A Sump Pump Dies in Heavy Rain, and a Plumber Is There Within Hours",
           "body": [
-            "Dan B. needed a new sump pump during the heavy rains, and Creekmore sent Heath within a few hours. Martha B. called with an emergency, got a very prompt response, and had a quick repair.",
-            "The office on South Pattie Street opens Monday to Friday at 7:30 AM. Laura B. has had us work for her grandmother and herself several times, and says the office staff communicate well."
+            "Heavy rain, a dead sump pump, and Heath at Dan B.'s door within a few hours. Martha B. called with an emergency, got a very prompt response and had a quick repair.",
+            "Our office on South Pattie Street opens Monday to Friday at 7:30 AM. Laura B. has had us work for her grandmother and herself several times, and says the office staff communicate well."
           ]
         },
         {
@@ -141,8 +141,8 @@
           "type": "prose",
           "heading": "A Plumber Worth Passing Down",
           "body": [
-            "Kevin O. has used Creekmore for 30 years and never had any issues. Jennifer C. says we have helped her family with multiple projects and issues over the years.",
-            "Mark A. calls us a family owned service place for all plumbing needs: small, but super good."
+            "Thirty years without an issue is Kevin O.'s record with Creekmore. Jennifer C. says we have helped her family with multiple projects and issues over the years.",
+            "Mark A. puts it this way: a family owned service place for all plumbing needs, small but super good."
           ]
         },
         {
@@ -191,7 +191,23 @@
           "type": "prose",
           "heading": "Small Jobs and Large Ones",
           "body": [
-            "Jennie S. has used us for large and small jobs and calls us honest and always willing to work with her. Kayla S. had a leaky pipe in a new house, and we showed up on time and repaired it in about an hour."
+            "Large jobs and small ones both end up on our schedule. Jennie S. has used us for both, and calls us honest and always willing to work with her."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "A Kitchen Drain Rerouted, a Basement Clean-Out, a Gas Line",
+          "body": [
+            "Mark and Titus rerouted Tom M.'s kitchen sink drain pipe. A clean-out went into Rebecca A.'s basement, with Mark arriving on time. Rebecca H. had us run a new gas line, and we responded quickly and came when we said we would.",
+            "Susan M. called about her sump pump, and we were out the very next morning. She has called us three or four times with a plumbing issue."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Mark, Gabe and Heath, Named by Customers",
+          "body": [
+            "John F. has used Creekmore repeatedly and is 100% confident Mark will get it done professionally and competently. Joleen T. calls Gabriel honest, professional and prompt.",
+            "Richard E. was shown maintenance tasks he can do himself to prevent further incidents. Phyllis B. says the plumber is friendly and will explain if asked."
           ]
         },
         {
@@ -232,11 +248,11 @@
           "items": [
             {
               "q": "Can you come today?",
-              "a": "Call the office and ask for the first opening. We are open Monday to Friday, 7:30 AM to 4:30 PM."
+              "a": "Call (316) 264-1342 and ask for the first opening. We are open Monday to Friday, 7:30 AM to 4:30 PM."
             },
             {
               "q": "Will you actually show up?",
-              "a": "Dan S. wrote that we are always on time."
+              "a": "Dan S. calls us always on time. Kayla S. wrote that we showed up on time to her new house and repaired a leaky pipe in about an hour."
             },
             {
               "q": "What's it going to cost, and do I need all of it?",
@@ -244,7 +260,7 @@
             },
             {
               "q": "Do I need a whole new water heater?",
-              "a": "Not always. Tell us what you see and how old the heater is."
+              "a": "Not always. A leak from the tank itself usually means replacement, while a bad hose, valve or fitting can be a repair. Tell us what you see and how old the heater is."
             }
           ]
         },
@@ -290,9 +306,9 @@
         },
         {
           "type": "split",
-          "heading": "Thinking of Doing It Yourself? Hollie B. Was",
+          "heading": "Considering Doing It Yourself? Ask for a Price First",
           "body": [
-            "Hollie B.'s water heater went out. Two other plumbing companies never returned her calls, so she called us on a family recommendation. She told Duane the family was considering replacing it themselves, and he said to call if they had any questions.",
+            "Two other plumbing companies never returned Hollie B.'s calls when her water heater went out, so she called us on a family recommendation. She said the family was thinking of replacing it themselves, and Duane told her to call if they had questions.",
             "Then he named the price. It included removing the old tank along with the new one, and it was about what she expected to pay at Home Depot for the tank alone. The job took about 30 minutes, not the 4 hours and Google research she had planned on."
           ],
           "image": {
@@ -304,39 +320,54 @@
         },
         {
           "type": "prose",
-          "heading": "Bradford White First, AO Smith and Navien Tankless",
+          "heading": "Tank-Type or Tankless: Which Fits Your House?",
           "body": [
-            "We install tank-type and tankless water heaters. [[confirm: [X]-year warranty on our work]]",
-            "Bradford White is our preferred brand. AO Smith and Navien are among our tankless installs."
+            "A tank-type heater stores hot water and keeps it ready. A tankless heater warms the water as it flows, so there is no tank to leak or run out. Tankless costs more up front, and not every house is set up for one.",
+            "We install both. Tell us what you have now, how many people use hot water, and what's wrong with the heater, and we'll talk through which one suits your house."
           ]
         },
         {
           "type": "prose",
-          "heading": "Rubber Hoses on a Six-Year-Old Heater",
+          "heading": "Bradford White First, AO Smith and Navien Tankless",
           "body": [
-            "Jane K. called us about deteriorating rubber hoses on a six-year-old water heater that a competitor had installed. The plumber explained that rubber hoses deteriorate from the heat and start leaving black stuff in the hot water.",
-            "He did the job with copper instead of putting the same hoses back, and charged what she calls an extremely fair price for the time involved. Her son told her about us five years ago, and now we are the plumbers for her and her three grown sons."
+            "Bradford White is our preferred brand. AO Smith and Navien are among our tankless installs. [[confirm: [X]-year warranty on our work]]",
+            "BBB lists Creekmore as an A+ business, accredited since 2009, under water heater installation, water heater repair and water heater dealers."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Ten Years Old and on Its Last Legs",
+          "body": [
+            "A Wichita neighbor on Nextdoor asked for a plumber to replace a ten-year-old water heater that was on its last legs. After contacting us, the neighbor wrote back that we came out immediately and installed a new hot water heater, and that we \"did Great work.\""
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Rubber Hoses Out, Copper In",
+          "body": [
+            "A competitor had installed Jane K.'s water heater six years earlier, and its rubber hoses were breaking down. Our plumber explained that rubber hoses deteriorate from the heat and start leaving black stuff in the hot water.",
+            "He did the job with copper instead of putting the same hoses back, and she calls the price extremely fair for the time involved. Her son told her about us five years ago, and now we are the plumbers for her and her three grown sons."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "When the Answer Is a Repair, Not a New Heater",
+          "body": [
+            "Water coming out of the tank itself usually means the tank is done, and the answer is a new heater. A leak at a hose, a valve or a fitting is a different problem, and so is a heater that has stopped heating.",
+            "Those can be repairs, and we repair and maintain most brands of water heaters. Give us the heater's age and what it's doing."
           ]
         },
         {
           "type": "faq",
-          "heading": "Brands, Removal and Timing: Your Questions",
+          "heading": "What Does a Water Heater Replacement Cover?",
           "items": [
             {
               "q": "Is the quote free?",
-              "a": "Yes. The quote is free. Tell us what the tank is doing."
+              "a": "Yes. Call (316) 264-1342, tell us what the tank is doing, and ask about 10% off labor for new customers."
             },
             {
-              "q": "Which brands do you install?",
-              "a": "Bradford White is our preferred brand. We install tank-type and tankless heaters, and AO Smith and Navien are among our tankless installs."
-            },
-            {
-              "q": "Do you repair a heater instead of replacing it?",
-              "a": "Yes. We repair and maintain most brands of water heaters, so tell us what you see and how old the heater is."
-            },
-            {
-              "q": "Is there a discount for new customers?",
-              "a": "Our site offers 10% off labor for new customers. Ask about it when you call."
+              "q": "What happens to the old water heater?",
+              "a": "Hollie B.'s price included removing the old tank, and Mary V.'s plumber removed the old heater after the installation. Ask us to include removal in your quote."
             },
             {
               "q": "Who owns the company?",
@@ -393,7 +424,8 @@
           "heading": "Repair the Old One or Install the New One",
           "body": [
             "We repair and install toilets of any brand, old or new, so you can have us work on the one you've got or install the one you picked. ADA toilets are included.",
-            "The quote is free, and a call to the office is the place to start."
+            "Not every bad toilet needs replacing. A tank that keeps running, a handle that sticks or a weak flush is often a worn part inside the tank, and fixing that costs less than a new toilet. A toilet that rocks or leaks at the base is a different problem, and sometimes the toilet is what has to go.",
+            "Tell us what yours is doing when you call. The quote is free."
           ],
           "image": {
             "slot": "fixture",
@@ -404,57 +436,56 @@
         },
         {
           "type": "prose",
-          "heading": "A Toilet and a Copper Sink in One Visit",
+          "heading": "Running, Rocking, Leaking: What Each Usually Means",
           "body": [
-            "Louis S. had us replace a toilet and do the plumbing on a copper farmhouse sink, and thanked Mark, Steve, North and the whole crew.",
-            "Sherry M. called us about a toilet problem that another plumbing company had messed up, and says we did a great job fixing it."
+            "**Runs after you flush.** Usually a worn part inside the tank, like the flapper or the fill valve. That is often a repair, and it wastes water all day while you wait.",
+            "**Rocks on the floor.** A toilet that moves when you sit down isn't held firmly, and that can loosen the seal underneath. Fix it before it turns into a leak.",
+            "**Leaks at the base.** Water around the bottom can come from the seal under the toilet or from the supply line. Which one it is decides between a repair and a new toilet.",
+            "**Flushes weak or slow.** It could be the tank, or a clog further down the line. Say what you've already tried."
           ]
         },
         {
           "type": "prose",
-          "heading": "A Kitchen Drain Rerouted, a Basement Clean-Out, a Gas Line",
+          "heading": "Toilet First, Copper Sink Second",
           "body": [
-            "Tom M. had his kitchen sink drain rerouted. Rebecca A. had a clean-out installed in the basement. Rebecca H. had us run a new gas line, and says we responded quickly and showed up when we said we would.",
-            "Susan M. called about a sump pump, and we came out the next morning."
+            "Louis S. called about a toilet and ended up having us do the plumbing on his copper farmhouse sink too. He thanked Mark, Steve, North and the whole crew.",
+            "A toilet visit can cover more. Our remodel plumbing includes a tub swapped for a shower, new faucets and a cast iron sink changed to stainless, so say what else needs doing when you call."
           ]
         },
         {
           "type": "prose",
-          "heading": "A Plumber Who Showed Richard E. What to Do Next",
+          "heading": "A Toilet Problem Another Plumber Left Behind",
           "body": [
-            "Richard E. says the plumber showed him maintenance tasks he can do himself to prevent further incidents. Phyllis B. calls the plumber friendly and willing to explain if asked."
+            "Sherry M. had a toilet problem that another plumbing company had messed up, and she says we did a great job fixing it. A repair that didn't hold is worth a second look from a different plumber."
           ]
         },
         {
           "type": "prose",
-          "heading": "Always Mark, Gabe or Heath",
+          "heading": "Taller Seats for Easier Standing: ADA Toilets",
           "body": [
-            "John F. is 100% confident that Mark will get it done professionally and competently. Joleen T. calls Gabriel honest, professional and prompt. Kelly M. says Heath and Creekmore deserve a review, which is rare for her."
+            "ADA toilets sit higher than a standard one, with the seat 17 to 19 inches off the floor, which makes sitting down and standing back up easier for many people. We install ADA toilets and we repair them.",
+            "If someone in your house has trouble with a low toilet, say so when you call, and we'll quote the work the same way."
           ]
         },
         {
           "type": "faq",
-          "heading": "Old Toilets, ADA and Cost: Your Questions",
+          "heading": "Should I Fix My Toilet or Replace It?",
           "items": [
+            {
+              "q": "Should I repair the toilet or replace it?",
+              "a": "If the trouble is a part inside the tank, repair usually costs less. A cracked bowl, or a toilet that keeps failing, points toward replacement. Describe yours and we'll tell you which we'd do."
+            },
             {
               "q": "Do you work on older toilets?",
               "a": "Yes. We can work on any brand, old or new."
             },
             {
-              "q": "Do you install ADA toilets?",
-              "a": "Yes. We repair and install toilets, ADA toilets included."
-            },
-            {
               "q": "What will it cost?",
-              "a": "A quote is free, and we don't print prices on this page. Call and describe what you see."
+              "a": "The quote is free, and new customers get 10% off labor. We don't print prices on this page, so call and describe what you see."
             },
             {
-              "q": "Can you do more than the toilet in one visit?",
-              "a": "Our remodel plumbing covers bathrooms and kitchens: a tub swapped for a shower, new faucets, a cast iron sink changed to stainless. Tell us everything you need done when you call. Dillon D. had Gabe look at a leaking shower and, while he was on site, the kitchen plumbing too. Gabe quoted the price for all the repairs and explained what he did."
-            },
-            {
-              "q": "Can you come today?",
-              "a": "Doreen H. had a free quote from one technician and a second, Mark, a couple of hours later for the fix. Call (316) 264-1342 weekdays, 7:30 to 4:30, and ask for the first opening."
+              "q": "Where do I call, and when?",
+              "a": "Call (316) 264-1342, Monday to Friday, 7:30 AM to 4:30 PM. The office is at 440 South Pattie Street in Wichita."
             }
           ]
         },

@@ -28,7 +28,7 @@
     "Free Estimates",
     "Ben, Kenny and Jayse",
     "Cleaned Up After",
-    "Scheduled in a Day or Two",
+    "Often Scheduled Within Days",
     "Homes and Businesses",
     "[[confirm: [XX] years serving Wichita]]"
   ],
@@ -71,7 +71,7 @@
     {
       "name": "Commercial Electrical",
       "route": null,
-      "blurb": "Commercial properties as well as homes. Call and tell us what's going on."
+      "blurb": "An office light that won't come on, a rental that lost power, a house with dead outlets."
     }
   ],
   "pages": [
@@ -84,7 +84,7 @@
       "hero": {
         "eyebrow": "Dead outlets · old panels · other people's wiring",
         "h1": "Electrician in Wichita, KS — Ballinger Electric",
-        "sub": "Dead outlets, an old panel, wiring a previous owner left behind: we'll come look. We trace the cause, tell you what we found and give you your options and a price before any work starts. Call (316) 213-4513.",
+        "sub": "Dead outlets, an old panel, wiring a previous owner left behind: we'll come look, then give you options and a price before any work starts. Call (316) 213-4513.",
         "primaryCta": {
           "label": "Call (316) 213-4513",
           "action": "call"
@@ -110,8 +110,7 @@
           "type": "split",
           "heading": "Two Electricians Who Went Through Every Outlet",
           "body": [
-            "Some faults don't show themselves on the first try. Scott W. and Ben went at one for a long while before the problem turned up. Liz B. had two electricians go through every outlet and wire involved until they found the fault and fixed it.",
-            "That is what troubleshooting and diagnosis means here. We find the cause, tell you what it was in plain words, and only then talk about the fix."
+            "Some faults don't show themselves on the first try. Scott W. and Ben went at one for a long while before the problem turned up. Liz B. had two electricians go through every outlet and wire involved until they found the fault and fixed it."
           ],
           "image": {
             "slot": "outlet-repair",
@@ -124,15 +123,8 @@
           "type": "split",
           "heading": "Older Houses and Wiring Somebody Else Left",
           "body": [
-            "Kelley D. called Ben about an older home with complicated wiring and gave the work five stars.",
-            "You get a person who comes out, looks and tells you what he found in plain words."
+            "Kelley D. wrote that the crew \"Did an awesome job on my older home with rather complicated wiring.\""
           ],
-          "list": [
-            "We come look at older houses and other people's wiring",
-            "We trace the cause before we talk about fixes",
-            "You hear what we found, in plain words"
-          ],
-          "listStyle": "checks",
           "image": {
             "slot": "inspection",
             "alt": "Man crouched at an outdoor meter beside a brick house",
@@ -154,7 +146,7 @@
           "type": "prose",
           "heading": "A Rental Back On, and a Contractor Called Back",
           "body": [
-            "Tyler H. had a problem at one of the properties and the electricity was back on quickly. Spencer L. got a free estimate, had the work done on time and has Ben scheduled for other properties. Blake has used Ben over five times on several properties."
+            "The electricity at one of Tyler H.'s properties was back on quickly. Spencer L. got a free estimate, had the work finished on time and now has Ben scheduled for other properties. Blake has hired Ben more than five times across several properties."
           ],
           "link": {
             "label": "See electrical repair in Wichita",
@@ -165,7 +157,7 @@
           "type": "prose",
           "heading": "Lighting, From Fans to Custom Design",
           "body": [
-            "Lighting installations are on our service list, and so is custom lighting design. Fixtures, ceiling fans, recessed lights and outdoor lighting go in with supports and wiring added where the room has none."
+            "Fixtures, ceiling fans, recessed lights and outdoor lighting all go in. A fan in a room that never had a light gets supports added in the ceiling first, and custom lighting design is part of the work too."
           ],
           "link": {
             "label": "See lighting installation in Wichita",
@@ -176,8 +168,8 @@
           "type": "split",
           "heading": "An Old Panel, a Full Panel, a Service That Can't Keep Up",
           "body": [
-            "Aaron W. had a 200-amp service upgrade and new power run to the areas he asked for. It took a couple of days, and the house was without power about 5 to 6 hours in total.",
-            "Bill H. had a sub-panel installed and a 220V circuit and a well circuit rewired. Darryk L.'s work passed inspection the first time. Francis E. had surge protection put in and heard how it works."
+            "A 200-amp service upgrade for Aaron W. came with new power run to the areas he asked for. It took a couple of days, and the house was without power about 5 to 6 hours in total.",
+            "Bill H. had a sub-panel installed and a 220V circuit and a well circuit rewired. Darryk L.'s work passed inspection the first time."
           ],
           "image": {
             "slot": "old-panel",
@@ -188,7 +180,7 @@
         },
         {
           "type": "review",
-          "quote": "I really appreciate the excellent communication and how you took the time to explain the specific safety concerns regarding my Federal Pacific panel that other companies wouldn't address. It was incredibly helpful that you took photos and proactively checked in with the city inspector to ensure every detail of the project went smoothly.",
+          "quote": "I really appreciate the excellent communication and how you took the time to explain the specific safety concerns regarding my Federal Pacific panel that other companies wouldn't address…",
           "name": "Wayne R."
         },
         {
@@ -207,14 +199,14 @@
         },
         {
           "type": "review",
-          "quote": "Ben has done multiple jobs for me over the years. After letting him know what I want, he always gives me a few options on how to move forward with my projects. The most recent job, Ben added a 30-amp plug-in for my camper and a transfer switch that directly powers selected circuits in my house that can be powered by my generator or Ford F150 Powerboost!",
+          "quote": "Ben has done multiple jobs for me over the years. After letting him know what I want, he always gives me a few options on how to move forward with my projects.",
           "name": "Rudy P."
         },
         {
           "type": "prose",
           "heading": "A Water Heater Changed Over the Next Day",
           "body": [
-            "Taygen A. had to change a water heater from gas to electric, and the crew offered the next day after the call. Rick R. found them very responsive to get the work scheduled. Naveed N. liked that the appointments were confirmed."
+            "Taygen A. needed a water heater changed from gas to electric, and the crew offered the next day after the call. Rick R. found them very responsive on scheduling, and Naveed N. liked that the appointments were confirmed."
           ]
         },
         {
@@ -308,7 +300,7 @@
             },
             {
               "q": "Do you install generators and surge protection?",
-              "a": "Generator and surge protection upgrades are on our service list, along with circuit additions and wiring upgrades."
+              "a": "Yes. A transfer switch that powers selected circuits from a generator, and surge protection that comes with a walk-through of how it works, are both jobs customers have had done."
             }
           ]
         },
@@ -354,7 +346,7 @@
           "heading": "Which Outlets, Which Rooms, What Changed",
           "body": [
             "You tell us what's happening: which outlets, which rooms, what changed. We get you on the schedule.",
-            "Ben comes out, finds the cause and explains it in plain words before he fixes anything."
+            "Ben comes out, finds the cause and explains it before he fixes anything."
           ],
           "image": {
             "slot": "panel-upgrade",
@@ -367,7 +359,7 @@
           "type": "prose",
           "heading": "A Rusty Well Switch, a Doorbell, a New Stove",
           "body": [
-            "Here is what other customers called about."
+            "Some of the calls that came in:"
           ],
           "items": [
             {
@@ -459,7 +451,7 @@
           "items": [
             {
               "q": "Do you charge to come look at a repair?",
-              "a": "Estimates are free. Ben prices the completed job, not the hour, and you hear the number before work starts. Dave B. wrote \"Price below estimate.\""
+              "a": "Estimates are free. Ben prices the completed job, not the hour. Dave B. wrote \"Price below estimate.\""
             },
             {
               "q": "Do you find the cause before you fix it?",
@@ -514,7 +506,7 @@
           "body": [
             "Tell us the room and what you want to see: a fan, recessed lights, a fixture you've already picked, or lights outside.",
             "Some people bring a fixture, and some ask for options first. Ben comes to look at the room.",
-            "When a light needs power the room doesn't have, the same crew does the wiring upgrades and circuit additions from our service list, so the light and its power are one job, with one crew and one estimate."
+            "When a light needs power the room doesn't have, the same crew adds the circuit, so the light and its power are one job."
           ],
           "list": [
             "The room, and what you want to see in it",
@@ -531,35 +523,10 @@
         },
         {
           "type": "prose",
-          "heading": "A Fan Where There Was No Light, Lights Around the House",
+          "heading": "A Porch Light, Under-Cabinet Lights and a Motion Sensor",
           "body": [
-            "Here is what other customers had put in."
-          ],
-          "items": [
-            {
-              "title": "Ceiling fans",
-              "text": "Supports go into the ceiling, including in rooms that never had a light."
-            },
-            {
-              "title": "Replacement fixtures",
-              "text": "Jeff D. had a light and an outlet replaced."
-            },
-            {
-              "title": "Outdoor and porch lighting",
-              "text": "Robert N. had a back porch light put in alongside new outlets."
-            },
-            {
-              "title": "Under-cabinet lighting",
-              "text": "Virginia B.'s under-cabinet lighting was changed, and she says Ben wanted her to be happy with the outcome."
-            },
-            {
-              "title": "Fixtures for a remodel",
-              "text": "Dusten M.'s bathroom remodel got a new outlet and a few light fixtures."
-            },
-            {
-              "title": "A motion light",
-              "text": "Kenetta M. got advice on options for a motion detector light, and the end result was excellent."
-            }
+            "Jeff D. had a light and an outlet replaced. Robert N. had a back porch light put in alongside new outlets.",
+            "Virginia B.'s under-cabinet lighting was changed, and she says Ben wanted her to be happy with the outcome. Dusten M.'s bathroom remodel ended with a new outlet and a few light fixtures, and Julie added lights in a new kitchen remodel that she says looks amazing. Kenetta M. got advice on options for a motion detector light, and the end result was excellent."
           ]
         },
         {
@@ -579,27 +546,6 @@
           "type": "review",
           "quote": "I had 2 ceiling fans installed and both were where there were no existing lights. They put supports in the ceiling and installed the fans and wired them in. They did a fantastic job and cleaned up when finished.",
           "name": "Ron P."
-        },
-        {
-          "type": "prose",
-          "heading": "Lighting Installations, Lighting Upgrades, Custom Design",
-          "body": [
-            "Our service list names Lighting Installations and Lighting Upgrades, and custom lighting design is part of how we describe the work. Circuit additions are on the list too."
-          ]
-        },
-        {
-          "type": "prose",
-          "heading": "A Smoke Detector Nobody Remembered",
-          "body": [
-            "Belinda R. had an inspection that turned up a missing smoke detector she had forgotten about. She had her kitchen outlets replaced very quickly, and plans to use Ballinger Electric to replace her smoke detectors and for lighting in the future."
-          ]
-        },
-        {
-          "type": "prose",
-          "heading": "Lights Added to a Kitchen Remodel",
-          "body": [
-            "Julie added lights in a new kitchen remodel. She says the work was fast and looks amazing, and she is keeping Ben's name and number for the future."
-          ]
         },
         {
           "type": "review",
@@ -622,7 +568,7 @@
           "items": [
             {
               "q": "Do I need to buy the fixtures first?",
-              "a": "Not always. Some customers had their own light hung, and others weren't sure what to buy or where to start. Tell us the room."
+              "a": "Not always. Some people bring a fixture they've already picked, and Alex K. wasn't sure what to buy or where to start. Tell us the room."
             },
             {
               "q": "Can you put a light or fan where there isn't one?",
@@ -630,19 +576,19 @@
             },
             {
               "q": "Do you do custom lighting design?",
-              "a": "Custom lighting design is on our list. Tell us the room and what you want to see."
+              "a": "Yes. Tell us the room and what you want to see, and Ben will come look."
             },
             {
               "q": "How soon can you do it?",
-              "a": "Some customers on this page were on the schedule the next day after calling."
+              "a": "C T. had the crew out the next day after calling."
             },
             {
               "q": "Will you leave a mess?",
-              "a": "Customers on this page say the crew cleaned up when finished."
+              "a": "Ron P. says the crew cleaned up when finished."
             },
             {
               "q": "Will anyone check in after the job?",
-              "a": "One customer here heard from Ben a week later, asking whether there were any questions."
+              "a": "Kyle W. heard from Ben a week after his family room lighting went in, asking whether he had any questions."
             }
           ]
         },
@@ -662,7 +608,7 @@
       "hero": {
         "eyebrow": "Contact Ballinger Electric",
         "h1": "Contact Ballinger Electric",
-        "sub": "Call and tell us what the house is doing. We'll find a time to come look and give you your options and a price.",
+        "sub": "Call and tell us what the house is doing. We'll find a time to come look.",
         "primaryCta": {
           "label": "Call (316) 213-4513",
           "action": "call"
@@ -682,7 +628,7 @@
           "type": "prose",
           "heading": "Tell Us What Broke: (316) 213-4513",
           "body": [
-            "Call (316) 213-4513 and tell us what's going on and where. We'll find a time to come look. Estimates are free."
+            "Call (316) 213-4513 and tell us what's going on and where. Estimates are free."
           ]
         },
         {
