@@ -118,3 +118,31 @@ Site: services.html, sections Residential, Commercial, Industrial.
 10. Owner replies on Google reviews: check the other 20 reviews on a phone or with the Places pull.
 11. Is there a Facebook page for Linnebur Electric? Not found in search.
 12. Does the business want a contact form added? The site has none.
+
+## Additional sourced material (11/14)
+Checked 2026-11-14. Only lines not already above are listed. Service pages covered: electrical repair and outdoor/landscape lighting. Each line has its URL.
+
+### Own site: services and process (new quotes)
+- [site, services.html, Residential] "We'll work with you on your new home, to ensure you're satisfied with the finished project." https://linneburelectric.com/services.html
+- [site, services.html, Residential] "If your existing home needs additional electrical wiring, our aim is to make it look as if it was always there." https://linneburelectric.com/services.html
+- [site, services.html, Commercial, outdoor lighting] "The outside of your building should reflect the quality of business you offer inside. We'll make sure the lighting, both indoors and outdoors, allows your business to shine." https://linneburelectric.com/services.html
+- [site, services.html, Industrial] "Our employees are committed to communicating with customers to complete jobs in a timely manner, without sacrificing quality." https://linneburelectric.com/services.html
+- [site, services.html, Industrial] "If you're worried about distance, give us a call and see what we can do for you." https://linneburelectric.com/services.html
+- [site, services.html, bottom of page] "Contact Linnebur Electric with any project you may have." https://linneburelectric.com/services.html
+- [site, index.html, Residential] "We know your home is more than just a house. Whether you're starting over or adding to your current residence, we'll make sure it's still home sweet home." https://linneburelectric.com/index.html
+- [site, index.html, Commercial] "Even as projects increase in size, we maintain quality and timeliness." https://linneburelectric.com/index.html
+- [site, about.html] "No matter how small or large your project is, feel free to contact us and find out how we can be 'your switch to a brighter future'." https://linneburelectric.com/about.html
+
+### Other listings
+- [expertise] Expertise.com listing for Linnebur Electric Inc. (read on the Wichita city page, which shows the listing): "family-owned and -operated electrical contracting business" and "serving the Witchita community since 1982" (as printed). https://www.expertise.com/home-improvement/electricians/kansas/wichita
+- Conflict: [expertise] shows "Google: 5.0 stars (19 reviews)". Facts above give Google 4.7 with 23 reviews [google]. https://www.expertise.com/home-improvement/electricians/kansas/wichita
+- Conflict: [birdeye] the header shows 4.6 from 24 reviews, but the body shows "Birdeye (0)" and "Be the first to leave a review." https://reviews.birdeye.com/linnebur-electric-166921526829802
+- Not used: [serviceagent] lists "EV chargers" and "lighting" among eight services, but the page labels the list "Common services for a electricians business" and its description reads "a electricians business." This is template text, not a Linnebur claim. https://serviceagent.ai/directory/kansas/wichita/electrician/linnebur-electric/
+
+### Reviews on other platforms
+- None readable that describe repair or lighting jobs. Birdeye showed no review text. Yelp search pages returned 403. No Facebook, Angi, Houzz or Nextdoor listing for Linnebur was found in search.
+
+### Not retrieved
+- [google] The profile https://www.google.com/maps/place/?q=place_id:ChIJOSlEmSHhuocR8V4pPhYYQTw loaded only its title. No "from the business" text, Q&A or service list was read.
+- BBB re-check (https://www.bbb.org/us/ks/wichita/profile/electrician/linnebur-electric-inc-0714-14187) matches the BBB lines above (Years in Business 44; BBB Accreditation: None; Kent Linnebur, President; no complaints in last 3 years; 0 BBB reviews). No new items.
+- New sourced items this pass: 9 (own site). Other listings added 2 conflicts and 1 exclusion.

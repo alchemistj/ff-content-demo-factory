@@ -42,19 +42,14 @@
       "blurb": "Outlets that are dead, loose or warm, plus switch and fixture repairs."
     },
     {
-      "name": "EV Charger Installation",
-      "route": "/ev-charger-installation-wichita-ks/",
-      "blurb": "A home car charger in the garage. [[confirm: EV charger installation offered]]"
+      "name": "Lighting Installation",
+      "route": "/lighting-installation-wichita-ks/",
+      "blurb": "Dimmers, fixtures, ceiling fans and backyard lights for homes, plus lighting installation and repairs, emergency and security lighting and retrofits for businesses."
     },
     {
       "name": "Remodel and Addition Wiring",
       "route": null,
       "blurb": "New lines and circuits for remodels, additions and construction."
-    },
-    {
-      "name": "Lighting Installation and Repair",
-      "route": null,
-      "blurb": "Dimmers, fixtures and lights installed and repaired."
     },
     {
       "name": "Also on the list",
@@ -184,7 +179,8 @@
           "heading": "Two Jobs, and Crews That Keep You in the Loop",
           "body": [
             "Amfyoyo D. used Brockmeyer twice. He wrote that the crews are courteous and thorough and keep the homeowner in the loop with changes, and that they get the job done right the first time.",
-            "Josephine S. wrote that their electrical jobs are done by Brockmeyer and are always done satisfactorily."
+            "Josephine S. wrote that their electrical jobs are done by Brockmeyer and are always done satisfactorily.",
+            "Kathy S. hired Brockmeyer for electrical trenching. She wrote that the young men who came out were able to answer her questions and were good with her dogs."
           ]
         },
         {
@@ -233,7 +229,7 @@
       "hero": {
         "eyebrow": "Outlets and switches, Wichita",
         "h1": "Outlet Repair in Wichita, KS — Brockmeyer Inc.",
-        "sub": "Worn outlets, a dimmer switch, added plugs, a pool table light. Call (316) 262-1440 and tell us which room.",
+        "sub": "Worn outlets, a dimmer switch, added plugs, a warm plate. Call (316) 262-1440 and tell us what it's doing.",
         "primaryCta": {
           "label": "Call (316) 262-1440",
           "action": "call"
@@ -270,10 +266,10 @@
         },
         {
           "type": "prose",
-          "heading": "A Pool Table Light, Installed Fast",
+          "heading": "What Our Own Summer Safety Post Tells Wichita Homeowners",
           "body": [
-            "Chris C. had a pool table light installed. He wrote that the service was great and fast, and that Shawn and Adam were wonderful to work with.",
-            "Switch, outlet and fixture repairs are on our residential list, along with electrical repairs for pools, hot tubs and spas."
+            "Our summer electrical safety post says not to overload extension cords or outlets. Plugging too many devices into the same circuit can overheat wiring and increase the risk of electrical fires, so it says to spread your appliances out and to use heavy-duty surge protectors when needed.",
+            "The same post says to watch for flickering lights or frequent breaker trips. If an outlet or a breaker is doing either, call us and tell us which one it is."
           ]
         },
         {
@@ -281,13 +277,27 @@
           "heading": "Added Plugs on a Second Job",
           "body": [
             "tony H. hired Brockmeyer for the second time and had plugs added. He wrote that we did everything we said we would, on time.",
-            "Wiring replacement and circuit grounding are on our residential list too."
+            "Dimmer, socket and switch installations and repairs have their own line on our residential list. Switch, outlet and fixture repairs have another, so a repair and an added plug can be one conversation."
           ]
         },
         {
           "type": "review",
           "quote": "Fantastic Electrical contractor!  Fast Quality service at very affordable prices.  The tech really did a great job explaining the work and what was going on.  Highly recommend them for doing work for your next project / repair!!",
           "name": "Thomas G."
+        },
+        {
+          "type": "split",
+          "heading": "Outdoor Outlets and Weatherproof Covers",
+          "body": [
+            "Our blog post on planning a backyard oasis says outdoor outlets must be weatherproof and up to code, with weatherproof covers on all of them. If the outlet by your patio or pool has no cover, tell us when you call.",
+            "Pool, hot tub and spa electrical repairs are on our residential list, and so are wiring replacement and circuit grounding."
+          ],
+          "image": {
+            "slot": "old-panel",
+            "alt": "Older electrical panel in a Wichita basement",
+            "brief": "electrical pool: old-panel"
+          },
+          "imageSide": "left"
         },
         {
           "type": "prose",
@@ -311,6 +321,18 @@
             {
               "q": "What if an inspector wrote up an outlet?",
               "a": "Code violation corrections are on our residential list. Call and tell us what was written up."
+            },
+            {
+              "q": "What does an estimate cost?",
+              "a": "Estimates are free. Call (316) 262-1440 and tell us which outlet or switch it is and which room it's in."
+            },
+            {
+              "q": "Are you open on weekends?",
+              "a": "The office is closed on weekends, so call on a weekday between 7:30 AM and 4:00 PM."
+            },
+            {
+              "q": "Do you do outlets and panels in a business?",
+              "a": "Our commercial list includes breakers, panels and switches, and new electrical installations. Call and describe the building."
             }
           ]
         },
@@ -323,17 +345,17 @@
     },
     {
       "role": "service",
-      "route": "/ev-charger-installation-wichita-ks/",
-      "navLabel": "EV Charger Installation",
-      "keyword": "EV charger installation Wichita KS",
+      "route": "/lighting-installation-wichita-ks/",
+      "navLabel": "Lighting Installation",
+      "keyword": "lighting installation Wichita KS",
       "seo": {
-        "title": "EV Charger Installation in Wichita, KS | Brockmeyer Inc.",
-        "description": "EV charger installation in Wichita, KS from Brockmeyer Inc. Call (316) 262-1440 about your garage and your panel."
+        "title": "Lighting Installation in Wichita, KS | Brockmeyer Inc.",
+        "description": "Lighting installation in Wichita, KS from Brockmeyer Inc. Dimmers, fixtures and backyard lights. Call (316) 262-1440 or ask for a free estimate."
       },
       "hero": {
-        "eyebrow": "Home car chargers, Wichita",
-        "h1": "EV Charger Installation in Wichita, KS — Brockmeyer Inc.",
-        "sub": "A home car charger in the garage. [[confirm: EV charger installation offered]] Call (316) 262-1440.",
+        "eyebrow": "Lighting, Wichita",
+        "h1": "Lighting Installation in Wichita, KS — Brockmeyer Inc.",
+        "sub": "Dimmers, fixtures, a pool table light, string lights in the backyard. Call (316) 262-1440 and tell us which room.",
         "primaryCta": {
           "label": "Call (316) 262-1440",
           "action": "call"
@@ -343,56 +365,99 @@
           "action": "contact"
         },
         "image": {
-          "slot": "ev-charger",
-          "alt": "Electric car plugged into a wall charger in a Wichita garage",
-          "brief": "electrical pool: ev-charger"
+          "slot": "lighting",
+          "alt": "Pendant lights glowing over a kitchen island in a Wichita home",
+          "brief": "electrical pool: lighting"
         }
       },
       "sections": [
         {
           "type": "review",
-          "quote": "These guys installed an electric car charger for me in my garage, I couldn't be more happy with the job they did. They were fast and the quality was amazing. I will be sure to use them whenever I need an electrician.",
-          "name": "Ben W."
+          "quote": "Great and fast service,  Shawn and Adam were wonderful to work with and did a great installation on my pool table light.",
+          "name": "Chris C."
         },
         {
           "type": "split",
-          "heading": "Trenching for a Detached Run, and Panels That Make Room",
+          "heading": "Dimmers, Sockets and Switches, Installed and Repaired",
           "body": [
-            "Kathy S. hired Brockmeyer for electrical trenching. She wrote that the young men who came out answered her questions and were good with her dogs.",
-            "Panel replacements, wiring replacement and circuit grounding, and surge protection are on our residential list."
+            "Our residential list has its own line for dimmer, socket and switch installations and repairs, next to switch, outlet and fixture repairs.",
+            "Ceiling fan installations are on the same list, so mention the fan when you call about the light. Our summer safety post names flickering lights as one of the things to watch for."
           ],
           "image": {
-            "slot": "panel-upgrade",
-            "alt": "Open electrical panel with labeled breakers and wiring",
-            "brief": "electrical pool: panel-upgrade"
+            "slot": "inspection",
+            "alt": "Electrician testing a wall switch while a homeowner watches",
+            "brief": "electrical pool: inspection"
           },
           "imageSide": "right"
         },
         {
           "type": "prose",
-          "heading": "If an Inspector Has Already Written Something Up",
+          "heading": "Backyard Lights, Pools and Spas",
           "body": [
-            "Code violation corrections are on our residential list, so a charger job and an inspector's notes can go in one call."
+            "Our blog post on planning a backyard oasis says outdoor lighting must be weatherproof and up to code, and that all lighting should be rated for outdoor use to prevent corrosion and electrical hazards.",
+            "The same post runs from a simple outlet addition for your string lights to complete electrical wiring for pools, spas or outdoor kitchens, and it says professional installation is key to protecting your family and property."
+          ]
+        },
+        {
+          "type": "split",
+          "heading": "Emergency, Security and Retrofit Lighting for Businesses",
+          "body": [
+            "Our commercial list names lighting installation and repairs and emergency and security lighting. Lighting retrofits are on our homepage list for businesses.",
+            "They sit beside breakers, panels and switches, high and low voltage systems, and data, telephone and cable wiring. The commercial maintenance list adds preventative maintenance, electrical troubleshooting and repairs, backup power and generator installations, lightning protection and environmental controls, and power quality studies and electrical system audits."
+          ],
+          "image": {
+            "slot": "generator",
+            "alt": "Backup generator beside a commercial building in Wichita",
+            "brief": "electrical pool: generator"
+          },
+          "imageSide": "left"
+        },
+        {
+          "type": "prose",
+          "heading": "Weekdays 7:30 to 4:00 at 408 S Ida",
+          "body": [
+            "The office at 408 S Ida is open Monday to Friday, 7:30 AM to 4:00 PM, and closed on weekends. Call (316) 262-1440 and ask for a free estimate.",
+            "Tell us the room or the yard, and whether you have a fixture, a dimmer or a run of lights in mind."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "A Light and a Ceiling Fan in One Room",
+          "body": [
+            "Residential lighting and ceiling fan installations both sit on the list our licensed journeymen electricians work from, along with panel replacements and surge protection. If a room needs a new fixture and a fan, say so when you call.",
+            "We can also look at the dimmer or switch on the wall while we are there, since dimmer and switch work is on the same list."
           ]
         },
         {
           "type": "faq",
-          "heading": "Calling About a Charger?",
+          "heading": "Dimmers, Fixtures and Business Lighting",
           "items": [
             {
-              "q": "Does it cost anything to call?",
-              "a": "No. Call (316) 262-1440 and tell us about the car and the garage."
+              "q": "Do you install dimmers?",
+              "a": "Dimmer, socket and switch installations and repairs are on our residential list."
             },
             {
-              "q": "Are you open on weekends?",
-              "a": "The office is closed on weekends, so call on a weekday."
+              "q": "Do you light a business?",
+              "a": "Lighting installation and repairs and emergency and security lighting are on our commercial list. Call and tell us about the building."
+            },
+            {
+              "q": "Do you work on pool and spa electrical?",
+              "a": "Pool, hot tub and spa electrical repairs are on our residential list, and our backyard blog post covers wiring for pools, spas and outdoor kitchens."
+            },
+            {
+              "q": "What does an estimate cost?",
+              "a": "Estimates are free. Tell us the fixture, the room or the part of the yard when you call."
+            },
+            {
+              "q": "Can you come on a weekend?",
+              "a": "The office is closed Saturday and Sunday, so call Monday to Friday."
             }
           ]
         },
         {
           "type": "callBand",
-          "heading": "Getting an Electric Car? Call.",
-          "text": "Call (316) 262-1440 and tell us about your garage and your panel."
+          "heading": "Lights to Add or a Dimmer to Fix? Call.",
+          "text": "Call (316) 262-1440 and tell us which part of the house or yard."
         }
       ]
     },
@@ -482,7 +547,7 @@
       "Your site has a real page for homes, one for businesses, a blog, and a phone number one tap away. So this isn't a rescue. It's what a full build adds, from our audit.",
       "Your headlines are slogans. The homepage says “From Dim to Dazzling – We've Got the Wiring Right.” The residential page says “Powering Homes, One Wire at a Time!” The contact page has no headline at all.",
       "On a phone, every page is laid out 768 pixels wide inside a 390-pixel screen, so it scrolls sideways. And 58 of the 61 images on your homepage have no alt text.",
-      "Two of your Google reviews describe a tech treating a parent's house with care. The review block on your site showed no text when we checked. The demo opens with electrician in Wichita, KS, gives outlet repair and EV charger installation a page each, and puts your customers' words on the page."
+      "Two of your Google reviews describe a tech treating a parent's house with care. The review block on your site showed no text when we checked. The demo opens with electrician in Wichita, KS, gives outlet repair and lighting installation a page each, and puts your customers' words on the page."
     ],
     "cardsHeading": "Be the Electrician People Find on Google",
     "cardsIntro": "One card per page.",
@@ -517,15 +582,15 @@
         ]
       },
       {
-        "route": "/ev-charger-installation-wichita-ks/",
-        "title": "EV Charger Installation",
-        "why": "New electric car owners search for an installer.",
+        "route": "/lighting-installation-wichita-ks/",
+        "title": "Lighting Installation",
+        "why": "People planning new lights or a dimmer search for an installer.",
         "problems": [
-          "EV charger installation isn't on your site at all, though a review says you installed one in a garage.",
-          "Nobody searching for a charger install can find that you do it."
+          "Lighting installation is not a page on your site. “Dimmer, Socket & Switch Installations & Repairs” is one line in your residential list, and “Lighting Installation & Repairs” is one line in your commercial list.",
+          "Nobody searching for lighting installation in Wichita can find that you do it."
         ],
         "fixes": [
-          "A page for EV charger installation in Wichita, KS, covering what the install needs."
+          "A page for lighting installation in Wichita, KS, covering dimmers, fixtures, backyard lights and business lighting."
         ]
       },
       {
@@ -582,7 +647,7 @@
         "Your site says “Since 2005,” while a Wichita State alumni list says the company was founded in 1988, so which year should every listing use?",
         "Your site and directories list (316) 262-1440, while two BBB listings show 316-771-0064 and 316-308-4488, so which number should every listing use, and are the others still yours?",
         "Your site and directories list 408 S Ida, while another listing shows 225 S Ida St #102, so which address should every listing use?",
-        "Your demo has an EV charger page that rests on one review, and Kathy S. mentions electrical trenching in another, so do you offer both?"
+        "Kathy S. mentions electrical trenching in one of your reviews and a blog post describes outdoor wiring, so which outdoor and underground jobs do you do?"
       ]
     },
     "lead": {

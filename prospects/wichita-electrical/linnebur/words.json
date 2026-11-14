@@ -45,12 +45,12 @@
     {
       "name": "Outlet Installation",
       "route": null,
-      "blurb": "Additional outlets in a home, garage and shed."
+      "blurb": "Additional outlets in a home, garage and shed, wired so the work looks as if it was always there."
     },
     {
       "name": "Ceiling Fan Installation",
       "route": null,
-      "blurb": "Ceiling fans for homes, listed with our residential services."
+      "blurb": "Ceiling fans for homes, listed with our residential services next to phone and TV cabling and service work."
     },
     {
       "name": "LED Lighting Retro-Fits",
@@ -65,12 +65,12 @@
     {
       "name": "Church Wiring",
       "route": null,
-      "blurb": "Churches are on our commercial list with offices, restaurants and dental and medical clinics."
+      "blurb": "Church wiring, office building wiring and new and remodeled commercial space, for offices, restaurants and dental and medical clinics."
     },
     {
       "name": "Grain Handling Facilities",
       "route": null,
-      "blurb": "Industrial work from grain elevators and machine shops to truck repair facilities."
+      "blurb": "Industrial work from grain elevators and machine shops to truck repair facilities, including metal building wiring and 3-phase motor control."
     }
   ],
   "pages": [
@@ -110,10 +110,10 @@
         },
         {
           "type": "split",
-          "heading": "Outlets in the House, the Garage and the Shed",
+          "heading": "Wiring Added to a Home So It Looks Like It Was Always There",
           "body": [
-            "Emily S. had Linnebur Electric add outlets in her home, garage and shed. The crew arrived promptly when they said they would, and she wrote that all the work was completed to her satisfaction and in a timely manner.",
-            "She also wrote that they were very friendly and respectful of her property."
+            "If your existing home needs additional electrical wiring, our aim is to make it look as if it was always there. That is how our services page describes residential work, and it covers added outlets in a house, a garage or a shed.",
+            "We know your home is more than just a house. Whether you're starting over or adding to your current residence, we'll make sure it's still home sweet home."
           ],
           "image": {
             "slot": "outlet-repair",
@@ -160,7 +160,7 @@
           "type": "prose",
           "heading": "A Job Finished Way Before He Expected",
           "body": [
-            "Ken M. wrote that Linnebur completed his job way before he expected it to happen. He wrote that the technician showed great confidence and expertise in what he was doing."
+            "Ken M. wrote that Linnebur completed his job way before he expected it to happen, and that the technician showed great confidence and expertise in what he was doing."
           ]
         },
         {
@@ -176,7 +176,8 @@
           "heading": "Offices, Restaurants, Churches and Clinics",
           "body": [
             "We do New Commercial and Commercial Remodel work, office building wiring and church wiring, for offices, restaurants, churches and dental and medical clinics.",
-            "Companies we have worked for include Andale Farmers Coop, Axiom Engineers, Hentzen Contractors, Morton Buildings and Simpson Construction. That is only a small selection."
+            "Companies we have worked for include Andale Farmers Coop, Axiom Engineers, Hentzen Contractors, Morton Buildings and Simpson Construction. That is only a small selection.",
+            "Even as projects increase in size, we maintain quality and timeliness."
           ]
         },
         {
@@ -184,13 +185,21 @@
           "heading": "Grain Elevators, Machine Shops and Truck Repair Facilities",
           "body": [
             "Industrial jobs range from grain elevators and machine shops to truck repair facilities. Our industrial list includes metal building wiring, 3-phase motor control, grain handling facilities, CNC mill machine wiring and design/build work.",
-            "We enjoy getting out of town to work on agricultural projects, and we have done work in many of the areas around Wichita."
+            "We enjoy getting out of town to work on agricultural projects, and we have done work in many of the areas around Wichita.",
+            "Our industrial staff is committed to communicating with customers to complete jobs in a timely manner, without sacrificing quality. If you're worried about distance, give us a call and see what we can do for you."
           ]
         },
         {
           "type": "review",
           "quote": "Linnebur Electric's quality of work and professionalism are exceptional. Having worked with a number of electricians across the state, this experience has been by far the best. I highly recommend them!",
           "name": "Frank B."
+        },
+        {
+          "type": "prose",
+          "heading": "Any Project, Small or Large",
+          "body": [
+            "No matter how small or large your project is, feel free to contact us and find out how we can be your switch to a brighter future. The services page ends the same way, with an invitation to contact Linnebur Electric with any project you may have."
+          ]
         },
         {
           "type": "faq",
@@ -259,7 +268,7 @@
           "heading": "Service Work, Ceiling Fans, LED Retro-Fits and Cabling",
           "body": [
             "Service Work is on our residential list, next to ceiling fan installation, LED lighting retro-fits and phone and TV cabling. If one visit can cover two of them, say so on the call.",
-            "Older fixtures and lighting can be converted over to LED, so a repair call is also a chance to ask about a retro-fit."
+            "We know your home is more than just a house, so a repair should leave it still home sweet home."
           ],
           "image": {
             "slot": "panel-upgrade",
@@ -275,16 +284,55 @@
         },
         {
           "type": "prose",
-          "heading": "Quick, Knowledgeable and Awesome",
+          "heading": "Awesome People and True Professionals",
           "body": [
-            "CE U. wrote about a quick response and excellent knowledge and service. Mark B. called the people at Linnebur awesome and true professionals."
+            "Mark B. called the people at Linnebur awesome and true professionals. Alex O. wrote about great quality people providing a great quality service."
           ]
         },
         {
           "type": "prose",
           "heading": "Prompt, Thorough, No Complaints",
           "body": [
-            "Matthew M. wrote that Linnebur is always prompt and does thorough work. Blake S. wrote about great quick service and no complaints, and Alex O. wrote about great quality people providing a great quality service."
+            "Matthew M. wrote that Linnebur is always prompt and does thorough work. Blake S. wrote about great quick service and no complaints."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Older Fixtures Converted Over to LED",
+          "body": [
+            "LED lighting retro-fits convert older fixtures and lighting over to LED. A repair call at a house with fixtures from another decade is a natural time to ask about it, and the retro-fit is a named line on our residential services list."
+          ]
+        },
+        {
+          "type": "split",
+          "heading": "The Same Crew Works on Churches and Clinics",
+          "body": [
+            "Our commercial list includes office building wiring and church wiring, and the homes work comes from the same company. Larger projects don't change how we work.",
+            "Three of our Master Electricians have at least 25 years of experience, and we keep a smaller staff for continuity between projects."
+          ],
+          "image": {
+            "slot": "inspection",
+            "alt": "Man crouched at an outdoor meter",
+            "brief": "electrical pool: inspection"
+          },
+          "imageSide": "left"
+        },
+        {
+          "type": "faq",
+          "heading": "Repairs, Retro-Fits and Who Does the Work",
+          "items": [
+            {
+              "q": "Is repair on your list?",
+              "a": "Yes. Service work is one of the named lines on our residential services page."
+            },
+            {
+              "q": "Who comes to the house?",
+              "a": "A crew from a family-owned company that keeps a smaller staff for continuity between projects."
+            },
+            {
+              "q": "Is there a form to fill out?",
+              "a": "No. Call (316) 943-6616 or write to Kent at kent@linneburelectric.com."
+            }
           ]
         },
         {
@@ -329,9 +377,9 @@
         },
         {
           "type": "split",
-          "heading": "Lights Around a Pool and Backyard",
+          "heading": "Lighting Indoors and Out, for the Business Behind It",
           "body": [
-            "Donna S. had Linnebur Electric install outdoor lights around her pool and backyard. She wrote that they had excellent recommendations and prompt, friendly service, and that she would recommend and use them again.",
+            "The outside of your building should reflect the quality of business you offer inside. We'll make sure the lighting, both indoors and outdoors, allows your business to shine. That is how our services page puts it for commercial work.",
             "[[confirm: Outdoor lighting is not on the current services list at linneburelectric.com; confirm it is offered]]"
           ],
           "image": {
@@ -344,14 +392,31 @@
           "type": "prose",
           "heading": "LED Retro-Fits for Fixtures Already Up",
           "body": [
-            "Older outdoor fixtures are a candidate for the LED lighting retro-fits on our residential list. Ceiling fan installation is on the same list for the porch or patio."
+            "Older outdoor fixtures are a candidate for the LED lighting retro-fits on our residential list, which convert older fixtures and lighting over to LED. Ceiling fan installation is on the same list for the porch or patio.",
+            "Whether you're starting from the ground up or looking to renovate an existing structure, that list also covers new residential and residential remodel work."
           ]
         },
         {
           "type": "prose",
           "heading": "Exterior Work for Businesses, From Bucket Trucks to Metal Buildings",
           "body": [
-            "Our commercial work is not only interior. We have the tools and experience to complete exterior electrical work too. Bucket Truck Overhead Services and metal building wiring are on our industrial list."
+            "Our commercial work is not only interior. We have the tools and experience to complete exterior electrical work too, for offices, restaurants, churches and dental and medical clinics.",
+            "Bucket Truck Overhead Services and metal building wiring are on our industrial list, and we have done work in many of the areas around Wichita."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Jobs Out of Town",
+          "body": [
+            "Agricultural projects are work we enjoy, and they are a reason we get out of town. Our industrial list includes grain handling facilities and CNC mill machine wiring.",
+            "Our employees are committed to communicating with customers so jobs finish on time and quality doesn't slip."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Contact Linnebur With Any Project",
+          "body": [
+            "Contact Linnebur Electric with any project you may have. Call (316) 943-6616 or write to kent@linneburelectric.com, and tell us whether it's a yard, a church, a shop or a house."
           ]
         },
         {
