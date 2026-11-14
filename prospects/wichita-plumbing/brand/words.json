@@ -26,7 +26,6 @@
   },
   "trustBar": [
     "Same-Day Repairs",
-    "Homes and Commercial",
     "Serving Wichita Since 1981",
     "Licensed Backflow Testers"
   ],
@@ -39,7 +38,7 @@
     {
       "name": "Drain Cleaning",
       "route": "/drain-cleaning-wichita-ks/",
-      "blurb": "Slow drains and stopped-up sinks, tubs and toilets."
+      "blurb": "Slow drains, plus sewage and drain line repairs."
     },
     {
       "name": "Faucet, Toilet and Sink Repair",
@@ -114,9 +113,9 @@
       "keyword": "plumber wichita ks",
       "seo": null,
       "hero": {
-        "eyebrow": "Wichita, KS · Open Weekdays 7:30 to 4:30 · Phone and Email",
+        "eyebrow": "Wichita, KS · Homes and Commercial",
         "h1": "Plumber in Wichita, KS — Brand Plumbing, Inc.",
-        "sub": "The water heater quit and the shower ran cold. Kathy B. had hers replaced the same day. Call (316) 942-2306 on a weekday.",
+        "sub": "The water heater quit and the shower ran cold. Call (316) 942-2306 before 4:30 on a weekday.",
         "primaryCta": {
           "label": "Call (316) 942-2306",
           "action": "call"
@@ -135,8 +134,8 @@
       "sections": [
         {
           "type": "review",
-          "quote": "We had our hot water heater go out on a Friday, with a guest arriving that day to spend the night. They were so very responsive and able to replace it same day! I considered their price as fair and reasonable too. Thanks for great service!",
-          "name": "Kathy B."
+          "quote": "They have been doing my plumbing since moving here 12 years ago. They are very friendly, knowledgeable, and reasonably priced. They stand by their work.",
+          "name": "Michelle H."
         },
         {
           "type": "split",
@@ -148,20 +147,20 @@
           },
           "body": [
             "It's 6:45 on a weekday. The shower runs cold, there's a puddle at the base of the tank, and the kids need to be out the door by 8. You're holding your phone, wondering if anybody can come today and whether this is a small fix or a whole new tank.",
-            "Hot water shouldn't wait a week, and you shouldn't have to heat pots on the stove."
+            "Water heater repairs are on our same-day list, for natural gas, electric and propane tanks."
           ]
         },
         {
           "type": "split",
-          "heading": "Friday Morning, a Guest Coming, a Dead Tank",
+          "heading": "A Call at 9, Gone by 11",
           "image": {
             "slot": "water-heater-close",
             "alt": "Base of a water heater with a drain valve and a small puddle on the floor",
             "brief": "plumbing pool: water-heater-close"
           },
           "body": [
-            "Kathy B.'s water heater went out on a Friday, with a guest arriving that night. It was replaced the same day.",
-            "Our repairs page lists water heaters among the same-day work, on natural gas, electric and propane tanks. Tell us which one you have and what the tank is doing."
+            "ICT J. was in the middle of a week of losing refrigeration when he called. He spoke with Mark around 9 o'clock in the morning, and by 11 Brand's people had come and left.",
+            "He called it one of the best experiences of that week. A weekday morning call is the kind we like to answer."
           ],
           "link": {
             "label": "See water heaters in Wichita",
@@ -169,42 +168,53 @@
           }
         },
         {
-          "type": "review",
-          "quote": "They have been doing my plumbing since moving here 12 years ago. They are very friendly, knowledgeable, and reasonably priced. They stand by their work.",
-          "name": "Michelle H."
-        },
-        {
-          "type": "prose",
-          "heading": "Customers Who Stay for Years",
-          "body": [
-            "Michelle H. has had Brand on her plumbing for 12 years. Joyce S. wrote, “We have used them for years and we have always been pleased.”",
-            "We've worked in Wichita since 1981, and two of the customers who wrote to Google say they've stayed with us for years."
-          ]
-        },
-        {
           "type": "prose",
           "heading": "Three Trucks, a Rented Garage and a Founder's Home Office",
           "body": [
-            "Brand Plumbing started with three trucks, a rented two-car garage shop and an office in a founder's home. Mike, Marc and Mary Brand are the names on our contact page today.",
+            "Brand Plumbing started in 1981 with three trucks, a rented two-car garage shop and an office in a founder's home. Mike, Marc and Mary Brand are the names on our contact page today.",
             "We're still a Wichita plumbing company, and we'd like you to know who you're calling."
           ]
         },
         {
           "type": "services",
           "heading": "From a Dripping Faucet to Radiant Floor Heat",
-          "intro": "Water heaters and drains come first, and the rest of the plumbing in your house or building is on the same list."
+          "intro": "Repairs, new construction, commercial work and a few specialties, all on one list from our own services page."
         },
         {
           "type": "review",
-          "quote": "This is by far the best plumbing company to use here in Wichita. They are booked up for a reason: they do a great job for a great price. They took the initiative to keep in touch with me on availability because I had a slighty urgent problem and we were able to have service way sooner than expected. They truly work for you!",
-          "name": "Gavin M."
+          "quote": "We remodeled our master shower and it was a mess. Called Brand Plumbing and they came immediately and fixed another's screw up and even came up with solutions we did not know to ask. Honest company would 100% recommend.",
+          "name": "Mary C."
         },
         {
           "type": "prose",
-          "heading": "Toys, Hair Clips and a Bottle of Liquid Plumber",
+          "heading": "Busted Outdoor Faucet, Two Running Toilets, Under Two Hours",
           "body": [
-            "Ryan B. called after his young kids plugged a toilet. Donna M.'s family tried Liquid Plumber first, then called.",
-            "Slow drain repairs and sewage and drain line repairs are both on our list."
+            "Clint D. thought he had a complex job: a busted outdoor faucet and two toilets that kept running and leaking. Brand had it done in less than two hours, and he said it all looked like new.",
+            "He added that it was the latest in many good experiences, and called the work worth every penny."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "The Front Spigot After That Winter",
+          "body": [
+            "Janet R. needed her front spigot taken care of after what she called the terrible winter. She wrote that Brand was so kind and got to her quickly.",
+            "Faucets, garbage disposals, toilets and sinks are all on our same-day repair list."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Years With the Same Plumber",
+          "body": [
+            "Joyce S. wrote that she has used Brand for years and has always been pleased, and that it's nice to have someone you can trust. Julie L. has used us for years too, and calls us very kind and knowledgeable.",
+            "We've been at this in Wichita since 1981."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "What Our Residential Repairs List Covers",
+          "body": [
+            "Our repairs page lists water supply line repairs, sewage and drain line repairs, and slow drain repairs for houses. It also lists specialty fixtures and says we locate hard-to-find parts.",
+            "Slow drains and the lines behind them have a page of their own."
           ],
           "link": {
             "label": "See drain cleaning in Wichita",
@@ -213,16 +223,11 @@
         },
         {
           "type": "prose",
-          "heading": "Homes, Rentals, Offices and New Builds",
+          "heading": "Offices, Rental Properties and Remodels",
           "body": [
-            "Alan H. had a new faucet installed at his office. Clint D. had a busted outdoor faucet and two running toilets fixed in under two hours.",
-            "Our repairs page also lists rental property repairs and remodeling projects, and our services list covers new construction and commercial construction."
+            "On the commercial side, our repairs page lists office repairs, rental property repairs, remodeling projects, sewer repairs and water service repairs.",
+            "Commercial construction is on our services list too, next to new construction and the replacement of water and sewer systems."
           ]
-        },
-        {
-          "type": "review",
-          "quote": "We remodeled our master shower and it was a mess. Called Brand Plumbing and they came immediately and fixed another's screw up and even came up with solutions we did not know to ask. Honest company would 100% recommend.",
-          "name": "Mary C."
         },
         {
           "type": "review",
@@ -230,31 +235,40 @@
           "name": "Gabriel G."
         },
         {
-          "type": "review",
-          "quote": "Great company i deliver supplies to them on a weekly basis and would recommend this company to take care of any of you plumbing needs.",
-          "name": "Alex O."
-        },
-        {
           "type": "prose",
-          "heading": "A Supplier Who Sees Us Every Week",
+          "heading": "Bradford White Tanks, Delta Faucets",
           "body": [
-            "Alex O. delivers supplies to Brand every week, and wrote that he would recommend the company for any plumbing needs.",
-            "We're glad to have a supplier say so. Alex O. sees Brand every week, and that is the whole of what his review claims."
+            "Our product list names Bradford White for water heaters, and Delta, Kohler, Grohe and TOTO for fixtures."
           ]
         },
         {
           "type": "prose",
-          "heading": "What Else Goes In: Brands on Our List",
+          "heading": "Fiberglass Showers, Sump Pumps and PEX",
           "body": [
-            "Our product list names Bradford White for water heaters, Delta, Kohler, Grohe and TOTO for fixtures, Aker for fiberglass tubs and showers, Swanstone for kitchen sinks, Zoeller for sump and sewage ejector pumps, and Uponor for PEX piping.",
-            "Heating and cooling isn't something we list ourselves. Our services page refers HVAC work to Cook's Heating and Cooling, and radiant floor heat is on our own list."
+            "The same list names Aker for fiberglass tubs and showers, Swanstone for kitchen sinks, Zoeller for sump and sewage ejector pumps, and Uponor for PEX piping.",
+            "Heating and cooling isn't something we list ourselves. Our services page refers HVAC work to Cook's Heating and Cooling."
           ]
         },
         {
           "type": "prose",
-          "heading": "Backflow Tests, Softeners, Sprinklers and Radiant Heat",
+          "heading": "The City Requires a Backflow Test Every Year",
           "body": [
-            "The City of Wichita requires an annual backflow test, and our testers are licensed. We also set up water softeners, reverse osmosis and whole-house filters after a water test, design and install yard sprinkler systems, and put in radiant floor heat."
+            "The City of Wichita requires an annual backflow test, and our backflow testers are licensed. It's on our services list as backflow testing."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Softeners, Sprinklers and Radiant Floor Heat",
+          "body": [
+            "We set up water softeners, reverse osmosis and whole-house filters after a water test. We design and install yard sprinkler systems, and we put in radiant floor heat.",
+            "Sewers, septic tanks and repiping are listed too."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Paying Without a Fee",
+          "body": [
+            "You can pay a bill online by ACH or e-check, and our pay-online page says there's no fee for it."
           ]
         },
         {
@@ -263,33 +277,33 @@
           "items": [
             {
               "q": "Can you come today?",
-              "a": "Call (316) 942-2306 before 4:30 on a weekday and ask. We do same-day repairs on faucets, disposals, toilets, sinks and water heaters."
+              "a": "We do same-day repairs on faucets, disposals, toilets, sinks and water heaters. Call (316) 942-2306 and ask what time the truck can be there."
             },
             {
               "q": "Will you actually show up?",
-              "a": "Amy K. wrote, “They show up on time!” Call (316) 942-2306 and ask for a time."
+              "a": "Amy K. wrote, “They show up on time!” Call (316) 942-2306 and ask what time the truck can be there."
             },
             {
               "q": "What's it going to cost?",
-              "a": "We won't guess at a number on this page, because it depends on the job. Kathy B. called her price “fair and reasonable.”"
+              "a": "We won't guess at a number on this page, because it depends on the job. Ask when you call."
             },
             {
               "q": "What if the problem comes back?",
-              "a": "Call (316) 942-2306 and say so. Michelle H. wrote, “They stand by their work.”"
+              "a": "Call (316) 942-2306 and tell us what you saw the first time."
             },
             {
               "q": "Do you work on commercial buildings?",
-              "a": "Yes. Our repairs page lists office repairs, rental property repairs, remodeling projects, sewer repairs and water service repairs, and our services list includes commercial construction."
+              "a": "Yes. We repair offices and rental properties, take on remodeling projects, and do commercial construction."
             },
             {
               "q": "Do you handle new construction?",
-              "a": "New construction is on our services list, for homes and commercial buildings. Gabriel G. used Brand for new construction on his property."
+              "a": "New construction is on our services list, for homes and commercial buildings."
             }
           ]
         },
         {
           "type": "callBand",
-          "heading": "Start With a Phone Call, Before 4:30",
+          "heading": "Water Leaking? Pick Up the Phone",
           "text": "Call (316) 942-2306 and tell us what the water is doing."
         }
       ]
@@ -303,7 +317,7 @@
       "hero": {
         "eyebrow": "Water heaters, Wichita",
         "h1": "Water Heater Replacement in Wichita, KS — Brand Plumbing, Inc.",
-        "sub": "No hot water, or a tank leaking at the base? We do same-day repairs on gas, electric and propane water heaters, and Kathy B. had hers replaced the same day. Call (316) 942-2306.",
+        "sub": "No hot water, or a tank leaking at the base? We do same-day repairs on gas, electric and propane water heaters. [[confirm: water heater replacement offered]] Call (316) 942-2306.",
         "primaryCta": {
           "label": "Call (316) 942-2306",
           "action": "call"
@@ -326,15 +340,31 @@
         },
         {
           "type": "split",
-          "heading": "A Thursday Call, a Friday-Morning Visit",
+          "heading": "Friday Morning, a Guest Coming, a Dead Tank",
           "image": {
             "slot": "water-heater-close",
             "alt": "Base of a water heater with a drain valve and a small puddle on the floor",
             "brief": "plumbing pool: water-heater-close"
           },
           "body": [
-            "Teresa F. called on Thursday and “they were here Friday morning.” She also wrote that she is happy to have Brand for all of her plumbing needs.",
-            "When you call, tell us what the tank is doing: no hot water, lukewarm water, water on the floor, a noise you haven't heard before. Tell us whether it runs on gas, electric or propane."
+            "Kathy B.'s water heater went out on a Friday, with a guest arriving that day to spend the night. She wrote that Brand was very responsive and able to replace it the same day.",
+            "She also called the price fair and reasonable, which is the part people worry about when the tank is already dead."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Gas, Electric or Propane, All on the Same-Day List",
+          "body": [
+            "Our repairs page lists same-day repairs on water heaters, and it names three fuels: natural gas, electric and propane.",
+            "Water heaters sit in that list beside faucets, garbage disposals, toilets and sinks. They're plumbing we do every day, not a special order."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Bradford White Is the Tank Brand on Our Product List",
+          "body": [
+            "Our warranty and products page names Bradford White for water heaters. It also names Delta, Kohler and Grohe fixtures, Zoeller pumps and Uponor PEX piping.",
+            "Which tank suits your house is a question for the phone, once we know what you have."
           ]
         },
         {
@@ -344,39 +374,18 @@
         },
         {
           "type": "prose",
-          "heading": "Three Days Without Hot Water Is a Long Time",
+          "heading": "Booked Up, and Still Kept in Touch",
           "body": [
-            "The dishes pile up. Laundry waits. Somebody in the house takes a cold shower and tells everyone about it. A dead water heater is a small problem that gets big fast, because you use hot water all day without thinking about it.",
-            "That's why we put the phone number first on this page and the explaining second."
+            "Gavin M. wrote that Brand is booked up for a reason. His problem was slightly urgent, and he said we took the initiative to keep in touch with him on availability.",
+            "He got service way sooner than he expected, and wrote that we truly work for you."
           ]
         },
         {
           "type": "prose",
-          "heading": "Whatever It Burns, Say So When You Call",
+          "heading": "When the Heater Is in an Office",
           "body": [
-            "Our repairs page lists same-day repairs on natural gas, electric and propane water heaters. Tell us the fuel, and tell us where in the house the tank sits.",
-            "If it's in a basement, a garage or a utility closet, say so, and tell us how to get to it."
-          ]
-        },
-        {
-          "type": "prose",
-          "heading": "Bradford White Is the Tank Brand on Our List",
-          "body": [
-            "Our product list names Bradford White for water heaters. The same list names Delta, Kohler and Grohe fixtures, Zoeller pumps and Uponor PEX piping on one page.",
-            "We won't pretend to know which tank is right for your house from here. That's a question for the phone."
-          ]
-        },
-        {
-          "type": "review",
-          "quote": "Brand Plumbing is trustworthy, and I can always count on them for honest service.",
-          "name": "Alex L."
-        },
-        {
-          "type": "prose",
-          "heading": "The Water Heater Price, in Customers' Words",
-          "body": [
-            "Kathy B. called her price “fair and reasonable.” Tammy D. wrote “reasonable rates,” and Gavin M. wrote “a great job for a great price.”",
-            "We won't quote a number on this page. Ask when you call."
+            "Alan H. had a new faucet installed at his office by Jeff and Nick, and wrote that he appreciated the prompt service.",
+            "Our repairs page lists office repairs and rental property repairs among our commercial work, with same-day repairs for water heaters."
           ]
         },
         {
@@ -386,55 +395,48 @@
         },
         {
           "type": "prose",
-          "heading": "When the Heater Isn't the Only Thing Dripping",
+          "heading": "If the Tank Isn't the Only Thing Dripping",
           "body": [
-            "Our repairs page lists same-day repairs on faucets, garbage disposals, toilets and sinks, along with water heaters.",
-            "If the tank is only one of the things dripping, mention the others when you call. Say what the faucet and the toilet are doing, too."
+            "Our repairs page lists same-day repairs on faucets, garbage disposals, toilets and sinks. Residential customers can also ask about water supply line repairs.",
+            "One call can cover the heater and whatever else you've been putting off."
           ]
-        },
-        {
-          "type": "review",
-          "quote": "Jeff and Nick came out and installed a new faucet at our office, and they did a great job, were very professional, and pleasant to talk with. I appreciate their prompt service.",
-          "name": "Alan H."
         },
         {
           "type": "prose",
-          "heading": "Landlords, Offices and Rental Houses",
+          "heading": "When It's the Furnace, Not the Tank",
           "body": [
-            "Our repairs page lists office repairs and rental property repairs among the commercial work. If the heater that quit is in a rental or a business, say so when you call.",
-            "Tell us who has the keys, too. A tenant waiting on hot water is waiting on you."
+            "If your trouble is heating or cooling, our services page refers that work to Cook's Heating and Cooling. We don't list HVAC as something we do ourselves.",
+            "Radiant floor heat is on our own services list."
           ]
-        },
-        {
-          "type": "review",
-          "quote": "Great service! I have used them for years. Very kind and knowledgeable.",
-          "name": "Julie L."
         },
         {
           "type": "prose",
-          "heading": "Julie L. Has Used Us for Years; Melissa T. Asked for an Estimate",
+          "heading": "Softeners, Reverse Osmosis and Whole-House Filters",
           "body": [
-            "Julie L. wrote that she has used Brand for years and finds us very kind and knowledgeable. Melissa T. called us out for an estimate and described the visit as very friendly and professional.",
-            "Neither review is about a water heater, so we won't pretend it is. Both are about the person who showed up at the door, which is the part you can't see from here."
+            "Water conditioning is on our services list: water softeners, reverse osmosis and whole-house filters, set up after a water test.",
+            "If you're already having someone out for the tank, those are on our list too, and the water test comes first."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Replacing Water and Sewer Systems",
+          "body": [
+            "Replacement of water and sewer systems is on our services list, and so is repiping.",
+            "If the tank sits at the end of old supply pipes, ask about those when you call."
           ]
         },
         {
           "type": "review",
-          "quote": "They came out and gave me a estimate very friendly and professional",
-          "name": "Melissa T."
-        },
-        {
-          "type": "review",
-          "quote": "Great place for all your plumbing needs.",
-          "name": "Shawn B."
+          "quote": "Brand Plumbing is trustworthy, and I can always count on them for honest service.",
+          "name": "Alex L."
         },
         {
           "type": "faq",
-          "heading": "Can You Replace It Today? What Will It Cost?",
+          "heading": "Can You Come Today? What Will It Cost?",
           "items": [
             {
-              "q": "Can you replace it the same day?",
-              "a": "Call (316) 942-2306 before 4:30 on a weekday and ask for a time. Same-day repairs are on our list, and Kathy B. wrote that hers was replaced the same day."
+              "q": "Can you come the same day?",
+              "a": "Same-day repairs are on our list. Call (316) 942-2306 and ask when the truck can come."
             },
             {
               "q": "Do you work on propane water heaters?",
@@ -442,26 +444,26 @@
             },
             {
               "q": "Do you repair a water heater or only replace it?",
-              "a": "Repairs are on our same-day list. Whether yours needs one or the other, we can only tell you after you describe it, so call and say what the tank is doing."
+              "a": "Repairs are on our same-day list. Tell us what the tank is doing, and we'll tell you which one it is."
             },
             {
               "q": "Which brand of water heater do you carry?",
-              "a": "Bradford White is the one on our product list, next to Delta, Kohler and Grohe fixtures."
+              "a": "Bradford White is the water heater brand on our product list."
             },
             {
               "q": "Can you look at a rental property?",
-              "a": "Rental property repairs are on our list. Tell us it's a rental when you call."
+              "a": "Rental property repairs are on our list."
             },
             {
               "q": "What will a new water heater cost?",
-              "a": "No number here, because we haven't seen your tank. Call (316) 942-2306, tell us the fuel and ask."
+              "a": "There's no number on this page, because we haven't seen your tank. Call (316) 942-2306, tell us the fuel and ask."
             }
           ]
         },
         {
           "type": "callBand",
-          "heading": "Hot Water Out? Say So on the Phone",
-          "text": "If your water heater isn't working, call (316) 942-2306 and tell us what the tank is doing."
+          "heading": "Hot Water Out? Pick Up the Phone",
+          "text": "Call (316) 942-2306 and tell us which fuel the tank runs on."
         }
       ]
     },
@@ -492,8 +494,8 @@
       "sections": [
         {
           "type": "review",
-          "quote": "Both the guys who came were so nice, especially since we tried to fix it first with Liquid Plumber! Excellent service!",
-          "name": "Donna M."
+          "quote": "Super cool guy very friendly and 100% honest! Would definitely recommend and will us them again",
+          "name": "Justin R."
         },
         {
           "type": "split",
@@ -504,58 +506,16 @@
             "brief": "plumbing pool: diagnose"
           },
           "body": [
-            "Tell us which drain is giving you trouble and what it's doing: slow, gurgling, standing water, a smell. Is it one sink, one toilet or the whole house?",
-            "Donna M.'s family tried Liquid Plumber before they called Brand. Plenty of people do. It's a fine first thing to try, and an easy thing to mention on the phone."
-          ]
-        },
-        {
-          "type": "review",
-          "quote": "I have had several toilet issues mostly due to my young kids. It's frustrating how well toys and hair clips plug it up. I called Brand Plumbing. They were on time, professional, and a joy to work with.",
-          "name": "Ryan B."
-        },
-        {
-          "type": "prose",
-          "heading": "The Sink That Gets Slower Every Week",
-          "body": [
-            "You tell yourself it's fine. The sink takes a little longer each week, and then one morning the water doesn't leave at all.",
-            "Our repairs page lists slow drain repairs, so you don't have to wait for the standing water to call. Tell us how long the sink has been slow and whether it's the only one."
+            "Donna M.'s family tried to fix it themselves with Liquid Plumber before they called Brand. She wrote that both guys who came were so nice about it, and called the service excellent.",
+            "Trying a cleaner first is common. It's an easy thing to mention when you call."
           ]
         },
         {
           "type": "prose",
-          "heading": "Gurgling, Burbling and Backing Up",
+          "heading": "Toys and Hair Clips in the Toilet",
           "body": [
-            "You run the washer and the tub starts to gurgle. You flush the toilet and the shower drain burbles back. It's one drain, or it's all of them, and you can't tell which.",
-            "That's worth telling us on the phone: which fixtures, and whether the trouble moves around the house."
-          ]
-        },
-        {
-          "type": "prose",
-          "heading": "Past the Clog: Sewage and Drain Line Repair",
-          "body": [
-            "Our repairs page lists sewage and drain line repairs for houses, and sewer repairs for commercial buildings. Our services list adds sewers, septic tanks, repiping and replacement of water and sewer systems.",
-            "Tell us which fixtures are affected and which part of the house they're in."
-          ]
-        },
-        {
-          "type": "review",
-          "quote": "The second trip was a more puzzling issue and I felt they took the time to figure out the problem, went through their own troubleshooting steps and resolved it.",
-          "name": "Jennifer L."
-        },
-        {
-          "type": "prose",
-          "heading": "Two Trips for Two Different Problems",
-          "body": [
-            "Jennifer L. had Brand out for two separate issues in a short span of time. She wrote that each visit was courteous and efficient, and that on the second, more puzzling one, they took the time to figure out the problem.",
-            "If your drain trouble isn't the first one you've had this year, say so on the phone. The history helps."
-          ]
-        },
-        {
-          "type": "prose",
-          "heading": "Septic Tanks and Sewer Replacement",
-          "body": [
-            "Septic tanks and the replacement of water and sewer systems are both on our services list, along with new construction and commercial construction.",
-            "If your trouble sits outside the house, tell us when you call."
+            "Ryan B. had several toilet issues, mostly from his young kids. He wrote that it's frustrating how well toys and hair clips plug it up.",
+            "Brand was on time, professional and a joy to work with, in his words."
           ]
         },
         {
@@ -565,23 +525,61 @@
         },
         {
           "type": "prose",
-          "heading": "Offices and Rentals Get the Same Call",
+          "heading": "Slow Drain Repairs Are on the Residential List",
           "body": [
-            "Alan H. had us out to his office for a new faucet. Our repairs page splits residential work from commercial, and sewer repairs and water service repairs are on the commercial side.",
-            "Rental property repairs are listed too. Say which kind of building it is, and who we're meeting there."
+            "Our repairs page lists slow drain repairs along with sewage and drain line repairs and water supply line repairs.",
+            "The sink that takes longer every week is on that list before it turns into standing water."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Past the Clog: Sewage and Drain Line Repairs",
+          "body": [
+            "When the trouble is in the line behind the drain, our repairs page lists sewage and drain line repairs for houses.",
+            "Our services page adds sewers, septic tanks, repiping and replacement of water and sewer systems."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Two Issues, Two Visits",
+          "body": [
+            "Jennifer L. had Brand out twice in a short span, for two separate issues. She wrote that each visit was courteous and efficient.",
+            "The second was a more puzzling problem. She said we took the time to figure it out, went through our own troubleshooting steps and resolved it."
           ]
         },
         {
           "type": "review",
-          "quote": "Super cool guy very friendly and 100% honest! Would definitely recommend and will us them again",
-          "name": "Justin R."
+          "quote": "Treated us great! Staff was so friendly and professional.",
+          "name": "Sherri P."
         },
         {
           "type": "prose",
-          "heading": "Fixtures and Parts Around the Drain",
+          "heading": "Septic Tanks and Sewer Replacement",
           "body": [
-            "Our repairs page lists specialty fixtures and hard-to-find parts for residential customers, along with faucets, garbage disposals, toilets and sinks.",
-            "If a drain call turns up a fixture that needs replacing, mention it, and ask about the part."
+            "Septic tanks and the replacement of water and sewer systems are both on our services list.",
+            "Commercial construction and new construction are listed beside them."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Sewer and Water Service Repairs for Commercial Buildings",
+          "body": [
+            "Our repairs page splits residential from commercial. Under commercial it lists sewer repairs and water service repairs, plus office repairs and rental property repairs."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Zoeller for Sump and Sewage Ejector Pumps",
+          "body": [
+            "Our product list names Zoeller for sump and sewage ejector pumps. It's the pump brand on our warranty and products page."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Repiping, With PEX on the Product List",
+          "body": [
+            "Repiping is on our services list, and the product list names Uponor for PEX piping.",
+            "The same page names Delta, Kohler, Grohe and TOTO for fixtures."
           ]
         },
         {
@@ -590,9 +588,12 @@
           "name": "Alireza T."
         },
         {
-          "type": "review",
-          "quote": "Treated us great! Staff was so friendly and professional.",
-          "name": "Sherri P."
+          "type": "prose",
+          "heading": "Fixtures and Parts Around the Drain",
+          "body": [
+            "Our repairs page lists specialty fixtures for residential customers and says we locate hard-to-find parts.",
+            "It also lists faucets, garbage disposals, toilets and sinks as same-day repairs."
+          ]
         },
         {
           "type": "faq",
@@ -600,19 +601,19 @@
           "items": [
             {
               "q": "Can you clear a clogged toilet?",
-              "a": "Ryan B. called Brand when toys and hair clips plugged his toilet. Tell us if it's the only toilet that's stopped up."
+              "a": "Toilets are on our same-day repair list. Call (316) 942-2306 and tell us if it's the only one that's stopped up."
             },
             {
               "q": "Do you handle sewer line problems?",
-              "a": "Yes. Our repairs page lists sewage and drain line repairs, and our services list names sewers, septic tanks and the replacement of water and sewer systems."
+              "a": "Yes. Our repairs page lists sewage and drain line repairs, and our services list names sewers and septic tanks."
             },
             {
               "q": "Do you clear drains in commercial buildings?",
-              "a": "We work on offices and rental properties as well as homes. Tell us what kind of building it is when you call."
+              "a": "We list sewer repairs and water service repairs on the commercial side, and office and rental property repairs too."
             },
             {
               "q": "Can you replace worn pipes, not just clear them?",
-              "a": "Repiping is on our services list, and Uponor PEX piping is among the products on our product list. Call (316) 942-2306 and tell us where the pipes are and what they're doing."
+              "a": "Repiping is on our services list, and Uponor PEX piping is on our product list."
             },
             {
               "q": "Do you work on septic tanks?",
@@ -620,18 +621,18 @@
             },
             {
               "q": "What if I already tried a chemical cleaner?",
-              "a": "Say so on the phone. Donna M. did, and she wrote that both guys who came were nice about it."
+              "a": "Mention it when you call, so we know what went down the drain first."
             },
             {
               "q": "What will it cost?",
-              "a": "No number on this page. Call (316) 942-2306 and tell us which drain and what it's doing."
+              "a": "No number on this page. Call (316) 942-2306 and tell us which drain it is."
             }
           ]
         },
         {
           "type": "callBand",
           "heading": "Call Before It Backs Up",
-          "text": "If a drain is slow or backing up, call (316) 942-2306 and tell us which drain and what it's doing."
+          "text": "If a drain is slow or backing up, call (316) 942-2306 and say which one."
         }
       ]
     },

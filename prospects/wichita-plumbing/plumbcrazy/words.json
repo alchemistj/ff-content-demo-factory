@@ -34,7 +34,7 @@
     {
       "name": "Water Heater Repair",
       "route": "/water-heater-repair-wichita-ks/",
-      "blurb": "A cold shower doesn't always mean a new tank. Carl F. fixed his with a gas valve reset by text."
+      "blurb": "A cold shower doesn't always mean a new tank."
     },
     {
       "name": "Sewer Line Replacement",
@@ -114,8 +114,7 @@
           "heading": "When the Water Won't Stop",
           "body": [
             "It's Sunday. There's water on the garage floor, the main is shut off, and you're standing there with your phone in your hand. You want a real person, a time, and no speech about how busy everybody is.",
-            "We don't charge emergency rates. Call and tell us where the water is coming from.",
-            "Right behind that worry comes the second one: what is this going to cost, and does all of it really need doing?"
+            "We work seven days a week, and we don't charge emergency rates. Call and tell us where the water is coming from."
           ]
         },
         {
@@ -128,20 +127,13 @@
           },
           "imageSide": "right",
           "body": [
-            "Big quote in hand? Customers have been in your spot.",
-            "Courtney B. had leaks in her bathtub faucet and knobs. Brandon saw they came from cheap parts and bad seals, replaced them, and the leaks stopped quickly."
-          ],
-          "list": [
-            "Brandon Y. expected to replace a water heater, and wrote it was fixed \"for a fraction of the cost\"",
-            "Vanessa F. was told a sewer line \"had to be done.\" Brandon \"found an alternative solution that was affordable.\"",
-            "Carl F.'s gas valve was reset by text instructions, saving the cost of a visit",
-            "No funny business, no fake code upgrades"
-          ],
-          "listStyle": "checks"
+            "Courtney B. had leaks in her bathtub faucet and knobs, and another company had quoted her what she called crazy prices and misinformation. Brandon saw the leaks came from cheap parts and bad seals, replaced them, and the leaks stopped quickly.",
+            "Our own site says it plainly: we treat every customer fairly, with no funny business and no fake “code upgrades.”"
+          ]
         },
         {
           "type": "split",
-          "heading": "Told It Has to Be Done?",
+          "heading": "Two Opinions on a Main Drain",
           "image": {
             "slot": "sewer",
             "alt": "Sewer cleanout cap in the grass beside a house",
@@ -149,8 +141,8 @@
           },
           "imageSide": "left",
           "body": [
-            "A big quote lands hard, and it lands harder when the answer is that the work has to be done.",
-            "Before you sign, get a second look. Call us and tell us what you were quoted."
+            "Abu F. wrote that another company charged him $50 to come in and tell him it would cost an arm and a leg to fix his issue.",
+            "Brandon cleaned the main drain at his house, and corrected bad work from a previous plumber when he put the toilet back."
           ]
         },
         {
@@ -170,14 +162,14 @@
         },
         {
           "type": "prose",
-          "heading": "What Customers Have Called About",
+          "heading": "A Sump Pump, a Dishwasher and a Clog: Jobs Behind the Reviews",
           "body": [
             "A few of the jobs behind the reviews, each in the customer's own telling."
           ],
           "items": [
             {
               "title": "A sump pump that stopped working",
-              "text": "Crystal F. called in a panic and wrote that Brandon took her call and returned it later, came by, and was back early the next morning to install a new pump. He had checked the forecast and knew she couldn't wait through the weekend."
+              "text": "Crystal F. called in a panic and wrote that Brandon took her call and returned it later, came by, and was back early the next morning to install a new pump."
             },
             {
               "title": "A dishwasher nobody could install",
@@ -196,30 +188,40 @@
               "text": "Anthony M. had drains moved in concrete and new waterlines and plumbing put in for a basement bathroom."
             },
             {
-              "title": "A dog who got attention too",
+              "title": "A sewer clean out and a leak",
               "text": "Cindy M. has used Plumb Crazy several times for a sewer line clean out and a leak under the sink, and wrote that the dog got attention too."
             }
-          ],
-          "link": {
-            "label": "See water heater repair in Wichita",
-            "route": "/water-heater-repair-wichita-ks/"
-          }
+          ]
         },
         {
           "type": "prose",
-          "heading": "When the Same Repair Keeps Coming Back",
+          "heading": "Derby L. Had Four Jobs Done, Every One on Time",
           "body": [
-            "If the same repair keeps coming back, price the replacement.",
             "Derby L. had a gas line connection, a toilet replacement, a water heater installation and sewer cleaning done, and wrote that Brandon finished every job in a timely manner at a fair price.",
             "We replace water heaters, water service lines and [sewer lines](/sewer-line-replacement-wichita-ks/)."
           ]
         },
         {
           "type": "prose",
+          "heading": "Less Mess Than Expected",
+          "body": [
+            "Michelle C. wrote that the work was fast, and that Brandon made far less of a mess than she thought he would. It also didn't cost her an arm and a leg.",
+            "Daniel W. had work done with minimal removal of existing obstacles, meaning drywall and kitchen cabinets, and found it very fairly priced."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Toilets and Faucets, Water Heaters and Sump Pumps",
+          "body": [
+            "Our plumbing services page lists water heater replacement, toilet replacement, and replacement of kitchen sink, bathroom sink and tub or shower faucets. Sump pumps are on our home page list.",
+            "Those sit next to drain cleaning, sewer cleaning, water service repair and replacement, and full sewer services."
+          ]
+        },
+        {
+          "type": "prose",
           "heading": "Funny Name, Serious Plumbing",
           "body": [
-            "Yes, Plumb Crazy is a funny name. Lance A. wrote, \"Just gotta love this company name!\"",
-            "The plumbing is serious. We treat every customer fairly, with no funny business.",
+            "Yes, Plumb Crazy is a funny name. Lance A. wrote, “Just gotta love this company name!”",
             "Gale T. wrote that Brandon treats customers with the most respect and gives you a handshake when he leaves."
           ]
         },
@@ -251,15 +253,15 @@
         },
         {
           "type": "faq",
-          "heading": "Weekends, Cost and Rentals",
+          "heading": "Saturday Calls, Quotes and Rentals: Your Questions",
           "items": [
             {
               "q": "Can you come on a weekend?",
-              "a": "Carl F. called on a Saturday with a water heater problem and was helped by text message. Crystal F. had a new sump pump in early the next morning."
+              "a": "Yes, any day. Call (316) 871-3006 and tell us where the water is."
             },
             {
               "q": "What will it cost, and does all of it need doing?",
-              "a": "Samuel M. wrote that Brandon always comes in at or under budget. Troy T. wrote that the options were explained to him."
+              "a": "Samuel M. wrote that Brandon always comes in at or under budget. Call (316) 871-3006 with the quote in hand and tell us what it was for."
             },
             {
               "q": "Do you work on rentals and commercial buildings?",
@@ -282,7 +284,7 @@
       "hero": {
         "eyebrow": "Water heaters, Wichita",
         "h1": "Water Heater Repair in Wichita, KS — Plumb Crazy",
-        "sub": "A cold shower doesn't always mean a new tank. Carl F. fixed his with a gas valve reset by text. Call (316) 871-3006.",
+        "sub": "A cold shower doesn't always mean a new tank. Call (316) 871-3006 and tell us what you see at the tank, and what anyone has quoted you.",
         "primaryCta": {
           "label": "Call (316) 871-3006",
           "action": "call"
@@ -301,7 +303,7 @@
         },
         {
           "type": "split",
-          "heading": "Tell Us What the Heater Is Doing",
+          "heading": "Seven Days a Week, and No Emergency Rates",
           "image": {
             "slot": "water-heater-close",
             "alt": "Base of a water heater tank with a drain valve and a small puddle on the floor",
@@ -309,15 +311,9 @@
           },
           "imageSide": "right",
           "body": [
-            "Tell us what the heater is doing: no hot water, not enough of it, a leak, a noise.",
-            "Carl F. called on a Saturday, and they worked through it by text message. They determined his gas valve needed to be reset and texted him instructions to do it himself, which saved him the cost of a visit.",
-            "A cold shower can be a small thing or a big one. Tell us what yours is doing and what you've been quoted so far, and tell us whether it's a gas or an electric heater."
+            "Our plumbing services page says we work seven days a week and don't charge emergency rates.",
+            "The same page lists water heater replacement next to toilet replacement and faucet replacement for kitchen sinks, bathroom sinks and tubs or showers."
           ]
-        },
-        {
-          "type": "review",
-          "quote": "Called Brandon this afternoon to come look at our hot water heater that was leaking. … he was so kind and actually replaced our hot water heater. Hes very knowledgeable and reasonably priced.",
-          "name": "Candi R."
         },
         {
           "type": "prose",
@@ -326,6 +322,11 @@
             "Candi R. called Brandon in the afternoon about a hot water heater that was leaking. She wrote that it was a last-minute call and she wasn't sure how much he could do, but he was able to come right out.",
             "He was kind, and he replaced the heater. She found him knowledgeable and reasonably priced."
           ]
+        },
+        {
+          "type": "review",
+          "quote": "Brandon was super responsive and honest about the pros and cons compared to a tank system. He ended up quoting quite a bit less than some of the others I called and got it installed quickly.",
+          "name": "Marcee L."
         },
         {
           "type": "split",
@@ -337,44 +338,16 @@
           },
           "imageSide": "left",
           "body": [
-            "Leah H. has had Brandon do multiple jobs. He replaced her hot water heater so she was not without hot water for even one day.",
-            "He also rebuilt her faucets when she thought they would need replacing, which she wrote saved her a ton of money."
-          ]
-        },
-        {
-          "type": "review",
-          "quote": "Brandon was super responsive and honest about the pros and cons compared to a tank system. He ended up quoting quite a bit less than some of the others I called and got it installed quickly.",
-          "name": "Marcee L."
-        },
-        {
-          "type": "prose",
-          "heading": "A Tankless Quote and an Honest Comparison",
-          "body": [
-            "When Marcee L.'s tank water heater went out, she called around for quotes on converting to a tankless system. She wrote that Brandon was responsive and honest about the pros and cons compared to a tank system.",
-            "He quoted quite a bit less than some of the others she called, and got it installed quickly."
+            "Leah H. has had Brandon do multiple jobs. He replaced her hot water heater so she was not without hot water for even one day, and rebuilt her faucets when she thought they would need replacing, which she wrote saved her a ton of money.",
+            "He also fixed one of her bathtubs so that it drained better, and found and fixed a leak in her wall. She wrote that you can't even tell he had to get into the wall."
           ]
         },
         {
           "type": "prose",
-          "heading": "Repeat Customers and Their Heaters",
+          "heading": "Brandon, for a Long Time",
           "body": [
             "Mark A. wrote that Brandon has been their plumber for a long time and is always reliable, makes sure his work is done properly every time and easily answers any questions.",
             "Tricia W. has used Brandon for several years and wrote that he is fairly priced and available to look at most jobs within 24 hours."
-          ]
-        },
-        {
-          "type": "prose",
-          "heading": "A Leak in the Wall and a Tub That Drained Better",
-          "body": [
-            "Leah H. wrote that Brandon found and fixed a leak in her wall, and you can't even tell he had to get into the wall. He also fixed one of her bathtubs so that it drained better.",
-            "She wrote that when she calls Brandon for a job, she isn't going to have to worry about it after he fixes it."
-          ]
-        },
-        {
-          "type": "prose",
-          "heading": "A Blog Post About Who Installs It",
-          "body": [
-            "The Plumb Crazy blog has a post on why having a professional install a water heater is important. Its advice is to always have a properly licensed plumber install your water heater."
           ]
         },
         {
@@ -386,24 +359,48 @@
           ]
         },
         {
+          "type": "prose",
+          "heading": "The Coldest Day of the Year",
+          "body": [
+            "Lauren N. wrote that Brandon did an awesome job and was so polite and helpful, even though he had to work on the coldest day of the year."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Thirty Percent Less",
+          "body": [
+            "Justin H. wrote that Brandon was prompt, efficient, friendly and 30% less expensive than everywhere else.",
+            "Ines M., a first-time customer, wrote that Brandon was quick at figuring out the problem and very friendly.",
+            "Joe K. calls Brandon his go-to. David D. wrote that the service was excellent and that he was very friendly and well mannered."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Rentals, Offices and Homes",
+          "body": [
+            "We do residential, commercial and rental plumbing repairs, and a water heater in a rental or a business is on that list.",
+            "Say which kind of building it is when you call."
+          ]
+        },
+        {
           "type": "faq",
           "heading": "Cold Shower? Your Questions",
           "items": [
             {
               "q": "Do I need a whole new water heater?",
-              "a": "Not always. Carl F.'s was a gas valve reset by text, and Candi R.'s leaking heater was replaced."
+              "a": "Not always. Customers describe a gas valve reset by text, and a leaking heater replaced. Tell us what yours is doing."
             },
             {
               "q": "Do you replace water heaters too?",
-              "a": "Yes. Water heater replacement is on our list, and Candi R., Marcee L. and Leah H. have each had one done."
+              "a": "Yes. Water heater replacement is on our plumbing services page."
             },
             {
               "q": "How fast can you come out?",
-              "a": "Candi R. called in the afternoon about a leaking heater and wrote that he was able to come right out. Pamela P. wrote that on both of her calls he was prompt and fixed the issues in a jiffy."
+              "a": "We work seven days a week. Call (316) 871-3006 and ask when Brandon can get there."
             },
             {
               "q": "What will it cost?",
-              "a": "Candi R. wrote that the work was reasonably priced, and Marcee L. wrote that her quote came in lower than some of the others she collected."
+              "a": "We don't charge emergency rates. For a number, call and tell us what the heater is doing and what you've already been quoted."
             },
             {
               "q": "Do you work on rentals and businesses?",
@@ -414,7 +411,7 @@
         {
           "type": "callBand",
           "heading": "Cold Shower? Call",
-          "text": "Call (316) 871-3006 and tell us what the heater is doing."
+          "text": "Call (316) 871-3006 and tell us what you see at the tank."
         }
       ]
     },
@@ -453,8 +450,7 @@
           },
           "imageSide": "right",
           "body": [
-            "Brian N. called about a clogged main line caused by tree roots. He wrote that the crew was quick, professional and very reasonably priced, and that he will call again for all their plumbing needs.",
-            "Cindy M. has used Plumb Crazy several times for a sewer line clean out, and for a leak under the sink. She wrote that Brandon always gave good advice and prompt service."
+            "Brian N. called about a clogged main line caused by tree roots. He wrote that the crew was quick, professional and very reasonably priced, and that he will call again for all their plumbing needs."
           ]
         },
         {
@@ -463,56 +459,32 @@
           "name": "Yoon R."
         },
         {
-          "type": "prose",
-          "heading": "A Flat Price and a Camera",
-          "body": [
-            "Yoon R. found Brandon's number on the website and called. He was given a flat price, and the crew came out within an hour and unclogged the main.",
-            "Yoon wrote that they even used the camera to show what was going on inside the sewer line, without any extra charge.",
-            "If you have a line that keeps clogging, tell us what's been done to it and when it last backed up."
-          ]
-        },
-        {
           "type": "review",
           "quote": "I've hired plumb crazy for multiple sewer and water line replacements as well as routine household plumbing items. Brandon is prompt, courteous and gets the job done right. I highly recommend Plumb Crazy!",
           "name": "Keaton B."
-        },
-        {
-          "type": "split",
-          "heading": "When the Old Line Comes Out",
-          "image": {
-            "slot": "yard-dig",
-            "alt": "Open trench with sewer pipe in a front yard",
-            "brief": "plumbing pool: yard-dig"
-          },
-          "imageSide": "left",
-          "body": [
-            "Don G. had three companies quote him a new sanitary sewer line. He wrote that Brandon had the best idea on how to do the job, and that his crew was professional and efficient.",
-            "Keaton B. has hired Plumb Crazy for multiple sewer and water line replacements as well as routine household plumbing.",
-            "Don G. wrote that he strongly suggests getting Brandon to look at your situation before hiring someone."
-          ]
-        },
-        {
-          "type": "prose",
-          "heading": "A Partially Clogged Kitchen Drain",
-          "body": [
-            "Monisa F. had a partially clogged drain in her kitchen. She wrote that Brandon and Zach were friendly, courteous, professional and knowledgeable, and that they made sure the clog was completely open before putting the pipes back together.",
-            "They also cleaned up any mess completely, and she found the prices fair and reasonable. Kitchen drains are on our list too, next to the sewer work."
-          ]
-        },
-        {
-          "type": "prose",
-          "heading": "Blockages and Replacements at the Rentals",
-          "body": [
-            "Marty B. has used Brandon on his own home and the rentals he owns and manages. He uses him most for sewer blockages, sewer line replacements and water heater installs, and wrote that he has never had a complaint.",
-            "Abu F. had Brandon clean the main drain at his house and wrote that he is an honest, professional plumber."
-          ]
         },
         {
           "type": "prose",
           "heading": "Sewer Cleaning Sits Next to Replacement",
           "body": [
             "Brandon has been cleaning sewer lines for over 16 years. Sewer cleaning is on our list right beside replacement, so clearing a line is a real option for a backup.",
-            "Tyler L. had Brandon out to fix a leak in his main sewer line. While he was there he looked at a couple of other items that came up unexpectedly, and when an emergency call came in on the morning of Tyler's appointment, Brandon asked to move him to an earlier time. Tyler wrote that he appreciated being squeezed in even with higher priority services being requested."
+            "Our sewer replacement page says the crew includes three excavators with over 60 years of combined experience."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "A Kitchen Drain, Put Back Together Right",
+          "body": [
+            "Monisa F. had a partially clogged drain in her kitchen. She wrote that Brandon and Zach were friendly, courteous, professional and knowledgeable, and that they made sure the clog was completely open before putting the pipes back together.",
+            "They also cleaned up any mess completely, and she found the prices fair and reasonable."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Squeezed In Before an Emergency Call",
+          "body": [
+            "Tyler L. had Brandon out for a leak in his main sewer line. On the morning of his appointment an emergency call came in, and Brandon asked to move him earlier.",
+            "Tyler wrote that he appreciated being squeezed in."
           ]
         },
         {
@@ -520,7 +492,39 @@
           "heading": "Water Lines From the City Main to the House",
           "body": [
             "We repair and replace the water service line between the city main and the house. Water service work is on the same list as sewer work.",
-            "Gwendolyn G. had a bust in her main water line and wrote that Brandon and his team fixed it with ease and taught her a few things. Ashleigh K. called about a broken water line on a Friday, and Brandon came on Monday."
+            "Gwendolyn G. had a bust in her main water line and wrote that Brandon and his team fixed it with ease and taught her a few things."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "A Line Problem Fixed Last Week",
+          "body": [
+            "Trish C. wrote that Brandon came out to take care of a problem with their line, was prompt and courteous, and made quick work of fixing it."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "A Contractor's Plumber",
+          "body": [
+            "Chad S. is a contractor, and wrote that he won't let anyone but Brandon plumb his projects: prompt, fair and honest.",
+            "Big D. has had Brandon work at both his home and his office, always on time and always done right."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Fit In, Neat and Priced Better",
+          "body": [
+            "Justin B. wrote that Brandon fit them in, was nice and neat, and was way better priced than any other company they had called.",
+            "Amy M. wrote that he was prompt, fair and courteous, and that she'll be calling him back to do the plumbing work on her house.",
+            "Eric W. wrote that he did a great job and that it was very affordable, and would recommend him to everyone."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Brandon and His Son",
+          "body": [
+            "Paul wrote that Brandon and his son were prompt, courteous and professional, and called it the cleanest install he's ever seen.",
+            "Travis M. wrote that the plumber and his assistant showed up bright and early, diagnosed the problem and fixed it super quick."
           ]
         },
         {
@@ -529,19 +533,19 @@
           "items": [
             {
               "q": "Can the clog just be cleared?",
-              "a": "Sometimes, yes. We clear sewer lines too. Brian N.'s main line, clogged by tree roots, was cleared, and Yoon R.'s was unclogged within the hour."
+              "a": "Sometimes, yes. We clear sewer lines too, and sewer cleaning is on our list next to replacement."
             },
             {
               "q": "Do you replace water lines too?",
-              "a": "Yes. Gwendolyn G.'s busted main water line and Ashleigh K.'s broken water line were both fixed."
+              "a": "Yes. Water service repair and water service replacement both have pages on our site."
             },
             {
               "q": "Do you work on rentals?",
-              "a": "Marty B. has used Brandon for sewer blockages and sewer line replacements at the rentals he owns and manages."
+              "a": "Yes. Rental plumbing repairs are on our list."
             },
             {
-              "q": "Who comes out?",
-              "a": "Paul wrote that Brandon and his son were prompt, courteous and professional. Travis M. wrote that the plumber and his assistant showed up bright and early and fixed the problem quickly."
+              "q": "I have a quote already. Should I get a second look?",
+              "a": "Call (316) 871-3006 and tell us what you were quoted and what it was for."
             }
           ]
         },
@@ -599,8 +603,7 @@
           "type": "prose",
           "heading": "What the First Call Looked Like",
           "body": [
-            "Manieca M. wrote that Brandon and his son answered her call right away and were at her door within the hour. Hart J. wrote that Brandon came out immediately to help him and his family.",
-            "Samuel M. wrote that every time he has called Brandon, he has been prompt to respond."
+            "Manieca M. wrote that Brandon and his son answered her call right away and were at her door within the hour. Hart J. wrote that Brandon came out immediately to help him and his family."
           ]
         },
         {
