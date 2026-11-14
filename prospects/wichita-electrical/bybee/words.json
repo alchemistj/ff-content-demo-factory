@@ -116,18 +116,6 @@
         },
         {
           "type": "split",
-          "heading": "Some Quotes Ask for More Than the House Needs",
-          "body": [
-            "A quote that says the meter, probably the panel, maybe some of the wiring is hard to check from the driveway. We look at the problem before we put a price on it, and we tell you when it is smaller than you feared."
-          ],
-          "image": {
-            "slot": "panel-upgrade",
-            "alt": "Open modern electrical panel with neat wiring",
-            "brief": "electrical pool: panel-upgrade"
-          }
-        },
-        {
-          "type": "split",
           "heading": "The Time We Weren't the Right Fit",
           "body": [
             "Jackie W. wrote that her project was unusual, and that we recognized we weren't the best solution. We informed her about her situation and guided her to next steps."
@@ -259,7 +247,7 @@
             },
             {
               "title": "We clean up",
-              "text": "Work areas are left clean, and the debris leaves with us."
+              "text": "Work areas are left clean."
             }
           ]
         },
@@ -445,7 +433,7 @@
       "hero": {
         "eyebrow": "Electrical panels for Wichita homes",
         "h1": "Electrical Panel Upgrade in Wichita, KS — Bybee Electric",
-        "sub": "A 100 amp sub-panel for the garage, a whole breaker box replaced, a plan for how long the power is off. We look at your panel first and give you the estimate free. Call (316) 409-4186.",
+        "sub": "A 100 amp sub-panel for the garage, a whole breaker box replaced. We look at your panel first and give you the estimate free. Call (316) 409-4186.",
         "primaryCta": {
           "label": "Call (316) 409-4186",
           "action": "call"
@@ -526,7 +514,7 @@
             },
             {
               "q": "How long is the power off?",
-              "a": "Meredith S.'s quote came with an estimate of how long the power would be off. Ask us for yours."
+              "a": "Meredith S.'s quote came with an estimate of how long the power would be off."
             },
             {
               "q": "Can you work alongside my remodeling contractor?",
@@ -777,7 +765,7 @@
           "exclusivity": 3
         },
         {
-          "claim": "We clean up and take the debris with us",
+          "claim": "We clean up after the job",
           "score": 12,
           "appeal": 3,
           "exclusivity": 4

@@ -96,7 +96,7 @@
       "hero": {
         "eyebrow": "West Wichita and 15 towns around it",
         "h1": "Electrician in Wichita, KS — Enegren Electric",
-        "sub": "A tripped breaker, a lightning strike, a room that went dark. Marcus, Trevor and Tyler find the cause, explain it, give you options and let you choose. Call (316) 613-4400.",
+        "sub": "A tripped breaker, a lightning strike, a room that went dark. Customers wrote that the crew found the cause and explained it. Call (316) 613-4400.",
         "primaryCta": {
           "label": "Call (316) 613-4400",
           "action": "call"
@@ -411,10 +411,6 @@
           "heading": "What Do I Say if It's One Dead Room or a Tripped Breaker?",
           "items": [
             {
-              "q": "What do I need to tell you when I call?",
-              "a": "What is tripping or dark, and where in the house it is. If you have lived with other small problems, mention them too."
-            },
-            {
               "q": "Can you inspect the wiring before I decide on a repair?",
               "a": "Yes. Home electrical inspections are part of what we do. Call and tell us what you want looked at."
             },
@@ -506,9 +502,9 @@
         },
         {
           "type": "prose",
-          "heading": "Panel Service Upgrades for Businesses Too",
+          "heading": "A Property Manager Who Keeps Calling",
           "body": [
-            "Tyler H. manages properties and has called on us more than once, and the quote that follows is his."
+            "Tyler H. manages properties and wrote that Marcus and Enegren Electric continue to show up on time."
           ]
         },
         {
@@ -535,11 +531,7 @@
           "items": [
             {
               "q": "What will a panel upgrade cost?",
-              "a": "It depends on what we find, so we won't guess at a number here. We give you an estimate with options to choose from. Call and tell us what you have."
-            },
-            {
-              "q": "Will the power be off?",
-              "a": "Ask us when you book. We can tell you what to expect for your house."
+              "a": "It depends on what we find, so we won't guess at a number here. Nathan R. wrote that he got an estimate with multiple options to choose from. Call and tell us what you have."
             },
             {
               "q": "Can you inspect my electrical before I decide?",

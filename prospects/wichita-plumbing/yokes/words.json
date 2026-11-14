@@ -40,7 +40,7 @@
     {
       "name": "Water Heater Replacement",
       "route": "/water-heater-replacement-wichita-ks/",
-      "blurb": "A repair or a new water heater, tank or tankless, and an honest word on which one you need."
+      "blurb": "A repair or a new water heater, tank or tankless."
     },
     {
       "name": "Drain Cleaning and Repair",
@@ -110,7 +110,7 @@
         },
         {
           "type": "split",
-          "heading": "Called Today, Fixed Within the Hour",
+          "heading": "Dakota W.: Fixed Within the Hour",
           "image": {
             "slot": "leak",
             "alt": "Water dripping from a copper pipe joint",
@@ -186,7 +186,7 @@
           "type": "prose",
           "heading": "A Toilet Unboxed and Installed in About an Hour",
           "body": [
-            "Brandon had a toilet unboxed and installed in about an hour, at two different homes. Michael J. and Kelly P. both wrote that he offered to come back and show them tips so they could learn too.",
+            "Michael J. and Kelly P. both wrote that Brandon had their toilet unboxed and installed in about an hour, and that he offered to come back and show them tips so they could learn too.",
             "Michael J. found the rates much lower than other places he looked at, and Kelly P. called the team the best priced they found, by quite a bit."
           ]
         },

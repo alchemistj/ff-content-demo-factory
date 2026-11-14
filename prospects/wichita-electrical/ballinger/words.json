@@ -41,7 +41,7 @@
     {
       "name": "Lighting Installation",
       "route": "/lighting-installation-wichita-ks/",
-      "blurb": "Fixtures, ceiling fans, recessed lights and outdoor lighting, with supports and wiring added where the room has none."
+      "blurb": "Fixtures, ceiling fans, recessed lights and outdoor lighting."
     },
     {
       "name": "Panel Upgrades",
@@ -71,7 +71,7 @@
     {
       "name": "Commercial Electrical",
       "route": null,
-      "blurb": "An office light that won't come on, a rental that lost power, a house with dead outlets."
+      "blurb": "A commercial light that wouldn't come on, fixed while the owner was out of the office, and a business Ben reached within an hour of the call."
     }
   ],
   "pages": [
@@ -157,7 +157,7 @@
           "type": "prose",
           "heading": "Lighting, From Fans to Custom Design",
           "body": [
-            "Fixtures, ceiling fans, recessed lights and outdoor lighting all go in. A fan in a room that never had a light gets supports added in the ceiling first, and custom lighting design is part of the work too."
+            "Fixtures, ceiling fans, recessed lights and outdoor lighting all go in. One customer had two ceiling fans put in rooms with no existing lights, with supports added in the ceiling. Custom lighting design is on the current site's service list."
           ],
           "link": {
             "label": "See lighting installation in Wichita",
@@ -375,7 +375,7 @@
               "text": "Larry S. had a new stove wired in and every outlet checked."
             },
             {
-              "title": "A plug that was missing",
+              "title": "An extra plug",
               "text": "Jason R. had an issue fixed and an additional plug added, and the crew arrived at the time of the appointment."
             }
           ]
@@ -505,8 +505,7 @@
           "heading": "Tell Us the Room and What You Want to See",
           "body": [
             "Tell us the room and what you want to see: a fan, recessed lights, a fixture you've already picked, or lights outside.",
-            "Some people bring a fixture, and some ask for options first. Ben comes to look at the room.",
-            "When a light needs power the room doesn't have, the same crew adds the circuit, so the light and its power are one job."
+            "Some people bring a fixture, and some ask for options first. Ben comes to look at the room."
           ],
           "list": [
             "The room, and what you want to see in it",
@@ -572,7 +571,7 @@
             },
             {
               "q": "Can you put a light or fan where there isn't one?",
-              "a": "Yes. Supports go into the ceiling and the fan gets wired in."
+              "a": "A customer had two fans put where there were no lights. The crew put supports in the ceiling and wired them in."
             },
             {
               "q": "Do you do custom lighting design?",

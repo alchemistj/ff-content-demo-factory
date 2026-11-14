@@ -264,34 +264,6 @@
           "name": "Rachael R."
         },
         {
-          "type": "split",
-          "heading": "Ceiling Fans, LED Retro-Fits and Cabling Can Ride Along",
-          "body": [
-            "A repair call can cover more than the repair. We also install ceiling fans, convert older fixtures to LED and run phone and TV cabling, so if one visit can cover two jobs, say so on the call.",
-            "Older fixtures from another decade are a natural time to ask about LED. Lighting that was converted over to LED is one less thing to revisit later."
-          ],
-          "image": {
-            "slot": "panel-upgrade",
-            "alt": "Open modern electrical panel",
-            "brief": "electrical pool: panel-upgrade"
-          },
-          "imageSide": "right"
-        },
-        {
-          "type": "split",
-          "heading": "The Same Crew Works on Churches and Clinics",
-          "body": [
-            "Churches, offices and clinics are on the commercial side of the same company, and larger projects don't change how we work.",
-            "We keep a smaller staff for continuity between projects, so the people who come to a house are used to jobs of every size."
-          ],
-          "image": {
-            "slot": "inspection",
-            "alt": "Man crouched at an outdoor meter",
-            "brief": "electrical pool: inspection"
-          },
-          "imageSide": "left"
-        },
-        {
           "type": "faq",
           "heading": "Do You Repair Older Homes? Is There a Form?",
           "items": [
@@ -364,13 +336,6 @@
         },
         {
           "type": "prose",
-          "heading": "LED Retro-Fits for Fixtures Already Up",
-          "body": [
-            "Older outdoor fixtures are a candidate for LED lighting retro-fits, which convert older fixtures and lighting over to LED."
-          ]
-        },
-        {
-          "type": "prose",
           "heading": "Exterior Work for Businesses, From Bucket Trucks to Metal Buildings",
           "body": [
             "Our commercial work is not only interior. We have the tools and experience to complete exterior electrical work too, for offices, restaurants, churches and dental and medical clinics.",
@@ -379,12 +344,8 @@
         },
         {
           "type": "faq",
-          "heading": "Can You Swap the Fixtures I Already Have?",
+          "heading": "Outdoor Lighting Questions",
           "items": [
-            {
-              "q": "Can you replace the fixtures I already have?",
-              "a": "LED lighting retro-fits convert older fixtures over to LED."
-            },
             {
               "q": "Do you light a business, a shop or a church?",
               "a": "Our commercial work includes exterior electrical work. Call (316) 943-6616 and tell us about the building."

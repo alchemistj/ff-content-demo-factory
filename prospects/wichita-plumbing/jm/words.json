@@ -281,9 +281,9 @@
         },
         {
           "type": "split",
-          "heading": "A Floor Drain Backing Up, a Tub That Gurgles",
+          "heading": "A Floor Drain Backing Up",
           "body": [
-            "Tell us what you're seeing: a floor drain backing up, a tub that gurgles when the washer runs, a smell, or water that won't leave the lowest drain in the house."
+            "Tell us what you're seeing: a floor drain backing up, a smell, or water that won't leave the lowest drain in the house."
           ],
           "image": {
             "slot": "drain",
@@ -340,12 +340,8 @@
         },
         {
           "type": "faq",
-          "heading": "Is It My Sewer Line or Just a Drain?",
+          "heading": "Sewer Line Questions",
           "items": [
-            {
-              "q": "How do I tell a sewer problem from a slow drain?",
-              "a": "Notice which drains are slow, which are backing up, and since when. A floor drain backing up, or a tub that gurgles when the washer runs, points toward the main line rather than one fixture."
-            },
             {
               "q": "Do you clear lines and replace them?",
               "a": "We clear sewer lines, install cleanouts and replace lines. Call (316) 491-3612 and tell us what is backing up."
@@ -420,14 +416,6 @@
         },
         {
           "type": "prose",
-          "heading": "Leak, No Heat, or an Old Tank: Repair or Replace?",
-          "body": [
-            "Water coming out of the tank itself usually means the tank is finished, and the answer is a new heater. A leak at a fitting or a valve, or a heater that has simply stopped heating, may be a smaller repair.",
-            "Age matters too. The older the tank, the more a repair is money spent on something that's on its way out. Tell us how old yours is, what it is doing and whether it leaks. We'll weigh a repair against a new heater and say which way we lean. If a repair makes sense, we'll say so, and you decide."
-          ]
-        },
-        {
-          "type": "prose",
           "heading": "A Hot Water Tank Replaced, and a Church Opening the Next Day",
           "body": [
             "A very polite, very efficient crew replaced Rachel M.'s hot water tank, and she says she will be calling for all her future plumbing needs.",
@@ -449,15 +437,6 @@
           ]
         },
         {
-          "type": "prose",
-          "heading": "Gas or Electric, Basement or Closet",
-          "body": [
-            "A gas heater and an electric one aren't swapped the same way, and a tank tucked in a closet is a different job from one in an open basement. When you call, tell us which fuel you have, roughly how big the tank is and where it sits.",
-            "If it's leaking, tell us where the water is coming from and where your shutoff is.",
-        "Most tanks carry a label with the model, the size and the date it was made. Read it to us, and it tells us how old the heater is and what it runs on. If the label is rusted over or hidden behind a wall, give us your best guess."
-          ]
-        },
-        {
           "type": "faq",
           "heading": "Repair, Replace, or Just a Cold Shower?",
           "items": [
@@ -466,8 +445,8 @@
               "a": "Rachel M. wrote that JM quoted the price upfront for her hot water tank replacement. Call (316) 491-3612 and describe what you have."
             },
             {
-              "q": "Can you handle other plumbing in the same visit?",
-              "a": "Dustin C. had a water heater replaced and his old sump pump fixed up, and Carol H. had a heater installed along with a new water service line. Tell us everything that's going wrong when you call."
+              "q": "Do you do other plumbing along with the heater?",
+              "a": "Dustin C. had a water heater replaced and his old sump pump fixed up. Carol H. had a heater installed along with a new water service line and a repipe."
             }
           ]
         },

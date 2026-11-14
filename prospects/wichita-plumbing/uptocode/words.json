@@ -196,7 +196,7 @@
           "type": "prose",
           "heading": "A Valve Failure in a Public Facility",
           "body": [
-            "A valve failed in 44 R.'s public facilities, and they called Up To Code for an emergency repair. We made it out the same day with a very reasonable quote, and everything was fixed in less than 24 hours.",
+            "A valve failed in a customer's public facilities, and they called Up To Code for an emergency repair. We made it out the same day with a very reasonable quote, and everything was fixed in less than 24 hours.",
             "A side project is already planned with us."
           ]
         },
@@ -350,7 +350,7 @@
           "type": "prose",
           "heading": "A Kitchen Drain That Keeps Building Up Oil",
           "body": [
-            "Kathy got more than a fix on a busy day: Ken fit them in, then gave helpful information on keeping a kitchen drain from building up oil."
+            "Kathy wrote that Up To Code fit them in on a busy day and gave helpful information on keeping a kitchen drain from building up oil."
           ]
         },
         {
@@ -509,13 +509,6 @@
           ]
         },
         {
-          "type": "prose",
-          "heading": "Send a Photo of the Fixture and Its Label",
-          "body": [
-            "A photo of the fixture, and of the model number if there is one, helps us tell you more before anyone drives out. Text it to (316) 333-5434 along with a line about what it's doing."
-          ]
-        },
-        {
           "type": "faq",
           "heading": "Repair or Replace? New Fixture Leaking?",
           "items": [
@@ -578,9 +571,9 @@
       "sections": [
         {
           "type": "prose",
-          "heading": "Call Ken, or Text a Photo of What You're Looking At",
+          "heading": "Call Ken or Text Him",
           "body": [
-            "Call (316) 400-7586 to talk to us. To send a photo or a quick message, text (316) 333-5434.",
+            "Call (316) 400-7586 to talk to us. To send a message, text (316) 333-5434.",
             "Tell us what the problem is doing and where it is."
           ]
         },
@@ -588,8 +581,7 @@
           "type": "prose",
           "heading": "Not a Good Time to Talk? Email Instead",
           "body": [
-            "Email contactus@utcwichita.com with your name, a phone number and the address of the house or building.",
-            "Include a photo if you have one."
+            "Email contactus@utcwichita.com with your name, a phone number and the address of the house or building."
           ]
         },
         {

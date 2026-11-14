@@ -39,12 +39,12 @@
     {
       "name": "Sewer Line Replacement",
       "route": "/sewer-line-replacement-wichita-ks/",
-      "blurb": "Sewer and water service lines replaced, after a look at whether the old one can be saved."
+      "blurb": "Sewer and water service lines replaced."
     },
     {
       "name": "Water Heater Replacement",
       "route": null,
-      "blurb": "Leaking heaters replaced, and tank-to-tankless conversions."
+      "blurb": "Leaking heaters replaced."
     },
     {
       "name": "Drain Cleaning",
@@ -376,7 +376,7 @@
             },
             {
               "q": "What will it cost?",
-              "a": "That depends on what the tank needs, and a repair can cost a fraction of a replacement. A tankless quote came in well under the others a customer gathered."
+              "a": "Brandon Y. wrote that his water heater was fixed for a fraction of the cost he expected."
             },
             {
               "q": "Do you work outside Wichita?",
