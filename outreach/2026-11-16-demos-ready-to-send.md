@@ -4,6 +4,8 @@ Built Fri Nov 13 (FF Demos). Draft PRs: ff-astro-demos #76 (demos), ff-content-d
 
 Every demo has: a scored USP (16+ gate), an avatar-led homepage, two service pages for keywords the business's site lacks, a contact page, a strategy page with the confirm card, a Haiku fact-check with Sonnet fixes, and phone and desktop QA (automated checks pass; visual MUST FIX items were fixed).
 
+**Hold advice (weekend 87→93 pass):** Linnebur: hold (13 usable reviews, thin site; both service pages are well under length). Brockmeyer: borderline (service pages 446 and 402 words). Scores and the short-page log are in `outreach/2026-11-14-short-pages.md` and the Sunday summary.
+
 **HOLD: Electricraft.** The founder, Joel Troyer, died in March 2025. The demo and message name no owner. Josh decides whether and when to send it.
 
 ## Ballinger Electric
@@ -20,7 +22,7 @@ Message:
 
 Hey Ben and the Ballinger team,
 
-Your reviews say you'll come look at an electrical mess when other electricians won't give people the time of day. None of the Wichita competitors we checked says that. My daughter and I build websites for service businesses, so we made you a mockup that leads with it: the electrician who comes to look at the hard ones.
+Your reviews say you'll come look at an electrical mess when others won't give people the time of day (Elena W. says it in her review). My daughter and I build websites for service businesses, so we made you a mockup that leads with it: the electrician who comes to look at the hard ones.
 
 https://ballinger.websitepreview.fluidframemarketing.com/
 
@@ -28,7 +30,7 @@ Note: It'll look a lot better with your logo and images on it! Lol
 
 The preview opens with a recent case study, then breaks down why each page is built the way it is. One thing we'd fix: on a phone your current site is laid out almost twice as wide as the screen, so people have to scroll sideways to read it.
 
-We built your electrical repair and lighting installation pages as examples, and we'd love to build the rest. Which brands or manufacturers are you certified with?
+We built your electrical repair and lighting installation pages as examples, and we'd love to build the rest. How often do people call you after another electrician turned them down?
 
 By the way, our contact form system would have recognized this as a solicitation, and you wouldn't have even seen it.
 
@@ -51,13 +53,13 @@ Message:
 
 Hey Bybee team,
 
-Your reviews tell the same story: someone asks about a new meter or a dead outlet, and you look first and tell them straight. One was told to call Evergy first, another was told the meter needed nothing. None of the Wichita electricians we checked says that. My daughter and I build websites for service businesses, so we made you a mockup built around it, "Look First. Tell You Straight.":
+Your reviews tell the same story: someone asks about a new meter or a dead outlet, and you look first and tell them straight. One was told to call Evergy first, another was told the meter needed nothing. My daughter and I build websites for service businesses, so we made you a mockup built around it, "Look First. Tell You Straight.":
 
 https://bybee.websitepreview.fluidframemarketing.com/
 
 Note: It'll look a lot better with your logo and images on it! Lol
 
-The preview opens with a recent case study, then walks through why each page is built the way it is. One thing we'd fix: your site's "Write a Review" button opens a private Hibu survey instead of your Google profile, so new reviews don't reach Google.
+The preview opens with a recent case study, then walks through why each page is built the way it is. One thing we'd fix: your site's "Write a Review" button opens a private Hibu survey instead of your Google profile, so a customer who clicks it never lands on your Google profile.
 
 We built your electrical repair and panel upgrade pages as examples, and we'd love to build the rest. Which brands or manufacturers are you certified with?
 
@@ -82,7 +84,7 @@ Message:
 
 Hey Enegren team,
 
-Your reviews say your electricians find the cause, explain it in plain words and give people options to choose from. None of the Wichita electrician sites we could read says that. My daughter and I build websites for service businesses, so we made you a mockup that leads with it.
+Your reviews say your electricians find the cause, explain it in plain words and give people options to choose from. My daughter and I build websites for service businesses, so we made you a mockup that leads with it.
 
 https://enegren.websitepreview.fluidframemarketing.com/
 
@@ -90,7 +92,7 @@ Note: It'll look a lot better with your logo and images on it! Lol
 
 The preview opens with a recent case study, then breaks down why each page is built the way it is. One thing we'd fix: the headline and quote button at the top of your homepage are hidden when the page loads, so the first screen shows a photo and a menu and no words about what you do.
 
-We built your electrical repair and panel upgrade pages as examples, and we'd love to build the rest. Which brands or manufacturers are you certified with?
+We built your electrical repair and panel upgrade pages as examples, and we'd love to build the rest. Who's on the crew right now? Your reviews name Marcus, Trevor, Tyler and Derek.
 
 By the way, our contact form system would have recognized this as a solicitation, and you wouldn't have even seen it.
 
@@ -113,7 +115,7 @@ Message:
 
 Hey Kent and the Linnebur team,
 
-Dod I. wrote that after several electric contractors looked at a problem, yours were the only guys who could find it and get it fixed. None of the Wichita competitor sites we could read says that. My daughter and I build websites for service businesses, so we made you a mockup that leads with it.
+Dod I. wrote that after several electric contractors looked at a problem, yours were the only guys who could find it and get it fixed. That's a great thing for a customer to say about you. My daughter and I build websites for service businesses, so we made you a mockup that leads with it.
 
 https://linnebur.websitepreview.fluidframemarketing.com/
 
@@ -121,7 +123,7 @@ Note: It'll look a lot better with your logo and images on it! Lol
 
 The preview opens with a recent case study, then breaks down why each page is built the way it is. One thing we'd fix: on a phone, your current home page has no phone number on the first screen, and the Call button sits behind the menu.
 
-We built your electrical repair and outdoor lighting pages as examples, and we'd love to build the rest. Which brands or manufacturers are you certified with?
+We built your electrical repair and outdoor lighting pages as examples, and we'd love to build the rest. What kinds of problems do people call you in on after someone else has already tried?
 
 How'd we do on your company vibe?
 
@@ -142,7 +144,7 @@ Message:
 
 Hey Brockmeyer team,
 
-Two of your reviews show people sending you to their mom's house. One said your tech treated her elderly mother with a lot of respect, and another called you in an emergency for her mom. None of the Wichita competitor sites we could open says anything like that. My daughter and I build websites for service businesses, so we made you a mockup that leads with it: the electrician you can send to your mom's house.
+Two of your reviews show people sending you to their mom's house. One said your tech treated her elderly mother with a lot of respect, and another called you in an emergency for her mom. My daughter and I build websites for service businesses, so we made you a mockup that leads with it: the electrician you can send to your mom's house.
 
 https://brockmeyer.websitepreview.fluidframemarketing.com/
 
@@ -150,7 +152,7 @@ Note: It'll look a lot better with your logo and images on it! Lol
 
 The preview opens with a recent case study, then breaks down why each page is built the way it is. One thing we'd fix: on a phone your current site is laid out almost twice as wide as the screen, so people have to scroll sideways to read it.
 
-We built your outlet repair and EV charger installation pages as examples, and we'd love to build the rest. Which brands or manufacturers are you certified with?
+We built your outlet repair and lighting installation pages as examples, and we'd love to build the rest. When someone calls about their mom's house, what's the first thing you ask?
 
 By the way, our contact form system would have recognized this as a solicitation, and you wouldn't have even seen it.
 
@@ -173,7 +175,7 @@ Message:
 
 Hey ElectriCraft team,
 
-Your reviews tell the same story: you fix the problem, then point out what else you see, like unprotected wires or something an inspector missed. None of the Wichita electrician sites we could read says that. My daughter and I build websites for service businesses, so we made you a mockup built around it, "We Find It. We Tell You.":
+A few of your reviews tell the same story: the electrician fixes the problem, then points out what else they see, like unprotected wires or something an inspector missed. My daughter and I build websites for service businesses, so we made you a mockup built around it, "We Find It. We Tell You.":
 
 https://electricraft.websitepreview.fluidframemarketing.com/
 
@@ -181,7 +183,7 @@ Note: It'll look a lot better with your logo and images on it! Lol
 
 The preview opens with a recent case study, then walks through why each page is built the way it is. One thing we'd fix: on a phone your current site is laid out at desktop width, so visitors have to scroll sideways to read it.
 
-We built your electrical repair and lighting installation pages as examples, and we'd love to build the rest. Which brands or manufacturers are you certified with?
+We built your electrical repair and lighting installation pages as examples, and we'd love to build the rest. What's the hardest problem you've ever tracked down?
 
 By the way, our contact form system would have recognized this as a solicitation, and you wouldn't have even seen it.
 
@@ -206,13 +208,13 @@ Message:
 
 Hey Mike, Marc and Mary,
 
-Two of your Google reviews say a water heater was replaced the same day for one customer and the next morning for another. None of the Wichita competitors we could check says that about water heaters. My daughter and I build websites for service businesses, so we made you a mockup that leads with it: two customers got a new water heater the same day or the next morning.
+Kathy B. wrote on Google that her water heater went out on a Friday and you replaced it the same day. Teresa F. called on a Thursday and wrote that you were there Friday morning. My daughter and I build websites for service businesses, so we made you a mockup that leads with Kathy's story.
 
 https://brandplumbing.websitepreview.fluidframemarketing.com/
 
 Note: It'll look a lot better with your logo and images on it! Lol
 
-The preview opens with a recent case study, then breaks down why each page is built the way it is. One thing we'd fix: your phone number is plain text on every page, so someone on a phone can't tap it to call.
+The preview opens with Kathy's review, then breaks down why each page is built the way it is. One thing we'd fix: your phone number is plain text on every page, so someone on a phone can't tap it to call.
 
 We built your water heater replacement and drain cleaning pages as examples, and we'd love to build the rest. Which brands or manufacturers are you certified with?
 
@@ -237,13 +239,13 @@ Message:
 
 Hey Ken,
 
-One of your Google reviews describes a customer texting you a photo and getting a fair quote right away, while another local company wanted a visit first and a week to get there. None of the Wichita competitors we could read says you can do that. My daughter and I build websites for service businesses, so we made you a mockup that starts there: text us a photo.
+George A. wrote on Google that he texted you a photo of a faulty irrigation valve, got a fair quote right away, and had it replaced the same day. My daughter and I build websites for service businesses, so we made you a mockup that starts there: text a photo, hear the price.
 
 https://uptocode.websitepreview.fluidframemarketing.com/
 
 Note: It'll look a lot better with your logo and images on it! Lol
 
-The preview opens with a recent case study, then breaks down why each page is built the way it is. One thing we'd fix: on a phone your current site is laid out more than twice as wide as the screen, so people have to scroll sideways to read it.
+The preview opens with George's photo quote in the first screen, then breaks down why each page is built the way it is. One thing we'd fix: on a phone your current site is laid out more than twice as wide as the screen, so people have to scroll sideways to read it.
 
 We built your sewer line repair and plumbing fixture installation pages as examples, and we'd love to build the rest. Which brands or manufacturers are you certified with?
 
@@ -270,13 +272,13 @@ Message:
 
 Hey Creekmore team,
 
-Your reviews show families passing your number down, and customers saying you explain the problem clearly. None of the Wichita competitors we could read says third generation. My daughter and I build websites for service businesses, so we made you a mockup that leads with it, "Family Plumbers. Honest Fix First.":
+Your Google reviews show families passing your number down, like Jane K., whose son told her about you and who now calls you for her three grown sons. Your site says third generation. My daughter and I build websites for service businesses, so we made you a mockup that leads with it, "Family Plumbers. Honest Fix First.":
 
 https://creekmore.websitepreview.fluidframemarketing.com/
 
 Note: It'll look a lot better with your logo and images on it! Lol
 
-The preview opens with a recent case study, then walks through why each page is built the way it is. One thing we'd fix: the "See What Our Customers Are Saying" section on your homepage shows a heading and no reviews, so your best proof isn't on the page.
+The preview opens with Richard W.'s review, then walks through why each page is built the way it is. One thing we'd fix: the "See What Our Customers Are Saying" section on your homepage shows a heading and no reviews, so your best proof isn't on the page.
 
 We built your water heater replacement and toilet repair pages as examples, and we'd love to build the rest. Which brands or manufacturers are you certified with?
 
@@ -301,13 +303,13 @@ Message:
 
 Hey Yokes team,
 
-Three of your reviews describe a leak nobody could find, and then you found it. One was a gas leak the gas company couldn't locate, repaired the same day. Another was a leak in pipes leaving the house that no one had identified. None of the Wichita plumbers we could read says that on their site. My daughter and I build websites for service businesses, so we made you a mockup built around it, "Found It. Fixed It.":
+Two of your reviews describe a leak that was hard to find, and then you found it. One was a gas leak the gas company couldn't locate. The other was an unidentified leak in the pipes leaving the house. That's the story we built a mockup around, "Found It. Fixed It.":
 
 https://yokes.websitepreview.fluidframemarketing.com/
 
 Note: It'll look a lot better with your logo and images on it! Lol
 
-The preview opens with a recent case study, then walks through why each page is built the way it is. One thing we'd fix: all five "MORE" buttons on your homepage go to your contact page, so there are no service pages for anyone to land on.
+The preview opens with a customer's own words, then walks through why each page is built the way it is. One thing we'd fix: all five "MORE" buttons on your homepage go to your contact page, so there are no service pages for anyone to land on.
 
 We built your leak detection and water heater replacement pages as examples, and we'd love to build the rest. Which brands or manufacturers are you certified with?
 
@@ -334,13 +336,13 @@ Message:
 
 Hey Plumb Crazy team,
 
-Several of your reviews tell the same story: someone got a big quote somewhere else, then Brandon found a smaller fix. None of the Wichita competitors we could read says that. My daughter and I build websites for service businesses, so we made you a mockup that leads with it: before you pay for the big fix, you hear about the smaller one.
+Two of your reviews tell the same story: someone expected a big bill, then Brandon found a smaller fix. One customer thought the water heater had to be replaced. The other was told a sewer line "had to be done." My daughter and I build websites for service businesses, so we made you a mockup that leads with it: before you pay for the big fix, you hear about the smaller one.
 
 https://plumbcrazy.websitepreview.fluidframemarketing.com/
 
 Note: It'll look a lot better with your logo and images on it! Lol
 
-The preview opens with a recent case study, then breaks down why each page is built the way it is. One thing we'd fix: your About page shows a "page missing" message, so nobody can find out who you are.
+The preview opens with a customer's own words, then breaks down why each page is built the way it is. One thing we'd fix: your About page shows a "page missing" message, so nobody can find out who you are.
 
 We built your water heater repair and sewer line replacement pages as examples, and we'd love to build the rest. Which brands or manufacturers are you certified with?
 
@@ -365,7 +367,7 @@ Message:
 
 Hey JM Plumbing team,
 
-My daughter and I build websites for service businesses. Your reviews keep saying the same thing: you explain what's wrong and why, and show people what you're doing while you do it. So we made you a website mockup built around it, "Explain It. Show It. Fix It.":
+My daughter and I build websites for service businesses. Your reviews keep saying the same thing: you explain what's wrong and why. So we made you a website mockup built around it, "Explain It. Fix It.":
 
 https://jmplumbing.websitepreview.fluidframemarketing.com/
 
