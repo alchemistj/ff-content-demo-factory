@@ -1,6 +1,6 @@
 # Qualify: Griffin HVAC, Peoria IL
 
-- **Scout / brief:** Griffin HVAC. Site http://www.griffinheatingcooling.com/ (redirects to https://www.griffinheatingcooling.com/). Phone (309) 676-0808. Place ID ChIJKbeJYLZZCogRU0RjDWqjaI8. Google reviews: 444 (from QUALIFY.md). Google star rating: not given in the brief, Unverified.
+- **Scout / brief:** Griffin HVAC. Site http://www.griffinheatingcooling.com/ (redirects to https://www.griffinheatingcooling.com/). Phone (309) 676-0808. Place ID ChIJKbeJYLZZCogRU0RjDWqjaI8. Google: 4.9 stars, 444 reviews (Google place data in reviews.json, pulled 2026-11-15 03:29 UTC; QUALIFY.md has the same count).
 - **Route:** https://www.griffinheatingcooling.com/contact-us. Form has a visible reCAPTCHA (v2 "I'm not a robot" checkbox). Blocked by CAPTCHA, so this goes on Josh's hand-send list, not the automated send.
 
 ## Fit (3 of 5)

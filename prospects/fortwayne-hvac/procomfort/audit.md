@@ -9,10 +9,24 @@
 ## What works
 - **Phone links:** `tel:+12603107721` on service pages, visible and tappable at 390 (29 pages at 390 with a visible tel link). The number is 260-310-7721 on the footer and in the header.
 - **No horizontal overflow at 390:** scroll width 390 on every page re-checked after the retry (the two 980-px readings in the first pass were 502 responses).
-- **Contact form:** Gravity Forms on the homepage and every service page (visible, no CAPTCHA). Fields and details in `facts.md`. Not submitted.
+- **Contact form:** Gravity Forms on the homepage and every service page (visible, no CAPTCHA). Details below. Not submitted.
 - **Titles and H1s:** every page has an H1. Titles follow "Service | Pro Comfort".
 - **Desktop nav:** the service links sit in a hover dropdown. My click test could not click them (no click target was found), so click-through is not verified. Direct loads of each service URL return 200. The "Menu" trigger (`#sidewidgetarea`) did not navigate in my test.
 - **Placeholder text:** none found.
+
+## Contact form (not submitted)
+- **URL:** the form is on the homepage, https://www.myprocomfort.com/ (`#gf_1`, Gravity Forms, `method=post`, `action` `/#gf_1`), and on every service page. No dedicated `/contact` page appeared in the crawl.
+- **Fields:**
+  - "YOUR NAME (REQUIRED)": text, `input_1`.
+  - "EMAIL ADDRESS (REQUIRED)": email, `input_2`.
+  - "PHONE NUMBER (REQUIRED)": tel, `input_3`.
+  - "MESSAGE": textarea, `input_4`.
+  - A second text input, `input_5`, visible. Labelled "Phone" in the HTML and "EMAIL" in the rendered text. Unverified which it is.
+  - Submit button: "Submit".
+- **Required:** the labels say "(REQUIRED)". No HTML `required` attribute on any field. No `maxlength`.
+- **Honeypot:** `ak_hp_textarea` (hidden; validation field).
+- **CAPTCHA:** none found (no reCAPTCHA or hCaptcha element or iframe on the page).
+- **Other contact routes:** the phone number (tap-to-call on service pages) and "CONTACT NOW" / "SCHEDULE SERVICE" buttons on the homepage. No email on the site.
 
 ## What's broken, most costly first
 

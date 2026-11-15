@@ -1,14 +1,14 @@
 # Thermal Services, Inc. (TSI), Peoria IL: facts
 
 Sites: https://www.tsipeoria.com/ (checked 2026-11-15, Playwright Chromium).
-Listing data from the brief: phone (309) 699-3333; place ID ChIJSVg4Ir9dCogRQ_1JZJKPeGs. Google reviews: 51 (QUALIFY.md). Google star rating: Unverified (not given in brief, not checked).
+Listing data from the brief: phone (309) 699-3333; place ID ChIJSVg4Ir9dCogRQ_1JZJKPeGs. Google place data (reviews.json, pulled 2026-11-15 03:28 UTC, a separate pull in this folder): 4.9 stars, 51 reviews.
 "Unverified" = not checked, or only seen in a source I could not open, or contradicted.
 
 ## 1. Names and owner
 - **Name on site:** "Thermal Services Inc" (site title and footer). Contact page: "Thermal Services Inc." (https://www.tsipeoria.com/contact-us). Brief: "Thermal Services, Inc." (TSI). The site's logo says "TSI" (https://www.tsipeoria.com/).
 - **Legal name:** Unverified. Illinois SOS not checked.
-- **Owner:** Not named on any page checked. Site says "We're a locally owned and operated company" (https://www.tsipeoria.com/).
-- **Staff named in reviews on the homepage** (roles not stated): Jeff Corey (described as "supervisor Jeff" by Jim Buecker, and "Jeff Corey with TSI" by Ben Tellefson), Patrick, Tisha, Luke, Joe, Derek (https://www.tsipeoria.com/).
+- **Owner:** Not named on any page checked. Site says "We're a locally owned and operated company" (https://www.tsipeoria.com/). Google owner replies (43 of 46 text reviews have a reply, reviews.json) are signed "TSI" or not signed, and none names the owner.
+- **Staff named in reviews** (roles not stated): Jeff Corey (described as "supervisor Jeff" by Jim Buecker, and "Jeff Corey with TSI" by Ben Tellefson), Patrick, Tisha, Luke, Joe, Derek (https://www.tsipeoria.com/ homepage; Google reviews in reviews.json).
 - **Owner first name:** Unverified. Open question.
 
 ## 2. Phones and address
@@ -16,7 +16,8 @@ Listing data from the brief: phone (309) 699-3333; place ID ChIJSVg4Ir9dCogRQ_1J
 - **Listing phone (brief):** (309) 699-3333.
 - **Conflict:** Conflict: site phone 309-324-5317 vs listing phone (309) 699-3333. Both are in the brief's sources. Which one to show in the demo is open.
 - **Address:** 2200 W Altorfer Drive, Peoria, IL 61615 (https://www.tsipeoria.com/, Address block; the site's map link is goo.gl/maps/ajfZ1huBsPZebPiX9).
-- **Google address:** Unverified (not checked against the listing).
+- **Google address (reviews.json place data):** 2200 W Altorfer Dr Ste D1, Peoria, IL 61615. Conflict: the Google address has "Ste D1"; the site has no suite. Minor, but the demo should use one format.
+- **Google phone (reviews.json):** (309) 699-3333, matches the brief.
 
 ## 3. Service area (as the site states it)
 - **Residential:** Bartonville, Brimfield, Canton, Carlock, Chillicothe, Danvers, Delevan, Dunlap, East Peoria, Edelstein, Edwards, El Paso, Eureka, Germantown Hills, Hopedale, Mackinaw, Mapleton, Metamora, Morton, Mossville, Pekin, Peoria, Peoria Heights, Roanoke, Tremont, Washington (https://www.tsipeoria.com/).
@@ -54,11 +55,12 @@ Listing data from the brief: phone (309) 699-3333; place ID ChIJSVg4Ir9dCogRQ_1J
 
 ## 10. Reviews on the site
 - Homepage shows 11 named five-star quotes, for example Travis Wallenfang, Ben Tellefson, Jim Buecker, Chelsea Krejci, Tina Carlson O'Hara (https://www.tsipeoria.com/). Dates are not shown.
-- **Google reviews count:** 51 (QUALIFY.md, scout data). Not re-checked.
+- **Google reviews count:** 51 and 4.9 stars (reviews.json place data). Not re-checked live.
 
 ## 11. Conflicts
 - **Conflict: phone.** Site 309-324-5317 vs listing (309) 699-3333 (see section 2).
-- **Conflict: none found** on hours, address or services between the site and the brief. Google hours not checked.
+- **Conflict: address suite.** Site: 2200 W Altorfer Drive. Google place data: 2200 W Altorfer Dr Ste D1.
+- **Conflict: none else found** on hours or services between the site and the brief. Google hours not checked.
 
 ## Open questions (for the onboarding call)
 1. Owner's full name and role. Who signs replies to Google reviews?

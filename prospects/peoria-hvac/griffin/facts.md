@@ -1,20 +1,21 @@
 # Griffin HVAC (Peoria IL): facts
 
 Sites: https://www.griffinheatingcooling.com/ and its pages (checked 2026-11-15, Playwright Chromium).
-Listing data from the brief: phone (309) 676-0808; place ID ChIJKbeJYLZZCogRU0RjDWqjaI8. Google reviews: 444 (QUALIFY.md). Google star rating: Unverified (not in brief, not checked).
+Listing data from the brief: phone (309) 676-0808; place ID ChIJKbeJYLZZCogRU0RjDWqjaI8. Google place data (reviews.json, pulled 2026-11-15 03:29 UTC, a separate pull in this folder): 4.9 stars, 444 reviews.
 "Unverified" = not checked, or only seen in a source I could not open, or contradicted.
 
 ## 1. Names and owner
 - **Name on site:** "Griffin HVAC" (site title and footer). The About page says the name changed: "Griffin heating, cooling and home services will now be Griffin HVAC" (https://www.griffinheatingcooling.com/about-us).
 - **Legal name:** the About page says "my wife and I started CPDI, LLC" and that Griffin operates under that business (https://www.griffinheatingcooling.com/about-us). Illinois SOS record not checked. Unverified.
 - **Owner:** The About page is signed by the current owner, who is not named in the text ("I"). The page says the owners before were Joe and Jane Ingersoll, that Joe Ingersoll died in March 2019, and that the current owner bought the business in 2019 (https://www.griffinheatingcooling.com/about-us).
-- **Owner first name:** "Doug" is suggested by the contact email douggriffinheatcool@gmail.com (https://www.griffinheatingcooling.com/contact-us) and a homepage review: "Doug & company are thr best!" (Diane Donohue, https://www.griffinheatingcooling.com/). Not confirmed on the site. Unverified.
-- **Staff named in reviews:** Josh (technician), "Cohen" (technician), per homepage reviews (https://www.griffinheatingcooling.com/). Roles beyond "technician" not stated.
+- **Owner first name:** "Doug". Support: a Google reviewer writes "Doug (owner)" (Jigar P., 2026-08-11, reviews.json). The contact email is douggriffinheatcool@gmail.com (https://www.griffinheatingcooling.com/contact-us). Not stated on the site itself. Surname: Unverified.
+- **Staff named in reviews** (roles not stated beyond "technician"): Josh, Cohen, Garrett (homepage reviews at https://www.griffinheatingcooling.com/; Google reviews in reviews.json).
+- **Google owner replies:** 37 of 61 text reviews have a reply (reviews.json). The replies are not signed with a name.
 
 ## 2. Phones, address, email
 - **Phone:** (309) 676-0808 everywhere, `tel:309-676-0808` (https://www.griffinheatingcooling.com/, Contact block on each page). Matches the listing in the brief. No conflict.
 - **Address (site):** 1007 W Detweiller Dr, Peoria, IL 61615 (https://www.griffinheatingcooling.com/contact-us, Contact block).
-- **Google address:** not in the brief and not checked. Unverified.
+- **Google address (reviews.json place data):** 1007 W Detweiller Dr, Peoria, IL 61615. Matches the site.
 - **Email:** douggriffinheatcool@gmail.com, a personal Gmail address (https://www.griffinheatingcooling.com/contact-us).
 
 ## 3. Service area (as the site states it)
@@ -36,10 +37,10 @@ Listing data from the brief: phone (309) 676-0808; place ID ChIJKbeJYLZZCogRU0Rj
 - **Weekends:** not stated, except that maintenance check-ups are weekday-only (homepage notice above).
 
 ## 6. Years, licenses, certifications
-- **Years:** "servicing the Peoria area since 1963" (https://www.griffinheatingcooling.com/about-us). Current owners' start date: 2019 (about page, "in March of 2019").
+- **Years:** "servicing the Peoria area since 1963" (https://www.griffinheatingcooling.com/about-us). Current owner took over around 2019 (About page, which dates Joe Ingersoll's death to March 2019).
 - **License numbers:** none printed on the site. Unverified.
-- **Ameren:** the About page mentions the Ameren IQ program as the former owner's work and as a role the current owner was to take on. Not a stated current certification. Unverified.
-- **BBB, Yelp, Kansas and Illinois registrations:** not found on the site. Not checked.
+- **Ameren:** the About page mentions the Ameren IQ program, which the current owner did at a previous job and was to take on at Griffin. Not a stated current certification. Unverified.
+- **BBB, Yelp, Illinois SOS:** not found on the site. Not checked.
 
 ## 7. Financing and warranties
 - **Financing:** "we have partnered with GOODLEAP to provide you with the loan that works for you" (https://www.griffinheatingcooling.com/). The financing page says: "GoodLeap uses a soft credit check until funding and the highest score from all 3 bureaus to see if you qualify" (https://www.griffinheatingcooling.com/financing). Rates and terms: not stated.
@@ -56,16 +57,16 @@ Listing data from the brief: phone (309) 676-0808; place ID ChIJKbeJYLZZCogRU0Rj
 
 ## 10. Conflicts
 - **Conflict: hours.** Homepage, financing, maintenance: Mon-Fri 8:00 am to 6:00 pm. Contact page: Mon-Fri 8:00 am to 5:00 pm (section 5).
-- **Conflict: none found** on phone (site and brief match) or name (the change from "Griffin Heating and Cooling" to "Griffin HVAC" is stated on the About page, not a conflict).
-- **Google address and hours:** not checked against the listing.
+- **Conflict: none found** on phone (site, brief and Google data match) or address or name (the change from "Griffin Heating and Cooling" to "Griffin HVAC" is stated on the About page, not a conflict).
+- **Google hours:** not checked against the listing.
 
 ## Open questions (for the onboarding call)
-1. Owner's full name, and who writes replies to Google reviews. Is "Doug" right?
+1. Owner's full name (surname unknown), and who writes replies to Google reviews. Is "Doug" right?
 2. Legal entity: is CPDI, LLC the operating company? Illinois SOS record and formation date.
 3. IL license numbers, and whether any are printed on the work or trucks.
 4. Warranty terms, financing terms with GoodLeap, and any financing discount.
 5. Real weekday closing time: 5:00 pm or 6:00 pm?
 6. Amana dealer status: can they share a locator link or dealer number?
-7. Google address and hours: match 1007 W Detweiller Dr?
+7. Google hours: confirm against the listing.
 8. The "Slide title" filler in the homepage HTML: is it visible on the live site? Remove in the demo either way.
 9. Do they want the online booking on the page, or call-only (the homepage notice says the online schedule is not reliable)?

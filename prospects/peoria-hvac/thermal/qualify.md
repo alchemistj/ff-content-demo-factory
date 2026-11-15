@@ -1,6 +1,6 @@
 # Qualify: Thermal Services, Inc. (TSI), Peoria IL
 
-- **Scout / brief:** Thermal Services, Inc. (TSI). Site https://www.tsipeoria.com/ . Phone from listing (309) 699-3333. Place ID ChIJSVg4Ir9dCogRQ_1JZJKPeGs. Google reviews: 51 (from QUALIFY.md). Google star rating: not given in the brief, Unverified.
+- **Scout / brief:** Thermal Services, Inc. (TSI). Site https://www.tsipeoria.com/ . Phone from listing (309) 699-3333. Place ID ChIJSVg4Ir9dCogRQ_1JZJKPeGs. Google: 4.9 stars, 51 reviews (Google place data in reviews.json, pulled 2026-11-15 03:28 UTC; QUALIFY.md has the same count).
 - **Kind:** small single-location HVAC specialist (since 2004, one address: 2200 W Altorfer Drive, Peoria IL 61615, per https://www.tsipeoria.com/). Residential and commercial HVAC, plus generators.
 - **Route:** https://www.tsipeoria.com/contact-us. Plain form, no CAPTCHA (see audit.md).
 
