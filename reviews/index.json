@@ -543,6 +543,18 @@
       "pulledAt": "2026-11-09T18:31:52.100Z"
     },
     {
+      "slug": "jgroofing-peoria",
+      "name": "JG Roofing and Company",
+      "placeId": "ChIJmXb-shALiIMR5QWmuAyp6ZE",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 64,
+        "withText": 61,
+        "ratingOnly": 3
+      },
+      "pulledAt": "2026-11-15T03:20:06.616Z"
+    },
+    {
       "slug": "jm-plumbing-wichita",
       "name": "JM Plumbing, LLC",
       "placeId": "ChIJV-VZZm7kuocR53ahCpWYLbg",
