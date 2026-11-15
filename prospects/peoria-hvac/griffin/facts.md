@@ -53,7 +53,7 @@ Listing data from the brief: phone (309) 676-0808; place ID ChIJKbeJYLZZCogRU0Rj
 
 ## 9. Reviews on the site
 - Homepage shows about ten reviews with first name and zip (for example Beverly Golianis, Chelsea Winn, Ross Somerville, Tony Grow, Joseph Muir) (https://www.griffinheatingcooling.com/). Dates and star ratings not read from the widget.
-- Google review count from QUALIFY: 444. Not re-checked.
+- Google: 4.9 stars and 444 reviews (reviews.json place data). Not re-checked live.
 
 ## 10. Conflicts
 - **Conflict: hours.** Homepage, financing, maintenance: Mon-Fri 8:00 am to 6:00 pm. Contact page: Mon-Fri 8:00 am to 5:00 pm (section 5).
