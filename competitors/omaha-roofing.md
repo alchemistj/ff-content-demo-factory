@@ -19,11 +19,10 @@ Researched 2026-11-15. Five companies: Premier Roofing Company, Apple Roofing, D
   - Speed: "Get a free same-day inspection"; "a full replacement installed in under a day if it comes to that"; "Most roof replacements wrap in a single day."
   - Pricing: "Yes, we offer every Omaha homeowner a free, no-obligation roof inspection." (free inspection, not a free estimate); "transparent pricing with available financing"
   - Years: "built on 20+ years of service and accountability"
-  - Insurance: "Our project managers" are not on this page; page claims "you don't chase the insurance company. We do." and a review says the company "fought for me getting insurance to cover my roof" (customer account).
+  - Insurance: no insurance-claim help wording on the fetched Omaha page.
   - Emergency: "We prioritize emergency tarping to secure your home immediately." No 24/7 claim.
   - Hours: Monday to Friday, 9 AM to 5 PM, weekends closed.
-  - Not stated: family-owned, license numbers ("Always verify licensing and insurance" only), owner named, owner on site, drone inspection, Class 4 shingles, tile or slate, commissioned sales, return visit.
-  - Written estimate: not stated on this page (Indianapolis page says a written estimate follows the inspection; not repeated here).
+  - Not stated: family-owned, license numbers, owner named, owner on site, drone inspection, Class 4 shingles, tile or slate, commissioned sales, return visit, magnet sweep.
   - Financing: "available financing" with a Financing Options link.
   - Magnet sweep: not stated on this page.
 
@@ -84,15 +83,15 @@ Counts are based only on the wording found on the pages read.
 
 | Claim | Count | Who |
 |---|---|---|
-| Workmanship warranty stated | 4 of 5 | Premier (lifetime), Apple (7-year), Omaha Roofing (none), DaBella (manufacturer only). Actually: Premier, Apple, McCoy (GAF Golden Pledge), DaBella (manufacturer-backed). Omaha Roofing: none. |
-| Free inspection or free estimate | 4 of 5 | Premier (free inspection), Apple (labels), DaBella, Omaha Roofing and Exteriors, McCoy |
+| Workmanship or company warranty stated | 3 of 5 | Premier (lifetime workmanship), Apple (7-year workmanship), McCoy (GAF Golden Pledge). DaBella: manufacturer-backed warranty only. Omaha Roofing: none. |
+| Free inspection or free estimate | 5 of 5 | Premier (free inspection), Apple (labels only), DaBella, Omaha Roofing and Exteriors, McCoy |
 | Written estimate stated | 0 of 5 | not found |
 | One-day install claimed | 2 of 5 | Premier ("single day"), Apple ("1-3 days"), McCoy ("one to three days") |
 | 24/7 or emergency service | 1 of 5 | Apple ("Open 24 hours"). Premier: emergency tarping only. Omaha Roofing: directory only. |
 | Family-owned | 1 of 5 | McCoy |
 | Years in business | 2 of 5 | Premier (20+ years of service), McCoy (since 2007) |
 | License number on site | 0 of 5 | "fully licensed and insured" wording only (DaBella, McCoy); Premier says "Always verify licensing" |
-| Insurance-claim help | 4 of 5 | Premier, Apple, McCoy, Omaha Roofing and Exteriors. DaBella: no. |
+| Insurance-claim help | 3 of 5 | Apple, McCoy, Omaha Roofing and Exteriors. Premier (Omaha page) and DaBella: not stated. |
 | Financing | 4 of 5 | Premier, Apple, DaBella, McCoy |
 | Tile or slate | 1 of 5 | Apple ("Tile Roofing") |
 | Magnet sweep | 0 of 5 | not found |
