@@ -1,0 +1,38 @@
+QA REQUEST: comforttechs-lincoln (lincoln-hvac/comforttechs)
+
+Preview (not live yet; becomes https://comforttechs-lincoln.websitepreview.fluidframemarketing.com/ after merge):
+- Strategy page: https://ff-astro-demos-epbbo9o3x-josh-lenzs-projects.vercel.app/__ff-preview/comforttechs-lincoln/
+- /home/: https://ff-astro-demos-epbbo9o3x-josh-lenzs-projects.vercel.app/__ff-preview/comforttechs-lincoln/home/
+- /ac-repair-lincoln-ne/: https://ff-astro-demos-epbbo9o3x-josh-lenzs-projects.vercel.app/__ff-preview/comforttechs-lincoln/ac-repair-lincoln-ne/
+- /contact/: https://ff-astro-demos-epbbo9o3x-josh-lenzs-projects.vercel.app/__ff-preview/comforttechs-lincoln/contact/
+
+Source and facts (the only allowed source of claims):
+- https://github.com/alchemistj/ff-content-demo-factory/blob/claude/weekend-batch/prospects/lincoln-hvac/comforttechs/facts.md
+- https://github.com/alchemistj/ff-content-demo-factory/blob/claude/weekend-batch/prospects/lincoln-hvac/comforttechs/reviews.json
+- https://github.com/alchemistj/ff-content-demo-factory/blob/claude/weekend-batch/prospects/lincoln-hvac/comforttechs/audit.md
+- https://github.com/alchemistj/ff-content-demo-factory/blob/claude/weekend-batch/prospects/lincoln-hvac/comforttechs/words.json
+- https://github.com/alchemistj/ff-content-demo-factory/blob/claude/weekend-batch/prospects/lincoln-hvac/comforttechs/usp.md
+
+Outreach message (route: https://www.comforttechs.com/contact-us):
+---
+Hey ComfortTechs team,
+
+Your reviews tell the same story: when another company said replace it, you found the fix first. One customer said another company in town wanted a minimum of $2,000 to fix it and thought a whole new system made more sense. You resolved it for a small fraction of that. My daughter and I build websites for service businesses, so we made you a mockup built around it:
+
+https://comforttechs-lincoln.websitepreview.fluidframemarketing.com/?utm_source=form
+
+Note: It'll look a lot better with your logo and images on it! Lol
+
+The preview opens with a recent case study, then walks through why each page is built the way it is. One thing we'd fix: three links on your homepage go to pages that don't exist, and the one we traced is named after a meditation retreat.
+
+We built your AC repair page as an example, and we'd love to build the rest. Which brands or manufacturers are you certified with?
+
+By the way, our contact form system would have recognized this as a solicitation, and you wouldn't have even seen it.
+
+How'd we do on your company vibe?
+
+Josh
+Fluid Frame Marketing
+---
+
+Please check on phone and desktop, then reply PASS or a MUST FIX list.

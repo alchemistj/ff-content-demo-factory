@@ -1,0 +1,37 @@
+QA REQUEST: jdkuhn-fortwayne (fortwayne-hvac/jdkuhn)
+
+Preview (not live yet; becomes https://jdkuhn-fortwayne.websitepreview.fluidframemarketing.com/ after merge):
+- Strategy page: https://ff-astro-demos-epbbo9o3x-josh-lenzs-projects.vercel.app/__ff-preview/jdkuhn-fortwayne/
+- /home/: https://ff-astro-demos-epbbo9o3x-josh-lenzs-projects.vercel.app/__ff-preview/jdkuhn-fortwayne/home/
+- /hvac-replacement-fort-wayne-in/: https://ff-astro-demos-epbbo9o3x-josh-lenzs-projects.vercel.app/__ff-preview/jdkuhn-fortwayne/hvac-replacement-fort-wayne-in/
+- /contact/: https://ff-astro-demos-epbbo9o3x-josh-lenzs-projects.vercel.app/__ff-preview/jdkuhn-fortwayne/contact/
+
+Source and facts (the only allowed source of claims):
+- https://github.com/alchemistj/ff-content-demo-factory/blob/claude/weekend-batch/prospects/fortwayne-hvac/jdkuhn/facts.md
+- https://github.com/alchemistj/ff-content-demo-factory/blob/claude/weekend-batch/prospects/fortwayne-hvac/jdkuhn/reviews.json
+- https://github.com/alchemistj/ff-content-demo-factory/blob/claude/weekend-batch/prospects/fortwayne-hvac/jdkuhn/audit.md
+- https://github.com/alchemistj/ff-content-demo-factory/blob/claude/weekend-batch/prospects/fortwayne-hvac/jdkuhn/words.json
+- https://github.com/alchemistj/ff-content-demo-factory/blob/claude/weekend-batch/prospects/fortwayne-hvac/jdkuhn/usp.md
+
+Outreach message (route: none: hand send by email to justin@jdkuhnheating.com):
+---
+Hey Justin and the JD Kuhn team,
+
+Your reviews tell the same story: honest people, a fair price, and someone who looks before the big quote. One customer says a competitor wanted a full replacement of his air conditioning, about 20K, and you cleaned and recharged the old system for $514. My daughter and I build websites for service businesses, so we made you a mockup built around it:
+
+https://jdkuhn-fortwayne.websitepreview.fluidframemarketing.com/?utm_source=email
+
+Note: It'll look a lot better with your logo and images on it! Lol
+
+The preview opens with a recent case study, then walks through why each page is built the way it is. One thing we'd fix: on a phone your current site is 768 pixels wide on a 390 pixel screen, so people have to scroll sideways to read it.
+
+We built your homepage and your HVAC replacement page as examples, and we'd love to build the rest. Which brands or manufacturers are you certified with?
+
+How'd we do on your company vibe?
+
+Josh
+Fluid Frame Marketing
+(417) 373-2773
+---
+
+Please check on phone and desktop, then reply PASS or a MUST FIX list.
