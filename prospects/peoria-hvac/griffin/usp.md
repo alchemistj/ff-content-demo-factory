@@ -33,7 +33,7 @@ Top claim: "plan members pay $75 for any service call, with no after-hours, week
 - **B, method:** Unlike companies that advertise emergency service and leave the rate for the doorstep, Griffin prints the plan price and the service-call rate, and lists what the spring and fall visits check.
 - **C, emotional outcome:** The furnace quits on a holiday evening, you call, and you already know what the call costs.
 
-**Pick: A.** It names the fear and a printed, checkable number. B is a good outreach line.
+**Pick: A (claim), but see "Rebuild 11/15" for page order.** It names the fear and a printed, checkable number. B is a good outreach line.
 
 ## Brand short form
 **Printed Price. Any Hour.**
@@ -56,3 +56,8 @@ Top claim: "plan members pay $75 for any service call, with no after-hours, week
 - **Amana dealer status is not used in the demo (QA 2026-11-15) until the owner confirms it. "Since 1963" and the 2019 ownership change** are the site's own statements; none is verified elsewhere. No license, warranty, BBB or Ameren claim is used (facts.md: Unverified or not found).
 - **Tech photo before arrival** rests on one review (Marolyn W.). It appears only as her quote.
 - **Competitors are "not found," not "absent."**
+
+## Rebuild 11/15 (Josh's review)
+- The plan is the strongest claim (16) but is not the homepage lead. The homepage leads with who Griffin is and 24/7 emergency service, with customer quotes as proof. The plan comes after the services, explained first (one-year agreement, spring and fall visit lists, priority scheduling, 10% off parts, $75 service call with no after-hours, weekend or holiday rates) and priced last ($160 / $260 / +$100). No plan price appears in the hero, trust bar or footer.
+- Service pages: furnace repair and AC repair. Griffin's own site has no pages for either, so each rests on the 24/7 line, the plan's fall and spring visit lists, GoodLeap financing and on-topic review quotes. Thin: about 360 and 330 words of copy.
+- Dropped: "ask what failed and what the fix would cost" advice, the banned furnace-hero image, and the furnace page's explainer sections.

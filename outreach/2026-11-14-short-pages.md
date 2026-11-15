@@ -41,3 +41,6 @@ Every other page meets its minimum.
 | pioneer | /metal-roofing-peoria-il/ | 192 | 700 | BELOW floor (2026-11-15, cut generic copy per QA) |
 | sandhill | /roof-replacement-lincoln-ne/ | 519 | 700 | BELOW floor (2026-11-15, cut unsourced copy per QA re-check) |
 | customassured | /hvac-maintenance-fort-wayne-in/ | 577 | 700 | BELOW floor (2026-11-15, cut unsourced copy per QA round 3) |
+| griffin | /home/ | 627 | 900 | BELOW floor (smaller scope, real material only (11/15 rebuild)) |
+| griffin | /furnace-repair-peoria-il/ | 364 | 700 | BELOW floor (smaller scope, real material only (11/15 rebuild)) |
+| griffin | /ac-repair-peoria-il/ | 331 | 700 | BELOW floor (smaller scope, real material only (11/15 rebuild)) |
