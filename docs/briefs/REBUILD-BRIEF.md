@@ -5,6 +5,7 @@ Josh reviewed this demo and judged it not good enough to send, even though QA pa
 Work only in `/home/user/ff-content-demo-factory/prospects/<folder>/`. Write `usp.md` (update), `words.json` (new) and `outreach.md` (new). You may also save an untouched copy of the old words.json as `words-v1.json`. Run no git, send nothing, create no sessions.
 
 ## Read first, in this order
+0. **`/home/user/ff-content-demo-factory/docs/JOSH-CHECKLIST.md` IN FULL. It is the single list of Josh's lessons. Every item is pass/fail, and one FAIL means NOT YET.** Writers: check each page against it before replying. Also use the Wichita references in `docs/reference-sites-wichita.md`.
 1. **Josh's rules:** `ASSIGNMENT.md`, section "Demo copy (Josh's standing rules, 2026-11-15)". Every bullet there is an automatic fail.
 2. **The references, IN FULL (voice, structure, how a page sells; never their facts).** These are what "good" means.
    - Client sites: everything in `examples/approved-copy/sra/`, `window-dudes/` and `greene-planet/`, plus `evolve-exteriors/homepage.md`.

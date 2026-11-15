@@ -58,6 +58,8 @@ Canonical craft-guide wording and the Springfield example library live in `docs/
 
 ## Demo copy (Josh's standing rules, 2026-11-15)
 
+**Single source of truth: `docs/JOSH-CHECKLIST.md`.** It merges every Josh lesson: the Wichita definition of done and PRs #41–#64 (Nov 10–12), the Nov 15 notes and the ComfortTechs notes. Each item is a pass/fail test per page. Writers load it before writing. The reviewer answers every item per page with a quote as evidence. One FAIL means NOT YET. The bullets below are a summary; if they ever differ from the checklist, fix both the same day. References: `docs/reference-sites.md` (16) and `docs/reference-sites-wichita.md` (the Wichita demos after Josh's fixes).
+
 Josh's review of the Fort Wayne / Lincoln / Peoria batch: QA checked facts and rules, not whether the page sells. These are **automatic fails** for every future demo, whatever else passes:
 
 - **No review summaries.** Never "customers mention…", "customers describe…", "reviewers say…", "one customer said…". Quote a real review word for word, or leave it out.
