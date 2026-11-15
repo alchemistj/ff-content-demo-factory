@@ -67,5 +67,8 @@
       "hold": true
     }
   ],
-  "hold": "2026-11-15 HOLD (FF Architect, from Josh): no sends and no hand-send packets for any of the 10. ComfortTechs and Griffin are being rebuilt; the other 8 wait for Josh's approval of those two."
+  "hold": "2026-11-15 HOLD (FF Architect, from Josh): no sends and no hand-send packets for any of the 10. ComfortTechs and Griffin are being rebuilt; the other 8 wait for Josh's approval of those two.",
+  "dropped": {
+    "griffin": "too thin: revisit if the owner ever supplies content (FF Architect 2026-11-15)"
+  }
 }
