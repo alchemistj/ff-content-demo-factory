@@ -747,6 +747,18 @@
       "pulledAt": "2026-11-15T03:14:39.860Z"
     },
     {
+      "slug": "sandhill-lincoln",
+      "name": "Sandhill Roofing",
+      "placeId": "ChIJCaT2T2y9locRnzbHwe28YA4",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 101,
+        "withText": 72,
+        "ratingOnly": 3
+      },
+      "pulledAt": "2026-11-15T03:30:27.902Z"
+    },
+    {
       "slug": "sc-marketing-technologies",
       "name": "SC Marketing Technologies LLC",
       "placeId": "ChIJiWeNBQxcq6oRDHLT3Zz3mkY",
