@@ -23,7 +23,8 @@
    "summary": "Fort Wayne, IN",
    "towns": [
     "Fort Wayne"
-   ]
+   ],
+   "label": "Location"
   }
  },
  "trustBar": [
@@ -108,7 +109,7 @@
     },
     {
      "type": "split",
-     "heading": "Quoted a Whole New System? Here Is What One Customer Saw",
+     "heading": "Not Sure You Need a New System? Here Is What One Customer Saw",
      "body": [
       "A replacement quote is the biggest number an HVAC company hands a homeowner, so it's fair to want another set of eyes before you say yes. Someone has to look at the system to know whether it needs a repair or a replacement.",
       "One customer describes a second look that \"got to the possible root of my problem\" before they bought a furnace. If you were quoted a replacement elsewhere, call and tell us what the system is doing. If the answer is new equipment, the estimate is free and the work is quoted up front."
@@ -473,7 +474,7 @@
      "heading": "Monday to Friday, 8:00 AM to 4:30 PM",
      "body": [
       "The office is open Monday to Friday, 8:00 AM to 4:30 PM, and closed Saturday and Sunday. Under the yearly service agreement, 24-hour emergency service is included.",
-      "We work in Fort Wayne, Indiana."
+      "We're a Fort Wayne, Indiana company."
      ]
     },
     {

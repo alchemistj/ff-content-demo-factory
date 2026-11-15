@@ -23,7 +23,8 @@
    "summary": "Fort Wayne, IN",
    "towns": [
     "Fort Wayne"
-   ]
+   ],
+   "label": "Location"
   }
  },
  "trustBar": [
@@ -354,7 +355,7 @@
      "type": "prose",
      "heading": "Who Belongs on the Schedule",
      "body": [
-      "Ask the office who can sign up. A system that's getting older is one reason to ask. A brand-new system is another, because it should start clean and stay that way.",
+      "Ask the office who can sign up. A system that's getting older is one reason to ask.",
       "If you own more than one property, ask the office how that works."
      ]
     },
@@ -388,11 +389,11 @@
       },
       {
        "q": "Is maintenance worth it on a new system?",
-       "a": "Yes. New equipment still collects dust and needs its filter changed, and a visit can keep it clean from the start."
+       "a": "Ask the office whether maintenance makes sense on a new system."
       },
       {
        "q": "What does it cost?",
-       "a": "It depends on what you have, so call the office at (260) 496-8400 and ask."
+       "a": "Call the office at (260) 496-8400 and ask."
       }
      ]
     },
@@ -472,7 +473,7 @@
   }
  ],
  "footer": {
-  "about": "Custom Assured Mechanical is a Fort Wayne heating and air conditioning company run by Rod and Kim Schaefer. We sell, install and service systems for homes, businesses and new construction.",
+  "about": "Custom Assured Mechanical is a Fort Wayne heating and air conditioning company run by Rod Schaefer and his wife Kim. We sell, install and service systems for homes, businesses and new construction.",
   "why": [
    "Two customers mention the same technician",
    "Two customers say the office calls when service is due",

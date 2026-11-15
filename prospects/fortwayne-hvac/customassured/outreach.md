@@ -8,7 +8,7 @@ https://customassured-fortwayne.websitepreview.fluidframemarketing.com/?utm_sour
 
 Note: It'll look a lot better with your logo and images on it! Lol
 
-The preview walks through why each page is built the way it is. One thing we'd fix: your phone number isn't tappable on a phone, and your homepage doesn't show it at all. (Checked again on the live site on 11/15.)
+The preview walks through why each page is built the way it is. One thing we'd fix: your phone number isn't tappable on a phone, and your homepage doesn't show it at all.
 
 We built your homepage and your HVAC maintenance page as examples, and we'd love to build the rest.
 
@@ -37,7 +37,7 @@ https://customassured-fortwayne.websitepreview.fluidframemarketing.com/?utm_sour
 
 Note: It'll look a lot better with your logo and images on it! Lol
 
-The preview walks through why each page is built the way it is. One thing we'd fix: your phone number isn't tappable on a phone, and your homepage doesn't show it at all. (Checked again on the live site on 11/15.)
+The preview walks through why each page is built the way it is. One thing we'd fix: your phone number isn't tappable on a phone, and your homepage doesn't show it at all.
 
 We built your homepage and your HVAC maintenance page as examples, and we'd love to build the rest.
 
