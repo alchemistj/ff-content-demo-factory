@@ -128,7 +128,7 @@
         },
         {
           "type": "review",
-          "quote": "Absolutely the best experience I've ever had a home improvement/maintenence business. Getting work on the house is stressful and Amanda and Jose make it as stress free as possible.",
+          "quote": "Absolutely the best experience … Getting work on the house is stressful and Amanda and Jose make it as stress free as possible.",
           "name": "Christopher L."
         },
         {
@@ -431,7 +431,7 @@
       "hero": {
         "eyebrow": "Call or email",
         "h1": "Contact JG Roofing and Company",
-        "sub": "The fastest way to reach us is to call. Tell us what the roof is doing and we'll set a time to come look.",
+        "sub": "The easiest way to reach us is to call. Tell us what the roof is doing and we'll set a time to come look.",
         "primaryCta": {
           "label": "Call (309) 567-8236",
           "action": "call"
@@ -498,8 +498,8 @@
   "strategy": {
     "whyHeading": "Why we built this site",
     "why": [
-      "Your Peoria page says \"Roofing Contractor in Peoria, IL\" and then says almost nothing about how you work. Your About page is 119 words with no headline of its own, and every service sits on one 251-word page.",
-      "Your customers fill in what the site leaves out. They write about Amanda explaining the claim, Jose coming out to look at the roof and a yard left clean. None of that is on your site, so someone searching for a roofer in Peoria never reads it.",
+      "Your Peoria page has a clear headline, \"Roofing Contractor in Peoria, IL\". Your About page is 119 words with no headline of its own, and every service sits on one 251-word page.",
+      "Your customers fill in what the site leaves out. They write about Amanda explaining the claim, Jose looking at the roof and a yard left clean. Your site doesn't tell the claim walk-through or the clean-up story in your customers' words.",
       "On a phone it is worse: each page runs more than three times wider than the screen, so people scroll sideways to read it. We built a site around what your customers already say, with Amanda on the claim, Jose on the roof and a page of its own for roof replacement."
     ],
     "cardsHeading": "Be the Roofer People Find on Google",
@@ -511,7 +511,7 @@
         "why": "The page Google reads to learn who you are and where you work.",
         "problems": [
           "On a phone the page runs more than three times wider than the screen, so people scroll sideways to read it, and many leave.",
-          "The page shows five testimonials, while the detail your Google reviews hold, who explains the claim and who looks at the roof, never reaches it."
+          "Your Peoria page shows five testimonials, but the claim walk-through and the clean-up your Google reviews describe aren't told in your customers' words."
         ],
         "fixes": [
           "A page that fits a phone, with the call button one tap away.",
@@ -539,7 +539,7 @@
         "why": "Where a homeowner with a leak or a letter from the insurance company decides to call.",
         "problems": [
           "Your contact block shows (309) 567-8236, while the Call or Text button dials 309-316-3652, so two callers can reach two different lines.",
-          "Contact in your menu jumps to the top of the home page instead of a page of its own."
+          "Contact in your menu goes to the home page instead of a page of its own."
         ],
         "fixes": [
           "A contact page with one number that matches your Google listing, plus your address, hours and email.",

@@ -2,7 +2,7 @@
 
 Hey Pioneer Roofing team,
 
-Your reviews describe responsive people who explain the work. One customer wrote that you "sat down with me, informed me of what needed to be done with my attic venting repairs and the job was done wonderfully!" We build websites for service businesses, so we made you a mockup built around it:
+One customer wrote that you "sat down with me, informed me of what needed to be done with my attic venting repairs and the job was done wonderfully!" We build websites for service businesses, so we made you a mockup:
 
 https://pioneer-peoria.websitepreview.fluidframemarketing.com/?utm_source=form
 
@@ -21,7 +21,7 @@ Fluid Frame Marketing
 
 ## Short message
 
-Hey Pioneer Roofing team, your reviews describe responsive people who explain the work. We built a mockup around it: https://pioneer-peoria.websitepreview.fluidframemarketing.com/?utm_source=form (it'll look better with your logo and images! Lol). One fix: the Phone button on your town pages dials (321) 399-2147, not (309) 865-5471. How'd we do? Not interested? Reply "no thanks" and you won't hear from me again. Josh, Fluid Frame Marketing
+Hey Pioneer Roofing team, one customer wrote that you "sat down with me, informed me of what needed to be done with my attic venting repairs …" We built you a mockup: https://pioneer-peoria.websitepreview.fluidframemarketing.com/?utm_source=form (it'll look better with your logo and images! Lol). One fix: the Phone button on your town pages dials (321) 399-2147, not (309) 865-5471. How'd we do? Not interested? Reply "no thanks" and you won't hear from me again. Josh, Fluid Frame Marketing
 
 ## Form
 
@@ -34,7 +34,7 @@ Hey Pioneer Roofing team, your reviews describe responsive people who explain th
 
 Hey Pioneer Roofing team,
 
-Your reviews describe responsive people who explain the work. One customer wrote that you "sat down with me, informed me of what needed to be done with my attic venting repairs and the job was done wonderfully!" My daughter and I build websites for service businesses, so we made you a mockup built around it:
+One customer wrote that you "sat down with me, informed me of what needed to be done with my attic venting repairs and the job was done wonderfully!" My daughter and I build websites for service businesses, so we made you a mockup:
 
 https://pioneer-peoria.websitepreview.fluidframemarketing.com/?utm_source=form
 

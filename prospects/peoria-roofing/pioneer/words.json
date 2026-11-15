@@ -156,7 +156,7 @@
           "type": "prose",
           "heading": "Repairs as Well as New Roofs",
           "body": [
-            "Pioneer Roofing also handles roof repairs, including attic venting."
+            "Pioneer Roofing also handles roof repairs."
           ]
         },
         {
@@ -336,8 +336,7 @@
             "Whether it is a house or a commercial building",
             "Whether you want a new metal roof, a repair, or a question answered first",
             "The kind of metal you are picturing, if you have one in mind: standing seam, corrugated or metal shingles",
-            "The town the building is in",
-            "Whether solar panels are part of your plans"
+            "The town the building is in"
           ]
         },
         {
@@ -368,7 +367,7 @@
     "why": [
       "Your site has real metal roofing pages for homes, commercial buildings, standing seam, corrugated and installation and design. Their headlines say METAL ROOFS and STANDING SEAM METAL ROOFS with no city, so someone searching for a metal roof in Peoria has nothing built for that phrase.",
       "At least 36 town pages each say \"Pioneer Roofing Experts in\" a town, and they are one page with the town name swapped, so Google reads the same words again and again. The Phone button on every one we checked dials (321) 399-2147, not the (309) 865-5471 printed everywhere else.",
-      "So we built a site around the work you are known for: metal roofing in Peoria on a page of its own, the towns you serve on the homepage, and one phone number."
+      "So we built a site around the work your site leads with: metal roofing in Peoria on a page of its own, the towns you serve on the homepage, and one phone number."
     ],
     "cardsHeading": "Be the Roofer People Find on Google",
     "cardsIntro": "Each card is one page: what your site does today and what we changed.",
@@ -397,7 +396,7 @@
         ],
         "fixes": [
           "One page for metal roofing in Peoria, IL, covering homes, commercial buildings and the kinds of metal roof you install.",
-          "A call to action on the page, with your address and one phone number."
+          "A call to action on the page, with one phone number."
         ],
         "alsoAdd": "Pages planned from what Google actually shows for each search, so every page targets something people really look for."
       },
@@ -424,7 +423,7 @@
       },
       {
         "label": "Headline says what you do and where",
-        "status": "Good"
+        "status": "Needs work"
       },
       {
         "label": "Every phone button dials the same number",
@@ -445,14 +444,14 @@
     ],
     "closing": {
       "heading": "Want a website like this for your business?",
-      "text": "Customers describe you as responsive, and one calls you fair and transparent. Book a strategy call with Fluid Frame and we'll walk you through this demo and plan your new site."
+      "text": "One customer calls you responsive, and another calls you fair and transparent. Book a strategy call with Fluid Frame and we'll walk you through this demo and plan your new site."
     },
     "confirm": {
       "heading": "What we'd confirm with you",
       "intro": "Google and AI tools see different answers about your business in different places. We wrote this demo from your reviews and your site. On a short onboarding call, we'd confirm these so everything says the same thing.",
       "items": [
         "Your site and your Google listing show (309) 865-5471, while the Phone button on your town pages dials (321) 399-2147, so which number is live, and why is there a second one? This demo uses the Google number.",
-        "Your metal roofing copy says \"experienced and certified professionals\" without naming a certification, so which manufacturer or program certifications can we name, and where do we show proof?",
+        "Your town pages say \"experienced and certified professionals\" without naming a certification, so which manufacturer or program certifications can we name, and where do we show proof?",
         "Search results for \"Pioneer Roofing\" turn up other companies of that name, including a commercial listing on GAF and profiles on BBB in other states, so which listings are yours?"
       ]
     },
