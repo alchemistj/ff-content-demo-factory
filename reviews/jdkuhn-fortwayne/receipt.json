@@ -1,0 +1,27 @@
+{
+  "kind": "google-review-pull-receipt",
+  "status": "ok",
+  "slug": "jdkuhn-fortwayne",
+  "request": {
+    "mapsUrl": "place_id:ChIJaRGQDIRSfAwRXNlV83X7C9Q",
+    "maxReviews": 75,
+    "expectedName": "JD Kuhn"
+  },
+  "trigger": "workflow_dispatch",
+  "apify": {
+    "actor": "compass~crawler-google-places",
+    "runId": "ncb2JTK4L4G3bplQe",
+    "datasetId": "hg68p7KKhqOd14wVy",
+    "attempts": 1,
+    "usageUsd": 0.0002
+  },
+  "counts": {
+    "listingTotal": 175,
+    "withText": 52,
+    "ratingOnly": 23
+  },
+  "detail": null,
+  "startedAt": "2026-11-15T03:09:10.706Z",
+  "finishedAt": "2026-11-15T03:09:52.068Z",
+  "githubRunUrl": "https://github.com/alchemistj/ff-content-demo-factory/actions/runs/43671026132"
+}

@@ -1,0 +1,678 @@
+{
+  "kind": "google-review-pull",
+  "version": 1,
+  "slug": "jdkuhn-fortwayne",
+  "place": {
+    "name": "JD Kuhn Heating And Air Conditioning LLC",
+    "placeId": "ChIJaRGQDIRSfAwRXNlV83X7C9Q",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=JD%20Kuhn%20Heating%20And%20Air%20Conditioning%20LLC&query_place_id=ChIJaRGQDIRSfAwRXNlV83X7C9Q",
+    "address": "4625 Speedway Dr, Fort Wayne, IN 46825",
+    "phone": "(260) 413-1856",
+    "rating": 4.9,
+    "totalReviewCount": 175
+  },
+  "pulledAt": "2026-11-15T03:09:52.068Z",
+  "requestedMax": 75,
+  "reviews": [
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xoR09XSTJiakJLYkhaT1RYa3pUbEkzUVhwRVgwRRAB",
+      "reviewer": "Adele A.",
+      "rating": 5,
+      "text": "Absolutely recommend JD Kuhn.  They have extremely reasonable prices, fantastic customer service,  and excellent communication.  Called at the beginning of the week about a furnace dying and had a new furnace installed by the end of the week.",
+      "publishedAt": "2026-10-29T13:24:43.300Z",
+      "ownerResponse": "Thanks Arnold's!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xoR09XSTJiakJLYkhaT1RYa3pUbEkzUVhwRVgwRRAB!2m1!1s0x0:0xd40bfb75f355d95c!3m1!1s2@1:CAIQACodChtycF9oOlhGOWI2bjBKbHZOTXkzTlI3QXpEX0E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VLQ3lfWjJ1bnZMLWxnRRAB",
+      "reviewer": "KEVIN C.",
+      "rating": 5,
+      "text": "Knowledgeable and friendly technicians at reasonable prices. Highly recommend.",
+      "publishedAt": "2026-10-15T14:14:18.740Z",
+      "ownerResponse": "Thank you Kevin!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VLQ3lfWjJ1bnZMLWxnRRAB!2m1!1s0x0:0xd40bfb75f355d95c!3m1!1s2@1:CIHM0ogKEKCy_Z2unvL-lgE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21WUWQyaEZTMEZvWjNremNFVnVOVzlKUTBrd2NFRRAB",
+      "reviewer": "Rex M.",
+      "rating": 5,
+      "text": "We're a new customer with J. D. Kuhn. The office was very helpful and fully answered all my questions about their service plan and products. Erich H. the service technician took the time to explain what he was going to do and offered suggestions on when we should schedule maintenance service calls.",
+      "publishedAt": "2026-10-09T10:04:05.971Z",
+      "ownerResponse": "Thank you Rex!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21WUWQyaEZTMEZvWjNremNFVnVOVzlKUTBrd2NFRRAB!2m1!1s0x0:0xd40bfb75f355d95c!3m1!1s2@1:CAIQACodChtycF9oOmVQd2hFS0FoZ3kzcEVuNW9JQ0kwcEE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnTUNva2ZDTktBEAE",
+      "reviewer": "David F.",
+      "rating": 5,
+      "text": "They are amazing. Price was great, quote was easy, service is amazing. Will definitely keep using them and would recommend them to anyone. Continuing to get great service. Eric was great",
+      "publishedAt": "2026-10-02T17:22:27.992Z",
+      "ownerResponse": "Thank you Mr Funk!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTUNva2ZDTktBEAE!2m1!1s0x0:0xd40bfb75f355d95c!3m1!1s2@1:CIHM0ogKEICAgMCokfCNKA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25CemQzcE9ZbEJKWXpKWlpHbEtaakZIVTE5a1FtYxAB",
+      "reviewer": "Lois B.",
+      "rating": 5,
+      "text": "Very nice tech. Very thorough",
+      "publishedAt": "2026-09-16T23:43:42.084Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25CemQzcE9ZbEJKWXpKWlpHbEtaakZIVTE5a1FtYxAB!2m1!1s0x0:0xd40bfb75f355d95c!3m1!1s2@1:CAIQACodChtycF9oOnBzd3pOYlBJYzJZZGlKZjFHU19kQmc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2s5V1kxUmlkRTlSY2pFNFlXSm1MVU5LZWxGME5HYxAB",
+      "reviewer": "Ron A.",
+      "rating": 5,
+      "text": "Great service and appreciate the annual maintenance plan!",
+      "publishedAt": "2026-09-08T20:58:41.509Z",
+      "ownerResponse": "Thank you Ron! Your house is awesome!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2s5V1kxUmlkRTlSY2pFNFlXSm1MVU5LZWxGME5HYxAB!2m1!1s0x0:0xd40bfb75f355d95c!3m1!1s2@1:CAIQACodChtycF9oOk9WY1RidE9RcjE4YWJmLUNKelF0NGc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xOQ01WTlFSM2Q2ZG1WMVlqSktVVlEwYWxCQ1VWRRAB",
+      "reviewer": "Zack C.",
+      "rating": 5,
+      "text": "Justin and his crew did an excellent job with our installation and would highly recommend his company for your heating and cooling!",
+      "publishedAt": "2026-08-03T16:28:02.611Z",
+      "ownerResponse": "Thank you!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xOQ01WTlFSM2Q2ZG1WMVlqSktVVlEwYWxCQ1VWRRAB!2m1!1s0x0:0xd40bfb75f355d95c!3m1!1s2@1:CAIQACodChtycF9oOlNCMVNQR3d6dmV1YjJKUVQ0alBCUVE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21oWlQxYzJSMkY1V0hvNWJITjFkMDVOTlZkc2FGRRAB",
+      "reviewer": "Nick D.",
+      "rating": 5,
+      "text": "A great, honest, transparent and educated group who go out of their way to get the job done! I’ve had Eric come out for numerous jobs over the last 1 1/2 year from heating issues, birds nests, redoing vent work because of compacted birds nests..to servicing my air conditioning. Final went under contract last winter and they recently came out to service the A/C. They truly deep dive and record and inform you of everything, what needs to be done and things to watch out for moving forward. If you need a repair group for heating/cooling don’t hesitate to give them a call.",
+      "publishedAt": "2026-08-02T01:42:51.961Z",
+      "ownerResponse": "Thank you Nick!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21oWlQxYzJSMkY1V0hvNWJITjFkMDVOTlZkc2FGRRAB!2m1!1s0x0:0xd40bfb75f355d95c!3m1!1s2@1:CAIQACodChtycF9oOmhZT1c2R2F5WHo5bHN1d05NNVdsaFE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pWVVNqbHFVVVpzVTBKTVNFWkJUWE52TlMxdGRsRRAB",
+      "reviewer": "tim D.",
+      "rating": 5,
+      "text": "A competitor was asking for full replacement of the air conditioning system running about 20K. JD Kuehn cleaned and recharge our old system. Price $514.00. I tell everyone I know about JD Kuehn. Friendly, honest professional company.",
+      "publishedAt": "2026-07-21T16:00:38.709Z",
+      "ownerResponse": "Thank you Tim!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pWVVNqbHFVVVpzVTBKTVNFWkJUWE52TlMxdGRsRRAB!2m1!1s0x0:0xd40bfb75f355d95c!3m1!1s2@1:CAIQACodChtycF9oOjVUSjlqUUZsU0JMSEZBTXNvNS1tdlE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pGVU5DMVdUMDVoV0VFd2JVZGxTR05DYVdsVlYyYxAB",
+      "reviewer": "Brandon L.",
+      "rating": 5,
+      "text": "The service with JD Kuhn Heating & AC was very courteous, professional and timely.  An outstanding job was performed.  We had a new AC unit installed.  They have become our go to for heating and AC needs.  I love the communication with text messages.  Very helpful.  Thank you",
+      "publishedAt": "2026-07-14T17:38:48.501Z",
+      "ownerResponse": "Thank you Brandon!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pGVU5DMVdUMDVoV0VFd2JVZGxTR05DYVdsVlYyYxAB!2m1!1s0x0:0xd40bfb75f355d95c!3m1!1s2@1:CAIQACodChtycF9oOjFUNC1WT05hWEEwbUdlSGNCaWlVV2c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURUNUl6NTZ3RRAB",
+      "reviewer": "Suzi H.",
+      "rating": 5,
+      "text": "They are great. I am happy to have them as my service provider.",
+      "publishedAt": "2026-07-09T11:11:21.319Z",
+      "ownerResponse": "Thanks Suzi, glad we could help!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURUNUl6NTZ3RRAB!2m1!1s0x0:0xd40bfb75f355d95c!3m1!1s2@1:CIHM0ogKEICAgIDT5Iz56wE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21ocFJuWjFRMDltVG1KU1UxUm9aMVkyYkU5S1pGRRAB",
+      "reviewer": "Juan N.",
+      "rating": 1,
+      "text": "Called them for a free second opinion there was no free second opinion they charged me 95 dollar to check my freon didn't tell me there was gonna be a charge didn't carry change overcharged me 5 dollars cuz they dont have change text me to say they are putting the 5 in the mail I didn't get it so I text them to verify it was being mailed and he got smart with me on a simple question and told me \"leave the mailman a bad review for being late\" very unprofessional do not recommend, and he's lying there was no service they told me it was a free second opinion on the phone. Why would I request a service call when my unit was working fine with no issues all I wanted was to check my freon levels and I was told it would be a free second opinion to see if my levels were actually low.",
+      "publishedAt": "2026-07-03T14:26:59.111Z",
+      "ownerResponse": "Contractors be aware. Mr Nino has attempted all classic attempts to dodge paying a service fee that was explained and dispatched all as normal. <br><br>On the initial phone call that your request is not a free 2nd opinion.  You needed a service call, you were quoted $95.  We performed said call and charged you $95. <br><br>He has been added to our Do not service list and would caution you to proceed. <br><br>Best of luck 👍",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21ocFJuWjFRMDltVG1KU1UxUm9aMVkyYkU5S1pGRRAB!2m1!1s0x0:0xd40bfb75f355d95c!3m1!1s2@1:CAIQACodChtycF9oOmhpRnZ1Q09mTmJSU1RoZ1Y2bE9KZFE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pGSE1UZFhlVGx2UmtjdExVbFNOM0puTTJ0NFZsRRAB",
+      "reviewer": "Roger S.",
+      "rating": 5,
+      "text": "Great job on the repair.  Really appreciate the efforts to get my system running effectively.  Thanks",
+      "publishedAt": "2026-07-02T02:32:40.064Z",
+      "ownerResponse": "Thank you Roger!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pGSE1UZFhlVGx2UmtjdExVbFNOM0puTTJ0NFZsRRAB!2m1!1s0x0:0xd40bfb75f355d95c!3m1!1s2@1:CAIQACodChtycF9oOjFHMTdXeTlvRkctLUlSN3JnM2t4VlE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2toaVl6UjNSazE1YnpOMVYzcHRhbXhLVFdwaVRFRRAB",
+      "reviewer": "Angela A.",
+      "rating": 5,
+      "text": "The service is friendly, dependable, reliable, accurate, and honest. You can trust this company with your friends and family.",
+      "publishedAt": "2026-07-01T17:13:23.110Z",
+      "ownerResponse": "Thank you Angela!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2toaVl6UjNSazE1YnpOMVYzcHRhbXhLVFdwaVRFRRAB!2m1!1s0x0:0xd40bfb75f355d95c!3m1!1s2@1:CAIQACodChtycF9oOkhiYzR3Rk15bzN1V3ptamxKTWpiTEE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25WWE1VczJRbHAxYUZOQ09WbG9URVUxVlhKT09IYxAB",
+      "reviewer": "Suzanne D.",
+      "rating": 5,
+      "text": "Wonderful service. Prompt and knowledgable. Took the time to troubleshoot issues.  Thank you",
+      "publishedAt": "2026-06-19T12:33:54.440Z",
+      "ownerResponse": "Thank you!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25WWE1VczJRbHAxYUZOQ09WbG9URVUxVlhKT09IYxAB!2m1!1s0x0:0xd40bfb75f355d95c!3m1!1s2@1:CAIQACodChtycF9oOnVXMUs2Qlp1aFNCOVloTEU1VXJOOHc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pSZlUwRjJYMDlzUzFCS1dWbFNVWFYyY21KaWRtYxAB",
+      "reviewer": "Sherry C.",
+      "rating": 5,
+      "text": "Erich did a good job trouble shooting our issue.",
+      "publishedAt": "2026-06-01T20:34:45.870Z",
+      "ownerResponse": "Thank you Sherry",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pSZlUwRjJYMDlzUzFCS1dWbFNVWFYyY21KaWRtYxAB!2m1!1s0x0:0xd40bfb75f355d95c!3m1!1s2@1:CAIQACodChtycF9oOjRfU0F2X09sS1BKWVlSUXV2cmJidmc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xFelNFMXZSWFpFU21GTE1FWXRjMTgwUkY5b09XYxAB",
+      "reviewer": "Curtis F.",
+      "rating": 5,
+      "text": "Technician was very thorough and did not leave until everything was running properly.",
+      "publishedAt": "2026-05-27T15:18:19.637Z",
+      "ownerResponse": "Thank you Curtis!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xFelNFMXZSWFpFU21GTE1FWXRjMTgwUkY5b09XYxAB!2m1!1s0x0:0xd40bfb75f355d95c!3m1!1s2@1:CAIQACodChtycF9oOlEzSE1vRXZESmFLMEYtc180RF9oOWc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xwM1IzZ3RSa3d3YkdSaVNHOTVWMFZSWVVaSWVGRRAB",
+      "reviewer": "William K.",
+      "rating": 5,
+      "text": "Very professional! They were able to install 4 inch filter rack and whole house humidifier in a very tight space. I would highly recommend for any HVAC needed!",
+      "publishedAt": "2026-05-20T18:23:16.151Z",
+      "ownerResponse": "Thank you Bill!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xwM1IzZ3RSa3d3YkdSaVNHOTVWMFZSWVVaSWVGRRAB!2m1!1s0x0:0xd40bfb75f355d95c!3m1!1s2@1:CAIQACodChtycF9oOlp3R3gtRkwwbGRiSG95V0VRYUZIeFE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xwWmJEUnROVzFoVFhWNFJWcE9ZMTkyVFRVM09FRRAB",
+      "reviewer": "Andy B.",
+      "rating": 5,
+      "text": "Great service and great communication.",
+      "publishedAt": "2026-05-19T19:22:18.101Z",
+      "ownerResponse": "Thank you Andy!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xwWmJEUnROVzFoVFhWNFJWcE9ZMTkyVFRVM09FRRAB!2m1!1s0x0:0xd40bfb75f355d95c!3m1!1s2@1:CAIQACodChtycF9oOlpZbDRtNW1hTXV4RVpOY192TTU3OEE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURSc2JHalJ3EAE",
+      "reviewer": "Susie S.",
+      "rating": 5,
+      "text": "Very kind and trustworthy. Offered a great price also.",
+      "publishedAt": "2026-05-18T20:06:38.783Z",
+      "ownerResponse": "Thank you Susie!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURSc2JHalJ3EAE!2m1!1s0x0:0xd40bfb75f355d95c!3m1!1s2@1:CIHM0ogKEICAgIDRsbGjRw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2toU04ybGpaakZTYmtGa1VpMWlSa2RCWDBZdE5HYxAB",
+      "reviewer": "Steven H.",
+      "rating": 5,
+      "text": "Honest people, would highly recommend for all you HVAC needs",
+      "publishedAt": "2026-05-13T12:07:07.091Z",
+      "ownerResponse": "Thank you!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2toU04ybGpaakZTYmtGa1VpMWlSa2RCWDBZdE5HYxAB!2m1!1s0x0:0xd40bfb75f355d95c!3m1!1s2@1:CAIQACodChtycF9oOkhSN2ljZjFSbkFkUi1iRkdBX0YtNGc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURqci02dW9nRRAB",
+      "reviewer": "Faye P.",
+      "rating": 5,
+      "text": "Justin Kuhn and his crew do such a great job. I have complete confidence and trust in their work. Kristen in the office is so nice and a pleasure to work with.",
+      "publishedAt": "2026-05-13T01:21:18.627Z",
+      "ownerResponse": "Thank you Faye! Always happy to help!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURqci02dW9nRRAB!2m1!1s0x0:0xd40bfb75f355d95c!3m1!1s2@1:CIHM0ogKEICAgIDjr-6uogE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUM3MXBLUDBBRRAB",
+      "reviewer": "Mike P.",
+      "rating": 5,
+      "text": "Justin and the guys always do an excellent job.  They installed a mini split in our new Cabana.  The finished product was very clean and neat.  They are always prompt and their follow up is great.",
+      "publishedAt": "2026-05-02T02:55:24.531Z",
+      "ownerResponse": "Thank you Mike!  I appreciate your business!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUM3MXBLUDBBRRAB!2m1!1s0x0:0xd40bfb75f355d95c!3m1!1s2@1:CIHM0ogKEICAgIC71pKP0AE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xoTU5rUnhNRGRaTlVKT1FUbE9SVFk0ZEVaRmRYYxAB",
+      "reviewer": "Cynthia S.",
+      "rating": 5,
+      "text": "Prompt, professional, thorough service very much appreciated. Erich does a great job!",
+      "publishedAt": "2026-04-29T18:15:04.099Z",
+      "ownerResponse": "Thank you!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xoTU5rUnhNRGRaTlVKT1FUbE9SVFk0ZEVaRmRYYxAB!2m1!1s0x0:0xd40bfb75f355d95c!3m1!1s2@1:CAIQACodChtycF9oOlhMNkRxMDdZNUJOQTlORTY4dEZFdXc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pCS2FVVnNVR05VUzNSek16SkJOMmsxTW5kWGNHYxAB",
+      "reviewer": "Jeremy A.",
+      "rating": 5,
+      "text": "First time customer. Erich was friendly and professional. Will call again when maintenance is due.",
+      "publishedAt": "2026-04-28T16:08:35.043Z",
+      "ownerResponse": "Thank you!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pCS2FVVnNVR05VUzNSek16SkJOMmsxTW5kWGNHYxAB!2m1!1s0x0:0xd40bfb75f355d95c!3m1!1s2@1:CAIQACodChtycF9oOjBKaUVsUGNUS3RzMzJBN2k1MndXcGc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21vemNsSTVSMFF0ZFMxS1pHTlBiRFpTWDBKVFIzYxAB",
+      "reviewer": "Chris V.",
+      "rating": 5,
+      "text": "Eric at JD Kuhn does a great job getting our HVAC System ready to go in the spring and fall.  The owner Justin is also great to deal with and very knowledgeable in his field.  Highly recommended.",
+      "publishedAt": "2026-04-24T00:22:07.795Z",
+      "ownerResponse": "Thank you Chris!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21vemNsSTVSMFF0ZFMxS1pHTlBiRFpTWDBKVFIzYxAB!2m1!1s0x0:0xd40bfb75f355d95c!3m1!1s2@1:CAIQACodChtycF9oOmozclI5R0QtdS1KZGNPbDZSX0JTR3c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tkWmJESkNkMVk0ZG1sRloxRkRZblJCTXpaMlozYxAB",
+      "reviewer": "Kristina B.",
+      "rating": 5,
+      "text": "I’ve used them before and they are always professional and efficient.  My tenant complained of the AC not working at all in their apartment.  It turns out a new capacitor was needed. The service tech, Chris Wakeland, was in and out in an hour to hour and a half. I highly recommend to anyone looking for an honest working HVAC company. Thank you JD Kuhn!",
+      "publishedAt": "2026-04-18T18:46:27.669Z",
+      "ownerResponse": "Thank you 😁 Appreciate you taking the time to leave this review.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tkWmJESkNkMVk0ZG1sRloxRkRZblJCTXpaMlozYxAB!2m1!1s0x0:0xd40bfb75f355d95c!3m1!1s2@1:CAIQACodChtycF9oOkdZbDJCd1Y4dmlFZ1FDYnRBMzZ2Z3c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21kNlFWbEJkMk5ZWVVGUU1XWmZORzV5ZVhkVVowRRAB",
+      "reviewer": "Carl S.",
+      "rating": 5,
+      "text": "Great service - on time",
+      "publishedAt": "2026-04-16T18:28:15.293Z",
+      "ownerResponse": "Thank you Carl!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21kNlFWbEJkMk5ZWVVGUU1XWmZORzV5ZVhkVVowRRAB!2m1!1s0x0:0xd40bfb75f355d95c!3m1!1s2@1:CAIQACodChtycF9oOmd6QVlBd2NYYUFQMWZfNG5yeXdUZ0E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xNemRrOVBVa2c0ZEhKbmVqWjZVWGhMVDNVeGFuYxAB",
+      "reviewer": "Vince B.",
+      "rating": 5,
+      "text": "Consistently professional!  Thanks Erich !",
+      "publishedAt": "2026-04-14T13:40:50.014Z",
+      "ownerResponse": "Thank you Vince, I appreciate you.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xNemRrOVBVa2c0ZEhKbmVqWjZVWGhMVDNVeGFuYxAB!2m1!1s0x0:0xd40bfb75f355d95c!3m1!1s2@1:CAIQACodChtycF9oOlMzdk9PUkg4dHJnejZ6UXhLT3Uxanc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25OTGMzbGpPRkUxZEV0V1dtcG1ORGxZUjBkRFpuYxAB",
+      "reviewer": "Jody F.",
+      "rating": 5,
+      "text": "Very knowledgeable, friendly, and thorough. Pricing was very fair.",
+      "publishedAt": "2026-04-12T21:54:30.539Z",
+      "ownerResponse": "Thank you Jody!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25OTGMzbGpPRkUxZEV0V1dtcG1ORGxZUjBkRFpuYxAB!2m1!1s0x0:0xd40bfb75f355d95c!3m1!1s2@1:CAIQACodChtycF9oOnNLc3ljOFE1dEtWWmpmNDlYR0dDZnc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21sck5FdE5WSEZKUjFCRFJHVTRPWGhuVkV4b1IwRRAB",
+      "reviewer": "Travis H.",
+      "rating": 5,
+      "text": "Fast response, efficient work, and polite technicians. They are the best.",
+      "publishedAt": "2026-04-10T20:26:30.888Z",
+      "ownerResponse": "Thank you Travis!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21sck5FdE5WSEZKUjFCRFJHVTRPWGhuVkV4b1IwRRAB!2m1!1s0x0:0xd40bfb75f355d95c!3m1!1s2@1:CAIQACodChtycF9oOmlrNEtNVHFJR1BDRGU4OXhnVExoR0E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xrdE5uTklZVkYyYW5RMFEyMW5Ra2hDTm5aSGQyYxAB",
+      "reviewer": "gary W.",
+      "rating": 2,
+      "text": "Decided to contact jd kuhn after hearing all the commercials for a service advertised for 95.00.<br>My bill ended up 336.00 with a compacitor changed.really didn't make a difference.so I asked for a quote to replace existing unit and wouldn't you know it,no response as of  a week later.go figure!all the tech could assure me was tht my HVAC system was older!I knew tht before I wanted it serviced",
+      "publishedAt": "2026-04-10T17:22:40.181Z",
+      "ownerResponse": "Gary, I apologize for the miscommunication between you and I.  As you can see from our reviews and presence locally this is not normal practice but a mistake made. Look forward to an opportunity to work together again.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xrdE5uTklZVkYyYW5RMFEyMW5Ra2hDTm5aSGQyYxAB!2m1!1s0x0:0xd40bfb75f355d95c!3m1!1s2@1:CAIQACodChtycF9oOlktNnNIYVF2anQ0Q21nQkhCNnZHd2c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2w5bll6RkhhRWx5Uld0SlFUZGhaRGhOTVRWeGFuYxAB",
+      "reviewer": "William H.",
+      "rating": 5,
+      "text": "I sent a text to their number listed on an email I had received. The response was very prompt from Kristen. I had an appointment scheduled with in four days of text with price. Date & time where what I chose it could have been sooner. They arrived on time and service completed with no issues. I'm very pleased!!!",
+      "publishedAt": "2026-04-10T15:45:37.332Z",
+      "ownerResponse": "Thank you for the opportunity William, I appreciate your business and look forward to serving you in the future!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2w5bll6RkhhRWx5Uld0SlFUZGhaRGhOTVRWeGFuYxAB!2m1!1s0x0:0xd40bfb75f355d95c!3m1!1s2@1:CAIQACodChtycF9oOl9nYzFHaElyRWtJQTdhZDhNMTVxanc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2w5dk5ucHZiMlpKUXpaelIyMTZSbkV5VG5KYVFVRRAB",
+      "reviewer": "Mark S.",
+      "rating": 5,
+      "text": "Fast, friendly, expert service. Doesn’t get any better than that!",
+      "publishedAt": "2026-04-10T13:40:49.497Z",
+      "ownerResponse": "Thank you Mark!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2w5dk5ucHZiMlpKUXpaelIyMTZSbkV5VG5KYVFVRRAB!2m1!1s0x0:0xd40bfb75f355d95c!3m1!1s2@1:CAIQACodChtycF9oOl9vNnpvb2ZJQzZzR216RnEyTnJaQUE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xJNWJERlVSVlJXU0VGaFdIRXdORlJCWmpscGFFRRAB",
+      "reviewer": "Bob P.",
+      "rating": 5,
+      "text": "The rain cap for the hot water heater came off. I called JD Kuhn and the service tech came out within hours and reattached the cap. Fantastic service. So appreciated it",
+      "publishedAt": "2026-04-02T20:12:28.197Z",
+      "ownerResponse": "Thank you Bob!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xJNWJERlVSVlJXU0VGaFdIRXdORlJCWmpscGFFRRAB!2m1!1s0x0:0xd40bfb75f355d95c!3m1!1s2@1:CAIQACodChtycF9oOlI5bDFURVRWSEFhWHEwNFRBZjlpaEE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25ab1NtcERaSE5hWWpSaVNVMHhSV2t5VVhWWllYYxAB",
+      "reviewer": "Angel S.",
+      "rating": 5,
+      "text": "This was my free 2nd opinion and it was great to have someone come out and not want to charge me 100.00 we talked and got to the possible root of my problem. So I did get a furnace from JD Kuhn Heating and I really like it. They are a really great company and very informative with decision making.",
+      "publishedAt": "2026-03-25T15:51:08.286Z",
+      "ownerResponse": "Thank you Angel!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25ab1NtcERaSE5hWWpSaVNVMHhSV2t5VVhWWllYYxAB!2m1!1s0x0:0xd40bfb75f355d95c!3m1!1s2@1:CAIQACodChtycF9oOnZoSmpDZHNaYjRiSU0xRWkyUXVZYXc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25odVVXNVBWbk5aUmxsak9IWXdSMFpJUldKTE0zYxAB",
+      "reviewer": "Chuck P.",
+      "rating": 5,
+      "text": "I could not be more satisfied. Your technicians were very professional, courteous and knowledgeable. Will definitely use your company again.   Thankyou",
+      "publishedAt": "2026-02-02T18:49:20.314Z",
+      "ownerResponse": "Thank you Chuck!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25odVVXNVBWbk5aUmxsak9IWXdSMFpJUldKTE0zYxAB!2m1!1s0x0:0xd40bfb75f355d95c!3m1!1s2@1:CAIQACodChtycF9oOnhuUW5PVnNZRlljOHYwR0ZIRWJLM3c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25adVh6UlVNbEJCYXpSVmR6aFpOMnczVG1zMFFsRRAB",
+      "reviewer": "Kenny T.",
+      "rating": 5,
+      "text": "I'm very pleased with the service.<br><br>Eric the service technician was very professional and very helpful<br><br>I highly recommend this company",
+      "publishedAt": "2026-01-09T20:03:36.903Z",
+      "ownerResponse": "Thank you Kenny!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25adVh6UlVNbEJCYXpSVmR6aFpOMnczVG1zMFFsRRAB!2m1!1s0x0:0xd40bfb75f355d95c!3m1!1s2@1:CAIQACodChtycF9oOnZuXzRUMlBBazRVdzhZN2w3Tms0QlE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT20xUlpubFhaVmhEZHpaU2VVTkxSMFI1TFZST2VGRRAB",
+      "reviewer": "Duane R.",
+      "rating": 5,
+      "text": "Tech was great. Very polite and professional. Fixed our issue quickly and very fair cost. Price included signing up for annual maintenance plan. Highly recommend JD Kuhn",
+      "publishedAt": "2026-01-08T14:47:57.320Z",
+      "ownerResponse": "Thank you Duane!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT20xUlpubFhaVmhEZHpaU2VVTkxSMFI1TFZST2VGRRAB!2m1!1s0x0:0xd40bfb75f355d95c!3m1!1s2@1:CAIQACodChtycF9oOm1RZnlXZVhDdzZSeUNLR0R5LVROeFE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25odFJGVm9NSFpJUVROcFdtcHZhVFJ6WWpKMlUxRRAB",
+      "reviewer": "adam H.",
+      "rating": 5,
+      "text": "Overall a fantastic experience.  Kristen in the office and our technician Erich were both very helpful.  Hopefully I won't need their help in the future, but if I do they have won my business.  ***edit 12/29/25*** had to have them back out and the experience was the same.   Fast friendly and very helpful.  Still highly recommend them!!",
+      "publishedAt": "2025-12-29T19:59:19.082Z",
+      "ownerResponse": "Thank you Adam!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25odFJGVm9NSFpJUVROcFdtcHZhVFJ6WWpKMlUxRRAB!2m1!1s0x0:0xd40bfb75f355d95c!3m1!1s2@1:CAIQACodChtycF9oOnhtRFVoMHZIQTNpWmpvaTRzYjJ2U1E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUN6eFAzM3d3RRAB",
+      "reviewer": "Denny B.",
+      "rating": 5,
+      "text": "JD Kuhn Heating and Air Conditioning were very professional installers. I would highly recommend them for your next heating or cooling problems.",
+      "publishedAt": "2025-12-12T19:26:37.690Z",
+      "ownerResponse": "Thank you Denny! I appreciate your business!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN6eFAzM3d3RRAB!2m1!1s0x0:0xd40bfb75f355d95c!3m1!1s2@1:CIHM0ogKEICAgICzxP33wwE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT201d2NXZzVSamQzZUZkaWVWWlZXVWhSVG1WaWVHYxAB",
+      "reviewer": "Caryn B.",
+      "rating": 5,
+      "text": "Prompt efficient and professional!<br>Couldn’t find a more reliable or affordable HVAC  CONTRACTOR THAN<br>JD KUHN HEATING & AIR!<br>Erich and Chris did an outstanding job!<br>HIGHLY RECOMMEND ⭐️⭐️⭐️⭐️⭐️",
+      "publishedAt": "2025-12-11T17:14:28.462Z",
+      "ownerResponse": "Thank you Caryn!  Appreciate you!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT201d2NXZzVSamQzZUZkaWVWWlZXVWhSVG1WaWVHYxAB!2m1!1s0x0:0xd40bfb75f355d95c!3m1!1s2@1:CAIQACodChtycF9oOm5wcWg5Rjd3eFdieVZVWUhRTmVieGc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xWMWIyUnlNRU5NY0ZOR1ltcElhRFk1V2pGemVIYxAB",
+      "reviewer": "Mark Y.",
+      "rating": 5,
+      "text": "JD Kuhn installed a new air conditioner and furnace this past summer for me. I was very pleased. I had problems with the humidifier recently, and the part was not part of their new installation. Even though the repair was a little more challenging than anticipated, Eric stuck with the project and did a great job! And their price was very very fair! Strongly recommend this company for all of your heating and air-conditioning needs!",
+      "publishedAt": "2025-12-06T14:19:03.668Z",
+      "ownerResponse": "Thanks Mark",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xWMWIyUnlNRU5NY0ZOR1ltcElhRFk1V2pGemVIYxAB!2m1!1s0x0:0xd40bfb75f355d95c!3m1!1s2@1:CAIQACodChtycF9oOlV1b2RyMENMcFNGYmpIaDY5WjFzeHc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUQzakszSmVBEAE",
+      "reviewer": "Nancy P.",
+      "rating": 5,
+      "text": "Eric, our tech guy,  is always very respectful and is very knowledgeable. We bought our new HVAC system from Justin Kuhn, the owner, who is so passionate about his product!!  He was never pushy, just a super nice guy.  Kristen is always upbeat and friendly when I call to make an appointment.  I highly recommend JD Kuhn Heating and Air Conditioning!",
+      "publishedAt": "2025-11-18T20:20:47.833Z",
+      "ownerResponse": "Thank you so much Nancy!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQzakszSmVBEAE!2m1!1s0x0:0xd40bfb75f355d95c!3m1!1s2@1:CIHM0ogKEICAgID3jK3JeA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21wWFdtZDJVRmhYWkRCNlZuWnJWWEJHVmpoQmFGRRAB",
+      "reviewer": "mark S.",
+      "rating": 5,
+      "text": "I Highly suggest using  JD Heating and Air. Very thorough inspection and cleaning.  Explained every step of the process.",
+      "publishedAt": "2025-11-13T17:34:01.578Z",
+      "ownerResponse": "Thank you Mark!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21wWFdtZDJVRmhYWkRCNlZuWnJWWEJHVmpoQmFGRRAB!2m1!1s0x0:0xd40bfb75f355d95c!3m1!1s2@1:CAIQACodChtycF9oOmpXWmd2UFhXZDB6VnZrVXBGVjhBaFE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25oelVrbHZOVjlYUWkxSWFrcHVVM1pITW01dGJYYxAB",
+      "reviewer": "Chris",
+      "rating": 5,
+      "text": "Service was amazing.",
+      "publishedAt": "2025-11-12T19:54:04.815Z",
+      "ownerResponse": "Chris, Thank you!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25oelVrbHZOVjlYUWkxSWFrcHVVM1pITW01dGJYYxAB!2m1!1s0x0:0xd40bfb75f355d95c!3m1!1s2@1:CAIQACodChtycF9oOnhzUklvNV9XQi1IakpuU3ZHMm5tbXc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pWU1MzVnNRV3hrWmtKUlpXVk5hbmRZTUMwMmRrRRAB",
+      "reviewer": "Serena A.",
+      "rating": 5,
+      "text": "Fast, efficient and professional.  We recently switched and they have been fantastic! From the receptionist to guys that come out . Thank you !",
+      "publishedAt": "2025-11-07T14:36:42.846Z",
+      "ownerResponse": "Thank you Serena!  The team here is special!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pWU1MzVnNRV3hrWmtKUlpXVk5hbmRZTUMwMmRrRRAB!2m1!1s0x0:0xd40bfb75f355d95c!3m1!1s2@1:CAIQACodChtycF9oOjVSS3VsQWxkZkJRZWVNandYMC02dkE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURGdTVhRVBnEAE",
+      "reviewer": "Lisa F.",
+      "rating": 5,
+      "text": "Always, always 5 star service!!",
+      "publishedAt": "2025-10-27T20:42:04.948Z",
+      "ownerResponse": "Thank you Lisa!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURGdTVhRVBnEAE!2m1!1s0x0:0xd40bfb75f355d95c!3m1!1s2@1:CIHM0ogKEICAgIDFu5aEPg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25rMFRsazVhREZNTjJoQ2JGQnFkVkV4Wmt4M1ZsRRAB",
+      "reviewer": "Phillip C.",
+      "rating": 5,
+      "text": "On time and the usual great job.",
+      "publishedAt": "2025-10-23T22:51:32.240Z",
+      "ownerResponse": "Thank you Mr. Clark!  Always a pleasure!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25rMFRsazVhREZNTjJoQ2JGQnFkVkV4Wmt4M1ZsRRAB!2m1!1s0x0:0xd40bfb75f355d95c!3m1!1s2@1:CAIQACodChtycF9oOnk0Tlk5aDFMN2hCbFBqdVExZkx3VlE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pGbU1YTmxaa0pMYjB3NFNGRklaMGxrWmtsR1JuYxAB",
+      "reviewer": "Jen V.",
+      "rating": 5,
+      "text": "Erich is the best! I very much recommend JD Kuhn!!",
+      "publishedAt": "2025-10-16T18:38:21.402Z",
+      "ownerResponse": "Thank you Jen!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pGbU1YTmxaa0pMYjB3NFNGRklaMGxrWmtsR1JuYxAB!2m1!1s0x0:0xd40bfb75f355d95c!3m1!1s2@1:CAIQACodChtycF9oOjFmMXNlZkJLb0w4SFFIZ0lkZklGRnc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25BdFdWaGhUVkIwZURaNE4zb3ROa1I2V1ZGSE9WRRAB",
+      "reviewer": "Dave R.",
+      "rating": 5,
+      "text": "Awesome people, the whole crew did an above the level job, replacing a 70 year old furnace and installing a first time central air unit in this house, we are so pleased with JD Kuhn, recommend them to anybody, thanks again guys.",
+      "publishedAt": "2025-10-14T18:45:38.844Z",
+      "ownerResponse": "Thank you Dave!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25BdFdWaGhUVkIwZURaNE4zb3ROa1I2V1ZGSE9WRRAB!2m1!1s0x0:0xd40bfb75f355d95c!3m1!1s2@1:CAIQACodChtycF9oOnAtWVhhTVB0eDZ4N3otNkR6WVFHOVE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xCSk4ySkViVEZDVGpabWNsSjNTMlk0U2xCWmNXYxAB",
+      "reviewer": "Ashley V.",
+      "rating": 5,
+      "text": "Absolutely wonderful service. Had an emergency call on a Friday afternoon and they had a service tech at our door within 30 minutes. I've never had that kind of service anywhere else. Both the receptionist and tech were very kind and informative! Our issue didn't end up being an HVAC problem and they left us with some suggestions to move forward. Incredibly fairly priced for a last minute call as well! Highly recommend.",
+      "publishedAt": "2025-10-10T19:31:03.473Z",
+      "ownerResponse": "Thank you for sharing Ashley!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xCSk4ySkViVEZDVGpabWNsSjNTMlk0U2xCWmNXYxAB!2m1!1s0x0:0xd40bfb75f355d95c!3m1!1s2@1:CAIQACodChtycF9oOlBJN2JEbTFCTjZmclJ3S2Y4SlBZcWc%7C%7C?hl=en-US",
+      "language": "en"
+    }
+  ],
+  "ratingOnly": [
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25WelYyaHJUR3BmUkc5RVNsVnlSVGhGUldKeVRXYxAB",
+      "reviewer": "Jan S.",
+      "rating": 5,
+      "publishedAt": "2026-11-14T01:59:46.554Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25reFVYVTNlVlUyVmtWd1dXSnFZVVk0V0RWRE5VRRAB",
+      "reviewer": "Steve P.",
+      "rating": 5,
+      "publishedAt": "2026-11-06T02:06:32.927Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xWUk1rSmZjMWRUZFdKVWVtcE9XbDltTFRsdVpYYxAB",
+      "reviewer": "redcleon",
+      "rating": 1,
+      "publishedAt": "2026-10-14T12:39:27.027Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURINTh1bUxnEAE",
+      "reviewer": "Troy S.",
+      "rating": 5,
+      "publishedAt": "2026-09-28T23:58:48.386Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pkYU9YWnlTSEZ2TFVrMlVGcHdPRFJwZDI5R05XYxAB",
+      "reviewer": "kendo S.",
+      "rating": 1,
+      "publishedAt": "2026-09-23T16:49:51.969Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xGd1pURXdZbU5uYjFwT01GcFZiRXB0UWpod1lWRRAB",
+      "reviewer": "Jaime B.",
+      "rating": 5,
+      "publishedAt": "2026-09-09T19:17:04.482Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2t0NGIzaDVVVTB5VTAwek5tRm9ibEk1ZVdKdGQxRRAB",
+      "reviewer": "Galen C.",
+      "rating": 5,
+      "publishedAt": "2026-08-27T22:47:14.280Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pGSk1tcEJhVTVLWjJSWVZuUmFUMmR3TldnMloxRRAB",
+      "reviewer": "Jacob M.",
+      "rating": 5,
+      "publishedAt": "2026-08-25T20:37:41.156Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25OaU9HbG5ZWGRYUVZsSWNVSnNUMDFNUkdoNlVWRRAB",
+      "reviewer": "sandra L.",
+      "rating": 5,
+      "publishedAt": "2026-08-11T17:26:40.310Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21oNVZtRmphVk5UUldodlpuVkZlR0pOUjNWc1MwRRAB",
+      "reviewer": "Judy F.",
+      "rating": 5,
+      "publishedAt": "2026-07-18T11:54:07.717Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2sxM2JEWldhRlJ1VkRnM01VUTVWREJOVEZObWNFRRAB",
+      "reviewer": "Adam",
+      "rating": 5,
+      "publishedAt": "2026-06-26T22:26:11.649Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25CRE1WZGZOVmhxVkV0ek1GQktWRmRHZFVkbWJXYxAB",
+      "reviewer": "Kay E.",
+      "rating": 5,
+      "publishedAt": "2026-05-26T23:45:24.910Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2swNFVscE1ZblpwUTI0NVpFOTNYME5CVGxkdFNtYxAB",
+      "reviewer": "Greg F.",
+      "rating": 5,
+      "publishedAt": "2026-05-21T20:38:21.884Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2t0RlZtTTNVVmRyVTBaUFEwcGxhREk1TUhwS01WRRAB",
+      "reviewer": "Kelly T.",
+      "rating": 5,
+      "publishedAt": "2026-05-06T03:27:57.252Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25SblQxOXVTV3BKTkRCbWFFRjFXalJSTW5kVVFXYxAB",
+      "reviewer": "Debra H.",
+      "rating": 5,
+      "publishedAt": "2026-04-27T13:39:04.784Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xoV2RtSjRTRzQyTFRWYUxWRmxWVWgzUW1zek5VRRAB",
+      "reviewer": "Local A.",
+      "rating": 1,
+      "publishedAt": "2026-04-24T17:07:03.820Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xOdGNFaHBVbGg0YUZVMk9XbHVlVVZ4WTBac1NsRRAB",
+      "reviewer": "Judith D.",
+      "rating": 5,
+      "publishedAt": "2026-04-15T14:58:31.138Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25KWmNXOUdOSEpUVWxsWlNFcEplbGhVUmxWT2VHYxAB",
+      "reviewer": "Dr. J.",
+      "rating": 5,
+      "publishedAt": "2026-03-12T21:48:13.470Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21FMWFVOXdkSFpuVm1NMlNHSTNZa2xFVWpCcGIwRRAB",
+      "reviewer": "Lance E.",
+      "rating": 5,
+      "publishedAt": "2026-02-12T17:32:58.730Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnTURncE9MdkZnEAE",
+      "reviewer": "Kyle P.",
+      "rating": 5,
+      "publishedAt": "2025-12-18T18:02:59.558Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT210UVJVMVhVakF4ZDJselJrNXZUVXBLWWpoS1lWRRAB",
+      "reviewer": "craig D.",
+      "rating": 5,
+      "publishedAt": "2025-11-13T01:07:05.136Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xGM1dWVjVlWGhFWjB0a1dsWlNNa05vT1V0c1dIYxAB",
+      "reviewer": "Janet H.",
+      "rating": 5,
+      "publishedAt": "2025-11-11T16:01:33.122Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2t0VmJVVmZhR0Z1UkRsd1ZWTlJRVWc0Tm5GRldIYxAB",
+      "reviewer": "Deanna R.",
+      "rating": 5,
+      "publishedAt": "2025-11-03T11:42:43.789Z"
+    }
+  ]
+}

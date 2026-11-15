@@ -447,6 +447,18 @@
       "pulledAt": "2026-11-09T17:54:18.958Z"
     },
     {
+      "slug": "jdkuhn-fortwayne",
+      "name": "JD Kuhn Heating And Air Conditioning LLC",
+      "placeId": "ChIJaRGQDIRSfAwRXNlV83X7C9Q",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 175,
+        "withText": 52,
+        "ratingOnly": 23
+      },
+      "pulledAt": "2026-11-15T03:09:52.068Z"
+    },
+    {
       "slug": "jenny-maids",
       "name": "Jenny Maid's",
       "placeId": "ChIJVSupFGvhuocR61W44AIeKkE",
