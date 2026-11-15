@@ -639,6 +639,18 @@
       "pulledAt": "2026-11-09T02:09:21.938Z"
     },
     {
+      "slug": "pioneer-peoria",
+      "name": "Pioneer Roofing",
+      "placeId": "ChIJbVmv0ztZCogR4RO0wHMGcZg",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 48,
+        "withText": 10,
+        "ratingOnly": 38
+      },
+      "pulledAt": "2026-11-15T03:27:28.469Z"
+    },
+    {
       "slug": "plumbcrazy-wichita",
       "name": "Plumb Crazy",
       "placeId": "ChIJ7ye8perhuocRcx4ydI15DXk",
