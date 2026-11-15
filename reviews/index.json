@@ -15,6 +15,18 @@
       "pulledAt": "2026-10-24T02:07:34.165Z"
     },
     {
+      "slug": "affordable-fortwayne",
+      "name": "Affordable Roofing",
+      "placeId": "ChIJSTESmw3jFYgRf8IpFgfDxt4",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 112,
+        "withText": 69,
+        "ratingOnly": 6
+      },
+      "pulledAt": "2026-11-15T03:18:40.798Z"
+    },
+    {
       "slug": "aircapital-hvac-wichita",
       "name": "Air Capital Heating and Air",
       "placeId": "ChIJgTISpJcXliURBzdA3robQik",
