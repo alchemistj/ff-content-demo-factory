@@ -79,10 +79,10 @@ Counts are based only on the homepages fetched. Titan is excluded from counts be
 
 | Claim | Count of 4 fetched | Who |
 |---|---|---|
-| 24/7 or 24-hour service | 3 of 4 | Summers, Rolf Griffin, PG (PG's own FAQ says 7am-6pm, so conflicting). Custom Assured says "around the clock" |
-| Free estimate stated on site | 2 of 4 | PG (button), Rolf Griffin not stated; Custom Assured not stated; Summers only in a review |
+| 24/7 or 24-hour service | 4 of 4 | Summers, Rolf Griffin, PG (hours table says 24 Hours, though its FAQ says 7am-6pm), Custom Assured ("around the clock") |
+| Free estimate stated on site | 1 of 4 | PG ("Get Your Free Quote Today"); Summers only in a review |
 | Guarantee or satisfaction claim | 4 of 4 | Summers (Worry FREE), Rolf Griffin (Service Experts Guarantee), Custom Assured (job not complete until satisfied), PG (quality guarantee, money-back, no terms) |
-| Same-day service stated on site | 2 of 4 | Summers ("Same Day Service, Repair & Installation"), Rolf Griffin (in review only, so 1 of 4 on site) |
+| Same-day service stated on site | 1 of 4 | Summers ("Same Day Service, Repair & Installation"); Rolf Griffin same-day is in a review only |
 | Family-owned stated | 1 of 4 | Custom Assured |
 | Locally owned stated | 2 of 4 | PG, Summers (nav-only, not claimed) |
 | Years in business stated | 3 of 4 | Summers (1969), Rolf Griffin (1899), Custom Assured (1998) |
