@@ -1,0 +1,594 @@
+{
+  "schema": "words-package/v1",
+  "business": {
+    "name": "JD Kuhn Heating And Air Conditioning",
+    "slug": "jdkuhn-fortwayne",
+    "city": "Fort Wayne",
+    "state": "IN",
+    "companyType": "HVAC Company",
+    "owners": [
+      "Justin"
+    ],
+    "phones": [
+      {
+        "label": "Fort Wayne",
+        "display": "(260) 413-1856",
+        "tel": "+12604131856"
+      }
+    ],
+    "email": "justin@jdkuhnheating.com",
+    "hours": "Monday to Friday, 8:00 AM to 4:30 PM",
+    "address": null,
+    "serviceArea": {
+      "summary": "Fort Wayne, IN",
+      "towns": [
+        "Fort Wayne"
+      ]
+    }
+  },
+  "trustBar": [
+    "Locally Owned",
+    "Free Replacement Estimates",
+    "All Work Quoted Up Front",
+    "Yearly Service Agreements",
+    "Monday to Friday, 8 to 4:30"
+  ],
+  "services": [
+    {
+      "name": "HVAC Replacement",
+      "route": "/hvac-replacement-fort-wayne-in/",
+      "blurb": "New furnaces and air conditioners, with a free estimate and the work quoted up front."
+    },
+    {
+      "name": "Furnace Repair",
+      "route": null,
+      "blurb": "Heating repair for furnaces and boilers, homes and light commercial."
+    },
+    {
+      "name": "AC Repair",
+      "route": null,
+      "blurb": "Air conditioning repair, from a system that won't cool to one that's noisy."
+    },
+    {
+      "name": "Heat Pumps",
+      "route": null,
+      "blurb": "Installation, repair and maintenance for heat pumps."
+    },
+    {
+      "name": "Mini Splits",
+      "route": null,
+      "blurb": "Ductless heating and cooling, installed, repaired and maintained."
+    },
+    {
+      "name": "Maintenance and Service Agreements",
+      "route": null,
+      "blurb": "Two services a year, discounts on consumables and parts, and 24-hour emergency service."
+    },
+    {
+      "name": "Unit Heaters",
+      "route": null,
+      "blurb": "Commercial and industrial unit heaters, installed, repaired and maintained."
+    },
+    {
+      "name": "Air Filters",
+      "route": null,
+      "blurb": "Filters sold with or without a service visit."
+    }
+  ],
+  "pages": [
+    {
+      "role": "home",
+      "route": "/home/",
+      "navLabel": "Home",
+      "keyword": "hvac company fort wayne in",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Heating, air conditioning and sheet metal · Fort Wayne",
+        "h1": "HVAC Company in Fort Wayne, IN — JD Kuhn Heating And Air Conditioning",
+        "sub": "A locally owned heating and cooling shop in Fort Wayne. Replacement estimates are free and all work is quoted up front, so you see the number before anything starts. Call (260) 413-1856 and tell us what the system is doing.",
+        "primaryCta": {
+          "label": "Call (260) 413-1856",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Ask About Your System",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "home-hero",
+          "alt": "Technician carrying a toolbag to the door of a house",
+          "brief": "HVAC pool: home-hero (one photo, desktop and phone crops)"
+        }
+      },
+      "sections": [
+        {
+          "type": "review",
+          "quote": "A competitor was asking for full replacement of the air conditioning system running about 20K. JD Kuehn cleaned and recharge our old system. Price $514.00. I tell everyone I know about JD Kuehn. Friendly, honest professional company.",
+          "name": "Tim D."
+        },
+        {
+          "type": "split",
+          "heading": "Told You Need a Whole New System? Get a Second Look First",
+          "body": [
+            "A replacement quote is the biggest number an HVAC company hands a homeowner, so it's fair to want another set of eyes before you say yes. Old systems tend to fail one part at a time. Sometimes a cleaning or a recharge is the whole fix, and sometimes the system really is finished. Someone has to look to know which.",
+            "That's the call we want. Tell us what the other company said and what the system is doing. We'll look at it and tell you plainly what it needs. If the answer is new equipment, the estimate is free and the work is quoted up front."
+          ],
+          "list": [
+            "Replacement estimates are free",
+            "All work is quoted up front",
+            "Furnaces, air conditioners, heat pumps and mini splits",
+            "Locally owned, here in Fort Wayne"
+          ],
+          "listStyle": "checks",
+          "image": {
+            "slot": "tech-at-door",
+            "alt": "Technician talking with a homeowner at the front door",
+            "brief": "HVAC pool photo: tech-at-door"
+          },
+          "imageSide": "right"
+        },
+        {
+          "type": "prose",
+          "heading": "Furnaces, Air Conditioners, Heat Pumps and the Rest",
+          "body": [
+            "We install, repair and maintain the equipment that heats and cools a Fort Wayne house. Here is what that covers, and what to watch for with each."
+          ],
+          "items": [
+            {
+              "title": "Furnaces and boilers",
+              "text": "A furnace that cycles on and off, blows cool air or won't light needs a look before the cold weather settles in. We install, repair and maintain furnaces and boilers."
+            },
+            {
+              "title": "Air conditioners",
+              "text": "If the house won't cool, the air from the vents is warm or the unit is noisy, turn it down and call. A struggling system makes a small problem bigger the longer it runs."
+            },
+            {
+              "title": "Heat pumps",
+              "text": "One system heats in winter and cools in summer, so it works hard all year. We install, repair and maintain heat pumps."
+            },
+            {
+              "title": "Mini splits",
+              "text": "No ducts, one unit on the wall. A mini split suits an addition, a sunroom or a room the ductwork never reached."
+            },
+            {
+              "title": "Unit heaters",
+              "text": "Garages, shops and warehouses often heat with a hanging unit instead of a furnace. We install, repair and maintain unit heaters for commercial and industrial spaces."
+            }
+          ],
+          "link": {
+            "label": "See how replacement works",
+            "route": "/hvac-replacement-fort-wayne-in/"
+          }
+        },
+        {
+          "type": "review",
+          "quote": "Absolutely wonderful service. Had an emergency call on a Friday afternoon and they had a service tech at our door within 30 minutes. I've never had that kind of service anywhere else.",
+          "name": "Ashley V."
+        },
+        {
+          "type": "services",
+          "heading": "Everything We Install, Repair and Maintain",
+          "intro": "One phone number covers the furnace, the air conditioner, the heat pump and the mini split, in homes and in light commercial buildings."
+        },
+        {
+          "type": "prose",
+          "heading": "Started in the Trade in 2005, Then Service Manager at JF Miller",
+          "body": [
+            "I started in the HVAC trade in 2005 as a high school junior. Then I spent 12 years with JF Miller here in the area as Service Manager. That's the person technicians call when a job doesn't add up, and it's where I learned what a tech should find before anyone writes up a replacement.",
+            "I've kept up the continuing education since, because the equipment keeps changing. JD Kuhn is locally owned."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "I’ve used them before and they are always professional and efficient. My tenant complained of the AC not working at all in their apartment. It turns out a new capacitor was needed. The service tech, Chris Wakeland, was in and out in an hour to hour and a half.",
+          "name": "Kristina B."
+        },
+        {
+          "type": "prose",
+          "heading": "For Landlords and Light Commercial Owners",
+          "body": [
+            "If you own a rental, the call comes from you but the cold or the heat is someone else's problem. A tenant without air in July doesn't wait politely, and you can't be there to let anyone in.",
+            "We write yearly service agreements for residential and light commercial systems, and we install, repair and maintain unit heaters for commercial and industrial buildings. Call from wherever you are and tell us what's going on."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "The Yearly Service Agreement",
+          "body": [
+            "The yearly service agreement is for residential and light commercial systems. It includes two annual services, discounts on consumables and parts, and 24-hour emergency service.",
+            "Filters are sold with or without a service visit, so a clean one is easy to keep in the system. Ask about the agreement when you call, and we'll go through what it includes before you sign up for anything."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Eric at JD Kuhn does a great job getting our HVAC System ready to go in the spring and fall. The owner Justin is also great to deal with and very knowledgeable in his field. Highly recommended.",
+          "name": "Chris V."
+        },
+        {
+          "type": "prose",
+          "heading": "Add-Ons, Tight Spaces and the Odd Job",
+          "body": [
+            "Not every job is a straight swap. A cabana, a sunroom or a finished basement can need its own heating and cooling. Mini splits are made for that.",
+            "Ask us what's missing from the system you have now, whether that's central air, a humidifier or a filter that fits the space."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Justin and the guys always do an excellent job. They installed a mini split in our new Cabana. The finished product was very clean and neat. They are always prompt and their follow up is great.",
+          "name": "Mike P."
+        },
+        {
+          "type": "prose",
+          "heading": "Weekdays, 8 to 4:30, and Kristen on the Phones",
+          "body": [
+            "Our hours are Monday to Friday, 8:00 AM to 4:30 PM, and we're closed Saturday and Sunday. Kristen in the office takes appointment calls and texts.",
+            "Geothermal, duct cleaning, gas inserts and fireplaces aren't what we do. When one of those comes up, we send you to a local business that does, so you don't wait on us for nothing."
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "What Fort Wayne Homeowners Ask Before They Call",
+          "items": [
+            {
+              "q": "Do you charge for a replacement estimate?",
+              "a": "No. Estimates for equipment replacement are free, and all work is quoted up front."
+            },
+            {
+              "q": "Another company told me to replace everything. Can you look at it?",
+              "a": "Yes. Tell us what they said and what the system is doing when you call. Ask what the visit itself costs before you book, so there are no surprises on the bill."
+            },
+            {
+              "q": "Do you work on commercial buildings?",
+              "a": "We write service agreements for light commercial systems, and we install, repair and maintain unit heaters for commercial and industrial spaces."
+            },
+            {
+              "q": "What does the yearly service agreement include?",
+              "a": "Two services a year, discounts on consumables and parts, and 24-hour emergency service."
+            },
+            {
+              "q": "Do you do geothermal, duct cleaning or fireplaces?",
+              "a": "No, and we'd rather say so than guess. We refer those to local businesses that do them."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Talk to JD Kuhn About Your System",
+          "text": "Call (260) 413-1856 and tell us what's going on. Replacement estimates are free, and anything we do is quoted before we start."
+        }
+      ]
+    },
+    {
+      "role": "service",
+      "route": "/hvac-replacement-fort-wayne-in/",
+      "navLabel": "HVAC Replacement",
+      "keyword": "hvac replacement fort wayne in",
+      "seo": null,
+      "hero": {
+        "eyebrow": "New furnaces and air conditioners, Fort Wayne",
+        "h1": "HVAC Replacement in Fort Wayne, IN — JD Kuhn Heating And Air Conditioning",
+        "sub": "When a furnace or air conditioner is finished, the estimate for new equipment costs you nothing. You get the number up front, before any work starts. Call (260) 413-1856.",
+        "primaryCta": {
+          "label": "Call (260) 413-1856",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Ask About Replacement",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "furnace-hero",
+          "alt": "New gas furnace in a basement utility room",
+          "brief": "HVAC pool: furnace-hero"
+        }
+      },
+      "sections": [
+        {
+          "type": "review",
+          "quote": "Absolutely recommend JD Kuhn. They have extremely reasonable prices, fantastic customer service, and excellent communication. Called at the beginning of the week about a furnace dying and had a new furnace installed by the end of the week.",
+          "name": "Adele A."
+        },
+        {
+          "type": "split",
+          "heading": "A Free Estimate, and the Number Before the Work",
+          "body": [
+            "Estimates for equipment replacement are free at JD Kuhn. All work is quoted up front, which means the price is on the table before a crew touches anything.",
+            "A free estimate is also a fair way to compare. Get ours, get anyone else's, and put them side by side. Look at what equipment is named, what labor is included and what the total is. A number you can compare is a number you can trust."
+          ],
+          "image": {
+            "slot": "furnace-detail",
+            "alt": "Close view of a new furnace cabinet and ductwork",
+            "brief": "HVAC pool photo: furnace-detail"
+          },
+          "imageSide": "left"
+        },
+        {
+          "type": "prose",
+          "heading": "Repair or Replace: Four Signs You're Past Repairing",
+          "body": [
+            "Most systems don't fail all at once, and a repair is often the right call. Here's how to tell when it isn't."
+          ],
+          "items": [
+            {
+              "title": "The repairs keep coming",
+              "text": "One repair on an old system is normal. A second and a third in the same season usually mean the whole machine is wearing out, not one part."
+            },
+            {
+              "title": "A major part has failed",
+              "text": "A cracked heat exchanger on a furnace or a failed compressor on an air conditioner is a big, expensive repair on top of old equipment. That's when new starts to make sense."
+            },
+            {
+              "title": "It can't keep up with the house",
+              "text": "Rooms that never get comfortable, or a system that runs all day, can mean worn-out equipment or equipment that was never the right size."
+            },
+            {
+              "title": "It's very old",
+              "text": "Equipment that's decades old runs on technology from a different era. Newer furnaces and air conditioners do the same job on less."
+            }
+          ],
+          "tail": [
+            "If you're not sure which side of that line you're on, that's what the free estimate is for."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Awesome people, the whole crew did an above the level job, replacing a 70 year old furnace and installing a first time central air unit in this house, we are so pleased with JD Kuhn, recommend them to anybody, thanks again guys.",
+          "name": "Dave R."
+        },
+        {
+          "type": "prose",
+          "heading": "Before You Say Yes to Anyone's Quote",
+          "body": [
+            "Whoever you call, ask the same five things. What exactly is wrong with the system now? Could a repair fix it? What equipment is being quoted, and what's included in the price? Who does the work? What happens if something goes wrong after the install?",
+            "A company that answers all five plainly is one worth hiring. We expect to be asked, and we'd rather answer them on the phone than at the door."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "So I did get a furnace from JD Kuhn Heating and I really like it. They are a really great company and very informative with decision making.",
+          "name": "Angel S."
+        },
+        {
+          "type": "prose",
+          "heading": "Furnace, Air Conditioner or Both at Once",
+          "body": [
+            "Some homes need only one. Others have a furnace and an air conditioner of the same age that are both nearing the end. Replacing both at once can mean one visit, one set of installers and one project, instead of two.",
+            "Heat pumps, boilers and mini splits are replaced and installed here too. If you're adding central air to a house that never had it, say so on the first call, because the ductwork changes the job."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "JD Kuhn installed a new air conditioner and furnace this past summer for me. … Even though the repair was a little more challenging than anticipated, Eric stuck with the project and did a great job! And their price was very very fair!",
+          "name": "Mark Y."
+        },
+        {
+          "type": "prose",
+          "heading": "Humidifiers, Filter Racks and What Rides Along With a New System",
+          "body": [
+            "A new furnace is a good time to fix what the old one never had. Filters come with or without a service, and a good filter rack keeps the system breathing. A humidifier can be added where the air gets dry in winter.",
+            "Tight spaces are a fact of old houses. If your furnace sits in a closet, a crawlspace or a corner of the basement, tell us when you call, so the estimate fits the space."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Very professional! They were able to install 4 inch filter rack and whole house humidifier in a very tight space. I would highly recommend for any HVAC needed!",
+          "name": "William K."
+        },
+        {
+          "type": "prose",
+          "heading": "After the Install, a Yearly Service Agreement Keeps It Running",
+          "body": [
+            "New equipment still needs a check. The yearly service agreement covers residential and light commercial systems with two services a year, discounts on consumables and parts, and 24-hour emergency service.",
+            "A furnace and an air conditioner that get looked at twice a year are less likely to surprise you in January or July. Ask about it when we quote the system."
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Replacement Questions Worth Asking",
+          "items": [
+            {
+              "q": "Is the replacement estimate really free?",
+              "a": "Yes. Estimates for equipment replacement are free."
+            },
+            {
+              "q": "When do I pay?",
+              "a": "All work is quoted up front, so you'll know the total before work begins. Ask about payment options when you call."
+            },
+            {
+              "q": "Can you replace just the furnace, or just the air conditioner?",
+              "a": "Yes. We install both heating and air conditioning, together or one at a time."
+            },
+            {
+              "q": "Do you install heat pumps and mini splits?",
+              "a": "Yes. Heat pumps and mini splits are on our list of installation, repair and maintenance work."
+            },
+            {
+              "q": "What if I'm not sure I need a new system at all?",
+              "a": "Call anyway. Tell us what's happening, and we'll tell you what we think it needs. Sometimes the answer is a repair."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Get a Replacement Estimate Without Paying for One",
+          "text": "Call (260) 413-1856 to talk through your furnace or air conditioner. We'll look at what you have and put a price on the table before any work begins."
+        }
+      ]
+    },
+    {
+      "role": "contact",
+      "route": "/contact/",
+      "navLabel": "Contact",
+      "keyword": "contact jd kuhn heating and air conditioning fort wayne in",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Fort Wayne, Indiana",
+        "h1": "Contact JD Kuhn Heating And Air Conditioning",
+        "sub": "The quickest way to reach us is to call. Tell us what the system is doing, and ask for the price before anything starts.",
+        "primaryCta": {
+          "label": "Call (260) 413-1856",
+          "action": "call"
+        },
+        "image": {
+          "slot": "contact-hero",
+          "alt": "Service van parked at the curb in front of a house",
+          "brief": "HVAC pool: contact-hero"
+        }
+      },
+      "sections": [
+        {
+          "type": "prose",
+          "heading": "Pick Up the Phone",
+          "body": [
+            "(260) 413-1856",
+            "Call and tell us what the furnace, air conditioner or heat pump is doing. If you were quoted a replacement somewhere else, bring that up too. We'd like to hear it before we look at the system."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Prefer Email?",
+          "body": [
+            "justin@jdkuhnheating.com",
+            "Send the address of the house or building, a phone number and a few lines about the problem. Include what another company told you, if you've had one out."
+          ]
+        },
+        {
+          "type": "split",
+          "heading": "A Few Details That Speed Up the First Call",
+          "list": [
+            "What the system is doing: no heat, no cooling, a noise, a smell or a tripped breaker.",
+            "Whether it's a furnace, an air conditioner, a heat pump, a boiler or a mini split.",
+            "About how old it is, and what's been repaired.",
+            "Whether it's a home, a rental or a commercial building."
+          ],
+          "image": {
+            "slot": "thermostat",
+            "alt": "Hand adjusting a wall thermostat",
+            "brief": "HVAC pool photo: thermostat"
+          },
+          "imageSide": "right"
+        },
+        {
+          "type": "prose",
+          "heading": "Monday to Friday, 8:00 AM to 4:30 PM",
+          "body": [
+            "The office is open Monday to Friday, 8:00 AM to 4:30 PM, and closed Saturday and Sunday. Under the yearly service agreement, 24-hour emergency service is included.",
+            "We work in Fort Wayne, Indiana."
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Tell Us What's Going On",
+          "text": "Call (260) 413-1856 with the problem and the questions. Replacement estimates are free."
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "about": "JD Kuhn Heating And Air Conditioning is a locally owned heating, air conditioning and sheet metal contractor in Fort Wayne, founded by Justin Kuhn.",
+    "why": [
+      "Free replacement estimates",
+      "All work quoted up front",
+      "Yearly service agreements",
+      "Locally owned"
+    ]
+  },
+  "strategy": {
+    "whyHeading": "Why we built this site",
+    "why": [
+      "Your site is one long page, and on a phone it runs 768 pixels wide on a 390 pixel screen, so a visitor scrolls sideways to read it. Most HVAC searches happen on a phone. There's no contact form either: Book Now opens a Housecall Pro window, and in our test that window showed nothing after three seconds.",
+      "Your customers already describe the shop you are. David F. wrote \"Price was great, quote was easy, service is amazing.\" Faye P. wrote \"Kristen in the office is so nice and a pleasure to work with.\" Today those words sit on Google, not on your site.",
+      "So the demo opens with HVAC company in Fort Wayne, IN, leads with a straight second look before a big replacement bill, and gives HVAC replacement its own page."
+    ],
+    "cardsHeading": "Be the HVAC Company People Find on Google",
+    "cardsIntro": "Each card is one page of the demo.",
+    "cards": [
+      {
+        "route": "/home/",
+        "title": "Homepage",
+        "why": "Where Google learns who you are and where you work.",
+        "problems": [
+          "Your headline is \"Your Comfort Zone Experts,\" with no HVAC company and no Fort Wayne, so Google can't tell what you are or where.",
+          "The page title uses \"JD Kuhn HVAC\" while your legal name is JD Kuhn Heating And Air Conditioning LLC.",
+          "Your reviews section is labeled \"Happy Clients\" with no named customers."
+        ],
+        "fixes": [
+          "A headline that says HVAC company in Fort Wayne, IN, at the very top.",
+          "Real Google reviews, with names, set beside the services they describe.",
+          "One company name used the same way everywhere."
+        ],
+        "alsoAdd": "On day one, we sit down with you to get what makes you the obvious choice, every service you offer and every town you work in. From that we plan how many pages, in how many towns, so Google and AI tools can find you for every service."
+      },
+      {
+        "route": "/hvac-replacement-fort-wayne-in/",
+        "title": "HVAC Replacement",
+        "why": "A replacement quote is the biggest decision a homeowner makes with you.",
+        "problems": [
+          "Your site has no replacement page, so \"HVAC replacement Fort Wayne IN\" has nothing built for it.",
+          "Your free replacement estimates and up-front quotes sit in an FAQ answer, not where a buyer looks."
+        ],
+        "fixes": [
+          "A page for HVAC replacement in Fort Wayne, IN, with how to tell repair from replace.",
+          "Free estimates and up-front quotes said where the decision gets made."
+        ],
+        "alsoAdd": "Furnace repair, AC repair, heat pump and mini split pages, each built for its own search."
+      },
+      {
+        "route": "/contact/",
+        "title": "Contact",
+        "why": "Where a customer with a dead system decides to call.",
+        "problems": [
+          "Your page has no contact form, and three buttons open a booking window that didn't show in our test.",
+          "Your FAQ lists three phone numbers that belong to other businesses, so a crawl can pick up the wrong number.",
+          "Your email ends @jdkuhnheating.com while your site is jdkuhnhvac.com."
+        ],
+        "fixes": [
+          "Your number and email at the top of one page, with hours.",
+          "Only your own number on the page, so search tools find the right one."
+        ],
+        "alsoAdd": "Call tracking that shows which pages and which Fort Wayne searches your leads come from."
+      }
+    ],
+    "reportCardHeading": "What great HVAC company websites get right, and how yours measures up.",
+    "reportCard": [
+      {
+        "label": "Page fits a phone screen without sideways scrolling",
+        "status": "Missing"
+      },
+      {
+        "label": "Headline says what you do and where",
+        "status": "Missing"
+      },
+      {
+        "label": "Each money service has its own page",
+        "status": "Missing"
+      },
+      {
+        "label": "Phone number one tap away",
+        "status": "Good"
+      }
+    ],
+    "closing": {
+      "heading": "Want a website like this for your business?",
+      "text": "Your customers already describe the company you are. Book a strategy call with Fluid Frame and we'll walk you through this demo and what a full build adds."
+    },
+    "confirm": {
+      "heading": "What we'd confirm with you",
+      "intro": "Google and AI tools see different answers about your business in different places. We wrote this demo from your reviews and your site. On a short onboarding call, we'd confirm these so everything says the same thing.",
+      "items": [
+        "Your site is jdkuhnhvac.com, while the email on it ends @jdkuhnheating.com, so which domain should your website and your email use everywhere?",
+        "Your site says JD Kuhn HVAC in the page title, while your footer and your Google listing say JD Kuhn Heating And Air Conditioning LLC, so which name should every listing use?",
+        "Your Google listing puts you at 4625 Speedway Dr in Fort Wayne, while your site shows no street address or service area, so what address and towns should every listing show?"
+      ]
+    },
+    "offer": {
+      "heading": "The offer we'd build with you",
+      "text": "This is a proposal for you to decide on, not something JD Kuhn does today. It's a second-opinion visit for anyone holding another company's replacement quote, with the visit price texted before anyone is booked and the repair and the replacement written side by side. As far as we found, none of the top Fort Wayne companies we checked offers it.",
+      "points": [
+        "A homeowner calls or texts with the quote they were handed.",
+        "You text back the price of the visit before anyone is booked.",
+        "A tech finds what actually failed, and you write down the repair and the replacement side by side. Terms and price are yours to set."
+      ]
+    }
+  }
+}

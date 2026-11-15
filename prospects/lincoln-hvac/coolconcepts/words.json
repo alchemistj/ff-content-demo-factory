@@ -1,0 +1,454 @@
+{
+  "schema": "words-package/v1",
+  "business": {
+    "name": "Cool Concepts",
+    "slug": "coolconcepts-lincoln",
+    "city": "Lincoln",
+    "state": "NE",
+    "companyType": "HVAC Company",
+    "owners": [],
+    "phones": [
+      { "label": "Lincoln", "display": "(402) 483-2665", "tel": "+14024832665" }
+    ],
+    "email": "coolconceptsne@gmail.com",
+    "hours": null,
+    "address": "3701 Touzalin Avenue, Lincoln, NE 68507",
+    "serviceArea": { "summary": "Lincoln and eastern Nebraska", "towns": ["Lincoln"] }
+  },
+  "trustBar": [
+    "Small Business in Lincoln, NE",
+    "Locally Owned and Operated",
+    "Serving Eastern Nebraska Since 2005",
+    "Free Estimates",
+    "Onsite Inspections"
+  ],
+  "services": [
+    { "name": "AC Repair", "route": "/ac-repair-lincoln-ne/", "blurb": "Cool air back, with the cause explained in plain words." },
+    { "name": "Furnace Repair", "route": null, "blurb": "Heat back on, and the problem explained before anyone mentions a new furnace." },
+    { "name": "Heating and Cooling Replacement", "route": null, "blurb": "A new system when the old one can't be saved, with a free estimate and an onsite inspection first." },
+    { "name": "Heat Pumps", "route": null, "blurb": "Repair and replacement for heat pumps that heat and cool your home." },
+    { "name": "Geothermal", "route": null, "blurb": "Service for geothermal heating and cooling." },
+    { "name": "Preventive Maintenance", "route": null, "blurb": "A check before the season that catches the part about to fail." },
+    { "name": "Winter Efficiency Check", "route": null, "blurb": "A look at how your heating is running before the cold sets in." }
+  ],
+  "footer": {
+    "about": "Cool Concepts is a small, locally owned and operated heating and cooling company at 3701 Touzalin Avenue in Lincoln, Nebraska, serving eastern Nebraska since 2005.",
+    "why": [
+      "Small business in Lincoln",
+      "Free estimates and onsite inspections",
+      "We service all brands of furnaces and air conditioners",
+      "We specialize in Daikin heating and air"
+    ]
+  },
+  "pages": [
+    {
+      "role": "home",
+      "route": "/home/",
+      "navLabel": "Home",
+      "keyword": "hvac company lincoln ne",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Heating and cooling for your home in Lincoln",
+        "h1": "HVAC Company in Lincoln, NE — Cool Concepts",
+        "sub": "When your AC or furnace quits, call (402) 483-2665. We get someone out to find what failed, then explain it in words you can follow and lay out your options.",
+        "primaryCta": { "label": "Call (402) 483-2665", "action": "call" },
+        "secondaryCta": { "label": "Request an Estimate", "action": "contact" },
+        "image": {
+          "slot": "home-hero",
+          "alt": "A Lincoln home with an outdoor air conditioner beside the house under a clear sky",
+          "brief": "HVAC home-hero: ranch home exterior with the outdoor AC unit beside it, clear sky, house on the right"
+        }
+      },
+      "sections": [
+        {
+          "type": "review",
+          "quote": "Old AC failed, hottest day of the year, daughter getting married Sat., wedding guests arriving tomorrow afternoon. … James arrived within an hour of my call. He and his crew had old AC out, new one in and running in less than three hours.",
+          "name": "Bill F."
+        },
+        {
+          "type": "split",
+          "heading": "When the Timing Is Terrible and the System Quits Anyway",
+          "body": [
+            "It never quits on a good day. It's guests arriving, a holiday weekend, the first real cold snap, the hottest afternoon of the summer.",
+            "Call us at (402) 483-2665 and tell us what the system is doing. We get someone out to look at it, find what failed and tell you what we found. Then we talk through the options, and the decision is yours."
+          ],
+          "list": [
+            "Heating and cooling repair and replacement for Lincoln homes",
+            "Free estimates and onsite inspections",
+            "We specialize in Daikin heating and air, and we service all brands of furnaces and air conditioners"
+          ],
+          "listStyle": "checks",
+          "image": {
+            "slot": "tech-at-door",
+            "alt": "A technician at the front door of a Lincoln home talking with the homeowner",
+            "brief": "HVAC tech-at-door: technician in a work shirt on the porch with the homeowner, front door open"
+          },
+          "imageSide": "right"
+        },
+        {
+          "type": "prose",
+          "heading": "Furnace and AC Trouble in Lincoln, and What Usually Causes It",
+          "body": [
+            "Most no-heat and no-cooling calls trace back to a single part, not a dead system. These are the usual suspects."
+          ],
+          "items": [
+            { "title": "The furnace clicks but never lights", "text": "Often a worn igniter or a dirty flame sensor. Both are small parts, and both are short repairs once the cause is confirmed." },
+            { "title": "The heat comes on, then shuts off", "text": "A clogged filter can make a furnace overheat and shut itself down. A flame sensor that can't prove the burner lit will do the same." },
+            { "title": "The air conditioner hums but won't start", "text": "A weak capacitor is a common cause, and it's one of the smaller repairs in the trade." },
+            { "title": "The vents blow air that isn't cold", "text": "Low refrigerant points to a leak, and ice on the line points to airflow. Adding refrigerant without finding the leak only delays the next call." },
+            { "title": "A heat pump that's stopped heating", "text": "Heat pumps heat and cool, so a failure shows up in both seasons. It's worth a call as soon as you notice it." }
+          ],
+          "tail": [
+            "If it's one of these, it's a repair. Whether the whole system is done is a separate question, and it comes second."
+          ],
+          "link": { "label": "See AC repair in Lincoln", "route": "/ac-repair-lincoln-ne/" }
+        },
+        {
+          "type": "review",
+          "quote": "James came out to check out our broken heat pump (we knew it was going to need replaced). He took the panel off and explained what went wrong in a way that I could understand. He had a crew out to install a new one right away.",
+          "name": "Kristi A."
+        },
+        {
+          "type": "prose",
+          "heading": "Find What Failed First, Then Talk About Replacing It",
+          "body": [
+            "Sometimes a part does it. Sometimes the system is done. Either way, you should hear which one it is, in plain words, before anything gets replaced.",
+            "That is the order we work in. We find the problem, tell you what it is, and then lay out your options. If a new system is the answer, the estimate is free, and so is the onsite inspection that comes first."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "James (Cool Concepts) is one of those guys that will come at the drop of a hat, take a look at the situation and then be open and honest with you about your situation. Then he also accomplishes the work quickly and expertly.",
+          "name": "Brian R."
+        },
+        {
+          "type": "services",
+          "heading": "Heating and Cooling Services for Lincoln Homes",
+          "intro": "Repair, replacement and the maintenance that keeps both from happening on a bad day."
+        },
+        {
+          "type": "prose",
+          "heading": "A New Furnace or Air Conditioner, With a Free Estimate",
+          "body": [
+            "When a system can't be saved, we replace furnaces, air conditioners and heat pumps. You get an onsite inspection and a free estimate first, so the number is based on your house.",
+            "We specialize in Daikin heating and air, and we service all brands of furnaces and air conditioners, so the brand on your unit isn't a reason to look elsewhere."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Great service, Great price. Replaced furnace, A/C, whole house humidifier and air purifier. In and out, quick, no mess left behind. Very courteous techs.",
+          "name": "Krishelle S."
+        },
+        {
+          "type": "prose",
+          "heading": "Preventive Maintenance and the Winter Efficiency Check",
+          "body": [
+            "A tired motor, a dirty coil and a weak igniter all wear a system out a little more each season. A check before the heavy season catches them while they're still small.",
+            "Preventive maintenance and a winter efficiency check are both on our list. Call and tell us what you have, and we'll go over what makes sense."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "We use them for yearly service (8 years now) as well as anything that might need to be repaired in our system!",
+          "name": "Devan M."
+        },
+        {
+          "type": "prose",
+          "heading": "A Small Business in Lincoln, Serving Eastern Nebraska",
+          "body": [
+            "Cool Concepts is a small business that cares about the customer, locally owned and operated, at 3701 Touzalin Avenue in Lincoln. We've served eastern Nebraska since 2005.",
+            "Not sure we reach your address? Call (402) 483-2665 and ask. You can also email coolconceptsne@gmail.com."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "I've used Cool Concepts for years and would not trust anyone else. James and his team are extremely knowledgeable and have even helped with an easy fix over the phone instead of charging us an after-hours service charge.",
+          "name": "Samantha C."
+        },
+        {
+          "type": "faq",
+          "heading": "What Lincoln Homeowners Ask Before They Call Cool Concepts",
+          "items": [
+            { "q": "Do I need a whole new system, or can you fix what I have?", "a": "We start by finding what failed. If a part fixes it, that's the repair. If the system is done, you'll hear that, with your options and a free estimate on a replacement." },
+            { "q": "What does an estimate cost?", "a": "Estimates are free, and so are onsite inspections. You can ask what something will cost before you decide." },
+            { "q": "Which brands do you work on?", "a": "We specialize in Daikin heating and air, and we service all brands of furnaces and air conditioners." },
+            { "q": "Do you work on heat pumps and geothermal systems?", "a": "Yes. Heat pumps and geothermal are on our list along with furnaces and air conditioners. Call and tell us what you have." },
+            { "q": "Is maintenance worth it?", "a": "A check before the season is how small problems get caught early. We offer preventive maintenance and a winter efficiency check." },
+            { "q": "How do I reach you?", "a": "Call (402) 483-2665 or email coolconceptsne@gmail.com. The fastest way is to call." }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Call Cool Concepts About Your Furnace or AC",
+          "text": "Call (402) 483-2665 and tell us what the system is doing. We'll get someone out to find what failed, explain it, and lay out your options before you decide."
+        }
+      ]
+    },
+    {
+      "role": "service",
+      "route": "/ac-repair-lincoln-ne/",
+      "navLabel": "AC Repair",
+      "keyword": "ac repair lincoln ne",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Air conditioning, Lincoln",
+        "h1": "AC Repair in Lincoln, NE — Cool Concepts",
+        "sub": "The house is warming up and the air isn't cold. Call (402) 483-2665, tell us what the unit is doing, and we'll get someone out to find what failed.",
+        "primaryCta": { "label": "Call (402) 483-2665", "action": "call" },
+        "secondaryCta": { "label": "Request an Estimate", "action": "contact" },
+        "image": {
+          "slot": "ac-repair-hero",
+          "alt": "A technician checking an outdoor air conditioner beside a Lincoln home",
+          "brief": "HVAC ac-repair-hero: technician with gauges at an outdoor condenser beside a brick or siding home"
+        }
+      },
+      "sections": [
+        {
+          "type": "review",
+          "quote": "James is the best. AC went out, hottest day of the year of course. He was at my house within 2 hours after my call. AC was back on in 15 minutes. Genuine guy, great service!",
+          "name": "Andrea F."
+        },
+        {
+          "type": "split",
+          "heading": "What Happens When You Call About Your AC",
+          "body": [
+            "You tell us what the unit is doing: not cooling, running but warm, not starting, making a noise. We get someone out to look at it.",
+            "He finds the failed part and explains it in words you can follow, so you know what went wrong before any work starts. If the answer is a repair, you hear about the repair. If the unit is done, you hear that too, along with your options.",
+            "When a replacement is the answer, the estimate is free, and an onsite inspection comes first."
+          ],
+          "image": {
+            "slot": "airflow-vent",
+            "alt": "A ceiling air vent in a quiet Lincoln home",
+            "brief": "HVAC airflow-vent: ceiling supply vent in a living room, soft daylight"
+          },
+          "imageSide": "right"
+        },
+        {
+          "type": "review",
+          "quote": "In 100 degree heat and a broken ac, we called Cool Concepts on a Friday night at 7pm and they came right on time at 10am on Saturday morning--despite being booked up for the day. He was able to solve the issue quickly and was extremely easy to work with",
+          "name": "Marcus P."
+        },
+        {
+          "type": "prose",
+          "heading": "What Usually Goes Wrong With a Central Air Conditioner",
+          "body": [
+            "A short list of parts accounts for most no-cooling calls. Ice on the refrigerant line, water around the indoor unit, an outdoor fan that isn't spinning or a breaker that trips each time it starts are all signs to stop and call.",
+            "If you see ice or water, turn the system off. A struggling air conditioner can turn a small repair into a bigger one."
+          ],
+          "items": [
+            { "title": "A weak capacitor", "text": "It gives the compressor and the fan motor the jolt to start. When it fades, the unit hums and won't run. This is one of the most common repairs, and one of the less costly." },
+            { "title": "A frozen coil", "text": "A dirty filter or a blocked coil chokes the airflow until ice builds up. Thawing the coil is the easy part. The repair is finding out why it froze." },
+            { "title": "Low refrigerant", "text": "An air conditioner doesn't use refrigerant up, so low means a leak. Topping it off without fixing the leak buys a short break." },
+            { "title": "A fan or compressor motor on its way out", "text": "A slow or noisy motor is a warning. Replacing one early is a smaller job than replacing it after it quits." },
+            { "title": "A thermostat that isn't telling the unit to run", "text": "Dead batteries or a bad connection can look just like a failed air conditioner. It's worth ruling out." }
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Called on Sunday - was here on Monday to fix the air!  Got it fixed in about 30 minutes.  James is very nice, and let us know the different options we could do.",
+          "name": "Alisa M."
+        },
+        {
+          "type": "prose",
+          "heading": "Repair or Replace Your Air Conditioner?",
+          "body": [
+            "Here's a rule you can check. If the problem is a capacitor, a motor or a coil that needs cleaning, repair is the answer, and it costs far less than a new system.",
+            "If the unit is old, repairs keep stacking up or the compressor has failed, that's when to price a new one. A large repair bill on an old unit is often money better put toward a replacement.",
+            "You'll hear which side you're on, including when the answer is to repair. When it's time to replace, we replace air conditioners and heat pumps, and we service all brands."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "We were stuck without air for four days, dealing with a warranty company (AHS) and the contractor they assigned was dragging their heels. James stepped in, ordered the part immediately, and had our AC back up and running within a day",
+          "name": "Miss H."
+        },
+        {
+          "type": "split",
+          "heading": "Four Quick Checks Before You Call",
+          "body": [
+            "If you can do it safely, a few checks can save a visit, or at least give us more to go on when you call."
+          ],
+          "list": [
+            "The thermostat: is it set to cool, and are the batteries fresh?",
+            "The breaker for the outdoor unit: has it tripped?",
+            "The filter: if it's gray and packed with dust, change it and give the system an hour.",
+            "The outdoor unit: clear away grass, leaves or anything stacked against it."
+          ],
+          "image": {
+            "slot": "thermostat",
+            "alt": "A hand adjusting a wall thermostat",
+            "brief": "HVAC thermostat: hand on a digital wall thermostat, set to cool"
+          },
+          "imageSide": "left"
+        },
+        {
+          "type": "prose",
+          "heading": "Staying Ahead of the Next Hot Week",
+          "body": [
+            "Change the filter on a schedule, keep the outdoor unit clear and don't ignore a new noise. A check before the first hot spell catches weak parts while they're still small.",
+            "We offer preventive maintenance. Ask about it when you call."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Cool Concepts provided great customer service!  They got our air conditioner up and running the very same day!  Super friendly and always reliable!",
+          "name": "Tami B."
+        },
+        {
+          "type": "faq",
+          "heading": "Questions Lincoln Homeowners Ask About AC Repair",
+          "items": [
+            { "q": "Will you try to sell me a new air conditioner?", "a": "Not before we've found what failed. A part that fixes it is a repair. A unit that's done gets a plain answer, and the estimate on a replacement is free." },
+            { "q": "Do you work on my brand?", "a": "We service all brands of furnaces and air conditioners, and we specialize in Daikin." },
+            { "q": "Do you repair heat pumps and geothermal systems?", "a": "Yes. Both are on our list. Tell us what yours is doing when you call." },
+            { "q": "What does an estimate cost?", "a": "Free estimates, and onsite inspections too. Ask before you decide anything." },
+            { "q": "Can I email instead of calling?", "a": "You can email coolconceptsne@gmail.com, but when the AC is out the fastest way to reach us is to call (402) 483-2665." }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Call Cool Concepts About Your Air Conditioner",
+          "text": "If your AC isn't cooling, call (402) 483-2665. Tell us what it's doing, and we'll get someone out to find what failed before anyone talks about replacing it."
+        }
+      ]
+    },
+    {
+      "role": "contact",
+      "route": "/contact/",
+      "navLabel": "Contact",
+      "keyword": "contact cool concepts lincoln ne",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Contact Cool Concepts",
+        "h1": "Contact Cool Concepts in Lincoln, NE",
+        "sub": "If your heat or air has quit, the fastest way to reach us is to call. Tell us what the system is doing and we'll get someone out to look at it.",
+        "primaryCta": { "label": "Call (402) 483-2665", "action": "call" },
+        "image": {
+          "slot": "contact-hero",
+          "alt": "A service call at a Lincoln home, with the technician at the door",
+          "brief": "HVAC contact-hero: technician and homeowner at a front door, warm light"
+        }
+      },
+      "sections": [
+        {
+          "type": "prose",
+          "heading": "Reach Cool Concepts by Phone or Email",
+          "body": [
+            "(402) 483-2665",
+            "Call and describe the problem. If you'd rather write, email coolconceptsne@gmail.com with your name, a phone number, the address of the house and what the system is doing."
+          ]
+        },
+        {
+          "type": "split",
+          "heading": "What to Tell Us About Your System",
+          "list": [
+            "What it's doing: no cooling, no heat, a noise, ice, a tripped breaker.",
+            "Whether it's a furnace, an air conditioner or a heat pump.",
+            "The brand, if you can read it on the unit.",
+            "Roughly how old it is, and any repairs you remember."
+          ],
+          "image": {
+            "slot": "service-van",
+            "alt": "A service van parked in the driveway of a Lincoln home",
+            "brief": "HVAC service-van: work van in a residential driveway, side view"
+          },
+          "imageSide": "right"
+        },
+        {
+          "type": "prose",
+          "heading": "Where Cool Concepts Is and Who We Serve",
+          "body": [
+            "We're at 3701 Touzalin Avenue, Lincoln, NE 68507, and we serve Lincoln and eastern Nebraska. Not sure we reach your address? Call (402) 483-2665 and ask."
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Tell Us What the Furnace or AC Is Doing",
+          "text": "Call (402) 483-2665. We'll get someone out to look at it and tell you what we found."
+        }
+      ]
+    }
+  ],
+  "strategy": {
+    "whyHeading": "Why we built this site",
+    "why": [
+      "Your homepage calls you eastern Nebraska's best choice for commercial and residential HVAC and commercial kitchen appliance repair. A homeowner with a dead AC has to read past kitchen appliances to learn that you fix theirs, and Google can't tell which one you want to be found for.",
+      "Your customers say the same things again and again: someone comes fast, finds the problem and explains it. Those words are on Google, not on your site, which has no customer reviews beyond one case study.",
+      "So this demo is for homeowners only: heating and cooling for the house, with AC repair on a page of its own. Your kitchen appliance work is real, and it deserves its own pages instead of sharing this one."
+    ],
+    "cardsHeading": "Be the HVAC Company People Find on Google",
+    "cardsIntro": "Each card is one page of the demo.",
+    "cards": [
+      {
+        "route": "/home/",
+        "title": "Homepage",
+        "why": "Where Google learns who you are and where you work.",
+        "problems": [
+          "Your homepage headline says What You Should Know About Cool Concepts, so the words HVAC company and Lincoln, NE sit nowhere at the top, and the first lines mix in commercial kitchen appliances.",
+          "On our check, the video at the top of your homepage showed an error message instead of playing."
+        ],
+        "fixes": [
+          "A headline that says HVAC company in Lincoln, NE, right at the top.",
+          "Customer reviews in their own words, where the video error was."
+        ]
+      },
+      {
+        "route": "/ac-repair-lincoln-ne/",
+        "title": "AC Repair",
+        "why": "When the AC quits in a Lincoln summer, people call the first company they can reach.",
+        "problems": [
+          "Your repair page covers heating and cooling and commercial kitchen appliances together, and its title says Appliance Repair Services and Refrigeration Repair, so a homeowner searching for AC repair isn't who it's talking to.",
+          "There is no page built for the search AC repair Lincoln NE."
+        ],
+        "fixes": [
+          "A page for AC repair in Lincoln, NE, with what usually fails and what happens when you call.",
+          "Reviews from homeowners with an AC out, on the same page."
+        ],
+        "alsoAdd": "A check of what your competitors offer, so services you didn't think to mention still get their own pages."
+      },
+      {
+        "route": "/contact/",
+        "title": "Contact",
+        "why": "Where a customer with a dead system decides to call.",
+        "problems": [
+          "Your contact page shows one email address in the header and a different one in the contact block, so a visitor can't tell which one reaches you.",
+          "The Request An Estimate button on your contact page goes to a page that doesn't exist."
+        ],
+        "fixes": [
+          "One number, one email and your Touzalin Avenue address in the first screen.",
+          "Every button goes to a page that works."
+        ]
+      }
+    ],
+    "reportCardHeading": "What great HVAC company websites get right, and how yours measures up.",
+    "reportCard": [
+      { "label": "Headline says what you do and where", "status": "Missing" },
+      { "label": "Each money service has its own page", "status": "Needs work" },
+      { "label": "Customer reviews on the page", "status": "Needs work" },
+      { "label": "Every button goes somewhere", "status": "Needs work" },
+      { "label": "Phone number one tap away", "status": "Good" }
+    ],
+    "closing": {
+      "heading": "Want a website like this for your business?",
+      "text": "Your customers already describe the company you are. Book a strategy call with Fluid Frame and we'll walk you through this demo and what a full build adds."
+    },
+    "confirm": {
+      "heading": "What we'd confirm with you",
+      "intro": "Google and AI tools see different answers about your business in different places. We wrote this demo from your reviews and your site. On a short onboarding call, we'd confirm these so everything says the same thing.",
+      "items": [
+        "Your contact page shows coolconcepts@neb.rr.com in the contact block and coolconceptsne@gmail.com in the header, so which email should every listing use?",
+        "Your homepage says 24/7 service while no page gives hours, so which hours should Google show, and does the 24/7 apply to homeowners?",
+        "Your Petersen case study says 1234 James, which looks like a placeholder, so what name and role should go there?"
+      ]
+    },
+    "offer": {
+      "heading": "The offer we'd build with you",
+      "text": "This is a proposal for you to decide on, not something Cool Concepts does today. It's a phone-first after-hours call: you try to talk the caller through a simple fix first, and you quote the price of an after-hours visit before anyone drives out. As far as we found, none of the top Lincoln companies states it.",
+      "points": [
+        "A homeowner calls and describes what the system is doing.",
+        "If it's a simple fix, you talk them through it on the phone.",
+        "If a visit is needed, you give the after-hours price before anyone drives out, and the customer decides. Terms and price are yours to set."
+      ]
+    }
+  }
+}
