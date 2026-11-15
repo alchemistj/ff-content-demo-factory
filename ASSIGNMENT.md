@@ -51,10 +51,26 @@ Canonical craft-guide wording and the Springfield example library live in `docs/
 ## Demo outreach (Josh's standing rules)
 
 - **Contact form only (for now).** Outreach goes through each prospect's own website contact form, not email. Claude or a Sonnet fills and sends it, with honest name and reply details, and keeps a screenshot of the confirmation. When a send is blocked (CAPTCHA, bot check, login, no form, form error), never try to get around it: add the prospect to Josh's hand-send list with the message ready to paste, and Josh sends those himself.
-- Send the demo through the business's own website contact form when it has one, with a line like: "By the way, our contact form system would have recognized this as a solicitation, and you wouldn't have even seen it." Say solicitation or sales pitch, never spam.
-- Demo links go out plain. Never add `?utm_source=email` or any other tracking query to a link the owner will read.
+- Send the demo through the business's own website contact form when it has one. (The "our contact form system would have recognized this as a solicitation" line was dropped on 2026-11-15; every message now ends with a one-line opt-out instead. See `outreach/form-message-template.md`.)
+- Demo links go out plain. Never add `?utm_source=email` or any other tracking query to a link the owner will read. (Note 2026-11-15: the Fort Wayne / Lincoln / Peoria messages were written with `?utm_source=` links against this rule. They are on hold and will be fixed before any send.)
 - Offer call times from Josh's real openings: the "Book a Call with Josh" calendar in Go High Level (Fluid Frame Legacy location), not guesses.
 - When Josh states a rule for future work, write it into the repo's notes right away. Don't ask first.
+
+## Demo copy (Josh's standing rules, 2026-11-15)
+
+Josh's review of the Fort Wayne / Lincoln / Peoria batch: QA checked facts and rules, not whether the page sells. These are **automatic fails** for every future demo, whatever else passes:
+
+- **No review summaries.** Never "customers mention…", "customers describe…", "reviewers say…", "one customer said…". Quote a real review word for word, or leave it out.
+- **The paragraph covers what its heading promises.** No furnace-only paragraph under "Heating, Cooling and Geothermal". Either the text covers every item in the heading or list above it, or the heading is narrowed.
+- **At least 2 service pages per demo:** the business's two main money services. If the business's own material can't fill 2 strong service pages, flag the prospect as too thin. Never pad.
+- **Scope:** homepage, 2 service pages, contact and the strategy page. Only real material from the business.
+- **Every service page says plainly why to hire this company for this job.** No half-blog explainer pages.
+- **No forced metaphors** ("Houses don't climb…").
+- **Lead with what the customer wants, not with fees.** Don't open a homepage on after-hours cost. Don't mention a plan price before the plan is explained.
+- **No advice that ignores how the trade works**, for example telling the customer to ask what the fix costs before the company has looked.
+- **Photos:** no stock photo with a big blank prop (blank clipboard, blank cardboard sign), and never a photo Josh has rejected before. The banned list is in `docs/demo-gates.md`.
+- **The quality bar is the 16 reference sites** (12 Lovable builds Josh QA'd by hand, plus 4 client sites), listed in `docs/reference-sites.md`. Writers read them for voice and structure, and the reviewer compares each page side by side with the closest one: "Is this as good as the reference? Would Josh want to send this?" Anything weaker fails.
+- **Who does what:** Sonnet writes; Opus doesn't write copy. A separate Sonnet reviews against the references. Cursor builds.
 
 ## Prospect picking (Josh's standing rules)
 

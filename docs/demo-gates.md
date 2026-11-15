@@ -22,3 +22,16 @@ On a strict rubric the first Wichita 12 started at 41–63. Most of the loss was
 
 ## Service-page selection rule (new)
 Pick a demo's two service pages **only where the folder has enough on-topic material**: at least 5 reviews about that service, or the business's own site describing it in some depth. A page with one review can't reach 595 honest words; Brockmeyer's EV page had to be swapped out for this reason. Check this at the plan step, before writing.
+
+## Josh's automatic fails (2026-11-15)
+
+The full list is in `ASSIGNMENT.md` under "Demo copy". The gate checks the parts a script can catch (`scripts/lint-sameness.mjs`):
+- review-summary phrasing ("customers mention/describe/say", "reviewers …", "one customer said …") anywhere on a page;
+- fewer than 2 service pages;
+- a banned photo slot.
+
+The rest (heading vs paragraph scope, forced metaphors, leading with fees, odd advice, "would Josh send this") is the reference reviewer's job.
+
+**Banned photo slots** (blank props or rejected before):
+- HVAC `tech-at-door` (blank clipboard sheet, rejected 11/15);
+- HVAC `furnace-hero` (the white-polo look Josh rejected on Cook's and Dream Makers, and an empty furnace cabinet; Griffin 11/15).

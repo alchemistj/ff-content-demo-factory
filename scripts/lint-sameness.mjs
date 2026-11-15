@@ -35,6 +35,20 @@ const nameHits = new Map();
 const allText = JSON.stringify(w.pages);
 for (const m of allText.matchAll(/\b([A-Z][a-z]+ [A-Z]\.)/g)) nameHits.set(m[1], (nameHits.get(m[1]) ?? 0) + 1);
 for (const [n, c] of nameHits) if (c > 2) issues.push(`reviewer "${n}" appears ${c}x across pages (tell each story once)`);
+// Josh's automatic fails (2026-11-15): review summaries, fewer than 2 service pages, banned photos.
+const SUMMARY = /\b(customers?|reviewers?|clients?|homeowners?|people) (also )?(mention|mentions|mentioned|describe|describes|described|say|says|said|report|reports|write|writes|wrote|tell|tells|told)\b|\bone customer (said|says|wrote|writes|mentioned|described|told)\b/i;
+for (const page of w.pages) {
+  const scan = (v, key) => {
+    if (typeof v === "string") { if (key !== "quote" && key !== "name" && SUMMARY.test(v)) issues.push(`review summary on ${page.route} (quote word for word or cut): "${v.match(SUMMARY)[0]}" in "${v.slice(0, 80)}"`); }
+    else if (Array.isArray(v)) v.forEach((x) => scan(x, key));
+    else if (v && typeof v === "object") for (const [k, x] of Object.entries(v)) { if (k === "seo") continue; scan(x, k); }
+  };
+  scan(page.hero, ""); scan(page.sections, "");
+}
+const servicePages = w.pages.filter((p) => !/^\/(home|contact)?\/?$/.test(p.route));
+if (servicePages.length < 2) issues.push(`only ${servicePages.length} service page(s); Josh expects at least 2 (or flag the prospect as too thin)`);
+const BANNED = new Set(["tech-at-door", "furnace-hero"]);
+for (const m of JSON.stringify(w.pages).matchAll(/"slot":"([^"]+)"/g)) if (BANNED.has(m[1])) issues.push(`banned photo slot "${m[1]}" (blank prop or rejected before; see docs/demo-gates.md)`);
 const trust = JSON.stringify(w.trustBar ?? "").toLowerCase();
 for (const page of w.pages) {
   const eb = (page.hero?.eyebrow ?? "").toLowerCase();

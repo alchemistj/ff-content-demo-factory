@@ -151,6 +151,7 @@ for (const entry of queue.entries) {
   if (only && !only.has(entry.slug)) continue;
   const r = { slug: entry.slug, company: entry.company, formUrl: entry.formUrl, mode: SEND ? "send" : "dry-run", approved: !!entry.approved, status: "", reason: "", fields: [], shots: [], time: new Date().toISOString() };
   results.push(r);
+  if (SEND && (queue.hold || entry.hold)) { r.status = "skipped"; r.reason = "on hold in the queue (do not send)"; console.log(`${entry.slug}: ${r.status} (${r.reason})`); continue; }
   if (dnc.some((d) => sameBusiness(d, entry))) { r.status = "skipped"; r.reason = "on the do-not-contact list (they asked us to stop)"; console.log(`${entry.slug}: ${r.status} (${r.reason})`); continue; }
   const prior = ledger.find((l) => sameBusiness(l, entry));
   if (prior) { r.status = "skipped"; r.reason = `already contacted ${prior.time} (one submission per business, ever)`; console.log(`${entry.slug}: ${r.status} (${r.reason})`); continue; }

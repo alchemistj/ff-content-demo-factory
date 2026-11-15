@@ -1,5 +1,7 @@
 # Approval block: Fort Wayne / Lincoln / Peoria batch (2026-11-15)
 
+> **HOLD (2026-11-15, FF Architect from Josh): do not send any of these 10, by sender or by hand.** Josh reviewed ComfortTechs and Griffin: QA passed them, but the pages do not sell well enough. They are being rebuilt; the other 8 wait.
+
 **One approval covers the whole batch.** Nothing is sent until Josh says "go". Then the sender submits the 5 sender-route forms, one per business, logged with screenshots. The 5 hand sends (fields and message ready in `outreach-runs/2026-11-14/fw-lin-peo/dry-run/hand-send.md` and below) are Josh's to send.
 
 All 10 demos have the independent QA reviewer's PASS (4 rounds). They were merged to ff-astro-demos main in #79, and all 80 page × width checks pass live (200, noindex, no broken images, no sideways scroll, 44px tap targets). All 10 messages also have QA PASS.

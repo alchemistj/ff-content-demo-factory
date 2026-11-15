@@ -15,49 +15,57 @@
       "company": "Custom Assured Mechanical",
       "prospect": "prospects/fortwayne-hvac/customassured",
       "formUrl": "https://customassured.com/contact",
-      "approved": false
+      "approved": false,
+      "hold": true
     },
     {
       "slug": "comforttechs",
       "company": "ComfortTechs",
       "prospect": "prospects/lincoln-hvac/comforttechs",
       "formUrl": "https://www.comforttechs.com/contact-us",
-      "approved": false
+      "approved": false,
+      "hold": true
     },
     {
       "slug": "roettgers",
       "company": "Roettger's Heating and Cooling",
       "prospect": "prospects/lincoln-hvac/roettgers",
       "formUrl": "https://www.roettgersheatingandcooling.com/contact",
-      "approved": false
+      "approved": false,
+      "hold": true
     },
     {
       "slug": "coolconcepts",
       "company": "Cool Concepts",
       "prospect": "prospects/lincoln-hvac/coolconcepts",
       "formUrl": "https://coolconceptsne.com/contact/",
-      "approved": false
+      "approved": false,
+      "hold": true
     },
     {
       "slug": "thermal",
       "company": "Thermal Services, Inc.",
       "prospect": "prospects/peoria-hvac/thermal",
       "formUrl": "https://www.tsipeoria.com/contact-us",
-      "approved": false
+      "approved": false,
+      "hold": true
     },
     {
       "slug": "jgroofing",
       "company": "JG Roofing and Company",
       "prospect": "prospects/peoria-roofing/jgroofing",
       "formUrl": "https://www.jgroofingco.com/peoria",
-      "approved": false
+      "approved": false,
+      "hold": true
     },
     {
       "slug": "pioneer",
       "company": "Pioneer Roofing",
       "prospect": "prospects/peoria-roofing/pioneer",
       "formUrl": "https://roofingpeoria.net/contact-us/",
-      "approved": false
+      "approved": false,
+      "hold": true
     }
-  ]
+  ],
+  "hold": "2026-11-15 HOLD (FF Architect, from Josh): no sends and no hand-send packets for any of the 10. ComfortTechs and Griffin are being rebuilt; the other 8 wait for Josh's approval of those two."
 }
