@@ -3,6 +3,18 @@
   "version": 1,
   "places": [
     {
+      "slug": "abetterway-lincoln",
+      "name": "A Better Way Construction & Roofing",
+      "placeId": "ChIJAQCsF9XGlocRmjd_Ymlt8So",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 95,
+        "withText": 69,
+        "ratingOnly": 6
+      },
+      "pulledAt": "2026-11-15T03:31:30.122Z"
+    },
+    {
       "slug": "ad-mechanical-services",
       "name": "A & D Mechanical Services LLC, Plumbing, Heating & Air",
       "placeId": "ChIJZYoQJgZiz4cRSabi7P800Vw",
