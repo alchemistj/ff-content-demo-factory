@@ -1,10 +1,10 @@
 QA REQUEST: jdkuhn-fortwayne (fortwayne-hvac/jdkuhn)
 
 Preview (not live yet; becomes https://jdkuhn-fortwayne.websitepreview.fluidframemarketing.com/ after merge):
-- Strategy page: https://ff-astro-demos-crgq5r2hv-josh-lenzs-projects.vercel.app/__ff-preview/jdkuhn-fortwayne/
-- /home/: https://ff-astro-demos-crgq5r2hv-josh-lenzs-projects.vercel.app/__ff-preview/jdkuhn-fortwayne/home/
-- /hvac-replacement-fort-wayne-in/: https://ff-astro-demos-crgq5r2hv-josh-lenzs-projects.vercel.app/__ff-preview/jdkuhn-fortwayne/hvac-replacement-fort-wayne-in/
-- /contact/: https://ff-astro-demos-crgq5r2hv-josh-lenzs-projects.vercel.app/__ff-preview/jdkuhn-fortwayne/contact/
+- Strategy page: https://ff-astro-demos-muezeje6b-josh-lenzs-projects.vercel.app/__ff-preview/jdkuhn-fortwayne/
+- /home/: https://ff-astro-demos-muezeje6b-josh-lenzs-projects.vercel.app/__ff-preview/jdkuhn-fortwayne/home/
+- /hvac-replacement-fort-wayne-in/: https://ff-astro-demos-muezeje6b-josh-lenzs-projects.vercel.app/__ff-preview/jdkuhn-fortwayne/hvac-replacement-fort-wayne-in/
+- /contact/: https://ff-astro-demos-muezeje6b-josh-lenzs-projects.vercel.app/__ff-preview/jdkuhn-fortwayne/contact/
 
 Source and facts (the only allowed source of claims):
 - https://github.com/alchemistj/ff-content-demo-factory/blob/claude/weekend-batch/prospects/fortwayne-hvac/jdkuhn/facts.md

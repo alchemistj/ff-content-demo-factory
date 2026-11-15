@@ -1,10 +1,10 @@
 QA REQUEST: customassured-fortwayne (fortwayne-hvac/customassured)
 
 Preview (not live yet; becomes https://customassured-fortwayne.websitepreview.fluidframemarketing.com/ after merge):
-- Strategy page: https://ff-astro-demos-crgq5r2hv-josh-lenzs-projects.vercel.app/__ff-preview/customassured-fortwayne/
-- /home/: https://ff-astro-demos-crgq5r2hv-josh-lenzs-projects.vercel.app/__ff-preview/customassured-fortwayne/home/
-- /hvac-maintenance-fort-wayne-in/: https://ff-astro-demos-crgq5r2hv-josh-lenzs-projects.vercel.app/__ff-preview/customassured-fortwayne/hvac-maintenance-fort-wayne-in/
-- /contact/: https://ff-astro-demos-crgq5r2hv-josh-lenzs-projects.vercel.app/__ff-preview/customassured-fortwayne/contact/
+- Strategy page: https://ff-astro-demos-muezeje6b-josh-lenzs-projects.vercel.app/__ff-preview/customassured-fortwayne/
+- /home/: https://ff-astro-demos-muezeje6b-josh-lenzs-projects.vercel.app/__ff-preview/customassured-fortwayne/home/
+- /hvac-maintenance-fort-wayne-in/: https://ff-astro-demos-muezeje6b-josh-lenzs-projects.vercel.app/__ff-preview/customassured-fortwayne/hvac-maintenance-fort-wayne-in/
+- /contact/: https://ff-astro-demos-muezeje6b-josh-lenzs-projects.vercel.app/__ff-preview/customassured-fortwayne/contact/
 
 Source and facts (the only allowed source of claims):
 - https://github.com/alchemistj/ff-content-demo-factory/blob/claude/weekend-batch/prospects/fortwayne-hvac/customassured/facts.md
@@ -23,7 +23,7 @@ https://customassured-fortwayne.websitepreview.fluidframemarketing.com/?utm_sour
 
 Note: It'll look a lot better with your logo and images on it! Lol
 
-The preview walks through why each page is built the way it is. One thing we'd fix: your phone number isn't tappable on a phone, and your homepage doesn't show it at all. (Checked again on the live site on 11/15.)
+The preview walks through why each page is built the way it is. One thing we'd fix: your phone number isn't tappable on a phone, and your homepage doesn't show it at all.
 
 We built your homepage and your HVAC maintenance page as examples, and we'd love to build the rest.
 
