@@ -16,9 +16,7 @@ Buttons: View the Demo Site / See What Changed
 
 Dusty, people write about you by name on Google. They write that you came out, explained the roof in plain words, and didn't push work they didn't need. That is the best reason to hire a roofer, and your current site doesn't say it anywhere. There are no reviews on it, so the first heading a visitor reads is your warranty line.
 
-We led the demo with that one idea: a straight answer on what a roof needs and what it doesn't. Every page is built on it.
-
-Your current site is also split up. The homepage, services, quote and contact pages each sit at their own web address, and your five services are sections of one long page. No page exists for someone searching "roof replacement Lincoln NE". We built a home page, two service pages and a contact page to show the difference.
+We led the demo with that one idea: a straight answer on what a roof needs and what it doesn't. Your current site also keeps all five services as sections of one long page, so nothing exists for someone searching "roof replacement Lincoln NE". We built a home page, two service pages and a contact page to show the difference.
 
 ### The demo, page by page
 
@@ -59,7 +57,6 @@ View page
 
 **Current site problem**
 - "We Handle Insurance Claims!" is one paragraph in the middle of the services page. Someone searching for roof insurance claim help in Lincoln has nothing to land on.
-- It doesn't say what to do first after a storm, which is the moment that person is searching.
 
 **What the demo fixes**
 - Its own page, "Roof Insurance Claims in Lincoln, NE", covering what you handle with the carrier, what to do first, and how a storm repair differs from a replacement.
@@ -74,7 +71,7 @@ View page
 **Current site problem**
 - The page has no H1.
 - The form requires a street address and an "I'm not a robot" box before it sends. Someone with a leak has to type their address first, and that step costs you calls.
-- Your email shows as text with no mailto link, and the desktop phone number isn't a link.
+- Your email has no mailto link, and the desktop phone number isn't a link.
 
 **What the demo fixes**
 - Phone, email, hours and service area come first, with tap-to-call and email links.
@@ -86,21 +83,17 @@ View page
 
 ### What's already working
 
-- Every menu page loads at phone and desktop widths.
-- Your phone number, email and hours match on every page.
-- We found no broken images and no sideways scrolling on phones.
+Every menu page loads, your phone number, email and hours match everywhere, and we found no broken images.
 
 ### What a full build includes
 
 **Gets you found**
 - A page for every service, each with its own keyword and Lincoln in the headline
-- Page titles and descriptions written for each page
 - A Google Business Profile that matches the site
 
 **Earns their trust**
 - Google reviews placed on the pages where they fit
 - Brand names, warranty terms and an owner introduction
-- Photos of your own crew and jobs
 
 **Turns visitors into calls**
 - Tap-to-call on every page
@@ -108,7 +101,7 @@ View page
 
 **Keeps working after launch**
 - Speed and search checks
-- Updates when your services, hours or warranty change
+- Updates when your services or hours change
 
 ### What we'd confirm with you
 
@@ -148,7 +141,6 @@ Our three pillars are honesty, integrity and education. We take pride in teachin
 - Dusty Rieck looks at your roof himself
 - A plain-words explanation of what we find, and answers to your questions
 - Your options laid out before you decide, from repair to replacement and from asphalt to steel
-- We handle insurance claims with your carrier, so you aren't doing it alone
 - A lifetime workmanship warranty on roofing, siding and gutters
 - A senior discount and a military and government employee discount
 
@@ -156,7 +148,7 @@ Our three pillars are honesty, integrity and education. We take pride in teachin
 
 **A leak you can't place.** A stain on the ceiling doesn't always mean a bad roof. We look for where the water is getting in, and if it isn't the roof, we tell you.
 
-**Wind or hail damage.** We look at what the storm did and tell you whether it's a repair or a replacement. If you file a claim, we work with your carrier on it, and [roof insurance claims](/roof-insurance-claims-lincoln-ne/) are something we do every day. 
+**Wind or hail damage.** We look at what the storm did and tell you whether it's a repair or a replacement, and we [handle the claim](/roof-insurance-claims-lincoln-ne/) with your carrier. 
 
 **A roof you know nothing about.** New to the house and not sure what's up there or how old it is? We help you work out what you have and what it needs.
 
@@ -177,7 +169,7 @@ Our three pillars are honesty, integrity and education. We take pride in teachin
 
 ### A Local, Family-Owned Company
 
-We're a family-owned business based in Lincoln, and we serve Eastern Nebraska. Dusty Rieck has been roofing in Lincoln for ten years, on homes and commercial buildings.
+We're a family-owned business based in Lincoln, and we serve Eastern Nebraska. Dusty Rieck has been roofing in Lincoln for ten years.
 
 Our mission starts with "Top Down, A Better Experience." We want you to get quality materials and careful workmanship from the first site visit to the final inspection, so that you'll want to refer us to your friends and family. If something isn't right after we finish, call us.
 
@@ -229,7 +221,7 @@ The longer you wait on a roof in poor condition, the bigger the problem can get.
 
 ### What a Replacement Looks Like With Us
 
-We start with a site visit, where we assess the roof and your home. We go through your material options and give you an estimate. Then we take off the old roofing, put the new roof on, and finish with a final inspection. If a storm caused the damage, we can work with your insurance carrier too, and we explain how that goes in [roof insurance claims](/roof-insurance-claims-lincoln-ne/).
+We start with a site visit, where we assess the roof and your home. We go through your material options and give you an estimate, and the job runs from that first visit to a final inspection. If a storm caused the damage, we can work with your insurance carrier too, and we explain how that goes in [roof insurance claims](/roof-insurance-claims-lincoln-ne/).
 
 ### Choosing Your Roofing Material
 
@@ -253,23 +245,17 @@ If your bathroom fans or attic vents come through the roof, a replacement is the
 
 ### Replacing a Roof Before a Sale
 
-If you have a closing date, tell us when you call so we can plan the job around it. A roof can be the last thing standing between you and a closing, and the weather decides how many days we have to work.
+If you have a closing date, tell us when you call so we can plan the job around it. Roofing depends on the weather, so knowing your date helps us plan the days we need.
 
 > "I had to get a new roof put on a property I was selling in order to close by a certain date. Dusty got the job done in the small window of nice weather and did a great job." — Steve G.
 
 ### Roof Replacement Questions
 
-**Should I get on the roof to check it myself?**
-No. Look from the ground, and from inside the attic for stains and daylight, then call us. We'll climb up and look.
-
 **How do I choose between roofing materials?**
-Start with how long you'll be in the house and what you care about most: price now, how the roof handles hail, or how it looks. Steel and standing seam steel generally cost more upfront than asphalt shingles. We'll go through your options against what you want.
+Steel and standing seam steel generally cost more upfront than asphalt shingles. We'll go through your options against what you want.
 
 **Can you replace the gutters when you replace the roof?**
 Yes. We install and repair gutters, and we replace and repair soffit and fascia, so the roof and the gutters can be done together.
-
-**What should I have ready when I call?**
-Your address and what you've noticed. If you know roughly how old the roof is, tell us. If you've just bought the house and don't know, say so and we'll help you work it out.
 
 ### Find Out What Your Roof Needs
 
@@ -329,11 +315,8 @@ Some claims take more back and forth than others. However long yours takes, you 
 
 ### Roof Insurance Questions
 
-**Does storm damage mean I need a new roof?**
-Not always. Damage in one area is often a repair. Damage across the whole roof points to replacement. We look at the roof and tell you which it is.
-
-**Who do I call first, you or my insurance company?**
-Either one. Call us so we can look at the roof, and report the damage to your carrier. The order is up to you.
+**Can I call you before I've filed anything?**
+Yes. Call us first if you'd like. We look at the roof and tell you what we see, and then you decide whether to file.
 
 **What should I have ready for the adjuster?**
 Your photos from the ground, the date of the storm and what you noticed afterward, and the age of the roof if you know it.
@@ -380,14 +363,14 @@ Your address, what you've noticed, and whether a storm is involved. If you're se
 
 ### Ready When You Are
 
-If it's urgent, please call. We'll tell you what we think the roof needs and what it doesn't.
+If it's urgent, please call.
 
 Buttons: Call (402) 890-6460
 
 ## Notes for Ruth (not page copy)
 
 **Word counts** (visible words, headings, buttons and quotes included; strategy and notes excluded from the business-page counts)
-- WORDCOUNTS
+- Original writer counts: Strategy 933; Home 693 (523 without quotes); Roof Replacement 979; Roof Insurance Claims 719; Contact 261. After reviewer cuts of repeated lines: Roof Replacement about 860, Roof Insurance Claims about 630 (below 700), Contact about 250.
 
 **Credentials**
 - None used. Sandhill's site states no certification, license, BBB rating or manufacturer program (facts.md: "No dealer or certification claim found on the site"). The "Home Advisor" footer link is a directory link, not a credential, and is left out.
@@ -410,4 +393,4 @@ Buttons: Call (402) 890-6460
 
 **Reviews used (each once):** Alyssa T., Darion M., Joe B., Nicole S. (Home); Jackie M., mike B., carolyn W., Monica R., Cory R., Steve G. (Roof Replacement); James M., Bornschlegl F., Justin E., William W., Bryan B., Jed S. (Insurance Claims); Lynette K., Ryan R. (Contact).
 
-**Thin spots:** SERVICENOTE
+**Thin spots:** Roof Insurance Claims clears 700 only because its six review quotes count toward the total (538 words of copy without them). The site gives that service one paragraph, so the copy was kept to real advice and sourced claims rather than padded. Home (523 without quotes) and Contact (189 without quotes) also clear their minimums only with quotes counted. Home has 11 sections, Roof Replacement 12, Roof Insurance Claims 11 and Contact 7.

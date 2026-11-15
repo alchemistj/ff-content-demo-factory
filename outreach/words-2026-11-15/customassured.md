@@ -200,12 +200,6 @@ We repair any brand of HVAC equipment, so a breakdown does not have to start wit
 
 > "I have been with Custom Assured for 22 years, I have been very happy with their service. They show up twice a year for maintenance, any problems I have had in between they take care of in a timely fashion Last Winter I discovered at 10pm that my furnace was not working, I called the emergency no. and the tech had just walked in the door from another emergency job, he said he would come out but I told him we would be fine until morning. He was at my door bright and early and got everything fixed up. I would recommend them anytime." — Scharee Z.
 
-### A Visit From Start to Finish
-
-> "We have used Custom Assured Mechanical since we moved to this area. Almost Four years ago. Service has been great. They come twice a year and inspect the equipment and clean the drains, answer our questions and replace the air filter. We could not be happier with their service." — Fred K.
-
-### A Plan That Pays Off
-
 > "I have been using Custom Assured for about 15 years. I signed up for the yearly service plan and it has totally paid off with twice a year maintenance on heating and air. At one point I had 3 service contracts for home, rental home, and lake cottage. Lance has been our technician for all these years and he is very knowledgeable! I switched from a large company to this small family run company and never looked back!" — Anne B.
 
 ### Ready to Join?
@@ -230,7 +224,7 @@ As a small company, a majority of our sales duties are handled by our owner, Rod
 
 ### Repair or Replace? You Decide.
 
-We start with what your system needs, and we repair any brand. A single failed part on a system that otherwise runs well is usually a repair. If the system keeps needing repairs, or a repair is getting close to the price of a new system, it's time to price a replacement. We lay out both so you can choose.
+We repair any brand of HVAC equipment, and if your home or business needs a more efficient, upgraded or additional-capacity system, we'll help you find the best solution.
 
 > "I was referred to C.A.M by a friend who also uses their annual service/maintenance plan. Little did I know I would end up needing a new HVAC system as well. They are a prompt, professional, honest and highly skilled company which seems rare anymore. I will never use anyone else and would highly recommend them to others as well." — Rita H.
 
@@ -324,10 +318,10 @@ If it's urgent, please call [(260) 496-8400](tel:+12604968400).
 
 - Strategy page: about 735 words
 - Home: about 657 words
-- HVAC Maintenance: about 848 words
-- Furnace and AC Installation: about 743 words
+- HVAC Maintenance: about 726 words
+- Furnace and AC Installation: about 712 words
 - Contact: about 283 words
-- Copy without review quotes: Home 481; HVAC Maintenance 368; Furnace and AC Installation 467; Contact 206
+- Copy without review quotes: Home 481; HVAC Maintenance about 290; Furnace and AC Installation about 436; Contact 206
 
 **Credentials and their sources**
 
@@ -355,6 +349,8 @@ If it's urgent, please call [(260) 496-8400](tel:+12604968400).
 
 **Thin material**
 
+- Question for Rod: how does he decide with a customer between repairing and replacing a system? The Installation page says only what the site supports (we repair any brand, and we help find the best solution). A repair-or-replace rule would need his words.
+- HVAC Maintenance is kept short and proof-led on purpose. To reach full length it needs the Custom Priority Club price and terms from Rod.
 - HVAC Maintenance: the site's own material is the six-line Club benefit list and one paragraph on Our Services. Most of the page's length is member reviews, not copy. The page reaches 700 words only with those quotes, so it is thin in copy. The earlier draft's "same technician, twice a year" promise could not be used.
 - Contact reaches 250 words only barely, because the site's own Contact page is 45 words.
 - The Strategy page's "why we built this" refers to reviews in general terms, with no counts, as allowed on the owner's page.

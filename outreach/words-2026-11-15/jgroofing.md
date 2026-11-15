@@ -28,7 +28,7 @@ So we led with the part that is yours. The demo puts "Jose looks at the roof, Am
 
 **Roof replacement**
 
-- **Current site problem:** Roofing is one short services page of about 200 words. Asphalt shingles get one sentence, and no page names a single service and Peoria together, which is how people search.
+- **Current site problem:** Roofing is one short services page of about 200 words. Asphalt shingles get one sentence, and no page headline names a single service and Peoria together, which is how people search.
 - **What the demo fixes:** A page of its own for roof replacement, with what the job involves, how to decide between a repair and a new roof, and the materials you install.
 - **A full build would also add:** A roof repair page, and a metal roofing page.
 
@@ -42,7 +42,7 @@ So we led with the part that is yours. The demo puts "Jose looks at the roof, Am
 
 - **Current site problem:** The visible number on your pages is 309-567-8236, but the "Call or Text" buttons dial 309-316-3652. A visitor who taps and a visitor who reads reach different lines. The "Contact" menu link also sends people back to the home page.
 - **What the demo fixes:** One number, your hours, your address, your email and a plain request to call or text.
-- **A full build would also add:** A form whose messages reach your phone,.
+- **A full build would also add:** A form whose messages reach your phone.
 
 ### What's working today
 
@@ -68,7 +68,7 @@ So we led with the part that is yours. The demo puts "Jose looks at the roof, Am
 
 ### What we'd confirm with you
 
-- **Which phone number is the live one?** Your pages show 309-567-8236, and your Google listing agrees. The "Call or Text" buttons dial 309-316-3652. Which line should customers reach, and who answers each?
+- **Which phone number is the live one?** Your home page and contact block show 309-567-8236, and your Google listing agrees. The "Call or Text" buttons dial 309-316-3652. Which line should customers reach, and who answers each?
 - **What year did JG Roofing start?** Your site gives no founding year. A 2025 article we found says 2018. We left years off the demo.
 - **Are Sundays part of your week?** Your site lists Monday to Friday, 7 to 7, and Saturday, 7 to 7, and says nothing about Sunday. A customer's review says you came out on a Sunday for a chimney job. Should we list Sunday hours, or "by arrangement"?
 - **Which credentials are current?** Your About page says "BBB A+ accredited" and your home page says you are "certified with GAF". We could not find a BBB profile, and we have not matched GAF to its contractor list. Tell us what you hold and we will add it with the certifier's own wording.
@@ -93,14 +93,6 @@ Book a no-obligation call with us and we will walk through the demo page by page
 Most people have never replaced a roof or filed a roof claim, so we don't expect you to know how either one goes. Jose comes out, looks at the roof and tells you what it needs. When insurance is involved, Amanda explains the claim process and what to expect. You hear from us at each stage, and you can ask questions along the way.
 
 We handle the roof, and we handle the other parts of the exterior that are often damaged with it: siding, gutters, fascia and soffit.
-
-### How a Roof Job Goes
-
-1. You call or text us, and we set a time for Jose to see the roof.
-2. Jose inspects it and explains what he finds, in plain words.
-3. If the damage came from a storm, Amanda walks you through the insurance claim.
-4. Our crew does the work. On a replacement, that means new shingles, new underlayment and replacing any rotted wood.
-5. We clean up when the crew is finished.
 
 ### What You Can Count On
 
@@ -213,23 +205,15 @@ Call or text us at [(309) 567-8236](tel:+13095678236) and we'll set a time for J
 
 A storm leaves you with two problems at the same time: a damaged roof and an insurance claim. We split them. Jose looks at the roof and tells you what it needs. Amanda explains the claim process, what to expect at each stage and what the insurance company may ask of you.
 
-Neither of us decides what your policy covers. That is between you and your insurance company. What we do is make sure you understand each step and that the roof work is done properly.
+Neither of us decides what your policy covers. That is between you and your insurance company. What we do is make sure you understand each step and that the roof work is done properly. When you're ready for the new roof, [roof replacement](/roof-replacement/) is the same crew with the same explained steps.
 
 ### Hail Doesn't Stop at the Shingles
 
-Hail and wind hit more than the roof. We replace roofs after storms, and we also replace the gutters, the siding and the garage roof when they were damaged too. It all gets looked at together, so your claim covers the whole picture and you aren't calling three contractors.
+Hail and wind hit more than the roof. We replace roofs after storms, and we also replace the gutters, the siding and the garage roof when they were damaged too. It all gets looked at together, so you aren't calling three contractors.
 
 > "JG Roofing did an amazing job on my house. I had hail damage to my house and garage roof, as well as the gutters on both. They came and replaced all of it in less than two days. Everything turned out better than expected. Highly recommend this business!" — Matthew L.
 
-### What a Claim Looks Like Day to Day
-
-Every claim is different, but this is the order we work in:
-
-1. You call us and Jose inspects the roof.
-2. We explain what he finds and how the claim process works.
-3. You and your insurance company go through the claim, and Amanda answers your questions along the way.
-4. After the claim is approved, we schedule the work.
-5. Our crew replaces what was damaged and cleans up.
+### Start to Finish
 
 > "We called JG Roofing on a whim after seeing their truck around town and it was the best decision we made! Amanda and Jose are professional, responsive, kind and communicative. They walked us through the process (included an insurance claim) and handled so many of the details. Due to our roof involving insurance we worked with Amanda and Jose for several months. When our roof was ready to be replaced Jose and his team completed the work in a day. They even were kind enough to do an extra few sweeps around the house to make sure there were no nails left behind for our dog to step on. The quality of work and peace of mind from working with JG Roofing was unmatched. I would recommend Amanda and Jose (and their team) to anyone needing their services- you will be met with compassionate, timely, and quality care. Thanks again for everything!" — Kayla T.
 
@@ -244,10 +228,6 @@ Sometimes the settlement offered doesn't cover everything the roof needs. If tha
 Siding adds a problem of its own when it is no longer made, because a repair can leave panels that don't match. Amanda has worked through exactly that with a customer's insurance company.
 
 > "… Our home had siding that was no longer manufactured and Amanda was able to have the proper research done in order to prove that so that our home would not be repaired in a way that it would have mismatched siding! …" — Bert S.
-
-### Start to Finish
-
-We are trained to work with insurance from start to finish, and for a storm that includes the work on your roof. When you're ready for it, [roof replacement](/roof-replacement/) is the same crew with the same explained steps.
 
 ### Call Us After the Storm
 
@@ -289,11 +269,11 @@ We set a time for Jose to look at your roof, and he explains what he finds. If a
 
 - **Word counts (all visible words on the page, including headings, labels and quotes; the second number is our own copy without the review quotes):**
   - Strategy: 970 words (limit 1,000).
-  - Home: 645 words, 514 without quotes. Meets 550.
-  - Roof Replacement: 814 words, 435 without quotes. Meets 700 only because the long review quotes count; our own copy is thin.
-  - Storm Damage: 875 words, 458 without quotes. Same: meets 700 with quotes.
+  - Home: 570 words, 439 without quotes. Meets 550.
+  - Roof Replacement: 814 words, 435 without quotes. Reaches 700 only with the long review quotes. Own copy is short; it needs owner material (job sequence, materials, claim steps) to reach 700 words of own copy.
+  - Storm Damage: 769 words, 352 without quotes. Same: needs owner material (job sequence, materials, claim steps) to reach 700 words of own copy.
   - Contact: 262 words (target 250+).
-- **Thin spots.** JG's own site has about 430 words on the home page, about 210 on services, 13 on projects and 79 on About, and says nothing about how a job runs. The two service pages are built from the site's few lines, the reviews, and plain advice (repair or replace). We did not invent a process, prices, timelines or warranty terms to lengthen them. If the owner supplies photos of finished jobs, a materials list or the real claim steps, both pages can grow.
+- **Thin spots.** JG's own site has about 430 words on the home page, about 210 on services, 13 on projects and 79 on About, and says nothing about how a job runs. The two service pages are built from the site's few lines, the reviews, and plain advice (repair or replace). We did not invent a process, prices, timelines or warranty terms to lengthen them. If the owner supplies photos of finished jobs, a materials list or the real claim steps, both pages can grow. Job-step and claim-step lists were cut because the site does not state them; steps appear only inside review quotes.
 - **Credentials used: none.** Nothing is defined on the home page because none could be confirmed:
   - "GAF certified" (home page of the current site): not checked on GAF's contractor locator (facts.md says do not show it until confirmed).
   - "BBB A+ accredited" (https://www.jgroofingco.com/about/): no BBB profile found (facts.md).

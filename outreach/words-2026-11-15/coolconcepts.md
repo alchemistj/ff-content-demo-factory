@@ -8,7 +8,7 @@
 
 Built for Cool Concepts, Lincoln, NE
 
-Your Google reviews keep describing the same visit: someone arrives quickly, finds what failed and explains it. Your current site doesn't lead with it. We built a home page, two service pages and a contact page that lead with it, and this page shows what we changed and why.
+Your Google reviews, many of them dated 2016 to 2020, keep describing the same visit: someone arrives quickly, finds what failed and explains it. Your current site doesn't lead with it. We built a home page, two service pages and a contact page that lead with it, and this page shows what we changed and why.
 
 We kept the demo to heating and cooling for homes. Your commercial kitchen and refrigeration work would get its own pages in a full build.
 
@@ -31,7 +31,7 @@ Heating and cooling fail at bad times, and the first question is whether anyone 
 **What the demo fixes**
 - The headline is "HVAC Company in Lincoln, NE — Cool Concepts", the phrase a Lincoln homeowner searches.
 - The first screen says what you do for a homeowner whose furnace or AC has quit, with a call button and a quote button.
-- Your fact line, free estimates, Daikin specialty and yearly maintenance are each stated once, with a real review beside the claim.
+- Free estimates, your Daikin specialty and yearly maintenance are each stated once, with a real review beside the claim.
 
 **A full build would also add**
 Heat pump and geothermal pages, a preventive maintenance page, and a commercial kitchen page, so each service you list has its own place to be found.
@@ -148,7 +148,6 @@ An older system isn't automatically a bad one. We assess it with you and help yo
 - Air conditioner repair and replacement
 - Heat pumps and geothermal
 - Preventive maintenance
-- Commercial kitchen appliances, ovens and refrigeration units: repair and installation, all brands
 
 > "James came out to check out our broken heat pump (we knew it was going to need replaced). He took the panel off and explained what went wrong in a way that I could understand. He had a crew out to install a new one right away. Would highly recommend!" — Kristi A.
 
@@ -164,7 +163,7 @@ Having your heating and cooling maintained costs less than a breakdown, and our 
 
 ### Heat or air out? Call us.
 
-We serve homes and businesses across eastern Nebraska. Call (402) 483-2665 and tell us what your system is doing.
+We serve homes across eastern Nebraska. Call (402) 483-2665 and tell us what your system is doing.
 
 **Buttons:** Call (402) 483-2665 | Request a Quote
 
@@ -231,7 +230,7 @@ Call (402) 483-2665 and tell us what the furnace is doing. We'll take it from th
 
 **Trust bar:** On-Site Diagnosis · Plain-Language Explanations · Your Decision on Repair or Replace
 
-> "James is the best. AC went out, hottest day of the year of course. He was at my house within 2 hours after my call. AC was back on in 15 minutes. Genuine guy, great service!" — Andrea F.
+> "He’s always thorough, respectful, and takes the time to explain exactly what’s wrong and what needs to be done. He really goes out of his way to make sure we understand the issue and the fix." — Miss H.
 
 ### We find the cause before we recommend anything
 
@@ -240,12 +239,12 @@ We start at your home, with the unit. We look at what failed and explain it, so 
 ### Cooling problems we diagnose
 
 #### The AC won't start
-We check what's stopping it, from the thermostat to the unit outside, and tell you what we found.
+We check what's stopping it and tell you what we found.
 
 #### It runs but the house stays warm
 We trace it to its cause before we suggest a fix.
 
-#### A new noise from the outdoor unit
+#### A new noise from the unit
 A new noise is worth a call. A failing part can damage the unit around it, and replacing a faulty component before it fails costs less than a breakdown.
 
 #### An AC that keeps needing repairs
@@ -253,7 +252,7 @@ If you've paid for the same kind of repair more than once, we'll look at the who
 
 ### Repair or replace: a rule you can check
 
-We recommend a repair when one part has failed on a unit that otherwise runs well. We price a replacement next to the repair when the unit is old and has been repaired more than once, or when the compressor has failed. Age by itself doesn't decide it. We once repaired an older AC in the first hour of the visit, and the home was cooling off before that day's 100 degree heat arrived.
+We recommend a repair when one part has failed on a unit that otherwise runs well. We price a replacement next to the repair when the unit is old and has been repaired more than once, or when the failure is a major one. Age by itself doesn't decide it. We once repaired an older AC in the first hour of the visit, and the home was cooling off before that day's 100 degree heat arrived.
 
 When replacement is the better choice, we take care of the ordering and the installation. We have ordered a replacement unit after a summer failure and had it installed the very next day.
 
@@ -261,7 +260,7 @@ When replacement is the better choice, we take care of the ordering and the inst
 
 ### Before you call
 
-If the AC isn't running, check that the thermostat is set to cool and below the room temperature, and that the breaker hasn't tripped. If neither fixes it, call us. We'll tell you what to do next, and if it needs a visit, we'll come to your home.
+If the AC isn't running, call us and tell us what it's doing. We'll tell you what to do next, and if it needs a visit, we'll come to your home.
 
 > "In 100 degree heat and a broken ac, we called Cool Concepts on a Friday night at 7pm and they came right on time at 10am on Saturday morning--despite being booked up for the day. He was able to solve the issue quickly and was extremely easy to work with (and even took his shoes off when he came inside.) we have found our hvac guys. Cool concepts is legit." — Marcus P.
 
@@ -292,9 +291,9 @@ Call (402) 483-2665 and tell us what the AC is doing.
 
 (402) 483-2665
 
-If it's urgent, please call. Tell us what your system is doing, the brand if you know it, and roughly how old it is. We'll be straight with you about what we think is going on and what happens next.
+If it's urgent, please call. Tell us what your system is doing, the brand if you know it, and roughly how old it is. We'll listen, then tell you what we think is going on and what happens next.
 
-> "James (Cool Concepts) is one of those guys that will come at the drop of a hat, take a look at the situation and then be open and honest with you about your situation. Then he also accomplishes the work quickly and expertly. I couldn't ask for more!" — Brian R.
+> "James and the staff on the phone were so kind and quick! I appreciated their great communication, and quick response. We will use them again if we have any misfortunate with the HVAC!" — Brittne M.
 
 ### Where to find us
 
@@ -312,8 +311,8 @@ Prefer to write? [Request a quote](/request-a-quote/) and tell us what's going o
 
 ## Notes for Ruth (not page copy)
 
-- Word counts (headings, buttons and quotes included): Strategy about 970. Home about 625 (target 550+, met). Furnace Repair about 740 (700+, met). AC Repair about 730 (700+, met). Contact about 235 (target 250, about 6% short; the site gives no hours, no email we can print and no second office, so it is not padded).
+- Word counts (headings, buttons and quotes included): Strategy about 970. Home about 610 (target 550+, met). Furnace Repair about 740 (700+, met). AC Repair about 705 (700+, met). Contact about 220 (target 250, about 12% short; the site gives no hours, no email we can print and no second office, so it is not padded).
 - Service pages: Furnace Repair and AC Repair are the two main residential money services. Reviews about furnace and AC failures are the largest group, and the site's own tips posts and Replacement page back them. The site has no residential furnace or AC page of its own, so these two lean on reviews and the tips posts rather than site service copy.
 - Credentials used: none. Daikin: the site says "authorized Daikin dealer" (repair-service.md), but facts.md marks it Unverified because Daikin's dealer locator has not been checked for ZIP 68507. The copy says only "we specialize in Daikin heating and air", which is the home page's own sentence. No NATE, BBB, licence or insurance claim appears because the site states none.
-- Left out on purpose: the "Official Dealer of" footer line (unclear, Unverified); "24/7 service" (written for restaurants and businesses; residential unconfirmed); the Daikin warranty-work line; any hours (none stated); "over 20 years experience" (the site also says "since 2005", which we used once in the trust bar; both are site claims with no registry check); the Petersen "payment plan" (no financing offer found, so no financing line); the "Most repairs can be done in the same day" FAQ (it answers an appliance question); the dryer-vent, gas-dryer and Nest thermostat reviews (not services the site lists); reviews that mention other companies (Miss H.; the sentence about another company is trimmed out of Bill F.'s quote). Both email addresses are left out until confirmed.
-- Reviews used (each once; trims are whole consecutive sentences): Brittany W., Kristi A., Devan M. (home); Rocky A., Krishelle S., Max W. (furnace); Andrea F., Bill F., Marcus P., Alisa M. (AC); Samantha C. and Brian R. (contact).
+- Left out on purpose: the "Official Dealer of" footer line (unclear, Unverified); "24/7 service" (written for restaurants and businesses; residential unconfirmed); the Daikin warranty-work line; any hours (none stated); "over 20 years experience" (the site also says "since 2005", which we used once in the trust bar; both are site claims with no registry check); the Petersen "payment plan" (no financing offer found, so no financing line); the "Most repairs can be done in the same day" FAQ (it answers an appliance question); the dryer-vent, gas-dryer and Nest thermostat reviews (not services the site lists); reviews that mention other companies (Miss H.'s sentences about a warranty company are left out of her quote; the sentence about another company is trimmed out of Bill F.'s quote). Both email addresses are left out until confirmed.
+- Reviews newer than 2022 swapped in where they fit (Miss H., Brittne M.); the older quotes stay where nothing newer proves the same point. Reviews used (each once; trims are whole consecutive sentences): Brittany W., Kristi A., Devan M. (home); Rocky A., Krishelle S., Max W. (furnace); Miss H., Bill F., Marcus P., Alisa M. (AC); Samantha C. and Brittne M. (contact).

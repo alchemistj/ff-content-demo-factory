@@ -19,12 +19,12 @@ Your Google reviews keep coming back to the same things: fast response, honest a
 **Current site problem**
 - The title and main heading say "Central Illinois" and never Peoria.
 - The first screen is a long paragraph about air quality. It does not say what you do when the call comes in.
-- Your BBB rating and your Ameren Program Ally status are shown, but neither is explained in a sentence.
+- Your BBB rating is shown, but it is not explained in a sentence.
 - Your site has years that disagree: "since 2004" on the homepage and "for over 15 years" on other pages.
 
 **What the demo fixes**
 - The heading names Peoria, and the first screen leads with how you work: find the problem, explain it, let the customer decide.
-- The BBB rating and the Ameren program each get one plain sentence.
+- The BBB rating gets one plain sentence.
 - Reviews sit right under the first screen and through the page, each one quoted exactly.
 
 **A full build would also add**
@@ -80,7 +80,7 @@ Your Google reviews keep coming back to the same things: fast response, honest a
 ### What a full build includes
 
 - **Gets you found:** Peoria in every title and heading, and a page for each service you offer.
-- **Earns their trust:** your reviews, BBB rating and Ameren partnership explained in plain words.
+- **Earns their trust:** your reviews and BBB rating explained in plain words.
 - **Turns visitors into calls:** tap-to-call on every screen and a clear emergency line.
 - **Keeps working after launch:** a regular check on how the site shows up in Google.
 
@@ -142,11 +142,9 @@ When a repair no longer makes sense, we install new heating and cooling systems 
 
 > The technicians, Dillon and Darrell, were very prompt, courteous, and professional. Dillon replaced my furnace. Darrell replaced my ac-unit. Both units required some extra work as they were very antiquated. It was clear that both men took no shortcuts and did honest and straightforward work. — Joe M.
 
-### Ratings and programs we're part of
+### Our BBB rating
 
 We hold an A+ rating with the Better Business Bureau, the top rating on its scale.
-
-We are also a registered Program Ally with the Ameren Illinois Energy Efficiency Program, which means we are one of the contractors who help deliver it. Qualified customers can receive instant incentives on smart thermostats, central air conditioners, heat pump water heaters, duct air source heat pumps and 95% efficient furnaces. Most incentives are applied at the time of purchase, and we fill out the paperwork for you, so there is no application to complete. Commercial customers may be eligible too.
 
 ### Homes and businesses
 
@@ -305,7 +303,7 @@ If it is urgent, please call. If it can wait for the next business day, tell us 
 
 **Credentials and sources**
 - BBB A+ rating: "Thermal Services Inc has an A+ BBB rating" and "is BBB Accredited" on the BBB profile, https://www.bbb.org/us/il/peoria/profile/heating-contractors/thermal-services-inc-0724-1000021692 (checked 2026-11-15). The "top rating on its scale" wording comes from the BBB's A+ to F scale; we did not open BBB's own explainer page. The site also says "A+ BBB Rated Company".
-- Ameren Program Ally: the site says "registered Program Ally with the Ameren Illinois Energy Efficiency Program". Ameren's own registration pages (https://cloud.ee.ameren.com/BothPAapplication) describe Program Allies as the contractors and partners who deliver the program. Ameren's directory listing for TSI was not checked, so please verify before sending.
+- Ameren Program Ally: TSI's site lists Ameren Program Ally; not confirmed on Ameren's directory; verify before using. Removed from page copy (all Ameren incentive text removed from Home).
 - "Union-trained, certified, and licensed technicians": the site's words, used as written. No license numbers or certifying body are named anywhere, so nothing is defined.
 
 **Facts deliberately left out**
@@ -321,4 +319,4 @@ If it is urgent, please call. If it can wait for the next business day, tell us 
 - Financing: facts.md says "not stated", but the residential page says "outstanding financing options, should a replacement be necessary". We used the weaker wording "financing options for homeowners, should a replacement be necessary", once, on Home.
 - Sizing: the Q&A says sizing is "at no cost" on a quote request. Used once, on the Air Conditioning page.
 - Geothermal, boiler and heat pump claims come from the Heating page and the special equipment page.
-- Thin spot: the Heating page is close to the 700 minimum. The site has only about 490 words on heating, so it is built from the heating, special equipment, Q&A and commercial pages.
+- Heating is short on purpose (about 640 words): the site has only about 490 words on heating, and we did not pad.
