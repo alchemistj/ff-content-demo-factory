@@ -23,7 +23,7 @@ https://jdkuhn-fortwayne.websitepreview.fluidframemarketing.com/?utm_source=emai
 
 Note: It'll look a lot better with your logo and images on it! Lol
 
-The preview walks through why each page is built the way it is. One thing we'd fix: on a phone your current site is 768 pixels wide on a 390 pixel screen, so people have to scroll sideways to read it. (Checked again on the live site on 11/15.)
+The preview walks through why each page is built the way it is. One thing we'd fix: on a phone your current site is 768 pixels wide on a 390 pixel screen, so people have to scroll sideways to read it.
 
 We built your homepage and your HVAC replacement page as examples, and we'd love to build the rest.
 
