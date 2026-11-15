@@ -171,6 +171,18 @@
       "pulledAt": "2026-11-01T20:54:26.900Z"
     },
     {
+      "slug": "comforttechs-lincoln",
+      "name": "COMFORTTECHS",
+      "placeId": "ChIJbS3QcJi_locRFO4zrEhUpoQ",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 69,
+        "withText": 49,
+        "ratingOnly": 20
+      },
+      "pulledAt": "2026-11-15T03:13:33.279Z"
+    },
+    {
       "slug": "cooks-hvac-wichita",
       "name": "Cook's Heating and Cooling",
       "placeId": "ChIJjxss2tbmuocREGRO-I7jkEE",
