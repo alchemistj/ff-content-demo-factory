@@ -1,0 +1,734 @@
+{
+  "kind": "google-review-pull",
+  "version": 1,
+  "slug": "customassured-fortwayne",
+  "place": {
+    "name": "Custom Assured Mechanical",
+    "placeId": "ChIJDfU04u_jFYgRiIrcEKLjd8U",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Custom%20Assured%20Mechanical&query_place_id=ChIJDfU04u_jFYgRiIrcEKLjd8U",
+    "address": "2630 Independence Dr, Fort Wayne, IN 46808",
+    "phone": "(260) 496-8400",
+    "rating": 5,
+    "totalReviewCount": 90
+  },
+  "pulledAt": "2026-11-15T03:11:03.389Z",
+  "requestedMax": 75,
+  "reviews": [
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pOS2VFZ3RRamRsV21ONWVWOWlOWGx5UzJwRlkzYxAB",
+      "reviewer": "David A.",
+      "rating": 5,
+      "text": "Service was friendly and exceptional.",
+      "publishedAt": "2026-11-05T13:29:19.039Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pOS2VFZ3RRamRsV21ONWVWOWlOWGx5UzJwRlkzYxAB!2m1!1s0x0:0xc577e3a210dc8a88!3m1!1s2@1:CAIQACodChtycF9oOjNKeEgtQjdlWmN5eV9iNXlyS2pFY3c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25kdFFVOWhlVkZhZGxkME5WbHFjbWhXT1VOaFVHYxAB",
+      "reviewer": "Cindy M.",
+      "rating": 5,
+      "text": "Always great service! I highly recommend Custom Assured Mechanical! They are friendly, honest and reasonably priced!",
+      "publishedAt": "2026-10-28T16:17:35.220Z",
+      "ownerResponse": "Awesome, Thank you so much. Always a great time working with you and your family!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25kdFFVOWhlVkZhZGxkME5WbHFjbWhXT1VOaFVHYxAB!2m1!1s0x0:0xc577e3a210dc8a88!3m1!1s2@1:CAIQACodChtycF9oOndtQU9heVFadld0NVlqcmhWOUNhUGc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21kb1dtRk5lVk5tTXpKbWJVaHZUa1UxUW5CQ1QxRRAB",
+      "reviewer": "Larry S.",
+      "rating": 5,
+      "text": "Very pleased with there work on our fall checkup!<br>Professional and courteous. Highly recommend them!",
+      "publishedAt": "2026-10-27T13:59:59.064Z",
+      "ownerResponse": "Thank you Larry for the review and highly recommending us! We will do our best to continue to deliver you the high quality of work you have come to expect from us!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21kb1dtRk5lVk5tTXpKbWJVaHZUa1UxUW5CQ1QxRRAB!2m1!1s0x0:0xc577e3a210dc8a88!3m1!1s2@1:CAIQACodChtycF9oOmdoWmFNeVNmMzJmbUhvTkU1QnBCT1E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tSM01XSkVYMVZGUlhoRGJUSnJSMFZ0YzIxblMzYxAB",
+      "reviewer": "Jessica L.",
+      "rating": 5,
+      "text": "My air conditioner stopped running one day. From the very first phone call with Julie, to the end result of Casey getting it fixed, it was a PLEASURE to work with these people!  They were polite, friendly and knowledgeable! Our air conditioner was fixed the next day!! I appreciate you guys so much! Thank you for being there so quick, answering all the questions, and leaving us better than you found us!!",
+      "publishedAt": "2026-10-13T19:32:02.976Z",
+      "ownerResponse": "Thank you Jessica! We try our best from the first phone call until the unit is repaired to be upfront with customers about the condition of the system, the repairs needed, and the cost to get your system cooling again.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tSM01XSkVYMVZGUlhoRGJUSnJSMFZ0YzIxblMzYxAB!2m1!1s0x0:0xc577e3a210dc8a88!3m1!1s2@1:CAIQACodChtycF9oOkR3MWJEX1VFRXhDbTJrR0Vtc21nS3c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT20xdlkwVkRZWFZIUTNGUFYwVXRXSGRhVkhGMlNtYxAB",
+      "reviewer": "Tom H.",
+      "rating": 5,
+      "text": "Jacob has served me furnace and AC for years now and does a great job!",
+      "publishedAt": "2026-10-07T21:49:28.366Z",
+      "ownerResponse": "Thank you Tom! Jacob is one of the BEST!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT20xdlkwVkRZWFZIUTNGUFYwVXRXSGRhVkhGMlNtYxAB!2m1!1s0x0:0xc577e3a210dc8a88!3m1!1s2@1:CAIQACodChtycF9oOm1vY0VDYXVHQ3FPV0UtWHdaVHF2Smc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pKUWVXWkZjVjh3YVVVelJYZHpWMGw2Y25CV2JIYxAB",
+      "reviewer": "John R.",
+      "rating": 5,
+      "text": "Excellent work. Courteous staff in the office and in the field. Wholehearted endorsement and recommendation.",
+      "publishedAt": "2026-10-06T15:02:16.525Z",
+      "ownerResponse": "Thank you Drew! So glad we have been able to take care of you at your old house and your new house. Always a pleasure catching up!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pKUWVXWkZjVjh3YVVVelJYZHpWMGw2Y25CV2JIYxAB!2m1!1s0x0:0xc577e3a210dc8a88!3m1!1s2@1:CAIQACodChtycF9oOjJQeWZFcV8waUUzRXdzV0l6cnBWbHc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUQzcE5QSllnEAE",
+      "reviewer": "K D.",
+      "rating": 5,
+      "text": "Another great experience with Customer Assured Mechanical.  They installed the original unit 24 years ago in my parent’s home and always provided great service.  I’m now the owner of the home and it was time for a new unit.  Lance and Logan installed a new unit and they did a great job.  Always friendly and efficient service.  Very trustworthy!",
+      "publishedAt": "2026-06-09T23:29:39.639Z",
+      "ownerResponse": "Jacob is wonderful in our eyes as well. Thank you for your kind words!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQzcE5QSllnEAE!2m1!1s0x0:0xc577e3a210dc8a88!3m1!1s2@1:CIHM0ogKEICAgID3pNPJYg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xKRGQxVk9OMGswV25Oc01tRkxNVmRXWjB0S1NuYxAB",
+      "reviewer": "Nicole S.",
+      "rating": 5,
+      "text": "Our family appreciates working with them so much since 2007!  They are great with follow ups for yearly maintenance services to ensure our systems are cleaned and ready to work properly year after year!",
+      "publishedAt": "2026-03-18T02:02:15.150Z",
+      "ownerResponse": "Thank you so much for your kind words. We appreciate working with you guys throughout the many years!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xKRGQxVk9OMGswV25Oc01tRkxNVmRXWjB0S1NuYxAB!2m1!1s0x0:0xc577e3a210dc8a88!3m1!1s2@1:CAIQACodChtycF9oOlJDd1VON0k0WnNsMmFLMVdWZ0tKSnc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tWbGNUVm5XREpLTWpaaU0yUm1ZUzA1VkZSQ1lsRRAB",
+      "reviewer": "megan R.",
+      "rating": 5,
+      "text": "Okay these guys are just the best. Everytime I call in complete panic they are ALWAYS friendly and professional, they make it out to me first thing and are extremely fair in pricing. We are loyal customers for sure!",
+      "publishedAt": "2026-02-19T00:41:49.508Z",
+      "ownerResponse": "Thank you for your kind words. It has been our pleasure working with you!!!!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tWbGNUVm5XREpLTWpaaU0yUm1ZUzA1VkZSQ1lsRRAB!2m1!1s0x0:0xc577e3a210dc8a88!3m1!1s2@1:CAIQACodChtycF9oOkVlcTVnWDJKMjZiM2RmYS05VFRCYlE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2toU1JqbHdPRTlMWWxKeVVqZHpiVXAwV0ZRNFRXYxAB",
+      "reviewer": "Matt M.",
+      "rating": 5,
+      "text": "Probably one of the most honest / reliable contractors in the area.",
+      "publishedAt": "2025-11-14T14:33:28.567Z",
+      "ownerResponse": "We try our best and appreciate you trusting us with all your HVAC needs throughout the years!!!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2toU1JqbHdPRTlMWWxKeVVqZHpiVXAwV0ZRNFRXYxAB!2m1!1s0x0:0xc577e3a210dc8a88!3m1!1s2@1:CAIQACodChtycF9oOkhSRjlwOE9LYlJyUjdzbUp0WFQ4TWc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xFMFNUY3dZWEZTTVRCelN6QlBVVGRTYlhRMFQyYxAB",
+      "reviewer": "Danniel W.",
+      "rating": 5,
+      "text": "They were here when they said they would be. Friendly and professional. And they follow up on their work. I would recommend Custom Assured Mechanical, to anyone in need of their services.",
+      "publishedAt": "2025-10-20T18:38:38.914Z",
+      "ownerResponse": "It has been a pleasure to service your furnace as needed over the last few years. We are grateful that when you decided you were ready for a new furnace we were able to get you taken care of and able to meet your expectations! Thank you!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xFMFNUY3dZWEZTTVRCelN6QlBVVGRTYlhRMFQyYxAB!2m1!1s0x0:0xc577e3a210dc8a88!3m1!1s2@1:CAIQACodChtycF9oOlE0STcwYXFSMTBzSzBPUTdSbXQ0T2c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tKbVNWSnpWM0k0VGt4MlNHTlNkamRZT1d4SFoyYxAB",
+      "reviewer": "Bridget V.",
+      "rating": 5,
+      "text": "Jacob gets praise. He is such a kind gentleman. He always volunteers to turn on the basement lights so we dont have to make a trip by the furnance. And today he turned them off. He does a great job . We have the semi annual service so we see him at leasst twice a year. Thank you Jacob.",
+      "publishedAt": "2025-10-16T22:14:34.620Z",
+      "ownerResponse": "Jacob is wonderful and such a asset to our company! I will make sure he gets a chance to see this review! Thank you for your support.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tKbVNWSnpWM0k0VGt4MlNHTlNkamRZT1d4SFoyYxAB!2m1!1s0x0:0xc577e3a210dc8a88!3m1!1s2@1:CAIQACodChtycF9oOkJmSVJzV3I4Tkx2SGNSdjdYOWxHZ2c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xCZlRHTlFUWFJ4ZVhaelJuaFdVbTlXYW14Sk4xRRAB",
+      "reviewer": "Roy S.",
+      "rating": 5,
+      "text": "Custom Assured Mechanical did an awesome job! They came out first thing this morning and had my AC fixed in no time. Fast, professional, and easy to work with. Highly recommend!",
+      "publishedAt": "2025-09-29T17:35:13.922Z",
+      "ownerResponse": "I am glad we could get your a/c issue resolved! Thank you for trusting us with your HVAC needs!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xCZlRHTlFUWFJ4ZVhaelJuaFdVbTlXYW14Sk4xRRAB!2m1!1s0x0:0xc577e3a210dc8a88!3m1!1s2@1:CAIQACodChtycF9oOlBfTGNQTXRxeXZzRnhWUm9WamxJN1E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pOTVpVWlNWMWxSTjA5Wk5XcENSR3QwYkhJdFYzYxAB",
+      "reviewer": "Billi",
+      "rating": 5,
+      "text": "Had Logan out for my ac cleaning.He was very professional & polite.  He told me all that he did . My ac unit is working fine. Logan is welcome back anytime.",
+      "publishedAt": "2025-08-13T17:12:25.114Z",
+      "ownerResponse": "Logan is a great technician and has is good at building great relationships with customers. Thank you for supporting our local business!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pOTVpVWlNWMWxSTjA5Wk5XcENSR3QwYkhJdFYzYxAB!2m1!1s0x0:0xc577e3a210dc8a88!3m1!1s2@1:CAIQACodChtycF9oOjNMZUZSV1lRN09ZNWpCRGt0bHItV3c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNYXzh2ZkJnEAE",
+      "reviewer": "Rick A.",
+      "rating": 4,
+      "text": "The technician always takes care to explain what he’s doing and what he’s looking for when inspecting our HVAC System. From what I’ve seen and for what has been explained to me I feel that Custom Assured Mechanical technicians do a very thorough job.",
+      "publishedAt": "2025-05-15T14:28:16.149Z",
+      "ownerResponse": "We make it a point for all technicians to participate in extra training to make sure the can do the best job and be thorough for all customers. Thank you!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNYXzh2ZkJnEAE!2m1!1s0x0:0xc577e3a210dc8a88!3m1!1s2@1:CIHM0ogKEICAgICX_8vfBg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUR2amVTd2pnRRAB",
+      "reviewer": "Michelle G.",
+      "rating": 5,
+      "text": "They show up on time, every time.  All staff members are kind and considerate.  Very customer service oriented.",
+      "publishedAt": "2024-12-22T19:23:30.170Z",
+      "ownerResponse": "We try our best to take care of our customers and we are glad it shows. Thank you!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR2amVTd2pnRRAB!2m1!1s0x0:0xc577e3a210dc8a88!3m1!1s2@1:CIHM0ogKEICAgIDvjeSwjgE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUN2aTQtc0xREAE",
+      "reviewer": "Linda R.",
+      "rating": 5,
+      "text": "Have used Custom Assured Mechanical since the system was installed in 2011.  Have had nothing but excellent service during this time.  Lance is our guy.  He knows our system and is very thorough with his inspection and cleaning of the system.  He's very personable, conscientious, more like a member of our family.",
+      "publishedAt": "2024-12-14T16:51:16.788Z",
+      "ownerResponse": "Lance offers many years of experience to our service team and provides a vast amount of knowledge to our small business. Thank you!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN2aTQtc0xREAE!2m1!1s0x0:0xc577e3a210dc8a88!3m1!1s2@1:CIHM0ogKEICAgICvi4-sLQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUN2ell2dk9BEAE",
+      "reviewer": "Holly S.",
+      "rating": 5,
+      "text": "Very friendly and courteous! 10/10 Recommend!",
+      "publishedAt": "2024-12-13T14:44:16.823Z",
+      "ownerResponse": "Thank you for your business and review!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN2ell2dk9BEAE!2m1!1s0x0:0xc577e3a210dc8a88!3m1!1s2@1:CIHM0ogKEICAgICvzYvvOA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNucE8zclJ3EAE",
+      "reviewer": "Samantha R.",
+      "rating": 5,
+      "text": "We have used CAM since our house was built. Always friendly. Fully trust them. Kelly is super nice when you call in and makes your feel comfortable like your family on the phone. They try to send the same technicians out every time.",
+      "publishedAt": "2024-11-18T23:55:53.469Z",
+      "ownerResponse": "Thank you! We appreciate your business and if you need anything just let us know!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNucE8zclJ3EAE!2m1!1s0x0:0xc577e3a210dc8a88!3m1!1s2@1:CIHM0ogKEICAgICnpO3rRw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUQzdExIdzR3RRAB",
+      "reviewer": "Karen H.",
+      "rating": 5,
+      "text": "Very friendly and took time to explain issues.  Thank you Logan and Jacob!",
+      "publishedAt": "2024-11-12T16:12:19.246Z",
+      "ownerResponse": "Logan and Jacob really are wonderful technicians. It is great to hear they got everything explained to you!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQzdExIdzR3RRAB!2m1!1s0x0:0xc577e3a210dc8a88!3m1!1s2@1:CIHM0ogKEICAgID3tLHw4wE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUMzMk1LTWxnRRAB",
+      "reviewer": "Toni M.",
+      "rating": 5,
+      "text": "Always helpful and knowledgeable",
+      "publishedAt": "2024-11-02T14:55:40.582Z",
+      "ownerResponse": "Thank you for your business and the positive review!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMzMk1LTWxnRRAB!2m1!1s0x0:0xc577e3a210dc8a88!3m1!1s2@1:CIHM0ogKEICAgIC32MKMlgE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUMzNExUYmJnEAE",
+      "reviewer": "John L.",
+      "rating": 5,
+      "text": "The technicians, in this case Ligan, always do a great job! I would recommend them for any furnace work!",
+      "publishedAt": "2024-11-01T21:04:36.166Z",
+      "ownerResponse": "It is always a pleasure working for you guys. Thank you for supporting our local company!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMzNExUYmJnEAE!2m1!1s0x0:0xc577e3a210dc8a88!3m1!1s2@1:CIHM0ogKEICAgIC34LTbbg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURYa09DQmh3RRAB",
+      "reviewer": "Elizabeth N.",
+      "rating": 5,
+      "text": "Jacob is our favorite technician. He is always professional and on-time to us through every step of his process",
+      "publishedAt": "2024-10-22T23:14:48.911Z",
+      "ownerResponse": "Jacob is a phenomenal technician and it has been great to watch him grow with us throughout the years and pretty much take on the role as head service technician! Thank you for your business!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURYa09DQmh3RRAB!2m1!1s0x0:0xc577e3a210dc8a88!3m1!1s2@1:CIHM0ogKEICAgIDXkOCBhwE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNYNFlqenlBRRAB",
+      "reviewer": "Anne B.",
+      "rating": 5,
+      "text": "I have been using Custom Assured for about 15 years.  I signed up for the yearly service plan and it has totally paid off with twice a year maintenance on heating and air. At one point I had 3 service contracts for home, rental home, and lake cottage.  Lance has been our technician for all these years and he is very knowledgeable! I switched from a large company to this small family run company and never looked back!",
+      "publishedAt": "2024-10-17T12:33:46.462Z",
+      "ownerResponse": "Thank you! We appreciate all the business at the different properties throughout the years!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNYNFlqenlBRRAB!2m1!1s0x0:0xc577e3a210dc8a88!3m1!1s2@1:CIHM0ogKEICAgICX4YjzyAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNYeG9PakVnEAE",
+      "reviewer": "Adam P.",
+      "rating": 5,
+      "text": "CAM has been amazing to work with. We’ve been using them since they installed our system nearly 5 years ago. From scheduling to maintenance & service, every single person at Custom Assured Mechanical has been friendly and helpful. I highly recommend them!",
+      "publishedAt": "2024-10-15T23:33:44.031Z",
+      "ownerResponse": "Thank you for the positive review and 5 stars! Always our pleasure getting to work with you!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNYeG9PakVnEAE!2m1!1s0x0:0xc577e3a210dc8a88!3m1!1s2@1:CIHM0ogKEICAgICXxoOjEg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURuOVBDeEdnEAE",
+      "reviewer": "Amy D.",
+      "rating": 5,
+      "text": "CAM is very professional and efficient.  They arrive in a timely fashion; do great work; answer any questions I have; and are  always very respectful and courteous.",
+      "publishedAt": "2024-10-03T16:08:09.301Z",
+      "ownerResponse": "Thank you for taking time to leave us a positive review!!!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURuOVBDeEdnEAE!2m1!1s0x0:0xc577e3a210dc8a88!3m1!1s2@1:CIHM0ogKEICAgIDn9PCxGg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNubW9IUnZBRRAB",
+      "reviewer": "Scharee Z.",
+      "rating": 5,
+      "text": "I have been with Custom Assured for 22 years, I have been very happy with their service.  They show up twice a year for maintenance, any problems I have had in between they take care of in a timely fashion   Last Winter I discovered at 10pm that my furnace was not working, I called the emergency no. and the tech had just walked in the door from another emergency job, he said he would come out but I told him we would be fine until morning.  He was at my door bright and early and got everything fixed up.  I would recommend them anytime.",
+      "publishedAt": "2024-09-25T04:00:46.721Z",
+      "ownerResponse": "Thank you so much! It has been our pleasure working with you over the years!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNubW9IUnZBRRAB!2m1!1s0x0:0xc577e3a210dc8a88!3m1!1s2@1:CIHM0ogKEICAgICnmoHRvAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURIazdtei1RRRAB",
+      "reviewer": "Mitch M.",
+      "rating": 5,
+      "text": "Top notch staff! They communicate well and do a great job. Always would highly recommend C.A.M.!",
+      "publishedAt": "2024-09-19T14:51:26.155Z",
+      "ownerResponse": "Thank you for the awesome review and recommending us!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURIazdtei1RRRAB!2m1!1s0x0:0xc577e3a210dc8a88!3m1!1s2@1:CIHM0ogKEICAgIDHk7mz-QE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURIcVBmU3lRRRAB",
+      "reviewer": "Mike R.",
+      "rating": 5,
+      "text": "Have had good experiences with Custom Assured. They always show up on time and get the maintenance or repair done in a professional manner. I recommend signing up for their maintenance program so your system is always in tip top shape.",
+      "publishedAt": "2024-09-12T01:24:43.688Z",
+      "ownerResponse": "Thank you for your kind words! Our techs are awesome and do there best to be on-time and thorough!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURIcVBmU3lRRRAB!2m1!1s0x0:0xc577e3a210dc8a88!3m1!1s2@1:CIHM0ogKEICAgIDHqPfSyQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNINV9hbkdREAE",
+      "reviewer": "Josh W.",
+      "rating": 5,
+      "text": "Great service and easy to work with. Professional and quick to fix issues.",
+      "publishedAt": "2024-09-09T19:30:23.869Z",
+      "ownerResponse": "Thank you for your positive review and for allowing us to take care of you heating and cooling needs!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNINV9hbkdREAE!2m1!1s0x0:0xc577e3a210dc8a88!3m1!1s2@1:CIHM0ogKEICAgICH5_anGQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNIaC1XS1VnEAE",
+      "reviewer": "Andrew E.",
+      "rating": 5,
+      "text": "Great company to work with for my heating and cooling needs. I love the twice a year tune up! I would recommend them to anyone looking for an a/c or furnace company.",
+      "publishedAt": "2024-09-09T14:16:46.988Z",
+      "ownerResponse": "We appreciate the positive feedback and happy we can keep your equipment running well! Thank you!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNIaC1XS1VnEAE!2m1!1s0x0:0xc577e3a210dc8a88!3m1!1s2@1:CIHM0ogKEICAgICHh-WKUg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNIbVpXczR3RRAB",
+      "reviewer": "Susan M.",
+      "rating": 5,
+      "text": "I highly recommend Custom Assured Mechanical. We have been using them for almost 9 years and have found them to be dependable, friendly, reasonably priced, and very friendly. They treat you like family. We have them come out twice a year to keep our air and furnace running efficiently. I never have to worry about calling them to schedule as they contact me. A nice company to do business with!",
+      "publishedAt": "2024-09-06T13:35:59.985Z",
+      "ownerResponse": "Thank you so much for a great review!! Being a small local business gives us the opportunity to serve our customers in the ways you have pointed out above!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNIbVpXczR3RRAB!2m1!1s0x0:0xc577e3a210dc8a88!3m1!1s2@1:CIHM0ogKEICAgICHmZWs4wE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNINFpPUWhnRRAB",
+      "reviewer": "Dennis G.",
+      "rating": 5,
+      "text": "Always on time, always courteous, always professional and always reasonably priced.  I am very satisfied with their service pricing.  I forgot to mention that they DID NOT raise their annual fees for their annual priority club agreement heating and cooling service.  They are about the only service that hasn't raised pricing.  Thank you!",
+      "publishedAt": "2024-09-05T21:01:34.377Z",
+      "ownerResponse": "Thank you so much for the kind words! We try to offer the best balance of high quality work done at a fair price!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNINFpPUWhnRRAB!2m1!1s0x0:0xc577e3a210dc8a88!3m1!1s2@1:CIHM0ogKEICAgICH4ZOQhgE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNINFpyUDd3RRAB",
+      "reviewer": "Fred K.",
+      "rating": 5,
+      "text": "We have used Custom Assured Mechanical since we moved to this area. Almost Four years ago. Service has been great. They come twice a year and inspect the equipment and clean the drains, answer our questions and replace the air filter.  We could not be happier with their service.",
+      "publishedAt": "2024-09-05T19:48:04.945Z",
+      "ownerResponse": "Thank you! We always love when customers ask questions and we get a chance to answer/chat with them!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNINFpyUDd3RRAB!2m1!1s0x0:0xc577e3a210dc8a88!3m1!1s2@1:CIHM0ogKEICAgICH4ZrP7wE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNINlB1cUV3EAE",
+      "reviewer": "Donita F.",
+      "rating": 5,
+      "text": "Everything was quoted and installed as promise. We really appreciate Lance.",
+      "publishedAt": "2024-08-31T18:16:19.580Z",
+      "ownerResponse": "Thank you! Lance is AWESOME! It is wonderful how homeowners get to work with him from the initial quote, to the install, and even service down the road.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNINlB1cUV3EAE!2m1!1s0x0:0xc577e3a210dc8a88!3m1!1s2@1:CIHM0ogKEICAgICH6PuqEw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURMcVl5OUVnEAE",
+      "reviewer": "Lee",
+      "rating": 5,
+      "text": "Always a great job with friendly and knowledgeable technicians.",
+      "publishedAt": "2024-06-28T18:03:20.922Z",
+      "ownerResponse": "Thank you! Being small with only a few technicians allows to have what we think are the BEST techs around!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURMcVl5OUVnEAE!2m1!1s0x0:0xc577e3a210dc8a88!3m1!1s2@1:CIHM0ogKEICAgIDLqYy9Eg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNMMlpidFFREAE",
+      "reviewer": "Ken M.",
+      "rating": 5,
+      "text": "I have been a customer for well over 10 years built two homes and a pole barn would not call anyone else they are just like dealing with family. Very knowledgeable,professional, and friendly staff. Their expertise has been a tremendous help with our last two homes both with HVAC design as well as our maintenence.Great job guys. We are customers for life.<br><br>The Mills Family",
+      "publishedAt": "2024-06-21T07:31:37.167Z",
+      "ownerResponse": "We can't thank you enough and are happy we have gotten to work with you guys on many different projects. Looking forward to the continued maintenance and anything else we can do for you. Once again, Thank You!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNMMlpidFFREAE!2m1!1s0x0:0xc577e3a210dc8a88!3m1!1s2@1:CIHM0ogKEICAgICL2ZbtQQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNMNlpUU2pBRRAB",
+      "reviewer": "Ann H.",
+      "rating": 5,
+      "text": "I have been a very satisfied customer of Custom Assured Mechanical Inc for years.  I appreciate how honest and trustworthy they are. I have referred family and friends without hesitation. With every visit they make to service my units, it highly exceeds my expectations. If you are looking to make a change I highly recommend Custom Assured Mechanical Inc.",
+      "publishedAt": "2024-06-21T02:10:17.235Z",
+      "ownerResponse": "It is great feedback to hear we exceed your expectations. Thank you for your business!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNMNlpUU2pBRRAB!2m1!1s0x0:0xc577e3a210dc8a88!3m1!1s2@1:CIHM0ogKEICAgICL6ZTSjAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNMNXR6TzlRRRAB",
+      "reviewer": "Amy K.",
+      "rating": 5,
+      "text": "We have used Custom Assured Mechanical for the last 12 years.  We are incredibly happy with the friendly, knowledgeable service.  Highly recommend.",
+      "publishedAt": "2024-06-18T18:42:24.114Z",
+      "ownerResponse": "Working with you and your family has been awesome. Thank you for your continued support!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNMNXR6TzlRRRAB!2m1!1s0x0:0xc577e3a210dc8a88!3m1!1s2@1:CIHM0ogKEICAgICL5tzO9QE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUR6ci1QU1N3EAE",
+      "reviewer": "Joanne U.",
+      "rating": 5,
+      "text": "Very good company to work with and they do a great job keeping the a/c and heater all inspected and running well twice a year.",
+      "publishedAt": "2024-06-13T13:54:09.341Z",
+      "ownerResponse": "Thank you for the kind words about our company! We try our best to keep customers happy.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR6ci1QU1N3EAE!2m1!1s0x0:0xc577e3a210dc8a88!3m1!1s2@1:CIHM0ogKEICAgIDzr-PSSw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUN6eC12ekt3EAE",
+      "reviewer": "Lisa B.",
+      "rating": 5,
+      "text": "Very friendly and knowledgeable family run business. They are personable and dependable. Highly recommend.",
+      "publishedAt": "2024-06-05T20:18:54.526Z",
+      "ownerResponse": "As a family run business we owe it to our wonderful customers we get to work with on a daily basis. Thank you for putting your trust in us!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN6eC12ekt3EAE!2m1!1s0x0:0xc577e3a210dc8a88!3m1!1s2@1:CIHM0ogKEICAgICzx-vzKw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUN6azd2c0pnEAE",
+      "reviewer": "Bob D.",
+      "rating": 5,
+      "text": "Installed New HVAC at our home 22 years ago, great maintenance & service since! Kudos to Casey & Logan who we met today!",
+      "publishedAt": "2024-06-04T19:04:32.239Z",
+      "ownerResponse": "It has been wonderful working with you throughout all these years and we are grateful for the trust you have put in us. Thank you!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN6azd2c0pnEAE!2m1!1s0x0:0xc577e3a210dc8a88!3m1!1s2@1:CIHM0ogKEICAgICzk7vsJg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUN6dU51dzJ3RRAB",
+      "reviewer": "Kari M.",
+      "rating": 5,
+      "text": "Lance and Dave did a great job replacing our furnace.  Conscience and considerate! Thank you Gentlemen.",
+      "publishedAt": "2024-05-30T18:40:12.278Z",
+      "ownerResponse": "Lance and Dave work very well together and do a excellent job at taking care of our customers. Thank you for a positive review!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN6dU51dzJ3RRAB!2m1!1s0x0:0xc577e3a210dc8a88!3m1!1s2@1:CIHM0ogKEICAgICzuNuw2wE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURUXzc2MlR3EAE",
+      "reviewer": "Beth D.",
+      "rating": 5,
+      "text": "Custom Assured Mechanical has taken wonderful care of us for the last 14 years.  Julie is a joy to talk with in the office.  When we have an issue she gets us scheduled for service quickly and we look forward to getting our regular service scheduled as well.  Jacob does a thorough job when he’s here.  He is very courteous, always on time and takes care of our property.  He answers any questions we have.",
+      "publishedAt": "2024-05-29T15:21:02.459Z",
+      "ownerResponse": "Jacob is a wonderful technician and your guys are great to work for. Thank you for your continued support!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURUXzc2MlR3EAE!2m1!1s0x0:0xc577e3a210dc8a88!3m1!1s2@1:CIHM0ogKEICAgIDT_762Tw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURUNDhleU1BEAE",
+      "reviewer": "Kathy S.",
+      "rating": 5,
+      "text": "Professional business! Extremely informative with our furnace and A/C replacement.",
+      "publishedAt": "2024-05-27T11:33:25.084Z",
+      "ownerResponse": "We can't thank you enough for your support! If you have any questions just reach out.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURUNDhleU1BEAE!2m1!1s0x0:0xc577e3a210dc8a88!3m1!1s2@1:CIHM0ogKEICAgIDT48eyMA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNUbWJEblJREAE",
+      "reviewer": "Steve L.",
+      "rating": 5,
+      "text": "Custom Assured Mechanical is very reliable and always there when I need them. I would highly recommend them !  Very reasonably priced for regular maintenance as well.",
+      "publishedAt": "2024-05-16T14:49:06.459Z",
+      "ownerResponse": "Thank you for allowing us to earn your business!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNUbWJEblJREAE!2m1!1s0x0:0xc577e3a210dc8a88!3m1!1s2@1:CIHM0ogKEICAgICTmbDnRQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURqMTVUeEpnEAE",
+      "reviewer": "Jed.12 D.",
+      "rating": 5,
+      "text": "Great company with efficient knowledgeable employees",
+      "publishedAt": "2024-05-08T14:09:27.610Z",
+      "ownerResponse": "We always push continued education with our employees to we can offer the BEST to our customers. We appreciate the positive feedback on this!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURqMTVUeEpnEAE!2m1!1s0x0:0xc577e3a210dc8a88!3m1!1s2@1:CIHM0ogKEICAgIDj15TxJg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURqdzlfTWNREAE",
+      "reviewer": "Montana S.",
+      "rating": 5,
+      "text": "Our previous home owners told us about CAM. They installed our new furnace & air conditioner! We have been using them for about 3 years and will continue to do so. We have them come out twice a year before each item gets turned on. They are very dependable, family friendly, and actually take the time to explain and walk through each step with you. If you’re looking, I highly recommend!!",
+      "publishedAt": "2024-05-07T01:02:40.004Z",
+      "ownerResponse": "We still work with your previous homeowner and are honored we get to continue to work to with you at your new home as well. Thank you for putting your trust in us!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURqdzlfTWNREAE!2m1!1s0x0:0xc577e3a210dc8a88!3m1!1s2@1:CIHM0ogKEICAgIDjw9_McQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURqbnN1Wld3EAE",
+      "reviewer": "Mike W.",
+      "rating": 5,
+      "text": "Great staff from office personnel to technicians.  Great products and service from start to finish.",
+      "publishedAt": "2024-05-03T14:58:30.357Z",
+      "ownerResponse": "Around here we also believe we have the best team and we are proud of each of them. Thank you for your continued support!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURqbnN1Wld3EAE!2m1!1s0x0:0xc577e3a210dc8a88!3m1!1s2@1:CIHM0ogKEICAgIDjnsuZWw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURqaXJxRUpnEAE",
+      "reviewer": "Gina W.",
+      "rating": 5,
+      "text": "We have been using Custom Assured Mechanical for 7 years now.  They call us when it is time to service our furnace and A/C.   It is easy to get an appointment and the technician is always prompt and on time.  In fact, I believe we have had the same technician for the entire 7 years.  He is focused on our service and does a great job.  It is great to have someone who you familiar with and can trust!",
+      "publishedAt": "2024-05-01T14:42:23.742Z",
+      "ownerResponse": "As a small business we try our best as we get positive feedback from customers working with the same techs. Thank you for your business!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURqaXJxRUpnEAE!2m1!1s0x0:0xc577e3a210dc8a88!3m1!1s2@1:CIHM0ogKEICAgIDjirqEJg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNqNGVIeVRnEAE",
+      "reviewer": "Susan R.",
+      "rating": 5,
+      "text": "Excellent and friendly service. Highly recommend.",
+      "publishedAt": "2024-04-22T17:02:25.403Z",
+      "ownerResponse": "I have to give credit where it is due and our service department does great!  From the friendly voice on the phone to our excellent technicians that show up on site to resolve any issues. Thank you for letting us serve you.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNqNGVIeVRnEAE!2m1!1s0x0:0xc577e3a210dc8a88!3m1!1s2@1:CIHM0ogKEICAgICj4eHyTg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNqaXI2LTlnRRAB",
+      "reviewer": "Patricia L.",
+      "rating": 5,
+      "text": "Custom Assured Mechanical are wonderful to deal with. People there are so friendly. Been with them for 20 years and wouldn't change a thing. Thank you Custom Assured for always taking care of us!",
+      "publishedAt": "2024-04-19T23:22:19.205Z",
+      "ownerResponse": "Thank you for trusting us take care of you! A great relationship has developed over 20 years and I am glad we continue to let it grow.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNqaXI2LTlnRRAB!2m1!1s0x0:0xc577e3a210dc8a88!3m1!1s2@1:CIHM0ogKEICAgICjir6-9gE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNqbU8zWU5BEAE",
+      "reviewer": "Gerry C.",
+      "rating": 5,
+      "text": "We have had Custom Assured Mechanical for several years. We have our furnace located in a crawlspace which makes it difficult to get to and work on. When the furnace needs attention, they go right to work and continue to provide the best service we have ever had. If there were more stars, I would give them more.",
+      "publishedAt": "2024-04-17T15:10:58.900Z",
+      "ownerResponse": "Your words are so kind! We are so thankful for customers like you!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNqbU8zWU5BEAE!2m1!1s0x0:0xc577e3a210dc8a88!3m1!1s2@1:CIHM0ogKEICAgICjmO3YNA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUREdTY3YXNRRRAB",
+      "reviewer": "Marie J.",
+      "rating": 5,
+      "text": "Custom Assured has been our HVAC provider since 2010. We have been very happy with their service and the technicians are very friendly.",
+      "publishedAt": "2024-04-14T18:43:30.944Z",
+      "ownerResponse": "Thank you!! In the last 15 years working with you we have had a few retirements and few new faces so it is good to hear we are keeping the same great service you expect!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUREdTY3YXNRRRAB!2m1!1s0x0:0xc577e3a210dc8a88!3m1!1s2@1:CIHM0ogKEICAgIDDu67asQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURENF92ZDd3RRAB",
+      "reviewer": "Rita H.",
+      "rating": 5,
+      "text": "I was referred to C.A.M by a friend who also uses their annual service/maintenance plan. Little did I know I would end up needing a new HVAC system as well. They are a prompt, professional, honest and highly skilled company which seems rare anymore. I will never use anyone else and would highly recommend them to others as well.",
+      "publishedAt": "2024-04-13T19:43:05.040Z",
+      "ownerResponse": "It has been our pleasure to make sure you have a safe and dependable unit! We appreciate the chance to work with you.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURENF92ZDd3RRAB!2m1!1s0x0:0xc577e3a210dc8a88!3m1!1s2@1:CIHM0ogKEICAgIDD4_vd7wE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURCbS02ZnF3RRAB",
+      "reviewer": "Angela S.",
+      "rating": 5,
+      "text": "Lance is our service tech and has been for several years.  He takes good care of our furnace and HVAC answers all our questions. He is prompt arriving and is very friendly.  Thanks Lance.",
+      "publishedAt": "2024-04-12T14:59:52.156Z",
+      "ownerResponse": "Thank you for the positive review!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURCbS02ZnF3RRAB!2m1!1s0x0:0xc577e3a210dc8a88!3m1!1s2@1:CIHM0ogKEICAgIDBm-6fqwE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUREMWFLWGRREAE",
+      "reviewer": "Michelle A.",
+      "rating": 5,
+      "text": "We have used CAM for years and will continue to do so!  We get bi annual cleaning/check ups on our furnace and air conditioner.   Excellent, highly efficient, friendly, timely and respectful staff!!!  The staff treats you like family/friends instead of another number. Highly recommend!",
+      "publishedAt": "2024-04-12T12:02:38.860Z",
+      "ownerResponse": "You guys have been wonderful to work with! Thank you for your continued trust in us!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUREMWFLWGRREAE!2m1!1s0x0:0xc577e3a210dc8a88!3m1!1s2@1:CIHM0ogKEICAgIDD1aKXdQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUREaGNfbjdnRRAB",
+      "reviewer": "Bill L.",
+      "rating": 5,
+      "text": "Custom Assured Mechanical is very reliable and always there when I need them. I would highly recommend them to any family and friends. Very reasonably priced for regular maintenance.",
+      "publishedAt": "2024-04-11T23:58:47.646Z",
+      "ownerResponse": "Thank you for your time to leave a positive review and rating. It has always been a pleasure working with you!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUREaGNfbjdnRRAB!2m1!1s0x0:0xc577e3a210dc8a88!3m1!1s2@1:CIHM0ogKEICAgIDDhc_n7gE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURELWFtVU9BEAE",
+      "reviewer": "Frederick H.",
+      "rating": 5,
+      "text": "Custom Assured Mechanical improved the distribution of heat and air conditioning in our house and provides prompt, dependable and thorough annual maintenance of our furnace, air conditioner and humidifier.  Therefore, we highly recommend them.",
+      "publishedAt": "2024-04-11T19:32:52.841Z",
+      "ownerResponse": "We are happy to help and glad we could help you out with your issues! Maintenance is key for longevity and dependability of your unit.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURELWFtVU9BEAE!2m1!1s0x0:0xc577e3a210dc8a88!3m1!1s2@1:CIHM0ogKEICAgIDD-amUOA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURELVpIRHVBRRAB",
+      "reviewer": "S B.",
+      "rating": 5,
+      "text": "CAM installed our HVAC system in our newly built home and did a fantastic job!   Very professional and friendly people to work with.",
+      "publishedAt": "2024-04-11T19:23:50.048Z",
+      "ownerResponse": "We are grateful for the review and rating! I hope you continue to enjoy your new home that we got a chance to take part of building!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURELVpIRHVBRRAB!2m1!1s0x0:0xc577e3a210dc8a88!3m1!1s2@1:CIHM0ogKEICAgIDD-ZHDuAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURELWNhMjFBRRAB",
+      "reviewer": "Tom F.",
+      "rating": 5,
+      "text": "These guys are legit, and they got the job done fast!!",
+      "publishedAt": "2024-04-11T19:02:50.073Z",
+      "ownerResponse": "Appreciate you trusting us with the comfort of your home and the opportunity to instill a complete furnace, a/c, and ducting system!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURELWNhMjFBRRAB!2m1!1s0x0:0xc577e3a210dc8a88!3m1!1s2@1:CIHM0ogKEICAgIDD-ca21AE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUREbVlmUTR3RRAB",
+      "reviewer": "Roger M.",
+      "rating": 5,
+      "text": "CAM has been my HVAC company for my business and home, for many years.  They do an excellent job at a reasonable price and I will continue to use them for many more years.",
+      "publishedAt": "2024-04-11T13:43:32.342Z",
+      "ownerResponse": "Thank you allowing us to keep your home and business HVAC units in great working shape throughout all the years!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUREbVlmUTR3RRAB!2m1!1s0x0:0xc577e3a210dc8a88!3m1!1s2@1:CIHM0ogKEICAgIDDmYfQ4wE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUREMGJpVE93EAE",
+      "reviewer": "MauiMauMau",
+      "rating": 5,
+      "text": "Great and friendly customer service.  Used them for 7 years now and have always had excellent service.",
+      "publishedAt": "2024-04-10T20:52:23.638Z",
+      "ownerResponse": "Thank you for your kind words! We try our best to keep the process easy for our customers while providing top notch service!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUREMGJpVE93EAE!2m1!1s0x0:0xc577e3a210dc8a88!3m1!1s2@1:CIHM0ogKEICAgIDD0biTOw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUREa2NDbEZ3EAE",
+      "reviewer": "Sharon S.",
+      "rating": 5,
+      "text": "I have my furnace and air conditioner serviced every year and they are always prompt and friendly.  They are very efficient on servicing my items.  I  wouldn't trust anyone else!!!!!",
+      "publishedAt": "2024-04-10T18:05:28.835Z",
+      "ownerResponse": "Thank you for taking time to rate us and leave a review! We, as a team, try our best to give everyone the best service we can!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUREa2NDbEZ3EAE!2m1!1s0x0:0xc577e3a210dc8a88!3m1!1s2@1:CIHM0ogKEICAgIDDkcClFw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNkbk5EZmJ3EAE",
+      "reviewer": "Amy K.",
+      "rating": 5,
+      "text": "Such a nice crew. Made sure everything was perfect for us. Would recommend to anyone!",
+      "publishedAt": "2024-02-13T15:55:49.349Z",
+      "ownerResponse": "We appreciate your business at your home! Your family has always been great to work with!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNkbk5EZmJ3EAE!2m1!1s0x0:0xc577e3a210dc8a88!3m1!1s2@1:CIHM0ogKEICAgICdnNDfbw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNOaUs2NTNnRRAB",
+      "reviewer": "Brandy M.",
+      "rating": 5,
+      "text": "Excellent service every time.",
+      "publishedAt": "2024-01-11T15:31:34.499Z",
+      "ownerResponse": "We try our best, thank you so much for your support!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNOaUs2NTNnRRAB!2m1!1s0x0:0xc577e3a210dc8a88!3m1!1s2@1:CIHM0ogKEICAgICNiK653gE%7C%7C?hl=en-US",
+      "language": "en"
+    }
+  ],
+  "ratingOnly": [
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2t0WU1YcHphWFpmUTNSMVEwbHRZM1JyUlhoblVVRRAB",
+      "reviewer": "Larry R.",
+      "rating": 5,
+      "publishedAt": "2026-10-27T15:40:26.542Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pJeFpXbzVNVEV5UjAxVFF6ZE9PVVZyUlVwWlFYYxAB",
+      "reviewer": "Hope S.",
+      "rating": 5,
+      "publishedAt": "2025-07-03T00:53:44.216Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNuaDREV05BEAE",
+      "reviewer": "Nancy H.",
+      "rating": 5,
+      "publishedAt": "2024-09-30T13:39:00.914Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURIbnVQRS1RRRAB",
+      "reviewer": "Roger D.",
+      "rating": 5,
+      "publishedAt": "2024-09-16T09:55:16.228Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNIaTliM3BBRRAB",
+      "reviewer": "John B.",
+      "rating": 5,
+      "publishedAt": "2024-09-08T19:44:02.539Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURydmFlVjRBRRAB",
+      "reviewer": "David M.",
+      "rating": 5,
+      "publishedAt": "2024-07-19T13:24:10.677Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNMeWFYTFVnEAE",
+      "reviewer": "Carrie M.",
+      "rating": 5,
+      "publishedAt": "2024-06-20T19:14:59.615Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNqckpqT3hBRRAB",
+      "reviewer": "Michelle S.",
+      "rating": 5,
+      "publishedAt": "2024-04-18T14:52:10.054Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURELWZIRm1RRRAB",
+      "reviewer": "Olivia C.",
+      "rating": 5,
+      "publishedAt": "2024-04-11T19:27:11.237Z"
+    }
+  ]
+}

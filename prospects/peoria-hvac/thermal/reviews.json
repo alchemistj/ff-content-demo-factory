@@ -1,0 +1,510 @@
+{
+  "kind": "google-review-pull",
+  "version": 1,
+  "slug": "thermal-peoria",
+  "place": {
+    "name": "Thermal Services, Inc. (TSI)",
+    "placeId": "ChIJSVg4Ir9dCogRQ_1JZJKPeGs",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Thermal%20Services%2C%20Inc.%20(TSI)&query_place_id=ChIJSVg4Ir9dCogRQ_1JZJKPeGs",
+    "address": "2200 W Altorfer Dr Ste D1, Peoria, IL 61615",
+    "phone": "(309) 699-3333",
+    "rating": 4.9,
+    "totalReviewCount": 51
+  },
+  "pulledAt": "2026-11-15T03:28:20.111Z",
+  "requestedMax": 75,
+  "reviews": [
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2sxWU1XNTRhREIxY0V4SVEwMVNPRTVyYkVKRVgyYxAB",
+      "reviewer": "Scott B.",
+      "rating": 5,
+      "text": "Very professional and are efficient and knowledgeable!  Extremely pleased with the service and highly recommend to friends!!!",
+      "publishedAt": "2026-09-18T19:33:02.334Z",
+      "ownerResponse": "Thank you so much for the 5-star review! ⭐ We’re thrilled to hear you were pleased with our service and found our team professional, efficient, and knowledgeable. Your recommendation to friends means a lot to us. Thank you for choosing TSI—we’re always here when you need us!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2sxWU1XNTRhREIxY0V4SVEwMVNPRTVyYkVKRVgyYxAB!2m1!1s0x0:0x6b788f926449fd43!3m1!1s2@1:CAIQACodChtycF9oOk1YMW54aDB1cExIQ01SOE5rbEJEX2c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21JeWJrRXdVSEIyTUdWSldqaDBjMHA1V1U5YWNuYxAB",
+      "reviewer": "Marian L.",
+      "rating": 5,
+      "text": "Great job",
+      "publishedAt": "2026-04-28T17:45:10.717Z",
+      "ownerResponse": "Thank you for the 5-star review! ⭐ We appreciate the kind words and are glad you were happy with our work. Thank you for choosing TSI!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21JeWJrRXdVSEIyTUdWSldqaDBjMHA1V1U5YWNuYxAB!2m1!1s0x0:0x6b788f926449fd43!3m1!1s2@1:CAIQACodChtycF9oOmIybkEwUHB2MGVJWjh0c0p5WU9acnc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25seFluVklkWEpaVmpONGFUWmljbkY1Um0xU2JFRRAB",
+      "reviewer": "Chris C.",
+      "rating": 5,
+      "text": "Quick reliable and very easy and friendly to work with",
+      "publishedAt": "2026-04-11T15:09:41.671Z",
+      "ownerResponse": "Thank you for the 5-star review! ⭐ We’re so glad to hear you found our team quick, reliable, and easy to work with. Providing friendly, hassle-free service is always our goal. We appreciate your support and are here whenever you need us!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25seFluVklkWEpaVmpONGFUWmljbkY1Um0xU2JFRRAB!2m1!1s0x0:0x6b788f926449fd43!3m1!1s2@1:CAIQACodChtycF9oOnlxYnVIdXJZVjN4aTZicnF5Rm1SbEE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25wQ1VFeHVXVkZyYnpNek1XNVFNM290U2paTU5sRRAB",
+      "reviewer": "Maggie D.",
+      "rating": 5,
+      "text": "Luke is the number one guy to call when in a pinch for some furnace fixins!",
+      "publishedAt": "2026-03-14T03:32:38.291Z",
+      "ownerResponse": "Thank you for the awesome 5-star review! ⭐ We love hearing this—Luke will definitely appreciate the shoutout! He’s always ready to jump in and help when it matters most. Thanks for trusting TSI, and don’t hesitate to reach out anytime you need us!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25wQ1VFeHVXVkZyYnpNek1XNVFNM290U2paTU5sRRAB!2m1!1s0x0:0x6b788f926449fd43!3m1!1s2@1:CAIQACodChtycF9oOnpCUExuWVFrbzMzMW5QM3otSjZMNlE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2s1T1QyWlJlRXhwVTIxWloweHJjbTFuZG10QlkzYxAB",
+      "reviewer": "Tim W.",
+      "rating": 5,
+      "text": "I’ve never had an HVAC company send someone as knowledgeable, quick, clean-cut, and kind as Luke Murphy!  He’s a 10/10 of HVAC.",
+      "publishedAt": "2026-03-14T01:09:11.379Z",
+      "ownerResponse": "Thank you for the amazing 5-star review! ⭐ We couldn’t agree more—Luke is a fantastic part of our team, and we’re glad his knowledge, professionalism, and attention to detail stood out to you. We’ll be sure to pass along your kind words to him. We truly appreciate your support and are always here whenever you need us!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2s1T1QyWlJlRXhwVTIxWloweHJjbTFuZG10QlkzYxAB!2m1!1s0x0:0x6b788f926449fd43!3m1!1s2@1:CAIQACodChtycF9oOk5OT2ZReExpU21ZZ0xrcm1ndmtBY3c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21sS1NtUTNZV2RwVWxaTWJVcHFjbU5OU21wblpWRRAB",
+      "reviewer": "Melissa G.",
+      "rating": 5,
+      "text": "Luke was ABSOLUTELY AMAZING!!! He helped us and even checked back in after the fact!!!",
+      "publishedAt": "2026-03-12T22:23:33.027Z",
+      "ownerResponse": "Thank you so much for the 5-star review! ⭐ We love hearing this—Luke will be thrilled to know he made such a great impression. Providing excellent service and following up with our customers is something we take pride in. We truly appreciate your kind words and are always here if you need us!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21sS1NtUTNZV2RwVWxaTWJVcHFjbU5OU21wblpWRRAB!2m1!1s0x0:0x6b788f926449fd43!3m1!1s2@1:CAIQACodChtycF9oOmlKSmQ3YWdpUlZMbUpqcmNNSmpnZVE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21wa1dFNWtaRFoxTkZWWVRHMTRiVWhyZVZwaVJuYxAB",
+      "reviewer": "Ryan J.",
+      "rating": 5,
+      "text": "Been working with this crew for years and they always do a great job getting things taken care of or making it right if they need to. Great company to do business with!",
+      "publishedAt": "2026-02-27T17:54:10.642Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21wa1dFNWtaRFoxTkZWWVRHMTRiVWhyZVZwaVJuYxAB!2m1!1s0x0:0x6b788f926449fd43!3m1!1s2@1:CAIQACodChtycF9oOmpkWE5kZDZ1NFVYTG14bUhreVpiRnc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21SWVVURlZSRkZwT1ZCcWEyOUtUMXBDYVVVdGFGRRAB",
+      "reviewer": "Reflex",
+      "rating": 5,
+      "text": "Very prompt response, on time and quality work would def recommend to any of my friends and family thank you guys for everything you do, had a bad heat exchanger when the heat exchanger came in mind you this takes some skill and hard work one guy came in the morning about 4 degree weather had it in before noon and working we were impressed because we know what it takes to do something like that it’s not easy most company’s will say you need a new unit.",
+      "publishedAt": "2026-02-23T19:21:30.028Z",
+      "ownerResponse": "Thank you so much for the 5-star review and for sharing your experience! ⭐ We’re really glad our team could respond quickly, show up on time, and get the job done right—especially in such cold conditions. Replacing a heat exchanger is no small task, and we’re proud our technician was able to get you back up and running so efficiently. We truly appreciate your recognition of the hard work involved and your recommendation to friends and family. Thanks again for trusting TSI—we’re always here when you need us!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21SWVVURlZSRkZwT1ZCcWEyOUtUMXBDYVVVdGFGRRAB!2m1!1s0x0:0x6b788f926449fd43!3m1!1s2@1:CAIQACodChtycF9oOmRYUTFVRFFpOVBqa29KT1pCaUUtaFE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xnNFNXTXpWWEpRTmpaQllrSXdTa3hrZEhCc1ptYxAB",
+      "reviewer": "Chris J.",
+      "rating": 5,
+      "text": "I’ve used TSI for routine repairs/inspection of my furnace.  Heath is extremely knowledgeable and pricing is very fair.  Because of the service they’ve provided me, they were the first ones I called when my parents furnace went out in the middle of the winter.  I’m extremely thankful for how quickly Heath responded in this emergency.",
+      "publishedAt": "2026-02-21T16:34:03.693Z",
+      "ownerResponse": "Chris, thank you so much for the 5-star review! ⭐ We truly appreciate you trusting TSI for your routine furnace service and for thinking of us during such an important emergency for your parents. Heath will be grateful to hear your kind words—his knowledge and quick response are something we’re very proud of. Thank you for your continued confidence in our team, and please don’t hesitate to reach out whenever you need us!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xnNFNXTXpWWEpRTmpaQllrSXdTa3hrZEhCc1ptYxAB!2m1!1s0x0:0x6b788f926449fd43!3m1!1s2@1:CAIQACodChtycF9oOlg4SWMzVXJQNjZBYkIwSkxkdHBsZmc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21sdlZFOVFkR2RKTFVoMk1HWllVMDlQWDJwTFMyYxAB",
+      "reviewer": "Drew B.",
+      "rating": 5,
+      "text": "Had issues with my geothermal unit not turning on and freezing up.  Called TSI and had someone out immediately.  Excellent customer service, very polite and respectful.  Diagnosed bad compressor and defective sensor.  Ordered parts and installed as soon as they were available.  Got everything dialed in and back up and running quickly.  Excellent workmanship, left no trash, and cleaned up after themselves.  I will definitely continue to use this company in the future!  Bills were mailed promptly and were very reasonable.  Great company and employees!",
+      "publishedAt": "2026-02-21T15:12:42.955Z",
+      "ownerResponse": "Thank you so much for the detailed 5-star review! ⭐ We’re really glad we could respond quickly, diagnose the issue with your geothermal system, and get everything back up and running as smoothly as possible. Hearing that our team’s professionalism, workmanship, cleanliness, and communication stood out truly means a lot to us. We also appreciate your kind words about our pricing and billing process. Thank you for your trust and loyalty—we look forward to continuing to take care of you in the future!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21sdlZFOVFkR2RKTFVoMk1HWllVMDlQWDJwTFMyYxAB!2m1!1s0x0:0x6b788f926449fd43!3m1!1s2@1:CAIQACodChtycF9oOmlvVE9QdGdJLUh2MGZYU09PX2pLS2c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tkNFpHOVViM1kxYWsxMk5WVnBkRmRGTjFCM1dsRRAB",
+      "reviewer": "Todd H.",
+      "rating": 5,
+      "text": "Have used them for work and home.Great response time in emergency stiuations and great pricing on eqipment and service. Over all great people to deal with would highly recommend.",
+      "publishedAt": "2026-02-21T04:13:32.570Z",
+      "ownerResponse": "Thank you for the 5-star review, Todd! ⭐ We truly appreciate you trusting us for both your work and home needs. We’re glad our response time, pricing, and service made a positive impression. Your recommendation means a lot to our team, and we’re grateful for the opportunity to continue working with you whenever you need us!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tkNFpHOVViM1kxYWsxMk5WVnBkRmRGTjFCM1dsRRAB!2m1!1s0x0:0x6b788f926449fd43!3m1!1s2@1:CAIQACodChtycF9oOkd4ZG9Ub3Y1ak12NVVpdFdFN1B3WlE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tFM2FGWkJWR0pwWkhWdGRWYzBVbEkxT1hsMlkxRRAB",
+      "reviewer": "Ian B.",
+      "rating": 5,
+      "text": "I had a great experience with TSI! From start to finish, their team was friendly, professional, and genuinely respectful of my time. They showed up when they said they would, worked efficiently, and took the time to clearly explain what was going on with my HVAC system.<br><br>What I appreciated most was their honesty. They didn’t try to upsell me on anything I didn’t need and were very conscientious about my budget. It’s clear they care about doing the job right and making sure their customers understand their options.<br><br>Their knowledge and expertise really stood out, and I felt confident in the work being done. I recommend them to anyone in need!",
+      "publishedAt": "2026-02-21T03:13:21.824Z",
+      "ownerResponse": "Thank you so much for taking the time to leave such a thoughtful 5-star review! ⭐ We’re thrilled to hear you had a great experience from start to finish and that our team’s professionalism, honesty, and respect for your time stood out. Being transparent, budget-conscious, and making sure our customers fully understand their options is extremely important to us, so your feedback truly means a lot. We appreciate your trust and recommendation, and we’re always here whenever you need us!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tFM2FGWkJWR0pwWkhWdGRWYzBVbEkxT1hsMlkxRRAB!2m1!1s0x0:0x6b788f926449fd43!3m1!1s2@1:CAIQACodChtycF9oOkE3aFZBVGJpZHVtdVc0UlI1OXl2Y1E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2w4eU5WWTFhR05TZVdaemFteDNZMlF0VmxWR1VVRRAB",
+      "reviewer": "Rufus J.",
+      "rating": 5,
+      "text": "A great all around group of people! They really go above and beyond for their clients! I have definitely recommended them when I’ve seen a need.",
+      "publishedAt": "2026-02-21T02:57:27.949Z",
+      "ownerResponse": "Thank you for the wonderful 5-star review, Rufus! ⭐ We truly appreciate your kind words about our team and are grateful for your recommendations—it means the world to us. Going above and beyond for our clients is always our goal, and we’re thankful for your long-standing trust and support. We’re always here whenever you need us!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2w4eU5WWTFhR05TZVdaemFteDNZMlF0VmxWR1VVRRAB!2m1!1s0x0:0x6b788f926449fd43!3m1!1s2@1:CAIQACodChtycF9oOl8yNVY1aGNSeWZzamx3Y2QtVlVGUUE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tGSlpWVnJOWGRRVUdoRlNVVmFNWEJJUkhKeVpsRRAB",
+      "reviewer": "Jesse B.",
+      "rating": 5,
+      "text": "The service was beyond exceptional. All my needs and worries were met and answered.  Extremely kind and professional workers. This is my new heating and air go to!",
+      "publishedAt": "2026-02-21T01:56:54.766Z",
+      "ownerResponse": "Thank you so much for the incredible 5-star review! ⭐ We’re honored to be your new go-to for heating and air. Knowing our team was able to address all your needs and put your worries at ease truly means a lot to us. We appreciate your trust and look forward to taking care of you for many years to come!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tGSlpWVnJOWGRRVUdoRlNVVmFNWEJJUkhKeVpsRRAB!2m1!1s0x0:0x6b788f926449fd43!3m1!1s2@1:CAIQACodChtycF9oOkFJZVVrNXdQUGhFSUVaMXBIRHJyZlE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2s5S2FVeENNRmRoWWtNeE1GSkhjSE10VDIxWFNWRRAB",
+      "reviewer": "Jed",
+      "rating": 5,
+      "text": "Extremely efficient and professional. Highly recommended.",
+      "publishedAt": "2026-02-21T01:07:34.273Z",
+      "ownerResponse": "Thank you for the 5-star review, Jed! ⭐ We truly appreciate your kind words and recommendation. Providing efficient, professional service is always our goal, and we’re glad we could deliver. Thanks for choosing TSI—we’re here whenever you need us!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2s5S2FVeENNRmRoWWtNeE1GSkhjSE10VDIxWFNWRRAB!2m1!1s0x0:0x6b788f926449fd43!3m1!1s2@1:CAIQACodChtycF9oOk9KaUxCMFdhYkMxMFJHcHMtT21XSVE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2toV2RETm1iMjFWZURsbVZWSnRUbUZyUlY4eVFVRRAB",
+      "reviewer": "LaVonne S.",
+      "rating": 5,
+      "text": "Our furnace would not start, within a couple hours TSI was here, found the problem and fixed it. He was polite, friendly and VERY professional! Highly recommend calling TSI for your HVAC and AC needs!",
+      "publishedAt": "2026-02-21T00:08:11.326Z",
+      "ownerResponse": "LaVonne, thank you so much for the 5-star review! ⭐ We’re glad we could respond quickly, get your furnace up and running, and provide the professional service you deserve. We’ll be sure to pass along your kind words to our technician. Thank you for the recommendation and for trusting TSI with your HVAC and AC needs—we’re always here when you need us!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2toV2RETm1iMjFWZURsbVZWSnRUbUZyUlY4eVFVRRAB!2m1!1s0x0:0x6b788f926449fd43!3m1!1s2@1:CAIQACodChtycF9oOkhWdDNmb21VeDlmVVJtTmFrRV8yQUE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VPS3YwcldzMDhxWTRnRRAB",
+      "reviewer": "Kristen C.",
+      "rating": 5,
+      "text": "I am a high school teacher, and I am part of a leadership team that puts together a student-led event every year that provides community resources to our families and awards scholarships to two of our students. TSI sponsors our t-shirts. We used the money from the t-shirt sales to give out two scholarships worth close to $1,300 each. Without their support, this would not have been possible. Their continued commitment to our event shows that they value our future generations and community. Thank you, TSI!",
+      "publishedAt": "2026-02-20T23:47:09.409Z",
+      "ownerResponse": "Thank you so much for sharing this! We’re honored to support your student-led event and proud to help recognize and celebrate the achievements of your students. Investing in our future generations and giving back to the community is something we truly value, and it’s wonderful to see the positive impact together. We look forward to continuing to support your important work!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VPS3YwcldzMDhxWTRnRRAB!2m1!1s0x0:0x6b788f926449fd43!3m1!1s2@1:CIHM0ogKEOKv0rWs08qY4gE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pkV1J6SXhkbXRTYVhCNlJGUnZWMUF6YWpnMldGRRAB",
+      "reviewer": "Sandi K.",
+      "rating": 5,
+      "text": "Great service. Very friendly and knowledgeable.  Will definitely use their service again if needed! Highly recommend!!",
+      "publishedAt": "2026-02-20T23:46:41.057Z",
+      "ownerResponse": "Thank you for the amazing 5-star review! ⭐ We’re thrilled to hear you had a great experience and that our team was friendly and knowledgeable. Your recommendation truly means a lot to us, and we’ll be here anytime you need our services again. We appreciate your support!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pkV1J6SXhkbXRTYVhCNlJGUnZWMUF6YWpnMldGRRAB!2m1!1s0x0:0x6b788f926449fd43!3m1!1s2@1:CAIQACodChtycF9oOjdWRzIxdmtSaXB6RFRvV1Azajg2WFE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2prMlNqaHpjemhGU21Fd2JERkRNRWh4UlZRM2FIYxAB",
+      "reviewer": "Jeremy Y.",
+      "rating": 5,
+      "text": "They are always there to help when I call and do great work",
+      "publishedAt": "2026-02-20T23:42:13.246Z",
+      "ownerResponse": "Thank you so much for the 5-star review! ⭐ We’re happy to hear that our team is always there when you call and that you’re consistently pleased with our work. Your trust and support mean a lot to us—we’re always here when you need us!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2prMlNqaHpjemhGU21Fd2JERkRNRWh4UlZRM2FIYxAB!2m1!1s0x0:0x6b788f926449fd43!3m1!1s2@1:CAIQACodChtycF9oOjk2SjhzczhFSmEwbDFDMEhxRVQ3aHc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xsblgxaHpiVUprVkRaM2JIbGlUR2w0UVRVMVNsRRAB",
+      "reviewer": "Betsy W.",
+      "rating": 5,
+      "text": "Thanks to TSI for the prompt professional service",
+      "publishedAt": "2026-02-20T23:34:59.278Z",
+      "ownerResponse": "Thank you for the 5-star review! ⭐ We really appreciate you taking the time to share your experience. We’re glad our team at TSI could provide prompt, professional service, and we look forward to helping you again whenever you need us.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xsblgxaHpiVUprVkRaM2JIbGlUR2w0UVRVMVNsRRAB!2m1!1s0x0:0x6b788f926449fd43!3m1!1s2@1:CAIQACodChtycF9oOllnX1hzbUJkVDZ3bHliTGl4QTU1SlE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xWbWNHMUZMVFZHUzBGaWFVcEhTMFZ1VVhOdFkyYxAB",
+      "reviewer": "Mary M.",
+      "rating": 5,
+      "text": "Nathanial Shackow is awesome!! He is very professional and got us back up and running. I would highly recommend this company!!!",
+      "publishedAt": "2025-12-23T18:23:28.050Z",
+      "ownerResponse": "Thank you so much for the great review! We’re thrilled to hear that Nathaniel was able to get you back up and running and that his professionalism stood out. We’ll be sure to pass along your kind words to him. We truly appreciate the recommendation and look forward to helping you again whenever you need us!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xWbWNHMUZMVFZHUzBGaWFVcEhTMFZ1VVhOdFkyYxAB!2m1!1s0x0:0x6b788f926449fd43!3m1!1s2@1:CAIQACodChtycF9oOlVmcG1FLTVGS0FiaUpHS0VuUXNtY2c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pkcVJHVlBOVmM1V0VaSmQwWk5XamhUY1U1eUxYYxAB",
+      "reviewer": "David B.",
+      "rating": 5,
+      "text": "Professional, affordable and dependable.  Great find for the Peoria area.",
+      "publishedAt": "2025-12-14T00:15:21.991Z",
+      "ownerResponse": "Thank you for the great review! We’re glad to hear you found our service professional, affordable, and dependable. We appreciate the recommendation and are proud to serve the Peoria area. Please don’t hesitate to reach out if we can help again in the future!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pkcVJHVlBOVmM1V0VaSmQwWk5XamhUY1U1eUxYYxAB!2m1!1s0x0:0x6b788f926449fd43!3m1!1s2@1:CAIQACodChtycF9oOjdqRGVPNVc5WEZJd0ZNWjhTcU5yLXc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pSd01sZG9kV1ZWUkZjdExUTnpVR00wYm1FMVpVRRAB",
+      "reviewer": "Joe M.",
+      "rating": 5,
+      "text": "The technicians, Dillon and Darrell, were very prompt, courteous, and professional.  Dillon replaced my furnace.  Darrell replaced my ac-unit.  Both units required some extra work as they were very antiquated.  It was clear that both men took no shortcuts and did honest and straightforward work.  And they were here at separate times.  Each took the initiative to keep me in the loop on any changes that needed to be made and gave me options and perspective when I asked them to talk me through decisions. Their answers focused on what would be in my best interests. The office workers, Trisha and Cheyenne, were courteous and helpful. They communicated well and promptly when I had questions about equipment and pricing prior to install.--High quality employees make the value of a company, and are becoming more and more rare. This company has found 4 high-quality employees.",
+      "publishedAt": "2025-11-07T17:06:46.696Z",
+      "ownerResponse": "Thank you for the wonderful review! We truly appreciate you taking the time to share your experience. We’re glad to hear Dylan and Darrell provided professional, honest service and kept you informed throughout the process, especially with the challenges of older equipment. We’re also happy to know Tisha and Cheyenne were helpful and communicative. Your kind words about our team mean a lot to us, and we’ll be sure to share your feedback. Thank you for choosing our company!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pSd01sZG9kV1ZWUkZjdExUTnpVR00wYm1FMVpVRRAB!2m1!1s0x0:0x6b788f926449fd43!3m1!1s2@1:CAIQACodChtycF9oOjRwMldodWVVRFctLTNzUGM0bmE1ZUE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25CNWNuZ3dOMnRIY0hFeVMxSm5iVXh2YVhaaGVWRRAB",
+      "reviewer": "Bob W.",
+      "rating": 5,
+      "text": "Our AC failed after hours and I called TSI after an Internet search. They promptly returned my call. Upfront they told me an after hour service call would cost much more than waiting until the next day. So we decided to wait. A very friendly tech called me almost immediately and told me he would come between 7 and 8 am the next morning which he did. Turned out to be rather simple fix ( a fan capacitor) which he repaired within 45 minutes. I am so impressed with the whole process and the friendly folks who helped us. I will certainly use them again for HVAC issues and I recommend them highly.",
+      "publishedAt": "2025-07-23T15:56:17.287Z",
+      "ownerResponse": "Thank you so much for sharing your experience! We’re glad we could return your call quickly and clearly explain the after-hours options so you could make the best decision for your situation. It’s great to hear our technician followed through with prompt, friendly service and got everything up and running with a simple repair. We truly appreciate your trust and recommendation, and we look forward to helping you again with any future HVAC needs!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25CNWNuZ3dOMnRIY0hFeVMxSm5iVXh2YVhaaGVWRRAB!2m1!1s0x0:0x6b788f926449fd43!3m1!1s2@1:CAIQACodChtycF9oOnB5cngwN2tHcHEyS1JnbUxvaXZheVE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xkcWVsRjRjWFJTY25Vd2RFSktkWFZYZUVJdGNHYxAB",
+      "reviewer": "Brad S.",
+      "rating": 5,
+      "text": "Our A/C has been trouble since we bought our house seven years ago and two years ago we had to replace the blower in the heat. During the last heat wave TSI came right out on a Sunday. ( When no other company we called would pick up the phone.) Derek came over and worked on it twice first time it ran for a couple days then unfortunately the compressor failed. So we decided to just replace everything heat and A/C . That was Friday by Monday, I had a quote on a new system. We were without A/C for a few weeks while we waited for the equipment to come in as soon as it did they got us in the install date. The<br>guys came in installed the new system in one day. They were very professional and polite. It's been a great experience so far new system is working wonderfully. I'd definitely recommend these folks.",
+      "publishedAt": "2025-07-16T01:49:02.697Z",
+      "ownerResponse": "Brad, thank you for the fantastic review! We’re absolutely thrilled to hear that you were impressed with our efficient and high-quality service. You're feedback motivates our team to continue providing excellent service!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xkcWVsRjRjWFJTY25Vd2RFSktkWFZYZUVJdGNHYxAB!2m1!1s0x0:0x6b788f926449fd43!3m1!1s2@1:CAIQACodChtycF9oOldqelF4cXRScnUwdEJKdXVXeEItcGc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VKS0wzcU9ScnZ6dVNREAE",
+      "reviewer": "Bill D.",
+      "rating": 5,
+      "text": "Had them do a AC unit cleaning and check up. Tech was on time and very friendly! He did a great job! Having them give my furnace a check up in the fall also! Highly recommend!",
+      "publishedAt": "2025-05-29T01:15:23.454Z",
+      "ownerResponse": "Thank you so much for the great review! We’re glad to hear our technician was on time, friendly, and did a great job with your AC cleaning and checkup. We truly appreciate your trust and look forward to taking care of your furnace check this fall as well. Thanks again for the recommendation!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VKS0wzcU9ScnZ6dVNREAE!2m1!1s0x0:0x6b788f926449fd43!3m1!1s2@1:CIHM0ogKEJKL3qORrvzuSQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VNcVh0LW4xOHZidXNnRRAB",
+      "reviewer": "Amar S.",
+      "rating": 5,
+      "text": "Very professional, timely, and great service. Will definitely recommend!",
+      "publishedAt": "2025-05-13T16:02:11.064Z",
+      "ownerResponse": "Thank you for the 5-star review, Amar! We're thrilled you had a great experience and look forward to seeing you again soon!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VNcVh0LW4xOHZidXNnRRAB!2m1!1s0x0:0x6b788f926449fd43!3m1!1s2@1:CIHM0ogKEMqXt-n18vbusgE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJMmV2OWlDcTV6TVNnEAE",
+      "reviewer": "Mohammed A.",
+      "rating": 5,
+      "text": "Great Service<br>My technician was Darrell. He was fantastic, very knowledgeable and courteous. I will be using the company again for any future HVAC needs. Service was prompt and reliable.",
+      "publishedAt": "2025-05-09T00:09:15.773Z",
+      "ownerResponse": "Mohammed, thank you for taking the time to leave us such an amazing review. We are so glad that Darrell could represent our company in such a positive way for you. We look forward to working with you again soon!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJMmV2OWlDcTV6TVNnEAE!2m1!1s0x0:0x6b788f926449fd43!3m1!1s2@1:CIHM0ogKEI2ev9iCq5zMSg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnTUNnM3FqdUl3EAE",
+      "reviewer": "Jesse W.",
+      "rating": 5,
+      "text": "Luke is the best! Top notch support and technical knowledge",
+      "publishedAt": "2025-02-17T15:58:03.169Z",
+      "ownerResponse": "Jesse, we think Luke is pretty awesome, too. We appreciate you taking the time to give us your feedback and hope your new system keeps you comfortable for a long time!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTUNnM3FqdUl3EAE!2m1!1s0x0:0x6b788f926449fd43!3m1!1s2@1:CIHM0ogKEICAgMCg3qjuIw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUN2bWFmS0NnEAE",
+      "reviewer": "Linda K.",
+      "rating": 5,
+      "text": "TSI services my HVAV system & has for several years.  Last night, when I arrived home after being gone all day, my home felt chilly.  After some investigation I realized my thermostat was not working.  At 10 PM I called TSI.  The gentleman that answered was so helpful & patient.  He talked me through a few things to do to try to find the problem.  I had changed the furnace filter that morning & it turns out that I had accidently flipped the switch to turn off the furnace.  After flipping the switch again, all was good.  The tech ended our call by thanking me for calling & placing my trust in TSI.",
+      "publishedAt": "2024-12-12T16:34:18.708Z",
+      "ownerResponse": "We appreciate your feedback and are delighted to know we were able to help you out. Your satisfaction is our top priority, and we look forward to serving you again soon, Linda!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN2bWFmS0NnEAE!2m1!1s0x0:0x6b788f926449fd43!3m1!1s2@1:CIHM0ogKEICAgICvmafKCg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUMza0lIekp3EAE",
+      "reviewer": "Tim N.",
+      "rating": 5,
+      "text": "Great people to work with.",
+      "publishedAt": "2024-11-01T23:32:28.651Z",
+      "ownerResponse": "Tim, thank you for taking the time to leave us a review. We are thrilled to hear that you loved your experience with us.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMza0lIekp3EAE!2m1!1s0x0:0x6b788f926449fd43!3m1!1s2@1:CIHM0ogKEICAgIC3kIHzJw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNYNjdxQ2pRRRAB",
+      "reviewer": "Hailey S.",
+      "rating": 5,
+      "text": "TSI was so quick, friendly, and did an excellent job! 10/10 would recommend!",
+      "publishedAt": "2024-10-20T17:43:54.547Z",
+      "ownerResponse": "Thank you Hailey for your wonderful feedback. We can't wait to work with you again soon!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNYNjdxQ2pRRRAB!2m1!1s0x0:0x6b788f926449fd43!3m1!1s2@1:CIHM0ogKEICAgICX67qCjQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNuMlBxMHBBRRAB",
+      "reviewer": "Art B.",
+      "rating": 5,
+      "text": "Great service and prompt communications!<br>I have worked then for used for my business and our residence and the always professional and provide excellent services.",
+      "publishedAt": "2024-09-22T13:45:47.859Z",
+      "ownerResponse": "We love that you enjoy using TSI for your home & business HVAC needs. We look forward to continuing our long standing relationship.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNuMlBxMHBBRRAB!2m1!1s0x0:0x6b788f926449fd43!3m1!1s2@1:CIHM0ogKEICAgICn2Pq0pAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNyLTdYamhBRRAB",
+      "reviewer": "Troy T.",
+      "rating": 5,
+      "text": "Unbelievable response time, unmatched professionalism, and efficient, quality work! We had a leaky furnace unit in the middle of the summer. Dylan and Cameron got here within an hour of my call, troubleshot, ran to the hardware store and were done and cleaned up in what seemed like no time at all. 100% recommend.",
+      "publishedAt": "2024-07-11T16:00:27.055Z",
+      "ownerResponse": "We really appreciate your business. Please let us know what we can do for you in the future. Thank you for taking the time to leave such an awesome review!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNyLTdYamhBRRAB!2m1!1s0x0:0x6b788f926449fd43!3m1!1s2@1:CIHM0ogKEICAgICr-7XjhAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNMaGJHaGpBRRAB",
+      "reviewer": "Cedric V.",
+      "rating": 5,
+      "text": "Great company to work with. Show up when scheduled, good and clean work. Highly recommend.",
+      "publishedAt": "2024-06-21T13:44:07.655Z",
+      "ownerResponse": "Thank you for taking the time to leave us a review. We are thrilled to hear that you loved your experience with us.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNMaGJHaGpBRRAB!2m1!1s0x0:0x6b788f926449fd43!3m1!1s2@1:CIHM0ogKEICAgICLhbGhjAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURqbE5LWEVnEAE",
+      "reviewer": "Brad R.",
+      "rating": 5,
+      "text": "Aaron of TSI did a great job installing an air conditioning & heating unit in our commercial warehouse building in Washington.  Highly recommend working with TSI - They also helped us modify some existing mini-splits that were not installed by TSI.  They were still very professional and willing to help us fix something that was not their original install.",
+      "publishedAt": "2024-04-29T18:57:59.477Z",
+      "ownerResponse": "Brad, we are so grateful for your 5-star review. Thanks for sharing your rating with us and the community. We can't wait to work with you again soon!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURqbE5LWEVnEAE!2m1!1s0x0:0x6b788f926449fd43!3m1!1s2@1:CIHM0ogKEICAgIDjlNKXEg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNqazlMZ3VBRRAB",
+      "reviewer": "Lonny H.",
+      "rating": 4,
+      "text": "Installed new furnace and air conditioning less than one day. the new unit has already saved a lot of money .",
+      "publishedAt": "2024-04-25T11:01:08.444Z",
+      "ownerResponse": "We really appreciate you taking the time to share your rating with us. We are so glad that we were able to help you out and get you back to comfort in such a timely manor!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNqazlMZ3VBRRAB!2m1!1s0x0:0x6b788f926449fd43!3m1!1s2@1:CIHM0ogKEICAgICjk9LguAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUR0cjk2am5RRRAB",
+      "reviewer": "Joe A.",
+      "rating": 5,
+      "text": "Great company!  Fast, reliable, knowledgeable, courteous staff!  Highly recommend for all your HVAC needs!",
+      "publishedAt": "2024-02-08T15:03:57.444Z",
+      "ownerResponse": "We appreciate your feedback and are delighted to know you enjoyed our service. Your satisfaction is our top priority, and we look forward to serving you again soon. Thank you for taking the time to leave us a review. We are thrilled to hear that you loved your experience with us.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR0cjk2am5RRRAB!2m1!1s0x0:0x6b788f926449fd43!3m1!1s2@1:CIHM0ogKEICAgIDtr96jnQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUN0Z0tubllBEAE",
+      "reviewer": "Tina W.",
+      "rating": 5,
+      "text": "Fast, reliable, and very good at what they do!! Absolutely love Heath! Explained things to me in a way I can understand!",
+      "publishedAt": "2024-01-27T19:44:47.369Z",
+      "ownerResponse": "Tina, we appreciate you taking the time to leave this review! We are glad to know that you had a great experience working with Heath.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN0Z0tubllBEAE!2m1!1s0x0:0x6b788f926449fd43!3m1!1s2@1:CIHM0ogKEICAgICtgKnnYA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUMxa3BEdE1BEAE",
+      "reviewer": "William O.",
+      "rating": 2,
+      "text": "In the middle in this one. Been doing business with TSI for years. Schedule the PM and found office HVAC to be faulty. Did not hesitate to get repairs completed. Well not even a day later the other HVAC system they PM. Failed. They did not hesitate came right out. Let me know the issue. I did have some communications due to they were just here and completed a PM. Talked to the owner manager asked for a discount. Said he get back to me. I sent several emails, called and nothing. Paid 3k for the one. Said I like to schedule the next but have not heard from them??? Does this rate stars?<br>Funny I just wrote this review. Then I get hit with another bill. Not the invoice that suppose to be compensated either. Well I all about inflation. Double the cost of last year? With a lift the was shared between 2 business. Hmmm.",
+      "publishedAt": "2023-12-27T20:07:41.629Z",
+      "ownerResponse": "William, we would like to offer our apologies for the clerical oversight that was made in your billing. You should see an additional discount on your most recent invoice where we discounted half of the rate of the lift service. We hope you view this as fair and we look forward to continuing our relationship in the future. Again, we apologize for any inconveniences we may have caused.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMxa3BEdE1BEAE!2m1!1s0x0:0x6b788f926449fd43!3m1!1s2@1:CIHM0ogKEICAgIC1kpDtMA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURKMFl6V05REAE",
+      "reviewer": "Nick H.",
+      "rating": 5,
+      "text": "Our family was in a tough situation with our AC unit. TSI was understanding of the situation and prompt with their response. From start to finish, they were professional and never made me feel uncomfortable when asking probably too many questions. They were great to work with and I would recommend them to anyone. It’s hard to find companies as down to earth as TSI is.",
+      "publishedAt": "2023-07-18T20:55:03.896Z",
+      "ownerResponse": "It was great to work with you Nick! We know how hard it is moving in and finding something wrong. We are so glad we were able to get AC in your new home as soon as possible! We appreciate your review and look forward to working with you in the future.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURKMFl6V05REAE!2m1!1s0x0:0x6b788f926449fd43!3m1!1s2@1:CIHM0ogKEICAgIDJ0YzWNQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNobWV2M2xBRRAB",
+      "reviewer": "Ron V.",
+      "rating": 5,
+      "text": "They did an excellent job. Great customer service.",
+      "publishedAt": "2023-02-16T20:50:44.758Z",
+      "ownerResponse": "Ron, we appreciate the review and were so happy to gain your business! Let us know if there is anything else we can help you out with!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNobWV2M2xBRRAB!2m1!1s0x0:0x6b788f926449fd43!3m1!1s2@1:CIHM0ogKEICAgIChmev3lAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNlall1R2ZnEAE",
+      "reviewer": "Travis W.",
+      "rating": 5,
+      "text": "TSI has done some maintenance and repair work on my A/C and furnace. They were very responsive and professional. Additionally when seeking quotes on possible additional services TSI staff has been very helpful in providing details and quotes for various options to help make an informed decision.",
+      "publishedAt": "2022-09-20T14:31:44.824Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNlall1R2ZnEAE!2m1!1s0x0:0x6b788f926449fd43!3m1!1s2@1:CIHM0ogKEICAgICejYuGfg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNtdlk3ZnJBRRAB",
+      "reviewer": "Jim B.",
+      "rating": 5,
+      "text": "Patrick was prompt, professional, knowledgeable and patient explaining what was being done. On a cold winter day we made the correct call, Thermal Services, Inc.",
+      "publishedAt": "2022-01-06T20:45:04.314Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNtdlk3ZnJBRRAB!2m1!1s0x0:0x6b788f926449fd43!3m1!1s2@1:CIHM0ogKEICAgICmvY7frAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNHMnV6YUZREAE",
+      "reviewer": "mohamed K.",
+      "rating": 5,
+      "text": "I had a problem with my walk in cooler. supervisor Jeff came in and sent me two guys Joe and Derek. this must be the most professional company out here<br>And I know who to call anytime I have a problem really appreciate you guys thank you",
+      "publishedAt": "2021-10-26T17:53:12.453Z",
+      "ownerResponse": "We are so glad to have been able to help you! We appreciate you taking the time to leave a review.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNHMnV6YUZREAE!2m1!1s0x0:0x6b788f926449fd43!3m1!1s2@1:CIHM0ogKEICAgICG2uzaFQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURhMzdtOHJnRRAB",
+      "reviewer": "Ben T.",
+      "rating": 5,
+      "text": "It was a hot and stormy night, most A/C stories probably begin this way, and ours went out. We called about 8 am and Jeff Corey with TSI had our A/C back up and running by 10:30 am. Amazing responsiveness, very thorough and professional service, and Jeff was a pleasure to work with on such a hot and humid morning. He was straightforward about the problem and did not try to up sell me anything unnecessary. We will definitely be using TSI to replace our A/C unit when it's time comes.",
+      "publishedAt": "2021-08-26T15:52:13.550Z",
+      "ownerResponse": "Hi Ben!<br>Thank you so much for taking the time to leave us a review! We are so happy that we were able to be there for you in your time of need! We are glad we could get you back to comfort quickly!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURhMzdtOHJnRRAB!2m1!1s0x0:0x6b788f926449fd43!3m1!1s2@1:CIHM0ogKEICAgIDa37m8rgE%7C%7C?hl=en-US",
+      "language": "en"
+    }
+  ],
+  "ratingOnly": [
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT205b1dWSlFUVUV6YTA1bWRVaEVXbGxWVUc1SVZGRRAB",
+      "reviewer": "ramona B.",
+      "rating": 5,
+      "publishedAt": "2026-02-20T23:33:10.075Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21ORVJEZHpXREpsY0VsclFYQjRSRFZGU0doU1ZuYxAB",
+      "reviewer": "Brad S.",
+      "rating": 5,
+      "publishedAt": "2026-02-04T16:15:51.480Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VKYnp3X0NwdnFfMmhBRRAB",
+      "reviewer": "Pam D.",
+      "rating": 5,
+      "publishedAt": "2025-05-23T16:40:23.756Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUR0cl9ubUZnEAE",
+      "reviewer": "Lee Z.",
+      "rating": 5,
+      "publishedAt": "2024-02-08T15:31:01.632Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNxbXNIS193RRAB",
+      "reviewer": "Tisha M.",
+      "rating": 5,
+      "publishedAt": "2021-06-03T13:51:09.155Z"
+    }
+  ]
+}
