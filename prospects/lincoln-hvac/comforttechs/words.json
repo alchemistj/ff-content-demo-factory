@@ -97,9 +97,9 @@
      "action": "contact"
     },
     "image": {
-     "slot": "home-hero",
+     "slot": "home-hero-alt",
      "alt": "A Lincoln home with an outdoor air conditioner beside the house under a clear sky",
-     "brief": "HVAC home-hero: ranch home exterior with the outdoor AC unit beside it, clear sky, house on the right"
+     "brief": "HVAC home-hero-alt: the outdoor condenser beside the house under a clear sky, no person"
     }
    },
    "sections": [
@@ -283,7 +283,7 @@
    "hero": {
     "eyebrow": "Air conditioning repair, Lincoln",
     "h1": "AC Repair in Lincoln, NE — ComfortTechs",
-    "sub": "When the AC quits on a hot day, call (402) 465-0000. “He was here within 30 mins and had it running within 5.” — Ashley H. ComfortTechs repairs all makes and models, Bryant, American Standard, Trane and Carrier included.",
+    "sub": "When the AC quits on a hot day, call (402) 465-0000. ComfortTechs repairs all makes and models, Bryant, American Standard, Trane and Carrier included. “…he was here within 30 mins and had it running within 5.” — Ashley H.",
     "primaryCta": {
      "label": "Call (402) 465-0000",
      "action": "call"
