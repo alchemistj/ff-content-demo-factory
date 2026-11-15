@@ -59,5 +59,5 @@ Top claim: "plan members pay $75 for any service call, with no after-hours, week
 
 ## Rebuild 11/15 (Josh's review)
 - The plan is the strongest claim (16) but is not the homepage lead. The homepage leads with who Griffin is and 24/7 emergency service, with customer quotes as proof. The plan comes after the services, explained first (one-year agreement, spring and fall visit lists, priority scheduling, 10% off parts, $75 service call with no after-hours, weekend or holiday rates) and priced last ($160 / $260 / +$100). No plan price appears in the hero, trust bar or footer.
-- Service pages: furnace repair and AC repair. Griffin's own site has no pages for either, so each rests on the 24/7 line, the plan's fall and spring visit lists, GoodLeap financing and on-topic review quotes. Thin: about 360 and 330 words of copy.
+- Service pages: furnace repair and AC repair. Griffin's own site has no pages for either, so each rests on the 24/7 line, the plan's fall and spring visit lists, GoodLeap financing and on-topic review quotes. Thin: about 170 and 190 words of copy after the round-2 cuts (proof-led pages, no padding).
 - Dropped: "ask what failed and what the fix would cost" advice, the banned furnace-hero image, and the furnace page's explainer sections.

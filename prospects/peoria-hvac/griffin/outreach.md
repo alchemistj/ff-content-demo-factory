@@ -2,15 +2,15 @@
 
 Hey Griffin HVAC team,
 
-One of your Google reviews reads: “Furnace went out 4:30 pm on New Years Eve. Called Griffin. Josh showed up at 5:10 pm. knew exactly how to fix and was done by 5:45 pm.” (Bob R.) We build websites for service businesses, so we made you a mockup with a page for furnace repair and one for AC repair:
+One of your Google reviews reads: “My A/C went out at the start of a very hot Labor Day weekend and Doug from Griffin HVAC was able to come out that Saturday.” (Kristopher H.) We build websites for service businesses, so we made you a mockup with a page for furnace repair and one for AC repair:
 
 https://griffin-peoria.websitepreview.fluidframemarketing.com/
 
 Note: It'll look a lot better with your logo and images on it! Lol
 
-The preview walks through why each page is built the way it is. One thing we'd fix: on a phone, your site is 768 pixels wide on a 390-pixel screen, so visitors scroll sideways, and the header shows Book Online and Log In but no phone number.
+The preview walks through why each page is built the way it is. One thing we'd fix: your site scrolls sideways on a phone and has no phone number in the header.
 
-We built your homepage and your furnace repair and AC repair pages as examples, and we'd love to build the rest.
+We'd love to build the rest.
 
 How'd we do on your company vibe?
 
@@ -21,21 +21,21 @@ Fluid Frame Marketing
 
 ## Short message
 
-Hey Griffin HVAC team, one of your reviews: “Furnace went out 4:30 pm on New Years Eve. Called Griffin. Josh showed up at 5:10 pm.” We built a mockup with furnace and AC repair pages: https://griffin-peoria.websitepreview.fluidframemarketing.com/ (it'll look better with your logo and images! Lol). One fix: on a phone your site scrolls sideways. Not interested? Reply "no thanks" and you won't hear from me again. Josh, Fluid Frame Marketing
+Hey Griffin HVAC team, one of your reviews: “My A/C went out at the start of a very hot Labor Day weekend and Doug from Griffin HVAC was able to come out that Saturday.” We built a mockup with furnace and AC repair pages: https://griffin-peoria.websitepreview.fluidframemarketing.com/ (it'll look better with your logo and images! Lol). One fix: your site scrolls sideways on a phone. Not interested? Reply "no thanks" and you won't hear from me again. Josh, Fluid Frame Marketing
 
 ## Variant (only if Josh confirms)
 
 Hey Griffin HVAC team,
 
-One of your Google reviews reads: “Furnace went out 4:30 pm on New Years Eve. Called Griffin. Josh showed up at 5:10 pm. knew exactly how to fix and was done by 5:45 pm.” (Bob R.) My daughter and I build websites for service businesses, so we made you a mockup with a page for furnace repair and one for AC repair:
+One of your Google reviews reads: “My A/C went out at the start of a very hot Labor Day weekend and Doug from Griffin HVAC was able to come out that Saturday.” (Kristopher H.) My daughter and I build websites for service businesses, so we made you a mockup with a page for furnace repair and one for AC repair:
 
 https://griffin-peoria.websitepreview.fluidframemarketing.com/
 
 Note: It'll look a lot better with your logo and images on it! Lol
 
-The preview walks through why each page is built the way it is. One thing we'd fix: on a phone, your site is 768 pixels wide on a 390-pixel screen, so visitors scroll sideways, and the header shows Book Online and Log In but no phone number.
+The preview walks through why each page is built the way it is. One thing we'd fix: your site scrolls sideways on a phone and has no phone number in the header.
 
-We built your homepage and your furnace repair and AC repair pages as examples, and we'd love to build the rest.
+We'd love to build the rest.
 
 How'd we do on your company vibe?
 
