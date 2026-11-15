@@ -207,6 +207,18 @@
       "pulledAt": "2026-11-07T03:08:39.073Z"
     },
     {
+      "slug": "customassured-fortwayne",
+      "name": "Custom Assured Mechanical",
+      "placeId": "ChIJDfU04u_jFYgRiIrcEKLjd8U",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 90,
+        "withText": 66,
+        "ratingOnly": 9
+      },
+      "pulledAt": "2026-11-15T03:11:03.389Z"
+    },
+    {
       "slug": "dan-dan-the-window-man",
       "name": "Dan Dan The Window Man",
       "placeId": "ChIJVVVlgbnguocRBLc193b6xPM",
