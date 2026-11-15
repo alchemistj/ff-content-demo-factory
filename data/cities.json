@@ -1,0 +1,515 @@
+[
+  {
+    "metro": "Wichita, KS",
+    "principalCity": "Wichita",
+    "state": "KS",
+    "region": "Midwest",
+    "population": 663809,
+    "estimateYear": 2025,
+    "source": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv"
+  },
+  {
+    "metro": "Toledo, OH",
+    "principalCity": "Toledo",
+    "state": "OH",
+    "region": "Midwest",
+    "population": 599376,
+    "estimateYear": 2025,
+    "source": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv"
+  },
+  {
+    "metro": "Chattanooga, TN-GA",
+    "principalCity": "Chattanooga",
+    "state": "TN",
+    "region": "South",
+    "population": 594530,
+    "estimateYear": 2025,
+    "source": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv"
+  },
+  {
+    "metro": "New Haven, CT",
+    "principalCity": "New Haven",
+    "state": "CT",
+    "region": "Northeast",
+    "population": 578741,
+    "estimateYear": 2025,
+    "source": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv"
+  },
+  {
+    "metro": "Reno, NV",
+    "principalCity": "Reno",
+    "state": "NV",
+    "region": "West",
+    "population": 578734,
+    "estimateYear": 2025,
+    "source": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv"
+  },
+  {
+    "metro": "Portland-South Portland, ME",
+    "principalCity": "Portland",
+    "state": "ME",
+    "region": "Northeast",
+    "population": 577635,
+    "estimateYear": 2025,
+    "source": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv"
+  },
+  {
+    "metro": "Scranton-Wilkes-Barre, PA",
+    "principalCity": "Scranton",
+    "state": "PA",
+    "region": "Northeast",
+    "population": 574418,
+    "estimateYear": 2025,
+    "source": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv"
+  },
+  {
+    "metro": "Lancaster, PA",
+    "principalCity": "Lancaster",
+    "state": "PA",
+    "region": "Northeast",
+    "population": 563159,
+    "estimateYear": 2025,
+    "source": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv"
+  },
+  {
+    "metro": "Huntsville, AL",
+    "principalCity": "Huntsville",
+    "state": "AL",
+    "region": "South",
+    "population": 556444,
+    "estimateYear": 2025,
+    "source": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv"
+  },
+  {
+    "metro": "Lexington-Fayette, KY",
+    "principalCity": "Lexington",
+    "state": "KY",
+    "region": "South",
+    "population": 535174,
+    "estimateYear": 2025,
+    "source": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv"
+  },
+  {
+    "metro": "Killeen-Temple, TX",
+    "principalCity": "Killeen",
+    "state": "TX",
+    "region": "Southwest",
+    "population": 511497,
+    "estimateYear": 2025,
+    "source": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv"
+  },
+  {
+    "metro": "Wilmington, NC",
+    "principalCity": "Wilmington",
+    "state": "NC",
+    "region": "South",
+    "population": 492772,
+    "estimateYear": 2025,
+    "source": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv"
+  },
+  {
+    "metro": "Visalia, CA",
+    "principalCity": "Visalia",
+    "state": "CA",
+    "region": "West",
+    "population": 485146,
+    "estimateYear": 2025,
+    "source": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv"
+  },
+  {
+    "metro": "Lansing-East Lansing, MI",
+    "principalCity": "Lansing",
+    "state": "MI",
+    "region": "Midwest",
+    "population": 479722,
+    "estimateYear": 2025,
+    "source": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv"
+  },
+  {
+    "metro": "York-Hanover, PA",
+    "principalCity": "York",
+    "state": "PA",
+    "region": "Northeast",
+    "population": 473197,
+    "estimateYear": 2025,
+    "source": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv"
+  },
+  {
+    "metro": "Fort Wayne, IN",
+    "principalCity": "Fort Wayne",
+    "state": "IN",
+    "region": "Midwest",
+    "population": 466258,
+    "estimateYear": 2025,
+    "source": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv"
+  },
+  {
+    "metro": "Springfield, MA",
+    "principalCity": "Springfield",
+    "state": "MA",
+    "region": "Northeast",
+    "population": 464338,
+    "estimateYear": 2025,
+    "source": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv"
+  },
+  {
+    "metro": "Waterbury-Shelton, CT",
+    "principalCity": "Waterbury",
+    "state": "CT",
+    "region": "Northeast",
+    "population": 463349,
+    "estimateYear": 2025,
+    "source": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv"
+  },
+  {
+    "metro": "Corpus Christi, TX",
+    "principalCity": "Corpus Christi",
+    "state": "TX",
+    "region": "Southwest",
+    "population": 451191,
+    "estimateYear": 2025,
+    "source": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv"
+  },
+  {
+    "metro": "Santa Maria-Santa Barbara, CA",
+    "principalCity": "Santa Maria",
+    "state": "CA",
+    "region": "West",
+    "population": 442065,
+    "estimateYear": 2025,
+    "source": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv"
+  },
+  {
+    "metro": "Reading, PA",
+    "principalCity": "Reading",
+    "state": "PA",
+    "region": "Northeast",
+    "population": 440072,
+    "estimateYear": 2025,
+    "source": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv"
+  },
+  {
+    "metro": "Savannah, GA",
+    "principalCity": "Savannah",
+    "state": "GA",
+    "region": "South",
+    "population": 438314,
+    "estimateYear": 2025,
+    "source": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv"
+  },
+  {
+    "metro": "Brownsville-Harlingen, TX",
+    "principalCity": "Brownsville",
+    "state": "TX",
+    "region": "Southwest",
+    "population": 433946,
+    "estimateYear": 2025,
+    "source": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv"
+  },
+  {
+    "metro": "Manchester-Nashua, NH",
+    "principalCity": "Manchester",
+    "state": "NH",
+    "region": "Northeast",
+    "population": 433415,
+    "estimateYear": 2025,
+    "source": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv"
+  },
+  {
+    "metro": "Gulfport-Biloxi, MS",
+    "principalCity": "Gulfport",
+    "state": "MS",
+    "region": "South",
+    "population": 431329,
+    "estimateYear": 2025,
+    "source": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv"
+  },
+  {
+    "metro": "Myrtle Beach-Conway-North Myrtle Beach, SC",
+    "principalCity": "Myrtle Beach",
+    "state": "SC",
+    "region": "South",
+    "population": 427551,
+    "estimateYear": 2025,
+    "source": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv"
+  },
+  {
+    "metro": "Lafayette, LA",
+    "principalCity": "Lafayette",
+    "state": "LA",
+    "region": "South",
+    "population": 423758,
+    "estimateYear": 2025,
+    "source": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv"
+  },
+  {
+    "metro": "Youngstown-Warren, OH",
+    "principalCity": "Youngstown",
+    "state": "OH",
+    "region": "Midwest",
+    "population": 423678,
+    "estimateYear": 2025,
+    "source": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv"
+  },
+  {
+    "metro": "Asheville, NC",
+    "principalCity": "Asheville",
+    "state": "NC",
+    "region": "South",
+    "population": 422345,
+    "estimateYear": 2025,
+    "source": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv"
+  },
+  {
+    "metro": "Mobile, AL",
+    "principalCity": "Mobile",
+    "state": "AL",
+    "region": "South",
+    "population": 411658,
+    "estimateYear": 2025,
+    "source": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv"
+  },
+  {
+    "metro": "Spartanburg, SC",
+    "principalCity": "Spartanburg",
+    "state": "SC",
+    "region": "South",
+    "population": 407656,
+    "estimateYear": 2025,
+    "source": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv"
+  },
+  {
+    "metro": "Anchorage, AK",
+    "principalCity": "Anchorage",
+    "state": "AK",
+    "region": "West",
+    "population": 405821,
+    "estimateYear": 2025,
+    "source": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv"
+  },
+  {
+    "metro": "Flint, MI",
+    "principalCity": "Flint",
+    "state": "MI",
+    "region": "Midwest",
+    "population": 401093,
+    "estimateYear": 2025,
+    "source": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv"
+  },
+  {
+    "metro": "Canton-Massillon, OH",
+    "principalCity": "Canton",
+    "state": "OH",
+    "region": "Midwest",
+    "population": 400246,
+    "estimateYear": 2025,
+    "source": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv"
+  },
+  {
+    "metro": "Beaumont-Port Arthur, TX",
+    "principalCity": "Beaumont",
+    "state": "TX",
+    "region": "Southwest",
+    "population": 399310,
+    "estimateYear": 2025,
+    "source": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv"
+  },
+  {
+    "metro": "Trenton-Princeton, NJ",
+    "principalCity": "Trenton",
+    "state": "NJ",
+    "region": "Northeast",
+    "population": 399289,
+    "estimateYear": 2025,
+    "source": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv"
+  },
+  {
+    "metro": "Fayetteville, NC",
+    "principalCity": "Fayetteville",
+    "state": "NC",
+    "region": "South",
+    "population": 395412,
+    "estimateYear": 2025,
+    "source": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv"
+  },
+  {
+    "metro": "Montgomery, AL",
+    "principalCity": "Montgomery",
+    "state": "AL",
+    "region": "South",
+    "population": 388747,
+    "estimateYear": 2025,
+    "source": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv"
+  },
+  {
+    "metro": "Shreveport-Bossier City, LA",
+    "principalCity": "Shreveport",
+    "state": "LA",
+    "region": "South",
+    "population": 383474,
+    "estimateYear": 2025,
+    "source": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv"
+  },
+  {
+    "metro": "Davenport-Moline-Rock Island, IA-IL",
+    "principalCity": "Davenport",
+    "state": "IA",
+    "region": "Midwest",
+    "population": 380452,
+    "estimateYear": 2025,
+    "source": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv"
+  },
+  {
+    "metro": "Hickory-Lenoir-Morganton, NC",
+    "principalCity": "Hickory",
+    "state": "NC",
+    "region": "South",
+    "population": 376890,
+    "estimateYear": 2025,
+    "source": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv"
+  },
+  {
+    "metro": "Atlantic City-Hammonton, NJ",
+    "principalCity": "Atlantic City",
+    "state": "NJ",
+    "region": "Northeast",
+    "population": 372047,
+    "estimateYear": 2025,
+    "source": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv"
+  },
+  {
+    "metro": "Ann Arbor, MI",
+    "principalCity": "Ann Arbor",
+    "state": "MI",
+    "region": "Midwest",
+    "population": 370214,
+    "estimateYear": 2025,
+    "source": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv"
+  },
+  {
+    "metro": "Lubbock, TX",
+    "principalCity": "Lubbock",
+    "state": "TX",
+    "region": "Southwest",
+    "population": 368431,
+    "estimateYear": 2025,
+    "source": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv"
+  },
+  {
+    "metro": "Huntington-Ashland, WV-KY-OH",
+    "principalCity": "Huntington",
+    "state": "WV",
+    "region": "South",
+    "population": 365965,
+    "estimateYear": 2025,
+    "source": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv"
+  },
+  {
+    "metro": "Peoria, IL",
+    "principalCity": "Peoria",
+    "state": "IL",
+    "region": "Midwest",
+    "population": 363505,
+    "estimateYear": 2025,
+    "source": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv"
+  },
+  {
+    "metro": "Lincoln, NE",
+    "principalCity": "Lincoln",
+    "state": "NE",
+    "region": "Midwest",
+    "population": 352081,
+    "estimateYear": 2025,
+    "source": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv"
+  },
+  {
+    "metro": "Clarksville, TN-KY",
+    "principalCity": "Clarksville",
+    "state": "TN",
+    "region": "South",
+    "population": 349001,
+    "estimateYear": 2025,
+    "source": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv"
+  },
+  {
+    "metro": "Rockford, IL",
+    "principalCity": "Rockford",
+    "state": "IL",
+    "region": "Midwest",
+    "population": 337242,
+    "estimateYear": 2025,
+    "source": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv"
+  },
+  {
+    "metro": "Green Bay, WI",
+    "principalCity": "Green Bay",
+    "state": "WI",
+    "region": "Midwest",
+    "population": 336756,
+    "estimateYear": 2025,
+    "source": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv"
+  },
+  {
+    "metro": "Columbus, GA-AL",
+    "principalCity": "Columbus",
+    "state": "GA",
+    "region": "South",
+    "population": 324830,
+    "estimateYear": 2025,
+    "source": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv"
+  },
+  {
+    "metro": "South Bend-Mishawaka, IN-MI",
+    "principalCity": "South Bend",
+    "state": "IN",
+    "region": "Midwest",
+    "population": 324538,
+    "estimateYear": 2025,
+    "source": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv"
+  },
+  {
+    "metro": "Roanoke, VA",
+    "principalCity": "Roanoke",
+    "state": "VA",
+    "region": "South",
+    "population": 316547,
+    "estimateYear": 2025,
+    "source": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv"
+  },
+  {
+    "metro": "Hagerstown-Martinsburg, MD-WV",
+    "principalCity": "Hagerstown",
+    "state": "MD",
+    "region": "South",
+    "population": 315280,
+    "estimateYear": 2025,
+    "source": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv"
+  },
+  {
+    "metro": "Kingsport-Bristol, TN-VA",
+    "principalCity": "Kingsport",
+    "state": "TN",
+    "region": "South",
+    "population": 314834,
+    "estimateYear": 2025,
+    "source": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv"
+  },
+  {
+    "metro": "Sioux Falls, SD-MN",
+    "principalCity": "Sioux Falls",
+    "state": "SD",
+    "region": "Midwest",
+    "population": 314638,
+    "estimateYear": 2025,
+    "source": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv"
+  },
+  {
+    "metro": "Waco, TX",
+    "principalCity": "Waco",
+    "state": "TX",
+    "region": "Southwest",
+    "population": 308807,
+    "estimateYear": 2025,
+    "source": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv"
+  }
+]
