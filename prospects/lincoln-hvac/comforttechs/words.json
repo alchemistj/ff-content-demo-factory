@@ -112,7 +112,7 @@
      "type": "prose",
      "heading": "Fix It First, Replace Only When It's Real",
      "body": [
-      "A heat pump that was finished still got the same first step as every other call: find out what is wrong. You hear what ComfortTechs found, and if the answer is a new system, the options are laid out before you decide anything."
+      "A heat pump that turned out to be finished still got a service visit first, and the options were laid out before a new one came up."
      ]
     },
     {
@@ -132,7 +132,7 @@
      "type": "prose",
      "heading": "A New Furnace or Air Conditioner, When Repair Isn't the Answer",
      "body": [
-      "ComfortTechs installs new furnaces and air conditioners. Our site lists American Standard products, and financing is available upon approval, from manufacturer rebates to special financing. Estimates are free."
+      "ComfortTechs installs new furnaces and air conditioners. Financing is available upon approval, from manufacturer rebates to special financing. Estimates are free."
      ]
     },
     {
@@ -237,6 +237,11 @@
     },
     {
      "type": "review",
+     "quote": "… arrived within 30 minutes for a heating emergency in the winter.",
+     "name": "Charity H."
+    },
+    {
+     "type": "review",
      "quote": "I heard a very loud noise from my furnace, it shook my walls, and Les came out that same morning of my call. He explained what could’ve caused the noise and explained what he did to fix it, putting my mind at ease.",
      "name": "Joanie M."
     },
@@ -278,7 +283,7 @@
    "hero": {
     "eyebrow": "Air conditioning repair, Lincoln",
     "h1": "AC Repair in Lincoln, NE — ComfortTechs",
-    "sub": "When the AC quits on a hot day, call (402) 465-0000. ComfortTechs repairs all makes and models, Bryant, American Standard, Trane and Carrier included.",
+    "sub": "When the AC quits on a hot day, call (402) 465-0000. “He was here within 30 mins and had it running within 5.” — Ashley H. ComfortTechs repairs all makes and models, Bryant, American Standard, Trane and Carrier included.",
     "primaryCta": {
      "label": "Call (402) 465-0000",
      "action": "call"
@@ -294,11 +299,6 @@
     }
    },
    "sections": [
-    {
-     "type": "review",
-     "quote": "Ac stopped working on hot summer Saturday. I called and he was here within 30 mins and had it running within 5.",
-     "name": "Ashley H."
-    },
     {
      "type": "review",
      "quote": "Bryan came … due to AC no longer cooling and worked until AC was cooling until late and in the dark on one of the hottest days this year. Jory came back the next day to check on everything as it was dark the night before.",
