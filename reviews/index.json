@@ -195,6 +195,18 @@
       "pulledAt": "2026-11-09T12:44:09.449Z"
     },
     {
+      "slug": "coolconcepts-lincoln",
+      "name": "Cool Concepts",
+      "placeId": "ChIJTRsObSKWlocRuqxcG7G7cig",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 41,
+        "withText": 36,
+        "ratingOnly": 5
+      },
+      "pulledAt": "2026-11-15T03:15:46.519Z"
+    },
+    {
       "slug": "creekmore-plumbing-wichita",
       "name": "Creekmore Plumbing-Heating Inc",
       "placeId": "ChIJD3pHq5HjuocRiso8yH-QrS0",
