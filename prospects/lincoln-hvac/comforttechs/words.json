@@ -87,7 +87,7 @@
    "hero": {
     "eyebrow": "Lincoln, Nebraska · Furnaces, AC and geothermal",
     "h1": "HVAC Company in Lincoln, NE — ComfortTechs",
-    "sub": "Furnace and air conditioner repair, new systems when repair isn't the answer, geothermal and commercial HVAC. Family owned and operated. Call (402) 465-0000.",
+    "sub": "ComfortTechs looks for the fix before anyone talks about a new system, and lays out your options if replacement is real. Furnaces, AC, geothermal and commercial HVAC. Call (402) 465-0000.",
     "primaryCta": {
      "label": "Call (402) 465-0000",
      "action": "call"
@@ -110,9 +110,15 @@
     },
     {
      "type": "prose",
+     "heading": "Fix It First, Replace Only When It's Real",
+     "body": [
+      "A heat pump that was finished still got the same first step as every other call: find out what is wrong. You hear what ComfortTechs found, and if the answer is a new system, the options are laid out before you decide anything."
+     ]
+    },
+    {
+     "type": "prose",
      "heading": "Furnace and Air Conditioner Repair in Lincoln",
      "body": [
-      "Call ComfortTechs when the heat or the cooling quits. A technician comes out, finds what failed and tells you whether it is a repair or time for a new system. On air conditioning, you get a quote before any work is completed.",
       "We repair the system you have, whoever installed it. For furnaces that means gas, electric and oil furnaces, heat pumps and boilers. For air conditioners it means Bryant, American Standard, Trane, Carrier and other makes.",
       "Each has its own page: [furnace repair in Lincoln](/furnace-repair-lincoln-ne/) and [AC repair in Lincoln](/ac-repair-lincoln-ne/)."
      ]
@@ -126,8 +132,7 @@
      "type": "prose",
      "heading": "A New Furnace or Air Conditioner, When Repair Isn't the Answer",
      "body": [
-      "ComfortTechs installs new furnaces and air conditioners, and we install and service American Standard products. If a repair isn't the right call, we go through your options with you.",
-      "Financing is available upon approval. The programs run from manufacturer rebates to special financing, and you can ask about them when you call."
+      "ComfortTechs installs new furnaces and air conditioners. Our site lists American Standard products, and financing is available upon approval, from manufacturer rebates to special financing. Estimates are free."
      ]
     },
     {
@@ -139,7 +144,7 @@
      "type": "prose",
      "heading": "Geothermal Heat Pumps",
      "body": [
-      "ComfortTechs works on geothermal heat pumps, including WaterFurnace systems. If yours is acting up, or you're weighing one for a new home, call and tell us which you have."
+      "ComfortTechs installs and services geothermal heat pumps, including WaterFurnace systems, alongside its furnace and air conditioning work."
      ]
     },
     {
@@ -151,21 +156,13 @@
      "type": "prose",
      "heading": "Commercial HVAC",
      "body": [
-      "ComfortTechs repairs, installs and maintains commercial HVAC systems, including frequency drives, air filtration, humidification and refrigerant monitoring. Call and tell us what the building's system is doing."
+      "Commercial work covers repair, installation and maintenance, including frequency drives, air filtration, humidification and refrigerant monitoring."
      ]
     },
     {
      "type": "review",
      "quote": "Our A/C at our business went out due to mechanical failure. Luckily, the team at Comfort Techs got to the problem right away. They kept great communication before and during the work. Our A/C was back up and running quickly.",
      "name": "Dustin J."
-    },
-    {
-     "type": "prose",
-     "heading": "Maintenance Plans and Free Estimates",
-     "body": [
-      "ComfortTechs builds custom maintenance plans for heating and cooling systems. Call and tell us what you have, and we'll go over the details with you.",
-      "Estimates are free, and so is a no-obligation consultation if you're weighing a new system."
-     ]
     },
     {
      "type": "services",
@@ -188,7 +185,7 @@
    "hero": {
     "eyebrow": "Heating repair, Lincoln",
     "h1": "Furnace Repair in Lincoln, NE — ComfortTechs",
-    "sub": "ComfortTechs repairs the furnace you have, whoever installed it, and tells you straight if replacing it is the better answer. Call (402) 465-0000.",
+    "sub": "ComfortTechs looks for the fix before anyone talks about a new furnace. Call (402) 465-0000.",
     "primaryCta": {
      "label": "Call (402) 465-0000",
      "action": "call"
@@ -205,28 +202,22 @@
    },
    "sections": [
     {
-     "type": "review",
-     "quote": "I called them in a dire situation needed for my twin daughter’s residence and he was very responsive and awesome! He came quickly and did the much needed repairs and got my twin daughter furnace up and running for them.",
-     "name": "Miranda M."
-    },
-    {
      "type": "prose",
      "heading": "Why Call ComfortTechs for Furnace Repair",
      "body": [
-      "ComfortTechs sends fully trained home heating technicians, in company vehicles and uniforms so you know who is at your door. The heating service department is set up to respond to any home heating problem, regardless of who installed the system.",
-      "We start with what failed. Replacement comes up only if the furnace is truly past fixing, and then you get your options laid out."
+      "We start with what failed. A new furnace comes up only if yours is past fixing, and then your options are laid out for you."
      ]
     },
     {
      "type": "review",
-     "quote": "Comforttechs found the problem to my furnace called saying what was going on, had to order the part and would be in the next day. That next day they called right away saying the part was in and would be out to install it.",
-     "name": "Bryce R."
+     "quote": "Furnace not running, temp 61 degrees in house. … Very nice man named Zach helped diagnose the problem over the phone. He then stayed on the line for a good half hour while I cleaned a part he directed me to. Fixed the problem right away, saving me a service call.",
+     "name": "Robin B."
     },
     {
      "type": "split",
      "heading": "The Heating Systems ComfortTechs Repairs",
      "body": [
-      "Repairs on all makes and models of home heating:"
+      "All makes and models, whoever installed the system:"
      ],
      "list": [
       "Forced air gas furnaces",
@@ -234,8 +225,7 @@
       "Oil furnaces",
       "Heat pumps",
       "Hot water boilers",
-      "Radiant heating",
-      "Under floor radiant heating"
+      "Radiant heating, including under floor radiant"
      ],
      "listStyle": "checks",
      "image": {
@@ -246,87 +236,31 @@
      "imageSide": "right"
     },
     {
-     "type": "steps",
-     "heading": "What Happens When You Call About a Furnace",
-     "items": [
-      {
-       "title": "You call (402) 465-0000",
-       "text": "Tell us what the furnace is doing: no heat, not starting, a new noise."
-      },
-      {
-       "title": "A technician finds what failed",
-       "text": "They look at the system and work out the cause."
-      },
-      {
-       "title": "You hear what they found",
-       "text": "If it is a repair, that is the plan. If the furnace is past repair, you hear your options for a new one."
-      }
-     ]
-    },
-    {
      "type": "review",
      "quote": "I heard a very loud noise from my furnace, it shook my walls, and Les came out that same morning of my call. He explained what could’ve caused the noise and explained what he did to fix it, putting my mind at ease.",
      "name": "Joanie M."
     },
     {
-     "type": "prose",
-     "heading": "Furnace Trouble Worth a Call",
-     "body": [
-      "Call if you notice any of these:"
-     ],
-     "items": [
-      {
-       "title": "No heat from the vents",
-       "text": "The furnace runs, or doesn't, and the house is getting colder."
-      },
-      {
-       "title": "A furnace that won't start",
-       "text": "Nothing happens when the thermostat calls for heat."
-      },
-      {
-       "title": "A loud or new noise",
-       "text": "A bang, squeal or rattle that wasn't there before."
-      }
-     ]
+     "type": "review",
+     "quote": "Comforttechs found the problem to my furnace called saying what was going on, had to order the part and would be in the next day. That next day they called right away saying the part was in and would be out to install it.",
+     "name": "Bryce R."
     },
     {
      "type": "review",
-     "quote": "Furnace not running, temp 61 degrees in house. … Very nice man named Zach helped diagnose the problem over the phone. He then stayed on the line for a good half hour while I cleaned a part he directed me to. Fixed the problem right away, saving me a service call.",
-     "name": "Robin B."
+     "quote": "I called them in a dire situation needed for my twin daughter’s residence and he was very responsive and awesome! He came quickly and did the much needed repairs and got my twin daughter furnace up and running for them.",
+     "name": "Miranda M."
     },
     {
      "type": "prose",
      "heading": "When the Furnace Needs Replacing",
      "body": [
-      "If the furnace is past repair, ComfortTechs installs new furnaces and goes through your options with you. We install and service American Standard products, and financing is available upon approval, from manufacturer rebates to special financing."
+      "If the furnace is past repair, ComfortTechs installs the new one and goes through your options with you."
      ]
     },
     {
      "type": "review",
      "quote": "Two installers put a new furnace in not leaving a ounce of dust debris or anything on my floor or in the utility room.",
      "name": "Andrew A."
-    },
-    {
-     "type": "faq",
-     "heading": "Furnace Repair Questions",
-     "items": [
-      {
-       "q": "Do you repair furnaces that another company installed?",
-       "a": "Yes. The heating service department responds to home heating problems regardless of who installed the system."
-      },
-      {
-       "q": "Which heating systems do you repair?",
-       "a": "Forced air gas furnaces, electric furnaces, oil furnaces, heat pumps, hot water boilers and radiant heating, on all makes and models."
-      },
-      {
-       "q": "What should I tell you when I call?",
-       "a": "What the furnace is doing, the brand if you can read it on the unit, and roughly how old it is."
-      },
-      {
-       "q": "Do you install new furnaces too?",
-       "a": "Yes. If repair isn't the right answer, ComfortTechs installs new furnaces."
-      }
-     ]
     },
     {
      "type": "callBand",
@@ -344,7 +278,7 @@
    "hero": {
     "eyebrow": "Air conditioning repair, Lincoln",
     "h1": "AC Repair in Lincoln, NE — ComfortTechs",
-    "sub": "ComfortTechs repairs air conditioners of any make, finds what failed, and tells you if repair or replacement is the better answer. Call (402) 465-0000.",
+    "sub": "When the AC quits on a hot day, call (402) 465-0000. ComfortTechs repairs all makes and models, Bryant, American Standard, Trane and Carrier included.",
     "primaryCta": {
      "label": "Call (402) 465-0000",
      "action": "call"
@@ -366,32 +300,17 @@
      "name": "Ashley H."
     },
     {
-     "type": "prose",
-     "heading": "Why Call ComfortTechs for AC Repair",
-     "body": [
-      "ComfortTechs repairs Bryant, American Standard, Trane and Carrier air conditioners, and any other make or model. A technician arrives with the tools and equipment to complete most repairs on the first visit.",
-      "The technician diagnoses the problem and tells you whether repair or replacement is the better option. You get a quote before any work is completed, and we take the time to answer your questions."
-     ]
-    },
-    {
      "type": "review",
      "quote": "Bryan came … due to AC no longer cooling and worked until AC was cooling until late and in the dark on one of the hottest days this year. Jory came back the next day to check on everything as it was dark the night before.",
      "name": "Rachel T."
     },
     {
      "type": "split",
-     "heading": "Signs Your Air Conditioner Needs Repair",
+     "heading": "Why Call ComfortTechs for AC Repair",
      "body": [
-      "Any of these is worth a call:"
+      "You hear the diagnosis first. The technician finds what failed and tells you whether repair or replacement is the better option, and you get a quote before any work is completed.",
+      "The same call works for a business: ComfortTechs also repairs commercial air conditioning."
      ],
-     "list": [
-      "Unusual sounds when it runs",
-      "It runs for longer periods than it used to",
-      "It cycles on and off more often",
-      "It has stopped working altogether",
-      "It only blows warm air"
-     ],
-     "listStyle": "checks",
      "image": {
       "slot": "airflow-vent",
       "alt": "A ceiling air vent in a quiet Lincoln home",
@@ -400,62 +319,21 @@
      "imageSide": "right"
     },
     {
-     "type": "steps",
-     "heading": "What Happens When You Call About Your AC",
-     "items": [
-      {
-       "title": "You call (402) 465-0000",
-       "text": "Tell us what the air conditioner is doing."
-      },
-      {
-       "title": "A technician diagnoses it",
-       "text": "They find what failed."
-      },
-      {
-       "title": "You get a quote first",
-       "text": "We tell you whether repair or replacement makes sense, and quote the work before we complete it."
-      }
-     ]
-    },
-    {
      "type": "review",
      "quote": "My AC went out in July in 90+ degree weather. … A friend recommended Comforttechs. I called them and they were out within 2 hours to give me a bid.",
      "name": "Karen E."
     },
     {
      "type": "prose",
-     "heading": "Repair or Replace Your Air Conditioner?",
+     "heading": "When the Air Conditioner Needs Replacing",
      "body": [
-      "Repairing an air conditioner promptly can delay the need to replace it for years. If the unit is past repairing, ComfortTechs installs new air conditioning systems.",
-      "Financing is available upon approval, with options from manufacturer rebates to special financing. ComfortTechs installs and services American Standard products."
+      "If the unit is past repair, ComfortTechs installs the new system and goes through your options with you."
      ]
     },
     {
      "type": "review",
      "quote": "I had my ac and furnace both replaced. They had everything installed in one day and cleaned up after themselves. I got a tutorial on how to operate the equipment by one of their professionals.",
      "name": "John H."
-    },
-    {
-     "type": "faq",
-     "heading": "AC Repair Questions",
-     "items": [
-      {
-       "q": "Which air conditioner brands do you repair?",
-       "a": "Bryant, American Standard, Trane and Carrier, and any other make or model."
-      },
-      {
-       "q": "Will I get a quote before the work?",
-       "a": "Yes. You get a quote before any work is completed."
-      },
-      {
-       "q": "Do you repair AC for businesses?",
-       "a": "Yes. ComfortTechs also repairs, installs and maintains commercial HVAC."
-      },
-      {
-       "q": "What if my air conditioner can't be repaired?",
-       "a": "We tell you, and ComfortTechs installs new air conditioning systems."
-      }
-     ]
     },
     {
      "type": "callBand",
@@ -511,6 +389,11 @@
      "imageSide": "right"
     },
     {
+     "type": "review",
+     "quote": "Jory and his team at Comfortechs are the best in Lincoln - fast/friendly/efficient/honest",
+     "name": "Tracy R."
+    },
+    {
      "type": "prose",
      "heading": "Where ComfortTechs Is and Who We Serve",
      "body": [
@@ -530,7 +413,7 @@
   "why": [
    "Your AC repair page promises 24 hours a day, 7 days a week, 365 days a year, with someone answering the phone night and day. Your contact page says Monday to Saturday, 7 to 5, and closed Sunday. Someone whose AC quits on a Sunday can't tell which one is true.",
    "The headline at the top of your homepage is a long run of keywords ending in Lincoln, Nebraska, and 12 of your 16 pages carry the same one, your furnace repair and AC repair pages included. We found no customer testimonials on any page we crawled, while your Google profile has 69 reviews.",
-   "So the demo opens with HVAC company in Lincoln, NE, gives furnace repair and AC repair a page each, and puts your customers' own words next to the point each one proves."
+   "So the demo opens with HVAC company in Lincoln, NE, gives furnace repair and AC repair a page each, and puts your customers' own words next to the point each one proves, starting with fix it first."
   ],
   "cardsHeading": "Be the HVAC Company People Find on Google",
   "cardsIntro": "Each card is one page of the demo.",
@@ -556,7 +439,7 @@
      "Your heating repair page opens with the same string of keywords as your other pages, so it competes with your own homepage for the same search."
     ],
     "fixes": [
-     "A page that says furnace repair in Lincoln, NE at the top, with the systems you repair and what happens when someone calls."
+     "A page that says furnace repair in Lincoln, NE at the top and leads with finding the fix first."
     ]
    },
    {
@@ -568,10 +451,9 @@
      "Its 24-hours-a-day promise doesn't match the hours on your contact page."
     ],
     "fixes": [
-     "A page that says AC repair in Lincoln, NE at the top, with the signs to look for and what happens when you call.",
+     "A page that says AC repair in Lincoln, NE at the top and leads with how fast people got an answer.",
      "Hours that match on every page once the owner confirms them."
-    ],
-    "alsoAdd": "Pages planned from what Google actually shows for each search, so every page targets something people really look for."
+    ]
    },
    {
     "route": "/contact/",
@@ -625,7 +507,7 @@
   },
   "lead": {
    "heading": "Why we led with fixing it first",
-   "text": "The scariest moment for a Lincoln homeowner is hearing you need a whole new system and not knowing if it's true. So every page leads with the same promise: ComfortTechs looks for the fix before anyone talks about a new system. The proof is already on your Google profile, in your customers' own words, which is why the pages quote them. Please tell us how a replacement conversation actually goes on your end.",
+   "text": "The scariest moment for a Lincoln homeowner is hearing you need a whole new system and not knowing if it's true. So the homepage and the furnace page lead with one promise: ComfortTechs looks for the fix before anyone talks about a new system. The AC page leads with how quickly people got an answer, because that is the call on a hot day. The proof for both is already on your Google profile, in your customers' own words, which is why the pages quote them. Please tell us how a replacement conversation actually goes on your end.",
    "showScores": false,
    "rows": [
     {
