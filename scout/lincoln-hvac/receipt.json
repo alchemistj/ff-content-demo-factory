@@ -1,0 +1,26 @@
+{
+  "kind": "google-prospect-scout-receipt",
+  "status": "ok",
+  "slug": "lincoln-hvac",
+  "request": {
+    "query": "HVAC contractor",
+    "location": "Lincoln, NE",
+    "maxPlaces": 60
+  },
+  "trigger": "workflow_dispatch",
+  "apify": {
+    "actor": "compass~crawler-google-places",
+    "runId": "BdMfwLAXSOU8rcO8S",
+    "datasetId": "xle7AOBeg5Y4S9Zko",
+    "attempts": 1,
+    "usageUsd": 0.1802
+  },
+  "counts": {
+    "returned": 60,
+    "advertisements": 0
+  },
+  "detail": null,
+  "startedAt": "2026-11-15T03:04:45.580Z",
+  "finishedAt": "2026-11-15T03:05:16.352Z",
+  "githubRunUrl": "https://github.com/alchemistj/ff-content-demo-factory/actions/runs/43670675618"
+}
