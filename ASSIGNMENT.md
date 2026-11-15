@@ -58,7 +58,7 @@ Canonical craft-guide wording and the Springfield example library live in `docs/
 
 ## Demo copy (Josh's standing rules, 2026-11-15)
 
-**Single source of truth: `docs/JOSH-CHECKLIST.md`.** It merges every Josh lesson: the Wichita definition of done and PRs #41–#64 (Nov 10–12), the Nov 15 notes and the ComfortTechs notes. Each item is a pass/fail test per page. Writers load it before writing. The reviewer answers every item per page with a quote as evidence. One FAIL means NOT YET. The bullets below are a summary; if they ever differ from the checklist, fix both the same day. References: `docs/reference-sites.md` (16) and `docs/reference-sites-wichita.md` (the Wichita demos after Josh's fixes).
+**Single source of truth: `docs/JOSH-CHECKLIST.md`.** It merges every Josh lesson: the Wichita definition of done and PRs #41–#64 (Nov 10–12), the Nov 15 notes and the ComfortTechs notes. Each item is a pass/fail test per page. Writers load it before writing. The reviewer answers every item per page with a quote as evidence. One FAIL means NOT YET. The bullets below are a summary; if they ever differ from the checklist, fix both the same day. References (the only models): `docs/reference-sites.md` (4 client sites + 12 Lovable builds). Never use other Astro demos as models.
 
 Josh's review of the Fort Wayne / Lincoln / Peoria batch: QA checked facts and rules, not whether the page sells. These are **automatic fails** for every future demo, whatever else passes:
 

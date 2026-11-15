@@ -1,5 +1,7 @@
 # Reference sites: Wichita demos after Josh's feedback
 
+> **Not models (Josh, Nov 15): never use other Astro demos, Wichita included, as models.** This file is history only: where some of the lessons in `docs/JOSH-CHECKLIST.md` came from. The models are the 4 client sites and the 12 Lovable builds in `docs/reference-sites.md`.
+
 Status: lookup, 2026-11-15. Sits beside the 16 references in `docs/reference-sites.md`. These are the Wichita demos in `ff-astro-demos` (origin/main, head b9f4eb1) that Josh's review loop shaped in PRs #41 to #64. Compare a page against its trade's demo here as well as against the 16, and check it with `docs/JOSH-CHECKLIST.md` (item numbers below point there).
 
 Each demo is a folder `clients/<slug>` with the words file at `clients/<slug>/content/words.json`. Live URL pattern: `https://<slug>.websitepreview.fluidframemarketing.com/` (registered in `shared-demo-host/demos-host.config.json`). Every demo has five pages: strategy at `/`, home at `/home/`, two service pages, and `/contact/`.

@@ -7,7 +7,7 @@ You're the reviewer. You didn't write this demo. Your job isn't a fact audit (th
 Edit nothing, send nothing, create no sessions, run no git.
 
 ## Read
-0. **`/home/user/ff-content-demo-factory/docs/JOSH-CHECKLIST.md` IN FULL. It is the single list of Josh's lessons. Every item is pass/fail, and one FAIL means NOT YET.** Reviewers: fill in its Reviewer table for every page, with a quote as evidence for each item. Also use the Wichita references in `docs/reference-sites-wichita.md`.
+0. **`/home/user/ff-content-demo-factory/docs/JOSH-CHECKLIST.md` IN FULL. It is the single list of Josh's lessons. Every item is pass/fail, and one FAIL means NOT YET.** Reviewers: fill in its Reviewer table for every page, with a quote as evidence for each item.
 1. **Josh's automatic fails:** `/home/user/ff-content-demo-factory/ASSIGNMENT.md`, section "Demo copy (Josh's standing rules, 2026-11-15)". Any hit is a FAIL.
 2. **The references** (listed in `docs/reference-sites.md`). Read in full the ones you compare against:
    - Client sites: `examples/approved-copy/sra/`, `window-dudes/`, `greene-planet/`, `evolve-exteriors/`.
