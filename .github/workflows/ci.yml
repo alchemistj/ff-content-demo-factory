@@ -17,6 +17,8 @@ jobs:
     steps:
       - name: Check out
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
@@ -32,3 +34,7 @@ jobs:
 
       - name: Compiled package acceptance
         run: npm run test:compiled
+
+      - name: Demo gate (changed demo folders)
+        if: github.event_name == 'pull_request'
+        run: node scripts/gate.mjs --allow-logged --changed "origin/${{ github.base_ref }}"
