@@ -94,6 +94,9 @@ check(/ok: skipped .*one submission per business/.test(second.stdout), "a second
 check(received.length === 1, "no second submission reached the form");
 
 server.close();
-fs.rmSync(path.join(root, "outreach-runs"), { recursive: true, force: true, maxRetries: 2 });
+// Remove only this test's own run folder (outreach-runs/<day>/test/), never real runs.
+for (const day of fs.existsSync(path.join(root, "outreach-runs")) ? fs.readdirSync(path.join(root, "outreach-runs")) : [])
+  fs.rmSync(path.join(root, "outreach-runs", day, "test"), { recursive: true, force: true });
+fs.rmSync(tmp, { recursive: true, force: true });
 console.log(fails.length ? `\n${fails.length} failed` : "\nAll sender checks passed");
 process.exit(fails.length ? 1 : 0);
