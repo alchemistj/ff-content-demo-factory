@@ -1,10 +1,10 @@
 QA REQUEST: jgroofing-peoria (peoria-roofing/jgroofing)
 
 Preview (not live yet; becomes https://jgroofing-peoria.websitepreview.fluidframemarketing.com/ after merge):
-- Strategy page: https://ff-astro-demos-4ag76wu1n-josh-lenzs-projects.vercel.app/__ff-preview/jgroofing-peoria/
-- /home/: https://ff-astro-demos-4ag76wu1n-josh-lenzs-projects.vercel.app/__ff-preview/jgroofing-peoria/home/
-- /roof-replacement-peoria-il/: https://ff-astro-demos-4ag76wu1n-josh-lenzs-projects.vercel.app/__ff-preview/jgroofing-peoria/roof-replacement-peoria-il/
-- /contact/: https://ff-astro-demos-4ag76wu1n-josh-lenzs-projects.vercel.app/__ff-preview/jgroofing-peoria/contact/
+- Strategy page: https://ff-astro-demos-awlj9ytyx-josh-lenzs-projects.vercel.app/__ff-preview/jgroofing-peoria/
+- /home/: https://ff-astro-demos-awlj9ytyx-josh-lenzs-projects.vercel.app/__ff-preview/jgroofing-peoria/home/
+- /roof-replacement-peoria-il/: https://ff-astro-demos-awlj9ytyx-josh-lenzs-projects.vercel.app/__ff-preview/jgroofing-peoria/roof-replacement-peoria-il/
+- /contact/: https://ff-astro-demos-awlj9ytyx-josh-lenzs-projects.vercel.app/__ff-preview/jgroofing-peoria/contact/
 
 Source and facts (the only allowed source of claims):
 - https://github.com/alchemistj/ff-content-demo-factory/blob/claude/weekend-batch/prospects/peoria-roofing/jgroofing/facts.md
@@ -17,19 +17,19 @@ Outreach message (route: - **Contact form:** https://www.jgroofingco.com/peoria)
 ---
 Hey JG Roofing team,
 
-Your reviews tell the same story: Amanda and Jose explain every step, including the insurance claim. One customer wrote that you "took the time to explain every single step" and helped them understand "exactly what was happening with our insurance company the whole way through." My daughter and I build websites for service businesses, so we made you a mockup built around it:
+Your reviews tell the same story: Amanda and Jose explain every step, including the insurance claim. One customer wrote that you "took the time to explain every single step" and helped them understand "exactly what was happening with our insurance company the whole way through." We build websites for service businesses, so we made you a mockup built around it:
 
 https://jgroofing-peoria.websitepreview.fluidframemarketing.com/?utm_source=form
 
 Note: It'll look a lot better with your logo and images on it! Lol
 
-The preview opens with a recent case study, then walks through why each page is built the way it is. One thing we'd fix: on a phone, your pages are 1225 pixels wide on a 390 pixel screen, so people have to scroll sideways to read them.
+The preview walks through why each page is built the way it is. One thing we'd fix: on a phone, your pages are 1225 pixels wide on a 390 pixel screen, so people have to scroll sideways to read them.
 
-We built your homepage and your roof replacement page as examples, and we'd love to build the rest. Which brands or manufacturers are you certified with?
-
-By the way, our contact form system would have recognized this as a solicitation, and you wouldn't have even seen it.
+We built your homepage and your roof replacement page as examples, and we'd love to build the rest.
 
 How'd we do on your company vibe?
+
+Not interested? Reply "no thanks" and you won't hear from me again.
 
 Josh
 Fluid Frame Marketing
