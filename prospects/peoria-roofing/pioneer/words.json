@@ -83,17 +83,17 @@
     {
       "name": "Standing Seam Metal Roofs",
       "route": null,
-      "blurb": "Panels joined at raised seams, with the fasteners usually hidden beneath."
+      "blurb": "Standing seam metal roofing."
     },
     {
       "name": "Corrugated Metal Roofs",
       "route": null,
-      "blurb": "Wavy-profile panels, fastened through the face of the panel."
+      "blurb": "Corrugated metal roofing."
     },
     {
       "name": "Metal Roof Installation and Design",
       "route": null,
-      "blurb": "Choosing the panel and putting it on, from one company."
+      "blurb": "Metal roof installation and design."
     },
     {
       "name": "Roof Repair",
@@ -117,7 +117,7 @@
           "action": "call"
         },
         "secondaryCta": {
-          "label": "Ask About a Metal Roof",
+          "label": "Contact us",
           "action": "contact"
         },
         "image": {
@@ -133,19 +133,11 @@
           "name": "Jb G."
         },
         {
-          "type": "prose",
-          "heading": "A Metal Roof Is a Bigger Question Than Shingles",
-          "body": [
-            "You have seen metal on barns, churches and the shop down the road. On a house it is a different decision, and the quote in your hand may not say much: which kind of panel, which finish, and what the roof sits on.",
-            "A roofer that specializes in metal can answer those questions. That is the work Pioneer Roofing does."
-          ]
-        },
-        {
           "type": "split",
           "heading": "Metal Roofing Is the Work We Do",
           "body": [
             "Pioneer Roofing installs metal roofs on homes and on commercial buildings. That covers standing seam and corrugated panels, and for houses, metal shingles and specialty coated systems.",
-            "We also do metal roof installation and design, so choosing the panel and putting it up come from the same company."
+            "Metal roof installation and design is part of the work too."
           ],
           "list": [
             "Residential and commercial metal roofs",
@@ -162,10 +154,9 @@
         },
         {
           "type": "prose",
-          "heading": "A Repair Call Should End With You Understanding the Roof",
+          "heading": "Repairs as Well as New Roofs",
           "body": [
-            "Not every call is for a new roof. We handle repairs too, so a leak or a problem with the roof's venting does not have to turn into a replacement quote.",
-            "A repair call should leave you knowing what was wrong and what was done about it."
+            "Pioneer Roofing also handles roof repairs, including attic venting."
           ]
         },
         {
@@ -179,63 +170,15 @@
           "intro": "Metal roofing comes first, for homes and for commercial buildings. Repairs follow."
         },
         {
-          "type": "prose",
-          "heading": "Which Metal Roof Fits Which Building",
-          "body": [
-            "Metal roofing is not one product. These are the kinds you will hear about, in plain words, so you know what to ask for."
-          ],
-          "items": [
-            {
-              "title": "Standing seam",
-              "text": "Long panels joined at raised seams, with the fasteners usually hidden underneath. The surface stays smooth."
-            },
-            {
-              "title": "Corrugated",
-              "text": "Panels with a wavy profile, the look most people picture on barns and outbuildings. The fasteners usually go through the face of the panel."
-            },
-            {
-              "title": "Metal shingles",
-              "text": "Smaller pieces of metal made to resemble shingles, shake or slate, for a house that should still look like a house."
-            },
-            {
-              "title": "Commercial metal roofing",
-              "text": "A larger building brings different questions: drainage, access to the roof and how the space underneath is used."
-            }
-          ]
-        },
-        {
           "type": "review",
           "quote": "Great people to do business with very fair and transparent",
           "name": "Marty B."
         },
         {
           "type": "prose",
-          "heading": "Homes and Commercial Buildings Want Different Things",
-          "body": [
-            "A house has valleys, a chimney and a ridge to work around, and the roof is part of how the house looks from the street.",
-            "A commercial building is usually larger and simpler in shape, so drainage and access matter more than curb appeal. We install metal roofs on both.",
-            "Either way, the choice of roof should start from the building, not from a catalog."
-          ]
-        },
-        {
-          "type": "prose",
-          "heading": "What a Metal Roof Quote Should Spell Out",
-          "body": [
-            "A good quote names the kind of panel, says how it is fastened and describes the details at the edges, valleys and vents. If any of that is missing, ask. The [metal roofing page](/metal-roofing-peoria-il/) lists the five questions worth asking any roofer, us included."
-          ]
-        },
-        {
-          "type": "prose",
           "heading": "Peoria and the Towns Around It",
           "body": [
             "Our office is at 202 SW Center St in Peoria. We work in Peoria and in the towns around it: Bartonville, Bellevue, Canton, Chillicothe, Creve Coeur, Danvers, Delavan, Dunlap, East Peoria, Elmwood, Eureka, Farmington, Germantown Hills, Glasford, Hanna City, Heritage Lake, Lacon, Lake Camelot, Mackinaw, Manito, Marquette Heights, Metamora, Minier, Morton, Norris, North Pekin, North Peoria, Pekin, Peoria Heights, Princeville, Richmond, Roanoke, Rome, South Pekin and Walnut."
-          ]
-        },
-        {
-          "type": "prose",
-          "heading": "Solar on a New Roof",
-          "body": [
-            "Some roof owners are weighing solar panels along with a new roof. If that is on your list, say so when you call, so it is part of the conversation from the start."
           ]
         },
         {
@@ -255,20 +198,12 @@
               "a": "Both. Repairs are part of the work."
             },
             {
-              "q": "Which kind of metal roof should I ask about?",
-              "a": "Start with the building and the look you want. Standing seam gives a smooth surface, corrugated a ribbed one, and metal shingles resemble shingles, shake or slate. Call and we can talk through which one suits your roof."
-            },
-            {
               "q": "Which towns do you work in?",
               "a": "Peoria and the towns around it, from Canton and Lacon to Eureka and Morton. The full list is above."
             },
             {
               "q": "Where is Pioneer Roofing?",
-              "a": "Our office is at 202 SW Center St in Peoria, IL 61605, and the number is (309) 865-5471."
-            },
-            {
-              "q": "Can I ask about solar panels on my roof?",
-              "a": "Yes. Tell us when you call that solar is on your list."
+              "a": "Our office is at 202 SW Center St in Peoria, IL 61605."
             }
           ]
         },
@@ -294,7 +229,7 @@
           "action": "call"
         },
         "secondaryCta": {
-          "label": "Ask About a Metal Roof",
+          "label": "Contact us",
           "action": "contact"
         },
         "image": {
@@ -313,8 +248,8 @@
           "type": "split",
           "heading": "Metal Roofs on Peoria Homes and Commercial Buildings",
           "body": [
-            "Pioneer Roofing installs metal roofs for houses and for commercial buildings. On a house that can mean panels, metal shingles or specialty coated systems. On a larger building it usually means panels.",
-            "Metal roof installation and design is part of what we do, so the choice of panel, color and trim and the work of putting it on come from the same place."
+            "Pioneer Roofing installs metal roofs for houses and for commercial buildings. On a house that can mean panels, metal shingles or specialty coated systems.",
+            "We also do metal roof installation and design."
           ],
           "image": {
             "slot": "new-roof-ranch",
@@ -325,94 +260,15 @@
         },
         {
           "type": "prose",
-          "heading": "Standing Seam, Corrugated and Metal Shingles",
+          "heading": "Kinds of Metal Roof We Install",
           "body": [
-            "The names get used loosely, so here is what each one means."
+            "Pioneer Roofing has a page for each of these on its site:"
           ],
-          "items": [
-            {
-              "title": "Standing seam",
-              "text": "Long panels that run along the roof and join at raised seams. The fasteners are usually hidden beneath the seams, so the roof surface is smooth with no screw heads showing."
-            },
-            {
-              "title": "Corrugated",
-              "text": "Panels with a wavy profile, which is the look most people picture on a barn or a shed, usually fastened through the face of the panel."
-            },
-            {
-              "title": "Metal shingles",
-              "text": "Small pieces of metal made to resemble shingles, shake or slate. They are for people who want a metal roof that does not look like a barn."
-            }
-          ]
-        },
-        {
-          "type": "prose",
-          "heading": "Choosing a Metal Roof for a House",
-          "body": [
-            "For a house, the roof is part of how the home looks from the street, so the decision is partly about appearance. The panel type, the color and the trim along the edges all show.",
-            "It is also about the roof's shape. A simple gable takes metal differently than a roof with valleys, dormers and a chimney, and the details at those spots decide how the roof sheds water."
-          ]
-        },
-        {
-          "type": "review",
-          "quote": "This company is definitely determine get the job done",
-          "name": "Ernest R."
-        },
-        {
-          "type": "split",
-          "heading": "Where a Metal Roof Is Won or Lost: Edges, Valleys and Vents",
-          "body": [
-            "Water gets into any roof where the roof changes direction or something passes through it. On metal, that means the trim at the edges, the valleys, the vents and the chimney.",
-            "Metal also expands and contracts with the temperature. A good installation allows for that, which is one more reason to ask how the trim is made and fastened."
-          ],
-          "image": {
-            "slot": "repair-flashing",
-            "alt": "Flashing and trim detail where a roof meets a vent",
-            "brief": "close view of a roof vent with flashing and trim around it, daylight, no people, no readable text"
-          },
-          "imageSide": "left"
-        },
-        {
-          "type": "prose",
-          "heading": "Commercial Metal Roofing",
-          "body": [
-            "A commercial building is usually bigger and simpler in shape than a house, so the questions change. How does water leave the roof? How do people get up there for service? What is going on underneath?",
-            "Pioneer Roofing installs commercial metal roofs as well as residential ones."
-          ]
-        },
-        {
-          "type": "prose",
-          "heading": "Questions to Ask Before You Sign for a Metal Roof",
-          "body": [
-            "A metal roof quote can leave out parts that matter. Ask any roofer, including us, these five things."
-          ],
-          "items": [
-            {
-              "title": "Which panel is it, and why?",
-              "text": "The answer should name the type and tie it to your roof, not just say metal."
-            },
-            {
-              "title": "How is it fastened?",
-              "text": "Hidden fasteners and exposed fasteners age differently."
-            },
-            {
-              "title": "What goes underneath?",
-              "text": "The layer under the metal matters as much as the metal."
-            },
-            {
-              "title": "How are the details handled?",
-              "text": "Edges, valleys, vents and chimneys are where leaks start."
-            },
-            {
-              "title": "Who stands behind it?",
-              "text": "Get what the roofer covers and what the manufacturer covers in writing."
-            }
-          ]
-        },
-        {
-          "type": "prose",
-          "heading": "Repairs and Solar",
-          "body": [
-            "A metal roof that already exists can need work too, and we handle repairs. If you are thinking about solar panels on the roof, mention it when you call so it is part of the conversation from the start."
+          "list": [
+            "Standing seam metal roofs",
+            "Corrugated metal roofs",
+            "Residential metal roofing: panels, metal shingles or specialty coated systems",
+            "Commercial metal roofing"
           ]
         },
         {
@@ -420,16 +276,8 @@
           "heading": "Questions About Metal Roofing in Peoria",
           "items": [
             {
-              "q": "How is a metal roof different from a shingle roof?",
-              "a": "A shingle roof is many small pieces laid in overlapping rows. A metal roof is long panels or larger pieces fastened to the roof, with the joints and trim doing the work of keeping water out."
-            },
-            {
               "q": "Do you install metal roofs on commercial buildings?",
               "a": "Yes, along with residential metal roofs."
-            },
-            {
-              "q": "What does a metal roof cost?",
-              "a": "It depends on the building, the kind of panel and the shape of the roof, so we do not name a number sight unseen. Call (309) 865-5471 and ask."
             },
             {
               "q": "Can you do standing seam and corrugated?",
@@ -464,7 +312,7 @@
         },
         "image": {
           "slot": "contact-street",
-          "alt": "Street of single-family homes in Peoria",
+          "alt": "Street of single-family homes",
           "brief": "residential street with single-family houses and their rooflines, daylight, no people, no readable text"
         }
       },
@@ -545,11 +393,11 @@
         "why": "Metal roofing is your specialty, and today it is spread over six short pages.",
         "problems": [
           "Each metal page runs about 260 to 300 words, and none of the headlines names Peoria, so a search for metal roofing in Peoria, IL doesn't match them.",
-          "A homeowner has to open six pages to learn how standing seam, corrugated and metal shingles differ."
+          "A homeowner has to open six pages to see which kinds of metal roof you install."
         ],
         "fixes": [
-          "One page for metal roofing in Peoria, IL, with homes, commercial buildings and the differences between the kinds in plain words.",
-          "Five questions to ask any roofer before signing for a metal roof."
+          "One page for metal roofing in Peoria, IL, covering homes, commercial buildings and the kinds of metal roof you install.",
+          "A call to action on the page, with your address and one phone number."
         ],
         "alsoAdd": "Pages planned from what Google actually shows for each search, so every page targets something people really look for."
       },
@@ -597,7 +445,7 @@
     ],
     "closing": {
       "heading": "Want a website like this for your business?",
-      "text": "Your customers already call you responsive, fair and transparent. Book a strategy call with Fluid Frame and we'll walk you through this demo and plan your new site."
+      "text": "Customers describe you as responsive, and one calls you fair and transparent. Book a strategy call with Fluid Frame and we'll walk you through this demo and plan your new site."
     },
     "confirm": {
       "heading": "What we'd confirm with you",
@@ -610,9 +458,9 @@
     },
     "offer": {
       "heading": "The offer we'd build with you",
-      "text": "This is a proposal for you to decide on, not something Pioneer Roofing does today. It is a one-page metal roof spec handed to the owner before the work starts: the kind of panel and finish, how it is fastened, what goes underneath, how the edges, valleys and vents are handled, and what you and the manufacturer each stand behind. As far as we found, none of the top Peoria roofers we checked offers a sheet like it.",
+      "text": "This is a proposal for you to decide on, not something Pioneer Roofing does today. It is a one-page metal roof spec handed to the owner before the work starts: the kind of panel and finish, how it is fastened, what goes underneath, how the edges, valleys and vents are handled, and what you and the manufacturer each stand behind. As far as we found, none of the three competitor sites we could read offers a sheet like it.",
       "points": [
-        "The five questions on the metal roofing page become five lines of one sheet, filled in for the owner's actual roof.",
+        "The sheet is filled in for the owner's actual roof, one line for each of those details.",
         "A homeowner can set that sheet beside any other bid, shingle or metal.",
         "Terms and what you put in writing are yours to set."
       ]

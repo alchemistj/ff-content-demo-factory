@@ -25,7 +25,7 @@
     }
   },
   "trustBar": [
-    "Free Estimates",
+    "Free Roofing Estimates",
     "Roofs, Siding and Gutters",
     "Open Monday to Saturday"
   ],
@@ -82,7 +82,7 @@
           "action": "call"
         },
         "secondaryCta": {
-          "label": "Get a Free Estimate",
+          "label": "Contact us",
           "action": "contact"
         },
         "image": {
@@ -109,8 +109,8 @@
           "type": "split",
           "heading": "Jose Looks at the Roof. Amanda Walks You Through the Claim.",
           "body": [
-            "Two people handle your job from the first call to the last day. Jose comes out, gets a look at the roof and explains what it needs. If a repair is all it needs, a repair is what you hear.",
-            "Amanda sits down with you on the paperwork. She explains each step of the claim and what to expect while the work is scheduled, and she deals with your insurance company or agent alongside you.",
+            "Jose comes out, looks over the roof and explains what it needs.",
+            "Amanda explains each step of the claim and what to expect while the work is scheduled, and she works with your insurance company or agent.",
             "We can't tell you what your insurance company will decide. We can make sure you know what is happening while they decide."
           ],
           "list": [
@@ -127,14 +127,6 @@
           "imageSide": "right"
         },
         {
-          "type": "prose",
-          "heading": "Fixing a Roof Is Stressful Enough Without Guessing",
-          "body": [
-            "Most people hire a roofer once or twice in their lives. You're dealing with a leak or a storm, a claim and a stranger on your roof, all in the same month.",
-            "What helps is having someone keep track for you: a person who answers your questions as they come up and tells you what happens next. We want that to be our job, on top of the roof itself."
-          ]
-        },
-        {
           "type": "review",
           "quote": "Absolutely the best experience I've ever had a home improvement/maintenence business. Getting work on the house is stressful and Amanda and Jose make it as stress free as possible.",
           "name": "Christopher L."
@@ -143,8 +135,7 @@
           "type": "split",
           "heading": "One Storm Can Hit the Roof, the Siding and the Gutters",
           "body": [
-            "Hail doesn't stop at the shingles. It dents gutters, and wind can leave siding, fascia and soffit needing work too. We install siding and gutters along with roofs, so one team can cover what the storm hit.",
-            "Handling it together also means one set of people to call. You don't have to explain your house to three different companies, or wonder which one is waiting on the other."
+            "JG Roofing installs siding and gutters along with roofs, and replaces fascia and soffit with the roof. A storm job that reaches more than the shingles can stay with one company."
           ],
           "image": {
             "slot": "gutter-roof-edge",
@@ -161,7 +152,7 @@
         {
           "type": "services",
           "heading": "What We Do in Peoria",
-          "intro": "Roof replacement comes first, because it's the job most calls turn into. Repairs, siding, gutters and metal roofs follow."
+          "intro": "Roof replacement, repairs, siding, gutters and metal roofs."
         },
         {
           "type": "prose",
@@ -172,15 +163,15 @@
           "items": [
             {
               "title": "A storm went through and nobody has looked at the roof",
-              "text": "Hail damage can sit on a roof for months before it leaks. A look now is easier than a ceiling stain later."
+              "text": "Call for a free roofing estimate, and Jose looks at the roof."
             },
             {
               "title": "A stain on the ceiling after a heavy rain",
-              "text": "Water often shows up a long way from where it gets in. It may be a repair, not a whole new roof, and you find out by getting up there."
+              "text": "Jose comes out to look at the roof."
             },
             {
               "title": "A cracked seal around a vent pipe",
-              "text": "A small gap can let water in without any storm at all. Fixing a vent seal is a job we do."
+              "text": "Fixing a vent seal is a job we do."
             },
             {
               "title": "A letter from your insurance company",
@@ -188,21 +179,21 @@
             },
             {
               "title": "A roof that has simply gotten old",
-              "text": "When shingles are worn across the whole roof, patching stops making sense. Jose tells you where yours stands."
+              "text": "Jose tells you where yours stands."
             }
           ]
         },
         {
           "type": "review",
-          "quote": "Jose actually came to inspect our roof three times. The first when we were thinking of replacing it, the second after a hail storm, and the third when the insurance tried to short change us. … Should this Illinois weather damage my roof again, I know who I am calling.",
+          "quote": "Jose actually came to inspect our roof three times. The first when we were thinking of replacing it, the second after a hail storm … Should this Illinois weather damage my roof again, I know who I am calling.",
           "name": "Robert T."
         },
         {
           "type": "split",
-          "heading": "When the Adjuster Is Coming, You Aren't Alone With It",
+          "heading": "Insurance Claims: What to Expect",
           "body": [
-            "Meeting an adjuster for the first time is easier when someone has told you what the visit is for. Amanda explains the claim process and what to expect, so you know what to ask.",
-            "Our part is the roof, the explaining and the paperwork. Coverage and settlement stay between you and your insurance company, and your agent is the right person for questions about your policy."
+            "Amanda explains the claim process and what to expect, so you know what to ask.",
+            "Coverage and settlement stay between you and your insurance company, and your agent is the right person for questions about your policy."
           ],
           "image": {
             "slot": "adjuster-meeting",
@@ -210,14 +201,6 @@
             "brief": "two people at a driveway edge looking over a clipboard of papers, a house with a roof behind them, daytime, no readable text"
           },
           "imageSide": "right"
-        },
-        {
-          "type": "prose",
-          "heading": "The Day the Crew Is There",
-          "body": [
-            "Plenty of roofs go on in a single day. A larger roof, a complicated roofline or bad weather can stretch that out, so we give you a timeframe before the work starts.",
-            "Cleanup is part of the job. When the crew is done, the yard is cleaned up too."
-          ]
         },
         {
           "type": "review",
@@ -234,7 +217,7 @@
             },
             {
               "title": "Jose looks at the roof.",
-              "text": "He tells you what he sees and what it needs, whether that is a repair or a replacement."
+              "text": "He tells you what he sees and what the roof needs."
             },
             {
               "title": "Amanda covers the rest.",
@@ -242,7 +225,7 @@
             },
             {
               "title": "The crew does the work.",
-              "text": "We give you a date and a timeframe, and the yard gets cleaned up afterward."
+              "text": "Customers describe roofs finished in a day and a yard cleaned up afterward."
             }
           ]
         },
@@ -259,15 +242,15 @@
           "items": [
             {
               "q": "Is the estimate free?",
-              "a": "Yes, for roofing work. Call (309) 567-8236 and we'll set a time for Jose to look at the roof."
+              "a": "Yes, for roofing work. Call (309) 567-8236 and we'll set a time for Jose to come out."
             },
             {
               "q": "Do you work with insurance companies?",
-              "a": "Yes. Amanda walks you through the claim and works with your insurance company or agent alongside you. Coverage is up to your insurer, so ask them what your policy includes."
+              "a": "Yes. Amanda walks you through the claim and works with your insurance company or agent. Coverage is up to your insurer, so ask them what your policy includes."
             },
             {
-              "q": "Do I need a whole new roof?",
-              "a": "Not always. A leaking vent seal or one worn spot can be a repair, and Jose says which it is after he looks."
+              "q": "Does the roof need replacing?",
+              "a": "Jose looks at the roof and tells you what it needs. Call (309) 567-8236 to set a time."
             },
             {
               "q": "Can you do the siding and gutters at the same time?",
@@ -275,7 +258,7 @@
             },
             {
               "q": "How long does a replacement take?",
-              "a": "It depends on the size of the roof, its shape and the weather. We tell you the timeframe up front."
+              "a": "Several customers describe the work finished in a day. Call (309) 567-8236 and ask about your roof."
             },
             {
               "q": "What kind of roofs do you install?",
@@ -299,13 +282,13 @@
       "hero": {
         "eyebrow": "Roof replacement, Peoria",
         "h1": "Roof Replacement in Peoria, IL — JG Roofing and Company",
-        "sub": "Age, hail or a leak that keeps coming back usually starts this search. Jose looks at the roof first and tells you whether it needs replacing at all. Amanda takes you through the rest, including the claim if there is one.",
+        "sub": "Age, hail or a leak that keeps coming back usually starts this search. Jose tells you what the roof needs once he has looked at it. Amanda takes you through the rest, including the claim if there is one.",
         "primaryCta": {
           "label": "Call (309) 567-8236",
           "action": "call"
         },
         "secondaryCta": {
-          "label": "Get a Free Estimate",
+          "label": "Contact us",
           "action": "contact"
         },
         "image": {
@@ -324,8 +307,7 @@
           "type": "split",
           "heading": "Replace It or Repair It?",
           "body": [
-            "A new roof is a big bill, so the first question is whether you need one at all. A failed seal around a vent or a worn patch is a repair, and we do repairs.",
-            "Hail damage spread across the roof, shingles worn out everywhere, or leaks in more than one place point to replacement. After looking over the whole roof, Jose says which it is."
+            "JG Roofing does roof repairs and full replacements. Jose looks over the whole roof and says which one yours needs."
           ],
           "image": {
             "slot": "repair-flashing",
@@ -335,40 +317,11 @@
           "imageSide": "right"
         },
         {
-          "type": "prose",
-          "heading": "Signs a Roof Is Past Patching",
-          "body": [
-            "Not every worn roof needs replacing, and not every leak is the roof's fault. These are the signs that point toward a new roof instead of another repair."
-          ],
-          "items": [
-            {
-              "title": "Cracked, curling or missing shingles in many places",
-              "text": "One lifted tab is a repair. The same damage across most of the roof is a different problem."
-            },
-            {
-              "title": "Granules collecting in the gutters",
-              "text": "Shingles lose their gritty top layer as they wear out and when hail bruises them. It washes down to the gutter and the downspout."
-            },
-            {
-              "title": "Leaks in more than one spot",
-              "text": "A single leak often traces to one vent or one flashing. Stains in several rooms can mean the roof itself is failing."
-            },
-            {
-              "title": "Soft or sagging areas",
-              "text": "A roof that feels spongy underfoot may have damaged wood underneath, and that takes more than new shingles."
-            },
-            {
-              "title": "Dents on gutters and vents after a storm",
-              "text": "Hail that dents metal can bruise the shingles beside it, even when the roof looks fine from the yard."
-            }
-          ]
-        },
-        {
           "type": "split",
           "heading": "After Hail or Wind, There Is a Claim Running Beside the Roof",
           "body": [
-            "You're managing two things at once: the roof and the paperwork. Amanda explains each step of the claim and what to expect while the work is scheduled.",
-            "A claim can take weeks or months. Questions come up in the meantime, and she answers them. Coverage and settlement are between you and your insurance company, and we don't guess at what they will decide."
+            "Amanda explains each step of the claim and what to expect while the work is scheduled.",
+            "Coverage and settlement are between you and your insurance company, and we don't guess at what they will decide."
           ],
           "image": {
             "slot": "hail-damage-roof",
@@ -388,23 +341,19 @@
           "items": [
             {
               "title": "A free look at the roof",
-              "text": "Jose comes out and tells you what the roof needs. Roofing estimates cost nothing."
+              "text": "Jose comes out and looks at the roof. Roofing estimates cost nothing."
             },
             {
               "title": "The claim, if there is one",
               "text": "Explaining the process, answering questions and working with your insurance company or agent is Amanda's part."
             },
             {
-              "title": "A date and a timeframe",
-              "text": "Once the job is approved, you hear when the crew is coming and how long to plan for."
-            },
-            {
               "title": "Old roof off, new roof on",
-              "text": "The crew strips the old roofing and puts the new roof on. A day is enough for some roofs."
+              "text": "The crew strips the old roofing and puts the new roof on. Several customers describe the work finished in one day."
             },
             {
               "title": "Cleanup",
-              "text": "The yard gets cleaned up before the crew leaves."
+              "text": "Customers mention a cleaned-up yard when the crew left."
             }
           ]
         },
@@ -415,10 +364,9 @@
         },
         {
           "type": "prose",
-          "heading": "Shingle or Metal: Choosing the Roof",
+          "heading": "Shingle or Metal Roofs",
           "body": [
-            "We install traditional asphalt shingle roofs and metal roofs. Which one suits your house depends on the roof, your budget and the look you want.",
-            "Jose can talk it through when he is out looking at the roof, so you pick a material with the real roof in front of you instead of from a brochure."
+            "We install traditional asphalt shingle roofs and metal roofs."
           ]
         },
         {
@@ -430,8 +378,8 @@
           "type": "split",
           "heading": "Gutters, Siding, Fascia and Soffit Along With the Roof",
           "body": [
-            "The roof meets the gutters, fascia and soffit at the edge of the house, so those are the parts a replacement touches first. Gutters and gutter guards go in with the roof, and fascia and soffit get replaced too.",
-            "If hail also hit the siding, we install siding too. One team can cover everything the storm reached, from the ridge down to the downspouts."
+            "Gutters and gutter guards can be installed with the roof, and fascia and soffit can be replaced too.",
+            "If the siding needs work as well, we install siding."
           ],
           "image": {
             "slot": "gutter-roof-edge",
@@ -446,34 +394,16 @@
           "name": "Michael M."
         },
         {
-          "type": "split",
-          "heading": "The Day the Crew Comes",
-          "body": [
-            "A bigger or more complicated roof takes longer than a simple one, and weather has a say as well. Plan around the timeframe you were given rather than a single date.",
-            "Expect noise and a crew on the roof, and expect the yard to be cleaned up when they finish."
-          ],
-          "image": {
-            "slot": "crew-tearoff",
-            "alt": "Crew removing old shingles from a roof",
-            "brief": "two or three roofers tearing off old shingles on a pitched roof, daylight, tarp below, no readable text"
-          },
-          "imageSide": "left"
-        },
-        {
           "type": "faq",
           "heading": "Questions About Replacing a Roof",
           "items": [
             {
-              "q": "How much does a roof replacement cost?",
-              "a": "It depends on the size and shape of the roof and the material you choose, so we don't quote a number sight unseen. Call (309) 567-8236 and ask for the free estimate."
+              "q": "How do I get an estimate?",
+              "a": "Roofing estimates are free. Call (309) 567-8236 and we'll set a time to come out."
             },
             {
               "q": "Will my insurance pay for a new roof?",
               "a": "That is between you and your insurance company, and your agent can tell you what your policy includes. We explain the claim steps and what to expect along the way."
-            },
-            {
-              "q": "Do I need to replace the whole roof?",
-              "a": "Not always. One leaking vent seal or a worn spot is a repair. The whole roof gets looked at first."
             },
             {
               "q": "Can the gutters be replaced at the same time?",
@@ -481,7 +411,7 @@
             },
             {
               "q": "How soon can you start?",
-              "a": "It depends on the weather and our schedule. Call, and we'll tell you where things stand."
+              "a": "Call (309) 567-8236, and we'll tell you where the schedule stands."
             }
           ]
         },
@@ -508,7 +438,7 @@
         },
         "image": {
           "slot": "contact-porch-roofline",
-          "alt": "Front porch and roofline of a Peoria home",
+          "alt": "Front porch and roofline of a house",
           "brief": "front porch and roofline of a single-family house seen from the walkway, daylight, no people, no readable text"
         }
       },
@@ -655,12 +585,12 @@
       "items": [
         "Your contact block and your Google listing show (309) 567-8236, while your Call or Text button dials (309) 316-3652, so which number is live, and who answers each one? This demo uses the Google number.",
         "Your About page says BBB A+ accredited, while we found no BBB profile for you, so is the accreditation current, and should it go on your listings?",
-        "A search result for your Angi listing says you don't offer emergency service, while your site says nothing either way and a review has Jose coming out on a Sunday, so what should every listing say about after-hours calls?"
+        "A search result for your Angi listing says you don't offer emergency service, while your site says nothing either way, so what should every listing say about after-hours calls?"
       ]
     },
     "offer": {
       "heading": "The offer we'd build with you",
-      "text": "This is a proposal for you to decide on, not something JG Roofing does today. It is a one-page claim and job timeline, handed to the homeowner before the tear-off, with each step in order. As far as we found, none of the top Peoria roofers we checked offers one.",
+      "text": "This is a proposal for you to decide on, not something JG Roofing does today. It is a one-page claim and job timeline, handed to the homeowner before the tear-off, with each step in order. As far as we found, none of the three competitor sites we could read offers one.",
       "points": [
         "Amanda already explains the claim step by step. Put the steps on one page the homeowner keeps: the adjuster visit, what the insurance company sends, and who to call with a question.",
         "Add the date, the timeframe and the cleanup on the same page, so the week of the work holds no surprises.",
