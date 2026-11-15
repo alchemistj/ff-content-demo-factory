@@ -1,6 +1,6 @@
-# https://sandhillroofing.com
+# https://www.sandhillroofing.com
 
-- Fetched: 2026-11-15T21:45:34.434Z (rendered in a real browser)
+- Fetched: 2026-11-15T21:47:24.196Z (rendered in a real browser)
 - HTTP: 200
 - Title: Roofing Contractor | Lincoln, NE | Sandhill Roofing
 - H1: (none)

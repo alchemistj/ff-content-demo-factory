@@ -14,12 +14,15 @@ const [folder, start, maxArg] = process.argv.slice(2);
 if (!folder || !start) { console.error("usage: fetch-site-text.mjs <prospect-folder> <site-url> [max-pages]"); process.exit(2); }
 const max = Number(maxArg) || 30;
 const origin = new URL(start).origin;
+// Same site = the start host or any subdomain of its base domain (some builders put pages on services.example.com, contact.example.com).
+const baseDomain = new URL(start).hostname.replace(/^www\./, "").split(".").slice(-2).join(".");
+const sameSite = (u) => { try { const h = new URL(u).hostname; return h === baseDomain || h.endsWith("." + baseDomain); } catch { return false; } };
 const outDir = path.join(folder, "site");
 mkdirSync(outDir, { recursive: true });
 
 const norm = (u) => { try { const x = new URL(u, origin); x.hash = ""; x.search = ""; return x.href.replace(/\/$/, ""); } catch { return null; } };
 const skip = /\.(pdf|jpe?g|png|gif|webp|svg|zip|docx?|xlsx?|mp4|mp3)$|\/(wp-admin|wp-login|cart|checkout|my-account|feed|tag|author)\b|mailto:|tel:/i;
-const slugOf = (u) => (new URL(u).pathname.replace(/^\/|\/$/g, "").replace(/[^a-z0-9]+/gi, "-").toLowerCase() || "home").slice(0, 80);
+const slugOf = (u) => { const x = new URL(u); const sub = x.hostname.replace(/^www\./, "").split(".").slice(0, -2).join("-"); const p = x.pathname.replace(/^\/|\/$/g, "").replace(/[^a-z0-9]+/gi, "-").toLowerCase(); return ([sub, p].filter(Boolean).join("-") || "home").slice(0, 80); };
 
 const browser = await chromium.launch();
 const page = await browser.newPage({ viewport: { width: 1440, height: 900 } });
@@ -28,7 +31,7 @@ const seen = new Set();
 const index = [];
 while (queue.length && seen.size < max) {
   const url = queue.shift();
-  if (!url || seen.has(url) || !url.startsWith(origin) || skip.test(url)) continue;
+  if (!url || seen.has(url) || !sameSite(url) || skip.test(url)) continue;
   seen.add(url);
   try {
     const res = await page.goto(url, { waitUntil: "domcontentloaded", timeout: 45000 });
@@ -51,7 +54,7 @@ while (queue.length && seen.size < max) {
     writeFileSync(path.join(outDir, `${slug}.md`),
       `# ${url}\n\n- Fetched: ${new Date().toISOString()} (rendered in a real browser)\n- HTTP: ${status}\n- Title: ${data.title}\n- H1: ${data.h1.join(" | ") || "(none)"}\n- tel: links: ${data.tels.join(", ") || "(none)"}\n- Words: ${words}\n\n---\n\n${data.text}\n`);
     index.push(`| ${slug}.md | ${url} | ${status} | ${words} | ${data.title.replace(/\|/g, "/")} |`);
-    for (const l of data.links) { const n = norm(l); if (n && n.startsWith(origin) && !seen.has(n) && !skip.test(n)) queue.push(n); }
+    for (const l of data.links) { const n = norm(l); if (n && sameSite(n) && !seen.has(n) && !skip.test(n)) queue.push(n); }
     console.log(`${status} ${words}w ${url}`);
   } catch (e) {
     index.push(`| (failed) | ${url} | error | 0 | ${String(e.message).slice(0, 60)} |`);
