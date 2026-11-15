@@ -20,6 +20,14 @@
 //   - Screenshots: the filled form before submit, and the page after submit.
 // Output: outreach-runs/<YYYY-MM-DD>/<mode>/ with screenshots, log.json, log.md and hand-send.md.
 // GoHighLevel logging (demo-sent tag plus a "Demo sent" note) is done from log.json after a --send run.
+//
+// Josh's rules (FF Architect, 2026-11-15), enforced here:
+//   - One submission per business, ever: outreach/sent-ledger.json (keyed by the site's domain) is checked before
+//     every entry and written after every confirmed send (business, URL, time, message, screenshots).
+//   - Honor "stop": a business in outreach/do-not-contact.json is never contacted (add it the day they reply stop).
+//   - Skip any site that says it doesn't want solicitations.
+//   - Real identity only (the queue's sender), never bypass a CAPTCHA (see above).
+//   --ledger <file> / --dnc <file> point at other lists (the test run uses its own, so it never touches the real ledger).
 import fs from "node:fs";
 import path from "node:path";
 import { createRequire } from "node:module";
@@ -33,6 +41,7 @@ if (!queuePath) { console.error("usage: send-outreach.mjs <queue.json> [--send] 
 const SEND = args.includes("--send");
 const onlyArg = args[args.indexOf("--only") + 1];
 const only = args.includes("--only") && onlyArg ? new Set(onlyArg.split(",")) : null;
+const argVal = (flag) => (args.includes(flag) ? args[args.indexOf(flag) + 1] : null);
 
 const root = path.resolve(path.dirname(new URL(import.meta.url).pathname), "..");
 const queue = JSON.parse(fs.readFileSync(queuePath, "utf8"));
@@ -41,6 +50,16 @@ const day = new Intl.DateTimeFormat("en-CA", { timeZone: "America/Chicago" }).fo
 const queueName = path.basename(queuePath, ".json").replace(/^queue-/, "");
 const outDir = path.join(root, "outreach-runs", day, queueName, SEND ? "send" : "dry-run");
 fs.mkdirSync(outDir, { recursive: true });
+
+// One submission per business, ever, and the stop list.
+const ledgerPath = path.resolve(argVal("--ledger") ?? path.join(root, "outreach", "sent-ledger.json"));
+const dncPath = path.resolve(argVal("--dnc") ?? path.join(root, "outreach", "do-not-contact.json"));
+const readList = (p) => { try { return JSON.parse(fs.readFileSync(p, "utf8")); } catch { return []; } };
+const ledger = readList(ledgerPath);
+const dnc = readList(dncPath);
+const domainOf = (u) => { try { return new URL(u).hostname.replace(/^www\./, "").toLowerCase(); } catch { return String(u).toLowerCase(); } };
+const sameBusiness = (a, entry) => a.domain === domainOf(entry.formUrl) || (a.company && a.company.toLowerCase() === entry.company.toLowerCase());
+const NO_SOLICIT = /no solicit|solicitors? (are )?not|not (accept|want)(ing)? solicitations|solicitations? (are )?not (accepted|welcome)|do not (send|contact us with) (sales|marketing|solicitations)|no (sales|marketing) (calls|emails|inquiries|pitches)|vendors? (and|or) solicit/i;
 
 function readMessage(prospect, heading = "Message") {
   const md = fs.readFileSync(path.join(root, prospect, "outreach.md"), "utf8");
@@ -130,8 +149,11 @@ const context = await browser.newContext({
 
 for (const entry of queue.entries) {
   if (only && !only.has(entry.slug)) continue;
-  const r = { slug: entry.slug, company: entry.company, formUrl: entry.formUrl, mode: SEND ? "send" : "dry-run", approved: !!entry.approved, status: "", reason: "", fields: [], shots: [] };
+  const r = { slug: entry.slug, company: entry.company, formUrl: entry.formUrl, mode: SEND ? "send" : "dry-run", approved: !!entry.approved, status: "", reason: "", fields: [], shots: [], time: new Date().toISOString() };
   results.push(r);
+  if (dnc.some((d) => sameBusiness(d, entry))) { r.status = "skipped"; r.reason = "on the do-not-contact list (they asked us to stop)"; console.log(`${entry.slug}: ${r.status} (${r.reason})`); continue; }
+  const prior = ledger.find((l) => sameBusiness(l, entry));
+  if (prior) { r.status = "skipped"; r.reason = `already contacted ${prior.time} (one submission per business, ever)`; console.log(`${entry.slug}: ${r.status} (${r.reason})`); continue; }
   let message;
   let shortMessage = null;
   try { message = readMessage(entry.prospect); shortMessage = readMessage(entry.prospect, "Short message"); } catch (e) { r.status = "not sent"; r.reason = e.message; continue; }
@@ -152,6 +174,8 @@ for (const entry of queue.entries) {
     if (await challenged()) throw new Error("the site shows a bot check before the form (never bypassed)");
     const down = await page.evaluate(() => { const t = (document.body?.innerText || "").trim(); return t.length < 200 && /upstream|bad gateway|502|503|504|service unavailable|error/i.test(t) ? t.slice(0, 60) : ""; }).catch(() => "");
     if (down) throw new Error(`the site didn't load ("${down}"); try again later`);
+    const pageText = await page.evaluate(() => document.body?.innerText || "").catch(() => "");
+    if (NO_SOLICIT.test(pageText)) { r.status = "skipped"; r.reason = "the site says it doesn't want solicitations"; await page.close(); console.log(`${entry.slug}: ${r.status} (${r.reason})`); continue; }
     await page.waitForLoadState("networkidle", { timeout: 10000 }).catch(() => {});
     const { scope, frameEl, error } = await findFormScope(page, entry);
     if (error) throw new Error(error);
@@ -206,7 +230,11 @@ for (const entry of queue.entries) {
       r.shots.push(path.relative(root, confirmShot));
       const ok = /thank you|thanks for|message (has been |was )?(sent|received)|we('ll| will) (be in touch|get back)|submission (was )?(received|successful)|successfully/i.test(text);
       const err = /captcha|robot|verification failed|spam|error|required/i.test(text) && !ok;
-      if (ok) { r.status = "sent"; }
+      if (ok) {
+        r.status = "sent";
+        ledger.push({ domain: domainOf(entry.formUrl), company: entry.company, slug: entry.slug, formUrl: entry.formUrl, time: new Date().toISOString(), message: values.message, usedShort: !!r.usedShort, shots: r.shots });
+        fs.writeFileSync(ledgerPath, JSON.stringify(ledger, null, 2) + "\n");
+      }
       else { r.status = "hand send"; r.reason = err ? "the form showed an error or a bot check after submit" : `no confirmation after submit (stayed on ${page.url() === before ? "the same page" : page.url()})`; }
     }
   } catch (e) {

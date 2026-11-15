@@ -2,7 +2,11 @@
 
 FF Architect's ask: the next two city × trade batches, with reasons. Facts-first pipeline (sources plus Apify), built to the current strict bar, with the new automatic gates (`docs/demo-gates.md`).
 
-## Batch 1: Springfield, MO plumbers (6 demos). Building now.
+## ~~Batch 1: Springfield, MO plumbers~~ (dropped: Josh excluded Springfield/417 on 11/14, since he runs into those owners locally)
+
+The first batch now comes from the factory city list (`data/cities.json`): metros of 300k–600k outside FL, CO, OR, WA and Northern California, not Springfield.
+
+### Original reasoning (kept for reference)
 **Why:**
 - **Cheapest strong batch.** The plumbing avatar, plumbing image pool (with this weekend's expansion), template and gates are all done and tested on Wichita. Nothing new to make before writing.
 - **Local proof.** Every strategy page opens with the SRA Roofing case study, a Springfield result ("top 10 across two-thirds of Springfield on Maps"). For a Springfield plumber that's a neighbor's result, not a far-off one.
