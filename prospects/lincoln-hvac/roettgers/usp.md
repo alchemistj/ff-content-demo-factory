@@ -30,7 +30,7 @@ Top claim: the braid, **16**, scored as its strongest part, the heads-up text. *
 
 ## Three USP statements
 - **A, pain point:** For Lincoln homeowners whose AC quit on a hot afternoon, Roettger's is the company where you talk to Matt, get a text when the technician is on the way, and are not left guessing.
-- **B, method:** Unlike companies that say 24/7 and leave you waiting, Roettger's answers the call, tells you when the technician is coming, and explains what failed before the work starts.
+- **B, method:** Unlike companies that say 24/7 and leave you waiting, Roettger's answers the call, tells you when the technician is coming, and explains what failed.
 - **C, emotional outcome:** You know who's coming and when, and you're not sitting in a warm house wondering.
 
 **Pick: A.** It meets the #3 fear ("nobody will come") with the one thing six reviewers mention and no competitor states. B is a close second for the outreach message. The speed stories go in the subline and the service page.

@@ -197,7 +197,7 @@
           "type": "prose",
           "heading": "Who Runs Griffin HVAC",
           "body": [
-            "Griffin has served the Peoria area since 1963, and the current owner took over in 2019. The business was Griffin Heating and Cooling and is now Griffin HVAC.",
+            "Griffin has served the Peoria area since 1963, and the current owner took over in 2019. Griffin heating, cooling and home services is now Griffin HVAC.",
             "Griffin is at 1007 W Detweiller Dr, Peoria, IL 61615, and you can reach it at (309) 676-0808 or at douggriffinheatcool@gmail.com."
           ]
         },
@@ -483,7 +483,7 @@
     "whyHeading": "Why we built this site",
     "why": [
       "Your homepage headline reads “Please call if the online schedule doesn't show a time you want.” That is a notice, not an answer to what you do or where, and three different pages carry the title “Heating Services.” On a phone, every page is 768 pixels wide on a 390-pixel screen, so visitors scroll sideways, and the header shows Book Online and Log In but no phone number.",
-      "Your maintenance plan page is the best thing on your site. It prints a price, two visit checklists and a $75 service call with no after-hours, weekend or holiday rates. Today it hides behind the menu label “Maintenance Plan Agreement.”",
+      "Your maintenance plan page is a strong page. It prints a price, two visit checklists and a $75 service call with no after-hours, weekend or holiday rates. Today it hides behind the menu label “Maintenance Plan Agreement.”",
       "So the demo leads with the plan, tells it the same way on every page, and opens with HVAC company in Peoria, IL. Furnace repair gets a page of its own, because it is where your customers and your plan meet."
     ],
     "cardsHeading": "Be the HVAC Company People Find on Google",
@@ -494,7 +494,7 @@
         "title": "Homepage",
         "why": "Where Google learns who you are and where you work.",
         "problems": [
-          "Your headline is an online-schedule notice, and your page title says “Heating Services,” so Google can't tell you are an HVAC company in Peoria.",
+          "Your headline is an online-schedule notice, and your page title leads with “Heating Services,” a title shared by three pages.",
           "The raw page carries “Slide title” template filler 15 times, which sits in the page code where Google can read it."
         ],
         "fixes": [
@@ -574,7 +574,7 @@
     },
     "lead": {
       "heading": "Why we led with the plan's service-call rate",
-      "text": "The scariest moment for a Peoria homeowner is a furnace that quits after hours, and right behind it is paying after-hours rates to get warm. Your plan answers both: plan members pay $75 for any service call, with no after-hours, weekend or holiday rates, and you print the price. That rests on things Google can't find anywhere else, your own plan terms and your customers' accounts of calling you in the cold, which is also why it can help you rank.",
+      "text": "A furnace that quits after hours is a bad time to be asking about rates. Your plan speaks to that: plan members pay $75 for any service call, with no after-hours, weekend or holiday rates, and you print the price. That rests on things Google can't find anywhere else, your own plan terms and your customers' accounts of calling you in the cold.",
       "showScores": false,
       "rows": [
         {

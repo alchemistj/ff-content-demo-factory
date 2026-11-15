@@ -2,7 +2,7 @@
 
 Hey Thermal Services team,
 
-Your reviews tell the same story: people call you when it can't wait, and someone answers. One customer called at 10 PM, and the person who answered talked them through a few things to try, and flipping a switch fixed it. We build websites for service businesses, so we made you a mockup built around it:
+A few of your reviews describe a call that couldn't wait. One customer called at 10 PM, and the person who answered talked them through a few things to try, and flipping a switch fixed it. We build websites for service businesses, so we made you a mockup built around it:
 
 https://thermal-peoria.websitepreview.fluidframemarketing.com/?utm_source=form
 
@@ -21,13 +21,13 @@ Fluid Frame Marketing
 
 ## Short message
 
-Hey Thermal Services team, your reviews show someone answers when it can't wait: one customer called at 10 PM and was talked through a fix. We built a mockup around it: https://thermal-peoria.websitepreview.fluidframemarketing.com/?utm_source=form (it'll look better with your logo and images! Lol). One fix: your homepage headline and title say "Central Illinois" but never Peoria. Not interested? Reply "no thanks" and you won't hear from me again. Josh, Fluid Frame Marketing
+Hey Thermal Services team, a few of your reviews describe a call that couldn't wait: one customer called at 10 PM and was talked through a fix. We built a mockup around it: https://thermal-peoria.websitepreview.fluidframemarketing.com/?utm_source=form (it'll look better with your logo and images! Lol). One fix: your homepage headline and title say "Central Illinois" but never Peoria. Not interested? Reply "no thanks" and you won't hear from me again. Josh, Fluid Frame Marketing
 
 ## Variant (only if Josh confirms)
 
 Hey Thermal Services team,
 
-Your reviews tell the same story: people call you when it can't wait, and someone answers. One customer called at 10 PM, and the person who answered talked them through a few things to try, and flipping a switch fixed it. My daughter and I build websites for service businesses, so we made you a mockup built around it:
+A few of your reviews describe a call that couldn't wait. One customer called at 10 PM, and the person who answered talked them through a few things to try, and flipping a switch fixed it. My daughter and I build websites for service businesses, so we made you a mockup built around it:
 
 https://thermal-peoria.websitepreview.fluidframemarketing.com/?utm_source=form
 

@@ -39,3 +39,4 @@ Every other page meets its minimum.
 | jgroofing | /roof-replacement-peoria-il/ | 393 | 700 | BELOW floor (2026-11-15, cut generic copy per QA) |
 | pioneer | /home/ | 412 | 900 | BELOW floor (2026-11-15, cut generic copy per QA) |
 | pioneer | /metal-roofing-peoria-il/ | 192 | 700 | BELOW floor (2026-11-15, cut generic copy per QA) |
+| sandhill | /roof-replacement-lincoln-ne/ | 519 | 700 | BELOW floor (2026-11-15, cut unsourced copy per QA re-check) |

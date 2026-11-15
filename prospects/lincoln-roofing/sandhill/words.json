@@ -56,7 +56,7 @@
     {
       "name": "Siding",
       "route": null,
-      "blurb": "Siding installation and repair."
+      "blurb": "Siding services."
     },
     {
       "name": "Gutters, Soffit and Fascia",
@@ -79,7 +79,7 @@
       "hero": {
         "eyebrow": "Lincoln, NE · Family-Owned Roofer",
         "h1": "Roofer in Lincoln, NE — Sandhill Roofing",
-        "sub": "Customers describe a straight answer on their roof from Dusty Rieck, even when the answer is that it isn't the roof at all. Sandhill Roofing is a family-owned roofer based in Lincoln and serving Eastern Nebraska. Call (402) 890-6460 and tell us what you're seeing.",
+        "sub": "Customers describe a straight answer on their roof from Dusty Rieck. Sandhill Roofing is a family-owned roofer based in Lincoln and serving Eastern Nebraska. Call (402) 890-6460 and tell us what you're seeing.",
         "primaryCta": {
           "label": "Call (402) 890-6460",
           "action": "call"
@@ -193,7 +193,7 @@
           "type": "prose",
           "heading": "Roof Replacement: When the Roof Has Run Its Course",
           "body": [
-            "When a roof is worn out or storm-damaged, replacement is the job. Our materials list covers asphalt, steel, stone coated steel, standing seam steel, rubber slate, polymer and cedar shake, along with impact resistance. Call for the free roof replacement estimate."
+            "When a roof is worn out or storm-damaged, replacement is the job. Our materials list covers asphalt, steel, stone coated steel, standing seam steel, rubber slate, polymer and cedar shake. Call for the free roof replacement estimate."
           ],
           "link": {
             "label": "See roof replacement in Lincoln →",
@@ -226,7 +226,7 @@
             },
             {
               "q": "What kinds of roofs do you install?",
-              "a": "Asphalt, steel, stone coated steel, standing seam steel, rubber slate, polymer and cedar shake, along with impact resistance. Call and tell us about your house."
+              "a": "Asphalt, steel, stone coated steel, standing seam steel, rubber slate, polymer and cedar shake. Call and tell us about your house."
             },
             {
               "q": "Do you do more than roofs?",
@@ -296,7 +296,7 @@
           "heading": "Is It Time for a New Roof, or Is It a Repair?",
           "body": [
             "Describe what you see when you call: where it is, how much of the roof it covers and when you noticed it.",
-            "Customers mention that Dusty looked at the roof and explained it before anyone talked about work. One reviewer called it an honest second opinion."
+            "Customers mention that Dusty looked at the roof and explained it. One reviewer called it an honest second opinion."
           ],
           "list": [
             "Cracked, curling or missing shingles",
@@ -316,7 +316,7 @@
           "type": "prose",
           "heading": "Questions to Bring to Any Estimate",
           "body": [
-            "Whichever roofer you call, ask what the estimate covers. A number with no detail behind it is hard to compare."
+            "Ask what the estimate covers so you can compare it with any other you have."
           ],
           "items": [
             {
@@ -358,8 +358,7 @@
           "type": "prose",
           "heading": "Choosing the Material",
           "body": [
-            "The materials we install include asphalt, steel, stone coated steel, standing seam steel, rubber slate, polymer and cedar shake. Impact resistance is on the list too.",
-            "Reviewers describe choosing a roof with Dusty in different ways. Carolyn W. ended up with a steel roof. Monica R. needed samples to decide. Ben C. was offered upgraded shingle options and added deck venting for attic airflow.",
+            "The materials we install include asphalt, steel, stone coated steel, standing seam steel, rubber slate, polymer and cedar shake.",
             "Tell us what you're looking for in a roof and ask which materials to look at."
           ]
         },
@@ -395,8 +394,7 @@
           "type": "split",
           "heading": "Crews, Schedules and Finish Dates",
           "body": [
-            "Customers who had a roof replaced mention how quickly the crew worked and how the job finished.",
-            "Tim L. wrote that after a small oversight on their job, Dusty came back the next morning. Their reviews are below."
+            "Customers who had a roof replaced mention how quickly the crew worked and how the job finished."
           ],
           "image": {
             "slot": "crew-tearoff",
@@ -419,7 +417,7 @@
           "type": "prose",
           "heading": "A Roof Before a Sale",
           "body": [
-            "Reviewers also mention roofs replaced ahead of a closing, written by the agent for the sellers. If you have a date to meet, tell us when you call."
+            "One reviewer, a real estate agent, had a roof replaced for sellers ahead of a closing. If you have a date to meet, tell us when you call."
           ]
         },
         {
@@ -433,7 +431,7 @@
           "items": [
             {
               "q": "How much does a roof replacement cost?",
-              "a": "It depends on the size and pitch of the roof, the material, how many layers come off and what the wood underneath needs. A number given without seeing the roof is a guess, so the free estimate is where you get the real figure."
+              "a": "It depends on the size and pitch of the roof, the material, how many layers come off and what the wood underneath needs. The free estimate is where you get the figure for your roof."
             },
             {
               "q": "How do I know whether I need a replacement or a repair?",
@@ -465,7 +463,7 @@
       "hero": {
         "eyebrow": "Contact Sandhill Roofing",
         "h1": "Contact Sandhill Roofing in Lincoln, NE",
-        "sub": "The fastest way to reach us is to call. Tell us what your roof is doing.",
+        "sub": "Call us and tell us what your roof is doing.",
         "primaryCta": {
           "label": "Call (402) 890-6460",
           "action": "call"

@@ -24,9 +24,9 @@
   ],
   "services": [
     { "name": "AC Repair", "route": "/ac-repair-lincoln-ne/", "blurb": "Cool air back, and the problem explained in words you can follow." },
-    { "name": "Heating System Repair", "route": null, "blurb": "Heat back on, with the cause explained before the work." },
-    { "name": "AC Installation and Replacement", "route": null, "blurb": "A new air conditioner when the old one can't be saved, with your options laid out first." },
-    { "name": "Furnace Installation and Replacement", "route": null, "blurb": "A new furnace when it's time, with your options laid out first." },
+    { "name": "Heating System Repair", "route": null, "blurb": "Heat back on, with the cause explained." },
+    { "name": "AC Installation and Replacement", "route": null, "blurb": "A new air conditioner when the old one can't be saved, with a free estimate first." },
+    { "name": "Furnace Installation and Replacement", "route": null, "blurb": "A new furnace when it's time, with a free estimate first." },
     { "name": "Heating Maintenance and Tune-Ups", "route": null, "blurb": "Inspections, tune-ups and cleaning before the heating season." },
     { "name": "Maintenance Membership", "route": null, "blurb": "Two tune-ups a year, priority scheduling and discounts on repairs." }
   ],
@@ -66,9 +66,9 @@
         },
         {
           "type": "split",
-          "heading": "When the AC Dies and Nobody Is Picking Up",
+          "heading": "When the AC Dies and the House Is Heating Up",
           "body": [
-            "The thermostat says 88 and climbing. You've called one place and got a voicemail, and now you're doing the math on how long the house can stay like this.",
+            "The thermostat says 88 and climbing. Now you're doing the math on how long the house can stay like this.",
             "Call us at (402) 314-3612 and speak directly with Matt. Emergency HVAC service is something we offer, so tell him what the system is doing and he'll tell you what happens next."
           ],
           "list": [
@@ -93,13 +93,13 @@
           ],
           "items": [
             { "title": "The air conditioner hums but won't start", "text": "A weak capacitor can cause this, and it is worth having checked." },
-            { "title": "The vents blow air that isn't cold", "text": "Low refrigerant points to a leak, and ice on the line points to airflow." },
-            { "title": "The furnace clicks but never lights", "text": "Often a worn igniter or a dirty flame sensor. Both are small parts." },
+            { "title": "The vents blow air that isn't cold", "text": "Low refrigerant and ice on the line are both worth a call." },
+            { "title": "The furnace clicks but never lights", "text": "A worn igniter or a dirty flame sensor can cause this." },
             { "title": "The furnace runs, then shuts itself off", "text": "A clogged filter can make it overheat. A tired sensor can do the same." },
             { "title": "A noise that wasn't there last week", "text": "A squeal or rattle is the system telling you something. Have it looked at." }
           ],
           "tail": [
-            "If it's one of these, the fix is a part. Whether the whole system needs replacing is a different question."
+            "If it's one of these, have it looked at. Whether the whole system needs replacing is a different question."
           ],
           "link": { "label": "See AC repair in Lincoln", "route": "/ac-repair-lincoln-ne/" }
         },
@@ -113,7 +113,7 @@
           "heading": "Repair or Replace: You Get the Facts Either Way",
           "body": [
             "Roettger's offers honest recommendations and free estimates, and the decision stays yours.",
-            "A quick rule you can check: a capacitor, a sensor or a motor is a repair. An old system with repairs piling up, or a failed compressor or heat exchanger, is when to price something new."
+            "Ask us whether a repair or a new system makes sense, and the estimate is free."
           ]
         },
         {
@@ -251,7 +251,7 @@
           "items": [
             { "title": "A capacitor that's gone weak", "text": "It gives the compressor and the fan motor the jolt to start. When it fades, the unit hums and won't run." },
             { "title": "A frozen coil", "text": "A dirty filter or a blocked coil chokes the airflow until ice builds up. Thawing the coil is the easy part, and the repair is finding out why it froze." },
-            { "title": "Low refrigerant", "text": "An air conditioner doesn't use refrigerant up, so low means a leak." },
+            { "title": "Low refrigerant", "text": "Low refrigerant is worth a call." },
             { "title": "A tired fan or compressor motor", "text": "A motor that's slow or noisy is a warning worth a call." },
             { "title": "A control that isn't telling the unit to run", "text": "A dead thermostat battery or a failed control can look just like a failed air conditioner. It's worth ruling out." }
           ]
@@ -298,7 +298,7 @@
           "type": "prose",
           "heading": "Staying Ahead of the Next Hot Week",
           "body": [
-            "Change the filter on a schedule, keep the outdoor unit clear and don't ignore a new noise. A tune-up before the first hot spell is a good time to have weak parts checked.",
+            "Change the filter on a schedule, keep the outdoor unit clear and don't ignore a new noise. Have weak parts checked before they fail.",
             "Ask about the maintenance membership when you call: two tune-ups a year, priority scheduling and discounts on repairs."
           ]
         },
@@ -333,7 +333,7 @@
       "hero": {
         "eyebrow": "Contact Roettger's Heating and Cooling",
         "h1": "Contact Roettger's Heating and Cooling in Lincoln, NE",
-        "sub": "If your heat or air has quit, the fastest way to reach us is to call. Call and you can talk with Matt about what the system is doing.",
+        "sub": "If your heat or air has quit, call us. You can talk with Matt about what the system is doing.",
         "primaryCta": { "label": "Call (402) 314-3612", "action": "call" },
         "image": {
           "slot": "contact-hero",
@@ -385,7 +385,7 @@
     "whyHeading": "Why we built this site",
     "why": [
       "Your site shows no street address and no hours on any page. Someone whose AC quit at four in the afternoon can't tell where you are, when you answer or whether you're open, and your FAQ says you offer emergency HVAC service without saying when.",
-      "Your customers keep describing the same two things: Matt answers, and they know when the technician is on the way. None of that is on your site, and your site has no customer reviews at all. Today those words live on Google, not on your pages.",
+      "Your customers keep describing the same two things: Matt answers, and they know when the technician is on the way. The heads-up isn't on your site, and your site has no customer reviews at all. Today those words live on Google, not on your pages.",
       "So the demo leads with what customers describe: a real call with Matt, a heads-up before the technician arrives, and AC repair on a page of its own. It opens with HVAC company in Lincoln, NE, which your homepage never says."
     ],
     "cardsHeading": "Be the HVAC Company People Find on Google",
@@ -422,7 +422,7 @@
         "title": "Contact",
         "why": "Where a customer with a dead system decides to call.",
         "problems": [
-          "Your contact page is the thinnest on the site and shows no street address or hours.",
+          "Your contact page is short and shows no street address or hours.",
           "An empty shopping cart page sits on a site that doesn't sell anything online."
         ],
         "fixes": [

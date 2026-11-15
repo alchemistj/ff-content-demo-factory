@@ -23,10 +23,10 @@
     "Homes and Commercial Buildings"
   ],
   "services": [
-    { "name": "AC Repair", "route": "/ac-repair-lincoln-ne/", "blurb": "Your air conditioner running again, with the problem explained in plain words." },
-    { "name": "Heater Repair", "route": null, "blurb": "Heat back on, and the cause explained before anyone mentions a new furnace." },
-    { "name": "Air Conditioner Installation", "route": null, "blurb": "A new air conditioner when repair stops being the answer. Financing is available upon approval." },
-    { "name": "Heater Installation", "route": null, "blurb": "A new furnace or heating system, with your options laid out first." },
+    { "name": "AC Repair", "route": "/ac-repair-lincoln-ne/", "blurb": "Cooling back on. Call and tell us what the air conditioner is doing." },
+    { "name": "Heater Repair", "route": null, "blurb": "Heat back on. Call and tell us what the furnace is doing." },
+    { "name": "Air Conditioner Installation", "route": null, "blurb": "A new air conditioner when repair stops being the answer." },
+    { "name": "Heater Installation", "route": null, "blurb": "A new furnace or heating system when it is time." },
     { "name": "Geothermal Heat Pumps", "route": null, "blurb": "Geothermal heating and cooling, including WaterFurnace systems." },
     { "name": "Maintenance Plans", "route": null, "blurb": "Custom maintenance plans for your heating and cooling. Call for details." },
     { "name": "Commercial HVAC", "route": null, "blurb": "Repair, installation and maintenance for commercial buildings." }
@@ -74,8 +74,7 @@
           ],
           "list": [
             "Furnaces, air conditioners, heat pumps and geothermal",
-            "Homes and commercial buildings, repair, installation and maintenance",
-            "Financing upon approval when a new system is the answer"
+            "Homes and commercial buildings, repair, installation and maintenance"
           ],
           "listStyle": "checks",
           "image": {
@@ -144,7 +143,7 @@
           "heading": "Geothermal Heat Pumps, Not Just Furnaces and Air Conditioners",
           "body": [
             "We install and service geothermal heat pumps, including WaterFurnace systems. If you already have one and it's acting up, or you're weighing one for a new build, call and ask.",
-            "A geothermal system is a different animal from a furnace and a condenser, so it helps to talk to a company that works on them regularly."
+            "A geothermal system is a different animal from a furnace and a condenser, so call and ask about yours."
           ]
         },
         {
@@ -181,7 +180,7 @@
           "heading": "Questions About ComfortTechs",
           "items": [
             { "q": "Do I need a whole new system, or can you fix what I have?", "a": "That depends on what failed, and someone has to look to know. Customer reviews describe both outcomes: a repair that solved the problem, and a replacement where all the options were clearly outlined." },
-            { "q": "Can someone come out the same day?", "a": "Same-day service is part of what we offer. Call (402) 465-0000, tell us what's happening, and we'll tell you what today looks like." },
+            { "q": "Can someone come out the same day?", "a": "Call (402) 465-0000, tell us what's happening, and we'll tell you what today looks like." },
             { "q": "What does an estimate cost?", "a": "Estimates are free, and so is a no-obligation consultation." },
             { "q": "Which brands do you work on?", "a": "We install and service American Standard products, and we work on Trane, Carrier and Bryant systems. If yours is something else, call and ask." },
             { "q": "Do you work on geothermal systems and commercial buildings?", "a": "Yes to both. We handle geothermal heat pumps and commercial HVAC repair, installation and maintenance." },
@@ -191,7 +190,7 @@
         {
           "type": "callBand",
           "heading": "Call ComfortTechs About Your Furnace or AC",
-          "text": "Call (402) 465-0000 and tell us what the system is doing. We'll help you work out what comes next."
+          "text": "Call (402) 465-0000 and tell us what the system is doing."
         }
       ]
     },
@@ -204,7 +203,7 @@
       "hero": {
         "eyebrow": "Air conditioning, Lincoln",
         "h1": "AC Repair in Lincoln, NE — ComfortTechs",
-        "sub": "The house is climbing and the air from the vents isn't cold. Call (402) 465-0000, tell us what the unit is doing, and we'll help you work out what to do about it.",
+        "sub": "The house is climbing and the air from the vents isn't cold. Call (402) 465-0000, tell us what the unit is doing.",
         "primaryCta": { "label": "Call (402) 465-0000", "action": "call" },
         "secondaryCta": { "label": "Call or email", "action": "contact" },
         "image": {
@@ -224,7 +223,7 @@
           "heading": "What Happens When You Call About Your AC",
           "body": [
             "You tell us what the unit is doing: not cooling, running but warm, not starting, making a noise. We tell you what we think is behind it and what happens next.",
-            "Customers mention technicians who found the problem and explained it clearly, and one says the technician \"explained everything clearly\". Whether the answer is a repair or a replacement, that is the conversation to ask for when you call.",
+            "Customers mention technicians who found the problem and explained it clearly. Whether the answer is a repair or a replacement, that is the conversation to ask for when you call.",
             "Not sure whether it needs a visit? Describe what you're seeing and ask."
           ],
           "image": {
@@ -265,7 +264,7 @@
           "body": [
             "A capacitor, a motor or a coil that needs cleaning is a repair.",
             "If the unit is old, the repairs keep coming or the compressor has failed, that is when to ask about a new one.",
-            "Ask us which one you're on. When it is time to replace, ComfortTechs installs new air conditioning systems, and financing is available upon approval."
+            "Ask us which one you're on. When it is time to replace, ComfortTechs installs new air conditioning systems."
           ]
         },
         {
@@ -313,13 +312,13 @@
             { "q": "Do you work on my brand of air conditioner?", "a": "We work on Trane, Carrier, American Standard and Bryant. Running something different? Give us a call." },
             { "q": "Do you repair geothermal and heat pump systems?", "a": "Yes. We work on geothermal heat pumps as well as central air conditioners." },
             { "q": "Can you help a business with a broken air conditioner?", "a": "Yes. We do commercial HVAC repair, installation and maintenance." },
-            { "q": "What if it's a new unit I need?", "a": "We install new air conditioning systems, and financing is available upon approval. The estimate is free." }
+            { "q": "What if it's a new unit I need?", "a": "We install new air conditioning systems. The estimate is free." }
           ]
         },
         {
           "type": "callBand",
           "heading": "Call ComfortTechs About Your Air Conditioner",
-          "text": "If your AC isn't cooling, call (402) 465-0000. Tell us what it's doing, and we'll help you work out what comes next."
+          "text": "If your AC isn't cooling, call (402) 465-0000. Tell us what it's doing."
         }
       ]
     },
@@ -332,7 +331,7 @@
       "hero": {
         "eyebrow": "Contact ComfortTechs",
         "h1": "Contact ComfortTechs in Lincoln, NE",
-        "sub": "If your heat or air has quit, the fastest way to reach us is to call. Tell us what the system is doing and we'll help you work out the next step.",
+        "sub": "If your heat or air has quit, the fastest way to reach us is to call. Tell us what the system is doing.",
         "primaryCta": { "label": "Call (402) 465-0000", "action": "call" },
         "image": {
           "slot": "contact-hero",

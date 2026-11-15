@@ -57,17 +57,17 @@
   {
    "name": "Thermostats",
    "route": null,
-   "blurb": "Thermostats chosen and installed with the system."
+   "blurb": "Thermostats."
   },
   {
    "name": "Air Cleaners",
    "route": null,
-   "blurb": "Air cleaners sold and installed."
+   "blurb": "Air cleaners. Ask the office."
   },
   {
    "name": "Custom Priority Club",
    "route": null,
-   "blurb": "A maintenance membership with priority service, discounts and emergency service."
+   "blurb": "A maintenance membership. Ask the office whether it is offered today."
   },
   {
    "name": "New Construction HVAC",
@@ -85,7 +85,7 @@
    "hero": {
     "eyebrow": "Fort Wayne, Indiana · Sales, installation and service",
     "h1": "HVAC Company in Fort Wayne, IN — Custom Assured Mechanical",
-    "sub": "We sell, install and service heating and air conditioning in Fort Wayne. Customers mention the same technician coming back, and the office calling when service is due. Call (260) 496-8400 to talk about service.",
+    "sub": "We sell, install and service heating and air conditioning in Fort Wayne. Two customers mention the same technician coming back, and the office calling when service is due. Call (260) 496-8400 to talk about service.",
     "primaryCta": {
      "label": "Call (260) 496-8400",
      "action": "call"
@@ -108,15 +108,15 @@
     },
     {
      "type": "split",
-     "heading": "Customers Mention the Same Technician Coming Back",
+     "heading": "Two Customers Mention the Same Technician Coming Back",
      "body": [
       "A furnace and an air conditioner have quirks. Where the filter sits, what the blower sounds like, what was replaced two falls ago. When a different person shows up each time, you explain it again. When the same one comes back, you don't.",
-      "Several customers say the same technician comes back, and that the office calls them when a visit is due. Ask the office how scheduling works for your system."
+      "Two customers say the same technician comes back, and that the office calls them when a visit is due. Ask the office how scheduling works for your system."
      ],
      "list": [
       "Annual service agreements for heating and air conditioning",
-      "Customers say the office calls when service is due",
-      "Customers mention the same technician each visit",
+      "Two customers say the office calls when service is due",
+      "Two customers mention the same technician",
       "Repair on any brand of HVAC equipment"
      ],
      "listStyle": "checks",
@@ -189,10 +189,10 @@
     },
     {
      "type": "prose",
-     "heading": "New Systems, New Builds and Furnaces in Tight Spots",
+     "heading": "New Systems and New Builds",
      "body": [
       "Not every job is a service call. We sell and install complete systems, and we tailor each job to residential, commercial or new construction work. A new build needs its heating and cooling planned with the house. A replacement needs to fit what's already there.",
-      "Heat pumps are on the list too, for total electric homes and for dual fuel setups. If your furnace sits somewhere hard to reach, tell us when you call, so the technician comes ready."
+      "Heat pumps are on the list too, for total electric homes and for dual fuel setups."
      ]
     },
     {
@@ -239,7 +239,7 @@
       },
       {
        "q": "What do I do if the system quits and it's not an office-hours problem?",
-       "a": "Call the office number and ask about emergency service. Our site lists emergency service with the Custom Priority Club."
+       "a": "Call the office number and ask about emergency service."
       }
      ]
     },
@@ -284,9 +284,9 @@
      "type": "split",
      "heading": "What a Visit Looks Like",
      "body": [
-      "A maintenance visit is an inspection and a cleaning. The technician looks over the equipment, cleans what needs cleaning and answers your questions.",
+      "Customers describe a maintenance visit that cleans the heating and air equipment. Ask the office what a visit includes.",
       "Ask what you want to know. How old is the system? Is that noise normal? Should you plan to replace anything in a few years?",
-      "By the time the technician leaves, you should know what was checked, what was cleaned and what to keep an eye on before the next visit. If any of that is unclear, ask before the truck pulls away."
+      "Ask the technician what was checked, what was cleaned and what to keep an eye on before the next visit."
      ],
      "image": {
       "slot": "airflow-vent",
@@ -304,11 +304,11 @@
      "items": [
       {
        "title": "Before the heating season",
-       "text": "The furnace gets its look in the fall, while the weather is still mild. If something is worn, you find out when you can still wait a few days for a part."
+       "text": "Customers describe a furnace visit in the fall, while the weather is still mild. If something is worn, you find out when you can still wait a few days for a part."
       },
       {
        "title": "Before the cooling season",
-       "text": "The air conditioner gets its look in the spring. A plugged drain or a dirty coil is easier to deal with in May than in July."
+       "text": "Customers describe an air conditioner visit in the spring. A plugged drain or a dirty coil is easier to deal with in May than in July."
       },
       {
        "title": "In between",
@@ -342,7 +342,7 @@
      "heading": "Meet the Team Before They Meet Your Furnace",
      "body": [
       "Maintenance is a relationship, so it helps to know who's coming. Our team is Jacob D, Jacob W, Dave, Logan, Kevin, Lance, Casey and Rod.",
-      "Several customers mention seeing the same technician year after year. Call the office and ask how visits are scheduled."
+      "Two customers mention seeing the same technician. Call the office and ask how visits are scheduled."
      ]
     },
     {
@@ -354,15 +354,15 @@
      "type": "prose",
      "heading": "Who Belongs on the Schedule",
      "body": [
-      "Anyone with a furnace or an air conditioner can sign up, and a few situations make it especially worth doing. A system that's getting older is one. A brand-new system is another, because it should start clean and stay that way.",
-      "Landlords belong on the list too, because a tenant's no-cool call lands on you. So do owners of a second property, who can't check on the equipment themselves. Tell the office about each address."
+      "Ask the office who can sign up. A system that's getting older is one reason to ask. A brand-new system is another, because it should start clean and stay that way.",
+      "If you own more than one property, ask the office how that works."
      ]
     },
     {
      "type": "prose",
      "heading": "Furnaces, Air Conditioners, Heat Pumps and More",
      "body": [
-      "We repair any brand of HVAC equipment, so you don't have to own a Bryant to be on the schedule. Furnaces, thermostats, air conditioners, air cleaners and heat pumps are all on our list.",
+      "We repair any brand of HVAC equipment, so you don't have to own a Bryant to be on the schedule. Furnaces and air conditioners are on our list; ask the office about heat pumps, thermostats and air cleaners.",
       "If you're not sure what's on your equipment list, the office can help you sort it out when you call."
      ]
     },
@@ -376,11 +376,11 @@
       },
       {
        "q": "Will I get the same technician each time?",
-       "a": "Several customers say they have. Ask the office what to expect."
+       "a": "Two customers say they have. Ask the office what to expect."
       },
       {
        "q": "Do I need to call when it's due?",
-       "a": "Several customers say the office calls them when it's time. Ask the office how reminders work."
+       "a": "Two customers say the office calls them when it's time. Ask the office how reminders work."
       },
       {
        "q": "Does it cover furnaces and air conditioners?",
@@ -474,8 +474,8 @@
  "footer": {
   "about": "Custom Assured Mechanical is a Fort Wayne heating and air conditioning company run by Rod and Kim Schaefer. We sell, install and service systems for homes, businesses and new construction.",
   "why": [
-   "Customers mention the same technician",
-   "Customers say the office calls when service is due",
+   "Two customers mention the same technician",
+   "Two customers say the office calls when service is due",
    "Deal directly with the owner",
    "Bryant products and financing with approved credit"
   ]

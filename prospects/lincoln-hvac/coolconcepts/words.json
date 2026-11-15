@@ -24,7 +24,7 @@
   ],
   "services": [
     { "name": "AC Repair", "route": "/ac-repair-lincoln-ne/", "blurb": "Cool air back, with the cause explained in plain words." },
-    { "name": "Furnace Repair", "route": null, "blurb": "Heat back on, and the problem explained before anyone mentions a new furnace." },
+    { "name": "Furnace Repair", "route": null, "blurb": "Heat back on, and the problem explained." },
     { "name": "Heating and Cooling Replacement", "route": null, "blurb": "A new system when the old one can't be saved. Free estimates and onsite inspections are on our list." },
     { "name": "Heat Pumps", "route": null, "blurb": "Heat pumps are listed on our site. Call and tell us what yours is doing." },
     { "name": "Geothermal", "route": null, "blurb": "Geothermal is listed in our site menu. Call and ask about your system." },
@@ -92,14 +92,14 @@
             "A no-heat or no-cooling call can start with a single part rather than a dead system. Here is what to look for."
           ],
           "items": [
-            { "title": "The furnace clicks but never lights", "text": "Often a worn igniter or a dirty flame sensor. Both are small parts." },
+            { "title": "The furnace clicks but never lights", "text": "A worn igniter or a dirty flame sensor can cause this." },
             { "title": "The heat comes on, then shuts off", "text": "A clogged filter can make a furnace overheat and shut itself down. A flame sensor that can't prove the burner lit will do the same." },
             { "title": "The air conditioner hums but won't start", "text": "A weak capacitor can cause this, and it is worth having checked." },
             { "title": "The vents blow air that isn't cold", "text": "Low refrigerant points to a leak, and ice on the line points to airflow." },
             { "title": "A heat pump that's stopped heating", "text": "Heat pumps heat and cool, so a failure shows up in both seasons. It's worth a call as soon as you notice it." }
           ],
           "tail": [
-            "If it's one of these, the fix is a part. Whether the whole system is done is a separate question."
+            "If it's one of these, have it looked at. Whether the whole system is done is a separate question."
           ],
           "link": { "label": "See AC repair in Lincoln", "route": "/ac-repair-lincoln-ne/" }
         },
@@ -172,9 +172,9 @@
             { "q": "Do I need a whole new system, or can you fix what I have?", "a": "That depends on what failed, and someone has to look. Customers mention being told in plain words which it was, with the options laid out when replacement was the answer." },
             { "q": "What does an estimate cost?", "a": "We list free estimates and onsite inspections." },
             { "q": "Which brands do you work on?", "a": "We specialize in Daikin heating and air, and we service all brands of furnaces and air conditioners." },
-            { "q": "Do you work on heat pumps and geothermal systems?", "a": "Heat pumps are on our list, and geothermal appears in our site menu. Call and tell us what you have." },
+            { "q": "Do you work on heat pumps and geothermal systems?", "a": "Call and ask about heat pumps and geothermal, and tell us what you have." },
             { "q": "Do you offer maintenance?", "a": "We list preventive maintenance and a winter efficiency check. Call and ask what fits your system." },
-            { "q": "How do I reach you?", "a": "Call (402) 483-2665 or email coolconceptsne@gmail.com. The fastest way is to call." }
+            { "q": "How do I reach you?", "a": "Call (402) 483-2665 or email coolconceptsne@gmail.com." }
           ]
         },
         {
@@ -302,7 +302,7 @@
             { "q": "Do you work on my brand?", "a": "We service all brands of furnaces and air conditioners, and we specialize in Daikin." },
             { "q": "Do you repair heat pumps and geothermal systems?", "a": "Heat pumps are on our list, and geothermal is in our site menu. Tell us what yours is doing when you call." },
             { "q": "What does an estimate cost?", "a": "Free estimates and onsite inspections are both on our list. Call and ask." },
-            { "q": "Can I email instead of calling?", "a": "You can email coolconceptsne@gmail.com, but when the AC is out the fastest way to reach us is to call (402) 483-2665." }
+            { "q": "Can I email instead of calling?", "a": "You can email coolconceptsne@gmail.com, but when the AC is out, call (402) 483-2665." }
           ]
         },
         {
@@ -321,7 +321,7 @@
       "hero": {
         "eyebrow": "Contact Cool Concepts",
         "h1": "Contact Cool Concepts in Lincoln, NE",
-        "sub": "If your heat or air has quit, the fastest way to reach us is to call. Tell us what the system is doing and we'll talk through what comes next.",
+        "sub": "If your heat or air has quit, call us. Tell us what the system is doing and we'll talk through what comes next.",
         "primaryCta": { "label": "Call (402) 483-2665", "action": "call" },
         "image": {
           "slot": "contact-hero",
@@ -415,7 +415,7 @@
           "The Request An Estimate button on your contact page goes to a page that doesn't exist."
         ],
         "fixes": [
-          "One number, one email and your Touzalin Avenue address in the first screen.",
+          "One number, one email and your Touzalin Avenue address on the contact page.",
           "Every button goes to a page that works."
         ]
       }

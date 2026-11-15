@@ -42,7 +42,7 @@
   {
    "name": "Furnace Repair",
    "route": null,
-   "blurb": "Heating repair for furnaces and boilers, homes and light commercial."
+   "blurb": "Heating repair for furnaces and boilers."
   },
   {
    "name": "AC Repair",
@@ -108,10 +108,10 @@
     },
     {
      "type": "split",
-     "heading": "Told You Need a Whole New System? Get a Second Look First",
+     "heading": "Quoted a Whole New System? Here Is What One Customer Saw",
      "body": [
       "A replacement quote is the biggest number an HVAC company hands a homeowner, so it's fair to want another set of eyes before you say yes. Someone has to look at the system to know whether it needs a repair or a replacement.",
-      "That's the call we want. Tell us what the other company said and what the system is doing. We'll look at it and tell you plainly what it needs. If the answer is new equipment, the estimate is free and the work is quoted up front."
+      "One customer describes a second look that \"got to the possible root of my problem\" before they bought a furnace. If you were quoted a replacement elsewhere, call and tell us what the system is doing. If the answer is new equipment, the estimate is free and the work is quoted up front."
      ],
      "list": [
       "Replacement estimates are free",
@@ -175,7 +175,7 @@
      "heading": "Started in the Trade in 2005, Then Service Manager at JF Miller",
      "body": [
       "I started in the HVAC trade in 2005 as a high school junior. Then I spent 12 years with JF Miller here in the area as Service Manager.",
-      "I've kept up the continuing education since, because the equipment keeps changing. JD Kuhn is locally owned."
+      "I've kept up continuing education since. JD Kuhn is locally owned."
      ]
     },
     {
@@ -209,7 +209,7 @@
      "heading": "Add-Ons, Tight Spaces and the Odd Job",
      "body": [
       "Not every job is a straight swap. A cabana, a sunroom or a finished basement can need its own heating and cooling. Mini splits are made for that.",
-      "Ask us what's missing from the system you have now, whether that's central air, a humidifier or a filter that fits the space."
+      "Ask us what's missing from the system you have now, whether that's central air or a filter."
      ]
     },
     {
@@ -235,7 +235,7 @@
       },
       {
        "q": "Another company told me to replace everything. Can you look at it?",
-       "a": "Yes. Tell us what they said and what the system is doing when you call. Ask what the visit itself costs before you book, so there are no surprises on the bill."
+       "a": "Call and tell us what they said and what the system is doing. One customer describes a second look that got to the root of the problem before they bought a furnace."
       },
       {
        "q": "Do you work on commercial buildings?",
@@ -339,8 +339,8 @@
      "type": "prose",
      "heading": "Before You Say Yes to Anyone's Quote",
      "body": [
-      "Whoever you call, ask the same five things. What exactly is wrong with the system now? Could a repair fix it? What equipment is being quoted, and what's included in the price? Who does the work? What happens if something goes wrong after the install?",
-      "A company that answers all five plainly is one worth hiring. We expect to be asked, and we'd rather answer them on the phone than at the door."
+      "Whoever you call, ask the same four things. What exactly is wrong with the system now? Could a repair fix it? What equipment is being quoted, and what's included in the price? Who does the work?",
+      "A company that answers all four plainly is one worth hiring. We expect to be asked, and we'd rather answer them on the phone than at the door."
      ]
     },
     {
@@ -363,9 +363,9 @@
     },
     {
      "type": "prose",
-     "heading": "Humidifiers, Filter Racks and What Rides Along With a New System",
+     "heading": "Filters, Tight Spaces and What Rides Along With a New System",
      "body": [
-      "A new furnace is a good time to fix what the old one never had. Filters come with or without a service, and a good filter rack keeps the system breathing. Ask us what else belongs with the new system.",
+      "A new furnace is a good time to ask what else belongs with the system. Filters are sold with or without a service.",
       "Tight spaces are a fact of old houses. If your furnace sits in a closet, a crawlspace or a corner of the basement, tell us when you call, so the estimate fits the space."
      ]
     },
@@ -441,7 +441,7 @@
      "heading": "Pick Up the Phone",
      "body": [
       "(260) 413-1856",
-      "Call and tell us what the furnace, air conditioner or heat pump is doing. If you were quoted a replacement somewhere else, bring that up too. We'd like to hear it before we look at the system."
+      "Call and tell us what the furnace, air conditioner or heat pump is doing. If you were quoted a replacement somewhere else, bring that up too."
      ]
     },
     {
@@ -583,7 +583,7 @@
   },
   "offer": {
    "heading": "The offer we'd build with you",
-   "text": "This is a proposal for you to decide on, not something JD Kuhn does today. It's a second-opinion visit for anyone holding another company's replacement quote, with the visit price texted before anyone is booked and the repair and the replacement written side by side. As far as we found, none of the top Fort Wayne companies we checked offers it.",
+   "text": "This is a proposal for you to decide on, not something JD Kuhn does today. It's a second-opinion visit for anyone holding another company's replacement quote, with the visit price texted before anyone is booked and the repair and the replacement written side by side. As far as we found, none of the Fort Wayne companies we checked offers it.",
    "points": [
     "A homeowner calls or texts with the quote they were handed.",
     "You text back the price of the visit before anyone is booked.",
