@@ -807,6 +807,18 @@
       "pulledAt": "2026-10-25T02:02:27.141Z"
     },
     {
+      "slug": "thermal-peoria",
+      "name": "Thermal Services, Inc. (TSI)",
+      "placeId": "ChIJSVg4Ir9dCogRQ_1JZJKPeGs",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 51,
+        "withText": 46,
+        "ratingOnly": 5
+      },
+      "pulledAt": "2026-11-15T03:28:20.111Z"
+    },
+    {
       "slug": "uptocode-plumbing-wichita",
       "name": "Up To Code Plumbing",
       "placeId": "ChIJ8YkG7sxy7qwR2_HRL5JY77c",
