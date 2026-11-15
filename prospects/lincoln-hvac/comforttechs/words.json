@@ -12,10 +12,15 @@
     "label": "Lincoln",
     "display": "(402) 465-0000",
     "tel": "+14024650000"
+   },
+   {
+    "label": "Cell",
+    "display": "402-499-4518",
+    "tel": "+14024994518"
    }
   ],
   "email": "jory@comforttechs.com",
-  "hours": null,
+  "hours": "Monday to Saturday, 7:00 AM to 5:00 PM",
   "address": "540 Blue Heron Drive, Lincoln, NE 68522",
   "serviceArea": {
    "summary": "Lincoln, NE and the surrounding areas",
@@ -28,7 +33,7 @@
   "Family Owned and Operated",
   "Free Estimates",
   "Furnace and AC Repair",
-  "Financing Upon Approval",
+  "BBB A+ Rated",
   "Homes and Commercial Buildings"
  ],
  "services": [
@@ -73,7 +78,7 @@
   "why": [
    "Family owned and operated",
    "Free estimates",
-   "Furnace and AC repair on all makes and models",
+   "NATE-certified technicians",
    "Geothermal and commercial work"
   ]
  },
@@ -85,9 +90,9 @@
    "keyword": "hvac company lincoln ne",
    "seo": null,
    "hero": {
-    "eyebrow": "Lincoln, Nebraska · Furnaces, AC and geothermal",
+    "eyebrow": "Lincoln, Nebraska · Family owned and operated since 2007",
     "h1": "HVAC Company in Lincoln, NE — ComfortTechs",
-    "sub": "ComfortTechs looks for the fix before anyone talks about a new system, and lays out your options if replacement is real. Furnaces, AC, geothermal and commercial HVAC. Call (402) 465-0000.",
+    "sub": "We look for the fix first. If it's time for a new system, we lay out your options and let you decide. Call (402) 465-0000.",
     "primaryCta": {
      "label": "Call (402) 465-0000",
      "action": "call"
@@ -97,9 +102,9 @@
      "action": "contact"
     },
     "image": {
-     "slot": "home-hero-alt",
+     "slot": "home-hero",
      "alt": "A Lincoln home with an outdoor air conditioner beside the house under a clear sky",
-     "brief": "HVAC home-hero-alt: the outdoor condenser beside the house under a clear sky, no person"
+     "brief": "HVAC home-hero: ranch home exterior with the outdoor AC unit beside it, clear sky, house on the right"
     }
    },
    "sections": [
@@ -110,16 +115,38 @@
     },
     {
      "type": "prose",
-     "heading": "Fix It First, Replace Only When It's Real",
+     "heading": "Why Call ComfortTechs",
      "body": [
-      "We look for the fix first. If it's time for a new system, we lay out your options and let you decide."
+      "Heating and air conditioning is our business, and your comfort is our goal."
+     ],
+     "items": [
+      {
+       "title": "Serving Lincoln since 2007",
+       "text": "ComfortTechs is family owned and operated."
+      },
+      {
+       "title": "NATE-certified technicians",
+       "text": "They keep receiving training and education to improve their knowledge and skills."
+      },
+      {
+       "title": "BBB accredited since 05/21/2007",
+       "text": "The Better Business Bureau has awarded ComfortTechs an A+ rating."
+      },
+      {
+       "title": "A 100-percent customer satisfaction guarantee",
+       "text": "It is one of the values we list on our About page."
+      },
+      {
+       "title": "All makes and models",
+       "text": "We repair heating and cooling systems whoever installed them."
+      }
      ]
     },
     {
      "type": "prose",
      "heading": "Furnace and Air Conditioner Repair in Lincoln",
      "body": [
-      "We repair the system you have, whoever installed it. For furnaces that means gas, electric and oil furnaces, heat pumps and boilers. For air conditioners it means Bryant, American Standard, Trane, Carrier and other makes.",
+      "For your safety, our heating technicians arrive in company vehicles and in uniforms, so you can identify them. We repair any home heating problem, regardless of who installed your system, and air conditioners of any make, including Bryant, American Standard, Trane and Carrier.",
       "Each has its own page: [furnace repair in Lincoln](/furnace-repair-lincoln-ne/) and [AC repair in Lincoln](/ac-repair-lincoln-ne/)."
      ]
     },
@@ -130,9 +157,10 @@
     },
     {
      "type": "prose",
-     "heading": "A New Furnace or Air Conditioner, When Repair Isn't the Answer",
+     "heading": "New Furnaces, Air Conditioners and Heat Pumps",
      "body": [
-      "ComfortTechs installs new furnaces and air conditioners. Financing is available upon approval, from manufacturer rebates to special financing. Estimates are free."
+      "ComfortTechs installs and replaces furnaces, air conditioners and heat pumps. A free, no-obligation consultation helps determine the right system for your home or business, with comprehensive system sizing and help choosing the equipment that fits your home's configuration.",
+      "We are an American Standard Specialist. Financing is available upon approval, from manufacturer rebates to special financing."
      ]
     },
     {
@@ -144,7 +172,7 @@
      "type": "prose",
      "heading": "Geothermal Heat Pumps",
      "body": [
-      "ComfortTechs installs and services geothermal heat pumps, including WaterFurnace systems, alongside its furnace and air conditioning work."
+      "ComfortTechs installs WaterFurnace geothermal heat pumps for homes, and works on geothermal HVAC systems in commercial buildings too."
      ]
     },
     {
@@ -156,7 +184,7 @@
      "type": "prose",
      "heading": "Commercial HVAC",
      "body": [
-      "Commercial work covers repair, installation and maintenance, including frequency drives, air filtration, humidification and refrigerant monitoring."
+      "Our NATE-certified commercial specialists repair air-cooled and water-cooled chillers, cooling towers, steam and hot water boilers, rooftop and unitary units, building automation controls and variable frequency drives, among other systems."
      ]
     },
     {
@@ -171,7 +199,7 @@
     },
     {
      "type": "callBand",
-     "heading": "Heat or Air Not Working?",
+     "heading": "Doing It Right the First Time, Every Time.",
      "text": "Call (402) 465-0000 and tell us what the system is doing."
     }
    ]
@@ -185,7 +213,7 @@
    "hero": {
     "eyebrow": "Heating repair, Lincoln",
     "h1": "Furnace Repair in Lincoln, NE — ComfortTechs",
-    "sub": "ComfortTechs looks for the fix before anyone talks about a new furnace. Call (402) 465-0000.",
+    "sub": "We look for the fix first. If it's time for a new furnace, we lay out your options and let you decide. Call (402) 465-0000.",
     "primaryCta": {
      "label": "Call (402) 465-0000",
      "action": "call"
@@ -203,9 +231,27 @@
    "sections": [
     {
      "type": "prose",
-     "heading": "Why Call ComfortTechs for Furnace Repair",
+     "heading": "Why Hire ComfortTechs for Furnace Repair",
      "body": [
-      "We start with what failed. A new furnace comes up only if yours is past fixing, and then your options are laid out for you."
+      "You can count on our NATE-certified technicians to diagnose any problem with your heating system."
+     ],
+     "items": [
+      {
+       "title": "Any system, whoever installed it",
+       "text": "Our heating service department responds to any home heating problem, regardless of who installed your system."
+      },
+      {
+       "title": "Technicians you can identify",
+       "text": "For your safety, they arrive in company vehicles and in uniforms."
+      },
+      {
+       "title": "Serving Lincoln since 2007",
+       "text": "ComfortTechs is family owned and operated."
+      },
+      {
+       "title": "A 100-percent customer satisfaction guarantee",
+       "text": "It is one of the values on our About page."
+      }
      ]
     },
     {
@@ -214,10 +260,15 @@
      "name": "Robin B."
     },
     {
+     "type": "review",
+     "quote": "I heard a very loud noise from my furnace, it shook my walls, and Les came out that same morning of my call. He explained what could’ve caused the noise and explained what he did to fix it, putting my mind at ease.",
+     "name": "Joanie M."
+    },
+    {
      "type": "split",
      "heading": "The Heating Systems ComfortTechs Repairs",
      "body": [
-      "All makes and models, whoever installed the system:"
+      "Repairs for all makes and models of home heating:"
      ],
      "list": [
       "Forced air gas furnaces",
@@ -237,18 +288,13 @@
     },
     {
      "type": "review",
-     "quote": "… arrived within 30 minutes for a heating emergency in the winter.",
-     "name": "Charity H."
-    },
-    {
-     "type": "review",
-     "quote": "I heard a very loud noise from my furnace, it shook my walls, and Les came out that same morning of my call. He explained what could’ve caused the noise and explained what he did to fix it, putting my mind at ease.",
-     "name": "Joanie M."
-    },
-    {
-     "type": "review",
      "quote": "Comforttechs found the problem to my furnace called saying what was going on, had to order the part and would be in the next day. That next day they called right away saying the part was in and would be out to install it.",
      "name": "Bryce R."
+    },
+    {
+     "type": "review",
+     "quote": "… arrived within 30 minutes for a heating emergency in the winter.",
+     "name": "Charity H."
     },
     {
      "type": "review",
@@ -259,7 +305,7 @@
      "type": "prose",
      "heading": "When the Furnace Needs Replacing",
      "body": [
-      "If the furnace is past repair, ComfortTechs installs the new one and goes through your options with you."
+      "ComfortTechs installs and replaces furnaces and heat pumps. Our technicians assess your heating situation, diagnose the problem and weigh all your options with you. Estimates are free, and financing is available upon approval. We are an American Standard Specialist."
      ]
     },
     {
@@ -283,7 +329,7 @@
    "hero": {
     "eyebrow": "Air conditioning repair, Lincoln",
     "h1": "AC Repair in Lincoln, NE — ComfortTechs",
-    "sub": "When the AC quits on a hot day, call (402) 465-0000. ComfortTechs repairs all makes and models, Bryant, American Standard, Trane and Carrier included. “…he was here within 30 mins and had it running within 5.” — Ashley H.",
+    "sub": "When the AC quits on a hot day, call (402) 465-0000. “He was here within 30 mins and had it running within 5.” — Ashley H.",
     "primaryCta": {
      "label": "Call (402) 465-0000",
      "action": "call"
@@ -300,23 +346,30 @@
    },
    "sections": [
     {
-     "type": "review",
-     "quote": "Bryan came … due to AC no longer cooling and worked until AC was cooling until late and in the dark on one of the hottest days this year. Jory came back the next day to check on everything as it was dark the night before.",
-     "name": "Rachel T."
-    },
-    {
      "type": "split",
-     "heading": "Why Call ComfortTechs for AC Repair",
+     "heading": "Why Hire ComfortTechs for AC Repair",
      "body": [
-      "You hear the diagnosis first. The technician finds what failed and tells you whether repair or replacement is the better option, and you get a quote before any work is completed.",
-      "The same call works for a business: ComfortTechs also repairs commercial air conditioning."
+      "We repair Bryant, American Standard, Trane and Carrier air conditioners, and any other make or model."
      ],
+     "list": [
+      "NATE-certified technicians, serving Lincoln since 2007",
+      "We arrive with all essential tools and equipment to complete most tasks on the first visit",
+      "We quickly diagnose the problem and tell you whether repair or replacement is the better option",
+      "You get a quote before we complete any work",
+      "A 100-percent customer satisfaction guarantee"
+     ],
+     "listStyle": "checks",
      "image": {
       "slot": "airflow-vent",
       "alt": "A ceiling air vent in a quiet Lincoln home",
       "brief": "HVAC airflow-vent: ceiling supply vent in a living room, soft daylight"
      },
      "imageSide": "right"
+    },
+    {
+     "type": "review",
+     "quote": "Bryan came … due to AC no longer cooling and worked until AC was cooling until late and in the dark on one of the hottest days this year. Jory came back the next day to check on everything as it was dark the night before.",
+     "name": "Rachel T."
     },
     {
      "type": "review",
@@ -327,7 +380,7 @@
      "type": "prose",
      "heading": "When the Air Conditioner Needs Replacing",
      "body": [
-      "If the unit is past repair, ComfortTechs installs the new system and goes through your options with you."
+      "ComfortTechs installs new air conditioning systems with a free, no-obligation consultation, comprehensive system sizing and help choosing the equipment that fits your home. We are experienced with Trane, Carrier, American Standard and Bryant, and financing is available upon approval."
      ]
     },
     {
@@ -367,7 +420,7 @@
      "type": "prose",
      "heading": "Reach ComfortTechs by Phone or Email",
      "body": [
-      "(402) 465-0000",
+      "(402) 465-0000. Our second number is 402-499-4518.",
       "Call and describe the problem. If you'd rather write, email jory@comforttechs.com with your name, a phone number, the address of the house or building and what the system is doing."
      ]
     },
@@ -397,7 +450,7 @@
      "type": "prose",
      "heading": "Where ComfortTechs Is and Who We Serve",
      "body": [
-      "We're at 540 Blue Heron Drive, Lincoln, NE 68522, and we serve Lincoln and the surrounding areas, for homes and commercial buildings."
+      "We're at 540 Blue Heron Drive, Lincoln, NE 68522, open Monday to Saturday, 7:00 AM to 5:00 PM, and we serve Lincoln and the surrounding areas, for homes and commercial buildings."
      ]
     },
     {
@@ -411,9 +464,10 @@
  "strategy": {
   "whyHeading": "Why we built this site",
   "why": [
-   "Your AC repair page promises 24 hours a day, 7 days a week, 365 days a year, with someone answering the phone night and day. Your contact page says Monday to Saturday, 7 to 5, and closed Sunday. Someone whose AC quits on a Sunday can't tell which one is true.",
-   "The headline at the top of your homepage is a long run of keywords ending in Lincoln, Nebraska, and 12 of your 16 pages carry the same one, your furnace repair and AC repair pages included. We found no customer testimonials on any page we crawled, while your Google profile has 69 reviews.",
-   "So the demo opens with HVAC company in Lincoln, NE, gives furnace repair and AC repair a page each, and puts your customers' own words next to the point each one proves, starting with fix it first."
+   "Your AC repair page promises 24 hours a day, 7 days a week, 365 days a year, with someone answering the phone night and day. Your contact page says Monday to Saturday, 7 to 5. Someone whose AC quits on a Sunday can't tell which one is true.",
+   "Your homepage links to pages that do not exist: /meditation-retreat-moksha, /retreat-herbal-medicine-101-moksha and /retreat-backpacking-moksha all return \"page not found\". The homepage code also contains a leftover template line, a second, pasted-in page head titled \"Your SEO optimized title\". The visible browser title is \"ComfortTechs\".",
+   "The homepage H1 is a keyword string, \"Comforttechs-Air conditioner, air conditioning repair, ac repair, furnace, …-Lincoln, Nebraska\", and 12 of your 16 pages carry the same one, your furnace repair and AC repair pages included. We found no customer testimonials on any page we crawled, while your Google profile has 69 reviews.",
+   "So the demo opens with HVAC company in Lincoln, NE, gives furnace repair and AC repair a page each, and puts your own site's strongest facts and your customers' own words side by side, starting with fix it first."
   ],
   "cardsHeading": "Be the HVAC Company People Find on Google",
   "cardsIntro": "Each card is one page of the demo.",
@@ -424,11 +478,12 @@
     "why": "Where Google learns who you are and where you work.",
     "problems": [
      "Your homepage headline is a long string of keywords, so Google can't tell what you want to be found for. Twelve of your 16 pages carry the same one.",
-     "Three links on your homepage go to pages that don't exist, and the one we traced is named after a meditation retreat."
+     "Three links on your homepage go to pages that don't exist, and the one we traced is named after a meditation retreat.",
+     "The homepage code carries a leftover template line, a second page head titled \"Your SEO optimized title\"."
     ],
     "fixes": [
      "A headline that says HVAC company in Lincoln, NE, right at the top.",
-     "Every link on the page goes to a page that works."
+     "Every link on the page goes to a page that works, and one clean page head."
     ]
    },
    {
@@ -501,7 +556,7 @@
    "intro": "Google and AI tools see different answers about your business in different places. We wrote this demo from your reviews and your site. On a short onboarding call, we'd confirm these so everything says the same thing.",
    "items": [
     "Your AC repair page says 24 hours a day, 7 days a week, while your contact page says Monday to Saturday, 7 to 5 and closed Sunday, so which hours should Google show?",
-    "Your homepage says since 2007 and your footer says copyright 2022, so which year should every listing use?",
+    "Your site says since 2007, an owner reply on Google says the company started in 2006, and your footer says copyright 2022, so which year should every listing use?",
     "Your contact page lists 402-465-0000 and a second number, 402-499-4518, marked C, so which one should every listing and every button use?"
    ]
   },

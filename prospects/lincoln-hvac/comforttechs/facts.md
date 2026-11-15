@@ -82,3 +82,10 @@ Compiled 2026-11-15. Each line cites a URL on the site unless marked otherwise. 
 
 ## Re-check 2026-11-15 (QA fix pass)
 - Playwright on https://www.comforttechs.com/: the three links /meditation-retreat-moksha, /retreat-herbal-medicine-101-moksha and /retreat-backpacking-moksha are still on the homepage and still return 404. The only tel: link is 402-465-0000.
+
+## Round 3 additions from site/ full text (2026-11-15)
+- "WE OFFER A 100-PERCENT CUSTOMER SATISFACTION GUARANTEE." and "BBB ACCREDITATION SINCE 05/21/2007 ... A+ RATING" (site/about-us.md). Terms of the guarantee are not on the site.
+- "AS A AMERICAN STANDARD SPECIALIST" (site/about-us.md, site/heater-installation.md).
+- Technicians "ARRIVE IN COMPANY VEHICLES AND IN UNIFORMS"; repairs "REGARDLESS OF WHO INSTALLED YOUR SYSTEM" (site/heater-repair.md). "ARRIVE WITH ALL ESSENTIAL TOOLS AND EQUIPMENT REQUIRED TO COMPLETE MOST TASKS ON THE FIRST VISIT" (site/air-conditioner-repair.md).
+- Commercial equipment list: chillers, cooling towers, boilers, building automation, rooftop units, variable frequency drives (site/commercial-hvac.md).
+- The homepage HTML has two title tags: "ComfortTechs" and "Your SEO optimized title".
