@@ -32,6 +32,15 @@ Edit nothing, send nothing, create no sessions, run no git.
   - Would the owner read it and think "that's us"?
 - For WEAKER pages, list exactly what to change.
 
+## Josh's standing checks (every page, every time)
+- Every credential used (NATE, BBB, a manufacturer program) has one plain sentence saying what it is, sourced in facts.md.
+- Every line is in the owner's voice. No third-person or report-style lines.
+- No line talks about the website itself.
+- Brand lists are complete: "any make" ends with "and more", and every brand the site shows it installs is named.
+- The audience is consistent within each section (home vs property).
+- No service is covered twice on one page.
+- The footer at 390px is evenly spaced, with no empty bands.
+
 ## Also check
 - **Scope:** home, 2 service pages, contact and strategy. If either service page can't stand up on real material, say "TOO THIN" rather than "fix".
 - **Outreach message:**

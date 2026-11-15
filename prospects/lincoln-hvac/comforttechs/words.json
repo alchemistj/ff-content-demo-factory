@@ -35,12 +35,12 @@
   {
    "name": "Furnace Repair",
    "route": "/furnace-repair-lincoln-ne/",
-   "blurb": "Gas, electric and oil furnaces, heat pumps and boilers, whoever installed them."
+   "blurb": "We repair gas, electric and oil furnaces, heat pumps and boilers, whoever installed them."
   },
   {
    "name": "AC Repair",
    "route": "/ac-repair-lincoln-ne/",
-   "blurb": "Air conditioner repair for Bryant, American Standard, Trane, Carrier and other makes."
+   "blurb": "We repair air conditioners of any make: Bryant, American Standard, Trane, Carrier and more."
   },
   {
    "name": "Air Conditioner Installation",
@@ -50,26 +50,26 @@
   {
    "name": "Heater Installation",
    "route": null,
-   "blurb": "A new furnace or heating system when it is time."
+   "blurb": "A new furnace or heat pump when it's time."
   },
   {
    "name": "Geothermal Heat Pumps",
    "route": null,
-   "blurb": "Geothermal heating and cooling, including WaterFurnace systems."
+   "blurb": "We install WaterFurnace geothermal heat pumps and work on geothermal systems."
   },
   {
    "name": "Maintenance Plans",
    "route": null,
-   "blurb": "Custom maintenance plans for your heating and cooling. Call for details."
+   "blurb": "We offer custom maintenance plans. Call us for details."
   },
   {
    "name": "Commercial HVAC",
    "route": null,
-   "blurb": "Repair, installation and maintenance for commercial buildings."
+   "blurb": "We repair chillers, cooling towers, boilers, rooftop units, building automation controls and variable frequency drives, and more."
   }
  ],
  "footer": {
-  "about": "ComfortTechs is a family owned and operated HVAC company in Lincoln, Nebraska. We repair, install and maintain heating and air conditioning systems for homes and commercial buildings.",
+  "about": "We're a family owned and operated HVAC company in Lincoln, Nebraska. We repair, install and maintain heating and air conditioning systems for homes and commercial buildings.",
   "why": [
    "Family owned and operated",
    "Free estimates",
@@ -110,26 +110,26 @@
     },
     {
      "type": "prose",
-     "heading": "Why Call ComfortTechs",
+     "heading": "Why Call Us",
      "body": [
       "Heating and air conditioning is our business, and your comfort is our goal."
      ],
      "items": [
       {
        "title": "Family owned and operated",
-       "text": "Serving Lincoln since 2007."
+       "text": "We've served Lincoln since 2007."
       },
       {
        "title": "NATE-certified technicians",
-       "text": "They keep receiving training and education to improve their knowledge and skills."
+       "text": "NATE is the nation’s largest nonprofit certification organization for heating, ventilation, air conditioning and refrigeration technicians. Ours keep up their training and education."
       },
       {
-       "title": "An A+ rating from the Better Business Bureau",
-       "text": "BBB lists ComfortTechs, Inc. in Lincoln with an A+ rating."
+       "title": "A+ rated with the Better Business Bureau",
+       "text": "We're A+ rated with the Better Business Bureau."
       },
       {
        "title": "A 100-percent customer satisfaction guarantee",
-       "text": "It sits alongside our commitment to quality, ethics and professionalism."
+       "text": "It goes with our commitment to quality, ethics and professionalism."
       },
       {
        "title": "All makes and models",
@@ -141,8 +141,8 @@
      "type": "prose",
      "heading": "Furnace and Air Conditioner Repair in Lincoln",
      "body": [
-      "For your safety, our heating technicians arrive in company vehicles and in uniforms, so you can identify them. We repair any home heating problem, regardless of who installed your system, and air conditioners of any make, including Bryant, American Standard, Trane and Carrier.",
-      "Each has its own page: [furnace repair in Lincoln](/furnace-repair-lincoln-ne/) and [AC repair in Lincoln](/ac-repair-lincoln-ne/)."
+      "Our heating technicians arrive in company vehicles and in uniforms, so you can identify them. We repair any home heating problem, whoever installed your system, and we work on air conditioners of any make: Bryant, American Standard, Trane, Carrier and more.",
+      "Whether you need [furnace repair](/furnace-repair-lincoln-ne/) or [AC repair](/ac-repair-lincoln-ne/), call us and tell us what the system is doing."
      ]
     },
     {
@@ -154,8 +154,8 @@
      "type": "prose",
      "heading": "New Furnaces, Air Conditioners and Heat Pumps",
      "body": [
-      "ComfortTechs installs and replaces furnaces, air conditioners and heat pumps. A free, no-obligation consultation helps determine the right system for your home or business, with comprehensive system sizing and help choosing the equipment that fits your home's configuration.",
-      "We install and service American Standard products. Financing is available upon approval, from manufacturer rebates to special financing."
+      "We install and replace furnaces, air conditioners and heat pumps. We install American Standard and Mitsubishi Electric systems, and WaterFurnace for geothermal.",
+      "Call for a free, no-obligation consultation to find the right system for your home or business. We size the system properly and help you choose equipment that fits your property. Financing is available upon approval, from manufacturer rebates to special financing."
      ]
     },
     {
@@ -164,32 +164,8 @@
      "name": "Rodney F."
     },
     {
-     "type": "prose",
-     "heading": "Geothermal Heat Pumps",
-     "body": [
-      "ComfortTechs installs WaterFurnace geothermal heat pumps for homes, and works on geothermal HVAC systems in commercial buildings too."
-     ]
-    },
-    {
-     "type": "review",
-     "quote": "Our geothermal unit was acting up on a very hot day and … I called ComfortTechs and they were at our front door within an hour.",
-     "name": "Matt A."
-    },
-    {
-     "type": "prose",
-     "heading": "Commercial HVAC",
-     "body": [
-      "Our NATE-certified commercial specialists repair air-cooled and water-cooled chillers, cooling towers, steam and hot water boilers, rooftop and unitary units, building automation controls and variable frequency drives, among other systems."
-     ]
-    },
-    {
-     "type": "review",
-     "quote": "Our A/C at our business went out due to mechanical failure. Luckily, the team at Comfort Techs got to the problem right away. They kept great communication before and during the work. Our A/C was back up and running quickly.",
-     "name": "Dustin J."
-    },
-    {
      "type": "services",
-     "heading": "Everything ComfortTechs Does",
+     "heading": "What We Do for Lincoln Homes and Businesses",
      "intro": "Repair, installation and maintenance for homes and commercial buildings."
     },
     {
@@ -233,16 +209,16 @@
      "type": "prose",
      "heading": "Why Hire ComfortTechs for Furnace Repair",
      "body": [
-      "You can count on our NATE-certified technicians to diagnose any problem with your heating system."
+      "Our NATE-certified technicians diagnose any problem with your heating system. NATE, the nation’s largest nonprofit certification group for HVACR technicians, certifies them."
      ],
      "items": [
       {
        "title": "Any system, whoever installed it",
-       "text": "Our heating service department responds to any home heating problem, regardless of who installed your system."
+       "text": "We respond to any home heating problem, regardless of who installed your system."
       },
       {
        "title": "Technicians you can identify",
-       "text": "For your safety, they arrive in company vehicles and in uniforms."
+       "text": "For your safety, ours arrive in company vehicles and in uniforms."
       }
      ]
     },
@@ -253,9 +229,9 @@
     },
     {
      "type": "split",
-     "heading": "The Heating Systems ComfortTechs Repairs",
+     "heading": "The Heating Systems We Repair",
      "body": [
-      "Repairs for all makes and models of home heating:"
+      "We repair all makes and models of home heating:"
      ],
      "list": [
       "Forced air gas furnaces",
@@ -292,7 +268,7 @@
      "type": "prose",
      "heading": "When the Furnace Needs Replacing",
      "body": [
-      "ComfortTechs installs and replaces furnaces and heat pumps. Our technicians assess your heating situation, diagnose the problem and weigh all your options with you. Estimates are free, and financing is available upon approval."
+      "We install and replace furnaces and heat pumps. We assess your heating situation, diagnose the problem and weigh all your options with you. Estimates are free, and financing is available upon approval."
      ]
     },
     {
@@ -316,7 +292,7 @@
    "hero": {
     "eyebrow": "Air conditioning repair, Lincoln",
     "h1": "AC Repair in Lincoln, NE — ComfortTechs",
-    "sub": "When the AC quits on a hot day, call (402) 465-0000. ComfortTechs repairs all makes and models, Bryant, American Standard, Trane and Carrier included. “…he was here within 30 mins and had it running within 5.” — Ashley H.",
+    "sub": "When the AC quits on a hot day, call (402) 465-0000. We repair air conditioners of any make: Bryant, American Standard, Trane, Carrier and more. “…he was here within 30 mins and had it running within 5.” — Ashley H.",
     "primaryCta": {
      "label": "Call (402) 465-0000",
      "action": "call"
@@ -336,12 +312,12 @@
      "type": "split",
      "heading": "Why Hire ComfortTechs for AC Repair",
      "body": [
-      "We repair Bryant, American Standard, Trane and Carrier air conditioners, and any other make or model."
+      "Any make or model: Bryant, American Standard, Trane, Carrier and more. Our technicians are NATE-certified. NATE is a nonprofit that certifies heating, ventilation, air conditioning and refrigeration technicians, and it is the largest in the nation."
      ],
      "list": [
       "NATE-certified technicians",
       "We arrive with all essential tools and equipment to complete most tasks on the first visit",
-      "We quickly diagnose the problem and tell you whether repair or replacement is the better option",
+      "We diagnose the problem quickly and tell you whether repair or replacement is the better option",
       "You get a quote before we complete any work"
      ],
      "listStyle": "checks",
@@ -366,7 +342,7 @@
      "type": "prose",
      "heading": "When the Air Conditioner Needs Replacing",
      "body": [
-      "ComfortTechs installs new air conditioning systems with a free, no-obligation consultation, comprehensive system sizing and help choosing the equipment that fits your home. We are experienced with Trane, Carrier, American Standard and Bryant, and financing is available upon approval."
+      "We install new air conditioning systems, starting with a free, no-obligation consultation, proper system sizing and help choosing equipment that fits your home. We're experienced with Trane, Carrier, American Standard and Bryant, and we install Mitsubishi Electric systems. Financing is available upon approval."
      ]
     },
     {
@@ -404,7 +380,7 @@
    "sections": [
     {
      "type": "prose",
-     "heading": "Reach ComfortTechs by Phone or Email",
+     "heading": "Call or Email Us",
      "body": [
       "(402) 465-0000",
       "Call and describe the problem. If you'd rather write, email jory@comforttechs.com with your name, a phone number, the address of the house or building and what the system is doing."
@@ -434,7 +410,7 @@
     },
     {
      "type": "prose",
-     "heading": "Where ComfortTechs Is and Who We Serve",
+     "heading": "Where to Find Us",
      "body": [
       "We're at 540 Blue Heron Drive, Lincoln, NE 68522, open Monday to Saturday, 7:00 AM to 5:00 PM, and we serve Lincoln and the surrounding areas, for homes and commercial buildings."
      ]
@@ -452,6 +428,7 @@
   "why": [
    "Your AC repair page promises 24 hours a day, 7 days a week, 365 days a year, with someone answering the phone night and day. Your contact page says Monday to Saturday, 7 to 5. Someone whose AC quits on a Sunday can't tell which one is true.",
    "Your homepage links to pages that do not exist: /meditation-retreat-moksha, /retreat-herbal-medicine-101-moksha and /retreat-backpacking-moksha all return \"page not found\". The homepage code also contains a leftover template line, a second, pasted-in page head titled \"Your SEO optimized title\". The visible browser title is \"ComfortTechs\".",
+   "On your three product pages, every \"Learn more\" link goes out to a manufacturer's site: 7 to americanstandardair.com, 3 to mitsubishicomfort.com and 10 to waterfurnace.com. That sends people who are learning about ComfortTechs to manufacturer pages that may list competing dealers. The demo keeps visitors on your own pages.",
    "The homepage H1 is a keyword string, \"Comforttechs-Air conditioner, air conditioning repair, ac repair, furnace, …-Lincoln, Nebraska\", and 12 of your 16 pages carry the same one, your furnace repair and AC repair pages included. We found no customer testimonials on any page we crawled, while your Google profile has 69 reviews.",
    "So the demo opens with HVAC company in Lincoln, NE, gives furnace repair and AC repair a page each, and puts your own site's strongest facts and your customers' own words side by side, starting with fix it first."
   ],

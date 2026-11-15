@@ -95,3 +95,8 @@ Compiled 2026-11-15. Each line cites a URL on the site unless marked otherwise. 
 - **American Standard "Specialist":** https://www.americanstandardair.com/find-a-dealer/nebraska/ is a lead form (state and ZIP, submit), not a public list. Not submitted. **NOT confirmed**; the demo says "install and service American Standard products" only (their site: about-us).
 - **NATE:** https://natex.org/ has no public technician or contractor lookup that was checked. **NOT confirmed**; the demo uses "NATE-certified technicians" only as their own site's wording (home, heater-install, commercial).
 - **Hours:** rendered in the footer of https://www.comforttechs.com/contact-us (Mon–Sat 7am–5pm, Sun Closed), seen with Playwright innerText. Confirmed on their live contact page.
+
+## NATE and manufacturer links, 2026-11-15 (Playwright)
+- NATE's own homepage https://natex.org/ (read 2026-11-15): "NATE is the nation's largest nonprofit certification organization for heating, ventilation, air conditioning and refrigeration (HVACR) technicians." The demo follows this wording. Their own site repeats it (home, heater-install, about-us).
+- Mitsubishi Electric products page exists on their site (site/mitsubishi-electric-products.md); American Standard products page (site/american-standard-products.md); WaterFurnace geothermal page (site/waterfurnace-geothermal.md).
+- Per FF Architect's live check: the "Learn more" links on the three product pages go out to manufacturers: 7 to americanstandardair.com, 3 to mitsubishicomfort.com, 10 to waterfurnace.com.
