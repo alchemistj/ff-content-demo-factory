@@ -44,3 +44,6 @@ Every other page meets its minimum.
 | griffin | /home/ | 627 | 900 | BELOW floor (smaller scope, real material only (11/15 rebuild)) |
 | griffin | /furnace-repair-peoria-il/ | 364 | 700 | BELOW floor (smaller scope, real material only (11/15 rebuild)) |
 | griffin | /ac-repair-peoria-il/ | 331 | 700 | BELOW floor (smaller scope, real material only (11/15 rebuild)) |
+| comforttechs | /home/ | 421 | 900 | BELOW floor: smaller scope, real material only (11/15 rebuild) |
+| comforttechs | /furnace-repair-lincoln-ne/ | 420 | 700 | BELOW floor: smaller scope, real material only (11/15 rebuild) |
+| comforttechs | /ac-repair-lincoln-ne/ | 347 | 700 | BELOW floor: smaller scope, real material only (11/15 rebuild) |

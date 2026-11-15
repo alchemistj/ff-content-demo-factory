@@ -3,7 +3,7 @@
 Method: `docs/writer-guides/AVATAR-AND-USP.md` section 2. Appeal is scored against `avatars/hvac.md` (the trade avatar, built on Wichita reviews; the fears and wants carry over to Lincoln). Exclusivity is scored against the 5 competitors in `competitors/lincoln-hvac.md`: Dave's Heating & Air, John Henry's, National Furnace, Action, Bryant Air Conditioning & Heating Co. Those scores are conservative ("not found" means not on the homepage fetched).
 
 ## Business in one line
-ComfortTechs is a family owned and operated HVAC company at 540 Blue Heron Drive in Lincoln (facts.md). Its 49 pulled Google reviews are 47 five-star and 2 one-star (the owner replied to both). Several of the five-star ones describe a second opinion that saved a system.
+ComfortTechs is a family owned and operated HVAC company at 540 Blue Heron Drive in Lincoln (facts.md). Its 49 pulled Google reviews are 47 five-star and 2 one-star (the owner replied to both). Three five-star reviews (Kim H., Bryce R., Brendan M.) are about a repair-or-replace decision; quote them word for word, never summarize them.
 
 ## USP table (sorted by score)
 
@@ -54,3 +54,9 @@ Top claim: "looks for the fix before anyone talks about a new system," **20**. *
 - **Claims facts.md marks Unverified and the copy therefore skips:** NATE-certified, licensed and insured, BBB membership, American Standard "specialist" or dealer status, full warranties, the financing lender.
 - **Two one-star reviews (2019)**, both disputed by the owner's reply. Not used.
 - **Residential and commercial are mixed** in the reviews (Dustin J., Cynthia H. are businesses). The demo is residential-led and keeps commercial as one section.
+
+## 11/15 rebuild notes (scope and wording)
+- Two service pages: **Furnace Repair** and **AC Repair**. Why: they are the two repair services with their own pages on comforttechs.com (/heater-repair, /air-conditioner-repair) and the most on-topic reviews (furnace: Miranda M., Bryce R., Joanie M., Robin B.; AC: Ashley H., Rachel T., Karen E.).
+- Reviews appear only as exact quotes with the reviewer's name. No "customers mention / describe / say" anywhere, including strategy and outreach.
+- Quotes skipped because they carry a price or name another company: Kim H., Heather S., Andrew A.'s bid line, Bryce R.'s "another local company" line (trimmed out).
+- The 24/7, NATE, BBB, licensed/insured, warranty and "since" claims stay off the demo (see "What's thin").
