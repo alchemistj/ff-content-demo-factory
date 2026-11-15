@@ -2,7 +2,7 @@
 
 ## READ FIRST: the examples
 
-1. **The words of Josh's 4 client websites are the model:** Window Dudes, SRA Roofing & Gutters, Greene Planet and Evolve Exteriors. Their copy is in ff-content-demo-factory `examples/approved-copy/`.
+1. **The words of Josh's client websites are the model:** Window Dudes, SRA Roofing & Gutters and Greene Planet (Josh will name a 4th). Their copy is in ff-content-demo-factory `examples/approved-copy/`.
 2. **The 12 Lovable builds are the model for demos.** A human QA'd every one of them heavily. They're listed, with live .lovable.app URLs, in ff-content-demo-factory `docs/reference-sites.md`.
 3. **The rules are in ff-astro-demos `docs/demo-definition-of-done.md`:** home 550+ words, each service page 700+, no fact said twice, and everything else in that file.
 4. **Every writer reads all three before writing. Every reviewer compares each page side by side with the closest example and fails anything weaker.** Never use other Astro demos (Wichita or any other) as models.
@@ -19,7 +19,7 @@ Edit nothing, send nothing, create no sessions, run no git.
 0. **`/home/user/ff-content-demo-factory/docs/JOSH-CHECKLIST.md` IN FULL. It is the single list of Josh's lessons. Every item is pass/fail, and one FAIL means NOT YET.** Reviewers: fill in its Reviewer table for every page, with a quote as evidence for each item.
 1. **Josh's automatic fails:** `/home/user/ff-content-demo-factory/ASSIGNMENT.md`, section "Demo copy (Josh's standing rules, 2026-11-15)". Any hit is a FAIL.
 2. **The references** (listed in `docs/reference-sites.md`). Read in full the ones you compare against:
-   - Client sites: `examples/approved-copy/sra/`, `window-dudes/`, `greene-planet/`, `evolve-exteriors/`.
+   - Client sites: `examples/approved-copy/sra/`, `window-dudes/` and `greene-planet/`.
    - Lovable builds:
      - `/home/user/ad-mechanical-services/src/pages/Index.tsx` (HVAC homepage);
      - `/home/user/all-phase-electric/src/routes/` (home and two service pages, with `src/data/site.ts`);

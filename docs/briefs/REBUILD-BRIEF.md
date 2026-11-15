@@ -2,7 +2,7 @@
 
 ## READ FIRST: the examples
 
-1. **The words of Josh's 4 client websites are the model:** Window Dudes, SRA Roofing & Gutters, Greene Planet and Evolve Exteriors. Their copy is in ff-content-demo-factory `examples/approved-copy/`.
+1. **The words of Josh's client websites are the model:** Window Dudes, SRA Roofing & Gutters and Greene Planet (Josh will name a 4th). Their copy is in ff-content-demo-factory `examples/approved-copy/`.
 2. **The 12 Lovable builds are the model for demos.** A human QA'd every one of them heavily. They're listed, with live .lovable.app URLs, in ff-content-demo-factory `docs/reference-sites.md`.
 3. **The rules are in ff-astro-demos `docs/demo-definition-of-done.md`:** home 550+ words, each service page 700+, no fact said twice, and everything else in that file.
 4. **Every writer reads all three before writing. Every reviewer compares each page side by side with the closest example and fails anything weaker.** Never use other Astro demos (Wichita or any other) as models.
@@ -17,7 +17,7 @@ Work only in `/home/user/ff-content-demo-factory/prospects/<folder>/`. Write `us
 0. **`/home/user/ff-content-demo-factory/docs/JOSH-CHECKLIST.md` IN FULL. It is the single list of Josh's lessons. Every item is pass/fail, and one FAIL means NOT YET.** Writers: check each page against it before replying.
 1. **Josh's rules:** `ASSIGNMENT.md`, section "Demo copy (Josh's standing rules, 2026-11-15)". Every bullet there is an automatic fail.
 2. **The references, IN FULL (voice, structure, how a page sells; never their facts).** These are what "good" means.
-   - Client sites: everything in `examples/approved-copy/sra/`, `window-dudes/` and `greene-planet/`, plus `evolve-exteriors/homepage.md`.
+   - Client sites: everything in `examples/approved-copy/sra/`, `window-dudes/` and `greene-planet/`.
    - Lovable builds:
      - `/home/user/ad-mechanical-services/src/pages/Index.tsx` (HVAC homepage, the closest trade match);
      - `/home/user/all-phase-electric/src/routes/home.tsx`, `electrical-panel-upgrade-nixa-mo.tsx`, `commercial-electrician-nixa-mo.tsx` and `src/data/site.ts`;
