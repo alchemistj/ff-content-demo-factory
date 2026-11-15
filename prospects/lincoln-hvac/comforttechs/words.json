@@ -12,11 +12,6 @@
     "label": "Lincoln",
     "display": "(402) 465-0000",
     "tel": "+14024650000"
-   },
-   {
-    "label": "Cell",
-    "display": "402-499-4518",
-    "tel": "+14024994518"
    }
   ],
   "email": "jory@comforttechs.com",
@@ -90,7 +85,7 @@
    "keyword": "hvac company lincoln ne",
    "seo": null,
    "hero": {
-    "eyebrow": "Lincoln, Nebraska · Family owned and operated since 2007",
+    "eyebrow": "Lincoln, Nebraska · Furnaces, AC and geothermal",
     "h1": "HVAC Company in Lincoln, NE — ComfortTechs",
     "sub": "We look for the fix first. If it's time for a new system, we lay out your options and let you decide. Call (402) 465-0000.",
     "primaryCta": {
@@ -102,9 +97,9 @@
      "action": "contact"
     },
     "image": {
-     "slot": "home-hero",
+     "slot": "home-hero-alt",
      "alt": "A Lincoln home with an outdoor air conditioner beside the house under a clear sky",
-     "brief": "HVAC home-hero: ranch home exterior with the outdoor AC unit beside it, clear sky, house on the right"
+     "brief": "HVAC home-hero-alt: the outdoor condenser beside the house under a clear sky, no person"
     }
    },
    "sections": [
@@ -121,20 +116,20 @@
      ],
      "items": [
       {
-       "title": "Serving Lincoln since 2007",
-       "text": "ComfortTechs is family owned and operated."
+       "title": "Family owned and operated",
+       "text": "Serving Lincoln since 2007."
       },
       {
        "title": "NATE-certified technicians",
        "text": "They keep receiving training and education to improve their knowledge and skills."
       },
       {
-       "title": "BBB accredited since 05/21/2007",
-       "text": "The Better Business Bureau has awarded ComfortTechs an A+ rating."
+       "title": "An A+ rating from the Better Business Bureau",
+       "text": "BBB lists ComfortTechs, Inc. in Lincoln with an A+ rating."
       },
       {
        "title": "A 100-percent customer satisfaction guarantee",
-       "text": "It is one of the values we list on our About page."
+       "text": "It sits alongside our commitment to quality, ethics and professionalism."
       },
       {
        "title": "All makes and models",
@@ -160,7 +155,7 @@
      "heading": "New Furnaces, Air Conditioners and Heat Pumps",
      "body": [
       "ComfortTechs installs and replaces furnaces, air conditioners and heat pumps. A free, no-obligation consultation helps determine the right system for your home or business, with comprehensive system sizing and help choosing the equipment that fits your home's configuration.",
-      "We are an American Standard Specialist. Financing is available upon approval, from manufacturer rebates to special financing."
+      "We install and service American Standard products. Financing is available upon approval, from manufacturer rebates to special financing."
      ]
     },
     {
@@ -199,7 +194,7 @@
     },
     {
      "type": "callBand",
-     "heading": "Doing It Right the First Time, Every Time.",
+     "heading": "Heat or Air Not Working?",
      "text": "Call (402) 465-0000 and tell us what the system is doing."
     }
    ]
@@ -230,6 +225,11 @@
    },
    "sections": [
     {
+     "type": "review",
+     "quote": "Furnace not running, temp 61 degrees in house. … Very nice man named Zach helped diagnose the problem over the phone. He then stayed on the line for a good half hour while I cleaned a part he directed me to. Fixed the problem right away, saving me a service call.",
+     "name": "Robin B."
+    },
+    {
      "type": "prose",
      "heading": "Why Hire ComfortTechs for Furnace Repair",
      "body": [
@@ -243,21 +243,8 @@
       {
        "title": "Technicians you can identify",
        "text": "For your safety, they arrive in company vehicles and in uniforms."
-      },
-      {
-       "title": "Serving Lincoln since 2007",
-       "text": "ComfortTechs is family owned and operated."
-      },
-      {
-       "title": "A 100-percent customer satisfaction guarantee",
-       "text": "It is one of the values on our About page."
       }
      ]
-    },
-    {
-     "type": "review",
-     "quote": "Furnace not running, temp 61 degrees in house. … Very nice man named Zach helped diagnose the problem over the phone. He then stayed on the line for a good half hour while I cleaned a part he directed me to. Fixed the problem right away, saving me a service call.",
-     "name": "Robin B."
     },
     {
      "type": "review",
@@ -305,7 +292,7 @@
      "type": "prose",
      "heading": "When the Furnace Needs Replacing",
      "body": [
-      "ComfortTechs installs and replaces furnaces and heat pumps. Our technicians assess your heating situation, diagnose the problem and weigh all your options with you. Estimates are free, and financing is available upon approval. We are an American Standard Specialist."
+      "ComfortTechs installs and replaces furnaces and heat pumps. Our technicians assess your heating situation, diagnose the problem and weigh all your options with you. Estimates are free, and financing is available upon approval."
      ]
     },
     {
@@ -329,7 +316,7 @@
    "hero": {
     "eyebrow": "Air conditioning repair, Lincoln",
     "h1": "AC Repair in Lincoln, NE — ComfortTechs",
-    "sub": "When the AC quits on a hot day, call (402) 465-0000. “He was here within 30 mins and had it running within 5.” — Ashley H.",
+    "sub": "When the AC quits on a hot day, call (402) 465-0000. ComfortTechs repairs all makes and models, Bryant, American Standard, Trane and Carrier included. “…he was here within 30 mins and had it running within 5.” — Ashley H.",
     "primaryCta": {
      "label": "Call (402) 465-0000",
      "action": "call"
@@ -352,11 +339,10 @@
       "We repair Bryant, American Standard, Trane and Carrier air conditioners, and any other make or model."
      ],
      "list": [
-      "NATE-certified technicians, serving Lincoln since 2007",
+      "NATE-certified technicians",
       "We arrive with all essential tools and equipment to complete most tasks on the first visit",
       "We quickly diagnose the problem and tell you whether repair or replacement is the better option",
-      "You get a quote before we complete any work",
-      "A 100-percent customer satisfaction guarantee"
+      "You get a quote before we complete any work"
      ],
      "listStyle": "checks",
      "image": {
@@ -420,7 +406,7 @@
      "type": "prose",
      "heading": "Reach ComfortTechs by Phone or Email",
      "body": [
-      "(402) 465-0000. Our second number is 402-499-4518.",
+      "(402) 465-0000",
       "Call and describe the problem. If you'd rather write, email jory@comforttechs.com with your name, a phone number, the address of the house or building and what the system is doing."
      ]
     },

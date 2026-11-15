@@ -89,3 +89,9 @@ Compiled 2026-11-15. Each line cites a URL on the site unless marked otherwise. 
 - Technicians "ARRIVE IN COMPANY VEHICLES AND IN UNIFORMS"; repairs "REGARDLESS OF WHO INSTALLED YOUR SYSTEM" (site/heater-repair.md). "ARRIVE WITH ALL ESSENTIAL TOOLS AND EQUIPMENT REQUIRED TO COMPLETE MOST TASKS ON THE FIRST VISIT" (site/air-conditioner-repair.md).
 - Commercial equipment list: chillers, cooling towers, boilers, building automation, rooftop units, variable frequency drives (site/commercial-hvac.md).
 - The homepage HTML has two title tags: "ComfortTechs" and "Your SEO optimized title".
+
+## Credential and hours checks, Playwright, 2026-11-15
+- **BBB:** search https://www.bbb.org/search?find_country=USA&find_text=ComfortTechs&find_loc=Lincoln%2C%20NE lists "ComfortTechs, Inc.", 540 Blue Heron Dr, (402) 465-0000, "BBB Rating: A+". Profile https://www.bbb.org/us/ne/lincoln/profile/heating-and-air-conditioning/comforttechs-inc-0714-300029723 sits behind a bot check and could not be read. **A+ rating: confirmed. BBB accreditation and "since 05/21/2007": NOT confirmed**, so the demo says only "A+ rating".
+- **American Standard "Specialist":** https://www.americanstandardair.com/find-a-dealer/nebraska/ is a lead form (state and ZIP, submit), not a public list. Not submitted. **NOT confirmed**; the demo says "install and service American Standard products" only (their site: about-us).
+- **NATE:** https://natex.org/ has no public technician or contractor lookup that was checked. **NOT confirmed**; the demo uses "NATE-certified technicians" only as their own site's wording (home, heater-install, commercial).
+- **Hours:** rendered in the footer of https://www.comforttechs.com/contact-us (Mon–Sat 7am–5pm, Sun Closed), seen with Playwright innerText. Confirmed on their live contact page.
