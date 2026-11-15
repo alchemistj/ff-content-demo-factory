@@ -1,10 +1,10 @@
 QA REQUEST: thermal-peoria (peoria-hvac/thermal)
 
 Preview (not live yet; becomes https://thermal-peoria.websitepreview.fluidframemarketing.com/ after merge):
-- Strategy page: https://ff-astro-demos-nfcib1lrm-josh-lenzs-projects.vercel.app/__ff-preview/thermal-peoria/
-- /home/: https://ff-astro-demos-nfcib1lrm-josh-lenzs-projects.vercel.app/__ff-preview/thermal-peoria/home/
-- /ac-repair-peoria-il/: https://ff-astro-demos-nfcib1lrm-josh-lenzs-projects.vercel.app/__ff-preview/thermal-peoria/ac-repair-peoria-il/
-- /contact/: https://ff-astro-demos-nfcib1lrm-josh-lenzs-projects.vercel.app/__ff-preview/thermal-peoria/contact/
+- Strategy page: https://ff-astro-demos-crgq5r2hv-josh-lenzs-projects.vercel.app/__ff-preview/thermal-peoria/
+- /home/: https://ff-astro-demos-crgq5r2hv-josh-lenzs-projects.vercel.app/__ff-preview/thermal-peoria/home/
+- /ac-repair-peoria-il/: https://ff-astro-demos-crgq5r2hv-josh-lenzs-projects.vercel.app/__ff-preview/thermal-peoria/ac-repair-peoria-il/
+- /contact/: https://ff-astro-demos-crgq5r2hv-josh-lenzs-projects.vercel.app/__ff-preview/thermal-peoria/contact/
 
 Source and facts (the only allowed source of claims):
 - https://github.com/alchemistj/ff-content-demo-factory/blob/claude/weekend-batch/prospects/peoria-hvac/thermal/facts.md
@@ -17,7 +17,7 @@ Outreach message (route: - **Contact form:** https://www.tsipeoria.com/contact-u
 ---
 Hey Thermal Services team,
 
-Your reviews tell the same story: people call you when it can't wait, and someone answers. One customer called at 10 PM, and the person who answered talked them through a few things to try, and flipping a switch fixed it. We build websites for service businesses, so we made you a mockup built around it:
+A few of your reviews describe a call that couldn't wait. One customer called at 10 PM, and the person who answered talked them through a few things to try, and flipping a switch fixed it. We build websites for service businesses, so we made you a mockup built around it:
 
 https://thermal-peoria.websitepreview.fluidframemarketing.com/?utm_source=form
 

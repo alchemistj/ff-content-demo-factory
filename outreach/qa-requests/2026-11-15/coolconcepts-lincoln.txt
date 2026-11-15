@@ -1,10 +1,10 @@
 QA REQUEST: coolconcepts-lincoln (lincoln-hvac/coolconcepts)
 
 Preview (not live yet; becomes https://coolconcepts-lincoln.websitepreview.fluidframemarketing.com/ after merge):
-- Strategy page: https://ff-astro-demos-nfcib1lrm-josh-lenzs-projects.vercel.app/__ff-preview/coolconcepts-lincoln/
-- /home/: https://ff-astro-demos-nfcib1lrm-josh-lenzs-projects.vercel.app/__ff-preview/coolconcepts-lincoln/home/
-- /ac-repair-lincoln-ne/: https://ff-astro-demos-nfcib1lrm-josh-lenzs-projects.vercel.app/__ff-preview/coolconcepts-lincoln/ac-repair-lincoln-ne/
-- /contact/: https://ff-astro-demos-nfcib1lrm-josh-lenzs-projects.vercel.app/__ff-preview/coolconcepts-lincoln/contact/
+- Strategy page: https://ff-astro-demos-crgq5r2hv-josh-lenzs-projects.vercel.app/__ff-preview/coolconcepts-lincoln/
+- /home/: https://ff-astro-demos-crgq5r2hv-josh-lenzs-projects.vercel.app/__ff-preview/coolconcepts-lincoln/home/
+- /ac-repair-lincoln-ne/: https://ff-astro-demos-crgq5r2hv-josh-lenzs-projects.vercel.app/__ff-preview/coolconcepts-lincoln/ac-repair-lincoln-ne/
+- /contact/: https://ff-astro-demos-crgq5r2hv-josh-lenzs-projects.vercel.app/__ff-preview/coolconcepts-lincoln/contact/
 
 Source and facts (the only allowed source of claims):
 - https://github.com/alchemistj/ff-content-demo-factory/blob/claude/weekend-batch/prospects/lincoln-hvac/coolconcepts/facts.md

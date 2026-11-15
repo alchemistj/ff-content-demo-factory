@@ -1,10 +1,10 @@
 QA REQUEST: roettgers-lincoln (lincoln-hvac/roettgers)
 
 Preview (not live yet; becomes https://roettgers-lincoln.websitepreview.fluidframemarketing.com/ after merge):
-- Strategy page: https://ff-astro-demos-nfcib1lrm-josh-lenzs-projects.vercel.app/__ff-preview/roettgers-lincoln/
-- /home/: https://ff-astro-demos-nfcib1lrm-josh-lenzs-projects.vercel.app/__ff-preview/roettgers-lincoln/home/
-- /ac-repair-lincoln-ne/: https://ff-astro-demos-nfcib1lrm-josh-lenzs-projects.vercel.app/__ff-preview/roettgers-lincoln/ac-repair-lincoln-ne/
-- /contact/: https://ff-astro-demos-nfcib1lrm-josh-lenzs-projects.vercel.app/__ff-preview/roettgers-lincoln/contact/
+- Strategy page: https://ff-astro-demos-crgq5r2hv-josh-lenzs-projects.vercel.app/__ff-preview/roettgers-lincoln/
+- /home/: https://ff-astro-demos-crgq5r2hv-josh-lenzs-projects.vercel.app/__ff-preview/roettgers-lincoln/home/
+- /ac-repair-lincoln-ne/: https://ff-astro-demos-crgq5r2hv-josh-lenzs-projects.vercel.app/__ff-preview/roettgers-lincoln/ac-repair-lincoln-ne/
+- /contact/: https://ff-astro-demos-crgq5r2hv-josh-lenzs-projects.vercel.app/__ff-preview/roettgers-lincoln/contact/
 
 Source and facts (the only allowed source of claims):
 - https://github.com/alchemistj/ff-content-demo-factory/blob/claude/weekend-batch/prospects/lincoln-hvac/roettgers/facts.md

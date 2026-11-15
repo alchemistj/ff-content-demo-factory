@@ -1,10 +1,10 @@
 QA REQUEST: sandhill-lincoln (lincoln-roofing/sandhill)
 
 Preview (not live yet; becomes https://sandhill-lincoln.websitepreview.fluidframemarketing.com/ after merge):
-- Strategy page: https://ff-astro-demos-nfcib1lrm-josh-lenzs-projects.vercel.app/__ff-preview/sandhill-lincoln/
-- /home/: https://ff-astro-demos-nfcib1lrm-josh-lenzs-projects.vercel.app/__ff-preview/sandhill-lincoln/home/
-- /roof-replacement-lincoln-ne/: https://ff-astro-demos-nfcib1lrm-josh-lenzs-projects.vercel.app/__ff-preview/sandhill-lincoln/roof-replacement-lincoln-ne/
-- /contact/: https://ff-astro-demos-nfcib1lrm-josh-lenzs-projects.vercel.app/__ff-preview/sandhill-lincoln/contact/
+- Strategy page: https://ff-astro-demos-crgq5r2hv-josh-lenzs-projects.vercel.app/__ff-preview/sandhill-lincoln/
+- /home/: https://ff-astro-demos-crgq5r2hv-josh-lenzs-projects.vercel.app/__ff-preview/sandhill-lincoln/home/
+- /roof-replacement-lincoln-ne/: https://ff-astro-demos-crgq5r2hv-josh-lenzs-projects.vercel.app/__ff-preview/sandhill-lincoln/roof-replacement-lincoln-ne/
+- /contact/: https://ff-astro-demos-crgq5r2hv-josh-lenzs-projects.vercel.app/__ff-preview/sandhill-lincoln/contact/
 
 Source and facts (the only allowed source of claims):
 - https://github.com/alchemistj/ff-content-demo-factory/blob/claude/weekend-batch/prospects/lincoln-roofing/sandhill/facts.md
