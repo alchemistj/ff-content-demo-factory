@@ -111,6 +111,18 @@
       "pulledAt": "2026-11-09T17:53:39.817Z"
     },
     {
+      "slug": "bigdog-fortwayne",
+      "name": "Big Dog Roofing",
+      "placeId": "ChIJf66QYSAJFogRVe_FxF5bViE",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 90,
+        "withText": 63,
+        "ratingOnly": 12
+      },
+      "pulledAt": "2026-11-15T03:17:35.350Z"
+    },
+    {
       "slug": "brand-plumbing-wichita",
       "name": "Brand Plumbing, Inc.",
       "placeId": "ChIJNRPYBzDnuocREE2GtSqw8iU",
