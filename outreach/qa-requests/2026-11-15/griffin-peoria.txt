@@ -1,10 +1,10 @@
 QA REQUEST: griffin-peoria (peoria-hvac/griffin)
 
 Preview (not live yet; becomes https://griffin-peoria.websitepreview.fluidframemarketing.com/ after merge):
-- Strategy page: https://ff-astro-demos-epbbo9o3x-josh-lenzs-projects.vercel.app/__ff-preview/griffin-peoria/
-- /home/: https://ff-astro-demos-epbbo9o3x-josh-lenzs-projects.vercel.app/__ff-preview/griffin-peoria/home/
-- /furnace-repair-peoria-il/: https://ff-astro-demos-epbbo9o3x-josh-lenzs-projects.vercel.app/__ff-preview/griffin-peoria/furnace-repair-peoria-il/
-- /contact/: https://ff-astro-demos-epbbo9o3x-josh-lenzs-projects.vercel.app/__ff-preview/griffin-peoria/contact/
+- Strategy page: https://ff-astro-demos-nfcib1lrm-josh-lenzs-projects.vercel.app/__ff-preview/griffin-peoria/
+- /home/: https://ff-astro-demos-nfcib1lrm-josh-lenzs-projects.vercel.app/__ff-preview/griffin-peoria/home/
+- /furnace-repair-peoria-il/: https://ff-astro-demos-nfcib1lrm-josh-lenzs-projects.vercel.app/__ff-preview/griffin-peoria/furnace-repair-peoria-il/
+- /contact/: https://ff-astro-demos-nfcib1lrm-josh-lenzs-projects.vercel.app/__ff-preview/griffin-peoria/contact/
 
 Source and facts (the only allowed source of claims):
 - https://github.com/alchemistj/ff-content-demo-factory/blob/claude/weekend-batch/prospects/peoria-hvac/griffin/facts.md
@@ -17,19 +17,19 @@ Outreach message (route: - **Contact form:** https://www.griffinheatingcooling.c
 ---
 Hey Griffin HVAC team,
 
-Your reviews tell the same story: people call you when the furnace or AC quits at a bad time, and you come out. One customer's furnace went out at 4:30 pm on New Year's Eve, and a tech showed up at 5:10 pm and was done by 5:45 pm. My daughter and I build websites for service businesses, so we made you a mockup built around it, and around your maintenance plan, where members pay $75 for any service call with no after-hours, weekend or holiday rates:
+Your reviews tell the same story: people call you when the furnace or AC quits at a bad time, and you come out. One customer's furnace went out at 4:30 pm on New Year's Eve, and a tech showed up at 5:10 pm and was done by 5:45 pm. We build websites for service businesses, so we made you a mockup built around it, and around your maintenance plan:
 
 https://griffin-peoria.websitepreview.fluidframemarketing.com/?utm_source=form
 
 Note: It'll look a lot better with your logo and images on it! Lol
 
-The preview opens with a recent case study, then walks through why each page is built the way it is. One thing we'd fix: on a phone, your site is 768 pixels wide on a 390-pixel screen, so visitors scroll sideways and the header shows Book Online and Log In but no phone number.
+The preview walks through why each page is built the way it is. One thing we'd fix: on a phone, your site is 768 pixels wide on a 390-pixel screen, so visitors scroll sideways, and the header shows Book Online and Log In but no phone number.
 
-We built your furnace repair page as an example, and we'd love to build the rest. Which brands or manufacturers are you certified with?
-
-By the way, our contact form system would have recognized this as a solicitation, and you wouldn't have even seen it.
+We built your homepage and your furnace repair page as examples, and we'd love to build the rest.
 
 How'd we do on your company vibe?
+
+Not interested? Reply "no thanks" and you won't hear from me again.
 
 Josh
 Fluid Frame Marketing

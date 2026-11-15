@@ -1,10 +1,10 @@
 QA REQUEST: roettgers-lincoln (lincoln-hvac/roettgers)
 
 Preview (not live yet; becomes https://roettgers-lincoln.websitepreview.fluidframemarketing.com/ after merge):
-- Strategy page: https://ff-astro-demos-epbbo9o3x-josh-lenzs-projects.vercel.app/__ff-preview/roettgers-lincoln/
-- /home/: https://ff-astro-demos-epbbo9o3x-josh-lenzs-projects.vercel.app/__ff-preview/roettgers-lincoln/home/
-- /ac-repair-lincoln-ne/: https://ff-astro-demos-epbbo9o3x-josh-lenzs-projects.vercel.app/__ff-preview/roettgers-lincoln/ac-repair-lincoln-ne/
-- /contact/: https://ff-astro-demos-epbbo9o3x-josh-lenzs-projects.vercel.app/__ff-preview/roettgers-lincoln/contact/
+- Strategy page: https://ff-astro-demos-nfcib1lrm-josh-lenzs-projects.vercel.app/__ff-preview/roettgers-lincoln/
+- /home/: https://ff-astro-demos-nfcib1lrm-josh-lenzs-projects.vercel.app/__ff-preview/roettgers-lincoln/home/
+- /ac-repair-lincoln-ne/: https://ff-astro-demos-nfcib1lrm-josh-lenzs-projects.vercel.app/__ff-preview/roettgers-lincoln/ac-repair-lincoln-ne/
+- /contact/: https://ff-astro-demos-nfcib1lrm-josh-lenzs-projects.vercel.app/__ff-preview/roettgers-lincoln/contact/
 
 Source and facts (the only allowed source of claims):
 - https://github.com/alchemistj/ff-content-demo-factory/blob/claude/weekend-batch/prospects/lincoln-hvac/roettgers/facts.md
@@ -17,19 +17,19 @@ Outreach message (route: https://www.roettgersheatingandcooling.com/contact):
 ---
 Hey Matt and the Roettger's team,
 
-Your reviews tell the same story: Matt picks up, and a text tells people the technician is on the way. One customer said her A/C went out on Memorial Day weekend, Matt fit her in promptly, and he sent a text when he was headed to her house. My daughter and I build websites for service businesses, so we made you a mockup that leads with it:
+Your reviews tell the same story: customers mention Matt picking up and a text or call before the technician arrives. One customer said Matt was quick to answer when their A/C went out and sent a text to let them know when he was on his way. We build websites for service businesses, so we made you a mockup that leads with it:
 
 https://roettgers-lincoln.websitepreview.fluidframemarketing.com/?utm_source=form
 
 Note: It'll look a lot better with your logo and images on it! Lol
 
-The preview opens with a recent case study, then walks through why each page is built the way it is. One thing we'd fix: your site shows no street address and no hours on any page, so someone with a dead AC can't tell if you're open.
+The preview walks through why each page is built the way it is. One thing we'd fix: your site shows no street address and no hours on any page, so someone with a dead AC can't tell if you're open.
 
-We built your AC repair page as an example, and we'd love to build the rest. Which brands or manufacturers are you certified with?
-
-By the way, our contact form system would have recognized this as a solicitation, and you wouldn't have even seen it.
+We built your homepage and your AC repair page as examples, and we'd love to build the rest.
 
 How'd we do on your company vibe?
+
+Not interested? Reply "no thanks" and you won't hear from me again.
 
 Josh
 Fluid Frame Marketing

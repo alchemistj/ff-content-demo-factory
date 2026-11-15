@@ -1,10 +1,10 @@
 QA REQUEST: coolconcepts-lincoln (lincoln-hvac/coolconcepts)
 
 Preview (not live yet; becomes https://coolconcepts-lincoln.websitepreview.fluidframemarketing.com/ after merge):
-- Strategy page: https://ff-astro-demos-epbbo9o3x-josh-lenzs-projects.vercel.app/__ff-preview/coolconcepts-lincoln/
-- /home/: https://ff-astro-demos-epbbo9o3x-josh-lenzs-projects.vercel.app/__ff-preview/coolconcepts-lincoln/home/
-- /ac-repair-lincoln-ne/: https://ff-astro-demos-epbbo9o3x-josh-lenzs-projects.vercel.app/__ff-preview/coolconcepts-lincoln/ac-repair-lincoln-ne/
-- /contact/: https://ff-astro-demos-epbbo9o3x-josh-lenzs-projects.vercel.app/__ff-preview/coolconcepts-lincoln/contact/
+- Strategy page: https://ff-astro-demos-nfcib1lrm-josh-lenzs-projects.vercel.app/__ff-preview/coolconcepts-lincoln/
+- /home/: https://ff-astro-demos-nfcib1lrm-josh-lenzs-projects.vercel.app/__ff-preview/coolconcepts-lincoln/home/
+- /ac-repair-lincoln-ne/: https://ff-astro-demos-nfcib1lrm-josh-lenzs-projects.vercel.app/__ff-preview/coolconcepts-lincoln/ac-repair-lincoln-ne/
+- /contact/: https://ff-astro-demos-nfcib1lrm-josh-lenzs-projects.vercel.app/__ff-preview/coolconcepts-lincoln/contact/
 
 Source and facts (the only allowed source of claims):
 - https://github.com/alchemistj/ff-content-demo-factory/blob/claude/weekend-batch/prospects/lincoln-hvac/coolconcepts/facts.md
@@ -17,19 +17,19 @@ Outreach message (route: https://coolconceptsne.com/contact/):
 ---
 Hey Cool Concepts team,
 
-Your reviews tell the same story: when the AC or the furnace quits, someone gets there fast, finds the problem and explains it. One customer called at 9:15 and had James at the door by 9:35 for a furnace. My daughter and I build websites for service businesses, so we made you a mockup built around the homeowner side of that:
+Your reviews tell the same story: customers mention a technician who came out, found the problem and explained it. One customer said they called at 9:15 and James had arrived by 9:35 to work on their furnace. We build websites for service businesses, so we made you a mockup built around the homeowner side of that:
 
 https://coolconcepts-lincoln.websitepreview.fluidframemarketing.com/?utm_source=form
 
 Note: It'll look a lot better with your logo and images on it! Lol
 
-The preview opens with a recent case study, then walks through why each page is built the way it is. One thing we'd fix: the Request An Estimate button on your contact page goes to a page that doesn't exist.
+The preview walks through why each page is built the way it is. One thing we'd fix: the Request An Estimate button on your contact page goes to a page that doesn't exist.
 
-We built your AC repair page as an example, and we'd love to build the rest. Which brands or manufacturers are you certified with?
-
-By the way, our contact form system would have recognized this as a solicitation, and you wouldn't have even seen it.
+We built your homepage and your AC repair page as examples, and we'd love to build the rest.
 
 How'd we do on your company vibe?
+
+Not interested? Reply "no thanks" and you won't hear from me again.
 
 Josh
 Fluid Frame Marketing

@@ -1,10 +1,10 @@
 QA REQUEST: sandhill-lincoln (lincoln-roofing/sandhill)
 
 Preview (not live yet; becomes https://sandhill-lincoln.websitepreview.fluidframemarketing.com/ after merge):
-- Strategy page: https://ff-astro-demos-epbbo9o3x-josh-lenzs-projects.vercel.app/__ff-preview/sandhill-lincoln/
-- /home/: https://ff-astro-demos-epbbo9o3x-josh-lenzs-projects.vercel.app/__ff-preview/sandhill-lincoln/home/
-- /roof-replacement-lincoln-ne/: https://ff-astro-demos-epbbo9o3x-josh-lenzs-projects.vercel.app/__ff-preview/sandhill-lincoln/roof-replacement-lincoln-ne/
-- /contact/: https://ff-astro-demos-epbbo9o3x-josh-lenzs-projects.vercel.app/__ff-preview/sandhill-lincoln/contact/
+- Strategy page: https://ff-astro-demos-nfcib1lrm-josh-lenzs-projects.vercel.app/__ff-preview/sandhill-lincoln/
+- /home/: https://ff-astro-demos-nfcib1lrm-josh-lenzs-projects.vercel.app/__ff-preview/sandhill-lincoln/home/
+- /roof-replacement-lincoln-ne/: https://ff-astro-demos-nfcib1lrm-josh-lenzs-projects.vercel.app/__ff-preview/sandhill-lincoln/roof-replacement-lincoln-ne/
+- /contact/: https://ff-astro-demos-nfcib1lrm-josh-lenzs-projects.vercel.app/__ff-preview/sandhill-lincoln/contact/
 
 Source and facts (the only allowed source of claims):
 - https://github.com/alchemistj/ff-content-demo-factory/blob/claude/weekend-batch/prospects/lincoln-roofing/sandhill/facts.md
@@ -17,19 +17,19 @@ Outreach message (route: https://contact.sandhillroofing.com/ — **hand send**.
 ---
 Hey Sandhill Roofing team,
 
-Your reviews tell the same story: Dusty tells you what the roof needs and what it doesn't. One customer thanked him for an honest second opinion: a clear explanation of the condition of the roof, and no push for unnecessary work. My daughter and I build websites for service businesses, so we made you a mockup built around it:
+Your reviews tell the same story: Dusty tells you what the roof needs and what it doesn't. One customer thanked him for an honest second opinion: a clear explanation of the condition of the roof, and no push for unnecessary work. We build websites for service businesses, so we made you a mockup built around it:
 
 https://sandhill-lincoln.websitepreview.fluidframemarketing.com/?utm_source=form
 
 Note: It'll look a lot better with your logo and images on it! Lol
 
-The preview opens with a recent case study, then walks through why each page is built the way it is. One thing we'd fix: the five service headings on your services page are your phone number, (402) 890-6460, so Google reads a phone number where each service name should be.
+The preview walks through why each page is built the way it is. One thing we'd fix: the five service headings on your services page are your phone number, (402) 890-6460, so Google reads a phone number where each service name should be.
 
-We built your homepage and roof replacement page as examples, and we'd love to build the rest. Which brands or manufacturers are you certified with?
-
-By the way, our contact form system would have recognized this as a solicitation, and you wouldn't have even seen it.
+We built your homepage and roof replacement page as examples, and we'd love to build the rest.
 
 How'd we do on your company vibe?
+
+Not interested? Reply "no thanks" and you won't hear from me again.
 
 Josh
 Fluid Frame Marketing
