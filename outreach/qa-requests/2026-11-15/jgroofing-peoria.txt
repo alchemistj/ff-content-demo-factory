@@ -1,10 +1,10 @@
 QA REQUEST: jgroofing-peoria (peoria-roofing/jgroofing)
 
 Preview (not live yet; becomes https://jgroofing-peoria.websitepreview.fluidframemarketing.com/ after merge):
-- Strategy page: https://ff-astro-demos-awlj9ytyx-josh-lenzs-projects.vercel.app/__ff-preview/jgroofing-peoria/
-- /home/: https://ff-astro-demos-awlj9ytyx-josh-lenzs-projects.vercel.app/__ff-preview/jgroofing-peoria/home/
-- /roof-replacement-peoria-il/: https://ff-astro-demos-awlj9ytyx-josh-lenzs-projects.vercel.app/__ff-preview/jgroofing-peoria/roof-replacement-peoria-il/
-- /contact/: https://ff-astro-demos-awlj9ytyx-josh-lenzs-projects.vercel.app/__ff-preview/jgroofing-peoria/contact/
+- Strategy page: https://ff-astro-demos-x8dakj98u-josh-lenzs-projects.vercel.app/__ff-preview/jgroofing-peoria/
+- /home/: https://ff-astro-demos-x8dakj98u-josh-lenzs-projects.vercel.app/__ff-preview/jgroofing-peoria/home/
+- /roof-replacement-peoria-il/: https://ff-astro-demos-x8dakj98u-josh-lenzs-projects.vercel.app/__ff-preview/jgroofing-peoria/roof-replacement-peoria-il/
+- /contact/: https://ff-astro-demos-x8dakj98u-josh-lenzs-projects.vercel.app/__ff-preview/jgroofing-peoria/contact/
 
 Source and facts (the only allowed source of claims):
 - https://github.com/alchemistj/ff-content-demo-factory/blob/claude/weekend-batch/prospects/peoria-roofing/jgroofing/facts.md

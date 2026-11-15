@@ -1,10 +1,10 @@
 QA REQUEST: pioneer-peoria (peoria-roofing/pioneer)
 
 Preview (not live yet; becomes https://pioneer-peoria.websitepreview.fluidframemarketing.com/ after merge):
-- Strategy page: https://ff-astro-demos-awlj9ytyx-josh-lenzs-projects.vercel.app/__ff-preview/pioneer-peoria/
-- /home/: https://ff-astro-demos-awlj9ytyx-josh-lenzs-projects.vercel.app/__ff-preview/pioneer-peoria/home/
-- /metal-roofing-peoria-il/: https://ff-astro-demos-awlj9ytyx-josh-lenzs-projects.vercel.app/__ff-preview/pioneer-peoria/metal-roofing-peoria-il/
-- /contact/: https://ff-astro-demos-awlj9ytyx-josh-lenzs-projects.vercel.app/__ff-preview/pioneer-peoria/contact/
+- Strategy page: https://ff-astro-demos-x8dakj98u-josh-lenzs-projects.vercel.app/__ff-preview/pioneer-peoria/
+- /home/: https://ff-astro-demos-x8dakj98u-josh-lenzs-projects.vercel.app/__ff-preview/pioneer-peoria/home/
+- /metal-roofing-peoria-il/: https://ff-astro-demos-x8dakj98u-josh-lenzs-projects.vercel.app/__ff-preview/pioneer-peoria/metal-roofing-peoria-il/
+- /contact/: https://ff-astro-demos-x8dakj98u-josh-lenzs-projects.vercel.app/__ff-preview/pioneer-peoria/contact/
 
 Source and facts (the only allowed source of claims):
 - https://github.com/alchemistj/ff-content-demo-factory/blob/claude/weekend-batch/prospects/peoria-roofing/pioneer/facts.md
@@ -17,7 +17,7 @@ Outreach message (route: - **Contact form:** https://roofingpeoria.net/contact-u
 ---
 Hey Pioneer Roofing team,
 
-Your reviews describe responsive people who explain the work. One customer wrote that you "sat down with me, informed me of what needed to be done with my attic venting repairs and the job was done wonderfully!" We build websites for service businesses, so we made you a mockup built around it:
+One customer wrote that you "sat down with me, informed me of what needed to be done with my attic venting repairs and the job was done wonderfully!" We build websites for service businesses, so we made you a mockup:
 
 https://pioneer-peoria.websitepreview.fluidframemarketing.com/?utm_source=form
 
