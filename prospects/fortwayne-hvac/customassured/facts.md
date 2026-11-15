@@ -68,3 +68,6 @@ Site: https://customassured.com/home (also /). Checked 2026-11-15 with headless 
 - Who handles the contact form and the text-message program (privacy page).
 - Whether the homepage video should be replaced.
 - Whether the Custom Priority Club is still offered.
+
+- **Re-check 2026-11-15 (Playwright, 390px):** customassured.com/home has no tel: link and no phone number in the text; /contact shows 496-8400 as plain text with no tel: link. Still true.
+- **Wording (11/15 QA):** "same technician", "the office calls when service is due" and "twice a year" are what customers say (Gina W., Samantha R., Susan M., Montana S.), not company policy. The site states annual service agreements and the Custom Priority Club only.

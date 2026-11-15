@@ -2,19 +2,19 @@
 
 Hey Sandhill Roofing team,
 
-Your reviews tell the same story: Dusty tells you what the roof needs and what it doesn't. One customer thanked him for an honest second opinion: a clear explanation of the condition of the roof, and no push for unnecessary work. My daughter and I build websites for service businesses, so we made you a mockup built around it:
+Your reviews tell the same story: Dusty tells you what the roof needs and what it doesn't. One customer thanked him for an honest second opinion: a clear explanation of the condition of the roof, and no push for unnecessary work. We build websites for service businesses, so we made you a mockup built around it:
 
 https://sandhill-lincoln.websitepreview.fluidframemarketing.com/?utm_source=form
 
 Note: It'll look a lot better with your logo and images on it! Lol
 
-The preview opens with a recent case study, then walks through why each page is built the way it is. One thing we'd fix: the five service headings on your services page are your phone number, (402) 890-6460, so Google reads a phone number where each service name should be.
+The preview walks through why each page is built the way it is. One thing we'd fix: the five service headings on your services page are your phone number, (402) 890-6460, so Google reads a phone number where each service name should be.
 
-We built your homepage and roof replacement page as examples, and we'd love to build the rest. Which brands or manufacturers are you certified with?
-
-By the way, our contact form system would have recognized this as a solicitation, and you wouldn't have even seen it.
+We built your homepage and roof replacement page as examples, and we'd love to build the rest.
 
 How'd we do on your company vibe?
+
+Not interested? Reply "no thanks" and you won't hear from me again.
 
 Josh
 Fluid Frame Marketing
@@ -31,14 +31,16 @@ Note: It'll look better with your logo and images.
 
 One fix: your services page headings are all your phone number.
 
-We built your homepage and roof replacement page. Which brands are you certified with?
+We built your homepage and roof replacement page.
 
-By the way, our contact form system would have recognized this as a solicitation, and you wouldn't have even seen it.
-
-How'd we do on your company vibe?
+Not interested? Reply "no thanks" and you won't hear from me again.
 
 Josh
 Fluid Frame Marketing
+
+## Variant (only if Josh confirms)
+
+Same message, with "My daughter and I build websites for service businesses, so we made you a mockup built around it:" in place of "We build websites for service businesses, so we made you a mockup built around it:".
 
 ## Form
 

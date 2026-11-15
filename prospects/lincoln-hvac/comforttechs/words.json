@@ -36,7 +36,7 @@
     "why": [
       "Family owned and operated",
       "Free estimates",
-      "Repair first, replace when it's time",
+      "Customers mention options laid out clearly",
       "Geothermal and commercial work"
     ]
   },
@@ -50,9 +50,9 @@
       "hero": {
         "eyebrow": "Lincoln, Nebraska · Furnaces, AC and geothermal",
         "h1": "HVAC Company in Lincoln, NE — ComfortTechs",
-        "sub": "Before anyone says new system, we find out what actually failed. Call (402) 465-0000, tell us what your furnace or air conditioner is doing, and we'll help you decide what comes next.",
+        "sub": "Call (402) 465-0000, tell us what your furnace or air conditioner is doing, and we'll help you work out what comes next.",
         "primaryCta": { "label": "Call (402) 465-0000", "action": "call" },
-        "secondaryCta": { "label": "Request Service", "action": "contact" },
+        "secondaryCta": { "label": "Call or email", "action": "contact" },
         "image": {
           "slot": "home-hero",
           "alt": "A Lincoln home with an outdoor air conditioner beside the house under a clear sky",
@@ -67,14 +67,14 @@
         },
         {
           "type": "split",
-          "heading": "When It's Your Kid's Furnace That Quit",
+          "heading": "When the Furnace That Quit Is at Someone Else's House",
           "body": [
             "You can't fix a furnace from across town. What you can do is pick up the phone, and that call decides how the rest of the day goes.",
-            "Call ComfortTechs at (402) 465-0000 and tell us who is at the house, what the furnace is doing and how to reach them. We'll tell you what we think is wrong and what the next step is. Then we get a technician headed there."
+            "Call ComfortTechs at (402) 465-0000 and tell us who is at the house, what the furnace is doing and how to reach them. We'll tell you what we think is wrong and what the next step is."
           ],
           "list": [
             "Furnaces, air conditioners, heat pumps and geothermal",
-            "Free estimates, and a free, no-obligation consultation",
+            "Homes and commercial buildings, repair, installation and maintenance",
             "Financing upon approval when a new system is the answer"
           ],
           "listStyle": "checks",
@@ -89,31 +89,31 @@
           "type": "prose",
           "heading": "Furnace and AC Trouble in Lincoln, and What Usually Causes It",
           "body": [
-            "Most no-heat and no-cooling calls trace back to one failed part, not a dead system. Here is what we look at first."
+            "A no-heat or no-cooling call can start with one failed part rather than a dead system. Here is what we look at first."
           ],
           "items": [
-            { "title": "The furnace clicks but never lights", "text": "Usually a worn igniter or a dirty flame sensor. Both are small parts, and both are a short repair once the cause is confirmed." },
+            { "title": "The furnace clicks but never lights", "text": "Can be a worn igniter or a dirty flame sensor. Both are small parts." },
             { "title": "It runs a few minutes, then shuts off", "text": "A clogged filter can make a furnace overheat and shut itself down. A flame sensor that can't prove the burner lit does the same thing." },
-            { "title": "The air conditioner hums but won't start", "text": "A weak capacitor is a common cause. It is one of the smallest repairs in the trade." },
-            { "title": "The air from the vents isn't cold", "text": "Low refrigerant means a leak, and a frozen coil points to airflow. Topping off refrigerant without finding the leak only buys time." },
+            { "title": "The air conditioner hums but won't start", "text": "A weak capacitor can cause this, and it is worth having checked." },
+            { "title": "The air from the vents isn't cold", "text": "Low refrigerant points to a leak, and a frozen coil points to airflow." },
             { "title": "A new bang, squeal or rattle", "text": "Don't ignore a new noise. A technician can tell you whether it's a loose part or something bigger, and a blower motor usually complains before it quits." }
           ],
           "tail": [
-            "When it is one of these, the answer is a part. The whole system is a separate question, and it comes second."
+            "When it is one of these, the fix is a part. Whether the whole system needs replacing is a separate question."
           ],
           "link": { "label": "See AC repair in Lincoln", "route": "/ac-repair-lincoln-ne/" }
         },
         {
           "type": "review",
-          "quote": "Another company in town told us … they really thought a whole new system would be more appropriate. After having Comfort Techs come look at problem, the issue was resolved for a small fraction of the cost the other company had quoted us.",
-          "name": "Kim H."
+          "quote": "Comforttechs found the problem to my furnace called saying what was going on, had to order the part and would be in the next day. That next day they called right away saying the part was in and would be out to install it.",
+          "name": "Bryce R."
         },
         {
           "type": "prose",
-          "heading": "Repair First, and a Straight Answer When It's Time to Replace",
+          "heading": "What Customers Mention About Repair and Replacement",
           "body": [
-            "Some systems are finished. A heat pump that's past repair, a furnace with a cracked heat exchanger, a compressor that's gone. When that is the truth, you should hear it plainly, with the options laid out and nobody leaning on you.",
-            "That is the order we work in. We find the problem, tell you what it is, and then talk about the choices. A free estimate on a new system costs you nothing, and neither does a no-obligation consultation."
+            "Some systems are past repair: a heat pump that's finished, a furnace with a cracked heat exchanger, a compressor that's gone. One customer whose aging heat pump needed replacing describes the next steps this way.",
+            "Other customers describe a furnace or air conditioner that was running again once the failed part was found. Either way, the first step is a call to (402) 465-0000 to describe what the system is doing."
           ]
         },
         {
@@ -136,7 +136,7 @@
         },
         {
           "type": "review",
-          "quote": "Our geothermal unit was acting up on a very hot day and after not hearing back from other shops in town, I called ComfortTechs and they were at our front door within an hour.",
+          "quote": "Our geothermal unit was acting up on a very hot day and … I called ComfortTechs and they were at our front door within an hour.",
           "name": "Matt A."
         },
         {
@@ -165,7 +165,7 @@
         },
         {
           "type": "review",
-          "quote": "Was after hours but I called and received a call back in just a few minutes. Very nice man named Zach helped diagnose the problem over the phone. … Fixed the problem right away, saving me a service call.",
+          "quote": "I called and received a call back in just a few minutes. Very nice man named Zach helped diagnose the problem over the phone. He then stayed on the line for a good half hour while I cleaned a part he directed me to.",
           "name": "Robin B."
         },
         {
@@ -178,12 +178,12 @@
         },
         {
           "type": "faq",
-          "heading": "What Lincoln Homeowners Ask Before They Call ComfortTechs",
+          "heading": "Questions About ComfortTechs",
           "items": [
-            { "q": "Do I need a whole new system, or can you fix what I have?", "a": "We start by finding the problem. If it's a part, we talk about the repair. If the system is past saving, you'll hear that too, with your options and a free estimate on a replacement." },
+            { "q": "Do I need a whole new system, or can you fix what I have?", "a": "That depends on what failed, and someone has to look to know. Customer reviews describe both outcomes: a repair that solved the problem, and a replacement where all the options were clearly outlined." },
             { "q": "Can someone come out the same day?", "a": "Same-day service is part of what we offer. Call (402) 465-0000, tell us what's happening, and we'll tell you what today looks like." },
-            { "q": "What does an estimate cost?", "a": "Estimates are free, and so is a no-obligation consultation. You can ask questions without a bill following you out the door." },
-            { "q": "Which brands do you work on?", "a": "American Standard, Trane, Carrier and Bryant are the ones we've named. If yours is something else, call and ask." },
+            { "q": "What does an estimate cost?", "a": "Estimates are free, and so is a no-obligation consultation." },
+            { "q": "Which brands do you work on?", "a": "We install and service American Standard products, and we work on Trane, Carrier and Bryant systems. If yours is something else, call and ask." },
             { "q": "Do you work on geothermal systems and commercial buildings?", "a": "Yes to both. We handle geothermal heat pumps and commercial HVAC repair, installation and maintenance." },
             { "q": "Is financing available for a new furnace or air conditioner?", "a": "Yes, upon approval. Programs run from manufacturer rebates to special financing, and we'll walk through what fits your project." }
           ]
@@ -191,7 +191,7 @@
         {
           "type": "callBand",
           "heading": "Call ComfortTechs About Your Furnace or AC",
-          "text": "Call (402) 465-0000 and tell us what the system is doing. We'll help you figure out whether it needs a repair or a replacement, and you'll hear the options before you decide."
+          "text": "Call (402) 465-0000 and tell us what the system is doing. We'll help you work out what comes next."
         }
       ]
     },
@@ -204,9 +204,9 @@
       "hero": {
         "eyebrow": "Air conditioning, Lincoln",
         "h1": "AC Repair in Lincoln, NE — ComfortTechs",
-        "sub": "The house is climbing and the air from the vents isn't cold. Call (402) 465-0000, tell us what the unit is doing, and we'll help you work out what failed and what to do about it.",
+        "sub": "The house is climbing and the air from the vents isn't cold. Call (402) 465-0000, tell us what the unit is doing, and we'll help you work out what to do about it.",
         "primaryCta": { "label": "Call (402) 465-0000", "action": "call" },
-        "secondaryCta": { "label": "Request Service", "action": "contact" },
+        "secondaryCta": { "label": "Call or email", "action": "contact" },
         "image": {
           "slot": "ac-repair-hero",
           "alt": "A technician checking an outdoor air conditioner beside a Lincoln home",
@@ -224,8 +224,8 @@
           "heading": "What Happens When You Call About Your AC",
           "body": [
             "You tell us what the unit is doing: not cooling, running but warm, not starting, making a noise. We tell you what we think is behind it and what happens next.",
-            "A technician finds the failed part and explains it in words you can follow. If the answer is a repair, you hear about the repair. If the unit is past repairing, you hear that too, along with your options and a free estimate on a replacement.",
-            "Hot days don't keep office hours. If the air conditioner quits on a weekend or an evening, call anyway and ask when we can be there."
+            "Customers mention technicians who found the problem and explained it clearly, and one says the technician \"explained everything clearly\". Whether the answer is a repair or a replacement, that is the conversation to ask for when you call.",
+            "Not sure whether it needs a visit? Describe what you're seeing and ask."
           ],
           "image": {
             "slot": "airflow-vent",
@@ -243,35 +243,35 @@
           "type": "prose",
           "heading": "What Usually Goes Wrong With a Central Air Conditioner",
           "body": [
-            "Most no-cooling calls come down to a short list of parts. Ice on the refrigerant line, water around the indoor unit, an outdoor fan that isn't spinning or a breaker that trips every time the system starts are all worth a call.",
+            "Ice on the refrigerant line, water around the indoor unit, an outdoor fan that isn't spinning or a breaker that trips every time the system starts are all worth a call.",
             "If you see ice or water, turn the system off and call. Running a struggling air conditioner can turn a small repair into a bigger one."
           ],
           "items": [
-            { "title": "A weak capacitor", "text": "The capacitor gives the compressor and the fan motor the jolt they need to start. When it weakens, the unit hums and won't run. It is among the most common and least expensive repairs." },
+            { "title": "A weak capacitor", "text": "The capacitor gives the compressor and the fan motor the jolt they need to start. When it weakens, the unit hums and won't run." },
             { "title": "A dirty coil or a clogged filter", "text": "Dust and a choked filter cut airflow until the coil freezes into a block of ice. Thawing it is the easy part. Finding out why it got that way is the repair." },
-            { "title": "Low refrigerant", "text": "An air conditioner doesn't use refrigerant up. Low means a leak, and adding more without fixing the leak only buys a few weeks." },
-            { "title": "A fan or compressor motor on its way out", "text": "A noisy or slow-spinning motor is a warning. Replacing one early is a smaller job than replacing it after it quits." },
+            { "title": "Low refrigerant", "text": "An air conditioner doesn't use refrigerant up. Low means a leak, and adding more does not fix the leak." },
+            { "title": "A fan or compressor motor on its way out", "text": "A noisy or slow-spinning motor is a warning worth a call." },
             { "title": "A thermostat that isn't talking to the unit", "text": "A blank screen, dead batteries or a bad connection can look like a failed air conditioner. It is worth ruling out first." }
           ]
         },
         {
           "type": "review",
-          "quote": "Bryan came after hours due to AC no longer cooling and worked until AC was cooling until late and in the dark on one of the hottest days this year. Jory came back the next day to check on everything as it was dark the night before.",
+          "quote": "Bryan came … due to AC no longer cooling and worked until AC was cooling until late and in the dark on one of the hottest days this year. Jory came back the next day to check on everything as it was dark the night before.",
           "name": "Rachel T."
         },
         {
           "type": "prose",
           "heading": "Repair or Replace Your Air Conditioner?",
           "body": [
-            "Here is a rule you can check yourself. If it's a capacitor, a motor or a coil that needs cleaning, repair is the answer, and it costs a fraction of a new system.",
-            "If the unit is old, the repairs keep coming or the compressor has failed, that is when to price a new one. A big repair bill on an old unit is often money better put toward a replacement.",
-            "We lay out both sides and tell you which one you're on, including when the answer is to repair. When it is time to replace, we install new air conditioning systems, and financing is available upon approval."
+            "A capacitor, a motor or a coil that needs cleaning is a repair.",
+            "If the unit is old, the repairs keep coming or the compressor has failed, that is when to ask about a new one.",
+            "Ask us which one you're on. When it is time to replace, ComfortTechs installs new air conditioning systems, and financing is available upon approval."
           ]
         },
         {
           "type": "review",
-          "quote": "However, due to the extreme heat my AC quit working properly again. They promptly sent someone out, didn't charge for service fees since they were just here, and fixed the problem. I was only charged for the part and it was a VERY affordable price.",
-          "name": "Savannah K."
+          "quote": "My AC went out in July in 90+ degree weather. … A friend recommended Comforttechs. I called them and they were out within 2 hours to give me a bid.",
+          "name": "Karen E."
         },
         {
           "type": "split",
@@ -302,14 +302,14 @@
         },
         {
           "type": "review",
-          "quote": "Had them come out to handle a AC unit not working, they came out the next day and worked with my and my wife's very erratic schedules. Made the repairs for a fair fee.",
+          "quote": "Had them come out to handle a AC unit not working, they came out the next day and worked with my and my wife's very erratic schedules.",
           "name": "Sovida T."
         },
         {
           "type": "faq",
-          "heading": "Questions Lincoln Homeowners Ask About AC Repair",
+          "heading": "Questions About AC Repair",
           "items": [
-            { "q": "Will you try to sell me a new system?", "a": "Not before we've found what failed. If it's a part, we fix the part. If the system is past saving, we'll say so and give you a free estimate on a replacement." },
+            { "q": "Do I need a new system, or can you repair what I have?", "a": "A technician has to find what failed to say. Customers mention a part being found and fixed, and others mention clear options when replacement was the answer." },
             { "q": "Do you work on my brand of air conditioner?", "a": "We work on Trane, Carrier, American Standard and Bryant. Running something different? Give us a call." },
             { "q": "Do you repair geothermal and heat pump systems?", "a": "Yes. We work on geothermal heat pumps as well as central air conditioners." },
             { "q": "Can you help a business with a broken air conditioner?", "a": "Yes. We do commercial HVAC repair, installation and maintenance." },
@@ -319,7 +319,7 @@
         {
           "type": "callBand",
           "heading": "Call ComfortTechs About Your Air Conditioner",
-          "text": "If your AC isn't cooling, call (402) 465-0000. Tell us what it's doing, and we'll help you work out what failed before anyone talks about replacing it."
+          "text": "If your AC isn't cooling, call (402) 465-0000. Tell us what it's doing, and we'll help you work out what comes next."
         }
       ]
     },
@@ -376,7 +376,7 @@
         {
           "type": "callBand",
           "heading": "Tell Us What the Furnace or AC Is Doing",
-          "text": "Call (402) 465-0000. We'll help you decide whether it needs a repair or a replacement, and what comes next."
+          "text": "Call (402) 465-0000 and describe the problem. We'll go from there."
         }
       ]
     }
@@ -385,8 +385,8 @@
     "whyHeading": "Why we built this site",
     "why": [
       "Your AC repair page promises 24 hours a day, 7 days a week, 365 days a year, with someone answering the phone night and day. Your contact page says Monday to Saturday, 7 to 5, and closed Sunday. Someone whose AC quits on a Sunday can't tell which one is true, and that is the call you most need to win.",
-      "The headline at the top of your homepage is a long run of keywords ending in Lincoln, Nebraska, and 12 of your 16 pages carry the same one. Google can't tell which page is for what. Your reviews say it plainly: another company in town wanted a whole new system, and you found the fix. Today those words live on Google, not on your site.",
-      "So the demo tells one story on every page: look for the fix first, replace only when it's time. It opens with HVAC company in Lincoln, NE, and gives AC repair its own page, because that is the call people make on the hottest day."
+      "The headline at the top of your homepage is a long run of keywords ending in Lincoln, Nebraska, and 12 of your 16 pages carry the same one. Google can't tell which page is for what. Your reviews say it plainly: customers describe a failed part found and fixed, and clear options when replacement was the answer. Today those words live on Google, not on your site.",
+      "So the demo tells one story on every page: what customers say about finding the real problem first. It opens with HVAC company in Lincoln, NE, and gives AC repair its own page, because that is the call people make on the hottest day."
     ],
     "cardsHeading": "Be the HVAC Company People Find on Google",
     "cardsIntro": "Each card is one page of the demo.",
@@ -414,7 +414,7 @@
         ],
         "fixes": [
           "A page that says AC repair in Lincoln, NE at the top, with what usually fails and what happens when you call.",
-          "One honest line about weekends and evenings: call and ask."
+          "Hours that match on every page once the owner confirms them, and a plain \"call and ask\" until then."
         ],
         "alsoAdd": "Pages planned from what Google actually shows for each search, so every page targets something people really look for."
       },
@@ -455,12 +455,12 @@
     },
     "lead": {
       "heading": "Why we led with fixing it first",
-      "text": "The scariest moment for a Lincoln homeowner is hearing you need a whole new system and not knowing if it's true. Looking for the fix first answers that, and it rests on things Google can't find anywhere else: your customers' own accounts and the way you work on a call. That is also why it can help you rank, and please tell us if it isn't how you work.",
+      "text": "The scariest moment for a Lincoln homeowner is hearing you need a whole new system and not knowing if it's true. Customers who describe a fix found first answer that, and it rests on something Google can't find anywhere else: your customers' own accounts. That is also why it can help you rank, and please tell us how a replacement conversation actually goes.",
       "showScores": false,
       "rows": [
-        { "claim": "Looks for the fix before anyone talks about a new system", "score": 20, "appeal": 5, "exclusivity": 4 },
-        { "claim": "Follows up after the visit and answers after the sale", "score": 16, "appeal": 4, "exclusivity": 4 },
-        { "claim": "Quick arrival on a hot or cold day, told by customers, not stated as policy", "score": 15, "appeal": 5, "exclusivity": 3 }
+        { "claim": "Customers describe a fix found before a new system came up", "score": 20, "appeal": 5, "exclusivity": 4 },
+        { "claim": "Customers describe follow-up after the visit and help after the sale", "score": 16, "appeal": 4, "exclusivity": 4 },
+        { "claim": "Customers describe quick arrival on a hot or cold day", "score": 15, "appeal": 5, "exclusivity": 3 }
       ]
     }
   }

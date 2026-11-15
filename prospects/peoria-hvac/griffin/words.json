@@ -18,7 +18,7 @@
     "hours": null,
     "address": "1007 W Detweiller Dr, Peoria, IL 61615",
     "serviceArea": {
-      "summary": "Peoria and the towns around it",
+      "summary": "Peoria area",
       "towns": [
         "Peoria",
         "Dunlap",
@@ -34,11 +34,11 @@
     }
   },
   "trustBar": [
-    "Serving Peoria Since 1963",
+    "Serving the Peoria Area Since 1963, Current Owner Since 2019",
     "24/7 Emergency Service",
     "Maintenance Plan from $160 a Year",
     "GoodLeap Financing",
-    "Authorized Amana Dealer"
+    "Two Clean-and-Check Visits a Year"
   ],
   "services": [
     {
@@ -62,9 +62,9 @@
       "blurb": "A new system when the old one is done, with GoodLeap financing if you want it."
     },
     {
-      "name": "Whole-House Humidifiers",
+      "name": "Humidifier Check",
       "route": null,
-      "blurb": "Humidifiers added to a system, and checked as part of the fall visit."
+      "blurb": "The humidifier is checked as part of the fall clean-and-check visit."
     },
     {
       "name": "Emergency Service",
@@ -82,13 +82,13 @@
       "hero": {
         "eyebrow": "Peoria, IL · Heating and Cooling",
         "h1": "HVAC Company in Peoria, IL — Griffin HVAC",
-        "sub": "The furnace quits on a holiday evening. With Griffin's maintenance plan, you never pay after-hours, weekend or holiday rates, only $75 for any service call. The plan is $160 a year for a home with one system. Call (309) 676-0808.",
+        "sub": "The furnace quits after hours. Members of Griffin's maintenance plan never pay after-hours, weekend or holiday rates, only $75 for any service call. That is the service-call fee, not the repair. The plan is $160 a year for a home with one system. Call (309) 676-0808.",
         "primaryCta": {
           "label": "Call (309) 676-0808",
           "action": "call"
         },
         "secondaryCta": {
-          "label": "Request Service",
+          "label": "Contact us",
           "action": "contact"
         },
         "image": {
@@ -105,14 +105,14 @@
         },
         {
           "type": "split",
-          "heading": "What Does a Service Call Cost at 9 on a Saturday Night?",
+          "heading": "What Does a Service Call Cost After Hours?",
           "body": [
-            "The furnace quits on a holiday evening, or the AC dies on a Saturday in July. The company you reach says \"emergency service,\" and the price is the part you find out last.",
-            "Griffin's maintenance plan settles it ahead of time. Members pay $75 for any service call, with no after-hours, weekend or holiday rates, plus 10% off parts and priority scheduling."
+            "Heating and cooling equipment rarely quits at a convenient time, and the price of the call is the part people wonder about first.",
+            "Griffin's maintenance plan settles the service-call fee ahead of time. Plan members pay $75 for any service call, with no after-hours, weekend or holiday rates, plus 10% off parts and priority scheduling."
           ],
           "list": [
             "Two clean-and-check visits a year, spring and fall",
-            "$75 for any service call, at any hour",
+            "Plan members pay $75 for any service call",
             "10% off parts during service or a clean and check",
             "Priority scheduling"
           ],
@@ -141,21 +141,21 @@
             },
             {
               "title": "Scheduling",
-              "text": "Clean-and-check visits are booked during the week only. Emergency calls are a different matter, and Griffin offers 24/7 emergency service."
+              "text": "Clean-and-check visits are booked during the week only. Emergency services are available 24/7."
             }
           ]
         },
         {
           "type": "review",
-          "quote": "Josh cleaned my HVAC unit including the blower which was filled with drywall dust from renovations. … I was so impressed and have signed up for their yearly maintenance plan. Pricing was fair which was much appreciated.",
+          "quote": "Josh cleaned my HVAC unit including the blower which was filled with drywall dust from renovations. I was so impressed and have signed up for their yearly maintenance plan.",
           "name": "Michelle C."
         },
         {
           "type": "prose",
           "heading": "Furnace or AC Down? Start With the Cause",
           "body": [
-            "HVAC equipment rarely breaks at a convenient time, and that's why Griffin offers 24/7 emergency service. When you call, say what the system is doing and ask what failed and what the fix costs.",
-            "A technician who can name the broken part can explain the price, and a new system is only worth pricing once the repair stops making sense."
+            "Griffin offers 24/7 emergency service. When you call, say what the system is doing and ask what failed and what the fix would cost.",
+            "A technician who can name the broken part can explain what comes next."
           ],
           "link": {
             "label": "See furnace repair in Peoria",
@@ -170,21 +170,21 @@
         {
           "type": "services",
           "heading": "Heating and Cooling for Peoria Homes, From Repair to a New System",
-          "intro": "One call covers the furnace, the air conditioner, the humidifier and the plan that keeps them running."
+          "intro": "One call covers the furnace, the air conditioner and the plan that keeps them running."
         },
         {
           "type": "prose",
           "heading": "Why the Spring Visit Starts at the Outdoor Coil",
           "body": [
             "The spring clean-and-check covers the condenser coil, electrical, refrigerant pressures, drains and the thermostat. Each one is a place an air conditioner fails on a hot day.",
-            "A dirty condenser coil makes the unit work harder to shed heat. Weak electrical parts keep a motor from starting, and a clogged drain can leave water where you don't want it. Finding that in spring is cheaper than finding it in July."
+            "A dirty condenser coil makes the unit work harder to shed heat. Weak electrical parts keep a motor from starting, and a clogged drain can leave water where you don't want it. A spring check looks at each of them before the first hot week."
           ]
         },
         {
           "type": "prose",
           "heading": "When It's Time for Something New",
           "body": [
-            "When the old system is done, Griffin installs new ones, and the business is an authorized Amana dealer. For anyone who wants financing, Griffin has partnered with GoodLeap.",
+            "When the old system is done, Griffin installs new ones. For anyone who wants financing, Griffin has partnered with GoodLeap.",
             "GoodLeap uses a soft credit check until funding, and the highest score from all 3 bureaus to see if you qualify. Ask about rates and terms when you call."
           ]
         },
@@ -195,23 +195,23 @@
         },
         {
           "type": "prose",
-          "heading": "A Peoria Shop With Roots Back to 1963",
+          "heading": "Who Runs Griffin HVAC",
           "body": [
             "Griffin has served the Peoria area since 1963, and the current owner took over in 2019. The business was Griffin Heating and Cooling and is now Griffin HVAC.",
-            "It's a smaller shop at 1007 W Detweiller Dr, Peoria, IL 61615, and you can reach it at (309) 676-0808 or at douggriffinheatcool@gmail.com."
+            "Griffin is at 1007 W Detweiller Dr, Peoria, IL 61615, and you can reach it at (309) 676-0808 or at douggriffinheatcool@gmail.com."
           ]
         },
         {
           "type": "prose",
-          "heading": "From Peoria Heights to Princeville and the Towns Between",
+          "heading": "From Peoria Heights to Princeville",
           "body": [
             "Griffin works in Peoria, Dunlap, Pekin, Washington, Chillicothe, Metamora, Creve Coeur, Edwards, Hopewell, Peoria Heights, Morton, Germantown Hills, Princeville, Edelstein, East Peoria, Elmwood, Mackinaw, Mapleton, Bartonville, Brimfield, Tremont, Hanna City, Trivoli, Marquette Heights and West Peoria.",
-            "Don't see your town on the list? Call and ask, because the list is where Griffin works, not where it stops."
+            "Don't see your town? Call and ask."
           ]
         },
         {
           "type": "faq",
-          "heading": "What Peoria Homeowners Ask About the Plan and the Call",
+          "heading": "Questions About the Plan and the Call",
           "items": [
             {
               "q": "What does the maintenance plan cost?",
@@ -219,7 +219,7 @@
             },
             {
               "q": "Do plan members pay extra at night or on a holiday?",
-              "a": "No. After-hours, weekend and holiday rates don't apply to members. A service call is $75, and parts are 10% off."
+              "a": "No. After-hours, weekend and holiday rates don't apply to members. For members, a service call is $75 and parts are 10% off."
             },
             {
               "q": "Who is the maintenance plan right for?",
@@ -227,7 +227,7 @@
             },
             {
               "q": "Can I book a clean-and-check on a weekend?",
-              "a": "Not today. Maintenance clean-and-checks are scheduled during the week only, so if the weekend is the only time that works, call and ask what's open."
+              "a": "Maintenance clean-and-checks are scheduled during the week only, so if the weekend is the only time that works, call and ask what's open."
             },
             {
               "q": "The online schedule doesn't show a time I want. What now?",
@@ -235,7 +235,7 @@
             },
             {
               "q": "Does Griffin do emergency repairs?",
-              "a": "Yes. Emergency services are available 24/7, and the plan keeps the service call at $75 for members."
+              "a": "Yes. Emergency services are available 24/7, and plan members pay $75 for a service call."
             },
             {
               "q": "Does Griffin work on both furnaces and air conditioners?",
@@ -259,13 +259,13 @@
       "hero": {
         "eyebrow": "Heating · Peoria, IL",
         "h1": "Furnace Repair in Peoria, IL — Griffin HVAC",
-        "sub": "The furnace has quit and the house is cooling off. Call Griffin HVAC. Emergency service is available 24/7, and for plan members a service call is $75 at any hour.",
+        "sub": "The furnace has quit and the house is cooling off. Call Griffin HVAC. Emergency service is available 24/7, and plan members pay $75 for a service call.",
         "primaryCta": {
           "label": "Call (309) 676-0808",
           "action": "call"
         },
         "secondaryCta": {
-          "label": "Request Service",
+          "label": "Contact us",
           "action": "contact"
         },
         "image": {
@@ -285,7 +285,7 @@
           "heading": "Four Things to Check Before You Call About the Furnace",
           "body": [
             "Check what you can do safely. Is the thermostat set to heat, with fresh batteries if it takes them? Is the furnace switch on? Is the breaker on? Is the filter packed with dust?",
-            "If you smell gas, leave the house and call your gas company before anything else. If the furnace still won't run, call Griffin HVAC at (309) 676-0808."
+            "If the furnace still won't run, call Griffin HVAC at (309) 676-0808."
           ],
           "image": {
             "slot": "furnace-detail",
@@ -311,7 +311,7 @@
             },
             {
               "title": "A clogged filter",
-              "text": "Too little airflow makes a furnace overheat and shut itself off. It's the cheapest fix there is."
+              "text": "Too little airflow makes a furnace overheat and shut itself off."
             },
             {
               "title": "An inducer or blower motor",
@@ -347,10 +347,10 @@
         },
         {
           "type": "prose",
-          "heading": "Repair or New Furnace: A Rule You Can Check",
+          "heading": "Repair or New Furnace: Ask for Both Prices",
           "body": [
-            "If it's an igniter, a sensor or a motor, repair is the answer, and it costs far less than a new furnace. If the furnace is old, the repairs keep coming, or a major part like the blower has failed, that's the time to price a new one.",
-            "Ask for the repair price and the replacement price side by side. If you replace, Griffin sells Amana equipment as an authorized dealer, and GoodLeap financing is there if you want it."
+            "Ask the technician what failed: an igniter, a sensor or a motor, or a major part like the blower. That tells you whether a new furnace is worth pricing.",
+            "Ask for the repair price and the replacement price side by side. If you replace, GoodLeap financing is there if you want it."
           ]
         },
         {
@@ -359,16 +359,11 @@
           "name": "Reed S."
         },
         {
-          "type": "review",
-          "quote": "Won't charge you for something that's not needed. He serviced our 17 old furnace, and while he was at it he noticed that my humidifier filter needed to be replaced (which I knew). He asked me if wanted it replaced. Just charged me for the filter, nothing else.",
-          "name": "Jigar P."
-        },
-        {
           "type": "prose",
           "heading": "A Furnace Plan Before the Next Cold Snap",
           "body": [
-            "A plan member's service call is $75, and parts during service or a clean and check are 10% off. The plan is $160 for one system, and the fall visit is the one that matters for the furnace.",
-            "Plan members also get priority scheduling, which counts when everyone's furnace quits in the same cold week."
+            "For a plan member, a service call is $75 and parts during service or a clean and check are 10% off. The fall visit is the one that matters for the furnace.",
+            "Plan members also get priority scheduling."
           ]
         },
         {
@@ -378,7 +373,7 @@
         },
         {
           "type": "faq",
-          "heading": "What People Ask When the Furnace Is Out",
+          "heading": "Questions When the Furnace Is Out",
           "items": [
             {
               "q": "Can someone come after hours or on a holiday?",
@@ -386,7 +381,7 @@
             },
             {
               "q": "What does the plan do for a furnace call?",
-              "a": "Members pay $75 for a service call, with no after-hours, weekend or holiday rates, and priority scheduling."
+              "a": "Plan members pay $75 for a service call, with no after-hours, weekend or holiday rates, and get priority scheduling."
             },
             {
               "q": "When should the furnace be checked?",
@@ -394,11 +389,11 @@
             },
             {
               "q": "Does Griffin install new furnaces?",
-              "a": "Yes. Griffin is an authorized Amana dealer, and financing is available through GoodLeap."
+              "a": "Yes. Griffin installs new furnaces, and has partnered with GoodLeap for financing."
             },
             {
-              "q": "Can Griffin add a humidifier?",
-              "a": "Yes. The fall visit includes a check of the humidifier, and a humidifier can be added to the system."
+              "q": "Does the fall visit include the humidifier?",
+              "a": "Yes. The fall clean-and-check lists the humidifier among the things it covers."
             },
             {
               "q": "How do I know whether it's the thermostat or the furnace?",
@@ -447,7 +442,7 @@
           "heading": "What to Tell Us When You Call",
           "list": [
             "What the system is doing: no heat, no cooling, a noise, a smell, ice, a tripped breaker.",
-            "Whether it's a furnace, an air conditioner or a humidifier.",
+            "Whether it's a furnace or an air conditioner.",
             "Roughly how old the system is, and any repairs you remember.",
             "Whether you're on the maintenance plan, so we know the $75 service call applies."
           ],
@@ -464,7 +459,7 @@
           "body": [
             "**Address.** 1007 W Detweiller Dr, Peoria, IL 61615.",
             "**Hours.** Monday to Friday, opening at 8:00 AM. Maintenance clean-and-checks are booked during the week. Emergency services are available 24/7.",
-            "**Area.** Peoria, Dunlap, Pekin, Washington, Morton, East Peoria and the towns around them."
+            "**Area.** Peoria, Dunlap, Pekin, Washington, Morton and East Peoria."
           ]
         },
         {
@@ -476,19 +471,19 @@
     }
   ],
   "footer": {
-    "about": "Griffin HVAC is a Peoria heating and cooling company that has served the area since 1963. It repairs and installs furnaces and air conditioners, and sells a maintenance plan from $160 a year.",
+    "about": "Griffin HVAC is a Peoria heating and cooling company that has served the area since 1963, and has had its current owner since 2019. It repairs and installs furnaces and air conditioners, and sells a maintenance plan from $160 a year.",
     "why": [
-      "Maintenance plan with a $75 service call",
+      "Plan members pay $75 for a service call",
       "24/7 emergency service",
       "GoodLeap financing",
-      "Authorized Amana dealer"
+      "Two clean-and-check visits a year"
     ]
   },
   "strategy": {
     "whyHeading": "Why we built this site",
     "why": [
-      "Your homepage headline reads “Please call if the online schedule doesn't show a time you want.” That is a notice, not an answer to what you do or where, and four different pages carry the title “Heating Services.” On a phone, every page is 768 pixels wide on a 390-pixel screen, so visitors scroll sideways, and the header shows Book Online and Log In but no phone number.",
-      "Your maintenance plan page is the best thing on your site. It prints a price, two visit checklists and a $75 service call with no after-hours, weekend or holiday rates. None of the five Peoria competitors we checked shows a plan price. Today it hides behind the menu label “Maintenance Plan Agreement.”",
+      "Your homepage headline reads “Please call if the online schedule doesn't show a time you want.” That is a notice, not an answer to what you do or where, and three different pages carry the title “Heating Services.” On a phone, every page is 768 pixels wide on a 390-pixel screen, so visitors scroll sideways, and the header shows Book Online and Log In but no phone number.",
+      "Your maintenance plan page is the best thing on your site. It prints a price, two visit checklists and a $75 service call with no after-hours, weekend or holiday rates. Today it hides behind the menu label “Maintenance Plan Agreement.”",
       "So the demo leads with the plan, tells it the same way on every page, and opens with HVAC company in Peoria, IL. Furnace repair gets a page of its own, because it is where your customers and your plan meet."
     ],
     "cardsHeading": "Be the HVAC Company People Find on Google",
@@ -566,7 +561,7 @@
     ],
     "closing": {
       "heading": "Want a website like this for your business?",
-      "text": "Your plan already answers the question callers ask first, what this will cost. Book a strategy call with Fluid Frame and we’ll walk you through this demo and what a full build adds."
+      "text": "Your plan page already prints a price, two visit checklists and a service-call fee. Book a strategy call with Fluid Frame and we’ll walk you through this demo and what a full build adds."
     },
     "confirm": {
       "heading": "What we'd confirm with you",
@@ -579,7 +574,7 @@
     },
     "lead": {
       "heading": "Why we led with the plan's service-call rate",
-      "text": "The scariest moment for a Peoria homeowner is a furnace that quits on a holiday evening, and right behind it is paying after-hours rates to get warm. Your plan answers both: members pay $75 for any service call, with no after-hours, weekend or holiday rates, and you print the price. That rests on things Google can't find anywhere else, your own plan terms and your customers' accounts of calling you in the cold, which is also why it can help you rank.",
+      "text": "The scariest moment for a Peoria homeowner is a furnace that quits after hours, and right behind it is paying after-hours rates to get warm. Your plan answers both: plan members pay $75 for any service call, with no after-hours, weekend or holiday rates, and you print the price. That rests on things Google can't find anywhere else, your own plan terms and your customers' accounts of calling you in the cold, which is also why it can help you rank.",
       "showScores": false,
       "rows": [
         {

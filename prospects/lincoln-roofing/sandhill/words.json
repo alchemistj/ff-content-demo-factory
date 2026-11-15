@@ -29,19 +29,19 @@
   "trustBar": [
     "Free Roof Replacement Estimate",
     "Family-Owned, Based in Lincoln",
-    "Senior and Military Discounts",
+    "Residential and Commercial Roofing",
     "Open Monday Through Saturday"
   ],
   "services": [
     {
       "name": "Roof Replacement",
       "route": "/roof-replacement-lincoln-ne/",
-      "blurb": "A new roof when yours is worn out or storm-damaged, with your choices and a free estimate laid out first."
+      "blurb": "Roof replacement in asphalt, steel, cedar shake and more, with a free roof replacement estimate."
     },
     {
       "name": "Roof Repair",
       "route": null,
-      "blurb": "Roofing repair for homes and commercial buildings, starting with a straight answer on whether it's a repair at all."
+      "blurb": "Roofing repair for homes and commercial buildings."
     },
     {
       "name": "Storm Damage",
@@ -51,7 +51,7 @@
     {
       "name": "Insurance Claims",
       "route": null,
-      "blurb": "We handle insurance claims, and walk you through what's needed from the roof side."
+      "blurb": "We handle insurance claims."
     },
     {
       "name": "Siding",
@@ -77,15 +77,15 @@
       "keyword": "roofer lincoln ne",
       "seo": null,
       "hero": {
-        "eyebrow": "Lincoln, NE · Straight Answers on Your Roof",
+        "eyebrow": "Lincoln, NE · Family-Owned Roofer",
         "h1": "Roofer in Lincoln, NE — Sandhill Roofing",
-        "sub": "You get the straight answer on your roof, even when the answer is that you don't need a new one. Sandhill Roofing is a family-owned roofer based in Lincoln and serving Eastern Nebraska. Call (402) 890-6460 and tell us what you're seeing.",
+        "sub": "Customers describe a straight answer on their roof from Dusty Rieck, even when the answer is that it isn't the roof at all. Sandhill Roofing is a family-owned roofer based in Lincoln and serving Eastern Nebraska. Call (402) 890-6460 and tell us what you're seeing.",
         "primaryCta": {
           "label": "Call (402) 890-6460",
           "action": "call"
         },
         "secondaryCta": {
-          "label": "Get a Free Estimate",
+          "label": "Contact us",
           "action": "contact"
         },
         "image": {
@@ -97,29 +97,29 @@
       "sections": [
         {
           "type": "review",
-          "quote": "Im so thankful for the honest second opinion I received from Dusty. He came out quickly, gave me a clear and detailed explanation of the condition of my roof, and answered all of my questions without trying to push unnecessary work.",
+          "quote": "He came out quickly, gave me a clear and detailed explanation of the condition of my roof, and answered all of my questions without trying to push unnecessary work.",
           "name": "Alyssa T."
         },
         {
           "type": "prose",
           "heading": "You Wanted a Second Opinion, Not a Sales Pitch",
           "body": [
-            "A shingle lifts in the wind, or a brown ring spreads across the ceiling, and every roofer you call seems to have the same answer: replace it. You can't climb up and check for yourself, so you end up trusting whoever sounds the most sure.",
-            "That's a lot to hand a stranger. A roof is one of the biggest bills on a house, and it's hard to judge from the ground. Before any quote, you need someone who will look and tell you what's really going on."
+            "A shingle lifts in the wind, or a brown ring spreads across the ceiling, and the question is whether it's a repair or a new roof. You can't climb up and check for yourself, so you end up trusting whoever sounds the most sure.",
+            "That's a lot to hand a stranger. Before any quote, you want someone who will look and tell you what's really going on."
           ]
         },
         {
           "type": "split",
-          "heading": "We Tell You What the Roof Needs, and What It Doesn't",
+          "heading": "What Customers Mention About Dusty's Visits",
           "body": [
-            "We start by looking at the roof and explaining what we see in plain words. Then we lay out your choices. If it's a small repair, we say so. If the roof is worn out, we say that too, and give you a detailed estimate.",
-            "Dusty Rieck owns Sandhill Roofing, and his name comes up in review after review."
+            "Reviewers describe much the same visit: Dusty looks at the roof, explains it in plain words and answers their questions. His name comes up in review after review.",
+            "Dusty Rieck owns Sandhill Roofing. Here is what customers mention, in their own reviews:"
           ],
           "list": [
-            "Your roof looked at and explained in plain words",
-            "Your choices laid out before you decide anything",
-            "A free roof replacement estimate",
-            "A straight answer when it's a repair, or not the roof at all"
+            "The roof looked at and explained in plain words",
+            "Questions answered, with no pressure to buy",
+            "Samples and options to choose from",
+            "A free roof replacement estimate, which Sandhill's own site offers"
           ],
           "listStyle": "checks",
           "image": {
@@ -133,7 +133,7 @@
           "type": "prose",
           "heading": "Finally, a Straight Answer From Someone Who Knows Roofs",
           "body": [
-            "A roof call usually starts with a question you can't answer on your own: what do I have, and what does it need? Here's how it feels when somebody finally answers it."
+            "A roof call usually starts with a question you can't answer on your own: what do I have, and what does it need? One new homeowner described what happened when they called around."
           ]
         },
         {
@@ -143,30 +143,9 @@
         },
         {
           "type": "prose",
-          "heading": "What You're Seeing Up There, and What It Usually Means",
+          "heading": "Not Sure It's the Roof? Describe What You're Seeing",
           "body": [
-            "Something you can see from the yard or from inside the house is usually what starts the call. Here's what it often points to."
-          ],
-          "items": [
-            {
-              "title": "Shingles missing or lifted after a windy day",
-              "text": "Wind can break a shingle's seal and lift it, and the next gust takes more. Sometimes that's a repair, and we'll say so when it is."
-            },
-            {
-              "title": "A stain or drip on the ceiling",
-              "text": "Water can run along the framing before it shows inside, so the stain isn't always under the opening. Sometimes the cause isn't the roof at all."
-            },
-            {
-              "title": "Granules in the gutters, or shingles curling and cracking",
-              "text": "That usually means the roof is wearing out across a whole slope, not in one spot. A patch buys a little time, so price a replacement beside it."
-            },
-            {
-              "title": "Dents or bruises after hail",
-              "text": "Hail damage is easy to miss from the ground. A look on the roof is the only way to know what it did."
-            }
-          ],
-          "tail": [
-            "Not sure which one you've got? Call (402) 890-6460 and describe what you see."
+            "Shingles missing after a windy day, a stain or drip on the ceiling, granules in the gutters, dents after hail: whatever you're seeing, call (402) 890-6460 and describe it."
           ]
         },
         {
@@ -176,9 +155,9 @@
         },
         {
           "type": "prose",
-          "heading": "Years Later, You Can Still Call the Company That Did Your Roof",
+          "heading": "Years Later, Customers Still Call Dusty",
           "body": [
-            "After a big storm, crews from out of town can show up, and they don't always stay. We're based in Lincoln, so if something looks wrong on a roof we put on, you know where to find us."
+            "Reviewers mention getting in touch with Dusty after the job was done, in one case nine years after the roof went on."
           ]
         },
         {
@@ -195,8 +174,8 @@
           "type": "split",
           "heading": "Storm Damage and Your Insurance Company",
           "body": [
-            "After hail or wind, the roof is only half of it. The other half is the claim. Insurance claims are part of the work we handle, and we walk you through what's needed from the roof side.",
-            "We can't tell you what your insurer will decide, and your agent is the one to ask about your policy and your deductible. What we can do is show you what's on the roof and help with the paperwork."
+            "After hail or wind, the roof is only half of it. The other half is the claim, and we handle insurance claims.",
+            "We can't tell you what your insurer will decide, and your agent is the one to ask about your policy and your deductible."
           ],
           "image": {
             "slot": "adjuster-meeting",
@@ -214,7 +193,7 @@
           "type": "prose",
           "heading": "Roof Replacement: When the Roof Has Run Its Course",
           "body": [
-            "When a roof is worn out or storm-damaged, replacement is the job. We install asphalt shingles, steel, stone coated steel, standing seam steel, rubber slate, polymer and cedar shake, including impact-resistant shingles. The free roof replacement estimate comes first, so you see the numbers before you decide."
+            "When a roof is worn out or storm-damaged, replacement is the job. Our materials list covers asphalt, steel, stone coated steel, standing seam steel, rubber slate, polymer and cedar shake, along with impact resistance. Call for the free roof replacement estimate."
           ],
           "link": {
             "label": "See roof replacement in Lincoln →",
@@ -225,8 +204,13 @@
           "type": "prose",
           "heading": "Selling a House With a Roof That Needs Work?",
           "body": [
-            "A roof can hold up a closing. If you're a seller, or an agent with a client waiting on a roof, tell us the date you're working against when you call. Weather and the size of the job decide what's possible, and you'll get a straight read on both."
+            "Several reviewers had a closing date to meet, as the seller or as the agent for one. If that's you, tell us the date when you call."
           ]
+        },
+        {
+          "type": "review",
+          "quote": "I had to get a new roof put on a property I was selling in order to close by a certain date. Dusty got the job done in the small window of nice weather and did a great job.",
+          "name": "Steve G."
         },
         {
           "type": "faq",
@@ -238,11 +222,11 @@
             },
             {
               "q": "Do you work with insurance claims?",
-              "a": "Insurance claims are part of what we handle, and we help from the roof side. We can't promise what your insurer will decide, so ask your agent what your deductible is."
+              "a": "Yes, we handle insurance claims. We can't promise what your insurer will decide, so ask your agent what your deductible is."
             },
             {
               "q": "What kinds of roofs do you install?",
-              "a": "Asphalt shingles, steel, stone coated steel, standing seam steel, rubber slate, polymer and cedar shake, including impact-resistant options. We can talk through which one fits your house."
+              "a": "Asphalt, steel, stone coated steel, standing seam steel, rubber slate, polymer and cedar shake, along with impact resistance. Call and tell us about your house."
             },
             {
               "q": "Do you do more than roofs?",
@@ -273,7 +257,7 @@
         {
           "type": "callBand",
           "heading": "Find Out What Your Roof Needs",
-          "text": "Call (402) 890-6460 for a free quote. Tell us what you're seeing, and you'll hear what the roof needs and what it doesn't."
+          "text": "Call (402) 890-6460 for a free quote. Tell us what you're seeing."
         }
       ]
     },
@@ -286,13 +270,13 @@
       "hero": {
         "eyebrow": "Roof Replacement · Lincoln and Eastern Nebraska",
         "h1": "Roof Replacement in Lincoln, NE — Sandhill Roofing",
-        "sub": "A new roof is a big job, so the first question is whether you need one. We tell you straight. If you do, we walk you through the materials and give you a free roof replacement estimate. Call (402) 890-6460.",
+        "sub": "A new roof is a big job, and the first question is whether you need one. Customers describe Dusty telling them straight. Call (402) 890-6460 for a free roof replacement estimate.",
         "primaryCta": {
           "label": "Call (402) 890-6460",
           "action": "call"
         },
         "secondaryCta": {
-          "label": "Get a Free Estimate",
+          "label": "Contact us",
           "action": "contact"
         },
         "image": {
@@ -311,15 +295,14 @@
           "type": "split",
           "heading": "Is It Time for a New Roof, or Is It a Repair?",
           "body": [
-            "Walk the yard and look up. Cracked or curling shingles, bare spots and granules washing into the gutters usually mean the whole roof is wearing out, not just one spot.",
-            "A patch on a roof like that buys a little time. If the whole slope is going, the money is better spent on the roof itself.",
-            "The opposite is just as true. A lifted shingle or a loose flashing is a repair, and replacing a roof that's mostly sound costs you money for nothing. Telling you which one you have is the first thing we do."
+            "Describe what you see when you call: where it is, how much of the roof it covers and when you noticed it.",
+            "Customers mention that Dusty looked at the roof and explained it before anyone talked about work. One reviewer called it an honest second opinion."
           ],
           "list": [
-            "Cracked, curling or missing shingles in more than one area",
+            "Cracked, curling or missing shingles",
             "Granules collecting in your gutters",
             "A leak that comes back after a patch",
-            "Hail or wind damage across the roof"
+            "Hail or wind damage"
           ],
           "listStyle": "checks",
           "image": {
@@ -331,35 +314,40 @@
         },
         {
           "type": "prose",
-          "heading": "What a Good Estimate Spells Out",
+          "heading": "Questions to Bring to Any Estimate",
           "body": [
-            "Whichever roofer you call, ask what the estimate covers. A replacement price depends on a handful of things, and a number with no detail behind it is hard to compare."
+            "Whichever roofer you call, ask what the estimate covers. A number with no detail behind it is hard to compare."
           ],
           "items": [
             {
               "title": "Size and pitch",
-              "text": "More roof means more material and labor, and a steeper roof takes longer to work on safely."
+              "text": "Ask how big the roof is and how steep, and whether the estimate says so."
             },
             {
               "title": "Material",
-              "text": "Shingles, steel and slate-look roofs sit at very different prices. The estimate should name the one you're getting."
+              "text": "The estimate should name the material you're getting."
             },
             {
               "title": "What comes off first",
-              "text": "Layers of old roofing add labor. So does any wood underneath that has to be replaced once the old roof is gone."
+              "text": "Ask how many layers of old roofing there are and what happens if wood underneath has to be replaced."
             },
             {
               "title": "The details",
-              "text": "Chimneys, vents, valleys and flashing each add work, and they're where leaks tend to start. A good estimate doesn't skip them."
+              "text": "Ask whether chimneys, vents, valleys and flashing are included."
             },
             {
               "title": "Cleanup",
-              "text": "Tear-off throws shingles and nails across the yard, so ask how the crew handles it."
+              "text": "Ask how the crew handles the old shingles and nails."
             }
           ],
           "tail": [
-            "Our estimate for a roof replacement is free, and you see your choices and the numbers before you decide anything."
+            "The roof replacement estimate from Sandhill is free. Call (402) 890-6460."
           ]
+        },
+        {
+          "type": "review",
+          "quote": "He and his team were professional, on time and did a great job!",
+          "name": "Jamie G."
         },
         {
           "type": "review",
@@ -370,11 +358,20 @@
           "type": "prose",
           "heading": "Choosing the Material",
           "body": [
-            "We install asphalt shingles, steel, stone coated steel, standing seam steel, rubber slate, polymer and cedar shake roofs, plus shingles built to resist impact. Each one fits a different house and budget.",
-            "**Asphalt shingles** cost the least up front and come in plenty of colors. **Steel** and **standing seam steel** cost more and are made to last longer. **Stone coated steel** is a metal roof with a stone-granule surface.",
-            "**Rubber slate** and **polymer** roofs go for the look of slate or shake without the weight. **Cedar shake** is the classic natural look and takes more care. **Impact-resistant shingles** are worth asking about, since hail is hard on every roof.",
-            "Tell us what matters most, whether that's price, how long it lasts, how it looks or how it handles hail, and we'll say which one fits."
+            "The materials we install include asphalt, steel, stone coated steel, standing seam steel, rubber slate, polymer and cedar shake. Impact resistance is on the list too.",
+            "Reviewers describe choosing a roof with Dusty in different ways. Carolyn W. ended up with a steel roof. Monica R. needed samples to decide. Ben C. was offered upgraded shingle options and added deck venting for attic airflow.",
+            "Tell us what you're looking for in a roof and ask which materials to look at."
           ]
+        },
+        {
+          "type": "review",
+          "quote": "What I loved most about this experience is Dusty indulging my indecisiveness and having and/or finding samples to help with any decision I had to make.",
+          "name": "Monica R."
+        },
+        {
+          "type": "review",
+          "quote": "Dusty presented the roof and gutter options in a simple manner and included options of upgraded Malarkey shingles.",
+          "name": "Ben C."
         },
         {
           "type": "review",
@@ -385,16 +382,21 @@
           "type": "prose",
           "heading": "When a Storm Is Why You Need a New Roof",
           "body": [
-            "Hail and wind are the usual reasons a roof has to come off. If there's an insurance claim, we handle that side of it with you and explain what we find on the roof.",
-            "We can't promise what your insurance company will decide, and your agent is the one to ask about your policy and deductible. Take dated photos of the damage if you can."
+            "After hail or wind, the roof may be only part of it. We handle insurance claims.",
+            "We can't promise what your insurance company will decide, and your agent is the one to ask about your policy and deductible."
           ]
         },
         {
+          "type": "review",
+          "quote": "Dusty at Sandhill Roofing was … helpful in guiding us through the whole insurance process when replacing our roof.",
+          "name": "Bornschlegl F."
+        },
+        {
           "type": "split",
-          "heading": "How a Replacement Goes, Start to Finish",
+          "heading": "Crews, Schedules and Finish Dates",
           "body": [
-            "On any roof replacement, the order is the same. The old roof comes off, the wood underneath gets checked, and the new roof goes on, with flashing and vents around it. Then the yard gets cleaned up.",
-            "Start to finish, it usually comes down to your decisions on the material and the date. Once we've seen the roof, you'll know what to expect."
+            "Customers who had a roof replaced mention how quickly the crew worked and how the job finished.",
+            "Tim L. wrote that after a small oversight on their job, Dusty came back the next morning. Their reviews are below."
           ],
           "image": {
             "slot": "crew-tearoff",
@@ -405,20 +407,25 @@
         },
         {
           "type": "review",
+          "quote": "The roof replacement was completed on schedule and with great attention to detail. The crew worked hard, respected my property and left everything picked up when they were finished.",
+          "name": "David B."
+        },
+        {
+          "type": "review",
           "quote": "The tear off and replacement was done in June with great care to remove and replace several roof lines one at a time. … The job was finished on time and they protected the yard to my wife's satisfaction.",
           "name": "James M."
         },
         {
           "type": "prose",
-          "heading": "A Roof Someone Else Got Wrong",
+          "heading": "A Roof Before a Sale",
           "body": [
-            "If a roof already went on badly, don't wait for the next rain to find out how badly. Call us and say what you're seeing. You'll hear what's wrong with it and what it would take to fix, whether that's a repair or starting over."
+            "Reviewers also mention roofs replaced ahead of a closing, written by the agent for the sellers. If you have a date to meet, tell us when you call."
           ]
         },
         {
           "type": "review",
-          "quote": "Had another contractor royally screw up an install of a new roof. … After a couple of months and the first contractor still hadn't fixed my roof, Dusty came to my rescue and not only removed their mess but put on a beautiful new roof and gutters.",
-          "name": "Dennis E."
+          "quote": "My clients hired Sandhills to replace a roof from hail damage prior to closing on the sale of their home. I found Dusty to be responsive and communicative. The process was very smooth and timely.",
+          "name": "Lori W."
         },
         {
           "type": "faq",
@@ -430,26 +437,22 @@
             },
             {
               "q": "How do I know whether I need a replacement or a repair?",
-              "a": "Look for damage across the whole roof, not one spot: curling or cracked shingles, bare patches, granules in the gutters. If you're not sure, call and describe what you see."
+              "a": "Call (402) 890-6460 and describe what you see. If it's more than one spot on the roof, say so."
             },
             {
               "q": "Will insurance pay for a new roof?",
-              "a": "That depends on your policy, your deductible and what caused the damage. Your agent can answer it, and we can show you what's on the roof."
-            },
-            {
-              "q": "How long does a roof replacement take?",
-              "a": "The size and pitch of your roof, the material and the weather all play a part. After we've looked at the roof, we'll give you an idea of the timing."
+              "a": "That depends on your policy, your deductible and what caused the damage. Your agent can answer it, and we handle insurance claims."
             },
             {
               "q": "Will I get a sales pitch with the estimate?",
-              "a": "Call (402) 890-6460, say what the roof is doing, and ask for the free estimate. The first thing you'll hear is whether you need a new roof at all."
+              "a": "Call (402) 890-6460, say what the roof is doing, and ask for the free estimate."
             }
           ]
         },
         {
           "type": "callBand",
           "heading": "Get Your Roof Replacement Estimate",
-          "text": "Call (402) 890-6460 for a free roof replacement estimate. Tell us how old the roof is and what you're seeing, and you'll hear whether it needs replacing."
+          "text": "Tell us how old the roof is and what you're seeing, and ask for the free roof replacement estimate at (402) 890-6460."
         }
       ]
     },
@@ -462,7 +465,7 @@
       "hero": {
         "eyebrow": "Contact Sandhill Roofing",
         "h1": "Contact Sandhill Roofing in Lincoln, NE",
-        "sub": "The fastest way to reach us is to call. Tell us what your roof is doing, and you'll hear what it needs and what it doesn't.",
+        "sub": "The fastest way to reach us is to call. Tell us what your roof is doing.",
         "primaryCta": {
           "label": "Call (402) 890-6460",
           "action": "call"
@@ -519,8 +522,8 @@
         },
         {
           "type": "callBand",
-          "heading": "Get a Straight Answer on Your Roof",
-          "text": "Tell us what the roof is doing, and you'll hear what it needs and what it doesn't. Call (402) 890-6460 or email info@sandhillroofing.com."
+          "heading": "Tell Us What Your Roof Is Doing",
+          "text": "Call (402) 890-6460 or email info@sandhillroofing.com."
         }
       ]
     }
@@ -528,7 +531,7 @@
   "footer": {
     "about": "Sandhill Roofing is a family-owned roofing company based in Lincoln, serving Eastern Nebraska. We handle roofing, siding, gutters, windows and doors, and insurance claims.",
     "why": [
-      "A straight answer on your roof",
+      "Roofing, siding, gutters, windows and doors",
       "Free roof replacement estimate",
       "Based in Lincoln"
     ]
@@ -537,7 +540,7 @@
     "whyHeading": "Why we built this site",
     "why": [
       "Your customers already make your case. 101 people have reviewed Sandhill Roofing on Google, and one thing keeps coming up: Dusty tells you what the roof needs and what it doesn't. mike B. wrote that he \"didn't make me feel pressured or try to sell me on things that I didn't need.\"",
-      "Your website shows none of it. It's one homepage of about 362 words with no headline Google can read, no reviews, and a services page whose headings are your phone number, five times over. Nothing on it says roofer, or Lincoln.",
+      "Your website shows none of it. It's one homepage of about 362 words with no headline Google can read, no reviews, and a services page whose headings are your phone number, five times over. No headline says roofer, or Lincoln.",
       "So we built a site that opens with roofer in Lincoln, NE, leads with the straight answer your customers describe, and gives roof replacement a page of its own."
     ],
     "cardsHeading": "Be the Roofer People Find on Google in Lincoln",

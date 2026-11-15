@@ -50,7 +50,7 @@ Top claim: "after-hours call answered, with the cost of the visit told up front,
 ## What's thin
 - **The lead rests on one review (Bob W.).** The copy says what he heard, and tells the reader to ask what a visit costs. It never says TSI quotes the price first as policy. Ask the owner: do you quote the after-hours price on the call, and what is it?
 - **Emergency line.** The site says "24/7 After Hours Emergency Service" and "Emergency Repair 24/7", and office hours are Monday to Friday, 7:30 AM to 4:30 PM. Whether the emergency line is the same number is open (facts.md open question 7). The copy says "after-hours emergency service" and never "24/7."
-- **Phone.** facts.md does not say which number is current: site 309-324-5317 or listing (309) 699-3333. The demo uses the Google number (309) 699-3333 and lists the conflict in `confirm`.
+- **Phone.** The demo uses the Google number (309) 699-3333, which is also the number in the site's static HTML. A script on the live site swaps it to 309-324-5317 in a browser (facts.md, re-check 2026-11-15), so no phone-conflict claim is made anywhere.
 - **Owner.** No owner is named anywhere (facts.md). The copy says "we" and "TSI."
 - **Ameren, years, licenses, BBB, warranty, financing:** the site says "union-trained, certified, and licensed technicians" and "Trust A+ BBB Rated Company", but facts.md marks license numbers and the BBB rating Unverified, and no warranty or financing is stated. None is used. The promotions ($500 and $250 off) have no year and are not used.
 - **One 2-star review** (William O., 2023-12-27) is about a commercial maintenance bill and an unanswered discount request. It is not quoted. Do not claim "no complaints."

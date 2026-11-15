@@ -65,3 +65,6 @@ Compiled 2026-11-15. Each line cites a URL on the site unless marked otherwise. 
 - License number, insurance, warranty terms, brands serviced.
 - Which "10 years" the site means, and whether the team photo or the family line should stay on the page.
 - Remove the stray /cart page and fix the "FAQs 2" title in the demo?
+
+## Re-check 2026-11-15 (QA fix pass)
+- Playwright on the homepage and /contact: no street address and no hours text found. The outreach fix (no address or hours on the site) is still true.

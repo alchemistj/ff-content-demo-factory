@@ -56,3 +56,5 @@ Top claim: the same-technician-and-we-call-you braid, **16**. **Passes gate (16+
 - **Office names.** Reviews name Julie and Kelly in the office, facts.md says Kim handles scheduling, and the site email is julie@customassured.com. The copy names only Rod and Kim, from the site.
 - **Service page.** HVAC maintenance chosen on about 22 on-topic reviews and the Priority Club section of Our Services.
 - **Contact form.** The site form uses GET and an invisible reCAPTCHA Enterprise (audit.md).
+
+- **11/15 update:** the demo now words "same technician", "we call you" and "twice a year" as what customers mention, not as company policy, until Rod confirms. Trust bar uses "Annual Service Agreements" (site: annual service agreements).

@@ -2,26 +2,49 @@
 
 Hey ComfortTechs team,
 
-Your reviews tell the same story: when another company said replace it, you found the fix first. One customer said another company in town wanted a minimum of $2,000 to fix it and thought a whole new system made more sense. You resolved it for a small fraction of that. My daughter and I build websites for service businesses, so we made you a mockup built around it:
+Your reviews tell the same story: customers mention a fix found first and options laid out without pressure. One customer whose aging heat pump needed replacing said they "never felt pressured from anyone on next steps and all options were clearly outlined." We build websites for service businesses, so we made you a mockup built around it:
 
 https://comforttechs-lincoln.websitepreview.fluidframemarketing.com/?utm_source=form
 
 Note: It'll look a lot better with your logo and images on it! Lol
 
-The preview opens with a recent case study, then walks through why each page is built the way it is. One thing we'd fix: three links on your homepage go to pages that don't exist, and the one we traced is named after a meditation retreat.
+The preview walks through why each page is built the way it is. One thing we'd fix: three links on your homepage go to pages that don't exist, and the one we traced is named after a meditation retreat.
 
-We built your AC repair page as an example, and we'd love to build the rest. Which brands or manufacturers are you certified with?
-
-By the way, our contact form system would have recognized this as a solicitation, and you wouldn't have even seen it.
+We built your homepage and your AC repair page as examples, and we'd love to build the rest.
 
 How'd we do on your company vibe?
+
+Not interested? Reply "no thanks" and you won't hear from me again.
 
 Josh
 Fluid Frame Marketing
 
 ## Short message
 
-Hey ComfortTechs team, your reviews tell the same story: when another company said replace it, you found the fix first. My daughter and I build websites for service businesses, so we made you a mockup built around it: https://comforttechs-lincoln.websitepreview.fluidframemarketing.com/?utm_source=form Note: It'll look a lot better with your logo and images on it! Lol One thing we'd fix: three homepage links go to pages that don't exist. Our contact form system would have recognized this as a solicitation, and you wouldn't have even seen it. Josh, Fluid Frame Marketing
+Hey ComfortTechs team, your reviews tell the same story: customers mention a fix found first and options laid out without pressure. We build websites for service businesses, so we made you a mockup built around it: https://comforttechs-lincoln.websitepreview.fluidframemarketing.com/?utm_source=form Note: It'll look a lot better with your logo and images on it! Lol One thing we'd fix: three homepage links go to pages that don't exist. Not interested? Reply "no thanks" and you won't hear from me again. Josh, Fluid Frame Marketing
+
+## Variant (only if Josh confirms)
+
+Same message, with this opening line in place of "We build websites for service businesses".
+
+Hey ComfortTechs team,
+
+Your reviews tell the same story: customers mention a fix found first and options laid out without pressure. One customer whose aging heat pump needed replacing said they "never felt pressured from anyone on next steps and all options were clearly outlined." My daughter and I build websites for service businesses, so we made you a mockup built around it:
+
+https://comforttechs-lincoln.websitepreview.fluidframemarketing.com/?utm_source=form
+
+Note: It'll look a lot better with your logo and images on it! Lol
+
+The preview walks through why each page is built the way it is. One thing we'd fix: three links on your homepage go to pages that don't exist, and the one we traced is named after a meditation retreat.
+
+We built your homepage and your AC repair page as examples, and we'd love to build the rest.
+
+How'd we do on your company vibe?
+
+Not interested? Reply "no thanks" and you won't hear from me again.
+
+Josh
+Fluid Frame Marketing
 
 ## Form
 

@@ -66,3 +66,5 @@ Site: https://www.jdkuhnhvac.com/ (brief URL http://www.jdkuhnheating.com/ redir
 - Who else works at the shop (the reviews name only Justin and Chris)?
 - License numbers, years in business, financing and warranty terms.
 - Brands they install or service.
+
+- **Re-check 2026-11-15 (Playwright, 390px):** jdkuhnhvac.com scrollWidth is 768 on a 390 viewport. Still true.

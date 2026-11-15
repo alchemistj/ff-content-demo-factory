@@ -49,9 +49,9 @@
       "hero": {
         "eyebrow": "Lincoln, Nebraska · Heating and air conditioning",
         "h1": "HVAC Company in Lincoln, NE — Roettger's Heating and Cooling",
-        "sub": "Call (402) 314-3612 and you can speak directly with Matt. Tell him what the system is doing, and you'll get a heads-up before the technician arrives.",
+        "sub": "Call (402) 314-3612 and you can speak directly with Matt. Tell him what the system is doing, and he'll tell you what happens next.",
         "primaryCta": { "label": "Call (402) 314-3612", "action": "call" },
-        "secondaryCta": { "label": "Request Service", "action": "contact" },
+        "secondaryCta": { "label": "Call or email", "action": "contact" },
         "image": {
           "slot": "home-hero",
           "alt": "A Lincoln home with an outdoor air conditioner beside the house under a clear sky",
@@ -61,7 +61,7 @@
       "sections": [
         {
           "type": "review",
-          "quote": "Matt was timely, made us know we were a priority to him, gave us a very fair bid and got the work done on the next business day. … Not enough stars to truly express what a life saver Roettger’s Heating and Cooling has been for our family.",
+          "quote": "Matt was timely, made us know we were a priority to him, … and got the work done on the next business day. … Not enough stars to truly express what a life saver Roettger’s Heating and Cooling has been for our family.",
           "name": "Susan S."
         },
         {
@@ -69,11 +69,11 @@
           "heading": "When the AC Dies and Nobody Is Picking Up",
           "body": [
             "The thermostat says 88 and climbing. You've called one place and got a voicemail, and now you're doing the math on how long the house can stay like this.",
-            "Call us at (402) 314-3612. You can speak directly with Matt for fast answers and service scheduling, and emergency HVAC service is something we offer. Tell him what the system is doing, and he'll tell you what happens next."
+            "Call us at (402) 314-3612 and speak directly with Matt. Emergency HVAC service is something we offer, so tell him what the system is doing and he'll tell you what happens next."
           ],
           "list": [
             "A real conversation with Matt, not a form to fill out",
-            "A heads-up before the technician arrives",
+            "Heating and air conditioning repair, installation and maintenance",
             "Free estimates and honest recommendations",
             "Emergency HVAC service"
           ],
@@ -89,17 +89,17 @@
           "type": "prose",
           "heading": "AC and Furnace Trouble in Lincoln, and What to Look For",
           "body": [
-            "Most no-cooling and no-heat calls come down to one failed part. These are the ones that come up most."
+            "A no-cooling or no-heat call can start with one failed part. Here is what to look for."
           ],
           "items": [
-            { "title": "The air conditioner hums but won't start", "text": "A weak capacitor is a common cause, and it's one of the smaller repairs in the trade." },
-            { "title": "The vents blow air that isn't cold", "text": "Low refrigerant points to a leak, and ice on the line points to airflow. Adding refrigerant without finding the leak only delays the next call." },
+            { "title": "The air conditioner hums but won't start", "text": "A weak capacitor can cause this, and it is worth having checked." },
+            { "title": "The vents blow air that isn't cold", "text": "Low refrigerant points to a leak, and ice on the line points to airflow." },
             { "title": "The furnace clicks but never lights", "text": "Often a worn igniter or a dirty flame sensor. Both are small parts." },
             { "title": "The furnace runs, then shuts itself off", "text": "A clogged filter can make it overheat. A tired sensor can do the same." },
-            { "title": "A noise that wasn't there last week", "text": "A squeal or rattle is the system telling you something. Have it looked at while it's still a small job." }
+            { "title": "A noise that wasn't there last week", "text": "A squeal or rattle is the system telling you something. Have it looked at." }
           ],
           "tail": [
-            "If it's one of these, it's a repair. Whether the whole system needs replacing is a different question, and it comes after."
+            "If it's one of these, the fix is a part. Whether the whole system needs replacing is a different question."
           ],
           "link": { "label": "See AC repair in Lincoln", "route": "/ac-repair-lincoln-ne/" }
         },
@@ -112,7 +112,7 @@
           "type": "prose",
           "heading": "Repair or Replace: You Get the Facts Either Way",
           "body": [
-            "If a part fixes it, you hear that. If the system is at the end, you hear that too, and you get a free estimate on a replacement. Either way, we offer honest recommendations, and the decision stays yours.",
+            "Roettger's offers honest recommendations and free estimates, and the decision stays yours.",
             "A quick rule you can check: a capacitor, a sensor or a motor is a repair. An old system with repairs piling up, or a failed compressor or heat exchanger, is when to price something new."
           ]
         },
@@ -141,6 +141,14 @@
         },
         {
           "type": "prose",
+          "heading": "Heating System Repair and Furnace Replacement",
+          "body": [
+            "Roettger's repairs heating systems and installs and replaces furnaces. If your furnace clicks but never lights, or runs and then shuts itself off, call (402) 314-3612 and tell Matt what it's doing.",
+            "Heating maintenance and tune-ups are on the list too, so you can ask about a visit before the cold weather arrives."
+          ]
+        },
+        {
+          "type": "prose",
           "heading": "A Membership With Two Tune-Ups a Year",
           "body": [
             "Our maintenance membership includes two tune-ups a year, priority scheduling and discounts on repairs. The point is a longer-lasting system and lower energy bills.",
@@ -149,16 +157,8 @@
         },
         {
           "type": "review",
-          "quote": "I had a maintenance visit today and Kaleb helped me this time. I'm so glad I got the service plan. He checked out everything and cleaned inside and out, he was very thorough. It was also nice to not have a bill.",
+          "quote": "I had a maintenance visit today and Kaleb helped me this time. I'm so glad I got the service plan. He checked out everything and cleaned inside and out, he was very thorough.",
           "name": "Martha R."
-        },
-        {
-          "type": "prose",
-          "heading": "For Realtors, Landlords and Anyone Calling for Someone Else",
-          "body": [
-            "Sometimes the house isn't yours to be standing in. You're a realtor with a closing coming, a landlord with a tenant waiting, or a son or daughter calling about a parent's furnace.",
-            "Call Matt, tell him where the system is and who can let the technician in, and ask when we can be there. You'll hear what we found, and you won't have to be in the room."
-          ]
         },
         {
           "type": "review",
@@ -169,7 +169,7 @@
           "type": "prose",
           "heading": "Locally Owned, With Matt on the Phone",
           "body": [
-            "Roettger's Heating and Cooling is Lincoln's locally owned HVAC provider. You can speak directly with Matt for fast answers and service scheduling.",
+            "Roettger's Heating and Cooling is Lincoln's locally owned HVAC provider. You can speak directly with Matt for fast answers and service scheduling, and customers mention a text or call before the technician arrives.",
             "We serve Lincoln, NE and the surrounding areas. If you're not sure we reach your address, call (402) 314-3612 and ask. You can also email roettgersheatingandcooling@gmail.com."
           ]
         },
@@ -180,12 +180,12 @@
         },
         {
           "type": "faq",
-          "heading": "What Lincoln Homeowners Ask Before They Call Roettger's",
+          "heading": "Questions About Roettger's",
           "items": [
-            { "q": "Can I really talk to Matt?", "a": "Yes. Call (402) 314-3612 and you can speak directly with Matt for fast answers and service scheduling." },
+            { "q": "Can I really talk to Matt?", "a": "Yes. Call (402) 314-3612 and ask for Matt." },
             { "q": "Do you offer emergency HVAC service?", "a": "Yes. If your system quits and can't wait, call and tell us what it's doing." },
-            { "q": "Will you try to sell me a new system?", "a": "We offer honest recommendations. If a part fixes it, that's the repair. If the system is done, you'll hear that and get a free estimate on a replacement." },
-            { "q": "How much does an estimate cost?", "a": "Free estimates are part of how we work, so you can ask what something will cost before you decide." },
+            { "q": "Do I need a new system?", "a": "Roettger's offers honest recommendations and free estimates. Call and describe what the system is doing." },
+            { "q": "How much does an estimate cost?", "a": "Roettger's offers free estimates." },
             { "q": "What does the maintenance membership include?", "a": "Two tune-ups a year, priority scheduling and discounts on repairs. Call for the cost and the details." },
             { "q": "Do you work on both heating and air conditioning?", "a": "Yes. We repair, install and replace both, and we do heating maintenance and tune-ups." }
           ]
@@ -193,7 +193,7 @@
         {
           "type": "callBand",
           "heading": "Call Matt at Roettger's About Your Furnace or AC",
-          "text": "Call (402) 314-3612 and tell Matt what the system is doing. You'll hear what we think and what happens next, and you'll get a heads-up before the technician arrives."
+          "text": "Call (402) 314-3612 and tell Matt what the system is doing. He'll tell you what happens next."
         }
       ]
     },
@@ -206,9 +206,9 @@
       "hero": {
         "eyebrow": "Air conditioning, Lincoln",
         "h1": "AC Repair in Lincoln, NE — Roettger's Heating and Cooling",
-        "sub": "The air isn't cold and the house is warming up. Call (402) 314-3612, tell Matt what the unit is doing, and we'll get you on the schedule. You'll get a heads-up when the technician is on the way.",
+        "sub": "The air isn't cold and the house is warming up. Call (402) 314-3612, tell Matt what the unit is doing, and he'll get you on the schedule. Customers mention a text when the technician is on the way.",
         "primaryCta": { "label": "Call (402) 314-3612", "action": "call" },
-        "secondaryCta": { "label": "Request Service", "action": "contact" },
+        "secondaryCta": { "label": "Call or email", "action": "contact" },
         "image": {
           "slot": "ac-repair-hero",
           "alt": "A technician checking an outdoor air conditioner beside a Lincoln home",
@@ -226,8 +226,8 @@
           "heading": "What Happens When You Call About Your AC",
           "body": [
             "You talk to Matt about what the unit is doing: not cooling, running but warm, not starting, making a noise. He tells you what he thinks is behind it and gets you scheduled.",
-            "Before the technician arrives, you hear from us. Then he finds the failed part and explains it in words you can follow, so you know what's wrong before any work starts.",
-            "If the AC quits on a weekend or a holiday, call anyway. Emergency HVAC service is something we offer, so ask when we can be there."
+            "Customers mention a text before the technician arrives, and a technician who explained what was wrong in words they could follow.",
+            "If the AC quits and it can't wait, call. Emergency HVAC service is something we offer, so tell us what the unit is doing."
           ],
           "image": {
             "slot": "airflow-vent",
@@ -238,41 +238,41 @@
         },
         {
           "type": "review",
-          "quote": "was quick to answer our distress call when our A/C went out on Memorial Day weekend. He managed to fit us into his schedule promptly and even sent a text to let us know when he was on his way to our house.",
+          "quote": "Matt with Roettgers Heating and Cooling did an amazing job and was quick to answer our distress call when our A/C went out … He managed to fit us into his schedule promptly and even sent a text to let us know when he was on his way to our house.",
           "name": "Shelly G."
         },
         {
           "type": "prose",
           "heading": "What Usually Goes Wrong With an Air Conditioner",
           "body": [
-            "A short list of parts accounts for most no-cooling calls. Ice on the refrigerant line, water around the indoor unit, an outdoor fan that isn't spinning or a breaker that trips each time it starts are all signs to stop and call.",
+            "Ice on the refrigerant line, water around the indoor unit, an outdoor fan that isn't spinning or a breaker that trips each time it starts are all signs to stop and call.",
             "If you see ice or water, turn the system off. A struggling air conditioner can turn a small repair into a bigger one."
           ],
           "items": [
-            { "title": "A capacitor that's gone weak", "text": "It gives the compressor and the fan motor the jolt to start. When it fades, the unit hums and won't run. This is one of the most common repairs." },
+            { "title": "A capacitor that's gone weak", "text": "It gives the compressor and the fan motor the jolt to start. When it fades, the unit hums and won't run." },
             { "title": "A frozen coil", "text": "A dirty filter or a blocked coil chokes the airflow until ice builds up. Thawing the coil is the easy part, and the repair is finding out why it froze." },
-            { "title": "Low refrigerant", "text": "An air conditioner doesn't use refrigerant up, so low means a leak. Topping it off without fixing the leak buys a short break." },
-            { "title": "A tired fan or compressor motor", "text": "A motor that's slow or noisy is a warning. Replacing it early is a smaller job than replacing it after it quits." },
+            { "title": "Low refrigerant", "text": "An air conditioner doesn't use refrigerant up, so low means a leak." },
+            { "title": "A tired fan or compressor motor", "text": "A motor that's slow or noisy is a warning worth a call." },
             { "title": "A control that isn't telling the unit to run", "text": "A dead thermostat battery or a failed control can look just like a failed air conditioner. It's worth ruling out." }
           ]
         },
         {
           "type": "review",
-          "quote": "Was so grateful to have my cold air turned on and fixed by just replacing one element and service call for under $200. I was thrilled.",
-          "name": "Jane B."
+          "quote": "Very professional. Great heads up text when the technician was arriving. Would highly recommend.",
+          "name": "Mike K."
         },
         {
           "type": "prose",
           "heading": "Repair or Replace Your Air Conditioner?",
           "body": [
-            "Here's a rule you can check. If the problem is a capacitor, a motor or a coil that needs cleaning, repair is the answer, and it costs far less than a new system.",
-            "If the unit is old, repairs keep stacking up or the compressor has failed, that's when to price a new one. A large repair bill on an old unit is often money better put toward a replacement.",
-            "You'll hear which side you're on, including when the answer is to repair. When it's time to replace, we install and replace air conditioners, with a free estimate first."
+            "A capacitor, a motor or a coil that needs cleaning is a repair.",
+            "If the unit is old, repairs keep stacking up or the compressor has failed, that's when to ask about a new one.",
+            "Ask us which side you're on. When it's time to replace, Roettger's installs and replaces air conditioners and offers free estimates."
           ]
         },
         {
           "type": "review",
-          "quote": "Contacted them on a Saturday and got scheduled for Monday. Tech arrived early and I was informed through text which was nice. Got our AC back and running at an affordable price.",
+          "quote": "… Tech arrived early and I was informed through text which was nice.",
           "name": "Mary S."
         },
         {
@@ -298,7 +298,7 @@
           "type": "prose",
           "heading": "Staying Ahead of the Next Hot Week",
           "body": [
-            "Change the filter on a schedule, keep the outdoor unit clear and don't ignore a new noise. A tune-up before the first hot spell catches weak parts while they're still cheap to replace.",
+            "Change the filter on a schedule, keep the outdoor unit clear and don't ignore a new noise. A tune-up before the first hot spell is a good time to have weak parts checked.",
             "Ask about the maintenance membership when you call: two tune-ups a year, priority scheduling and discounts on repairs."
           ]
         },
@@ -309,19 +309,18 @@
         },
         {
           "type": "faq",
-          "heading": "Questions Lincoln Homeowners Ask About AC Repair",
+          "heading": "Questions About AC Repair",
           "items": [
-            { "q": "Will you try to sell me a new air conditioner?", "a": "We offer honest recommendations. A part that fixes it is a repair. A unit that's done gets a plain answer, and the estimate on a replacement is free." },
-            { "q": "Will I know when the technician is coming?", "a": "You'll get a heads-up before he arrives. If you want to know more, call (402) 314-3612 and ask Matt." },
-            { "q": "What if it quits on a weekend?", "a": "Call. Emergency HVAC service is something we offer, so tell us what the unit is doing and ask when we can get there." },
-            { "q": "Can you repair the system for a tenant or a parent I can't be with?", "a": "Yes. Tell Matt where the system is and who can let the technician in. You'll hear what was found." },
-            { "q": "Is a maintenance plan worth it?", "a": "Our membership includes two tune-ups a year, priority scheduling and discounts on repairs. Call and ask what it costs." }
+            { "q": "Do I need a new air conditioner?", "a": "Honest recommendations and free estimates are on the list. Call and tell Matt what the unit is doing." },
+            { "q": "Will I know when the technician is coming?", "a": "Customers mention a text or call before the technician arrives. To ask how it works for your visit, call (402) 314-3612 and ask Matt." },
+            { "q": "What if it quits and can't wait?", "a": "Call and say so. Emergency HVAC service is something Roettger's offers." },
+            { "q": "What does the maintenance membership include?", "a": "Our membership includes two tune-ups a year, priority scheduling and discounts on repairs. Call and ask what it costs." }
           ]
         },
         {
           "type": "callBand",
           "heading": "Call Matt at Roettger's About Your Air Conditioner",
-          "text": "If your AC isn't cooling, call (402) 314-3612. Tell Matt what it's doing, and you'll hear what we think before the work starts."
+          "text": "If your AC isn't cooling, call (402) 314-3612. Tell Matt what it's doing and ask what comes next."
         }
       ]
     },
@@ -334,7 +333,7 @@
       "hero": {
         "eyebrow": "Contact Roettger's Heating and Cooling",
         "h1": "Contact Roettger's Heating and Cooling in Lincoln, NE",
-        "sub": "If your heat or air has quit, the fastest way to reach us is to call. Matt can give you fast answers and get you on the schedule.",
+        "sub": "If your heat or air has quit, the fastest way to reach us is to call. Call and you can talk with Matt about what the system is doing.",
         "primaryCta": { "label": "Call (402) 314-3612", "action": "call" },
         "image": {
           "slot": "contact-hero",
@@ -377,7 +376,7 @@
         {
           "type": "callBand",
           "heading": "Tell Matt What the Furnace or AC Is Doing",
-          "text": "Call (402) 314-3612. You'll hear what we think and what happens next."
+          "text": "Call (402) 314-3612 and describe the problem. We'll go from there."
         }
       ]
     }
@@ -387,7 +386,7 @@
     "why": [
       "Your site shows no street address and no hours on any page. Someone whose AC quit at four in the afternoon can't tell where you are, when you answer or whether you're open, and your FAQ says you offer emergency HVAC service without saying when.",
       "Your customers keep describing the same two things: Matt answers, and they know when the technician is on the way. None of that is on your site, and your site has no customer reviews at all. Today those words live on Google, not on your pages.",
-      "So the demo leads with it: a real call with Matt, a heads-up before the technician arrives, and AC repair on a page of its own. It opens with HVAC company in Lincoln, NE, which your homepage never says."
+      "So the demo leads with what customers describe: a real call with Matt, a heads-up before the technician arrives, and AC repair on a page of its own. It opens with HVAC company in Lincoln, NE, which your homepage never says."
     ],
     "cardsHeading": "Be the HVAC Company People Find on Google",
     "cardsIntro": "Each card is one page of the demo.",
@@ -411,11 +410,11 @@
         "why": "When the AC quits in a Lincoln summer, people call the first company they can reach.",
         "problems": [
           "AC repair is one line in a long services page, so there's no page built for the search AC repair Lincoln NE.",
-          "Nothing on the site says that Matt takes the call or that you get a heads-up before the technician arrives."
+          "Nothing on the site mentions the heads-up customers describe before the technician arrives."
         ],
         "fixes": [
           "A page for AC repair in Lincoln, NE, with what usually fails and what happens when you call.",
-          "Matt and the heads-up, stated where someone with a warm house will read them."
+          "Matt, and what customers say about the heads-up, where someone with a warm house will read them."
         ]
       },
       {
@@ -456,11 +455,11 @@
     },
     "lead": {
       "heading": "Why we led with knowing the technician is coming",
-      "text": "The scariest moment for a Lincoln homeowner is an AC that quit with no one picking up, and right behind it is sitting home not knowing when anyone will come. A real call with Matt and a heads-up before the technician arrives answers both. It rests on things Google can't find anywhere else: your customers' own accounts and the way you work, which is also why it can help you rank. Please tell us if it isn't how you work.",
+      "text": "The scariest moment for a Lincoln homeowner is an AC that quit with no one picking up, and right behind it is sitting home not knowing when anyone will come. Customers describe a real call with Matt and a heads-up before the technician arrives, which answers both. It rests on something Google can't find anywhere else: your customers' own accounts, which is also why it can help you rank. Please tell us how the heads-up works on a visit.",
       "showScores": false,
       "rows": [
-        { "claim": "Matt takes the call, you get a heads-up before the technician arrives, and the AC is back within hours", "score": 16, "appeal": 4, "exclusivity": 4 },
-        { "claim": "An AC that quit gets looked at within hours on the hottest days", "score": 15, "appeal": 5, "exclusivity": 3 },
+        { "claim": "Customers describe Matt taking the call and a heads-up before the technician arrives", "score": 16, "appeal": 4, "exclusivity": 4 },
+        { "claim": "Customers describe an AC looked at within hours on hot days", "score": 15, "appeal": 5, "exclusivity": 3 },
         { "claim": "Matt takes the call himself", "score": 12, "appeal": 4, "exclusivity": 3 }
       ]
     }

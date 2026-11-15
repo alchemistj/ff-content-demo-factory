@@ -62,3 +62,6 @@ Checked 2026-11-15. Site pages are cited by URL. "Unverified" = not confirmed by
 6. Warranty terms: what the "Lifetime Workmanship Warranty" covers.
 7. Senior and military discounts: current terms.
 8. Reviews: do they want the Google reviews used?
+
+## Re-check 2026-11-15 (QA fix pass)
+- Live re-check with Playwright of https://services.sandhillroofing.com/: five H1s are "(402) 890-6460", sixth is "Quality Brand Options". Outreach fix line is still true.

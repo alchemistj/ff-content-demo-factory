@@ -8,7 +8,7 @@ Method: `docs/writer-guides/AVATAR-AND-USP.md` section 2. Appeal is scored again
 - **What Griffin does instead:** prints the plan price and the service-call rate on its own site: $160 a year for one system, and members pay $75 for any service call, never after-hours, weekend or holiday rates.
 
 ## Business in one line
-Griffin HVAC is a small Peoria shop that the site says has served the area since 1963, with a printed maintenance plan ($160, two visits, $75 service calls) and customers who describe quick, on-time visits on hot days, cold nights and holidays.
+Griffin HVAC is a Peoria company that the site says has served the area since 1963, with a printed maintenance plan ($160, two visits, $75 service calls) and customers who describe quick, on-time visits on hot days, cold nights and holidays.
 
 ## USP table (sorted by score)
 
@@ -53,6 +53,6 @@ Top claim: "plan members pay $75 for any service call, with no after-hours, week
 - **24/7.** Used as the site states it ("24/7 Emergency Services Available") and backed by two holiday and weekend visits in reviews. Whether the emergency line is the same number is not in facts.md.
 - **Non-member rates are not stated anywhere,** so the copy says what members pay and never what non-members pay.
 - **Plan terms** (one year, $160 / $260 / +$100, two visits, $75 calls, 10% off parts, priority scheduling) come from one page and have not been confirmed with the owner. Clean-and-check visits are weekday-only; one 1-star review (Chester M., 2026-04-25) is about an online booking that allowed a weekend slot and was then canceled. The FAQ says the weekday-only rule plainly.
-- **Amana dealer status, "since 1963" and the 2019 ownership change** are the site's own statements; none is verified elsewhere. No license, warranty, BBB or Ameren claim is used (facts.md: Unverified or not found).
+- **Amana dealer status is not used in the demo (QA 2026-11-15) until the owner confirms it. "Since 1963" and the 2019 ownership change** are the site's own statements; none is verified elsewhere. No license, warranty, BBB or Ameren claim is used (facts.md: Unverified or not found).
 - **Tech photo before arrival** rests on one review (Marolyn W.). It appears only as her quote.
 - **Competitors are "not found," not "absent."**

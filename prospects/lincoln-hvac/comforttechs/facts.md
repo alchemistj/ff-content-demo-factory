@@ -79,3 +79,6 @@ Compiled 2026-11-15. Each line cites a URL on the site unless marked otherwise. 
 - The three retreat links on the homepage and their 404 pages: are these from an old template?
 - The footer year (2022) and whether the site should say "since 2007".
 - The "Fiancing" title and the duplicate menu items: should the demo clean these up?
+
+## Re-check 2026-11-15 (QA fix pass)
+- Playwright on https://www.comforttechs.com/: the three links /meditation-retreat-moksha, /retreat-herbal-medicine-101-moksha and /retreat-backpacking-moksha are still on the homepage and still return 404. The only tel: link is 402-465-0000.

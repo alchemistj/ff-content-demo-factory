@@ -25,9 +25,9 @@
   "services": [
     { "name": "AC Repair", "route": "/ac-repair-lincoln-ne/", "blurb": "Cool air back, with the cause explained in plain words." },
     { "name": "Furnace Repair", "route": null, "blurb": "Heat back on, and the problem explained before anyone mentions a new furnace." },
-    { "name": "Heating and Cooling Replacement", "route": null, "blurb": "A new system when the old one can't be saved, with a free estimate and an onsite inspection first." },
-    { "name": "Heat Pumps", "route": null, "blurb": "Repair and replacement for heat pumps that heat and cool your home." },
-    { "name": "Geothermal", "route": null, "blurb": "Service for geothermal heating and cooling." },
+    { "name": "Heating and Cooling Replacement", "route": null, "blurb": "A new system when the old one can't be saved. Free estimates and onsite inspections are on our list." },
+    { "name": "Heat Pumps", "route": null, "blurb": "Heat pumps are listed on our site. Call and tell us what yours is doing." },
+    { "name": "Geothermal", "route": null, "blurb": "Geothermal is listed in our site menu. Call and ask about your system." },
     { "name": "Preventive Maintenance", "route": null, "blurb": "A check before the season that catches the part about to fail." },
     { "name": "Winter Efficiency Check", "route": null, "blurb": "A look at how your heating is running before the cold sets in." }
   ],
@@ -50,9 +50,9 @@
       "hero": {
         "eyebrow": "Heating and cooling for your home in Lincoln",
         "h1": "HVAC Company in Lincoln, NE — Cool Concepts",
-        "sub": "When your AC or furnace quits, call (402) 483-2665. We get someone out to find what failed, then explain it in words you can follow and lay out your options.",
+        "sub": "When your AC or furnace quits, call (402) 483-2665 and tell us what it's doing. We'll talk through what comes next.",
         "primaryCta": { "label": "Call (402) 483-2665", "action": "call" },
-        "secondaryCta": { "label": "Request an Estimate", "action": "contact" },
+        "secondaryCta": { "label": "Call or email", "action": "contact" },
         "image": {
           "slot": "home-hero",
           "alt": "A Lincoln home with an outdoor air conditioner beside the house under a clear sky",
@@ -69,13 +69,13 @@
           "type": "split",
           "heading": "When the Timing Is Terrible and the System Quits Anyway",
           "body": [
-            "It never quits on a good day. It's guests arriving, a holiday weekend, the first real cold snap, the hottest afternoon of the summer.",
-            "Call us at (402) 483-2665 and tell us what the system is doing. We get someone out to look at it, find what failed and tell you what we found. Then we talk through the options, and the decision is yours."
+            "It never quits at a convenient time. It's the first real cold snap, or the hottest afternoon of the summer.",
+            "Call us at (402) 483-2665 and tell us what the system is doing. Customers mention a technician who found what failed, explained it plainly and laid out the options."
           ],
           "list": [
             "Heating and cooling repair and replacement for Lincoln homes",
-            "Free estimates and onsite inspections",
-            "We specialize in Daikin heating and air, and we service all brands of furnaces and air conditioners"
+            "Preventive maintenance and a winter efficiency check",
+            "We service all brands of furnaces and air conditioners"
           ],
           "listStyle": "checks",
           "image": {
@@ -89,17 +89,17 @@
           "type": "prose",
           "heading": "Furnace and AC Trouble in Lincoln, and What Usually Causes It",
           "body": [
-            "Most no-heat and no-cooling calls trace back to a single part, not a dead system. These are the usual suspects."
+            "A no-heat or no-cooling call can start with a single part rather than a dead system. Here is what to look for."
           ],
           "items": [
-            { "title": "The furnace clicks but never lights", "text": "Often a worn igniter or a dirty flame sensor. Both are small parts, and both are short repairs once the cause is confirmed." },
+            { "title": "The furnace clicks but never lights", "text": "Often a worn igniter or a dirty flame sensor. Both are small parts." },
             { "title": "The heat comes on, then shuts off", "text": "A clogged filter can make a furnace overheat and shut itself down. A flame sensor that can't prove the burner lit will do the same." },
-            { "title": "The air conditioner hums but won't start", "text": "A weak capacitor is a common cause, and it's one of the smaller repairs in the trade." },
-            { "title": "The vents blow air that isn't cold", "text": "Low refrigerant points to a leak, and ice on the line points to airflow. Adding refrigerant without finding the leak only delays the next call." },
+            { "title": "The air conditioner hums but won't start", "text": "A weak capacitor can cause this, and it is worth having checked." },
+            { "title": "The vents blow air that isn't cold", "text": "Low refrigerant points to a leak, and ice on the line points to airflow." },
             { "title": "A heat pump that's stopped heating", "text": "Heat pumps heat and cool, so a failure shows up in both seasons. It's worth a call as soon as you notice it." }
           ],
           "tail": [
-            "If it's one of these, it's a repair. Whether the whole system is done is a separate question, and it comes second."
+            "If it's one of these, the fix is a part. Whether the whole system is done is a separate question."
           ],
           "link": { "label": "See AC repair in Lincoln", "route": "/ac-repair-lincoln-ne/" }
         },
@@ -110,10 +110,10 @@
         },
         {
           "type": "prose",
-          "heading": "Find What Failed First, Then Talk About Replacing It",
+          "heading": "What Customers Say About Finding the Problem First",
           "body": [
-            "Sometimes a part does it. Sometimes the system is done. Either way, you should hear which one it is, in plain words, before anything gets replaced.",
-            "That is the order we work in. We find the problem, tell you what it is, and then lay out your options. If a new system is the answer, the estimate is free, and so is the onsite inspection that comes first."
+            "Sometimes a part does it. Sometimes the system is done. Customers mention being told which one it was, in plain words.",
+            "If you are weighing a new system, Cool Concepts lists free estimates and onsite inspections. Call (402) 483-2665 and ask."
           ]
         },
         {
@@ -128,15 +128,15 @@
         },
         {
           "type": "prose",
-          "heading": "A New Furnace or Air Conditioner, With a Free Estimate",
+          "heading": "A New Furnace or Air Conditioner When the Old One Can't Be Saved",
           "body": [
-            "When a system can't be saved, we replace furnaces, air conditioners and heat pumps. You get an onsite inspection and a free estimate first, so the number is based on your house.",
+            "When a system can't be saved, we offer replacement. Call and ask about a free estimate and an onsite inspection.",
             "We specialize in Daikin heating and air, and we service all brands of furnaces and air conditioners, so the brand on your unit isn't a reason to look elsewhere."
           ]
         },
         {
           "type": "review",
-          "quote": "Great service, Great price. Replaced furnace, A/C, whole house humidifier and air purifier. In and out, quick, no mess left behind. Very courteous techs.",
+          "quote": "Great service, … Replaced furnace, A/C, whole house humidifier and air purifier. In and out, quick, no mess left behind. Very courteous techs.",
           "name": "Krishelle S."
         },
         {
@@ -162,25 +162,25 @@
         },
         {
           "type": "review",
-          "quote": "I've used Cool Concepts for years and would not trust anyone else. James and his team are extremely knowledgeable and have even helped with an easy fix over the phone instead of charging us an after-hours service charge.",
+          "quote": "I've used Cool Concepts for years and would not trust anyone else. James and his team are extremely knowledgeable … I would highly recommend them!",
           "name": "Samantha C."
         },
         {
           "type": "faq",
-          "heading": "What Lincoln Homeowners Ask Before They Call Cool Concepts",
+          "heading": "Questions About Cool Concepts",
           "items": [
-            { "q": "Do I need a whole new system, or can you fix what I have?", "a": "We start by finding what failed. If a part fixes it, that's the repair. If the system is done, you'll hear that, with your options and a free estimate on a replacement." },
-            { "q": "What does an estimate cost?", "a": "Estimates are free, and so are onsite inspections. You can ask what something will cost before you decide." },
+            { "q": "Do I need a whole new system, or can you fix what I have?", "a": "That depends on what failed, and someone has to look. Customers mention being told in plain words which it was, with the options laid out when replacement was the answer." },
+            { "q": "What does an estimate cost?", "a": "We list free estimates and onsite inspections." },
             { "q": "Which brands do you work on?", "a": "We specialize in Daikin heating and air, and we service all brands of furnaces and air conditioners." },
-            { "q": "Do you work on heat pumps and geothermal systems?", "a": "Yes. Heat pumps and geothermal are on our list along with furnaces and air conditioners. Call and tell us what you have." },
-            { "q": "Is maintenance worth it?", "a": "A check before the season is how small problems get caught early. We offer preventive maintenance and a winter efficiency check." },
+            { "q": "Do you work on heat pumps and geothermal systems?", "a": "Heat pumps are on our list, and geothermal appears in our site menu. Call and tell us what you have." },
+            { "q": "Do you offer maintenance?", "a": "We list preventive maintenance and a winter efficiency check. Call and ask what fits your system." },
             { "q": "How do I reach you?", "a": "Call (402) 483-2665 or email coolconceptsne@gmail.com. The fastest way is to call." }
           ]
         },
         {
           "type": "callBand",
           "heading": "Call Cool Concepts About Your Furnace or AC",
-          "text": "Call (402) 483-2665 and tell us what the system is doing. We'll get someone out to find what failed, explain it, and lay out your options before you decide."
+          "text": "Call (402) 483-2665 and tell us what the system is doing. We'll talk through what comes next."
         }
       ]
     },
@@ -193,9 +193,9 @@
       "hero": {
         "eyebrow": "Air conditioning, Lincoln",
         "h1": "AC Repair in Lincoln, NE — Cool Concepts",
-        "sub": "The house is warming up and the air isn't cold. Call (402) 483-2665, tell us what the unit is doing, and we'll get someone out to find what failed.",
+        "sub": "The house is warming up and the air isn't cold. Call (402) 483-2665, tell us what the unit is doing, and we'll talk through what comes next.",
         "primaryCta": { "label": "Call (402) 483-2665", "action": "call" },
-        "secondaryCta": { "label": "Request an Estimate", "action": "contact" },
+        "secondaryCta": { "label": "Call or email", "action": "contact" },
         "image": {
           "slot": "ac-repair-hero",
           "alt": "A technician checking an outdoor air conditioner beside a Lincoln home",
@@ -212,9 +212,9 @@
           "type": "split",
           "heading": "What Happens When You Call About Your AC",
           "body": [
-            "You tell us what the unit is doing: not cooling, running but warm, not starting, making a noise. We get someone out to look at it.",
-            "He finds the failed part and explains it in words you can follow, so you know what went wrong before any work starts. If the answer is a repair, you hear about the repair. If the unit is done, you hear that too, along with your options.",
-            "When a replacement is the answer, the estimate is free, and an onsite inspection comes first."
+            "You tell us what the unit is doing: not cooling, running but warm, not starting, making a noise. Then we talk about what comes next.",
+            "Customers mention a technician who found the failed part and explained it in words they could follow, and who laid out the options when a new unit was on the table.",
+            "If it comes to a replacement, ask about our free estimates and onsite inspections."
           ],
           "image": {
             "slot": "airflow-vent",
@@ -232,14 +232,14 @@
           "type": "prose",
           "heading": "What Usually Goes Wrong With a Central Air Conditioner",
           "body": [
-            "A short list of parts accounts for most no-cooling calls. Ice on the refrigerant line, water around the indoor unit, an outdoor fan that isn't spinning or a breaker that trips each time it starts are all signs to stop and call.",
+            "Ice on the refrigerant line, water around the indoor unit, an outdoor fan that isn't spinning or a breaker that trips each time it starts are all signs to stop and call.",
             "If you see ice or water, turn the system off. A struggling air conditioner can turn a small repair into a bigger one."
           ],
           "items": [
-            { "title": "A weak capacitor", "text": "It gives the compressor and the fan motor the jolt to start. When it fades, the unit hums and won't run. This is one of the most common repairs, and one of the less costly." },
+            { "title": "A weak capacitor", "text": "It gives the compressor and the fan motor the jolt to start. When it fades, the unit hums and won't run." },
             { "title": "A frozen coil", "text": "A dirty filter or a blocked coil chokes the airflow until ice builds up. Thawing the coil is the easy part. The repair is finding out why it froze." },
-            { "title": "Low refrigerant", "text": "An air conditioner doesn't use refrigerant up, so low means a leak. Topping it off without fixing the leak buys a short break." },
-            { "title": "A fan or compressor motor on its way out", "text": "A slow or noisy motor is a warning. Replacing one early is a smaller job than replacing it after it quits." },
+            { "title": "Low refrigerant", "text": "An air conditioner doesn't use refrigerant up, so low means a leak." },
+            { "title": "A fan or compressor motor on its way out", "text": "A slow or noisy motor is a warning worth a call." },
             { "title": "A thermostat that isn't telling the unit to run", "text": "Dead batteries or a bad connection can look just like a failed air conditioner. It's worth ruling out." }
           ]
         },
@@ -252,14 +252,14 @@
           "type": "prose",
           "heading": "Repair or Replace Your Air Conditioner?",
           "body": [
-            "Here's a rule you can check. If the problem is a capacitor, a motor or a coil that needs cleaning, repair is the answer, and it costs far less than a new system.",
-            "If the unit is old, repairs keep stacking up or the compressor has failed, that's when to price a new one. A large repair bill on an old unit is often money better put toward a replacement.",
-            "You'll hear which side you're on, including when the answer is to repair. When it's time to replace, we replace air conditioners and heat pumps, and we service all brands."
+            "A capacitor, a motor or a coil that needs cleaning is a repair.",
+            "If the unit is old, repairs keep stacking up or the compressor has failed, that's when to ask about a new one.",
+            "Ask us which side you're on. When it's time to replace, we offer replacement, and we service all brands."
           ]
         },
         {
           "type": "review",
-          "quote": "We were stuck without air for four days, dealing with a warranty company (AHS) and the contractor they assigned was dragging their heels. James stepped in, ordered the part immediately, and had our AC back up and running within a day",
+          "quote": "James is the definition of professional. He’s always thorough, respectful, and takes the time to explain exactly what’s wrong and what needs to be done.",
           "name": "Miss H."
         },
         {
@@ -296,19 +296,19 @@
         },
         {
           "type": "faq",
-          "heading": "Questions Lincoln Homeowners Ask About AC Repair",
+          "heading": "Questions About AC Repair",
           "items": [
-            { "q": "Will you try to sell me a new air conditioner?", "a": "Not before we've found what failed. A part that fixes it is a repair. A unit that's done gets a plain answer, and the estimate on a replacement is free." },
+            { "q": "Do I need a new air conditioner?", "a": "A technician has to look to know. Customers mention a part found and explained, and clear options when a new unit was the answer." },
             { "q": "Do you work on my brand?", "a": "We service all brands of furnaces and air conditioners, and we specialize in Daikin." },
-            { "q": "Do you repair heat pumps and geothermal systems?", "a": "Yes. Both are on our list. Tell us what yours is doing when you call." },
-            { "q": "What does an estimate cost?", "a": "Free estimates, and onsite inspections too. Ask before you decide anything." },
+            { "q": "Do you repair heat pumps and geothermal systems?", "a": "Heat pumps are on our list, and geothermal is in our site menu. Tell us what yours is doing when you call." },
+            { "q": "What does an estimate cost?", "a": "Free estimates and onsite inspections are both on our list. Call and ask." },
             { "q": "Can I email instead of calling?", "a": "You can email coolconceptsne@gmail.com, but when the AC is out the fastest way to reach us is to call (402) 483-2665." }
           ]
         },
         {
           "type": "callBand",
           "heading": "Call Cool Concepts About Your Air Conditioner",
-          "text": "If your AC isn't cooling, call (402) 483-2665. Tell us what it's doing, and we'll get someone out to find what failed before anyone talks about replacing it."
+          "text": "If your AC isn't cooling, call (402) 483-2665. Tell us what it's doing and we'll go from there."
         }
       ]
     },
@@ -321,7 +321,7 @@
       "hero": {
         "eyebrow": "Contact Cool Concepts",
         "h1": "Contact Cool Concepts in Lincoln, NE",
-        "sub": "If your heat or air has quit, the fastest way to reach us is to call. Tell us what the system is doing and we'll get someone out to look at it.",
+        "sub": "If your heat or air has quit, the fastest way to reach us is to call. Tell us what the system is doing and we'll talk through what comes next.",
         "primaryCta": { "label": "Call (402) 483-2665", "action": "call" },
         "image": {
           "slot": "contact-hero",
@@ -358,13 +358,13 @@
           "type": "prose",
           "heading": "Where Cool Concepts Is and Who We Serve",
           "body": [
-            "We're at 3701 Touzalin Avenue, Lincoln, NE 68507, and we serve Lincoln and eastern Nebraska. Not sure we reach your address? Call (402) 483-2665 and ask."
+            "We're at 3701 Touzalin Avenue, Lincoln, NE 68507, and we serve Lincoln and eastern Nebraska. Call (402) 483-2665 if you're unsure whether that includes your address."
           ]
         },
         {
           "type": "callBand",
           "heading": "Tell Us What the Furnace or AC Is Doing",
-          "text": "Call (402) 483-2665. We'll get someone out to look at it and tell you what we found."
+          "text": "Call (402) 483-2665 and describe the problem. We'll go from there."
         }
       ]
     }

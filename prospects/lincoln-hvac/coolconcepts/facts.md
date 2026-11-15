@@ -70,3 +70,6 @@ Compiled 2026-11-15. Each line cites a URL on the site unless marked otherwise. 
 - Financing: does the business offer any?
 - Licenses and insurance. Warranty terms.
 - Remove the "Request An Estimate" button link that 404s and the GenR8 footer credit in the demo?
+
+## Re-check 2026-11-15 (QA fix pass)
+- Playwright on https://coolconceptsne.com/contact/: "Request An Estimate" still links to /request-an-estimate/, which returns 404 (the "Request A Quote" links return 200).

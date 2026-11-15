@@ -5,27 +5,35 @@ This is the shape every contact-form message follows. It's the same structure as
 ```
 Hey <Business> team,
 
-Your reviews tell the same story: <the one specific thing several customers say, in plain words>. <One concrete customer detail, as that customer described it>. My daughter and I build websites for service businesses, so we made you a mockup built around it:
+Your reviews tell the same story: <the one specific thing several customers say, in plain words>. <One concrete customer detail, as that customer described it>. We build websites for service businesses, so we made you a mockup built around it:
 
 https://<slug>.websitepreview.fluidframemarketing.com/?utm_source=form
 
 Note: It'll look a lot better with your logo and images on it! Lol
 
-The preview opens with a recent case study, then walks through why each page is built the way it is. One thing we'd fix: <one real, checkable problem on their current site, from audit.md>.
+The preview walks through why each page is built the way it is. One thing we'd fix: <one real, checkable problem on their current site, from audit.md, re-checked on the live site the day the message is written>.
 
-We built your <service page 1> and <service page 2> pages as examples, and we'd love to build the rest. Which brands or manufacturers are you certified with?
-
-By the way, our contact form system would have recognized this as a solicitation, and you wouldn't have even seen it.
+We built your homepage and your <service> page as examples, and we'd love to build the rest.
 
 How'd we do on your company vibe?
+
+Not interested? Reply "no thanks" and you won't hear from me again.
 
 Josh
 Fluid Frame Marketing
 ```
 
+**Changes on 11/15 (FF Architect, after the independent QA pass):**
+- The opt-out line is required in every message.
+- The "Which brands or manufacturers are you certified with?" question is removed: it presumes certifications no source states.
+- The "our contact form system would have recognized this as a solicitation" line is removed.
+- "My daughter and I build websites…" is now **an optional variant only**, used if Josh confirms it. The default is "We build websites for service businesses…". The approval block shows the variant.
+- "The preview opens with a recent case study" is removed, because the SRA figures are off the strategy pages until Bailey and Josh OK them.
+- Email sends (no form) use the same message with `utm_source=email`.
+
 **Form fields the sender fills (real identity only):** Josh Lenz · josh@fluidframemarketing.com · (417) 373-2773 · Fluid Frame Marketing. Subject, if the form asks: "A website mockup for <Business>".
 
-**Short version** (only for forms that cap the message length, usually 600 characters): the greeting, the one specific, the link, the "logo and images" note, the one fix, the solicitation line, and the sign-off.
+**Short version** (only for forms that cap the message length, usually 600 characters): the greeting, the one specific, the link, the "logo and images" note, the one fix, the opt-out line, and the sign-off.
 
 ## Rules the sender enforces (`scripts/send-outreach.mjs`, tested end to end by `scripts/test-send-outreach.mjs`)
 - **One submission per business, ever.** `outreach/sent-ledger.json` is keyed by the site's domain and checked before every attempt.

@@ -19,6 +19,8 @@ Listing data from the brief: phone (309) 699-3333; place ID ChIJSVg4Ir9dCogRQ_1J
 - **Google address (reviews.json place data):** 2200 W Altorfer Dr Ste D1, Peoria, IL 61615. Conflict: the Google address has "Ste D1"; the site has no suite. Minor, but the demo should use one format.
 - **Google phone (reviews.json):** (309) 699-3333, matches the brief.
 
+- **Re-check 2026-11-15 (QA, Playwright and curl):** the phone is not a real conflict. The static HTML of every page checked shows 309-699-3333 (curl, no scripts; the phone icon's aria-label also says 309-699-3333). In a browser, a script swaps the visible number and every tel: link to 309-324-5317 (call-tracking style). A reader without scripts sees 699-3333; a browser sees 324-5317. Do not claim the site and Google "show different numbers". The demo uses (309) 699-3333. The contact page says 24/7 service and lists "24/7 After Hours Emergency Service" under the hours.
+
 ## 3. Service area (as the site states it)
 - **Residential:** Bartonville, Brimfield, Canton, Carlock, Chillicothe, Danvers, Delevan, Dunlap, East Peoria, Edelstein, Edwards, El Paso, Eureka, Germantown Hills, Hopedale, Mackinaw, Mapleton, Metamora, Morton, Mossville, Pekin, Peoria, Peoria Heights, Roanoke, Tremont, Washington (https://www.tsipeoria.com/).
 - **Commercial:** a longer list of towns from Addison to Waukegan, including Chicago, Rockford, Springfield, Bloomington, Decatur, Joliet, Naperville (https://www.tsipeoria.com/). The list includes "New Lennox", which is a town, not a brand.

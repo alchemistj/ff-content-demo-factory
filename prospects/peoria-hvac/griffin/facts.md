@@ -18,6 +18,8 @@ Listing data from the brief: phone (309) 676-0808; place ID ChIJKbeJYLZZCogRU0Rj
 - **Google address (reviews.json place data):** 1007 W Detweiller Dr, Peoria, IL 61615. Matches the site.
 - **Email:** douggriffinheatcool@gmail.com, a personal Gmail address (https://www.griffinheatingcooling.com/contact-us).
 
+- **Re-check 2026-11-15 (QA, Playwright 390 px):** scrollWidth 768 on /, /maintenance-plan-agreement and /contact-us; no tel link visible in the header. The maintenance plan page still says members "never pay after hours, weekend or holiday rates, only $75.00 for any service calls".
+
 ## 3. Service area (as the site states it)
 - **Homepage "Areas" widget** (labelled "View Service Area", https://www.griffinheatingcooling.com/): Peoria, Dunlap, Pekin, Washington, Chillicothe, Metamora, Creve Coeur, Edwards, Hopewell, Peoria Heights, Morton, Germantown Hills, Princeville, Edelstein, East Peoria, Elmwood, Mackinaw, Mapleton, Bartonville, Brimfield, Tremont, Hanna City, Trivoli, Marquette Heights, West Peoria. The number after each name (for example "Peoria (138)") is shown by the widget; its meaning is not stated. Unverified.
 - **About page:** "servicing the Peoria area since 1963" (https://www.griffinheatingcooling.com/about-us).
