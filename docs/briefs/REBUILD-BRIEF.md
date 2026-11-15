@@ -1,5 +1,14 @@
 # Brief: rebuild ONE demo to Josh's bar (11/15 evening)
 
+## READ FIRST: the examples
+
+1. **The words of Josh's 4 client websites are the model:** Window Dudes, SRA Roofing & Gutters, Greene Planet and Evolve Exteriors. Their copy is in ff-content-demo-factory `examples/approved-copy/`.
+2. **The 12 Lovable builds are the model for demos.** A human QA'd every one of them heavily. They're listed, with live .lovable.app URLs, in ff-content-demo-factory `docs/reference-sites.md`.
+3. **The rules are in ff-astro-demos `docs/demo-definition-of-done.md`:** home 550+ words, each service page 700+, no fact said twice, and everything else in that file.
+4. **Every writer reads all three before writing. Every reviewer compares each page side by side with the closest example and fails anything weaker.** Never use other Astro demos (Wichita or any other) as models.
+
+---
+
 Josh reviewed this demo and judged it not good enough to send, even though QA passed it. QA checked facts and rules, not whether the page sells. You rewrite it from scratch to the bar set by 16 reference sites he approved.
 
 Work only in `/home/user/ff-content-demo-factory/prospects/<folder>/`. Write `usp.md` (update), `words.json` (new) and `outreach.md` (new). You may also save an untouched copy of the old words.json as `words-v1.json`. Run no git, send nothing, create no sessions.
