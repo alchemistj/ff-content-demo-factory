@@ -639,6 +639,18 @@
       "pulledAt": "2026-11-09T17:52:55.112Z"
     },
     {
+      "slug": "roettgers-lincoln",
+      "name": "Roettger’s Heating and Cooling",
+      "placeId": "ChIJTwl9pSvHwkYRTF703Btkkf4",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 169,
+        "withText": 66,
+        "ratingOnly": 9
+      },
+      "pulledAt": "2026-11-15T03:14:39.860Z"
+    },
+    {
       "slug": "sc-marketing-technologies",
       "name": "SC Marketing Technologies LLC",
       "placeId": "ChIJiWeNBQxcq6oRDHLT3Zz3mkY",
