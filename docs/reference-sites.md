@@ -1,16 +1,16 @@
 # Reference sites: the quality bar
 
-Status: lookup, 2026-11-15. ASSIGNMENT.md (line 72) says the quality bar is "the 16 reference sites (12 Lovable builds Josh QA'd by hand, plus 4 client sites), listed in `docs/reference-sites.md`." This file is that list.
+Status: lookup, 2026-11-15. The quality bar is 3 client sites (Josh will name a 4th) + 12 Lovable builds (ASSIGNMENT.md once said "16 reference sites"; that count included Evolve in error), listed in this file.
 
 What is confirmed and what is not:
 
-- **Client examples (4): confirmed.** Window Dudes, SRA Roofing & Gutters, Greene Planet and Evolve Exteriors are the four model sites. Evolve's copy is in `examples/approved-copy/evolve-exteriors/homepage.md`, but `examples/approved-copy/README.md` and `SOURCE_MANIFEST.md` list only the first three. Evolve is missing from both.
+- **Client examples (3, Josh will name a 4th): confirmed.** Window Dudes, SRA Roofing & Gutters and Greene Planet are the model sites. Evolve Exteriors is a Wichita demo prospect, not a client; its draft is in `examples/demo-drafts/`.
 - **Lovable builds (12): 10 confirmed, 2 open.** Ten repos each carry `docs/demo-standard/upgrade-standard.md`, which says "Josh QA'd the words, Charis QA'd the design." Those ten are listed as confirmed below. No file in any repo or doc lists the exact twelve. The last two slots are open. The candidates are in the section "Open Lovable slots" and none is confirmed.
 - **Do not confuse with the approved-copy pages.** `examples/approved-copy/` holds twelve customer-facing pages. Those are four pages for each of the three Springfield sites (Window Dudes, SRA, Greene Planet). They are not twelve Lovable sites.
 
 Paths are relative to the root of each local checkout. The local checkouts are in `/home/user/<repo>`. The `.lovable.app` URLs come from each repo's README where one exists, and otherwise from `ff-content-demo-factory/outreach/lovable-forms-2026-11-13.json` (`demoUrl`). No Vercel preview URL is recorded for any Lovable site.
 
-## The 16
+## The 15 (3 client sites + 12 Lovable builds)
 
 | # | Name | Trade | Group | Local repo | Live or preview URL | Evidence |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -27,9 +27,8 @@ Paths are relative to the root of each local checkout. The local checkouts are i
 | 11 | Window Dudes | Windows and doors (Springfield, MO) | Client | `/home/user/window-dudes` | https://www.windowdudesllc.com (live) | Confirmed: `examples/approved-copy/README.md` and `SOURCE_MANIFEST.md` (canonical `main` @ `5a3019ac`) |
 | 12 | SRA Roofing & Gutters | Roofing and gutters (Springfield, MO) | Client | `/home/user/sra-roofing-website` | https://sra-roofing-website-mlulb84dr-josh-lenzs-projects.vercel.app (reviewed preview); live www.sraroofs.com | Confirmed: `examples/approved-copy/README.md` and `SOURCE_MANIFEST.md` (preview SHA `fde339ca`) |
 | 13 | Greene Planet | Mold inspection and remediation (Springfield, MO) | Client | `/home/user/greene-planet-website` | https://greene-planet-website.vercel.app (canonical render; not the Duda site) | Confirmed: `examples/approved-copy/README.md` and `SOURCE_MANIFEST.md` (`main` @ `f9047501`) |
-| 14 | Evolve Exteriors | Exterior remodeling: windows, siding, patio doors (Wichita, KS) | Client | none local (`ff-astro-demos` holds the demo) | none recorded | Confirmed by `ASSIGNMENT.md` line 72 and `examples/approved-copy/evolve-exteriors/homepage.md`. Not listed in the approved-copy README or manifest. |
-| 15 | Ozark Chiropractic | Chiropractic (Ozark, MO) | Lovable (candidate) | `/home/user/ozark-chiropractic-mockup` | https://ozark-chiropractic-mockup.lovable.app | Candidate: see "Open Lovable slots" |
-| 16 | Shanna Powell Glow | Health coaching, peptide therapy (Springfield, MO) | Lovable (candidate) | `/home/user/shanna-powell-glow` | https://shanna-powell-glow.lovable.app | Candidate: see "Open Lovable slots" |
+| 14 | Ozark Chiropractic | Chiropractic (Ozark, MO) | Lovable (candidate) | `/home/user/ozark-chiropractic-mockup` | https://ozark-chiropractic-mockup.lovable.app | Candidate: see "Open Lovable slots" |
+| 15 | Shanna Powell Glow | Health coaching, peptide therapy (Springfield, MO) | Lovable (candidate) | `/home/user/shanna-powell-glow` | https://shanna-powell-glow.lovable.app | Candidate: see "Open Lovable slots" |
 
 ## Open Lovable slots (the 12th and 11th)
 
@@ -148,17 +147,11 @@ Routing: the Vite repos wire routes in the file named under "Route wiring". "/" 
 - Approved copy (reference): `examples/approved-copy/greene-planet/homepage.md`, `springfield-mold-inspection-testing.md`, `springfield-black-mold-remediation.md`, `springfield-contact.md`, `_chrome.md`
 - Routes: `/` (homepage, not `/springfield/`), `/springfield/mold-inspection-testing/`, `/springfield/black-mold-remediation/`, `/springfield/contact/`
 
-### 14. Evolve Exteriors (client, no local repo)
-- Homepage (approved copy): `examples/approved-copy/evolve-exteriors/homepage.md`. This is the only Evolve page in the approved set.
-- Full words package: `ff-astro-demos/templates/demo/fixtures/evolve.words.json`
-- Built demo: `ff-astro-demos/clients/evolve/dist/` (HTML only; the source is not in the checkout)
-- Routes (from the built demo): `/`, `/home/`, `/contact/`, `/window-replacement-wichita-ks/`, `/siding-patio-doors-wichita-ks/`
-
-### 15. Ozark Chiropractic (candidate, `/home/user/ozark-chiropractic-mockup`)
+### 14. Ozark Chiropractic (candidate, `/home/user/ozark-chiropractic-mockup`)
 - Homepage: `src/pages/Home.tsx`. Service pages: `src/pages/SportsInjury.tsx`, `src/pages/Sciatica.tsx`. Contact: `src/pages/Contact.tsx`.
 - Routes (`src/App.tsx`): `/`, `/sports-injury-chiropractor-ozark-mo`, `/sciatica-treatment-ozark-mo`, `/contact`. No strategy page.
 
-### 16. Shanna Powell Glow (candidate, `/home/user/shanna-powell-glow`)
+### 15. Shanna Powell Glow (candidate, `/home/user/shanna-powell-glow`)
 - Homepage: `src/pages/Index.tsx`. Service pages: `src/pages/Peptide.tsx`, `src/pages/HealthCoach.tsx`. Contact: `src/pages/Contact.tsx`.
 - Routes (`src/App.tsx`): `/`, `/peptide-therapy-springfield-mo`, `/health-coach-women-springfield-mo`, `/contact`. No strategy page.
 
@@ -179,6 +172,5 @@ Routing: the Vite repos wire routes in the file named under "Route wiring". "/" 
 
 ## Open items for Josh
 1. Name the last two Lovable builds (the QA'd twelve). Ozark and Shanna are the strongest candidates.
-2. Add Evolve to `examples/approved-copy/README.md` and `SOURCE_MANIFEST.md`. The Evolve folder exists, but both documents omit it.
-3. Confirm the A&D Mechanical service routes. The links point at pages that are not wired.
-4. Confirm the SRA Springfield homepage copy file. Only the route wrapper has been traced.
+2. Confirm the A&D Mechanical service routes. The links point at pages that are not wired.
+3. Confirm the SRA Springfield homepage copy file. Only the route wrapper has been traced.

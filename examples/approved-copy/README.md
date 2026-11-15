@@ -68,4 +68,3 @@ Canonical rendered Greene Planet build of `alchemistj/greene-planet-website` `ma
 
 Shared header and footer: [greene-planet/_chrome.md](greene-planet/_chrome.md).
 
-- **Evolve Exteriors** (client): `evolve-exteriors/homepage.md`, the approved homepage copy. It's one of Josh's 4 client websites and part of the model set.
