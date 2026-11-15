@@ -1,0 +1,332 @@
+{
+  "day": "2026-11-14",
+  "mode": "dry-run",
+  "results": [
+    {
+      "slug": "customassured",
+      "company": "Custom Assured Mechanical",
+      "formUrl": "https://customassured.com/contact",
+      "mode": "dry-run",
+      "approved": false,
+      "status": "dry run: filled, not submitted",
+      "reason": "invisible reCAPTCHA: will submit normally, hand send if blocked",
+      "fields": [
+        {
+          "label": "First Name(required)",
+          "value": "Josh"
+        },
+        {
+          "label": "Last Name(required)",
+          "value": "Lenz"
+        },
+        {
+          "label": "Email(required)",
+          "value": "josh@fluidframemarketing.com"
+        },
+        {
+          "label": "Sign up for news and updates",
+          "value": "(left alone)"
+        },
+        {
+          "label": "Subject(required)",
+          "value": "A website mockup for Custom Assured Mechanical"
+        },
+        {
+          "label": "Message(required)",
+          "value": "(the message)"
+        }
+      ],
+      "shots": [
+        "outreach-runs/2026-11-14/fw-lin-peo/dry-run/customassured-filled.png"
+      ],
+      "time": "2026-11-15T03:55:24.878Z",
+      "values": {
+        "firstName": "Josh",
+        "lastName": "Lenz",
+        "fullName": "Josh Lenz",
+        "email": "josh@fluidframemarketing.com",
+        "phone": "4173732773",
+        "company": "Fluid Frame Marketing",
+        "zip": "65804",
+        "message": "Hey Rod, Kim and the Custom Assured team,\n\nYour reviews tell the same story: the same technician comes back twice a year, and you call them when it's time. One customer says they try to send the same technicians out every time. My daughter and I build websites for service businesses, so we made you a mockup built around it:\n\nhttps://customassured-fortwayne.websitepreview.fluidframemarketing.com/?utm_source=form\n\nNote: It'll look a lot better with your logo and images on it! Lol\n\nThe preview opens with a recent case study, then walks through why each page is built the way it is. One thing we'd fix: your phone number isn't tappable on a phone, and your homepage doesn't show it at all.\n\nWe built your homepage and your HVAC maintenance page as examples, and we'd love to build the rest. Bryant is on your site. Which other brands or manufacturers are you certified with?\n\nBy the way, our contact form system would have recognized this as a solicitation, and you wouldn't have even seen it.\n\nHow'd we do on your company vibe?\n\nJosh\nFluid Frame Marketing",
+        "shortMessage": "Hey Rod, Kim and team, your reviews tell the same story: the same technician comes back twice a year, and you call them when it's time. We build websites for service businesses, so we made you a mockup: https://customassured-fortwayne.websitepreview.fluidframemarketing.com/?utm_source=form Lol, it'll look better with your logo. One fix: your phone number isn't tappable. How'd we do? Josh, Fluid Frame Marketing",
+        "subject": "A website mockup for Custom Assured Mechanical"
+      },
+      "captcha": "invisible"
+    },
+    {
+      "slug": "comforttechs",
+      "company": "ComfortTechs",
+      "formUrl": "https://www.comforttechs.com/contact-us",
+      "mode": "dry-run",
+      "approved": false,
+      "status": "dry run: filled, not submitted",
+      "reason": "",
+      "fields": [
+        {
+          "label": "First Name(required)",
+          "value": "Josh"
+        },
+        {
+          "label": "Last Name(required)",
+          "value": "Lenz"
+        },
+        {
+          "label": "Email Address(required)",
+          "value": "josh@fluidframemarketing.com"
+        },
+        {
+          "label": "Subject(required)",
+          "value": "A website mockup for ComfortTechs"
+        },
+        {
+          "label": "Message(required)",
+          "value": "(the message)"
+        },
+        {
+          "label": "Phone",
+          "value": "4173732773"
+        }
+      ],
+      "shots": [
+        "outreach-runs/2026-11-14/fw-lin-peo/dry-run/comforttechs-filled.png"
+      ],
+      "time": "2026-11-15T03:55:30.135Z",
+      "values": {
+        "firstName": "Josh",
+        "lastName": "Lenz",
+        "fullName": "Josh Lenz",
+        "email": "josh@fluidframemarketing.com",
+        "phone": "4173732773",
+        "company": "Fluid Frame Marketing",
+        "zip": "65804",
+        "message": "Hey ComfortTechs team,\n\nYour reviews tell the same story: when another company said replace it, you found the fix first. One customer said another company in town wanted a minimum of $2,000 to fix it and thought a whole new system made more sense. You resolved it for a small fraction of that. My daughter and I build websites for service businesses, so we made you a mockup built around it:\n\nhttps://comforttechs-lincoln.websitepreview.fluidframemarketing.com/?utm_source=form\n\nNote: It'll look a lot better with your logo and images on it! Lol\n\nThe preview opens with a recent case study, then walks through why each page is built the way it is. One thing we'd fix: three links on your homepage go to pages that don't exist, and the one we traced is named after a meditation retreat.\n\nWe built your AC repair page as an example, and we'd love to build the rest. Which brands or manufacturers are you certified with?\n\nBy the way, our contact form system would have recognized this as a solicitation, and you wouldn't have even seen it.\n\nHow'd we do on your company vibe?\n\nJosh\nFluid Frame Marketing",
+        "shortMessage": "Hey ComfortTechs team, your reviews tell the same story: when another company said replace it, you found the fix first. My daughter and I build websites for service businesses, so we made you a mockup built around it: https://comforttechs-lincoln.websitepreview.fluidframemarketing.com/?utm_source=form Note: It'll look a lot better with your logo and images on it! Lol One thing we'd fix: three homepage links go to pages that don't exist. Our contact form system would have recognized this as a solicitation, and you wouldn't have even seen it. Josh, Fluid Frame Marketing",
+        "subject": "A website mockup for ComfortTechs"
+      },
+      "captcha": "none"
+    },
+    {
+      "slug": "roettgers",
+      "company": "Roettger's Heating and Cooling",
+      "formUrl": "https://www.roettgersheatingandcooling.com/contact",
+      "mode": "dry-run",
+      "approved": false,
+      "status": "dry run: filled, not submitted",
+      "reason": "invisible reCAPTCHA: will submit normally, hand send if blocked",
+      "fields": [
+        {
+          "label": "First Name(required)",
+          "value": "Josh"
+        },
+        {
+          "label": "Last Name(required)",
+          "value": "Lenz"
+        },
+        {
+          "label": "Phone(required)",
+          "value": "4173732773"
+        },
+        {
+          "label": "Email(required)",
+          "value": "josh@fluidframemarketing.com"
+        },
+        {
+          "label": "Message(required)",
+          "value": "(the message)"
+        }
+      ],
+      "shots": [
+        "outreach-runs/2026-11-14/fw-lin-peo/dry-run/roettgers-filled.png"
+      ],
+      "time": "2026-11-15T03:55:33.457Z",
+      "values": {
+        "firstName": "Josh",
+        "lastName": "Lenz",
+        "fullName": "Josh Lenz",
+        "email": "josh@fluidframemarketing.com",
+        "phone": "4173732773",
+        "company": "Fluid Frame Marketing",
+        "zip": "65804",
+        "message": "Hey Matt and the Roettger's team,\n\nYour reviews tell the same story: Matt picks up, and a text tells people the technician is on the way. One customer said her A/C went out on Memorial Day weekend, Matt fit her in promptly, and he sent a text when he was headed to her house. My daughter and I build websites for service businesses, so we made you a mockup that leads with it:\n\nhttps://roettgers-lincoln.websitepreview.fluidframemarketing.com/?utm_source=form\n\nNote: It'll look a lot better with your logo and images on it! Lol\n\nThe preview opens with a recent case study, then walks through why each page is built the way it is. One thing we'd fix: your site shows no street address and no hours on any page, so someone with a dead AC can't tell if you're open.\n\nWe built your AC repair page as an example, and we'd love to build the rest. Which brands or manufacturers are you certified with?\n\nBy the way, our contact form system would have recognized this as a solicitation, and you wouldn't have even seen it.\n\nHow'd we do on your company vibe?\n\nJosh\nFluid Frame Marketing",
+        "shortMessage": "Hey Matt and the Roettger's team, your reviews tell the same story: Matt picks up, and a text tells people the technician is on the way. My daughter and I build websites for service businesses, so we made you a mockup that leads with it: https://roettgers-lincoln.websitepreview.fluidframemarketing.com/?utm_source=form Note: It'll look a lot better with your logo and images on it! Lol One thing we'd fix: your site shows no address or hours. Our contact form system would have recognized this as a solicitation, and you wouldn't have even seen it. Josh, Fluid Frame Marketing",
+        "subject": "A website mockup for Roettger's Heating and Cooling"
+      },
+      "captcha": "invisible"
+    },
+    {
+      "slug": "coolconcepts",
+      "company": "Cool Concepts",
+      "formUrl": "https://coolconceptsne.com/contact/",
+      "mode": "dry-run",
+      "approved": false,
+      "status": "hand send",
+      "reason": "required dropdown \"How did you find us?*\" needs a choice",
+      "fields": [
+        {
+          "label": "First",
+          "value": "Josh"
+        },
+        {
+          "label": "Last",
+          "value": "Lenz"
+        },
+        {
+          "label": "Email*",
+          "value": "josh@fluidframemarketing.com"
+        },
+        {
+          "label": "Phone*",
+          "value": "4173732773"
+        },
+        {
+          "label": "How did you find us?*",
+          "value": "(left alone)"
+        },
+        {
+          "label": "Message*",
+          "value": "(the message)"
+        }
+      ],
+      "shots": [
+        "outreach-runs/2026-11-14/fw-lin-peo/dry-run/coolconcepts-filled.png"
+      ],
+      "time": "2026-11-15T03:55:36.380Z",
+      "values": {
+        "firstName": "Josh",
+        "lastName": "Lenz",
+        "fullName": "Josh Lenz",
+        "email": "josh@fluidframemarketing.com",
+        "phone": "4173732773",
+        "company": "Fluid Frame Marketing",
+        "zip": "65804",
+        "message": "Hey Cool Concepts team,\n\nYour reviews tell the same story: when the AC or the furnace quits, someone gets there fast, finds the problem and explains it. One customer called at 9:15 and had James at the door by 9:35 for a furnace. My daughter and I build websites for service businesses, so we made you a mockup built around the homeowner side of that:\n\nhttps://coolconcepts-lincoln.websitepreview.fluidframemarketing.com/?utm_source=form\n\nNote: It'll look a lot better with your logo and images on it! Lol\n\nThe preview opens with a recent case study, then walks through why each page is built the way it is. One thing we'd fix: the Request An Estimate button on your contact page goes to a page that doesn't exist.\n\nWe built your AC repair page as an example, and we'd love to build the rest. Which brands or manufacturers are you certified with?\n\nBy the way, our contact form system would have recognized this as a solicitation, and you wouldn't have even seen it.\n\nHow'd we do on your company vibe?\n\nJosh\nFluid Frame Marketing",
+        "shortMessage": "Hey Cool Concepts team, your reviews tell the same story: when the AC or furnace quits, someone comes fast and explains the problem. My daughter and I build websites for service businesses, so we made you a mockup around it: https://coolconcepts-lincoln.websitepreview.fluidframemarketing.com/?utm_source=form Note: It'll look a lot better with your logo and images on it! Lol One fix: the Request An Estimate button on your contact page goes nowhere. Our contact form system would have recognized this as a solicitation, and you wouldn't have even seen it. Josh, Fluid Frame Marketing",
+        "subject": "A website mockup for Cool Concepts"
+      },
+      "captcha": "invisible"
+    },
+    {
+      "slug": "thermal",
+      "company": "Thermal Services, Inc.",
+      "formUrl": "https://www.tsipeoria.com/contact-us",
+      "mode": "dry-run",
+      "approved": false,
+      "status": "dry run: filled, not submitted",
+      "reason": "invisible reCAPTCHA: will submit normally, hand send if blocked",
+      "fields": [
+        {
+          "label": "First Name",
+          "value": "Josh"
+        },
+        {
+          "label": "Last Name",
+          "value": "Lenz"
+        },
+        {
+          "label": "Phone",
+          "value": "4173732773"
+        },
+        {
+          "label": "Email",
+          "value": "josh@fluidframemarketing.com"
+        },
+        {
+          "label": "Service Type",
+          "value": "(left alone)"
+        },
+        {
+          "label": "Message",
+          "value": "(the message)"
+        }
+      ],
+      "shots": [
+        "outreach-runs/2026-11-14/fw-lin-peo/dry-run/thermal-filled.png"
+      ],
+      "time": "2026-11-15T03:55:44.054Z",
+      "values": {
+        "firstName": "Josh",
+        "lastName": "Lenz",
+        "fullName": "Josh Lenz",
+        "email": "josh@fluidframemarketing.com",
+        "phone": "4173732773",
+        "company": "Fluid Frame Marketing",
+        "zip": "65804",
+        "message": "Hey Thermal Services team,\n\nYour reviews tell the same story: people call you when it can't wait, even on a Sunday or at 10 PM. One customer's AC failed after hours, and you told them upfront that a night visit would cost much more than waiting until the next day, so they chose to wait. My daughter and I build websites for service businesses, so we made you a mockup built around it:\n\nhttps://thermal-peoria.websitepreview.fluidframemarketing.com/?utm_source=form\n\nNote: It'll look a lot better with your logo and images on it! Lol\n\nThe preview opens with a recent case study, then walks through why each page is built the way it is. One thing we'd fix: your site shows 309-324-5317 while your Google listing shows (309) 699-3333, so callers can reach different numbers.\n\nWe built your AC repair page as an example, and we'd love to build the rest. Which brands or manufacturers are you certified with?\n\nBy the way, our contact form system would have recognized this as a solicitation, and you wouldn't have even seen it.\n\nHow'd we do on your company vibe?\n\nJosh\nFluid Frame Marketing",
+        "shortMessage": "Hey Thermal Services team, your reviews show you answer when it can't wait: a Sunday heat wave, a 10 PM call, an after-hours AC call where the cost came first. We built a mockup around it: https://thermal-peoria.websitepreview.fluidframemarketing.com/?utm_source=form (it'll look better with your logo and images! Lol). One fix: your site and Google list different phone numbers. Our form system would have flagged this as a solicitation, so you wouldn't have seen it. How'd we do? Josh, Fluid Frame Marketing",
+        "subject": "A website mockup for Thermal Services, Inc."
+      },
+      "captcha": "invisible"
+    },
+    {
+      "slug": "jgroofing",
+      "company": "JG Roofing and Company",
+      "formUrl": "https://www.jgroofingco.com/peoria",
+      "mode": "dry-run",
+      "approved": false,
+      "status": "dry run: filled, not submitted",
+      "reason": "",
+      "fields": [
+        {
+          "label": "Name",
+          "value": "Josh Lenz"
+        },
+        {
+          "label": "Phone",
+          "value": "4173732773"
+        },
+        {
+          "label": "Email",
+          "value": "josh@fluidframemarketing.com"
+        },
+        {
+          "label": "Project Details",
+          "value": "(the message)"
+        }
+      ],
+      "shots": [
+        "outreach-runs/2026-11-14/fw-lin-peo/dry-run/jgroofing-filled.png"
+      ],
+      "time": "2026-11-15T03:55:48.673Z",
+      "values": {
+        "firstName": "Josh",
+        "lastName": "Lenz",
+        "fullName": "Josh Lenz",
+        "email": "josh@fluidframemarketing.com",
+        "phone": "4173732773",
+        "company": "Fluid Frame Marketing",
+        "zip": "65804",
+        "message": "Hey JG Roofing team,\n\nYour reviews tell the same story: Amanda and Jose explain every step, including the insurance claim. One customer wrote that you \"took the time to explain every single step\" and helped them understand \"exactly what was happening with our insurance company the whole way through.\" My daughter and I build websites for service businesses, so we made you a mockup built around it:\n\nhttps://jgroofing-peoria.websitepreview.fluidframemarketing.com/?utm_source=form\n\nNote: It'll look a lot better with your logo and images on it! Lol\n\nThe preview opens with a recent case study, then walks through why each page is built the way it is. One thing we'd fix: on a phone, your pages are 1225 pixels wide on a 390 pixel screen, so people have to scroll sideways to read them.\n\nWe built your homepage and your roof replacement page as examples, and we'd love to build the rest. Which brands or manufacturers are you certified with?\n\nBy the way, our contact form system would have recognized this as a solicitation, and you wouldn't have even seen it.\n\nHow'd we do on your company vibe?\n\nJosh\nFluid Frame Marketing",
+        "shortMessage": "Hey JG Roofing team, your reviews tell the same story: Amanda and Jose explain every step, including the insurance claim. We built a mockup around it: https://jgroofing-peoria.websitepreview.fluidframemarketing.com/?utm_source=form (it'll look better with your logo and images! Lol). One fix: on a phone your pages run 1225 pixels wide on a 390 pixel screen. Our form system would have flagged this as a solicitation, so you wouldn't have seen it. How'd we do? Josh, Fluid Frame Marketing",
+        "subject": "A website mockup for JG Roofing and Company"
+      },
+      "captcha": "none"
+    },
+    {
+      "slug": "pioneer",
+      "company": "Pioneer Roofing",
+      "formUrl": "https://roofingpeoria.net/contact-us/",
+      "mode": "dry-run",
+      "approved": false,
+      "status": "hand send",
+      "reason": "could not fill the form: no message box found on the form",
+      "fields": [],
+      "shots": [
+        "outreach-runs/2026-11-14/fw-lin-peo/dry-run/pioneer-error.png"
+      ],
+      "time": "2026-11-15T03:55:54.490Z",
+      "values": {
+        "firstName": "Josh",
+        "lastName": "Lenz",
+        "fullName": "Josh Lenz",
+        "email": "josh@fluidframemarketing.com",
+        "phone": "4173732773",
+        "company": "Fluid Frame Marketing",
+        "zip": "65804",
+        "message": "Hey Pioneer Roofing team,\n\nYour reviews tell the same story: friendly, responsive people who are fair and transparent. One customer wrote that you \"sat down with me, informed me of what needed to be done with my attic venting repairs and the job was done wonderfully!\" My daughter and I build websites for service businesses, so we made you a mockup built around it:\n\nhttps://pioneer-peoria.websitepreview.fluidframemarketing.com/?utm_source=form\n\nNote: It'll look a lot better with your logo and images on it! Lol\n\nThe preview opens with a recent case study, then walks through why each page is built the way it is. One thing we'd fix: the Phone button on your town pages dials (321) 399-2147, while the rest of your site shows (309) 865-5471, so a caller from a town page reaches a different number.\n\nWe built your homepage and your metal roofing page as examples, and we'd love to build the rest. Which brands or manufacturers are you certified with?\n\nBy the way, our contact form system would have recognized this as a solicitation, and you wouldn't have even seen it.\n\nHow'd we do on your company vibe?\n\nJosh\nFluid Frame Marketing",
+        "shortMessage": "Hey Pioneer Roofing team, your reviews tell the same story: friendly, responsive, fair and transparent. We built a mockup around it: https://pioneer-peoria.websitepreview.fluidframemarketing.com/?utm_source=form (it'll look better with your logo and images! Lol). One fix: the Phone button on your town pages dials (321) 399-2147, not (309) 865-5471. Our form system would have flagged this as a solicitation, so you wouldn't have seen it. How'd we do? Josh, Fluid Frame Marketing",
+        "subject": "A website mockup for Pioneer Roofing"
+      }
+    }
+  ]
+}

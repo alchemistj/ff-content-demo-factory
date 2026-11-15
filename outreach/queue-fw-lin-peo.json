@@ -1,0 +1,63 @@
+{
+  "sender": {
+    "firstName": "Josh",
+    "lastName": "Lenz",
+    "fullName": "Josh Lenz",
+    "email": "josh@fluidframemarketing.com",
+    "phone": "4173732773",
+    "company": "Fluid Frame Marketing",
+    "zip": "65804"
+  },
+  "note": "Fort Wayne / Lincoln / Peoria batch, 11/15. Every entry approved:false until Josh says go AND the demo has the QA reviewer's PASS. Hand sends (not in this queue): JD Kuhn (email justin@jdkuhnheating.com), Sandhill (required robot checkbox + street address), Griffin (visible reCAPTCHA).",
+  "entries": [
+    {
+      "slug": "customassured",
+      "company": "Custom Assured Mechanical",
+      "prospect": "prospects/fortwayne-hvac/customassured",
+      "formUrl": "https://customassured.com/contact",
+      "approved": false
+    },
+    {
+      "slug": "comforttechs",
+      "company": "ComfortTechs",
+      "prospect": "prospects/lincoln-hvac/comforttechs",
+      "formUrl": "https://www.comforttechs.com/contact-us",
+      "approved": false
+    },
+    {
+      "slug": "roettgers",
+      "company": "Roettger's Heating and Cooling",
+      "prospect": "prospects/lincoln-hvac/roettgers",
+      "formUrl": "https://www.roettgersheatingandcooling.com/contact",
+      "approved": false
+    },
+    {
+      "slug": "coolconcepts",
+      "company": "Cool Concepts",
+      "prospect": "prospects/lincoln-hvac/coolconcepts",
+      "formUrl": "https://coolconceptsne.com/contact/",
+      "approved": false
+    },
+    {
+      "slug": "thermal",
+      "company": "Thermal Services, Inc.",
+      "prospect": "prospects/peoria-hvac/thermal",
+      "formUrl": "https://www.tsipeoria.com/contact-us",
+      "approved": false
+    },
+    {
+      "slug": "jgroofing",
+      "company": "JG Roofing and Company",
+      "prospect": "prospects/peoria-roofing/jgroofing",
+      "formUrl": "https://www.jgroofingco.com/peoria",
+      "approved": false
+    },
+    {
+      "slug": "pioneer",
+      "company": "Pioneer Roofing",
+      "prospect": "prospects/peoria-roofing/pioneer",
+      "formUrl": "https://roofingpeoria.net/contact-us/",
+      "approved": false
+    }
+  ]
+}
