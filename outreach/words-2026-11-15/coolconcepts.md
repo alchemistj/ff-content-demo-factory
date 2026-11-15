@@ -8,7 +8,7 @@
 
 Built for Cool Concepts, Lincoln, NE
 
-Your Google reviews keep describing the same visit: someone arrives quickly, finds what failed and explains it. Your current site doesn't say that anywhere. We built a home page, two service pages and a contact page that lead with it, and this page shows what we changed and why.
+Your Google reviews keep describing the same visit: someone arrives quickly, finds what failed and explains it. Your current site doesn't lead with it. We built a home page, two service pages and a contact page that lead with it, and this page shows what we changed and why.
 
 We kept the demo to heating and cooling for homes. Your commercial kitchen and refrigeration work would get its own pages in a full build.
 
@@ -16,7 +16,7 @@ We kept the demo to heating and cooling for homes. Your commercial kitchen and r
 
 ### Why we led with "Found. Explained. Your call."
 
-Heating and cooling fail at bad times, and the first question is whether anyone is coming. The next is whether the person who comes will tell you what is wrong or just sell you a new system. Your reviews answer both questions, so the demo opens on the answers: a technician at the door, the cause found, the options explained, the decision left with the homeowner.
+Heating and cooling fail at bad times, and the first question is whether anyone is coming. Your reviews answer it, so the demo opens on the answer: a technician at the door, the cause found, the options explained, the decision left with the homeowner.
 
 ### The demo, page by page
 
@@ -39,7 +39,7 @@ Heat pump and geothermal pages, a preventive maintenance page, and a commercial 
 #### 2. Furnace Repair
 
 **Current site problem**
-- There is no furnace page. Heating is a word in the menu on the home page, and the Repair & Service page covers heating, cooling and kitchen equipment together.
+- There is no furnace page. Heating is a word on the home page, and the Repair & Service page covers heating, cooling and kitchen equipment together.
 - The Repair & Service page title is "Appliance Repair Services | Refrigeration Repair NE | Cool Concepts". Someone searching for furnace repair in Lincoln wouldn't find a match.
 - Ten of your 14 pages have no H1 heading.
 
@@ -81,14 +81,12 @@ A single working quote request, tied to the email address you pick, and a Google
 ### What a full build includes
 
 #### Gets you found
-- Page titles and headings built on Lincoln and the service
-- Google Business Profile matched to the site
+- Titles and headings built on Lincoln and the service
 - A page per service so each one can rank
 
 #### Earns their trust
 - Real reviews placed beside the claims they prove
 - Your Daikin specialty and warranty work, once confirmed
-- Photos that show the work
 
 #### Turns visitors into calls
 - A call button on the first screen on every page
@@ -96,7 +94,6 @@ A single working quote request, tied to the email address you pick, and a Google
 - Your hours, once confirmed
 
 #### Keeps working after launch
-- Fast pages on phones
 - Seasonal updates for the first cold snap and the first hot week
 - New reviews added as they arrive
 
@@ -167,7 +164,7 @@ Having your heating and cooling maintained costs less than a breakdown, and our 
 
 ### Heat or air out? Call us.
 
-We serve homes and businesses across eastern Nebraska from 3701 Touzalin Avenue in Lincoln. Call (402) 483-2665 and tell us what your system is doing.
+We serve homes and businesses across eastern Nebraska. Call (402) 483-2665 and tell us what your system is doing.
 
 **Buttons:** Call (402) 483-2665 | Request a Quote
 
@@ -209,10 +206,10 @@ Age alone doesn't settle it. Just because a furnace is old doesn't mean it doesn
 ### Winter questions
 
 #### How often should I change my furnace filter?
-Check it every month and replace it at least every 90 days. If you run the unit more than normal, or the unit is older, change it more often. A filter covered in dust is ready to go. A clean filter helps the furnace heat more efficiently and cuts the dust in your home.
+Check it every month and replace it at least every 90 days. If you run the unit more than normal, or the unit is older, change it more often. A good test is dust: if the filter is covered in it, replace it. A clean filter helps the furnace heat more efficiently and cuts the dust in your home.
 
 #### Which filter should I buy?
-Most homes do well with a medium-efficiency pleated filter, rated MERV 5 to 13. Flat-panel filters keep the furnace running efficiently but aren't built for allergies. A filter rated MERV 14 or higher can put added stress on your system, and HEPA filters need significant updates to the system first.
+Most homes do well with a medium-efficiency pleated filter, rated MERV 5 to 13. Flat-panel filters keep the furnace running efficiently but aren't built for allergies. A filter rated MERV 14 or higher can put added stress on your system, and HEPA filters aren't recommended unless the system has had significant updates.
 
 #### Where does my furnace vent, and what should I check?
 Know where your gas furnace vents out of your home. After snow and wind, check that the vent is clear of snow and debris. Check indoor registers too, and keep furniture and rugs off them.
@@ -268,11 +265,13 @@ If the AC isn't running, check that the thermostat is set to cool and below the 
 
 > "In 100 degree heat and a broken ac, we called Cool Concepts on a Friday night at 7pm and they came right on time at 10am on Saturday morning--despite being booked up for the day. He was able to solve the issue quickly and was extremely easy to work with (and even took his shoes off when he came inside.) we have found our hvac guys. Cool concepts is legit." — Marcus P.
 
-### Your options, laid out
+### Getting to you
 
-Many AC calls end with a choice: repair now, or replace. When you call us, we tell you what we found and what each route involves. Alisa M. is in the reviews for exactly that.
+When your AC is out, we work to get to your home fast and to be there when we say we will. If there's more than one way to fix it, we tell you each one and what it involves. A repair using parts for your current unit or a replacement, the decision is yours.
 
 > "Called on Sunday - was here on Monday to fix the air!  Got it fixed in about 30 minutes.  James is very nice, and let us know the different options we could do.  Thanks again!" — Alisa M.
+
+> "Awesome service!  We came home today from a 10-day vacation to find our A/C not working and the house very warm.  Jimmy was at our house within the hour to get us up and running.  Very thankful for Cool Concepts and a quick response on weekend night at dinner time!" — S M.
 
 ### AC out? Call us.
 
@@ -293,7 +292,9 @@ Call (402) 483-2665 and tell us what the AC is doing.
 
 (402) 483-2665
 
-If it's urgent, please call. Tell us what your system is doing, the brand if you know it, and roughly how old it is. We'll tell you what we think is going on and what happens next.
+If it's urgent, please call. Tell us what your system is doing, the brand if you know it, and roughly how old it is. We'll be straight with you about what we think is going on and what happens next.
+
+> "James (Cool Concepts) is one of those guys that will come at the drop of a hat, take a look at the situation and then be open and honest with you about your situation. Then he also accomplishes the work quickly and expertly. I couldn't ask for more!" — Brian R.
 
 ### Where to find us
 
@@ -305,17 +306,14 @@ We serve eastern Nebraska.
 
 > "I've used Cool Concepts for years and would not trust anyone else. James and his team are extremely knowledgeable and have even helped with an easy fix over the phone instead of charging us an after-hours service charge. I would highly recommend them!" — Samantha C.
 
-### Not sure who to call?
-
-If it's your furnace, your air conditioner or your heat pump, call us. We also service commercial HVAC. Tell us what you've got and we'll point you the right way.
-
 ### Send us a message
 
-Prefer to write? Use Request a Quote and tell us what's going on. Include your phone number so we can call you back.
+Prefer to write? [Request a quote](/request-a-quote/) and tell us what's going on. Include your phone number so we can call you back.
 
 ## Notes for Ruth (not page copy)
 
-- Word counts: see the table at the end of this file.
+- Word counts (headings, buttons and quotes included): Strategy about 970. Home about 625 (target 550+, met). Furnace Repair about 740 (700+, met). AC Repair about 730 (700+, met). Contact about 235 (target 250, about 6% short; the site gives no hours, no email we can print and no second office, so it is not padded).
+- Service pages: Furnace Repair and AC Repair are the two main residential money services. Reviews about furnace and AC failures are the largest group, and the site's own tips posts and Replacement page back them. The site has no residential furnace or AC page of its own, so these two lean on reviews and the tips posts rather than site service copy.
 - Credentials used: none. Daikin: the site says "authorized Daikin dealer" (repair-service.md), but facts.md marks it Unverified because Daikin's dealer locator has not been checked for ZIP 68507. The copy says only "we specialize in Daikin heating and air", which is the home page's own sentence. No NATE, BBB, licence or insurance claim appears because the site states none.
-- Left out on purpose: the "Official Dealer of" footer line (unclear, Unverified); "24/7 service" (written for restaurants and businesses; residential unconfirmed); the Daikin warranty-work line; any hours (none stated); "over 20 years experience" (the site also says "since 2005", which we used once in the trust bar; both are site claims with no registry check); the Petersen "payment plan" (no financing offer found, so no financing line); the "Most repairs can be done in the same day" FAQ (it answers an appliance question); the dryer-vent, gas-dryer and Nest thermostat reviews (not services the site lists); reviews that mention other companies (Miss H., Bill F. in part). Both email addresses are left out until confirmed.
-- Reviews used (each once): Brittany W., Kristi A., Devan M. (home); Rocky A., Krishelle S., Max W. (furnace); Andrea F., Bill F., Marcus P., Alisa M. (AC); Samantha C. (contact).
+- Left out on purpose: the "Official Dealer of" footer line (unclear, Unverified); "24/7 service" (written for restaurants and businesses; residential unconfirmed); the Daikin warranty-work line; any hours (none stated); "over 20 years experience" (the site also says "since 2005", which we used once in the trust bar; both are site claims with no registry check); the Petersen "payment plan" (no financing offer found, so no financing line); the "Most repairs can be done in the same day" FAQ (it answers an appliance question); the dryer-vent, gas-dryer and Nest thermostat reviews (not services the site lists); reviews that mention other companies (Miss H.; the sentence about another company is trimmed out of Bill F.'s quote). Both email addresses are left out until confirmed.
+- Reviews used (each once; trims are whole consecutive sentences): Brittany W., Kristi A., Devan M. (home); Rocky A., Krishelle S., Max W. (furnace); Andrea F., Bill F., Marcus P., Alisa M. (AC); Samantha C. and Brian R. (contact).

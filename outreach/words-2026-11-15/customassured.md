@@ -184,31 +184,27 @@ Kim handles the scheduling of our service calls, so the call that books your vis
 
 ### The Technicians Who Come to Your Door
 
-Casey manages our service department, and our service technicians are Jacob W and Lance. Your service visits are handled by our own service department, and you can reach them through the same office that schedules your visit.
+Casey manages our service department, and our service technicians are Jacob W and Lance.
 
 > "Have used Custom Assured Mechanical since the system was installed in 2011. Have had nothing but excellent service during this time. Lance is our guy. He knows our system and is very thorough with his inspection and cleaning of the system. He's very personable, conscientious, more like a member of our family." — Linda R.
 
 ### Your Furnace, Your Air Conditioner and Your Humidifier
 
-We install and service furnaces, air conditioners and whole-home humidifiers, so one company can look after all of your equipment.
+We repair any brand of HVAC equipment and install furnaces, air conditioners and, in most cases, whole-home humidifiers, so one company can look after all of your equipment.
 
 > "Custom Assured Mechanical improved the distribution of heat and air conditioning in our house and provides prompt, dependable and thorough annual maintenance of our furnace, air conditioner and humidifier. Therefore, we highly recommend them." — Frederick H.
 
 ### When Something Breaks Between Visits
 
-We repair any brand of HVAC equipment, so a breakdown does not have to start with a search for someone new. Often a breakdown is a repair, and we'll tell you when it is. If your system is old and the repairs keep coming, we'll price a [furnace and AC replacement](/furnace-and-ac-installation-fort-wayne-in) with you, and you decide.
+We repair any brand of HVAC equipment, so a breakdown does not have to start with a search for someone new. If your system is old and the repairs keep coming, we can price a [furnace and AC replacement](/furnace-and-ac-installation-fort-wayne-in) with you.
 
 > "I have been with Custom Assured for 22 years, I have been very happy with their service. They show up twice a year for maintenance, any problems I have had in between they take care of in a timely fashion Last Winter I discovered at 10pm that my furnace was not working, I called the emergency no. and the tech had just walked in the door from another emergency job, he said he would come out but I told him we would be fine until morning. He was at my door bright and early and got everything fixed up. I would recommend them anytime." — Scharee Z.
 
 ### A Visit From Start to Finish
 
-A maintenance visit is a technician looking after your equipment and answering your questions.
-
 > "We have used Custom Assured Mechanical since we moved to this area. Almost Four years ago. Service has been great. They come twice a year and inspect the equipment and clean the drains, answer our questions and replace the air filter. We could not be happier with their service." — Fred K.
 
-### Energy Savings Along the Way
-
-Our service professionals can suggest energy saving tips and improvements to put money back in your pocket.
+### A Plan That Pays Off
 
 > "I have been using Custom Assured for about 15 years. I signed up for the yearly service plan and it has totally paid off with twice a year maintenance on heating and air. At one point I had 3 service contracts for home, rental home, and lake cottage. Lance has been our technician for all these years and he is very knowledgeable! I switched from a large company to this small family run company and never looked back!" — Anne B.
 

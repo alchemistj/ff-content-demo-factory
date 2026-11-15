@@ -191,7 +191,7 @@ A ductless split system can boost your efficiency and maximize your space. We ar
 
 ### Installing a new system
 
-When your current air conditioner is old or beyond repair, we install a replacement. For a new home or building, we fit a system to your construction plans. The size has to match the space, so we size it before you buy. A technician visits, takes the measurements and gives you a quote. There is no charge for the sizing.
+When your current air conditioner is old or beyond repair, we install a replacement. For a new home or building, we fit a system to your construction plans. The size has to match the space, so we size it before you buy: a technician visits, takes the measurements and gives you a quote.
 
 ### Chillers for businesses
 
@@ -206,9 +206,6 @@ We recommend an air conditioner inspection at least once a year, preferably in s
 You do not need to do any work on your A/C in winter. If you want to protect it, put a tarp over the outdoor unit in fall and leave it on through winter, so snow and leaves stay out. Take the tarp off before you turn the condenser on again. Running the system with the tarp on can overheat the unit and damage it.
 
 ### Questions about air conditioning
-
-**Do you service every brand?**
-Yes. We service the components of all makes and models.
 
 **Do you clean air ducts?**
 No. Cleaning ducts correctly takes specialty equipment. We will gladly give you references if you need your ducts cleaned.
@@ -271,17 +268,6 @@ Geothermal units heat and cool with less energy, but they can fail like any othe
 
 Fall is the time to have your heating system checked, so it is ready before the first cold snap. Change your furnace filter every month in the meantime. A clean filter lets air circulate better and prevents backup.
 
-### Questions about heating
-
-**Do you work on every fuel type?**
-We repair electric, gas and propane furnaces.
-
-**Do you install in new construction?**
-Yes. We are equipped and trained to make recommendations and install heating systems in new homes and buildings.
-
-**What should I do when the heat stops overnight?**
-Call us at [(309) 699-3333](tel:+13096993333). Our emergency service runs 24/7.
-
 ## Contact — Contact Your Peoria, IL HVAC Company — Thermal Services Inc
 
 **Hero:**
@@ -291,7 +277,7 @@ Call us at [(309) 699-3333](tel:+13096993333). Our emergency service runs 24/7.
 
 ### If it's urgent, please call
 
-If you are in an emergency, please call us directly at [(309) 699-3333](tel:+13096993333). We have 24/7 service available, so our technicians can be there when you need them. After office hours, a phone call reaches us faster than an appointment request.
+If you are in an emergency, please call us directly at [(309) 699-3333](tel:+13096993333). We have 24/7 service available, so our technicians can be there when you need them. After office hours, please call rather than send an appointment request.
 
 ### Hours and address
 
@@ -315,7 +301,7 @@ If it is urgent, please call. If it can wait for the next business day, tell us 
 
 ## Notes for Ruth (not page copy)
 
-**Word counts** (page copy only, headings, buttons and quotes included): Strategy about 900 (limit 1,000). Home about 876. Air Conditioning about 782. Heating about 722 (cleared 700 only with the business heating and Jim B. quote; no padding). Contact about 303.
+**Word counts** (page copy only, headings, buttons and quotes included): Strategy about 900 (limit 1,000). Home about 876. Air Conditioning about 782. Heating about 640 after the reviewer removed a Q&A block that only repeated the page (about 9% under 700, logged short, not padded; the site has about 490 words on heating). Contact about 303.
 
 **Credentials and sources**
 - BBB A+ rating: "Thermal Services Inc has an A+ BBB rating" and "is BBB Accredited" on the BBB profile, https://www.bbb.org/us/il/peoria/profile/heating-contractors/thermal-services-inc-0724-1000021692 (checked 2026-11-15). The "top rating on its scale" wording comes from the BBB's A+ to F scale; we did not open BBB's own explainer page. The site also says "A+ BBB Rated Company".
