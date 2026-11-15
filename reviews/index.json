@@ -663,6 +663,18 @@
       "pulledAt": "2026-11-15T03:12:20.383Z"
     },
     {
+      "slug": "rainforcing-peoria",
+      "name": "Rainforcing Roofing and Exteriors PLLC",
+      "placeId": "ChIJGWELmO5bCogROV5ToysRJJI",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 58,
+        "withText": 55,
+        "ratingOnly": 3
+      },
+      "pulledAt": "2026-11-15T03:21:05.297Z"
+    },
+    {
       "slug": "ramco-building-maintenance",
       "name": "Ramco Building Maintenance",
       "placeId": "ChIJC16wA73juocRWG69v-0Gx04",
