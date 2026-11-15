@@ -1,0 +1,714 @@
+{
+  "kind": "google-review-pull",
+  "version": 1,
+  "slug": "griffin-peoria",
+  "place": {
+    "name": "Griffin HVAC",
+    "placeId": "ChIJKbeJYLZZCogRU0RjDWqjaI8",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Griffin%20HVAC&query_place_id=ChIJKbeJYLZZCogRU0RjDWqjaI8",
+    "address": "1007 W Detweiller Dr, Peoria, IL 61615",
+    "phone": "(309) 676-0808",
+    "rating": 4.9,
+    "totalReviewCount": 444
+  },
+  "pulledAt": "2026-11-15T03:29:23.751Z",
+  "requestedMax": 75,
+  "reviews": [
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25SSlJXUnFlaTFvVjJGME9IUkJPVll0UjJ0SlduYxAB",
+      "reviewer": "Kevin S.",
+      "rating": 5,
+      "text": "Techs at Griffin do a great job. Furnace went out right when it started to get cold. Josh got it back up and running in no time. Highly recommend.",
+      "publishedAt": "2026-11-13T17:24:59.068Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25SSlJXUnFlaTFvVjJGME9IUkJPVll0UjJ0SlduYxAB!2m1!1s0x0:0x8f68a36a0d634453!3m1!1s2@1:CAIQACodChtycF9oOnRJRWRqei1oV2F0OHRBOVYtR2tJWnc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNlNS1XeV9RRRAB",
+      "reviewer": "Jeremy G.",
+      "rating": 5,
+      "text": "They are the most accommodating and adaptable company.  I know I can expect the best communication coupled with their capability.",
+      "publishedAt": "2026-11-12T19:39:32.295Z",
+      "ownerResponse": "Much appreciated Jeremy, thank you:)",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNlNS1XeV9RRRAB!2m1!1s0x0:0x8f68a36a0d634453!3m1!1s2@1:CIHM0ogKEICAgICe5-Wy_QE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2poWlRrZGFZVnBDTlhaMlRGSm1YMlV5VG1SdE4zYxAB",
+      "reviewer": "James L.",
+      "rating": 5,
+      "text": "These guys are always great. Knowledgeable, professional, and very thorough.",
+      "publishedAt": "2026-11-09T19:46:28.860Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2poWlRrZGFZVnBDTlhaMlRGSm1YMlV5VG1SdE4zYxAB!2m1!1s0x0:0x8f68a36a0d634453!3m1!1s2@1:CAIQACodChtycF9oOjhZTkdaYVpCNXZ2TFJmX2UyTmRtN3c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2t4M1duVm1jMlJHUzJ0VlVrVkZRV3hGVWt4VWNtYxAB",
+      "reviewer": "Kay B.",
+      "rating": 5,
+      "text": "Josh did a great job.",
+      "publishedAt": "2026-11-04T22:59:25.084Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2t4M1duVm1jMlJHUzJ0VlVrVkZRV3hGVWt4VWNtYxAB!2m1!1s0x0:0x8f68a36a0d634453!3m1!1s2@1:CAIQACodChtycF9oOkx3WnVmc2RGS2tVUkVFQWxFUkxUcmc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT210WFJqWnpUMVpvTkVKeFdsOXFNMDh6YUZSbWExRRAB",
+      "reviewer": "Dustin M.",
+      "rating": 5,
+      "text": "Josh was great!",
+      "publishedAt": "2026-10-29T22:17:41.438Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT210WFJqWnpUMVpvTkVKeFdsOXFNMDh6YUZSbWExRRAB!2m1!1s0x0:0x8f68a36a0d634453!3m1!1s2@1:CAIQACodChtycF9oOmtXRjZzT1ZoNEJxWl9qM08zaFRma1E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tGamRWbFZRV1ZqYkRoV1RFcGpWWE56VFRkM1VHYxAB",
+      "reviewer": "Bob K.",
+      "rating": 5,
+      "text": "Quick response and great tech.",
+      "publishedAt": "2026-10-29T21:11:21.005Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tGamRWbFZRV1ZqYkRoV1RFcGpWWE56VFRkM1VHYxAB!2m1!1s0x0:0x8f68a36a0d634453!3m1!1s2@1:CAIQACodChtycF9oOkFjdVlVQWVjbDhWTEpjVXNzTTd3UGc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUMwMXU2VTJBRRAB",
+      "reviewer": "Nancy G.",
+      "rating": 5,
+      "text": "I couldn't ask for better service with any one else. Griffin HVAC is the most efficient, friendly and cooperative business to work with in our area.<br>Thanks Doiug and Cohen.",
+      "publishedAt": "2026-10-26T21:08:34.283Z",
+      "ownerResponse": "Thank you Nancy!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMwMXU2VTJBRRAB!2m1!1s0x0:0x8f68a36a0d634453!3m1!1s2@1:CIHM0ogKEICAgIC01u6U2AE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT201eVQwVnlNM1ZGV1dNeU5UTk5SM0pZVlhreVVIYxAB",
+      "reviewer": "joseph A.",
+      "rating": 5,
+      "text": "Josh was a true professional again. Thank you for getting our heat on before cold weather is here..",
+      "publishedAt": "2026-10-26T14:28:19.353Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT201eVQwVnlNM1ZGV1dNeU5UTk5SM0pZVlhreVVIYxAB!2m1!1s0x0:0x8f68a36a0d634453!3m1!1s2@1:CAIQACodChtycF9oOm5yT0VyM3VFWWMyNTNNR3JYVXkyUHc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xaRFFtSnhVVzAzWlU5MU0zRTNjWEJGTkdJeWJVRRAB",
+      "reviewer": "joy K.",
+      "rating": 5,
+      "text": "First time they were here. Did a great job inspecting the furnace.  Top notch work. Signed up for spring HVAC check as well.",
+      "publishedAt": "2026-10-16T20:17:59.553Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xaRFFtSnhVVzAzWlU5MU0zRTNjWEJGTkdJeWJVRRAB!2m1!1s0x0:0x8f68a36a0d634453!3m1!1s2@1:CAIQACodChtycF9oOlZDQmJxUW03ZU91M3E3cXBFNGIybUE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pVemNsSlBZWGRVTUhWMU9IUkVkM1ZRYzJFM1dYYxAB",
+      "reviewer": "Beverly G.",
+      "rating": 5,
+      "text": "Quick efficient service. Cohen was a great technician",
+      "publishedAt": "2026-10-16T16:27:51.301Z",
+      "ownerResponse": "Thank you for your positive feedback! We appreciate your support and are glad to hear you had a great experience with Griffin HVAC.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pVemNsSlBZWGRVTUhWMU9IUkVkM1ZRYzJFM1dYYxAB!2m1!1s0x0:0x8f68a36a0d634453!3m1!1s2@1:CAIQACodChtycF9oOjUzclJPYXdUMHV1OHREd3VQc2E3WXc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNUbjg3b01BEAE",
+      "reviewer": "Theresa J.",
+      "rating": 5,
+      "text": "The experience was good. The technician was courteous and efficient. Yes",
+      "publishedAt": "2026-10-15T23:23:16.143Z",
+      "ownerResponse": "Thank you for the positive feedback, Theresa! We're glad to hear that our technician provided you with courteous and efficient service:)",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNUbjg3b01BEAE!2m1!1s0x0:0x8f68a36a0d634453!3m1!1s2@1:CIHM0ogKEICAgICTn87oMA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNxa3ItNkxnEAE",
+      "reviewer": "Chad K.",
+      "rating": 5,
+      "text": "Always very friendly and quick service with great prices",
+      "publishedAt": "2026-10-13T20:42:05.171Z",
+      "ownerResponse": "Thank you sir!!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNxa3ItNkxnEAE!2m1!1s0x0:0x8f68a36a0d634453!3m1!1s2@1:CIHM0ogKEICAgICqkr-6Lg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pGU1gyVklMVVIxTlY5eUxYVlRUWGRRWVdSclJuYxAB",
+      "reviewer": "David R.",
+      "rating": 5,
+      "text": "Josh was great. A professional and explained everything he observed and what would be needed to resolve  the problem.",
+      "publishedAt": "2026-10-09T23:21:58.777Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pGU1gyVklMVVIxTlY5eUxYVlRUWGRRWVdSclJuYxAB!2m1!1s0x0:0x8f68a36a0d634453!3m1!1s2@1:CAIQACodChtycF9oOjFSX2VILUR1NV9yLXVTTXdQYWRrRnc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURYbGNHYWZ3EAE",
+      "reviewer": "Darin H.",
+      "rating": 5,
+      "text": "Great service",
+      "publishedAt": "2026-10-06T23:58:53.826Z",
+      "ownerResponse": "Thank you for your review:) We're glad to hear you had a great experience with our service. If you need anything in the future, feel free to reach out!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURYbGNHYWZ3EAE!2m1!1s0x0:0x8f68a36a0d634453!3m1!1s2@1:CIHM0ogKEICAgIDXlcGafw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUM4Nk55VGdnRRAB",
+      "reviewer": "Ray W.",
+      "rating": 5,
+      "text": "Doug and his assistant did a fall check on the heating system.  They were thorough and updated me on the process. Doug also checked the gas fireplace as they had turned off the gas earlier.  He restarted the pilot light and tested the system.  All is good.  Again, Griffith HVAC goes above and beyond with customer service.  I highly recommend them. Thanks Doug. We had to replace the air conditioner on 5-20-2024.  Doug and his technician were punctual and finished the job quickly.  Also a very good price as he made me an offer I couldn't refuse.  Five stars as always. Thanks Doug",
+      "publishedAt": "2026-10-05T20:53:17.799Z",
+      "ownerResponse": "Thank you!!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUM4Nk55VGdnRRAB!2m1!1s0x0:0x8f68a36a0d634453!3m1!1s2@1:CIHM0ogKEICAgIC86NyTggE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUN1dGRfRk93EAE",
+      "reviewer": "Bob R.",
+      "rating": 5,
+      "text": "+'Furnace went out 4:30 pm on New Years Eve. Called Griffin.  Josh showed up at 5:10 pm. knew   exactly how to fix and was done by 5:45 pm.<br>Amazing service!!!!. It needed a new igniter and had the part with him. Josh is very friendly and professional.<br>Great job Josh. Well done..<br>Latest job putting in a furnace inducer as always done on time, professional.  Josh is 'Idependable and does a great job.<br>Called Griffin on July 3rd, AC quit working on a 90 degree day. Chris showed up within an hour and fixed the problem for a reasonable price. Very friendly and knew exactly what to do. Great job.<br>September 8th. First cold night, turned on the furnace for the first time. Nothing, didn't work. I left a message and Josh showed up at an agreed time and BAM it's fixed. Josh is the best.<br>October 10th  Josh and Abby showed up for fall readiness inspection. As usual everything went  well. Griffin is the best<br>Did spring cleaning and service to AC. Another great job as always.<br>June 11th 26. Josh showed up for spring readiness maintenance. Good thing because we had problem in the making that he took care of. No worry now. Great job as always.<br>10/1/26. Furnace quit. Josh found problem in no time. Part was expensive<br>Labor very reasonable. Another great job.",
+      "publishedAt": "2026-10-01T21:24:47.720Z",
+      "ownerResponse": "Thank you for your review, we greatly appreciate it:)",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN1dGRfRk93EAE!2m1!1s0x0:0x8f68a36a0d634453!3m1!1s2@1:CIHM0ogKEICAgICutd_FOw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURqMjY3Tml3RRAB",
+      "reviewer": "Kathy M.",
+      "rating": 5,
+      "text": "Fast, efficient and fairly priced company!  Always 5 star!",
+      "publishedAt": "2026-09-29T22:21:05.298Z",
+      "ownerResponse": "Thank you:) We appreciate your feedback.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURqMjY3Tml3RRAB!2m1!1s0x0:0x8f68a36a0d634453!3m1!1s2@1:CIHM0ogKEICAgIDj267NiwE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnTUNZZ3Q2OThBRRAB",
+      "reviewer": "Marolyn W.",
+      "rating": 5,
+      "text": "Josh was very professional.  I appreciate the picture of the person coming to service our furnace prior to his arrival. He was on time.  He explained what he needed to do. Very professional.   Thank you.",
+      "publishedAt": "2026-09-28T15:28:42.237Z",
+      "ownerResponse": "Thank you for the wonderful feedback, Marolyn! We're glad to hear that you had such a positive experience with Chris and that you appreciated the notifications and introduction. It's always our goal to provide friendly and professional service.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTUNZZ3Q2OThBRRAB!2m1!1s0x0:0x8f68a36a0d634453!3m1!1s2@1:CIHM0ogKEICAgMCYgt698AE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2s1SlRDMW1VbUZGU25wUlRVRTBOV281V2xwRU0xRRAB",
+      "reviewer": "Jim R.",
+      "rating": 5,
+      "text": "on time good job priced right !!!",
+      "publishedAt": "2026-09-22T17:22:17.590Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2s1SlRDMW1VbUZGU25wUlRVRTBOV281V2xwRU0xRRAB!2m1!1s0x0:0x8f68a36a0d634453!3m1!1s2@1:CAIQACodChtycF9oOk5JTC1mUmFFSnpRTUE0NWo5WlpEM1E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pkSFdsaE1WVkIzYVRRemVYWTJlV1IzZFdWU1QyYxAB",
+      "reviewer": "Kristopher H.",
+      "rating": 5,
+      "text": "I would highly recommend Griffin HVAC for your HVAC needs.<br>My A/C went out at the start of a very hot Labor Day weekend and Doug from Griffin HVAC was able to come out that Saturday. He was able to quickly diagnose and fix the issue and get my A/C unit working again.  Great service!",
+      "publishedAt": "2026-09-06T05:06:44.119Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pkSFdsaE1WVkIzYVRRemVYWTJlV1IzZFdWU1QyYxAB!2m1!1s0x0:0x8f68a36a0d634453!3m1!1s2@1:CAIQACodChtycF9oOjdHWlhMVVB3aTQzeXY2eWR3dWVST2c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pSa2RETklNRU0zVDBOMlFtVnNibTF3YjJ0Wk1sRRAB",
+      "reviewer": "Joseph B.",
+      "rating": 5,
+      "text": "We where scheduled for 12, I was just about to go out to mow. When I saw he was on way. Worked out great. Thanks lots.",
+      "publishedAt": "2026-09-05T18:33:45.357Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pSa2RETklNRU0zVDBOMlFtVnNibTF3YjJ0Wk1sRRAB!2m1!1s0x0:0x8f68a36a0d634453!3m1!1s2@1:CAIQACodChtycF9oOjRkdDNIMEM3T0N2QmVsbm1wb2tZMlE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xSVFVFbzJWRzl1WldoVlJtNUJibVE1Wm1kRWVFRRAB",
+      "reviewer": "Monica S.",
+      "rating": 5,
+      "text": "Fast service on a blazing hot day",
+      "publishedAt": "2026-09-04T20:44:32.771Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xSVFVFbzJWRzl1WldoVlJtNUJibVE1Wm1kRWVFRRAB!2m1!1s0x0:0x8f68a36a0d634453!3m1!1s2@1:CAIQACodChtycF9oOlRTUEo2VG9uZWhVRm5BbmQ5ZmdEeEE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21oV1pYbE5iekZLVm1rNE1VbFNZVUZTV2poR2EzYxAB",
+      "reviewer": "Michelle C.",
+      "rating": 5,
+      "text": "Griffin vented a bathroom exhaust fan in my attic to an  exterior wall.  Was very impressed with how quickly Doug did the work.  Josh cleaned my HVAC unit including the blower which was filled with drywall dust from renovations.  I was so impressed and have signed up for their yearly maintenance plan. Pricing was fair which was much appreciated.  Thank you so much.",
+      "publishedAt": "2026-08-22T18:29:45.588Z",
+      "ownerResponse": "Thank you for the wonderful feedback! We're thrilled to hear that you were impressed with Doug and Josh's work, as well as the quick turnaround. We're glad you found our pricing fair and that you've decided to join our yearly maintenance plan. We appreciate your support and look forward to serving you again in the future!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21oV1pYbE5iekZLVm1rNE1VbFNZVUZTV2poR2EzYxAB!2m1!1s0x0:0x8f68a36a0d634453!3m1!1s2@1:CAIQACodChtycF9oOmhWZXlNbzFKVmk4MUlSYUFSWjhGa3c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUMtcl9paFJBEAE",
+      "reviewer": "Jigar P.",
+      "rating": 5,
+      "text": "Updated August 11, 2026<br>Call Griffin HVAC today morning to check the weird noise coming from my outside AC unit. Doug (owner) and Garrett came out and resolved the issue at a very reasonable cost. This is the 3rd time I have availed Giffin HVAC services and every single time I have been VERY happy with them.<br><br>June 2023-<br>Got our 17 year old furnace serviced today. Doug has a calm and cool demeanor. He is very professional and knowledgeable about HVAC system. Won't charge you for something that's not needed. He serviced our 17 old furnace, and while he was at it he noticed that my humidifier filter needed to be replaced (which I knew). He asked me if wanted it replaced. Just charged me for the filter, nothing else. Will definitely call  Griffin HVAC for all my future HVAC needs. Highly recommended.",
+      "publishedAt": "2026-08-11T17:41:21.559Z",
+      "ownerResponse": "Thank you, sir. My sincerest thanks for your review:)",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMtcl9paFJBEAE!2m1!1s0x0:0x8f68a36a0d634453!3m1!1s2@1:CIHM0ogKEICAgIC-r_ihRA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURqbS11WFh3EAE",
+      "reviewer": "Jason S.",
+      "rating": 5,
+      "text": "Fantastic and friendly service with great flexibility! I highly recommend Griffin for anyone with HVAC needs. I wish every company I dealt with provided a similar experience—A+!",
+      "publishedAt": "2026-08-06T19:06:15.359Z",
+      "ownerResponse": "Thank you so much for your feedback. We greatly appreciate your kind words:)",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURqbS11WFh3EAE!2m1!1s0x0:0x8f68a36a0d634453!3m1!1s2@1:CIHM0ogKEICAgIDjm-uXXw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUN4bHJyM1ZREAE",
+      "reviewer": "Jill T.",
+      "rating": 5,
+      "text": "Josh was great.  Not only did he service my furnace well, he helped me out with a problem.  Just before he arrived, my front door handle fell off.  I recently had spine surgery making the repair difficult for me.  I  figured I would have to get an new one.  He stopped and looked at it, got out a screw driver and fixed it in just a few minutes.   What a great guy!  I appreciate the help so much!",
+      "publishedAt": "2026-07-29T18:17:02.517Z",
+      "ownerResponse": "Thank you:)",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN4bHJyM1ZREAE!2m1!1s0x0:0x8f68a36a0d634453!3m1!1s2@1:CIHM0ogKEICAgICxlrr3VQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2twVVZHSjJVWGxaTnpkTFVEWTFNV05FY0haaFExRRAB",
+      "reviewer": "Tony G.",
+      "rating": 5,
+      "text": "Great job.  The air conditioner and furnace works great.",
+      "publishedAt": "2026-07-29T02:23:49.110Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2twVVZHSjJVWGxaTnpkTFVEWTFNV05FY0haaFExRRAB!2m1!1s0x0:0x8f68a36a0d634453!3m1!1s2@1:CAIQACodChtycF9oOkpUVGJ2UXlZNzdLUDY1MWNEcHZhQ1E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25KbVREbFRTVXBrYmpOWlFsOU5SRWxIY21aRVlrRRAB",
+      "reviewer": "JL X.",
+      "rating": 5,
+      "text": "Called in the morning and Josh arrived in the afternoon. He was great! Arrived on time and fixed my AC in a couple of hours on the hot and humid day. Really appreciate!!!",
+      "publishedAt": "2026-07-28T21:01:08.809Z",
+      "ownerResponse": "Thank you for the positive feedback! We're glad to hear that Josh was able to help you promptly and efficiently on such a hot day. Your satisfaction is our priority, and we appreciate your kind words!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25KbVREbFRTVXBrYmpOWlFsOU5SRWxIY21aRVlrRRAB!2m1!1s0x0:0x8f68a36a0d634453!3m1!1s2@1:CAIQACodChtycF9oOnJmTDlTSUpkbjNZQl9NRElHcmZEYkE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2w5R05qUnJTVnB6Y0RaTVNVNVNRMGs0ZEdreGRsRRAB",
+      "reviewer": "Melanie C.",
+      "rating": 5,
+      "text": "I have never had a negative experience with this company.  Technicians are always respectful, knowledgeable and do a wonderful job.",
+      "publishedAt": "2026-07-27T21:27:29.218Z",
+      "ownerResponse": "Thank you, Melanie! We appreciate your kind words and are thrilled to hear that you’ve always had a positive experience with our team. Respect and knowledge are important to us, and we’re glad they shine through in our service. Looking forward to serving you again in the future!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2w5R05qUnJTVnB6Y0RaTVNVNVNRMGs0ZEdreGRsRRAB!2m1!1s0x0:0x8f68a36a0d634453!3m1!1s2@1:CAIQACodChtycF9oOl9GNjRrSVpzcDZMSU5SQ0k4dGkxdlE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2taUFIyRlZlSFJ4V1RWTmVVVkVSUzB3ZFZoT1QxRRAB",
+      "reviewer": "Linda B.",
+      "rating": 5,
+      "text": "Tht young man  excellent 👌. Thank you  so much.",
+      "publishedAt": "2026-07-20T19:37:47.006Z",
+      "ownerResponse": "Thank you for your kind words, Linda! We're glad to hear you had a great experience with our team. Your satisfaction is important to us!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2taUFIyRlZlSFJ4V1RWTmVVVkVSUzB3ZFZoT1QxRRAB!2m1!1s0x0:0x8f68a36a0d634453!3m1!1s2@1:CAIQACodChtycF9oOkZPR2FVeHRxWTVNeUVERS0wdVhOT1E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21kalNGOXZRbDlKV2pCbFpEaDNVMGxGY0dNM1JYYxAB",
+      "reviewer": "Derek D.",
+      "rating": 5,
+      "text": "Josh was great. He was quick to diagnose the problem and find a solution. His advice on how to take care of my unit was great!",
+      "publishedAt": "2026-07-17T19:17:51.253Z",
+      "ownerResponse": "Thank you for your positive feedback, Derek. We're glad to hear that Josh was able to quickly diagnose the issue and provide helpful advice for your HVAC unit.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21kalNGOXZRbDlKV2pCbFpEaDNVMGxGY0dNM1JYYxAB!2m1!1s0x0:0x8f68a36a0d634453!3m1!1s2@1:CAIQACodChtycF9oOmdjSF9vQl9JWjBlZDh3U0lFcGM3RXc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tKM1RWUTJVRXB1V2xKUVVFdENPVlZNU0VnNFowRRAB",
+      "reviewer": "John C.",
+      "rating": 5,
+      "text": "Knew exactly what to do. Now it runs like new. Highly recommended",
+      "publishedAt": "2026-07-10T23:50:12.876Z",
+      "ownerResponse": "Thank you for the great feedback, John! We're thrilled to hear that your HVAC system is running like new. We appreciate your recommendation and look forward to assisting you again in the future!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tKM1RWUTJVRXB1V2xKUVVFdENPVlZNU0VnNFowRRAB!2m1!1s0x0:0x8f68a36a0d634453!3m1!1s2@1:CAIQACodChtycF9oOkJ3TVQ2UEpuWlJQUEtCOVVMSEg4Z0E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21aT2VsTXRWMGx6Y0V3MFdrRktaVkZzWWxaRGFrRRAB",
+      "reviewer": "Judith G.",
+      "rating": 5,
+      "text": "Josh Kibler was great. We are new homeowners in an older home and had no A/C in hot weather. He checked the system completely and explained how our system worked. He also showed us how to work our Nest thermostat. Will call Griffin HVAC when we need service.",
+      "publishedAt": "2026-07-04T11:58:21.761Z",
+      "ownerResponse": "Thank you for your wonderful review, Judith! We're glad to hear that Josh provided you with excellent service and helped you understand your HVAC system. It's great to know that you're satisfied with your experience.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21aT2VsTXRWMGx6Y0V3MFdrRktaVkZzWWxaRGFrRRAB!2m1!1s0x0:0x8f68a36a0d634453!3m1!1s2@1:CAIQACodChtycF9oOmZOelMtV0lzcEw0WkFKZVFsYlZDakE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tvdFltZDRZMjQzWTNkbVVTMVBjVU5RTFdNMFYxRRAB",
+      "reviewer": "Walter G.",
+      "rating": 5,
+      "text": "Great to do business with you.  Good service. Good price",
+      "publishedAt": "2026-07-03T19:22:24.753Z",
+      "ownerResponse": "Thank you for the positive feedback! We're glad to hear you had a great experience with our service and pricing. We appreciate your business and look forward to serving you again!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tvdFltZDRZMjQzWTNkbVVTMVBjVU5RTFdNMFYxRRAB!2m1!1s0x0:0x8f68a36a0d634453!3m1!1s2@1:CAIQACodChtycF9oOkotYmd4Y243Y3dmUS1PcUNQLWM0V1E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25oM1VYVm9kV1owU1RGRmJUWlZSVGhMVWpSR01GRRAB",
+      "reviewer": "Frank H.",
+      "rating": 5,
+      "text": "Josh was very professional and courteous.<br>Found the problem, fixed it and made sure all was in order. Thanks a bunch,  much appreciated!<br>Francisco",
+      "publishedAt": "2026-07-03T18:26:48.952Z",
+      "ownerResponse": "Thank you for your positive feedback, Francisco! We're thrilled to hear that Josh provided professional and courteous service. It's great to know he was able to resolve the issue and ensure everything was in order. We appreciate your support!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25oM1VYVm9kV1owU1RGRmJUWlZSVGhMVWpSR01GRRAB!2m1!1s0x0:0x8f68a36a0d634453!3m1!1s2@1:CAIQACodChtycF9oOnh3UXVodWZ0STFFbTZVRThLUjRGMFE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUM3NVpxTHNBRRAB",
+      "reviewer": "David P.",
+      "rating": 5,
+      "text": "Absolutely  exceptional",
+      "publishedAt": "2026-07-02T23:24:43.595Z",
+      "ownerResponse": "Thank you for your review:)  Your satisfaction is our top priority, and we look forward to serving you again in the future.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUM3NVpxTHNBRRAB!2m1!1s0x0:0x8f68a36a0d634453!3m1!1s2@1:CIHM0ogKEICAgIC75ZqLsAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pSTFkwUlBhSGsyYWt0b1gxUTVSMmRUTjFGRVdrRRAB",
+      "reviewer": "abhishek M.",
+      "rating": 5,
+      "text": "Excellent Serivce",
+      "publishedAt": "2026-07-02T16:14:16.740Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pSTFkwUlBhSGsyYWt0b1gxUTVSMmRUTjFGRVdrRRAB!2m1!1s0x0:0x8f68a36a0d634453!3m1!1s2@1:CAIQACodChtycF9oOjRLY0RPaHk2aktoX1Q5R2dTN1FEWkE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2kxdFdXSmlWbmxuWlZaWGFESlBjM2hNVHpkRlMyYxAB",
+      "reviewer": "Joseph M.",
+      "rating": 5,
+      "text": "Our technician (Josh) was knowledgeable and thorough. He was quickly able to locate the root cause of the problem and recommend a solution and did not try and upsell us on anything. He was helpful in letting us know how to prevent similar issues in the future.",
+      "publishedAt": "2026-07-01T23:44:44.304Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2kxdFdXSmlWbmxuWlZaWGFESlBjM2hNVHpkRlMyYxAB!2m1!1s0x0:0x8f68a36a0d634453!3m1!1s2@1:CAIQACodChtycF9oOi1tWWJiVnlnZVZXaDJPc3hMTzdFS2c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT213NFJVbFdUbVZJUzFaMU5rdEpjR05hY2tsb1VVRRAB",
+      "reviewer": "Chelsea W.",
+      "rating": 5,
+      "text": "Thankful for a quick response time for an assessment, and quickly provided an estimate as well as a date for replacement.",
+      "publishedAt": "2026-06-24T01:58:43.688Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT213NFJVbFdUbVZJUzFaMU5rdEpjR05hY2tsb1VVRRAB!2m1!1s0x0:0x8f68a36a0d634453!3m1!1s2@1:CAIQACodChtycF9oOmw4RUlWTmVIS1Z1NktJcGNackloUUE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2kxSlkySTFWMGRyUkd3elpWTjRVMHd0UzJ4cVpIYxAB",
+      "reviewer": "Ross S.",
+      "rating": 5,
+      "text": "Josh was excellent with our HVAC repair and went out of his way to make it as cost efficient as possible. His communication was thorough. We will use Griffin again in the future for maintenance and other needs.",
+      "publishedAt": "2026-06-22T18:54:17.816Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2kxSlkySTFWMGRyUkd3elpWTjRVMHd0UzJ4cVpIYxAB!2m1!1s0x0:0x8f68a36a0d634453!3m1!1s2@1:CAIQACodChtycF9oOi1JY2I1V0drRGwzZVN4U0wtS2xqZHc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNGM2JxWWZ3EAE",
+      "reviewer": "Julia D.",
+      "rating": 5,
+      "text": "Josh is awesome. He was very professional and kind. He did a thorough inspection on the AC. Really reasonable price also.",
+      "publishedAt": "2026-06-19T14:17:28.042Z",
+      "ownerResponse": "Thank you for your review, we greatly appreciate the opportunity to work for you",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNGM2JxWWZ3EAE!2m1!1s0x0:0x8f68a36a0d634453!3m1!1s2@1:CIHM0ogKEICAgICF3bqYfw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnTUNvOWZDRVVBEAE",
+      "reviewer": "Molly S.",
+      "rating": 5,
+      "text": "Always prompt, accommodating and friendly.",
+      "publishedAt": "2026-06-16T17:50:48.634Z",
+      "ownerResponse": "Thank you for your wonderful feedback, Molly! We appreciate your kind words and are glad to hear that you had a positive experience with our team. We look forward to serving you again in the future!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTUNvOWZDRVVBEAE!2m1!1s0x0:0x8f68a36a0d634453!3m1!1s2@1:CIHM0ogKEICAgMCo9fCEUA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xNeVUwSkhMVXRFV1VoZlVqbEZWRmRGV0daQ1QxRRAB",
+      "reviewer": "Kate G.",
+      "rating": 5,
+      "text": "Great service experience!",
+      "publishedAt": "2026-06-11T14:49:35.626Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xNeVUwSkhMVXRFV1VoZlVqbEZWRmRGV0daQ1QxRRAB!2m1!1s0x0:0x8f68a36a0d634453!3m1!1s2@1:CAIQACodChtycF9oOlMyU0JHLUtEWUhfUjlFVFdFWGZCT1E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnTURJcXJxRlpBEAE",
+      "reviewer": "Reed S.",
+      "rating": 5,
+      "text": "We had a great experience with Griffin HVAC. We needed our furnace replaced after it went out and they were fast and easy to get us a great quote. Did not feel like they were trying to up sell us at all, just get us what we need which was refreshing. They were able to get us in very soon with a great install team. We also had them add a whole house humidifier and they did a fantastic job with both.  Would highly recommend them to anyone!",
+      "publishedAt": "2026-06-10T19:22:10.270Z",
+      "ownerResponse": "Thank you for the fantastic feedback! It's great to hear that you had a positive experience with your furnace replacement and the installation of the humidifier. We strive to provide honest service and ensure our customers get exactly what they need. Your recommendation means a lot to us!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTURJcXJxRlpBEAE!2m1!1s0x0:0x8f68a36a0d634453!3m1!1s2@1:CIHM0ogKEICAgMDIqrqFZA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xGTFIyMUhhR0ZETUMxemFtRTBaRkpYTVd0ckxYYxAB",
+      "reviewer": "JayBo",
+      "rating": 5,
+      "text": "Recently moved to the area. Was looking for a good HVAC company for maintenance contract and a few other things. Looked around and found out it is hard to get anyone on the phone. Found Griffin and their reviews were great and their phone service had someone reach me in short order. It’s more of a smaller company which I like as I feel they will take better care of you. Service tech was outstanding.  Helpful and friendly.",
+      "publishedAt": "2026-06-08T13:48:03.483Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xGTFIyMUhhR0ZETUMxemFtRTBaRkpYTVd0ckxYYxAB!2m1!1s0x0:0x8f68a36a0d634453!3m1!1s2@1:CAIQACodChtycF9oOlFLR21HaGFDMC1zamE0ZFJXMWtrLXc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pKd09HWlRSalp1VVZwWGRGSmpNbDlJZWpodVZFRRAB",
+      "reviewer": "Lucille M.",
+      "rating": 5,
+      "text": "Always professional and detailed. They are also kind and willing to help anyway they can with my air-conditioning and furnace. He even went to the store to get filters for me and install one.",
+      "publishedAt": "2026-06-02T21:45:27.259Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pKd09HWlRSalp1VVZwWGRGSmpNbDlJZWpodVZFRRAB!2m1!1s0x0:0x8f68a36a0d634453!3m1!1s2@1:CAIQACodChtycF9oOjJwOGZTRjZuUVpXdFJjMl9IejhuVEE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURycGR2SXp3RRAB",
+      "reviewer": "Bette S.",
+      "rating": 5,
+      "text": "Excellent service",
+      "publishedAt": "2026-05-28T14:01:42.766Z",
+      "ownerResponse": "Thank you Bette:) we greatly appreciate you guys  and your feedback.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURycGR2SXp3RRAB!2m1!1s0x0:0x8f68a36a0d634453!3m1!1s2@1:CIHM0ogKEICAgIDrpdvIzwE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUN4c1luMWVBEAE",
+      "reviewer": "James R.",
+      "rating": 5,
+      "text": "Excellent service! Prompt, thorough, efficient,  and courteous.  I highly recommend Griffin!",
+      "publishedAt": "2026-05-26T22:18:42.326Z",
+      "ownerResponse": "Thank you sir:)",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN4c1luMWVBEAE!2m1!1s0x0:0x8f68a36a0d634453!3m1!1s2@1:CIHM0ogKEICAgICxsYn1eA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUN2Z1B5ajZBRRAB",
+      "reviewer": "Saurabh S.",
+      "rating": 5,
+      "text": "Great job done. Josh is really nice guy.",
+      "publishedAt": "2026-05-13T18:32:04.691Z",
+      "ownerResponse": "Thank you for the kind words! We're glad to hear you had a positive experience with Josh. Our team always aims to provide excellent service. We appreciate your feedback!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN2Z1B5ajZBRRAB!2m1!1s0x0:0x8f68a36a0d634453!3m1!1s2@1:CIHM0ogKEICAgICvgPyj6AE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25WWE5uUXdjbGROWnpacVQyMW5SRk0xVXkxR09GRRAB",
+      "reviewer": "Jeff B.",
+      "rating": 5,
+      "text": "The repairman came on time was polite and knowledgeable. After running several tests he determined the root cause of the issue. And while I am on the hook for a new AC unit ( the compressor and contactor are not working) this is no surprise, the unit is 30 years old. Glad we are getting 9tndone before the heat of summer!<br><br>The second visit included adding in the humidifier. That went exactly as promised time wise and cost, as it was paid for in the original contract. Doug was very courteous,and was able to explain what he was doing so I could understand it. Then he showed us how to operate the device. Thank you Doug, and Griffin HVAC!",
+      "publishedAt": "2026-05-06T18:24:51.224Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25WWE5uUXdjbGROWnpacVQyMW5SRk0xVXkxR09GRRAB!2m1!1s0x0:0x8f68a36a0d634453!3m1!1s2@1:CAIQACodChtycF9oOnVXNnQwcldNZzZqT21nRFM1Uy1GOFE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tsVVYycDZRVFJEU2pjelNFWnBSa1pDVFVsVlNGRRAB",
+      "reviewer": "Michael B.",
+      "rating": 5,
+      "text": "Griffin HVAC is always on time, professional, great with communication.<br>Good products that they stand behind.",
+      "publishedAt": "2026-05-06T12:49:25.451Z",
+      "ownerResponse": "Thank you for your feedback, Michael. We're glad to hear that you had a positive experience with our team and our products. Timeliness and communication are important to us, and we appreciate your support!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tsVVYycDZRVFJEU2pjelNFWnBSa1pDVFVsVlNGRRAB!2m1!1s0x0:0x8f68a36a0d634453!3m1!1s2@1:CAIQACodChtycF9oOklUV2p6QTRDSjczSEZpRkZCTUlVSFE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2w5RFNrMXJhRkoxUlZoQlJVdDBUMmR2VTBwWlExRRAB",
+      "reviewer": "Anthony S.",
+      "rating": 5,
+      "text": "Arrived right on time. Lowest estimate of 4 companies i checked, best warranty as well. Doog was extremely helpful and I am very happy wirh my choice",
+      "publishedAt": "2026-05-05T23:06:37.612Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2w5RFNrMXJhRkoxUlZoQlJVdDBUMmR2VTBwWlExRRAB!2m1!1s0x0:0x8f68a36a0d634453!3m1!1s2@1:CAIQACodChtycF9oOl9DSk1raFJ1RVhBRUt0T2dvU0pZQ1E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUR5aXZiRWZnEAE",
+      "reviewer": "John L.",
+      "rating": 5,
+      "text": "Sservice, was on time, and worked quickly and efficiently.  He prepared by checking previous work on the unit. Outstanding service.<br>John & Kathy",
+      "publishedAt": "2026-05-05T19:06:35.678Z",
+      "ownerResponse": "Thank you very much :)",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR5aXZiRWZnEAE!2m1!1s0x0:0x8f68a36a0d634453!3m1!1s2@1:CIHM0ogKEICAgIDyivbEfg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tSMlNERjFSVEJtV0VZMVFsVk5NM1IyWVZCMmJsRRAB",
+      "reviewer": "Ron S.",
+      "rating": 5,
+      "text": "The guys did s great job",
+      "publishedAt": "2026-05-02T02:16:42.602Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tSMlNERjFSVEJtV0VZMVFsVk5NM1IyWVZCMmJsRRAB!2m1!1s0x0:0x8f68a36a0d634453!3m1!1s2@1:CAIQACodChtycF9oOkR2SDF1RTBmWEY1QlVNM3R2YVB2blE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUM1eU0tU2l3RRAB",
+      "reviewer": "Chester M.",
+      "rating": 1,
+      "text": "Booked a maintenance appointment with Griffin HVAC last weekend for this Saturday using their website. The system allowed me to select a weekend time with no indication there were any restrictions.<br><br>Today, (the day before the appointment) it was canceled with the explanation that they don’t perform maintenance on weekends.<br><br>If that’s the policy, it needs to be clearly stated upfront. Don’t offer weekend scheduling online if you’re just going to cancel it later. This was a waste of time and poor communication.<br><br>(Previous review: Early, clean, professional, and reasonable.)",
+      "publishedAt": "2026-04-25T00:32:00.847Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUM1eU0tU2l3RRAB!2m1!1s0x0:0x8f68a36a0d634453!3m1!1s2@1:CIHM0ogKEICAgIC5yM-SiwE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21sTFRqaEROMVUyUVhKUVRWTkxPVzFuYWxsRFpHYxAB",
+      "reviewer": "Olivia W.",
+      "rating": 5,
+      "text": "The service providers arrived on time. completed the job made sure that it worked properly before leaving. They also noted an area that needed to be repaired and I have set up an appointment with them to do that. They will be my regular HVAC service providers",
+      "publishedAt": "2026-03-23T20:36:03.285Z",
+      "ownerResponse": "Thank you for the wonderful review, Olivia! We're glad to hear that you had a positive experience with our team. Timeliness and thoroughness are top priorities for us, and we're pleased to know you'll be choosing Griffin HVAC for your future needs. Looking forward to assisting you again soon!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21sTFRqaEROMVUyUVhKUVRWTkxPVzFuYWxsRFpHYxAB!2m1!1s0x0:0x8f68a36a0d634453!3m1!1s2@1:CAIQACodChtycF9oOmlLTjhDN1U2QXJQTVNLOW1nallDZGc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNfdU5QMnpBRRAB",
+      "reviewer": "Penny R.",
+      "rating": 5,
+      "text": "They are so great and always come very soon. Great price and rhey know their stuff!! Wouldn't use anyone else strongly recommend them!!!! 10 stars!!!!!!!",
+      "publishedAt": "2026-02-26T21:52:38.497Z",
+      "ownerResponse": "Thank you for the fantastic review! We're thrilled to hear that you had a great experience with our team. Your recommendation means a lot to us, and we look forward to serving you again in the future!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNfdU5QMnpBRRAB!2m1!1s0x0:0x8f68a36a0d634453!3m1!1s2@1:CIHM0ogKEICAgIC_uNP2zAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2twamREaGZSbU0zZEZKc05GaGtabE5XV2w5UWFIYxAB",
+      "reviewer": "Kayllene C.",
+      "rating": 5,
+      "text": "Josh saved the day coming to hook up my gas dryer! Seems like a simple thing but for my family it was huge. Thank you!",
+      "publishedAt": "2026-02-14T21:40:02.551Z",
+      "ownerResponse": "Thank you for your kind words, Kayllene! We're thrilled to hear that Josh was able to help with your gas dryer. It's always great to know that our services make a difference for our customers:)",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2twamREaGZSbU0zZEZKc05GaGtabE5XV2w5UWFIYxAB!2m1!1s0x0:0x8f68a36a0d634453!3m1!1s2@1:CAIQACodChtycF9oOkpjdDhfRmM3dFJsNFhkZlNWWl9QaHc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21OUlpWSmlURGRaU0ZGRVR6TTJVSFpPYm1WM05GRRAB",
+      "reviewer": "Kee",
+      "rating": 5,
+      "text": "Professional, quick, affordable, knowledgeable. Thank you!",
+      "publishedAt": "2026-02-13T20:25:06.287Z",
+      "ownerResponse": "Thank you for the positive feedback, Kee! We're glad to hear you had a great experience with our team. Your satisfaction means a lot to us!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21OUlpWSmlURGRaU0ZGRVR6TTJVSFpPYm1WM05GRRAB!2m1!1s0x0:0x8f68a36a0d634453!3m1!1s2@1:CAIQACodChtycF9oOmNRZVJiTDdZSFFETzM2UHZObmV3NFE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURldWRteFdBEAE",
+      "reviewer": "Patti F.",
+      "rating": 5,
+      "text": "It is rare to receive such excellent service and customer care at every level of a HVAC purchase and installation and follow up service and maintenance<br>The team at Griffin HVAC, lead by Doug, the owner, is most excellent and are highly recommended",
+      "publishedAt": "2026-02-03T23:03:21.917Z",
+      "ownerResponse": "Thank you very much Patti for your review:) We appreciate you and Mike, take care:)",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURldWRteFdBEAE!2m1!1s0x0:0x8f68a36a0d634453!3m1!1s2@1:CIHM0ogKEICAgIDeudmxWA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUR6d2NyWkdREAE",
+      "reviewer": "Kevin H.",
+      "rating": 5,
+      "text": "Very good experience",
+      "publishedAt": "2026-01-26T20:31:42.675Z",
+      "ownerResponse": "We're thrilled to hear you had a very good experience:) Thank you for choosing Griffin HVAC. Let us know if you need anything else in the future.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR6d2NyWkdREAE!2m1!1s0x0:0x8f68a36a0d634453!3m1!1s2@1:CIHM0ogKEICAgIDzwcrZGQ%7C%7C?hl=en-US",
+      "language": "en"
+    }
+  ],
+  "ratingOnly": [
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2kxMk0yMVBhMHhMWmxnelMySndMV2RoWVdKdllXYxAB",
+      "reviewer": "Steve W.",
+      "rating": 5,
+      "publishedAt": "2026-09-10T15:17:06.540Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pRMldrTjFkbEJHVjFabVVqUm1NVFV3Y0hCNVRIYxAB",
+      "reviewer": "Tenley D.",
+      "rating": 5,
+      "publishedAt": "2026-09-09T03:01:24.209Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2prMVJETkJSM2hzTUd4cGVHUXdjak5vVkZGVlFuYxAB",
+      "reviewer": "Kishan P.",
+      "rating": 4,
+      "publishedAt": "2026-07-30T22:10:01.533Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2toTmVEWnVUR2hOYkMwNGVIcDVVRTV4VW5Sa1ZHYxAB",
+      "reviewer": "Johnny S.",
+      "rating": 5,
+      "publishedAt": "2026-07-04T17:28:06.472Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2poaFJsWm1Va1JaV204NVNFaFJaazAwVmpCQ1VWRRAB",
+      "reviewer": "Derrick P.",
+      "rating": 5,
+      "publishedAt": "2026-07-02T22:36:05.813Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2kxM1lsbGhlWFJSZFRSM1pEazRURFpGZW5GMU0yYxAB",
+      "reviewer": "Angela K.",
+      "rating": 5,
+      "publishedAt": "2026-06-30T20:47:19.384Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25jNFFVcFlUMEZxYTJKNmMxSmlWMVI0WTAxSWQxRRAB",
+      "reviewer": "Eric E.",
+      "rating": 5,
+      "publishedAt": "2026-06-16T20:42:23.838Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pBNVQxOHdNV2hwT1dRMVIxcGlNWE5WYzNwaWNVRRAB",
+      "reviewer": "Lawrence W.",
+      "rating": 5,
+      "publishedAt": "2026-06-09T22:45:11.101Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25oS09FWXhTeTA0TUhnMVZUY3dVRWd0YzNWQlZrRRAB",
+      "reviewer": "David M.",
+      "rating": 5,
+      "publishedAt": "2026-06-04T23:30:54.758Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xWRmNIcGFMVloxTWs5MVozcE5XbmxYVFRGSGVrRRAB",
+      "reviewer": "Julie D.",
+      "rating": 5,
+      "publishedAt": "2026-04-18T01:06:36.112Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNhd3BDZDhRRRAB",
+      "reviewer": "Kristyn E.",
+      "rating": 5,
+      "publishedAt": "2026-04-16T00:47:15.731Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUMtOHBTQnJRRRAB",
+      "reviewer": "William F.",
+      "rating": 5,
+      "publishedAt": "2026-04-10T21:32:42.410Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xvNFIzWXpZek5OY2kxWFgxZGpNVzlZTWxWNlUyYxAB",
+      "reviewer": "Melissa S.",
+      "rating": 5,
+      "publishedAt": "2026-04-06T20:01:08.912Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT20weVFVMXNTRm96UzNwYVJEQmpUVXhFUjNaUE0zYxAB",
+      "reviewer": "Tsm-marcus L.",
+      "rating": 5,
+      "publishedAt": "2026-03-04T14:52:34.870Z"
+    }
+  ]
+}
