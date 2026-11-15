@@ -124,7 +124,7 @@ Fact line: Lincoln, NE · Family-Owned · Serving Eastern Nebraska
 
 # Roofer in Lincoln, NE — Sandhill Roofing
 
-Before we talk about a new roof, we look at yours. Dusty Rieck, who owns Sandhill Roofing, comes out, tells you what the roof needs and what it doesn't, and leaves the decision to you.
+Before we talk about a new roof, we look at yours. Honesty, integrity and education are how Dusty Rieck runs Sandhill Roofing. You get the information you need to make the best choice for your home.
 
 Buttons: Call (402) 890-6460 / Contact us
 
@@ -132,27 +132,26 @@ Buttons: Call (402) 890-6460 / Contact us
 
 ### We Look First, Then Tell You What the Roof Needs
 
-A roof problem usually starts with a question you can't answer from the ground. Is that stain a leak? Are those shingles worn out, or can two or three be fixed? We come out, look, and explain what we find in plain words. If a repair is all it needs, we say so. If it needs a new roof, we show you why and go through your options.
+A roof problem usually starts with a question you can't answer from the ground. Is that stain a leak? Are those shingles worn out, or can two or three be fixed? We come out to your property and assess your home, and we educate you on what we find so the choice is yours.
 
 Our three pillars are honesty, integrity and education. We take pride in teaching you enough about your roof to make the best choice for you, whether or not you choose us.
 
 ### What You Get When You Call
 
-- Dusty Rieck looks at your roof himself
-- A plain-words explanation of what we find, and answers to your questions
-- Your options laid out before you decide, from repair to replacement and from asphalt to steel
+- A site visit to assess your home, and follow-through from the first visit to the final inspection
+- Education on your roof, so you can make the best choice for you
+- Residential and commercial roofing installation and repair
 - A lifetime workmanship warranty on roofing, siding and gutters
 - A senior discount and a military and government employee discount
+- A free quote
 
 ### The Problems People Call Us About
 
-**A leak you can't place.** A stain on the ceiling doesn't always mean a bad roof. We look for where the water is getting in, and if it isn't the roof, we tell you.
+**Stains and leaks.** Water stains on ceilings or walls and visible leaks can mean a roof is breaking down. We come out and assess your home to see what's behind them.
 
-**Wind or hail damage.** We look at what the storm did and tell you whether it's a repair or a replacement, and we [handle the claim](/roof-insurance-claims-lincoln-ne/) with your carrier. 
+**Storm damage.** We handle storm damage repair, including siding and gutter replacement, and we [handle insurance claims](/roof-insurance-claims-lincoln-ne/) for you by working directly with your carrier.
 
-**A roof you know nothing about.** New to the house and not sure what's up there or how old it is? We help you work out what you have and what it needs.
-
-**A second opinion.** Already have a quote and want another set of eyes? We look at the roof and tell you what we see.
+**A roof at the end of its life.** Replacing a worn roof is a reality every homeowner faces, and the longer you wait, the bigger the problem can get. We assess it and help you choose the material that fits.
 
 > "Although the issue wasn't with the roof, he knew exactly where it was and who we should contact; he also had a rough idea of the cost and what's going to need to be replaced." — Darion M.
 
@@ -177,7 +176,7 @@ Our mission starts with "Top Down, A Better Experience." We want you to get qual
 
 ### Tell Us What You're Seeing
 
-Call (402) 890-6460 and tell us what's going on with your roof. We'll set up a time to come look, and the quote is free.
+Call (402) 890-6460 and tell us what's going on with your roof. We'll set up a time to come look.
 
 Buttons: Call (402) 890-6460 / Contact us
 
@@ -370,13 +369,14 @@ Buttons: Call (402) 890-6460
 ## Notes for Ruth (not page copy)
 
 **Word counts** (visible words, headings, buttons and quotes included; strategy and notes excluded from the business-page counts)
-- Original writer counts: Strategy 933; Home 693 (523 without quotes); Roof Replacement 979; Roof Insurance Claims 719; Contact 261. After reviewer cuts of repeated lines: Roof Replacement about 860, Roof Insurance Claims about 630 (below 700), Contact about 250.
+- Current counts (quotes included): Strategy 933; Home 651; Roof Replacement 872; Roof Insurance Claims 647 (thin, below 700); Contact 248 (just under 250, logged as short, not padded).
 
 **Credentials**
 - None used. Sandhill's site states no certification, license, BBB rating or manufacturer program (facts.md: "No dealer or certification claim found on the site"). The "Home Advisor" footer link is a directory link, not a credential, and is left out.
 - "Family-owned" and "Lifetime Workmanship Warranty on Roofing, Siding, Gutters" are the business's own claims from https://sandhillroofing.com/, used at that strength. Warranty is stated once, on Home only. The senior and military/government discounts are stated once, on Home only. "Free quote" is stated once, on Home. Terms for all three are unverified.
 
 **Facts deliberately left out, and why**
+- Home states only what the site says (inspection, education, warranty, discounts, free quote, insurance claims). Dusty looking at the roof himself and similar points appear only in review quotes.
 - Years: "ten years" is on the homepage and used once on Home as the site words it ("roofing in Lincoln for ten years"). No start year is stated anywhere, so none is used. The question is on the Strategy page.
 - Street address: the site shows none. Google lists 8120 Trendwood Dr, Lincoln, NE 68506, so it is a question on the Strategy page, not page copy.
 - "Leading roofing expert" and "unmatched" quality: puffery with no support; left out.
@@ -393,4 +393,8 @@ Buttons: Call (402) 890-6460
 
 **Reviews used (each once):** Alyssa T., Darion M., Joe B., Nicole S. (Home); Jackie M., mike B., carolyn W., Monica R., Cory R., Steve G. (Roof Replacement); James M., Bornschlegl F., Justin E., William W., Bryan B., Jed S. (Insurance Claims); Lynette K., Ryan R. (Contact).
 
-**Thin spots:** Roof Insurance Claims clears 700 only because its six review quotes count toward the total (538 words of copy without them). The site gives that service one paragraph, so the copy was kept to real advice and sourced claims rather than padded. Home (523 without quotes) and Contact (189 without quotes) also clear their minimums only with quotes counted. Home has 11 sections, Roof Replacement 12, Roof Insurance Claims 11 and Contact 7.
+**Roof Repair checked and not used:** the site mentions repair in one sentence ("residential and commercial roofing installation and repair") and reviews.json has only about three solid repair stories (Scott H., Justin E., Chuck B.), so a Repair page would be thinner than Insurance. Insurance stays, kept short.
+
+**Address (from the Google listing; confirm):** 8120 Trendwood Dr, Lincoln, NE 68506. Not on the site and not used in page copy.
+
+**Thin spots:** Roof Insurance Claims is 647 words with its six quotes counted (466 of copy without them), so it is thin against the 700 minimum if quotes don't count. The site gives that service one paragraph, so the copy was kept to real advice and sourced claims rather than padded. Home (481 without quotes) and Contact (189 without quotes) also clear their minimums only with quotes counted. Home has 11 sections, Roof Replacement 12, Roof Insurance Claims 11 and Contact 7.

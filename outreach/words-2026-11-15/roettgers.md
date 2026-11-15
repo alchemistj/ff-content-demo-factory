@@ -102,7 +102,7 @@ Subhead: Locally owned heating and cooling for Lincoln homes and businesses. Cal
 
 ### You call, and Matt answers
 
-When your heat or air conditioning stops, the first thing you need is a person who knows what to do next. Call (402) 314-3612 and you speak directly with Matt, for fast answers and for scheduling your service. You tell us what's happening, and we get you on the schedule.
+When your heat or air conditioning stops, the first thing you need is a person who knows what to do next. Call (402) 314-3612 and speak directly with Matt for fast answers and service scheduling. You tell us what's happening, and we get you on the schedule.
 
 ### How a service call works
 
@@ -167,13 +167,13 @@ Subhead: When your air conditioner quits, call us. We find the problem and fix i
 
 **Buttons:** Call (402) 314-3612 / Request a Quote
 
-**Trust bar:** Locally Owned · Talk to Matt Directly · Honest Pricing
+**Trust bar:** Locally Owned · Honest Pricing · Diagnosis First
 
 > "Matt came out within an hour of me calling, diagnosed the problem, and fixed it within 20 minutes!  This will be the only heating and cooling company I will be calling from here on out.  %100 , if I could give more than 5 stars I would." — Ben U.
 
 ### Call us first
 
-Call (402) 314-3612, tell us what your air conditioner is doing, and we'll get you on the schedule. Matt takes the call himself, so the person who answers is the person who knows how to help.
+Call (402) 314-3612, tell us what your air conditioner is doing, and we'll get you on the schedule. We ask what the unit is doing and how long it has been happening, so we arrive knowing what to look for.
 
 ### Problems we fix
 
@@ -237,7 +237,7 @@ Subhead: When your furnace or air conditioner can't be saved, we help you choose
 
 ### We check for a repair first
 
-We start with a diagnosis, because the right answer is sometimes a repair. Then we give you an honest recommendation and a free estimate, so you can choose the best solution for your home or business.
+We start with a diagnosis, because the right answer is sometimes a repair. Then we give you an honest recommendation and a free estimate, so you can choose the best solution for your home or business. Tell us how old your system is, how it has been running and what you want from a new one, and with a look at your space we'll give you an estimate that fits. If you have questions about the numbers, ask us and we'll go through them with you.
 
 ### How you know it's time
 
@@ -255,10 +255,6 @@ The right unit depends on your space and what you can spend, so we start with bo
 
 > "Roettger's came highly recommended to us when we noticed our AC system needed replaced. Matt was great to work with from diagnosing, quoting, and installation. They were able to quote us the next day and install soon after. Very fair pricing, and all work was completed very timely. They were very tidy while here working. Matt and his team were very easy to work with, and we would be happy to recommend his team to anyone needing HVAC services." — River K.
 
-### What helps us quote
-
-Tell us how old your system is, how it has been running, and what you want from a new one. Those answers, plus a look at your space, let us give you an estimate that fits.
-
 ### Comfortmaker equipment, supplied locally
 
 We install Comfortmaker HVAC equipment. It's locally supplied, so we can get equipment quickly, which means faster turnaround on new installations and replacements.
@@ -273,10 +269,6 @@ We handle your replacement from diagnosis and quote to installation, and we answ
 
 We've partnered with Wisetack to offer financing, so you can get the comfort you need now and make monthly payments over time. Once you have your estimate, you'll see your financing options through Wisetack.
 
-### A quote you can plan around
-
-Once we've looked at your system, we provide your project estimate, and you decide from there. If you have questions about the numbers, ask us and we'll go through them with you.
-
 > "Matt and his team were amazing!  Our HVAC was going out during those recent 100 degree days and Matt was timely, made us know we were a priority to him, gave us a very fair bid and got the work done on the next business day.  His work was high quality and he even came back to double check everything a few days later. He explained things clearly and went the extra mile at every turn. I can’t recommend him highly enough.  Not enough stars to truly express what a life saver Roettger’s Heating and Cooling has been for our family.  We are customers for life." — Susan S.
 
 ### Ready to talk about a new system?
@@ -287,13 +279,13 @@ Call (402) 314-3612, or [request a quote](/contact) for your furnace or air cond
 
 **Hero:** Contact Roettger's Heating and Cooling in Lincoln, NE
 
-Subhead: Call (402) 314-3612 and speak directly with Matt. If it's urgent, please call.
+Subhead: Call (402) 314-3612. If it's urgent, please call.
 
 **Buttons:** Call (402) 314-3612 / Email Us
 
 ### Call us
 
-The fastest way to reach us is the phone. Call (402) 314-3612 for a repair, for scheduling service or for answers about a new system. Matt takes the call himself.
+The fastest way to reach us is the phone. Call (402) 314-3612 for a repair, for scheduling service or for answers about a new system.
 
 > "They did an amazing job. Getting ahold of them was a breeze and everything was done quickly and efficiently. I am very impressed." — Loriana S.
 
