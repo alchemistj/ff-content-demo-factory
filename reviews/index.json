@@ -363,6 +363,18 @@
       "pulledAt": "2026-11-09T12:44:52.542Z"
     },
     {
+      "slug": "evansville-hvac-kw",
+      "name": "K&W Premier Heating and Air, Inc",
+      "placeId": "ChIJE6on4lzJcYgR1uyaV3AQVGI",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 961,
+        "withText": 61,
+        "ratingOnly": 14
+      },
+      "pulledAt": "2026-11-16T04:54:18.543Z"
+    },
+    {
       "slug": "evansville-roofing-theway",
       "name": "The Way Construction",
       "placeId": "ChIJ259sgGMrbogRU749tq740pw",
