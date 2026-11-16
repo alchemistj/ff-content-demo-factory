@@ -170,15 +170,15 @@ Design/build means one company handles engineering and design, pricing and estim
 
 ### Who explains the work
 
-We provide you with a dedicated advisor who explains the recommended work and helps you make informed decisions. Our mission puts integrity, open communication and efficiency first.
+We provide you with a dedicated advisor who explains the recommended work and helps you make informed decisions. Our mission puts integrity, open communication and efficiency first. On a commercial job the choices usually carry different first costs and running costs, so owners and facility managers often want one person who can lay out the trade-offs.
 
 > Wonderful company to work with. Their customer service is fantastic and they are very thorough. They don't cut corners and get the job done very well and in the most economical way possible. We will definitely be working with them again in the future.
 >
 > — Erin W.
 
-### Who does the work and who we belong to
+### Who we belong to
 
-Our plumbers are union-trained. We list these affiliations:
+We list these affiliations:
 
 - **UA Local 166,** the local union for plumbers and pipefitters.
 - **MCAA,** the Mechanical Contractors Association of America, and **MSCA,** the Mechanical Service Contractors of America, which serves heating and cooling service contractors.
@@ -319,7 +319,7 @@ If you want regular inspections of chillers, boilers, rooftop units or other bui
 
 ### A new project
 
-If you are planning a renovation, an addition or a new facility, call the main office. We take on design/build projects, where one company handles the design and the installation. It helps to have the building type, its size, your timeline and the names of the architect, engineer or general contractor, if they are already chosen.
+If you are planning a renovation, an addition or a new facility, call the main office. We take on design/build projects. It helps to have the building type, its size, your timeline and the names of the architect, engineer or general contractor, if they are already chosen.
 
 ### Find us
 
@@ -327,7 +327,7 @@ Our office is at 3939 Mobile Ave in Fort Wayne, where the company has been since
 
 **Buttons:** Call (260) 341-0530 / Call the Office
 
-## Notes (not page copy)
+## Notes
 
 Reframed to commercial on FF's call (Nov 16).
 

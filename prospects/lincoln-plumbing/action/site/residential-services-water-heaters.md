@@ -1,10 +1,10 @@
 # https://www.actionlincoln.com/residential-services/water-heaters
 
-- Fetched: 2026-11-16T04:26:44.210Z (rendered in a real browser)
+- Fetched: 2026-11-16T04:46:37.580Z (rendered in a real browser)
 - HTTP: 200
 - Title: Water Heater Replacement in Lincoln, NE | ACTION
 - H1: Water Heaters | Water Heaters
-- tel: links: tel:+14025760708, tel:402-576-0708
+- tel: links: tel:+14024236960, tel:402-423-6960
 - Words: 468
 
 ---

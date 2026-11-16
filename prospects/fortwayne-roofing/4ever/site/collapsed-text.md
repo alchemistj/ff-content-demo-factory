@@ -1029,3 +1029,54 @@
 - Travis and his crew did a remarkable job in a timely manner. They were professional and respectful throughout the entire process. 10 out of 10 I recommend 4ever Metal Roofing.
 - Travis from 4Ever Metal roofing was very professional and his crew were experts in their craft. My roof was damaged in a wind storm and we knew it was time for a new roof. Travis sent one of his techs out to inspect and shore up my patch job just to give me peace of mind. They were quick to start the job and very quick completing the work. Our roof looks great and I would recommend 4Ever roofing to anyone looking to upgrade to a metal roof.
 
+## https://www.4evermetalroofing.com/standing-seam
+
+- Over solid decking with underlayment, a standing seam roof is about as loud as an asphalt roof. The tin-roof-on-a-barn sound comes from panels over open purlins with nothing underneath. Houses are decked.
+- Mechanically seamed 1.5-inch panels can go to very low slopes when the details are designed for it. Snap-lock should stay on steeper, fast-draining roofs. If a quote does not say which seam it is, ask.
+- Steel panels can take cosmetic dents in large hail, the same as a car hood. The roof does not stop keeping water out. Most insurers recognize that; some write cosmetic-damage exclusions on metal, so read your policy.
+
+## https://www.4evermetalroofing.com/stone-coated-steel
+
+- Some granule loss in the first season is normal, the same as a new asphalt roof. After that it should be minimal. Heavy, continued loss points to a manufacturing or handling problem, which is what the manufacturer warranty covers.
+- Slightly, because of the granule surface and the air space under the panels. Over a decked house the difference is small.
+
+## https://www.4evermetalroofing.com/videos/does-a-metal-roof-add-more-value-to-my-home
+
+- "Does a metal roof add more value to my home?" Yes, a metal roof will add more value to your home. It's attractive to
+
+## https://www.4evermetalroofing.com/videos/fitting-stone-coated-shingles-around-a-dormer
+
+- Is it a good thing or a bad thing? No, just a trend. No, that freakin' caught. Destination. Oh, here's our edge. And here it's nice. That's a new square. I got a little tiny one too. I'm glad they could take any of this watch off. I'd rather have Leo's cold throw over there. I agree. I just need to turn this off. When I slide this, I'm gonna slide this underneath it. So bring it back that way. So that needs to go under here versus on top and just caught. So now we have a little piece under here and it runs under here
+
+## https://www.4evermetalroofing.com/videos/house-doesn-t-have-to-look-like-a-barn
+
+- A metal roof doesn't have to look like a barn. Check out this roof behind me. It's made with an interlocking metal shingle. So this homeowner reached out to us. They were a referral from a past client and they were having a lot of issues with repairs needed. The shingles were blowing off the house. They live out in the country where they experience a ton of high wind. So every time there was a wind event, they were having to pay $500 a pop to repair shingles. They reached out to us. They wanted a more permanent solution,
+
+## https://www.4evermetalroofing.com/videos/how-long-does-a-metal-roof-last
+
+- So how long a metal roof lasts depends on the type of system that you're installing. An exposed fastener system with annual maintenance is generally going to last you anywhere from 30 to 35 years. A concealed fastener system with little to no maintenance can last between 50 to 70 years just before it needs paint. Your asphalt shingle roof is failing you and the solution is probably a metal roof. A permanent metal roof installed properly is going to last you between 50 to 70 years with little to no maintenance. So what's that mean? No more re-roofing every 15 to 20 years.
+
+## https://www.4evermetalroofing.com/videos/is-a-metal-roof-loud-when-it-rains
+
+- a metal roof is not louder when it rains. Long gone are the days where metal roofs were installed over barns with no decking, no insulation, no attic space. Now they're installed over modern construction with solid sheeting, attic space,
+
+## https://www.4evermetalroofing.com/videos/matching-gutter-color-before-a-standing-seam-install
+
+- Here's a house we're going to be doing a charcoal frost, mechanical seam, standing seam on. And the homeowner wants, they're going to do gutters and downspouts as well. And they really want to try to match as closely to what they have existing. And you notice they've got a different color downspout to the gutter. So I'm out here to document that and to try to put some coil up gutter coil next to both of them and try to get them as close to a match as possible. So I think honestly, this is just a white. He, he says it's off white. I don't, I think it's off white because it's been weathered. So I think he has, see like up here, it's going to be closer to white and it looks off white there. I think that's going to be, that's going to be pretty darn close to what he's got. I think he's going to be good with that. That's about right. These are all being to shoot. That's pretty close. I think you're looking. Take a picture for him. And then down here, the grays. Yeah. That's the way I don't like that. I think if they went, that's probably it right there. That's
+
+## https://www.4evermetalroofing.com/videos/our-core-values
+
+- So what are the core values of forever metal roofing? Craftsmanship, honesty, fit, and discipline. Craftsmanship just points to we're obsessed with all the details. Most roofs don't fail based off the materials that you're using. Most times they fail based off how they're installed, how much the contractor pays attention to each little detail, the wall flashings, the pipe boots, the underlamens, the screws, every little detail matters. Just us being honest with the homeowner to the point where it may mean that we're just going to walk away from the job and shake hands as friends. We're not going to be a good fit for you. And then that leads into third, which is fit. Fit. Not everybody is going to be a great fit to be our customer. We're not going to be a great fit to be their contractor. And not every home makes the most sense of putting metal roofing on. And then lastly, discipline. Discipline is the spine for all three. If we don't have discipline to adhere to the other three, core values, then it all falls apart.
+
+## https://www.4evermetalroofing.com/videos/we-re-not-for-everyone
+
+- I'm going to save some of you a lot of time. We're not for everyone. If you're looking for too good to be true, we're not for you. If you think permanence and peace of mind come cheap, we aren't for you. If you're getting four or five quotes and you're going with the lowest number, we're not for you. Give someone else a call. We genuinely wish you well. If you don't see your home as an investment worth protecting, we aren't for you. If you're tired of repairing and replacing your roof, if you're tired of the cycle, if you've watched your home appreciating value and you want every part of your home to reflect that, if you want to shake a contractor's hand, sign once and never think about your roof again, we built this company for you. We do not compromise on materials. We do not cut corners. We do not offer a cheap version of what we do. We build permanent. We build peace of mind and we back every roof with a lifetime warranty because we don't install anything that we wouldn't stake our name on for the next 50 years. If that sounds like something you're looking for, give us a call or visit our website. We'd love to earn your business.
+
+## https://www.4evermetalroofing.com/videos/why-metal-roofing
+
+- What makes metal roofing the right choice for homeowners today is for homeowners who are living in their forever home and want to have a system that outlasts them. Metal roofing lasts anywhere from 50 to 70 years, whereas asphalt shingles last on average 15 to 20 years. Metal roofing is gonna provide energy savings conservatively from 18% all the way up to 30%. Because your house is more resistant to wind, fire, and hail, annual insurance premiums should be reduced by anywhere from 10% up to 35%. And from a sustainability standpoint, metal roofing is made up of up to 25% recycled material and is 100% recyclable. Asphalt shingles account for more than 20 billion pounds of landfill waste each year in the US alone. And these asphalt shingles take over three centuries to decompose. In short, metal roofing is about permanence and peace of mind. If you want to avoid replacing your roof multiple times, and reduce long term costs, metal roofing is the smarter choice.
+
+## https://www.4evermetalroofing.com/videos/will-a-metal-roof-be-too-heavy-for-my-house
+
+- Will a metal roof be too heavy for my house? No, all local building codes allow for at least two layers of roofing materials. And that's really just to protect the structure from too much weight. Even our heaviest metal roof is half the weight per square foot of an asphalt shingle. So no, we're not
+
