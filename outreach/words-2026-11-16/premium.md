@@ -21,7 +21,7 @@ After a storm, customers say the person they dealt with at your company took the
 
 Your homepage opens with "Roofing excellence for homes and businesses that deserve the absolute best." Nothing there says what you do in Rockford or names the project manager who handles the claim.
 
-So the demo opens with Roofing Contractor in Rockford, IL, and gives Roof Replacement and Storm Restoration a page each.
+So the demo opens with Roofing Contractor in Rockford, IL, and gives roof replacement and storm restoration a page each.
 
 **The demo, page by page**
 
@@ -48,7 +48,6 @@ Google and AI tools can only repeat what's written down. We get every service, c
 
 **Current site problem**
 - No heading names Rockford, so a Rockford search has little to match.
-- Three pages give three different timelines, so a homeowner planning the week gets three answers.
 - Nothing about what turns up under the old roof, so a buyer can't picture what a replacement involves.
 
 **What the demo fixes**
@@ -81,12 +80,11 @@ Every page set up behind the scenes so Google and AI tools like ChatGPT know exa
 *Why it matters:* It's where someone decides whether to call.
 
 **Current site problem**
-- Your site shows (844) 997-6633 and your Google listing shows (815) 296-1306, so customers dial two different numbers.
 - No hours or towns, so a caller can't tell whether you reach their street.
 - The form carries a text-message marketing consent, a lot for a homeowner with one question.
 
 **What the demo fixes**
-- One number, first, with what to have ready.
+- Your phone number first, with what to have ready.
 - Both offices and the Rockford-area towns you serve.
 - What happens after you call.
 
@@ -118,6 +116,7 @@ Call and form tracking that shows which pages and towns your leads come from.
 - Page links, buttons and contact forms tested in a real browser twice a day.
 - Updated when Google and AI tools change how they read websites
 - You never have to know what to ask for
+
 **What we'd confirm with you**
 
 On a short onboarding call, we'd confirm four things.
@@ -143,7 +142,7 @@ We replace and repair roofs, siding and gutters for homeowners and businesses in
 
 ### A Named Manager Works Your Claim With You
 
-After hail or a windstorm you have a damaged roof and an insurance company to deal with at once. Customers name the person who handled it for them: Tyler, Brad, Tommy, Scott, Todd and Mike each come up more than once. Our project managers usually meet the adjuster at the house. The adjuster is the insurance company's inspector, the person who decides what the damage is worth. We point out the damage the adjuster might otherwise miss, walk you through the paperwork, and keep you informed while the insurer works through its own timeline.
+After hail or a windstorm you have a damaged roof and a claim to deal with at once. Customers name the person who handled it for them: Tyler, Brad, Tommy, Scott, Todd and Mike each come up more than once. Our project managers usually meet the adjuster at the house. The adjuster is the claims inspector, the person who decides what the damage is worth. We point out the damage the adjuster might otherwise miss, walk you through the paperwork, and keep you informed while the claim moves through its own timeline.
 
 We can't promise what an insurer will pay. We can promise you won't be left alone with the claim. [Storm restoration](about:blank) lays out the steps in plain words.
 
@@ -171,13 +170,21 @@ Plenty of homeowners know someone who had a bad time with a roofer. We say it pl
 
 ### Questions Before You Call
 
-**Do you offer payment plans?** Yes. We offer flexible payment plans to suit your budget. Ask for the details when you call.
+**Do you offer payment plans?**
 
-**Do you inspect roofs that aren't damaged?** Yes. A regular inspection can catch wear before it becomes a leak. We look the roof over, take photos and give you a written report on its condition. Some storm damage can't be seen from the ground, so an inspection is also the safest first step after a hard storm.
+Yes. We offer flexible payment plans to suit your budget. Ask for the details when you call.
 
-**Can you build a roof that's ready for solar panels?** We do roofing, not solar installation. We work with solar professionals, and the roof is usually planned around the panels, including the material and the layout.
+**Do you inspect roofs that aren't damaged?**
 
-**What if my insurance company isn't one you've worked with?** We may still work with them. Call and tell us who it is.
+Yes. A regular inspection can catch wear before it becomes a leak. We look the roof over, take photos and give you a written report on its condition. Some storm damage can't be seen from the ground, so an inspection is also the safest first step after a hard storm.
+
+**Can you build a roof that's ready for solar panels?**
+
+We do roofing, not solar installation. We work with solar professionals, and the roof is usually planned around the panels, including the material and the layout.
+
+**What if my insurance company isn't one you've worked with?**
+
+We may still work with them. Call and tell us who it is.
 
 ### Start With a Call
 
@@ -193,7 +200,7 @@ A roof replacement takes the old roof off and puts a new one on, with the wood u
 
 Repairs make sense when the trouble is small and the rest of the roof is sound. A full replacement is usually the better answer when leaks keep coming back, when large patches of shingles are missing or curling, or when the roof is old. A roof past about 20 years may be due even without a storm.
 
-Cost depends on the size of the roof, the material and how complicated the job is. A roof with many chimneys, skylights and angles takes longer than a plain two-slope roof. We give free estimates, and customers have had us bring color samples to the house so they can compare them against the siding and trim.
+Cost depends on the size of the roof, the material and how complicated the job is. A roof with many chimneys, skylights and angles takes longer than a plain two-slope roof. Customers have had us bring color samples to the house so they can compare them against the siding and trim.
 
 ### How a Replacement Goes
 
@@ -233,11 +240,17 @@ When the roof is done we run magnetic sweepers over the yard to pick up stray na
 
 ### Questions About a Replacement
 
-**Can I keep the look of a cedar roof?** Yes. We replace old cedar shake roofs with shake-style shingles. You can choose synthetic shake, made from composite or polymer, which resists fading, cracking and warping, or pressure-treated or fire-retardant real cedar. Some insurers limit coverage or raise premiums on older wood shake roofs, so it's worth asking yours.
+**Can I keep the look of a cedar roof?**
 
-**Can the new roof go over the old one?** Often it can't, or shouldn't. Local building codes limit the layers of roofing a house can carry, and a new roof laid over an old one hides rot and weak spots underneath.
+Yes. We replace old cedar shake roofs with shake-style shingles. You can choose synthetic shake, made from composite or polymer, which resists fading, cracking and warping, or pressure-treated or fire-retardant real cedar. Some insurers limit coverage or raise premiums on older wood shake roofs, so it's worth asking yours.
 
-**How should I prepare before the crew arrives?** Move your cars out of the driveway so the crew and the dumpster can get in. Clear fragile things off attic shelves, because the vibration can shake dust loose. Keep children and pets indoors while the crew works.
+**Can the new roof go over the old one?**
+
+Often it can't, or shouldn't. Local building codes limit the layers of roofing a house can carry, and a new roof laid over an old one hides rot and weak spots underneath.
+
+**How should I prepare before the crew arrives?**
+
+Move your cars out of the driveway so the crew and the dumpster can get in. Clear fragile things off attic shelves, because the vibration can shake dust loose. Keep children and pets indoors while the crew works.
 
 ### Ready to Talk It Over?
 
@@ -253,7 +266,7 @@ Hail, high wind and heavy rain can damage a roof, siding and gutters in a single
 
 Storm restoration means repairing or rebuilding what a storm damaged: the roof, the siding and the gutters, plus a look at the structure underneath. The first goal is to stop further damage. Water that gets in through a hail hole or a lifted shingle can lead to leaks, mold and weakened wood if it sits.
 
-Our work after a storm runs in a set order. We inspect and document the damage, make emergency repairs where the roof is open to the weather, coordinate with your insurance company, complete the repair or replacement, and finish with a final inspection and cleanup.
+Our work after a storm runs in a set order. We inspect and document the damage, make emergency repairs where the roof is open to the weather, work the claim with you, complete the repair or replacement, and finish with a final inspection and cleanup.
 
 ### Damage You Can't See From the Yard
 
@@ -263,25 +276,25 @@ The leak may not show for months, which is why the damage is worth finding early
 
 ### Repair or Replace After Hail?
 
-Not every hailstorm means a new roof. A repair is often enough when the damage is limited to small, separate areas, the shingles are newer, the wood underneath is sound, and the low seams where roof slopes meet weren't hurt. We replace just the affected shingles, seal the repair and document it for the insurer.
+Not every hailstorm means a new roof. A repair is often enough when the damage is limited to small, separate areas, the shingles are newer, the wood underneath is sound, and the low seams where roof slopes meet weren't hurt. We replace just the affected shingles, seal the repair and document it with photos.
 
-A full replacement is usually the smarter move when the damage is widespread, when several sides of the roof were hit, when the roof is already old, often 15 years or more, or when new shingles wouldn't match faded ones. A patch can hold for a while, but an old roof with scattered repairs tends to need attention again soon. An adjuster who agrees the whole roof is compromised is a strong reason to replace it.
+A full replacement is usually the smarter move when the damage is widespread, when several sides of the roof were hit, when the roof is already old, often 15 years or more, or when new shingles wouldn't match faded ones. A patch can hold for a while, but an old roof with scattered repairs tends to need attention again soon. When the claims adjuster, the inspector who values the damage, agrees the whole roof is compromised, that is a strong reason to replace it.
 
 The only way to know is a professional inspection with photos. We walk the roof, check soft spots by hand, look in the attic for moisture and photograph what we find.
 
-### How an Insurance Claim Usually Goes
+### How a Storm Claim Usually Goes
 
 Claims differ by insurer and by policy, so read this as the usual order, not a promise.
 
 1. **Inspection first.** A roofer inspects and photographs the damage before you call your insurer, so you file with evidence and not just a description. We'll also tell you whether a claim looks worth filing.
 2. **Filing.** Most insurers take a claim online or by phone. You'll usually need your policy number, the date of the storm, a short description and the photos.
-3. **The adjuster visit.** An adjuster, the insurer's inspector, comes to the house. We can meet them there and point out the full scope of the damage.
+3. **The adjuster visit.** The adjuster comes to the house. We can meet them there and point out the full scope of the damage.
 4. **The estimate.** It usually shows replacement cost value, what a new roof costs, and actual cash value, which is that figure minus depreciation, the value the roof has lost to age. It also shows your deductible, the amount you pay first. We go through it with you line by line.
-5. **After approval.** You get a written proposal that matches the approved scope. When the work is done, we send the paperwork the insurer needs to close the claim.
+5. **After approval.** You get a written proposal that matches the approved scope. When the work is done, we send the paperwork needed to close the claim.
 
 When a claim is approved, the homeowner's share is usually the deductible. That's general, not a promise, because policies differ.
 
-### When the Insurer Says No or Pays Less
+### When a Claim Is Denied or Paid Short
 
 A first estimate isn't always final. A homeowner can ask for a second look, and a roofer's photos and written findings can support the request. Some customers came to us after a claim was denied, and the account below is one of them. We can't promise a result, and we don't set what an insurer pays.
 
@@ -293,7 +306,7 @@ A first estimate isn't always final. A homeowner can ask for a second look, and 
 
 In northern Wisconsin, 2- to 3-inch hailstones damaged a home's roof, siding and gutters. We replaced the roof with Class 4 impact-resistant shingles, which are the top rating for hail, repaired the siding and installed 6-inch gutters to replace dented ones. The goal was to restore the house to better than its condition before the storm.
 
-In Roscoe, the roof and siding on a two-story home had been damaged by weather. We inspected both and documented the damage to support the claim. Our crew handled the paperwork and dealt with the insurance company directly, and the write-up of the job says the replacement was fully covered. We upgraded the roof to Class 4 shingles at no additional cost and replaced the siding.
+In Roscoe, the roof and siding on a two-story home had been damaged by weather. We inspected both and documented the damage to support the claim. Our crew handled the paperwork and dealt with the claim directly. We upgraded the roof to Class 4 shingles at no additional cost and replaced the siding.
 
 ### Covering a Roof That's Open
 
@@ -305,11 +318,17 @@ When a roof is open to the weather, the first job is covering it. One customer h
 
 ### Questions After a Storm
 
-**How soon should I get the damage looked at?** As soon as you can. Waiting lets small damage turn into leaks and mold. Most insurers also limit how long you have to file a storm claim, often a year or less, so check your policy.
+**How soon should I get the damage looked at?**
 
-**Does homeowners insurance cover storm damage?** In most cases it covers sudden damage from a covered event such as hail, wind or falling debris. It usually does not cover wear from age or neglect. We help with the claims process, but your policy decides.
+As soon as you can. Waiting lets small damage turn into leaks and mold. Most insurers also limit how long you have to file a storm claim, often a year or less, so check your policy.
 
-**Can you fix both the roof and the siding?** Yes. We do roof, siding, gutter and structural repairs in one project, and customers have had all three done together.
+**Does homeowners insurance cover storm damage?**
+
+In most cases it covers sudden damage from a covered event such as hail, wind or falling debris. It usually does not cover wear from age or neglect. We help with the claims process, but your policy decides.
+
+**Can you fix both the roof and the siding?**
+
+Yes. We do roof, siding, gutter and structural repairs in one project, and customers have had all three done together.
 
 ## Contact — Contact Premium Roofing Solutions, Rockford, IL
 
@@ -321,7 +340,7 @@ Call or send a message. Tell us what the storm did or what the roof is doing, an
 
 **(844) 997-6633**
 
-Tell us about the house and what you've noticed. You don't need to know whether the roof needs repair or replacement, or whether to file a claim. That's what the first visit is for.
+Tell us about the house and what you've noticed. Photos of the damage, even ones from your phone, help us see what we're dealing with before we get there. You don't need to know whether the roof needs repair or replacement, or whether to file a claim. That's what the first visit is for. If you can't answer everything on the list below, tell us what you know and we'll work out the rest at the house.
 
 ### What to Have Ready
 
@@ -359,10 +378,10 @@ Call (844) 997-6633 and tell us about the roof.
 
 **Word counts** (script count; "without quotes" excludes blockquotes, captions, buttons and strip)
 - Strategy: 1,050 without the quote, 1,073 with, incl. the canonical list.
-- Home: 579 without quotes, 649 with.
-- Roof Replacement: 837 without, 894 with. Meets 700+.
-- Storm Restoration: 995 without, 1,063 with. Meets 700+ without quotes, built from the site's storm, hail, wind and claim pages plus hedged general knowledge; no switch to Roof Repair needed.
-- Contact: 245 without, 273 with.
+- Home: 577 without quotes, 647 with.
+- Roof Replacement: 833 without, 890 with. Meets 700+.
+- Storm Restoration: 975 without, 1,043 with. Meets 700+ without quotes, built from the site's storm, hail, wind and claim pages plus hedged general knowledge; no switch to Roof Repair needed.
+- Contact: 293 without, 321 with.
 
 **Credentials and sources** (the business's own claims; none verified)
 - Licensed and insured in Illinois and Wisconsin, subcontractors also licensed and insured: banner on every page and `faqs`. Home only.
@@ -391,7 +410,7 @@ Call (844) 997-6633 and tell us about the roof.
 - Which phone is live.
 - Whether project managers usually meet the adjuster (from Natalie P., Susan W., the site's claim pages).
 - Free inspection and free estimate wording (site claim).
-- Roscoe "fully covered" and "no additional cost" come from the site's write-up.
+- Roscoe "no additional cost" comes from the site's write-up; "fully covered" left out so no claim outcome is implied.
 - "About 20 years" roof age is the site's; "15 years or more" after hail is the site's hail article.
 - Class 4 as the top impact rating is general knowledge.
 - Rockford-area town list is from the site's service-area pages.
