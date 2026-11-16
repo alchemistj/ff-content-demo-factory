@@ -13,19 +13,18 @@ Your Google reviews keep coming back to one thing: you come out twice a year, yo
 
 > — Linda R.
 
-Your reviews say all of that. Your site says little of it. The homepage has no phone number, and no page lets a phone visitor tap to call.
+Your site says little of that. The homepage has no phone number, and no page lets a phone visitor tap to call.
 
 So the demo opens with HVAC Company in Fort Wayne, IN, puts your number one tap away, and gives maintenance and furnace replacement a page each.
 ### The demo, page by page
-Each card is one page of the demo: what holds the current site back, and what the demo does about it.
 #### 1. Homepage
 Why it matters: Google reads your homepage first to decide what you do and where.
 
 **Current site problem**
 
-  - The name in the browser tab, the line Google shows in search results, says only "Custom Assured Mechanical." No trade, no city, so Google has little to show a customer searching for HVAC in Fort Wayne.
-  - No phone number on the homepage, and no tap-to-call link on any page, so a customer on a phone has to hunt for a way to call.
-  - The video under "Our Services" is broken. It shows "Video is not available or format is not supported," so the first thing a visitor sees under your services looks broken.
+  - The name in the browser tab, the line Google shows in search results, says only "Custom Assured Mechanical," with no trade or city, so HVAC searches miss you.
+  - No phone number on the homepage and no tap-to-call link on any page, so phone visitors must hunt to call.
+  - The video under "Our Services" is broken and reads "Video is not available or format is not supported," so the page looks unfinished.
 
 **What the demo fixes**
 
@@ -41,9 +40,9 @@ Why it matters: maintenance is what your reviewers talk about most, and your sit
 
 **Current site problem**
 
-  - The Custom Priority Club is a few lines in the middle of Our Services, a page with no headline, so the service your reviewers talk about most is easy to miss.
-  - The site never says how often you service a system or who comes. Your reviews do, so a new customer never hears why members stay.
-  - Spelling slips: "CPC Benifits" and "maintenances preformed," which makes a customer wonder how careful the work is.
+  - The Custom Priority Club is a few lines in the middle of Our Services, a page with no headline, so your most-praised service is easy to miss.
+  - The site never says how often you service a system or who comes. Your reviews do, so new customers miss why members stay.
+  - Spelling slips: "CPC Benifits" and "maintenances preformed," which suggest careless work.
 
 **What the demo fixes**
 
@@ -59,9 +58,9 @@ Why it matters: new systems come up in your reviews, and your site gives furnace
 
 **Current site problem**
 
-  - Furnaces get one sentence and no page, so nothing answers "furnace replacement Fort Wayne," and a customer searching for a new furnace lands on someone else.
-  - Rod handling most sales himself appears only on the Financing page, 154 words with no headline, so a customer deciding on a furnace never learns who they would deal with.
-  - The free quote, financing and guarantee sit there, away from the furnace, so a customer has to piece together the price and the promise.
+  - Furnaces get one sentence and no page, so nothing answers "furnace replacement Fort Wayne" and searchers land elsewhere.
+  - Rod handling most sales himself appears only on the Financing page, 154 words with no headline, so furnace buyers never learn who they deal with.
+  - The free quote, financing and guarantee also sit on the Financing page, away from the furnace, so buyers must piece together price and promise.
 
 **What the demo fixes**
 
@@ -77,9 +76,9 @@ Why it matters: Most visitors are on a phone, and this is where they decide whet
 
 **Current site problem**
 
-  - Contact says Monday to Friday, 9am to 4pm. Your homepage says the service department is available around the clock. A customer with a dead furnace can't tell which is true.
-  - The form marks five fields "(required)" but enforces none, and it puts what a visitor types into the web address, so an empty form still goes through and a customer's details show in the address bar.
-  - The page is 45 words, with nothing on what to have ready, so a customer calls without the details you need.
+  - Contact says Monday to Friday, 9am to 4pm, but your homepage says the service department is available around the clock, so nobody can tell which is true.
+  - The form marks five fields "(required)" but enforces none and puts what a visitor types into the web address, so empty forms go through and details show in the address bar.
+  - The page is 45 words, with nothing on what to have ready, so customers call unprepared.
 
 **What the demo fixes**
 
@@ -91,7 +90,6 @@ Why it matters: Most visitors are on a phone, and this is where they decide whet
 
 Call and form tracking that shows which pages and towns your leads come from.
 ### What a full build includes
-A full build starts with the foundation, then adds what we guarantee after launch.
 
 **Gets you found**
   - Every service on your website and your Google profile, telling the same story
