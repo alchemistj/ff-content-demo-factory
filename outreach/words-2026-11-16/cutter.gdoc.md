@@ -32,9 +32,9 @@ So the demo opens with General Contractor in Cedar Rapids, IA, and gives concret
 
 **Current site problem**
 
-- The headline never says Cedar Rapids or what kind of contractor you are. The city is only in the browser tab.
-- The free estimate line gives 319-533-2164, but the only number you can tap to call is 319-900-5497.
-- The derecho story is only on your roofing page.
+- The headline never says Cedar Rapids or what kind of contractor you are. The city is only in the browser tab, so someone searching for a Cedar Rapids contractor has little reason to pick you.
+- The free estimate line gives 319-533-2164, but the only number you can tap to call is 319-900-5497, so a customer who dials the first one may not reach you.
+- The derecho story is only on your roofing page, so a homeowner who never opens it never learns you were here when it hit.
 
 **What the demo fixes**
 
@@ -50,9 +50,9 @@ So the demo opens with General Contractor in Cedar Rapids, IA, and gives concret
 
 **Current site problem**
 
-- The browser tab says "20 Years of Quality Work," while the page says "over a decade."
-- The headline is just "Concrete." Cedar Rapids is in a line below it.
-- Nothing says what winter does to a driveway or what a pour day is like, though your reviews do.
+- The browser tab says "20 Years of Quality Work," while the page says "over a decade," so a customer can't tell which to believe.
+- The headline is just "Concrete." Cedar Rapids is in a line below it, so Google has little to match to a Cedar Rapids concrete search.
+- Nothing says what winter does to a driveway or what a pour day is like, though your reviews do, so a homeowner with a sinking driveway gets no answer from you.
 
 **What the demo fixes**
 
@@ -68,9 +68,9 @@ So the demo opens with General Contractor in Cedar Rapids, IA, and gives concret
 
 **Current site problem**
 
-- The browser tab says "Deck Builder #1 Best in Cedar Rapids," with nothing behind it. The line below reads "Cedar Rapid's Choice for Decks," missing the s.
-- Iowa winters never come up, though your reviews describe rebuilding a second-story deck.
-- Boards and railings sit on two other pages, under brand names like Transcend and Lineage.
+- The browser tab says "Deck Builder #1 Best in Cedar Rapids," with nothing behind it. The line below reads "Cedar Rapid's Choice for Decks," missing the s. A customer who spots either one trusts the rest of the page less.
+- Iowa winters never come up, though your reviews describe rebuilding a second-story deck, so a homeowner worried about frost heave finds nothing from you.
+- Boards and railings sit on two other pages, under brand names like Transcend and Lineage, so a customer has to hunt through three pages to compare.
 
 **What the demo fixes**
 
@@ -86,9 +86,9 @@ So the demo opens with General Contractor in Cedar Rapids, IA, and gives concret
 
 **Current site problem**
 
-- Four different phone numbers across your site.
-- The Contact page opens with a pitch about "certifications and exclusive warranties."
-- Iowa City, Coralville and Hiawatha appear only on your FAQ page.
+- Four different phone numbers across your site, so a customer may call one nobody answers.
+- The Contact page opens with a pitch about "certifications and exclusive warranties," so a customer ready to call reads a sales pitch first.
+- Iowa City, Coralville and Hiawatha appear only on your FAQ page, so someone in those towns can't tell you'd come to them.
 
 **What the demo fixes**
 
@@ -159,7 +159,7 @@ We were here for the 2020 derecho and worked on Cedar Rapids homes in the months
 
 ### A Person to Call, Not a Number
 
-You'll often deal with Bryan or Mike directly, so there's someone who knows your project when you pick up the phone. We bring in specialist subcontractors where a trade needs one, and we manage the whole job so you don't have to call five companies.
+You'll often deal with Bryan or Mike directly, so there's someone who knows your project when you pick up the phone.
 
 > Bryan kept me informed on what was happening so there were no surprises.
 >
@@ -180,7 +180,7 @@ You'll often deal with Bryan or Mike directly, so there's someone who knows your
 
 ### From an Idea to a Finished Project
 
-A garage or an addition rarely starts with drawings. It starts with an idea. We help you shape it into a design, a bid and a build, and talk through where the budget can stretch and where it can't. Bigger projects begin with a conversation, not a price.
+A garage or an addition rarely starts with drawings. It starts with an idea. Bigger projects begin with a conversation, not a price.
 
 > Mike Cutter and his team took a concept of a garage/home addition that lived in my mind and made it come to life, far exceeding expectations.
 >
@@ -261,7 +261,7 @@ A loaded concrete truck is heavy enough to crack an older driveway or leave ruts
 
 A patio needs the same base and drainage as a driveway, with a gentle slope away from the house. Steps need to be poured to a consistent height, because a step that is off by even half an inch is the one people trip on. Sidewalks in Cedar Rapids often meet the city's right of way near the street, so ask whoever pours yours whether a city permit is needed.
 
-If a patio is a good fit for your yard, a seating wall, an edge in a different material or a curve can change how you use it. Bring a sketch or a photo and we'll say what is realistic.
+If a patio is a good fit for your yard, a seating wall, an edge in a different material or a curve can change how you use it.
 
 ### Cleaning Up Each Day
 
@@ -277,7 +277,7 @@ Sealer soaks into the surface and helps keep out water and salt, which are what 
 
 ### Booking Your Pour
 
-Most concrete is poured from spring through fall, and spring often fills up. For a driveway before summer, call early. We'll look at the project, talk through the base, drainage and finish, and give you an estimate.
+Most concrete is poured from spring through fall, and spring often fills up. For a driveway before summer, call early. When you call, ask about the base, the drainage and the finish.
 
 > The estimate was done within a week and we were one of the first on the list this spring.
 >
@@ -319,7 +319,7 @@ The most common place for water damage is where the deck attaches to the house, 
 
 A deck frame in good shape can often stay. If only the boards, the railing and the stairs are worn, resurfacing may be all you need, and it usually costs far less than starting over. If the frame is soft, rotted or sized wrong for what it carries, the next layer of boards just hides the problem, and a rebuild is the honest answer.
 
-Old decks also hide surprises. Framing that doesn't suit new boards, or a window covered when the old deck was built, can change the plan once the old boards come off. That's why we look at the frame before giving a price you can rely on.
+Old decks also hide surprises. Framing that doesn't suit new boards, or a window covered when the old deck was built, can change the plan once the old boards come off.
 
 > Cutter Construction did an outstanding job tearing down and rebuilding our second-story deck. From start to finish, they were professional, fairly priced, and delivered exceptional craftsmanship.
 >
@@ -351,7 +351,7 @@ A roof over part of a deck keeps the sun and rain from shutting down the evening
 
 **Do composite boards get hot?** Dark colors in direct sun can run hot, and Trex says its top line stays cooler. Samples held in the sun tell you more than a catalog.
 
-**Is composite really maintenance free?** It needs no yearly staining, but it still needs sweeping and an occasional wash.
+**Is composite really maintenance free?** It still needs sweeping and an occasional wash.
 
 ### Ready to Plan Your Deck?
 
@@ -389,7 +389,7 @@ Ask about touring our model home, which shows the materials and finishes we'd ch
 
 ### What Happens After You Call
 
-We start with a conversation about what you want and what the project involves. For a standard job, we then set a time to look at it and give you an estimate. For a bigger one, like an addition or a garage, the first meeting is about the idea and the budget.
+Start with what you want and what the project involves. A bigger one, like an addition or a garage, can start with just the idea.
 
 > We had a time sensitive manner that we needed a second option on. Bryan was amazing. He helped us out and put our mind at ease.
 >
@@ -409,7 +409,7 @@ Call 319-900-5497 and we'll set up a time.
 
 ## Notes (not page copy)
 
-**Rebuild reason: Both. SEO: the homepage, concrete and deck headlines are bare or slogans and never say Cedar Rapids; design: the site is a dated WordPress/Elementor build with four phone numbers and thin service pages.**
+**Rebuild reason:** Both. SEO: the homepage, concrete and deck headlines are bare or slogans and never say Cedar Rapids; design: the site is a dated WordPress/Elementor build with four phone numbers and thin service pages.**
 
 **Word counts** (script count, ignoring Markdown marks; "without quotes" excludes blockquotes, buttons and the strip)
 
@@ -434,7 +434,7 @@ Call 319-900-5497 and we'll set up a time.
 
 - Phones: 319-900-5497 (tap-to-call everywhere), 319-533-2164 (home text, Google profile), 319-550-7665 (hidden link on Contact), 319-348-3255 (Trex page). Copy uses 319-900-5497.
 - Years: "since 2005" and "over 20 years" against "over a decade" and "decades of combined experience" on concrete; deck page says "20 years". No years in any page copy.
-- Consultation same week, estimate next week (/about-us/): contradicted by four 1 and 2 star reviews about calls not returned. Not stated or implied as a promise.
+- Consultation same week, estimate next week (/about-us/): contradicted by critical reviews about calls not returned. Not stated or implied as a promise.
 - Footer address link opens a mailto: to <info@botanistofthevalley.com>, a different domain. Not on the strategy page; raise on the call.
 - Model home address 1025 Juniper Dr (different number from the office): left off the pages; verify.
 - Garages page H1 contains placeholder text ("Give me the three important keywords"); not used.
@@ -446,9 +446,9 @@ Call 319-900-5497 and we'll set up a time.
 - Post-derecho "fly by night contractors" paragraph: claims about other companies, left out. Derecho used only as "we were here," from the roofing page and the site's customer testimonials.
 - "Elite Material Products" and preferred vendor names (other companies): not named; model home line says "materials and finishes we'd choose for our own."
 - Insurance adjuster line: home FAQ only, at the site's strength.
-- Careers page: one line on Contact.
+- Careers page: not on Contact (see Facts to verify).
 - Site testimonials not in reviews.json (Floyd Van Auken, Rick Zettler and others): not quoted; quotes come only from reviews.json.
-- Review themes used: named people (Judy P., Marcillina B.), no surprises (Judy P.), clean site (David C.), drainage (Mark B.), truck on driveway (Seth H.), covered deck (David M.), rebuilt deck (Daniel H.), railings (Dick W.), garage addition (Tyler A.), leak repair (Jim H.), spring estimate (Deb W.), "born here" (Cory H., strategy). Four-star-and-below reviews (calls not returned) are not quoted; raised in "What we'd confirm."
+- Review themes used: named people (Judy P., Marcillina B.), no surprises (Judy P.), clean site (David C.), drainage (Mark B.), truck on driveway (Seth H.), covered deck (David M.), rebuilt deck (Daniel H.), railings (Dick W.), garage addition (Tyler A.), leak repair (Jim H.), spring estimate (Deb W.), "born here" (Cory H., strategy). Critical reviews (calls not returned) are not quoted; raised in "What we'd confirm."
 - Cedar Rapids "right of way" and about "three and a half feet" frost depth: general trade knowledge, hedged; the city sets the actual rule.
 - Review-inferred and hedged: "often two to three days" (John C. and Floyd A.), "usually clean up" (several reviews), "often deal with Bryan or Mike" (several reviews). Not policy.
 - "Most visitors are on a phone" is from the brief, not a source I checked.

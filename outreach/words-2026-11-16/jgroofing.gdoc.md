@@ -314,7 +314,7 @@ Not every roof needs replacing. A repair is often enough when the trouble is in 
 
   
 
-Winter snow, ice dams (ice that builds up along the roof edge) and summer storms are hard on Peoria roofs, and a small problem grows through a season.
+Winter snow, ice dams (ice that builds up along the roof edge) and summer storms are hard on Peoria roofs, and a small problem grows through a season. Water often gets in around chimneys, vent pipes and the seams where roof sections meet, so a stain on the ceiling is worth a look before it spreads, and a few missing shingles are worth fixing before the next storm.
 
 ## Siding
 
@@ -752,15 +752,15 @@ Prefer to write? Send your name, phone, email and a few lines about the project.
 
   
 
-  - Strategy: about 970 without quotes, 989 with (full-build list included).
+  - Strategy: about 1,100 without quotes, 1,116 with (full-build list included).
 
-  - Home: about 680 without quotes, 877 with (after Nov 16 QA pass).
+  - Home: about 580 without quotes, 720 with (after the second judgment pass).
 
-  - Roof Replacement: about 967 without quotes, 1,205 with. Expanded Nov 16 with hedged general trade knowledge (repair vs replace by age, where old roofs usually fail, ice dams and freeze-thaw). No new business claims.
+  - Roof Replacement: about 883 without quotes, 1,056 with. Expanded Nov 16 with hedged general trade knowledge (repair vs replace by age, where old roofs usually fail, ice dams and freeze-thaw). No new business claims.
 
-  - Storm Damage and Insurance Claims: about 887 without quotes, 1,128 with. Expanded Nov 16 with hedged general knowledge (hail damage, first steps after a storm and staying off the roof, how a claim usually goes, repair vs replace, what happens on a visit). The insurer decides coverage; no outcomes promised. The only business claims are the existing sourced ones (Amanda explains the claim, Jose and his crew do the work).
+  - Storm Damage and Insurance Claims: about 719 without quotes, 903 with. Expanded Nov 16 with hedged general knowledge (hail damage, first steps after a storm and staying off the roof, how a claim usually goes, repair vs replace, what happens on a visit). The insurer decides coverage; no outcomes promised. The only business claims are the existing sourced ones (Amanda explains the claim, Jose and his crew do the work).
 
-  - Contact: about 265 without quotes (no quotes used), 288 with.
+  - Contact: about 221 without quotes (no quotes used).
 
   
 
