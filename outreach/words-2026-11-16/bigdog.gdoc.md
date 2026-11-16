@@ -10,7 +10,7 @@ Your reviews keep saying the same things: Jason and Matt answer every question, 
 After taking a good look, he told me I didn’t need a new roof yet.
 — josh C.
 
-That is the answer your homepage promises: "Repair or replace? Get an honest answer." So we built the first five pages: the homepage, roof replacement, storm damage and insurance claims, contact, and this page. Repair, metal roofing, gutters, siding and commercial roofing are on the homepage; each can get its own page in a full build.
+That is the answer your homepage promises: "Repair or replace? Get an honest answer." So we built the first five pages: the homepage, roof replacement, storm damage and insurance claims, contact, and this page.
 
 **The demo, page by page**
 
@@ -18,7 +18,7 @@ That is the answer your homepage promises: "Repair or replace? Get an honest ans
 *Why it matters:* It's the page most people see first.
 **Current site problem**
 - The headline, "Repair or replace? Get an honest answer.", never says roofing or Fort Wayne, so Google has to guess what you are and where. "Know who you're hiring" names neither Jason nor Matt, the two people your reviews name.
-- Your 15-year workmanship warranty and your insurance are not on it. They sit on the About and Warranty pages, so a visitor who never clicks never sees why to trust you.
+- Your 15-year workmanship warranty and your insurance are not on it. They sit on other pages, out of sight.
 - Claim help, emergency tarping, commercial roofing and soffit and fascia are not among its seven listed services.
 **What the demo fixes**
 - A headline that says Roofing Company in Fort Wayne, IN, with your honest-answer line right under it. Jason and Matt are named, with a customer's words about working with them.
@@ -62,7 +62,7 @@ That is the answer your homepage promises: "Repair or replace? Get an honest ans
 **A full build would also add** Call and form tracking that shows which pages and towns your leads come from.
 
 **What a full build includes**
-*This demo is the first five pages of a full build.*
+*Everything below is what a full build adds to these first five pages.*
 
 Gets you found
 - Every service on your website and your Google profile, telling the same story
