@@ -21,7 +21,7 @@ That is the answer your homepage promises: "Repair or replace? Get an honest ans
 
 The demo, page by page
 1. Homepage
-Why it matters: It's the page most people see first.
+Why it matters: It's where your reviews' praise for Jason, Matt and a clean yard should be the first thing a visitor sees.
 
 Current site problem
 
@@ -33,7 +33,7 @@ What the demo fixes
 
 A headline that says Roofing Company in Fort Wayne, IN, with your honest-answer line right under it. Jason and Matt are named, with a customer's words about working with them.
 The warranty and "insured contractor" are stated, in your own words.
-Every service has a heading or a plain line.
+Claim help, tarping, commercial roofing, and soffit and fascia each get a heading or a plain line.
 
 A full build would also add Google and AI tools can only repeat what's written down. We get every service, credential and what makes you different out of your head and onto your site and Google profile, so they all tell the same story.
 2. Roof Replacement
@@ -48,7 +48,7 @@ Solar panel removal and reinstall is only in a link at the bottom.
 What the demo fixes
 
 Reviews sit beside the parts of the job they prove.
-Financing is said once, on the homepage, in your financing page's words.
+Financing stays off the page until you tell us which of your two financing statements is right.
 Solar panels get their own section, in plain steps.
 
 A full build would also add Pages planned from what Google actually shows for each search, so every page targets something people really look for.
@@ -98,13 +98,13 @@ Built so Google and AI tools can read every page
 Earns their trust
 
 Reviews on every page, matched to the service
-About and owner pages that build your authority with Google and AI tools, so they know who stands behind the work
-A strip at the top of every page with your rating and credentials, so a customer sees why to pick you right away
+About and owner pages that show who does the work
+A trust bar that shows what makes you different
 
 Turns visitors into calls
 
-Scores 91 or higher on Google's mobile speed test at launch, in Google's "good" range
-A call-and-book bar that stays on screen on phones, where most of your visitors are. That's why the 91 matters: Google ranks on mobile speed because a slow page lets down the people on phones
+Scores 91 or higher on Google's mobile speed test at launch, in Google's "good" range. Most visitors are on a phone, and a slow page lets them down.
+A call-and-book bar that stays on screen on phones
 A contact form that blocks spam
 
 Keeps working after launch
@@ -112,29 +112,30 @@ Keeps working after launch
 Mobile page speed tested every 30 minutes, with a re-check within 5 minutes if a page slows down.
 Your site watched around the clock for downtime.
 Google indexing and your Google visibility checked every day.
-Menus, contact links and forms tested in a real browser twice a day.
+Page links, buttons and contact forms tested in a real browser twice a day.
 Updated when Google and AI tools change how they read websites
 You never have to know what to ask for
 
 What we'd confirm with you
 
-On a short onboarding call, we'd confirm three things.
+On a short onboarding call, we'd confirm four things.
 
 Your contact page gives 1690 Broadway Bldg 19, Ste 10 and also "Located at Electric Works." Same place?
 Your financing page names no lender, while a guide says you offer financing through GreenSky. Which is right?
 Which inspection timing is true: within an hour, 24 hours, 24 to 48 hours, or 48 to 72 hours?
+Your contact page lists hours of Monday to Friday, 8:00 AM to 6:00 PM, while your emergency pages offer tarping and emergency repair with no after-hours number. Do you take after-hours calls?
 
 Want a website like this for your business?
 
-Book a no-obligation call, or text us: (417) 373-2773
+Book a no-obligation call and we'll settle these four questions and put your real answers into the pages, or text us: (417) 373-2773
 Home — Roofing Company in Fort Wayne, IN — Big Dog Roofing
 Roof repair, replacement, storm damage and insurance claims, metal roofing, gutters and siding in Fort Wayne and Northeast Indiana.
 Roofing Company in Fort Wayne, IN — Big Dog Roofing
-Repair or replace? Get an honest answer. Leaks, storm damage or an aging roof: we do a 21-point inspection, take photos of what we find, and tell you whether the roof needs a repair or a replacement. Jason and Matt are the people you talk to, from the first call to the last day.
+Repair or replace? Get an honest answer. Leaks, storm damage or an aging roof: we do a 21-point inspection, take photos of what we find, and tell you whether the roof needs a repair or a replacement. Customers describe roof replacements finished in one day, and Jason and Matt are the people you talk to, from the first call to the last day.
 
 Buttons: Call 260.999.0347 | Get My Free Roof Inspection
 
-Trust bar: Free 21-Point Inspection | Insured Contractor | 15-Year Workmanship Warranty | Fort Wayne and Northeast Indiana | Roofing, Siding and Gutters
+Trust bar: Free 21-point inspection · 15-year workmanship warranty · Insured contractor · Local office, not a storm-chasing outfit · Customers describe one-day roof replacements
 
 Great price and service. Crew was ahead of schedule and finished the project in one day.
 
@@ -150,9 +151,9 @@ If solar panels are on the roof, we plan the removal and reinstall with the sola
 Roof Repair
 A ceiling stain or a missing shingle deserves a close look before anyone talks about a new roof. We find where the water is getting in, show you photos, and say whether a focused repair makes sense. Cracked pipe boots (the rubber collars around vent pipes), chimney flashing, ridge caps and wind-lifted shingles are common repairs.
 Storm Damage and Insurance Claims
-After hail or wind, we photograph the damage so you have a record to share with your insurance company. We can meet the adjuster when you ask us to. Your insurance company decides what it covers, and we don't promise a claim outcome. When a roof is leaking, we tarp it first.
+After hail or wind, we photograph the damage so you have a record to share with your insurance company. We can meet the adjuster when you ask us to. Your insurance company decides what it covers, and we don't promise a claim outcome. Customers have also had us tarp a leaking roof.
 Metal Roofing
-A metal roof costs more up front than asphalt, and it can last far longer. We install standing seam, with concealed fasteners and clean vertical lines, and corrugated, a more accessible option with exposed fasteners. We compare the whole roof system for your house, not one rating for every metal roof.
+A metal roof costs more up front than asphalt, and it can last far longer. We install standing seam, with concealed fasteners and clean vertical lines, and corrugated, a more accessible option with exposed fasteners. The fair comparison is the whole roof system for your house, not one rating for every metal roof.
 
 Big Dog Roofing took care of our metal roof! Did an excellent job and had a fair price for it all!
 
@@ -170,7 +171,7 @@ Their understanding of TPO roofing, flat roofs, and large-scale commercial roof 
 
 — Alexus S.
 Who You'll Deal With
-We're locally rooted, based at Fort Wayne's Electric Works campus. We're not a fly-in franchise or a storm-chasing outfit. Matt Yerington is the owner.
+We're not a fly-in franchise or a storm-chasing outfit. Our office is at 1690 Broadway, Bldg 19, Ste 10 in Fort Wayne, and Matt Yerington is the owner.
 
 I've never needed a new roof this badly before so I was definitely nervous but Jason walked me through the entire process and always kept in constant contact to help my anxiety with the process.
 
@@ -183,8 +184,6 @@ Fair deal and fantastic communication.  They left the yard better than they foun
 — John W.
 Who Stands Behind the Work
 Our 15-year craftsmanship warranty covers our workmanship. If it fails, we come back and make it right at no charge. The signed warranty document in your contract has the exact terms. We are an insured contractor.
-Payment
-If you want to spread out the cost, tell us. We'll confirm which options, if any, are available for your project. Any financing is subject to the lender's terms and approval.
 What Happens Next
 Send your name and phone number.
 We talk through your project and set up the right inspection or review.
@@ -195,6 +194,12 @@ Questions
 Do I need a repair or a replacement? That depends on the roof. The inspection answers it, with photos.
 
 Do you help with insurance claims? Yes, on the contractor side. We document the damage and can meet the adjuster.
+
+How quickly can someone look at my roof? Customers describe jobs finished in one day and quick answers to their questions. Call 260.999.0347 and we'll set up the free inspection.
+
+How long does a roof replacement take? For a standard house, usually one full day. A larger house, a steep roof or extra decking repair can mean a second day.
+
+Is the inspection free? Yes. The 21-point inspection is free, and you get photos of every finding.
 Let's Talk About Your Roof
 You don't need all the answers before you call. Tell us what you've noticed, and we'll help you work out the next step.
 
@@ -202,7 +207,7 @@ Buttons: Call 260.999.0347 | Get My Free Roof Inspection
 Roof Replacement — Roof Replacement in Fort Wayne, IN — Big Dog Roofing
 Roof replacement, Fort Wayne and Northeast Indiana
 Roof Replacement in Fort Wayne, IN — Big Dog Roofing
-Know what your new roof includes before you commit. We compare materials with you, put the scope in writing, and give you an honest repair-or-replace recommendation first.
+Know what your new roof includes before you commit. We compare materials with you, put the scope in writing, and give you an honest repair-or-replace recommendation first. Customers describe full tear-offs and new roofs finished in a day or two.
 
 Buttons: Call 260.999.0347 | Get My Free Estimate
 
@@ -244,7 +249,7 @@ They replaced our house and garage roof with a steel roof.  Even with a complete
 
 — Janet C.
 Your Quote and Extra Findings
-You get the scope, the materials and any allowances in a written estimate. If tear-off turns up hidden damage that changes the scope, we discuss it with you before we do additional work. That's the question to ask any roofer: what could change, and how will you tell me before it does?
+You get the scope, the materials and any allowances in a written estimate. If tear-off turns up hidden damage that changes the scope, a good estimate says up front how that will be handled. That's the question to ask any roofer: what could change, and how will you tell me before it does?
 
 They were the only one to offer pay nothing until the job was  complete.
 
@@ -272,6 +277,10 @@ I received quotes from 6 different companies and Big Dog Roofing beat them all i
 Questions
 Can you replace a roof in winter? Often, on a clear day above freezing. Expect a reschedule or two if snow or ice comes.
 
+How long does a replacement take? For a standard house, usually one full day. A larger house, a steep roof or extra decking repair can mean a second day. Customers describe tear-offs finished in one or two days.
+
+How soon can you start? Customers describe a crew that arrived when they said and finished ahead of schedule. Call 260.999.0347 and we'll set up a time to look at the roof.
+
 Do I have to be home? No. Many homeowners stay home, and some leave for the day.
 Ready for a New Roof?
 Call 260.999.0347 or send us your name and number. We'll set up a time to look at the roof and tell you what it needs.
@@ -280,11 +289,11 @@ Buttons: Call 260.999.0347 | Get My Free Estimate
 Storm Damage and Insurance Claims — Storm Damage and Insurance Claims in Fort Wayne, IN — Big Dog Roofing
 Storm damage, Fort Wayne and Northeast Indiana
 Storm Damage and Insurance Claims in Fort Wayne, IN — Big Dog Roofing
-Hail, wind, a leak or a limb through the shingles. We inspect the roof, tarp it if water is coming in, photograph the damage, and explain what comes next. Your insurance company decides what it covers.
+Hail, wind, a leak or a limb through the shingles. We inspect the roof, photograph the damage, and explain what comes next. Customers who were in a pinch describe us coming through quickly, including tarping a roof that was leaking. Your insurance company decides what it covers.
 
 Buttons: Call 260.999.0347 | Request a Storm Inspection
 
-Trust bar: Free Storm Inspection | Photo and Video Documentation | Adjuster Meetings When Requested | Emergency Tarping
+Trust bar: Free Storm Inspection | Photo and Video Documentation | Adjuster Meetings When Requested | Quick Response, Customers Say
 
 Jason was very easy to work with and very helpful with the insurance company
 
@@ -313,8 +322,8 @@ Policies commonly pay either replacement cost or actual cash value. With actual 
 They did a soft sell, not two guys hammering you to decide now.
 
 — Brad G.
-Emergency Tarping
-When water is coming in, the first job is to stop it. We tarp exposed areas, board up openings and contain active leaks, then inspect and document the damage once the house is protected. After that, we explain the permanent repair or replacement.
+Tarping a Leaking Roof
+When water is coming in, stopping it comes first. Customers have also had us tarp the part of a roof that was leaking, with the inspection and documentation following once the house was protected. After that, we explain the permanent repair or replacement.
 
 They came out and tarped up the part of the roof that was leaking.
 
@@ -322,7 +331,7 @@ They came out and tarped up the part of the roof that was leaking.
 Be Careful With Door-Knockers
 After a big storm, out-of-town contractors often go door to door. Not every one of them is a problem, but a few habits are worth watching for. Be cautious about a large deposit before any work starts. Don't sign an assignment of benefits without understanding it, because it can hand control of your claim to the contractor. An offer to waive or absorb your deductible is a red flag, and Indiana law generally treats that as insurance fraud.
 
-Our office is at Electric Works, in Fort Wayne, so you know where to find us after the storm.
+Our office is at 1690 Broadway, Bldg 19, Ste 10 in Fort Wayne, so you know where to find us after the storm.
 Repair or Replace After a Storm
 Not every storm means a new roof. Damage to a few shingles on a roof that is otherwise sound is usually a repair. Damage across several slopes, or on a roof already near the end of its life, more often points toward replacement. Your insurer may judge it differently than we do, and that's one reason to have someone explain it to you.
 The Rest of the Exterior
@@ -335,6 +344,10 @@ Questions
 Should I file a claim? We inspect, document the damage and explain whether filing makes sense before you call your insurance company. For deadlines, deductibles and premium effects, ask your agent or insurer.
 
 What if the damage is on a commercial building? We document commercial roofs, gutters, coping and soft metals the same way.
+
+What if I don't see any damage? A close look is still worth having. If we don't find damage, we tell you.
+
+How soon can the storm inspection happen? Customers describe quick help when they were in a pinch. Call 260.999.0347 and we'll set up the free storm inspection.
 Hurt by a Storm?
 Call 260.999.0347 and tell us what happened. We'll set up a time to look at the roof and explain what comes next.
 
@@ -347,7 +360,7 @@ Buttons: Call 260.999.0347 | Email Us
 How to Reach Us
 Phone: 260.999.0347
 Email: team@bigdogroofing.org
-Address: 1690 Broadway Bldg 19, Ste 10, Fort Wayne, IN 46802, at Electric Works
+Address: 1690 Broadway Bldg 19, Ste 10, Fort Wayne, IN 46802
 Hours: Monday to Friday, 8:00 AM to 6:00 PM. Saturday and Sunday by appointment.
 Stop By the Office
 You can visit the office during business hours, and we welcome walk-ins. Seeing where a roofer works and who you're hiring is a sensible thing to do before you sign anything.
@@ -359,7 +372,7 @@ What you're seeing: a leak, missing shingles, a stain on the ceiling, damaged gu
 Whether a storm is involved and whether you've contacted your insurance company
 The year the roof was installed, if you know it
 Water Coming In
-If water is coming through a ceiling or wall, say so when you call, and tell us where you see it. Move belongings away from the drip and put a bucket under it. We'll talk you through what to do while we arrange to protect the roof.
+If water is coming through a ceiling or wall, say so when you call, and tell us where you see it. Move belongings away from the drip and put a bucket under it. We'll talk you through what to do in the meantime.
 Send Us Your Details
 Send your name and phone number. You can tell us what you need help with, or leave it blank:
 
@@ -370,7 +383,7 @@ Roof repair
 Metal roofing
 Gutter services
 Siding, soffit and fascia
-Emergency roof repair
+Leaking roof
 Insurance claim assistance
 Where We Work
 We're based in Fort Wayne and work across Northeast Indiana: New Haven, Huntertown, Leo-Cedarville, Roanoke, Auburn, Columbia City, Angola, Bluffton, Churubusco, Decatur, Grabill, Huntington, Kendallville, Marion, Ossian and Warsaw. If your town isn't on the list, call and ask.
@@ -396,7 +409,7 @@ Owner: "Matt Yerington is the owner" is from the About page (OWNER/MEMBER). Jaso
 Inventory items left out, and why
 
 Veteran-owned: two reviews only (Tracey P., 805Razor); the site doesn't say it. Neither review is quoted. Not on the site, so not claimed; left for the onboarding call.
-Financing: used once, on home, in the financing page's own cautious words. The guide's "offers financing plans" and eydie S.'s finance-option review are not used (conflict). Confirm item.
+Financing: left out of the page copy (conflict, a confirm item). The guide's "offers financing plans" and eydie S.'s finance-option review are not used (conflict). Confirm item.
 Free storm inspection "within 24 hours", "response in under an hour", "24 to 48 hours" and "48-72 hours": none used; they conflict. Confirm item.
 "We don't collect payment until the work is completed" (insurance page) conflicts with the guide's deposit structure. Not stated as policy; only Dennis E.'s quote appears.
 "Hundreds of local homeowners", "hundreds of roofs", "95% on-time", "thousands of Fort Wayne homeowners": unsourced counts, left out.
