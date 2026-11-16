@@ -4,6 +4,7 @@
 - **No Google/Yelp star ratings or review counts; BBB letter grades are credentials and allowed if confirmed** (FF, Nov 16). This covers "What we'd confirm" too.
 - **No ratings or review counts in "What we'd confirm" either.** Example: "5.0 on Angi and Yelp vs 4.9 Google". Ask about the unnamed claim without the numbers.
 - **Plurals match the evidence.** One job note is "a customer had us install a power-vent heater", not "we've installed power-vent heaters".
+- **After cutting a line or clause, re-read the sentence that's left: it must stand on its own** (FF, Nov 16; a cut subject garbled Cutter's Contact).
 - **No unsourced business-voice process lines** ("we bring the right parts", "we try to leave it as we found it"). Cut them, or say what one customer noticed.
 - **Define each trade word once per page, the first time it appears** (adjuster, deductible, soffit, fascia, valley, eaves, TPO…). Never define it twice on a page.
 - **An FAQ answer must not repeat a paragraph on the same page.** Move the detail into the FAQ and cut it from the page, or drop the FAQ.

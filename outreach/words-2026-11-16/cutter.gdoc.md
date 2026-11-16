@@ -389,7 +389,7 @@ Ask about touring our model home, which shows the materials and finishes we'd ch
 
 ### What Happens After You Call
 
-Start with what you want and what the project involves. A bigger one, like an addition or a garage, can start with just the idea.
+We start with a conversation about what you want and what the project involves. A bigger job, like an addition or a garage, can start with just the idea.
 
 > We had a time sensitive manner that we needed a second option on. Bryan was amazing. He helped us out and put our mind at ease.
 >
