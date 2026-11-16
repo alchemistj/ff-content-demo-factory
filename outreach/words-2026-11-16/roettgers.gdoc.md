@@ -4,9 +4,9 @@ Draft for review. Sources: the business's own site, Google reviews, facts.md. Qu
 
 ## Strategy page
 
-**Built for Roettger's Heating and Cooling**
+**Free demo site built for Roettger's Heating and Cooling**
 
-# We built Roettger's Heating and Cooling a website that says what your customers already say.
+# We already did the work. Here's a Roettger's Heating and Cooling website that tells Lincoln who you are and gets the phone ringing.
 
 Your site shapes your Google ranking, what AI says about your business, and how easy you are to reach.
 
@@ -24,7 +24,7 @@ We led the demo with one idea: call Matt, and you know when we're coming. We bui
 
 **Current site problem**
 
-- The headline (the big line at the top of the page) never says HVAC, heating or air conditioning, so Google has no phrase to match to someone searching for an HVAC company in Lincoln.
+- The headline (the big line at the top of the page) doesn't say HVAC, heating or air conditioning. The only mention is a small line under it, so Google has little to match to someone searching for an HVAC company in Lincoln.
 - "Cooling" sits over the maintenance paragraph and "Maintenance" over the air conditioning paragraph, so a visitor looking for AC reads about tune-ups first.
 
 **What the demo fixes**
@@ -41,7 +41,7 @@ View page
 **Current site problem**
 
 - AC repair is one sentence on your services page, with no page of its own, so someone searching for AC repair in Lincoln has nothing to land on.
-- "Quickly" is the only speed your site claims, while your reviews give real times: Matt came out within an hour and fixed it in 20 minutes.
+- "Quickly" and "fast" are the only speed your site claims, while your reviews give real times: Matt came out within an hour and fixed it in 20 minutes.
 
 **What the demo fixes**
 
@@ -56,7 +56,7 @@ View page
 
 **Current site problem**
 
-- Replacement is one sentence in the cooling paragraph, so nothing exists for someone searching for air conditioner replacement in Lincoln.
+- Replacement is one line on your services page, so nothing exists for someone searching for air conditioner replacement in Lincoln.
 - Your repair-or-replace answer and equipment brand are on the FAQs page, not where someone decides.
 
 **What the demo fixes**
@@ -86,7 +86,7 @@ View page
 
 ### What's already working
 
-Every page in your menu loads and your phone number is tap-to-call on every page. What needs work: a leftover shopping cart page not in your menu, and "FAQs 2" as your FAQ page's tab name.
+Every page on your site loads and your phone number is tap-to-call on every page. What needs work: a leftover shopping cart page, and "FAQs 2" as your FAQ page's tab name.
 
 ### What a full build includes
 
@@ -102,13 +102,13 @@ The demo is the first five pages. A full build covers the rest of your services 
 **Earns their trust**
 
 - Reviews on every page, matched to the service
-- About and owner pages that show who does the work
-- A trust bar that shows what makes you different
+- About and owner pages that build your authority with Google and AI tools, so they know who stands behind the work
+- A strip at the top of every page that shows what makes you different, so a customer sees why to pick you right away
 
 **Turns visitors into calls**
 
 - Scores 91 or higher on Google’s mobile speed test at launch, in Google’s “good” range
-- A call-and-book bar that stays on screen
+- A call-and-book bar that stays on screen on phones, where most of your visitors are
 - A contact form that blocks spam
 
 **Keeps working after launch**
@@ -116,7 +116,7 @@ The demo is the first five pages. A full build covers the rest of your services 
 - Mobile page speed tested every 30 minutes, with a re-check within 5 minutes if a page slows down.
 - Your site watched around the clock for downtime.
 - Google indexing and your Google visibility checked every day.
-- Menus, contact links and forms tested in a real browser twice a day.
+- Page links, buttons and contact forms tested in a real browser twice a day.
 
 ### What we'd confirm with you
 
@@ -124,7 +124,8 @@ We'd go through these on the onboarding call. Each is a place where two things w
 
 1. **Brand.** Your FAQ says you install Comfortmaker equipment, and we couldn't find you in Comfortmaker's dealer finder. One review says you replaced a system with a Rheem. Which brands do you install?
 2. **Years.** Your About text says the company was established in 2022 and also says it's backed by more than 10 years of experience. What do you want said?
-3. **Address and hours.** Your site shows "Lincoln, NE and surrounding areas" and no street address or hours. A BBB search result lists "Roettger's Heating And Cooling, LLC" in Roca, NE. Where are you based, and when do you answer the phone?
+3. **Address.** Your site shows "Lincoln, NE and surrounding areas" and no street address. A BBB search result lists "Roettger's Heating And Cooling, LLC" in Roca, NE. Where are you based?
+4.  Hours. Your site lists no hours, and your FAQ says you offer emergency service. When do you answer the phone?
 
 ### Want a website like this for your business?
 
@@ -393,7 +394,7 @@ Call (402) 314-3612 and speak directly with Matt to describe the problem and set
 
 ### Send a Message
 
-Email <roettgersheatingandcooling@gmail.com>, or fill out the form below with your name, phone number, email and a message. Tell us whether the problem is heating or cooling, what the system is doing, and when someone will be home. We'll get back to you as soon as we can.
+Email <roettgersheatingandcooling@gmail.com>, or send a message with your name, phone number and what's going on. Tell us whether the problem is heating or cooling, what the system is doing, and when someone will be home. We'll get back to you as soon as we can.
 
 ### What Happens After You Contact Us
 
@@ -417,7 +418,7 @@ If you're not sure whether you need a repair, a tune-up or a replacement, ask. W
 
 ### Ready When You Are
 
-Call (402) 314-3612, or send a message with the form above.
+Call (402) 314-3612, or send us a message.
 
 ## Notes (not page copy)
 
