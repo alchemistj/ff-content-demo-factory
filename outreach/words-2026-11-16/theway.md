@@ -115,7 +115,7 @@ Keeps working after launch
 - Mobile page speed tested every 30 minutes, with a re-check within 5 minutes if a page slows down.
 - Your site watched around the clock for downtime.
 - Google indexing and your Google visibility checked every day.
-- Menus, contact links and forms tested in a real browser twice a day.
+- Page links, buttons and contact forms tested in a real browser twice a day.
 - Updated when Google and AI tools change how they read websites
 - You never have to know what to ask for
 
@@ -220,7 +220,7 @@ Jack and Honey, our golden retrievers, are the official heads of morale. They do
 
 **Will a claim raise my premiums?** That depends on your insurance company, so ask them before you file. We can tell you what we see on the roof either way.
 
-**How soon can you come out after a storm?** Everyone calls at once after a big storm, so call early. We usually get to people within a day or so.
+**How soon can you come out after a storm?** Everyone calls at once after a big storm, so call early. Tell us if water is coming in, and we'll tell you what can be done to protect the house in the meantime.
 
 **Do you charge for the inspection?** No. It's free, and you keep the written report and the photos either way.
 
@@ -266,7 +266,7 @@ We walk you through the differences with samples, so you choose for your house a
 
 ### Metal Strips and Attic Air
 
-We inspect the metal strips sealed around chimneys, skylights and walls and replace them as needed. A strip that was fine under an old roof can fail under a new one, because it's cheaper to replace it now than to open the new roof later. We also confirm that air can move along the peak of the roof, and correct it if it can't.
+We inspect the metal strips sealed around chimneys, skylights and walls and replace them as needed. A strip that held up under the old roof can wear out years before the new one does, and replacing it now costs far less than opening the new roof later. We also confirm that air can move along the peak of the roof, and correct it if it can't.
 
 ### What a Replacement Costs in Evansville
 
