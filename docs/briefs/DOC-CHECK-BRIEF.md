@@ -7,14 +7,20 @@ You didn't write this. Check `/home/user/ff-content-demo-factory/outreach/words-
 - `inventory.md`, `site/`, `reviews.json` and `facts.md`;
 - the closest model page in `examples/approved-copy/` or the Lovable builds.
 
-**Fix small issues directly in the file:**
+**Actively search for each of these (not just read); fix small issues directly in the file:**
+- every conflict logged in Notes: search the copy for it (FAQ, hero line, quotes under contradicting headings) and fix leaks;
+- credentials inventory marks as not on their site or contradicted, said flatly: cut, or move to "What we'd confirm";
+- website talk on Contact ("the form asks…", "send the form any hour");
+- case studies / portfolio jobs on their site neither used nor explained in Notes;
+- step-by-step homeowner instructions (DIY manual): cut to essentials;
+- "What we'd confirm" bundles: make it 3-4 single questions;
 - a claim stronger than its source, or an absolute claim copied from their site that isn't hedged;
 - an invented credential, license, award, year or guarantee (cut it); a site-sourced one is fine in the owner's voice, and a conflict belongs in "What we'd confirm" (never drop a top differentiator);
-- unexplained trade jargon (tear-off, decking, flashing, ACV, RTUs, brand product names): plain phrase or explain once;
-- an idea or catchphrase repeated on a page or across pages (e.g. the same staff-role line);
+- unexplained trade jargon (tear-off, decking, flashing, ACV, RTUs, TPO, EPDM, curbs, coping, "soft metals", soffit, fascia, brand product names): plain phrase or explain once;
+- an idea repeated anywhere in the doc (same repair-or-replace line, insurer-decides line, tech explainer, staff-role line): one idea, one place;
 - review-inferred process or reply speed stated as policy or repeated: change to "usually"/"often", once;
 - trade-knowledge filler not specific to this business's services and area;
-- a home section with a one-line body plus quotes: flag as thin (writer adds content or cuts it);
+- a thin section (two sentences plus a quote) on any page, or three sections in a row each ending in a quote: flag (writer adds content or cuts);
 - a repeat;
 - jargon;
 - a report-style line;

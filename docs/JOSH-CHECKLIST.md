@@ -196,6 +196,24 @@ Origin note: most commit messages in #41 to #64 say only what changed, not why. 
 
 84. **Home sections are not thin.** PASS if no home section is a one-line body plus quotes; each has real content or is cut. [Nov 16 Josh] Pages: home.
 
+85. **Logged conflicts do not leak into copy.** PASS if a search of the copy for every conflict logged in Notes finds none in the FAQ, hero line, or a quote under a contradicting heading. [Nov 16 Josh] Pages: all.
+
+86. **Unbacked credentials are not asserted.** PASS if anything inventory marks as not on their site or contradicted is cut or in "What we'd confirm", never a flat assertion; their own-site claims said as theirs are fine. [Nov 16 Josh] Pages: all.
+
+87. **One idea, one place across the doc.** PASS if no idea repeats anywhere (repair-or-replace line, insurer-decides line, same tech explainer). [Nov 16 Josh] Pages: all.
+
+88. **Homeowner jargon is plain.** PASS if TPO, EPDM, curbs, coping, "soft metals", soffit, fascia and similar have a plain word or quick explanation. [Nov 16 Josh] Pages: home, services.
+
+89. **No website talk on Contact.** PASS if Contact has no "the form asks…" or "send the form any hour" lines. [Nov 16 Josh] Pages: contact.
+
+90. **Case studies and portfolio jobs are used or logged.** PASS if each one on their site appears in the copy or has a reason in Notes. [Nov 16 Josh] Pages: all.
+
+91. **Trade knowledge is not a DIY manual.** PASS if step-by-step homeowner instructions are cut to essentials. [Nov 16 Josh] Pages: services.
+
+92. **"What we'd confirm" is 3-4 single questions**, not bundles. [Nov 16 Josh] Pages: strategy.
+
+93. **No thin sections or quote runs.** PASS if no section is two sentences plus a quote (real content or cut) and no three sections in a row each end in a quote. [Nov 16 Josh] Pages: all.
+
 ---
 
 ## Reviewer table (copy per demo)

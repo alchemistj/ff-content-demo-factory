@@ -32,8 +32,9 @@ Write five pages:
   - About and owner pages build authority with Google and AI, and trust with customers.
   - Only the standard lines, with the scope truthful: the demo is "the first five pages".
 - **Service pages carry hedged general trade knowledge** (what usually fails and why, what to check before calling, safety, repair-vs-replace rules, what happens on a visit), in the owner's voice, hedged ("usually", "often"). Only BUSINESS claims (services offered, credentials, speed, guarantees, prices, promised process) need a source in `site/`, `facts.md` or `reviews.json`. Trade knowledge must be specific to this business's services and area, tight, not filler. Reach 700+ words with substance, never padding; no repeats. Model: `examples/demo-drafts/comforttechs-lincoln-words.json` (furnace page).
-- **Cut shallow sections** that aren't Window Dudes deep. Card grids don't need headings. Keep blocks short. Home must not feel thin: a home section with a one-line body plus quotes is thin; give it real content or cut it.
+- **Cut shallow sections** that aren't Window Dudes deep. Card grids don't need headings. Keep blocks short. Home must not feel thin: a section of two sentences plus a quote is thin; give it real content or cut it, and never run three sections that each end in a quote.
 - **Strategy page:**
+  - "What we'd confirm" is 3-4 single questions, not bundles.
   - Put the call to action after "What we'd confirm with you", not before.
   - No generic lead-in. Bridge from the reviews to the page plan.
   - Check each page's own problems; keyword stuffing differs from page to page.
@@ -45,11 +46,14 @@ Write five pages:
 - **Hard rules:**
   - **Review quotes:** word for word, once each across the site. No review summaries.
   - **No two review quotes back to back** anywhere on a page (the models never do it); put copy between them.
-  - **The site:** no website talk on the business pages.
+  - **The site:** no website talk on the business pages, Contact included ("the form asks…", "send the form any hour").
+  - **Case studies / portfolio jobs** on their site are real material: use them or log in Notes why not.
+  - **No DIY manual:** trade knowledge explains; cut step-by-step homeowner instructions to essentials.
   - **Other companies:** no claims about them.
-  - **Credentials:** defined once, on home. The business's own site claims (certs, licenses, financing, warranty, paperwork help) are usable in their voice, stated as their claim. Hard nos: claims WE invent (licenses, certs, awards, years, guarantees). If sources conflict, put it in "What we'd confirm"; never drop a top differentiator.
-  - **Jargon:** explain or skip trade jargon on business pages (tear-off, decking, flashing, ACV, RTUs, brand product names): use a plain phrase or explain once.
-  - **Say each idea once per page** and vary it across pages; no repeated catchphrases (e.g. the same staff-role line 10 times).
+  - **Credentials:** defined once, on home. The business's own site claims (certs, licenses, financing, warranty, paperwork help) are usable in their voice, stated as their claim. Hard nos: claims WE invent (licenses, certs, awards, years, guarantees). Anything inventory marks as not on their site or contradicted is cut or moved to "What we'd confirm", never a flat assertion; never drop a top differentiator.
+  - **Conflicts stay in Notes:** a conflict logged in Notes must not leak into copy (FAQ, hero line, or a quote under a contradicting heading).
+  - **Jargon:** explain or skip trade jargon on business pages (tear-off, decking, flashing, ACV, RTUs, brand product names): use a plain phrase or explain once. Also TPO, EPDM, curbs, coping, "soft metals", soffit, fascia.
+  - **One idea, one place across the whole doc** (e.g. the same repair-or-replace line, the insurer-decides line, the same tech explainer); vary across pages; no repeated catchphrases (e.g. the same staff-role line 10 times).
   - **Review-inferred things** (visit process, reply speed): only "usually"/"often", never as policy, never repeated.
   - **Absolute claims copied from their site** ("always", "never", "100%"): hedge them.
   - **Claim strength:** match the source exactly.
