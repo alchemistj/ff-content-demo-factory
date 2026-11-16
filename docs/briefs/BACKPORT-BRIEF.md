@@ -1,6 +1,7 @@
 # Brief: one in-place backport pass on ONE finished doc (Sonnet)
 
 ## New patterns from FF's Josh-voice passes on Wickey, Big Dog and Cool Concepts (Nov 16). Check every one.
+- **No Google/Yelp star ratings or review counts; BBB letter grades are credentials and allowed if confirmed** (FF, Nov 16). This covers "What we'd confirm" too.
 - **No ratings or review counts in "What we'd confirm" either.** Example: "5.0 on Angi and Yelp vs 4.9 Google". Ask about the unnamed claim without the numbers.
 - **Plurals match the evidence.** One job note is "a customer had us install a power-vent heater", not "we've installed power-vent heaters".
 - **No unsourced business-voice process lines** ("we bring the right parts", "we try to leave it as we found it"). Cut them, or say what one customer noticed.

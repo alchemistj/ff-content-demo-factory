@@ -108,7 +108,7 @@ def main(paths):
             if name.startswith("Notes"):
                 continue
             for l in lines:
-                if not l.lstrip().startswith(">") and re.search(r"\b[1-5]\.\d\b[^.\n]{0,40}(google|yelp|angi|stars?|rating|bbb)|\b\d[\d,]* (google |online |five-star |5-star )?reviews\b|\brated [1-5]\.\d", l, re.I):
+                if not l.lstrip().startswith(">") and re.search(r"\b[1-5]\.\d\b[^.\n]{0,40}(google|yelp|angi|stars?|rating)|\b\d[\d,]* (google |online |five-star |5-star )?reviews\b|\brated [1-5]\.\d", l, re.I):
                     bad = True
                     print(f"FAIL {fname} | {name[:40]} | rating or review count in copy: {l.strip()[:70]}")
                 for tgt in re.findall(r"\]\(([^)]*)\)", l):

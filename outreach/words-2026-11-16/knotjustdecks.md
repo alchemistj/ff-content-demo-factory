@@ -195,15 +195,15 @@ Our financing partner is Lyon Financial. One plan can cover several services bun
 
 ### Questions before you call
 
-#### Which towns do you work in?
+**Which towns do you work in?**
 
 We work across Northeast Indiana, Northwest Ohio and Southern Michigan, including Fort Wayne, New Haven, Huntertown, Columbia City, Defiance, Angola, Warsaw and Coldwater.
 
-#### Can one company handle more than one project?
+**Can one company handle more than one project?**
 
 Yes, and many homeowners pair them. We can help coordinate a deck with a garage floor coating, a pergola, gutters or a new roof, so the exterior is planned as one job.
 
-#### Do you service flagpoles and flags?
+**Do you service flagpoles and flags?**
 
 Yes, we service residential and commercial flagpoles and flags, as well as selling and installing them.
 
@@ -277,19 +277,19 @@ A deck can be the start of a larger outdoor space. Many homeowners add a pergola
 
 ### Questions before you build
 
-#### How long does a deck take?
+**How long does a deck take?**
 
 Most deck projects take two to four weeks from start to finish, depending on size and complexity. Rain and frozen ground can add days.
 
-#### Can you build a deck in winter?
+**Can you build a deck in winter?**
 
 Yes. We build all year long, not just in spring. Frozen ground and snow can slow digging and concrete work, so a winter start often depends on the weather.
 
-#### Does a deck need a permit?
+**Does a deck need a permit?**
 
 In most places a new deck does, and a rebuild can too. The rules depend on your town and on the size and height of the deck. Building without a permit can lead to fines, forced removal and problems when you sell your home.
 
-#### Can I change something once building starts?
+**Can I change something once building starts?**
 
 Customers have made changes during construction. A change after the drawing is signed can affect the price and the schedule, so tell your project manager as early as you can.
 
@@ -345,19 +345,19 @@ A failing roof can let water into the house, damaged gutters, deteriorating sidi
 
 ### Roofing questions
 
-#### How long does an asphalt shingle roof last?
+**How long does an asphalt shingle roof last?**
 
 Often 20 to 30 years, and sometimes more or less. Ventilation, the weather your roof has seen, how well it was installed and any storm damage all change the number.
 
-#### Is metal roofing worth it?
+**Is metal roofing worth it?**
 
 It depends on your budget and how long you plan to stay. Metal usually costs more at the start and often lasts longer than asphalt, so it can suit a home you plan to keep.
 
-#### Does a new roof need a permit?
+**Does a new roof need a permit?**
 
 Sometimes. The rules depend on your town, so the local permit office has the final word.
 
-#### Should I call my insurer or a roofer first?
+**Should I call my insurer or a roofer first?**
 
 Report the storm soon after it happens, because policies often set a deadline for reporting damage. Then call us for an inspection. What gets paid is your company's call. We can document the damage but can't promise coverage.
 

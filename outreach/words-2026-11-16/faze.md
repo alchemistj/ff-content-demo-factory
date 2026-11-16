@@ -384,7 +384,8 @@ info@fazeconstruction.com. Send your address and a few photos if you have them.
 
 ### What to Have Ready
 
-- The address of the house.
+- The address of the house and your town, so we can confirm we work there.
+- Any ceiling stains or leaks you've noticed inside, and when they started.
 - Roughly how old the roof or siding is, and what it's made of now.
 - Photos of any damage, taken from the ground, and the date of the storm if there was one.
 - If you've already filed a claim with your insurance company, the claim details.
@@ -411,11 +412,11 @@ Call (260) 226-8800 and tell us about your roof or siding.
 **Rebuild reason:** SEO. The homepage headline reads "Indiana | Ohio Roofing, Siding & Remodeling Contractor" with no Fort Wayne, and the siding, gutters and window pages name no city (qualify.md).
 
 **Word counts** (script count, ignoring Markdown marks; "without quotes" excludes blockquotes, buttons and the strip; "with" is everything on the page)
-- Strategy: COUNT_S
-- Home: COUNT_H
-- Roof Replacement: COUNT_R
-- Siding Replacement: COUNT_SI
-- Contact: COUNT_C
+- Strategy: 1139 without quotes, 1167 with (the one quote; badge, headline, subheading and full-build list counted). About 140 over the soft 1,000 cap, mostly the fixed full-build list; kept for four full cards
+- Home: 616 without quotes, 720 with
+- Roof Replacement: 1122 without quotes, 1221 with. Meets 700+ without padding
+- Siding Replacement: 1139 without quotes, 1167 with (the one quote; badge, headline, subheading and full-build list counted). About 140 over the soft 1,000 cap, mostly the fixed full-build list; kept for four full cardsI
+- Contact: 264 without quotes, 288 with
 
 **Credentials and sources** (none checked on a certifier's own site; each is the business's claim, stated as theirs)
 - Locally owned and operated: `/about`, home. Home only, and the strip.
