@@ -1,6 +1,6 @@
 # https://www.myprocomfort.com/sitemap
 
-- Fetched: 2026-11-16T03:45:35.831Z (rendered in a real browser)
+- Fetched: 2026-11-16T03:48:36.100Z (rendered in a real browser)
 - HTTP: 403
 - Title: Request blocked
 - H1: Request blocked

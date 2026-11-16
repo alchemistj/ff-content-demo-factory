@@ -111,7 +111,7 @@ We repair, install and maintain heating and cooling for homes and businesses in 
 
 ### When it fails after office hours
 
-Heating and cooling failures happen at night and on weekends, when the office is closed. We run an after-hours emergency service for homes and businesses, so call (309) 699-3333 and a person will take your call.
+Heating and cooling failures happen at night and on weekends, when the office is closed. We run an after-hours emergency service for homes and businesses, so call (309) 699-3333.
 
 Call and ask us what the visit will cost. Then you decide whether it needs a technician tonight or can wait until morning.
 
@@ -369,15 +369,6 @@ Use the form for a regular visit. We do our best to respond within a few hours. 
 - Whether it is for a home or a business
 - What is going on, in your own words
 
-### What to tell us
-
-- What the system is doing, or not doing
-- Whether it heats, cools or both
-- How old the system is, if you know
-- The make, if you have it handy
-
-We service all makes and models, and you don't need the model number to call.
-
 > At 10 PM I called TSI.  The gentleman that answered was so helpful & patient.  He talked me through a few things to do to try to find the problem.
 >
 > — Linda K.
@@ -398,7 +389,7 @@ We serve homes in Peoria and the towns around it. For businesses, we work in Peo
 | Home | 926 | 507 |
 | Air Conditioning Repair | 719 | 509 |
 | Furnace Repair | 705 | 473 |
-| Contact | 303 | 270 |
+| Contact | 251 | 218 |
 
 Home is 550+ only with quotes (507 in our own words). The two service pages and contact clear their minimums with quotes counted; the service pages are about 460 to 510 in our own words, so they lean on the reviews and the site's Q&A for length. Nothing was padded.
 
@@ -406,7 +397,7 @@ Home is 550+ only with quotes (507 in our own words). The two service pages and 
 - "Trust A+ BBB Rated Company" (site home and promotions). The BBB profile link returned HTTP 403 with a bot challenge, so no rating could be read. Needs a manual check at bbb.org.
 - "A Proud Ameren Energy Efficiency Partner / registered Program Ally" (site home and residential). No Ameren page naming Thermal Services was found, and Ameren's ally directory could not be searched. Ameren's residential ally form says allies need the ICC Energy Efficiency Installer Certification "if applicable" (https://cloud.ee.ameren.com/ResidentialPAapplication); the site names none, so it is not claimed.
 - "Union-trained, certified, and licensed technicians" (site home), "trained and certified" for chillers and generators. No license numbers or certifying body anywhere.
-- Strategy-page item 9 asks the owner for the BBB link, the Ameren details and license numbers.
+- The strategy page's last confirm question covers the BBB, Ameren and license claims (trimmed to fit the 1,000-word limit; the detail stays here).
 
 **Inventory items left out of page copy, and why.**
 - Ameren incentive paperwork (an unusual offer): it depends on the unconfirmed Program Ally status.
@@ -445,5 +436,7 @@ Home is 550+ only with quotes (507 in our own words). The two service pages and 
 - 4.9 stars and 51 reviews are from the Google pull of 2026-11-15, not re-checked live.
 - The 80% mobile figure and the 91 score come from Josh's brief, not from data on this business.
 - The SRA proof block that opens every strategy page is template content and is not written here.
-- Full-build monitoring bullets (indexing, uptime, hourly speed) are Josh's guarantees from the brief, in plain words; they are not in the standard lines list.
+- Full-build monitoring bullets use only the four coordinator-verified lines, word for word.
 - The H1 for the furnace page uses "Furnace Repair"; the page also covers heat pumps and the repair-or-replace rule, which the site puts under "Heating".
+
+**Strategy page trim (checker).** Cut from about 2,000 to under 1,000 words. Confirm questions cut from ten to three. Dropped from the page, and still to ask on the onboarding call: financing, technician name spellings (Nathanial/Nathaniel, Dillon/Dylan), the after-hours price quote, owner name, address suite, BBB/Ameren/licenses. Monitoring lines use only the four verified wordings. The Services (68 words) and Gallery (61 words) thin-page notes were dropped.

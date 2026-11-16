@@ -1,6 +1,6 @@
 # https://www.myprocomfort.com/heating-faqs
 
-- Fetched: 2026-11-16T03:45:22.610Z (rendered in a real browser)
+- Fetched: 2026-11-16T03:48:19.681Z (rendered in a real browser)
 - HTTP: 403
 - Title: Request blocked
 - H1: Request blocked

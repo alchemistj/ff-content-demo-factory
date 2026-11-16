@@ -1,6 +1,6 @@
 # https://www.myprocomfort.com/shop
 
-- Fetched: 2026-11-16T03:45:29.158Z (rendered in a real browser)
+- Fetched: 2026-11-16T03:48:29.592Z (rendered in a real browser)
 - HTTP: 403
 - Title: Request blocked
 - H1: Request blocked

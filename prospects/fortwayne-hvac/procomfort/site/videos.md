@@ -1,14 +1,52 @@
 # https://www.myprocomfort.com/videos
 
-- Fetched: 2026-11-16T03:45:24.727Z (rendered in a real browser)
-- HTTP: 403
-- Title: Request blocked
-- H1: Request blocked
-- tel: links: (none)
-- Words: 12
+- Fetched: 2026-11-16T03:48:24.435Z (rendered in a real browser)
+- HTTP: 200
+- Title: HVAC Tips & Tricks Videos - Pro Comfort Heating & Cooling
+- H1: Videos
+- tel: links: tel: +12603107721
+- Words: 141
 
 ---
 
-Request blocked
-This request was blocked by edge IP-blocking policy.
-IP-blocking enforcement
+Skip to main content
+Menu
+AC INSTALLATION
+AC REPAIR
+AC MAINTENANCE
+FURNACE INSTALLATION
+FURNACE REPAIR
+FURNACE MAINTENANCE
+THERMOSTAT INSTALLATION AND REPLACEMENT
+THERMOSTAT REPAIR
+THERMOSTAT MAINTENANCE
+AIR DUCT AND VENTS INSTALLATION SERVICES
+AIR DUCT AND VENTS REPAIR SERVICES
+AIR DUCT AND VENTS MAINTENANCE SERVICES
+INDOOR AIR QUALITY TESTING
+AIR QUALITY CLEANING SYSTEM INSTALLATION SERVICES
+AIR FILTERS
+DUCTLESS HEATING AND COOLING INSTALLATION
+DUCTLESS HEATING AND COOLING REPAIR
+DUCTLESS HEATING AND COOLING MAINTENANCE
+Videos
+Videos
+Subscribe to our channel
+Please enter your YouTube API key to embed galleries.
+FORT WAYNE
+Pro Comfort Heating & Cooling LLC
+3020 Congressional Pkwy # G,
+Fort Wayne, IN 46808
+Phone: 260-310-7721
+HOURS OF OPERATION:
+M-F 8:00 AM - 4:30PM
+LICENSE#:
+Allen County-BD31623
+Indianapolis-HL1900005
+Anderson-111-22
+Goshen - 3885
+Peru - 2023-12
+Muncie - 93
+WE ACCEPT
+© 2026 Pro Comfort Heating & Cooling. All Rights Reserved. | Sitemap
+facebook
