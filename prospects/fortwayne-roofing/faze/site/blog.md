@@ -1,6 +1,6 @@
-# https://www.fazeconstruction.com/blog
+# https://fazeconstruction.com/blog
 
-- Fetched: 2026-11-16T06:02:15.181Z (rendered in a real browser)
+- Fetched: 2026-11-16T06:05:11.029Z (rendered in a real browser)
 - HTTP: 200
 - Title: Roofing & Remodeling Services | Faze Construction | Fort Wayne
 - H1: Our Blog

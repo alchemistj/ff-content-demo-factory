@@ -1,6 +1,6 @@
-# https://www.fazeconstruction.com/services
+# https://fazeconstruction.com/services
 
-- Fetched: 2026-11-16T06:02:11.674Z (rendered in a real browser)
+- Fetched: 2026-11-16T06:05:06.886Z (rendered in a real browser)
 - HTTP: 200
 - Title: Trusted Home Improvement Services - Ohio & Indiana
 - H1: Our Home Improvement Services

@@ -3,29 +3,39 @@
 
 ## Strategy page
 
+**Badge:** Free demo site built for Bufalo Contracting
+
+**We already did the work. Here's a Bufalo Contracting website that tells Rockford who you are and gets the phone ringing.**
+
+Your site shapes your Google ranking, what AI says about your business, and how easy you are to reach. Here's a demo of what yours could be.
+
+We built Bufalo Contracting the first five pages of that kind of website. More on that below.
+
 **Why we built this site**
 
-Your reviews say the same thing in different words: your people look at the roof first and tell you straight what it needs, they don't push, and they deal with the insurance company so you don't have to.
+Your reviews agree: your people look at the roof first, tell you straight what it needs, and don't push.
 
 > Friendly easy to work with. No high pressure sales pitch.
 >
 > — Sue U.
 
-Your site says "quality materials" and "excellent craftsmanship," which every roofer says. The lead your reviews prove is honest advice first. We built Bufalo Contracting the first five pages of that kind of website. More on that below. Siding, windows, gutters, metal roofs, ice dams and commercial roofs can each get a page in a full build. So the demo opens with roofing in Rockford, IL, and gives roof replacement and storm damage and insurance claims a page each.
+Your site says "quality materials" and "excellent craftsmanship," which every roofer says. Your reviews say honest advice comes first, and that's what the demo leads with.
+
+So the demo opens with Roofing Contractor in Rockford, IL, and gives roof replacement and storm damage and insurance claims a page each.
 
 **The demo, page by page**
 
 ### 1. Homepage
 
-*Why it matters:* It's where someone from Google decides in seconds whether you're the roofer to call.
+*Why it matters:* It's where a Google visitor decides in seconds whether to call you.
 
 **Current site problem**
-- The headline, "Bufalo Contracting has repaired over 10,000 roofs," names no trade and no town, so Google and a stranger have to guess what you do and where.
-- Storm damage gets half a sentence and insurance claims appear only in the menu, so the help your reviews praise most never reaches a visitor.
-- The four customer comments aren't in your Google reviews, and one is signed with a username, so they carry less weight than your real ones.
+- The headline, "Bufalo Contracting has repaired over 10,000 roofs," names no trade and no town, so Google and visitors must guess what you do and where.
+- Storm damage gets half a sentence and insurance claims a menu link, so the help reviews praise most goes unseen.
+- The four customer comments aren't in your Google reviews, so they carry less weight.
 
 **What the demo fixes**
-- A headline with the trade, town and name: "Roofing Contractor in Rockford, IL — Bufalo Contracting."
+- "Roofing Contractor in Rockford, IL — Bufalo Contracting" as the headline.
 - Storm damage and insurance claims get their own section.
 - Google reviews sit beside the service each one proves.
 
@@ -34,34 +44,34 @@ Google and AI tools can only repeat what's written down. We get every service, c
 
 ### 2. Roof Replacement
 
-*Why it matters:* It's your biggest job, and the one where a homeowner wants to know what happens before they sign.
+*Why it matters:* It's your biggest job, and homeowners want to know what happens before they sign.
 
 **Current site problem**
 - The headline is just "Roof Replacement," with no town, so Rockford searches go elsewhere.
-- The page says "several days," your FAQ says "one to three days," and your reviews say a day or less, so a homeowner can't tell what to expect.
-- Nothing says how to tell a repair from a replacement, so a worried homeowner has to ask or look elsewhere.
+- The page says "several days," your FAQ "one to three days," and reviews a day or less, so homeowners can't tell what to expect.
+- Nothing says how to tell a repair from a replacement, so a worried homeowner looks elsewhere.
 
 **What the demo fixes**
-- "Roof Replacement in Rockford, IL — Bufalo Contracting" at the top.
+- "Roof Replacement in Rockford, IL — Bufalo Contracting" as the headline.
 - No number of days until you tell us which answer is right.
-- A plain rule for repair versus replacement, what a replacement includes, and what the day looks like.
+- A plain repair-versus-replacement rule, what a replacement includes, and what the day looks like.
 
 **A full build would also add**
 Pages planned from what Google actually shows for each search, so every page targets something people really look for.
 
 ### 3. Storm Damage and Insurance Claims
 
-*Why it matters:* After hail or wind, a homeowner needs a roof looked at and a claim started, often at once.
+*Why it matters:* After hail or wind, a homeowner needs the roof looked at and a claim started.
 
 **Current site problem**
-- Storm help is spread over five pages (storm restoration, hail, wind, ice damage, insurance claims), so a homeowner has to guess which one to open.
-- The insurance page says you "receive the full benefits entitled to you." Only the insurance company decides that, so a burned homeowner reads it as a warning sign.
-- Nothing says what to do in the first hours or how a claim usually goes, so people call with questions the page could answer.
+- Storm help is spread over five pages (storm restoration, hail, wind, ice damage, insurance claims), so a homeowner must guess which to open.
+- The insurance page promises "the full benefits entitled to you," but only the insurer decides that, so a burned homeowner reads it as a warning sign.
+- Nothing covers the first hours or how a claim goes, so callers must ask.
 
 **What the demo fixes**
-- One page for storm damage, hail, wind and the insurance claim.
+- One page for storm damage, hail, wind and claims.
 - It says plainly that the insurance company decides what it covers.
-- First steps after a storm, and how a claim usually goes.
+- First steps after a storm, and how a claim goes.
 
 **A full build would also add**
 A check of what your competitors offer, so services you didn’t think to mention still get their own pages.
@@ -71,12 +81,12 @@ A check of what your competitors offer, so services you didn’t think to mentio
 *Why it matters:* It's where interest becomes a phone call.
 
 **Current site problem**
-- The page lists one address, one number and "Open 24 Hours," but no towns, so someone in Roscoe or Janesville can't tell whether you come to them.
-- It says nothing about what to have ready or what to do after a storm, so a caller has to work it out alone.
+- The page lists one address, one number and "Open 24 Hours," but no towns, so someone in Roscoe can't tell whether you come to them.
+- It says nothing about what to have ready or what to do after a storm, so callers are left guessing.
 
 **What the demo fixes**
 - Your towns in one place, with the address, number and hours.
-- What to have ready when you call, and what to do if a storm hit.
+- What to have ready, and what to do after a storm.
 
 **A full build would also add**
 Call and form tracking that shows which pages and towns your leads come from.
@@ -109,18 +119,19 @@ Call and form tracking that shows which pages and towns your leads come from.
 
 **What we'd confirm with you**
 
-Four things to sort out together:
+On a short onboarding call, we'd confirm three things.
 
-- Which phone numbers and addresses should customers use? Your site shows (779) 368-0256. The Better Business Bureau also lists (779) 368-0349, (815) 494-0793, (855) 528-3256 and 810 S Main St in Belvidere.
-- Your site says "15 years of being in business" on one page and "over a decade" on others. What year did you start?
-- Every page says "Our state roofing licenses:" with nothing after it. Which licenses, and what are the numbers?
-- Your site calls you a top contractor for CertainTeed vinyl and polymer siding. Is that an official CertainTeed program we can point to?
+- Which phone numbers and addresses should customers use? Your site shows (779) 368-0256; the Better Business Bureau adds three more numbers and 810 S Main St in Belvidere.
+- Your site says "15 years of being in business" and elsewhere "over a decade." What year did you start?
+- Every page says "Our state roofing licenses:" with nothing after it. Which licenses, and what numbers?
+- Your site calls you a top CertainTeed siding contractor. Is that an official CertainTeed program we can cite?
 
-Send us your answers on a call and we'll fix the pages before you look at them again.
 
 **Want a website like this for your business?**
 
-Book a no-obligation call, or text us: (417) 373-2773
+Book a call and we'll walk you through this demo.
+
+**[Book a no-obligation call]** · Text us: (417) 373-2773
 
 ## Home — Roofing Contractor in Rockford, IL — Bufalo Contracting
 
@@ -128,7 +139,7 @@ Roofing, siding, windows and gutters. Rockford, Loves Park, Belvidere and the to
 
 # Roofing Contractor in Rockford, IL — Bufalo Contracting
 
-We look at your roof first and tell you straight what it needs: a repair, a replacement, or nothing yet. If a storm did the damage, we work with your insurance company. Call any hour and we'll set up a free inspection.
+We look at your roof first and tell you straight what it needs: a repair, a replacement, or nothing yet. If a storm did the damage, we work with your insurance company. Call any hour and we'll set up a time to look.
 
 **Buttons:** Call (779) 368-0256 | Request a Free Inspection
 
@@ -224,7 +235,7 @@ Roof replacement, Rockford and Loves Park
 
 # Roof Replacement in Rockford, IL — Bufalo Contracting
 
-Replace it once and do it right. We look at the roof, tell you what it needs, and give you a clear plan before any work starts. Call (779) 368-0256 and we'll set up a free inspection.
+Replace it once and do it right. We look at the roof, tell you what it needs, and give you a clear plan before any work starts. Call (779) 368-0256 and we'll set up a time to look.
 
 **Buttons:** Call (779) 368-0256 | Request a Free Inspection
 
@@ -310,7 +321,7 @@ Yes. Customers have had us replace the house roof along with a garage or outbuil
 
 ## Ready for a New Roof?
 
-Call (779) 368-0256, or request a free inspection. We'll look at the roof and tell you what it needs.
+Call (779) 368-0256, or send us a request. We'll look at the roof and tell you what it needs.
 
 **Buttons:** Call (779) 368-0256 | Request a Free Inspection
 
@@ -430,25 +441,25 @@ We serve northern Illinois and southern Wisconsin: Rockford, Loves Park, Machesn
 
 ## Emergencies and Free Inspections
 
-If water is coming in or a storm just hit, call any hour. Emergency service is available 24/7. Inspections are free for everything else too, whether it's an old roof you're wondering about or siding that's tired.
+If water is coming in or a storm just hit, call any hour. Emergency service is available 24/7, seven days a week. Inspections are free for everything else too, whether it's an old roof you're wondering about or siding that's tired.
 
 ## Notes (not page copy)
 
 **Rebuild reason: SEO.** The service page headlines are the service name alone ("Roof Replacement", "Insurance Claims"), the homepage headline is a brag with no trade or town, and storm help is split across five pages that repeat the same lines.
 
 **Word counts (by script; "without quotes" excludes blockquotes, buttons and the strip; "with" is everything on the page)**
-- Strategy: about 1,220 without quotes, 1,235 with, full-build list included (over the soft cap of about 1,000; the list is about 230 words of that).
-- Home: 711 without quotes, 950 with.
-- Roof Replacement: 808 without quotes, 977 with. Includes hedged general trade knowledge (repair vs replace, where roofs wear, metal vs asphalt); business claims are the site's own.
-- Storm Damage and Insurance Claims: 744 without quotes, 903 with. Includes hedged general knowledge (hail and wind damage, first steps, how a claim usually goes, storm vs wear); the insurer decides coverage, no outcomes promised.
-- Contact: 251 without quotes (no quotes used), 260 with headings and buttons. Thin: only just over 250.
+- Strategy: about 1,030 without quotes, 1,045 with, full-build list included (the list is about 220 words of that; trimmed from about 1,220).
+- Home: 671 without quotes, 910 with.
+- Roof Replacement: 794 without quotes, 963 with. Includes hedged general trade knowledge (repair vs replace, where roofs wear, metal vs asphalt); business claims are the site's own.
+- Storm Damage and Insurance Claims: 741 without quotes, 900 with. Includes hedged general knowledge (hail and wind damage, first steps, how a claim usually goes, storm vs wear); the insurer decides coverage, no outcomes promised.
+- Contact: 252 without quotes (no quotes used), 261 with headings and buttons. Only just over 250; not padded.
 
 **Credentials and sources**
-- BBB A+ and Accredited: confirmed in BBB search results (inventory). Defined once, on home. The "operates honestly and with integrity" wording is the BBB accreditation definition used on a sister demo; re-check on bbb.org before send.
-- "5 star contractor for CertainTeed vinyl and polymer siding": the site's claim, not confirmed on CertainTeed's locator. Stated once, on home, as their claim. Check before send, or cut.
+- BBB A+ and Accredited: confirmed in BBB search results (inventory). Stated once on home, with BBB spelled out once. The line about what accreditation means was cut (unchecked wording); re-check the rating on bbb.org before send.
+- "5 star contractor for CertainTeed vinyl and polymer siding": the site's claim, not confirmed on CertainTeed's locator. Cut from all page copy; asked on the strategy page's "What we'd confirm" without the rating.
 - Financing: from the site's financing page (0% for 12 months same as cash; 9.99% fixed for 10 years), stated once, on home, "subject to approval" per the page's disclaimer. Lender not named on the site.
 - "Open 24 hours" and "any hour": site's contact page and every-page banner. Emergency storm service and temporary repairs: site FAQ.
-- Not used: "accredited since 2011" and "zero customer complaints" (not checked; conflicts with a 1-star review), state licenses (no numbers), "comprehensive warranties" and the footer guarantee (no terms; inventory says do not use), Owens Corning (one template page).
+- Not used: the CertainTeed claim (above), "accredited since 2011" and "zero customer complaints" (not checked; conflicts with a 1-star review), state licenses (no numbers), "comprehensive warranties" and the footer guarantee (no terms; inventory says do not use), Owens Corning (one template page).
 
 **Inventory items left out, and why**
 - "Repaired over 10,000 roofs" and "most Google reviews of any roofer": unchecked scale claims, left out.
@@ -461,15 +472,15 @@ If water is coming in or a storm just hit, call any hour. Emergency service is a
 - Service-area pages (16 towns): towns used from the site's Areas We Serve list; the pages' template text is unverified.
 - Review themes: honest and no pressure (Sue U., Paul H., Steve F., Joe F., Penny P.), insurance (Charlie C., Bryan Y., Tommy D.), clean-up (T-Mac T., Terri O.), speed (Matthew M., Chris M., Alden P.), communication (Julie F., Leeza M.), fair price (Julie F.), named person (not claimed in copy; only quoted names appear). The 1-star review (Eric C.) is not quoted. Solar panels on a barn roof (Kim M.) is a job detail, not a service.
 - Quotes outcome or insurer-blame wording (Roy B., Tom K., Jim G., Darrel D.) held back under the no-promised-outcomes rule.
-- Larry N. (insurance explainer) not used: three insurance quotes in a row. Each quote appears once across the doc; Chris M. and Will P. are trimmed to whole sentences; Steve F., Leeza M., Tommy D., Alden P. are trimmed.
+- Larry N. (insurance explainer) not used: three insurance quotes in a row. Each quote appears once across the doc (T-Mac T. is a username, so captioned "Google review"); Chris M. and Will P. are trimmed to whole sentences; Steve F., Leeza M., Tommy D., Alden P. are trimmed.
 
 **Conflicts kept out of copy**
 - Replacement time: site "several days" vs FAQ "one to three days" vs reviews (one day, half a day). Copy states no duration; quotes only show speed.
-- Phone numbers, Belvidere office, years, licenses: on the strategy page's confirm list.
+- Phone numbers and the Belvidere office (one question), years, licenses, the CertainTeed claim: on the strategy page's confirm list (four questions).
 - Staff names differ between the site's testimonials and Google reviews; no one is named in copy outside quotes.
 
 **Facts to verify**
-- BBB and CertainTeed items above.
+- BBB rating on bbb.org, and whether the CertainTeed claim is an official program.
 - Hours: the site says open 24 hours, seven days.
 - "Inspections are free": site's "Request Free Inspection" and review Will P. (gutter repair free).
 - General trade knowledge (shingle life, claim process, metal roofs, ice dams) is hedged advice, not a business claim.

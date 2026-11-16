@@ -4,17 +4,16 @@
 
 ## Strategy page
 
-**Built for Bushey's Windows & Doors**
+**Badge:** Free demo site built for Bushey's Windows & Doors
 
-### We built Bushey's Windows & Doors a clearer Fort Wayne window and door website.
+**We already did the work. Here's a Bushey's Windows & Doors website that tells Fort Wayne who you are and gets the phone ringing.**
 
 Your site shapes your Google ranking, what AI says about your business, and how easy you are to reach. Here's a demo of what yours could be.
 
 We built Bushey's Windows & Doors the first five pages of that kind of website. More on that below.
 
-**Buttons:** View the Demo Site / See What Changed
 
-### Why we built this site
+**Why we built this site**
 
 Your reviews keep naming the people in the customer's house:
 
@@ -26,9 +25,9 @@ Your site says "Installed by Bushey's team – no subcontractors," but no review
 
 So the demo opens with Windows and Doors in Fort Wayne, IN, and gives replacement windows and entry and storm doors a page each.
 
-### The demo, page by page
+**The demo, page by page**
 
-**1. Homepage**
+### 1. Homepage
 
 *Why it matters:* Most people see it first.
 
@@ -40,29 +39,29 @@ So the demo opens with Windows and Doors in Fort Wayne, IN, and gives replacemen
 **What the demo fixes**
 - A headline that says replacement windows and doors in Fort Wayne, IN.
 - Your own-crew claim, process and awards on one page.
-- Reviews beside the work.
+- Tina W.'s and Lance L.'s reviews beside the crew and process.
 
 **A full build would also add**
 Google and AI tools can only repeat what's written down. We get every service, credential and what makes you different out of your head and onto your site and Google profile, so they all tell the same story.
 
-**2. Replacement Windows**
+### 2. Replacement Windows
 
 *Why it matters:* A window is a big purchase that people research first.
 
 **Current site problem**
 - The headline is "Windows from Infinity® by Marvin®," with no Fort Wayne or "replacement," so Google has little to match.
 - The page is about 240 words, and answers on glass, inserts and fogged panes sit in a separate FAQ, so buyers comparing windows miss them.
-- Your window reviews about clean-up and stained trim appear nowhere on it, so the proof stays off the page.
+- Your window reviews about clean-up and stained trim appear nowhere on it, so no one vouches for it there.
 
 **What the demo fixes**
 - A Fort Wayne page for replacement windows alone.
 - Fiberglass against vinyl, the glass, and inserts against full-frame, explained.
-- Those reviews beside the work.
+- Kyle F.'s trim and Perry S.'s clean-up reviews beside the work.
 
 **A full build would also add**
 A check of what your competitors offer, so services you didn't think to mention still get their own pages.
 
-**3. Entry and Storm Doors**
+### 3. Entry and Storm Doors
 
 *Why it matters:* A front door is a visible, personal choice.
 
@@ -74,12 +73,12 @@ A check of what your competitors offer, so services you didn't think to mention 
 **What the demo fixes**
 - A Fort Wayne page for entry and storm doors.
 - Fiberglass and steel compared, and each ProVia line in plain words.
-- Storm door and entry door reviews beside the products.
+- Phil's storm door review and Alex P.'s entry door review beside the products.
 
 **A full build would also add**
 Pages planned from what Google actually shows for each search, so every page targets something people really look for.
 
-**4. Contact**
+### 4. Contact
 
 *Why it matters:* It's where a visitor becomes a call.
 
@@ -96,9 +95,8 @@ Pages planned from what Google actually shows for each search, so every page tar
 **A full build would also add**
 Call and form tracking that shows which pages and towns your leads come from.
 
-### What a full build includes
+**What a full build includes**
 
-This demo is the first five pages of a full build.
 
 **Gets you found**
 - Every service on your website and your Google profile, telling the same story
@@ -124,18 +122,20 @@ This demo is the first five pages of a full build.
 - Updated when Google and AI tools change how they read websites
 - You never have to know what to ask for
 
-### What we'd confirm with you
+**What we'd confirm with you**
 
-1. **Founding year.** Your About page says "Since 1968" and also dates Al Bushey's founding to 1958. Which year should we print?
-2. **Customer claims.** Your FAQ and your About page describe how many customers you serve in different ways. Which claim do you want us to stand behind?
-3. **BBB.** We confirmed your A+ rating, but not that you are accredited. Are you?
-4. **Financing.** Your FAQ says yes to financing, and the page it links to wouldn't open for us. What terms should we state?
+On a short onboarding call, we'd confirm four things.
 
-### Want a website like this for your business?
+- Your About page says "Since 1968" and also dates Al Bushey's founding to 1958. Which year should we print?
+- Your FAQ and your About page describe how many customers you serve in different ways. Which claim do you want us to stand behind?
+- We couldn't confirm on the Better Business Bureau's site that you are accredited. Are you?
+- Your FAQ says yes to financing, and the page it links to wouldn't open for us. What terms should we state?
 
-**Button:** Book a no-obligation call
+**Want a website like this for your business?**
 
-Text us: (417) 373-2773
+Book a call and we'll walk you through this demo.
+
+**[Book a no-obligation call]** · Text us: (417) 373-2773
 
 ## Home — Replacement Windows and Doors in Fort Wayne, IN — Bushey's Windows & Doors
 
@@ -412,7 +412,7 @@ Call (260) 456-1247 and tell us what you need. If you'd rather stop in, we're at
 
 | Page | Words without quotes | Words with quotes |
 |---|---|---|
-| Strategy | ~1,045 | ~1,070 |
+| Strategy | ~1017 | ~1042 |
 | Home | ~910 | ~1,100 |
 | Replacement Windows | ~890 | ~1,030 |
 | Entry and Storm Doors | ~860 | ~1,010 |

@@ -1,6 +1,6 @@
-# https://www.fazeconstruction.com
+# https://fazeconstruction.com
 
-- Fetched: 2026-11-16T06:02:08.089Z (rendered in a real browser)
+- Fetched: 2026-11-16T06:05:03.579Z (rendered in a real browser)
 - HTTP: 200
 - Title: Home Improvement Contractor - Faze Construction
 - H1: Indiana | Ohio Roofing, Siding & Remodeling Contractor

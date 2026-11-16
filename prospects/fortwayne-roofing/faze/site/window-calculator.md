@@ -1,6 +1,6 @@
-# https://www.fazeconstruction.com/window-calculator
+# https://fazeconstruction.com/window-calculator
 
-- Fetched: 2026-11-16T06:02:27.964Z (rendered in a real browser)
+- Fetched: 2026-11-16T06:05:22.880Z (rendered in a real browser)
 - HTTP: 200
 - Title: Window Replacement Cost Calculator | Faze Construction
 - H1: (none)

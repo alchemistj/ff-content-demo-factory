@@ -1,6 +1,6 @@
-# https://www.fazeconstruction.com/sidingcalculator
+# https://fazeconstruction.com/sidingcalculator
 
-- Fetched: 2026-11-16T06:02:32.038Z (rendered in a real browser)
+- Fetched: 2026-11-16T06:05:26.929Z (rendered in a real browser)
 - HTTP: 200
 - Title: Roofing & Remodeling Services Fort Wayne | Faze Construction
 - H1: (none)

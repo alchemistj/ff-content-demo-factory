@@ -1,6 +1,6 @@
-# https://www.fazeconstruction.com/free-bath-calculator
+# https://fazeconstruction.com/free-bath-calculator
 
-- Fetched: 2026-11-16T06:02:35.936Z (rendered in a real browser)
+- Fetched: 2026-11-16T06:05:30.714Z (rendered in a real browser)
 - HTTP: 200
 - Title: Bathroom Remodeling Cost Calculator | Faze Construction
 - H1: (none)

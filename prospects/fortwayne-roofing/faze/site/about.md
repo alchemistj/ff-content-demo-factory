@@ -1,6 +1,6 @@
-# https://www.fazeconstruction.com/about
+# https://fazeconstruction.com/about
 
-- Fetched: 2026-11-16T06:03:05.458Z (rendered in a real browser)
+- Fetched: 2026-11-16T06:05:34.422Z (rendered in a real browser)
 - HTTP: 200
 - Title: About Our Home Improvement Company | Faze Construction
 - H1: About Us

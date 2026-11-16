@@ -1,6 +1,6 @@
-# https://www.fazeconstruction.com/contact
+# https://fazeconstruction.com/contact
 
-- Fetched: 2026-11-16T06:02:19.989Z (rendered in a real browser)
+- Fetched: 2026-11-16T06:05:15.144Z (rendered in a real browser)
 - HTTP: 200
 - Title: Contact Our Home Improvement Team | Faze Construction
 - H1: Contact Us
