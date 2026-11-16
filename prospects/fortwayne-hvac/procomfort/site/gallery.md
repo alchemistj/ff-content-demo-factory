@@ -1,6 +1,6 @@
 # https://www.myprocomfort.com/gallery
 
-- Fetched: 2026-11-16T03:45:00.056Z (rendered in a real browser)
+- Fetched: 2026-11-16T03:47:57.448Z (rendered in a real browser)
 - HTTP: 403
 - Title: Request blocked
 - H1: Request blocked

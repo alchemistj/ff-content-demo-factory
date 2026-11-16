@@ -18,7 +18,7 @@ Your Google reviews keep describing the same visit. Dusty comes out, looks at th
 
 Your site says "HONESTY – INTEGRITY – EDUCATION" and never shows an example.
 
-So we led with what your reviews show: a roof looked at, a straight answer, and an owner who picks up the phone. We built the home page, roof replacement, storm damage and contact, because those are the jobs where a homeowner most needs someone to explain what is going on.
+So we led with what your reviews show: a roof looked at, a straight answer, and an owner who picks up the phone. We built the home page, roof replacement, storm damage and contact, the jobs where a homeowner most needs things explained.
 
 ### Page by page
 
@@ -79,7 +79,7 @@ So we led with what your reviews show: a roof looked at, a straight answer, and 
 
 **Earns their trust:** Reviews on every page, matched to the service. About and owner pages that show who does the work, which build authority with Google and AI and trust with customers.
 
-**Turns visitors into calls:** About 80% of visitors are on a phone, which is why we build for a mobile speed score of 91 or higher. A call-and-book bar that stays on screen. A contact form that blocks spam.
+**Turns visitors into calls:** About 80% of visitors are on a phone, which is why we build for a mobile speed score of 91 or higher. A contact form that blocks spam.
 
 **Keeps working after launch:**
 - Mobile page speed tested every 30 minutes, with a re-check within 5 minutes if a page slows down.
@@ -97,7 +97,7 @@ This demo is the first five pages: strategy, home, roof replacement, storm damag
 
 ### Want a website like this for your business?
 
-Book a time to talk and we will go through the demo page by page. Text us: (417) 373-2773
+Book a time to talk. Text us: (417) 373-2773
 
 ## Home — Roofing Contractor in Lincoln, NE — Sandhill Roofing
 
@@ -334,7 +334,7 @@ If you'd rather talk, call [(402) 890-6460](tel:+14028906460). Our owner, Dusty 
 
 | Page | Without quotes | Quotes | With quotes |
 |---|---|---|---|
-| Strategy | 984 | 0 | 984 (limit 1,000) |
+| Strategy | 998 | 0 | 998 (limit 1,000) |
 | Home | 665 | 203 | 868 |
 | Roof Replacement | 434 | 171 | 605 |
 | Storm Damage | 361 | 105 | 466 |

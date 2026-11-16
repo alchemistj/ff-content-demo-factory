@@ -8,15 +8,15 @@
 
 # We built Roettger's Heating and Cooling a website that says what your customers already say.
 
-Your site shapes your Google ranking, what AI says about your business, and how easy you are to reach. Here’s a demo of what yours could be.
+Your site shapes your Google ranking, what AI says about your business, and how easy you are to reach. Here’s a demo of yours.
 
 Buttons: View the Demo Site / See What Changed
 
 ### Why we built this site
 
-Matt, people write about you by name on Google. They write that the phone was answered, that a text told them the technician was on the way, and that the AC was running again within hours. Your current site says none of it and shows no reviews. Its first line, "Keeping Lincoln Comfortable Year-Round", could be printed by any company in town.
+Matt, people write about you by name on Google: the phone was answered, a text said the technician was on the way, the AC was running again within hours. Your current site says none of it and shows no reviews. Its first line, "Keeping Lincoln Comfortable Year-Round", could be printed by any company in town.
 
-We led the demo with one idea: call Matt, and you know when we're coming. Then we built the pages where your reviews are strongest: home, AC repair, air conditioner replacement and contact.
+We led the demo with one idea: call Matt, and you know when we're coming. We built the pages where your reviews are strongest: home, AC repair, air conditioner replacement and contact.
 
 ### The demo, page by page
 
@@ -39,7 +39,7 @@ View page
 
 **Current site problem**
 - AC repair is one sentence on your services page, with no page of its own, so someone searching for AC repair in Lincoln has nothing to land on.
-- "Quickly" is the only speed your site claims. Your reviews give real times, and a visitor with a hot house can't see them.
+- "Quickly" is the only speed your site claims, while your reviews give real times.
 
 **What the demo fixes**
 - Its own page, headlined "AC Repair in Lincoln, NE — Roettger's Heating and Cooling".
@@ -82,9 +82,7 @@ View page
 
 ### What's already working
 
-Every page in your menu loads, your phone number is tap-to-call at the top and bottom of every page, and nothing slides sideways on a phone.
-
-What needs work: a leftover shopping cart page that loads but isn't in your menu, and "FAQs 2" as the name of your FAQ page in the browser tab.
+Every page in your menu loads and your phone number is tap-to-call on every page. What needs work: a leftover shopping cart page not in your menu, and "FAQs 2" as your FAQ page's tab name.
 
 ### What a full build includes
 

@@ -6,42 +6,41 @@
 
 # We built Custom Assured Mechanical a website that says what your customers say.
 
-Your site shapes your Google ranking, what AI says about your business, and how easy you are to reach. Here’s a demo of what yours could be.
+Your site shapes your Google ranking, what AI says about you, and how easy you are to reach. Here’s a demo of what yours could be.
 
 [View the Demo Site] [See What Changed]
 
 ### Why we built this site
 
-Google shows you at 5.0 stars with 90 reviews. We read the 66 it gave us. About 22 of them talk about the same thing: you come out twice a year, your office calls to book it, and it is often the same technician. Another dozen or so say they have been with you for ten years or more. One reviewer put it in four words:
+Your Google reviews keep coming back to one thing: you come out twice a year, your office calls to book it, and it is often the same technician. Many reviewers say they have been with you ten years or more. One put it in four words:
 
 > Lance is our guy.
 >
 > — Linda R.
 
+Your site says little of that, and the homepage has no phone number. Nowhere on the site can a phone visitor tap to call.
 
-Your site says none of that. It has a slogan, three testimonials and a list of Bryant products. The homepage has no phone number, and nowhere on the site can a phone visitor tap to call.
-
-So we built four pages around what your reviews already prove: a homepage, a maintenance page, a furnace replacement page and a contact page. Everything on them comes from your site, your reviews and facts we could check. Where we could not check something, we left it out and put the question at the bottom of this page.
+So we built the first five pages around what your reviews already prove. Anything we could not check we left out and put in the questions below.
 
 ### The demo, page by page
 
-Each card is one page of the demo. On the left is what holds the current site back. On the right is what the demo does about it.
+Each card is one page of the demo: what holds the current site back, and what the demo does about it.
 
 #### 1. Homepage
 
-Why it matters: Google reads your homepage first to decide what you are and where you work. Right now it cannot tell you are an HVAC company in Fort Wayne.
+Why it matters: Google reads your homepage first to decide what you do and where.
 
 **Current site problem**
 
-- The name in the browser tab is "Custom Assured Mechanical." It has no trade and no city, so Google has nothing to match against "HVAC company Fort Wayne."
-- The homepage has no phone number, and no page on the site has a tap-to-call link. Someone on a phone has to copy your number by hand.
-- The video block under "Our Services" shows "Video is not available or format is not supported. Try a different browser."
+- The browser tab says only "Custom Assured Mechanical." No trade, no city.
+- No phone number on the homepage, and no tap-to-call link on any page.
+- The video under "Our Services" shows "Video is not available or format is not supported."
 
 **What the demo fixes**
 
-- The headline and the browser tab name say "HVAC Company in Fort Wayne, IN — Custom Assured Mechanical."
-- Your number, (260) 496-8400, is at the top as a button that calls when tapped.
-- The broken video is gone. In its place are your reviews and the people who answer the phone and come to the door.
+- The headline and tab say "HVAC Company in Fort Wayne, IN — Custom Assured Mechanical."
+- (260) 496-8400 sits at the top as a button that calls when tapped.
+- The broken video is gone, replaced by your reviews and your team.
 
 **A full build would also add**
 
@@ -49,19 +48,19 @@ Google and AI tools can only repeat what's written down. We get every service, c
 
 #### 2. HVAC Maintenance
 
-Why it matters: about 22 of the 66 reviews we read are about twice-a-year or yearly service. It is the thing your customers talk about most, and your site gives it a few lines.
+Why it matters: maintenance is what your reviewers talk about most, and your site gives it a few lines.
 
 **Current site problem**
 
-- The Custom Priority Club is a few lines in the middle of a long Our Services page, and that page has no main heading, so Google has no page to show for "HVAC maintenance Fort Wayne."
-- Nothing on the site says how often you service a system, or that your office calls members when it is time. Your reviews say both.
-- Customers can see the spelling slips: "CPC Benifits" and "maintenances preformed."
+- The Custom Priority Club is a few lines in the middle of Our Services, a page with no main heading.
+- The site never says how often you service a system or who comes. Reviews do.
+- Spelling slips: "CPC Benifits" and "maintenances preformed."
 
 **What the demo fixes**
 
-- The Club gets its own page, headed "HVAC Maintenance in Fort Wayne, IN."
-- The page says twice a year, says your office contacts members, and says you try to send the same technician, with reviews next to each claim.
-- The six Club benefits are on the page with the spelling fixed.
+- The Club gets its own page, "HVAC Maintenance in Fort Wayne, IN."
+- Twice a year, your office calling members, and the same technician, each beside a review.
+- The six Club benefits, with the spelling fixed.
 
 **A full build would also add**
 
@@ -69,19 +68,19 @@ A check of what your competitors offer, so services you didn’t think to mentio
 
 #### 3. Furnace Replacement
 
-Why it matters: new systems show up in about 9 of the 66 reviews, and your site gives furnaces one sentence.
+Why it matters: new systems come up in your reviews, and your site gives furnaces one sentence.
 
 **Current site problem**
 
-- Furnaces get one sentence on Our Services and have no page, so nothing on your site answers "furnace replacement Fort Wayne."
-- Rod's role, the owner handling most sales himself, appears only on the Financing page, which is 154 words with no main heading.
-- The free quote, the financing and the 100% Satisfaction Guarantee sit on that same short page, away from the furnace.
+- Furnaces get one sentence and no page, so nothing answers "furnace replacement Fort Wayne."
+- Rod handling most sales himself appears only on the Financing page, 154 words with no main heading.
+- The free quote, financing and guarantee sit there, away from the furnace.
 
 **What the demo fixes**
 
 - A page headed "Furnace Replacement in Fort Wayne, IN."
-- Rod's part in the sale is said on the page where someone is deciding.
-- Free quotes, financing with approved credit and the guarantee are on the furnace page, next to the decision.
+- Rod's part in the sale, said where someone is deciding.
+- Free quotes, financing with approved credit and the guarantee, next to the decision.
 
 **A full build would also add**
 
@@ -89,19 +88,19 @@ Pages planned from what Google actually shows for each search, so every page tar
 
 #### 4. Contact
 
-Why it matters: most visitors are on phones. If they have to hunt for the number or the hours, some will call someone else.
+Why it matters: most visitors are on phones, and some will call someone else rather than hunt for the number.
 
 **Current site problem**
 
-- The Contact page says Monday to Friday, 9am to 4pm. Your homepage says the service department is available around the clock. A visitor at night cannot tell which is true.
-- The form marks five fields "(required)" but enforces none of them, and it puts what a visitor types into the web address instead of sending it privately.
-- The page is 45 words: an address, hours, a phone and an email. Nothing says what to have ready, and paying a bill is on a separate page.
+- Contact says Monday to Friday, 9am to 4pm. Your homepage says the service department is available around the clock.
+- The form marks five fields "(required)" but enforces none, and it puts what a visitor types into the web address.
+- The page is 45 words, with nothing on what to have ready.
 
 **What the demo fixes**
 
-- Office hours and the service department are on separate lines, each as your site words it, with a question below for you to settle.
-- Calling is the first option, with tap-to-call. Your email sits next to it.
-- A short list of what to have ready, and the bill-pay instructions, on the same page.
+- Office hours and the service department on separate lines, as your site words them.
+- Tap-to-call first, your email beside it.
+- What to have ready, and the bill-pay steps.
 
 **A full build would also add**
 
@@ -109,24 +108,21 @@ Call and form tracking that shows which pages and towns your leads come from.
 
 ### What a full build includes
 
-The demo is the first five pages. A full build starts with the foundation: every service you offer and everything that sets you apart, written down and on the site. Then it adds what we guarantee after launch.
+The demo is the first five pages. A full build starts with the foundation, then adds what we guarantee after launch.
 
-- Google visibility and indexing monitoring, so you know Google can find and read your pages
-- Uptime monitoring, so you know the site is up
-- Page-speed checks. A score of 91 or higher on Google's mobile test at launch matters because about 80% of visitors are on phones
+- Mobile page speed tested every 30 minutes, with a re-check within 5 minutes if a page slows down.
+- Your site watched around the clock for downtime.
+- Google indexing and your Google visibility checked every day.
+- Menus, contact links and forms tested in a real browser twice a day.
 - About and owner pages that show who does the work, which builds trust with customers and with Google and AI tools
 
 ### What we'd confirm with you
 
-We only wrote what we could back up. These are the places where two things didn't match, or where we found nothing to go on.
+We only wrote what we could back up. These are the places where two things didn't match.
 
-1. **Hours.** Your Contact page says Monday to Friday, 9am to 4pm. Your homepage says the service department is "available around the clock." Which is right for a customer whose furnace quits at night? Reviews mention "the emergency no." Is that a separate number?
-2. **Same technician, and your office calling.** Your reviews describe it. Your site doesn't say it. We wrote "we try to." Is that how you schedule?
-3. **The Custom Priority Club.** Price, terms, what a visit covers, and whether you still offer it. None of it is on your site.
-4. **Credentials.** Your Our Company page says Rod has "certifications, accreditations, and training" but names none. Is there a license number, a certification or a Bryant dealer listing we can look up and print?
-5. **Service area.** Your site names Fort Wayne only. Which towns and counties do you drive to?
-6. **Financing and the guarantee.** Who is the lender? Does the 100% Satisfaction Guarantee have written terms?
-7. **Years.** Your Our Company page says 175 years of combined experience. We left it out until you tell us who it adds up from.
+1. **Hours.** Contact says 9am to 4pm. Your homepage says service is "available around the clock." Which is right for a furnace that quits at night, and is the "emergency no." in reviews a separate number?
+2. **Credentials.** Your Our Company page says Rod has "certifications, accreditations, and training" but names none. Is there a license or certification we can look up and print?
+3. **Years.** Your Our Company page says 175 years of combined experience. We left it out until you tell us who it adds up from.
 
 ### Want a website like this for your business?
 
@@ -140,7 +136,7 @@ Text us: (417) 373-2773
 
 # HVAC Company in Fort Wayne, IN — Custom Assured Mechanical
 
-Family owned and operated, on Independence Drive in Fort Wayne since 1998. We sell, install and service heating and air conditioning for homes, businesses and new construction, and we put your furnace and air conditioner on a twice-a-year service schedule.
+Family owned and operated, on Independence Drive in Fort Wayne since 1998. We sell, install and service heating and air conditioning for homes, businesses and new construction, and we keep your furnace and air conditioner maintained through the Custom Priority Club.
 
 [Call (260) 496-8400] [Contact Us]
 
@@ -162,7 +158,7 @@ We offer Bryant heating and cooling products: furnaces, heat pumps, air conditio
 
 ### Maintenance, Furnaces and Repair
 
-**Twice-a-year maintenance.** Your furnace and air conditioner serviced twice a year, with a call from our office when it is due. Members of the Custom Priority Club also get priority service, discounts on services and emergency service. [HVAC Maintenance in Fort Wayne, IN](/hvac-maintenance)
+**Maintenance.** Annual service agreements keep your equipment running at optimal performance, and Custom Priority Club members get priority service, discounts on services, emergency service and a call from our office. [HVAC Maintenance in Fort Wayne, IN](/hvac-maintenance)
 
 **Furnaces.** We repair, replace and maintain them. [Furnace Replacement in Fort Wayne, IN](/furnace-replacement) takes you from the quote to the installation.
 
@@ -242,7 +238,7 @@ Call (260) 496-8400, or send us a message and tell us what you need.
 
 # HVAC Maintenance in Fort Wayne, IN — Custom Assured Mechanical
 
-Twice-a-year service for your furnace and air conditioner from the Fort Wayne company that installs and repairs them. Join the Custom Priority Club and our office contacts you when it is time.
+Maintenance for your furnace and air conditioner from the Fort Wayne company that installs and repairs them. Members of the Custom Priority Club get a call from our office.
 
 [Call (260) 496-8400] [Ask About the Custom Priority Club]
 
@@ -252,7 +248,7 @@ Twice-a-year service for your furnace and air conditioner from the Fort Wayne co
 
 ### The Custom Priority Club
 
-The Custom Priority Club is our maintenance membership and our annual service agreement. Every system needs professional attention at some point, whether that is a repair or routine maintenance. Getting the required maintenance done on your comfort system helps prevent annoying breakdowns, and membership gets it done for you on a schedule.
+The Custom Priority Club is our maintenance membership. Every system needs professional attention at some point, whether that is a repair or routine maintenance. Getting the required maintenance done on your comfort system helps prevent annoying breakdowns, and membership gets it done for you on a schedule.
 
 > I signed up for the yearly service plan and it has totally paid off with twice a year maintenance on heating and air.
 >
@@ -275,7 +271,7 @@ We try to send the same technician every time. A technician who has worked on yo
 >
 > — Samantha R.
 
-A technician who has worked on your system before knows its history.
+Call (260) 496-8400 and ask the office how it schedules visits.
 
 > In fact, I believe we have had the same technician for the entire 7 years. He is focused on our service and does a great job. It is great to have someone who you familiar with and can trust!
 >
@@ -283,7 +279,7 @@ A technician who has worked on your system before knows its history.
 
 ### Your Furnace, Air Conditioner and Humidifier
 
-The Club covers heating and cooling. If you have a whole-home humidifier, ask us whether it goes on the same visit.
+Ask the office what a Club visit covers for your furnace, air conditioner and humidifier.
 
 > Custom Assured Mechanical improved the distribution of heat and air conditioning in our house and provides prompt, dependable and thorough annual maintenance of our furnace, air conditioner and humidifier.
 >
@@ -322,6 +318,8 @@ Call the office at (260) 496-8400 and ask for the current Custom Priority Club p
 > — Dennis G.
 
 ### Join the Custom Priority Club
+
+To join, call the office or send us a message.
 
 > I recommend signing up for their maintenance program so your system is always in tip top shape.
 >
@@ -435,7 +433,7 @@ Invoice numbers are at the top of your invoice or on the right side of your work
 ### Word counts (script count; buttons and headings included)
 | Page | Without quotes | With quotes |
 |---|---|---|
-| Strategy | 1,391 | 1,397 (over the 1,000-word strategy limit; trim or let the template cards carry it) |
+| Strategy | 990 | 996 (trimmed by checker to fit the 1,000 limit; review counts removed, questions cut to 3) |
 | Home | 654 | 894 |
 | HVAC Maintenance | 337 | 633 |
 | Furnace Replacement | 287 | 430 |

@@ -14,7 +14,7 @@ Your site shapes your Google ranking, what AI says about your business, and how 
 
 ### Why we built this site
 
-Your customers say the same three things on Google: someone picks up, the fix is fast, and nobody sells them what they don't need. That is 4.9 stars across 51 reviews. One customer put the first one this way:
+Your customers say the same three things on Google: someone picks up, the fix is fast, and nobody sells them what they don't need. One customer put the first one this way:
 
 > During the last heat wave TSI came right out on a Sunday. ( When no other company we called would pick up the phone.)
 >
@@ -26,72 +26,41 @@ Another wrote about the second and third:
 >
 > — Tina W.
 
-Your site doesn't say any of it. The 11 customer quotes on your homepage are about good service in general, and none of them is a night or weekend call. The top of the page says "Residential & Commercial HVAC in Central Illinois", with no mention of Peoria. The after-hours promise is two words in the menu, "Emergency Repair 24/7", and a line in the hours box at the very bottom of the page.
-
-So the demo starts with the call you get at 10 PM and builds out from there. It has five pages: this one, your homepage, an air conditioning repair page, a furnace repair page and a contact page. Air conditioning and furnace work are the two jobs your reviews mention most.
+Your site doesn't say any of it. None of the customer quotes on your homepage is a night or weekend call, and the after-hours promise is "Emergency Repair 24/7" in the menu. So the demo starts with the call you get at 10 PM. It has five pages: this one, your homepage, air conditioning repair, furnace repair and contact.
 
 ### The demo, page by page
 
 **1. Homepage**
 
-`/home/`
-
-The first page a Peoria homeowner or business owner lands on, and the page Google reads to decide what kind of company you are and where you work.
-
-- **Current site problem:** The browser-tab name is "HVAC Repair Central Illinois | Home | Thermal Services Inc" and the top headline is "Residential & Commercial HVAC in Central Illinois". Neither says Peoria, so someone searching for an HVAC company in Peoria gets a page that never calls itself one.
-- **Current site problem:** None of the 11 customer quotes on the page is about a night or weekend call, which is the situation your reviews describe best. A caller who is afraid nobody will answer finds only "Emergency Repair 24/7" in the menu.
-- **Current site problem:** The maintenance agreement with no extra after-hours rates is on your Residential and Maintenance pages, not your homepage. The worry on a night call is the bill, and the answer to it is two clicks away.
-- **What the demo fixes:** A top headline that reads "HVAC Company in Peoria, IL — Thermal Services Inc", with a call button and an appointment button on the first screen.
-- **What the demo fixes:** A section on after-hours emergency calls, with one customer's own words about a night call, right under the top of the page.
-- **What the demo fixes:** The maintenance agreement and its no-extra-after-hours-rate terms on the homepage, in plain words.
+- **Current site problem:** The top headline is "Residential & Commercial HVAC in Central Illinois" and the browser tab says "HVAC Repair Central Illinois". Neither says Peoria, so a Peoria search gets a page that never calls itself one.
+- **Current site problem:** The maintenance agreement with no extra after-hours rates is two clicks from the homepage, and a night call is when the bill worries people most.
+- **What the demo fixes:** A headline that reads "HVAC Company in Peoria, IL — Thermal Services Inc", an after-hours section with a customer's own words, and the agreement terms in plain words.
 - **A full build would also add:** Google and AI tools can only repeat what's written down. We get every service, credential and what makes you different out of your head and onto your site and Google profile, so they all tell the same story.
 
 **2. Air Conditioning Repair**
 
-`/air-conditioning-repair-peoria-il/`
-
-The page that should show up when a Peoria homeowner searches for air conditioning repair on the hottest day of the year.
-
-- **Current site problem:** The headline is the single word "Air Conditioning" and the browser-tab name says "A/C Repair Central Illinois". Peoria appears in neither, so Google has nothing to match to a Peoria search.
-- **Current site problem:** The page contradicts itself on how often to have an A/C inspected. It says "at least once yearly", and further down it says your team "provides thorough twice-annual maintenance". A reader can't tell what to book.
-- **Current site problem:** No customer review is on the page, and the answers people ask about air conditioners (refrigerant leaks, covering the unit in winter) sit on a separate Q&A page.
-- **What the demo fixes:** A headline that reads "Air Conditioning Repair in Peoria, IL — Thermal Services Inc".
-- **What the demo fixes:** One answer on timing: have it checked in spring, before the summer heat. The number of visits is left open until you confirm it below.
-- **What the demo fixes:** Four customer reviews, each placed beside the work it proves, and the refrigerant leak and winter covering answers on the page itself.
+- **Current site problem:** The headline is the single word "Air Conditioning", and Peoria is not in the browser tab either.
+- **Current site problem:** The page says to inspect "at least once yearly", then says your team "provides thorough twice-annual maintenance". A reader can't tell what to book.
+- **Current site problem:** No customer review is on the page, and the A/C questions sit on a separate Q&A page.
+- **What the demo fixes:** A "Peoria, IL" headline, one answer on timing (spring), four reviews and the Q&A answers.
 - **A full build would also add:** Call and form tracking that shows which pages and towns your leads come from.
 
 **3. Furnace Repair**
 
-`/furnace-repair-peoria-il/`
-
-The page that should show up when a Peoria homeowner's furnace stops in the middle of winter.
-
-- **Current site problem:** The headline is the single word "Heating" and the browser-tab name says "Heating Repair Central Illinois". "Furnace" and "Peoria" are missing from both.
-- **Current site problem:** Your rule for repair or replace (a system over 20 years old, with a repair above 50% of a new one) is two sentences under a question, followed by four bare phrases such as "Equipment not keeping up". The best advice on the page gets the least room.
-- **Current site problem:** Seven services (furnace repair, installation and maintenance, new construction, and three heat pump services) get one sentence each, and no customer review appears on the page.
-- **What the demo fixes:** A headline that reads "Furnace Repair in Peoria, IL — Thermal Services Inc".
-- **What the demo fixes:** A section that gives the repair-or-replace rule room, with the heat pump advice next to it.
-- **What the demo fixes:** Furnace repair, heat pumps and maintenance each get their own section, with five customer reviews placed beside the work they prove.
+- **Current site problem:** The headline is the single word "Heating". "Furnace" and "Peoria" are in neither it nor the browser tab.
+- **Current site problem:** Your repair-or-replace rule (over 20 years old, repair above 50% of a new one) gets two sentences, seven services get one sentence each, and no review is on the page.
+- **What the demo fixes:** A "Peoria, IL" headline, the repair-or-replace rule with room, and furnaces, heat pumps and maintenance in their own sections with five reviews.
 - **A full build would also add:** A check of what your competitors offer, so services you didn’t think to mention still get their own pages.
 
 **4. Contact**
 
-`/contact/`
-
-The page where a visitor turns into a phone call or an appointment.
-
-- **Current site problem:** The one choice on the form is "Residential" or "Commercial". There is no way to say you need heating, air conditioning or maintenance, so you read that from the message box, if the visitor writes one.
-- **Current site problem:** The page lists your address and hours but names no town you serve. A visitor in Mackinaw or Eureka can't tell from this page whether you come to them.
-- **Current site problem:** Nothing on the page says what to have ready when you call, so a first call starts from zero.
-- **What the demo fixes:** A form that asks for the service (air conditioning, heating, maintenance, generator or something else) and whether it is a home or a business.
-- **What the demo fixes:** The towns you serve, next to the phone number and hours.
-- **What the demo fixes:** A short list of what to tell us, so the first call or form gets a technician the right information.
-- **A full build would also add:** Hourly speed monitoring that keeps your site fast for visitors on phones, and speed is something Google uses to rank you.
+- **Current site problem:** The form's one choice is "Residential" or "Commercial", and no town you serve is named, so a visitor in Mackinaw or Eureka can't tell if you come to them.
+- **What the demo fixes:** A form that asks for the service, and the towns you serve beside the phone number.
+- **A full build would also add:** Every page set up behind the scenes so Google and AI tools like ChatGPT know exactly what you do, where you work, and what your customers say.
 
 ### What else we found
 
-- Your Services page is 68 words and your Gallery page is 61 words, so neither gives Google or a visitor much to read.
-- Your Promotions page says "Now through end of the year" with no year, so a visitor can't tell if the $500 and $250 offers are running now.
+Your Promotions page says "Now through end of the year" with no year, so a visitor can't tell if the $500 and $250 offers are running now.
 
 ### What a full build includes
 
@@ -116,31 +85,21 @@ This demo is the first five pages. A full build starts by pulling every service 
 - A call-and-book bar that stays on screen
 - A contact form that blocks spam
 
-About 80% of visitors are on a phone. That is why the 91 matters: it doesn't let mobile visitors down.
-
 **Keeps working after launch**
 
-- We watch whether Google is showing and indexing your pages
-- We check that your site is up
-- We check its speed on phones every hour
+- Mobile page speed tested every 30 minutes, with a re-check within 5 minutes if a page slows down.
+- Your site watched around the clock for downtime.
+- Google indexing and your Google visibility checked every day.
+- Menus, contact links and forms tested in a real browser twice a day.
 - New team members, booking systems and new services, updated for you
 - Updated when Google and AI tools change how they read websites
 - You never have to know what to ask for
 
 ### What we'd confirm with you
 
-Google and AI tools get different answers about your business from different places. These are the spots where your own pages or your Google profile disagree. Until you tell us, we left each one off the pages.
-
-1. **Phone number.** Your Google profile and the page code of your site show (309) 699-3333. When the site loads in a browser, a script swaps that for 309-324-5317 on every page and in every tap-to-call link. We used (309) 699-3333 in the demo. Which number should customers see?
-2. **Years in business.** Your homepage says "since 2004". Your Residential, Commercial, Heating, Air Conditioning and Special Equipment pages say "over 15 years". Your Maintenance page says "over a decade". Which is right? We left every year off.
-3. **How often to inspect the A/C.** Your Air Conditioning page says "at least once yearly, preferably during spring" and, lower on the same page, "twice-annual maintenance". Your Q&A says twice a year. What do you tell a customer? The demo says to have it checked in spring and gives no count.
-4. **Financing.** Your Residential page says "outstanding financing options, should a replacement be necessary", and no other page says anything about financing. Do you offer it, and through whom? Left off.
-5. **Names.** A customer review spells a technician "Nathanial", and your reply to it spells "Nathaniel". Another review says "Dillon" where your reply says "Dylan". Which spellings are right? Neither is on the pages outside the reviews.
-6. **After-hours price.** One customer, Bob W., wrote that you told him up front an after-hours call would cost much more than waiting until the next day. Do you quote the price when someone calls? What is it? The demo only invites callers to ask, and never says you quote it first.
-7. **After-hours line.** Your pages say "24/7" emergency service and list office hours of Monday to Friday, 7:30 AM to 4:30 PM. Is the emergency line the same number, and who answers on weekends? The demo says "after-hours emergency service" and leaves out "24/7".
-8. **Owner.** No page and no review names an owner, and your Google replies are signed "TSI". Who should we name on the pages, and what do you want them called?
-9. **BBB, Ameren and licenses.** Your homepage says "A+ BBB Rated", "Ameren Energy Efficiency Partner" and "licensed" technicians. We couldn't open your BBB page, and we found no Ameren listing. Please send the BBB profile link, your Ameren program ally details and your license numbers. Left off until then.
-10. **Smaller things.** Your site's address is 2200 W Altorfer Drive, and Google lists Suite D1. Which do you want printed? And is the $500 and $250 off still running, and when does it end?
+1. **Phone number.** Your Google profile and your site's page code show (309) 699-3333, but in a browser a script swaps it for 309-324-5317. Which should customers see? We used (309) 699-3333.
+2. **Years in business.** Your homepage says "since 2004", five pages say "over 15 years" and Maintenance says "over a decade". Which is right? We left every year off.
+3. **Inspections and weekends.** Your A/C page says "at least once yearly" and "twice-annual", and "24/7" sits beside office hours of Monday to Friday, 7:30 AM to 4:30 PM. How often should customers inspect, and who answers on weekends? On our onboarding call we'd also settle the BBB, Ameren and license claims, financing and the owner's name.
 
 ### Want a website like this for your business?
 
@@ -445,7 +404,7 @@ We serve homes in Peoria and the towns around it. For businesses, we work in Peo
 
 | Page | Words with quotes | Words without quotes |
 |---|---|---|
-| Strategy page | 2018 | 1978 |
+| Strategy page | 1000 | 960 |
 | Home | 926 | 507 |
 | Air Conditioning Repair | 719 | 509 |
 | Furnace Repair | 705 | 473 |
