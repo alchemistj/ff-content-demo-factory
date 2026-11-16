@@ -1,6 +1,6 @@
 # https://www.rainforcingroofing.com/about-us
 
-- Fetched: 2026-11-16T03:59:55.879Z (rendered in a real browser)
+- Fetched: 2026-11-16T04:04:27.313Z (rendered in a real browser)
 - HTTP: 200
 - Title: Trusted Roofing Contractor in Peoria, IL - $0 down financing (GAF Certified)
 - H1: Premier Roofing Contractor in Peoria, IL

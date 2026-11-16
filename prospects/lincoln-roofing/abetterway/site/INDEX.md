@@ -49,3 +49,5 @@ Fetched 2026-11-16T04:02:47.431Z from https://abetterwayconstructionandroofing.c
 | a-better-way-construction-roofing-blog-page-page-2.md | https://abetterwayconstructionandroofing.com/a-better-way-construction-roofing-blog-page/page/2 | 200 | 490 | BLOG / A Better Way Construction & Roofing |
 | page-3.md | https://abetterwayconstructionandroofing.com/page/3 | 200 | 2008 | A Better Way Construction & Roofing / Lincoln Roofers, Painting, Fencing & More |
 | page-4.md | https://abetterwayconstructionandroofing.com/page/4 | 200 | 1883 | A Better Way Construction & Roofing / Lincoln Roofers, Painting, Fencing & More |
+| roof-storm-damage.md | https://abetterwayconstructionandroofing.com/roof-storm-damage/ | 200 | 571 | Roof Storm Damage / A Better Way Construction & Roofing |
+| sitemap-html.md | https://abetterwayconstructionandroofing.com/sitemap.html | 200 | 101 | XML Sitemap |
