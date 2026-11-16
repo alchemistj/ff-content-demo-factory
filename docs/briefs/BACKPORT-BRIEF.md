@@ -9,6 +9,9 @@
 
 Josh and the FF architect found patterns in their own full passes on Sterling and Pro Comfort (Nov 16). Apply all of them to this doc in one pass, in place. Josh's standard: would he be proud to send it? Use `outreach/words-2026-11-16/4ever.md` as the bar.
 
+
+**Mechanical repeat count (required, FF architect Nov 16):** run `python3 scripts/check-repeats.py outreach/words-2026-11-16/<slug>.md` (or the saved `<slug>.gdoc.md`). Any FAIL (speed or 24/7 phrases more than twice on one business page) must be fixed and the script re-run until it prints no FAIL. Review WARN lines with judgment.
+
 ## Read first
 - `docs/briefs/DOC-CHECK-BRIEF.md`. Checklist items 94–104 in `docs/JOSH-CHECKLIST.md` are the new ones.
 - `docs/writer-guides/FULL_BUILD_LINES.md`. Its approved lines are the only allowed wording.

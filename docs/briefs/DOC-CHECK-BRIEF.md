@@ -6,6 +6,9 @@ Checker: end your review by reading each page side by side with the closest Lova
 
 **After any backport, read the page top to bottom for repetition; any fact more than twice on a page is a fail.** (FF architect, Nov 16)
 
+**Mechanical repeat count (required, FF architect Nov 16):** run `python3 scripts/check-repeats.py outreach/words-2026-11-16/<slug>.md` (or the saved `<slug>.gdoc.md`). Any FAIL (speed or 24/7 phrases more than twice on one business page) must be fixed and the script re-run until it prints no FAIL. Review WARN lines with judgment.
+
+
 
 You didn't write this. Check `/home/user/ff-content-demo-factory/outreach/words-2026-11-16/<slug>.md` against the same sources the writer used:
 - `docs/briefs/DOC-WRITE-BRIEF.md` (all of Josh's guidelines);
