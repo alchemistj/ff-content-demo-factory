@@ -151,7 +151,7 @@ You get a straight price before work starts. We inspect your roof with a drone, 
 
 **Buttons:** Call (309) 989-3279 | Get a Free Estimate
 
-*Strip:* GAF Certified | Licensed, Bonded and Insured | Free Drone Roof Inspection | Customers describe same-day service | No-Mess Guarantee
+*Strip:* GAF Certified | Licensed, Bonded and Insured | Free Drone Roof Inspection | No-Mess Guarantee
 
 > Miguel was extremely knowledgeable, explained everything in detail, was always on time, and was very personable. … This company was honest, efficient, reasonably priced, and used quality materials for our roof.
 
@@ -458,7 +458,7 @@ Miguel Rivera, our owner, is often the one you'll deal with. If you'd rather wri
   - 10-year workmanship warranty: their claim. Terms are not on the site. Used on the roof replacement page only.
   - Free 5-year maintenance plan, "$3,000 value", projects over $25,000, "for a limited time": their claim with its own terms. The value is unverified. Replacement page only; worded "which we value at $3,000".
   - GoodLeap financing, "$0 down", "no prepayment penalties", deductible coverage: their claim. Stated once on the roof replacement page.
-  - Free drone inspection, "free, no-obligation": their claim. Said in full on home (FAQ); the insurance page hero says "free inspection". Backport pass Nov 16: one strip only, on home (5 items: GAF Certified, licensed/bonded/insured, free drone inspection, customers describe same-day service, No-Mess Guarantee; towns are in the FAQ and on Contact). No-Mess Guarantee is their claim (site pages gutter-guards, roofers-in-princeton, roofers-in-la-salle, roofers-in-manito); FF asked for it in the strip. Strips removed from both service pages and contact. No ratings or review counts anywhere.
+  - Free drone inspection, "free, no-obligation": their claim. Said in full on home (FAQ); the insurance page hero says "free inspection". Backport pass Nov 16: one strip only, on home (4 items: GAF Certified, licensed/bonded/insured, free drone inspection, No-Mess Guarantee; towns are in the FAQ and on Contact). No-Mess Guarantee is their claim (site pages gutter-guards, roofers-in-princeton, roofers-in-la-salle, roofers-in-manito); FF asked for it in the strip. Strips removed from both service pages and contact. No ratings or review counts anywhere.
   - Veteran incentives and priority scheduling: their claim (/about-us/). Size not stated, so the copy says "ask us what applies."
   - Miguel Rivera as owner: confirmed on his own page (/miguel-rivera/) and by reviews. Used by first name on home and contact.
 

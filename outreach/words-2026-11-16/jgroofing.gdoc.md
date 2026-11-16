@@ -582,11 +582,7 @@ We are trained to work with insurance from start to finish. After a hailstorm or
 
 ## After the Hail
 
-A hailstorm can damage more than the shingles.
-
-  
-
-Storms rarely hit just one part of a house.
+A hailstorm can damage more than the shingles, so it helps to have the roof, gutters and siding looked at in one visit.
 
   
 
