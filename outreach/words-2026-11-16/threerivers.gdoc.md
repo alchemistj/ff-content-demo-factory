@@ -30,13 +30,9 @@ Your reviews keep naming people: Taylor, Tyler, Kyle, Ryan, Luke. One put it thi
 
   
 
-Today those words sit on Google, not on your site. Your site lists first names, but nothing connects them to a job, and no review appears on it.
+Your site lists first names, but nothing connects them to a job, and no review appears on it.
 
 So the demo says Electrician in Fort Wayne, IN, and gives panel upgrades and rewiring a page each.
-
-Your other services are on the homepage.
-
-Here's the details:
 
 ### The demo, page by page
 

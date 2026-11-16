@@ -54,7 +54,7 @@ Why it matters: It's the page most people see first, and it has to say who you a
 
   - Roof replacement and roof repair have no headings of their own on your homepage, and storm damage gets one sentence, so a homeowner scanning for their problem finds no answer.
 
-  - Your BBB accreditation is on the About page only, so a homepage visitor never sees it.
+  - Your BBB A+ rating is on the About page only, so a homepage visitor never sees it.
 
   - The reviews on the homepage are from 2021 and 2023, so a visitor sees proof that looks old.
 
@@ -66,7 +66,7 @@ Why it matters: It's the page most people see first, and it has to say who you a
 
   - Every service has its own heading, with roof replacement and storm damage first.
 
-  - BBB accreditation is on the homepage, with a plain line on what it is.
+  - BBB A+ is on the homepage, with a plain line on what accreditation is.
 
   - Newer reviews sit beside the service they prove.
 
@@ -266,7 +266,7 @@ Amanda explains each step, including the insurance claim if there is one, and Jo
 
   
 
-Trust bar: Free Estimates | BBB Accredited | Roofs, Siding and Gutters | Peoria and Central Illinois | Customers describe one-day roof jobs
+Trust bar: Free Estimates | BBB Accredited, A+ | Roofs, Siding and Gutters | Peoria and Central Illinois | Customers describe one-day roof jobs
 
   
 
@@ -362,7 +362,7 @@ Customers have had us roof a building for their business as well as their home.
 
 ## Who Stands Behind the Work
 
-We are licensed, insured and bonded, and BBB Accredited. We've been accredited since 2020, and BBB says accreditation shows a business operates honestly and with integrity.
+We are licensed, insured and bonded, and BBB Accredited with an A+ rating. We've been accredited since 2020, and BBB says accreditation shows a business operates honestly and with integrity.
 
   
 
@@ -744,7 +744,7 @@ We set a time, come to your house, look at the roof and give you the estimate. Q
 
 Prefer to write? Send your name, phone, email and a few lines about the project. We'll get back to you.
 
-## Notes (not page copy). Nov 16 QA pass and judgment backport (second judgment pass: no ratings anywhere, FAQs no longer repeat page paragraphs, unsourced process lines cut, Jose-looks-at-the-roof claims reworded because no quoted review backs them, full-build list matched to the canonical block, every Current site problem bullet ends with its cost; home strip now one line under the hero buttons, five items, BBB Accredited with no A+ and no ratings; the service-page strips were removed; one speed claim added to the home strip, and the home FAQ cut to three questions; service pages keep their existing hero and FAQs, nothing new added; filler line "we stay until the job is done right" cut; strategy page: duplicate "This demo is the first five pages" line removed, full-build list fixed to the approved speed wording, the unapproved "New team members, booking systems" bullet deleted, and a call-to-action sentence added under What we'd confirm; no FAQ question repeats a page section). Earlier: jargon explained, repeated Jose/Amanda lines cut to once per page, site warranty and licensed/insured claims restored in their voice and hedged.
+## Notes (not page copy). Nov 16 QA pass and judgment backport (second judgment pass: no ratings anywhere, FAQs no longer repeat page paragraphs, unsourced process lines cut, Jose-looks-at-the-roof claims reworded because no quoted review backs them, full-build list matched to the canonical block, every Current site problem bullet ends with its cost; home strip now one line under the hero buttons, five items, BBB Accredited, A+ and no review ratings; the service-page strips were removed; one speed claim added to the home strip, and the home FAQ cut to three questions; service pages keep their existing hero and FAQs, nothing new added; filler line "we stay until the job is done right" cut; strategy page: duplicate "This demo is the first five pages" line removed, full-build list fixed to the approved speed wording, the unapproved "New team members, booking systems" bullet deleted, and a call-to-action sentence added under What we'd confirm; no FAQ question repeats a page section). Earlier: jargon explained, repeated Jose/Amanda lines cut to once per page, site warranty and licensed/insured claims restored in their voice and hedged.
 
 **Rebuild reason: Both. Services sit on one page and the page text repeats "Peoria, IL" and "roofing contractors" in nearly every paragraph, and the site is 1225 px wide on a phone, so it scrolls sideways.**
 
@@ -768,7 +768,7 @@ Prefer to write? Send your name, phone, email and a few lines about the project.
 
   
 
-  - BBB accredited: confirmed on bbb.org (profile: [https://www.bbb.org/us/il/peoria/profile/roofing-contractors/jg-roofing-and-company-0724-1000014407](https://www.bbb.org/us/il/peoria/profile/roofing-contractors/jg-roofing-and-company-0724-1000014407); accredited since 6/30/2020; business started 4/24/2018). The line "operates honestly and with integrity" is from BBB's own page ([https://www.bbb.org/en/us/about-bbb-accreditation](https://www.bbb.org/en/us/about-bbb-accreditation)). Defined once, on home only.
+  - BBB A+ accredited: confirmed on bbb.org (profile: [https://www.bbb.org/us/il/peoria/profile/roofing-contractors/jg-roofing-and-company-0724-1000014407](https://www.bbb.org/us/il/peoria/profile/roofing-contractors/jg-roofing-and-company-0724-1000014407); accredited since 6/30/2020; business started 4/24/2018). The line "operates honestly and with integrity" is from BBB's own page ([https://www.bbb.org/en/us/about-bbb-accreditation](https://www.bbb.org/en/us/about-bbb-accreditation)). I could not find BBB's own definition of the A+ rating on bbb.org, so the page does not explain what A+ means. Defined once, on home only.
 
   - GAF certified: NOT confirmed, and cut from the page copy in the Nov 16 recheck because it is a What we'd confirm item. Older note follows (GAF's directory returned 403). Used as the site's own warranty claim, hedged ("ask what it covers"), on home and on the replacement page; sited as the site says it ("We are certified with GAF, the largest shingle manufacturer in North America..."). **Check the GAF locator before this goes out.**  Strategy page also asks the owner about it.
 

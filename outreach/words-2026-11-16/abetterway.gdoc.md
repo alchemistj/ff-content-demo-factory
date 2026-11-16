@@ -364,7 +364,7 @@ Maria helps homeowners through insurance claims when they have one, and Alex loo
 
 > A great company\! As a first time home owner and first time going through insurance for the roof, they helped me through the process with the insurance company and had great communication with the process of the repair.
 
-> — Social H., Google review
+> — Google review
 
 ## How a Claim Usually Goes
 

@@ -14,7 +14,7 @@ We built Rainforcing the first five pages of that kind of website. More on that 
 
 **Why we built this site**
 
-Your reviews keep saying the same two things: Miguel stays with them through the whole job, and your team handles the insurance company. Your homepage barely says either.
+Your reviews say Miguel stays through the whole job and your team handles the insurance company. Your homepage barely says either.
 
 > They stayed with me closely throughout entire process\!\!\! Especially Miguel\!\!\!
 
@@ -30,14 +30,14 @@ So the demo says Roofing Company in Peoria, IL, names Miguel at the top, and giv
 
 **Current site problem**
 
-  - Your site never names Miguel, the owner your reviews name, so visitors never learn who will be on their roof.
-  - Insurance help, which your reviews praise, gets one clause. Hail victims can't tell you handle claims and may call someone else.
-  - "Rainforcig" and "we've you taken care of" are typos, and "roofing company" repeats in most paragraphs, which makes the site look careless and hard to read.
+  - Your site never names Miguel, the owner your reviews name, so visitors can't tell who will be on their roof.
+  - Insurance help, which your reviews praise, gets one clause, so hail victims may call someone else.
+  - "Rainforcig" and "we've you taken care of" are typos, and "roofing company" repeats in most paragraphs, so the site looks careless.
 
 **What the demo fixes**
 
-  - Miguel, your owner, is named at the top and gets his own section.
-  - Storm damage and insurance claims get their own section, with a review.
+  - Miguel is named at the top and gets his own section.
+  - Storm damage and insurance claims get their own section.
   - Typos gone, each idea said once.
 
 **A full build would also add** Google and AI tools can only repeat what's written down. We get every service, credential and what makes you different out of your head and onto your site and Google profile, so they all tell the same story.
@@ -48,15 +48,15 @@ So the demo says Roofing Company in Peoria, IL, names Miguel at the top, and giv
 
 **Current site problem**
 
-  - Replacement and residential roofing share one headline, so Google has two near-copies to choose between and neither ranks well.
-  - That headline sells a plan for projects over $25,000 and never says roof replacement, so someone searching for a new roof finds a financing offer instead.
-  - Its reviews include a siding repair and a vent-pipe leak, and repeat on your town pages, so someone weighing a new roof reads about other jobs.
+  - Replacement and residential roofing share one headline, so Google sees two near-copies and neither ranks well.
+  - That headline sells a plan for projects over $25,000 and never says roof replacement, so a new-roof search finds financing instead.
+  - Its reviews include a siding repair and a vent-pipe leak, and repeat on your town pages, so a new-roof shopper reads about other jobs.
 
 **What the demo fixes**
 
   - One page headed "Roof Replacement in Peoria, IL."
   - It opens with repair or replace, then how a job goes.
-  - Reviews from people who replaced a roof, each shown once.
+  - Replacement reviews, each shown once.
 
 **A full build would also add** Pages planned from what Google actually shows for each search, so every page targets something people really look for.
 
@@ -66,9 +66,9 @@ So the demo says Roofing Company in Peoria, IL, names Miguel at the top, and giv
 
 **Current site problem**
 
-  - "Xactimate," "Law & Ordinance provisions" and "depreciation funds" go unexplained, so a homeowner can't tell what is being offered.
-  - "Certified Insurance Restoration Experts" never says who certified you, and "ensure your carrier covers" promises someone else's decision, so a denied claim feels like a broken promise.
-  - Reviews describe six months to almost a year. The page never says claims take that long, so owners expect weeks and feel misled.
+  - "Xactimate," "Law & Ordinance provisions" and "depreciation funds" go unexplained, so homeowners can't tell what's offered.
+  - "Certified Insurance Restoration Experts" never says who certified you, and "ensure your carrier covers" promises someone else's decision, so a denial feels like a broken promise.
+  - Reviews describe six months to almost a year. The page never says claims take that long, so owners feel misled.
 
 **What the demo fixes**
 
@@ -84,15 +84,15 @@ So the demo says Roofing Company in Peoria, IL, names Miguel at the top, and giv
 
 **Current site problem**
 
-  - The headline is "Contact rainforcing roofing today\!" with your name in lowercase and no town, so it looks careless and doesn't tell Google where you work.
-  - Hours sit at the very bottom, and nothing says what to do when water comes in at night, so someone with a leak has nowhere to turn.
-  - The browser tab says "\#1 Roofers in Peoria, IL," a ranking nobody can back up, so visitors may doubt the rest of the site.
+  - The headline is "Contact rainforcing roofing today\!" with your name in lowercase and no town, so it looks careless.
+  - Hours sit at the bottom and nothing says what to do when water comes in at night, so a leak has nowhere to turn.
+  - The browser tab says "\#1 Roofers in Peoria, IL," a ranking nobody can back up, so visitors may doubt the site.
 
 **What the demo fixes**
 
-  - Your name spelled right, and a first line asking what's wrong with the roof.
+  - Your name spelled right and a first line asking what's wrong with the roof.
   - Phone, hours, address and towns together.
-  - A tab title that names you and Peoria, and one review.
+  - A tab title naming you and Peoria, and one review.
 
 **A full build would also add** Call and form tracking that shows which pages and towns your leads come from.
 
@@ -130,10 +130,10 @@ So the demo says Roofing Company in Peoria, IL, names Miguel at the top, and giv
 
 On a short onboarding call, we'd confirm four things.
 
-  - Your site says "24/7 Emergency Roof Repair," but your hours end at 8 PM Monday to Saturday and 3 PM Sunday. Which is right?
-  - Your site says "GAF Certified" and "GAF Certified Plus," and GAF's own directory blocked us. Which is current?
-  - Your site says you started in 2021 and claims "over 20 years of roofing experience." Which should customers read?
-  - Your site says "BBB accredited" on one page, but BBB's search listing doesn't show it. Are you accredited?
+  - Your site says "24/7 Emergency Roof Repair," but your hours end at 8 PM (3 PM Sunday). Which is right?
+  - Your site says both "GAF Certified" and "GAF Certified Plus." Which is current?
+  - Your site says you started in 2021 and claims "over 20 years of roofing experience." Which is right?
+  - Your site says "BBB accredited" on one page, but BBB's search listing shows only an A+ rating. Are you accredited?
 
 **Want a website like this for your business?**
 
@@ -207,7 +207,7 @@ Every job comes with our No-Mess Guarantee. Before work starts we cover landscap
 
 ## Who Stands Behind the Work
 
-GAF is a large roofing shingle manufacturer, and it runs a certification program for the roofers who install its products. We're a GAF Certified roofing company.
+GAF is a large roofing shingle manufacturer, and it runs a certification program for the roofers who install its products. We're a GAF Certified roofing company. The Better Business Bureau, which rates local businesses, gives Rainforcing an A+ rating.
 
 We're licensed, bonded and insured. Insurance covers accidents on a job, and a bond is a financial guarantee that usually protects customers if a contractor doesn't meet its obligations.
 
@@ -443,8 +443,8 @@ Miguel Rivera, our owner, is often the one you'll deal with. If you'd rather wri
 
 **Word counts** (by script; "without quotes" excludes blockquotes, buttons, trust bar and caption lines; "with" is everything on the page)
 
-  - Strategy page: about 1,100 without quotes (badge, headline, subheading and full-build list counted), recount before sending.
-  - Home — Roofing Company in P: 742 without quotes, 915 with.
+  - Strategy page: about 1,050 without quotes (badge, headline, subheading and full-build list counted), recount before sending.
+  - Home — Roofing Company in P: 756 without quotes, 929 with.
   - Insurance Storm Restoration: 863 without quotes, 1023 with.
   - Roof Replacement — Roof Rep: 905 without quotes, 1030 with.
   - Contact — Contact Rainforci: 236 without quotes, 257 with.
@@ -452,7 +452,7 @@ Miguel Rivera, our owner, is often the one you'll deal with. If you'd rather wri
 
 **Credentials and sources**
 
-  - BBB: the A+ rating shows on bbb.org search results, but it is a rating, so it is not used on any page. "BBB accredited" is their own claim (one town page, /roofing-in-west-peoria-il/); the bbb.org listing does not confirm it, so it was removed from the home copy and is the fourth "What we'd confirm" question.
+  - BBB: the A+ rating is CONFIRMED on bbb.org search results ("BBB Rating: A+") and is stated once on home. "BBB accredited" is their own claim (one town page, /roofing-in-west-peoria-il/); the bbb.org listing does not confirm it, so it was removed from the home copy and is the fourth "What we'd confirm" question.
   - GAF Certified: the business's own claim (/, /about-us/, /roof-replacement/). NOT confirmed: the GAF contractor locator returned 403. Used only as "GAF Certified", defined once on home as a manufacturer program. "GAF Certified Plus" (/miguel-rivera/, /roof-replacement/, /gutters/) is left out; the strategy page asks which is current. **Check the locator before this goes out.**
   - Licensed, bonded and insured: the business's own claim. No license number or insurer on the site; not confirmed. Stated as their claim on home only, with plain definitions of insurance and bond (hedged general knowledge).
   - 10-year workmanship warranty: their claim. Terms are not on the site. Used on the roof replacement page only.
@@ -471,5 +471,5 @@ Miguel Rivera, our owner, is often the one you'll deal with. If you'd rather wri
   - Founding year (2021 vs 2022) and the "over 20 years" line.
   - License and insurance claims: license number, carrier, and bond.
   - 5-year plan terms and the 10-year workmanship warranty terms; whether the plan offer is still running.
-  - Whether the BBB accreditation exists (the search result lists no accreditation); the home copy no longer claims it.
+  - Whether the BBB accreditation exists (the search result shows the A+ rating only); the home copy no longer claims it.
   - Town list: copied from the site menu.

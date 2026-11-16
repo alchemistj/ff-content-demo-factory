@@ -22,13 +22,13 @@ Why it matters: It's the page that carries your price promise.
 Current site problem
 
 The top says "best prices, guaranteed" with no catch. "As long as someone has similar credentials" is further down, so a customer who finds the catch later feels the promise was bigger than it is.
-BBB and Owens Corning list you as "Affordable Construction," not "Affordable Roofing." A customer checking your BBB listing can't find you, so they may doubt the business is real.
+BBB and Owens Corning list you as "Affordable Construction," not "Affordable Roofing." A customer checking your A+ can't find you, so they may doubt the business is real.
 Its reviews are mostly about price and crew, with little on metal or gutters, so a customer who wants either has no proof you do it well.
 
 What the demo fixes
 
 The guarantee and its catch, word for word, at the top.
-BBB Accredited and Owens Corning Preferred each get a plain line you can look up.
+BBB A+ and Owens Corning Preferred each get a plain line you can look up.
 Reviews beside what they prove, including metal and gutters.
 
 A full build would also add Google and AI tools can only repeat what's written down. We get every service, credential and what makes you different out of your head and onto your site and Google profile, so they all tell the same story.
@@ -139,7 +139,7 @@ Trust bar
 Family Owned
 Best Price Guarantee, Similar Credentials
 Owens Corning Preferred Contractor
-BBB Accredited
+BBB Accredited, A+
 Customers Describe Next-Day Visits and One-Day Installs
 
 > Nick came out to inspect the roof and gave me a quote without a sales pitch. I had other estimates and he beat them hands down due to it being a family business with no big overhead costs.
@@ -161,7 +161,7 @@ We are fully licensed and insured, and have been for over a decade. When you cal
 
 — Bun L.
 ### Credentials You Can Look Up
-We are BBB Accredited. BBB says accreditation shows a business operates honestly and with integrity.
+We are BBB Accredited with an A+ rating. BBB says accreditation shows a business operates honestly and with integrity.
 
 Owens Corning's contractor directory for Fort Wayne lists us as a Preferred Contractor.
 ### Roof Replacement
@@ -349,7 +349,7 @@ Section counts: Home 11 (hero, then ten), Roof Replacement 12 (hero, then eleven
 
 Credentials and their sources
 
-BBB Accredited: confirmed on the BBB profile (https://www.bbb.org/us/in/fort-wayne/profile/roofing-contractors/affordable-construction-and-exteriors-corp-0352-90071714): "BBB Accredited", listed as "Affordable Construction and Exteriors Corp.", phone (260) 693-7072. Defined once, on Home. The line "operates honestly and with integrity" is BBB's own wording from its accreditation page (https://www.bbb.org/en/us/about-bbb-accreditation). I could not open either BBB page from this environment (the profile returned a bot check), so that wording is carried from the earlier JG Roofing draft and the profile details from inventory.md. Re-check before sending.
+BBB Accredited, A+: confirmed on the BBB profile (https://www.bbb.org/us/in/fort-wayne/profile/roofing-contractors/affordable-construction-and-exteriors-corp-0352-90071714): rating A+, "BBB Accredited", listed as "Affordable Construction and Exteriors Corp.", phone (260) 693-7072. Defined once, on Home. The line "operates honestly and with integrity" is BBB's own wording from its accreditation page (https://www.bbb.org/en/us/about-bbb-accreditation). I could not open either BBB page from this environment (the profile returned a bot check), so that wording is carried from the earlier JG Roofing draft and the profile details from inventory.md. Re-check before sending.
 Owens Corning Preferred Contractor: confirmed as the Preferred tier in Owens Corning's Fort Wayne directory (https://www.owenscorning.com/en-us/roofing/contractors/in/fort-wayne), listed as "Affordable Construction", (260) 693-7072. Not confirmed under "Affordable Roofing". Home says only what the directory shows. I did not say what the Preferred tier means, because I have no Owens Corning definition to quote. The directory fetch was not repeated here (it redirected); details are from inventory.md.
 5-year workmanship warranty, optional 10-year Owens Corning-backed warranty "for an additional cost": the site's own claim (roof-replacement, roof-replacement-cost). Not checked against Owens Corning. On the Roof Replacement page only.
 Owens Corning Limited Lifetime shingle warranty: from the site's Duration vs Oakridge post, with its "read the actual warranty" caveat. On the Asphalt page only.

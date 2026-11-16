@@ -133,7 +133,7 @@ On a short onboarding call, we'd confirm four things.
 1.  **After hours.** Your Services page says call 260-485-3412; the top of the page says follow the prompts. Which is right?
 2.  **"Manablocks"** is on your plumbing list with no explanation. What is it?
 3.  **PHCC** is on your Brands and Community pages, not as a membership. Are you a member?
-4.  **Applicants** email office@wcbsons.net, while your site is wcborcheltandsons.com. Which address should customers use?
+4.  Your site lists office@wcbsons.net, while your web address is wcborcheltandsons.com. Which email should customers use?
 
 ### Want a website like this for your business?
 
