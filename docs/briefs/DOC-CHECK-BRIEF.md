@@ -8,7 +8,13 @@ You didn't write this. Check `/home/user/ff-content-demo-factory/outreach/words-
 - the closest model page in `examples/approved-copy/` or the Lovable builds.
 
 **Fix small issues directly in the file:**
-- a claim stronger than its source;
+- a claim stronger than its source, or an absolute claim copied from their site that isn't hedged;
+- an invented credential, license, award, year or guarantee (cut it); a site-sourced one is fine in the owner's voice, and a conflict belongs in "What we'd confirm" (never drop a top differentiator);
+- unexplained trade jargon (tear-off, decking, flashing, ACV, RTUs, brand product names): plain phrase or explain once;
+- an idea or catchphrase repeated on a page or across pages (e.g. the same staff-role line);
+- review-inferred process or reply speed stated as policy or repeated: change to "usually"/"often", once;
+- trade-knowledge filler not specific to this business's services and area;
+- a home section with a one-line body plus quotes: flag as thin (writer adds content or cuts it);
 - a repeat;
 - jargon;
 - a report-style line;

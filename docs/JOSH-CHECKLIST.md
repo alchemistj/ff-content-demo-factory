@@ -184,6 +184,18 @@ Origin note: most commit messages in #41 to #64 say only what changed, not why. 
 
 78. **The Homepage card's full-build line is the standard one.** PASS if its "A full build would also add" line matches FULL_BUILD_LINES.md line 8 exactly. [Nov 16 Josh; FULL_BUILD_LINES.md] Pages: strategy.
 
+79. **Business's own site claims used in their voice; none invented by us.** PASS if certs, licenses, financing, warranty and paperwork help from their site appear as their claim, and no license, cert, award, year or guarantee is invented. Conflicts sit in "What we'd confirm"; no top differentiator is dropped. [Nov 16 Josh] Pages: all.
+
+80. **Trade jargon is explained or skipped.** PASS if terms like tear-off, decking, flashing, ACV, RTUs and brand product names have a plain phrase or one explanation. [Nov 16 Josh] Pages: home, services.
+
+81. **Each idea once per page, varied across pages.** PASS if no idea or catchphrase repeats (e.g. the same staff-role line many times). [Nov 16 Josh] Pages: all.
+
+82. **Trade knowledge is specific and tight.** PASS if it fits this business's services and area and is not filler; 700 words come from substance, never padding. [Nov 16 Josh] Pages: services.
+
+83. **Review-inferred details are hedged and not repeated.** PASS if visit process and reply speed read "usually"/"often", never as policy, and appear once; absolute claims copied from their site are hedged. [Nov 16 Josh] Pages: all.
+
+84. **Home sections are not thin.** PASS if no home section is a one-line body plus quotes; each has real content or is cut. [Nov 16 Josh] Pages: home.
+
 ---
 
 ## Reviewer table (copy per demo)

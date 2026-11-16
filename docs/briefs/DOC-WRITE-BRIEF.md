@@ -31,8 +31,8 @@ Write five pages:
   - Mobile is most visitors (about 80%). That's why the 91 speed score matters: it doesn't let mobile visitors down.
   - About and owner pages build authority with Google and AI, and trust with customers.
   - Only the standard lines, with the scope truthful: the demo is "the first five pages".
-- **Service pages carry hedged general trade knowledge** (what usually fails and why, what to check before calling, safety, repair-vs-replace rules, what happens on a visit), in the owner's voice, hedged ("usually", "often"). Only BUSINESS claims (services offered, credentials, speed, guarantees, prices, promised process) need a source in `site/`, `facts.md` or `reviews.json`. Reach 700+ words with real, specific content; no padding, no repeats. Model: `examples/demo-drafts/comforttechs-lincoln-words.json` (furnace page).
-- **Cut shallow sections** that aren't Window Dudes deep. Card grids don't need headings. Keep blocks short. Home must not feel thin.
+- **Service pages carry hedged general trade knowledge** (what usually fails and why, what to check before calling, safety, repair-vs-replace rules, what happens on a visit), in the owner's voice, hedged ("usually", "often"). Only BUSINESS claims (services offered, credentials, speed, guarantees, prices, promised process) need a source in `site/`, `facts.md` or `reviews.json`. Trade knowledge must be specific to this business's services and area, tight, not filler. Reach 700+ words with substance, never padding; no repeats. Model: `examples/demo-drafts/comforttechs-lincoln-words.json` (furnace page).
+- **Cut shallow sections** that aren't Window Dudes deep. Card grids don't need headings. Keep blocks short. Home must not feel thin: a home section with a one-line body plus quotes is thin; give it real content or cut it.
 - **Strategy page:**
   - Put the call to action after "What we'd confirm with you", not before.
   - No generic lead-in. Bridge from the reviews to the page plan.
@@ -47,7 +47,11 @@ Write five pages:
   - **No two review quotes back to back** anywhere on a page (the models never do it); put copy between them.
   - **The site:** no website talk on the business pages.
   - **Other companies:** no claims about them.
-  - **Credentials:** defined once, on home, from the certifier's own site.
+  - **Credentials:** defined once, on home. The business's own site claims (certs, licenses, financing, warranty, paperwork help) are usable in their voice, stated as their claim. Hard nos: claims WE invent (licenses, certs, awards, years, guarantees). If sources conflict, put it in "What we'd confirm"; never drop a top differentiator.
+  - **Jargon:** explain or skip trade jargon on business pages (tear-off, decking, flashing, ACV, RTUs, brand product names): use a plain phrase or explain once.
+  - **Say each idea once per page** and vary it across pages; no repeated catchphrases (e.g. the same staff-role line 10 times).
+  - **Review-inferred things** (visit process, reply speed): only "usually"/"often", never as policy, never repeated.
+  - **Absolute claims copied from their site** ("always", "never", "100%"): hedge them.
   - **Claim strength:** match the source exactly.
   - **Repeated lines:** financing, guarantee and quote lines once per site.
   - **Years and owner:** no disputed years; don't name anyone as owner unless confirmed.
