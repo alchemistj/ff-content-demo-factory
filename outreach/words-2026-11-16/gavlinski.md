@@ -9,7 +9,7 @@
 
 Your site shapes your Google ranking, what AI says about your business, and how easy you are to reach. Here's a demo of what yours could be.
 
-We built Gavlinski the first four pages of that kind of website.
+We built Gavlinski Roofing & Construction the first five pages of that kind of website. More on that below.
 
 **Why we built this site**
 
@@ -26,21 +26,22 @@ So the demo opens with Roofing Contractor in Peoria, IL, puts Brian up front, an
 **The demo, page by page**
 
 ### 1. Homepage
+*Why it matters:* This is what Google reads to learn who you are.
 
 **Current site problem**
 - The headline is "Quality comes first." Google has to dig for what you do and where.
 - Brian's name sits in a paragraph and a smaller box, with no customer's words beside it.
-- "Over 40 Years in Business" sits next to a 1976 start.
 
 **What the demo fixes**
 - A headline that says Roofing Contractor in Peoria, IL.
 - Brian up front, with a customer saying he works beside the crew.
-- Your crew and family story in one place, without the "over 40 years" badge until you confirm it.
+- Your crew and family story in one place.
 
 **A full build would also add**
 Google and AI tools can only repeat what's written down. We get every service, credential and what makes you different out of your head and onto your site and Google profile, so they all tell the same story.
 
 ### 2. Complete Roof Replacement
+*Why it matters:* A new roof is the biggest job you do, and the search with the most at stake.
 
 **Current site problem**
 - "Complete Roof Replacement" is one line in a list of 24 services on a single page, so Google can't match it to someone searching for a new roof in Peoria.
@@ -56,6 +57,7 @@ Google and AI tools can only repeat what's written down. We get every service, c
 Pages planned from what Google actually shows for each search, so every page targets something people really look for.
 
 ### 3. Roof Repair and Storm Damage
+*Why it matters:* After a storm or a leak, this is the page someone in Peoria needs tonight.
 
 **Current site problem**
 - Repair and storm damage are two more lines in the same list, with no page and no Peoria in a headline.
@@ -71,6 +73,7 @@ Pages planned from what Google actually shows for each search, so every page tar
 A check of what your competitors offer, so services you didn't think to mention still get their own pages.
 
 ### 4. Contact
+*Why it matters:* It's where someone decides whether to call.
 
 **Current site problem**
 - A form with four required boxes and a phone number. No address or email anywhere on the site.
@@ -382,10 +385,10 @@ Call 309-922-5767 and tell us about the roof.
 **Rebuild reason: SEO.** The homepage headline is "Quality comes first," with roofing and Peoria only in the smaller line under it, and all 24 services sit on one page, so Google can't match any to a search.
 
 **Word counts** (script count; "without quotes" excludes blockquotes, buttons and the strip)
-- Strategy: 1,017 without quotes, 1,036 with. (trimmed from 1,128; the full-build list is untouched)
-- Home: 623 without quotes, 685 with.
-- Complete Roof Replacement: 842 without quotes, 949 with. Meets 700+.
-- Roof Repair and Storm Damage: 724 without quotes, 818 with. Meets 700+.
+- Strategy: 1,024 without quotes, 1,042 with (trimmed from 1,128; the full-build list is untouched).
+- Home: 644 without quotes, 712 with.
+- Complete Roof Replacement: 846 without quotes, 957 with. Meets 700+.
+- Roof Repair and Storm Damage: 728 without quotes, 827 with. Meets 700+.
 - Contact: 240 without quotes, 254 with.
 
 **Credentials and sources**
