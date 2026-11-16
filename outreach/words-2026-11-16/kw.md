@@ -13,15 +13,13 @@ We built K&W the first five pages of that kind of website. More on that below.
 
 **Why we built this site**
 
-Your customers say K&W shows up fast, and they say it again and again.
+Your customers say K&W shows up fast, again and again.
 
 > They find the time to get someone here within 24 hours when I have an issue.
 >
 > — Taylor M.
 
-Your heating and AC pages never say how fast. The AC page says "prompt service" and stops there.
-
-Your emergency line is the other half of the story.
+Your heating and AC pages never say how fast. The AC page says "prompt service" and stops there. Your emergency line is the other half of the story.
 
 > When you trust you Furnance and AC with K&W no matter what the issue 24/7 the professionals got you covered
 >
@@ -29,7 +27,7 @@ Your emergency line is the other half of the story.
 
 Your home page answers "Do you offer emergency HVAC services?" with a yes and no mention of 24/7.
 
-So the demo opens with HVAC Company in Evansville, IN, puts your speed and your 24/7 line at the top, and gives furnace repair and AC repair a page each.
+So the demo puts your speed and your 24/7 line at the top, and gives furnace repair and AC repair a page each.
 
 **The demo, page by page**
 
@@ -39,11 +37,11 @@ So the demo opens with HVAC Company in Evansville, IN, puts your speed and your 
 
 **Current site problem**
 - The name in your browser tab is "Reliable HVAC Services for Indiana, Kentucky & Illinois." Evansville isn't in it, and Evansville is where your customers search from.
-- The same four testimonials (Viola Johnson, Kevin Storey, Michael Molinet, Andrew Hayes) sit on your home, heating, AC and About pages. They aren't matched to the service, and none of them is on your Google profile.
+- The same four testimonials (Viola Johnson, Kevin Storey, Michael Molinet, Andrew Hayes) repeat on your home, heating, AC and About pages, three times down the page on the service pages. We couldn't find any of them on your Google profile.
 
 **What the demo fixes**
-- A headline that says HVAC Company in Evansville, IN, and a browser tab name to match.
-- A strip right under the call buttons: family-owned, 24/7 emergency service, free replacement estimates, often the same day.
+- A browser tab name and headline that say HVAC Company in Evansville, IN.
+- A strip right under the call buttons: family-owned, 24/7 emergency service, free furnace replacement estimates, often the same day.
 - Your Google reviews, word for word, in place of the four repeated testimonials.
 
 **A full build would also add**
@@ -56,7 +54,7 @@ Google and AI tools can only repeat what's written down. We get every service, c
 **Current site problem**
 - The headline is "Heating Services – Furnaces, Heat Pumps, Maintenance & More," with no Evansville and no furnace repair. Google can't tell which town it's for.
 - Furnace repair gets two sentences, and nothing says what usually goes wrong or what happens when you call.
-- Nothing covers a gas smell or a furnace that quits at night, and the page never says how fast you get there. Your reviews do: Thomas B. wrote "Quick, same day service."
+- Nothing covers a gas smell or a furnace that quits at night, and the page never says how fast you get there. Your reviews do: same-day service, within 24 hours.
 
 **What the demo fixes**
 - A headline and browser tab name that say Furnace Repair in Evansville, IN.
@@ -73,12 +71,12 @@ A check of what your competitors offer, so services you didn't think to mention 
 
 **Current site problem**
 - The headline is "Air Conditioning Services – Repairs, Replacements, Maintenance & More." No Evansville, and no "AC repair."
-- The page says "prompt service" and "24/7 emergency availability" but never how fast. Rodney H. wrote that a tech "came out on Saturday in 100 degree heat."
-- Your FAQ lists possible causes for a leak and for no cooling, but never says which is likely or what happens on the visit.
+- AC repair gets two sentences. The page says "prompt service" and "24/7 emergency availability" but never how fast, though one customer had a tech out on a Saturday in 100-degree heat.
+- It names no part and no symptom, so a homeowner can't tell a weak capacitor from a clogged drain line.
 
 **What the demo fixes**
 - A headline and browser tab name that say AC Repair in Evansville, IN.
-- What usually fails and why, including a clogged drain line in a humid summer.
+- What usually fails, with the parts named: capacitor, fan motor, low refrigerant, a clogged drain line in a humid summer.
 - A repair-or-replace rule and a ductless mini-split section, each with the customer review that fits it.
 
 **A full build would also add**
@@ -89,7 +87,7 @@ Pages planned from what Google actually shows for each search, so every page tar
 *Why it matters:* It's where someone decides whether to call.
 
 **Current site problem**
-- It's 33 words: address, phone, email and a form. It never says you answer emergencies 24/7. That promise sits in small print at the bottom of other pages.
+- It's 33 words: address, phone, email and a form. It never says you answer emergencies 24/7. That promise sits in a short list lower on the heating and AC pages.
 - It doesn't say where you work, so someone in Wadesville or across the river can't tell if you come out.
 - It never says what to have ready, so the first call turns into twenty questions.
 
@@ -133,7 +131,7 @@ On a short onboarding call, we'd confirm four things.
 
 - Your About page says you were founded in 2018, and your testimonials page says "15+ Years." Which should every listing use?
 - Your financing page names Synchrony, FTL, Wisetack and local lenders, while your service pages say you partner with American Standard and Ruud for financing. Which is right?
-- Your service pages say "EPA-certified technicians," and your About page says "EPA-licensed." Which is right, and which certificates can we show?
+- Your service pages say "EPA-certified technicians," and your About page says "EPA-licensed." Which is right?
 - A customer says she has a maintenance plan and gets an email when her next visit is due, but your site describes maintenance agreements for businesses only. Do you offer them to homeowners?
 
 **Want a website like this for your business?**
