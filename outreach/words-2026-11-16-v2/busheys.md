@@ -151,7 +151,7 @@ Our own crew installs every window and door we sell, so you know exactly who is 
 
 ### Our crew, not subcontractors
 
-Bushey's uses only our own W-2 employee installers, never subcontractors. Tyler Moga is our installation manager, and the crew includes window specialists, project managers and a measure technician. Every one of them works for us, so you get consistent work and one company to answer for it.
+Every installer is a Bushey's employee, never a subcontractor. Tyler Moga is our installation manager, and the crew includes window specialists, project managers and a measure technician. Every one of them works for us, so you get consistent work and one company to answer for it.
 
 > Jack, Kole, Elijah and Phil. They all did a great job installing our windows and doors. I would highly recommend Bushey’s for quality and workmanship and most importantly the price was very reasonable.
 >
@@ -270,7 +270,7 @@ Call (260) 456-1247, tell us what you're seeing, and ask for a free in-home cons
 
 # Entry and Storm Doors in Fort Wayne, IN — Bushey's Windows & Doors
 
-The people who install your front door are our own employees, and your reviews name them: Phil, Tony, Jack, Kole. No subcontractors, no shortcuts and no pressure. Every ProVia door is custom-fitted to your home by our own crew. Call (260) 456-1247 to start with a free in-home consultation.
+The people who install your front door are our own employees, and our customers know them by name: Phil, Tony, Jack, Kole. No subcontractors, no shortcuts and no pressure. Every ProVia door is custom-fitted to your home by our own crew. Call (260) 456-1247 to start with a free in-home consultation.
 
 **Buttons:** Call (260) 456-1247 / Request a Free Consultation
 

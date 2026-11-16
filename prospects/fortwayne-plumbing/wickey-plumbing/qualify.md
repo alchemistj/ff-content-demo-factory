@@ -11,3 +11,7 @@
 **Verdict: PASS.** Local single-shop site, ZIP-level area pages, no chain signals found.
 
 **Likely money services:** Water heater installation (featured project label on the area pages); drain cleaning (drain clog job labels).
+
+## Re-qualify, Nov 16 (FF Architect call, demo rerun under briefs 21550ef)
+- Test 3 (enough real material, per money service): SKIP. The site covers only water heaters in depth. In the rerun (briefs 21550ef), Home and Water Heater passed the blind taste check, but Drain failed three times and the swap to Fixture Repair & Installation (one site paragraph, the rest job notes) also failed: the material reads as a job log, not a sales page.
+- Verdict update: SKIP. Dropped from the rerun; nothing was written to its Google Doc.

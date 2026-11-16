@@ -12,3 +12,7 @@
 
 Verdict: PASS.
 Likely money services: Roofing (/services/roofing/); Siding (/services/siding/).
+
+## Re-qualify, Nov 16 (FF Architect call, demo rerun under briefs 21550ef)
+- Test 3 (enough real material, per money service): SKIP. No service on the site is covered in depth: the service pages are a few lines each. In the rerun (briefs 21550ef), Home passed the blind taste check, but Concrete failed three times, the swap to Masonry failed, and Decks failed after its fixes: the pages lean on retold reviews because the site holds little per service.
+- Verdict update: SKIP. Dropped from the rerun; nothing was written to its Google Doc.
