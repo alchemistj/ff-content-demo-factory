@@ -18,7 +18,7 @@ We built Action the first five pages of that kind of website. More on that below
 
 ### Why we built this site
 
-You have 1,214 Google reviews at 4.9 stars. Mike W. put it this way:
+Your reviews already make your case. Mike W. put it this way:
 
 > Amazing! Had a small plumbing issue and they fixed it same day, actually within two hours of calling! The tech was knowledgeable and efficient too.
 >
@@ -193,13 +193,13 @@ One way to tell where the trouble is: if only one sink is slow, the clog is usua
 
 ### Day or Night, and You Know Who's Coming
 
-Heating, AC and plumbing emergencies don't wait for office hours, so we offer 24-hour service for them, and we aim to answer the phone live, day or night. No shortcuts, no pressure, just an honest recommendation.
+Heating, AC and plumbing emergencies don't wait for office hours, so we offer 24-hour service for them, and we aim to answer the phone live, day or night.
 
-Before the technician arrives, you get a text with a photo and a short description of who is coming, including how long they've been in the field. A stranger at the door gets easier to welcome.
+Before a plumber arrives, you get a text with a short description of who is coming, including how many years they've been in the field. A stranger at the door gets easier to welcome.
 
 ### Questions Before You Call
 
-**How fast can you get here?** Usually the same day, often within a few hours. A same-day visit is what customers most often describe.
+**How fast can you get here?** Usually the same day, often within a few hours.
 
 > Same day service. Austin explained everything well.
 >
@@ -209,15 +209,15 @@ Before the technician arrives, you get a text with a photo and a short descripti
 
 ### When We Get It Wrong
 
-Everyone makes a mistake sometimes. Customers tell us we own up to ours and fix them, and a few say we did it at no charge.
+We aim for no shortcuts, no pressure and an honest recommendation every time. Everyone makes a mistake sometimes. Here is how one customer saw it.
 
 > Plumber made a mistake, but Action was quick to acknowledge it and did what I asked to resolve the issue.  We all make mistakes, but not all admit it.
 >
-> — Arjay7
+> — Google review
 
 ### Family-Owned, Started in a Garage
 
-Our founder, Jim, started ACTION from his garage, with seven children at home and a plain idea of doing things the right way. The company is still a family business, and several customers tell us they've called us for 20 years or more.
+Our founder, Jim, started ACTION from his garage, with seven children at home and a plain idea of doing things the right way. The company is still a family business.
 
 > Best in Lincoln! A large service company that still holds customers as important, and is also still family owned. Great service guys and even better prices. Fair and reliable.
 >
@@ -251,7 +251,7 @@ The heat is out or the house won't cool. We repair and replace furnaces and air 
 
 ### Heating and AC, Repaired, Replaced and Looked After
 
-We repair furnaces, air conditioners and heat pumps. We replace them, and we offer yearly service plans. We also handle ductwork repair, boiler maintenance, and heat pump installation, and we've installed geothermal heating for over 30 years.
+We repair furnaces, air conditioners and heat pumps. We replace them, and we offer yearly service plans. We also handle ductwork repair, boiler maintenance, and heat pump installation, and we've installed geothermal heating, which heats and cools a home using the steady temperature of the ground, for over 30 years.
 
 We carry Carrier equipment. Our shop can fabricate parts on site to fit a job, and we do aluminum welding, make sheet metal products and keep a large supply of replacement parts, valves and fittings. For a repair, that can mean a part made for your system instead of a wait on a special order.
 
@@ -263,7 +263,7 @@ We carry Carrier equipment. Our shop can fabricate parts on site to fit a job, a
 
 ### What a Visit Usually Looks Like
 
-You tell us what the system is doing. The technician looks for the cause before anything is replaced, and shows you what failed. Then you choose: repair it, or price a replacement. If the part you need isn't on the truck, it's reasonable to ask for a plan to keep you running until it arrives.
+You tell us what the system is doing. The technician usually looks for the cause before anything is replaced, and shows you what failed. Then you choose: repair it, or price a replacement. If the part you need isn't on the truck, it's reasonable to ask for a plan to keep you running until it arrives.
 
 ### Furnace Problems and What Usually Causes Them
 
@@ -365,7 +365,7 @@ We repair water heaters, replace them and install new ones, tank and tankless, a
 
 A tank water heater usually lasts somewhere around a decade or a bit more. A part such as a heating element or a gas control can often be repaired, and that's the smaller bill. A leak from the tank itself usually means replacement, because the tank can't be patched.
 
-Age is the other half of the answer. If the unit is old and it needs one repair after another, put the money toward a new one. If it's fairly young and the problem is a single part, repair. We'll tell you which, and what each costs, before work starts.
+Age is the other half of the answer. If the unit is old and it needs one repair after another, put the money toward a new one. If it's fairly young and the problem is a single part, repair. We'll tell you which.
 
 ### Gas or Electric
 
@@ -381,11 +381,11 @@ The right choice depends on how much hot water your household uses, how much roo
 
 ### Warranty Service on AO Smith, State and Bradford White
 
-A water heater that fails while it's under the maker's warranty is a different job from one that fails outside it. The paperwork, the parts and who pays all change. We handle warranty claims, repairs and replacements for these three makers, so you don't have to chase the manufacturer yourself.
+A water heater that fails while it's under the maker's warranty is a different job from one that fails outside it. The paperwork, the parts and who pays all change. As Lincoln's authorized dealer and warranty repair center for these three makers, we do their warranty repairs.
 
 > I bought an A O Smith Proline water heater from Action Plumbing and had them install it. This was my second time giving business to Action Plumbing. They are trustworthy professionals and I would do business with them again.
 >
-> — Motorcycle A.
+> — Google review
 
 ### When It Quits After Hours
 
@@ -397,13 +397,13 @@ No hot water, or a leaking water heater, doesn't wait until Monday. Our 24-hour 
 
 ### A Leaking Water Heater: What to Do First
 
-Turn off the cold water supply to the heater, which is usually a valve on the pipe above it. For an electric unit, switch off its breaker. For a gas unit, don't touch the gas parts, and leave the building if you smell gas. If you're not sure where the main water shut-off is, tell us when you call. Our technicians usually take the time to show you where water enters your home, so the next time takes thirty seconds.
+Turn off the cold water supply to the heater, which is usually a valve on the pipe above it. For an electric unit, switch off its breaker. For a gas unit, don't touch the gas parts, and leave the building if you smell gas. If you're not sure where the main water shut-off is, tell us when you call.
 
 ### Rusty Water, Noise and Slow Hot Water
 
 **Rusty water.** If only the hot water is rusty, the tank is often corroding inside, and that points toward replacement. If the cold water is rusty too, old pipes may be the cause.
 
-**Rumbling or popping.** It's worth having a technician look, because it can come from the tank or from a part that is wearing out.
+**Rumbling or popping.** Often it's mineral buildup on the bottom of the tank, which is common where the water is hard, and it makes the heater work harder. Many Lincoln homes have hard water, and we test water and install water softeners too, so we can look at the cause as well as the tank.
 
 **Hot water that runs out fast.** A failed element or a thermostat problem can cut the supply. So can a unit that's too small for the household, which is a sizing question when you replace it.
 
@@ -431,7 +431,7 @@ If your water heater isn't working, call (402) 423-6960 and tell us what it's do
 
 # Contact Action Plumbing, Heating, A/C & Electrical in Lincoln, NE
 
-Call and tell us what's going on. Our lines are open day and night.
+Call and tell us what's going on. We offer 24-hour service for heating, AC and plumbing.
 
 **Buttons:** Call (402) 423-6960
 
@@ -439,7 +439,7 @@ Call and tell us what's going on. Our lines are open day and night.
 
 **(402) 423-6960**
 
-If your heat or AC quits, your water heater leaks or a pipe bursts, call at any hour. Our 24-hour service covers heating, AC and plumbing, and we aim to answer live, day or night.
+If your heat or AC quits, your water heater leaks or a pipe bursts, call at any hour. We aim to answer live, day or night.
 
 ### What to Tell Us
 
@@ -448,7 +448,11 @@ If your heat or AC quits, your water heater leaks or a pipe bursts, call at any 
 - Roughly how old the equipment is, and the brand if it's on the label
 - The address of the job, and whether it's a home or a business
 
-If you smell gas or a carbon monoxide alarm is sounding, leave the building first and call from outside.
+A model number or a photo of the label helps a lot, but don't hold up the call to find one. If you smell gas or a carbon monoxide alarm is sounding, leave the building first and call from outside.
+
+### What Happens Next
+
+After you describe the problem, we can usually tell you what we think it is and when a technician can come out, and it's often the same day. The technician looks for the cause first, explains what failed and goes over your options, so you decide what happens next.
 
 ### Our Office
 
@@ -470,7 +474,7 @@ Call (402) 423-6960 and we'll set up your visit.
 
 ## Notes (not page copy)
 
-**Word counts:** Strategy 996 (limit 1,000); Home 1072 with quotes, 918 without; Heating & AC 1451 with quotes, 1162 without; Water Heaters 1066 with quotes, 938 without; Contact 327 with quotes, 228 without. Counts are whitespace-separated words, headings, bullets, trust bar and buttons included; "without quotes" removes quote blocks and their captions.
+**Word counts:** Strategy 992 (limit 1,000); Home 1024 with quotes, 869 without; Heating & AC 1447 with quotes, 1158 without; Water Heaters 1050 with quotes, 922 without; Contact 382 with quotes, 283 without. Counts are whitespace-separated words, headings, bullets, trust bar and buttons included; "without quotes" removes quote blocks and their captions.
 
 **Two services chosen:** Heating & AC and Water Heaters, the two money services in inventory.md. inventory.md judged water heaters unable to reach 700 words without repeating facts, so the water heater page leans on hedged trade knowledge (gas vs electric, relief valve, rust, tank vs tankless, what a warranty claim changes). It makes no new business claims.
 
@@ -496,10 +500,10 @@ Call (402) 423-6960 and we'll set up your visit.
 
 **Inventory items, used or left out**
 - Services: Plumbing (Home list), Water heaters (own page), Heating & AC (own page), Electrical (Home list), Indoor air quality (Home list), Water quality (Home list), Sewer and water line repair (Home section), Home Protection Plan (Heating page), commercial plumbing, HVAC, electrical and utilities (Home commercial section), completed projects (Home: five of the 16 named, with their own pages' facts), 24-hour service (Home, both service pages, Contact), financing (Water Heater page, once), David City and Columbus (Contact).
-- Differentiators: authorized dealer and warranty center (Home credentials, Water Heater warranty section); Carrier (Home credentials); own trenching (Home); in-house fabrication, aluminum welding, sheet metal, parts supply (Heating page); text with photo and bio before arrival (Home, as a customer-facing line from their plumbing FAQ; it is stated for plumbing on the site, so confirm it applies to HVAC visits); phones live (Home, both service pages, Contact); guarantee block (Heating page, in Repair or Replace, once); Grade VI backflow operators (Home credentials); family-owned and founder (Home); honesty line "No shortcuts. No pressure. Just honest recommendations" (Home, once).
+- Differentiators: authorized dealer and warranty center (Home credentials, Water Heater warranty section); Carrier (Home credentials); own trenching (Home); in-house fabrication, aluminum welding, sheet metal, parts supply (Heating page); text with a short description of the plumber before arrival (Home, worded for plumbers only, as the plumbing FAQ states it; the site does not mention a photo); phones live (Home, both service pages, Contact); guarantee block (Heating page, in Repair or Replace, once); Grade VI backflow operators (Home credentials); family-owned and founder (Home); honesty line "No shortcuts. No pressure. Just honest recommendations" (Home, once).
 - Unusual offers: Carrier Cool Cash is left out on purpose. Its sales period ends Nov 20, 2026 and installs by Dec 20, 2026, so it would be stale on a demo; it can be added as a live offer if wanted. Home Protection plans and prices (Heating page, with the 12-month term). Membership terms beyond the 12-month term (late fee, billing on file) left out as fine print. Financing (Water Heater page). Free estimate (Heating page). Expired 2024 "Sack Your Old Water Heater" promotion: not used, expired. Commercial "Request A Bid": Home says "call and ask for a bid".
-- Review themes: speed (Home FAQ quote, Mike W. on strategy, April B., Mark C.); named technicians (not named in copy except inside quotes; Austin in Teri T. and Rich E., Gage in Steve F., Ken and Zack in Mark C.); explains the work (Teri T., Rich E.); owns mistakes (Arjay7, Home); clean sites (Heating page guarantee wording, not a quote); long-time loyalty (Steve F., Michele K., Home line). Heather F. (3 stars: missed arrival window, $135 refunded after the owner called) is counter-evidence and is not quoted. Home does not promise arrival windows.
-- Quotes left out: Amy Z. (praises a flush), Valerio P., Roxie L., Terry O., Lyle W., Kady A. and the electrical and plumbing reviews not tied to a page. Each quote is used once across the site (strategy: Mike W.; Home: Teri T., Rich E., Arjay7, Ken B.; Heating: Steve F., April B., Corey C., Jake R.; Water Heater: Randy E., Motorcycle A., Mark C.; Contact: Michele K.).
+- Review themes: speed (Home FAQ quote, Mike W. on strategy, April B., Mark C.); named technicians (not named in copy except inside quotes; Austin in Teri T. and Rich E., Gage in Steve F., Ken and Zack in Mark C.); explains the work (Teri T., Rich E.); owns mistakes (Google review by a username, Home); clean sites (Heating page guarantee wording, not a quote); long-time loyalty (Steve F., Michele K., Home line). Heather F. (3 stars: missed arrival window, $135 refunded after the owner called) is counter-evidence and is not quoted. Home does not promise arrival windows.
+- Quotes left out: Amy Z. (praises a flush), Valerio P., Roxie L., Terry O., Lyle W., Kady A. and the electrical and plumbing reviews not tied to a page. Each quote is used once across the site (strategy: Mike W.; Home: Teri T., Rich E., the Google review captioned "Google review" (display name is a username), Ken B.; Heating: Steve F., April B., Corey C., Jake R.; Water Heater: Randy E., a second "Google review" (display name is not a person's name), Mark C.; Contact: Michele K.).
 - Mark C.'s quote is from the business's own testimonials page, not reviews.json.
 - Not used: "sustainability" (natural gas vehicles, fluorescent lighting): generic, no customer value for these two pages. Commercial guarantee wording (different from residential). Careers page, Husker promotion rules, pay-bill portal page beyond the payment answer, sump pump and water softener salt FAQs.
 
@@ -507,10 +511,10 @@ Call (402) 423-6960 and we'll set up your visit.
 
 **Facts to verify with the business**
 1. Main phone line, hours, and what answers at 2 AM.
-2. The text with a photo and bio before arrival: stated on the plumbing FAQ; does it apply to HVAC and water heater visits?
+2. The text before arrival: the plumbing FAQ describes the plumber and years in the field, with no photo. Does it also apply to HVAC visits?
 3. Is the 3% fee on credit card payments over $5,000 current (pay-bill page)?
 4. The meaning of "Grade VI water operators", and license and insurance details.
 5. Is the Carrier dealer status current (Carrier dealer locator not checked)? Same for NATE, BBB, AO Smith/State/Bradford White, Lincoln's Choice and Inc. 5000.
 6. Jim's name on the founder line: the company's news page names him; confirm the family is comfortable with it staying on the page.
-7. Does a gas tankless unit usually need larger gas and venting connections in Lincoln homes? Written as general trade knowledge, hedged.
+7. Do many Lincoln homes have hard water (written as hedged general knowledge on the water heater page)? Does a gas tankless unit usually need larger gas and venting connections in Lincoln homes? Written as general trade knowledge, hedged.
 8. The /shop quote widget has no readable text. Its contents were not read, and may contain pricing or service names.
