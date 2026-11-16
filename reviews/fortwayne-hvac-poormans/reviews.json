@@ -1,0 +1,746 @@
+{
+  "kind": "google-review-pull",
+  "version": 1,
+  "slug": "fortwayne-hvac-poormans",
+  "place": {
+    "name": "Poormans Heating & Air",
+    "placeId": "ChIJdX8QGPbkFYgR8hFwq7XmSFM",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Poormans%20Heating%20%26%20Air&query_place_id=ChIJdX8QGPbkFYgR8hFwq7XmSFM",
+    "address": "1417 Martin St, Fort Wayne, IN 46802",
+    "phone": "(260) 422-3534",
+    "rating": 4.8,
+    "totalReviewCount": 252
+  },
+  "pulledAt": "2026-11-16T04:22:41.432Z",
+  "requestedMax": 75,
+  "reviews": [
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21KU09UaG5NbGcxY3pWSWVqRnNSbTlXYm1Kc1ZHYxAB",
+      "reviewer": "Robert L.",
+      "rating": 5,
+      "text": "Mike Shelburne came over and repaired our air conditioner today. He provided us with great customer service. He seemed very knowledgeable about what he was doing and did a good job of sharing that information with us. Because of our experience with Mike we would recommend Poorman's Heating and Air Conditioning  to anyone.",
+      "publishedAt": "2026-09-11T19:02:12.578Z",
+      "ownerResponse": "Thank you so much Robert! We just told Mike about your kind words and he really appreciated you writing this! Thank you for taking the time to share your experience. Call us anytime you need us!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21KU09UaG5NbGcxY3pWSWVqRnNSbTlXYm1Kc1ZHYxAB!2m1!1s0x0:0x5348e6b5ab7011f2!3m1!1s2@1:CAIQACodChtycF9oOmJSOThnMlg1czVIejFsRm9WbmJsVGc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2s5RVFtbEtXREpQV25oNlNFRmhiamxLTlVkQlIyYxAB",
+      "reviewer": "Heather L.",
+      "rating": 5,
+      "text": "Mike came out to repair our A/C. He is so kind, so knowledgeable, and so friendly! This man deserves a raise!!! He diagnosed the problem so quickly! He didn't have the part, but got someone to bring it out to him, and had it fixed and running in no time! I cannot say enough about how thankful we were to have him at the house! KUDOS to Mike, and thank you so much for your honesty and integrity!<br>We will be recommending Poormans (especially Mike) to any and all who need heating and cooling repair.",
+      "publishedAt": "2026-09-11T19:00:13.285Z",
+      "ownerResponse": "Heather, thank you so much for the incredible review! We really appreciate you sharing your experience and any potential referrals! We're happy we could get your A/C running again. Feel free to call anytime you have more issues and we will send Mike your way!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2s5RVFtbEtXREpQV25oNlNFRmhiamxLTlVkQlIyYxAB!2m1!1s0x0:0x5348e6b5ab7011f2!3m1!1s2@1:CAIQACodChtycF9oOk9EQmlKWDJPWnh6SEFhbjlKNUdBR2c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xSTlgzTmxlbWxDYkc5cVdreHNTbTFpYzFkeWQzYxAB",
+      "reviewer": "Rick N.",
+      "rating": 5,
+      "text": "Great customer service, technicians were  a pleasure to work with. Very professional yet with a personal touch.explained the process and details of install in terms that you could understand. All together a wonderful experience, that you for the pleasant install.",
+      "publishedAt": "2026-07-27T20:06:03.434Z",
+      "ownerResponse": "We are so happy you had a pleasant experience, Rick! We really appreciate you taking the time to write us a review, and a glowing one at that. We hope you enjoy your new Trane system, let us know if you need us for anything else!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xSTlgzTmxlbWxDYkc5cVdreHNTbTFpYzFkeWQzYxAB!2m1!1s0x0:0x5348e6b5ab7011f2!3m1!1s2@1:CAIQACodChtycF9oOlRNX3NlemlCbG9qWkxsSm1ic1dyd3c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT205MlZURlNTbTFWT1hKNUxYa3phRzV3U21NMGVFRRAB",
+      "reviewer": "Steve S.",
+      "rating": 5,
+      "text": "Ryan Smith came to our house and was most helpful! I checked Poorman's reviews and decided to go with them to replace our TRANE air conditioning. Ryan was at our house the morning of the install to introduce Tyler and Luke who did the actual install (than was most impressive!). Great install and both Tyler & Luke explained everything and answered all my questions. VERY HAPPY with Poorman's! THANK all of you for a great job! HOW COOL!",
+      "publishedAt": "2026-07-12T16:23:53.374Z",
+      "ownerResponse": "What a great review, Steve. Thanks for sharing your experience. We are so grateful for your business and will pass along the kind words to the guys.  Enjoy your new A/C in this heat. Call us if you have any issues in the future! Thanks for the 5 stars.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT205MlZURlNTbTFWT1hKNUxYa3phRzV3U21NMGVFRRAB!2m1!1s0x0:0x5348e6b5ab7011f2!3m1!1s2@1:CAIQACodChtycF9oOm92VTFSSm1VOXJ5LXkzaG5wSmM0eEE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25KV0xXZHVVMVJzYkhVMVZuZFhXbFJvYm5wdVZuYxAB",
+      "reviewer": "Jenny K.",
+      "rating": 5,
+      "text": "This company is absolutely amazing!!! My parents had them install a new heating air conditioning unit 12 years ago and they did a great job! Fast forward until today, my parents who are old and mother on oxygen woke up today and the air conditioning wasn’t working. The high for today is 93 degrees!! They were contacted and were out and had it fixed within an hour!!! You won’t find a more reliable actually caring company in the area!! Thank you so much. You are very appreciated 🙏🙏",
+      "publishedAt": "2026-06-30T15:06:27.056Z",
+      "ownerResponse": "We are so happy we were able to get your parents squared away, especially in this heat! Thank you so so much for the kind words. We appreciate your loyalty and long-time business with us.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25KV0xXZHVVMVJzYkhVMVZuZFhXbFJvYm5wdVZuYxAB!2m1!1s0x0:0x5348e6b5ab7011f2!3m1!1s2@1:CAIQACodChtycF9oOnJWLWduU1RsbHU1VndXWlRobnpuVnc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tscVpWVllVa2N4YjBKa2JqRnpTV1JsTm5KeFluYxAB",
+      "reviewer": "Darcy A.",
+      "rating": 5,
+      "text": "Very knowledgable, personable, and helpful staff and crew. We have reliable and efficient AC for the first time at a reasonable price! Scheduling and installation was a very easy process and the crew was really great about working around our 4 cats. Highly recommend Poorman's!",
+      "publishedAt": "2026-06-13T23:37:50.975Z",
+      "ownerResponse": "Thank you so much for the 5 stars, Darcy! We appreciate your business and kind words. Enjoy your new mini split!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tscVpWVllVa2N4YjBKa2JqRnpTV1JsTm5KeFluYxAB!2m1!1s0x0:0x5348e6b5ab7011f2!3m1!1s2@1:CAIQACodChtycF9oOklqZVVYUkcxb0JkbjFzSWRlNnJxYnc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25CRFkwMDNVa1Z3VFV4TlN6aExVR2QzZDFOaWVsRRAB",
+      "reviewer": "Dustin F.",
+      "rating": 5,
+      "text": "Great employees and very polite. Mike said at 8:30 am \"the guys are great & will finish around 3\" at 3:02 pm they finished their checks & were done - they know the business well.",
+      "publishedAt": "2026-06-05T19:12:38.720Z",
+      "ownerResponse": "Hey Dustin! It was such a pleasure doing business with you. We're so glad we could provide the 5 star service, thanks for taking the time to share!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25CRFkwMDNVa1Z3VFV4TlN6aExVR2QzZDFOaWVsRRAB!2m1!1s0x0:0x5348e6b5ab7011f2!3m1!1s2@1:CAIQACodChtycF9oOnBDY003UkVwTUxNSzhLUGd3d1NielE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUQ2dnVXZENBEAE",
+      "reviewer": "Colette S.",
+      "rating": 5,
+      "text": "Poorman’s Heating and Air has worked diligently to solve the heating and cooling needs of our church working with us and our budget. Recently techs Mitch and John hit it out of the park removing an old gigantic air handler and furnace installing new furnaces, duct work and vents through a small opening in the ceiling. Great job! Professional, knowledgeable, and pleasant. Thanks to Mike Miller for all of his solutions and suggestions with the myriad of problems associated with older HVAC systems.<br><br>Today, 5-26-26 update. We had great service from techs Tyler and Luke as they installed a new A/C unit at our home. Friendly, professional, thorough, working with assiduous attention until the job was done. We had the same great service last year when we needed a new furnace. Shout out to Mike Miller who listens to our needs and finds solutions.<br>Great company with great people.",
+      "publishedAt": "2026-05-26T20:42:07.492Z",
+      "ownerResponse": "Thanks for the great review, Colette! We are happy to hear about your experience with us!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ2dnVXZENBEAE!2m1!1s0x0:0x5348e6b5ab7011f2!3m1!1s2@1:CIHM0ogKEICAgID6vuWdCA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pWa1kwcE9SWFpsVkdwamFUVkdUWGwzTVROMWNXYxAB",
+      "reviewer": "Jason V.",
+      "rating": 5,
+      "text": "We just moved to Fort Wayne last year and it was important to establish a new service relationship with a company we can trust and rely on.  Poorman’s has exceeded our expectations every step of the way!  Very professional and quick to respond and schedule.  Just recently had an issue with our heating unit and they had it resolved in less than 24 hours during this busy season.  In particular…I want to call out their technician, Mike.  He was our recent responder and had been here before.  Very friendly, very open and communicative about what he is seeing and recommending.  I never feel like he’s looking for the most expensive fix, but rather the most effective and efficient fix on the pocket book.  We’ve been so impressed with Poormans that we’ve signed up for their annual service plan and I’ll look forward to having Mike out again during the next season check up.  He and Poormans have earned my utmost trust!",
+      "publishedAt": "2025-12-06T17:15:47.247Z",
+      "ownerResponse": "Wow! What an incredible review. Thank you so much for sharing your experience, Jason. We are very grateful that you chose us and gave us the opportunity. I've passed along your kind words to Mike and everyone here. Thank you for your trust and loyalty with us all these years.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pWa1kwcE9SWFpsVkdwamFUVkdUWGwzTVROMWNXYxAB!2m1!1s0x0:0x5348e6b5ab7011f2!3m1!1s2@1:CAIQACodChtycF9oOjVkY0pORXZlVGpjaTVGTXl3MTN1cWc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT214cGQzUnZaMHBMVm1KNVR6RnlaRkZVU0VWcWVGRRAB",
+      "reviewer": "Charles S.",
+      "rating": 5,
+      "text": "One day furnace and ac replacement.  Nice clean installation.",
+      "publishedAt": "2025-11-13T22:17:06.112Z",
+      "ownerResponse": "Thanks for taking the time to write us a review, Charles. We're happy you had a good experience, and we appreciate the business. Thanks for the 5 Stars!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT214cGQzUnZaMHBMVm1KNVR6RnlaRkZVU0VWcWVGRRAB!2m1!1s0x0:0x5348e6b5ab7011f2!3m1!1s2@1:CAIQACodChtycF9oOmxpd3RvZ0pLVmJ5TzFyZFFUSEVqeFE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xKT1EyZHhVVUZGU1dSUVdqbHNjMDVDZG5GV01tYxAB",
+      "reviewer": "TJ's J.",
+      "rating": 5,
+      "text": "My husband and I were extremely pleased with the job Poorman's did on our new central air conditioning!  We have lived with window air conditioners for 11 years and are so greatful for Ryan, our salesman and the great install team. Our 90 year old home as never felt so cool and comfortable. Such a blessing!  Our basement looked cleaner after they left then when they arrived. 😉",
+      "publishedAt": "2025-07-13T19:27:19.688Z",
+      "ownerResponse": "We are so happy to be of service and are glad to hear you are enjoying your new AC! We will pass the kind words along to Ryan and the install crew. Thank you for the awesome review!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xKT1EyZHhVVUZGU1dSUVdqbHNjMDVDZG5GV01tYxAB!2m1!1s0x0:0x5348e6b5ab7011f2!3m1!1s2@1:CAIQACodChtycF9oOlJOQ2dxUUFFSWRQWjlsc05CdnFWMmc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xaTWVrNTFTak5ZYTNwdlRtVlJVMnBJY0VKdGNWRRAB",
+      "reviewer": "Sydney Z.",
+      "rating": 5,
+      "text": "The Shepherd’s House loves PoorMans Heating & Air! They are always quick to respond and consistently deliver quality work. We are so grateful for their support!",
+      "publishedAt": "2025-07-02T17:03:10.133Z",
+      "ownerResponse": "Thanks Sydney! We are so happy to help out and we are so grateful!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xaTWVrNTFTak5ZYTNwdlRtVlJVMnBJY0VKdGNWRRAB!2m1!1s0x0:0x5348e6b5ab7011f2!3m1!1s2@1:CAIQACodChtycF9oOlZMek51SjNYa3pvTmVRU2pIcEJtcVE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnTUNZa2R6SEN3EAE",
+      "reviewer": "Mike Y.",
+      "rating": 5,
+      "text": "Good work on furnace & AC install.  Furnace is HOT and AC is COLD, as it should be.  Cleaned area and hauled out old system.  Thanks Tyler & Cameron!",
+      "publishedAt": "2025-05-04T23:08:04.911Z",
+      "ownerResponse": "We are so happy you are pleased with your new Furnace + AC, Mike. Thanks for trusting us with your service, thanks for the 5 stars!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTUNZa2R6SEN3EAE!2m1!1s0x0:0x5348e6b5ab7011f2!3m1!1s2@1:CIHM0ogKEICAgMCYkdzHCw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURfb1Bhb3dBRRAB",
+      "reviewer": "Hannah M.",
+      "rating": 5,
+      "text": "Poorman's Heating and Air is fantastic! I'll be a customer for life.<br><br>I was very fortunate that I was connected to Poorman's through my neighbor, who works there. When my heat stopped working a few weeks ago, I posted on my neighborhood Facebook group asking for recommendations for HVAC companies. The first suggestion was for a different company, who put me on their schedule for the next morning. My neighbor who works at Poorman's sent me a message and said that if that company gave me a severe diagnosis or showed me a picture of a cracked heat exchanger, to let him know, and Poorman's would give me a second opinion.<br><br>Well, that's exactly what happened. The company said that my heat exchanger was cracked and my thermostat was broken, and because of my cracked heat exchanger, I needed an entire new furnace, which would cost at least $10k.<br><br>So, I messaged my neighbor and called Poorman's. My neighbor had let the office know I'd be calling, so they were already in the loop. Poorman's confirmed that my heat exchanger was cracked and I needed a new thermostat. But they explained that having a cracked heat exchanger didn't mean I needed an entire new furnace; it just meant I needed a new heat exchanger. And in fact, they said that my heat exchanger was still under warranty, so I only had to pay for labor. The first company didn't even tell me my heat exchanger was still under warranty; they said my only option was to replace the entire furnace.<br><br>In the end, the cost to replace my heat exchanger (under warranty) and thermostat was a fraction of what the first company quoted me. And now I know I can trust Poorman's. Unlike the other company, they aren't here to sell you the most expensive solution they can; they're here to solve your problem. I've told everyone I know to avoid that other company and to use Poorman's. Thank you, Poorman's!",
+      "publishedAt": "2025-01-20T16:23:58.969Z",
+      "ownerResponse": "Hi Hannah! Thanks for sharing your experience with us! Sadly, some competitors do not have the customer's best interest in mind, and they use cracked heat exchangers as a means to sell. We are glad we were able to help you in this situation though. Thank you for giving us the opportunity, and we are happy to have you as a customer. Thanks for the 5 stars!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURfb1Bhb3dBRRAB!2m1!1s0x0:0x5348e6b5ab7011f2!3m1!1s2@1:CIHM0ogKEICAgID_oPaowAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURmaWF1cnFBRRAB",
+      "reviewer": "Ronald B.",
+      "rating": 5,
+      "text": "Mike was a gentleman. He came here, worked the project and gave us a copy of work and departed with a smile.  A nice touch, this review card!",
+      "publishedAt": "2025-01-07T19:49:54.141Z",
+      "ownerResponse": "Thanks for the great review, Ronald! We'll pass along the kind word to Mike!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURmaWF1cnFBRRAB!2m1!1s0x0:0x5348e6b5ab7011f2!3m1!1s2@1:CIHM0ogKEICAgIDfiaurqAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUN2aHJ2U1VREAE",
+      "reviewer": "Valerie S.",
+      "rating": 5,
+      "text": "Tom is the best technician ever.  He has done work at our home for 38 years and always gets it right!!!",
+      "publishedAt": "2024-12-10T12:11:21.717Z",
+      "ownerResponse": "Thanks for the 5 stars Valerie!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN2aHJ2U1VREAE!2m1!1s0x0:0x5348e6b5ab7011f2!3m1!1s2@1:CIHM0ogKEICAgICvhrvSUQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURQbjlPOWJBEAE",
+      "reviewer": "Brent P.",
+      "rating": 5,
+      "text": "Very happy with the service provided by Poormans Heating & Air. Placed call with same day service for a motor swap completed by Tom Castle. He went above and beyond to complete repair on the same day as I requested service. A+",
+      "publishedAt": "2024-12-06T18:33:22.826Z",
+      "ownerResponse": "Hi Brent! We're glad Tom could get you a new motor and get your heat working again. Thanks for sharing your experience and giving us 5 stars!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURQbjlPOWJBEAE!2m1!1s0x0:0x5348e6b5ab7011f2!3m1!1s2@1:CIHM0ogKEICAgIDPn9O9bA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURQdHFMektREAE",
+      "reviewer": "Mary H.",
+      "rating": 5,
+      "text": "We have used Poormana's for nearly 40 years. They have taken good care of us. We especially appreciate Tom castle. He knows our heating and air conditioning units well and always services and repairs them efficiently. He is friendly and kind and knowledgeable which is most important. He deserves a really good bonus!",
+      "publishedAt": "2024-12-02T02:56:58.662Z",
+      "ownerResponse": "Hi Mary! We really appreciate your long-time loyalty to Poormans. We are glad Tom takes care of your units, and we appreciate the kind words! Thanks for the 5 stars!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURQdHFMektREAE!2m1!1s0x0:0x5348e6b5ab7011f2!3m1!1s2@1:CIHM0ogKEICAgIDPtqLzKQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNQcmNTR2tBRRAB",
+      "reviewer": "John Y.",
+      "rating": 5,
+      "text": "Tom Castle was very thorough and answered all my questions<br>Thank you",
+      "publishedAt": "2024-11-26T23:46:07.625Z",
+      "ownerResponse": "Thanks for the 5 star review John!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNQcmNTR2tBRRAB!2m1!1s0x0:0x5348e6b5ab7011f2!3m1!1s2@1:CIHM0ogKEICAgICPrcSGkAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNQNHMzNHNRRRAB",
+      "reviewer": "6pckjack P.",
+      "rating": 5,
+      "text": "Ryan smith worked with Steve to get me a great deal, Tyler and his apprentice Nolan got it installed fast and done right the first time. Highly recommend!",
+      "publishedAt": "2024-11-22T19:39:22.939Z",
+      "ownerResponse": "We appreciate that 5 star review, Jack! Thanks for trusting Poormans with your service and install!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNQNHMzNHNRRRAB!2m1!1s0x0:0x5348e6b5ab7011f2!3m1!1s2@1:CIHM0ogKEICAgICP4s34sQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUMzcWFHSTRRRRAB",
+      "reviewer": "Sarah J.",
+      "rating": 5,
+      "text": "Billy was incredible!  We have a boiler heating system in our home that recently stopped working.  Called another company who charged us $100 to come out, they spent maybe 10 minutes on the system and said we had an electrical issue and left.  We addressed any possible electrical issues, then couldn't get a response from the company to come back out.  Attempted to contact a 2nd company who never responded at all.  Contacted Poorman's and immediately were in communication with someone gathering details and setting up an appt.  Fast forward to today.  Received a text ahead of time that tech was on his way.  Billy arrived and was professional the entire time.  He was very thorough investigating the system to determine the problem(s).  Once it was diagnosed, he immediately left to get parts and was back within the hour.  Made the repairs, and then went a step further to check our crawlspace to ensure we didn't have any leaks in our pipes. Poorman's, you have a customer for life and it was all thanks to how much Billy went above and beyond.  Truly appreciated!",
+      "publishedAt": "2024-11-06T21:21:05.810Z",
+      "ownerResponse": "Sarah, thank you for sharing your experience! We're glad Billy was able to get your boiler issue resolved. Thanks for the 5 star review!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMzcWFHSTRRRRAB!2m1!1s0x0:0x5348e6b5ab7011f2!3m1!1s2@1:CIHM0ogKEICAgIC3qaGI4QE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUMzanRfa01REAE",
+      "reviewer": "Deb F.",
+      "rating": 5,
+      "text": "Mike Shelburne at Poorman’s does a great job. He’s the best. Five stars all the way.",
+      "publishedAt": "2024-11-05T15:44:11.627Z",
+      "ownerResponse": "Thank you so much for the 5 star review Deb!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMzanRfa01REAE!2m1!1s0x0:0x5348e6b5ab7011f2!3m1!1s2@1:CIHM0ogKEICAgIC3jt_kMQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUMzNk9tTW9nRRAB",
+      "reviewer": "Steve B.",
+      "rating": 5,
+      "text": "From Ryan to Mitch to Nolan, they made the purchase and install of  our new Trane Furnace and Air units painless.  Thank guys and office ladies for everything.  The unit finally ran this morning and what a difference from the 20 something year old unit we had.  Give Poormans a call you wont be disappointed!!",
+      "publishedAt": "2024-11-02T12:18:53.797Z",
+      "ownerResponse": "What an incredible review, Steve! We appreciate you sharing that! We're so happy you love your new Trane system!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMzNk9tTW9nRRAB!2m1!1s0x0:0x5348e6b5ab7011f2!3m1!1s2@1:CIHM0ogKEICAgIC36OmMogE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUMzZ05PTjh3RRAB",
+      "reviewer": "Brent C.",
+      "rating": 5,
+      "text": "We only request Mike Shelburne as our tech for heating and air. Mike is incredibly knowledgeable, thorough, and kind. I trust him and Poormans to get the job done right!",
+      "publishedAt": "2024-11-01T17:24:17.119Z",
+      "ownerResponse": "Thank you so much Brent!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMzZ05PTjh3RRAB!2m1!1s0x0:0x5348e6b5ab7011f2!3m1!1s2@1:CIHM0ogKEICAgIC3gNON8wE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURYbDlLb3NnRRAB",
+      "reviewer": "Kimberly K.",
+      "rating": 5,
+      "text": "Mike Shelburne was very nice and polite during my yearly furnace cleaning. He was very knowledgeable and answered my questions with confidence. I've used POORMAN'S HEATING & AIR for 3 yrs and my sister also used them. We've never had any problems...I recommend them!",
+      "publishedAt": "2024-10-31T20:18:29.878Z",
+      "ownerResponse": "Thank you so much for the awesome review Kim. We're glad Mike could take care of your furnace this season!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURYbDlLb3NnRRAB!2m1!1s0x0:0x5348e6b5ab7011f2!3m1!1s2@1:CIHM0ogKEICAgIDXl9KosgE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURYNTVfT1h3EAE",
+      "reviewer": "Janelle M.",
+      "rating": 5,
+      "text": "We had Mike Shelburne out today for maintenance and he found a big problem and pointed everything out to us, thankful we called him<br>Jeff ulmer",
+      "publishedAt": "2024-10-31T19:48:42.768Z",
+      "ownerResponse": "Thank you so much for trusting Poormans with your problem, Jeff. We appreciate the kind words and the great review!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURYNTVfT1h3EAE!2m1!1s0x0:0x5348e6b5ab7011f2!3m1!1s2@1:CIHM0ogKEICAgIDX55_OXw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURYcC1EaGZBEAE",
+      "reviewer": "Kim G.",
+      "rating": 5,
+      "text": "Mike was amazing.",
+      "publishedAt": "2024-10-31T16:44:49.991Z",
+      "ownerResponse": "Thank you for the 5 stars, Kim!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURYcC1EaGZBEAE!2m1!1s0x0:0x5348e6b5ab7011f2!3m1!1s2@1:CIHM0ogKEICAgIDXp-DhfA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURYLTZmY2tRRRAB",
+      "reviewer": "George B.",
+      "rating": 5,
+      "text": "We are new customers of Poorman’s, having recently moved to the area and we were very happy to meet Cameron.<br>He was knowledgeable and performed the service in a professional manner<br>It seems that we chose the right provider",
+      "publishedAt": "2024-10-31T13:20:19.475Z",
+      "ownerResponse": "Thank you for taking the time to write us a review, George. We're glad that you decided to trust us with your service.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURYLTZmY2tRRRAB!2m1!1s0x0:0x5348e6b5ab7011f2!3m1!1s2@1:CIHM0ogKEICAgIDX-6fckQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURYbTVpTWNnEAE",
+      "reviewer": "Joan M.",
+      "rating": 5,
+      "text": "Having our furnace serviced by Poormans in the fall, and our AC in the spring, helps keep things running smoothly for us. Service Technician, Mike Shelburne was out today, and not only gave our furnace a very thorough going over, but was very friendly, and asked us afterward if we had any questions, and chatted for a bit, since it was the end of the day.",
+      "publishedAt": "2024-10-31T07:44:25.204Z",
+      "ownerResponse": "Thanks for the 5 stars! We're glad to hear that Mike was able to get your furnace ready for the winter. Thanks for being a loyal customer!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURYbTVpTWNnEAE!2m1!1s0x0:0x5348e6b5ab7011f2!3m1!1s2@1:CIHM0ogKEICAgIDXm5iMcg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURYMDVHQmVnEAE",
+      "reviewer": "Tyler M.",
+      "rating": 5,
+      "text": "Mike was an excellent and highly knowledgeable technician. Came out to our house and within a matter of minutes found the problem and solved it fast. Highly recommend.",
+      "publishedAt": "2024-10-30T22:27:59.700Z",
+      "ownerResponse": "Hi TJ, thanks so much for sharing your experience. We're glad Mike could get your problem fixed. Thanks for the incredible review!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURYMDVHQmVnEAE!2m1!1s0x0:0x5348e6b5ab7011f2!3m1!1s2@1:CIHM0ogKEICAgIDX05GBeg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURYNHJlV0pREAE",
+      "reviewer": "Noah B.",
+      "rating": 5,
+      "text": "Poormans is the first call I make when dealing with heating/cooling issues. Mike Shelburne is hands down the best Service technician I’ve dealt with. Thanks for everything Mike!",
+      "publishedAt": "2024-10-25T15:24:02.041Z",
+      "ownerResponse": "We appreciate that loyalty, Noah. Thanks for trusting us with all your heating and cooling issues!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURYNHJlV0pREAE!2m1!1s0x0:0x5348e6b5ab7011f2!3m1!1s2@1:CIHM0ogKEICAgIDX4reWJQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURYd3N2eWtBRRAB",
+      "reviewer": "Toni M.",
+      "rating": 5,
+      "text": "Cam is always efficient & professional. Bonus, puts big salt bag in softener. So appreciate, especially since I had recent surgery.",
+      "publishedAt": "2024-10-25T11:42:32.467Z",
+      "ownerResponse": "Hi Toni! Thanks so much for the great review!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURYd3N2eWtBRRAB!2m1!1s0x0:0x5348e6b5ab7011f2!3m1!1s2@1:CIHM0ogKEICAgIDXwsvykAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURYdE9LSE1BEAE",
+      "reviewer": "Jim Y.",
+      "rating": 5,
+      "text": "Service Tech Mike Shelburne did an excellent job and is very knowledgeable. I would recommend him.",
+      "publishedAt": "2024-10-24T18:08:58.909Z",
+      "ownerResponse": "Thank you so much Jim!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURYdE9LSE1BEAE!2m1!1s0x0:0x5348e6b5ab7011f2!3m1!1s2@1:CIHM0ogKEICAgIDXtOKHMA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURYNUpqSEFnEAE",
+      "reviewer": "Diana M.",
+      "rating": 5,
+      "text": "Poormans are awesome! Tom was very thorough and now our furnace is ready for winter.",
+      "publishedAt": "2024-10-24T11:42:17.933Z",
+      "ownerResponse": "You're awesome Diana! Thanks for sharing your experience and leaving a review!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURYNUpqSEFnEAE!2m1!1s0x0:0x5348e6b5ab7011f2!3m1!1s2@1:CIHM0ogKEICAgIDX5JjHAg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURYbUtudWVnEAE",
+      "reviewer": "Mike D.",
+      "rating": 5,
+      "text": "Professional and courteous always a pleasure to work with.",
+      "publishedAt": "2024-10-23T19:06:22.012Z",
+      "ownerResponse": "Thank you, Mike. We appreciate your business!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURYbUtudWVnEAE!2m1!1s0x0:0x5348e6b5ab7011f2!3m1!1s2@1:CIHM0ogKEICAgIDXmKnueg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURYNkszbFZBEAE",
+      "reviewer": "Linda S.",
+      "rating": 5,
+      "text": "Mike S. was knowledgeable and professional.  This company is the best!",
+      "publishedAt": "2024-10-23T17:10:45.009Z",
+      "ownerResponse": "Hi Linda! Thanks so much for the great review!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURYNkszbFZBEAE!2m1!1s0x0:0x5348e6b5ab7011f2!3m1!1s2@1:CIHM0ogKEICAgIDX6K3lVA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURYcUs3aGlRRRAB",
+      "reviewer": "Barry L.",
+      "rating": 5,
+      "text": "Mike S. has done another excellent and professional job on our biannual service of our 3 HVAC units.<br>Poorman’s have always been great with sales and service of our HVAC and water heater systems over the last 35 years.",
+      "publishedAt": "2024-10-23T14:27:35.221Z",
+      "ownerResponse": "Hi Barry! Thanks for sharing your positive experience. We appreciate the kind words and the loyalty to Poormans. Thank you for your continued support!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURYcUs3aGlRRRAB!2m1!1s0x0:0x5348e6b5ab7011f2!3m1!1s2@1:CIHM0ogKEICAgIDXqK7hiQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNYdDZlaGd3RRAB",
+      "reviewer": "Jenna K.",
+      "rating": 5,
+      "text": "Love Poormans Heating & Air and their twice a year maintenance agreement!",
+      "publishedAt": "2024-10-21T19:10:24.992Z",
+      "ownerResponse": "Thank you for the 5 stars, Jenna!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNYdDZlaGd3RRAB!2m1!1s0x0:0x5348e6b5ab7011f2!3m1!1s2@1:CIHM0ogKEICAgICXt6ehgwE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNYcFlXYkt3EAE",
+      "reviewer": "Shannon B.",
+      "rating": 5,
+      "text": "I have been pleased with Poormans Heating & Air.<br><br>great professional service, Cam has serviced our heater the last couple of years did a great job. He fixed a terrible thermostat issue we had last year.",
+      "publishedAt": "2024-10-18T18:42:43.925Z",
+      "ownerResponse": "Thank you so much for the kind words Shannon!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNYcFlXYkt3EAE!2m1!1s0x0:0x5348e6b5ab7011f2!3m1!1s2@1:CIHM0ogKEICAgICXpYWbKw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNYcFpiMzV3RRAB",
+      "reviewer": "Marcia G.",
+      "rating": 5,
+      "text": "Mike Shelburne with Poorman’s Heating and Air gave us great service! He was even a bit early and pleasant to work with!",
+      "publishedAt": "2024-10-18T18:19:35.738Z",
+      "ownerResponse": "Hi Marcia! We're happy to hear you had a pleasant experience. Thank you for trusting us and leaving a review!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNYcFpiMzV3RRAB!2m1!1s0x0:0x5348e6b5ab7011f2!3m1!1s2@1:CIHM0ogKEICAgICXpZb35wE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNYaGJMYXhnRRAB",
+      "reviewer": "Paschalina S.",
+      "rating": 5,
+      "text": "Very knowledgeable. Transparent. Really like him.",
+      "publishedAt": "2024-10-18T14:45:47.734Z",
+      "ownerResponse": "Thank you so much for sharing your experience! We hope you continue to do business with us!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNYaGJMYXhnRRAB!2m1!1s0x0:0x5348e6b5ab7011f2!3m1!1s2@1:CIHM0ogKEICAgICXhbLaxgE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNYa1pEbnF3RRAB",
+      "reviewer": "Brian C.",
+      "rating": 5,
+      "text": "Very nice and informative. Very knowledgeable.",
+      "publishedAt": "2024-10-17T14:17:40.870Z",
+      "ownerResponse": "Thank you for the 5 stars, Brian!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNYa1pEbnF3RRAB!2m1!1s0x0:0x5348e6b5ab7011f2!3m1!1s2@1:CIHM0ogKEICAgICXkZDnqwE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNYbnVuWGtnRRAB",
+      "reviewer": "Jarod B.",
+      "rating": 5,
+      "text": "Mike Shelburne did a very thorough job",
+      "publishedAt": "2024-10-16T23:30:32.683Z",
+      "ownerResponse": "Thanks so much for the review, Jarod!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNYbnVuWGtnRRAB!2m1!1s0x0:0x5348e6b5ab7011f2!3m1!1s2@1:CIHM0ogKEICAgICXnunXkgE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNYN3F6NnNnRRAB",
+      "reviewer": "Kelli B.",
+      "rating": 5,
+      "text": "Mike was amazing!! So helpful and friendly.",
+      "publishedAt": "2024-10-16T20:30:33.138Z",
+      "ownerResponse": "Thank you for the awesome review Kelli. We're glad Mike was able to get your heat running again.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNYN3F6NnNnRRAB!2m1!1s0x0:0x5348e6b5ab7011f2!3m1!1s2@1:CIHM0ogKEICAgICX7qz6sgE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNYcnN6c0tnEAE",
+      "reviewer": "Paul P.",
+      "rating": 5,
+      "text": "Mike Shelburne was an outstanding representative of the quality of service Poorman’s Heating and Air is known for consistently.  Thanks, Mike!",
+      "publishedAt": "2024-10-16T18:20:49.989Z",
+      "ownerResponse": "Thank you so much for the great review, Paul. We're glad Mike was able to get your heat working again yesterday.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNYcnN6c0tnEAE!2m1!1s0x0:0x5348e6b5ab7011f2!3m1!1s2@1:CIHM0ogKEICAgICXrszsKg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNYanBIbDlRRRAB",
+      "reviewer": "Margy F.",
+      "rating": 5,
+      "text": "Mike Shelburne has been our technician the last few visits and he is not only friendly and courteous, he explains any issues thoroughly and performs service in a timely manner. We have been very pleased with Poormans overall and would highly recommend!",
+      "publishedAt": "2024-10-16T15:04:27.437Z",
+      "ownerResponse": "We appreciate you sharing your experience with us, Margy. Thank you for your continued business and thanks for taking the time to leave a glowing review.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNYanBIbDlRRRAB!2m1!1s0x0:0x5348e6b5ab7011f2!3m1!1s2@1:CIHM0ogKEICAgICXjpHl9QE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNYanVhbHB3RRAB",
+      "reviewer": "Bill C.",
+      "rating": 5,
+      "text": "Our tech, Cam was courteous and thorough.  He advised me of what his inspection was showing and explained things in a professional and understandable way.",
+      "publishedAt": "2024-10-16T14:49:22.190Z",
+      "ownerResponse": "We appreciate that, Bill. Thanks so much!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNYanVhbHB3RRAB!2m1!1s0x0:0x5348e6b5ab7011f2!3m1!1s2@1:CIHM0ogKEICAgICXjualpwE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNYcHZERGhRRRAB",
+      "reviewer": "Theresa N.",
+      "rating": 5,
+      "text": "Our techicians, Tyler and Cameron, were very knowledgeable and answered all of our questions.  We are extremely satisfied with their work and would highly recommend them.",
+      "publishedAt": "2024-10-16T00:20:12.497Z",
+      "ownerResponse": "Hi Theresa! Thanks so much for your business, and thanks for leaving us a great review. Enjoy your new furnace!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNYcHZERGhRRRAB!2m1!1s0x0:0x5348e6b5ab7011f2!3m1!1s2@1:CIHM0ogKEICAgICXpvDDhQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNYeHQ3QTF3RRAB",
+      "reviewer": "Hannah W.",
+      "rating": 5,
+      "text": "Cam from Poormans is Awesome!!!! Cam starts up, shuts down and fixes our boiler heat system. He knows his stuff!!!!",
+      "publishedAt": "2024-10-15T22:46:33.594Z",
+      "ownerResponse": "Thanks for the great review, Hannah! We're glad you had a good experience and we'll pass this along to Cam!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNYeHQ3QTF3RRAB!2m1!1s0x0:0x5348e6b5ab7011f2!3m1!1s2@1:CIHM0ogKEICAgICXxt7A1wE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNYdXUyVDF3RRAB",
+      "reviewer": "Joel L.",
+      "rating": 5,
+      "text": "Mike S did a great job! Very professional and thorough.",
+      "publishedAt": "2024-10-15T16:10:51.351Z",
+      "ownerResponse": "Joel, thank you so much for writing a 5-star review. We'll pass the compliments along to Mike!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNYdXUyVDF3RRAB!2m1!1s0x0:0x5348e6b5ab7011f2!3m1!1s2@1:CIHM0ogKEICAgICXuu2T1wE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNYMnRicGdnRRAB",
+      "reviewer": "David M.",
+      "rating": 5,
+      "text": "Mike was thorough and quick. He took the extra time to explain some details as well as making an extra phone call to dispatch. Appreciate Mike’s professionalism and level of service.",
+      "publishedAt": "2024-10-15T13:44:54.620Z",
+      "ownerResponse": "We're glad you had an enjoyable experience David. Thank you for taking the time to leave us a review!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNYMnRicGdnRRAB!2m1!1s0x0:0x5348e6b5ab7011f2!3m1!1s2@1:CIHM0ogKEICAgICX2tbpggE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNYbXEtV1N3EAE",
+      "reviewer": "brooke G.",
+      "rating": 5,
+      "text": "He was great!!",
+      "publishedAt": "2024-10-15T12:58:42.119Z",
+      "ownerResponse": "Thank you Brooke!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNYbXEtV1N3EAE!2m1!1s0x0:0x5348e6b5ab7011f2!3m1!1s2@1:CIHM0ogKEICAgICXmq-WSw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNYek9tZjVnRRAB",
+      "reviewer": "Hilary B.",
+      "rating": 5,
+      "text": "Cam from Poormans did a great job serving my parents furnace.",
+      "publishedAt": "2024-10-13T22:38:05.488Z",
+      "ownerResponse": "Thank you Hilary!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNYek9tZjVnRRAB!2m1!1s0x0:0x5348e6b5ab7011f2!3m1!1s2@1:CIHM0ogKEICAgICXzOmf5gE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNYcUlhNjF3RRAB",
+      "reviewer": "Eric M.",
+      "rating": 5,
+      "text": "Just so everyone is clear, I had a new heating and air conditioning unit installed last year.  The installation was literally flawless, nice, neat and professional.  As an electrician I know what nice neat work looks life.  100% of their staff is professional.  Prices are super competitive.  I wouldn’t secure a contract with anyone else if you’re in need of a heating and cooling solution!!!",
+      "publishedAt": "2024-10-12T19:19:29.548Z",
+      "ownerResponse": "Eric, thank you so much for this review. We appreciate the kind words, and thank you for your continued business.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNYcUlhNjF3RRAB!2m1!1s0x0:0x5348e6b5ab7011f2!3m1!1s2@1:CIHM0ogKEICAgICXqIa61wE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURubjRIc2ZnEAE",
+      "reviewer": "Jean H.",
+      "rating": 5,
+      "text": "Mike did an excellent job as always. Much appreciated.",
+      "publishedAt": "2024-10-11T20:26:21.656Z",
+      "ownerResponse": "Thank you for such a great review, Jean!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURubjRIc2ZnEAE!2m1!1s0x0:0x5348e6b5ab7011f2!3m1!1s2@1:CIHM0ogKEICAgIDnn4Hsfg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURuNzdTOXpnRRAB",
+      "reviewer": "Mimi Z.",
+      "rating": 5,
+      "text": "Had my seasonal furnace checkup today and the technician Mike Shelburne went above and beyond to make sure everything worked properly. Highly recommend Poormans for all heating and cooling. We have been using them the last 3 years and will continue to.",
+      "publishedAt": "2024-10-11T17:48:01.075Z",
+      "ownerResponse": "Hi Mimi! Thank you for writing this awesome review. We're grateful for your continued support all these years!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURuNzdTOXpnRRAB!2m1!1s0x0:0x5348e6b5ab7011f2!3m1!1s2@1:CIHM0ogKEICAgIDn77S9zgE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURueDVub1VREAE",
+      "reviewer": "katfalls",
+      "rating": 5,
+      "text": "Always get good service. Cam helped out with questions I had. We found a great company. Thanks.",
+      "publishedAt": "2024-10-10T21:27:17.213Z",
+      "ownerResponse": "Thanks for the great review Kathy! We appreciate your business and continued support all these years!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURueDVub1VREAE!2m1!1s0x0:0x5348e6b5ab7011f2!3m1!1s2@1:CIHM0ogKEICAgIDnx5noUQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURuaDRtVnpBRRAB",
+      "reviewer": "Brenda F.",
+      "rating": 5,
+      "text": "Cam was prompt and thorough. He explained everything to me. He did a great job servicing my furnace. Thanks Cam",
+      "publishedAt": "2024-10-10T19:01:38.168Z",
+      "ownerResponse": "We appreciate your business Brenda! Thanks for the great review!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURuaDRtVnpBRRAB!2m1!1s0x0:0x5348e6b5ab7011f2!3m1!1s2@1:CIHM0ogKEICAgIDnh4mVzAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURoejlPdEhBEAE",
+      "reviewer": "Robert C.",
+      "rating": 5,
+      "text": "I had an maintain agreement with Rolf Griffin for years.  I  was told at their last visit that it would cost over 4k for  a repair., but suggested that I replace the entire system with  their Advanced program. I got a  second opinion from Poormans, and my repair  cost was $570. Mike was the technician that was sent out, and he had us back up and running right away. He was very professional,  but most of all he was honest. Thanks Mike we appreciate it all. BLESSINGS!<br><br>Mike, did such an amazing job at my home as indicated above. I call so he could come out and take care of our issues today at our church. Great service,   along with being trustworthy.",
+      "publishedAt": "2024-10-10T18:44:26.794Z",
+      "ownerResponse": "Hi Robert! Thanks for taking the time to write a review. We are glad Mike could help you out so much!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURoejlPdEhBEAE!2m1!1s0x0:0x5348e6b5ab7011f2!3m1!1s2@1:CIHM0ogKEICAgIDhz9OtHA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURudThXZG5nRRAB",
+      "reviewer": "RIck S.",
+      "rating": 5,
+      "text": "Mike Shelburne does a very thorough inspection of our systems. Great job",
+      "publishedAt": "2024-10-10T14:45:08.902Z",
+      "ownerResponse": "Hi Rick! We're happy Mike could get your systems ready for the season. Thank you so much!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURudThXZG5nRRAB!2m1!1s0x0:0x5348e6b5ab7011f2!3m1!1s2@1:CIHM0ogKEICAgIDnu8WdngE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURuczk2RWhBRRAB",
+      "reviewer": "Steven A.",
+      "rating": 5,
+      "text": "Mike Shelburne completed POM service on my Trane Heat pump and furnace. He did an awesome job of teaching my home for this coming winter. Thanks Poormans.",
+      "publishedAt": "2024-10-09T19:42:45.974Z",
+      "ownerResponse": "Hi Steven! Thanks for taking the time to share your experience with us! We'll pass along the kind words to Mike.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURuczk2RWhBRRAB!2m1!1s0x0:0x5348e6b5ab7011f2!3m1!1s2@1:CIHM0ogKEICAgIDns96EhAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURuMDh5dUJBEAE",
+      "reviewer": "shawn W.",
+      "rating": 5,
+      "text": "Mitch and Nolan did such a good job installing our hvac system! They were so nice and great company. Give these 2 a raise!!<br>Prices are unbeatable and we are so happy. Thank you Poormans!!",
+      "publishedAt": "2024-10-09T16:59:11.553Z",
+      "ownerResponse": "Thank you so much Shawn for the excellent review!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURuMDh5dUJBEAE!2m1!1s0x0:0x5348e6b5ab7011f2!3m1!1s2@1:CIHM0ogKEICAgIDn08yuBA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURudllLb3R3RRAB",
+      "reviewer": "Kendra M.",
+      "rating": 5,
+      "text": "Mike S. has been our service technician for a couple years now.  He is very knowledgeable and honest.  He is also good at explaining what repairs are needed and why.  Another company said we needed a new AC and furnace.  Poorman's was honest and said we needed a minor repair which ended up saving us thousands of dollars.  Poormans has been a company we trust.",
+      "publishedAt": "2024-10-09T02:40:24.949Z",
+      "ownerResponse": "Thanks for sharing your experience Kendra! We are happy to hear that!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURudllLb3R3RRAB!2m1!1s0x0:0x5348e6b5ab7011f2!3m1!1s2@1:CIHM0ogKEICAgIDnvYKotwE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURuM2VUaUdBEAE",
+      "reviewer": "Lori B.",
+      "rating": 5,
+      "text": "Very pleased with fall/winter service performed by Mike S.  Explained everything he was doing, was very personable, and very prompt.  Thank you Poormans!!",
+      "publishedAt": "2024-10-08T23:40:38.192Z",
+      "ownerResponse": "Thank YOU, Lori! We appreciate your business and your review!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURuM2VUaUdBEAE!2m1!1s0x0:0x5348e6b5ab7011f2!3m1!1s2@1:CIHM0ogKEICAgIDn3eTiGA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURubmI3WENnEAE",
+      "reviewer": "Jane T.",
+      "rating": 5,
+      "text": "Cam provided exceptional service. He was very friendly and thorough. Did an excellent job and answered all my questions! Thanks, Jane",
+      "publishedAt": "2024-10-08T22:01:52.976Z",
+      "ownerResponse": "Glad we could be of service, Jane. Thanks for leaving a rockstar review!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURubmI3WENnEAE!2m1!1s0x0:0x5348e6b5ab7011f2!3m1!1s2@1:CIHM0ogKEICAgIDnnb7XCg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURuN2RYT3NnRRAB",
+      "reviewer": "Courtney H.",
+      "rating": 5,
+      "text": "Mike and the team at Poormans do an excellent job. Super professional and efficient!",
+      "publishedAt": "2024-10-08T19:59:37.941Z",
+      "ownerResponse": "Thank you for the incredible review!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURuN2RYT3NnRRAB!2m1!1s0x0:0x5348e6b5ab7011f2!3m1!1s2@1:CIHM0ogKEICAgIDn7dXOsgE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURuN1pLdGJ3EAE",
+      "reviewer": "Janet R.",
+      "rating": 5,
+      "text": "Billy serviced our furnace this year. We switched to Poormans this year from another HVAC provider in Fort Wayne as we felt we were being charged too much. After reading reviews we tried Poormans.  We are very happy we did.  Billy showed up on time; did his job and answered all my questions. Hes pleasant and cordial.  Glad we made the switch.",
+      "publishedAt": "2024-10-08T19:07:19.740Z",
+      "ownerResponse": "Hi Janet! Thank you for taking the time to share your experience. We appreciate the opportunity to work with you. Thanks for giving us a try!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURuN1pLdGJ3EAE!2m1!1s0x0:0x5348e6b5ab7011f2!3m1!1s2@1:CIHM0ogKEICAgIDn7ZKtbw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURuemFXb2FREAE",
+      "reviewer": "Brenda D.",
+      "rating": 5,
+      "text": "The heating system in our office stopped working.There technician Mike arrived within a couple of hours. He fixed the problem. I appreciate that he explained the problem and the solution to me. He was very knowledgeable and a pleasure to work with. I would definitely use Poorman’s again.  Highly recommend.",
+      "publishedAt": "2024-10-08T15:48:44.031Z",
+      "ownerResponse": "Thank you Brenda!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURuemFXb2FREAE!2m1!1s0x0:0x5348e6b5ab7011f2!3m1!1s2@1:CIHM0ogKEICAgIDnzaWoaQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURuaGJTLUFREAE",
+      "reviewer": "Louie G.",
+      "rating": 5,
+      "text": "Mike did a great job as usual ! Service time was exactly as promised. Unit has worked perfect since installation !",
+      "publishedAt": "2024-10-07T19:29:22.736Z",
+      "ownerResponse": "Hi Louie. We're glad Mike could get your furnace serviced this season! Thanks for taking the time to leave us a great review.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURuaGJTLUFREAE!2m1!1s0x0:0x5348e6b5ab7011f2!3m1!1s2@1:CIHM0ogKEICAgIDnhbS-AQ%7C%7C?hl=en-US",
+      "language": "en"
+    }
+  ],
+  "ratingOnly": [
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pacVZWZE9MVk5qWmxaNmVXRkhhSFYyUTJkUk0zYxAB",
+      "reviewer": "Raymond F.",
+      "rating": 5,
+      "publishedAt": "2026-07-15T15:05:05.784Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25wdVJGRjNUVkIyTkY5Q2FHRkhMV1YyYTBkS1YzYxAB",
+      "reviewer": "Mark B.",
+      "rating": 5,
+      "publishedAt": "2025-07-29T23:10:16.365Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNYaHFQSWV3EAE",
+      "reviewer": "Daniel H.",
+      "rating": 5,
+      "publishedAt": "2024-10-15T20:47:08.534Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURuXzZyN2VREAE",
+      "reviewer": "Janet G.",
+      "rating": 5,
+      "publishedAt": "2024-10-12T01:51:28.530Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURuejk3bmRnEAE",
+      "reviewer": "Charlotte B.",
+      "rating": 5,
+      "publishedAt": "2024-10-11T14:45:16.794Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURuczZPazNRRRAB",
+      "reviewer": "Ella H.",
+      "rating": 5,
+      "publishedAt": "2024-10-09T20:27:16.400Z"
+    }
+  ]
+}

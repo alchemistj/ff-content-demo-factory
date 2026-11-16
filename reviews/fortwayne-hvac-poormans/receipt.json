@@ -1,0 +1,28 @@
+{
+  "kind": "google-review-pull-receipt",
+  "status": "ok",
+  "slug": "fortwayne-hvac-poormans",
+  "request": {
+    "mapsUrl": "place_id:ChIJdX8QGPbkFYgR8hFwq7XmSFM",
+    "maxReviews": 75,
+    "expectedPhone": "2604223534",
+    "expectedName": "Poorman"
+  },
+  "trigger": "workflow_dispatch",
+  "apify": {
+    "actor": "compass~crawler-google-places",
+    "runId": "u02cAzBs2lPj1EL0U",
+    "datasetId": "2LNT9Cmn24cKlN6KY",
+    "attempts": 1,
+    "usageUsd": 0.042699999999999995
+  },
+  "counts": {
+    "listingTotal": 252,
+    "withText": 69,
+    "ratingOnly": 6
+  },
+  "detail": null,
+  "startedAt": "2026-11-16T04:21:59.335Z",
+  "finishedAt": "2026-11-16T04:22:41.432Z",
+  "githubRunUrl": "https://github.com/alchemistj/ff-content-demo-factory/actions/runs/43803641345"
+}

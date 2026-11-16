@@ -423,6 +423,18 @@
       "pulledAt": "2026-11-16T04:12:43.794Z"
     },
     {
+      "slug": "fortwayne-hvac-poormans",
+      "name": "Poormans Heating & Air",
+      "placeId": "ChIJdX8QGPbkFYgR8hFwq7XmSFM",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 252,
+        "withText": 69,
+        "ratingOnly": 6
+      },
+      "pulledAt": "2026-11-16T04:22:41.432Z"
+    },
+    {
       "slug": "fortwayne-plumbing-borchelt",
       "name": "W C Borchelt & Sons Inc",
       "placeId": "ChIJLwGX-6v9FYgRclM5JlnXeKc",
