@@ -11,7 +11,7 @@ Your customers keep telling the same story: Miguel stayed with them through the 
 >
 > — Kimberly J.
 
-So we built the first five pages: homepage, roof replacement, insurance storm restoration, contact and this page. Your pages for repairs, siding, gutters and commercial roofing we left alone.
+So we built the first five pages: homepage, roof replacement, insurance storm restoration, contact and this page. Your other service pages we left alone.
 
 **The demo, page by page**
 
@@ -442,7 +442,12 @@ We usually set a time to come look at the roof. Miguel Rivera, our owner, is oft
 ## Notes (not page copy)
 
 **Word counts** (by script; "without quotes" excludes blockquotes, buttons, trust bar and caption lines; "with" is everything on the page)
-COUNTS_PLACEHOLDER
+- Strategy page: 982 without quotes, 997 with.
+- Home — Roofing Company in P: 919 without quotes, 1090 with.
+- Insurance Storm Restoration: 949 without quotes, 1123 with.
+- Roof Replacement — Roof Rep: 963 without quotes, 1106 with.
+- Contact — Contact Rainforci: 278 without quotes, 312 with.
+- Strategy is at or under 1,000 words including the full-build list; home, both service pages and contact clear their minimums without quotes.
 
 **Credentials and sources**
 - BBB: left off every business page. The A+ rating shows only on bbb.org search results ("BBB Rating: A+"), not on their site, and the site's "BBB accredited" (one town page, /roofing-in-west-peoria-il/) is not confirmed by that listing. It is the fourth "What we'd confirm" question.

@@ -1,10 +1,10 @@
 # https://www.actionlincoln.com/residential-services/electrical
 
-- Fetched: 2026-11-16T04:18:58.950Z (rendered in a real browser)
+- Fetched: 2026-11-16T04:26:50.821Z (rendered in a real browser)
 - HTTP: 200
 - Title: Electrical Panel Upgrades in Lincoln, NE | ACTION
 - H1: Electrical | Electrical
-- tel: links: tel:+14027994969, tel:402-799-4969
+- tel: links: tel:+14025760708, tel:402-576-0708
 - Words: 386
 
 ---

@@ -49,7 +49,7 @@ Google and AI tools can only repeat what's written down. We get every service, c
 **What the demo fixes**
 - Its own page with a Fort Wayne headline.
 - Plain answers to both questions.
-- Six reviews about real repairs.
+- Five reviews about real repairs.
 
 **A full build would also add**
 A check of what your competitors offer, so services you didn't think to mention still get their own pages.
@@ -57,7 +57,7 @@ A check of what your competitors offer, so services you didn't think to mention 
 **3. Lighting Installation**
 
 **Current site problem**
-- Lighting is half a sentence about "custom lighting packages".
+- Lighting is one sentence about "custom lighting packages".
 - "Can you help improve my home's outdoor lighting?" has no answer.
 - Jobs customers describe, such as three-way switches and a lamppost, are missing.
 
@@ -77,8 +77,8 @@ Pages planned from what Google actually shows for each search, so every page tar
 - The address is the only place Fort Wayne appears.
 
 **What the demo fixes**
-- A contact page with phone, address, email and hours at the top.
-- Only the posted hours.
+- A contact page with phone, address and email at the top, and the hours just below.
+- Hours, and what to do if something can't wait.
 - What to have ready when you call.
 
 **A full build would also add**
@@ -121,8 +121,8 @@ This demo is the first five pages. A full build starts by pulling every service 
 
 1. **Insurance and license.** Your site says "licensed" but names no license, and every "licensed and insured?" question is unanswered. What can we state?
 2. **Hours.** Your posted hours are Monday to Saturday, 8:00 AM to 4:00 PM, but a customer was helped outside them. Do you take calls at other times?
-3. **Prices.** Your site says "honest pricing" with no figures, and two reviews push back on price. What can we say about a visit's minimum charge?
-4. **Towns and people.** Which towns do you serve beyond Fort Wayne, and may we name Jim, George and your other electricians?
+3. **Minimum charge.** Your replies to reviews mention a $225 minimum for a visit. Is that figure right to publish, and what does it cover?
+4. **Towns.** Which towns do you serve beyond Fort Wayne?
 
 ### Want a website like this for your business?
 
@@ -164,7 +164,7 @@ Residential and commercial work are both part of what we do.
 
 ### When a new panel really is the answer
 
-Most panels last for decades, and a breaker that trips is often a sign of one overloaded circuit or one worn part, not a bad panel. A new panel usually makes sense when the old one has rust or water damage, has no room for the new circuits you need, is an old fuse box, or has breakers that no longer hold. Work inside a panel stays with a licensed electrician, because the main wires into it stay live even when the breakers are off. We tell you what we see and why before anyone buys anything.
+Most panels last for decades, and a breaker that trips is often a sign of one overloaded circuit or one worn part, not a bad panel. A new panel usually makes sense when the old one has rust or water damage, has no room for the new circuits you need, is an old fuse box, or has breakers that no longer hold, and work inside a panel stays with a licensed electrician. We tell you what we see and why before anyone buys anything.
 
 > I needed my whole electric panel replaced and they were very easy to work with …
 >
@@ -172,7 +172,7 @@ Most panels last for decades, and a breaker that trips is often a sign of one ov
 
 ### Older houses and new additions
 
-Houses built a century ago may still have knob-and-tube wiring, an early system of single wires run through porcelain supports. It was not designed for today's loads and often has damaged insulation, so it is usually replaced. When we rewire an older house, we plan the work to open as few walls as we can. For an addition or a loft turned into a bedroom, we ask what you need in each room first, such as outlets, switches and lights, and lay out the options before we run a wire.
+Houses built a century ago may still have knob-and-tube wiring, an early system of single wires run through porcelain supports. It was not designed for today's loads and often has damaged insulation, so it is usually replaced. When we rewire an older house, we plan the work to open as few walls as we can. For an addition or a loft turned into a bedroom, we usually start by asking what you need in each room, such as outlets, switches and lights, and lay out the options before we run a wire.
 
 > I recommend Sterling Electric very highly and without reservation. All service was prompt and professional. I have a hundred year old house with knob and tube wiring that needed a whole house rewire. They did a great job of minimizing the number of holes needed to access the old wiring.
 >
@@ -180,7 +180,7 @@ Houses built a century ago may still have knob-and-tube wiring, an early system 
 
 ### Licensed, with 17 years behind the work
 
-Our licensed team brings 17 years of experience to every residential and commercial project. We work to meet current electrical codes, the safety rules inspectors check work against, and we keep you informed with updates through the job. If a plan changes, you hear about it from us. From the first call to the final walkthrough, we aim to show up on time, work with care and finish the job right, so you can leave your home in good hands.
+Our licensed team brings 17 years of experience to our residential and commercial projects. We work to meet current electrical codes, the safety rules inspectors check work against, and we keep you informed with updates through the job. From the first call to the final walkthrough, we aim to show up on time, work with care and finish the job right, so you can leave your home in good hands.
 
 ### A clean job site
 
@@ -192,7 +192,7 @@ We keep work areas tidy, and that includes the wiring. Cables that are routed ne
 
 ### Security cameras and other jobs
 
-Not every job fits a service list, and electrical work reaches further than outlets and panels. We also install security camera systems. Cameras need power and a network connection at each spot, so the wiring route matters as much as the camera, and we plan it with you before anything is mounted. Once a system is running, we often take the time to show you how to use it.
+Not every job fits a service list, and electrical work reaches further than outlets and panels. We also install security camera systems. Cameras need power and a network connection at each spot, so the wiring route matters as much as the camera, and it is worth planning before anything is mounted. Once a system is running, we often take the time to show you how to use it.
 
 > Phil did an excellent job installing our cameras. He was very patient throughout the entire process, took the time to explain everything clearly, and made sure we understood how to use the camera system.
 >
@@ -256,7 +256,7 @@ Sparks from an outlet, a plug that is hot to the touch, a buzzing panel or a bur
 
 ### Why a new panel is not usually the first answer
 
-A panel does wear out, but it is not often the cause of a single dead room or a breaker that trips now and then. We look at the circuit first, since the problem is frequently one breaker, one device or one connection. If the panel itself has burn marks, rust, water damage or breakers that will not hold, replacing it can be the right repair, and we will show you why before any work starts.
+A panel does wear out, but it is rarely the cause of one dead room or a breaker that trips now and then. The problem is frequently one breaker, one device or one connection, so we look at the circuit first. If the panel turns out to be the fault, we aim to explain why before any work starts.
 
 > They took time to diagnose the problem fix it and not upsell extras we didn't need.
 >
@@ -264,11 +264,11 @@ A panel does wear out, but it is not often the cause of a single dead room or a 
 
 ### Repair or replace
 
-Replacing a switch, outlet or fixture is a small repair, and it is the right one when the wiring behind it is in good shape. A wire with cracked or crumbling insulation, or an old run that has been damaged in several places, is usually better replaced than patched, since the next failure is likely nearby. Older wiring such as knob-and-tube, or aluminum branch wiring found in some houses built in the 1960s and 70s, may need special connections or replacement. We explain which one applies to your house before we start.
+Replacing a switch, outlet or fixture is a small repair, and it is the right one when the wiring behind it is in good shape. A wire with cracked or crumbling insulation, or an old run that has been damaged in several places, is usually better replaced than patched, since the next failure is likely nearby. Older wiring such as knob-and-tube, or aluminum branch wiring found in some houses built in the 1960s and 70s, may need special connections or replacement. We aim to explain which one applies to your house before we start.
 
 ### Storm damage and old wiring
 
-A storm can take out several rooms at once through a power surge, a damaged service line or water in a fixture. Old wiring and storm damage can look alike from inside the room, which is why a trace comes first. Repairs after a storm range from replacing a few outlets to rewiring a section of the house, and we say which one you are facing once we have tested.
+A storm can take out several rooms at once through a power surge, a damaged line from the utility or water in a fixture. Old wiring and storm damage can look alike from inside the room, which is why a trace comes first. Repairs after a storm range from replacing a few outlets to rewiring a section of the house, and we can say which one you are facing once we have tested.
 
 > Repairs included removing knob and tub wiring, replacing light fixtures, wiring repairs after a storm took out two rooms of a house, switch and outlet replacements, etc.
 >
@@ -292,7 +292,7 @@ Outdoor and indoor lighting, new switches and ceiling fans, installed with the w
 
 ### Outdoor lighting that works the way you use the yard
 
-We install outdoor lighting, including lampposts and motion lights, and custom lighting packages. Where a light goes depends on what it is for: a path, a driveway, an entry door or a back patio. Outdoor fixtures and wiring must be rated for wet conditions, since water in a fixture or connection is a common cause of outdoor failures. Outdoor outlets and lighting circuits are also usually protected by GFCI, the shut-off device that stops power in a fraction of a second when it senses leakage, as it might through water.
+We install outdoor lighting, including lampposts and motion lights, and custom lighting packages. Where a light goes depends on what it is for: a path, a driveway, an entry door or a back patio. Outdoor fixtures and wiring must be rated for wet conditions, since water in a fixture or connection is a common cause of outdoor failures. Outdoor outlets and lighting circuits usually need GFCI protection, a shut-off that cuts power in a fraction of a second if it senses electricity leaking, as it might through water.
 
 > … George did a great job installing our lamppost and motion lights!
 >
@@ -304,7 +304,7 @@ A motion light switches on when it senses movement, which suits a back door or a
 
 ### Running power to a lamppost
 
-A lamppost out in the yard needs its own wire run from the house, usually buried. Burial depth and protection rules vary with the type of cable, and your local inspector may check the work, so we plan the route before digging. Sprinkler lines, tree roots and future garden beds are worth planning around.
+A lamppost out in the yard needs its own wire run from the house, usually buried. Burial depth and protection rules vary with the type of cable, and your local inspector may check the work, so the route is worth planning before digging. Sprinkler lines, tree roots and future garden beds are worth planning around.
 
 > On time. Very efficient service..replaced three switches, replaced light fixture and fixed two other fixtures in an hour.
 >
@@ -320,7 +320,7 @@ A three-way switch lets you control one light from two places, such as the top a
 
 ### Wafer lights and recessed lighting
 
-Wafer lights are thin LED discs that fit into a small hole in the ceiling. They need much less space above the ceiling than older recessed cans, so they work where a can would not fit. Insulation, ceiling height and what is above the room decide how many lights to use and how to place them. Dimmers also matter: a dimmer that is not made for LEDs can make them flicker or buzz, so we match the two. A light that flickers is often a loose connection, a worn switch or a mismatched dimmer, not a bad bulb or fixture, so we check those first.
+Wafer lights are thin LED discs that fit into a small hole in the ceiling. They need much less space above the ceiling than older recessed lights built into a metal canister, so they work where one of those would not fit. Insulation, ceiling height and what is above the room decide how many lights to use and how to place them. Dimmers also matter: a dimmer that is not made for LEDs can make them flicker or buzz, so we match the two. A light that flickers is often a loose connection, a worn switch or a mismatched dimmer, not a bad bulb or fixture, so we check those first.
 
 ### Ceiling fans
 
@@ -344,7 +344,7 @@ Brightness is measured in lumens, and the color of the light in kelvins: lower n
 
 ### Hot tubs, pools and other outdoor power
 
-A hot tub usually needs its own dedicated circuit with GFCI protection, a disconnect within sight of the tub, and wiring sized for the tub's load. Requirements differ by model and by local code, so check the tub's manual and talk to us before the tub arrives. That way the electrical side is ready on delivery day.
+A hot tub usually needs its own circuit with GFCI protection, a shut-off switch within sight of the tub, and wiring sized for the tub's load. Requirements differ by model and by local code, so check the tub's manual and talk to us before the tub arrives. That way the electrical side is ready on delivery day.
 
 > Had a great experience with Jim at Sterling Electric. We had to install our hot tub and a few light fixtures. Jim explained the entire process in details and gave a couple of options based on our budget. The project took a day and it all went pretty smooth.
 >
@@ -372,17 +372,17 @@ Tell us what is happening and where, whether it is one outlet, one room or the w
 
 ### If it's urgent
 
-If you see smoke or flames, or smell burning, leave the house and call 911 before you call us. If a breaker keeps tripping or an outlet sparks, call us during our hours and stop using that outlet or appliance until we've looked.
+If you see smoke or flames, or smell burning, leave the house and call 911 before you call us. Our posted hours are Monday to Saturday, 8:00 AM to 4:00 PM, but we have helped customers outside them, so if something can't wait, call and tell us what is happening.
 
 ### Your estimate
 
-Tell us about your project and we'll provide a clear, upfront quote. Have your address and the best number to reach you on hand. If you have a photo of the panel label, the fixture or the spot where you want a new outlet or light, it helps us picture the job before we arrive. Please keep your hands off the inside of the panel, and let us look at it.
+Tell us about your project and we'll provide a clear, upfront quote. Our minimum charge for a visit is $225. Have your address and the best number to reach you on hand. If you have a photo of the panel label, the fixture or the spot where you want a new outlet or light, it helps us picture the job before we arrive.
 
 ### Where we work
 
 Our office is in Fort Wayne, and we serve homes and businesses in Fort Wayne and the area around it.
 
-If you are not sure which of these fits, that is fine. Tell us what you see and we will sort it out on the phone. Ready to talk? Call (260) 404-1802.
+If you are not sure what to ask for, that is fine. Tell us what you see and we will sort it out on the phone. Ready to talk? Call (260) 404-1802.
 
 **Buttons:** Call (260) 404-1802 / Get an Estimate
 
@@ -390,11 +390,11 @@ If you are not sure which of these fits, that is fine. Tell us what you see and 
 
 | Page | Words without quotes | Words with quotes |
 |---|---|---|
-| Strategy | ~960 | ~990 |
-| Home | ~820 | ~990 |
-| Electrical Troubleshooting & Repair | ~1,055 | ~1,190 |
-| Lighting Installation | ~740 | ~940 |
-| Contact | ~290 | ~310 |
+| Strategy | ~970 | ~1,000 |
+| Home | ~815 | ~985 |
+| Electrical Troubleshooting & Repair | ~1,065 | ~1,200 |
+| Lighting Installation | ~765 | ~960 |
+| Contact | ~300 | ~320 |
 
 Counts include headings, bullets and the H1, and leave out button lines. All pages meet their minimums. The lighting page has the thinnest source material: the site gives about 25 words and the reviews give six jobs, so most of its length is hedged trade knowledge (wet-rated outdoor fixtures, GFCI, three-way switches, wafer lights, fan boxes, hot tub circuits, bulbs), not business claims.
 
@@ -403,8 +403,8 @@ Counts include headings, bullets and the H1, and leave out button lines. All pag
 **Credentials (own-site claims only).** "Licensed team" and "17 years" (home, residential, commercial pages), stated once on Home. "Meets current safety codes" is softened to "we work to meet". No license number, certifier or insurance claim appears anywhere; "insured" is only a question on the site with no answer.
 
 **Inventory items left out, and why.**
-- Insured, emergency service, after-hours (Tom S.) and outdoor lighting and signage for businesses: site FAQ questions are blank or conflict with the posted hours. Left out of copy; see questions below.
-- The $225 minimum and "honest/fair pricing" as a claim: conflicting (two 3-star reviews, owner replies). Price-heavy parts of quotes were trimmed (Ross N., wendy K., scott H.); Karah W., Sam E. and Robert K. not used.
+- Insured, emergency service and outdoor lighting and signage for businesses: site FAQ questions only, no answers. Left out of copy; see questions below. After-hours (Tom S. review and owner reply) appears once on Contact, hedged to "we have helped customers outside them"; it conflicts with the posted hours, so it is also a confirm question.
+- The $225 minimum appears once on Contact as the owner's own figure from a review reply (confirm question 3). "Honest/fair pricing" as a claim: conflicting (two 3-star reviews, owner replies). Price-heavy parts of quotes were trimmed (Ross N., wendy K., scott H.); Karah W., Sam E. and Robert K. not used.
 - George as a named technician (lead #3): needs owner approval. He appears only inside quotes (Mary H., wendy K.).
 - Unused reviews: Mark S. (same day), John D., Daniel J., Sadie B., Chad S., April M., isaiah G..
 - Commercial services: the site names no specific job, so only the umbrella line is used. The home page's one-line "Residential and commercial work" is the extent.

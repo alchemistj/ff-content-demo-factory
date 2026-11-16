@@ -1,10 +1,10 @@
 # https://www.actionlincoln.com/residential-services/sewer-water-line-repair
 
-- Fetched: 2026-11-16T04:19:13.030Z (rendered in a real browser)
+- Fetched: 2026-11-16T04:27:03.882Z (rendered in a real browser)
 - HTTP: 200
 - Title: Sewer Line Repair Services in Lincoln, NE | ACTION
 - H1: Sewer & Water Line Repair | Sewer & Water Line Repair
-- tel: links: tel:+14027994969, tel:402-799-4969
+- tel: links: tel:+14025760708, tel:402-576-0708
 - Words: 464
 
 ---
@@ -13,7 +13,7 @@ YOUR SEWER & WATER EXPERTS
 Protecting Your Home's Underground Sewer & Water Lines
 ACTION Plumbing, Heating, AC, and Electrical provides dependable sewer and water line services for homeowners throughout Lincoln and the surrounding communities. From underground water and sewer line repairs to trenching, excavation, and backflow prevention, our experienced team delivers dependable solutions that help keep your home operating safely and efficiently.
 Whether you're dealing with an unexpected sewer backup, a slow-draining water line, or planning ahead for aging infrastructure, ACTION has the expertise and equipment to get the job done right—including our own trenching and excavation equipment, so we're never waiting on outside contractors.
-Request service today for a free estimate or call our office at 402-799-4969.
+Request service today for a free estimate or call our office at 402-576-0708.
 Sewer Line Repair
 A damaged or blocked sewer line can quickly disrupt your home and lead to costly water damage. ACTION provides reliable sewer line repairs to restore service while minimizing disruption to your yard and property.
 Water Line Repair & Replacement
