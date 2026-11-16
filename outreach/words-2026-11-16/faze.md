@@ -19,7 +19,7 @@ People say Faze guides them through the insurance claim after a storm.
 >
 > — Karli R.
 
-Your homepage opens with "Indiana | Ohio Roofing, Siding & Remodeling Contractor." Nothing in that headline says Fort Wayne, and nothing on the page says in your own words that you handle the claim.
+Your homepage opens with "Indiana | Ohio Roofing, Siding & Remodeling Contractor." It never says Fort Wayne, or in your own words that you handle the claim.
 
 So the demo opens with Roofing Contractor in Fort Wayne, IN, and gives roof replacement and siding a page each.
 
@@ -30,9 +30,9 @@ So the demo opens with Roofing Contractor in Fort Wayne, IN, and gives roof repl
 *Why it matters:* This is what Google reads to learn who you are.
 
 **Current site problem**
-- The headline names two states and never says Fort Wayne, so Google and a homeowner nearby can't tell where you work.
-- Insurance help is one of the things customers write about most, but the page only hints at it in a few quotes, so a homeowner with storm damage has no reason to call you first.
-- The rating and review count on the page don't match what Google shows, so a careful visitor wonders which one is right.
+- The headline names two states, not Fort Wayne, so Google and nearby homeowners can't tell where you work.
+- Insurance help is what customers write about most, but the page only hints at it in quotes, so a storm-damaged homeowner has no reason to call you first.
+- The rating and review count on the page don't match Google's, so a careful visitor wonders which is right.
 
 **What the demo fixes**
 - A headline that says Roofing Contractor in Fort Wayne, IN.
@@ -47,14 +47,14 @@ Google and AI tools can only repeat what's written down. We get every service, c
 *Why it matters:* It's the job most of your reviews are about.
 
 **Current site problem**
-- The page is called "Roofing Services" and never says Fort Wayne, so Google reads it as a general page.
-- Seven roof types get two lines each, with nothing on what a replacement involves, so a customer can't tell what a quote should cover.
-- Insurance help appears only in customer quotes at the bottom, so the page never says you offer it.
+- The page is called "Roofing Services" with no Fort Wayne, so Google reads it as a general page.
+- Seven roof types get two lines each and nothing on what a replacement involves, so a customer can't judge a quote.
+- Insurance help appears only in quotes at the bottom, so the page never says you offer it.
 
 **What the demo fixes**
 - A headline that says Roof Replacement in Fort Wayne, IN.
-- What comes off, what goes on and what a written estimate should spell out, in plain words.
-- Storm damage and the insurance claim, with a customer's own words beside it.
+- What comes off, what goes on and what an estimate should spell out, in plain words.
+- Storm damage and the insurance claim, with a customer's words beside it.
 
 **A full build would also add**
 Pages planned from what Google actually shows for each search, so every page targets something people really look for.
@@ -65,8 +65,8 @@ Pages planned from what Google actually shows for each search, so every page tar
 
 **Current site problem**
 - The headline, "Trusted Siding Company for Repair & installation," never says Fort Wayne.
-- Four siding types get two lines each, so a customer can't compare them.
-- The metal-framed house you re-sided is on your blog but not on the siding page, so a visitor never sees proof that you handle odd houses.
+- Four siding types get two lines each, so customers can't compare them.
+- The metal-framed house you re-sided is on your blog, not the siding page, so visitors never see proof you handle odd houses.
 
 **What the demo fixes**
 - A headline that says Siding Replacement in Fort Wayne, IN.
@@ -81,9 +81,9 @@ Every page set up behind the scenes so Google and AI tools like ChatGPT know exa
 *Why it matters:* It's where a homeowner with storm damage decides to call.
 
 **Current site problem**
-- Your Fort Wayne roofing page's call button dials (260) 238-8381, not the number on the rest of the site, so a customer who taps it may reach a different line.
-- The page gives no towns, so a customer can't tell whether you cover their street.
-- Nothing says what to have ready or what happens after the call, so a first-time caller hesitates.
+- Your Fort Wayne roofing page's call button dials (260) 238-8381, not the site's main number, so a customer who taps it may reach a different line.
+- The page names no towns, so a customer can't tell if you cover their street.
+- Nothing says what to have ready or what happens next, so a first-time caller hesitates.
 
 **What the demo fixes**
 - One number, (260) 226-8800, first.
@@ -121,7 +121,7 @@ Call and form tracking that shows which pages and towns your leads come from.
 
 **What we'd confirm with you**
 
-On a short onboarding call, we'd confirm 4 things.
+On a short onboarding call, we'd confirm four things.
 
 - Your homepage says "Indiana | Ohio" and lists towns in both states, while your service-area page names only Indiana towns. Which towns do you serve?
 - Your homepage says you're open Monday to Friday, 9 to 5, and your Fort Wayne roofing page says "Open 24 hours." Which is right?
@@ -136,7 +136,7 @@ Book a call and we'll walk you through this demo.
 
 ## Home — Roofing Contractor in Fort Wayne, IN — Faze Construction
 
-We replace and repair roofs and install siding for homeowners in Fort Wayne and the Indiana towns around it. When a storm did the damage, we help with the insurance claim. Call (260) 226-8800 to set up your inspection.
+We replace and repair roofs and install siding for homeowners in Fort Wayne and the Indiana towns around it. Call (260) 226-8800 to set up your inspection.
 
 **Buttons:** Call (260) 226-8800 · Ask a Question
 
@@ -158,17 +158,17 @@ We install vinyl, fiber cement, composite and metal siding, and we repair siding
 
 Every job starts with a free inspection of your roof or siding. After we've looked at your actual house, you get a detailed estimate. One homeowner who had just bought a house called for an evaluation and was told the roof still had 8 to 10 years left.
 
-### Storm Damage and Insurance Claims
+### Storm Damage and Your Claim
 
-After hail or high wind, we inspect for free and help with the insurance claim. Your insurance company sends an adjuster, the person who inspects the damage and decides what the claim pays. We take care of the documents your insurer needs to process the claim. Your deductible, the amount you pay before coverage starts, is set by your policy.
+After hail or high wind, we inspect for free and take care of the documents your insurer needs. The company sends an adjuster, the person who inspects the damage and decides what the claim pays. Your deductible, the amount you pay before coverage starts, is set by your policy.
 
 > They found damage I honestly wouldn’t have noticed myself and took the time to explain everything to me.
 >
 > — Lauren M.
 
-### Credentials and Warranty
+### Who We Are
 
-We're locally owned and operated. We're recognized for an A+ rating by the Better Business Bureau, a nonprofit that publishes ratings of businesses. Our warranty covers the work we do, from the nails we use to the final coat of paint. Whoever you hire, ask which parts of a job a warranty covers, for how long, and who honors it.
+We're locally owned and operated, and our warranty covers the work we do, from the nails we use to the final coat of paint. Whoever you hire, ask what a warranty covers, for how long, and who honors it.
 
 ### Financing
 
@@ -192,7 +192,7 @@ Fort Wayne has both. We work on historic homes in West Central and new builds in
 
 ### Questions Before You Call
 
-**What should I do right after a storm?** Photograph the damage from the ground and call before anyone goes up on the roof. Many insurance policies have a deadline for filing a claim, so it's worth asking about yours early.
+**What should I do right after a storm?** Photograph the damage from the ground and call before anyone goes up on the roof. Many policies have a filing deadline, so ask about yours early.
 
 **What time of year is best for a roof replacement?** Roofs can be replaced all year. Many homeowners pick spring or fall for milder weather, and winter can sometimes mean quicker scheduling.
 
@@ -258,7 +258,7 @@ Most roof replacements take one to three days, longer for a large or complicated
 
 ### Storm Damage and Your Roof Claim
 
-After hail or high wind, a roof can have damage you can't see from the ground, which is why the free inspection comes first. If you file a claim, your insurer's adjuster, the person who inspects the damage, usually visits too, and we set up the job around that visit. Your insurance company, not the roofer, decides what a claim covers, so no contractor can promise approval.
+After hail or high wind, a roof can have damage you can't see from the ground, which is why the free inspection comes first. If you file a claim, your insurer's adjuster, the person who inspects the damage, usually visits too, and we set up the job around that visit. The insurer, not the roofer, decides what a claim covers, so no contractor can promise approval.
 
 Customers often describe the same order: an inspection, the adjuster's visit, the insurer's approval, then a date on the schedule.
 
