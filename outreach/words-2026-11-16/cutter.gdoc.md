@@ -413,11 +413,11 @@ Call 319-900-5497 and we'll set up a time.
 
 **Word counts** (script count, ignoring Markdown marks; "without quotes" excludes blockquotes, buttons and the strip)
 
-- Strategy page: 1085 without quotes, 1107 with.
-- Home: 680 without quotes, 781 with.
-- Concrete: 750 without quotes, 861 with.
-- Decks: 798 without quotes, 872 with.
-- Contact: 264 without quotes, 299 with.
+- Strategy page: 1052 without quotes, 1074 with.
+- Home: 639 without quotes, 740 with.
+- Concrete: 726 without quotes, 837 with.
+- Decks: 786 without quotes, 860 with.
+- Contact: 256 without quotes, 291 with.
 
 **Credentials and sources** (none confirmed on a certifier's own site; each is the business's claim, stated as theirs)
 
