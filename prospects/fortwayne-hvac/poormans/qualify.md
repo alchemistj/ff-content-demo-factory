@@ -16,3 +16,6 @@ Verdict: PASS.
 Likely money services: Residential furnace and AC repair/replacement; AC and furnace maintenance agreements.
 
 Notes: Also has a commercial section (chillers, controls). Keep demo scope to residential.
+
+## FLAGGED 2026-11-16: not written
+Site returns 403 (Cloudflare) to the script here and on a GitHub runner (site-data branch). Apify rung not available in this session. Coverage INCOMPLETE, so not written.
