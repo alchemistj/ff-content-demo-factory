@@ -172,7 +172,7 @@ Evansville summers are hot and humid, and winters often drop below freezing for 
 
 We're certified dealers for Ruud and American Standard, which generally means the manufacturer has authorized us to sell, install and service its systems. We also repair all major brands and are certified to install most major manufacturers, so you aren't limited to one label.
 
-Instead of pushing a single brand, we match the equipment to your home, your budget and what you want from it over the long run. Furnace replacement estimates are free.
+Instead of pushing a single brand, we match the equipment to your home, your budget and what you want from it over the long run.
 
 > Best product, best price, timeliness, best installation. I eventually quit taking estimates
 >
@@ -193,7 +193,7 @@ Ice storms and summer thunderstorms are often the cause of long outages in this 
 
 ### For Businesses and Property Managers
 
-Commercial systems don't only fail during business hours, so our emergency line is answered 24/7, nights and weekends included. For businesses we service rooftop units, handle commercial heating and write up a report after each maintenance visit. Maintenance agreements cover seasonal inspections of every unit, filter changes, coil cleaning and refrigerant and electrical checks, with priority scheduling when something goes wrong.
+Commercial systems don't only fail during business hours, so the same emergency line covers them. For businesses we service rooftop units, handle commercial heating and write up a report after each maintenance visit. Maintenance agreements cover seasonal inspections of every unit, filter changes, coil cleaning and refrigerant and electrical checks, with priority scheduling when something goes wrong.
 
 If you manage several properties, we can put all of them on one maintenance schedule with a single point of contact. For new construction and tenant build-outs we work from plans with general contractors and developers, and bringing us in early lets us help specify equipment before the design is locked.
 
@@ -211,7 +211,7 @@ A repair price depends on the failed part and the labor. A replacement price dep
 
 ### Questions Before You Call
 
-**What if my system quits at night?** Call (812) 589-9338. We offer 24/7 emergency service, including nights and weekends.
+**What if my system quits at night?** Call (812) 589-9338, any hour, and a technician can be headed your way.
 
 **How fast can you get here?** Usually within a day, and often the same day.
 
