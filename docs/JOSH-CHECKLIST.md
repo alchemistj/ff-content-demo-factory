@@ -150,6 +150,24 @@ Origin note: most commit messages in #41 to #64 say only what changed, not why. 
 
 63. **Competitor and audit claims are backed.** PASS if "We checked the top five Wichita roofers, and none describes…" is supported by audit.md, and every button and link on the current site was clicked before one is called broken. [#58; #61; DoD 2.12] Pages: strategy.
 
+77. **Strategy page is in Josh's voice; business pages stay in the owner's voice.** PASS if the strategy page reads as Josh talking to the owner (voice guide: fluid-frame-marketing JOSH-VOICE.md and the ff2 guides; JOSH-VOICE.md is not yet on this repo's main) and the home, service and contact pages stay in the owner's voice. FAIL on a strategy page in owner voice or report-speak. [Josh, CT strategy review 11/15] Pages: strategy.
+
+78. **The proof block is untouched template content.** PASS if the SRA Maps before/after plus stats block is word-for-word the fixed template. Writers never rewrite it. [Josh, CT strategy review 11/15] Pages: strategy.
+
+79. **Jargon is explained in plain words the first time it appears.** PASS if each technical term is explained at first use (e.g. for a 404: the website links to pages that no longer exist, a bad signal to Google and a terrible one for a customer who clicks). FAIL on a bare "404", "schema" or similar. [Josh, CT strategy review 11/15] Pages: strategy.
+
+80. **"SEO title" and "H1" are never split for an owner.** PASS if they are merged into one plain point: the homepage tells Google your name, not what you do or where. If the browser tab title comes up at all it is called the "homepage browser tab title" and should target the main search phrase. FAIL on "SEO title" or "H1" as separate problems. [Josh, CT strategy review 11/15] Pages: strategy.
+
+81. **Keyword stuffing is named for what it is.** PASS if the card calls it an outdated practice Google ignores at best, and says plainly that the fix removes it. FAIL if it is presented as a ranking tactic or left unnamed. [Josh, CT strategy review 11/15] Pages: strategy.
+
+82. **The reviews bridge to the page plan.** PASS if there is a line carrying the reader from the reviews to the page cards, e.g. "...which is what Google needs from your homepage. More on that below." [Josh, CT strategy review 11/15] Pages: strategy.
+
+83. **Every card has three problems and three matching fixes, each verified.** PASS if each page card lists three problems and three matching fixes, each problem is verified on the page it is listed under, and the demo actually fixes what the card claims. FAIL on a fix the demo page does not contain. [Josh, CT strategy review 11/15] Pages: strategy.
+
+84. **Only the standard full-build lines, and the scope is truthful.** PASS if the demo is described as "the first five pages" and the fixed template line reads "We built {name} the first five pages of that kind of website. More on that below." (template change pending on the next build PR). FAIL on any claim of a full site. [Josh, CT strategy review 11/15] Pages: strategy.
+
+85. **"Why it matters" lines are true.** PASS if every "Why it matters" line is supportable. FAIL on unsupported claims such as "people call the first company they reach". [Josh, CT strategy review 11/15] Pages: strategy.
+
 ## H. Layout and mobile
 
 64. **Hero and bars.** PASS if both hero buttons are on the first screen at 1440x900 and 390x844, the hero is at most 850px tall with at most 56px empty below the text, the text/book bar is mobile only, the header is one row at most 65px at 390, and the way-back bar is full width and at least 44px tall. [DoD 1.3 to 1.5, 2.2, 2.4] Pages: all.
