@@ -14,96 +14,86 @@
 
 ### Why we built this site
 
-Your Google reviews keep describing the same visit. Dusty comes out, looks at the roof and explains it, and nobody feels pushed into work they didn't need. One reviewer got "honest recommendations". Another says that from the first call, "they responded immediately".
+Your Google reviews keep describing the same visit. Dusty comes out, looks at the roof and explains it, and nobody feels pushed into work they didn't need.
 
-Your current site says "HONESTY – INTEGRITY – EDUCATION" in capital letters and never shows an example. Your promise to tell a homeowner whether an insurance claim is even worth filing sits near the bottom of one long page that also holds your other four services.
+Your site says "HONESTY – INTEGRITY – EDUCATION" and never shows an example.
 
-So we led with what your reviews show. The word honest is easy to print. A roof looked at, a straight answer and an owner who picks up the phone is what it looks like. The home page opens on that, and every page after it follows from it. We built the home page, roof replacement, storm damage and contact, because those are the jobs where a homeowner most needs someone to explain what is going on.
+So we led with what your reviews show: a roof looked at, a straight answer, and an owner who picks up the phone. We built the home page, roof replacement, storm damage and contact, because those are the jobs where a homeowner most needs someone to explain what is going on.
 
 ### Page by page
 
 **Home**
 
 - **Current site problem:**
-  - The page has no headline. The words in your browser tab say "Roofing Contractor" and "Lincoln, NE", but the page itself opens on a warranty line, so Google has less to go on than it should.
-  - Your five services appear as five single words in a list, so a visitor can't tell what you do for each one.
-  - Not one of your Google reviews appears on the site, and Dusty is named once, in a single paragraph. A visitor deciding whether to call never reads what your customers say.
+  - The page has no headline. Your browser tab says "Roofing Contractor" and "Lincoln, NE", but the page opens on a warranty line, so Google has less to go on.
+  - Your five services are single words in a list.
+  - None of your Google reviews appear on the site, and Dusty is named once.
 - **What the demo fixes:**
-  - A headline at the top that says "Roofing Contractor in Lincoln, NE — Sandhill Roofing", the words people type into Google.
-  - A short section on each of your five services, in plain sentences.
-  - Your reviews, word for word, placed beside the claims they back up, and Dusty named as your owner.
-- **Why it matters:** The top of the home page is the first place Google and a visitor look to decide what your business is.
-- **A full build would also add:** Every page set up behind the scenes so Google and AI tools like ChatGPT know exactly what you do, where you work, and what your customers say.
+  - A headline reading "Roofing Contractor in Lincoln, NE — Sandhill Roofing".
+  - A short section on each of your five services.
+  - Your reviews, word for word, beside the claims they back up.
+- **Why it matters:** The top of the home page is where Google and a visitor decide what your business is.
+- **A full build would also add:** Google and AI tools can only repeat what's written down. We get every service, credential and what makes you different out of your head and onto your site and Google profile, so they all tell the same story.
 
 **Roof replacement**
 
 - **Current site problem:**
-  - Roofing is the top section of one long services page shared with your other four services, so no page exists for "roof replacement in Lincoln".
-  - The main heading over each section of that page is your phone number, not what the section covers, so Google has no headline to read for roofing.
-  - The "When To Replace Your Roof" heading and its list appear three times on the page, and the roof materials paragraph appears twice. Visitors and Google read the same lines again and again.
+  - Roofing is one section of a services page shared with four other services, so no page exists for "roof replacement in Lincoln".
+  - The heading over each section of that page is your phone number.
+  - "When To Replace Your Roof" appears three times on the page, and the materials paragraph twice.
 - **What the demo fixes:**
-  - A page of its own with the headline "Roof Replacement in Lincoln, NE — Sandhill Roofing".
-  - Headings that say what each section covers: whether you need a new roof, materials, choosing, clean-up and the warranty.
-  - Each point said once, with your materials, your samples and your closing-date jobs added from what your reviews show.
-- **Why it matters:** Someone searching for roof replacement in Lincoln can only land on a page that is about roof replacement.
+  - A page of its own: "Roof Replacement in Lincoln, NE — Sandhill Roofing".
+  - Each point said once, with materials, samples and closing-date jobs added from your reviews.
+- **Why it matters:** Someone searching for roof replacement in Lincoln can only land on a page about it.
 - **A full build would also add:** Pages planned from what Google actually shows for each search, so every page targets something people really look for.
 
 **Storm damage**
 
 - **Current site problem:**
-  - Storm damage is also a section of that one services page, so there is no page for "storm damage repair in Lincoln".
-  - Your most unusual line, that you will tell a homeowner whether to file a claim at all, sits in a dense paragraph that ends on a legal disclaimer.
-  - Ten kinds of repair, from emergency tarping to water damage restoration, are listed as bare words with no sentence about any of them. A homeowner can't see what you'd do for them.
+  - Storm damage is another section of that same page, so no page exists for "storm damage repair in Lincoln".
+  - Your line that you'll tell a homeowner whether to file a claim at all sits in a dense paragraph that ends on a legal disclaimer.
+  - Ten repairs are listed as bare words, so a homeowner can't see what you'd do for them.
 - **What the demo fixes:**
-  - A page of its own with the headline "Storm Damage Repair in Lincoln, NE — Sandhill Roofing".
-  - A section titled "Should you file a claim?" that says it plainly, next to what we can't promise.
-  - A sentence for each repair you list, using only what your site says.
-- **Why it matters:** A homeowner with storm damage is also dealing with an insurance company, so the page they land on has to answer both.
+  - A page of its own: "Storm Damage Repair in Lincoln, NE — Sandhill Roofing".
+  - A "Should you file a claim?" section, next to what you can't promise.
+  - A sentence for each repair, using only what your site says.
+- **Why it matters:** A homeowner with storm damage is also dealing with an insurance company.
 - **A full build would also add:** A check of what your competitors offer, so services you didn’t think to mention still get their own pages.
 
 **Contact**
 
 - **Current site problem:**
-  - Both forms require a street address, plus a required "I'm not a robot" box, before a homeowner with a leak can send a message.
-  - On a computer, your phone number on the home and contact pages is plain text, not a tap-to-call link, and your email address is not a link on any page.
-  - The contact page has no headline and doesn't say where you work. "Serving Eastern Nebraska" appears only on the home page.
+  - Both forms require a street address and an "I'm not a robot" box before anyone can send a message.
+  - On a computer, your phone number is plain text, not tap-to-call, and your email is not a link anywhere.
+  - The contact page has no headline and doesn't say where you work.
 - **What the demo fixes:**
-  - Your phone number and email are links on every page.
-  - A headline, your hours and your service area, all on the contact page.
-  - A short list of what to tell us, so the first call goes faster. No street address is asked for.
-- **Why it matters:** Every extra step between a homeowner and your phone is a chance for them to call someone else.
+  - Phone and email are links on every page.
+  - A headline, your hours and your service area.
+  - A short list of what to tell us. No street address is asked for.
+- **Why it matters:** Every extra step is a chance for a homeowner to call someone else.
 - **A full build would also add:** Call and form tracking that shows which pages and towns your leads come from.
-
-### What's working today
-
-- Your phone number, email address and hours are the same on every page.
-- The browser tab on each page already says "Lincoln, NE" and names what you do.
-- Every menu link and the "Contact Us Today!" button open a real page.
-
-### What needs work today
-
-- No headline on your home, contact or quote pages, and a phone number as the headline on the services page.
-- Five services share one page, so none can show up in a search on its own.
-- No reviews and no photo of your owner on the site.
-- One link on the services page goes to a misspelled address that does not open.
 
 ### What a full build includes
 
-**Gets you found:** We start by pulling every service you offer, and what makes you different, out of your head and onto the site. Every service on your website and your Google profile, telling the same story. Each service gets its own page or shares one, based on what Google shows for that search. Built so Google and AI tools can read every page.
+**Gets you found:** Every service and what makes you different, out of your head and onto the site. Every service on your website and Google profile, telling the same story. Built so Google and AI tools can read every page.
 
-**Earns their trust:** Reviews on every page, matched to the service. About and owner pages that show who does the work, which build authority with Google and AI tools and trust with your customers. A trust bar that shows what makes you different.
+**Earns their trust:** Reviews on every page, matched to the service. About and owner pages that show who does the work, which build authority with Google and AI and trust with customers.
 
-**Turns visitors into calls:** About 80% of visitors are on a phone. That is why we build for a mobile speed score of 91 or higher on Google's test, in Google's "good" range, so phone visitors don't give up and leave. A call-and-book bar that stays on screen. A contact form that blocks spam.
+**Turns visitors into calls:** About 80% of visitors are on a phone, which is why we build for a mobile speed score of 91 or higher. A call-and-book bar that stays on screen. A contact form that blocks spam.
 
-**Keeps working after launch:** Monitoring that Google can see and index your pages. Uptime checks. Hourly speed monitoring that keeps your site fast for visitors on phones. Updated when Google and AI tools change how they read websites.
+**Keeps working after launch:**
+- Mobile page speed tested every 30 minutes, with a re-check within 5 minutes if a page slows down.
+- Your site watched around the clock for downtime.
+- Google indexing and your Google visibility checked every day.
+- Menus, contact links and forms tested in a real browser twice a day.
 
-This demo is the first five pages: the strategy page, home, roof replacement, storm damage and contact.
+This demo is the first five pages: strategy, home, roof replacement, storm damage and contact.
 
 ### What we'd confirm with you
 
-- **What is your street address?** Your site shows none. Your Google listing shows 8120 Trendwood Dr, Lincoln, NE 68506. Is that your shop, or a home you'd rather not publish? We left it off the demo.
-- **What does "lifetime" cover?** Your home page says "Lifetime Workmanship Warranty on Roofing, Siding, Gutters". Your services page says only "a workmanship warranty" for gutters, windows and doors. Which jobs carry the lifetime warranty, and what does it cover?
-- **Which brands, and what is "Fiber Smith"?** Your home page has a "Trusted Brands and Partners" heading with no names under it. Your services page names Marvin, Hayfield, Provia and Bayer Built for windows and doors, and lists "Fiber Smith" among siding types. Which are current, and which should we name? We would settle these with you on the setup call.
+- **What is your street address?** Your site shows none. Your Google listing shows 8120 Trendwood Dr, Lincoln, NE 68506. Is that your shop or a home? We left it off.
+- **What does "lifetime" cover?** Your home page says "Lifetime Workmanship Warranty on Roofing, Siding, Gutters". Your services page says only "a workmanship warranty" for gutters, windows and doors. Which jobs carry it?
+- **Which brands?** Your home page has a "Trusted Brands and Partners" heading with no names. Your services page names Marvin, Hayfield, Provia and Bayer Built, and lists "Fiber Smith" siding. Which are current? We'd settle these on the setup call.
 
 ### Want a website like this for your business?
 
@@ -340,4 +330,48 @@ If you'd rather talk, call [(402) 890-6460](tel:+14028906460). Our owner, Dusty 
 
 ## Notes for Ruth (not page copy)
 
-COUNTS_PLACEHOLDER
+**Word counts (page text including hero and trust bar; quotes counted separately).**
+
+| Page | Without quotes | Quotes | With quotes |
+|---|---|---|---|
+| Strategy | 984 | 0 | 984 (limit 1,000) |
+| Home | 665 | 203 | 868 |
+| Roof Replacement | 434 | 171 | 605 |
+| Storm Damage | 361 | 105 | 466 |
+| Contact | 204 | 32 | 236 |
+
+**Short pages, not padded.**
+- Roof Replacement is about 95 words under 700 with quotes, and Storm Damage about 235 under. The site gives about 400 words on roofing and 350 on storm damage. The job process, inspection steps, timing and warranty terms are not on the site. Both need owner input (see questions below).
+- Contact is about 15 under 250 with quotes. Facts are phone, email, hours and area only; no address is confirmed.
+- Roof Replacement and Storm Damage are under 10 sections. Material does not support more without repeating.
+
+**Credentials.** None claimed on the site or anywhere else, so none are defined. Marvin, Hayfield, Provia and Bayer Built are products the site says it offers, named once on home as "brands such as", not as credentials. Malarkey appears only in a reviewer's words and is not used.
+
+**Inventory items and where they went.**
+- Roofing: Roof Replacement page. Repair is covered in its "Does the Roof Need Replacing?" section.
+- Storm Damage: its own page. Insurance claims are on Storm Damage only, so the fact is said once.
+- Siding, Gutters, Windows and Doors: home services section, one block each. No page of their own (two money services only).
+- Honesty, integrity, education and family-owned: home. "Top Down, A Better Experience": home.
+- "Should I Turn in a Claim?": Storm Damage. Siding color and painting it ourselves: home. Gutter colors, soffit and fascia, custom metal fabrication: home.
+- Senior and military/government discounts: home, once, no terms. Free quote: Contact, once (plus the button label).
+- Lifetime workmanship warranty on roofing: Roof Replacement page (trust bars repeat it). Gutter and window/door workmanship warranties: home.
+- Left out: the "When To Replace" list of 12 signs (generic signs list rule; three signs are used in prose). "Types of Roofs" list is used in prose. "Fiber Smith" siding (unknown product, may be a typo). Gutter benefits list (generic). "Guarantee that by the end of our job, you will be happy" (stronger claim, guarantee line once per site, terms unknown). "Ten years" and any founding year (no confirmed year). The street address (conflict). Commercial work: only the site's one-line claim, used as stated.
+- Review themes: honest/no pressure (mike B., Alyssa T.), fast response (Ryan R.), owner answers personally (Joe B.), clean job site (Jackie M.; one 1-star review about a mess exists, so the copy says "clean-up is part of the job", never "always"), insurance help (William W., Bryan B.), options and samples (Monica R.). Also used: Gary L. (door), Don R. (multi-service), Steve G. (closing deadline), Tim L. (fix next morning), Justin E. (ridge vent), Jana V. (storm), Scott H. (leak). Each quote appears once.
+- Review quotes not used on purpose: James M. and Jed S. (claim outcomes, which the site says it can't guarantee), Dennis E. and Ben C. (compare Sandhill with other contractors), Nicole S. and Jena A. (insurance discount letters, outcome), Bornschlegl F. (typo "extemely").
+
+**Claims taken from the site that need the owner's word.**
+- "Your rates will be raised with every claim you file."
+- "Our claims managers are highly trained and qualified."
+- "We tell you what needs doing and what doesn't." This is how the reviews describe every inspection; confirm it is how every inspection goes.
+- Gutter and window/door workmanship warranty (site says "a workmanship warranty", no "lifetime"), and whether "lifetime" also covers siding and gutters as home.md says.
+- "We replace roofs for people who needed to close on time, and plan the work around your date" (backed by Steve G., Roma A., Lori W.; no site claim).
+- "If something needs attention after we leave, call us and we'll come back" (backed by Tim L., James F., Nicole S.).
+- "We find samples so you can see them in person" (backed by Monica R.).
+- Photos of damage help (advice only; the site's form takes file uploads).
+
+**Facts to verify.** Street address (Google shows 8120 Trendwood Dr, Lincoln, NE 68506; site shows none; may be a home). Whether Dusty Rieck is the only owner (named as owner on the site's About paragraph). Discount terms. "Hayfield" spelling and the Fiber Smith question. Hours and phone agree on all pages. Review count and ratings are not shown anywhere.
+
+**Facts not used.** Hours beyond Monday to Saturday in the trust bar; no after-hours or Sunday service is claimed, even though emergency tarping is a listed service.
+
+**Rules applied.** Quotes are word for word with whitespace normalized and checked against reviews.json. No two quotes sit back to back on any page. Homepage card line on the strategy page is Josh's exact wording.
+

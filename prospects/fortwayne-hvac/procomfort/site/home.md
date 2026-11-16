@@ -1,65 +1,39 @@
 # https://www.myprocomfort.com
 
-- Fetched: 2026-11-16T03:43:07.607Z (rendered in a real browser)
+- Fetched: 2026-11-16T03:46:33.549Z (rendered in a real browser)
 - HTTP: 200
 - Title: Pro Comfort Heating & Cooling LLC | Indiana
 - H1: Your #1 Heating & Cooling Company In Fort Wayne, IN Area
 - tel: links: tel:+1260-310-7721, tel: +12603107721
-- Words: 1296
+- Words: 1238
 
 ---
 
 Skip to main content
-HVAC Services
-Air Conditioning
-AC Installation
-AC Repair
-AC Maintenance
-Heating
-Furnace Installation
-Furnace Repair
-Furnace Maintenance
-Thermostat
-Thermostat Installation and Replacement
-Thermostat Repair
-Thermostat Maintenance
-Ducts and Vents
-Air Duct and Vents Installation Services
-Air Duct and Vents Repair Services
-Air Duct and Vents Maintenance Services
-Indoor Air Quality
-Indoor Air Quality Testing
-Air Quality Cleaning System Installation Services
-Air Filters
-Ductless Services
-Ductless Heating and Cooling Installation
-Ductless Heating and Cooling Repair
-Ductless Heating and Cooling Maintenance
-Mini-Split Installation and Repair Services
-Other Services
-Sheet Metal Fabrication Services
-Light Commercial Services
-The Green Initiatives
-About
-Client Testimonials
-Photo Gallery
-Specials
-Financing
-Service Areas
-Fort Wayne, IN
-New Haven, IN
-Huntington, IN
-Auburn, IN
-Columbia City, IN
-Learn More
-Blog
-HVAC FAQs
-Heating FAQs
-Videos
-Contact
-Shop
-Book Online
-Pay Online
+Menu
+AC INSTALLATION
+AC REPAIR
+AC MAINTENANCE
+FURNACE INSTALLATION
+FURNACE REPAIR
+FURNACE MAINTENANCE
+THERMOSTAT INSTALLATION AND REPLACEMENT
+THERMOSTAT REPAIR
+THERMOSTAT MAINTENANCE
+AIR DUCT AND VENTS INSTALLATION SERVICES
+AIR DUCT AND VENTS REPAIR SERVICES
+AIR DUCT AND VENTS MAINTENANCE SERVICES
+INDOOR AIR QUALITY TESTING
+AIR QUALITY CLEANING SYSTEM INSTALLATION SERVICES
+AIR FILTERS
+DUCTLESS HEATING AND COOLING INSTALLATION
+DUCTLESS HEATING AND COOLING REPAIR
+DUCTLESS HEATING AND COOLING MAINTENANCE
+Save 20% Off Repairs & Maintenance for Our Maintenance Plan Customers
+Save More!Become a Member!
+SEE SPECIALS
+CONTACT NOW
+or
 Your #1 Heating & Cooling Company In Fort Wayne, IN Area
 Pro Comfort Heating & Cooling is a leader in the heating and cooling industry. We are committed to excellent customer service and work with each customer to understand their needs.
 Our goal is to provide you with a first-class heating and cooling company and excellent service. When you call Pro Comfort Heating & Cooling, you will receive top-notch service from our highly trained staff. Large or small, Pro Comfort Heating & Cooling is here for all your heating, air conditioning, and ventilation needs.
@@ -77,13 +51,11 @@ Call Us at
 Ft. Wayne (260) 310-7721
 for a Quote or Email Us Today!
 For 6 years, we have provided our customers with the highest quality service possible. We are committed to working with our clients to provide the equipment they need and maintain its proper operation level through our maintenance programs and regular system checks.
-Your Name(Required)
+YOUR NAME(REQUIRED)
 Please provide your first and last name.
-Email Address(Required)
-Phone Number(Required)
-Message
-Email
-This field is for validation purposes and should be left unchanged.
+EMAIL ADDRESS(REQUIRED)
+PHONE NUMBER(REQUIRED)
+MESSAGE
 HVAC Repair, Maintenance, & Installation
 Pro Comfort Heating & Cooling provides you with the following services: We offer same-day service to most customers. We will service, repair, and replace all central heating and cooling equipment brands. Our staff members are qualified to explain every aspect of your system to ensure you make the best decision for your home or business.
 Air Conditioning Maintenance
@@ -131,33 +103,33 @@ November 17, 2024.
 Our service technician (John) was extremely friendly and very knowledgeable. Great experience. Very happy with service.
 REVIEW US
 We Proudly Serve the Following Cities and Surrounding Areas:
- Anderson, IN
- Auburn, IN
- Columbia City, IN
- Decatur, IN
- Fort Wayne, IN
- Leo-Cedarville, IN
- Marion, IN
- Monroeville, IN
- Muncie, IN
- New Haven, IN
+Anderson, IN
+Auburn, IN
+Columbia City, IN
+Decatur, IN
+Fort Wayne, IN
+Leo-Cedarville, IN
+Marion, IN
+Monroeville, IN
+Muncie, IN
+New Haven, IN
 Year-round Maintenance Programs To Fit Anyone’s Needs
 There’s nothing quite as frustrating as trying to turn on the heat or AC in your Anderson, IN home and discovering that it’s broken down. Our heating and air conditioning maintenance plans provide year-round inspection, cleaning, and repair services for Anderson and the northern surrounding areas. We offer competitive comprehensive maintenance services to help keep your home comfortable all year long.
 SCHEDULE SERVICE
-Fort Wayne
+FORT WAYNE
 Pro Comfort Heating & Cooling LLC
 3020 Congressional Pkwy # G,
 Fort Wayne, IN 46808
 Phone: 260-310-7721
-hours of operation:
+HOURS OF OPERATION:
 M-F 8:00 AM - 4:30PM
-License#:
+LICENSE#:
 Allen County-BD31623
 Indianapolis-HL1900005
 Anderson-111-22
 Goshen - 3885
 Peru - 2023-12
 Muncie - 93
-We Accept
+WE ACCEPT
 © 2026 Pro Comfort Heating & Cooling. All Rights Reserved. | Sitemap
 facebook

@@ -1,6 +1,6 @@
 # https://www.myprocomfort.com/heating/furnace-repair
 
-- Fetched: 2026-11-16T03:43:50.195Z (rendered in a real browser)
+- Fetched: 2026-11-16T03:46:57.129Z (rendered in a real browser)
 - HTTP: 200
 - Title: Heating Repair Services | Pro Comfort Heating & Cooling
 - H1: Furnace Repair Services

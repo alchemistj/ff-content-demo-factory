@@ -14,23 +14,21 @@ Buttons: View the Demo Site / See What Changed
 
 ### Why we built this site
 
-Matt, people write about you by name on Google. They write that the phone was answered, that a text told them the technician was on the way, and that the AC was running again within hours. That is the best reason to call an HVAC company in Lincoln, and your current site says none of it. It has no reviews on it. The first line a visitor reads is "Keeping Lincoln Comfortable Year-Round", which could be printed by any company in town.
+Matt, people write about you by name on Google. They write that the phone was answered, that a text told them the technician was on the way, and that the AC was running again within hours. Your current site says none of it and shows no reviews. Its first line, "Keeping Lincoln Comfortable Year-Round", could be printed by any company in town.
 
-We led the demo with one idea: call Matt, and you know when we're coming. Then we built the pages where your reviews are strongest: a home page, an AC repair page, an air conditioner replacement page and a contact page. Today your AC repair and replacement are one sentence each on a single services page, so nothing exists for someone searching for either one.
+We led the demo with one idea: call Matt, and you know when we're coming. Then we built the pages where your reviews are strongest: home, AC repair, air conditioner replacement and contact.
 
 ### The demo, page by page
 
 #### 1. Home
 
 **Current site problem**
-- The headline says "Keeping Lincoln Comfortable Year-Round". It never says HVAC, heating or air conditioning, so Google has no phrase to match to someone searching for an HVAC company in Lincoln.
-- The headings over your three service blurbs are mixed up. "Cooling" sits over the maintenance paragraph and "Maintenance" sits over the air conditioning paragraph, so a visitor looking for AC reads about tune-ups first.
-- There are no customer reviews and no photos anywhere on the page, so the strongest reason to call you never gets shown.
+- The headline never says HVAC, heating or air conditioning, so Google has no phrase to match to someone searching for an HVAC company in Lincoln.
+- "Cooling" sits over the maintenance paragraph and "Maintenance" over the air conditioning paragraph, so a visitor looking for AC reads about tune-ups first.
 
 **What the demo fixes**
 - The headline reads "HVAC Company in Lincoln, NE — Roettger's Heating and Cooling".
-- Every heading sits over its own text, and all seven of your services are named, with the two biggest linked to their own pages.
-- A customer's words sit right under the headline, then more reviews placed where they fit what you're saying.
+- Every heading sits over its own text, and all seven services are named.
 
 **A full build would also add**
 Google and AI tools can only repeat what's written down. We get every service, credential and what makes you different out of your head and onto your site and Google profile, so they all tell the same story.
@@ -40,14 +38,12 @@ View page
 #### 2. AC Repair
 
 **Current site problem**
-- AC repair is one sentence on your services page: "From warm air to unusual noises, we'll troubleshoot and fix your cooling issues quickly." There is no page of its own, so someone searching for AC repair in Lincoln has nothing to land on.
+- AC repair is one sentence on your services page, with no page of its own, so someone searching for AC repair in Lincoln has nothing to land on.
 - "Quickly" is the only speed your site claims. Your reviews give real times, and a visitor with a hot house can't see them.
-- The site says nothing about what happens after the call. Your reviews describe it: Matt answers, you hear from the technician before arrival, and what failed gets explained. A first-time caller can't see any of that.
 
 **What the demo fixes**
-- Its own page, with the headline "AC Repair in Lincoln, NE — Roettger's Heating and Cooling".
-- Reviews that give the actual times, an hour, the same day, placed beside the claim they prove.
-- A page that walks through the call, the heads-up before arrival and the explanation of what went wrong.
+- Its own page, headlined "AC Repair in Lincoln, NE — Roettger's Heating and Cooling".
+- Reviews that give the actual times, placed beside the claim they prove.
 
 **A full build would also add**
 Call and form tracking that shows which pages and towns your leads come from.
@@ -57,14 +53,12 @@ View page
 #### 3. Air Conditioner Replacement
 
 **Current site problem**
-- Replacement is one sentence in the cooling paragraph: "If it's time for a new system, we'll help you choose the right unit and handle a professional installation." No page exists for someone searching for air conditioner replacement in Lincoln.
-- Your repair-or-replace answer and your equipment brand are on the FAQs page, not on the services page. Someone deciding whether to replace doesn't read them where they're deciding.
-- Financing has its own page, and the services page never mentions it, so a visitor facing a replacement price doesn't see that it can be paid over time.
+- Replacement is one sentence in the cooling paragraph, so nothing exists for someone searching for air conditioner replacement in Lincoln.
+- Your repair-or-replace answer and equipment brand are on the FAQs page, not where someone decides.
 
 **What the demo fixes**
-- Its own page, with the headline "Air Conditioner Replacement in Lincoln, NE — Roettger's Heating and Cooling".
-- Your repair-or-replace answer and the Comfortmaker line sit on the page where the decision gets made.
-- Financing, with your $2,500 example, sits on the same page as the replacement.
+- Its own page, headlined "Air Conditioner Replacement in Lincoln, NE — Roettger's Heating and Cooling".
+- The repair-or-replace answer and the Comfortmaker line sit where the decision gets made.
 
 **A full build would also add**
 A check of what your competitors offer, so services you didn't think to mention still get their own pages.
@@ -74,13 +68,11 @@ View page
 #### 4. Contact
 
 **Current site problem**
-- Nothing says what to do when it's urgent. Your FAQ says you offer emergency service, but the contact page never mentions it.
-- The page is a few lines and a form. It doesn't say what happens after you send a message, so a visitor with a warm house can't tell how soon to expect an answer.
-- The page name in the browser tab is "Contact | Get Expert HVAC Support Today" and the headline is "Contact Us". Neither says Lincoln.
+- Your FAQ says you offer emergency service, but the contact page never mentions it.
+- The browser tab says "Contact | Get Expert HVAC Support Today" and the headline is "Contact Us". Neither says Lincoln.
 
 **What the demo fixes**
-- A plain "If it's urgent, please call" line with your number, right at the top.
-- A short section on what happens after you call or send a message.
+- "If it's urgent, please call" with your number, right at the top.
 - A headline that names Roettger's Heating and Cooling and Lincoln, NE.
 
 **A full build would also add**
@@ -90,13 +82,13 @@ View page
 
 ### What's already working
 
-Every page in your menu loads. Your phone number is tap-to-call at the top and bottom of every page, and nothing slides sideways on a phone.
+Every page in your menu loads, your phone number is tap-to-call at the top and bottom of every page, and nothing slides sideways on a phone.
 
-What needs work: a leftover shopping cart page that loads but isn't in your menu, "FAQs 2" as the name of your FAQ page in the browser tab, and no copyright line.
+What needs work: a leftover shopping cart page that loads but isn't in your menu, and "FAQs 2" as the name of your FAQ page in the browser tab.
 
 ### What a full build includes
 
-The demo is the first five pages. A full build covers the rest of your services too. About 80% of visitors are on a phone, which is why the 91 speed score below matters.
+The demo is the first four pages. A full build covers the rest of your services too. About 80% of visitors are on a phone, which is why the 91 speed score below matters.
 
 **Gets you found**
 - Every service on your website and your Google profile, telling the same story
@@ -121,11 +113,11 @@ The demo is the first five pages. A full build covers the rest of your services 
 
 ### What we'd confirm with you
 
-We'd go through these on the onboarding call. Each one is a place where two things we found disagree.
+We'd go through these on the onboarding call. Each is a place where two things we found disagree.
 
-1. **Brand.** Your FAQ says you install Comfortmaker equipment, and we couldn't find you in Comfortmaker's dealer finder. One customer review says you replaced their system with a Rheem. Which brands do you install, and are you a Comfortmaker dealer? We say only what your FAQ says until you tell us.
-2. **Years.** Your About text says the company was established in 2022 and also says it's backed by more than 10 years of experience. We left every year off the pages. Is the 10 years yours from before the company started, and what do you want said?
-3. **Address and hours.** Your site shows "Lincoln, NE and surrounding areas" and no street address or hours. A BBB search result lists "Roettger's Heating And Cooling, LLC" in Roca, NE. Where is the company based, what is the legal name, and when do you answer the phone?
+1. **Brand.** Your FAQ says you install Comfortmaker equipment, and we couldn't find you in Comfortmaker's dealer finder. One review says you replaced a system with a Rheem. Which brands do you install?
+2. **Years.** Your About text says the company was established in 2022 and also says it's backed by more than 10 years of experience. What do you want said?
+3. **Address and hours.** Your site shows "Lincoln, NE and surrounding areas" and no street address or hours. A BBB search result lists "Roettger's Heating And Cooling, LLC" in Roca, NE. Where are you based, and when do you answer the phone?
 
 ### Want a website like this for your business?
 
