@@ -4,11 +4,11 @@ Draft for review. Sources: the business's own site, Google reviews, facts.md. Qu
 
 ## Strategy page
 
-**Built for Thermal Services Inc**
+**Free demo site built for Thermal Services Inc**
 
-### We built Thermal Services Inc a clearer Peoria HVAC website.
+### We already did the work. Here's a Thermal Services Inc website that tells Peoria who you are and gets the phone ringing.
 
-Your site decides where you show up on Google, what AI tools say about you, and how easy you are to reach.
+Your site shapes your Google ranking, what AI says about your business, and how easy you are to reach. Here’s a demo of what yours could be.
 
 **Buttons:** View the Demo Site / See What Changed
 
@@ -20,41 +20,40 @@ During the last heat wave TSI came right out on a Sunday. ( When no other compan
 
 — Brad S.
 
-Often after hours: a Sunday, a 10 PM call. Your site buries that in a menu item: "Emergency Repair 24/7". So the demo starts with the call you get at 10 PM. It has five pages: this one, homepage, air conditioning repair, furnace repair and contact.
+Often after hours: a Sunday, a 10 PM call. Your site buries that in a small line at the very top of each page: "Emergency Repair 24/7". So the demo starts with the call you get at 10 PM. It has five pages: this one, homepage, air conditioning repair, furnace repair and contact.
 
 ### The demo, page by page
 
 **1. Homepage**
 
-  - **Current site problem:** The headline (the H1) is "Residential & Commercial HVAC in Central Illinois" and the title tag, the line Google shows in search results, says "HVAC Repair Central Illinois". Neither says Peoria.
-  - **Current site problem:** The maintenance agreement with no extra after-hours rates is two clicks from the homepage, and a night call is when the bill worries people most.
+  - **Current site problem:** The big line at the top of your homepage is "Residential & Commercial HVAC in Central Illinois" and the name in your browser tab, the line Google shows in search results, says "HVAC Repair Central Illinois". Neither says Peoria, so Google can't place you there.
+  - **Current site problem:** Your homepage never says maintenance agreement customers pay no extra after-hours rates. That's on other pages, and a night call is when the bill worries people most.
   - **What the demo fixes:** A headline that reads "HVAC Company in Peoria, IL — Thermal Services Inc", an after-hours section with a customer's own words, and the agreement terms.
   - **A full build would also add:** Google and AI tools can only repeat what's written down. We get every service, credential and what makes you different out of your head and onto your site and Google profile, so they all tell the same story.
 
 **2. Air Conditioning Repair**
 
-  - **Current site problem:** The headline is the single word "Air Conditioning", and Peoria is not in the title tag either.
+  - **Current site problem:** The headline is the single word "Air Conditioning", and Peoria is not in the browser tab name either.
   - **Current site problem:** The page says to inspect "at least once yearly", then says your team "provides thorough twice-annual maintenance". Which one?
-  - **Current site problem:** No review is on the page, and the A/C questions sit on a separate Q&A page.
-  - **What the demo fixes:** A "Peoria, IL" headline, one answer on timing (spring), four reviews and the Q&A answers.
+  - **Current site problem:** No review is on the page, even though Ben T. says his A/C was back by 10:30 after an 8 AM call, and the A/C questions sit on a separate Q&A page.
+  - **What the demo fixes:** A "Peoria, IL" headline, one answer on timing (spring), Ben T.'s morning fix and three more reviews beside the work, and the Q&A answers.
   - **A full build would also add:** Call and form tracking that shows which pages and towns your leads come from.
 
 **3. Furnace Repair**
 
-  - **Current site problem:** The headline is the single word "Heating". "Furnace" and "Peoria" are in neither it nor the title tag.
+  - **Current site problem:** The headline is the single word "Heating". "Furnace" and "Peoria" are in neither it nor the browser tab name.
   - **Current site problem:** Your repair-or-replace rule (over 20 years old, repair above 50% of a new one) gets two sentences, seven services get one each, and no review is on the page.
-  - **What the demo fixes:** A "Peoria, IL" headline, the repair-or-replace rule with room, and furnaces, heat pumps and maintenance in their own sections with five reviews.
+  - Current site problem: Nothing on the page covers a gas smell or a carbon monoxide alarm.
+  - **What the demo fixes:** A "Peoria, IL" headline, the repair-or-replace rule with room, a gas smell and carbon monoxide section that says what to do first, and furnaces, heat pumps and maintenance in their own sections with reviews beside them.
   - **A full build would also add:** A check of what your competitors offer, so services you didn’t think to mention still get their own pages.
 
 **4. Contact**
 
   - **Current site problem:** The form's one choice is "Residential" or "Commercial", and no town you serve is named, so a visitor in Mackinaw can't tell if you come to them.
-  - **What the demo fixes:** A form that asks for the service, and your towns beside the phone number.
+  - **What the demo fixes:** A form that asks for the service, and your towns on the page.
   - **A full build would also add:** Every page set up behind the scenes so Google and AI tools like ChatGPT know exactly what you do, where you work, and what your customers say.
 
 ### What a full build includes
-
-This demo is the first five pages. A full build starts by pulling every service you offer, and everything that makes you different, out of your head and onto the site, so nothing you do is left for Google or a customer to guess.
 
 **Gets you found**
 
@@ -66,13 +65,13 @@ This demo is the first five pages. A full build starts by pulling every service 
 **Earns their trust**
 
   - Reviews on every page, matched to the service
-  - About and owner pages that show who does the work
-  - A trust bar that shows what makes you different
+  - About and owner pages that build your authority with Google and AI tools, so they know who stands behind the work
+  - A strip at the top of every page showing what makes you different, so a customer sees why to pick you right away
 
 **Turns visitors into calls**
 
   - Scores 91 or higher on Google’s mobile speed test at launch, in Google’s “good” range
-  - A call-and-book bar that stays on screen
+  - A call-and-book bar that stays on screen on phones, where most of your visitors are. That's why the 91 matters: a slow page lets down the people on phones
   - A contact form that blocks spam
 
 **Keeps working after launch**
@@ -80,20 +79,20 @@ This demo is the first five pages. A full build starts by pulling every service 
   - Mobile page speed tested every 30 minutes, with a re-check within 5 minutes if a page slows down.
   - Your site watched around the clock for downtime.
   - Google indexing and your Google visibility checked every day.
-  - Menus, contact links and forms tested in a real browser twice a day.
-  - New team members, booking systems and new services, updated for you
+  - Page links, buttons and contact forms tested in a real browser twice a day.
   - Updated when Google and AI tools change how they read websites
   - You never have to know what to ask for
 
 ### What we'd confirm with you
 
-1.  **Phone number.** Your Google profile and your site's page code show (309) 699-3333, but in a browser a script swaps it for 309-324-5317. Which should customers see? We used (309) 699-3333.
-2.  **Years in business.** Your homepage says "since 2004", five pages say "over 15 years" and Maintenance says "over a decade". Which is right? We left years off.
-3.  **Inspections and weekends.** Your A/C page says "at least once yearly" and "twice-annual", and "24/7" sits beside office hours of Monday to Friday, 7:30 AM to 4:30 PM. How often should customers inspect, and who answers weekends? Is the $500 and $250 off, "Now through end of the year" with no year, still running? On our onboarding call we'd also settle the BBB, Ameren and license claims and the owner's name.
+1.  **Phone number.** Your Google profile lists (309) 699-3333, but your website's tap-to-call number is 309-324-5317. Which should customers call?
+2.  **Years in business.** Your homepage says "since 2004", five pages say "over 15 years" and Maintenance says "over a decade". Which is right?
+3.  **Weekends.** Your site says "24/7" beside office hours of Monday to Friday, 7:30 AM to 4:30 PM. Who answers nights and weekends?
+4.  Inspections. Your A/C page says "at least once yearly" and also "twice-annual". How often should customers inspect?
 
 ### Want a website like this for your business?
 
-Book a no-obligation call.
+Book a call and we'll walk you through this demo.
 
 **Button:** Book a no-obligation call
 
@@ -395,7 +394,7 @@ Call for anything urgent, or send a request and we'll take it from there.
 
 (309) 699-3333
 
-If something has stopped working, call. We take emergency calls after office hours, so don't use the form at night or on a weekend.
+If something has stopped working, call. We take emergency calls after office hours, so call rather than send a request at night or on a weekend.
 
 ### Hours and address
 
@@ -405,7 +404,7 @@ Thermal Services Inc, 2200 W Altorfer Drive, Peoria, IL 61615.
 
 ### Request an appointment
 
-Use the form for a regular visit. We do our best to respond within a few hours. Tell us your first and last name, your phone number and your email address, then choose:
+For a regular visit, send us a request and we do our best to respond within a few hours. Tell us your name, phone number and email, along with:
 
   - The service: air conditioning, heating, maintenance, a generator or something else
   - Whether it is for a home or a business
@@ -425,66 +424,4 @@ We serve homes in Peoria and the towns around it. For businesses, we work in Peo
 
 ## Notes (not page copy)
 
-**Word counts (visible words counting hero, headings, buttons;).**
-
-| **Page** | **Words with quotes** | **Words without quotes** |
-| :-: | :-: | :-: |
-| Strategy page | 999 | 974 |
-| Home | 1119 | 699 |
-| Air Conditioning Repair | 1134 | 922 |
-| Furnace Repair | 1058 | 825 |
-| Contact | 272 | 239 |
-
-Home (550+) and both service pages (700+) now clear their minimums without counting review quotes (Nov 16 correction; the table was re-tallied after the QA pass and the counts are approximate). The added length is hedged general trade knowledge in the owner's voice, not sourced business claims: what usually fails, checks before calling (thermostat, breaker, filter), gas smell and carbon monoxide safety, repair-or-replace rules of thumb (the R-22 refrigerant point, cracked heat exchangers), what a diagnosis usually involves, heat pump defrost, when a failure can wait until morning, plain-words explanations of parts such as the capacitor, inducer and heat exchanger, and short Peoria climate notes. Every business claim still traces to site/, facts.md or reviews.json. The added advice never gives an inspection frequency, so the site's conflict (once yearly vs twice-annual, strategy item 3) stays open. The furnace filter advice appears once (the Q&A). Thermal's own site claims (Ameren paperwork help, union-trained, certified and licensed, financing) are each on Home once, as their claim, with absolute wording hedged ("most makes and models").
-
-**Credentials and their sources.** All are Thermal's own site claims and none is verified. BBB is on no page. Ameren, union-trained, certified and licensed, and financing are on Home once each, as their claim, to confirm on the onboarding call.
-
-  - "Trust A+ BBB Rated Company" (site home and promotions). The BBB profile link returned HTTP 403 with a bot challenge, so no rating could be read. Needs a manual check at bbb.org.
-  - "A Proud Ameren Energy Efficiency Partner / registered Program Ally" (site home and residential). No Ameren page naming Thermal Services was found, and Ameren's ally directory could not be searched. Ameren's residential ally form says allies need the ICC Energy Efficiency Installer Certification "if applicable" (<https://cloud.ee.ameren.com/ResidentialPAapplication>); the site names none. The page says only what the site says (registered Program Ally, handles the paperwork), unverified.
-  - "Union-trained, certified, and licensed technicians" (site home), "trained and certified" for chillers and generators. No license numbers or certifying body anywhere. On Home once, as their claim.
-  - The strategy page's last confirm question covers the BBB, Ameren and license claims (trimmed to fit the 1,000-word limit; the detail stays here).
-
-**Inventory items left out of page copy, and why.**
-
-  - Ameren incentive paperwork (an unusual offer): now on Home once, as their claim; it depends on the unconfirmed Program Ally status.
-  - Promotions ($500 off complete HVAC replacement, $250 off furnace, commercial offers): no year printed, and not known to be current. Asked in strategy item 3.
-  - Financing ("outstanding financing options"): now on Home once as "financing options", without the site's word "outstanding"; still to confirm on the onboarding call.
-  - Warranty line ("ensures that your HVAC and its warranty are always protected", maintenance page): no warranty terms anywhere, so it overpromises.
-  - Years (since 2004 / over 15 years / over a decade): disputed, strategy item 2.
-  - Union-trained, certified and licensed claims: on Home once, see credentials above.
-  - Generators have no page of their own. They are in the homepage's home section (install, repair, maintenance) and the free sizing line. Boilers, geothermal, humidifiers, iWave, Pelican and air compressors are on the homepage in short form; iWave and Pelican are described in plain words, without brand names. The iWave site sentence ("eliminates hydrogen particles...") and the humidifier and purifier health claims (sinus, snoring, asthma) are left out: they are unclear or medical, and the brief says match claim strength.
-  - Commercial chiller, rooftop unit (RTU, explained in plain words), controls and air compressors: used on the homepage (commercial section) and the A/C page (chillers).
-  - The site's A/C and furnace Q&A items, the filter and boiler-noise and HVAC-noise answers: used on the two service pages. Duct cleaning ("No, we do not clean air ducts") is left out: it is an exclusion and adds nothing to a money page.
-  - Review themes: fast response (Ben T., LaVonne S., Troy T., Chris J.), honest and no upsell (Ben T., Ian B., Joe M.), named technicians (Luke reviews on home, Maggie D. and Melissa G.; Heath in Chris J.; Jeff in Ben T. and Mohamed K.; Patrick in Jim B.), clean work (Drew B., Troy T.), explains the problem (Ian B., Jim B.), same customers for years (Ryan J.). All used.
-  - The same fast-response theme also rests on Reflex's review, left out (see reviews below).
-  - Brad S.'s Sunday review ("when no other company we called would pick up the phone") is on the strategy page only. It makes a claim about other companies, so it is not on any business page.
-  - Named technicians' roles are unknown. Names appear only inside review quotes.
-
-**Reviews not quoted, and why.**
-
-  - Reflex: caption would be "Google review" (username). His quote's last clause says "most company's will say you need a new unit", a claim about other companies, and the review is one unpunctuated sentence that can't be trimmed to whole sentences.
-  - Lonny H. (4 stars) and William O. (2 stars): only 5-star reviews with words are quoted. The 2-star review is about a commercial bill and an unanswered discount request. Do not claim "no complaints".
-  - Mary M.: names "Nathanial Shackow", a disputed spelling, to ask on the onboarding call.
-  - Todd H., Art B.: the typos can't be fixed in a quote, and Mohamed K. and Brad R. already cover business work.
-  - Tim W. and Jesse W. (both about Luke): the home page keeps one review of him back to back with copy between, and Maggie D. and Melissa G. already carry the theme.
-  - One-word names: Jed (no last initial, not quoted).
-  - Short generic five-star lines (Marian L., Chris C., Scott B., Rufus J., Jesse B., Sandi K., Jeremy Y., Betsy W., David B., Amar S., Mohammed A., Tim N., Hailey S., Cedric V., Joe A., Ron V., Mary M.): they add no detail beyond what the quoted reviews prove.
-
-**The lead.** The top lead (after-hours call, cost of the visit told up front) rests on one review, Bob W. The copy never says TSI quotes the price first. It invites the caller to ask. The sentence "Call and ask us what the visit will cost. Then you decide whether it needs a technician tonight or can wait until morning" depends on the owner's answer, to ask on the onboarding call. Confirm before this goes out.
-
-**Phone.** Used (309) 699-3333 (Google data and the site's static HTML). A script swaps it for 309-324-5317 in a browser. It is on strategy item 1 as the swap, never as "the site and Google show different numbers".
-
-**Other facts to verify.**
-
-  - Hours: Monday to Friday, 7:30 AM to 4:30 PM, from the site; weekend not stated. The pages say "after-hours emergency service" and never "24/7" (strategy item 3 asks who answers weekends).
-  - "We do our best to respond within a few hours" for online requests is the contact page's own wording on the current site.
-  - "Two inspections a year" in the residential agreement is from the site's Residential page. It sits beside the unsettled A/C frequency (strategy item 3); if the owner says once a year, the home page changes.
-  - Residential service area is the site's list; the commercial list (Addison to Waukegan) is the site's claim.
-  - Address format: 2200 W Altorfer Drive (site) vs Suite D1 (Google), to ask on the onboarding call.
-  - 4.9 stars and 51 reviews are from the Google pull of 2026-11-15, not re-checked live.
-  - The 80% mobile figure and the 91 score come from Josh's brief, not from data on this business.
-  - The SRA proof block that opens every strategy page is template content and is not written here.
-  - Full-build monitoring bullets use only the four coordinator-verified lines, word for word.
-  - The H1 for the furnace page uses "Furnace Repair"; the page also covers heat pumps and the repair-or-replace rule, which the site puts under "Heating".
-
-**Strategy page trim (checker).** Cut from about 2,000 to under 1,000 words. Confirm questions cut from ten to three. Dropped from the page, and still to ask on the onboarding call: financing, technician name spellings (Nathanial/Nathaniel, Dillon/Dylan), the after-hours price quote, owner name, address suite, BBB/Ameren/licenses. Monitoring lines use only the four verified wordings. The Services (68 words) and Gallery (61 words) thin-page notes were dropped.
+(Notes section unchanged by this re-check; see the Google Doc. Two notes are now stale: the strategy word count table and the "strategy item 3" references, since the confirm list is now four single questions with the promotions, BBB, Ameren, license and owner-name questions left for the onboarding call.)
