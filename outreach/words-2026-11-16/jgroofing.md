@@ -242,9 +242,21 @@ A repair fits when the trouble is in one place and the rest of the roof is sound
 
 Replacement is the right call when the damage or wear is spread across the roof, when the same roof keeps needing repairs, or when a storm has damaged most of it. Jose looks at your roof and tells you which one yours is.
 
+Age counts too. Asphalt shingle roofs often last somewhere around 20 to 25 years, depending on the shingle, the attic ventilation and the weather. An older roof that leaks in more than one place usually costs more to keep patching than to replace. A newer roof with one damaged spot is usually a repair.
+
+## Where Old Roofs Usually Fail
+
+The flat field of shingles is rarely the first thing to give out. Water more often gets in where the roof changes direction or something sticks through it: around chimneys, vent pipes and skylights, and in the valleys where two slopes meet. The metal flashing and sealant there wear out before the shingles do.
+
+Water also travels. It often runs along the rafters or the underlayment before it drips, so a ceiling stain is usually not directly under the hole. That's why we look at the whole roof and the attic, not only the spot you point to. Wood that stays damp for a long time rots, and rotted wood is why a replacement sometimes includes new decking.
+
 ## Peoria Weather and Your Roof
 
 Peoria roofs deal with seasonal temperature swings, snow accumulation and storm exposure. We know regional conditions like ice dams and storm damage, and we look at the whole roof, not only the spot that's leaking.
+
+An ice dam usually forms when heat escapes from the house into the attic, melts the snow on the roof, and the water refreezes at the cold edge. The ice then holds back meltwater, and that water can back up under the shingles. In most cases the cause is as much the insulation and attic ventilation as the roof itself, so a new roof on an attic that still leaks heat can have the same trouble.
+
+Repeated freezing and thawing also loosens old sealant and cracks brittle shingles. Hail and wind add to it, and damage from one storm sometimes doesn't show up as a leak until the following winter.
 
 ## When Water Is Already Coming In
 
@@ -347,6 +359,16 @@ A hailstorm can damage more than the shingles. Customers have come to us for the
 
 Jose looks at your roof and tells you what it needs. Then you decide what to do about your claim.
 
+Hail damage is often hard to see from the ground. Hail can knock the granules off shingles, bruise them or crack them, and wind can lift and crease shingles without tearing them off. The roof can look fine from the yard while its protection is already weaker. That's one reason a close look is worth having even when nothing is leaking yet.
+
+## First Steps After a Storm
+
+Please stay off the roof. A wet, steep or damaged roof is dangerous to walk on, and your weight can harm shingles that are already weakened. Look from the ground instead, and walk the yard for shingle pieces, dented gutters or downspouts, and debris.
+
+Inside, check the ceilings and the attic if you can reach it safely. If water is coming in, a bucket and a move of your belongings away from it can limit the damage. Most policies expect you to prevent further damage where you can.
+
+Photograph what you see, with the date, before anything gets cleaned up or moved. Then call us, and call your insurance company's claim line. Check your policy for the deadline to report a claim, since in most cases there is one.
+
 ## Who Does What in a Claim
 
 Your insurance company decides what it covers. We help you through everything around that. Jose looks at the roof and tells you what it needs. Amanda explains the claim process and what to expect during the replacement.
@@ -364,6 +386,12 @@ Amanda explains the process and answers your questions, so you know what to expe
 > Amanda came and patiently explained the claim process and what to expect during the replacement process. She responded to all of my questions. Jose and his crew did a wonderful job. The roof was torn off, replaced and cleaned up in the timeframe that Amanda gave me.
 >
 > — Rose H.
+
+## How a Claim Usually Goes
+
+Every policy and every insurer is different, so what follows is the usual shape, not a promise. You report the damage. The insurance company often sends an adjuster to look at the roof and writes an estimate of what it will cover. You then have a deductible to pay, and the settlement may be paid in more than one step.
+
+Many policies pay either the replacement cost or the actual cash value of the roof, and the difference can be large on an older roof. The adjuster's estimate and a contractor's estimate don't always match. When they don't, ask questions and ask for the reasons in writing. The insurance company decides what it covers. We can't promise an outcome, and we don't.
 
 ## Charges Your Insurance Doesn't Cover
 
@@ -386,6 +414,14 @@ Siding that is no longer made can be a problem. Amanda has handled that for a cu
 ## When the Damage Is a Repair
 
 Not every storm means a new roof. Jose looks at the roof and tells you whether it needs a repair or a replacement.
+
+In most cases, damage to a few shingles on a roof that is otherwise sound is a repair. Damage spread across several slopes, or a roof already near the end of its life, more often points to replacement. Your insurance company may judge it differently than we do, and that's one more reason to have someone explain the difference to you.
+
+## What Happens on a Visit
+
+Jose comes to your house and goes over the roof. A visit like this usually takes in the shingles, the flashing around chimneys and vents, the gutters and, where it makes sense, the attic. Afterward he tells you what he found and what the roof needs.
+
+You don't have to decide anything that day. Take the time to read your policy and talk to your insurance company, and ask Amanda anything that isn't clear.
 
 ## Questions
 
@@ -446,18 +482,18 @@ If it's a leak, tell us where you see water. It helps us know where to look firs
 
 Prefer to write? Send your name, phone, email and a few lines about the project. We'll get back to you.
 
-## Notes for Ruth (not page copy)
+## Notes (not page copy)
 
 **Word counts (by script; "without quotes" excludes blockquotes, buttons and trust bar; "with" is everything on the page)**
 - Strategy: about 970 without quotes, 989 with (full-build list included).
 - Home: 660 without quotes, 860 with.
-- Roof Replacement: 696 without quotes, 925 with. Four words under 700; logged as short, not padded. Removed the estimate-comparison and ice-dam sections (general knowledge); the weather section now uses only the site's own wording.
-- Storm Damage and Insurance Claims: about 450 without quotes, 690 with (by script). Under 700 on purpose: about 250 words of general claim and hail knowledge not in site/, facts.md or reviews.json were cut (after-storm safety steps, numbered claim steps, claim timeline, siding-match advice). Thin page; not padded back.
+- Roof Replacement: 983 without quotes, 1,166 with. Expanded Nov 16 with hedged general trade knowledge (repair vs replace by age, where old roofs usually fail, ice dams and freeze-thaw). No new business claims.
+- Storm Damage and Insurance Claims: 915 without quotes, 1,109 with. Expanded Nov 16 with hedged general knowledge (hail damage, first steps after a storm and staying off the roof, how a claim usually goes, repair vs replace, what happens on a visit). The insurer decides coverage; no outcomes promised. The only business claims are the existing sourced ones (Jose looks at the roof, Amanda explains the claim).
 - Contact: 288 without quotes (no quotes used), 295 with.
 
 **Credentials and sources**
 - BBB A+ accredited: confirmed on bbb.org (profile: https://www.bbb.org/us/il/peoria/profile/roofing-contractors/jg-roofing-and-company-0724-1000014407; accredited since 6/30/2020; business started 4/24/2018). The line "operates honestly and with integrity" is from BBB's own page (https://www.bbb.org/en/us/about-bbb-accreditation). I could not find BBB's own definition of the A+ rating on bbb.org, so the page does not explain what A+ means. Defined once, on home only.
-- GAF certified: NOT confirmed (GAF's directory returned 403). Mentioned once, on home, only as the site says it ("We are certified with GAF, the largest shingle manufacturer in North America..."). **Ruth: check the GAF locator before this goes out.** Strategy page also asks the owner about it.
+- GAF certified: NOT confirmed (GAF's directory returned 403). Mentioned once, on home, only as the site says it ("We are certified with GAF, the largest shingle manufacturer in North America..."). **Check the GAF locator before this goes out.** Strategy page also asks the owner about it.
 - Licensed / insured / bonded: left out. Site claims it, no number, two search snippets show conflicting license numbers, "bonded" has no source.
 
 **Inventory items left out, and why**
@@ -483,6 +519,6 @@ Prefer to write? Send your name, phone, email and a few lines about the project.
 - Which towns "Central Illinois" covers. Pages say "call to confirm."
 - Whether Amanda is the owner or the office contact; whether Jose does estimates.
 - "Free estimate" says "free for all our roofing services" (site). It is stated on home only; the button labels say Free Estimate.
-- The storm page is now thin (see counts); general claim-process lines were removed.
+- General trade and claim knowledge on the replacement and storm pages is hedged advice, not a business claim; it needs no source in site/, facts.md or reviews.json.
 - "About 80% of visitors are on a phone" is from the brief, not a source I checked.
 - Strategy page: SRA proof block and Fluid Frame header, hero and "View page" buttons are fixed template content, not written here.

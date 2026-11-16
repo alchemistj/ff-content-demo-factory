@@ -220,17 +220,58 @@ When the AC quits, waiting a week isn't an option. Customers report their air co
 
 > "I got home from work and my air conditioner wasn't working I made one phone call and he said he'd be on his way. He got me up and running in about an hour." — Laurie F.
 
+### What Usually Goes Wrong With an Air Conditioner
+
+Most "AC not cooling" calls come down to a short list of causes. In most cases it's one of these:
+
+- **A weak or failed capacitor.** It gives the compressor and fan motors the jolt they need to start. Heat and age wear capacitors out, and a bad one often shows up as an outdoor unit that hums but doesn't start. It's usually one of the less costly repairs.
+- **A refrigerant leak.** Refrigerant isn't used up like fuel, so a system that's low usually has a leak somewhere. Topping it off without finding the leak often means the same problem comes back.
+- **A frozen evaporator coil.** Often caused by restricted airflow, from a dirty filter or a blocked vent, or by low refrigerant. Ice blocks the air, and the system blows warm.
+- **A dirty outdoor coil.** Grass clippings, leaves and cottony seeds can pack the unit and keep it from shedding heat.
+- **A failed contactor or fan motor.** Both are common wear parts, and both often announce themselves with a unit that clicks, buzzes or runs without the fan turning.
+- **A clogged condensate drain.** Many systems shut themselves off when the drain backs up, which can look like a dead air conditioner.
+
+### Check These Before You Call
+
+Three quick checks sometimes solve it, and they help whoever you call:
+
+- **Thermostat.** Make sure it's set to cool, set a few degrees below the room temperature, and has fresh batteries if it takes them.
+- **Breaker.** The outdoor unit usually has its own breaker. If it's tripped, reset it once. If it trips again, leave it off and call.
+- **Filter.** A clogged filter is one of the most common causes of weak airflow and frozen coils. If it's dirty, replace it.
+
+Then tell us what you found, along with what the system is doing and when it started.
+
 ### Holiday Weekends and Hot Spells
 
 Customers report calling about a broken AC on a holiday weekend and getting a fast answer.
 
 > "Matt with Roettgers Heating and Cooling did an amazing job and was quick to answer our distress call when our A/C went out on Memorial Day weekend. He managed to fit us into his schedule promptly and even sent a text to let us know when he was on his way to our house." — Shelly G.
 
+### What Happens on a Visit
+
+A visit usually starts with questions: what the system is doing, when it started and whether anything changed. Then the technician typically checks the thermostat, the power to the unit, the airflow, the temperature drop across the coil, the refrigerant pressures and the electrical parts.
+
+Once the cause is found, you should hear what failed, what the repair involves and what it will cost before any work begins. Many repairs use parts that are on the truck. Occasionally a part has to be ordered, which can add a day or more.
+
 ### Honest Pricing
 
 We keep pricing honest, and we don't push work you don't need.
 
 > "Fast, honest, and great price. Would recommend them to anyone who needs A/C work done." — Matthew C.
+
+### Safety Comes Before Cooling
+
+If you see ice on the indoor unit or the copper lines, turn the system off at the thermostat and let it thaw before anyone runs it again. In most cases the fan alone can be left running to speed that up. Don't chip the ice off.
+
+Leave the outdoor unit's electrical panel and capacitor alone. A capacitor can often hold a charge even with the power off. If you smell something burning, hear grinding or loud squealing, or see water around the indoor unit, shut the system off at the thermostat and the breaker. Running a system that's making those noises can turn a small repair into a compressor failure.
+
+On a hot day, close blinds, run fans and watch anyone who is elderly, very young or has health problems. They overheat faster than most people expect.
+
+### What to Expect as a Homeowner
+
+Ask what failed and whether other parts are likely to be next. A new part in a system that's otherwise in good shape is usually a good repair. The same part in a system that has already needed several repairs deserves a harder look.
+
+Older systems may use a refrigerant that's no longer made. That can make a leak repair expensive, and it's one reason an older unit sometimes costs more to keep than to replace. A good repair should be explained in plain words, with the cost stated before the work starts.
 
 ### If the AC Can't Be Saved
 
@@ -264,15 +305,44 @@ If your system is more than 10 years old, needs frequent repairs, or isn't keepi
 
 > "Excellent service, friendly, no pushy sales tactics." — Paul C.
 
+### How the Decision Usually Works
+
+A common rule of thumb is to compare the repair bill with the cost of a new system. If the repair is more than about half of that, replacement often makes more sense. Age matters too. A major failure, such as a compressor or a large refrigerant leak, on an older unit often tips the answer toward replacement.
+
+A failed capacitor, contactor or fan motor on a system in decent shape is usually a repair. If you've paid for two or three repairs in a short stretch, that pattern is worth weighing.
+
 ### A Free Estimate, Then the Choice Is Yours
 
 We give you honest recommendations and free estimates, so you can choose the best solution for your property. Once we've looked at your system, you know what a new one involves before you decide.
+
+### What a Replacement Usually Involves
+
+A proper replacement starts with sizing. A unit that's too big often cools the house in short bursts and does a poor job removing humidity. One that's too small can run all afternoon and still fall behind. Square footage alone isn't enough, so expect questions about your windows, insulation, ductwork and which rooms are hard to cool.
+
+The old refrigerant has to be recovered by a certified technician, not vented. The new outdoor unit and indoor coil are usually matched, and the pad, electrical disconnect, line set and thermostat get checked at the same time. A straightforward swap can often be done in a day, and ductwork or electrical changes add time.
+
+### Before the Estimate Visit
+
+A few things make the estimate more accurate:
+
+- The age and model number, from the label on the outdoor unit
+- What's been repaired, and when
+- Which rooms never get cool enough
+- How long you plan to stay in the house
+
+When you compare any estimates, ask what size is being recommended and how it was figured. Ask whether the indoor coil is included and what the warranty covers, in writing. A higher efficiency rating usually costs more up front. The savings depend on how many hours a year you run the air conditioner, so a long payback is common.
 
 ### Fast When a Replacement Can't Wait
 
 Customers report a replacement installed the next day or the next business day.
 
 > "Matt was timely, made us know we were a priority to him, gave us a very fair bid and got the work done on the next business day. His work was high quality and he even came back to double check everything a few days later." — Susan S.
+
+### While You Wait for a New System
+
+If the old unit is still running but making grinding, squealing or banging noises, shut it off. Running it can do more damage, and a failing compressor can leave you without cooling sooner than you planned. Don't try to remove or open the old unit yourself.
+
+Until the new one is in, close blinds in the afternoon, run fans and keep water handy. Heat affects older adults, young children and pets first, so keep an eye on them.
 
 ### The Right Unit for Your Space and Budget
 
@@ -329,20 +399,20 @@ If you're not sure whether you need a repair, a tune-up or a replacement, ask. W
 
 Call (402) 314-3612, or send a message with the form above.
 
-## Notes for Ruth (not page copy)
+## Notes (not page copy)
 
-**Two services chosen:** AC Repair and Air Conditioner Replacement (the two money services in inventory.md). Neither reaches 700 honest words. I did not pad. The site gives one sentence for each, plus the FAQ and the financing page for replacement; the rest is review evidence. Owner input needed to deepen them (process, after-hours answer, hours, equipment line).
+**Two services chosen:** AC Repair and Air Conditioner Replacement (the two money services in inventory.md). Both now pass 700 words without quotes. The site gives one sentence for each, plus the FAQ and the financing page for replacement, so the added depth is hedged general trade knowledge in the owner's voice (usual failures, checks before calling, safety, repair-or-replace rules of thumb, what a visit and a replacement usually involve). It makes no new business claims. Owner input still useful: process, after-hours answer, hours, equipment line.
 
 **Word counts** (computed from the page copy above; "with quotes" includes the quote text and names; "without quotes" removes quote blocks and their captions; headings, bullets, trust bar and buttons count):
-- Home: 685 with quotes, 502 without quotes
-- AC Repair: 345 with quotes, 212 without quotes
-- AC Replacement: 462 with quotes, 347 without quotes
-- Contact: 251 with quotes, 201 without quotes
-- Strategy: 968 with quotes, 968 without quotes
+- Home: 655 with quotes, 472 without quotes
+- AC Repair: 973 with quotes, 840 without quotes
+- AC Replacement: 846 with quotes, 731 without quotes
+- Contact: 238 with quotes, 188 without quotes
+- Strategy: 954 with quotes, 954 without quotes
 
 **Strategy page length:** kept at or under 1,000 words.
 
-**Section counts:** Home 11 (hero, then ten), AC Repair 6, Replacement 8, Contact 7 (hero plus six). Home and the two service pages are within 10 to 12 sections but well under their word minimums, so contact is the only page near its minimum.
+**Section counts:** Home 11 (hero, then ten), AC Repair 11 (hero, then ten), Replacement 13 (hero, then twelve), Contact 7 (hero plus six).
 
 **Credentials and their sources**
 - None confirmed. The site states no license, insurance, warranty, certification or award. Nothing is defined on Home because there is nothing to define.
@@ -377,4 +447,4 @@ Call (402) 314-3612, or send a message with the form above.
 9. Pre-sale inspection: written from one review (Ethan V.), supported by the site's "system inspections, tune-ups, and cleaning". Confirm it is a regular offer.
 10. Remove the stray /cart page and the "FAQs 2" page name. These are on the strategy page as problems.
 
-**Cut after checker review:** "Many Repairs Are One Part", "Fixed Before a Closing", "A Diagnosis You Can Follow", "Installed Without Rushing" and "A Tidy Work Site" stated review-derived process as company policy, so they are gone with their quotes (Jane B., Charli H., Marcus B., Manuel R., River K.). Remaining review-derived lines say what customers report. AC Repair and Replacement are now well under 700 words and under 10 sections; both are thin because the site says almost nothing about either. Not padded.
+**Cut after checker review:** "Many Repairs Are One Part", "Fixed Before a Closing", "A Diagnosis You Can Follow", "Installed Without Rushing" and "A Tidy Work Site" stated review-derived process as company policy, so they are gone with their quotes (Jane B., Charli H., Marcus B., Manuel R., River K.). Remaining review-derived lines say what customers report. **Nov 16 correction:** AC Repair and Replacement expanded past 700 words without quotes using hedged general trade knowledge only (new sections carry no quotes and no business claims).

@@ -199,6 +199,26 @@ Before we talk about a new roof, we find out whether you need one. A leak doesn'
 
 Either way, we tell you what we found, and you decide.
 
+### What Usually Fails First
+
+On most asphalt shingle roofs, trouble starts at the weak points before it shows in the open field of shingles. The flashing around chimneys and walls, the seals around vent pipes and the valleys where two slopes meet are often the first places water gets in.
+
+Those spots can often be fixed without a new roof. Shingles that have worn out across the whole roof are different. Patching them usually just moves the leak somewhere else.
+
+Water also travels along the rafters before it drips. A stain on a ceiling is often not under the spot where the water came in, which is why a good inspection looks at the roof and the attic both.
+
+### Repair or Replace
+
+In most cases, a repair makes sense when the problem is in one place and the rest of the roof is sound. Replacement usually makes sense when repairs keep adding up, when the shingles have lost their granules across much of the roof, or when the roof is near the end of its expected life.
+
+Asphalt roofs often last somewhere around 20 to 30 years, depending on the shingle, the attic ventilation and how many hailstorms they've been through. Some other materials last longer. If you've paid for repairs more than once in a few years, it's worth asking what a new roof would cost instead.
+
+### Before You Call
+
+Please don't climb up to check the roof yourself. A roof is slippery when it's wet, frosty or covered in leaves, and many falls happen on slopes that look easy. From the ground, with binoculars or a zoomed phone photo, you can often spot missing or lifted shingles.
+
+In the attic, a flashlight is usually enough to see damp wood or stained insulation. Step only on the framing, because the ceiling below it won't hold your weight.
+
 ### Choosing the Material
 
 We install a range of roofing materials: asphalt, stone coated steel, steel, standing seam steel, rubber slate, cedar shake, polymer, impact resistance options, and more. We come to your property and look at your home before we recommend one, because the right material depends on your house and what you need from it.
@@ -213,6 +233,8 @@ You get a detailed estimate with your choices laid out, and we explain each one.
 ### Tear-Off and Clean-Up
 
 We strip off the old roofing, install the new roof and clean up when we're done. Our crew works to the plan in your estimate, and clean-up is part of the job.
+
+On an average house, a tear-off and new roof often take a day or two, though the size of the roof and the weather can change that. Rotted boards under the old shingles usually have to be replaced before the new roof goes on, which can change the cost, so ask any contractor how that is handled. Move cars and patio furniture away from the house beforehand, and expect some noise and a little dust in the attic.
 
 > "They stripped off years of old shingles and got the new roof on so fast that it blew my mind! Also, their clean up was. outstanding."
 > — Jackie M.
@@ -230,6 +252,12 @@ Every new roof we install carries a lifetime workmanship warranty, whichever mat
 
 > "Dusty provided a detailed estimate with a few choices and then his crew executed the plan as described. … There was a slight oversight area but Dusty was out not the next day but the next morning and made it right."
 > — Tim L.
+
+### What a Visit Looks Like
+
+A roof visit usually starts with a few questions: how old the roof is, where you've seen water, and whether it has been repaired before. Then the roofer looks over the surface, the flashing, the vents and the gutters, and the attic if you give access.
+
+You should leave knowing what's wrong, what your options are and roughly what each one costs. If you can't follow the explanation, ask again.
 
 ### Who You'll Talk To
 
@@ -251,9 +279,25 @@ Call [(402) 890-6460](tel:+14028906460) and we'll set a time to look at your roo
 > "After storm damage, he took care of everything and it was pain free!"
 > — Jana V.
 
+### First Steps After a Storm
+
+Stay inside until the storm has passed, then look at the house from the ground. Don't go up on a wet or damaged roof, and stay well away from downed power lines and anything touching them. Call your utility instead.
+
+If water is coming through a ceiling, move belongings out of the way. If it's near a light fixture or outlet, turn off that circuit at the breaker, if you can reach the panel safely.
+
+Take dated photos of everything before you move or clean anything. In most cases, covering an opening quickly keeps a small problem from becoming a bigger one.
+
 ### One Company for the Whole Repair
 
 We handle the restoration after storm damage: roofing, siding, windows, doors and paint. You can call one company instead of finding a separate contractor for each part of your house.
+
+### What Storms Usually Do
+
+Hail often bruises shingles and knocks granules loose, and from the ground you may see nothing at all. A roof can be damaged long before it leaks. Dented gutters, vents and window trim are often a clue, because soft metal shows hail more easily than shingles do.
+
+Wind more often lifts or creases shingles and peels up ridge caps and vents. The side of the house facing the storm usually takes the worst of it.
+
+Inside, wet insulation and drywall often need to dry out quickly. In many cases mold can start within a couple of days, so don't wait to deal with a wet ceiling just because the roof is covered. Put a bucket under any drip and keep the room ventilated.
 
 ### What We Repair
 
@@ -280,6 +324,14 @@ We can't promise what your insurance company will decide. Our estimate covers th
 ### Should You File a Claim?
 
 Your rates will be raised with every claim you file, so it matters when you file and when you don't. We come out, assess the damage and tell you whether a claim is worth filing.
+
+Many policies carry a separate wind and hail deductible, sometimes a percentage of the home's value rather than a flat amount. If the repair costs less than your deductible, a claim may not pay anything. Many policies also set a deadline for reporting storm damage, so read yours early.
+
+### Repair or Replace After a Storm
+
+If wind took a few shingles off an otherwise sound roof, a repair is usually enough. If hail hit most of the slopes, fixing them one at a time is rarely practical, and replacement is often the result.
+
+Keep receipts for emergency work like tarping. Policies often cover reasonable temporary repairs, but check yours. An adjuster usually looks at the damage first, so it helps to have your photos and a list of what you found ready for that visit.
 
 > "Outstanding service. Dusty and his team were highly responsive, even after the installation--especially with insurance paperwork followups."
 > — Bryan B.
@@ -328,21 +380,22 @@ We come out and look, explain what we found and give you a free quote. If the an
 
 If you'd rather talk, call [(402) 890-6460](tel:+14028906460). Our owner, Dusty Rieck, would rather hear from you before a small problem gets bigger.
 
-## Notes for Ruth (not page copy)
+## Notes (not page copy)
 
 **Word counts (page text including hero and trust bar; quotes counted separately).**
 
 | Page | Without quotes | Quotes | With quotes |
 |---|---|---|---|
-| Strategy | 998 | 0 | 998 (limit 1,000) |
-| Home | 665 | 203 | 868 |
-| Roof Replacement | 434 | 171 | 605 |
-| Storm Damage | 361 | 105 | 466 |
-| Contact | 204 | 32 | 236 |
+| Strategy | 997 | 0 | 997 (limit 1,000) |
+| Home | 662 | 203 | 865 |
+| Roof Replacement | 893 | 170 | 1,063 |
+| Storm Damage | 728 | 105 | 833 |
+| Contact | 190 | 32 | 222 |
 
-**Short pages, not padded.**
-- Roof Replacement is about 95 words under 700 with quotes, and Storm Damage about 235 under. The site gives about 400 words on roofing and 350 on storm damage. The job process, inspection steps, timing and warranty terms are not on the site. Both need owner input (see questions below).
-- Contact is about 15 under 250 with quotes. Facts are phone, email, hours and area only; no address is confirmed.
+**Length and the general advice.**
+- Roof Replacement and Storm Damage are each over 700 words without quotes. The added sections (what usually fails, repair or replace, before you call, what a visit looks like, first steps after a storm, what storms usually do, deductibles, repair or replace after a storm) are general trade knowledge, hedged ("usually", "often", "in most cases"). None of it states a business service, price, speed, guarantee or promised step. Each is advice to the homeowner or a description of how roof visits usually go.
+- Safety advice matches on both pages: stay off the roof, look from the ground, step only on attic framing.
+- Contact is about 28 under 250 with quotes. Facts are phone, email, hours and area only; no address is confirmed.
 - Roof Replacement and Storm Damage are under 10 sections. Material does not support more without repeating.
 
 **Credentials.** None claimed on the site or anywhere else, so none are defined. Marvin, Hayfield, Provia and Bayer Built are products the site says it offers, named once on home as "brands such as", not as credentials. Malarkey appears only in a reviewer's words and is not used.
@@ -368,6 +421,7 @@ If you'd rather talk, call [(402) 890-6460](tel:+14028906460). Our owner, Dusty 
 - "If something needs attention after we leave, call us and we'll come back" (backed by Tim L., James F., Nicole S.).
 - "We find samples so you can see them in person" (backed by Monica R.).
 - Photos of damage help (advice only; the site's form takes file uploads).
+- General trade statements to sanity-check if the owner disagrees: asphalt roofs often last about 20 to 30 years; a tear-off often takes a day or two; rotted decking usually needs replacing and can change the cost; many policies have a separate wind and hail deductible and a reporting deadline.
 
 **Facts to verify.** Street address (Google shows 8120 Trendwood Dr, Lincoln, NE 68506; site shows none; may be a home). Whether Dusty Rieck is the only owner (named as owner on the site's About paragraph). Discount terms. "Hayfield" spelling and the Fiber Smith question. Hours and phone agree on all pages. Review count and ratings are not shown anywhere.
 

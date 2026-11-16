@@ -263,6 +263,14 @@ The Custom Priority Club is our maintenance membership. Every system needs profe
 - **Convenience: we contact you.** You do not have to remember to book.
 - **Emergency service.**
 
+### What Usually Breaks, and Why
+
+In most cases a breakdown is a small part that had been wearing for a while. It shows up on the coldest night or the hottest afternoon because that is when the system works hardest.
+
+On furnaces, the usual causes are a dirty flame sensor, a worn igniter, a clogged filter that lets the furnace overheat, and a tired blower motor or capacitor. On air conditioners, the usual causes are a dirty outdoor coil, a weak capacitor, low refrigerant from a leak, and a condensate drain that has clogged.
+
+Most of these are cheap to deal with when found early and expensive when they stop the system on a holiday weekend. Finding them early is most of what maintenance is for.
+
 ### The Same Technician Each Visit
 
 We try to send the same technician every time. A technician who has worked on your system before already knows it, and you already know who is at the door.
@@ -277,6 +285,30 @@ Call (260) 496-8400 and ask the office how it schedules visits.
 >
 > — Gina W.
 
+### What a Visit Looks Like
+
+Your technician is there to work on the equipment and to answer your questions.
+
+Exactly what a visit covers differs by company and by system, so ask our office for the Club's list. On most heating visits, a technician will usually look at the burners, the flame sensor, the igniter, the blower and the venting, check the filter, and measure how the furnace is running. On most cooling visits, the usual work is cleaning the outdoor coil, checking the drain and the electrical parts, and confirming the system cools the way it should.
+
+A visit often ends with a plain report: what is fine, what is wearing and what to plan for. You should expect a straight answer to "can this wait?"
+
+> They come twice a year and inspect the equipment and clean the drains, answer our questions and replace the air filter.
+>
+> — Fred K.
+
+### Carbon Monoxide and Your Furnace
+
+A gas furnace that is not burning or venting properly can produce carbon monoxide. It has no color or smell, so a detector is what tells you.
+
+In most cases a heating visit includes a look at the heat exchanger and the flue, which are the parts that matter most for this. Put a carbon monoxide detector on each level and near the bedrooms. Test it every month, and replace it when its printed expiration date passes, which is often five to ten years after it was made.
+
+### Between Visits, What You Can Do
+
+The most useful thing a homeowner can do is keep the filter clean. Many one-inch filters need replacing every one to three months, and thicker filters last longer, though pets, dust and renovations shorten that. A clogged filter is a leading reason furnaces overheat and air conditioners freeze.
+
+Keep supply vents and return grilles uncovered, and keep about two feet of clear space around the outdoor unit, away from leaves, grass clippings and stored items. If a unit is making a noise it did not make last season, call early rather than waiting for the next visit.
+
 ### Your Furnace, Air Conditioner and Humidifier
 
 Ask the office what a Club visit covers for your furnace, air conditioner and humidifier.
@@ -285,13 +317,7 @@ Ask the office what a Club visit covers for your furnace, air conditioner and hu
 >
 > — Frederick H.
 
-### What a Visit Looks Like
-
-Your technician is there to work on the equipment and to answer your questions.
-
-> They come twice a year and inspect the equipment and clean the drains, answer our questions and replace the air filter.
->
-> — Fred K.
+A whole-home humidifier usually needs its water panel replaced about once a year, and hard water can leave scale that cuts how much moisture it adds. Ask when yours was last changed.
 
 ### We Call You When It Is Time
 
@@ -312,6 +338,8 @@ Emergency service is one of the six Club benefits.
 ### What Membership Costs
 
 Call the office at (260) 496-8400 and ask for the current Custom Priority Club price and terms. Discounts on services are one of the six benefits.
+
+Before you decide, check your equipment paperwork. Many manufacturers ask for proof of regular maintenance before they honor a parts warranty, and a record of visits usually settles that question.
 
 > I forgot to mention that they DID NOT raise their annual fees for their annual priority club agreement heating and cooling service.
 >
@@ -349,6 +377,45 @@ Our service professionals can also suggest energy saving tips and improvements t
 >
 > — Donita F.
 
+### Before You Call
+
+If the furnace stops, a few checks usually take five minutes and sometimes solve it. Set the thermostat to heat, a few degrees above the room temperature, and replace its batteries if it has them. Confirm the switch at the furnace is on and the breaker has not tripped. If you burn gas, check that other gas appliances still work.
+
+On a high-efficiency furnace, snow or ice can block the plastic intake and exhaust pipes outside, and the furnace will often shut itself off when that happens. Clear them gently if you can reach them safely.
+
+If none of that helps, call us and tell us what the furnace was doing before it stopped.
+
+### Gas Smell or Carbon Monoxide Alarm
+
+If you smell gas, or a carbon monoxide alarm sounds, do not wait for a technician. In most cases the safe move is to get everyone outside, leave the door open behind you, and call 911 or the gas company from outside. Do not turn lights or switches on or off on the way out.
+
+Once the house is cleared, call us to look at the furnace. A furnace that triggered an alarm should usually stay off until it has been checked.
+
+### Repair or Replace
+
+Call us either way. We repair furnaces and we replace them, so you can ask for a quote on both.
+
+> When the furnace needs attention, they go right to work and continue to provide the best service we have ever had.
+>
+> — Gerry C.
+
+A furnace often lasts fifteen to twenty years, so age is the first thing to weigh. These rules of thumb are common in the trade and hold in most cases:
+
+- If the furnace is past fifteen years and the repair costs more than about a third to a half of a new one, replacing is usually the better use of the money.
+- A cracked heat exchanger usually means replacement, because the repair costs close to the price of a new furnace and the risk is carbon monoxide.
+- Two or three repairs in a couple of seasons usually mean more are coming.
+- A furnace that is younger and has one failed part is usually worth repairing.
+
+Older furnaces were often 60 to 80 percent efficient, and current models run from about 80 to over 95 percent. Your gas bill shows whether the difference matters in your house.
+
+### How a Replacement Usually Goes
+
+Furnace size should come from the house, not from the size of the old furnace. A sound quote usually rests on the home's heat loss, the condition of the ductwork, the venting and the gas line. Ask any contractor, us included, how the size was figured.
+
+Most replacements take a day, and a few take longer when the ductwork or venting needs changes. Expect the old furnace to be disconnected and removed, the new one set, connected and vented, and then started up and tested. Expect to be shown how the thermostat works before the crew leaves.
+
+Ask for the model number, the efficiency rating and the warranty length in writing, and keep them with your records.
+
 ### Free Quotes, Scheduled When You Want
 
 Quotes are always free and can be scheduled at your convenience. Call our office at (260) 496-8400 to arrange a time.
@@ -367,6 +434,10 @@ Our installers replace furnaces and air conditioners.
 >
 > — K D.
 
+### Replacing the Furnace and the Air Conditioner Together
+
+The indoor coil sits on top of the furnace and works with the outdoor air conditioner. Replacing only one part can leave a mismatched pair, so it is worth asking whether doing both at once makes sense. In most cases, an air conditioner older than ten to twelve years on a furnace that is due makes the question worth asking.
+
 ### Financing
 
 Financing options are available with approved credit. Ask Rod or our office how to apply.
@@ -378,14 +449,6 @@ All of our sales are backed by our Custom Assured 100% Satisfaction Guarantee. W
 > They installed our new furnace & air conditioner! … They are very dependable, family friendly, and actually take the time to explain and walk through each step with you.
 >
 > — Montana S.
-
-### Repair or Replace
-
-Call us either way. We repair furnaces and we replace them, so you can ask for a quote on both.
-
-> When the furnace needs attention, they go right to work and continue to provide the best service we have ever had.
->
-> — Gerry C.
 
 [Call (260) 496-8400 to set up your free quote] [Contact Us]
 
